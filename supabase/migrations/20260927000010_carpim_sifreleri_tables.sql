@@ -147,10 +147,9 @@ create index if not exists daily_challenges_gun_anahtar_idx
   on public.daily_challenges (gun, anahtar);
 
 -- Yönetici: açık bildirimleri sürebilir
--- TODO(kurtarma): question_reports tablosu henüz alınmadı (bkz. supabase/KURTARMA_DURUMU.md).
--- Tablo kurtarıldığında sıradaki index geri açılmalıdır:
---   create index if not exists question_reports_durum_idx
---     on public.question_reports (durum, created_at desc);
+-- NOT: question_reports tablosu ve indexleri artık
+-- 20260927000030_missing_objects_recovery.sql içinde oluşturuluyor.
+-- (Bu satır, tablo henüz kurtarılmadan önce yorumlanmıştı.)
 
 -- Öğrenci: rozetlerini hızlıca okusun
 create index if not exists user_badges_student_idx
