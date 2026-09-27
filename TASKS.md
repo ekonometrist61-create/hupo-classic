@@ -66,9 +66,16 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 - [x] **Soru bildirme**: 1 RPC birebir kurtarıldı
       → `supabase/migrations/20260927000010_carpim_sifreleri_rpc.sql`
 - [x] Migration hatası giderildi: parametre adı değişimi → `drop function` eklendi
-- [ ] Çarpım tablolarının kolon tanımları alınacak (`kurtarilan/SEMA_CARPIM.sql`)
-- [ ] `evaluate_badges`, `_sinif_yaz`, `_desteklenen_siniflar` gövdeleri alınacak
-- [ ] `carpim_sifreleri` içeriği (10-12 şifrenin JSON verisi) kurtarılacak
+- [x] Çarpım tablolarının kolon tanımları kurtarıldı (`20260927000010`)
+- [x] `_sinif_yaz`, `_desteklenen_siniflar`, `_refresh_question_flag` gövdeleri
+      **birebir** kurtarıldı (+ `admin_set_daily_challenge`)
+      → `supabase/migrations/20260927000030_missing_objects_recovery.sql`
+- [ ] `question_quality_config` tablosu alınacak — `report_question` bunu okur,
+      tablo yokken **çalışma anında hata verir** (KURTARMA_DURUMU.md §4.1)
+- [ ] `profiles` sınıf kuralı trigger'ı (30 gün / 24 saat) alınacak (§4.2)
+- [ ] `grade_changes` / `question_reports` RLS politikaları alınacak (§4.3)
+- [ ] `carpim_sifreleri` içeriği (10-12 şifrenin JSON verisi) kurtarılacak (§4.4)
+- [ ] `evaluate_badges` gövdesi canlı sürümle karşılaştırılacak
 
 ### Mobil uygulama
 - [x] `google_mobile_ads` paketi pubspec'e eklendiydi (APK'da vardı, kaybolmuştu)
@@ -84,11 +91,12 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 - [ ] `content/answer_feedback.dart` yazılacak
 
 ### Web paneli
-- [ ] Lint hataları giderilecek (mevcut 15 hata + 1 uyarı, `any` kullanımı ve
-      effect içinden senkron state güncellemesi kaynaklı)
-- [ ] `npm run build` tamamlanacak (120 sn sınırında bitmedi)
+- [x] Lint hataları giderildi (`eslint .` → 0 hata)
+- [x] `npm run build` tamamlandı (`✓ Compiled successfully in 2.9min`, 51 sayfa)
+- [x] PHASE 0 durum raporu yazıldı → `PHASE0_DURUM_RAPORU.md`
 - [ ] Admin paneli tarayıcıda doğrulanacak
 - [ ] **Git kurulmalı** — Flutter bu yüzden başlayamıyor
+- [ ] Proje ASCII yola taşınacak (Türkçe/OneDrive yolu Dart'ı çökertiyor)
 
 ---
 
@@ -140,7 +148,11 @@ lib/widgets/ui/responsive_page.dart
 | `set_my_grade(int)` | 20260927000020 | ✅ |
 | `report_question(uuid,text,text)` | 20260927000020 | ✅ |
 | `get_app_config()` | — | ✅ canlıda, migration'a gerek yok |
-| `admin_set_daily_challenge(...)` | — | ⏳ gövde alınmadı |
+| `admin_set_daily_challenge(date, uuid[], text)` | 20260927000030 | ✅ |
+
+**Yardımcı fonksiyonlar** (`20260927000030`, istemciye EXECUTE **verilmedi**):
+`_desteklenen_siniflar()`, `_sinif_yaz(uuid, integer, text)`,
+`_refresh_question_flag(uuid)`
 
 ## 4. Kurtarılan tablolar
 
@@ -152,8 +164,9 @@ lib/widgets/ui/responsive_page.dart
 | `carpim_sifreleri` | ✅ kolon + kısıt + RLS (20260927000010) |
 | `carpim_ilerleme` | ✅ kolon + kısıt + RLS (20260927000010) |
 | `carpim_deneme_log` | ✅ kolon + kısıt + RLS (20260927000010) |
-| `grade_changes` | 🚫 **yok** — `db reset`'i bloke ediyor (KURTARMA_DURUMU.md) |
-| `question_reports` | 🚫 **yok** — `db reset`'i bloke ediyor (KURTARMA_DURUMU.md) |
+| `grade_changes` | ✅ kolon + kısıt + index (20260927000030) — RLS politikaları ⏳ |
+| `question_reports` | ✅ kolon + kısıt + 4 index (20260927000030) — RLS politikaları ⏳ |
+| `question_quality_config` | 🚫 **yok** — `report_question()` bunu okur (KURTARMA_DURUMU.md §4.1) |
 | `user_badges` | ✅ mevcut (`20260920000000_initial_schema.sql`) |
 
 ---
