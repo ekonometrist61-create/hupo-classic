@@ -307,7 +307,7 @@ grant  execute on function public.admin_set_daily_challenge(date, uuid[], text) 
 
 -- =====================================================================
 -- 5) HÂLÂ EKSİK — bunlar gelmeden ilgili özellik ÇALIŞMAZ
---    Ayrıntılı adımlar: supabase/KURTARMA_DURUMU.md §3
+--    Ayrıntılı adımlar: supabase/KURTARMA_DURUMU.md §4
 -- =====================================================================
 -- 5.1 public.question_quality_config (TABLO) — kolonları alınmadı
 --     _refresh_question_flag() buradan rapor_esigi + otomatik_gizle okur;
