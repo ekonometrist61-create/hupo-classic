@@ -13,7 +13,12 @@ Türkçe eğitim uygulaması: öğrenci mobil uygulaması + veli/yönetici web p
 | `web-panel/` | Next.js yönetim paneli + veli paneli |
 | `supabase/` | Veritabanı migration'ları ve Edge Functions |
 | `tools/` | Yardımcı betikler (sunucu, kontrol, okuma) |
+| `kurtarilan/` | Kurtarma kanıtı (APK, `libapp.so`, dökümler) — **git'e girmez** |
 | `.vscode/` | Eklenti önerileri — [EKLENTILER.md](.vscode/EKLENTILER.md) |
+
+> **Versiyon kontrolü:** Bu depo **tek kök git deposudur** (27 Eylül 2026'da
+> kuruldu). İç içe eski depolar `Desktop\çıkarıldı\_firsat-git-arsiv-20260927\`
+> altına arşivlendi. Sırlar ve kurtarma kanıtı kök `.gitignore` ile dışarıda tutulur.
 
 > `proje-okulu-app/` eski bir şema kopyasıdır — **kullanma.**
 > Tek doğruluk kaynağı kökteki `supabase/`.

@@ -8,6 +8,29 @@ Son güncelleme: 27 Eylül 2026
 
 ---
 
+## 0. Mimari toparlama (bu oturum)
+
+Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
+
+- [x] **Kök depo + `.gitignore`** — `kurtarilan/`, `Silinecekler/`, `node_modules/`,
+      `.next/`, `build/`, `.dart_tool/`, `*.log`, `.env*.local` artık takip dışı.
+      İç içe `web-panel/.git` ve `mobile-app/.git` depoları silinmedi,
+      `Desktop\çıkarıldı\_firsat-git-arsiv-20260927\` altına **arşivlendi**.
+- [x] **Demo modu güvenliği** — `NEXT_PUBLIC_DEMO_MODE` artık tek kaynaktan
+      (`web-panel/src/lib/demo-mode.ts`) okunuyor ve
+      `NODE_ENV === "production"` iken **asla** etkinleşmiyor.
+- [x] **Derleme (build) kırığı** — `AdminDashboard.tsx`'in import ettiği
+      `demoData.ts` `.gitignore`'daydı → temiz kopyada build kırılıyordu; artık commit'te.
+- [x] **Web lint: 14 hata → 0 hata** (`types.ts` vendor `any`, kullanılmayan
+      değişken, demo `setState`). Kalan `react-hooks/set-state-in-effect` uyarıları
+      gerekçesiyle `warn` seviyesine çekildi.
+- [x] **Migration sırası düzeltildi** — tablolar (`…000010`) artık RPC'lerden
+      (`…000020`) önce çalışıyor.
+- [x] `supabase/KURTARMA_DURUMU.md` eklendi — `supabase db reset`'i bloke eden
+      eksik nesneler ve canlıdan kurtarma SQL'i burada.
+
+---
+
 ## 1. Tamamlananlar
 
 ### APK kurtarma
@@ -108,14 +131,14 @@ lib/widgets/ui/responsive_page.dart
 | `complete_daily_challenge()` | 20260927000000 | ✅ |
 | `list_bookmarks()` | 20260927000000 | ✅ |
 | `toggle_bookmark(uuid)` | 20260927000000 | ✅ |
-| `get_carpim_sifreleri()` | 20260927000010 | ✅ |
-| `get_carpim_sifre_detay(uuid)` | 20260927000010 | ✅ |
-| `submit_cipher_answer(uuid,text,int,int)` | 20260927000010 | ✅ |
-| `complete_cipher_stage(uuid,text)` | 20260927000010 | ✅ |
-| `report_taught_friend(uuid)` | 20260927000010 | ✅ |
-| `get_supported_grades()` | 20260927000010 | ✅ |
-| `set_my_grade(int)` | 20260927000010 | ✅ |
-| `report_question(uuid,text,text)` | 20260927000010 | ✅ |
+| `get_carpim_sifreleri()` | 20260927000020 | ✅ |
+| `get_carpim_sifre_detay(uuid)` | 20260927000020 | ✅ |
+| `submit_cipher_answer(uuid,text,int,int)` | 20260927000020 | ✅ |
+| `complete_cipher_stage(uuid,text)` | 20260927000020 | ✅ |
+| `report_taught_friend(uuid)` | 20260927000020 | ✅ |
+| `get_supported_grades()` | 20260927000020 | ✅ |
+| `set_my_grade(int)` | 20260927000020 | ✅ |
+| `report_question(uuid,text,text)` | 20260927000020 | ✅ |
 | `get_app_config()` | — | ✅ canlıda, migration'a gerek yok |
 | `admin_set_daily_challenge(...)` | — | ⏳ gövde alınmadı |
 
@@ -126,12 +149,12 @@ lib/widgets/ui/responsive_page.dart
 | `daily_challenges` | ✅ kolon + kısıt + RLS |
 | `daily_challenge_completions` | ✅ kolon + kısıt + RLS |
 | `question_bookmarks` | ✅ kolon + kısıt + 3 RLS politikası |
-| `carpim_sifreleri` | ⏳ kolonlar bekleniyor |
-| `carpim_ilerleme` | ⏳ kolonlar bekleniyor |
-| `carpim_deneme_log` | ⏳ kolonlar bekleniyor |
-| `grade_changes` | ⏳ kolonlar bekleniyor |
-| `question_reports` | ⏳ kolonlar bekleniyor |
-| `user_badges` | ⏳ kolonlar bekleniyor |
+| `carpim_sifreleri` | ✅ kolon + kısıt + RLS (20260927000010) |
+| `carpim_ilerleme` | ✅ kolon + kısıt + RLS (20260927000010) |
+| `carpim_deneme_log` | ✅ kolon + kısıt + RLS (20260927000010) |
+| `grade_changes` | 🚫 **yok** — `db reset`'i bloke ediyor (KURTARMA_DURUMU.md) |
+| `question_reports` | 🚫 **yok** — `db reset`'i bloke ediyor (KURTARMA_DURUMU.md) |
+| `user_badges` | ✅ mevcut (`20260920000000_initial_schema.sql`) |
 
 ---
 
@@ -166,11 +189,11 @@ lib/widgets/ui/responsive_page.dart
 
 | Engel | Etki | Çözüm |
 |---|---|---|
-| **Git kurulu değil** | Flutter başlamıyor, mobil test yapılamıyor | Git for Windows kur |
-| **Node.js PATH'te değil** | `npm` doğrudan çalışmıyor | `C:\Program Files\nodejs` PATH'e eklensin |
-| Web lint 15 hata | Build kalitesi düşük | `any` kullanımı temizlenecek |
+| **Supabase eksik nesneler** | `supabase db reset` hata verir | `supabase/KURTARMA_DURUMU.md` |
+| **Flutter, Türkçe/OneDrive yolu** | `flutter analyze` çöküyor (255) | Projeyi ASCII yola taşı (`C:\Users\cengi\flutterwork`) |
+| **Supabase CLI yok** | `db pull` / `test db` çalışmıyor | `npm i -g supabase` |
+| `react-hooks/set-state-in-effect` uyarıları | Lint uyarı (hata değil) | Şablon bileşenleri elden geçerken refaktör |
 | Dev sunucusu kalıcı başlamıyor | Tarayıcıda test yapılamıyor | Manuel `npm run dev` ile açılmalı |
-| APK release derleme | Uygulama içi veri çekilemedi | Veriler zaten Supabase'de |
 
 ---
 

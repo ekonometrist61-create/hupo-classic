@@ -192,10 +192,19 @@ yanlış pozitiftir — arkasında anahtar yok.)
 
 ## 7. Sıradaki adımlar
 
-1. **Supabase şemasını kurtar** — bölüm 6. Bu yapılmadan hiçbir yeni özellik çalışmaz.
+1. **Eksik Supabase nesnelerini kurtar** — `supabase/KURTARMA_DURUMU.md`.
+   `grade_changes`, `question_reports`, `_desteklenen_siniflar`, `_sinif_yaz`,
+   `_refresh_question_flag`, `admin_set_daily_challenge` alınmadan
+   `supabase db reset` çalışmaz.
 2. **`models/` altındaki 4 dosyayı yaz** — en kolay, RPC'lere birebir bağlı.
 3. **Çarpım Tablosu Şifreleri** — en değerli özellik, en çok iş.
-4. **`web-panel/.next/` ve `node_modules/` temizliği** — bkz. `TEMIZLIK_RAPORU.md`
+4. **Mobil projeyi ASCII yola taşı** — Türkçe/OneDrive yolunda `flutter analyze`
+   çöküyor; mağaza yayını için de şart.
+5. **`Silinecekler/` kalıcı silme** — `TEMIZLIK_RAPORU.md`.
+
+> **Durum notu (27 Eylül 2026):** Sürüm kontrolü artık tek kök git deposunda;
+> iç içe `web-panel/.git` ve `mobile-app/.git` depoları
+> `Desktop\çıkarıldı\_firsat-git-arsiv-20260927\` altına arşivlendi (silinmedi).
 
 ---
 
