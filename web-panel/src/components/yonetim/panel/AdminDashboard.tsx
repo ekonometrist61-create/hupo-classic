@@ -19,22 +19,22 @@ import { cardClass, primaryBtn } from "./styles";
 
 export default function AdminDashboard() {
   const t = useTranslations("yonetim.panel");
-  const [data, setData] = useState<DashboardSummary | null>(null);
+  // Demo modunda başlangıç durumu doğrudan örnek veriden türetilir; böylece
+  // effect içinde senkron setState (cascading render) çağrısına gerek kalmaz.
+  const [data, setData] = useState<DashboardSummary | null>(
+    DEMO_MODE ? DEMO_SUMMARY : null,
+  );
   const [error, setError] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(!DEMO_MODE);
 
   const [reloadKey, setReloadKey] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
 
-    // Yerel gelistirmede oturum/veri yokken panelin arayuzunu gormek icin.
-    // Uretimde bu bayrak her zaman false olur (bkz. src/lib/demo-mode.ts).
-    if (DEMO_MODE) {
-      setData(DEMO_SUMMARY);
-      setLoading(false);
-      return;
-    }
+    // Demo modunda gerçek sorgu hiç çalışmaz; veri zaten başlangıç durumunda.
+    // Üretimde bu bayrak her zaman false olur (bkz. src/lib/demo-mode.ts).
+    if (DEMO_MODE) return;
 
     const run = async () => {
       const { data: res, error: err } = await createClient().rpc(

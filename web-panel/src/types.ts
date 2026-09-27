@@ -1,3 +1,9 @@
+// Bu dosya @supabase/functions-js paketinin genel tip tanımlarından birebir
+// alınmıştır (vendor edilmiş kopya). Buradaki `any` kullanımları upstream
+// API'nin bir parçasıdır; değiştirilmesi tüketici kodunu bozar. Bu nedenle
+// kural dosya düzeyinde devre dışı bırakılmıştır.
+/* eslint-disable @typescript-eslint/no-explicit-any */
+
 export type Fetch = typeof fetch
 
 /**
