@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
+import { DEMO_MODE } from "@/lib/demo-mode";
 import { createClient } from "@/utils/supabase/client";
 import type { DashboardSummary } from "../types";
 import { DEMO_SUMMARY } from "./demoData";
@@ -28,7 +29,8 @@ export default function AdminDashboard() {
     let cancelled = false;
 
     // Yerel gelistirmede oturum/veri yokken panelin arayuzunu gormek icin.
-    if (process.env.NEXT_PUBLIC_DEMO_MODE === "1") {
+    // Uretimde bu bayrak her zaman false olur (bkz. src/lib/demo-mode.ts).
+    if (DEMO_MODE) {
       setData(DEMO_SUMMARY);
       setLoading(false);
       return;

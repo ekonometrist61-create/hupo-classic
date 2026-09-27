@@ -1,4 +1,5 @@
 import { redirect } from "@/i18n/navigation";
+import { DEMO_MODE } from "@/lib/demo-mode";
 import { createClient } from "@/utils/supabase/server";
 
 // Yönetim bölümü yalnızca admin rolüne açıktır. (Asıl yetki veritabanında da zorunludur:
@@ -13,7 +14,8 @@ export default async function YonetimLayout({
   const { locale } = await params;
 
   // Yerel gelistirmede paneli oturum olmadan gormek icin.
-  if (process.env.NEXT_PUBLIC_DEMO_MODE === "1") return <>{children}</>;
+  // Uretimde bu bayrak her zaman false olur (bkz. src/lib/demo-mode.ts).
+  if (DEMO_MODE) return <>{children}</>;
 
   const supabase = await createClient();
   const {

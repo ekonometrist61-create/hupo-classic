@@ -2,6 +2,7 @@ import createMiddleware from "next-intl/middleware";
 import { NextResponse, type NextRequest } from "next/server";
 
 import { routing } from "./i18n/routing";
+import { DEMO_MODE } from "./lib/demo-mode";
 import { updateSession } from "./utils/supabase/proxy";
 
 /**
@@ -14,11 +15,6 @@ import { updateSession } from "./utils/supabase/proxy";
  * yalnizca oturumun varligini dogrular.
  */
 const PUBLIC_PREFIXES = ["/signin", "/signup", "/error-404"];
-
-// YALNIZCA yerel gelistirmede paneli Supabase oturumu olmadan gormek icin.
-// NEXT_PUBLIC_DEMO_MODE=1 tanimliysa giris kontrolu atlanir.
-// Bu degisken commit'e girmez (.env.local) ve production'da etkisizdir.
-const DEMO_MODE = process.env.NEXT_PUBLIC_DEMO_MODE === "1";
 
 function isPublic(pathname: string): boolean {
   return PUBLIC_PREFIXES.some((p) => pathname.startsWith(p));

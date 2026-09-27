@@ -33,9 +33,11 @@ dev.log
 dev.log.err
 *.pid
 
-# Yalnizca yerel gelistirmede paneli verisiz gormek icin uretilen ornek veri.
-# NEXT_PUBLIC_DEMO_MODE=1 tanimli oldugunda kullanilir; uretimde gerekmez.
-src/components/yonetim/panel/demoData.ts
+# NOT: src/components/yonetim/panel/demoData.ts ARTIK commit edilir.
+# AdminDashboard.tsx onu import ettigi icin depo, temiz bir kopyadan da
+# derlenebilmelidir (aksi halde build "module not found" ile kirilir).
+# Demo icerigi yalnizca gelistirmede gorunur: bkz. src/lib/demo-mode.ts
+# (NODE_ENV === "production" iken demo modu her zaman kapalidir).
 
 # local env files
 .env*.local
