@@ -4,7 +4,7 @@
 --  Tarih: 2026-09-27
 --
 --  KAYNAK: pg_catalog (information_schema.columns, pg_constraint)
---  Bu migration, 20260927000010_carpim_sifreleri_rpc.sql'den ÖNCE çalışmalıdır
+--  Bu migration, 20260927000020_carpim_sifreleri_rpc.sql'den ÖNCE çalışmalıdır
 --  (RPC'ler bu tablolara referans verir).
 -- =====================================================================
 
@@ -147,8 +147,10 @@ create index if not exists daily_challenges_gun_anahtar_idx
   on public.daily_challenges (gun, anahtar);
 
 -- Yönetici: açık bildirimleri sürebilir
-create index if not exists question_reports_durum_idx
-  on public.question_reports (durum, created_at desc);
+-- TODO(kurtarma): question_reports tablosu henüz alınmadı (bkz. supabase/KURTARMA_DURUMU.md).
+-- Tablo kurtarıldığında sıradaki index geri açılmalıdır:
+--   create index if not exists question_reports_durum_idx
+--     on public.question_reports (durum, created_at desc);
 
 -- Öğrenci: rozetlerini hızlıca okusun
 create index if not exists user_badges_student_idx

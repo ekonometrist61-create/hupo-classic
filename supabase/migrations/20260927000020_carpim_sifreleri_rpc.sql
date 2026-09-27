@@ -9,7 +9,7 @@
 --     public.carpim_sifreleri     -> şifre tanımları (içerik)
 --     public.carpim_ilerleme      -> öğrenci ilerlemesi
 --     public.carpim_deneme_log     -> her sorunun ilk denemesi
---  Bu tablolar 20260926_carpim_sifreleri.sql migration'ında oluşturulur.
+--  Bu tablolar 20260927000010_carpim_sifreleri_tables.sql migration'ında oluşturulur.
 -- =====================================================================
 
 -- Önceki çalıştırmadan kalan sürümlerde parametre adı farklıydı.
