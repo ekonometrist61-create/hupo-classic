@@ -1,0 +1,13 @@
+feat: yonetim paneli, veli paneli ve Turkce i18n katmani
+
+TailAdmin sablonu uzerine kurulan proje ozelligi:
+- /yonetim: dashboard (KPI, gelir grafigi, ders dagilimi, son islemler),
+  kullanicilar (veli-cocuk eslestirme), odemeler (plan + odeme yonetimi),
+  sorular (CRUD, durum, toplu ekleme)
+- /veli-paneli: cocuk secimi, istatistik kartlari, ders basari ve haftalik
+  calisma grafikleri, tekrar onerileri, KVKK riza karti
+- /giris, /kayit: Supabase auth ekranlari
+- proxy.ts: next-intl + Supabase oturum yenileme zinciri, /yonetim ve
+  /veli-paneli icin giris zorunlulugu
+- Turkce birincil locale; yonetim/veli metinleri ayri mesaj dosyalarinda
+- types.ts dosyalari bilesen kullanimina gore yeniden yazildi

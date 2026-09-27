@@ -1,0 +1,36 @@
+import type { NextConfig } from "next";
+import createNextIntlPlugin from "next-intl/plugin";
+
+// next-intl'in mesaj yapilandirmasini src/i18n/request.ts'ten yuklemesi icin
+// dosya yolunu acikca veriyoruz. Parametresiz cagri, varsayilan olarak
+// ./src/i18n/request.ts arar ama bu sürümde bulamayip en'e duser.
+const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
+
+const nextConfig: NextConfig = {
+  /* config options here */
+  webpack(config) {
+    config.module.rules.push({
+      test: /\.svg$/,
+      use: ["@svgr/webpack"],
+    });
+    return config;
+  },
+  images: {
+    localPatterns: [
+      {
+        pathname: "/**",
+      },
+    ],
+  },
+  turbopack: {
+    root: __dirname,
+    rules: {
+      "*.svg": {
+        loaders: ["@svgr/webpack"],
+        as: "*.js",
+      },
+    },
+  },
+};
+
+export default withNextIntl(nextConfig);

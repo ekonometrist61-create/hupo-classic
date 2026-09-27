@@ -1,0 +1,72 @@
+const sharp=require('sharp');const fs=require('fs');
+const DESK='C:/Users/cengi/OneDrive/Desktop/';
+const OUT=process.argv[2]||'out';fs.mkdirSync(OUT,{recursive:true});
+const P=[
+[1,'ayakta',170,140,375,390],[1,'karsilama',950,135,1320,390],[1,'merakli',170,425,365,690],[1,'sevimli',590,440,825,690],[1,'dost',950,430,1310,690],
+[2,'tesvik',445,150,700,380],[2,'uzulen',770,150,960,380],[2,'dusunen',150,440,350,690],[2,'sorgulayan',470,450,630,690],[2,'sasiran',730,460,1010,680],[2,'basaran',1085,460,1290,690],
+[3,'tebrikler',130,170,290,390],[3,'muthis',360,170,590,390],[3,'harikasin',640,160,840,390],[3,'hizli',890,170,1070,390],
+[3,'biraz_calis',100,470,330,690],[3,'sakin_vazgecme',365,480,590,690],[3,'sakin_pes_etme',630,480,850,690],[3,'sabirli',880,490,1080,690],[3,'ozletme',1130,480,1320,690]];
+const only=process.argv[3];
+const CANVAS=800, BASE=776, S=2.8, MAXW=770, MAXH=750;
+function comps(mask,w,h,pred){ // label 8-conn comps of pred true
+  const lab=new Int32Array(w*h);let n=0;const sizes=[0];
+  for(let i=0;i<w*h;i++){ if(!pred(i)||lab[i])continue; n++;let st=[i];lab[i]=n;let c=0;
+    while(st.length){const p=st.pop();c++;const x=p%w,y=(p/w)|0;
+      for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){const nx=x+dx,ny=y+dy;if(nx<0||ny<0||nx>=w||ny>=h)continue;const q=ny*w+nx;if(!lab[q]&&pred(q)){lab[q]=n;st.push(q)}}}
+    sizes.push(c);}
+  return {lab,sizes,n};}
+(async()=>{
+ const cache={};
+ const meta=[];
+ for(const [s,name,x0,y0,x1,y1] of P){
+  if(only&&only!==name)continue;
+  const w=x1-x0,h=y1-y0;
+  const buf=await sharp(DESK+'Hupo-'+s+'.jpg').extract({left:x0,top:y0,width:w,height:h}).removeAlpha().raw().toBuffer();
+  const R=i=>buf[i*3],G=i=>buf[i*3+1],B=i=>buf[i*3+2];
+  const loose=i=>B(i)>=R(i)-14&&Math.min(R(i),G(i),B(i))>=150;
+  const strict=i=>B(i)>=R(i)-12&&G(i)>=R(i)+5&&Math.min(R(i),G(i),B(i))>=150;
+  // flood bg from border
+  const bg=new Uint8Array(w*h);let st=[];
+  const push=i=>{if(!bg[i]&&loose(i)){bg[i]=1;st.push(i)}};
+  for(let x=0;x<w;x++){push(x);push((h-1)*w+x)} for(let y=0;y<h;y++){push(y*w);push(y*w+w-1)}
+  while(st.length){const p=st.pop();const x=p%w,y=(p/w)|0;for(const [dx,dy] of [[1,0],[-1,0],[0,1],[0,-1]]){const nx=x+dx,ny=y+dy;if(nx<0||ny<0||nx>=w||ny>=h)continue;push(ny*w+nx)}}
+  // enclosed strict pockets
+  {const c=comps(null,w,h,i=>!bg[i]&&strict(i));const ys=new Float64Array(c.n+1);let miny=h,maxy=0;for(let i=0;i<w*h;i++){const l=c.lab[i];if(l){ys[l]+=((i/w)|0)}if(!bg[i]&&!strict(i)){const y=(i/w)|0;miny=Math.min(miny,y);maxy=Math.max(maxy,y)}}
+ for(let i=0;i<w*h;i++){const l=c.lab[i];if(l&&c.sizes[l]>=25&&ys[l]/c.sizes[l]>miny+(maxy-miny)*0.5)bg[i]=1}}
+  // largest fg component
+  const c=comps(null,w,h,i=>!bg[i]);let best=1;for(let k=1;k<=c.n;k++)if(c.sizes[k]>c.sizes[best])best=k;
+  let fg=new Uint8Array(w*h);for(let i=0;i<w*h;i++)fg[i]=c.lab[i]===best?1:0;
+  // fill small holes? (enclosed bg-like handled). erode 1px (4-neighborhood)
+  const er=new Uint8Array(w*h);
+  for(let y=0;y<h;y++)for(let x=0;x<w;x++){const i=y*w+x;if(!fg[i])continue;
+    er[i]=1;}
+  if(name==='hizli'){const cx=106,cy=68,rx=+process.env.RX||52,ry=+process.env.RY||46,YM=+process.env.YM||102;
+    for(let y=0;y<YM;y++)for(let x=0;x<cx;x++){const i=y*w+x;const e=((x-cx)/rx)**2+((y-cy)/ry)**2;
+      if(e>1){er[i]=0}
+      else{ if(!er[i]){er[i]=1;buf[i*3]=240;buf[i*3+1]=190;buf[i*3+2]=60}
+        if(e>0.88&&y<YM-6){buf[i*3]=10;buf[i*3+1]=45;buf[i*3+2]=75} }}
+  }
+  {const ring=[];for(let y=1;y<h-1;y++)for(let x=1;x<w-1;x++){const i=y*w+x;if(er[i]&&(!er[i-1]||!er[i+1]||!er[i-w]||!er[i+w]))ring.push(i)}
+   const K=+process.env.K||0.8;for(const i of ring){buf[i*3]=buf[i*3]*(1-K)+10*K;buf[i*3+1]=buf[i*3+1]*(1-K)+45*K;buf[i*3+2]=buf[i*3+2]*(1-K)+75*K}}
+  // bbox
+  let bx0=w,by0=h,bx1=0,by1=0;for(let y=0;y<h;y++)for(let x=0;x<w;x++)if(er[y*w+x]){bx0=Math.min(bx0,x);by0=Math.min(by0,y);bx1=Math.max(bx1,x);by1=Math.max(by1,y)}
+  const pad=3;bx0=Math.max(0,bx0-pad);by0=Math.max(0,by0-pad);bx1=Math.min(w-1,bx1+pad);by1=Math.min(h-1,by1+pad);
+  {let t=0;for(let y=0;y<h;y++)for(let x=0;x<w;x++)if(fg[y*w+x]&&(x==0||y==0||x==w-1||y==h-1))t++;if(t)console.log('TOUCH',name,t)}
+  const bw=bx1-bx0+1,bh=by1-by0+1;
+  // defringe color: for pixels where mask was eroded away or fringe, leave; rgb from source, but fill non-fg pixels with nearest fg color (avoid bg bleed in upscale)
+  const rgb=Buffer.from(buf);
+  // dilate fg colors outward 3px into non-er pixels
+  let known=Uint8Array.from(er);
+  for(let it=0;it<4;it++){const nk=Uint8Array.from(known);for(let y=1;y<h-1;y++)for(let x=1;x<w-1;x++){const i=y*w+x;if(known[i])continue;let r=0,g=0,b=0,n=0;for(let dy=-1;dy<=1;dy++)for(let dx=-1;dx<=1;dx++){const j=i+dy*w+dx;if(known[j]){r+=rgb[j*3];g+=rgb[j*3+1];b+=rgb[j*3+2];n++}}if(n){rgb[i*3]=r/n;rgb[i*3+1]=g/n;rgb[i*3+2]=b/n;nk[i]=1}}known=nk}
+  const maskBuf=Buffer.alloc(w*h);for(let i=0;i<w*h;i++)maskBuf[i]=er[i]?255:0;
+  const scale=Math.min(s===3?3.2:S,MAXW/bw,MAXH/bh);
+  const nw=Math.round(bw*scale),nh=Math.round(bh*scale);
+  const rgbUp=await sharp(rgb,{raw:{width:w,height:h,channels:3}}).extract({left:bx0,top:by0,width:bw,height:bh}).resize(nw,nh,{kernel:'lanczos3'}).raw().toBuffer();
+  let aUp=await sharp(maskBuf,{raw:{width:w,height:h,channels:1}}).extract({left:bx0,top:by0,width:bw,height:bh}).resize(nw,nh,{kernel:'lanczos3'}).blur(scale*0.55).linear(3.2,-128*3.2+128).extractChannel(0).raw().toBuffer({resolveWithObject:true}).then(o=>{if(o.info.channels!==1)throw new Error('ch'+o.info.channels);return o.data});
+  const rgba=Buffer.alloc(nw*nh*4);for(let i=0;i<nw*nh;i++){rgba[i*4]=rgbUp[i*3];rgba[i*4+1]=rgbUp[i*3+1];rgba[i*4+2]=rgbUp[i*3+2];rgba[i*4+3]=aUp[i]}
+  const left=Math.round((CANVAS-nw)/2),top=BASE-nh;
+  if(name==='hizli')console.log('DBG',bx0,by0,left,top,scale);
+  await sharp({create:{width:CANVAS,height:CANVAS,channels:4,background:{r:0,g:0,b:0,alpha:0}}}).composite([{input:rgba,raw:{width:nw,height:nh,channels:4},left,top}]).png({palette:true,quality:92,effort:10,colours:96,dither:0.6}).toFile(OUT+'/'+name+'.png');
+  console.log(name,'src',bw,bh,'scale',scale.toFixed(2),'size',fs.statSync(OUT+'/'+name+'.png').size);
+ }
+})();

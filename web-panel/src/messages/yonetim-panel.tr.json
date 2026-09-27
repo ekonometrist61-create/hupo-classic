@@ -1,0 +1,153 @@
+{
+  "yonetim": {
+    "panel": {
+      "title": "Yönetim Paneli",
+      "loading": "Yükleniyor...",
+      "error": "Özet bilgiler alınamadı.",
+      "retry": "Tekrar dene",
+      "empty": "Gösterilecek veri yok.",
+      "kpi": {
+        "parents": "Veli Hesabı",
+        "students": "Öğrenci",
+        "activeSubs": "Aktif Abonelik",
+        "revenueThisMonth": "Bu Ay Gelir",
+        "pendingQuestions": "Onay Bekleyen Soru",
+        "expiringSoon": "Yakında Biten Abonelik",
+        "newLast30": "Son 30 Günde Yeni",
+        "newRevenue": "Yeni Gelir",
+        "vsLastMonth": "geçen aya göre",
+        "noChange": "değişim yok",
+        "review": "İncele",
+        "unlinkedWarning": "Bağlı çocuğu olmayan veli var",
+        "unlinkedAction": "Listede gör"
+      },
+      "revenue": {
+        "title": "Gelir",
+        "desc": "Onaylanan ödemeler",
+        "empty": "Bu dönemde ödeme yok.",
+        "amount": "Tutar",
+        "count": "Ödeme sayısı"
+      },
+      "mix": {
+        "title": "Ders Dağılımı",
+        "desc": "Soru sayısına göre",
+        "empty": "Henüz soru eklenmemiş.",
+        "approved": "Onaylı",
+        "pending": "Beklemede",
+        "rejected": "Reddedilen"
+      },
+      "recentPayments": {
+        "title": "Son Ödemeler"
+      },
+      "recentActions": {
+        "title": "Son İşlemler"
+      },
+      "islem": {
+        "odeme": "Ödeme",
+        "kullanici": "Kullanıcı",
+        "soru": "Soru"
+      },
+      "picker": {
+        "label": "Veli seç",
+        "placeholder": "Veli ara...",
+        "loading": "Veli listesi yükleniyor...",
+        "none": "Eşleşen veli bulunamadı",
+        "change": "Değiştir"
+      }
+    },
+    "kullanicilar": {
+      "title": "Kullanıcılar",
+      "loading": "Yükleniyor...",
+      "empty": "Kayıt bulunamadı.",
+      "retry": "Tekrar dene",
+      "search": "Ara",
+      "searchPlaceholder": "İsim veya e-posta",
+      "role": "Rol",
+      "allRoles": "Tüm roller",
+      "roleNote": "Öğrenci hesapları veli hesabına bağlandığında burada listelenir.",
+      "linkParent": "Veli bağla",
+      "changeParent": "Veli değiştir",
+      "unlink": "Bağı kaldır",
+      "unlinked": "Bağ kaldırıldı",
+      "cols": {
+        "name": "Veli Adı",
+        "email": "E-posta",
+        "role": "Rol",
+        "children": "Bağlı Çocuk",
+        "parent": "Veli",
+        "grade": "Sınıf",
+        "joined": "Kayıt Tarihi"
+      },
+      "pager": {
+        "prev": "Önceki",
+        "next": "Sonraki"
+      },
+      "link": {
+        "title": "Veli Bağla",
+        "titleChange": "Veli Değiştir",
+        "student": "Öğrenci",
+        "current": "Şu an bağlı veli",
+        "save": "Kaydet",
+        "saving": "Kaydediliyor...",
+        "cancel": "Vazgeç",
+        "errParent": "Veli seçilmedi."
+      },
+      "unlinkConfirm": {
+        "title": "Bağı kaldır",
+        "text": "Bu öğrenci veli hesabıyla bağlantısı kesilecek. Devam edilsin mi?",
+        "confirm": "Bağı kaldır",
+        "cancel": "Vazgeç",
+        "saving": "Kaydediliyor..."
+      }
+    },
+    "odemeler": {
+      "title": "Ödemeler ve Planlar",
+      "plans": {
+        "title": "Planlar",
+        "new": "Yeni plan",
+        "createTitle": "Plan oluştur",
+        "editTitle": "Planı düzenle",
+        "edit": "Düzenle",
+        "kod": "Plan Kodu",
+        "kodHint": "Küçük harf ve rakam, örn. \"aylik\"",
+        "ad": "Plan Adı",
+        "aciklama": "Açıklama",
+        "fiyat": "Fiyat",
+        "sure": "Süre (gün)",
+        "aktif": "Aktif",
+        "active": "Aktif",
+        "inactive": "Pasif",
+        "empty": "Tanımlı plan yok.",
+        "save": "Kaydet",
+        "saving": "Kaydediliyor...",
+        "cancel": "Vazgeç",
+        "errKod": "Plan kodu zorunlu.",
+        "errAd": "Plan adı zorunlu.",
+        "errFiyat": "Fiyat sıfırdan büyük olmalı.",
+        "errSure": "Süre pozitif bir tam sayı olmalı."
+      },
+      "durum": {
+        "beklemede": "Beklemede",
+        "basarili": "Başarılı",
+        "basarisiz": "Başarısız",
+        "iade": "İade"
+      },
+      "form": {
+        "title": "Ödeme Kaydı",
+        "new": "Yeni ödeme",
+        "plan": "Plan",
+        "tutar": "Tutar",
+        "tarih": "Tarih",
+        "save": "Kaydet",
+        "saving": "Kaydediliyor...",
+        "cancel": "Vazgeç"
+      },
+      "statusModal": {
+        "title": "Ödeme Durumu",
+        "save": "Kaydet",
+        "saving": "Kaydediliyor...",
+        "cancel": "Vazgeç"
+      }
+    }
+  }
+}

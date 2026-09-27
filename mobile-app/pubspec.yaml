@@ -1,0 +1,54 @@
+name: ogrenci_hazirlik
+description: Öğrenci Hazırlık Uygulaması - öğrenci arayüzü (soru çözme, XP, seri, aralıklı tekrar).
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_riverpod: ^2.4.10
+  supabase_flutter: ^2.17.2
+  lottie: ^3.6.1
+  shared_preferences: ^2.5.5
+  # Push bildirimleri (yalnızca mobil; web'de kod devre dışı kalır).
+  # Kurulum: docs/PUSH_KURULUM.md
+  firebase_core: ^4.15.0
+  firebase_messaging: ^16.7.0
+  # AdMob banner. Çocuk uygulaması olduğu için sunucudan 'ogrenci_acik'
+  # bayrağı açılmadan reklam HİÇ gösterilmez (bkz. models/app_config.dart).
+  google_mobile_ads: ^5.2.0
+  # TODO(kurtarma): "Bunu bir arkadaşıma anlattım" rozeti için paylaşım
+  # yapılıyor ama share_plus paketinin izi APK'da YOK. Yöntemi netleştir,
+  # sonra gerekirse paketi buraya ekle.
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/hupo/
+    - assets/lottie/
+    - assets/fonts/Nunito-OFL.txt
+    - assets/fonts/Lexend-OFL.txt
+
+  fonts:
+    # Nunito (SIL OFL 1.1): yuvarlak hatlı, çocuk dostu; Türkçe karakterleri tam destekler.
+    # Değişken (variable) yazı tipi: aynı dosya tüm ağırlıkları karşılar.
+    - family: Nunito
+      fonts:
+        - asset: assets/fonts/Nunito.ttf
+    # Lexend (SIL OFL 1.1): harf aralığı geniş, okumayı kolaylaştıran seçenek.
+    - family: Lexend
+      fonts:
+        - asset: assets/fonts/Lexend.ttf

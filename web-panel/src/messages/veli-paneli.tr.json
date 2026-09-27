@@ -1,0 +1,60 @@
+{
+  "veliPaneli": {
+    "title": "Veli Paneli",
+    "loading": "Yükleniyor...",
+    "error": "Bilgiler alınamadı. Lütfen tekrar deneyin.",
+    "notParent": "Bu sayfa yalnızca veli hesapları içindir.",
+    "childLabel": "Öğrenci",
+    "noChildren": {
+      "title": "Henüz öğrenci bağlı değil",
+      "text": "Öğrenci hesabını veli hesabınıza bağladığınızda çalışma istatistikleri burada görünecek."
+    },
+    "stats": {
+      "weeklyTime": "Haftalık Çalışma",
+      "minutes": "dk",
+      "streak": "Seri",
+      "streakUnit": "gün",
+      "questions": "Soru",
+      "xp": "XP",
+      "level": "Seviye"
+    },
+    "weekly": {
+      "title": "Haftalık Çalışma",
+      "desc": "Son 7 günde geçirilen süre ve çözülen soru sayısı",
+      "empty": "Bu hafta henüz çalışma kaydı yok.",
+      "minutesLabel": "Süre (dk)",
+      "questionsLabel": "Soru sayısı"
+    },
+    "subjects": {
+      "title": "Ders Bazında Başarı",
+      "desc": "Çözülen soruların doğru cevap oranına göre dağılımı",
+      "empty": "Henüz çözülmüş soru yok.",
+      "tooltip": "Doğru cevap oranı"
+    },
+    "review": {
+      "title": "Tekrar Önerileri",
+      "desc": "Sık hata yapılan konular",
+      "topic": "Konu",
+      "subject": "Ders",
+      "wrong": "Yanlış",
+      "success": "Başarı",
+      "due": "tekrar edilmeli",
+      "empty": "Tekrar edilecek konu bulunmuyor. Harika iş!"
+    },
+    "consent": {
+      "title": "Çocuk Verilerinin Kullanımı",
+      "notice": "Çocuğunuzun çalışma verilerini toplamamız için veli onayı gerekiyor.",
+      "desc": "Veriler yalnızca eğitsel amaçla işlenir, üçüncü taraflarla paylaşılmaz ve istediğiniz an geri çekilebilir.",
+      "give": "Onay ver",
+      "withdraw": "Onayı geri çek",
+      "loading": "Kaydediliyor...",
+      "error": "İşlem tamamlanamadı.",
+      "saveError": "Onay kaydedilemedi. Lütfen tekrar deneyin.",
+      "status": {
+        "none": "Onay bekleniyor",
+        "given": "Onay verildi",
+        "withdrawn": "Onay geri çekildi"
+      }
+    }
+  }
+}

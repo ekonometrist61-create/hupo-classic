@@ -1,0 +1,60 @@
+{
+  "veliPaneli": {
+    "title": "Parent Panel",
+    "loading": "Loading...",
+    "error": "Could not load the data. Please try again.",
+    "notParent": "This page is for parent accounts only.",
+    "childLabel": "Student",
+    "noChildren": {
+      "title": "No student linked yet",
+      "text": "Once you link a student account to your parent account, study statistics will appear here."
+    },
+    "stats": {
+      "weeklyTime": "Weekly Study",
+      "minutes": "min",
+      "streak": "Streak",
+      "streakUnit": "days",
+      "questions": "Questions",
+      "xp": "XP",
+      "level": "Level"
+    },
+    "weekly": {
+      "title": "Weekly Study",
+      "desc": "Time spent and questions solved over the last 7 days",
+      "empty": "No study activity recorded this week.",
+      "minutesLabel": "Time (min)",
+      "questionsLabel": "Questions"
+    },
+    "subjects": {
+      "title": "Success by Subject",
+      "desc": "Distribution of solved questions by correct-answer rate",
+      "empty": "No questions solved yet.",
+      "tooltip": "Correct answer rate"
+    },
+    "review": {
+      "title": "Review Suggestions",
+      "desc": "Topics answered incorrectly most often",
+      "topic": "Topic",
+      "subject": "Subject",
+      "wrong": "Wrong",
+      "success": "Success",
+      "due": "due for review",
+      "empty": "No topics need review. Great job!"
+    },
+    "consent": {
+      "title": "Use of Children's Data",
+      "notice": "Parental consent is required before we can collect your child's study data.",
+      "desc": "The data is processed for educational purposes only, is never shared with third parties, and consent can be withdrawn at any time.",
+      "give": "Give consent",
+      "withdraw": "Withdraw consent",
+      "loading": "Saving...",
+      "error": "The operation could not be completed.",
+      "saveError": "Consent could not be saved. Please try again.",
+      "status": {
+        "none": "Awaiting consent",
+        "given": "Consent given",
+        "withdrawn": "Consent withdrawn"
+      }
+    }
+  }
+}

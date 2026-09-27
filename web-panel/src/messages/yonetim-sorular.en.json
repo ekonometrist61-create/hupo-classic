@@ -1,0 +1,175 @@
+{
+  "yonetim": {
+    "sorular": {
+      "title": "Questions",
+      "listTitle": "Question List",
+      "loading": "Loading...",
+      "loadError": "Could not load the questions.",
+      "retry": "Retry",
+      "empty": "No questions yet.",
+      "newQuestion": "New Question",
+      "bulkImport": "Bulk Import",
+      "total": "Total",
+      "difficulty": {
+        "1": "Easy",
+        "2": "Medium",
+        "3": "Hard"
+      },
+      "status": {
+        "beklemede": "Pending",
+        "onaylandi": "Approved",
+        "reddedildi": "Rejected"
+      },
+      "filters": {
+        "search": "Search",
+        "searchPlaceholder": "Search question text or topic...",
+        "ders": "Subject",
+        "dersPlaceholder": "All subjects",
+        "durum": "Status",
+        "allStatuses": "All statuses",
+        "zorluk": "Difficulty",
+        "allDifficulties": "All difficulties"
+      },
+      "table": {
+        "select": "Select",
+        "selectAll": "Select all",
+        "question": "Question",
+        "course": "Subject",
+        "difficulty": "Difficulty",
+        "status": "Status",
+        "created": "Created",
+        "actions": "Actions",
+        "edit": "Edit"
+      },
+      "pager": {
+        "prev": "Previous",
+        "next": "Next",
+        "summary": "{from}-{from} of {to} / {total}"
+      },
+      "bulk": {
+        "selected": "{count} question(s) selected",
+        "approve": "Approve",
+        "reject": "Reject",
+        "pending": "Set to pending",
+        "delete": "Delete"
+      },
+      "form": {
+        "newTitle": "New Question",
+        "editTitle": "Edit Question",
+        "okul": "School Level",
+        "ders": "Subject",
+        "konu": "Topic",
+        "altKonu": "Sub-topic",
+        "zorluk": "Difficulty",
+        "soruMetni": "Question Text",
+        "soruMetniPlaceholder": "Type the question here...",
+        "siklar": "Options",
+        "sik": "Option",
+        "siklarHint": "At least 2 options must be filled in.",
+        "dogruSik": "Correct Option",
+        "dogruSikPlaceholder": "Select the option letter",
+        "cozum": "Solution Steps",
+        "cozumHint": "Write each step on a separate line.",
+        "cozumPlaceholder": "Each line is one step",
+        "durum": "Approval Status",
+        "required": "Required",
+        "optional": "optional",
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel"
+      },
+      "delete": {
+        "title": "Delete question",
+        "warningTitle": "Are you sure?",
+        "warning": "This question will be permanently deleted. This cannot be undone.",
+        "confirm": "Delete",
+        "deleting": "Deleting...",
+        "cancel": "Cancel"
+      },
+      "success": {
+        "saved": "Question saved.",
+        "deleted": "Question deleted.",
+        "status": "Status updated."
+      },
+      "import": {
+        "title": "Bulk Question Import",
+        "backToList": "Back to list",
+        "previewNote": "Review the rows before importing.",
+        "noRows": "No data rows found in the file.",
+        "onlyErrors": "Show errors only",
+        "detectedDelimiter": "Delimiter",
+        "delimiter": {
+          "semicolon": "Semicolon (;)",
+          "comma": "Comma (,)",
+          "tab": "Tab"
+        },
+        "unknownColumns": "Unrecognised columns will be ignored:",
+        "duplicateColumns": "Columns mapped twice will be ignored:",
+        "missingColumns": "Missing required columns:",
+        "count": {
+          "total": "Total rows",
+          "valid": "Valid",
+          "invalid": "Invalid"
+        },
+        "input": {
+          "title": "CSV File",
+          "fileLoaded": "File loaded",
+          "readError": "Could not read the file.",
+          "clear": "Remove file",
+          "encodingWarning": "The file was read with a different character encoding. Turkish characters may look broken.",
+          "pasteLabel": "Or paste the content",
+          "pastePlaceholder": "Question;Subject;Topic;..."
+        },
+        "help": {
+          "title": "Help",
+          "columns": "Column names",
+          "required": "Required fields",
+          "optional": "Optional fields",
+          "steps": "Solution steps",
+          "answer": "Correct option",
+          "options": "Options",
+          "difficulty": "Difficulty",
+          "status": "Approval status",
+          "encoding": "Character encoding",
+          "duplicates": "Duplicates",
+          "download": "Download template"
+        },
+        "preview": {
+          "title": "Preview"
+        },
+        "options": {
+          "title": "Import",
+          "progress": "{done} / {total} rows processed",
+          "import": "Import",
+          "importing": "Importing...",
+          "nothingToImport": "No valid rows to import.",
+          "blocked": "Fix the invalid rows first, or download the errors.",
+          "approve": "Approve imported questions",
+          "approveHint": "Otherwise the question stays pending.",
+          "allOrNothing": "Import nothing if any row fails",
+          "allOrNothingHint": "When on, invalid rows are skipped and valid ones are imported."
+        },
+        "result": {
+          "title": "Result",
+          "added": "Added",
+          "duplicate": "Duplicates",
+          "failed": "Failed",
+          "aborted": "The operation did not complete.",
+          "again": "Load another file",
+          "errorList": "Error list",
+          "downloadErrors": "Download errors",
+          "duplicateHint": "Questions added earlier were skipped.",
+          "line": "Line"
+        },
+        "table": {
+          "line": "Line",
+          "course": "Subject",
+          "question": "Question",
+          "answer": "Answer",
+          "status": "Status",
+          "ok": "Valid"
+        }
+      }
+    }
+  }
+}

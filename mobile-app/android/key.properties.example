@@ -1,0 +1,8 @@
+# Bu dosyayi "key.properties" adiyla KOPYALA (android/ klasorunun icine) ve doldur.
+# key.properties Git'e GITMEZ (.gitignore'da). Sifreleri kimseyle paylasma.
+# store/anahtar-olustur.bat bu dosyayi senin icin otomatik olusturur.
+storePassword=KEYSTORE_SIFRESI
+keyPassword=ANAHTAR_SIFRESI
+keyAlias=upload
+# Windows'ta yolda ters bolu yerine / veya cift \ kullan. Ornek: C:/Users/ali/upload-keystore.jks
+storeFile=C:/yol/upload-keystore.jks

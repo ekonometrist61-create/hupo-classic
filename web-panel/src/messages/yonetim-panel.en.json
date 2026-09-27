@@ -1,0 +1,153 @@
+{
+  "yonetim": {
+    "panel": {
+      "title": "Admin Dashboard",
+      "loading": "Loading...",
+      "error": "Could not load the summary data.",
+      "retry": "Retry",
+      "empty": "No data to display.",
+      "kpi": {
+        "parents": "Parent Accounts",
+        "students": "Students",
+        "activeSubs": "Active Subscriptions",
+        "revenueThisMonth": "Revenue This Month",
+        "pendingQuestions": "Questions Awaiting Approval",
+        "expiringSoon": "Subscriptions Expiring Soon",
+        "newLast30": "New in Last 30 Days",
+        "newRevenue": "New Revenue",
+        "vsLastMonth": "vs last month",
+        "noChange": "no change",
+        "review": "Review",
+        "unlinkedWarning": "Some parents have no linked child",
+        "unlinkedAction": "View list"
+      },
+      "revenue": {
+        "title": "Revenue",
+        "desc": "Approved payments",
+        "empty": "No payments in this period.",
+        "amount": "Amount",
+        "count": "Payment count"
+      },
+      "mix": {
+        "title": "Subject Distribution",
+        "desc": "By question count",
+        "empty": "No questions added yet.",
+        "approved": "Approved",
+        "pending": "Pending",
+        "rejected": "Rejected"
+      },
+      "recentPayments": {
+        "title": "Recent Payments"
+      },
+      "recentActions": {
+        "title": "Recent Activity"
+      },
+      "islem": {
+        "odeme": "Payment",
+        "kullanici": "User",
+        "soru": "Question"
+      },
+      "picker": {
+        "label": "Select parent",
+        "placeholder": "Search parent...",
+        "loading": "Loading parents...",
+        "none": "No matching parent found",
+        "change": "Change"
+      }
+    },
+    "kullanicilar": {
+      "title": "Users",
+      "loading": "Loading...",
+      "empty": "No records found.",
+      "retry": "Retry",
+      "search": "Search",
+      "searchPlaceholder": "Name or email",
+      "role": "Role",
+      "allRoles": "All roles",
+      "roleNote": "Student accounts are listed here once linked to a parent account.",
+      "linkParent": "Link parent",
+      "changeParent": "Change parent",
+      "unlink": "Unlink",
+      "unlinked": "Link removed",
+      "cols": {
+        "name": "Parent Name",
+        "email": "Email",
+        "role": "Role",
+        "children": "Linked Child",
+        "parent": "Parent",
+        "grade": "Grade",
+        "joined": "Joined"
+      },
+      "pager": {
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "link": {
+        "title": "Link Parent",
+        "titleChange": "Change Parent",
+        "student": "Student",
+        "current": "Currently linked parent",
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel",
+        "errParent": "No parent selected."
+      },
+      "unlinkConfirm": {
+        "title": "Remove link",
+        "text": "This student will be unlinked from the parent account. Continue?",
+        "confirm": "Unlink",
+        "cancel": "Cancel",
+        "saving": "Saving..."
+      }
+    },
+    "odemeler": {
+      "title": "Payments and Plans",
+      "plans": {
+        "title": "Plans",
+        "new": "New plan",
+        "createTitle": "Create plan",
+        "editTitle": "Edit plan",
+        "edit": "Edit",
+        "kod": "Plan Code",
+        "kodHint": "Lowercase letters and digits, e.g. \"monthly\"",
+        "ad": "Plan Name",
+        "aciklama": "Description",
+        "fiyat": "Price",
+        "sure": "Duration (days)",
+        "aktif": "Active",
+        "active": "Active",
+        "inactive": "Inactive",
+        "empty": "No plans defined.",
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel",
+        "errKod": "Plan code is required.",
+        "errAd": "Plan name is required.",
+        "errFiyat": "Price must be greater than zero.",
+        "errSure": "Duration must be a positive integer."
+      },
+      "durum": {
+        "beklemede": "Pending",
+        "basarili": "Successful",
+        "basarisiz": "Failed",
+        "iade": "Refunded"
+      },
+      "form": {
+        "title": "Payment Record",
+        "new": "New payment",
+        "plan": "Plan",
+        "tutar": "Amount",
+        "tarih": "Date",
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel"
+      },
+      "statusModal": {
+        "title": "Payment Status",
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel"
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+# =====================================================================
+#  Öğrenci Hazırlık (Hupo) — kök .gitignore
+#  Kural: elle yazılan kaynak commit edilir; üretilen, kurtarma kanıtı ve
+#  sırlar commit EDİLMEZ. (Bkz. AGENTS.md §2, §5 ve TEMIZLIK_RAPORU.md §6)
+# =====================================================================
+
+# --- Bağımlılıklar / üretilen çıktılar (yeniden üretilir) ---
+node_modules/
+.next/
+.next-test/
+build/
+.dart_tool/
+*.tsbuildinfo
+*.pid
+
+# --- Günlükler ---
+*.log
+*.log.err
+
+# --- Kurtarma kanıtı: APK, libapp.so, dökümler (AGENTS.md §2: git'e girmemeli) ---
+kurtarilan/
+
+# --- Karantina: kalıcı silinmesi için kullanıcı onayı bekliyor ---
+Silinecekler/
+
+# --- Ortam dosyaları ve sırlar (AGENTS.md §5: asla commit edilmez) ---
+.env
+.env.local
+.env.*.local
+**/.env*.local
+key.properties
+*.jks
+*.keystore
+*.pem
+
+# --- Editör / işletim sistemi ---
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Yanlış yönlendirmeyle oluşmuş dosyalar (TEMIZLIK_RAPORU.md §3) ---
+e.innerText)
+e.innerText)})

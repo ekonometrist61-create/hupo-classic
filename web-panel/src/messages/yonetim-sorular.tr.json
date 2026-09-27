@@ -1,0 +1,175 @@
+{
+  "yonetim": {
+    "sorular": {
+      "title": "Sorular",
+      "listTitle": "Soru Listesi",
+      "loading": "Yükleniyor...",
+      "loadError": "Sorular alınamadı.",
+      "retry": "Tekrar dene",
+      "empty": "Kayıtlı soru yok.",
+      "newQuestion": "Yeni Soru",
+      "bulkImport": "Toplu Ekle",
+      "total": "Toplam",
+      "difficulty": {
+        "1": "Kolay",
+        "2": "Orta",
+        "3": "Zor"
+      },
+      "status": {
+        "beklemede": "Beklemede",
+        "onaylandi": "Onaylandı",
+        "reddedildi": "Reddedildi"
+      },
+      "filters": {
+        "search": "Ara",
+        "searchPlaceholder": "Soru metni veya konu ara...",
+        "ders": "Ders",
+        "dersPlaceholder": "Tüm dersler",
+        "durum": "Durum",
+        "allStatuses": "Tüm durumlar",
+        "zorluk": "Zorluk",
+        "allDifficulties": "Tüm zorluklar"
+      },
+      "table": {
+        "select": "Seç",
+        "selectAll": "Tümünü seç",
+        "question": "Soru",
+        "course": "Ders",
+        "difficulty": "Zorluk",
+        "status": "Durum",
+        "created": "Eklenme",
+        "actions": "İşlemler",
+        "edit": "Düzenle"
+      },
+      "pager": {
+        "prev": "Önceki",
+        "next": "Sonraki",
+        "summary": "{from}-{from} arası {to} / {total}"
+      },
+      "bulk": {
+        "selected": "{count} soru seçildi",
+        "approve": "Onayla",
+        "reject": "Reddet",
+        "pending": "Beklemede yap",
+        "delete": "Sil"
+      },
+      "form": {
+        "newTitle": "Yeni Soru",
+        "editTitle": "Soruyu Düzenle",
+        "okul": "Okul",
+        "ders": "Ders",
+        "konu": "Konu",
+        "altKonu": "Alt Konu",
+        "zorluk": "Zorluk",
+        "soruMetni": "Soru Metni",
+        "soruMetniPlaceholder": "Soruyu buraya yazın...",
+        "siklar": "Şıklar",
+        "sik": "Şık",
+        "siklarHint": "En az 2 şık doldurulmalıdır.",
+        "dogruSik": "Doğru Şık",
+        "dogruSikPlaceholder": "Şık harfini seçin",
+        "cozum": "Çözüm Adımları",
+        "cozumHint": "Her adımı ayrı satıra yazın.",
+        "cozumPlaceholder": "Her satır bir adım olacak",
+        "durum": "Onay Durumu",
+        "required": "Zorunlu alan",
+        "optional": "isteğe bağlı",
+        "save": "Kaydet",
+        "saving": "Kaydediliyor...",
+        "cancel": "Vazgeç"
+      },
+      "delete": {
+        "title": "Soruyu sil",
+        "warningTitle": "Emin misiniz?",
+        "warning": "Bu soru kalıcı olarak silinecek. Bu işlem geri alınamaz.",
+        "confirm": "Sil",
+        "deleting": "Siliniyor...",
+        "cancel": "Vazgeç"
+      },
+      "success": {
+        "saved": "Soru kaydedildi.",
+        "deleted": "Soru silindi.",
+        "status": "Durum güncellendi."
+      },
+      "import": {
+        "title": "Toplu Soru Ekleme",
+        "backToList": "Listeye dön",
+        "previewNote": "Eklemeden önce satırları kontrol edin.",
+        "noRows": "Dosyada veri satırı bulunamadı.",
+        "onlyErrors": "Yalnızca hataları göster",
+        "detectedDelimiter": "Ayırıcı",
+        "delimiter": {
+          "semicolon": "Noktalı virgül (;)",
+          "comma": "Virgül (,)",
+          "tab": "Sekme (Tab)"
+        },
+        "unknownColumns": "Tanınmayan sütunlar yok sayılacak:",
+        "duplicateColumns": "Aynı alana eşleşen sütunlar yok sayılacak:",
+        "missingColumns": "Eksik zorunlu sütunlar:",
+        "count": {
+          "total": "Toplam satır",
+          "valid": "Geçerli",
+          "invalid": "Hatalı"
+        },
+        "input": {
+          "title": "CSV Dosyası",
+          "fileLoaded": "Dosya yüklendi",
+          "readError": "Dosya okunamadı.",
+          "clear": "Dosyayı kaldır",
+          "encodingWarning": "Dosya farklı bir karakter kodlamasıyla okundu. Türkçe karakterler bozuk görünebilir.",
+          "pasteLabel": "Vya içeriği yapıştırın",
+          "pastePlaceholder": "Soru,;Ders;Konu;..."
+        },
+        "help": {
+          "title": "Yardım",
+          "columns": "Sütun adları",
+          "required": "Zorunlu alanlar",
+          "optional": "İsteğe bağlı alanlar",
+          "steps": "Çözüm adımları",
+          "answer": "Doğru şık",
+          "options": "Şıklar",
+          "difficulty": "Zorluk",
+          "status": "Onay durumu",
+          "encoding": "Karakter kodlama",
+          "duplicates": "Tekrarlar",
+          "download": "Şablon indir"
+        },
+        "preview": {
+          "title": "Önizleme"
+        },
+        "options": {
+          "title": "İçe aktar",
+          "progress": "{done} / {total} satır işlendi",
+          "import": "İçe Aktar",
+          "importing": "İçe aktarılıyor...",
+          "nothingToImport": "İçe aktarılacak geçerli satır yok.",
+          "blocked": "Önce hatalı satırları düzeltin veya yalnızca hataları indirin.",
+          "approve": "Eklenenleri doğrudan onayla",
+          "approveHint": "Açık soru onay bekler.",
+          "allOrNothing": "Hata varsa hiçbirini ekleme",
+          "allOrNothingHint": "Kapalıysa hatalı satırlar atlanır, geçerli olanlar eklenir."
+        },
+        "result": {
+          "title": "Sonuç",
+          "added": "Eklenen",
+          "duplicate": "Tekrarlanan",
+          "failed": "Hatalı",
+          "aborted": "İşlem tamamlanmadı.",
+          "again": "Yeni dosya yükle",
+          "errorList": "Hata listesi",
+          "downloadErrors": "Hataları indir",
+          "duplicateHint": "Daha önce eklenmiş sorular atlandı.",
+          "line": "Satır"
+        },
+        "table": {
+          "line": "Satır",
+          "course": "Ders",
+          "question": "Soru",
+          "answer": "Doğru",
+          "status": "Durum",
+          "ok": "Uygun"
+        }
+      }
+    }
+  }
+}
