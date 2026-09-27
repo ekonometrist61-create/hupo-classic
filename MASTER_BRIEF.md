@@ -192,13 +192,14 @@ yanlış pozitiftir — arkasında anahtar yok.)
 
 ## 7. Sıradaki adımlar
 
-1. **Kalan 4 Supabase nesnesini kurtar** — `supabase/KURTARMA_DURUMU.md` §4.
+1. **Kalan 5 Supabase nesnesini kurtar** — `supabase/KURTARMA_DURUMU.md` §4.
    `grade_changes`, `question_reports`, `_desteklenen_siniflar`, `_sinif_yaz`,
    `_refresh_question_flag`, `admin_set_daily_challenge` **kurtarıldı**
    (`20260927000030`). Geriye kalan: `question_quality_config` tablosu,
-   `profiles` sınıf trigger'ı, iki tablonun RLS politikaları,
-   `carpim_sifreleri` içerik verisi. Bunlar gelmeden `supabase db reset`
-   veri tarafı eksik çalışır, `report_question` hata verir.
+   `questions.inceleme_gerekli` kolonu, `profiles` sınıf trigger'ı,
+   iki tablonun RLS politikaları, `carpim_sifreleri` içerik verisi.
+   Bunlar gelmeden `report_question` / `_refresh_question_flag` çağrıları hata
+   verir, `supabase db reset` şema olarak eksik kalır.
 2. **`models/` altındaki 4 dosyayı yaz** — en kolay, RPC'lere birebir bağlı.
 3. **Çarpım Tablosu Şifreleri** — en değerli özellik, en çok iş.
 4. **Mobil projeyi ASCII yola taşı** — Türkçe/OneDrive yolunda `flutter analyze`

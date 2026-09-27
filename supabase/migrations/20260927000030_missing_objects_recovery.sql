@@ -12,7 +12,9 @@
 --
 --  BU DOSYADAN SONRA HÂLÂ EKSİK (bkz. bölüm 5 ve supabase/KURTARMA_DURUMU.md):
 --    * public.question_quality_config tablosu (kolonları alınmadı)
+--    * public.questions.inceleme_gerekli kolonu (diskteki şemada yok!)
 --    * grade_changes / question_reports RLS politikaları
+--    * profiles sınıf değişikliği trigger'ı (30 gün / 24 saat)
 --    * carpim_sifreleri içerik verisi (10-12 şifre)
 -- =====================================================================
 
@@ -193,6 +195,11 @@ comment on function public._sinif_yaz(uuid, integer, text) is
 -- alınana kadar kural geçerli değildir (bkz. bölüm 5).
 
 -- 4.3 Bildirim eşiği aşıldı mı? → soruyu incelemeye al
+-- ⚠️ ÖN KOŞUL: bu fonksiyon çalışma anında şu iki nesneye ihtiyaç duyar ve
+-- ikisi de şu an diskte YOK (oluşturma anında hata vermez, çağrılınca verir):
+--   1) public.question_quality_config (rapor_esigi, otomatik_gizle kolonları)
+--   2) public.questions.inceleme_gerekli kolonu
+-- Getirme sorguları: bölüm 5.1 ve 5.5. `supabase db pull` ikisini de getirir.
 create or replace function public._refresh_question_flag(p_question_id uuid)
 returns void
 language plpgsql
@@ -330,6 +337,19 @@ grant  execute on function public.admin_set_daily_challenge(date, uuid[], text) 
 --
 -- 5.4 carpim_sifreleri içerik verisi (10-12 şifre satırı)
 --       select jsonb_agg(to_jsonb(s) order by s.sira) from public.carpim_sifreleri s;
+--
+-- 5.5 public.questions.inceleme_gerekli kolonu — diskteki şemada YOK
+--     _refresh_question_flag() bu kolonu yazar; kolon olmadan fonksiyon
+--     çağrıldığında "column does not exist" hatası verir.
+--       select column_name, data_type, is_nullable, column_default
+--       from information_schema.columns
+--       where table_schema = 'public' and table_name = 'questions'
+--         and column_name = 'inceleme_gerekli';
+--       -- tam kolon listesi (şema sapmasını görmek için):
+--       select column_name, data_type, is_nullable, column_default
+--       from information_schema.columns
+--       where table_schema = 'public' and table_name = 'questions'
+--       order by ordinal_position;
 
 
 

@@ -17,7 +17,7 @@
 | Git temeli | ✅ Kuruldu | 5 commit (aşağıda), çalışma ağacı temiz |
 | Demo modu | ✅ Üretimde kapalı | Tek kaynak: `web-panel/src/lib/demo-mode.ts` |
 | Migration sırası | ✅ Düzeltildi | Tablolar `…000010`, RPC'ler `…000020` |
-| Eksik DB nesneleri | 🟡 Kısmen kurtarıldı | `…000030` ile 2 tablo + 4 fonksiyon geri geldi; 4 kalem kaldı (§ MISSING FEATURES) |
+| Eksik DB nesneleri | 🟡 Kısmen kurtarıldı | `…000030` ile 2 tablo + 4 fonksiyon geri geldi; 5 kalem kaldı (§ MISSING FEATURES) |
 | `supabase db reset` | ⛔ Çalıştırılamadı | Supabase CLI **ve** Docker bu makinede kurulu değil |
 | `flutter analyze` / `flutter test` | ⛔ Çalıştırılamadı | Türkçe/OneDrive yolunda Dart exit 255 (ASCII yola taşınınca çözülür) |
 
@@ -172,6 +172,7 @@ bağımlılıkları tutarlı. **Ancak `flutter analyze`/`flutter test` bu ortamd
 | 8 | CI / otomatik doğrulama | altyapı | Hiçbir test koşmadı: `flutter test`, `supabase test db` |
 | 9 | Firebase kurulumu (push) | altyapı | `docs/PUSH_KURULUM.md` adımları bekliyor |
 | 10 | `share_plus` kararı | mobil | `pubspec.yaml`'da `TODO(kurtarma)` |
+| 11 | `public.questions.inceleme_gerekli` kolonu | şema | ⚠️ **Yeni tespit:** disk şemasında yok, canlıda var; `_refresh_question_flag()` bu kolonu yazar → çağrılınca `column does not exist` |
 
 ---
 
@@ -180,7 +181,7 @@ bağımlılıkları tutarlı. **Ancak `flutter analyze`/`flutter test` bu ortamd
 | # | Risk | Önem | Durum / öneri |
 |---|---|---|---|
 | 1 | `grade_changes` / `question_reports` RLS politikaları diskte yok | 🟠 Orta | Fail-closed bırakıldı (kimse okuyamaz) + `anon` tamamen, `authenticated` yazmadan men edildi. Canlı politikalar alınınca eklenecek |
-| 2 | `question_quality_config` yok → `report_question()` runtime hatası | 🟠 Orta | Sessiz veri kaybı yerine hata veriyor (iyi), ama özellik çalışmıyor |
+| 2 | `question_quality_config` + `questions.inceleme_gerekli` yok → bildirim hattı çalışmıyor | 🟠 Orta | `report_question()` / `_refresh_question_flag()` çağrılınca hata verir (sessiz veri kaybı yok) |
 | 3 | RLS/politikalar yerelde test edilemiyor (CLI + Docker yok) | 🟠 Orta | `supabase db reset` + `supabase test db` kurulum sonrası koşulmalı; şema sapması bu yüzden oluşmuştu |
 | 4 | Gizli anahtar sızıntısı | 🟢 Düşük | Tarandı: `sb_secret_` yalnızca `.env.example` içinde **yer tutucu**; `.env.local` git'te ignore (`web-panel/.gitignore:43`); mobilde yalnızca publishable key (`lib/config/env.dart`) |
 | 5 | `SECURITY DEFINER` fonksiyonlarda arama yolu | 🟢 Düşük | Kurtarılan 4 fonksiyon `set search_path to ''` + tam nitelendirme kullanıyor (AGENTS.md'deki `public, pg_temp`'ten daha katı) |
@@ -218,9 +219,9 @@ bağımlılıkları tutarlı. **Ancak `flutter analyze`/`flutter test` bu ortamd
    supabase db reset         # 15 migration + seed sırayla çalışmalı
    supabase test db          # supabase/tests/*.sql
    ```
-   Pull sonrası `supabase/KURTARMA_DURUMU.md` §4'teki 4 kalem kapanır:
-   `question_quality_config` migration'ı, `profiles` trigger'ı,
-   RLS politikaları, `carpim_sifreleri` verisi.
+   Pull sonrası `supabase/KURTARMA_DURUMU.md` §4'teki 5 kalem kapanır:
+   `question_quality_config` tablosu, `questions.inceleme_gerekli` kolonu,
+   `profiles` trigger'ı, RLS politikaları, `carpim_sifreleri` verisi.
 
 ### Ardından (PHASE 1)
 
@@ -231,7 +232,7 @@ bağımlılıkları tutarlı. **Ancak `flutter analyze`/`flutter test` bu ortamd
 4. **Temizlik:** şablon rotaları ve kök dağınıklığı; CI kurulumu.
 
 > **Karar bekleyen soru:** Supabase CLI kurulumunu şimdi ben mi ilerleteyim
-> (indirme + `link`), yoksa kalan 4 kalemi siz SQL Editor çıktısı olarak mı
+> (indirme + `link`), yoksa kalan 5 kalemi siz SQL Editor çıktısı olarak mı
 > vereceksiniz? İkisi de aynı sonuca götürür; CLI yolu otomatik ve tam.
 
 

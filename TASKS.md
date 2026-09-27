@@ -72,6 +72,8 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
       → `supabase/migrations/20260927000030_missing_objects_recovery.sql`
 - [ ] `question_quality_config` tablosu alınacak — `report_question` bunu okur,
       tablo yokken **çalışma anında hata verir** (KURTARMA_DURUMU.md §4.1)
+- [ ] `questions.inceleme_gerekli` kolonu alınacak — diskteki şemada **yok**,
+      `_refresh_question_flag()` bu kolonu yazar (§4.5)
 - [ ] `profiles` sınıf kuralı trigger'ı (30 gün / 24 saat) alınacak (§4.2)
 - [ ] `grade_changes` / `question_reports` RLS politikaları alınacak (§4.3)
 - [ ] `carpim_sifreleri` içeriği (10-12 şifrenin JSON verisi) kurtarılacak (§4.4)

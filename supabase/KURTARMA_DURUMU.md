@@ -52,6 +52,7 @@ Geriye yalnızca şu dört kalem kaldı:
 | Nesne | Tür | Etki | Getirme sorgusu |
 |---|---|---|---|
 | `public.question_quality_config` | tablo | `report_question()` **çalışma anında hata verir** | §4.1 |
+| `public.questions.inceleme_gerekli` | kolon | `_refresh_question_flag()` çağrılınca hata verir | §4.5 |
 | `profiles` sınıf kuralı | trigger | 30 gün / 24 saat kuralı uygulanmaz | §4.2 |
 | `grade_changes` / `question_reports` RLS politikaları | politika | Şu an fail-closed (kimse göremez) | §4.3 |
 | `carpim_sifreleri` içerik verisi (10–12 şifre) | veri | Şifre listesi boş görünür | §4.4 |
@@ -108,6 +109,19 @@ order by c.relname, p.polname;
 ```sql
 select jsonb_agg(to_jsonb(s) order by s.sira) from public.carpim_sifreleri s;
 ```
+
+### 4.5 questions.inceleme_gerekli kolonu (yeni tespit)
+
+```sql
+select column_name, data_type, is_nullable, column_default
+from information_schema.columns
+where table_schema = 'public' and table_name = 'questions'
+order by ordinal_position;
+```
+
+> Disk şemasında `questions` tablosunda `inceleme_gerekli` kolonu **yok**;
+> canlıda var (kurtarılan `_refresh_question_flag` gövdesi onu yazıyor).
+> Bu yüzden tablo tanımı da canlıdan tazelenmeli.
 
 ---
 
