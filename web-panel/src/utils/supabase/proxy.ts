@@ -30,5 +30,7 @@ export async function updateSession(
   // getClaims() JWT'yi doğrular ve gerekirse token'ı yeniler
   const { data } = await supabase.auth.getClaims();
 
-  return { response, isAuthenticated: Boolean(data?.claims) };
+  // `getClaims()` anonim token için de claims döndürebilir; gerçek oturumun
+  // varlığını yalnızca JWT içindeki kullanıcı `sub` alanıyla kabul et.
+  return { response, isAuthenticated: Boolean(data?.claims?.sub) };
 }

@@ -1,6 +1,6 @@
 # PHASE 0 — DURUM RAPORU · Fırsat Bulucu (Öğrenci Hazırlık / Hupo)
 
-> Tarih: 27 Eylül 2026
+> Tarih: 28 Eylül 2026
 > Kapsam: depo denetimi, git temeli, güvenlik/mimari boşlukların kapatılması,
 > web derlemesinin doğrulanması ve kurtarma zincirinin ilerletilmesi.
 > İlgili dosyalar: `TASKS.md`, `MASTER_BRIEF.md`, `README.md`,
@@ -18,8 +18,8 @@
 | Demo modu | ✅ Üretimde kapalı | Tek kaynak: `web-panel/src/lib/demo-mode.ts` |
 | Migration sırası | ✅ Düzeltildi | Tablolar `…000010`, RPC'ler `…000020` |
 | Eksik DB nesneleri | 🟡 Kısmen kurtarıldı | `…000030` ile 2 tablo + 4 fonksiyon geri geldi; 5 kalem kaldı (§ MISSING FEATURES) |
-| `supabase db reset` | ⛔ Çalıştırılamadı | Supabase CLI **ve** Docker bu makinede kurulu değil |
-| `flutter analyze` / `flutter test` | ⛔ Çalıştırılamadı | Türkçe/OneDrive yolunda Dart exit 255 (ASCII yola taşınınca çözülür) |
+| `supabase db reset` | ⛔ Çalıştırılamadı | Supabase CLI **ve** Docker bu makinede kurulu değil; kullanıcı ortamında çalıştırılmalı |
+| `flutter analyze` / `flutter test` | 🟡 Ortam engeli | Flutter SDK bulundu; Chrome çalıştırması OneDrive üzerindeki `build/flutter_assets` kilidi nedeniyle durdu. ASCII yola taşıma öneriliyor. |
 
 ### Bu fazda atılan commit'ler
 

@@ -22,34 +22,34 @@ function isPublic(pathname: string): boolean {
 
 export default async function proxy(request: NextRequest) {
   const intlResponse = createMiddleware(routing)(request);
-
+  // next-intl, localePrefix="never" ile /signin isteğini içerde /tr/signin
+  // olarak yeniden yazar; Supabase cookie yenilemesini bu yanıt üzerinde tutarız.
   const { response, isAuthenticated } = await updateSession(
     request,
-    NextResponse.next(intlResponse)
+    intlResponse ?? NextResponse.next()
   );
 
   const { pathname } = request.nextUrl;
+  // next-intl localePrefix="never" olsa da gelen isteklerde /tr veya /en
+  // kalabildiğinden yetki kontrolleri önce yerelleştirme önekini temizler.
+  const normalizedPathname = pathname.replace(/^\/(tr|en)(?=\/|$)/, "") || "/";
   const needsAuth =
-    pathname.startsWith("/yonetim") || pathname.startsWith("/veli-paneli");
+    normalizedPathname.startsWith("/yonetim") ||
+    normalizedPathname.startsWith("/veli-paneli");
 
   if (DEMO_MODE) return response;
 
   if (needsAuth && !isAuthenticated) {
     const url = request.nextUrl.clone();
     url.pathname = "/signin";
-    // Kullanilmayacak sayfanin yolunu geri donus icin sakla.
-    url.searchParams.set("next", pathname);
+    // Kullanılmayacak sayfanın yolunu geri dönüş için sakla.
+    url.searchParams.set("next", normalizedPathname);
     return NextResponse.redirect(url);
   }
 
-  // Giris yapmis kullanici dogrudan /signin'a gidemesin.
-  if (isPublic(pathname) && isAuthenticated) {
-    const url = request.nextUrl.clone();
-    url.pathname = "/";
-    url.search = "";
-    return NextResponse.redirect(url);
-  }
-
+  // Giriş sayfası herkese açık bırakılır. Oturum açmış kullanıcı da burada
+  // kalabilir; bu, next-intl'in localePrefix="never" yeniden yazmasıyla
+  // yönlendirme döngüsü oluşmasını engeller.
   return response;
 }
 

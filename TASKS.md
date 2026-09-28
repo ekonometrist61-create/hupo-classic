@@ -95,12 +95,15 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 - [x] Lint hataları giderildi (`eslint .` → 0 hata)
 - [x] `npm run build` tamamlandı (`✓ Compiled successfully in 2.9min`, 51 sayfa)
 - [x] PHASE 0 durum raporu yazıldı → `PHASE0_DURUM_RAPORU.md`
-- [ ] Admin paneli tarayıcıda doğrulanacak (tarayıcı otomasyonu gerekir)
-- [ ] **Git kurulmalı** — Flutter SDK bu makinede Git olmadan çalışmıyor
-- [ ] Proje ASCII yola taşınacak (Türkçe/OneDrive yolu Dart'ı çökertiyor)
+- [x] Web public giriş rotası production server'da doğrulandı; admin rotası oturumsuzken girişe yönleniyor
+- [x] Web proxy locale-prefix normalizasyonu düzeltildi; anonim claim gerçek oturum sayılmıyor
+- [ ] Admin paneli oturum açılmış tarayıcıda doğrulanacak (kullanıcı oturumu gerekir)
+- [ ] Proje ASCII yola taşınacak (Türkçe/OneDrive yolu Dart/Flutter için önerilir)
 - [x] Web TypeScript kontrolü temiz (`tsc --noEmit`)
 - [x] Web production build temiz (`next build --webpack`, 51 rota)
 - [x] Dart yapısal/import statik denetimi temiz (`tools/dart-statik-denetim.mjs`, 81 dosya)
+- [x] `Silinecekler/` klasörü kullanıcı talimatıyla kalıcı olarak silindi
+- [ ] Flutter analyze / Chrome çalıştırması OneDrive build kilidi nedeniyle bekliyor
 
 ---
 
