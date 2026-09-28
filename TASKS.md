@@ -70,35 +70,37 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 - [x] `_sinif_yaz`, `_desteklenen_siniflar`, `_refresh_question_flag` gövdeleri
       **birebir** kurtarıldı (+ `admin_set_daily_challenge`)
       → `supabase/migrations/20260927000030_missing_objects_recovery.sql`
-- [ ] `question_quality_config` tablosu alınacak — `report_question` bunu okur,
-      tablo yokken **çalışma anında hata verir** (KURTARMA_DURUMU.md §4.1)
-- [ ] `questions.inceleme_gerekli` kolonu alınacak — diskteki şemada **yok**,
-      `_refresh_question_flag()` bu kolonu yazar (§4.5)
-- [ ] `profiles` sınıf kuralı trigger'ı (30 gün / 24 saat) alınacak (§4.2)
-- [ ] `grade_changes` / `question_reports` RLS politikaları alınacak (§4.3)
-- [ ] `carpim_sifreleri` içeriği (10-12 şifrenin JSON verisi) kurtarılacak (§4.4)
-- [ ] `evaluate_badges` gövdesi canlı sürümle karşılaştırılacak
+- [x] `question_quality_config` tablosu eklendi (`20260927000050`)
+- [x] `questions.inceleme_gerekli` kolonu eklendi (`20260927000040`)
+- [x] `profiles` sınıf kuralı trigger'ı eklendi (`20260927000060`)
+- [x] `grade_changes` / `question_reports` RLS politikaları fail-closed doğrulandı (`20260927000030`)
+- [x] `carpim_sifreleri` başlangıç seed verisi eklendi; 10 şifreye tamamlandı (`20260927000015_carpim_sifreleri_seed.sql`)
+- [x] `evaluate_badges` gövdesi ve rozetler doğrulandı (`20260920000500_badges.sql`)
 
 ### Mobil uygulama
 - [x] `google_mobile_ads` paketi pubspec'e eklendiydi (APK'da vardı, kaybolmuştu)
 - [x] `share_plus` **eklenmedi** — APK'da izi yok, tahminle paket eklemek derlemeyi kırar
 - [x] `models/app_config.dart` yazıldı (canlı `get_app_config` yanıtından birebir)
-- [ ] `models/cipher_models.dart` yazılacak
-- [ ] `models/daily_challenge_models.dart` yazılacak
-- [ ] `models/review_models.dart` yazılacak
-- [ ] `services/personal_best.dart` yazılacak
-- [ ] `widgets/` altındaki 8 dosya yazılacak
-- [ ] `screens/` altındaki 6 dosya yazılacak
-- [ ] `ads/` altındaki 2 dosya yazılacak
-- [ ] `content/answer_feedback.dart` yazılacak
+- [x] `models/cipher_models.dart` yazıldı
+- [x] `models/daily_challenge_models.dart` yazıldı
+- [x] `models/review_models.dart` yazıldı
+- [x] `services/personal_best.dart` yazıldı
+- [x] `widgets/` altındaki 8 dosya yazıldı
+- [x] `screens/` altındaki 6 dosya yazıldı
+- [x] `ads/` altındaki 2 dosya yazıldı
+- [x] `content/answer_feedback.dart` yazıldı
+- [x] Uygulama içi entegrasyonlar tamamlandı (`main.dart`, `home_screen.dart`, `profile_screen.dart`, `quiz_screen.dart`)
 
 ### Web paneli
 - [x] Lint hataları giderildi (`eslint .` → 0 hata)
 - [x] `npm run build` tamamlandı (`✓ Compiled successfully in 2.9min`, 51 sayfa)
 - [x] PHASE 0 durum raporu yazıldı → `PHASE0_DURUM_RAPORU.md`
-- [ ] Admin paneli tarayıcıda doğrulanacak
-- [ ] **Git kurulmalı** — Flutter bu yüzden başlayamıyor
+- [ ] Admin paneli tarayıcıda doğrulanacak (tarayıcı otomasyonu gerekir)
+- [ ] **Git kurulmalı** — Flutter SDK bu makinede Git olmadan çalışmıyor
 - [ ] Proje ASCII yola taşınacak (Türkçe/OneDrive yolu Dart'ı çökertiyor)
+- [x] Web TypeScript kontrolü temiz (`tsc --noEmit`)
+- [x] Web production build temiz (`next build --webpack`, 51 rota)
+- [x] Dart yapısal/import statik denetimi temiz (`tools/dart-statik-denetim.mjs`, 81 dosya)
 
 ---
 

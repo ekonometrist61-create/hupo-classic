@@ -10,6 +10,7 @@ import 'screens/home_screen.dart';
 import 'services/push/push_host.dart';
 import 'settings/app_settings.dart';
 import 'theme/app_theme.dart';
+import 'widgets/maintenance_gate.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -59,7 +60,7 @@ class App extends ConsumerWidget {
             ),
           ),
           // Push (yalnızca mobil + yapılandırılmışsa etkin; aksi halde hiçbir şey yapmaz)
-          child: PushHost(child: child ?? const SizedBox.shrink()),
+          child: PushHost(child: MaintenanceGate(child: child ?? const SizedBox.shrink())),
         );
       },
       home: const AuthGate(),

@@ -22,6 +22,12 @@ import '../models/privacy_models.dart';
 import 'privacy_notice_screen.dart';
 import 'profile_screen.dart';
 import 'quiz_screen.dart';
+import 'cipher/cipher_list_screen.dart';
+import 'daily_challenge_screen.dart';
+import 'grade_picker_screen.dart';
+import 'review_screen.dart';
+import 'saved_questions_screen.dart';
+import '../widgets/daily_challenge_card.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -144,14 +150,54 @@ class HomeScreen extends ConsumerWidget {
                         ],
                         const _AvatarSection(),
                         const SizedBox(height: 12),
+                        DailyChallengeCard(
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => const DailyChallengeScreen()),
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        GameCard(
+                          color: AppColors.primarySoft,
+                          borderColor: AppColors.primary,
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => const CipherListScreen()),
+                          ),
+                          child: Row(
+                            children: [
+                              Container(
+                                width: 44,
+                                height: 44,
+                                decoration: const BoxDecoration(
+                                  color: AppColors.primary,
+                                  shape: BoxShape.circle,
+                                ),
+                                child: const Icon(Icons.vpn_key_rounded, color: Colors.white, size: 24),
+                              ),
+                              const SizedBox(width: 12),
+                              Expanded(
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      'Çarpım Tablosu Şifreleri',
+                                      style: appText(size: 16, weight: FontWeight.w800, color: AppColors.ink),
+                                    ),
+                                    const SizedBox(height: 2),
+                                    Text(
+                                      'Şifreleri çöz, çarpım tablosunu ustaca öğren!',
+                                      style: appText(size: 12, color: AppColors.muted),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              const Icon(Icons.arrow_forward_ios_rounded, size: 14, color: AppColors.muted),
+                            ],
+                          ),
+                        ),
+                        const SizedBox(height: 12),
                         _ReviewCard(
-                          onStart: () => _openQuiz(
-                            context,
-                            ref,
-                            title: 'Günün Tekrarı',
-                            load: repo.fetchReviewQuestions,
-                            emptyMessage:
-                                'Bugünlük tekrarların bitti, harikasın! Yarın yeni sorularla görüşürüz.',
+                          onStart: () => Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => const ReviewScreen()),
                           ),
                         ),
                         const SizedBox(height: 12),

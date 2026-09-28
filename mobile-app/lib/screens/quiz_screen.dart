@@ -10,6 +10,8 @@ import '../theme/app_theme.dart';
 import '../utils/haptics.dart';
 import '../utils/motion.dart';
 import '../widgets/answer_option.dart';
+import '../widgets/bookmark_button.dart';
+import '../widgets/report_question_button.dart';
 import '../widgets/quiz_top_bar.dart';
 import '../widgets/result_sheet.dart';
 import '../widgets/ui/game_card.dart';
@@ -243,19 +245,21 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                                   color: AppColors.primarySoft,
                                   borderRadius: BorderRadius.circular(14),
                                 ),
-                                child: Text(
-                                  '${question.konu}  •  ${question.difficultyLabel}',
-                                  overflow: TextOverflow.ellipsis,
-                                  style: appText(
-                                    size: 13,
-                                    weight: FontWeight.w800,
-                                    color: AppColors.primary,
-                                  ),
+                                        child: Text(
+                                          '${question.konu}  •  ${question.difficultyLabel}',
+                                          overflow: TextOverflow.ellipsis,
+                                          style: appText(
+                                            size: 13,
+                                            weight: FontWeight.w800,
+                                            color: AppColors.primary,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                    BookmarkButton(questionId: question.id, size: 20),
+                                    ReportQuestionButton(questionId: question.id, size: 20),
+                                  ],
                                 ),
-                              ),
-                            ),
-                          ],
-                        ),
                         const SizedBox(height: 4),
                         GameCard(
                           padding: const EdgeInsets.all(20),

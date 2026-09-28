@@ -1,11 +1,15 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../content/privacy_notice.dart';
+import '../models/app_config.dart';
+import '../models/cipher_models.dart';
+import '../models/daily_challenge_models.dart';
 import '../models/league_models.dart';
 import '../models/membership_models.dart';
-import '../content/privacy_notice.dart';
 import '../models/models.dart';
 import '../models/privacy_models.dart';
+import '../models/review_models.dart';
 import '../services/quiz_repository.dart';
 
 final supabaseProvider =
@@ -53,3 +57,85 @@ final consentProvider = FutureProvider.autoDispose<ConsentStatus>(
 /// Oturum açmış kullanıcının kimliği (yoksa null). Testlerde override edilir.
 final currentUserIdProvider = Provider<String?>(
     (ref) => ref.watch(supabaseProvider).auth.currentUser?.id);
+
+// --- Kurtarılan Provider'lar ---
+
+final appConfigFetcherProvider = FutureProvider<AppConfig>((ref) async {
+  final repo = ref.watch(quizRepositoryProvider);
+  final map = await repo.fetchAppConfig();
+  if (map.isEmpty) return AppConfig.varsayilan;
+  return AppConfig.fromMap(map);
+});
+
+final appConfigProvider = Provider<AppConfig>((ref) {
+  return ref.watch(appConfigFetcherProvider).value ?? AppConfig.varsayilan;
+});
+
+final ciphersProvider = FutureProvider.autoDispose<List<MathCipher>>((ref) async {
+  final repo = ref.watch(quizRepositoryProvider);
+  final list = await repo.fetchCiphers();
+  return [for (final m in list) MathCipher.fromMap(m)];
+});
+
+final cipherDetailProvider = FutureProvider.autoDispose.family<MathCipherDetail, String>((ref, id) async {
+  final repo = ref.watch(quizRepositoryProvider);
+  final map = await repo.fetchCipherDetail(id);
+  return MathCipherDetail.fromMap(map);
+});
+
+final dailyChallengeProvider = FutureProvider.autoDispose<DailyChallenge>((ref) async {
+  final repo = ref.watch(quizRepositoryProvider);
+  final map = await repo.fetchDailyChallenge();
+  return DailyChallenge.fromMap(map);
+});
+
+final savedQuestionsProvider = FutureProvider.autoDispose<List<SavedQuestion>>((ref) async {
+  final repo = ref.watch(quizRepositoryProvider);
+  final list = await repo.fetchSavedQuestions();
+  return [for (final m in list) SavedQuestion.fromMap(m)];
+});
+
+class BookmarksNotifier extends StateNotifier<Set<String>> {
+  BookmarksNotifier(this._repo) : super({});
+  final QuizRepository _repo;
+
+  void setInitial(Set<String> ids) {
+    state = ids;
+  }
+
+  Future<bool> toggle(String questionId) async {
+    final contains = state.contains(questionId);
+    if (contains) {
+      state = {...state}..remove(questionId);
+    } else {
+      state = {...state, questionId};
+    }
+    try {
+      final saved = await _repo.toggleBookmark(questionId);
+      if (saved) {
+        state = {...state, questionId};
+      } else {
+        state = {...state}..remove(questionId);
+      }
+      return saved;
+    } catch (_) {
+      // Geri al
+      if (contains) {
+        state = {...state, questionId};
+      } else {
+        state = {...state}..remove(questionId);
+      }
+      rethrow;
+    }
+  }
+}
+
+final bookmarksProvider = StateNotifierProvider<BookmarksNotifier, Set<String>>((ref) {
+  return BookmarksNotifier(ref.watch(quizRepositoryProvider));
+});
+
+final supportedGradesProvider = FutureProvider.autoDispose<List<int>>((ref) async {
+  return ref.watch(quizRepositoryProvider).fetchSupportedGrades();
+});
+
+final gradeGateBypassedProvider = StateProvider<bool>((ref) => false);

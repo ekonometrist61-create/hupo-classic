@@ -13,7 +13,7 @@ import '../models/privacy_models.dart';
 class QuizRepository {
   QuizRepository(this._client);
 
-  final SupabaseClient _client;
+  SupabaseClient get supabaseClient => _client;
 
   static const _questionColumns =
       'id, ders, konu, alt_konu, zorluk, soru_metni, siklar';
@@ -235,5 +235,123 @@ class QuizRepository {
     try {
       await onBeforeSignOut?.call();
     } catch (_) {}
+  }
+}
+
+// Kurtarılan RPC'ler için repository metodları:
+
+extension KurtarilanQuizRepository on QuizRepository {
+  /// public.get_app_config()
+  Future<Map<String, dynamic>> fetchAppConfig() async {
+    try {
+      final res = await supabaseClient.rpc('get_app_config');
+      return Map<String, dynamic>.from(res as Map);
+    } catch (_) {
+      return {};
+    }
+  }
+
+  /// public.get_carpim_sifreleri()
+  Future<List<Map<String, dynamic>>> fetchCiphers() async {
+    final res = await supabaseClient.rpc('get_carpim_sifreleri');
+    return [
+      for (final item in (res as List? ?? const []))
+        Map<String, dynamic>.from(item as Map),
+    ];
+  }
+
+  /// public.get_carpim_sifre_detay(p_sifre_id)
+  Future<Map<String, dynamic>> fetchCipherDetail(String sifreId) async {
+    final res = await supabaseClient.rpc('get_carpim_sifre_detay', params: {'p_sifre_id': sifreId});
+    return Map<String, dynamic>.from(res as Map);
+  }
+
+  /// public.submit_cipher_answer(p_sifre_id, p_asama, p_soru_index, p_cevap)
+  Future<Map<String, dynamic>> submitCipherAnswer({
+    required String sifreId,
+    required String asama,
+    required int soruIndex,
+    required int cevap,
+  }) async {
+    final res = await supabaseClient.rpc('submit_cipher_answer', params: {
+      'p_sifre_id': sifreId,
+      'p_asama': asama,
+      'p_soru_index': soruIndex,
+      'p_cevap': cevap,
+    });
+    return Map<String, dynamic>.from(res as Map);
+  }
+
+  /// public.complete_cipher_stage(p_sifre_id, p_asama)
+  Future<Map<String, dynamic>> completeCipherStage({
+    required String sifreId,
+    required String asama,
+  }) async {
+    final res = await supabaseClient.rpc('complete_cipher_stage', params: {
+      'p_sifre_id': sifreId,
+      'p_asama': asama,
+    });
+    return Map<String, dynamic>.from(res as Map);
+  }
+
+  /// public.report_taught_friend(p_sifre_id)
+  Future<Map<String, dynamic>> reportTaughtFriend(String sifreId) async {
+    final res = await supabaseClient.rpc('report_taught_friend', params: {'p_sifre_id': sifreId});
+    return Map<String, dynamic>.from(res as Map);
+  }
+
+  /// public.get_daily_challenge()
+  Future<Map<String, dynamic>> fetchDailyChallenge() async {
+    final res = await supabaseClient.rpc('get_daily_challenge');
+    return Map<String, dynamic>.from(res as Map);
+  }
+
+  /// public.complete_daily_challenge()
+  Future<Map<String, dynamic>> completeDailyChallenge() async {
+    final res = await supabaseClient.rpc('complete_daily_challenge');
+    return Map<String, dynamic>.from(res as Map);
+  }
+
+  /// public.list_bookmarks()
+  Future<List<Map<String, dynamic>>> fetchSavedQuestions() async {
+    final res = await supabaseClient.rpc('list_bookmarks');
+    return [
+      for (final item in (res as List? ?? const []))
+        Map<String, dynamic>.from(item as Map),
+    ];
+  }
+
+  /// public.toggle_bookmark(p_question_id)
+  Future<bool> toggleBookmark(String questionId) async {
+    final res = await supabaseClient.rpc('toggle_bookmark', params: {'p_question_id': questionId});
+    return res as bool? ?? false;
+  }
+
+  /// public.report_question(p_question_id, p_neden, p_not)
+  Future<Map<String, dynamic>> reportQuestion({
+    required String questionId,
+    required String neden,
+    String? notMetni,
+  }) async {
+    final res = await supabaseClient.rpc('report_question', params: {
+      'p_question_id': questionId,
+      'p_neden': neden,
+      'p_not': notMetni,
+    });
+    return Map<String, dynamic>.from(res as Map);
+  }
+
+  /// public.get_supported_grades()
+  Future<List<int>> fetchSupportedGrades() async {
+    final res = await supabaseClient.rpc('get_supported_grades');
+    final map = Map<String, dynamic>.from(res as Map);
+    final siniflar = map['siniflar'] as List? ?? const [];
+    return [for (final s in siniflar) (s as num).toInt()];
+  }
+
+  /// public.set_my_grade(p_sinif)
+  Future<int> setMyGrade(int sinif) async {
+    final res = await supabaseClient.rpc('set_my_grade', params: {'p_sinif': sinif});
+    return (res as num).toInt();
   }
 }

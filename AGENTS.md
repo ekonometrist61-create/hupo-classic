@@ -154,6 +154,13 @@ cd web-panel && npm run build
 # SQL
 supabase db reset                      # tüm migration'lar sırayla çalışmalı
 supabase test db                       # supabase/tests/*.sql
+node tools/sql-sozdizim-denetimi.mjs   # yapısal SQL denetimi (0 hata olmalı)
+
+# Kurtarma denetimleri (canlı DB olmadan çalışır; raporlar %TEMP%\firsat\*-raporu.txt)
+# Not: bu makinede betik çalıştırma varsayılan kapalı → -ExecutionPolicy Bypass şart
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/kurtarma-sql-denetim.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/kurtarma-bagimlilik-denetimi.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File tools/istemci-rpc-denetimi.ps1
 ```
 
 Bir değişiklik yapmadan önce hangi katmanı etkilediğini söyle. Katmanlar arası

@@ -7,6 +7,8 @@ import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
 import '../widgets/badges_section.dart';
 import 'settings_screen.dart';
+import 'grade_picker_screen.dart';
+import 'saved_questions_screen.dart';
 import '../utils/format.dart';
 import '../widgets/league_card.dart';
 import '../widgets/level_card.dart';
@@ -67,6 +69,20 @@ class ProfileScreen extends ConsumerWidget {
                           'Profilim',
                           style: appText(size: 24, weight: FontWeight.w900, color: Colors.white),
                         ),
+                      ),
+                      IconButton(
+                        tooltip: 'Kayıtlı Sorular',
+                        onPressed: () => Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => const SavedQuestionsScreen()),
+                        ),
+                        icon: const Icon(Icons.bookmark_rounded, color: Colors.white, size: 28),
+                      ),
+                      IconButton(
+                        tooltip: 'Sınıfını Değiştir',
+                        onPressed: () => Navigator.of(context).push(
+                          MaterialPageRoute(builder: (_) => const GradePickerScreen()),
+                        ),
+                        icon: const Icon(Icons.school_rounded, color: Colors.white, size: 28),
                       ),
                       IconButton(
                         tooltip: 'Ayarlar',

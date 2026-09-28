@@ -2,7 +2,7 @@
 
 > Bu dosya, projenin **tek doğruluk kaynağıdır**. Yeni bir sohbete başlarsan
 > önce bu dosyayı, sonra `AGENTS.md`'yi oku.
-> Son güncelleme: 27 Eylül 2026
+> Son güncelleme: 28 Eylül 2026
 
 ---
 
@@ -34,11 +34,10 @@ kurtarma çalışmasının tamamı `kurtarilan/KURTARMA_RAPORU.md` içinde.
 - Telefondaki APK → `kurtarilan/ogrenci_hazirlik-base.apk` (66,7 MB)
 - Dart AOT anlık görüntüsü → `kurtarilan/libapp.so`
 
-### Hâlâ eksik olan
-1. **22 Dart dosyası** — APK'da var, diskte yok (bkz. rapor bölüm 2)
-2. **12 backend RPC** — canlı veritabanında var, `supabase/migrations/` altında yok
-   (bkz. rapor bölüm 3)
-3. **153 Türkçe metin** — APK'da var, diskteki kaynakta yok
+### Kurtarma durumu
+1. **22 Dart dosyası** yeniden yazıldı ve ana akışa bağlandı.
+2. Kurtarılan backend RPC ve tablolar migration zincirine alındı; canlıyla birebir teyit gerektiren kalemler `supabase/KURTARMA_DURUMU.md` içinde tutuluyor.
+3. **153 Türkçe metin** APK kurtarma kanıtında mevcut; kullanılan metinler `kurtarilan/missing-turkish.txt` ile karşılaştırılarak korunuyor.
 
 > ### Gerçek şudur
 > `libapp.so` bir **derlenmiş makine kodu**. Kaynak kod içermez. Yani eksik dosyalar
@@ -67,7 +66,7 @@ Tam döküm: `kurtarilan/KURTARMA_RAPORU.md` bölüm 4.
 | Veli & yönetim paneli | `web-panel/src/app/[locale]/(admin)/` |
 | Ödeme (iyzico) | `supabase/functions/payments-*` |
 
-### Kayıp (yeniden yazılacak)
+### Kurtarılan / yeniden yazılan özellikler
 | Özellik | Ana dosyalar | Zorluk |
 |---|---|---|
 | Çarpım Tablosu Şifreleri | `screens/cipher/*`, `models/cipher_models.dart` | ⭐⭐⭐ En büyük |
@@ -191,22 +190,16 @@ yanlış pozitiftir — arkasında anahtar yok.)
 ---
 
 ## 7. Sıradaki adımlar
+1. **Canlı Supabase doğrulaması:** `supabase db reset` ve `supabase test db` çalıştırılmalı; bu makinede CLI/Docker olmadığı için kullanıcı/ortam işlemi olarak işaretlidir.
+2. **Canlı içerik karşılaştırması:** `carpim_sifreleri` seed'i 10 şifre içeriyor; canlıdaki gerçek metinlerle birebir karşılaştırma Dashboard erişimi gerektirir.
+3. **Admin paneli tarayıcı doğrulaması:** oturum açılmış tarayıcı ve çalışan panel gerektirir.
+4. **Mobil tam derleme:** Git/Flutter ortamı ve ASCII yol hazırlanırsa `flutter analyze` ve `flutter test` çalıştırılmalı.
+5. **Karantina temizliği:** `Silinecekler/` ve kurtarma kanıtı dışındaki eski üretilmiş dosyalar, silme onayı/temizlik prosedürüne göre ele alınmalı.
 
-1. **Kalan 5 Supabase nesnesini kurtar** — `supabase/KURTARMA_DURUMU.md` §4.
-   `grade_changes`, `question_reports`, `_desteklenen_siniflar`, `_sinif_yaz`,
-   `_refresh_question_flag`, `admin_set_daily_challenge` **kurtarıldı**
-   (`20260927000030`). Geriye kalan: `question_quality_config` tablosu,
-   `questions.inceleme_gerekli` kolonu, `profiles` sınıf trigger'ı,
-   iki tablonun RLS politikaları, `carpim_sifreleri` içerik verisi.
-   Bunlar gelmeden `report_question` / `_refresh_question_flag` çağrıları hata
-   verir, `supabase db reset` şema olarak eksik kalır.
-2. **`models/` altındaki 4 dosyayı yaz** — en kolay, RPC'lere birebir bağlı.
-3. **Çarpım Tablosu Şifreleri** — en değerli özellik, en çok iş.
-4. **Mobil projeyi ASCII yola taşı** — Türkçe/OneDrive yolunda `flutter analyze`
-   çöküyor; mağaza yayını için de şart.
-5. **`Silinecekler/` kalıcı silme** — `TEMIZLIK_RAPORU.md`.
+Otomatik tamamlanan teknik doğrulamalar: SQL sözdizimi, migration bağımlılıkları, istemci RPC kapsamı,
+Dart parantez/import denetimi, web lint, TypeScript ve production build.
 
-> **Durum notu (27 Eylül 2026):** Sürüm kontrolü artık tek kök git deposunda;
+> **Durum notu (28 Eylül 2026):** Sürüm kontrolü artık tek kök git deposunda;
 > iç içe `web-panel/.git` ve `mobile-app/.git` depoları
 > `Desktop\çıkarıldı\_firsat-git-arsiv-20260927\` altına arşivlendi (silinmedi).
 
