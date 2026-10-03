@@ -6,15 +6,15 @@ import UserMetaCard from "@/components/user-profile/UserMetaCard";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Profile | TailAdmin - Next.js Admin Dashboard Template",
+  title: "Profile | Hupo",
   description:
-    "Manage your personal information, security settings, and preference on the TailAdmin Profile page.",
+    "Manage your personal information, security settings, and preference on the Hupo",
 };
 
 export default function Profile() {
   return (
     <div>
-      <PageBreadcrumb pageTitle="Profile" />
+      <PageBreadcrumb pageTitle="Profil" />
       <div className="rounded-2xl border border-gray-200 bg-white p-5 lg:p-6 dark:border-gray-800 dark:bg-white/3">
         <h3 className="mb-5 text-lg font-semibold text-gray-800 lg:mb-7 dark:text-white/90">
           Profile

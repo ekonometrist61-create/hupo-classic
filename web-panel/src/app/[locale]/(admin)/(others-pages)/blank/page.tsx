@@ -2,14 +2,14 @@ import PageBreadcrumb from "@/components/common/PageBreadCrumb";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Next.js Blank Page | TailAdmin - Next.js Dashboard Template",
-  description: "This is Next.js Blank Page TailAdmin Dashboard Template",
+  title: "Next.js Blank Page | Hupo",
+  description: "This is Next.js Blank Page Hupo",
 };
 
 export default function BlankPage() {
   return (
     <div>
-      <PageBreadcrumb pageTitle="Blank Page" />
+      <PageBreadcrumb pageTitle="Boş Sayfa" />
       <div className="min-h-screen rounded-2xl border border-gray-200 bg-white px-5 py-7 xl:px-10 xl:py-12 dark:border-gray-800 dark:bg-white/3">
         <div className="mx-auto w-full max-w-[630px] text-center">
           <h3 className="mb-4 text-theme-xl font-semibold text-gray-800 sm:text-2xl dark:text-white/90">
