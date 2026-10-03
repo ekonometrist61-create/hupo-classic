@@ -16,7 +16,7 @@ export interface Paged<T> {
 // Kullanıcılar
 // ---------------------------------------------------------------------
 
-export type UserRole = "veli" | "ogrenci" | "admin";
+export type UserRole = "veli" | "ogrenci" | "admin" | "ogretmen";
 
 /** public.admin_kullanicilar view'ı. */
 export interface AdminUser {

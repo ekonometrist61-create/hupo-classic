@@ -5,7 +5,9 @@ import { useTranslations } from "next-intl";
 
 import Badge from "@/components/ui/badge/Badge";
 import { createClient } from "@/utils/supabase/client";
+import type { AdminUser } from "../types";
 import ErrorNote from "./ErrorNote";
+import OgretmenPicker from "./OgretmenPicker";
 import {
   cardClass,
   inputClass,
@@ -62,6 +64,7 @@ export default function SiniflarManager() {
 
   const [form, setForm] = useState<FormState | null>(null);
   const [editing, setEditing] = useState<string | null>(null);
+  const [selectedOgretmen, setSelectedOgretmen] = useState<AdminUser | null>(null);
   const [saving, setSaving] = useState(false);
   const [formError, setFormError] = useState<string | null>(null);
 
@@ -95,6 +98,7 @@ export default function SiniflarManager() {
   const openNew = () => {
     setForm(EMPTY);
     setEditing(null);
+    setSelectedOgretmen(null);
     setFormError(null);
   };
 
@@ -108,6 +112,11 @@ export default function SiniflarManager() {
       aktif: s.aktif,
     });
     setEditing(s.id);
+    setSelectedOgretmen(
+      s.ogretmen_id
+        ? ({ id: s.ogretmen_id, ad: s.ogretmen_adi, email: null, rol: "ogretmen", veli_ad: null, sinif: null, veli_adi: null, cocuk_sayisi: 0, uyelik_tarihi: null, kayit_tarihi: null, veli_id: null, ogrenci_ad: null } as AdminUser)
+        : null,
+    );
     setFormError(null);
   };
 
@@ -143,6 +152,7 @@ export default function SiniflarManager() {
     if (err) return setFormError(err.message);
     setForm(null);
     setEditing(null);
+    setSelectedOgretmen(null);
     reload();
   };
 
@@ -316,15 +326,12 @@ export default function SiniflarManager() {
               />
             </div>
             <div className="sm:col-span-2">
-              <label className={labelClass} htmlFor="sinif-ogretmen">
-                {t("form.ogretmen")}
-              </label>
-              <input
-                id="sinif-ogretmen"
-                className={`${inputClass} font-mono`}
-                placeholder="Öğretmen kullanıcı UUID'si"
-                value={form.ogretmen_id}
-                onChange={(e) => set("ogretmen_id", e.target.value)}
+              <OgretmenPicker
+                selected={selectedOgretmen}
+                onSelect={(u) => {
+                  setSelectedOgretmen(u);
+                  set("ogretmen_id", u?.id ?? "");
+                }}
               />
             </div>
           </div>
@@ -341,7 +348,7 @@ export default function SiniflarManager() {
             <button
               type="button"
               className={outlineBtn}
-              onClick={() => setForm(null)}
+              onClick={() => { setForm(null); setSelectedOgretmen(null); }}
             >
               {t("form.cancel")}
             </button>

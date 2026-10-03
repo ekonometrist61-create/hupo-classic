@@ -25,8 +25,8 @@ import {
 import useDebounced from "./useDebounced";
 
 const PAGE_SIZE = 25;
-const ROLES: UserRole[] = ["veli", "ogrenci", "admin"];
-const ROLE_COLOR = { veli: "info", ogrenci: "primary", admin: "warning" } as const;
+const ROLES: UserRole[] = ["veli", "ogrenci", "admin", "ogretmen"];
+const ROLE_COLOR = { veli: "info", ogrenci: "primary", admin: "warning", ogretmen: "success" } as const;
 
 const ADMIN_SQL =
   "update public.profiles set role = 'admin'\nwhere id = (select id from auth.users where email = 'ornek@eposta.com');";
