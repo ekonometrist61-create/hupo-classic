@@ -54,7 +54,8 @@ class ReportQuestionSheet extends ConsumerStatefulWidget {
   final String questionId;
 
   @override
-  ConsumerState<ReportQuestionSheet> createState() => _ReportQuestionSheetState();
+  ConsumerState<ReportQuestionSheet> createState() =>
+      _ReportQuestionSheetState();
 }
 
 class _ReportQuestionSheetState extends ConsumerState<ReportQuestionSheet> {
@@ -85,7 +86,9 @@ class _ReportQuestionSheetState extends ConsumerState<ReportQuestionSheet> {
       await repo.reportQuestion(
         questionId: widget.questionId,
         neden: _selectedReason,
-        notMetni: _notController.text.trim().isEmpty ? null : _notController.text.trim(),
+        notMetni: _notController.text.trim().isEmpty
+            ? null
+            : _notController.text.trim(),
       );
 
       if (mounted) {
@@ -103,7 +106,8 @@ class _ReportQuestionSheetState extends ConsumerState<ReportQuestionSheet> {
     } catch (e) {
       if (mounted) {
         final errText = e.toString();
-        final isAlreadyReported = errText.contains('23505') || errText.contains('zaten bildirdin');
+        final isAlreadyReported =
+            errText.contains('23505') || errText.contains('zaten bildirdin');
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
@@ -112,7 +116,8 @@ class _ReportQuestionSheetState extends ConsumerState<ReportQuestionSheet> {
                   : 'Şu an gönderemedik, sorun değil! Biraz sonra tekrar dener misin?',
               style: appText(size: 14, color: Colors.white),
             ),
-            backgroundColor: isAlreadyReported ? AppColors.sunDark : AppColors.coral,
+            backgroundColor:
+                isAlreadyReported ? AppColors.sunDark : AppColors.coral,
           ),
         );
       }
@@ -142,7 +147,8 @@ class _ReportQuestionSheetState extends ConsumerState<ReportQuestionSheet> {
               const SizedBox(width: 8),
               Text(
                 'Sorun Bildir',
-                style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+                style: appText(
+                    size: 18, weight: FontWeight.w800, color: AppColors.ink),
               ),
               const Spacer(),
               IconButton(
@@ -152,16 +158,22 @@ class _ReportQuestionSheetState extends ConsumerState<ReportQuestionSheet> {
             ],
           ),
           const SizedBox(height: 12),
-          ..._reasons.map((r) => RadioListTile<String>(
-                value: r.$1,
-                groupValue: _selectedReason,
-                title: Text(r.$2, style: appText(size: 15, weight: FontWeight.w600)),
-                activeColor: AppColors.primary,
-                contentPadding: EdgeInsets.zero,
-                onChanged: (val) {
-                  if (val != null) setState(() => _selectedReason = val);
-                },
-              )),
+          RadioGroup<String>(
+            groupValue: _selectedReason,
+            onChanged: (val) {
+              if (val != null) setState(() => _selectedReason = val);
+            },
+            child: Column(
+              children: _reasons
+                  .map((r) => RadioListTile<String>(
+                        value: r.$1,
+                        title: Text(r.$2,
+                            style: appText(size: 15, weight: FontWeight.w600)),
+                        contentPadding: EdgeInsets.zero,
+                      ))
+                  .toList(),
+            ),
+          ),
           const SizedBox(height: 8),
           TextField(
             controller: _notController,

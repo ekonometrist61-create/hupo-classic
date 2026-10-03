@@ -8,6 +8,7 @@ import 'auth/login.dart';
 import 'config/env.dart';
 import 'screens/home_screen.dart';
 import 'services/push/push_host.dart';
+import 'services/secure_storage.dart';
 import 'settings/app_settings.dart';
 import 'theme/app_theme.dart';
 import 'widgets/maintenance_gate.dart';
@@ -17,6 +18,7 @@ Future<void> main() async {
   await Supabase.initialize(
     url: Env.supabaseUrl,
     publishableKey: Env.supabasePublishableKey,
+    authOptions: FlutterAuthClientOptions(localStorage: SecureLocalStorage()),
   );
   final prefs = await SharedPreferences.getInstance();
 
