@@ -20,12 +20,12 @@ class HeroHeader extends StatelessWidget {
       child: Stack(
         children: [
           // Hafif dekoratif daireler
-          Positioned(
+          const Positioned(
             top: -40,
             right: -30,
             child: _Bubble(size: 150, alpha: 0.10),
           ),
-          Positioned(
+          const Positioned(
             bottom: 20,
             left: -50,
             child: _Bubble(size: 120, alpha: 0.07),

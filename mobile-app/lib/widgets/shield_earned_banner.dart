@@ -80,7 +80,7 @@ class ShieldEarnedBanner extends StatelessWidget {
 Future<void> showShieldEarnedDialog(BuildContext context, int shields) {
   return showGeneralDialog<void>(
     context: context,
-    barrierDismissible: false,
+    barrierDismissible: false, // ignore: avoid_redundant_argument_values — kapanmaması guvenlik geregi
     barrierLabel: 'Kutlama',
     barrierColor: Colors.black.withValues(alpha: 0.6),
     transitionDuration: motionMs(context, 300),
