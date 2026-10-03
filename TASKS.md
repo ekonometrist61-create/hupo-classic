@@ -114,34 +114,40 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 
 ---
 
-## 2. Eksik 22 Dart dosyası
+## 2. Eksik 22 Dart dosyası — TÜMÜ TAMAMLANDI ✅
 
-Yazım sırası: `models/` → `services/` → `widgets/` → `screens/` → `ads/`
+Tüm 22 dosya `mobile-app/lib/` altında mevcut:
 
-```
-lib/ads/ad_config.dart
-lib/ads/student_banner_ad.dart
-lib/content/answer_feedback.dart
-lib/models/app_config.dart                    ← YAZILDI
-lib/models/cipher_models.dart
-lib/models/daily_challenge_models.dart
-lib/models/review_models.dart
-lib/screens/cipher/cipher_lesson_screen.dart
-lib/screens/cipher/cipher_list_screen.dart
-lib/screens/cipher/genel_alistirma_screen.dart
-lib/screens/daily_challenge_screen.dart
-lib/screens/grade_picker_screen.dart
-lib/screens/review_screen.dart
-lib/screens/saved_questions_screen.dart
-lib/services/personal_best.dart
-lib/widgets/bookmark_button.dart
-lib/widgets/cipher_badges_dialog.dart
-lib/widgets/cipher_icons.dart
-lib/widgets/daily_challenge_card.dart
-lib/widgets/maintenance_gate.dart
-lib/widgets/report_question_button.dart
-lib/widgets/ui/responsive_page.dart
-```
+- [x] lib/ads/ad_config.dart
+- [x] lib/ads/student_banner_ad.dart
+- [x] lib/content/answer_feedback.dart
+- [x] lib/models/app_config.dart
+- [x] lib/models/cipher_models.dart
+- [x] lib/models/daily_challenge_models.dart
+- [x] lib/models/review_models.dart
+- [x] lib/screens/cipher/cipher_lesson_screen.dart
+- [x] lib/screens/cipher/cipher_list_screen.dart
+- [x] lib/screens/cipher/genel_alistirma_screen.dart
+- [x] lib/screens/daily_challenge_screen.dart
+- [x] lib/screens/grade_picker_screen.dart
+- [x] lib/screens/review_screen.dart
+- [x] lib/screens/saved_questions_screen.dart
+- [x] lib/services/personal_best.dart
+- [x] lib/widgets/bookmark_button.dart
+- [x] lib/widgets/cipher_badges_dialog.dart
+- [x] lib/widgets/cipher_icons.dart
+- [x] lib/widgets/daily_challenge_card.dart
+- [x] lib/widgets/maintenance_gate.dart
+- [x] lib/widgets/report_question_button.dart
+- [x] lib/widgets/ui/responsive_page.dart
+
+Ek olarak yazılan (kurtarma sonrası yeni):
+- [x] lib/screens/collection_screen.dart — 40 karakterli koleksiyon ekranı
+- [x] lib/widgets/character/character_card_widget.dart
+- [x] lib/widgets/character/character_celebration_listener.dart
+- [x] lib/widgets/character/character_detail_sheet.dart
+- [x] lib/widgets/character/character_unlock_dialog.dart
+- [x] lib/services/secure_storage.dart — JWT güvenli depo (Android Keystore / iOS Keychain)
 
 ---
 
@@ -226,16 +232,16 @@ lib/widgets/ui/responsive_page.dart
 
 ## 7. Sıradaki adımlar
 
-1. `kurtarilan/SEMA_CARPIM.sql` çalıştır, CSV indir → çarpım tabloları şeması
-2. `carpim_sifreleri` içerik verisini kurtar (10-12 şifre)
-3. `20260927000020_carpim_sifreleri_tables.sql` migration'ını yaz
-4. `models/cipher_models.dart` → `models/daily_challenge_models.dart` → `models/review_models.dart`
-5. `services/personal_best.dart`
-6. `widgets/` (8 dosya)
-7. `screens/` (6 dosya)
-8. Git kur → Flutter testleri
-9. Web lint hataları
-10. `Silinecekler/` kalıcı silme (onay bekleniyor)
+### Ajan yapabilir
+- [ ] Soru bankası diğer dersler (Türkçe, Fen Bilimleri vb.) — benzer migration
+- [ ] Sorular için admin onay akışı web-panel'de test edilecek
+- [ ] Flutter widget testleri (`mobile-app/test/`)
+
+### Kullanıcı yapacak (basit adımlar)
+- [ ] **Karakter görselleri**: illüstratöre kısa brief — `kurtarilan/KURTARMA_RAPORU.md` sınıf listesini ver, din sembolü yasağını hatırlat
+- [ ] **Mağaza URL'leri**: uygulama yayımlandıktan sonra `maintenance_gate.dart` içindeki 2 URL güncellenir
+- [ ] **Admin paneli**: `npm run dev` çalıştırıp tarayıcıda admin oturumu açarak kontrol
+- [ ] **Flutter analyze**: projeyi `C:\Users\cengi\flutterwork` gibi ASCII yola kopyalayıp `flutter analyze` çalıştır
 
 ---
 
