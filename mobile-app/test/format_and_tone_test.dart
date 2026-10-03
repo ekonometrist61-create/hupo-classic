@@ -31,7 +31,8 @@ void main() {
         .toList();
 
     test('kaynak kodda dolar/euro para birimi yok', () {
-      final pattern = RegExp(r'USD|EUR|€|£|\$[0-9]');
+      // (?<!\.) hariç: r.$1, r.$2 gibi Dart kayıt alanı erişimlerini (record fields) eşleştirmez
+      final pattern = RegExp(r'USD|EUR|€|£|(?<!\.)\$[0-9]');
       for (final file in sources) {
         expect(pattern.hasMatch(file.readAsStringSync()), isFalse,
             reason: '${file.path} ₺ dışında bir para birimi içeriyor');
