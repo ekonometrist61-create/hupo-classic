@@ -25,7 +25,9 @@ import 'quiz_screen.dart';
 import 'cipher/cipher_list_screen.dart';
 import 'daily_challenge_screen.dart';
 import 'review_screen.dart';
+import '../widgets/character/character_celebration_listener.dart';
 import '../widgets/daily_challenge_card.dart';
+import 'collection_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -85,6 +87,7 @@ class HomeScreen extends ConsumerWidget {
     ref.invalidate(leagueProvider);
     ref.invalidate(unreadCountProvider);
     ref.invalidate(dailyGoalProvider);
+    ref.invalidate(myCharactersProvider);
   }
 
   @override
@@ -119,6 +122,7 @@ class HomeScreen extends ConsumerWidget {
 
           return ShieldCelebrationListener(
             child: TierCelebrationListener(
+            child: CharacterCelebrationListener(
             child: RefreshIndicator(
               onRefresh: () async {
                 ref.invalidate(dailyGoalProvider);
@@ -208,6 +212,13 @@ class HomeScreen extends ConsumerWidget {
                                 builder: (_) => const ProfileScreen()),
                           ),
                         ),
+                        const SizedBox(height: 12),
+                        _KarakterKisayolu(
+                          onTap: () => Navigator.of(context).push(
+                            MaterialPageRoute(
+                                builder: (_) => const CollectionScreen()),
+                          ),
+                        ),
                         const SizedBox(height: 24),
                         Text(
                           'Bugün hangi dersi fethediyoruz?',
@@ -229,6 +240,7 @@ class HomeScreen extends ConsumerWidget {
                   ),
                 ],
               ),
+            ),
             ),
             ),
           );
@@ -667,6 +679,51 @@ class _StreakNudge extends ConsumerWidget {
             ),
           ],
         ),
+      ),
+    );
+  }
+}
+
+class _KarakterKisayolu extends ConsumerWidget {
+  const _KarakterKisayolu({required this.onTap});
+
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final asyncKarakterler = ref.watch(myCharactersProvider);
+    final kazanilan =
+        asyncKarakterler.valueOrNull?.where((k) => k.kazanildi).length ?? 0;
+    final toplam = asyncKarakterler.valueOrNull?.length ?? 40;
+
+    return GameCard(
+      onTap: onTap,
+      color: AppColors.primarySoft,
+      borderColor: AppColors.primary,
+      child: Row(
+        children: [
+          const Text('🏆', style: TextStyle(fontSize: 28)),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  'Karakterlerim',
+                  style: appText(
+                      size: 16, weight: FontWeight.w800, color: AppColors.ink),
+                ),
+                const SizedBox(height: 2),
+                Text(
+                  '$kazanilan / $toplam karakter kazanıldı',
+                  style: appText(size: 12, color: AppColors.muted),
+                ),
+              ],
+            ),
+          ),
+          const Icon(Icons.chevron_right_rounded,
+              color: AppColors.primary, size: 22),
+        ],
       ),
     );
   }
