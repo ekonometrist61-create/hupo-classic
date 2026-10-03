@@ -90,6 +90,12 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 - [x] `ads/` altındaki 2 dosya yazıldı
 - [x] `content/answer_feedback.dart` yazıldı
 - [x] Uygulama içi entegrasyonlar tamamlandı (`main.dart`, `home_screen.dart`, `profile_screen.dart`, `quiz_screen.dart`)
+- [x] **Karakter koleksiyon sistemi** — 40 karakter/8 sınıf, migration+model+provider+widget+ekran (03 Ekim 2026)
+- [x] `RadioListTile.groupValue/onChanged` Flutter 3.32 deprecasyonu `RadioGroup` ile giderildi
+- [x] `MaintenanceGate` canlı versiyon kontrolü — `package_info_plus` + `url_launcher` mağaza linki
+- [x] JWT güvenli depo — `flutter_secure_storage` (Android Keystore/iOS Keychain) ile `SecureLocalStorage`
+- [x] Karakter unlock kutlaması — `CharacterCelebrationListener` + `CharacterUnlockDialog` (konfeti)
+- [x] Ana ekrana Karakterlerim kısayolu (`_KarakterKisayolu` widget, quiz sonrası provider invalidate)
 
 ### Web paneli
 - [x] Lint hataları giderildi (`eslint .` → 0 hata)
