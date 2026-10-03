@@ -235,7 +235,7 @@ Ek olarak yazılan (kurtarma sonrası yeni):
 ### Ajan yapabilir
 - [ ] Soru bankası diğer dersler (Türkçe, Fen Bilimleri vb.) — benzer migration
 - [ ] Sorular için admin onay akışı web-panel'de test edilecek
-- [ ] Flutter widget testleri (`mobile-app/test/`)
+- [x] Flutter widget testleri (`mobile-app/test/`) — `maintenance_gate_test.dart` (8 test) ve `character_celebration_test.dart` (5 test) eklendi
 
 ### Kullanıcı yapacak (basit adımlar)
 - [ ] **Karakter görselleri**: illüstratöre kısa brief — `kurtarilan/KURTARMA_RAPORU.md` sınıf listesini ver, din sembolü yasağını hatırlat
