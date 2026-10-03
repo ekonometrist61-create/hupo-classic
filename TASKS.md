@@ -4,7 +4,7 @@
 > Temizlik kararları: `TEMIZLIK_RAPORU.md`
 > Kurtarma kanıtı: `kurtarilan/KURTARMA_RAPORU.md`
 
-Son güncelleme: 27 Eylül 2026
+Son güncelleme: 03 Ekim 2026
 
 ---
 
@@ -104,6 +104,7 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 - [x] Web public giriş rotası production server'da doğrulandı; admin rotası oturumsuzken girişe yönleniyor
 - [x] Web proxy locale-prefix normalizasyonu düzeltildi; anonim claim gerçek oturum sayılmıyor
 - [ ] Admin paneli oturum açılmış tarayıcıda doğrulanacak (kullanıcı oturumu gerekir)
+- [x] **Soru bankası — Matematik Bölüm 1**: 50 örnek soru migration'a dönüştürüldü (`20261003000001_soru_bankasi_matematik_bolum1.sql`); onay_durumu = 'beklemede' (kaynak doğrulanmamış)
 - [ ] Proje ASCII yola taşınacak (Türkçe/OneDrive yolu Dart/Flutter için önerilir)
 - [x] Web TypeScript kontrolü temiz (`tsc --noEmit`)
 - [x] Web production build temiz (`next build --webpack`, 51 rota)
