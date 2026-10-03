@@ -1,3 +1,4 @@
+import WelcomeSplash from "@/components/common/WelcomeSplash";
 import { SidebarProvider } from "@/context/SidebarContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { isRtl } from "@/i18n/languages";
@@ -40,7 +41,10 @@ export default async function RootLayout({
       <body className={`${outfit.className} dark:bg-gray-900`}>
         <NextIntlClientProvider locale={locale}>
           <ThemeProvider>
-            <SidebarProvider>{children}</SidebarProvider>
+            <SidebarProvider>
+              <WelcomeSplash />
+              {children}
+            </SidebarProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>
