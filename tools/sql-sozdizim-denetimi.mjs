@@ -159,8 +159,12 @@ function denetle(metin, baslangicSatiri = 1, ic = false) {
         if (son < 0) {
           hatalar.push({ satir: basSatir, kolon: basKolon, mesaj: 'Kapanmayan dolar-tirnak blogu ' + etiket });
         } else {
-          // Govde ayrica denetlenir: fonksiyon icindeki parantez/metin hatalari burada yakalanir
-          hatalar.push(...denetle(metin.slice(i, son), govdeSatiri, true));
+          // Etiketli dolar-tirnak ($function$...) fonksiyon govdesidir — icerik denetlenir.
+          // Etiketsiz dolar-tirnak ($$...) veri dizmesi olabilir; tek tirnak ve parantez
+          // PostgreSQL'de serbestce gecilebilir, yanlis pozitif uretmemek icin denetlenmez.
+          if (etiket !== '$$') {
+            hatalar.push(...denetle(metin.slice(i, son), govdeSatiri, true));
+          }
           ilerle(son - i + etiket.length);
         }
         ifadeVar = true;
