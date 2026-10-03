@@ -51,6 +51,10 @@ const securityHeaders = [
 ];
 
 const nextConfig: NextConfig = {
+  // Windows'ta node_modules taraması çok yavaş olduğu için dışarıda bırakılır.
+  outputFileTracingExcludes: {
+    "*": ["node_modules/**"],
+  },
   webpack(config) {
     config.module.rules.push({
       test: /\.svg$/,
