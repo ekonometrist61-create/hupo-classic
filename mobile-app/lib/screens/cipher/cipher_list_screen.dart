@@ -27,7 +27,8 @@ class CipherListScreen extends ConsumerWidget {
       appBar: AppBar(
         title: Text(
           'Çarpım Tablosu Şifreleri',
-          style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+          style:
+              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -41,14 +42,16 @@ class CipherListScreen extends ConsumerWidget {
               _GenelAlistirmaCard(
                 onTap: () {
                   Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const GenelAlistirmaScreen()),
+                    MaterialPageRoute(
+                        builder: (_) => const GenelAlistirmaScreen()),
                   );
                 },
               ),
               const SizedBox(height: 16),
               Text(
                 'Şifreleri çöz, çarpım tablosunu ustaca öğren!',
-                style: appText(size: 15, weight: FontWeight.w600, color: AppColors.muted),
+                style: appText(
+                    size: 15, weight: FontWeight.w600, color: AppColors.muted),
               ),
               const SizedBox(height: 12),
               Expanded(
@@ -71,7 +74,8 @@ class CipherListScreen extends ConsumerWidget {
                       },
                     );
                   },
-                  loading: () => const Center(child: CircularProgressIndicator()),
+                  loading: () =>
+                      const Center(child: CircularProgressIndicator()),
                   error: (_, __) => Center(
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
@@ -121,7 +125,8 @@ class _GenelAlistirmaCard extends StatelessWidget {
               color: AppColors.primary,
               shape: BoxShape.circle,
             ),
-            child: const Icon(Icons.flash_on_rounded, color: Colors.white, size: 28),
+            child: const Icon(Icons.flash_on_rounded,
+                color: Colors.white, size: 28),
           ),
           const SizedBox(width: 14),
           Expanded(
@@ -130,7 +135,8 @@ class _GenelAlistirmaCard extends StatelessWidget {
               children: [
                 Text(
                   'Genel Çarpım Tablosu Alıştırması',
-                  style: appText(size: 16, weight: FontWeight.w800, color: AppColors.ink),
+                  style: appText(
+                      size: 16, weight: FontWeight.w800, color: AppColors.ink),
                 ),
                 const SizedBox(height: 4),
                 Text(
@@ -141,7 +147,8 @@ class _GenelAlistirmaCard extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
-          const Icon(Icons.arrow_forward_ios_rounded, size: 16, color: AppColors.muted),
+          const Icon(Icons.arrow_forward_ios_rounded,
+              size: 16, color: AppColors.muted),
         ],
       ),
     );
@@ -166,7 +173,8 @@ class _CipherTile extends StatelessWidget {
       onTap: () {
         AppHaptics.light();
         Navigator.of(context).push(
-          MaterialPageRoute(builder: (_) => CipherLessonScreen(sifreId: cipher.id)),
+          MaterialPageRoute(
+              builder: (_) => CipherLessonScreen(sifreId: cipher.id)),
         );
       },
       child: Row(
@@ -189,13 +197,18 @@ class _CipherTile extends StatelessWidget {
                   children: [
                     Text(
                       cipher.isim,
-                      style: appText(size: 16, weight: FontWeight.w800, color: AppColors.ink),
+                      style: appText(
+                          size: 16,
+                          weight: FontWeight.w800,
+                          color: AppColors.ink),
                     ),
                     const SizedBox(width: 8),
                     if (cipher.isCompleted)
-                      const Icon(Icons.check_circle_rounded, size: 16, color: AppColors.mint)
+                      const Icon(Icons.check_circle_rounded,
+                          size: 16, color: AppColors.mint)
                     else if (cipher.isExerciseCompleted)
-                      const Icon(Icons.star_rounded, size: 16, color: AppColors.sunDark),
+                      const Icon(Icons.star_rounded,
+                          size: 16, color: AppColors.sunDark),
                   ],
                 ),
                 const SizedBox(height: 4),
@@ -207,7 +220,8 @@ class _CipherTile extends StatelessWidget {
             ),
           ),
           const SizedBox(width: 8),
-          const Icon(Icons.arrow_forward_ios_rounded, size: 16, color: AppColors.muted),
+          const Icon(Icons.arrow_forward_ios_rounded,
+              size: 16, color: AppColors.muted),
         ],
       ),
     );

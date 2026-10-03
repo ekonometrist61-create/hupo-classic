@@ -70,7 +70,8 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
       appBar: AppBar(
         title: Text(
           'Genel Çarpım Alıştırması',
-          style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+          style:
+              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -91,12 +92,16 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
         Text(
           'İstediğin tabloyu seç, hızlıca pratik yap!',
           textAlign: TextAlign.center,
-          style: appText(size: 15, weight: FontWeight.w500, color: AppColors.muted),
+          style: appText(
+              size: 15, weight: FontWeight.w500, color: AppColors.muted),
         ),
         const SizedBox(height: 20),
         GameCard(
-          color: _selectedTable == null ? AppColors.primarySoft : AppColors.surface,
-          borderColor: _selectedTable == null ? AppColors.primary : AppColors.line,
+          color: _selectedTable == null
+              ? AppColors.primarySoft
+              : AppColors.surface,
+          borderColor:
+              _selectedTable == null ? AppColors.primary : AppColors.line,
           onTap: () {
             AppHaptics.selection();
             setState(() => _selectedTable = null);
@@ -107,7 +112,8 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
               const SizedBox(width: 12),
               Text(
                 'Karışık (1-10 hepsi)',
-                style: appText(size: 16, weight: FontWeight.w800, color: AppColors.ink),
+                style: appText(
+                    size: 16, weight: FontWeight.w800, color: AppColors.ink),
               ),
             ],
           ),
@@ -180,14 +186,18 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
           children: [
             Text(
               'Doğru: $_score / $_questionCount',
-              style: appText(size: 15, weight: FontWeight.w800, color: AppColors.mintDark),
+              style: appText(
+                  size: 15, weight: FontWeight.w800, color: AppColors.mintDark),
             ),
             const Spacer(),
             TextButton(
               onPressed: () => setState(() => _isPlaying = false),
               child: Text(
                 'Farklı tablo seç',
-                style: appText(size: 14, weight: FontWeight.w700, color: AppColors.primary),
+                style: appText(
+                    size: 14,
+                    weight: FontWeight.w700,
+                    color: AppColors.primary),
               ),
             ),
           ],
@@ -198,14 +208,16 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
             children: [
               Text(
                 '$_factorA × $_factorB = ?',
-                style: appText(size: 36, weight: FontWeight.w800, color: AppColors.ink),
+                style: appText(
+                    size: 36, weight: FontWeight.w800, color: AppColors.ink),
               ),
               const SizedBox(height: 24),
               TextField(
                 controller: _answerController,
                 keyboardType: TextInputType.number,
                 textAlign: TextAlign.center,
-                style: appText(size: 26, weight: FontWeight.w800, color: AppColors.ink),
+                style: appText(
+                    size: 26, weight: FontWeight.w800, color: AppColors.ink),
                 decoration: InputDecoration(
                   hintText: 'Cevap',
                   hintStyle: appText(size: 20, color: AppColors.muted),
@@ -213,7 +225,8 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
                   fillColor: AppColors.surface,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
-                    borderSide: const BorderSide(color: AppColors.line, width: 2),
+                    borderSide:
+                        const BorderSide(color: AppColors.line, width: 2),
                   ),
                 ),
                 onSubmitted: (_) {
@@ -235,16 +248,24 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
             child: Row(
               children: [
                 Icon(
-                  _isLastCorrect! ? Icons.check_circle_rounded : Icons.cancel_rounded,
-                  color: _isLastCorrect! ? AppColors.mintDark : AppColors.coralDark,
+                  _isLastCorrect!
+                      ? Icons.check_circle_rounded
+                      : Icons.cancel_rounded,
+                  color: _isLastCorrect!
+                      ? AppColors.mintDark
+                      : AppColors.coralDark,
                 ),
                 const SizedBox(width: 8),
                 Text(
-                  _isLastCorrect! ? 'Harikasın, doğru!' : 'Doğru cevap: ${_factorA * _factorB}',
+                  _isLastCorrect!
+                      ? 'Harikasın, doğru!'
+                      : 'Doğru cevap: ${_factorA * _factorB}',
                   style: appText(
                     size: 16,
                     weight: FontWeight.w800,
-                    color: _isLastCorrect! ? AppColors.mintDark : AppColors.coralDark,
+                    color: _isLastCorrect!
+                        ? AppColors.mintDark
+                        : AppColors.coralDark,
                   ),
                 ),
               ],

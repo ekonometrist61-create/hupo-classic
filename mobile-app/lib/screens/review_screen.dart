@@ -83,7 +83,8 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
       appBar: AppBar(
         title: Text(
           'Günün Tekrarı',
-          style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+          style:
+              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -100,12 +101,16 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
                         child: Column(
                           mainAxisSize: MainAxisSize.min,
                           children: [
-                            const Icon(Icons.check_circle_outline_rounded, size: 64, color: AppColors.mint),
+                            const Icon(Icons.check_circle_outline_rounded,
+                                size: 64, color: AppColors.mint),
                             const SizedBox(height: 16),
                             Text(
                               'Bugün tekrar yok, süpersin!',
                               textAlign: TextAlign.center,
-                              style: appText(size: 20, weight: FontWeight.w800, color: AppColors.ink),
+                              style: appText(
+                                  size: 20,
+                                  weight: FontWeight.w800,
+                                  color: AppColors.ink),
                             ),
                             const SizedBox(height: 8),
                             Text(
@@ -149,7 +154,8 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
           children: [
             Text(
               'Tekrar ${_currentIndex + 1} / ${list.length}',
-              style: appText(size: 14, weight: FontWeight.w700, color: AppColors.muted),
+              style: appText(
+                  size: 14, weight: FontWeight.w700, color: AppColors.muted),
             ),
             const Spacer(),
             BookmarkButton(questionId: question.id),
@@ -159,7 +165,8 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
         const SizedBox(height: 12),
         Text(
           question.text,
-          style: appText(size: 17, weight: FontWeight.w700, color: AppColors.ink),
+          style:
+              appText(size: 17, weight: FontWeight.w700, color: AppColors.ink),
         ),
         const SizedBox(height: 24),
         ...question.options.entries.map((opt) {
@@ -195,14 +202,20 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
                       ),
                       child: Text(
                         opt.key,
-                        style: appText(size: 14, weight: FontWeight.w800, color: AppColors.primaryDark),
+                        style: appText(
+                            size: 14,
+                            weight: FontWeight.w800,
+                            color: AppColors.primaryDark),
                       ),
                     ),
                     const SizedBox(width: 14),
                     Expanded(
                       child: Text(
                         opt.value,
-                        style: appText(size: 15, weight: FontWeight.w600, color: AppColors.ink),
+                        style: appText(
+                            size: 15,
+                            weight: FontWeight.w600,
+                            color: AppColors.ink),
                       ),
                     ),
                   ],
@@ -215,7 +228,9 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
         if (_answered)
           ChunkyButton(
             label: isLast ? 'Tekrarı Bitir' : 'Sonraki Soru',
-            icon: isLast ? Icons.check_circle_rounded : Icons.arrow_forward_rounded,
+            icon: isLast
+                ? Icons.check_circle_rounded
+                : Icons.arrow_forward_rounded,
             color: isLast ? AppColors.mint : AppColors.primary,
             shadowColor: isLast ? AppColors.mintDark : AppColors.primaryDark,
             onPressed: () {

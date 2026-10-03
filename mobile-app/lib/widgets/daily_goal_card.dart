@@ -32,7 +32,7 @@ class DailyGoalView extends StatelessWidget {
 
     return GameCard(
       color: done ? AppColors.mintSoft : AppColors.surface,
-      edgeColor: done ? AppColors.mint : AppColors.line,
+      borderColor: done ? AppColors.mint : AppColors.line,
       padding: const EdgeInsets.all(14),
       child: Row(
         children: [

@@ -51,7 +51,7 @@ class AnswerOption extends StatelessWidget {
     Widget tile = GameCard(
       onTap: onTap,
       color: _color,
-      edgeColor: _edge,
+      borderColor: _edge,
       radius: 22,
       padding: const EdgeInsets.symmetric(horizontal: 14, vertical: 12),
       child: Row(

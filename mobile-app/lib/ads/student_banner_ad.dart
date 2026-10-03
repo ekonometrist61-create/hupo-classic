@@ -29,7 +29,8 @@ class _StudentBannerAdState extends ConsumerState<StudentBannerAd> {
     // Yalnızca Android ve iOS mobil platformlarında çalışır
     if (!Platform.isAndroid && !Platform.isIOS) return;
 
-    final adUnitId = ref.read(studentBannerAdUnitIdProvider) ?? AdConfig.testBannerUnitId;
+    final adUnitId =
+        ref.read(studentBannerAdUnitIdProvider) ?? AdConfig.testBannerUnitId;
 
     _bannerAd = BannerAd(
       adUnitId: adUnitId,

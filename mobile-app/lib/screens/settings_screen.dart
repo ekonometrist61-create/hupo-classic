@@ -369,7 +369,7 @@ class _ActionTile extends StatelessWidget {
     return GameCard(
       onTap: onTap,
       color: danger ? AppColors.coralSoft : AppColors.surface,
-      edgeColor: danger ? AppColors.coral : AppColors.line,
+      borderColor: danger ? AppColors.coral : AppColors.line,
       padding: const EdgeInsets.all(14),
       child: Row(
         children: [

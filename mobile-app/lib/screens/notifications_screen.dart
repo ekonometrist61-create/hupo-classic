@@ -131,7 +131,7 @@ class _Tile extends StatelessWidget {
       label: '${unread ? 'Yeni. ' : ''}${n.title}. ${n.message}',
       child: GameCard(
         color: unread ? colors.soft : AppColors.surface,
-        edgeColor: unread ? colors.color : AppColors.line,
+        borderColor: unread ? colors.color : AppColors.line,
         padding: const EdgeInsets.all(14),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.start,

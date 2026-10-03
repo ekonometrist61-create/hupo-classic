@@ -18,7 +18,8 @@ class DailyChallengeScreen extends ConsumerStatefulWidget {
   const DailyChallengeScreen({super.key});
 
   @override
-  ConsumerState<DailyChallengeScreen> createState() => _DailyChallengeScreenState();
+  ConsumerState<DailyChallengeScreen> createState() =>
+      _DailyChallengeScreenState();
 }
 
 class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
@@ -96,7 +97,8 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
       appBar: AppBar(
         title: Text(
           'Günün 5 Sorusu',
-          style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+          style:
+              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -113,11 +115,15 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.star_outline_rounded, size: 64, color: AppColors.muted),
+                        const Icon(Icons.star_outline_rounded,
+                            size: 64, color: AppColors.muted),
                         const SizedBox(height: 16),
                         Text(
                           'Bugünün soruları hazırlanıyor',
-                          style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+                          style: appText(
+                              size: 18,
+                              weight: FontWeight.w800,
+                              color: AppColors.ink),
                         ),
                         const SizedBox(height: 8),
                         Text(
@@ -137,12 +143,16 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.check_circle_outline_rounded, size: 64, color: AppColors.mint),
+                        const Icon(Icons.check_circle_outline_rounded,
+                            size: 64, color: AppColors.mint),
                         const SizedBox(height: 16),
                         Text(
                           'Günün 5 Sorusu Tamamlandı!',
                           textAlign: TextAlign.center,
-                          style: appText(size: 20, weight: FontWeight.w800, color: AppColors.ink),
+                          style: appText(
+                              size: 20,
+                              weight: FontWeight.w800,
+                              color: AppColors.ink),
                         ),
                         const SizedBox(height: 8),
                         Text(
@@ -180,7 +190,10 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                     children: [
                       Text(
                         'Soru ${_currentIndex + 1} / ${dc.sorular.length}',
-                        style: appText(size: 14, weight: FontWeight.w700, color: AppColors.muted),
+                        style: appText(
+                            size: 14,
+                            weight: FontWeight.w700,
+                            color: AppColors.muted),
                       ),
                       const Spacer(),
                       BookmarkButton(questionId: question.id),
@@ -190,7 +203,10 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                   const SizedBox(height: 12),
                   Text(
                     question.text,
-                    style: appText(size: 17, weight: FontWeight.w700, color: AppColors.ink),
+                    style: appText(
+                        size: 17,
+                        weight: FontWeight.w700,
+                        color: AppColors.ink),
                   ),
                   const SizedBox(height: 24),
                   ...question.options.entries.map((opt) {
@@ -199,15 +215,20 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                     Color borderCol = AppColors.line;
                     if (_answered) {
                       if (isSelected) {
-                        btnColor = _isCorrect ? AppColors.mintSoft : AppColors.coralSoft;
-                        borderCol = _isCorrect ? AppColors.mint : AppColors.coral;
+                        btnColor = _isCorrect
+                            ? AppColors.mintSoft
+                            : AppColors.coralSoft;
+                        borderCol =
+                            _isCorrect ? AppColors.mint : AppColors.coral;
                       }
                     }
 
                     return Padding(
                       padding: const EdgeInsets.only(bottom: 12),
                       child: InkWell(
-                        onTap: _answered ? null : () => _onOptionSelected(question, opt.key),
+                        onTap: _answered
+                            ? null
+                            : () => _onOptionSelected(question, opt.key),
                         borderRadius: BorderRadius.circular(16),
                         child: Container(
                           padding: const EdgeInsets.all(16),
@@ -239,7 +260,10 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                               Expanded(
                                 child: Text(
                                   opt.value,
-                                  style: appText(size: 15, weight: FontWeight.w600, color: AppColors.ink),
+                                  style: appText(
+                                      size: 15,
+                                      weight: FontWeight.w600,
+                                      color: AppColors.ink),
                                 ),
                               ),
                             ],
@@ -252,9 +276,12 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                   if (_answered)
                     ChunkyButton(
                       label: isLast ? 'Bitir ve XP Kazan' : 'Sonraki Soru',
-                      icon: isLast ? Icons.celebration_rounded : Icons.arrow_forward_rounded,
+                      icon: isLast
+                          ? Icons.celebration_rounded
+                          : Icons.arrow_forward_rounded,
                       color: isLast ? AppColors.sun : AppColors.primary,
-                      shadowColor: isLast ? AppColors.sunDark : AppColors.primaryDark,
+                      shadowColor:
+                          isLast ? AppColors.sunDark : AppColors.primaryDark,
                       onPressed: () {
                         if (isLast) {
                           _completeChallenge(dc);

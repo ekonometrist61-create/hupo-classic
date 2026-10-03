@@ -10,11 +10,27 @@ class AppHaptics {
     if (enabled) HapticFeedback.selectionClick();
   }
 
+  static void light() {
+    if (enabled) HapticFeedback.lightImpact();
+  }
+
   static void medium() {
     if (enabled) HapticFeedback.mediumImpact();
   }
 
   static void heavy() {
+    if (enabled) HapticFeedback.heavyImpact();
+  }
+
+  static void success() {
+    if (enabled) HapticFeedback.mediumImpact();
+  }
+
+  static void error() {
+    if (enabled) HapticFeedback.heavyImpact();
+  }
+
+  static void celebration() {
     if (enabled) HapticFeedback.heavyImpact();
   }
 }

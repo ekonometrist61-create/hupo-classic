@@ -145,7 +145,7 @@ class _TipCard extends StatelessWidget {
     final allCorrect = wrong == 0;
     return GameCard(
       color: allCorrect ? AppColors.mintSoft : AppColors.sunSoft,
-      edgeColor: allCorrect ? AppColors.mint : AppColors.sun,
+      borderColor: allCorrect ? AppColors.mint : AppColors.sun,
       child: Row(
         children: [
           Icon(

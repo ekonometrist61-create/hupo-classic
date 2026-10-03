@@ -40,9 +40,9 @@ const MARKERS = {
     const text = r.body.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ");
     console.log(
       route.padEnd(24) +
-        String(r.status).padEnd(6) +
-        String(r.body.length).padEnd(10) +
-        (r.error ? "HATA: " + r.error : hits.length + "/" + marks.length + " isaret")
+      String(r.status).padEnd(6) +
+      String(r.body.length).padEnd(10) +
+      (r.error ? "HATA: " + r.error : hits.length + "/" + marks.length + " isaret")
     );
     if (hits.length < marks.length && r.body) {
       console.log("   metin: " + text.slice(0, 110));

@@ -13,7 +13,6 @@ class PersonalBest {
 
   static const _kPrefix = 'pb_';
   static const _kStreakRecordKey = 'personal_best_streak';
-  static const _kSpeedRecordKey = 'personal_best_fastest_ms';
 
   static Future<PersonalBest> getInstance() async {
     if (_instance != null) return _instance!;

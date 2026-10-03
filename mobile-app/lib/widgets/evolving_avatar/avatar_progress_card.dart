@@ -21,7 +21,7 @@ class AvatarProgressCard extends StatelessWidget {
 
     return GameCard(
       padding: const EdgeInsets.fromLTRB(20, 20, 20, 18),
-      edgeColor: tier.accentColor,
+      borderColor: tier.accentColor,
       child: SizedBox(
         width: double.infinity,
         child: Column(

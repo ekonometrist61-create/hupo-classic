@@ -81,7 +81,7 @@ class TierUpView extends StatelessWidget {
                       ChunkyButton(
                         label: 'Harika!',
                         color: tier.primaryColor,
-                        edgeColor: Color.lerp(tier.primaryColor, Colors.black, 0.35)!,
+                        shadowColor: Color.lerp(tier.primaryColor, Colors.black, 0.35)!,
                         onPressed: () => Navigator.of(context).pop(),
                       ),
                     ],

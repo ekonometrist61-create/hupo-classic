@@ -30,7 +30,8 @@ android {
         // DIKKAT: applicationId magazaya ilk yukleme yapildiktan sonra DEGISTIRILEMEZ.
         // Degistirmek istersen once store/KIMLIK_VE_HESAPLAR.md dosyasini oku.
         applicationId = "com.ogrencihazirlik.ogrenci_hazirlik"
-        minSdk = flutter.minSdkVersion
+        // flutter_secure_storage Android Keystore API'si minSdk 23 gerektirir.
+        minSdk = 23
         targetSdk = flutter.targetSdkVersion
         // Surum numaralari pubspec.yaml'daki "version: 1.0.0+1" satirindan gelir
         // (1.0.0 = versionName, +1 = versionCode; her magaza yuklemesinde +N artmali).

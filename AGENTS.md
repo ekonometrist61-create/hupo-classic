@@ -23,6 +23,7 @@ Karmaşık işleri `todo_list` ile adımlara böl ve ilerlemeyi gerçek zamanlı
   ama tutarlı olsun
 
 ### Birebir korunacak metinler
+
 `kurtarilan/missing-turkish.txt` içindeki 153 metin **kopyalanmalı**, yeniden
 yazılmamalı. Bunlar telefondaki APK'dan çıkarıldı, orijinal ürün metinidir.
 
@@ -30,13 +31,13 @@ yazılmamalı. Bunlar telefondaki APK'dan çıkarıldı, orijinal ürün metinid
 
 ## 2. Silinmez yapılar
 
-| Klasör | Neden |
-|---|---|
-| `mobile-app/lib/` | Uygulama kaynağı |
-| `mobile-app/assets/` | Varlıklar (font, PNG, lottie) |
-| `web-panel/src/` | Panel kaynağı |
-| `supabase/migrations/`, `functions/`, `tests/` | Backend |
-| `kurtarilan/` | Kurtarma kanıtı — **git'e girmemeli** |
+| Klasör                                         | Neden                                 |
+| ---------------------------------------------- | ------------------------------------- |
+| `mobile-app/lib/`                              | Uygulama kaynağı                      |
+| `mobile-app/assets/`                           | Varlıklar (font, PNG, lottie)         |
+| `web-panel/src/`                               | Panel kaynağı                         |
+| `supabase/migrations/`, `functions/`, `tests/` | Backend                               |
+| `kurtarilan/`                                  | Kurtarma kanıtı — **git'e girmemeli** |
 
 ## 3. Silinebilir yapılar
 
@@ -51,6 +52,7 @@ Detaylı gerekçe: `TEMIZLIK_RAPORU.md`
 ## 4. Kod kuralları
 
 ### Flutter
+
 - Riverpod (`flutter_riverpod`) — provider dosyaları `lib/providers/`
 - Hata durumu **her zaman** kullanıcıya gösterilir, yutulmaz:
   ```dart
@@ -66,6 +68,7 @@ Detaylı gerekçe: `TEMIZLIK_RAPORU.md`
 - Metinler `const String` olarak tanımlanır, gömülü değil
 
 ### Supabase / SQL
+
 ```sql
 create or replace function public.ornek_fonksiyon(p_x uuid)
 returns jsonb
@@ -84,12 +87,14 @@ $$;
 revoke execute on function public.ornek_fonksiyon(uuid) from public, anon;
 grant  execute on function public.ornek_fonksiyon(uuid) to authenticated;
 ```
+
 - `SECURITY DEFINER` **her zaman** `set search_path` ile birlikte
 - `service_role` fonksiyonları: `from public, anon, authenticated` revoke edilir
 - Her RPC'in `revoke` / `grant` satırı migration'da **mutlaka** bulunur
 - Yeni tablo → `enable row level security` + açık politika
 
 ### Next.js / web-panel
+
 - `next-intl` kullanılır; `localePrefix: "never"`, birincil dil `tr`
 - Sunucu bileşeninde `getTranslations`, istemci bileşeninde `useTranslations`
 - Yeni metin **her iki** `messages/*.json` dosyasına da eklenir (`tr`, `en`)
@@ -154,13 +159,6 @@ cd web-panel && npm run build
 # SQL
 supabase db reset                      # tüm migration'lar sırayla çalışmalı
 supabase test db                       # supabase/tests/*.sql
-node tools/sql-sozdizim-denetimi.mjs   # yapısal SQL denetimi (0 hata olmalı)
-
-# Kurtarma denetimleri (canlı DB olmadan çalışır; raporlar %TEMP%\firsat\*-raporu.txt)
-# Not: bu makinede betik çalıştırma varsayılan kapalı → -ExecutionPolicy Bypass şart
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/kurtarma-sql-denetim.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/kurtarma-bagimlilik-denetimi.ps1
-powershell -NoProfile -ExecutionPolicy Bypass -File tools/istemci-rpc-denetimi.ps1
 ```
 
 Bir değişiklik yapmadan önce hangi katmanı etkilediğini söyle. Katmanlar arası

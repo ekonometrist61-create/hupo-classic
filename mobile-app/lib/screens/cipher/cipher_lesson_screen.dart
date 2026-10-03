@@ -109,7 +109,8 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
             showCipherBadgesDialog(
               context,
               unvan: '${detail.isim} Ustası',
-              aciklama: 'Artık bu şifre senin! İstersen bir arkadaşına da öğretebilirsin.',
+              aciklama:
+                  'Artık bu şifre senin! İstersen bir arkadaşına da öğretebilirsin.',
             );
           }
         }
@@ -126,7 +127,8 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
       appBar: AppBar(
         title: Text(
           detailAsync.value?.isim ?? 'Şifre Dersi',
-          style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+          style:
+              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -166,12 +168,19 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
             children: [
               Text(
                 'Şifre Kuralı',
-                style: appText(size: 18, weight: FontWeight.w800, color: AppColors.primary),
+                style: appText(
+                    size: 18,
+                    weight: FontWeight.w800,
+                    color: AppColors.primary),
               ),
               const SizedBox(height: 8),
               Text(
                 detail.tanim,
-                style: appText(size: 15, weight: FontWeight.w600, color: AppColors.ink, height: 1.4),
+                style: appText(
+                    size: 15,
+                    weight: FontWeight.w600,
+                    color: AppColors.ink,
+                    height: 1.4),
               ),
               const SizedBox(height: 12),
               Container(
@@ -182,7 +191,10 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                 ),
                 child: Text(
                   'Formül: ${detail.formul}',
-                  style: appText(size: 14, weight: FontWeight.w700, color: AppColors.primaryDark),
+                  style: appText(
+                      size: 14,
+                      weight: FontWeight.w700,
+                      color: AppColors.primaryDark),
                 ),
               ),
             ],
@@ -196,12 +208,16 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
               children: [
                 Text(
                   'Birlikte çözelim: adım adım',
-                  style: appText(size: 16, weight: FontWeight.w800, color: AppColors.mintDark),
+                  style: appText(
+                      size: 16,
+                      weight: FontWeight.w800,
+                      color: AppColors.mintDark),
                 ),
                 const SizedBox(height: 6),
                 Text(
                   detail.ornek.soru,
-                  style: appText(size: 15, weight: FontWeight.w700, color: AppColors.ink),
+                  style: appText(
+                      size: 15, weight: FontWeight.w700, color: AppColors.ink),
                 ),
                 const SizedBox(height: 10),
                 ...detail.ornek.adimlar.map((s) => Padding(
@@ -209,9 +225,11 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Icon(Icons.arrow_right_rounded, color: AppColors.mint, size: 20),
+                          const Icon(Icons.arrow_right_rounded,
+                              color: AppColors.mint, size: 20),
                           Expanded(
-                            child: Text(s, style: appText(size: 14, color: AppColors.ink)),
+                            child: Text(s,
+                                style: appText(size: 14, color: AppColors.ink)),
                           ),
                         ],
                       ),
@@ -249,12 +267,14 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
           children: [
             Text(
               isClosed ? 'Kapalı Test' : 'Açık Alıştırma',
-              style: appText(size: 16, weight: FontWeight.w800, color: AppColors.primary),
+              style: appText(
+                  size: 16, weight: FontWeight.w800, color: AppColors.primary),
             ),
             const Spacer(),
             Text(
               '${_currentQuestionIndex + 1} / $total',
-              style: appText(size: 14, weight: FontWeight.w700, color: AppColors.muted),
+              style: appText(
+                  size: 14, weight: FontWeight.w700, color: AppColors.muted),
             ),
           ],
         ),
@@ -265,14 +285,16 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
               Text(
                 questionText,
                 textAlign: TextAlign.center,
-                style: appText(size: 28, weight: FontWeight.w800, color: AppColors.ink),
+                style: appText(
+                    size: 28, weight: FontWeight.w800, color: AppColors.ink),
               ),
               const SizedBox(height: 20),
               TextField(
                 controller: _answerController,
                 keyboardType: TextInputType.number,
                 textAlign: TextAlign.center,
-                style: appText(size: 22, weight: FontWeight.w800, color: AppColors.ink),
+                style: appText(
+                    size: 22, weight: FontWeight.w800, color: AppColors.ink),
                 decoration: InputDecoration(
                   hintText: 'Cevabın',
                   hintStyle: appText(size: 18, color: AppColors.muted),
@@ -280,7 +302,8 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                   fillColor: AppColors.surface,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(16),
-                    borderSide: const BorderSide(color: AppColors.line, width: 2),
+                    borderSide:
+                        const BorderSide(color: AppColors.line, width: 2),
                   ),
                 ),
                 onSubmitted: (_) {
@@ -295,7 +318,8 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
         const SizedBox(height: 16),
         if (_lastResult != null)
           GameCard(
-            color: _lastResult!.dogru ? AppColors.mintSoft : AppColors.coralSoft,
+            color:
+                _lastResult!.dogru ? AppColors.mintSoft : AppColors.coralSoft,
             borderColor: _lastResult!.dogru ? AppColors.mint : AppColors.coral,
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -303,29 +327,41 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                 Row(
                   children: [
                     Icon(
-                      _lastResult!.dogru ? Icons.check_circle_rounded : Icons.cancel_rounded,
-                      color: _lastResult!.dogru ? AppColors.mintDark : AppColors.coralDark,
+                      _lastResult!.dogru
+                          ? Icons.check_circle_rounded
+                          : Icons.cancel_rounded,
+                      color: _lastResult!.dogru
+                          ? AppColors.mintDark
+                          : AppColors.coralDark,
                     ),
                     const SizedBox(width: 8),
                     Text(
-                      _lastResult!.dogru ? 'Harikasın, doğru!' : 'Olmadı, hadi doğrusuna bakalım',
+                      _lastResult!.dogru
+                          ? 'Harikasın, doğru!'
+                          : 'Olmadı, hadi doğrusuna bakalım',
                       style: appText(
                         size: 15,
                         weight: FontWeight.w800,
-                        color: _lastResult!.dogru ? AppColors.mintDark : AppColors.coralDark,
+                        color: _lastResult!.dogru
+                            ? AppColors.mintDark
+                            : AppColors.coralDark,
                       ),
                     ),
                   ],
                 ),
                 if (_lastResult!.cozum.isNotEmpty) ...[
                   const SizedBox(height: 8),
-                  ..._lastResult!.cozum.map((c) => Text(c, style: appText(size: 13, color: AppColors.ink))),
+                  ..._lastResult!.cozum.map((c) =>
+                      Text(c, style: appText(size: 13, color: AppColors.ink))),
                 ],
                 if (_lastResult!.sifreHatirlatma != null) ...[
                   const SizedBox(height: 8),
                   Text(
                     'Şifre: ${_lastResult!.sifreHatirlatma!.tanim}',
-                    style: appText(size: 13, weight: FontWeight.w700, color: AppColors.coralDark),
+                    style: appText(
+                        size: 13,
+                        weight: FontWeight.w700,
+                        color: AppColors.coralDark),
                   ),
                 ],
               ],
@@ -338,11 +374,14 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
             icon: Icons.check_rounded,
             color: AppColors.primary,
             shadowColor: AppColors.primaryDark,
-            onPressed: _isSubmitting ? null : () => _submitAnswer(detail, isClosed),
+            onPressed:
+                _isSubmitting ? null : () => _submitAnswer(detail, isClosed),
           )
         else
           ChunkyButton(
-            label: _currentQuestionIndex < total - 1 ? 'Sonraki Soru' : 'Aşamayı Tamamla',
+            label: _currentQuestionIndex < total - 1
+                ? 'Sonraki Soru'
+                : 'Aşamayı Tamamla',
             icon: Icons.arrow_forward_rounded,
             color: AppColors.mint,
             shadowColor: AppColors.mintDark,
@@ -360,7 +399,8 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
         const SizedBox(height: 16),
         Text(
           'Tebrikler!',
-          style: appText(size: 24, weight: FontWeight.w800, color: AppColors.ink),
+          style:
+              appText(size: 24, weight: FontWeight.w800, color: AppColors.ink),
         ),
         const SizedBox(height: 8),
         Text(
@@ -381,7 +421,8 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
               AppHaptics.celebration();
               ScaffoldMessenger.of(context).showSnackBar(
                 SnackBar(
-                  content: Text('Harikasın! Arkadaşına öğrettiğin için teşekkürler.',
+                  content: Text(
+                      'Harikasın! Arkadaşına öğrettiğin için teşekkürler.',
                       style: appText(size: 14, color: Colors.white)),
                   backgroundColor: AppColors.mintDark,
                 ),

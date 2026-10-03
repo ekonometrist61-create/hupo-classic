@@ -31,7 +31,8 @@ class _BookmarkButtonState extends ConsumerState<BookmarkButton> {
     AppHaptics.light();
 
     try {
-      final saved = await ref.read(bookmarksProvider.notifier).toggle(widget.questionId);
+      final saved =
+          await ref.read(bookmarksProvider.notifier).toggle(widget.questionId);
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
@@ -65,7 +66,8 @@ class _BookmarkButtonState extends ConsumerState<BookmarkButton> {
 
   @override
   Widget build(BuildContext context) {
-    final isBookmarked = ref.watch(bookmarksProvider).contains(widget.questionId);
+    final isBookmarked =
+        ref.watch(bookmarksProvider).contains(widget.questionId);
 
     return IconButton(
       iconSize: widget.size,
@@ -77,7 +79,9 @@ class _BookmarkButtonState extends ConsumerState<BookmarkButton> {
               child: const CircularProgressIndicator(strokeWidth: 2),
             )
           : Icon(
-              isBookmarked ? Icons.bookmark_rounded : Icons.bookmark_border_rounded,
+              isBookmarked
+                  ? Icons.bookmark_rounded
+                  : Icons.bookmark_border_rounded,
               color: isBookmarked ? AppColors.sunDark : AppColors.muted,
             ),
       tooltip: isBookmarked ? 'Kaydı kaldır' : 'Kaydet',

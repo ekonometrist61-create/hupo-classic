@@ -23,7 +23,8 @@ class SavedQuestionsScreen extends ConsumerWidget {
       appBar: AppBar(
         title: Text(
           'Kayıtlı Sorular',
-          style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+          style:
+              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -40,11 +41,15 @@ class SavedQuestionsScreen extends ConsumerWidget {
                     child: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Icon(Icons.bookmark_border_rounded, size: 64, color: AppColors.muted),
+                        const Icon(Icons.bookmark_border_rounded,
+                            size: 64, color: AppColors.muted),
                         const SizedBox(height: 16),
                         Text(
                           'Kayıtlı sorun yok',
-                          style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+                          style: appText(
+                              size: 18,
+                              weight: FontWeight.w800,
+                              color: AppColors.ink),
                         ),
                         const SizedBox(height: 8),
                         Text(
@@ -102,13 +107,17 @@ class _SavedQuestionsTile extends StatelessWidget {
                 ),
                 child: Text(
                   item.question.ders,
-                  style: appText(size: 12, weight: FontWeight.w700, color: AppColors.primaryDark),
+                  style: appText(
+                      size: 12,
+                      weight: FontWeight.w700,
+                      color: AppColors.primaryDark),
                 ),
               ),
               const SizedBox(width: 8),
               Text(
                 item.question.konu,
-                style: appText(size: 13, weight: FontWeight.w600, color: AppColors.muted),
+                style: appText(
+                    size: 13, weight: FontWeight.w600, color: AppColors.muted),
               ),
               const Spacer(),
               BookmarkButton(questionId: item.questionId),
@@ -117,7 +126,8 @@ class _SavedQuestionsTile extends StatelessWidget {
           const SizedBox(height: 8),
           Text(
             item.question.text,
-            style: appText(size: 15, weight: FontWeight.w600, color: AppColors.ink),
+            style: appText(
+                size: 15, weight: FontWeight.w600, color: AppColors.ink),
           ),
         ],
       ),

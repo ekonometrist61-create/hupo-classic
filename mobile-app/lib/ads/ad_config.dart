@@ -5,11 +5,11 @@
 
 import 'dart:io';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/app_config.dart';
 
 /// Test banner reklam birimi kimlikleri (Google AdMob resmi test kimlikleri).
 class AdConfig {
-  static const String testBannerAndroid = 'ca-app-pub-3940256099942544/6300978111';
+  static const String testBannerAndroid =
+      'ca-app-pub-3940256099942544/6300978111';
   static const String testBannerIos = 'ca-app-pub-3940256099942544/2934735716';
 
   /// Platforma göre geçerli test banner kimliğini döner.

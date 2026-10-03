@@ -147,7 +147,8 @@ class CipherAnswerResult {
           for (final c in (map['cozum'] as List? ?? const [])) c.toString(),
         ],
         sifreHatirlatma: map['sifre_hatirlatma'] is Map<String, dynamic>
-            ? CipherReminder.fromMap(map['sifre_hatirlatma'] as Map<String, dynamic>)
+            ? CipherReminder.fromMap(
+                map['sifre_hatirlatma'] as Map<String, dynamic>)
             : null,
         ilkDeneme: map['ilk_deneme'] as bool? ?? true,
         yildizKazanildi: map['yildiz_kazanildi'] as bool? ?? false,
@@ -268,7 +269,8 @@ class MathCipherDetail {
   final List<CipherTestItem> test;
   final CipherStageProgress progress;
 
-  factory MathCipherDetail.fromMap(Map<String, dynamic> map) => MathCipherDetail(
+  factory MathCipherDetail.fromMap(Map<String, dynamic> map) =>
+      MathCipherDetail(
         id: map['id'] as String,
         sira: (map['sira'] as num).toInt(),
         anahtar: map['anahtar'] as String,

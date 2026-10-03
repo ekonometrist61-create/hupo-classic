@@ -10,7 +10,7 @@ class ChunkyButton extends StatefulWidget {
     required this.label,
     required this.onPressed,
     this.color = AppColors.primary,
-    this.edgeColor = AppColors.primaryDark,
+    this.shadowColor = AppColors.primaryDark,
     this.textColor = Colors.white,
     this.icon,
     this.loading = false,
@@ -28,7 +28,7 @@ class ChunkyButton extends StatefulWidget {
         label: label,
         onPressed: onPressed,
         color: AppColors.mint,
-        edgeColor: AppColors.mintDark,
+        shadowColor: AppColors.mintDark,
       );
 
   factory ChunkyButton.danger({
@@ -41,7 +41,7 @@ class ChunkyButton extends StatefulWidget {
         label: label,
         onPressed: onPressed,
         color: AppColors.coral,
-        edgeColor: AppColors.coralDark,
+        shadowColor: AppColors.coralDark,
       );
 
   /// Beyaz zemin üzerinde, renkli yazılı ikincil düğme.
@@ -59,14 +59,14 @@ class ChunkyButton extends StatefulWidget {
         icon: icon,
         expanded: expanded,
         color: Colors.white,
-        edgeColor: AppColors.lineDark,
+        shadowColor: AppColors.lineDark,
         textColor: AppColors.primary,
       );
 
   final String label;
   final VoidCallback? onPressed;
   final Color color;
-  final Color edgeColor;
+  final Color shadowColor;
   final Color textColor;
   final IconData? icon;
   final bool loading;
@@ -86,7 +86,7 @@ class _ChunkyButtonState extends State<ChunkyButton> {
   @override
   Widget build(BuildContext context) {
     final color = _enabled ? widget.color : AppColors.line;
-    final edge = _enabled ? widget.edgeColor : AppColors.lineDark;
+    final edge = _enabled ? widget.shadowColor : AppColors.lineDark;
     final textColor = _enabled ? widget.textColor : AppColors.muted;
 
     final content = Row(

@@ -4,7 +4,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import '../models/daily_challenge_models.dart';
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
 import 'ui/game_card.dart';
@@ -65,14 +64,19 @@ class DailyChallengeCard extends ConsumerWidget {
                         ),
                         const Spacer(),
                         Container(
-                          padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 3),
+                          padding: const EdgeInsets.symmetric(
+                              horizontal: 8, vertical: 3),
                           decoration: BoxDecoration(
-                            color: isDone ? AppColors.mintDark : AppColors.sunDark,
+                            color:
+                                isDone ? AppColors.mintDark : AppColors.sunDark,
                             borderRadius: BorderRadius.circular(12),
                           ),
                           child: Text(
                             '+25 XP',
-                            style: appText(size: 12, weight: FontWeight.w800, color: Colors.white),
+                            style: appText(
+                                size: 12,
+                                weight: FontWeight.w800,
+                                color: Colors.white),
                           ),
                         ),
                       ],
@@ -94,7 +98,8 @@ class DailyChallengeCard extends ConsumerWidget {
                 ),
               ),
               const SizedBox(width: 8),
-              const Icon(Icons.arrow_forward_ios_rounded, size: 16, color: AppColors.muted),
+              const Icon(Icons.arrow_forward_ios_rounded,
+                  size: 16, color: AppColors.muted),
             ],
           ),
         );

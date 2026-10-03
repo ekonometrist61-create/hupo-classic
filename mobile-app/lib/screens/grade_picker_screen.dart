@@ -46,7 +46,9 @@ class _GradePickerScreenState extends ConsumerState<GradePickerScreen> {
     } catch (e) {
       if (mounted) {
         final err = e.toString();
-        final isLimit = err.contains('22023') || err.contains('30 gün') || err.contains('zaten değiştirdin');
+        final isLimit = err.contains('22023') ||
+            err.contains('30 gün') ||
+            err.contains('zaten değiştirdin');
         ScaffoldMessenger.of(context).showSnackBar(
           SnackBar(
             content: Text(
@@ -75,7 +77,8 @@ class _GradePickerScreenState extends ConsumerState<GradePickerScreen> {
       appBar: AppBar(
         title: Text(
           'Sınıfını Seç',
-          style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+          style:
+              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -94,7 +97,10 @@ class _GradePickerScreenState extends ConsumerState<GradePickerScreen> {
                   Text(
                     'Sorularını senin sınıfına göre hazırlayabilmemiz için seç.',
                     textAlign: TextAlign.center,
-                    style: appText(size: 15, weight: FontWeight.w500, color: AppColors.muted),
+                    style: appText(
+                        size: 15,
+                        weight: FontWeight.w500,
+                        color: AppColors.muted),
                   ),
                   const SizedBox(height: 24),
                   Expanded(
@@ -110,7 +116,8 @@ class _GradePickerScreenState extends ConsumerState<GradePickerScreen> {
                     icon: Icons.check_circle_rounded,
                     color: AppColors.primary,
                     shadowColor: AppColors.primaryDark,
-                    onPressed: _selectedGrade == null || _isSaving ? null : _saveGrade,
+                    onPressed:
+                        _selectedGrade == null || _isSaving ? null : _saveGrade,
                   ),
                 ],
               );
@@ -233,7 +240,8 @@ class _EmptyGradesState extends StatelessWidget {
             Text(
               'Sınıf seçenekleri yakında burada!',
               textAlign: TextAlign.center,
-              style: appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+              style: appText(
+                  size: 18, weight: FontWeight.w800, color: AppColors.ink),
             ),
             const SizedBox(height: 8),
             Text(

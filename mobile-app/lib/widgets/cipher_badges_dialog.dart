@@ -33,7 +33,9 @@ class CipherBadgesView extends StatelessWidget {
             ),
           ),
           child: Icon(
-            kazanildi ? Icons.military_tech_rounded : Icons.lock_outline_rounded,
+            kazanildi
+                ? Icons.military_tech_rounded
+                : Icons.lock_outline_rounded,
             size: 44,
             color: kazanildi ? AppColors.sunDark : AppColors.primaryDark,
           ),
@@ -50,9 +52,10 @@ class CipherBadgesView extends StatelessWidget {
         ),
         const SizedBox(height: 8),
         Text(
-          aciklama ?? (kazanildi
-              ? 'Tebrikler! Bu şifreyi tamamladın ve unvanı kazandın.'
-              : 'Şifrenin kapalı testini çözünce bu unvan senin olacak!'),
+          aciklama ??
+              (kazanildi
+                  ? 'Tebrikler! Bu şifreyi tamamladın ve unvanı kazandın.'
+                  : 'Şifrenin kapalı testini çözünce bu unvan senin olacak!'),
           textAlign: TextAlign.center,
           style: appText(
             size: 14,

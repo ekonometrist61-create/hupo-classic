@@ -29,7 +29,7 @@ class ShieldEarnedBanner extends StatelessWidget {
       child: ExcludeSemantics(
         child: GameCard(
           color: AppColors.primarySoft,
-          edgeColor: AppColors.primary,
+          borderColor: AppColors.primary,
           padding: EdgeInsets.all(compact ? 12 : 18),
           child: Row(
             children: [

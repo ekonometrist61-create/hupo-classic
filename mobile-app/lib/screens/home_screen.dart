@@ -24,9 +24,7 @@ import 'profile_screen.dart';
 import 'quiz_screen.dart';
 import 'cipher/cipher_list_screen.dart';
 import 'daily_challenge_screen.dart';
-import 'grade_picker_screen.dart';
 import 'review_screen.dart';
-import 'saved_questions_screen.dart';
 import '../widgets/daily_challenge_card.dart';
 
 class HomeScreen extends ConsumerWidget {
@@ -369,7 +367,7 @@ class _ReviewCard extends ConsumerWidget {
     return GameCard(
       onTap: onStart,
       color: active ? AppColors.sunSoft : AppColors.surface,
-      edgeColor: active ? AppColors.sun : AppColors.line,
+      borderColor: active ? AppColors.sun : AppColors.line,
       child: Row(
         children: [
           Container(
@@ -418,7 +416,7 @@ class _ConsentNote extends StatelessWidget {
   Widget build(BuildContext context) {
     return GameCard(
       color: AppColors.background,
-      edgeColor: AppColors.lineDark,
+      borderColor: AppColors.lineDark,
       padding: const EdgeInsets.all(14),
       child: Row(
         children: [
@@ -655,7 +653,7 @@ class _StreakNudge extends ConsumerWidget {
       padding: const EdgeInsets.only(bottom: 12),
       child: GameCard(
         color: AppColors.primarySoft,
-        edgeColor: AppColors.primary,
+        borderColor: AppColors.primary,
         padding: const EdgeInsets.all(12),
         child: Row(
           children: [

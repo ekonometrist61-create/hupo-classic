@@ -9,7 +9,7 @@ class GameCard extends StatefulWidget {
     required this.child,
     this.onTap,
     this.color = AppColors.surface,
-    this.edgeColor = AppColors.line,
+    this.borderColor = AppColors.line,
     this.padding = const EdgeInsets.all(18),
     this.radius = 24,
   });
@@ -17,7 +17,7 @@ class GameCard extends StatefulWidget {
   final Widget child;
   final VoidCallback? onTap;
   final Color color;
-  final Color edgeColor;
+  final Color borderColor;
   final EdgeInsetsGeometry padding;
   final double radius;
 
@@ -44,10 +44,10 @@ class _GameCardState extends State<GameCard> {
         decoration: BoxDecoration(
           color: widget.color,
           borderRadius: BorderRadius.circular(widget.radius),
-          border: Border.all(color: widget.edgeColor, width: 2),
+          border: Border.all(color: widget.borderColor, width: 2),
           boxShadow: _pressed
               ? null
-              : [BoxShadow(color: widget.edgeColor, offset: const Offset(0, _depth))],
+              : [BoxShadow(color: widget.borderColor, offset: const Offset(0, _depth))],
         ),
         child: widget.child,
       ),
