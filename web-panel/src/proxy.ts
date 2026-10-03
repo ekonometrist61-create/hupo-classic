@@ -14,12 +14,6 @@ import { updateSession } from "./utils/supabase/proxy";
  * (veli mi, admin mi) sunucu tarafinda `useCurrentRole` ile yapilir; bu katman
  * yalnizca oturumun varligini dogrular.
  */
-const PUBLIC_PREFIXES = ["/signin", "/signup", "/error-404"];
-
-function isPublic(pathname: string): boolean {
-  return PUBLIC_PREFIXES.some((p) => pathname.startsWith(p));
-}
-
 export default async function proxy(request: NextRequest) {
   const intlResponse = createMiddleware(routing)(request);
   // next-intl, localePrefix="never" ile /signin isteğini içerde /tr/signin

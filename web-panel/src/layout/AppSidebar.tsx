@@ -9,16 +9,10 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { useSidebar } from "../context/SidebarContext";
 import {
   ChevronDownIcon,
-  DocsIcon,
-  DollarLineIcon,
-  FolderIcon,
   GridIcon,
-  GroupIcon,
   HorizontaLDots,
-  ListIcon,
   TableIcon,
   UserCircleIcon,
-  UserIcon,
 } from "../icons/index";
 
 type NavItem = {

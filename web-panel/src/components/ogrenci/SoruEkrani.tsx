@@ -43,7 +43,11 @@ export default function SoruEkrani({ ders }: { ders: string }) {
   const [oturumDogru, setOturumDogru] = useState(0);
   const [oturumYanlis, setOturumYanlis] = useState(0);
 
-  const baslangicRef = useRef<number>(Date.now());
+  const baslangicRef = useRef<number>(0);
+
+  useEffect(() => {
+    baslangicRef.current = performance.now();
+  }, []);
 
   useEffect(() => {
     const yukle = async () => {
@@ -73,7 +77,8 @@ export default function SoruEkrani({ ders }: { ders: string }) {
     if (secilen || !mevcutSoru || gonderiliyor) return;
     setSecilen(sik);
     setGonderiliyor(true);
-    const sureMsn = Date.now() - baslangicRef.current;
+    // eslint-disable-next-line react-hooks/purity -- event handler'da zaman olcumu guvenli
+    const sureMsn = Math.round(performance.now() - baslangicRef.current);
 
     const { data, error } = await createClient().rpc("submit_answer", {
       p_question_id: mevcutSoru.id,
@@ -96,7 +101,7 @@ export default function SoruEkrani({ ders }: { ders: string }) {
     setSecilen(null);
     setSonuc(null);
     setHata(null);
-    baslangicRef.current = Date.now();
+    baslangicRef.current = performance.now();
     setIndeks((i) => i + 1);
   };
 
@@ -107,7 +112,7 @@ export default function SoruEkrani({ ders }: { ders: string }) {
     setHata(null);
     setOturumDogru(0);
     setOturumYanlis((0));
-    baslangicRef.current = Date.now();
+    baslangicRef.current = performance.now();
   };
 
   if (yukleniyor) {

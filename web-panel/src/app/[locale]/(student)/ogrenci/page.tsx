@@ -66,9 +66,6 @@ export default async function OgrenciAnaSayfa({
   const xp = istatistik?.xp ?? 0;
   const level = istatistik?.level ?? 1;
   const streak = istatistik?.streak_count ?? 0;
-  const xpSonraki = level * 100;
-  const xpYuzde = Math.min(100, Math.round((xp % 100) / xpSonraki * 100 * level));
-
   return (
     <div className="space-y-8">
       {/* Karşılama + istatistik */}
