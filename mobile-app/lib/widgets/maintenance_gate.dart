@@ -17,9 +17,9 @@ import '../theme/app_theme.dart';
 import 'ui/chunky_button.dart';
 import 'ui/responsive_page.dart';
 
-// TODO(kurtarma): Mağaza bağlantılarını yayına geçmeden önce ekle.
+// TODO(yayin): App Store'a yüklendikten sonra gerçek iOS uygulama ID'sini gir.
 const _kAndroidStoreUrl =
-    'https://play.google.com/store/apps/details?id=com.projeyazilim.hupo';
+    'https://play.google.com/store/apps/details?id=com.ogrencihazirlik.ogrenci_hazirlik';
 const _kIosStoreUrl = 'https://apps.apple.com/app/id000000000';
 
 /// "1.2.3" formatındaki iki sürümü karşılaştırır.
