@@ -47,7 +47,13 @@ export default function SignInForm() {
       .maybeSingle();
 
     setLoading(false);
-    router.replace(profile?.role === "admin" ? "/yonetim" : "/veli-paneli");
+    const hedef =
+      profile?.role === "admin" || profile?.role === "ogretmen"
+        ? "/yonetim"
+        : profile?.role === "ogrenci"
+          ? "/ogrenci"
+          : "/veli-paneli";
+    router.replace(hedef);
   }
 
   return (
