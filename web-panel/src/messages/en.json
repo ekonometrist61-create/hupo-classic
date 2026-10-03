@@ -143,6 +143,8 @@
       "odemeler": "Payments",
       "planlar": "Plans",
       "siniflar": "Classrooms",
+      "kuponlar": "Coupons",
+      "bildirimler": "Notifications",
       "veliPaneli": "Parent Panel",
       "ogretmenSiniflari": "My Classrooms"
     },
@@ -1285,6 +1287,76 @@
         "save": "Save",
         "errAd": "Class name is required.",
         "errSeviye": "Level must be between 1 and 12."
+      }
+    }
+  },
+  "veliPaneli": {
+    "title": "Parent Dashboard",
+    "childLabel": "Your child",
+    "loading": "Loading...",
+    "error": "Could not load data, please refresh the page.",
+    "notParent": "This page is only accessible to parents.",
+    "noChildren": {
+      "title": "No students linked yet",
+      "text": "Your child will appear here once their account is added to the system."
+    },
+    "stats": {
+      "xp": "XP",
+      "level": "Level",
+      "streak": "Daily Streak",
+      "streakUnit": "days",
+      "weeklyTime": "This Week",
+      "minutes": "minutes",
+      "questions": "Questions"
+    },
+    "review": {
+      "title": "Topics to Review",
+      "desc": "Topics where your child made mistakes and review is suggested.",
+      "empty": "Great! No topics need review yet.",
+      "topic": "Topic",
+      "subject": "Subject",
+      "wrong": "Wrong",
+      "due": "Due",
+      "success": "Success"
+    },
+    "consent": {
+      "title": "Data Processing Consent",
+      "desc": "You need to give consent for your child's learning data to be shown in this dashboard.",
+      "notice": "Your child's solution time, correct/wrong statistics and study habits are processed solely to be shown to you. We do not share this data with third parties.",
+      "loading": "Loading consent status...",
+      "error": "Could not retrieve consent status.",
+      "give": "Give Consent",
+      "withdraw": "Withdraw Consent",
+      "saveError": "Could not save, please try again.",
+      "status": {
+        "given": "Consented",
+        "withdrawn": "Withdrawn",
+        "none": "Awaiting Consent"
+      }
+    },
+    "abonelik": {
+      "title": "Subscription Status",
+      "noSub": "You have no active subscription.",
+      "plan": "Plan",
+      "baslangic": "Start",
+      "bitis": "Expires",
+      "status": {
+        "aktif": "Active",
+        "iptal": "Cancelled",
+        "suresi_doldu": "Expired",
+        "trial": "Trial"
+      }
+    },
+    "odeme": {
+      "title": "Payment History",
+      "empty": "No payment records yet.",
+      "tarih": "Date",
+      "tutar": "Amount",
+      "durum": {
+        "bekliyor": "Pending",
+        "basarili": "Successful",
+        "basarisiz": "Failed",
+        "iade": "Refunded"
       }
     }
   }

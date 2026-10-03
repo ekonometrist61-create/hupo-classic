@@ -4,7 +4,9 @@ import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
+import AbonelikKarti from "./AbonelikKarti";
 import ConsentCard from "./ConsentCard";
+import OdemeGecmisi from "./OdemeGecmisi";
 import ReviewTopicsList from "./ReviewTopicsList";
 import StatsCards from "./StatsCards";
 import SubjectSuccessChart from "./SubjectSuccessChart";
@@ -81,6 +83,11 @@ export default function ParentDashboard({ students }: ParentDashboardProps) {
           </span>
         </p>
       )}
+
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
+        <AbonelikKarti />
+        <OdemeGecmisi />
+      </div>
 
       {selectedId && <ConsentCard studentId={selectedId} />}
 

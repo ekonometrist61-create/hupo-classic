@@ -45,6 +45,8 @@ const navItems: NavItem[] = [
       { key: "odemeler", path: "/yonetim/odemeler" },
       { key: "planlar", path: "/yonetim/planlar" },
       { key: "siniflar", path: "/yonetim/siniflar" },
+      { key: "kuponlar", path: "/yonetim/kuponlar" },
+      { key: "bildirimler", path: "/yonetim/bildirimler" },
     ],
   },
   {

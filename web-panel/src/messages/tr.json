@@ -87,6 +87,8 @@
       "odemeler": "Ödemeler",
       "planlar": "Planlar",
       "siniflar": "Sınıflar",
+      "kuponlar": "Kuponlar",
+      "bildirimler": "Bildirimler",
       "veliPaneli": "Veli Paneli",
       "ogretmenSiniflari": "Sınıflarım",
       "formLayout": "Form Layout",
@@ -1285,6 +1287,76 @@
         "save": "Kaydet",
         "errAd": "Sınıf adı zorunludur.",
         "errSeviye": "Seviye 1-12 arasında olmalıdır."
+      }
+    }
+  },
+  "veliPaneli": {
+    "title": "Veli Paneli",
+    "childLabel": "Çocuğun",
+    "loading": "Yükleniyor...",
+    "error": "Veriler yüklenemedi, lütfen sayfayı yenile.",
+    "notParent": "Bu sayfa yalnızca velilere açıktır.",
+    "noChildren": {
+      "title": "Henüz bağlı öğrenci yok",
+      "text": "Çocuğunun hesabı sisteme eklendikten sonra burada görünecek."
+    },
+    "stats": {
+      "xp": "XP",
+      "level": "Seviye",
+      "streak": "Günlük Seri",
+      "streakUnit": "gün",
+      "weeklyTime": "Bu Hafta",
+      "minutes": "dakika",
+      "questions": "Soru"
+    },
+    "review": {
+      "title": "Tekrar Edilmesi Gereken Konular",
+      "desc": "Çocuğunun hata yaptığı ve tekrar önerileri olan konular.",
+      "empty": "Harika! Henüz tekrar gereken konu yok.",
+      "topic": "Konu",
+      "subject": "Ders",
+      "wrong": "Hatalı",
+      "due": "Bekleyen",
+      "success": "Başarı"
+    },
+    "consent": {
+      "title": "Veri İşleme Onayı",
+      "desc": "Çocuğunuzun öğrenme verilerinin bu panelde görüntülenebilmesi için onay vermeniz gerekmektedir.",
+      "notice": "Çocuğunuzun çözüm süresi, doğru/yanlış istatistikleri ve çalışma alışkanlıkları yalnızca size gösterilmek üzere işlenmektedir. Bu veriyi üçüncü taraflarla paylaşmıyoruz.",
+      "loading": "Onay durumu yükleniyor...",
+      "error": "Onay durumu alınamadı.",
+      "give": "Onay Ver",
+      "withdraw": "Onayı Geri Çek",
+      "saveError": "Kaydedilemedi, tekrar dene.",
+      "status": {
+        "given": "Onaylandı",
+        "withdrawn": "Geri Çekildi",
+        "none": "Onay Bekleniyor"
+      }
+    },
+    "abonelik": {
+      "title": "Abonelik Durumu",
+      "noSub": "Aktif aboneliğiniz bulunmuyor.",
+      "plan": "Plan",
+      "baslangic": "Başlangıç",
+      "bitis": "Bitiş",
+      "status": {
+        "aktif": "Aktif",
+        "iptal": "İptal Edildi",
+        "suresi_doldu": "Süresi Doldu",
+        "trial": "Deneme"
+      }
+    },
+    "odeme": {
+      "title": "Ödeme Geçmişi",
+      "empty": "Henüz ödeme kaydı yok.",
+      "tarih": "Tarih",
+      "tutar": "Tutar",
+      "durum": {
+        "bekliyor": "Bekliyor",
+        "basarili": "Başarılı",
+        "basarisiz": "Başarısız",
+        "iade": "İade"
       }
     }
   }
