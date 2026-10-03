@@ -33,6 +33,9 @@ key.properties
 *.keystore
 *.pem
 
+# --- Supabase CLI geçici dosyaları ---
+supabase/.temp/
+
 # --- Editör / işletim sistemi ---
 .idea/
 .DS_Store
