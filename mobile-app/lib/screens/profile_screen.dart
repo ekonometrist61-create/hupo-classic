@@ -6,6 +6,7 @@ import '../models/models.dart';
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
 import '../widgets/badges_section.dart';
+import 'collection_screen.dart';
 import 'settings_screen.dart';
 import 'grade_picker_screen.dart';
 import 'saved_questions_screen.dart';
@@ -28,6 +29,7 @@ class ProfileScreen extends ConsumerWidget {
     ref.invalidate(leagueProvider);
     ref.invalidate(overviewProvider);
     ref.invalidate(membershipProvider);
+    ref.invalidate(myCharactersProvider);
     await Future.wait([
       ref.read(statsProvider.future),
       ref.read(badgesProvider.future),
@@ -143,6 +145,13 @@ class ProfileScreen extends ConsumerWidget {
                     ),
                     data: (list) => BadgesSection(badges: list),
                   ),
+                  const SizedBox(height: 16),
+                  _KoleksiyonKarti(
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(
+                          builder: (_) => const CollectionScreen()),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -186,6 +195,61 @@ class _Section<T> extends StatelessWidget {
         ],
       ),
       data: builder,
+    );
+  }
+}
+
+// ── Koleksiyon önizleme kartı ─────────────────────────────────────────────────
+
+class _KoleksiyonKarti extends ConsumerWidget {
+  const _KoleksiyonKarti({required this.onTap});
+
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final asyncKarakterler = ref.watch(myCharactersProvider);
+    final kazanilan =
+        asyncKarakterler.valueOrNull?.where((k) => k.kazanildi).length ?? 0;
+    final toplam = asyncKarakterler.valueOrNull?.length ?? 40;
+
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(16),
+        decoration: BoxDecoration(
+          color: AppColors.primarySoft,
+          borderRadius: BorderRadius.circular(20),
+          border: Border.all(color: AppColors.primary.withValues(alpha: 0.3)),
+        ),
+        child: Row(
+          children: [
+            const Text('🏆', style: TextStyle(fontSize: 32)),
+            const SizedBox(width: 14),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Karakterlerim',
+                    style: appText(
+                        size: 16,
+                        weight: FontWeight.w800,
+                        color: AppColors.ink),
+                  ),
+                  const SizedBox(height: 2),
+                  Text(
+                    '$kazanilan / $toplam karakter kazanıldı',
+                    style: appText(size: 13, color: AppColors.muted),
+                  ),
+                ],
+              ),
+            ),
+            const Icon(Icons.chevron_right_rounded,
+                color: AppColors.primary, size: 24),
+          ],
+        ),
+      ),
     );
   }
 }

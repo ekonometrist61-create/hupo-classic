@@ -3,6 +3,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../content/privacy_notice.dart';
 import '../models/app_config.dart';
+import '../models/character_models.dart';
 import '../models/cipher_models.dart';
 import '../models/daily_challenge_models.dart';
 import '../models/league_models.dart';
@@ -139,3 +140,11 @@ final supportedGradesProvider = FutureProvider.autoDispose<List<int>>((ref) asyn
 });
 
 final gradeGateBypassedProvider = StateProvider<bool>((ref) => false);
+
+/// Öğrencinin tüm 40 karakteri (kazanılmış + kilitli).
+final myCharactersProvider =
+    FutureProvider.autoDispose<List<CharacterCard>>((ref) async {
+  final repo = ref.watch(quizRepositoryProvider);
+  final list = await repo.fetchMyCharacters();
+  return [for (final m in list) CharacterCard.fromMap(m)];
+});
