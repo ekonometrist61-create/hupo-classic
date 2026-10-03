@@ -3,7 +3,7 @@
 import { createClient } from "@/utils/supabase/client";
 import { useEffect, useState } from "react";
 
-export type AppRole = "veli" | "ogrenci" | "admin";
+export type AppRole = "veli" | "ogrenci" | "admin" | "ogretmen";
 
 /** Giriş yapmış kullanıcının rolü (yüklenene kadar null). Yetki kontrolü DEĞİL, yalnızca arayüz içindir:
  *  asıl yetki veritabanında (admin fonksiyonları ve RLS) uygulanır. */

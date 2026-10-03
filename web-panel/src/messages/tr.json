@@ -81,7 +81,14 @@
       "signUp": "Kayıt Ol",
       "error404": "404 Hata",
       "yonetim": "Yönetim",
+      "yonetimPanel": "Genel Bakış",
+      "sorular": "Sorular",
+      "kullanicilar": "Kullanıcılar",
+      "odemeler": "Ödemeler",
+      "planlar": "Planlar",
+      "siniflar": "Sınıflar",
       "veliPaneli": "Veli Paneli",
+      "ogretmenSiniflari": "Sınıflarım",
       "formLayout": "Form Layout",
       "tables": "Tables",
       "dataTables": "Data Tables",
@@ -140,9 +147,7 @@
       "inboxDetails": "Details"
     },
     "widget": {
-      "title": "#1 Tailwind CSS Dashboard",
-      "description": "Leading Tailwind CSS Admin Template with 500+ UI Component and Pages.",
-      "purchasePlan": "Purchase Plan"
+      "version": "Hupo Yönetim Paneli"
     }
   },
   "header": {
@@ -882,6 +887,404 @@
       "statuses": {
         "completed": "Completed",
         "inProgress": "In Progress"
+      }
+    }
+  },
+  "yonetim": {
+    "panel": {
+      "loading": "Yükleniyor...",
+      "error": "Panel verisi alınamadı.",
+      "retry": "Tekrar dene",
+      "empty": "Henüz kayıt yok. Sistem büyüdükçe burada istatistikler görünecek.",
+      "kpi": {
+        "parents": "Veli",
+        "students": "Öğrenci",
+        "activeSubs": "Aktif Abonelik",
+        "revenueThisMonth": "Bu Ay Gelir",
+        "pendingQuestions": "Bekleyen Soru",
+        "newRevenue": "İlk gelir!",
+        "noChange": "Geçen ayla aynı",
+        "vsLastMonth": "geçen aya göre",
+        "newLast30": "Son 30 günde {count} yeni",
+        "expiringSoon": "{count} yakında bitiyor",
+        "review": "İncele →",
+        "unlinkedWarning": "{count} öğrencinin velisi bağlı değil.",
+        "unlinkedAction": "Şimdi bağla"
+      },
+      "revenue": {
+        "title": "Aylık Gelir",
+        "desc": "Son 12 ay",
+        "empty": "Henüz ödeme kaydı yok.",
+        "amount": "Tutar",
+        "count": "Adet"
+      },
+      "recentPayments": {
+        "title": "Son Ödemeler",
+        "empty": "Henüz ödeme yok."
+      },
+      "recentActions": {
+        "title": "Son İşlemler",
+        "empty": "Henüz işlem yok."
+      },
+      "islem": {
+        "uye_oldu": "Üye oldu",
+        "abonelik_basladi": "Abonelik başladı",
+        "abonelik_bitti": "Abonelik bitti",
+        "odeme_alindi": "Ödeme alındı",
+        "odeme_iade": "İade yapıldı",
+        "soru_eklendi": "Soru eklendi",
+        "soru_silindi": "Soru silindi"
+      },
+      "mix": {
+        "title": "Soru Dağılımı",
+        "desc": "Toplam {count} soru",
+        "approved": "Onaylı",
+        "pending": "Bekleyen",
+        "rejected": "Reddedilen",
+        "empty": "Henüz soru yok."
+      },
+      "picker": {
+        "label": "Veli",
+        "change": "Değiştir",
+        "placeholder": "Ad veya e-posta ile ara...",
+        "loading": "Aranıyor...",
+        "none": "Sonuç bulunamadı."
+      }
+    },
+    "kullanicilar": {
+      "roleNote": "Admin rolü atamak için veritabanında aşağıdaki komutu çalıştırın:",
+      "search": "Arama",
+      "searchPlaceholder": "Ad veya e-posta...",
+      "role": "Rol",
+      "allRoles": "Tüm roller",
+      "loading": "Yükleniyor...",
+      "retry": "Tekrar dene",
+      "empty": "Kayıt bulunamadı.",
+      "roles": {
+        "veli": "Veli",
+        "ogrenci": "Öğrenci",
+        "admin": "Admin",
+        "ogretmen": "Öğretmen"
+      },
+      "cols": {
+        "name": "Ad",
+        "email": "E-posta",
+        "role": "Rol",
+        "grade": "Sınıf",
+        "parent": "Veli",
+        "children": "Çocuk",
+        "joined": "Üyelik"
+      },
+      "unlinked": "Bağlı değil",
+      "changeParent": "Değiştir",
+      "linkParent": "Veli bağla",
+      "unlink": "Ayır",
+      "unlinkConfirm": {
+        "title": "Veli bağını kopar",
+        "text": "{student} ile {parent} arasındaki bağ kaldırılacak.",
+        "cancel": "Vazgeç",
+        "saving": "Kaydediliyor...",
+        "confirm": "Evet, ayır"
+      },
+      "pager": {
+        "prev": "Önceki",
+        "next": "Sonraki"
+      },
+      "link": {
+        "title": "Veli bağla",
+        "titleChange": "Veli değiştir",
+        "student": "Öğrenci",
+        "current": "Mevcut veli",
+        "cancel": "Vazgeç",
+        "saving": "Kaydediliyor...",
+        "save": "Kaydet",
+        "errParent": "Lütfen bir veli seçin."
+      }
+    },
+    "odemeler": {
+      "title": "Ödemeler",
+      "banner": "Ödeme tutarı her zaman plan tablosundan alınır; müşteri tarafından belirlenemez.",
+      "loading": "Yükleniyor...",
+      "retry": "Tekrar dene",
+      "empty": "Kayıt bulunamadı.",
+      "manual": "Manuel ödeme ekle",
+      "changeStatus": "Durum değiştir",
+      "filters": {
+        "status": "Durum",
+        "all": "Tümü",
+        "from": "Başlangıç",
+        "to": "Bitiş"
+      },
+      "summary": {
+        "successTotal": "Başarılı toplam",
+        "count": "Toplam kayıt"
+      },
+      "cols": {
+        "date": "Tarih",
+        "parent": "Veli",
+        "plan": "Plan",
+        "amount": "Tutar",
+        "status": "Durum",
+        "provider": "Sağlayıcı",
+        "note": "Not"
+      },
+      "pager": {
+        "prev": "Önceki",
+        "next": "Sonraki"
+      },
+      "durum": {
+        "basarili": "Başarılı",
+        "beklemede": "Beklemede",
+        "basarisiz": "Başarısız",
+        "iade": "İade"
+      },
+      "form": {
+        "title": "Manuel ödeme ekle",
+        "errParent": "Lütfen bir veli seçin.",
+        "errPlan": "Lütfen bir plan seçin.",
+        "errAmount": "Geçersiz tutar. Örnek: 149,90",
+        "plan": "Plan",
+        "planPlaceholder": "Plan seçin...",
+        "amount": "Tutar (₺)",
+        "status": "Durum",
+        "note": "Not",
+        "cancel": "Vazgeç",
+        "saving": "Kaydediliyor...",
+        "save": "Kaydet"
+      },
+      "statusModal": {
+        "title": "Ödeme durumunu değiştir",
+        "newStatus": "Yeni durum",
+        "refundWarning": "İade işlemi geri alınamaz. Dikkatli olun.",
+        "cancel": "Vazgeç",
+        "saving": "Kaydediliyor...",
+        "confirmRefund": "Evet, iade et",
+        "save": "Kaydet"
+      },
+      "plans": {
+        "title": "Planlar",
+        "new": "Yeni plan",
+        "empty": "Henüz plan yok.",
+        "kod": "Kod",
+        "ad": "Ad",
+        "fiyat": "Fiyat (₺)",
+        "sure": "Süre (gün)",
+        "aktif": "Aktif",
+        "active": "Aktif",
+        "inactive": "Pasif",
+        "edit": "Düzenle",
+        "editTitle": "Planı düzenle",
+        "createTitle": "Yeni plan oluştur",
+        "aciklama": "Açıklama",
+        "kodHint": "Küçük harf, rakam ve alt çizgi. Değiştirilemez.",
+        "cancel": "Vazgeç",
+        "saving": "Kaydediliyor...",
+        "save": "Kaydet",
+        "errKod": "Kod 2-30 karakter, sadece a-z, 0-9 ve _ içerebilir.",
+        "errAd": "Ad zorunludur.",
+        "errFiyat": "Geçersiz fiyat. Örnek: 149,90",
+        "errSure": "Süre en az 1 gün olmalıdır."
+      }
+    },
+    "sorular": {
+      "listTitle": "Soru Bankası",
+      "total": "{count} soru",
+      "bulkImport": "Toplu içe aktar",
+      "newQuestion": "Yeni soru ekle",
+      "loading": "Yükleniyor...",
+      "loadError": "Yükleme hatası",
+      "retry": "Tekrar dene",
+      "empty": "Soru bulunamadı.",
+      "filters": {
+        "searchPlaceholder": "Soru metninde ara...",
+        "search": "Arama",
+        "dersPlaceholder": "Ders...",
+        "ders": "Ders",
+        "durum": "Durum",
+        "allStatuses": "Tüm durumlar",
+        "zorluk": "Zorluk",
+        "allDifficulties": "Tüm zorluklar"
+      },
+      "status": {
+        "beklemede": "Beklemede",
+        "onaylandi": "Onaylandı",
+        "reddedildi": "Reddedildi"
+      },
+      "difficulty": {
+        "1": "Kolay",
+        "2": "Orta",
+        "3": "Zor"
+      },
+      "bulk": {
+        "selected": "{count} seçili",
+        "approve": "Onayla",
+        "reject": "Reddet",
+        "pending": "Beklemede al",
+        "delete": "Sil"
+      },
+      "success": {
+        "status": "{count} sorunun durumu güncellendi.",
+        "deleted": "{count} soru silindi.",
+        "saved": "Soru kaydedildi."
+      },
+      "pager": {
+        "prev": "Önceki",
+        "next": "Sonraki",
+        "summary": "{from}–{to} / {total}"
+      },
+      "table": {
+        "selectAll": "Tümünü seç",
+        "select": "Seç",
+        "question": "Soru",
+        "course": "Ders / Konu",
+        "difficulty": "Zorluk",
+        "status": "Durum",
+        "created": "Eklenme",
+        "actions": "İşlem",
+        "edit": "Düzenle"
+      },
+      "form": {
+        "editTitle": "Soruyu düzenle",
+        "newTitle": "Yeni soru ekle",
+        "okul": "Okul",
+        "ders": "Ders",
+        "konu": "Konu",
+        "altKonu": "Alt konu",
+        "zorluk": "Zorluk",
+        "durum": "Durum",
+        "soruMetni": "Soru metni",
+        "soruMetniPlaceholder": "Soru metnini buraya girin...",
+        "siklar": "Şıklar",
+        "siklarHint": "En az A ve B şıkkı dolu olmalıdır.",
+        "sik": "{key} şıkkı",
+        "required": "Zorunlu",
+        "optional": "İsteğe bağlı",
+        "dogruSik": "Doğru şık",
+        "dogruSikPlaceholder": "Doğru şıkkı seçin...",
+        "cozum": "Çözüm adımları",
+        "cozumPlaceholder": "Her adımı ayrı satıra yazın...",
+        "cozumHint": "Her satır bir çözüm adımıdır.",
+        "cancel": "Vazgeç",
+        "saving": "Kaydediliyor...",
+        "save": "Kaydet"
+      },
+      "delete": {
+        "title": "{count} soruyu sil",
+        "warningTitle": "Bu işlem geri alınamaz!",
+        "warning": "Seçilen sorular kalıcı olarak silinecek.",
+        "cancel": "Vazgeç",
+        "deleting": "Siliniyor...",
+        "confirm": "{count} soruyu sil"
+      },
+      "import": {
+        "backToList": "← Soru listesi",
+        "help": {
+          "title": "CSV Formatı",
+          "download": "Şablonu indir",
+          "columns": "Zorunlu sütunlar: ders, konu, soru_metni, A, B, dogru_sik",
+          "required": "A ve B şıkkı her zaman dolu olmalıdır.",
+          "options": "C, D, E şıkları isteğe bağlıdır.",
+          "answer": "dogru_sik: doğru şıkkın harfi (A, B, C...)",
+          "steps": "cozum_adimlari: her satır bir adım (isteğe bağlı)",
+          "status": "onay_durumu: beklemede / onaylandi / reddedildi",
+          "difficulty": "zorluk: 1 (kolay), 2 (orta), 3 (zor)",
+          "encoding": "Dosya UTF-8 kodlamasında kaydedilmelidir.",
+          "duplicates": "Tekrar eden sorular atlanır."
+        },
+        "input": {
+          "title": "Veri Girişi",
+          "readError": "Dosya okunamadı.",
+          "clear": "Temizle",
+          "fileLoaded": "{name} yüklendi.",
+          "pasteLabel": "CSV içeriğini buraya yapıştırın:",
+          "pastePlaceholder": "Sütun başlıklarıyla birlikte CSV verilerini yapıştırın...",
+          "encodingWarning": "Dosya okuma hatası tespit edildi. Dosyanızı UTF-8 olarak kaydedin."
+        },
+        "preview": {
+          "title": "Önizleme"
+        },
+        "delimiter": {
+          "semicolon": "noktalı virgül",
+          "tab": "sekme",
+          "comma": "virgül"
+        },
+        "detectedDelimiter": "Ayıraç: {name}",
+        "missingColumns": "Eksik sütunlar: {columns}",
+        "unknownColumns": "Tanınmayan sütunlar atlandı: {columns}",
+        "duplicateColumns": "Tekrarlı sütun adları: {columns}",
+        "count": {
+          "total": "{count} satır",
+          "valid": "{count} geçerli",
+          "invalid": "{count} hatalı"
+        },
+        "onlyErrors": "Sadece hataları göster",
+        "noRows": "Satır bulunamadı.",
+        "table": {
+          "line": "Satır",
+          "question": "Soru",
+          "course": "Ders / Konu",
+          "answer": "Doğru şık",
+          "status": "Durum",
+          "ok": "Geçerli"
+        },
+        "previewNote": "{shown} / {total} satır gösteriliyor.",
+        "options": {
+          "title": "İçe Aktarma Seçenekleri",
+          "blocked": "{count} hatalı satır var. Önce hataları düzeltin veya 'Hepsini veya hiçbirini' seçeneğini kaldırın.",
+          "nothingToImport": "İçe aktarılacak geçerli satır yok.",
+          "approve": "Onaylı olarak ekle",
+          "approveHint": "Sorular doğrudan onaylı olarak işaretlenir.",
+          "allOrNothing": "Hepsini veya hiçbirini",
+          "allOrNothingHint": "Herhangi bir hata varsa hiçbir soru eklenmez.",
+          "importing": "Yükleniyor...",
+          "import": "{count} soruyu içe aktar",
+          "progress": "{done} / {total} parça işlendi"
+        },
+        "result": {
+          "title": "Sonuç",
+          "aborted": "İşlem yarıda kesildi: {message}",
+          "added": "Eklenen",
+          "duplicate": "Tekrar",
+          "failed": "Hatalı",
+          "duplicateHint": "Tekrarlı sorular veritabanında zaten mevcut.",
+          "errorList": "Hatalı satırlar",
+          "line": "Satır {line}",
+          "downloadErrors": "Hataları indir",
+          "again": "Yeni içe aktarma"
+        }
+      }
+    },
+    "siniflar": {
+      "title": "Sınıf Yönetimi",
+      "new": "Yeni sınıf",
+      "empty": "Henüz sınıf yok.",
+      "loading": "Yükleniyor...",
+      "retry": "Tekrar dene",
+      "cols": {
+        "ad": "Sınıf adı",
+        "seviye": "Seviye",
+        "ogretmen": "Öğretmen",
+        "ogrenciler": "Öğrenci",
+        "yil": "Yıl",
+        "aktif": "Durum"
+      },
+      "active": "Aktif",
+      "inactive": "Pasif",
+      "edit": "Düzenle",
+      "editTitle": "Sınıfı düzenle",
+      "createTitle": "Yeni sınıf oluştur",
+      "form": {
+        "ad": "Sınıf adı",
+        "seviye": "Seviye (1-12)",
+        "ogretmen": "Öğretmen (isteğe bağlı)",
+        "okul": "Okul adı (isteğe bağlı)",
+        "yil": "Öğretim yılı",
+        "aktif": "Aktif",
+        "cancel": "Vazgeç",
+        "saving": "Kaydediliyor...",
+        "save": "Kaydet",
+        "errAd": "Sınıf adı zorunludur.",
+        "errSeviye": "Seviye 1-12 arasında olmalıdır."
       }
     }
   }

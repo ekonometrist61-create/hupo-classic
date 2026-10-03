@@ -136,13 +136,18 @@
       "inboxDetails": "Details",
       "avatars": "Avatarlar",
       "blank": "Boş Sayfa",
-      "yonetim": "Yönetim",
-      "veliPaneli": "Veli Paneli"
+      "yonetim": "Management",
+      "yonetimPanel": "Overview",
+      "sorular": "Questions",
+      "kullanicilar": "Users",
+      "odemeler": "Payments",
+      "planlar": "Plans",
+      "siniflar": "Classrooms",
+      "veliPaneli": "Parent Panel",
+      "ogretmenSiniflari": "My Classrooms"
     },
     "widget": {
-      "title": "#1 Tailwind CSS Dashboard",
-      "description": "Leading Tailwind CSS Admin Template with 500+ UI Component and Pages.",
-      "purchasePlan": "Purchase Plan"
+      "version": "Hupo Admin Panel"
     }
   },
   "header": {
@@ -884,5 +889,403 @@
       }
     },
     "title": "Finans"
+  },
+  "yonetim": {
+    "panel": {
+      "loading": "Loading...",
+      "error": "Could not load dashboard data.",
+      "retry": "Retry",
+      "empty": "No records yet. Statistics will appear here as the system grows.",
+      "kpi": {
+        "parents": "Parents",
+        "students": "Students",
+        "activeSubs": "Active Subscriptions",
+        "revenueThisMonth": "Revenue This Month",
+        "pendingQuestions": "Pending Questions",
+        "newRevenue": "First revenue!",
+        "noChange": "Same as last month",
+        "vsLastMonth": "vs last month",
+        "newLast30": "{count} new in last 30 days",
+        "expiringSoon": "{count} expiring soon",
+        "review": "Review →",
+        "unlinkedWarning": "{count} students have no linked parent.",
+        "unlinkedAction": "Link now"
+      },
+      "revenue": {
+        "title": "Monthly Revenue",
+        "desc": "Last 12 months",
+        "empty": "No payments recorded yet.",
+        "amount": "Amount",
+        "count": "Count"
+      },
+      "recentPayments": {
+        "title": "Recent Payments",
+        "empty": "No payments yet."
+      },
+      "recentActions": {
+        "title": "Recent Actions",
+        "empty": "No actions yet."
+      },
+      "islem": {
+        "uye_oldu": "Registered",
+        "abonelik_basladi": "Subscription started",
+        "abonelik_bitti": "Subscription ended",
+        "odeme_alindi": "Payment received",
+        "odeme_iade": "Refunded",
+        "soru_eklendi": "Question added",
+        "soru_silindi": "Question deleted"
+      },
+      "mix": {
+        "title": "Question Distribution",
+        "desc": "Total {count} questions",
+        "approved": "Approved",
+        "pending": "Pending",
+        "rejected": "Rejected",
+        "empty": "No questions yet."
+      },
+      "picker": {
+        "label": "Parent",
+        "change": "Change",
+        "placeholder": "Search by name or email...",
+        "loading": "Searching...",
+        "none": "No results found."
+      }
+    },
+    "kullanicilar": {
+      "roleNote": "To assign admin role, run the following command in the database:",
+      "search": "Search",
+      "searchPlaceholder": "Name or email...",
+      "role": "Role",
+      "allRoles": "All roles",
+      "loading": "Loading...",
+      "retry": "Retry",
+      "empty": "No records found.",
+      "roles": {
+        "veli": "Parent",
+        "ogrenci": "Student",
+        "admin": "Admin",
+        "ogretmen": "Teacher"
+      },
+      "cols": {
+        "name": "Name",
+        "email": "Email",
+        "role": "Role",
+        "grade": "Grade",
+        "parent": "Parent",
+        "children": "Children",
+        "joined": "Joined"
+      },
+      "unlinked": "Not linked",
+      "changeParent": "Change",
+      "linkParent": "Link parent",
+      "unlink": "Unlink",
+      "unlinkConfirm": {
+        "title": "Unlink parent",
+        "text": "The link between {student} and {parent} will be removed.",
+        "cancel": "Cancel",
+        "saving": "Saving...",
+        "confirm": "Yes, unlink"
+      },
+      "pager": {
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "link": {
+        "title": "Link parent",
+        "titleChange": "Change parent",
+        "student": "Student",
+        "current": "Current parent",
+        "cancel": "Cancel",
+        "saving": "Saving...",
+        "save": "Save",
+        "errParent": "Please select a parent."
+      }
+    },
+    "odemeler": {
+      "title": "Payments",
+      "banner": "Payment amount is always taken from the plan table and cannot be sent by the client.",
+      "loading": "Loading...",
+      "retry": "Retry",
+      "empty": "No records found.",
+      "manual": "Add manual payment",
+      "changeStatus": "Change status",
+      "filters": {
+        "status": "Status",
+        "all": "All",
+        "from": "From",
+        "to": "To"
+      },
+      "summary": {
+        "successTotal": "Successful total",
+        "count": "Total records"
+      },
+      "cols": {
+        "date": "Date",
+        "parent": "Parent",
+        "plan": "Plan",
+        "amount": "Amount",
+        "status": "Status",
+        "provider": "Provider",
+        "note": "Note"
+      },
+      "pager": {
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "durum": {
+        "basarili": "Successful",
+        "beklemede": "Pending",
+        "basarisiz": "Failed",
+        "iade": "Refunded"
+      },
+      "form": {
+        "title": "Add manual payment",
+        "errParent": "Please select a parent.",
+        "errPlan": "Please select a plan.",
+        "errAmount": "Invalid amount. Example: 149.90",
+        "plan": "Plan",
+        "planPlaceholder": "Select plan...",
+        "amount": "Amount (₺)",
+        "status": "Status",
+        "note": "Note",
+        "cancel": "Cancel",
+        "saving": "Saving...",
+        "save": "Save"
+      },
+      "statusModal": {
+        "title": "Change payment status",
+        "newStatus": "New status",
+        "refundWarning": "Refund cannot be undone. Be careful.",
+        "cancel": "Cancel",
+        "saving": "Saving...",
+        "confirmRefund": "Yes, refund",
+        "save": "Save"
+      },
+      "plans": {
+        "title": "Plans",
+        "new": "New plan",
+        "empty": "No plans yet.",
+        "kod": "Code",
+        "ad": "Name",
+        "fiyat": "Price (₺)",
+        "sure": "Duration (days)",
+        "aktif": "Active",
+        "active": "Active",
+        "inactive": "Inactive",
+        "edit": "Edit",
+        "editTitle": "Edit plan",
+        "createTitle": "Create new plan",
+        "aciklama": "Description",
+        "kodHint": "Lowercase letters, numbers and underscores only. Cannot be changed.",
+        "cancel": "Cancel",
+        "saving": "Saving...",
+        "save": "Save",
+        "errKod": "Code must be 2-30 chars, only a-z, 0-9 and _ allowed.",
+        "errAd": "Name is required.",
+        "errFiyat": "Invalid price. Example: 149.90",
+        "errSure": "Duration must be at least 1 day."
+      }
+    },
+    "sorular": {
+      "listTitle": "Question Bank",
+      "total": "{count} questions",
+      "bulkImport": "Bulk import",
+      "newQuestion": "Add question",
+      "loading": "Loading...",
+      "loadError": "Load error",
+      "retry": "Retry",
+      "empty": "No questions found.",
+      "filters": {
+        "searchPlaceholder": "Search question text...",
+        "search": "Search",
+        "dersPlaceholder": "Course...",
+        "ders": "Course",
+        "durum": "Status",
+        "allStatuses": "All statuses",
+        "zorluk": "Difficulty",
+        "allDifficulties": "All difficulties"
+      },
+      "status": {
+        "beklemede": "Pending",
+        "onaylandi": "Approved",
+        "reddedildi": "Rejected"
+      },
+      "difficulty": {
+        "1": "Easy",
+        "2": "Medium",
+        "3": "Hard"
+      },
+      "bulk": {
+        "selected": "{count} selected",
+        "approve": "Approve",
+        "reject": "Reject",
+        "pending": "Set pending",
+        "delete": "Delete"
+      },
+      "success": {
+        "status": "{count} questions updated.",
+        "deleted": "{count} questions deleted.",
+        "saved": "Question saved."
+      },
+      "pager": {
+        "prev": "Previous",
+        "next": "Next",
+        "summary": "{from}–{to} / {total}"
+      },
+      "table": {
+        "selectAll": "Select all",
+        "select": "Select",
+        "question": "Question",
+        "course": "Course / Topic",
+        "difficulty": "Difficulty",
+        "status": "Status",
+        "created": "Added",
+        "actions": "Actions",
+        "edit": "Edit"
+      },
+      "form": {
+        "editTitle": "Edit question",
+        "newTitle": "Add new question",
+        "okul": "School",
+        "ders": "Course",
+        "konu": "Topic",
+        "altKonu": "Sub-topic",
+        "zorluk": "Difficulty",
+        "durum": "Status",
+        "soruMetni": "Question text",
+        "soruMetniPlaceholder": "Enter the question text here...",
+        "siklar": "Options",
+        "siklarHint": "At least options A and B must be filled.",
+        "sik": "Option {key}",
+        "required": "Required",
+        "optional": "Optional",
+        "dogruSik": "Correct option",
+        "dogruSikPlaceholder": "Select correct option...",
+        "cozum": "Solution steps",
+        "cozumPlaceholder": "Write each step on a new line...",
+        "cozumHint": "Each line is one solution step.",
+        "cancel": "Cancel",
+        "saving": "Saving...",
+        "save": "Save"
+      },
+      "delete": {
+        "title": "Delete {count} questions",
+        "warningTitle": "This action cannot be undone!",
+        "warning": "The selected questions will be permanently deleted.",
+        "cancel": "Cancel",
+        "deleting": "Deleting...",
+        "confirm": "Delete {count} questions"
+      },
+      "import": {
+        "backToList": "← Question list",
+        "help": {
+          "title": "CSV Format",
+          "download": "Download template",
+          "columns": "Required columns: ders, konu, soru_metni, A, B, dogru_sik",
+          "required": "Options A and B must always be filled.",
+          "options": "Options C, D, E are optional.",
+          "answer": "dogru_sik: the letter of the correct option (A, B, C...)",
+          "steps": "cozum_adimlari: each line is one step (optional)",
+          "status": "onay_durumu: beklemede / onaylandi / reddedildi",
+          "difficulty": "zorluk: 1 (easy), 2 (medium), 3 (hard)",
+          "encoding": "File must be saved in UTF-8 encoding.",
+          "duplicates": "Duplicate questions are skipped."
+        },
+        "input": {
+          "title": "Data Input",
+          "readError": "Could not read file.",
+          "clear": "Clear",
+          "fileLoaded": "{name} loaded.",
+          "pasteLabel": "Paste CSV content here:",
+          "pastePlaceholder": "Paste CSV data including column headers...",
+          "encodingWarning": "File reading error detected. Save your file as UTF-8."
+        },
+        "preview": {
+          "title": "Preview"
+        },
+        "delimiter": {
+          "semicolon": "semicolon",
+          "tab": "tab",
+          "comma": "comma"
+        },
+        "detectedDelimiter": "Delimiter: {name}",
+        "missingColumns": "Missing columns: {columns}",
+        "unknownColumns": "Unknown columns skipped: {columns}",
+        "duplicateColumns": "Duplicate column names: {columns}",
+        "count": {
+          "total": "{count} rows",
+          "valid": "{count} valid",
+          "invalid": "{count} invalid"
+        },
+        "onlyErrors": "Show errors only",
+        "noRows": "No rows found.",
+        "table": {
+          "line": "Row",
+          "question": "Question",
+          "course": "Course / Topic",
+          "answer": "Correct option",
+          "status": "Status",
+          "ok": "Valid"
+        },
+        "previewNote": "Showing {shown} of {total} rows.",
+        "options": {
+          "title": "Import Options",
+          "blocked": "{count} invalid rows found. Fix errors first or uncheck 'All or nothing'.",
+          "nothingToImport": "No valid rows to import.",
+          "approve": "Import as approved",
+          "approveHint": "Questions will be directly marked as approved.",
+          "allOrNothing": "All or nothing",
+          "allOrNothingHint": "If any error exists, no questions will be added.",
+          "importing": "Importing...",
+          "import": "Import {count} questions",
+          "progress": "{done} / {total} chunks processed"
+        },
+        "result": {
+          "title": "Result",
+          "aborted": "Process aborted: {message}",
+          "added": "Added",
+          "duplicate": "Duplicate",
+          "failed": "Failed",
+          "duplicateHint": "Duplicate questions already exist in the database.",
+          "errorList": "Invalid rows",
+          "line": "Row {line}",
+          "downloadErrors": "Download errors",
+          "again": "Import again"
+        }
+      }
+    },
+    "siniflar": {
+      "title": "Class Management",
+      "new": "New class",
+      "empty": "No classes yet.",
+      "loading": "Loading...",
+      "retry": "Retry",
+      "cols": {
+        "ad": "Class name",
+        "seviye": "Level",
+        "ogretmen": "Teacher",
+        "ogrenciler": "Students",
+        "yil": "Year",
+        "aktif": "Status"
+      },
+      "active": "Active",
+      "inactive": "Inactive",
+      "edit": "Edit",
+      "editTitle": "Edit class",
+      "createTitle": "Create new class",
+      "form": {
+        "ad": "Class name",
+        "seviye": "Level (1-12)",
+        "ogretmen": "Teacher (optional)",
+        "okul": "School name (optional)",
+        "yil": "School year",
+        "aktif": "Active",
+        "cancel": "Cancel",
+        "saving": "Saving...",
+        "save": "Save",
+        "errAd": "Class name is required.",
+        "errSeviye": "Level must be between 1 and 12."
+      }
+    }
   }
 }
