@@ -294,7 +294,7 @@ export default function KuponManager() {
           </div>
 
           {loadingK ? (
-            <p className="py-10 text-center text-sm text-gray-500">{}</p>
+            <p className="py-10 text-center text-sm text-gray-500">Yükleniyor...</p>
           ) : errorK ? (
             <div className="py-8 text-center">
               <p className="mb-3 text-sm text-error-600">{errorK}</p>
