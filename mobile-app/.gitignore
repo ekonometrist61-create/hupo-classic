@@ -47,3 +47,9 @@ app.*.map.json
 key.properties
 *.jks
 *.keystore
+
+# Local secrets
+.env
+.env.local
+.env.*.local
+

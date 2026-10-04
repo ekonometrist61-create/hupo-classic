@@ -78,10 +78,10 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       barrierDismissible: false,
       builder: (ctx) => AlertDialog(
         title: const Text('Bugünlük harikaydın!'),
-        content: Column(
+        content: const Column(
           mainAxisSize: MainAxisSize.min,
-          children: const [
-            Hupo(mood: HupoMood.correct, size: 120, semanticLabel: 'Hupo, seni tebrik ediyor'),
+          children: [
+            Hupo(mood: HupoMood.correct, semanticLabel: 'Hupo, seni tebrik ediyor'),
             SizedBox(height: 12),
             Text(
               'Bugünkü ücretsiz sorularını tamamladın. Yarın yeni sorularla devam edebilirsin. Daha fazlası için velinle konuşabilirsin.',
@@ -257,7 +257,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                                       ),
                                     ),
                                     BookmarkButton(questionId: question.id, size: 20),
-                                    ReportQuestionButton(questionId: question.id, size: 20),
+                                    ReportQuestionButton(questionId: question.id),
                                   ],
                                 ),
                         const SizedBox(height: 4),

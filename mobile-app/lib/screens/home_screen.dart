@@ -182,7 +182,7 @@ class HomeScreen extends ConsumerWidget {
                                   children: [
                                     Text(
                                       'Çarpım Tablosu Şifreleri',
-                                      style: appText(size: 16, weight: FontWeight.w800, color: AppColors.ink),
+                                      style: appText(weight: FontWeight.w800),
                                     ),
                                     const SizedBox(height: 2),
                                     Text(
@@ -711,7 +711,7 @@ class _KarakterKisayolu extends ConsumerWidget {
                 Text(
                   'Karakterlerim',
                   style: appText(
-                      size: 16, weight: FontWeight.w800, color: AppColors.ink),
+                      weight: FontWeight.w800),
                 ),
                 const SizedBox(height: 2),
                 Text(

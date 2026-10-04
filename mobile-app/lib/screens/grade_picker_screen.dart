@@ -78,7 +78,7 @@ class _GradePickerScreenState extends ConsumerState<GradePickerScreen> {
         title: Text(
           'Sınıfını Seç',
           style:
-              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+              appText(size: 18, weight: FontWeight.w800),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -114,8 +114,6 @@ class _GradePickerScreenState extends ConsumerState<GradePickerScreen> {
                   ChunkyButton(
                     label: _isSaving ? 'Kaydediliyor...' : 'Devam Et',
                     icon: Icons.check_circle_rounded,
-                    color: AppColors.primary,
-                    shadowColor: AppColors.primaryDark,
                     onPressed:
                         _selectedGrade == null || _isSaving ? null : _saveGrade,
                   ),
@@ -135,8 +133,6 @@ class _GradePickerScreenState extends ConsumerState<GradePickerScreen> {
                   ChunkyButton(
                     label: 'Tekrar Dene',
                     icon: Icons.refresh_rounded,
-                    color: AppColors.primary,
-                    shadowColor: AppColors.primaryDark,
                     onPressed: () => ref.invalidate(supportedGradesProvider),
                   ),
                 ],
@@ -214,7 +210,6 @@ class _GradePill extends StatelessWidget {
         child: Text(
           '$grade. Sınıf',
           style: appText(
-            size: 16,
             weight: isSelected ? FontWeight.w800 : FontWeight.w600,
             color: isSelected ? AppColors.primaryDark : AppColors.ink,
           ),
@@ -241,7 +236,7 @@ class _EmptyGradesState extends StatelessWidget {
               'Sınıf seçenekleri yakında burada!',
               textAlign: TextAlign.center,
               style: appText(
-                  size: 18, weight: FontWeight.w800, color: AppColors.ink),
+                  size: 18, weight: FontWeight.w800),
             ),
             const SizedBox(height: 8),
             Text(

@@ -98,7 +98,7 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
         title: Text(
           'Günün 5 Sorusu',
           style:
-              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+              appText(size: 18, weight: FontWeight.w800),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -122,8 +122,7 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                           'Bugünün soruları hazırlanıyor',
                           style: appText(
                               size: 18,
-                              weight: FontWeight.w800,
-                              color: AppColors.ink),
+                              weight: FontWeight.w800),
                         ),
                         const SizedBox(height: 8),
                         Text(
@@ -151,8 +150,7 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                           textAlign: TextAlign.center,
                           style: appText(
                               size: 20,
-                              weight: FontWeight.w800,
-                              color: AppColors.ink),
+                              weight: FontWeight.w800),
                         ),
                         const SizedBox(height: 8),
                         Text(
@@ -164,8 +162,6 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                         ChunkyButton(
                           label: 'Ana Sayfaya Dön',
                           icon: Icons.home_rounded,
-                          color: AppColors.primary,
-                          shadowColor: AppColors.primaryDark,
                           onPressed: () => Navigator.of(context).pop(),
                         ),
                       ],
@@ -205,8 +201,7 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                     question.text,
                     style: appText(
                         size: 17,
-                        weight: FontWeight.w700,
-                        color: AppColors.ink),
+                        weight: FontWeight.w700),
                   ),
                   const SizedBox(height: 24),
                   ...question.options.entries.map((opt) {
@@ -261,9 +256,7 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                                 child: Text(
                                   opt.value,
                                   style: appText(
-                                      size: 15,
-                                      weight: FontWeight.w600,
-                                      color: AppColors.ink),
+                                      size: 15),
                                 ),
                               ),
                             ],

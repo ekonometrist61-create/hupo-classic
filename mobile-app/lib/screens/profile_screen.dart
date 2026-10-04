@@ -95,7 +95,7 @@ class ProfileScreen extends ConsumerWidget {
                       ),
                     ],
                   ),
-                  const Hupo(pose: HupoPose.ayakta, size: 120, animated: true),
+                  const Hupo(pose: HupoPose.ayakta, animated: true),
                   const SizedBox(height: 4),
                   Text(
                     name.isEmpty ? 'Şampiyon' : name,
@@ -233,9 +233,7 @@ class _KoleksiyonKarti extends ConsumerWidget {
                   Text(
                     'Karakterlerim',
                     style: appText(
-                        size: 16,
-                        weight: FontWeight.w800,
-                        color: AppColors.ink),
+                        weight: FontWeight.w800),
                   ),
                   const SizedBox(height: 2),
                   Text(
@@ -290,7 +288,7 @@ class _RetryMessage extends StatelessWidget {
         Text(
           'Rozetlerin yüklenemedi, tekrar deneyelim.',
           textAlign: TextAlign.center,
-          style: appText(size: 16, weight: FontWeight.w700),
+          style: appText(weight: FontWeight.w700),
         ),
         const SizedBox(height: 12),
         ChunkyButton(label: 'Tekrar dene', expanded: false, onPressed: onRetry, height: 48),

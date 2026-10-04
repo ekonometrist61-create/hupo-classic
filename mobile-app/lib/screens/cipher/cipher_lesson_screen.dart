@@ -128,7 +128,7 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
         title: Text(
           detailAsync.value?.isim ?? 'Şifre Dersi',
           style:
-              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+              appText(size: 18, weight: FontWeight.w800),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -178,8 +178,6 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                 detail.tanim,
                 style: appText(
                     size: 15,
-                    weight: FontWeight.w600,
-                    color: AppColors.ink,
                     height: 1.4),
               ),
               const SizedBox(height: 12),
@@ -209,7 +207,6 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                 Text(
                   'Birlikte çözelim: adım adım',
                   style: appText(
-                      size: 16,
                       weight: FontWeight.w800,
                       color: AppColors.mintDark),
                 ),
@@ -217,7 +214,7 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                 Text(
                   detail.ornek.soru,
                   style: appText(
-                      size: 15, weight: FontWeight.w700, color: AppColors.ink),
+                      size: 15, weight: FontWeight.w700),
                 ),
                 const SizedBox(height: 10),
                 ...detail.ornek.adimlar.map((s) => Padding(
@@ -229,7 +226,7 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                               color: AppColors.mint, size: 20),
                           Expanded(
                             child: Text(s,
-                                style: appText(size: 14, color: AppColors.ink)),
+                                style: appText(size: 14)),
                           ),
                         ],
                       ),
@@ -241,8 +238,6 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
         ChunkyButton(
           label: 'Açık Alıştırmaya Başla',
           icon: Icons.play_arrow_rounded,
-          color: AppColors.primary,
-          shadowColor: AppColors.primaryDark,
           onPressed: () {
             setState(() {
               _stage = _CipherStage.openExercise;
@@ -268,7 +263,7 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
             Text(
               isClosed ? 'Kapalı Test' : 'Açık Alıştırma',
               style: appText(
-                  size: 16, weight: FontWeight.w800, color: AppColors.primary),
+                  weight: FontWeight.w800, color: AppColors.primary),
             ),
             const Spacer(),
             Text(
@@ -286,7 +281,7 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                 questionText,
                 textAlign: TextAlign.center,
                 style: appText(
-                    size: 28, weight: FontWeight.w800, color: AppColors.ink),
+                    size: 28, weight: FontWeight.w800),
               ),
               const SizedBox(height: 20),
               TextField(
@@ -294,7 +289,7 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                 keyboardType: TextInputType.number,
                 textAlign: TextAlign.center,
                 style: appText(
-                    size: 22, weight: FontWeight.w800, color: AppColors.ink),
+                    size: 22, weight: FontWeight.w800),
                 decoration: InputDecoration(
                   hintText: 'Cevabın',
                   hintStyle: appText(size: 18, color: AppColors.muted),
@@ -352,7 +347,7 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                 if (_lastResult!.cozum.isNotEmpty) ...[
                   const SizedBox(height: 8),
                   ..._lastResult!.cozum.map((c) =>
-                      Text(c, style: appText(size: 13, color: AppColors.ink))),
+                      Text(c, style: appText(size: 13))),
                 ],
                 if (_lastResult!.sifreHatirlatma != null) ...[
                   const SizedBox(height: 8),
@@ -372,8 +367,6 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
           ChunkyButton(
             label: _isSubmitting ? 'Kontrol ediliyor...' : 'Cevapla',
             icon: Icons.check_rounded,
-            color: AppColors.primary,
-            shadowColor: AppColors.primaryDark,
             onPressed:
                 _isSubmitting ? null : () => _submitAnswer(detail, isClosed),
           )
@@ -400,7 +393,7 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
         Text(
           'Tebrikler!',
           style:
-              appText(size: 24, weight: FontWeight.w800, color: AppColors.ink),
+              appText(size: 24, weight: FontWeight.w800),
         ),
         const SizedBox(height: 8),
         Text(
@@ -434,8 +427,6 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
         ChunkyButton(
           label: 'Listeye Dön',
           icon: Icons.arrow_back_rounded,
-          color: AppColors.primary,
-          shadowColor: AppColors.primaryDark,
           onPressed: () => Navigator.of(context).pop(),
         ),
       ],

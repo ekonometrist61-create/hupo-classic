@@ -71,7 +71,7 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
         title: Text(
           'Genel Çarpım Alıştırması',
           style:
-              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+              appText(size: 18, weight: FontWeight.w800),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -113,7 +113,7 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
               Text(
                 'Karışık (1-10 hepsi)',
                 style: appText(
-                    size: 16, weight: FontWeight.w800, color: AppColors.ink),
+                    weight: FontWeight.w800),
               ),
             ],
           ),
@@ -150,7 +150,6 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
                   child: Text(
                     '$num\'ler',
                     style: appText(
-                      size: 16,
                       weight: isSel ? FontWeight.w800 : FontWeight.w600,
                       color: isSel ? AppColors.primaryDark : AppColors.ink,
                     ),
@@ -209,7 +208,7 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
               Text(
                 '$_factorA × $_factorB = ?',
                 style: appText(
-                    size: 36, weight: FontWeight.w800, color: AppColors.ink),
+                    size: 36, weight: FontWeight.w800),
               ),
               const SizedBox(height: 24),
               TextField(
@@ -217,7 +216,7 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
                 keyboardType: TextInputType.number,
                 textAlign: TextAlign.center,
                 style: appText(
-                    size: 26, weight: FontWeight.w800, color: AppColors.ink),
+                    size: 26, weight: FontWeight.w800),
                 decoration: InputDecoration(
                   hintText: 'Cevap',
                   hintStyle: appText(size: 20, color: AppColors.muted),
@@ -261,7 +260,6 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
                       ? 'Harikasın, doğru!'
                       : 'Doğru cevap: ${_factorA * _factorB}',
                   style: appText(
-                    size: 16,
                     weight: FontWeight.w800,
                     color: _isLastCorrect!
                         ? AppColors.mintDark
@@ -276,8 +274,6 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
           ChunkyButton(
             label: 'Cevapla',
             icon: Icons.check_rounded,
-            color: AppColors.primary,
-            shadowColor: AppColors.primaryDark,
             onPressed: _submit,
           )
         else

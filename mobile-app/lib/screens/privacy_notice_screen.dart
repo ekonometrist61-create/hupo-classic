@@ -86,7 +86,7 @@ class _PrivacyNoticeScreenState extends ConsumerState<PrivacyNoticeScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
-                            Text(section.title, style: appText(size: 16, weight: FontWeight.w900)),
+                            Text(section.title, style: appText(weight: FontWeight.w900)),
                             const SizedBox(height: 4),
                             Text(
                               section.body,

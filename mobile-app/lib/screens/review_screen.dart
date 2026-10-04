@@ -37,7 +37,7 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
   Future<void> _loadQuestions() async {
     try {
       final repo = ref.read(quizRepositoryProvider);
-      final list = await repo.fetchReviewQuestions(limit: 10);
+      final list = await repo.fetchReviewQuestions();
       if (mounted) {
         setState(() {
           _questions = list;
@@ -84,7 +84,7 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
         title: Text(
           'Günün Tekrarı',
           style:
-              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+              appText(size: 18, weight: FontWeight.w800),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -109,8 +109,7 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
                               textAlign: TextAlign.center,
                               style: appText(
                                   size: 20,
-                                  weight: FontWeight.w800,
-                                  color: AppColors.ink),
+                                  weight: FontWeight.w800),
                             ),
                             const SizedBox(height: 8),
                             Text(
@@ -166,7 +165,7 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
         Text(
           question.text,
           style:
-              appText(size: 17, weight: FontWeight.w700, color: AppColors.ink),
+              appText(size: 17, weight: FontWeight.w700),
         ),
         const SizedBox(height: 24),
         ...question.options.entries.map((opt) {
@@ -213,9 +212,7 @@ class _ReviewScreenState extends ConsumerState<ReviewScreen> {
                       child: Text(
                         opt.value,
                         style: appText(
-                            size: 15,
-                            weight: FontWeight.w600,
-                            color: AppColors.ink),
+                            size: 15),
                       ),
                     ),
                   ],

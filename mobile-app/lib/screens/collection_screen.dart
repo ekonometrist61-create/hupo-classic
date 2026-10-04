@@ -25,7 +25,7 @@ class CollectionScreen extends ConsumerWidget {
       appBar: AppBar(
         title: Text(
           'Karakterlerim',
-          style: appText(size: 20, weight: FontWeight.w800, color: AppColors.ink),
+          style: appText(size: 20, weight: FontWeight.w800),
         ),
         backgroundColor: AppColors.background,
         elevation: 0,
@@ -183,12 +183,12 @@ class _SinifBaslik extends StatelessWidget {
         const SizedBox(width: 8),
         Text(
           grup.sinif.ad,
-          style: appText(size: 16, weight: FontWeight.w800, color: AppColors.ink),
+          style: appText(weight: FontWeight.w800),
         ),
         const Spacer(),
         Text(
           '${grup.kazanilanSayi}/${grup.karakterler.length}',
-          style: appText(size: 13, weight: FontWeight.w600, color: AppColors.muted),
+          style: appText(size: 13, color: AppColors.muted),
         ),
       ],
     );

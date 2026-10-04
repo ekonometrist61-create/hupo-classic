@@ -150,7 +150,7 @@ class _Tile extends StatelessWidget {
                   Row(
                     children: [
                       Expanded(
-                        child: Text(n.title, style: appText(size: 16, weight: FontWeight.w900)),
+                        child: Text(n.title, style: appText(weight: FontWeight.w900)),
                       ),
                       if (unread)
                         Container(

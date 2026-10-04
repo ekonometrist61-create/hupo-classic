@@ -28,7 +28,7 @@ class CipherListScreen extends ConsumerWidget {
         title: Text(
           'Çarpım Tablosu Şifreleri',
           style:
-              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+              appText(size: 18, weight: FontWeight.w800),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -51,7 +51,7 @@ class CipherListScreen extends ConsumerWidget {
               Text(
                 'Şifreleri çöz, çarpım tablosunu ustaca öğren!',
                 style: appText(
-                    size: 15, weight: FontWeight.w600, color: AppColors.muted),
+                    size: 15, color: AppColors.muted),
               ),
               const SizedBox(height: 12),
               Expanded(
@@ -88,8 +88,6 @@ class CipherListScreen extends ConsumerWidget {
                         ChunkyButton(
                           label: 'Tekrar Dene',
                           icon: Icons.refresh_rounded,
-                          color: AppColors.primary,
-                          shadowColor: AppColors.primaryDark,
                           onPressed: () => ref.invalidate(ciphersProvider),
                         ),
                       ],
@@ -136,7 +134,7 @@ class _GenelAlistirmaCard extends StatelessWidget {
                 Text(
                   'Genel Çarpım Tablosu Alıştırması',
                   style: appText(
-                      size: 16, weight: FontWeight.w800, color: AppColors.ink),
+                      weight: FontWeight.w800),
                 ),
                 const SizedBox(height: 4),
                 Text(
@@ -198,9 +196,7 @@ class _CipherTile extends StatelessWidget {
                     Text(
                       cipher.isim,
                       style: appText(
-                          size: 16,
-                          weight: FontWeight.w800,
-                          color: AppColors.ink),
+                          weight: FontWeight.w800),
                     ),
                     const SizedBox(width: 8),
                     if (cipher.isCompleted)
