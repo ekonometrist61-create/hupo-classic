@@ -240,4 +240,215 @@ Get-ChildItem tools | Select-Object Name, Length
 | 6 | `(student)/ogrenci/` ölü rota | | |
 | 7 | `mobile-app/telefonda-ac/` | | |
 | 8 | Tek seferlik `tools/` scriptleri | | |
-| 9 | Doğru yapılanlar | | |
+| 9 | Doğru yapılanlar | | |---
+---
+
+# GÜVENLİK DENETİMİ — Sıkı Kontrol (04 Ekim 2026)
+
+> Bu bölüm, §1'deki sır bulgusunun ötesinde **tüm katmanların** güvenlik
+> incelemesidir. Yöntem: kod okuma + grep tabanlı kanıt. Her bulgu bir kanıt
+> içerir. Claude bunları da doğrulasın.
+
+---
+
+## G0. Özet yargı
+
+Sistem güvenlik mimarisi **genel olarak çok disiplinli**. Ödeme akışı, push
+webhook, RLS politikaları, SECURITY DEFINER kullanımı ve `revoke/grant`
+alışkanlığı AGENTS.md §4-§5 ile uyumlu. Buna karşılık **2 orta, 1 düşük**
+önemde gerçek açık ve birkaç sertleştirme önerisi tespit edildi.
+
+| Önem | Adet | Özet |
+|---|---|---|
+| 🔴 Kritik | 1 | §1'deki API anahtarları (bu bölümün dışında) |
+| 🟠 Orta | 2 | `evaluate_characters` ID doğrulaması yok · `characters_after_change` gereksiz grant |
+| 🟡 Düşük | 1 | `character_definitions` anon'a `select true` |
+| 🔵 Sertleştirme | 4 | Aşağıda §G6 |
+
+---
+
+## G1. 🟠 `evaluate_characters(uuid)` — kimlik doğrulaması yok (yatay ayrıcalık)
+
+**Bulgu:** `supabase/migrations/20260928000010_character_system.sql:74`
+
+```sql
+create or replace function public.evaluate_characters(p_student_id uuid)
+...
+revoke execute on function public.evaluate_characters(uuid) from public, anon;
+grant  execute on function public.evaluate_characters(uuid) to authenticated;  -- satır 132
+```
+
+Fonksiyon `p_student_id`'yi **parametreden** alıyor ve içinde
+`auth.uid() = p_student_id` gibi bir kontrol **yok** (grep kanıtı: dosyada
+`auth.uid()` yalnızca RLS politikasında, satır 59). Üstelik `authenticated`
+rolüne EXECUTE verilmiş.
+
+**Etki:** Giriş yapmış **herhangi bir kullanıcı** (öğrenci, veli, öğretmen),
+`rpc('evaluate_characters', { p_student_id: <başka_öğrenci_uuid> })` çağırıp
+başka öğrencilerin istatistiğini tetikleyebilir. Fonksiyon idempotent olduğu
+için **veri bozmaz** (mevcut kazanımlar `on conflict do nothing` ile atlanır) —
+yani etki "veri sızıntısı" değil, "başkasının adına hesaplama tetikleme"
+(confused deputy / yatay ayrıcalık). Yine de gereksiz bir saldırı yüzeyi.
+
+**Önerilen düzeltme:**
+```sql
+revoke execute on function public.evaluate_characters(uuid) from public, anon, authenticated;
+-- Yalnızca trigger (characters_after_change) ve submit_answer içinden çağrılsın.
+```
+veya fonksiyonun başına ekle:
+```sql
+if auth.uid() is distinct from p_student_id and not public.is_admin() then
+  raise exception 'Yetkisiz' using errcode = '42501';
+end if;
+```
+
+**Doğrulama:**
+```powershell
+Select-String -Path "supabase\migrations\20260928000010_character_system.sql" -Pattern "evaluate_characters|auth.uid"
+```
+
+---
+
+## G2. 🟠 `characters_after_change()` trigger fonksiyonuna gereksiz EXECUTE grant
+
+**Bulgu:** `20260928000010_character_system.sql:137-150`
+
+```sql
+create or replace function public.characters_after_change() returns trigger ...
+revoke execute on function public.characters_after_change() from public, anon;
+grant  execute on function public.characters_after_change() to authenticated;  -- satır 150
+```
+
+Bu bir **trigger fonksiyonu**; `trigger` döndürdüğü için zaten doğrudan RPC
+olarak çağrılamaz. AGENTS.md §4'te trigger fonksiyonları için doğru desen
+`from public, anon, authenticated` revoke etmektir (bkz.
+`20260920000000_initial_schema.sql:539-542` — `handle_new_user` vb. doğru
+yapılmış).
+
+**Etki:** Düşük ama tutarsızlık; `authenticated` grant'ı gereksiz yetki
+görünümü yaratır.
+
+**Önerilen düzeltme:** `from public, anon, authenticated` ile revoke et, grant satırını kaldır.
+
+---
+
+## G3. 🟡 `character_definitions` — anon dahil herkese açık SELECT
+
+**Bulgu:** `20260928000010_character_system.sql:52-54`
+
+```sql
+create policy "character_definitions_herkese_acik"
+  on public.character_definitions for select
+  using (true);
+```
+
+Politika `for select` ama `to` rolü belirtilmemiş → **anon dahil herkese** açık.
+Kod yorumu "kilitli kartlar gösterilmek zorunda" diyor; ama kilitli kartlar
+giriş yapmış öğrenciye gösterilir, anon'a değil.
+
+**Etki:** Düşük — tablo yalnızca karakter kataloğu (kod, ad, ikon, koşul eşiği)
+içerir; PII yok. Yine de gereksiz veri ifşası ve tutarsızlık.
+
+**Önerilen düzeltme:**
+```sql
+drop policy "character_definitions_herkese_acik" on public.character_definitions;
+create policy "character_definitions_authenticated"
+  on public.character_definitions for select to authenticated using (true);
+```
+
+---
+
+## G4. ✅ Doğrulanan sağlam kontroller (güvenlik açısından)
+
+Bu maddelerde **açık bulunmadı**; kanıtlarla teyit edildi.
+
+### G4.1 Ödeme akışı (iyzico) — örnek niteliğinde
+- **Tutar istemciden alınmıyor:** `payments-checkout/index.ts:57-66` — gövdeden
+  yalnızca `plan_kod` okunur, tutar `payment_create_pending` RPC'si ile
+  `plans` tablosundan gelir. AGENTS.md §5 kural 4 uyumlu.
+- **JWT sunucuda doğrulanıyor:** `payments-checkout/index.ts:44-49`.
+- **Rol kontrolü:** yalnızca `veli` satın alabilir (`:52-55`).
+- **CORS beyaz liste:** `WEB_PANEL_URL`'e kilitli, `*` yok (`:16-27`).
+- **Callback sunucudan-sunucuya:** `payments-callback/index.ts:57-71` — tarayıcı
+  verisine güvenilmez, iyzico'dan `retrieve` ile doğrulanır; token eşleşmesi
+  (`storedToken`) kontrol edilir.
+- **İdempotent:** zaten sonuçlanmış ödeme iyzico'ya gitmeden döner (`:53-55`).
+- **Hata sızıntısı yok:** `errorCode` log'a yazılır, kullanıcıya jenerik mesaj (`:92-94`).
+
+### G4.2 Push webhook — `send-push/index.ts`
+- **Sabit zamanlı karşılaştırma:** `timingSafeEqual(secret, given)` (`:53`) —
+  timing attack'a kapalı.
+- **`service_role` yalnızca sunucuda:** istemciye sızmıyor.
+- **Idempotent claim:** `push_outbox` satırı `sending`e çekilir, çift gönderim engellenir (`:69-76`).
+- **Hata metni sınırlı:** 300 karakter, gizli bilgi sızmaz (`:127-128`).
+
+### G4.3 Web panel oturum/rol
+- **`isAuthenticated` yalnızca `sub` ile:** `utils/supabase/proxy.ts:31-35` —
+  anonim token'ın claims dönmesi tuzağı kapatılmış.
+- **Rol kontrolü sunucu tarafında:** `(admin)/yonetim/layout.tsx:20-31` — admin
+  değilse `/veli-paneli`'ne yönlendirir; asıl yetki DB'de.
+- **Demo modu üretimde zorunlu kapalı:** `lib/demo-mode.ts:13-15` (`NODE_ENV !== "production"`).
+- **`service_role` istemciye sızmıyor:** `client.ts` / `server.ts` yalnızca
+  `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` kullanır.
+
+### G4.4 Supabase RLS / RPC disiplini
+- **Her SECURITY DEFINER `set search_path` ile:** grep ile 40+ eşleşme,
+  `set search_path = ''` veya `= public, pg_temp` (AGENTS.md §4 uyumlu).
+- **`require_admin()` / `is_admin()` deseni:** tüm admin RPC'lerinde
+  (`20260920000900` ve sonrası).
+- **Trigger fonksiyonları revoke:** `handle_new_user`, `create_student_stats`
+  vb. `from public, anon, authenticated` (`initial_schema:539-542`).
+- **RLS fail-closed:** `grade_changes` / `question_reports` politikası yok →
+  kimse okuyamaz (bilinçli, `KURTARMA_DURUMU.md`).
+- **Öğrenci/veli erişimi `is_parent_of` ile:** `student_stats`, `user_answers`,
+  `user_badges` (`initial_schema:516-526`).
+
+### G4.5 Mobil
+- **Token'lar güvenli depoda:** `services/secure_storage.dart` — Android
+  `EncryptedSharedPreferences`, iOS Keychain (`first_unlock`). Düz metin yok.
+- **Yalnızca publishable key:** `lib/config/env.dart` (anon key, RLS korumalı).
+- **Push yalnızca kullanıcı izniyle:** `push_backend.dart` — `requestPermission`
+  ayarlardan açılınca çağrılır.
+
+### G4.6 Sır taraması (kod tabanı)
+- Takip edilen kaynakta **hardcoded sır bulunamadı** — tüm `api_key`/`secret`
+  eşleşmeleri `env(...)` referansı, doküman örneği veya parametre adıydı.
+  **Tek istisna §1'deki `.claude/*` dosyaları.**
+
+---
+
+## G5. 🔵 Sertleştirme önerileri (acil değil)
+
+1. **`supabase/config.toml:181` → `minimum_password_length = 6`.** Çocuk
+   uygulaması için bile düşük; 8-10 önerilir. Ayrıca
+   `password_requirements = ""` (karmaşıklık yok).
+2. **`supabase/config.toml:227` → `secure_password_change = false`.** Şifre
+   değişiminde yeniden kimlik doğrulama zorunlu olmalı (`true`).
+3. **Kök `.gitignore`'a `.claude/` ekle** (en azından `settings.json`,
+   `mcp.json`, `settings.local.json`). §1'in kalıcı çözümü.
+4. **CI'da sır taraması** (`gitleaks` / `trufflehog`) — bu sınıf hatanın
+   tekrarını engeller.
+
+---
+
+## G6. Bilinen ve belgelenmiş güvenlik durumları (tekrar açma)
+
+- `grade_changes` / `question_reports` RLS politikaları diskte yok → **fail-closed**,
+  bilinçli bırakıldı (`PHASE0_DURUM_RAPORU.md` §SECURITY RISKS #1).
+- `question_quality_config` tablosu ve `questions.inceleme_gerekli` kolonu
+  eksik → `report_question()` çağrılınca hata verir, sessiz veri kaybı yok
+  (aynı rapor, risk #2).
+- APK `libapp.so` içinde `service_role` / `sb_secret_` **aranmış, bulunamamış**
+  (`MASTER_BRIEF.md` §6.4) — doğru davranış.
+
+---
+
+## Doğrulama Sonucu — Güvenlik (Claude dolduracak)
+
+| § | Bulgu | Durum | Not |
+|---|---|---|---|
+| G1 | `evaluate_characters` ID doğrulaması yok | | |
+| G2 | `characters_after_change` gereksiz grant | | |
+| G3 | `character_definitions` anon select | | |
+| G4 | Sağlam kontroller (ödeme, push, RLS, mobil) | | |
+| G5 | Sertleştirme önerileri | | |
