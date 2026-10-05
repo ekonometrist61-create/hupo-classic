@@ -85,24 +85,37 @@ declare
   v_ders_basari integer;
   r             record;
 begin
-  -- Öğrenci istatistiklerini çek
+  -- Öğrenci istatistiklerini çek (student_stats: badge sistemiyle aynı kaynak)
   select
     coalesce(xp, 0),
-    coalesce(streak, 0),
-    coalesce(dogru_cevap_sayisi, 0),
-    coalesce(seviye, 1)
-  into v_xp, v_streak, v_soru_sayisi, v_seviye
-  from public.profiles
-  where id = p_student_id;
+    coalesce(streak_count, 0),
+    coalesce(level, 1)
+  into v_xp, v_streak, v_seviye
+  from public.student_stats
+  where student_id = p_student_id;
+
+  v_xp     := coalesce(v_xp, 0);
+  v_streak := coalesce(v_streak, 0);
+  v_seviye := coalesce(v_seviye, 1);
+
+  -- Toplam doğru cevap sayısı
+  select coalesce(sum(dogru_sayisi), 0)::integer
+  into v_soru_sayisi
+  from public.user_answers
+  where student_id = p_student_id;
 
   -- Ustalaşılan ders sayısı: accuracy ≥ 80 % ve en az 20 soru
-  select count(distinct ders)::integer
+  select count(*)::integer
   into v_ders_basari
-  from public.student_stats
-  where student_id = p_student_id
-    and toplam > 0
-    and (dogru::float / toplam) >= 0.8
-    and toplam >= 20;
+  from (
+    select q.ders
+    from public.user_answers ua
+    join public.questions q on q.id = ua.question_id
+    where ua.student_id = p_student_id
+    group by q.ders
+    having sum(ua.deneme_sayisi) >= 20
+       and (sum(ua.dogru_sayisi)::float / sum(ua.deneme_sayisi)) >= 0.8
+  ) t;
 
   -- Kazanılabilecek her karakter için kontrol et
   for r in
@@ -132,7 +145,8 @@ revoke execute on function public.evaluate_characters(uuid) from public, anon;
 grant  execute on function public.evaluate_characters(uuid) to authenticated;
 
 -- ---------------------------------------------------------------------
--- 6) Tetikçi: profil her değiştiğinde karakterleri değerlendir
+-- 6) Tetikçi: istatistikler değiştiğinde karakterleri değerlendir
+--    (badge sistemiyle aynı iki kaynak: student_stats ve user_answers)
 -- ---------------------------------------------------------------------
 create or replace function public.characters_after_change()
 returns trigger
@@ -141,7 +155,7 @@ security definer
 set search_path = public, pg_temp
 as $$
 begin
-  perform public.evaluate_characters(new.id);
+  perform public.evaluate_characters(new.student_id);
   return new;
 end;
 $$;
@@ -149,10 +163,20 @@ $$;
 revoke execute on function public.characters_after_change() from public, anon;
 grant  execute on function public.characters_after_change() to authenticated;
 
+-- XP / seviye / seri değişince
 drop trigger if exists trg_characters_after_profile on public.profiles;
-create trigger trg_characters_after_profile
-  after update of xp, streak, dogru_cevap_sayisi, seviye
-  on public.profiles
+drop trigger if exists trg_characters_after_stats on public.student_stats;
+create trigger trg_characters_after_stats
+  after update of xp, level, streak_count
+  on public.student_stats
+  for each row
+  execute function public.characters_after_change();
+
+-- Cevap kaydedilince (soru sayısı, ders başarısı)
+drop trigger if exists trg_characters_after_answer on public.user_answers;
+create trigger trg_characters_after_answer
+  after insert or update
+  on public.user_answers
   for each row
   execute function public.characters_after_change();
 
