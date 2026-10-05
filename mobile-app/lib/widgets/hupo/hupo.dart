@@ -7,7 +7,9 @@ import 'hupo_pose.dart';
 
 export 'hupo_pose.dart';
 
-/// Hupo: uygulamanın baykuş rehberi. Karakter sayfalarından çıkarılmış PNG duruşlarını gösterir.
+const double _kartYaricapOrani = 0.22;
+
+/// Hupo: uygulamanın baykuş rehberi. Saydam duruşları ve Master Hupo ifade kartlarını gösterir.
 ///
 /// Ya doğrudan bir [pose] verilir ya da bir an ([mood]) ve isteğe bağlı [variant] verilir.
 class Hupo extends StatefulWidget {
@@ -72,16 +74,38 @@ class _HupoState extends State<Hupo> with SingleTickerProviderStateMixin {
 
   @override
   Widget build(BuildContext context) {
-    final image = SizedBox.square(
-      dimension: widget.size,
-      child: Image.asset(
-        widget.resolvedPose.assetPath,
-        fit: BoxFit.contain,
-        alignment: Alignment.bottomCenter,
-        filterQuality: FilterQuality.medium,
-        gaplessPlayback: true,
-        excludeFromSemantics: true,
-      ),
+    final pose = widget.resolvedPose;
+    final genislik = widget.size * pose.oran;
+    final piksel = (genislik * MediaQuery.devicePixelRatioOf(context)).round();
+
+    final resim = Image.asset(
+      pose.assetPath,
+      fit: pose.kart ? BoxFit.cover : BoxFit.contain,
+      alignment: pose.kart ? Alignment.center : Alignment.bottomCenter,
+      cacheWidth: piksel,
+      gaplessPlayback: true,
+      excludeFromSemantics: true,
+    );
+
+    // Master Hupo kartları mavi fonlu karedir: yuvarlatılıp çıkartma gibi gösterilir.
+    final image = SizedBox(
+      width: genislik,
+      height: widget.size,
+      child: pose.kart
+          ? DecoratedBox(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(widget.size * _kartYaricapOrani),
+                border: Border.all(
+                  color: Colors.white,
+                  width: (widget.size * 0.03).clamp(1.5, 4.0),
+                ),
+              ),
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(widget.size * _kartYaricapOrani),
+                child: resim,
+              ),
+            )
+          : resim,
     );
 
     return Semantics(

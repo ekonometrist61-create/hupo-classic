@@ -1,0 +1,58 @@
+{
+  "// Not": "Bu dosyayi her projenin .claude/settings.json dosyasina KOPYALA. Anahtarlar (/home/ubuntu/.ssh) yalnizca ortam seviyesinde gecerli; proje seviyesinde bunlari yazma.",
+  "// ilk haftalar": "Claude Code'u Plan + Manual izin moduyla calistir. '--dangerously-skip-permissions' bu ortamda ASLA kullanilmaz.",
+
+  "permissions": {
+    "deny": [
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Read(./secrets/**)",
+      "Read(**/*.pem)",
+      "Read(**/id_rsa*)",
+      "Read(**/id_ed25519*)",
+      "Bash(rm -rf /*)",
+      "Bash(git push origin main)",
+      "Bash(supabase db push --prod)"
+    ],
+    "ask": [
+      "Bash(git push:*)",
+      "Bash(docker compose down:*)",
+      "Bash(sudo:*)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+
+  "sandbox": {
+    "enabled": true,
+    "failIfUnavailable": true,
+    "autoAllowBashIfSandboxed": true,
+    "excludedCommands": ["git", "docker", "pnpm", "npm"],
+    "credentials": {
+      "files": [
+        { "path": "~/.ssh", "mode": "deny" },
+        { "path": "~/.aws/credentials", "mode": "deny" },
+        { "path": "~/.config/gcloud", "mode": "deny" },
+        { "path": "~/.gnupg", "mode": "deny" }
+      ]
+    }
+  },
+
+  "env": {
+    "FABRIKA_ENV": "local",
+    "NODE_VERSION": "24"
+  },
+
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash ~/dev/scripts/git-guard.sh",
+            "timeout": 20
+          }
+        ]
+      }
+    ]
+  }
+}

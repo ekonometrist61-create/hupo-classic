@@ -202,7 +202,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     final mood = switch (result) {
       null => (_remaining > 0 && _remaining <= 5)
           ? HupoMood.hurry
-          : HupoMood.thinking,
+          : HupoMood.question,
       AnswerResult(correct: true) => HupoMood.correct,
       _ => HupoMood.wrong,
     };

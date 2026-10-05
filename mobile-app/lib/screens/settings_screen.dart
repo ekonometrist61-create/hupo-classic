@@ -95,7 +95,7 @@ class SettingsScreen extends ConsumerWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                _SectionTitle('Okunabilirlik'),
+                const _SectionTitle('Okunabilirlik'),
                 GameCard(
                   padding: const EdgeInsets.all(16),
                   child: SizedBox(
@@ -103,7 +103,7 @@ class SettingsScreen extends ConsumerWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        _Label('Yazı tipi'),
+                        const _Label('Yazı tipi'),
                         const SizedBox(height: 8),
                         _ChoiceRow<AppFont>(
                           values: AppFont.values,
@@ -112,7 +112,7 @@ class SettingsScreen extends ConsumerWidget {
                           onSelected: notifier.setFont,
                         ),
                         const SizedBox(height: 16),
-                        _Label('Yazı boyutu'),
+                        const _Label('Yazı boyutu'),
                         const SizedBox(height: 8),
                         _ChoiceRow<TextSizeOption>(
                           values: TextSizeOption.values,
@@ -125,7 +125,7 @@ class SettingsScreen extends ConsumerWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                _SectionTitle('Hareket ve titreşim'),
+                const _SectionTitle('Hareket ve titreşim'),
                 GameCard(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
@@ -149,7 +149,7 @@ class SettingsScreen extends ConsumerWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                _SectionTitle('Günlük hedef'),
+                const _SectionTitle('Günlük hedef'),
                 GameCard(
                   padding: const EdgeInsets.all(16),
                   child: SizedBox(
@@ -157,7 +157,7 @@ class SettingsScreen extends ConsumerWidget {
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        _Label('Günde kaç soru çözmek istersin?'),
+                        const _Label('Günde kaç soru çözmek istersin?'),
                         const SizedBox(height: 8),
                         _ChoiceRow<int>(
                           values: DailyGoal.options,
@@ -184,10 +184,10 @@ class SettingsScreen extends ConsumerWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                _SectionTitle('Bildirimler'),
+                const _SectionTitle('Bildirimler'),
                 const PushSettingsCard(),
                 const SizedBox(height: 20),
-                _SectionTitle('Gizlilik ve bilgilerin'),
+                const _SectionTitle('Gizlilik ve bilgilerin'),
                 _ActionTile(
                   icon: Icons.privacy_tip_rounded,
                   title: 'Gizlilik bildirimi',
@@ -329,7 +329,7 @@ class _SwitchRow extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(title,
-                      style: appText(size: 16, weight: FontWeight.w900)),
+                      style: appText(weight: FontWeight.w900)),
                   Text(
                     subtitle,
                     style: appText(
@@ -381,7 +381,6 @@ class _ActionTile extends StatelessWidget {
               children: [
                 Text(title,
                     style: appText(
-                        size: 16,
                         weight: FontWeight.w900,
                         color: danger ? color : AppColors.ink)),
                 Text(subtitle,

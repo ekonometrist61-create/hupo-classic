@@ -113,7 +113,7 @@ class _SignupScreenState extends State<SignupScreen> {
           onPressed: () => Navigator.of(context).pop(),
           child: Text(
             'Zaten hesabın var mı? Giriş yap',
-            style: appText(size: 16, weight: FontWeight.w800, color: AppColors.primary),
+            style: appText(weight: FontWeight.w800, color: AppColors.primary),
           ),
         ),
       ],

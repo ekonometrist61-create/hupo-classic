@@ -595,6 +595,8 @@ class _InlineRetry extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        const Hupo(mood: HupoMood.retry, size: 84),
+        const SizedBox(height: 8),
         Text(text,
             style: appText(color: AppColors.muted, weight: FontWeight.w700)),
         const SizedBox(height: 12),

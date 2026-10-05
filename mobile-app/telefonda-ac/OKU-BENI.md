@@ -11,12 +11,14 @@
 1. `mobile-app` klasörünün içindeki **telefonda-ac** klasörünü açın.
 2. **telefonda-ac.bat** dosyasına **çift tıklayın**.
 3. Siyah bir pencere açılır. Yazılar akar; **ilk seferde 3-6 dakika** sürebilir. Bekleyin, pencereyi kapatmayın.
-4. Sonunda şuna benzer bir kutu görürsünüz:
+   - Araç, **Flutter'ı kendisi bulur** (el ile yol vermenize gerek yok).
+   - Projeyi otomatik olarak `C:\Users\cengi\flutterwork\mobile-app` konumuna kopyalar; çünkü Flutter, OneDrive içindeki Türkçe karakterli yola yazamıyor.
+4. Sonunda şuna benzer bir kutu görürsünüz (adres, **"Sunucu çalışıyor"** yazısının altında çıkar):
 
    `http://192.168.1.91:8080`
 
-   (Sizde sayılar farklı olabilir. Ekranda ne yazıyorsa onu kullanın.)
-5. Windows "Güvenlik Duvarı" sorarsa **"Özel ağlar" kutusunu işaretleyip "Erişime izin ver"** deyin.
+   (Sizde sayılar farklı olabilir; birden çok adres çıkabilir. Ekranda ne yazıyorsa onu kullanın.)
+5. Pencere **yönetici olarak** açıldıysa güvenlik duvarı kuralı **otomatik** eklenir. "Windows Güvenlik Duvarı" sorarsa **"Özel ağlar"** kutusunu işaretleyip **"Erişime izin ver"** deyin.
 
 Her seferinde uygulamanın **en son hâli** yeniden hazırlanır; güncel hâli görmek için bat dosyasını tekrar çalıştırmanız yeterli.
 
@@ -37,7 +39,7 @@ Ana ekranda simge oluşur; dokununca adres çubuğu olmadan tam ekran açılır.
 1. **Aynı Wi-Fi mi?** Telefonda mobil veriyi kapatın, bilgisayarla aynı Wi-Fi'ye bağlanın. Misafir ağı ("guest") bazen cihazları birbirinden ayırır.
 2. **VPN** açıksa (telefonda veya bilgisayarda) kapatın.
 3. **Adres doğru mu?** Siyah penceredeki adresi harfi harfine yazdınız mı? Başında `http://` olsun, sonunda `:8080` olsun.
-4. **Güvenlik Duvarı (isteğe bağlı çözüm):** Windows bağlantıyı engelliyor olabilir.
+4. **Güvenlik Duvarı:** Araç yönetici olarak çalıştırıldıysa kuralı **otomatik** ekler. Eklenmediyse şunları deneyin:
    - Başlat'a "Windows Defender Güvenlik Duvarı üzerinden bir uygulamaya izin ver" yazın > **Ayarları değiştir** > listede **Dart** veya **flutter** varsa **Özel** kutusunu işaretleyin.
    - Ya da Başlat'a `cmd` yazın > sağ tık > **Yönetici olarak çalıştır** > şunu yapıştırın:
      `netsh advfirewall firewall add rule name="Telefonda Ac 8080" dir=in action=allow protocol=TCP localport=8080 profile=private`

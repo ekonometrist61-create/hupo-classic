@@ -9,13 +9,12 @@ import '../../theme/app_theme.dart';
 import '../../utils/motion.dart';
 import '../hupo/hupo.dart';
 import '../ui/chunky_button.dart';
-import 'character_card_widget.dart';
+import 'character_art.dart';
 
 Future<void> showCharacterUnlockDialog(
     BuildContext context, CharacterCard karakter) {
   return showGeneralDialog<void>(
     context: context,
-    barrierDismissible: false,
     barrierLabel: 'Karakter Açıldı',
     barrierColor: Colors.black.withValues(alpha: 0.6),
     transitionDuration: motionMs(context, 350),
@@ -65,9 +64,11 @@ class CharacterUnlockView extends StatelessWidget {
                             color: karakter.sinif.renk),
                       ),
                       const SizedBox(height: 16),
-                      SizedBox(
-                        width: 96,
-                        child: CharacterCardWidget(karakter: karakter),
+                      KarakterGorseli(
+                        karakter: karakter,
+                        boyut: 200,
+                        yaricap: 28,
+                        kalinlik: 4,
                       ),
                       const SizedBox(height: 12),
                       Text(
@@ -83,7 +84,6 @@ class CharacterUnlockView extends StatelessWidget {
                         textAlign: TextAlign.center,
                         style: appText(
                             size: 15,
-                            weight: FontWeight.w600,
                             color: AppColors.muted,
                             height: 1.4),
                       ),
@@ -133,7 +133,7 @@ class _SinifRozeti extends StatelessWidget {
       ),
       child: Text(
         sinif.ad,
-        style: appText(size: 12, weight: FontWeight.w600, color: sinif.renk),
+        style: appText(size: 12, color: sinif.renk),
       ),
     );
   }

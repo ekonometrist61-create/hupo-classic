@@ -1,0 +1,94 @@
+# =====================================================================
+# Kişisel Yazılım Fabrikası - sunucu katmani (OPSIYONEL)
+# 24 GB RAM icin rahat; 8 GB laptopta bu dosyayi CALISTIRMA.
+# Kullanim:  cp .env.template .env && docker compose --profile staging up -d
+# =====================================================================
+name: fabrika
+
+services:
+  # ---------- Reverse proxy: internette tek acik nokta ----------
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks: [fabrika]
+
+  # ---------- Uygulama (Next.js) ----------
+  web:
+    image: node:24-alpine
+    restart: unless-stopped
+    working_dir: /app
+    command: sh -c "corepack enable && pnpm install --frozen-lockfile && pnpm build && pnpm start"
+    environment:
+      NODE_ENV: production
+      DATABASE_URL: ${DATABASE_URL}
+      SUPABASE_URL: ${SUPABASE_URL}
+      SUPABASE_ANON_KEY: ${SUPABASE_ANON_KEY}
+      # SERVICE_ROLE sunucuda kalir; NEXT_PUBLIC_ OLMAMALI
+      SUPABASE_SERVICE_ROLE_KEY: ${SUPABASE_SERVICE_ROLE_KEY}
+    env_file: [.env]
+    volumes:
+      - ./apps/web:/app
+    networks: [fabrika]
+    depends_on: [db]
+    deploy:
+      resources:
+        limits: { cpus: "2.0", memory: 4G }
+
+  # ---------- Veritabani (yalnizca GELISTIRME icin) ----------
+  db:
+    image: postgres:16-alpine
+    restart: unless-stopped
+    profiles: ["staging"]          # varsayilan olarak KAPALI
+    environment:
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-postgres}
+      POSTGRES_DB: fabrika
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks: [fabrika]
+
+  # ---------- Gozenlenebilirlik ----------
+  # Uptime monitor: her 5 dakikada bir uygulamayi yoklar
+  uptime:
+    image: louislam/uptime-kuma:1
+    restart: unless-stopped
+    profiles: ["staging"]
+    ports:
+      - "3001:3001"                 # internete ACMA; sadece Tailscale uzerinden
+    volumes:
+      - uptime_data:/app/data
+    networks: [fabrika]
+
+  # ---------- Log toplayici ----------
+  # Kucuk projelerde gerekmez; sadece log dosyalari buyurse ac
+  loki:
+    image: grafana/loki:3.1.1
+    restart: unless-stopped
+    profiles: ["staging"]
+    command: -config.file=/etc/loki/local-config.yaml
+    volumes:
+      - ./loki-config.yaml:/etc/loki/local-config.yaml:ro
+      - loki_data:/loki
+    networks: [fabrika]
+
+volumes:
+  caddy_data:
+  caddy_config:
+  pgdata:
+  uptime_data:
+  loki_data:
+
+networks:
+  fabrika:
+    driver: bridge

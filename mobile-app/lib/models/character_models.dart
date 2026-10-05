@@ -48,8 +48,14 @@ class CharacterCard {
   final bool kazanildi;
   final DateTime? kazanildiAt;
 
-  /// Flutter'da gösterilecek asset yolu.
-  String get assetPath => 'assets/characters/$ikon';
+  /// Flutter'da gösterilecek asset yolu: `assets/characters/sinif/kod.webp`.
+  /// Sunucudaki `ikon` 'ozgur_ruh.png' biçiminde gelir; uzantı istemcide .webp'e çevrilir.
+  String get assetPath {
+    final kodAdi = ikon.replaceFirst(_uzantiDeseni, '');
+    return 'assets/characters/${sinif.kod}/$kodAdi.webp';
+  }
+
+  static final _uzantiDeseni = RegExp(r'\.[A-Za-z0-9]+$');
 }
 
 /// Karakter sınıfı (8 adet).

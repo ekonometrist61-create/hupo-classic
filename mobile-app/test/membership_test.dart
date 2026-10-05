@@ -109,7 +109,7 @@ void main() {
   });
 
   group('MembershipCard', () {
-    testWidgets('aktif: plan, bitiş, kalan gün, harikasin pozu, satın alma yok', (tester) async {
+    testWidgets('aktif: plan, bitiş, kalan gün, harika pozu, satın alma yok', (tester) async {
       await tester.pumpWidget(_card(MembershipStatus(
         active: true,
         planName: 'Yıllık Premium',
@@ -123,7 +123,7 @@ void main() {
       expect(find.text('Kalan: 90 gün'), findsOneWidget);
       expect(find.byType(LinearProgressIndicator), findsOneWidget);
       final hupo = tester.widget<Hupo>(find.byType(Hupo));
-      expect(hupo.pose, HupoPose.harikasin);
+      expect(hupo.pose, HupoPose.harika);
       expect(find.textContaining('Premium için velinle konuş'), findsNothing);
       expect(find.byType(ElevatedButton), findsNothing);
       expect(find.byType(TextButton), findsNothing);
@@ -134,7 +134,7 @@ void main() {
       await tester.pump();
       expect(find.text('Ücretsiz üyelik'), findsOneWidget);
       expect(find.text('Premium için velinle konuş.'), findsOneWidget);
-      expect(tester.widget<Hupo>(find.byType(Hupo)).pose, HupoPose.merakli);
+      expect(tester.widget<Hupo>(find.byType(Hupo)).pose, HupoPose.merakEdiyor);
       expect(find.byType(LinearProgressIndicator), findsNothing);
       expect(find.byType(InkWell), findsNothing);
       expect(find.byType(GestureDetector), findsNothing);
@@ -145,7 +145,7 @@ void main() {
       await tester.pump();
       expect(find.text('Bugün kalan ücretsiz soru: 3'), findsOneWidget);
 
-      await tester.pumpWidget(_card(const MembershipStatus(gatingActive: false, freeQuestionsLeftToday: 3)));
+      await tester.pumpWidget(_card(const MembershipStatus(freeQuestionsLeftToday: 3)));
       await tester.pump();
       expect(find.textContaining('ücretsiz soru'), findsNothing);
     });

@@ -93,7 +93,7 @@ class _LoginScreenState extends State<LoginScreen> {
           ),
           child: Text(
             'Hesabın yok mu? Kayıt ol',
-            style: appText(size: 16, weight: FontWeight.w800, color: AppColors.primary),
+            style: appText(weight: FontWeight.w800, color: AppColors.primary),
           ),
         ),
       ],

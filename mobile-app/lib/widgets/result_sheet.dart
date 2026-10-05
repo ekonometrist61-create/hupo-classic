@@ -6,6 +6,7 @@ import 'package:lottie/lottie.dart';
 import '../models/models.dart';
 import '../theme/app_theme.dart';
 import '../utils/motion.dart';
+import 'hupo/hupo.dart';
 import 'ui/chunky_button.dart';
 
 /// Cevap sonrası alttan açılan yeşil/kırmızı sonuç penceresi.
@@ -157,9 +158,17 @@ class _ResultSheetState extends State<ResultSheet> {
                   ),
                   if (r.steps.isNotEmpty) ...[
                     const SizedBox(height: 12),
-                    Text(
-                      'Birlikte çözelim: adım adım',
-                      style: appText(size: 13, weight: FontWeight.w900, color: strong),
+                    Row(
+                      children: [
+                        Hupo(mood: HupoMood.solution, variant: r.steps.length, size: 44),
+                        const SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            'Birlikte çözelim: adım adım',
+                            style: appText(size: 13, weight: FontWeight.w900, color: strong),
+                          ),
+                        ),
+                      ],
                     ),
                     const SizedBox(height: 8),
                     ConstrainedBox(

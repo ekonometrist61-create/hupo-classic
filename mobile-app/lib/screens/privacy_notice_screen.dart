@@ -62,7 +62,7 @@ class _PrivacyNoticeScreenState extends ConsumerState<PrivacyNoticeScreen> {
                       icon: const Icon(Icons.arrow_back_rounded, color: Colors.white, size: 28),
                     ),
                   ),
-                const Hupo(pose: HupoPose.dost, size: 110),
+                const Hupo(pose: HupoPose.hosgeldin, size: 110),
                 const SizedBox(height: 4),
                 Text(
                   'Bilgilerin nasıl korunuyor?',

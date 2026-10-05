@@ -1,0 +1,65 @@
+{
+  "// Not": "VS Code Remote-SSH / WSL ayarlari. Dosyayi iki yere kopyala: ~/.vscode-user/settings.json (laptop) ve sunucuda ~/.vscode-server/data/Machine/settings.json",
+  "// kaynak klasor": "Sunucuya baglanirken /home/ubuntu/dev/projects/<proje> secilir; /mnt/c ASLA kullanma",
+
+  "remote.SSH.defaultExtensions": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "bradlc.vscode-tailwindcss",
+    "github.copilot-chat"
+  ],
+  "remote.SSH.showLoginTerminal": true,
+  "remote.SSH.localServerDownload": "always",
+
+  "files.eol": "\n",
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+  "files.exclude": {
+    "**/.next": true,
+    "**/build": true,
+    "**/.dart_tool": true,
+    "**/node_modules": true
+  },
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true,
+    "**/.next/**": true
+  },
+
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/*.min.js": true
+  },
+  "search.followSymlinks": false,
+
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.rulers": [100],
+  "editor.tabSize": 2,
+
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescript.enablePromptUseWorkspaceTsdk": true,
+
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.profiles.linux": {
+    "bash": { "path": "/bin/bash", "args": ["-l"] }
+  },
+  "terminal.integrated.scrollback": 10000,
+  "terminal.integrated.persistentSessionScrollback": 5000,
+
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "git.alwaysStash": false,
+  "scm.defaultViewMode": "tree",
+  "scm.showPushSuccessNotification": true,
+
+  "workbench.colorTheme": "Default Dark Modern",
+  "workbench.startupEditor": "none",
+
+  "// 8 GB RAM icin not": "Yerel Supabase/Docker acilacaksa VS Code ayarlarindan 'files.watcherExclude' genisletilmeli; aksi halde 8 GB'da dosya izleyici bellegi yiyip WSL'i yavaslatir"
+}

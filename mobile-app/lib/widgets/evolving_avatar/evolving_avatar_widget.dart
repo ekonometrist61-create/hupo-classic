@@ -786,9 +786,9 @@ class _GearPainter extends CustomPainter {
     c.drawPath(
       outer,
       Paint()
-        ..shader = LinearGradient(
-          colors: const [_flameRed, _flameOrange, _flameYellow],
-          stops: const [0, 0.55, 1],
+        ..shader = const LinearGradient(
+          colors: [_flameRed, _flameOrange, _flameYellow],
+          stops: [0, 0.55, 1],
         ).createShader(Rect.fromLTWH(0, -wid, len, wid * 2)),
     );
     c.drawPath(outer, _stroke(_flameOutline, 6));

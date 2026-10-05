@@ -43,7 +43,7 @@ class _Active extends StatelessWidget {
         children: [
           Row(
             children: [
-              const Hupo(pose: HupoPose.harikasin, size: 72),
+              const Hupo(pose: HupoPose.harika, size: 72),
               const SizedBox(width: 14),
               Expanded(
                 child: Column(
@@ -109,7 +109,7 @@ class _Free extends StatelessWidget {
       padding: const EdgeInsets.all(20),
       child: Row(
         children: [
-          const Hupo(pose: HupoPose.merakli, size: 72),
+          const Hupo(pose: HupoPose.merakEdiyor, size: 72),
           const SizedBox(width: 14),
           Expanded(
             child: Column(

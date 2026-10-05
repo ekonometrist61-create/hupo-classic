@@ -202,23 +202,30 @@ class _KarakterIzgara extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      children: [
-        for (final k in karakterler)
-          Expanded(
-            child: CharacterCardWidget(
-              karakter: k,
-              onTap: () => _karakterDetayi(context, k),
+    // Beş kart var; yazı boyutu büyüse de satır içeriğine göre uzasın diye ListView yerine Row.
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      clipBehavior: Clip.none,
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          for (var i = 0; i < karakterler.length; i++) ...[
+            if (i > 0) const SizedBox(width: 12),
+            CharacterCardWidget(
+              karakter: karakterler[i],
+              onTap: () => _karakterDetayi(context, karakterler[i]),
             ),
-          ),
-      ],
+          ],
+        ],
+      ),
     );
   }
 
   void _karakterDetayi(BuildContext context, CharacterCard karakter) {
     showModalBottomSheet(
       context: context,
+      isScrollControlled: true,
+      useSafeArea: true,
       backgroundColor: Colors.transparent,
       builder: (_) => CharacterDetailSheet(karakter: karakter),
     );

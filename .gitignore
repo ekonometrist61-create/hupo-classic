@@ -32,6 +32,8 @@ key.properties
 *.jks
 *.keystore
 *.pem
+# MCP sunucu konfigü API anahtarı içeriyor (GEMINI_API_KEY vb.)
+.mcp.json
 
 # --- Supabase CLI geçici dosyaları ---
 supabase/.temp/

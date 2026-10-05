@@ -78,10 +78,20 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
+  # Flutter alt klasörleri kendiliğinden taramaz; her klasör ayrı yazılır.
   assets:
     - assets/hupo/
+    - assets/hupo/ifade/
+    - assets/hupo/uygulama/
     - assets/lottie/
-    - assets/characters/
+    - assets/characters/ozgur_ruhlar/
+    - assets/characters/firtina/
+    - assets/characters/kasifler/
+    - assets/characters/bozkir/
+    - assets/characters/zihin_ustalari/
+    - assets/characters/muhafizlar/
+    - assets/characters/ustalar/
+    - assets/characters/efsaneler/
     - assets/fonts/Nunito-OFL.txt
     - assets/fonts/Lexend-OFL.txt
 

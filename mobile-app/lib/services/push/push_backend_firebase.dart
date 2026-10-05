@@ -40,7 +40,7 @@ class FirebasePushBackend implements PushBackend {
       }
       // Uygulama açıkken sistem bildirimi göstermeyiz; bunu uygulama içi afiş yapar.
       await _fcm.setForegroundNotificationPresentationOptions(
-          alert: false, badge: false, sound: false);
+          );
       _ready = true;
     } catch (e) {
       debugPrint('Push: Firebase başlatılamadı, bildirimler kapalı kalacak ($e)');

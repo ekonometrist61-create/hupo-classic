@@ -40,7 +40,6 @@ class AuthScaffold extends StatelessWidget {
                     subtitle,
                     textAlign: TextAlign.center,
                     style: appText(
-                      size: 16,
                       weight: FontWeight.w700,
                       color: Colors.white.withValues(alpha: 0.9),
                     ),

@@ -185,6 +185,8 @@ class _Section<T> extends StatelessWidget {
       ),
       error: (_, __) => Column(
         children: [
+          const Hupo(mood: HupoMood.retry, size: 84),
+          const SizedBox(height: 8),
           Text(
             retryLabel,
             textAlign: TextAlign.center,

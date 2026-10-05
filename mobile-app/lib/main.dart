@@ -7,6 +7,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 import 'auth/login.dart';
 import 'config/env.dart';
 import 'screens/home_screen.dart';
+import 'screens/splash_screen.dart';
 import 'services/push/push_host.dart';
 import 'services/secure_storage.dart';
 import 'settings/app_settings.dart';
@@ -65,7 +66,7 @@ class App extends ConsumerWidget {
           child: PushHost(child: MaintenanceGate(child: child ?? const SizedBox.shrink())),
         );
       },
-      home: const AuthGate(),
+      home: const SplashGate(child: AuthGate()),
     );
   }
 }

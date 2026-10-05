@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/character_models.dart';
 import '../../theme/app_theme.dart';
+import 'character_art.dart';
 
 class CharacterDetailSheet extends StatelessWidget {
   const CharacterDetailSheet({super.key, required this.karakter});
@@ -19,7 +20,7 @@ class CharacterDetailSheet extends StatelessWidget {
         borderRadius: BorderRadius.all(Radius.circular(28)),
       ),
       child: SafeArea(
-        child: Padding(
+        child: SingleChildScrollView(
           padding: const EdgeInsets.fromLTRB(24, 16, 24, 24),
           child: Column(
             mainAxisSize: MainAxisSize.min,
@@ -40,7 +41,7 @@ class CharacterDetailSheet extends StatelessWidget {
               // İsim
               Text(
                 karakter.kazanildi ? karakter.ad : '???',
-                style: appText(size: 22, weight: FontWeight.w800, color: AppColors.ink),
+                style: appText(size: 22, weight: FontWeight.w800),
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 4),
@@ -82,34 +83,13 @@ class _BuyukResim extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 120,
-      height: 120,
-      decoration: BoxDecoration(
-        color: karakter.kazanildi
-            ? karakter.sinif.renk.withValues(alpha: 0.12)
-            : AppColors.line.withValues(alpha: 0.4),
-        shape: BoxShape.circle,
-        border: Border.all(
-          color: karakter.kazanildi ? karakter.sinif.renk : AppColors.line,
-          width: 3,
-        ),
-      ),
-      child: ClipOval(
-        child: karakter.kazanildi
-            ? Image.asset(
-                karakter.assetPath,
-                width: 96,
-                height: 96,
-                fit: BoxFit.contain,
-                errorBuilder: (_, __, ___) => const Icon(
-                  Icons.person_rounded,
-                  size: 64,
-                  color: AppColors.primary,
-                ),
-              )
-            : const Icon(Icons.lock_rounded, size: 48, color: AppColors.muted),
-      ),
+    // Ekran yüksekliğinin ~%38'i kadar, en çok 280: küçük telefonda sheet taşmasın.
+    final boyut = (MediaQuery.sizeOf(context).height * 0.38).clamp(160.0, 280.0);
+    return KarakterGorseli(
+      karakter: karakter,
+      boyut: boyut,
+      yaricap: 28,
+      kalinlik: 4,
     );
   }
 }
@@ -129,7 +109,7 @@ class _SinifRozeti extends StatelessWidget {
       ),
       child: Text(
         sinif.ad,
-        style: appText(size: 12, weight: FontWeight.w600, color: sinif.renk),
+        style: appText(size: 12, color: sinif.renk),
       ),
     );
   }

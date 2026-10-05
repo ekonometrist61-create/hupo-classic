@@ -24,7 +24,7 @@ class SavedQuestionsScreen extends ConsumerWidget {
         title: Text(
           'Kayıtlı Sorular',
           style:
-              appText(size: 18, weight: FontWeight.w800, color: AppColors.ink),
+              appText(size: 18, weight: FontWeight.w800),
         ),
         backgroundColor: Colors.transparent,
         elevation: 0,
@@ -48,8 +48,7 @@ class SavedQuestionsScreen extends ConsumerWidget {
                           'Kayıtlı sorun yok',
                           style: appText(
                               size: 18,
-                              weight: FontWeight.w800,
-                              color: AppColors.ink),
+                              weight: FontWeight.w800),
                         ),
                         const SizedBox(height: 8),
                         Text(
@@ -117,7 +116,7 @@ class _SavedQuestionsTile extends StatelessWidget {
               Text(
                 item.question.konu,
                 style: appText(
-                    size: 13, weight: FontWeight.w600, color: AppColors.muted),
+                    size: 13, color: AppColors.muted),
               ),
               const Spacer(),
               BookmarkButton(questionId: item.questionId),
@@ -127,7 +126,7 @@ class _SavedQuestionsTile extends StatelessWidget {
           Text(
             item.question.text,
             style: appText(
-                size: 15, weight: FontWeight.w600, color: AppColors.ink),
+                size: 15),
           ),
         ],
       ),
