@@ -4,14 +4,14 @@
       "type": "http",
       "url": "https://stitch.googleapis.com/mcp",
       "headers": {
-        "X-Goog-Api-Key": "AQ.Ab8RN6IrePe-I3nIRYAbgeXXVwm571ESs-C_mVxikJIGJ5vFbQ"
+        "X-Goog-Api-Key": "${STITCH_API_KEY}"
       }
     },
     "nano-banana-2": {
       "command": "npx",
       "args": ["-y", "nano-banana-2-mcp"],
       "env": {
-        "GEMINI_API_KEY": "AQ.Ab8RN6JqDJmaVr8Z4eLiKwP0F9cLZ-s9X-K10VDqlgnhE1tUOQ"
+        "GEMINI_API_KEY": "${GEMINI_API_KEY}"
       }
     }
   }

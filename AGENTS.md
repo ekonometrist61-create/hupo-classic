@@ -10,6 +10,10 @@
 Bu depoda alt ajan desteği **yoktur**. Her işi, tek ajan olarak sen yapacaksın.
 Karmaşık işleri `todo_list` ile adımlara böl ve ilerlemeyi gerçek zamanlı işaretle.
 
+> İstisna (Claude Code): `.claude/agents/hupo-design-growth-director.md` yalnızca tasarım, UX,
+> pazarlama ve iletişim görevleri için kurulu proje agent'ıdır; kod/güvenlik/backend
+> kurallarını değiştirmez. Ayrıntı: `docs/hupo-design-growth/`.
+
 ---
 
 ## 1. Dil
