@@ -14,11 +14,12 @@ export default async function QuestionsPage({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const d = await getTranslations("yonetim.shell.pageDesc");
   const t = await getTranslations("yonetim.sorular");
 
   return (
     <div>
-      <PageBreadcrumb pageTitle={t("title")} />
+      <PageBreadcrumb pageTitle={t("title")} description={d("questions")} />
       <QuestionsManager />
     </div>
   );

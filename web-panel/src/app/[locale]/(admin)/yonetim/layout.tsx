@@ -26,7 +26,9 @@ export default async function YonetimLayout({
     ? await supabase.from("profiles").select("role").eq("id", user.id).maybeSingle()
     : { data: null };
 
-  if (profile?.role !== "admin") {
+  // Öğretmen yalnızca /yonetim/siniflar'ı kullanır; diğer sayfalardan istemci tarafındaki
+  // RoleGuard onu oraya döndürür, veri erişimi ise veritabanında rol kontrolüyle kapalıdır.
+  if (profile?.role !== "admin" && profile?.role !== "ogretmen") {
     redirect({ href: "/veli-paneli", locale });
   }
 

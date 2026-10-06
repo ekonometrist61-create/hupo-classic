@@ -20,6 +20,6 @@ export const linkBtn =
   "text-theme-sm font-medium text-brand-500 hover:text-brand-600 dark:text-brand-400 disabled:opacity-50";
 
 export const thClass =
-  "px-4 py-3 text-start text-theme-xs font-medium whitespace-nowrap text-gray-500 dark:text-gray-400";
+  "bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase first:rounded-s-lg last:rounded-e-lg dark:bg-white/3 dark:text-gray-400";
 export const tdClass =
   "px-4 py-3 text-theme-sm text-gray-700 dark:text-gray-300";

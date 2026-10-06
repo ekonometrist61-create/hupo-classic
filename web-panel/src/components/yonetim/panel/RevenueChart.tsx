@@ -36,7 +36,11 @@ export default function RevenueChart({
         </p>
       ) : (
         <div className="h-72">
-          <ResponsiveContainer width="100%" height="100%">
+          <ResponsiveContainer
+            width="100%"
+            height="100%"
+            initialDimension={{ width: 640, height: 288 }}
+          >
             <BarChart
               data={rows}
               margin={{ top: 8, right: 8, bottom: 0, left: 8 }}

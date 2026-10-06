@@ -17,14 +17,14 @@ function Card({
   children?: React.ReactNode;
 }) {
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 md:p-6 dark:border-gray-800 dark:bg-white/3">
-      <span className="text-theme-sm text-gray-500 dark:text-gray-400">
+    <div className="rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-800 dark:bg-white/3">
+      <span className="text-theme-xs font-medium text-gray-500 dark:text-gray-400">
         {label}
       </span>
-      <h4 className="mt-2 text-title-sm font-bold text-gray-800 dark:text-white/90">
+      <h4 className="mt-2.5 text-[28px] leading-9 font-semibold tracking-tight text-navy dark:text-white/90">
         {value}
       </h4>
-      <div className="mt-2 text-theme-sm text-gray-500 dark:text-gray-400">
+      <div className="mt-1.5 text-theme-xs font-medium text-gray-500 dark:text-gray-400">
         {children}
       </div>
     </div>
@@ -86,19 +86,6 @@ export default function KpiCards({ data }: { data: DashboardSummary }) {
           </Link>
         </Card>
       </div>
-      {k.bagsiz_ogrenci > 0 && (
-        <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl border border-warning-200 bg-warning-50 px-5 py-4 dark:border-warning-500/30 dark:bg-warning-500/10">
-          <p className="text-theme-sm text-warning-700 dark:text-orange-400">
-            {t("unlinkedWarning", { count: k.bagsiz_ogrenci })}
-          </p>
-          <Link
-            href="/yonetim/kullanicilar"
-            className="text-theme-sm font-medium text-warning-700 underline dark:text-orange-400"
-          >
-            {t("unlinkedAction")}
-          </Link>
-        </div>
-      )}
     </div>
   );
 }

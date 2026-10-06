@@ -6,6 +6,9 @@ import { useTranslations } from "next-intl";
 import Badge from "@/components/ui/badge/Badge";
 import { formatDate } from "@/utils/format";
 import { createClient } from "@/utils/supabase/client";
+import ExportDialog from "../merkez/ExportDialog";
+import VeliProfilePanel from "../merkez/VeliProfilePanel";
+import Drawer from "../ui/Drawer";
 import Pager from "../Pager";
 import type { AdminUser, Paged, UserRole } from "../types";
 import ErrorNote from "./ErrorNote";
@@ -43,6 +46,8 @@ export default function UsersManager() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
+  const [profileUser, setProfileUser] = useState<AdminUser | null>(null);
+  const [exportOpen, setExportOpen] = useState(false);
   const [linkTarget, setLinkTarget] = useState<AdminUser | null>(null);
   const [unlinkTarget, setUnlinkTarget] = useState<AdminUser | null>(null);
   const [unlinking, setUnlinking] = useState(false);
@@ -130,6 +135,9 @@ export default function UsersManager() {
               ))}
             </select>
           </div>
+          <button type="button" className={outlineBtn} onClick={() => setExportOpen(true)}>
+            {t("export.open")}
+          </button>
         </div>
 
         {loading ? (
@@ -161,7 +169,16 @@ export default function UsersManager() {
               <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
                 {rows.map((u) => (
                   <tr key={u.id}>
-                    <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>{u.ad ?? "-"}</td>
+                    <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>
+                      <button
+                        type="button"
+                        className="text-start font-medium hover:text-brand-500 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-blue-light-400"
+                        onClick={() => setProfileUser(u)}
+                        aria-label={`${t("profile.open")}: ${u.ad ?? u.email ?? ""}`}
+                      >
+                        {u.ad ?? "-"}
+                      </button>
+                    </td>
                     <td className={tdClass}>{u.email ?? "-"}</td>
                     <td className={tdClass}>
                       <Badge size="sm" color={ROLE_COLOR[u.rol] ?? "light"}>{t(`roles.${u.rol}`)}</Badge>
@@ -207,6 +224,103 @@ export default function UsersManager() {
           />
         )}
       </section>
+
+      <Drawer
+        open={profileUser !== null}
+        onClose={() => setProfileUser(null)}
+        title={t("profile.title")}
+        closeLabel={t("profile.close")}
+      >
+        {profileUser && profileUser.rol === "veli" && (
+          <VeliProfilePanel key={profileUser.id} veliId={profileUser.id} />
+        )}
+        {profileUser && profileUser.rol !== "veli" && (
+          <div className="space-y-5">
+            <div className="flex items-center gap-3">
+              <span className="grid size-14 place-items-center rounded-full bg-brand-50 text-lg font-bold text-brand-600 dark:bg-brand-500/15">
+                {(profileUser.ad ?? profileUser.email ?? "?").slice(0, 2).toLocaleUpperCase("tr")}
+              </span>
+              <div className="min-w-0">
+                <h3 className="truncate text-lg font-semibold text-navy dark:text-white/90">
+                  {profileUser.ad ?? "-"}
+                </h3>
+                <p className="truncate text-theme-sm text-gray-500 dark:text-gray-400">
+                  {profileUser.email ?? "-"}
+                </p>
+              </div>
+            </div>
+            <div className="flex flex-wrap gap-2">
+              <Badge size="sm" color={ROLE_COLOR[profileUser.rol] ?? "light"}>
+                {t(`roles.${profileUser.rol}`)}
+              </Badge>
+              {profileUser.sinif && (
+                <Badge size="sm" color="light">{profileUser.sinif}</Badge>
+              )}
+            </div>
+
+            <div>
+              <h4 className="mb-2 text-theme-sm font-semibold text-gray-800 dark:text-white/90">
+                {t("profile.learning")}
+              </h4>
+              <dl className="divide-y divide-gray-100 rounded-xl border border-gray-200 text-theme-sm dark:divide-gray-800 dark:border-gray-800">
+                {profileUser.rol === "ogrenci" && (
+                  <div className="flex justify-between gap-4 px-4 py-3">
+                    <dt className="text-gray-500 dark:text-gray-400">{t("profile.parent")}</dt>
+                    <dd className="font-medium">{profileUser.veli_ad ?? t("unlinked")}</dd>
+                  </div>
+                )}
+                <div className="flex justify-between gap-4 px-4 py-3">
+                  <dt className="text-gray-500 dark:text-gray-400">{t("cols.joined")}</dt>
+                  <dd className="font-medium">
+                    {profileUser.uyelik_tarihi
+                      ? formatDate(new Date(profileUser.uyelik_tarihi))
+                      : "-"}
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            {profileUser.rol === "ogrenci" && (
+              <div>
+                <h4 className="mb-2 text-theme-sm font-semibold text-gray-800 dark:text-white/90">
+                  {t("profile.actions")}
+                </h4>
+                <div className="flex flex-wrap gap-3">
+                  <button
+                    type="button"
+                    className={outlineBtn}
+                    onClick={() => {
+                      setLinkTarget(profileUser);
+                      setProfileUser(null);
+                    }}
+                  >
+                    {profileUser.veli_id ? t("changeParent") : t("linkParent")}
+                  </button>
+                  {profileUser.veli_id && (
+                    <button
+                      type="button"
+                      className={dangerBtn}
+                      onClick={() => {
+                        setUnlinkError(null);
+                        setUnlinkTarget(profileUser);
+                        setProfileUser(null);
+                      }}
+                    >
+                      {t("unlink")}
+                    </button>
+                  )}
+                </div>
+              </div>
+            )}
+
+            <p className="rounded-xl bg-[#eef5f2] px-4 py-3 text-theme-xs text-[#3d6654] dark:bg-brand-500/10 dark:text-brand-300">
+              {t("profile.scopeNote")}
+            </p>
+          </div>
+        )}
+      </Drawer>
+
+      {exportOpen && <ExportDialog search={debounced} onClose={() => setExportOpen(false)} />}
 
       {linkTarget && (
         <LinkChildModal

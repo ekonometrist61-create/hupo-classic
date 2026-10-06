@@ -14,11 +14,12 @@ export default async function Page({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
+  const d = await getTranslations("yonetim.shell.pageDesc");
   const t = await getTranslations("yonetim.odemeler");
 
   return (
     <div>
-      <PageBreadcrumb pageTitle={t("title")} />
+      <PageBreadcrumb pageTitle={t("title")} description={d("payments")} />
       <PaymentsManager />
     </div>
   );

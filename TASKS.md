@@ -237,6 +237,19 @@ Ek olarak yazılan (kurtarma sonrası yeni):
 - [ ] Sorular için admin onay akışı web-panel'de test edilecek
 - [x] Flutter widget testleri (`mobile-app/test/`) — `maintenance_gate_test.dart` (8 test) ve `character_celebration_test.dart` (5 test) eklendi
 
+### Admin Yönetim Merkezi yenileme (Hupo_Admin_Prototype.html + Plan_ve_Tasarim.pdf)
+Plan: `C:\Users\cengi\.claude\plans\imdi-admin-panelini-biraz-temporal-stardust.md`
+**Aşama A (görsel yenileme) — kabuk + dashboard yapıldı, ekranlar kısmen:**
+- [x] Kabuk: lacivert sidebar (3 grup, altın aktif çizgi, "Yakında" modüller), breadcrumb'lı üst bar, çalışan Ctrl/⌘+K komut paleti (`layout/adminNav.tsx`, `components/yonetim/ui/CommandPalette.tsx`)
+- [x] TailAdmin logosu → onaylı Hupo maskotu + "hupolingo" (`components/common/BrandMark.tsx`; sidebar, header, açılış ekranı). Resmi logo dosyası repoda yok — gelince `BrandMark` güncellenecek. Auth sayfaları hâlâ TailAdmin logosu kullanıyor.
+- [x] Dashboard: prototip yerleşimi, gerçek veriden türeyen "İlgi bekleyen işler" (`WorkQueue.tsx`); sahte NPS/funnel/kampanya eklenmedi
+- [x] Sayfa başlığı kalıbı (eyebrow + H1 + açıklama), tablo başlık stili, Üyeler ekranında yan çekmece profil (`ui/Drawer.tsx`)
+- [x] Hata düzeltmesi: Recharts 2.15 + React 19 için `react-is` override'ı; grafiklere `initialDimension` (ilk yüklemede boş görünüyordu)
+- [x] `tsc`, `npm run lint` (0 hata) ve `npm run build` geçti
+- [ ] **Doğrulanmadı:** oturumlu gerçek admin verisiyle ekranlar (demo modunda alt sayfalar 401 verir); Üyeler profil çekmecesi görsel olarak gerçek veriyle bakılmadı
+- [ ] Kalan A işleri: A0 temizlik (şablon demo sayfaları oturumsuz erişilebilir, öğretmen rolü yönlendirme tutarsızlığı, TailAdmin README/bağımlılık kalıntıları), diğer ekranlar için drawer/arama araç çubuğu, tek grafik kütüphanesi kararı, 390 px'de alt sayfaların taranması, hupo-platform-review incelemesi
+- [ ] Aşama B–F (CRM derinleştirme, içerik/gelir, segment/kampanya, anket/otomasyon, ekip & yetki): plan dosyasında
+
 ### Kullanıcı yapacak (basit adımlar)
 - [ ] **Karakter görselleri**: illüstratöre kısa brief — `kurtarilan/KURTARMA_RAPORU.md` sınıf listesini ver, din sembolü yasağını hatırlat
 - [ ] **Mağaza URL'leri**: uygulama yayımlandıktan sonra `maintenance_gate.dart` içindeki 2 URL güncellenir

@@ -1,7 +1,60 @@
 {
   "yonetim": {
+    "shell": {
+      "brandSub": "YÖNETİM MERKEZİ",
+      "workspace": "Hupo · Türkiye",
+      "tagline": "Birlikte öğrenmeyi büyütüyoruz.",
+      "soon": "Yakında",
+      "workspaceCrumb": "Çalışma alanı",
+      "groups": {
+        "workspace": "Çalışma alanı",
+        "content": "İçerik",
+        "growth": "Büyüme & iletişim",
+        "business": "İşletme & yönetim",
+        "other": "Diğer"
+      },
+      "nav": {
+        "overview": "Genel bakış",
+        "members": "Üyeler & aileler",
+        "leads": "Veli adayları",
+        "classes": "Sınıflar",
+        "questions": "Soru bankası",
+        "notifications": "Bildirimler",
+        "coupons": "Kuponlar",
+        "segments": "Segmentler",
+        "campaigns": "Kampanyalar",
+        "journeys": "Otomasyonlar",
+        "forms": "Formlar & anketler",
+        "payments": "Ödemeler",
+        "plans": "Planlar",
+        "analytics": "Analitik",
+        "access": "Ekip & yetkiler",
+        "channels": "Kanal ayarları",
+        "parentPanel": "Veli paneli",
+        "myClasses": "Sınıflarım"
+      },
+      "pageDesc": {
+        "members": "Veli, öğrenci ve üyelik ilişkisini tek listeden görün.",
+        "leads": "Henüz üye olmamış velilerin ilgi ve takip durumu.",
+        "classes": "Sınıfları ve öğretmen atamalarını yönetin.",
+        "questions": "Soru bankası için kontrollü içerik, onay ve toplu yükleme.",
+        "notifications": "Uygulama içi bildirimleri veli ve öğrencilere gönderin.",
+        "coupons": "Kuponlar ve kampanya kodlarını oluşturun, etkinleştirin.",
+        "payments": "Ödeme kayıtları, durumları ve iadeler için tek kayıt noktası.",
+        "plans": "Üyelik planları ve fiyatları."
+      },
+      "command": {
+        "open": "Her yerde ara...",
+        "title": "Hızlı erişim",
+        "placeholder": "Bir ekran adı yazın...",
+        "empty": "Eşleşen ekran bulunamadı.",
+        "close": "Kapat"
+      }
+    },
     "panel": {
       "title": "Yönetim Paneli",
+      "heading": "Hupo’da bugün",
+      "subtitle": "Öğrenme, büyüme ve operasyon. Tek bir bakışta.",
       "loading": "Yükleniyor...",
       "error": "Özet bilgiler alınamadı.",
       "retry": "Tekrar dene",
@@ -20,6 +73,18 @@
         "review": "İncele",
         "unlinkedWarning": "Bağlı çocuğu olmayan veli var",
         "unlinkedAction": "Listede gör"
+      },
+      "queue": {
+        "title": "İlgi bekleyen işler",
+        "desc": "Önceliklerinizi buradan yönetin",
+        "topics": "{count} konu",
+        "clear": "Bekleyen iş yok. Her şey güncel.",
+        "principleTitle": "Öğrenme önce gelir.",
+        "principleText": "XP, ekran süresi ve öğrenme kazanımı raporlarda ayrı izlenir.",
+        "questions": { "title": "{count} soru onay bekliyor", "desc": "Soru bankası · editör incelemesi" },
+        "payments": { "title": "{count} ödeme beklemede", "desc": "Ödeme durumunu inceleyin" },
+        "expiring": { "title": "{count} abonelik 7 gün içinde bitiyor", "desc": "Yenileme durumunu kontrol edin" },
+        "unlinked": { "title": "{count} veli hesabında bağlı çocuk yok", "desc": "Kullanıcı listesinde bağlantı kurun" }
       },
       "revenue": {
         "title": "Gelir",
@@ -56,7 +121,7 @@
       }
     },
     "kullanicilar": {
-      "title": "Kullanıcılar",
+      "title": "Üyeler & aileler",
       "loading": "Yükleniyor...",
       "empty": "Kayıt bulunamadı.",
       "retry": "Tekrar dene",
@@ -69,6 +134,17 @@
       "changeParent": "Veli değiştir",
       "unlink": "Bağı kaldır",
       "unlinked": "Bağ kaldırıldı",
+      "profile": {
+        "open": "Profili aç",
+        "title": "Profil",
+        "close": "Kapat",
+        "learning": "Öğrenme ilişkisi",
+        "noChildren": "Bağlı çocuk yok",
+        "children": "{count} bağlı çocuk",
+        "parent": "Bağlı veli",
+        "actions": "İşlemler",
+        "scopeNote": "İletişim izinleri ve zaman çizelgesi, CRM dilimi tamamlandığında burada gösterilecek."
+      },
       "cols": {
         "name": "Veli Adı",
         "email": "E-posta",
@@ -98,6 +174,56 @@
         "confirm": "Bağı kaldır",
         "cancel": "Vazgeç",
         "saving": "Kaydediliyor..."
+      }
+    },
+    "veliAdaylari": {
+      "title": "Veli Adayları",
+      "loading": "Yükleniyor...",
+      "empty": "Kayıt bulunamadı.",
+      "retry": "Tekrar dene",
+      "search": "Ara",
+      "searchPlaceholder": "İsim veya e-posta",
+      "stage": "Aşama",
+      "allStages": "Tüm aşamalar",
+      "consentYes": "İzinli",
+      "consentNo": "İzinsiz",
+      "detail": "Ayrıntı",
+      "changeStage": "Aşama değiştir",
+      "stages": {
+        "yeni": "Yeni",
+        "iletisim": "İletişimde",
+        "deneme": "Deneme",
+        "musteri": "Müşteri",
+        "kapandi": "Kapandı"
+      },
+      "cols": {
+        "name": "Ad",
+        "email": "E-posta",
+        "phone": "Telefon",
+        "source": "Kaynak",
+        "stage": "Aşama",
+        "consent": "Pazarlama İzni",
+        "created": "Kayıt Tarihi"
+      },
+      "pager": {
+        "prev": "Önceki",
+        "next": "Sonraki"
+      },
+      "stageModal": {
+        "title": "Aşamayı değiştir",
+        "stage": "Yeni aşama",
+        "note": "Not (isteğe bağlı)",
+        "notePlaceholder": "Bu adayla ilgili kısa not",
+        "save": "Kaydet",
+        "saving": "Kaydediliyor...",
+        "cancel": "Vazgeç"
+      },
+      "detailModal": {
+        "title": "Aday Ayrıntısı",
+        "timeline": "Olay geçmişi",
+        "noEvents": "Henüz olay yok.",
+        "consentAt": "İzin zamanı",
+        "close": "Kapat"
       }
     },
     "odemeler": {

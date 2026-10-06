@@ -42,6 +42,43 @@ export interface AdminUser {
 }
 
 // ---------------------------------------------------------------------
+// Veli adayları (CRM leads)
+// ---------------------------------------------------------------------
+
+/** Satış/pazarlama hunisi aşamaları (veli_adaylari.asama ile birebir). */
+export type LeadStage = "yeni" | "iletisim" | "deneme" | "musteri" | "kapandi";
+
+/** public.admin_list_veli_adaylari() satır şekli. */
+export interface VeliAday {
+  id: string;
+  email: string;
+  ad: string;
+  telefon: string | null;
+  kaynak: string;
+  asama: LeadStage;
+  pazarlama_izni: boolean;
+  izin_at: string | null;
+  /** Aday gerçek bir veli hesabına dönüştüyse o hesabın id'si. */
+  veli_id: string | null;
+  created_at: string;
+  updated_at: string;
+}
+
+/** public.olay_kutusu kaydı (admin_veli_adayi_detay zaman çizelgesi). */
+export interface OutboxEvent {
+  tur: string;
+  payload: Record<string, unknown>;
+  created_at: string;
+  islendi_at: string | null;
+}
+
+/** admin_veli_adayi_detay() dönüşü. */
+export interface VeliAdayDetay {
+  aday: VeliAday;
+  olaylar: OutboxEvent[];
+}
+
+// ---------------------------------------------------------------------
 // Planlar ve ödemeler
 // ---------------------------------------------------------------------
 

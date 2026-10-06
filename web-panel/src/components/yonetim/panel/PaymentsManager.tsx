@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import { formatDate, formatKurus } from "@/utils/format";
 import { createClient } from "@/utils/supabase/client";
 import Pager from "../Pager";
+import ReconciliationCard from "../merkez/ReconciliationCard";
 import type { PaymentList, PaymentStatus, Plan } from "../types";
 import { dateOrNull } from "./helpers";
 import PaymentFormModal, { PAYMENT_STATUSES } from "./PaymentFormModal";
@@ -225,6 +226,8 @@ export default function PaymentsManager() {
           />
         )}
       </section>
+
+      <ReconciliationCard />
 
       <PlanManager plans={plans} onChanged={reload} />
 

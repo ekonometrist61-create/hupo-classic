@@ -10,6 +10,7 @@ const MESSAGE_PARTS = [
   "veli-paneli",
   "yonetim-panel",
   "yonetim-sorular",
+  "yonetim-merkez",
 ] as const;
 
 function isObject(value: unknown): value is Messages {

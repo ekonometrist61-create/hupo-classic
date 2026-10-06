@@ -15,6 +15,7 @@ import {
   RecentPayments,
 } from "./RecentList";
 import RevenueChart from "./RevenueChart";
+import WorkQueue from "./WorkQueue";
 import { cardClass, primaryBtn } from "./styles";
 
 export default function AdminDashboard() {
@@ -106,10 +107,11 @@ export default function AdminDashboard() {
         <div className="xl:col-span-2">
           <RevenueChart data={data.odemeler.aylik} />
         </div>
-        <QuestionMix data={data.sorular} />
+        <WorkQueue data={data} />
       </div>
       <PaymentStatusCounts data={data.odemeler} />
-      <div className="grid grid-cols-1 gap-6 xl:grid-cols-2">
+      <div className="grid grid-cols-1 gap-6 xl:grid-cols-3">
+        <QuestionMix data={data.sorular} />
         <RecentPayments data={data.son_odemeler} />
         <RecentActions data={data.son_islemler} />
       </div>

@@ -1,7 +1,60 @@
 {
   "yonetim": {
+    "shell": {
+      "brandSub": "MANAGEMENT CENTER",
+      "workspace": "Hupo · Türkiye",
+      "tagline": "Growing learning together.",
+      "soon": "Soon",
+      "workspaceCrumb": "Workspace",
+      "groups": {
+        "workspace": "Workspace",
+        "content": "Content",
+        "growth": "Growth & communication",
+        "business": "Business & admin",
+        "other": "Other"
+      },
+      "nav": {
+        "overview": "Overview",
+        "members": "Members & families",
+        "leads": "Parent leads",
+        "classes": "Classes",
+        "questions": "Question bank",
+        "notifications": "Notifications",
+        "coupons": "Coupons",
+        "segments": "Segments",
+        "campaigns": "Campaigns",
+        "journeys": "Automations",
+        "forms": "Forms & surveys",
+        "payments": "Payments",
+        "plans": "Plans",
+        "analytics": "Analytics",
+        "access": "Team & permissions",
+        "channels": "Channel settings",
+        "parentPanel": "Parent panel",
+        "myClasses": "My classes"
+      },
+      "pageDesc": {
+        "members": "See parent, student and membership relations in one list.",
+        "leads": "Interest and follow-up status of parents who have not joined yet.",
+        "classes": "Manage classes and teacher assignments.",
+        "questions": "Controlled content, approval and bulk upload for the question bank.",
+        "notifications": "Send in-app notifications to parents and students.",
+        "coupons": "Create and activate coupons and campaign codes.",
+        "payments": "One place for payment records, statuses and refunds.",
+        "plans": "Membership plans and prices."
+      },
+      "command": {
+        "open": "Search everywhere...",
+        "title": "Quick access",
+        "placeholder": "Type a screen name...",
+        "empty": "No matching screen.",
+        "close": "Close"
+      }
+    },
     "panel": {
       "title": "Admin Dashboard",
+      "heading": "Hupo today",
+      "subtitle": "Learning, growth and operations. At a glance.",
       "loading": "Loading...",
       "error": "Could not load the summary data.",
       "retry": "Retry",
@@ -20,6 +73,18 @@
         "review": "Review",
         "unlinkedWarning": "Some parents have no linked child",
         "unlinkedAction": "View list"
+      },
+      "queue": {
+        "title": "Needs attention",
+        "desc": "Manage your priorities here",
+        "topics": "{count} items",
+        "clear": "Nothing waiting. All up to date.",
+        "principleTitle": "Learning comes first.",
+        "principleText": "XP, screen time and learning gain are tracked separately in reports.",
+        "questions": { "title": "{count} questions awaiting approval", "desc": "Question bank · editor review" },
+        "payments": { "title": "{count} payments pending", "desc": "Review payment status" },
+        "expiring": { "title": "{count} subscriptions end within 7 days", "desc": "Check renewal status" },
+        "unlinked": { "title": "{count} parent accounts have no linked child", "desc": "Link them in the user list" }
       },
       "revenue": {
         "title": "Revenue",
@@ -56,7 +121,7 @@
       }
     },
     "kullanicilar": {
-      "title": "Users",
+      "title": "Members & families",
       "loading": "Loading...",
       "empty": "No records found.",
       "retry": "Retry",
@@ -69,6 +134,17 @@
       "changeParent": "Change parent",
       "unlink": "Unlink",
       "unlinked": "Link removed",
+      "profile": {
+        "open": "Open profile",
+        "title": "Profile",
+        "close": "Close",
+        "learning": "Learning relation",
+        "noChildren": "No linked children",
+        "children": "{count} linked children",
+        "parent": "Linked parent",
+        "actions": "Actions",
+        "scopeNote": "Communication consent and the timeline will appear here once the CRM slice is complete."
+      },
       "cols": {
         "name": "Parent Name",
         "email": "Email",
@@ -98,6 +174,56 @@
         "confirm": "Unlink",
         "cancel": "Cancel",
         "saving": "Saving..."
+      }
+    },
+    "veliAdaylari": {
+      "title": "Leads",
+      "loading": "Loading...",
+      "empty": "No records found.",
+      "retry": "Try again",
+      "search": "Search",
+      "searchPlaceholder": "Name or email",
+      "stage": "Stage",
+      "allStages": "All stages",
+      "consentYes": "Opted in",
+      "consentNo": "Not opted in",
+      "detail": "Details",
+      "changeStage": "Change stage",
+      "stages": {
+        "yeni": "New",
+        "iletisim": "Contacted",
+        "deneme": "Trial",
+        "musteri": "Customer",
+        "kapandi": "Closed"
+      },
+      "cols": {
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "source": "Source",
+        "stage": "Stage",
+        "consent": "Marketing Consent",
+        "created": "Created"
+      },
+      "pager": {
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "stageModal": {
+        "title": "Change stage",
+        "stage": "New stage",
+        "note": "Note (optional)",
+        "notePlaceholder": "Short note about this lead",
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel"
+      },
+      "detailModal": {
+        "title": "Lead Details",
+        "timeline": "Event history",
+        "noEvents": "No events yet.",
+        "consentAt": "Consent time",
+        "close": "Close"
       }
     },
     "odemeler": {

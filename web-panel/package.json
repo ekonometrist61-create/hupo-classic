@@ -57,6 +57,9 @@
     "typescript": "^5.9.3"
   },
   "overrides": {
+    "recharts": {
+      "react-is": "^19.2.0"
+    },
     "@react-jvectormap/core": {
       "react": "^16.8.0 || ^17 || ^18 || ^19",
       "react-dom": "^16.8.0 || ^17 || ^18 || ^19"

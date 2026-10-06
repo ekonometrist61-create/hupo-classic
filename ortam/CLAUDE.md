@@ -11,6 +11,7 @@ Kişisel Yazılım Fabrikası: laptop (Windows + WSL2, 8 GB) ve Oracle Always Fr
 ## Donanım sınırları — bunu bil
 
 **Laptop 8 GB RAM.** Bu, ortamın en kısıtlayıcı kuralı:
+
 - Docker, Android emülatörü, Chrome ve VS Code **aynı anda açık olmaz**. Öncelik:
   Claude Code > VS Code > Chrome > Docker.
 - Yerel Supabase/Postgres yalnızca veritabanı işi yaparken açılır, sonra kapatılır.
@@ -66,6 +67,36 @@ docker compose --profile staging up -d
 - Sandbox açık (`bubblewrap`/`socat` kurulu). `/sandbox` panelinde eksi varsa haber ver.
 - `.env`, `.env.*`, `secrets/` okumak deny.
 - Sunucuda root girişi ve parola girişi kapalı; internette yalnızca SSH (Tailscale sonrası tamamen kapalı).
+
+## Ücretsiz Arka Plan Kaldırma Aracı (rembg)
+
+Görsellerin arka planını kaldırmak için **ücretli API kullanma**; bilgisayarda lokal
+çalışan açık kaynaklı `rembg` aracını kullan. Kurulu (Python 3.12 + `rembg[cpu,cli]`).
+
+Komut:
+
+```bash
+rembg i GIRDI_GORSELI CIKTI_GORSELI
+```
+
+Örnek:
+
+```bash
+rembg i mobile-app/assets/hupo/hizli.png mobile-app/assets/generated/hizli-transparent.png
+```
+
+Kurallar:
+
+- Arka plan kaldırmada ücretli API yerine **her zaman rembg** tercih edilir.
+- Saydam çıktılar **PNG** olarak kaydedilir.
+- Orijinal dosya **değiştirilmez**.
+- Üretilen dosyalar `assets/generated/` altına konur (bu depoda
+  `mobile-app/assets/generated/`).
+
+> Windows notu: `rembg` komutu Python Scripts klasörü (PATH'te) üzerinden gelir.
+> Komut bulunamazsa terminali yeniden aç veya tam yolu kullan:
+> `%LOCALAPPDATA%\Programs\Python\Python312\Scripts\rembg.exe`. İlk çalıştırmada
+> u2net modeli bir kez indirilir.
 
 ## Tanıtım (Aşama 4 mobil) için
 

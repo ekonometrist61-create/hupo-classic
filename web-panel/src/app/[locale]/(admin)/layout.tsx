@@ -1,9 +1,11 @@
 "use client";
 
+import WelcomeSplash from "@/components/common/WelcomeSplash";
 import { useSidebar } from "@/context/SidebarContext";
 import AppHeader from "@/layout/AppHeader";
 import AppSidebar from "@/layout/AppSidebar";
 import Backdrop from "@/layout/Backdrop";
+import RoleGuard from "@/layout/RoleGuard";
 import React from "react";
 
 export default function AdminLayout({
@@ -21,7 +23,9 @@ export default function AdminLayout({
     : "lg:ml-[90px]";
 
   return (
-    <div className="min-h-screen xl:flex">
+    <div className="min-h-screen bg-[#f4f6f6] xl:flex dark:bg-gray-950">
+      <WelcomeSplash />
+      <RoleGuard />
       {/* Sidebar and Backdrop */}
       <AppSidebar />
       <Backdrop />
@@ -32,7 +36,9 @@ export default function AdminLayout({
         {/* Header */}
         <AppHeader />
         {/* Page Content */}
-        <div className="p-4 mx-auto max-w-(--breakpoint-2xl) md:p-6">{children}</div>
+        <main id="icerik" className="mx-auto max-w-400 p-4 pb-10 md:p-6 xl:px-8 xl:pt-8">
+          {children}
+        </main>
       </div>
     </div>
   );

@@ -56,18 +56,18 @@ Future<void> main(List<String> args) async {
   // Telefonda daha hizli acilsin diye yanitlar sikistirilir.
   sunucu.autoCompress = true;
 
-  stdout.writeln('');
+  stdout.writeln();
   stdout.writeln('  ------------------------------------------------------------');
   stdout.writeln('   Sunucu calisiyor. Telefonun tarayicisina su adresi yazin:');
-  stdout.writeln('');
+  stdout.writeln();
   for (final ip in await yerelIPv4Adresleri()) {
     stdout.writeln('        http://$ip:$port');
   }
-  stdout.writeln('');
+  stdout.writeln();
   stdout.writeln('   * Telefon bu bilgisayarla AYNI Wi-Fi agina bagli olmali.');
   stdout.writeln('   * Durdurmak icin: Ctrl + C');
   stdout.writeln('  ------------------------------------------------------------');
-  stdout.writeln('');
+  stdout.writeln();
 
   await for (final istek in sunucu) {
     // Isleri es zamanli yap: buyuk dosya inerken digerleri beklemez.

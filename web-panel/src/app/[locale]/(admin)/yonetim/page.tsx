@@ -18,7 +18,7 @@ export default async function Page({
 
   return (
     <div>
-      <PageBreadcrumb pageTitle={t("title")} />
+      <PageBreadcrumb pageTitle={t("heading")} description={t("subtitle")} />
       <AdminDashboard />
     </div>
   );

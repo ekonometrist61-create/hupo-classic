@@ -7,7 +7,7 @@ import {
   type Transition,
 } from "framer-motion";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
+import BrandMark from "./BrandMark";
 import { useCallback, useEffect, useState } from "react";
 
 // Karşılama ekranı yalnızca tarayıcı oturumu başına bir kez gösterilir;
@@ -95,22 +95,7 @@ export default function WelcomeSplash() {
                 : { type: "spring", stiffness: 220, damping: 18, delay: 0.15 }
             }
           >
-            <Image
-              src="/images/logo/logo.svg"
-              alt={t("brand")}
-              width={154}
-              height={32}
-              priority
-              className="h-8 w-auto dark:hidden"
-            />
-            <Image
-              src="/images/logo/logo-dark.svg"
-              alt={t("brand")}
-              width={154}
-              height={32}
-              priority
-              className="hidden h-8 w-auto dark:block"
-            />
+            <BrandMark />
           </motion.div>
 
           {/* Metinler */}
