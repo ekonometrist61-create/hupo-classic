@@ -55,6 +55,7 @@ class _Repo extends Fake implements QuizRepository {
     required String questionId,
     required String? selectedOption,
     required int durationMs,
+    String? requestId,
   }) async =>
       const AnswerResult(
         correct: true,

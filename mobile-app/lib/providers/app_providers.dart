@@ -148,3 +148,30 @@ final myCharactersProvider =
   final list = await repo.fetchMyCharacters();
   return [for (final m in list) CharacterCard.fromMap(m)];
 });
+
+/// Çocuğun gösterilecek aktif karakteri.
+///
+/// Sıra: student_stats.aktif_karakter koduna sahip kazanılmış karakter;
+/// seçilmemişse kazanılmış karakterler içinde en üst kademeli olan
+/// (sınıf sırası, sonra karakter sırası). Hiç karakter kazanılmamışsa null.
+final activeCharacterProvider = Provider.autoDispose<CharacterCard?>((ref) {
+  final karakterler = ref.watch(myCharactersProvider).valueOrNull;
+  if (karakterler == null || karakterler.isEmpty) return null;
+
+  final kazanilanlar = karakterler.where((k) => k.kazanildi).toList();
+  if (kazanilanlar.isEmpty) return null;
+
+  final secilenKod = ref.watch(statsProvider).valueOrNull?.aktifKarakter;
+  if (secilenKod != null) {
+    for (final k in kazanilanlar) {
+      if (k.kod == secilenKod) return k;
+    }
+  }
+
+  // Yedek: kazanılmışlar içinde en üst kademeli karakter.
+  kazanilanlar.sort((a, b) {
+    final s = a.sinifSira.compareTo(b.sinifSira);
+    return s != 0 ? s : a.karakterSira.compareTo(b.karakterSira);
+  });
+  return kazanilanlar.last;
+});

@@ -24,7 +24,6 @@ const _locked = BadgeInfo(
   conditionType: 'ders_basari',
   threshold: 90,
   ders: 'Matematik',
-  minAttempts: 10,
   earned: false,
   progress: 72,
   attempts: 5,

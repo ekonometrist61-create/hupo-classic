@@ -126,8 +126,8 @@ void main() {
       final now = DateTime(2026, 9, 20);
       expect(membershipLabel(DateTime(2026, 9, 20), now), 'Bugün aramıza katıldın!');
       expect(membershipLabel(DateTime(2026, 9, 12), now), '8 gündür aramızdasın');
-      expect(membershipLabel(DateTime(2026, 6, 1), now), '3 aydır aramızdasın');
-      expect(membershipLabel(DateTime(2024, 9, 1), now), '2 yıldır aramızdasın');
+      expect(membershipLabel(DateTime(2026, 6), now), '3 aydır aramızdasın');
+      expect(membershipLabel(DateTime(2024, 9), now), '2 yıldır aramızdasın');
     });
 
     test('formatRemaining', () {
@@ -139,12 +139,12 @@ void main() {
     });
 
     test('relativeTime', () {
-      final now = DateTime(2026, 9, 20, 15, 0);
+      final now = DateTime(2026, 9, 20, 15);
       expect(relativeTime(now.subtract(const Duration(seconds: 20)), now), 'Az önce');
       expect(relativeTime(now.subtract(const Duration(minutes: 5)), now), '5 dk önce');
       expect(relativeTime(now.subtract(const Duration(hours: 3)), now), '3 sa önce');
-      expect(relativeTime(DateTime(2026, 9, 19, 9, 0), now), 'Dün');
-      expect(relativeTime(DateTime(2026, 9, 12, 9, 0), now), '12.09.2026');
+      expect(relativeTime(DateTime(2026, 9, 19, 9), now), 'Dün');
+      expect(relativeTime(DateTime(2026, 9, 12, 9), now), '12.09.2026');
     });
   });
 

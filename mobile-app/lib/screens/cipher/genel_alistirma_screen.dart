@@ -249,7 +249,7 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
                 Icon(
                   _isLastCorrect!
                       ? Icons.check_circle_rounded
-                      : Icons.cancel_rounded,
+                      : Icons.refresh_rounded,
                   color: _isLastCorrect!
                       ? AppColors.mintDark
                       : AppColors.coralDark,

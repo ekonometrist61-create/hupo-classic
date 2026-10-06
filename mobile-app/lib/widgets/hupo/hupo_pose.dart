@@ -1,34 +1,8 @@
-/// Hupo duruşları.
-///
-/// İki tür var:
-///  * Saydam eski duruşlar (assets/hupo/*.png): sayfaya serbestçe oturur.
-///  * Master Hupo ifade kartları (assets/hupo/ifade, assets/hupo/uygulama; *.webp):
-///    mavi fonlu karedir, köşeleri yuvarlatılarak "çıkartma" gibi gösterilir.
-///    Yeni çizim stili bu kartlardadır; anlar (HupoMood) önce bunları kullanır.
+/// Hupo duruşları: Master Hupo çizimleri, şeffaf WebP (assets/hupo/ifade, assets/hupo/uygulama).
+/// Hepsi kare tuvalde, altta ortalı durur ve zemine serbestçe oturur (kart/arka plan yok).
+/// Anlar (HupoMood) bunlardan birini seçer.
 enum HupoPose {
-  // ── Eski saydam duruşlar ────────────────────────────────────────────────
-  ayakta('ayakta'),
-  karsilama('karsilama'),
-  merakli('merakli'),
-  sevimli('sevimli'),
-  dost('dost'),
-  tesvik('tesvik'),
-  uzulen('uzulen'),
-  dusunen('dusunen'),
-  sorgulayan('sorgulayan'),
-  sasiran('sasiran'),
-  basaran('basaran'),
-  tebrikler('tebrikler'),
-  muthis('muthis'),
-  harikasin('harikasin'),
-  hizli('hizli'),
-  birazCalis('biraz_calis'),
-  sakinVazgecme('sakin_vazgecme'),
-  sakinPesEtme('sakin_pes_etme'),
-  sabirli('sabirli'),
-  ozletme('ozletme'),
-
-  // ── Master Hupo ifade kartları ──────────────────────────────────────────
+  ayakta('hosgeldin', klasor: 'ifade'),
   acele('acele', klasor: 'ifade'),
   adimAdim('adim_adim', klasor: 'ifade'),
   ahaaa('ahaaa', klasor: 'ifade'),
@@ -51,24 +25,16 @@ enum HupoPose {
   sasirmis('sasirmis', klasor: 'ifade'),
   uzgun('uzgun', klasor: 'ifade'),
 
-  // ── Soru ekranı rehberi (dikdörtgen kart) ───────────────────────────────
-  rehber('rehber', klasor: 'uygulama', oran: 0.8),
-  rehberSol('rehber_sol', klasor: 'uygulama', oran: 0.75);
+  // ── Soru ekranı rehberi ─────────────────────────────────────────────────
+  rehber('rehber', klasor: 'uygulama'),
+  rehberSol('rehber_sol', klasor: 'uygulama');
 
-  const HupoPose(this.slug, {this.klasor, this.oran = 1});
+  const HupoPose(this.slug, {required this.klasor});
 
   final String slug;
+  final String klasor;
 
-  /// Doluysa Master Hupo kartıdır (`assets/hupo/klasor/slug.webp`).
-  final String? klasor;
-
-  /// Kart görselinin genişlik / yükseklik oranı.
-  final double oran;
-
-  bool get kart => klasor != null;
-
-  String get assetPath =>
-      kart ? 'assets/hupo/$klasor/$slug.webp' : 'assets/hupo/$slug.png';
+  String get assetPath => 'assets/hupo/$klasor/$slug.webp';
 }
 
 /// Uygulamadaki anlar. Her an, sırayla dönen birkaç duruş arasından seçilir;

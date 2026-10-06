@@ -23,6 +23,7 @@ class StudentStats {
     this.streakCount = 0,
     this.lastActiveDate,
     this.shields = 0,
+    this.aktifKarakter,
   });
 
   final int xp;
@@ -32,6 +33,9 @@ class StudentStats {
 
   /// Kazanılmış seri kalkanı sayısı (0-2).
   final int shields;
+
+  /// Çocuğun koleksiyondan seçtiği aktif karakterin kodu; seçilmemişse null.
+  final String? aktifKarakter;
 
   /// Her seviye 100 XP (veritabanındaki kuralla aynı).
   double get levelProgress => (xp % 100) / 100;
@@ -59,6 +63,7 @@ class StudentStats {
             ? null
             : DateTime.parse(map['last_active_date'] as String),
         shields: (map['seri_kalkani'] as num?)?.toInt() ?? 0,
+        aktifKarakter: map['aktif_karakter'] as String?,
       );
 }
 

@@ -213,7 +213,7 @@ void main() {
 
     test('tercih kapalıysa jeton kaydedilmez', () async {
       final backend = _FakeBackend(permission: PushPermission.granted);
-      final api = _FakeApi(enabled: false);
+      final api = _FakeApi();
       final service = PushService(backend: backend, api: api, log: (_) {});
 
       await service.syncAfterLogin();

@@ -66,6 +66,7 @@ class FakeRepo extends Fake implements QuizRepository {
     required String questionId,
     required String? selectedOption,
     required int durationMs,
+    String? requestId,
   }) async {
     final ok = selectedOption == 'C';
     return AnswerResult(
@@ -216,16 +217,16 @@ void main() {
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Hupo(pose: HupoPose.sevimli, size: 96),
-                      Hupo(pose: HupoPose.muthis, size: 96),
+                      Hupo(pose: HupoPose.hosgeldin, size: 96),
+                      Hupo(pose: HupoPose.harika, size: 96),
                     ],
                   ),
                   const SizedBox(height: 12),
                   const Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
-                      Hupo(pose: HupoPose.dusunen, size: 96),
-                      Hupo(pose: HupoPose.tesvik, size: 96),
+                      Hupo(pose: HupoPose.dusunuyor, size: 96),
+                      Hupo(pose: HupoPose.birDahaDene, size: 96),
                     ],
                   ),
                   const SizedBox(height: 12),
@@ -325,10 +326,10 @@ void main() {
   });
 
   testWidgets('sonuç', (tester) async {
-    await pumpScreen(tester, ResultScreen(results: [
-      const AnswerResult(correct: true, correctOption: 'C', earnedXp: 10, xp: 240, level: 3, streakCount: 4),
-      const AnswerResult(correct: true, correctOption: 'B', earnedXp: 20, xp: 260, level: 3, streakCount: 4),
-      const AnswerResult(correct: false, correctOption: 'A', earnedXp: 0, xp: 260, level: 3, streakCount: 4),
+    await pumpScreen(tester, const ResultScreen(results: [
+      AnswerResult(correct: true, correctOption: 'C', earnedXp: 10, xp: 240, level: 3, streakCount: 4),
+      AnswerResult(correct: true, correctOption: 'B', earnedXp: 20, xp: 260, level: 3, streakCount: 4),
+      AnswerResult(correct: false, correctOption: 'A', earnedXp: 0, xp: 260, level: 3, streakCount: 4),
     ]));
     await shot(tester, '06_sonuc');
   });

@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/review_models.dart';
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
+import '../widgets/question_text.dart';
 import '../widgets/bookmark_button.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
@@ -123,7 +124,7 @@ class _SavedQuestionsTile extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 8),
-          Text(
+          SoruMetni(
             item.question.text,
             style: appText(
                 size: 15),

@@ -324,7 +324,7 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
                     Icon(
                       _lastResult!.dogru
                           ? Icons.check_circle_rounded
-                          : Icons.cancel_rounded,
+                          : Icons.refresh_rounded,
                       color: _lastResult!.dogru
                           ? AppColors.mintDark
                           : AppColors.coralDark,

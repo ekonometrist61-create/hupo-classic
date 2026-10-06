@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../theme/app_theme.dart';
 import '../utils/motion.dart';
+import 'character/active_character_chip.dart';
 
 /// Soru ekranının üst şeridi: kapat, ilerleme çubuğu, kalan süre,
 /// anlık kazanılan XP ve soru sayacı.
@@ -66,7 +67,15 @@ class QuizTopBar extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            XpChip(xp: sessionXp),
+            Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                XpChip(xp: sessionXp),
+                const SizedBox(width: 8),
+                const AktifKarakterChip(kompakt: true),
+              ],
+            ),
+            const SizedBox(width: 8),
             Flexible(
               child: Text(
                 '$title  •  $questionLabel',
@@ -118,7 +127,7 @@ class TimerPill extends StatelessWidget {
             const SizedBox(width: 4),
             Text(
               format(remainingSeconds),
-              style: appText(size: 16, weight: FontWeight.w900, color: fg),
+              style: appText(weight: FontWeight.w900, color: fg),
             ),
           ],
         ),

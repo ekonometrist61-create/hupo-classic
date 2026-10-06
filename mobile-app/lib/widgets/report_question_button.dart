@@ -148,7 +148,7 @@ class _ReportQuestionSheetState extends ConsumerState<ReportQuestionSheet> {
               Text(
                 'Sorun Bildir',
                 style: appText(
-                    size: 18, weight: FontWeight.w800, color: AppColors.ink),
+                    size: 18, weight: FontWeight.w800),
               ),
               const Spacer(),
               IconButton(
@@ -168,7 +168,7 @@ class _ReportQuestionSheetState extends ConsumerState<ReportQuestionSheet> {
                   .map((r) => RadioListTile<String>(
                         value: r.$1,
                         title: Text(r.$2,
-                            style: appText(size: 15, weight: FontWeight.w600)),
+                            style: appText(size: 15)),
                         contentPadding: EdgeInsets.zero,
                       ))
                   .toList(),
@@ -193,8 +193,6 @@ class _ReportQuestionSheetState extends ConsumerState<ReportQuestionSheet> {
           ChunkyButton(
             label: _isSubmitting ? 'Gönderiliyor...' : 'Gönder',
             icon: Icons.send_rounded,
-            color: AppColors.primary,
-            shadowColor: AppColors.primaryDark,
             onPressed: _isSubmitting ? null : _submit,
           ),
         ],

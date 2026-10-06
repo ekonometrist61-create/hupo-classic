@@ -14,6 +14,7 @@ class AnswerFeedback {
     'Doğru! Bunu zaten biliyordun.',
     'Aynen böyle!',
     'Tam isabet!',
+    'Doğru çözdün! Şimdi nedenine bakalım.',
   ];
 
   /// Zor bir soru doğru bilindiğinde gösterilen metinler.
@@ -24,6 +25,7 @@ class AnswerFeedback {
   ];
 
   /// Yanlış cevap verildiğinde moral veren ve öğrenmeye odaklayan metinler.
+  /// "başarısız" ve kırmızı X yerine sıcak, yargılamayan dil kullanılır.
   static const List<String> wrongMessages = [
     'Olmadı, hadi doğrusuna bakalım',
     'Bir daha bakalım',
@@ -34,6 +36,7 @@ class AnswerFeedback {
     'Az kaldı, pes etme!',
     'Az kaldı, neredeyse tamam!',
     'Güzel bir denemeydi, biraz daha pratikle çok daha iyi olacaksın!',
+    'Bu kez farklı bir yol deneyelim.',
   ];
 
   /// Test veya tur bittiğinde gösterilen özet mesajları.

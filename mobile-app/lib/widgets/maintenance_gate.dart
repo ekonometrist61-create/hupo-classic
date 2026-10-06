@@ -78,7 +78,6 @@ class _MaintenanceGateState extends ConsumerState<MaintenanceGate> {
             title: 'Hupo, bakım yapıyor',
             message: config.bakimModu.mesaj ??
                 'Hupo uygulamayı senin için daha da güzel yapıyor. Birazdan buradayız, sonra tekrar dene!',
-            isUpdateRequired: false,
           );
         }
         // Sürüm henüz alınmadıysa veya güncelleme gerekmiyorsa çocuğa geç.
@@ -146,7 +145,6 @@ class MaintenanceScreen extends StatelessWidget {
                 style: appText(
                   size: 22,
                   weight: FontWeight.w800,
-                  color: AppColors.ink,
                 ),
               ),
               const SizedBox(height: 12),
@@ -165,8 +163,6 @@ class MaintenanceScreen extends StatelessWidget {
                 ChunkyButton(
                   label: 'Mağazaya Git',
                   icon: Icons.open_in_new_rounded,
-                  color: AppColors.primary,
-                  shadowColor: AppColors.primaryDark,
                   onPressed: () async {
                     final url = Uri.parse(
                       (!kIsWeb && Platform.isIOS)

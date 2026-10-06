@@ -4,6 +4,7 @@ import 'package:lottie/lottie.dart';
 import '../models/models.dart';
 import '../theme/app_theme.dart';
 import '../utils/motion.dart';
+import '../widgets/character/active_character_chip.dart';
 import '../widgets/ui/chunky_button.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/hero_header.dart';
@@ -114,6 +115,8 @@ class ResultScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const SizedBox(height: 16),
+                  const AktifKarakterChip(),
                   const SizedBox(height: 16),
                   _TipCard(wrong: total - correct),
                   const Spacer(),

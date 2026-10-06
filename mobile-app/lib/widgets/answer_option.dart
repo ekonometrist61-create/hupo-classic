@@ -65,10 +65,10 @@ class AnswerOption extends StatelessWidget {
               OptionState.correct =>
                 Icon(Icons.check_rounded, color: badgeFg, size: 24),
               OptionState.wrong =>
-                Icon(Icons.close_rounded, color: badgeFg, size: 24),
+                Icon(Icons.refresh_rounded, color: badgeFg, size: 24),
               _ => Text(
                   label,
-                  style: appText(size: 16, weight: FontWeight.w900, color: badgeFg),
+                  style: appText(weight: FontWeight.w900, color: badgeFg),
                 ),
             },
           ),

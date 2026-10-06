@@ -33,7 +33,7 @@ Future<void> _pump(WidgetTester tester, Widget child, Size logical) async {
   addTearDown(tester.view.reset);
   await tester.pumpWidget(MaterialApp(
     debugShowCheckedModeBanner: false,
-    theme: buildAppTheme(fontFamily: 'Nunito'),
+    theme: buildAppTheme(),
     home: Scaffold(
       backgroundColor: _bg,
       body: RepaintBoundary(key: const ValueKey('shot'), child: ColoredBox(color: _bg, child: Center(child: child))),
@@ -100,7 +100,7 @@ void main() {
           children: [
             ShieldEarnedBanner(shields: 1),
             SizedBox(height: 16),
-            HupoLoading(message: 'Hupo senin için hazırlıyor…'),
+            HupoLoading(),
           ],
         ),
       ),

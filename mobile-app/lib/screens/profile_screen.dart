@@ -6,6 +6,7 @@ import '../models/models.dart';
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
 import '../widgets/badges_section.dart';
+import '../widgets/character/active_character_chip.dart';
 import 'collection_screen.dart';
 import 'settings_screen.dart';
 import 'grade_picker_screen.dart';
@@ -101,6 +102,8 @@ class ProfileScreen extends ConsumerWidget {
                     name.isEmpty ? 'Şampiyon' : name,
                     style: appText(size: 24, weight: FontWeight.w900, color: Colors.white),
                   ),
+                  const SizedBox(height: 8),
+                  const AktifKarakterChip(koyuZemin: true),
                   if (overview.valueOrNull?.joinedAt != null) ...[
                     const SizedBox(height: 8),
                     _MembershipPill(joinedAt: overview.valueOrNull!.joinedAt!),

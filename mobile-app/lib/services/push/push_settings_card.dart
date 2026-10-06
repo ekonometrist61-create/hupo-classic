@@ -143,7 +143,7 @@ class _PushSettingsCardState extends ConsumerState<PushSettingsCard> {
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Text('Bildirimler',
-                            style: appText(size: 16, weight: FontWeight.w900)),
+                            style: appText(weight: FontWeight.w900)),
                         Text(
                           subtitle,
                           style: appText(

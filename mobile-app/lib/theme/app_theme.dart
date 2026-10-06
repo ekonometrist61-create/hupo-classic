@@ -1,42 +1,43 @@
 import 'package:flutter/material.dart';
 
-/// Tasarım dili: canlı ama tutarlı bir palet. Her ana renk, "kabartma" (3D) etkisi
-/// için bir de koyu kenar tonuyla birlikte tanımlıdır.
+/// Tasarım dili: Hupolingo kurumsal kimliği (web ile aynı palet). Her ana renk,
+/// "kabartma" (3D) etkisi için bir de koyu kenar tonuyla birlikte tanımlıdır.
+/// Altın sarısı yalnızca Hupo, XP ve ödül içindir; ana eylem rengi Learning Teal'dir.
 class AppColors {
   AppColors._();
 
-  // Marka
-  static const primary = Color(0xFF6C4DF6); // menekşe
-  static const primaryDark = Color(0xFF4B32C3);
-  static const primaryLight = Color(0xFF9B83FF);
-  static const primarySoft = Color(0xFFEDE9FF);
+  // Marka: Learning Teal
+  static const primary = Color(0xFF147D8A);
+  static const primaryDark = Color(0xFF0D5762);
+  static const primaryLight = Color(0xFF4FB3BF);
+  static const primarySoft = Color(0xFFE8F5F7);
 
-  // XP, ödül, vurgu
-  static const sun = Color(0xFFFFC533);
-  static const sunDark = Color(0xFFE0A100);
-  static const sunSoft = Color(0xFFFFF4D1);
+  // XP, ödül, vurgu: Hupo Gold
+  static const sun = Color(0xFFF5C842);
+  static const sunDark = Color(0xFFD9A91E);
+  static const sunSoft = Color(0xFFFEF3CC);
 
   // Doğru / başarı
-  static const mint = Color(0xFF22C58B);
-  static const mintDark = Color(0xFF139A69);
-  static const mintSoft = Color(0xFFE2FAF1);
+  static const mint = Color(0xFF2E9E62);
+  static const mintDark = Color(0xFF237A4B);
+  static const mintSoft = Color(0xFFE4F5EA);
 
-  // Yanlış / uyarı
-  static const coral = Color(0xFFFF5470);
-  static const coralDark = Color(0xFFD93552);
-  static const coralSoft = Color(0xFFFFE8EC);
+  // Yanlış / tekrar / uyarı: yargılamayan sıcak amber (kırmızı X yok)
+  static const coral = Color(0xFFD96A28);
+  static const coralDark = Color(0xFFA64B24);
+  static const coralSoft = Color(0xFFFFF0E0);
 
-  // Bilgi
-  static const sky = Color(0xFF2FB8FF);
-  static const skyDark = Color(0xFF1A8FD1);
+  // Bilgi: Hupo'nun göz mavisi
+  static const sky = Color(0xFF4EA9D9);
+  static const skyDark = Color(0xFF2B86B5);
 
-  // Nötr
-  static const background = Color(0xFFF6F4FF);
+  // Nötr: sıcak krem zemin, lacivert metin
+  static const background = Color(0xFFFFF9ED);
   static const surface = Colors.white;
-  static const ink = Color(0xFF1F1B3A);
-  static const muted = Color(0xFF6E6A8C);
-  static const line = Color(0xFFE3DFF7);
-  static const lineDark = Color(0xFFCFC9EE);
+  static const ink = Color(0xFF17324D);
+  static const muted = Color(0xFF4A6A85);
+  static const line = Color(0xFFF0E6CF);
+  static const lineDark = Color(0xFFE0D2B0);
 }
 
 /// Uygulama genelinde tek yazı tipi (Nunito) ve hazır stiller.
@@ -63,7 +64,6 @@ const appGradient = LinearGradient(
 ThemeData buildAppTheme({String fontFamily = 'Nunito'}) {
   final scheme = ColorScheme.fromSeed(
     seedColor: AppColors.primary,
-    brightness: Brightness.light,
   ).copyWith(
     primary: AppColors.primary,
     onPrimary: Colors.white,
@@ -104,7 +104,7 @@ ThemeData buildAppTheme({String fontFamily = 'Nunito'}) {
       focusedBorder: border(AppColors.primary, 2.5),
       errorBorder: border(AppColors.coral),
       focusedErrorBorder: border(AppColors.coral, 2.5),
-      labelStyle: appText(color: AppColors.muted, weight: FontWeight.w600),
+      labelStyle: appText(color: AppColors.muted),
       floatingLabelStyle: appText(color: AppColors.primary, weight: FontWeight.w700),
       prefixIconColor: AppColors.muted,
       suffixIconColor: AppColors.muted,
@@ -130,7 +130,7 @@ ThemeData buildAppTheme({String fontFamily = 'Nunito'}) {
         foregroundColor: Colors.white,
         elevation: 0,
         padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
-        textStyle: appText(size: 16, weight: FontWeight.w800, color: Colors.white),
+        textStyle: appText(weight: FontWeight.w800, color: Colors.white),
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(18)),
       ),
     ),

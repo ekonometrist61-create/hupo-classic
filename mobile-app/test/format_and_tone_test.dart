@@ -9,7 +9,7 @@ void main() {
     test('gün ve ay iki haneli yazılır', () {
       expect(formatDate(DateTime(2026, 9, 2)), '02.09.2026');
       expect(formatDate(DateTime(2026, 12, 25)), '25.12.2026');
-      expect(formatDate(DateTime(2027, 1, 1)), '01.01.2027');
+      expect(formatDate(DateTime(2027)), '01.01.2027');
     });
   });
 

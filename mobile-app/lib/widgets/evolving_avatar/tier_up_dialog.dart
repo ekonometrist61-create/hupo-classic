@@ -13,7 +13,6 @@ import 'evolving_avatar_widget.dart';
 Future<void> showTierUpDialog(BuildContext context, AvatarTier tier) {
   return showGeneralDialog<void>(
     context: context,
-    barrierDismissible: false,
     barrierLabel: 'Kutlama',
     barrierColor: Colors.black.withValues(alpha: 0.6),
     transitionDuration: motionMs(context, 350),
@@ -71,7 +70,6 @@ class TierUpView extends StatelessWidget {
                         tier.unlockMessage,
                         textAlign: TextAlign.center,
                         style: appText(
-                          size: 16,
                           weight: FontWeight.w800,
                           color: AppColors.muted,
                           height: 1.35,

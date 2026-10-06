@@ -13,6 +13,7 @@ import '../utils/motion.dart';
 
 const String _karsilamaYolu = 'assets/hupo/uygulama/hero_splash.webp';
 const String _karsilamaEtiketi = 'Hupo seni karşılıyor';
+const String _markaAdi = 'Hupolingo';
 const Duration _gorunmeSuresi = Duration(milliseconds: 1500);
 const int _solmaMs = 450;
 
@@ -88,12 +89,34 @@ class _KarsilamaEkrani extends StatelessWidget {
       child: ExcludeSemantics(
         child: ColoredBox(
           color: AppColors.primary,
-          child: SizedBox.expand(
-            child: Image.asset(
-              _karsilamaYolu,
-              fit: BoxFit.cover,
-              gaplessPlayback: true,
-              errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+          child: SafeArea(
+            child: Center(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Flexible(
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 48),
+                      child: Image.asset(
+                        _karsilamaYolu,
+                        fit: BoxFit.contain,
+                        height: 420,
+                        gaplessPlayback: true,
+                        errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  Text(
+                    _markaAdi,
+                    style: appText(
+                      size: 38,
+                      weight: FontWeight.w900,
+                      color: Colors.white,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
         ),

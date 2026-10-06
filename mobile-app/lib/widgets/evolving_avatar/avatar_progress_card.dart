@@ -26,7 +26,7 @@ class AvatarProgressCard extends StatelessWidget {
         width: double.infinity,
         child: Column(
           children: [
-            EvolvingAvatarWidget(currentXP: currentXP, size: 150),
+            EvolvingAvatarWidget(currentXP: currentXP),
             const SizedBox(height: 10),
             Text(
               'Evre ${tier.index + 1}/${AvatarTier.values.length}',

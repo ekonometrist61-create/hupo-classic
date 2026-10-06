@@ -14,7 +14,7 @@ Widget _host(Widget child, {bool reduce = false}) => MaterialApp(
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();
 
-  test('her duruşun PNG dosyası pakette var ve boş değil', () async {
+  test('her duruşun WebP dosyası pakette var ve boş değil', () async {
     for (final pose in HupoPose.values) {
       final data = await rootBundle.load(pose.assetPath);
       expect(data.lengthInBytes, greaterThan(1000), reason: pose.assetPath);
@@ -24,7 +24,7 @@ void main() {
   test('her HupoMood en az bir duruşa sahip ve varyant döngüsü güvenli', () {
     for (final mood in HupoMood.values) {
       expect(mood.poses, isNotEmpty);
-      expect(mood.pose(0), isA<HupoPose>());
+      expect(mood.pose(), isA<HupoPose>());
       expect(mood.pose(-7), isA<HupoPose>());
       expect(mood.pose(9999), isA<HupoPose>());
     }
@@ -32,7 +32,7 @@ void main() {
 
   test('yanlış cevap duruşları utandırmaz (kızan/ağlayan yok)', () {
     for (final p in HupoMood.wrong.poses) {
-      expect(p, isNot(HupoPose.uzulen));
+      expect(p, isNot(HupoPose.uzgun));
     }
   });
 

@@ -118,21 +118,22 @@ class _ResultSheetState extends State<ResultSheet> {
                 children: [
                   Row(
                     children: [
-                      if (reducedMotion(context))
+                      // Yanlışta kırmızı X yok: sıcak amber "tekrar" simgesi.
+                      if (reducedMotion(context) || !ok)
                         Container(
                           width: 48,
                           height: 48,
                           margin: const EdgeInsets.all(4),
                           decoration: BoxDecoration(color: strong, shape: BoxShape.circle),
                           child: Icon(
-                            ok ? Icons.check_rounded : Icons.close_rounded,
+                            ok ? Icons.check_rounded : Icons.refresh_rounded,
                             color: Colors.white,
                             size: 30,
                           ),
                         )
                       else
                         Lottie.asset(
-                          ok ? 'assets/lottie/correct.json' : 'assets/lottie/wrong.json',
+                          'assets/lottie/correct.json',
                           width: 56,
                           height: 56,
                           repeat: false,

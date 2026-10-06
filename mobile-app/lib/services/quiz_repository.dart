@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../models/league_models.dart';
@@ -36,11 +38,21 @@ class QuizRepository {
   }
 
   Future<StudentStats> fetchStats() async {
-    final row = await _client
+    Future<Map<String, dynamic>?> oku(String kolonlar) => _client
         .from('student_stats')
-        .select('xp, level, streak_count, last_active_date, seri_kalkani')
+        .select(kolonlar)
         .eq('student_id', _uid)
         .maybeSingle();
+
+    Map<String, dynamic>? row;
+    try {
+      row = await oku(
+          'xp, level, streak_count, last_active_date, seri_kalkani, aktif_karakter');
+    } on PostgrestException catch (e) {
+      // 42703: sütun yok (aktif_karakter migration'ı uzak veritabanına henüz uygulanmadı).
+      if (e.code != '42703') rethrow;
+      row = await oku('xp, level, streak_count, last_active_date, seri_kalkani');
+    }
     return row == null ? const StudentStats() : StudentStats.fromMap(row);
   }
 
@@ -119,17 +131,42 @@ class QuizRepository {
     return questions.take(limit).toList();
   }
 
+  static final _rng = Random.secure();
+
+  static String _newRequestId() {
+    final b = List<int>.generate(16, (_) => _rng.nextInt(256));
+    b[6] = (b[6] & 0x0f) | 0x40;
+    b[8] = (b[8] & 0x3f) | 0x80;
+    final h = b.map((x) => x.toRadixString(16).padLeft(2, '0')).join();
+    return '${h.substring(0, 8)}-${h.substring(8, 12)}-${h.substring(12, 16)}'
+        '-${h.substring(16, 20)}-${h.substring(20)}';
+  }
+
   /// [selectedOption] null ise süre dolmuştur (yanlış sayılır).
+  /// [requestId] çift gönderim ve ağ tekrarını önler; null ise sunucu eski davranışı uygular.
   Future<AnswerResult> submitAnswer({
     required String questionId,
     required String? selectedOption,
     required int durationMs,
+    String? requestId,
   }) async {
-    final data = await _client.rpc('submit_answer', params: {
+    requestId ??= _newRequestId();
+    final params = {
       'p_question_id': questionId,
       'p_secilen_sik': selectedOption,
       'p_sure_ms': durationMs,
-    });
+    };
+    Object? data;
+    try {
+      data = await _client.rpc('submit_answer', params: {
+        ...params,
+        'p_request_id': requestId,
+      });
+    } on PostgrestException catch (e) {
+      // Sunucuda requestId'li yeni imza henüz yoksa (migration uygulanmadı) eski imzayla dene.
+      if (e.code != 'PGRST202') rethrow;
+      data = await _client.rpc('submit_answer', params: params);
+    }
     return AnswerResult.fromMap(Map<String, dynamic>.from(data as Map));
   }
 
@@ -362,5 +399,11 @@ class QuizRepository {
       for (final item in (res as List? ?? const []))
         Map<String, dynamic>.from(item as Map),
     ];
+  }
+
+  /// public.set_active_character(p_kod) — aktif karakteri değiştirir.
+  /// Sunucu yalnızca kazanılmış karakteri kabul eder.
+  Future<void> setActiveCharacter(String kod) async {
+    await _client.rpc('set_active_character', params: {'p_kod': kod});
   }
 }

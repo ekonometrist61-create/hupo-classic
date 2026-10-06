@@ -47,7 +47,6 @@ class CipherBadgesView extends StatelessWidget {
           style: appText(
             size: 20,
             weight: FontWeight.w800,
-            color: AppColors.ink,
           ),
         ),
         const SizedBox(height: 8),

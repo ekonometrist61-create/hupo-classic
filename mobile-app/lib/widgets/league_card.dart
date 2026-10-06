@@ -92,7 +92,7 @@ class LeagueCard extends StatelessWidget {
                     Expanded(
                       child: Text(
                         'Bu hafta ${status.weeklyXp} XP',
-                        style: appText(size: 16, weight: FontWeight.w900),
+                        style: appText(weight: FontWeight.w900),
                       ),
                     ),
                     if (!status.isTopLeague)

@@ -8,6 +8,7 @@ import '../models/daily_challenge_models.dart';
 import '../models/models.dart';
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
+import '../widgets/question_text.dart';
 import '../utils/haptics.dart';
 import '../widgets/bookmark_button.dart';
 import '../widgets/report_question_button.dart';
@@ -197,7 +198,7 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                     ],
                   ),
                   const SizedBox(height: 12),
-                  Text(
+                  SoruMetni(
                     question.text,
                     style: appText(
                         size: 17,

@@ -57,9 +57,7 @@ class DailyChallengeCard extends ConsumerWidget {
                         Text(
                           'Günün 5 Sorusu',
                           style: appText(
-                            size: 16,
                             weight: FontWeight.w800,
-                            color: AppColors.ink,
                           ),
                         ),
                         const Spacer(),

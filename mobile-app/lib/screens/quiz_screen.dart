@@ -7,6 +7,7 @@ import 'package:lottie/lottie.dart';
 import '../models/models.dart';
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
+import '../widgets/question_text.dart';
 import '../utils/haptics.dart';
 import '../utils/motion.dart';
 import '../widgets/answer_option.dart';
@@ -265,7 +266,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                           padding: const EdgeInsets.all(20),
                           child: SizedBox(
                             width: double.infinity,
-                            child: Text(
+                            child: SoruMetni(
                               question.text,
                               textAlign: TextAlign.center,
                               style: appText(size: 21, weight: FontWeight.w800, height: 1.3),

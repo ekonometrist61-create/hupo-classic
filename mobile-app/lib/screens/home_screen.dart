@@ -6,8 +6,8 @@ import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
 import '../utils/motion.dart';
 import '../widgets/daily_goal_card.dart';
-import '../widgets/evolving_avatar/avatar_progress_card.dart';
-import '../widgets/evolving_avatar/tier_celebration_listener.dart';
+import '../widgets/character/active_character_card.dart';
+import '../widgets/character/active_character_chip.dart';
 import '../widgets/league_card.dart';
 import '../widgets/notification_bell.dart';
 import '../widgets/ui/chunky_button.dart';
@@ -121,7 +121,6 @@ class HomeScreen extends ConsumerWidget {
           }
 
           return ShieldCelebrationListener(
-            child: TierCelebrationListener(
             child: CharacterCelebrationListener(
             child: RefreshIndicator(
               onRefresh: () async {
@@ -242,7 +241,6 @@ class HomeScreen extends ConsumerWidget {
               ),
             ),
             ),
-            ),
           );
         },
       ),
@@ -270,8 +268,18 @@ class _Hero extends ConsumerWidget {
       child: Column(
         children: [
           Row(
-            mainAxisAlignment: MainAxisAlignment.end,
             children: [
+              Flexible(
+                child: Align(
+                  alignment: Alignment.centerLeft,
+                  child: AktifKarakterChip(
+                    koyuZemin: true,
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => const CollectionScreen()),
+                    ),
+                  ),
+                ),
+              ),
               const NotificationBell(),
               IconButton(
                 tooltip: 'Profilim ve rozetler',
@@ -451,14 +459,18 @@ class _ConsentNote extends StatelessWidget {
   }
 }
 
-/// Avatar kartı: toplam XP'yi student_stats'tan alır; soru çözülüp XP artınca kendiliğinden güncellenir.
-class _AvatarSection extends ConsumerWidget {
+/// Aktif karakter kartı: çocuğun kazandığı aktif karakteri ve sıradaki gizli
+/// karakterin gölgesini gösterir; dokununca koleksiyon ekranını açar.
+class _AvatarSection extends StatelessWidget {
   const _AvatarSection();
 
   @override
-  Widget build(BuildContext context, WidgetRef ref) {
-    final xp = ref.watch(statsProvider).valueOrNull?.xp ?? 0;
-    return AvatarProgressCard(currentXP: xp);
+  Widget build(BuildContext context) {
+    return AktifKarakterKarti(
+      onTap: () => Navigator.of(context).push(
+        MaterialPageRoute(builder: (_) => const CollectionScreen()),
+      ),
+    );
   }
 }
 

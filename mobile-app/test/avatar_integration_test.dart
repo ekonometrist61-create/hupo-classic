@@ -40,7 +40,7 @@ Future<ProviderContainer> _pumpListener(
       currentUserIdProvider.overrideWithValue('u1'),
       _xpSource.overrideWith((ref) => startXp),
       statsProvider.overrideWith(
-        (ref) async => StudentStats(xp: ref.watch(_xpSource), level: 1),
+        (ref) async => StudentStats(xp: ref.watch(_xpSource)),
       ),
     ],
     child: MaterialApp(

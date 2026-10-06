@@ -20,10 +20,7 @@ class PushConfig {
   });
 
   factory PushConfig.fromEnvironment() => const PushConfig(
-        apiKey: String.fromEnvironment('FIREBASE_API_KEY'),
-        appId: String.fromEnvironment('FIREBASE_APP_ID'),
-        projectId: String.fromEnvironment('FIREBASE_PROJECT_ID'),
-        messagingSenderId: String.fromEnvironment('FIREBASE_MESSAGING_SENDER_ID'),
+        
       );
 
   final String apiKey;

@@ -39,7 +39,7 @@ class App extends ConsumerWidget {
     return MaterialApp(
       navigatorKey: pushNavigatorKey,
       scaffoldMessengerKey: pushMessengerKey,
-      title: 'Öğrenci Hazırlık Uygulaması',
+      title: 'Hupolingo',
       debugShowCheckedModeBanner: false,
       theme: buildAppTheme(fontFamily: settings.font.family),
       locale: const Locale('tr'),
