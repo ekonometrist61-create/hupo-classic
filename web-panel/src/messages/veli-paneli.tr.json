@@ -29,7 +29,8 @@
       "title": "Ders Bazında Başarı",
       "desc": "Çözülen soruların doğru cevap oranına göre dağılımı",
       "empty": "Henüz çözülmüş soru yok.",
-      "tooltip": "Doğru cevap oranı"
+      "tooltip": "{dogru} / {toplam} doğru",
+      "insufficient": "Henüz yeterli veri yok (en az 6 soru gerekli)"
     },
     "review": {
       "title": "Tekrar Önerileri",

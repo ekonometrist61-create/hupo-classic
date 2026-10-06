@@ -29,7 +29,8 @@
       "title": "Success by Subject",
       "desc": "Distribution of solved questions by correct-answer rate",
       "empty": "No questions solved yet.",
-      "tooltip": "Correct answer rate"
+      "tooltip": "{dogru} / {toplam} correct",
+      "insufficient": "Not enough data yet (at least 6 questions needed)"
     },
     "review": {
       "title": "Review Suggestions",

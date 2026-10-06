@@ -1,4 +1,3 @@
-import WelcomeSplash from "@/components/common/WelcomeSplash";
 import { SidebarProvider } from "@/context/SidebarContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { isRtl } from "@/i18n/languages";
@@ -12,7 +11,7 @@ import "swiper/css/bundle";
 import "../globals.css";
 
 const outfit = Outfit({
-  subsets: ["latin"],
+  subsets: ["latin", "latin-ext"],
 });
 
 export function generateStaticParams() {
@@ -42,7 +41,6 @@ export default async function RootLayout({
         <NextIntlClientProvider locale={locale}>
           <ThemeProvider>
             <SidebarProvider>
-              <WelcomeSplash />
               {children}
             </SidebarProvider>
           </ThemeProvider>

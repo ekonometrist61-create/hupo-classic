@@ -28,6 +28,212 @@
     "subtitle": "Let's keep learning with Hupo.",
     "skip": "Skip"
   },
+  "landing": {
+    "brand": "Hupolingo",
+    "metaTitle": "Hupolingo — short practice sessions for 4th grade school-entry preparation",
+    "metaDescription": "Your child practices with short question sessions, and you see which topics need another look. Try the sample questions without an account.",
+    "skipToContent": "Skip to content",
+    "nav": {
+      "label": "Main menu",
+      "demo": "Sample questions",
+      "appScreens": "App",
+      "how": "How it works",
+      "report": "Parent report",
+      "trust": "Trust",
+      "plans": "Plans",
+      "faq": "FAQ",
+      "signin": "Sign in",
+      "cta": "Create parent account",
+      "open": "Open menu",
+      "close": "Close menu"
+    },
+    "hero": {
+      "badge": "4th grade · School-entry preparation",
+      "title": "Support the habit of practice with small daily tasks",
+      "subtitle": "Your child practices with Hupo in short question sessions; you see their progress and which topics need another look.",
+      "ctaPrimary": "Try the sample questions",
+      "ctaSecondary": "Create parent account",
+      "note": "No account needed for the sample questions, and nothing is saved.",
+      "pilot": "Hupo is in pilot. We are improving content and reports with your feedback.",
+      "mascotAlt": "Hupo: an owl character with a golden yellow body, green wings and blue eyes"
+    },
+    "benefits": {
+      "title": "A small step for the child, clear visibility for the parent",
+      "items": [
+        {
+          "title": "Short, focused sessions",
+          "desc": "A session has at most 10 questions. Your child can start and finish without getting tired, and pick up where they left off the next day."
+        },
+        {
+          "title": "The reasoning behind the answer",
+          "desc": "A step-by-step solution appears after every answer. A wrong answer is not an end, it is a chance to read the explanation."
+        },
+        {
+          "title": "A topic summary parents can read",
+          "desc": "See how many questions were solved in each subject and which topics should be reviewed, all on one screen."
+        }
+      ]
+    },
+    "demo": {
+      "eyebrow": "Sample question",
+      "title": "Try it yourself first",
+      "desc": "See how Hupo works with five sample questions. No account is needed and your answers are not saved anywhere.",
+      "cta": "Start the 5-question sample",
+      "badge": "Sample",
+      "subject": "Turkish",
+      "question": "“Bu güzel haberi duyunca çok <b>sevindi</b>.” — which option is a synonym of the bold word?",
+      "options": [
+        "üzüldü",
+        "mutlu oldu",
+        "kızdı",
+        "korktu"
+      ],
+      "note": "Sample questions are written for Hupo and are not presented as official school exam questions.",
+      "langNote": "The sample questions are in Turkish."
+    },
+    "appScreens": {
+      "eyebrow": "Inside the app",
+      "title": "What your child will see in the app",
+      "desc": "The question screen, earned characters and daily progress — real screenshots are coming here soon.",
+      "comingSoon": "Screenshot coming soon",
+      "items": [
+        {
+          "title": "Home screen",
+          "desc": "The active character and daily progress at a glance."
+        },
+        {
+          "title": "Question screen",
+          "desc": "Short questions, step-by-step solutions and instant feedback."
+        },
+        {
+          "title": "Character collection",
+          "desc": "40 characters earned through regular practice, grouped by class."
+        }
+      ]
+    },
+    "how": {
+      "title": "How it works",
+      "steps": [
+        {
+          "title": "A parent account is created",
+          "desc": "The student account is linked to the parent account. You give consent for your child's study data."
+        },
+        {
+          "title": "The child does short sessions",
+          "desc": "Pick a subject and topic, solve questions, read the explanations. Questions answered wrongly return to the review list the next day."
+        },
+        {
+          "title": "The parent sees the topic summary",
+          "desc": "The parent panel shows questions solved per subject, the correct rate and review suggestions."
+        }
+      ]
+    },
+    "report": {
+      "title": "What does the parent report look like?",
+      "desc": "We do not show a percentage until enough questions are solved. A firm result from little data would be misleading.",
+      "badge": "SAMPLE REPORT",
+      "disclaimer": "This report does not belong to a real student; it is an example prepared to show how the screen looks.",
+      "colSubject": "Subject",
+      "colSolved": "Solved",
+      "colCorrect": "Correct",
+      "colRate": "Correct rate",
+      "insufficient": "Not enough data (at least 6 questions)",
+      "subjects": {
+        "math": "Mathematics",
+        "turkish": "Turkish",
+        "science": "Science"
+      },
+      "reviewTitle": "Review suggestion",
+      "reviewText": "Mathematics · Place value: 2 questions wrong, review recommended."
+    },
+    "trust": {
+      "title": "What we can say today",
+      "desc": "We only write things that really exist in the app.",
+      "items": [
+        {
+          "title": "Ad-free by default",
+          "desc": "Ads are off by default in the student app, and the app does not ask for location permission."
+        },
+        {
+          "title": "No data reaches the parent panel without consent",
+          "desc": "The parent gives consent for the child's study data to appear in the parent panel and can withdraw it at any time."
+        },
+        {
+          "title": "The answer key is not kept on the child's device",
+          "desc": "The correct answer stays on the server until the question is checked."
+        },
+        {
+          "title": "Honest scope",
+          "desc": "We do not promise exam success or score gains. Hupo is designed to support regular practice and make review needs visible."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Plans",
+      "cardTitle": "Paid plan is being prepared",
+      "cardDesc": "When price and scope are settled they will appear here and in your parent account. We do not publish unconfirmed prices or trial periods.",
+      "bullets": [
+        "No hidden fees",
+        "No payment requested before the price is final",
+        "Updates also appear in your parent account"
+      ]
+    },
+    "faq": {
+      "title": "Frequently asked questions",
+      "items": [
+        {
+          "q": "Which grades is it for?",
+          "a": "Our first focus is preparation for the move from 4th to 5th grade. The grade and subject coverage in the app is expanding during the pilot."
+        },
+        {
+          "q": "Do I need an account for the sample questions?",
+          "a": "No. You can try the sample questions without creating an account; your answers are not saved."
+        },
+        {
+          "q": "Are these real school exam questions?",
+          "a": "No. The questions are examples written for Hupo based on 4th grade learning outcomes. They are not presented as official school exam questions."
+        },
+        {
+          "q": "How do I set up an account for my child?",
+          "a": "A parent account is created first, then the student account is linked to it."
+        },
+        {
+          "q": "What happens after a wrong answer?",
+          "a": "The child sees the step-by-step solution. Questions answered wrongly are added to the review list the next day."
+        },
+        {
+          "q": "Does it guarantee exam success?",
+          "a": "No. Hupo supports preparation; admission depends on each school's own conditions."
+        },
+        {
+          "q": "What does it cost?",
+          "a": "The paid plan is being prepared. When plans are settled they will be shown on this page and in your parent account."
+        },
+        {
+          "q": "How do I manage my child's data?",
+          "a": "Consent for the child's study data to appear in the parent panel is given from the parent panel and can be withdrawn from the same place."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Meet Hupo with a few questions first",
+      "desc": "Five sample questions take a few minutes. If you like it, you can create your parent account.",
+      "primary": "Try the sample questions",
+      "secondary": "Create parent account"
+    },
+    "footer": {
+      "tagline": "Small steps, regular practice.",
+      "colProduct": "Hupo",
+      "colAccount": "Account",
+      "demo": "Sample questions",
+      "how": "How it works",
+      "faq": "FAQ",
+      "signin": "Sign in",
+      "signup": "Create parent account",
+      "pilot": "Pilot version",
+      "copyright": "© 2026 Hupolingo"
+    }
+  },
   "sidebar": {
     "groups": {
       "menu": "Menu",
@@ -146,6 +352,7 @@
       "yonetimPanel": "Overview",
       "sorular": "Questions",
       "kullanicilar": "Users",
+      "veliAdaylari": "Leads",
       "odemeler": "Payments",
       "planlar": "Plans",
       "siniflar": "Classrooms",
@@ -1364,6 +1571,36 @@
         "basarisiz": "Failed",
         "iade": "Refunded"
       }
+    }
+  },
+  "demo": {
+    "metaTitle": "Sample questions — Hupolingo",
+    "metaDescription": "See how Hupo works with five sample questions. No account needed, answers are not saved.",
+    "back": "Back to home",
+    "badge": "Sample",
+    "notSaved": "Your answers are not saved.",
+    "progress": "Question {current} of {total}",
+    "ready": "Pick an option, then let's check.",
+    "check": "Check my answer",
+    "next": "Next question",
+    "finish": "See the result",
+    "correct": "You got it. Now let's look at why.",
+    "incorrect": "Not this time. Let's look at the explanation, then try again.",
+    "rightAnswer": "Correct answer: {option}",
+    "yourAnswer": "Your answer",
+    "steps": "Step-by-step solution",
+    "optionLabel": "Option {letter}",
+    "doneTitle": "You finished the sample practice.",
+    "doneScore": "You answered {score} of {total} questions correctly on the first try.",
+    "doneNote": "This result only describes these five questions; nothing was saved.",
+    "again": "Try again from the start",
+    "signup": "Create parent account",
+    "sourceNote": "Sample questions are written for Hupo and are not presented as official school exam questions.",
+    "poseAlt": {
+      "ready": "Hupo thinking",
+      "correct": "Hupo celebrating the right answer",
+      "incorrect": "Hupo encouraging",
+      "done": "Hupo celebrating the finished practice"
     }
   }
 }

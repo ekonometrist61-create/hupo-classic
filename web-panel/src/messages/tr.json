@@ -28,6 +28,211 @@
     "subtitle": "Hupo ile öğrenmeye devam edelim.",
     "skip": "Atla"
   },
+  "landing": {
+    "brand": "Hupolingo",
+    "metaTitle": "Hupolingo — 4. sınıf proje okulu hazırlığı için kısa soru çalışmaları",
+    "metaDescription": "Çocuğunuz kısa soru çalışmalarıyla pratik yapsın, siz hangi konuları tekrar etmesi gerektiğini görün. Örnek soruları hesap açmadan deneyin.",
+    "skipToContent": "İçeriğe geç",
+    "nav": {
+      "label": "Ana menü",
+      "demo": "Örnek sorular",
+      "appScreens": "Uygulama",
+      "how": "Nasıl çalışır",
+      "report": "Veli raporu",
+      "trust": "Güven",
+      "plans": "Planlar",
+      "faq": "SSS",
+      "signin": "Giriş yap",
+      "cta": "Veli hesabı oluştur",
+      "open": "Menüyü aç",
+      "close": "Menüyü kapat"
+    },
+    "hero": {
+      "badge": "4. sınıf · Proje okulu hazırlığı",
+      "title": "Soru çözme alışkanlığını küçük görevlerle destekleyin",
+      "subtitle": "Çocuğunuz Hupo ile kısa soru çalışmaları yapsın; siz ilerlediği ve tekrar etmesi gereken konuları görün.",
+      "ctaPrimary": "Örnek soruları dene",
+      "ctaSecondary": "Veli hesabı oluştur",
+      "note": "Örnek sorular için hesap gerekmez ve hiçbir bilgi kaydedilmez.",
+      "pilot": "Hupo pilot sürümde. İçerik ve raporları geri bildirimlerle geliştiriyoruz.",
+      "mascotAlt": "Hupo: altın sarısı gövdeli, yeşil kanatlı, mavi gözlü baykuş karakter"
+    },
+    "benefits": {
+      "title": "Çocuk için küçük adım, veli için net görünürlük",
+      "items": [
+        {
+          "title": "Kısa ve odaklı çalışmalar",
+          "desc": "Bir çalışma en fazla 10 sorudan oluşur. Çocuğunuz yorulmadan başlar, bitirir ve bir sonraki gün kaldığı yerden devam eder."
+        },
+        {
+          "title": "Cevabın arkasındaki açıklama",
+          "desc": "Her cevaptan sonra adım adım çözüm görünür. Yanlış cevap bir son değil, açıklamaya bakmak için bir fırsattır."
+        },
+        {
+          "title": "Veli için anlaşılır konu özeti",
+          "desc": "Hangi derste kaç soru çözüldüğünü ve hangi konuların tekrar edilmesi gerektiğini tek ekranda görürsünüz."
+        }
+      ]
+    },
+    "demo": {
+      "eyebrow": "Örnek soru",
+      "title": "Önce siz deneyin",
+      "desc": "Beş örnek soruyla Hupo'nun nasıl çalıştığını görün. Hesap açmak gerekmez, cevaplarınız hiçbir yere kaydedilmez.",
+      "cta": "5 soruluk örneği başlat",
+      "badge": "Örnek",
+      "subject": "Türkçe",
+      "question": "“Bu güzel haberi duyunca çok <b>sevindi</b>.” cümlesindeki koyu yazılı sözcüğün eş anlamlısı hangisidir?",
+      "options": [
+        "üzüldü",
+        "mutlu oldu",
+        "kızdı",
+        "korktu"
+      ],
+      "note": "Örnek sorular Hupo için hazırlanmıştır; resmî okul sınav soruları olarak sunulmaz."
+    },
+    "appScreens": {
+      "eyebrow": "Uygulama içinden",
+      "title": "Çocuğunuz uygulamada bunlarla karşılaşacak",
+      "desc": "Soru çözme ekranı, kazanılan karakterler ve günlük ilerleme — gerçek ekran görüntüleri yakında burada.",
+      "comingSoon": "Ekran görüntüsü yakında",
+      "items": [
+        {
+          "title": "Ana ekran",
+          "desc": "Aktif karakter ve günlük ilerleme bir bakışta görünür."
+        },
+        {
+          "title": "Soru ekranı",
+          "desc": "Kısa sorular, adım adım çözüm ve anında geri bildirim."
+        },
+        {
+          "title": "Karakter koleksiyonu",
+          "desc": "Düzenli pratikle kazanılan 40 karakter, sınıflara ayrılmış."
+        }
+      ]
+    },
+    "how": {
+      "title": "Nasıl çalışır?",
+      "steps": [
+        {
+          "title": "Veli hesabı oluşturulur",
+          "desc": "Öğrenci hesabı veli hesabına bağlanır. Çocuğun çalışma verisi için onayı siz verirsiniz."
+        },
+        {
+          "title": "Çocuk kısa çalışmalar yapar",
+          "desc": "Ders ve konu seçilir, sorular çözülür, açıklamalar okunur. Yanlış yapılan sorular ertesi gün tekrar listesine düşer."
+        },
+        {
+          "title": "Veli konu özetini görür",
+          "desc": "Veli panelinde ders bazında çözülen soru sayısı, doğru oranı ve tekrar önerileri yer alır."
+        }
+      ]
+    },
+    "report": {
+      "title": "Veli raporu nasıl görünür?",
+      "desc": "Yeterli soru çözülmeden yüzde göstermeyiz. Az veriyle kesin sonuç çıkarmak yanıltıcı olur.",
+      "badge": "ÖRNEK RAPOR",
+      "disclaimer": "Bu rapor gerçek bir öğrenciye ait değildir; ekranın nasıl göründüğünü göstermek için hazırlanmış örnektir.",
+      "colSubject": "Ders",
+      "colSolved": "Çözülen",
+      "colCorrect": "Doğru",
+      "colRate": "Doğru oranı",
+      "insufficient": "Yeterli veri yok (en az 6 soru)",
+      "subjects": {
+        "math": "Matematik",
+        "turkish": "Türkçe",
+        "science": "Fen Bilimleri"
+      },
+      "reviewTitle": "Tekrar önerisi",
+      "reviewText": "Matematik · Basamak değeri: 2 soru yanlış, tekrar edilmesi öneriliyor."
+    },
+    "trust": {
+      "title": "Bugün söyleyebildiklerimiz",
+      "desc": "Yalnızca uygulamada gerçekten bulunan şeyleri yazıyoruz.",
+      "items": [
+        {
+          "title": "Varsayılan olarak reklamsız",
+          "desc": "Öğrenci uygulamasında reklam varsayılan olarak kapalıdır ve uygulama konum izni istemez."
+        },
+        {
+          "title": "Veli onayı olmadan veli paneline veri düşmez",
+          "desc": "Çocuğun çalışma verisinin veli panelinde görünmesi için onayı veli verir ve istediği zaman geri çekebilir."
+        },
+        {
+          "title": "Cevap anahtarı çocuğun cihazında durmaz",
+          "desc": "Doğru cevap, soru kontrol edilene kadar sunucuda tutulur."
+        },
+        {
+          "title": "Dürüst kapsam",
+          "desc": "Sınav kazanma veya puan artışı vaadi vermiyoruz. Hupo düzenli pratiği ve tekrar ihtiyacını görünür kılmak için tasarlandı."
+        }
+      ]
+    },
+    "plans": {
+      "title": "Planlar",
+      "cardTitle": "Ücretli plan hazırlık aşamasında",
+      "cardDesc": "Fiyat ve kapsam netleştiğinde burada ve veli hesabınızda gösterilecek. Onaylanmamış fiyat veya deneme süresi yayımlamıyoruz.",
+      "bullets": [
+        "Gizli ücret yok",
+        "Fiyat netleşmeden ödeme istenmez",
+        "Güncelleme veli hesabınıza da düşer"
+      ]
+    },
+    "faq": {
+      "title": "Sık sorulan sorular",
+      "items": [
+        {
+          "q": "Hangi sınıflar için?",
+          "a": "İlk odağımız 4. sınıftan 5. sınıfa geçiş hazırlığı. Uygulamadaki sınıf ve ders kapsamı pilot sürüm boyunca genişliyor."
+        },
+        {
+          "q": "Örnek sorular için hesap gerekir mi?",
+          "a": "Hayır. Örnek soruları hesap açmadan deneyebilirsiniz; cevaplarınız kaydedilmez."
+        },
+        {
+          "q": "Sorular gerçek okul sınavı soruları mı?",
+          "a": "Hayır. Sorular 4. sınıf kazanımlarına göre Hupo için hazırlanmış örneklerdir. Okulların resmî sınav soruları olarak sunulmaz."
+        },
+        {
+          "q": "Çocuğum için hesabı nasıl oluştururum?",
+          "a": "Önce veli hesabı oluşturulur, ardından öğrenci hesabı veli hesabına bağlanır."
+        },
+        {
+          "q": "Yanlış cevap verilirse ne olur?",
+          "a": "Çocuk adım adım çözümü görür. Yanlış yapılan sorular ertesi gün tekrar listesine eklenir."
+        },
+        {
+          "q": "Sınav kazanmayı garanti ediyor mu?",
+          "a": "Hayır. Hupo hazırlığı destekler; okul kabulü her kurumun kendi koşullarına bağlıdır."
+        },
+        {
+          "q": "Ücret nedir?",
+          "a": "Ücretli plan hazırlık aşamasında. Güncel planlar netleştiğinde bu sayfada ve veli hesabınızda gösterilecek."
+        },
+        {
+          "q": "Çocuğumun verilerini nasıl yönetirim?",
+          "a": "Çocuğun çalışma verisinin veli panelinde görünmesi için onay veli panelinden verilir ve aynı yerden geri çekilebilir."
+        }
+      ]
+    },
+    "cta": {
+      "title": "Önce birkaç soruyla tanışın",
+      "desc": "Beş örnek soru birkaç dakika sürer. Beğenirseniz veli hesabınızı oluşturabilirsiniz.",
+      "primary": "Örnek soruları dene",
+      "secondary": "Veli hesabı oluştur"
+    },
+    "footer": {
+      "tagline": "Küçük adımlar, düzenli pratik.",
+      "colProduct": "Hupo",
+      "colAccount": "Hesap",
+      "demo": "Örnek sorular",
+      "how": "Nasıl çalışır",
+      "faq": "SSS",
+      "signin": "Giriş yap",
+      "signup": "Veli hesabı oluştur",
+      "pilot": "Pilot sürüm",
+      "copyright": "© 2026 Hupolingo"
+    }
+  },
   "sidebar": {
     "groups": {
       "menu": "Menü",
@@ -90,6 +295,7 @@
       "yonetimPanel": "Genel Bakış",
       "sorular": "Sorular",
       "kullanicilar": "Kullanıcılar",
+      "veliAdaylari": "Veli Adayları",
       "odemeler": "Ödemeler",
       "planlar": "Planlar",
       "siniflar": "Sınıflar",
@@ -1364,6 +1570,36 @@
         "basarisiz": "Başarısız",
         "iade": "İade"
       }
+    }
+  },
+  "demo": {
+    "metaTitle": "Örnek sorular — Hupolingo",
+    "metaDescription": "Hupo'nun nasıl çalıştığını beş örnek soruyla görün. Hesap gerekmez, cevaplar kaydedilmez.",
+    "back": "Ana sayfaya dön",
+    "badge": "Örnek",
+    "notSaved": "Cevapların kaydedilmez.",
+    "progress": "Soru {current} / {total}",
+    "ready": "Bir seçenek seç, sonra kontrol edelim.",
+    "check": "Cevabımı kontrol et",
+    "next": "Sonraki soru",
+    "finish": "Sonucu gör",
+    "correct": "Doğru çözdün. Şimdi nedenine bakalım.",
+    "incorrect": "Bu kez olmadı. Açıklamaya bakalım, sonra yeniden deneyelim.",
+    "rightAnswer": "Doğru cevap: {option}",
+    "yourAnswer": "Senin cevabın",
+    "steps": "Adım adım çözüm",
+    "optionLabel": "Seçenek {letter}",
+    "doneTitle": "Örnek çalışmayı tamamladın.",
+    "doneScore": "{score} / {total} soruyu ilk denemede doğru çözdün.",
+    "doneNote": "Bu sonuç yalnızca bu beş soruyu anlatır; hiçbir bilgi kaydedilmedi.",
+    "again": "Baştan dene",
+    "signup": "Veli hesabı oluştur",
+    "sourceNote": "Örnek sorular Hupo için hazırlanmıştır; resmî okul sınav soruları olarak sunulmaz.",
+    "poseAlt": {
+      "ready": "Düşünen Hupo",
+      "correct": "Doğru cevabı kutlayan Hupo",
+      "incorrect": "Cesaretlendiren Hupo",
+      "done": "Çalışmanın bittiğini kutlayan Hupo"
     }
   }
 }

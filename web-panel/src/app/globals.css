@@ -38,31 +38,70 @@
   --color-white: #ffffff;
   --color-black: #101828;
 
-  --color-brand-25: #f2f7ff;
-  --color-brand-50: #ecf3ff;
-  --color-brand-100: #dde9ff;
-  --color-brand-200: #c2d6ff;
-  --color-brand-300: #9cb9ff;
-  --color-brand-400: #7592ff;
-  --color-brand-500: #465fff;
-  --color-brand-600: #3641f5;
-  --color-brand-700: #2a31d8;
-  --color-brand-800: #252dae;
-  --color-brand-900: #262e89;
-  --color-brand-950: #161950;
+  /* Learning Teal — ana CTA, ogrenme aksiyonu */
+  --color-brand-25: #f3fbfc;
+  --color-brand-50: #e8f5f7;
+  --color-brand-100: #d0ebef;
+  --color-brand-200: #a1d6df;
+  --color-brand-300: #65bac9;
+  --color-brand-400: #3aa0b2;
+  --color-brand-500: #147D8A;
+  --color-brand-600: #106a76;
+  --color-brand-700: #0d5762;
+  --color-brand-800: #0a444e;
+  --color-brand-900: #073139;
+  --color-brand-950: #041e23;
 
+  /* Hupo Gold — odul, XP climax, basari ani */
+  --color-gold-25: #fffdf5;
+  --color-gold-50: #fefaeb;
+  --color-gold-100: #fef3cc;
+  --color-gold-200: #fde69a;
+  --color-gold-300: #fcd568;
+  --color-gold-400: #f9c948;
+  --color-gold-500: #F5C842;
+  --color-gold-600: #d9a91e;
+  --color-gold-700: #b38816;
+  --color-gold-800: #8d6b11;
+  --color-gold-900: #6b510d;
+  --color-gold-950: #47350a;
+
+  /* Premium Purple — abonelik, ozel icerik */
+  --color-premium-25: #f5f3ff;
+  --color-premium-50: #edeaff;
+  --color-premium-100: #dbd5ff;
+  --color-premium-200: #b9adff;
+  --color-premium-300: #9785ff;
+  --color-premium-400: #7c65ec;
+  --color-premium-500: #6546D7;
+  --color-premium-600: #5538b8;
+  --color-premium-700: #452d98;
+  --color-premium-800: #352379;
+  --color-premium-900: #281a5c;
+  --color-premium-950: #1a1140;
+
+  /* Sky Blue — bilgi, kesif, ipucu, secondary action */
   --color-blue-light-25: #f5fbff;
-  --color-blue-light-50: #f0f9ff;
-  --color-blue-light-100: #e0f2fe;
-  --color-blue-light-200: #b9e6fe;
-  --color-blue-light-300: #7cd4fd;
-  --color-blue-light-400: #36bffa;
-  --color-blue-light-500: #0ba5ec;
-  --color-blue-light-600: #0086c9;
-  --color-blue-light-700: #026aa2;
-  --color-blue-light-800: #065986;
-  --color-blue-light-900: #0b4a6f;
-  --color-blue-light-950: #062c41;
+  --color-blue-light-50: #eef7fd;
+  --color-blue-light-100: #d5ecfa;
+  --color-blue-light-200: #aed9f5;
+  --color-blue-light-300: #80c2ec;
+  --color-blue-light-400: #4EA9D9;
+  --color-blue-light-500: #3a93c4;
+  --color-blue-light-600: #2a78a6;
+  --color-blue-light-700: #1f5f86;
+  --color-blue-light-800: #174a69;
+  --color-blue-light-900: #10374e;
+  --color-blue-light-950: #092232;
+
+  /* Deep Navy — ana metin, baslik */
+  --color-navy: #17324D;
+  --color-navy-light: #2a4d6e;
+  --color-navy-muted: #4a6a85;
+
+  /* Cloud Cream — uygulama arka plan */
+  --color-cream: #FFF9ED;
+  --color-cream-dark: #F5EFDF;
 
   --color-gray-25: #fcfcfd;
   --color-gray-50: #f9fafb;
@@ -130,9 +169,18 @@
   --color-warning-900: #7a2e0e;
   --color-warning-950: #4e1d09;
 
-  --color-theme-pink-500: #ee46bc;
+  /* Retry Amber — yanlis cevap geri bildirimi (ceza degil) */
+  --color-retry-500: #F59E42;
+  --color-retry-400: #f7b468;
+  --color-retry-600: #d98530;
 
-  --color-theme-purple-500: #7a5af8;
+  /* Streak Orange */
+  --color-streak-500: #F47A32;
+  --color-streak-400: #f69458;
+  --color-streak-600: #d06228;
+
+  --color-theme-pink-500: #ee46bc;
+  --color-theme-purple-500: #6546D7;
 
   --shadow-theme-md:
     0px 4px 8px -2px rgba(16, 24, 40, 0.1),
@@ -148,7 +196,7 @@
     0px 20px 24px -4px rgba(16, 24, 40, 0.08),
     0px 8px 8px -4px rgba(16, 24, 40, 0.03);
   --shadow-datepicker: -5px 0 0 #262d3c, 5px 0 0 #262d3c;
-  --shadow-focus-ring: 0px 0px 0px 4px rgba(70, 95, 255, 0.12);
+  --shadow-focus-ring: 0px 0px 0px 4px rgba(20, 125, 138, 0.15);
   --shadow-slider-navigation:
     0px 1px 2px 0px rgba(16, 24, 40, 0.1), 0px 1px 3px 0px rgba(16, 24, 40, 0.1);
   --shadow-tooltip:
@@ -664,14 +712,14 @@ span.flatpickr-weekday,
 .flatpickr-day.selected.nextMonthDay,
 .flatpickr-day.startRange.nextMonthDay,
 .flatpickr-day.endRange.nextMonthDay {
-  background: #465fff;
+  background: #147D8A;
   @apply !border-brand-500 !bg-brand-500 hover:!border-brand-500 hover:!bg-brand-500;
 }
 
 .flatpickr-day.selected.startRange + .endRange:not(:nth-child(7n + 1)),
 .flatpickr-day.startRange.startRange + .endRange:not(:nth-child(7n + 1)),
 .flatpickr-day.endRange.startRange + .endRange:not(:nth-child(7n + 1)) {
-  box-shadow: -10px 0 0 #465fff;
+  box-shadow: -10px 0 0 #147D8A;
 }
 
 .flatpickr-months .flatpickr-prev-month svg,
@@ -859,7 +907,7 @@ pre[class*="language-"].line-numbers {
   fill: #9cb9ff !important;
 }
 #mapTwo .jvectormap-region[data-code="US"] {
-  fill: #465fff !important;
+  fill: #147D8A !important;
 }
 
 .api-token-chart .apexcharts-tooltip {
@@ -875,10 +923,10 @@ pre[class*="language-"].line-numbers {
   stroke-width: 2 !important;
 }
 #mapCustomerPinPoint .jvectormap-region[data-code="US-CA"] {
-  fill: #465fff !important;
+  fill: #147D8A !important;
 }
 #mapCustomerPinPoint .jvectormap-region[data-code="US-NV"] {
-  fill: #465fff !important;
+  fill: #147D8A !important;
 }
 #mapCustomerPinPoint .jvectormap-region[data-code="US-NY"] {
   fill: #3538cd !important;
@@ -917,7 +965,7 @@ pre[class*="language-"].line-numbers {
   fill: #9cb9ff !important;
 }
 #mapCustomerPinPoint .jvectormap-region.jvectormap-element:hover {
-  fill: #465fff !important;
+  fill: #147D8A !important;
 }
 .dark #mapCustomerPinPoint .jvectormap-region.jvectormap-element {
   stroke: #1f2937 !important;
@@ -925,7 +973,7 @@ pre[class*="language-"].line-numbers {
 
 /* Customer map markers: solid filled circles with white ring */
 #mapCustomerPinPoint .jvectormap-marker.jvectormap-element {
-  fill: #465fff !important;
+  fill: #147D8A !important;
   stroke: white !important;
   stroke-width: 2 !important;
   fill-opacity: 1 !important;
@@ -945,7 +993,7 @@ pre[class*="language-"].line-numbers {
   height: 20px;
   border-radius: 9999px;
   background: #ffffff;
-  border: 2px solid #465fff;
+  border: 2px solid #147D8A;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
@@ -954,7 +1002,7 @@ pre[class*="language-"].line-numbers {
   height: 20px;
   border-radius: 9999px;
   background: #ffffff;
-  border: 2px solid #465fff;
+  border: 2px solid #147D8A;
   cursor: pointer;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
 }
