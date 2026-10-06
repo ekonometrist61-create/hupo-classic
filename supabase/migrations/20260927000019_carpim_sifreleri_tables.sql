@@ -84,7 +84,7 @@ create table if not exists public.carpim_deneme_log (
   constraint carpim_deneme_log_asama_check check (asama in ('acik', 'kapali')),
   constraint carpim_deneme_log_soru_index_check check (soru_index >= 0)
 );
-comment on table public.carpim_deneme_log is 'Her (öğrenci, şifre, aşama, soru) için İLK deneme sonucu. ' || 'Tekrar denemeler burada ezilmez; yıldız yalnızca ilk doğruda verilir.';
+comment on table public.carpim_deneme_log is 'Her (öğrenci, şifre, aşama, soru) için İLK deneme sonucu. Tekrar denemeler burada ezilmez; yıldız yalnızca ilk doğruda verilir.';
 -- ---------------------------------------------------------------------
 -- 4) RLS
 --    carpim_* tabloları doğrudan istemciye AÇIK DEĞİLDİR: tüm erişim

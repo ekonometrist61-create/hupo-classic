@@ -1,0 +1,14 @@
+{
+  "name": "hupo-db-tools",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Supabase migration araçları (yalnızca veritabanı işlemleri için kök katman). Uygulama kodu mobile-app/ ve web-panel/ altındadır.",
+  "scripts": {
+    "db:status": "supabase migration list",
+    "db:preview": "supabase db push --dry-run",
+    "db:deploy": "supabase db push"
+  },
+  "devDependencies": {
+    "supabase": "2.119.0"
+  }
+}

@@ -22,9 +22,20 @@ Türkiye'de 4. sınıftan 5. sınıfa geçiş yapan tüm proje okulları için m
 - [MEB/ODSGM kazanım testleri sayfası](https://odsgm.meb.gov.tr/www/7-sinif-ingilizce-kazanim-testleri-2022-2023/icerik/852) — resmî çalışma materyali örneği; 4. sınıftan 5. sınıfa proje okulu sınavı olarak kullanılmamalıdır.
 - [MEB BİLSEM duyurusu](https://orgm.meb.gov.tr/www/2025-bilim-ve-sanat-merkezleri-muzik-yetenek-alaninda-bireysel-degerlendirmeye-alinacak-ogrenciler-icin-tanitim-videosu-yayimlandi/icerik/3197) — BİLSEM sürecinin ayrı bir değerlendirme olduğunu gösterir; proje okuluna geçiş sınavı değildir.
 
-## Mevcut dosyanın statüsü
+## Mevcut dosyaların statüsü
 
-`matematik-bolum-1.md` içindeki 50 madde, 4. sınıf kazanımlarına uygun **örnek soru tipleridir**. Çıkmış soru değildir. Dosyanın üst kısmında bu durum açıkça belirtilmiştir.
+Soru havuzunda şu an 6 ders dosyası bulunur; hepsi 4. sınıf kazanımlarına uygun, proje okulu seçme sınavı tarzından **mülhem örnek soru tipleridir**. Çıkmış soru değildir ve her dosyanın üst kısmında bu durum açıkça belirtilmiştir. Her maddenin cevabı tek ve kesin olacak şekilde denetlenmiştir.
+
+| Dosya | Ders | Madde |
+|---|---|---|
+| `matematik-bolum-1.md` | Matematik | 50 |
+| `turkce-bolum-1.md` | Türkçe | 20 |
+| `fen-bilimleri-bolum-1.md` | Fen Bilimleri | 20 |
+| `sosyal-bilgiler-bolum-1.md` | Sosyal Bilgiler | 20 |
+| `din-kulturu-bolum-1.md` | Din Kültürü ve Ahlak Bilgisi | 20 |
+| `ingilizce-bolum-1.md` | İngilizce | 20 |
+
+Bu maddeler `taslak_ornek` statüsündedir; doğrulanmış kaynak (okul adı, sınav yılı, kitapçık URL'si) eklenmeden uygulama veritabanına `onaylandi` olarak yüklenmemelidir.
 
 ## Sonraki veri toplama kuralı
 
