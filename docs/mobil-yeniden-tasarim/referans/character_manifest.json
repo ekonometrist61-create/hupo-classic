@@ -1,0 +1,426 @@
+[
+  {
+    "id": "class1",
+    "slug": "ozgur-ruhlar",
+    "name": "ÖZGÜR RUHLAR",
+    "theme": "Macera · Cesaret",
+    "characters": [
+      {
+        "id": "class1-1",
+        "name": "Özgür Ruh",
+        "rarity": "common",
+        "progressionIndex": 1,
+        "unlockScore": 0,
+        "asset": "assets/characters/ozgur-ruhlar/01.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class1-2",
+        "name": "Kıvılcım",
+        "rarity": "rare",
+        "progressionIndex": 2,
+        "unlockScore": 100,
+        "asset": "assets/characters/ozgur-ruhlar/02.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class1-3",
+        "name": "Ateşkanat",
+        "rarity": "epic",
+        "progressionIndex": 3,
+        "unlockScore": 300,
+        "asset": "assets/characters/ozgur-ruhlar/03.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class1-4",
+        "name": "Gece Kartalı",
+        "rarity": "legendary",
+        "progressionIndex": 4,
+        "unlockScore": 600,
+        "asset": "assets/characters/ozgur-ruhlar/04.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class1-5",
+        "name": "Oba Muhafızı",
+        "rarity": "mythic",
+        "progressionIndex": 5,
+        "unlockScore": 1000,
+        "asset": "assets/characters/ozgur-ruhlar/05.png",
+        "duplicateName": false
+      }
+    ]
+  },
+  {
+    "id": "class2",
+    "slug": "firtina",
+    "name": "FIRTINA",
+    "theme": "Hız · Enerji",
+    "characters": [
+      {
+        "id": "class2-1",
+        "name": "Rüzgâr Çırağı",
+        "rarity": "common",
+        "progressionIndex": 1,
+        "unlockScore": 0,
+        "asset": "assets/characters/firtina/01.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class2-2",
+        "name": "Rüzgâr Koşucusu",
+        "rarity": "rare",
+        "progressionIndex": 2,
+        "unlockScore": 100,
+        "asset": "assets/characters/firtina/02.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class2-3",
+        "name": "Şimşek",
+        "rarity": "epic",
+        "progressionIndex": 3,
+        "unlockScore": 300,
+        "asset": "assets/characters/firtina/03.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class2-4",
+        "name": "Fırtına Binicisi",
+        "rarity": "legendary",
+        "progressionIndex": 4,
+        "unlockScore": 600,
+        "asset": "assets/characters/firtina/04.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class2-5",
+        "name": "Fırtına Ustası",
+        "rarity": "mythic",
+        "progressionIndex": 5,
+        "unlockScore": 1000,
+        "asset": "assets/characters/firtina/05.png",
+        "duplicateName": true
+      }
+    ]
+  },
+  {
+    "id": "class3",
+    "slug": "kasifler",
+    "name": "KAŞİFLER",
+    "theme": "Keşif · Merak",
+    "characters": [
+      {
+        "id": "class3-1",
+        "name": "İz Sürücü",
+        "rarity": "common",
+        "progressionIndex": 1,
+        "unlockScore": 0,
+        "asset": "assets/characters/kasifler/01.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class3-2",
+        "name": "Yol Bulucu",
+        "rarity": "rare",
+        "progressionIndex": 2,
+        "unlockScore": 100,
+        "asset": "assets/characters/kasifler/02.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class3-3",
+        "name": "Sır Avcısı",
+        "rarity": "epic",
+        "progressionIndex": 3,
+        "unlockScore": 300,
+        "asset": "assets/characters/kasifler/03.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class3-4",
+        "name": "Büyük Kaşif",
+        "rarity": "legendary",
+        "progressionIndex": 4,
+        "unlockScore": 600,
+        "asset": "assets/characters/kasifler/04.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class3-5",
+        "name": "Dünya Kaşifi",
+        "rarity": "mythic",
+        "progressionIndex": 5,
+        "unlockScore": 1000,
+        "asset": "assets/characters/kasifler/05.png",
+        "duplicateName": false
+      }
+    ]
+  },
+  {
+    "id": "class4",
+    "slug": "bozkir",
+    "name": "BOZKIR",
+    "theme": "Ruh · Dayanıklılık",
+    "characters": [
+      {
+        "id": "class4-1",
+        "name": "Bozkır Yoldaşı",
+        "rarity": "common",
+        "progressionIndex": 1,
+        "unlockScore": 0,
+        "asset": "assets/characters/bozkir/01.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class4-2",
+        "name": "Bozkır İzci",
+        "rarity": "rare",
+        "progressionIndex": 2,
+        "unlockScore": 100,
+        "asset": "assets/characters/bozkir/02.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class4-3",
+        "name": "Bozkır Kurdu",
+        "rarity": "epic",
+        "progressionIndex": 3,
+        "unlockScore": 300,
+        "asset": "assets/characters/bozkir/03.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class4-4",
+        "name": "Bozkır Kartalı",
+        "rarity": "legendary",
+        "progressionIndex": 4,
+        "unlockScore": 600,
+        "asset": "assets/characters/bozkir/04.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class4-5",
+        "name": "Bozkır Lideri",
+        "rarity": "mythic",
+        "progressionIndex": 5,
+        "unlockScore": 1000,
+        "asset": "assets/characters/bozkir/05.png",
+        "duplicateName": false
+      }
+    ]
+  },
+  {
+    "id": "class5",
+    "slug": "zihin-ustalari",
+    "name": "ZİHİN USTALARI",
+    "theme": "Mantık · Strateji",
+    "characters": [
+      {
+        "id": "class5-1",
+        "name": "Fikir Kıvılcımı",
+        "rarity": "common",
+        "progressionIndex": 1,
+        "unlockScore": 0,
+        "asset": "assets/characters/zihin-ustalari/01.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class5-2",
+        "name": "Bilgi Avcısı",
+        "rarity": "rare",
+        "progressionIndex": 2,
+        "unlockScore": 100,
+        "asset": "assets/characters/zihin-ustalari/02.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class5-3",
+        "name": "Bulmaca Ustası",
+        "rarity": "epic",
+        "progressionIndex": 3,
+        "unlockScore": 300,
+        "asset": "assets/characters/zihin-ustalari/03.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class5-4",
+        "name": "Akıl Ustası",
+        "rarity": "legendary",
+        "progressionIndex": 4,
+        "unlockScore": 600,
+        "asset": "assets/characters/zihin-ustalari/04.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class5-5",
+        "name": "Zihin Şimşeği",
+        "rarity": "mythic",
+        "progressionIndex": 5,
+        "unlockScore": 1000,
+        "asset": "assets/characters/zihin-ustalari/05.png",
+        "duplicateName": false
+      }
+    ]
+  },
+  {
+    "id": "class6",
+    "slug": "muhafizlar",
+    "name": "MUHAFIZLAR",
+    "theme": "Disiplin · Koruma",
+    "characters": [
+      {
+        "id": "class6-1",
+        "name": "Genç Muhafız",
+        "rarity": "common",
+        "progressionIndex": 1,
+        "unlockScore": 0,
+        "asset": "assets/characters/muhafizlar/01.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class6-2",
+        "name": "Kale Bekçisi",
+        "rarity": "rare",
+        "progressionIndex": 2,
+        "unlockScore": 100,
+        "asset": "assets/characters/muhafizlar/02.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class6-3",
+        "name": "Gök Muhafızı",
+        "rarity": "epic",
+        "progressionIndex": 3,
+        "unlockScore": 300,
+        "asset": "assets/characters/muhafizlar/03.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class6-4",
+        "name": "Ateş Muhafızı",
+        "rarity": "legendary",
+        "progressionIndex": 4,
+        "unlockScore": 600,
+        "asset": "assets/characters/muhafizlar/04.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class6-5",
+        "name": "Baş Muhafız",
+        "rarity": "mythic",
+        "progressionIndex": 5,
+        "unlockScore": 1000,
+        "asset": "assets/characters/muhafizlar/05.png",
+        "duplicateName": false
+      }
+    ]
+  },
+  {
+    "id": "class7",
+    "slug": "ustalar",
+    "name": "USTALAR",
+    "theme": "Ustalık · Odak",
+    "characters": [
+      {
+        "id": "class7-1",
+        "name": "Genç Kemankeş",
+        "rarity": "common",
+        "progressionIndex": 1,
+        "unlockScore": 0,
+        "asset": "assets/characters/ustalar/01.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class7-2",
+        "name": "Usta Kemankeş",
+        "rarity": "rare",
+        "progressionIndex": 2,
+        "unlockScore": 100,
+        "asset": "assets/characters/ustalar/02.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class7-3",
+        "name": "Gök Akıncısı",
+        "rarity": "epic",
+        "progressionIndex": 3,
+        "unlockScore": 300,
+        "asset": "assets/characters/ustalar/03.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class7-4",
+        "name": "Fırtına Ustası",
+        "rarity": "legendary",
+        "progressionIndex": 4,
+        "unlockScore": 600,
+        "asset": "assets/characters/ustalar/04.png",
+        "duplicateName": true
+      },
+      {
+        "id": "class7-5",
+        "name": "Büyük Usta",
+        "rarity": "mythic",
+        "progressionIndex": 5,
+        "unlockScore": 1000,
+        "asset": "assets/characters/ustalar/05.png",
+        "duplicateName": false
+      }
+    ]
+  },
+  {
+    "id": "class8",
+    "slug": "efsaneler",
+    "name": "EFSANELER",
+    "theme": "Büyük Hedefler",
+    "characters": [
+      {
+        "id": "class8-1",
+        "name": "Ay Kaşifi",
+        "rarity": "common",
+        "progressionIndex": 1,
+        "unlockScore": 0,
+        "asset": "assets/characters/efsaneler/01.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class8-2",
+        "name": "Güneş Muhafızı",
+        "rarity": "rare",
+        "progressionIndex": 2,
+        "unlockScore": 100,
+        "asset": "assets/characters/efsaneler/02.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class8-3",
+        "name": "Göklerin Akıncısı",
+        "rarity": "epic",
+        "progressionIndex": 3,
+        "unlockScore": 300,
+        "asset": "assets/characters/efsaneler/03.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class8-4",
+        "name": "Şimşek Kağanı",
+        "rarity": "legendary",
+        "progressionIndex": 4,
+        "unlockScore": 600,
+        "asset": "assets/characters/efsaneler/04.png",
+        "duplicateName": false
+      },
+      {
+        "id": "class8-5",
+        "name": "Efsaneler Efsanesi",
+        "rarity": "mythic",
+        "progressionIndex": 5,
+        "unlockScore": 1000,
+        "asset": "assets/characters/efsaneler/05.png",
+        "duplicateName": false
+      }
+    ]
+  }
+]

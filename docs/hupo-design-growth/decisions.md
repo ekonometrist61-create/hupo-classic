@@ -17,6 +17,8 @@ Bu dosya yeni, doğrulanmış proje kararları içindir. Paket önerileri kullan
 | 2026-10-06 | Karşılama ekranı (WelcomeSplash) yalnız panel layout'larında; halka açık sayfalarda yok | TailAdmin logosu ve "devam edelim" metni ilk ziyaretçiyi karşılıyordu | UYGULANDI | `(admin)/layout`, `(student)/layout` |
 | 2026-10-06 | Demo soruları `soru-bankasi` taslak_ornek içeriğinden 5 adet; seçenek sırası harf dağılımı için değiştirildi | "Örnek" etiketi ve "resmî sınav sorusu değildir" notu ile sunulur | Cevap anahtarları tek tek yeniden doğrulandı; **kullanıcı onayı bekliyor** | `demoQuestions.ts` |
 
+| 2026-10-07 | **Mobil yeniden tasarım (ChatGPT Mobile Flutter MVP v1):** ortak dil = Teal ana eylem + Deep Navy "oyun" yüzeyleri + Cream + Gold kıt, Nunito; paketin mavi CTA/Inter paleti ve Supabase şeması (`students/attempts/question_options.is_correct`) **alınmadı**; canlı şema + RPC korunur, eksikler yeni migration'larla | Üç yüzeyin (mobil/web/admin) tutarlılığı; cevap anahtarı sızıntısı ve canlı auth/ödeme/veli onayı riski | Kullanıcı onayı — ONAYLI. Plan: `docs/mobil-yeniden-tasarim/PLAN.md` | `mobile-app/**`, `supabase/migrations/20261008+` |
+
 ## Paket ile repo çelişkileri
 - **Renk:** Kit "Leaf Green #6DA940" önceki kimlik referansı olarak anıyor; repo mobil tokenları `mint #22C58B`, `sun #FFC533`, `primary #6C4DF6`. Repo tokenları esas; kit'in Gold `#F5C842` ile mobil `sun #FFC533` birbirine yakın, birleştirme mobil dalgasında karara bağlanacak.
 - **Karakter adları:** Repo `assets/characters/bozkir/*` (Bozkır İzci/Reisi…) kullanıyor; kit 35 adı yeniden tanımlamıyor. Repo tablosu yetkili.
