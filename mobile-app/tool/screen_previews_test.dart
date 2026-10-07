@@ -26,6 +26,7 @@ import 'package:ogrenci_hazirlik/screens/notifications_screen.dart';
 import 'package:ogrenci_hazirlik/screens/profile_screen.dart';
 import 'package:ogrenci_hazirlik/screens/quiz_screen.dart';
 import 'package:ogrenci_hazirlik/screens/result_screen.dart';
+import 'package:ogrenci_hazirlik/screens/subject_topics_screen.dart';
 import 'package:ogrenci_hazirlik/services/quiz_repository.dart';
 import 'package:ogrenci_hazirlik/theme/app_theme.dart';
 import 'package:ogrenci_hazirlik/widgets/ui/chunky_button.dart';
@@ -61,13 +62,20 @@ class FakeRepo extends Fake implements QuizRepository {
   @override
   Future<List<Question>> fetchReviewQuestions({int limit = 10}) async => [];
   @override
-  Future<List<Question>> fetchQuizQuestions(String ders, {int limit = 10}) async => [];
+  Future<List<Question>> fetchQuizQuestions(String ders, {String? konu, int limit = 10}) async => [];
+  @override
+  Future<List<TopicProgress>> fetchTopicProgress(String ders) async => const [
+        TopicProgress(konu: 'Kesirler', toplam: 8, dogru: 6, oran: 75),
+        TopicProgress(konu: 'Ondalık Gösterim', toplam: 3, dogru: 1, oran: 33),
+        TopicProgress(konu: 'Yüzdeler', toplam: 2, dogru: 2),
+      ];
   @override
   Future<AnswerResult> submitAnswer({
     required String questionId,
     required String? selectedOption,
     required int durationMs,
     String? requestId,
+    String? kurtarmaOf,
   }) async {
     final ok = selectedOption == 'C';
     return AnswerResult(
@@ -305,6 +313,11 @@ void main() {
     await tester.tap(find.widgetWithText(NavigationDestination, 'Arena'));
     await settle(tester, 600);
     await shot(tester, '20_kabuk_arena');
+  });
+
+  testWidgets('Öğren: konu kırılımı (6 soru eşiği)', (tester) async {
+    await pumpScreen(tester, const SubjectTopicsScreen(ders: 'Matematik'), height: 1100);
+    await shot(tester, '21_konu_kirilimi');
   });
   testWidgets('giriş', (tester) async {
     await pumpScreen(tester, const LoginScreen());

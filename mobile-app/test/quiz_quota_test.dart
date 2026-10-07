@@ -14,6 +14,7 @@ class _QuotaRepo extends Fake implements QuizRepository {
     required String? selectedOption,
     required int durationMs,
     String? requestId,
+    String? kurtarmaOf,
   }) async {
     throw Exception('PostgrestException(message: Günlük ücretsiz soru hakkın doldu, code: P0402)');
   }

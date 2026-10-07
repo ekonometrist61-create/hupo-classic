@@ -147,16 +147,16 @@ begin
       return 'soru başlığı 1-200 karakter olmalı';
     end if;
     if v_tur = 'tek_secim' then
-      if jsonb_typeof(q -> 'secenekler') <> 'array' or jsonb_array_length(q -> 'secenekler') < 2 then
+      if jsonb_typeof(q -> 'secenekler') is distinct from 'array' or jsonb_array_length(q -> 'secenekler') < 2 then
         return 'tek seçimde en az 2 seçenek gerekir';
       end if;
     end if;
     v_kos := q -> 'kosul';
     if v_kos is not null and jsonb_typeof(v_kos) <> 'null' then
-      if jsonb_typeof(v_kos) <> 'object'
+      if jsonb_typeof(v_kos) is distinct from 'object'
          or not (v_ids @> array[coalesce(v_kos ->> 'soru_id', '')])
          or coalesce(v_kos ->> 'op', '') not in ('lte', 'gte', 'eq')
-         or jsonb_typeof(v_kos -> 'deger') <> 'number' then
+         or jsonb_typeof(v_kos -> 'deger') is distinct from 'number' then
         return 'koşul yalnızca önceki bir soruya, lte/gte/eq ve sayısal değerle bağlanabilir';
       end if;
     end if;
@@ -296,6 +296,7 @@ declare
   v_ele    integer;
   v_sorular jsonb;
   v_metin  jsonb;
+  v_gizli  boolean;
 begin
   perform public.require_admin();
   select * into a from public.anketler where id = p_id;
@@ -310,6 +311,16 @@ begin
          (count(*) filter (where nps <= 6))::integer
     into v_n, v_nps_n, v_des, v_pas, v_ele
     from public.anket_yanitlari where anket_id = p_id;
+
+  -- Anonim ankette 5'ten az yanıt varsa kırılım/metin gösterilmez (yeniden kimliklendirme riski).
+  v_gizli := a.anonim and v_n < 5;
+  if v_gizli then
+    return jsonb_build_object(
+      'anket', jsonb_build_object('id', a.id, 'ad', a.ad, 'anonim', a.anonim, 'surum', a.surum, 'durum', a.durum),
+      'yanit_sayisi', v_n, 'gizli', true,
+      'nps', jsonb_build_object('n', 0, 'destekleyen', 0, 'pasif', 0, 'elestiren', 0, 'skor', null),
+      'sorular', '[]'::jsonb, 'metinler', '[]'::jsonb);
+  end if;
 
   select coalesce(jsonb_agg(jsonb_build_object(
            'soru_id', q ->> 'id', 'baslik', q ->> 'baslik', 'tur', q ->> 'tur',
@@ -341,6 +352,7 @@ begin
   return jsonb_build_object(
     'anket', jsonb_build_object('id', a.id, 'ad', a.ad, 'anonim', a.anonim, 'surum', a.surum, 'durum', a.durum),
     'yanit_sayisi', v_n,
+    'gizli', false,
     'nps', jsonb_build_object(
       'n', v_nps_n, 'destekleyen', v_des, 'pasif', v_pas, 'elestiren', v_ele,
       'skor', case when v_nps_n > 0 then round((v_des - v_ele) * 100.0 / v_nps_n) end),
@@ -392,6 +404,7 @@ declare
   q       jsonb;
   v_id    text;
   v_val   jsonb;
+  v_ref   jsonb;
   v_nps   smallint;
   v_yanit uuid;
 begin
@@ -406,12 +419,6 @@ begin
   if not found then
     raise exception 'Anket bulunamadı veya yayında değil.' using errcode = 'P0002';
   end if;
-  if exists (select 1 from public.anket_katilimlari k
-              where k.anket_id = a.id and k.veli_id = v_uid
-                and k.son_at > now() - make_interval(days => a.tekrar_gosterim_gun)) then
-    raise exception 'Bu ankete yakın zamanda katıldınız.' using errcode = '23505';
-  end if;
-
   -- Yalnızca tanımlı sorulara, türüne uygun değerlerle yanıt kabul edilir.
   if exists (select 1 from jsonb_object_keys(p_yanitlar) k
               where not exists (select 1 from jsonb_array_elements(a.sorular) s where s ->> 'id' = k)) then
@@ -422,6 +429,18 @@ begin
     v_id  := q ->> 'id';
     v_val := p_yanitlar -> v_id;
     continue when v_val is null or jsonb_typeof(v_val) = 'null';
+    -- Koşullu soru: bağlı olduğu sorunun yanıtı koşulu sağlamıyorsa bu soruya yanıt kabul edilmez.
+    if q -> 'kosul' is not null and jsonb_typeof(q -> 'kosul') = 'object' then
+      v_ref := p_yanitlar -> (q -> 'kosul' ->> 'soru_id');
+      if v_ref is null or jsonb_typeof(v_ref) <> 'number'
+         or not (case q -> 'kosul' ->> 'op'
+                   when 'lte' then (v_ref #>> '{}')::numeric <= (q -> 'kosul' ->> 'deger')::numeric
+                   when 'gte' then (v_ref #>> '{}')::numeric >= (q -> 'kosul' ->> 'deger')::numeric
+                   else (v_ref #>> '{}')::numeric = (q -> 'kosul' ->> 'deger')::numeric
+                 end) then
+        raise exception 'Koşulu sağlanmayan soruya yanıt verilemez.' using errcode = '22023';
+      end if;
+    end if;
     case q ->> 'tur'
       when 'nps' then
         if jsonb_typeof(v_val) <> 'number' or (v_val #>> '{}')::numeric not between 0 and 10
@@ -438,7 +457,8 @@ begin
           raise exception 'Onay evet/hayır olmalı.' using errcode = '22023';
         end if;
       when 'tek_secim' then
-        if jsonb_typeof(v_val) <> 'string' or not (q -> 'secenekler') @> to_jsonb(v_val #>> '{}') then
+        if jsonb_typeof(v_val) <> 'string'
+           or not coalesce((q -> 'secenekler') @> to_jsonb(v_val #>> '{}'), false) then
           raise exception 'Seçenek geçersiz.' using errcode = '22023';
         end if;
       else
@@ -448,16 +468,22 @@ begin
     end case;
   end loop;
 
+  -- Katılım ATOMİK alınır: aynı anda iki istek gelirse yalnızca biri geçer (çifte NPS yok).
+  insert into public.anket_katilimlari (anket_id, veli_id, son_at)
+  values (a.id, v_uid, case when a.anonim then date_trunc('day', now()) else now() end)
+  on conflict (anket_id, veli_id) do update
+    set son_at = case when a.anonim then date_trunc('day', now()) else now() end
+    where public.anket_katilimlari.son_at <= now() - make_interval(days => a.tekrar_gosterim_gun);
+  if not found then
+    raise exception 'Bu ankete yakın zamanda katıldınız.' using errcode = '23505';
+  end if;
+
   insert into public.anket_yanitlari (anket_id, surum, veli_id, yanitlar, nps, created_at)
   values (a.id, a.surum,
           case when a.anonim then null else v_uid end,
           p_yanitlar, v_nps,
           case when a.anonim then date_trunc('day', now()) else now() end)
   returning id into v_yanit;
-
-  insert into public.anket_katilimlari (anket_id, veli_id, son_at)
-  values (a.id, v_uid, now())
-  on conflict (anket_id, veli_id) do update set son_at = now();
 
   -- Kimlikli ve düşük skor → yalnızca destek İNCELEME görevi (indirim/teklif/izin yok).
   if not a.anonim and v_nps is not null and v_nps <= 6
@@ -535,7 +561,7 @@ begin
     if jsonb_typeof(s) <> 'object' then return 'her adım nesne olmalı'; end if;
     v_tur := s ->> 'tur';
     if v_tur = 'bekle' then
-      if jsonb_typeof(s -> 'saat') <> 'number' or (s ->> 'saat')::numeric not between 1 and 720 then
+      if jsonb_typeof(s -> 'saat') is distinct from 'number' or (s ->> 'saat')::numeric not between 1 and 720 then
         return 'bekleme süresi 1-720 saat olmalı';
       end if;
     elsif v_tur = 'kosul' then
@@ -701,7 +727,7 @@ begin
              when b.n = 0 or b.bas + make_interval(weeks => g.k) > now() then null
              else round(100.0 * (
                     select count(distinct ua.student_id)
-                      from public.user_answers ua
+                      from public.answer_events ua
                       join kohort ko on ko.ogr = ua.student_id and ko.bas = b.bas
                      where ua.created_at >= b.bas + make_interval(weeks => g.k)
                        and ua.created_at <  b.bas + make_interval(weeks => g.k + 1)
@@ -756,16 +782,19 @@ begin
               pa.tutar_kurus, pa.created_at as tarih
          from public.payments pa left join public.profiles p on p.id = pa.veli_id
         where pa.durum = 'beklemede' and pa.created_at < now() - interval '3 days'
+        order by pa.created_at desc
         limit 100)
       union all
       (select 'abonelik_yok', pa.id, p.full_name, pa.tutar_kurus, pa.created_at
          from public.payments pa left join public.profiles p on p.id = pa.veli_id
         where pa.durum = 'basarili' and pa.subscription_id is null
+        order by pa.created_at desc
         limit 100)
       union all
       (select 'suresi_gecmis_aktif', sb.id, p.full_name, null::integer, sb.bitis
          from public.subscriptions sb left join public.profiles p on p.id = sb.veli_id
         where sb.durum = 'aktif' and sb.bitis < now()
+        order by sb.bitis desc
         limit 100)
       union all
       (select 'yinelenen', pa.id, p.full_name, pa.tutar_kurus, pa.created_at
@@ -776,6 +805,7 @@ begin
                          and o.durum = 'basarili'
                          and o.created_at between pa.created_at - interval '10 minutes' and pa.created_at
                          and (o.created_at < pa.created_at or o.id < pa.id))
+        order by pa.created_at desc
         limit 100)
     ) x;
 

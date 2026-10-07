@@ -16,6 +16,7 @@ class FakeRepository extends Fake implements QuizRepository {
     required String? selectedOption,
     required int durationMs,
     String? requestId,
+    String? kurtarmaOf,
   }) async {
     calls.add(selectedOption);
     final correct = selectedOption == 'B';

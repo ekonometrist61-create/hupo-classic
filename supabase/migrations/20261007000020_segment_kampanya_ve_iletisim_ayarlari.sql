@@ -119,14 +119,31 @@ begin
   if p_kanal not in ('eposta', 'push', 'sms', 'uygulama_ici') then
     raise exception 'Geçersiz kanal.' using errcode = '22023';
   end if;
+  if jsonb_typeof(k) is distinct from 'object' then
+    raise exception 'Kriterler nesne olmalı.' using errcode = '22023';
+  end if;
+  -- Bilinmeyen/yanlış tipli kriter SESSİZCE yok sayılmaz: kitle istemeden genişlemesin.
+  if exists (select 1 from jsonb_object_keys(k) kk
+              where kk not in ('plan', 'sinif', 'aktiflik', 'ilk_gorev_bekleyen', 'yenileme_yaklasan')) then
+    raise exception 'Bilinmeyen segment kriteri.' using errcode = '22023';
+  end if;
   if v_aktiflik is not null and v_aktiflik not in ('aktif_7', 'pasif_7', 'pasif_30') then
     raise exception 'Geçersiz aktiflik kriteri.' using errcode = '22023';
+  end if;
+  if (k ? 'plan' and jsonb_typeof(k -> 'plan') is distinct from 'array')
+     or (k ? 'sinif' and jsonb_typeof(k -> 'sinif') is distinct from 'array')
+     or (k ? 'ilk_gorev_bekleyen' and jsonb_typeof(k -> 'ilk_gorev_bekleyen') is distinct from 'boolean')
+     or (k ? 'yenileme_yaklasan' and jsonb_typeof(k -> 'yenileme_yaklasan') is distinct from 'boolean') then
+    raise exception 'Segment kriteri tipleri geçersiz.' using errcode = '22023';
   end if;
   if jsonb_typeof(k -> 'plan') = 'array' then
     v_plan := array(select jsonb_array_elements_text(k -> 'plan'));
     if cardinality(v_plan) = 0 then v_plan := null; end if;
   end if;
   if jsonb_typeof(k -> 'sinif') = 'array' then
+    if exists (select 1 from jsonb_array_elements_text(k -> 'sinif') e where e !~ '^(1[0-2]|[1-9])$') then
+      raise exception 'Sınıf 1-12 arasında olmalı.' using errcode = '22023';
+    end if;
     v_sinif := array(select (jsonb_array_elements_text(k -> 'sinif'))::smallint);
     if cardinality(v_sinif) = 0 then v_sinif := null; end if;
   end if;
@@ -309,6 +326,12 @@ begin
     values (v_ad, nullif(btrim(coalesce(p_aciklama, '')), ''), p_kriterler, (select auth.uid()))
     returning id into v_id;
   else
+    -- Ön kontrol/planlama yapılmış kampanyanın kitlesi sonradan değişmesin.
+    if exists (select 1 from public.iletisim_kampanyalari
+                where segment_id = v_id and durum in ('kontrol_edildi', 'planlandi')) then
+      raise exception 'Bu segment kontrol edilmiş veya planlanmış bir kampanyada kullanılıyor.'
+        using errcode = '23503';
+    end if;
     update public.segmentler
        set ad = v_ad, aciklama = nullif(btrim(coalesce(p_aciklama, '')), ''),
            kriterler = p_kriterler, updated_at = now()
@@ -337,10 +360,13 @@ begin
 
   select coalesce(jsonb_agg(to_jsonb(x) order by x.created_at desc), '[]'::jsonb) into v_res
     from (
-      select s.id, s.ad, s.aciklama, s.kriterler, s.created_at,
-             (select count(*)::integer from public._segment_veliler(s.kriterler, 'eposta')) as veli_sayisi,
-             (select count(*)::integer from public._segment_veliler(s.kriterler, 'eposta') where r_izinli) as izinli_eposta
+      select s.id, s.ad, s.aciklama, s.kriterler, s.created_at, l.veli_sayisi, l.izinli_eposta
         from public.segmentler s
+        cross join lateral (
+          select count(*)::integer as veli_sayisi,
+                 (count(*) filter (where v.r_izinli))::integer as izinli_eposta
+            from public._segment_veliler(s.kriterler, 'eposta') v
+        ) l
        where not s.arsiv
     ) x;
 
@@ -485,21 +511,26 @@ begin
     into v_toplam, v_izinli
     from public._segment_veliler(s.kriterler, c.kanal);
 
-  -- Aynı ±7 gün penceresinde planlı diğer kampanyaların alıcıları (kanallar birlikte).
+  -- Planlanan zamanın ±6 günündeki (7 günlük pencereye sığan) planlı diğer kampanyaların
+  -- GERÇEK alıcıları (yalnızca o kanalda izinliler), kanallar birlikte sayılır.
+  -- Not: bu, "her olası 7 günlük pencere" için tam hesap değil, muhafazakâr bir yaklaşımdır.
   for r in
     select c2.kanal as kanal2, s2.kriterler as kriter2
       from public.iletisim_kampanyalari c2
       join public.segmentler s2 on s2.id = c2.segment_id
      where c2.durum = 'planlandi' and c2.id <> p_id
-       and c2.planlanan_at between p_planlanan_at - interval '7 days' and p_planlanan_at + interval '7 days'
+       and c2.planlanan_at between p_planlanan_at - interval '6 days' and p_planlanan_at + interval '6 days'
   loop
-    v_diger := v_diger || array(select r_veli_id from public._segment_veliler(r.kriter2, r.kanal2));
+    v_diger := v_diger || array(select r_veli_id from public._segment_veliler(r.kriter2, r.kanal2) where r_izinli);
   end loop;
 
+  with sayac as (
+    select x as veli, count(*) as n from unnest(v_diger) x group by x
+  )
   select count(*)::integer into v_sinir
     from public._segment_veliler(s.kriterler, c.kanal) h
-   where h.r_izinli
-     and (select count(*) from unnest(v_diger) x where x = h.r_veli_id) >= a.haftalik_limit;
+    join sayac y on y.veli = h.r_veli_id
+   where h.r_izinli and y.n >= a.haftalik_limit;
 
   v_sessiz := public._sessiz_saat_mi(p_planlanan_at);
 
@@ -572,17 +603,23 @@ language plpgsql
 security definer
 set search_path = ''
 as $function$
+declare
+  v_eski text;
 begin
   perform public.require_admin();
 
-  update public.iletisim_kampanyalari set durum = 'iptal', updated_at = now()
-   where id = p_id and durum in ('taslak', 'kontrol_edildi', 'planlandi');
-  if not found then
+  select durum into v_eski from public.iletisim_kampanyalari where id = p_id for update;
+  if not found or v_eski = 'iptal' then
     raise exception 'Kampanya bulunamadı veya zaten iptal.' using errcode = 'P0002';
   end if;
 
-  insert into public.olay_kutusu (tur, payload)
-  values ('iletisim_kampanyasi_iptal_edildi', jsonb_build_object('kampanya_id', p_id));
+  update public.iletisim_kampanyalari set durum = 'iptal', updated_at = now() where id = p_id;
+
+  -- Yalnızca daha önce planlanmış (outbox'a olay yazılmış) kampanyanın iptali olay üretir.
+  if v_eski = 'planlandi' then
+    insert into public.olay_kutusu (tur, payload)
+    values ('iletisim_kampanyasi_iptal_edildi', jsonb_build_object('kampanya_id', p_id));
+  end if;
 
   perform public.log_admin_action('iletisim_kampanyasi_iptal_edildi', jsonb_build_object('kampanya_id', p_id));
 end;

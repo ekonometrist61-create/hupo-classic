@@ -72,7 +72,7 @@ Kural: mobilde hardcode katalog yok; karakter/rozet/ders listeleri DB'den. Yeni 
 
 ## 7. Dalgalar (her biri küçük commit'lerle, doğrulama: `flutter analyze` + `flutter test` + önizleme görüntüleri)
 - **W0 — Temel (TAMAM 2026-10-07, analyze 0 sorun, 179 test):** bu plan, token genişletme (`navyDeep`, rarity renkleri, maturity), 5 sekmeli kabuk (`IndexedStack` + `NavigationBar`), mevcut ekranlar sekmelere yerleşir. Kabul: tüm mevcut akışlar çalışır, testler yeşil.
-- **W1 — Öğrenme döngüsü:** Ana Sayfa 3 odak, Öğren sekmesi, soru/yanlış/recovery/sonuç yeniden stil + recovery XP (migration 4+3). 
+- **W1 — Öğrenme döngüsü (TAMAM 2026-10-08, analyze 0 sorun, 184 test, SQL test 13/13 sunucuda doğrulandı):** Ana Sayfa 3 odağa indirildi (Bugünkü hedefin / Kaldığın yer / Bugünkü odakların). Öğren sekmesinde ders → konu kırılımı (`SubjectTopicsScreen`, `get_topic_progress`, 6 soru eşiği). Kurtarma XP: yanlış cevaptan sonra "Benzer Soru Çöz" aynı konudan farklı soruyu öne alır; doğru çözülürse sunucu tek seferlik +5 XP verir (`submit_answer` p_kurtarma_of). Sonuç ekranında "sonraki seviyeye kalan XP" ve kurtarılan soru sayısı. Migration `20261008000000` uzak DB'ye uygulandı ve doğrulandı.
 - **W2 — Koleksiyon:** sınıf filtresi, rarity çerçeveleri, karakter detay ("Kullan/Hedefle"), aktif karakter yerleşimi; admin'de karakter kataloğu ekranı.
 - **W3 — Lig/Arena:** Arena hub, Ay Ligi tam ekran.
 - **W4 — Görevler/rozetler/seri:** migration 2, admin görev tanımı.

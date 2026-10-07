@@ -32,6 +32,7 @@ class QuizScreen extends ConsumerStatefulWidget {
 class _QuizScreenState extends ConsumerState<QuizScreen> {
   final _stopwatch = Stopwatch();
   final _results = <AnswerResult>[];
+  late final List<Question> _queue = List.of(widget.questions);
   Timer? _ticker;
 
   int _index = 0;
@@ -40,9 +41,22 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   AnswerResult? _result;
   bool _submitting = false;
 
-  Question get _question => widget.questions[_index];
-  bool get _isLast => _index == widget.questions.length - 1;
+  /// "Benzer Soru Çöz" ile kuyruğa taşınan sorunun hangi yanlış soruyu
+  /// kurtarmaya çalıştığı; bir sonraki gönderimde tüketilir (tek seferlik).
+  String? _pendingKurtarmaOf;
+
+  Question get _question => _queue[_index];
+  bool get _isLast => _index == _queue.length - 1;
   int get _sessionXp => _results.fold(0, (sum, r) => sum + r.earnedXp);
+
+  /// Yanlış cevaplanan [konu]dan, kuyrukta henüz sorulmamış bir soru varsa
+  /// onun sırasını döner; yoksa null (uydurma seçenek sunulmaz).
+  int? _benzerSoruIndex(String konu) {
+    for (var i = _index + 1; i < _queue.length; i++) {
+      if (_queue[i].konu == konu) return i;
+    }
+    return null;
+  }
 
   @override
   void initState() {
@@ -113,6 +127,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
     final limitMs = _question.timeLimitSeconds * 1000;
     final durationMs = _stopwatch.elapsedMilliseconds.clamp(0, limitMs);
+    final kurtarmaOf = _pendingKurtarmaOf;
 
     AnswerResult? result;
     try {
@@ -120,6 +135,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
             questionId: _question.id,
             selectedOption: option,
             durationMs: durationMs,
+            kurtarmaOf: kurtarmaOf,
           );
     } catch (e) {
       if (_isQuotaError(e)) {
@@ -161,6 +177,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
       _result = result;
       _results.add(result!);
       _submitting = false;
+      _pendingKurtarmaOf = null; // tek seferlik; gerçekten gönderildiyse tüketilir
     });
   }
 
@@ -196,7 +213,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   @override
   Widget build(BuildContext context) {
     final question = _question;
-    final total = widget.questions.length;
+    final total = _queue.length;
     final result = _result;
     final locked = _submitting || result != null;
 
@@ -299,6 +316,15 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                 result: result,
                 isLast: _isLast,
                 onContinue: _next,
+                onRecover: result.correct ? null : _benzerSoruIndex(question.konu) == null
+                    ? null
+                    : () {
+                        final hedef = _benzerSoruIndex(question.konu)!;
+                        final soru = _queue.removeAt(hedef);
+                        _queue.insert(_index + 1, soru);
+                        _pendingKurtarmaOf = question.id;
+                        _next();
+                      },
               ),
             ),
           if (result != null && result.correct && !reducedMotion(context))

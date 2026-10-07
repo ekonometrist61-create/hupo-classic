@@ -20,8 +20,10 @@ class ResultScreen extends StatelessWidget {
     final total = results.length;
     final correct = results.where((r) => r.correct).length;
     final earnedXp = results.fold<int>(0, (sum, r) => sum + r.earnedXp);
+    final recovered = results.where((r) => r.isRecovery && r.correct).length;
     final last = results.isEmpty ? null : results.last;
     final ratio = total == 0 ? 0.0 : correct / total;
+    final xpToNextLevel = last == null ? 0 : 100 - (last.xp % 100);
 
     final message = ratio >= 0.8
         ? 'Muhteşem bir iş çıkardın!'
@@ -115,8 +117,17 @@ class ResultScreen extends StatelessWidget {
                       ),
                     ],
                   ),
+                  const SizedBox(height: 6),
+                  Text(
+                    'Sonraki seviyeye $xpToNextLevel XP kaldı!',
+                    style: appText(size: 13, weight: FontWeight.w700, color: AppColors.muted),
+                  ),
                   const SizedBox(height: 16),
                   const AktifKarakterChip(),
+                  if (recovered > 0) ...[
+                    const SizedBox(height: 16),
+                    _RecoveryBanner(count: recovered),
+                  ],
                   const SizedBox(height: 16),
                   _TipCard(wrong: total - correct),
                   const Spacer(),
@@ -129,6 +140,35 @@ class ResultScreen extends StatelessWidget {
                   ),
                 ],
               ),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+/// Bu oturumda "Benzer Soru Çöz" ile kurtarılan yanlışları kutlar.
+class _RecoveryBanner extends StatelessWidget {
+  const _RecoveryBanner({required this.count});
+
+  final int count;
+
+  @override
+  Widget build(BuildContext context) {
+    return GameCard(
+      color: AppColors.mintSoft,
+      borderColor: AppColors.mint,
+      child: Row(
+        children: [
+          const Icon(Icons.auto_awesome_rounded, color: AppColors.mintDark, size: 28),
+          const SizedBox(width: 12),
+          Expanded(
+            child: Text(
+              count == 1
+                  ? 'Bir yanlışını kurtardın! Yanlış cevap gitti, öğrendiğin bilgi kaldı.'
+                  : '$count yanlışını kurtardın! Yanlış cevaplar gitti, öğrendiğin bilgiler kaldı.',
+              style: appText(size: 14, weight: FontWeight.w800, height: 1.3),
             ),
           ),
         ],

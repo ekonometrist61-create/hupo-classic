@@ -42,7 +42,8 @@ create table if not exists public.iletisim_tercihleri (
 
 create table if not exists public.iletisim_tercih_gecmisi (
   id              uuid primary key default gen_random_uuid(),
-  veli_id         uuid not null references public.profiles (id) on delete cascade,
+  -- Veli silinirse kimlik bağı kopar (set null); kanıt kaydı (kanal, izin, zaman, kaynak) kalır.
+  veli_id         uuid references public.profiles (id) on delete set null,
   kanal           text not null,
   izin            boolean not null,
   kaynak          text not null,
@@ -62,6 +63,34 @@ create table if not exists public.veli_notlari (
   constraint veli_notlari_metin_uzunluk check (char_length(btrim(metin)) between 1 and 2000)
 );
 create index if not exists veli_notlari_veli_idx on public.veli_notlari (veli_id, created_at desc);
+
+-- Profil zaman çizelgesi denetim izinde veli_id'ye göre arar.
+create index if not exists admin_audit_log_veli_idx on public.admin_audit_log ((detay ->> 'veli_id'));
+
+-- Geçmiş DEĞİŞTİRİLEMEZ: silme yok; güncelleme yalnızca FK'nin kimlik bağını koparması (veli_id -> null).
+create or replace function public._tercih_gecmisi_degistirilemez()
+returns trigger
+language plpgsql
+set search_path = ''
+as $function$
+begin
+  if tg_op = 'DELETE' then
+    raise exception 'İzin geçmişi silinemez.' using errcode = '42501';
+  end if;
+  if new.veli_id is null and old.veli_id is not null
+     and new.id = old.id and new.kanal = old.kanal and new.izin = old.izin
+     and new.kaynak = old.kaynak and new.guncelleyen_id is not distinct from old.guncelleyen_id
+     and new.gerekce is not distinct from old.gerekce and new.created_at = old.created_at then
+    return new;
+  end if;
+  raise exception 'İzin geçmişi değiştirilemez.' using errcode = '42501';
+end;
+$function$;
+
+drop trigger if exists iletisim_tercih_gecmisi_degistirilemez on public.iletisim_tercih_gecmisi;
+create trigger iletisim_tercih_gecmisi_degistirilemez
+  before update or delete on public.iletisim_tercih_gecmisi
+  for each row execute function public._tercih_gecmisi_degistirilemez();
 
 alter table public.iletisim_tercihleri     enable row level security;
 alter table public.iletisim_tercih_gecmisi enable row level security;
@@ -299,13 +328,15 @@ begin
   if char_length(v_gerekce) < 5 then
     raise exception 'İzin değişikliği için gerekçe (en az 5 karakter) zorunludur.' using errcode = '22023';
   end if;
-  if p_izin is null then
-    raise exception 'İzin değeri gerekli.' using errcode = '22023';
+  if p_izin is distinct from false then
+    -- Ticari iletişim izni yalnızca velinin kendisi tarafından verilebilir; admin sadece geri çekebilir.
+    raise exception 'Admin izin veremez; izni yalnızca veli verebilir (admin yalnızca geri çekebilir).'
+      using errcode = '23514';
   end if;
 
-  perform public._tercih_yaz(p_veli_id, p_kanal, p_izin, 'admin', (select auth.uid()), v_gerekce);
+  perform public._tercih_yaz(p_veli_id, p_kanal, false, 'admin', (select auth.uid()), v_gerekce);
   perform public.log_admin_action('iletisim_izni_degistirildi',
-    jsonb_build_object('veli_id', p_veli_id, 'kanal', p_kanal, 'izin', p_izin));
+    jsonb_build_object('veli_id', p_veli_id, 'kanal', p_kanal, 'izin', false));
 end;
 $function$;
 
@@ -353,7 +384,7 @@ begin
     ) x;
 
   perform public.log_admin_action('aileler_disa_aktarildi',
-    jsonb_build_object('adet', v_adet, 'gerekce', v_gerekce));
+    jsonb_build_object('adet', v_adet, 'gerekce', v_gerekce, 'kesildi', v_adet >= 5000));
 
   return v_rows;
 end;

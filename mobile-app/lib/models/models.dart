@@ -123,6 +123,34 @@ class SubjectInfo {
   final int questionCount;
 }
 
+/// Bir dersteki tek konunun ilerlemesi (public.get_topic_progress()).
+///
+/// [oran] null ise henüz yeterli bağımsız soru çözülmemiştir (6 eşiği);
+/// veli panelindeki aynı kuralla tutarlıdır, sahte kesinlik üretilmez.
+class TopicProgress {
+  const TopicProgress({
+    required this.konu,
+    required this.toplam,
+    required this.dogru,
+    this.oran,
+  });
+
+  final String konu;
+  final int toplam;
+  final int dogru;
+  final int? oran;
+
+  static const int yeterliEsik = 6;
+  bool get yeterliVeri => toplam >= yeterliEsik;
+
+  factory TopicProgress.fromMap(Map<String, dynamic> map) => TopicProgress(
+        konu: map['konu'] as String,
+        toplam: (map['toplam'] as num).toInt(),
+        dogru: (map['dogru'] as num).toInt(),
+        oran: map['oran'] == null ? null : (map['oran'] as num).toInt(),
+      );
+}
+
 /// public.submit_answer() fonksiyonunun sonucu.
 class AnswerResult {
   const AnswerResult({
@@ -135,6 +163,7 @@ class AnswerResult {
     this.steps = const [],
     this.timedOut = false,
     this.saved = true,
+    this.isRecovery = false,
   });
 
   final bool correct;
@@ -153,6 +182,11 @@ class AnswerResult {
   /// false: sunucuya ulaşılamadı, sonuç yalnızca ekranda gösteriliyor.
   final bool saved;
 
+  /// true ise bu, yanlış yapılan bir sorunun hemen ardından aynı konudan
+  /// çözülen kurtarma sorusudur ve [earnedXp] kurtarma bonusunu içerir
+  /// (sunucuda doğrulanmıştır; bkz. submit_answer p_kurtarma_of).
+  final bool isRecovery;
+
   factory AnswerResult.fromMap(Map<String, dynamic> map) => AnswerResult(
         correct: map['dogru_mu'] as bool,
         correctOption: map['dogru_sik'] as String,
@@ -165,6 +199,7 @@ class AnswerResult {
             s.toString(),
         ],
         timedOut: map['sure_doldu'] as bool? ?? false,
+        isRecovery: map['kurtarma_mi'] as bool? ?? false,
       );
 
   /// Süre dolduğunda sunucuya yazılamazsa, quiz akışı kopmasın diye kullanılır.

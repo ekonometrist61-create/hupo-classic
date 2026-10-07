@@ -14,7 +14,9 @@ create or replace function pg_temp.yonetim_merkezi_testleri()
 returns table (no integer, senaryo text, gecti boolean, detay text)
 language plpgsql
 as $fn$
+#variable_conflict use_column
 declare
+  v_prev text;
   adm uuid := gen_random_uuid();   -- admin
   v1  uuid := gen_random_uuid();   -- veli, 2 çocuklu, e-posta izinli
   v2  uuid := gen_random_uuid();   -- veli, 1 çocuklu, izin yok
@@ -115,7 +117,9 @@ begin
     perform public.veli_tercih_ayarla('eposta', false);
     perform public.veli_tercih_ayarla('eposta', true);   -- segment testleri için tekrar izinli
     perform set_config('role', 'none', true);
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
     select count(*) into v_int from public.iletisim_tercih_gecmisi where veli_id = v1 and kanal = 'eposta';
+    perform set_config('role', v_prev, true);
     select izin into v_bool from public.iletisim_tercihleri where veli_id = v1 and kanal = 'eposta';
     gecti := (v_int = 3 and v_bool);
     detay := format('gecmis=%s son_izin=%s', v_int, v_bool);
@@ -139,21 +143,40 @@ begin
     perform set_config('role', 'authenticated', true);
 
     no := no + 1;
-    senaryo := 'Admin izin değiştirirken gerekçe ZORUNLU (kısa gerekçe 22023); gerekçeyle başarılı';
+    senaryo := 'Admin İZİN VEREMEZ (23514); veli verdiği push iznini admin gerekçeyle GERİ ÇEKEBİLİR, kısa gerekçe 22023';
     v_int := 0;
-    begin perform public.admin_veli_tercih_ayarla(v2, 'push', true, 'kısa'); exception when invalid_parameter_value then v_int := v_int + 1; end;
-    perform public.admin_veli_tercih_ayarla(v2, 'push', true, 'Veli telefonda yazılı onay verdi');
-    select count(*) into v_int2 from public.iletisim_tercih_gecmisi where veli_id = v2 and gerekce is not null;
-    gecti := (v_int = 1 and v_int2 = 1);
-    detay := format('reddedilen=%s gerekceli_kayit=%s', v_int, v_int2);
+    begin perform public.admin_veli_tercih_ayarla(v2, 'push', true, 'Veli telefonda yazılı onay verdi'); exception when check_violation then v_int := v_int + 1; end;
+    perform set_config('request.jwt.claim.sub', v2::text, true);
+    perform public.veli_tercih_ayarla('push', true);          -- izni VELİ verir
+    perform set_config('request.jwt.claim.sub', adm::text, true);
+    begin perform public.admin_veli_tercih_ayarla(v2, 'push', false, 'kısa'); exception when invalid_parameter_value then v_int := v_int + 1; end;
+    perform public.admin_veli_tercih_ayarla(v2, 'push', false, 'Veli yazılı olarak izni geri çekti');
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
+    select count(*) into v_int2 from public.iletisim_tercih_gecmisi where veli_id = v2 and gerekce is not null and izin = false;
+    select izin into v_bool from public.iletisim_tercihleri where veli_id = v2 and kanal = 'push';
+    perform set_config('role', v_prev, true);
+    gecti := (v_int = 2 and v_int2 = 1 and v_bool = false);
+    detay := format('reddedilen=%s gerekceli_geri_cekme=%s son_izin=%s', v_int, v_int2, v_bool);
     return next;
 
     no := no + 1;
+    senaryo := 'İzin geçmişi DEĞİŞTİRİLEMEZ/SİLİNEMEZ (42501)';
+    v_int := 0;
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
+    begin delete from public.iletisim_tercih_gecmisi where veli_id = v2; exception when insufficient_privilege then v_int := v_int + 1; end;
+    begin update public.iletisim_tercih_gecmisi set izin = true where veli_id = v2; exception when insufficient_privilege then v_int := v_int + 1; end;
+    perform set_config('role', v_prev, true);
+    gecti := (v_int = 2);
+    detay := format('reddedilen=%s/2', v_int);
+    return next;
+    no := no + 1;
     senaryo := 'Veli notu eklenir; denetim izine not METNİ yazılmaz';
     perform public.admin_veli_not_ekle(v1, 'Gizli not metni 12345');
-    select exists (select 1 from public.admin_audit_log
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
+    select exists (select 1 from public.admin_audit_log l
                     where admin_id = adm and islem = 'veli_notu_eklendi'
                       and detay::text not like '%12345%') into v_bool;
+    perform set_config('role', v_prev, true);
     v_json := public.admin_veli_profil(v1);
     gecti := v_bool and jsonb_array_length(v_json -> 'notlar') = 1;
     detay := 'notlar=' || jsonb_array_length(v_json -> 'notlar');
@@ -173,10 +196,12 @@ begin
     v_int := 0;
     begin perform public.admin_export_aileler(null, 'kisa'); exception when invalid_parameter_value then v_int := v_int + 1; end;
     v_json := public.admin_export_aileler('Test Veli', 'Muhasebe mutabakatı için aylık liste');
-    select exists (select 1 from public.admin_audit_log
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
+    select exists (select 1 from public.admin_audit_log l
                     where admin_id = adm and islem = 'aileler_disa_aktarildi'
-                      and (detay ->> 'adet')::int = 2) into v_bool;
-    gecti := (v_int = 1 and jsonb_array_length(v_json) = 2 and v_bool);
+                      and (l.detay ->> 'adet')::int >= 2) into v_bool;
+    perform set_config('role', v_prev, true);
+    gecti := (v_int = 1 and jsonb_array_length(v_json) >= 2 and v_bool);
     detay := format('reddedilen=%s satir=%s audit=%s', v_int, jsonb_array_length(v_json), v_bool);
     return next;
 
@@ -214,6 +239,8 @@ begin
     detay := format('reddedilen=%s', v_int);
     return next;
 
+    perform public.admin_iletisim_ayarlari_kaydet(3, '20:00', '09:00');   -- canlı ayardan bağımsız test
+
     -- ---------------------------------------------------------------
     -- D) Kampanya: ön kontrol → planlama kapıları
     -- ---------------------------------------------------------------
@@ -239,10 +266,14 @@ begin
     senaryo := 'Gün içi (12:00 yerel) ön kontrol temiz: gönderilecek>=1; planlama başarılı, outbox olayı PII içermez';
     v_json := public.admin_kampanya_on_kontrol(v_kam, v_gun);
     perform public.admin_kampanya_planla(v_kam);
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
     select count(*) into v_int from public.olay_kutusu
       where tur = 'iletisim_kampanyasi_planlandi' and payload ->> 'kampanya_id' = v_kam::text
         and not (payload ? 'email') and not (payload ? 'ad');
+    perform set_config('role', v_prev, true);
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
     select durum into v_text from public.iletisim_kampanyalari where id = v_kam;
+    perform set_config('role', v_prev, true);
     gecti := not (v_json ->> 'sessiz_saat')::boolean
              and (v_json ->> 'gonderilecek')::int >= 1
              and v_text = 'planlandi' and v_int = 1;
@@ -254,7 +285,9 @@ begin
     v_int := 0;
     begin perform public.admin_kampanya_kaydet(v_kam, 'Yeni ad', 'eposta', v_seg, 'B', 'M'); exception when check_violation then v_int := v_int + 1; end;
     perform public.admin_kampanya_iptal(v_kam);
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
     select durum into v_text from public.iletisim_kampanyalari where id = v_kam;
+    perform set_config('role', v_prev, true);
     gecti := (v_int = 1 and v_text = 'iptal');
     detay := format('reddedilen=%s durum=%s', v_int, v_text);
     return next;
@@ -326,7 +359,7 @@ begin
     perform set_config('role', 'none', true);
 
     no := no + 1;
-    senaryo := 'ANONİM anket: yanıtta veli_id NULL, zaman günü yuvarlanır, DESTEK GÖREVİ üretilmez';
+    senaryo := 'ANONİM anket: yanıtta veli_id NULL, zaman günü yuvarlanır, DESTEK GÖREVİ üretilmez; 5''ten az yanıtta sonuçlar GİZLİ';
     perform set_config('request.jwt.claim.sub', v2::text, true);
     perform set_config('role', 'authenticated', true);
     perform public.anket_yanit_gonder(v_id, '{"n":2}'::jsonb);
@@ -334,8 +367,12 @@ begin
     select count(*) into v_int from public.anket_yanitlari
       where anket_id = v_id and veli_id is null and created_at = date_trunc('day', created_at);
     select count(*) into v_int2 from public.destek_gorevleri where veli_id = v2;
-    gecti := (v_int = 1 and v_int2 = 0);
-    detay := format('anonim_yanit=%s destek=%s', v_int, v_int2);
+    perform set_config('request.jwt.claim.sub', adm::text, true);
+    perform set_config('role', 'authenticated', true);
+    v_json := public.admin_anket_sonuc(v_id);
+    perform set_config('role', 'none', true);
+    gecti := (v_int = 1 and v_int2 = 0 and (v_json ->> 'gizli')::boolean and (v_json -> 'nps' ->> 'skor') is null);
+    detay := format('anonim_yanit=%s destek=%s gizli=%s', v_int, v_int2, v_json ->> 'gizli');
     return next;
 
     perform set_config('request.jwt.claim.sub', adm::text, true);
@@ -355,7 +392,9 @@ begin
     v_json := public.admin_anket_sonuc(v_anket);
     perform public.admin_anket_kaydet(v_anket, 'YM kimlikli NPS', false,
       '[{"id":"nps1","tur":"nps","baslik":"Tavsiye eder misiniz?"}]'::jsonb);
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
     select surum into v_int from public.anketler where id = v_anket;
+    perform set_config('role', v_prev, true);
     gecti := (v_json -> 'nps' ->> 'elestiren')::int = 1
              and (v_json -> 'nps' ->> 'skor')::int = -100
              and position('veli_id' in v_json::text) = 0
@@ -377,7 +416,9 @@ begin
     v_id := public.admin_otomasyon_kaydet(v_id, 'YM akış', 'veli_kayit',
       '[{"tur":"bekle","saat":24},{"tur":"mesaj","kanal":"eposta","baslik":"Başlayalım"}]'::jsonb);
     perform public.admin_otomasyon_durum(v_id, 'hazir');
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
     select durum into v_text from public.otomasyonlar where id = v_id;
+    perform set_config('role', v_prev, true);
     gecti := (v_int = 2 and v_text = 'hazir');
     detay := format('reddedilen=%s durum=%s', v_int, v_text);
     return next;

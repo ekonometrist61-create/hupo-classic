@@ -8,9 +8,10 @@ import '../theme/app_theme.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
 import 'cipher/cipher_list_screen.dart';
-import 'home_screen.dart';
+import 'home_screen.dart' show SubjectList;
 import 'review_screen.dart';
 import 'saved_questions_screen.dart';
+import 'subject_topics_screen.dart';
 
 const String _baslik = 'Öğren';
 const String _altBaslik = 'Bir ders seç, kısa bir çalışma yap.';
@@ -22,7 +23,6 @@ class LearnScreen extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final repo = ref.watch(quizRepositoryProvider);
     final bekleyen = ref.watch(dueCountProvider).valueOrNull ?? 0;
 
     return Scaffold(
@@ -41,13 +41,8 @@ class LearnScreen extends ConsumerWidget {
                 Text(_derslerBasligi, style: appText(size: 19, weight: FontWeight.w900)),
                 const SizedBox(height: 12),
                 SubjectList(
-                  onSelect: (ders) => HomeScreen.openQuiz(
-                    context,
-                    ref,
-                    title: ders,
-                    load: () => repo.fetchQuizQuestions(ders),
-                    emptyMessage:
-                        'Bu derse yakında yeni sorular gelecek. Şimdilik başka bir ders seçebilirsin!',
+                  onSelect: (ders) => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => SubjectTopicsScreen(ders: ders)),
                   ),
                 ),
                 const SizedBox(height: 24),

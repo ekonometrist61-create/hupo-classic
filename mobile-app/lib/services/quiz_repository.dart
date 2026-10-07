@@ -88,12 +88,19 @@ class QuizRepository {
 
   /// Bir ders için soru seti: önce hiç çözülmemiş / tekrar zamanı gelmiş
   /// sorular, sonra kalanlar; her grup kendi içinde karıştırılır.
-  Future<List<Question>> fetchQuizQuestions(String ders, {int limit = 10}) async {
-    final rows = await _client
+  /// [konu] verilirse yalnızca o konudaki sorular getirilir (Öğren sekmesi
+  /// konu kırılımı); null ise dersin tamamı (ana ekrandaki hızlı başlangıç).
+  Future<List<Question>> fetchQuizQuestions(
+    String ders, {
+    String? konu,
+    int limit = 10,
+  }) async {
+    final filtre = _client
         .from('questions')
         .select(_questionColumns)
         .eq('onay_durumu', 'onaylandi')
         .eq('ders', ders);
+    final rows = await (konu == null ? filtre : filtre.eq('konu', konu));
     final questions = [for (final r in rows) Question.fromMap(r)];
     if (questions.isEmpty) return [];
 
@@ -143,31 +150,34 @@ class QuizRepository {
   }
 
   /// [selectedOption] null ise süre dolmuştur (yanlış sayılır).
-  /// [requestId] çift gönderim ve ağ tekrarını önler; null ise sunucu eski davranışı uygular.
+  /// [requestId] çift gönderim ve ağ tekrarını önler.
+  /// [kurtarmaOf] verilirse, bu soru daha önce yanlış cevaplanan [kurtarmaOf]
+  /// sorusunun "benzer soru" kurtarma denemesidir; sunucu konu eşleşmesini ve
+  /// tek seferlik kuralı doğrular (bkz. submit_answer p_kurtarma_of).
   Future<AnswerResult> submitAnswer({
     required String questionId,
     required String? selectedOption,
     required int durationMs,
     String? requestId,
+    String? kurtarmaOf,
   }) async {
-    requestId ??= _newRequestId();
-    final params = {
+    final data = await _client.rpc('submit_answer', params: {
       'p_question_id': questionId,
       'p_secilen_sik': selectedOption,
       'p_sure_ms': durationMs,
-    };
-    Object? data;
-    try {
-      data = await _client.rpc('submit_answer', params: {
-        ...params,
-        'p_request_id': requestId,
-      });
-    } on PostgrestException catch (e) {
-      // Sunucuda requestId'li yeni imza henüz yoksa (migration uygulanmadı) eski imzayla dene.
-      if (e.code != 'PGRST202') rethrow;
-      data = await _client.rpc('submit_answer', params: params);
-    }
+      'p_request_id': requestId ?? _newRequestId(),
+      if (kurtarmaOf != null) 'p_kurtarma_of': kurtarmaOf,
+    });
     return AnswerResult.fromMap(Map<String, dynamic>.from(data as Map));
+  }
+
+  /// public.get_topic_progress(p_ders) — konu bazlı ilerleme (Öğren sekmesi).
+  Future<List<TopicProgress>> fetchTopicProgress(String ders) async {
+    final res = await _client.rpc('get_topic_progress', params: {'p_ders': ders});
+    return [
+      for (final m in (res as List? ?? const []))
+        TopicProgress.fromMap(Map<String, dynamic>.from(m as Map)),
+    ];
   }
 
   Future<List<BadgeInfo>> fetchBadges() async {

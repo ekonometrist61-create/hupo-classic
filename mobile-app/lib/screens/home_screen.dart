@@ -145,11 +145,48 @@ class HomeScreen extends ConsumerWidget {
                           const _ConsentNote(),
                           const SizedBox(height: 12),
                         ],
-                        const _AvatarSection(),
+
+                        // ── 1) Bugünkü hedefin ──────────────────────────
+                        const _SectionHeader('Bugünkü hedefin'),
+                        const _StreakNudge(),
+                        const DailyGoalCard(),
                         const SizedBox(height: 12),
                         DailyChallengeCard(
                           onTap: () => Navigator.of(context).push(
                             MaterialPageRoute(builder: (_) => const DailyChallengeScreen()),
+                          ),
+                        ),
+                        const SizedBox(height: 28),
+
+                        // ── 2) Kaldığın yer ──────────────────────────────
+                        const _SectionHeader('Kaldığın yer'),
+                        const _AvatarSection(),
+                        const SizedBox(height: 12),
+                        _KarakterKisayolu(
+                          onTap: () => ref.read(shellTabProvider.notifier).state = 3,
+                        ),
+                        const SizedBox(height: 12),
+                        _ReviewCard(
+                          onStart: () => Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => const ReviewScreen()),
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        _LeagueMini(
+                          onOpen: () => ref.read(shellTabProvider.notifier).state = 2,
+                        ),
+                        const SizedBox(height: 28),
+
+                        // ── 3) Bugünkü odakların ─────────────────────────
+                        const _SectionHeader('Bugünkü odakların'),
+                        SubjectList(
+                          onSelect: (ders) => openQuiz(
+                            context,
+                            ref,
+                            title: ders,
+                            load: () => repo.fetchQuizQuestions(ders),
+                            emptyMessage:
+                                'Bu derse yakında yeni sorular gelecek. Şimdilik başka bir ders seçebilirsin!',
                           ),
                         ),
                         const SizedBox(height: 12),
@@ -189,39 +226,6 @@ class HomeScreen extends ConsumerWidget {
                               ),
                               const Icon(Icons.arrow_forward_ios_rounded, size: 14, color: AppColors.muted),
                             ],
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        _ReviewCard(
-                          onStart: () => Navigator.of(context).push(
-                            MaterialPageRoute(builder: (_) => const ReviewScreen()),
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        const _StreakNudge(),
-                        const DailyGoalCard(),
-                        const SizedBox(height: 12),
-                        _LeagueMini(
-                          onOpen: () => ref.read(shellTabProvider.notifier).state = 2,
-                        ),
-                        const SizedBox(height: 12),
-                        _KarakterKisayolu(
-                          onTap: () => ref.read(shellTabProvider.notifier).state = 3,
-                        ),
-                        const SizedBox(height: 24),
-                        Text(
-                          'Bugün hangi dersi fethediyoruz?',
-                          style: appText(size: 21, weight: FontWeight.w900),
-                        ),
-                        const SizedBox(height: 14),
-                        SubjectList(
-                          onSelect: (ders) => openQuiz(
-                            context,
-                            ref,
-                            title: ders,
-                            load: () => repo.fetchQuizQuestions(ders),
-                            emptyMessage:
-                                'Bu derse yakında yeni sorular gelecek. Şimdilik başka bir ders seçebilirsin!',
                           ),
                         ),
                       ],
@@ -357,6 +361,25 @@ class _Hero extends ConsumerWidget {
             ),
           ),
         ],
+      ),
+    );
+  }
+}
+
+/// Ana ekranı üç odağa ayıran bölüm başlığı (SCREEN_ARCHITECTURE kuralı:
+/// aynı anda en fazla 3 birincil odak).
+class _SectionHeader extends StatelessWidget {
+  const _SectionHeader(this.text);
+
+  final String text;
+
+  @override
+  Widget build(BuildContext context) {
+    return Padding(
+      padding: const EdgeInsets.only(bottom: 12),
+      child: Text(
+        text,
+        style: appText(size: 21, weight: FontWeight.w900),
       ),
     );
   }

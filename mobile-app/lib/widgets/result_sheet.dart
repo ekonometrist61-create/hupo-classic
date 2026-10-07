@@ -17,11 +17,16 @@ class ResultSheet extends StatefulWidget {
     required this.result,
     required this.isLast,
     required this.onContinue,
+    this.onRecover,
   });
 
   final AnswerResult result;
   final bool isLast;
   final VoidCallback onContinue;
+
+  /// Yalnızca yanlış cevapta ve aynı konudan bir soru kuyruktaysa dolu olur.
+  /// Dolu ise "Benzer Soru Çöz" düğmesi gösterilir.
+  final VoidCallback? onRecover;
 
   @override
   State<ResultSheet> createState() => _ResultSheetState();
@@ -64,7 +69,7 @@ class _ResultSheetState extends State<ResultSheet> {
 
   String get _title {
     final r = widget.result;
-    if (r.correct) return 'Harikasın!';
+    if (r.correct) return r.isRecovery ? 'Kurtardın!' : 'Harikasın!';
     return r.timedOut ? 'Süre doldu, ama pes yok!' : 'Sorun değil, denemek öğretir!';
   }
 
@@ -72,6 +77,7 @@ class _ResultSheetState extends State<ResultSheet> {
     final r = widget.result;
     if (!r.saved) return 'İnternet bağlantında sorun var, bu cevap kaydedilemedi.';
     if (r.correct) {
+      if (r.isRecovery) return 'Yanlış cevap gitti, öğrendiğin bilgi kaldı! +${r.earnedXp} XP';
       return r.earnedXp > 0
           ? '+${r.earnedXp} XP kazandın, böyle devam!'
           : 'Doğru! Bunu zaten biliyordun.';
@@ -192,15 +198,26 @@ class _ResultSheetState extends State<ResultSheet> {
                     ),
                   ],
                   const SizedBox(height: 14),
-                  ok
-                      ? ChunkyButton.success(
-                          label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
-                          onPressed: widget.onContinue,
-                        )
-                      : ChunkyButton.danger(
-                          label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
-                          onPressed: widget.onContinue,
-                        ),
+                  if (ok)
+                    ChunkyButton.success(
+                      label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
+                      onPressed: widget.onContinue,
+                    )
+                  else if (widget.onRecover != null) ...[
+                    ChunkyButton.danger(
+                      label: 'Benzer Soru Çöz',
+                      onPressed: widget.onRecover,
+                    ),
+                    const SizedBox(height: 8),
+                    ChunkyButton.light(
+                      label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
+                      onPressed: widget.onContinue,
+                    ),
+                  ] else
+                    ChunkyButton.danger(
+                      label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
+                      onPressed: widget.onContinue,
+                    ),
                 ],
               ),
             ),

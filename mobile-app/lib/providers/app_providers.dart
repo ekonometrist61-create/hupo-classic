@@ -28,6 +28,11 @@ final statsProvider = FutureProvider.autoDispose<StudentStats>(
 final subjectsProvider = FutureProvider.autoDispose<List<SubjectInfo>>(
     (ref) => ref.watch(quizRepositoryProvider).fetchSubjects());
 
+/// Bir dersteki konu bazlı ilerleme (Öğren sekmesi konu kırılımı).
+final topicProgressProvider = FutureProvider.autoDispose
+    .family<List<TopicProgress>, String>(
+        (ref, ders) => ref.watch(quizRepositoryProvider).fetchTopicProgress(ders));
+
 final dueCountProvider = FutureProvider.autoDispose<int>(
     (ref) => ref.watch(quizRepositoryProvider).fetchDueCount());
 
