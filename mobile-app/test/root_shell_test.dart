@@ -24,7 +24,6 @@ void main() {
     await tester.tap(find.widgetWithText(NavigationDestination, 'Arena'));
     await tester.pump(const Duration(milliseconds: 400));
     expect(find.text('Arkadaşına meydan oku'), findsOneWidget);
-    expect(find.text('Yakında'), findsOneWidget);
   });
 
   testWidgets('sekme sağlayıcısı değişince kabuk o sekmeye geçer', (tester) async {

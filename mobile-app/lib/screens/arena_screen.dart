@@ -12,6 +12,7 @@ import '../widgets/hupo/hupo.dart';
 import '../widgets/league_card.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
+import 'challenge_screen.dart';
 import 'daily_challenge_screen.dart';
 import 'home_screen.dart';
 import 'league_screen.dart';
@@ -22,9 +23,7 @@ const String _altBaslik = 'Ligde yüksel, günün meydan okumasını tamamla.';
 const String _ligYuklenemedi = 'Lig bilgin yüklenemedi, tekrar deneyelim.';
 const String _arkadasBaslik = 'Arkadaşına meydan oku';
 const String _arkadasAciklama =
-    'Hazır seçeneklerle, sohbet olmadan güvenli yarışma. Çok yakında burada!';
-const String _yakinda = 'Yakında';
-
+    'Kod paylaş, arkadaşın katılsın — 10 soruda kim daha iyi?';
 class ArenaScreen extends ConsumerWidget {
   const ArenaScreen({super.key});
 
@@ -77,7 +76,11 @@ class ArenaScreen extends ConsumerWidget {
                     ),
                   ),
                   const SizedBox(height: 12),
-                  const _ArkadasKarti(),
+                  _ArkadasKarti(
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => const ChallengeHubScreen()),
+                    ),
+                  ),
                 ],
               ),
             ),
@@ -177,51 +180,39 @@ class _DenemeSinaviKarti extends StatelessWidget {
   }
 }
 
-/// Arkadaşla yarışma henüz yok: sahte veri göstermeyiz, dürüstçe "yakında" deriz.
 class _ArkadasKarti extends StatelessWidget {
-  const _ArkadasKarti();
+  const _ArkadasKarti({required this.onTap});
+
+  final VoidCallback onTap;
 
   @override
   Widget build(BuildContext context) {
-    return Opacity(
-      opacity: 0.8,
-      child: GameCard(
-        child: Row(
-          children: [
-            Container(
-              width: 46,
-              height: 46,
-              decoration: const BoxDecoration(color: AppColors.navy, shape: BoxShape.circle),
-              child: const Icon(Icons.group_rounded, color: Colors.white, size: 24),
+    return GameCard(
+      onTap: onTap,
+      child: Row(
+        children: [
+          Container(
+            width: 46,
+            height: 46,
+            decoration: const BoxDecoration(color: AppColors.navy, shape: BoxShape.circle),
+            child: const Icon(Icons.group_rounded, color: Colors.white, size: 24),
+          ),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(_arkadasBaslik, style: appText(weight: FontWeight.w800)),
+                const SizedBox(height: 2),
+                Text(
+                  _arkadasAciklama,
+                  style: appText(size: 13, color: AppColors.muted, height: 1.3),
+                ),
+              ],
             ),
-            const SizedBox(width: 14),
-            Expanded(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(_arkadasBaslik, style: appText(weight: FontWeight.w800)),
-                  const SizedBox(height: 2),
-                  Text(
-                    _arkadasAciklama,
-                    style: appText(size: 13, color: AppColors.muted, height: 1.3),
-                  ),
-                ],
-              ),
-            ),
-            const SizedBox(width: 8),
-            Container(
-              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 4),
-              decoration: BoxDecoration(
-                color: AppColors.sunSoft,
-                borderRadius: BorderRadius.circular(12),
-              ),
-              child: Text(
-                _yakinda,
-                style: appText(size: 12, weight: FontWeight.w900, color: AppColors.coralDark),
-              ),
-            ),
-          ],
-        ),
+          ),
+          const Icon(Icons.chevron_right_rounded, color: AppColors.muted),
+        ],
       ),
     );
   }

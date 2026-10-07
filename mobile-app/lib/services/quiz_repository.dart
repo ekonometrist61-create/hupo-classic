@@ -2,6 +2,7 @@ import 'dart:math';
 
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../models/challenge_models.dart';
 import '../models/league_models.dart';
 import '../models/membership_models.dart';
 import '../models/mock_exam_models.dart';
@@ -399,6 +400,33 @@ class QuizRepository {
   Future<Map<String, dynamic>> completeDailyChallenge() async {
     final res = await _client.rpc('complete_daily_challenge');
     return Map<String, dynamic>.from(res as Map);
+  }
+
+  // ── W8: Meydan Okuma ───────────────────────────────────────────────
+
+  Future<ChallengeSession> createChallenge() async {
+    final res = await _client.rpc('create_challenge');
+    return ChallengeSession.fromMap(Map<String, dynamic>.from(res as Map));
+  }
+
+  Future<ChallengeSession> joinChallenge(String kod) async {
+    final res = await _client.rpc('join_challenge', params: {'p_kod': kod});
+    return ChallengeSession.fromMap(Map<String, dynamic>.from(res as Map));
+  }
+
+  Future<ChallengeScore> submitChallenge(
+      String meydanId, List<Map<String, String?>> cevaplar) async {
+    final res = await _client.rpc('submit_challenge', params: {
+      'p_meydan_id': meydanId,
+      'p_cevaplar': cevaplar,
+    });
+    return ChallengeScore.fromMap(Map<String, dynamic>.from(res as Map));
+  }
+
+  Future<ChallengeResult> getChallengeResult(String meydanId) async {
+    final res = await _client.rpc('get_challenge_result',
+        params: {'p_meydan_id': meydanId});
+    return ChallengeResult.fromMap(Map<String, dynamic>.from(res as Map));
   }
 
   /// public.list_bookmarks()
