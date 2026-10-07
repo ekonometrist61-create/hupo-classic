@@ -2,6 +2,7 @@
 
 import WelcomeSplash from "@/components/common/WelcomeSplash";
 import { useSidebar } from "@/context/SidebarContext";
+import { usePathname } from "@/i18n/navigation";
 import AppHeader from "@/layout/AppHeader";
 import AppSidebar from "@/layout/AppSidebar";
 import Backdrop from "@/layout/Backdrop";
@@ -13,7 +14,13 @@ export default function AdminLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = usePathname();
   const { isExpanded, isHovered, isMobileOpen } = useSidebar();
+
+  // Veli panelinde admin kabuğunu atla; VeliLayout kendi sidebar/header'ını yönetir
+  if (pathname.startsWith("/veli-paneli")) {
+    return <>{children}</>;
+  }
 
   // Dynamic class for main content margin based on sidebar state
   const mainContentMargin = isMobileOpen

@@ -261,3 +261,39 @@ Plan: `C:\Users\cengi\.claude\plans\imdi-admin-panelini-biraz-temporal-stardust.
 ## 8. Alt ajan notu
 
 Bu depoda alt ajan desteği yok; her iş tek ajan tarafından yapılır.
+
+---
+
+## 9. Veli Paneli — Altyapı ve Geliştirme (2026-10-07)
+
+### Dalga 0 — Kabuk (Tamamlandı)
+- [x] Admin layout: `/veli-paneli` path'inde admin kabuğunu atla, yalnızca children render et
+- [x] `src/layout/VeliSidebar.tsx`: 12 menü öğeli, 4 gruplu kendi sidebar'ı (admin sidebar'dan bağımsız)
+- [x] `(admin)/veli-paneli/layout.tsx`: VeliLayout (VeliSidebar + main area)
+- [x] Admin menüleri veli panelinde görünmüyor; sadece veli sidebar menüleri var
+- [x] Admin paneli sağlam: tüm admin menüleri mevcut, sidebar çalışıyor
+- [x] Demo mode: mock öğrenci verisi (Öğrenci A, Öğrenci B)
+- [x] i18n: nav ve navGroups anahtarları veli-paneli.tr.json ve .en.json'a eklendi
+- [x] TypeScript: tsc --noEmit çıktı yok (0 hata)
+
+**Mevcut durum:** Genel Bakış "aktif", diğer 11 menü "Yakında" olarak gösteriliyor.
+
+### Dalga 1 — Sayfalar (Sıradaki)
+Gerçekleştirilecek sayfalar (mevcut `get_student_dashboard` verisiyle):
+- [ ] Dersler & Konular (`/veli-paneli/dersler`) — ders seçer, konu tablosu
+- [ ] Yanlışlar & Tekrar (`/veli-paneli/tekrar`) — mevcut ReviewTopicsList genişletilecek
+- [ ] Başarılar (`/veli-paneli/basarilar`) — XP, seviye, seri, rozetler
+- [ ] Üyelik & Hesap (`/veli-paneli/uyelik`) — mevcut AbonelikKarti + OdemeGecmisi birleştirilecek
+
+### Dalga 2 — Yeni Backend + Sayfalar (Sonraki)
+- [ ] Aktivite timeline RPC → Aktivite Akışı sayfası
+- [ ] Deneme sınavları veli RPC → Deneme Sınavları sayfası  
+- [ ] Hedefler RPC → Hedefler sayfası
+- [ ] Konu detay RPC → Dersler & Konular tam içerik
+
+**Dosyalar değiştirildi (Dalga 0):**
+- `src/app/[locale]/(admin)/layout.tsx` — veli-paneli path'inde admin kabuğunu atla
+- `src/layout/VeliSidebar.tsx` — YENİ: 12 menü öğeli veli sidebar'ı
+- `src/app/[locale]/(admin)/veli-paneli/layout.tsx` — YENİ: VeliLayout
+- `src/messages/veli-paneli.tr.json` — nav + navGroups + shell anahtarları
+- `src/messages/veli-paneli.en.json` — nav + navGroups + shell anahtarları

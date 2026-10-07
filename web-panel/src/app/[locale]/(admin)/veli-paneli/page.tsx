@@ -4,6 +4,7 @@ import ParentDashboard from "@/components/veli-paneli/ParentDashboard";
 import type { Student } from "@/components/veli-paneli/types";
 import { createClient } from "@/utils/supabase/server";
 import { getTranslations, setRequestLocale } from "next-intl/server";
+import { DEMO_MODE } from "@/lib/demo-mode";
 
 export async function generateMetadata() {
   const t = await getTranslations("veliPaneli");
@@ -31,6 +32,31 @@ export default async function VeliPaneliPage({
   const { locale } = await params;
   setRequestLocale(locale);
   const t = await getTranslations("veliPaneli");
+
+  if (DEMO_MODE) {
+    const mockStudents: Student[] = [
+      {
+        id: "c1",
+        full_name: "Öğrenci A",
+        username: "ogrenci.a",
+        avatar_url: null,
+        sinif: "4",
+      },
+      {
+        id: "c2",
+        full_name: "Öğrenci B",
+        username: "ogrenci.b",
+        avatar_url: null,
+        sinif: "5",
+      },
+    ];
+    return (
+      <div>
+        <PageBreadcrumb pageTitle={t("title")} />
+        <ParentDashboard students={mockStudents} />
+      </div>
+    );
+  }
 
   const supabase = await createClient();
   const {

@@ -1,6 +1,31 @@
 {
   "veliPaneli": {
     "title": "Veli Paneli",
+    "shell": {
+      "brandSub": "Veli Paneli",
+      "backToAdmin": "Yönetim Paneli",
+      "soon": "Yakında"
+    },
+    "nav": {
+      "overview": "Genel Bakış",
+      "learning": "Öğrenme",
+      "subjects": "Dersler & Konular",
+      "questions": "Soru Performansı",
+      "review": "Yanlışlar & Tekrar",
+      "exams": "Deneme Sınavları",
+      "goals": "Hedefler",
+      "achievements": "Başarılar",
+      "activity": "Aktivite Akışı",
+      "notifications": "Bildirimler",
+      "children": "Çocuklarım",
+      "membership": "Üyelik & Hesap"
+    },
+    "navGroups": {
+      "tracking": "Öğrenci Takibi",
+      "performance": "Performans",
+      "motivation": "Motivasyon",
+      "account": "Hesap"
+    },
     "loading": "Yükleniyor...",
     "error": "Bilgiler alınamadı. Lütfen tekrar deneyin.",
     "notParent": "Bu sayfa yalnızca veli hesapları içindir.",

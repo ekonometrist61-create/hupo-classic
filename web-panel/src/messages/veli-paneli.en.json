@@ -1,6 +1,31 @@
 {
   "veliPaneli": {
     "title": "Parent Panel",
+    "shell": {
+      "brandSub": "Parent Panel",
+      "backToAdmin": "Admin Panel",
+      "soon": "Soon"
+    },
+    "nav": {
+      "overview": "Overview",
+      "learning": "Learning",
+      "subjects": "Subjects & Topics",
+      "questions": "Question Performance",
+      "review": "Mistakes & Review",
+      "exams": "Practice Exams",
+      "goals": "Goals",
+      "achievements": "Achievements",
+      "activity": "Activity Feed",
+      "notifications": "Notifications",
+      "children": "My Children",
+      "membership": "Membership & Account"
+    },
+    "navGroups": {
+      "tracking": "Student Tracking",
+      "performance": "Performance",
+      "motivation": "Motivation",
+      "account": "Account"
+    },
     "loading": "Loading...",
     "error": "Could not load the data. Please try again.",
     "notParent": "This page is for parent accounts only.",

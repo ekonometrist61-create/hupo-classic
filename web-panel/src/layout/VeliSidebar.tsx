@@ -7,32 +7,84 @@ import { cn } from "@/utils";
 import { useTranslations } from "next-intl";
 import BrandMark from "@/components/common/BrandMark";
 import { useSidebar } from "../context/SidebarContext";
-import { HorizontaLDots } from "../icons/index";
-import { navForRole } from "./adminNav";
+import {
+  BoltIcon,
+  BoxIcon,
+  DocsIcon,
+  GridIcon,
+  GroupIcon,
+  HorizontaLDots,
+  MailIcon,
+  PieChartIcon,
+  ShootingStarIcon,
+  TableIcon,
+  TaskIcon,
+  UserCircleIcon,
+} from "../icons/index";
 
-const AppSidebar: React.FC = () => {
+type VeliNavItem = {
+  key: string;
+  icon: React.ReactNode;
+  path?: string;
+};
+
+type VeliNavGroup = {
+  key: string;
+  items: VeliNavItem[];
+};
+
+const VELI_NAV: VeliNavGroup[] = [
+  {
+    key: "tracking",
+    items: [
+      { key: "overview", icon: <GridIcon />, path: "/veli-paneli" },
+      { key: "learning", icon: <BoltIcon /> },
+      { key: "subjects", icon: <TableIcon /> },
+    ],
+  },
+  {
+    key: "performance",
+    items: [
+      { key: "questions", icon: <PieChartIcon /> },
+      { key: "review", icon: <TaskIcon /> },
+      { key: "exams", icon: <DocsIcon /> },
+    ],
+  },
+  {
+    key: "motivation",
+    items: [
+      { key: "goals", icon: <ShootingStarIcon /> },
+      { key: "achievements", icon: <BoxIcon /> },
+      { key: "activity", icon: <BoltIcon /> },
+    ],
+  },
+  {
+    key: "account",
+    items: [
+      { key: "notifications", icon: <MailIcon /> },
+      { key: "children", icon: <GroupIcon /> },
+      { key: "membership", icon: <UserCircleIcon /> },
+    ],
+  },
+];
+
+const VeliSidebar: React.FC = () => {
   const { isExpanded, isMobileOpen, isHovered, setIsHovered } = useSidebar();
   const pathname = usePathname();
-  const t = useTranslations("yonetim.shell");
+  const t = useTranslations("veliPaneli");
   const fetchedRole = useCurrentRole();
-  // Demo modunda oturum yoktur; menü yine de önizlenebilsin.
-  // Veli panelinde demo olsa bile veli rolüyle menüleri filtrele (admin menülerini gizle)
-  const role = DEMO_MODE
-    ? (pathname.includes("/veli-paneli") ? "veli" : "admin")
-    : fetchedRole;
-
-  const groups = navForRole(role);
+  const role = DEMO_MODE ? "admin" : fetchedRole;
 
   const wide = isExpanded || isHovered || isMobileOpen;
 
   const isActive = (path: string) =>
-    path === "/yonetim"
+    path === "/veli-paneli"
       ? pathname === path
       : pathname === path || pathname.startsWith(path + "/");
 
   return (
     <aside
-      aria-label={t("brandSub")}
+      aria-label={t("shell.brandSub")}
       className={cn(
         "fixed top-0 left-0 z-50 flex h-full flex-col bg-navy px-4 pt-7 pb-4 text-[#d2dce5] transition-all duration-300 ease-in-out xl:mt-0 rtl:right-0 rtl:left-auto",
         wide ? "w-72.5" : "w-22.5",
@@ -43,7 +95,7 @@ const AppSidebar: React.FC = () => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <Link
-        href="/yonetim"
+        href="/veli-paneli"
         className={cn(
           "flex items-center gap-3 rounded-lg px-1 pb-1 focus-visible:outline-3 focus-visible:outline-offset-4 focus-visible:outline-blue-light-400",
           !wide && "xl:justify-center",
@@ -53,7 +105,7 @@ const AppSidebar: React.FC = () => {
           <div>
             <BrandMark onDark />
             <span className="mt-1.5 block ps-0.5 text-[11px] font-medium tracking-[1.1px] text-[#b3c3d0]">
-              {t("brandSub")}
+              {t("shell.brandSub")}
             </span>
           </div>
         ) : (
@@ -61,21 +113,11 @@ const AppSidebar: React.FC = () => {
         )}
       </Link>
 
-      {wide && (
-        <div className="mx-1 mt-5 flex items-center justify-between rounded-lg border border-[#425970] px-3 py-2.5 text-xs">
-          <span className="flex items-center gap-2">
-            <span className="size-1.5 rounded-full bg-success-500" aria-hidden />
-            {t("workspace")}
-          </span>
-          <span>TR</span>
-        </div>
-      )}
-
       <nav
-        aria-label={t("groups.workspace")}
-        className="no-scrollbar mt-2 flex-1 overflow-y-auto"
+        aria-label={t("shell.brandSub")}
+        className="no-scrollbar mt-4 flex-1 overflow-y-auto"
       >
-        {groups.map((group) => (
+        {VELI_NAV.map((group) => (
           <div key={group.key}>
             <h2
               className={cn(
@@ -83,7 +125,7 @@ const AppSidebar: React.FC = () => {
                 !wide && "xl:justify-center",
               )}
             >
-              {wide ? t(`groups.${group.key}`) : <HorizontaLDots />}
+              {wide ? t(`navGroups.${group.key}`) : <HorizontaLDots />}
             </h2>
             <ul className="flex flex-col gap-0.5">
               {group.items.map((item) => {
@@ -99,7 +141,7 @@ const AppSidebar: React.FC = () => {
                     <li key={item.key}>
                       <span
                         aria-disabled="true"
-                        title={`${label} · ${t("soon")}`}
+                        title={`${label} · ${t("shell.soon")}`}
                         className={cn(base, "cursor-not-allowed text-[#d2dce5]/45")}
                       >
                         {icon}
@@ -107,7 +149,7 @@ const AppSidebar: React.FC = () => {
                           <>
                             <span className="truncate">{label}</span>
                             <span className="ms-auto rounded bg-[#365169] px-1.5 text-[10px] text-[#b3c3d0]">
-                              {t("soon")}
+                              {t("shell.soon")}
                             </span>
                           </>
                         )}
@@ -149,13 +191,19 @@ const AppSidebar: React.FC = () => {
         ))}
       </nav>
 
-      {wide && (
-        <p className="mt-3 border-t border-[#3b5369] px-3 pt-4 text-[11px] text-[#b9cbd7]">
-          {t("tagline")}
-        </p>
+      {/* Admin kullanıcılar için yönetim paneline geri dön */}
+      {role === "admin" && wide && (
+        <div className="mt-3 border-t border-[#3b5369] pt-3">
+          <Link
+            href="/yonetim"
+            className="flex items-center gap-2 rounded-lg px-3 py-2 text-[12px] text-[#b3c3d0] hover:bg-[#29475e] hover:text-white transition-colors"
+          >
+            <span>← {t("shell.backToAdmin")}</span>
+          </Link>
+        </div>
       )}
     </aside>
   );
 };
 
-export default AppSidebar;
+export default VeliSidebar;
