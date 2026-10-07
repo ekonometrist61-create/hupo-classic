@@ -8,6 +8,7 @@ import 'auth/login.dart';
 import 'config/env.dart';
 import 'screens/root_shell.dart';
 import 'screens/splash_screen.dart';
+import 'services/audio/audio_manager.dart';
 import 'services/push/push_host.dart';
 import 'services/secure_storage.dart';
 import 'settings/app_settings.dart';
@@ -22,6 +23,9 @@ Future<void> main() async {
     authOptions: FlutterAuthClientOptions(localStorage: SecureLocalStorage()),
   );
   final prefs = await SharedPreferences.getInstance();
+
+  // Sık kullanılan sesleri önceden yükle (hata olursa sessizce devam eder).
+  AudioManager.instance.preload();
 
   runApp(ProviderScope(
     overrides: [sharedPreferencesProvider.overrideWithValue(prefs)],

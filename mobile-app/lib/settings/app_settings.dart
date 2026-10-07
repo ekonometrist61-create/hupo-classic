@@ -1,6 +1,7 @@
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../services/audio/audio_manager.dart';
 import '../utils/haptics.dart';
 
 /// Uygulama yazı tipi seçenekleri.
@@ -33,6 +34,7 @@ class AppSettings {
   const AppSettings({
     this.reduceMotion = false,
     this.haptics = true,
+    this.soundEffects = true,
     this.font = AppFont.nunito,
     this.textSize = TextSizeOption.normal,
   });
@@ -40,18 +42,21 @@ class AppSettings {
   /// true: konfeti, sallanma, süzülme ve hareketli animasyonlar kapanır.
   final bool reduceMotion;
   final bool haptics;
+  final bool soundEffects;
   final AppFont font;
   final TextSizeOption textSize;
 
   AppSettings copyWith({
     bool? reduceMotion,
     bool? haptics,
+    bool? soundEffects,
     AppFont? font,
     TextSizeOption? textSize,
   }) =>
       AppSettings(
         reduceMotion: reduceMotion ?? this.reduceMotion,
         haptics: haptics ?? this.haptics,
+        soundEffects: soundEffects ?? this.soundEffects,
         font: font ?? this.font,
         textSize: textSize ?? this.textSize,
       );
@@ -60,12 +65,14 @@ class AppSettings {
 class SettingsNotifier extends StateNotifier<AppSettings> {
   SettingsNotifier(this._prefs) : super(_load(_prefs)) {
     AppHaptics.enabled = state.haptics;
+    AudioManager.instance.enabled = state.soundEffects;
   }
 
   final SharedPreferences _prefs;
 
   static const _kReduceMotion = 'reduce_motion';
   static const _kHaptics = 'haptics';
+  static const _kSoundEffects = 'sound_effects';
   static const _kFont = 'font';
   static const _kTextSize = 'text_size';
 
@@ -80,6 +87,7 @@ class SettingsNotifier extends StateNotifier<AppSettings> {
     return AppSettings(
       reduceMotion: prefs.getBool(_kReduceMotion) ?? false,
       haptics: prefs.getBool(_kHaptics) ?? true,
+      soundEffects: prefs.getBool(_kSoundEffects) ?? true,
       font: byName(AppFont.values, prefs.getString(_kFont), AppFont.nunito),
       textSize: byName(
         TextSizeOption.values,
@@ -98,6 +106,12 @@ class SettingsNotifier extends StateNotifier<AppSettings> {
     _prefs.setBool(_kHaptics, value);
     AppHaptics.enabled = value;
     state = state.copyWith(haptics: value);
+  }
+
+  void setSoundEffects(bool value) {
+    _prefs.setBool(_kSoundEffects, value);
+    AudioManager.instance.enabled = value;
+    state = state.copyWith(soundEffects: value);
   }
 
   void setFont(AppFont value) {

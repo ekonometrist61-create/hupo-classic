@@ -5,6 +5,8 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
 import '../../theme/app_theme.dart';
+import '../../services/audio/audio_event.dart';
+import '../../services/audio/audio_manager.dart';
 import '../../utils/haptics.dart';
 import '../../widgets/ui/chunky_button.dart';
 import '../../widgets/ui/game_card.dart';
@@ -58,8 +60,10 @@ class _GenelAlistirmaScreenState extends State<GenelAlistirmaScreen> {
 
     if (correct) {
       AppHaptics.success();
+      AudioManager.instance.play(AudioEvent.correct);
     } else {
       AppHaptics.error();
+      AudioManager.instance.play(AudioEvent.retry);
     }
   }
 

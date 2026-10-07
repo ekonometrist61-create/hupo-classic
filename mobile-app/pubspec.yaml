@@ -45,6 +45,10 @@ dependencies:
   # iOS Keychain'de saklar. minSdk 23 gerektirir (bkz. build.gradle.kts).
   flutter_secure_storage: ^9.2.4
 
+  # ── Ses efektleri ────────────────────────────────────────────────────────
+  # Gamification SFX: doğru cevap, XP, level-up, karakter açılımı vb.
+  audioplayers: ^6.1.0
+
   # ── Yardımcı ────────────────────────────────────────────────────────────
   # Gizlilik politikası, veli izin formu ve harici bağlantılar için.
   url_launcher: ^6.3.1
@@ -92,6 +96,11 @@ flutter:
     - assets/characters/muhafizlar/
     - assets/characters/ustalar/
     - assets/characters/efsaneler/
+    - assets/audio/brand/
+    - assets/audio/learning/
+    - assets/audio/progression/
+    - assets/audio/rewards/
+    - assets/audio/rarity/
     - assets/fonts/Nunito-OFL.txt
     - assets/fonts/Lexend-OFL.txt
 

@@ -4,6 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/models.dart';
 import '../providers/app_providers.dart';
+import '../services/audio/audio_event.dart';
+import '../services/audio/audio_manager.dart';
 import '../theme/app_theme.dart';
 import '../widgets/ui/responsive_page.dart';
 import 'home_screen.dart' show InlineRetry;
@@ -71,6 +73,7 @@ class QuestsScreen extends ConsumerWidget {
       await ref.read(quizRepositoryProvider).claimQuestReward(kod);
       ref.invalidate(myQuestsProvider);
       ref.invalidate(statsProvider);
+      AudioManager.instance.play(AudioEvent.xpGain);
       if (context.mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
           const SnackBar(content: Text(_odulAlindi)),

@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../models/models.dart';
 import '../../providers/app_providers.dart';
+import '../../services/audio/audio_event.dart';
+import '../../services/audio/audio_manager.dart';
 import '../../settings/app_settings.dart';
 import 'avatar_models.dart';
 import 'tier_up_dialog.dart';
@@ -78,10 +80,10 @@ class _TierCelebrationListenerState extends ConsumerState<TierCelebrationListene
     }
     if (celebrate == null) return;
 
-    // Pencere, çizim aşaması bittikten sonra güvenle açılır.
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted || _showing) return;
       _showing = true;
+      AudioManager.instance.play(AudioEvent.levelUp);
       await showTierUpDialog(context, celebrate);
       _showing = false;
     });

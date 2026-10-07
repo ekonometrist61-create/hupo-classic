@@ -4,6 +4,8 @@ import 'package:lottie/lottie.dart';
 
 import '../models/models.dart';
 import '../providers/app_providers.dart';
+import '../services/audio/audio_event.dart';
+import '../services/audio/audio_manager.dart';
 import '../settings/app_settings.dart';
 import '../theme/app_theme.dart';
 import '../utils/motion.dart';
@@ -179,6 +181,7 @@ class _ShieldCelebrationListenerState extends ConsumerState<ShieldCelebrationLis
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted || _showing) return;
       _showing = true;
+      AudioManager.instance.play(AudioEvent.streakSuccess);
       await showShieldEarnedDialog(context, shields);
       _showing = false;
     });

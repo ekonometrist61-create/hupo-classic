@@ -9,6 +9,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../models/character_models.dart';
 import '../../providers/app_providers.dart';
+import '../../services/audio/audio_manager.dart';
 import '../../settings/app_settings.dart';
 import 'character_unlock_dialog.dart';
 
@@ -78,9 +79,22 @@ class _CharacterCelebrationListenerState
         .firstOrNull;
     if (kutlanacak == null) return;
 
+    // Sınıfın ilk karakteri mi? (class unlock)
+    final sinifKarakterler = karakterler
+        .where((k) => k.sinif == kutlanacak.sinif && k.kazanildi)
+        .toList();
+    final ilkSinifKarakteri = sinifKarakterler.length == 1 &&
+        sinifKarakterler.first.kod == kutlanacak.kod;
+
+    final sesEvent = AudioManager.characterUnlockEvent(
+      nadirlikSira: kutlanacak.karakterSira,
+      ilkSinifKarakteri: ilkSinifKarakteri,
+    );
+
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       if (!mounted || _showing) return;
       _showing = true;
+      AudioManager.instance.play(sesEvent);
       await showCharacterUnlockDialog(context, kutlanacak);
       _showing = false;
     });

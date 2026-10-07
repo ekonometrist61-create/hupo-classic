@@ -9,6 +9,8 @@ import '../models/models.dart';
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
 import '../widgets/question_text.dart';
+import '../services/audio/audio_event.dart';
+import '../services/audio/audio_manager.dart';
 import '../utils/haptics.dart';
 import '../widgets/bookmark_button.dart';
 import '../widgets/report_question_button.dart';
@@ -50,8 +52,10 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
         });
         if (res.correct) {
           AppHaptics.success();
+          AudioManager.instance.play(AudioEvent.correct, questionId: question.id);
         } else {
           AppHaptics.error();
+          AudioManager.instance.play(AudioEvent.retry, questionId: question.id);
         }
       }
     } catch (_) {

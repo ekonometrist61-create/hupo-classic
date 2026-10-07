@@ -8,6 +8,8 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
+import '../services/audio/audio_event.dart';
+import '../services/audio/audio_manager.dart';
 import '../theme/app_theme.dart';
 import '../utils/motion.dart';
 
@@ -34,6 +36,7 @@ class _SplashGateState extends State<SplashGate> {
   @override
   void initState() {
     super.initState();
+    AudioManager.instance.play(AudioEvent.brand);
     _zamanlayici = Timer(_gorunmeSuresi, () {
       if (!mounted) return;
       setState(() => _kapaniyor = true);

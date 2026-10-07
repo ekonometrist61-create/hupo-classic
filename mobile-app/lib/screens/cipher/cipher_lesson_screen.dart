@@ -7,6 +7,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../models/cipher_models.dart';
 import '../../providers/app_providers.dart';
 import '../../theme/app_theme.dart';
+import '../../services/audio/audio_event.dart';
+import '../../services/audio/audio_manager.dart';
 import '../../utils/haptics.dart';
 import '../../widgets/cipher_badges_dialog.dart';
 import '../../widgets/ui/chunky_button.dart';
@@ -62,8 +64,10 @@ class _CipherLessonScreenState extends ConsumerState<CipherLessonScreen> {
         });
         if (result.dogru) {
           AppHaptics.success();
+          AudioManager.instance.play(AudioEvent.correct);
         } else {
           AppHaptics.error();
+          AudioManager.instance.play(AudioEvent.retry);
         }
       }
     } catch (_) {

@@ -8,6 +8,8 @@ import '../models/models.dart';
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
 import '../widgets/question_text.dart';
+import '../services/audio/audio_event.dart';
+import '../services/audio/audio_manager.dart';
 import '../utils/haptics.dart';
 import '../utils/motion.dart';
 import '../widgets/answer_option.dart';
@@ -170,14 +172,27 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
     if (result.correct) {
       AppHaptics.medium();
+      // correct → kısa delay → xpGain (XP varsa)
+      if (result.earnedXp > 0) {
+        AudioManager.instance.playSequence(
+          [AudioEvent.correct, AudioEvent.xpGain],
+          questionId: _question.id,
+        );
+      } else {
+        AudioManager.instance.play(AudioEvent.correct, questionId: _question.id);
+      }
     } else {
       AppHaptics.heavy();
+      // Yanlış + yeniden deneme hakkı varsa "bir daha dene" sesi
+      if (_benzerSoruIndex(_question.konu) != null) {
+        AudioManager.instance.play(AudioEvent.retry, questionId: _question.id);
+      }
     }
     setState(() {
       _result = result;
       _results.add(result!);
       _submitting = false;
-      _pendingKurtarmaOf = null; // tek seferlik; gerçekten gönderildiyse tüketilir
+      _pendingKurtarmaOf = null;
     });
   }
 

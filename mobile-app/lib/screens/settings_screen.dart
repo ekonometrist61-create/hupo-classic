@@ -125,12 +125,20 @@ class SettingsScreen extends ConsumerWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                const _SectionTitle('Hareket ve titreşim'),
+                const _SectionTitle('Ses, hareket ve titreşim'),
                 GameCard(
                   padding:
                       const EdgeInsets.symmetric(horizontal: 16, vertical: 6),
                   child: Column(
                     children: [
+                      _SwitchRow(
+                        title: 'Ses efektleri',
+                        subtitle:
+                            'Doğru cevap, XP, rozet ve karakter sesleri',
+                        value: settings.soundEffects,
+                        onChanged: notifier.setSoundEffects,
+                      ),
+                      const Divider(height: 1, color: AppColors.line),
                       _SwitchRow(
                         title: 'Hareketi azalt',
                         subtitle:
