@@ -14,7 +14,10 @@ import '../widgets/character/character_detail_sheet.dart';
 import '../widgets/ui/responsive_page.dart';
 
 class CollectionScreen extends ConsumerWidget {
-  const CollectionScreen({super.key});
+  const CollectionScreen({super.key, this.embedded = false});
+
+  /// Alt sekme olarak gömülüyse geri düğmesi gösterilmez.
+  final bool embedded;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -23,6 +26,7 @@ class CollectionScreen extends ConsumerWidget {
     return Scaffold(
       backgroundColor: AppColors.background,
       appBar: AppBar(
+        automaticallyImplyLeading: !embedded,
         title: Text(
           'Karakterlerim',
           style: appText(size: 20, weight: FontWeight.w800),

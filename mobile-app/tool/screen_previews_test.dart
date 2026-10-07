@@ -19,6 +19,7 @@ import 'package:ogrenci_hazirlik/settings/app_settings.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:ogrenci_hazirlik/providers/app_providers.dart';
 import 'package:ogrenci_hazirlik/screens/home_screen.dart';
+import 'package:ogrenci_hazirlik/screens/root_shell.dart';
 import 'package:ogrenci_hazirlik/widgets/evolving_avatar/avatar_models.dart';
 import 'package:ogrenci_hazirlik/widgets/evolving_avatar/tier_up_dialog.dart';
 import 'package:ogrenci_hazirlik/screens/notifications_screen.dart';
@@ -286,6 +287,25 @@ void main() {
     await shot(tester, '00_hupo_galerisi');
   });
 
+
+  testWidgets('kabuk: ana sayfa + alt gezinme', (tester) async {
+    await pumpScreen(tester, const RootShell());
+    await shot(tester, '18_kabuk_ana');
+  });
+
+  testWidgets('kabuk: Öğren sekmesi', (tester) async {
+    await pumpScreen(tester, const RootShell());
+    await tester.tap(find.widgetWithText(NavigationDestination, 'Öğren'));
+    await settle(tester, 600);
+    await shot(tester, '19_kabuk_ogren');
+  });
+
+  testWidgets('kabuk: Arena sekmesi', (tester) async {
+    await pumpScreen(tester, const RootShell());
+    await tester.tap(find.widgetWithText(NavigationDestination, 'Arena'));
+    await settle(tester, 600);
+    await shot(tester, '20_kabuk_arena');
+  });
   testWidgets('giriş', (tester) async {
     await pumpScreen(tester, const LoginScreen());
     await shot(tester, '01_giris');

@@ -20,19 +20,17 @@ import '../widgets/ui/stat_pill.dart';
 import '../widgets/ui/subject_style.dart';
 import '../models/privacy_models.dart';
 import 'privacy_notice_screen.dart';
-import 'profile_screen.dart';
 import 'quiz_screen.dart';
 import 'cipher/cipher_list_screen.dart';
 import 'daily_challenge_screen.dart';
 import 'review_screen.dart';
 import '../widgets/character/character_celebration_listener.dart';
 import '../widgets/daily_challenge_card.dart';
-import 'collection_screen.dart';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
 
-  Future<void> _openQuiz(
+  static Future<void> openQuiz(
     BuildContext context,
     WidgetRef ref, {
     required String title,
@@ -52,7 +50,7 @@ class HomeScreen extends ConsumerWidget {
         child: Center(
           child: Material(
             color: Colors.transparent,
-            child: _LoadingCard(),
+            child: QuizLoadingCard(),
           ),
         ),
       ),
@@ -135,9 +133,7 @@ class HomeScreen extends ConsumerWidget {
                   _Hero(
                     name: p.fullName,
                     onSignOut: repo.signOut,
-                    onProfile: () => Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => const ProfileScreen()),
-                    ),
+                    onProfile: () => ref.read(shellTabProvider.notifier).state = 4,
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(20, 20, 20, 32),
@@ -206,17 +202,11 @@ class HomeScreen extends ConsumerWidget {
                         const DailyGoalCard(),
                         const SizedBox(height: 12),
                         _LeagueMini(
-                          onOpen: () => Navigator.of(context).push(
-                            MaterialPageRoute(
-                                builder: (_) => const ProfileScreen()),
-                          ),
+                          onOpen: () => ref.read(shellTabProvider.notifier).state = 2,
                         ),
                         const SizedBox(height: 12),
                         _KarakterKisayolu(
-                          onTap: () => Navigator.of(context).push(
-                            MaterialPageRoute(
-                                builder: (_) => const CollectionScreen()),
-                          ),
+                          onTap: () => ref.read(shellTabProvider.notifier).state = 3,
                         ),
                         const SizedBox(height: 24),
                         Text(
@@ -224,8 +214,8 @@ class HomeScreen extends ConsumerWidget {
                           style: appText(size: 21, weight: FontWeight.w900),
                         ),
                         const SizedBox(height: 14),
-                        _SubjectList(
-                          onSelect: (ders) => _openQuiz(
+                        SubjectList(
+                          onSelect: (ders) => openQuiz(
                             context,
                             ref,
                             title: ders,
@@ -274,9 +264,7 @@ class _Hero extends ConsumerWidget {
                   alignment: Alignment.centerLeft,
                   child: AktifKarakterChip(
                     koyuZemin: true,
-                    onTap: () => Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => const CollectionScreen()),
-                    ),
+                    onTap: () => ref.read(shellTabProvider.notifier).state = 3,
                   ),
                 ),
               ),
@@ -467,9 +455,9 @@ class _AvatarSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return AktifKarakterKarti(
-      onTap: () => Navigator.of(context).push(
-        MaterialPageRoute(builder: (_) => const CollectionScreen()),
-      ),
+      onTap: () => ProviderScope.containerOf(context, listen: false)
+          .read(shellTabProvider.notifier)
+          .state = 3,
     );
   }
 }
@@ -487,8 +475,8 @@ class _LeagueMini extends ConsumerWidget {
   }
 }
 
-class _SubjectList extends ConsumerWidget {
-  const _SubjectList({required this.onSelect});
+class SubjectList extends ConsumerWidget {
+  const SubjectList({super.key, required this.onSelect});
 
   final void Function(String ders) onSelect;
 
@@ -503,7 +491,7 @@ class _SubjectList extends ConsumerWidget {
       ),
       error: (_, __) => Padding(
         padding: const EdgeInsets.symmetric(vertical: 8),
-        child: _InlineRetry(
+        child: InlineRetry(
           text: 'Dersler yüklenemedi, tekrar deneyelim.',
           onRetry: () => ref.invalidate(subjectsProvider),
         ),
@@ -533,7 +521,7 @@ class _SubjectList extends ConsumerWidget {
             for (final s in list)
               Padding(
                 padding: const EdgeInsets.only(bottom: 10),
-                child: _SubjectCard(subject: s, onTap: () => onSelect(s.ders)),
+                child: SubjectCard(subject: s, onTap: () => onSelect(s.ders)),
               ),
           ],
         );
@@ -542,8 +530,8 @@ class _SubjectList extends ConsumerWidget {
   }
 }
 
-class _SubjectCard extends StatelessWidget {
-  const _SubjectCard({required this.subject, required this.onTap});
+class SubjectCard extends StatelessWidget {
+  const SubjectCard({super.key, required this.subject, required this.onTap});
 
   final SubjectInfo subject;
   final VoidCallback onTap;
@@ -597,8 +585,8 @@ class _SubjectCard extends StatelessWidget {
   }
 }
 
-class _InlineRetry extends StatelessWidget {
-  const _InlineRetry({required this.text, required this.onRetry});
+class InlineRetry extends StatelessWidget {
+  const InlineRetry({super.key, required this.text, required this.onRetry});
 
   final String text;
   final VoidCallback onRetry;
@@ -743,8 +731,8 @@ class _KarakterKisayolu extends ConsumerWidget {
   }
 }
 
-class _LoadingCard extends StatelessWidget {
-  const _LoadingCard();
+class QuizLoadingCard extends StatelessWidget {
+  const QuizLoadingCard({super.key});
 
   @override
   Widget build(BuildContext context) {

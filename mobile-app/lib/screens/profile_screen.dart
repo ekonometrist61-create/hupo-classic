@@ -22,7 +22,10 @@ import '../widgets/hupo/hupo.dart';
 import '../widgets/hupo/hupo_loading.dart';
 
 class ProfileScreen extends ConsumerWidget {
-  const ProfileScreen({super.key});
+  const ProfileScreen({super.key, this.embedded = false});
+
+  /// Alt sekme olarak gömülüyse geri düğmesi gösterilmez.
+  final bool embedded;
 
   Future<void> _refresh(WidgetRef ref) async {
     ref.invalidate(statsProvider);
@@ -61,12 +64,15 @@ class ProfileScreen extends ConsumerWidget {
                 children: [
                   Row(
                     children: [
-                      IconButton(
-                        tooltip: 'Geri',
-                        onPressed: () => Navigator.of(context).pop(),
-                        icon: const Icon(Icons.arrow_back_rounded,
-                            color: Colors.white, size: 28),
-                      ),
+                      if (!embedded)
+                        IconButton(
+                          tooltip: 'Geri',
+                          onPressed: () => Navigator.of(context).pop(),
+                          icon: const Icon(Icons.arrow_back_rounded,
+                              color: Colors.white, size: 28),
+                        )
+                      else
+                        const SizedBox(width: 16),
                       Expanded(
                         child: Text(
                           'Profilim',

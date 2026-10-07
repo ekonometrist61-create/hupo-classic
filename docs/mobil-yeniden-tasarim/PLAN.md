@@ -71,7 +71,7 @@ Kural: mobilde hardcode katalog yok; karakter/rozet/ders listeleri DB'den. Yeni 
 6. `maturity`: yeni sütun gerekmez; `my_sinif()`'ten türetilir.
 
 ## 7. Dalgalar (her biri küçük commit'lerle, doğrulama: `flutter analyze` + `flutter test` + önizleme görüntüleri)
-- **W0 — Temel:** bu plan, token genişletme (`navyDeep`, rarity renkleri, maturity), 5 sekmeli kabuk (`IndexedStack` + `NavigationBar`), mevcut ekranlar sekmelere yerleşir. Kabul: tüm mevcut akışlar çalışır, testler yeşil.
+- **W0 — Temel (TAMAM 2026-10-07, analyze 0 sorun, 179 test):** bu plan, token genişletme (`navyDeep`, rarity renkleri, maturity), 5 sekmeli kabuk (`IndexedStack` + `NavigationBar`), mevcut ekranlar sekmelere yerleşir. Kabul: tüm mevcut akışlar çalışır, testler yeşil.
 - **W1 — Öğrenme döngüsü:** Ana Sayfa 3 odak, Öğren sekmesi, soru/yanlış/recovery/sonuç yeniden stil + recovery XP (migration 4+3). 
 - **W2 — Koleksiyon:** sınıf filtresi, rarity çerçeveleri, karakter detay ("Kullan/Hedefle"), aktif karakter yerleşimi; admin'de karakter kataloğu ekranı.
 - **W3 — Lig/Arena:** Arena hub, Ay Ligi tam ekran.

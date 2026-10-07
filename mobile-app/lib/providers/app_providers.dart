@@ -175,3 +175,6 @@ final activeCharacterProvider = Provider.autoDispose<CharacterCard?>((ref) {
   });
   return kazanilanlar.last;
 });
+
+/// Alt gezinme çubuğunun seçili sekmesi: 0 Ana Sayfa, 1 Öğren, 2 Arena, 3 Koleksiyon, 4 Profil.
+final shellTabProvider = StateProvider<int>((ref) => 0);

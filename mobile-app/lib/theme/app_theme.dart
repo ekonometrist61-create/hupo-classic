@@ -38,6 +38,11 @@ class AppColors {
   static const muted = Color(0xFF4A6A85);
   static const line = Color(0xFFF0E6CF);
   static const lineDark = Color(0xFFE0D2B0);
+
+  // Dramatik "oyun" yüzeyleri (Arena, kutlamalar, kilitli silüet): Deep Navy derinliği.
+  static const navyDeep = Color(0xFF0B1B2E);
+  static const navy = Color(0xFF17324D);
+  static const navySoft = Color(0xFF1E3F5F);
 }
 
 /// Uygulama genelinde tek yazı tipi (Nunito) ve hazır stiller.
@@ -138,6 +143,20 @@ ThemeData buildAppTheme({String fontFamily = 'Nunito'}) {
       style: TextButton.styleFrom(
         foregroundColor: AppColors.primary,
         textStyle: appText(size: 15, weight: FontWeight.w700, color: AppColors.primary),
+      ),
+    ),
+    navigationBarTheme: NavigationBarThemeData(
+      backgroundColor: AppColors.surface,
+      surfaceTintColor: Colors.transparent,
+      indicatorColor: AppColors.primarySoft,
+      height: 72,
+      labelBehavior: NavigationDestinationLabelBehavior.alwaysShow,
+      labelTextStyle: WidgetStateProperty.resolveWith(
+        (states) => appText(
+          size: 12,
+          weight: states.contains(WidgetState.selected) ? FontWeight.w900 : FontWeight.w700,
+          color: states.contains(WidgetState.selected) ? AppColors.primary : AppColors.muted,
+        ),
       ),
     ),
     iconButtonTheme: IconButtonThemeData(

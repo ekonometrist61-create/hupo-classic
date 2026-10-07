@@ -6,7 +6,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import 'auth/login.dart';
 import 'config/env.dart';
-import 'screens/home_screen.dart';
+import 'screens/root_shell.dart';
 import 'screens/splash_screen.dart';
 import 'services/push/push_host.dart';
 import 'services/secure_storage.dart';
@@ -71,7 +71,7 @@ class App extends ConsumerWidget {
   }
 }
 
-/// Oturum varsa ana ekranı, yoksa giriş ekranını gösterir.
+/// Oturum varsa ana kabuğu (alt gezinme), yoksa giriş ekranını gösterir.
 class AuthGate extends StatelessWidget {
   const AuthGate({super.key});
 
@@ -82,7 +82,7 @@ class AuthGate extends StatelessWidget {
       stream: auth.onAuthStateChange,
       builder: (context, snapshot) {
         final session = snapshot.data?.session ?? auth.currentSession;
-        return session == null ? const LoginScreen() : const HomeScreen();
+        return session == null ? const LoginScreen() : const RootShell();
       },
     );
   }
