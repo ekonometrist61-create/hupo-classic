@@ -23,6 +23,7 @@ import 'privacy_notice_screen.dart';
 import 'quiz_screen.dart';
 import 'cipher/cipher_list_screen.dart';
 import 'daily_challenge_screen.dart';
+import 'league_screen.dart';
 import 'review_screen.dart';
 import '../widgets/character/character_celebration_listener.dart';
 import '../widgets/daily_challenge_card.dart';
@@ -173,7 +174,9 @@ class HomeScreen extends ConsumerWidget {
                         ),
                         const SizedBox(height: 12),
                         _LeagueMini(
-                          onOpen: () => ref.read(shellTabProvider.notifier).state = 2,
+                          onOpen: () => Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => const LeagueScreen()),
+                          ),
                         ),
                         const SizedBox(height: 28),
 

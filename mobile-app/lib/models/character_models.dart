@@ -48,6 +48,10 @@ class CharacterCard {
   final bool kazanildi;
   final DateTime? kazanildiAt;
 
+  /// karakter_sira (1-5) aynı zamanda nadirliktir: 1 = Sıradan … 5 = Mitik
+  /// (bkz. KARAKTER_KOLEKSIYON_PLANI.md §4).
+  KarakterNadirlik get nadirlik => KarakterNadirlik.fromSira(karakterSira);
+
   /// Flutter'da gösterilecek asset yolu: `assets/characters/sinif/kod.webp`.
   /// Sunucudaki `ikon` 'ozgur_ruh.png' biçiminde gelir; uzantı istemcide .webp'e çevrilir.
   String get assetPath {
@@ -79,6 +83,27 @@ enum KarakterSinifi {
       KarakterSinifi.values.firstWhere(
         (s) => s.kod == kod,
         orElse: () => KarakterSinifi.ozgurRuhlar,
+      );
+}
+
+/// Nadirlik: karakter_sira (sınıf içindeki 1-5 konumu) ile birebir eşlenir.
+/// Üst nadirlikler koleksiyon ekranında daha belirgin çerçeve/rozet alır.
+enum KarakterNadirlik {
+  siradan(1, 'Sıradan', Color(0xFF9AA5B1)),
+  nadir(2, 'Nadir', Color(0xFF4EA9D9)),
+  epik(3, 'Epik', Color(0xFF9B59B6)),
+  efsanevi(4, 'Efsanevi', Color(0xFFF5C842)),
+  mitik(5, 'Mitik', Color(0xFFD63384));
+
+  const KarakterNadirlik(this.sira, this.ad, this.renk);
+
+  final int sira;
+  final String ad;
+  final Color renk;
+
+  static KarakterNadirlik fromSira(int sira) => KarakterNadirlik.values.firstWhere(
+        (n) => n.sira == sira,
+        orElse: () => KarakterNadirlik.siradan,
       );
 }
 

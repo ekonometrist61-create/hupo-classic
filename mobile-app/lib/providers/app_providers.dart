@@ -42,6 +42,10 @@ final badgesProvider = FutureProvider.autoDispose<List<BadgeInfo>>(
 final leagueProvider = FutureProvider.autoDispose<LeagueStatus>(
     (ref) => ref.watch(quizRepositoryProvider).fetchLeague());
 
+/// Tüm lig basamakları (Ay Ligi tam ekran merdiveni); öğrenciye özgü değil.
+final leagueLadderProvider = FutureProvider.autoDispose<List<LeagueTier>>(
+    (ref) => ref.watch(quizRepositoryProvider).fetchLeagueLadder());
+
 final membershipProvider = FutureProvider.autoDispose<MembershipStatus>(
     (ref) => ref.watch(quizRepositoryProvider).fetchMembership());
 

@@ -84,8 +84,15 @@ class _CharacterDetailSheetState extends ConsumerState<CharacterDetailSheet> {
                 textAlign: TextAlign.center,
               ),
               const SizedBox(height: 4),
-              // Sınıf rozeti
-              _SinifRozeti(sinif: karakter.sinif),
+              // Sınıf ve nadirlik rozeti
+              Wrap(
+                alignment: WrapAlignment.center,
+                spacing: 8,
+                children: [
+                  _SinifRozeti(sinif: karakter.sinif),
+                  if (karakter.kazanildi) _NadirlikRozeti(nadirlik: karakter.nadirlik),
+                ],
+              ),
               const SizedBox(height: 12),
               // Açıklama
               Text(
@@ -149,6 +156,27 @@ class _AktifRozeti extends StatelessWidget {
             style: appText(weight: FontWeight.w800, color: AppColors.mintDark),
           ),
         ],
+      ),
+    );
+  }
+}
+
+class _NadirlikRozeti extends StatelessWidget {
+  const _NadirlikRozeti({required this.nadirlik});
+
+  final KarakterNadirlik nadirlik;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 4),
+      decoration: BoxDecoration(
+        color: nadirlik.renk.withValues(alpha: 0.15),
+        borderRadius: BorderRadius.circular(20),
+      ),
+      child: Text(
+        nadirlik.ad,
+        style: appText(size: 12, weight: FontWeight.w800, color: nadirlik.renk),
       ),
     );
   }

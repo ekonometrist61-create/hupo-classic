@@ -51,34 +51,142 @@ class CollectionScreen extends ConsumerWidget {
 
 // ── Koleksiyon listesi ───────────────────────────────────────────────────────
 
-class _KoleksiyonListesi extends StatelessWidget {
+class _KoleksiyonListesi extends StatefulWidget {
   const _KoleksiyonListesi({required this.karakterler});
 
   final List<CharacterCard> karakterler;
 
   @override
+  State<_KoleksiyonListesi> createState() => _KoleksiyonListesiState();
+}
+
+class _KoleksiyonListesiState extends State<_KoleksiyonListesi> {
+  /// null = "Tümü" seçili.
+  KarakterSinifi? _seciliSinif;
+
+  @override
   Widget build(BuildContext context) {
-    final gruplar = KarakterSinifGrubu.grupla(karakterler);
-    final toplamKazanilan = karakterler.where((k) => k.kazanildi).length;
+    final gruplar = KarakterSinifGrubu.grupla(widget.karakterler);
+    final gosterilecek = _seciliSinif == null
+        ? gruplar
+        : gruplar.where((g) => g.sinif == _seciliSinif).toList();
+    final toplamKazanilan = widget.karakterler.where((k) => k.kazanildi).length;
 
     return ResponsivePage(
       child: CustomScrollView(
         slivers: [
           SliverToBoxAdapter(
             child: Padding(
-              padding: const EdgeInsets.fromLTRB(0, 8, 0, 20),
+              padding: const EdgeInsets.fromLTRB(0, 8, 0, 16),
               child: _IlerlemeOzeti(
                 kazanilan: toplamKazanilan,
-                toplam: karakterler.length,
+                toplam: widget.karakterler.length,
               ),
             ),
           ),
-          for (final grup in gruplar)
+          SliverToBoxAdapter(
+            child: Padding(
+              padding: const EdgeInsets.only(bottom: 16),
+              child: _SinifFiltreSatiri(
+                gruplar: gruplar,
+                secili: _seciliSinif,
+                onSecim: (s) => setState(() => _seciliSinif = s),
+              ),
+            ),
+          ),
+          for (final grup in gosterilecek)
             SliverToBoxAdapter(
               child: _SinifBolumu(grup: grup),
             ),
           const SliverToBoxAdapter(child: SizedBox(height: 32)),
         ],
+      ),
+    );
+  }
+}
+
+// ── Sınıf filtre satırı ──────────────────────────────────────────────────────
+
+class _SinifFiltreSatiri extends StatelessWidget {
+  const _SinifFiltreSatiri({
+    required this.gruplar,
+    required this.secili,
+    required this.onSecim,
+  });
+
+  final List<KarakterSinifGrubu> gruplar;
+  final KarakterSinifi? secili;
+  final ValueChanged<KarakterSinifi?> onSecim;
+
+  @override
+  Widget build(BuildContext context) {
+    return SingleChildScrollView(
+      scrollDirection: Axis.horizontal,
+      clipBehavior: Clip.none,
+      child: Row(
+        children: [
+          _FiltreCipi(
+            key: const ValueKey('sinif-cipi-tumu'),
+            etiket: 'Tümü',
+            renk: AppColors.primary,
+            secili: secili == null,
+            onTap: () => onSecim(null),
+          ),
+          for (final grup in gruplar) ...[
+            const SizedBox(width: 8),
+            _FiltreCipi(
+              key: ValueKey('sinif-cipi-${grup.sinif.kod}'),
+              etiket: grup.sinif.ad,
+              renk: grup.sinif.renk,
+              secili: secili == grup.sinif,
+              onTap: () => onSecim(grup.sinif),
+            ),
+          ],
+        ],
+      ),
+    );
+  }
+}
+
+class _FiltreCipi extends StatelessWidget {
+  const _FiltreCipi({
+    super.key,
+    required this.etiket,
+    required this.renk,
+    required this.secili,
+    required this.onTap,
+  });
+
+  final String etiket;
+  final Color renk;
+  final bool secili;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      button: true,
+      selected: secili,
+      child: Material(
+        color: secili ? renk : AppColors.surface,
+        shape: StadiumBorder(side: BorderSide(color: renk, width: secili ? 0 : 1.5)),
+        child: InkWell(
+          customBorder: const StadiumBorder(),
+          onTap: onTap,
+          child: Container(
+            constraints: const BoxConstraints(minHeight: 40),
+            padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
+            alignment: Alignment.center,
+            child: Text(
+              etiket,
+              style: appText(
+                size: 13,
+                weight: FontWeight.w800,
+                color: secili ? Colors.white : renk,
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }

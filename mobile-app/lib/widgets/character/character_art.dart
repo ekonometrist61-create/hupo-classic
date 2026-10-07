@@ -127,7 +127,18 @@ class _KarakterGorseliState extends State<KarakterGorseli>
                 )
               : null,
           boxShadow: kazanildi
-              ? [BoxShadow(color: renk.withValues(alpha: 0.35), blurRadius: 12, offset: const Offset(0, 4))]
+              ? [
+                  BoxShadow(
+                    color: renk.withValues(alpha: 0.35),
+                    blurRadius: 8 + karakter.nadirlik.sira * 2,
+                    offset: const Offset(0, 4),
+                  ),
+                  if (karakter.nadirlik.sira >= 4)
+                    BoxShadow(
+                      color: karakter.nadirlik.renk.withValues(alpha: 0.4),
+                      blurRadius: 16,
+                    ),
+                ]
               : widget.vurgu
                   ? [BoxShadow(color: renk.withValues(alpha: 0.45), blurRadius: 18)]
                   : null,
@@ -141,6 +152,8 @@ class _KarakterGorseliState extends State<KarakterGorseli>
   }
 
   Widget _kazanilmis(Color renk) {
+    final nadirlik = widget.karakter.nadirlik;
+    final boyut = widget.boyut;
     return Stack(
       fit: StackFit.expand,
       children: [
@@ -152,9 +165,37 @@ class _KarakterGorseliState extends State<KarakterGorseli>
           ),
         ),
         Padding(
-          padding: EdgeInsets.all(widget.boyut * 0.04),
+          padding: EdgeInsets.all(boyut * 0.04),
           child: _resim(),
         ),
+        // Efsanevi ve Mitik karakterler küçük bir parıltı rozetiyle öne çıkar.
+        if (nadirlik.sira >= 4)
+          Positioned(
+            top: boyut * 0.04,
+            right: boyut * 0.04,
+            child: Semantics(
+              label: nadirlik.ad,
+              child: ExcludeSemantics(
+                child: Container(
+                  padding: EdgeInsets.all(boyut * 0.035),
+                  decoration: BoxDecoration(
+                    color: nadirlik.renk,
+                    shape: BoxShape.circle,
+                    boxShadow: [
+                      BoxShadow(color: nadirlik.renk.withValues(alpha: 0.6), blurRadius: 6),
+                    ],
+                  ),
+                  child: Icon(
+                    nadirlik == KarakterNadirlik.mitik
+                        ? Icons.local_fire_department_rounded
+                        : Icons.auto_awesome_rounded,
+                    size: boyut * 0.11,
+                    color: Colors.white,
+                  ),
+                ),
+              ),
+            ),
+          ),
       ],
     );
   }

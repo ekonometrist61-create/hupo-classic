@@ -19,6 +19,7 @@ import 'package:ogrenci_hazirlik/settings/app_settings.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:ogrenci_hazirlik/providers/app_providers.dart';
 import 'package:ogrenci_hazirlik/screens/home_screen.dart';
+import 'package:ogrenci_hazirlik/screens/league_screen.dart';
 import 'package:ogrenci_hazirlik/screens/root_shell.dart';
 import 'package:ogrenci_hazirlik/widgets/evolving_avatar/avatar_models.dart';
 import 'package:ogrenci_hazirlik/widgets/evolving_avatar/tier_up_dialog.dart';
@@ -63,6 +64,14 @@ class FakeRepo extends Fake implements QuizRepository {
   Future<List<Question>> fetchReviewQuestions({int limit = 10}) async => [];
   @override
   Future<List<Question>> fetchQuizQuestions(String ders, {String? konu, int limit = 10}) async => [];
+  @override
+  Future<List<LeagueTier>> fetchLeagueLadder() async => const [
+        LeagueTier(code: 'bronz', name: 'Bronz Ligi', tier: 1, colorHex: '#CD7F32', icon: 'shield', promotionXp: 100),
+        LeagueTier(code: 'gumus', name: 'Gümüş Ligi', tier: 2, colorHex: '#9AA5B1', icon: 'shield', promotionXp: 150),
+        LeagueTier(code: 'altin', name: 'Altın Ligi', tier: 3, colorHex: '#FFC533', icon: 'shield', promotionXp: 200),
+        LeagueTier(code: 'zumrut', name: 'Zümrüt Ligi', tier: 4, colorHex: '#22C58B', icon: 'shield', promotionXp: 250),
+        LeagueTier(code: 'elmas', name: 'Elmas Ligi', tier: 5, colorHex: '#2FB8FF', icon: 'diamond'),
+      ];
   @override
   Future<List<TopicProgress>> fetchTopicProgress(String ders) async => const [
         TopicProgress(konu: 'Kesirler', toplam: 8, dogru: 6, oran: 75),
@@ -318,6 +327,11 @@ void main() {
   testWidgets('Öğren: konu kırılımı (6 soru eşiği)', (tester) async {
     await pumpScreen(tester, const SubjectTopicsScreen(ders: 'Matematik'), height: 1100);
     await shot(tester, '21_konu_kirilimi');
+  });
+
+  testWidgets('Ay Ligi: tam ekran merdiven', (tester) async {
+    await pumpScreen(tester, const LeagueScreen(), height: 1700);
+    await shot(tester, '22_lig_merdiven');
   });
   testWidgets('giriş', (tester) async {
     await pumpScreen(tester, const LoginScreen());

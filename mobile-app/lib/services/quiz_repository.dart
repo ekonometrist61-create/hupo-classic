@@ -195,6 +195,15 @@ class QuizRepository {
     return LeagueStatus.fromMap(Map<String, dynamic>.from(data as Map));
   }
 
+  /// public.leagues — tüm lig basamakları (herkese aynı, öğrenciye özgü değil).
+  Future<List<LeagueTier>> fetchLeagueLadder() async {
+    final rows = await _client
+        .from('leagues')
+        .select('kod, ad, sira, yukselme_xp, renk, ikon')
+        .order('sira');
+    return [for (final r in rows) LeagueTier.fromMap(r)];
+  }
+
   /// Üyelik durumu. RPC henüz yoksa ya da hata verirse "bilinmiyor" döner;
   /// çağıran taraf bu durumda hiçbir şey göstermez.
   Future<MembershipStatus> fetchMembership() async {

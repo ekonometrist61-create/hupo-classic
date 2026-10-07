@@ -68,6 +68,40 @@ class LeagueStatus {
       );
 }
 
+/// Tüm lig basamakları (public.leagues tablosu, 1=en alt). Ay Ligi tam ekranında
+/// "merdiven" gösterimi için; tek bir öğrenciye özgü değildir, herkese aynıdır.
+class LeagueTier {
+  const LeagueTier({
+    required this.code,
+    required this.name,
+    required this.tier,
+    required this.colorHex,
+    required this.icon,
+    this.promotionXp,
+  });
+
+  final String code;
+  final String name;
+  final int tier;
+  final String colorHex;
+  final String icon;
+
+  /// Bir üst basamağa çıkmak için haftalık XP eşiği; en üst basamakta null.
+  final int? promotionXp;
+
+  Color get color =>
+      Color(int.parse('FF${colorHex.replaceFirst('#', '')}', radix: 16));
+
+  factory LeagueTier.fromMap(Map<String, dynamic> map) => LeagueTier(
+        code: map['kod'] as String,
+        name: map['ad'] as String,
+        tier: (map['sira'] as num).toInt(),
+        colorHex: map['renk'] as String,
+        icon: map['ikon'] as String? ?? 'shield',
+        promotionXp: (map['yukselme_xp'] as num?)?.toInt(),
+      );
+}
+
 class SubjectProgress {
   const SubjectProgress({
     required this.ders,

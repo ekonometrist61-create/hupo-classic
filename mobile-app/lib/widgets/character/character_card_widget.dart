@@ -65,12 +65,21 @@ class _KarakterEtiket extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     if (karakter.kazanildi) {
-      return Text(
-        karakter.ad,
-        textAlign: TextAlign.center,
-        maxLines: 2,
-        overflow: TextOverflow.ellipsis,
-        style: appText(size: 12, weight: FontWeight.w800, height: 1.2),
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Text(
+            karakter.ad,
+            textAlign: TextAlign.center,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: appText(size: 12, weight: FontWeight.w800, height: 1.2),
+          ),
+          Text(
+            karakter.nadirlik.ad,
+            style: appText(size: 10, weight: FontWeight.w700, color: karakter.nadirlik.renk),
+          ),
+        ],
       );
     }
 

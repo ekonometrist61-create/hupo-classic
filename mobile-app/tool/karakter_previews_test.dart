@@ -116,4 +116,28 @@ void main() {
       ileri: const Duration(milliseconds: 2500),
     );
   });
+
+  testWidgets('nadirlik çerçeveleri (1-5)', (tester) async {
+    final ornek = _ornekler(kazanildi: true).first;
+    final bes = [
+      for (final nadirlik in KarakterNadirlik.values)
+        CharacterCard(
+          kod: ornek.kod,
+          ad: '${ornek.ad} · ${nadirlik.ad}',
+          aciklama: '',
+          ikon: ornek.ikon,
+          sinif: ornek.sinif,
+          sinifSira: ornek.sinifSira,
+          karakterSira: nadirlik.sira,
+          kosulTuru: ornek.kosulTuru,
+          kosulDeger: ornek.kosulDeger,
+          kazanildi: true,
+        ),
+    ];
+    await cek(
+      tester,
+      satir('Nadirlik: Sıradan → Mitik (aynı karakter, artan sıra)', bes, boyut: 140),
+      'karakterler_nadirlik',
+    );
+  });
 }

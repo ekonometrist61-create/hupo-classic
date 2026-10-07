@@ -19,6 +19,9 @@ Bu dosya yeni, doğrulanmış proje kararları içindir. Paket önerileri kullan
 
 | 2026-10-07 | **Mobil yeniden tasarım (ChatGPT Mobile Flutter MVP v1):** ortak dil = Teal ana eylem + Deep Navy "oyun" yüzeyleri + Cream + Gold kıt, Nunito; paketin mavi CTA/Inter paleti ve Supabase şeması (`students/attempts/question_options.is_correct`) **alınmadı**; canlı şema + RPC korunur, eksikler yeni migration'larla | Üç yüzeyin (mobil/web/admin) tutarlılığı; cevap anahtarı sızıntısı ve canlı auth/ödeme/veli onayı riski | Kullanıcı onayı — ONAYLI. Plan: `docs/mobil-yeniden-tasarim/PLAN.md` | `mobile-app/**`, `supabase/migrations/20261008+` |
 
+| 2026-10-08 | W2 Koleksiyon: nadirlik `karakter_sira`'dan türetildi (yeni sütun yok); paketin "Hedefle" (karakter pinleme) özelliği eklenmedi | Mevcut "sıradaki kilitli karakter" otomatik gösterimi aynı ihtiyacı karşılıyor; yeni DB alanı gerektiren özellik onaysız eklenmedi | Kullanıcı onayı ("w2 geç") kapsamında karar — ONAYLI | `character_models.dart`, `character_art.dart` |
+| 2026-10-08 | Admin karakter kataloğu: RPC (`admin_list_characters`) yazıldı ve doğrulandı, web-panel ekranı YOK | Eşzamanlı başka bir oturum `web-panel/src/components/yonetim/**` üzerinde çalışıyordu; dosya çakışması riski | **ERTELENDİ** — ekran ayrı işte eklenecek | `supabase/migrations/20261008010000_admin_karakter_katalogu.sql` |
+
 ## Paket ile repo çelişkileri
 - **Renk:** Kit "Leaf Green #6DA940" önceki kimlik referansı olarak anıyor; repo mobil tokenları `mint #22C58B`, `sun #FFC533`, `primary #6C4DF6`. Repo tokenları esas; kit'in Gold `#F5C842` ile mobil `sun #FFC533` birbirine yakın, birleştirme mobil dalgasında karara bağlanacak.
 - **Karakter adları:** Repo `assets/characters/bozkir/*` (Bozkır İzci/Reisi…) kullanıyor; kit 35 adı yeniden tanımlamıyor. Repo tablosu yetkili.

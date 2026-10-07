@@ -14,6 +14,7 @@ import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
 import 'daily_challenge_screen.dart';
 import 'home_screen.dart';
+import 'league_screen.dart';
 
 const String _baslik = 'Arena';
 const String _altBaslik = 'Ligde yüksel, günün meydan okumasını tamamla.';
@@ -55,7 +56,12 @@ class ArenaScreen extends ConsumerWidget {
                       text: _ligYuklenemedi,
                       onRetry: () => ref.invalidate(leagueProvider),
                     ),
-                    data: (durum) => LeagueCard(status: durum),
+                    data: (durum) => LeagueCard(
+                      status: durum,
+                      onTap: () => Navigator.of(context).push(
+                        MaterialPageRoute(builder: (_) => const LeagueScreen()),
+                      ),
+                    ),
                   ),
                   const SizedBox(height: 12),
                   DailyChallengeCard(
