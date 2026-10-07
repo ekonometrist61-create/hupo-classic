@@ -8,9 +8,12 @@ import 'ui/subject_style.dart';
 
 /// Genel ilerleme: toplam çözülen soru, doğruluk, en uzun seri ve ders bazlı ilerleme.
 class ProgressCard extends StatelessWidget {
-  const ProgressCard({super.key, required this.overview});
+  const ProgressCard({super.key, required this.overview, this.onDersDetay});
 
   final ProfileOverview overview;
+
+  /// Ders adıyla konu detay ekranına yönlendirme (opsiyonel).
+  final void Function(String ders)? onDersDetay;
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +51,11 @@ class ProgressCard extends StatelessWidget {
               style: appText(size: 14, weight: FontWeight.w700, color: AppColors.muted),
             )
           else
-            for (final s in overview.subjects) _SubjectRow(progress: s),
+            for (final s in overview.subjects)
+              _SubjectRow(
+                progress: s,
+                onTap: onDersDetay == null ? null : () => onDersDetay!(s.ders),
+              ),
         ],
       ),
     );
@@ -91,72 +98,78 @@ class _Mini extends StatelessWidget {
 }
 
 class _SubjectRow extends StatelessWidget {
-  const _SubjectRow({required this.progress});
+  const _SubjectRow({required this.progress, this.onTap});
 
   final SubjectProgress progress;
+  final VoidCallback? onTap;
 
   @override
   Widget build(BuildContext context) {
     final style = subjectStyle(progress.ders);
     return Padding(
       padding: const EdgeInsets.only(bottom: 14),
-      child: Row(
-        children: [
-          Container(
-            width: 40,
-            height: 40,
-            decoration: BoxDecoration(
-              color: style.color,
-              borderRadius: BorderRadius.circular(14),
+      child: GestureDetector(
+        onTap: onTap,
+        child: Row(
+          children: [
+            Container(
+              width: 40,
+              height: 40,
+              decoration: BoxDecoration(
+                color: style.color,
+                borderRadius: BorderRadius.circular(14),
+              ),
+              child: Icon(style.icon, color: Colors.white, size: 22),
             ),
-            child: Icon(style.icon, color: Colors.white, size: 22),
-          ),
-          const SizedBox(width: 12),
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Expanded(
-                      child: Text(
-                        progress.ders,
-                        style: appText(size: 15, weight: FontWeight.w900),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Expanded(
+                        child: Text(
+                          progress.ders,
+                          style: appText(size: 15, weight: FontWeight.w900),
+                        ),
+                      ),
+                      Text(
+                        '${progress.solved}/${progress.total} soru',
+                        style: appText(size: 12, weight: FontWeight.w800, color: AppColors.muted),
+                      ),
+                      if (onTap != null)
+                        const Icon(Icons.chevron_right_rounded, color: AppColors.muted, size: 18),
+                    ],
+                  ),
+                  const SizedBox(height: 6),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(8),
+                    child: TweenAnimationBuilder<double>(
+                      tween: Tween(end: progress.completion),
+                      duration: motionMs(context, 600),
+                      curve: Curves.easeOutCubic,
+                      builder: (context, value, _) => LinearProgressIndicator(
+                        value: value,
+                        minHeight: 10,
+                        backgroundColor: AppColors.line,
+                        valueColor: AlwaysStoppedAnimation(style.color),
                       ),
                     ),
-                    Text(
-                      '${progress.solved}/${progress.total} soru',
-                      style: appText(size: 12, weight: FontWeight.w800, color: AppColors.muted),
-                    ),
-                  ],
-                ),
-                const SizedBox(height: 6),
-                ClipRRect(
-                  borderRadius: BorderRadius.circular(8),
-                  child: TweenAnimationBuilder<double>(
-                    tween: Tween(end: progress.completion),
-                    duration: motionMs(context, 600),
-                    curve: Curves.easeOutCubic,
-                    builder: (context, value, _) => LinearProgressIndicator(
-                      value: value,
-                      minHeight: 10,
-                      backgroundColor: AppColors.line,
-                      valueColor: AlwaysStoppedAnimation(style.color),
-                    ),
                   ),
-                ),
-                if (progress.solved > 0)
-                  Padding(
-                    padding: const EdgeInsets.only(top: 4),
-                    child: Text(
-                      'Başarı %${progress.success}',
-                      style: appText(size: 12, weight: FontWeight.w800, color: AppColors.muted),
+                  if (progress.solved > 0)
+                    Padding(
+                      padding: const EdgeInsets.only(top: 4),
+                      child: Text(
+                        'Başarı %${progress.success}',
+                        style: appText(size: 12, weight: FontWeight.w800, color: AppColors.muted),
+                      ),
                     ),
-                  ),
-              ],
+                ],
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }

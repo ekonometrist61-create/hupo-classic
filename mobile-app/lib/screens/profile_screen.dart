@@ -9,6 +9,7 @@ import '../widgets/badges_section.dart';
 import '../widgets/character/active_character_chip.dart';
 import 'collection_screen.dart';
 import 'settings_screen.dart';
+import 'subject_topics_screen.dart';
 import 'grade_picker_screen.dart';
 import 'saved_questions_screen.dart';
 import '../utils/format.dart';
@@ -141,7 +142,12 @@ class ProfileScreen extends ConsumerWidget {
                     value: overview,
                     retryLabel: 'İlerleme bilgin yüklenemedi, tekrar deneyelim.',
                     onRetry: () => ref.invalidate(overviewProvider),
-                    builder: (o) => ProgressCard(overview: o),
+                    builder: (o) => ProgressCard(
+                      overview: o,
+                      onDersDetay: (ders) => Navigator.of(context).push(
+                        MaterialPageRoute(builder: (_) => SubjectTopicsScreen(ders: ders)),
+                      ),
+                    ),
                   ),
                   const SizedBox(height: 16),
                   badges.when(
