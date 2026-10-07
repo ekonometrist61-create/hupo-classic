@@ -49,6 +49,10 @@ final leagueLadderProvider = FutureProvider.autoDispose<List<LeagueTier>>(
 final membershipProvider = FutureProvider.autoDispose<MembershipStatus>(
     (ref) => ref.watch(quizRepositoryProvider).fetchMembership());
 
+/// Bugünkü görevler: ilerleme ve ödül durumu. Quiz bittikten sonra invalidate edilir.
+final myQuestsProvider = FutureProvider.autoDispose<List<Quest>>(
+    (ref) => ref.watch(quizRepositoryProvider).fetchMyQuests());
+
 final overviewProvider = FutureProvider.autoDispose<ProfileOverview>(
     (ref) => ref.watch(quizRepositoryProvider).fetchOverview());
 

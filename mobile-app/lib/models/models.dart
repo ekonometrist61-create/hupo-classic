@@ -215,6 +215,42 @@ class AnswerResult {
       );
 }
 
+/// Günlük görevin durumu (public.get_my_quests()).
+class Quest {
+  const Quest({
+    required this.kod,
+    required this.baslik,
+    required this.aciklama,
+    required this.hedefDeger,
+    required this.odulXp,
+    required this.ilerleme,
+    required this.tamamlandi,
+    required this.odulAlindi,
+  });
+
+  final String kod;
+  final String baslik;
+  final String aciklama;
+  final int hedefDeger;
+  final int odulXp;
+  final int ilerleme;
+  final bool tamamlandi;
+  final bool odulAlindi;
+
+  double get oran => hedefDeger > 0 ? (ilerleme / hedefDeger).clamp(0, 1) : 0;
+
+  factory Quest.fromMap(Map<String, dynamic> map) => Quest(
+        kod: map['kod'] as String,
+        baslik: map['baslik'] as String,
+        aciklama: map['aciklama'] as String,
+        hedefDeger: (map['hedef_deger'] as num).toInt(),
+        odulXp: (map['odul_xp'] as num).toInt(),
+        ilerleme: (map['ilerleme'] as num).toInt(),
+        tamamlandi: map['tamamlandi'] as bool? ?? false,
+        odulAlindi: map['odul_alindi'] as bool? ?? false,
+      );
+}
+
 /// Bir rozetin kataloğu + öğrencinin durumu (public.get_student_badges()).
 class BadgeInfo {
   const BadgeInfo({

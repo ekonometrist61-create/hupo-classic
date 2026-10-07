@@ -280,6 +280,17 @@ class QuizRepository {
     await _client.auth.signOut();
   }
 
+  Future<List<Quest>> fetchMyQuests() async {
+    final data = await _client.rpc('get_my_quests');
+    final list = data is List ? data : (data as Map)['quests'] ?? [];
+    return [for (final r in list as List) Quest.fromMap(Map<String, dynamic>.from(r as Map))];
+  }
+
+  Future<Map<String, dynamic>> claimQuestReward(String kod) async {
+    final data = await _client.rpc('claim_quest_reward', params: {'p_kod': kod});
+    return Map<String, dynamic>.from(data as Map);
+  }
+
   Future<void> signOut() async {
     await _beforeSignOut();
     await _client.auth.signOut();

@@ -24,6 +24,7 @@ import 'quiz_screen.dart';
 import 'cipher/cipher_list_screen.dart';
 import 'daily_challenge_screen.dart';
 import 'league_screen.dart';
+import 'quests_screen.dart';
 import 'review_screen.dart';
 import '../widgets/character/character_celebration_listener.dart';
 import '../widgets/daily_challenge_card.dart';
@@ -155,6 +156,12 @@ class HomeScreen extends ConsumerWidget {
                         DailyChallengeCard(
                           onTap: () => Navigator.of(context).push(
                             MaterialPageRoute(builder: (_) => const DailyChallengeScreen()),
+                          ),
+                        ),
+                        const SizedBox(height: 12),
+                        _GorevMini(
+                          onOpen: () => Navigator.of(context).push(
+                            MaterialPageRoute(builder: (_) => const QuestsScreen()),
                           ),
                         ),
                         const SizedBox(height: 28),
@@ -484,6 +491,65 @@ class _AvatarSection extends StatelessWidget {
       onTap: () => ProviderScope.containerOf(context, listen: false)
           .read(shellTabProvider.notifier)
           .state = 3,
+    );
+  }
+}
+
+class _GorevMini extends ConsumerWidget {
+  const _GorevMini({required this.onOpen});
+
+  final VoidCallback onOpen;
+
+  @override
+  Widget build(BuildContext context, WidgetRef ref) {
+    final gorevler = ref.watch(myQuestsProvider).valueOrNull;
+    if (gorevler == null || gorevler.isEmpty) return const SizedBox.shrink();
+
+    final tamamlanan = gorevler.where((g) => g.tamamlandi && !g.odulAlindi).length;
+    final toplam = gorevler.length;
+    final bitti = gorevler.every((g) => g.odulAlindi);
+
+    return GameCard(
+      onTap: onOpen,
+      padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
+      child: Row(
+          children: [
+            Icon(
+              bitti ? Icons.check_circle_rounded : Icons.flag_rounded,
+              color: bitti ? AppColors.mint : AppColors.primary,
+              size: 22,
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text('Günlük görevler', style: appText(size: 14, weight: FontWeight.w800)),
+                  Text(
+                    bitti
+                        ? 'Bugünkü görevlerin tamamlandı!'
+                        : '$tamamlanan/$toplam görev tamamlandı',
+                    style: appText(size: 12, color: AppColors.muted),
+                  ),
+                ],
+              ),
+            ),
+            if (!bitti && tamamlanan > 0)
+              Container(
+                padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+                decoration: BoxDecoration(
+                  color: AppColors.sun,
+                  borderRadius: BorderRadius.circular(10),
+                ),
+                child: Text(
+                  'Ödül var!',
+                  style: appText(size: 11, weight: FontWeight.w800, color: Colors.white),
+                ),
+              )
+            else
+              const Icon(Icons.chevron_right_rounded, color: AppColors.muted),
+          ],
+        ),
     );
   }
 }

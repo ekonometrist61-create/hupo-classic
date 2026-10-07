@@ -183,6 +183,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
 
   void _next() {
     if (_isLast) {
+      // Quiz bitince görev ilerlemesi ve istatistikler güncellenmiş olabilir.
+      ref.invalidate(myQuestsProvider);
+      ref.invalidate(statsProvider);
       Navigator.of(context).pushReplacement(MaterialPageRoute(
         builder: (_) => ResultScreen(results: _results),
       ));
