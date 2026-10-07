@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 import '../models/league_models.dart';
 import '../models/models.dart';
@@ -167,6 +168,8 @@ class ProfileScreen extends ConsumerWidget {
                           builder: (_) => const CollectionScreen()),
                     ),
                   ),
+                  const SizedBox(height: 28),
+                  const _VeliIcinSection(),
                 ],
               ),
             ),
@@ -310,6 +313,101 @@ class _RetryMessage extends StatelessWidget {
         const SizedBox(height: 12),
         ChunkyButton(label: 'Tekrar dene', expanded: false, onPressed: onRetry, height: 48),
       ],
+    );
+  }
+}
+
+const _premiumUrl = 'https://hupolingo.com/premium';
+const _veliRaporuUrl = 'https://hupolingo.com/veli';
+
+class _VeliIcinSection extends StatelessWidget {
+  const _VeliIcinSection();
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text('Velim için', style: appText(size: 18, weight: FontWeight.w900)),
+        const SizedBox(height: 10),
+        _VeliLinkSatiri(
+          ikon: Icons.bar_chart_rounded,
+          baslik: 'Veli raporu',
+          aciklama: 'Gelişimini ve konu ilerlemeni göster',
+          renk: AppColors.primary,
+          onTap: () => _ac(_veliRaporuUrl),
+        ),
+        const SizedBox(height: 8),
+        _VeliLinkSatiri(
+          ikon: Icons.star_rounded,
+          baslik: 'Premium hakkında',
+          aciklama: 'Tüm özellikler ve fiyatlandırma',
+          renk: AppColors.sun,
+          onTap: () => _ac(_premiumUrl),
+        ),
+      ],
+    );
+  }
+
+  Future<void> _ac(String url) async {
+    final uri = Uri.parse(url);
+    if (await canLaunchUrl(uri)) {
+      await launchUrl(uri, mode: LaunchMode.externalApplication);
+    }
+  }
+}
+
+class _VeliLinkSatiri extends StatelessWidget {
+  const _VeliLinkSatiri({
+    required this.ikon,
+    required this.baslik,
+    required this.aciklama,
+    required this.renk,
+    required this.onTap,
+  });
+
+  final IconData ikon;
+  final String baslik;
+  final String aciklama;
+  final Color renk;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: onTap,
+      child: Container(
+        padding: const EdgeInsets.all(14),
+        decoration: BoxDecoration(
+          color: AppColors.surface,
+          borderRadius: BorderRadius.circular(14),
+          border: Border.all(color: AppColors.line),
+        ),
+        child: Row(
+          children: [
+            Container(
+              width: 42,
+              height: 42,
+              decoration: BoxDecoration(
+                color: renk.withValues(alpha: 0.12),
+                borderRadius: BorderRadius.circular(12),
+              ),
+              child: Icon(ikon, color: renk, size: 22),
+            ),
+            const SizedBox(width: 12),
+            Expanded(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(baslik, style: appText(size: 14, weight: FontWeight.w800)),
+                  Text(aciklama, style: appText(size: 12, color: AppColors.muted)),
+                ],
+              ),
+            ),
+            const Icon(Icons.open_in_new_rounded, color: AppColors.muted, size: 18),
+          ],
+        ),
+      ),
     );
   }
 }

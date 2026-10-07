@@ -380,8 +380,9 @@ void main() {
       await _pump(tester, const SettingsScreen(), repo: _Repo());
       final container = ProviderScope.containerOf(tester.element(find.byType(SettingsScreen)));
 
-      await tester.tap(find.byType(Switch).at(0));
-      await tester.tap(find.byType(Switch).at(1));
+      // Switch sırası: 0=Ses efektleri, 1=Hareketi azalt (başta false), 2=Titreşim (başta true).
+      await tester.tap(find.byType(Switch).at(1)); // reduceMotion: false → true
+      await tester.tap(find.byType(Switch).at(2)); // haptics: true → false
       await tester.pump();
 
       expect(container.read(settingsProvider).reduceMotion, isTrue);
