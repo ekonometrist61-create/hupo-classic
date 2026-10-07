@@ -8,6 +8,7 @@ import '../models/cipher_models.dart';
 import '../models/daily_challenge_models.dart';
 import '../models/league_models.dart';
 import '../models/membership_models.dart';
+import '../models/mock_exam_models.dart';
 import '../models/models.dart';
 import '../models/privacy_models.dart';
 import '../models/review_models.dart';
@@ -52,6 +53,10 @@ final membershipProvider = FutureProvider.autoDispose<MembershipStatus>(
 /// Bugünkü görevler: ilerleme ve ödül durumu. Quiz bittikten sonra invalidate edilir.
 final myQuestsProvider = FutureProvider.autoDispose<List<Quest>>(
     (ref) => ref.watch(quizRepositoryProvider).fetchMyQuests());
+
+/// Deneme sınavı listesi (öğrencinin sınıfına uygun aktif sınavlar).
+final myExamsProvider = FutureProvider.autoDispose<List<MockExamSummary>>(
+    (ref) => ref.watch(quizRepositoryProvider).fetchMyExams());
 
 final overviewProvider = FutureProvider.autoDispose<ProfileOverview>(
     (ref) => ref.watch(quizRepositoryProvider).fetchOverview());

@@ -15,6 +15,7 @@ import '../widgets/ui/responsive_page.dart';
 import 'daily_challenge_screen.dart';
 import 'home_screen.dart';
 import 'league_screen.dart';
+import 'mock_exam_screen.dart';
 
 const String _baslik = 'Arena';
 const String _altBaslik = 'Ligde yüksel, günün meydan okumasını tamamla.';
@@ -67,6 +68,12 @@ class ArenaScreen extends ConsumerWidget {
                   DailyChallengeCard(
                     onTap: () => Navigator.of(context).push(
                       MaterialPageRoute(builder: (_) => const DailyChallengeScreen()),
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  _DenemeSinaviKarti(
+                    onTap: () => Navigator.of(context).push(
+                      MaterialPageRoute(builder: (_) => const MockExamsListScreen()),
                     ),
                   ),
                   const SizedBox(height: 12),
@@ -125,6 +132,46 @@ class _ArenaUst extends StatelessWidget {
             ],
           ),
         ),
+      ),
+    );
+  }
+}
+
+class _DenemeSinaviKarti extends StatelessWidget {
+  const _DenemeSinaviKarti({required this.onTap});
+
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    return GameCard(
+      onTap: onTap,
+      child: Row(
+        children: [
+          Container(
+            width: 46,
+            height: 46,
+            decoration: BoxDecoration(
+              color: AppColors.primary.withValues(alpha: 0.15),
+              shape: BoxShape.circle,
+            ),
+            child: const Icon(Icons.assignment_rounded, color: AppColors.primary, size: 24),
+          ),
+          const SizedBox(width: 14),
+          Expanded(
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Deneme Sınavları', style: appText(size: 15, weight: FontWeight.w900)),
+                Text(
+                  'Sınav pratiği yap, sonuçlarını gör.',
+                  style: appText(size: 13, color: AppColors.muted),
+                ),
+              ],
+            ),
+          ),
+          const Icon(Icons.chevron_right_rounded, color: AppColors.muted),
+        ],
       ),
     );
   }

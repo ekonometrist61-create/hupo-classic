@@ -4,6 +4,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../models/league_models.dart';
 import '../models/membership_models.dart';
+import '../models/mock_exam_models.dart';
 import '../models/models.dart';
 import '../models/privacy_models.dart';
 
@@ -278,6 +279,27 @@ class QuizRepository {
     await _beforeSignOut();
     await _client.rpc('delete_my_account');
     await _client.auth.signOut();
+  }
+
+  Future<List<MockExamSummary>> fetchMyExams() async {
+    final data = await _client.rpc('list_my_exams');
+    return [
+      for (final r in (data is List ? data : const []))
+        MockExamSummary.fromMap(Map<String, dynamic>.from(r as Map)),
+    ];
+  }
+
+  Future<MockExamSession> startMockExam(String sinavId) async {
+    final data = await _client.rpc('start_mock_exam', params: {'p_sinav_id': sinavId});
+    return MockExamSession.fromMap(Map<String, dynamic>.from(data as Map));
+  }
+
+  Future<MockExamResult> submitMockExam(String denemelId, List<Map<String, String?>> cevaplar) async {
+    final data = await _client.rpc('submit_mock_exam', params: {
+      'p_deneme_id': denemelId,
+      'p_cevaplar': cevaplar,
+    });
+    return MockExamResult.fromMap(Map<String, dynamic>.from(data as Map));
   }
 
   Future<List<Quest>> fetchMyQuests() async {
