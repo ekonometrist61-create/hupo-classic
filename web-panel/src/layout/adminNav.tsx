@@ -1,4 +1,5 @@
 import type { AppRole } from "@/hooks/useCurrentRole";
+import { UserPlus } from "lucide-react";
 import {
   BoltIcon,
   BoxIcon,
@@ -58,6 +59,8 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     key: "growth",
     items: [
+      { key: "musteri360", icon: <GroupIcon />, path: "/yonetim/musteri-360", roles: ADMIN },
+      { key: "potansiyelAdaylar", icon: <UserPlus />, path: "/yonetim/potansiyel-adaylar", roles: ADMIN },
       { key: "notifications", icon: <MailIcon />, path: "/yonetim/bildirimler", roles: ADMIN },
       { key: "coupons", icon: <ShootingStarIcon />, path: "/yonetim/kuponlar", roles: ADMIN },
       { key: "segments", icon: <PieChartIcon />, path: "/yonetim/segmentler", roles: ADMIN },
@@ -69,6 +72,10 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     key: "business",
     items: [
+      { key: "destekMasasi", icon: <TaskIcon />, path: "/yonetim/destek-masasi", roles: ADMIN },
+      { key: "satisHatti", icon: <DollarLineIcon />, path: "/yonetim/satis-hatti", roles: ADMIN },
+      { key: "crmGorevler", icon: <TaskIcon />, path: "/yonetim/crm-gorevler", roles: ADMIN },
+      { key: "ekipAkisi", icon: <GroupIcon />, path: "/yonetim/ekip-akisi", roles: ADMIN },
       { key: "payments", icon: <DollarLineIcon />, path: "/yonetim/odemeler", roles: ADMIN },
       { key: "plans", icon: <BoxIcon />, path: "/yonetim/planlar", roles: ADMIN },
       { key: "analytics", icon: <PieChartIcon />, path: "/yonetim/analitik", roles: ADMIN },

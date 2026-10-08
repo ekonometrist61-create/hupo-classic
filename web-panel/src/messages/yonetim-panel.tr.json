@@ -17,6 +17,8 @@
         "overview": "Genel bakış",
         "members": "Üyeler & aileler",
         "leads": "Veli adayları",
+        "musteri360": "Müşteri 360°",
+        "potansiyelAdaylar": "Potansiyel Adaylar",
         "classes": "Sınıflar",
         "questions": "Soru bankası",
         "notifications": "Bildirimler",
@@ -25,6 +27,7 @@
         "campaigns": "Kampanyalar",
         "journeys": "Otomasyonlar",
         "forms": "Formlar & anketler",
+        "satisHatti": "Satış Hattı",
         "payments": "Ödemeler",
         "plans": "Planlar",
         "analytics": "Analitik",
@@ -36,6 +39,9 @@
         "leagues": "Lig basamakları",
         "badges": "Rozetler",
         "quests": "Görevler",
+        "crmGorevler": "CRM Görevleri",
+        "ekipAkisi": "Ekip Akışı",
+        "destekMasasi": "Destek Masası",
         "settings": "Uygulama ayarları"
       },
       "pageDesc": {
@@ -46,7 +52,13 @@
         "notifications": "Uygulama içi bildirimleri veli ve öğrencilere gönderin.",
         "coupons": "Kuponlar ve kampanya kodlarını oluşturun, etkinleştirin.",
         "payments": "Ödeme kayıtları, durumları ve iadeler için tek kayıt noktası.",
-        "plans": "Üyelik planları ve fiyatları."
+        "plans": "Üyelik planları ve fiyatları.",
+        "musteri360": "Müşteri 360° — Tüm müşteri verileri tek ekranda",
+        "potansiyelAdaylar": "Potansiyel Adaylar — Üst huni aday yönetimi ve puanlama",
+        "crmGorevler": "CRM görevleri — aramalar, e-postalar, toplantılar",
+        "ekipAkisi": "Ekip akışı — notlar ve aktivite geçmişi",
+        "satisHatti": "Satış hattı — Lead ve fırsat yönetimi",
+        "destekMasasi": "Destek masası — müşteri destek talepleri"
       },
       "command": {
         "open": "Her yerde ara...",
@@ -231,6 +243,189 @@
         "close": "Kapat"
       }
     },
+    "destekMasasi": {
+      "title": "Destek Masası",
+      "loading": "Yükleniyor...",
+      "empty": "Destek talebi bulunamadı.",
+      "retry": "Tekrar dene",
+      "allStatus": "Tüm durumlar",
+      "allPriority": "Tüm öncelikler",
+      "allCategories": "Tüm kategoriler",
+      "newTicket": "Yeni Talep",
+      "statuses": { "new": "Yeni", "open": "Açık", "waiting": "Bekliyor", "resolved": "Çözüldü" },
+      "priorities": { "low": "Düşük", "normal": "Normal", "high": "Yüksek", "critical": "Kritik" },
+      "categories": { "billing": "Faturalandırma", "technical": "Teknik", "account": "Hesap", "content": "İçerik", "subscription": "Abonelik", "other": "Diğer" },
+      "cols": { "ticketNo": "Talep No", "subject": "Konu", "category": "Kategori", "status": "Durum", "priority": "Öncelik", "assignee": "Atanan", "created": "Oluşturma", "customer": "Müşteri Bağ" },
+      "customerLink": "Müşteri 360°",
+      "form": { "title": "Yeni Destek Talebi", "subject": "Konu", "category": "Kategori", "status": "Durum", "priority": "Öncelik", "householdId": "Müşteri ID", "errSubject": "Konu 1-200 karakter olmalı.", "errHousehold": "Geçerli bir müşteri ID girin.", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
+      "statusModal": { "title": "Durum Değiştir", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
+    },
+    "musteri360": {
+      "title": "Müşteri 360°",
+      "loading": "Yükleniyor...",
+      "noRecords": "Kayıt bulunamadı.",
+      "notFound": "Müşteri kaydı bulunamadı.",
+      "retry": "Tekrar dene",
+      "back": "Müşteri 360°'ya dön",
+      "search": "Ara",
+      "searchPlaceholder": "Ad, e-posta, telefon veya müşteri no",
+      "filters": {
+        "lifecycle": "Yaşam döngüsü",
+        "allLifecycle": "Tüm aşamalar",
+        "plan": "Plan",
+        "allPlans": "Tüm planlar"
+      },
+      "stages": {
+        "visitor": "Ziyaretçi",
+        "lead": "Aday",
+        "registered": "Kayıtlı",
+        "trial": "Deneme",
+        "activated": "Aktif",
+        "engaged": "Etkileşimde",
+        "paid": "Ücretli",
+        "at_risk": "Riskli",
+        "churned": "Ayrıldı",
+        "winback": "Geri kazanım"
+      },
+      "plans": {
+        "free": "Ücretsiz",
+        "trial": "Deneme",
+        "premium": "Premium",
+        "family": "Aile"
+      },
+      "cols": {
+        "customerNo": "Müşteri No",
+        "name": "Ad Soyad",
+        "email": "E-posta",
+        "phone": "Telefon",
+        "lifecycle": "Yaşam Döngüsü",
+        "plan": "Plan",
+        "mrr": "MRR",
+        "health": "Sağlık Skoru",
+        "lastActivity": "Son Aktivite",
+        "role": "Rol",
+        "grade": "Sınıf",
+        "xp": "XP",
+        "level": "Seviye",
+        "streak": "Seri",
+        "activeDays": "Aktif gün",
+        "lastActive": "Son aktif",
+        "type": "Tür",
+        "amount": "Tutar",
+        "status": "Durum",
+        "date": "Tarih",
+        "description": "Açıklama",
+        "subject": "Konu",
+        "priority": "Öncelik"
+      },
+      "pager": {
+        "prev": "Önceki",
+        "next": "Sonraki"
+      },
+      "health": {
+        "label": "Sağlık skoru (0-100)"
+      },
+      "tabs": {
+        "genel": "Genel Bakış",
+        "kimlik": "Kimlik & İletişim",
+        "hane": "Hane & Öğrenci",
+        "abonelik": "Abonelik",
+        "islem": "İşlem & Ödeme",
+        "pazarlama": "Pazarlama & İzin",
+        "kullanim": "Ürün Kullanımı",
+        "crm": "CRM & Destek",
+        "zaman": "Zaman Çizgisi"
+      },
+      "sections": {
+        "summary": "Müşteri özeti",
+        "health": "Sağlık & risk",
+        "tags": "Etiketler ve notlar",
+        "contact": "İletişim",
+        "people": "Kişiler",
+        "addresses": "Adresler",
+        "children": "Bağlı öğrenciler",
+        "subscription": "Abonelik bilgisi",
+        "transactions": "İşlem geçmişi",
+        "marketing": "Kaynak ve pazarlama",
+        "consents": "İzin durumu",
+        "usage": "Öğrenci kullanım özeti",
+        "tickets": "Destek talepleri",
+        "feed": "Ekip akışı",
+        "timeline": "Olay zaman çizgisi"
+      },
+      "fields": {
+        "customerNo": "Müşteri No",
+        "email": "E-posta",
+        "phone": "Telefon",
+        "lifecycle": "Yaşam döngüsü",
+        "plan": "Plan",
+        "mrr": "Aylık tekrarlayan gelir (MRR)",
+        "totalRevenue": "Toplam gelir",
+        "children": "Bağlı öğrenci",
+        "lastActivity": "Son aktivite",
+        "createdAt": "Kayıt tarihi",
+        "churnRisk": "Kaybetme riski",
+        "nps": "NPS",
+        "notes": "Notlar",
+        "preferredChannel": "Tercih edilen kanal",
+        "marketingConsent": "Pazarlama izni",
+        "firstPurchase": "İlk satın alma",
+        "utmSource": "UTM kaynak",
+        "utmMedium": "UTM ortam",
+        "utmCampaign": "UTM kampanya",
+        "planName": "Plan adı",
+        "status": "Durum",
+        "startedAt": "Başlangıç",
+        "expiresAt": "Bitiş"
+      },
+      "consent": {
+        "granted": "İzinli",
+        "denied": "İzin yok"
+      },
+      "empty": {
+        "tags": "Etiket yok.",
+        "people": "Kişi kaydı yok.",
+        "addresses": "Adres kaydı yok.",
+        "children": "Bağlı öğrenci yok.",
+        "subscription": "Abonelik kaydı yok.",
+        "transactions": "İşlem kaydı yok.",
+        "consents": "İzin kaydı yok.",
+        "tickets": "Destek talebi yok.",
+        "feed": "Ekip akışında kayıt yok.",
+        "events": "Olay kaydı yok."
+      }
+    },
+    "crmGorevler": {
+      "title": "CRM Görevleri",
+      "loading": "Yükleniyor...",
+      "empty": "Görev bulunamadı.",
+      "retry": "Tekrar dene",
+      "search": "Ara",
+      "searchPlaceholder": "Görev başlığı",
+      "allStatus": "Tüm durumlar",
+      "allPriority": "Tüm öncelikler",
+      "newTask": "Yeni Görev",
+      "types": { "call": "Arama", "email": "E-posta", "meeting": "Toplantı", "follow_up": "Takip", "demo": "Demo", "proposal": "Teklif", "other": "Diğer" },
+      "statuses": { "open": "Açık", "in_progress": "Devam ediyor", "done": "Tamamlandı", "cancelled": "İptal", "deferred": "Ertelendi" },
+      "priorities": { "low": "Düşük", "normal": "Normal", "high": "Yüksek", "urgent": "Acil" },
+      "cols": { "taskNo": "No", "title": "Başlık", "type": "Tür", "status": "Durum", "priority": "Öncelik", "dueAt": "Bitiş", "assignee": "Atanan", "customer": "Müşteri / Lead" },
+      "form": { "title": "Yeni Görev", "fieldTitle": "Başlık", "type": "Tür", "status": "Durum", "priority": "Öncelik", "dueAt": "Bitiş Tarihi", "householdId": "Müşteri ID (opsiyonel)", "leadId": "Lead ID (opsiyonel)", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç", "errTitle": "Başlık zorunlu (en fazla 200 karakter).", "errDue": "Bitiş tarihi zorunlu.", "errUuid": "Müşteri ve lead ID'leri geçerli bir UUID olmalı." },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
+    },
+    "ekipAkisi": {
+      "title": "Ekip Akışı",
+      "loading": "Yükleniyor...",
+      "empty": "Kayıt bulunamadı.",
+      "retry": "Tekrar dene",
+      "allTypes": "Tüm türler",
+      "filterType": "Tür",
+      "author": "Yazar",
+      "newNote": "Yeni Not",
+      "types": { "note": "Not", "call": "Arama", "email": "E-posta", "meeting": "Toplantı", "support": "Destek", "task": "Görev", "system": "Sistem" },
+      "form": { "title": "Yeni Akış Notu", "body": "İçerik", "type": "Tür", "householdId": "Müşteri ID (opsiyonel)", "leadId": "Lead ID (opsiyonel)", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç", "errBody": "İçerik zorunlu (en fazla 4000 karakter).", "errTarget": "Müşteri ID veya lead ID'den en az birini girin.", "errUuid": "ID'ler geçerli bir UUID olmalı." },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
+    },
     "odemeler": {
       "title": "Ödemeler ve Planlar",
       "plans": {
@@ -279,6 +474,56 @@
         "saving": "Kaydediliyor...",
         "cancel": "Vazgeç"
       }
+    },
+    "satisHatti": {
+      "title": "Satış Hattı",
+      "loading": "Yükleniyor...",
+      "empty": "Lead bulunamadı.",
+      "retry": "Tekrar dene",
+      "search": "Ara",
+      "searchPlaceholder": "Başlık, kişi adı veya e-posta",
+      "stage": "Aşama",
+      "allStages": "Tüm aşamalar",
+      "newLead": "Yeni Lead",
+      "stages": {
+        "new": "Yeni",
+        "contacted": "İletişimde",
+        "qualified": "Nitelikli",
+        "trial": "Deneme",
+        "decision": "Karar",
+        "won": "Kazanıldı",
+        "lost": "Kaybedildi"
+      },
+      "cols": {
+        "leadNo": "Lead No",
+        "titleContact": "Başlık / Kişi",
+        "stage": "Aşama",
+        "value": "Tahmini Değer",
+        "prob": "Olasılık",
+        "owner": "Sorumlu",
+        "followUp": "Son Takip",
+        "customer": "Müşteri"
+      },
+      "form": {
+        "title": "Yeni Lead",
+        "fieldTitle": "Başlık",
+        "contactName": "Kişi Adı",
+        "contactEmail": "Kişi E-posta",
+        "stage": "Aşama",
+        "source": "Kaynak",
+        "value": "Tahmini Değer (TL)",
+        "prob": "Olasılık (%)",
+        "save": "Kaydet",
+        "saving": "Kaydediliyor...",
+        "cancel": "Vazgeç"
+      },
+      "stageModal": {
+        "title": "Aşamayı Değiştir",
+        "save": "Kaydet",
+        "saving": "Kaydediliyor...",
+        "cancel": "Vazgeç"
+      },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
     }
   }
 }

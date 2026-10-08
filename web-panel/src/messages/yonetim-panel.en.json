@@ -17,6 +17,8 @@
         "overview": "Overview",
         "members": "Members & families",
         "leads": "Parent leads",
+        "musteri360": "Customer 360°",
+        "potansiyelAdaylar": "Prospects",
         "classes": "Classes",
         "questions": "Question bank",
         "notifications": "Notifications",
@@ -25,6 +27,7 @@
         "campaigns": "Campaigns",
         "journeys": "Automations",
         "forms": "Forms & surveys",
+        "satisHatti": "Sales Pipeline",
         "payments": "Payments",
         "plans": "Plans",
         "analytics": "Analytics",
@@ -36,6 +39,9 @@
         "leagues": "League tiers",
         "badges": "Badges",
         "quests": "Quests",
+        "crmGorevler": "CRM Tasks",
+        "ekipAkisi": "Team Feed",
+        "destekMasasi": "Support Desk",
         "settings": "App settings"
       },
       "pageDesc": {
@@ -46,7 +52,13 @@
         "notifications": "Send in-app notifications to parents and students.",
         "coupons": "Create and activate coupons and campaign codes.",
         "payments": "One place for payment records, statuses and refunds.",
-        "plans": "Membership plans and prices."
+        "plans": "Membership plans and prices.",
+        "musteri360": "Customer 360° — All customer data in one screen",
+        "potansiyelAdaylar": "Prospects — Top-of-funnel prospect management and scoring",
+        "crmGorevler": "CRM tasks — calls, emails, meetings",
+        "ekipAkisi": "Team feed — notes and activity history",
+        "satisHatti": "Sales pipeline — Lead and opportunity management",
+        "destekMasasi": "Support desk — customer support tickets"
       },
       "command": {
         "open": "Search everywhere...",
@@ -231,6 +243,189 @@
         "close": "Close"
       }
     },
+    "destekMasasi": {
+      "title": "Support Desk",
+      "loading": "Loading...",
+      "empty": "No support tickets found.",
+      "retry": "Try again",
+      "allStatus": "All statuses",
+      "allPriority": "All priorities",
+      "allCategories": "All categories",
+      "newTicket": "New Ticket",
+      "statuses": { "new": "New", "open": "Open", "waiting": "Waiting", "resolved": "Resolved" },
+      "priorities": { "low": "Low", "normal": "Normal", "high": "High", "critical": "Critical" },
+      "categories": { "billing": "Billing", "technical": "Technical", "account": "Account", "content": "Content", "subscription": "Subscription", "other": "Other" },
+      "cols": { "ticketNo": "Ticket No", "subject": "Subject", "category": "Category", "status": "Status", "priority": "Priority", "assignee": "Assignee", "created": "Created", "customer": "Customer Link" },
+      "customerLink": "Customer 360°",
+      "form": { "title": "New Support Ticket", "subject": "Subject", "category": "Category", "status": "Status", "priority": "Priority", "householdId": "Customer ID", "errSubject": "Subject must be 1-200 characters.", "errHousehold": "Enter a valid customer ID.", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
+      "statusModal": { "title": "Change Status", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
+      "pager": { "prev": "Previous", "next": "Next" }
+    },
+    "musteri360": {
+      "title": "Customer 360°",
+      "loading": "Loading...",
+      "noRecords": "No records found.",
+      "notFound": "Customer record not found.",
+      "retry": "Try again",
+      "back": "Back to Customer 360°",
+      "search": "Search",
+      "searchPlaceholder": "Name, email, phone or customer no",
+      "filters": {
+        "lifecycle": "Lifecycle",
+        "allLifecycle": "All stages",
+        "plan": "Plan",
+        "allPlans": "All plans"
+      },
+      "stages": {
+        "visitor": "Visitor",
+        "lead": "Lead",
+        "registered": "Registered",
+        "trial": "Trial",
+        "activated": "Activated",
+        "engaged": "Engaged",
+        "paid": "Paid",
+        "at_risk": "At risk",
+        "churned": "Churned",
+        "winback": "Win back"
+      },
+      "plans": {
+        "free": "Free",
+        "trial": "Trial",
+        "premium": "Premium",
+        "family": "Family"
+      },
+      "cols": {
+        "customerNo": "Customer No",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "lifecycle": "Lifecycle",
+        "plan": "Plan",
+        "mrr": "MRR",
+        "health": "Health Score",
+        "lastActivity": "Last Activity",
+        "role": "Role",
+        "grade": "Grade",
+        "xp": "XP",
+        "level": "Level",
+        "streak": "Streak",
+        "activeDays": "Active days",
+        "lastActive": "Last active",
+        "type": "Type",
+        "amount": "Amount",
+        "status": "Status",
+        "date": "Date",
+        "description": "Description",
+        "subject": "Subject",
+        "priority": "Priority"
+      },
+      "pager": {
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "health": {
+        "label": "Health score (0-100)"
+      },
+      "tabs": {
+        "genel": "Overview",
+        "kimlik": "Identity & Contact",
+        "hane": "Household & Students",
+        "abonelik": "Subscription",
+        "islem": "Transactions & Payments",
+        "pazarlama": "Marketing & Consent",
+        "kullanim": "Product Usage",
+        "crm": "CRM & Support",
+        "zaman": "Timeline"
+      },
+      "sections": {
+        "summary": "Customer summary",
+        "health": "Health & risk",
+        "tags": "Tags and notes",
+        "contact": "Contact",
+        "people": "People",
+        "addresses": "Addresses",
+        "children": "Linked students",
+        "subscription": "Subscription details",
+        "transactions": "Transaction history",
+        "marketing": "Source and marketing",
+        "consents": "Consent status",
+        "usage": "Student usage summary",
+        "tickets": "Support tickets",
+        "feed": "Team feed",
+        "timeline": "Event timeline"
+      },
+      "fields": {
+        "customerNo": "Customer No",
+        "email": "Email",
+        "phone": "Phone",
+        "lifecycle": "Lifecycle",
+        "plan": "Plan",
+        "mrr": "Monthly recurring revenue (MRR)",
+        "totalRevenue": "Total revenue",
+        "children": "Linked students",
+        "lastActivity": "Last activity",
+        "createdAt": "Created at",
+        "churnRisk": "Churn risk",
+        "nps": "NPS",
+        "notes": "Notes",
+        "preferredChannel": "Preferred channel",
+        "marketingConsent": "Marketing consent",
+        "firstPurchase": "First purchase",
+        "utmSource": "UTM source",
+        "utmMedium": "UTM medium",
+        "utmCampaign": "UTM campaign",
+        "planName": "Plan name",
+        "status": "Status",
+        "startedAt": "Started",
+        "expiresAt": "Expires"
+      },
+      "consent": {
+        "granted": "Granted",
+        "denied": "Denied"
+      },
+      "empty": {
+        "tags": "No tags.",
+        "people": "No people records.",
+        "addresses": "No address records.",
+        "children": "No linked students.",
+        "subscription": "No subscription record.",
+        "transactions": "No transaction records.",
+        "consents": "No consent records.",
+        "tickets": "No support tickets.",
+        "feed": "No team feed entries.",
+        "events": "No event records."
+      }
+    },
+    "crmGorevler": {
+      "title": "CRM Tasks",
+      "loading": "Loading...",
+      "empty": "No tasks found.",
+      "retry": "Try again",
+      "search": "Search",
+      "searchPlaceholder": "Task title",
+      "allStatus": "All statuses",
+      "allPriority": "All priorities",
+      "newTask": "New Task",
+      "types": { "call": "Call", "email": "Email", "meeting": "Meeting", "follow_up": "Follow-up", "demo": "Demo", "proposal": "Proposal", "other": "Other" },
+      "statuses": { "open": "Open", "in_progress": "In progress", "done": "Done", "cancelled": "Cancelled", "deferred": "Deferred" },
+      "priorities": { "low": "Low", "normal": "Normal", "high": "High", "urgent": "Urgent" },
+      "cols": { "taskNo": "No", "title": "Title", "type": "Type", "status": "Status", "priority": "Priority", "dueAt": "Due", "assignee": "Assignee", "customer": "Customer / Lead" },
+      "form": { "title": "New Task", "fieldTitle": "Title", "type": "Type", "status": "Status", "priority": "Priority", "dueAt": "Due date", "householdId": "Customer ID (optional)", "leadId": "Lead ID (optional)", "save": "Save", "saving": "Saving...", "cancel": "Cancel", "errTitle": "Title is required (max 200 characters).", "errDue": "Due date is required.", "errUuid": "Customer and lead IDs must be valid UUIDs." },
+      "pager": { "prev": "Previous", "next": "Next" }
+    },
+    "ekipAkisi": {
+      "title": "Team Feed",
+      "loading": "Loading...",
+      "empty": "No entries found.",
+      "retry": "Try again",
+      "allTypes": "All types",
+      "filterType": "Type",
+      "author": "Author",
+      "newNote": "New Note",
+      "types": { "note": "Note", "call": "Call", "email": "Email", "meeting": "Meeting", "support": "Support", "task": "Task", "system": "System" },
+      "form": { "title": "New Feed Note", "body": "Content", "type": "Type", "householdId": "Customer ID (optional)", "leadId": "Lead ID (optional)", "save": "Save", "saving": "Saving...", "cancel": "Cancel", "errBody": "Content is required (max 4000 characters).", "errTarget": "Enter at least a customer ID or a lead ID.", "errUuid": "IDs must be valid UUIDs." },
+      "pager": { "prev": "Previous", "next": "Next" }
+    },
     "odemeler": {
       "title": "Payments and Plans",
       "plans": {
@@ -279,6 +474,56 @@
         "saving": "Saving...",
         "cancel": "Cancel"
       }
+    },
+    "satisHatti": {
+      "title": "Sales Pipeline",
+      "loading": "Loading...",
+      "empty": "No leads found.",
+      "retry": "Try again",
+      "search": "Search",
+      "searchPlaceholder": "Title, contact name or email",
+      "stage": "Stage",
+      "allStages": "All stages",
+      "newLead": "New Lead",
+      "stages": {
+        "new": "New",
+        "contacted": "Contacted",
+        "qualified": "Qualified",
+        "trial": "Trial",
+        "decision": "Decision",
+        "won": "Won",
+        "lost": "Lost"
+      },
+      "cols": {
+        "leadNo": "Lead No",
+        "titleContact": "Title / Contact",
+        "stage": "Stage",
+        "value": "Estimated Value",
+        "prob": "Probability",
+        "owner": "Owner",
+        "followUp": "Last Follow-up",
+        "customer": "Customer"
+      },
+      "form": {
+        "title": "New Lead",
+        "fieldTitle": "Title",
+        "contactName": "Contact Name",
+        "contactEmail": "Contact Email",
+        "stage": "Stage",
+        "source": "Source",
+        "value": "Estimated Value (TRY)",
+        "prob": "Probability (%)",
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel"
+      },
+      "stageModal": {
+        "title": "Change Stage",
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel"
+      },
+      "pager": { "prev": "Previous", "next": "Next" }
     }
   }
 }
