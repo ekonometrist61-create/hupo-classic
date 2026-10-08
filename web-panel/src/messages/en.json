@@ -22,6 +22,27 @@
     "none": "None",
     "empty": "No records found."
   },
+  "signin": {
+    "title": "Sign in",
+    "subtitle": "Continue with your parent or administrator account.",
+    "email": "Email",
+    "emailPlaceholder": "name@example.com",
+    "password": "Password",
+    "passwordPlaceholder": "Your password",
+    "showPassword": "Show password",
+    "hidePassword": "Hide password",
+    "submit": "Sign in",
+    "submitting": "Signing in…",
+    "errorInvalid": "Email or password is incorrect. Check your details and try again.",
+    "noAccount": "Don't have an account?",
+    "signupLink": "Create a parent account",
+    "brandTitle": "Follow your child's progress in one place",
+    "brandBody": "With your parent account, see your child's short question practice and the topics that need another look.",
+    "brandPoint1": "Short, regular question practice",
+    "brandPoint2": "Progress by topic",
+    "brandPoint3": "Topics that need review",
+    "brandCaption": "Keep learning with Hupo."
+  },
   "welcome": {
     "brand": "Hupo",
     "title": "Welcome!",

@@ -22,6 +22,27 @@
     "filter": "Filtrele",
     "seeAll": "Tümünü Gör"
   },
+  "signin": {
+    "title": "Giriş yap",
+    "subtitle": "Veli veya yönetici hesabınla devam et.",
+    "email": "E-posta",
+    "emailPlaceholder": "ornek@eposta.com",
+    "password": "Parola",
+    "passwordPlaceholder": "Parolanız",
+    "showPassword": "Parolayı göster",
+    "hidePassword": "Parolayı gizle",
+    "submit": "Giriş yap",
+    "submitting": "Giriş yapılıyor…",
+    "errorInvalid": "E-posta veya parola hatalı. Bilgileri kontrol edip yeniden dene.",
+    "noAccount": "Hesabın yok mu?",
+    "signupLink": "Veli hesabı oluştur",
+    "brandTitle": "Çocuğunun ilerlemesini tek yerden izle",
+    "brandBody": "Veli hesabınızla çocuğunuzun kısa soru çalışmalarını ve tekrar etmesi gereken konuları görün.",
+    "brandPoint1": "Kısa ve düzenli soru çalışmaları",
+    "brandPoint2": "Konu bazında ilerleme",
+    "brandPoint3": "Tekrar gereken konular",
+    "brandCaption": "Hupo ile öğrenmeye devam et."
+  },
   "welcome": {
     "brand": "Hupo",
     "title": "Hoş geldin!",
