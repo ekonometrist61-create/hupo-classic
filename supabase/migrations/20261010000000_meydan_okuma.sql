@@ -9,8 +9,8 @@
 create table if not exists public.meydan_okumalar (
   id              uuid primary key default gen_random_uuid(),
   kod             text unique not null,
-  davet_eden      uuid not null references public.student_stats(id) on delete cascade,
-  davet_edilen    uuid          references public.student_stats(id) on delete cascade,
+  davet_eden      uuid not null references public.student_stats(student_id) on delete cascade,
+  davet_edilen    uuid          references public.student_stats(student_id) on delete cascade,
   sorular         jsonb not null default '[]',
   sure_dakika     int  not null default 5,
   durum           text not null default 'bekliyor'
@@ -21,7 +21,7 @@ create table if not exists public.meydan_okumalar (
 create table if not exists public.meydan_okuma_cevaplar (
   id               uuid primary key default gen_random_uuid(),
   meydan_okuma_id  uuid not null references public.meydan_okumalar(id) on delete cascade,
-  student_id       uuid not null references public.student_stats(id) on delete cascade,
+  student_id       uuid not null references public.student_stats(student_id) on delete cascade,
   cevaplar         jsonb not null default '{}',
   dogru_sayisi     int  not null default 0,
   yanlis_sayisi    int  not null default 0,
@@ -86,7 +86,7 @@ begin
     raise exception 'Oturum bulunamadı';
   end if;
 
-  select sinif into v_sinif from public.student_stats where id = v_uid;
+  select sinif into v_sinif from public.profiles where id = v_uid;
 
   -- Benzersiz kod üret (en fazla 5 deneme)
   for i in 1..5 loop
