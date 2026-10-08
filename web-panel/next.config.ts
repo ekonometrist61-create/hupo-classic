@@ -52,9 +52,9 @@ const securityHeaders = [
 
 const nextConfig: NextConfig = {
   // Windows'ta node_modules taraması çok yavaş olduğu için dışarıda bırakılır.
-  outputFileTracingExcludes: {
-    "*": ["node_modules/**"],
-  },
+  ...(process.platform === "win32"
+    ? { outputFileTracingExcludes: { "*": ["node_modules/**"] } }
+    : {}),
   // Turbopack için SVG → React component dönüşümü
   turbopack: {
     rules: {
