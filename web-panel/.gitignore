@@ -51,3 +51,4 @@ dev.log.err
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+.env*
