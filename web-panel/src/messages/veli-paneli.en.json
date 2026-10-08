@@ -67,8 +67,40 @@
       "due": "due for review",
       "empty": "No topics need review. Great job!"
     },
+    "achievements": {
+      "title": "Badges",
+      "desc": "Badges the student has earned and is working towards",
+      "earnedCount": "{kazanildi} of {toplam} badges earned",
+      "earned": "Earned",
+      "locked": "Locked",
+      "earnedOn": "Earned on {tarih}",
+      "progressCount": "{ilerleme} / {esik}",
+      "progressSubject": "{ilerleme}% success (goal {esik}%) · {deneme} / {min} questions",
+      "empty": "No badge definitions yet."
+    },
+    "membership": {
+      "desc": "Your parent account's subscription and payment history."
+    },
+    "subjectsPage": {
+      "pick": "Choose a subject",
+      "empty": "No questions solved yet. Subject success will appear here once your child starts solving questions.",
+      "topicsTitle": "Topics to review",
+      "topicsDesc": "Topics answered incorrectly or due for review in {ders}",
+      "topicsEmpty": "No topics in this subject need review.",
+      "topicsNote": "This page shows a subject-level summary. A full topic-by-topic progress report will come in a later update."
+    },
+    "reviewPage": {
+      "desc": "Questions whose last answer was wrong and topics due for review.",
+      "topicCount": "Topics",
+      "totalWrong": "Last answer wrong",
+      "totalDue": "Due for review",
+      "listDesc": "Topics answered incorrectly most often",
+      "empty": "No topics need review right now. This list updates as your child solves new questions.",
+      "limitNote": "The 10 topics that most need review are shown."
+    },
     "consent": {
       "title": "Use of Children's Data",
+      "gate": "The student's study data is shown after parental consent is given. You can give consent in the card below.",
       "notice": "Parental consent is required before we can collect your child's study data.",
       "desc": "The data is processed for educational purposes only, is never shared with third parties, and consent can be withdrawn at any time.",
       "give": "Give consent",

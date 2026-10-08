@@ -67,8 +67,40 @@
       "due": "tekrar edilmeli",
       "empty": "Tekrar edilecek konu bulunmuyor. Harika iş!"
     },
+    "achievements": {
+      "title": "Rozetler",
+      "desc": "Öğrencinin kazandığı ve ilerlediği rozetler",
+      "earnedCount": "{toplam} rozetten {kazanildi} tanesi kazanıldı",
+      "earned": "Kazanıldı",
+      "locked": "Kilitli",
+      "earnedOn": "{tarih} tarihinde kazanıldı",
+      "progressCount": "{ilerleme} / {esik}",
+      "progressSubject": "%{ilerleme} başarı (hedef %{esik}) · {deneme} / {min} soru",
+      "empty": "Henüz rozet tanımı bulunmuyor."
+    },
+    "membership": {
+      "desc": "Veli hesabınızın aboneliği ve ödeme geçmişi."
+    },
+    "subjectsPage": {
+      "pick": "Ders seçin",
+      "empty": "Henüz çözülmüş soru yok. Çocuğunuz soru çözmeye başladığında derslerdeki başarı burada görünecek.",
+      "topicsTitle": "Tekrar gereken konular",
+      "topicsDesc": "{ders} dersinde yanlış cevaplanan ya da tekrar zamanı gelen konular",
+      "topicsEmpty": "Bu derste tekrar gerektiren konu yok.",
+      "topicsNote": "Bu sayfa ders düzeyinde özet gösterir. Konu bazında tam ilerleme raporu sonraki güncellemede gelecek."
+    },
+    "reviewPage": {
+      "desc": "Son cevabı yanlış olan sorular ve tekrar zamanı gelen konular.",
+      "topicCount": "Konu",
+      "totalWrong": "Son cevabı yanlış soru",
+      "totalDue": "Tekrar zamanı gelen",
+      "listDesc": "En çok yanlış yapılan konular",
+      "empty": "Şu an tekrar gereken konu yok. Çocuğunuz yeni sorular çözdükçe bu liste güncellenir.",
+      "limitNote": "En çok tekrar gereken 10 konu gösterilir."
+    },
     "consent": {
       "title": "Çocuk Verilerinin Kullanımı",
+      "gate": "Öğrencinin çalışma verileri, veli onayı verildikten sonra görünür. Onayı aşağıdaki karttan verebilirsiniz.",
       "notice": "Çocuğunuzun çalışma verilerini toplamamız için veli onayı gerekiyor.",
       "desc": "Veriler yalnızca eğitsel amaçla işlenir, üçüncü taraflarla paylaşılmaz ve istediğiniz an geri çekilebilir.",
       "give": "Onay ver",

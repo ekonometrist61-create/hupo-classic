@@ -39,14 +39,14 @@ const VELI_NAV: VeliNavGroup[] = [
     items: [
       { key: "overview", icon: <GridIcon />, path: "/veli-paneli" },
       { key: "learning", icon: <BoltIcon /> },
-      { key: "subjects", icon: <TableIcon /> },
+      { key: "subjects", icon: <TableIcon />, path: "/veli-paneli/dersler" },
     ],
   },
   {
     key: "performance",
     items: [
       { key: "questions", icon: <PieChartIcon /> },
-      { key: "review", icon: <TaskIcon /> },
+      { key: "review", icon: <TaskIcon />, path: "/veli-paneli/tekrar" },
       { key: "exams", icon: <DocsIcon /> },
     ],
   },
@@ -54,7 +54,7 @@ const VELI_NAV: VeliNavGroup[] = [
     key: "motivation",
     items: [
       { key: "goals", icon: <ShootingStarIcon /> },
-      { key: "achievements", icon: <BoxIcon /> },
+      { key: "achievements", icon: <BoxIcon />, path: "/veli-paneli/basarilar" },
       { key: "activity", icon: <BoltIcon /> },
     ],
   },
@@ -63,7 +63,7 @@ const VELI_NAV: VeliNavGroup[] = [
     items: [
       { key: "notifications", icon: <MailIcon /> },
       { key: "children", icon: <GroupIcon /> },
-      { key: "membership", icon: <UserCircleIcon /> },
+      { key: "membership", icon: <UserCircleIcon />, path: "/veli-paneli/uyelik" },
     ],
   },
 ];
