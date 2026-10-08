@@ -45,6 +45,9 @@ dev.log.err
 # vercel
 .vercel
 
+# netlify
+.netlify/
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
