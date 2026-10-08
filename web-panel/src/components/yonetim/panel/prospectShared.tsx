@@ -137,7 +137,7 @@ export function prospectToForm(p: ProspectDetay["prospect"]): ProspectFormValues
     email: p.email ?? "",
     phone: p.phone ?? "",
     kind: p.kind,
-    source_channel: p.source_channel ?? "",
+    source_channel: p.source_type ?? "",
     source_detail: p.source_detail ?? "",
     fit_score: String(p.fit_score),
     intent_score: String(p.intent_score),

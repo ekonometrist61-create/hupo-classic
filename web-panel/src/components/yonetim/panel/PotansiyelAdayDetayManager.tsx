@@ -160,7 +160,7 @@ export default function PotansiyelAdayDetayManager({ prospectId }: { prospectId:
               <dd className="text-gray-800 dark:text-white/90">{p.phone ?? "-"}</dd>
               <dt className="text-gray-500 dark:text-gray-400">Kaynak</dt>
               <dd className="text-gray-800 dark:text-white/90">
-                {p.source_channel ?? "-"}
+                {p.source_type ?? "-"}
                 {p.source_detail ? ` · ${p.source_detail}` : ""}
               </dd>
               <dt className="text-gray-500 dark:text-gray-400">UTM</dt>

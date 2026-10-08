@@ -180,7 +180,7 @@ export default function PotansiyelAdaylarManager() {
                     <td className={tdClass}>
                       <span className={`text-base font-semibold ${scoreTextClass(r.total_score)}`}>{r.total_score}</span>
                     </td>
-                    <td className={tdClass}>{r.source_channel ?? "-"}</td>
+                    <td className={tdClass}>{r.source_type ?? "-"}</td>
                     <td className={`${tdClass} whitespace-nowrap`}>
                       {r.created_at ? formatDate(new Date(r.created_at)) : "-"}
                     </td>

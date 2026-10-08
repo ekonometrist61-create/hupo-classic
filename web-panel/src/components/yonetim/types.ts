@@ -265,7 +265,7 @@ export interface GrowthProspect {
   kind: string;
   /** new, enriched, scored, qualified, nurturing, converted, disqualified, suppressed */
   status: string;
-  source_channel: string | null;
+  source_type: string | null;
   source_detail: string | null;
   total_score: number;
   fit_score: number;
