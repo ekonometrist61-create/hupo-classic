@@ -31,6 +31,8 @@
         "payments": "Payments",
         "plans": "Plans",
         "analytics": "Analytics",
+        "growthAnalitik": "Growth Analytics",
+        "aiOneriler": "AI Recommendations",
         "access": "Team & permissions",
         "channels": "Channel settings",
         "parentPanel": "Parent panel",
@@ -42,6 +44,7 @@
         "crmGorevler": "CRM Tasks",
         "ekipAkisi": "Team Feed",
         "destekMasasi": "Support Desk",
+        "mesajSablonlari": "Message templates",
         "settings": "App settings"
       },
       "pageDesc": {
@@ -58,7 +61,11 @@
         "crmGorevler": "CRM tasks — calls, emails, meetings",
         "ekipAkisi": "Team feed — notes and activity history",
         "satisHatti": "Sales pipeline — Lead and opportunity management",
-        "destekMasasi": "Support desk — customer support tickets"
+        "destekMasasi": "Support desk — customer support tickets",
+        "growthAnalitik": "Growth analytics — conversion funnel and segment metrics",
+        "aiOneriler": "AI recommendations — next best action",
+        "journey-otomasyonlari": "Journey automations — customer journeys",
+        "mesajSablonlari": "Message templates — channel-based content"
       },
       "command": {
         "open": "Search everywhere...",
@@ -242,6 +249,38 @@
         "consentAt": "Consent time",
         "close": "Close"
       }
+    },
+    "journeyOtomasyonlari": {
+      "title": "Journey Automations",
+      "loading": "Loading...",
+      "empty": "No journeys found.",
+      "retry": "Try again",
+      "filterStatus": "Status",
+      "allStatus": "All statuses",
+      "newJourney": "New Journey",
+      "statuses": { "draft": "Draft", "active": "Active", "paused": "Paused" },
+      "cols": { "name": "Name", "status": "Status", "trigger": "Trigger", "segment": "Segment", "enrolled": "Enrolled", "created": "Created" },
+      "segmentLinked": "Segment linked",
+      "activate": "Activate",
+      "pause": "Pause",
+      "form": { "title": "New Journey", "name": "Name", "trigger": "Trigger", "status": "Status", "errName": "Name is required (max 120 characters).", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
+      "pager": { "prev": "Previous", "next": "Next" }
+    },
+    "mesajSablonlari": {
+      "title": "Message Templates",
+      "loading": "Loading...",
+      "empty": "No templates found.",
+      "retry": "Try again",
+      "newTemplate": "New Template",
+      "edit": "Edit",
+      "allChannels": "All channels",
+      "allStatus": "All statuses",
+      "filters": { "channel": "Channel", "status": "Status" },
+      "channels": { "email": "Email", "sms": "SMS", "push": "Push", "in_app": "In-app", "whatsapp": "WhatsApp" },
+      "statuses": { "draft": "Draft", "active": "Active", "archived": "Archived" },
+      "cols": { "name": "Name", "channel": "Channel", "subject": "Subject", "status": "Status", "created": "Created" },
+      "form": { "titleNew": "New Template", "titleEdit": "Edit template", "name": "Name", "channel": "Channel", "subject": "Subject", "body": "Content", "bodyHint": "Use {{name}} to insert a variable.", "status": "Status", "errName": "Template name is required (max 120 characters).", "errBody": "Content is required.", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
+      "pager": { "prev": "Previous", "next": "Next" }
     },
     "destekMasasi": {
       "title": "Support Desk",
@@ -524,6 +563,82 @@
         "cancel": "Cancel"
       },
       "pager": { "prev": "Previous", "next": "Next" }
+    },
+    "growthAnalitik": {
+      "title": "Growth Analytics",
+      "loading": "Loading...",
+      "empty": "No data found.",
+      "retry": "Try again",
+      "periodLabel": "Period",
+      "periodDays": "{count} days",
+      "kpi": {
+        "totalHouseholds": "Total Customers",
+        "activeHouseholds": "Active Customers",
+        "prospectConversion": "Prospect Conversion",
+        "openLeads": "Open Leads",
+        "openTickets": "Open Support Tickets",
+        "recentEvents": "Events, Last {count} Days",
+        "messages": "Messages Sent"
+      },
+      "kpiHint": {
+        "activeShare": "{pct}% of total customers",
+        "converted": "{converted} of {total} prospects converted",
+        "messages": "Logged in the last {count} days"
+      },
+      "sections": {
+        "lifecycle": "Lifecycle distribution",
+        "lifecycleDesc": "By household count",
+        "sources": "Prospect sources",
+        "sourcesDesc": "Prospect count by source channel"
+      },
+      "cols": {
+        "source": "Source",
+        "count": "Count"
+      },
+      "lifecycle": {
+        "visitor": "Visitor",
+        "lead": "Lead",
+        "registered": "Registered",
+        "trial": "Trial",
+        "activated": "Activated",
+        "engaged": "Engaged",
+        "paid": "Paid",
+        "at_risk": "At risk",
+        "churned": "Churned",
+        "winback": "Win back"
+      }
+    },
+    "aiOneriler": {
+      "title": "AI Recommendations",
+      "loading": "Loading...",
+      "empty": "No recommendations found.",
+      "retry": "Try again",
+      "readOnlyNote": "Recommendations are view-only. Accept or reject is recorded as feedback only and does not trigger any action.",
+      "cols": {
+        "type": "Type",
+        "title": "Title",
+        "description": "Description",
+        "score": "Score",
+        "status": "Status",
+        "expires": "Valid until",
+        "customer": "Customer",
+        "actions": "Action"
+      },
+      "status": {
+        "accepted": "Accepted",
+        "pending": "Pending",
+        "rejected": "Rejected",
+        "expired": "Expired"
+      },
+      "actions": {
+        "accept": "Accept",
+        "reject": "Reject"
+      },
+      "customerLink": "Customer 360°",
+      "pager": {
+        "prev": "Previous",
+        "next": "Next"
+      }
     }
   }
 }

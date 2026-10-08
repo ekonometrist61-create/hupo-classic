@@ -563,3 +563,92 @@ export interface GrowthLeadList {
   rows: GrowthLead[];
   total: number;
 }
+
+// ---------------------------------------------------------------------
+// Journey otomasyonları ve mesaj şablonları (Growth pazarlama motoru)
+// ---------------------------------------------------------------------
+
+/** admin_journey_listele() satır şekli (growth_journeys; segment_id ve enrolled_count RPC'de alias'tır). */
+export interface GrowthJourney {
+  id: string;
+  name: string;
+  status: string; // draft, active, paused
+  trigger_type: string | null;
+  segment_id: string | null;
+  enrolled_count: number;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface GrowthJourneyList {
+  rows: GrowthJourney[];
+  total: number;
+}
+
+/** admin_template_listele() satır şekli (growth_templates). */
+export interface GrowthTemplate {
+  id: string;
+  name: string;
+  channel: string; // email, sms, push, in_app, whatsapp
+  subject: string | null;
+  body: string;
+  variables: string[];
+  status: string; // draft, active, archived
+  created_at: string;
+  updated_at: string;
+}
+
+export interface GrowthTemplateList {
+  rows: GrowthTemplate[];
+  total: number;
+}
+
+// ---------------------------------------------------------------------
+// Growth analitik ve AI öneriler (salt okunur)
+// ---------------------------------------------------------------------
+
+/** admin_growth_ozet(p_gun) dönüşü. */
+export interface GrowthOzet {
+  total_households: number;
+  active_households: number;
+  total_prospects: number;
+  converted_prospects: number;
+  open_leads: number;
+  open_tickets: number;
+  recent_events: number;
+  message_log_count: number;
+}
+
+/** admin_lifecycle_dagilim() satırı. */
+export interface GrowthLifecycleDagilim {
+  lifecycle: string;
+  count: number;
+}
+
+/** admin_prospect_kaynaklar() satırı. */
+export interface GrowthProspectKaynak {
+  source_channel: string;
+  count: number;
+}
+
+/** admin_ai_oneri_listele() satır şekli.
+ *  Not: growth_ai_recommendations'ta score / expires_at kolonu yok (RPC null döner);
+ *  accepted, status alanından türetilir. status, bekliyor ile süresi dolmuşu ayırmak için eklendi. */
+export interface GrowthAiOneri {
+  id: string;
+  household_id: string | null;
+  recommendation_type: string;
+  title: string;
+  description: string | null;
+  score: number | null;
+  accepted: boolean | null;
+  /** pending, approved, rejected, executed, expired */
+  status: string;
+  expires_at: string | null;
+  created_at: string;
+}
+
+export interface GrowthAiOneriList {
+  rows: GrowthAiOneri[];
+  total: number;
+}

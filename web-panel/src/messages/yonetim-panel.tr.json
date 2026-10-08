@@ -31,6 +31,8 @@
         "payments": "Ödemeler",
         "plans": "Planlar",
         "analytics": "Analitik",
+        "growthAnalitik": "Growth Analitik",
+        "aiOneriler": "AI Öneriler",
         "access": "Ekip & yetkiler",
         "channels": "Kanal ayarları",
         "parentPanel": "Veli paneli",
@@ -42,6 +44,7 @@
         "crmGorevler": "CRM Görevleri",
         "ekipAkisi": "Ekip Akışı",
         "destekMasasi": "Destek Masası",
+        "mesajSablonlari": "Mesaj Şablonları",
         "settings": "Uygulama ayarları"
       },
       "pageDesc": {
@@ -58,7 +61,11 @@
         "crmGorevler": "CRM görevleri — aramalar, e-postalar, toplantılar",
         "ekipAkisi": "Ekip akışı — notlar ve aktivite geçmişi",
         "satisHatti": "Satış hattı — Lead ve fırsat yönetimi",
-        "destekMasasi": "Destek masası — müşteri destek talepleri"
+        "destekMasasi": "Destek masası — müşteri destek talepleri",
+        "growthAnalitik": "Growth analitik — dönüşüm hunisi ve segment metrikleri",
+        "aiOneriler": "AI öneriler — bir sonraki en iyi aksiyon",
+        "journey-otomasyonlari": "Journey otomasyonları — müşteri yolculukları",
+        "mesajSablonlari": "Mesaj şablonları — kanal bazlı içerik"
       },
       "command": {
         "open": "Her yerde ara...",
@@ -242,6 +249,38 @@
         "consentAt": "İzin zamanı",
         "close": "Kapat"
       }
+    },
+    "journeyOtomasyonlari": {
+      "title": "Journey Otomasyonları",
+      "loading": "Yükleniyor...",
+      "empty": "Journey bulunamadı.",
+      "retry": "Tekrar dene",
+      "filterStatus": "Durum",
+      "allStatus": "Tüm durumlar",
+      "newJourney": "Yeni Journey",
+      "statuses": { "draft": "Taslak", "active": "Aktif", "paused": "Duraklatıldı" },
+      "cols": { "name": "Ad", "status": "Durum", "trigger": "Tetikleyici", "segment": "Segment", "enrolled": "Kayıtlı Sayısı", "created": "Oluşturma" },
+      "segmentLinked": "Segment bağlı",
+      "activate": "Etkinleştir",
+      "pause": "Duraklat",
+      "form": { "title": "Yeni Journey", "name": "Ad", "trigger": "Tetikleyici", "status": "Durum", "errName": "Ad zorunlu (en fazla 120 karakter).", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
+    },
+    "mesajSablonlari": {
+      "title": "Mesaj Şablonları",
+      "loading": "Yükleniyor...",
+      "empty": "Şablon bulunamadı.",
+      "retry": "Tekrar dene",
+      "newTemplate": "Yeni Şablon",
+      "edit": "Düzenle",
+      "allChannels": "Tüm kanallar",
+      "allStatus": "Tüm durumlar",
+      "filters": { "channel": "Kanal", "status": "Durum" },
+      "channels": { "email": "E-posta", "sms": "SMS", "push": "Push", "in_app": "Uygulama içi", "whatsapp": "WhatsApp" },
+      "statuses": { "draft": "Taslak", "active": "Aktif", "archived": "Arşiv" },
+      "cols": { "name": "Ad", "channel": "Kanal", "subject": "Konu", "status": "Durum", "created": "Oluşturma" },
+      "form": { "titleNew": "Yeni Şablon", "titleEdit": "Şablonu düzenle", "name": "Ad", "channel": "Kanal", "subject": "Konu", "body": "İçerik", "bodyHint": "Değişken eklemek için {{ad}} biçimini kullanın.", "status": "Durum", "errName": "Şablon adı zorunlu (en fazla 120 karakter).", "errBody": "İçerik zorunlu.", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
     },
     "destekMasasi": {
       "title": "Destek Masası",
@@ -524,6 +563,82 @@
         "cancel": "Vazgeç"
       },
       "pager": { "prev": "Önceki", "next": "Sonraki" }
+    },
+    "growthAnalitik": {
+      "title": "Growth Analitik",
+      "loading": "Yükleniyor...",
+      "empty": "Veri bulunamadı.",
+      "retry": "Tekrar dene",
+      "periodLabel": "Dönem",
+      "periodDays": "{count} gün",
+      "kpi": {
+        "totalHouseholds": "Toplam Müşteri",
+        "activeHouseholds": "Aktif Müşteri",
+        "prospectConversion": "Aday Dönüşümü",
+        "openLeads": "Açık Leadler",
+        "openTickets": "Açık Destek Talepleri",
+        "recentEvents": "Son {count} Gün Etkinlik",
+        "messages": "Mesaj Gönderim"
+      },
+      "kpiHint": {
+        "activeShare": "Toplam müşterinin {pct}%'i",
+        "converted": "{total} adaydan {converted} tanesi müşteri oldu",
+        "messages": "Son {count} gün içinde kayıtlı"
+      },
+      "sections": {
+        "lifecycle": "Yaşam döngüsü dağılımı",
+        "lifecycleDesc": "Hane sayısına göre",
+        "sources": "Aday kaynakları",
+        "sourcesDesc": "Kaynak kanalına göre potansiyel aday sayısı"
+      },
+      "cols": {
+        "source": "Kaynak",
+        "count": "Adet"
+      },
+      "lifecycle": {
+        "visitor": "Ziyaretçi",
+        "lead": "Aday",
+        "registered": "Kayıtlı",
+        "trial": "Deneme",
+        "activated": "Aktif",
+        "engaged": "Etkileşimde",
+        "paid": "Ücretli",
+        "at_risk": "Riskli",
+        "churned": "Ayrıldı",
+        "winback": "Geri kazanım"
+      }
+    },
+    "aiOneriler": {
+      "title": "AI Öneriler",
+      "loading": "Yükleniyor...",
+      "empty": "Öneri bulunamadı.",
+      "retry": "Tekrar dene",
+      "readOnlyNote": "Öneriler yalnızca görüntülenir. Kabul veya red yalnızca geri bildirim olarak kaydedilir; hiçbir aksiyonu otomatik çalıştırmaz.",
+      "cols": {
+        "type": "Tür",
+        "title": "Başlık",
+        "description": "Açıklama",
+        "score": "Skor",
+        "status": "Durum",
+        "expires": "Son geçerlilik",
+        "customer": "Müşteri",
+        "actions": "İşlem"
+      },
+      "status": {
+        "accepted": "Kabul edildi",
+        "pending": "Bekliyor",
+        "rejected": "Reddedildi",
+        "expired": "Süresi doldu"
+      },
+      "actions": {
+        "accept": "Kabul et",
+        "reject": "Reddet"
+      },
+      "customerLink": "Müşteri 360°",
+      "pager": {
+        "prev": "Önceki",
+        "next": "Sonraki"
+      }
     }
   }
 }
