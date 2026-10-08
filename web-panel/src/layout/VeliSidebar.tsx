@@ -1,9 +1,10 @@
 "use client";
 
-import { Link, usePathname } from "@/i18n/navigation";
+import { Link, usePathname, useRouter } from "@/i18n/navigation";
 import { useCurrentRole } from "@/hooks/useCurrentRole";
 import { DEMO_MODE } from "@/lib/demo-mode";
 import { cn } from "@/utils";
+import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
 import BrandMark from "@/components/common/BrandMark";
 import { useSidebar } from "../context/SidebarContext";
@@ -71,9 +72,15 @@ const VELI_NAV: VeliNavGroup[] = [
 const VeliSidebar: React.FC = () => {
   const { isExpanded, isMobileOpen, isHovered, setIsHovered } = useSidebar();
   const pathname = usePathname();
+  const router = useRouter();
   const t = useTranslations("veliPaneli");
   const fetchedRole = useCurrentRole();
   const role = DEMO_MODE ? "admin" : fetchedRole;
+
+  const cikisYap = async () => {
+    await createClient().auth.signOut();
+    router.replace("/signin");
+  };
 
   const wide = isExpanded || isHovered || isMobileOpen;
 
@@ -192,16 +199,27 @@ const VeliSidebar: React.FC = () => {
       </nav>
 
       {/* Admin kullanıcılar için yönetim paneline geri dön */}
-      {role === "admin" && wide && (
-        <div className="mt-3 border-t border-[#3b5369] pt-3">
+      <div className="mt-3 border-t border-[#3b5369] pt-3">
+        {role === "admin" && wide && (
           <Link
             href="/yonetim"
             className="flex items-center gap-2 rounded-lg px-3 py-2 text-[12px] text-[#b3c3d0] hover:bg-[#29475e] hover:text-white transition-colors"
           >
             <span>← {t("shell.backToAdmin")}</span>
           </Link>
-        </div>
-      )}
+        )}
+        <button
+          type="button"
+          onClick={cikisYap}
+          title={wide ? undefined : t("shell.signOut")}
+          className={cn(
+            "flex w-full items-center gap-2 rounded-lg px-3 py-2 text-[12px] text-[#b3c3d0] hover:bg-[#29475e] hover:text-white transition-colors",
+            !wide && "xl:justify-center",
+          )}
+        >
+          <span>{wide ? t("shell.signOut") : "⎋"}</span>
+        </button>
+      </div>
     </aside>
   );
 };
