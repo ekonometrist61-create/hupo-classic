@@ -30,7 +30,7 @@
   },
   "landing": {
     "brand": "Hupolingo",
-    "metaTitle": "Hupolingo — 4. sınıf proje okulu hazırlığı için kısa soru çalışmaları",
+    "metaTitle": "Hupolingo — 3–7. sınıf öğrencileri için kısa soru çalışmaları ve Proje Ortaokulu hazırlığı",
     "metaDescription": "Çocuğunuz kısa soru çalışmalarıyla pratik yapsın, siz hangi konuları tekrar etmesi gerektiğini görün. Örnek soruları hesap açmadan deneyin.",
     "skipToContent": "İçeriğe geç",
     "nav": {
@@ -45,13 +45,17 @@
       "signin": "Giriş yap",
       "cta": "Veli hesabı oluştur",
       "open": "Menüyü aç",
-      "close": "Menüyü kapat"
+      "close": "Menüyü kapat",
+      "characters": "Karakterler",
+      "parents": "Veliler",
+      "pricing": "Fiyatlar",
+      "freeTrial": "Ücretsiz Dene"
     },
     "hero": {
-      "badge": "4. sınıf · Proje okulu hazırlığı",
+      "badge": "3–7. Sınıf · Proje Ortaokulu Hazırlığı",
       "title": "Soru çözme alışkanlığını küçük görevlerle destekleyin",
       "subtitle": "Çocuğunuz Hupo ile kısa soru çalışmaları yapsın; siz ilerlediği ve tekrar etmesi gereken konuları görün.",
-      "ctaPrimary": "Örnek soruları dene",
+      "ctaPrimary": "Ücretsiz Dene",
       "ctaSecondary": "Veli hesabı oluştur",
       "note": "Örnek sorular için hesap gerekmez ve hiçbir bilgi kaydedilmez.",
       "pilot": "Hupo pilot sürümde. İçerik ve raporları geri bildirimlerle geliştiriyoruz.",
@@ -114,8 +118,8 @@
       "title": "Nasıl çalışır?",
       "steps": [
         {
-          "title": "Veli hesabı oluşturulur",
-          "desc": "Öğrenci hesabı veli hesabına bağlanır. Çocuğun çalışma verisi için onayı siz verirsiniz."
+          "title": "Hesap açılır",
+          "desc": "Öğrenci hesabı oluşturulur. Veli uygulamaya bağlanarak çocuğun ilerleyişini takip edebilir."
         },
         {
           "title": "Çocuk kısa çalışmalar yapar",
@@ -182,7 +186,7 @@
       "items": [
         {
           "q": "Hangi sınıflar için?",
-          "a": "İlk odağımız 4. sınıftan 5. sınıfa geçiş hazırlığı. Uygulamadaki sınıf ve ders kapsamı pilot sürüm boyunca genişliyor."
+          "a": "Şu anda 3–7. sınıf içerikleri yer alıyor; Proje Ortaokullarına hazırlık öncelikli odağımız. Uygulamadaki sınıf ve ders kapsamı pilot sürüm boyunca genişliyor."
         },
         {
           "q": "Örnek sorular için hesap gerekir mi?",
@@ -190,7 +194,7 @@
         },
         {
           "q": "Sorular gerçek okul sınavı soruları mı?",
-          "a": "Hayır. Sorular 4. sınıf kazanımlarına göre Hupo için hazırlanmış örneklerdir. Okulların resmî sınav soruları olarak sunulmaz."
+          "a": "Hayır. Sorular, ilgili sınıf kazanımlarına göre Hupo için hazırlanmış örneklerdir. Okulların resmî sınav soruları olarak sunulmaz."
         },
         {
           "q": "Çocuğum için hesabı nasıl oluştururum?",
@@ -215,21 +219,140 @@
       ]
     },
     "cta": {
-      "title": "Önce birkaç soruyla tanışın",
+      "title": "Hupo, çocuğunuzla tanışmaya hazır",
+      "subtitle": "Ücretsiz hesap oluştur ve öğrenme yolculuğunu bugün başlat.",
       "desc": "Beş örnek soru birkaç dakika sürer. Beğenirseniz veli hesabınızı oluşturabilirsiniz.",
-      "primary": "Örnek soruları dene",
+      "primary": "Ücretsiz Dene",
       "secondary": "Veli hesabı oluştur"
     },
+    "fontSize": {
+      "label": "Yazı Boyutu",
+      "normal": "A",
+      "medium": "A+",
+      "large": "A++"
+    },
+    "trustBadges": {
+      "items": [
+        "Kazanımları takip eder",
+        "Proje Ortaokulu Hazırlığı",
+        "Güvenli çocuk deneyimi",
+        "Veli paneli",
+        "Oyunlaştırılmış motivasyon",
+        "%100 Türkçe içerik"
+      ]
+    },
+    "characters": {
+      "eyebrow": "Karakter Evreni",
+      "title": "8 Dünya, 40 Karakter",
+      "desc": "Her doğru cevap seni yeni kahramanlara yaklaştırır. 8 farklı sınıfta toplam 40 karakter seni bekliyor. Öğren, koleksiyonunu tamamla, Hupo evreninde ilerle!",
+      "cta": "Koleksiyona Başla",
+      "lockedLabel": "Kilitli",
+      "classes": [
+        { "kod": "ozgur_ruhlar", "ad": "Özgür Ruhlar", "desc": "Meraklı, enerjik ve her zaman keşfetmeye hazır." },
+        { "kod": "firtina", "ad": "Fırtına", "desc": "Hızlı düşünen, çevik ve mücadeleci ruhlar." },
+        { "kod": "kasifler", "ad": "Kaşifler", "desc": "Bilgiyi keşfeden, cesur yolcular." },
+        { "kod": "bozkir", "ad": "Bozkır", "desc": "Güçlü, kararlı ve dayanıklı savaşçılar." },
+        { "kod": "zihin_ustalari", "ad": "Zihin Ustaları", "desc": "Zeki, stratejik ve disiplinli sevenler." },
+        { "kod": "muhafizlar", "ad": "Muhafızlar", "desc": "Koruyan, destekleyen ve cesur muhafızlar." },
+        { "kod": "ustalar", "ad": "Ustalar", "desc": "Bilge, deneyimli ve ilham veren karakterler." },
+        { "kod": "efsaneler", "ad": "Efsaneler", "desc": "Nadir görülen, efsanevi kahramanlar." }
+      ]
+    },
+    "whyParents": {
+      "title": "Neden Çocuklar ve Veliler Hupolingoyu Seviyor?",
+      "desc": "Çocuklar için eğlenceli, veliler için güvenilir — ikisi için de işe yarayan bir öğrenme deneyimi.",
+      "items": [
+        { "title": "Karakterler kazanmak motive eder", "desc": "Her doğru cevap yeni bir karaktere yaklaştırır. 40 kahramanı toplamak gerçek bir hedef verir." },
+        { "title": "Liglerde yarışmak heyecan katar", "desc": "Aynı ligteki arkadaşlarınla puanlar topla, sıralamada yüksel, özel ödüller kazan." },
+        { "title": "Ölçülebilir gelişim", "desc": "Detaylı raporlarla çocuğunuzun ilerlemesini ve hangi konularda desteğe ihtiyaç duyduğunu net görün." },
+        { "title": "Proje Ortaokulu Hazırlığı", "desc": "Konular ve kazanımlar takip edilir; Proje Ortaokullarına hazırlık sürecinde eksikleri kapatmak kolaylaşır." },
+        { "title": "Güvenli ve reklamsız ortam", "desc": "Öğrenci uygulamasında reklam varsayılan olarak kapalıdır; yalnızca öğrenmeye odaklı temiz bir deneyim." },
+        { "title": "Kısa çalışma, kalıcı alışkanlık", "desc": "Her çalışma en fazla 10 sorudan oluşur. Kısa ve düzenli pratik, uzun vadede fark yaratır." }
+      ]
+    },
+    "denemeExam": {
+      "eyebrow": "Deneme Sınavı",
+      "title": "Türkiye Geneli Deneme Sınavları",
+      "desc": "Aynı anda, tüm Türkiye'deki öğrencilerle birlikte sınava gir. Sıralamanı ve gelişimini gör, sınav gününe hazır ol.",
+      "countdown": {
+        "label": "Bir sonraki sınava kalan süre",
+        "days": "GÜN",
+        "hours": "SAAT",
+        "minutes": "DAKİKA",
+        "seconds": "SANİYE",
+        "started": "Sınav başladı!"
+      },
+      "steps": [
+        { "title": "Belirli gün ve saatte", "desc": "Tüm öğrenciler aynı anda sınava girer." },
+        { "title": "Sıralamayı ve gelişimini gör", "desc": "Sonuçlar anında açıklanır, gelişimini takip et." },
+        { "title": "Kayıt veli panelinden", "desc": "Veli, çocuğunu sisteme kaydeder ve süreci takip eder." }
+      ],
+      "badge": "Yaklaşan Sınav",
+      "cta": "Sınava Kaydol",
+      "note": "Sınav tarihleri önceden duyurulur. Kayıt için veli hesabı gerekmektedir."
+    },
+    "pricing": {
+      "title": "Planlar ve Fiyatlar",
+      "desc": "Çocuğunuz için en uygun planı seçin.",
+      "perMonth": "/ay",
+      "yearlyNote": "Yıllık planda %40 tasarruf",
+      "comingSoon": "Fiyatlar yakında açıklanacak",
+      "comingSoonDesc": "Plan detayları ve fiyatlar netleştiğinde burada ve veli hesabınızda gösterilecek.",
+      "free": {
+        "name": "Ücretsiz",
+        "priceLabel": "0 ₺",
+        "cta": "Ücretsiz Başla",
+        "features": ["Temel ders içerikleri", "Günde 1 tekrar turu", "Temel karakter koleksiyonu", "Temel gelişim takibi"],
+        "notIncluded": ["Veli paneli", "Ligler ve etkinlikler", "Deneme sınavları"]
+      },
+      "premium": {
+        "name": "Premium",
+        "badge": "En Çok Tercih Edilen",
+        "cta": "Premium'a Geç",
+        "features": ["Tüm derslere sınırsız erişim", "Kişiselleştirilmiş öğrenme planı", "Akıllı tekrar sistemi", "Tüm karakter koleksiyonu", "Ligler ve etkinlikler", "Detaylı gelişim takibi", "Veli paneli", "Deneme sınavları", "Reklamsız, güvenli ortam"]
+      },
+      "family": {
+        "name": "Aile Planı",
+        "cta": "Aile Planı Seç",
+        "features": ["Premium'daki tüm özellikler", "6 aile üyesine kadar erişim", "Her çocuk için ayrı profil", "Aile raporları", "Öncelikli müşteri desteği", "Özel aile etkinlikleri", "Daha ekonomik"]
+      },
+      "trustBadges": ["14 Gün İade Garantisi", "İstediğin Zaman İptal", "%100 Güvenli Ödeme", "Gizli Ücret Yok"]
+    },
+    "appScreens": {
+      "eyebrow": "Uygulama içinden",
+      "title": "Çocuğunuz uygulamada bunlarla karşılaşacak",
+      "desc": "Soru çözme ekranı, kazanılan karakterler ve günlük ilerleme — tasarım ön izlemesi.",
+      "items": [
+        { "title": "Ana Ekran", "desc": "Aktif karakter, günlük seri ve XP bir bakışta görünür." },
+        { "title": "Soru Ekranı", "desc": "Kısa sorular, adım adım çözüm ve anında geri bildirim." },
+        { "title": "Karakter Koleksiyonu", "desc": "Düzenli pratikle kazanılan 40 karakter, sınıflara ayrılmış." },
+        { "title": "Ay Ligi", "desc": "Arkadaşlarınla yarış, ligde yüksel, özel ödüller kazan." }
+      ]
+    },
     "footer": {
-      "tagline": "Küçük adımlar, düzenli pratik.",
+      "tagline": "Öğren. Güçlen. Zirveye çık.",
       "colProduct": "Hupo",
+      "colParents": "Veliler",
+      "colCompany": "Şirket",
       "colAccount": "Hesap",
       "demo": "Örnek sorular",
       "how": "Nasıl çalışır",
+      "characters": "Karakterler",
+      "denemeExam": "Deneme Sınavı",
+      "pricing": "Fiyatlar",
       "faq": "SSS",
       "signin": "Giriş yap",
       "signup": "Veli hesabı oluştur",
+      "parentPanel": "Veli Paneli",
+      "parentGuide": "Veli Rehberi",
+      "about": "Hakkımızda",
+      "blog": "Blog",
+      "contact": "İletişim",
+      "privacy": "Gizlilik Politikası",
+      "terms": "Kullanım Koşulları",
       "pilot": "Pilot sürüm",
+      "appStore": "App Store'dan İndir",
+      "googlePlay": "Google Play'den İndir",
       "copyright": "© 2026 Hupolingo"
     }
   },

@@ -30,7 +30,7 @@
   },
   "landing": {
     "brand": "Hupolingo",
-    "metaTitle": "Hupolingo — short practice sessions for 4th grade school-entry preparation",
+    "metaTitle": "Hupolingo — short practice sessions for grades 3–7 and Project Middle School prep",
     "metaDescription": "Your child practices with short question sessions, and you see which topics need another look. Try the sample questions without an account.",
     "skipToContent": "Skip to content",
     "nav": {
@@ -45,13 +45,17 @@
       "signin": "Sign in",
       "cta": "Create parent account",
       "open": "Open menu",
-      "close": "Close menu"
+      "close": "Close menu",
+      "characters": "Characters",
+      "parents": "Parents",
+      "pricing": "Pricing",
+      "freeTrial": "Try Free"
     },
     "hero": {
-      "badge": "4th grade · School-entry preparation",
+      "badge": "Grades 3–7 · Project Middle School Prep",
       "title": "Support the habit of practice with small daily tasks",
       "subtitle": "Your child practices with Hupo in short question sessions; you see their progress and which topics need another look.",
-      "ctaPrimary": "Try the sample questions",
+      "ctaPrimary": "Try Free",
       "ctaSecondary": "Create parent account",
       "note": "No account needed for the sample questions, and nothing is saved.",
       "pilot": "Hupo is in pilot. We are improving content and reports with your feedback.",
@@ -115,8 +119,8 @@
       "title": "How it works",
       "steps": [
         {
-          "title": "A parent account is created",
-          "desc": "The student account is linked to the parent account. You give consent for your child's study data."
+          "title": "Create an account",
+          "desc": "A student account is created. Parents can connect to the app to track their child's progress."
         },
         {
           "title": "The child does short sessions",
@@ -191,7 +195,7 @@
         },
         {
           "q": "Are these real school exam questions?",
-          "a": "No. The questions are examples written for Hupo based on 4th grade learning outcomes. They are not presented as official school exam questions."
+          "a": "No. The questions are examples written for Hupo based on the relevant grade's learning outcomes. They are not presented as official school exam questions."
         },
         {
           "q": "How do I set up an account for my child?",
@@ -216,21 +220,140 @@
       ]
     },
     "cta": {
-      "title": "Meet Hupo with a few questions first",
+      "title": "Hupo is ready to meet your child",
+      "subtitle": "Create a free account and start the learning journey today.",
       "desc": "Five sample questions take a few minutes. If you like it, you can create your parent account.",
-      "primary": "Try the sample questions",
+      "primary": "Try Free",
       "secondary": "Create parent account"
     },
+    "fontSize": {
+      "label": "Text Size",
+      "normal": "A",
+      "medium": "A+",
+      "large": "A++"
+    },
+    "trustBadges": {
+      "items": [
+        "Tracks learning standards",
+        "Prep for Project Middle Schools",
+        "Safe child experience",
+        "Parent dashboard",
+        "Gamified motivation",
+        "100% Turkish content"
+      ]
+    },
+    "characters": {
+      "eyebrow": "Character Universe",
+      "title": "8 Worlds, 40 Characters",
+      "desc": "Every correct answer brings you closer to new heroes. 40 characters across 8 different classes are waiting for you. Learn, complete your collection, progress in the Hupo universe!",
+      "cta": "Start Collection",
+      "lockedLabel": "Locked",
+      "classes": [
+        { "kod": "ozgur_ruhlar", "ad": "Free Spirits", "desc": "Curious, energetic and always ready to explore." },
+        { "kod": "firtina", "ad": "Storm", "desc": "Quick thinkers, agile and competitive spirits." },
+        { "kod": "kasifler", "ad": "Explorers", "desc": "Seekers of knowledge, brave wanderers." },
+        { "kod": "bozkir", "ad": "Steppe", "desc": "Strong, determined and resilient warriors." },
+        { "kod": "zihin_ustalari", "ad": "Mind Masters", "desc": "Intelligent, strategic and disciplined lovers." },
+        { "kod": "muhafizlar", "ad": "Guardians", "desc": "Protective, supportive and brave guardians." },
+        { "kod": "ustalar", "ad": "Masters", "desc": "Wise, experienced and inspiring characters." },
+        { "kod": "efsaneler", "ad": "Legends", "desc": "Rare, legendary heroes." }
+      ]
+    },
+    "whyParents": {
+      "title": "Why Kids and Parents Love Hupolingo?",
+      "desc": "Fun for kids, trustworthy for parents — a learning experience that works for both.",
+      "items": [
+        { "title": "Earning characters is motivating", "desc": "Every correct answer gets kids closer to a new character. Collecting all 40 heroes is a real goal." },
+        { "title": "Leagues add excitement", "desc": "Compete with friends in the same league, climb the rankings and win special rewards." },
+        { "title": "Measurable progress", "desc": "See your child's progress clearly with detailed reports and identify topics that need support." },
+        { "title": "Project Middle School prep", "desc": "Learning standards are tracked; closing gaps in preparation for Project Middle Schools becomes easier." },
+        { "title": "Safe and ad-free", "desc": "Ads are off by default in the student app — a clean, education-focused experience." },
+        { "title": "Short sessions, lasting habits", "desc": "Each session is at most 10 questions. Short, regular practice makes a difference over time." }
+      ]
+    },
+    "denemeExam": {
+      "eyebrow": "Practice Exam",
+      "title": "Turkey-Wide Practice Exams",
+      "desc": "Take the exam at the same time as all students across Turkey. See your ranking and progress, get ready for exam day.",
+      "countdown": {
+        "label": "Time until next exam",
+        "days": "DAYS",
+        "hours": "HOURS",
+        "minutes": "MINUTES",
+        "seconds": "SECONDS",
+        "started": "Exam started!"
+      },
+      "steps": [
+        { "title": "At a specific time", "desc": "All students take the exam at the same time." },
+        { "title": "See your ranking and progress", "desc": "Results are announced instantly, track your progress." },
+        { "title": "Register from parent dashboard", "desc": "Parent registers the child in the system and monitors the process." }
+      ],
+      "badge": "Upcoming Exam",
+      "cta": "Register for Exam",
+      "note": "Exam dates are announced in advance. Parent account required to register."
+    },
+    "pricing": {
+      "title": "Plans and Pricing",
+      "desc": "Choose the best plan for your child.",
+      "perMonth": "/month",
+      "yearlyNote": "Save 40% on yearly plan",
+      "comingSoon": "Pricing coming soon",
+      "comingSoonDesc": "When plan details and pricing are finalized, they will be shown here and in your parent account.",
+      "free": {
+        "name": "Free",
+        "priceLabel": "0 ₺",
+        "cta": "Start Free",
+        "features": ["Basic course content", "1 review session per day", "Basic character collection", "Basic progress tracking"],
+        "notIncluded": ["Parent dashboard", "Leagues and events", "Practice exams"]
+      },
+      "premium": {
+        "name": "Premium",
+        "badge": "Most Popular",
+        "cta": "Upgrade to Premium",
+        "features": ["Unlimited access to all courses", "Personalized learning plan", "Smart review system", "Complete character collection", "Leagues and events", "Detailed progress tracking", "Parent dashboard", "Practice exams", "Ad-free, secure environment"]
+      },
+      "family": {
+        "name": "Family Plan",
+        "cta": "Choose Family Plan",
+        "features": ["All Premium features", "Access for up to 6 family members", "Separate profile for each child", "Family reports", "Priority customer support", "Special family events", "More economical"]
+      },
+      "trustBadges": ["14-Day Money Back Guarantee", "Cancel Anytime", "100% Secure Payment", "No Hidden Fees"]
+    },
+    "appScreens": {
+      "eyebrow": "Inside the app",
+      "title": "What your child will see in the app",
+      "desc": "The question screen, earned characters and daily progress — design preview.",
+      "items": [
+        { "title": "Home Screen", "desc": "Active character, daily streak and XP at a glance." },
+        { "title": "Question Screen", "desc": "Short questions, step-by-step solutions and instant feedback." },
+        { "title": "Character Collection", "desc": "40 characters earned through regular practice, grouped by class." },
+        { "title": "Monthly League", "desc": "Race with friends, climb the league, win special rewards." }
+      ]
+    },
     "footer": {
-      "tagline": "Small steps, regular practice.",
+      "tagline": "Learn. Grow. Reach the top.",
       "colProduct": "Hupo",
+      "colParents": "Parents",
+      "colCompany": "Company",
       "colAccount": "Account",
       "demo": "Sample questions",
       "how": "How it works",
+      "characters": "Characters",
+      "denemeExam": "Practice Exam",
+      "pricing": "Pricing",
       "faq": "FAQ",
       "signin": "Sign in",
       "signup": "Create parent account",
+      "parentPanel": "Parent Dashboard",
+      "parentGuide": "Parent Guide",
+      "about": "About Us",
+      "blog": "Blog",
+      "contact": "Contact",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Service",
       "pilot": "Pilot version",
+      "appStore": "Download from App Store",
+      "googlePlay": "Get from Google Play",
       "copyright": "© 2026 Hupolingo"
     }
   },

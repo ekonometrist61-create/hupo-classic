@@ -9,9 +9,10 @@ import { IconChevronDown, IconClose, IconMenu } from "./Icons";
 const NAV_ITEMS = [
   { href: "#demo", key: "demo" },
   { href: "#app-screens", key: "appScreens" },
+  { href: "#characters", key: "characters" },
   { href: "#how-it-works", key: "how" },
-  { href: "#report", key: "report" },
-  { href: "#trust", key: "trust" },
+  { href: "#why-parents", key: "parents" },
+  { href: "#pricing", key: "pricing" },
   { href: "#faq", key: "faq" },
 ] as const;
 
@@ -59,9 +60,17 @@ export function MobileMenu() {
             ))}
             <Link
               href="/signin"
-              className="flex min-h-11 items-center rounded-lg px-3 text-base font-semibold text-brand-600 hover:bg-cream-dark dark:text-brand-300 dark:hover:bg-gray-800"
+              onClick={() => setOpen(false)}
+              className="flex min-h-11 items-center rounded-lg px-3 text-base font-semibold text-navy-muted hover:bg-cream-dark dark:text-gray-400 dark:hover:bg-gray-800"
             >
               {t("signin")}
+            </Link>
+            <Link
+              href="/demo"
+              onClick={() => setOpen(false)}
+              className="mt-2 flex min-h-12 items-center justify-center rounded-xl bg-brand-500 px-4 text-base font-extrabold text-white hover:bg-brand-600"
+            >
+              {t("freeTrial")}
             </Link>
           </nav>
         </div>
