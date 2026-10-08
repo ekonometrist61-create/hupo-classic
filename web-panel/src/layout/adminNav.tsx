@@ -49,6 +49,10 @@ export const NAV_GROUPS: NavGroup[] = [
     key: "content",
     items: [
       { key: "questions", icon: <DocsIcon />, path: "/yonetim/sorular", roles: ADMIN },
+      { key: "characters", icon: <ShootingStarIcon />, path: "/yonetim/karakterler", roles: ADMIN },
+      { key: "leagues", icon: <TableIcon />, path: "/yonetim/ligler", roles: ADMIN },
+      { key: "badges", icon: <TaskIcon />, path: "/yonetim/rozetler", roles: ADMIN },
+      { key: "quests", icon: <BoltIcon />, path: "/yonetim/gorevler", roles: ADMIN },
     ],
   },
   {
@@ -70,6 +74,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { key: "analytics", icon: <PieChartIcon />, path: "/yonetim/analitik", roles: ADMIN },
       { key: "access", icon: <LockIcon />, path: "/yonetim/ekip", roles: ADMIN },
       { key: "channels", icon: <PlugInIcon />, path: "/yonetim/kanal-ayarlari", roles: ADMIN },
+      { key: "settings", icon: <GridIcon />, path: "/yonetim/ayarlar", roles: ADMIN },
     ],
   },
   {

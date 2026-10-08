@@ -1,15 +1,67 @@
+// Statik veri yalnızca fallback olarak kullanılır (DB boşsa)
 import { CHARACTER_CLASSES } from "@/data/characters";
+import { createClient } from "@/utils/supabase/server";
 import { IconArrowRight } from "@/components/landing/Icons";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 
+// Renk haritası — character_definitions tablosunda renk kolonu yok
+const CLASS_COLORS: Record<string, string> = {
+  ozgur_ruhlar:   "#6CAF45",
+  firtina:        "#4EA9D9",
+  kasifler:       "#F59E42",
+  bozkir:         "#B07D4B",
+  zihin_ustalari: "#8B5CF6",
+  muhafizlar:     "#147D8A",
+  ustalar:        "#F5C842",
+  efsaneler:      "#6B7280",
+};
+
 const primaryBtn =
   "inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 py-3 text-base font-bold text-white shadow-sm transition-colors hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 motion-reduce:transition-none";
+
+type ClassGroup = {
+  kod: string;
+  color: string;
+  characters: { kod: string }[];
+};
 
 export async function CharacterUniverseSection() {
   const t = await getTranslations("landing");
   const classData = t.raw("characters.classes") as { kod: string; ad: string; desc: string }[];
+
+  // DB'den karakter listesini çek (herkes okuyabilir — RLS policy açık)
+  const supabase = await createClient();
+  const { data: dbRows } = await supabase
+    .from("character_definitions")
+    .select("kod, sinif, sinif_sira, karakter_sira")
+    .order("sinif_sira", { ascending: true })
+    .order("karakter_sira", { ascending: true });
+
+  // DB boşsa statik veriye düş
+  let classes: ClassGroup[];
+
+  if (!dbRows || dbRows.length === 0) {
+    classes = CHARACTER_CLASSES.map((cls) => ({
+      kod: cls.kod,
+      color: cls.color,
+      characters: cls.characters.map((c) => ({ kod: c.kod })),
+    }));
+  } else {
+    const map = new Map<string, ClassGroup>();
+    for (const row of dbRows) {
+      if (!map.has(row.sinif)) {
+        map.set(row.sinif, {
+          kod: row.sinif,
+          color: CLASS_COLORS[row.sinif] ?? "#6B7280",
+          characters: [],
+        });
+      }
+      map.get(row.sinif)!.characters.push({ kod: row.kod });
+    }
+    classes = Array.from(map.values());
+  }
 
   return (
     <section
@@ -32,9 +84,9 @@ export async function CharacterUniverseSection() {
 
         {/* Karakter ızgarası */}
         <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-8">
-          {CHARACTER_CLASSES.map((cls, classIdx) => {
-            const info = classData[classIdx];
-            const firstChar = cls.characters[0];
+          {classes.map((cls) => {
+            // Sınıf adını kod üzerinden bul (index bağımlılığından kaçın)
+            const info = classData.find((d) => d.kod === cls.kod);
 
             return (
               <div key={cls.kod} className="flex flex-col items-center">

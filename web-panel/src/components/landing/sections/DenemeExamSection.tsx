@@ -1,11 +1,28 @@
 import { CountdownTimer } from "@/components/landing/CountdownTimer";
 import { IconArrowRight, IconCalendar, IconCheckCircle } from "@/components/landing/Icons";
+import { createClient } from "@/utils/supabase/server";
 import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
-// Sonraki sınav tarihi — sabit bir örnek; gerçek veri Supabase'den geldiğinde güncellenebilir.
-// 2026-11-15 09:00 Turkey time (UTC+3)
-const NEXT_EXAM_DATE = new Date("2026-11-15T06:00:00.000Z");
+const FALLBACK_EXAM_DATE = new Date("2026-11-15T06:00:00.000Z");
+
+async function fetchExamDate(): Promise<Date> {
+  try {
+    const supabase = await createClient();
+    const { data, error } = await supabase
+      .from("app_settings")
+      .select("value")
+      .eq("key", "deneme_sinavi_tarihi")
+      .single();
+    if (error || !data) return FALLBACK_EXAM_DATE;
+    const parsed = JSON.parse(data.value);
+    const date = new Date(parsed);
+    if (isNaN(date.getTime())) return FALLBACK_EXAM_DATE;
+    return date;
+  } catch {
+    return FALLBACK_EXAM_DATE;
+  }
+}
 
 export async function DenemeExamSection() {
   const t = await getTranslations("landing.denemeExam");
@@ -17,6 +34,8 @@ export async function DenemeExamSection() {
     seconds: string;
     started: string;
   };
+
+  const examDate = await fetchExamDate();
 
   return (
     <section
@@ -40,7 +59,7 @@ export async function DenemeExamSection() {
 
         {/* Geri sayım */}
         <div className="mt-10 flex justify-center">
-          <CountdownTimer targetDate={NEXT_EXAM_DATE} labels={labels} />
+          <CountdownTimer targetDate={examDate} labels={labels} />
         </div>
 
         {/* 3 adım */}
