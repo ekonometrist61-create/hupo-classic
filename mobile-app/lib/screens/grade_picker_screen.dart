@@ -30,6 +30,8 @@ class _GradePickerScreenState extends ConsumerState<GradePickerScreen> {
       final repo = ref.read(quizRepositoryProvider);
       await repo.setMyGrade(_selectedGrade!);
       ref.invalidate(profileProvider);
+      ref.invalidate(subjectsProvider);
+      ref.invalidate(statsProvider);
 
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(

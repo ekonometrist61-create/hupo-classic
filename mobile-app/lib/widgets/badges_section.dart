@@ -61,7 +61,8 @@ class BadgesSection extends StatelessWidget {
               crossAxisCount: 3,
               shrinkWrap: true,
               physics: const NeverScrollableScrollPhysics(),
-              childAspectRatio: 0.72,
+              childAspectRatio: 0.82,
+              crossAxisSpacing: 4,
               children: [
                 for (final badge in badges)
                   BadgeTile(
