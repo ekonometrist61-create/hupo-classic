@@ -1,3 +1,4 @@
+import CookiePreferencesButton from "@/components/analytics/CookiePreferencesButton";
 import { legalDraftNotice, type LegalSection } from "@/lib/legal/content";
 import Link from "next/link";
 
@@ -42,6 +43,10 @@ export default function LegalDocument({
               </div>
             </section>
           ))}
+        </div>
+
+        <div className="mt-10 border-t border-navy/10 pt-6">
+          <CookiePreferencesButton />
         </div>
       </article>
     </main>

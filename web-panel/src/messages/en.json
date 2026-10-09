@@ -115,6 +115,14 @@
     "errorEmail": "Enter a valid email address.",
     "errorGeneric": "The request could not be completed. Please try again shortly."
   },
+  "cookie": {
+    "title": "Cookies",
+    "text": "Hupolingo uses essential cookies to keep your session signed in. To improve the product, we measure anonymous page views on public pages only with your consent. You can change your choice at any time.",
+    "accept": "Accept",
+    "reject": "Decline",
+    "policy": "Privacy Policy",
+    "openPreferences": "Change my cookie preferences"
+  },
   "welcome": {
     "brand": "Hupo",
     "title": "Welcome!",

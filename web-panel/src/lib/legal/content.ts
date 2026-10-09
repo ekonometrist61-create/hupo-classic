@@ -64,6 +64,15 @@ export const privacySections: LegalSection[] = [
     ],
   },
   {
+    title: "Çerezler ve ölçüm",
+    paragraphs: [
+      "Oturumunun açık kalması için zorunlu çerezler kullanırız. Bunlar olmadan giriş yapılamaz; onaya bağlı değildir.",
+      "Ürünü geliştirmek için analitik ölçüm yalnızca onayınla çalışır. Onay vermezsen ölçüm betiği hiç yüklenmez.",
+      "Ölçüm, yalnızca herkese açık sayfalardaki sayfa görüntülerini ve genel cihaz ve tarayıcı bilgisini kaydeder. Oturum kaydı yapılmaz, kişisel profil oluşturulmaz; veli, öğrenci ve yönetim sayfaları ölçüme dahil edilmez.",
+      "Ölçüm hizmeti PostHog tarafından, Avrupa Birliği sunucularında sağlanır. Onayını bu sayfadaki 'Çerez tercihlerimi değiştir' düğmesiyle istediğin zaman geri alabilirsin.",
+    ],
+  },
+  {
     title: "Yurt dışına aktarım",
     paragraphs: [
       "Verilerin barındırıldığı sunucu bölgesi: [SUNUCU BÖLGESİ]. Hizmet sağlayıcıların yurt dışında bulunan altyapısı varsa bu aktarım, KVKK'nın öngördüğü koşullara uygun şekilde yürütülür.",

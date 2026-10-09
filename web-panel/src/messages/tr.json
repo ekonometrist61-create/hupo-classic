@@ -115,6 +115,14 @@
     "errorEmail": "Geçerli bir e-posta adresi yaz.",
     "errorGeneric": "İşlem tamamlanamadı. Birazdan tekrar dene."
   },
+  "cookie": {
+    "title": "Çerezler",
+    "text": "Hupolingo, oturumunun açık kalması için zorunlu çerezler kullanır. Ürünü geliştirmek için yalnızca onayınla, herkese açık sayfalarda anonim sayfa görüntüsü ölçümü yaparız. Tercihini istediğin zaman değiştirebilirsin.",
+    "accept": "Kabul et",
+    "reject": "Reddet",
+    "policy": "Gizlilik Politikası",
+    "openPreferences": "Çerez tercihlerimi değiştir"
+  },
   "welcome": {
     "brand": "Hupo",
     "title": "Hoş geldin!",
