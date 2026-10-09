@@ -24,12 +24,14 @@ type Reklamlar = {
 };
 type PremiumGating = { aktif: boolean; ucretsiz_gunluk_soru: number };
 type DesteklenenSiniflar = { siniflar: number[] };
+type Deneme = { gun: number; gunluk_soru: number };
 
 type AppSettings = {
   bakim_modu?: BakimModu;
   min_surum?: MinSurum;
   reklamlar?: Reklamlar;
   premium_gating?: PremiumGating;
+  deneme?: Deneme;
   desteklenen_siniflar?: DesteklenenSiniflar;
   deneme_sinavi_tarihi?: string;
 };
@@ -106,6 +108,8 @@ export default function AyarlarPage() {
   const [premiumGating, setPremiumGating] = useState(false);
   const [desteklenenSiniflar, setDesteklenenSiniflar] = useState("3,4,5,6,7");
   const [denemeSinaviTarihi, setDenemeSinaviTarihi] = useState("");
+  const [denemeGun, setDenemeGun] = useState("14");
+  const [denemeGunlukSoru, setDenemeGunlukSoru] = useState("20");
 
   const [saving, setSaving] = useState(false);
   const [feedback, setFeedback] = useState<{
@@ -124,6 +128,10 @@ export default function AyarlarPage() {
       setDesteklenenSiniflar(s.desteklenen_siniflar.siniflar.join(","));
     if (s.deneme_sinavi_tarihi)
       setDenemeSinaviTarihi(isoToTurkiyeInput(s.deneme_sinavi_tarihi));
+    if (s.deneme) {
+      setDenemeGun(String(s.deneme.gun));
+      setDenemeGunlukSoru(String(s.deneme.gunluk_soru));
+    }
   }, [state.data]);
 
   const save = async () => {
@@ -137,6 +145,20 @@ export default function AyarlarPage() {
 
     if (siniflar.length === 0) {
       setFeedback({ kind: "error", msg: "Desteklenen sınıflar boş olamaz (ör. 3,4,5,6,7)." });
+      setSaving(false);
+      return;
+    }
+
+    // Deneme: gün 1-90, günlük soru 0-9999 tam sayı olmalı.
+    const gun = Number(denemeGun);
+    const gunluk = Number(denemeGunlukSoru);
+    if (!Number.isInteger(gun) || gun < 1 || gun > 90) {
+      setFeedback({ kind: "error", msg: "Deneme süresi 1-90 gün arasında tam sayı olmalı." });
+      setSaving(false);
+      return;
+    }
+    if (!Number.isInteger(gunluk) || gunluk < 0 || gunluk > 9999) {
+      setFeedback({ kind: "error", msg: "Deneme günlük soru kotası 0-9999 arasında tam sayı olmalı." });
       setSaving(false);
       return;
     }
@@ -188,6 +210,10 @@ export default function AyarlarPage() {
       adminCall("admin_set_setting", {
         p_key: "desteklenen_siniflar",
         p_value: { siniflar },
+      }),
+      adminCall("admin_set_setting", {
+        p_key: "deneme",
+        p_value: { gun, gunluk_soru: gunluk },
       }),
       ...(denemeIso
         ? [
@@ -297,6 +323,40 @@ export default function AyarlarPage() {
               value={desteklenenSiniflar}
               onChange={(e) => setDesteklenenSiniflar(e.target.value)}
               placeholder="3,4,5,6,7"
+            />
+          </div>
+
+          <div className={row}>
+            <div>
+              <p className="text-sm font-medium text-gray-800 dark:text-white/90">Deneme Süresi (gün)</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">
+                Denemeyi başlatırken varsayılan süre. Planlar ve fiyatlar Planlar ekranından yönetilir.
+              </p>
+            </div>
+            <input
+              type="number"
+              min={1}
+              max={90}
+              className={`${inputClass} w-28`}
+              value={denemeGun}
+              onChange={(e) => setDenemeGun(e.target.value)}
+            />
+          </div>
+
+          <div className={row}>
+            <div>
+              <p className="text-sm font-medium text-gray-800 dark:text-white/90">Deneme Günlük Soru Kotası</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">
+                Deneme sürerken ve kota dolduğunda, kullanıcının her gün çözebileceği soru sayısı
+              </p>
+            </div>
+            <input
+              type="number"
+              min={0}
+              max={9999}
+              className={`${inputClass} w-28`}
+              value={denemeGunlukSoru}
+              onChange={(e) => setDenemeGunlukSoru(e.target.value)}
             />
           </div>
 
