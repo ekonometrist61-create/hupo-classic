@@ -31,7 +31,35 @@ type AppSettings = {
   reklamlar?: Reklamlar;
   premium_gating?: PremiumGating;
   desteklenen_siniflar?: DesteklenenSiniflar;
+  deneme_sinavi_tarihi?: string;
 };
+
+// Türkiye sabit UTC+3'tür (yaz saati uygulaması yok); tarih girişi bu saate göre yapılır.
+const TURKIYE_SAAT_DILIMI = "Europe/Istanbul";
+const TURKIYE_UTC_OFSETI = "+03:00";
+
+// ISO (UTC) → datetime-local değeri ("2026-11-15T09:00", Türkiye saatiyle)
+function isoToTurkiyeInput(iso: string): string {
+  const d = new Date(iso);
+  if (isNaN(d.getTime())) return "";
+  return new Intl.DateTimeFormat("sv-SE", {
+    timeZone: TURKIYE_SAAT_DILIMI,
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit",
+    hourCycle: "h23",
+  })
+    .format(d)
+    .replace(" ", "T");
+}
+
+// datetime-local değeri (Türkiye saatiyle) → ISO (UTC); geçersizse null
+function turkiyeInputToIso(local: string): string | null {
+  const d = new Date(`${local}:00${TURKIYE_UTC_OFSETI}`);
+  return isNaN(d.getTime()) ? null : d.toISOString();
+}
 
 function Toggle({
   id,
@@ -77,6 +105,7 @@ export default function AyarlarPage() {
   const [reklamlar, setReklamlar] = useState(false);
   const [premiumGating, setPremiumGating] = useState(false);
   const [desteklenenSiniflar, setDesteklenenSiniflar] = useState("3,4,5,6,7");
+  const [denemeSinaviTarihi, setDenemeSinaviTarihi] = useState("");
 
   const [saving, setSaving] = useState(false);
   const [feedback, setFeedback] = useState<{
@@ -93,6 +122,8 @@ export default function AyarlarPage() {
     if (s.premium_gating) setPremiumGating(s.premium_gating.aktif);
     if (s.desteklenen_siniflar)
       setDesteklenenSiniflar(s.desteklenen_siniflar.siniflar.join(","));
+    if (s.deneme_sinavi_tarihi)
+      setDenemeSinaviTarihi(isoToTurkiyeInput(s.deneme_sinavi_tarihi));
   }, [state.data]);
 
   const save = async () => {
@@ -106,6 +137,14 @@ export default function AyarlarPage() {
 
     if (siniflar.length === 0) {
       setFeedback({ kind: "error", msg: "Desteklenen sınıflar boş olamaz (ör. 3,4,5,6,7)." });
+      setSaving(false);
+      return;
+    }
+
+    // Tarih boşsa mevcut değer korunur; doluysa geçerli olmalı.
+    const denemeIso = denemeSinaviTarihi ? turkiyeInputToIso(denemeSinaviTarihi) : null;
+    if (denemeSinaviTarihi && !denemeIso) {
+      setFeedback({ kind: "error", msg: "Deneme sınavı tarihi geçerli değil." });
       setSaving(false);
       return;
     }
@@ -150,6 +189,14 @@ export default function AyarlarPage() {
         p_key: "desteklenen_siniflar",
         p_value: { siniflar },
       }),
+      ...(denemeIso
+        ? [
+            adminCall("admin_set_setting", {
+              p_key: "deneme_sinavi_tarihi",
+              p_value: denemeIso,
+            }),
+          ]
+        : []),
     ]);
 
     setSaving(false);
@@ -250,6 +297,21 @@ export default function AyarlarPage() {
               value={desteklenenSiniflar}
               onChange={(e) => setDesteklenenSiniflar(e.target.value)}
               placeholder="3,4,5,6,7"
+            />
+          </div>
+
+          <div className={row}>
+            <div>
+              <p className="text-sm font-medium text-gray-800 dark:text-white/90">Türkiye Geneli Deneme Tarihi</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">
+                Ana sayfadaki geri sayımın hedefi (Türkiye saati, UTC+3)
+              </p>
+            </div>
+            <input
+              type="datetime-local"
+              className={`${inputClass} w-56`}
+              value={denemeSinaviTarihi}
+              onChange={(e) => setDenemeSinaviTarihi(e.target.value)}
             />
           </div>
 

@@ -9,14 +9,10 @@ const FALLBACK_EXAM_DATE = new Date("2026-11-15T06:00:00.000Z");
 async function fetchExamDate(): Promise<Date> {
   try {
     const supabase = await createClient();
-    const { data, error } = await supabase
-      .from("app_settings")
-      .select("value")
-      .eq("key", "deneme_sinavi_tarihi")
-      .single();
+    // app_settings girişsiz okunamaz; yönetici panelinden ayarlanan tarih bu RPC ile gelir.
+    const { data, error } = await supabase.rpc("get_deneme_sinavi_tarihi");
     if (error || !data) return FALLBACK_EXAM_DATE;
-    const parsed = JSON.parse(data.value);
-    const date = new Date(parsed);
+    const date = new Date(data);
     if (isNaN(date.getTime())) return FALLBACK_EXAM_DATE;
     return date;
   } catch {
