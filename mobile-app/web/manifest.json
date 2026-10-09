@@ -1,12 +1,13 @@
 {
-    "name": "ogrenci_hazirlik",
-    "short_name": "ogrenci_hazirlik",
+    "name": "Hupolingo",
+    "short_name": "Hupolingo",
     "start_url": ".",
     "display": "standalone",
-    "background_color": "#0175C2",
-    "theme_color": "#0175C2",
-    "description": "A new Flutter project.",
-    "orientation": "portrait-primary",
+    "background_color": "#FFF9ED",
+    "theme_color": "#147D8A",
+    "description": "Hupolingo ile soru çöz, öğren, ilerle.",
+    "orientation": "any",
+    "lang": "tr",
     "prefer_related_applications": false,
     "icons": [
         {

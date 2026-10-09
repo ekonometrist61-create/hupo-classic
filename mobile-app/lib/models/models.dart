@@ -1,18 +1,29 @@
 // Uygulama genelinde kullanılan veri modelleri.
 
 class Profile {
-  const Profile({required this.id, required this.role, this.fullName});
+  const Profile({
+    required this.id,
+    required this.role,
+    this.fullName,
+    this.parentId,
+  });
 
   final String id;
   final String role; // 'veli' | 'ogrenci'
   final String? fullName;
 
+  /// Öğrencinin bağlı olduğu velinin id'si; bağlı değilse null.
+  final String? parentId;
+
   bool get isStudent => role == 'ogrenci';
+
+  bool get hasParent => parentId != null;
 
   factory Profile.fromMap(Map<String, dynamic> map) => Profile(
         id: map['id'] as String,
         role: map['role'] as String,
         fullName: map['full_name'] as String?,
+        parentId: map['parent_id'] as String?,
       );
 }
 

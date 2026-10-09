@@ -1,5 +1,4 @@
 import 'dart:async';
-import 'dart:developer' as dev;
 
 import 'package:audioplayers/audioplayers.dart' hide AudioEvent;
 import 'package:flutter/foundation.dart';
@@ -35,7 +34,12 @@ class AudioManager {
   /// Sık kullanılan sesleri önceden yükler (uygulama açılışında çağrılır).
   Future<void> preload() async {
     for (final event in AudioAssets.preloadEvents) {
-      await _ensurePlayer(event);
+      try {
+        await _ensurePlayer(event);
+      } catch (e) {
+        // Web'de tarayıcı ses oynatıcısını oluşturamazsa uygulama açılışı bozulmaz.
+        debugPrint('AudioManager: $event sesi önceden yüklenemedi - $e');
+      }
     }
   }
 
@@ -81,7 +85,9 @@ class AudioManager {
         });
       }
     } catch (e) {
-      dev.log('AudioManager: $event sesi çalınamadı – $e', name: 'audio');
+      // Web'de otomatik oynatma kullanıcı etkileşimi öncesinde engellenebilir;
+      // bu durumda sessizce devam edilir (kullanıcıya hata gösterilmez).
+      debugPrint('AudioManager: $event sesi çalınamadı – $e');
     }
   }
 

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 
 import '../../theme/app_theme.dart';
 import '../../utils/haptics.dart';
+import '../../utils/motion.dart';
+import 'hupo_focus.dart';
 
 /// Oyunlardaki gibi "kabartmalı" düğme: basınca aşağı çöker.
 class ChunkyButton extends StatefulWidget {
@@ -16,6 +18,7 @@ class ChunkyButton extends StatefulWidget {
     this.loading = false,
     this.expanded = true,
     this.height = 56,
+    this.onDarkSurface = false,
   });
 
   factory ChunkyButton.success({
@@ -73,6 +76,9 @@ class ChunkyButton extends StatefulWidget {
   final bool expanded;
   final double height;
 
+  /// Koyu (navy/hero) zeminde odak halkası beyaz olur.
+  final bool onDarkSurface;
+
   @override
   State<ChunkyButton> createState() => _ChunkyButtonState();
 }
@@ -115,40 +121,52 @@ class _ChunkyButtonState extends State<ChunkyButton> {
       ],
     );
 
+    void activate() {
+      AppHaptics.selection();
+      widget.onPressed!();
+    }
+
     return Semantics(
       button: true,
       enabled: _enabled,
       label: widget.label,
       child: ExcludeSemantics(
-        child: GestureDetector(
-          behavior: HitTestBehavior.opaque,
-          onTapDown: _enabled ? (_) => setState(() => _pressed = true) : null,
-          onTapCancel: () => setState(() => _pressed = false),
-          onTapUp: (_) => setState(() => _pressed = false),
-          onTap: _enabled
-              ? () {
-                  AppHaptics.selection();
-                  widget.onPressed!();
-                }
-              : null,
-          child: AnimatedPadding(
-            duration: const Duration(milliseconds: 70),
-            padding: EdgeInsets.only(
-              top: _pressed ? _depth : 0,
-              bottom: _pressed ? 0 : _depth,
-            ),
-            child: Container(
-              height: widget.height,
-              padding: const EdgeInsets.symmetric(horizontal: 24),
-              alignment: Alignment.center,
-              decoration: BoxDecoration(
-                color: color,
-                borderRadius: BorderRadius.circular(20),
-                boxShadow: _pressed
-                    ? null
-                    : [BoxShadow(color: edge, offset: const Offset(0, _depth))],
+        child: HupoFocus(
+          onActivate: _enabled ? activate : null,
+          borderRadius: 20,
+          onDarkSurface: widget.onDarkSurface,
+          builder: (context, hovered) => GestureDetector(
+            behavior: HitTestBehavior.opaque,
+            onTapDown: _enabled ? (_) => setState(() => _pressed = true) : null,
+            onTapCancel: () => setState(() => _pressed = false),
+            onTapUp: (_) => setState(() => _pressed = false),
+            onTap: _enabled ? activate : null,
+            child: AnimatedPadding(
+              duration: const Duration(milliseconds: 70),
+              padding: EdgeInsets.only(
+                top: _pressed ? _depth : 0,
+                bottom: _pressed ? 0 : _depth,
               ),
-              child: content,
+              // Fare üzerindeyken buton 2 px yukarı kalkar (dokunmatikte değişmez).
+              child: TweenAnimationBuilder<double>(
+                tween: Tween(end: hovered && !_pressed ? -2.0 : 0.0),
+                duration: motionMs(context, 120),
+                builder: (context, dy, child) =>
+                    Transform.translate(offset: Offset(0, dy), child: child),
+                child: Container(
+                  height: widget.height,
+                  padding: const EdgeInsets.symmetric(horizontal: 24),
+                  alignment: Alignment.center,
+                  decoration: BoxDecoration(
+                    color: color,
+                    borderRadius: BorderRadius.circular(20),
+                    boxShadow: _pressed
+                        ? null
+                        : [BoxShadow(color: edge, offset: const Offset(0, _depth))],
+                  ),
+                  child: content,
+                ),
+              ),
             ),
           ),
         ),

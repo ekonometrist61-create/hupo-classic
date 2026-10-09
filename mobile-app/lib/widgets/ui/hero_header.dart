@@ -1,16 +1,27 @@
 import 'package:flutter/material.dart';
 
 import '../../theme/app_theme.dart';
+import '../../utils/breakpoints.dart';
 
 /// Ekranların üstündeki menekşe degrade, alt köşeleri yuvarlak başlık alanı.
 class HeroHeader extends StatelessWidget {
-  const HeroHeader({super.key, required this.child, this.padding});
+  const HeroHeader({
+    super.key,
+    required this.child,
+    this.padding,
+    this.maxContentWidth,
+  });
 
   final Widget child;
   final EdgeInsetsGeometry? padding;
 
+  /// Geniş ekranda (>= 600) başlık içeriğinin üst genişliği; arka plan tam genişlik kalır.
+  /// Verilmezse tablet 720, masaüstü 1100. Telefonda etkisizdir.
+  final double? maxContentWidth;
+
   @override
   Widget build(BuildContext context) {
+    final icerik = SizedBox(width: double.infinity, child: child);
     return Container(
       width: double.infinity,
       decoration: const BoxDecoration(
@@ -34,7 +45,18 @@ class HeroHeader extends StatelessWidget {
             bottom: false,
             child: Padding(
               padding: padding ?? const EdgeInsets.fromLTRB(20, 8, 20, 28),
-              child: SizedBox(width: double.infinity, child: child),
+              child: isWide(context)
+                  ? Align(
+                      alignment: Alignment.topCenter,
+                      heightFactor: 1,
+                      child: ConstrainedBox(
+                        constraints: BoxConstraints(
+                          maxWidth: maxContentWidth ?? contentMaxWidth(context),
+                        ),
+                        child: icerik,
+                      ),
+                    )
+                  : icerik,
             ),
           ),
         ],

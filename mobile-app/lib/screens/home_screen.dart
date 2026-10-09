@@ -13,6 +13,7 @@ import '../widgets/notification_bell.dart';
 import '../widgets/ui/chunky_button.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/hero_header.dart';
+import '../widgets/ui/responsive_page.dart';
 import '../widgets/hupo/hupo.dart';
 import '../widgets/hupo/hupo_loading.dart';
 import '../widgets/shield_earned_banner.dart';
@@ -28,6 +29,8 @@ import 'quests_screen.dart';
 import 'review_screen.dart';
 import '../widgets/character/character_celebration_listener.dart';
 import '../widgets/daily_challenge_card.dart';
+
+const String _yenileIpucu = 'Yenile';
 
 class HomeScreen extends ConsumerWidget {
   const HomeScreen({super.key});
@@ -90,6 +93,14 @@ class HomeScreen extends ConsumerWidget {
     ref.invalidate(myCharactersProvider);
   }
 
+  /// Çekerek yenileme ve (fare kullananlar için) Yenile düğmesi aynı işi yapar.
+  static Future<void> _yenile(WidgetRef ref) async {
+    ref.invalidate(dailyGoalProvider);
+    ref.invalidate(statsProvider);
+    ref.invalidate(dueCountProvider);
+    ref.invalidate(subjectsProvider);
+  }
+
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final profile = ref.watch(profileProvider);
@@ -120,15 +131,139 @@ class HomeScreen extends ConsumerWidget {
             );
           }
 
+          // Üç bölüm: Bugünkü hedefin · Kaldığın yer · Bugünkü odakların.
+          final hedefBolumu = <Widget>[
+            const _SectionHeader('Bugünkü hedefin'),
+            const _StreakNudge(),
+            const DailyGoalCard(),
+            const SizedBox(height: 12),
+            DailyChallengeCard(
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const DailyChallengeScreen()),
+              ),
+            ),
+            const SizedBox(height: 12),
+            _GorevMini(
+              onOpen: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const QuestsScreen()),
+              ),
+            ),
+          ];
+          final kaldigiYer = <Widget>[
+            const _SectionHeader('Kaldığın yer'),
+            const _AvatarSection(),
+            const SizedBox(height: 12),
+            _KarakterKisayolu(
+              onTap: () => ref.read(shellTabProvider.notifier).state = 3,
+            ),
+            const SizedBox(height: 12),
+            _ReviewCard(
+              onStart: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const ReviewScreen()),
+              ),
+            ),
+            const SizedBox(height: 12),
+            _LeagueMini(
+              onOpen: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const LeagueScreen()),
+              ),
+            ),
+          ];
+          final odaklar = <Widget>[
+            const _SectionHeader('Bugünkü odakların'),
+            SubjectList(
+              onSelect: (ders) => openQuiz(
+                context,
+                ref,
+                title: ders,
+                load: () => repo.fetchQuizQuestions(ders),
+                emptyMessage:
+                    'Bu derse yakında yeni sorular gelecek. Şimdilik başka bir ders seçebilirsin!',
+              ),
+            ),
+            const SizedBox(height: 12),
+            GameCard(
+              color: AppColors.primarySoft,
+              borderColor: AppColors.primary,
+              onTap: () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const CipherListScreen()),
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    width: 44,
+                    height: 44,
+                    decoration: const BoxDecoration(
+                      color: AppColors.primary,
+                      shape: BoxShape.circle,
+                    ),
+                    child: const Icon(Icons.vpn_key_rounded, color: Colors.white, size: 24),
+                  ),
+                  const SizedBox(width: 12),
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+                        Text(
+                          'Çarpım Tablosu Şifreleri',
+                          style: appText(weight: FontWeight.w800),
+                        ),
+                        const SizedBox(height: 2),
+                        Text(
+                          'Şifreleri çöz, çarpım tablosunu ustaca öğren!',
+                          style: appText(size: 12, color: AppColors.muted),
+                        ),
+                      ],
+                    ),
+                  ),
+                  const Icon(Icons.arrow_forward_ios_rounded, size: 14, color: AppColors.muted),
+                ],
+              ),
+            ),
+          ];
+
+          // Masaüstü (>= 1024): sol %60 hedef + kaldığın yer, sağ %40 odaklar.
+          // Telefon/tablet: mevcut tek sütun sırası.
+          final Widget bolumler = isDesktop(context)
+              ? Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Expanded(
+                      flex: 6,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ...hedefBolumu,
+                          const SizedBox(height: 28),
+                          ...kaldigiYer,
+                        ],
+                      ),
+                    ),
+                    const SizedBox(width: 28),
+                    Expanded(
+                      flex: 4,
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: odaklar,
+                      ),
+                    ),
+                  ],
+                )
+              : Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ...hedefBolumu,
+                    const SizedBox(height: 28),
+                    ...kaldigiYer,
+                    const SizedBox(height: 28),
+                    ...odaklar,
+                  ],
+                );
+
           return ShieldCelebrationListener(
             child: CharacterCelebrationListener(
             child: RefreshIndicator(
-              onRefresh: () async {
-                ref.invalidate(dailyGoalProvider);
-                ref.invalidate(statsProvider);
-                ref.invalidate(dueCountProvider);
-                ref.invalidate(subjectsProvider);
-              },
+              onRefresh: () => _yenile(ref),
               child: ListView(
                 padding: EdgeInsets.zero,
                 children: [
@@ -136,117 +271,29 @@ class HomeScreen extends ConsumerWidget {
                     name: p.fullName,
                     onSignOut: repo.signOut,
                     onProfile: () => ref.read(shellTabProvider.notifier).state = 4,
+                    onRefresh: () => _yenile(ref),
                   ),
-                  Padding(
-                    padding: const EdgeInsets.fromLTRB(20, 20, 20, 32),
-                    child: Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        if (consent != null &&
-                            consent.parentConsent != ParentConsent.given) ...[
-                          const _ConsentNote(),
-                          const SizedBox(height: 12),
+                  ContentWidth(
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(20, 20, 20, 32),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          if (consent != null &&
+                              consent.parentConsent != ParentConsent.given) ...[
+                            const _ConsentNote(),
+                            const SizedBox(height: 12),
+                          ],
+                          bolumler,
                         ],
-
-                        // ── 1) Bugünkü hedefin ──────────────────────────
-                        const _SectionHeader('Bugünkü hedefin'),
-                        const _StreakNudge(),
-                        const DailyGoalCard(),
-                        const SizedBox(height: 12),
-                        DailyChallengeCard(
-                          onTap: () => Navigator.of(context).push(
-                            MaterialPageRoute(builder: (_) => const DailyChallengeScreen()),
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        _GorevMini(
-                          onOpen: () => Navigator.of(context).push(
-                            MaterialPageRoute(builder: (_) => const QuestsScreen()),
-                          ),
-                        ),
-                        const SizedBox(height: 28),
-
-                        // ── 2) Kaldığın yer ──────────────────────────────
-                        const _SectionHeader('Kaldığın yer'),
-                        const _AvatarSection(),
-                        const SizedBox(height: 12),
-                        _KarakterKisayolu(
-                          onTap: () => ref.read(shellTabProvider.notifier).state = 3,
-                        ),
-                        const SizedBox(height: 12),
-                        _ReviewCard(
-                          onStart: () => Navigator.of(context).push(
-                            MaterialPageRoute(builder: (_) => const ReviewScreen()),
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        _LeagueMini(
-                          onOpen: () => Navigator.of(context).push(
-                            MaterialPageRoute(builder: (_) => const LeagueScreen()),
-                          ),
-                        ),
-                        const SizedBox(height: 28),
-
-                        // ── 3) Bugünkü odakların ─────────────────────────
-                        const _SectionHeader('Bugünkü odakların'),
-                        SubjectList(
-                          onSelect: (ders) => openQuiz(
-                            context,
-                            ref,
-                            title: ders,
-                            load: () => repo.fetchQuizQuestions(ders),
-                            emptyMessage:
-                                'Bu derse yakında yeni sorular gelecek. Şimdilik başka bir ders seçebilirsin!',
-                          ),
-                        ),
-                        const SizedBox(height: 12),
-                        GameCard(
-                          color: AppColors.primarySoft,
-                          borderColor: AppColors.primary,
-                          onTap: () => Navigator.of(context).push(
-                            MaterialPageRoute(builder: (_) => const CipherListScreen()),
-                          ),
-                          child: Row(
-                            children: [
-                              Container(
-                                width: 44,
-                                height: 44,
-                                decoration: const BoxDecoration(
-                                  color: AppColors.primary,
-                                  shape: BoxShape.circle,
-                                ),
-                                child: const Icon(Icons.vpn_key_rounded, color: Colors.white, size: 24),
-                              ),
-                              const SizedBox(width: 12),
-                              Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: [
-                                    Text(
-                                      'Çarpım Tablosu Şifreleri',
-                                      style: appText(weight: FontWeight.w800),
-                                    ),
-                                    const SizedBox(height: 2),
-                                    Text(
-                                      'Şifreleri çöz, çarpım tablosunu ustaca öğren!',
-                                      style: appText(size: 12, color: AppColors.muted),
-                                    ),
-                                  ],
-                                ),
-                              ),
-                              const Icon(Icons.arrow_forward_ios_rounded, size: 14, color: AppColors.muted),
-                            ],
-                          ),
-                        ),
-                      ],
+                      ),
                     ),
                   ),
                 ],
               ),
             ),
             ),
-          );
-        },
+          );        },
       ),
     );
   }
@@ -257,11 +304,13 @@ class _Hero extends ConsumerWidget {
     required this.name,
     required this.onSignOut,
     required this.onProfile,
+    required this.onRefresh,
   });
 
   final String? name;
   final VoidCallback onSignOut;
   final VoidCallback onProfile;
+  final VoidCallback onRefresh;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
@@ -283,6 +332,13 @@ class _Hero extends ConsumerWidget {
                 ),
               ),
               const NotificationBell(),
+              // RefreshIndicator fare ile çalışmaz; geniş ekranda açık bir yenile düğmesi.
+              if (isWide(context))
+                IconButton(
+                  tooltip: _yenileIpucu,
+                  onPressed: onRefresh,
+                  icon: const Icon(Icons.refresh_rounded, color: Colors.white, size: 28),
+                ),
               IconButton(
                 tooltip: 'Profilim ve rozetler',
                 onPressed: onProfile,

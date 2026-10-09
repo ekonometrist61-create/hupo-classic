@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -13,6 +14,7 @@ import '../theme/app_theme.dart';
 import '../widgets/ui/chunky_button.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/hero_header.dart';
+import 'parent_link_screen.dart';
 import 'privacy_notice_screen.dart';
 
 /// Ayarlar: okunabilirlik/erişilebilirlik, günlük hedef, gizlilik ve veri hakları.
@@ -195,6 +197,34 @@ class SettingsScreen extends ConsumerWidget {
                 const SizedBox(height: 20),
                 const _SectionTitle('Bildirimler'),
                 const PushSettingsCard(),
+                const SizedBox(height: 20),
+                const _SectionTitle('Hesap'),
+                _ActionTile(
+                  icon: Icons.family_restroom_rounded,
+                  title: 'Veline bağlan',
+                  subtitle: 'Velinin verdiği kodla ilerlemeni onunla paylaş',
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const ParentLinkScreen()),
+                  ),
+                ),
+                if (!kIsWeb) ...[
+                  const SizedBox(height: 10),
+                  _ActionTile(
+                    icon: Icons.computer_rounded,
+                    title: 'Bilgisayardan da girebilirsin',
+                    subtitle: 'app.hupolingo.com',
+                    onTap: () async {
+                      final messenger = ScaffoldMessenger.of(context);
+                      final opened = await openAppWebsite();
+                      if (!opened) {
+                        messenger.showSnackBar(const SnackBar(
+                          content: Text(
+                              'Sayfa açılamadı, birazdan tekrar deneyelim.'),
+                        ));
+                      }
+                    },
+                  ),
+                ],
                 const SizedBox(height: 20),
                 const _SectionTitle('Gizlilik ve bilgilerin'),
                 _ActionTile(

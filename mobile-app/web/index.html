@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -18,21 +18,68 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="Hupolingo ile soru çöz, öğren, ilerle.">
+  <meta name="theme-color" content="#147D8A">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="ogrenci_hazirlik">
+  <meta name="apple-mobile-web-app-title" content="Hupolingo">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>ogrenci_hazirlik</title>
+  <title>Hupolingo</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- Yükleme ekranı: Flutter ilk kareyi çizene kadar görünür -->
+  <style>
+    #hupo-yukleniyor {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      background: #FFF9ED;
+      color: #17324D;
+      font-family: Nunito, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      font-size: 15px;
+      font-weight: 600;
+    }
+    #hupo-yukleniyor .hupo-spinner {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: 4px solid #E8F5F7;
+      border-top-color: #147D8A;
+      animation: hupo-don 0.9s linear infinite;
+    }
+    @keyframes hupo-don {
+      to { transform: rotate(360deg); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      #hupo-yukleniyor .hupo-spinner { animation-duration: 3s; }
+    }
+  </style>
 </head>
 <body>
+  <div id="hupo-yukleniyor" role="status" aria-live="polite">
+    <div class="hupo-spinner" aria-hidden="true"></div>
+    <span>Hupolingo yükleniyor…</span>
+  </div>
+
+  <script>
+    // Flutter ilk kareyi çizdiğinde yükleme ekranını kaldır.
+    window.addEventListener('flutter-first-frame', function () {
+      var yukleniyor = document.getElementById('hupo-yukleniyor');
+      if (yukleniyor) yukleniyor.remove();
+    });
+  </script>
+
   <!--
     You can customize the "flutter_bootstrap.js" script.
     This is useful to provide a custom configuration to the Flutter loader

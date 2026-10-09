@@ -26,7 +26,7 @@ Future<void> _uygulamayiBaslat() async {
   await Supabase.initialize(
     url: Env.supabaseUrl,
     publishableKey: Env.supabasePublishableKey,
-    authOptions: FlutterAuthClientOptions(localStorage: SecureLocalStorage()),
+    authOptions: FlutterAuthClientOptions(localStorage: supabaseLocalStorage()),
   );
   final prefs = await SharedPreferences.getInstance();
 

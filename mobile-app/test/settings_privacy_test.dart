@@ -83,7 +83,7 @@ Future<void> _pump(
 }) async {
   SharedPreferences.setMockInitialValues({});
   final prefs = await SharedPreferences.getInstance();
-  await tester.binding.setSurfaceSize(const Size(420, 1800));
+  await tester.binding.setSurfaceSize(const Size(420, 2600));
   addTearDown(() => tester.binding.setSurfaceSize(null));
 
   await tester.pumpWidget(ProviderScope(

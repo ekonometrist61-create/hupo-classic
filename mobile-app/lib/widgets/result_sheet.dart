@@ -1,10 +1,12 @@
 import 'dart:async';
+import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
 
 import '../models/models.dart';
 import '../theme/app_theme.dart';
+import '../utils/breakpoints.dart';
 import '../utils/motion.dart';
 import 'hupo/hupo.dart';
 import 'ui/chunky_button.dart';
@@ -70,14 +72,20 @@ class _ResultSheetState extends State<ResultSheet> {
   String get _title {
     final r = widget.result;
     if (r.correct) return r.isRecovery ? 'Kurtardın!' : 'Harikasın!';
-    return r.timedOut ? 'Süre doldu, ama pes yok!' : 'Sorun değil, denemek öğretir!';
+    return r.timedOut
+        ? 'Süre doldu, ama pes yok!'
+        : 'Sorun değil, denemek öğretir!';
   }
 
   String get _subtitle {
     final r = widget.result;
-    if (!r.saved) return 'İnternet bağlantında sorun var, bu cevap kaydedilemedi.';
+    if (!r.saved) {
+      return 'İnternet bağlantında sorun var, bu cevap kaydedilemedi.';
+    }
     if (r.correct) {
-      if (r.isRecovery) return 'Yanlış cevap gitti, öğrendiğin bilgi kaldı! +${r.earnedXp} XP';
+      if (r.isRecovery) {
+        return 'Yanlış cevap gitti, öğrendiğin bilgi kaldı! +${r.earnedXp} XP';
+      }
       return r.earnedXp > 0
           ? '+${r.earnedXp} XP kazandın, böyle devam!'
           : 'Doğru! Bunu zaten biliyordun.';
@@ -91,6 +99,8 @@ class _ResultSheetState extends State<ResultSheet> {
     final ok = r.correct;
     final background = ok ? AppColors.mintSoft : AppColors.coralSoft;
     final strong = ok ? AppColors.mintDark : AppColors.coralDark;
+    final wide = isWide(context);
+    final screenHeight = MediaQuery.sizeOf(context).height;
 
     return TweenAnimationBuilder<double>(
       tween: Tween(begin: 0, end: 1),
@@ -100,129 +110,171 @@ class _ResultSheetState extends State<ResultSheet> {
         translation: Offset(0, 1 - t),
         child: child,
       ),
-      child: Semantics(
-        liveRegion: true,
-        child: Container(
-          decoration: BoxDecoration(
-            color: background,
-            borderRadius: const BorderRadius.vertical(top: Radius.circular(32)),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.black.withValues(alpha: 0.12),
-                blurRadius: 24,
-                offset: const Offset(0, -6),
-              ),
-            ],
-          ),
-          child: SafeArea(
-            top: false,
-            child: Padding(
-              padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
-              child: Column(
-                mainAxisSize: MainAxisSize.min,
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Row(
-                    children: [
-                      // Yanlışta kırmızı X yok: sıcak amber "tekrar" simgesi.
-                      if (reducedMotion(context) || !ok)
-                        Container(
-                          width: 48,
-                          height: 48,
-                          margin: const EdgeInsets.all(4),
-                          decoration: BoxDecoration(color: strong, shape: BoxShape.circle),
-                          child: Icon(
-                            ok ? Icons.check_rounded : Icons.refresh_rounded,
-                            color: Colors.white,
-                            size: 30,
-                          ),
-                        )
-                      else
-                        Lottie.asset(
-                          'assets/lottie/correct.json',
-                          width: 56,
-                          height: 56,
-                          repeat: false,
-                        ),
-                      const SizedBox(width: 12),
-                      Expanded(
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              _title,
-                              style: appText(size: 22, weight: FontWeight.w900, color: strong),
-                            ),
-                            if (_subtitle.isNotEmpty)
-                              Text(
-                                _subtitle,
-                                style: appText(size: 14, weight: FontWeight.w700, color: strong),
-                              ),
-                          ],
-                        ),
-                      ),
-                    ],
-                  ),
-                  if (r.steps.isNotEmpty) ...[
-                    const SizedBox(height: 12),
+      child: _SutunSinir(
+        wide: wide,
+        child: Semantics(
+          liveRegion: true,
+          child: Container(
+            decoration: BoxDecoration(
+              color: background,
+              borderRadius:
+                  const BorderRadius.vertical(top: Radius.circular(32)),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.black.withValues(alpha: 0.12),
+                  blurRadius: 24,
+                  offset: const Offset(0, -6),
+                ),
+              ],
+            ),
+            child: SafeArea(
+              top: false,
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(20, 16, 20, 16),
+                child: Column(
+                  mainAxisSize: MainAxisSize.min,
+                  crossAxisAlignment: CrossAxisAlignment.stretch,
+                  children: [
                     Row(
                       children: [
-                        Hupo(mood: HupoMood.solution, variant: r.steps.length, size: 44),
-                        const SizedBox(width: 10),
+                        // Yanlışta kırmızı X yok: sıcak amber "tekrar" simgesi.
+                        if (reducedMotion(context) || !ok)
+                          Container(
+                            width: 48,
+                            height: 48,
+                            margin: const EdgeInsets.all(4),
+                            decoration: BoxDecoration(
+                                color: strong, shape: BoxShape.circle),
+                            child: Icon(
+                              ok ? Icons.check_rounded : Icons.refresh_rounded,
+                              color: Colors.white,
+                              size: 30,
+                            ),
+                          )
+                        else
+                          Lottie.asset(
+                            'assets/lottie/correct.json',
+                            width: 56,
+                            height: 56,
+                            repeat: false,
+                          ),
+                        const SizedBox(width: 12),
                         Expanded(
-                          child: Text(
-                            'Birlikte çözelim: adım adım',
-                            style: appText(size: 13, weight: FontWeight.w900, color: strong),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(
+                                _title,
+                                style: appText(
+                                    size: 22,
+                                    weight: FontWeight.w900,
+                                    color: strong),
+                              ),
+                              if (_subtitle.isNotEmpty)
+                                Text(
+                                  _subtitle,
+                                  style: appText(
+                                      size: 14,
+                                      weight: FontWeight.w700,
+                                      color: strong),
+                                ),
+                            ],
                           ),
                         ),
                       ],
                     ),
-                    const SizedBox(height: 8),
-                    ConstrainedBox(
-                      constraints: BoxConstraints(
-                        maxHeight: MediaQuery.sizeOf(context).height * 0.28,
+                    if (r.steps.isNotEmpty) ...[
+                      const SizedBox(height: 12),
+                      Row(
+                        children: [
+                          Hupo(
+                              mood: HupoMood.solution,
+                              variant: r.steps.length,
+                              size: 44),
+                          const SizedBox(width: 10),
+                          Expanded(
+                            child: Text(
+                              'Birlikte çözelim: adım adım',
+                              style: appText(
+                                  size: 13,
+                                  weight: FontWeight.w900,
+                                  color: strong),
+                            ),
+                          ),
+                        ],
                       ),
-                      child: SingleChildScrollView(
-                        child: Column(
-                          children: [
-                            for (var i = 0; i < r.steps.length; i++)
-                              _StepTile(
-                                number: i + 1,
-                                text: r.steps[i],
-                                visible: i < _visibleSteps,
-                                color: strong,
-                              ),
-                          ],
+                      const SizedBox(height: 8),
+                      ConstrainedBox(
+                        constraints: BoxConstraints(
+                          // Geniş/yüksek ekranda çözüm alanı devasa olmasın diye üst sınır.
+                          maxHeight: wide
+                              ? math.min(screenHeight * 0.28, 240)
+                              : screenHeight * 0.28,
+                        ),
+                        child: SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              for (var i = 0; i < r.steps.length; i++)
+                                _StepTile(
+                                  number: i + 1,
+                                  text: r.steps[i],
+                                  visible: i < _visibleSteps,
+                                  color: strong,
+                                ),
+                            ],
+                          ),
                         ),
                       ),
-                    ),
+                    ],
+                    const SizedBox(height: 14),
+                    if (ok)
+                      ChunkyButton.success(
+                        label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
+                        onPressed: widget.onContinue,
+                      )
+                    else if (widget.onRecover != null) ...[
+                      ChunkyButton.danger(
+                        label: 'Benzer Soru Çöz',
+                        onPressed: widget.onRecover,
+                      ),
+                      const SizedBox(height: 8),
+                      ChunkyButton.light(
+                        label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
+                        onPressed: widget.onContinue,
+                      ),
+                    ] else
+                      ChunkyButton.danger(
+                        label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
+                        onPressed: widget.onContinue,
+                      ),
                   ],
-                  const SizedBox(height: 14),
-                  if (ok)
-                    ChunkyButton.success(
-                      label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
-                      onPressed: widget.onContinue,
-                    )
-                  else if (widget.onRecover != null) ...[
-                    ChunkyButton.danger(
-                      label: 'Benzer Soru Çöz',
-                      onPressed: widget.onRecover,
-                    ),
-                    const SizedBox(height: 8),
-                    ChunkyButton.light(
-                      label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
-                      onPressed: widget.onContinue,
-                    ),
-                  ] else
-                    ChunkyButton.danger(
-                      label: widget.isLast ? 'Sonucunu gör' : 'Sonraki soru',
-                      onPressed: widget.onContinue,
-                    ),
-                ],
+                ),
               ),
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Geniş ekranda (>= 600) sonuç penceresini alt-ortada [kQuizMaxWidth] ile sınırlar.
+/// Telefonda çocuğu olduğu gibi döner (görünüm değişmez).
+class _SutunSinir extends StatelessWidget {
+  const _SutunSinir({required this.wide, required this.child});
+
+  final bool wide;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    if (!wide) return child;
+    return Align(
+      alignment: Alignment.bottomCenter,
+      heightFactor: 1,
+      child: ConstrainedBox(
+        constraints: const BoxConstraints(maxWidth: kQuizMaxWidth),
+        child: child,
       ),
     );
   }
@@ -263,14 +315,16 @@ class _StepTile extends StatelessWidget {
                 decoration: BoxDecoration(color: color, shape: BoxShape.circle),
                 child: Text(
                   '$number',
-                  style: appText(size: 13, weight: FontWeight.w900, color: Colors.white),
+                  style: appText(
+                      size: 13, weight: FontWeight.w900, color: Colors.white),
                 ),
               ),
               const SizedBox(width: 10),
               Expanded(
                 child: Text(
                   text,
-                  style: appText(size: 15, weight: FontWeight.w700, height: 1.35),
+                  style:
+                      appText(size: 15, weight: FontWeight.w700, height: 1.35),
                 ),
               ),
             ],

@@ -3,9 +3,8 @@
 // Sunucudan gelen get_app_config() yanıtını kontrol eder. Bakım modundaysa veya
 // sürüm eskiyse uygulamanın açılışını durdurur ve bilgilendirici ekran sunar.
 
-import 'dart:io' show Platform;
-
-import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/foundation.dart'
+    show TargetPlatform, defaultTargetPlatform, kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:package_info_plus/package_info_plus.dart';
@@ -36,11 +35,10 @@ int _karsilastir(String a, String b) {
 }
 
 bool _guncellemGerekiyor(String mevcutSurum, MinSurum minSurum) {
-  final platform = kIsWeb
-      ? 'web'
-      : Platform.isIOS
-          ? 'ios'
-          : 'android';
+  // Web'de uygulama sürümü ve mağaza güncellemesi yoktur; sürüm kontrolü atlanır.
+  if (kIsWeb) return false;
+  final platform =
+      defaultTargetPlatform == TargetPlatform.iOS ? 'ios' : 'android';
   return _karsilastir(mevcutSurum, minSurum.forPlatform(platform)) < 0;
 }
 
@@ -62,6 +60,8 @@ class _MaintenanceGateState extends ConsumerState<MaintenanceGate> {
   @override
   void initState() {
     super.initState();
+    // Web'de paket sürümü okunmaz; sürüm kontrolü yalnızca mobilde yapılır.
+    if (kIsWeb) return;
     PackageInfo.fromPlatform().then((info) {
       if (mounted) setState(() => _mevcutSurum = info.version);
     });
@@ -165,7 +165,7 @@ class MaintenanceScreen extends StatelessWidget {
                   icon: Icons.open_in_new_rounded,
                   onPressed: () async {
                     final url = Uri.parse(
-                      (!kIsWeb && Platform.isIOS)
+                      (!kIsWeb && defaultTargetPlatform == TargetPlatform.iOS)
                           ? _kIosStoreUrl
                           : _kAndroidStoreUrl,
                     );

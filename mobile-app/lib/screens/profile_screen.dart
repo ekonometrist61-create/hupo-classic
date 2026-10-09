@@ -20,6 +20,7 @@ import '../widgets/membership_card.dart';
 import '../widgets/progress_card.dart';
 import '../widgets/ui/chunky_button.dart';
 import '../widgets/ui/hero_header.dart';
+import '../widgets/ui/responsive_page.dart';
 import '../widgets/hupo/hupo.dart';
 import '../widgets/hupo/hupo_loading.dart';
 
@@ -62,6 +63,7 @@ class ProfileScreen extends ConsumerWidget {
           padding: EdgeInsets.zero,
           children: [
             HeroHeader(
+              maxContentWidth: kTabletContentMaxWidth,
               child: Column(
                 children: [
                   Row(
@@ -119,7 +121,9 @@ class ProfileScreen extends ConsumerWidget {
                 ],
               ),
             ),
-            Padding(
+            ContentWidth(
+              maxWidth: kTabletContentMaxWidth,
+              child: Padding(
               padding: const EdgeInsets.fromLTRB(20, 20, 20, 32),
               child: Column(
                 children: [
@@ -172,6 +176,7 @@ class ProfileScreen extends ConsumerWidget {
                   const _VeliIcinSection(),
                 ],
               ),
+            ),
             ),
           ],
         ),

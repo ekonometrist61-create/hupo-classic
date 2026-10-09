@@ -7,6 +7,7 @@ import '../models/league_models.dart';
 import '../models/membership_models.dart';
 import '../models/mock_exam_models.dart';
 import '../models/models.dart';
+import '../models/parent_link_models.dart';
 import '../models/privacy_models.dart';
 
 /// Supabase ile konuşan tek katman.
@@ -33,10 +34,19 @@ class QuizRepository {
   Future<Profile?> fetchProfile() async {
     final row = await _client
         .from('profiles')
-        .select('id, role, full_name')
+        .select('id, role, full_name, parent_id')
         .eq('id', _uid)
         .maybeSingle();
     return row == null ? null : Profile.fromMap(row);
+  }
+
+  /// public.redeem_parent_link_code(p_kod) — çocuk, velinin ürettiği kodu kullanır.
+  /// Sunucu kuralı ihlallerinde (öğrenci değil / zaten bağlı) PostgrestException fırlatır;
+  /// mesajı Türkçedir ve doğrudan kullanıcıya gösterilebilir.
+  Future<ParentLinkResult> redeemParentLinkCode(String kod) async {
+    final data = await _client
+        .rpc('redeem_parent_link_code', params: {'p_kod': kod});
+    return ParentLinkResult.fromMap(Map<String, dynamic>.from(data as Map));
   }
 
   Future<StudentStats> fetchStats() async {

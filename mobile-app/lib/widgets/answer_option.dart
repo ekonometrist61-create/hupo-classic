@@ -15,6 +15,7 @@ class AnswerOption extends StatelessWidget {
     required this.text,
     required this.state,
     required this.onTap,
+    this.focusNode,
   });
 
   final String label;
@@ -23,6 +24,9 @@ class AnswerOption extends StatelessWidget {
 
   /// null ise şık kilitlidir.
   final VoidCallback? onTap;
+
+  /// Klavyeyle (1-4 / A-D, yön tuşları) şık odağını yönetmek için.
+  final FocusNode? focusNode;
 
   Color get _color => switch (state) {
         OptionState.correct => AppColors.mint,
@@ -50,6 +54,8 @@ class AnswerOption extends StatelessWidget {
 
     Widget tile = GameCard(
       onTap: onTap,
+      focusNode: focusNode,
+      hoverColor: state == OptionState.idle ? AppColors.primarySoft : null,
       color: _color,
       borderColor: _edge,
       radius: 22,

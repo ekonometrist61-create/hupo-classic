@@ -22,6 +22,13 @@ class Env {
     defaultValue: 'https://hupolingo.com',
   );
 
+  /// Hupolingo uygulamasının web sürümü (bilgisayardan giriş). Veli/çocuk aynı
+  /// hesapla buradan da girer.
+  static const appWebUrl = String.fromEnvironment(
+    'APP_WEB_URL',
+    defaultValue: 'https://app.hupolingo.com',
+  );
+
   /// Sentry DSN'i. Gizli anahtar değildir ama projeye özeldir; kod içine yazılmaz.
   /// Boşsa çökme raporlama kapalıdır: flutter run --dart-define=SENTRY_DSN=...
   static const sentryDsn = String.fromEnvironment('SENTRY_DSN');
