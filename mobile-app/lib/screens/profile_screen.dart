@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:url_launcher/url_launcher.dart';
 
 import '../config/env.dart';
 import '../models/league_models.dart';
@@ -26,6 +25,7 @@ import '../widgets/ui/chunky_button.dart';
 import '../widgets/ui/hero_header.dart';
 import '../widgets/ui/responsive_page.dart';
 import '../widgets/hupo/hupo.dart';
+import '../widgets/veli_mesaji_sheet.dart';
 import '../widgets/hupo/hupo_loading.dart';
 
 class ProfileScreen extends ConsumerWidget {
@@ -331,9 +331,6 @@ class _RetryMessage extends StatelessWidget {
   }
 }
 
-const _premiumUrl = 'https://hupolingo.com/premium';
-const _veliRaporuUrl = 'https://hupolingo.com/veli';
-
 const String _webBaslik = 'Bilgisayardan da girebilirsin: app.hupolingo.com';
 const String _kopyalaIpucu = 'Bağlantıyı kopyala';
 const String _kopyalandi = 'Bağlantı kopyalandı.';
@@ -409,30 +406,18 @@ class _VeliIcinSection extends StatelessWidget {
       children: [
         Text('Velim için', style: appText(size: 18, weight: FontWeight.w900)),
         const SizedBox(height: 10),
-        _VeliLinkSatiri(
-          ikon: Icons.bar_chart_rounded,
-          baslik: 'Veli raporu',
-          aciklama: 'Gelişimini ve konu ilerlemeni göster',
-          renk: AppColors.primary,
-          onTap: () => _ac(_veliRaporuUrl),
-        ),
-        const SizedBox(height: 8),
+        // Veli raporu bilinçli olarak burada yok: çocuk raporun ailesine gittiğini
+        // görüp endişelenmesin. Rapor yalnızca veli panelinde görünür.
         _VeliLinkSatiri(
           ikon: Icons.star_rounded,
           baslik: 'Premium hakkında',
-          aciklama: 'Tüm özellikler ve fiyatlandırma',
+          aciklama: 'Ücretli plan hakkında bilgi (velin için)',
           renk: AppColors.sun,
-          onTap: () => _ac(_premiumUrl),
+          // Çocuk burada kart bilgisi girmez; velinle paylaşılacak mesaj ve veli panelinin bağlantısı açılır.
+          onTap: () => showVeliMesajiSheet(context),
         ),
       ],
     );
-  }
-
-  Future<void> _ac(String url) async {
-    final uri = Uri.parse(url);
-    if (await canLaunchUrl(uri)) {
-      await launchUrl(uri, mode: LaunchMode.externalApplication);
-    }
   }
 }
 

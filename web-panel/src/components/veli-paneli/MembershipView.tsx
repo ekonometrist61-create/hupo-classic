@@ -4,8 +4,9 @@ import { useTranslations } from "next-intl";
 
 import AbonelikKarti from "./AbonelikKarti";
 import OdemeGecmisi from "./OdemeGecmisi";
+import PlanKarti from "./PlanKarti";
 
-// Üyelik & Hesap: veli hesabının aboneliği ve ödeme geçmişi (çocuk verisi içermez).
+// Üyelik & Hesap: veli hesabının aboneliği, plan durumu ve ödeme geçmişi (çocuk verisi içermez).
 export default function MembershipView() {
   const t = useTranslations("veliPaneli.membership");
 
@@ -16,6 +17,7 @@ export default function MembershipView() {
       </p>
       <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
         <AbonelikKarti />
+        <PlanKarti />
         <OdemeGecmisi />
       </div>
     </div>

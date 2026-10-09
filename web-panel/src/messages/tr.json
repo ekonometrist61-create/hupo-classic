@@ -397,12 +397,13 @@
       "title": "Planlar ve Fiyatlar",
       "desc": "Çocuğunuz için en uygun planı seçin.",
       "perMonth": "/ay",
+      "sureGun": "{gun} gün erişim",
+      "trialDays": "{gun} gün ücretsiz deneme",
       "yearlyNote": "Yıllık planda %40 tasarruf",
       "comingSoon": "Fiyatlar yakında açıklanacak",
       "comingSoonDesc": "Plan detayları ve fiyatlar netleştiğinde burada ve veli hesabınızda gösterilecek.",
       "free": {
         "name": "Ücretsiz",
-        "priceLabel": "0 ₺",
         "cta": "Ücretsiz Başla",
         "features": ["Temel ders içerikleri", "Günde 1 tekrar turu", "Temel karakter koleksiyonu", "Temel gelişim takibi"],
         "notIncluded": ["Veli paneli", "Ligler ve etkinlikler", "Deneme sınavları"]

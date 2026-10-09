@@ -95,7 +95,18 @@
       "empty": "No badge definitions yet."
     },
     "membership": {
-      "desc": "Your parent account's subscription and payment history."
+      "desc": "Your parent account's subscription and payment history.",
+      "plans": {
+        "title": "Paid plan",
+        "loading": "Loading plan information...",
+        "error": "Plan information could not be loaded. Refresh the page and try again.",
+        "preparing": "A paid plan is in preparation. It will appear in this card once plans and prices are announced.",
+        "duration": "{gun} days",
+        "buy": "Buy plan",
+        "checkoutLoading": "Opening payment page...",
+        "checkoutError": "The payment page could not be opened. Please try again shortly.",
+        "paymentNote": "You complete the payment with your card on the iyzico payment page."
+      }
     },
     "subjectsPage": {
       "pick": "Choose a subject",

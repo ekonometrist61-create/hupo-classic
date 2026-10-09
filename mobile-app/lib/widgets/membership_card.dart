@@ -6,6 +6,7 @@ import '../utils/format.dart';
 import '../utils/motion.dart';
 import 'hupo/hupo.dart';
 import 'ui/game_card.dart';
+import 'veli_mesaji_sheet.dart';
 
 /// Profilde "Üyelik" kartı.
 ///
@@ -128,10 +129,17 @@ class _Free extends StatelessWidget {
                   Text(quota,
                       style: appText(size: 14, weight: FontWeight.w800, color: AppColors.primary)),
                 ],
-                const SizedBox(height: 6),
-                Text(
-                  'Premium için velinle konuş.',
-                  style: appText(size: 13, weight: FontWeight.w700, color: AppColors.muted),
+                const SizedBox(height: 4),
+                Align(
+                  alignment: Alignment.centerLeft,
+                  child: TextButton.icon(
+                    onPressed: () => showVeliMesajiSheet(context),
+                    icon: const Icon(Icons.chat_bubble_rounded, size: 18),
+                    label: Text(
+                      'Velime mesaj hazırla',
+                      style: appText(size: 14, weight: FontWeight.w800, color: AppColors.primary),
+                    ),
+                  ),
                 ),
               ],
             ),

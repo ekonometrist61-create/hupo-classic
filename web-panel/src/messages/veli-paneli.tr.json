@@ -95,7 +95,18 @@
       "empty": "Henüz rozet tanımı bulunmuyor."
     },
     "membership": {
-      "desc": "Veli hesabınızın aboneliği ve ödeme geçmişi."
+      "desc": "Veli hesabınızın aboneliği ve ödeme geçmişi.",
+      "plans": {
+        "title": "Ücretli plan",
+        "loading": "Plan bilgisi yükleniyor...",
+        "error": "Plan bilgisi yüklenemedi. Sayfayı yenileyip tekrar deneyin.",
+        "preparing": "Ücretli plan hazırlık aşamasında. Plan ve fiyatlar açıklandığında bu kartta görünecek.",
+        "duration": "{gun} gün",
+        "buy": "Planı satın al",
+        "checkoutLoading": "Ödeme sayfası açılıyor...",
+        "checkoutError": "Ödeme sayfası açılamadı. Lütfen birazdan tekrar deneyin.",
+        "paymentNote": "Ödemeyi kart bilgilerinizle iyzico ödeme sayfasında tamamlarsınız."
+      }
     },
     "subjectsPage": {
       "pick": "Ders seçin",

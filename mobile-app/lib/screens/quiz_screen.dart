@@ -23,6 +23,7 @@ import '../widgets/quiz_top_bar.dart';
 import '../widgets/result_sheet.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/hupo/hupo.dart';
+import '../widgets/veli_mesaji_sheet.dart';
 import 'result_screen.dart';
 
 // Web / klavye metinleri (const).
@@ -141,12 +142,17 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                 semanticLabel: 'Hupo, seni tebrik ediyor'),
             SizedBox(height: 12),
             Text(
-              'Bugünkü ücretsiz sorularını tamamladın. Yarın yeni sorularla devam edebilirsin. Daha fazlası için velinle konuşabilirsin.',
+              'Bugünkü ücretsiz sorularını tamamladın. Yarın yeni sorularla devam edebilirsin.',
               textAlign: TextAlign.center,
             ),
           ],
         ),
         actions: [
+          TextButton(
+            // Velinin göreceği mesajı hazırlar; çocuk burada satın almaz.
+            onPressed: () => showVeliMesajiSheet(ctx),
+            child: const Text('Velime mesaj hazırla'),
+          ),
           TextButton(
             autofocus: true, // Enter ile kapanır
             onPressed: () => Navigator.of(ctx).pop(),

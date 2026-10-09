@@ -398,12 +398,13 @@
       "title": "Plans and Pricing",
       "desc": "Choose the best plan for your child.",
       "perMonth": "/month",
+      "sureGun": "{gun} days access",
+      "trialDays": "{gun} days free trial",
       "yearlyNote": "Save 40% on yearly plan",
       "comingSoon": "Pricing coming soon",
       "comingSoonDesc": "When plan details and pricing are finalized, they will be shown here and in your parent account.",
       "free": {
         "name": "Free",
-        "priceLabel": "0 ₺",
         "cta": "Start Free",
         "features": ["Basic course content", "1 review session per day", "Basic character collection", "Basic progress tracking"],
         "notIncluded": ["Parent dashboard", "Leagues and events", "Practice exams"]
