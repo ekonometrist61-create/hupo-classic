@@ -1,5 +1,6 @@
 import { IconInstagram, IconLinkedIn, IconYoutube } from "@/components/landing/Icons";
 import { marketingFont } from "@/components/landing/marketingFont";
+import { STUDENT_APP_URL } from "@/lib/app-url";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -75,6 +76,7 @@ export async function LandingFooter() {
             <li><a href="#report" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.parentPanel")}</a></li>
             <li><Link href="/signup" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.signup")}</Link></li>
             <li><Link href="/signin" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.signin")}</Link></li>
+            <li><a href={STUDENT_APP_URL} className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.studentLogin")}</a></li>
           </ul>
         </nav>
 

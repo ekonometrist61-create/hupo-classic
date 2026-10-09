@@ -1,6 +1,7 @@
 import { FontSizeToggle } from "@/components/landing/FontSizeToggle";
 import { MobileMenu } from "@/components/landing/LandingClient";
 import { marketingFont } from "@/components/landing/marketingFont";
+import { STUDENT_APP_URL } from "@/lib/app-url";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -53,6 +54,12 @@ export async function LandingHeader() {
           >
             {t("nav.signin")}
           </Link>
+          <a
+            href={STUDENT_APP_URL}
+            className="hidden min-h-11 items-center px-2 text-sm font-bold text-navy-muted hover:text-brand-600 lg:inline-flex dark:text-gray-300 dark:hover:text-brand-300"
+          >
+            {t("nav.studentLogin")}
+          </a>
           <Link
             href="/demo"
             className="inline-flex min-h-11 items-center rounded-xl bg-brand-500 px-4 text-sm font-bold text-white transition-colors hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 motion-reduce:transition-none"

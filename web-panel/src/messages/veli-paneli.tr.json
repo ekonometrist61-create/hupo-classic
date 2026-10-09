@@ -35,6 +35,21 @@
       "title": "Henüz öğrenci bağlı değil",
       "text": "Öğrenci hesabını veli hesabınıza bağladığınızda çalışma istatistikleri burada görünecek."
     },
+    "cocukEkle": {
+      "title": "Çocuğunu ekle",
+      "desc": "Kodu oluştur, çocuğun Hupolingo uygulamasında Ayarlar → Veline bağlan bölümüne yazsın. Kod 24 saat geçerli ve tek kullanımlık.",
+      "create": "Kod oluştur",
+      "createAgain": "Yeni kod oluştur",
+      "creating": "Kod oluşturuluyor...",
+      "replaceNote": "Yeni kod oluşturursanız önceki kod iptal olur.",
+      "expires": "Son kullanma: {tarih}",
+      "copy": "Kopyala",
+      "copied": "Kopyalandı",
+      "copyError": "Kopyalanamadı. Kodu elle seçip kopyalayın.",
+      "error": "Kod oluşturulamadı, birazdan tekrar dene.",
+      "webText": "Çocuğun bilgisayardan da çalışabilir:",
+      "webLink": "Öğrenci uygulamasını web'de aç"
+    },
     "stats": {
       "weeklyTime": "Haftalık Çalışma",
       "minutes": "dk",

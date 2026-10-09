@@ -35,6 +35,21 @@
       "title": "No student linked yet",
       "text": "Once you link a student account to your parent account, study statistics will appear here."
     },
+    "cocukEkle": {
+      "title": "Add your child",
+      "desc": "Create a code and have your child enter it in the Hupolingo app under Settings → Connect to parent. The code is valid for 24 hours and can be used once.",
+      "create": "Create code",
+      "createAgain": "Create new code",
+      "creating": "Creating code...",
+      "replaceNote": "Creating a new code cancels the previous one.",
+      "expires": "Expires: {tarih}",
+      "copy": "Copy",
+      "copied": "Copied",
+      "copyError": "Could not copy. Select the code and copy it manually.",
+      "error": "Could not create the code. Please try again shortly.",
+      "webText": "Your child can also use it on a computer:",
+      "webLink": "Open the student app on the web"
+    },
     "stats": {
       "weeklyTime": "Weekly Study",
       "minutes": "min",

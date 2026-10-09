@@ -1,5 +1,6 @@
 "use client";
 
+import { STUDENT_APP_URL } from "@/lib/app-url";
 import { useTranslations } from "next-intl";
 import Link from "next/link";
 import { useEffect, useId, useState } from "react";
@@ -65,6 +66,12 @@ export function MobileMenu() {
             >
               {t("signin")}
             </Link>
+            <a
+              href={STUDENT_APP_URL}
+              className="flex min-h-11 items-center rounded-lg px-3 text-base font-semibold text-navy-muted hover:bg-cream-dark dark:text-gray-400 dark:hover:bg-gray-800"
+            >
+              {t("studentLogin")}
+            </a>
             <Link
               href="/demo"
               onClick={() => setOpen(false)}

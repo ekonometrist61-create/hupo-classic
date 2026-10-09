@@ -1,6 +1,8 @@
 import type { NextConfig } from "next";
 import createNextIntlPlugin from "next-intl/plugin";
 
+import { STUDENT_APP_URL } from "./src/lib/app-url";
+
 const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 
 // ── Güvenlik başlıkları ─────────────────────────────────────────────────────
@@ -83,6 +85,21 @@ const nextConfig: NextConfig = {
       {
         source: "/(.*)",
         headers: securityHeaders,
+      },
+    ];
+  },
+  // Öğrenci uygulaması artık app.hupolingo.com üzerinde (Flutter web).
+  async redirects() {
+    return [
+      {
+        source: "/ogrenci",
+        destination: STUDENT_APP_URL,
+        permanent: true,
+      },
+      {
+        source: "/ogrenci/:path*",
+        destination: STUDENT_APP_URL,
+        permanent: true,
       },
     ];
   },

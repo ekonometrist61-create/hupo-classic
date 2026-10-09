@@ -1,5 +1,6 @@
 "use client";
 
+import { STUDENT_APP_URL } from "@/lib/app-url";
 import { Link, useRouter } from "@/i18n/navigation";
 import { EyeCloseIcon } from "@/icons";
 import { createClient } from "@/utils/supabase/client";
@@ -50,13 +51,17 @@ export default function SignInForm() {
       .eq("id", data.user.id)
       .maybeSingle();
 
+    // Öğrenci uygulaması ayrı origin'de (Flutter web): tam sayfa geçişi.
+    if (profile?.role === "ogrenci") {
+      window.location.assign(STUDENT_APP_URL);
+      return;
+    }
+
     setLoading(false);
     const hedef =
       profile?.role === "admin" || profile?.role === "ogretmen"
         ? "/yonetim"
-        : profile?.role === "ogrenci"
-          ? "/ogrenci"
-          : "/veli-paneli";
+        : "/veli-paneli";
     router.replace(hedef);
   }
 
