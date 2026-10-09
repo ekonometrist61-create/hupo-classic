@@ -297,3 +297,16 @@ Gerçekleştirilecek sayfalar (mevcut `get_student_dashboard` verisiyle):
 - `src/app/[locale]/(admin)/veli-paneli/layout.tsx` — YENİ: VeliLayout
 - `src/messages/veli-paneli.tr.json` — nav + navGroups + shell anahtarları
 - `src/messages/veli-paneli.en.json` — nav + navGroups + shell anahtarları
+
+## 10. Gelir ve Veli Kapısı (2026-10-09)
+Kapsam: çocuk kotası ve profil → veli mesajı; landing ve veli paneli plan/satın alma yüzeyi. Kontroller: `flutter analyze` (4 dosya, temiz), `tsc --noEmit` ve `eslint` (web değişen dosyalar, temiz), tarayıcıda landing ve veli paneli kabuğu (konsol hatası yok).
+- [x] Çocuk: "Velime mesaj hazırla" alt sayfası (kopyala + veli paneli bağlantısı); kota diyaloğu ve üyelik kartı bu sayfaya bağlı (kod + analyze)
+- [x] Çocuk profil "Premium hakkında" satırı artık in-app mesaj sayfasını açar; kırık `hupolingo.com/premium` bağlantısı kaldırıldı
+- [x] Landing fiyat bölümü DB'den okunur, veri yoksa fiyat gizlenir; ₺ hardcode ve bozuk para birimi kaldırıldı (kod + render)
+- [x] Veli paneli "Ücretli plan" kartı ve "Planı satın al" düğmesi (`payments-checkout` çağrısı) (kod + tsc/eslint)
+- [ ] `list_active_plans` RPC ve `deneme_gun` alanı (koordinatörde, backend) — yokken landing fiyatı ve plan kartı gizli/hazırlık gösterir
+- [ ] Ödeme uçtan uca sandbox testi (veli oturumu → iyzico → callback → abonelik aktif)
+- [ ] Veli oturumuyla plan kartı ve satın alma sayfasının kontrolü (test hesabı gerekir)
+- [ ] Landing'deki kanıtsız iddialar ("14 Gün İade Garantisi", "%100 Güvenli Ödeme", "%40 tasarruf") için kaynak veya kaldırma kararı
+- [ ] Mağaza politikası: çocuk uygulamasındaki harici satın alma bağlantısının Apple/Google kuralları ile uyumu
+- [ ] Çocuk akışının gerçek cihazda kontrolü (kota diyaloğu, sayfa, kopyalama)
