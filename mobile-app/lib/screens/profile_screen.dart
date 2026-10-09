@@ -1,10 +1,14 @@
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import '../config/env.dart';
 import '../models/league_models.dart';
 import '../models/models.dart';
 import '../providers/app_providers.dart';
+import '../services/web_links.dart';
 import '../theme/app_theme.dart';
 import '../widgets/badges_section.dart';
 import '../widgets/character/active_character_chip.dart';
@@ -174,6 +178,11 @@ class ProfileScreen extends ConsumerWidget {
                   ),
                   const SizedBox(height: 28),
                   const _VeliIcinSection(),
+                  // Native uygulamada web sürümünü hatırlatan alt satır (web'de gösterilmez).
+                  if (!kIsWeb) ...[
+                    const SizedBox(height: 24),
+                    const _WebBaglantiSatiri(),
+                  ],
                 ],
               ),
             ),
@@ -324,6 +333,71 @@ class _RetryMessage extends StatelessWidget {
 
 const _premiumUrl = 'https://hupolingo.com/premium';
 const _veliRaporuUrl = 'https://hupolingo.com/veli';
+
+const String _webBaslik = 'Bilgisayardan da girebilirsin: app.hupolingo.com';
+const String _kopyalaIpucu = 'Bağlantıyı kopyala';
+const String _kopyalandi = 'Bağlantı kopyalandı.';
+const String _kopyalanamadi = 'Bağlantı kopyalanamadı, adresi elle yazabilirsin.';
+const String _acilamadi = 'Sayfa açılamadı, birazdan tekrar deneyelim.';
+
+/// Native uygulamada app.hupolingo.com'a işaret eden alt satır: metne dokununca
+/// dış tarayıcıda açar, kopyala düğmesi bağlantıyı panoya koyar.
+class _WebBaglantiSatiri extends StatelessWidget {
+  const _WebBaglantiSatiri();
+
+  Future<void> _ac(BuildContext context) async {
+    final messenger = ScaffoldMessenger.of(context);
+    final acildi = await openAppWebsite();
+    if (!acildi) {
+      messenger.showSnackBar(const SnackBar(content: Text(_acilamadi)));
+    }
+  }
+
+  Future<void> _kopyala(BuildContext context) async {
+    final messenger = ScaffoldMessenger.of(context);
+    try {
+      await Clipboard.setData(const ClipboardData(text: Env.appWebUrl));
+      messenger.showSnackBar(const SnackBar(content: Text(_kopyalandi)));
+    } catch (e) {
+      messenger.showSnackBar(const SnackBar(content: Text(_kopyalanamadi)));
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      padding: const EdgeInsets.fromLTRB(14, 4, 4, 4),
+      decoration: BoxDecoration(
+        color: AppColors.surface,
+        borderRadius: BorderRadius.circular(14),
+        border: Border.all(color: AppColors.line),
+      ),
+      child: Row(
+        children: [
+          const Icon(Icons.computer_rounded, color: AppColors.muted, size: 20),
+          const SizedBox(width: 10),
+          Expanded(
+            child: InkWell(
+              onTap: () => _ac(context),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(vertical: 10),
+                child: Text(
+                  _webBaslik,
+                  style: appText(size: 13, color: AppColors.muted),
+                ),
+              ),
+            ),
+          ),
+          IconButton(
+            tooltip: _kopyalaIpucu,
+            onPressed: () => _kopyala(context),
+            icon: const Icon(Icons.copy_rounded, color: AppColors.primary, size: 20),
+          ),
+        ],
+      ),
+    );
+  }
+}
 
 class _VeliIcinSection extends StatelessWidget {
   const _VeliIcinSection();

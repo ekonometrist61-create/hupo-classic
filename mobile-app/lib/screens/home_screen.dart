@@ -20,6 +20,7 @@ import '../widgets/shield_earned_banner.dart';
 import '../widgets/ui/stat_pill.dart';
 import '../widgets/ui/subject_style.dart';
 import '../models/privacy_models.dart';
+import 'parent_link_screen.dart';
 import 'privacy_notice_screen.dart';
 import 'quiz_screen.dart';
 import 'cipher/cipher_list_screen.dart';
@@ -172,6 +173,7 @@ class HomeScreen extends ConsumerWidget {
           final odaklar = <Widget>[
             const _SectionHeader('Bugünkü odakların'),
             SubjectList(
+              gridTablet: true,
               onSelect: (ders) => openQuiz(
                 context,
                 ref,
@@ -281,7 +283,7 @@ class HomeScreen extends ConsumerWidget {
                         children: [
                           if (consent != null &&
                               consent.parentConsent != ParentConsent.given) ...[
-                            const _ConsentNote(),
+                            _ConsentNote(hasParent: p.hasParent),
                             const SizedBox(height: 12),
                           ],
                           bolumler,
@@ -505,9 +507,17 @@ class _ReviewCard extends ConsumerWidget {
   }
 }
 
+const String _kOnayBekleniyor =
+    'Velinin veli panelinden onay vermesi bekleniyor. Onay verilince her şey tamam olacak!';
+const String _kVeliyleBaglan =
+    'Henüz bir veliye bağlı değilsin. Velinden kod iste, buraya dokunup bağlan!';
+
 /// Veli onayı henüz verilmediyse çocuğa yumuşak bir bilgi (engelleme yok).
+/// Veli bağlı değilse onay hiç gelemez; bu durumda not "Veline bağlan" ekranına götürür.
 class _ConsentNote extends StatelessWidget {
-  const _ConsentNote();
+  const _ConsentNote({required this.hasParent});
+
+  final bool hasParent;
 
   @override
   Widget build(BuildContext context) {
@@ -515,6 +525,11 @@ class _ConsentNote extends StatelessWidget {
       color: AppColors.background,
       borderColor: AppColors.lineDark,
       padding: const EdgeInsets.all(14),
+      onTap: hasParent
+          ? null
+          : () => Navigator.of(context).push(
+                MaterialPageRoute(builder: (_) => const ParentLinkScreen()),
+              ),
       child: Row(
         children: [
           const Icon(Icons.family_restroom_rounded,
@@ -522,7 +537,7 @@ class _ConsentNote extends StatelessWidget {
           const SizedBox(width: 12),
           Expanded(
             child: Text(
-              'Velinin veli panelinden onay vermesi bekleniyor. Onay verilince her şey tamam olacak!',
+              hasParent ? _kOnayBekleniyor : _kVeliyleBaglan,
               style: appText(
                   size: 13,
                   weight: FontWeight.w800,
@@ -530,6 +545,9 @@ class _ConsentNote extends StatelessWidget {
                   height: 1.3),
             ),
           ),
+          if (!hasParent)
+            const Icon(Icons.chevron_right_rounded,
+                color: AppColors.muted, size: 26),
         ],
       ),
     );
@@ -624,13 +642,26 @@ class _LeagueMini extends ConsumerWidget {
 }
 
 class SubjectList extends ConsumerWidget {
-  const SubjectList({super.key, required this.onSelect});
+  const SubjectList({
+    super.key,
+    required this.onSelect,
+    this.gridTablet = false,
+    this.gridDesktop = false,
+  });
 
   final void Function(String ders) onSelect;
+
+  /// Tablette (600–1023) ders kartlarını 2 sütun ızgarada göster.
+  final bool gridTablet;
+
+  /// Masaüstünde (>= 1024) ders kartlarını 2 sütun ızgarada göster.
+  final bool gridDesktop;
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final subjects = ref.watch(subjectsProvider);
+    final izgara = (gridTablet && isTablet(context)) ||
+        (gridDesktop && isDesktop(context));
 
     return subjects.when(
       loading: () => const HupoLoading(
@@ -664,6 +695,14 @@ class SubjectList extends ConsumerWidget {
             ),
           );
         }
+        if (izgara) {
+          return _IkiSutunIzgara(
+            kartlar: [
+              for (final s in list)
+                SubjectCard(subject: s, onTap: () => onSelect(s.ders)),
+            ],
+          );
+        }
         return Column(
           children: [
             for (final s in list)
@@ -674,6 +713,40 @@ class SubjectList extends ConsumerWidget {
           ],
         );
       },
+    );
+  }
+}
+
+/// Kartları iki sütunlu ızgarada dizer; satır içi kartlar eşit yükseklikte olur.
+/// Yalnızca tablet/masaüstü düzeninde kullanılır (telefonda çağrılmaz).
+class _IkiSutunIzgara extends StatelessWidget {
+  const _IkiSutunIzgara({required this.kartlar});
+
+  final List<Widget> kartlar;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        for (var i = 0; i < kartlar.length; i += 2)
+          Padding(
+            padding: const EdgeInsets.only(bottom: 10),
+            child: IntrinsicHeight(
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.stretch,
+                children: [
+                  Expanded(child: kartlar[i]),
+                  const SizedBox(width: 10),
+                  Expanded(
+                    child: i + 1 < kartlar.length
+                        ? kartlar[i + 1]
+                        : const SizedBox.shrink(),
+                  ),
+                ],
+              ),
+            ),
+          ),
+      ],
     );
   }
 }

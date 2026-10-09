@@ -30,6 +30,8 @@ class LearnScreen extends ConsumerWidget {
       body: SafeArea(
         child: SingleChildScrollView(
           child: ResponsivePage(
+            // Masaüstünde (>= 1024) içerik 1100; telefon/tablet varsayılanı aynen kalır.
+            maxWidth: isDesktop(context) ? kDesktopContentMaxWidth : null,
             padding: const EdgeInsets.fromLTRB(20, 20, 20, 32),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -41,6 +43,7 @@ class LearnScreen extends ConsumerWidget {
                 Text(_derslerBasligi, style: appText(size: 19, weight: FontWeight.w900)),
                 const SizedBox(height: 12),
                 SubjectList(
+                  gridDesktop: true,
                   onSelect: (ders) => Navigator.of(context).push(
                     MaterialPageRoute(builder: (_) => SubjectTopicsScreen(ders: ders)),
                   ),

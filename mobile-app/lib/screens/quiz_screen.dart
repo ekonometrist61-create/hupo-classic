@@ -70,6 +70,9 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
   Timer? _enterZamanlayici;
   bool _cikisDiyaloguAcik = false;
 
+  /// Tablette kısayol ipucu, ilk klavye olayından sonra görünür (dokunmatikte hiç görünmez).
+  bool _klavyeKullanildi = false;
+
   FocusNode _sikOdagi(int i) {
     while (_sikOdaklari.length <= i) {
       _sikOdaklari.add(FocusNode(debugLabel: 'sik${_sikOdaklari.length}'));
@@ -359,6 +362,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
     final rota = ModalRoute.of(context);
     if (rota == null || !rota.isCurrent) return KeyEventResult.ignored;
     if (event is KeyUpEvent) return KeyEventResult.ignored;
+    if (!_klavyeKullanildi) setState(() => _klavyeKullanildi = true);
 
     final hw = HardwareKeyboard.instance;
     if (hw.isControlPressed || hw.isMetaPressed || hw.isAltPressed) {
@@ -561,8 +565,8 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                                         ? null
                                         : () => _submit(entry.key),
                                   ),
-                                // Klavye ipucu yalnızca web masaüstünde (dokunmatikte yok).
-                                if (kIsWeb && masaustu)
+                                // Klavye ipucu: web masaüstünde; tablette ilk klavye olayından sonra.
+                                if (kIsWeb && (masaustu || (genis && _klavyeKullanildi)))
                                   Padding(
                                     padding: const EdgeInsets.only(top: 12),
                                     child: Text(
