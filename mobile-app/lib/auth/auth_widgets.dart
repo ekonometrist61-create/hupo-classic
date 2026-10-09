@@ -97,7 +97,7 @@ String authErrorMessage(Object error) {
       return 'Bu e-posta ile zaten bir hesap var.';
     }
     if (message.contains('password')) {
-      return 'Şifre en az 6 karakter olmalı.';
+      return 'Şifre en az 8 karakter olmalı.';
     }
     return error.message;
   }

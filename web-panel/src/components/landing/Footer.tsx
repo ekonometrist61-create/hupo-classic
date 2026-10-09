@@ -85,8 +85,8 @@ export async function LandingFooter() {
             <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.about")}</a></li>
             <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.blog")}</a></li>
             <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.contact")}</a></li>
-            <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.privacy")}</a></li>
-            <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.terms")}</a></li>
+            <li><Link href="/gizlilik" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.privacy")}</Link></li>
+            <li><Link href="/kosullar" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.terms")}</Link></li>
           </ul>
         </nav>
       </div>

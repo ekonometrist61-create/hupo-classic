@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../services/web_links.dart';
 import '../theme/app_theme.dart';
 import 'auth_widgets.dart';
 import 'signup.dart';
@@ -42,6 +43,14 @@ class _LoginScreenState extends State<LoginScreen> {
     }
   }
 
+  /// Parola sıfırlama web'de başlatılır (bağlantı web'e döner); bkz. web-panel /sifre-unuttum.
+  Future<void> _openPasswordReset() async {
+    final opened = await openWebPage('/sifre-unuttum');
+    if (!opened && mounted) {
+      showError(context, 'Sayfa açılamadı, birazdan tekrar deneyelim.');
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return AuthScaffold(
@@ -77,7 +86,17 @@ class _LoginScreenState extends State<LoginScreen> {
                     (v == null || v.isEmpty) ? 'Şifreni gir' : null,
                 onFieldSubmitted: (_) => _login(),
               ),
-              const SizedBox(height: 24),
+              Align(
+                alignment: Alignment.centerRight,
+                child: TextButton(
+                  onPressed: _openPasswordReset,
+                  child: Text(
+                    'Parolanı mı unuttun?',
+                    style: appText(weight: FontWeight.w800, color: AppColors.primary),
+                  ),
+                ),
+              ),
+              const SizedBox(height: 16),
               AuthSubmitButton(
                 label: 'Giriş yap',
                 loading: _loading,

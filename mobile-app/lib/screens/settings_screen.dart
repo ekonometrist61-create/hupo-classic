@@ -7,6 +7,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../models/privacy_models.dart';
 import '../providers/app_providers.dart';
 import '../services/push/push_settings_card.dart';
+import '../services/web_links.dart';
 import '../settings/app_settings.dart';
 import '../theme/app_theme.dart';
 import '../widgets/ui/chunky_button.dart';
@@ -204,6 +205,22 @@ class SettingsScreen extends ConsumerWidget {
                     MaterialPageRoute(
                         builder: (_) => const PrivacyNoticeScreen()),
                   ),
+                ),
+                const SizedBox(height: 10),
+                _ActionTile(
+                  icon: Icons.description_rounded,
+                  title: 'Kullanım koşulları',
+                  subtitle: "Hupolingo'yu kullanırken geçerli kurallar",
+                  onTap: () async {
+                    final messenger = ScaffoldMessenger.of(context);
+                    final opened = await openWebPage('/kosullar');
+                    if (!opened) {
+                      messenger.showSnackBar(const SnackBar(
+                        content: Text(
+                            'Sayfa açılamadı, birazdan tekrar deneyelim.'),
+                      ));
+                    }
+                  },
                 ),
                 const SizedBox(height: 10),
                 _ActionTile(

@@ -14,4 +14,15 @@ class Env {
     'SUPABASE_PUBLISHABLE_KEY',
     defaultValue: 'sb_publishable_Ou2vCWJsewMILZzK1PdCyQ_W9Sp5avP',
   );
+
+  /// Web sitesinin (veli paneli, parola sıfırlama, yasal sayfalar) kök adresi.
+  /// Parola sıfırlama ve koşullar bu adreste açılır.
+  static const webBaseUrl = String.fromEnvironment(
+    'WEB_BASE_URL',
+    defaultValue: 'https://hupolingo.com',
+  );
+
+  /// Sentry DSN'i. Gizli anahtar değildir ama projeye özeldir; kod içine yazılmaz.
+  /// Boşsa çökme raporlama kapalıdır: flutter run --dart-define=SENTRY_DSN=...
+  static const sentryDsn = String.fromEnvironment('SENTRY_DSN');
 }

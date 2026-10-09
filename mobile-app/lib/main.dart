@@ -9,6 +9,7 @@ import 'config/env.dart';
 import 'screens/root_shell.dart';
 import 'screens/splash_screen.dart';
 import 'services/audio/audio_manager.dart';
+import 'services/error_reporting.dart';
 import 'services/push/push_host.dart';
 import 'services/secure_storage.dart';
 import 'settings/app_settings.dart';
@@ -17,6 +18,11 @@ import 'widgets/maintenance_gate.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
+  // Hata raporlama (Sentry) uygulama başlamadan önce kurulur; DSN boşsa yalnızca yerel kanca.
+  await baslatHataRaporlama(_uygulamayiBaslat, dsn: Env.sentryDsn);
+}
+
+Future<void> _uygulamayiBaslat() async {
   await Supabase.initialize(
     url: Env.supabaseUrl,
     publishableKey: Env.supabasePublishableKey,

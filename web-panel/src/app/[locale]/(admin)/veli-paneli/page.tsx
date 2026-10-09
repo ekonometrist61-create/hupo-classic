@@ -1,5 +1,6 @@
 import PageBreadcrumb from "@/components/common/PageBreadCrumb";
 import { redirect } from "@/i18n/navigation";
+import IletisimIzniCard from "@/components/veli-paneli/IletisimIzniCard";
 import ParentDashboard from "@/components/veli-paneli/ParentDashboard";
 import VeliMessage from "@/components/veli-paneli/VeliMessage";
 import { loadVeliAccess } from "@/lib/veli-paneli/access";
@@ -26,7 +27,12 @@ export default async function VeliPaneliPage({
 
   let body: React.ReactNode;
   if (access.kind === "ok") {
-    body = <ParentDashboard students={access.students} />;
+    body = (
+      <div className="space-y-4 md:space-y-6">
+        <ParentDashboard students={access.students} />
+        <IletisimIzniCard />
+      </div>
+    );
   } else if (access.kind === "error") {
     body = <VeliMessage text={t("error")} />;
   } else {

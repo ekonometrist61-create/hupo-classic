@@ -99,6 +99,14 @@
       "empty": "No topics need review right now. This list updates as your child solves new questions.",
       "limitNote": "The 10 topics that most need review are shown."
     },
+    "iletisimIzni": {
+      "title": "My communication preferences",
+      "text": "We send you marketing messages by email only if you have clearly agreed to receive subscription, product and campaign information. You can withdraw your consent at any time; sign-in, password and security emails are not affected.",
+      "emailLabel": "Marketing messages by email",
+      "saving": "Saving…",
+      "error": "Your preference could not be saved. Please try again shortly.",
+      "loadError": "Your preferences could not be loaded. Refresh the page and try again."
+    },
     "consent": {
       "title": "Use of Children's Data",
       "gate": "The student's study data is shown after parental consent is given. You can give consent in the card below.",

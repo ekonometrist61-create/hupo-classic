@@ -116,6 +116,15 @@ export default function SignInForm() {
             </div>
           </div>
 
+          <div className="-mt-2 text-end">
+            <Link
+              href="/sifre-unuttum"
+              className="inline-flex min-h-11 items-center text-sm font-semibold text-brand-700 underline underline-offset-4 hover:text-brand-800 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+            >
+              {t("forgotLink")}
+            </Link>
+          </div>
+
           {error && (
             <p
               id="signin-error"

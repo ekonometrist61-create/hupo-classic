@@ -99,6 +99,14 @@
       "empty": "Şu an tekrar gereken konu yok. Çocuğunuz yeni sorular çözdükçe bu liste güncellenir.",
       "limitNote": "En çok tekrar gereken 10 konu gösterilir."
     },
+    "iletisimIzni": {
+      "title": "İletişim izinlerim",
+      "text": "Hupolingo'dan abonelik, ürün ve kampanya bilgileri için e-posta almayı açıkça onayladığın sürece sana ticari ileti gönderiyoruz. Onayını istediğin zaman geri alabilirsin; giriş, parola ve güvenlik e-postaları etkilenmez.",
+      "emailLabel": "E-posta ile ticari iletiler",
+      "saving": "Kaydediliyor…",
+      "error": "Tercih kaydedilemedi. Birazdan tekrar deneyin.",
+      "loadError": "Tercihlerin yüklenemedi. Sayfayı yenileyip tekrar deneyin."
+    },
     "consent": {
       "title": "Çocuk Verilerinin Kullanımı",
       "gate": "Öğrencinin çalışma verileri, veli onayı verildikten sonra görünür. Onayı aşağıdaki karttan verebilirsiniz.",

@@ -54,6 +54,7 @@ dependencies:
   json_annotation: ^4.9.0
   # Type-safe, annotated Riverpod provider'ları için.
   riverpod_annotation: ^2.4.1
+  sentry_flutter: ^8.14.2
 
 dev_dependencies:
   flutter_test:
