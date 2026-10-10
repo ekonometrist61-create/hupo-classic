@@ -49,6 +49,9 @@ export default function KimlikEslestirmeManager() {
   }, []);
 
   async function resolve(id: string, action: "merged" | "distinct" | "ignored") {
+    if (action === "merged" && !window.confirm(
+      "Bu iki öğrencinin deneme verileri tek hesapta toplanacak. Kaynak hesabın deneme kayıtları taşınır ve geri alınamaz. Devam edilsin mi?"
+    )) return;
     setSaving(id);
     const { error: rpcErr } = await createClient().rpc("admin_resolve_merge_candidate", {
       p_candidate_id: id,
@@ -126,7 +129,7 @@ export default function KimlikEslestirmeManager() {
                           disabled={saving === aday.id}
                           onClick={() => resolve(aday.id, "merged")}
                           className={primaryBtn}
-                          title="Aynı kişi — birleştir (not: veri birleştirme henüz manuel)"
+                          title="Aynı kişi — deneme verilerini ana hesapta topla (ana hesap: daha önce oluşturulan)"
                         >
                           Birleştir
                         </button>

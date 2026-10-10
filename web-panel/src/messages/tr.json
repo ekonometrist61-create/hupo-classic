@@ -1830,6 +1830,20 @@
         "iade": "İade"
       }
     },
+    "denemeGecmisi": {
+      "title": "Deneme Sınavı Geçmişi",
+      "desc": "{ad} için tamamlanan deneme sınavları.",
+      "loading": "Geçmiş yükleniyor...",
+      "empty": "Henüz tamamlanmış deneme sınavı yok.",
+      "error": "Geçmiş yüklenemedi.",
+      "puan": "puan",
+      "sira": "{sira}. / {katilimci} sıra",
+      "dogru": "{dogru} doğru",
+      "yanlis": "{yanlis} yanlış",
+      "teslim_elle": "Süre içinde teslim edildi",
+      "teslim_sure_doldu": "Süre dolunca teslim edildi",
+      "teslim_otomatik": "Teslim edilmedi; süre sonunda cevaplar otomatik kaydedildi"
+    },
     "denemeKaydi": {
       "loading": "Yaklaşan sınavlar yükleniyor...",
       "title": "Yaklaşan Deneme Sınavları",

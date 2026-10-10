@@ -18,6 +18,7 @@ interface SinavOzet {
   sira: number;
   sinif_katilimci: number;
   yuzdelik: number;
+  teslim_turu: "elle" | "sure_doldu" | "otomatik" | null;
 }
 
 interface KonuRow {
@@ -241,6 +242,11 @@ export default async function GelisimPage({
                       {s.sinav_ad}
                     </Link>
                     <div className="ml-4 flex shrink-0 items-center gap-3">
+                      {s.teslim_turu && s.teslim_turu !== "elle" && (
+                        <span className="rounded bg-gray-100 px-1.5 py-0.5 text-[10px] font-medium text-gray-500 dark:bg-gray-700 dark:text-gray-300">
+                          {s.teslim_turu === "otomatik" ? "süre doldu · teslim edilmedi" : "süre doldu"}
+                        </span>
+                      )}
                       <span className="font-bold text-brand-600 dark:text-brand-400">
                         {Number(s.puan).toFixed(1)}
                       </span>

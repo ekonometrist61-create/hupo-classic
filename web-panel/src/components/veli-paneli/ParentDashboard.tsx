@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 
 import ChildScope from "./ChildScope";
+import CocukDenemeGecmisi from "./CocukDenemeGecmisi";
 import DenemeKaydiKarti from "./DenemeKaydiKarti";
 import ReviewTopicsList from "./ReviewTopicsList";
 import StatsCards from "./StatsCards";
@@ -26,6 +27,10 @@ export default function ParentDashboard({ students }: ParentDashboardProps) {
         return (
           <>
             <DenemeKaydiKarti
+              cocukId={studentId}
+              cocukAd={ogrenci?.full_name ?? ogrenci?.username ?? null}
+            />
+            <CocukDenemeGecmisi
               cocukId={studentId}
               cocukAd={ogrenci?.full_name ?? ogrenci?.username ?? null}
             />

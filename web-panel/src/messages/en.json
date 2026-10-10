@@ -1831,6 +1831,20 @@
         "iade": "Refunded"
       }
     },
+    "denemeGecmisi": {
+      "title": "Mock Exam History",
+      "desc": "Completed mock exams for {ad}.",
+      "loading": "Loading history...",
+      "empty": "No completed mock exams yet.",
+      "error": "Could not load history.",
+      "puan": "points",
+      "sira": "Rank {sira} / {katilimci}",
+      "dogru": "{dogru} correct",
+      "yanlis": "{yanlis} wrong",
+      "teslim_elle": "Submitted within time",
+      "teslim_sure_doldu": "Submitted when time ran out",
+      "teslim_otomatik": "Not submitted; answers were saved automatically when time ran out"
+    },
     "denemeKaydi": {
       "loading": "Loading upcoming exams...",
       "title": "Upcoming Mock Exams",

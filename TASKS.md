@@ -523,12 +523,13 @@ Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-cast
 - [x] Faz 5D — `PaylasKarti.tsx`: sonuç sayfasında canvas ile 1080×1080 PNG (ad yok; puan, sınıf sırası, yüzdelik). Web Share, yoksa indirme. tsc + eslint temiz; tarayıcıda görsel kontrolü yapılmadı.
 
 ### 12.4 Sıradaki
-- [ ] Uçtan uca testler (12.8 / 12.9 / 12.10) — test öğrenci + veli hesabı ve tarayıcı gerekir.
-- [ ] Faz 4 gerçek profil birleştirme — KARAR BEKLİYOR: veri taşıma/silme ve geri alma kuralı.
+- [ ] Uçtan uca testler (12.8 / 12.9 / 12.10) — EN SON yapılacak. Test öğrenci + veli hesabı ve tarayıcı gerekir.
+- [x] Faz 4 gerçek profil birleştirme — migration `20261020001000`. Ana hesap = daha önce oluşturulan hesap. Deneme ve katılım kayıtları ana hesaba taşınır; aynı sınavda iki kayıt varsa tamamlanmış/yüksek puanlı olan kalır. Her birleştirme `identity_merge_log`'a yazılır. XP/rozet/görev/karakter ve veli onay (consents) kayıtları kaynak hesapta kalır (ayrı karar). Birleştirilen öğrenci hesabı sınava giremez; veli kaydı ana hesaba yapılır. Test verisinde deneme gerekir.
 - [ ] `supheli` bayrağı admin sonuç listesinde görünmüyor (`admin_get_mock_exam_results` değişikliği gerekir).
-- [ ] Bitirilmemiş denemeler: öğrenci sekmeyi kapatırsa bitiş ve bildirim tetiklenmez. Süre dolan cevap yolunda (`submit_mock_exam_answer`) `perform _deneme_sinavi_bitir` ardından `raise` yapıldığı için bitiş geri alınıyor; düzeltme gerekir.
-- [ ] `deneme_sonuc_bildirimi` worker'ı (olay_kutusu → e-posta).
-- [ ] `/ticari-ileti-izni` şirket unvanı, iletişim e-postası, tarih + hukuk onayı.
+- [x] Bitirilmemiş denemeler: `deneme_sure_dolanlari_kapat()` her dakika (pg_cron) süresi dolmuş bitmemiş denemeleri kapatır; teslim türü `otomatik`, bildirim tetiklenir. Kapanış süre sonunda olur, anında değil: öğrenci süre içinde de sınava geri dönemez (`start` tekrar girişi reddeder), bu yüzden süre sonu tek kesin zamandır. Veli panelinde (`CocukDenemeGecmisi`) ve öğrenci gelişim sayfasında görünür. Migration `20261020000900`.
+- [x] Süre dolan cevap yolu düzeltildi: `submit_mock_exam_answer` artık bitirip `return` eder (raise yok), bitiş kalıcı. Migration `20261020000900`.
+- [x] `deneme_sonuc_bildirimi` worker'ı — Edge Function `olay-kutusu-gonder` (`--no-verify-jwt`) deploy edildi; pg_cron her 5 dk pg_net ile çağırır. Sağlayıcı: Resend (karar onayı bekliyor). Veritabanı tarafı: `olay_kutusu_talep_et` (lease + deneme sayacı, 5 denemede ölü kayıt), `olay_kutusu_sonuc_yaz` (üssel geri çekilme), `deneme_bildirim_alici` (service_role). Migration `20261020001100`. **Gönderimi açmak için:** `supabase secrets set OLAY_WORKER_SECRET=… RESEND_API_KEY=… OLAY_MAIL_FROM="Hupolingo <bildirim@alan.adi>" PUBLIC_SITE_URL=…`; Supabase Vault'a aynı değerle `olay_worker_secret` adında secret ekle. Gönderici alan adı doğrulanmadan e-posta gitmez. Gizli metin repoda yok.
+- [ ] `/ticari-ileti-izni` şirket unvanı, iletişim e-postası, tarih + hukuk onayı — KARAR: en son yapılacak, Google Play canlıya çıkmadan önce.
 - [ ] CAPTCHA_SECRET — domain bağlandıktan sonra Edge Function ortamına.
-- [ ] İYS 3 iş günü kaydı — İYS entegrasyon bilgileri gerekir.
+- [ ] İYS 3 iş günü kaydı — KARAR: en sondan bir önce; bekleme listesinde. İYS entegrasyon bilgileri gerekir.
 - [ ] 8. sınıf LGS sınav tipi (§12.5).
