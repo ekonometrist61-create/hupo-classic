@@ -19,6 +19,7 @@ import '../widgets/hupo/hupo_loading.dart';
 import '../widgets/shield_earned_banner.dart';
 import '../widgets/ui/stat_pill.dart';
 import '../widgets/ui/subject_style.dart';
+import '../widgets/splash/home_entrance_stagger.dart';
 import '../models/privacy_models.dart';
 import 'parent_link_screen.dart';
 import 'privacy_notice_screen.dart';
@@ -286,7 +287,13 @@ class HomeScreen extends ConsumerWidget {
                             _ConsentNote(hasParent: p.hasParent),
                             const SizedBox(height: 12),
                           ],
-                          bolumler,
+                          // Sahne 4 — içerik çok hafif bir kademeli belirmeyle
+                          // girer; Hupo'nun splash'teki konumuyla süreklilik
+                          // sağlar ve keskin sıçramayı önler.
+                          HomeEntranceStagger(
+                            delay: const Duration(milliseconds: 120),
+                            child: bolumler,
+                          ),
                         ],
                       ),
                     ),
@@ -391,7 +398,7 @@ class _Hero extends ConsumerWidget {
                 icon: Icons.bolt,
                 iconColor: AppColors.primary,
                 value: '${stats.xp}',
-                label: 'XP',
+                label: 'Toplam XP',
               ),
               StatPill(
                 icon: Icons.local_fire_department,
