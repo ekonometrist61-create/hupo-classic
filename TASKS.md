@@ -1,7 +1,7 @@
 # TASKS — Öğrenci Hazırlık (Hupo) kurtarma projesi
 > Ana çalışma dosyası: `MASTER_BRIEF.md`
 > Kurallar: `AGENTS.md`
-> Temizlik kararları: `TEMIZLIK_RAPORU.md`
+> Temizlik kararları: `docs/arsiv/TEMIZLIK_RAPORU.md`
 > Kurtarma kanıtı: `kurtarilan/KURTARMA_RAPORU.md`
 
 Son güncelleme: 03 Ekim 2026
@@ -46,7 +46,7 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 ### Belgeler
 - [x] `MASTER_BRIEF.md` — projenin tek doğruluk kaynağı
 - [x] `AGENTS.md` — ajan kuralları
-- [x] `TEMIZLIK_RAPORU.md` — silinebilirler listesi
+- [x] `docs/arsiv/TEMIZLIK_RAPORU.md` — silinebilirler listesi (arşive taşındı)
 - [x] `TASKS.md` — bu dosya
 - [x] `Task.md` — eski adıyla (ikisi de var, `TASKS.md` esas)
 
@@ -100,7 +100,7 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 ### Web paneli
 - [x] Lint hataları giderildi (`eslint .` → 0 hata)
 - [x] `npm run build` tamamlandı (`✓ Compiled successfully in 2.9min`, 51 sayfa)
-- [x] PHASE 0 durum raporu yazıldı → `PHASE0_DURUM_RAPORU.md`
+- [x] PHASE 0 durum raporu yazıldı → `docs/arsiv/PHASE0_DURUM_RAPORU.md`
 - [x] Web public giriş rotası production server'da doğrulandı; admin rotası oturumsuzken girişe yönleniyor
 - [x] Web proxy locale-prefix normalizasyonu düzeltildi; anonim claim gerçek oturum sayılmıyor
 - [ ] Admin paneli oturum açılmış tarayıcıda doğrulanacak (kullanıcı oturumu gerekir)
@@ -310,3 +310,190 @@ Kapsam: çocuk kotası ve profil → veli mesajı; landing ve veli paneli plan/s
 - [ ] Landing'deki kanıtsız iddialar ("14 Gün İade Garantisi", "%100 Güvenli Ödeme", "%40 tasarruf") için kaynak veya kaldırma kararı
 - [ ] Mağaza politikası: çocuk uygulamasındaki harici satın alma bağlantısının Apple/Google kuralları ile uyumu
 - [ ] Çocuk akışının gerçek cihazda kontrolü (kota diyaloğu, sayfa, kopyalama)
+
+## 11. Güvenlik ve boyut çalışma paketi (2026-10-10)
+Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçümleri). Kararlar 2026-10-10'da kullanıcı tarafından verildi. Durum işaretleri: `[x]` yapıldı ve kontrol edildi, `[ ]` bekliyor, `(ertelendi)` gerekçesiyle sonraya bırakıldı.
+
+### 11.1 Kararlar
+| # | Konu | Karar |
+|---|---|---|
+| 1 | Anahtar ve jeton yenileme | En son, birlikte. Claude yönlendirir, kullanıcı panellerde kendisi yapar |
+| 2 | Uzak depo | Özel; başka katkıcı yok |
+| 3 | `mobile-app/telefonda-ac/sunucu.dart` | Kaldırıldı. Kaybı: telefonda LAN üzerinden web önizleme kolaylığı. Yerine: `tools/serve.ps1` (127.0.0.1) ve APK |
+| 4 | AdMob kodu | Şimdilik kalır; ileride tekrar konuşulacak |
+| 5 | `.netlify/`, `ortam/`, tek seferlik `tools/`, kök PNG'ler, eski notlar | Git'ten çıkarıldı, `docs/arsiv/` altına taşındı (`docs/arsiv/` `.gitignore`'da) |
+| 6 | Kullanılmayan bağımlılıklar | Kaldırılacak |
+| 7 | Migration konsolidasyonu | Şimdilik dışarıda |
+| 8 | Uzak Supabase Dashboard (e-posta onayı, MFA, site_url) | İleride; şimdilik kalır |
+
+### 11.2 Aşama 0 — Kimlik bilgileri (EN SON, birlikte)
+- [ ] Google API anahtarlarını (Gemini / Stitch, `9b4ee9c` commit'inde `.claude/mcp.json` ve `.claude/settings.json`) iptal et ve yenile
+- [ ] GitHub kişisel erişim jetonunu iptal et, yenisini oluştur; `origin` URL'sinden jetonu kaldır, kimlik yöneticisi kullan (`.git/config`)
+- [ ] Git geçmişini temizle: `git filter-repo` ile anahtarlı `.claude/` sürümlerini kaldır; force push (her adımda ayrı onay). Anahtar yenilemesinden SONRA yapılır
+- [ ] Yeni anahtarları kullanan ortamları kontrol et (Netlify ortam değişkenleri, yerel `.env.local`, MCP yapılandırması)
+
+### 11.3 Aşama 1 — Güvenlik düzeltmeleri
+- [x] `sunucu.dart` kaldırıldı (karar 3). Dizin geçişi ve LAN'a açık dinleme riski ortadan kalktı
+- [x] `evaluate_characters` ve `characters_after_change` yetkileri kaldırıldı; yalnızca trigger'dan çağrılıyor (migration `20261019000000_guvenlik_rpc_yetkileri.sql`)
+- [x] Admin RPC'leri (9 adet) kontrolü: canlı `proacl` ile doğrulandı, anon/PUBLIC yetkisi **zaten yoktu** (20260920000900). Önceki "anon yetkisi kaldırıldı" iddiası yanlıştı; ilgili blok migration'dan çıkarıldı
+- [x] `veli_adayi_olustur` yanıtından `yeni` alanı kaldırıldı (e-posta varlığı sızıntısı kapandı) — migration `20261019000100_veli_adayi_yanit_sadelestirme.sql`, `supabase/tests/veli_adaylari_tests.sql` güncellendi
+- [x] `veli_adayi_olustur`: anonim çağrıda mevcut adayın adı ve telefonu artık üzerine yazılmaz (karar 2026-10-10; migration `20261019000100`, test güncellendi). Pazarlama onayı yükseltmesi çalışmaya devam eder
+- [x] Prod CSP'den `unsafe-eval` kaldırıldı; `object-src 'none'`, `base-uri 'self'`, `form-action 'self'` eklendi (`web-panel/next.config.ts`)
+- [ ] **Karar bekliyor:** CSP `connect-src` listesinde PostHog ana bilgisayarı yok; onaylı analitik gönderimi engellenmiş olabilir
+- [x] Landing `dangerouslySetInnerHTML` kullanımları düz metne çevrildi (sabit veri, `&#305;` varlıkları temizlendi)
+- [x] `npm audit --omit=dev` yüksek bulguları giderildi (`npm audit fix`, major yükseltme yok)
+- [x] Android: `allowBackup="false"`; `bundleRelease` anahtarsız derlenmez, `assembleRelease` için uyarı. **Derlenmedi:** Android SDK doğrulaması ve release anahtarı bu makinede yok; yalnızca kod incelemesi
+- [ ] Release anahtarı kurulumu: `key.properties` ve upload keystore bu makinede yok; mağaza yüklemesi öncesi gerekli
+- [x] **Canlıya deploy edildi (2026-10-10, kullanıcı onayı):** `20261019000000` … `…000400` (5 migration). Deploy sonrası salt okuma doğrulaması: `evaluate_characters`, `characters_after_change`, `exchange_auth_bridge_token`, `issue_auth_bridge_token` yetkileri yalnızca `service_role`; `veli_adayi_olustur` yeni tanımda; `get_carpim_sifreleri` yetkileri değişmedi (`authenticated`, `service_role`); fonksiyon/tablo/politika sayıları 265 / 102 / 45 (kurtarma no-op). `db:status`: 5 kayıt uzakta, bekleyen yok. Yerelde Docker yok; `supabase test db` çalıştırılmadı
+- [x] Auth bridge: `exchange_auth_bridge_token` ve `issue_auth_bridge_token` yetkisi anon/authenticated'dan kapatıldı (migration `20261019000400`; kullanılmadıkları kullanıcı onayıyla doğrulandı). Fonksiyonlar ve `auth_bridge_tokens` tablosu KALDI; kaldırma ayrı onayla
+- [ ] (ertelendi) `iletisim_izni_iptal_et`: e-posta bağlantısına imzalı token. Mail gönderim tasarımı gerekir
+- [ ] (ertelendi) `veli_adayi_olustur` ve veli kodu için IP/captcha limiti. Turnstile anahtarı gerekir
+- [ ] (ertelendi) `search_path = public, pg_temp` → `''` standardizasyonu (~17 fonksiyon). Gövdelerde nitelemesiz tablo adı kırabilir; DB testi şart
+
+### 11.4 Aşama 2 — Uzak Supabase ayarları (karar 8, ileride)
+- [ ] E-posta onayını aç
+- [ ] Admin hesapları için TOTP MFA zorunlu yap
+- [ ] `site_url` ve `additional_redirect_urls` değerlerini prod adresine göre ayarla (yerelde `127.0.0.1`)
+- [ ] Şifre politikasını güçlendir (en az 10 karakter, karmaşıklık)
+- [ ] **Sızdırılmış şifre koruması kapalı** (advisor `auth_leaked_password_protection`): Auth → Passwords ekranından aç
+
+### 11.5 Aşama 3 — Boyut
+- [x] `web-panel/.netlify/` git'ten çıkarıldı, `.gitignore`'a eklendi (diskte duruyor)
+- [x] `ortam/` → `docs/arsiv/ortam/` (başka projeye ait kurulum belgeleri)
+- [x] Tek seferlik `tools/` betikleri → `docs/arsiv/tools/` (13 dosya). Kalanlar: `serve.ps1`, `serve-mobile.ps1`, `sql-sozdizim-denetimi.mjs`, `dart-statik-denetim.mjs`, `istemci-rpc-denetimi.ps1`, `soru_bankasi_sql*.mjs`
+- [x] Kök PNG'ler (`kontrol-1..3.png`, `şema-gecici.png`) ve eski notlar (`DENETIM_NOTU.md`, `DURUM.md`, `PHASE0_DURUM_RAPORU.md`, `TEMIZLIK_RAPORU.md`, `Task.md`, `cm.txt`) → `docs/arsiv/`
+- [x] `mobile-app/assets_arsiv/` → `docs/arsiv/mobile-assets_arsiv/` (pakete girmiyordu)
+- [x] Karakter görselleri tekilleştirildi: 81 dosya birebir aynıydı (SHA-256). `web-panel/public/characters/` git'ten çıkarıldı; `web-panel/scripts/sync-karakterler.mjs` prebuild/predev'de mobil kaynaktan kopyalar
+- [x] Kullanılmayan web sayfaları ve bileşenleri **arşive taşındı (silinmedi)**: 14 TailAdmin şablon sayfası ve bağlı 73 kaynak dosyası → `docs/arsiv/web-panel-kullanilmayan/`. `proxy.ts` içindeki şablon rota listesi temizlendi. `yonetim/sorular/QuestionHistoryDrawer.tsx` yönetim özelliği olduğu için kaldı
+- [x] Referanssız 12 `public/images` alt klasörü (şablon demo görselleri, ~90 dosya) arşive taşındı; `error/` ve `shape/` kullanıldığı için kaldı
+- [x] `mobile-app/lib/widgets/gradient_background.dart` (şablon artığı, kullanılmıyordu) arşive taşındı
+- Not: bu turdaki git silmeleri (`git rm --cached`) index'te staged durumda; commit atılmadı
+- [x] Kullanılmayan npm bağımlılıkları kaldırıldı (`npm uninstall`, doğrulanmış liste)
+- [x] Kullanılmayan pub bağımlılıkları kaldırıldı (`pubspec.yaml`, `flutter pub get`)
+- [ ] **Karar bekliyor:** `mobile-app/tool/previews/` (38 PNG) golden test referansı; arşivlenirse görsel testler kırılır. Kalsın mı, testlerden çıkarılsın mı?
+- [ ] **Karar bekliyor:** `docs/mobil-yeniden-tasarim/referans/` PNG'leri (~4 MB). Git LFS mi, arşiv mi?
+- [ ] (ertelendi, karar 7) Soru seed'lerinin (`20261012000000_soru_bankasi_tum_siniflar.sql`, 4.350 satır) migration dışına taşınması: migration geçmişini etkiler
+- [ ] (ertelendi, karar 7) Migration konsolidasyonu (261 fonksiyon tanımı / 231 benzersiz)
+- [ ] Ek aday: `web-panel/banner.png` (şablon artığı, kök dışında)
+- [x] `mobile-app/lib/services/push/push_backend_firebase.dart` ve `lib/ads/student_banner_ad.dart` analiz dışına alındı (karar; `analysis_options.yaml`). Silinmedi; Firebase / AdMob kurulunca geri alınacak. AdMob dosyası karar 4 gereği kalır
+
+### 11.6 Aşama 4 — Doğrulama (2026-10-10)
+- [x] `web-panel`: `npm run lint` → 0 hata, 13 uyarı (uyarılar önceden vardı). `npm run build` → başarılı, tüm rotalar üretildi. Önce eski `.next` önbelleği silindi (eski tip dosyaları silinen sayfalara bakıyordu; önbellek yeniden üretilebilir)
+- [x] `web-panel`: `npm audit --omit=dev` → 0 açık (önce 2 yüksek)
+- [x] `mobile-app`: `flutter pub get` → lock'tan 33 bağımlılık düştü (`build_runner` ve kaldırılan paketlerin geçişli bağımlılıkları)
+- [x] `mobile-app`: `flutter analyze` → No issues found (önce 21 hata; hepsi paketsiz iki dosyadaydı, bkz. 11.5)
+- [ ] `mobile-app`: `flutter test` → 193 geçti, 2 başarısız: `membership_test.dart`, `quiz_quota_test.dart`. Testler `lib/` içinde artık bulunmayan eski metinleri bekliyor (ör. "Premium için velinle konuş.")
+- [x] `tools/sql-sozdizim-denetimi.mjs` → 80 dosya, 0 hata (beş yeni migration dahil)
+- [x] **Kuru test (canlıda `BEGIN … ROLLBACK`, 2026-10-10):** 5 migration hatasız çalıştı; `veli_adaylari` test paketi 12/12 OK; fonksiyon/tablo/politika sayıları canlıyla aynı (265 / 102 / 45); geri alma doğrulandı (ACL ve veri değişmedi). Test senaryo 9'da, tabloyu sahip rolüne geçmeden okuyan bir hata düzeltildi (`authenticated` tabloyu okuyamaz; test kodu hatasıydı)
+- [x] `npm run db:preview` (salt okuma, dry-run) → uzak veritabanına gidecek 4 migration listelendi; uzak geçmiş `20261018020000`'e kadar uygulanmış
+- [x] Canlı salt okuma denetimi (`supabase db query --linked`, `db advisors --type security`): RLS 102/102 tabloda açık; advisor'da RLS/search_path kaynaklı bulgu yok (bkz. 11.8)
+- [ ] `tools/istemci-rpc-denetimi.ps1` → 8 RPC "şemada tanım yok" (bkz. 11.7). Bu bu turdan önceki bir durum; yetki değişikliklerimiz bu RPC'leri etkilemiyor
+- [ ] Android: `flutter build appbundle` yapılmadı (release anahtarı yok)
+- [ ] Yeni migration'lar yerel Postgres'te çalıştırılmadı (Docker yok)
+
+### 11.7 Açık konular
+Kararlar bekliyor:
+- AdMob kalacak mı; kalırsa gizlilik metni ("reklam ve takip yok") ile tutarlı mı (karar 4)
+- `veli_adayi_olustur` üzerine yazma davranışı (11.3)
+- PostHog CSP ve analitik açık mı kalacak (11.3)
+- `tool/previews` (golden test referansı) ve `docs/mobil-yeniden-tasarim/referans` görselleri (11.5)
+- Firebase push arka ucu (`push_backend_firebase.dart`): paketler eklenince analiz dışından geri alınacak (11.5)
+- Migration konsolidasyonu ve soru seed'leri (karar 7)
+- Uzak Supabase Dashboard ayarları (karar 8)
+- ~~Yeni 5 migration'ın canlıya deploy edilmesi~~ — **yapıldı (2026-10-10)**, bkz. 11.3
+- **Auth bridge (`exchange_auth_bridge_token`, `issue_auth_bridge_token`, `auth_bridge_tokens`):** repoda hiçbir kod kullanmıyor. Kullanılıyor mu? Kullanılmıyorsa anon/authenticated yetkisi kapatılıp tablo kaldırılmalı. Kullanılıyorsa: `exchange` anonim çağrılabiliyor, token 90 saniye geçerli ve tek kullanımlık, ama `access_token`/`refresh_token` tabloda düz metin
+- Kolon düzeyi canlı–repo farkı (mevcut tablolar) için tam kontrol (açık teknik borç)
+
+Teknik borç (bu turda bulundu):
+- [x] **Canlı–repo uyuşmazlığı (8 istemci RPC'si):** `20261019000200_carpim_sifreleri_rpc_canli_dokum.sql` — gövdeler canlı `pg_get_functiondef` ile birebir, yetkiler canlı `proacl` ile eşleşiyor. Commit `7543fd5` bunları "SQL Editor'den zaten uygulanmış" gerekçesiyle kaldırmıştı. Canlıda henüz çalıştırılmadı
+- [x] **Kalan canlı–repo uyuşmazlığı:** canlıda olup repoda olmayan 24 fonksiyon, 7 tablo, 7 politika, 4 indeks, 1 trigger → `20261019000300_canli_sema_eksik_nesneler.sql`. Kaynak katalog sorguları (`db dump` Docker gerektirdiği için kullanılmadı). Kolon düzeyinde, repoda zaten olan tabloların farkı **kontrol edilmedi** (açık)
+- [ ] Repoda kalan bilinmeyen: `questions_sinifsiz_yedek` (yedek tablo; RLS açık, politika yok) — silinecek mi, saklanacak mı?
+- [ ] `_uret_meydan_kod()` iç yardımcısı anon ve authenticated'a açık; gerekçesi belirsiz. Kullanılmıyorsa yetkisi kaldırılmalı
+- [ ] `veli_cocuk_bagla`: 6 haneli kod (10⁶ alan), 15 dakika geçerli; hız sınırı `veli_baglama_hatalari` ile hesap başına. Hesap çoğaltılarak aşılabilir (e-posta onayı kapalıyken); sınır gözden geçirilmeli
+- [ ] İki başarısız test (eski metin beklentileri): ya testi ya da ürün metnini güncelle
+- [ ] `supabase/KURTARMA_DURUMU.md`'deki doğrulama betikleri artık `docs/arsiv/tools/` altında (git dışı)
+
+### 11.8 Canlı güvenlik denetimi (advisor, 2026-10-10, salt okuma)
+- Toplam 193 bulgu: 184 × `authenticated_security_definer_function_executable` (WARN), 8 × `anon_security_definer_function_executable` (WARN), 1 × `auth_leaked_password_protection` (WARN)
+- Anonim çağrılabilen 8 fonksiyon: `get_app_config`, `get_deneme_ayari`, `get_deneme_sinavi_tarihi`, `list_active_plans`, `get_next_mock_exam_public` (bilinçli herkese açık okuma); `veli_adayi_olustur` (üzerine yazma, karar bekliyor); `iletisim_izni_iptal_et` (imzasız, ertelendi); `exchange_auth_bridge_token` (karar bekliyor)
+- 184 authenticated SECURITY DEFINER çağrısının çoğu uygulamanın kullandığı RPC'ler. Her birinde `auth.uid()` / sahiplik kontrolü olup olmadığı tek tek incelenmedi; çocuk ve deneme sınavı RPC'lerinin örneklemi (`register_for_mock_exam`, `set_exam_marketing_consent`, `get_upcoming_mock_exams_for_child`, `veli_cocuk_bagla`) `auth.uid()` + `is_parent_of` / hız sınırı içeriyor
+- RLS: 102/102 tabloda açık. `search_path` ve görünüm kaynaklı bulgu yok
+- **Deploy sonrası (aynı denetim):** 188 bulgu (önce 193); anon SECURITY DEFINER 7 (önce 8). Kalanlar: `get_app_config`, `get_deneme_ayari`, `get_deneme_sinavi_tarihi`, `get_next_mock_exam_public`, `list_active_plans` (bilinçli okuma uçları); `veli_adayi_olustur` (anonim yazma, rate limit yok); `iletisim_izni_iptal_et` (imzasız, ertelendi)
+
+## 12. Yönetim paneli ve deneme sınavı çalışma paketi (2026-10-10)
+
+Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-castle.md`
+
+### 12.1 Kod yazıldı (deploy edilmedi, tarayıcıda test edilmedi)
+- [x] Üyeler & aileler: `ADMIN_SQL` kod bloğu ve `roleNote` kaldırıldı (`UsersManager.tsx`, `yonetim-panel.tr/en.json`)
+- [x] Navigasyon: business grubunda Ödemeler / Planlar / Denemeler en üste alındı (`adminNav.tsx`)
+- [x] Admin deneme sınavı yönetimi: `/yonetim/deneme-sinavlari` (`MockExamManager.tsx`, `MockExamDetailModal.tsx`, sayfa rotası, nav girişi, `types.ts`, tr/en çeviriler). Sınav oluştur/düzenle, aktif/pasif, sınıf bazlı onaylı soru atama (`admin_list_questions` + `admin_set_mock_exam_questions`), sonuç tablosu (`admin_get_mock_exam_results`)
+- [x] `tsc --noEmit` temiz; `npm run lint` 0 hata (13 uyarı, hiçbiri değiştirilen dosyalarda)
+- [ ] Gerçek admin oturumuyla tarayıcı testi yapılmadı
+
+### 12.2 Kritik bulgular (deploy öncesi karar gerekli)
+- Mobil uygulama (`mobile-app/lib/services/quiz_repository.dart`) hâlâ eski `start_mock_exam` / `submit_mock_exam` RPC'lerini kullanıyor. Bu RPC'ler veli kaydını ve sınav başlangıç saatini KONTROL ETMİYOR: öğrenci sınav saatinden önce soruları alabilir ve kayıtsız girebilir.
+- Canlı yeni akış (`20261019000300_canli_sema_eksik_nesneler.sql`): `register_for_mock_exam` (veli + `sinav_pazarlama_izni` onayı), `start_mock_exam_attempt`, `submit_mock_exam_answer`, `deneme_sinavi_cevaplari` (kolon: `dogru`, `cevap_zamani`). İstemciler henüz bu akışı kullanmıyor.
+- Oturumda yazılan zamanlama/cevap taslağı canlı akışla çeliştiği için silindi (deploy edilmemişti).
+- [x] **DEPLOY EDİLDİ (2026-10-10):** `20261020000000_deneme_sinavi_eski_rpc_sertlestirme.sql` ve `20261020000100_deneme_on_kayit.sql`. `npm run db:preview` dry-run onaylandı; `npm run db:deploy` başarılı.
+  - `20261020000000`: eski `start_mock_exam` (saat penceresi, sınıf, tek deneme, süre dolumu) ve `submit_mock_exam` (yalnızca sınavın soruları sayılır, süre + 30 sn tolerans; puanlama YKS'den **yüzde (0-100)**'e değiştirildi — `numeric(5,2)`, canlı `_deneme_sinavi_bitir` ile uyumlu).
+  - `20261020000100`: herkese açık ön kayıt tablosu (kanal bazlı izin, append-only izin logu) ve yalnızca service_role'ün çağırdığı `deneme_on_kayit_ekle`.
+- Puanlama kararı (2026-10-10): 3-7. sınıf için yüzde (0-100), negatif puan yok. 8. sınıf LGS hazırlığı için ileride **ayrı sınav tipi** eklenecek (bkz. §12.5).
+- Captcha: Turnstile/hCaptcha anahtarı geliştirme aşamasında atlandı (domain henüz bağlanmadı). Edge Function `SKIP_CAPTCHA=true` ile geliştirme modunda çalışır; canlıya geçmeden önce anahtar eklenecek.
+
+### 12.3 Açık kararlar
+- Eski RPC'ler: KARAR — sertleştirilecek, mobil imza korunacak. Veli kaydı kontrolü, bir kayıt yolu (ön kayıt → veli hesabı → "sınava katıl") çıkana kadar eklenmeyecek; aksi halde hiçbir öğrenci giremez.
+- Kayıt modeli: KARAR — herkese açık ve kolay ön kayıt (kayıtsız veliyi müşteriye çevirme kanalı). Captcha (Turnstile/hCaptcha) anahtarı olmadan edge fonksiyonu açılmayacak; anahtar kullanıcıdan istenecek.
+- Ön kayıt → hesap eşleştirme (aynı telefon/e-posta ile veli hesabı açıldığında çocuk kaydı bağlanır). Aile tekilleştirmesinin temeli; Faz 4 ile birlikte.
+- Veli kaydı (`register_for_mock_exam`) ve canlı yeni akış (`start_mock_exam_attempt`) hiçbir istemci tarafından çağrılmıyor; ön kayıt akışıyla birlikte tasarlanmalı.
+- Sonuç ilanı gizliliği (öneri): çocukların adı ve puanı herkese açık sıralamada gösterilmesin (reşit olmayanlar, KVKK). Herkese açık sayfada yalnızca sınıf bazlı toplu istatistik (en az 10 katılımcı), bireysel sıra yalnızca giriş yapmış velinin kendi çocuğunda. Plan 2D'deki "anonimleştirilmiş sıralama" bu nedenle değişecek.
+- Konu kırılımı premium (onaylandı). Gelişim izleme (Faz 3) ve aile tekilleştirme (Faz 4) paralel başlayacak.
+- Ticari elektronik ileti onayları: KARAR — 3 kanal (e-posta/SMS/telefon) ayrı kutu, tümü başlangıçta boş. Tam metin `/ticari-ileti-izni` sayfasında. Migration `20261020000300` ile 'telefon' kanalı eklendi; trigger 3 kanala güncellendi. Şirket bilgileri (unvan, e-posta, tarih) canlıya almadan önce doldurulacak, hukuk onayı alınacak. İYS 3 iş günü entegrasyonu (backend cron/webhook) ileride eklenecek.
+- Puanlama: KARAR — 3-7. sınıf için yüzde (0-100), negatif puan yok. 8. sınıf LGS hazırlığı ileriye bırakıldı (§12.5).
+
+### 12.5 Gelecek: 8. sınıf LGS sınav tipi
+8. sınıflar LGS hazırlığı için farklı yapı gerekir: TYT/AYT değil, LGS konu dağılımı. Şimdilik genel sınıf olarak sisteme girer. İleride:
+- `deneme_sinavlari`'na `sinav_tipi` (genel / lgs_hazirlik) kolonu ekle
+- LGS'ye özgü puan hesaplama (konu ağırlıkları, net hesabı) yeni yardımcı fonksiyonla
+- Admin UI'da sinav tipi seçimi
+
+### 12.6 Faz 2A tamamlandı (2026-10-10)
+- [x] `get_open_exam_for_registration()` RPC (migration `20261020000200`) — id + ad + baslangic_zamani + siniflar döner; anon ve authenticated erişebilir. Deploy edildi.
+- [x] Edge Function `deneme-on-kayit` — CAPTCHA_SECRET ortam değişkeni varsa Turnstile doğrular, yoksa geliştirme modunda atlar. service_role ile `deneme_on_kayit_ekle` çağırır. Deploy edildi (`--no-verify-jwt`).
+- [x] `/deneme-sinavi-kayit` sayfası — açık sınav varsa form gösterir, yoksa "yakında" mesajı. Auth gerektirmez; full-width-pages grubunda.
+- [x] `DenemeKayitForm.tsx` — veli ad, çocuk ad, sınıf, e-posta, telefon, KVKK zorunlu, e-posta/SMS izin opsiyonel. KVKK_SURUM ve IZIN_SURUM versiyonlu.
+- [x] `DenemeExamSection.tsx` CTA `/signup` → `/deneme-sinavi-kayit` değiştirildi.
+- [x] Çeviri anahtarları: `landing.denemeKayit.*` (tr + en).
+- [x] `tsc --noEmit` temiz. `npm run lint` 0 hata.
+- [ ] Tarayıcıda test: açık sınav oluşturup form akışı test edilmedi.
+- [ ] CAPTCHA_SECRET Supabase Dashboard → Edge Functions → Environment'a eklenecek (domain bağlandıktan sonra).
+
+### 12.7 Kullanıcıdan bekleyen (Claude hatırlatacak)
+- [ ] **CAPTCHA_SECRET:** Domain bağlandıktan sonra Supabase Dashboard → Edge Functions → `deneme-on-kayit` → Environment Variables → `CAPTCHA_SECRET` (Cloudflare Turnstile secret). Şu an geliştirme modunda atlanıyor.
+- [ ] **`/ticari-ileti-izni` sayfası:** Yer tutucuları doldurun — şirketin tam ticaret unvanı, iletişim e-postası, son güncelleme tarihi — ve hukuk birimi onayı alın.
+- [ ] **İYS 3 iş günü kaydı:** E-posta dışı kanallar (SMS, telefon) İYS'ye henüz bildirilmiyor. Backend webhook/cron gerekiyor (ileride).
+- [ ] **8. sınıf LGS sınav tipi:** 8. sınıflar LGS hazırlığı için ayrı `sinav_tipi` (bkz. §12.5) — kullanıcı ilerleyen fazda talep edecek.
+
+### 12.8 Faz 2B tamamlandı (2026-10-10)
+
+#### Veli paneli — deneme kaydı
+- [x] `DenemeKaydiKarti.tsx` — `get_upcoming_mock_exams_for_child` + `set_exam_marketing_consent` + `register_for_mock_exam`. Velinin çocuğu için telefon + KVKK onayı ile kayıt. Seçili çocuk değişince otomatik güncellenir.
+- [x] `ParentDashboard.tsx` — `ChildScope.render` callback'e `DenemeKaydiKarti` eklendi; seçili öğrencinin `cocukId` ve `cocukAd` aktar.
+- [x] Çeviri anahtarları: `veliPaneli.denemeKaydi.*` (tr + en).
+
+#### Öğrenci sınav arayüzü
+- [x] `DenemeEkrani.tsx` — `start_mock_exam_attempt` → tek soru / sayfalı navigasyon; anlık `submit_mock_exam_answer`; `finish_mock_exam_attempt`; motivasyonel bitiş ekranı (poza göre 3 ton). Sayaç ≤5 dk sarı, ≤1 dk kırmızı + titreme. Alt şerit: boş/cevaplı/işaretli renkleri. Çift submit koruması (`submitRef`).
+- [x] `YaklasanDenemeKarti.tsx` — öğrenci ana sayfasında kayıtlı sınavları listele; sınav başladıysa "Sınava Gir" bağlantısı.
+- [x] `/ogrenci/deneme/[examId]` sayfası — `ogrenci` rolü kontrolü, ardından `DenemeEkrani`.
+- [x] Öğrenci ana sayfasına `get_my_mock_exam_status()` çağrısı + `YaklasanDenemeKarti` eklendi.
+- [x] `npm run build` — exit code 0.
+- [ ] Uçtan uca test: admin sınav oluştur → veli çocuğu kaydet → öğrenci sınava gir → sonuç ekranını gör.
+
+#### Notlar
+- Doğru cevaplar (`dogru_sik`) istemciye gönderilmiyor — bitiş ekranında da gösterilmiyor. Güvenlik DB seviyesinde.
+- `start_mock_exam_attempt` → velinin `register_for_mock_exam` ile çocuğu kaydetmemiş olması hata verir. Hata mesajı ekranda kullanıcıya gösterilir.
+- `beforeunload` uyarısı henüz yok (P1); JWT yenileme ve localStorage yedek henüz yok (P1).
+
+### 12.4 Sıradaki
+- Sonuç ilanı sayfası (`/deneme-sonuclari/[examId]`): sınıf bazlı anonim sıralama + puan dağılımı (herkese); konu kırılımı (premium). RPC'ler: `get_exam_results_public`, `get_exam_topic_breakdown`.
+- Gelişim izleme (Faz 3), aile tekilleştirme (Faz 4), anti-hile ve bildirim (Faz 5).

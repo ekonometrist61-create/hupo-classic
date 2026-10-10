@@ -3,6 +3,7 @@
 import { useTranslations } from "next-intl";
 
 import ChildScope from "./ChildScope";
+import DenemeKaydiKarti from "./DenemeKaydiKarti";
 import ReviewTopicsList from "./ReviewTopicsList";
 import StatsCards from "./StatsCards";
 import SubjectSuccessChart from "./SubjectSuccessChart";
@@ -20,9 +21,15 @@ export default function ParentDashboard({ students }: ParentDashboardProps) {
   return (
     <ChildScope
       students={students}
-      render={(_, data) => (
-        <>
-          <StatsCards
+      render={(studentId, data) => {
+        const ogrenci = students.find((s) => s.id === studentId) ?? null;
+        return (
+          <>
+            <DenemeKaydiKarti
+              cocukId={studentId}
+              cocukAd={ogrenci?.full_name ?? ogrenci?.username ?? null}
+            />
+            <StatsCards
             summary={data.ozet}
             weekly={data.haftalik}
             labels={{
@@ -59,7 +66,8 @@ export default function ParentDashboard({ students }: ParentDashboardProps) {
             </div>
           </div>
         </>
-      )}
+        );
+      }}
     />
   );
 }

@@ -2,6 +2,7 @@ import { createClient } from "@/utils/supabase/server";
 import { Link } from "@/i18n/navigation";
 import { redirect } from "next/navigation";
 import { setRequestLocale } from "next-intl/server";
+import YaklasanDenemeKarti from "@/components/ogrenci/YaklasanDenemeKarti";
 
 export const metadata = { title: "Ana Sayfa — Hupo" };
 
@@ -60,14 +61,23 @@ export default async function OgrenciAnaSayfa({
     .select("ders")
     .eq("onay_durumu", "onaylandi");
 
+  const { data: denemeRows } = await supabase.rpc("get_my_mock_exam_status");
+
   const dersler = [...new Set((soruRows ?? []).map((r) => r.ders as string))].sort();
 
   const ad = profil.full_name ? profil.full_name.split(" ")[0] : "Öğrenci";
   const xp = istatistik?.xp ?? 0;
   const level = istatistik?.level ?? 1;
   const streak = istatistik?.streak_count ?? 0;
+  const denemeleri = Array.isArray(denemeRows) ? denemeRows : [];
+
   return (
     <div className="space-y-8">
+      {/* Yaklaşan deneme sınavları */}
+      {denemeleri.length > 0 && (
+        <YaklasanDenemeKarti denemeleri={denemeleri} />
+      )}
+
       {/* Karşılama + istatistik */}
       <div className="rounded-2xl border border-gray-200 bg-white p-6 dark:border-gray-800 dark:bg-gray-900">
         <h1 className="mb-1 text-2xl font-bold text-gray-900 dark:text-white">

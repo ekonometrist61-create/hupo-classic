@@ -60,6 +60,11 @@
     "consentAnd": "ve",
     "consentTerms": "Kullanım Koşulları",
     "consentSuffix": " metinlerini kabul etmiş olursun.",
+    "marketingTitle": "İletişim Tercihlerin",
+    "marketingEposta": "E-posta ile bilgilendirilmek istiyorum.",
+    "marketingSms": "SMS ile bilgilendirilmek istiyorum.",
+    "marketingTelefon": "Telefonla aranmak istiyorum.",
+    "marketingKabul": "Seçimlerim kapsamında <link>HUPOLİNGO Ticari Elektronik İleti Bilgilendirme ve Onay Metni</link>'ni kabul ediyorum. İzinlerimi dilediğim zaman ücretsiz olarak değiştirebilir veya geri alabilirim. Onay vermemem platformu kullanmama engel değildir.",
     "consentMarketing": "Hupolingo'dan abonelik, ürün ve kampanya bilgileri için e-posta ile ticari ileti almak istiyorum. Bu onayı istediğin zaman geri alabilirsin.",
     "submit": "Hesap oluştur",
     "submitting": "Hesap oluşturuluyor…",
@@ -431,6 +436,33 @@
         { "title": "Karakter Koleksiyonu", "desc": "Düzenli pratikle kazanılan 40 karakter, sınıflara ayrılmış." },
         { "title": "Ay Ligi", "desc": "Arkadaşlarınla yarış, ligde yüksel, özel ödüller kazan." }
       ]
+    },
+    "denemeKayit": {
+      "title": "Deneme Sınavına Kaydol",
+      "desc": "Bilgilerinizi bırakın, sınav günü çocuğunuzu hatırlatalım.",
+      "noExam": "Şu anda açık kayıt döneminde bir sınav bulunmuyor.",
+      "noExamDesc": "Yaklaşan sınavlar için bu sayfayı ziyaret etmeye devam edin.",
+      "examLabel": "Sınav",
+      "veliAd": "Veli adı soyadı",
+      "cocukAd": "Çocuğun adı soyadı",
+      "sinif": "Sınıf",
+      "sinifSec": "Sınıf seçin",
+      "eposta": "E-posta adresi",
+      "telefon": "Telefon numarası",
+      "telefonHint": "ör: 0532 123 45 67",
+      "kvkk": "Kişisel verilerin Hupolingo tarafından, Proje Okulu sınav hazırlık hizmetleri kapsamında işlenmesini kabul ediyorum. <gizlilik>Aydınlatma Metni</gizlilik>",
+      "izinEposta": "E-posta ile bilgilendirilmek istiyorum.",
+      "izinSms": "SMS ile bilgilendirilmek istiyorum.",
+      "izinTelefon": "Telefonla aranmak istiyorum.",
+      "izinKabul": "Seçimlerim kapsamında <link>HUPOLİNGO Ticari Elektronik İleti Bilgilendirme ve Onay Metni</link>'ni kabul ediyorum. İzinlerimi dilediğim zaman ücretsiz değiştirebilir veya geri alabilirim. Onay vermemem kaydı tamamlamama engel değildir.",
+      "submit": "Kaydet",
+      "submitting": "Kaydediliyor...",
+      "successTitle": "Kaydınız Alındı!",
+      "successDesc": "Sınav günü size hatırlatma göndereceğiz. Çocuğunuza başarılar!",
+      "successBack": "Ana sayfaya dön",
+      "errRequired": "Zorunlu alanları doldurun.",
+      "errKvkk": "KVKK aydınlatma metnini onaylamanız gerekiyor.",
+      "errGeneric": "Kayıt sırasında bir hata oluştu. Lütfen tekrar deneyin."
     },
     "footer": {
       "tagline": "Öğren. Güçlen. Zirveye çık.",
@@ -1797,6 +1829,22 @@
         "basarisiz": "Başarısız",
         "iade": "İade"
       }
+    },
+    "denemeKaydi": {
+      "loading": "Yaklaşan sınavlar yükleniyor...",
+      "title": "Yaklaşan Deneme Sınavları",
+      "desc": "{ad} için açık deneme sınavları aşağıda. Kaydolarak sınava erişimini sağla.",
+      "register": "Kayıt Ol",
+      "registered": "Kayıtlı",
+      "formTitle": "Kayıt için bilgileri tamamla",
+      "phoneLabel": "Telefon Numarası",
+      "phoneDesc": "Sınav hatırlatmaları için kullanılır.",
+      "kvkkLabel": "Çocuğum adına Hupolingo deneme sınavı katılım koşullarını ve veri işleme bilgilendirmesini okudum, onaylıyorum.",
+      "confirmRegister": "Kayıt Yaptır",
+      "saving": "Kaydediliyor...",
+      "cancel": "Vazgeç",
+      "consentError": "Onay kaydedilemedi. Lütfen tekrar dene.",
+      "registerError": "Kayıt yapılamadı. Lütfen tekrar dene."
     }
   },
   "demo": {

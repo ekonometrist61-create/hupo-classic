@@ -60,6 +60,11 @@
     "consentAnd": "and",
     "consentTerms": "Terms of Service",
     "consentSuffix": ".",
+    "marketingTitle": "Communication Preferences",
+    "marketingEposta": "I want to receive updates by email.",
+    "marketingSms": "I want to receive updates by SMS.",
+    "marketingTelefon": "I want to be contacted by phone.",
+    "marketingKabul": "By making my selections I accept the <link>HUPOLİNGO Commercial Electronic Communication Disclosure and Consent Text</link>. I can change or withdraw my consent at any time free of charge. Not giving consent does not prevent me from using the platform.",
     "consentMarketing": "I want to receive subscription, product and campaign messages from Hupolingo by email. You can withdraw this consent at any time.",
     "submit": "Create account",
     "submitting": "Creating account…",
@@ -432,6 +437,33 @@
         { "title": "Character Collection", "desc": "40 characters earned through regular practice, grouped by class." },
         { "title": "Monthly League", "desc": "Race with friends, climb the league, win special rewards." }
       ]
+    },
+    "denemeKayit": {
+      "title": "Register for Mock Exam",
+      "desc": "Leave your details and we'll remind you on exam day.",
+      "noExam": "There is no exam with open registration at the moment.",
+      "noExamDesc": "Keep visiting this page for upcoming exams.",
+      "examLabel": "Exam",
+      "veliAd": "Parent full name",
+      "cocukAd": "Child's full name",
+      "sinif": "Grade",
+      "sinifSec": "Select grade",
+      "eposta": "Email address",
+      "telefon": "Phone number",
+      "telefonHint": "e.g. 0532 123 45 67",
+      "kvkk": "I accept the processing of my personal data by Hupolingo for Project School exam preparation services. <gizlilik>Privacy Notice</gizlilik>",
+      "izinEposta": "I want to receive updates by email.",
+      "izinSms": "I want to receive updates by SMS.",
+      "izinTelefon": "I want to be contacted by phone.",
+      "izinKabul": "By making my selections I accept the <link>HUPOLİNGO Commercial Electronic Communication Disclosure and Consent Text</link>. I can change or withdraw my consent at any time. Not giving consent does not prevent me from registering.",
+      "submit": "Register",
+      "submitting": "Registering...",
+      "successTitle": "Registration Received!",
+      "successDesc": "We'll send you a reminder on exam day. Best of luck to your child!",
+      "successBack": "Back to home",
+      "errRequired": "Please fill in all required fields.",
+      "errKvkk": "You must accept the privacy notice.",
+      "errGeneric": "An error occurred during registration. Please try again."
     },
     "footer": {
       "tagline": "Learn. Grow. Reach the top.",
@@ -1798,6 +1830,22 @@
         "basarisiz": "Failed",
         "iade": "Refunded"
       }
+    },
+    "denemeKaydi": {
+      "loading": "Loading upcoming exams...",
+      "title": "Upcoming Mock Exams",
+      "desc": "Open mock exams for {ad}. Register to give them access.",
+      "register": "Register",
+      "registered": "Registered",
+      "formTitle": "Complete registration details",
+      "phoneLabel": "Phone Number",
+      "phoneDesc": "Used for exam reminders.",
+      "kvkkLabel": "I have read and accept the Hupolingo mock exam participation terms and data processing notice on behalf of my child.",
+      "confirmRegister": "Confirm Registration",
+      "saving": "Saving...",
+      "cancel": "Cancel",
+      "consentError": "Consent could not be saved. Please try again.",
+      "registerError": "Registration failed. Please try again."
     }
   },
   "demo": {
