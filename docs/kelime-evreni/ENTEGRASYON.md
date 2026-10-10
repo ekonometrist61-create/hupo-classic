@@ -89,4 +89,4 @@ Durum işaretleri: `[x]` kod ve bir otomatik kontrolle doğrulandı; `[ ]` yapı
 - Eşzamanlılık yükü ve gerçek `award_xp_and_streak` (seri, lig, bildirim) ile birlikte SQL testi yapılmadı.
 - İçerik yok: ilk onaylı paket dil uzmanı incelemesi bekliyor.
 - İpucu metni cevabı açık etmemeli. İpucu cevaplamadan önce istemciye gider ve sunucu bunu denetlemez; yazar ve editör kontrolüne bağlıdır.
-- Tam Flutter test takımında (244 geçti, 3 başarısız) başarısız üç test `splash_gate_test.dart`'ta; bu dosya Kelime Evreni değişikliklerimle ilgili değil, `78f034d` (splash) commit'inin bileşenlerini kullanıyor.
+- Son tam Flutter test koşusu: 247 geçti, 3 başarısız. Başarısız üç test `splash_gate_test.dart`'ta ve hata `splash_screen` bileşenindeki `ProviderScope` eksikliğinden geliyor. Bu bileşen `78f034d` (splash) commit'inde değişti; Kelime Evreni değişikliklerinde splash dosyası yok. Splash'ın master'daki durumu ayrıca doğrulanmadı.

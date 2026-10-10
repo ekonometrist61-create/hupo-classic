@@ -561,7 +561,7 @@ Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1 başlangıç k
 - [ ] **Uzak Supabase'e uygulama YOK.** `npm run db:preview` ve `db:deploy` kullanıcı onayı bekler (CLAUDE: üretim migration onaysız yapılmaz)
 - [x] Flutter: model, repository, akış denetleyicisi (`kelime_oyun_akisi.dart`), ana ekran, oyun ekranı, Öğren kartı. 42 Kelime testi geçiyor; `flutter analyze` proje genelinde temiz
 - [x] Web: `/yonetim/kelime-evreni` (metrikler, taslak/inceleme/yayın/arşiv, sözlük ve ilişki onayı), veli Genel Bakış kartı. `tsc` ve ESLint temiz
-- [x] Tam Flutter test takımı: 244 geçti, 3 başarısız; üçü `splash_gate_test.dart` (Kelime Evreni ile ilgisiz, `78f034d` splash commit'inin bileşenleri)
+- [x] Tam Flutter test takımı (son koşu): 247 geçti, 3 başarısız; üçü `splash_gate_test.dart` (Kelime Evreni dosyalarında splash yok; hata `78f034d` splash bileşeninde, master'daki durumu doğrulanmadı)
 - [ ] Tarayıcı, cihaz ve ekran okuyucu kontrolü (oturum ve cihaz gerekir): 390 px / masaüstü, hareket azaltma, ses ve titreşim
 - [ ] Ortak `AnswerOption` kontrastı (beyaz metin, yeşil/turuncu zemin 4,5:1 altı). Quiz ekranını da etkiler; karar bekliyor
 - [ ] İçerik: ilk onaylı paket (dil uzmanı incelemesi gerekir; demo içerik yayınlanmaz)
