@@ -277,12 +277,20 @@ export default function DenemeEkrani({ examId }: Props) {
         </p>
         <p className="text-xs text-gray-400">puan (100 üzerinden)</p>
 
-        <a
-          href="/ogrenci"
-          className="mt-6 inline-block rounded-xl bg-brand-500 px-6 py-3 text-sm font-bold text-white hover:bg-brand-600"
-        >
-          Ana Sayfaya Dön
-        </a>
+        <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
+          <a
+            href={`/deneme-sonuclari/${examId}`}
+            className="rounded-xl bg-brand-500 px-6 py-3 text-sm font-bold text-white hover:bg-brand-600"
+          >
+            Sonuçları Gör →
+          </a>
+          <a
+            href="/ogrenci"
+            className="rounded-xl border border-gray-200 px-6 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
+          >
+            Ana Sayfaya Dön
+          </a>
+        </div>
       </div>
     );
   }

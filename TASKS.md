@@ -494,6 +494,14 @@ Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-cast
 - `start_mock_exam_attempt` → velinin `register_for_mock_exam` ile çocuğu kaydetmemiş olması hata verir. Hata mesajı ekranda kullanıcıya gösterilir.
 - `beforeunload` uyarısı henüz yok (P1); JWT yenileme ve localStorage yedek henüz yok (P1).
 
+### 12.9 Faz 2C — Sonuç İlanı Sayfası (2026-10-10)
+- [x] Migration `20261020000400`: `get_exam_public_results(p_exam_id)` — sınıf bazlı istatistik + puan dağılımı + kendi sonucu (anon + auth). `get_exam_topic_breakdown(p_exam_id)` — konu kırılımı (auth + premium). Deploy edildi.
+- [x] `/deneme-sonuclari/[examId]` — SSR, full-width-pages grubunda (auth gerekmez). Kendi sonucu (auth ise), sınıf bazlı istatistikler + histogram, konu kırılımı (premium) veya premium gate.
+- [x] `KonuKirilimi.tsx` — premium kullanıcıya ders/konu bazlı doğru/yanlış ilerleme çubuğu; free kullanıcıya CTA.
+- [x] `DenemeEkrani.tsx` bitiş ekranına "Sonuçları Gör →" + "Ana Sayfaya Dön" butonları.
+- [ ] Uçtan uca test: sınav tamamla → `/deneme-sonuclari/[examId]` doğru sonucu gösteriyor mu.
+
 ### 12.4 Sıradaki
-- Sonuç ilanı sayfası (`/deneme-sonuclari/[examId]`): sınıf bazlı anonim sıralama + puan dağılımı (herkese); konu kırılımı (premium). RPC'ler: `get_exam_results_public`, `get_exam_topic_breakdown`.
-- Gelişim izleme (Faz 3), aile tekilleştirme (Faz 4), anti-hile ve bildirim (Faz 5).
+- Gelişim izleme (Faz 3): `/deneme-gelisim` — puan trendi, konu ısı haritası. RPC'ler: `get_my_exam_progress()`, `get_my_topic_trends()`.
+- Aile tekilleştirme (Faz 4, Faz 3 ile paralel başlar).
+- Anti-hile ve bildirim (Faz 5).
