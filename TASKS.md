@@ -542,7 +542,7 @@ Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1 başlangıç k
 |---|---|---|
 | K1 | Kullanıcı sistemi | Yeni sistem YOK. `profiles` + `is_parent_of()` (veli) + `is_admin()` (yönetici). Paketin `word_parent_links` / `word_admin_members` adaptörleri kaldırıldı |
 | K2 | Soru bankası | `questions` KULLANILMAZ. Kelime soruları ayrı içerik türü (`kelime_sorulari`); anlam ve ilişki envanteri ayrı (`kelime_anlamlari`, `kelime_iliskileri`). Gerekçe: `questions` tüm mevcut quiz/tekrar/bildirim akışını etkiler; yayına alınan kelime sorularının Türkçe quizlere sızması istenmedi |
-| K3 | XP | Tek yazım yolu `award_xp_and_streak()`. XP yalnızca soru başına İLK doğru ve İPUCUSUZ cevapta (10 XP). İpucu XP'yi etkilemez (paketin 5 XP'si uygulanmadı). Mevcut `submit_answer` ile aynı desen |
+| K3 | XP | Tek yazım yolu ward_xp_and_streak(). XP, submit_answer ile aynı kuralla: yalnızca doğru, ipucusuz ve tekrar zamanı gelmiş cevapta; tutar sorunun zorluğuna göre 10/20/30 (kelime_sorulari.zorluk). İpucu mevcut sistemde olmayan bir yardımdır, ipucuyla doğru cevap XP vermez. Paketin 10/5 puanları kullanılmadı |
 | K4 | Ustalık | Yalnızca `taninma` becerisi yazılır; seviye en fazla 3. Seçenekle tanıma "tam ustalık" sayılmaz. Yanlış → 0 (1 gün). İpucu ile doğru → seviye değişmez (1 gün). Doğru → +1 (1 / 3 / 7 gün) |
 | K5 | Yayın onayı | Dört göz: yazan ≠ yayınlayan ≠ ilişki kuran ≠ ilişki onaylayan. DB CHECK + RPC kontrolü. **Tek yönetici olan kurulumda yayın yapılamaz**; gevşetilecekse karar gerekir |
 | K6 | Doğru şık gizliliği | `kelime_sorulari` ve `kelime_*` tablolarında `authenticated` tablo yetkisi YOK. Öğrenci yalnızca `kelime_oyun_getir` (doğru şık ve açıklama yok) ve `kelime_cevap_gonder` (cevap sonrası açıklama) RPC'lerini kullanır |

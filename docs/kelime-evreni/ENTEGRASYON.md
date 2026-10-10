@@ -8,7 +8,7 @@ Karar kaydı ve kalan işler: `TASKS.md` §13.
 | Konu | Paket (v0.1) | Mevcut repo | Karar |
 |---|---|---|---|
 | Kullanıcı / rol | `word_parent_links`, `word_admin_members` adaptörleri | `profiles.parent_id`, `profiles.role` (`admin`, `veli`, `ogrenci`, `ogretmen`), `is_parent_of()`, `is_admin()` | Adaptörler kaldırıldı; mevcut fonksiyonlar kullanıldı |
-| XP | `word_submit_attempt` yalnızca kendi tablosuna yazar, ledger'a yazmaz | `award_xp_and_streak()` tek yazım yolu, `xp_events` defteri, seri ve lig | Soru başına ilk doğru ve ipucusuz cevapta `award_xp_and_streak(…, 1, true)`; diğer doğru cevaplar seri sayar |
+| XP | `word_submit_attempt` yalnızca kendi tablosuna yazar, ledger'a yazmaz | `award_xp_and_streak()` tek yazım yolu, `xp_events` defteri, seri ve lig; `submit_answer` XP'yi zorluğa göre ve yalnızca tekrar zamanı gelmiş doğru cevapta verir | Aynı kural: XP = zorluk 1/2/3 → 10/20/30; yalnızca doğru, ipucusuz ve anlamın tekrar zamanı gelmiş olduğu cevapta. Diğer doğru cevaplar seri sayar. Paketin 10/5 puanları kullanılmadı |
 | Soru bankası | Ayrı `word_game_items` | `questions` (onay_durumu, quiz akışları) | Ayrı içerik türü; `questions` değişmedi (Türkçe quiz havuzuna sızmaz) |
 | Onay akışı | `status` draft/review/published/archived; `reviewed_by` | `questions.onay_durumu` (beklemede/onaylandi/reddedildi) | Kelime soruları için taslak/incelemede/yayinda/arsiv; dört göz kuralı DB CHECK + RPC |
 | Doğru şık gizliliği | `correct_index` ve `explanation` tablodan okunabilir (güvenlik açığı) | `questions` için tablo select kaldırılıp kolon grant'i kullanılıyor | Tablo yetkisi kapalı; yalnızca RPC; doğru şık cevap sonrası dönüyor |
@@ -26,7 +26,8 @@ Karar kaydı ve kalan işler: `TASKS.md` §13.
 
 ## 2. Veritabanı
 
-- Migration: `supabase/migrations/20261022000000_kelime_evreni.sql` (6 tablo, RLS, 15 RPC + 2 yardımcı).
+- Migration'lar (sırayla): `20261022000000_kelime_evreni.sql` (6 tablo, RLS, RPC'ler), `20261022000001_kelime_evreni_baslangic_icerik.sql` (93 anlam, 49 ilişki, 48 soru; hepsi taslak ve onaysız), `20261022000002_kelime_meydan_okuma.sql` (Arena kelime modu), `20261023000000_kelime_evreni_duzeltme.sql` (uzakta önceki sürümle uygulanmış kurulumu güncel sürüme getirir).
+- Uzak veritabanı: ilk iki migration önceki sürümle zaten uygulanmıştı (zorluksuz, 92 anlam, sorusuz). Uygulanmış migration değiştirilmediği için düzeltme ayrı migration olarak eklendi. Veri kaybı yok (seed dışında kullanıcı verisi yoktu). Son durum salt-okunur kontrolle doğrulandı: 93 / 49 / 48, hepsi taslak, onaylı ilişki yok.
 - Testler: `supabase/tests/kelime_evreni_tests.sql` (40 senaryo). Yerel çalıştırma: `supabase/tests/kelime_evreni/README.md` (PGlite, Docker gerekmez). Son çalıştırma: 40/40.
 - **Uzak Supabase'e uygulanmadı.** `npm run db:preview` ve `db:deploy` için kullanıcı onayı gerekir.
 
@@ -87,6 +88,9 @@ Durum işaretleri: `[x]` kod ve bir otomatik kontrolle doğrulandı; `[ ]` yapı
 - Gerçek cihaz ve tarayıcı görsel kontrolü yapılmadı (oturum ve cihaz gerekir).
 - Tek yöneticili kurulumda dört göz nedeniyle yayın yapılamaz; bu bir ürün kararıdır (TASKS §13.1 K5).
 - Eşzamanlılık yükü ve gerçek `award_xp_and_streak` (seri, lig, bildirim) ile birlikte SQL testi yapılmadı.
-- İçerik yok: ilk onaylı paket dil uzmanı incelemesi bekliyor.
+- İçerik taslak olarak yüklü (93 anlam, 49 ilişki, 48 soru). Yayın için ilişkilerin ve soruların ayrı bir yönetici tarafından onaylanması gerekir (dört göz). Tek yöneticili kurulumda yayın yapılamaz. İçerik dil uzmanı incelemesinden geçmemiştir.
+- Arena (kelime meydan okuma): puanlama `dogru x 4 - yanlis` (mevcut Arena kuralı), Arena XP üretmez (mevcut davranış). Yanıtlarla tekrar/ustalık kaydı oluşmaz. Gerçek cihazda iki hesapla uçtan uca deneme yapılmadı.
+- Görsel kontrol: öğrenci ekranları (ana ekran, oyun soru/yanlış geri bildirimi, Arena hub) gerçek fontlarla 390x844 ve 1024x768 boyutlarında kontrol edildi. Material ikon fontu test ortamında yüklenmediği için ikonlar kare görünür; uygulamada bu bir artefakt. Web yönetim ve veli sayfaları oturum gerektirdiği için kontrol edilmedi.
+- Arena'da `submit_challenge` ve `get_challenge_result` erişim kontrolü `IS DISTINCT FROM` ile düzeltildi (davet_edilen boşken önceki kontrol NULL nedeniyle atlanıyordu).
 - İpucu metni cevabı açık etmemeli. İpucu cevaplamadan önce istemciye gider ve sunucu bunu denetlemez; yazar ve editör kontrolüne bağlıdır.
 - Son tam Flutter test koşusu: 247 geçti, 3 başarısız. Başarısız üç test `splash_gate_test.dart`'ta ve hata `splash_screen` bileşenindeki `ProviderScope` eksikliğinden geliyor. Bu bileşen `78f034d` (splash) commit'inde değişti; Kelime Evreni değişikliklerinde splash dosyası yok. Splash'ın master'daki durumu ayrıca doğrulanmadı.
