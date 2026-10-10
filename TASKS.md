@@ -559,14 +559,17 @@ Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1 başlangıç k
 - [x] Bulunan ve düzeltilen hatalar: `text[] ||` dizi literali, `auth.uid()` dönüş tipi, `smallint`/`integer` parametre uyumsuzluğu, `OR` içinde hata üreten kontrol
 - [ ] Docker'da `supabase db reset` + `supabase test db` — Docker yok; PGlite ile yerine geçmez (gerçek `award_xp_and_streak`, `log_admin_action` yerine taklit kullanıldı)
 - [ ] **Uzak Supabase'e uygulama YOK.** `npm run db:preview` ve `db:deploy` kullanıcı onayı bekler (CLAUDE: üretim migration onaysız yapılmaz)
-- [ ] Flutter: öğrenci oyun ekranları, Öğren kartı, testler
-- [ ] Web: yönetim sayfası (taslak, inceleme, yayın, ilişki onayı, metrikler), veli sayfası (kelime gelişimi)
-- [ ] Ses ve hareket: `reducedMotion` ve ses kapatma kontrolü (Flutter oyun ekranı ile birlikte)
-- [ ] Mobil ve web responsive kontrolü (390 px ve masaüstü), tarayıcı testi
-- [ ] İçerik: ilk onaylı içerik paketi (dil uzmanı incelemesi gerekir; demo içerik yayınlanmaz)
-- [ ] Ödül/rozet entegrasyonu (kelime rozeti) — XP ledger bağlı; rozet kuralı ayrıca tasarlanacak
+- [x] Flutter: model, repository, akış denetleyicisi (`kelime_oyun_akisi.dart`), ana ekran, oyun ekranı, Öğren kartı. 42 Kelime testi geçiyor; `flutter analyze` proje genelinde temiz
+- [x] Web: `/yonetim/kelime-evreni` (metrikler, taslak/inceleme/yayın/arşiv, sözlük ve ilişki onayı), veli Genel Bakış kartı. `tsc` ve ESLint temiz
+- [x] Tam Flutter test takımı: 244 geçti, 3 başarısız; üçü `splash_gate_test.dart` (Kelime Evreni ile ilgisiz, `78f034d` splash commit'inin bileşenleri)
+- [ ] Tarayıcı, cihaz ve ekran okuyucu kontrolü (oturum ve cihaz gerekir): 390 px / masaüstü, hareket azaltma, ses ve titreşim
+- [ ] Ortak `AnswerOption` kontrastı (beyaz metin, yeşil/turuncu zemin 4,5:1 altı). Quiz ekranını da etkiler; karar bekliyor
+- [ ] İçerik: ilk onaylı paket (dil uzmanı incelemesi gerekir; demo içerik yayınlanmaz)
+- [ ] Ödül/rozet entegrasyonu: XP ledger bağlı; rozet kuralı ayrıca tasarlanacak
+- [ ] Ana ekranda tek birincil eylem ve özet ekranında tekrar çalışma eylemi (tasarım kararı)
 
 ### 13.3 Bilinen sınırlar
 - Eş zamanlılık: advisory lock ve benzersiz anahtar kuralı SQL'de tanımlı; gerçek yük/yarış testi yapılmadı (PGlite tek oturum)
 - `kelime_oyun_getir` öncelik sorgusu her çağrıda deneme sayısını hesaplar; içerik büyürse indeks/materialize gerekir
 - Ustalık (taninma dışı beceriler) henüz yazılmıyor; kalıcı ustalık raporu bu yüzden boş kalır
+- Branch hijyeni: `feature/kelime-evreni` üzerinde Kelime dışı dört commit var (`8bd52c0`, `11a666e`, `71ff03d`, `78f034d`). Bunlara dokunulmadı. Kelime işini PR'a almadan önce ayrılmalı
