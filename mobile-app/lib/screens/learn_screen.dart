@@ -9,6 +9,7 @@ import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
 import 'cipher/cipher_list_screen.dart';
 import 'home_screen.dart' show SubjectList;
+import 'kelime/kelime_evreni_screen.dart';
 import 'review_screen.dart';
 import 'saved_questions_screen.dart';
 import 'subject_topics_screen.dart';
@@ -80,6 +81,16 @@ class LearnScreen extends ConsumerWidget {
                   aciklama: 'Şifreleri çöz, çarpım tablosunu ustaca öğren.',
                   onTap: () => Navigator.of(context).push(
                     MaterialPageRoute(builder: (_) => const CipherListScreen()),
+                  ),
+                ),
+                const SizedBox(height: 10),
+                _AracKarti(
+                  simge: Icons.public_rounded,
+                  renk: AppColors.mint,
+                  baslik: 'Kelime Evreni',
+                  aciklama: 'Eş anlamlı, zıt anlamlı ve eş sesli kelimeler.',
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => const KelimeEvreniScreen()),
                   ),
                 ),
               ],
