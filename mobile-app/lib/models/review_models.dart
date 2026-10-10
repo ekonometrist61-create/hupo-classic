@@ -48,16 +48,26 @@ class SavedQuestion {
     required this.questionId,
     required this.question,
     required this.createdAt,
+    this.correctOption,
+    this.steps = const [],
   });
 
   final String questionId;
   final Question question;
   final DateTime createdAt;
 
+  /// Deneme sınavında kullanılmış sorularda null gelir (sınav bütünlüğü).
+  final String? correctOption;
+  final List<String> steps;
+
   factory SavedQuestion.fromMap(Map<String, dynamic> map) {
     final qId = (map['question_id'] ?? map['id']) as String;
     return SavedQuestion(
       questionId: qId,
+      correctOption: map['dogru_sik'] as String?,
+      steps: [
+        for (final s in (map['cozum_adimlari'] as List? ?? const [])) s.toString(),
+      ],
       question: Question(
         id: qId,
         ders: map['ders'] as String? ?? '',
