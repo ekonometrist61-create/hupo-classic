@@ -19,6 +19,7 @@ export interface KelimeSoruSatiri {
   anlam_id: string;
   iliski_turu: KelimeIliskiTuru;
   sinif: number;
+  zorluk: number;
   kazanim_kodu: string | null;
   soru_metni: string;
   secenekler: string[];
@@ -49,6 +50,7 @@ interface SoruForm {
   anlamId: string;
   iliski: KelimeIliskiTuru;
   sinif: string;
+  zorluk: string;
   kazanim: string;
   soru: string;
   secenekler: string[];
@@ -67,6 +69,7 @@ const BOS_FORM: SoruForm = {
   anlamId: "",
   iliski: "es_anlamli",
   sinif: "5",
+  zorluk: "1",
   kazanim: "",
   soru: "",
   secenekler: ["", ""],
@@ -136,6 +139,7 @@ export default function KelimeEvreniManager() {
       anlamId: s.anlam_id,
       iliski: s.iliski_turu,
       sinif: String(s.sinif),
+      zorluk: String(s.zorluk),
       kazanim: s.kazanim_kodu ?? "",
       soru: s.soru_metni,
       secenekler: [...s.secenekler],
@@ -184,6 +188,7 @@ export default function KelimeEvreniManager() {
       p_anlam_id: form.anlamId,
       p_iliski_turu: form.iliski,
       p_sinif: Number(form.sinif),
+      p_zorluk: Number(form.zorluk),
       p_kazanim_kodu: form.kazanim.trim() || null,
       p_soru_metni: form.soru.trim(),
       p_secenekler: secenekler,
@@ -358,6 +363,14 @@ export default function KelimeEvreniManager() {
               <select id="kelime-sinif" className={inputClass} value={form.sinif} onChange={(e) => setAlan("sinif", e.target.value)}>
                 {SINIFLAR.map((s) => (
                   <option key={s} value={s}>{s}. {t("sinifKisa")}</option>
+                ))}
+              </select>
+            </div>
+            <div>
+              <label className={labelClass} htmlFor="kelime-zorluk">{t("form.zorluk")}</label>
+              <select id="kelime-zorluk" className={inputClass} value={form.zorluk} onChange={(e) => setAlan("zorluk", e.target.value)}>
+                {[1, 2, 3].map((z) => (
+                  <option key={z} value={z}>{t("form.zorlukSecenek", { z, xp: z * 10 })}</option>
                 ))}
               </select>
             </div>
