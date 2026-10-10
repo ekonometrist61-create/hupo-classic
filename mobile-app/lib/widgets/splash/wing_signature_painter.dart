@@ -1,13 +1,10 @@
-// Kanat İmzası: Hupo'nun kanadından çıkan altın ışık izi ve kıvılcımlar.
+// Kanat İmzası: Hilal şeklinde altın ışık yayı (Scene 3) ve kanat kıvılcımları.
 //
-// Bu dosya yalnızca çizime odaklanır (CustomPainter). Zamanlama ve animasyon
-// kontrolü `hupo_signature_entrance.dart` içindedir. Böylece çizim yeniden
-// kullanılabilir ve testte tek kare sabit ilerlemeyle doğrulanabilir.
-//
-// Tasarım ilkeleri:
-//  * Aşırı partikül yok (en fazla 3 kıvılcım + tek ışık izi).
-//  * Tam ekran beyaz parlama yok; iz yumuşak ve ince.
-//  * Gözü rahatsız eden flaş yok; opaklık 0.55'i geçmez.
+// v2 değişiklikleri:
+//  * Düz bezier yerine ekranı büyük yay ile kesen hilal ark (alt-sol → üst-sağ).
+//  * maskFilter blur ile gerçek ışıma (glow) efekti.
+//  * Üç glow katmanı: geniş dış hale → orta → parlak çekirdek.
+//  * Kıvılcımlar wingOrigin'den ayrı tutulur (karakter yakını).
 
 import 'dart:math' as math;
 import 'dart:ui' as ui;
@@ -16,10 +13,7 @@ import 'package:flutter/material.dart';
 
 import '../../theme/app_theme.dart';
 
-/// Sahne ilerlemesine (0→1) göre ışık izini ve kıvılcımları çizer.
-///
-/// [progress] 0 = sahne başlangıcı, 1 = sahne sonu. Sahne 3 (Wing Signature)
-/// için tasarlanmıştır; sahne dışında etkisizdir.
+/// Sahne ilerlemesine (0→1) göre hilal yayı ve kanat kıvılcımlarını çizer.
 class WingSignaturePainter extends CustomPainter {
   const WingSignaturePainter({
     required this.progress,
@@ -27,146 +21,153 @@ class WingSignaturePainter extends CustomPainter {
     this.enabled = true,
   });
 
-  /// 0→1 arası sahne ilerlemesi.
   final double progress;
 
-  /// Kanadın ekran içindeki başlangıç noktası (üst-sol oranla: 0→1).
+  /// Kanat kıvılcımları için ekran oranı (Alignment.x * W, Alignment.y * H).
   final Alignment wingOrigin;
 
-  /// false ise hiçbir şey çizilmez (hareket azalt / düşük performans).
   final bool enabled;
 
   @override
   void paint(Canvas canvas, Size size) {
     if (!enabled || progress <= 0) return;
 
-    final origin = Offset(
-      wingOrigin.x * size.width,
-      wingOrigin.y * size.height,
-    );
-    final target = Offset(size.width * 0.62, size.height * 0.38);
-
-    // İz yalnızca sahnenin ilk %70'inde görünür; sonra yumuşakça kaybolur.
+    // İz: progress 0-70% arasında uzar, 70-100% arasında solar.
     final trailT =
-        Curves.easeOutCubic.transform(progress.clamp(0.0, 0.7) / 0.7);
-    final fade =
-        progress < 0.7 ? 1.0 : (1.0 - (progress - 0.7) / 0.3).clamp(0.0, 1.0);
+        Curves.easeOutCubic.transform(progress.clamp(0.0, 0.82) / 0.82);
+    final fade = progress < 0.70
+        ? 1.0
+        : (1.0 - (progress - 0.70) / 0.30).clamp(0.0, 1.0);
 
-    _drawTrail(canvas, size, origin, target, trailT, fade);
-    _drawSparks(canvas, size, origin, trailT, fade);
+    _drawCrescentArc(canvas, size, trailT, fade);
+    _drawSparks(canvas, size, trailT, fade);
   }
 
-  void _drawTrail(
+  // ── Hilal Yayı ──────────────────────────────────────────────────────────────
+  void _drawCrescentArc(
     Canvas canvas,
     Size size,
-    Offset origin,
-    Offset target,
     double t,
     double fade,
   ) {
     if (t <= 0) return;
 
-    // İz, Hupo'nun kanadından hedefe doğru uzayan bir yaydır.
-    final kontrol = Offset(
-      origin.dx + (target.dx - origin.dx) * 0.15,
-      origin.dy + (target.dy - origin.dy) * 0.75,
-    );
+    // Quadratic bezier: alt-sol → sağ dışına çık → üst-sağ
+    // Kontrol noktası ekran dışında (x > 1) → doğal hilal eğrisi.
+    final arcStart = Offset(size.width * 0.10, size.height * 0.70);
+    final arcEnd   = Offset(size.width * 0.88, size.height * 0.08);
+    final ctrl     = Offset(size.width * 1.12, size.height * 0.38);
+
     final path = Path()
-      ..moveTo(origin.dx, origin.dy)
-      ..quadraticBezierTo(kontrol.dx, kontrol.dy, target.dx, target.dy);
+      ..moveTo(arcStart.dx, arcStart.dy)
+      ..quadraticBezierTo(ctrl.dx, ctrl.dy, arcEnd.dx, arcEnd.dy);
 
-    // İzin yalnızca t kadarı çizili: ucun ilerlemesini kırp.
     final metric = path.computeMetrics().first;
-    final drawn = metric.extractPath(0, metric.length * t);
+    final drawn  = metric.extractPath(0, metric.length * t);
 
-    // Geniş, düşük opaklıkta taban parıltısı + ince altın çekirdek.
+    // Katman 1 — dış hale (blurlu, geniş)
     canvas.drawPath(
       drawn,
       Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeCap = StrokeCap.round
-        ..strokeWidth = size.width * 0.02
-        ..color = AppColors.sun.withValues(alpha: 0.16 * fade),
+        ..style      = PaintingStyle.stroke
+        ..strokeWidth = size.shortestSide * 0.065
+        ..strokeCap  = StrokeCap.round
+        ..color      = AppColors.sun.withValues(alpha: 0.10 * fade)
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 14),
     );
+
+    // Katman 2 — orta parıltı (hafif blurlu)
     canvas.drawPath(
       drawn,
       Paint()
-        ..style = PaintingStyle.stroke
-        ..strokeCap = StrokeCap.round
-        ..strokeWidth = size.shortestSide * 0.008
-        ..shader = ui.Gradient.linear(
-          origin,
-          target,
-          [
-            AppColors.sun.withValues(alpha: 0.0),
-            AppColors.sun.withValues(alpha: 0.55 * fade),
-            AppColors.sunSoft.withValues(alpha: 0.75 * fade),
-          ],
-          const [0.0, 0.6, 1.0],
-        ),
+        ..style      = PaintingStyle.stroke
+        ..strokeWidth = size.shortestSide * 0.020
+        ..strokeCap  = StrokeCap.round
+        ..color      = AppColors.sun.withValues(alpha: 0.42 * fade)
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 3),
     );
 
-    // İz ucunda küçük, yumuşak bir parıltı (flaş değil).
-    final uc = metric.getTangentForOffset(metric.length * t)?.position;
-    if (uc != null) {
+    // Katman 3 — parlak çekirdek (blur yok, keskin)
+    canvas.drawPath(
+      drawn,
+      Paint()
+        ..style      = PaintingStyle.stroke
+        ..strokeWidth = size.shortestSide * 0.004
+        ..strokeCap  = StrokeCap.round
+        ..color      = Colors.white.withValues(alpha: 0.78 * fade),
+    );
+
+    // Uç parıltısı (flaş değil — yumuşak radial)
+    final tangent = metric.getTangentForOffset(metric.length * t);
+    if (tangent != null) {
+      final uc = tangent.position;
+      final r  = size.shortestSide * 0.030;
       canvas.drawCircle(
         uc,
-        size.shortestSide * 0.02,
+        r,
         Paint()
           ..shader = ui.Gradient.radial(
             uc,
-            size.shortestSide * 0.02,
+            r,
             [
-              AppColors.sunSoft.withValues(alpha: 0.5 * fade),
+              Colors.white.withValues(alpha: 0.75 * fade),
+              AppColors.sun.withValues(alpha: 0.30 * fade),
               AppColors.sun.withValues(alpha: 0.0),
             ],
+            const [0.0, 0.45, 1.0],
           ),
       );
     }
   }
 
+  // ── Kanat Kıvılcımları ──────────────────────────────────────────────────────
   void _drawSparks(
     Canvas canvas,
     Size size,
-    Offset origin,
     double t,
     double fade,
   ) {
     if (t <= 0) return;
 
-    const adet = 3; // Aşırı partikül yok.
+    final ox = wingOrigin.x * size.width;
+    final oy = wingOrigin.y * size.height;
+    final origin = Offset(ox, oy);
+
+    const adet = 3;
     for (var i = 0; i < adet; i++) {
-      // Her kıvılcım farklı açı ve gecikmeyle çıkar.
       final gecikme = i * 0.12;
-      final yerelT = ((t - gecikme) / (1 - gecikme)).clamp(0.0, 1.0);
+      final yerelT  = ((t - gecikme) / (1 - gecikme)).clamp(0.0, 1.0);
       if (yerelT <= 0) continue;
 
-      final egri = Curves.easeOut.transform(yerelT);
-      final aci = (-0.9 + i * 0.35) + math.sin(yerelT * math.pi * 2) * 0.08;
-      final mesafe = size.shortestSide * (0.10 + i * 0.03) * egri;
-
-      final konum = Offset(
+      final egri     = Curves.easeOut.transform(yerelT);
+      final aci      = (-0.95 + i * 0.38) + math.sin(yerelT * math.pi * 2) * 0.07;
+      final mesafe   = size.shortestSide * (0.09 + i * 0.035) * egri;
+      final konum    = Offset(
         origin.dx + math.cos(aci) * mesafe,
         origin.dy + math.sin(aci) * mesafe,
       );
+      final boyut = size.shortestSide * 0.009 * (1 - yerelT * 0.45);
 
-      final boyut = size.shortestSide * 0.008 * (1 - yerelT * 0.4);
+      // Çekirdek
       canvas.drawCircle(
         konum,
         boyut,
-        Paint()..color = AppColors.sunSoft.withValues(alpha: 0.8 * fade),
+        Paint()..color = AppColors.sunSoft.withValues(alpha: 0.85 * fade),
       );
+      // Hale
       canvas.drawCircle(
         konum,
-        boyut * 2.4,
-        Paint()..color = AppColors.sun.withValues(alpha: 0.18 * fade),
+        boyut * 2.8,
+        Paint()
+          ..color      = AppColors.sun.withValues(alpha: 0.20 * fade)
+          ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 4),
       );
     }
   }
 
   @override
-  bool shouldRepaint(covariant WingSignaturePainter oldDelegate) =>
-      oldDelegate.progress != progress ||
-      oldDelegate.wingOrigin != wingOrigin ||
-      oldDelegate.enabled != enabled;
+  bool shouldRepaint(covariant WingSignaturePainter old) =>
+      old.progress != progress ||
+      old.wingOrigin != wingOrigin ||
+      old.enabled != enabled;
 }
