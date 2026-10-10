@@ -159,6 +159,7 @@
       "toplam": "Toplam {sayi} soru",
       "empty": "Bu filtrede soru yok.",
       "sinifKisa": "sınıf",
+      "sinirUyari": "Yalnızca en yeni {limit} soru gösteriliyor. Filtreyle daraltın.",
       "son7Gun": "Son 7 gün: {deneme} deneme, {ogrenci} öğrenci",
       "oranlar": "Doğru oranı {dogru}% · İpucusuz doğru {ipucusuz}% · İpucu kullanımı {ipucu}%",
       "durumlar": {
@@ -185,7 +186,8 @@
         "incelemeye": "İncelemeye gönder",
         "yayinla": "Yayınla",
         "geriAl": "Taslağa al",
-        "arsivle": "Arşivle",
+        "arsivle": "Arşivle (öğrencilere görünmez)",
+        "yayinOnay": "Bu soru öğrencilere görünür olacak. Yayınlansın mı?",
         "geriYukle": "Geri yükle"
       },
       "form": {

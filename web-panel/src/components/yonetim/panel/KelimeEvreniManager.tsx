@@ -199,6 +199,8 @@ export default function KelimeEvreniManager() {
   };
 
   const durumDegistir = async (s: KelimeSoruSatiri, hedef: KelimeDurum) => {
+    // Yayın öğrencilere hemen görünür olur; onay istenir
+    if (hedef === "yayinda" && !window.confirm(t("actions.yayinOnay"))) return;
     setIslemde(s.id);
     const { error: err } = await createClient().rpc("kelime_soru_durum_degistir", { p_id: s.id, p_hedef: hedef });
     setIslemde(null);
@@ -282,6 +284,10 @@ export default function KelimeEvreniManager() {
           </select>
           <span className="text-sm text-gray-500 dark:text-gray-400">{t("toplam", { sayi: toplam })}</span>
         </div>
+
+        {!loading && toplam > satirlar.length && (
+          <p className="mb-3 text-sm text-amber-700 dark:text-amber-400">{t("sinirUyari", { limit: satirlar.length })}</p>
+        )}
 
         {loading ? (
           <p className="text-sm text-gray-500">{t("loading")}</p>

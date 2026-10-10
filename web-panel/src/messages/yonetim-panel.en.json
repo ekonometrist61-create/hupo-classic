@@ -159,6 +159,7 @@
       "toplam": "{sayi} questions in total",
       "empty": "No questions match this filter.",
       "sinifKisa": "grade",
+      "sinirUyari": "Only the latest {limit} questions are shown. Narrow the filter.",
       "son7Gun": "Last 7 days: {deneme} attempts, {ogrenci} students",
       "oranlar": "Accuracy {dogru}% · Accuracy without hints {ipucusuz}% · Hint use {ipucu}%",
       "durumlar": {
@@ -185,7 +186,8 @@
         "incelemeye": "Send to review",
         "yayinla": "Publish",
         "geriAl": "Return to draft",
-        "arsivle": "Archive",
+        "arsivle": "Archive (hidden from students)",
+        "yayinOnay": "This question will become visible to students. Publish it?",
         "geriYukle": "Restore"
       },
       "form": {

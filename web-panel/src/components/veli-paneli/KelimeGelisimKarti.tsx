@@ -40,6 +40,8 @@ export default function KelimeGelisimKarti({ cocukId, cocukAd }: Props) {
   const [ozet, setOzet] = useState<KelimeOzet | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  // Tekrar dene düğmesi bu sayacı artırır; çocuk değişimi ParentDashboard'da key ile kartı yeniden kurar
+  const [denemeNo, setDenemeNo] = useState(0);
 
   useEffect(() => {
     let cancelled = false;
@@ -59,7 +61,7 @@ export default function KelimeGelisimKarti({ cocukId, cocukAd }: Props) {
     return () => {
       cancelled = true;
     };
-  }, [cocukId]);
+  }, [cocukId, denemeNo]);
 
   const oneriMetni = (kod: string, tekrar: number) => {
     const bilinen = (BILINEN_ONERILER as readonly string[]).includes(kod) ? kod : "devam";
@@ -76,7 +78,21 @@ export default function KelimeGelisimKarti({ cocukId, cocukAd }: Props) {
       </div>
 
       {loading && <p className="text-sm text-gray-500">{t("yukleniyor")}</p>}
-      {!loading && error && <p className="text-sm text-red-600 dark:text-red-400">{t("hata")}</p>}
+      {!loading && error && (
+        <div className="space-y-2">
+          <p className="text-sm text-red-600 dark:text-red-400">{t("hata")}</p>
+          <button
+            type="button"
+            className="text-sm font-medium text-brand-600 hover:underline dark:text-brand-400"
+            onClick={() => {
+              setLoading(true);
+              setDenemeNo((n) => n + 1);
+            }}
+          >
+            {t("tekrar")}
+          </button>
+        </div>
+      )}
       {!loading && !error && ozet && ozet.deneme_sayisi === 0 && (
         <p className="text-sm text-gray-600 dark:text-gray-300">{t("bos")}</p>
       )}

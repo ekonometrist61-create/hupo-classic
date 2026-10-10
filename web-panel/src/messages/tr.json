@@ -1848,6 +1848,7 @@
       "baslik": "Kelime gelişimi",
       "yukleniyor": "Kelime gelişimi yükleniyor…",
       "hata": "Kelime gelişimi şu an yüklenemedi. Birazdan tekrar deneyin.",
+      "tekrar": "Tekrar dene",
       "bos": "Henüz kelime oyunu oynanmadı. Öğren sekmesindeki Kelime Evreni ile başlayabilir.",
       "denemeSayisi": "Toplam deneme",
       "dogruOrani": "Doğru oranı",
@@ -1858,10 +1859,10 @@
         "tekrar_bekleyen": "{sayi} kelimenin tekrar zamanı geldi. Kısa bir tekrar yeterli.",
         "zorlanilan_tekrar": "Zorlandığı kelimeleri birlikte gözden geçirin.",
         "haftalik_calisma_yok": "Bu hafta henüz kelime oyunu oynanmadı. Kısa bir oturum yeterli.",
-        "devam": "Harika gidiyor, aynı tempoda devam etsin."
+        "devam": "Düzenli çalışma sürüyor."
       },
       "zorlanilanBaslik": "Zorlandığı kelimeler",
-      "yanlis": "{sayi} yanlış",
+      "yanlis": "{sayi} kez zorlandı",
       "iliski": {
         "es_anlamli": "eş anlamlı",
         "zit_anlamli": "zıt anlamlı",

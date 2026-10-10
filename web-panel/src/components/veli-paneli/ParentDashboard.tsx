@@ -36,6 +36,7 @@ export default function ParentDashboard({ students }: ParentDashboardProps) {
               cocukAd={ogrenci?.full_name ?? ogrenci?.username ?? null}
             />
             <KelimeGelisimKarti
+              key={studentId}
               cocukId={studentId}
               cocukAd={ogrenci?.full_name ?? ogrenci?.username ?? null}
             />
