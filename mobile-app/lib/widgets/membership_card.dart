@@ -12,7 +12,7 @@ import 'veli_mesaji_sheet.dart';
 ///
 /// Çocuk uygulamasında bilerek satın alma düğmesi/bağlantısı YOKTUR
 /// (mağaza kuralları ve çocuk güvenliği); yalnızca durum gösterilir ve
-/// Premium için veliye yönlendiren yumuşak bir cümle yer alır.
+/// ücretsiz üyelikte veliye mesaj hazırlatan "Velime mesaj hazırla" düğmesi yer alır.
 /// [MembershipStatus.known] false ise hiçbir şey çizilmez.
 class MembershipCard extends StatelessWidget {
   const MembershipCard({super.key, required this.status});

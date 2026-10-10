@@ -63,7 +63,8 @@ void main() {
     await tester.pump(const Duration(milliseconds: 600));
 
     expect(find.text('Bugünlük harikaydın!'), findsOneWidget);
-    expect(find.textContaining('velinle konuşabilirsin'), findsOneWidget);
+    expect(find.textContaining('Bugünkü ücretsiz sorularını tamamladın'), findsOneWidget);
+    expect(find.text('Velime mesaj hazırla'), findsOneWidget);
     expect(find.textContaining('bir kez daha dene'), findsNothing);
 
     await tester.tap(find.text('Tamam'));
