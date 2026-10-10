@@ -533,3 +533,40 @@ Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-cast
 - [ ] CAPTCHA_SECRET — domain bağlandıktan sonra Edge Function ortamına.
 - [ ] İYS 3 iş günü kaydı — KARAR: en sondan bir önce; bekleme listesinde. İYS entegrasyon bilgileri gerekir.
 - [ ] 8. sınıf LGS sınav tipi (§12.5).
+
+## 13. Kelime Evreni entegrasyonu (2026-10-10, branch `feature/kelime-evreni`)
+Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1 başlangıç kodu; ürünün kendisi değil). Eş anlamlı / zıt anlamlı / eş sesli kelime oyunları Öğren sekmesine bağlanır.
+
+### 13.1 Kararlar
+| # | Konu | Karar |
+|---|---|---|
+| K1 | Kullanıcı sistemi | Yeni sistem YOK. `profiles` + `is_parent_of()` (veli) + `is_admin()` (yönetici). Paketin `word_parent_links` / `word_admin_members` adaptörleri kaldırıldı |
+| K2 | Soru bankası | `questions` KULLANILMAZ. Kelime soruları ayrı içerik türü (`kelime_sorulari`); anlam ve ilişki envanteri ayrı (`kelime_anlamlari`, `kelime_iliskileri`). Gerekçe: `questions` tüm mevcut quiz/tekrar/bildirim akışını etkiler; yayına alınan kelime sorularının Türkçe quizlere sızması istenmedi |
+| K3 | XP | Tek yazım yolu `award_xp_and_streak()`. XP yalnızca soru başına İLK doğru ve İPUCUSUZ cevapta (10 XP). İpucu XP'yi etkilemez (paketin 5 XP'si uygulanmadı). Mevcut `submit_answer` ile aynı desen |
+| K4 | Ustalık | Yalnızca `taninma` becerisi yazılır; seviye en fazla 3. Seçenekle tanıma "tam ustalık" sayılmaz. Yanlış → 0 (1 gün). İpucu ile doğru → seviye değişmez (1 gün). Doğru → +1 (1 / 3 / 7 gün) |
+| K5 | Yayın onayı | Dört göz: yazan ≠ yayınlayan ≠ ilişki kuran ≠ ilişki onaylayan. DB CHECK + RPC kontrolü. **Tek yönetici olan kurulumda yayın yapılamaz**; gevşetilecekse karar gerekir |
+| K6 | Doğru şık gizliliği | `kelime_sorulari` ve `kelime_*` tablolarında `authenticated` tablo yetkisi YOK. Öğrenci yalnızca `kelime_oyun_getir` (doğru şık ve açıklama yok) ve `kelime_cevap_gonder` (cevap sonrası açıklama) RPC'lerini kullanır |
+| K7 | Veli görünürlüğü | Yalnızca toplu özet (`kelime_veli_ozeti`): oranlar, zorlanılan kelimeler, tekrar sayısı, öneri kodları. Cevap listesi / soru kimliği yok |
+| K8 | Sınıf / kazanım | İçerikte `sinif` (1–12, `profiles.sinif` ile eşleşir) ve serbest `kazanim_kodu` metni. Resmi kazanım tablosu YOK (kaynak yok) |
+| K9 | İlişki yönü | İlişkiler çift yönlü; (A,B) ve (B,A) tek kayıt (benzersiz indeks) |
+| K10 | Hız sınırı | Kullanıcı başına dakikada 30 deneme (`RATE_LIMIT`) |
+| K11 | Demo içerik | `supabase/seed/example_draft.sql` migration'a alınmadı; üretimde demo içerik yok |
+
+### 13.2 Yapıldı (doğrulandı)
+- [x] `supabase/migrations/20261022000000_kelime_evreni.sql` — 6 tablo, RLS, 15 RPC (öğrenci 5, veli 1, yönetim 9) + 2 yardımcı fonksiyon; tüm RPC'lerde `revoke` (public/anon) + `grant` (authenticated)
+- [x] `supabase/tests/kelime_evreni_tests.sql` — 40 senaryo (RLS, yetki, idempotency, XP, ustalık, hız sınırı, dört göz, onay akışı, veli gizliliği)
+- [x] Yerel SQL doğrulaması: PGlite (Postgres WASM) + Supabase bağımlılık taklitleri (`supabase/tests/kelime_evreni/`). **40/40 geçti.** Bilinçli açık mutasyonları (doğru şık sızıntısı, anon metrik yetkisi) testler yakaladı
+- [x] Bulunan ve düzeltilen hatalar: `text[] ||` dizi literali, `auth.uid()` dönüş tipi, `smallint`/`integer` parametre uyumsuzluğu, `OR` içinde hata üreten kontrol
+- [ ] Docker'da `supabase db reset` + `supabase test db` — Docker yok; PGlite ile yerine geçmez (gerçek `award_xp_and_streak`, `log_admin_action` yerine taklit kullanıldı)
+- [ ] **Uzak Supabase'e uygulama YOK.** `npm run db:preview` ve `db:deploy` kullanıcı onayı bekler (CLAUDE: üretim migration onaysız yapılmaz)
+- [ ] Flutter: öğrenci oyun ekranları, Öğren kartı, testler
+- [ ] Web: yönetim sayfası (taslak, inceleme, yayın, ilişki onayı, metrikler), veli sayfası (kelime gelişimi)
+- [ ] Ses ve hareket: `reducedMotion` ve ses kapatma kontrolü (Flutter oyun ekranı ile birlikte)
+- [ ] Mobil ve web responsive kontrolü (390 px ve masaüstü), tarayıcı testi
+- [ ] İçerik: ilk onaylı içerik paketi (dil uzmanı incelemesi gerekir; demo içerik yayınlanmaz)
+- [ ] Ödül/rozet entegrasyonu (kelime rozeti) — XP ledger bağlı; rozet kuralı ayrıca tasarlanacak
+
+### 13.3 Bilinen sınırlar
+- Eş zamanlılık: advisory lock ve benzersiz anahtar kuralı SQL'de tanımlı; gerçek yük/yarış testi yapılmadı (PGlite tek oturum)
+- `kelime_oyun_getir` öncelik sorgusu her çağrıda deneme sayısını hesaplar; içerik büyürse indeks/materialize gerekir
+- Ustalık (taninma dışı beceriler) henüz yazılmıyor; kalıcı ustalık raporu bu yüzden boş kalır

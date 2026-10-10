@@ -1,0 +1,13 @@
+{
+  "name": "kelime-evreni-sql-testleri",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Kelime Evreni migration ve RLS testleri için PGlite (Docker gerektirmez).",
+  "type": "module",
+  "scripts": {
+    "test": "node pglite-kos.mjs ../../migrations/20261022000000_kelime_evreni.sql ../kelime_evreni_tests.sql"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}
