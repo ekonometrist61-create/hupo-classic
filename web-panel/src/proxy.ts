@@ -27,14 +27,10 @@ export default async function proxy(request: NextRequest) {
   // next-intl localePrefix="never" olsa da gelen isteklerde /tr veya /en
   // kalabildiğinden yetki kontrolleri önce yerelleştirme önekini temizler.
   const normalizedPathname = pathname.replace(/^\/(tr|en)(?=\/|$)/, "") || "/";
-  // (admin) grubundaki tüm rotalar giriş ister; TailAdmin şablonundan kalan demo
-  // sayfaları da (menüde yok ama URL ile açılabiliyordu) bu kapının arkasındadır.
+  // Yönetim ve veli paneli rotaları giriş ister (TailAdmin şablon rotaları kaldırıldı).
   const needsAuth =
     normalizedPathname.startsWith("/yonetim") ||
-    normalizedPathname.startsWith("/veli-paneli") ||
-    /^\/(calendar|profile|blank|bar-chart|line-chart|form-elements|basic-tables|alerts|avatars|badge|buttons|images|modals|videos)(\/|$)/.test(
-      normalizedPathname,
-    );
+    normalizedPathname.startsWith("/veli-paneli");
 
   if (DEMO_MODE) return response;
 

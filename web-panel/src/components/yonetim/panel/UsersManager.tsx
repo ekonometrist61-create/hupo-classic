@@ -31,9 +31,6 @@ const PAGE_SIZE = 25;
 const ROLES: UserRole[] = ["veli", "ogrenci", "admin", "ogretmen"];
 const ROLE_COLOR = { veli: "info", ogrenci: "primary", admin: "warning", ogretmen: "success" } as const;
 
-const ADMIN_SQL =
-  "update public.profiles set role = 'admin'\nwhere id = (select id from auth.users where email = 'ornek@eposta.com');";
-
 export default function UsersManager() {
   const t = useTranslations("yonetim.kullanicilar");
   const [search, setSearch] = useState("");
@@ -101,13 +98,6 @@ export default function UsersManager() {
 
   return (
     <div className="space-y-6">
-      <div className="rounded-2xl border border-blue-light-200 bg-blue-light-50 px-5 py-4 text-theme-sm text-blue-light-700 dark:border-blue-light-500/30 dark:bg-blue-light-500/10 dark:text-blue-light-500">
-        <p>{t("roleNote")}</p>
-        <pre className="mt-3 overflow-x-auto rounded-lg bg-gray-900 p-3 font-mono text-theme-xs whitespace-pre text-gray-100 select-all dark:bg-black/40">
-          {ADMIN_SQL}
-        </pre>
-      </div>
-
       <section className={`${cardClass} p-5 sm:p-6`}>
         <div className="mb-4 flex flex-wrap items-end gap-4">
           <div className="min-w-60 flex-1">

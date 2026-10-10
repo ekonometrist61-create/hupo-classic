@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import Badge from "@/components/ui/badge/Badge";
@@ -8,6 +8,7 @@ import { formatKurus } from "@/utils/format";
 import { createClient } from "@/utils/supabase/client";
 import type { Plan } from "../types";
 import ErrorNote from "./ErrorNote";
+import PlanTipiManager, { type PlanTipi } from "./PlanTipiManager";
 import { kurusToInput, parseTryToKurus } from "./helpers";
 import {
   cardClass,
@@ -27,9 +28,10 @@ interface FormState {
   fiyat: string;
   sure: string;
   aktif: boolean;
+  tip_kod: string;
 }
 
-const EMPTY: FormState = { kod: "", ad: "", aciklama: "", fiyat: "", sure: "30", aktif: true };
+const EMPTY: FormState = { kod: "", ad: "", aciklama: "", fiyat: "", sure: "30", aktif: true, tip_kod: "premium" };
 
 export default function PlanManager({
   plans,
@@ -43,9 +45,19 @@ export default function PlanManager({
   const [editing, setEditing] = useState(false);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [tipler, setTipler] = useState<PlanTipi[]>([]);
+
+  const loadTipler = useCallback(async () => {
+    const { data, error: err } = await createClient().rpc("admin_list_plan_tipleri");
+    if (!err && Array.isArray(data)) setTipler(data as PlanTipi[]);
+  }, []);
+
+  useEffect(() => {
+    void loadTipler();
+  }, [loadTipler]);
 
   const openNew = () => {
-    setForm(EMPTY);
+    setForm({ ...EMPTY, tip_kod: tipler[0]?.kod ?? "premium" });
     setEditing(false);
     setError(null);
   };
@@ -57,6 +69,7 @@ export default function PlanManager({
       fiyat: kurusToInput(p.fiyat_kurus),
       sure: String(p.sure_gun),
       aktif: p.aktif,
+      tip_kod: p.tip_kod,
     });
     setEditing(true);
     setError(null);
@@ -80,6 +93,7 @@ export default function PlanManager({
       p_fiyat_kurus: kurus,
       p_sure_gun: Number(form.sure),
       p_aktif: form.aktif,
+      p_tip_kod: form.tip_kod,
     });
     setSaving(false);
     if (err) return setError(err.message);
@@ -101,6 +115,9 @@ export default function PlanManager({
         </button>
       </div>
 
+      <PlanTipiManager tipler={tipler} onChanged={() => { void loadTipler(); }} />
+
+      <h4 className="mb-3 mt-8 text-sm font-semibold text-gray-800 dark:text-white/90">Paketler</h4>
       {plans.length === 0 ? (
         <p className="py-6 text-center text-sm text-gray-500 dark:text-gray-400">
           {t("empty")}
@@ -112,6 +129,7 @@ export default function PlanManager({
               <tr>
                 <th className={thClass}>{t("kod")}</th>
                 <th className={thClass}>{t("ad")}</th>
+                <th className={thClass}>Tip</th>
                 <th className={thClass}>{t("fiyat")}</th>
                 <th className={thClass}>{t("sure")}</th>
                 <th className={thClass}>{t("aktif")}</th>
@@ -123,6 +141,7 @@ export default function PlanManager({
                 <tr key={p.kod}>
                   <td className={`${tdClass} font-mono`}>{p.kod}</td>
                   <td className={tdClass}>{p.ad}</td>
+                  <td className={`${tdClass} font-mono text-xs`}>{p.tip_kod}</td>
                   <td className={tdClass}>{formatKurus(p.fiyat_kurus)}</td>
                   <td className={tdClass}>{p.sure_gun}</td>
                   <td className={tdClass}>
@@ -195,6 +214,21 @@ export default function PlanManager({
                 onChange={(e) => set("sure", e.target.value)}
               />
             </div>
+          </div>
+          <div>
+            <label className={labelClass} htmlFor="plan-tip">Paket tipi (web sitesinde kolon)</label>
+            <select
+              id="plan-tip"
+              className={inputClass}
+              value={form.tip_kod}
+              onChange={(e) => set("tip_kod", e.target.value)}
+            >
+              {tipler.map((tip) => (
+                <option key={tip.kod} value={tip.kod}>
+                  {tip.ad} ({tip.kod}){tip.aktif ? "" : " — pasif"}
+                </option>
+              ))}
+            </select>
           </div>
           <div>
             <label className={labelClass} htmlFor="plan-aciklama">{t("aciklama")}</label>

@@ -77,7 +77,7 @@ export async function DenemeExamSection() {
         {/* CTA */}
         <div className="mt-10 flex flex-col items-center gap-4">
           <Link
-            href="/signup"
+            href="/deneme-sinavi-kayit"
             className="inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-gold-500 px-8 py-3 text-base font-extrabold text-navy shadow-sm transition-colors hover:bg-gold-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold-400 motion-reduce:transition-none"
           >
             {t("cta")}

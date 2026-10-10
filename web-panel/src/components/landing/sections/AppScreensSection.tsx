@@ -167,7 +167,7 @@ function QuizScreenMock() {
       <div style={{ display: "flex", flexDirection: "column", gap: "5px" }}>
         {[
           { label: "A", text: "Ne?", selected: false },
-          { label: "B", text: "Nas&#305;l?", selected: true },
+          { label: "B", text: "Nasıl?", selected: true },
           { label: "C", text: "Ne zaman?", selected: false },
           { label: "D", text: "Kim?", selected: false },
         ].map(({ label, text, selected }) => (
@@ -189,8 +189,9 @@ function QuizScreenMock() {
             </div>
             <span
               style={{ fontSize: "10px", fontWeight: selected ? 800 : 600, color: selected ? C.primary : C.ink }}
-              dangerouslySetInnerHTML={{ __html: text }}
-            />
+            >
+              {text}
+            </span>
           </div>
         ))}
       </div>

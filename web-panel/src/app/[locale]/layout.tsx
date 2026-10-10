@@ -4,12 +4,9 @@ import { SidebarProvider } from "@/context/SidebarContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { isRtl } from "@/i18n/languages";
 import { type Locale, routing } from "@/i18n/routing";
-import "flatpickr/dist/flatpickr.css";
 import { NextIntlClientProvider } from "next-intl";
 import { setRequestLocale } from "next-intl/server";
 import { Outfit } from "next/font/google";
-import "simplebar-react/dist/simplebar.min.css";
-import "swiper/css/bundle";
 import "../globals.css";
 
 const outfit = Outfit({

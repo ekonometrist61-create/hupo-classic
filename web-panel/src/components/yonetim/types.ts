@@ -94,6 +94,42 @@ export interface Plan {
   /** Abonelik suresi (gun); null ise sure sinirsiz. */
   sure_gun: number | null;
   aktif: boolean;
+  /** Paketin bağlı olduğu paket tipi (web sitesinde kolon). */
+  tip_kod: string;
+}
+
+export interface MockExam {
+  id: string;
+  ad: string;
+  baslangic_zamani: string;
+  sure_dakika: number;
+  siniflar: number[];
+  aktif: boolean;
+  sorular_kilitli: boolean;
+  created_at: string;
+  soru_atanan_sinif_sayisi: number;
+}
+
+export interface MockExamQuestion {
+  sira: number;
+  id: string;
+  ders: string;
+  konu: string;
+  alt_konu: string | null;
+  zorluk: number;
+  soru_metni: string;
+}
+
+export interface MockExamResult {
+  student_id: string;
+  ad_soyad: string;
+  sinif: number;
+  puan: number;
+  dogru_sayisi: number;
+  yanlis_sayisi: number;
+  bos_sayisi: number;
+  sira: number;
+  bitis_zamani: string;
 }
 
 export type PaymentStatus =

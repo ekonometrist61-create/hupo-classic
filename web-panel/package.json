@@ -3,24 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predev": "node scripts/sync-karakterler.mjs",
     "dev": "next dev",
+    "prebuild": "node scripts/sync-karakterler.mjs",
     "build": "next build",
     "start": "next start",
     "lint": "eslint ."
   },
   "dependencies": {
-    "@fullcalendar/react": "^7.1.0",
-    "@hookform/resolvers": "^3.9.0",
-    "@react-jvectormap/core": "^1.0.4",
-    "@react-jvectormap/world": "^1.1.2",
     "@supabase/ssr": "^0.7.0",
     "@supabase/supabase-js": "^2.90.0",
     "@tailwindcss/postcss": "^4.3.3",
-    "@tanstack/react-table": "^8.20.5",
-    "apexcharts": "^7.1.0",
     "clsx": "^2.1.1",
-    "date-fns": "^4.1.0",
-    "flatpickr": "^4.6.13",
     "framer-motion": "^14.0.0",
     "lucide-react": "^0.545.0",
     "next": "^16.3.4",
@@ -28,19 +22,9 @@
     "papaparse": "^5.5.3",
     "posthog-js": "1.434.12",
     "react": "^19.2.8",
-    "react-apexcharts": "^2.1.1",
-    "react-dnd": "^16.0.1",
-    "react-dnd-html5-backend": "^16.0.1",
     "react-dom": "^19.2.8",
-    "react-dropzone": "^20.1.1",
-    "react-hook-form": "^7.53.0",
     "recharts": "^2.15.4",
-    "simplebar-react": "^3.3.2",
-    "sonner": "^2.0.3",
-    "swiper": "^14.2.0",
-    "tailwind-merge": "^2.6.0",
-    "temporal-polyfill": "^1.0.5",
-    "zod": "^3.24.1"
+    "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
     "@svgr/webpack": "^8.1.0",
@@ -60,14 +44,6 @@
   "overrides": {
     "recharts": {
       "react-is": "^19.2.0"
-    },
-    "@react-jvectormap/core": {
-      "react": "^16.8.0 || ^17 || ^18 || ^19",
-      "react-dom": "^16.8.0 || ^17 || ^18 || ^19"
-    },
-    "@react-jvectormap/world": {
-      "react": "^16.8.0 || ^17 || ^18 || ^19",
-      "react-dom": "^16.8.0 || ^17 || ^18 || ^19"
     }
   },
   "allowScripts": {

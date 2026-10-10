@@ -14,8 +14,8 @@ const fieldClass =
 
 const MIN_PASSWORD_LENGTH = 8;
 
-// Ticari ileti rızası metninin sürümü. Metin değişirse artırılmalı; rıza kaydına yazılır.
-const ILETISIM_METIN_SURUMU = "ticari-iletisim-2026-10-taslak-1";
+// Ticari ileti onay metni sürümü. Metin değişirse artırılmalı; her kanal kaydına yazılır.
+const ILETISIM_METIN_SURUMU = "hupolingo-ticari-ileti-2026-10-v1";
 
 export default function SignUpForm() {
   const t = useTranslations("signup");
@@ -24,8 +24,10 @@ export default function SignUpForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [consent, setConsent] = useState(false);
-  // Ticari ileti rızası ayrı ve varsayılan olarak İŞARETSİZ (KVKK açık rıza).
-  const [iletisimIzni, setIletisimIzni] = useState(false);
+  // Ticari ileti izinleri: her kanal ayrı, tümü varsayılan İŞARETSİZ (6563 ve KVKK açık rıza).
+  const [izinEposta, setIzinEposta] = useState(false);
+  const [izinSms, setIzinSms] = useState(false);
+  const [izinTelefon, setIzinTelefon] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
@@ -53,8 +55,10 @@ export default function SignUpForm() {
         data: {
           full_name: fullName.trim(),
           role: "veli",
-          // Rıza, e-posta doğrulandığında veritabanında yazılır (migration 20261015000000).
-          iletisim_eposta: iletisimIzni,
+          // Kanal izinleri e-posta doğrulandığında yazılır (migration 20261020000300).
+          iletisim_eposta: izinEposta,
+          iletisim_sms: izinSms,
+          iletisim_telefon: izinTelefon,
           iletisim_metin_surumu: ILETISIM_METIN_SURUMU,
         },
         emailRedirectTo: `${window.location.origin}/signin`,
@@ -207,15 +211,35 @@ export default function SignUpForm() {
             </span>
           </label>
 
-          <label className="flex min-h-11 items-start gap-3 text-sm text-navy-muted">
-            <input
-              type="checkbox"
-              checked={iletisimIzni}
-              onChange={(e) => setIletisimIzni(e.target.checked)}
-              className="mt-0.5 size-5 shrink-0 accent-brand-500"
-            />
-            <span>{t("consentMarketing")}</span>
-          </label>
+          {/* İletişim tercihleri — 6563 sayılı Kanun, kanal bazlı, tümü başlangıçta boş */}
+          <div className="space-y-2 rounded-xl border border-gray-200 bg-gray-50 px-4 py-3">
+            <p className="text-sm font-semibold text-navy">{t("marketingTitle")}</p>
+            {[
+              { id: "izin-eposta", label: t("marketingEposta"), checked: izinEposta, set: setIzinEposta },
+              { id: "izin-sms",    label: t("marketingSms"),    checked: izinSms,    set: setIzinSms },
+              { id: "izin-tel",    label: t("marketingTelefon"),checked: izinTelefon,set: setIzinTelefon },
+            ].map(({ id, label, checked, set }) => (
+              <label key={id} className="flex cursor-pointer items-start gap-3 text-sm text-navy-muted">
+                <input
+                  type="checkbox"
+                  id={id}
+                  checked={checked}
+                  onChange={(e) => set(e.target.checked)}
+                  className="mt-0.5 size-4 shrink-0 rounded border-gray-300 accent-brand-500"
+                />
+                <span>{label}</span>
+              </label>
+            ))}
+            <p className="pt-1 text-xs leading-snug text-gray-500">
+              {t.rich("marketingKabul", {
+                link: (chunks) => (
+                  <Link href="/ticari-ileti-izni" className="underline hover:text-brand-600" target="_blank">
+                    {chunks}
+                  </Link>
+                ),
+              })}
+            </p>
+          </div>
 
           {error && (
             <p

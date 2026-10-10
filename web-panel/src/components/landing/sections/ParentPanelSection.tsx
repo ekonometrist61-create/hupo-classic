@@ -42,7 +42,7 @@ const subjectBars: SubjectBar[] = [
 interface ReviewRow { konu: string; ders: string; yanlis: number; pct: number | null }
 const reviewRows: ReviewRow[] = [
   { konu: "Kesirler", ders: "Matematik", yanlis: 5, pct: 40 },
-  { konu: "Ses Olaylar&#305;", ders: "Türkçe", yanlis: 3, pct: 67 },
+  { konu: "Ses Olayları", ders: "Türkçe", yanlis: 3, pct: 67 },
   { konu: "Madde ve Özellikleri", ders: "Fen", yanlis: 4, pct: 25 },
 ];
 
@@ -141,8 +141,9 @@ export async function ParentPanelSection() {
                       <tr key={row.konu} style={{ borderBottom: `1px solid ${P.border}` }}>
                         <td
                           style={{ padding: "5px 6px 5px 0", fontWeight: 600, color: P.ink }}
-                          dangerouslySetInnerHTML={{ __html: row.konu }}
-                        />
+                        >
+                          {row.konu}
+                        </td>
                         <td style={{ padding: "5px 6px 5px 0", color: P.muted }}>{row.ders}</td>
                         <td style={{ padding: "5px 6px 5px 0", color: P.ink }}>{row.yanlis}</td>
                         <td style={{ padding: "5px 0 5px 0" }}>

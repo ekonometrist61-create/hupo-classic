@@ -9,6 +9,9 @@ const withNextIntl = createNextIntlPlugin("./src/i18n/request.ts");
 // Çocuk verisi işleyen bir platform olduğu için sıkı CSP zorunlu.
 // 'unsafe-inline' kaldırmak için Tailwind/Next.js nonce entegrasyonu gerekir;
 // şimdilik inline script'lere izin veriliyor, ileriki sürümde nonce'a geçilecek.
+// Geliştirme (HMR) dışında 'unsafe-eval' açılmaz (TASKS.md §11.3).
+const isDev = process.env.NODE_ENV === "development";
+
 const securityHeaders = [
   {
     key: "X-Frame-Options",
@@ -41,13 +44,16 @@ const securityHeaders = [
       "default-src 'self'",
       // Supabase API + Realtime
       "connect-src 'self' https://*.supabase.co wss://*.supabase.co",
-      // Next.js hot reload (sadece geliştirme ortamında kullanılır)
-      "script-src 'self' 'unsafe-inline' 'unsafe-eval'",
+      // Next.js hot reload için 'unsafe-eval' yalnızca geliştirmede açık
+      `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com",
       // Uygulama logoları ve kullanıcı avatarları (ileriki sürümde kısıtlanacak)
       "img-src 'self' data: blob: https://*.supabase.co",
       "frame-ancestors 'none'",
+      "object-src 'none'",
+      "base-uri 'self'",
+      "form-action 'self'",
     ].join("; "),
   },
 ];
