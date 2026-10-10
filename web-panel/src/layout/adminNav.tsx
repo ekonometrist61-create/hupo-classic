@@ -42,6 +42,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { key: "overview", icon: <GridIcon />, path: "/yonetim", roles: ADMIN },
       { key: "members", icon: <GroupIcon />, path: "/yonetim/kullanicilar", roles: ADMIN },
       { key: "leads", icon: <UserCircleIcon />, path: "/yonetim/veli-adaylari", roles: ADMIN },
+      { key: "kimlikEslestirme", icon: <GroupIcon />, path: "/yonetim/kimlik-eslestirme", roles: ADMIN },
       { key: "classes", icon: <TableIcon />, path: "/yonetim/siniflar", roles: ADMIN },
       { key: "myClasses", icon: <TableIcon />, path: "/yonetim/siniflar", roles: ["ogretmen"] },
     ],
@@ -50,6 +51,7 @@ export const NAV_GROUPS: NavGroup[] = [
     key: "content",
     items: [
       { key: "questions", icon: <DocsIcon />, path: "/yonetim/sorular", roles: ADMIN },
+      { key: "mockExams", icon: <DocsIcon />, path: "/yonetim/deneme-sinavlari", roles: ADMIN },
       { key: "characters", icon: <ShootingStarIcon />, path: "/yonetim/karakterler", roles: ADMIN },
       { key: "leagues", icon: <TableIcon />, path: "/yonetim/ligler", roles: ADMIN },
       { key: "badges", icon: <TaskIcon />, path: "/yonetim/rozetler", roles: ADMIN },
@@ -73,13 +75,13 @@ export const NAV_GROUPS: NavGroup[] = [
   {
     key: "business",
     items: [
+      { key: "payments", icon: <DollarLineIcon />, path: "/yonetim/odemeler", roles: ADMIN },
+      { key: "plans", icon: <BoxIcon />, path: "/yonetim/planlar", roles: ADMIN },
+      { key: "trials", icon: <TaskIcon />, path: "/yonetim/denemeler", roles: ADMIN },
       { key: "destekMasasi", icon: <TaskIcon />, path: "/yonetim/destek-masasi", roles: ADMIN },
       { key: "satisHatti", icon: <DollarLineIcon />, path: "/yonetim/satis-hatti", roles: ADMIN },
       { key: "crmGorevler", icon: <TaskIcon />, path: "/yonetim/crm-gorevler", roles: ADMIN },
       { key: "ekipAkisi", icon: <GroupIcon />, path: "/yonetim/ekip-akisi", roles: ADMIN },
-      { key: "payments", icon: <DollarLineIcon />, path: "/yonetim/odemeler", roles: ADMIN },
-      { key: "plans", icon: <BoxIcon />, path: "/yonetim/planlar", roles: ADMIN },
-      { key: "trials", icon: <TaskIcon />, path: "/yonetim/denemeler", roles: ADMIN },
       { key: "analytics", icon: <PieChartIcon />, path: "/yonetim/analitik", roles: ADMIN },
       { key: "growthAnalitik", icon: <PieChartIcon />, path: "/yonetim/growth-analitik", roles: ADMIN },
       { key: "aiOneriler", icon: <BoltIcon />, path: "/yonetim/ai-oneriler", roles: ADMIN },

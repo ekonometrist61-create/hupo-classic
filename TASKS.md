@@ -501,7 +501,23 @@ Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-cast
 - [x] `DenemeEkrani.tsx` bitiş ekranına "Sonuçları Gör →" + "Ana Sayfaya Dön" butonları.
 - [ ] Uçtan uca test: sınav tamamla → `/deneme-sonuclari/[examId]` doğru sonucu gösteriyor mu.
 
+### 12.10 Faz 3 — Gelişim İzleme (2026-10-10)
+- [x] Migration `20261020000500`: `get_my_exam_progress()` — tüm sınavlar puan/sıra/yüzdelik trendi (auth). `get_my_topic_trends()` — konu bazlı toplam başarı (auth). Deploy edildi.
+- [x] `/ogrenci/gelisim` — SSR öğrenci sayfası; puan trendi SVG çizgisi + sınav listesi, güçlü/zayıf konular, konu ısı haritası.
+- [x] Öğrenci ana sayfasına "Gelişimimi Gör" hızlı erişim linki (deneme varsa gösterilir).
+- [ ] Uçtan uca test: birden fazla sınav tamamlanmış öğrenciyle trend grafiğini gör.
+
+### 12.11 Faz 4 — Aile Tekilleştirme Backend (2026-10-10)
+- [x] Migration `20261020000600`: `identity_merge_candidates` tablosu (RLS açık, service_role erişimi).
+  - `admin_detect_identity_duplicates()`: aynı ad+sınıf, farklı veli → aday oluştur (service_role, cron tetikler).
+  - `admin_list_merge_candidates()`: admin RPC — bekleyen adayları listele.
+  - `admin_resolve_merge_candidate(id, action)`: merged/distinct/ignored kararı kaydet.
+  - Deploy edildi.
+- [ ] Admin sayfası `/yonetim/kimlik-eslestirme` — birleştirme arayüzü (önce admin_detect cron kurulmalı).
+- [ ] Gerçek profil birleştirme mantığı (deneme sonuçlarını tek profilde topla) — gelecek fazda.
+
 ### 12.4 Sıradaki
-- Gelişim izleme (Faz 3): `/deneme-gelisim` — puan trendi, konu ısı haritası. RPC'ler: `get_my_exam_progress()`, `get_my_topic_trends()`.
-- Aile tekilleştirme (Faz 4, Faz 3 ile paralel başlar).
-- Anti-hile ve bildirim (Faz 5).
+- Admin `/yonetim/kimlik-eslestirme` sayfası (Faz 4 UI).
+- Anti-hile (Faz 5A): `started_at` timestamp, kısa süre tespiti.
+- Sonuç e-posta bildirimi (Faz 5B): `olay_kutusu` → `deneme_sonuc_bildirimi`.
+- Paylaşılabilir sonuç kartı (Faz 5D).

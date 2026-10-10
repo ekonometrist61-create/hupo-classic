@@ -117,6 +117,17 @@ export default async function OgrenciAnaSayfa({
         </div>
       </div>
 
+      {/* Hızlı erişim */}
+      {denemeleri.length > 0 && (
+        <Link
+          href="/ogrenci/gelisim"
+          className="flex items-center justify-between rounded-2xl border border-brand-100 bg-brand-50 px-5 py-3 text-sm font-medium text-brand-700 hover:bg-brand-100 dark:border-brand-900/30 dark:bg-brand-900/10 dark:text-brand-400"
+        >
+          <span>📈 Gelişimimi Gör</span>
+          <span>→</span>
+        </Link>
+      )}
+
       {/* Dersler */}
       <div>
         <h2 className="mb-4 text-lg font-semibold text-gray-800 dark:text-white">
