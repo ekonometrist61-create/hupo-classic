@@ -11,9 +11,12 @@ import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
-const [, , migrationArg, testsArg] = process.argv;
-if (!migrationArg || !testsArg) {
-  console.log('Kullanım: node pglite-kos.mjs <migration.sql> <tests.sql>');
+// Son argüman test dosyasıdır; öncekiler sırayla uygulanan migration'lardır.
+const args = process.argv.slice(2);
+const testsArg = args.pop();
+const migrationArgs = args;
+if (!testsArg || migrationArgs.length === 0) {
+  console.log('Kullanım: node pglite-kos.mjs <migration.sql> [...] <tests.sql>');
   process.exit(2);
 }
 
@@ -31,8 +34,10 @@ async function adim(ad, fn) {
 
 await adim('stubs', () => db.exec(fs.readFileSync(path.join(here, 'stubs.sql'), 'utf8')));
 console.log('stubs: tamam');
-await adim('migration', () => db.exec(fs.readFileSync(path.resolve(migrationArg), 'utf8')));
-console.log('migration: tamam');
+for (const m of migrationArgs) {
+  await adim(path.basename(m), () => db.exec(fs.readFileSync(path.resolve(m), 'utf8')));
+  console.log(`migration: ${path.basename(m)} tamam`);
+}
 await adim('test-yukleme', () => db.exec(fs.readFileSync(path.resolve(testsArg), 'utf8')));
 const sonuc = await adim('testler', () => db.query('select * from pg_temp.kelime_evreni_testleri()'));
 

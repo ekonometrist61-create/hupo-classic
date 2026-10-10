@@ -75,6 +75,8 @@ create table if not exists public.kelime_sorulari (
   iliski_turu      text not null check (iliski_turu in ('es_anlamli', 'zit_anlamli', 'es_sesli')),
   sinif            smallint not null check (sinif between 1 and 12),
   kazanim_kodu     text check (kazanim_kodu is null or length(kazanim_kodu) between 1 and 40),
+  -- Soru zorluğu: mevcut XP sistemindeki zorluk kademesiyle aynı (1 = 10 XP, 2 = 20 XP, 3 = 30 XP)
+  zorluk           smallint not null default 1 check (zorluk between 1 and 3),
   soru_metni       text not null check (length(btrim(soru_metni)) between 5 and 400),
   secenekler       jsonb not null check (jsonb_typeof(secenekler) = 'array' and jsonb_array_length(secenekler) between 2 and 4),
   dogru_indeks     smallint not null check (dogru_indeks >= 0),
@@ -123,7 +125,7 @@ create table if not exists public.kelime_denemeleri (
   secilen_indeks     smallint not null check (secilen_indeks >= 0),
   dogru_mu           boolean not null,
   ipucu_kullanildi   boolean not null default false,
-  kazanilan_xp       integer not null default 0 check (kazanilan_xp between 0 and 10),
+  kazanilan_xp       integer not null default 0 check (kazanilan_xp between 0 and 30),
   created_at         timestamptz not null default now(),
 
   unique (ogrenci_id, deneme_anahtari)
@@ -348,8 +350,9 @@ grant execute on function public.kelime_oyun_getir(text, integer) to authenticat
 --
 --  * Idempotent: aynı deneme_anahtari ile gelen tekrar, kayıtlı sonucu döner; yeniden puanlamaz.
 --  * Yarış koşulu: kullanıcı başına advisory lock; aynı soruda iki eşzamanlı doğru XP veremez.
---  * XP kuralı: XP yalnızca bu soruda İLK doğru ve İPUCUSUZ cevapta verilir (10 XP).
---    Diğer doğru cevaplar seri/aktiflik sayar ama XP vermez (mevcut submit_answer ile aynı desen).
+--  * XP kuralı (mevcut submit_answer ile aynı): XP yalnızca doğru, İPUCUSUZ ve tekrar zamanı gelmiş
+--    (vadesi gelmiş) cevapta verilir; tutar sorunun zorluğuna göre 10/20/30 XP'dir. Diğer doğru
+--    cevaplar seri/aktiflik sayar ama XP vermez.
 --  * Ustalık: doğru → seviye +1 (en fazla 3); ipucu ile doğru → seviye değişmez;
 --    yanlış → seviye 0. Sonraki tekrar: 1 / 3 / 7 gün.
 --  * Hız sınırı: kullanıcı başına dakikada en fazla 30 deneme.
@@ -372,7 +375,8 @@ declare
   v_onceki      public.kelime_denemeleri%rowtype;
   v_ipucu       boolean := coalesce(p_ipucu_kullanildi, false);
   v_dogru       boolean;
-  v_ilk_dogru   boolean;
+  v_xp_ver      boolean;
+  v_ust         public.kelime_ustaliklari%rowtype;
   v_xp          integer := 0;
   v_award       jsonb;
   v_onceki_seviye smallint := 0;
@@ -434,15 +438,17 @@ begin
 
   v_dogru := p_secilen_indeks = v_soru.dogru_indeks;
 
-  v_ilk_dogru := v_dogru and not v_ipucu and not exists (
-    select 1 from public.kelime_denemeleri d
-     where d.ogrenci_id = v_uid and d.soru_id = v_soru.id
-       and d.dogru_mu and not d.ipucu_kullanildi
-  );
+  -- Mevcut submit_answer kuralı: XP yalnızca tekrar zamanı gelmiş (vadesi gelmiş) doğru cevapta verilir.
+  -- Kelimede tekrar birimi anlamdır (kelime_ustaliklari). Henüz kaydı olmayan anlam vadesi gelmiş sayılır.
+  select * into v_ust
+    from public.kelime_ustaliklari u
+   where u.ogrenci_id = v_uid and u.anlam_id = v_soru.anlam_id and u.beceri = 'taninma';
+  -- İpucu mevcut sistemde olmayan bir yardımdır; ipucuyla doğru cevap XP vermez.
+  v_xp_ver := v_dogru and not v_ipucu and ((not found) or v_ust.sonraki_tekrar_tarihi <= now());
 
   if v_dogru then
-    -- Tek XP yazım yolu: mevcut ledger ve seri/lig mantığı. Zorluk 1 = 10 XP.
-    v_award := public.award_xp_and_streak(v_uid, 1::smallint, v_ilk_dogru);
+    -- Tek XP yazım yolu: award_xp_and_streak. XP zorluğa göre (1/2/3 = 10/20/30); seri her doğru cevapta sayılır.
+    v_award := public.award_xp_and_streak(v_uid, v_soru.zorluk, v_xp_ver);
     v_xp := coalesce((v_award ->> 'kazanilan_xp')::integer, 0);
   end if;
 
@@ -452,9 +458,7 @@ begin
     v_uid, v_soru.id, v_soru.anlam_id, p_deneme_anahtari, p_secilen_indeks, v_dogru, v_ipucu, v_xp
   );
 
-  select coalesce(max(u.basari_seviyesi), 0) into v_onceki_seviye
-    from public.kelime_ustaliklari u
-   where u.ogrenci_id = v_uid and u.anlam_id = v_soru.anlam_id and u.beceri = 'taninma';
+  v_onceki_seviye := coalesce(v_ust.basari_seviyesi, 0);
 
   if not v_dogru then
     v_yeni_seviye := 0;
@@ -832,7 +836,8 @@ create or replace function public.kelime_soru_kaydet(
   p_dogru_indeks    integer,
   p_dogru_anlam_id  uuid,
   p_ipucu           text,
-  p_aciklama        text
+  p_aciklama        text,
+  p_zorluk          integer default 1
 )
 returns uuid
 language plpgsql
@@ -860,6 +865,9 @@ begin
   end if;
   if p_ipucu is not null and length(btrim(p_ipucu)) > 200 then
     raise exception 'BAD_IPUCU' using errcode = '22023';
+  end if;
+  if p_zorluk is null or p_zorluk not between 1 and 3 then
+    raise exception 'BAD_ZORLUK' using errcode = '22023';
   end if;
 
   -- Şıklar: 2-4 adet, boş olmayan metin, tekrarsız (büyük/küçük harf ve boşluk farkı yok sayılır)
@@ -900,10 +908,10 @@ begin
 
   if p_id is null then
     insert into public.kelime_sorulari (
-      anlam_id, iliski_turu, sinif, kazanim_kodu, soru_metni, secenekler, dogru_indeks,
+      anlam_id, iliski_turu, sinif, kazanim_kodu, zorluk, soru_metni, secenekler, dogru_indeks,
       dogru_anlam_id, ipucu, aciklama, durum, olusturan_id
     ) values (
-      p_anlam_id, p_iliski_turu, p_sinif, nullif(btrim(p_kazanim_kodu), ''), btrim(p_soru_metni), v_sec, p_dogru_indeks,
+      p_anlam_id, p_iliski_turu, p_sinif, nullif(btrim(p_kazanim_kodu), ''), p_zorluk, btrim(p_soru_metni), v_sec, p_dogru_indeks,
       p_dogru_anlam_id, nullif(btrim(p_ipucu), ''), btrim(p_aciklama), 'taslak', v_uid
     )
     returning id into v_id;
@@ -912,6 +920,7 @@ begin
        set anlam_id = p_anlam_id,
            iliski_turu = p_iliski_turu,
            sinif = p_sinif,
+           zorluk = p_zorluk,
            kazanim_kodu = nullif(btrim(p_kazanim_kodu), ''),
            soru_metni = btrim(p_soru_metni),
            secenekler = v_sec,
@@ -938,8 +947,8 @@ begin
 end;
 $$;
 
-revoke all on function public.kelime_soru_kaydet(uuid, uuid, text, integer, text, text, jsonb, integer, uuid, text, text) from public, anon;
-grant execute on function public.kelime_soru_kaydet(uuid, uuid, text, integer, text, text, jsonb, integer, uuid, text, text) to authenticated;
+revoke all on function public.kelime_soru_kaydet(uuid, uuid, text, integer, text, text, jsonb, integer, uuid, text, text, integer) from public, anon;
+grant execute on function public.kelime_soru_kaydet(uuid, uuid, text, integer, text, text, jsonb, integer, uuid, text, text, integer) to authenticated;
 
 -- ---------------------------------------------------------------------
 -- 18. YÖNETİM: durum geçişi (taslak → incelemede → yayında → arşiv)
@@ -1038,7 +1047,7 @@ begin
 
   select coalesce(jsonb_agg(to_jsonb(x) order by x.guncellendi desc), '[]'::jsonb) into v_satirlar
     from (
-      select s.id, a.kelime, a.anlam, s.anlam_id, s.iliski_turu, s.sinif, s.kazanim_kodu,
+      select s.id, a.kelime, a.anlam, s.anlam_id, s.iliski_turu, s.sinif, s.zorluk, s.kazanim_kodu,
              s.soru_metni, s.secenekler, s.dogru_indeks, s.dogru_anlam_id, s.ipucu, s.aciklama,
              s.durum, s.olusturan_id, s.inceleyen_id, s.yayin_tarihi,
              s.updated_at as guncellendi

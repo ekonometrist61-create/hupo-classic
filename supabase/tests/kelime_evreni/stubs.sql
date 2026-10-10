@@ -94,3 +94,22 @@ begin
 end $$;
 revoke execute on function public.award_xp_and_streak(uuid, smallint, boolean) from public, anon, authenticated;
 
+-- Arena (meydan okuma) bağımlılıkları: 20261010000000_meydan_okuma.sql bu tablolara başvurur.
+create table public.student_stats (
+  student_id uuid primary key references public.profiles (id) on delete cascade,
+  xp integer not null default 0
+);
+
+-- Soru bankası (yalnızca Arena'nın soru modunun okuduğu alanlar)
+create table public.questions (
+  id uuid primary key default gen_random_uuid(),
+  okul text,
+  ders text,
+  konu text,
+  zorluk smallint,
+  soru_metni text,
+  siklar jsonb,
+  dogru_sik text,
+  sinif smallint,
+  onay_durumu text not null default 'beklemede'
+);
