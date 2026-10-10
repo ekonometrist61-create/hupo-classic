@@ -44,8 +44,8 @@
 
 ## 3. ⏳ Hâlâ canlıdan teyit edilecekler
 
-Kurtarma zinciri **derleme (reset) açısından tamam**: `tools/kurtarma-bagimlilik-denetimi.ps1`
-artık **0 eksik referans**, `tools/kurtarma-sql-denetim.ps1` **0 hata / 0 uyarı**,
+Kurtarma zinciri **derleme (reset) açısından tamam**: `docs/arsiv/tools/kurtarma-bagimlilik-denetimi.ps1`
+artık **0 eksik referans**, `docs/arsiv/tools/kurtarma-sql-denetim.ps1` **0 hata / 0 uyarı**,
 `tools/istemci-rpc-denetimi.ps1` **0 eksik RPC** veriyor (bkz. §5).
 
 Bu turda kapananlar: `question_quality_config` (§4.1 → `20260927000050`),
@@ -206,24 +206,24 @@ from pg_constraint where conrelid = 'public.question_revisions'::regclass;
 
 | Araç / dosya | Sonuç |
 |---|---|
-| `tools/kurtarma-sql-denetim.ps1` | **0 hata / 0 uyarı** (35 dosya; 2 "dinamik revoke bloğu" notu) |
-| `tools/kurtarma-bagimlilik-denetimi.ps1` | **0 eksik referans** (55 kurtarılan gövde, 94 tanımlı referans) |
+| `docs/arsiv/tools/kurtarma-sql-denetim.ps1` | **0 hata / 0 uyarı** (35 dosya; 2 "dinamik revoke bloğu" notu) |
+| `docs/arsiv/tools/kurtarma-bagimlilik-denetimi.ps1` | **0 eksik referans** (55 kurtarılan gövde, 94 tanımlı referans) |
 | `tools/istemci-rpc-denetimi.ps1` | **0 eksik RPC** (istemci 27 RPC çağırıyor, hepsi tanımlı) |
 | `tools/sql-sozdizim-denetimi.mjs` | **0 hata** (36 SQL dosyası: parantez/metin/yorum/dolar-tırnak dengesi, gövde içleri dahil) |
 | `supabase/tests/kurtarma_tests.sql` | 47 senaryo (46–47: 10 şifre seed ve kapalı test cevap gizliliği) |
 
 > Bu satırlar `_kupon_mesaj` düzeltmesinden (bkz. §5.2) **sonra** dört araçla
 > yeniden üretildi: `node tools/sql-sozdizim-denetimi.mjs` → `HATA: 0` (35 dosya),
-> `tools/kurtarma-sql-denetim.ps1` → `hata: 0 | uyarı: 0 | not: 2`,
-> `tools/kurtarma-bagimlilik-denetimi.ps1` → `EKSİK (0 referans)`,
+> `docs/arsiv/tools/kurtarma-sql-denetim.ps1` → `hata: 0 | uyarı: 0 | not: 2`,
+> `docs/arsiv/tools/kurtarma-bagimlilik-denetimi.ps1` → `EKSİK (0 referans)`,
 > `tools/istemci-rpc-denetimi.ps1` → `EKSİK (0)` (istemci 27 RPC çağırıyor).
 >
 > Dikkat: Bu makinede PowerShell betik çalıştırma **varsayılan olarak kapalıdır**
 > (`running scripts is disabled on this system`). Betikleri şöyle çalıştır:
 >
 > ```powershell
-> powershell -NoProfile -ExecutionPolicy Bypass -File tools/kurtarma-sql-denetim.ps1
-> powershell -NoProfile -ExecutionPolicy Bypass -File tools/kurtarma-bagimlilik-denetimi.ps1
+> powershell -NoProfile -ExecutionPolicy Bypass -File docs/arsiv/tools/kurtarma-sql-denetim.ps1
+> powershell -NoProfile -ExecutionPolicy Bypass -File docs/arsiv/tools/kurtarma-bagimlilik-denetimi.ps1
 > powershell -NoProfile -ExecutionPolicy Bypass -File tools/istemci-rpc-denetimi.ps1
 > ```
 >
