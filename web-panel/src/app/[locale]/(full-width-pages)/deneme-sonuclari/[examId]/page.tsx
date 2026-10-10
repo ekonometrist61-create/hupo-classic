@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { setRequestLocale } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
 import KonuKirilimi from "@/components/deneme-sonuclari/KonuKirilimi";
+import PaylasKarti from "@/components/deneme-sonuclari/PaylasKarti";
 
 export async function generateMetadata(): Promise<Metadata> {
   return { title: "Deneme Sınavı Sonuçları | Hupolingo" };
@@ -158,6 +159,17 @@ export default async function DenemesonuclariPage({
               </span>
             </div>
           </div>
+        )}
+
+        {kendi && (
+          <PaylasKarti
+            sinavAd={sinav.ad}
+            puan={Number(kendi.puan)}
+            sinif={kendi.sinif}
+            sira={kendi.sira}
+            katilimci={kendi.sinif_katilimci}
+            yuzdelik={Number(kendi.yuzdelik)}
+          />
         )}
 
         {/* Giriş yapmamış CTA */}

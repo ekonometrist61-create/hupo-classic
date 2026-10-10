@@ -513,11 +513,22 @@ Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-cast
   - `admin_list_merge_candidates()`: admin RPC — bekleyen adayları listele.
   - `admin_resolve_merge_candidate(id, action)`: merged/distinct/ignored kararı kaydet.
   - Deploy edildi.
-- [ ] Admin sayfası `/yonetim/kimlik-eslestirme` — birleştirme arayüzü (önce admin_detect cron kurulmalı).
+- [x] Admin sayfası `/yonetim/kimlik-eslestirme` — birleştirme arayüzü (kod + tsc; tarayıcı testi yapılmadı).
+- [x] `admin_detect_identity_duplicates` günlük cron — migration `20261020000800` (pg_cron, her gün 00:30 UTC). Job satırı SQL ile ayrıca doğrulanmadı.
 - [ ] Gerçek profil birleştirme mantığı (deneme sonuçlarını tek profilde topla) — gelecek fazda.
 
+### 12.12 Faz 5A / 5B / 5D (2026-10-10)
+- [x] Faz 5A — Migration `20261020000700`: `deneme_sinavi_denemeleri.started_at` + `supheli`. `start_mock_exam_attempt` başlangıcı yazar; `_deneme_sinavi_bitir` 30 sn altındaki tamamlamayı `supheli = true` işaretler (engellemez).
+- [x] Faz 5B — Aynı migration: ilk bitişte `olay_kutusu` → `deneme_sonuc_bildirimi` (payload: exam_id, student_id, puan, sira, supheli; PII yok). Gönderen worker henüz yok.
+- [x] Faz 5D — `PaylasKarti.tsx`: sonuç sayfasında canvas ile 1080×1080 PNG (ad yok; puan, sınıf sırası, yüzdelik). Web Share, yoksa indirme. tsc + eslint temiz; tarayıcıda görsel kontrolü yapılmadı.
+
 ### 12.4 Sıradaki
-- Admin `/yonetim/kimlik-eslestirme` sayfası (Faz 4 UI).
-- Anti-hile (Faz 5A): `started_at` timestamp, kısa süre tespiti.
-- Sonuç e-posta bildirimi (Faz 5B): `olay_kutusu` → `deneme_sonuc_bildirimi`.
-- Paylaşılabilir sonuç kartı (Faz 5D).
+- [ ] Uçtan uca testler (12.8 / 12.9 / 12.10) — test öğrenci + veli hesabı ve tarayıcı gerekir.
+- [ ] Faz 4 gerçek profil birleştirme — KARAR BEKLİYOR: veri taşıma/silme ve geri alma kuralı.
+- [ ] `supheli` bayrağı admin sonuç listesinde görünmüyor (`admin_get_mock_exam_results` değişikliği gerekir).
+- [ ] Bitirilmemiş denemeler: öğrenci sekmeyi kapatırsa bitiş ve bildirim tetiklenmez. Süre dolan cevap yolunda (`submit_mock_exam_answer`) `perform _deneme_sinavi_bitir` ardından `raise` yapıldığı için bitiş geri alınıyor; düzeltme gerekir.
+- [ ] `deneme_sonuc_bildirimi` worker'ı (olay_kutusu → e-posta).
+- [ ] `/ticari-ileti-izni` şirket unvanı, iletişim e-postası, tarih + hukuk onayı.
+- [ ] CAPTCHA_SECRET — domain bağlandıktan sonra Edge Function ortamına.
+- [ ] İYS 3 iş günü kaydı — İYS entegrasyon bilgileri gerekir.
+- [ ] 8. sınıf LGS sınav tipi (§12.5).
