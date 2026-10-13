@@ -536,6 +536,17 @@ Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-cast
 - [ ] İYS 3 iş günü kaydı — KARAR: en sondan bir önce; bekleme listesinde. İYS entegrasyon bilgileri gerekir.
 - [ ] 8. sınıf LGS sınav tipi (§12.5).
 
+## 13-ek. Growth CRM entegrasyonu (2026-10-08)
+Kaynak: `Hupolingo_Growth_CRM_v1_FINAL_CodePack.zip`. Mevcut Supabase'e `growth_*` prefix ile additive layer.
+Dokümanlar: `docs/growth-crm/IMPLEMENTATION_PLAN.md`, `docs/growth-crm/REUSE_EXTEND_CREATE_MAP.md`.
+
+### Durum (2026-10-13)
+- [x] Migration'lar: `20261014000000` (core tablolar), `000100` (RPC'ler), `000200` (pazarlama), `000300` (analitik) — tümü uzakta uygulanmış
+- [x] Admin sayfaları: müşteri-360, müşteri-360/[id], potansiyel-adaylar, potansiyel-adaylar/[id], crm-gorevler, ekip-akisi, satis-hatti, destek-masasi, journey-otomasyonlari, mesaj-sablonlari, growth-analitik, ai-oneriler — `tsc` temiz
+- [ ] Gerçek admin oturumuyla tarayıcı testi yapılmadı
+- [ ] Faz B–F derinleştirme: `IMPLEMENTATION_PLAN.md`'deki sonraki fazlar
+- [ ] Veli adayları CRM: public web formu + captcha (anon lead yakalama) — Dilim 1 backend yazıldı, test çalıştırılmadı
+
 ## 13. Kelime Evreni entegrasyonu (2026-10-10, branch `feature/kelime-evreni`)
 Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1 başlangıç kodu; ürünün kendisi değil). Eş anlamlı / zıt anlamlı / eş sesli kelime oyunları Öğren sekmesine bağlanır.
 
