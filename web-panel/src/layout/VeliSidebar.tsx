@@ -48,15 +48,15 @@ const VELI_NAV: VeliNavGroup[] = [
     items: [
       { key: "questions", icon: <PieChartIcon /> },
       { key: "review", icon: <TaskIcon />, path: "/veli-paneli/tekrar" },
-      { key: "exams", icon: <DocsIcon /> },
+      { key: "exams", icon: <DocsIcon />, path: "/veli-paneli/denemeler" },
     ],
   },
   {
     key: "motivation",
     items: [
-      { key: "goals", icon: <ShootingStarIcon /> },
+      { key: "goals", icon: <ShootingStarIcon />, path: "/veli-paneli/hedefler" },
       { key: "achievements", icon: <BoxIcon />, path: "/veli-paneli/basarilar" },
-      { key: "activity", icon: <BoltIcon /> },
+      { key: "activity", icon: <BoltIcon />, path: "/veli-paneli/aktivite" },
     ],
   },
   {

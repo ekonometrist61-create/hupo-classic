@@ -201,6 +201,48 @@ export default function DenemeEkrani({ examId }: Props) {
     return () => { cancelled = true; };
   }, [examId]);
 
+  // localStorage anahtarı: sınav başına seçim yedekleme
+  const lsKey = `deneme_secimler_${examId}`;
+
+  // Sınav başladığında localStorage'daki seçimleri görsel olarak geri yükle
+  // (sunucu zaten cevapları saklıyor; sadece UI durumunu kurtarır)
+  useEffect(() => {
+    if (state.phase !== "exam" || !state.veri) return;
+    if (Object.keys(state.secimler).length > 0) return; // zaten doluysa atla
+    try {
+      const saved = localStorage.getItem(lsKey);
+      if (!saved) return;
+      const parsed = JSON.parse(saved) as Record<string, string>;
+      const validIds = new Set(state.veri.sorular.map((s) => s.id));
+      Object.entries(parsed).forEach(([qId, harf]) => {
+        if (validIds.has(qId)) dispatch({ type: "select", questionId: qId, harf });
+      });
+    } catch { /* localStorage erişilemez */ }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [state.phase, state.veri]);
+
+  // Seçimler değiştiğinde localStorage'a kaydet
+  useEffect(() => {
+    if (state.phase !== "exam" && state.phase !== "submitting") return;
+    try { localStorage.setItem(lsKey, JSON.stringify(state.secimler)); }
+    catch { /* ignore */ }
+  }, [state.secimler, state.phase, lsKey]);
+
+  // Sınav bitince / hata olunca localStorage'ı temizle
+  useEffect(() => {
+    if (state.phase !== "done" && state.phase !== "error") return;
+    try { localStorage.removeItem(lsKey); }
+    catch { /* ignore */ }
+  }, [state.phase, lsKey]);
+
+  // Sınav sırasında sayfadan çıkış uyarısı
+  useEffect(() => {
+    if (state.phase !== "exam") return;
+    const warn = (e: BeforeUnloadEvent) => { e.preventDefault(); };
+    window.addEventListener("beforeunload", warn);
+    return () => window.removeEventListener("beforeunload", warn);
+  }, [state.phase]);
+
   // ─── Yükleniyor ──────────────────────────────────────────────────────────────
   if (state.phase === "loading") {
     return (

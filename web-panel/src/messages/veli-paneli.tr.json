@@ -133,6 +133,28 @@
       "error": "Tercih kaydedilemedi. Birazdan tekrar deneyin.",
       "loadError": "Tercihlerin yüklenemedi. Sayfayı yenileyip tekrar deneyin."
     },
+    "goalsPage": {
+      "title": "Günlük Hedefler",
+      "desc": "Çocuğunuzun bugünkü çalışma hedefi ve bu haftaki tamamlama durumu",
+      "loading": "Yükleniyor...",
+      "loadError": "Hedef bilgisi yüklenemedi.",
+      "todayProgress": "{bugun} / {hedef} soru tamamlandı",
+      "completed": "Hedef tamamlandı",
+      "shield": "Seri koruyucu: {sayi} hakkınız var",
+      "weeklyTitle": "Bu Haftaki Günler",
+      "weeklyDesc": "Son {toplam} günden {aktif} gün aktif çalışma",
+      "weeklyEmpty": "Bu hafta henüz çalışma kaydı yok."
+    },
+    "activityPage": {
+      "title": "Son 7 Gün Aktivitesi",
+      "desc": "Çocuğunuzun günlük çalışma özeti",
+      "empty": "Bu hafta henüz çalışma kaydı yok.",
+      "questions": "soru",
+      "correct": "doğru",
+      "study": "çalışma",
+      "noActivity": "Bu gün çalışma yok",
+      "accuracy": "başarı"
+    },
     "consent": {
       "title": "Çocuk Verilerinin Kullanımı",
       "gate": "Öğrencinin çalışma verileri, veli onayı verildikten sonra görünür. Onayı aşağıdaki karttan verebilirsiniz.",

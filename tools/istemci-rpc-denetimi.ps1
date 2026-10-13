@@ -49,10 +49,15 @@ foreach ($f in $istemciDosyalari) {
 }
 
 # --- 2) Şemadaki fonksiyon tanımları ---------------------------------------
+# NOT: (?i) Türkçe locale'de i/I eşleşmez (Turkish dotless-i sorunu).
+# RegexOptions.CultureInvariant eklenerek düzeltildi.
+$reOpts = [System.Text.RegularExpressions.RegexOptions]::IgnoreCase -bor `
+          [System.Text.RegularExpressions.RegexOptions]::CultureInvariant
+$reFn   = [regex]::new('create\s+(or\s+replace\s+)?function\s+public\.([a-z0-9_]+)', $reOpts)
 $tanimli = [System.Collections.Generic.HashSet[string]]::new()
 foreach ($d in (@(Get-ChildItem -Path $mig -Filter '*.sql') + @(Get-ChildItem -Path $tst -Filter '*.sql'))) {
   $t = Get-Content -Raw $d.FullName
-  foreach ($m in [regex]::Matches($t, '(?i)create\s+(or\s+replace\s+)?function\s+public\.([a-z0-9_]+)')) {
+  foreach ($m in $reFn.Matches($t)) {
     [void]$tanimli.Add($m.Groups[2].Value.ToLower())
   }
 }

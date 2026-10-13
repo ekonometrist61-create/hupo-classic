@@ -133,6 +133,28 @@
       "error": "Your preference could not be saved. Please try again shortly.",
       "loadError": "Your preferences could not be loaded. Refresh the page and try again."
     },
+    "goalsPage": {
+      "title": "Daily Goals",
+      "desc": "Your child's daily study goal and this week's completion",
+      "loading": "Loading...",
+      "loadError": "Could not load goal information.",
+      "todayProgress": "{bugun} / {hedef} questions completed",
+      "completed": "Goal reached",
+      "shield": "Streak shield: {sayi} remaining",
+      "weeklyTitle": "This Week",
+      "weeklyDesc": "{aktif} active days out of {toplam}",
+      "weeklyEmpty": "No study sessions this week yet."
+    },
+    "activityPage": {
+      "title": "Last 7 Days Activity",
+      "desc": "Your child's daily study summary",
+      "empty": "No study sessions this week yet.",
+      "questions": "questions",
+      "correct": "correct",
+      "study": "study",
+      "noActivity": "No activity this day",
+      "accuracy": "accuracy"
+    },
     "consent": {
       "title": "Use of Children's Data",
       "gate": "The student's study data is shown after parental consent is given. You can give consent in the card below.",

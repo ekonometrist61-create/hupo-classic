@@ -43,7 +43,7 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // Supabase API + Realtime
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co",
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://eu.i.posthog.com https://eu-assets.i.posthog.com",
       // Next.js hot reload için 'unsafe-eval' yalnızca geliştirmede açık
       `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
