@@ -23,6 +23,8 @@ import '../widgets/splash/home_entrance_stagger.dart';
 import '../models/privacy_models.dart';
 import '../widgets/survey/survey_prompt_card.dart';
 import '../widgets/duyuru/duyuru_seridi.dart';
+import '../widgets/veli/veli_cocuk_veri.dart';
+import '../widgets/veli/veli_ilerleme_bolumu.dart';
 import 'parent_link_screen.dart';
 import 'privacy_notice_screen.dart';
 import 'quiz_screen.dart';
@@ -119,10 +121,10 @@ class HomeScreen extends ConsumerWidget {
           onAction: () => ref.invalidate(profileProvider),
         ),
         data: (p) {
-          // Veli hesabı: anket kartı (aktif anket yoksa hiçbir şey çizilmez) + bilgilendirme.
-          // Anket RPC'leri yalnızca bu dalda izlenir; öğrenci hesabında çağrılmaz.
+          // Veli hesabı: çocuk özeti, duyuru ve anket. Anket RPC'leri ve veli verisi
+          // yalnızca bu dalda izlenir; öğrenci hesabında çağrılmaz.
           if (p != null && p.role == 'veli') {
-            return _VeliAnaSayfa(onSignOut: repo.signOut);
+            return _VeliAnaSayfa(onSignOut: repo.signOut, adSoyad: p.fullName);
           }
           if (p == null || !p.isStudent) {
             return _Message(
@@ -847,36 +849,67 @@ class InlineRetry extends StatelessWidget {
   }
 }
 
-/// Veli hesabının ana ekranı. Öğrenci deneyimi yoktur; yalnızca anket kartı ve çıkış.
-class _VeliAnaSayfa extends StatelessWidget {
-  const _VeliAnaSayfa({required this.onSignOut});
+const String _veliSelamAltMetni = 'Çocuğunuzun durumunu buradan hızlıca görebilirsiniz.';
+
+/// Veli hesabının ana ekranı: selamlama, duyuru, çocukların kısa durumu ve veli
+/// paneline geçiş. Ayrıntılı işler (rapor, konu, deneme, abonelik) veli panelindedir (web).
+class _VeliAnaSayfa extends ConsumerWidget {
+  const _VeliAnaSayfa({required this.onSignOut, this.adSoyad});
 
   final VoidCallback onSignOut;
+  final String? adSoyad;
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context, WidgetRef ref) {
+    final ilkAd = (adSoyad ?? '').trim().split(' ').first;
+
     return SafeArea(
-      child: ListView(
-        padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
-        children: [
-          const DuyuruSeridi(),
-          const SizedBox(height: 16),
-          const SurveyPromptCard(),
-          const SizedBox(height: 24),
-          Text(
-            'Bu uygulama yalnızca öğrenci hesapları içindir.',
-            textAlign: TextAlign.center,
-            style: appText(size: 17, weight: FontWeight.w700),
-          ),
-          const SizedBox(height: 20),
-          Center(
-            child: ChunkyButton(
-              label: 'Çıkış yap',
-              expanded: false,
-              onPressed: onSignOut,
+      child: RefreshIndicator(
+        onRefresh: () async {
+          ref.invalidate(aktifDuyuruProvider);
+          ref.invalidate(aktifAnketlerProvider);
+          ref.invalidate(veliCocuklarProvider);
+          ref.invalidate(veliCocukOzetiProvider);
+        },
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            ContentWidth(
+              child: Padding(
+                padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      ilkAd.isEmpty ? 'Merhaba' : 'Merhaba, $ilkAd',
+                      style: appText(size: 26, weight: FontWeight.w900, height: 1.15),
+                    ),
+                    const SizedBox(height: 4),
+                    Text(
+                      _veliSelamAltMetni,
+                      style: appText(
+                          size: 15, weight: FontWeight.w700, color: AppColors.muted, height: 1.35),
+                    ),
+                    const SizedBox(height: 16),
+                    const DuyuruSeridi(),
+                    const SizedBox(height: 20),
+                    VeliIlerlemeBolumu(onPanelAc: () => veliPaneliniAc(context)),
+                    const SizedBox(height: 20),
+                    const SurveyPromptCard(),
+                    const SizedBox(height: 24),
+                    Center(
+                      child: ChunkyButton(
+                        label: 'Çıkış yap',
+                        expanded: false,
+                        onPressed: onSignOut,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
