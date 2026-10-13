@@ -527,7 +527,7 @@ Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-cast
 ### 12.4 Sıradaki
 - [ ] Uçtan uca testler (12.8 / 12.9 / 12.10) — EN SON yapılacak. Test öğrenci + veli hesabı ve tarayıcı gerekir.
 - [x] Faz 4 gerçek profil birleştirme — migration `20261020001000`. Ana hesap = daha önce oluşturulan hesap. Deneme ve katılım kayıtları ana hesaba taşınır; aynı sınavda iki kayıt varsa tamamlanmış/yüksek puanlı olan kalır. Her birleştirme `identity_merge_log`'a yazılır. XP/rozet/görev/karakter ve veli onay (consents) kayıtları kaynak hesapta kalır (ayrı karar). Birleştirilen öğrenci hesabı sınava giremez; veli kaydı ana hesaba yapılır. Test verisinde deneme gerekir.
-- [ ] `supheli` bayrağı admin sonuç listesinde görünmüyor (`admin_get_mock_exam_results` değişikliği gerekir).
+- [x] `supheli` bayrağı admin sonuç listesinde gösteriliyor (migration `20261024000000`, `MockExamDetailModal` ⚠ ikonu, çeviri eklendi)
 - [x] Bitirilmemiş denemeler: `deneme_sure_dolanlari_kapat()` her dakika (pg_cron) süresi dolmuş bitmemiş denemeleri kapatır; teslim türü `otomatik`, bildirim tetiklenir. Kapanış süre sonunda olur, anında değil: öğrenci süre içinde de sınava geri dönemez (`start` tekrar girişi reddeder), bu yüzden süre sonu tek kesin zamandır. Veli panelinde (`CocukDenemeGecmisi`) ve öğrenci gelişim sayfasında görünür. Migration `20261020000900`.
 - [x] Süre dolan cevap yolu düzeltildi: `submit_mock_exam_answer` artık bitirip `return` eder (raise yok), bitiş kalıcı. Migration `20261020000900`.
 - [x] `deneme_sonuc_bildirimi` worker'ı — Edge Function `olay-kutusu-gonder` (`--no-verify-jwt`) deploy edildi; pg_cron her 5 dk pg_net ile çağırır. Sağlayıcı: Resend (karar onayı bekliyor). Veritabanı tarafı: `olay_kutusu_talep_et` (lease + deneme sayacı, 5 denemede ölü kayıt), `olay_kutusu_sonuc_yaz` (üssel geri çekilme), `deneme_bildirim_alici` (service_role). Migration `20261020001100`. **Gönderimi açmak için:** `supabase secrets set OLAY_WORKER_SECRET=… RESEND_API_KEY=… OLAY_MAIL_FROM="Hupolingo <bildirim@alan.adi>" PUBLIC_SITE_URL=…`; Supabase Vault'a aynı değerle `olay_worker_secret` adında secret ekle. Gönderici alan adı doğrulanmadan e-posta gitmez. Gizli metin repoda yok.
@@ -560,10 +560,10 @@ Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1 başlangıç k
 - [x] Yerel SQL doğrulaması: PGlite (Postgres WASM) + Supabase bağımlılık taklitleri (`supabase/tests/kelime_evreni/`). **40/40 geçti.** Bilinçli açık mutasyonları (doğru şık sızıntısı, anon metrik yetkisi) testler yakaladı
 - [x] Bulunan ve düzeltilen hatalar: `text[] ||` dizi literali, `auth.uid()` dönüş tipi, `smallint`/`integer` parametre uyumsuzluğu, `OR` içinde hata üreten kontrol
 - [ ] Docker'da `supabase db reset` + `supabase test db` — Docker yok; PGlite ile yerine geçmez (gerçek `award_xp_and_streak`, `log_admin_action` yerine taklit kullanıldı)
-- [ ] **Uzak Supabase'e uygulama YOK.** `npm run db:preview` ve `db:deploy` kullanıcı onayı bekler (CLAUDE: üretim migration onaysız yapılmaz)
+- [x] **Uzak Supabase'e uygulandı.** `db:status` tüm Kelime migration'larını (20261022000000–000002, 20261023000000) uzakta senkron gösteriyor (2026-10-13 doğrulaması)
 - [x] Flutter: model, repository, akış denetleyicisi (`kelime_oyun_akisi.dart`), ana ekran, oyun ekranı, Öğren kartı. 42 Kelime testi geçiyor; `flutter analyze` proje genelinde temiz
 - [x] Web: `/yonetim/kelime-evreni` (metrikler, taslak/inceleme/yayın/arşiv, sözlük ve ilişki onayı), veli Genel Bakış kartı. `tsc` ve ESLint temiz
-- [x] Tam Flutter test takımı (son koşu): 247 geçti, 3 başarısız; üçü `splash_gate_test.dart` (Kelime Evreni dosyalarında splash yok; hata `78f034d` splash bileşeninde, master'daki durumu doğrulanmadı)
+- [x] Tam Flutter test takımı: `splash_gate_test.dart` 3 başarısız test düzeltildi (Riverpod ProviderScope ve yeni splash sözleşmesine uyarlandı, commit `6146ed2`). Tüm testler geçiyor
 - [ ] Tarayıcı, cihaz ve ekran okuyucu kontrolü (oturum ve cihaz gerekir): 390 px / masaüstü, hareket azaltma, ses ve titreşim
 - [x] Ortak `AnswerOption` kontrastı düzeltildi: `mintDark` (#237A4B, 4,86:1) ve `coralDark` (#A64B24, 5,30:1) kullanılıyor; Quiz ve Kelime ekranları aynı widget'ı paylaşır
 - [ ] İçerik: ilk onaylı paket (dil uzmanı incelemesi gerekir; demo içerik yayınlanmaz)
