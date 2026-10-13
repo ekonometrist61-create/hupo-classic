@@ -8,12 +8,20 @@ plugins {
 }
 
 // Yayin (release) imzasi: android/key.properties dosyasi varsa kullanilir.
-// Yoksa debug anahtariyla imzalanir (sadece test icin; Play Store bunu KABUL ETMEZ).
+// Yoksa: APK (assembleRelease) yalnizca yerel test icin debug anahtariyla imzalanir ve uyari verilir.
+// AAB (bundleRelease) Play Store'a gider; release anahtari yoksa derlenmez (TASKS.md §11.3).
 val keystoreProperties = Properties()
 val keystorePropertiesFile = rootProject.file("key.properties")
 val hasReleaseKey = keystorePropertiesFile.exists()
 if (hasReleaseKey) {
     keystoreProperties.load(FileInputStream(keystorePropertiesFile))
+}
+val releaseGorevleri = gradle.startParameter.taskNames
+if (!hasReleaseKey && releaseGorevleri.any { it.contains("bundleRelease", ignoreCase = true) }) {
+    throw GradleException("AAB yayin derlemesi icin android/key.properties (release anahtari) gerekli. Debug anahtariyla Play Store paketi uretilmez.")
+}
+if (!hasReleaseKey && releaseGorevleri.any { it.contains("assembleRelease", ignoreCase = true) }) {
+    logger.warn("UYARI: release anahtari yok (android/key.properties). APK debug anahtariyla imzaladi; magaza icin kullanmayin.")
 }
 
 android {
@@ -31,7 +39,7 @@ android {
         // Degistirmek istersen once store/KIMLIK_VE_HESAPLAR.md dosyasini oku.
         applicationId = "com.ogrencihazirlik.ogrenci_hazirlik"
         // flutter_secure_storage Android Keystore API'si minSdk 23 gerektirir.
-        minSdk = flutter.minSdkVersion
+        minSdk = 26
         targetSdk = flutter.targetSdkVersion
         // Surum numaralari pubspec.yaml'daki "version: 1.0.0+1" satirindan gelir
         // (1.0.0 = versionName, +1 = versionCode; her magaza yuklemesinde +N artmali).

@@ -36,14 +36,14 @@ Future<void> baslatHataRaporlama(
 /// Sentry'ye gitmeden önce olayı temizler. Mesaj ve istisna metinleri e-posta veya
 /// ad içerebilir; bunlar yerine sabit bir etiket konur. Breadcrumb'lar tamamen atılır.
 SentryEvent? kisisiVerileriTemizle(SentryEvent event, Hint hint) {
-  return event.copyWith(
-    message: const SentryMessage('[gizlendi]'),
-    throwable: '[gizlendi]',
-    exceptions: event.exceptions
-        ?.map((istisna) => istisna.copyWith(value: '[gizlendi]'))
-        .toList(),
-    breadcrumbs: const [],
-  );
+  // Not (sentry 10): throwable yalnızca okunur bir alan ve sunucuya serileştirilmez;
+  // gönderilen metin exceptions / message üzerinden temizlenir.
+  event.message = SentryMessage('[gizlendi]');
+  for (final istisna in event.exceptions ?? const <SentryException>[]) {
+    istisna.value = '[gizlendi]';
+  }
+  event.breadcrumbs = const [];
+  return event;
 }
 
 /// Sentry yokken (DSN boş) yakalanmamış hataları yalnızca yerel olarak yazar.
