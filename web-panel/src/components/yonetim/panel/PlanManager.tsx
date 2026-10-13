@@ -29,9 +29,10 @@ interface FormState {
   sure: string;
   aktif: boolean;
   tip_kod: string;
+  deneme_gun: string;
 }
 
-const EMPTY: FormState = { kod: "", ad: "", aciklama: "", fiyat: "", sure: "30", aktif: true, tip_kod: "premium" };
+const EMPTY: FormState = { kod: "", ad: "", aciklama: "", fiyat: "", sure: "30", aktif: true, tip_kod: "premium", deneme_gun: "" };
 
 export default function PlanManager({
   plans,
@@ -70,6 +71,7 @@ export default function PlanManager({
       sure: String(p.sure_gun),
       aktif: p.aktif,
       tip_kod: p.tip_kod,
+      deneme_gun: p.deneme_gun != null ? String(p.deneme_gun) : "",
     });
     setEditing(true);
     setError(null);
@@ -86,6 +88,7 @@ export default function PlanManager({
     if (!/^\d+$/.test(form.sure) || Number(form.sure) < 1) return setError(t("errSure"));
 
     setSaving(true);
+    const denemeGun = form.deneme_gun.trim() === "" ? null : Number(form.deneme_gun);
     const { error: err } = await createClient().rpc("admin_upsert_plan", {
       p_kod: form.kod,
       p_ad: form.ad.trim(),
@@ -94,6 +97,7 @@ export default function PlanManager({
       p_sure_gun: Number(form.sure),
       p_aktif: form.aktif,
       p_tip_kod: form.tip_kod,
+      p_deneme_gun: denemeGun,
     });
     setSaving(false);
     if (err) return setError(err.message);
@@ -132,6 +136,7 @@ export default function PlanManager({
                 <th className={thClass}>Tip</th>
                 <th className={thClass}>{t("fiyat")}</th>
                 <th className={thClass}>{t("sure")}</th>
+                <th className={thClass}>Deneme</th>
                 <th className={thClass}>{t("aktif")}</th>
                 <th className={thClass} />
               </tr>
@@ -144,6 +149,7 @@ export default function PlanManager({
                   <td className={`${tdClass} font-mono text-xs`}>{p.tip_kod}</td>
                   <td className={tdClass}>{formatKurus(p.fiyat_kurus)}</td>
                   <td className={tdClass}>{p.sure_gun}</td>
+                  <td className={tdClass}>{p.deneme_gun ?? "—"}</td>
                   <td className={tdClass}>
                     <Badge size="sm" color={p.aktif ? "success" : "light"}>
                       {p.aktif ? t("active") : t("inactive")}
@@ -212,6 +218,17 @@ export default function PlanManager({
                 inputMode="numeric"
                 value={form.sure}
                 onChange={(e) => set("sure", e.target.value)}
+              />
+            </div>
+            <div>
+              <label className={labelClass} htmlFor="plan-deneme">Deneme süresi (gün, boş = yok)</label>
+              <input
+                id="plan-deneme"
+                className={inputClass}
+                inputMode="numeric"
+                placeholder="14"
+                value={form.deneme_gun}
+                onChange={(e) => set("deneme_gun", e.target.value)}
               />
             </div>
           </div>

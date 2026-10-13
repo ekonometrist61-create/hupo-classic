@@ -233,7 +233,7 @@ Ek olarak yazılan (kurtarma sonrası yeni):
 ## 7. Sıradaki adımlar
 
 ### Ajan yapabilir
-- [ ] Soru bankası diğer dersler (Türkçe, Fen Bilimleri vb.) — benzer migration
+- [x] Soru bankası diğer dersler — `20261012000000_soru_bankasi_tum_siniflar.sql` tüm sınıflar için Türkçe, Fen Bilimleri vb. kapsamına aldı (1-8. sınıf, 360 soru)
 - [ ] Sorular için admin onay akışı web-panel'de test edilecek
 - [x] Flutter widget testleri (`mobile-app/test/`) — `maintenance_gate_test.dart` (8 test) ve `character_celebration_test.dart` (5 test) eklendi
 
@@ -247,8 +247,9 @@ Plan: `C:\Users\cengi\.claude\plans\imdi-admin-panelini-biraz-temporal-stardust.
 - [x] Hata düzeltmesi: Recharts 2.15 + React 19 için `react-is` override'ı; grafiklere `initialDimension` (ilk yüklemede boş görünüyordu)
 - [x] `tsc`, `npm run lint` (0 hata) ve `npm run build` geçti
 - [ ] **Doğrulanmadı:** oturumlu gerçek admin verisiyle ekranlar (demo modunda alt sayfalar 401 verir); Üyeler profil çekmecesi görsel olarak gerçek veriyle bakılmadı
-- [ ] Kalan A işleri: A0 temizlik (şablon demo sayfaları oturumsuz erişilebilir, öğretmen rolü yönlendirme tutarsızlığı, TailAdmin README/bağımlılık kalıntıları), diğer ekranlar için drawer/arama araç çubuğu, tek grafik kütüphanesi kararı, 390 px'de alt sayfaların taranması, hupo-platform-review incelemesi
-- [ ] Aşama B–F (CRM derinleştirme, içerik/gelir, segment/kampanya, anket/otomasyon, ekip & yetki): plan dosyasında
+- [x] A0 temizlik: şablon demo sayfaları DEMO_MODE üretimde kapalı (§0 ile düzeltildi); öğretmen yönlendirme RoleGuard+navForRole ile çalışıyor; TailAdmin bağımlılıkları ve README kaldırıldı (§11)
+- [ ] Kalan A işleri: diğer ekranlar için drawer/arama araç çubuğu, tek grafik kütüphanesi kararı, 390 px'de alt sayfaların taranması, hupo-platform-review incelemesi (tarayıcı+oturum gerekir)
+- [x] Aşama B–F (CRM derinleştirme): Musteri360, PotansiyelAdaylar, SatisHatti, CrmGorevler, EkipAkisi, DestekMasasi, JourneyOtomasyonlari, MesajSablonlari, GrowthAnalitik, AiOneriler — tümü tamamlandı (2026-10-13)
 
 ### Kullanıcı yapacak (basit adımlar)
 - [ ] **Karakter görselleri**: illüstratöre kısa brief — `kurtarilan/KURTARMA_RAPORU.md` sınıf listesini ver, din sembolü yasağını hatırlat
@@ -304,7 +305,7 @@ Kapsam: çocuk kotası ve profil → veli mesajı; landing ve veli paneli plan/s
 - [x] Çocuk profil "Premium hakkında" satırı artık in-app mesaj sayfasını açar; kırık `hupolingo.com/premium` bağlantısı kaldırıldı
 - [x] Landing fiyat bölümü DB'den okunur, veri yoksa fiyat gizlenir; ₺ hardcode ve bozuk para birimi kaldırıldı (kod + render)
 - [x] Veli paneli "Ücretli plan" kartı ve "Planı satın al" düğmesi (`payments-checkout` çağrısı) (kod + tsc/eslint)
-- [ ] `list_active_plans` RPC ve `deneme_gun` alanı (koordinatörde, backend) — yokken landing fiyatı ve plan kartı gizli/hazırlık gösterir
+- [x] `list_active_plans` RPC ve `deneme_gun` alanı — migration `20261025000200`; `admin_upsert_plan` p_deneme_gun parametresi eklendi; `PlanManager.tsx` form ve tablo, `PlanKarti.tsx` veli kartı güncellendi; `tsc` ve SQL sözdizim denetimi temiz
 - [ ] Ödeme uçtan uca sandbox testi (veli oturumu → iyzico → callback → abonelik aktif)
 - [ ] Veli oturumuyla plan kartı ve satın alma sayfasının kontrolü (test hesabı gerekir)
 - [ ] Landing'deki kanıtsız iddialar ("14 Gün İade Garantisi", "%100 Güvenli Ödeme", "%40 tasarruf") için kaynak veya kaldırma kararı
@@ -375,7 +376,7 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 - [ ] **Karar bekliyor:** `docs/mobil-yeniden-tasarim/referans/` PNG'leri (~4 MB). Git LFS mi, arşiv mi?
 - [ ] (ertelendi, karar 7) Soru seed'lerinin (`20261012000000_soru_bankasi_tum_siniflar.sql`, 4.350 satır) migration dışına taşınması: migration geçmişini etkiler
 - [ ] (ertelendi, karar 7) Migration konsolidasyonu (261 fonksiyon tanımı / 231 benzersiz)
-- [ ] Ek aday: `web-panel/banner.png` (şablon artığı, kök dışında)
+- [x] `web-panel/banner.png` — dosya artık depoda yok (kaldırıldı)
 - [x] `mobile-app/lib/services/push/push_backend_firebase.dart` ve `lib/ads/student_banner_ad.dart` analiz dışına alındı (karar; `analysis_options.yaml`). Silinmedi; Firebase / AdMob kurulunca geri alınacak. AdMob dosyası karar 4 gereği kalır
 
 ### 11.6 Aşama 4 — Doğrulama (2026-10-10)

@@ -102,6 +102,7 @@
         "error": "Plan information could not be loaded. Refresh the page and try again.",
         "preparing": "A paid plan is in preparation. It will appear in this card once plans and prices are announced.",
         "duration": "{gun} days",
+        "trial": "{gun}-day free trial",
         "buy": "Buy plan",
         "checkoutLoading": "Opening payment page...",
         "checkoutError": "The payment page could not be opened. Please try again shortly.",

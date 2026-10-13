@@ -96,6 +96,8 @@ export interface Plan {
   aktif: boolean;
   /** Paketin bağlı olduğu paket tipi (web sitesinde kolon). */
   tip_kod: string;
+  /** Plan başına deneme süresi (gün); null ise deneme yok. */
+  deneme_gun: number | null;
 }
 
 export interface MockExam {

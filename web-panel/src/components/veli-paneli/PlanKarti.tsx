@@ -10,6 +10,7 @@ interface PlanSatir {
   aciklama: string | null;
   fiyat_kurus: number;
   sure_gun: number;
+  deneme_gun: number | null;
 }
 
 type Durum = "yukleniyor" | "hata" | "hazirlik" | PlanSatir[];
@@ -97,6 +98,11 @@ export default function PlanKarti() {
                   {t("duration", { gun: p.sure_gun })}
                 </span>
               </p>
+              {p.deneme_gun != null && p.deneme_gun > 0 && (
+                <p className="mt-1 text-xs font-medium text-brand-600 dark:text-brand-400">
+                  {t("trial", { gun: p.deneme_gun })}
+                </p>
+              )}
               <button
                 type="button"
                 onClick={() => void satinAl(p.kod)}
