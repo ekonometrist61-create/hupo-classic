@@ -53,8 +53,8 @@ begin
     update public.profiles set parent_id = v2, sinif = 5 where id = c3;
 
     -- Bir ödeme + abonelik verisi (mutabakat/plan kriteri için)
-    insert into public.plans (kod, ad, fiyat_kurus, sure_gun)
-      values ('ym_test_plan', 'YM Test Plan', 1000, 30) on conflict (kod) do nothing;
+    insert into public.plans (kod, ad, fiyat_kurus, sure_gun, tip_kod)
+      values ('ym_test_plan', 'YM Test Plan', 1000, 30, 'premium') on conflict (kod) do nothing;
 
     v_gun   := ((date_trunc('day', now() at time zone 'Europe/Istanbul') + interval '2 days 12 hours')
                 at time zone 'Europe/Istanbul');

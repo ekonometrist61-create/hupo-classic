@@ -6,6 +6,7 @@ import '../models/app_config.dart';
 import '../models/character_models.dart';
 import '../models/cipher_models.dart';
 import '../models/daily_challenge_models.dart';
+import '../models/duyuru_models.dart';
 import '../models/league_models.dart';
 import '../models/membership_models.dart';
 import '../models/mock_exam_models.dart';
@@ -13,6 +14,7 @@ import '../models/models.dart';
 import '../models/privacy_models.dart';
 import '../models/review_models.dart';
 import '../models/survey_models.dart';
+import '../services/duyuru_repository.dart';
 import '../services/quiz_repository.dart';
 import '../services/survey_repository.dart';
 import '../settings/app_settings.dart';
@@ -101,6 +103,21 @@ final aktifAnketlerProvider = FutureProvider.autoDispose<List<Anket>>((ref) asyn
   }
   final erteleme = ref.watch(surveyDeferralProvider);
   return [for (final a in anketler) if (!erteleme.erteleniyorMu(a)) a];
+});
+
+// Duyuru: aktif duyuru (hata/yoksa null) ve "Kapat" kaydı. Kapatılan duyuru bir daha gelmez.
+final duyuruRepositoryProvider =
+    Provider<DuyuruRepository>((ref) => DuyuruRepository(ref.watch(supabaseProvider)));
+
+final duyuruKapatmaProvider =
+    Provider<DuyuruKapatma>((ref) => DuyuruKapatma(ref.watch(sharedPreferencesProvider)));
+
+/// Bu mecrada gösterilecek, kapatılmamış aktif duyuru. Yoksa null (sessiz).
+final aktifDuyuruProvider = FutureProvider.autoDispose<Duyuru?>((ref) async {
+  final duyuru = await ref.watch(duyuruRepositoryProvider).aktifDuyuru();
+  if (duyuru == null) return null;
+  if (ref.watch(duyuruKapatmaProvider).kapatildiMi(duyuru)) return null;
+  return duyuru;
 });
 
 // --- Kurtarılan Provider'lar ---

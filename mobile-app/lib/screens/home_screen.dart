@@ -22,6 +22,7 @@ import '../widgets/ui/subject_style.dart';
 import '../widgets/splash/home_entrance_stagger.dart';
 import '../models/privacy_models.dart';
 import '../widgets/survey/survey_prompt_card.dart';
+import '../widgets/duyuru/duyuru_seridi.dart';
 import 'parent_link_screen.dart';
 import 'privacy_notice_screen.dart';
 import 'quiz_screen.dart';
@@ -288,6 +289,8 @@ class HomeScreen extends ConsumerWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
+                          const DuyuruSeridi(),
+                          const SizedBox(height: 16),
                           if (consent != null &&
                               consent.parentConsent != ParentConsent.given) ...[
                             _ConsentNote(hasParent: p.hasParent),
@@ -856,6 +859,8 @@ class _VeliAnaSayfa extends StatelessWidget {
       child: ListView(
         padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
         children: [
+          const DuyuruSeridi(),
+          const SizedBox(height: 16),
           const SurveyPromptCard(),
           const SizedBox(height: 24),
           Text(

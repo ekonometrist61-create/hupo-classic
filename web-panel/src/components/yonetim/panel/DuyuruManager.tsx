@@ -1,7 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import Badge from "@/components/ui/badge/Badge";
+import SurfacePicker from "@/components/yonetim/merkez/SurfacePicker";
+import type { SurveySurface } from "@/components/yonetim/merkez/types";
 import { adminCall, useAdminRpc } from "@/components/yonetim/useAdminRpc";
 import { isoToTurkiyeInput, turkiyeInputToIso } from "@/components/yonetim/turkiyeTarih";
 import ErrorNote from "./ErrorNote";
@@ -13,6 +16,7 @@ interface Duyuru {
   metin: string;
   aktif: boolean;
   bitis_at: string | null;
+  yuzeyler: SurveySurface[];
   created_at: string;
   updated_at: string;
 }
@@ -24,12 +28,13 @@ interface FormState {
   aktif: boolean;
   /** datetime-local (Türkiye saati); boşsa süresiz */
   bitis: string;
+  yuzeyler: SurveySurface[];
 }
 
 const BASLIK_MAX = 120;
 const METIN_MAX = 500;
 
-const EMPTY_FORM: FormState = { id: null, baslik: "", metin: "", aktif: true, bitis: "" };
+const EMPTY_FORM: FormState = { id: null, baslik: "", metin: "", aktif: true, bitis: "", yuzeyler: ["web_sitesi"] };
 
 type Durum = "yayinda" | "suresi_doldu" | "pasif";
 
@@ -62,6 +67,7 @@ function tarihYaz(iso: string): string {
 }
 
 export default function DuyuruManager() {
+  const t = useTranslations("yonetim.merkez.surveys");
   const state = useAdminRpc<Duyuru[]>("admin_list_duyurular");
   // Durum (yayında / süresi doldu) render anında hesaplanır; saat bileşen ömrü boyunca sabit kalır.
   const [simdi] = useState(() => Date.now());
@@ -91,6 +97,7 @@ export default function DuyuruManager() {
       metin: d.metin,
       aktif: d.aktif,
       bitis: d.bitis_at ? isoToTurkiyeInput(d.bitis_at) : "",
+      yuzeyler: d.yuzeyler,
     });
     setFormError(null);
     setNotice(null);
@@ -103,6 +110,7 @@ export default function DuyuruManager() {
     const metin = form.metin.trim();
     if (!baslik) return setFormError("Başlık boş olamaz.");
     if (!metin) return setFormError("Metin boş olamaz.");
+    if (form.yuzeyler.length === 0) return setFormError("En az bir yayın mecrası seçin.");
 
     let bitisIso: string | null = null;
     if (form.bitis) {
@@ -118,6 +126,7 @@ export default function DuyuruManager() {
       p_metin: metin,
       p_aktif: form.aktif,
       p_bitis_at: bitisIso,
+      p_yuzeyler: form.yuzeyler,
     });
     setSaving(false);
     if (r.error) return setFormError(r.error);
@@ -137,6 +146,7 @@ export default function DuyuruManager() {
       p_metin: d.metin,
       p_aktif: !d.aktif,
       p_bitis_at: d.bitis_at,
+      p_yuzeyler: d.yuzeyler,
     });
     setRowBusy(null);
     if (r.error) return setRowError(r.error);
@@ -150,7 +160,7 @@ export default function DuyuruManager() {
       {/* Oluştur / düzenle */}
       <section className={`${cardClass} p-5 sm:p-6`}>
         <div className="mb-2 flex items-center justify-between">
-          <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">Web Sitesi Duyurusu</h3>
+          <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">Duyurular</h3>
           {!form && (
             <button type="button" className={primaryBtn} onClick={yeni}>
               + Yeni Duyuru
@@ -158,7 +168,7 @@ export default function DuyuruManager() {
           )}
         </div>
         <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
-          Yayındaki en yeni duyuru web sitesinin üst kısmında gösterilir. Süresi dolan veya pasif duyurular görünmez.
+          Yayındaki en yeni duyuru, seçtiğiniz mecralarda gösterilir. Süresi dolan veya pasif duyurular görünmez.
         </p>
 
         {notice && !form && (
@@ -225,15 +235,24 @@ export default function DuyuruManager() {
                     checked={form.aktif}
                     onChange={(e) => setF("aktif", e.target.checked)}
                   />
-                  Yayında (web sitesinde görünsün)
+                  Yayında (seçili mecralarda görünsün)
                 </label>
               </div>
             </div>
 
+            <SurfacePicker
+              value={form.yuzeyler}
+              onChange={(v) => setF("yuzeyler", v)}
+              legend="Yayın mecraları"
+              help="Duyuru yalnızca seçili mecralarda gösterilir."
+              requiredMessage="Kaydetmek için en az bir yayın mecrası seçin."
+              surfaceLabel={(y) => t(`surfaces.${y}`)}
+            />
+
             <ErrorNote message={formError} />
             <div className="flex justify-end gap-3">
               <button type="button" className={outlineBtn} onClick={() => setForm(null)}>Vazgeç</button>
-              <button type="submit" className={primaryBtn} disabled={saving}>
+              <button type="submit" className={primaryBtn} disabled={saving || form.yuzeyler.length === 0}>
                 {saving ? "Kaydediliyor..." : "Kaydet"}
               </button>
             </div>
@@ -280,6 +299,11 @@ export default function DuyuruManager() {
                       <td className={`${tdClass} max-w-md`}>
                         <p className="font-medium text-gray-800 dark:text-white/90">{d.baslik}</p>
                         <p className="mt-0.5 line-clamp-2 text-xs text-gray-500 dark:text-gray-400">{d.metin}</p>
+                        <div className="mt-2 flex flex-wrap gap-1.5">
+                          {d.yuzeyler.map((y) => (
+                            <Badge key={y} size="sm" color="light">{t(`surfaceShort.${y}`)}</Badge>
+                          ))}
+                        </div>
                       </td>
                       <td className={tdClass}>
                         <Badge size="sm" color={DURUM_RENK[durum]}>{DURUM_ETIKET[durum]}</Badge>

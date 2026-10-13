@@ -24,7 +24,12 @@ declare
   d2  uuid;
   d3  uuid;
   d4  uuid;
+  d5  uuid;
+  d6  uuid;
+  d7  uuid;
+  d8  uuid;
   v_json jsonb;
+  v_json2 jsonb;
   v_arr  jsonb;
   v_text text;
   v_sayi integer;
@@ -34,9 +39,8 @@ begin
   insert into auth.users (id, email, raw_user_meta_data) values
     (adm, 'duyuru.adm@example.test', '{"full_name":"Admin"}'),
     (o1,  'duyuru.o1@example.test',  '{"full_name":"Veli"}');
-  insert into public.profiles (id, role, full_name) values
-    (adm, 'admin', 'Admin'),
-    (o1,  'veli',  'Veli');
+  -- Profil satırı auth.users insert trigger'ı (handle_new_user) ile açılır; elle insert çakışır.
+  update public.profiles set role = 'admin' where id = adm;
 
   -- 1. Admin aktif bir duyuru oluşturur; anon okuyabilir
   no := no + 1;
@@ -46,7 +50,7 @@ begin
   d1 := public.admin_save_duyuru(null, 'Deneme sınavı', 'Kayıtlar açıldı', true, now() + interval '7 days');
   perform set_config('role', 'none', true);
   perform set_config('role', 'anon', true);
-  v_json := public.get_aktif_duyuru();
+  v_json := public.get_aktif_duyuru();   -- parametresiz çağrı = 'web_sitesi'
   perform set_config('role', 'none', true);
   gecti := v_json ->> 'baslik' = 'Deneme sınavı' and (v_json ->> 'id')::uuid = d1;
   detay := coalesce(v_json::text, 'null');
@@ -84,9 +88,9 @@ begin
   -- 4. anon admin_save_duyuru'yu çalıştıramaz (yetki yok)
   no := no + 1;
   senaryo := 'anon için admin_save_duyuru ve admin_list_duyurular execute yetkisi yok';
-  gecti := not has_function_privilege('anon', 'public.admin_save_duyuru(uuid,text,text,boolean,timestamptz)', 'execute')
+  gecti := not has_function_privilege('anon', 'public.admin_save_duyuru(uuid,text,text,boolean,timestamptz,text[])', 'execute')
            and not has_function_privilege('anon', 'public.admin_list_duyurular()', 'execute')
-           and has_function_privilege('anon', 'public.get_aktif_duyuru()', 'execute');
+           and has_function_privilege('anon', 'public.get_aktif_duyuru(text)', 'execute');
   detay := 'save/list anon yetkisiz, get_aktif_duyuru anon açık';
   return next;
 
@@ -218,6 +222,106 @@ begin
   perform set_config('role', 'none', true);
   gecti := v_json is null;
   detay := coalesce(v_json::text, 'null');
+  return next;
+
+  -- ---------------------------------------------------------------------
+  -- YAYIN YÜZEYLERİ (20261030000000_duyuru_yuzeyler.sql)
+  -- Her senaryo önce tüm duyuruları pasife alır: yalnız o senaryonun duyurusu aktiftir.
+  -- ---------------------------------------------------------------------
+
+  -- 14. (a) Yüzeysiz kayıt {web_sitesi} olur; parametresiz get_aktif_duyuru() onu döndürür
+  no := no + 1;
+  senaryo := 'Yüzey belirtilmeyen kayıt {web_sitesi} olur ve parametresiz get_aktif_duyuru() onu döndürür';
+  update public.duyurular set aktif = false;
+  perform set_config('request.jwt.claims', json_build_object('sub', adm)::text, true);
+  perform set_config('role', 'authenticated', true);
+  d5 := public.admin_save_duyuru(null, 'Varsayılan yüzey', 'Web sitesi metni', true, null);
+  perform set_config('role', 'none', true);
+  select array_to_string(yuzeyler, ',') into v_text from public.duyurular where id = d5;
+  perform set_config('role', 'anon', true);
+  v_json := public.get_aktif_duyuru();
+  perform set_config('role', 'none', true);
+  gecti := v_text = 'web_sitesi' and (v_json ->> 'id')::uuid = d5;
+  detay := format('yuzeyler=%s donen=%s', v_text, coalesce(v_json ->> 'baslik', 'null'));
+  return next;
+
+  -- 15. (b) Yalnız ['mobil'] seçili duyuru: mobilde döner; web_sitesi ve veli_paneli'de dönmez
+  no := no + 1;
+  senaryo := 'Yalnız mobil seçili aktif duyuru: mobil için döner, web_sitesi (anon dahil) ve veli_paneli için dönmez';
+  update public.duyurular set aktif = false;
+  perform set_config('role', 'authenticated', true);
+  d6 := public.admin_save_duyuru(null, 'Mobil duyuru', 'Yalnız mobilde', true, null, array['mobil']);
+  perform set_config('role', 'anon', true);
+  v_json  := public.get_aktif_duyuru('mobil');
+  v_json2 := public.get_aktif_duyuru('web_sitesi');
+  v_arr   := public.get_aktif_duyuru('veli_paneli');
+  perform set_config('role', 'none', true);
+  gecti := (v_json ->> 'id')::uuid = d6 and v_json2 is null and v_arr is null;
+  detay := format('mobil=%s web_sitesi=%s veli_paneli=%s',
+                  coalesce(v_json ->> 'baslik', 'null'), coalesce(v_json2::text, 'null'), coalesce(v_arr::text, 'null'));
+  return next;
+
+  -- 16. (c) Çok yüzeyli duyuru ['web_app','veli_paneli'] ikisinde de döner, mobilde dönmez
+  no := no + 1;
+  senaryo := 'Çok yüzeyli duyuru web_app ve veli_paneli için döner; mobil için dönmez';
+  update public.duyurular set aktif = false;
+  perform set_config('role', 'authenticated', true);
+  d7 := public.admin_save_duyuru(null, 'Çok yüzeyli', 'Web app ve veli paneli', true, null, array['web_app', 'veli_paneli']);
+  perform set_config('role', 'anon', true);
+  v_json  := public.get_aktif_duyuru('web_app');
+  v_json2 := public.get_aktif_duyuru('veli_paneli');
+  v_arr   := public.get_aktif_duyuru('mobil');
+  perform set_config('role', 'none', true);
+  gecti := (v_json ->> 'id')::uuid = d7 and (v_json2 ->> 'id')::uuid = d7 and v_arr is null;
+  detay := format('web_app=%s veli_paneli=%s mobil=%s',
+                  coalesce(v_json ->> 'id', 'null'), coalesce(v_json2 ->> 'id', 'null'), coalesce(v_arr::text, 'null'));
+  return next;
+
+  -- 17. (d) Boş dizi ve geçersiz yüzey admin_save_duyuru'da 22023; get_aktif_duyuru('tv') ve (null) 22023
+  no := no + 1;
+  senaryo := 'Boş dizi ve geçersiz yüzey admin_save_duyuruda 22023; get_aktif_duyuru(''tv'') ve (null) 22023';
+  v_sayi := 0;
+  perform set_config('role', 'authenticated', true);
+  begin perform public.admin_save_duyuru(null, 'Boş yüzey', 'Metin', false, null, array[]::text[]);
+  exception when sqlstate '22023' then v_sayi := v_sayi + 1; end;
+  begin perform public.admin_save_duyuru(null, 'Geçersiz yüzey', 'Metin', false, null, array['tv']);
+  exception when sqlstate '22023' then v_sayi := v_sayi + 1; end;
+  perform set_config('role', 'anon', true);
+  begin perform public.get_aktif_duyuru('tv');
+  exception when sqlstate '22023' then v_sayi := v_sayi + 1; end;
+  begin perform public.get_aktif_duyuru(null);
+  exception when sqlstate '22023' then v_sayi := v_sayi + 1; end;
+  perform set_config('role', 'none', true);
+  gecti := v_sayi = 4 and not exists (select 1 from public.duyurular where baslik in ('Boş yüzey', 'Geçersiz yüzey'));
+  detay := 'reddedilen=' || v_sayi || '/4';
+  return next;
+
+  -- 18. (e) p_yuzeyler NULL ile güncelleme: mevcut yüzeyler korunur, metin yine güncellenir
+  no := no + 1;
+  senaryo := 'p_yuzeyler NULL ile güncellemede mevcut yüzeyler korunur (metin güncellenir)';
+  perform set_config('role', 'authenticated', true);
+  d8 := public.admin_save_duyuru(null, 'Korunan yüzey', 'İlk metin', false, null, array['veli_paneli', 'mobil']);
+  perform public.admin_save_duyuru(d8, 'Korunan yüzey', 'Güncel metin', false, null, null);
+  perform set_config('role', 'none', true);
+  select array_to_string(yuzeyler, ',') into v_text from public.duyurular where id = d8;
+  gecti := v_text = 'mobil,veli_paneli'
+           and exists (select 1 from public.duyurular where id = d8 and metin = 'Güncel metin');
+  detay := 'yuzeyler=' || v_text;
+  return next;
+
+  -- 19. (f) admin_list_duyurular yuzeyler alanını dizi olarak döndürür
+  no := no + 1;
+  senaryo := 'admin_list_duyurular her satırda yuzeyler dizisini döndürür';
+  perform set_config('role', 'authenticated', true);
+  v_arr := public.admin_list_duyurular();
+  perform set_config('role', 'none', true);
+  gecti := exists (
+             select 1 from jsonb_array_elements(v_arr) e
+              where (e ->> 'id')::uuid = d8
+                and jsonb_typeof(e -> 'yuzeyler') = 'array'
+                and e -> 'yuzeyler' ? 'mobil' and e -> 'yuzeyler' ? 'veli_paneli')
+           and not exists (select 1 from jsonb_array_elements(v_arr) e where jsonb_typeof(e -> 'yuzeyler') <> 'array');
+  detay := 'satır=' || jsonb_array_length(v_arr);
   return next;
 
   perform set_config('request.jwt.claims', '', true);

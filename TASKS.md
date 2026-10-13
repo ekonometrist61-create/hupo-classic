@@ -628,3 +628,38 @@ Admin'den yönetilebilir ana sayfa duyurusu: başlık, metin (en fazla 500 karak
 ### 14.4 Doğrulanmadı
 - [x] `npx tsc --noEmit` temiz; `npm run lint` 0 hata (16 uyarı, hiçbiri yeni dosyalarda); `npm run build` başarılı, `/yonetim/duyurular` rotası derlendi (2026-10-13)
 - [ ] Tarayıcıda ana sayfa (masaüstü + 390 px) ve admin formu görsel kontrolü (dev sunucu + Supabase bağlantısı gerekir; yapılmadı)
+
+## 15. Duyuru mecraları: web sitesi, web app, mobil, veli paneli (plan, 2026-10-13)
+
+Hedef: admin duyuruyu hangi mecralarda yayınlayacağını seçsin; her mecra yalnız kendine seçilen duyuruyu görsün. Mekanizma, anket yayın yüzeyleriyle (`20261029000000_anket_yuzeyler.sql`) birebir aynı kurulur; yeni bir desen icat edilmez.
+
+### 15.1 Mevcut durum
+- Tablo `duyurular` yalnızca web sitesi için; `get_aktif_duyuru()` parametresiz, en yeni aktif duyuruyu döndürür.
+- Yalnız `web-panel/.../landing/sections/DuyuruSeridi.tsx` tüketiyor. Flutter (`mobile-app/lib`) ve veli paneli (`web-panel/.../(admin)/veli-paneli/layout.tsx`) duyuru okumuyor.
+- Anket tarafında hazır örnek var: `anketler.yuzeyler text[]` (`mobil` | `web_app` | `web_sitesi` | `veli_paneli`), `SurveySurface` tipi (`yonetim/merkez/types.ts`), mobilde `kIsWeb ? 'web_app' : 'mobil'` (`survey_repository.dart`), veli panelinde `AnketIstemi`.
+
+### 15.2 Kararlar (önerilen, onay bekliyor)
+- Yüzey kümesi aynen anketlerle aynı: `mobil`, `web_app`, `web_sitesi`, `veli_paneli`. Tek sözlük, iki ayrı liste yok.
+- Bir duyuru birden çok yüzeyi seçebilir (`yuzeyler text[]`, en az 1). Varsayılan: `web_sitesi` (bugünkü davranışla uyumlu).
+- Her yüzey, kendi yüzeyi için en yeni aktif ve süresi dolmamış duyuruyu alır. Yüzeyler arası "tek duyuru" kısıtı yok.
+- Tablo erişimi değişmez: yalnız RPC. Silme yok; pasife alma.
+- Hata/migration yoksa her yüzey bozulmadan boş döner (şerit/kart çizilmez).
+
+### 15.3 Adımlar
+1. [x] (uzak DB'ye uygulandı 2026-10-13; `get_aktif_duyuru(p_yuzey default 'web_sitesi')` — parametresiz eski çağrı da çalışır; canlıda anon çağrıyla doğrulandı) Migration `20261030000000_duyuru_yuzeyler.sql` (yeni dosya, `20261026000000` değiştirilmez): `duyurular.yuzeyler` kolonu + check; `get_aktif_duyuru(p_yuzey text default 'web_sitesi')` yeni imza; `admin_list_duyurular` ve `admin_save_duyuru` (`p_yuzeyler text[] default null`) güncellenir. Eski parametresiz fonksiyon kaldırılır veya geriye uyumlu tutulur (karar: kaldır, tek tüketici var).
+2. [x] (PGlite tam zincir, `duyurular_tests.sql` 19/19; gerçek Supabase'te çalıştırılmadı) SQL testi: her yüzey için filtreleme, çok yüzeyli duyuru, yüzeysiz kayıt reddi, yüzey dışı değer reddi.
+3. [x] (kod: tsc/eslint temiz; görsel kontrol aşağıda) Admin formu (`DuyuruManager.tsx`): yüzey onay kutuları (anket formundakiyle aynı bileşen/etiketler), en az bir yüzey zorunlu. Liste satırında yüzey rozetleri.
+4. [x] Web sitesi: `DuyuruSeridi` `get_aktif_duyuru('web_sitesi')` çağırır (davranış değişmez).
+5. [x] (kod: `flutter analyze` temiz, tüm testler geçti; cihaz/tarayıcı görsel kontrolü YAPILMADI; renk widget'a yerel sabit, `AppColors`'a token eklenmesi önerilir) Flutter (`mobile-app/lib`): `DuyuruRepository` + ana ekranda kart/şerit. Yüzey `kIsWeb ? 'web_app' : 'mobil'`. Kapatılabilir olmalı; kapatma durumu yerelde tutulur (duyuru id'sine göre), sunucuya yazılmaz. Çocuk ekranında gösterim dili hupo-ux-writing ile kontrol edilir.
+6. [x] (kod; `DuyuruBandi`, kapatılabilir; görsel kontrol aşağıda) Veli paneli: `(admin)/veli-paneli/layout.tsx` içine `get_aktif_duyuru('veli_paneli')` ile küçük şerit. Veli'ye yönelik metin, ödeme/satın alma çağrısı içermez.
+7. [~] Uzak DB: `20261029000000` (anket) ve `20261030000000` (duyuru) uygulandı (2026-10-13, düz `db push`, önce dry-run). Vercel ve Flutter dağıtımı YAPILMADI, ayrı onay. Eski not: uzak DB'ye uygulama ayrı onayla (`db push --include-all` kullanılmadan önce dry-run). Vercel ve Flutter dağıtımı ayrı onay.
+8. [ ] TASKS §14.3 anon anahtar uyarısı çözülmeden 5 ve 6 canlıda doğrulanamaz; Flutter ve veli paneli de aynı anahtarı kullanır.
+
+### 15.4 Riskler ve notlar
+- Anon anahtar 401 sorunu üç mecrayı birden etkiler; önce çözülmeli.
+- Flutter Web ile mobil aynı kod tabanı; `web_app` ile `mobil` ayrımı yalnız `kIsWeb` ile. Bu ayrım anket için de böyle, tutarlılık için korunur.
+- Flutter değişikliği mobil yayın (Play/App Store) gerektirir; web tarafı Vercel/Flutter Web deploy'uyla gider. Mobil sürüm yayınlanmadan `mobil` yüzeyine duyuru gönderilmemeli (eski sürüm RPC'yi çağırmaz, zararsız ama görünmez).
+- Hupolingo UI/UX işi olduğu için CLAUDE.md gereği adımlar 5 ve 6 öncesi `hupo-design-growth-director` agent'ı ile gözden geçirilir.
+- **Açık bulgu (anket/duyuru dışı, çözülmedi):** PGlite tam zincir testinde `public.admin_kampanya_listele()` (`20261007000020`, 0 argüman) ile `admin_kampanya_listele(p_status, p_limit, p_offset)` (`20261014000200`, hepsi varsayılanlı) birlikte var; argümansız çağrı "42725 is not unique" veriyor. `CampaignsManager.tsx:51` argümansız çağırıyor; canlıda PostgREST'in aynı belirsizliği (PGRST203) verip vermediği doğrulanmadı. Eski 0-argüman sürümünü DROP eden yeni migration gerekir. `yonetim_merkezi_tests.sql` bu yüzden ancak çakışan overload koşuya özel kaldırılınca 30/30 geçti.
+- **Açık bulgu:** `20260927000010` (COMMENT içinde `||`) ve `20260927000019` (question_reports sırası) boş bir veritabanında zinciri bozar; canlıda uygulanmış olduğu için ancak sıfırdan kurulumda sorun çıkar.
+- **Anket/duyuru ortak:** yüzey sözlüğü tek (`SurveySurface`, `SurfacePicker`); mobil `kIsWeb ? 'web_app' : 'mobil'` (`yayin_yuzeyi.dart`).

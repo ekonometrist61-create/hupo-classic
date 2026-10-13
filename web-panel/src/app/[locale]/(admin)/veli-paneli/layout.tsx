@@ -4,6 +4,7 @@ import { useSidebar } from "@/context/SidebarContext";
 import VeliSidebar from "@/layout/VeliSidebar";
 import Backdrop from "@/layout/Backdrop";
 import AnketIstemi from "@/components/anket/AnketIstemi";
+import DuyuruBandi from "@/components/duyuru/DuyuruBandi";
 import React from "react";
 
 export default function VeliPaneliLayout({
@@ -27,6 +28,7 @@ export default function VeliPaneliLayout({
         id="veli-icerik"
         className={`flex-1 transition-all duration-300 ease-in-out ${mainMargin} mx-auto max-w-400 p-4 pb-10 md:p-6 xl:px-8 xl:pt-8`}
       >
+        <DuyuruBandi yuzey="veli_paneli" />
         <AnketIstemi yuzey="veli_paneli" />
         {children}
       </main>

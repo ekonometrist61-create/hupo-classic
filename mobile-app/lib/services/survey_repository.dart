@@ -1,11 +1,11 @@
 // Veli anketleri: Supabase RPC katmanı (`anket_aktif_listem`, `anket_yanit_gonder`)
 // ve "Şimdi değil" ertelemesi. Sunucu hataları burada Türkçe kullanıcı mesajına çevrilir.
 
-import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../models/survey_models.dart';
+import 'yayin_yuzeyi.dart';
 
 enum AnketHatasi { yetkisiz, yakinZamanda, gecersizYanit, bulunamadi, baglanti, bilinmeyen }
 
@@ -50,7 +50,7 @@ AnketException _hataCevir(PostgrestException e) {
 }
 
 /// Anketin yayınlandığı mecra: `mobil` (Android/iOS) veya `web_app` (Flutter Web).
-String anketYuzeyi() => kIsWeb ? 'web_app' : 'mobil';
+String anketYuzeyi() => yayinYuzeyi();
 
 class SurveyRepository {
   const SurveyRepository(this._client);

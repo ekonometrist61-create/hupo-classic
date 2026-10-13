@@ -15,7 +15,7 @@ export async function DuyuruSeridi() {
   let duyuru: AktifDuyuru | null = null;
   try {
     const supabase = await createClient();
-    const { data, error } = await supabase.rpc("get_aktif_duyuru");
+    const { data, error } = await supabase.rpc("get_aktif_duyuru", { p_yuzey: "web_sitesi" });
     if (error || !data) return null;
     duyuru = data as AktifDuyuru;
   } catch {
