@@ -191,33 +191,37 @@ export function ProspectFormModal({
       return setErr("Puanlar sınırlar içinde olmalı: uygunluk 0-35, niyet 0-35, etkileşim 0-20, veri kalitesi 0-10.");
     }
 
-    const args = {
-      p_display_name: name,
-      p_email: v.email.trim() || null,
-      p_phone: v.phone.trim() || null,
-      p_kind: v.kind,
-      p_source_channel: v.source_channel.trim() || null,
-      p_source_detail: v.source_detail.trim() || null,
-      p_fit_score: fit,
-      p_intent_score: intent,
-      p_engagement_score: engagement,
-      p_data_quality_score: dataQuality,
+    // RPC'ler tek bir jsonb nesnesi bekler (p_data); alan adları öneksiz.
+    // Güncellemede kaynak alanları kabul edilmez, bu yüzden yalnızca kaydetmede gönderilir.
+    const data: Record<string, unknown> = {
+      display_name: name,
+      email: v.email.trim() || null,
+      phone: v.phone.trim() || null,
+      kind: v.kind,
+      fit_score: fit,
+      intent_score: intent,
+      engagement_score: engagement,
+      data_quality_score: dataQuality,
     };
-    const payload = editing
-      ? {
-          p_prospect_id: prospectId,
-          ...args,
-          p_notes: v.notes.trim() || null,
-          p_tags: v.tags.split(",").map((t) => t.trim()).filter(Boolean),
-        }
-      : args;
+    const tags = v.tags.split(",").map((t) => t.trim()).filter(Boolean);
+    const notes = v.notes.trim() ? [v.notes.trim()] : [];
 
     setSaving(true);
     setErr(null);
-    const { error } = await createClient().rpc(
-      editing ? "admin_prospect_guncelle" : "admin_prospect_kaydet",
-      payload,
-    );
+    const { error } = editing
+      ? await createClient().rpc("admin_prospect_guncelle", {
+          p_prospect_id: prospectId,
+          p_data: { ...data, tags, notes },
+        })
+      : await createClient().rpc("admin_prospect_kaydet", {
+          p_data: {
+            ...data,
+            source_channel: v.source_channel.trim() || null,
+            source_detail: v.source_detail.trim() || null,
+            tags,
+            notes,
+          },
+        });
     setSaving(false);
     if (error) return setErr(error.message);
     onSaved();

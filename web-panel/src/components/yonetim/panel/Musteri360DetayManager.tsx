@@ -299,7 +299,7 @@ function KimlikTab({ d }: TabProps) {
           items={[
             [t("fields.email"), orDash(h.email)],
             [t("fields.phone"), orDash(h.phone)],
-            [t("fields.preferredChannel"), orDash(h.preferred_contact_channel)],
+            [t("fields.preferredChannel"), orDash(h.preferred_channel as string | null)],
           ]}
         />
       </Section>
@@ -365,13 +365,13 @@ function HaneTab({ d }: TabProps) {
         >
           {cocuklar.map((c, i) => (
             <tr key={String(c.id ?? i)}>
-              <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>{String(c.ad ?? c.display_name ?? "-")}</td>
+              <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>{String(c.nickname ?? "-")}</td>
               <td className={tdClass}>{orDash(c.grade as string | null)}</td>
               <td className={tdClass}>{String(c.xp ?? 0)}</td>
               <td className={tdClass}>{String(c.level ?? 0)}</td>
-              <td className={tdClass}>{String(c.streak_count ?? 0)}</td>
-              <td className={tdClass}>{String(c.active_days ?? 0)}</td>
-              <td className={`${tdClass} whitespace-nowrap`}>{dateOnly(c.last_active_date as string | null)}</td>
+              <td className={tdClass}>{String(c.streak ?? 0)}</td>
+              <td className={tdClass}>{String(c.activeDays30 ?? 0)}</td>
+              <td className={`${tdClass} whitespace-nowrap`}>{dateOnly(c.lastActiveDate as string | null)}</td>
             </tr>
           ))}
         </Table>
@@ -442,7 +442,7 @@ function PazarlamaTab({ d }: TabProps) {
       <Section title={t("sections.marketing")}>
         <Fields
           items={[
-            [t("fields.preferredChannel"), orDash(h.preferred_contact_channel)],
+            [t("fields.preferredChannel"), orDash(h.preferred_channel as string | null)],
             [t("fields.utmSource"), orDash(h.utm_source)],
             [t("fields.utmMedium"), orDash(h.utm_medium)],
             [t("fields.utmCampaign"), orDash(h.utm_campaign)],
@@ -483,13 +483,13 @@ function KullanimTab({ d }: TabProps) {
           {cocuklar.map((c, i) => (
             <div key={String(c.id ?? i)} className="rounded-lg border border-gray-200 p-4 dark:border-gray-800">
               <p className="mb-4 text-theme-sm font-semibold text-gray-800 dark:text-white/90">
-                {String(c.ad ?? c.display_name ?? "-")}
+                {String(c.nickname ?? "-")}
                 {c.grade ? ` · ${String(c.grade)}` : ""}
               </p>
               <dl className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
                 <div>
                   <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.activeDays")}</dt>
-                  <dd className="text-lg font-semibold text-gray-800 dark:text-white/90">{String(c.active_days ?? 0)}</dd>
+                  <dd className="text-lg font-semibold text-gray-800 dark:text-white/90">{String(c.activeDays30 ?? 0)}</dd>
                 </div>
                 <div>
                   <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.xp")}</dt>
@@ -501,12 +501,12 @@ function KullanimTab({ d }: TabProps) {
                 </div>
                 <div>
                   <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.streak")}</dt>
-                  <dd className="text-lg font-semibold text-gray-800 dark:text-white/90">{String(c.streak_count ?? 0)}</dd>
+                  <dd className="text-lg font-semibold text-gray-800 dark:text-white/90">{String(c.streak ?? 0)}</dd>
                 </div>
                 <div className="col-span-2">
                   <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.lastActive")}</dt>
                   <dd className="text-theme-sm font-medium text-gray-800 dark:text-white/90">
-                    {dateOnly(c.last_active_date as string | null)}
+                    {dateOnly(c.lastActiveDate as string | null)}
                   </dd>
                 </div>
               </dl>
