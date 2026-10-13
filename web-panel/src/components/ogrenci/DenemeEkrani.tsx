@@ -277,6 +277,7 @@ export default function DenemeEkrani({ examId }: Props) {
         </p>
         <p className="text-xs text-gray-400">puan (100 üzerinden)</p>
 
+        {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- /deneme-sonuclari ve /ogrenci ayrı app'lere yönlenir; next/link kullanılmaz */}
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">
           <a
             href={`/deneme-sonuclari/${examId}`}
@@ -284,6 +285,7 @@ export default function DenemeEkrani({ examId }: Props) {
           >
             Sonuçları Gör →
           </a>
+          {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- Flutter Web app'e yönlendirme */}
           <a
             href="/ogrenci"
             className="rounded-xl border border-gray-200 px-6 py-3 text-sm font-medium text-gray-600 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-gray-800"
