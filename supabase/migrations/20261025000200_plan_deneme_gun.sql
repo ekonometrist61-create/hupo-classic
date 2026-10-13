@@ -2,8 +2,10 @@
 alter table public.plans
   add column if not exists deneme_gun integer check (deneme_gun is null or deneme_gun >= 0);
 
--- list_active_plans: deneme_gun alanını ekle
-create or replace function public.list_active_plans()
+-- list_active_plans: dönüş tipi değiştiği için önce düşürülür (create or replace buna izin vermez)
+drop function if exists public.list_active_plans();
+
+create function public.list_active_plans()
 returns table (
   kod          text,
   ad           text,
@@ -21,6 +23,8 @@ as $$
   where  aktif = true
   order  by sira, kod;
 $$;
+
+grant execute on function public.list_active_plans() to anon, authenticated;
 
 -- admin_upsert_plan: deneme_gun parametresi eklendi
 drop function if exists public.admin_upsert_plan(text, text, text, integer, integer, boolean, text);
