@@ -664,3 +664,21 @@ Hedef: admin duyuruyu hangi mecralarda yayınlayacağını seçsin; her mecra ya
 - **Açık bulgu:** `20260927000010` (COMMENT içinde `||`) ve `20260927000019` (question_reports sırası) boş bir veritabanında zinciri bozar; canlıda uygulanmış olduğu için ancak sıfırdan kurulumda sorun çıkar.
 - **Görsel kontrol (2026-10-14, kopya klasörde `next dev --webpack`, demo modu, Chrome + Playwright):** GÖRÜLDÜ: ana sayfa duyuru şeridi gerçek `Test-3` duyurusuyla (zemin `rgb(2,122,72)`, yazı beyaz, altın etiket; 390 px'te yatay taşma yok, şerit yüksekliği 113 px); yönetim → Formlar & anketler listesinde mecra rozetleri; yönetim → Duyurular sayfası konsol hatasız açılıyor (demo modunda liste "Yükleniyor", bu bileşenin demo verisi yok). GÖRÜLMEDİ: anket ve duyuru **form pencerelerindeki mecra seçici** (ilk derleme zaman aşımı), veli paneli (oturum gerekir) `DuyuruBandi` ve `AnketIstemi`, anket doldurma penceresi, karanlık mod, Flutter (mobil/web app) ekranları (emülatör/cihaz yok). Dev sunucusu konsolundaki `ws://.../_next/hmr` hataları yalnız geliştirme gürültüsü.
 - **Anket/duyuru ortak:** yüzey sözlüğü tek (`SurveySurface`, `SurfacePicker`); mobil `kIsWeb ? 'web_app' : 'mobil'` (`yayin_yuzeyi.dart`).
+
+## 16. 2026-10-14: yapılanlar ve kalanlar
+
+### 16.1 Yapılanlar
+- [x] Kampanya listesi overload çakışması: `admin_kampanya_listele(text,int,int)` → `admin_growth_kampanya_listele` (migration `20261031000000`, uzakta uygulandı). Yönetim Merkezi'nin 0-argümanlı `admin_kampanya_listele()` korundu (farklı tablo, CampaignsManager kullanıyor). Canlı anon çağrıda her iki isim de belirsizlik yerine 401 veriyor.
+- [x] Boş veritabanı zinciri: `20260927000010` (COMMENT `||` → tek literal) ve `20260927000019` (question_reports indexi tablo oluşmadan önce çalışıyordu; index zaten `20260927000030`'da). Dosyalar düzeltildi, uzakta zaten uygulu olduğu için canlıya etkisi yok. Doğrulama: PGlite, 96 migration yamasız (`--strict`) hatasız; `duyurular_tests` 19/19, `yonetim_merkezi_tests` 30/30.
+- [x] Web paneli Vercel production'a alındı: `web-panel-nu.vercel.app` (deployment `dpl_B2NYZQ71mmXrHdmmBWRMpunE7zyy`), kaynak `main` HEAD'i (`c795bea`). Kök adres 200 döndü.
+- [x] Anket mecraları (`f6f90e5`), duyuru mecraları (`2e84567`), TASKS notları (`d3484f7`), DB düzeltmeleri (`c795bea`).
+
+### 16.2 Yapılacaklar
+- [ ] **Veli mobil ana ekranı:** "yalnızca öğrenci hesapları" metni kaldırılacak; çocuk özeti, duyuru, anket ve web veli paneline yönlendirme. Hupo tasarım ajanıyla yürütülüyor; bitince commit + test.
+- [ ] **Flutter Web (app.hupolingo.com):** Bu Vercel hesabında `app.hupolingo.com` bağlı değil; `mobile-app/vercel.json` için ayrı proje gerekiyor. Kullanıcı onayı: yeni proje adı ve DNS (`app` CNAME) + Supabase Auth redirect URL manuel.
+- [ ] **hupolingo.com çözümlenmiyor** (bu makineden "ad çözülemedi"). Alan adının DNS/Vercel bağlantısı kontrol edilmeli; web paneli şu an yalnızca `web-panel-nu.vercel.app` üzerinden erişilebilir.
+- [ ] **Karakter görselleri derlemeyi bağlıyor:** `web-panel/public/characters` git'te değil (`.gitignore`), `mobile-app/assets/characters` kopyası üretiliyor. Git HEAD'den yapılan Vercel derlemesi bu olmadan başarısız oluyor (bu dağıtımda 81 dosya elle kopyalandı). Kalıcı çözüm için karar gerek: görselleri commit etmek ya da derleme öncesi kopya adımı.
+- [ ] **Mağaza sürümü (Play / App Store):** yapılmadı; imzalama anahtarı ve mağaza hesabı gerekir.
+- [ ] **Görsel kontrol:** veli paneli bandı, anket doldurma penceresi, mecra seçici formları, karanlık mod ve mobil/web uygulama ekranları gerçek ortamda bakılmadı.
+- [ ] **Vercel hatalı kayıt:** `2Jr2whEMGb9f98fawcCte287mSbP` (Root Directory yanlış denemesi) ve `9EEhZPLz2YiEQibMiYQXUkXVwCZu` (karakter eksik derleme) başarısız deployment kayıtları; canlıyı etkilemedi.
+- [ ] **Canlı Supabase Auth:** yeni web kullanıcı akışları (anket/duyuru) için uzak DB yalnızca migration ile güncellendi; gerçek veli hesabıyla uçtan uca deneme yapılmadı.
