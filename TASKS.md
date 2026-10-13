@@ -289,7 +289,7 @@ Mevcut `get_student_dashboard` verisiyle çalışan sayfalar:
 - [x] Aktivite Akışı sayfası (`/veli-paneli/aktivite`, `ActivityView.tsx`, data.haftalik'ten)
 - [x] Deneme Sınavları sayfası (`/veli-paneli/denemeler`, `DenemelerView.tsx`, DenemeKaydiKarti + CocukDenemeGecmisi)
 - [x] Hedefler sayfası (`/veli-paneli/hedefler`, `GoalsView.tsx`, get_daily_goal RPC)
-- [ ] Konu detay RPC → Dersler & Konular tam içerik (get_child_topic_progress RPC gerekir)
+- [x] Konu detay RPC → Dersler & Konular tam içerik (`get_child_topic_progress`, migration `20261025000000`; `SubjectsView.tsx` ders seçilince tüm konuları ilerleme çubuğuyla gösterir)
 
 **Dosyalar değiştirildi (Dalga 0):**
 - `src/app/[locale]/(admin)/layout.tsx` — veli-paneli path'inde admin kabuğunu atla
@@ -544,7 +544,7 @@ Dokümanlar: `docs/growth-crm/IMPLEMENTATION_PLAN.md`, `docs/growth-crm/REUSE_EX
 - [x] Migration'lar: `20261014000000` (core tablolar), `000100` (RPC'ler), `000200` (pazarlama), `000300` (analitik) — tümü uzakta uygulanmış
 - [x] Admin sayfaları: müşteri-360, müşteri-360/[id], potansiyel-adaylar, potansiyel-adaylar/[id], crm-gorevler, ekip-akisi, satis-hatti, destek-masasi, journey-otomasyonlari, mesaj-sablonlari, growth-analitik, ai-oneriler — `tsc` temiz
 - [ ] Gerçek admin oturumuyla tarayıcı testi yapılmadı
-- [ ] Faz B–F derinleştirme: `IMPLEMENTATION_PLAN.md`'deki sonraki fazlar
+- [x] Faz B–F derinleştirme: tüm CRM manager bileşenleri yazıldı (`tsc` temiz) — Müşteri 360, Potansiyel Adaylar, Satış Hattı, CRM Görevleri, Ekip Akışı, Destek Masası, Journey, Mesaj Şablonları, Growth Analitik, AI Öneriler
 - [ ] Veli adayları CRM: public web formu + captcha (anon lead yakalama) — Dilim 1 backend yazıldı, test çalıştırılmadı
 
 ## 13. Kelime Evreni entegrasyonu (2026-10-10, branch `feature/kelime-evreni`)

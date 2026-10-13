@@ -49,6 +49,17 @@ export interface ReviewTopic {
   oran: number | null;
 }
 
+/** Konu bazında detaylı ilerleme (public.get_child_topic_progress dönüşü). */
+export interface TopicProgress {
+  konu: string;
+  toplam: number;
+  dogru: number;
+  oran: number | null;
+  yanlis: number;
+  bekleyen: number;
+  son_cevap: string | null;
+}
+
 /** Veli paneli ozet verisi (public.get_student_dashboard donusu). */
 export interface DashboardData {
   cocuk: Student | null;
