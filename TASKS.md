@@ -285,11 +285,11 @@ Mevcut `get_student_dashboard` verisiyle çalışan sayfalar:
 - [x] Başarılar (`/veli-paneli/basarilar`) — `AchievementsView.tsx`: XP/seviye/seri kartları + rozet listesi (`get_student_badges` RPC)
 - [x] Üyelik & Hesap (`/veli-paneli/uyelik`) — `MembershipView.tsx`: AbonelikKarti + PlanKarti + OdemeGecmisi
 
-### Dalga 2 — Yeni Backend + Sayfalar (Sonraki)
-- [ ] Aktivite timeline RPC → Aktivite Akışı sayfası
-- [ ] Deneme sınavları veli RPC → Deneme Sınavları sayfası  
-- [ ] Hedefler RPC → Hedefler sayfası
-- [ ] Konu detay RPC → Dersler & Konular tam içerik
+### Dalga 2 — Yeni Backend + Sayfalar (2026-10-13)
+- [x] Aktivite Akışı sayfası (`/veli-paneli/aktivite`, `ActivityView.tsx`, data.haftalik'ten)
+- [x] Deneme Sınavları sayfası (`/veli-paneli/denemeler`, `DenemelerView.tsx`, DenemeKaydiKarti + CocukDenemeGecmisi)
+- [x] Hedefler sayfası (`/veli-paneli/hedefler`, `GoalsView.tsx`, get_daily_goal RPC)
+- [ ] Konu detay RPC → Dersler & Konular tam içerik (get_child_topic_progress RPC gerekir)
 
 **Dosyalar değiştirildi (Dalga 0):**
 - `src/app/[locale]/(admin)/layout.tsx` — veli-paneli path'inde admin kabuğunu atla
@@ -339,7 +339,7 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 - [x] `veli_adayi_olustur` yanıtından `yeni` alanı kaldırıldı (e-posta varlığı sızıntısı kapandı) — migration `20261019000100_veli_adayi_yanit_sadelestirme.sql`, `supabase/tests/veli_adaylari_tests.sql` güncellendi
 - [x] `veli_adayi_olustur`: anonim çağrıda mevcut adayın adı ve telefonu artık üzerine yazılmaz (karar 2026-10-10; migration `20261019000100`, test güncellendi). Pazarlama onayı yükseltmesi çalışmaya devam eder
 - [x] Prod CSP'den `unsafe-eval` kaldırıldı; `object-src 'none'`, `base-uri 'self'`, `form-action 'self'` eklendi (`web-panel/next.config.ts`)
-- [ ] **Karar bekliyor:** CSP `connect-src` listesinde PostHog ana bilgisayarı yok; onaylı analitik gönderimi engellenmiş olabilir
+- [x] CSP `connect-src` PostHog eksikliği giderildi (`eu.i.posthog.com`, `eu-assets.i.posthog.com`, 2026-10-13)
 - [x] Landing `dangerouslySetInnerHTML` kullanımları düz metne çevrildi (sabit veri, `&#305;` varlıkları temizlendi)
 - [x] `npm audit --omit=dev` yüksek bulguları giderildi (`npm audit fix`, major yükseltme yok)
 - [x] Android: `allowBackup="false"`; `bundleRelease` anahtarsız derlenmez, `assembleRelease` için uyarı. **Derlenmedi:** Android SDK doğrulaması ve release anahtarı bu makinede yok; yalnızca kod incelemesi
@@ -389,7 +389,7 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 - [x] **Kuru test (canlıda `BEGIN … ROLLBACK`, 2026-10-10):** 5 migration hatasız çalıştı; `veli_adaylari` test paketi 12/12 OK; fonksiyon/tablo/politika sayıları canlıyla aynı (265 / 102 / 45); geri alma doğrulandı (ACL ve veri değişmedi). Test senaryo 9'da, tabloyu sahip rolüne geçmeden okuyan bir hata düzeltildi (`authenticated` tabloyu okuyamaz; test kodu hatasıydı)
 - [x] `npm run db:preview` (salt okuma, dry-run) → uzak veritabanına gidecek 4 migration listelendi; uzak geçmiş `20261018020000`'e kadar uygulanmış
 - [x] Canlı salt okuma denetimi (`supabase db query --linked`, `db advisors --type security`): RLS 102/102 tabloda açık; advisor'da RLS/search_path kaynaklı bulgu yok (bkz. 11.8)
-- [ ] `tools/istemci-rpc-denetimi.ps1` → 8 RPC "şemada tanım yok" (bkz. 11.7). Bu bu turdan önceki bir durum; yetki değişikliklerimiz bu RPC'leri etkilemiyor
+- [x] `tools/istemci-rpc-denetimi.ps1` Türkçe locale i/I hatası düzeltildi (RegexOptions.CultureInvariant, 2026-10-13). 11 yanlış eksik → 0. Tüm RPC'ler şemada tanımlı.
 - [ ] Android: `flutter build appbundle` yapılmadı (release anahtarı yok)
 - [ ] Yeni migration'lar yerel Postgres'te çalıştırılmadı (Docker yok)
 
@@ -494,7 +494,7 @@ Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-cast
 #### Notlar
 - Doğru cevaplar (`dogru_sik`) istemciye gönderilmiyor — bitiş ekranında da gösterilmiyor. Güvenlik DB seviyesinde.
 - `start_mock_exam_attempt` → velinin `register_for_mock_exam` ile çocuğu kaydetmemiş olması hata verir. Hata mesajı ekranda kullanıcıya gösterilir.
-- `beforeunload` uyarısı henüz yok (P1); JWT yenileme ve localStorage yedek henüz yok (P1).
+- [x] `beforeunload` uyarısı eklendi + localStorage seçim yedekleme (2026-10-13)
 
 ### 12.9 Faz 2C — Sonuç İlanı Sayfası (2026-10-10)
 - [x] Migration `20261020000400`: `get_exam_public_results(p_exam_id)` — sınıf bazlı istatistik + puan dağılımı + kendi sonucu (anon + auth). `get_exam_topic_breakdown(p_exam_id)` — konu kırılımı (auth + premium). Deploy edildi.
