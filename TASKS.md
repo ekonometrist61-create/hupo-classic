@@ -4,7 +4,7 @@
 > Temizlik kararları: `docs/arsiv/TEMIZLIK_RAPORU.md`
 > Kurtarma kanıtı: `kurtarilan/KURTARMA_RAPORU.md`
 
-Son güncelleme: 03 Ekim 2026
+Son güncelleme: 13 Ekim 2026
 
 ---
 
@@ -55,7 +55,7 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 - [x] Taşınanlar: `node_modules` (556 MB), `.next` (504 MB), `.idea`, `reports/`,
       `research_notes/`, `proje-okulu-app/`, 7 fazlalık döküm, 2 yanlış adlı dosya
 - [x] `supabase/config.toml` ana yere geri alındı
-- [ ] **Kullanıcı onayı bekleniyor** — `Silinecekler/` kalıcı olarak silinecek
+- [x] `Silinecekler/` kalıcı olarak silindi (kullanıcı talimatıyla)
 
 ### Supabase kurtarma (canlı: ccozfrpnvyrnktpffkwo)
 - [x] Erişim doğrulandı, `get_app_config` okunabildi
@@ -105,12 +105,12 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 - [x] Web proxy locale-prefix normalizasyonu düzeltildi; anonim claim gerçek oturum sayılmıyor
 - [ ] Admin paneli oturum açılmış tarayıcıda doğrulanacak (kullanıcı oturumu gerekir)
 - [x] **Soru bankası — Matematik Bölüm 1**: 50 örnek soru migration'a dönüştürüldü (`20261003000001_soru_bankasi_matematik_bolum1.sql`); onay_durumu = 'beklemede' (kaynak doğrulanmamış)
-- [ ] Proje ASCII yola taşınacak (Türkçe/OneDrive yolu Dart/Flutter için önerilir)
+- [x] Proje ASCII yola taşındı (`C:\Dev\hupo`)
 - [x] Web TypeScript kontrolü temiz (`tsc --noEmit`)
 - [x] Web production build temiz (`next build --webpack`, 51 rota)
 - [x] Dart yapısal/import statik denetimi temiz (`tools/dart-statik-denetim.mjs`, 81 dosya)
 - [x] `Silinecekler/` klasörü kullanıcı talimatıyla kalıcı olarak silindi
-- [ ] Flutter analyze / Chrome çalıştırması OneDrive build kilidi nedeniyle bekliyor
+- [x] Flutter analyze temiz (§11.6'da doğrulandı; proje ASCII yolda)
 
 ---
 
