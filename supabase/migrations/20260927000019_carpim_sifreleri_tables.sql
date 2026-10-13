@@ -109,6 +109,7 @@ where ogretti = true;
 -- Yönetici: günlük soru havuzlarını listeler
 create index if not exists daily_challenges_gun_anahtar_idx on public.daily_challenges (gun, anahtar);
 -- Yönetici: açık bildirimleri sürebilir
-create index if not exists question_reports_durum_idx on public.question_reports (durum, created_at desc);
+-- question_reports_durum_idx burada OLUŞTURULMAZ: tablo 20260927000030'da oluşturulur ve
+-- index orada (aynı ad, if not exists) kurulur. Burada olursa boş veritabanında tablo yok hatası çıkar.
 -- Öğrenci: rozetlerini hızlıca okusun
 create index if not exists user_badges_student_idx on public.user_badges (student_id);

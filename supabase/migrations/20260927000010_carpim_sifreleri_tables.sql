@@ -107,9 +107,9 @@ create table if not exists public.carpim_deneme_log (
     check (soru_index >= 0)
 );
 
+-- COMMENT IS yalnızca tek string literal kabul eder (|| ile birleştirilemez).
 comment on table public.carpim_deneme_log is
-  'Her (öğrenci, şifre, aşama, soru) için İLK deneme sonucu. ' ||
-  'Tekrar denemeler burada ezilmez; yıldız yalnızca ilk doğruda verilir.';
+  'Her (öğrenci, şifre, aşama, soru) için İLK deneme sonucu. Tekrar denemeler burada ezilmez; yıldız yalnızca ilk doğruda verilir.';
 
 -- ---------------------------------------------------------------------
 -- 4) RLS
