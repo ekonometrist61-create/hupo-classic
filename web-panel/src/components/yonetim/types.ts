@@ -367,6 +367,9 @@ export interface ProspectDetay {
 // Müşteri 360° (Growth CRM)
 // ---------------------------------------------------------------------
 
+/** Genel ticari izin durumu (growth_households.commercial_consent_overall). */
+export type CommercialConsent = "granted" | "denied" | "unknown";
+
 /** admin_musteri_360_listele() satır şekli (hane / müşteri ana kaydı). */
 export interface GrowthHousehold {
   id: string;
@@ -387,12 +390,30 @@ export interface GrowthHousehold {
   last_seen_at: string | null;
   next_follow_up_at: string | null;
   created_at: string;
+  /** Müşterinin kaynağı (deneme_on_kayit, uygulama_kayit, ...); bilinmiyorsa null. */
+  source: string | null;
+  commercial_consent_overall: CommercialConsent;
+  /** Hanedeki öğrenci (çocuk) sayısı. */
+  cocuk_sayisi: number;
 }
 
 /** admin_musteri_360_listele() dönüş şekli. */
 export interface GrowthHouseholdList {
   rows: GrowthHousehold[];
   total: number;
+}
+
+/** admin_musteri_360_ozet() dönüş şekli (veri toplama özeti). */
+export interface Musteri360Ozet {
+  toplam: number;
+  son_7_gun: number;
+  telefonlu: number;
+  cocuklu: number;
+  izin_email: number;
+  izin_sms: number;
+  izin_phone: number;
+  izin_push: number;
+  kaynaklar: Array<{ kaynak: string; adet: number }>;
 }
 
 /** admin_musteri_360_detay() dönüşü — RPC Türkçe anahtarlar döner. */

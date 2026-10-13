@@ -513,7 +513,33 @@
         "lifecycle": "Lifecycle",
         "allLifecycle": "All stages",
         "plan": "Plan",
-        "allPlans": "All plans"
+        "allPlans": "All plans",
+        "source": "Source",
+        "allSources": "All sources",
+        "consentChannel": "Consented channel",
+        "allChannels": "All channels"
+      },
+      "summary": {
+        "loading": "Loading summary...",
+        "empty": "No customer records yet.",
+        "total": "Total customers",
+        "last7Days": "Last 7 days",
+        "phone": "With phone",
+        "children": "With children",
+        "consentCard": "{kanal} consented"
+      },
+      "channels": {
+        "email": "Email",
+        "sms": "SMS",
+        "phone": "Phone",
+        "push": "Push"
+      },
+      "sources": {
+        "deneme_on_kayit": "Trial exam pre-registration",
+        "uygulama_kayit": "App sign-up",
+        "landing_erken_erisim": "Early access form",
+        "web_form": "Web form",
+        "bilinmiyor": "Unknown"
       },
       "stages": {
         "visitor": "Visitor",
@@ -542,6 +568,9 @@
         "plan": "Plan",
         "mrr": "MRR",
         "health": "Health Score",
+        "source": "Source",
+        "consent": "Consent",
+        "children": "Children",
         "lastActivity": "Last Activity",
         "role": "Role",
         "grade": "Grade",
@@ -620,7 +649,8 @@
       },
       "consent": {
         "granted": "Granted",
-        "denied": "Denied"
+        "denied": "Denied",
+        "unknown": "Unknown"
       },
       "empty": {
         "tags": "No tags.",

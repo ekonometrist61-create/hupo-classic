@@ -7,7 +7,7 @@ import { Link } from "@/i18n/navigation";
 import { formatDate, formatTry } from "@/utils/format";
 import { createClient } from "@/utils/supabase/client";
 import Pager from "../Pager";
-import type { GrowthHousehold, GrowthHouseholdList } from "../types";
+import type { CommercialConsent, GrowthHousehold, GrowthHouseholdList, Musteri360Ozet } from "../types";
 import ErrorNote from "./ErrorNote";
 import { cardClass, inputClass, labelClass, primaryBtn, tdClass, thClass } from "./styles";
 import useDebounced from "./useDebounced";
@@ -15,9 +15,14 @@ import useDebounced from "./useDebounced";
 const PAGE_SIZE = 25;
 const LIFECYCLE_STAGES = ["visitor", "lead", "registered", "trial", "activated", "engaged", "paid", "at_risk", "churned", "winback"] as const;
 const PLANS = ["free", "trial", "premium", "family"] as const;
+const IZIN_KANALLARI = ["email", "sms", "phone", "push"] as const;
+const KAYNAKLAR = ["deneme_on_kayit", "uygulama_kayit", "landing_erken_erisim", "web_form", "bilinmiyor"] as const;
+const CONSENT_STATES = ["granted", "denied", "unknown"] as const;
 
 export type LifecycleStage = (typeof LIFECYCLE_STAGES)[number];
 export type GrowthPlan = (typeof PLANS)[number];
+export type IzinKanali = (typeof IZIN_KANALLARI)[number];
+export type KaynakAnahtari = (typeof KAYNAKLAR)[number];
 
 const LIFECYCLE_CLASS: Record<LifecycleStage, string> = {
   visitor: "bg-gray-100 text-gray-700 dark:bg-white/5 dark:text-white/80",
@@ -32,12 +37,28 @@ const LIFECYCLE_CLASS: Record<LifecycleStage, string> = {
   winback: "bg-blue-light-50 text-blue-light-700 dark:bg-blue-light-500/20 dark:text-blue-light-300",
 };
 
+const CONSENT_CLASS: Record<CommercialConsent, string> = {
+  granted: "bg-success-50 text-success-700 dark:bg-success-500/15 dark:text-success-400",
+  denied: "bg-gray-100 text-gray-600 dark:bg-white/5 dark:text-gray-400",
+  unknown: "bg-white text-gray-500 ring-1 ring-inset ring-gray-200 dark:bg-transparent dark:text-gray-400 dark:ring-gray-700",
+};
+
+const SOURCE_CLASS = "bg-blue-light-50 text-blue-light-600 dark:bg-blue-light-500/15 dark:text-blue-light-400";
+
 export function asLifecycle(v: string | null | undefined): LifecycleStage | null {
   return (LIFECYCLE_STAGES as readonly string[]).includes(v ?? "") ? (v as LifecycleStage) : null;
 }
 
 export function asPlan(v: string | null | undefined): GrowthPlan | null {
   return (PLANS as readonly string[]).includes(v ?? "") ? (v as GrowthPlan) : null;
+}
+
+function asConsent(v: string | null | undefined): CommercialConsent {
+  return (CONSENT_STATES as readonly string[]).includes(v ?? "") ? (v as CommercialConsent) : "unknown";
+}
+
+function asKaynak(v: string | null | undefined): KaynakAnahtari | null {
+  return (KAYNAKLAR as readonly string[]).includes(v ?? "") ? (v as KaynakAnahtari) : null;
 }
 
 export function LifecycleBadge({ stage }: { stage: string }) {
@@ -50,6 +71,27 @@ export function LifecycleBadge({ stage }: { stage: string }) {
       }`}
     >
       {key ? t(`stages.${key}`) : stage}
+    </span>
+  );
+}
+
+/** Kaynak rozeti: bilinen kaynaklar çevrilir, tanınmayanlar ham değeriyle gösterilir. */
+export function KaynakBadge({ kaynak }: { kaynak: string | null }) {
+  const t = useTranslations("yonetim.musteri360");
+  const key = asKaynak(kaynak ?? "bilinmiyor");
+  return (
+    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-theme-xs font-medium ${SOURCE_CLASS}`}>
+      {key ? t(`sources.${key}`) : kaynak}
+    </span>
+  );
+}
+
+export function ConsentBadge({ durum }: { durum: string | null | undefined }) {
+  const t = useTranslations("yonetim.musteri360");
+  const key = asConsent(durum);
+  return (
+    <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-theme-xs font-medium ${CONSENT_CLASS[key]}`}>
+      {t(`consent.${key}`)}
     </span>
   );
 }
@@ -70,18 +112,52 @@ export function HealthBar({ score }: { score: number | null }) {
   );
 }
 
+function OzetKarti({ baslik, deger }: { baslik: string; deger: number }) {
+  return (
+    <div className={`${cardClass} p-4`}>
+      <p className="text-theme-xs font-medium text-gray-500 dark:text-gray-400">{baslik}</p>
+      <p className="mt-1 text-xl font-semibold text-gray-800 dark:text-white/90">{deger.toLocaleString("tr-TR")}</p>
+    </div>
+  );
+}
+
 export default function Musteri360Manager() {
   const t = useTranslations("yonetim.musteri360");
   const [search, setSearch] = useState("");
   const debounced = useDebounced(search);
   const [lifecycle, setLifecycle] = useState<"" | LifecycleStage>("");
   const [plan, setPlan] = useState<"" | GrowthPlan>("");
+  const [source, setSource] = useState("");
+  const [izinKanal, setIzinKanal] = useState<"" | IzinKanali>("");
   const [page, setPage] = useState(0);
   const [reloadKey, setReloadKey] = useState(0);
 
   const [list, setList] = useState<GrowthHouseholdList | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
+
+  // Özet kartları: filtrelerden bağımsız; hata olursa kartlar gizlenir, liste etkilenmez.
+  const [ozet, setOzet] = useState<Musteri360Ozet | null>(null);
+  const [ozetDurum, setOzetDurum] = useState<"loading" | "ready" | "error">("loading");
+
+  useEffect(() => {
+    let cancelled = false;
+    const run = async () => {
+      const { data, error: err } = await createClient().rpc("admin_musteri_360_ozet");
+      if (cancelled) return;
+      if (err || !data) {
+        setOzet(null);
+        setOzetDurum("error");
+      } else {
+        setOzet(data as Musteri360Ozet);
+        setOzetDurum("ready");
+      }
+    };
+    void run();
+    return () => {
+      cancelled = true;
+    };
+  }, []);
 
   useEffect(() => {
     let cancelled = false;
@@ -92,6 +168,8 @@ export default function Musteri360Manager() {
         p_plan: plan || null,
         p_limit: PAGE_SIZE,
         p_offset: page * PAGE_SIZE,
+        p_kaynak: source || null,
+        p_izin_kanal: izinKanal || null,
       });
       if (cancelled) return;
       if (err) {
@@ -107,15 +185,46 @@ export default function Musteri360Manager() {
     return () => {
       cancelled = true;
     };
-  }, [debounced, lifecycle, plan, page, reloadKey]);
+  }, [debounced, lifecycle, plan, source, izinKanal, page, reloadKey]);
+
+  // Bilinmiyor kaynağı filtre seçeneği olarak sunulmaz: RPC tam eşleşme yaptığı için
+  // kaynağı boş olan kayıtları getirmez; bu kayıtlar "Tümü" ile listelenir.
+  const kaynakSecenekleri = (ozet?.kaynaklar ?? []).filter((k) => k.kaynak !== "bilinmiyor");
 
   const rows = list?.rows ?? [];
   const total = list?.total ?? 0;
   const start = total === 0 ? 0 : page * PAGE_SIZE + 1;
   const end = Math.min(total, page * PAGE_SIZE + rows.length);
 
+  const ozetKartlari: Array<{ baslik: string; deger: number }> = ozet
+    ? [
+        { baslik: t("summary.total"), deger: ozet.toplam },
+        { baslik: t("summary.last7Days"), deger: ozet.son_7_gun },
+        { baslik: t("summary.phone"), deger: ozet.telefonlu },
+        { baslik: t("summary.children"), deger: ozet.cocuklu },
+        { baslik: t("summary.consentCard", { kanal: t("channels.email") }), deger: ozet.izin_email },
+        { baslik: t("summary.consentCard", { kanal: t("channels.sms") }), deger: ozet.izin_sms },
+        { baslik: t("summary.consentCard", { kanal: t("channels.phone") }), deger: ozet.izin_phone },
+        { baslik: t("summary.consentCard", { kanal: t("channels.push") }), deger: ozet.izin_push },
+      ]
+    : [];
+
   return (
     <section className={`${cardClass} p-5 sm:p-6`}>
+      {ozetDurum === "loading" && (
+        <p className="mb-5 text-sm text-gray-500 dark:text-gray-400">{t("summary.loading")}</p>
+      )}
+      {ozetDurum === "ready" && ozet && ozet.toplam === 0 && (
+        <p className="mb-5 text-sm text-gray-500 dark:text-gray-400">{t("summary.empty")}</p>
+      )}
+      {ozetDurum === "ready" && ozet && ozet.toplam > 0 && (
+        <div className="mb-5 grid grid-cols-2 gap-3 lg:grid-cols-4">
+          {ozetKartlari.map((k) => (
+            <OzetKarti key={k.baslik} baslik={k.baslik} deger={k.deger} />
+          ))}
+        </div>
+      )}
+
       <div className="mb-4 flex flex-wrap items-end gap-4">
         <div className="min-w-60 flex-1">
           <label className={labelClass} htmlFor="m360-search">{t("search")}</label>
@@ -156,6 +265,41 @@ export default function Musteri360Manager() {
             ))}
           </select>
         </div>
+        {kaynakSecenekleri.length > 0 && (
+          <div className="min-w-48">
+            <label className={labelClass} htmlFor="m360-source">{t("filters.source")}</label>
+            <select
+              id="m360-source"
+              className={inputClass}
+              value={source}
+              onChange={(e) => { setSource(e.target.value); setPage(0); setLoading(true); }}
+            >
+              <option value="">{t("filters.allSources")}</option>
+              {kaynakSecenekleri.map((k) => {
+                const key = asKaynak(k.kaynak);
+                return (
+                  <option key={k.kaynak} value={k.kaynak}>
+                    {key ? t(`sources.${key}`) : k.kaynak}
+                  </option>
+                );
+              })}
+            </select>
+          </div>
+        )}
+        <div className="min-w-44">
+          <label className={labelClass} htmlFor="m360-izin">{t("filters.consentChannel")}</label>
+          <select
+            id="m360-izin"
+            className={inputClass}
+            value={izinKanal}
+            onChange={(e) => { setIzinKanal(e.target.value as "" | IzinKanali); setPage(0); setLoading(true); }}
+          >
+            <option value="">{t("filters.allChannels")}</option>
+            {IZIN_KANALLARI.map((k) => (
+              <option key={k} value={k}>{t(`channels.${k}`)}</option>
+            ))}
+          </select>
+        </div>
       </div>
 
       {loading ? (
@@ -181,6 +325,9 @@ export default function Musteri360Manager() {
                 <th className={thClass}>{t("cols.customerNo")}</th>
                 <th className={thClass}>{t("cols.name")}</th>
                 <th className={thClass}>{t("cols.email")}</th>
+                <th className={thClass}>{t("cols.source")}</th>
+                <th className={thClass}>{t("cols.consent")}</th>
+                <th className={thClass}>{t("cols.children")}</th>
                 <th className={thClass}>{t("cols.lifecycle")}</th>
                 <th className={thClass}>{t("cols.plan")}</th>
                 <th className={thClass}>{t("cols.mrr")}</th>
@@ -189,7 +336,7 @@ export default function Musteri360Manager() {
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-              {rows.map((h) => {
+              {rows.map((h: GrowthHousehold) => {
                 const p = asPlan(h.plan);
                 return (
                   <tr key={h.id}>
@@ -203,6 +350,13 @@ export default function Musteri360Manager() {
                       </Link>
                     </td>
                     <td className={tdClass}>{h.email ?? "-"}</td>
+                    <td className={tdClass}>
+                      <KaynakBadge kaynak={h.source} />
+                    </td>
+                    <td className={tdClass}>
+                      <ConsentBadge durum={h.commercial_consent_overall} />
+                    </td>
+                    <td className={`${tdClass} text-center`}>{h.cocuk_sayisi ?? 0}</td>
                     <td className={tdClass}>
                       <LifecycleBadge stage={h.lifecycle} />
                     </td>

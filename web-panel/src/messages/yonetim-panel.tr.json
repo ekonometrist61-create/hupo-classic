@@ -513,7 +513,33 @@
         "lifecycle": "Yaşam döngüsü",
         "allLifecycle": "Tüm aşamalar",
         "plan": "Plan",
-        "allPlans": "Tüm planlar"
+        "allPlans": "Tüm planlar",
+        "source": "Kaynak",
+        "allSources": "Tüm kaynaklar",
+        "consentChannel": "İzinli kanal",
+        "allChannels": "Tüm kanallar"
+      },
+      "summary": {
+        "loading": "Özet yükleniyor...",
+        "empty": "Henüz müşteri kaydı yok.",
+        "total": "Toplam müşteri",
+        "last7Days": "Son 7 gün",
+        "phone": "Telefonlu",
+        "children": "Çocuklu",
+        "consentCard": "{kanal} izinli"
+      },
+      "channels": {
+        "email": "E-posta",
+        "sms": "SMS",
+        "phone": "Telefon",
+        "push": "Push"
+      },
+      "sources": {
+        "deneme_on_kayit": "Deneme sınavı ön kaydı",
+        "uygulama_kayit": "Uygulama kaydı",
+        "landing_erken_erisim": "Erken erişim formu",
+        "web_form": "Web formu",
+        "bilinmiyor": "Bilinmiyor"
       },
       "stages": {
         "visitor": "Ziyaretçi",
@@ -542,6 +568,9 @@
         "plan": "Plan",
         "mrr": "MRR",
         "health": "Sağlık Skoru",
+        "source": "Kaynak",
+        "consent": "İzin",
+        "children": "Çocuk",
         "lastActivity": "Son Aktivite",
         "role": "Rol",
         "grade": "Sınıf",
@@ -620,7 +649,8 @@
       },
       "consent": {
         "granted": "İzinli",
-        "denied": "İzin yok"
+        "denied": "İzin yok",
+        "unknown": "Bilinmiyor"
       },
       "empty": {
         "tags": "Etiket yok.",
