@@ -2,7 +2,7 @@
 
 Türkçe eğitim uygulaması: öğrenci mobil uygulaması + veli/yönetici web paneli.
 
-> **Yeni bir sohbete başlarsan önce [`DURUM.md`](DURUM.md) dosyasını oku.**
+> **Yeni bir sohbete başlarsan önce [`MASTER_BRIEF.md`](MASTER_BRIEF.md) dosyasını oku. (Eski oturum notu `docs/arsiv/DURUM.md` altında.)**
 > Projenin nereye geldiği, neyin çalıştığı ve neyin kaldığı orada yazılı.
 
 ## Klasörler

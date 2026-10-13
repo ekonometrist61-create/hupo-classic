@@ -330,7 +330,7 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 - [ ] Google API anahtarlarını (Gemini / Stitch, `9b4ee9c` commit'inde `.claude/mcp.json` ve `.claude/settings.json`) iptal et ve yenile
 - [ ] GitHub kişisel erişim jetonunu iptal et, yenisini oluştur; `origin` URL'sinden jetonu kaldır, kimlik yöneticisi kullan (`.git/config`)
 - [ ] Git geçmişini temizle: `git filter-repo` ile anahtarlı `.claude/` sürümlerini kaldır; force push (her adımda ayrı onay). Anahtar yenilemesinden SONRA yapılır
-- [ ] Yeni anahtarları kullanan ortamları kontrol et (Netlify ortam değişkenleri, yerel `.env.local`, MCP yapılandırması)
+- [ ] Yeni anahtarları kullanan ortamları kontrol et (Vercel ortam değişkenleri, yerel `.env.local`, MCP yapılandırması). Barındırma Vercel'dir; Netlify kullanılmıyor
 
 ### 11.3 Aşama 1 — Güvenlik düzeltmeleri
 - [x] `sunucu.dart` kaldırıldı (karar 3). Dizin geçişi ve LAN'a açık dinleme riski ortadan kalktı
@@ -345,7 +345,7 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 - [x] Android: `allowBackup="false"`; `bundleRelease` anahtarsız derlenmez, `assembleRelease` için uyarı. **Derlenmedi:** Android SDK doğrulaması ve release anahtarı bu makinede yok; yalnızca kod incelemesi
 - [ ] Release anahtarı kurulumu: `key.properties` ve upload keystore bu makinede yok; mağaza yüklemesi öncesi gerekli
 - [x] **Canlıya deploy edildi (2026-10-10, kullanıcı onayı):** `20261019000000` … `…000400` (5 migration). Deploy sonrası salt okuma doğrulaması: `evaluate_characters`, `characters_after_change`, `exchange_auth_bridge_token`, `issue_auth_bridge_token` yetkileri yalnızca `service_role`; `veli_adayi_olustur` yeni tanımda; `get_carpim_sifreleri` yetkileri değişmedi (`authenticated`, `service_role`); fonksiyon/tablo/politika sayıları 265 / 102 / 45 (kurtarma no-op). `db:status`: 5 kayıt uzakta, bekleyen yok. Yerelde Docker yok; `supabase test db` çalıştırılmadı
-- [x] Auth bridge: `exchange_auth_bridge_token` ve `issue_auth_bridge_token` yetkisi anon/authenticated'dan kapatıldı (migration `20261019000400`; kullanılmadıkları kullanıcı onayıyla doğrulandı). Fonksiyonlar ve `auth_bridge_tokens` tablosu KALDI; kaldırma ayrı onayla
+- [x] Auth bridge: `exchange_auth_bridge_token` ve `issue_auth_bridge_token` yetkisi anon/authenticated'dan kapatıldı (migration `20261019000400`; kullanılmadıkları kullanıcı onayıyla doğrulandı). Sonradan kullanıcı onayıyla fonksiyonlar ve `auth_bridge_tokens` tablosu da kaldırıldı (migration `20261021000000`)
 - [ ] (ertelendi) `iletisim_izni_iptal_et`: e-posta bağlantısına imzalı token. Mail gönderim tasarımı gerekir
 - [ ] (ertelendi) `veli_adayi_olustur` ve veli kodu için IP/captcha limiti. Turnstile anahtarı gerekir
 - [ ] (ertelendi) `search_path = public, pg_temp` → `''` standardizasyonu (~17 fonksiyon). Gövdelerde nitelemesiz tablo adı kırabilir; DB testi şart
@@ -359,6 +359,7 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 
 ### 11.5 Aşama 3 — Boyut
 - [x] `web-panel/.netlify/` git'ten çıkarıldı, `.gitignore`'a eklendi (diskte duruyor)
+- [x] **Netlify tamamen kaldırıldı (2026-10-10, kullanıcı kararı):** barındırma Vercel. Silinenler: `web-panel/netlify.toml`, `web-panel/deno.lock` (`deno.json` yok, yetim Netlify edge kalıntısı), `web-panel/.netlify/` (yeniden üretilen çıktı). Kaldırılan yapılandırma satırları: `web-panel/eslint.config.mjs` (`.netlify/**` ignore), `web-panel/.gitignore` ve kök `.gitignore` (`.netlify/`). `.claude/worktrees/` altındaki eski ajan kopyaları bilinçli olarak dokunulmadı
 - [x] `ortam/` → `docs/arsiv/ortam/` (başka projeye ait kurulum belgeleri)
 - [x] Tek seferlik `tools/` betikleri → `docs/arsiv/tools/` (13 dosya). Kalanlar: `serve.ps1`, `serve-mobile.ps1`, `sql-sozdizim-denetimi.mjs`, `dart-statik-denetim.mjs`, `istemci-rpc-denetimi.ps1`, `soru_bankasi_sql*.mjs`
 - [x] Kök PNG'ler (`kontrol-1..3.png`, `şema-gecici.png`) ve eski notlar (`DENETIM_NOTU.md`, `DURUM.md`, `PHASE0_DURUM_RAPORU.md`, `TEMIZLIK_RAPORU.md`, `Task.md`, `cm.txt`) → `docs/arsiv/`
@@ -382,7 +383,8 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 - [x] `web-panel`: `npm audit --omit=dev` → 0 açık (önce 2 yüksek)
 - [x] `mobile-app`: `flutter pub get` → lock'tan 33 bağımlılık düştü (`build_runner` ve kaldırılan paketlerin geçişli bağımlılıkları)
 - [x] `mobile-app`: `flutter analyze` → No issues found (önce 21 hata; hepsi paketsiz iki dosyadaydı, bkz. 11.5)
-- [ ] `mobile-app`: `flutter test` → 193 geçti, 2 başarısız: `membership_test.dart`, `quiz_quota_test.dart`. Testler `lib/` içinde artık bulunmayan eski metinleri bekliyor (ör. "Premium için velinle konuş.")
+- [x] `mobile-app`: `flutter test` — iki eski test düzeltildi (bkz. 11.7); tam sonuç aşağıda işlenecek
+- [ ] `supabase test db --local` (pgTAP) çalıştırılamadı: Docker yok; ayrıca repodaki `supabase/tests` dosyaları pgTAP formatında değil (özel harness)
 - [x] `tools/sql-sozdizim-denetimi.mjs` → 80 dosya, 0 hata (beş yeni migration dahil)
 - [x] **Kuru test (canlıda `BEGIN … ROLLBACK`, 2026-10-10):** 5 migration hatasız çalıştı; `veli_adaylari` test paketi 12/12 OK; fonksiyon/tablo/politika sayıları canlıyla aynı (265 / 102 / 45); geri alma doğrulandı (ACL ve veri değişmedi). Test senaryo 9'da, tabloyu sahip rolüne geçmeden okuyan bir hata düzeltildi (`authenticated` tabloyu okuyamaz; test kodu hatasıydı)
 - [x] `npm run db:preview` (salt okuma, dry-run) → uzak veritabanına gidecek 4 migration listelendi; uzak geçmiş `20261018020000`'e kadar uygulanmış
@@ -401,16 +403,16 @@ Kararlar bekliyor:
 - Migration konsolidasyonu ve soru seed'leri (karar 7)
 - Uzak Supabase Dashboard ayarları (karar 8)
 - ~~Yeni 5 migration'ın canlıya deploy edilmesi~~ — **yapıldı (2026-10-10)**, bkz. 11.3
-- **Auth bridge (`exchange_auth_bridge_token`, `issue_auth_bridge_token`, `auth_bridge_tokens`):** repoda hiçbir kod kullanmıyor. Kullanılıyor mu? Kullanılmıyorsa anon/authenticated yetkisi kapatılıp tablo kaldırılmalı. Kullanılıyorsa: `exchange` anonim çağrılabiliyor, token 90 saniye geçerli ve tek kullanımlık, ama `access_token`/`refresh_token` tabloda düz metin
+- ~~Auth bridge~~ — **kaldırıldı (2026-10-10, kullanıcı onayı):** `exchange_auth_bridge_token`, `issue_auth_bridge_token` ve `auth_bridge_tokens` silindi (migration `20261021000000`). Canlıda doğrulandı
 - Kolon düzeyi canlı–repo farkı (mevcut tablolar) için tam kontrol (açık teknik borç)
 
 Teknik borç (bu turda bulundu):
 - [x] **Canlı–repo uyuşmazlığı (8 istemci RPC'si):** `20261019000200_carpim_sifreleri_rpc_canli_dokum.sql` — gövdeler canlı `pg_get_functiondef` ile birebir, yetkiler canlı `proacl` ile eşleşiyor. Commit `7543fd5` bunları "SQL Editor'den zaten uygulanmış" gerekçesiyle kaldırmıştı. Canlıda henüz çalıştırılmadı
 - [x] **Kalan canlı–repo uyuşmazlığı:** canlıda olup repoda olmayan 24 fonksiyon, 7 tablo, 7 politika, 4 indeks, 1 trigger → `20261019000300_canli_sema_eksik_nesneler.sql`. Kaynak katalog sorguları (`db dump` Docker gerektirdiği için kullanılmadı). Kolon düzeyinde, repoda zaten olan tabloların farkı **kontrol edilmedi** (açık)
-- [ ] Repoda kalan bilinmeyen: `questions_sinifsiz_yedek` (yedek tablo; RLS açık, politika yok) — silinecek mi, saklanacak mı?
-- [ ] `_uret_meydan_kod()` iç yardımcısı anon ve authenticated'a açık; gerekçesi belirsiz. Kullanılmıyorsa yetkisi kaldırılmalı
+- [x] `questions_sinifsiz_yedek` (yedek tablo) silindi (kullanıcı kararı: her soru sınıflı olmalı; migration `20261021000000`)
+- [x] `_uret_meydan_kod()` anon ve authenticated yetkisi kaldırıldı; yalnızca `create_challenge` (SECURITY DEFINER) kullanıyor (migration `20261021000000`, kullanıcı onayı)
 - [ ] `veli_cocuk_bagla`: 6 haneli kod (10⁶ alan), 15 dakika geçerli; hız sınırı `veli_baglama_hatalari` ile hesap başına. Hesap çoğaltılarak aşılabilir (e-posta onayı kapalıyken); sınır gözden geçirilmeli
-- [ ] İki başarısız test (eski metin beklentileri): ya testi ya da ürün metnini güncelle
+- [x] İki eski test güncellendi (`membership_test.dart`, `quiz_quota_test.dart`): ürün tasarımı değişmiş (ücretsiz kartta ve kota diyaloğunda "Velime mesaj hazırla" düğmesi, TASKS §10), test beklentileri buna göre düzeltildi; ürün kodu değişmedi. `membership_card.dart` doc yorumu güncellendi
 - [ ] `supabase/KURTARMA_DURUMU.md`'deki doğrulama betikleri artık `docs/arsiv/tools/` altında (git dışı)
 
 ### 11.8 Canlı güvenlik denetimi (advisor, 2026-10-10, salt okuma)

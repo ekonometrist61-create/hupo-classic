@@ -5,14 +5,30 @@
 
 ---
 
-## 0. Alt ajan çalıştırma
+## 0. Alt ajan çalıştırma ve token tasarrufu
 
-Bu depoda alt ajan desteği **yoktur**. Her işi, tek ajan olarak sen yapacaksın.
-Karmaşık işleri `todo_list` ile adımlara böl ve ilerlemeyi gerçek zamanlı işaretle.
+### Token tasarrufu — ana ilke
+**Token harcamalarını azaltmak için işleri zorluk/uzmanlık derecesine göre alt modellere devret.**
 
-> İstisna (Claude Code): `.claude/agents/hupo-design-growth-director.md` yalnızca tasarım, UX,
-> pazarlama ve iletişim görevleri için kurulu proje agent'ıdır; kod/güvenlik/backend
-> kurallarını değiştirmez. Ayrıntı: `docs/hupo-design-growth/`.
+| İş türü | Tercih edilen model |
+|----------|-------------------|
+| Tasarım, UX, pazarlama, iletişim | `hupo-design-growth-director` (proje agent'ı) |
+| Geniş kapsamlı keşif, çoklu dosya araştırması | `Explore` subagent (salt okunur, hızlı) |
+| Bağımsız paralel sorgular | `Agent` aracıyla paralel çalıştır |
+| Rutin kod yazma (çeviriler, şablon bileşenler) | Haiku-sınıfı model (alt model) |
+| Mimari karar, güvenlik, karmaşık SQL | Mevcut oturum / Sonnet veya üzeri |
+
+**Devretme kuralları:**
+- Tasarım/UX/metin görevi → `/claude:hupo-design-growth-director` çağır, kodu sen yazma
+- 3'ten fazla dosya gerektiren arama → `Explore` subagent
+- Bağımsız iki iş aynı anda yapılabiliyorsa → tek mesajda iki paralel araç çağrısı
+- Sürüm numarası veya basit çeviri eklemek → minimum token, doğrudan yaz
+- Büyük dosyayı tamamen okumak yerine `Grep` / `offset+limit` kullan
+
+### Alt ajan desteği
+`.claude/agents/hupo-design-growth-director.md` tasarım, UX, pazarlama ve iletişim
+görevleri için kurulu proje agent'ıdır; kod/güvenlik/backend kurallarını değiştirmez.
+Ayrıntı: `docs/hupo-design-growth/`.
 
 ---
 
@@ -49,7 +65,7 @@ yazılmamalı. Bunlar telefondaki APK'dan çıkarıldı, orijinal ürün metinid
 `kurtarilan/strings-*.txt` (5 dökümden 4'ü fazlalık),
 `e.innerText)`, `e.innerText)})`, `proje-okulu-app/`, `reports/`, `research_notes/`
 
-Detaylı gerekçe: `TEMIZLIK_RAPORU.md`
+Detaylı gerekçe: `docs/arsiv/TEMIZLIK_RAPORU.md` (arşiv)
 
 ---
 
