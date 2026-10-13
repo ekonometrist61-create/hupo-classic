@@ -5,6 +5,7 @@ import { BenefitsSection } from "@/components/landing/sections/BenefitsSection";
 import { CharacterUniverseSection } from "@/components/landing/sections/CharacterUniverseSection";
 import { DemoSection } from "@/components/landing/sections/DemoSection";
 import { DenemeExamSection } from "@/components/landing/sections/DenemeExamSection";
+import { ErkenErisimSection } from "@/components/landing/sections/ErkenErisimSection";
 import { FaqSection } from "@/components/landing/sections/FaqSection";
 import { FinalCtaSection } from "@/components/landing/sections/FinalCtaSection";
 import { HeroSection } from "@/components/landing/sections/HeroSection";
@@ -52,6 +53,7 @@ export default async function LandingPage() {
         <DenemeExamSection />
         <PricingSection />
         <TrustSection />
+        <ErkenErisimSection />
         <FaqSection />
         <FinalCtaSection />
       </main>

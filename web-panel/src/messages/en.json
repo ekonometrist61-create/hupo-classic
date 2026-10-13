@@ -333,6 +333,21 @@
       "primary": "Try Free",
       "secondary": "Create parent account"
     },
+    "erkenErisim": {
+      "eyebrow": "Early Access",
+      "title": "Stay in the loop",
+      "desc": "Leave your email and be among the first to hear about new content and plans from Hupolingo.",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email address",
+      "phonePlaceholder": "Phone (optional)",
+      "marketingLabel": "I want to receive campaigns and announcements from Hupolingo by email",
+      "submit": "Notify me",
+      "submitting": "Submitting…",
+      "success": "Thank you! We'll keep you posted.",
+      "errorRequired": "Name and email are required.",
+      "errorEmail": "Please enter a valid email address.",
+      "errorGeneric": "Something went wrong. Please try again."
+    },
     "fontSize": {
       "label": "Text Size",
       "normal": "A",

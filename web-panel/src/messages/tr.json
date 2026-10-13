@@ -332,6 +332,21 @@
       "primary": "Ücretsiz Dene",
       "secondary": "Veli hesabı oluştur"
     },
+    "erkenErisim": {
+      "eyebrow": "Erken Erişim",
+      "title": "Haberdar olun",
+      "desc": "E-posta adresinizi bırakın, Hupolingo'nun yeni içerik ve planlarını ilk öğrenenler arasında olun.",
+      "namePlaceholder": "Adınız",
+      "emailPlaceholder": "E-posta adresiniz",
+      "phonePlaceholder": "Telefon (opsiyonel)",
+      "marketingLabel": "Hupolingo'dan kampanya ve duyuruları e-posta ile almak istiyorum",
+      "submit": "Beni haberdar edin",
+      "submitting": "Gönderiliyor…",
+      "success": "Teşekkürler! Sizi haberdar edeceğiz.",
+      "errorRequired": "Ad ve e-posta alanları zorunludur.",
+      "errorEmail": "Geçerli bir e-posta adresi girin.",
+      "errorGeneric": "Bir hata oluştu. Lütfen tekrar deneyin."
+    },
     "fontSize": {
       "label": "Yazı Boyutu",
       "normal": "A",

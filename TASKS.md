@@ -545,7 +545,7 @@ Dokümanlar: `docs/growth-crm/IMPLEMENTATION_PLAN.md`, `docs/growth-crm/REUSE_EX
 - [x] Admin sayfaları: müşteri-360, müşteri-360/[id], potansiyel-adaylar, potansiyel-adaylar/[id], crm-gorevler, ekip-akisi, satis-hatti, destek-masasi, journey-otomasyonlari, mesaj-sablonlari, growth-analitik, ai-oneriler — `tsc` temiz
 - [ ] Gerçek admin oturumuyla tarayıcı testi yapılmadı
 - [x] Faz B–F derinleştirme: tüm CRM manager bileşenleri yazıldı (`tsc` temiz) — Müşteri 360, Potansiyel Adaylar, Satış Hattı, CRM Görevleri, Ekip Akışı, Destek Masası, Journey, Mesaj Şablonları, Growth Analitik, AI Öneriler
-- [ ] Veli adayları CRM: public web formu + captcha (anon lead yakalama) — Dilim 1 backend yazıldı, test çalıştırılmadı
+- [x] Veli adayları CRM: `ErkenErisimSection` landing'e eklendi; `veli_adayi_olustur` RPC direkt çağrılıyor (kaynak: `landing_erken_erisim`). Captcha CAPTCHA_SECRET eklenince eklenecek (bkz. §12.7)
 
 ## 13. Kelime Evreni entegrasyonu (2026-10-10, branch `feature/kelime-evreni`)
 Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1 başlangıç kodu; ürünün kendisi değil). Eş anlamlı / zıt anlamlı / eş sesli kelime oyunları Öğren sekmesine bağlanır.
