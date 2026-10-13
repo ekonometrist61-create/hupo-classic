@@ -411,7 +411,7 @@ Teknik borç (bu turda bulundu):
 - [x] **Kalan canlı–repo uyuşmazlığı:** canlıda olup repoda olmayan 24 fonksiyon, 7 tablo, 7 politika, 4 indeks, 1 trigger → `20261019000300_canli_sema_eksik_nesneler.sql`. Kaynak katalog sorguları (`db dump` Docker gerektirdiği için kullanılmadı). Kolon düzeyinde, repoda zaten olan tabloların farkı **kontrol edilmedi** (açık)
 - [x] `questions_sinifsiz_yedek` (yedek tablo) silindi (kullanıcı kararı: her soru sınıflı olmalı; migration `20261021000000`)
 - [x] `_uret_meydan_kod()` anon ve authenticated yetkisi kaldırıldı; yalnızca `create_challenge` (SECURITY DEFINER) kullanıyor (migration `20261021000000`, kullanıcı onayı)
-- [ ] `veli_cocuk_bagla`: 6 haneli kod (10⁶ alan), 15 dakika geçerli; hız sınırı `veli_baglama_hatalari` ile hesap başına. Hesap çoğaltılarak aşılabilir (e-posta onayı kapalıyken); sınır gözden geçirilmeli
+- [x] `veli_cocuk_bagla` hız sınırı sıkılaştırıldı: 5/saat → 3/15dk (kod ömrüyle örtüşür, migration `20261025000100`). Hesap çoğaltma riski e-posta onayı açıldığında kalkar (§11.4)
 - [x] İki eski test güncellendi (`membership_test.dart`, `quiz_quota_test.dart`): ürün tasarımı değişmiş (ücretsiz kartta ve kota diyaloğunda "Velime mesaj hazırla" düğmesi, TASKS §10), test beklentileri buna göre düzeltildi; ürün kodu değişmedi. `membership_card.dart` doc yorumu güncellendi
 - [ ] `supabase/KURTARMA_DURUMU.md`'deki doğrulama betikleri artık `docs/arsiv/tools/` altında (git dışı)
 
