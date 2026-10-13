@@ -32,6 +32,7 @@ declare
   v_seg   uuid;
   v_kam   uuid;
   v_anket uuid;
+  v_yuz   uuid;
   v_text  text;
   v_bool  boolean;
   v_gun   timestamptz;
@@ -326,9 +327,9 @@ begin
     perform set_config('request.jwt.claim.sub', v1::text, true);
     v_json := null;
     perform set_config('role', 'authenticated', true);
-    v_json := public.anket_aktif_listem();
-    perform public.anket_yanit_gonder(v_anket, '{"nps1":3,"neden":"Yavaş"}'::jsonb);
-    v_json2 := public.anket_aktif_listem();   -- tekrar gösterim aralığında gizlenmeli
+    v_json := public.anket_aktif_listem('veli_paneli');
+    perform public.anket_yanit_gonder(v_anket, '{"nps1":3,"neden":"Yavaş"}'::jsonb, 'veli_paneli');
+    v_json2 := public.anket_aktif_listem('veli_paneli');   -- tekrar gösterim aralığında gizlenmeli
     perform set_config('role', 'none', true);
     select count(*) into v_int from public.destek_gorevleri where veli_id = v1 and durum = 'acik';
     gecti := exists (select 1 from jsonb_array_elements(v_json) a where (a ->> 'id')::uuid = v_anket)
@@ -342,10 +343,10 @@ begin
     v_int := 0;
     perform set_config('request.jwt.claim.sub', v1::text, true);
     perform set_config('role', 'authenticated', true);
-    begin perform public.anket_yanit_gonder(v_anket, '{"nps1":9}'::jsonb); exception when unique_violation then v_int := v_int + 1; end;
+    begin perform public.anket_yanit_gonder(v_anket, '{"nps1":9}'::jsonb, 'veli_paneli'); exception when unique_violation then v_int := v_int + 1; end;
     perform set_config('request.jwt.claim.sub', v2::text, true);
-    begin perform public.anket_yanit_gonder(v_anket, '{"nps1":11}'::jsonb); exception when invalid_parameter_value then v_int := v_int + 1; end;
-    begin perform public.anket_yanit_gonder(v_anket, '{"uydurma":1}'::jsonb); exception when invalid_parameter_value then v_int := v_int + 1; end;
+    begin perform public.anket_yanit_gonder(v_anket, '{"nps1":11}'::jsonb, 'veli_paneli'); exception when invalid_parameter_value then v_int := v_int + 1; end;
+    begin perform public.anket_yanit_gonder(v_anket, '{"uydurma":1}'::jsonb, 'veli_paneli'); exception when invalid_parameter_value then v_int := v_int + 1; end;
     perform set_config('role', 'none', true);
     gecti := (v_int = 3);
     detay := format('reddedilen=%s/3', v_int);
@@ -362,7 +363,7 @@ begin
     senaryo := 'ANONİM anket: yanıtta veli_id NULL, zaman günü yuvarlanır, DESTEK GÖREVİ üretilmez; 5''ten az yanıtta sonuçlar GİZLİ';
     perform set_config('request.jwt.claim.sub', v2::text, true);
     perform set_config('role', 'authenticated', true);
-    perform public.anket_yanit_gonder(v_id, '{"n":2}'::jsonb);
+    perform public.anket_yanit_gonder(v_id, '{"n":2}'::jsonb, 'veli_paneli');
     perform set_config('role', 'none', true);
     select count(*) into v_int from public.anket_yanitlari
       where anket_id = v_id and veli_id is null and created_at = date_trunc('day', created_at);
@@ -401,6 +402,44 @@ begin
              and v_int = 2;
     detay := format('skor=%s surum=%s', v_json -> 'nps' ->> 'skor', v_int);
     return next;
+
+    no := no + 1;
+    senaryo := 'Yayın yüzeyi: boş/geçersiz yüzey listesi reddedilir; yüzey değişince sürüm artmaz';
+    v_int := 0;
+    begin perform public.admin_anket_kaydet(null, 'Yüzeysiz', false, '[{"id":"n","tur":"nps","baslik":"A"}]'::jsonb, 30, array[]::text[]);
+    exception when invalid_parameter_value then v_int := v_int + 1; end;
+    begin perform public.admin_anket_kaydet(null, 'Kötü yüzey', false, '[{"id":"n","tur":"nps","baslik":"A"}]'::jsonb, 30, array['tv']);
+    exception when invalid_parameter_value then v_int := v_int + 1; end;
+    v_yuz := public.admin_anket_kaydet(null, 'YM yüzey', false, '[{"id":"n","tur":"nps","baslik":"Önerir misiniz?"}]'::jsonb, 30, array['mobil', 'mobil']);
+    perform public.admin_anket_durum(v_yuz, 'yayinda');
+    perform public.admin_anket_kaydet(v_yuz, 'YM yüzey', false, '[{"id":"n","tur":"nps","baslik":"Önerir misiniz?"}]'::jsonb, 30, array['mobil', 'web_app']);
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
+    select surum into v_int2 from public.anketler where id = v_yuz;
+    perform set_config('role', v_prev, true);
+    gecti := (v_int = 2 and v_int2 = 1);
+    detay := format('reddedilen=%s surum=%s', v_int, v_int2);
+    return next;
+
+    no := no + 1;
+    senaryo := 'Yayın yüzeyi: anket yalnız seçili mecrada listelenir/yanıtlanır; başka mecrada P0002, geçersiz mecra 22023; yanıta mecra yazılır';
+    v_int := 0;
+    perform set_config('request.jwt.claim.sub', v1::text, true);
+    v_json  := public.anket_aktif_listem('web_app');
+    v_json2 := public.anket_aktif_listem('web_sitesi');
+    begin perform public.anket_yanit_gonder(v_yuz, '{"n":9}'::jsonb, 'web_sitesi'); exception when no_data_found then v_int := v_int + 1; end;
+    begin perform public.anket_yanit_gonder(v_yuz, '{"n":9}'::jsonb, 'tv'); exception when invalid_parameter_value then v_int := v_int + 1; end;
+    begin perform public.anket_aktif_listem(null); exception when invalid_parameter_value then v_int := v_int + 1; end;
+    perform public.anket_yanit_gonder(v_yuz, '{"n":9}'::jsonb, 'web_app');
+    v_prev := current_setting('role'); perform set_config('role', 'none', true);
+    select count(*) into v_int2 from public.anket_yanitlari where anket_id = v_yuz and yuzey = 'web_app';
+    perform set_config('role', v_prev, true);
+    gecti := exists (select 1 from jsonb_array_elements(v_json) a where (a ->> 'id')::uuid = v_yuz)
+             and not exists (select 1 from jsonb_array_elements(v_json2) a where (a ->> 'id')::uuid = v_yuz)
+             and v_int = 3 and v_int2 = 1;
+    detay := format('reddedilen=%s/3 yanit_yuzey=%s', v_int, v_int2);
+    return next;
+
+    perform set_config('request.jwt.claim.sub', adm::text, true);
 
     -- ---------------------------------------------------------------
     -- F) Otomasyon + analitik + mutabakat

@@ -104,6 +104,10 @@ export interface SurveyQuestion {
   kosul?: { soru_id: string; op: "lte" | "gte" | "eq"; deger: number } | null;
 }
 
+// Anketin gösterildiği mecralar (anketler.yuzeyler ile eşleşir).
+export type SurveySurface = "mobil" | "web_app" | "web_sitesi" | "veli_paneli";
+export const SURVEY_SURFACES: SurveySurface[] = ["mobil", "web_app", "web_sitesi", "veli_paneli"];
+
 export interface Survey {
   id: string;
   ad: string;
@@ -112,6 +116,7 @@ export interface Survey {
   sorular: SurveyQuestion[];
   surum: number;
   tekrar_gosterim_gun: number;
+  yuzeyler: SurveySurface[];
   created_at: string;
   yanit_sayisi: number;
 }

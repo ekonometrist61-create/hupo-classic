@@ -1,5 +1,6 @@
 import { LandingFooter } from "@/components/landing/Footer";
 import { LandingHeader } from "@/components/landing/Header";
+import AnketIstemi from "@/components/anket/AnketIstemi";
 import { AppScreensSection } from "@/components/landing/sections/AppScreensSection";
 import { BenefitsSection } from "@/components/landing/sections/BenefitsSection";
 import { CharacterUniverseSection } from "@/components/landing/sections/CharacterUniverseSection";
@@ -60,6 +61,7 @@ export default async function LandingPage() {
         <FinalCtaSection />
       </main>
 
+      <AnketIstemi yuzey="web_sitesi" />
       <LandingFooter />
     </div>
   );

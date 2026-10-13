@@ -11,7 +11,8 @@ import Feedback from "../ui/Feedback";
 import RpcBoundary from "../ui/RpcBoundary";
 import { adminCall, useAdminRpc } from "../useAdminRpc";
 import { DEMO_SURVEY_RESULT, DEMO_SURVEYS, DEMO_TASKS } from "./demoData";
-import type { QuestionType, Survey, SurveyQuestion, SurveyResult, SupportTask } from "./types";
+import SurfacePicker from "./SurfacePicker";
+import type { QuestionType, Survey, SurveyQuestion, SurveyResult, SurveySurface, SupportTask } from "./types";
 
 const TYPES: QuestionType[] = ["kisa_metin", "uzun_metin", "tek_secim", "nps", "csat", "onay"];
 const STATUS_COLOR = { taslak: "light", yayinda: "success", kapali: "warning" } as const;
@@ -95,6 +96,9 @@ export default function SurveysManager() {
                         {s.anonim ? t("anonymous") : t("identified")}
                       </Badge>
                       <Badge size="sm" color="light">{t("responses", { n: s.yanit_sayisi })}</Badge>
+                      {s.yuzeyler.map((y) => (
+                        <Badge key={y} size="sm" color="light">{t(`surfaceShort.${y}`)}</Badge>
+                      ))}
                     </div>
                     <div className="mt-4 flex flex-wrap gap-3 text-theme-sm font-medium">
                       {s.durum !== "kapali" && (
@@ -194,6 +198,7 @@ function Editor({
   const [error, setError] = useState<string | null>(null);
   const [preview, setPreview] = useState(false);
   const [npsPick, setNpsPick] = useState<Record<string, number | null>>({});
+  const [yuzeyler, setYuzeyler] = useState<SurveySurface[]>(initial?.yuzeyler ?? ["veli_paneli"]);
 
   const lockedAnon = (initial?.yanit_sayisi ?? 0) > 0;
 
@@ -234,6 +239,7 @@ function Editor({
       p_anonim: anonim,
       p_sorular: payload,
       p_tekrar_gun: gun,
+      p_yuzeyler: yuzeyler,
     });
     setBusy(false);
     if (r.error) return setError(r.error === "DEMO" ? t("demo") : r.error);
@@ -264,6 +270,15 @@ function Editor({
           <input id="sv-gun" type="number" min={1} max={365} className={inputClass} value={gun} onChange={(e) => setGun(Number(e.target.value))} />
         </div>
       </div>
+
+      <SurfacePicker
+        value={yuzeyler}
+        onChange={setYuzeyler}
+        legend={t("form.surfaces")}
+        help={t("form.surfacesHelp")}
+        requiredMessage={t("form.surfacesRequired")}
+        surfaceLabel={(y) => t(`surfaces.${y}`)}
+      />
 
       <label className="mt-4 flex items-start gap-2 text-theme-sm">
         <input
@@ -428,7 +443,12 @@ function Editor({
           {preview ? t("form.hidePreview") : t("form.preview")}
         </button>
         <button type="button" className={outlineBtn} onClick={onClose}>{t("form.close")}</button>
-        <button type="button" className={primaryBtn} disabled={busy || ad.trim().length < 2 || sorular.some((q) => !q.baslik.trim())} onClick={save}>
+        <button
+          type="button"
+          className={primaryBtn}
+          disabled={busy || ad.trim().length < 2 || yuzeyler.length === 0 || sorular.some((q) => !q.baslik.trim())}
+          onClick={save}
+        >
           {t("form.save")}
         </button>
       </div>

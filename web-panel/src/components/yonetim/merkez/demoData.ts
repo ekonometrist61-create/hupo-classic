@@ -81,13 +81,13 @@ export const DEMO_SETTINGS: IletisimAyarlari = {
 
 export const DEMO_SURVEYS: Survey[] = [
   {
-    id: "a1", ad: "İlk ay veli deneyimi", anonim: false, durum: "yayinda", surum: 2, tekrar_gosterim_gun: 30, created_at: iso(14), yanit_sayisi: 48,
+    id: "a1", ad: "İlk ay veli deneyimi", anonim: false, durum: "yayinda", surum: 2, tekrar_gosterim_gun: 30, yuzeyler: ["veli_paneli", "mobil"], created_at: iso(14), yanit_sayisi: 48,
     sorular: [
       { id: "nps1", tur: "nps", baslik: "Hupolingo’yu başka bir veliye önerme olasılığınız nedir?" },
       { id: "neden", tur: "uzun_metin", baslik: "Neyi iyileştirebiliriz?", kosul: { soru_id: "nps1", op: "lte", deger: 6 } },
     ],
   },
-  { id: "a2", ad: "İptal nedeni", anonim: true, durum: "taslak", surum: 1, tekrar_gosterim_gun: 90, created_at: iso(3), yanit_sayisi: 0, sorular: [{ id: "q1", tur: "tek_secim", baslik: "Ayrılma nedeniniz?", secenekler: ["Fiyat", "İhtiyaç kalmadı", "Başka uygulama"] }] },
+  { id: "a2", ad: "İptal nedeni", anonim: true, durum: "taslak", surum: 1, tekrar_gosterim_gun: 90, yuzeyler: ["veli_paneli"], created_at: iso(3), yanit_sayisi: 0, sorular: [{ id: "q1", tur: "tek_secim", baslik: "Ayrılma nedeniniz?", secenekler: ["Fiyat", "İhtiyaç kalmadı", "Başka uygulama"] }] },
 ];
 
 export const DEMO_SURVEY_RESULT: SurveyResult = {

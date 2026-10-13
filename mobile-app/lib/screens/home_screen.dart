@@ -21,6 +21,7 @@ import '../widgets/ui/stat_pill.dart';
 import '../widgets/ui/subject_style.dart';
 import '../widgets/splash/home_entrance_stagger.dart';
 import '../models/privacy_models.dart';
+import '../widgets/survey/survey_prompt_card.dart';
 import 'parent_link_screen.dart';
 import 'privacy_notice_screen.dart';
 import 'quiz_screen.dart';
@@ -117,6 +118,11 @@ class HomeScreen extends ConsumerWidget {
           onAction: () => ref.invalidate(profileProvider),
         ),
         data: (p) {
+          // Veli hesabı: anket kartı (aktif anket yoksa hiçbir şey çizilmez) + bilgilendirme.
+          // Anket RPC'leri yalnızca bu dalda izlenir; öğrenci hesabında çağrılmaz.
+          if (p != null && p.role == 'veli') {
+            return _VeliAnaSayfa(onSignOut: repo.signOut);
+          }
           if (p == null || !p.isStudent) {
             return _Message(
               text: 'Bu uygulama yalnızca öğrenci hesapları içindir.',
@@ -834,6 +840,39 @@ class InlineRetry extends StatelessWidget {
             onPressed: onRetry,
             height: 48),
       ],
+    );
+  }
+}
+
+/// Veli hesabının ana ekranı. Öğrenci deneyimi yoktur; yalnızca anket kartı ve çıkış.
+class _VeliAnaSayfa extends StatelessWidget {
+  const _VeliAnaSayfa({required this.onSignOut});
+
+  final VoidCallback onSignOut;
+
+  @override
+  Widget build(BuildContext context) {
+    return SafeArea(
+      child: ListView(
+        padding: const EdgeInsets.fromLTRB(16, 16, 16, 24),
+        children: [
+          const SurveyPromptCard(),
+          const SizedBox(height: 24),
+          Text(
+            'Bu uygulama yalnızca öğrenci hesapları içindir.',
+            textAlign: TextAlign.center,
+            style: appText(size: 17, weight: FontWeight.w700),
+          ),
+          const SizedBox(height: 20),
+          Center(
+            child: ChunkyButton(
+              label: 'Çıkış yap',
+              expanded: false,
+              onPressed: onSignOut,
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

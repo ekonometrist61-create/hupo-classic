@@ -175,6 +175,18 @@
         "empty": "No surveys yet.",
         "meta": "{q} questions · version {v}",
         "status": { "taslak": "Draft", "yayinda": "Live", "kapali": "Closed" },
+        "surfaces": {
+          "mobil": "Mobile app",
+          "web_app": "Web app (app.hupolingo.com)",
+          "web_sitesi": "Website (home page)",
+          "veli_paneli": "Parent panel"
+        },
+        "surfaceShort": {
+          "mobil": "Mobile",
+          "web_app": "Web app",
+          "web_sitesi": "Website",
+          "veli_paneli": "Parent panel"
+        },
         "anonymous": "Anonymous",
         "identified": "Linked to identity",
         "responses": "{n} responses",
@@ -203,6 +215,9 @@
           "anonymous": "Anonymous survey",
           "anonymousHelp": "Responses are not linked to a CRM contact and time is rounded to the day. Cannot be changed once responses exist.",
           "anonymousLocked": "Anonymity cannot be changed because responses exist.",
+          "surfaces": "Publishing surfaces",
+          "surfacesHelp": "The survey is shown only on the selected surfaces. Respondents are logged-in parent accounts; visitors who are not logged in do not see surveys on the website.",
+          "surfacesRequired": "Select at least one publishing surface to save.",
           "type": "Question type",
           "up": "Move up",
           "down": "Move down",

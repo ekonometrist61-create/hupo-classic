@@ -12,7 +12,10 @@ import '../models/mock_exam_models.dart';
 import '../models/models.dart';
 import '../models/privacy_models.dart';
 import '../models/review_models.dart';
+import '../models/survey_models.dart';
 import '../services/quiz_repository.dart';
+import '../services/survey_repository.dart';
+import '../settings/app_settings.dart';
 
 final supabaseProvider =
     Provider<SupabaseClient>((ref) => Supabase.instance.client);
@@ -76,6 +79,29 @@ final consentProvider = FutureProvider.autoDispose<ConsentStatus>(
 /// Oturum açmış kullanıcının kimliği (yoksa null). Testlerde override edilir.
 final currentUserIdProvider = Provider<String?>(
     (ref) => ref.watch(supabaseProvider).auth.currentUser?.id);
+
+// --- Veli anketleri ---
+// YALNIZCA veli ekranı (home_screen veli dalı) bu sağlayıcıları izler; öğrenci
+// hesabında anket RPC'si hiç çağrılmaz.
+
+final surveyRepositoryProvider =
+    Provider<SurveyRepository>((ref) => SurveyRepository(ref.watch(supabaseProvider)));
+
+final surveyDeferralProvider = Provider<SurveyDeferral>(
+    (ref) => SurveyDeferral(ref.watch(sharedPreferencesProvider)));
+
+/// Bu mecrada gösterilecek, ertelenmemiş anketler. Veli değilse boş liste (sessiz).
+final aktifAnketlerProvider = FutureProvider.autoDispose<List<Anket>>((ref) async {
+  final List<Anket> anketler;
+  try {
+    anketler = await ref.watch(surveyRepositoryProvider).aktifAnketler();
+  } on AnketException catch (e) {
+    if (e.hata == AnketHatasi.yetkisiz) return const [];
+    rethrow;
+  }
+  final erteleme = ref.watch(surveyDeferralProvider);
+  return [for (final a in anketler) if (!erteleme.erteleniyorMu(a)) a];
+});
 
 // --- Kurtarılan Provider'lar ---
 

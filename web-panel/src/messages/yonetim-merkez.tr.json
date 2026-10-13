@@ -175,6 +175,18 @@
         "empty": "Henüz anket yok.",
         "meta": "{q} soru · sürüm {v}",
         "status": { "taslak": "Taslak", "yayinda": "Yayında", "kapali": "Kapalı" },
+        "surfaces": {
+          "mobil": "Mobil uygulama",
+          "web_app": "Web uygulaması (app.hupolingo.com)",
+          "web_sitesi": "Web sitesi (ana sayfa)",
+          "veli_paneli": "Veli paneli"
+        },
+        "surfaceShort": {
+          "mobil": "Mobil",
+          "web_app": "Web uygulaması",
+          "web_sitesi": "Web sitesi",
+          "veli_paneli": "Veli paneli"
+        },
         "anonymous": "Anonim",
         "identified": "Kimlikle ilişkili",
         "responses": "{n} yanıt",
@@ -203,6 +215,9 @@
           "anonymous": "Anonim anket",
           "anonymousHelp": "Yanıt CRM kişisiyle ilişkilendirilmez, zaman günü yuvarlanır. Yanıt geldikten sonra değiştirilemez.",
           "anonymousLocked": "Yanıt alındığı için anonimlik değiştirilemez.",
+          "surfaces": "Yayın mecraları",
+          "surfacesHelp": "Anket yalnızca seçili mecralarda gösterilir. Yanıtlayanlar giriş yapmış veli hesaplarıdır; web sitesinde giriş yapmamış ziyaretçilere anket gösterilmez.",
+          "surfacesRequired": "Kaydetmek için en az bir yayın mecrası seçin.",
           "type": "Soru türü",
           "up": "Yukarı taşı",
           "down": "Aşağı taşı",
