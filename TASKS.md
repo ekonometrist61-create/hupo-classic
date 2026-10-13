@@ -587,3 +587,32 @@ Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1 başlangıç k
 - `kelime_oyun_getir` öncelik sorgusu her çağrıda deneme sayısını hesaplar; içerik büyürse indeks/materialize gerekir
 - Ustalık (taninma dışı beceriler) henüz yazılmıyor; kalıcı ustalık raporu bu yüzden boş kalır
 - Branch hijyeni: `feature/kelime-evreni` üzerinde Kelime dışı dört commit var (`8bd52c0`, `11a666e`, `71ff03d`, `78f034d`). Bunlara dokunulmadı. Kelime işini PR'a almadan önce ayrılmalı
+
+## 14. Web sitesi duyuru şeridi (2026-10-13)
+
+Admin'den yönetilebilir ana sayfa duyurusu: başlık, metin (en fazla 500 karakter), yayında/pasif ve isteğe bağlı bitiş tarihi (Türkiye saati).
+
+### 14.1 Kararlar
+- Tek tablo, çoklu duyuru: en yeni aktif ve süresi dolmamış duyuru ana sayfada gösterilir. (karar)
+- Tabloya doğrudan erişim yok; yalnızca RPC'ler (`get_aktif_duyuru`, `admin_list_duyurular`, `admin_save_duyuru`). (karar)
+- Silme yok; duyuru pasife alınarak kapatılır. (karar, kayıt kaybını önlemek için)
+- Süresi dolan duyuru otomatik pasife dönmez; yalnızca gösterilmez. Listede "Süresi doldu" olarak görünür.
+- Hata durumunda (migration yoksa dahil) ana sayfa şerit göstermeden çalışmaya devam eder.
+
+### 14.2 Yapıldı (kod)
+- [x] Migration `supabase/migrations/20261026000000_site_duyurulari.sql`: tablo, RLS (politikasız), 3 RPC, anon/authenticated yetkileri
+- [x] SQL testi `supabase/tests/duyurular_tests.sql`: PGlite üzerinde 13/13 senaryo geçti (stub + require_admin kopyası ile; gerçek Supabase'de değil)
+- [x] Admin sayfası `/yonetim/duyurular` (menü: Büyüme & iletişim) — oluştur, düzenle, yayına al / kaldır
+- [x] Ana sayfa şeridi `DuyuruSeridi` (sunucu bileşeni), `LandingPage` içinde header'ın altında
+- [x] Türkiye saati yardımcıları `components/yonetim/turkiyeTarih.ts` altına taşındı; ayarlar sayfası bunu kullanıyor
+- [x] Çeviriler: `yonetim-panel.{tr,en}.json` (menü/sayfa açıklaması), `{tr,en}.json` → `landing.duyuruSeridi`
+
+### 14.3 Kullanıcı yapacak
+- [x] Uzak veritabanına uygulandı (2026-10-13): `npx supabase db push --include-all`; dry-run yalnızca `20261026000000_site_duyurulari.sql` listeledi. `--include-all` gerekti çünkü uzakta `20261027000000` (Müşteri 360, ayrı çalışma) zaten uygulanmış; yeni dosya ondan bağımsız.
+- [x] Uzak salt-okunur doğrulama: 3 fonksiyon var, `duyurular` 0 satır, anon `get_aktif_duyuru` çalıştırabiliyor, anon `admin_list_duyurular` / `admin_save_duyuru` ve tablo okuma yetkisi yok.
+- [ ] **Anon anahtar uyarısı:** `web-panel/.env.local` içindeki `NEXT_PUBLIC_SUPABASE_ANON_KEY` değeri uzak projede 401 "Invalid API key" döndürüyor. Anahtar döndürülmüş ya da yanlış kopyalanmış olabilir. Bu, ana sayfadaki duyuru şeridini ve `get_deneme_sinavi_tarihi` geri sayımını sessizce etkiler (geri sayım sabit yedek tarihe düşer). Vercel ortam değişkenlerinde anahtarı kontrol et.
+- [ ] Deploy sonrası: admin'de bir duyuru oluştur, ana sayfada göründüğünü ve bitiş tarihi geçince kalktığını doğrula (anahtar sorunu çözülmeden şerit görünmez).
+
+### 14.4 Doğrulanmadı
+- [x] `npx tsc --noEmit` temiz; `npm run lint` 0 hata (16 uyarı, hiçbiri yeni dosyalarda); `npm run build` başarılı, `/yonetim/duyurular` rotası derlendi (2026-10-13)
+- [ ] Tarayıcıda ana sayfa (masaüstü + 390 px) ve admin formu görsel kontrolü (dev sunucu + Supabase bağlantısı gerekir; yapılmadı)

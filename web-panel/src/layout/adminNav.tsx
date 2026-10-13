@@ -65,6 +65,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { key: "musteri360", icon: <GroupIcon />, path: "/yonetim/musteri-360", roles: ADMIN },
       { key: "potansiyelAdaylar", icon: <UserPlus />, path: "/yonetim/potansiyel-adaylar", roles: ADMIN },
       { key: "notifications", icon: <MailIcon />, path: "/yonetim/bildirimler", roles: ADMIN },
+      { key: "duyurular", icon: <PaperPlaneIcon />, path: "/yonetim/duyurular", roles: ADMIN },
       { key: "coupons", icon: <ShootingStarIcon />, path: "/yonetim/kuponlar", roles: ADMIN },
       { key: "segments", icon: <PieChartIcon />, path: "/yonetim/segmentler", roles: ADMIN },
       { key: "campaigns", icon: <PaperPlaneIcon />, path: "/yonetim/kampanyalar", roles: ADMIN },

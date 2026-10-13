@@ -5,6 +5,7 @@ import { BenefitsSection } from "@/components/landing/sections/BenefitsSection";
 import { CharacterUniverseSection } from "@/components/landing/sections/CharacterUniverseSection";
 import { DemoSection } from "@/components/landing/sections/DemoSection";
 import { DenemeExamSection } from "@/components/landing/sections/DenemeExamSection";
+import { DuyuruSeridi } from "@/components/landing/sections/DuyuruSeridi";
 import { ErkenErisimSection } from "@/components/landing/sections/ErkenErisimSection";
 import { FaqSection } from "@/components/landing/sections/FaqSection";
 import { FinalCtaSection } from "@/components/landing/sections/FinalCtaSection";
@@ -39,6 +40,7 @@ export default async function LandingPage() {
       </a>
 
       <LandingHeader />
+      <DuyuruSeridi />
 
       <main id="main">
         <HeroSection />

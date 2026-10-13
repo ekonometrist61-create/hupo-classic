@@ -9,6 +9,10 @@ import {
   inputClass,
   primaryBtn,
 } from "@/components/yonetim/panel/styles";
+import {
+  isoToTurkiyeInput,
+  turkiyeInputToIso,
+} from "@/components/yonetim/turkiyeTarih";
 
 type BakimModu = { aktif: boolean; mesaj: string };
 type MinSurum = { android: string; ios: string; web: string; mesaj: string };
@@ -35,33 +39,6 @@ type AppSettings = {
   desteklenen_siniflar?: DesteklenenSiniflar;
   deneme_sinavi_tarihi?: string;
 };
-
-// Türkiye sabit UTC+3'tür (yaz saati uygulaması yok); tarih girişi bu saate göre yapılır.
-const TURKIYE_SAAT_DILIMI = "Europe/Istanbul";
-const TURKIYE_UTC_OFSETI = "+03:00";
-
-// ISO (UTC) → datetime-local değeri ("2026-11-15T09:00", Türkiye saatiyle)
-function isoToTurkiyeInput(iso: string): string {
-  const d = new Date(iso);
-  if (isNaN(d.getTime())) return "";
-  return new Intl.DateTimeFormat("sv-SE", {
-    timeZone: TURKIYE_SAAT_DILIMI,
-    year: "numeric",
-    month: "2-digit",
-    day: "2-digit",
-    hour: "2-digit",
-    minute: "2-digit",
-    hourCycle: "h23",
-  })
-    .format(d)
-    .replace(" ", "T");
-}
-
-// datetime-local değeri (Türkiye saatiyle) → ISO (UTC); geçersizse null
-function turkiyeInputToIso(local: string): string | null {
-  const d = new Date(`${local}:00${TURKIYE_UTC_OFSETI}`);
-  return isNaN(d.getTime()) ? null : d.toISOString();
-}
 
 function Toggle({
   id,
