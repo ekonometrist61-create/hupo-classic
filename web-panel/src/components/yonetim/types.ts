@@ -130,6 +130,7 @@ export interface MockExamResult {
   bos_sayisi: number;
   sira: number;
   bitis_zamani: string;
+  supheli: boolean;
 }
 
 export type PaymentStatus =
