@@ -14,6 +14,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const migrasyonlar = [
   path.resolve(here, '../../migrations/20261014000000_growth_crm_core.sql'),
   path.resolve(here, '../../migrations/20261027000000_musteri_360_veri_toplama.sql'),
+  path.resolve(here, '../../migrations/20261028000000_growth_web_olaylari.sql'),
 ];
 const testDosyasi = path.join(here, 'testler.sql');
 

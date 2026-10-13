@@ -2,7 +2,8 @@
 
 import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
-import { type FormEvent, useState } from "react";
+import { type FormEvent, useEffect, useState } from "react";
+import { erkenErisimSonrasiIzleme, ilkTemasUtm } from "./erkenErisimIzleme";
 
 const inputClass =
   "w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-navy placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500";
@@ -15,6 +16,11 @@ export function ErkenErisimSection() {
   const [izin, setIzin] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
+
+  // İlk temas UTM'si sayfa açılışında kaydedilir; form gönderilmese de kaybolmaz.
+  useEffect(() => {
+    ilkTemasUtm();
+  }, []);
 
   const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
@@ -48,6 +54,7 @@ export function ErkenErisimSection() {
       setStatus("error");
     } else {
       setStatus("success");
+      void erkenErisimSonrasiIzleme(trimmedEmail);
     }
   };
 

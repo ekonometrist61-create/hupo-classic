@@ -554,7 +554,8 @@ Plan: `docs/growth-crm/VERI_TOPLAMA_PLANI.md`. Sorun: 360 ekranı hazırdı ama 
 - [x] PGlite doğrulaması: `cd supabase/tests/musteri_360; npm install; node kos.mjs` — 11/11 senaryo geçti (taklit şema üzerinde; gerçek şemanın tamamı değil, uzak DB'de çalıştırılmadı)
 - [x] Panel: liste filtreleri (kaynak, kanal izni) + özet kartları yazıldı, `tsc --noEmit` temiz. Tarayıcıda gerçek admin oturumuyla bakılmadı. "Bilinmiyor" kaynak seçeneği arayüzde henüz yok (RPC destekliyor)
 - [x] **Uzak DB'ye uygulandı** (2026-10-13): `20261027000000` tek transaction içinde `supabase db query --linked -f` ile çalıştırıldı, ardından `migration repair --status applied`. `db:deploy` KULLANILMADI (aynı anda duyuru migrasyonu hazırlanıyordu; o dosyaya dokunulmadı). Doğrulama: 1 veli → 1 kart, 2 öğrenci (1'i veliye bağlı → 1 kişi kaydı; bağlı olmayan öğrenciye kart açılmaz), abonelik/ödeme/aday/ön kayıt yok, 5 tetikleyici ve `admin_musteri_360_ozet` mevcut. Duyuru migrasyonu (`20261026000000`) ayrı çalışmada uzağa uygulandı (bkz. §14.3).
-- [ ] V2: uygulamadan olay yakalama + UTM (landing, /ogrenci)
+- [~] V2 (web) — yazıldı, henüz uzakta uygulanmadı: `20261028000000_growth_web_olaylari.sql` (`growth_web_olay_kaydet`, `growth_web_kimlik_bagla`; anonim, beyaz liste, 15 dk pencere), landing'de ilk temas UTM ve form sonrası izleme (`erkenErisimIzleme.ts`). PGlite 15/15 geçti. Tarayıcıda ve uzak DB'de doğrulanmadı (anon anahtar sorunu). Açık risk: iki anonim RPC'de hız sınırı yok (`veli_adayi_olustur` ile aynı açık)
+- [ ] V2 (Flutter / /ogrenci): uygulamadan olay yakalama. Kapsam dışı bu turda
 - [ ] V3: kitle dışa aktarımı (yalnızca `granted`), kampanya/bildirim bağlama
 - [ ] V4: reklam kitlesi (hash'li e-posta, yalnızca açık izinli)
 Kararlar: izin tahmin edilmez (kutu işaretsiz = `denied`; `veli_adaylari.pazarlama_izni=false` = kayıt yok); senkron boş alanı doldurur, admin değerini ezmez; çocuk verisi yalnızca ad + sınıf; ücretsiz (0 kuruş) abonelik = `trial`.

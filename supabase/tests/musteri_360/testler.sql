@@ -29,6 +29,8 @@ declare
   cnt     int;
   cnt2    int;
   h0      int;
+  v_hane14 uuid;
+  v_text2 text;
   h1      int;
   h2      int;
   p0      int;
@@ -268,6 +270,84 @@ begin
      where lower(h.email) = 'izin.korun@example.test';
     gecti := cnt = 1 and cnt2 = 1;
     detay := format('email_granted=%s sms_denied=%s', cnt, cnt2);
+  exception when others then
+    detay := 'HATA: ' || sqlerrm;
+  end;
+  return next;
+
+  -- 12. V2 web: geçersiz ziyaretçi kimliği ve beyaz listede olmayan olay adı reddedilir
+  no := no + 1;
+  senaryo := 'growth_web_olay_kaydet: geçersiz anon id ve olay adı reddedilir';
+  gecti := false; detay := null;
+  begin
+    cnt := 0;
+    begin perform public.growth_web_olay_kaydet('kisa', 'erken_erisim_gonderildi'); exception when invalid_parameter_value then cnt := cnt + 1; end;
+    begin perform public.growth_web_olay_kaydet('vid-abcdefgh', 'serbest_olay'); exception when invalid_parameter_value then cnt := cnt + 1; end;
+    begin perform public.growth_web_olay_kaydet('vid-abc def!', 'erken_erisim_gonderildi'); exception when invalid_parameter_value then cnt := cnt + 1; end;
+    gecti := cnt = 3;
+    detay := format('reddedilen=%s (beklenen 3)', cnt);
+  exception when others then
+    detay := 'HATA: ' || sqlerrm;
+  end;
+  return next;
+
+  -- 13. V2 web: olay kaydedilir, UTM yalnızca beyaz liste alanlarını taşır, source='web'
+  no := no + 1;
+  senaryo := 'growth_web_olay_kaydet: olay source=web, UTM beyaz listeli, PII alanı yok';
+  gecti := false; detay := null;
+  begin
+    perform public.growth_web_olay_kaydet(
+      'vid-test-13-xyz', 'erken_erisim_gonderildi',
+      '{"utm_source":"meta","utm_campaign":"kis_2026","email":"sizinti@example.test","utm_term":"  "}'::jsonb);
+    select count(*) into cnt from public.growth_events where anonymous_id = 'vid-test-13-xyz';
+    select ge.utm::text, ge.source into v_text, v_text2
+      from public.growth_events ge where ge.anonymous_id = 'vid-test-13-xyz' limit 1;
+    gecti := cnt = 1 and v_text2 = 'web' and v_text like '%utm_source%' and v_text not like '%email%' and v_text not like '%utm_term%';
+    detay := format('satir=%s source=%s utm=%s', cnt, v_text2, v_text);
+  exception when others then
+    detay := 'HATA: ' || sqlerrm;
+  end;
+  return next;
+
+  -- 14. V2 web: form sonrası kimlik bağlama; olaylar karta bağlanır, UTM ilk temas olarak karta yazılır, link oluşur
+  no := no + 1;
+  senaryo := 'growth_web_kimlik_bagla: yeni kart + olaylar bağlanır, utm_source ilk temasla dolar, identity link oluşur';
+  gecti := false; detay := null;
+  begin
+    -- Form: aday kaydı (trigger kartı oluşturur) → ziyaretçi olayı → kimlik bağlama
+    insert into public.veli_adaylari (email, ad, kaynak, pazarlama_izni)
+      values ('vid.bagla@example.test', 'Bagla Test', 'landing_erken_erisim', false);
+    perform public.growth_web_olay_kaydet('vid-test-14-bagla', 'erken_erisim_gonderildi',
+      '{"utm_source":"google","utm_medium":"cpc","utm_campaign":"erken_2026"}'::jsonb);
+    perform public.growth_web_kimlik_bagla('vid-test-14-bagla', 'VID.Bagla@example.test');
+
+    select h.id, h.utm_source, h.utm_medium, h.utm_campaign into v_hane14, v_text, v_text2
+      from public.growth_households h where lower(h.email) = 'vid.bagla@example.test';
+    select count(*) into cnt from public.growth_events
+     where anonymous_id = 'vid-test-14-bagla' and household_id = v_hane14;
+    select count(*) into cnt2 from public.growth_identity_links
+     where anonymous_id = 'vid-test-14-bagla' and household_id = v_hane14;
+    gecti := v_hane14 is not null and cnt = 1 and cnt2 = 1
+             and v_text = 'google' and v_text2 = 'cpc';
+    detay := format('kart=%s olay_bagli=%s link=%s utm_source=%s utm_medium=%s',
+                    v_hane14 is not null, cnt, cnt2, v_text, v_text2);
+  exception when others then
+    detay := 'HATA: ' || sqlerrm;
+  end;
+  return next;
+
+  -- 15. Eski kart (15 dakikadan eski) ziyaretçiye bağlanmaz
+  no := no + 1;
+  senaryo := 'growth_web_kimlik_bagla: 15 dakikadan eski karta bağlama yapılmaz';
+  gecti := false; detay := null;
+  begin
+    insert into public.growth_households (parent_name, email, created_at)
+      values ('Eski Kart', 'eski.kart@example.test', now() - interval '2 hours');
+    perform public.growth_web_olay_kaydet('vid-test-15-eski', 'erken_erisim_gonderildi', '{}'::jsonb);
+    perform public.growth_web_kimlik_bagla('vid-test-15-eski', 'eski.kart@example.test');
+    select count(*) into cnt from public.growth_identity_links where anonymous_id = 'vid-test-15-eski';
+    gecti := cnt = 0;
+    detay := format('link=%s (beklenen 0)', cnt);
   exception when others then
     detay := 'HATA: ' || sqlerrm;
   end;
