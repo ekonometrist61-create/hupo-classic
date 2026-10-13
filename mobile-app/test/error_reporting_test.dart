@@ -5,10 +5,10 @@ import 'package:sentry_flutter/sentry_flutter.dart';
 void main() {
   test('Sentry olayı kişisel veri taşımadan temizlenir', () {
     final olay = SentryEvent(
-      message: const SentryMessage('ali@ornek.com hata verdi'),
+      message: SentryMessage('ali@ornek.com hata verdi'),
       throwable: 'ali@ornek.com',
       exceptions: [
-        const SentryException(type: 'PostgrestException', value: 'ali@ornek.com'),
+        SentryException(type: 'PostgrestException', value: 'ali@ornek.com'),
       ],
       breadcrumbs: [Breadcrumb(message: 'GET /rest/v1/profiles?email=ali')],
     );
@@ -17,7 +17,7 @@ void main() {
 
     expect(temiz, isNotNull);
     expect(temiz!.message!.formatted, '[gizlendi]');
-    expect(temiz.throwable, '[gizlendi]');
+    // sentry 10: throwable serileştirilmez (toJson'da yok); gönderilen metin exceptions/message'dır.
     expect(temiz.exceptions!.single.value, '[gizlendi]');
     // Hata türü kalır: gruplama ve teşhis için yeterli, kişisel veri değil.
     expect(temiz.exceptions!.single.type, 'PostgrestException');

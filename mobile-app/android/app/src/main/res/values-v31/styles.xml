@@ -5,6 +5,7 @@
         <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
     </style>
     <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
-        <item name="android:windowBackground">?android:colorBackground</item>
+        <!-- Flutter ilk kareyi çizene kadar marka turkuazı; flaş oluşmaz. -->
+        <item name="android:windowBackground">@color/ic_launcher_background</item>
     </style>
 </resources>

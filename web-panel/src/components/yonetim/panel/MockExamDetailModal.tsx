@@ -310,6 +310,7 @@ function ResultsTab({ examId }: { examId: string }) {
                     <th className={thClass}>{t("resultCols.dogru")}</th>
                     <th className={thClass}>{t("resultCols.yanlis")}</th>
                     <th className={thClass}>{t("resultCols.bos")}</th>
+                    <th className={thClass}>{t("resultCols.supheli")}</th>
                   </tr>
                 </thead>
                 <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
@@ -321,6 +322,17 @@ function ResultsTab({ examId }: { examId: string }) {
                       <td className={tdClass}>{r.dogru_sayisi}</td>
                       <td className={tdClass}>{r.yanlis_sayisi}</td>
                       <td className={tdClass}>{r.bos_sayisi}</td>
+                      <td className={tdClass}>
+                        {r.supheli && (
+                          <span
+                            className="font-semibold text-red-600 dark:text-red-400"
+                            title={t("resultCols.supheli")}
+                            aria-label={t("resultCols.supheli")}
+                          >
+                            ⚠
+                          </span>
+                        )}
+                      </td>
                     </tr>
                   ))}
                 </tbody>

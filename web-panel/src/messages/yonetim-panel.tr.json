@@ -23,6 +23,7 @@
         "classes": "Sınıflar",
         "questions": "Soru bankası",
         "mockExams": "Deneme sınavları",
+        "kelimeEvreni": "Kelime Evreni",
         "notifications": "Bildirimler",
         "coupons": "Kuponlar",
         "segments": "Segmentler",
@@ -56,6 +57,7 @@
         "classes": "Sınıfları ve öğretmen atamalarını yönetin.",
         "questions": "Soru bankası için kontrollü içerik, onay ve toplu yükleme.",
         "mockExams": "Deneme sınavlarını tanımla, sorularını ata ve sonuçları izle.",
+        "kelimeEvreni": "Kelime oyunlarının sorularını hazırla, incele ve yayınla; sözcük ilişkilerini onayla.",
         "notifications": "Uygulama içi bildirimleri veli ve öğrencilere gönderin.",
         "coupons": "Kuponlar ve kampanya kodlarını oluşturun, etkinleştirin.",
         "payments": "Ödeme kayıtları, durumları ve iadeler için tek kayıt noktası.",
@@ -148,6 +150,129 @@
         "change": "Değiştir"
       }
     },
+    "kelimeEvreni": {
+      "title": "Kelime Evreni",
+      "loading": "Yükleniyor…",
+      "new": "Yeni soru",
+      "filtre": "Durum",
+      "tumu": "Tümü",
+      "toplam": "Toplam {sayi} soru",
+      "empty": "Bu filtrede soru yok.",
+      "sinifKisa": "sınıf",
+      "sinirUyari": "Yalnızca en yeni {limit} soru gösteriliyor. Filtreyle daraltın.",
+      "son7Gun": "Son 7 gün: {deneme} deneme, {ogrenci} öğrenci",
+      "oranlar": "Doğru oranı {dogru}% · İpucusuz doğru {ipucusuz}% · İpucu kullanımı {ipucu}%",
+      "durumlar": {
+        "taslak": "Taslak",
+        "incelemede": "İncelemede",
+        "yayinda": "Yayında",
+        "arsiv": "Arşiv"
+      },
+      "turler": {
+        "es_anlamli": "Anlam Köprüleri · eş anlamlı",
+        "zit_anlamli": "Zıtlık Vadisi · zıt anlamlı",
+        "es_sesli": "Aynalar Ormanı · eş sesli"
+      },
+      "cols": {
+        "kelime": "Kelime",
+        "tur": "Oyun",
+        "sinif": "Sınıf",
+        "soru": "Soru",
+        "durum": "Durum",
+        "islem": "İşlem"
+      },
+      "actions": {
+        "duzenle": "Düzenle",
+        "incelemeye": "İncelemeye gönder",
+        "yayinla": "Yayınla",
+        "geriAl": "Taslağa al",
+        "arsivle": "Arşivle (öğrencilere görünmez)",
+        "yayinOnay": "Bu soru öğrencilere görünür olacak. Yayınlansın mı?",
+        "geriYukle": "Geri yükle"
+      },
+      "form": {
+        "yeni": "Yeni soru taslağı",
+        "duzenle": "Soruyu düzenle",
+        "anlam": "Hedef anlam",
+        "anlamSec": "Anlam seçin",
+        "anlamGerekli": "Hedef anlamı seçin.",
+        "oyunTuru": "Oyun türü",
+        "sinif": "Sınıf",
+        "zorluk": "Zorluk",
+        "zorlukSecenek": "{z}. kademe · {xp} XP",
+        "kazanim": "Kazanım kodu (isteğe bağlı)",
+        "soru": "Soru metni",
+        "sorugerekli": "Soru metni en az 5 karakter olmalı.",
+        "secenekler": "Şıklar (2–4). Doğru şıkkın yanındaki daireyi işaretleyin.",
+        "dogruSecenek": "{no}. şık doğru",
+        "secenekNo": "{no}. şık",
+        "secenekBos": "Tüm şıkları doldurun.",
+        "secenekSil": "Şıkkı sil",
+        "secenekEkle": "Şık ekle",
+        "dogruAciklama": "Yanlış şıklar sınıf düzeyine uygun ve birbirinden farklı olmalı.",
+        "dogruAnlam": "Doğru şıkkın anlamı (isteğe bağlı)",
+        "yok": "Yok",
+        "ipucu": "İpucu (isteğe bağlı)",
+        "aciklama": "Cevap sonrası açıklama",
+        "aciklamaGerekli": "Açıklama en az 5 karakter olmalı.",
+        "kaydet": "Taslağı kaydet",
+        "kaydediliyor": "Kaydediliyor…",
+        "vazgec": "Vazgeç"
+      },
+      "sozluk": {
+        "baslik": "Sözcük envanteri ve ilişkiler",
+        "anlamBaslik": "Yeni anlam ekle",
+        "kelime": "Kelime",
+        "anlam": "Anlam",
+        "sozcukTuru": "Sözcük türü",
+        "anlamEkle": "Anlamı ekle",
+        "turler": {
+          "isim": "İsim",
+          "sifat": "Sıfat",
+          "fiil": "Fiil",
+          "zarf": "Zarf",
+          "baglac": "Bağlaç",
+          "diger": "Diğer"
+        },
+        "iliskiBaslik": "İlişki öner",
+        "kaynak": "Kaynak anlam",
+        "hedef": "Hedef anlam",
+        "iliskiTuru": "İlişki türü",
+        "iliskiOner": "İlişkiyi öner",
+        "seciniz": "Seçiniz",
+        "eksik": "Kelime ve anlam bilgisini girin.",
+        "iliskiEksik": "Farklı iki anlam seçin.",
+        "anlamEklendi": "Anlam eklendi.",
+        "iliskiEklendi": "İlişki önerildi. Onay bekliyor.",
+        "iliskiOnaylandi": "İlişki onaylandı.",
+        "iliskiYok": "Henüz ilişki önerilmedi.",
+        "tablo": {
+          "iliski": "İlişki",
+          "tur": "Tür",
+          "durum": "Onay",
+          "islem": "İşlem"
+        },
+        "onayli": "Onaylı",
+        "onayBekliyor": "Onay bekliyor",
+        "onayla": "Onayla"
+      },
+      "hatalar": {
+        "DORT_GOZ": "Kendi kaydınızı onaylayamazsınız; başka bir yönetici onaylamalı.",
+        "ILISKI_ONAYSIZ": "Doğru şıkla ilgili sözcük ilişkisi henüz onaylı değil. Önce ilişkiyi onaylayın.",
+        "GECERSIZ_GECIS": "Bu durum değişikliği yapılamaz.",
+        "DUZENLENEMEZ": "Yayındaki veya arşivdeki soru düzenlenemez.",
+        "SECENEK_TEKRARI": "Şıklar birbirinden farklı olmalı.",
+        "BAD_SECENEK_SAYISI": "Soruda 2 ile 4 arasında şık olmalı.",
+        "BAD_SECENEK": "Şıklar boş olamaz ve metin olmalı.",
+        "BAD_DOGRU_INDEKS": "Doğru şıkkı işaretleyin.",
+        "BAD_ZORLUK": "Zorluk 1, 2 veya 3 olmalı.",
+        "SORU_BULUNAMADI": "Soru bulunamadı. Sayfayı yenileyin.",
+        "ANLAM_BULUNAMADI": "Anlam bulunamadı. Sayfayı yenileyin.",
+        "ILISKI_BULUNAMADI": "İlişki bulunamadı. Sayfayı yenileyin.",
+        "ADMIN_ONLY": "Bu işlem için yönetici yetkisi gerekir.",
+        "genel": "İşlem tamamlanamadı. Bilgileri kontrol edip tekrar deneyin."
+      }
+    },
     "mockExams": {
       "title": "Deneme sınavları",
       "new": "Yeni sınav",
@@ -213,7 +338,8 @@
           "puan": "Puan",
           "dogru": "Doğru",
           "yanlis": "Yanlış",
-          "bos": "Boş"
+          "bos": "Boş",
+          "supheli": "Şüpheli"
         }
       }
     },

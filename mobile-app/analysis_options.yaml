@@ -7,6 +7,11 @@ analyzer:
     # build_runner ürettiği dosyalar — lint kapsamı dışı
     - "**/*.g.dart"
     - "**/*.freezed.dart"
+    # Paketleri (google_mobile_ads, firebase_*) pubspec'te olmayan, hiçbir yerden
+    # import edilmeyen iki dosya. Silinmedi; Firebase / AdMob kurulunca geri alınır
+    # (TASKS.md §11.5, karar: analiz dışına al).
+    - lib/ads/student_banner_ad.dart
+    - lib/services/push/push_backend_firebase.dart
 
 include: package:flutter_lints/flutter.yaml
 

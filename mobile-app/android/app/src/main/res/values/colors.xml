@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Hupo ikonunun mavi zemini (açılış ekranı rengi) -->
-    <color name="ic_launcher_background">#25AAF1</color>
+    <!-- Hupolingo marka turkuazı: Android sistem splash zemini.
+         Uygulama içi açılış sahnesinin zeminiyle BİREBİR aynıdır; böylece
+         sistem splash'inden uygulamaya geçişte renk sıçraması olmaz. -->
+    <color name="ic_launcher_background">#147D8A</color>
+    <!-- Sistem splash ikonunun arka planı (Android 12+), zeminle uyumlu. -->
+    <color name="splash_background">#147D8A</color>
 </resources>

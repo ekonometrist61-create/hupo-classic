@@ -39,14 +39,15 @@ begin
 
     -- 1
     no := no + 1;
-    senaryo := 'Anon ziyaretçi lead oluşturur: yeni=true, kayıt yazılır';
+    senaryo := 'Anon ziyaretçi lead oluşturur: yanıt {ok:true} (e-posta varlığı söylenmez), kayıt yazılır';
     perform set_config('role', 'anon', true);
     v_json := public.veli_adayi_olustur('Ayse@Example.test', '  Ayşe Veli  ', '0555 111 22 33', 'landing', true);
     perform set_config('role', 'none', true);
     select email || '/' || ad || '/' || kaynak || '/' || pazarlama_izni::text || '/' || (izin_at is not null)::text
       into v_text from public.veli_adaylari where email = 'ayse@example.test';
-    gecti := (v_json ->> 'yeni')::boolean = true
+    gecti := v_json = jsonb_build_object('ok', true)
              and v_text = 'ayse@example.test/Ayşe Veli/landing/true/true';
+    detay := v_json::text || ' | ' || v_text;
     detay := v_text;
     return next;
 
@@ -65,15 +66,15 @@ begin
 
     -- 3
     no := no + 1;
-    senaryo := 'Aynı e-posta tekrar gelince tekilleşir (upsert): yeni=false, guncellendi olayı';
+    senaryo := 'Aynı e-posta tekrar gelince tekilleşir: yanıt aynı {ok:true}, ad KORUNUR, onay GERİ ALINMAZ, guncellendi olayı';
     perform set_config('role', 'anon', true);
     v_json := public.veli_adayi_olustur('ayse@example.test', 'Ayşe Yeni Ad', null, 'web_form', false);
     perform set_config('role', 'none', true);
     select count(*) into v_int from public.veli_adaylari where email = 'ayse@example.test';
     select ad || '/' || pazarlama_izni::text into v_text from public.veli_adaylari where email = 'ayse@example.test';
-    gecti := (v_json ->> 'yeni')::boolean = false
+    gecti := v_json = jsonb_build_object('ok', true)   -- yeni/var-yok bilgisi sızmaz
              and v_int = 1                          -- tek kayıt
-             and v_text = 'Ayşe Yeni Ad/true'       -- ad tazelendi, onay geri ALINMADI
+             and v_text = 'Ayşe Veli/true'          -- ad anonim çağrıyla DEĞİŞMEDİ, onay geri ALINMADI
              and exists (select 1 from public.olay_kutusu where tur = 'veli_adayi_guncellendi');
     detay := format('adet=%s, %s', v_int, v_text);
     return next;
@@ -148,7 +149,10 @@ begin
     -- 9
     no := no + 1;
     senaryo := 'admin_veli_adayi_asama: aşamayı değiştirir, not yazar, outbox + audit kaydı oluşur';
+    -- authenticated rolü veli_adaylari'nı okuyamaz (fail-closed); önce sahip rolüne geç
+    perform set_config('role', 'none', true);
     select id into v_id from public.veli_adaylari where email = 'ayse@example.test';
+    perform set_config('role', 'authenticated', true);
     perform public.admin_veli_adayi_asama(v_id, 'deneme', 'Telefonda ilgilendi');
     perform set_config('role', 'none', true);
     select asama || '/' || notlar into v_text from public.veli_adaylari where id = v_id;

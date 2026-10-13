@@ -16,20 +16,39 @@ import 'learn_screen.dart';
 import 'profile_screen.dart';
 
 class _Sekme {
-  const _Sekme(this.etiket, this.simge, this.seciliSimge);
+  const _Sekme(this.etiket, this.asset);
 
   final String etiket;
-  final IconData simge;
-  final IconData seciliSimge;
+  final String asset;
 }
 
 const _sekmeler = [
-  _Sekme('Ana Sayfa', Icons.home_outlined, Icons.home_rounded),
-  _Sekme('Öğren', Icons.menu_book_outlined, Icons.menu_book_rounded),
-  _Sekme('Arena', Icons.sports_esports_outlined, Icons.sports_esports_rounded),
-  _Sekme('Koleksiyon', Icons.shield_outlined, Icons.shield_rounded),
-  _Sekme('Profil', Icons.person_outline_rounded, Icons.person_rounded),
+  _Sekme('Ana Sayfa', 'assets/nav/ana_sayfa.png'),
+  _Sekme('Öğren', 'assets/nav/ogren.png'),
+  _Sekme('Arena', 'assets/nav/arena.png'),
+  _Sekme('Koleksiyon', 'assets/nav/koleksiyon.png'),
+  _Sekme('Profil', 'assets/nav/profil.png'),
 ];
+
+/// Sekme ikonu: özel PNG; seçili değilse yarı saydam.
+class _NavIkon extends StatelessWidget {
+  const _NavIkon({required this.asset, required this.secili});
+
+  final String asset;
+  final bool secili;
+
+  @override
+  Widget build(BuildContext context) {
+    return Opacity(
+      opacity: secili ? 1.0 : 0.5,
+      child: Image.asset(
+        asset,
+        width: 30,
+        height: 30,
+      ),
+    );
+  }
+}
 
 class RootShell extends ConsumerStatefulWidget {
   const RootShell({super.key});
@@ -85,8 +104,8 @@ class _RootShellState extends ConsumerState<RootShell> {
       destinations: [
         for (final s in _sekmeler)
           NavigationRailDestination(
-            icon: Icon(s.simge),
-            selectedIcon: Icon(s.seciliSimge),
+            icon: _NavIkon(asset: s.asset, secili: false),
+            selectedIcon: _NavIkon(asset: s.asset, secili: true),
             label: Text(s.etiket),
           ),
       ],
@@ -130,9 +149,8 @@ class _RootShellState extends ConsumerState<RootShell> {
                 destinations: [
                   for (final s in _sekmeler)
                     NavigationDestination(
-                      icon: Icon(s.simge),
-                      selectedIcon:
-                          Icon(s.seciliSimge, color: AppColors.primary),
+                      icon: _NavIkon(asset: s.asset, secili: false),
+                      selectedIcon: _NavIkon(asset: s.asset, secili: true),
                       label: s.etiket,
                     ),
                 ],

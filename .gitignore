@@ -1,7 +1,7 @@
 # =====================================================================
 #  Öğrenci Hazırlık (Hupo) — kök .gitignore
 #  Kural: elle yazılan kaynak commit edilir; üretilen, kurtarma kanıtı ve
-#  sırlar commit EDİLMEZ. (Bkz. AGENTS.md §2, §5 ve TEMIZLIK_RAPORU.md §6)
+#  sırlar commit EDİLMEZ. (Bkz. AGENTS.md §2, §5 ve docs/arsiv/TEMIZLIK_RAPORU.md §6)
 # =====================================================================
 
 # --- Bağımlılıklar / üretilen çıktılar (yeniden üretilir) ---
@@ -43,6 +43,15 @@ supabase/.temp/
 .DS_Store
 Thumbs.db
 
-# --- Yanlış yönlendirmeyle oluşmuş dosyalar (TEMIZLIK_RAPORU.md §3) ---
+# --- Yanlış yönlendirmeyle oluşmuş dosyalar (docs/arsiv/TEMIZLIK_RAPORU.md §3) ---
 e.innerText)
 e.innerText)})
+
+# --- Arşiv: git dışında tutulur, disk üzerinde saklanır (TASKS.md §11.5) ---
+docs/arsiv/
+
+# --- Üretilen web çıktıları ve kopyalar ---
+# Karakter görselleri mobile-app/assets/characters'tan build öncesi kopyalanır
+# (web-panel/scripts/sync-karakterler.mjs). Kaynak tek yerde tutulur.
+web-panel/public/characters/
+.vercel

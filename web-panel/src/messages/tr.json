@@ -1844,6 +1844,32 @@
       "teslim_sure_doldu": "Süre dolunca teslim edildi",
       "teslim_otomatik": "Teslim edilmedi; süre sonunda cevaplar otomatik kaydedildi"
     },
+    "kelime": {
+      "baslik": "Kelime gelişimi",
+      "yukleniyor": "Kelime gelişimi yükleniyor…",
+      "hata": "Kelime gelişimi şu an yüklenemedi. Birazdan tekrar deneyin.",
+      "tekrar": "Tekrar dene",
+      "bos": "Henüz kelime oyunu oynanmadı. Öğren sekmesindeki Kelime Evreni ile başlayabilir.",
+      "denemeSayisi": "Toplam deneme",
+      "dogruOrani": "Doğru oranı",
+      "ipucusuzDogru": "İpucusuz doğru",
+      "tekrarBekleyen": "Tekrar bekleyen",
+      "oneriBaslik": "Önerilen çalışma",
+      "oneri": {
+        "tekrar_bekleyen": "{sayi} kelimenin tekrar zamanı geldi. Kısa bir tekrar yeterli.",
+        "zorlanilan_tekrar": "Zorlandığı kelimeleri birlikte gözden geçirin.",
+        "haftalik_calisma_yok": "Bu hafta henüz kelime oyunu oynanmadı. Kısa bir oturum yeterli.",
+        "devam": "Düzenli çalışma sürüyor."
+      },
+      "zorlanilanBaslik": "Zorlandığı kelimeler",
+      "yanlis": "{sayi} kez zorlandı",
+      "iliski": {
+        "es_anlamli": "eş anlamlı",
+        "zit_anlamli": "zıt anlamlı",
+        "es_sesli": "eş sesli"
+      },
+      "gizlilik": "Bu veriler toplu sonuçlardır; çocuğun tek tek cevapları gösterilmez."
+    },
     "denemeKaydi": {
       "loading": "Yaklaşan sınavlar yükleniyor...",
       "title": "Yaklaşan Deneme Sınavları",

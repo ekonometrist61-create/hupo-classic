@@ -110,7 +110,7 @@ Tam döküm: `kurtarilan/KURTARMA_RAPORU.md` bölüm 4.
 | **`.next/` ve `node_modules/`** | Yeniden üretilebilir, 1 GB. Silinebilir. |
 | **İki ayrı proje kopyası var** | `Desktop\Fırsat Bulucu-Ürün Geliştirme` bu klasörün **birebir aynısı** (59/59 dosya doğrulandı). Silinebilir. |
 | `e.innerText)` ve `e.innerText)})` | Yanlış adla oluşmuş dosyalar (muhtemelen terminal çıktısı). Silinebilir. |
-| `tools/unzip*.{ps1,js}` | Flutter SDK çıkarma araçları, tek seferlik. |
+| `docs/arsiv/tools/unzip*` | Flutter SDK çıkarma araçları, tek seferlik; arşivlendi. |
 | **`supabase/config.toml` yok** | `proje-okulu-app/supabase/config.toml` var. Ana klasöre taşınmalı veya silinmeli. |
 
 ---
@@ -211,8 +211,7 @@ Dart parantez/import denetimi, web lint, TypeScript ve production build.
 Fırsat Bulucu-Ürün Geliştirme/
 ├── MASTER_BRIEF.md          ← bu dosya
 ├── AGENTS.md                ← ajan kuralları
-├── TEMIZLIK_RAPORU.md       ← silinecekler
-├── DURUM.md                 ← eski oturum notu
+├── docs/arsiv/              ← eski notlar, tek seferlik araçlar (git dışı)
 ├── mobile-app/              Flutter uygulama
 │   ├── lib/                 59 dosya (22'si eksik)
 │   └── assets/              23 hupo PNG, 4 lottie, 2 font

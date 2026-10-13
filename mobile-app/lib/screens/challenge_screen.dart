@@ -8,13 +8,24 @@ import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/challenge_models.dart';
+import '../models/kelime_models.dart';
 import '../models/models.dart';
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
+import 'kelime/kelime_tema.dart';
 
 const String _baslik = 'Arkadaşına Meydan Oku';
+const String _mesajYetersizSoru = 'Bu tür için yeterli soru yok. Başka bir tür dene.';
+const String _mesajOlusturulamadi = 'Meydan okuma oluşturulamadı. Tekrar dene.';
+
+/// Kelime türü seçimi. [tur] null ise üç tür karışık.
+class _KelimeSecimi {
+  const _KelimeSecimi(this.tur);
+
+  final KelimeIliskiTuru? tur;
+}
 
 // =====================================================================
 // ChallengeHubScreen: Oluştur veya Katıl
@@ -83,6 +94,59 @@ class _ChallengeHubScreenState extends ConsumerState<ChallengeHubScreen> {
     }
   }
 
+  Future<void> _olusturKelime() async {
+    final secim = await showModalBottomSheet<_KelimeSecimi>(
+      context: context,
+      showDragHandle: true,
+      builder: (ctx) => SafeArea(
+        child: Column(
+          mainAxisSize: MainAxisSize.min,
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            Padding(
+              padding: const EdgeInsets.fromLTRB(20, 4, 20, 12),
+              child: Text('Hangi kelime oyunu?', style: appText(size: 18, weight: FontWeight.w900)),
+            ),
+            ListTile(
+              leading: const Icon(Icons.shuffle_rounded, color: AppColors.primary),
+              title: Text('Karışık', style: appText(weight: FontWeight.w800)),
+              subtitle: const Text('Üç oyun türünden birlikte'),
+              onTap: () => Navigator.of(ctx).pop(const _KelimeSecimi(null)),
+            ),
+            for (final tur in KelimeIliskiTuru.values)
+              ListTile(
+                leading: Icon(tur.simge, color: tur.renk),
+                title: Text(tur.baslik, style: appText(weight: FontWeight.w800)),
+                subtitle: Text(tur.hedef),
+                onTap: () => Navigator.of(ctx).pop(_KelimeSecimi(tur)),
+              ),
+            const SizedBox(height: 12),
+          ],
+        ),
+      ),
+    );
+    if (secim == null || !mounted) return;
+
+    setState(() => _yukleniyor = true);
+    try {
+      final session = await ref
+          .read(quizRepositoryProvider)
+          .createKelimeChallenge(iliskiTuru: secim.tur?.veritabani);
+      if (mounted) {
+        await Navigator.of(context).push(MaterialPageRoute(
+          builder: (_) => ChallengeWaitScreen(session: session),
+        ));
+      }
+    } catch (e) {
+      if (mounted) {
+        final mesaj = e.toString().contains('Yeterli soru') ? _mesajYetersizSoru : _mesajOlusturulamadi;
+        ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(mesaj)));
+      }
+    } finally {
+      if (mounted) setState(() => _yukleniyor = false);
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -123,6 +187,19 @@ class _ChallengeHubScreenState extends ConsumerState<ChallengeHubScreen> {
                               padding: const EdgeInsets.symmetric(vertical: 14),
                             ),
                           ),
+                  ),
+                  const SizedBox(height: 12),
+                  SizedBox(
+                    width: double.infinity,
+                    child: OutlinedButton.icon(
+                      onPressed: _yukleniyor ? null : _olusturKelime,
+                      icon: const Icon(Icons.public_rounded),
+                      label: const Text('Kelime Evreni ile Meydan Oku'),
+                      style: OutlinedButton.styleFrom(
+                        padding: const EdgeInsets.symmetric(vertical: 14),
+                        side: const BorderSide(color: AppColors.primary),
+                      ),
+                    ),
                   ),
                   const SizedBox(height: 24),
                   const _Ayrac(metin: 'veya arkadaşının kodunu gir'),
@@ -755,7 +832,9 @@ class _Ust extends StatelessWidget {
               onPressed: () => Navigator.of(context).pop(),
               icon: const Icon(Icons.arrow_back_rounded, color: Colors.white, size: 26),
             ),
-            Text(_baslik, style: appText(size: 20, weight: FontWeight.w900, color: Colors.white)),
+            Expanded(
+              child: Text(_baslik, style: appText(size: 20, weight: FontWeight.w900, color: Colors.white)),
+            ),
           ],
         ),
       ),
@@ -773,9 +852,16 @@ class _Ayrac extends StatelessWidget {
     return Row(
       children: [
         const Expanded(child: Divider()),
-        Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 12),
-          child: Text(metin, style: appText(size: 12, color: AppColors.muted)),
+        Flexible(
+          flex: 3,
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 12),
+            child: Text(
+              metin,
+              textAlign: TextAlign.center,
+              style: appText(size: 12, color: AppColors.muted),
+            ),
+          ),
         ),
         const Expanded(child: Divider()),
       ],

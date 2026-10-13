@@ -1,6 +1,6 @@
-# AGENTS.md — TailAdmin Pro
+# AGENTS.md — Hupolingo Web Panel
 
-> Next.js admin dashboard template · Tailwind CSS v4 · next-intl · ApexCharts · FullCalendar · Swiper
+> Next.js · Tailwind CSS v4 · next-intl · Recharts · Supabase
 
 ## Repo Map
 
@@ -13,11 +13,10 @@ src/
 ├── app/                      # routes (Next.js App Router)
 │   ├── [locale]/             # localized routes (next-intl)
 │   │   ├── (admin)/          # dashboard shell (sidebar+header via src/layout)
-│   │   │   ├── (home)/       # dashboard variants, e.g. analytics/, crm/, sales/
-│   │   │   ├── (others-pages)/ # feature pages, e.g. calendar/, chat/, (forms)/
-│   │   │   └── (ui-elements)/ # component demo pages (alerts, buttons, modals…)
-│   │   ├── (full-width-pages)/ # no dashboard shell, e.g. (auth)/, coming-soon/
-│   │   ├── (layouts-example)/ # sidebar layout variants (layout-one … six)
+│   │   │   ├── yonetim/      # admin panel
+│   │   │   └── veli-paneli/  # parent panel
+│   │   ├── (student)/        # student area (ogrenci/)
+│   │   ├── (full-width-pages)/ # no dashboard shell, e.g. (auth)/, demo/, gizlilik/
 │   │   └── layout.tsx, not-found.tsx
 │   ├── favicon.ico, globals.css
 ├── components/
@@ -49,7 +48,7 @@ src/
 - **New page** → add a folder under the matching `src/app/[locale]/(...)/` group; colocate route-only components there. Never place pages outside `[locale]`.
 - **New reusable component** → `components/<feature>/` if domain-specific, else `components/common/` or `components/ui/`.
 - **New icon** → drop the `.svg` in `icons/`, export it from the `index.tsx` barrel with a PascalCase name. Never inline SVG markup in components.
-- Route groups: `(admin)` is the only group with the sidebar/header shell; `(full-width-pages)` renders pages without chrome; `(layouts-example)` holds alternative sidebar layouts.
+- Route groups: `(admin)` is the only group with the sidebar/header shell; `(full-width-pages)` renders pages without chrome; `(student)` holds the student area.
 - Component files are **PascalCase** (`MonthlySalesChart.tsx`) with a **default export**; route files stay lowercase (`page.tsx`, `layout.tsx`); hooks are camelCase (`useModal.ts`).
 - Root `app/[locale]/layout.tsx` is a Server Component setting up `NextIntlClientProvider`, fonts, direction (`dir="ltr"|"rtl"`), and providers. The `(admin)` shell layout and interactive UI are Client Components — add `"use client"` whenever using hooks, event handlers, or browser APIs.
 - Import via the alias (`@/context/...`, `@/icons/...`, `@/i18n/...`) for cross-folder imports; relative imports are fine within a feature folder.
@@ -89,17 +88,17 @@ src/
     - Off-canvas drawers and sliding elements must mirror their translation (e.g., `-translate-x-full rtl:translate-x-full`).
     - Use `ltr:*` and `rtl:*` modifiers when explicit directional overrides or third-party integration styles are required.
 - Reusable `@utility` classes already exist in `globals.css` (`menu-item-*`, `menu-dropdown-*`, `custom-scrollbar`, `no-scrollbar`, `docs-menu-item-*`, `nav-icon-item-*`, …) — reuse them before inventing new ones.
-- All third-party CSS overrides (ApexCharts, FullCalendar, Swiper, flatpickr, jvectormap, simplebar, Prism) live at the bottom of `globals.css`. Add overrides there, matching the existing `@apply` style.
-- Never hardcode hex colors in `className`. (Chart option objects like `ApexOptions.colors` are the established exception — copy hex values from the `@theme` palette, e.g. `#465fff` = brand-500.)
+- All third-party CSS overrides (flatpickr, jvectormap, simplebar, Prism) live at the bottom of `globals.css`. Add overrides there, matching the existing `@apply` style.
+- Never hardcode hex colors in `className`. (Recharts props such as `stroke` / `fill` are the established exception — copy hex values from the `@theme` palette, e.g. `#465fff` = brand-500.)
 
 ## Component rules
 
 - **One feature, one folder**: new page UI goes in `src/components/<feature>/`, split into focused single-responsibility sub-components (e.g. `EcommerceMetrics.tsx`, `RecentOrders.tsx`) — never one monolithic file.
 - **Composition over prop drilling**: pass `children`, keep container/state logic separate from presentational components, extract section-level JSX into its own file, and define explicit typed prop interfaces per sub-component.
 - Prefer primitives from `src/components/ui/` and `src/components/form/` over raw HTML or new third-party equivalents.
-- Wrap demo/page sections in `ComponentCard` and add `PageBreadCrumb` at the top of pages, matching existing pages.
-- **Charts**: `react-apexcharts` must be dynamically imported — `const ReactApexChart = dynamic(() => import("react-apexcharts"), { ssr: false })`.
-- **Calendar & carousels**: `FullCalendar` and `Swiper` are also client-only libraries — dynamically import them the same way (`dynamic(() => import(...), { ssr: false })`) rather than importing directly, unless they're already isolated inside a component that's rendered client-side only (verify before assuming).- **Icons**: import from `@/icons` (SVGs are compiled to React components via `@svgr/webpack`, configured for both webpack and Turbopack).
+- Add `PageBreadCrumb` at the top of panel pages where existing pages do so.
+- **Charts**: use **Recharts** only (no other chart library). Chart components are Client Components (`"use client"`); wrap in `ResponsiveContainer` and, if SSR/hydration issues appear, load them with `next/dynamic` and `ssr: false`.
+- **Icons**: import from `@/icons` (SVGs are compiled to React components via `@svgr/webpack`, configured for both webpack and Turbopack).
 - Modals use the `useModal` hook (`isOpen`, `openModal`, `closeModal`, `toggleModal`).
 - Global state goes through the existing contexts (`useSidebar`, `useTheme`) — don't add new providers without need.
 
@@ -112,7 +111,7 @@ src/
 - Don't use physical directional utilities (`ml-*`, `mr-*`, `pl-*`, `pr-*`, `left-*`, `right-*`, `border-l-*`, `border-r-*`, `rounded-l-*`, `rounded-r-*`, `text-left`, `text-right`) — always use CSS logical equivalents (`ms-*`, `me-*`, `ps-*`, `pe-*`, `start-*`, `end-*`, `border-s-*`, `border-e-*`, `rounded-s-*`, `rounded-e-*`, `text-start`, `text-end`).
 - Don't hardcode hex colors or pixel values in `className` — use the `@theme` tokens.
 - Don't create a `tailwind.config` — Tailwind v4 is configured through `globals.css`.
-- Don't import `react-apexcharts`, `FullCalendar`, or `Swiper` statically — always use `next/dynamic` with `ssr: false` (unless already wrapped in a client-only boundary — confirm the existing pattern in that feature folder first).
+- Don't add another chart library — Recharts is the only one.
 
 <!-- BEGIN:nextjs-agent-rules -->
 

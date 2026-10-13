@@ -332,6 +332,8 @@ class BadgeInfo {
         'streak' => '$progress / $threshold gün',
         'seviye' => 'Seviye $progress / $threshold',
         'xp' => '$progress / $threshold XP',
+        'karakter_sayisi' => '$progress / $threshold karakter',
+        'ders_sayisi_basari' => '$progress / $threshold ders ustalaştın',
         'ders_basari' =>
           'Başarı %$progress / %$threshold  •  ${attempts ?? 0} / $minAttempts soru',
         _ => '$progress / $threshold',

@@ -4,7 +4,7 @@
 > Temizlik kararları: `docs/arsiv/TEMIZLIK_RAPORU.md`
 > Kurtarma kanıtı: `kurtarilan/KURTARMA_RAPORU.md`
 
-Son güncelleme: 03 Ekim 2026
+Son güncelleme: 13 Ekim 2026
 
 ---
 
@@ -55,7 +55,7 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 - [x] Taşınanlar: `node_modules` (556 MB), `.next` (504 MB), `.idea`, `reports/`,
       `research_notes/`, `proje-okulu-app/`, 7 fazlalık döküm, 2 yanlış adlı dosya
 - [x] `supabase/config.toml` ana yere geri alındı
-- [ ] **Kullanıcı onayı bekleniyor** — `Silinecekler/` kalıcı olarak silinecek
+- [x] `Silinecekler/` kalıcı olarak silindi (kullanıcı talimatıyla)
 
 ### Supabase kurtarma (canlı: ccozfrpnvyrnktpffkwo)
 - [x] Erişim doğrulandı, `get_app_config` okunabildi
@@ -105,12 +105,12 @@ Tek kök git deposu kuruldu ve aşağıdaki eksikler giderildi:
 - [x] Web proxy locale-prefix normalizasyonu düzeltildi; anonim claim gerçek oturum sayılmıyor
 - [ ] Admin paneli oturum açılmış tarayıcıda doğrulanacak (kullanıcı oturumu gerekir)
 - [x] **Soru bankası — Matematik Bölüm 1**: 50 örnek soru migration'a dönüştürüldü (`20261003000001_soru_bankasi_matematik_bolum1.sql`); onay_durumu = 'beklemede' (kaynak doğrulanmamış)
-- [ ] Proje ASCII yola taşınacak (Türkçe/OneDrive yolu Dart/Flutter için önerilir)
+- [x] Proje ASCII yola taşındı (`C:\Dev\hupo`)
 - [x] Web TypeScript kontrolü temiz (`tsc --noEmit`)
 - [x] Web production build temiz (`next build --webpack`, 51 rota)
 - [x] Dart yapısal/import statik denetimi temiz (`tools/dart-statik-denetim.mjs`, 81 dosya)
 - [x] `Silinecekler/` klasörü kullanıcı talimatıyla kalıcı olarak silindi
-- [ ] Flutter analyze / Chrome çalıştırması OneDrive build kilidi nedeniyle bekliyor
+- [x] Flutter analyze temiz (§11.6'da doğrulandı; proje ASCII yolda)
 
 ---
 
@@ -278,12 +278,12 @@ Bu depoda alt ajan desteği yok; her iş tek ajan tarafından yapılır.
 
 **Mevcut durum:** Genel Bakış "aktif", diğer 11 menü "Yakında" olarak gösteriliyor.
 
-### Dalga 1 — Sayfalar (Sıradaki)
-Gerçekleştirilecek sayfalar (mevcut `get_student_dashboard` verisiyle):
-- [ ] Dersler & Konular (`/veli-paneli/dersler`) — ders seçer, konu tablosu
-- [ ] Yanlışlar & Tekrar (`/veli-paneli/tekrar`) — mevcut ReviewTopicsList genişletilecek
-- [ ] Başarılar (`/veli-paneli/basarilar`) — XP, seviye, seri, rozetler
-- [ ] Üyelik & Hesap (`/veli-paneli/uyelik`) — mevcut AbonelikKarti + OdemeGecmisi birleştirilecek
+### Dalga 1 — Sayfalar (Tamamlandı, tarayıcı testi yapılmadı)
+Mevcut `get_student_dashboard` verisiyle çalışan sayfalar:
+- [x] Dersler & Konular (`/veli-paneli/dersler`) — `SubjectsView.tsx`: ders seçici, başarı yüzdesi, konu tablosu
+- [x] Yanlışlar & Tekrar (`/veli-paneli/tekrar`) — `ReviewView.tsx`: özet kartları + ReviewTopicsList
+- [x] Başarılar (`/veli-paneli/basarilar`) — `AchievementsView.tsx`: XP/seviye/seri kartları + rozet listesi (`get_student_badges` RPC)
+- [x] Üyelik & Hesap (`/veli-paneli/uyelik`) — `MembershipView.tsx`: AbonelikKarti + PlanKarti + OdemeGecmisi
 
 ### Dalga 2 — Yeni Backend + Sayfalar (Sonraki)
 - [ ] Aktivite timeline RPC → Aktivite Akışı sayfası
@@ -330,7 +330,7 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 - [ ] Google API anahtarlarını (Gemini / Stitch, `9b4ee9c` commit'inde `.claude/mcp.json` ve `.claude/settings.json`) iptal et ve yenile
 - [ ] GitHub kişisel erişim jetonunu iptal et, yenisini oluştur; `origin` URL'sinden jetonu kaldır, kimlik yöneticisi kullan (`.git/config`)
 - [ ] Git geçmişini temizle: `git filter-repo` ile anahtarlı `.claude/` sürümlerini kaldır; force push (her adımda ayrı onay). Anahtar yenilemesinden SONRA yapılır
-- [ ] Yeni anahtarları kullanan ortamları kontrol et (Netlify ortam değişkenleri, yerel `.env.local`, MCP yapılandırması)
+- [ ] Yeni anahtarları kullanan ortamları kontrol et (Vercel ortam değişkenleri, yerel `.env.local`, MCP yapılandırması). Barındırma Vercel'dir; Netlify kullanılmıyor
 
 ### 11.3 Aşama 1 — Güvenlik düzeltmeleri
 - [x] `sunucu.dart` kaldırıldı (karar 3). Dizin geçişi ve LAN'a açık dinleme riski ortadan kalktı
@@ -345,7 +345,7 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 - [x] Android: `allowBackup="false"`; `bundleRelease` anahtarsız derlenmez, `assembleRelease` için uyarı. **Derlenmedi:** Android SDK doğrulaması ve release anahtarı bu makinede yok; yalnızca kod incelemesi
 - [ ] Release anahtarı kurulumu: `key.properties` ve upload keystore bu makinede yok; mağaza yüklemesi öncesi gerekli
 - [x] **Canlıya deploy edildi (2026-10-10, kullanıcı onayı):** `20261019000000` … `…000400` (5 migration). Deploy sonrası salt okuma doğrulaması: `evaluate_characters`, `characters_after_change`, `exchange_auth_bridge_token`, `issue_auth_bridge_token` yetkileri yalnızca `service_role`; `veli_adayi_olustur` yeni tanımda; `get_carpim_sifreleri` yetkileri değişmedi (`authenticated`, `service_role`); fonksiyon/tablo/politika sayıları 265 / 102 / 45 (kurtarma no-op). `db:status`: 5 kayıt uzakta, bekleyen yok. Yerelde Docker yok; `supabase test db` çalıştırılmadı
-- [x] Auth bridge: `exchange_auth_bridge_token` ve `issue_auth_bridge_token` yetkisi anon/authenticated'dan kapatıldı (migration `20261019000400`; kullanılmadıkları kullanıcı onayıyla doğrulandı). Fonksiyonlar ve `auth_bridge_tokens` tablosu KALDI; kaldırma ayrı onayla
+- [x] Auth bridge: `exchange_auth_bridge_token` ve `issue_auth_bridge_token` yetkisi anon/authenticated'dan kapatıldı (migration `20261019000400`; kullanılmadıkları kullanıcı onayıyla doğrulandı). Sonradan kullanıcı onayıyla fonksiyonlar ve `auth_bridge_tokens` tablosu da kaldırıldı (migration `20261021000000`)
 - [ ] (ertelendi) `iletisim_izni_iptal_et`: e-posta bağlantısına imzalı token. Mail gönderim tasarımı gerekir
 - [ ] (ertelendi) `veli_adayi_olustur` ve veli kodu için IP/captcha limiti. Turnstile anahtarı gerekir
 - [ ] (ertelendi) `search_path = public, pg_temp` → `''` standardizasyonu (~17 fonksiyon). Gövdelerde nitelemesiz tablo adı kırabilir; DB testi şart
@@ -359,6 +359,7 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 
 ### 11.5 Aşama 3 — Boyut
 - [x] `web-panel/.netlify/` git'ten çıkarıldı, `.gitignore`'a eklendi (diskte duruyor)
+- [x] **Netlify tamamen kaldırıldı (2026-10-10, kullanıcı kararı):** barındırma Vercel. Silinenler: `web-panel/netlify.toml`, `web-panel/deno.lock` (`deno.json` yok, yetim Netlify edge kalıntısı), `web-panel/.netlify/` (yeniden üretilen çıktı). Kaldırılan yapılandırma satırları: `web-panel/eslint.config.mjs` (`.netlify/**` ignore), `web-panel/.gitignore` ve kök `.gitignore` (`.netlify/`). `.claude/worktrees/` altındaki eski ajan kopyaları bilinçli olarak dokunulmadı
 - [x] `ortam/` → `docs/arsiv/ortam/` (başka projeye ait kurulum belgeleri)
 - [x] Tek seferlik `tools/` betikleri → `docs/arsiv/tools/` (13 dosya). Kalanlar: `serve.ps1`, `serve-mobile.ps1`, `sql-sozdizim-denetimi.mjs`, `dart-statik-denetim.mjs`, `istemci-rpc-denetimi.ps1`, `soru_bankasi_sql*.mjs`
 - [x] Kök PNG'ler (`kontrol-1..3.png`, `şema-gecici.png`) ve eski notlar (`DENETIM_NOTU.md`, `DURUM.md`, `PHASE0_DURUM_RAPORU.md`, `TEMIZLIK_RAPORU.md`, `Task.md`, `cm.txt`) → `docs/arsiv/`
@@ -382,7 +383,8 @@ Kaynak: 2026-10-09 taraması (güvenlik kontrol listesi, bulgular, boyut ölçü
 - [x] `web-panel`: `npm audit --omit=dev` → 0 açık (önce 2 yüksek)
 - [x] `mobile-app`: `flutter pub get` → lock'tan 33 bağımlılık düştü (`build_runner` ve kaldırılan paketlerin geçişli bağımlılıkları)
 - [x] `mobile-app`: `flutter analyze` → No issues found (önce 21 hata; hepsi paketsiz iki dosyadaydı, bkz. 11.5)
-- [ ] `mobile-app`: `flutter test` → 193 geçti, 2 başarısız: `membership_test.dart`, `quiz_quota_test.dart`. Testler `lib/` içinde artık bulunmayan eski metinleri bekliyor (ör. "Premium için velinle konuş.")
+- [x] `mobile-app`: `flutter test` — iki eski test düzeltildi (bkz. 11.7); tam sonuç aşağıda işlenecek
+- [ ] `supabase test db --local` (pgTAP) çalıştırılamadı: Docker yok; ayrıca repodaki `supabase/tests` dosyaları pgTAP formatında değil (özel harness)
 - [x] `tools/sql-sozdizim-denetimi.mjs` → 80 dosya, 0 hata (beş yeni migration dahil)
 - [x] **Kuru test (canlıda `BEGIN … ROLLBACK`, 2026-10-10):** 5 migration hatasız çalıştı; `veli_adaylari` test paketi 12/12 OK; fonksiyon/tablo/politika sayıları canlıyla aynı (265 / 102 / 45); geri alma doğrulandı (ACL ve veri değişmedi). Test senaryo 9'da, tabloyu sahip rolüne geçmeden okuyan bir hata düzeltildi (`authenticated` tabloyu okuyamaz; test kodu hatasıydı)
 - [x] `npm run db:preview` (salt okuma, dry-run) → uzak veritabanına gidecek 4 migration listelendi; uzak geçmiş `20261018020000`'e kadar uygulanmış
@@ -401,16 +403,16 @@ Kararlar bekliyor:
 - Migration konsolidasyonu ve soru seed'leri (karar 7)
 - Uzak Supabase Dashboard ayarları (karar 8)
 - ~~Yeni 5 migration'ın canlıya deploy edilmesi~~ — **yapıldı (2026-10-10)**, bkz. 11.3
-- **Auth bridge (`exchange_auth_bridge_token`, `issue_auth_bridge_token`, `auth_bridge_tokens`):** repoda hiçbir kod kullanmıyor. Kullanılıyor mu? Kullanılmıyorsa anon/authenticated yetkisi kapatılıp tablo kaldırılmalı. Kullanılıyorsa: `exchange` anonim çağrılabiliyor, token 90 saniye geçerli ve tek kullanımlık, ama `access_token`/`refresh_token` tabloda düz metin
+- ~~Auth bridge~~ — **kaldırıldı (2026-10-10, kullanıcı onayı):** `exchange_auth_bridge_token`, `issue_auth_bridge_token` ve `auth_bridge_tokens` silindi (migration `20261021000000`). Canlıda doğrulandı
 - Kolon düzeyi canlı–repo farkı (mevcut tablolar) için tam kontrol (açık teknik borç)
 
 Teknik borç (bu turda bulundu):
 - [x] **Canlı–repo uyuşmazlığı (8 istemci RPC'si):** `20261019000200_carpim_sifreleri_rpc_canli_dokum.sql` — gövdeler canlı `pg_get_functiondef` ile birebir, yetkiler canlı `proacl` ile eşleşiyor. Commit `7543fd5` bunları "SQL Editor'den zaten uygulanmış" gerekçesiyle kaldırmıştı. Canlıda henüz çalıştırılmadı
 - [x] **Kalan canlı–repo uyuşmazlığı:** canlıda olup repoda olmayan 24 fonksiyon, 7 tablo, 7 politika, 4 indeks, 1 trigger → `20261019000300_canli_sema_eksik_nesneler.sql`. Kaynak katalog sorguları (`db dump` Docker gerektirdiği için kullanılmadı). Kolon düzeyinde, repoda zaten olan tabloların farkı **kontrol edilmedi** (açık)
-- [ ] Repoda kalan bilinmeyen: `questions_sinifsiz_yedek` (yedek tablo; RLS açık, politika yok) — silinecek mi, saklanacak mı?
-- [ ] `_uret_meydan_kod()` iç yardımcısı anon ve authenticated'a açık; gerekçesi belirsiz. Kullanılmıyorsa yetkisi kaldırılmalı
+- [x] `questions_sinifsiz_yedek` (yedek tablo) silindi (kullanıcı kararı: her soru sınıflı olmalı; migration `20261021000000`)
+- [x] `_uret_meydan_kod()` anon ve authenticated yetkisi kaldırıldı; yalnızca `create_challenge` (SECURITY DEFINER) kullanıyor (migration `20261021000000`, kullanıcı onayı)
 - [ ] `veli_cocuk_bagla`: 6 haneli kod (10⁶ alan), 15 dakika geçerli; hız sınırı `veli_baglama_hatalari` ile hesap başına. Hesap çoğaltılarak aşılabilir (e-posta onayı kapalıyken); sınır gözden geçirilmeli
-- [ ] İki başarısız test (eski metin beklentileri): ya testi ya da ürün metnini güncelle
+- [x] İki eski test güncellendi (`membership_test.dart`, `quiz_quota_test.dart`): ürün tasarımı değişmiş (ücretsiz kartta ve kota diyaloğunda "Velime mesaj hazırla" düğmesi, TASKS §10), test beklentileri buna göre düzeltildi; ürün kodu değişmedi. `membership_card.dart` doc yorumu güncellendi
 - [ ] `supabase/KURTARMA_DURUMU.md`'deki doğrulama betikleri artık `docs/arsiv/tools/` altında (git dışı)
 
 ### 11.8 Canlı güvenlik denetimi (advisor, 2026-10-10, salt okuma)
@@ -525,7 +527,7 @@ Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-cast
 ### 12.4 Sıradaki
 - [ ] Uçtan uca testler (12.8 / 12.9 / 12.10) — EN SON yapılacak. Test öğrenci + veli hesabı ve tarayıcı gerekir.
 - [x] Faz 4 gerçek profil birleştirme — migration `20261020001000`. Ana hesap = daha önce oluşturulan hesap. Deneme ve katılım kayıtları ana hesaba taşınır; aynı sınavda iki kayıt varsa tamamlanmış/yüksek puanlı olan kalır. Her birleştirme `identity_merge_log`'a yazılır. XP/rozet/görev/karakter ve veli onay (consents) kayıtları kaynak hesapta kalır (ayrı karar). Birleştirilen öğrenci hesabı sınava giremez; veli kaydı ana hesaba yapılır. Test verisinde deneme gerekir.
-- [ ] `supheli` bayrağı admin sonuç listesinde görünmüyor (`admin_get_mock_exam_results` değişikliği gerekir).
+- [x] `supheli` bayrağı admin sonuç listesinde gösteriliyor (migration `20261024000000`, `MockExamDetailModal` ⚠ ikonu, çeviri eklendi)
 - [x] Bitirilmemiş denemeler: `deneme_sure_dolanlari_kapat()` her dakika (pg_cron) süresi dolmuş bitmemiş denemeleri kapatır; teslim türü `otomatik`, bildirim tetiklenir. Kapanış süre sonunda olur, anında değil: öğrenci süre içinde de sınava geri dönemez (`start` tekrar girişi reddeder), bu yüzden süre sonu tek kesin zamandır. Veli panelinde (`CocukDenemeGecmisi`) ve öğrenci gelişim sayfasında görünür. Migration `20261020000900`.
 - [x] Süre dolan cevap yolu düzeltildi: `submit_mock_exam_answer` artık bitirip `return` eder (raise yok), bitiş kalıcı. Migration `20261020000900`.
 - [x] `deneme_sonuc_bildirimi` worker'ı — Edge Function `olay-kutusu-gonder` (`--no-verify-jwt`) deploy edildi; pg_cron her 5 dk pg_net ile çağırır. Sağlayıcı: Resend (karar onayı bekliyor). Veritabanı tarafı: `olay_kutusu_talep_et` (lease + deneme sayacı, 5 denemede ölü kayıt), `olay_kutusu_sonuc_yaz` (üssel geri çekilme), `deneme_bildirim_alici` (service_role). Migration `20261020001100`. **Gönderimi açmak için:** `supabase secrets set OLAY_WORKER_SECRET=… RESEND_API_KEY=… OLAY_MAIL_FROM="Hupolingo <bildirim@alan.adi>" PUBLIC_SITE_URL=…`; Supabase Vault'a aynı değerle `olay_worker_secret` adında secret ekle. Gönderici alan adı doğrulanmadan e-posta gitmez. Gizli metin repoda yok.
@@ -533,3 +535,54 @@ Plan: `C:\Users\cengi\.claude\plans\birka-tane-iyile-tirme-yapmam-z-twinkly-cast
 - [ ] CAPTCHA_SECRET — domain bağlandıktan sonra Edge Function ortamına.
 - [ ] İYS 3 iş günü kaydı — KARAR: en sondan bir önce; bekleme listesinde. İYS entegrasyon bilgileri gerekir.
 - [ ] 8. sınıf LGS sınav tipi (§12.5).
+
+## 13-ek. Growth CRM entegrasyonu (2026-10-08)
+Kaynak: `Hupolingo_Growth_CRM_v1_FINAL_CodePack.zip`. Mevcut Supabase'e `growth_*` prefix ile additive layer.
+Dokümanlar: `docs/growth-crm/IMPLEMENTATION_PLAN.md`, `docs/growth-crm/REUSE_EXTEND_CREATE_MAP.md`.
+
+### Durum (2026-10-13)
+- [x] Migration'lar: `20261014000000` (core tablolar), `000100` (RPC'ler), `000200` (pazarlama), `000300` (analitik) — tümü uzakta uygulanmış
+- [x] Admin sayfaları: müşteri-360, müşteri-360/[id], potansiyel-adaylar, potansiyel-adaylar/[id], crm-gorevler, ekip-akisi, satis-hatti, destek-masasi, journey-otomasyonlari, mesaj-sablonlari, growth-analitik, ai-oneriler — `tsc` temiz
+- [ ] Gerçek admin oturumuyla tarayıcı testi yapılmadı
+- [ ] Faz B–F derinleştirme: `IMPLEMENTATION_PLAN.md`'deki sonraki fazlar
+- [ ] Veli adayları CRM: public web formu + captcha (anon lead yakalama) — Dilim 1 backend yazıldı, test çalıştırılmadı
+
+## 13. Kelime Evreni entegrasyonu (2026-10-10, branch `feature/kelime-evreni`)
+Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1 başlangıç kodu; ürünün kendisi değil). Eş anlamlı / zıt anlamlı / eş sesli kelime oyunları Öğren sekmesine bağlanır.
+
+### 13.1 Kararlar
+| # | Konu | Karar |
+|---|---|---|
+| K1 | Kullanıcı sistemi | Yeni sistem YOK. `profiles` + `is_parent_of()` (veli) + `is_admin()` (yönetici). Paketin `word_parent_links` / `word_admin_members` adaptörleri kaldırıldı |
+| K2 | Soru bankası | `questions` KULLANILMAZ. Kelime soruları ayrı içerik türü (`kelime_sorulari`); anlam ve ilişki envanteri ayrı (`kelime_anlamlari`, `kelime_iliskileri`). Gerekçe: `questions` tüm mevcut quiz/tekrar/bildirim akışını etkiler; yayına alınan kelime sorularının Türkçe quizlere sızması istenmedi |
+| K3 | XP | Tek yazım yolu ward_xp_and_streak(). XP, submit_answer ile aynı kuralla: yalnızca doğru, ipucusuz ve tekrar zamanı gelmiş cevapta; tutar sorunun zorluğuna göre 10/20/30 (kelime_sorulari.zorluk). İpucu mevcut sistemde olmayan bir yardımdır, ipucuyla doğru cevap XP vermez. Paketin 10/5 puanları kullanılmadı |
+| K4 | Ustalık | Yalnızca `taninma` becerisi yazılır; seviye en fazla 3. Seçenekle tanıma "tam ustalık" sayılmaz. Yanlış → 0 (1 gün). İpucu ile doğru → seviye değişmez (1 gün). Doğru → +1 (1 / 3 / 7 gün) |
+| K5 | Yayın onayı | Dört göz: yazan ≠ yayınlayan ≠ ilişki kuran ≠ ilişki onaylayan. DB CHECK + RPC kontrolü. **Tek yönetici olan kurulumda yayın yapılamaz**; gevşetilecekse karar gerekir |
+| K6 | Doğru şık gizliliği | `kelime_sorulari` ve `kelime_*` tablolarında `authenticated` tablo yetkisi YOK. Öğrenci yalnızca `kelime_oyun_getir` (doğru şık ve açıklama yok) ve `kelime_cevap_gonder` (cevap sonrası açıklama) RPC'lerini kullanır |
+| K7 | Veli görünürlüğü | Yalnızca toplu özet (`kelime_veli_ozeti`): oranlar, zorlanılan kelimeler, tekrar sayısı, öneri kodları. Cevap listesi / soru kimliği yok |
+| K8 | Sınıf / kazanım | İçerikte `sinif` (1–12, `profiles.sinif` ile eşleşir) ve serbest `kazanim_kodu` metni. Resmi kazanım tablosu YOK (kaynak yok) |
+| K9 | İlişki yönü | İlişkiler çift yönlü; (A,B) ve (B,A) tek kayıt (benzersiz indeks) |
+| K10 | Hız sınırı | Kullanıcı başına dakikada 30 deneme (`RATE_LIMIT`) |
+| K11 | Demo içerik | `supabase/seed/example_draft.sql` migration'a alınmadı; üretimde demo içerik yok |
+
+### 13.2 Yapıldı (doğrulandı)
+- [x] `supabase/migrations/20261022000000_kelime_evreni.sql` — 6 tablo, RLS, 15 RPC (öğrenci 5, veli 1, yönetim 9) + 2 yardımcı fonksiyon; tüm RPC'lerde `revoke` (public/anon) + `grant` (authenticated)
+- [x] `supabase/tests/kelime_evreni_tests.sql` — 40 senaryo (RLS, yetki, idempotency, XP, ustalık, hız sınırı, dört göz, onay akışı, veli gizliliği)
+- [x] Yerel SQL doğrulaması: PGlite (Postgres WASM) + Supabase bağımlılık taklitleri (`supabase/tests/kelime_evreni/`). **40/40 geçti.** Bilinçli açık mutasyonları (doğru şık sızıntısı, anon metrik yetkisi) testler yakaladı
+- [x] Bulunan ve düzeltilen hatalar: `text[] ||` dizi literali, `auth.uid()` dönüş tipi, `smallint`/`integer` parametre uyumsuzluğu, `OR` içinde hata üreten kontrol
+- [ ] Docker'da `supabase db reset` + `supabase test db` — Docker yok; PGlite ile yerine geçmez (gerçek `award_xp_and_streak`, `log_admin_action` yerine taklit kullanıldı)
+- [x] **Uzak Supabase'e uygulandı.** `db:status` tüm Kelime migration'larını (20261022000000–000002, 20261023000000) uzakta senkron gösteriyor (2026-10-13 doğrulaması)
+- [x] Flutter: model, repository, akış denetleyicisi (`kelime_oyun_akisi.dart`), ana ekran, oyun ekranı, Öğren kartı. 42 Kelime testi geçiyor; `flutter analyze` proje genelinde temiz
+- [x] Web: `/yonetim/kelime-evreni` (metrikler, taslak/inceleme/yayın/arşiv, sözlük ve ilişki onayı), veli Genel Bakış kartı. `tsc` ve ESLint temiz
+- [x] Tam Flutter test takımı: `splash_gate_test.dart` 3 başarısız test düzeltildi (Riverpod ProviderScope ve yeni splash sözleşmesine uyarlandı, commit `6146ed2`). Tüm testler geçiyor
+- [ ] Tarayıcı, cihaz ve ekran okuyucu kontrolü (oturum ve cihaz gerekir): 390 px / masaüstü, hareket azaltma, ses ve titreşim
+- [x] Ortak `AnswerOption` kontrastı düzeltildi: `mintDark` (#237A4B, 4,86:1) ve `coralDark` (#A64B24, 5,30:1) kullanılıyor; Quiz ve Kelime ekranları aynı widget'ı paylaşır
+- [ ] İçerik: ilk onaylı paket (dil uzmanı incelemesi gerekir; demo içerik yayınlanmaz)
+- [ ] Ödül/rozet entegrasyonu: XP ledger bağlı; rozet kuralı ayrıca tasarlanacak
+- [ ] Ana ekranda tek birincil eylem ve özet ekranında tekrar çalışma eylemi (tasarım kararı)
+
+### 13.3 Bilinen sınırlar
+- Eş zamanlılık: advisory lock ve benzersiz anahtar kuralı SQL'de tanımlı; gerçek yük/yarış testi yapılmadı (PGlite tek oturum)
+- `kelime_oyun_getir` öncelik sorgusu her çağrıda deneme sayısını hesaplar; içerik büyürse indeks/materialize gerekir
+- Ustalık (taninma dışı beceriler) henüz yazılmıyor; kalıcı ustalık raporu bu yüzden boş kalır
+- Branch hijyeni: `feature/kelime-evreni` üzerinde Kelime dışı dört commit var (`8bd52c0`, `11a666e`, `71ff03d`, `78f034d`). Bunlara dokunulmadı. Kelime işini PR'a almadan önce ayrılmalı

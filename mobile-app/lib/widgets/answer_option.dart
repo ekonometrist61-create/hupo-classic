@@ -28,9 +28,10 @@ class AnswerOption extends StatelessWidget {
   /// Klavyeyle (1-4 / A-D, yön tuşları) şık odağını yönetmek için.
   final FocusNode? focusNode;
 
+  // Dolu şıklarda beyaz metin WCAG AA (4,5:1) için koyu tonları kullanır (mint 3,4:1 ve coral 3,5:1 idi).
   Color get _color => switch (state) {
-        OptionState.correct => AppColors.mint,
-        OptionState.wrong => AppColors.coral,
+        OptionState.correct => AppColors.mintDark,
+        OptionState.wrong => AppColors.coralDark,
         OptionState.pending => AppColors.primarySoft,
         _ => AppColors.surface,
       };

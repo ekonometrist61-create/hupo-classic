@@ -1845,6 +1845,32 @@
       "teslim_sure_doldu": "Submitted when time ran out",
       "teslim_otomatik": "Not submitted; answers were saved automatically when time ran out"
     },
+    "kelime": {
+      "baslik": "Word progress",
+      "yukleniyor": "Loading word progress…",
+      "hata": "Word progress could not be loaded right now. Please try again shortly.",
+      "tekrar": "Try again",
+      "bos": "No word games have been played yet. Start with the Word Universe in the Learn tab.",
+      "denemeSayisi": "Total attempts",
+      "dogruOrani": "Accuracy",
+      "ipucusuzDogru": "Correct without hints",
+      "tekrarBekleyen": "Due for review",
+      "oneriBaslik": "Suggested practice",
+      "oneri": {
+        "tekrar_bekleyen": "{sayi} words are due for review. A short review is enough.",
+        "zorlanilan_tekrar": "Go through the words that were hard together.",
+        "haftalik_calisma_yok": "No word games this week yet. A short session is enough.",
+        "devam": "Steady practice is going on."
+      },
+      "zorlanilanBaslik": "Words that were hard",
+      "yanlis": "struggled {sayi} times",
+      "iliski": {
+        "es_anlamli": "synonym",
+        "zit_anlamli": "antonym",
+        "es_sesli": "homonym"
+      },
+      "gizlilik": "These are summary results; the child's individual answers are not shown."
+    },
     "denemeKaydi": {
       "loading": "Loading upcoming exams...",
       "title": "Upcoming Mock Exams",

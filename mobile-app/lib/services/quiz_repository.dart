@@ -419,6 +419,14 @@ class QuizRepository {
     return ChallengeSession.fromMap(Map<String, dynamic>.from(res as Map));
   }
 
+  /// public.create_kelime_challenge(p_iliski_turu): Kelime Evreni sorularıyla meydan okuma.
+  /// [iliskiTuru] null ise üç oyun türü karışık seçilir. Puanlama Arena ile aynıdır.
+  Future<ChallengeSession> createKelimeChallenge({String? iliskiTuru}) async {
+    final res = await _client.rpc('create_kelime_challenge',
+        params: {'p_iliski_turu': iliskiTuru});
+    return ChallengeSession.fromMap(Map<String, dynamic>.from(res as Map));
+  }
+
   Future<ChallengeSession> joinChallenge(String kod) async {
     final res = await _client.rpc('join_challenge', params: {'p_kod': kod});
     return ChallengeSession.fromMap(Map<String, dynamic>.from(res as Map));

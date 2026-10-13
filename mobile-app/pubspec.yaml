@@ -12,26 +12,10 @@ dependencies:
     sdk: flutter
   flutter_localizations:
     sdk: flutter
-  cupertino_icons: ^1.0.2
   flutter_riverpod: ^2.4.10
   supabase_flutter: ^2.17.2
   lottie: ^3.6.1
   shared_preferences: ^2.5.5
-
-  # ── Animasyon & UI polish ───────────────────────────────────────────────
-  # Kart açılışı, XP dolması, karakter kilit kaldırma gibi micro-animasyonlar.
-  # .animate().fadeIn().scale().slide() zinciriyle Duolingo hissi verir.
-  flutter_animate: ^4.5.2
-  # Koleksiyon ızgarası yüklenirken iskelet (skeleton) animasyonu.
-  shimmer: ^3.0.0
-  # SizedBox(height: 16) yerine Gap(16) — boşluk kodu iki kat kısalır.
-  gap: ^3.0.1
-
-  # ── Koleksiyon & grafik bileşenleri ────────────────────────────────────
-  # 40 karakterlik ızgara; farklı nadirlik boyutları için masonry desteği.
-  flutter_staggered_grid_view: ^0.7.0
-  # XP çubuğu, lig ilerlemesi, ders bazlı başarı radarı.
-  fl_chart: ^0.70.2
 
   # ── Güvenlik ────────────────────────────────────────────────────────────
   # Supabase JWT token'ını SharedPreferences yerine Android Keystore /
@@ -48,25 +32,12 @@ dependencies:
   # Bakım kapısında min_surum kontrolü için cihaz sürüm bilgisi.
   package_info_plus: ^8.3.0
 
-  # ── Immutable modeller & JSON (runtime) ────────────────────────────────
-  # build_runner ile .freezed.dart ve .g.dart dosyaları üretilir.
-  freezed_annotation: ^2.4.4
-  json_annotation: ^4.9.0
-  # Type-safe, annotated Riverpod provider'ları için.
-  riverpod_annotation: ^2.4.1
-  sentry_flutter: ^8.14.2
+  sentry_flutter: 10.0.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0
-
-  # ── Kod üreteci ─────────────────────────────────────────────────────────
-  # Çalıştır: flutter pub run build_runner build --delete-conflicting-outputs
-  build_runner: ^2.4.14
-  freezed: ^2.5.8
-  json_serializable: ^6.8.0
-  riverpod_generator: ^2.4.3
 
   # ── Lint ────────────────────────────────────────────────────────────────
   # Riverpod en iyi pratiklerini zorlar (ref.watch yanlış yerde, vb.).
@@ -95,6 +66,7 @@ flutter:
     - assets/audio/progression/
     - assets/audio/rewards/
     - assets/audio/rarity/
+    - assets/nav/
     - assets/fonts/Nunito-OFL.txt
     - assets/fonts/Lexend-OFL.txt
 

@@ -129,15 +129,15 @@ void main() {
       expect(find.byType(TextButton), findsNothing);
     });
 
-    testWidgets('süresi dolmuş / yok: ücretsiz üyelik, velinle konuş, düğme yok', (tester) async {
+    testWidgets('süresi dolmuş / yok: ücretsiz üyelik, velime mesaj düğmesi, satın alma yok', (tester) async {
       await tester.pumpWidget(_card(const MembershipStatus()));
       await tester.pump();
       expect(find.text('Ücretsiz üyelik'), findsOneWidget);
-      expect(find.text('Premium için velinle konuş.'), findsOneWidget);
+      // Çocuk satın almaz; yalnızca velisine mesaj hazırlayan düğme vardır.
+      expect(find.text('Velime mesaj hazırla'), findsOneWidget);
+      expect(find.byType(ElevatedButton), findsNothing);
       expect(tester.widget<Hupo>(find.byType(Hupo)).pose, HupoPose.merakEdiyor);
       expect(find.byType(LinearProgressIndicator), findsNothing);
-      expect(find.byType(InkWell), findsNothing);
-      expect(find.byType(GestureDetector), findsNothing);
     });
 
     testWidgets('kota: yalnızca alan verilmişse gösterilir', (tester) async {
