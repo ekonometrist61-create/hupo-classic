@@ -278,12 +278,12 @@ Bu depoda alt ajan desteği yok; her iş tek ajan tarafından yapılır.
 
 **Mevcut durum:** Genel Bakış "aktif", diğer 11 menü "Yakında" olarak gösteriliyor.
 
-### Dalga 1 — Sayfalar (Sıradaki)
-Gerçekleştirilecek sayfalar (mevcut `get_student_dashboard` verisiyle):
-- [ ] Dersler & Konular (`/veli-paneli/dersler`) — ders seçer, konu tablosu
-- [ ] Yanlışlar & Tekrar (`/veli-paneli/tekrar`) — mevcut ReviewTopicsList genişletilecek
-- [ ] Başarılar (`/veli-paneli/basarilar`) — XP, seviye, seri, rozetler
-- [ ] Üyelik & Hesap (`/veli-paneli/uyelik`) — mevcut AbonelikKarti + OdemeGecmisi birleştirilecek
+### Dalga 1 — Sayfalar (Tamamlandı, tarayıcı testi yapılmadı)
+Mevcut `get_student_dashboard` verisiyle çalışan sayfalar:
+- [x] Dersler & Konular (`/veli-paneli/dersler`) — `SubjectsView.tsx`: ders seçici, başarı yüzdesi, konu tablosu
+- [x] Yanlışlar & Tekrar (`/veli-paneli/tekrar`) — `ReviewView.tsx`: özet kartları + ReviewTopicsList
+- [x] Başarılar (`/veli-paneli/basarilar`) — `AchievementsView.tsx`: XP/seviye/seri kartları + rozet listesi (`get_student_badges` RPC)
+- [x] Üyelik & Hesap (`/veli-paneli/uyelik`) — `MembershipView.tsx`: AbonelikKarti + PlanKarti + OdemeGecmisi
 
 ### Dalga 2 — Yeni Backend + Sayfalar (Sonraki)
 - [ ] Aktivite timeline RPC → Aktivite Akışı sayfası
@@ -565,7 +565,7 @@ Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1 başlangıç k
 - [x] Web: `/yonetim/kelime-evreni` (metrikler, taslak/inceleme/yayın/arşiv, sözlük ve ilişki onayı), veli Genel Bakış kartı. `tsc` ve ESLint temiz
 - [x] Tam Flutter test takımı (son koşu): 247 geçti, 3 başarısız; üçü `splash_gate_test.dart` (Kelime Evreni dosyalarında splash yok; hata `78f034d` splash bileşeninde, master'daki durumu doğrulanmadı)
 - [ ] Tarayıcı, cihaz ve ekran okuyucu kontrolü (oturum ve cihaz gerekir): 390 px / masaüstü, hareket azaltma, ses ve titreşim
-- [ ] Ortak `AnswerOption` kontrastı (beyaz metin, yeşil/turuncu zemin 4,5:1 altı). Quiz ekranını da etkiler; karar bekliyor
+- [x] Ortak `AnswerOption` kontrastı düzeltildi: `mintDark` (#237A4B, 4,86:1) ve `coralDark` (#A64B24, 5,30:1) kullanılıyor; Quiz ve Kelime ekranları aynı widget'ı paylaşır
 - [ ] İçerik: ilk onaylı paket (dil uzmanı incelemesi gerekir; demo içerik yayınlanmaz)
 - [ ] Ödül/rozet entegrasyonu: XP ledger bağlı; rozet kuralı ayrıca tasarlanacak
 - [ ] Ana ekranda tek birincil eylem ve özet ekranında tekrar çalışma eylemi (tasarım kararı)
