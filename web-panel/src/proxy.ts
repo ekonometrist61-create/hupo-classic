@@ -5,6 +5,9 @@ import { routing } from "./i18n/routing";
 import { DEMO_MODE } from "./lib/demo-mode";
 import { updateSession } from "./utils/supabase/proxy";
 
+const APP_WEB_URL = "https://app.hupolingo.com";
+const APP_LOGIN_PATHS = ["/signin", "/signup"];
+
 /**
  * Zincirleme middleware:
  *   1. once next-intl yerel dil yonlendirmesini uygular,
@@ -27,6 +30,15 @@ export default async function proxy(request: NextRequest) {
   // next-intl localePrefix="never" olsa da gelen isteklerde /tr veya /en
   // kalabildiğinden yetki kontrolleri önce yerelleştirme önekini temizler.
   const normalizedPathname = pathname.replace(/^\/(tr|en)(?=\/|$)/, "") || "/";
+
+  // Kayıt ve giriş yalnızca uygulamada (app.hupolingo.com). hupolingo.com bir tanıtım
+  // sitesi; buradaki giriş sayfaları uygulamaya yönlenir. Şifre kurtarma
+  // (/sifre-unuttum, /sifre-yeni) bu listede değil: Flutter uygulamasının "Şifremi
+  // unuttum" bağlantısı bu sayfalara gidiyor.
+  if (APP_LOGIN_PATHS.includes(normalizedPathname)) {
+    return NextResponse.redirect(APP_WEB_URL, 307);
+  }
+
   // Yönetim ve veli paneli rotaları giriş ister (TailAdmin şablon rotaları kaldırıldı).
   const needsAuth =
     normalizedPathname.startsWith("/yonetim") ||
@@ -36,7 +48,8 @@ export default async function proxy(request: NextRequest) {
 
   if (needsAuth && !isAuthenticated) {
     const url = request.nextUrl.clone();
-    url.pathname = "/signin";
+    // Yönetim sayfaları kendi (sade) girişine, veli paneli veli girişine gider.
+    url.pathname = normalizedPathname.startsWith("/yonetim") ? "/yonetim-giris" : "/signin";
     // Kullanılmayacak sayfanın yolunu geri dönüş için sakla.
     url.searchParams.set("next", normalizedPathname);
     return NextResponse.redirect(url);
