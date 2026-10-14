@@ -691,3 +691,15 @@ Hedef: admin duyuruyu hangi mecralarda yayınlayacağını seçsin; her mecra ya
 - [ ] **Supabase Auth redirect URL:** `https://app.hupolingo.com` eklenmesi manuel.
 - [ ] **Vercel token güvenliği:** token sohbette paylaşıldı. İşler bittikten sonra Vercel panelinden iptal edilip yenisi üretilmeli. Token hiçbir dosyaya yazılmadı.
 - [ ] **Veli paneli bağlantısı:** mobil uygulamadaki `hupolingo.com/veli-paneli` bağlantısı DNS düzelene kadar çalışmıyor.
+
+### 16.4 Açık iş listesi (2026-10-14, sonra bakılacak)
+- [ ] **HTTPS sertifikası (öncelikli):** `hupolingo.com` ve `app.hupolingo.com` için Vercel sertifikası çıkmıyor (elle istek 400). Olası neden TURHOST'taki CAA kaydı. CAA sekmesini kontrol et; sonra sertifikayı yeniden iste ve dene. Gerekirse Vercel destek kaydı.
+- [ ] **Ad sunucuları yayılması:** `cpns` → `dns1/dns2.turhost.com` değişikliği 24–48 saat sürebilir. Bu arada yerel çözümleyici eski değer tutuyor; Google/Cloudflare doğru yanıt veriyor.
+- [ ] **www kaydı:** `www` CNAME eklendi ama önceki dns1 sorgusunda "DNS adı yok" dönmüştü. Yayılma sonrası tekrar kontrol et.
+- [ ] **Eski IP `185.15.40.85`:** ana alan adı artık Vercel'e gidiyor. Bu IP'de bir hizmet (eski site, e-posta, ftp) çalışıyor muydu, teyit et.
+- [ ] **MX kaydı (`hupolingo.com` öncelik 0):** Bu kayıt e-posta için mi, yoksa yanlış eklenmiş mi, teyit edilmeden dokunulmayacak. Gerçek posta akışı varsa korunacak.
+- [ ] **Supabase Auth redirect URL:** `https://app.hupolingo.com` eklenmesi (manuel).
+- [ ] **Veli paneli bağlantısı:** HTTPS çalıştıktan sonra mobil uygulamadaki `hupolingo.com/veli-paneli` bağlantısını test et.
+- [ ] **Vercel token:** sohbette paylaşıldı; işler bitince iptal edip yenisini üret.
+- [ ] **Görsel kontroller:** veli paneli bandı, anket/duyuru formları, karanlık mod, Flutter web ve mobil ekranlar.
+- [ ] **Mobil mağaza sürümü (Play / App Store):** başlanmadı; imzalama ve hesap gerekli.
