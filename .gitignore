@@ -50,8 +50,7 @@ e.innerText)})
 # --- Arşiv: git dışında tutulur, disk üzerinde saklanır (TASKS.md §11.5) ---
 docs/arsiv/
 
-# --- Üretilen web çıktıları ve kopyalar ---
-# Karakter görselleri mobile-app/assets/characters'tan build öncesi kopyalanır
-# (web-panel/scripts/sync-karakterler.mjs). Kaynak tek yerde tutulur.
-web-panel/public/characters/
+# Karakter gorselleri web-panel/public/characters altinda git'te izlenir (Vercel derlemesi icin).
+# Uretim promptlari (*.prompt.txt) herkese acik klasore girmez.
+web-panel/public/characters/**/*.prompt.txt
 .vercel

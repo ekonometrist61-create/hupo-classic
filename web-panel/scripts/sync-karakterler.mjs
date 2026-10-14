@@ -20,7 +20,11 @@ if (!existsSync(kaynak)) {
   process.exit(1);
 }
 
-cpSync(kaynak, hedef, { recursive: true });
+// Üretim promptları (*.prompt.txt) herkese açık web klasörüne kopyalanmaz.
+cpSync(kaynak, hedef, {
+  recursive: true,
+  filter: (kaynakYol) => !kaynakYol.endsWith(".prompt.txt"),
+});
 
 const adet = readdirSync(hedef, { recursive: true, withFileTypes: true })
   .filter((girdi) => girdi.isFile()).length;
