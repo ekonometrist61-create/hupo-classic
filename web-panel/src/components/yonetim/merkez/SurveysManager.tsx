@@ -24,7 +24,8 @@ function newId(): string {
 export default function SurveysManager() {
   const t = useTranslations("yonetim.merkez.surveys");
   const [tab, setTab] = useState<"surveys" | "tasks">("surveys");
-  const list = useAdminRpc<Survey[]>("admin_anket_listele", undefined, { demo: DEMO_SURVEYS });
+  const [arsiv, setArsiv] = useState(false);
+  const list = useAdminRpc<Survey[]>("admin_anket_listele", { p_arsiv: arsiv }, { demo: DEMO_SURVEYS });
   const tasks = useAdminRpc<SupportTask[]>("admin_destek_gorevleri_listele", { p_durum: "acik" }, { demo: DEMO_TASKS });
 
   const [editing, setEditing] = useState<Survey | "new" | null>(null);
@@ -35,6 +36,13 @@ export default function SurveysManager() {
     const r = await adminCall("admin_anket_durum", { p_id: s.id, p_durum: durum });
     if (r.error) return setFb({ kind: "error", msg: r.error === "DEMO" ? t("demo") : r.error });
     setFb({ kind: "ok", msg: t(durum === "yayinda" ? "published" : "closed") });
+    list.reload();
+  };
+
+  const setArchived = async (s: Survey, arsivle: boolean) => {
+    const r = await adminCall("admin_anket_arsivle", { p_id: s.id, p_arsivle: arsivle });
+    if (r.error) return setFb({ kind: "error", msg: r.error === "DEMO" ? t("demo") : r.error });
+    setFb({ kind: "ok", msg: t(arsivle ? "archived" : "unarchived") });
     list.reload();
   };
 
@@ -74,10 +82,32 @@ export default function SurveysManager() {
       <Feedback kind={fb?.kind ?? "ok"} message={fb?.msg ?? null} />
 
       {tab === "surveys" ? (
+        <>
+        <div className="flex flex-wrap items-center gap-2 text-theme-xs">
+          {[
+            { id: false, label: t("activeTab") },
+            { id: true, label: t("archiveTab") },
+          ].map((o) => (
+            <button
+              key={String(o.id)}
+              type="button"
+              aria-pressed={arsiv === o.id}
+              onClick={() => setArsiv(o.id)}
+              className={`rounded-full px-3 py-1.5 font-medium ${
+                arsiv === o.id ? "bg-brand-500 text-white" : "bg-gray-100 text-gray-600 dark:bg-white/5 dark:text-gray-300"
+              }`}
+            >
+              {o.label}
+            </button>
+          ))}
+          <span className="ms-auto text-gray-500 dark:text-gray-400">{t("archiveNote")}</span>
+        </div>
         <RpcBoundary state={list}>
           {(rows) =>
             rows.length === 0 ? (
-              <section className={`${cardClass} px-6 py-12 text-center text-sm text-gray-500`}>{t("empty")}</section>
+              <section className={`${cardClass} px-6 py-12 text-center text-sm text-gray-500`}>
+                {arsiv ? t("archiveEmpty") : t("empty")}
+              </section>
             ) : (
               <div className="grid gap-4 lg:grid-cols-2">
                 {rows.map((s) => (
@@ -101,15 +131,22 @@ export default function SurveysManager() {
                       ))}
                     </div>
                     <div className="mt-4 flex flex-wrap gap-3 text-theme-sm font-medium">
-                      {s.durum !== "kapali" && (
+                      {!arsiv && s.durum !== "kapali" && (
                         <button type="button" className="text-brand-500 hover:text-brand-600" onClick={() => setEditing(s)}>{t("edit")}</button>
                       )}
                       <button type="button" className="text-brand-500 hover:text-brand-600" onClick={() => setResultFor(s)}>{t("results")}</button>
-                      {s.durum === "taslak" && (
+                      {!arsiv && s.durum === "taslak" && (
                         <button type="button" className="text-brand-500 hover:text-brand-600" onClick={() => setStatus(s, "yayinda")}>{t("publish")}</button>
                       )}
-                      {s.durum === "yayinda" && (
+                      {!arsiv && s.durum === "yayinda" && (
                         <button type="button" className="text-error-600 hover:text-error-700" onClick={() => setStatus(s, "kapali")}>{t("close")}</button>
+                      )}
+                      {/* Yayındaki anket arşivlenmez: önce kapatılır. Silme yok (yanıtlar korunur). */}
+                      {!arsiv && s.durum !== "yayinda" && (
+                        <button type="button" className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300" onClick={() => setArchived(s, true)}>{t("archive")}</button>
+                      )}
+                      {arsiv && (
+                        <button type="button" className="text-brand-500 hover:text-brand-600" onClick={() => setArchived(s, false)}>{t("unarchive")}</button>
                       )}
                     </div>
                   </section>
@@ -118,6 +155,7 @@ export default function SurveysManager() {
             )
           }
         </RpcBoundary>
+        </>
       ) : (
         <section className={`${cardClass} p-5 sm:p-6`}>
           <p className="mb-3 text-theme-xs text-gray-500 dark:text-gray-400">{t("tasksNote")}</p>

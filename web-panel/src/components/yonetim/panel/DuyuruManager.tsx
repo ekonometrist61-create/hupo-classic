@@ -17,6 +17,9 @@ interface Duyuru {
   aktif: boolean;
   bitis_at: string | null;
   yuzeyler: SurveySurface[];
+  /** Yayınlanmış duyuru silinemez; null ise hiç yayınlanmamış (taslak). */
+  yayinlandi_at: string | null;
+  arsivlendi_at: string | null;
   created_at: string;
   updated_at: string;
 }
@@ -26,6 +29,8 @@ interface FormState {
   baslik: string;
   metin: string;
   aktif: boolean;
+  /** Arşivli duyuru yayına alınamaz; onay kutusu kilitlenir. */
+  arsivli: boolean;
   /** datetime-local (Türkiye saati); boşsa süresiz */
   bitis: string;
   yuzeyler: SurveySurface[];
@@ -34,23 +39,34 @@ interface FormState {
 const BASLIK_MAX = 120;
 const METIN_MAX = 500;
 
-const EMPTY_FORM: FormState = { id: null, baslik: "", metin: "", aktif: true, bitis: "", yuzeyler: ["web_sitesi"] };
+const EMPTY_FORM: FormState = {
+  id: null,
+  baslik: "",
+  metin: "",
+  aktif: true,
+  arsivli: false,
+  bitis: "",
+  yuzeyler: ["web_sitesi"],
+};
 
-type Durum = "yayinda" | "suresi_doldu" | "pasif";
+type Durum = "yayinda" | "suresi_doldu" | "pasif" | "arsivde";
 
 const DURUM_ETIKET: Record<Durum, string> = {
   yayinda: "Yayında",
   suresi_doldu: "Süresi doldu",
   pasif: "Pasif",
+  arsivde: "Arşivde",
 };
 
 const DURUM_RENK: Record<Durum, "success" | "warning" | "light"> = {
   yayinda: "success",
   suresi_doldu: "warning",
   pasif: "light",
+  arsivde: "light",
 };
 
 function durumOf(d: Duyuru, simdi: number): Durum {
+  if (d.arsivlendi_at) return "arsivde";
   if (!d.aktif) return "pasif";
   if (d.bitis_at && new Date(d.bitis_at).getTime() <= simdi) return "suresi_doldu";
   return "yayinda";
@@ -68,7 +84,8 @@ function tarihYaz(iso: string): string {
 
 export default function DuyuruManager() {
   const t = useTranslations("yonetim.merkez.surveys");
-  const state = useAdminRpc<Duyuru[]>("admin_list_duyurular");
+  const [arsiv, setArsiv] = useState(false);
+  const state = useAdminRpc<Duyuru[]>("admin_list_duyurular", { p_arsiv: arsiv });
   // Durum (yayında / süresi doldu) render anında hesaplanır; saat bileşen ömrü boyunca sabit kalır.
   const [simdi] = useState(() => Date.now());
 
@@ -96,6 +113,7 @@ export default function DuyuruManager() {
       baslik: d.baslik,
       metin: d.metin,
       aktif: d.aktif,
+      arsivli: d.arsivlendi_at !== null,
       bitis: d.bitis_at ? isoToTurkiyeInput(d.bitis_at) : "",
       yuzeyler: d.yuzeyler,
     });
@@ -152,6 +170,32 @@ export default function DuyuruManager() {
     if (r.error) return setRowError(r.error);
 
     setNotice(d.aktif ? "Duyuru yayından kaldırıldı." : "Duyuru yayına alındı.");
+    state.reload();
+  };
+
+  const arsivDegistir = async (d: Duyuru, arsivle: boolean) => {
+    setRowBusy(d.id);
+    setRowError(null);
+    setNotice(null);
+    const r = await adminCall("admin_duyuru_arsivle", { p_id: d.id, p_arsivle: arsivle });
+    setRowBusy(null);
+    if (r.error) return setRowError(r.error);
+
+    // Arşivden çıkan duyuru pasif kalır; yayına almak ayrı bir karardır.
+    setNotice(arsivle ? "Duyuru arşivlendi." : "Duyuru arşivden çıkarıldı (pasif). Yayına almak için düzenleyin.");
+    state.reload();
+  };
+
+  const sil = async (d: Duyuru) => {
+    if (!window.confirm(`“${d.baslik}” taslağı silinecek. Bu işlem geri alınamaz.`)) return;
+    setRowBusy(d.id);
+    setRowError(null);
+    setNotice(null);
+    const r = await adminCall("admin_duyuru_sil", { p_id: d.id });
+    setRowBusy(null);
+    if (r.error) return setRowError(r.error);
+
+    setNotice("Taslak silindi.");
     state.reload();
   };
 
@@ -233,10 +277,14 @@ export default function DuyuruManager() {
                     type="checkbox"
                     className="h-4 w-4 rounded border-gray-300"
                     checked={form.aktif}
+                    disabled={form.arsivli}
                     onChange={(e) => setF("aktif", e.target.checked)}
                   />
                   Yayında (seçili mecralarda görünsün)
                 </label>
+                {form.arsivli && (
+                  <span className="ms-2 text-xs text-gray-500">Arşivden çıkarılmadan yayına alınamaz.</span>
+                )}
               </div>
             </div>
 
@@ -262,7 +310,31 @@ export default function DuyuruManager() {
 
       {/* Liste */}
       <section className={`${cardClass} p-5 sm:p-6`}>
-        <h3 className="mb-4 text-lg font-semibold text-gray-800 dark:text-white/90">Duyurular</h3>
+        <div className="mb-4 flex flex-wrap items-center gap-2 text-xs">
+          <h3 className="me-2 text-lg font-semibold text-gray-800 dark:text-white/90">Duyurular</h3>
+          {[
+            { id: false, label: "Aktif" },
+            { id: true, label: "Arşiv" },
+          ].map((o) => (
+            <button
+              key={String(o.id)}
+              type="button"
+              aria-pressed={arsiv === o.id}
+              onClick={() => {
+                setArsiv(o.id);
+                setRowError(null);
+              }}
+              className={`rounded-full px-3 py-1.5 font-medium ${
+                arsiv === o.id ? "bg-brand-500 text-white" : "bg-gray-100 text-gray-600 dark:bg-white/5 dark:text-gray-300"
+              }`}
+            >
+              {o.label}
+            </button>
+          ))}
+          <span className="ms-auto text-gray-500 dark:text-gray-400">
+            Yayınlanmış duyurular silinmez, arşivlenir. Yalnızca hiç yayınlanmamış taslaklar silinebilir.
+          </span>
+        </div>
 
         {rowError && <div className="mb-4"><ErrorNote message={rowError} /></div>}
 
@@ -315,18 +387,50 @@ export default function DuyuruManager() {
                         {tarihYaz(d.updated_at)}
                       </td>
                       <td className={`${tdClass} whitespace-nowrap`}>
-                        <div className="flex items-center gap-4">
+                        <div className="flex flex-wrap items-center gap-x-4 gap-y-2">
                           <button type="button" className={linkBtn} onClick={() => duzenle(d)}>
                             Düzenle
                           </button>
-                          <button
-                            type="button"
-                            className={linkBtn}
-                            disabled={rowBusy === d.id}
-                            onClick={() => aktifDegistir(d)}
-                          >
-                            {d.aktif ? "Yayından kaldır" : "Yayına al"}
-                          </button>
+                          {!arsiv && (
+                            <button
+                              type="button"
+                              className={linkBtn}
+                              disabled={rowBusy === d.id}
+                              onClick={() => aktifDegistir(d)}
+                            >
+                              {d.aktif ? "Yayından kaldır" : "Yayına al"}
+                            </button>
+                          )}
+                          {!arsiv && (
+                            <button
+                              type="button"
+                              className={linkBtn}
+                              disabled={rowBusy === d.id}
+                              onClick={() => arsivDegistir(d, true)}
+                            >
+                              Arşivle
+                            </button>
+                          )}
+                          {arsiv && (
+                            <button
+                              type="button"
+                              className={linkBtn}
+                              disabled={rowBusy === d.id}
+                              onClick={() => arsivDegistir(d, false)}
+                            >
+                              Arşivden çıkar
+                            </button>
+                          )}
+                          {d.yayinlandi_at === null && (
+                            <button
+                              type="button"
+                              className={`${linkBtn} text-error-600 hover:text-error-700`}
+                              disabled={rowBusy === d.id}
+                              onClick={() => sil(d)}
+                            >
+                              Sil
+                            </button>
+                          )}
                         </div>
                       </td>
                     </tr>

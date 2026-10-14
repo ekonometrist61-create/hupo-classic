@@ -607,7 +607,7 @@ Admin'den yönetilebilir ana sayfa duyurusu: başlık, metin (en fazla 500 karak
 ### 14.1 Kararlar
 - Tek tablo, çoklu duyuru: en yeni aktif ve süresi dolmamış duyuru ana sayfada gösterilir. (karar)
 - Tabloya doğrudan erişim yok; yalnızca RPC'ler (`get_aktif_duyuru`, `admin_list_duyurular`, `admin_save_duyuru`). (karar)
-- Silme yok; duyuru pasife alınarak kapatılır. (karar, kayıt kaybını önlemek için)
+- Silme yok; duyuru pasife alınarak kapatılır. (karar, kayıt kaybını önlemek için) — **2026-10-14'te güncellendi:** arşivleme eklendi; silme yalnızca hiç yayınlanmamış taslak duyuru için (bkz. §17)
 - Süresi dolan duyuru otomatik pasife dönmez; yalnızca gösterilmez. Listede "Süresi doldu" olarak görünür.
 - Hata durumunda (migration yoksa dahil) ana sayfa şerit göstermeden çalışmaya devam eder.
 
@@ -642,7 +642,7 @@ Hedef: admin duyuruyu hangi mecralarda yayınlayacağını seçsin; her mecra ya
 - Yüzey kümesi aynen anketlerle aynı: `mobil`, `web_app`, `web_sitesi`, `veli_paneli`. Tek sözlük, iki ayrı liste yok.
 - Bir duyuru birden çok yüzeyi seçebilir (`yuzeyler text[]`, en az 1). Varsayılan: `web_sitesi` (bugünkü davranışla uyumlu).
 - Her yüzey, kendi yüzeyi için en yeni aktif ve süresi dolmamış duyuruyu alır. Yüzeyler arası "tek duyuru" kısıtı yok.
-- Tablo erişimi değişmez: yalnız RPC. Silme yok; pasife alma.
+- Tablo erişimi değişmez: yalnız RPC. Silme yok; pasife alma. **2026-10-14:** arşivleme eklendi (bkz. §17).
 - Hata/migration yoksa her yüzey bozulmadan boş döner (şerit/kart çizilmez).
 
 ### 15.3 Adımlar
@@ -664,6 +664,20 @@ Hedef: admin duyuruyu hangi mecralarda yayınlayacağını seçsin; her mecra ya
 - **Açık bulgu:** `20260927000010` (COMMENT içinde `||`) ve `20260927000019` (question_reports sırası) boş bir veritabanında zinciri bozar; canlıda uygulanmış olduğu için ancak sıfırdan kurulumda sorun çıkar.
 - **Görsel kontrol (2026-10-14, kopya klasörde `next dev --webpack`, demo modu, Chrome + Playwright):** GÖRÜLDÜ: ana sayfa duyuru şeridi gerçek `Test-3` duyurusuyla (zemin `rgb(2,122,72)`, yazı beyaz, altın etiket; 390 px'te yatay taşma yok, şerit yüksekliği 113 px); yönetim → Formlar & anketler listesinde mecra rozetleri; yönetim → Duyurular sayfası konsol hatasız açılıyor (demo modunda liste "Yükleniyor", bu bileşenin demo verisi yok). GÖRÜLMEDİ: anket ve duyuru **form pencerelerindeki mecra seçici** (ilk derleme zaman aşımı), veli paneli (oturum gerekir) `DuyuruBandi` ve `AnketIstemi`, anket doldurma penceresi, karanlık mod, Flutter (mobil/web app) ekranları (emülatör/cihaz yok). Dev sunucusu konsolundaki `ws://.../_next/hmr` hataları yalnız geliştirme gürültüsü.
 - **Anket/duyuru ortak:** yüzey sözlüğü tek (`SurveySurface`, `SurfacePicker`); mobil `kIsWeb ? 'web_app' : 'mobil'` (`yayin_yuzeyi.dart`).
+
+## 17. Duyuru ve anket arşivleme (2026-10-14)
+
+Karar (kullanıcı onayı, 2026-10-14): arşivleme hem duyuru hem anket için; silme yalnızca yanıtsız taslak duyuru için. Gerekçe: `anket_yanitlari.anket_id` `on delete cascade` ile bağlı; anket silmek yanıtları siler. Anketlerde silme hiç yok.
+
+- [x] Migration `20261032000000_duyuru_anket_arsiv_ve_sil.sql`: `duyurular.yayinlandi_at`, `duyurular.arsivlendi_at`, `anketler.arsivlendi_at`; `admin_list_duyurular(p_arsiv)`, `admin_duyuru_arsivle`, `admin_duyuru_sil` (yalnız `yayinlandi_at IS NULL`), `admin_anket_listele(p_arsiv)`, `admin_anket_arsivle` (yayındaki anket arşivlenmez). Zero-argüman eski sürümler düşürüldü.
+- [x] Geriye dönük karar: mevcut tüm duyurular yayınlanmış sayıldı (`yayinlandi_at = created_at`); bu kayıtlar silinemez, yalnız arşivlenir.
+- [x] PGlite testi `supabase/tests/arsiv/` (`node run.mjs`): 18/18 senaryo. Taklit şema üzerinde; gerçek veritabanında çalıştırılmadı.
+- [x] Admin arayüzü: `DuyuruManager.tsx` (Aktif/Arşiv sekmesi, Arşivle / Arşivden çıkar, Sil yalnız taslakta) ve `SurveysManager.tsx` (Aktif/Arşiv, Arşivle yalnız yayında olmayanda, silme yok). TR/EN çeviri anahtarları eklendi.
+- [ ] `tsc` / ESLint / tarayıcı kontrolü (demo modunda liste verisi yok; gerçek admin oturumu gerekir)
+- [x] `npm run db:preview` (2026-10-14): uzakta yalnız bu migration bekliyor.
+- [ ] Uzak veritabanına uygulama **bekliyor**: `npm run db:deploy` otomatik mod sınıflandırıcısı tarafından üretim deploy'u olarak reddedildi (2026-10-14). Kullanıcı onayı verildi; izin kuralı eklenmeden tekrar denenmeyecek. Uygulandıktan sonra: `db:status` ile senkron doğrulaması ve `admin_list_duyurular`/`admin_anket_listele` imzalarının kontrolü.
+- [ ] Anket yanıtlı senaryo: arşivlenen ve yanıtı olan anketin yanıtlarının korunması PGlite'ta henüz test edilmedi (veli yanıt akışı taklit gerektirir)
+- [ ] Duyuru listesi 200 kayıtla sınırlı; daha fazla gerekirse sayfalama
 
 ## 16. 2026-10-14: yapılanlar ve kalanlar
 
