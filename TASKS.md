@@ -682,3 +682,12 @@ Hedef: admin duyuruyu hangi mecralarda yayınlayacağını seçsin; her mecra ya
 - [ ] **Görsel kontrol:** veli paneli bandı, anket doldurma penceresi, mecra seçici formları, karanlık mod ve mobil/web uygulama ekranları gerçek ortamda bakılmadı.
 - [ ] **Vercel hatalı kayıt:** `2Jr2whEMGb9f98fawcCte287mSbP` (Root Directory yanlış denemesi) ve `9EEhZPLz2YiEQibMiYQXUkXVwCZu` (karakter eksik derleme) başarısız deployment kayıtları; canlıyı etkilemedi.
 - [ ] **Canlı Supabase Auth:** yeni web kullanıcı akışları (anket/duyuru) için uzak DB yalnızca migration ile güncellendi; gerçek veli hesabıyla uçtan uca deneme yapılmadı.
+
+### 16.3 Onaylı işlemler (2026-10-14, ikinci tur)
+- [x] **Flutter Web yayında:** https://hupo-app-web-yeni.vercel.app (Vercel projesi `hupo-app-web-yeni`; `flutter build web --release` çıktısı, `vercel.json` yalnızca rewrite + güvenlik başlıkları). index.html, main.dart.js ve flutter_bootstrap.js 200 döndü.
+- [x] **Alan adları Vercel'e eklendi:** `app.hupolingo.com` → `hupo-app-web-yeni`, `hupolingo.com` → `web-panel`. İkisi de Vercel'de "verified".
+- [ ] **DNS kayıtları yapılamadı (TURHOST paneli gerekiyor):** hupolingo.com TURHOST'ta kayıtlı (NS: CPNS1/CPNS2.TURHOST.COM); bu ad sunucuları sorgulara "reddedildi" yanıtı veriyor. Eklenecek kayıtlar: `app` CNAME → `cname.vercel-dns.com`; `@` A → `76.76.21.21`. Alternatif olarak NS'i Vercel'e (ns1/ns2.vercel-dns.com) çevirmek mümkün, ama mevcut MX/TXT kayıtları bilinmediği için önce TURHOST panelindeki kayıtlar kontrol edilmeli.
+- [x] **Karakter görselleri git'te:** `web-panel/public/characters` (40 webp) izleniyor (`c8cd920`). `*.prompt.txt` dosyaları herkese açık klasöre alınmıyor (`.gitignore` + eşitleme betiği).
+- [ ] **Supabase Auth redirect URL:** `https://app.hupolingo.com` eklenmesi manuel.
+- [ ] **Vercel token güvenliği:** token sohbette paylaşıldı. İşler bittikten sonra Vercel panelinden iptal edilip yenisi üretilmeli. Token hiçbir dosyaya yazılmadı.
+- [ ] **Veli paneli bağlantısı:** mobil uygulamadaki `hupolingo.com/veli-paneli` bağlantısı DNS düzelene kadar çalışmıyor.
