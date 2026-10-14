@@ -8,7 +8,9 @@
     "prebuild": "node scripts/sync-karakterler.mjs",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "test:e2e": "playwright test",
+    "test:e2e:ui": "playwright test --ui"
   },
   "dependencies": {
     "@supabase/ssr": "^0.7.0",
@@ -27,6 +29,7 @@
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {
+    "@playwright/test": "^1.64.0",
     "@svgr/webpack": "^8.1.0",
     "@tailwindcss/forms": "^0.5.11",
     "@types/node": "^20.19.25",

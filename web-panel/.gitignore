@@ -9,6 +9,11 @@
 
 # testing
 /coverage
+# Playwright çıktıları (e2e/ kaynak olarak commit edilir)
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
 
 # next.js
 /.next/
