@@ -39,17 +39,20 @@ export default async function proxy(request: NextRequest) {
     return NextResponse.redirect(APP_WEB_URL, 307);
   }
 
-  // Yönetim ve veli paneli rotaları giriş ister (TailAdmin şablon rotaları kaldırıldı).
-  const needsAuth =
-    normalizedPathname.startsWith("/yonetim") ||
-    normalizedPathname.startsWith("/veli-paneli");
+  // Yönetim ve veli paneli rotaları giriş ister. "/yonetim-giris" girişin kendisi
+  // olduğu için korumalı sayılmaz; yoksa giriş sayfası kendi yönlendirmesine girer.
+  const yonetimAlani =
+    normalizedPathname === "/yonetim" || normalizedPathname.startsWith("/yonetim/");
+  const veliAlani =
+    normalizedPathname === "/veli-paneli" || normalizedPathname.startsWith("/veli-paneli/");
+  const needsAuth = yonetimAlani || veliAlani;
 
   if (DEMO_MODE) return response;
 
   if (needsAuth && !isAuthenticated) {
     const url = request.nextUrl.clone();
     // Yönetim sayfaları kendi (sade) girişine, veli paneli veli girişine gider.
-    url.pathname = normalizedPathname.startsWith("/yonetim") ? "/yonetim-giris" : "/signin";
+    url.pathname = yonetimAlani ? "/yonetim-giris" : "/signin";
     // Kullanılmayacak sayfanın yolunu geri dönüş için sakla.
     url.searchParams.set("next", normalizedPathname);
     return NextResponse.redirect(url);
