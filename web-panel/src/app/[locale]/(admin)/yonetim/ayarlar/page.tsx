@@ -14,7 +14,8 @@ import {
   turkiyeInputToIso,
 } from "@/components/yonetim/turkiyeTarih";
 
-type BakimModu = { aktif: boolean; mesaj: string };
+type BakimYuzeyleri = { site: boolean; veli: boolean; yonetim: boolean };
+type BakimModu = { aktif: boolean; mesaj: string; yuzeyler?: BakimYuzeyleri };
 type MinSurum = { android: string; ios: string; web: string; mesaj: string };
 type Reklamlar = {
   veli_paneli_acik: boolean;
@@ -80,6 +81,11 @@ export default function AyarlarPage() {
   const state = useAdminRpc<AppSettings>("admin_get_settings");
 
   const [bakimModu, setBakimModu] = useState(false);
+  const [bakimYuzeyler, setBakimYuzeyler] = useState<BakimYuzeyleri>({
+    site: false,
+    veli: false,
+    yonetim: false,
+  });
   const [minSurum, setMinSurum] = useState("1.0.0");
   const [reklamlar, setReklamlar] = useState(false);
   const [premiumGating, setPremiumGating] = useState(false);
@@ -97,7 +103,10 @@ export default function AyarlarPage() {
   useEffect(() => {
     const s = state.data;
     if (!s) return;
-    if (s.bakim_modu) setBakimModu(s.bakim_modu.aktif);
+    if (s.bakim_modu) {
+      setBakimModu(s.bakim_modu.aktif);
+      if (s.bakim_modu.yuzeyler) setBakimYuzeyler(s.bakim_modu.yuzeyler);
+    }
     if (s.min_surum) setMinSurum(s.min_surum.android);
     if (s.reklamlar) setReklamlar(s.reklamlar.ogrenci_acik);
     if (s.premium_gating) setPremiumGating(s.premium_gating.aktif);
@@ -153,7 +162,7 @@ export default function AyarlarPage() {
     const results = await Promise.all([
       adminCall("admin_set_setting", {
         p_key: "bakim_modu",
-        p_value: { aktif: bakimModu, mesaj: ex.bakim_modu?.mesaj ?? "" },
+        p_value: { aktif: bakimModu, mesaj: ex.bakim_modu?.mesaj ?? "", yuzeyler: bakimYuzeyler },
       }),
       adminCall("admin_set_setting", {
         p_key: "min_surum",
@@ -253,10 +262,46 @@ export default function AyarlarPage() {
         <div className={cardClass}>
           <div className={row}>
             <div>
-              <p className="text-sm font-medium text-gray-800 dark:text-white/90">Bakım Modu</p>
-              <p className="text-xs text-gray-500 dark:text-gray-400">Aktif olduğunda uygulama bakım ekranı gösterir</p>
+              <p className="text-sm font-medium text-gray-800 dark:text-white/90">Bakım: Mobil uygulama</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">Mobil uygulama ve öğrenci web uygulaması bakım ekranı gösterir</p>
             </div>
             <Toggle id="bakim-modu" checked={bakimModu} onChange={setBakimModu} />
+          </div>
+
+          <div className={row}>
+            <div>
+              <p className="text-sm font-medium text-gray-800 dark:text-white/90">Bakım: Web sitesi</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">hupolingo.com genel sayfaları (landing, demo) bakıma alınır</p>
+            </div>
+            <Toggle
+              id="bakim-site"
+              checked={bakimYuzeyler.site}
+              onChange={(v) => setBakimYuzeyler((y) => ({ ...y, site: v }))}
+            />
+          </div>
+
+          <div className={row}>
+            <div>
+              <p className="text-sm font-medium text-gray-800 dark:text-white/90">Bakım: Veli paneli</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">/veli-paneli giriş ve kayıt dahil kapatılır</p>
+            </div>
+            <Toggle
+              id="bakim-veli"
+              checked={bakimYuzeyler.veli}
+              onChange={(v) => setBakimYuzeyler((y) => ({ ...y, veli: v }))}
+            />
+          </div>
+
+          <div className={row}>
+            <div>
+              <p className="text-sm font-medium text-gray-800 dark:text-white/90">Bakım: Yönetim paneli</p>
+              <p className="text-xs text-gray-500 dark:text-gray-400">Yöneticiler yine girebilir; diğer kullanıcılar bakım ekranını görür</p>
+            </div>
+            <Toggle
+              id="bakim-yonetim"
+              checked={bakimYuzeyler.yonetim}
+              onChange={(v) => setBakimYuzeyler((y) => ({ ...y, yonetim: v }))}
+            />
           </div>
 
           <div className={row}>

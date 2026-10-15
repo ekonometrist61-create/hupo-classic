@@ -727,3 +727,50 @@ Karar (kullanıcı): yönetim ve veli panelleri **alt klasör**, web uygulaması
 - Eski `/signin` ve `/signup` adresleri kalıcı yönlendirmeyle yeni kapılara gider (`proxy.ts`).
 - Supabase auth: site URL `https://hupolingo.com`; redirect izin listesi `hupolingo.com` ve `app.hupolingo.com` (`/**` dahil). 2026-10-15 config push ile uygulandı.
 - Açık: öğretmen veli panelinde boş bir ekranla karşılaşabilir (yönetim kapısı da öğretmene açık; hangi kapıdan giriş yaptığına göre sayfa farklı değil). Ürün kararı bekliyor.
+
+## 21. Yedekleme, Turnstile, hız sınırı ve bakım kontrolü (2026-10-15)
+
+Kapsam (kullanıcı talebi): (a) günlük veritabanı yedeği Google Drive'a, (b) Turnstile captcha'nın web formlarında gerçekten çalışması, (c) IP başına hız sınırı, (d) web sitesi / veli paneli / yönetim panelinden bağımsız bakım kontrolü.
+Kural: yalnızca canlıda veya testte doğrulananlar `[x]`. Kod yazılıp doğrulanmayanlar `[ ]` ve "kod hazır" notuyla kalır.
+
+### 21.1 Mevcut durum (denetim sonucu)
+- Turnstile: Yalnızca `deneme-on-kayit` Edge Function'da doğrulama kodu vardı; `CAPTCHA_SECRET` ayarlı değildi ve **web tarafında widget yoktu**. Erken erişim formu RPC'yi captcha'sız doğrudan çağırıyordu. Yani "kurmuştuk" kısmen doğruydu: yalnızca sunucu tarafı.
+- Hız sınırı: yoktu. `veli_adayi_olustur` anonim olarak açıktı.
+- Bakım: `bakim_modu` anahtarı admin'de vardı ama yalnızca mobil uygulamayı (`MaintenanceGate`) etkiliyordu; web kontrol etmiyordu.
+- Yedek: yoktu. Repo'da `.github/` klasörü yoktu.
+- Git uzak deposu GitHub'da (`ekonometrist61-create/hupo-classic`); URL'de düz metin bir GitHub erişim anahtarı gömülü (bkz. 21.5).
+
+### 21.2 Yapıldı (kod yazıldı; canlıda çalıştırılmadı)
+- [ ] **Hız sınırı altyapısı** — `supabase/migrations/20261033000000_rate_limit.sql`: `rate_limit_hits` tablosu (RLS kapalı, yalnızca service_role), `rate_limit_kontrol()` fonksiyonu. Kod hazır; uygulanmadı.
+- [ ] **Veli adayı RPC'si yalnızca servis rolüne** — `20261033000200_veli_adayi_yalniz_servis.sql`. **Deploy sırası önemli:** önce Edge Function + web, sonra migration. Yoksa erken erişim formu kırılır.
+- [ ] **Edge Function `veli-adayi-kayit`** (yeni): Turnstile (fail-closed) → IP sınırı 5 / 10 dk → `veli_adayi_olustur` (service_role). Deploy: `supabase functions deploy veli-adayi-kayit --no-verify-jwt`.
+- [ ] **Edge Function `deneme-on-kayit`**: captcha artık fail-closed (secret yoksa 503), IP sınırı 10 / 10 dk eklendi. Yeniden deploy gerekir.
+- [ ] **Ortak güvenlik modülü** `supabase/functions/_shared/guvenlik.ts` (IP çözümü, Turnstile doğrulama, hız sınırı çağrısı).
+- [ ] **Turnstile widget'ı web'de** — `web-panel/src/components/guvenlik/TurnstileWidget.tsx`; `DenemeKayitForm` ve `ErkenErisimSection` bağlandı. CSP'ye `challenges.cloudflare.com` eklendi (`next.config.ts`).
+- [ ] **Bakım kontrolü: yüzey bazlı** — `20261033000100_bakim_yuzeyleri.sql` (`admin_set_setting` yeniden tanımlandı; `bakim_modu.yuzeyler` = site / veli / yonetim). Mobil `aktif` alanı aynen kalır.
+- [ ] **Bakım kapısı (middleware)** — `web-panel/src/lib/bakim.ts` + `src/proxy.ts`: yüzey kapalıysa `/tr/bakim` içeriği yeniden yazılır. Yöneticiler `/yonetim`'de bakım sırasında da girebilir; `/yonetim-giris` her zaman açık. Durum 30 sn önbellekte; okunamazsa site açık kalır (fail-open).
+- [ ] **Admin ayarları ekranı** — `yonetim/ayarlar/page.tsx`: web sitesi / veli / yönetim bakım anahtarları. Kaydetme artık `yuzeyler` alanını da korur (eski kayıt bu alanı silerdi).
+- [ ] **Google Drive yedeği** — `.github/workflows/yedek.yml` (her gün 03:30 TR, `pg_dump` postgres:17 imajıyla, AES-256 şifreleme), `tools/yedek/drive-yukle.mjs` (OAuth yenileme jetonu, resumable yükleme, 30 gün saklama). Kurulum ve geri yükleme: `docs/yedekleme/KURULUM.md`. `node --check` geçti; Actions'ta çalıştırılmadı.
+- [ ] **Bakım ekranı (web)** — `web-panel/src/app/[locale]/(full-width-pages)/bakim/` (hupo-design-growth-director). `tsc` temiz; dev sunucuda `/tr/bakim?yuzey=veli` 200, konsol hatası 0, 390px yatay taşma yok, `noindex`. Koyu tema ekran görüntüsü alınamadı (tema bağlamı ayarlanmadı). Uçtan uca bakım kapısı (DB'de bayrak açıkken yönlendirme) henüz test edilmedi.
+- [ ] **Bakım kapısı için yalnızca bu oturumun dosyaları:** `src/proxy.ts`, `src/lib/bakim.ts`, `src/utils/supabase/proxy.ts`, `src/components/guvenlik/TurnstileWidget.tsx`, `src/components/landing/DenemeKayitForm.tsx`, `src/components/landing/sections/ErkenErisimSection.tsx`, `src/app/[locale]/(admin)/yonetim/ayarlar/page.tsx`, `next.config.ts` (CSP), `supabase/functions/{_shared/guvenlik.ts,deneme-on-kayit,veli-adayi-kayit}`, `supabase/migrations/20261033*`, `.github/workflows/yedek.yml`, `tools/yedek/`, `docs/yedekleme/`, `docs/hupo-design-growth/bakim-modu/`. Bu dosyalar aynı çalışma ağacında başka oturumların işleriyle karışık; deploy öncesi ayrıştırılmalı (bkz. §20 madde 5).
+
+### 21.3 Kullanıcı yapacak (sırayla)
+1. **Google:** Cloud projesi, Drive API, OAuth client (Desktop), consent screen **"In production"** (Testing modunda jeton 7 günde sona erer), refresh token. Adımlar: `docs/yedekleme/KURULUM.md` §2.
+2. **GitHub Secrets:** `SUPABASE_DB_URL` (Session pooler), `BACKUP_PASSPHRASE` (parolayı şifre yöneticisine de kaydedin), `GDRIVE_CLIENT_ID`, `GDRIVE_CLIENT_SECRET`, `GDRIVE_REFRESH_TOKEN`, `GDRIVE_FOLDER_ID`. Sonra Actions'tan elle bir çalıştırma ve Drive'da dosya kontrolü.
+3. **Cloudflare Turnstile:** Dashboard → Turnstile → widget oluştur, hostname `hupolingo.com` (ve `localhost` geliştirme için). Site key → Vercel `NEXT_PUBLIC_TURNSTILE_SITE_KEY`; secret → Supabase Edge Function ortamı `CAPTCHA_SECRET`. **Yerel geliştirme için** Cloudflare'in test anahtarları (`1x00000000000000000000AA` site, `1x0000000000000000000000000000000AA` secret) kullanılabilir; canlıda bunlar kullanılmamalı.
+4. **Supabase deploy sırası:** (a) `veli-adayi-kayit` ve `deneme-on-kayit` function deploy, (b) Vercel'e web sürümü, (c) `npm run db:deploy` ile üç yeni migration. Onay gerektiren uzak DB yazması olduğu için bunu ben çalıştırmadım.
+5. **Git token:** `.git/config` içindeki GitHub erişim anahtarını iptal edin (GitHub → Developer settings) ve yeni anahtarı Git Credential Manager ile saklayın. Remote'taki gömülü anahtar repo'yla birlikte sızabilir.
+
+### 21.4 Tasarım (hupo-design-growth-director)
+- Agent raporu: sayfa Hupo token'ları ile yazıldı. Durum metni için taslaktaki `#147D8A` yerine `#0D5762` (açık) ve `#7FC9D2` (koyu) kullanıldı; `#147D8A` / `#E8F5F7` çifti 4.35:1 ile 4.5:1 altında kaldığı için. Ölçüm: 7.37:1 ve 5.76:1. Taslak `bakim-modu.md` içindeki kontrast tablosunda bu düzeltme henüz yok; onaylı renk kararı (`#147D82` ↔ `#147D8A`) hâlâ açık.
+
+### 21.5 Açık / doğrulanmadı
+- [ ] Migration'lar uzak DB'de uygulanmadı; SQL yalnızca okundu. `supabase/tests/` altındaki testler çalıştırılmadı.
+- [ ] Edge Function'lar Deno'da çalıştırılmadı (yerelde Deno yok). Turnstile doğrulaması canlıda uçtan uca test edilmedi.
+- [x] Yerel web denetimi: `tsc --noEmit` hatasız. ESLint'te 1 uyarı (`ayarlar/page.tsx`, `setState` in effect); aynı desen bu sayfada öncesinden vardı.
+- [ ] Bakım sayfası koyu tema görsel kontrolü; bakım kapısının uçtan uca testi.
+- [ ] `anon` anahtarı sorunu (§11.7, 401 uyarısı) hâlâ açık; `DenemeKayitForm` bu anahtarı kullanıyor, Turnstile sonrası istek yine 401 dönebilir.
+- [ ] Hız sınırı tam atomik değil (kısa yarış penceresi). Kesin kota değil, kötüye kullanım frenidir.
+- [ ] `growth_web_olay_kaydet` ve `growth_web_kimlik_bagla` anonim RPC'leri hâlâ sınırsız (20261028 migration notu).
+- [ ] Bakım sayfası durum kodu 200 (rewrite'ta Next middleware durum kodunu ayarlamıyor); sayfa `noindex`.
+- [ ] Yedekte Storage (dosya) yok; yalnızca veritabanı.

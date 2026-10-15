@@ -1,0 +1,55 @@
+# Günlük veritabanı yedeği: Supabase (pg_dump) → şifreli dosya → Google Drive.
+# Kurulum adımları ve gerekli secret'lar: docs/yedekleme/KURULUM.md
+name: Veritabanı yedeği
+
+on:
+  schedule:
+    - cron: "30 0 * * *"   # her gün 03:30 Türkiye saati (UTC+3)
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+concurrency:
+  group: veritabani-yedegi
+  cancel-in-progress: false
+
+jobs:
+  yedekle:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - name: Kodu al
+        uses: actions/checkout@v4
+
+      - name: Veritabanını dök ve şifrele
+        env:
+          SUPABASE_DB_URL: ${{ secrets.SUPABASE_DB_URL }}
+          BACKUP_PASSPHRASE: ${{ secrets.BACKUP_PASSPHRASE }}
+        run: |
+          set -euo pipefail
+          test -n "$SUPABASE_DB_URL"
+          test -n "$BACKUP_PASSPHRASE"
+          STAMP=$(date -u +%Y%m%d-%H%M%S)
+          ADI="hupo-yedek-${STAMP}.dump"
+
+          # pg_dump sürümü sunucudan yeni olmalı; Supabase için postgres:17 imajı kullanılır.
+          docker run --rm postgres:17 pg_dump "$SUPABASE_DB_URL" \
+            --format=custom --no-owner --no-privileges > "$ADI"
+
+          # AES-256 + PBKDF2: yedek Drive'da olsa bile parola olmadan okunamaz.
+          openssl enc -aes-256-cbc -pbkdf2 -iter 200000 -salt \
+            -in "$ADI" -out "$ADI.enc" -pass env:BACKUP_PASSPHRASE
+          rm -f "$ADI"
+
+          ls -lh "$ADI.enc"
+          echo "DOSYA=$ADI.enc" >> "$GITHUB_ENV"
+
+      - name: Google Drive'a yükle
+        env:
+          GDRIVE_CLIENT_ID: ${{ secrets.GDRIVE_CLIENT_ID }}
+          GDRIVE_CLIENT_SECRET: ${{ secrets.GDRIVE_CLIENT_SECRET }}
+          GDRIVE_REFRESH_TOKEN: ${{ secrets.GDRIVE_REFRESH_TOKEN }}
+          GDRIVE_FOLDER_ID: ${{ secrets.GDRIVE_FOLDER_ID }}
+          YEDEK_SAKLAMA_GUN: "30"
+        run: node tools/yedek/drive-yukle.mjs "$DOSYA"

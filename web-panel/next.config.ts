@@ -43,9 +43,11 @@ const securityHeaders = [
     value: [
       "default-src 'self'",
       // Supabase API + Realtime
-      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://eu.i.posthog.com https://eu-assets.i.posthog.com",
+      "connect-src 'self' https://*.supabase.co wss://*.supabase.co https://eu.i.posthog.com https://eu-assets.i.posthog.com https://challenges.cloudflare.com",
       // Next.js hot reload için 'unsafe-eval' yalnızca geliştirmede açık
-      `script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ""}`,
+      `script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com${isDev ? " 'unsafe-eval'" : ""}`,
+      // Cloudflare Turnstile widget'ı iframe içinde çalışır (bot doğrulaması)
+      "frame-src https://challenges.cloudflare.com",
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
       "font-src 'self' https://fonts.gstatic.com",
       // Uygulama logoları ve kullanıcı avatarları (ileriki sürümde kısıtlanacak)

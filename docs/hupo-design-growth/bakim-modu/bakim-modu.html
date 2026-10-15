@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hupolingo — Bakım modu</title>
+  <!--
+    Bakım modu ekranı şablonu (web). Mobil MaintenanceScreen ile aynı token değerleri:
+    primary #147D8A, primarySoft #E8F5F7, background #FFF9ED, muted #4A6A85, sun #F5C842.
+    Koyu tema ve kontrast değerleri: kayıtlı ölçümler (bkz. bakim-modu.md).
+    Önizleme: data-theme="light|dark" ile tema zorlanabilir; boş bırakılırsa sistem teması kullanılır.
+  -->
+  <style>
+    :root {
+      --color-bg: #FFF9ED;
+      --color-surface: #FFFFFF;
+      --color-text: #17324D;
+      --color-muted: #4A6A85;
+      --color-primary: #147D8A;
+      --color-primary-hover: #0D5762;
+      --color-on-primary: #FFFFFF;
+      --color-primary-soft: #E8F5F7;
+      --color-focus: #0D5762;
+      --color-border: #E4DCC8;
+      --color-sun: #F5C842;
+      --color-status-dot: #147D8A;
+      --radius-card: 24px;
+      --radius-btn: 16px;
+      --gutter: 16px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --color-bg: #0E2630;
+        --color-surface: #143240;
+        --color-text: #FFF9ED;
+        --color-muted: #B9CCD3;
+        --color-primary: #4FB3BF;
+        --color-primary-hover: #7FC9D2;
+        --color-on-primary: #0E2630;
+        --color-primary-soft: #1B4250;
+        --color-focus: #F5C842;
+        --color-border: #2A4D5A;
+        --color-status-dot: #4FB3BF;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --color-bg: #0E2630;
+      --color-surface: #143240;
+      --color-text: #FFF9ED;
+      --color-muted: #B9CCD3;
+      --color-primary: #4FB3BF;
+      --color-primary-hover: #7FC9D2;
+      --color-on-primary: #0E2630;
+      --color-primary-soft: #1B4250;
+      --color-focus: #F5C842;
+      --color-border: #2A4D5A;
+      --color-status-dot: #4FB3BF;
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body { margin: 0; height: 100%; }
+
+    body {
+      background: var(--color-bg);
+      color: var(--color-text);
+      font-family: "Outfit", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .page {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px var(--gutter);
+    }
+
+    .card {
+      width: 100%;
+      max-width: 420px;
+      background: var(--color-surface);
+      border: 1px solid var(--color-border);
+      border-radius: var(--radius-card);
+      padding: 32px 24px 24px;
+      text-align: center;
+    }
+
+    .mascot {
+      width: 112px;
+      height: 112px;
+      margin: 0 auto 20px;
+      border-radius: 50%;
+      overflow: hidden;
+      animation: float 3.2s ease-in-out infinite;
+    }
+    /* Logo webp'nin kendi kare zemini var; daire kırpması onu yuvarlar. */
+    .mascot img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+    }
+
+    .status {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 12px;
+      border-radius: 999px;
+      background: var(--color-primary-soft);
+      color: var(--color-primary);
+      font-size: 14px;
+      font-weight: 600;
+      line-height: 20px;
+    }
+    .status::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--color-status-dot);
+      animation: pulse 1.6s ease-in-out infinite;
+    }
+    /* Durum metni rengin yanında da duruyor; nokta yalnızca ek bir ipucu. */
+
+    h1 {
+      margin: 16px 0 8px;
+      font-size: 24px;
+      line-height: 32px;
+      font-weight: 800;
+    }
+
+    .message {
+      margin: 0 auto;
+      max-width: 32ch;
+      font-size: 16px;
+      line-height: 24px;
+      color: var(--color-muted);
+    }
+
+    .actions {
+      margin-top: 28px;
+      display: grid;
+      gap: 12px;
+    }
+
+    .btn {
+      min-height: 52px;
+      width: 100%;
+      border: 0;
+      border-radius: var(--radius-btn);
+      font: inherit;
+      font-size: 16px;
+      font-weight: 700;
+      background: var(--color-primary);
+      color: var(--color-on-primary);
+      cursor: pointer;
+      transition: background-color 160ms ease, transform 160ms ease;
+    }
+    .btn:hover { background: var(--color-primary-hover); }
+    .btn:active { transform: scale(0.98); }
+    .btn:focus-visible,
+    .link:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 3px;
+    }
+    .btn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+      transform: none;
+    }
+    .btn[aria-busy="true"] { cursor: progress; }
+
+    .hint {
+      margin: 0;
+      font-size: 14px;
+      line-height: 20px;
+      color: var(--color-muted);
+    }
+
+    .link {
+      color: var(--color-primary);
+      font-weight: 600;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    .footer {
+      margin-top: 24px;
+      font-size: 12px;
+      line-height: 18px;
+      color: var(--color-muted);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.35; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .mascot, .status::before { animation: none; }
+      .btn { transition: none; }
+    }
+
+    @media (min-width: 600px) {
+      .card { padding: 40px 32px 32px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+    <section class="card" aria-labelledby="bakim-baslik">
+      <div class="mascot" aria-hidden="true">
+        <img src="../../../web-panel/public/hupo/logo-icon.webp" width="112" height="112" alt="">
+      </div>
+
+      <span class="status" role="status">Bakım çalışması sürüyor</span>
+
+      <h1 id="bakim-baslik">Hupo şu an bakımda</h1>
+
+      <!-- Admin panelindeki bakim_modu.mesaj alanı buraya gelir; boşsa varsayılan metin kalır. -->
+      <p class="message" id="bakim-mesaj">
+        Hupolingo'yu senin için daha iyi hale getiriyoruz. Kısa bir çalışma yapıyoruz; birkaç dakika sonra tekrar dene.
+      </p>
+
+      <div class="actions">
+        <button class="btn" type="button" id="tekrar-dene">Tekrar dene</button>
+        <p class="hint">Sayfa açılmazsa birkaç dakika sonra tekrar dene.</p>
+      </div>
+
+      <p class="footer">Hupolingo</p>
+    </section>
+  </main>
+
+  <script>
+    (function () {
+      // Önizleme için tema seçimi: ?tema=dark veya ?tema=light
+      try {
+        var t = new URLSearchParams(location.search).get("tema");
+        if (t === "light" || t === "dark") document.documentElement.setAttribute("data-theme", t);
+      } catch (e) { /* tarayıcı kısıtı: sistem teması kullanılır */ }
+
+      var btn = document.getElementById("tekrar-dene");
+      btn.addEventListener("click", function () {
+        btn.setAttribute("aria-busy", "true");
+        btn.disabled = true;
+        btn.textContent = "Kontrol ediliyor…";
+        // Gerçek uygulamada: durum uç noktası kontrol edilir, bakım bittiyse yönlendirilir.
+        setTimeout(function () { location.reload(); }, 800);
+      });
+    })();
+  </script>
+</body>
+</html>

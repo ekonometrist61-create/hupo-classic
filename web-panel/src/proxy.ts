@@ -3,6 +3,7 @@ import { NextResponse, type NextRequest } from "next/server";
 
 import { routing } from "./i18n/routing";
 import { DEMO_MODE } from "./lib/demo-mode";
+import { bakimDurumunuOku, bakimSayfaYolu, yuzeyBul } from "./lib/bakim";
 import { updateSession } from "./utils/supabase/proxy";
 
 // Giriş ve kayıt kapıları (hupolingo.com alt klasörleri). Öğrenci girişi app.hupolingo.com'da.
@@ -32,7 +33,7 @@ export default async function proxy(request: NextRequest) {
   const intlResponse = createMiddleware(routing)(request);
   // next-intl, localePrefix="never" ile ic yolu /tr/... olarak yeniden yazar;
   // Supabase cookie yenilemesini bu yanit uzerinde tutariz.
-  const { response, isAuthenticated } = await updateSession(
+  const { response, isAuthenticated, esAdmin } = await updateSession(
     request,
     intlResponse ?? NextResponse.next()
   );
@@ -47,6 +48,26 @@ export default async function proxy(request: NextRequest) {
     const url = request.nextUrl.clone();
     url.pathname = eskiYol;
     return NextResponse.redirect(url, 308);
+  }
+
+  // Bakım kapısı: yüzey kapalıysa bakım ekranına yeniden yazılır (URL aynı kalır).
+  // Yönetici, yönetim yüzeyinde bakım sırasında da çalışabilir.
+  const yuzey = yuzeyBul(normalizedPathname);
+  if (yuzey) {
+    const bakim = await bakimDurumunuOku();
+    if (bakim?.yuzeyler[yuzey]) {
+      const yoneticiGecer = yuzey === "yonetim" && isAuthenticated && (await esAdmin());
+      if (!yoneticiGecer) {
+        // Not: rewrite yanıtında durum kodu middleware'den değil hedef sayfadan gelir (200).
+        // Bakım sayfası bu yüzden noindex'tir.
+        const rewrite = NextResponse.rewrite(new URL(bakimSayfaYolu(yuzey), request.url));
+        // Oturum cookie'leri (yenilenmiş olabilir) bakım yanıtına da taşınır.
+        response.cookies.getAll().forEach((c) => rewrite.cookies.set(c));
+        rewrite.headers.set("Cache-Control", "no-store");
+        rewrite.headers.set("Retry-After", "300");
+        return rewrite;
+      }
+    }
   }
 
   // "/yonetim-giris" ve "/veli-paneli/giris" kendi kapilari oldugu icin korumali degil;
