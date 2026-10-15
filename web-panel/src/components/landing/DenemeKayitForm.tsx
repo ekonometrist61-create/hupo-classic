@@ -1,5 +1,6 @@
 "use client";
 
+import { TurnstileWidget } from "@/components/guvenlik/TurnstileWidget";
 import { Link } from "@/i18n/navigation";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
@@ -34,6 +35,8 @@ export default function DenemeKayitForm({ examId, examAd, siniflar }: Props) {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [captchaKey, setCaptchaKey] = useState(0);
 
   const desteklenenSiniflar = SINIFLAR.filter((s) => siniflar.includes(s));
 
@@ -49,12 +52,17 @@ export default function DenemeKayitForm({ examId, examAd, siniflar }: Props) {
       setError(t("errKvkk"));
       return;
     }
+    if (!captchaToken) {
+      setError(t("errGeneric"));
+      return;
+    }
 
     setLoading(true);
 
     try {
       const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-      const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+      // Vercel'de ve .env.local'de tanımlı olan değişken; ANON_KEY adı tanımlı değil → apikey boş → 401.
+      const anonKey = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY!;
       const functionUrl = `${supabaseUrl}/functions/v1/deneme-on-kayit`;
 
       const res = await fetch(functionUrl, {
@@ -76,6 +84,7 @@ export default function DenemeKayitForm({ examId, examAd, siniflar }: Props) {
           izin_eposta: izinEposta,
           izin_sms: izinSms,
           izin_telefon: izinTelefon,
+          captcha_token: captchaToken,
         }),
       });
 
@@ -90,6 +99,9 @@ export default function DenemeKayitForm({ examId, examAd, siniflar }: Props) {
     } catch {
       setError(t("errGeneric"));
     } finally {
+      // Turnstile token'ı tek kullanımlıktır; her gönderimden sonra widget yenilenir.
+      setCaptchaToken(null);
+      setCaptchaKey((k) => k + 1);
       setLoading(false);
     }
   }
@@ -273,6 +285,8 @@ export default function DenemeKayitForm({ examId, examAd, siniflar }: Props) {
           })}
         </p>
       </div>
+
+      <TurnstileWidget onToken={setCaptchaToken} resetKey={captchaKey} />
 
       {error && (
         <p role="alert" className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">

@@ -1,9 +1,13 @@
 "use client";
 
-import { createClient } from "@/utils/supabase/client";
+import { TurnstileWidget } from "@/components/guvenlik/TurnstileWidget";
 import { useTranslations } from "next-intl";
 import { type FormEvent, useEffect, useState } from "react";
 import { erkenErisimSonrasiIzleme, ilkTemasUtm } from "./erkenErisimIzleme";
+
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+// Vercel'de tanımlı olan publishable anahtar (ANON_KEY adı tanımlı değil → 401).
+const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
 const inputClass =
   "w-full rounded-xl border border-gray-200 bg-white px-4 py-3 text-sm text-navy placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus:ring-2 focus:ring-brand-500/20 dark:border-gray-700 dark:bg-gray-800 dark:text-white dark:placeholder:text-gray-500";
@@ -16,6 +20,8 @@ export function ErkenErisimSection() {
   const [izin, setIzin] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [captchaKey, setCaptchaKey] = useState(0);
 
   // İlk temas UTM'si sayfa açılışında kaydedilir; form gönderilmese de kaybolmaz.
   useEffect(() => {
@@ -38,23 +44,50 @@ export function ErkenErisimSection() {
       return;
     }
 
+    if (!captchaToken) {
+      setErrorMsg(t("errorGeneric"));
+      setStatus("error");
+      return;
+    }
+
     setStatus("loading");
     setErrorMsg("");
 
-    const { error } = await createClient().rpc("veli_adayi_olustur", {
-      p_email: trimmedEmail,
-      p_ad: trimmedAd,
-      p_telefon: telefon.trim() || null,
-      p_kaynak: "landing_erken_erisim",
-      p_pazarlama_izni: izin,
-    });
+    // Captcha + IP sınırı Edge Function'da; doğrudan RPC çağrısı artık kapalı.
+    let ok = false;
+    let sunucuHata = "";
+    try {
+      const res = await fetch(`${SUPABASE_URL}/functions/v1/veli-adayi-kayit`, {
+        method: "POST",
+        headers: { "content-type": "application/json", apikey: SUPABASE_KEY ?? "" },
+        body: JSON.stringify({
+          email: trimmedEmail,
+          ad: trimmedAd,
+          telefon: telefon.trim() || null,
+          kaynak: "landing_erken_erisim",
+          pazarlama_izni: izin,
+          captcha_token: captchaToken,
+        }),
+      });
+      ok = res.ok;
+      if (!ok) {
+        const data = (await res.json().catch(() => ({}))) as { hata?: string };
+        sunucuHata = data.hata ?? "";
+      }
+    } catch {
+      ok = false;
+    }
 
-    if (error) {
-      setErrorMsg(t("errorGeneric"));
-      setStatus("error");
-    } else {
+    // Turnstile token'ı tek kullanımlıktır; her denemede yeni token alınır.
+    setCaptchaToken(null);
+    setCaptchaKey((k) => k + 1);
+
+    if (ok) {
       setStatus("success");
       void erkenErisimSonrasiIzleme(trimmedEmail);
+    } else {
+      setErrorMsg(sunucuHata || t("errorGeneric"));
+      setStatus("error");
     }
   };
 
@@ -123,6 +156,8 @@ export function ErkenErisimSection() {
                 onChange={(e) => setTelefon(e.target.value)}
               />
             </div>
+            <TurnstileWidget onToken={setCaptchaToken} resetKey={captchaKey} />
+
             <label className="flex cursor-pointer items-start gap-3">
               <input
                 type="checkbox"

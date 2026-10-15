@@ -1,9 +1,11 @@
 // Supabase Edge Function: deneme-on-kayit
 // Herkese açık ön kayıt uç noktası. JWT doğrulaması KAPALI (giriş gerektirmez).
-// Captcha: CAPTCHA_SECRET ortam değişkeni varsa doğrular; yoksa geçer (geliştirme modu).
-// Gizli anahtarlar: CAPTCHA_SECRET (opsiyonel), SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY (otomatik).
+// Captcha: Turnstile zorunlu (CAPTCHA_SECRET yoksa 503; yalnızca SKIP_CAPTCHA=true ile atlanır).
+// IP başına hız sınırı: 10 istek / 10 dakika.
+// Gizli anahtarlar: CAPTCHA_SECRET, SUPABASE_URL, SUPABASE_SERVICE_ROLE_KEY (otomatik).
 
 import { createClient } from "npm:@supabase/supabase-js@2";
+import { captchaKontrol, hizIzinliMi, istemciIp } from "../_shared/guvenlik.ts";
 
 declare const Deno: {
   env: { get(k: string): string | undefined };
@@ -34,25 +36,12 @@ const reply = (req: Request, status: number, body: unknown) =>
     headers: { "content-type": "application/json", ...cors(req) },
   });
 
-async function validateCaptcha(token: string, secret: string): Promise<boolean> {
-  // Cloudflare Turnstile doğrulama
-  const res = await fetch("https://challenges.cloudflare.com/turnstile/v0/siteverify", {
-    method: "POST",
-    headers: { "content-type": "application/json" },
-    body: JSON.stringify({ secret, response: token }),
-  });
-  if (!res.ok) return false;
-  const data = await res.json() as { success: boolean };
-  return data.success === true;
-}
-
 Deno.serve(async (req) => {
   if (req.method === "OPTIONS") return new Response(null, { status: 204, headers: cors(req) });
   if (req.method !== "POST") return reply(req, 405, { hata: "Yalnızca POST" });
 
   const supabaseUrl = Deno.env.get("SUPABASE_URL")!;
   const serviceKey = Deno.env.get("SUPABASE_SERVICE_ROLE_KEY")!;
-  const captchaSecret = Deno.env.get("CAPTCHA_SECRET");
 
   let body: Record<string, unknown>;
   try {
@@ -61,12 +50,15 @@ Deno.serve(async (req) => {
     return reply(req, 400, { hata: "Geçersiz JSON" });
   }
 
-  // Captcha doğrulama (CAPTCHA_SECRET varsa zorunlu)
-  if (captchaSecret) {
-    const captchaToken = typeof body.captcha_token === "string" ? body.captcha_token : "";
-    if (!captchaToken) return reply(req, 400, { hata: "Güvenlik doğrulaması gerekli" });
-    const ok = await validateCaptcha(captchaToken, captchaSecret);
-    if (!ok) return reply(req, 400, { hata: "Güvenlik doğrulaması başarısız" });
+  const admin = createClient(supabaseUrl, serviceKey, { auth: { persistSession: false } });
+
+  // Captcha (fail-closed) ve IP hız sınırı
+  const captcha = await captchaKontrol(body.captcha_token, req);
+  if (!captcha.ok) return reply(req, captcha.status, { hata: captcha.hata });
+
+  const izinli = await hizIzinliMi(admin, "deneme_on_kayit", istemciIp(req), 10, 600);
+  if (!izinli) {
+    return reply(req, 429, { hata: "Çok fazla deneme yaptınız. Birkaç dakika sonra tekrar deneyin." });
   }
 
   // Giriş doğrulama
@@ -89,8 +81,6 @@ Deno.serve(async (req) => {
   if (!sinif || sinif < 1 || sinif > 12) return reply(req, 400, { hata: "Geçerli bir sınıf seçin" });
   if (!eposta.includes("@")) return reply(req, 400, { hata: "Geçerli bir e-posta girin" });
   if (!kvkk_onay) return reply(req, 400, { hata: "KVKK onayı zorunludur" });
-
-  const admin = createClient(supabaseUrl, serviceKey, { auth: { persistSession: false } });
 
   const { data, error } = await admin.rpc("deneme_on_kayit_ekle", {
     p_exam_id: exam_id,
