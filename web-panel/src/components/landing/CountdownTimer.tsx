@@ -26,24 +26,30 @@ interface CountdownTimerProps {
 }
 
 export function CountdownTimer({ targetDate, labels }: CountdownTimerProps) {
-  const [timeLeft, setTimeLeft] = useState<TimeLeft | null>(() => calcTimeLeft(targetDate));
+  // Süre yalnızca istemcide, bağlandıktan sonra hesaplanır. Render sırasında Date.now()
+  // kullanmak sunucu ve ilk istemci çıktısını farklılaştırır (hidrasyon hatası).
+  // undefined: henüz hesaplanmadı (yer tutucu), null: süre doldu.
+  const [timeLeft, setTimeLeft] = useState<TimeLeft | null | undefined>(undefined);
 
   useEffect(() => {
-    const id = setInterval(() => setTimeLeft(calcTimeLeft(targetDate)), 1000);
+    const guncelle = () => setTimeLeft(calcTimeLeft(targetDate));
+    guncelle();
+    const id = setInterval(guncelle, 1000);
     return () => clearInterval(id);
   }, [targetDate]);
 
-  if (!timeLeft) {
-    return (
-      <p className="text-center text-xl font-extrabold text-gold-500">{labels.started}</p>
-    );
+  if (timeLeft === null) {
+    return <p className="text-center text-xl font-extrabold text-gold-500">{labels.started}</p>;
   }
 
+  const deger = (alan: keyof TimeLeft) =>
+    timeLeft ? String(timeLeft[alan]).padStart(2, "0") : "--";
+
   const units = [
-    { value: timeLeft.days, label: labels.days },
-    { value: timeLeft.hours, label: labels.hours },
-    { value: timeLeft.minutes, label: labels.minutes },
-    { value: timeLeft.seconds, label: labels.seconds },
+    { value: deger("days"), label: labels.days },
+    { value: deger("hours"), label: labels.hours },
+    { value: deger("minutes"), label: labels.minutes },
+    { value: deger("seconds"), label: labels.seconds },
   ];
 
   return (
@@ -52,9 +58,7 @@ export function CountdownTimer({ targetDate, labels }: CountdownTimerProps) {
         <div key={label} className="flex items-center gap-3 sm:gap-4">
           <div className="flex flex-col items-center">
             <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-white/10 sm:h-16 sm:w-16">
-              <span className="text-2xl font-extrabold tabular-nums sm:text-3xl">
-                {String(value).padStart(2, "0")}
-              </span>
+              <span className="text-2xl font-extrabold tabular-nums sm:text-3xl">{value}</span>
             </div>
             <span className="mt-1 text-[10px] font-bold uppercase tracking-widest opacity-75">
               {label}
