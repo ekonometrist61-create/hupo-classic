@@ -60,7 +60,7 @@ export function MobileMenu() {
               </a>
             ))}
             <Link
-              href="/signin"
+              href="/veli-paneli/giris"
               onClick={() => setOpen(false)}
               className="flex min-h-11 items-center rounded-lg px-3 text-base font-semibold text-navy-muted hover:bg-cream-dark dark:text-gray-400 dark:hover:bg-gray-800"
             >

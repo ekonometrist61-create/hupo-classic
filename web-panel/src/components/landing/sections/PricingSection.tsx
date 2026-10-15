@@ -127,7 +127,7 @@ export async function PricingSection() {
                 </ul>
 
                 <Link
-                  href={tip.kod === "free" ? "/demo" : "/signup"}
+                  href={tip.kod === "free" ? "/demo" : "/veli-paneli/kayit"}
                   className={`mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none ${
                     isPopular
                       ? "bg-brand-500 text-white hover:bg-brand-600 focus-visible:outline-brand-500"

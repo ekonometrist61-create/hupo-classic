@@ -7,10 +7,23 @@ import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
-// Veliler ve adminler bu ekrandan Supabase Auth ile giris yapar.
-// Rol denetimi veritabaninda da zorunludur (public.profiles.role ve RLS);
-// buradaki kontrol yalnizca kullaniciyi dogru panele yonlendirir.
-// `variant="yonetim"`: yonetim girisi; yetkisiz hesap oturumu kapatilarak reddedilir.
+// Her giriş kapısının kendi rolleri var; giriş sonrası hedef sabittir (rol bazlı yönlendirme yok).
+// Veli ve öğretmen aynı kapıyı kullanır. Öğrenci hesapları bu sitedeki kapılarda kullanılmaz,
+// app.hupolingo.com üzerinden girer. Asıl yetki veritabanındadır (RLS, admin fonksiyonları).
+type Kapi = "veli" | "yonetim";
+
+const KAPI_ROLLERI: Record<Kapi, readonly string[]> = {
+  veli: ["veli", "ogretmen"],
+  yonetim: ["admin", "ogretmen"],
+};
+
+const HEDEF: Record<Kapi, string> = {
+  veli: "/veli-paneli",
+  yonetim: "/yonetim",
+};
+
+type Hata = { mesaj: string; baglanti?: { metin: string; href: string; dis: boolean } };
+
 const fieldClass =
   "mt-1.5 block h-12 w-full rounded-xl border border-gray-500 bg-white px-4 text-base text-navy placeholder:text-gray-500 focus:border-brand-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500";
 
@@ -21,13 +34,13 @@ const adminFieldClass =
 const linkClass =
   "font-semibold underline underline-offset-4 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500";
 
-export default function SignInForm({ variant = "veli" }: { variant?: "veli" | "yonetim" }) {
+export default function SignInForm({ variant = "veli" }: { variant?: Kapi }) {
   const t = useTranslations("signin");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<string | null>(null);
+  const [error, setError] = useState<Hata | null>(null);
 
   const router = useRouter();
   const yonetim = variant === "yonetim";
@@ -44,40 +57,52 @@ export default function SignInForm({ variant = "veli" }: { variant?: "veli" | "y
     });
 
     if (authError) {
-      setError(
-        authError.message === "Invalid login credentials"
-          ? t("errorInvalid")
-          : authError.message
-      );
+      setError({
+        mesaj:
+          authError.message === "Invalid login credentials"
+            ? t("errorInvalid")
+            : authError.message,
+      });
       setLoading(false);
       return;
     }
 
-    // Rolu okuyup dogru panele yonlendir.
     const { data: profile } = await supabase
       .from("profiles")
       .select("role")
       .eq("id", data.user.id)
       .maybeSingle();
 
-    const yonetici = profile?.role === "admin" || profile?.role === "ogretmen";
+    const rol = profile?.role ?? null;
 
-    // Yonetim girisinde yetkisiz hesap oturum acmis kalmasin.
-    if (yonetim && !yonetici) {
-      await supabase.auth.signOut();
-      setError(t("adminNotAllowed"));
+    // Kapının rolüne uyan hesap içeri alınır; diğerleri oturumu kapatılarak reddedilir.
+    if (rol && KAPI_ROLLERI[variant].includes(rol)) {
       setLoading(false);
+      router.replace(HEDEF[variant]);
       return;
     }
 
-    // Öğrenci uygulaması ayrı origin'de (Flutter web): tam sayfa geçişi.
-    if (profile?.role === "ogrenci") {
-      window.location.assign(STUDENT_APP_URL);
-      return;
-    }
-
+    await supabase.auth.signOut();
     setLoading(false);
-    router.replace(yonetici ? "/yonetim" : "/veli-paneli");
+
+    if (rol === "ogrenci") {
+      setError({
+        mesaj: t("errorStudent"),
+        baglanti: { metin: t("errorStudentLink"), href: STUDENT_APP_URL, dis: true },
+      });
+    } else if (rol === "admin" && !yonetim) {
+      setError({
+        mesaj: t("errorAdminOnVeli"),
+        baglanti: { metin: t("errorAdminOnVeliLink"), href: "/yonetim-giris", dis: false },
+      });
+    } else if (rol === "veli" && yonetim) {
+      setError({
+        mesaj: t("adminNotAllowed"),
+        baglanti: { metin: t("adminNotAllowedLink"), href: "/veli-paneli/giris", dis: false },
+      });
+    } else {
+      setError({ mesaj: t("errorNoRole") });
+    }
   }
 
   return (
@@ -158,13 +183,29 @@ export default function SignInForm({ variant = "veli" }: { variant?: "veli" | "y
           </div>
 
           {error && (
-            <p
+            <div
               id="signin-error"
               role="alert"
               className="rounded-xl border border-error-200 bg-error-50 px-4 py-3 text-sm font-medium text-error-700"
             >
-              {error}
-            </p>
+              <p>{error.mesaj}</p>
+              {error.baglanti &&
+                (error.baglanti.dis ? (
+                  <a
+                    href={error.baglanti.href}
+                    className={`mt-2 inline-block text-error-800 hover:text-error-900 ${linkClass}`}
+                  >
+                    {error.baglanti.metin}
+                  </a>
+                ) : (
+                  <Link
+                    href={error.baglanti.href}
+                    className={`mt-2 inline-block text-error-800 hover:text-error-900 ${linkClass}`}
+                  >
+                    {error.baglanti.metin}
+                  </Link>
+                ))}
+            </div>
           )}
 
           <button
@@ -193,7 +234,7 @@ export default function SignInForm({ variant = "veli" }: { variant?: "veli" | "y
       {yonetim ? (
         <p className="mt-6 text-center text-sm text-navy-muted">
           {t("parentSwitch")}{" "}
-          <Link href="/signin" className={`text-brand-700 hover:text-brand-800 ${linkClass}`}>
+          <Link href="/veli-paneli/giris" className={`text-brand-700 hover:text-brand-800 ${linkClass}`}>
             {t("parentSwitchLink")}
           </Link>
         </p>
@@ -201,11 +242,17 @@ export default function SignInForm({ variant = "veli" }: { variant?: "veli" | "y
         <>
           <p className="mt-6 text-center text-sm text-navy-muted">
             {t("noAccount")}{" "}
-            <Link href="/signup" className={`text-brand-700 hover:text-brand-800 ${linkClass}`}>
+            <Link href="/veli-paneli/kayit" className={`text-brand-700 hover:text-brand-800 ${linkClass}`}>
               {t("signupLink")}
             </Link>
           </p>
           <p className="mt-3 text-center text-xs text-navy-muted">
+            {t("studentSwitch")}{" "}
+            <a href={STUDENT_APP_URL} className={`text-navy hover:text-navy-light ${linkClass}`}>
+              {t("studentSwitchLink")}
+            </a>
+          </p>
+          <p className="mt-2 text-center text-xs text-navy-muted">
             {t("adminSwitch")}{" "}
             <Link href="/yonetim-giris" className={`text-navy hover:text-navy-light ${linkClass}`}>
               {t("adminSwitchLink")}

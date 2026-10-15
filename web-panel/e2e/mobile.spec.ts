@@ -18,7 +18,7 @@ test.describe("Mobil görünüm", () => {
   });
 
   test("giriş ekranında yatay kaydırma yok", async ({ page }) => {
-    await page.goto("/signin");
+    await page.goto("/veli-paneli/giris");
     await expect(page.locator("#email")).toBeVisible();
     expect(await yatayTasma(page)).toBeLessThanOrEqual(1);
   });
@@ -39,7 +39,7 @@ test.describe("Mobil görünüm", () => {
   });
 
   test("giriş formu dokunma hedefleri en az 44px", async ({ page }) => {
-    await page.goto("/signin");
+    await page.goto("/veli-paneli/giris");
     // Apple HIG ve Material önerisi: dokunma hedefi en az 44x44 px.
     for (const secici of ["#email", "#password", 'form button[type="submit"]']) {
       const kutu = await page.locator(secici).boundingBox();

@@ -94,7 +94,7 @@ export default function DemoQuiz() {
         </p>
         <p className="mt-2 text-navy-muted dark:text-gray-300">{t("doneNote")}</p>
         <div className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
-          <Link href="/signup" className={primaryBtn}>
+          <Link href="/veli-paneli/kayit" className={primaryBtn}>
             {t("signup")}
             <IconArrowRight className="h-5 w-5" />
           </Link>

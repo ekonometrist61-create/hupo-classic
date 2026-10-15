@@ -74,8 +74,8 @@ export async function LandingFooter() {
           <ul className="mt-3 space-y-1 text-navy-muted dark:text-gray-300">
             <li><a href="#why-parents" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.parentGuide")}</a></li>
             <li><a href="#report" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.parentPanel")}</a></li>
-            <li><Link href="/signup" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.signup")}</Link></li>
-            <li><Link href="/signin" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.signin")}</Link></li>
+            <li><Link href="/veli-paneli/kayit" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.signup")}</Link></li>
+            <li><Link href="/veli-paneli/giris" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.signin")}</Link></li>
             <li><a href={STUDENT_APP_URL} className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.studentLogin")}</a></li>
           </ul>
         </nav>

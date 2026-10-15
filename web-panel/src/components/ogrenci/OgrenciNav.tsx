@@ -2,7 +2,7 @@
 
 import { Link } from "@/i18n/navigation";
 import { createClient } from "@/utils/supabase/client";
-import { useRouter } from "@/i18n/navigation";
+import { STUDENT_APP_URL } from "@/lib/app-url";
 import { useEffect, useState } from "react";
 
 interface OgrenciProfil {
@@ -13,7 +13,6 @@ interface OgrenciProfil {
 }
 
 export default function OgrenciNav() {
-  const router = useRouter();
   const [profil, setProfil] = useState<OgrenciProfil | null>(null);
 
   useEffect(() => {
@@ -39,7 +38,7 @@ export default function OgrenciNav() {
 
   const cikisYap = async () => {
     await createClient().auth.signOut();
-    router.replace("/signin");
+    window.location.assign(STUDENT_APP_URL);
   };
 
   return (

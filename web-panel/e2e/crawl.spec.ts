@@ -13,8 +13,9 @@ const DIS_LINK_KONTROL = process.env.E2E_SKIP_EXTERNAL !== "1";
 // Oturum gerektirmeyen, veri değiştirmeyen herkese açık sayfalar.
 const KAMU_TOHUMLAR = [
   "/",
-  "/signin",
-  "/signup",
+  "/veli-paneli/giris",
+  "/veli-paneli/kayit",
+  "/yonetim-giris",
   "/demo",
   "/sifre-unuttum",
   "/gizlilik",

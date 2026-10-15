@@ -179,7 +179,7 @@ export default async function DenemesonuclariPage({
               Kendi sonucunu görmek için giriş yap.
             </p>
             <Link
-              href="/signin"
+              href="/veli-paneli/giris"
               className="mt-3 inline-block rounded-lg bg-brand-500 px-5 py-2 text-sm font-bold text-white hover:bg-brand-600"
             >
               Giriş Yap
@@ -262,7 +262,7 @@ export default async function DenemesonuclariPage({
               Ücretsiz kaydol, çocuğunu bir sonraki denemeye kaydet.
             </p>
             <Link
-              href="/signup"
+              href="/veli-paneli/kayit"
               className="mt-4 inline-block rounded-xl bg-white px-6 py-2.5 text-sm font-bold text-brand-600 hover:bg-gray-100"
             >
               Ücretsiz Kaydol

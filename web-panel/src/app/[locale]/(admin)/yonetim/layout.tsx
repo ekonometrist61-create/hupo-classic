@@ -29,7 +29,7 @@ export default async function YonetimLayout({
   // Öğretmen yalnızca /yonetim/siniflar'ı kullanır; diğer sayfalardan istemci tarafındaki
   // RoleGuard onu oraya döndürür, veri erişimi ise veritabanında rol kontrolüyle kapalıdır.
   if (profile?.role !== "admin" && profile?.role !== "ogretmen") {
-    redirect({ href: "/veli-paneli", locale });
+    redirect({ href: "/yonetim-giris", locale });
   }
 
   return <>{children}</>;

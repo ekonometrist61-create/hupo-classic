@@ -73,7 +73,7 @@ export async function ParentPanelSection() {
             </p>
             <div className="mt-6">
               <Link
-                href="/signup"
+                href="/veli-paneli/kayit"
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-brand-600"
               >
                 Veli Hesabı Oluştur

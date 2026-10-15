@@ -33,15 +33,24 @@ export async function karsilamaAtla(page: Page) {
  * yoksa mobil menü düğmesine basılıp bağlantı orada aranır.
  */
 export async function girisBaglantisi(page: Page) {
-  if ((await page.locator('a[href="/signin"]:visible').count()) === 0) {
+  const secici = 'a[href="/veli-paneli/giris"]:visible';
+  if ((await page.locator(secici).count()) === 0) {
     await page.locator("header button[aria-expanded]").click();
   }
-  return page.locator('a[href="/signin"]:visible').first();
+  return page.locator(secici).first();
 }
 
+/** Giriş kapıları: veli (ve öğretmen) ile yönetim ayrı adreslerde. */
+export const KAPI_YOLU = { veli: "/veli-paneli/giris", yonetim: "/yonetim-giris" } as const;
+
 /** Giriş formunu doldurup gönderir. Başarı kontrolü çağıran testte yapılır. */
-export async function girisYap(page: Page, email: string, password: string) {
-  await page.goto("/signin");
+export async function girisYap(
+  page: Page,
+  email: string,
+  password: string,
+  kapi: keyof typeof KAPI_YOLU = "veli",
+) {
+  await page.goto(KAPI_YOLU[kapi]);
   await page.locator("#email").fill(email);
   await page.locator("#password").fill(password);
   await page.locator('form button[type="submit"]').click();

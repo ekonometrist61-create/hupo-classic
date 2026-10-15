@@ -717,3 +717,13 @@ Karar (kullanıcı onayı, 2026-10-14): arşivleme hem duyuru hem anket için; s
 - [ ] **Vercel token:** sohbette paylaşıldı; işler bitince iptal edip yenisini üret.
 - [ ] **Görsel kontroller:** veli paneli bandı, anket/duyuru formları, karanlık mod, Flutter web ve mobil ekranlar.
 - [ ] **Mobil mağaza sürümü (Play / App Store):** başlanmadı; imzalama ve hesap gerekli.
+
+### 18. Alan adı mimarisi (karar, 2026-10-15)
+Karar (kullanıcı): yönetim ve veli panelleri **alt klasör**, web uygulaması **alt alan adı**.
+- `hupolingo.com/yonetim` ve `hupolingo.com/yonetim-giris`: yönetim paneli ve girişi. Alt alan adı açılmayacak.
+- `hupolingo.com/veli-paneli`: veli paneli. Alt alan adı açılmayacak.
+- `app.hupolingo.com`: Flutter web uygulaması (öğrenci). Tek alt alan adı bu.
+- Giriş kapıları (2026-10-15): veli ve öğretmen `hupolingo.com/veli-paneli/giris` (kayıt: `/veli-paneli/kayit`); yönetici ve öğretmen `hupolingo.com/yonetim-giris`. Giriş sonrası hedef sabit (rol bazlı yönlendirme yok); her kapı yalnızca kendi rollerini kabul eder, diğer hesaplar oturumu kapatılarak reddedilir. Öğrenci hesabı bu sitede giriş yapmaz, `app.hupolingo.com`'a yönlenir.
+- Eski `/signin` ve `/signup` adresleri kalıcı yönlendirmeyle yeni kapılara gider (`proxy.ts`).
+- Supabase auth: site URL `https://hupolingo.com`; redirect izin listesi `hupolingo.com` ve `app.hupolingo.com` (`/**` dahil). 2026-10-15 config push ile uygulandı.
+- Açık: öğretmen veli panelinde boş bir ekranla karşılaşabilir (yönetim kapısı da öğretmene açık; hangi kapıdan giriş yaptığına göre sayfa farklı değil). Ürün kararı bekliyor.

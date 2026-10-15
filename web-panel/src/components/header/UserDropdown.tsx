@@ -61,7 +61,8 @@ export default function UserDropdown() {
 
   const handleSignOut = async () => {
     await createClient().auth.signOut();
-    router.replace("/signin");
+    // Yönetim alanından çıkış yönetim girişine, diğer alanlar veli girişine döner.
+    router.replace(pathname.startsWith("/yonetim") ? "/yonetim-giris" : "/veli-paneli/giris");
   };
 
   const displayName = adSoyad ?? email?.split("@")[0] ?? "—";

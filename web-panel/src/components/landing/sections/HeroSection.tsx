@@ -28,7 +28,7 @@ export async function HeroSection() {
             {t("hero.ctaPrimary")}
             <IconArrowRight className="h-5 w-5" />
           </Link>
-          <Link href="/signup" className={secondaryBtn}>
+          <Link href="/veli-paneli/kayit" className={secondaryBtn}>
             {t("hero.ctaSecondary")}
           </Link>
         </div>

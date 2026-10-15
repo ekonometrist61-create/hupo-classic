@@ -49,7 +49,7 @@ export async function LandingHeader() {
         <div className="flex items-center gap-2 sm:gap-3">
           <FontSizeToggle />
           <Link
-            href="/signin"
+            href="/veli-paneli/giris"
             className="hidden min-h-11 items-center px-2 text-sm font-bold text-navy hover:text-brand-600 sm:inline-flex dark:text-gray-100 dark:hover:text-brand-300"
           >
             {t("nav.signin")}

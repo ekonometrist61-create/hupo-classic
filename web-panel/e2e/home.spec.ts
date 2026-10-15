@@ -27,7 +27,7 @@ test.describe("Ana sayfa", () => {
   test("giriş ekranına bağlantı çalışıyor", async ({ page }) => {
     await page.goto("/");
     await (await girisBaglantisi(page)).click();
-    await expect(page).toHaveURL(/\/signin$/);
+    await expect(page).toHaveURL(/\/veli-paneli\/giris$/);
     await expect(page.locator("#email")).toBeVisible();
   });
 });

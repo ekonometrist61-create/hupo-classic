@@ -82,17 +82,17 @@ export default async function YonetimGiris() {
           </span>
         </div>
 
-        <div className="relative hidden flex-1 flex-col justify-center py-12 lg:flex">
+        <div className="relative mt-6 flex flex-1 flex-col justify-center lg:mt-0 lg:py-12">
           <p className="text-xs font-semibold tracking-[0.14em] text-white/55 uppercase">
             {t("eyebrow")}
           </p>
-          <p className="mt-3 text-4xl font-bold tracking-tight">{t("title")}</p>
-          <p className="mt-4 max-w-md text-base leading-relaxed text-white/75">{t("lead")}</p>
+          <h2 className="mt-2 text-xl font-bold tracking-tight lg:mt-3 lg:text-4xl">{t("title")}</h2>
+          <p className="mt-4 hidden max-w-md text-base leading-relaxed text-white/75 lg:block">{t("lead")}</p>
 
-          <p className="mt-12 text-xs font-semibold tracking-[0.14em] text-white/55 uppercase">
+          <p className="mt-12 hidden text-xs font-semibold tracking-[0.14em] text-white/55 uppercase lg:block">
             {t("areasTitle")}
           </p>
-          <ul className="mt-4 divide-y divide-white/10 border-y border-white/10">
+          <ul className="mt-4 hidden divide-y divide-white/10 border-y border-white/10 lg:block">
             {alanlar.map((alan) => (
               <li key={alan.baslik} className="flex items-start gap-4 py-4">
                 <span className="grid size-9 shrink-0 place-items-center rounded-lg bg-white/10 text-white">

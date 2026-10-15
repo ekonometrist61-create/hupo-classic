@@ -79,7 +79,7 @@ const VeliSidebar: React.FC = () => {
 
   const cikisYap = async () => {
     await createClient().auth.signOut();
-    router.replace("/signin");
+    router.replace("/veli-paneli/giris");
   };
 
   const wide = isExpanded || isHovered || isMobileOpen;

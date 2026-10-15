@@ -118,7 +118,7 @@ export default function ResetPasswordForm() {
           </p>
           <button
             type="button"
-            onClick={() => router.replace("/signin")}
+            onClick={() => router.replace("/veli-paneli/giris")}
             className="mt-6 inline-flex h-12 w-full cursor-pointer items-center justify-center rounded-xl bg-brand-500 px-6 text-base font-semibold text-white transition-colors hover:bg-brand-600 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
           >
             {t("backToSignin")}

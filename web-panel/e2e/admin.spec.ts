@@ -14,7 +14,7 @@ test.describe("Yönetim paneli (admin)", () => {
     if (DEMO) {
       await page.goto("/yonetim");
     } else {
-      await girisYap(page, hesap!.email, hesap!.password);
+      await girisYap(page, hesap!.email, hesap!.password, "yonetim");
       await page.waitForURL(/\/yonetim/, { timeout: 30_000 });
     }
 
@@ -30,7 +30,7 @@ test.describe("Yönetim paneli (admin)", () => {
       await page.goto("/yonetim");
     } else {
       const hesap = hesapBilgisi("admin")!;
-      await girisYap(page, hesap.email, hesap.password);
+      await girisYap(page, hesap.email, hesap.password, "yonetim");
       await page.waitForURL(/\/yonetim/, { timeout: 30_000 });
     }
 

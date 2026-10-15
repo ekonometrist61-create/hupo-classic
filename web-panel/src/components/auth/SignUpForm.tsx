@@ -61,7 +61,7 @@ export default function SignUpForm() {
           iletisim_telefon: izinTelefon,
           iletisim_metin_surumu: ILETISIM_METIN_SURUMU,
         },
-        emailRedirectTo: `${window.location.origin}/signin`,
+        emailRedirectTo: `${window.location.origin}/veli-paneli/giris`,
       },
     });
     setLoading(false);
@@ -100,7 +100,7 @@ export default function SignUpForm() {
             {t("successBody")}
           </p>
           <Link
-            href="/signin"
+            href="/veli-paneli/giris"
             className="mt-6 inline-flex h-12 w-full items-center justify-center rounded-xl bg-brand-500 px-6 text-base font-semibold text-white transition-colors hover:bg-brand-600 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
           >
             {t("signinLink")}
@@ -264,7 +264,7 @@ export default function SignUpForm() {
       <p className="mt-6 text-center text-sm text-navy-muted">
         {t("hasAccount")}{" "}
         <Link
-          href="/signin"
+          href="/veli-paneli/giris"
           className="font-semibold text-brand-700 underline underline-offset-4 hover:text-brand-800 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
         >
           {t("signinLink")}

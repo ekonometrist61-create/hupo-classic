@@ -145,7 +145,7 @@ export async function CharacterUniverseSection() {
 
         {/* CTA */}
         <div className="mt-12 flex justify-center">
-          <Link href="/signup" className={primaryBtn}>
+          <Link href="/veli-paneli/kayit" className={primaryBtn}>
             {t("characters.cta")}
             <IconArrowRight className="h-5 w-5" />
           </Link>
