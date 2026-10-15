@@ -2,16 +2,16 @@ import SignInForm from "@/components/auth/SignInForm";
 import BrandMark from "@/components/common/BrandMark";
 import { Link } from "@/i18n/navigation";
 import { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import React from "react";
 
 // Yönetim girişi: kurumsal ve operasyonel. Pazarlama dili, maskot ve animasyon yok;
 // arama motorlarına kapalı. Kenar panelindeki alanlar mevcut yönetim sayfalarını anlatır.
-export const metadata: Metadata = {
-  title: "Yönetim Paneli Girişi | Hupolingo",
-  description: "Hupolingo yönetim paneli. Yalnızca yetkili hesaplar.",
-  robots: { index: false, follow: false },
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta.yonetimGiris" });
+  return { title: t("title"), description: t("description"), robots: { index: false, follow: false } };
+}
 
 function Icon({ children }: { children: React.ReactNode }) {
   return (
@@ -57,7 +57,9 @@ const ikonlar = [
   </Icon>,
 ];
 
-export default async function YonetimGiris() {
+export default async function YonetimGiris({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("adminSignin");
   const alanlar = [1, 2, 3, 4, 5].map((n, i) => ({
     ikon: ikonlar[i],

@@ -1,15 +1,18 @@
 import GridShape from "@/components/common/GridShape";
 import { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-export const metadata: Metadata = {
-  title: "Sayfa Bulunamadı | Hupo",
-  description: "Aradığınız sayfa bulunamadı.",
-};
+export async function generateMetadata(): Promise<Metadata> {
+  const t = await getTranslations("meta.hataSayfasi");
+  return { title: t("title"), description: t("description") };
+}
 
-export default function Error404() {
+export default async function Error404({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen p-6 overflow-hidden z-1">
       <GridShape />

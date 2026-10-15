@@ -1,15 +1,13 @@
 import DenemeKayitForm from "@/components/landing/DenemeKayitForm";
 import { createClient } from "@/utils/supabase/server";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Link from "next/link";
 
-export async function generateMetadata(): Promise<Metadata> {
-  return {
-    title: "Deneme Sınavına Kaydol | Hupolingo",
-    description:
-      "Türkiye geneli Hupolingo deneme sınavına kaydolun. Ücretsiz, giriş gerektirmez.",
-  };
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta.denemeKayit" });
+  return { title: t("title"), description: t("description") };
 }
 
 interface ExamInfo {
@@ -30,7 +28,9 @@ async function fetchOpenExam(): Promise<ExamInfo | null> {
   }
 }
 
-export default async function DenemeKayitPage() {
+export default async function DenemeKayitPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("landing.denemeKayit");
   const exam = await fetchOpenExam();
 

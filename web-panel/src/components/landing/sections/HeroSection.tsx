@@ -10,6 +10,7 @@ const secondaryBtn =
 
 export async function HeroSection() {
   const t = await getTranslations("landing");
+  const g = await getTranslations("gorseller");
 
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-8 px-4 pb-12 pt-10 sm:px-6 sm:pb-14 sm:pt-12 lg:grid-cols-[1.1fr_0.9fr] lg:gap-6 lg:px-8 lg:pb-16 lg:pt-14">
@@ -45,7 +46,7 @@ export async function HeroSection() {
           className="absolute inset-x-6 bottom-0 top-6 rounded-[3rem] bg-gold-100 dark:bg-gold-900/30"
         />
         <Image
-          src="/hupo/hero.webp"
+          src={g("hupo.hero")}
           alt={t("hero.mascotAlt")}
           width={713}
           height={760}

@@ -68,6 +68,7 @@ const secondaryBtn =
 
 export default function DemoQuiz() {
   const t = useTranslations("demo");
+  const g = useTranslations("gorseller");
   const [state, dispatch] = useReducer(reducer, INITIAL);
   const question = DEMO_QUESTIONS[state.index];
   const checked = state.phase === "checked";
@@ -80,7 +81,7 @@ export default function DemoQuiz() {
         className="mx-auto flex max-w-xl flex-col items-center rounded-3xl border border-cream-dark bg-white p-8 text-center shadow-sm dark:border-gray-700 dark:bg-gray-800"
       >
         <Image
-          src="/hupo/tamamlandi.webp"
+          src={g("hupo.tamamlandi")}
           alt={t("poseAlt.done")}
           width={420}
           height={404}
@@ -224,7 +225,7 @@ export default function DemoQuiz() {
         {/* Geri bildirim: nazik canlı bölge; odak zorla taşınmaz */}
         <div aria-live="polite" className="mt-6 flex items-start gap-4">
           <Image
-            src={`/hupo/${pose}.webp`}
+            src={g(`hupo.${pose}`)}
             alt={poseAlt}
             width={poseSize.width}
             height={poseSize.height}

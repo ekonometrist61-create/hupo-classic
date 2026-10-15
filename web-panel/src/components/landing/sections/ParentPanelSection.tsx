@@ -76,7 +76,7 @@ export async function ParentPanelSection() {
                 href="/veli-paneli/kayit"
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-brand-600"
               >
-                Veli Hesabı Oluştur
+                {t("ctaLabel")}
               </Link>
             </div>
           </div>
@@ -93,7 +93,7 @@ export async function ParentPanelSection() {
                 <p style={{ fontSize: "14px", fontWeight: 800, color: P.ink, margin: 0 }}>Ece Yılmaz</p>
               </div>
               <div style={{ background: P.card, border: `1px solid ${P.border}`, borderRadius: "8px", padding: "4px 12px", fontSize: "11px", color: P.muted }}>
-                Son 7 gün
+                {t("sampleRange")}
               </div>
             </div>
 

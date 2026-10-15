@@ -7,6 +7,7 @@ import Link from "next/link";
 
 export async function LandingFooter() {
   const t = await getTranslations("landing");
+  const g = await getTranslations("gorseller");
 
   return (
     <footer className={`${marketingFont.className} bg-cream py-10 dark:bg-gray-950`}>
@@ -14,7 +15,7 @@ export async function LandingFooter() {
         {/* Marka */}
         <div>
           <p className="flex items-center gap-2 text-xl font-extrabold">
-            <Image src="/hupo/hosgeldin.webp" alt="" width={420} height={415} className="h-9 w-9 object-contain" />
+            <Image src={g("hupo.hosgeldin")} alt="" width={420} height={415} className="h-9 w-9 object-contain" />
             {t("brand")}
           </p>
           <p className="mt-3 leading-relaxed text-navy-muted dark:text-gray-300">{t("footer.tagline")}</p>
@@ -62,7 +63,7 @@ export async function LandingFooter() {
             <li><Link href="/demo" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.demo")}</Link></li>
             <li><a href="#how-it-works" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.how")}</a></li>
             <li><a href="#characters" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.characters")}</a></li>
-            <li><a href="#deneme-exam" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.denemeExam")}</a></li>
+            <li><a href="#deneme-sinavi"className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.denemeExam")}</a></li>
             <li><a href="#pricing" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.pricing")}</a></li>
             <li><a href="#faq" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.faq")}</a></li>
           </ul>

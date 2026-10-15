@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import TekrarDenedButton from "./TekrarDenedButton";
 
 // Bakım ekranı: kurumsal, sakin, suçlamayan. Arama motorlarına kapalı.
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("meta.bakim");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta.bakim" });
   return { title: t("title"), description: t("description"), robots: { index: false, follow: false } };
 }
 

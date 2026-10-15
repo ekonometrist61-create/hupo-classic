@@ -1,6 +1,6 @@
 import BrandMark from "@/components/common/BrandMark";
 import { Link } from "@/i18n/navigation";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import React from "react";
 
@@ -9,10 +9,15 @@ import React from "react";
 // adım akışı ve yüzen Hupo (hareket tercihi "azalt" ise sabit).
 export default async function AuthLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("signin");
+  const g = await getTranslations("gorseller");
   const steps = [t("step1"), t("step2"), t("step3")];
 
   return (
@@ -27,7 +32,7 @@ export default async function AuthLayout({
 
           <div className="mt-6 flex items-center gap-3 lg:hidden">
             <Image
-              src="/hupo/hosgeldin.webp"
+              src={g("hupo.hosgeldin")}
               alt=""
               width={64}
               height={64}
@@ -81,7 +86,7 @@ export default async function AuthLayout({
               <p className="mt-3 text-sm font-semibold text-white/90">{t("brandCaption")}</p>
             </div>
             <Image
-              src="/hupo/hero.webp"
+              src={g("hupo.hero")}
               alt="Hupo"
               width={360}
               height={380}

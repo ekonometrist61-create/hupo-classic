@@ -1,3 +1,4 @@
+import { useTranslations } from "next-intl";
 import Image from "next/image";
 
 /** Onaylı Hupo maskotu + "hupolingo" yazısı. Repoda resmi logo dosyası bulunana kadar
@@ -9,11 +10,12 @@ export default function BrandMark({
   onDark?: boolean;
   compact?: boolean;
 }) {
+  const g = useTranslations("gorseller");
   return (
     <span className="flex items-center gap-2.5">
       <span className="grid size-9 shrink-0 place-items-center rounded-xl bg-gold-500">
         <Image
-          src="/hupo/hosgeldin.webp"
+          src={g("hupo.hosgeldin")}
           alt={compact ? "Hupolingo" : ""}
           width={28}
           height={28}

@@ -50,6 +50,7 @@
         "ekipAkisi": "Team Feed",
         "destekMasasi": "Support Desk",
         "mesajSablonlari": "Message templates",
+        "siteIcerik": "Site content",
         "settings": "App settings"
       },
       "pageDesc": {
@@ -73,7 +74,8 @@
         "growthAnalitik": "Growth analytics — conversion funnel and segment metrics",
         "aiOneriler": "AI recommendations — next best action",
         "journey-otomasyonlari": "Journey automations — customer journeys",
-        "mesajSablonlari": "Message templates — channel-based content"
+        "mesajSablonlari": "Message templates — channel-based content",
+        "siteIcerik": "Site content — landing, sign-in, sign-up and parent panel texts"
       },
       "command": {
         "open": "Search everywhere...",

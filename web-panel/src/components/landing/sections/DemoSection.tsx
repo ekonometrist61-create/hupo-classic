@@ -8,6 +8,7 @@ const primaryBtn =
 
 export async function DemoSection() {
   const t = await getTranslations("landing");
+  const g = await getTranslations("gorseller");
   const demoOptions = t.raw("demo.options") as string[];
 
   return (
@@ -66,7 +67,7 @@ export async function DemoSection() {
             </ul>
           </div>
           <Image
-            src="/hupo/dusunuyor.webp"
+            src={g("hupo.dusunuyor")}
             alt=""
             width={265}
             height={360}

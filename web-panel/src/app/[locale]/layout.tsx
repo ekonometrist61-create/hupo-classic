@@ -17,6 +17,11 @@ export function generateStaticParams() {
   return routing.locales.map((locale) => ({ locale }));
 }
 
+// CMS (site_icerik) değişiklikleri yayına çıksın diye statik sayfalar 60 sn'de bir yeniden üretilir.
+// Dinamik işaretlenen sayfalarda bu ayar etkisizdir; o durumda metin verisi 60 sn önbellekten gelir
+// (bkz. lib/cms/icerik-sunucu.ts). Yeniden derleme gerekmez.
+export const revalidate = 60;
+
 export default async function RootLayout({
   children,
   params,

@@ -1,18 +1,22 @@
 import DemoQuiz from "@/components/demo/DemoQuiz";
 import { marketingFont } from "@/components/landing/marketingFont";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("demo");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "demo" });
   return { title: t("metaTitle"), description: t("metaDescription") };
 }
 
-export default async function DemoPage() {
+export default async function DemoPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("demo");
   const landing = await getTranslations("landing");
+  const g = await getTranslations("gorseller");
 
   return (
     <div
@@ -22,7 +26,7 @@ export default async function DemoPage() {
         <div className="mx-auto flex h-16 max-w-3xl items-center justify-between px-4 sm:px-6">
           <Link href="/" className="flex items-center gap-2" aria-label={landing("brand")}>
             <Image
-              src="/hupo/hosgeldin.webp"
+              src={g("hupo.hosgeldin")}
               alt=""
               width={420}
               height={415}

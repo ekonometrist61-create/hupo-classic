@@ -8,6 +8,7 @@ import Link from "next/link";
 
 export async function LandingHeader() {
   const t = await getTranslations("landing");
+  const g = await getTranslations("gorseller");
 
   const navItems: { href: string; label: string }[] = [
     { href: "#demo", label: t("nav.demo") },
@@ -26,7 +27,7 @@ export async function LandingHeader() {
       <div className="relative mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <Link href="/" className="flex items-center gap-2" aria-label={t("brand")}>
           <Image
-            src="/hupo/hosgeldin.webp"
+            src={g("hupo.hosgeldin")}
             alt=""
             width={420}
             height={415}

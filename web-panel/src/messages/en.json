@@ -1,6 +1,136 @@
 {
+  "gorseller": {
+    "hupo": {
+      "hero": "/hupo/hero.webp",
+      "hosgeldin": "/hupo/hosgeldin.webp",
+      "dusunuyor": "/hupo/dusunuyor.webp",
+      "dogru": "/hupo/dogru.webp",
+      "bir-daha-dene": "/hupo/bir-daha-dene.webp",
+      "tamamlandi": "/hupo/tamamlandi.webp",
+      "logoIcon": "/hupo/logo-icon.webp",
+      "logoIconLg": "/hupo/logo-icon-lg.webp"
+    },
+    "karakter": {
+      "ozgur_ruhlar": {
+        "ozgur_ruh": "/characters/ozgur_ruhlar/ozgur_ruh.webp",
+        "kivilcim": "/characters/ozgur_ruhlar/kivilcim.webp",
+        "ateskanat": "/characters/ozgur_ruhlar/ateskanat.webp",
+        "gece_kartali": "/characters/ozgur_ruhlar/gece_kartali.webp",
+        "oba_muhafizi": "/characters/ozgur_ruhlar/oba_muhafizi.webp"
+      },
+      "firtina": {
+        "ruzgar_ciragi": "/characters/firtina/ruzgar_ciragi.webp",
+        "ruzgar_kosucusu": "/characters/firtina/ruzgar_kosucusu.webp",
+        "simsek": "/characters/firtina/simsek.webp",
+        "firtina_binicisi": "/characters/firtina/firtina_binicisi.webp",
+        "firtina_ustasi": "/characters/firtina/firtina_ustasi.webp"
+      },
+      "kasifler": {
+        "iz_surucu": "/characters/kasifler/iz_surucu.webp",
+        "yol_bulucu": "/characters/kasifler/yol_bulucu.webp",
+        "sir_avcisi": "/characters/kasifler/sir_avcisi.webp",
+        "buyuk_kasif": "/characters/kasifler/buyuk_kasif.webp",
+        "dunya_kasifi": "/characters/kasifler/dunya_kasifi.webp"
+      },
+      "bozkir": {
+        "bozkir_yoldasi": "/characters/bozkir/bozkir_yoldasi.webp",
+        "bozkir_izci": "/characters/bozkir/bozkir_izci.webp",
+        "bozkir_kurdu": "/characters/bozkir/bozkir_kurdu.webp",
+        "bozkir_kartali": "/characters/bozkir/bozkir_kartali.webp",
+        "bozkir_reisi": "/characters/bozkir/bozkir_reisi.webp"
+      },
+      "zihin_ustalari": {
+        "fikir_kivilcimi": "/characters/zihin_ustalari/fikir_kivilcimi.webp",
+        "bilgi_avcisi": "/characters/zihin_ustalari/bilgi_avcisi.webp",
+        "bulmaca_ustasi": "/characters/zihin_ustalari/bulmaca_ustasi.webp",
+        "akil_ustasi": "/characters/zihin_ustalari/akil_ustasi.webp",
+        "zihin_simsegi": "/characters/zihin_ustalari/zihin_simsegi.webp"
+      },
+      "muhafizlar": {
+        "genc_muhafiz": "/characters/muhafizlar/genc_muhafiz.webp",
+        "kale_bekcisi": "/characters/muhafizlar/kale_bekcisi.webp",
+        "gok_muhafizi": "/characters/muhafizlar/gok_muhafizi.webp",
+        "ates_muhafizi": "/characters/muhafizlar/ates_muhafizi.webp",
+        "bas_muhafiz": "/characters/muhafizlar/bas_muhafiz.webp"
+      },
+      "ustalar": {
+        "genc_kemankes": "/characters/ustalar/genc_kemankes.webp",
+        "usta_kemankes": "/characters/ustalar/usta_kemankes.webp",
+        "gok_akincisi": "/characters/ustalar/gok_akincisi.webp",
+        "ustalar_firtina": "/characters/ustalar/ustalar_firtina.webp",
+        "buyuk_usta": "/characters/ustalar/buyuk_usta.webp"
+      },
+      "efsaneler": {
+        "ay_kasifi": "/characters/efsaneler/ay_kasifi.webp",
+        "gunes_muhafizi": "/characters/efsaneler/gunes_muhafizi.webp",
+        "goklerin_akincisi": "/characters/efsaneler/goklerin_akincisi.webp",
+        "simsek_kagani": "/characters/efsaneler/simsek_kagani.webp",
+        "efsaneler_efsanesi": "/characters/efsaneler/efsaneler_efsanesi.webp"
+      }
+    }
+  },
+  "denemeSonuclari": {
+    "konu": {
+      "kilitliBaslik": "🔒 Topic-Based Analysis",
+      "kilitliAciklama": "Which topics are strong and where is there room to grow? This analysis is available to premium subscribers.",
+      "premiumCta": "Upgrade to Premium",
+      "veriYok": "No topic data found.",
+      "baslik": "Topic-Based Analysis"
+    }
+  },
+  "meta": {
+    "gizlilik": {
+      "title": "Privacy Policy | Hupolingo",
+      "description": "How Hupolingo processes personal data and your rights."
+    },
+    "kosullar": {
+      "title": "Terms of Use | Hupolingo",
+      "description": "Terms of use for the Hupolingo service."
+    },
+    "ticariIletiIzni": {
+      "title": "Commercial Electronic Message Information and Consent Text | Hupolingo",
+      "description": "HUPOLINGO commercial electronic message information and consent text — information about commercial message preferences for email, SMS and phone channels."
+    },
+    "iletisimIzni": {
+      "title": "Withdraw communication consent | Hupolingo",
+      "description": "Stop receiving commercial messages from Hupolingo."
+    },
+    "sifreUnuttum": {
+      "title": "Reset your password | Hupolingo",
+      "description": "Request a password reset link for your Hupolingo account."
+    },
+    "sifreYeni": {
+      "title": "Set a new password | Hupolingo",
+      "description": "Set a new password for your Hupolingo account."
+    },
+    "veliGiris": {
+      "title": "Parent Panel Sign-in | Hupolingo",
+      "description": "Parent and teacher sign-in. Student accounts sign in at app.hupolingo.com."
+    },
+    "veliKayit": {
+      "title": "Create a Parent Account | Hupolingo",
+      "description": "Create a parent account. Student accounts are opened at app.hupolingo.com."
+    },
+    "yonetimGiris": {
+      "title": "Admin Panel Sign-in | Hupolingo",
+      "description": "Hupolingo admin panel. Authorized accounts only."
+    },
+    "bakim": {
+      "title": "Maintenance | Hupolingo",
+      "description": "Hupolingo is temporarily unavailable due to maintenance."
+    },
+    "hataSayfasi": {
+      "title": "Page Not Found | Hupo",
+      "description": "The page you are looking for could not be found."
+    },
+    "denemeKayit": {
+      "title": "Sign up for the Mock Exam | Hupolingo",
+      "description": "Sign up for the Hupolingo mock exam across Türkiye. Free, no sign-in required."
+    }
+  },
   "common": {
     "home": "Home",
+    "legalHome": "Hupolingo home page",
     "edit": "Edit",
     "close": "Close",
     "saveChanges": "Save Changes",
@@ -267,20 +397,23 @@
     "appScreens": {
       "eyebrow": "Inside the app",
       "title": "What your child will see in the app",
-      "desc": "The question screen, earned characters and daily progress — real screenshots are coming here soon.",
-      "comingSoon": "Screenshot coming soon",
+      "desc": "The question screen, earned characters and daily progress — design preview.",
       "items": [
         {
-          "title": "Home screen",
-          "desc": "The active character and daily progress at a glance."
+          "title": "Home Screen",
+          "desc": "Active character, daily streak and XP at a glance."
         },
         {
-          "title": "Question screen",
+          "title": "Question Screen",
           "desc": "Short questions, step-by-step solutions and instant feedback."
         },
         {
-          "title": "Character collection",
+          "title": "Character Collection",
           "desc": "40 characters earned through regular practice, grouped by class."
+        },
+        {
+          "title": "Monthly League",
+          "desc": "Race with friends, climb the league, win special rewards."
         }
       ]
     },
@@ -306,6 +439,8 @@
       "desc": "We do not show a percentage until enough questions are solved. A firm result from little data would be misleading.",
       "badge": "SAMPLE REPORT",
       "disclaimer": "This report does not belong to a real student; it is an example prepared to show how the screen looks.",
+      "ctaLabel": "Create a Parent Account",
+      "sampleRange": "Last 7 days",
       "colSubject": "Subject",
       "colSolved": "Solved",
       "colCorrect": "Correct",
@@ -433,26 +568,76 @@
       "cta": "Start Collection",
       "lockedLabel": "Locked",
       "classes": [
-        { "kod": "ozgur_ruhlar", "ad": "Free Spirits", "desc": "Curious, energetic and always ready to explore." },
-        { "kod": "firtina", "ad": "Storm", "desc": "Quick thinkers, agile and competitive spirits." },
-        { "kod": "kasifler", "ad": "Explorers", "desc": "Seekers of knowledge, brave wanderers." },
-        { "kod": "bozkir", "ad": "Steppe", "desc": "Strong, determined and resilient warriors." },
-        { "kod": "zihin_ustalari", "ad": "Mind Masters", "desc": "Intelligent, strategic and disciplined lovers." },
-        { "kod": "muhafizlar", "ad": "Guardians", "desc": "Protective, supportive and brave guardians." },
-        { "kod": "ustalar", "ad": "Masters", "desc": "Wise, experienced and inspiring characters." },
-        { "kod": "efsaneler", "ad": "Legends", "desc": "Rare, legendary heroes." }
+        {
+          "kod": "ozgur_ruhlar",
+          "ad": "Free Spirits",
+          "desc": "Curious, energetic and always ready to explore."
+        },
+        {
+          "kod": "firtina",
+          "ad": "Storm",
+          "desc": "Quick thinkers, agile and competitive spirits."
+        },
+        {
+          "kod": "kasifler",
+          "ad": "Explorers",
+          "desc": "Seekers of knowledge, brave wanderers."
+        },
+        {
+          "kod": "bozkir",
+          "ad": "Steppe",
+          "desc": "Strong, determined and resilient warriors."
+        },
+        {
+          "kod": "zihin_ustalari",
+          "ad": "Mind Masters",
+          "desc": "Intelligent, strategic and disciplined lovers."
+        },
+        {
+          "kod": "muhafizlar",
+          "ad": "Guardians",
+          "desc": "Protective, supportive and brave guardians."
+        },
+        {
+          "kod": "ustalar",
+          "ad": "Masters",
+          "desc": "Wise, experienced and inspiring characters."
+        },
+        {
+          "kod": "efsaneler",
+          "ad": "Legends",
+          "desc": "Rare, legendary heroes."
+        }
       ]
     },
     "whyParents": {
       "title": "Why Kids and Parents Love Hupolingo?",
       "desc": "Fun for kids, trustworthy for parents — a learning experience that works for both.",
       "items": [
-        { "title": "Earning characters is motivating", "desc": "Every correct answer gets kids closer to a new character. Collecting all 40 heroes is a real goal." },
-        { "title": "Leagues add excitement", "desc": "Compete with friends in the same league, climb the rankings and win special rewards." },
-        { "title": "Measurable progress", "desc": "See your child's progress clearly with detailed reports and identify topics that need support." },
-        { "title": "Project Middle School prep", "desc": "Learning standards are tracked; closing gaps in preparation for Project Middle Schools becomes easier." },
-        { "title": "Safe and ad-free", "desc": "Ads are off by default in the student app — a clean, education-focused experience." },
-        { "title": "Short sessions, lasting habits", "desc": "Each session is at most 10 questions. Short, regular practice makes a difference over time." }
+        {
+          "title": "Earning characters is motivating",
+          "desc": "Every correct answer gets kids closer to a new character. Collecting all 40 heroes is a real goal."
+        },
+        {
+          "title": "Leagues add excitement",
+          "desc": "Compete with friends in the same league, climb the rankings and win special rewards."
+        },
+        {
+          "title": "Measurable progress",
+          "desc": "See your child's progress clearly with detailed reports and identify topics that need support."
+        },
+        {
+          "title": "Project Middle School prep",
+          "desc": "Learning standards are tracked; closing gaps in preparation for Project Middle Schools becomes easier."
+        },
+        {
+          "title": "Safe and ad-free",
+          "desc": "Ads are off by default in the student app — a clean, education-focused experience."
+        },
+        {
+          "title": "Short sessions, lasting habits",
+          "desc": "Each session is at most 10 questions. Short, regular practice makes a difference over time."
+        }
       ]
     },
     "duyuruSeridi": {
@@ -472,9 +657,18 @@
         "started": "Exam started!"
       },
       "steps": [
-        { "title": "At a specific time", "desc": "All students take the exam at the same time." },
-        { "title": "See your ranking and progress", "desc": "Results are announced instantly, track your progress." },
-        { "title": "Register from parent dashboard", "desc": "Parent registers the child in the system and monitors the process." }
+        {
+          "title": "At a specific time",
+          "desc": "All students take the exam at the same time."
+        },
+        {
+          "title": "See your ranking and progress",
+          "desc": "Results are announced instantly, track your progress."
+        },
+        {
+          "title": "Register from parent dashboard",
+          "desc": "Parent registers the child in the system and monitors the process."
+        }
       ],
       "badge": "Upcoming Exam",
       "cta": "Register for Exam",
@@ -492,31 +686,52 @@
       "free": {
         "name": "Free",
         "cta": "Start Free",
-        "features": ["Basic course content", "1 review session per day", "Basic character collection", "Basic progress tracking"],
-        "notIncluded": ["Parent dashboard", "Leagues and events", "Practice exams"]
+        "features": [
+          "Basic course content",
+          "1 review session per day",
+          "Basic character collection",
+          "Basic progress tracking"
+        ],
+        "notIncluded": [
+          "Parent dashboard",
+          "Leagues and events",
+          "Practice exams"
+        ]
       },
       "premium": {
         "name": "Premium",
         "badge": "Most Popular",
         "cta": "Upgrade to Premium",
-        "features": ["Unlimited access to all courses", "Personalized learning plan", "Smart review system", "Complete character collection", "Leagues and events", "Detailed progress tracking", "Parent dashboard", "Practice exams", "Ad-free, secure environment"]
+        "features": [
+          "Unlimited access to all courses",
+          "Personalized learning plan",
+          "Smart review system",
+          "Complete character collection",
+          "Leagues and events",
+          "Detailed progress tracking",
+          "Parent dashboard",
+          "Practice exams",
+          "Ad-free, secure environment"
+        ]
       },
       "family": {
         "name": "Family Plan",
         "cta": "Choose Family Plan",
-        "features": ["All Premium features", "Access for up to 6 family members", "Separate profile for each child", "Family reports", "Priority customer support", "Special family events", "More economical"]
+        "features": [
+          "All Premium features",
+          "Access for up to 6 family members",
+          "Separate profile for each child",
+          "Family reports",
+          "Priority customer support",
+          "Special family events",
+          "More economical"
+        ]
       },
-      "trustBadges": ["14-Day Money Back Guarantee", "Cancel Anytime", "100% Secure Payment", "No Hidden Fees"]
-    },
-    "appScreens": {
-      "eyebrow": "Inside the app",
-      "title": "What your child will see in the app",
-      "desc": "The question screen, earned characters and daily progress — design preview.",
-      "items": [
-        { "title": "Home Screen", "desc": "Active character, daily streak and XP at a glance." },
-        { "title": "Question Screen", "desc": "Short questions, step-by-step solutions and instant feedback." },
-        { "title": "Character Collection", "desc": "40 characters earned through regular practice, grouped by class." },
-        { "title": "Monthly League", "desc": "Race with friends, climb the league, win special rewards." }
+      "trustBadges": [
+        "14-Day Money Back Guarantee",
+        "Cancel Anytime",
+        "100% Secure Payment",
+        "No Hidden Fees"
       ]
     },
     "denemeKayit": {

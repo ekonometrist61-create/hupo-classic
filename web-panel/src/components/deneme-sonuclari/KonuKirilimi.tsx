@@ -1,4 +1,5 @@
 import { Link } from "@/i18n/navigation";
+import { useTranslations } from "next-intl";
 
 interface KonuRow {
   ders: string;
@@ -33,20 +34,21 @@ function oranRenk(oran: number): string {
 }
 
 export default function KonuKirilimi({ verisi, isPremium, examId }: Props) {
+  const t = useTranslations("denemeSonuclari.konu");
   if (!isPremium) {
     return (
       <div className="rounded-2xl border border-dashed border-gray-300 bg-gray-50 p-6 text-center dark:border-gray-700 dark:bg-gray-800/50">
         <p className="text-base font-semibold text-gray-700 dark:text-gray-200">
-          🔒 Konu Bazlı Analiz
+          {t("kilitliBaslik")}
         </p>
         <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-          Hangi konularda güçlü, hangilerinde gelişim alanın var? Bu analiz premium abonelere açıktır.
+          {t("kilitliAciklama")}
         </p>
         <Link
           href="/veli-paneli/uyelik"
           className="mt-4 inline-block rounded-xl bg-brand-500 px-5 py-2 text-sm font-bold text-white hover:bg-brand-600"
         >
-          Premium&apos;a Geç
+          {t("premiumCta")}
         </Link>
       </div>
     );
@@ -55,7 +57,7 @@ export default function KonuKirilimi({ verisi, isPremium, examId }: Props) {
   if (!verisi || verisi.length === 0) {
     return (
       <div className="rounded-2xl border border-gray-200 bg-white p-5 text-center dark:border-gray-700 dark:bg-gray-800">
-        <p className="text-sm text-gray-400">Konu verisi bulunamadı.</p>
+        <p className="text-sm text-gray-400">{t("veriYok")}</p>
       </div>
     );
   }
@@ -66,7 +68,7 @@ export default function KonuKirilimi({ verisi, isPremium, examId }: Props) {
   return (
     <div className="space-y-4">
       <h2 className="text-lg font-bold text-gray-800 dark:text-white">
-        Konu Bazlı Analiz
+        {t("baslik")}
       </h2>
 
       {Object.entries(grouped).map(([ders, konular]) => {

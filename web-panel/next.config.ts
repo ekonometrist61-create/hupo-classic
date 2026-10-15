@@ -87,6 +87,14 @@ const nextConfig: NextConfig = {
         pathname: "/**",
       },
     ],
+    // CMS ile yüklenen görseller (site-gorselleri kovası) Supabase Storage'dan gelir.
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "*.supabase.co",
+        pathname: "/storage/v1/object/public/site-gorselleri/**",
+      },
+    ],
   },
   async headers() {
     return [

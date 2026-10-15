@@ -1,10 +1,11 @@
 import type { Metadata } from "next";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export const metadata: Metadata = {
-  title: "Ticari Elektronik İleti Bilgilendirme ve Onay Metni | Hupolingo",
-  description:
-    "HUPOLİNGO Ticari Elektronik İleti Bilgilendirme ve Onay Metni — e-posta, SMS ve telefon kanallarında ticari ileti tercihleri hakkında bilgilendirme.",
-};
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "meta.ticariIletiIzni" });
+  return { title: t("title"), description: t("description") };
+}
 
 // TODO (canlıya almadan önce hukuk onayı gerekli):
 //   - [ŞİRKET_UNVANI] alanını doldurun
@@ -17,7 +18,9 @@ const PLACEHOLDER_UNVAN = "[Şirketin Tam Ticaret Unvanı]";
 const PLACEHOLDER_EPOSTA = "[iletisim@hupolingo.com]";
 const PLACEHOLDER_SITE = "hupolingo.com";
 
-export default function TicariIletiIzniPage() {
+export default async function TicariIletiIzniPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   return (
     <div className="min-h-dvh bg-cream py-12 text-navy">
       <div className="mx-auto max-w-3xl px-4 sm:px-6">

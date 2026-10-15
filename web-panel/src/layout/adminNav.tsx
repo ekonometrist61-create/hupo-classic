@@ -57,6 +57,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { key: "leagues", icon: <TableIcon />, path: "/yonetim/ligler", roles: ADMIN },
       { key: "badges", icon: <TaskIcon />, path: "/yonetim/rozetler", roles: ADMIN },
       { key: "quests", icon: <BoltIcon />, path: "/yonetim/gorevler", roles: ADMIN },
+      { key: "siteIcerik", icon: <DocsIcon />, path: "/yonetim/site-icerik", roles: ADMIN },
     ],
   },
   {

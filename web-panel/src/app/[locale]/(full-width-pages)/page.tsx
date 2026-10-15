@@ -19,14 +19,17 @@ import { TrustSection } from "@/components/landing/sections/TrustSection";
 import { WhyParentsSection } from "@/components/landing/sections/WhyParentsSection";
 import { marketingFont } from "@/components/landing/marketingFont";
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
+import { getTranslations, setRequestLocale } from "next-intl/server";
 
-export async function generateMetadata(): Promise<Metadata> {
-  const t = await getTranslations("landing");
+export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "landing" });
   return { title: t("metaTitle"), description: t("metaDescription") };
 }
 
-export default async function LandingPage() {
+export default async function LandingPage({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
+  setRequestLocale(locale);
   const t = await getTranslations("landing");
 
   return (

@@ -1,9 +1,10 @@
 import CookiePreferencesButton from "@/components/analytics/CookiePreferencesButton";
 import { legalDraftNotice, type LegalSection } from "@/lib/legal/content";
+import { getTranslations } from "next-intl/server";
 import Link from "next/link";
 
 // Gizlilik ve kullanım koşulları sayfalarının ortak düzeni.
-export default function LegalDocument({
+export default async function LegalDocument({
   title,
   updatedLabel,
   sections,
@@ -12,6 +13,7 @@ export default function LegalDocument({
   updatedLabel: string;
   sections: LegalSection[];
 }) {
+  const t = await getTranslations("common");
   return (
     <main className="min-h-dvh bg-cream px-4 py-10 text-navy sm:px-6">
       <article className="mx-auto w-full max-w-3xl">
@@ -19,7 +21,7 @@ export default function LegalDocument({
           href="/"
           className="inline-flex min-h-11 items-center text-sm font-semibold text-brand-700 underline underline-offset-4 hover:text-brand-800"
         >
-          Hupolingo ana sayfası
+          {t("legalHome")}
         </Link>
 
         <p

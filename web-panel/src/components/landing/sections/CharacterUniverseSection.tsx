@@ -29,6 +29,7 @@ type ClassGroup = {
 
 export async function CharacterUniverseSection() {
   const t = await getTranslations("landing");
+  const g = await getTranslations("gorseller");
   const classData = t.raw("characters.classes") as { kod: string; ad: string; desc: string }[];
 
   // DB'den karakter listesini çek (herkes okuyabilir — RLS policy açık)
@@ -102,7 +103,7 @@ export async function CharacterUniverseSection() {
                 <div className="flex w-full flex-col gap-1.5">
                   {cls.characters.map((char, charIdx) => {
                     const isRevealed = charIdx === 0;
-                    const imgSrc = `/characters/${cls.kod}/${char.kod}.webp`;
+                    const imgSrc = g(`karakter.${cls.kod}.${char.kod}`);
 
                     return (
                       <div
