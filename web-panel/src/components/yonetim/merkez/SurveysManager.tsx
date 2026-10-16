@@ -12,7 +12,7 @@ import RpcBoundary from "../ui/RpcBoundary";
 import { adminCall, useAdminRpc } from "../useAdminRpc";
 import { DEMO_SURVEY_RESULT, DEMO_SURVEYS, DEMO_TASKS } from "./demoData";
 import SurfacePicker from "./SurfacePicker";
-import type { QuestionType, Survey, SurveyQuestion, SurveyResult, SurveySurface, SupportTask } from "./types";
+import { ANKET_SURFACES, isAnketSurface, type AnketSurface, type QuestionType, type Survey, type SurveyQuestion, type SurveyResult, type SupportTask } from "./types";
 
 const TYPES: QuestionType[] = ["kisa_metin", "uzun_metin", "tek_secim", "nps", "csat", "onay"];
 const STATUS_COLOR = { taslak: "light", yayinda: "success", kapali: "warning" } as const;
@@ -236,7 +236,10 @@ function Editor({
   const [error, setError] = useState<string | null>(null);
   const [preview, setPreview] = useState(false);
   const [npsPick, setNpsPick] = useState<Record<string, number | null>>({});
-  const [yuzeyler, setYuzeyler] = useState<SurveySurface[]>(initial?.yuzeyler ?? ["veli_paneli"]);
+  // Yeni anket: veli paneli varsayılan. Mevcut anket: web_sitesi değeri süzülür (ANKET_SURFACES).
+  const [yuzeyler, setYuzeyler] = useState<AnketSurface[]>(
+    initial ? initial.yuzeyler.filter(isAnketSurface) : ["veli_paneli"]
+  );
 
   const lockedAnon = (initial?.yanit_sayisi ?? 0) > 0;
 
@@ -310,6 +313,7 @@ function Editor({
       </div>
 
       <SurfacePicker
+        surfaces={ANKET_SURFACES}
         value={yuzeyler}
         onChange={setYuzeyler}
         legend={t("form.surfaces")}

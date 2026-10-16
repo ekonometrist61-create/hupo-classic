@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useTranslations } from "next-intl";
 import Badge from "@/components/ui/badge/Badge";
 import SurfacePicker from "@/components/yonetim/merkez/SurfacePicker";
-import type { SurveySurface } from "@/components/yonetim/merkez/types";
+import { DUYURU_SURFACES, type SurveySurface } from "@/components/yonetim/merkez/types";
 import { adminCall, useAdminRpc } from "@/components/yonetim/useAdminRpc";
 import { isoToTurkiyeInput, turkiyeInputToIso } from "@/components/yonetim/turkiyeTarih";
 import ErrorNote from "./ErrorNote";
@@ -289,6 +289,7 @@ export default function DuyuruManager() {
             </div>
 
             <SurfacePicker
+              surfaces={DUYURU_SURFACES}
               value={form.yuzeyler}
               onChange={(v) => setF("yuzeyler", v)}
               legend="Yayın mecraları"

@@ -104,9 +104,19 @@ export interface SurveyQuestion {
   kosul?: { soru_id: string; op: "lte" | "gte" | "eq"; deger: number } | null;
 }
 
-// Anketin gösterildiği mecralar (anketler.yuzeyler ile eşleşir).
+// Yayın mecraları: tek sözlük (anketler.yuzeyler ve duyurular.yuzeyler ile eşleşir).
 export type SurveySurface = "mobil" | "web_app" | "web_sitesi" | "veli_paneli";
-export const SURVEY_SURFACES: SurveySurface[] = ["mobil", "web_app", "web_sitesi", "veli_paneli"];
+
+// Duyuru tüm mecraları kullanır (web_sitesi dahil: landing duyuru şeridi).
+export const DUYURU_SURFACES: SurveySurface[] = ["mobil", "web_app", "web_sitesi", "veli_paneli"];
+
+// Anket mecraları: web_sitesi yok (ANKET_SISTEMI_MIMARI §1). Anket veli girişi
+// gerektirir; ziyaretçinin ulaşabildiği bir yüzey anlamsız. Mevcut veride web_sitesi
+// içeren bir anket düzenlenip kaydedildiğinde web_sitesi değeri dizide kalmaz. Yalnız
+// web_sitesi içeren anket için hiçbir mecra seçili başlar ve seçim yapılana kadar kaydedilemez.
+export type AnketSurface = Exclude<SurveySurface, "web_sitesi">;
+export const ANKET_SURFACES: AnketSurface[] = ["mobil", "web_app", "veli_paneli"];
+export const isAnketSurface = (y: SurveySurface): y is AnketSurface => y !== "web_sitesi";
 
 export interface Survey {
   id: string;
