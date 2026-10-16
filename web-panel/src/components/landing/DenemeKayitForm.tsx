@@ -9,7 +9,7 @@ const KVKK_SURUM = "deneme-kayit-kvkk-2026-10-v1";
 const IZIN_SURUM = "deneme-kayit-izin-2026-10-v1";
 
 const fieldClass =
-  "mt-1.5 block h-12 w-full rounded-xl border border-gray-300 bg-white px-4 text-base text-navy placeholder:text-gray-400 focus:border-brand-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 disabled:opacity-50";
+  "mt-1.5 block h-12 w-full rounded-xl border border-gray-300 bg-white px-4 text-base text-navy placeholder:text-gray-500 focus:border-brand-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 disabled:opacity-50";
 
 const SINIFLAR = [3, 4, 5, 6, 7, 8];
 
@@ -289,7 +289,7 @@ export default function DenemeKayitForm({ examId, examAd, siniflar }: Props) {
       <TurnstileWidget onToken={setCaptchaToken} resetKey={captchaKey} />
 
       {error && (
-        <p role="alert" className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-red-700">
+        <p role="alert" className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 text-sm text-error-700">
           {error}
         </p>
       )}

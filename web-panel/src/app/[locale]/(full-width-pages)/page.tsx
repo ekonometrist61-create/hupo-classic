@@ -1,21 +1,16 @@
 import { LandingFooter } from "@/components/landing/Footer";
 import { LandingHeader } from "@/components/landing/Header";
-import { AppScreensSection } from "@/components/landing/sections/AppScreensSection";
 import { BenefitsSection } from "@/components/landing/sections/BenefitsSection";
 import { CharacterUniverseSection } from "@/components/landing/sections/CharacterUniverseSection";
 import { DemoSection } from "@/components/landing/sections/DemoSection";
-import { DenemeExamSection } from "@/components/landing/sections/DenemeExamSection";
 import { DuyuruSeridi } from "@/components/landing/sections/DuyuruSeridi";
-import { ErkenErisimSection } from "@/components/landing/sections/ErkenErisimSection";
 import { FaqSection } from "@/components/landing/sections/FaqSection";
 import { FinalCtaSection } from "@/components/landing/sections/FinalCtaSection";
 import { HeroSection } from "@/components/landing/sections/HeroSection";
 import { HowItWorksSection } from "@/components/landing/sections/HowItWorksSection";
 import { ParentPanelSection } from "@/components/landing/sections/ParentPanelSection";
 import { PricingSection } from "@/components/landing/sections/PricingSection";
-import { TrustBadgesBar } from "@/components/landing/sections/TrustBadgesBar";
 import { TrustSection } from "@/components/landing/sections/TrustSection";
-import { WhyParentsSection } from "@/components/landing/sections/WhyParentsSection";
 import { marketingFont } from "@/components/landing/marketingFont";
 import type { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -26,6 +21,9 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return { title: t("metaTitle"), description: t("metaDescription") };
 }
 
+// Bölüm sırası sadeleştirildi: fayda → örnek soru → nasıl çalışır → veli raporu → karakterler →
+// güven → fiyat → SSS → tek CTA. Tek CTA kuralı için ayrı deneme sınavı ve erken erişim
+// bölümleri bu sayfadan çıkarıldı (ilgili rotalar çalışmaya devam eder).
 export default async function LandingPage({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
   setRequestLocale(locale);
@@ -47,18 +45,13 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
 
       <main id="main">
         <HeroSection />
-        <TrustBadgesBar />
         <BenefitsSection />
         <DemoSection />
-        <AppScreensSection />
-        <CharacterUniverseSection />
         <HowItWorksSection />
-        <WhyParentsSection />
         <ParentPanelSection />
-        <DenemeExamSection />
-        <PricingSection />
+        <CharacterUniverseSection />
         <TrustSection />
-        <ErkenErisimSection />
+        <PricingSection />
         <FaqSection />
         <FinalCtaSection />
       </main>

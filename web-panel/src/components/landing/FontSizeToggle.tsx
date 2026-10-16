@@ -52,7 +52,7 @@ export function FontSizeToggle() {
           type="button"
           onClick={() => handleClick(key)}
           aria-pressed={level === key}
-          className={`flex h-7 min-w-[2rem] items-center justify-center rounded-md px-1.5 text-xs font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-brand-500 ${
+          className={`flex h-11 min-w-[2.75rem] items-center justify-center rounded-md px-1.5 text-xs font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-1 focus-visible:outline-brand-500 ${
             level === key
               ? "bg-brand-500 text-white shadow-sm"
               : "text-navy-muted hover:text-brand-600 dark:text-gray-400 dark:hover:text-brand-300"

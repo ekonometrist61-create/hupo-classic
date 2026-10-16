@@ -36,7 +36,7 @@ export async function DenemeExamSection() {
   return (
     <section
       id="deneme-sinavi"
-      className="scroll-mt-20 overflow-hidden bg-[#0F1E2D] py-14 text-white sm:py-18 lg:py-20"
+      className="scroll-mt-20 overflow-hidden bg-night py-14 text-white sm:py-18 lg:py-20"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Başlık */}

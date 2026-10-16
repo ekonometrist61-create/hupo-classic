@@ -294,6 +294,8 @@
     "accept": "Accept",
     "reject": "Decline",
     "policy": "Privacy Policy",
+    "shortText": "We use cookies.",
+    "preferences": "Preferences",
     "openPreferences": "Change my cookie preferences"
   },
   "welcome": {
@@ -348,17 +350,24 @@
       "characters": "Characters",
       "parents": "Parents",
       "pricing": "Pricing",
-      "freeTrial": "Try Free"
+      "freeTrial": "Try sample questions"
     },
     "hero": {
       "badge": "Grades 3–7 · Project Middle School Prep",
       "title": "Support the habit of practice with small daily tasks",
       "subtitle": "Your child practices with Hupo in short question sessions; you see their progress and which topics need another look.",
-      "ctaPrimary": "Try Free",
+      "ctaPrimary": "Try sample questions",
       "ctaSecondary": "Create parent account",
       "note": "No account needed for the sample questions, and nothing is saved.",
       "pilot": "Hupo is in pilot. We are improving content and reports with your feedback.",
-      "mascotAlt": "Hupo: an owl character with a golden yellow body, green wings and blue eyes"
+      "mascotAlt": "Hupo: an owl character with a golden yellow body, green wings and blue eyes",
+      "phoneAlt": "A question screen in the Hupolingo app",
+      "sampleLabel": "Sample parent report",
+      "sampleTag": "SAMPLE REPORT",
+      "sampleWeek": "Weekly summary",
+      "sampleAccuracy": "Overall accuracy",
+      "sampleSolved": "Questions solved",
+      "sampleNote": "Sample data. It does not belong to a real student."
     },
     "benefits": {
       "title": "A small step for the child, clear visibility for the parent",
@@ -527,7 +536,7 @@
       "title": "Hupo is ready to meet your child",
       "subtitle": "Create a free account and start the learning journey today.",
       "desc": "Five sample questions take a few minutes. If you like it, you can create your parent account.",
-      "primary": "Try Free",
+      "primary": "Try sample questions",
       "secondary": "Create parent account"
     },
     "erkenErisim": {
@@ -685,7 +694,7 @@
       "comingSoonDesc": "When plan details and pricing are finalized, they will be shown here and in your parent account.",
       "free": {
         "name": "Free",
-        "cta": "Start Free",
+        "cta": "Try sample questions",
         "features": [
           "Basic course content",
           "1 review session per day",

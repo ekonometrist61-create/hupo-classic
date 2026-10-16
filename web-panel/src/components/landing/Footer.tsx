@@ -24,21 +24,21 @@ export async function LandingFooter() {
             <a
               href="https://instagram.com/hupolingo"
               aria-label="Instagram"
-              className="flex h-9 w-9 items-center justify-center rounded-lg text-navy-muted transition-colors hover:bg-cream-dark hover:text-brand-600 dark:text-gray-400 dark:hover:bg-gray-800"
+              className="flex h-11 w-11 items-center justify-center rounded-lg text-navy-muted transition-colors hover:bg-cream-dark hover:text-brand-600 dark:text-gray-400 dark:hover:bg-gray-800"
             >
               <IconInstagram className="h-5 w-5" />
             </a>
             <a
               href="https://youtube.com/@hupolingo"
               aria-label="YouTube"
-              className="flex h-9 w-9 items-center justify-center rounded-lg text-navy-muted transition-colors hover:bg-cream-dark hover:text-brand-600 dark:text-gray-400 dark:hover:bg-gray-800"
+              className="flex h-11 w-11 items-center justify-center rounded-lg text-navy-muted transition-colors hover:bg-cream-dark hover:text-brand-600 dark:text-gray-400 dark:hover:bg-gray-800"
             >
               <IconYoutube className="h-5 w-5" />
             </a>
             <a
               href="https://linkedin.com/company/hupolingo"
               aria-label="LinkedIn"
-              className="flex h-9 w-9 items-center justify-center rounded-lg text-navy-muted transition-colors hover:bg-cream-dark hover:text-brand-600 dark:text-gray-400 dark:hover:bg-gray-800"
+              className="flex h-11 w-11 items-center justify-center rounded-lg text-navy-muted transition-colors hover:bg-cream-dark hover:text-brand-600 dark:text-gray-400 dark:hover:bg-gray-800"
             >
               <IconLinkedIn className="h-5 w-5" />
             </a>

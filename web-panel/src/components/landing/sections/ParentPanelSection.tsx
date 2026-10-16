@@ -1,5 +1,5 @@
+import { TrackedLink } from "@/components/analytics/TrackedLink";
 import { getTranslations } from "next-intl/server";
-import Link from "next/link";
 
 // Colors matching the real parent panel (TailAdmin-based light theme)
 const P = {
@@ -19,13 +19,13 @@ const P = {
   sun: "#F5C842",
 };
 
-function StatCard({ label, value, hint, color }: { label: string; value: string; hint?: string; color?: string }) {
+function StatCard({ label, value, hint, color, wide }: { label: string; value: string; hint?: string; color?: string; wide?: boolean }) {
   return (
-    <div style={{ background: P.card, border: `1px solid ${P.border}`, borderRadius: "12px", padding: "16px 20px" }}>
+    <div style={{ background: P.card, border: `1px solid ${P.border}`, borderRadius: "12px", padding: "16px 20px", gridColumn: wide ? "1 / -1" : undefined }}>
       <p style={{ fontSize: "12px", color: P.muted, margin: 0 }}>{label}</p>
       <div style={{ display: "flex", alignItems: "flex-end", gap: "6px", marginTop: "6px" }}>
         <p style={{ fontSize: "22px", fontWeight: 800, color: color ?? P.ink, margin: 0, lineHeight: 1 }}>{value}</p>
-        {hint && <p style={{ fontSize: "11px", color: P.muted, margin: "0 0 2px" }}>{hint}</p>}
+        {hint && <p style={{ fontSize: "12px", color: P.muted, margin: "0 0 2px" }}>{hint}</p>}
       </div>
     </div>
   );
@@ -72,37 +72,40 @@ export async function ParentPanelSection() {
               {t("badge")} — {t("disclaimer")}
             </p>
             <div className="mt-6">
-              <Link
+              <TrackedLink
                 href="/veli-paneli/kayit"
+                olay="veli_kayit_baslatildi"
+                ozellik={{ konum: "veli_raporu" }}
                 className="inline-flex min-h-11 items-center justify-center gap-2 rounded-xl bg-brand-500 px-5 py-2.5 text-sm font-bold text-white transition-colors hover:bg-brand-600"
               >
                 {t("ctaLabel")}
-              </Link>
+              </TrackedLink>
             </div>
           </div>
 
           {/* Sağ: Panel Mockup */}
           <div
+            aria-hidden="true"
             style={{ background: P.bg, borderRadius: "16px", border: `1px solid ${P.border}`, padding: "16px", marginTop: "2rem" }}
             className="lg:mt-0"
           >
             {/* Öğrenci seçici */}
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "12px" }}>
               <div>
-                <p style={{ fontSize: "11px", color: P.muted, margin: 0 }}>Öğrenci</p>
+                <p style={{ fontSize: "12px", color: P.muted, margin: 0 }}>Öğrenci</p>
                 <p style={{ fontSize: "14px", fontWeight: 800, color: P.ink, margin: 0 }}>Ece Yılmaz</p>
               </div>
-              <div style={{ background: P.card, border: `1px solid ${P.border}`, borderRadius: "8px", padding: "4px 12px", fontSize: "11px", color: P.muted }}>
+              <div style={{ background: P.card, border: `1px solid ${P.border}`, borderRadius: "8px", padding: "4px 12px", fontSize: "12px", color: P.muted }}>
                 {t("sampleRange")}
               </div>
             </div>
 
             {/* Stat kartlar */}
             <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "8px", marginBottom: "12px" }}>
-              <StatCard label="Toplam XP" value="2.450" hint="Seviye 8" color={P.brand} />
-              <StatCard label="Günlük Seri" value="12" hint="gün" color={P.sun} />
-              <StatCard label="Bu Hafta" value="47" hint="dk" />
-              <StatCard label="Çözülen Soru" value="124" />
+              {/* Öğrenme metrikleri: doğru oran ve çözülen soru öne çıkar; XP ve süre ana metrik değildir. */}
+              <StatCard label="Genel doğru oran" value="%64" color={P.brand} wide />
+              <StatCard label="Çözülen soru" value="124" />
+              <StatCard label="Günlük seri" value="12" hint="gün" color={P.ink} />
             </div>
 
             {/* Konu başarı */}
@@ -112,8 +115,8 @@ export async function ParentPanelSection() {
                 {subjectBars.map(({ label, pct, color }) => (
                   <div key={label}>
                     <div style={{ display: "flex", justifyContent: "space-between", marginBottom: "3px" }}>
-                      <span style={{ fontSize: "10px", fontWeight: 600, color: P.ink }}>{label}</span>
-                      <span style={{ fontSize: "10px", fontWeight: 700, color }}>{pct}%</span>
+                      <span style={{ fontSize: "12px", fontWeight: 600, color: P.ink }}>{label}</span>
+                      <span style={{ fontSize: "12px", fontWeight: 700, color }}>{pct}%</span>
                     </div>
                     <div style={{ height: "7px", background: P.border, borderRadius: "4px", overflow: "hidden" }}>
                       <div style={{ width: `${pct}%`, height: "100%", background: color, borderRadius: "4px" }} />
@@ -126,7 +129,7 @@ export async function ParentPanelSection() {
             {/* Tekrar listesi */}
             <div style={{ background: P.card, border: `1px solid ${P.border}`, borderRadius: "12px", padding: "12px" }}>
               <p style={{ fontSize: "12px", fontWeight: 700, color: P.ink, margin: "0 0 8px" }}>Tekrar Önerileri</p>
-              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "10px" }}>
+              <table style={{ width: "100%", borderCollapse: "collapse", fontSize: "12px" }}>
                 <thead>
                   <tr style={{ borderBottom: `1px solid ${P.border}` }}>
                     {["Konu", "Ders", "Yanlış", "%"].map((h) => (
@@ -147,7 +150,7 @@ export async function ParentPanelSection() {
                         <td style={{ padding: "5px 6px 5px 0", color: P.muted }}>{row.ders}</td>
                         <td style={{ padding: "5px 6px 5px 0", color: P.ink }}>{row.yanlis}</td>
                         <td style={{ padding: "5px 0 5px 0" }}>
-                          <span style={{ background: badge.bg, color: badge.color, borderRadius: "6px", padding: "1px 5px", fontWeight: 700, fontSize: "9px" }}>
+                          <span style={{ background: badge.bg, color: badge.color, borderRadius: "6px", padding: "1px 5px", fontWeight: 700, fontSize: "11px" }}>
                             {badge.text}
                           </span>
                         </td>

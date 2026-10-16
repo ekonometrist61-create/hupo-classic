@@ -1,10 +1,10 @@
 // Statik veri yalnızca fallback olarak kullanılır (DB boşsa)
+import { TrackedLink } from "@/components/analytics/TrackedLink";
 import { CHARACTER_CLASSES } from "@/data/characters";
-import { createClient } from "@/utils/supabase/server";
 import { IconArrowRight } from "@/components/landing/Icons";
+import { createClient } from "@/utils/supabase/server";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-import Link from "next/link";
 
 // Renk haritası — character_definitions tablosunda renk kolonu yok
 const CLASS_COLORS: Record<string, string> = {
@@ -27,6 +27,8 @@ type ClassGroup = {
   characters: { kod: string }[];
 };
 
+// Yol: sınıflar sırayla açılır. Her kartta bir açık karakter ve kilitli (silik) siluetler görünür.
+// XP veya süre gösterilmez; bu bölüm koleksiyonu anlatır, başarı metriği değildir.
 export async function CharacterUniverseSection() {
   const t = await getTranslations("landing");
   const g = await getTranslations("gorseller");
@@ -67,7 +69,7 @@ export async function CharacterUniverseSection() {
   return (
     <section
       id="characters"
-      className="scroll-mt-20 overflow-hidden bg-[#0F1E2D] py-14 text-white sm:py-18 lg:py-20"
+      className="scroll-mt-20 overflow-hidden bg-night py-14 text-white sm:py-18 lg:py-20"
     >
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* Başlık */}
@@ -83,73 +85,79 @@ export async function CharacterUniverseSection() {
           </p>
         </div>
 
-        {/* Karakter ızgarası */}
-        <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-4 lg:grid-cols-8">
-          {classes.map((cls) => {
-            // Sınıf adını kod üzerinden bul (index bağımlılığından kaçın)
+        {/* Yol: sekiz sınıf kartı, soldan sağa */}
+        <ol className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
+          {classes.map((cls, i) => {
             const info = classData.find((d) => d.kod === cls.kod);
+            const [acik, ...kilitli] = cls.characters;
 
             return (
-              <div key={cls.kod} className="flex flex-col items-center">
-                {/* Sınıf başlığı */}
+              <li
+                key={cls.kod}
+                style={{
+                  animationDelay: `${i * 90}ms`,
+                  background: `${cls.color}1f`,
+                  borderColor: `${cls.color}55`,
+                }}
+                className="flex flex-col rounded-2xl border p-3 motion-safe:animate-[hupo-reveal_0.6s_ease-out_both]"
+              >
                 <p
-                  className="mb-3 text-center text-[11px] font-extrabold uppercase tracking-wide"
+                  className="text-center text-xs font-extrabold uppercase tracking-wide"
                   style={{ color: cls.color }}
                 >
                   {info?.ad ?? cls.kod}
                 </p>
 
-                {/* Karakterler */}
-                <div className="flex w-full flex-col gap-1.5">
-                  {cls.characters.map((char, charIdx) => {
-                    const isRevealed = charIdx === 0;
-                    const imgSrc = g(`karakter.${cls.kod}.${char.kod}`);
-
-                    return (
-                      <div
-                        key={char.kod}
-                        className="relative overflow-hidden rounded-xl"
-                        style={{
-                          background: isRevealed ? `${cls.color}22` : "rgba(255,255,255,0.04)",
-                          border: isRevealed ? `1.5px solid ${cls.color}55` : "1.5px solid rgba(255,255,255,0.08)",
-                        }}
-                      >
-                        <Image
-                          src={imgSrc}
-                          alt={isRevealed ? char.kod : ""}
-                          width={80}
-                          height={80}
-                          className={`h-auto w-full object-contain transition-all ${
-                            isRevealed ? "" : "brightness-0 opacity-20"
-                          }`}
-                        />
-                        {!isRevealed && (
-                          <div className="absolute inset-0 flex items-center justify-center">
-                            <span className="text-base font-extrabold text-white/20">?</span>
-                          </div>
-                        )}
-                      </div>
-                    );
-                  })}
+                {/* Açık karakter */}
+                <div className="mt-3 flex justify-center">
+                  {acik && (
+                    <Image
+                      src={g(`karakter.${cls.kod}.${acik.kod}`)}
+                      alt=""
+                      width={96}
+                      height={96}
+                      className="h-20 w-20 object-contain"
+                    />
+                  )}
                 </div>
 
-                {/* Açıklama */}
+                {/* Kilitli karakterler: silik siluet */}
+                {kilitli.length > 0 && (
+                  <div className="mt-2 flex justify-center gap-1.5" aria-hidden="true">
+                    {kilitli.slice(0, 3).map((c) => (
+                      <Image
+                        key={c.kod}
+                        src={g(`karakter.${cls.kod}.${c.kod}`)}
+                        alt=""
+                        width={40}
+                        height={40}
+                        className="h-6 w-6 object-contain brightness-0 opacity-25"
+                      />
+                    ))}
+                  </div>
+                )}
+
                 {info && (
-                  <p className="mt-2 text-center text-[9px] leading-relaxed text-white/50">
+                  <p className="mt-3 text-center text-xs leading-relaxed text-white/60">
                     {info.desc}
                   </p>
                 )}
-              </div>
+              </li>
             );
           })}
-        </div>
+        </ol>
 
         {/* CTA */}
         <div className="mt-12 flex justify-center">
-          <Link href="/veli-paneli/kayit" className={primaryBtn}>
+          <TrackedLink
+            href="/veli-paneli/kayit"
+            olay="veli_kayit_baslatildi"
+            ozellik={{ konum: "karakterler" }}
+            className={primaryBtn}
+          >
             {t("characters.cta")}
             <IconArrowRight className="h-5 w-5" />
-          </Link>
+          </TrackedLink>
         </div>
       </div>
     </section>

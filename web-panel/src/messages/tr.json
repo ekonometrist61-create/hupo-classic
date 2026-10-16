@@ -294,6 +294,8 @@
     "accept": "Kabul et",
     "reject": "Reddet",
     "policy": "Gizlilik Politikası",
+    "shortText": "Çerez kullanıyoruz.",
+    "preferences": "Tercihler",
     "openPreferences": "Çerez tercihlerimi değiştir"
   },
   "welcome": {
@@ -348,17 +350,24 @@
       "characters": "Karakterler",
       "parents": "Veliler",
       "pricing": "Fiyatlar",
-      "freeTrial": "Ücretsiz Dene"
+      "freeTrial": "Örnek soruları dene"
     },
     "hero": {
       "badge": "3–7. Sınıf · Proje Ortaokulu Hazırlığı",
       "title": "Soru çözme alışkanlığını küçük görevlerle destekleyin",
       "subtitle": "Çocuğunuz Hupo ile kısa soru çalışmaları yapsın; siz ilerlediği ve tekrar etmesi gereken konuları görün.",
-      "ctaPrimary": "Ücretsiz Dene",
+      "ctaPrimary": "Örnek soruları dene",
       "ctaSecondary": "Veli hesabı oluştur",
       "note": "Örnek sorular için hesap gerekmez ve hiçbir bilgi kaydedilmez.",
       "pilot": "Hupo pilot sürümde. İçerik ve raporları geri bildirimlerle geliştiriyoruz.",
-      "mascotAlt": "Hupo: altın sarısı gövdeli, yeşil kanatlı, mavi gözlü baykuş karakter"
+      "mascotAlt": "Hupo: altın sarısı gövdeli, yeşil kanatlı, mavi gözlü baykuş karakter",
+      "phoneAlt": "Hupolingo uygulamasında bir soru ekranı",
+      "sampleLabel": "Örnek veli raporu",
+      "sampleTag": "ÖRNEK RAPOR",
+      "sampleWeek": "Haftalık özet",
+      "sampleAccuracy": "Genel doğru oran",
+      "sampleSolved": "Çözülen soru",
+      "sampleNote": "Örnek veri. Gerçek bir öğrenciye ait değildir."
     },
     "benefits": {
       "title": "Çocuk için küçük adım, veli için net görünürlük",
@@ -526,7 +535,7 @@
       "title": "Hupo, çocuğunuzla tanışmaya hazır",
       "subtitle": "Ücretsiz hesap oluştur ve öğrenme yolculuğunu bugün başlat.",
       "desc": "Beş örnek soru birkaç dakika sürer. Beğenirseniz veli hesabınızı oluşturabilirsiniz.",
-      "primary": "Ücretsiz Dene",
+      "primary": "Örnek soruları dene",
       "secondary": "Veli hesabı oluştur"
     },
     "erkenErisim": {
@@ -684,7 +693,7 @@
       "comingSoonDesc": "Plan detayları ve fiyatlar netleştiğinde burada ve veli hesabınızda gösterilecek.",
       "free": {
         "name": "Ücretsiz",
-        "cta": "Ücretsiz Başla",
+        "cta": "Örnek soruları dene",
         "features": [
           "Temel ders içerikleri",
           "Günde 1 tekrar turu",

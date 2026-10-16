@@ -1,10 +1,11 @@
 "use client";
 
 import { IconArrowRight, IconCheck } from "@/components/landing/Icons";
+import { trackLandingEvent } from "@/lib/analytics/events";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import Link from "next/link";
-import { Fragment, useReducer } from "react";
+import { Fragment, useEffect, useReducer } from "react";
 
 import { DEMO_QUESTIONS } from "./demoQuestions";
 
@@ -73,6 +74,13 @@ export default function DemoQuiz() {
   const question = DEMO_QUESTIONS[state.index];
   const checked = state.phase === "checked";
   const wasCorrect = checked && state.selected === question.dogru;
+
+  // Demo bitince yalnızca toplam puan ölçülür; verilen tek tek cevaplar gönderilmez.
+  useEffect(() => {
+    if (state.phase === "done") {
+      trackLandingEvent("demo_tamamlandi", { puan: state.score, toplam: TOTAL });
+    }
+  }, [state.phase, state.score]);
 
   if (state.phase === "done") {
     return (

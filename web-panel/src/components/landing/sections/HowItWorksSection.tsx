@@ -1,15 +1,17 @@
 import { getTranslations } from "next-intl/server";
+import Image from "next/image";
 
-// Unicode escapes to survive any re-encoding: phone=📲 books=📚 trophy=🏆
-const STEP_EMOJIS = ["\u{1F4F2}", "\u{1F4DA}", "\u{1F3C6}"];
+// Her adım bir Hupo pozuyla anlatılır (emoji yerine onaylı marka görselleri).
+const STEP_IMAGES = ["hupo.hosgeldin", "hupo.dusunuyor", "hupo.tamamlandi"] as const;
 const STEP_COLORS = [
-  "bg-green-100 dark:bg-green-900/30",
-  "bg-blue-100 dark:bg-blue-900/30",
+  "bg-brand-50 dark:bg-brand-900/30",
   "bg-gold-100 dark:bg-gold-900/30",
+  "bg-success-50 dark:bg-success-500/15",
 ];
 
 export async function HowItWorksSection() {
   const t = await getTranslations("landing.how");
+  const g = await getTranslations("gorseller");
   const steps = t.raw("steps") as { title: string; desc: string }[];
 
   return (
@@ -28,9 +30,15 @@ export async function HowItWorksSection() {
 
               <div className="relative">
                 <div
-                  className={`flex h-20 w-20 items-center justify-center rounded-2xl text-4xl ${STEP_COLORS[i]}`}
+                  className={`flex h-24 w-24 items-center justify-center rounded-2xl p-2 ${STEP_COLORS[i]}`}
                 >
-                  {STEP_EMOJIS[i]}
+                  <Image
+                    src={g(STEP_IMAGES[i])}
+                    alt=""
+                    width={96}
+                    height={96}
+                    className="h-full w-full object-contain"
+                  />
                 </div>
                 <span className="absolute -end-2 -top-2 flex h-7 w-7 items-center justify-center rounded-full bg-gold-500 text-sm font-extrabold text-navy shadow-sm">
                   {i + 1}

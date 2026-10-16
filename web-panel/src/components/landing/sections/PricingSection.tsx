@@ -1,7 +1,7 @@
 import { IconArrowRight, IconCheckCircle } from "@/components/landing/Icons";
 import { createClient } from "@/utils/supabase/server";
+import { TrackedLink } from "@/components/analytics/TrackedLink";
 import { getLocale, getTranslations } from "next-intl/server";
-import Link from "next/link";
 
 // Paket tipleri (kolonlar) ve paketler list_plan_tipleri RPC'sinden, deneme süresi get_deneme_ayari'ndan gelir.
 // Admin'de tanımlanan her aktif tip bir kolon olur. Veri yoksa ilgili satır gizlenir.
@@ -126,8 +126,10 @@ export async function PricingSection() {
                   ))}
                 </ul>
 
-                <Link
+                <TrackedLink
                   href={tip.kod === "free" ? "/demo" : "/veli-paneli/kayit"}
+                  olay="fiyat_tiklandi"
+                  ozellik={{ plan: tip.kod }}
                   className={`mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none ${
                     isPopular
                       ? "bg-brand-500 text-white hover:bg-brand-600 focus-visible:outline-brand-500"
@@ -136,7 +138,7 @@ export async function PricingSection() {
                 >
                   {cta}
                   <IconArrowRight className="h-5 w-5" />
-                </Link>
+                </TrackedLink>
               </div>
             );
           })}

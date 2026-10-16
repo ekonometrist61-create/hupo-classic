@@ -34,8 +34,10 @@ const E = {
 };
 
 function PhoneFrame({ children }: { children: React.ReactNode }) {
+  // Ekran görüntüsü süs niteliğinde; anlamı başlık ve açıklama metni taşır, bu yüzden ekran okuyucudan gizli.
   return (
     <div
+      aria-hidden="true"
       className="relative mx-auto overflow-hidden rounded-[2.2rem] shadow-2xl"
       style={{ width: "100%", maxWidth: "220px", background: C.ink, padding: "3px" }}
     >
@@ -48,9 +50,9 @@ function PhoneFrame({ children }: { children: React.ReactNode }) {
           alignItems: "center",
         }}
       >
-        <span style={{ color: "white", fontSize: "10px", fontWeight: 700 }}>9:41</span>
+        <span style={{ color: "white", fontSize: "11px", fontWeight: 700 }}>9:41</span>
         <div style={{ width: "80px", height: "14px", background: C.ink, borderRadius: "8px" }} />
-        <span style={{ color: "white", fontSize: "10px" }}>&#9679;&#9679;&#9679;</span>
+        <span style={{ color: "white", fontSize: "11px" }}>&#9679;&#9679;&#9679;</span>
       </div>
       <div
         style={{
@@ -74,7 +76,7 @@ function HomeScreenMock() {
     <div style={{ background: C.bg, height: "100%", display: "flex", flexDirection: "column", padding: "10px 10px 8px" }}>
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
         <div>
-          <p style={{ fontSize: "10px", color: C.muted, margin: 0 }}>Merhaba, Ece! {E.wave}</p>
+          <p style={{ fontSize: "11px", color: C.muted, margin: 0 }}>Merhaba, Ece! {E.wave}</p>
           <p style={{ fontSize: "13px", fontWeight: 800, color: C.ink, margin: "1px 0 0" }}>
             Ne {"ö"}{"ğ"}renelim?
           </p>
@@ -91,8 +93,8 @@ function HomeScreenMock() {
           { label: `${E.trophy} #7`, sub: "lig" },
         ].map(({ label, sub }) => (
           <div key={sub} style={{ flex: 1, background: C.surface, border: `1.5px solid ${C.line}`, borderRadius: "10px", padding: "4px 4px", textAlign: "center", boxShadow: `0 2px 0 ${C.lineDark}` }}>
-            <p style={{ fontSize: "11px", fontWeight: 800, color: C.ink, margin: 0 }}>{label}</p>
-            <p style={{ fontSize: "8px", color: C.muted, margin: 0 }}>{sub}</p>
+            <p style={{ fontSize: "12px", fontWeight: 800, color: C.ink, margin: 0 }}>{label}</p>
+            <p style={{ fontSize: "10px", color: C.muted, margin: 0 }}>{sub}</p>
           </div>
         ))}
       </div>
@@ -108,15 +110,15 @@ function HomeScreenMock() {
           </div>
         </div>
         <div style={{ flex: 1 }}>
-          <p style={{ fontSize: "10px", fontWeight: 800, color: C.ink, margin: 0 }}>Günlük hedef: 11/15</p>
+          <p style={{ fontSize: "11px", fontWeight: 800, color: C.ink, margin: 0 }}>Günlük hedef: 11/15</p>
           <div style={{ height: "5px", background: C.line, borderRadius: "4px", marginTop: "4px", overflow: "hidden" }}>
             <div style={{ width: "73%", height: "100%", background: C.primary, borderRadius: "4px" }} />
           </div>
-          <p style={{ fontSize: "8px", color: C.muted, margin: "2px 0 0" }}>4 soru kald&#305;</p>
+          <p style={{ fontSize: "10px", color: C.muted, margin: "2px 0 0" }}>4 soru kald&#305;</p>
         </div>
       </div>
 
-      <p style={{ fontSize: "9px", fontWeight: 700, color: C.muted, marginBottom: "5px", textTransform: "uppercase", letterSpacing: "0.5px" }}>Dersler</p>
+      <p style={{ fontSize: "11px", fontWeight: 700, color: C.muted, marginBottom: "5px", textTransform: "uppercase", letterSpacing: "0.5px" }}>Dersler</p>
       <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: "5px" }}>
         {[
           { label: "Matematik", icon: E.ruler, color: C.sky },
@@ -126,7 +128,7 @@ function HomeScreenMock() {
         ].map(({ label, icon }) => (
           <div key={label} style={{ background: C.surface, border: `1.5px solid ${C.line}`, borderRadius: "10px", padding: "7px 6px", display: "flex", alignItems: "center", gap: "5px", boxShadow: `0 2px 0 ${C.lineDark}` }}>
             <span style={{ fontSize: "14px" }}>{icon}</span>
-            <p style={{ fontSize: "9px", fontWeight: 700, color: C.ink, margin: 0, lineHeight: 1.2 }}>{label}</p>
+            <p style={{ fontSize: "11px", fontWeight: 700, color: C.ink, margin: 0, lineHeight: 1.2 }}>{label}</p>
           </div>
         ))}
       </div>
@@ -142,22 +144,22 @@ function QuizScreenMock() {
           <div style={{ width: "37.5%", height: "100%", background: C.mint, borderRadius: "6px" }} />
         </div>
         <div style={{ background: C.surface, border: `1.5px solid ${C.line}`, borderRadius: "14px", padding: "3px 8px", display: "flex", alignItems: "center", gap: "3px", boxShadow: `0 2px 0 ${C.lineDark}` }}>
-          <span style={{ fontSize: "10px" }}>{E.timer}</span>
-          <span style={{ fontSize: "10px", fontWeight: 800, color: C.primary }}>1:45</span>
+          <span style={{ fontSize: "11px" }}>{E.timer}</span>
+          <span style={{ fontSize: "11px", fontWeight: 800, color: C.primary }}>1:45</span>
         </div>
       </div>
 
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "8px" }}>
         <div style={{ background: C.sun, borderRadius: "14px", padding: "3px 8px", boxShadow: `0 2px 0 ${C.sunDark}`, display: "flex", alignItems: "center", gap: "3px" }}>
-          <span style={{ fontSize: "10px" }}>{E.bolt}</span>
-          <span style={{ fontSize: "10px", fontWeight: 900, color: C.ink }}>+30 XP</span>
+          <span style={{ fontSize: "11px" }}>{E.bolt}</span>
+          <span style={{ fontSize: "11px", fontWeight: 900, color: C.ink }}>+30 XP</span>
         </div>
-        <span style={{ fontSize: "10px", fontWeight: 700, color: C.muted }}>Türkçe &bull; 3/8</span>
+        <span style={{ fontSize: "11px", fontWeight: 700, color: C.muted }}>Türkçe &bull; 3/8</span>
       </div>
 
       <div style={{ background: C.surface, border: `1.5px solid ${C.line}`, borderRadius: "14px", padding: "10px", marginBottom: "8px", boxShadow: `0 3px 0 ${C.lineDark}` }}>
-        <p style={{ fontSize: "8px", fontWeight: 700, color: C.muted, textTransform: "uppercase", letterSpacing: "0.5px", margin: "0 0 5px" }}>Soru 3</p>
-        <p style={{ fontSize: "11px", fontWeight: 600, color: C.ink, lineHeight: 1.5, margin: 0 }}>
+        <p style={{ fontSize: "10px", fontWeight: 700, color: C.muted, textTransform: "uppercase", letterSpacing: "0.5px", margin: "0 0 5px" }}>Soru 3</p>
+        <p style={{ fontSize: "12px", fontWeight: 600, color: C.ink, lineHeight: 1.5, margin: 0 }}>
           &#8220;Y&#305;ld&#305;zlar{" "}
           <strong style={{ fontWeight: 900, textDecoration: "underline", textDecorationColor: C.sun }}>parlad&#305;</strong>
           .&#8221; Alt&#305; çizili sözcük hangi soruya cevap verir?
@@ -185,10 +187,10 @@ function QuizScreenMock() {
             }}
           >
             <div style={{ width: "20px", height: "20px", borderRadius: "50%", background: selected ? C.primary : C.line, display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0 }}>
-              <span style={{ fontSize: "9px", fontWeight: 800, color: selected ? "white" : C.muted }}>{label}</span>
+              <span style={{ fontSize: "11px", fontWeight: 800, color: selected ? "white" : C.muted }}>{label}</span>
             </div>
             <span
-              style={{ fontSize: "10px", fontWeight: selected ? 800 : 600, color: selected ? C.primary : C.ink }}
+              style={{ fontSize: "11px", fontWeight: selected ? 800 : 600, color: selected ? C.primary : C.ink }}
             >
               {text}
             </span>
@@ -208,8 +210,8 @@ function ResultScreenMock() {
       </div>
 
       <div style={{ background: C.surface, border: `1.5px solid ${C.line}`, borderRadius: "12px", padding: "8px", marginBottom: "8px", boxShadow: `0 2px 0 ${C.lineDark}` }}>
-        <p style={{ fontSize: "9px", fontWeight: 700, color: C.muted, textTransform: "uppercase", letterSpacing: "0.5px", margin: "0 0 4px" }}>Açıklama</p>
-        <p style={{ fontSize: "10px", color: C.ink, lineHeight: 1.5, margin: 0 }}>
+        <p style={{ fontSize: "11px", fontWeight: 700, color: C.muted, textTransform: "uppercase", letterSpacing: "0.5px", margin: "0 0 4px" }}>Açıklama</p>
+        <p style={{ fontSize: "11px", color: C.ink, lineHeight: 1.5, margin: 0 }}>
           &#8220;Parlad&#305;&#8221; eylemi{" "}
           <strong style={{ fontWeight: 800 }}>nas&#305;l?</strong>{" "}
           sorusuna cevap verir. Durum bildiren zarflar bu görevi üstlenir.
@@ -221,13 +223,13 @@ function ResultScreenMock() {
           <span style={{ fontSize: "16px" }}>{E.bolt}</span>
         </div>
         <div>
-          <p style={{ fontSize: "11px", fontWeight: 900, color: C.ink, margin: 0 }}>+15 XP kazand&#305;n</p>
-          <p style={{ fontSize: "9px", color: C.muted, margin: 0 }}>Toplam: 2.465 XP</p>
+          <p style={{ fontSize: "12px", fontWeight: 900, color: C.ink, margin: 0 }}>+15 XP kazand&#305;n</p>
+          <p style={{ fontSize: "11px", color: C.muted, margin: 0 }}>Toplam: 2.465 XP</p>
         </div>
       </div>
 
       <div style={{ background: C.primary, borderRadius: "12px", padding: "10px", textAlign: "center", boxShadow: "0 3px 0 #0D5762" }}>
-        <p style={{ fontSize: "11px", fontWeight: 800, color: "white", margin: 0 }}>Sonraki soru &#8594;</p>
+        <p style={{ fontSize: "12px", fontWeight: 800, color: "white", margin: 0 }}>Sonraki soru &#8594;</p>
       </div>
     </div>
   );
@@ -247,7 +249,7 @@ function LeagueScreenMock() {
     <div style={{ background: C.bg, height: "100%", display: "flex", flexDirection: "column", padding: "10px" }}>
       <div style={{ marginBottom: "8px" }}>
         <p style={{ fontSize: "14px", fontWeight: 900, color: C.ink, margin: 0 }}>{E.trophy} Ay Ligi</p>
-        <p style={{ fontSize: "9px", color: C.muted, margin: "1px 0 0" }}>Bu ayki s&#305;ralama</p>
+        <p style={{ fontSize: "11px", color: C.muted, margin: "1px 0 0" }}>Bu ayki s&#305;ralama</p>
       </div>
 
       <div style={{ display: "flex", justifyContent: "center", alignItems: "flex-end", gap: "6px", marginBottom: "8px" }}>
@@ -257,7 +259,7 @@ function LeagueScreenMock() {
           return (
             <div key={p.name} style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: "2px" }}>
               <span style={{ fontSize: "14px" }}>{E.eagle}</span>
-              <p style={{ fontSize: "8px", fontWeight: 700, color: C.ink, margin: 0 }}>{p.name}</p>
+              <p style={{ fontSize: "10px", fontWeight: 700, color: C.ink, margin: 0 }}>{p.name}</p>
               <div style={{ width: "44px", height: heights[i], background: medalBg[ranks[i]] ?? C.line, borderRadius: "6px 6px 0 0", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <span style={{ fontSize: "14px", fontWeight: 900, color: C.ink }}>#{ranks[i]}</span>
               </div>
@@ -276,12 +278,12 @@ function LeagueScreenMock() {
               borderBottom: i < 2 ? `1px solid ${C.line}` : "none",
             }}
           >
-            <span style={{ fontSize: "10px", fontWeight: 800, color: C.muted, width: "14px" }}>#{p.rank}</span>
+            <span style={{ fontSize: "11px", fontWeight: 800, color: C.muted, width: "14px" }}>#{p.rank}</span>
             <div style={{ width: "24px", height: "24px", borderRadius: "50%", background: p.isUser ? C.primary : C.line, display: "flex", alignItems: "center", justifyContent: "center" }}>
               <span style={{ fontSize: "12px" }}>{E.eagle}</span>
             </div>
-            <span style={{ flex: 1, fontSize: "10px", fontWeight: p.isUser ? 800 : 600, color: p.isUser ? C.primary : C.ink }}>{p.name}</span>
-            <span style={{ fontSize: "9px", color: C.muted }}>{p.xp} XP</span>
+            <span style={{ flex: 1, fontSize: "11px", fontWeight: p.isUser ? 800 : 600, color: p.isUser ? C.primary : C.ink }}>{p.name}</span>
+            <span style={{ fontSize: "11px", color: C.muted }}>{p.xp} XP</span>
           </div>
         ))}
       </div>

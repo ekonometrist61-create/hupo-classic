@@ -41,7 +41,7 @@ export async function LandingHeader() {
           className="hidden items-center gap-5 text-sm font-bold text-navy-muted xl:flex dark:text-gray-300"
         >
           {navItems.map(({ href, label }) => (
-            <a key={href} href={href} className="hover:text-brand-600 dark:hover:text-brand-300">
+            <a key={href} href={href} className="inline-flex min-h-11 items-center hover:text-brand-600 dark:hover:text-brand-300">
               {label}
             </a>
           ))}
