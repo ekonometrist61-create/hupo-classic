@@ -67,6 +67,7 @@ export const privacySections: LegalSection[] = [
     title: "Çerezler ve ölçüm",
     paragraphs: [
       "Oturumunun açık kalması için zorunlu çerezler kullanırız. Bunlar olmadan giriş yapılamaz; onaya bağlı değildir.",
+      "Sitedeki bildirim ve ekran gösterimlerini oturum bazlı düzenlemek amacıyla zorunlu teknik yerel depolama araçları kullanılmaktadır. Bu araçlar kişisel profil oluşturmaz ve onaya bağlı değildir.",
       "Ürünü geliştirmek için analitik ölçüm yalnızca onayınla çalışır. Onay vermezsen ölçüm betiği hiç yüklenmez.",
       "Ölçüm, yalnızca herkese açık sayfalardaki sayfa görüntülerini ve genel cihaz ve tarayıcı bilgisini kaydeder. Oturum kaydı yapılmaz, kişisel profil oluşturulmaz; veli, öğrenci ve yönetim sayfaları ölçüme dahil edilmez.",
       "Ölçüm hizmeti PostHog tarafından, Avrupa Birliği sunucularında sağlanır. Onayını bu sayfadaki 'Çerez tercihlerimi değiştir' düğmesiyle istediğin zaman geri alabilirsin.",
