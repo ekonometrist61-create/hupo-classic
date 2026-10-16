@@ -83,7 +83,7 @@ export async function HeroSection() {
         {/* ÖRNEK RAPOR: veli kartı, etiketi açıkça görünür */}
         <aside
           aria-label={t("hero.sampleLabel")}
-          className="absolute -end-2 bottom-0 w-60 rounded-2xl bg-white p-4 shadow-xl ring-1 ring-cream-dark sm:-end-8 sm:w-64 dark:bg-gray-800 dark:ring-gray-700"
+          className="absolute end-0 bottom-0 w-60 max-w-[calc(100%-1rem)] rounded-2xl bg-white p-4 shadow-xl ring-1 ring-cream-dark sm:-end-8 sm:w-64 dark:bg-gray-800 dark:ring-gray-700"
         >
           <div className="flex items-center justify-between gap-2">
             <span className="rounded-md bg-warning-100 px-2 py-0.5 text-[11px] font-extrabold tracking-wider text-warning-700">

@@ -55,7 +55,7 @@ export async function LandingHeader() {
           <SignInMenu />
           <Link
             href="/demo"
-            className="inline-flex min-h-11 shrink-0 items-center whitespace-nowrap rounded-xl bg-brand-500 px-4 text-sm font-bold text-white transition-colors hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 motion-reduce:transition-none"
+            className="hidden min-h-11 shrink-0 items-center whitespace-nowrap rounded-xl sm:inline-flex bg-brand-500 px-4 text-sm font-bold text-white transition-colors hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 motion-reduce:transition-none"
           >
             {t("nav.freeTrial")}
           </Link>
