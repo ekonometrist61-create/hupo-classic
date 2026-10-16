@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
-/// Soru metnini gösterir; `**kalın**` işaretli kısımları kalın yazar
-/// ("altı koyu yazılı sözcük" gibi sorularda vurgu kaybolmasın).
+import '../theme/app_theme.dart';
+
+/// Soru metnini gösterir; `**kalın**` işaretli kısımları kalın ve altı çizili yazar
+/// ("altı koyu yazılı sözcük" gibi sorularda vurgu kaybolmasın). Altı çizgi, web'deki
+/// örnek soru ile aynı amber tondadır (AppColors.sunDark).
 class SoruMetni extends StatelessWidget {
   const SoruMetni(this.metin, {super.key, this.style, this.textAlign});
 
@@ -24,7 +27,8 @@ class SoruMetni extends StatelessWidget {
                   ? const TextStyle(
                       fontWeight: FontWeight.w900,
                       decoration: TextDecoration.underline,
-                      decorationThickness: 2,
+                      decorationColor: AppColors.sunDark,
+                      decorationThickness: 2.5,
                     )
                   : null,
             ),

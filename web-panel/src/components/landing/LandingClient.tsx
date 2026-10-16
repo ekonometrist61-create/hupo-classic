@@ -7,12 +7,11 @@ import { useEffect, useId, useState } from "react";
 
 import { IconChevronDown, IconClose, IconMenu } from "./Icons";
 
+// Masaüstü menüsüyle aynı bağlantılar (sayfada karşılığı olmayanlar yok).
 const NAV_ITEMS = [
-  { href: "#demo", key: "demo" },
-  { href: "#app-screens", key: "appScreens" },
-  { href: "#characters", key: "characters" },
   { href: "#how-it-works", key: "how" },
-  { href: "#why-parents", key: "parents" },
+  { href: "#report", key: "report" },
+  { href: "#characters", key: "characters" },
   { href: "#pricing", key: "pricing" },
   { href: "#faq", key: "faq" },
 ] as const;
@@ -39,14 +38,14 @@ export function MobileMenu() {
         aria-expanded={open}
         aria-controls={panelId}
         aria-label={open ? t("close") : t("open")}
-        className="inline-flex h-11 w-11 items-center justify-center rounded-xl text-navy hover:bg-cream-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 md:hidden dark:text-gray-100 dark:hover:bg-gray-800"
+        className="inline-flex h-11 w-11 items-center justify-center rounded-xl text-navy hover:bg-cream-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 xl:hidden dark:text-gray-100 dark:hover:bg-gray-800"
       >
         {open ? <IconClose className="h-6 w-6" /> : <IconMenu className="h-6 w-6" />}
       </button>
       {open && (
         <div
           id={panelId}
-          className="absolute inset-x-0 top-full z-40 border-b border-cream-dark bg-cream p-4 shadow-lg md:hidden dark:border-gray-700 dark:bg-gray-900"
+          className="absolute inset-x-0 top-full z-40 border-b border-cream-dark bg-cream p-4 shadow-lg xl:hidden dark:border-gray-700 dark:bg-gray-900"
         >
           <nav aria-label={t("label")} className="flex flex-col">
             {NAV_ITEMS.map((item) => (
@@ -59,19 +58,26 @@ export function MobileMenu() {
                 {t(item.key)}
               </a>
             ))}
-            <Link
-              href="/veli-paneli/giris"
-              onClick={() => setOpen(false)}
-              className="flex min-h-11 items-center rounded-lg px-3 text-base font-semibold text-navy-muted hover:bg-cream-dark dark:text-gray-400 dark:hover:bg-gray-800"
-            >
-              {t("signin")}
-            </Link>
             <a
               href={STUDENT_APP_URL}
               className="flex min-h-11 items-center rounded-lg px-3 text-base font-semibold text-navy-muted hover:bg-cream-dark dark:text-gray-400 dark:hover:bg-gray-800"
             >
               {t("studentLogin")}
             </a>
+            <Link
+              href="/veli-paneli/giris"
+              onClick={() => setOpen(false)}
+              className="flex min-h-11 items-center rounded-lg px-3 text-base font-semibold text-navy-muted hover:bg-cream-dark dark:text-gray-400 dark:hover:bg-gray-800"
+            >
+              {t("parentLogin")}
+            </Link>
+            <Link
+              href="/yonetim-giris"
+              onClick={() => setOpen(false)}
+              className="flex min-h-11 items-center rounded-lg px-3 text-base font-semibold text-navy-muted hover:bg-cream-dark dark:text-gray-400 dark:hover:bg-gray-800"
+            >
+              {t("teacherLogin")}
+            </Link>
             <Link
               href="/demo"
               onClick={() => setOpen(false)}

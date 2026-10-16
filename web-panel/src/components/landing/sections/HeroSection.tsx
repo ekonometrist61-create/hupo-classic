@@ -20,10 +20,7 @@ export async function HeroSection() {
   return (
     <section className="mx-auto grid max-w-6xl items-center gap-10 px-4 pb-12 pt-10 sm:px-6 sm:pb-14 sm:pt-12 lg:grid-cols-[1.05fr_0.95fr] lg:gap-12 lg:px-8 lg:pb-16 lg:pt-14">
       <div>
-        <p className="inline-flex rounded-full bg-gold-100 px-3 py-1 text-sm font-bold text-gold-900 dark:bg-gold-900/40 dark:text-gold-100">
-          {t("hero.badge")}
-        </p>
-        <h1 className="mt-5 text-balance text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl lg:text-[3.4rem]">
+        <h1 className="text-balance text-4xl font-extrabold leading-[1.1] tracking-tight sm:text-5xl lg:text-[3.4rem]">
           {t("hero.title")}
         </h1>
         <p className="mt-5 max-w-xl text-lg leading-relaxed text-navy-muted sm:text-xl dark:text-gray-300">

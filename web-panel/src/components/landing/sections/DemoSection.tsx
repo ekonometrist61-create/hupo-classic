@@ -46,7 +46,7 @@ export async function DemoSection() {
             <p className="mt-5 text-lg font-semibold leading-relaxed">
               {t.rich("demo.question", {
                 b: (chunks) => (
-                  <strong className="font-extrabold underline decoration-gold-500 decoration-2 underline-offset-4">
+                  <strong className="font-extrabold underline decoration-gold-600 decoration-2 underline-offset-4">
                     {chunks}
                   </strong>
                 ),

@@ -52,7 +52,7 @@ function renderEmphasis(text: string) {
     i % 2 === 1 ? (
       <strong
         key={i}
-        className="font-extrabold underline decoration-gold-500 decoration-2 underline-offset-4"
+        className="font-extrabold underline decoration-gold-600 decoration-2 underline-offset-4"
       >
         {part}
       </strong>
