@@ -63,8 +63,8 @@ export async function HeroSection() {
           <Image
             src="/landing/hero-soru.jpg"
             alt={t("hero.phoneAlt")}
-            width={600}
-            height={1200}
+            width={720}
+            height={1560}
             priority
             sizes="256px"
             className="h-auto w-full rounded-[1.9rem]"
