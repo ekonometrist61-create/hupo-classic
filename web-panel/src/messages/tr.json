@@ -232,6 +232,7 @@
     "marketingEposta": "E-posta ile bilgilendirilmek istiyorum.",
     "marketingSms": "SMS ile bilgilendirilmek istiyorum.",
     "marketingTelefon": "Telefonla aranmak istiyorum.",
+    "marketingPush": "Uygulama bildirimleriyle (push) kampanya ve tekliflerden haberdar edilmek istiyorum.",
     "marketingKabul": "Seçimlerim kapsamında <link>HUPOLİNGO Ticari Elektronik İleti Bilgilendirme ve Onay Metni</link>'ni kabul ediyorum. İzinlerimi dilediğim zaman ücretsiz olarak değiştirebilir veya geri alabilirim. Onay vermemem platformu kullanmama engel değildir.",
     "consentMarketing": "Hupolingo'dan abonelik, ürün ve kampanya bilgileri için e-posta ile ticari ileti almak istiyorum. Bu onayı istediğin zaman geri alabilirsin.",
     "submit": "Hesap oluştur",
@@ -943,7 +944,18 @@
       "project": "Proje",
       "requestsPermission": "İzin istekleri",
       "minAgo": "dk önce",
-      "hrAgo": "sa önce"
+      "hrAgo": "sa önce",
+      "empty": "Henüz bildiriminiz yok.",
+      "loadError": "Bildirimler yüklenemedi, birazdan tekrar deneyin.",
+      "markReadError": "Bildirim okundu olarak işaretlenemedi.",
+      "close": "Bildirimleri kapat",
+      "kategori": {
+        "sistem": "Sistem",
+        "akademik": "Akademik",
+        "duyuru": "Duyuru",
+        "indirim": "İndirim",
+        "kampanya": "Kampanya"
+      }
     }
   },
   "userDropdown": {
@@ -2040,8 +2052,22 @@
     },
     "siniflar": {
       "title": "Sınıf Yönetimi",
+      "teacherTitle": "Sınıflarım",
+      "genelTitle": "Sınıflar",
+      "teacherDesc": "Size atanmış sınıfların öğrenci sayısını ve genel ilerleme özetini görürsünüz. Bu ekran salt okunurdur; sınıf bilgilerini yöneticiniz değiştirir.",
       "new": "Yeni sınıf",
       "empty": "Henüz sınıf yok.",
+      "emptyTeacher": "Size atanmış bir sınıf yok. Atama için yöneticinizle iletişime geçin.",
+      "seviyeEtiket": "{seviye}. sınıf",
+      "ilerlemeNot": "İlerleme değerleri, sınıfta en az 3 öğrencinin etkinliği olduğunda hesaplanır. Doğru oranı öğrenci başına ortalamadır.",
+      "ilerlemeYetersiz": "Veri yetersiz",
+      "picker": {
+        "label": "Öğretmen (isteğe bağlı)",
+        "placeholder": "Öğretmen ara...",
+        "loading": "Öğretmen listesi yükleniyor...",
+        "none": "Eşleşen öğretmen bulunamadı",
+        "change": "Değiştir"
+      },
       "loading": "Yükleniyor...",
       "retry": "Tekrar dene",
       "cols": {
@@ -2050,7 +2076,12 @@
         "ogretmen": "Öğretmen",
         "ogrenciler": "Öğrenci",
         "yil": "Yıl",
-        "aktif": "Durum"
+        "aktif": "Durum",
+        "okul": "Okul",
+        "aktifOgrenci": "Son 7 gün aktif",
+        "dogruOrani": "Ortalama doğru",
+        "bekleyen": "Tekrar bekleyen",
+        "sonEtkinlik": "Son etkinlik"
       },
       "active": "Aktif",
       "inactive": "Pasif",

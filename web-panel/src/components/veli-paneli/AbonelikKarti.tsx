@@ -79,13 +79,13 @@ export default function AbonelikKarti() {
   };
 
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 dark:border-gray-800 dark:bg-white/3">
+    <div className="min-w-0 rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 dark:border-gray-800 dark:bg-white/3">
       <h3 className="mb-4 text-lg font-semibold text-gray-800 dark:text-white/90">
         {t("title")}
       </h3>
 
       {abonelik === "yukleniyor" && (
-        <p className="text-sm text-gray-500 dark:text-gray-400">Yükleniyor...</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">{t("loading")}</p>
       )}
 
       {hata && (
@@ -97,30 +97,50 @@ export default function AbonelikKarti() {
       )}
 
       {abonelik && abonelik !== "yukleniyor" && (
-        <div className="space-y-3">
+        <div className="space-y-4">
           <div className="flex flex-wrap items-center gap-3">
             <span className="text-base font-semibold text-gray-800 dark:text-white/90">
-              {abonelik.plan_ad ?? abonelik.plan_kod ?? "—"}
+              {abonelik.plan_ad ?? abonelik.plan_kod ?? t("bilinmiyor")}
             </span>
             <Badge size="sm" color={durumEtiket(abonelik.durum).renk}>
               {durumEtiket(abonelik.durum).metin}
             </Badge>
           </div>
-          <div className="grid grid-cols-2 gap-4 text-sm">
+          <dl className="grid grid-cols-1 gap-4 text-sm sm:grid-cols-2">
             <div>
-              <p className="text-xs text-gray-500 dark:text-gray-400">{t("baslangic")}</p>
-              <p className="font-medium text-gray-800 dark:text-white/80">
+              <dt className="text-xs text-gray-500 dark:text-gray-400">{t("baslangic")}</dt>
+              <dd className="font-medium text-gray-800 dark:text-white/80">
                 {tarihFormatla(abonelik.baslangic)}
-              </p>
+              </dd>
             </div>
-            {abonelik.bitis && (
+            <div>
+              <dt className="text-xs text-gray-500 dark:text-gray-400">{t("bitis")}</dt>
+              <dd className="font-medium text-gray-800 dark:text-white/80">
+                {abonelik.bitis ? tarihFormatla(abonelik.bitis) : t("bilinmiyor")}
+              </dd>
+            </div>
+            <div>
+              <dt className="text-xs text-gray-500 dark:text-gray-400">{t("saglayici")}</dt>
+              <dd className="font-medium text-gray-800 dark:text-white/80">
+                {abonelik.saglayici || t("bilinmiyor")}
+              </dd>
+            </div>
+          </dl>
+
+          {/* Yenileme ve iptal: yalnızca veritabanında olan bilgi gösterilir; eksik olan "bilinmiyor" olur. */}
+          <div className="border-t border-gray-100 pt-4 dark:border-gray-800">
+            <h4 className="text-sm font-semibold text-gray-800 dark:text-white/90">
+              {t("yenilemeBaslik")}
+            </h4>
+            <dl className="mt-2 space-y-1 text-sm text-gray-700 dark:text-gray-300">
               <div>
-                <p className="text-xs text-gray-500 dark:text-gray-400">{t("bitis")}</p>
-                <p className="font-medium text-gray-800 dark:text-white/80">
-                  {tarihFormatla(abonelik.bitis)}
-                </p>
+                <dt className="inline font-medium">{t("yenileme")}: </dt>
+                <dd className="inline">{t("bilinmiyor")}</dd>
               </div>
-            )}
+            </dl>
+            <p className="mt-2 text-theme-xs text-gray-500 dark:text-gray-400">
+              {t("iptalNot")}
+            </p>
           </div>
         </div>
       )}

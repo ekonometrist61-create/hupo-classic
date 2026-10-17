@@ -35,12 +35,15 @@ const AppHeader: React.FC = () => {
       <div className="flex grow flex-col items-center justify-between xl:h-19 xl:flex-row xl:px-8">
         <div className="flex w-full items-center justify-between gap-2 border-b border-gray-200 px-3 py-3 sm:gap-4 xl:justify-normal xl:border-b-0 xl:px-0 xl:py-0 dark:border-gray-800">
           <button
+            data-mobil-menu
             className={cn(
-              "z-99999 flex h-10 w-10 items-center justify-center rounded-lg border-gray-200 text-gray-500 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-blue-light-400 lg:h-11 lg:w-11 xl:border dark:border-gray-800 dark:text-gray-400",
+              "z-99999 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg border-gray-200 text-gray-500 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-blue-light-400 xl:border dark:border-gray-800 dark:text-gray-400",
               isMobileOpen && "bg-gray-100 dark:bg-white/3",
             )}
             onClick={handleToggle}
             aria-label={t("toggleSidebar")}
+            aria-controls="kenar-menu"
+            aria-expanded={isMobileOpen}
           >
             {isMobileOpen ? (
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden>
@@ -63,11 +66,24 @@ const AppHeader: React.FC = () => {
             <BrandMark />
           </Link>
 
+          {/* Mobil ve tablet: arama, bildirim ve hesap menüsünü açar (CommandPalette ile aynı olay). */}
           <button
+            type="button"
+            onClick={() => window.dispatchEvent(new Event("komut-paleti-ac"))}
+            aria-label={ts("openSearch")}
+            className="z-99999 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-gray-600 hover:bg-gray-100 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-blue-light-400 xl:hidden dark:text-gray-400 dark:hover:bg-gray-800"
+          >
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <circle cx="11" cy="11" r="6.5" stroke="currentColor" strokeWidth="2" />
+              <path d="M16 16l4.5 4.5" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+            </svg>
+          </button>
+          <button
+            type="button"
             onClick={() => setApplicationMenuOpen((v) => !v)}
-            aria-label={ts("workspaceCrumb")}
+            aria-label={ts("moreActions")}
             aria-expanded={isApplicationMenuOpen}
-            className="z-99999 flex h-10 w-10 items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100 xl:hidden dark:text-gray-400 dark:hover:bg-gray-800"
+            className="z-99999 flex h-11 w-11 shrink-0 items-center justify-center rounded-lg text-gray-700 hover:bg-gray-100 xl:hidden dark:text-gray-400 dark:hover:bg-gray-800"
           >
             <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" aria-hidden>
               <circle cx="6" cy="12" r="1.5" />
@@ -76,7 +92,7 @@ const AppHeader: React.FC = () => {
             </svg>
           </button>
 
-          <nav aria-label="breadcrumb" className="hidden text-xs text-gray-500 xl:block dark:text-gray-400">
+          <nav aria-label="breadcrumb" className="hidden text-xs text-gray-500 md:block dark:text-gray-400">
             {ts("workspaceCrumb")}
             {current && (
               <>

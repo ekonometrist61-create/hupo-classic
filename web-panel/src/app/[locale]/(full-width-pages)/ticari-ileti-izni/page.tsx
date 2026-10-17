@@ -89,6 +89,7 @@ export default async function TicariIletiIzniPage({ params }: { params: Promise<
               <li><strong>E-posta:</strong> Ticari tanıtımlar, kampanyalar, abonelik fırsatları, ürün duyuruları.</li>
               <li><strong>SMS/MMS:</strong> Kampanyalar, özel teklifler, promosyonlar, üyelik avantajları.</li>
               <li><strong>Telefon Araması:</strong> Ürün ve hizmet tanıtımları, abonelik teklifleri.</li>
+              <li><strong>Uygulama bildirimleri (push):</strong> Kampanya ve teklifler. Yalnızca bu kanala ayrıca onay veren velilere gönderilir.</li>
             </ul>
           </section>
 

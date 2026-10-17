@@ -410,7 +410,37 @@
           "inapp": { "name": "Uygulama içi", "desc": "Hupo mesaj kutusu" }
         },
         "notConnected": "Bağlı değil",
-        "statesNote": "Mesajın sağlayıcıya kabulü, cihaza teslimi ve okunması farklı durumlardır; sağlayıcılar bağlandığında her kanalda ölçülebilen durum gösterilecek."
+        "statesNote": "Mesajın sağlayıcıya kabulü, cihaza teslimi ve okunması farklı durumlardır; sağlayıcılar bağlandığında her kanalda ölçülebilen durum gösterilecek.",
+        "legal": {
+          "title": "Pazarlama push kapısı (hukuk onayı)",
+          "desc": "Kapalıyken pazarlama push'u gönderilmez ve kayıt formunda push kutusu görünmez. Açmadan önce hukuk görüşü alın ve İYS kararını girin.",
+          "status": "Durum",
+          "statusOff": "Kapalı",
+          "statusOn": "Onaylı",
+          "version": "Onaylanan metin sürümü",
+          "versionHint": "Örn. hupolingo-ticari-ileti-2026-10-v2",
+          "iys": "İYS (İleti Yönetim Sistemi) kararı",
+          "iysUnknown": "Henüz karar verilmedi (kapı açılamaz)",
+          "iysNotRequired": "Gerekli değil",
+          "iysDone": "Gerekli, kayıt tamamlandı",
+          "note": "Karar notu",
+          "noteHint": "Hukuk görüşünün tarihi, özeti ve karar gerekçesi",
+          "save": "Kapıyı kaydet",
+          "saved": "Kapı güncellendi.",
+          "demo": "Demo modunda kayıt yapılmaz.",
+          "measureTitle": "Ön izin ölçümü (son 30 gün)",
+          "measureDesc": "Kişi kimliği tutulmaz; yalnızca toplam sayılar.",
+          "shown": "Gösterim",
+          "yes": "Evet",
+          "later": "Şimdilik değil",
+          "systemYes": "Sistem izni verildi",
+          "systemNo": "Sistem izni reddedildi",
+          "yesRate": "Evet oranı",
+          "systemRate": "Sistem izni oranı",
+          "noData": "Henüz veri yok",
+          "insufficient": "Bu dönemde 10'dan az gösterim var; küçük sayılar kişileri ayırt edilebilir kılmamak için gizlenir.",
+          "footer": "Sınır: 14 günde en fazla 2 gösterim. Oranlar gösterim sayısına bölünür."
+        }
       },
       "recon": {
         "notDeployed": "Mutabakat kontrolü için veritabanı güncellemesi uygulanmamış.",

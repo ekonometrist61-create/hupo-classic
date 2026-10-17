@@ -22,6 +22,9 @@ import {
 } from "./styles";
 
 const PAGE_SIZE = 25;
+// Tablo kendi kapsayıcısında kayar; ilk sütun kaydırmada sabit kalır.
+const ILK_SUTUN_SABIT =
+  "[&_tr>*:first-child]:sticky [&_tr>*:first-child]:inset-s-0 [&_tr>*:first-child]:z-1 [&_tr>*:first-child]:bg-white dark:[&_tr>*:first-child]:bg-gray-900";
 const STATUSES = ["draft", "active", "paused"] as const;
 type JourneyStatus = (typeof STATUSES)[number];
 const STATUS_COLOR: Record<JourneyStatus, "light" | "success" | "warning"> = {
@@ -88,8 +91,8 @@ export default function JourneyOtomasyonlariManager() {
   return (
     <div className="space-y-6">
       <section className={`${cardClass} p-5 sm:p-6`}>
-        <div className="mb-4 flex flex-wrap items-end gap-4">
-          <div className="min-w-40">
+        <div className="mb-4 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-end">
+          <div className="w-full sm:w-auto sm:min-w-40">
             <label className={labelClass} htmlFor="j-status">{t("filterStatus")}</label>
             <select
               id="j-status"
@@ -103,8 +106,8 @@ export default function JourneyOtomasyonlariManager() {
               ))}
             </select>
           </div>
-          <div className="ms-auto">
-            <button type="button" className={primaryBtn} onClick={() => setCreateOpen(true)}>
+          <div className="sm:ms-auto">
+            <button type="button" className={`${primaryBtn} w-full sm:w-auto`} onClick={() => setCreateOpen(true)}>
               {t("newJourney")}
             </button>
           </div>
@@ -124,7 +127,7 @@ export default function JourneyOtomasyonlariManager() {
         ) : rows.length === 0 ? (
           <p className="py-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("empty")}</p>
         ) : (
-          <div className="overflow-x-auto">
+          <div className={`overflow-x-auto ${ILK_SUTUN_SABIT}`}>
             <table className="min-w-full">
               <thead className="border-b border-gray-100 dark:border-gray-800">
                 <tr>
@@ -157,11 +160,11 @@ export default function JourneyOtomasyonlariManager() {
                       </td>
                       <td className={`${tdClass} whitespace-nowrap text-end`}>
                         {status === "active" ? (
-                          <button type="button" className={linkBtn} disabled={busy} onClick={() => changeStatus(j, "paused")}>
+                          <button type="button" className={`${linkBtn} inline-flex min-h-11 items-center`} disabled={busy} onClick={() => changeStatus(j, "paused")}>
                             {t("pause")}
                           </button>
                         ) : (
-                          <button type="button" className={linkBtn} disabled={busy} onClick={() => changeStatus(j, "active")}>
+                          <button type="button" className={`${linkBtn} inline-flex min-h-11 items-center`} disabled={busy} onClick={() => changeStatus(j, "active")}>
                             {t("activate")}
                           </button>
                         )}
@@ -244,7 +247,7 @@ function CreateJourneyModal({ onClose, onSaved }: { onClose: () => void; onSaved
           </select>
         </div>
         <ErrorNote message={err} />
-        <div className="flex justify-end gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
           <button type="button" className={outlineBtn} onClick={onClose}>
             {t("form.cancel")}
           </button>

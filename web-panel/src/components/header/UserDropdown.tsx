@@ -113,7 +113,7 @@ export default function UserDropdown() {
               type="button"
               onClick={() => setIsSubDropdownOpen((prev) => !prev)}
               className={cn(
-                "group flex max-h-10 w-full items-center justify-between gap-2 rounded-lg px-3 py-2 text-theme-sm font-medium transition-colors",
+                "group flex min-h-11 w-full items-center justify-between gap-2 rounded-lg px-3 py-2 text-theme-sm font-medium transition-colors",
                 isSubDropdownOpen
                   ? "bg-gray-100 text-gray-900 dark:bg-white/5 dark:text-white"
                   : "text-gray-700 hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300",
@@ -170,7 +170,7 @@ export default function UserDropdown() {
         <DropdownItem
           tag="button"
           onItemClick={handleSignOut}
-          className="group mt-3 flex w-full items-center justify-center gap-3 rounded-lg border border-gray-200 px-3 py-2 text-theme-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-800 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
+          className="group mt-3 flex min-h-11 w-full items-center justify-center gap-3 rounded-lg border border-gray-200 px-3 py-2 text-theme-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-700 dark:border-gray-800 dark:text-gray-400 dark:hover:bg-white/5 dark:hover:text-gray-300"
         >
           {t("signOut")}
         </DropdownItem>

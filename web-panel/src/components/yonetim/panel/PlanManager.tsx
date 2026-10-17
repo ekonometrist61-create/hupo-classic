@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import Badge from "@/components/ui/badge/Badge";
+import DesktopOnly from "@/components/ui/DesktopOnly";
 import { formatKurus } from "@/utils/format";
 import { createClient } from "@/utils/supabase/client";
 import type { Plan } from "../types";
@@ -21,6 +22,12 @@ import {
   thClass,
 } from "./styles";
 
+// Dokunma hedefi en az 44 px; tablo ilk sütunu yatay kaydırmada sabit kalır (TASKS §20).
+const LINK_TOUCH = `${linkBtn} inline-flex min-h-11 items-center`;
+const TH_STICKY =
+  "sticky start-0 z-10 bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase dark:bg-gray-900 dark:text-gray-400";
+const TD_STICKY = `${tdClass} sticky start-0 z-10 bg-white dark:bg-gray-900`;
+
 interface FormState {
   kod: string;
   ad: string;
@@ -34,6 +41,7 @@ interface FormState {
 
 const EMPTY: FormState = { kod: "", ad: "", aciklama: "", fiyat: "", sure: "30", aktif: true, tip_kod: "premium", deneme_gun: "" };
 
+/** Plan oluşturma ve düzenleme masaüstüne özeldir (TASKS §20, K3); listeleme telefonda açıktır. */
 export default function PlanManager({
   plans,
   onChanged,
@@ -114,9 +122,11 @@ export default function PlanManager({
         <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
           {t("title")}
         </h3>
-        <button type="button" className={outlineBtn} onClick={openNew}>
-          {t("new")}
-        </button>
+        <DesktopOnly>
+          <button type="button" className={outlineBtn} onClick={openNew}>
+            {t("new")}
+          </button>
+        </DesktopOnly>
       </div>
 
       <PlanTipiManager tipler={tipler} onChanged={() => { void loadTipler(); }} />
@@ -131,20 +141,20 @@ export default function PlanManager({
           <table className="min-w-full">
             <thead className="border-b border-gray-100 dark:border-gray-800">
               <tr>
-                <th className={thClass}>{t("kod")}</th>
+                <th className={TH_STICKY}>{t("kod")}</th>
                 <th className={thClass}>{t("ad")}</th>
                 <th className={thClass}>Tip</th>
                 <th className={thClass}>{t("fiyat")}</th>
                 <th className={thClass}>{t("sure")}</th>
                 <th className={thClass}>Deneme</th>
                 <th className={thClass}>{t("aktif")}</th>
-                <th className={thClass} />
+                <th className={`${thClass} hidden md:table-cell`} />
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
               {plans.map((p) => (
                 <tr key={p.kod}>
-                  <td className={`${tdClass} font-mono`}>{p.kod}</td>
+                  <td className={`${TD_STICKY} font-mono`}>{p.kod}</td>
                   <td className={tdClass}>{p.ad}</td>
                   <td className={`${tdClass} font-mono text-xs`}>{p.tip_kod}</td>
                   <td className={tdClass}>{formatKurus(p.fiyat_kurus)}</td>
@@ -155,8 +165,8 @@ export default function PlanManager({
                       {p.aktif ? t("active") : t("inactive")}
                     </Badge>
                   </td>
-                  <td className={`${tdClass} text-end`}>
-                    <button type="button" className={linkBtn} onClick={() => openEdit(p)}>
+                  <td className={`${tdClass} hidden text-end md:table-cell`}>
+                    <button type="button" className={LINK_TOUCH} onClick={() => openEdit(p)}>
                       {t("edit")}
                     </button>
                   </td>
@@ -168,113 +178,115 @@ export default function PlanManager({
       )}
 
       {form && (
-        <form
-          onSubmit={submit}
-          className="mt-6 space-y-4 rounded-xl border border-gray-200 p-4 dark:border-gray-800"
-        >
-          <h4 className="text-sm font-semibold text-gray-800 dark:text-white/90">
-            {editing ? t("editTitle") : t("createTitle")}
-          </h4>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
-              <label className={labelClass} htmlFor="plan-kod">{t("kod")}</label>
-              <input
-                id="plan-kod"
-                className={`${inputClass} font-mono`}
-                value={form.kod}
-                disabled={editing}
-                maxLength={30}
-                onChange={(e) => set("kod", e.target.value)}
-              />
-              <p className="mt-1 text-theme-xs text-gray-500 dark:text-gray-400">
-                {t("kodHint")}
-              </p>
+        <DesktopOnly>
+          <form
+            onSubmit={submit}
+            className="mt-6 space-y-4 rounded-xl border border-gray-200 p-4 dark:border-gray-800"
+          >
+            <h4 className="text-sm font-semibold text-gray-800 dark:text-white/90">
+              {editing ? t("editTitle") : t("createTitle")}
+            </h4>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label className={labelClass} htmlFor="plan-kod">{t("kod")}</label>
+                <input
+                  id="plan-kod"
+                  className={`${inputClass} font-mono`}
+                  value={form.kod}
+                  disabled={editing}
+                  maxLength={30}
+                  onChange={(e) => set("kod", e.target.value)}
+                />
+                <p className="mt-1 text-theme-xs text-gray-500 dark:text-gray-400">
+                  {t("kodHint")}
+                </p>
+              </div>
+              <div>
+                <label className={labelClass} htmlFor="plan-ad">{t("ad")}</label>
+                <input
+                  id="plan-ad"
+                  className={inputClass}
+                  value={form.ad}
+                  onChange={(e) => set("ad", e.target.value)}
+                />
+              </div>
+              <div>
+                <label className={labelClass} htmlFor="plan-fiyat">{t("fiyat")}</label>
+                <input
+                  id="plan-fiyat"
+                  className={inputClass}
+                  inputMode="decimal"
+                  placeholder="149,90"
+                  value={form.fiyat}
+                  onChange={(e) => set("fiyat", e.target.value)}
+                />
+              </div>
+              <div>
+                <label className={labelClass} htmlFor="plan-sure">{t("sure")}</label>
+                <input
+                  id="plan-sure"
+                  className={inputClass}
+                  inputMode="numeric"
+                  value={form.sure}
+                  onChange={(e) => set("sure", e.target.value)}
+                />
+              </div>
+              <div>
+                <label className={labelClass} htmlFor="plan-deneme">Deneme süresi (gün, boş = yok)</label>
+                <input
+                  id="plan-deneme"
+                  className={inputClass}
+                  inputMode="numeric"
+                  placeholder="14"
+                  value={form.deneme_gun}
+                  onChange={(e) => set("deneme_gun", e.target.value)}
+                />
+              </div>
             </div>
             <div>
-              <label className={labelClass} htmlFor="plan-ad">{t("ad")}</label>
-              <input
-                id="plan-ad"
+              <label className={labelClass} htmlFor="plan-tip">Paket tipi (web sitesinde kolon)</label>
+              <select
+                id="plan-tip"
                 className={inputClass}
-                value={form.ad}
-                onChange={(e) => set("ad", e.target.value)}
-              />
+                value={form.tip_kod}
+                onChange={(e) => set("tip_kod", e.target.value)}
+              >
+                {tipler.map((tip) => (
+                  <option key={tip.kod} value={tip.kod}>
+                    {tip.ad} ({tip.kod}){tip.aktif ? "" : " — pasif"}
+                  </option>
+                ))}
+              </select>
             </div>
             <div>
-              <label className={labelClass} htmlFor="plan-fiyat">{t("fiyat")}</label>
-              <input
-                id="plan-fiyat"
-                className={inputClass}
-                inputMode="decimal"
-                placeholder="149,90"
-                value={form.fiyat}
-                onChange={(e) => set("fiyat", e.target.value)}
+              <label className={labelClass} htmlFor="plan-aciklama">{t("aciklama")}</label>
+              <textarea
+                id="plan-aciklama"
+                rows={2}
+                className={`${inputClass} h-auto`}
+                value={form.aciklama}
+                onChange={(e) => set("aciklama", e.target.value)}
               />
             </div>
-            <div>
-              <label className={labelClass} htmlFor="plan-sure">{t("sure")}</label>
+            <label className="flex min-h-11 items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
               <input
-                id="plan-sure"
-                className={inputClass}
-                inputMode="numeric"
-                value={form.sure}
-                onChange={(e) => set("sure", e.target.value)}
+                type="checkbox"
+                checked={form.aktif}
+                onChange={(e) => set("aktif", e.target.checked)}
               />
+              {t("aktif")}
+            </label>
+            <ErrorNote message={error} />
+            <div className="flex justify-end gap-3">
+              <button type="button" className={outlineBtn} onClick={() => setForm(null)}>
+                {t("cancel")}
+              </button>
+              <button type="submit" className={primaryBtn} disabled={saving}>
+                {saving ? t("saving") : t("save")}
+              </button>
             </div>
-            <div>
-              <label className={labelClass} htmlFor="plan-deneme">Deneme süresi (gün, boş = yok)</label>
-              <input
-                id="plan-deneme"
-                className={inputClass}
-                inputMode="numeric"
-                placeholder="14"
-                value={form.deneme_gun}
-                onChange={(e) => set("deneme_gun", e.target.value)}
-              />
-            </div>
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="plan-tip">Paket tipi (web sitesinde kolon)</label>
-            <select
-              id="plan-tip"
-              className={inputClass}
-              value={form.tip_kod}
-              onChange={(e) => set("tip_kod", e.target.value)}
-            >
-              {tipler.map((tip) => (
-                <option key={tip.kod} value={tip.kod}>
-                  {tip.ad} ({tip.kod}){tip.aktif ? "" : " — pasif"}
-                </option>
-              ))}
-            </select>
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="plan-aciklama">{t("aciklama")}</label>
-            <textarea
-              id="plan-aciklama"
-              rows={2}
-              className={`${inputClass} h-auto`}
-              value={form.aciklama}
-              onChange={(e) => set("aciklama", e.target.value)}
-            />
-          </div>
-          <label className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-            <input
-              type="checkbox"
-              checked={form.aktif}
-              onChange={(e) => set("aktif", e.target.checked)}
-            />
-            {t("aktif")}
-          </label>
-          <ErrorNote message={error} />
-          <div className="flex justify-end gap-3">
-            <button type="button" className={outlineBtn} onClick={() => setForm(null)}>
-              {t("cancel")}
-            </button>
-            <button type="submit" className={primaryBtn} disabled={saving}>
-              {saving ? t("saving") : t("save")}
-            </button>
-          </div>
-        </form>
+          </form>
+        </DesktopOnly>
       )}
     </section>
   );

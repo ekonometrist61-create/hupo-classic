@@ -106,7 +106,7 @@ function SubjectsContent({
                 type="button"
                 aria-pressed={active}
                 onClick={() => setPicked(s.ders)}
-                className={`rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
+                className={`inline-flex min-h-11 items-center rounded-full border px-4 py-1.5 text-sm font-medium transition-colors ${
                   active
                     ? "border-brand-500 bg-brand-50 text-brand-600 dark:border-brand-400 dark:bg-brand-500/15 dark:text-brand-400"
                     : "border-gray-200 text-gray-600 hover:bg-gray-50 dark:border-gray-800 dark:text-gray-300 dark:hover:bg-white/5"
@@ -124,8 +124,11 @@ function SubjectsContent({
           <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">
             {selected.ders}
           </h3>
-          <Badge size="sm" color={successBadgeColor(selected.oran)}>
-            {`%${selected.oran}`}
+          <Badge
+            size="sm"
+            color={enough ? successBadgeColor(selected.oran) : "light"}
+          >
+            {enough ? `%${selected.oran}` : t("review.azVeri")}
           </Badge>
         </div>
         <p className="mt-2 text-theme-sm text-gray-500 dark:text-gray-400">
@@ -163,6 +166,8 @@ function SubjectsContent({
           labels={{
             title: tp("topicsTitle"),
             desc: tp("topicsDesc", { ders: selected.ders }),
+            kaynak: tp("topicsKaynak"),
+            azVeri: t("review.azVeri"),
             empty: tp("topicsEmpty"),
             topic: t("review.topic"),
             subject: t("review.subject"),
@@ -185,9 +190,14 @@ function TopicProgressList({ topics }: { topics: TopicProgress[] }) {
       <h4 className="mb-3 text-sm font-semibold text-gray-700 dark:text-gray-300">
         {tp("topicsTitle")}
       </h4>
+      <p className="mb-3 text-theme-xs text-gray-500 dark:text-gray-400">
+        {tp("topicsKaynak")}
+      </p>
       <ul className="space-y-2">
         {topics.map((topic) => {
           const needsReview = topic.yanlis > 0 || topic.bekleyen > 0;
+          // Oran yoksa ya da en az 6 soru yoksa yüzde gösterilmez; "az veri" yazılır.
+          const yeterli = topic.oran !== null && topic.toplam >= MIN_EVIDENCE;
           const pct = topic.oran ?? 0;
           return (
             <li
@@ -206,13 +216,14 @@ function TopicProgressList({ topics }: { topics: TopicProgress[] }) {
                   )}
                 </div>
                 <span className="shrink-0 text-sm font-semibold text-gray-700 dark:text-gray-300">
-                  %{pct}
+                  {yeterli ? `%${pct}` : t("review.azVeri")}
                 </span>
               </div>
               <div className="mt-2 h-1.5 w-full overflow-hidden rounded-full bg-gray-100 dark:bg-white/5">
                 <div
                   className={`h-full rounded-full transition-all ${progressColor(pct)}`}
-                  style={{ width: `${pct}%` }}
+                  style={{ width: yeterli ? `${pct}%` : "0%" }}
+                  aria-hidden
                 />
               </div>
               <p className="mt-1.5 text-theme-xs text-gray-500 dark:text-gray-400">

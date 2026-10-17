@@ -13,9 +13,7 @@ import {
   BoxIcon,
   DocsIcon,
   GridIcon,
-  GroupIcon,
   HorizontaLDots,
-  MailIcon,
   PieChartIcon,
   ShootingStarIcon,
   TableIcon,
@@ -41,6 +39,7 @@ const VELI_NAV: VeliNavGroup[] = [
       { key: "overview", icon: <GridIcon />, path: "/veli-paneli" },
       { key: "learning", icon: <BoltIcon /> },
       { key: "subjects", icon: <TableIcon />, path: "/veli-paneli/dersler" },
+      { key: "children", icon: <UserCircleIcon />, path: "/veli-paneli/cocuklarim" },
     ],
   },
   {
@@ -62,15 +61,19 @@ const VELI_NAV: VeliNavGroup[] = [
   {
     key: "account",
     items: [
-      { key: "notifications", icon: <MailIcon /> },
-      { key: "children", icon: <GroupIcon /> },
       { key: "membership", icon: <UserCircleIcon />, path: "/veli-paneli/uyelik" },
     ],
   },
 ];
 
+// Yakında (yolu olmayan) öğeler menüde gösterilmez (TASKS §20, K-kararı).
+const GORUNEN_NAV = VELI_NAV.map((group) => ({
+  ...group,
+  items: group.items.filter((item) => item.path),
+})).filter((group) => group.items.length > 0);
+
 const VeliSidebar: React.FC = () => {
-  const { isExpanded, isMobileOpen, isHovered, setIsHovered } = useSidebar();
+  const { isExpanded, isMobileOpen, isDesktop, isHovered, setIsHovered } = useSidebar();
   const pathname = usePathname();
   const router = useRouter();
   const t = useTranslations("veliPaneli");
@@ -91,7 +94,9 @@ const VeliSidebar: React.FC = () => {
 
   return (
     <aside
+      id="kenar-menu"
       aria-label={t("shell.brandSub")}
+      inert={!isDesktop && !isMobileOpen}
       className={cn(
         "fixed top-0 left-0 z-50 flex h-full flex-col bg-navy px-4 pt-7 pb-4 text-[#d2dce5] transition-all duration-300 ease-in-out xl:mt-0 rtl:right-0 rtl:left-auto",
         wide ? "w-72.5" : "w-22.5",
@@ -124,7 +129,7 @@ const VeliSidebar: React.FC = () => {
         aria-label={t("shell.brandSub")}
         className="no-scrollbar mt-4 flex-1 overflow-y-auto"
       >
-        {VELI_NAV.map((group) => (
+        {GORUNEN_NAV.map((group) => (
           <div key={group.key}>
             <h2
               className={cn(
@@ -138,38 +143,16 @@ const VeliSidebar: React.FC = () => {
               {group.items.map((item) => {
                 const label = t(`nav.${item.key}`);
                 const base =
-                  "group relative flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-theme-sm";
+                  "group relative flex min-h-11 w-full items-center gap-3 rounded-lg px-3 py-2.5 text-theme-sm";
                 const icon = (
                   <span className="size-5 shrink-0 [&>svg]:size-5">{item.icon}</span>
                 );
 
-                if (!item.path) {
-                  return (
-                    <li key={item.key}>
-                      <span
-                        aria-disabled="true"
-                        title={`${label} · ${t("shell.soon")}`}
-                        className={cn(base, "cursor-not-allowed text-[#d2dce5]/45")}
-                      >
-                        {icon}
-                        {wide && (
-                          <>
-                            <span className="truncate">{label}</span>
-                            <span className="ms-auto rounded bg-[#365169] px-1.5 text-[10px] text-[#b3c3d0]">
-                              {t("shell.soon")}
-                            </span>
-                          </>
-                        )}
-                      </span>
-                    </li>
-                  );
-                }
-
-                const active = isActive(item.path);
+                const active = isActive(item.path!);
                 return (
                   <li key={item.key}>
                     <Link
-                      href={item.path}
+                      href={item.path!}
                       aria-current={active ? "page" : undefined}
                       title={wide ? undefined : label}
                       className={cn(
@@ -213,7 +196,7 @@ const VeliSidebar: React.FC = () => {
           onClick={cikisYap}
           title={wide ? undefined : t("shell.signOut")}
           className={cn(
-            "flex w-full items-center gap-2 rounded-lg px-3 py-2 text-[12px] text-[#b3c3d0] hover:bg-[#29475e] hover:text-white transition-colors",
+            "flex min-h-11 w-full items-center gap-2 rounded-lg px-3 py-2 text-[12px] text-[#b3c3d0] hover:bg-[#29475e] hover:text-white transition-colors",
             !wide && "xl:justify-center",
           )}
         >

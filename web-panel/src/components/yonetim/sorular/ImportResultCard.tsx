@@ -2,6 +2,8 @@
 
 import { useTranslations } from "next-intl";
 
+import { dokunmaHedefi } from "../ui/responsive";
+
 export interface FinalError {
   line: number;
   hata: string;
@@ -99,7 +101,7 @@ export default function ImportResultCard({
           <button
             type="button"
             onClick={onDownloadErrors}
-            className="rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5"
+            className={`${dokunmaHedefi} justify-center rounded-lg border border-gray-300 px-4 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5`}
           >
             {t("result.downloadErrors")}
           </button>
@@ -107,7 +109,7 @@ export default function ImportResultCard({
         <button
           type="button"
           onClick={onReset}
-          className="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600"
+          className={`${dokunmaHedefi} justify-center rounded-lg bg-brand-500 px-4 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600`}
         >
           {t("result.again")}
         </button>

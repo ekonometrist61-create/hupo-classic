@@ -4,7 +4,7 @@ import { Link, useRouter } from "@/i18n/navigation";
 import { EyeCloseIcon } from "@/icons";
 import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 // Veli hesabı oluşturma. Rol "veli" olarak gönderilir; veritabanındaki
 // handle_new_user tetikleyicisi yalnızca 'veli' ya da 'ogrenci' kabul eder,
@@ -15,7 +15,8 @@ const fieldClass =
 const MIN_PASSWORD_LENGTH = 8;
 
 // Ticari ileti onay metni sürümü. Metin değişirse artırılmalı; her kanal kaydına yazılır.
-const ILETISIM_METIN_SURUMU = "hupolingo-ticari-ileti-2026-10-v1";
+// v2: push kanalı eklendi (metin değişti). Yasal metin onayı ayrıca bekleniyor (TASKS.md §23).
+const ILETISIM_METIN_SURUMU = "hupolingo-ticari-ileti-2026-10-v2";
 
 export default function SignUpForm() {
   const t = useTranslations("signup");
@@ -28,10 +29,23 @@ export default function SignUpForm() {
   const [izinEposta, setIzinEposta] = useState(false);
   const [izinSms, setIzinSms] = useState(false);
   const [izinTelefon, setIzinTelefon] = useState(false);
+  const [izinPush, setIzinPush] = useState(false);
+  // Push kutusu yalnızca hukuk kapısı açıksa ve bu metin sürümü onaylıysa gösterilir (yönetici kararı).
+  const [pushAcik, setPushAcik] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [sent, setSent] = useState(false);
+
+  useEffect(() => {
+    const kapiKontrol = async () => {
+      const { data, error } = await createClient().rpc("iletisim_push_kullanilabilir", {
+        p_metin_surumu: ILETISIM_METIN_SURUMU,
+      });
+      setPushAcik(!error && data === true);
+    };
+    void kapiKontrol();
+  }, []);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -59,6 +73,8 @@ export default function SignUpForm() {
           iletisim_eposta: izinEposta,
           iletisim_sms: izinSms,
           iletisim_telefon: izinTelefon,
+          // Kapı kapalıysa alan hiç gönderilmez: trigger push satırı yazmaz.
+          iletisim_push: pushAcik ? izinPush : undefined,
           iletisim_metin_surumu: ILETISIM_METIN_SURUMU,
         },
         emailRedirectTo: `${window.location.origin}/veli-paneli/giris`,
@@ -218,6 +234,9 @@ export default function SignUpForm() {
               { id: "izin-eposta", label: t("marketingEposta"), checked: izinEposta, set: setIzinEposta },
               { id: "izin-sms",    label: t("marketingSms"),    checked: izinSms,    set: setIzinSms },
               { id: "izin-tel",    label: t("marketingTelefon"),checked: izinTelefon,set: setIzinTelefon },
+              ...(pushAcik
+                ? [{ id: "izin-push", label: t("marketingPush"), checked: izinPush, set: setIzinPush }]
+                : []),
             ].map(({ id, label, checked, set }) => (
               <label key={id} className="flex cursor-pointer items-start gap-3 text-sm text-navy-muted">
                 <input

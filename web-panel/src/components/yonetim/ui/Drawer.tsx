@@ -2,6 +2,8 @@
 
 import { useEffect, useRef } from "react";
 
+import { dokunmaHedefi } from "./responsive";
+
 /** Sağdan açılan yan çekmece (yerel <dialog>): Esc ve zemine tıklama ile kapanır, odak tuzağı tarayıcıdan gelir. */
 export default function Drawer({
   open,
@@ -41,7 +43,7 @@ export default function Drawer({
               type="button"
               onClick={onClose}
               aria-label={closeLabel}
-              className="rounded-lg px-2 py-1 text-gray-500 hover:bg-gray-100 focus-visible:outline-3 focus-visible:outline-blue-light-400 dark:hover:bg-white/5"
+              className={`${dokunmaHedefi} min-w-11 justify-center rounded-lg text-gray-500 hover:bg-gray-100 focus-visible:outline-3 focus-visible:outline-blue-light-400 dark:hover:bg-white/5`}
             >
               ✕
             </button>

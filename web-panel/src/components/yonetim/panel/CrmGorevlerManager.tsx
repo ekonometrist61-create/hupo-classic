@@ -42,6 +42,10 @@ const PRIORITY_CLASS: Record<string, string> = {
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
+// Tablo kendi kapsayıcısında kayar; ilk sütun kaydırmada sabit kalır.
+const ILK_SUTUN_SABIT =
+  "[&_tr>*:first-child]:sticky [&_tr>*:first-child]:inset-s-0 [&_tr>*:first-child]:z-1 [&_tr>*:first-child]:bg-white dark:[&_tr>*:first-child]:bg-gray-900";
+
 function Pill({ className, children }: { className: string; children: React.ReactNode }) {
   return (
     <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-theme-xs font-medium whitespace-nowrap ${className}`}>
@@ -106,8 +110,8 @@ export default function CrmGorevlerManager() {
   return (
     <div className="space-y-6">
       <section className={`${cardClass} p-5 sm:p-6`}>
-        <div className="mb-4 flex flex-wrap items-end gap-4">
-          <div className="min-w-60 flex-1">
+        <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:items-end">
+          <div className="sm:col-span-2 lg:col-span-2">
             <label className={labelClass} htmlFor="g-search">{t("search")}</label>
             <input
               id="g-search"
@@ -118,7 +122,7 @@ export default function CrmGorevlerManager() {
               onChange={(e) => setSearch(e.target.value)}
             />
           </div>
-          <div className="min-w-40">
+          <div>
             <label className={labelClass} htmlFor="g-status">{t("cols.status")}</label>
             <select
               id="g-status"
@@ -132,7 +136,7 @@ export default function CrmGorevlerManager() {
               ))}
             </select>
           </div>
-          <div className="min-w-40">
+          <div>
             <label className={labelClass} htmlFor="g-priority">{t("cols.priority")}</label>
             <select
               id="g-priority"
@@ -147,7 +151,7 @@ export default function CrmGorevlerManager() {
             </select>
           </div>
           <div>
-            <button type="button" className={primaryBtn} onClick={() => setCreating(true)}>
+            <button type="button" className={`${primaryBtn} w-full sm:w-auto`} onClick={() => setCreating(true)}>
               {t("newTask")}
             </button>
           </div>
@@ -165,7 +169,7 @@ export default function CrmGorevlerManager() {
         ) : rows.length === 0 ? (
           <p className="py-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("empty")}</p>
         ) : (
-          <div className="overflow-x-auto">
+          <div className={`overflow-x-auto ${ILK_SUTUN_SABIT}`}>
             <table className="min-w-full">
               <thead className="border-b border-gray-100 dark:border-gray-800">
                 <tr>
@@ -350,7 +354,7 @@ function TaskModal({ onClose, onSaved }: { onClose: () => void; onSaved: () => v
           />
         </div>
         <ErrorNote message={err} />
-        <div className="flex justify-end gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
           <button type="button" className={outlineBtn} onClick={onClose}>
             {t("form.cancel")}
           </button>

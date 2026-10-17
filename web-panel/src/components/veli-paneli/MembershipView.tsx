@@ -3,10 +3,12 @@
 import { useTranslations } from "next-intl";
 
 import AbonelikKarti from "./AbonelikKarti";
+import IletisimIzniCard from "./IletisimIzniCard";
 import OdemeGecmisi from "./OdemeGecmisi";
 import PlanKarti from "./PlanKarti";
 
-// Üyelik & Hesap: veli hesabının aboneliği, plan durumu ve ödeme geçmişi (çocuk verisi içermez).
+// Üyelik & Hesap: abonelik, plan, ödeme geçmişi ve iletişim izni (çocuk verisi içermez).
+// K4 gereği iletişim izni kartı ana ekrandan bu sayfaya taşındı.
 export default function MembershipView() {
   const t = useTranslations("veliPaneli.membership");
 
@@ -19,6 +21,7 @@ export default function MembershipView() {
         <AbonelikKarti />
         <PlanKarti />
         <OdemeGecmisi />
+        <IletisimIzniCard />
       </div>
     </div>
   );

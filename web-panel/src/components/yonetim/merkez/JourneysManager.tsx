@@ -1,12 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import Badge from "@/components/ui/badge/Badge";
 import { cardClass, inputClass, labelClass, outlineBtn, primaryBtn } from "../panel/styles";
 import Feedback from "../ui/Feedback";
 import RpcBoundary from "../ui/RpcBoundary";
+import { dokunmaHedefi } from "../ui/responsive";
 import { adminCall, useAdminRpc } from "../useAdminRpc";
 import { DEMO_JOURNEYS } from "./demoData";
 import type { Channel, Journey, JourneyStep, JourneyTrigger } from "./types";
@@ -61,7 +62,7 @@ export default function JourneysManager() {
       </div>
 
       <div className="grid gap-6 xl:grid-cols-[minmax(260px,1fr)_minmax(0,2fr)]">
-        <section className={`${cardClass} p-5 sm:p-6`}>
+        <section className={`${cardClass} min-w-0 p-5 sm:p-6`}>
           <div className="mb-3 flex items-center justify-between gap-2">
             <h2 className="text-lg font-semibold text-navy dark:text-white/90">{t("listTitle")}</h2>
             <button type="button" className={primaryBtn} onClick={() => setSelected("new")}>{t("create")}</button>
@@ -78,7 +79,7 @@ export default function JourneysManager() {
                         type="button"
                         onClick={() => setSelected(j)}
                         aria-current={selected !== "new" && selected?.id === j.id ? "true" : undefined}
-                        className="flex w-full items-center justify-between gap-3 py-3 text-start hover:text-brand-500"
+                        className="flex min-h-11 w-full items-center justify-between gap-3 py-3 text-start hover:text-brand-500"
                       >
                         <span className="min-w-0">
                           <b className="block truncate text-theme-sm">{j.ad}</b>
@@ -124,6 +125,7 @@ function Builder({
   onStatus: () => void;
 }) {
   const t = useTranslations("yonetim.merkez.journeys");
+  const formRef = useRef<HTMLElement>(null);
   const [ad, setAd] = useState(initial?.ad ?? "");
   const [giris, setGiris] = useState<JourneyTrigger>(initial?.giris_olayi ?? "veli_kayit");
   const [steps, setSteps] = useState<JourneyStep[]>(initial?.adimlar ?? TEMPLATE);
@@ -131,6 +133,13 @@ function Builder({
   const [fb, setFb] = useState<{ kind: "ok" | "error"; msg: string } | null>(null);
   const [busy, setBusy] = useState(false);
   const [simulated, setSimulated] = useState<ReturnType<typeof dryRun> | null>(null);
+
+  // Telefonda liste üstte, form altta kalır: seçilen akış açılınca forma kaydır ve ilk alana odaklan (R5).
+  useEffect(() => {
+    if (!window.matchMedia("(max-width: 767px)").matches) return;
+    formRef.current?.scrollIntoView({ block: "start", behavior: "smooth" });
+    formRef.current?.querySelector<HTMLInputElement>("input")?.focus({ preventScroll: true });
+  }, []);
 
   const patch = (i: number, p: JourneyStep) => setSteps((s) => s.map((x, k) => (k === i ? p : x)));
   const move = (i: number, d: number) =>
@@ -165,7 +174,7 @@ function Builder({
   };
 
   return (
-    <section className={`${cardClass} p-5 sm:p-6`}>
+    <section ref={formRef} className={`${cardClass} min-w-0 p-5 sm:p-6`}>
       <div className="mb-4 grid gap-4 sm:grid-cols-2">
         <div>
           <label className={labelClass} htmlFor="j-ad">{t("form.name")}</label>
@@ -191,15 +200,15 @@ function Builder({
               <div className="mb-2 flex items-center justify-between">
                 <small className="text-[10px] font-semibold text-gray-500">{t(`stepTypes.${s.tur}`).toLocaleUpperCase("tr")}</small>
                 <span className="flex gap-3 text-theme-xs font-medium">
-                  <button type="button" className="text-brand-500" onClick={() => move(i, -1)} aria-label={t("form.up")}>↑</button>
-                  <button type="button" className="text-brand-500" onClick={() => move(i, 1)} aria-label={t("form.down")}>↓</button>
-                  <button type="button" className="text-error-600" onClick={() => setSteps((x) => x.filter((_, k) => k !== i))}>{t("form.remove")}</button>
+                  <button type="button" className={`${dokunmaHedefi} min-w-11 justify-center text-brand-500`} onClick={() => move(i, -1)} aria-label={t("form.up")}>↑</button>
+                  <button type="button" className={`${dokunmaHedefi} min-w-11 justify-center text-brand-500`} onClick={() => move(i, 1)} aria-label={t("form.down")}>↓</button>
+                  <button type="button" className={`${dokunmaHedefi} px-2 text-error-600`} onClick={() => setSteps((x) => x.filter((_, k) => k !== i))}>{t("form.remove")}</button>
                 </span>
               </div>
               {s.tur === "bekle" && (
                 <label className="flex items-center gap-2 text-theme-sm">
                   <input
-                    type="number" min={1} max={720} className="h-9 w-20 rounded-lg border border-gray-300 bg-transparent px-2 dark:border-gray-700"
+                    type="number" min={1} max={720} className="h-11 w-20 rounded-lg border border-gray-300 bg-transparent px-2 text-base md:h-9 md:text-sm dark:border-gray-700"
                     value={s.saat} aria-label={t("form.hours")}
                     onChange={(e) => patch(i, { tur: "bekle", saat: Number(e.target.value) })}
                   />
@@ -245,7 +254,7 @@ function Builder({
         <p className="mb-3 text-theme-xs text-gray-500">{t("dry.note")}</p>
         <div className="flex flex-wrap gap-5 text-theme-sm">
           {CRITERIA.map((c) => (
-            <label key={c} className="flex items-center gap-2">
+            <label key={c} className="flex min-h-11 items-center gap-2">
               <input
                 type="checkbox" className="size-4 accent-brand-500" checked={ctx[c]}
                 onChange={(e) => setCtx({ ...ctx, [c]: e.target.checked })}

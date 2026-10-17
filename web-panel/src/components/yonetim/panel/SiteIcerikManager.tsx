@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 
+import DesktopOnly from "@/components/ui/DesktopOnly";
 import {
   CMS_AD_ALANLARI,
   METIN_MAKS_UZUNLUK,
@@ -32,7 +33,7 @@ const GORSEL_TIPLERI: Record<string, string> = {
 };
 
 const textareaClass =
-  "w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 text-sm leading-relaxed text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-hidden focus:ring-3 focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:focus:border-brand-800";
+  "w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 text-base leading-relaxed text-gray-800 md:text-sm shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:outline-hidden focus:ring-3 focus:ring-brand-500/10 dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:focus:border-brand-800";
 
 type Bildirim = { tip: "ok" | "hata"; metin: string } | null;
 
@@ -43,26 +44,29 @@ export default function SiteIcerikManager({
   varsayilanlar: Record<Dil, MetinYaprak[]>;
 }) {
   const [dil, setDil] = useState<Dil>("tr");
+  // Site metinleri yazma ekranıdır; telefonda yalnızca bilgi notu görünür (TASKS §20, K3).
   return (
-    <div className="space-y-5">
-      <div className="flex flex-wrap gap-2">
-        {DILLER.map((d) => (
-          <button
-            key={d.kod}
-            type="button"
-            onClick={() => setDil(d.kod)}
-            className={
-              dil === d.kod
-                ? "rounded-lg bg-brand-500 px-4 py-2 text-sm font-medium text-white"
-                : "rounded-lg px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:text-gray-400 dark:ring-gray-700"
-            }
-          >
-            {d.etiket}
-          </button>
-        ))}
+    <DesktopOnly>
+      <div className="space-y-5">
+        <div className="flex flex-wrap gap-2">
+          {DILLER.map((d) => (
+            <button
+              key={d.kod}
+              type="button"
+              onClick={() => setDil(d.kod)}
+              className={
+                dil === d.kod
+                  ? "inline-flex min-h-11 items-center rounded-lg bg-brand-500 px-4 py-2 text-sm font-medium text-white"
+                  : "inline-flex min-h-11 items-center rounded-lg px-4 py-2 text-sm font-medium text-gray-700 ring-1 ring-inset ring-gray-300 hover:bg-gray-50 dark:text-gray-400 dark:ring-gray-700"
+              }
+            >
+              {d.etiket}
+            </button>
+          ))}
+        </div>
+        <Editor key={dil} dil={dil} varsayilanlar={varsayilanlar[dil]} />
       </div>
-      <Editor key={dil} dil={dil} varsayilanlar={varsayilanlar[dil]} />
-    </div>
+    </DesktopOnly>
   );
 }
 
@@ -383,7 +387,7 @@ function Editor({ dil, varsayilanlar }: { dil: Dil; varsayilanlar: MetinYaprak[]
                   {degisti && (
                     <button
                       type="button"
-                      className={linkBtn}
+                      className={`${linkBtn} inline-flex min-h-11 items-center`}
                       onClick={() =>
                         setTaslak((onceki) => {
                           const sonraki = { ...onceki };

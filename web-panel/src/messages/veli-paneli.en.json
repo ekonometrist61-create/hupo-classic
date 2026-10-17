@@ -5,7 +5,8 @@
       "brandSub": "Parent Panel",
       "backToAdmin": "Admin Panel",
       "signOut": "Sign out",
-      "soon": "Soon"
+      "soon": "Soon",
+      "menu": "Open or close menu"
     },
     "nav": {
       "overview": "Overview",
@@ -50,6 +51,38 @@
       "webText": "Your child can also use it on a computer:",
       "webLink": "Open the student app on the web"
     },
+    "cocuklarim": {
+      "title": "My children",
+      "desc": "Students linked to your account. You see study information only after you give consent to share it.",
+      "empty": {
+        "title": "No child linked yet",
+        "text": "Create the code below. Your child enters it in the Hupolingo app under Settings → Connect to parent."
+      },
+      "bagliTarih": "Linked: {tarih}",
+      "bagliTarihYok": "Link date not recorded",
+      "riza": {
+        "verildi": "Data sharing on",
+        "bekliyor": "Your consent is pending",
+        "geri_cekildi": "Consent withdrawn"
+      },
+      "rizaYardim": {
+        "verildi": "You can see study information on the dashboard.",
+        "bekliyor": "To see study information, give consent from the card on the home page.",
+        "geri_cekildi": "To see study information again, you need to give consent again."
+      },
+      "panel": "Open study dashboard",
+      "kaldir": "Remove link",
+      "kaldirOnay": {
+        "baslik": "Remove the link to {ad}?",
+        "metin": "After this, you will not be able to see this student's study information. The student and you will be notified. Linking again requires a new code.",
+        "onayla": "Yes, remove",
+        "vazgec": "Cancel"
+      },
+      "kaldirildi": "The link was removed.",
+      "hata": "The action could not be completed. Please try again shortly.",
+      "yukleniyor": "Loading...",
+      "yeniEkle": "Add a new child"
+    },
     "stats": {
       "weeklyTime": "Weekly Study",
       "minutes": "min",
@@ -59,28 +92,49 @@
       "xp": "XP",
       "level": "Level"
     },
+    "buHafta": {
+      "title": "This week",
+      "kaynak": "Last 7 days. Time and question count show study rhythm; they do not measure learning level on their own.",
+      "sure": "Study time",
+      "sureDeger": "{dk} min",
+      "soru": "Questions solved",
+      "dogru": "Correct rate",
+      "azVeri": "Not enough data",
+      "azVeriNot": "A rate needs at least {min} questions.",
+      "tekrar": "Topics due for review",
+      "tekrarNot": "Topics answered incorrectly or due for review.",
+      "bos": "No study activity recorded this week yet.",
+      "bosNot": "This summary fills in once your child starts solving questions."
+    },
     "weekly": {
       "title": "Weekly Study",
       "desc": "Time spent and questions solved over the last 7 days",
-      "empty": "No study activity recorded this week.",
+      "kaynak": "Source: daily study records for the last 7 days (time and question count).",
+      "empty": "No study activity recorded this week yet.",
+      "emptyNot": "Daily study time will appear here once your child solves questions.",
+      "ozet": "In the last 7 days: {dk} min of study and {soru} questions in total.",
       "minutesLabel": "Time (min)",
       "questionsLabel": "Questions"
     },
     "subjects": {
       "title": "Success by Subject",
       "desc": "Distribution of solved questions by correct-answer rate",
+      "kaynak": "Source: questions your child solved. The rate is correct answers divided by total questions.",
       "empty": "No questions solved yet.",
       "tooltip": "{dogru} / {toplam} correct",
-      "insufficient": "Not enough data yet (at least 6 questions needed)"
+      "insufficient": "Not enough data yet (at least 6 questions needed)",
+      "ozet": "{sayi} subjects have enough data. Lowest success: {ders} ({oran}%)."
     },
     "review": {
       "title": "Review Suggestions",
       "desc": "Topics answered incorrectly most often",
+      "kaynak": "Source: topics answered incorrectly or due for review. The rate is the share of correct answers for that topic.",
       "topic": "Topic",
       "subject": "Subject",
       "wrong": "Wrong",
       "success": "Success",
       "due": "due for review",
+      "azVeri": "Not enough data",
       "empty": "No topics need review. Great job!"
     },
     "achievements": {
@@ -92,10 +146,11 @@
       "earnedOn": "Earned on {tarih}",
       "progressCount": "{ilerleme} / {esik}",
       "progressSubject": "{ilerleme}% success (goal {esik}%) · {deneme} / {min} questions",
-      "empty": "No badge definitions yet."
+      "empty": "No badge definitions yet.",
+      "xpNote": "XP and level show progress inside the game; they do not measure learning level. For topic-level success, see the Subjects page."
     },
     "membership": {
-      "desc": "Your parent account's subscription and payment history.",
+      "desc": "Your subscription, plan, payment history and communication preferences.",
       "plans": {
         "title": "Paid plan",
         "loading": "Loading plan information...",
@@ -103,10 +158,17 @@
         "preparing": "A paid plan is in preparation. It will appear in this card once plans and prices are announced.",
         "duration": "{gun} days",
         "trial": "{gun}-day free trial",
+        "noTrial": "No free trial",
+        "priceLabel": "Price",
+        "periodLabel": "Period",
+        "trialLabel": "Free trial",
+        "renewalLabel": "Renewal",
+        "bilinmiyor": "unknown",
         "buy": "Buy plan",
         "checkoutLoading": "Opening payment page...",
         "checkoutError": "The payment page could not be opened. Please try again shortly.",
-        "paymentNote": "You complete the payment with your card on the iyzico payment page."
+        "paymentNote": "You complete the payment with your card on the iyzico payment page.",
+        "cancelNote": "To cancel, contact our support team."
       }
     },
     "subjectsPage": {
@@ -114,6 +176,7 @@
       "empty": "No questions solved yet. Subject success will appear here once your child starts solving questions.",
       "topicsTitle": "Topics to review",
       "topicsDesc": "Topics answered incorrectly or due for review in {ders}",
+      "topicsKaynak": "Source: topic records for this subject. A rate is shown for topics with at least 6 solved questions.",
       "topicsEmpty": "No topics in this subject need review.",
       "topicsNote": "This page shows a subject-level summary. A full topic-by-topic progress report will come in a later update."
     },
@@ -123,6 +186,7 @@
       "totalWrong": "Last answer wrong",
       "totalDue": "Due for review",
       "listDesc": "Topics answered incorrectly most often",
+      "kaynak": "Source: questions whose last answer was wrong, and topics due for review.",
       "empty": "No topics need review right now. This list updates as your child solves new questions.",
       "limitNote": "The 10 topics that most need review are shown."
     },
@@ -149,21 +213,27 @@
     "activityPage": {
       "title": "Last 7 Days Activity",
       "desc": "Your child's daily study summary",
+      "kaynak": "Source: daily study records for the last 7 days. The daily rate is shown on days with at least 6 solved questions.",
       "empty": "No study sessions this week yet.",
+      "emptyNot": "The daily summary will appear here as your child solves questions.",
       "questions": "questions",
       "correct": "correct",
       "study": "study",
       "noActivity": "No activity this day",
-      "accuracy": "accuracy"
+      "accuracy": "accuracy",
+      "azVeri": "Not enough data",
+      "azVeriNot": "At least {min} questions needed"
     },
     "consent": {
       "title": "Use of Children's Data",
       "gate": "The student's study data is shown after parental consent is given. You can give consent in the card below.",
       "notice": "Parental consent is required before we can collect your child's study data.",
       "desc": "The data is processed for educational purposes only, is never shared with third parties, and consent can be withdrawn at any time.",
+      "ogretmenNotice": "If your child has a teacher, the teacher sees only a class-level summary. The summary does not include names, email addresses or individual answers. Progress values are not shown when fewer than 3 students in the class have answered.",
       "give": "Give consent",
       "withdraw": "Withdraw consent",
       "loading": "Saving...",
+      "checking": "Checking consent status...",
       "error": "The operation could not be completed.",
       "saveError": "Consent could not be saved. Please try again.",
       "status": {
@@ -171,6 +241,25 @@
         "given": "Consent given",
         "withdrawn": "Consent withdrawn"
       }
+    },
+    "abonelik": {
+      "loading": "Loading...",
+      "bilinmiyor": "unknown",
+      "saglayici": "Payment provider",
+      "yenilemeBaslik": "Renewal and cancellation",
+      "yenileme": "Renewal",
+      "iptalNot": "To cancel, contact our support team."
+    },
+    "odeme": {
+      "loading": "Loading...",
+      "durumBaslik": "Status"
+    },
+    "denemeKaydi": {
+      "consentLegend": "Consents",
+      "katilimLabel": "I have read the participation terms of this practice exam for my child and I accept them. The phone number will be used only for reminders about this exam.",
+      "katilimNot": "Required. Needed to register for the exam.",
+      "pazarlamaLabel": "I allow Hupolingo to send product and campaign messages to my phone.",
+      "pazarlamaNot": "Optional. You can still complete the exam registration without ticking this."
     }
   }
 }

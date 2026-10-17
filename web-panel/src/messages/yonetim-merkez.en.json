@@ -410,7 +410,37 @@
           "inapp": { "name": "In-app", "desc": "Hupo inbox" }
         },
         "notConnected": "Not connected",
-        "statesNote": "Provider acceptance, device delivery and reading are different states; once providers are connected each channel will show the states it can measure."
+        "statesNote": "Provider acceptance, device delivery and reading are different states; once providers are connected each channel will show the states it can measure.",
+        "legal": {
+          "title": "Marketing push gate (legal approval)",
+          "desc": "While closed, marketing push is not sent and the push checkbox is hidden on the sign-up form. Obtain legal advice and record the İYS decision before opening it.",
+          "status": "Status",
+          "statusOff": "Closed",
+          "statusOn": "Approved",
+          "version": "Approved text version",
+          "versionHint": "e.g. hupolingo-ticari-ileti-2026-10-v2",
+          "iys": "İYS (Message Management System) decision",
+          "iysUnknown": "Not decided yet (gate cannot be opened)",
+          "iysNotRequired": "Not required",
+          "iysDone": "Required, registration completed",
+          "note": "Decision note",
+          "noteHint": "Date and summary of the legal opinion, reason for the decision",
+          "save": "Save gate",
+          "saved": "Gate updated.",
+          "demo": "Nothing is saved in demo mode.",
+          "measureTitle": "Pre-permission measurement (last 30 days)",
+          "measureDesc": "No person identifiers are kept; totals only.",
+          "shown": "Shown",
+          "yes": "Yes",
+          "later": "Not now",
+          "systemYes": "System permission granted",
+          "systemNo": "System permission denied",
+          "yesRate": "Yes rate",
+          "systemRate": "System permission rate",
+          "noData": "No data yet",
+          "insufficient": "Fewer than 10 shows in this period; small counts are hidden so that individuals cannot be singled out.",
+          "footer": "Limit: at most 2 shows in 14 days. Rates are divided by the number shown."
+        }
       },
       "recon": {
         "notDeployed": "The database update for the reconciliation check has not been applied.",

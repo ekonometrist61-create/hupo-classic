@@ -12,6 +12,11 @@ import useDebounced from "./useDebounced";
 
 type Tab = "questions" | "results";
 
+// Tablo ilk sütunu yatay kaydırmada sabit kalır (TASKS §20).
+const TH_STICKY =
+  "sticky start-0 z-10 bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase dark:bg-gray-900 dark:text-gray-400";
+const TD_STICKY = `${tdClass} sticky start-0 z-10 bg-white dark:bg-gray-900`;
+
 interface PickerRow {
   id: string;
   soru_metni: string;
@@ -229,7 +234,7 @@ function QuestionPicker({
         <ul className="max-h-80 divide-y divide-gray-100 overflow-y-auto dark:divide-gray-800">
           {rows.map((r) => (
             <li key={r.id}>
-              <label className="flex cursor-pointer gap-3 py-2 text-sm">
+              <label className="flex min-h-11 cursor-pointer gap-3 py-2 text-sm">
                 <input
                   type="checkbox"
                   className="mt-1"
@@ -247,7 +252,7 @@ function QuestionPicker({
           ))}
         </ul>
       )}
-      <div className="flex justify-end gap-3">
+      <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
         <button type="button" className={outlineBtn} onClick={onCancel}>
           {t("picker.cancel")}
         </button>
@@ -304,7 +309,7 @@ function ResultsTab({ examId }: { examId: string }) {
               <table className="min-w-full">
                 <thead className="border-b border-gray-100 dark:border-gray-800">
                   <tr>
-                    <th className={thClass}>{t("resultCols.sira")}</th>
+                    <th className={TH_STICKY}>{t("resultCols.sira")}</th>
                     <th className={thClass}>{t("resultCols.ogrenci")}</th>
                     <th className={thClass}>{t("resultCols.puan")}</th>
                     <th className={thClass}>{t("resultCols.dogru")}</th>
@@ -316,7 +321,7 @@ function ResultsTab({ examId }: { examId: string }) {
                 <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
                   {grup.map((r) => (
                     <tr key={r.student_id}>
-                      <td className={tdClass}>{r.sira}</td>
+                      <td className={TD_STICKY}>{r.sira}</td>
                       <td className={tdClass}>{r.ad_soyad || "-"}</td>
                       <td className={`${tdClass} font-semibold`}>{Number(r.puan)}</td>
                       <td className={tdClass}>{r.dogru_sayisi}</td>

@@ -25,7 +25,13 @@ import useDebounced from "./useDebounced";
 const PAGE_SIZE = 25;
 const STAGES: GrowthLeadStage[] = ["new", "contacted", "qualified", "trial", "decision", "won", "lost"];
 
-const BADGE_BASE = "inline-flex items-center whitespace-nowrap rounded-full px-2.5 py-0.5 text-theme-xs font-medium";
+// Dokunma hedefi en az 44 px (TASKS §20).
+const BADGE_BASE = "inline-flex min-h-11 items-center whitespace-nowrap rounded-full px-2.5 py-0.5 text-theme-xs font-medium";
+const LINK_TOUCH = `${linkBtn} inline-flex min-h-11 items-center`;
+// Tablo ilk sütunu yatay kaydırmada sabit kalır (TASKS §20).
+const TH_STICKY =
+  "sticky start-0 z-10 bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase dark:bg-gray-900 dark:text-gray-400";
+const TD_STICKY = `${tdClass} sticky start-0 z-10 bg-white dark:bg-gray-900`;
 const STAGE_CLASS: Record<GrowthLeadStage, string> = {
   new: "bg-blue-50 text-blue-700 dark:bg-blue-500/15 dark:text-blue-400",
   contacted: "bg-cyan-50 text-cyan-700 dark:bg-cyan-500/15 dark:text-cyan-400",
@@ -134,11 +140,63 @@ export default function SatisHattiManager() {
         ) : rows.length === 0 ? (
           <p className="py-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("empty")}</p>
         ) : (
-          <div className="overflow-x-auto">
+          <>
+            {/* Telefon (md altı): kart görünümü. */}
+            <ul className="space-y-3 md:hidden">
+              {rows.map((l) => (
+                <li key={l.id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <p className="wrap-break-word font-medium text-gray-800 dark:text-white/90">{l.parent_name}</p>
+                      <p className="break-all text-theme-xs text-gray-500 dark:text-gray-400">{l.email}</p>
+                    </div>
+                    <span className="shrink-0 font-mono text-theme-xs text-gray-500 dark:text-gray-400">{leadNo(l.id)}</span>
+                  </div>
+                  <div className="mt-3">
+                    <button
+                      type="button"
+                      className={`${BADGE_BASE} ${STAGE_CLASS[l.stage] ?? ""}`}
+                      onClick={() => setStageTarget(l)}
+                      title={t("stageModal.title")}
+                    >
+                      {t(`stages.${l.stage}`)}
+                    </button>
+                  </div>
+                  <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 text-theme-sm">
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.value")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">{formatTry(l.value_estimate)}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.prob")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">{l.score}%</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.owner")}</dt>
+                      <dd className="wrap-break-word text-gray-800 dark:text-white/90">{l.owner_name ?? "-"}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.followUp")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">
+                        {l.next_action_at ? formatDate(new Date(l.next_action_at)) : "-"}
+                      </dd>
+                    </div>
+                  </dl>
+                  {l.household_id && (
+                    <Link href={`/yonetim/musteri-360/${l.household_id}`} className={`${LINK_TOUCH} mt-3`}>
+                      {tNav("musteri360")}
+                    </Link>
+                  )}
+                </li>
+              ))}
+            </ul>
+
+            {/* Tablet ve masaüstü: tablo; yatay kaydırma kapsayıcıda kalır. */}
+            <div className="hidden overflow-x-auto md:block">
             <table className="min-w-full">
               <thead className="border-b border-gray-100 dark:border-gray-800">
                 <tr>
-                  <th className={thClass}>{t("cols.leadNo")}</th>
+                  <th className={TH_STICKY}>{t("cols.leadNo")}</th>
                   <th className={thClass}>{t("cols.titleContact")}</th>
                   <th className={thClass}>{t("cols.stage")}</th>
                   <th className={thClass}>{t("cols.value")}</th>
@@ -151,7 +209,7 @@ export default function SatisHattiManager() {
               <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
                 {rows.map((l) => (
                   <tr key={l.id}>
-                    <td className={`${tdClass} whitespace-nowrap font-mono text-theme-xs`}>{leadNo(l.id)}</td>
+                    <td className={`${TD_STICKY} whitespace-nowrap font-mono text-theme-xs`}>{leadNo(l.id)}</td>
                     <td className={tdClass}>
                       <div className="font-medium text-gray-800 dark:text-white/90">{l.parent_name}</div>
                       <div className="text-theme-xs text-gray-500 dark:text-gray-400">{l.email}</div>
@@ -174,7 +232,7 @@ export default function SatisHattiManager() {
                     </td>
                     <td className={tdClass}>
                       {l.household_id ? (
-                        <Link href={`/yonetim/musteri-360/${l.household_id}`} className={linkBtn}>
+                        <Link href={`/yonetim/musteri-360/${l.household_id}`} className={LINK_TOUCH}>
                           {tNav("musteri360")}
                         </Link>
                       ) : (
@@ -185,7 +243,8 @@ export default function SatisHattiManager() {
                 ))}
               </tbody>
             </table>
-          </div>
+            </div>
+          </>
         )}
 
         {!loading && !error && total > 0 && (

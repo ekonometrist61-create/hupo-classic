@@ -52,7 +52,7 @@ export default function CocukDenemeGecmisi({ cocukId, cocukAd }: Props) {
   }, [cocukId]);
 
   return (
-    <div className="mb-6 rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-gray-800">
+    <div className="min-w-0 rounded-2xl border border-gray-200 bg-white p-5 dark:border-gray-700 dark:bg-gray-800">
       <h3 className="text-base font-bold text-gray-900 dark:text-white">{t("title")}</h3>
       {cocukAd && <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">{t("desc", { ad: cocukAd })}</p>}
 

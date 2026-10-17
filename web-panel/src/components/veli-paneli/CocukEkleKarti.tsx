@@ -83,7 +83,7 @@ export default function CocukEkleKarti() {
             {t("expires", { tarih: sonKullanmaMetni })}
           </p>
           <div className="mt-3 flex flex-wrap items-center justify-center gap-3">
-            <Button size="sm" variant="outline" onClick={kopyala}>
+            <Button size="sm" variant="outline" className="min-h-11 min-w-11" onClick={kopyala}>
               {kopyalandi ? t("copied") : t("copy")}
             </Button>
             {kopyalamaHatasi && (
@@ -96,7 +96,7 @@ export default function CocukEkleKarti() {
       )}
 
       <div className="mt-5">
-        <Button size="sm" disabled={yukleniyor} onClick={kodOlustur}>
+        <Button size="sm" className="min-h-11 min-w-11" disabled={yukleniyor} onClick={kodOlustur}>
           {yukleniyor ? t("creating") : aktif ? t("createAgain") : t("create")}
         </Button>
       </div>
@@ -119,7 +119,7 @@ export default function CocukEkleKarti() {
           href={STUDENT_APP_URL}
           target="_blank"
           rel="noopener noreferrer"
-          className="font-semibold text-brand-600 underline underline-offset-4 hover:text-brand-700 dark:text-brand-300"
+          className="inline-flex min-h-11 items-center font-semibold text-brand-600 underline underline-offset-4 hover:text-brand-700 dark:text-brand-300"
         >
           {t("webLink")}
         </a>

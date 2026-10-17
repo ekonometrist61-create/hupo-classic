@@ -8,6 +8,7 @@ import { formatDateTime } from "@/utils/format";
 import Pager from "../Pager";
 import { cardClass, inputClass, tdClass, thClass } from "../panel/styles";
 import RpcBoundary from "../ui/RpcBoundary";
+import { yapiskanBaslik, yapiskanHucre } from "../ui/responsive";
 import { useAdminRpc } from "../useAdminRpc";
 import { DEMO_AUDIT, DEMO_TEAM } from "./demoData";
 import type { AuditRow, TeamMember } from "./types";
@@ -50,7 +51,7 @@ export default function TeamView() {
               <table className="min-w-full">
                 <thead>
                   <tr>
-                    <th className={thClass}>{t("cols.name")}</th>
+                    <th className={`${thClass} ${yapiskanBaslik}`}>{t("cols.name")}</th>
                     <th className={thClass}>{t("cols.email")}</th>
                     <th className={thClass}>{t("cols.role")}</th>
                     <th className={thClass}>{t("cols.last")}</th>
@@ -60,7 +61,7 @@ export default function TeamView() {
                 <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
                   {rows.map((m) => (
                     <tr key={m.id}>
-                      <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>{m.ad ?? "—"}</td>
+                      <td className={`${tdClass} ${yapiskanHucre} font-medium text-gray-800 dark:text-white/90`}>{m.ad ?? "—"}</td>
                       <td className={tdClass}>{m.email ?? "—"}</td>
                       <td className={tdClass}>
                         <Badge size="sm" color={m.rol === "admin" ? "warning" : "success"}>{t(`roles.${m.rol}`)}</Badge>
@@ -86,14 +87,14 @@ export default function TeamView() {
           <table className="min-w-full">
             <thead>
               <tr>
-                <th className={thClass}>{t("matrix.permission")}</th>
+                <th className={`${thClass} ${yapiskanBaslik}`}>{t("matrix.permission")}</th>
                 {ROLES.map((r) => <th key={r} className={thClass}>{t(`matrix.roles.${r}`)}</th>)}
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
               {MATRIX.map(([perm, cells]) => (
                 <tr key={perm}>
-                  <td className={`${tdClass} font-medium`}>{t(`matrix.perms.${perm}`)}</td>
+                  <td className={`${tdClass} ${yapiskanHucre} font-medium`}>{t(`matrix.perms.${perm}`)}</td>
                   {cells.map((c, i) => (
                     <td key={i} className={`${tdClass} text-gray-600`}>{c === "none" ? "—" : t(`matrix.cells.${c}`)}</td>
                   ))}
@@ -112,7 +113,7 @@ export default function TeamView() {
             <p className="text-theme-xs text-gray-500">{t("audit.desc")}</p>
           </div>
           <input
-            className={`${inputClass} w-64!`}
+            className={`${inputClass} md:w-64!`}
             placeholder={t("audit.filter")}
             aria-label={t("audit.filter")}
             value={filter}
@@ -132,7 +133,7 @@ export default function TeamView() {
                   <table className="min-w-full">
                     <thead>
                       <tr>
-                        <th className={thClass}>{t("audit.time")}</th>
+                        <th className={`${thClass} ${yapiskanBaslik}`}>{t("audit.time")}</th>
                         <th className={thClass}>{t("audit.actor")}</th>
                         <th className={thClass}>{t("audit.action")}</th>
                       </tr>
@@ -140,7 +141,7 @@ export default function TeamView() {
                     <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
                       {a.satirlar.map((r) => (
                         <tr key={r.id}>
-                          <td className={`${tdClass} whitespace-nowrap`}>{formatDateTime(r.zaman)}</td>
+                          <td className={`${tdClass} ${yapiskanHucre} whitespace-nowrap`}>{formatDateTime(r.zaman)}</td>
                           <td className={tdClass}>{r.admin_ad ?? "—"}</td>
                           <td className={tdClass}>
                             <code className="rounded bg-gray-100 px-1.5 py-0.5 text-theme-xs dark:bg-white/5">{r.islem}</code>

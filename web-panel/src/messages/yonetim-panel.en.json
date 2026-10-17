@@ -6,6 +6,10 @@
       "tagline": "Growing learning together.",
       "soon": "Soon",
       "workspaceCrumb": "Workspace",
+      "desktopOnly": "This action is done from a computer.",
+      "closeModal": "Close",
+      "openSearch": "Search screens",
+      "moreActions": "More actions",
       "groups": {
         "workspace": "Workspace",
         "content": "Content",
@@ -347,6 +351,104 @@
         }
       }
     },
+    "sayfalar": {
+      "denemeler": {
+        "title": "Trials",
+        "desc": "Open trial periods for parents, follow and end active trials",
+        "demo": "Actions are not possible in demo mode.",
+        "invalidDays": "Trial length must be empty or between 1 and 90 days.",
+        "started": "Trial started for {name}.",
+        "confirmEnd": "End the trial for {name} now?",
+        "ended": "Trial ended.",
+        "fallbackParent": "Parent",
+        "fallbackThisParent": "This parent",
+        "searchTitle": "Find a parent and open a trial",
+        "searchLabel": "Name, username or email",
+        "dayLabel": "Days (empty = setting)",
+        "search": "Search",
+        "searching": "Searching…",
+        "noParent": "No parent found.",
+        "trialActive": "Trial active",
+        "startTrial": "Start trial",
+        "active": "Active",
+        "end": "End",
+        "activeTitle": "Active trials",
+        "loading": "Loading…",
+        "noActive": "No active trials.",
+        "cols": { "parent": "Parent", "email": "Email", "status": "Status", "end": "End date", "remaining": "Days left" }
+      },
+      "rozetler": {
+        "title": "Badges",
+        "error": "Could not load badge data: {message}",
+        "empty": "No records found.",
+        "cols": { "kod": "Code", "ad": "Name", "aciklama": "Description", "ikon": "Icon", "kosul": "Condition type", "esik": "Threshold", "ders": "Subject" }
+      },
+      "gorevler": {
+        "title": "Quests",
+        "error": "Could not load quest data: {message}",
+        "empty": "No records found.",
+        "yes": "Yes",
+        "no": "No",
+        "cols": { "kod": "Code", "baslik": "Title", "aciklama": "Description", "hedefTipi": "Target type", "hedefDeger": "Target amount", "xp": "XP reward", "aktif": "Active" }
+      },
+      "ligler": {
+        "title": "League tiers",
+        "error": "Could not load league data: {message}",
+        "empty": "No records found.",
+        "cols": { "kod": "Code", "ad": "Name", "sira": "Order", "yukselme": "Promotion XP", "renk": "Color", "ikon": "Icon" }
+      },
+      "karakterler": {
+        "title": "Character catalog",
+        "count": "{n} characters",
+        "error": "Could not load character data: {message}",
+        "empty": "No character definitions yet.",
+        "active": "Active",
+        "locked": "Locked",
+        "kosul": { "baslangic": "Starter", "soru_sayisi": "Question count", "seri": "Daily streak", "ders_basarisi": "Subject success", "lig": "League rank" },
+        "cols": { "karakter": "Character", "kod": "Code", "sinif": "Grade", "sira": "Order", "kosul": "Condition", "kazanan": "Winners", "durum": "Status" }
+      }
+    },
+    "ayarlar": {
+      "title": "App Settings",
+      "desc": "Maintenance mode, minimum version and feature switches",
+      "loading": "Loading…",
+      "saving": "Saving…",
+      "save": "Save",
+      "saved": "Settings saved successfully.",
+      "demo": "Changes are not possible in demo mode.",
+      "on": "On",
+      "off": "Off",
+      "maintenanceApp": "Maintenance: Mobile app",
+      "maintenanceAppDesc": "The mobile app and the student web app show the maintenance screen",
+      "maintenanceSite": "Maintenance: Website",
+      "maintenanceSiteDesc": "General hupolingo.com pages (landing, demo) are put into maintenance",
+      "maintenanceParent": "Maintenance: Parent panel",
+      "maintenanceParentDesc": "Closes /veli-paneli, including sign-in and sign-up",
+      "maintenanceAdmin": "Maintenance: Admin panel",
+      "maintenanceAdminDesc": "Admins can still sign in; other users see the maintenance screen",
+      "minVersion": "Minimum version",
+      "minVersionDesc": "Android mandatory update threshold, e.g. 1.5.0",
+      "ads": "Ads",
+      "adsDesc": "Ad display in the student and parent panels",
+      "premium": "Premium restriction",
+      "premiumDesc": "Enables the free daily question limit",
+      "grades": "Supported grades",
+      "gradesDesc": "Comma-separated grade numbers, e.g. 3,4,5,6,7",
+      "trialDays": "Trial period (days)",
+      "trialDaysDesc": "Default duration when a trial starts. Plans and prices are managed on the Plans screen.",
+      "trialDaysValue": "{n} days",
+      "trialQuota": "Trial daily question quota",
+      "trialQuotaDesc": "Number of questions a user can solve each day while the trial is running and once the quota is reached",
+      "examDate": "Nationwide mock exam date",
+      "examDateDesc": "Target of the countdown on the home page (Turkey time, UTC+3)",
+      "examDateEmpty": "Not set",
+      "validation": {
+        "grades": "Supported grades cannot be empty (e.g. 3,4,5,6,7).",
+        "trialDays": "Trial period must be a whole number between 1 and 90 days.",
+        "trialQuota": "Trial daily question quota must be a whole number between 0 and 9999.",
+        "examDate": "The mock exam date is not valid."
+      }
+    },
     "kullanicilar": {
       "title": "Members & families",
       "loading": "Loading...",
@@ -400,6 +502,32 @@
         "confirm": "Unlink",
         "cancel": "Cancel",
         "saving": "Saving..."
+      }
+    },
+    "potansiyelAdaylar": {
+      "search": "Search",
+      "searchPlaceholder": "Name, email or phone",
+      "status": "Status",
+      "allStatuses": "All statuses",
+      "kind": "Type",
+      "allKinds": "All types",
+      "minScore": "Minimum score",
+      "newCandidate": "Add new candidate",
+      "loading": "Loading...",
+      "retry": "Try again",
+      "empty": "No records found.",
+      "pager": {
+        "prev": "Previous",
+        "next": "Next"
+      },
+      "cols": {
+        "name": "Full name",
+        "email": "Email",
+        "kind": "Type",
+        "status": "Status",
+        "score": "Total score",
+        "source": "Source",
+        "created": "Created on"
       }
     },
     "veliAdaylari": {
@@ -871,6 +999,209 @@
         "prev": "Previous",
         "next": "Next"
       }
+    },
+    "kuponlar": {
+      "tabs": {
+        "kuponlar": "Coupons",
+        "kampanyalar": "Campaigns"
+      },
+      "newCoupon": "+ New coupon",
+      "newCampaign": "+ New campaign",
+      "searchPlaceholder": "Search by code...",
+      "filterLabel": "Coupon status",
+      "filterAll": "All",
+      "active": "Active",
+      "passive": "Inactive",
+      "loading": "Loading...",
+      "retry": "Try again",
+      "emptyCoupons": "No coupons found.",
+      "emptyCampaigns": "No campaigns found.",
+      "edit": "Edit",
+      "deactivate": "Deactivate",
+      "activate": "Activate",
+      "valueFree": "Free",
+      "newMember": "New members",
+      "cols": {
+        "code": "Code",
+        "typeValue": "Type / Value",
+        "usage": "Usage",
+        "end": "Ends",
+        "status": "Status",
+        "actions": "Actions"
+      },
+      "campaignCols": {
+        "name": "Name",
+        "count": "Coupon count",
+        "totalDiscount": "Total discount"
+      },
+      "types": {
+        "yuzde": "Percent (%)",
+        "tutar": "Amount (₺)",
+        "ucretsiz": "Free"
+      },
+      "form": {
+        "createTitle": "New coupon",
+        "editTitle": "Edit coupon",
+        "code": "Coupon code",
+        "codeHint": "3-24 characters, only A-Z, 0-9, -",
+        "type": "Type",
+        "percent": "Discount %",
+        "amount": "Discount amount (kuruş)",
+        "amountHint": "In kuruş (100 = 1 TL)",
+        "maxUsage": "Max. uses (empty = unlimited)",
+        "start": "Start",
+        "end": "End",
+        "active": "Active",
+        "newMembersOnly": "New members only",
+        "cancel": "Cancel",
+        "save": "Save",
+        "saving": "Saving...",
+        "errCode": "Coupon code is required.",
+        "errValue": "Enter a valid value."
+      },
+      "campaignForm": {
+        "createTitle": "New campaign",
+        "editTitle": "Edit campaign",
+        "name": "Name",
+        "description": "Description",
+        "errName": "Campaign name is required."
+      },
+      "pager": {
+        "prevLabel": "Previous page",
+        "nextLabel": "Next page"
+      }
+    },
+    "duyurular": {
+      "title": "Announcements",
+      "intro": "The newest active announcement is shown on the surfaces you select. Expired or inactive announcements are not shown.",
+      "newAnnouncement": "+ New announcement",
+      "notice": {
+        "updated": "Announcement updated.",
+        "created": "Announcement created.",
+        "unpublished": "Announcement unpublished.",
+        "published": "Announcement published.",
+        "archived": "Announcement archived.",
+        "unarchived": "Announcement unarchived (inactive). Edit it to publish again.",
+        "draftDeleted": "Draft deleted."
+      },
+      "form": {
+        "title": "Title",
+        "titlePlaceholder": "E.g. Nationwide mock exam registrations are open",
+        "text": "Text",
+        "textPlaceholder": "Short text shown to visitors...",
+        "endDate": "End date (optional)",
+        "clear": "Clear",
+        "endHint": "If left empty, it stays live indefinitely. Turkey time (UTC+3).",
+        "active": "Live (show on the selected surfaces)",
+        "archivedLocked": "It cannot go live until it is unarchived.",
+        "surfacesLegend": "Publishing surfaces",
+        "surfacesHelp": "The announcement is shown only on the selected surfaces.",
+        "surfacesRequired": "Select at least one publishing surface to save.",
+        "errTitle": "Title cannot be empty.",
+        "errText": "Text cannot be empty.",
+        "errSurface": "Select at least one publishing surface.",
+        "errEndDate": "The end date is not valid.",
+        "publishConfirm": "The announcement will go live and appear immediately on the selected surfaces. Continue?",
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel"
+      },
+      "list": {
+        "active": "Active",
+        "archive": "Archive",
+        "help": "Published announcements are archived, not deleted. Only drafts that were never published can be deleted.",
+        "loading": "Loading...",
+        "missingTable": "The announcements table is missing from the database. Migration 20261026000000_site_duyurulari must be applied.",
+        "retry": "Try again",
+        "empty": "No announcements yet.",
+        "noEnd": "No end date",
+        "deleteConfirm": "The draft “{baslik}” will be deleted. This cannot be undone."
+      },
+      "cols": {
+        "announcement": "Announcement",
+        "status": "Status",
+        "end": "Ends",
+        "updated": "Last updated",
+        "actions": "Actions"
+      },
+      "status": {
+        "yayinda": "Live",
+        "suresi_doldu": "Expired",
+        "pasif": "Inactive",
+        "arsivde": "Archived"
+      },
+      "actions": {
+        "edit": "Edit",
+        "unpublish": "Unpublish",
+        "publish": "Publish",
+        "archive": "Archive",
+        "unarchive": "Unarchive",
+        "delete": "Delete"
+      }
+    },
+    "bildirimler": {
+      "sendTitle": "Send notification",
+      "newNotification": "+ New notification",
+      "sentNotice": "Notification sent to {count} people.",
+      "audience": {
+        "veli": "All parents",
+        "ogrenci": "All students",
+        "tumu": "Everyone (parents + students)"
+      },
+      "form": {
+        "audience": "Audience",
+        "title": "Title",
+        "titlePlaceholder": "Notification title",
+        "message": "Message",
+        "messagePlaceholder": "Message shown to users...",
+        "cancel": "Cancel",
+        "send": "Send",
+        "sending": "Sending...",
+        "errTitle": "Title cannot be empty.",
+        "errMessage": "Message cannot be empty."
+      },
+      "listTitle": "Sent notifications",
+      "loading": "Loading...",
+      "retry": "Try again",
+      "empty": "No notifications have been sent yet.",
+      "cols": {
+        "titleMessage": "Title / Message",
+        "recipient": "Recipient",
+        "read": "Read",
+        "date": "Date"
+      },
+      "readStatus": {
+        "read": "Read",
+        "unread": "Unread"
+      },
+      "pager": {
+        "prevLabel": "Previous page",
+        "nextLabel": "Next page"
+      }
+    },
+    "kimlikEslestirme": {
+      "loadError": "Candidates could not be loaded.",
+      "loading": "Loading...",
+      "empty": "No pending merge candidates. Well done!",
+      "countNote": "{count} pending candidates. In each row, the two students may be the same child.",
+      "grade": "Grade {sinif} · @{username}",
+      "cols": {
+        "a": "Student A",
+        "b": "Student B",
+        "reason": "Reason",
+        "confidence": "Confidence",
+        "decision": "Decision"
+      },
+      "reasons": {
+        "same_name_grade": "Same name + grade",
+        "same_household": "Same household"
+      },
+      "mergeConfirm": "The exam data of these two students will be combined into one account. The source account’s exam records are moved and this cannot be undone. Continue?",
+      "mergeTitle": "Same person — combine exam data into the main account (main account: the one created first)",
+      "merge": "Merge",
+      "distinct": "Different",
+      "skip": "Skip",
+      "dismissError": "Dismiss error message"
     }
   }
 }

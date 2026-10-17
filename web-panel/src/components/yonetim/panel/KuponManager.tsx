@@ -1,19 +1,14 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+
 import Badge from "@/components/ui/badge/Badge";
+import DesktopOnly from "@/components/ui/DesktopOnly";
 import { createClient } from "@/utils/supabase/client";
 import ErrorNote from "./ErrorNote";
-import {
-  cardClass,
-  inputClass,
-  labelClass,
-  linkBtn,
-  outlineBtn,
-  primaryBtn,
-  tdClass,
-  thClass,
-} from "./styles";
+import ModalShell from "./ModalShell";
+import { cardClass, inputClass, labelClass, linkBtn, outlineBtn, primaryBtn, tdClass, thClass } from "./styles";
 
 interface Kupon {
   id: string;
@@ -69,17 +64,19 @@ const EMPTY_FORM: FormState = {
   campaign_id: "",
 };
 
-const TUR_ETIKET: Record<string, string> = {
-  yuzde: "Yüzde (%)",
-  tutar: "Tutar (₺)",
-  ucretsiz: "Ücretsiz",
-};
+const TUR_SECENEKLERI = ["yuzde", "tutar", "ucretsiz"] as const;
+const TABS = ["kuponlar", "kampanyalar"] as const;
+
+// Tablo (md ve üzeri) kendi kapsayıcısında kayar; ilk sütun kaydırmada sabit kalır.
+const ILK_SUTUN_SABIT =
+  "[&_tr>*:first-child]:sticky [&_tr>*:first-child]:inset-s-0 [&_tr>*:first-child]:z-1 [&_tr>*:first-child]:bg-white dark:[&_tr>*:first-child]:bg-gray-900";
 
 function formatTL(kurus: number) {
   return (kurus / 100).toFixed(2).replace(".", ",") + " ₺";
 }
 
 export default function KuponManager() {
+  const t = useTranslations("yonetim.kuponlar");
   const [tab, setTab] = useState<"kuponlar" | "kampanyalar">("kuponlar");
 
   /* — Kuponlar — */
@@ -181,8 +178,8 @@ export default function KuponManager() {
     if (!form) return;
     setFormError(null);
     const deger = Number(form.deger);
-    if (!form.kod.trim() && !editId) return setFormError("Kupon kodu zorunlu.");
-    if (isNaN(deger) || deger <= 0) return setFormError("Geçerli bir değer gir.");
+    if (!form.kod.trim() && !editId) return setFormError(t("form.errCode"));
+    if (isNaN(deger) || deger <= 0) return setFormError(t("form.errValue"));
 
     setSaving(true);
     const { error } = await createClient().rpc("admin_upsert_coupon", {
@@ -227,7 +224,7 @@ export default function KuponManager() {
   const submitKampanya = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!kampForm) return;
-    if (!kampForm.ad.trim()) return setKampFormError("Kampanya adı zorunlu.");
+    if (!kampForm.ad.trim()) return setKampFormError(t("campaignForm.errName"));
     setKampSaving(true);
     const { error } = await createClient().rpc("admin_upsert_campaign", {
       p_id: kampEditId ?? null,
@@ -247,22 +244,27 @@ export default function KuponManager() {
   const start = toplam === 0 ? 0 : page * PAGE_SIZE + 1;
   const end = Math.min(toplam, page * PAGE_SIZE + kuponlar.length);
 
+  // Kupon türüne göre değer metni (kart ve tablo aynı kuralı kullanır).
+  const degerMetni = (k: Kupon) =>
+    k.tur === "yuzde" ? `%${k.deger}` : k.tur === "tutar" ? formatTL(k.deger) : t("valueFree");
+
   return (
     <div className="space-y-5">
       {/* Tab seçimi */}
       <div className="flex gap-1 rounded-xl border border-gray-200 bg-gray-50 p-1 dark:border-gray-800 dark:bg-gray-900">
-        {(["kuponlar", "kampanyalar"] as const).map((t) => (
+        {TABS.map((id) => (
           <button
-            key={t}
+            key={id}
             type="button"
-            onClick={() => setTab(t)}
-            className={`flex-1 rounded-lg py-2 text-sm font-medium transition-colors ${
-              tab === t
+            aria-pressed={tab === id}
+            onClick={() => setTab(id)}
+            className={`min-h-11 flex-1 rounded-lg px-3 py-2 text-sm font-medium transition-colors ${
+              tab === id
                 ? "bg-white text-gray-900 shadow-sm dark:bg-gray-800 dark:text-white"
                 : "text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"
             }`}
           >
-            {t === "kuponlar" ? "Kuponlar" : "Kampanyalar"}
+            {t(`tabs.${id}`)}
           </button>
         ))}
       </div>
@@ -271,160 +273,257 @@ export default function KuponManager() {
       {tab === "kuponlar" && (
         <section className={`${cardClass} p-5 sm:p-6`}>
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">Kuponlar</h3>
-            <button type="button" className={primaryBtn} onClick={openNew}>+ Yeni Kupon</button>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">{t("tabs.kuponlar")}</h3>
+            {/* Kupon oluşturma ve düzenleme masaüstüne özeldir (K3); telefonda bilgi notu görünür. */}
+            <DesktopOnly>
+              <button type="button" className={primaryBtn} onClick={openNew}>{t("newCoupon")}</button>
+            </DesktopOnly>
           </div>
 
-          <div className="mb-4 flex flex-wrap gap-3">
+          <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-[minmax(0,1fr)_12rem]">
             <input
-              className={`${inputClass} min-w-48 flex-1`}
-              placeholder="Kod ile ara..."
+              className={inputClass}
+              type="search"
+              aria-label={t("searchPlaceholder")}
+              placeholder={t("searchPlaceholder")}
               value={aramaK}
               onChange={(e) => { setAramaK(e.target.value); setPage(0); }}
             />
             <select
               className={inputClass}
+              aria-label={t("filterLabel")}
               value={aktifFil}
               onChange={(e) => { setAktifFil(e.target.value as "" | "true" | "false"); setPage(0); }}
             >
-              <option value="">Tümü</option>
-              <option value="true">Aktif</option>
-              <option value="false">Pasif</option>
+              <option value="">{t("filterAll")}</option>
+              <option value="true">{t("active")}</option>
+              <option value="false">{t("passive")}</option>
             </select>
           </div>
 
           {loadingK ? (
-            <p className="py-10 text-center text-sm text-gray-500">Yükleniyor...</p>
+            <p className="py-10 text-center text-sm text-gray-500">{t("loading")}</p>
           ) : errorK ? (
             <div className="py-8 text-center">
               <p className="mb-3 text-sm text-error-600">{errorK}</p>
-              <button type="button" className={primaryBtn} onClick={reloadKuponlar}>Tekrar Dene</button>
+              <button type="button" className={primaryBtn} onClick={reloadKuponlar}>{t("retry")}</button>
             </div>
           ) : kuponlar.length === 0 ? (
-            <p className="py-10 text-center text-sm text-gray-500">Kupon bulunamadı.</p>
+            <p className="py-10 text-center text-sm text-gray-500">{t("emptyCoupons")}</p>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="min-w-full">
-                <thead className="border-b border-gray-100 dark:border-gray-800">
-                  <tr>
-                    <th className={thClass}>Kod</th>
-                    <th className={thClass}>Tür / Değer</th>
-                    <th className={thClass}>Kullanım</th>
-                    <th className={thClass}>Bitiş</th>
-                    <th className={thClass}>Durum</th>
-                    <th className={thClass} />
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-                  {kuponlar.map((k) => (
-                    <tr key={k.id}>
-                      <td className={`${tdClass} font-mono font-bold text-gray-800 dark:text-white/90`}>{k.kod}</td>
-                      <td className={tdClass}>
-                        <span className="text-xs">
-                          {k.tur === "yuzde" ? `%${k.deger}` : k.tur === "tutar" ? formatTL(k.deger) : "Ücretsiz"}
-                        </span>
-                        {k.yeni_uye_only && (
-                          <span className="ms-2 rounded-full bg-purple-100 px-1.5 py-0.5 text-xs text-purple-700">Yeni üye</span>
-                        )}
-                      </td>
-                      <td className={tdClass}>
-                        {k.kullanim} / {k.maks_kullanim ?? "∞"}
-                      </td>
-                      <td className={tdClass}>
-                        {k.bitis ? new Date(k.bitis).toLocaleDateString("tr-TR") : "—"}
-                      </td>
-                      <td className={tdClass}>
-                        <Badge size="sm" color={k.aktif ? "success" : "light"}>
-                          {k.aktif ? "Aktif" : "Pasif"}
-                        </Badge>
-                      </td>
-                      <td className={`${tdClass} whitespace-nowrap text-end`}>
-                        <button type="button" className={linkBtn} onClick={() => openEdit(k)}>Düzenle</button>
-                        <button
-                          type="button"
-                          className="ms-3 text-theme-sm font-medium text-gray-500 hover:text-gray-700 dark:text-gray-400"
-                          onClick={() => toggleAktif(k.id, k.aktif)}
-                        >
-                          {k.aktif ? "Pasifleştir" : "Aktifleştir"}
-                        </button>
-                      </td>
+            <>
+              {/* Telefon ve küçük tablet (md altı): kart görünümü; işlem düğmeleri yok */}
+              <ul className="space-y-3 md:hidden">
+                {kuponlar.map((k) => (
+                  <li key={k.id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <p className="font-mono font-bold break-all text-gray-800 dark:text-white/90">{k.kod}</p>
+                      <Badge size="sm" color={k.aktif ? "success" : "light"}>
+                        {k.aktif ? t("active") : t("passive")}
+                      </Badge>
+                    </div>
+                    <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 text-theme-sm">
+                      <div>
+                        <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.typeValue")}</dt>
+                        <dd className="text-gray-800 dark:text-white/90">
+                          {degerMetni(k)}
+                          {k.yeni_uye_only && (
+                            <span className="ms-2 rounded-full bg-purple-100 px-1.5 py-0.5 text-xs text-purple-700">{t("newMember")}</span>
+                          )}
+                        </dd>
+                      </div>
+                      <div>
+                        <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.usage")}</dt>
+                        <dd className="text-gray-800 dark:text-white/90">{k.kullanim} / {k.maks_kullanim ?? "∞"}</dd>
+                      </div>
+                      <div>
+                        <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.end")}</dt>
+                        <dd className="text-gray-800 dark:text-white/90">
+                          {k.bitis ? new Date(k.bitis).toLocaleDateString("tr-TR") : "—"}
+                        </dd>
+                      </div>
+                    </dl>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Tablet ve masaüstü (md ve üzeri): tablo; işlemler burada */}
+              <div className={`hidden overflow-x-auto md:block ${ILK_SUTUN_SABIT}`}>
+                <table className="min-w-full">
+                  <thead className="border-b border-gray-100 dark:border-gray-800">
+                    <tr>
+                      <th className={thClass}>{t("cols.code")}</th>
+                      <th className={thClass}>{t("cols.typeValue")}</th>
+                      <th className={thClass}>{t("cols.usage")}</th>
+                      <th className={thClass}>{t("cols.end")}</th>
+                      <th className={thClass}>{t("cols.status")}</th>
+                      <th className={thClass}><span className="sr-only">{t("cols.actions")}</span></th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
+                    {kuponlar.map((k) => (
+                      <tr key={k.id}>
+                        <td className={`${tdClass} font-mono font-bold text-gray-800 dark:text-white/90`}>{k.kod}</td>
+                        <td className={tdClass}>
+                          <span className="text-xs">{degerMetni(k)}</span>
+                          {k.yeni_uye_only && (
+                            <span className="ms-2 rounded-full bg-purple-100 px-1.5 py-0.5 text-xs text-purple-700">{t("newMember")}</span>
+                          )}
+                        </td>
+                        <td className={tdClass}>
+                          {k.kullanim} / {k.maks_kullanim ?? "∞"}
+                        </td>
+                        <td className={tdClass}>
+                          {k.bitis ? new Date(k.bitis).toLocaleDateString("tr-TR") : "—"}
+                        </td>
+                        <td className={tdClass}>
+                          <Badge size="sm" color={k.aktif ? "success" : "light"}>
+                            {k.aktif ? t("active") : t("passive")}
+                          </Badge>
+                        </td>
+                        <td className={`${tdClass} whitespace-nowrap text-end`}>
+                          <DesktopOnly>
+                            <button type="button" className={`${linkBtn} inline-flex min-h-11 items-center`} onClick={() => openEdit(k)}>
+                              {t("edit")}
+                            </button>
+                            <button
+                              type="button"
+                              className="ms-3 inline-flex min-h-11 items-center text-theme-sm font-medium text-gray-500 hover:text-gray-700 dark:text-gray-400"
+                              onClick={() => toggleAktif(k.id, k.aktif)}
+                            >
+                              {k.aktif ? t("deactivate") : t("activate")}
+                            </button>
+                          </DesktopOnly>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
           )}
 
           {!loadingK && !errorK && toplam > PAGE_SIZE && (
-            <div className="mt-4 flex items-center justify-between text-theme-sm text-gray-500">
+            <div className="mt-4 flex flex-wrap items-center justify-between gap-3 text-theme-sm text-gray-500">
               <span>{start}–{end} / {toplam}</span>
               <div className="flex gap-2">
-                <button type="button" disabled={page === 0} className={outlineBtn} onClick={() => setPage((p) => p - 1)}>←</button>
-                <button type="button" disabled={end >= toplam} className={outlineBtn} onClick={() => setPage((p) => p + 1)}>→</button>
+                <button
+                  type="button"
+                  disabled={page === 0}
+                  className={outlineBtn}
+                  aria-label={t("pager.prevLabel")}
+                  onClick={() => setPage((p) => p - 1)}
+                >
+                  ←
+                </button>
+                <button
+                  type="button"
+                  disabled={end >= toplam}
+                  className={outlineBtn}
+                  aria-label={t("pager.nextLabel")}
+                  onClick={() => setPage((p) => p + 1)}
+                >
+                  →
+                </button>
               </div>
             </div>
           )}
 
           {form && (
-            <form onSubmit={submitKupon} className="mt-6 space-y-4 rounded-xl border border-gray-200 p-4 dark:border-gray-800">
-              <h4 className="text-sm font-semibold text-gray-800 dark:text-white/90">
-                {editId ? "Kuponu Düzenle" : "Yeni Kupon"}
-              </h4>
-              <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {!editId && (
+            <ModalShell isOpen onClose={() => setForm(null)} title={editId ? t("form.editTitle") : t("form.createTitle")}>
+              <form onSubmit={submitKupon} className="space-y-4">
+                <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                  {!editId && (
+                    <div>
+                      <label className={labelClass} htmlFor="kp-kod">{t("form.code")} *</label>
+                      <input
+                        id="kp-kod"
+                        className={`${inputClass} uppercase`}
+                        placeholder="YAZI-1234"
+                        value={form.kod}
+                        onChange={(e) => setF("kod", e.target.value.toUpperCase())}
+                      />
+                      <p className="mt-1 text-xs text-gray-400">{t("form.codeHint")}</p>
+                    </div>
+                  )}
                   <div>
-                    <label className={labelClass}>Kupon Kodu *</label>
-                    <input className={`${inputClass} uppercase`} placeholder="YAZI-1234" value={form.kod}
-                      onChange={(e) => setF("kod", e.target.value.toUpperCase())} />
-                    <p className="mt-1 text-xs text-gray-400">3-24 karakter, yalnızca A-Z, 0-9, -</p>
+                    <label className={labelClass} htmlFor="kp-tur">{t("form.type")} *</label>
+                    <select id="kp-tur" className={inputClass} value={form.tur} onChange={(e) => setF("tur", e.target.value)}>
+                      {TUR_SECENEKLERI.map((v) => (
+                        <option key={v} value={v}>{t(`types.${v}`)}</option>
+                      ))}
+                    </select>
                   </div>
-                )}
-                <div>
-                  <label className={labelClass}>Tür *</label>
-                  <select className={inputClass} value={form.tur} onChange={(e) => setF("tur", e.target.value)}>
-                    {Object.entries(TUR_ETIKET).map(([v, l]) => <option key={v} value={v}>{l}</option>)}
-                  </select>
-                </div>
-                {form.tur !== "ucretsiz" && (
+                  {form.tur !== "ucretsiz" && (
+                    <div>
+                      <label className={labelClass} htmlFor="kp-deger">
+                        {form.tur === "yuzde" ? t("form.percent") : t("form.amount")} *
+                      </label>
+                      <input
+                        id="kp-deger"
+                        className={inputClass}
+                        inputMode="numeric"
+                        value={form.deger}
+                        onChange={(e) => setF("deger", e.target.value)}
+                      />
+                      {form.tur === "tutar" && <p className="mt-1 text-xs text-gray-400">{t("form.amountHint")}</p>}
+                    </div>
+                  )}
                   <div>
-                    <label className={labelClass}>{form.tur === "yuzde" ? "İndirim %" : "İndirim Tutarı (Kuruş)"} *</label>
-                    <input className={inputClass} inputMode="numeric" value={form.deger}
-                      onChange={(e) => setF("deger", e.target.value)} />
-                    {form.tur === "tutar" && <p className="mt-1 text-xs text-gray-400">Kuruş cinsinden (100 = 1 TL)</p>}
+                    <label className={labelClass} htmlFor="kp-maks">{t("form.maxUsage")}</label>
+                    <input
+                      id="kp-maks"
+                      className={inputClass}
+                      inputMode="numeric"
+                      value={form.maks_kullanim}
+                      onChange={(e) => setF("maks_kullanim", e.target.value)}
+                    />
                   </div>
-                )}
-                <div>
-                  <label className={labelClass}>Maks. Kullanım (boş = sınırsız)</label>
-                  <input className={inputClass} inputMode="numeric" value={form.maks_kullanim}
-                    onChange={(e) => setF("maks_kullanim", e.target.value)} />
+                  <div>
+                    <label className={labelClass} htmlFor="kp-bas">{t("form.start")}</label>
+                    <input
+                      id="kp-bas"
+                      className={inputClass}
+                      type="datetime-local"
+                      value={form.baslangic}
+                      onChange={(e) => setF("baslangic", e.target.value)}
+                    />
+                  </div>
+                  <div>
+                    <label className={labelClass} htmlFor="kp-bit">{t("form.end")}</label>
+                    <input
+                      id="kp-bit"
+                      className={inputClass}
+                      type="datetime-local"
+                      value={form.bitis}
+                      onChange={(e) => setF("bitis", e.target.value)}
+                    />
+                  </div>
                 </div>
-                <div>
-                  <label className={labelClass}>Başlangıç</label>
-                  <input className={inputClass} type="datetime-local" value={form.baslangic}
-                    onChange={(e) => setF("baslangic", e.target.value)} />
+                <div className="flex flex-wrap gap-x-6 gap-y-1">
+                  <label className="flex min-h-11 items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <input type="checkbox" className="h-4 w-4" checked={form.aktif} onChange={(e) => setF("aktif", e.target.checked)} />
+                    {t("form.active")}
+                  </label>
+                  <label className="flex min-h-11 items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                    <input
+                      type="checkbox"
+                      className="h-4 w-4"
+                      checked={form.yeni_uye_only}
+                      onChange={(e) => setF("yeni_uye_only", e.target.checked)}
+                    />
+                    {t("form.newMembersOnly")}
+                  </label>
                 </div>
-                <div>
-                  <label className={labelClass}>Bitiş</label>
-                  <input className={inputClass} type="datetime-local" value={form.bitis}
-                    onChange={(e) => setF("bitis", e.target.value)} />
+                <ErrorNote message={formError} />
+                <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
+                  <button type="button" className={outlineBtn} onClick={() => setForm(null)}>{t("form.cancel")}</button>
+                  <button type="submit" className={primaryBtn} disabled={saving}>
+                    {saving ? t("form.saving") : t("form.save")}
+                  </button>
                 </div>
-              </div>
-              <div className="flex flex-wrap gap-4">
-                <label className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-                  <input type="checkbox" checked={form.aktif} onChange={(e) => setF("aktif", e.target.checked)} />
-                  Aktif
-                </label>
-                <label className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-                  <input type="checkbox" checked={form.yeni_uye_only} onChange={(e) => setF("yeni_uye_only", e.target.checked)} />
-                  Yalnızca yeni üyeler
-                </label>
-              </div>
-              <ErrorNote message={formError} />
-              <div className="flex justify-end gap-3">
-                <button type="button" className={outlineBtn} onClick={() => setForm(null)}>Vazgeç</button>
-                <button type="submit" className={primaryBtn} disabled={saving}>{saving ? "Kaydediliyor..." : "Kaydet"}</button>
-              </div>
-            </form>
+              </form>
+            </ModalShell>
           )}
         </section>
       )}
@@ -433,75 +532,125 @@ export default function KuponManager() {
       {tab === "kampanyalar" && (
         <section className={`${cardClass} p-5 sm:p-6`}>
           <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
-            <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">Kampanyalar</h3>
-            <button type="button" className={primaryBtn} onClick={openKampNew}>+ Yeni Kampanya</button>
+            <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">{t("tabs.kampanyalar")}</h3>
+            <DesktopOnly>
+              <button type="button" className={primaryBtn} onClick={openKampNew}>{t("newCampaign")}</button>
+            </DesktopOnly>
           </div>
 
           {loadingKamp ? (
-            <p className="py-10 text-center text-sm text-gray-500">Yükleniyor...</p>
+            <p className="py-10 text-center text-sm text-gray-500">{t("loading")}</p>
           ) : errorKamp ? (
             <p className="py-8 text-center text-sm text-error-600">{errorKamp}</p>
           ) : kampanyalar.length === 0 ? (
-            <p className="py-10 text-center text-sm text-gray-500">Kampanya bulunamadı.</p>
+            <p className="py-10 text-center text-sm text-gray-500">{t("emptyCampaigns")}</p>
           ) : (
-            <div className="overflow-x-auto">
-              <table className="min-w-full">
-                <thead className="border-b border-gray-100 dark:border-gray-800">
-                  <tr>
-                    <th className={thClass}>Ad</th>
-                    <th className={thClass}>Kupon Sayısı</th>
-                    <th className={thClass}>Kullanım</th>
-                    <th className={thClass}>Toplam İndirim</th>
-                    <th className={thClass}>Durum</th>
-                    <th className={thClass} />
-                  </tr>
-                </thead>
-                <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-                  {kampanyalar.map((k) => (
-                    <tr key={k.id}>
-                      <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>
-                        {k.ad}
-                        {k.aciklama && <p className="mt-0.5 text-xs text-gray-400">{k.aciklama}</p>}
-                      </td>
-                      <td className={tdClass}>{k.kupon_sayisi}</td>
-                      <td className={tdClass}>{k.kullanim}</td>
-                      <td className={tdClass}>{formatTL(k.toplam_indirim_kurus)}</td>
-                      <td className={tdClass}>
-                        <Badge size="sm" color={k.aktif ? "success" : "light"}>{k.aktif ? "Aktif" : "Pasif"}</Badge>
-                      </td>
-                      <td className={`${tdClass} text-end`}>
-                        <button type="button" className={linkBtn} onClick={() => openKampEdit(k)}>Düzenle</button>
-                      </td>
+            <>
+              <ul className="space-y-3 md:hidden">
+                {kampanyalar.map((k) => (
+                  <li key={k.id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <p className="font-medium wrap-break-word text-gray-800 dark:text-white/90">{k.ad}</p>
+                      <Badge size="sm" color={k.aktif ? "success" : "light"}>{k.aktif ? t("active") : t("passive")}</Badge>
+                    </div>
+                    {k.aciklama && <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">{k.aciklama}</p>}
+                    <dl className="mt-3 grid grid-cols-3 gap-x-4 gap-y-3 text-theme-sm">
+                      <div>
+                        <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("campaignCols.count")}</dt>
+                        <dd className="text-gray-800 dark:text-white/90">{k.kupon_sayisi}</dd>
+                      </div>
+                      <div>
+                        <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.usage")}</dt>
+                        <dd className="text-gray-800 dark:text-white/90">{k.kullanim}</dd>
+                      </div>
+                      <div>
+                        <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("campaignCols.totalDiscount")}</dt>
+                        <dd className="text-gray-800 dark:text-white/90">{formatTL(k.toplam_indirim_kurus)}</dd>
+                      </div>
+                    </dl>
+                  </li>
+                ))}
+              </ul>
+
+              <div className={`hidden overflow-x-auto md:block ${ILK_SUTUN_SABIT}`}>
+                <table className="min-w-full">
+                  <thead className="border-b border-gray-100 dark:border-gray-800">
+                    <tr>
+                      <th className={thClass}>{t("campaignCols.name")}</th>
+                      <th className={thClass}>{t("campaignCols.count")}</th>
+                      <th className={thClass}>{t("cols.usage")}</th>
+                      <th className={thClass}>{t("campaignCols.totalDiscount")}</th>
+                      <th className={thClass}>{t("cols.status")}</th>
+                      <th className={thClass}><span className="sr-only">{t("cols.actions")}</span></th>
                     </tr>
-                  ))}
-                </tbody>
-              </table>
-            </div>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
+                    {kampanyalar.map((k) => (
+                      <tr key={k.id}>
+                        <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>
+                          {k.ad}
+                          {k.aciklama && <p className="mt-0.5 text-xs text-gray-400">{k.aciklama}</p>}
+                        </td>
+                        <td className={tdClass}>{k.kupon_sayisi}</td>
+                        <td className={tdClass}>{k.kullanim}</td>
+                        <td className={tdClass}>{formatTL(k.toplam_indirim_kurus)}</td>
+                        <td className={tdClass}>
+                          <Badge size="sm" color={k.aktif ? "success" : "light"}>{k.aktif ? t("active") : t("passive")}</Badge>
+                        </td>
+                        <td className={`${tdClass} text-end`}>
+                          <DesktopOnly>
+                            <button type="button" className={`${linkBtn} inline-flex min-h-11 items-center`} onClick={() => openKampEdit(k)}>
+                              {t("edit")}
+                            </button>
+                          </DesktopOnly>
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            </>
           )}
 
           {kampForm && (
-            <form onSubmit={submitKampanya} className="mt-6 space-y-4 rounded-xl border border-gray-200 p-4 dark:border-gray-800">
-              <h4 className="text-sm font-semibold text-gray-800 dark:text-white/90">
-                {kampEditId ? "Kampanyayı Düzenle" : "Yeni Kampanya"}
-              </h4>
-              <div>
-                <label className={labelClass}>Ad *</label>
-                <input className={inputClass} value={kampForm.ad} onChange={(e) => setKampForm((f) => f && { ...f, ad: e.target.value })} />
-              </div>
-              <div>
-                <label className={labelClass}>Açıklama</label>
-                <input className={inputClass} value={kampForm.aciklama} onChange={(e) => setKampForm((f) => f && { ...f, aciklama: e.target.value })} />
-              </div>
-              <label className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-                <input type="checkbox" checked={kampForm.aktif} onChange={(e) => setKampForm((f) => f && { ...f, aktif: e.target.checked })} />
-                Aktif
-              </label>
-              <ErrorNote message={kampFormError} />
-              <div className="flex justify-end gap-3">
-                <button type="button" className={outlineBtn} onClick={() => setKampForm(null)}>Vazgeç</button>
-                <button type="submit" className={primaryBtn} disabled={kampSaving}>{kampSaving ? "Kaydediliyor..." : "Kaydet"}</button>
-              </div>
-            </form>
+            <ModalShell isOpen onClose={() => setKampForm(null)} title={kampEditId ? t("campaignForm.editTitle") : t("campaignForm.createTitle")}>
+              <form onSubmit={submitKampanya} className="space-y-4">
+                <div>
+                  <label className={labelClass} htmlFor="kmp-ad">{t("campaignForm.name")} *</label>
+                  <input
+                    id="kmp-ad"
+                    className={inputClass}
+                    value={kampForm.ad}
+                    onChange={(e) => setKampForm((f) => f && { ...f, ad: e.target.value })}
+                  />
+                </div>
+                <div>
+                  <label className={labelClass} htmlFor="kmp-aciklama">{t("campaignForm.description")}</label>
+                  <input
+                    id="kmp-aciklama"
+                    className={inputClass}
+                    value={kampForm.aciklama}
+                    onChange={(e) => setKampForm((f) => f && { ...f, aciklama: e.target.value })}
+                  />
+                </div>
+                <label className="flex min-h-11 items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                  <input
+                    type="checkbox"
+                    className="h-4 w-4"
+                    checked={kampForm.aktif}
+                    onChange={(e) => setKampForm((f) => f && { ...f, aktif: e.target.checked })}
+                  />
+                  {t("form.active")}
+                </label>
+                <ErrorNote message={kampFormError} />
+                <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
+                  <button type="button" className={outlineBtn} onClick={() => setKampForm(null)}>{t("form.cancel")}</button>
+                  <button type="submit" className={primaryBtn} disabled={kampSaving}>
+                    {kampSaving ? t("form.saving") : t("form.save")}
+                  </button>
+                </div>
+              </form>
+            </ModalShell>
           )}
         </section>
       )}

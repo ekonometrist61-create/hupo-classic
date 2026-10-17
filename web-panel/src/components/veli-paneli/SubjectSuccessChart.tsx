@@ -29,9 +29,17 @@ export default function SubjectSuccessChart({
 
   const sufficient = data.filter((d) => d.toplam >= MIN_EVIDENCE);
   const insufficient = data.filter((d) => d.toplam < MIN_EVIDENCE);
+  // En düşük başarılı ders: grafiğin metinsel özeti (ekran okuyucu ve görünür cümle).
+  const enDusuk = sufficient.reduce<SubjectSuccess | null>(
+    (en, d) => (en === null || d.oran < en.oran ? d : en),
+    null,
+  );
+  const ozet = enDusuk
+    ? t("ozet", { sayi: sufficient.length, ders: enDusuk.ders, oran: enDusuk.oran })
+    : t("insufficient");
 
   return (
-    <ChartCard title={t("title")} desc={t("desc")}>
+    <ChartCard title={t("title")} desc={t("desc")} kaynak={t("kaynak")}>
       {data.length === 0 ? (
         <p className="py-10 text-center text-sm text-gray-500 dark:text-gray-400">
           {t("empty")}
@@ -40,6 +48,8 @@ export default function SubjectSuccessChart({
         <>
           {sufficient.length > 0 && (
             <div
+              role="img"
+              aria-label={ozet}
               style={{
                 height: Math.max(220, sufficient.length * ROW_HEIGHT + 40),
               }}
@@ -138,6 +148,10 @@ export default function SubjectSuccessChart({
             <p className="py-6 text-center text-sm text-gray-500 dark:text-gray-400">
               {t("insufficient")}
             </p>
+          )}
+
+          {sufficient.length > 0 && (
+            <p className="mt-3 text-theme-sm text-gray-600 dark:text-gray-300">{ozet}</p>
           )}
         </>
       )}

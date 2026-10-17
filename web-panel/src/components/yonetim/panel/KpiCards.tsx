@@ -63,7 +63,7 @@ export default function KpiCards({ data }: { data: DashboardSummary }) {
 
   return (
     <div className="space-y-4">
-      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-5">
+      <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
         <Card label={t("parents")} value={k.veli.toLocaleString("tr-TR")}>
           {t("newLast30", { count: k.son_30_gun_yeni })}
         </Card>
@@ -80,7 +80,7 @@ export default function KpiCards({ data }: { data: DashboardSummary }) {
         >
           <Link
             href="/yonetim/sorular"
-            className="font-medium text-brand-500 dark:text-brand-400"
+            className="inline-flex min-h-11 items-center font-medium text-brand-500 dark:text-brand-400"
           >
             {t("review")}
           </Link>

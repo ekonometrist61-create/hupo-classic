@@ -124,7 +124,7 @@ export default function KelimeSozlukPanel({ anlamlar, onDegisti }: Props) {
       <ErrorNote message={error} />
       {mesaj && <p className="mb-3 text-sm text-green-700 dark:text-green-400">{mesaj}</p>}
 
-      <div className="grid gap-6 lg:grid-cols-2">
+      <div className="grid gap-6 md:grid-cols-2">
         <form className="space-y-3" onSubmit={anlamKaydet}>
           <h4 className="text-sm font-semibold text-gray-700 dark:text-gray-200">{t("sozluk.anlamBaslik")}</h4>
           <div>
@@ -178,8 +178,8 @@ export default function KelimeSozlukPanel({ anlamlar, onDegisti }: Props) {
         </form>
       </div>
 
-      <div className="mt-6 overflow-x-auto">
-        <table className="w-full text-left text-sm">
+      <div className="mt-6 overflow-x-auto [&_tr>*:first-child]:sticky [&_tr>*:first-child]:inset-s-0 [&_tr>*:first-child]:z-1 [&_tr>*:first-child]:bg-white dark:[&_tr>*:first-child]:bg-gray-900">
+        <table className="min-w-full text-left text-sm">
           <thead>
             <tr>
               <th className={thClass}>{t("sozluk.tablo.iliski")}</th>
@@ -206,7 +206,7 @@ export default function KelimeSozlukPanel({ anlamlar, onDegisti }: Props) {
                     {!r.onay_tarihi && (
                       <button
                         type="button"
-                        className={`${linkBtn} disabled:opacity-50`}
+                        className={`${linkBtn} inline-flex min-h-11 items-center disabled:opacity-50`}
                         onClick={() => onayla(r.id)}
                         disabled={onaylanan === r.id}
                       >

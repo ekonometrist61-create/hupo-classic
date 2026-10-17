@@ -12,8 +12,9 @@ interface PagerProps {
 /** Basit sayfalama çubuğu. labels.summary örn. "26–50 / 312" olarak dışarıdan üretilir. */
 export default function Pager({ page, pageSize, total, onPage, labels }: PagerProps) {
   const lastPage = Math.max(0, Math.ceil(total / pageSize) - 1);
+  // Dokunma hedefi en az 44 px (TASKS §20, R2).
   const buttonClass =
-    "rounded-lg border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-40 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5";
+    "inline-flex min-h-11 min-w-11 items-center justify-center rounded-lg border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-40 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5";
 
   return (
     <div className="flex flex-wrap items-center justify-between gap-3 pt-4">

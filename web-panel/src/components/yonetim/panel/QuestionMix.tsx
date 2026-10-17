@@ -20,7 +20,7 @@ export default function QuestionMix({
 
   return (
     <ChartCard title={t("title")} desc={t("desc", { count: data.toplam })}>
-      <div className="mb-4 grid grid-cols-3 gap-3">
+      <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-3">
         {counts.map((c) => (
           <div
             key={c.key}

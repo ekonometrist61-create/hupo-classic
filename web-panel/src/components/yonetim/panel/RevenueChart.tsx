@@ -35,7 +35,7 @@ export default function RevenueChart({
           {t("empty")}
         </p>
       ) : (
-        <div className="h-72">
+        <div className="h-64 sm:h-72">
           <ResponsiveContainer
             width="100%"
             height="100%"

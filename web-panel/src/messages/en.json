@@ -232,6 +232,7 @@
     "marketingEposta": "I want to receive updates by email.",
     "marketingSms": "I want to receive updates by SMS.",
     "marketingTelefon": "I want to be contacted by phone.",
+    "marketingPush": "I want to hear about campaigns and offers through app notifications (push).",
     "marketingKabul": "By making my selections I accept the <link>HUPOLİNGO Commercial Electronic Communication Disclosure and Consent Text</link>. I can change or withdraw my consent at any time free of charge. Not giving consent does not prevent me from using the platform.",
     "consentMarketing": "I want to receive subscription, product and campaign messages from Hupolingo by email. You can withdraw this consent at any time.",
     "submit": "Create account",
@@ -944,7 +945,18 @@
       "project": "Project",
       "minAgo": "{count} min ago",
       "hrAgo": "{count} hr ago",
-      "viewAll": "View All Notifications"
+      "viewAll": "View All Notifications",
+      "empty": "You have no notifications yet.",
+      "loadError": "Notifications could not be loaded. Please try again shortly.",
+      "markReadError": "The notification could not be marked as read.",
+      "close": "Close notifications",
+      "kategori": {
+        "sistem": "System",
+        "akademik": "Academic",
+        "duyuru": "Announcement",
+        "indirim": "Discount",
+        "kampanya": "Campaign"
+      }
     }
   },
   "userDropdown": {
@@ -2041,8 +2053,22 @@
     },
     "siniflar": {
       "title": "Class Management",
+      "teacherTitle": "My Classes",
+      "genelTitle": "Classes",
+      "teacherDesc": "You can see the student count and overall progress summary of your assigned classes. This screen is read-only; your administrator manages class details.",
       "new": "New class",
       "empty": "No classes yet.",
+      "emptyTeacher": "No class is assigned to you yet. Contact your administrator to get one.",
+      "seviyeEtiket": "Grade {seviye}",
+      "ilerlemeNot": "Progress values are calculated when at least 3 students in a class have activity. Accuracy is the average per student.",
+      "ilerlemeYetersiz": "Not enough data",
+      "picker": {
+        "label": "Teacher (optional)",
+        "placeholder": "Search teacher...",
+        "loading": "Loading teacher list...",
+        "none": "No matching teacher found",
+        "change": "Change"
+      },
       "loading": "Loading...",
       "retry": "Retry",
       "cols": {
@@ -2051,7 +2077,12 @@
         "ogretmen": "Teacher",
         "ogrenciler": "Students",
         "yil": "Year",
-        "aktif": "Status"
+        "aktif": "Status",
+        "okul": "School",
+        "aktifOgrenci": "Active in last 7 days",
+        "dogruOrani": "Average accuracy",
+        "bekleyen": "Due for review",
+        "sonEtkinlik": "Last activity"
       },
       "active": "Active",
       "inactive": "Inactive",

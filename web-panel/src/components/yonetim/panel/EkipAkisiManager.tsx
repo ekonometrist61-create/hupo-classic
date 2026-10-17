@@ -74,8 +74,8 @@ export default function EkipAkisiManager() {
   return (
     <div className="space-y-6">
       <section className={`${cardClass} p-5 sm:p-6`}>
-        <div className="mb-4 flex flex-wrap items-end gap-4">
-          <div className="min-w-48">
+        <div className="mb-4 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-end">
+          <div className="w-full sm:w-auto sm:min-w-48">
             <label className={labelClass} htmlFor="e-type">{t("filterType")}</label>
             <select
               id="e-type"
@@ -89,7 +89,7 @@ export default function EkipAkisiManager() {
               ))}
             </select>
           </div>
-          <div>
+          <div className="sm:ms-auto">
             <button type="button" className={primaryBtn} onClick={() => setCreating(true)}>
               {t("newNote")}
             </button>
@@ -234,7 +234,7 @@ function FeedModal({ onClose, onSaved }: { onClose: () => void; onSaved: () => v
           />
         </div>
         <ErrorNote message={err} />
-        <div className="flex justify-end gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
           <button type="button" className={outlineBtn} onClick={onClose}>
             {t("form.cancel")}
           </button>

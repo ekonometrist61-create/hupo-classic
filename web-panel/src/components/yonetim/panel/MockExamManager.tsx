@@ -8,6 +8,7 @@ import { createClient } from "@/utils/supabase/client";
 import type { MockExam } from "../types";
 import ErrorNote from "./ErrorNote";
 import MockExamDetailModal from "./MockExamDetailModal";
+import ModalShell from "./ModalShell";
 import {
   cardClass,
   inputClass,
@@ -20,6 +21,12 @@ import {
 } from "./styles";
 
 export const SINIF_SECENEKLERI = [3, 4, 5, 6, 7, 8];
+
+// Dokunma hedefi en az 44 px; tablo ilk sütunu yatay kaydırmada sabit kalır (TASKS §20).
+const LINK_TOUCH = `${linkBtn} inline-flex min-h-11 items-center`;
+const TH_STICKY =
+  "sticky start-0 z-10 bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase dark:bg-gray-900 dark:text-gray-400";
+const TD_STICKY = `${tdClass} sticky start-0 z-10 bg-white dark:bg-gray-900`;
 
 interface FormState {
   id: string | null;
@@ -164,7 +171,7 @@ export default function MockExamManager() {
           <table className="min-w-full">
             <thead className="border-b border-gray-100 dark:border-gray-800">
               <tr>
-                <th className={thClass}>{t("cols.ad")}</th>
+                <th className={TH_STICKY}>{t("cols.ad")}</th>
                 <th className={thClass}>{t("cols.baslangic")}</th>
                 <th className={thClass}>{t("cols.sure")}</th>
                 <th className={thClass}>{t("cols.siniflar")}</th>
@@ -176,7 +183,7 @@ export default function MockExamManager() {
             <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
               {exams.map((ex) => (
                 <tr key={ex.id}>
-                  <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>{ex.ad}</td>
+                  <td className={`${TD_STICKY} font-medium text-gray-800 dark:text-white/90`}>{ex.ad}</td>
                   <td className={`${tdClass} whitespace-nowrap`}>{formatWhen(ex.baslangic_zamani)}</td>
                   <td className={tdClass}>{t("sureDk", { count: ex.sure_dakika })}</td>
                   <td className={tdClass}>{ex.siniflar.join(", ") || "-"}</td>
@@ -189,14 +196,14 @@ export default function MockExamManager() {
                     </Badge>
                   </td>
                   <td className={`${tdClass} whitespace-nowrap text-end`}>
-                    <span className="flex justify-end gap-3">
-                      <button type="button" className={linkBtn} onClick={() => setDetailId(ex.id)}>
+                    <span className="flex flex-wrap justify-end gap-x-3 gap-y-1">
+                      <button type="button" className={LINK_TOUCH} onClick={() => setDetailId(ex.id)}>
                         {t("detay")}
                       </button>
-                      <button type="button" className={linkBtn} onClick={() => openEdit(ex)}>
+                      <button type="button" className={LINK_TOUCH} onClick={() => openEdit(ex)}>
                         {t("duzenle")}
                       </button>
-                      <button type="button" className={linkBtn} onClick={() => toggleActive(ex)}>
+                      <button type="button" className={LINK_TOUCH} onClick={() => toggleActive(ex)}>
                         {ex.aktif ? t("pasifYap") : t("aktifYap")}
                       </button>
                     </span>
@@ -209,13 +216,8 @@ export default function MockExamManager() {
       )}
 
       {form && (
-        <form
-          onSubmit={submit}
-          className="mt-6 space-y-4 rounded-xl border border-gray-200 p-4 dark:border-gray-800"
-        >
-          <h4 className="text-sm font-semibold text-gray-800 dark:text-white/90">
-            {form.id ? t("form.editTitle") : t("form.createTitle")}
-          </h4>
+        <ModalShell isOpen onClose={() => setForm(null)} title={form.id ? t("form.editTitle") : t("form.createTitle")}>
+        <form onSubmit={submit} className="space-y-4">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
             <div>
               <label className={labelClass} htmlFor="mx-ad">{t("form.ad")}</label>
@@ -252,7 +254,7 @@ export default function MockExamManager() {
               <legend className={labelClass}>{t("form.siniflar")}</legend>
               <div className="flex flex-wrap gap-3">
                 {SINIF_SECENEKLERI.map((s) => (
-                  <label key={s} className="flex items-center gap-1.5 text-sm text-gray-700 dark:text-gray-300">
+                  <label key={s} className="flex min-h-11 items-center gap-1.5 text-sm text-gray-700 dark:text-gray-300">
                     <input
                       type="checkbox"
                       checked={form.siniflar.includes(s)}
@@ -264,7 +266,7 @@ export default function MockExamManager() {
               </div>
             </fieldset>
           </div>
-          <label className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+          <label className="flex min-h-11 items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
             <input
               type="checkbox"
               checked={form.aktif}
@@ -274,7 +276,7 @@ export default function MockExamManager() {
           </label>
           <p className="text-theme-xs text-gray-500 dark:text-gray-400">{t("form.kilitHint")}</p>
           <ErrorNote message={formError} />
-          <div className="flex justify-end gap-3">
+          <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
             <button type="button" className={outlineBtn} onClick={() => setForm(null)}>
               {t("form.vazgec")}
             </button>
@@ -283,6 +285,7 @@ export default function MockExamManager() {
             </button>
           </div>
         </form>
+        </ModalShell>
       )}
 
       {detailExam && (

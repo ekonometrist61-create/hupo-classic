@@ -43,8 +43,14 @@ export default function CommandPalette() {
         open();
       }
     };
+    // Mobil ve tablet üst çubuğundaki arama düğmesi (AppHeader) bu olayla açar.
+    const onOpenEvent = () => open();
     document.addEventListener("keydown", onKey);
-    return () => document.removeEventListener("keydown", onKey);
+    window.addEventListener("komut-paleti-ac", onOpenEvent);
+    return () => {
+      document.removeEventListener("keydown", onKey);
+      window.removeEventListener("komut-paleti-ac", onOpenEvent);
+    };
   }, []);
 
   const go = (path: string) => {

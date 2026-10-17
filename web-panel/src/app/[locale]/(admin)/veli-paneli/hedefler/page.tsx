@@ -24,6 +24,10 @@ export default async function HedeflerPage({
   if (access.kind === "admin") {
     redirect({ href: "/yonetim", locale });
   }
+  // K1: öğretmen veli panelinde kalmaz; sınıf sayfasına yönlenir.
+  if (access.kind === "ogretmen") {
+    redirect({ href: "/yonetim/siniflar", locale });
+  }
 
   let body: React.ReactNode;
   if (access.kind === "ok") {

@@ -79,6 +79,8 @@ function ReviewContent({
         labels={{
           title: t("review.title"),
           desc: tr("listDesc"),
+          kaynak: tr("kaynak"),
+          azVeri: t("review.azVeri"),
           empty: tr("empty"),
           topic: t("review.topic"),
           subject: t("review.subject"),

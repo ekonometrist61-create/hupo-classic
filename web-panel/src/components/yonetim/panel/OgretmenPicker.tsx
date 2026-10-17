@@ -13,9 +13,11 @@ interface OgretmenPickerProps {
   onSelect: (user: AdminUser | null) => void;
 }
 
-/** Öğretmen arama kutusu — admin_list_users('ogretmen') ile. */
+/** Öğretmen arama kutusu — admin_list_users('ogretmen') ile. Yalnızca admin formunda kullanılır
+ *  (öğretmen rolü sınıf yazmaz; bu seçici öğretmen ekranında hiç çizilmez). */
 export default function OgretmenPicker({ selected, onSelect }: OgretmenPickerProps) {
-  const t = useTranslations("yonetim.panel.picker");
+  // Öğretmen metinleri sınıf ad alanındadır (yonetim.panel.picker metinleri "Veli" içerir).
+  const t = useTranslations("yonetim.siniflar.picker");
   const [query, setQuery] = useState("");
   const debounced = useDebounced(query);
   const [results, setResults] = useState<AdminUser[]>([]);
@@ -64,7 +66,7 @@ export default function OgretmenPicker({ selected, onSelect }: OgretmenPickerPro
           </div>
           <button
             type="button"
-            className="text-theme-sm font-medium text-brand-500 dark:text-brand-400"
+            className="inline-flex min-h-11 items-center px-2 text-theme-sm font-medium text-brand-500 dark:text-brand-400"
             onClick={() => onSelect(null)}
           >
             {t("change")}

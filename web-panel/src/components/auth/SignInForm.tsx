@@ -28,8 +28,9 @@ const fieldClass =
   "mt-1.5 block h-12 w-full rounded-xl border border-gray-500 bg-white px-4 text-base text-navy placeholder:text-gray-500 focus:border-brand-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500";
 
 // Yönetim girişinde daha sakin kenarlık ve lacivert odak halkası (kurumsal yüzey).
+// Yönetim ve öğretmen girişi: mobilde 16 px (iOS odak yakınlaştırması olmaz).
 const adminFieldClass =
-  "mt-1.5 block h-11 w-full rounded-lg border border-gray-300 bg-white px-3.5 text-sm text-navy placeholder:text-gray-400 focus:border-navy focus:outline-none focus-visible:ring-3 focus-visible:ring-navy/20";
+  "mt-1.5 block h-11 w-full rounded-lg border border-gray-300 bg-white px-3.5 text-base text-navy placeholder:text-gray-400 focus:border-navy focus:outline-none focus-visible:ring-3 focus-visible:ring-navy/20 md:text-sm";
 
 const linkClass =
   "font-semibold underline underline-offset-4 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500";

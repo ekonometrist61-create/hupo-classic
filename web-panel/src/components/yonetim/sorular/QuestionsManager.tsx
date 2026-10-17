@@ -5,8 +5,10 @@ import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
 import { useEffect, useMemo, useState } from "react";
 
+import DesktopOnly from "@/components/ui/DesktopOnly";
 import Pager from "../Pager";
 import type { AdminQuestion, Paged, QuestionStatus } from "../types";
+import { dokunmaHedefi } from "../ui/responsive";
 import DeleteConfirmModal from "./DeleteConfirmModal";
 import QuestionFormModal from "./QuestionFormModal";
 import QuestionsTable from "./QuestionsTable";
@@ -21,8 +23,9 @@ interface LoadedList {
 
 type FormState = { question: AdminQuestion | null } | null;
 
+// Mobilde 16 px: iOS odakta yakınlaştırmaz (R3).
 const fieldClass =
-  "h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 text-sm text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/10 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800";
+  "h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 text-base text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/10 focus:outline-hidden md:text-sm dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800";
 
 export default function QuestionsManager() {
   const t = useTranslations("yonetim.sorular");
@@ -154,7 +157,7 @@ export default function QuestionsManager() {
   const from = total === 0 ? 0 : page * PAGE_SIZE + 1;
   const to = Math.min(total, (page + 1) * PAGE_SIZE);
   const bulkButton =
-    "rounded-lg border px-3.5 py-2 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-50";
+    `${dokunmaHedefi} justify-center rounded-lg border px-3.5 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-50`;
 
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 dark:border-gray-800 dark:bg-white/3">
@@ -168,23 +171,26 @@ export default function QuestionsManager() {
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
-          <Link
-            href="/yonetim/sorular/toplu-ekle"
-            className="rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5"
-          >
-            {t("bulkImport")}
-          </Link>
+          {/* K3: toplu içe aktarma yalnızca masaüstünde; telefonda bilgi notu görünür. */}
+          <DesktopOnly>
+            <Link
+              href="/yonetim/sorular/toplu-ekle"
+              className={`${dokunmaHedefi} justify-center rounded-lg border border-gray-300 px-4 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5`}
+            >
+              {t("bulkImport")}
+            </Link>
+          </DesktopOnly>
           <button
             type="button"
             onClick={() => setForm({ question: null })}
-            className="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600"
+            className={`${dokunmaHedefi} justify-center rounded-lg bg-brand-500 px-4 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600`}
           >
             {t("newQuestion")}
           </button>
         </div>
       </div>
 
-      <div className="mb-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-4 grid gap-3 md:grid-cols-2 lg:grid-cols-4">
         <input
           type="search"
           value={searchInput}
@@ -311,7 +317,7 @@ export default function QuestionsManager() {
           <button
             type="button"
             onClick={reload}
-            className="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5"
+            className={`${dokunmaHedefi} rounded-lg border border-gray-300 px-4 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5`}
           >
             {t("retry")}
           </button>

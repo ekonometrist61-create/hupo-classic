@@ -8,6 +8,7 @@ import { formatDateTime, formatKurus } from "@/utils/format";
 import { inputClass, outlineBtn, primaryBtn } from "../panel/styles";
 import Feedback from "../ui/Feedback";
 import RpcBoundary from "../ui/RpcBoundary";
+import { dokunmaHedefi } from "../ui/responsive";
 import { adminCall, useAdminRpc } from "../useAdminRpc";
 import { DEMO_PROFILE } from "./demoData";
 import type { Channel, VeliProfile } from "./types";
@@ -135,7 +136,7 @@ function Body({
         ) : (
           <ul className="divide-y divide-gray-100 rounded-xl border border-gray-200 text-theme-sm dark:divide-gray-800 dark:border-gray-800">
             {p.cocuklar.map((c) => (
-              <li key={c.id} className="flex items-center justify-between gap-3 px-4 py-3">
+              <li key={c.id} className="flex flex-wrap items-center justify-between gap-x-3 gap-y-1 px-4 py-3">
                 <span className="font-medium">{c.ad ?? "—"}</span>
                 <span className="text-gray-500 dark:text-gray-400">
                   {c.sinif ? t("grade", { n: c.sinif }) : "—"}
@@ -152,7 +153,7 @@ function Body({
         <ul className="divide-y divide-gray-100 rounded-xl border border-gray-200 dark:divide-gray-800 dark:border-gray-800">
           {p.tercihler.map((c) => (
             <li key={c.kanal} className="px-4 py-3 text-theme-sm">
-              <div className="flex items-center justify-between gap-3">
+              <div className="flex flex-wrap items-center justify-between gap-3">
                 <span className="font-medium">{t(`channels.${c.kanal}`)}</span>
                 <span className="flex items-center gap-3">
                   <Badge size="sm" color={c.izin ? "success" : "light"}>
@@ -160,7 +161,7 @@ function Body({
                   </Badge>
                   <button
                     type="button"
-                    className="text-theme-xs font-medium text-brand-500 hover:text-brand-600 dark:text-brand-400"
+                    className={`${dokunmaHedefi} text-theme-xs font-medium text-brand-500 hover:text-brand-600 dark:text-brand-400`}
                     onClick={() => {
                       setEditing(editing === c.kanal ? null : c.kanal);
                       setReason("");
@@ -184,7 +185,7 @@ function Body({
                     onChange={(e) => setReason(e.target.value)}
                     placeholder={t("reasonPlaceholder")}
                   />
-                  <div className="flex gap-2">
+                  <div className="flex flex-wrap gap-2">
                     <button
                       type="button"
                       className={primaryBtn}

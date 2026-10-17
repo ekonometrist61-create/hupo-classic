@@ -11,6 +11,7 @@ import {
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
+import { yapiskanBaslik, yapiskanHucre } from "../ui/responsive";
 import type { ConvertedRow, HeaderMapping } from "./csv";
 
 const PREVIEW_LIMIT = 50;
@@ -87,7 +88,7 @@ export default function ImportPreview({
               {t("count.invalid", { count: invalid })}
             </Badge>
             {invalid > 0 && (
-              <label className="ms-auto flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+              <label className="ms-auto flex min-h-11 items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
                 <input
                   type="checkbox"
                   checked={onlyErrors}
@@ -109,7 +110,7 @@ export default function ImportPreview({
                 <Table>
                   <TableHeader className="border-b border-gray-100 dark:border-gray-800">
                     <TableRow>
-                      <TableCell isHeader className={headerClass}>
+                      <TableCell isHeader className={`${headerClass} ${yapiskanBaslik}`}>
                         {t("table.line")}
                       </TableCell>
                       <TableCell isHeader className={headerClass}>
@@ -129,7 +130,7 @@ export default function ImportPreview({
                   <TableBody className="divide-y divide-gray-100 dark:divide-gray-800">
                     {shown.map((r) => (
                       <TableRow key={r.line}>
-                        <TableCell className={cellClass}>{r.line}</TableCell>
+                        <TableCell className={`${cellClass} ${yapiskanHucre}`}>{r.line}</TableCell>
                         <TableCell className={`${cellClass} max-w-xs`}>
                           <span className="line-clamp-2">
                             {r.question.soru_metni}

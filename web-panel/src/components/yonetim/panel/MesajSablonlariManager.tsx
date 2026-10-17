@@ -22,6 +22,13 @@ import {
 } from "./styles";
 
 const PAGE_SIZE = 25;
+
+// Dokunma hedefi en az 44 px; tablo ilk sütunu yatay kaydırmada sabit kalır (TASKS §20).
+const LINK_TOUCH = `${linkBtn} inline-flex min-h-11 items-center`;
+const TH_STICKY =
+  "sticky start-0 z-10 bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase dark:bg-gray-900 dark:text-gray-400";
+const TD_STICKY = `${tdClass} sticky start-0 z-10 bg-white dark:bg-gray-900`;
+
 const CHANNELS = ["email", "sms", "push", "in_app", "whatsapp"] as const;
 type Channel = (typeof CHANNELS)[number];
 const TEMPLATE_STATUSES = ["draft", "active", "archived"] as const;
@@ -79,8 +86,8 @@ export default function MesajSablonlariManager() {
   return (
     <div className="space-y-6">
       <section className={`${cardClass} p-5 sm:p-6`}>
-        <div className="mb-4 flex flex-wrap items-end gap-4">
-          <div className="min-w-40">
+        <div className="mb-4 flex flex-col gap-4 sm:flex-row sm:flex-wrap sm:items-end">
+          <div className="w-full sm:w-auto sm:min-w-40">
             <label className={labelClass} htmlFor="s-kanal">{t("filters.channel")}</label>
             <select
               id="s-kanal"
@@ -94,7 +101,7 @@ export default function MesajSablonlariManager() {
               ))}
             </select>
           </div>
-          <div className="min-w-40">
+          <div className="w-full sm:w-auto sm:min-w-40">
             <label className={labelClass} htmlFor="s-durum">{t("filters.status")}</label>
             <select
               id="s-durum"
@@ -108,8 +115,8 @@ export default function MesajSablonlariManager() {
               ))}
             </select>
           </div>
-          <div className="ms-auto">
-            <button type="button" className={primaryBtn} onClick={() => setEditTarget("new")}>
+          <div className="sm:ms-auto">
+            <button type="button" className={`${primaryBtn} w-full sm:w-auto`} onClick={() => setEditTarget("new")}>
               {t("newTemplate")}
             </button>
           </div>
@@ -131,7 +138,7 @@ export default function MesajSablonlariManager() {
             <table className="min-w-full">
               <thead className="border-b border-gray-100 dark:border-gray-800">
                 <tr>
-                  <th className={thClass}>{t("cols.name")}</th>
+                  <th className={TH_STICKY}>{t("cols.name")}</th>
                   <th className={thClass}>{t("cols.channel")}</th>
                   <th className={thClass}>{t("cols.subject")}</th>
                   <th className={thClass}>{t("cols.status")}</th>
@@ -146,7 +153,7 @@ export default function MesajSablonlariManager() {
                     : "draft";
                   return (
                     <tr key={s.id}>
-                      <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>{s.name}</td>
+                      <td className={`${TD_STICKY} font-medium text-gray-800 dark:text-white/90`}>{s.name}</td>
                       <td className={tdClass}>
                         {(CHANNELS as readonly string[]).includes(s.channel)
                           ? t(`channels.${s.channel as Channel}`)
@@ -160,7 +167,7 @@ export default function MesajSablonlariManager() {
                         {s.created_at ? formatDate(new Date(s.created_at)) : "-"}
                       </td>
                       <td className={`${tdClass} whitespace-nowrap text-end`}>
-                        <button type="button" className={linkBtn} onClick={() => setEditTarget(s)}>
+                        <button type="button" className={LINK_TOUCH} onClick={() => setEditTarget(s)}>
                           {t("edit")}
                         </button>
                       </td>
@@ -303,7 +310,7 @@ function TemplateModal({
           </select>
         </div>
         <ErrorNote message={err} />
-        <div className="flex justify-end gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
           <button type="button" className={outlineBtn} onClick={onClose}>
             {t("form.cancel")}
           </button>

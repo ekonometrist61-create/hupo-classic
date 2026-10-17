@@ -83,7 +83,7 @@ export default function KelimeGelisimKarti({ cocukId, cocukAd }: Props) {
           <p className="text-sm text-red-600 dark:text-red-400">{t("hata")}</p>
           <button
             type="button"
-            className="text-sm font-medium text-brand-600 hover:underline dark:text-brand-400"
+            className="inline-flex min-h-11 items-center text-sm font-medium text-brand-600 hover:underline dark:text-brand-400"
             onClick={() => {
               setLoading(true);
               setDenemeNo((n) => n + 1);
@@ -99,7 +99,7 @@ export default function KelimeGelisimKarti({ cocukId, cocukAd }: Props) {
 
       {!loading && !error && ozet && ozet.deneme_sayisi > 0 && (
         <div className="space-y-5">
-          <div className="grid grid-cols-2 gap-3 md:grid-cols-4">
+          <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4">
             <Metrik etiket={t("denemeSayisi")} deger={String(ozet.deneme_sayisi)} />
             <Metrik etiket={t("dogruOrani")} deger={ozet.dogru_orani === null ? "–" : `%${ozet.dogru_orani}`} />
             <Metrik etiket={t("ipucusuzDogru")} deger={ozet.ipucusuz_dogru_orani === null ? "–" : `%${ozet.ipucusuz_dogru_orani}`} />

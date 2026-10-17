@@ -34,15 +34,25 @@ export default function WeeklyStudyChart({ data }: { data: DailyStudy[] }) {
     fullLabel: `${formatDate(parseDay(d.gun))} ${parseDay(d.gun).toLocaleDateString(locale, { weekday: "long" })}`,
   }));
   const hasActivity = rows.some((r) => r.sure_dk > 0);
+  const toplamDk = rows.reduce((toplam, r) => toplam + r.sure_dk, 0);
+  const toplamSoru = rows.reduce((toplam, r) => toplam + Number(r.soru_sayisi), 0);
+  // Grafiğin metinsel karşılığı: ekran okuyucu ve görünür özet aynı cümleyi kullanır.
+  const ozet = t("ozet", { dk: Math.round(toplamDk), soru: toplamSoru });
 
   return (
-    <ChartCard title={t("title")} desc={t("desc")}>
+    <ChartCard title={t("title")} desc={t("desc")} kaynak={t("kaynak")}>
       {!hasActivity ? (
-        <p className="py-10 text-center text-sm text-gray-500 dark:text-gray-400">
-          {t("empty")}
-        </p>
+        <div className="rounded-xl bg-gray-50 px-4 py-8 text-center dark:bg-white/5">
+          <p className="text-sm font-medium text-gray-800 dark:text-white/90">
+            {t("empty")}
+          </p>
+          <p className="mt-1 text-theme-sm text-gray-500 dark:text-gray-400">
+            {t("emptyNot")}
+          </p>
+        </div>
       ) : (
-        <div className="h-72">
+        <>
+        <div role="img" aria-label={ozet} className="h-72">
           <ResponsiveContainer
             width="100%"
             height="100%"
@@ -99,7 +109,9 @@ export default function WeeklyStudyChart({ data }: { data: DailyStudy[] }) {
               />
             </BarChart>
           </ResponsiveContainer>
-        </div>
+          </div>
+          <p className="mt-3 text-theme-sm text-gray-600 dark:text-gray-300">{ozet}</p>
+        </>
       )}
     </ChartCard>
   );

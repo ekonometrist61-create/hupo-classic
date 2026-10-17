@@ -6,6 +6,8 @@ import { createContext, useContext, useEffect, useState } from "react";
 type SidebarContextType = {
   isExpanded: boolean;
   isMobileOpen: boolean;
+  /** xl (1280 px) ve üstü: sidebar her zaman görünür. Kapalı menü yalnızca bunun altında `inert` olur. */
+  isDesktop: boolean;
   isHovered: boolean;
   activeItem: string | null;
   openSubmenu: string | null;
@@ -32,6 +34,7 @@ export const SidebarProvider: React.FC<{ children: React.ReactNode }> = ({
   const [isExpanded, setIsExpanded] = useState(true);
   const [isMobileOpen, setIsMobileOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
+  const [isDesktop, setIsDesktop] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
   const [activeItem, setActiveItem] = useState<string | null>(null);
   const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
@@ -42,10 +45,13 @@ export const SidebarProvider: React.FC<{ children: React.ReactNode }> = ({
   }, [pathname]);
 
   useEffect(() => {
+    // xl kırılımı sidebar'ın sabit göründüğü eşik (AppSidebar/VeliSidebar: xl:translate-x-0).
+    const desktopQuery = window.matchMedia("(min-width: 1280px)");
     const handleResize = () => {
       const mobile = window.innerWidth < 768;
       setIsMobile(mobile);
-      if (!mobile) {
+      setIsDesktop(desktopQuery.matches);
+      if (desktopQuery.matches || !mobile) {
         setIsMobileOpen(false);
       }
     };
@@ -75,6 +81,7 @@ export const SidebarProvider: React.FC<{ children: React.ReactNode }> = ({
       value={{
         isExpanded: isMobile ? false : isExpanded,
         isMobileOpen,
+        isDesktop,
         isHovered,
         activeItem,
         openSubmenu,

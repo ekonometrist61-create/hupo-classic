@@ -11,6 +11,7 @@ import { formatDateTime } from "@/utils/format";
 import { cardClass, inputClass, labelClass, outlineBtn, primaryBtn, tdClass, thClass } from "../panel/styles";
 import Feedback from "../ui/Feedback";
 import RpcBoundary from "../ui/RpcBoundary";
+import { dokunmaHedefi, masaustuTablo, mobilKart, yapiskanBaslik, yapiskanHucre } from "../ui/responsive";
 import { adminCall, useAdminRpc } from "../useAdminRpc";
 import { DEMO_CAMPAIGNS, DEMO_SEGMENTS, DEMO_SETTINGS } from "./demoData";
 import type {
@@ -63,6 +64,27 @@ export default function CampaignsManager() {
     list.reload();
   };
 
+  /** Kampanya eylemleri: hem kart hem tablo görünümünde aynı düğmeler kullanılır. */
+  const campaignActions = (c: IletisimKampanya) => (
+    <>
+      {(c.durum === "taslak" || c.durum === "kontrol_edildi") && (
+        <>
+          <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setComposeFor(c)}>
+            {t("edit")}
+          </button>
+          <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setPreflightFor(c)}>
+            {t("preflight")}
+          </button>
+        </>
+      )}
+      {c.durum !== "iptal" && (
+        <button type="button" className={`${dokunmaHedefi} text-error-600 hover:text-error-700`} onClick={() => cancel(c)}>
+          {t("cancel")}
+        </button>
+      )}
+    </>
+  );
+
   return (
     <div className="space-y-6">
       <div className="rounded-2xl border border-warning-200 bg-warning-50 px-5 py-4 text-theme-sm text-warning-700 dark:border-warning-500/30 dark:bg-warning-500/10 dark:text-orange-400">
@@ -84,7 +106,7 @@ export default function CampaignsManager() {
         <section className={`${cardClass} p-5 sm:p-6`}>
           <div className="flex items-start justify-between gap-3">
             <h2 className="text-lg font-semibold text-navy dark:text-white/90">{t("policyTitle")}</h2>
-            <Link href="/yonetim/kanal-ayarlari" className="text-theme-xs font-medium text-brand-500 hover:text-brand-600">
+            <Link href="/yonetim/kanal-ayarlari" className={`${dokunmaHedefi} text-theme-xs font-medium text-brand-500 hover:text-brand-600`}>
               {t("policyEdit")}
             </Link>
           </div>
@@ -112,52 +134,64 @@ export default function CampaignsManager() {
             rows.length === 0 ? (
               <p className="py-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("empty")}</p>
             ) : (
-              <div className="overflow-x-auto">
-                <table className="min-w-full">
-                  <thead>
-                    <tr>
-                      <th className={thClass}>{t("cols.name")}</th>
-                      <th className={thClass}>{t("cols.channel")}</th>
-                      <th className={thClass}>{t("cols.segment")}</th>
-                      <th className={thClass}>{t("cols.status")}</th>
-                      <th className={thClass}>{t("cols.time")}</th>
-                      <th className={thClass} />
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-                    {rows.map((c) => (
-                      <tr key={c.id}>
-                        <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>{c.ad}</td>
-                        <td className={tdClass}>{t(`channels.${c.kanal}`)}</td>
-                        <td className={tdClass}>{c.segment_ad}</td>
-                        <td className={tdClass}>
-                          <Badge size="sm" color={STATUS_COLOR[c.durum]}>{t(`status.${c.durum}`)}</Badge>
-                        </td>
-                        <td className={`${tdClass} whitespace-nowrap`}>{formatDateTime(c.planlanan_at)}</td>
-                        <td className={`${tdClass} whitespace-nowrap text-end`}>
-                          <span className="flex justify-end gap-3 text-theme-sm font-medium">
-                            {(c.durum === "taslak" || c.durum === "kontrol_edildi") && (
-                              <>
-                                <button type="button" className="text-brand-500 hover:text-brand-600" onClick={() => setComposeFor(c)}>
-                                  {t("edit")}
-                                </button>
-                                <button type="button" className="text-brand-500 hover:text-brand-600" onClick={() => setPreflightFor(c)}>
-                                  {t("preflight")}
-                                </button>
-                              </>
-                            )}
-                            {c.durum !== "iptal" && (
-                              <button type="button" className="text-error-600 hover:text-error-700" onClick={() => cancel(c)}>
-                                {t("cancel")}
-                              </button>
-                            )}
-                          </span>
-                        </td>
+              <>
+                {/* 768 px altı: kart görünümü (R4). Her kartta aynı eylemler, dokunma hedefi 44 px. */}
+                <ul className={mobilKart}>
+                  {rows.map((c) => (
+                    <li key={c.id} className={`${cardClass} p-4`}>
+                      <div className="flex items-start justify-between gap-3">
+                        <b className="min-w-0 text-theme-sm wrap-break-word text-gray-800 dark:text-white/90">{c.ad}</b>
+                        <Badge size="sm" color={STATUS_COLOR[c.durum]}>{t(`status.${c.durum}`)}</Badge>
+                      </div>
+                      <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-theme-xs">
+                        <dt className="text-gray-500 dark:text-gray-400">{t("cols.channel")}</dt>
+                        <dd>{t(`channels.${c.kanal}`)}</dd>
+                        <dt className="text-gray-500 dark:text-gray-400">{t("cols.segment")}</dt>
+                        <dd className="wrap-break-word">{c.segment_ad}</dd>
+                        <dt className="text-gray-500 dark:text-gray-400">{t("cols.time")}</dt>
+                        <dd>{formatDateTime(c.planlanan_at)}</dd>
+                      </dl>
+                      <div className="mt-2 flex flex-wrap gap-x-3 text-theme-sm font-medium">
+                        {campaignActions(c)}
+                      </div>
+                    </li>
+                  ))}
+                </ul>
+
+                {/* 768 px ve üzeri: tablo, kendi kapsayıcısında kayar; ilk sütun sabit. */}
+                <div className={masaustuTablo}>
+                  <table className="min-w-full">
+                    <thead>
+                      <tr>
+                        <th className={`${thClass} ${yapiskanBaslik}`}>{t("cols.name")}</th>
+                        <th className={thClass}>{t("cols.channel")}</th>
+                        <th className={thClass}>{t("cols.segment")}</th>
+                        <th className={thClass}>{t("cols.status")}</th>
+                        <th className={thClass}>{t("cols.time")}</th>
+                        <th className={thClass} />
                       </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+                    </thead>
+                    <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
+                      {rows.map((c) => (
+                        <tr key={c.id}>
+                          <td className={`${tdClass} ${yapiskanHucre} font-medium text-gray-800 dark:text-white/90`}>{c.ad}</td>
+                          <td className={tdClass}>{t(`channels.${c.kanal}`)}</td>
+                          <td className={tdClass}>{c.segment_ad}</td>
+                          <td className={tdClass}>
+                            <Badge size="sm" color={STATUS_COLOR[c.durum]}>{t(`status.${c.durum}`)}</Badge>
+                          </td>
+                          <td className={`${tdClass} whitespace-nowrap`}>{formatDateTime(c.planlanan_at)}</td>
+                          <td className={`${tdClass} whitespace-nowrap text-end`}>
+                            <span className="flex justify-end gap-3 text-theme-sm font-medium">
+                              {campaignActions(c)}
+                            </span>
+                          </td>
+                        </tr>
+                      ))}
+                    </tbody>
+                  </table>
+                </div>
+              </>
             )
           }
         </RpcBoundary>
@@ -232,7 +266,7 @@ function Compose({
         {initial ? t("editTitle") : t("newTitle")}
       </h3>
       <div className="grid gap-6 md:grid-cols-[1.25fr_1fr]">
-        <div className="space-y-4">
+        <div className="min-w-0 space-y-4">
           <div>
             <label className={labelClass} htmlFor="c-ad">{t("form.name")}</label>
             <input id="c-ad" className={inputClass} value={ad} maxLength={80} onChange={(e) => setAd(e.target.value)} />

@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 
+import DesktopOnly from "@/components/ui/DesktopOnly";
 import { createClient } from "@/utils/supabase/client";
 import ErrorNote from "./ErrorNote";
 import {
@@ -14,6 +15,12 @@ import {
   tdClass,
   thClass,
 } from "./styles";
+
+// Dokunma hedefi en az 44 px; tablo ilk sütunu yatay kaydırmada sabit kalır (TASKS §20).
+const LINK_TOUCH = `${linkBtn} inline-flex min-h-11 items-center`;
+const TH_STICKY =
+  "sticky start-0 z-10 bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase dark:bg-gray-900 dark:text-gray-400";
+const TD_STICKY = `${tdClass} sticky start-0 z-10 bg-white dark:bg-gray-900`;
 
 export interface PlanTipi {
   kod: string;
@@ -60,6 +67,7 @@ const EMPTY: FormState = {
 const satirlar = (metin: string) =>
   metin.split("\n").map((s) => s.trim()).filter(Boolean);
 
+/** Paket tipi oluşturma ve düzenleme masaüstüne özeldir (TASKS §20, K3); listeleme telefonda açıktır. */
 export default function PlanTipiManager({
   tipler,
   onChanged,
@@ -131,9 +139,11 @@ export default function PlanTipiManager({
     <section className={`${cardClass} p-5 sm:p-6`}>
       <div className="mb-2 flex flex-wrap items-center justify-between gap-3">
         <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">Paket tipleri</h3>
-        <button type="button" className={outlineBtn} onClick={openNew}>
-          Yeni tip
-        </button>
+        <DesktopOnly>
+          <button type="button" className={outlineBtn} onClick={openNew}>
+            Yeni tip
+          </button>
+        </DesktopOnly>
       </div>
       <p className="mb-4 text-sm text-gray-500 dark:text-gray-400">
         Her aktif tip, web sitesinde bir fiyat kolonu olur. Özellik listesi her satır bir madde olacak şekilde girilir.
@@ -147,24 +157,24 @@ export default function PlanTipiManager({
           <table className="min-w-full">
             <thead className="border-b border-gray-100 dark:border-gray-800">
               <tr>
-                <th className={thClass}>Kod</th>
+                <th className={TH_STICKY}>Kod</th>
                 <th className={thClass}>Ad</th>
                 <th className={thClass}>Sıra</th>
                 <th className={thClass}>Vurgulu</th>
                 <th className={thClass}>Durum</th>
-                <th className={thClass} />
+                <th className={`${thClass} hidden md:table-cell`} />
               </tr>
             </thead>
             <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
               {tipler.map((t) => (
                 <tr key={t.kod}>
-                  <td className={`${tdClass} font-mono`}>{t.kod}</td>
+                  <td className={`${TD_STICKY} font-mono`}>{t.kod}</td>
                   <td className={tdClass}>{t.ad}</td>
                   <td className={tdClass}>{t.sira}</td>
                   <td className={tdClass}>{t.vurgulu ? "Evet" : "—"}</td>
                   <td className={tdClass}>{t.aktif ? "Aktif" : "Pasif"}</td>
-                  <td className={`${tdClass} text-end`}>
-                    <button type="button" className={linkBtn} onClick={() => openEdit(t)}>
+                  <td className={`${tdClass} hidden text-end md:table-cell`}>
+                    <button type="button" className={LINK_TOUCH} onClick={() => openEdit(t)}>
                       Düzenle
                     </button>
                   </td>
@@ -176,69 +186,71 @@ export default function PlanTipiManager({
       )}
 
       {form && (
-        <form onSubmit={submit} className="mt-6 space-y-4 rounded-xl border border-gray-200 p-4 dark:border-gray-800">
-          <h4 className="text-sm font-semibold text-gray-800 dark:text-white/90">
-            {editing ? "Tipi düzenle" : "Yeni paket tipi"}
-          </h4>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
-              <label className={labelClass} htmlFor="tip-kod">Kod</label>
-              <input id="tip-kod" className={`${inputClass} font-mono`} value={form.kod} disabled={editing}
-                maxLength={30} onChange={(e) => set("kod", e.target.value)} />
+        <DesktopOnly>
+          <form onSubmit={submit} className="mt-6 space-y-4 rounded-xl border border-gray-200 p-4 dark:border-gray-800">
+            <h4 className="text-sm font-semibold text-gray-800 dark:text-white/90">
+              {editing ? "Tipi düzenle" : "Yeni paket tipi"}
+            </h4>
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+              <div>
+                <label className={labelClass} htmlFor="tip-kod">Kod</label>
+                <input id="tip-kod" className={`${inputClass} font-mono`} value={form.kod} disabled={editing}
+                  maxLength={30} onChange={(e) => set("kod", e.target.value)} />
+              </div>
+              <div>
+                <label className={labelClass} htmlFor="tip-ad">Ad (TR)</label>
+                <input id="tip-ad" className={inputClass} value={form.ad} onChange={(e) => set("ad", e.target.value)} />
+              </div>
+              <div>
+                <label className={labelClass} htmlFor="tip-ad-en">Ad (EN, boşsa TR)</label>
+                <input id="tip-ad-en" className={inputClass} value={form.ad_en} onChange={(e) => set("ad_en", e.target.value)} />
+              </div>
+              <div>
+                <label className={labelClass} htmlFor="tip-sira">Sıra</label>
+                <input id="tip-sira" className={inputClass} inputMode="numeric" value={form.sira}
+                  onChange={(e) => set("sira", e.target.value)} />
+              </div>
+              <div>
+                <label className={labelClass} htmlFor="tip-cta">Buton metni (TR)</label>
+                <input id="tip-cta" className={inputClass} value={form.cta_metni} onChange={(e) => set("cta_metni", e.target.value)} />
+              </div>
+              <div>
+                <label className={labelClass} htmlFor="tip-cta-en">Buton metni (EN, boşsa TR)</label>
+                <input id="tip-cta-en" className={inputClass} value={form.cta_en} onChange={(e) => set("cta_en", e.target.value)} />
+              </div>
             </div>
             <div>
-              <label className={labelClass} htmlFor="tip-ad">Ad (TR)</label>
-              <input id="tip-ad" className={inputClass} value={form.ad} onChange={(e) => set("ad", e.target.value)} />
+              <label className={labelClass} htmlFor="tip-ozellik">Özellikler (TR, her satır bir madde)</label>
+              <textarea id="tip-ozellik" rows={5} className={`${inputClass} h-auto`} value={form.ozellikler}
+                onChange={(e) => set("ozellikler", e.target.value)} />
             </div>
             <div>
-              <label className={labelClass} htmlFor="tip-ad-en">Ad (EN, boşsa TR)</label>
-              <input id="tip-ad-en" className={inputClass} value={form.ad_en} onChange={(e) => set("ad_en", e.target.value)} />
+              <label className={labelClass} htmlFor="tip-ozellik-en">Özellikler (EN, her satır bir madde)</label>
+              <textarea id="tip-ozellik-en" rows={5} className={`${inputClass} h-auto`} value={form.ozellikler_en}
+                onChange={(e) => set("ozellikler_en", e.target.value)} />
             </div>
             <div>
-              <label className={labelClass} htmlFor="tip-sira">Sıra</label>
-              <input id="tip-sira" className={inputClass} inputMode="numeric" value={form.sira}
-                onChange={(e) => set("sira", e.target.value)} />
+              <label className={labelClass} htmlFor="tip-aciklama">Açıklama (iç not)</label>
+              <textarea id="tip-aciklama" rows={2} className={`${inputClass} h-auto`} value={form.aciklama}
+                onChange={(e) => set("aciklama", e.target.value)} />
             </div>
-            <div>
-              <label className={labelClass} htmlFor="tip-cta">Buton metni (TR)</label>
-              <input id="tip-cta" className={inputClass} value={form.cta_metni} onChange={(e) => set("cta_metni", e.target.value)} />
+            <div className="flex flex-wrap gap-6">
+              <label className="flex min-h-11 items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                <input type="checkbox" checked={form.vurgulu} onChange={(e) => set("vurgulu", e.target.checked)} />
+                Vurgulu (en çok tercih edilen rozeti)
+              </label>
+              <label className="flex min-h-11 items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                <input type="checkbox" checked={form.aktif} onChange={(e) => set("aktif", e.target.checked)} />
+                Aktif (sitede göster)
+              </label>
             </div>
-            <div>
-              <label className={labelClass} htmlFor="tip-cta-en">Buton metni (EN, boşsa TR)</label>
-              <input id="tip-cta-en" className={inputClass} value={form.cta_en} onChange={(e) => set("cta_en", e.target.value)} />
+            <ErrorNote message={error} />
+            <div className="flex justify-end gap-3">
+              <button type="button" className={outlineBtn} onClick={() => setForm(null)}>Vazgeç</button>
+              <button type="submit" className={primaryBtn} disabled={saving}>{saving ? "Kaydediliyor..." : "Kaydet"}</button>
             </div>
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="tip-ozellik">Özellikler (TR, her satır bir madde)</label>
-            <textarea id="tip-ozellik" rows={5} className={`${inputClass} h-auto`} value={form.ozellikler}
-              onChange={(e) => set("ozellikler", e.target.value)} />
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="tip-ozellik-en">Özellikler (EN, her satır bir madde)</label>
-            <textarea id="tip-ozellik-en" rows={5} className={`${inputClass} h-auto`} value={form.ozellikler_en}
-              onChange={(e) => set("ozellikler_en", e.target.value)} />
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="tip-aciklama">Açıklama (iç not)</label>
-            <textarea id="tip-aciklama" rows={2} className={`${inputClass} h-auto`} value={form.aciklama}
-              onChange={(e) => set("aciklama", e.target.value)} />
-          </div>
-          <div className="flex flex-wrap gap-6">
-            <label className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-              <input type="checkbox" checked={form.vurgulu} onChange={(e) => set("vurgulu", e.target.checked)} />
-              Vurgulu (en çok tercih edilen rozeti)
-            </label>
-            <label className="flex items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
-              <input type="checkbox" checked={form.aktif} onChange={(e) => set("aktif", e.target.checked)} />
-              Aktif (sitede göster)
-            </label>
-          </div>
-          <ErrorNote message={error} />
-          <div className="flex justify-end gap-3">
-            <button type="button" className={outlineBtn} onClick={() => setForm(null)}>Vazgeç</button>
-            <button type="submit" className={primaryBtn} disabled={saving}>{saving ? "Kaydediliyor..." : "Kaydet"}</button>
-          </div>
-        </form>
+          </form>
+        </DesktopOnly>
       )}
     </section>
   );

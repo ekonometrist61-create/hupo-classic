@@ -28,6 +28,7 @@ function formatTL(kurus: number) {
   });
 }
 
+// Ödeme geçmişi: 768 px altında kart listesi, md ve üzerinde tablo (R4).
 export default function OdemeGecmisi() {
   const t = useTranslations("veliPaneli.odeme");
   const [odemeler, setOdemeler] = useState<Odeme[] | null>(null);
@@ -57,14 +58,21 @@ export default function OdemeGecmisi() {
     return () => { cancelled = true; };
   }, []);
 
+  const tarihMetni = (iso: string) =>
+    new Date(iso).toLocaleDateString("tr-TR", {
+      day: "2-digit",
+      month: "short",
+      year: "numeric",
+    });
+
   return (
-    <div className="rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 dark:border-gray-800 dark:bg-white/3">
+    <div className="min-w-0 rounded-2xl border border-gray-200 bg-white p-5 sm:p-6 dark:border-gray-800 dark:bg-white/3">
       <h3 className="mb-4 text-lg font-semibold text-gray-800 dark:text-white/90">
         {t("title")}
       </h3>
 
       {odemeler === null && !hata && (
-        <p className="text-sm text-gray-500 dark:text-gray-400">Yükleniyor...</p>
+        <p className="text-sm text-gray-500 dark:text-gray-400">{t("loading")}</p>
       )}
 
       {hata && (
@@ -76,44 +84,63 @@ export default function OdemeGecmisi() {
       )}
 
       {odemeler && odemeler.length > 0 && (
-        <div className="overflow-x-auto">
-          <table className="min-w-full text-sm">
-            <thead className="border-b border-gray-100 dark:border-gray-800">
-              <tr>
-                <th className="pb-2 pr-4 text-left text-xs font-medium uppercase text-gray-500 dark:text-gray-400">
-                  {t("tarih")}
-                </th>
-                <th className="pb-2 pr-4 text-left text-xs font-medium uppercase text-gray-500 dark:text-gray-400">
-                  {t("tutar")}
-                </th>
-                <th className="pb-2 text-left text-xs font-medium uppercase text-gray-500 dark:text-gray-400">
-                  Durum
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-              {odemeler.map((o) => (
-                <tr key={o.id}>
-                  <td className="py-2.5 pr-4 text-gray-700 dark:text-gray-300 whitespace-nowrap">
-                    {new Date(o.created_at).toLocaleDateString("tr-TR", {
-                      day: "2-digit",
-                      month: "short",
-                      year: "numeric",
-                    })}
-                  </td>
-                  <td className="py-2.5 pr-4 font-medium text-gray-800 dark:text-white/90 whitespace-nowrap">
+        <>
+          <ul className="space-y-3 md:hidden">
+            {odemeler.map((o) => (
+              <li
+                key={o.id}
+                className="flex items-center justify-between gap-3 rounded-xl border border-gray-100 p-4 dark:border-gray-800"
+              >
+                <div className="min-w-0">
+                  <p className="text-sm font-semibold text-gray-800 dark:text-white/90">
                     {formatTL(o.tutar_kurus)}
-                  </td>
-                  <td className="py-2.5">
-                    <Badge size="sm" color={DURUM_RENK[o.durum] ?? "warning"}>
-                      {t(`durum.${o.durum}` as Parameters<typeof t>[0])}
-                    </Badge>
-                  </td>
+                  </p>
+                  <p className="mt-0.5 text-xs text-gray-500 dark:text-gray-400">
+                    {tarihMetni(o.created_at)}
+                  </p>
+                </div>
+                <Badge size="sm" color={DURUM_RENK[o.durum] ?? "warning"}>
+                  {t(`durum.${o.durum}` as Parameters<typeof t>[0])}
+                </Badge>
+              </li>
+            ))}
+          </ul>
+
+          <div className="hidden overflow-x-auto md:block">
+            <table className="min-w-full text-sm">
+              <thead className="border-b border-gray-100 dark:border-gray-800">
+                <tr>
+                  <th scope="col" className="pb-2 pr-4 text-left text-xs font-medium uppercase text-gray-500 dark:text-gray-400">
+                    {t("tarih")}
+                  </th>
+                  <th scope="col" className="pb-2 pr-4 text-left text-xs font-medium uppercase text-gray-500 dark:text-gray-400">
+                    {t("tutar")}
+                  </th>
+                  <th scope="col" className="pb-2 text-left text-xs font-medium uppercase text-gray-500 dark:text-gray-400">
+                    {t("durumBaslik")}
+                  </th>
                 </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
+              </thead>
+              <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
+                {odemeler.map((o) => (
+                  <tr key={o.id}>
+                    <td className="py-2.5 pr-4 whitespace-nowrap text-gray-700 dark:text-gray-300">
+                      {tarihMetni(o.created_at)}
+                    </td>
+                    <td className="py-2.5 pr-4 font-medium whitespace-nowrap text-gray-800 dark:text-white/90">
+                      {formatTL(o.tutar_kurus)}
+                    </td>
+                    <td className="py-2.5">
+                      <Badge size="sm" color={DURUM_RENK[o.durum] ?? "warning"}>
+                        {t(`durum.${o.durum}` as Parameters<typeof t>[0])}
+                      </Badge>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </>
       )}
     </div>
   );

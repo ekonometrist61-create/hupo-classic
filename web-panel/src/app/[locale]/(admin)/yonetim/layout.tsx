@@ -1,8 +1,9 @@
 import { redirect } from "@/i18n/navigation";
+import { RolKapisi } from "@/layout/RoleGuard";
 import { DEMO_MODE } from "@/lib/demo-mode";
 import { createClient } from "@/utils/supabase/server";
 
-// Yönetim bölümü yalnızca admin rolüne açıktır. (Asıl yetki veritabanında da zorunludur:
+// Yönetim bölümü admin ve öğretmen rollerine açıktır. (Asıl yetki veritabanında da zorunludur:
 // tüm admin fonksiyonları rolü kendileri doğrular; bu kontrol yalnızca yanlış kişiyi yönlendirir.)
 export default async function YonetimLayout({
   children,
@@ -15,7 +16,8 @@ export default async function YonetimLayout({
 
   // Yerel gelistirmede paneli oturum olmadan gormek icin.
   // Uretimde bu bayrak her zaman false olur (bkz. src/lib/demo-mode.ts).
-  if (DEMO_MODE) return <>{children}</>;
+  // RolKapisi, rol çözülene kadar içeriği gizler (istemci tarafı flaşını önler).
+  if (DEMO_MODE) return <RolKapisi>{children}</RolKapisi>;
 
   const supabase = await createClient();
   const {
@@ -26,11 +28,11 @@ export default async function YonetimLayout({
     ? await supabase.from("profiles").select("role").eq("id", user.id).maybeSingle()
     : { data: null };
 
-  // Öğretmen yalnızca /yonetim/siniflar'ı kullanır; diğer sayfalardan istemci tarafındaki
-  // RoleGuard onu oraya döndürür, veri erişimi ise veritabanında rol kontrolüyle kapalıdır.
+  // Öğretmen yalnızca /yonetim/siniflar'ı kullanır; diğer sayfalardan RolKapisi onu oraya yönlendirir,
+  // veri erişimi ise veritabanında rol kontrolüyle kapalıdır.
   if (profile?.role !== "admin" && profile?.role !== "ogretmen") {
     redirect({ href: "/yonetim-giris", locale });
   }
 
-  return <>{children}</>;
+  return <RolKapisi>{children}</RolKapisi>;
 }

@@ -104,6 +104,9 @@ function AchievementsContent({
         ))}
       </div>
 
+      {/* K4: XP ve seviye ana ekrandan çıkıp buraya taşındı; oyun ilerlemesi olarak açıklanır. */}
+      <p className="text-theme-xs text-gray-500 dark:text-gray-400">{tb("xpNote")}</p>
+
       <ChartCard
         title={tb("title")}
         desc={

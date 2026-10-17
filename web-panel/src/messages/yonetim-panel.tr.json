@@ -6,6 +6,10 @@
       "tagline": "Birlikte öğrenmeyi büyütüyoruz.",
       "soon": "Yakında",
       "workspaceCrumb": "Çalışma alanı",
+      "desktopOnly": "Bu işlem bilgisayardan yapılır.",
+      "closeModal": "Kapat",
+      "openSearch": "Ekranlarda ara",
+      "moreActions": "Diğer işlemler",
       "groups": {
         "workspace": "Çalışma alanı",
         "content": "İçerik",
@@ -347,6 +351,104 @@
         }
       }
     },
+    "sayfalar": {
+      "denemeler": {
+        "title": "Denemeler",
+        "desc": "Velilere deneme süresi aç, aktif denemeleri izle ve bitir",
+        "demo": "Demo modunda işlem yapılamaz.",
+        "invalidDays": "Deneme süresi boş bırakılabilir veya 1-90 gün olmalı.",
+        "started": "{name} için deneme başlatıldı.",
+        "confirmEnd": "{name} için deneme hemen bitirilsin mi?",
+        "ended": "Deneme bitirildi.",
+        "fallbackParent": "Veli",
+        "fallbackThisParent": "Bu veli",
+        "searchTitle": "Veli bul ve deneme aç",
+        "searchLabel": "Ad, kullanıcı adı veya e-posta",
+        "dayLabel": "Gün (boş = ayar)",
+        "search": "Ara",
+        "searching": "Aranıyor…",
+        "noParent": "Veli bulunamadı.",
+        "trialActive": "Deneme aktif",
+        "startTrial": "Denemeyi başlat",
+        "active": "Aktif",
+        "end": "Bitir",
+        "activeTitle": "Aktif denemeler",
+        "loading": "Yükleniyor…",
+        "noActive": "Aktif deneme yok.",
+        "cols": { "parent": "Veli", "email": "E-posta", "status": "Durum", "end": "Bitiş", "remaining": "Kalan gün" }
+      },
+      "rozetler": {
+        "title": "Rozetler",
+        "error": "Rozet verileri yüklenirken hata oluştu: {message}",
+        "empty": "Kayıt bulunamadı.",
+        "cols": { "kod": "Kod", "ad": "Ad", "aciklama": "Açıklama", "ikon": "İkon", "kosul": "Koşul Türü", "esik": "Eşik", "ders": "Ders" }
+      },
+      "gorevler": {
+        "title": "Görevler",
+        "error": "Görev verileri yüklenirken hata oluştu: {message}",
+        "empty": "Kayıt bulunamadı.",
+        "yes": "Evet",
+        "no": "Hayır",
+        "cols": { "kod": "Kod", "baslik": "Başlık", "aciklama": "Açıklama", "hedefTipi": "Hedef Tipi", "hedefDeger": "Hedef Miktar", "xp": "XP Ödülü", "aktif": "Aktif" }
+      },
+      "ligler": {
+        "title": "Lig Basamakları",
+        "error": "Lig verileri yüklenirken hata oluştu: {message}",
+        "empty": "Kayıt bulunamadı.",
+        "cols": { "kod": "Kod", "ad": "Ad", "sira": "Sıra", "yukselme": "Yükselme XP", "renk": "Renk", "ikon": "İkon" }
+      },
+      "karakterler": {
+        "title": "Karakter Katalogu",
+        "count": "{n} karakter",
+        "error": "Karakter verileri yüklenemedi: {message}",
+        "empty": "Henüz karakter tanımı yok.",
+        "active": "Aktif",
+        "locked": "Kilitli",
+        "kosul": { "baslangic": "Başlangıç", "soru_sayisi": "Soru sayısı", "seri": "Günlük seri", "ders_basarisi": "Ders başarısı", "lig": "Lig sırası" },
+        "cols": { "karakter": "Karakter", "kod": "Kod", "sinif": "Sınıf", "sira": "Sıra", "kosul": "Koşul", "kazanan": "Kazanan", "durum": "Durum" }
+      }
+    },
+    "ayarlar": {
+      "title": "Uygulama Ayarları",
+      "desc": "Bakım modu, minimum sürüm ve özellik anahtarları",
+      "loading": "Yükleniyor…",
+      "saving": "Kaydediliyor…",
+      "save": "Kaydet",
+      "saved": "Ayarlar başarıyla kaydedildi.",
+      "demo": "Demo modunda değişiklik yapılamaz.",
+      "on": "Açık",
+      "off": "Kapalı",
+      "maintenanceApp": "Bakım: Mobil uygulama",
+      "maintenanceAppDesc": "Mobil uygulama ve öğrenci web uygulaması bakım ekranı gösterir",
+      "maintenanceSite": "Bakım: Web sitesi",
+      "maintenanceSiteDesc": "hupolingo.com genel sayfaları (landing, demo) bakıma alınır",
+      "maintenanceParent": "Bakım: Veli paneli",
+      "maintenanceParentDesc": "/veli-paneli giriş ve kayıt dahil kapatılır",
+      "maintenanceAdmin": "Bakım: Yönetim paneli",
+      "maintenanceAdminDesc": "Yöneticiler yine girebilir; diğer kullanıcılar bakım ekranını görür",
+      "minVersion": "Minimum Sürüm",
+      "minVersionDesc": "Android zorunlu güncelleme eşiği, ör. 1.5.0",
+      "ads": "Reklamlar",
+      "adsDesc": "Öğrenci ve veli panelinde reklam gösterimi",
+      "premium": "Premium Kısıtlama",
+      "premiumDesc": "Ücretsiz günlük soru limitini etkinleştirir",
+      "grades": "Desteklenen Sınıflar",
+      "gradesDesc": "Virgülle ayrılmış sınıf numaraları, ör. 3,4,5,6,7",
+      "trialDays": "Deneme Süresi (gün)",
+      "trialDaysDesc": "Denemeyi başlatırken varsayılan süre. Planlar ve fiyatlar Planlar ekranından yönetilir.",
+      "trialDaysValue": "{n} gün",
+      "trialQuota": "Deneme Günlük Soru Kotası",
+      "trialQuotaDesc": "Deneme sürerken ve kota dolduğunda, kullanıcının her gün çözebileceği soru sayısı",
+      "examDate": "Türkiye Geneli Deneme Tarihi",
+      "examDateDesc": "Ana sayfadaki geri sayımın hedefi (Türkiye saati, UTC+3)",
+      "examDateEmpty": "Ayarlanmadı",
+      "validation": {
+        "grades": "Desteklenen sınıflar boş olamaz (ör. 3,4,5,6,7).",
+        "trialDays": "Deneme süresi 1-90 gün arasında tam sayı olmalı.",
+        "trialQuota": "Deneme günlük soru kotası 0-9999 arasında tam sayı olmalı.",
+        "examDate": "Deneme sınavı tarihi geçerli değil."
+      }
+    },
     "kullanicilar": {
       "title": "Üyeler & aileler",
       "loading": "Yükleniyor...",
@@ -400,6 +502,32 @@
         "confirm": "Bağı kaldır",
         "cancel": "Vazgeç",
         "saving": "Kaydediliyor..."
+      }
+    },
+    "potansiyelAdaylar": {
+      "search": "Ara",
+      "searchPlaceholder": "Ad, e-posta veya telefon",
+      "status": "Durum",
+      "allStatuses": "Tüm durumlar",
+      "kind": "Tür",
+      "allKinds": "Tüm türler",
+      "minScore": "Minimum skor",
+      "newCandidate": "Yeni aday ekle",
+      "loading": "Yükleniyor...",
+      "retry": "Tekrar dene",
+      "empty": "Kayıt bulunamadı.",
+      "pager": {
+        "prev": "Önceki",
+        "next": "Sonraki"
+      },
+      "cols": {
+        "name": "Ad Soyad",
+        "email": "E-posta",
+        "kind": "Tür",
+        "status": "Durum",
+        "score": "Toplam Skor",
+        "source": "Kaynak",
+        "created": "Oluşturma Tarihi"
       }
     },
     "veliAdaylari": {
@@ -871,6 +999,209 @@
         "prev": "Önceki",
         "next": "Sonraki"
       }
+    },
+    "kuponlar": {
+      "tabs": {
+        "kuponlar": "Kuponlar",
+        "kampanyalar": "Kampanyalar"
+      },
+      "newCoupon": "+ Yeni Kupon",
+      "newCampaign": "+ Yeni Kampanya",
+      "searchPlaceholder": "Kod ile ara...",
+      "filterLabel": "Kupon durumu",
+      "filterAll": "Tümü",
+      "active": "Aktif",
+      "passive": "Pasif",
+      "loading": "Yükleniyor...",
+      "retry": "Tekrar dene",
+      "emptyCoupons": "Kupon bulunamadı.",
+      "emptyCampaigns": "Kampanya bulunamadı.",
+      "edit": "Düzenle",
+      "deactivate": "Pasifleştir",
+      "activate": "Aktifleştir",
+      "valueFree": "Ücretsiz",
+      "newMember": "Yeni üye",
+      "cols": {
+        "code": "Kod",
+        "typeValue": "Tür / Değer",
+        "usage": "Kullanım",
+        "end": "Bitiş",
+        "status": "Durum",
+        "actions": "İşlem"
+      },
+      "campaignCols": {
+        "name": "Ad",
+        "count": "Kupon sayısı",
+        "totalDiscount": "Toplam indirim"
+      },
+      "types": {
+        "yuzde": "Yüzde (%)",
+        "tutar": "Tutar (₺)",
+        "ucretsiz": "Ücretsiz"
+      },
+      "form": {
+        "createTitle": "Yeni Kupon",
+        "editTitle": "Kuponu Düzenle",
+        "code": "Kupon kodu",
+        "codeHint": "3-24 karakter, yalnızca A-Z, 0-9, -",
+        "type": "Tür",
+        "percent": "İndirim %",
+        "amount": "İndirim tutarı (kuruş)",
+        "amountHint": "Kuruş cinsinden (100 = 1 TL)",
+        "maxUsage": "Maks. kullanım (boş = sınırsız)",
+        "start": "Başlangıç",
+        "end": "Bitiş",
+        "active": "Aktif",
+        "newMembersOnly": "Yalnızca yeni üyeler",
+        "cancel": "Vazgeç",
+        "save": "Kaydet",
+        "saving": "Kaydediliyor...",
+        "errCode": "Kupon kodu zorunlu.",
+        "errValue": "Geçerli bir değer girin."
+      },
+      "campaignForm": {
+        "createTitle": "Yeni Kampanya",
+        "editTitle": "Kampanyayı Düzenle",
+        "name": "Ad",
+        "description": "Açıklama",
+        "errName": "Kampanya adı zorunlu."
+      },
+      "pager": {
+        "prevLabel": "Önceki sayfa",
+        "nextLabel": "Sonraki sayfa"
+      }
+    },
+    "duyurular": {
+      "title": "Duyurular",
+      "intro": "Yayındaki en yeni duyuru, seçtiğiniz mecralarda gösterilir. Süresi dolan veya pasif duyurular görünmez.",
+      "newAnnouncement": "+ Yeni Duyuru",
+      "notice": {
+        "updated": "Duyuru güncellendi.",
+        "created": "Duyuru oluşturuldu.",
+        "unpublished": "Duyuru yayından kaldırıldı.",
+        "published": "Duyuru yayına alındı.",
+        "archived": "Duyuru arşivlendi.",
+        "unarchived": "Duyuru arşivden çıkarıldı (pasif). Yayına almak için düzenleyin.",
+        "draftDeleted": "Taslak silindi."
+      },
+      "form": {
+        "title": "Başlık",
+        "titlePlaceholder": "Örn. Türkiye Geneli Deneme Sınavı kayıtları açıldı",
+        "text": "Metin",
+        "textPlaceholder": "Ziyaretçilere gösterilecek kısa metin...",
+        "endDate": "Bitiş tarihi (isteğe bağlı)",
+        "clear": "Temizle",
+        "endHint": "Boş bırakılırsa süresiz yayında kalır. Türkiye saati (UTC+3).",
+        "active": "Yayında (seçili mecralarda görünsün)",
+        "archivedLocked": "Arşivden çıkarılmadan yayına alınamaz.",
+        "surfacesLegend": "Yayın mecraları",
+        "surfacesHelp": "Duyuru yalnızca seçili mecralarda gösterilir.",
+        "surfacesRequired": "Kaydetmek için en az bir yayın mecrası seçin.",
+        "errTitle": "Başlık boş olamaz.",
+        "errText": "Metin boş olamaz.",
+        "errSurface": "En az bir yayın mecrası seçin.",
+        "errEndDate": "Bitiş tarihi geçerli değil.",
+        "publishConfirm": "Duyuru yayına alınacak ve seçtiğiniz mecralarda hemen görünecek. Devam edilsin mi?",
+        "save": "Kaydet",
+        "saving": "Kaydediliyor...",
+        "cancel": "Vazgeç"
+      },
+      "list": {
+        "active": "Aktif",
+        "archive": "Arşiv",
+        "help": "Yayınlanmış duyurular silinmez, arşivlenir. Yalnızca hiç yayınlanmamış taslaklar silinebilir.",
+        "loading": "Yükleniyor...",
+        "missingTable": "Duyuru tablosu veritabanında yok. 20261026000000_site_duyurulari migration’ı uygulanmalı.",
+        "retry": "Tekrar dene",
+        "empty": "Henüz duyuru yok.",
+        "noEnd": "Süresiz",
+        "deleteConfirm": "“{baslik}” taslağı silinecek. Bu işlem geri alınamaz."
+      },
+      "cols": {
+        "announcement": "Duyuru",
+        "status": "Durum",
+        "end": "Bitiş",
+        "updated": "Son güncelleme",
+        "actions": "İşlem"
+      },
+      "status": {
+        "yayinda": "Yayında",
+        "suresi_doldu": "Süresi doldu",
+        "pasif": "Pasif",
+        "arsivde": "Arşivde"
+      },
+      "actions": {
+        "edit": "Düzenle",
+        "unpublish": "Yayından kaldır",
+        "publish": "Yayına al",
+        "archive": "Arşivle",
+        "unarchive": "Arşivden çıkar",
+        "delete": "Sil"
+      }
+    },
+    "bildirimler": {
+      "sendTitle": "Bildirim Gönder",
+      "newNotification": "+ Yeni Bildirim",
+      "sentNotice": "Bildirim {count} kişiye gönderildi.",
+      "audience": {
+        "veli": "Tüm veliler",
+        "ogrenci": "Tüm öğrenciler",
+        "tumu": "Herkes (veli + öğrenci)"
+      },
+      "form": {
+        "audience": "Hedef Kitle",
+        "title": "Başlık",
+        "titlePlaceholder": "Duyuru başlığı",
+        "message": "Mesaj",
+        "messagePlaceholder": "Kullanıcılara gösterilecek mesaj...",
+        "cancel": "Vazgeç",
+        "send": "Gönder",
+        "sending": "Gönderiliyor...",
+        "errTitle": "Başlık boş olamaz.",
+        "errMessage": "Mesaj boş olamaz."
+      },
+      "listTitle": "Gönderilen Bildirimler",
+      "loading": "Yükleniyor...",
+      "retry": "Tekrar dene",
+      "empty": "Henüz bildirim gönderilmemiş.",
+      "cols": {
+        "titleMessage": "Başlık / Mesaj",
+        "recipient": "Alıcı",
+        "read": "Okundu",
+        "date": "Tarih"
+      },
+      "readStatus": {
+        "read": "Okundu",
+        "unread": "Okunmadı"
+      },
+      "pager": {
+        "prevLabel": "Önceki sayfa",
+        "nextLabel": "Sonraki sayfa"
+      }
+    },
+    "kimlikEslestirme": {
+      "loadError": "Adaylar yüklenemedi.",
+      "loading": "Yükleniyor...",
+      "empty": "Bekleyen birleştirme adayı yok. İyi!",
+      "countNote": "{count} bekleyen aday. Her satırda iki öğrenci aynı çocuk olabilir.",
+      "grade": "{sinif}. sınıf · @{username}",
+      "cols": {
+        "a": "Öğrenci A",
+        "b": "Öğrenci B",
+        "reason": "Sebep",
+        "confidence": "Güven",
+        "decision": "Karar"
+      },
+      "reasons": {
+        "same_name_grade": "Aynı ad + sınıf",
+        "same_household": "Aynı hane"
+      },
+      "mergeConfirm": "Bu iki öğrencinin deneme verileri tek hesapta toplanacak. Kaynak hesabın deneme kayıtları taşınır ve geri alınamaz. Devam edilsin mi?",
+      "mergeTitle": "Aynı kişi — deneme verilerini ana hesapta topla (ana hesap: daha önce oluşturulan)",
+      "merge": "Birleştir",
+      "distinct": "Farklı",
+      "skip": "Atla",
+      "dismissError": "Hata mesajını kapat"
     }
   }
 }

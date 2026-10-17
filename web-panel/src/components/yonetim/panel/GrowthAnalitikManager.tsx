@@ -39,6 +39,10 @@ const LIFECYCLE_BAR: Record<string, string> = {
 };
 const FALLBACK_BAR = "bg-gray-300 dark:bg-gray-600";
 
+// Tablo kendi kapsayıcısında kayar; ilk sütun kaydırmada sabit kalır.
+const ILK_SUTUN_SABIT =
+  "[&_tr>*:first-child]:sticky [&_tr>*:first-child]:inset-s-0 [&_tr>*:first-child]:z-1 [&_tr>*:first-child]:bg-white dark:[&_tr>*:first-child]:bg-gray-900";
+
 const fmt = (n: number) => n.toLocaleString("tr-TR");
 const pct = (a: number, b: number) => (b > 0 ? Math.round((a / b) * 100) : 0);
 
@@ -193,7 +197,7 @@ export default function GrowthAnalitikManager() {
               {kaynak.length === 0 ? (
                 <p className="py-6 text-center text-sm text-gray-500 dark:text-gray-400">{t("empty")}</p>
               ) : (
-                <div className="overflow-x-auto">
+                <div className={`overflow-x-auto ${ILK_SUTUN_SABIT}`}>
                   <table className="min-w-full">
                     <thead className="border-b border-gray-100 dark:border-gray-800">
                       <tr>

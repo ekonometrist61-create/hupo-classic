@@ -32,6 +32,12 @@ const STAGE_COLOR: Record<LeadStage, "primary" | "info" | "warning" | "success" 
   kapandi: "light",
 };
 
+// Dokunma hedefi en az 44 px; tablo ilk sütunu yatay kaydırmada sabit kalır (TASKS §20).
+const LINK_TOUCH = `${linkBtn} inline-flex min-h-11 items-center`;
+const TH_STICKY =
+  "sticky start-0 z-10 bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase dark:bg-gray-900 dark:text-gray-400";
+const TD_STICKY = `${tdClass} sticky start-0 z-10 bg-white dark:bg-gray-900`;
+
 export default function VeliAdaylariManager() {
   const t = useTranslations("yonetim.veliAdaylari");
   const [search, setSearch] = useState("");
@@ -82,8 +88,8 @@ export default function VeliAdaylariManager() {
   return (
     <div className="space-y-6">
       <section className={`${cardClass} p-5 sm:p-6`}>
-        <div className="mb-4 flex flex-wrap items-end gap-4">
-          <div className="min-w-60 flex-1">
+        <div className="mb-4 grid grid-cols-1 items-end gap-4 md:grid-cols-2 xl:grid-cols-[minmax(0,1fr)_14rem]">
+          <div className="min-w-0">
             <label className={labelClass} htmlFor="l-search">{t("search")}</label>
             <input
               id="l-search"
@@ -94,7 +100,7 @@ export default function VeliAdaylariManager() {
               onChange={(e) => { setSearch(e.target.value); setPage(0); setLoading(true); }}
             />
           </div>
-          <div className="min-w-40">
+          <div className="min-w-0">
             <label className={labelClass} htmlFor="l-stage">{t("stage")}</label>
             <select
               id="l-stage"
@@ -122,53 +128,103 @@ export default function VeliAdaylariManager() {
         ) : rows.length === 0 ? (
           <p className="py-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("empty")}</p>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="min-w-full">
-              <thead className="border-b border-gray-100 dark:border-gray-800">
-                <tr>
-                  <th className={thClass}>{t("cols.name")}</th>
-                  <th className={thClass}>{t("cols.email")}</th>
-                  <th className={thClass}>{t("cols.phone")}</th>
-                  <th className={thClass}>{t("cols.source")}</th>
-                  <th className={thClass}>{t("cols.stage")}</th>
-                  <th className={thClass}>{t("cols.consent")}</th>
-                  <th className={thClass}>{t("cols.created")}</th>
-                  <th className={thClass} />
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-                {rows.map((a) => (
-                  <tr key={a.id}>
-                    <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>{a.ad}</td>
-                    <td className={tdClass}>{a.email}</td>
-                    <td className={`${tdClass} whitespace-nowrap`}>{a.telefon ?? "-"}</td>
-                    <td className={tdClass}>{a.kaynak}</td>
-                    <td className={tdClass}>
-                      <Badge size="sm" color={STAGE_COLOR[a.asama] ?? "light"}>{t(`stages.${a.asama}`)}</Badge>
-                    </td>
-                    <td className={tdClass}>
-                      <Badge size="sm" color={a.pazarlama_izni ? "success" : "light"}>
-                        {a.pazarlama_izni ? t("consentYes") : t("consentNo")}
-                      </Badge>
-                    </td>
-                    <td className={`${tdClass} whitespace-nowrap`}>
-                      {a.created_at ? formatDate(new Date(a.created_at)) : "-"}
-                    </td>
-                    <td className={`${tdClass} whitespace-nowrap text-end`}>
-                      <span className="flex justify-end gap-3">
-                        <button type="button" className={linkBtn} onClick={() => setDetailTarget(a)}>
-                          {t("detail")}
-                        </button>
-                        <button type="button" className={linkBtn} onClick={() => setStageTarget(a)}>
-                          {t("changeStage")}
-                        </button>
-                      </span>
-                    </td>
+          <>
+            {/* Telefon (md altı): kart görünümü. */}
+            <ul className="space-y-3 md:hidden">
+              {rows.map((a) => (
+                <li key={a.id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <p className="wrap-break-word font-medium text-gray-800 dark:text-white/90">{a.ad}</p>
+                      <p className="break-all text-theme-xs text-gray-500 dark:text-gray-400">{a.email}</p>
+                    </div>
+                    <Badge size="sm" color={STAGE_COLOR[a.asama] ?? "light"}>{t(`stages.${a.asama}`)}</Badge>
+                  </div>
+                  <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 text-theme-sm">
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.phone")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">{a.telefon ?? "-"}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.source")}</dt>
+                      <dd className="wrap-break-word text-gray-800 dark:text-white/90">{a.kaynak}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.consent")}</dt>
+                      <dd>
+                        <Badge size="sm" color={a.pazarlama_izni ? "success" : "light"}>
+                          {a.pazarlama_izni ? t("consentYes") : t("consentNo")}
+                        </Badge>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.created")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">
+                        {a.created_at ? formatDate(new Date(a.created_at)) : "-"}
+                      </dd>
+                    </div>
+                  </dl>
+                  <div className="mt-4 flex flex-wrap gap-2">
+                    <button type="button" className={outlineBtn} onClick={() => setDetailTarget(a)}>
+                      {t("detail")}
+                    </button>
+                    <button type="button" className={outlineBtn} onClick={() => setStageTarget(a)}>
+                      {t("changeStage")}
+                    </button>
+                  </div>
+                </li>
+              ))}
+            </ul>
+
+            {/* Tablet ve masaüstü: tablo; yatay kaydırma kapsayıcıda kalır. */}
+            <div className="hidden overflow-x-auto md:block">
+              <table className="min-w-full">
+                <thead className="border-b border-gray-100 dark:border-gray-800">
+                  <tr>
+                    <th className={TH_STICKY}>{t("cols.name")}</th>
+                    <th className={thClass}>{t("cols.email")}</th>
+                    <th className={thClass}>{t("cols.phone")}</th>
+                    <th className={thClass}>{t("cols.source")}</th>
+                    <th className={thClass}>{t("cols.stage")}</th>
+                    <th className={thClass}>{t("cols.consent")}</th>
+                    <th className={thClass}>{t("cols.created")}</th>
+                    <th className={thClass} />
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
+                  {rows.map((a) => (
+                    <tr key={a.id}>
+                      <td className={`${TD_STICKY} font-medium text-gray-800 dark:text-white/90`}>{a.ad}</td>
+                      <td className={tdClass}>{a.email}</td>
+                      <td className={`${tdClass} whitespace-nowrap`}>{a.telefon ?? "-"}</td>
+                      <td className={tdClass}>{a.kaynak}</td>
+                      <td className={tdClass}>
+                        <Badge size="sm" color={STAGE_COLOR[a.asama] ?? "light"}>{t(`stages.${a.asama}`)}</Badge>
+                      </td>
+                      <td className={tdClass}>
+                        <Badge size="sm" color={a.pazarlama_izni ? "success" : "light"}>
+                          {a.pazarlama_izni ? t("consentYes") : t("consentNo")}
+                        </Badge>
+                      </td>
+                      <td className={`${tdClass} whitespace-nowrap`}>
+                        {a.created_at ? formatDate(new Date(a.created_at)) : "-"}
+                      </td>
+                      <td className={`${tdClass} whitespace-nowrap text-end`}>
+                        <span className="flex justify-end gap-3">
+                          <button type="button" className={LINK_TOUCH} onClick={() => setDetailTarget(a)}>
+                            {t("detail")}
+                          </button>
+                          <button type="button" className={LINK_TOUCH} onClick={() => setStageTarget(a)}>
+                            {t("changeStage")}
+                          </button>
+                        </span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
         )}
 
         {!loading && !error && total > 0 && (
@@ -287,15 +343,15 @@ function DetailModal({ lead, onClose }: { lead: VeliAday; onClose: () => void })
   return (
     <ModalShell isOpen onClose={onClose} title={t("detailModal.title")}>
       <div className="space-y-4">
-        <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-theme-sm">
+        <dl className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-2 text-theme-sm">
           <dt className="text-gray-500 dark:text-gray-400">{t("cols.name")}</dt>
-          <dd className="text-gray-800 dark:text-white/90">{lead.ad}</dd>
+          <dd className="wrap-break-word text-gray-800 dark:text-white/90">{lead.ad}</dd>
           <dt className="text-gray-500 dark:text-gray-400">{t("cols.email")}</dt>
-          <dd className="text-gray-800 dark:text-white/90">{lead.email}</dd>
+          <dd className="break-all text-gray-800 dark:text-white/90">{lead.email}</dd>
           <dt className="text-gray-500 dark:text-gray-400">{t("cols.phone")}</dt>
           <dd className="text-gray-800 dark:text-white/90">{lead.telefon ?? "-"}</dd>
           <dt className="text-gray-500 dark:text-gray-400">{t("cols.source")}</dt>
-          <dd className="text-gray-800 dark:text-white/90">{lead.kaynak}</dd>
+          <dd className="wrap-break-word text-gray-800 dark:text-white/90">{lead.kaynak}</dd>
           <dt className="text-gray-500 dark:text-gray-400">{t("cols.stage")}</dt>
           <dd><Badge size="sm" color={STAGE_COLOR[lead.asama] ?? "light"}>{t(`stages.${lead.asama}`)}</Badge></dd>
           <dt className="text-gray-500 dark:text-gray-400">{t("cols.consent")}</dt>
@@ -316,9 +372,9 @@ function DetailModal({ lead, onClose }: { lead: VeliAday; onClose: () => void })
           ) : (
             <ul className="space-y-2">
               {detay.olaylar.map((o, i) => (
-                <li key={i} className="flex items-center justify-between rounded-lg bg-gray-50 px-3 py-2 text-theme-xs dark:bg-white/5">
-                  <span className="font-mono text-gray-700 dark:text-gray-300">{o.tur}</span>
-                  <span className="text-gray-500 dark:text-gray-400">{formatDate(new Date(o.created_at))}</span>
+                <li key={i} className="flex items-center justify-between gap-3 rounded-lg bg-gray-50 px-3 py-2 text-theme-xs dark:bg-white/5">
+                  <span className="wrap-break-word font-mono text-gray-700 dark:text-gray-300">{o.tur}</span>
+                  <span className="shrink-0 text-gray-500 dark:text-gray-400">{formatDate(new Date(o.created_at))}</span>
                 </li>
               ))}
             </ul>

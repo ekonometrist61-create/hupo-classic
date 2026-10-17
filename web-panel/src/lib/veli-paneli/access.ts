@@ -5,11 +5,13 @@ import { createClient } from "@/utils/supabase/server";
 // Veli paneli sayfalarının erişim kararı (yalnızca sunucu tarafında çalışır).
 // - ok: veli oturumu; students bağlı çocuklar (çocuk yoksa boş dizi)
 // - admin: yönetici oturumu; çağıran sayfa yönetim paneline yönlendirir
-// - forbidden: oturum yok ya da veli rolünde değil
+// - ogretmen: öğretmen oturumu (K1); öğretmen veli panelinde kalmaz, sınıf sayfasına yönlendirilir
+// - forbidden: oturum yok ya da veli/yönetici/öğretmen rolünde değil
 // - error: çocuk listesi okunamadı
 export type VeliAccess =
   | { kind: "ok"; students: Student[] }
   | { kind: "admin" }
+  | { kind: "ogretmen" }
   | { kind: "forbidden" }
   | { kind: "error" };
 
@@ -47,6 +49,7 @@ export async function loadVeliAccess(): Promise<VeliAccess> {
     : { data: null };
 
   if (profile?.role === "admin") return { kind: "admin" };
+  if (profile?.role === "ogretmen") return { kind: "ogretmen" };
   if (!user || profile?.role !== "veli") return { kind: "forbidden" };
 
   const { data: students, error } = await supabase

@@ -2,6 +2,7 @@
 
 import { useSidebar } from "@/context/SidebarContext";
 import VeliSidebar from "@/layout/VeliSidebar";
+import VeliHeader from "@/layout/VeliHeader";
 import Backdrop from "@/layout/Backdrop";
 import AnketIstemi from "@/components/anket/AnketIstemi";
 import DuyuruBandi from "@/components/duyuru/DuyuruBandi";
@@ -14,24 +15,28 @@ export default function VeliPaneliLayout({
 }) {
   const { isExpanded, isHovered, isMobileOpen } = useSidebar();
 
+  // Sidebar xl (1280 px) altında gizli; içerik boşluğu da aynı kırılımda verilir (tablet daralmasını önler).
   const mainMargin = isMobileOpen
     ? "ml-0"
     : isExpanded || isHovered
-    ? "lg:ml-[290px]"
-    : "lg:ml-[90px]";
+    ? "xl:ml-[290px]"
+    : "xl:ml-[90px]";
 
   return (
     <div className="min-h-screen bg-[#f4f6f6] xl:flex dark:bg-gray-950">
       <VeliSidebar />
       <Backdrop />
-      <main
-        id="veli-icerik"
-        className={`flex-1 transition-all duration-300 ease-in-out ${mainMargin} mx-auto max-w-400 p-4 pb-10 md:p-6 xl:px-8 xl:pt-8`}
-      >
-        <DuyuruBandi yuzey="veli_paneli" />
-        <AnketIstemi yuzey="veli_paneli" />
-        {children}
-      </main>
+      <div className="min-w-0 flex-1">
+        <VeliHeader />
+        <main
+          id="veli-icerik"
+          className={`transition-all duration-300 ease-in-out ${mainMargin} mx-auto max-w-400 p-4 pb-10 md:p-6 xl:px-8 xl:pt-8`}
+        >
+          <DuyuruBandi yuzey="veli_paneli" />
+          <AnketIstemi yuzey="veli_paneli" />
+          {children}
+        </main>
+      </div>
     </div>
   );
 }

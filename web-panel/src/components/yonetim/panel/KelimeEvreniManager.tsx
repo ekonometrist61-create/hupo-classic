@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import { createClient } from "@/utils/supabase/client";
 import ErrorNote from "./ErrorNote";
 import KelimeSozlukPanel from "./KelimeSozlukPanel";
+import ModalShell from "./ModalShell";
 import { cardClass, inputClass, labelClass, linkBtn, outlineBtn, primaryBtn, tdClass, thClass } from "./styles";
 import { hataAnahtari, type AnlamSecenegi, type KelimeDurum, type KelimeIliskiTuru } from "./kelimeEvreni";
 
@@ -78,6 +79,13 @@ const BOS_FORM: SoruForm = {
   ipucu: "",
   aciklama: "",
 };
+
+// Satır eylemleri: dokunma hedefi en az 44 px.
+const EYLEM_BTN = `${linkBtn} inline-flex min-h-11 items-center disabled:opacity-50`;
+
+// Tablo kendi kapsayıcısında kayar; ilk sütun kaydırmada sabit kalır.
+const ILK_SUTUN_SABIT =
+  "[&_tr>*:first-child]:sticky [&_tr>*:first-child]:inset-s-0 [&_tr>*:first-child]:z-1 [&_tr>*:first-child]:bg-white dark:[&_tr>*:first-child]:bg-gray-900";
 
 export default function KelimeEvreniManager() {
   const t = useTranslations("yonetim.kelimeEvreni");
@@ -214,31 +222,31 @@ export default function KelimeEvreniManager() {
     reload();
   };
 
+  // Durum eylemleri: kart ve tabloda aynı düğmeler.
   const islemler = (s: KelimeSoruSatiri) => {
-    const btn = `${linkBtn} disabled:opacity-50`;
     const dis = islemde === s.id;
     switch (s.durum) {
       case "taslak":
         return (
           <>
-            <button type="button" className={btn} onClick={() => openEdit(s)} disabled={dis}>{t("actions.duzenle")}</button>
-            <button type="button" className={btn} onClick={() => durumDegistir(s, "incelemede")} disabled={dis}>{t("actions.incelemeye")}</button>
+            <button type="button" className={EYLEM_BTN} onClick={() => openEdit(s)} disabled={dis}>{t("actions.duzenle")}</button>
+            <button type="button" className={EYLEM_BTN} onClick={() => durumDegistir(s, "incelemede")} disabled={dis}>{t("actions.incelemeye")}</button>
           </>
         );
       case "incelemede":
         return (
           <>
-            <button type="button" className={btn} onClick={() => durumDegistir(s, "yayinda")} disabled={dis}>{t("actions.yayinla")}</button>
-            <button type="button" className={btn} onClick={() => durumDegistir(s, "taslak")} disabled={dis}>{t("actions.geriAl")}</button>
+            <button type="button" className={EYLEM_BTN} onClick={() => durumDegistir(s, "yayinda")} disabled={dis}>{t("actions.yayinla")}</button>
+            <button type="button" className={EYLEM_BTN} onClick={() => durumDegistir(s, "taslak")} disabled={dis}>{t("actions.geriAl")}</button>
           </>
         );
       case "yayinda":
         return (
-          <button type="button" className={btn} onClick={() => durumDegistir(s, "arsiv")} disabled={dis}>{t("actions.arsivle")}</button>
+          <button type="button" className={EYLEM_BTN} onClick={() => durumDegistir(s, "arsiv")} disabled={dis}>{t("actions.arsivle")}</button>
         );
       case "arsiv":
         return (
-          <button type="button" className={btn} onClick={() => durumDegistir(s, "taslak")} disabled={dis}>{t("actions.geriYukle")}</button>
+          <button type="button" className={EYLEM_BTN} onClick={() => durumDegistir(s, "taslak")} disabled={dis}>{t("actions.geriYukle")}</button>
         );
     }
   };
@@ -278,7 +286,7 @@ export default function KelimeEvreniManager() {
           <label className="text-sm text-gray-600 dark:text-gray-300" htmlFor="kelime-durum-filtre">{t("filtre")}</label>
           <select
             id="kelime-durum-filtre"
-            className={`${inputClass} max-w-xs`}
+            className={`${inputClass} w-full sm:w-auto sm:max-w-xs`}
             value={filtre}
             onChange={(e) => setFiltre(e.target.value as KelimeDurum | "")}
           >
@@ -299,48 +307,79 @@ export default function KelimeEvreniManager() {
         ) : satirlar.length === 0 ? (
           <p className="text-sm text-gray-500">{t("empty")}</p>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="w-full text-left text-sm">
-              <thead>
-                <tr>
-                  <th className={thClass}>{t("cols.kelime")}</th>
-                  <th className={thClass}>{t("cols.tur")}</th>
-                  <th className={thClass}>{t("cols.sinif")}</th>
-                  <th className={thClass}>{t("cols.soru")}</th>
-                  <th className={thClass}>{t("cols.durum")}</th>
-                  <th className={thClass}>{t("cols.islem")}</th>
-                </tr>
-              </thead>
-              <tbody>
-                {satirlar.map((s) => (
-                  <tr key={s.id}>
-                    <td className={tdClass}>
-                      <span className="font-medium text-gray-800 dark:text-white/90">{s.kelime}</span>
-                      <span className="block text-xs text-gray-500">{s.anlam}</span>
-                    </td>
-                    <td className={tdClass}>{t(`turler.${s.iliski_turu}`)}</td>
-                    <td className={tdClass}>{s.sinif}. {t("sinifKisa")}{s.kazanim_kodu ? ` · ${s.kazanim_kodu}` : ""}</td>
-                    <td className={`${tdClass} max-w-md`}>
-                      <span className="line-clamp-2">{s.soru_metni}</span>
-                    </td>
-                    <td className={tdClass}>{t(`durumlar.${s.durum}`)}</td>
-                    <td className={tdClass}>
-                      <div className="flex flex-wrap gap-3">{islemler(s)}</div>
-                    </td>
+          <>
+            {/* Telefon ve küçük tablet (md altı): kart görünümü */}
+            <ul className="space-y-3 md:hidden">
+              {satirlar.map((s) => (
+                <li key={s.id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
+                  <div className="flex flex-wrap items-start justify-between gap-2">
+                    <div className="min-w-0">
+                      <p className="font-medium wrap-break-word text-gray-800 dark:text-white/90">{s.kelime}</p>
+                      <p className="text-xs wrap-break-word text-gray-500 dark:text-gray-400">{s.anlam}</p>
+                    </div>
+                    <span className="text-theme-xs font-medium text-gray-600 dark:text-gray-300">{t(`durumlar.${s.durum}`)}</span>
+                  </div>
+                  <p className="mt-2 line-clamp-2 text-theme-sm text-gray-700 dark:text-gray-300">{s.soru_metni}</p>
+                  <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 text-theme-sm">
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.tur")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">{t(`turler.${s.iliski_turu}`)}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.sinif")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">
+                        {s.sinif}. {t("sinifKisa")}{s.kazanim_kodu ? ` · ${s.kazanim_kodu}` : ""}
+                      </dd>
+                    </div>
+                  </dl>
+                  <div className="mt-3 flex flex-wrap gap-x-4 gap-y-1 border-t border-gray-100 pt-2 dark:border-gray-800">
+                    {islemler(s)}
+                  </div>
+                </li>
+              ))}
+            </ul>
+
+            {/* Tablet ve masaüstü (md ve üzeri): tablo; kapsayıcısı kayar */}
+            <div className={`hidden overflow-x-auto md:block ${ILK_SUTUN_SABIT}`}>
+              <table className="min-w-full text-left text-sm">
+                <thead>
+                  <tr>
+                    <th className={thClass}>{t("cols.kelime")}</th>
+                    <th className={thClass}>{t("cols.tur")}</th>
+                    <th className={thClass}>{t("cols.sinif")}</th>
+                    <th className={thClass}>{t("cols.soru")}</th>
+                    <th className={thClass}>{t("cols.durum")}</th>
+                    <th className={thClass}>{t("cols.islem")}</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody>
+                  {satirlar.map((s) => (
+                    <tr key={s.id}>
+                      <td className={tdClass}>
+                        <span className="font-medium text-gray-800 dark:text-white/90">{s.kelime}</span>
+                        <span className="block text-xs text-gray-500">{s.anlam}</span>
+                      </td>
+                      <td className={tdClass}>{t(`turler.${s.iliski_turu}`)}</td>
+                      <td className={tdClass}>{s.sinif}. {t("sinifKisa")}{s.kazanim_kodu ? ` · ${s.kazanim_kodu}` : ""}</td>
+                      <td className={`${tdClass} max-w-md`}>
+                        <span className="line-clamp-2">{s.soru_metni}</span>
+                      </td>
+                      <td className={tdClass}>{t(`durumlar.${s.durum}`)}</td>
+                      <td className={tdClass}>
+                        <div className="flex flex-wrap gap-x-3 gap-y-1">{islemler(s)}</div>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
         )}
       </section>
 
       {form && (
-        <section className={`${cardClass} p-5 sm:p-6`}>
-          <h3 className="mb-4 text-lg font-semibold text-gray-800 dark:text-white/90">
-            {form.id ? t("form.duzenle") : t("form.yeni")}
-          </h3>
-          <form className="grid gap-4 md:grid-cols-2" onSubmit={submit}>
+        <ModalShell isOpen onClose={() => setForm(null)} title={form.id ? t("form.duzenle") : t("form.yeni")}>
+          <form className="grid gap-4 sm:grid-cols-2" onSubmit={submit}>
             <div>
               <label className={labelClass} htmlFor="kelime-anlam">{t("form.anlam")}</label>
               <select id="kelime-anlam" className={inputClass} value={form.anlamId} onChange={(e) => setAlan("anlamId", e.target.value)}>
@@ -378,12 +417,12 @@ export default function KelimeEvreniManager() {
               <label className={labelClass} htmlFor="kelime-kazanim">{t("form.kazanim")}</label>
               <input id="kelime-kazanim" className={inputClass} maxLength={40} value={form.kazanim} onChange={(e) => setAlan("kazanim", e.target.value)} />
             </div>
-            <div className="md:col-span-2">
+            <div className="sm:col-span-2">
               <label className={labelClass} htmlFor="kelime-soru">{t("form.soru")}</label>
-              <textarea id="kelime-soru" className={inputClass} rows={2} maxLength={400} value={form.soru} onChange={(e) => setAlan("soru", e.target.value)} />
+              <textarea id="kelime-soru" className={`${inputClass} h-auto py-2.5`} rows={2} maxLength={400} value={form.soru} onChange={(e) => setAlan("soru", e.target.value)} />
             </div>
 
-            <fieldset className="md:col-span-2">
+            <fieldset className="sm:col-span-2">
               <legend className={labelClass}>{t("form.secenekler")}</legend>
               <div className="space-y-2">
                 {form.secenekler.map((s, i) => (
@@ -391,18 +430,24 @@ export default function KelimeEvreniManager() {
                     <input
                       type="radio"
                       name="kelime-dogru"
+                      className="h-5 w-5 shrink-0"
                       aria-label={t("form.dogruSecenek", { no: i + 1 })}
                       checked={form.dogruIndeks === i}
                       onChange={() => setAlan("dogruIndeks", i)}
                     />
                     <input
-                      className={inputClass}
+                      className={`${inputClass} min-w-0 flex-1`}
                       maxLength={120}
                       aria-label={t("form.secenekNo", { no: i + 1 })}
                       value={s}
                       onChange={(e) => setSecenek(i, e.target.value)}
                     />
-                    <button type="button" className={linkBtn} onClick={() => secenekSil(i)} disabled={form.secenekler.length <= 2}>
+                    <button
+                      type="button"
+                      className={`${EYLEM_BTN} shrink-0`}
+                      onClick={() => secenekSil(i)}
+                      disabled={form.secenekler.length <= 2}
+                    >
                       {t("form.secenekSil")}
                     </button>
                   </div>
@@ -429,20 +474,20 @@ export default function KelimeEvreniManager() {
               <label className={labelClass} htmlFor="kelime-ipucu">{t("form.ipucu")}</label>
               <input id="kelime-ipucu" className={inputClass} maxLength={200} value={form.ipucu} onChange={(e) => setAlan("ipucu", e.target.value)} />
             </div>
-            <div className="md:col-span-2">
+            <div className="sm:col-span-2">
               <label className={labelClass} htmlFor="kelime-aciklama">{t("form.aciklama")}</label>
-              <textarea id="kelime-aciklama" className={inputClass} rows={2} maxLength={500} value={form.aciklama} onChange={(e) => setAlan("aciklama", e.target.value)} />
+              <textarea id="kelime-aciklama" className={`${inputClass} h-auto py-2.5`} rows={2} maxLength={500} value={form.aciklama} onChange={(e) => setAlan("aciklama", e.target.value)} />
             </div>
 
-            <div className="md:col-span-2">
+            <div className="sm:col-span-2">
               <ErrorNote message={formError} />
-              <div className="mt-2 flex gap-3">
+              <div className="mt-2 flex flex-col-reverse gap-3 sm:flex-row">
                 <button type="submit" className={primaryBtn} disabled={saving}>{saving ? t("form.kaydediliyor") : t("form.kaydet")}</button>
                 <button type="button" className={outlineBtn} onClick={() => setForm(null)}>{t("form.vazgec")}</button>
               </div>
             </div>
           </form>
-        </section>
+        </ModalShell>
       )}
 
       <KelimeSozlukPanel anlamlar={anlamlar} onDegisti={reload} />

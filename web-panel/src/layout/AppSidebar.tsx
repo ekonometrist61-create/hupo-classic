@@ -11,7 +11,7 @@ import { HorizontaLDots } from "../icons/index";
 import { navForRole } from "./adminNav";
 
 const AppSidebar: React.FC = () => {
-  const { isExpanded, isMobileOpen, isHovered, setIsHovered } = useSidebar();
+  const { isExpanded, isMobileOpen, isDesktop, isHovered, setIsHovered } = useSidebar();
   const pathname = usePathname();
   const t = useTranslations("yonetim.shell");
   const fetchedRole = useCurrentRole();
@@ -25,6 +25,7 @@ const AppSidebar: React.FC = () => {
 
   const wide = isExpanded || isHovered || isMobileOpen;
 
+  // inert: kapalı mobil menünün bağlantıları klavye ve ekran okuyucuya girmez.
   const isActive = (path: string) =>
     path === "/yonetim"
       ? pathname === path
@@ -32,7 +33,9 @@ const AppSidebar: React.FC = () => {
 
   return (
     <aside
+      id="kenar-menu"
       aria-label={t("brandSub")}
+      inert={!isDesktop && !isMobileOpen}
       className={cn(
         "fixed top-0 left-0 z-50 flex h-full flex-col bg-navy px-4 pt-7 pb-4 text-[#d2dce5] transition-all duration-300 ease-in-out xl:mt-0 rtl:right-0 rtl:left-auto",
         wide ? "w-72.5" : "w-22.5",
@@ -89,7 +92,7 @@ const AppSidebar: React.FC = () => {
               {group.items.map((item) => {
                 const label = t(`nav.${item.key}`);
                 const base =
-                  "group relative flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-theme-sm";
+                  "group relative flex min-h-11 w-full items-center gap-3 rounded-lg px-3 py-2.5 text-theme-sm";
                 const icon = (
                   <span className="size-5 shrink-0 [&>svg]:size-5">{item.icon}</span>
                 );

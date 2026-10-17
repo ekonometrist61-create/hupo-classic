@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
+import DesktopOnly from "@/components/ui/DesktopOnly";
 import { createClient } from "@/utils/supabase/client";
 import type { AdminUser, PaymentStatus, Plan } from "../types";
 import ErrorNote from "./ErrorNote";
@@ -25,6 +26,7 @@ interface Props {
   onSaved: () => void;
 }
 
+/** Elle ödeme kaydı masaüstüne özeldir (TASKS §20, K3): telefonda form gizlenir. */
 export default function PaymentFormModal({ isOpen, onClose, plans, onSaved }: Props) {
   const t = useTranslations("yonetim.odemeler.form");
   const tStatus = useTranslations("yonetim.odemeler.durum");
@@ -71,80 +73,82 @@ export default function PaymentFormModal({ isOpen, onClose, plans, onSaved }: Pr
 
   return (
     <ModalShell isOpen={isOpen} onClose={onClose} title={t("title")}>
-      <form onSubmit={submit} className="space-y-4">
-        <ParentPicker selected={parent} onSelect={setParent} />
-        <div>
-          <label className={labelClass} htmlFor="pay-plan">
-            {t("plan")}
-          </label>
-          <select
-            id="pay-plan"
-            className={inputClass}
-            value={planKod}
-            onChange={(e) => onPlanChange(e.target.value)}
-          >
-            <option value="">{t("planPlaceholder")}</option>
-            {plans.map((p) => (
-              <option key={p.kod} value={p.kod}>
-                {p.ad} ({p.kod})
-              </option>
-            ))}
-          </select>
-        </div>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+      <DesktopOnly>
+        <form onSubmit={submit} className="space-y-4">
+          <ParentPicker selected={parent} onSelect={setParent} />
           <div>
-            <label className={labelClass} htmlFor="pay-amount">
-              {t("amount")}
-            </label>
-            <input
-              id="pay-amount"
-              className={inputClass}
-              inputMode="decimal"
-              placeholder="149,90"
-              value={amount}
-              onChange={(e) => setAmount(e.target.value)}
-            />
-          </div>
-          <div>
-            <label className={labelClass} htmlFor="pay-status">
-              {t("status")}
+            <label className={labelClass} htmlFor="pay-plan">
+              {t("plan")}
             </label>
             <select
-              id="pay-status"
+              id="pay-plan"
               className={inputClass}
-              value={durum}
-              onChange={(e) => setDurum(e.target.value as PaymentStatus)}
+              value={planKod}
+              onChange={(e) => onPlanChange(e.target.value)}
             >
-              {PAYMENT_STATUSES.map((s) => (
-                <option key={s} value={s}>
-                  {tStatus(s)}
+              <option value="">{t("planPlaceholder")}</option>
+              {plans.map((p) => (
+                <option key={p.kod} value={p.kod}>
+                  {p.ad} ({p.kod})
                 </option>
               ))}
             </select>
           </div>
-        </div>
-        <div>
-          <label className={labelClass} htmlFor="pay-note">
-            {t("note")}
-          </label>
-          <textarea
-            id="pay-note"
-            rows={2}
-            className={`${inputClass} h-auto`}
-            value={aciklama}
-            onChange={(e) => setAciklama(e.target.value)}
-          />
-        </div>
-        <ErrorNote message={error} />
-        <div className="flex justify-end gap-3">
-          <button type="button" className={outlineBtn} onClick={onClose}>
-            {t("cancel")}
-          </button>
-          <button type="submit" className={primaryBtn} disabled={saving}>
-            {saving ? t("saving") : t("save")}
-          </button>
-        </div>
-      </form>
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
+            <div>
+              <label className={labelClass} htmlFor="pay-amount">
+                {t("amount")}
+              </label>
+              <input
+                id="pay-amount"
+                className={inputClass}
+                inputMode="decimal"
+                placeholder="149,90"
+                value={amount}
+                onChange={(e) => setAmount(e.target.value)}
+              />
+            </div>
+            <div>
+              <label className={labelClass} htmlFor="pay-status">
+                {t("status")}
+              </label>
+              <select
+                id="pay-status"
+                className={inputClass}
+                value={durum}
+                onChange={(e) => setDurum(e.target.value as PaymentStatus)}
+              >
+                {PAYMENT_STATUSES.map((s) => (
+                  <option key={s} value={s}>
+                    {tStatus(s)}
+                  </option>
+                ))}
+              </select>
+            </div>
+          </div>
+          <div>
+            <label className={labelClass} htmlFor="pay-note">
+              {t("note")}
+            </label>
+            <textarea
+              id="pay-note"
+              rows={2}
+              className={`${inputClass} h-auto`}
+              value={aciklama}
+              onChange={(e) => setAciklama(e.target.value)}
+            />
+          </div>
+          <ErrorNote message={error} />
+          <div className="flex justify-end gap-3">
+            <button type="button" className={outlineBtn} onClick={onClose}>
+              {t("cancel")}
+            </button>
+            <button type="submit" className={primaryBtn} disabled={saving}>
+              {saving ? t("saving") : t("save")}
+            </button>
+          </div>
+        </form>
+      </DesktopOnly>
     </ModalShell>
   );
 }

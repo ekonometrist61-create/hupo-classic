@@ -5,7 +5,9 @@ import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
 import { useMemo, useRef, useState } from "react";
 
+import DesktopOnly from "@/components/ui/DesktopOnly";
 import type { ImportResult } from "../types";
+import { dokunmaHedefi } from "../ui/responsive";
 import {
   CHUNK_SIZE,
   chunk,
@@ -37,7 +39,9 @@ const cardClass =
 const headingClass =
   "mb-3 text-base font-semibold text-gray-800 dark:text-white/90";
 const outlineButton =
-  "rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5";
+  `${dokunmaHedefi} justify-center rounded-lg border border-gray-300 px-4 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5`;
+const primaryButton =
+  `${dokunmaHedefi} justify-center rounded-lg bg-brand-500 px-4 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600`;
 const checkboxClass =
   "mt-0.5 h-4 w-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500/20 dark:border-gray-700 dark:bg-gray-900";
 
@@ -182,7 +186,7 @@ export default function BulkImport() {
             <button
               type="button"
               onClick={() => downloadCsv("soru-sablonu.csv", templateCsv())}
-              className="rounded-lg bg-brand-500 px-4 py-2.5 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600"
+              className={primaryButton}
             >
               {t("help.download")}
             </button>
@@ -201,6 +205,9 @@ export default function BulkImport() {
         </ul>
       </div>
 
+      {/* K3: dosya yükleme, içe aktarma ve sonuç yalnızca masaüstünde. Şablon ve yardım telefonda okunur. */}
+      <DesktopOnly>
+      <div>
       {/* 2. Girdi */}
       <div className={cardClass}>
         <h3 className={headingClass}>{t("input.title")}</h3>
@@ -211,7 +218,7 @@ export default function BulkImport() {
             accept=".csv,.txt,text/csv,text/plain"
             disabled={importing}
             onChange={(e) => onFile(e.target.files?.[0])}
-            className="block text-sm text-gray-700 file:me-3 file:rounded-lg file:border-0 file:bg-gray-100 file:px-4 file:py-2.5 file:text-sm file:font-medium file:text-gray-700 hover:file:bg-gray-200 dark:text-gray-300 dark:file:bg-white/10 dark:file:text-gray-300 dark:hover:file:bg-white/15"
+            className="block text-base text-gray-700 md:text-sm file:me-3 file:min-h-11 file:rounded-lg file:border-0 file:bg-gray-100 file:px-4 file:py-2.5 file:text-sm file:font-medium file:text-gray-700 hover:file:bg-gray-200 dark:text-gray-300 dark:file:bg-white/10 dark:file:text-gray-300 dark:hover:file:bg-white/15"
           />
           {(fileText !== null || pasted !== "") && (
             <button
@@ -248,7 +255,7 @@ export default function BulkImport() {
                 setBlockedMessage(null);
               }}
               placeholder={t("input.pastePlaceholder")}
-              className="w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 font-mono text-theme-xs text-gray-800 shadow-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/10 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
+              className="w-full rounded-lg border border-gray-300 bg-transparent px-4 py-2.5 font-mono text-base text-gray-800 shadow-theme-xs md:text-theme-xs placeholder:text-gray-400 focus:border-brand-300 focus:ring-3 focus:ring-brand-500/10 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:placeholder:text-white/30 dark:focus:border-brand-800"
             />
           </>
         )}
@@ -285,7 +292,7 @@ export default function BulkImport() {
         <div className={cardClass}>
           <h3 className={headingClass}>{t("options.title")}</h3>
           <div className="mb-4 space-y-3">
-            <label className="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+            <label className="flex min-h-11 items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
               <input
                 type="checkbox"
                 checked={onayla}
@@ -300,7 +307,7 @@ export default function BulkImport() {
                 </span>
               </span>
             </label>
-            <label className="flex items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
+            <label className="flex min-h-11 items-start gap-3 text-sm text-gray-700 dark:text-gray-300">
               <input
                 type="checkbox"
                 checked={hepsi}
@@ -331,7 +338,7 @@ export default function BulkImport() {
               type="button"
               disabled={!canImport || validRows.length === 0}
               onClick={runImport}
-              className="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600 disabled:cursor-not-allowed disabled:opacity-50"
+              className={`${primaryButton} disabled:cursor-not-allowed disabled:opacity-50`}
             >
               {importing
                 ? t("options.importing")
@@ -360,6 +367,8 @@ export default function BulkImport() {
           />
         </div>
       )}
+      </div>
+      </DesktopOnly>
     </div>
   );
 }

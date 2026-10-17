@@ -9,6 +9,7 @@ import { formatDateTime } from "@/utils/format";
 import { cardClass, inputClass, labelClass, outlineBtn, primaryBtn } from "../panel/styles";
 import Feedback from "../ui/Feedback";
 import RpcBoundary from "../ui/RpcBoundary";
+import { dokunmaHedefi } from "../ui/responsive";
 import { adminCall, useAdminRpc } from "../useAdminRpc";
 import { DEMO_SURVEY_RESULT, DEMO_SURVEYS, DEMO_TASKS } from "./demoData";
 import SurfacePicker from "./SurfacePicker";
@@ -59,7 +60,7 @@ export default function SurveysManager() {
       role="tab"
       aria-selected={tab === id}
       onClick={() => setTab(id)}
-      className={`rounded-md px-3 py-1.5 text-theme-xs font-medium ${
+      className={`${dokunmaHedefi} rounded-md px-3 text-theme-xs font-medium ${
         tab === id ? "bg-white shadow-theme-xs dark:bg-gray-800" : "text-gray-500"
       }`}
     >
@@ -93,7 +94,7 @@ export default function SurveysManager() {
               type="button"
               aria-pressed={arsiv === o.id}
               onClick={() => setArsiv(o.id)}
-              className={`rounded-full px-3 py-1.5 font-medium ${
+              className={`${dokunmaHedefi} rounded-full px-3 font-medium ${
                 arsiv === o.id ? "bg-brand-500 text-white" : "bg-gray-100 text-gray-600 dark:bg-white/5 dark:text-gray-300"
               }`}
             >
@@ -109,7 +110,7 @@ export default function SurveysManager() {
                 {arsiv ? t("archiveEmpty") : t("empty")}
               </section>
             ) : (
-              <div className="grid gap-4 lg:grid-cols-2">
+              <div className="grid gap-4 md:grid-cols-2">
                 {rows.map((s) => (
                   <section key={s.id} className={`${cardClass} p-5 sm:p-6`}>
                     <div className="flex items-start justify-between gap-3">
@@ -130,23 +131,23 @@ export default function SurveysManager() {
                         <Badge key={y} size="sm" color="light">{t(`surfaceShort.${y}`)}</Badge>
                       ))}
                     </div>
-                    <div className="mt-4 flex flex-wrap gap-3 text-theme-sm font-medium">
+                    <div className="mt-2 flex flex-wrap gap-x-3 text-theme-sm font-medium">
                       {!arsiv && s.durum !== "kapali" && (
-                        <button type="button" className="text-brand-500 hover:text-brand-600" onClick={() => setEditing(s)}>{t("edit")}</button>
+                        <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setEditing(s)}>{t("edit")}</button>
                       )}
-                      <button type="button" className="text-brand-500 hover:text-brand-600" onClick={() => setResultFor(s)}>{t("results")}</button>
+                      <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setResultFor(s)}>{t("results")}</button>
                       {!arsiv && s.durum === "taslak" && (
-                        <button type="button" className="text-brand-500 hover:text-brand-600" onClick={() => setStatus(s, "yayinda")}>{t("publish")}</button>
+                        <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setStatus(s, "yayinda")}>{t("publish")}</button>
                       )}
                       {!arsiv && s.durum === "yayinda" && (
-                        <button type="button" className="text-error-600 hover:text-error-700" onClick={() => setStatus(s, "kapali")}>{t("close")}</button>
+                        <button type="button" className={`${dokunmaHedefi} text-error-600 hover:text-error-700`} onClick={() => setStatus(s, "kapali")}>{t("close")}</button>
                       )}
                       {/* Yayındaki anket arşivlenmez: önce kapatılır. Silme yok (yanıtlar korunur). */}
                       {!arsiv && s.durum !== "yayinda" && (
-                        <button type="button" className="text-gray-500 hover:text-gray-700 dark:hover:text-gray-300" onClick={() => setArchived(s, true)}>{t("archive")}</button>
+                        <button type="button" className={`${dokunmaHedefi} text-gray-500 hover:text-gray-700 dark:hover:text-gray-300`} onClick={() => setArchived(s, true)}>{t("archive")}</button>
                       )}
                       {arsiv && (
-                        <button type="button" className="text-brand-500 hover:text-brand-600" onClick={() => setArchived(s, false)}>{t("unarchive")}</button>
+                        <button type="button" className={`${dokunmaHedefi} text-brand-500 hover:text-brand-600`} onClick={() => setArchived(s, false)}>{t("unarchive")}</button>
                       )}
                     </div>
                   </section>
@@ -196,15 +197,15 @@ function TaskRow({ task, onClose }: { task: SupportTask; onClose: (id: string, n
   const [note, setNote] = useState("");
   return (
     <li className="flex flex-wrap items-center justify-between gap-3 py-4">
-      <div>
+      <div className="min-w-0">
         <b className="block text-theme-sm">{task.veli_ad ?? "—"}</b>
         <span className="text-theme-xs text-gray-500">
           {t("taskMeta", { nps: task.nps ?? "—", d: formatDateTime(task.created_at) })}
         </span>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="flex w-full flex-wrap items-center gap-2 md:w-auto">
         <input
-          className={`${inputClass} h-10 w-56`}
+          className={`${inputClass} md:w-56`}
           value={note}
           onChange={(e) => setNote(e.target.value)}
           placeholder={t("taskNote")}
@@ -322,7 +323,7 @@ function Editor({
         surfaceLabel={(y) => t(`surfaces.${y}`)}
       />
 
-      <label className="mt-4 flex items-start gap-2 text-theme-sm">
+      <label className="mt-4 flex min-h-11 items-start gap-2 text-theme-sm">
         <input
           type="checkbox"
           className="mt-0.5 size-4 accent-brand-500"
@@ -345,7 +346,7 @@ function Editor({
               <div className="flex items-center gap-2">
                 <Badge size="sm" color="light">{i + 1}</Badge>
                 <select
-                  className="h-9 rounded-lg border border-gray-300 bg-transparent px-2 text-theme-sm dark:border-gray-700"
+                  className="h-11 rounded-lg border border-gray-300 bg-transparent px-2 text-base md:h-9 md:text-sm dark:border-gray-700"
                   value={q.tur}
                   aria-label={t("form.type")}
                   onChange={(e) =>
@@ -358,10 +359,10 @@ function Editor({
                   {TYPES.map((x) => <option key={x} value={x}>{t(`types.${x}`)}</option>)}
                 </select>
               </div>
-              <div className="flex gap-3 text-theme-xs font-medium">
-                <button type="button" className="text-brand-500" onClick={() => move(i, -1)} aria-label={t("form.up")}>↑</button>
-                <button type="button" className="text-brand-500" onClick={() => move(i, 1)} aria-label={t("form.down")}>↓</button>
-                <button type="button" className="text-error-600" onClick={() => remove(i)}>{t("form.remove")}</button>
+              <div className="flex flex-wrap gap-1 text-theme-xs font-medium">
+                <button type="button" className={`${dokunmaHedefi} min-w-11 justify-center text-brand-500`} onClick={() => move(i, -1)} aria-label={t("form.up")}>↑</button>
+                <button type="button" className={`${dokunmaHedefi} min-w-11 justify-center text-brand-500`} onClick={() => move(i, 1)} aria-label={t("form.down")}>↓</button>
+                <button type="button" className={`${dokunmaHedefi} px-2 text-error-600`} onClick={() => remove(i)}>{t("form.remove")}</button>
               </div>
             </div>
             <input
@@ -383,7 +384,7 @@ function Editor({
             )}
             {i > 0 && (
               <div className="mt-3 flex flex-wrap items-center gap-2 text-theme-xs">
-                <label className="flex items-center gap-2">
+                <label className="flex min-h-11 items-center gap-2">
                   <input
                     type="checkbox"
                     className="size-4 accent-brand-500"
@@ -401,7 +402,7 @@ function Editor({
                 {q.kosul && (
                   <>
                     <select
-                      className="h-8 rounded-lg border border-gray-300 bg-transparent px-2 dark:border-gray-700"
+                      className="h-11 rounded-lg border border-gray-300 bg-transparent px-2 text-base md:h-8 md:text-sm dark:border-gray-700"
                       value={q.kosul.soru_id}
                       aria-label={t("form.condQuestion")}
                       onChange={(e) => patch(i, { kosul: { ...q.kosul!, soru_id: e.target.value } })}
@@ -411,7 +412,7 @@ function Editor({
                       ))}
                     </select>
                     <select
-                      className="h-8 rounded-lg border border-gray-300 bg-transparent px-2 dark:border-gray-700"
+                      className="h-11 rounded-lg border border-gray-300 bg-transparent px-2 text-base md:h-8 md:text-sm dark:border-gray-700"
                       value={q.kosul.op}
                       aria-label={t("form.condOp")}
                       onChange={(e) => patch(i, { kosul: { ...q.kosul!, op: e.target.value as "lte" | "gte" | "eq" } })}
@@ -422,7 +423,7 @@ function Editor({
                     </select>
                     <input
                       type="number"
-                      className="h-8 w-16 rounded-lg border border-gray-300 bg-transparent px-2 dark:border-gray-700"
+                      className="h-11 w-16 rounded-lg border border-gray-300 bg-transparent px-2 text-base md:h-8 md:text-sm dark:border-gray-700"
                       value={q.kosul.deger}
                       aria-label={t("form.condValue")}
                       onChange={(e) => patch(i, { kosul: { ...q.kosul!, deger: Number(e.target.value) } })}
@@ -461,7 +462,7 @@ function Editor({
                       type="button"
                       aria-pressed={npsPick[q.id] === n}
                       onClick={() => setNpsPick({ ...npsPick, [q.id]: n })}
-                      className={`size-8 rounded-md border text-theme-xs ${
+                      className={`size-11 rounded-md border text-theme-xs md:size-8 ${
                         npsPick[q.id] === n ? "border-brand-500 bg-brand-500 text-white" : "border-gray-300 dark:border-gray-700"
                       }`}
                     >

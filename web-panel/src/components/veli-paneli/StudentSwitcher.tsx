@@ -44,7 +44,7 @@ export default function StudentSwitcher({
         id="student-select"
         value={selectedId}
         onChange={(e) => onChange(e.target.value)}
-        className="h-11 rounded-lg border border-gray-300 bg-transparent px-4 text-sm text-gray-800 shadow-theme-xs focus:border-brand-300 focus:ring-3 focus:ring-brand-500/10 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90"
+        className="min-h-11 min-w-0 rounded-lg border border-gray-300 bg-transparent px-4 text-base text-gray-800 shadow-theme-xs focus:border-brand-300 focus:ring-3 focus:ring-brand-500/10 focus:outline-hidden md:text-sm dark:border-gray-700 dark:bg-gray-900 dark:text-white/90"
       >
         {students.map((s) => (
           <option key={s.id} value={s.id}>

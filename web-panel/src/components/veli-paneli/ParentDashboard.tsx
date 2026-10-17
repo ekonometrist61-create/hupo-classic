@@ -2,12 +2,12 @@
 
 import { useTranslations } from "next-intl";
 
+import BuHaftaOzeti from "./BuHaftaOzeti";
 import ChildScope from "./ChildScope";
 import CocukDenemeGecmisi from "./CocukDenemeGecmisi";
 import DenemeKaydiKarti from "./DenemeKaydiKarti";
 import KelimeGelisimKarti from "./KelimeGelisimKarti";
 import ReviewTopicsList from "./ReviewTopicsList";
-import StatsCards from "./StatsCards";
 import SubjectSuccessChart from "./SubjectSuccessChart";
 import type { Student } from "./types";
 import WeeklyStudyChart from "./WeeklyStudyChart";
@@ -16,7 +16,8 @@ interface ParentDashboardProps {
   students: Student[];
 }
 
-// Genel Bakış: seçili çocuğun özet istatistikleri ve grafikleri.
+// Genel Bakış (K4 sırası): 1) "Bu hafta" özeti, 2) grafikler, 3) tekrar önerileri,
+// 4) deneme kaydı, deneme geçmişi ve kelime kartı. XP ve seviye Başarılar sayfasındadır.
 export default function ParentDashboard({ students }: ParentDashboardProps) {
   const t = useTranslations("veliPaneli");
 
@@ -25,58 +26,39 @@ export default function ParentDashboard({ students }: ParentDashboardProps) {
       students={students}
       render={(studentId, data) => {
         const ogrenci = students.find((s) => s.id === studentId) ?? null;
+        const cocukAd = ogrenci?.full_name ?? ogrenci?.username ?? null;
         return (
-          <>
-            <DenemeKaydiKarti
-              cocukId={studentId}
-              cocukAd={ogrenci?.full_name ?? ogrenci?.username ?? null}
+          <div className="space-y-4 md:space-y-6">
+            <BuHaftaOzeti
+              haftalik={data.haftalik}
+              tekrarKonulari={data.tekrar_konulari}
             />
-            <CocukDenemeGecmisi
-              cocukId={studentId}
-              cocukAd={ogrenci?.full_name ?? ogrenci?.username ?? null}
-            />
-            <KelimeGelisimKarti
-              key={studentId}
-              cocukId={studentId}
-              cocukAd={ogrenci?.full_name ?? ogrenci?.username ?? null}
-            />
-            <StatsCards
-            summary={data.ozet}
-            weekly={data.haftalik}
-            labels={{
-              xp: t("stats.xp"),
-              level: t("stats.level"),
-              streak: t("stats.streak"),
-              streakUnit: t("stats.streakUnit"),
-              weeklyTime: t("stats.weeklyTime"),
-              minutes: t("stats.minutes"),
-              questions: t("stats.questions"),
-            }}
-          />
-          <div className="grid grid-cols-12 gap-4 md:gap-6">
-            <div className="col-span-12 xl:col-span-6">
+
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:gap-6">
               <SubjectSuccessChart data={data.ders_basari} />
-            </div>
-            <div className="col-span-12 xl:col-span-6">
               <WeeklyStudyChart data={data.haftalik} />
             </div>
-            <div className="col-span-12">
-              <ReviewTopicsList
-                topics={data.tekrar_konulari}
-                labels={{
-                  title: t("review.title"),
-                  desc: t("review.desc"),
-                  empty: t("review.empty"),
-                  topic: t("review.topic"),
-                  subject: t("review.subject"),
-                  wrong: t("review.wrong"),
-                  due: t("review.due"),
-                  success: t("review.success"),
-                }}
-              />
-            </div>
+
+            <ReviewTopicsList
+              topics={data.tekrar_konulari}
+              labels={{
+                title: t("review.title"),
+                desc: t("review.desc"),
+                kaynak: t("review.kaynak"),
+                azVeri: t("review.azVeri"),
+                empty: t("review.empty"),
+                topic: t("review.topic"),
+                subject: t("review.subject"),
+                wrong: t("review.wrong"),
+                due: t("review.due"),
+                success: t("review.success"),
+              }}
+            />
+
+            <DenemeKaydiKarti cocukId={studentId} cocukAd={cocukAd} />
+            <CocukDenemeGecmisi cocukId={studentId} cocukAd={cocukAd} />
+            <KelimeGelisimKarti key={studentId} cocukId={studentId} cocukAd={cocukAd} />
           </div>
-        </>
         );
       }}
     />

@@ -51,6 +51,10 @@ const PRIORITY_COLOR: Record<GrowthTicketPriority, BadgeTone> = {
 
 const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
+// Tablo (md ve üzeri) kendi kapsayıcısında kayar; ilk sütun kaydırmada sabit kalır.
+const ILK_SUTUN_SABIT =
+  "[&_tr>*:first-child]:sticky [&_tr>*:first-child]:inset-s-0 [&_tr>*:first-child]:z-1 [&_tr>*:first-child]:bg-white dark:[&_tr>*:first-child]:bg-gray-900";
+
 export default function DestekMasasiManager() {
   const t = useTranslations("yonetim.destekMasasi");
   const [status, setStatus] = useState<"" | GrowthTicketStatus>("");
@@ -98,11 +102,23 @@ export default function DestekMasasiManager() {
   const start = total === 0 ? 0 : page * PAGE_SIZE + 1;
   const end = Math.min(total, page * PAGE_SIZE + rows.length);
 
+  // Durum rozeti bir düğme: dokunma hedefi en az 44 px. Kart ve tabloda aynı düğme kullanılır.
+  const durumDugmesi = (k: GrowthTicket) => (
+    <button
+      type="button"
+      className="inline-flex min-h-11 items-center rounded-full focus:outline-hidden focus:ring-3 focus:ring-brand-500/20"
+      aria-label={t("statusModal.title")}
+      onClick={() => setStatusTarget(k)}
+    >
+      <Badge size="sm" color={STATUS_COLOR[k.status] ?? "light"}>{t(`statuses.${k.status}`)}</Badge>
+    </button>
+  );
+
   return (
     <div className="space-y-6">
       <section className={`${cardClass} p-5 sm:p-6`}>
-        <div className="mb-4 flex flex-wrap items-end gap-4">
-          <div className="min-w-40">
+        <div className="mb-4 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 lg:items-end">
+          <div>
             <label className={labelClass} htmlFor="d-status">{t("cols.status")}</label>
             <select
               id="d-status"
@@ -116,7 +132,7 @@ export default function DestekMasasiManager() {
               ))}
             </select>
           </div>
-          <div className="min-w-40">
+          <div>
             <label className={labelClass} htmlFor="d-priority">{t("cols.priority")}</label>
             <select
               id="d-priority"
@@ -130,8 +146,8 @@ export default function DestekMasasiManager() {
               ))}
             </select>
           </div>
-          <div className="ms-auto">
-            <button type="button" className={primaryBtn} onClick={() => setNewOpen(true)}>
+          <div className="sm:col-span-2 lg:col-span-1 lg:justify-self-end">
+            <button type="button" className={`${primaryBtn} w-full sm:w-auto`} onClick={() => setNewOpen(true)}>
               {t("newTicket")}
             </button>
           </div>
@@ -149,55 +165,95 @@ export default function DestekMasasiManager() {
         ) : rows.length === 0 ? (
           <p className="py-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("empty")}</p>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="min-w-full">
-              <thead className="border-b border-gray-100 dark:border-gray-800">
-                <tr>
-                  <th className={thClass}>{t("cols.ticketNo")}</th>
-                  <th className={thClass}>{t("cols.subject")}</th>
-                  <th className={thClass}>{t("cols.category")}</th>
-                  <th className={thClass}>{t("cols.status")}</th>
-                  <th className={thClass}>{t("cols.priority")}</th>
-                  <th className={thClass}>{t("cols.assignee")}</th>
-                  <th className={thClass}>{t("cols.created")}</th>
-                  <th className={thClass}>{t("cols.customer")}</th>
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-                {rows.map((k) => (
-                  <tr key={k.id}>
-                    <td className={`${tdClass} whitespace-nowrap font-mono text-theme-xs`}>{k.id}</td>
-                    <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>{k.subject}</td>
-                    <td className={`${tdClass} whitespace-nowrap`}>{t(`categories.${k.category}`)}</td>
-                    <td className={tdClass}>
-                      <button
-                        type="button"
-                        className="rounded-full focus:outline-hidden focus:ring-3 focus:ring-brand-500/20"
-                        aria-label={t("statusModal.title")}
-                        onClick={() => setStatusTarget(k)}
-                      >
-                        <Badge size="sm" color={STATUS_COLOR[k.status] ?? "light"}>{t(`statuses.${k.status}`)}</Badge>
-                      </button>
-                    </td>
-                    <td className={tdClass}>
-                      <Badge size="sm" color={PRIORITY_COLOR[k.priority] ?? "light"}>{t(`priorities.${k.priority}`)}</Badge>
-                    </td>
-                    <td className={tdClass}>{k.owner_name ?? "-"}</td>
-                    <td className={`${tdClass} whitespace-nowrap`}>{formatDateTime(k.created_at)}</td>
-                    <td className={`${tdClass} whitespace-nowrap`}>
-                      {k.household_id ? (
-                        <Link href={`/yonetim/musteri-360/${k.household_id}`} className={linkBtn}>
-                          {t("customerLink")}
-                        </Link>
-                      ) : (
-                        "-"
-                      )}
-                    </td>
+          <>
+            {/* Telefon ve küçük tablet (md altı): kart görünümü */}
+            <ul className="space-y-3 md:hidden">
+              {rows.map((k) => (
+                <li key={k.id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
+                  <p className="font-medium wrap-break-word text-gray-800 dark:text-white/90">{k.subject}</p>
+                  <p className="mt-1 font-mono text-theme-xs break-all text-gray-500 dark:text-gray-400">{k.id}</p>
+                  <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-3 text-theme-sm">
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.category")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">{t(`categories.${k.category}`)}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.status")}</dt>
+                      <dd>{durumDugmesi(k)}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.priority")}</dt>
+                      <dd>
+                        <Badge size="sm" color={PRIORITY_COLOR[k.priority] ?? "light"}>{t(`priorities.${k.priority}`)}</Badge>
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.assignee")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">{k.owner_name ?? "-"}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.created")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">{formatDateTime(k.created_at)}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.customer")}</dt>
+                      <dd>
+                        {k.household_id ? (
+                          <Link href={`/yonetim/musteri-360/${k.household_id}`} className={`${linkBtn} inline-flex min-h-11 items-center`}>
+                            {t("customerLink")}
+                          </Link>
+                        ) : (
+                          "-"
+                        )}
+                      </dd>
+                    </div>
+                  </dl>
+                </li>
+              ))}
+            </ul>
+
+            {/* Tablet ve masaüstü (md ve üzeri): tablo; kapsayıcısı kayar */}
+            <div className={`hidden overflow-x-auto md:block ${ILK_SUTUN_SABIT}`}>
+              <table className="min-w-full">
+                <thead className="border-b border-gray-100 dark:border-gray-800">
+                  <tr>
+                    <th className={thClass}>{t("cols.ticketNo")}</th>
+                    <th className={thClass}>{t("cols.subject")}</th>
+                    <th className={thClass}>{t("cols.category")}</th>
+                    <th className={thClass}>{t("cols.status")}</th>
+                    <th className={thClass}>{t("cols.priority")}</th>
+                    <th className={thClass}>{t("cols.assignee")}</th>
+                    <th className={thClass}>{t("cols.created")}</th>
+                    <th className={thClass}>{t("cols.customer")}</th>
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
+                  {rows.map((k) => (
+                    <tr key={k.id}>
+                      <td className={`${tdClass} whitespace-nowrap font-mono text-theme-xs`}>{k.id}</td>
+                      <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>{k.subject}</td>
+                      <td className={`${tdClass} whitespace-nowrap`}>{t(`categories.${k.category}`)}</td>
+                      <td className={tdClass}>{durumDugmesi(k)}</td>
+                      <td className={tdClass}>
+                        <Badge size="sm" color={PRIORITY_COLOR[k.priority] ?? "light"}>{t(`priorities.${k.priority}`)}</Badge>
+                      </td>
+                      <td className={tdClass}>{k.owner_name ?? "-"}</td>
+                      <td className={`${tdClass} whitespace-nowrap`}>{formatDateTime(k.created_at)}</td>
+                      <td className={`${tdClass} whitespace-nowrap`}>
+                        {k.household_id ? (
+                          <Link href={`/yonetim/musteri-360/${k.household_id}`} className={`${linkBtn} inline-flex min-h-11 items-center`}>
+                            {t("customerLink")}
+                          </Link>
+                        ) : (
+                          "-"
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
         )}
 
         {!loading && !error && total > 0 && (
@@ -326,7 +382,7 @@ function NewTicketModal({ onClose, onSaved }: { onClose: () => void; onSaved: ()
           </div>
         </div>
         <ErrorNote message={err} />
-        <div className="flex justify-end gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
           <button type="button" className={outlineBtn} onClick={onClose}>
             {t("form.cancel")}
           </button>
@@ -376,7 +432,7 @@ function StatusModal({ ticket, onClose, onSaved }: { ticket: GrowthTicket; onClo
           </select>
         </div>
         <ErrorNote message={err} />
-        <div className="flex justify-end gap-3">
+        <div className="flex flex-col gap-3 sm:flex-row sm:justify-end">
           <button type="button" className={outlineBtn} onClick={onClose}>
             {t("statusModal.cancel")}
           </button>

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
+import DesktopOnly from "@/components/ui/DesktopOnly";
 import { formatKurus } from "@/utils/format";
 import { createClient } from "@/utils/supabase/client";
 import type { AdminPayment, PaymentStatus } from "../types";
@@ -17,7 +18,10 @@ interface Props {
   onSaved: () => void;
 }
 
-/** payment değiştiğinde yeniden bağlanması için üst bileşen key={payment.id} vermelidir. */
+/**
+ * payment değiştiğinde yeniden bağlanması için üst bileşen key={payment.id} vermelidir.
+ * Durum değişikliği ve iade masaüstüne özeldir (TASKS §20, K3): telefonda form gizlenir.
+ */
 export default function PaymentStatusModal({ payment, onClose, onSaved }: Props) {
   const t = useTranslations("yonetim.odemeler.statusModal");
   const tStatus = useTranslations("yonetim.odemeler.durum");
@@ -44,47 +48,49 @@ export default function PaymentStatusModal({ payment, onClose, onSaved }: Props)
 
   return (
     <ModalShell isOpen onClose={onClose} title={t("title")}>
-      <div className="space-y-4">
-        <p className="text-theme-sm text-gray-500 dark:text-gray-400">
-          {payment.veli_ad ?? "-"} · {formatKurus(payment.tutar_kurus)}
-        </p>
-        <div>
-          <label className={labelClass} htmlFor="new-status">
-            {t("newStatus")}
-          </label>
-          <select
-            id="new-status"
-            className={inputClass}
-            value={durum}
-            onChange={(e) => setDurum(e.target.value as PaymentStatus)}
-          >
-            {PAYMENT_STATUSES.map((s) => (
-              <option key={s} value={s}>
-                {tStatus(s)}
-              </option>
-            ))}
-          </select>
-        </div>
-        {isRefund && !unchanged && (
-          <div className="rounded-lg bg-warning-50 px-3 py-2 text-theme-sm text-warning-700 dark:bg-warning-500/15 dark:text-orange-400">
-            {t("refundWarning")}
+      <DesktopOnly>
+        <div className="space-y-4">
+          <p className="text-theme-sm text-gray-500 dark:text-gray-400">
+            {payment.veli_ad ?? "-"} · {formatKurus(payment.tutar_kurus)}
+          </p>
+          <div>
+            <label className={labelClass} htmlFor="new-status">
+              {t("newStatus")}
+            </label>
+            <select
+              id="new-status"
+              className={inputClass}
+              value={durum}
+              onChange={(e) => setDurum(e.target.value as PaymentStatus)}
+            >
+              {PAYMENT_STATUSES.map((s) => (
+                <option key={s} value={s}>
+                  {tStatus(s)}
+                </option>
+              ))}
+            </select>
           </div>
-        )}
-        <ErrorNote message={error} />
-        <div className="flex justify-end gap-3">
-          <button type="button" className={outlineBtn} onClick={onClose}>
-            {t("cancel")}
-          </button>
-          <button
-            type="button"
-            className={isRefund ? dangerBtn : primaryBtn}
-            disabled={saving || unchanged}
-            onClick={submit}
-          >
-            {saving ? t("saving") : isRefund ? t("confirmRefund") : t("save")}
-          </button>
+          {isRefund && !unchanged && (
+            <div className="rounded-lg bg-warning-50 px-3 py-2 text-theme-sm text-warning-700 dark:bg-warning-500/15 dark:text-orange-400">
+              {t("refundWarning")}
+            </div>
+          )}
+          <ErrorNote message={error} />
+          <div className="flex justify-end gap-3">
+            <button type="button" className={outlineBtn} onClick={onClose}>
+              {t("cancel")}
+            </button>
+            <button
+              type="button"
+              className={isRefund ? dangerBtn : primaryBtn}
+              disabled={saving || unchanged}
+              onClick={submit}
+            >
+              {saving ? t("saving") : isRefund ? t("confirmRefund") : t("save")}
+            </button>
+          </div>
         </div>
-      </div>
+      </DesktopOnly>
     </ModalShell>
   );
 }

@@ -89,7 +89,7 @@ export default function DuyuruBandi({ yuzey }: DuyuruBandiProps) {
           type="button"
           onClick={kapat}
           aria-label={t("kapat")}
-          className="inline-flex size-9 shrink-0 items-center justify-center rounded-lg text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
+          className="inline-flex size-11 shrink-0 items-center justify-center rounded-lg text-white transition-colors hover:bg-white/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white"
         >
           <span aria-hidden="true" className="text-lg leading-none">×</span>
         </button>

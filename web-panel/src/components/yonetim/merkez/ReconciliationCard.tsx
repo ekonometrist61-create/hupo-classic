@@ -7,6 +7,7 @@ import Badge from "@/components/ui/badge/Badge";
 import { formatDateTime, formatKurus } from "@/utils/format";
 import { cardClass, outlineBtn, tdClass, thClass } from "../panel/styles";
 import Feedback from "../ui/Feedback";
+import { yapiskanBaslik, yapiskanHucre } from "../ui/responsive";
 import { adminCall } from "../useAdminRpc";
 import { DEMO_RECON } from "./demoData";
 import type { ReconciliationItem } from "./types";
@@ -60,7 +61,7 @@ export default function ReconciliationCard() {
             <table className="min-w-full">
               <thead>
                 <tr>
-                  <th className={thClass}>{t("cols.type")}</th>
+                  <th className={`${thClass} ${yapiskanBaslik}`}>{t("cols.type")}</th>
                   <th className={thClass}>{t("cols.family")}</th>
                   <th className={thClass}>{t("cols.amount")}</th>
                   <th className={thClass}>{t("cols.date")}</th>
@@ -69,7 +70,7 @@ export default function ReconciliationCard() {
               <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
                 {items.map((i) => (
                   <tr key={`${i.tur}-${i.kayit_id}`}>
-                    <td className={tdClass}>
+                    <td className={`${tdClass} ${yapiskanHucre}`}>
                       <Badge size="sm" color={COLOR[i.tur]}>{t(`types.${i.tur}`)}</Badge>
                     </td>
                     <td className={tdClass}>{i.veli_ad ?? "—"}</td>

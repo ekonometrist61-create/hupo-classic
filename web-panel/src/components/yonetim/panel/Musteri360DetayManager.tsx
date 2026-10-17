@@ -14,6 +14,10 @@ import { cardClass, outlineBtn, primaryBtn, tdClass, thClass } from "./styles";
 const TABS = ["genel", "kimlik", "hane", "abonelik", "islem", "pazarlama", "kullanim", "crm", "zaman"] as const;
 type TabId = (typeof TABS)[number];
 
+// Tablo kendi kapsayıcısında kayar; ilk sütun kaydırmada sabit kalır.
+const ILK_SUTUN_SABIT =
+  "[&_tr>*:first-child]:sticky [&_tr>*:first-child]:inset-s-0 [&_tr>*:first-child]:z-1 [&_tr>*:first-child]:bg-white dark:[&_tr>*:first-child]:bg-gray-900";
+
 const STATUS_CLASS = {
   ok: "bg-success-50 text-success-600 dark:bg-success-500/15 dark:text-success-500",
   bad: "bg-gray-100 text-gray-700 dark:bg-white/5 dark:text-white/80",
@@ -62,7 +66,7 @@ function Fields({ items }: { items: Array<[string, ReactNode]> }) {
 
 function Table({ head, children }: { head: string[]; children: ReactNode }) {
   return (
-    <div className="overflow-x-auto">
+    <div className={`overflow-x-auto ${ILK_SUTUN_SABIT}`}>
       <table className="min-w-full">
         <thead className="border-b border-gray-100 dark:border-gray-800">
           <tr>
@@ -204,7 +208,7 @@ export default function Musteri360DetayManager({ householdId }: { householdId: s
             role="tab"
             aria-selected={tab === id}
             onClick={() => setTab(id)}
-            className={`whitespace-nowrap border-b-2 px-4 py-2.5 text-theme-sm font-medium transition ${
+            className={`inline-flex min-h-11 items-center whitespace-nowrap border-b-2 px-4 py-2.5 text-theme-sm font-medium transition ${
               tab === id
                 ? "border-brand-500 text-brand-500 dark:text-brand-400"
                 : "border-transparent text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-300"

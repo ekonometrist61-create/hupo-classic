@@ -66,7 +66,7 @@ export default function GoalsView({ studentId, haftalik }: Props) {
                 </span>
                 {goal.tamamlandi && (
                   <span className="rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-bold text-green-700 dark:bg-green-900/30 dark:text-green-400">
-                    ✓ {t("completed")}
+                    {t("completed")}
                   </span>
                 )}
               </div>
@@ -74,7 +74,8 @@ export default function GoalsView({ studentId, haftalik }: Props) {
                 <div
                   className="h-full rounded-full bg-brand-500 transition-all duration-500"
                   style={{
-                    width: `${Math.min(100, Math.round((goal.bugun / goal.hedef) * 100))}%`,
+                    // Hedef 0 veya tanımsızsa ilerleme sıfır gösterilir (sıfıra bölme olmaz).
+                    width: `${goal.hedef > 0 ? Math.min(100, Math.round((goal.bugun / goal.hedef) * 100)) : 0}%`,
                   }}
                 />
               </div>
@@ -83,7 +84,7 @@ export default function GoalsView({ studentId, haftalik }: Props) {
             {/* Seri koruyucu */}
             {goal.seri_kalkani > 0 && (
               <p className="text-sm text-amber-600 dark:text-amber-400">
-                🛡️ {t("shield", { sayi: goal.seri_kalkani })}
+                {t("shield", { sayi: goal.seri_kalkani })}
               </p>
             )}
           </div>
@@ -120,7 +121,7 @@ export default function GoalsView({ studentId, haftalik }: Props) {
                   >
                     {aktif ? sorular : "—"}
                   </div>
-                  <span className="text-[10px] text-gray-400">{gunAdi}</span>
+                  <span className="text-xs text-gray-500 dark:text-gray-400">{gunAdi}</span>
                 </div>
               );
             })}

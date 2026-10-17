@@ -88,10 +88,14 @@ export default function ConsentCard({ studentId }: ConsentCardProps) {
       <p className="mt-3 rounded-xl bg-gray-50 p-4 text-theme-sm text-gray-700 dark:bg-white/5 dark:text-gray-300">
         {t("notice")}
       </p>
+      {/* Öğretmen görünürlüğü: yalnızca toplu sınıf özeti (migration 20261041000000). Hukuk onayı bekliyor. */}
+      <p className="mt-3 text-theme-xs text-gray-500 dark:text-gray-400">
+        {t("ogretmenNotice")}
+      </p>
 
       {status === null && (
         <p className="mt-4 text-theme-sm text-gray-500 dark:text-gray-400">
-          {t("loading")}
+          {t("checking")}
         </p>
       )}
       {status === "error" && (
@@ -106,13 +110,19 @@ export default function ConsentCard({ studentId }: ConsentCardProps) {
             <Button
               size="sm"
               variant="outline"
+              className="min-h-11 min-w-11"
               disabled={saving}
               onClick={() => update(false)}
             >
               {t("withdraw")}
             </Button>
           ) : (
-            <Button size="sm" disabled={saving} onClick={() => update(true)}>
+            <Button
+              size="sm"
+              className="min-h-11 min-w-11"
+              disabled={saving}
+              onClick={() => update(true)}
+            >
               {t("give")}
             </Button>
           )}

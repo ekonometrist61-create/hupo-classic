@@ -32,7 +32,7 @@ export default function SurfacePicker<T extends SurveySurface>({
       <legend className={labelClass}>{legend}</legend>
       <div className="grid gap-2 sm:grid-cols-2">
         {surfaces.map((y) => (
-          <label key={y} className="flex items-center gap-2 text-theme-sm">
+          <label key={y} className="flex min-h-11 items-center gap-2 text-theme-sm">
             <input
               type="checkbox"
               className="size-4 accent-brand-500"

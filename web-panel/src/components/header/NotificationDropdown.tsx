@@ -4,17 +4,25 @@ import { Link } from "@/i18n/navigation";
 import { cn } from "@/utils";
 import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import { Dropdown } from "../ui/dropdown/Dropdown";
 import { DropdownItem } from "../ui/dropdown/DropdownItem";
 
 interface Bildirim {
   id: string;
+  kategori: string;
   baslik: string;
   mesaj: string;
   okundu: boolean;
   created_at: string;
 }
+
+interface BildirimKutusu {
+  okunmamis_sayi: number;
+  satirlar: Bildirim[];
+}
+
+const LISTE_BOYUTU = 10;
 
 function zaman(iso: string) {
   const diff = Math.floor((Date.now() - new Date(iso).getTime()) / 60000);
@@ -25,39 +33,54 @@ function zaman(iso: string) {
   return `${Math.floor(saat / 24)} gün önce`;
 }
 
+// Kutu verisi get_bildirimler RPC'sinden gelir: okunmamış sayısı tam sayıdır (10 ile sınırlı değildir),
+// arşivlenmiş/süresi dolmuş kampanya kayıtları sunucuda elenir. Okundu işareti kalıcıdır.
 export default function NotificationDropdown() {
   const t = useTranslations("header.notifications");
   const [isOpen, setIsOpen] = useState(false);
   const [bildirimler, setBildirimler] = useState<Bildirim[]>([]);
   const [okunmamis, setOkunmamis] = useState(0);
+  const [hata, setHata] = useState<string | null>(null);
+
+  const yukle = useCallback(async () => {
+    const supabase = createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+    if (!user) return;
+    const { data, error } = await supabase.rpc("get_bildirimler", {
+      p_limit: LISTE_BOYUTU,
+      p_offset: 0,
+    });
+    if (error) {
+      setHata(t("loadError"));
+      return;
+    }
+    const kutu = data as BildirimKutusu;
+    setBildirimler(kutu.satirlar ?? []);
+    setOkunmamis(kutu.okunmamis_sayi ?? 0);
+    setHata(null);
+  }, [t]);
 
   useEffect(() => {
-    const supabase = createClient();
-    const run = async () => {
-      const { data: { user } } = await supabase.auth.getUser();
-      if (!user) return;
-      const { data } = await supabase
-        .from("notifications")
-        .select("id, baslik, mesaj, okundu, created_at")
-        .eq("alici_id", user.id)
-        .order("created_at", { ascending: false })
-        .limit(10);
-      if (data) {
-        setBildirimler(data as Bildirim[]);
-        setOkunmamis(data.filter((b) => !b.okundu).length);
-      }
+    const ilkYukleme = async () => {
+      await yukle();
     };
-    void run();
-  }, []);
+    void ilkYukleme();
+  }, [yukle]);
 
-  const markRead = async (id: string) => {
-    await createClient()
-      .from("notifications")
-      .update({ okundu: true })
-      .eq("id", id);
-    setBildirimler((prev) =>
-      prev.map((b) => (b.id === id ? { ...b, okundu: true } : b)),
-    );
+  const toggle = () => {
+    const acik = !isOpen;
+    setIsOpen(acik);
+    if (acik) void yukle();
+  };
+
+  const okunduIsaretle = async (id: string) => {
+    // Eski akış tabloya doğrudan update atıyordu; istemcinin o yetkisi yoktur ve hata sessiz kalıyordu.
+    const { error } = await createClient().rpc("mark_notifications_read", { p_ids: [id] });
+    if (error) {
+      setHata(t("markReadError"));
+      return;
+    }
+    setBildirimler((prev) => prev.map((b) => (b.id === id ? { ...b, okundu: true } : b)));
     setOkunmamis((n) => Math.max(0, n - 1));
   };
 
@@ -65,7 +88,7 @@ export default function NotificationDropdown() {
     <div className="relative">
       <button
         className="dropdown-toggle relative flex h-11 w-11 items-center justify-center rounded-full border border-gray-200 bg-white text-gray-500 transition-colors hover:bg-gray-100 hover:text-gray-700 dark:border-gray-800 dark:bg-gray-900 dark:text-gray-400 dark:hover:bg-gray-800 dark:hover:text-white"
-        onClick={() => setIsOpen((v) => !v)}
+        onClick={toggle}
         aria-label={t("title")}
       >
         {okunmamis > 0 && (
@@ -81,7 +104,7 @@ export default function NotificationDropdown() {
       <Dropdown
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
-        className="absolute -left-13.5 mt-4.25 flex w-80 flex-col rounded-2xl border border-gray-200 bg-white p-3 shadow-theme-lg sm:w-90 xl:right-0 xl:left-auto dark:border-gray-800 dark:bg-gray-dark"
+        className="absolute end-0 mt-4.25 flex w-[min(22.5rem,calc(100vw-2rem))] flex-col rounded-2xl border border-gray-200 bg-white p-3 shadow-theme-lg dark:border-gray-800 dark:bg-gray-dark"
       >
         <div className="mb-3 flex items-center justify-between border-b border-gray-100 pb-3 dark:border-gray-700">
           <h5 className="text-lg font-semibold text-gray-800 dark:text-gray-200">
@@ -93,8 +116,10 @@ export default function NotificationDropdown() {
             )}
           </h5>
           <button
+            type="button"
             onClick={() => setIsOpen(false)}
-            className="text-gray-500 transition hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+            aria-label={t("close")}
+            className="-me-2 flex h-11 w-11 items-center justify-center text-gray-500 transition hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
           >
             <svg className="fill-current" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path fillRule="evenodd" clipRule="evenodd" d="M6.21967 7.28131C5.92678 6.98841 5.92678 6.51354 6.21967 6.22065C6.51256 5.92775 6.98744 5.92775 7.28033 6.22065L11.999 10.9393L16.7176 6.22078C17.0105 5.92789 17.4854 5.92788 17.7782 6.22078C18.0711 6.51367 18.0711 6.98855 17.7782 7.28144L13.0597 12L17.7782 16.7186C18.0711 17.0115 18.0711 17.4863 17.7782 17.7792C17.4854 18.0721 17.0105 18.0721 16.7176 17.7792L11.999 13.0607L7.28033 17.7794C6.98744 18.0722 6.51256 18.0722 6.21967 17.7794C5.92678 17.4865 5.92678 17.0116 6.21967 16.7187L10.9384 12L6.21967 7.28131Z" fill="currentColor" />
@@ -102,16 +127,22 @@ export default function NotificationDropdown() {
           </button>
         </div>
 
+        {hata && (
+          <p role="alert" className="mb-2 rounded-lg bg-error-50 px-3 py-2 text-theme-xs text-error-600 dark:bg-error-500/10 dark:text-error-400">
+            {hata}
+          </p>
+        )}
+
         <ul className={cn("custom-scrollbar flex flex-col overflow-y-auto", bildirimler.length > 5 ? "max-h-96" : "")}>
           {bildirimler.length === 0 ? (
             <li className="py-8 text-center text-sm text-gray-500 dark:text-gray-400">
-              Henüz bildirim yok.
+              {t("empty")}
             </li>
           ) : (
             bildirimler.map((b) => (
               <li key={b.id}>
                 <DropdownItem
-                  onItemClick={() => { if (!b.okundu) void markRead(b.id); }}
+                  onItemClick={() => { if (!b.okundu) void okunduIsaretle(b.id); }}
                   className={cn(
                     "flex flex-col gap-1 rounded-lg border-b border-gray-100 px-3 py-3 hover:bg-gray-50 dark:border-gray-800 dark:hover:bg-white/5",
                     !b.okundu && "bg-brand-50/60 dark:bg-brand-500/5",
@@ -129,7 +160,7 @@ export default function NotificationDropdown() {
                     {b.mesaj}
                   </p>
                   <span className="text-theme-xs text-gray-400 dark:text-gray-500">
-                    {zaman(b.created_at)}
+                    {t(`kategori.${b.kategori}`)} · {zaman(b.created_at)}
                   </span>
                 </DropdownItem>
               </li>
@@ -139,7 +170,7 @@ export default function NotificationDropdown() {
 
         <Link
           href="/veli-paneli"
-          className="mt-3 block rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
+          className="mt-3 flex min-h-11 items-center justify-center rounded-lg border border-gray-300 bg-white px-4 py-2 text-center text-sm font-medium text-gray-700 hover:bg-gray-100 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700"
         >
           {t("viewAll")}
         </Link>

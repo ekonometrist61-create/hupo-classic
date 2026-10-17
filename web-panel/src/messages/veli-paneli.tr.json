@@ -5,7 +5,8 @@
       "brandSub": "Veli Paneli",
       "backToAdmin": "Yönetim Paneli",
       "signOut": "Çıkış yap",
-      "soon": "Yakında"
+      "soon": "Yakında",
+      "menu": "Menüyü aç/kapat"
     },
     "nav": {
       "overview": "Genel Bakış",
@@ -36,8 +37,8 @@
       "text": "Öğrenci hesabını veli hesabınıza bağladığınızda çalışma istatistikleri burada görünecek."
     },
     "cocukEkle": {
-      "title": "Çocuğunu ekle",
-      "desc": "Kodu oluştur, çocuğun Hupolingo uygulamasında Ayarlar → Veline bağlan bölümüne yazsın. Kod 24 saat geçerli ve tek kullanımlık.",
+      "title": "Çocuğunuzu ekleyin",
+      "desc": "Kodu oluşturun, çocuğunuz Hupolingo uygulamasında Ayarlar → Veline bağlan bölümüne yazsın. Kod 24 saat geçerli ve tek kullanımlık.",
       "create": "Kod oluştur",
       "createAgain": "Yeni kod oluştur",
       "creating": "Kod oluşturuluyor...",
@@ -46,9 +47,41 @@
       "copy": "Kopyala",
       "copied": "Kopyalandı",
       "copyError": "Kopyalanamadı. Kodu elle seçip kopyalayın.",
-      "error": "Kod oluşturulamadı, birazdan tekrar dene.",
-      "webText": "Çocuğun bilgisayardan da çalışabilir:",
+      "error": "Kod oluşturulamadı, birazdan tekrar deneyin.",
+      "webText": "Çocuğunuz bilgisayardan da kullanabilir:",
       "webLink": "Öğrenci uygulamasını web'de aç"
+    },
+    "cocuklarim": {
+      "title": "Çocuklarım",
+      "desc": "Hesabınıza bağlı öğrenciler. Çalışma bilgilerini yalnızca siz veri paylaşımına onay verdikten sonra görürsünüz.",
+      "empty": {
+        "title": "Henüz bağlı çocuk yok",
+        "text": "Aşağıdaki kodu oluşturun. Çocuğunuz Hupolingo uygulamasında Ayarlar → Veline bağlan bölümüne bu kodu girsin."
+      },
+      "bagliTarih": "Bağlandı: {tarih}",
+      "bagliTarihYok": "Bağlantı tarihi kayıtlı değil",
+      "riza": {
+        "verildi": "Veri paylaşımı açık",
+        "bekliyor": "Onayınız bekleniyor",
+        "geri_cekildi": "Onay geri çekildi"
+      },
+      "rizaYardim": {
+        "verildi": "Çalışma bilgilerini panodan görebilirsiniz.",
+        "bekliyor": "Çalışma bilgilerini görmek için ana sayfadaki onay kartından onay verin.",
+        "geri_cekildi": "Çalışma bilgilerini görmek için yeniden onay vermeniz gerekir."
+      },
+      "panel": "Çalışma panosunu aç",
+      "kaldir": "Bağlantıyı kaldır",
+      "kaldirOnay": {
+        "baslik": "{ad} bağlantısı kaldırılsın mı?",
+        "metin": "Bu işlemden sonra bu öğrencinin çalışma bilgilerini göremezsiniz. Öğrenci ve siz bilgilendirilirsiniz. Yeniden bağlamak için yeni bir kod gerekir.",
+        "onayla": "Evet, kaldır",
+        "vazgec": "Vazgeç"
+      },
+      "kaldirildi": "Bağlantı kaldırıldı.",
+      "hata": "İşlem tamamlanamadı. Birazdan tekrar deneyin.",
+      "yukleniyor": "Yükleniyor...",
+      "yeniEkle": "Yeni çocuk ekle"
     },
     "stats": {
       "weeklyTime": "Haftalık Çalışma",
@@ -59,28 +92,49 @@
       "xp": "XP",
       "level": "Seviye"
     },
+    "buHafta": {
+      "title": "Bu hafta",
+      "kaynak": "Son 7 gün. Süre ve soru sayısı çalışma düzenini gösterir; öğrenme düzeyini tek başına ölçmez.",
+      "sure": "Çalışma süresi",
+      "sureDeger": "{dk} dk",
+      "soru": "Çözülen soru",
+      "dogru": "Doğru oranı",
+      "azVeri": "Az veri",
+      "azVeriNot": "Oran için en az {min} soru gerekir.",
+      "tekrar": "Tekrar bekleyen konu",
+      "tekrarNot": "Yanlış yapılan ya da tekrar zamanı gelen konular.",
+      "bos": "Bu hafta henüz çalışma kaydı yok.",
+      "bosNot": "Çocuğunuz soru çözmeye başladığında bu özet dolacak."
+    },
     "weekly": {
       "title": "Haftalık Çalışma",
       "desc": "Son 7 günde geçirilen süre ve çözülen soru sayısı",
+      "kaynak": "Kaynak: son 7 günün günlük çalışma kayıtları (süre ve soru sayısı).",
       "empty": "Bu hafta henüz çalışma kaydı yok.",
+      "emptyNot": "Çocuğunuz soru çözdüğünde günlük süre burada görünecek.",
+      "ozet": "Son 7 günde toplam {dk} dk çalışma ve {soru} soru.",
       "minutesLabel": "Süre (dk)",
       "questionsLabel": "Soru sayısı"
     },
     "subjects": {
       "title": "Ders Bazında Başarı",
       "desc": "Çözülen soruların doğru cevap oranına göre dağılımı",
+      "kaynak": "Kaynak: çocuğun çözdüğü sorular. Oran, doğru cevap sayısının toplam soruya bölünmesiyle bulunur.",
       "empty": "Henüz çözülmüş soru yok.",
       "tooltip": "{dogru} / {toplam} doğru",
-      "insufficient": "Henüz yeterli veri yok (en az 6 soru gerekli)"
+      "insufficient": "Henüz yeterli veri yok (en az 6 soru gerekli)",
+      "ozet": "{sayi} derste yeterli veri var. En düşük başarı: {ders} (%{oran})."
     },
     "review": {
       "title": "Tekrar Önerileri",
       "desc": "Sık hata yapılan konular",
+      "kaynak": "Kaynak: yanlış cevaplanan ve tekrar zamanı gelen konular. Oran, o konudaki doğru cevap yüzdesidir.",
       "topic": "Konu",
       "subject": "Ders",
       "wrong": "Yanlış",
       "success": "Başarı",
       "due": "tekrar edilmeli",
+      "azVeri": "Az veri",
       "empty": "Tekrar edilecek konu bulunmuyor. Harika iş!"
     },
     "achievements": {
@@ -92,10 +146,11 @@
       "earnedOn": "{tarih} tarihinde kazanıldı",
       "progressCount": "{ilerleme} / {esik}",
       "progressSubject": "%{ilerleme} başarı (hedef %{esik}) · {deneme} / {min} soru",
-      "empty": "Henüz rozet tanımı bulunmuyor."
+      "empty": "Henüz rozet tanımı bulunmuyor.",
+      "xpNote": "XP ve seviye, oyun içindeki ilerlemeyi gösterir; öğrenme düzeyini ölçmez. Konu bazlı başarı için Dersler sayfasına bakın."
     },
     "membership": {
-      "desc": "Veli hesabınızın aboneliği ve ödeme geçmişi.",
+      "desc": "Abonelik, plan, ödeme geçmişi ve iletişim tercihleriniz.",
       "plans": {
         "title": "Ücretli plan",
         "loading": "Plan bilgisi yükleniyor...",
@@ -103,10 +158,17 @@
         "preparing": "Ücretli plan hazırlık aşamasında. Plan ve fiyatlar açıklandığında bu kartta görünecek.",
         "duration": "{gun} gün",
         "trial": "{gun} gün ücretsiz deneme",
+        "noTrial": "Ücretsiz deneme yok",
+        "priceLabel": "Ücret",
+        "periodLabel": "Süre",
+        "trialLabel": "Ücretsiz deneme",
+        "renewalLabel": "Yenileme",
+        "bilinmiyor": "bilinmiyor",
         "buy": "Planı satın al",
         "checkoutLoading": "Ödeme sayfası açılıyor...",
         "checkoutError": "Ödeme sayfası açılamadı. Lütfen birazdan tekrar deneyin.",
-        "paymentNote": "Ödemeyi kart bilgilerinizle iyzico ödeme sayfasında tamamlarsınız."
+        "paymentNote": "Ödemeyi kart bilgilerinizle iyzico ödeme sayfasında tamamlarsınız.",
+        "cancelNote": "İptal için destek ekibimize ulaşın."
       }
     },
     "subjectsPage": {
@@ -114,6 +176,7 @@
       "empty": "Henüz çözülmüş soru yok. Çocuğunuz soru çözmeye başladığında derslerdeki başarı burada görünecek.",
       "topicsTitle": "Tekrar gereken konular",
       "topicsDesc": "{ders} dersinde yanlış cevaplanan ya da tekrar zamanı gelen konular",
+      "topicsKaynak": "Kaynak: bu dersteki konu kayıtları. Yüzde, en az 6 soru çözülen konularda gösterilir.",
       "topicsEmpty": "Bu derste tekrar gerektiren konu yok.",
       "topicsNote": "Bu sayfa ders düzeyinde özet gösterir. Konu bazında tam ilerleme raporu sonraki güncellemede gelecek."
     },
@@ -123,16 +186,17 @@
       "totalWrong": "Son cevabı yanlış soru",
       "totalDue": "Tekrar zamanı gelen",
       "listDesc": "En çok yanlış yapılan konular",
+      "kaynak": "Kaynak: son cevabı yanlış sorular ve tekrar zamanı gelen konular.",
       "empty": "Şu an tekrar gereken konu yok. Çocuğunuz yeni sorular çözdükçe bu liste güncellenir.",
       "limitNote": "En çok tekrar gereken 10 konu gösterilir."
     },
     "iletisimIzni": {
       "title": "İletişim izinlerim",
-      "text": "Hupolingo'dan abonelik, ürün ve kampanya bilgileri için e-posta almayı açıkça onayladığın sürece sana ticari ileti gönderiyoruz. Onayını istediğin zaman geri alabilirsin; giriş, parola ve güvenlik e-postaları etkilenmez.",
+      "text": "Hupolingo'dan abonelik, ürün ve kampanya bilgileri için e-posta almayı açıkça onayladığınız sürece size ticari ileti gönderiyoruz. Onayınızı istediğiniz zaman geri alabilirsiniz; giriş, parola ve güvenlik e-postaları etkilenmez.",
       "emailLabel": "E-posta ile ticari iletiler",
       "saving": "Kaydediliyor…",
       "error": "Tercih kaydedilemedi. Birazdan tekrar deneyin.",
-      "loadError": "Tercihlerin yüklenemedi. Sayfayı yenileyip tekrar deneyin."
+      "loadError": "Tercihleriniz yüklenemedi. Sayfayı yenileyip tekrar deneyin."
     },
     "goalsPage": {
       "title": "Günlük Hedefler",
@@ -149,21 +213,27 @@
     "activityPage": {
       "title": "Son 7 Gün Aktivitesi",
       "desc": "Çocuğunuzun günlük çalışma özeti",
+      "kaynak": "Kaynak: son 7 günün günlük çalışma kayıtları. Günlük oran, en az 6 soru çözülen günlerde gösterilir.",
       "empty": "Bu hafta henüz çalışma kaydı yok.",
+      "emptyNot": "Çocuğunuz soru çözdükçe günlük özet burada oluşacak.",
       "questions": "soru",
       "correct": "doğru",
       "study": "çalışma",
       "noActivity": "Bu gün çalışma yok",
-      "accuracy": "başarı"
+      "accuracy": "başarı",
+      "azVeri": "Az veri",
+      "azVeriNot": "En az {min} soru gerekir"
     },
     "consent": {
       "title": "Çocuk Verilerinin Kullanımı",
       "gate": "Öğrencinin çalışma verileri, veli onayı verildikten sonra görünür. Onayı aşağıdaki karttan verebilirsiniz.",
       "notice": "Çocuğunuzun çalışma verilerini toplamamız için veli onayı gerekiyor.",
       "desc": "Veriler yalnızca eğitsel amaçla işlenir, üçüncü taraflarla paylaşılmaz ve istediğiniz an geri çekilebilir.",
+      "ogretmenNotice": "Çocuğunuzun öğretmeni varsa öğretmen yalnızca sınıf düzeyinde toplu bir özet görür. Bu özette ad, e-posta ve tek tek cevaplar yer almaz. Sınıfta en az 3 öğrenci cevap vermediyse ilerleme değerleri gösterilmez.",
       "give": "Onay ver",
       "withdraw": "Onayı geri çek",
       "loading": "Kaydediliyor...",
+      "checking": "Onay durumu kontrol ediliyor...",
       "error": "İşlem tamamlanamadı.",
       "saveError": "Onay kaydedilemedi. Lütfen tekrar deneyin.",
       "status": {
@@ -171,6 +241,25 @@
         "given": "Onay verildi",
         "withdrawn": "Onay geri çekildi"
       }
+    },
+    "abonelik": {
+      "loading": "Yükleniyor...",
+      "bilinmiyor": "bilinmiyor",
+      "saglayici": "Ödeme sağlayıcısı",
+      "yenilemeBaslik": "Yenileme ve iptal",
+      "yenileme": "Yenileme",
+      "iptalNot": "İptal için destek ekibimize ulaşın."
+    },
+    "odeme": {
+      "loading": "Yükleniyor...",
+      "durumBaslik": "Durum"
+    },
+    "denemeKaydi": {
+      "consentLegend": "Onaylar",
+      "katilimLabel": "Çocuğum için bu deneme sınavının katılım koşullarını okudum ve kabul ediyorum. Telefon numarası yalnızca bu sınavla ilgili hatırlatma için kullanılacak.",
+      "katilimNot": "Zorunlu. Sınav kaydı için gereklidir.",
+      "pazarlamaLabel": "Hupolingo'dan ürün ve kampanya iletilerinin telefonuma gönderilmesine izin veriyorum.",
+      "pazarlamaNot": "İsteğe bağlı. İşaretlemeseniz de sınav kaydınızı tamamlayabilirsiniz."
     }
   }
 }

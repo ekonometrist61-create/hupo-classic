@@ -31,6 +31,14 @@ const PAGE_SIZE = 25;
 const ROLES: UserRole[] = ["veli", "ogrenci", "admin", "ogretmen"];
 const ROLE_COLOR = { veli: "info", ogrenci: "primary", admin: "warning", ogretmen: "success" } as const;
 
+// Dokunma hedefi en az 44 px; tablo ilk sütunu yatay kaydırmada sabit kalır (TASKS §20).
+const LINK_TOUCH = `${linkBtn} inline-flex min-h-11 items-center`;
+const UNLINK_TOUCH =
+  "inline-flex min-h-11 items-center text-theme-sm font-medium text-error-600 hover:text-error-700 dark:text-error-500";
+const TH_STICKY =
+  "sticky start-0 z-10 bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase dark:bg-gray-900 dark:text-gray-400";
+const TD_STICKY = `${tdClass} sticky start-0 z-10 bg-white dark:bg-gray-900`;
+
 export default function UsersManager() {
   const t = useTranslations("yonetim.kullanicilar");
   const [search, setSearch] = useState("");
@@ -100,7 +108,7 @@ export default function UsersManager() {
     <div className="space-y-6">
       <section className={`${cardClass} p-5 sm:p-6`}>
         <div className="mb-4 flex flex-wrap items-end gap-4">
-          <div className="min-w-60 flex-1">
+          <div className="w-full min-w-60 flex-1">
             <label className={labelClass} htmlFor="u-search">{t("search")}</label>
             <input
               id="u-search"
@@ -111,7 +119,7 @@ export default function UsersManager() {
               onChange={(e) => { setSearch(e.target.value); setPage(0); setLoading(true); }}
             />
           </div>
-          <div className="min-w-40">
+          <div className="w-full min-w-40 sm:w-auto">
             <label className={labelClass} htmlFor="u-role">{t("role")}</label>
             <select
               id="u-role"
@@ -142,66 +150,127 @@ export default function UsersManager() {
         ) : rows.length === 0 ? (
           <p className="py-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("empty")}</p>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="min-w-full">
-              <thead className="border-b border-gray-100 dark:border-gray-800">
-                <tr>
-                  <th className={thClass}>{t("cols.name")}</th>
-                  <th className={thClass}>{t("cols.email")}</th>
-                  <th className={thClass}>{t("cols.role")}</th>
-                  <th className={thClass}>{t("cols.grade")}</th>
-                  <th className={thClass}>{t("cols.parent")}</th>
-                  <th className={thClass}>{t("cols.children")}</th>
-                  <th className={thClass}>{t("cols.joined")}</th>
-                  <th className={thClass} />
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-                {rows.map((u) => (
-                  <tr key={u.id}>
-                    <td className={`${tdClass} font-medium text-gray-800 dark:text-white/90`}>
-                      <button
-                        type="button"
-                        className="text-start font-medium hover:text-brand-500 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-blue-light-400"
-                        onClick={() => setProfileUser(u)}
-                        aria-label={`${t("profile.open")}: ${u.ad ?? u.email ?? ""}`}
-                      >
-                        {u.ad ?? "-"}
+          <>
+            {/* Telefon (md altı): kart görünümü. */}
+            <ul className="space-y-3 md:hidden">
+              {rows.map((u) => (
+                <li key={u.id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
+                  <button
+                    type="button"
+                    className="flex min-h-11 w-full items-center text-start font-medium text-gray-800 hover:text-brand-500 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-blue-light-400 dark:text-white/90"
+                    onClick={() => setProfileUser(u)}
+                    aria-label={`${t("profile.open")}: ${u.ad ?? u.email ?? ""}`}
+                  >
+                    <span className="wrap-break-word">{u.ad ?? "-"}</span>
+                  </button>
+                  <p className="break-all text-theme-xs text-gray-500 dark:text-gray-400">{u.email ?? "-"}</p>
+                  <div className="mt-2 flex flex-wrap items-center gap-2">
+                    <Badge size="sm" color={ROLE_COLOR[u.rol] ?? "light"}>{t(`roles.${u.rol}`)}</Badge>
+                  </div>
+                  <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 text-theme-sm">
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.grade")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">{u.sinif ?? "-"}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.parent")}</dt>
+                      <dd className="wrap-break-word text-gray-800 dark:text-white/90">
+                        {u.rol === "ogrenci" ? (u.veli_ad ?? t("unlinked")) : "-"}
+                      </dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.children")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">{u.rol === "veli" ? u.cocuk_sayisi : "-"}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.joined")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">
+                        {u.uyelik_tarihi ? formatDate(new Date(u.uyelik_tarihi)) : "-"}
+                      </dd>
+                    </div>
+                  </dl>
+                  {u.rol === "ogrenci" && (
+                    <div className="mt-4 flex flex-wrap gap-2">
+                      <button type="button" className={outlineBtn} onClick={() => setLinkTarget(u)}>
+                        {u.veli_id ? t("changeParent") : t("linkParent")}
                       </button>
-                    </td>
-                    <td className={tdClass}>{u.email ?? "-"}</td>
-                    <td className={tdClass}>
-                      <Badge size="sm" color={ROLE_COLOR[u.rol] ?? "light"}>{t(`roles.${u.rol}`)}</Badge>
-                    </td>
-                    <td className={tdClass}>{u.sinif ?? "-"}</td>
-                    <td className={tdClass}>{u.rol === "ogrenci" ? (u.veli_ad ?? t("unlinked")) : "-"}</td>
-                    <td className={tdClass}>{u.rol === "veli" ? u.cocuk_sayisi : "-"}</td>
-                    <td className={`${tdClass} whitespace-nowrap`}>
-                      {u.uyelik_tarihi ? formatDate(new Date(u.uyelik_tarihi)) : "-"}
-                    </td>
-                    <td className={`${tdClass} whitespace-nowrap text-end`}>
-                      {u.rol === "ogrenci" && (
-                        <span className="flex justify-end gap-3">
-                          <button type="button" className={linkBtn} onClick={() => setLinkTarget(u)}>
-                            {u.veli_id ? t("changeParent") : t("linkParent")}
-                          </button>
-                          {u.veli_id && (
-                            <button
-                              type="button"
-                              className="text-theme-sm font-medium text-error-600 hover:text-error-700 dark:text-error-500"
-                              onClick={() => { setUnlinkError(null); setUnlinkTarget(u); }}
-                            >
-                              {t("unlink")}
-                            </button>
-                          )}
-                        </span>
+                      {u.veli_id && (
+                        <button
+                          type="button"
+                          className={UNLINK_TOUCH}
+                          onClick={() => { setUnlinkError(null); setUnlinkTarget(u); }}
+                        >
+                          {t("unlink")}
+                        </button>
                       )}
-                    </td>
+                    </div>
+                  )}
+                </li>
+              ))}
+            </ul>
+
+            {/* Tablet ve masaüstü: tablo; yatay kaydırma kapsayıcıda kalır. */}
+            <div className="hidden overflow-x-auto md:block">
+              <table className="min-w-full">
+                <thead className="border-b border-gray-100 dark:border-gray-800">
+                  <tr>
+                    <th className={TH_STICKY}>{t("cols.name")}</th>
+                    <th className={thClass}>{t("cols.email")}</th>
+                    <th className={thClass}>{t("cols.role")}</th>
+                    <th className={thClass}>{t("cols.grade")}</th>
+                    <th className={thClass}>{t("cols.parent")}</th>
+                    <th className={thClass}>{t("cols.children")}</th>
+                    <th className={thClass}>{t("cols.joined")}</th>
+                    <th className={thClass} />
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
+                  {rows.map((u) => (
+                    <tr key={u.id}>
+                      <td className={`${TD_STICKY} font-medium text-gray-800 dark:text-white/90`}>
+                        <button
+                          type="button"
+                          className="inline-flex min-h-11 items-center text-start font-medium hover:text-brand-500 focus-visible:outline-3 focus-visible:outline-offset-2 focus-visible:outline-blue-light-400"
+                          onClick={() => setProfileUser(u)}
+                          aria-label={`${t("profile.open")}: ${u.ad ?? u.email ?? ""}`}
+                        >
+                          {u.ad ?? "-"}
+                        </button>
+                      </td>
+                      <td className={tdClass}>{u.email ?? "-"}</td>
+                      <td className={tdClass}>
+                        <Badge size="sm" color={ROLE_COLOR[u.rol] ?? "light"}>{t(`roles.${u.rol}`)}</Badge>
+                      </td>
+                      <td className={tdClass}>{u.sinif ?? "-"}</td>
+                      <td className={tdClass}>{u.rol === "ogrenci" ? (u.veli_ad ?? t("unlinked")) : "-"}</td>
+                      <td className={tdClass}>{u.rol === "veli" ? u.cocuk_sayisi : "-"}</td>
+                      <td className={`${tdClass} whitespace-nowrap`}>
+                        {u.uyelik_tarihi ? formatDate(new Date(u.uyelik_tarihi)) : "-"}
+                      </td>
+                      <td className={`${tdClass} whitespace-nowrap text-end`}>
+                        {u.rol === "ogrenci" && (
+                          <span className="flex justify-end gap-3">
+                            <button type="button" className={LINK_TOUCH} onClick={() => setLinkTarget(u)}>
+                              {u.veli_id ? t("changeParent") : t("linkParent")}
+                            </button>
+                            {u.veli_id && (
+                              <button
+                                type="button"
+                                className={UNLINK_TOUCH}
+                                onClick={() => { setUnlinkError(null); setUnlinkTarget(u); }}
+                              >
+                                {t("unlink")}
+                              </button>
+                            )}
+                          </span>
+                        )}
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
         )}
 
         {!loading && !error && total > 0 && (

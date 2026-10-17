@@ -64,7 +64,7 @@ export default function ParentPicker({ selected, onSelect }: ParentPickerProps) 
           </div>
           <button
             type="button"
-            className="text-theme-sm font-medium text-brand-500 dark:text-brand-400"
+            className="inline-flex min-h-11 items-center px-2 text-theme-sm font-medium text-brand-500 dark:text-brand-400"
             onClick={() => onSelect(null)}
           >
             {t("change")}

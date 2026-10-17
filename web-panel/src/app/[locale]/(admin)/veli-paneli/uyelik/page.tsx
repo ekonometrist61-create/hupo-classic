@@ -23,6 +23,10 @@ export default async function UyelikPage({
   if (access.kind === "admin") {
     redirect({ href: "/yonetim", locale });
   }
+  // K1: öğretmen veli panelinde kalmaz; sınıf sayfasına yönlenir.
+  if (access.kind === "ogretmen") {
+    redirect({ href: "/yonetim/siniflar", locale });
+  }
 
   // Üyelik verisi veliye aittir; çocuk listesi gerekmez.
   let body: React.ReactNode;

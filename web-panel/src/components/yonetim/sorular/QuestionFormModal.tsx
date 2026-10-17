@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 import type { AdminQuestion, QuestionInput, QuestionStatus } from "../types";
+import { dokunmaHedefi } from "../ui/responsive";
 import { OPTION_KEYS, splitSteps, validateQuestion } from "./csv";
 
 interface QuestionFormModalProps {
@@ -18,8 +19,11 @@ interface QuestionFormModalProps {
   onSaved: () => void;
 }
 
+// Mobilde 16 px (R3). Paylaşılan Input/TextArea bileşenleri text-sm kullanır; bu yüzden
+// aşağıdaki alanlara className ile `text-base! md:text-sm!` verilir (önemli ekleme, sıra bağımsız).
 const selectClass =
-  "h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 text-sm text-gray-800 shadow-theme-xs focus:border-brand-300 focus:ring-3 focus:ring-brand-500/10 focus:outline-hidden dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:focus:border-brand-800";
+  "h-11 w-full rounded-lg border border-gray-300 bg-transparent px-4 text-base text-gray-800 shadow-theme-xs focus:border-brand-300 focus:ring-3 focus:ring-brand-500/10 focus:outline-hidden md:text-sm dark:border-gray-700 dark:bg-gray-900 dark:text-white/90 dark:focus:border-brand-800";
+const fieldFont = "text-base! md:text-sm!";
 
 export default function QuestionFormModal({
   question,
@@ -107,6 +111,7 @@ export default function QuestionFormModal({
           <Label htmlFor="q-okul">{t("form.okul")}</Label>
           <Input
             id="q-okul"
+            className={fieldFont}
             value={okul}
             disabled={saving}
             onChange={(e) => setOkul(e.target.value)}
@@ -116,6 +121,7 @@ export default function QuestionFormModal({
           <Label htmlFor="q-ders">{t("form.ders")}</Label>
           <Input
             id="q-ders"
+            className={fieldFont}
             value={ders}
             disabled={saving}
             onChange={(e) => setDers(e.target.value)}
@@ -125,6 +131,7 @@ export default function QuestionFormModal({
           <Label htmlFor="q-konu">{t("form.konu")}</Label>
           <Input
             id="q-konu"
+            className={fieldFont}
             value={konu}
             disabled={saving}
             onChange={(e) => setKonu(e.target.value)}
@@ -134,6 +141,7 @@ export default function QuestionFormModal({
           <Label htmlFor="q-alt">{t("form.altKonu")}</Label>
           <Input
             id="q-alt"
+            className={fieldFont}
             value={altKonu}
             disabled={saving}
             onChange={(e) => setAltKonu(e.target.value)}
@@ -173,6 +181,7 @@ export default function QuestionFormModal({
         <Label>{t("form.soruMetni")}</Label>
         <TextArea
           rows={4}
+          className={fieldFont}
           value={soru}
           disabled={saving}
           onChange={setSoru}
@@ -194,6 +203,7 @@ export default function QuestionFormModal({
               <div className="flex-1">
                 <Input
                   aria-label={t("form.sik", { key: k })}
+                  className={fieldFont}
                   value={siklar[k]}
                   disabled={saving}
                   placeholder={
@@ -235,6 +245,7 @@ export default function QuestionFormModal({
         <Label>{t("form.cozum")}</Label>
         <TextArea
           rows={4}
+          className={fieldFont}
           value={adimlar}
           disabled={saving}
           onChange={setAdimlar}
@@ -257,7 +268,7 @@ export default function QuestionFormModal({
           type="button"
           disabled={saving}
           onClick={onClose}
-          className="rounded-lg border border-gray-300 px-4 py-2.5 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5"
+          className={`${dokunmaHedefi} justify-center rounded-lg border border-gray-300 px-4 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:opacity-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5`}
         >
           {t("form.cancel")}
         </button>
@@ -265,7 +276,7 @@ export default function QuestionFormModal({
           type="button"
           disabled={saving}
           onClick={save}
-          className="rounded-lg bg-brand-500 px-5 py-2.5 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600 disabled:opacity-50"
+          className={`${dokunmaHedefi} justify-center rounded-lg bg-brand-500 px-5 text-sm font-medium text-white shadow-theme-xs hover:bg-brand-600 disabled:opacity-50`}
         >
           {saving ? t("form.saving") : t("form.save")}
         </button>

@@ -6,6 +6,7 @@ import { useTranslations } from "next-intl";
 import Badge from "@/components/ui/badge/Badge";
 import { cardClass, inputClass } from "../panel/styles";
 import RpcBoundary from "../ui/RpcBoundary";
+import { yapiskanBaslik, yapiskanHucre } from "../ui/responsive";
 import { useAdminRpc } from "../useAdminRpc";
 import { DEMO_ANALYTICS } from "./demoData";
 import type { AnalyticsSummary } from "./types";
@@ -33,7 +34,7 @@ export default function AnalyticsView() {
         <label className="flex items-center gap-2 text-theme-sm">
           {t("window")}
           <select
-            className={`${inputClass} h-10! w-auto!`}
+            className={`${inputClass} w-auto!`}
             value={days}
             onChange={(e) => setDays(Number(e.target.value))}
             aria-label={t("window")}
@@ -56,8 +57,9 @@ export default function AnalyticsView() {
           ];
           return (
             <>
-              <div className="grid gap-6 xl:grid-cols-2">
-                <section className={`${cardClass} p-5 sm:p-6`}>
+              <div className="grid gap-6 md:grid-cols-2">
+                {/* min-w-0: kohort tablosu geniş olduğunda ızgara sütunu taşmasın (R6). */}
+                <section className={`${cardClass} min-w-0 p-5 sm:p-6`}>
                   <h2 className="text-lg font-semibold text-navy dark:text-white/90">{t("funnel.title")}</h2>
                   <p className="mb-4 text-theme-xs text-gray-500 dark:text-gray-400">
                     {t("funnel.desc", { n: a.huni.kayit.toLocaleString("tr-TR"), d: a.gun })}
@@ -81,21 +83,21 @@ export default function AnalyticsView() {
                   <p className="mt-3 text-theme-xs text-gray-500">{t("funnel.note")}</p>
                 </section>
 
-                <section className={`${cardClass} p-5 sm:p-6`}>
+                <section className={`${cardClass} min-w-0 p-5 sm:p-6`}>
                   <h2 className="text-lg font-semibold text-navy dark:text-white/90">{t("cohort.title")}</h2>
                   <p className="mb-4 text-theme-xs text-gray-500 dark:text-gray-400">{t("cohort.desc")}</p>
                   <div className="overflow-x-auto">
                     <table className="w-full min-w-96 border-separate border-spacing-1 text-theme-xs">
                       <thead>
                         <tr>
-                          <th className="text-start font-semibold">{t("cohort.cohort")}</th>
+                          <th className={`${yapiskanBaslik} text-start font-semibold`}>{t("cohort.cohort")}</th>
                           {[0, 1, 2, 3, 4].map((w) => <th key={w} className="font-semibold">H{w}</th>)}
                         </tr>
                       </thead>
                       <tbody>
                         {a.kohort.map((k) => (
                           <tr key={k.hafta}>
-                            <th scope="row" className="text-start font-semibold whitespace-nowrap">
+                            <th scope="row" className={`${yapiskanHucre} text-start font-semibold whitespace-nowrap`}>
                               {k.hafta} <span className="font-normal text-gray-400">(n={k.boyut})</span>
                             </th>
                             {k.tutma.map((p, i) => (
@@ -112,7 +114,7 @@ export default function AnalyticsView() {
                 </section>
               </div>
 
-              <section className={`${cardClass} p-5 sm:p-6`}>
+              <section className={`${cardClass} min-w-0 p-5 sm:p-6`}>
                 <h2 className="text-lg font-semibold text-navy dark:text-white/90">{t("learning.title")}</h2>
                 <dl className="mt-2 divide-y divide-gray-100 text-theme-sm dark:divide-gray-800">
                   <div className="flex justify-between py-3">

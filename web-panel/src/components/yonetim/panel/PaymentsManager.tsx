@@ -3,6 +3,7 @@
 import { useCallback, useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
 
+import DesktopOnly from "@/components/ui/DesktopOnly";
 import { formatDate, formatKurus } from "@/utils/format";
 import { createClient } from "@/utils/supabase/client";
 import Pager from "../Pager";
@@ -25,6 +26,12 @@ import {
 import type { AdminPayment } from "../types";
 
 const PAGE_SIZE = 25;
+
+// Dokunma hedefi en az 44 px; tablo ilk sütunu yatay kaydırmada sabit kalır (TASKS §20).
+const LINK_TOUCH = `${linkBtn} inline-flex min-h-11 items-center`;
+const TH_STICKY =
+  "sticky start-0 z-10 bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase dark:bg-gray-900 dark:text-gray-400";
+const TD_STICKY = `${tdClass} sticky start-0 z-10 bg-white dark:bg-gray-900`;
 
 export default function PaymentsManager() {
   const t = useTranslations("yonetim.odemeler");
@@ -107,7 +114,7 @@ export default function PaymentsManager() {
 
       <section className={`${cardClass} p-5 sm:p-6`}>
         <div className="mb-4 flex flex-wrap items-end gap-4">
-          <div className="min-w-40">
+          <div className="w-full min-w-40 sm:w-auto">
             <label className={labelClass} htmlFor="f-durum">{t("filters.status")}</label>
             <select
               id="f-durum"
@@ -121,7 +128,7 @@ export default function PaymentsManager() {
               ))}
             </select>
           </div>
-          <div>
+          <div className="w-full sm:w-auto">
             <label className={labelClass} htmlFor="f-from">{t("filters.from")}</label>
             <input
               id="f-from"
@@ -132,7 +139,7 @@ export default function PaymentsManager() {
               onChange={(e) => changeFilter(() => setFrom(e.target.value))}
             />
           </div>
-          <div>
+          <div className="w-full sm:w-auto">
             <label className={labelClass} htmlFor="f-to">{t("filters.to")}</label>
             <input
               id="f-to"
@@ -143,11 +150,15 @@ export default function PaymentsManager() {
               onChange={(e) => changeFilter(() => setTo(e.target.value))}
             />
           </div>
-          <div className="ms-auto">
-            <button type="button" className={primaryBtn} onClick={() => setFormOpen(true)}>
+          <DesktopOnly>
+            <button
+              type="button"
+              className={`${primaryBtn} ms-auto`}
+              onClick={() => setFormOpen(true)}
+            >
               {t("manual")}
             </button>
-          </div>
+          </DesktopOnly>
         </div>
 
         <div className="mb-4 grid grid-cols-1 gap-3 sm:grid-cols-2">
@@ -177,43 +188,92 @@ export default function PaymentsManager() {
         ) : rows.length === 0 ? (
           <p className="py-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("empty")}</p>
         ) : (
-          <div className="overflow-x-auto">
-            <table className="min-w-full">
-              <thead className="border-b border-gray-100 dark:border-gray-800">
-                <tr>
-                  <th className={thClass}>{t("cols.date")}</th>
-                  <th className={thClass}>{t("cols.parent")}</th>
-                  <th className={thClass}>{t("cols.plan")}</th>
-                  <th className={thClass}>{t("cols.amount")}</th>
-                  <th className={thClass}>{t("cols.status")}</th>
-                  <th className={thClass}>{t("cols.provider")}</th>
-                  <th className={thClass}>{t("cols.note")}</th>
-                  <th className={thClass} />
-                </tr>
-              </thead>
-              <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
-                {rows.map((p) => (
-                  <tr key={p.id}>
-                    <td className={`${tdClass} whitespace-nowrap`}>{formatDate(new Date(p.tarih))}</td>
-                    <td className={tdClass}>
-                      <span className="block font-medium text-gray-800 dark:text-white/90">{p.veli_ad ?? "-"}</span>
-                      <span className="block text-theme-xs text-gray-500 dark:text-gray-400">{p.veli_email ?? ""}</span>
-                    </td>
-                    <td className={tdClass}>{p.plan_ad ?? p.plan_kod ?? "-"}</td>
-                    <td className={`${tdClass} whitespace-nowrap font-medium`}>{formatKurus(p.tutar_kurus)}</td>
-                    <td className={tdClass}><StatusBadge status={p.durum} /></td>
-                    <td className={tdClass}>{p.saglayici}</td>
-                    <td className={`${tdClass} max-w-56 truncate`}>{p.aciklama ?? "-"}</td>
-                    <td className={`${tdClass} whitespace-nowrap text-end`}>
-                      <button type="button" className={linkBtn} onClick={() => setStatusTarget(p)}>
-                        {t("changeStatus")}
-                      </button>
-                    </td>
+          <>
+            {/* Telefon (md altı): kart görünümü, yalnızca okuma. */}
+            <ul className="space-y-3 md:hidden">
+              {rows.map((p) => (
+                <li
+                  key={p.id}
+                  className="rounded-xl border border-gray-200 p-4 dark:border-gray-800"
+                >
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <p className="wrap-break-word font-medium text-gray-800 dark:text-white/90">
+                        {p.veli_ad ?? "-"}
+                      </p>
+                      <p className="wrap-break-word text-theme-xs text-gray-500 dark:text-gray-400">
+                        {p.veli_email ?? ""}
+                      </p>
+                    </div>
+                    <StatusBadge status={p.durum} />
+                  </div>
+                  <dl className="mt-3 grid grid-cols-2 gap-x-4 gap-y-2 text-theme-sm">
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.date")}</dt>
+                      <dd className="text-gray-800 dark:text-white/90">{formatDate(new Date(p.tarih))}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.amount")}</dt>
+                      <dd className="font-semibold text-gray-800 dark:text-white/90">{formatKurus(p.tutar_kurus)}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.plan")}</dt>
+                      <dd className="wrap-break-word text-gray-800 dark:text-white/90">{p.plan_ad ?? p.plan_kod ?? "-"}</dd>
+                    </div>
+                    <div>
+                      <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.provider")}</dt>
+                      <dd className="wrap-break-word text-gray-800 dark:text-white/90">{p.saglayici}</dd>
+                    </div>
+                    {p.aciklama && (
+                      <div className="col-span-2">
+                        <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.note")}</dt>
+                        <dd className="wrap-break-word text-gray-800 dark:text-white/90">{p.aciklama}</dd>
+                      </div>
+                    )}
+                  </dl>
+                </li>
+              ))}
+            </ul>
+
+            {/* Tablet ve masaüstü: tablo; yatay kaydırma kapsayıcıda kalır. */}
+            <div className="hidden overflow-x-auto md:block">
+              <table className="min-w-full">
+                <thead className="border-b border-gray-100 dark:border-gray-800">
+                  <tr>
+                    <th className={TH_STICKY}>{t("cols.date")}</th>
+                    <th className={thClass}>{t("cols.parent")}</th>
+                    <th className={thClass}>{t("cols.plan")}</th>
+                    <th className={thClass}>{t("cols.amount")}</th>
+                    <th className={thClass}>{t("cols.status")}</th>
+                    <th className={thClass}>{t("cols.provider")}</th>
+                    <th className={thClass}>{t("cols.note")}</th>
+                    <th className={thClass} />
                   </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
+                </thead>
+                <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
+                  {rows.map((p) => (
+                    <tr key={p.id}>
+                      <td className={`${TD_STICKY} whitespace-nowrap`}>{formatDate(new Date(p.tarih))}</td>
+                      <td className={tdClass}>
+                        <span className="block font-medium text-gray-800 dark:text-white/90">{p.veli_ad ?? "-"}</span>
+                        <span className="block text-theme-xs text-gray-500 dark:text-gray-400">{p.veli_email ?? ""}</span>
+                      </td>
+                      <td className={tdClass}>{p.plan_ad ?? p.plan_kod ?? "-"}</td>
+                      <td className={`${tdClass} whitespace-nowrap font-medium`}>{formatKurus(p.tutar_kurus)}</td>
+                      <td className={tdClass}><StatusBadge status={p.durum} /></td>
+                      <td className={tdClass}>{p.saglayici}</td>
+                      <td className={`${tdClass} max-w-56 truncate`}>{p.aciklama ?? "-"}</td>
+                      <td className={`${tdClass} whitespace-nowrap text-end`}>
+                        <button type="button" className={LINK_TOUCH} onClick={() => setStatusTarget(p)}>
+                          {t("changeStatus")}
+                        </button>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </>
         )}
 
         {!loading && !error && total > 0 && (

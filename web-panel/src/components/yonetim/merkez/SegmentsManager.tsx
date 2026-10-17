@@ -11,6 +11,7 @@ import useDebounced from "../panel/useDebounced";
 import { cardClass, inputClass, labelClass, outlineBtn, primaryBtn } from "../panel/styles";
 import Feedback from "../ui/Feedback";
 import RpcBoundary from "../ui/RpcBoundary";
+import { dokunmaHedefi } from "../ui/responsive";
 import { adminCall, useAdminRpc } from "../useAdminRpc";
 import { DEMO_SEGMENT_PREVIEW, DEMO_SEGMENTS } from "./demoData";
 import type { Channel, Segment, SegmentCriteria, SegmentPreview } from "./types";
@@ -133,7 +134,7 @@ export default function SegmentsManager() {
   return (
     <div className="space-y-6">
       <div className="grid grid-cols-1 gap-6 xl:grid-cols-[minmax(0,1.8fr)_minmax(300px,1fr)]">
-        <section className={`${cardClass} p-5 sm:p-6`}>
+        <section className={`${cardClass} min-w-0 p-5 sm:p-6`}>
           <div className="mb-4 flex items-start justify-between gap-3">
             <div>
               <h2 className="text-lg font-semibold text-navy dark:text-white/90">
@@ -149,7 +150,7 @@ export default function SegmentsManager() {
               <legend className="mb-2 text-theme-sm font-semibold">{t("plan")}</legend>
               <div className="flex flex-wrap gap-4">
                 {[{ kod: "free", ad: t("planFree") }, ...plans].map((p) => (
-                  <label key={p.kod} className="flex items-center gap-2 text-theme-sm">
+                  <label key={p.kod} className="flex min-h-11 items-center gap-2 text-theme-sm">
                     <input
                       type="checkbox"
                       className={check}
@@ -166,7 +167,7 @@ export default function SegmentsManager() {
               <legend className="mb-2 text-theme-sm font-semibold">{t("grade")}</legend>
               <div className="flex flex-wrap gap-4">
                 {GRADES.map((g) => (
-                  <label key={g} className="flex items-center gap-2 text-theme-sm">
+                  <label key={g} className="flex min-h-11 items-center gap-2 text-theme-sm">
                     <input
                       type="checkbox"
                       className={check}
@@ -212,7 +213,7 @@ export default function SegmentsManager() {
             </div>
 
             <div className="flex flex-wrap gap-5">
-              <label className="flex items-center gap-2 text-theme-sm">
+              <label className="flex min-h-11 items-center gap-2 text-theme-sm">
                 <input
                   type="checkbox"
                   className={check}
@@ -221,7 +222,7 @@ export default function SegmentsManager() {
                 />
                 {t("firstTask")}
               </label>
-              <label className="flex items-center gap-2 text-theme-sm">
+              <label className="flex min-h-11 items-center gap-2 text-theme-sm">
                 <input
                   type="checkbox"
                   className={check}
@@ -331,22 +332,22 @@ export default function SegmentsManager() {
                         ))}
                       </div>
                     </div>
-                    <div className="flex items-center gap-4 text-theme-sm">
+                    <div className="flex flex-wrap items-center gap-x-4 text-theme-sm">
                       <span>
                         <b>{s.veli_sayisi.toLocaleString("tr-TR")}</b>{" "}
                         <span className="text-gray-500">{t("families")}</span>
                         <span className="text-gray-400"> · {t("emailConsented", { n: s.izinli_eposta })}</span>
                       </span>
-                      <button type="button" className="font-medium text-brand-500 hover:text-brand-600" onClick={() => edit(s)}>
+                      <button type="button" className={`${dokunmaHedefi} font-medium text-brand-500 hover:text-brand-600`} onClick={() => edit(s)}>
                         {t("edit")}
                       </button>
                       <Link
                         href={`/yonetim/kampanyalar?segment=${s.id}`}
-                        className="font-medium text-brand-500 hover:text-brand-600"
+                        className={`${dokunmaHedefi} font-medium text-brand-500 hover:text-brand-600`}
                       >
                         {t("toCampaign")}
                       </Link>
-                      <button type="button" className="font-medium text-error-600 hover:text-error-700" onClick={() => archive(s.id)}>
+                      <button type="button" className={`${dokunmaHedefi} font-medium text-error-600 hover:text-error-700`} onClick={() => archive(s.id)}>
                         {t("archive")}
                       </button>
                     </div>

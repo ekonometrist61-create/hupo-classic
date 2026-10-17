@@ -20,7 +20,7 @@ export function PaymentStatusCounts({
   data: DashboardSummary["odemeler"];
 }) {
   return (
-    <div className="grid grid-cols-2 gap-3 sm:grid-cols-4">
+    <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:grid-cols-4">
       {PAY_KEYS.map(([field, status]) => (
         <div
           key={status}

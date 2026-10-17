@@ -22,12 +22,12 @@ export default function AdminLayout({
     return <>{children}</>;
   }
 
-  // Dynamic class for main content margin based on sidebar state
+  // Sidebar xl (1280 px) altında gizli; içerik boşluğu da aynı kırılımda verilir (tablet daralmasını önler).
   const mainContentMargin = isMobileOpen
     ? "ml-0"
     : isExpanded || isHovered
-    ? "lg:ml-[290px]"
-    : "lg:ml-[90px]";
+    ? "xl:ml-[290px]"
+    : "xl:ml-[90px]";
 
   return (
     <div className="min-h-screen bg-[#f4f6f6] xl:flex dark:bg-gray-950">
@@ -38,7 +38,7 @@ export default function AdminLayout({
       <Backdrop />
       {/* Main Content Area */}
       <div
-        className={`flex-1 transition-all  duration-300 ease-in-out ${mainContentMargin}`}
+        className={`min-w-0 flex-1 transition-all  duration-300 ease-in-out ${mainContentMargin}`}
       >
         {/* Header */}
         <AppHeader />

@@ -1,10 +1,10 @@
-import PageBreadcrumb from "@/components/common/PageBreadCrumb";
 import SiniflarManager from "@/components/yonetim/panel/SiniflarManager";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
+// Sayfa başlığı role göre (admin: "Sınıf Yönetimi", öğretmen: "Sınıflarım") istemcide seçilir.
 export async function generateMetadata() {
-  const t = await getTranslations("yonetim.siniflar");
-  return { title: t("title") };
+  const t = await getTranslations("yonetim.shell.nav");
+  return { title: t("classes") };
 }
 
 export default async function Page({
@@ -14,13 +14,6 @@ export default async function Page({
 }) {
   const { locale } = await params;
   setRequestLocale(locale);
-  const d = await getTranslations("yonetim.shell.pageDesc");
-  const t = await getTranslations("yonetim.siniflar");
 
-  return (
-    <div>
-      <PageBreadcrumb pageTitle={t("title")} description={d("classes")} />
-      <SiniflarManager />
-    </div>
-  );
+  return <SiniflarManager />;
 }

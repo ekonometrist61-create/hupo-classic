@@ -33,6 +33,11 @@ const SECTION = `${cardClass} p-5 sm:p-6`;
 const SECTION_TITLE = "mb-4 text-base font-semibold text-gray-800 dark:text-white/90";
 const LIST_BACK = "/yonetim/potansiyel-adaylar";
 
+// Dokunma hedefi en az 44 px; tablo ilk sütunu yatay kaydırmada sabit kalır (TASKS §20).
+const TH_STICKY =
+  "sticky start-0 z-10 bg-[#f8fafb] px-4 py-3 text-start text-[11px] font-semibold tracking-wide whitespace-nowrap text-gray-500 uppercase dark:bg-gray-900 dark:text-gray-400";
+const TD_STICKY = `${tdClass} sticky start-0 z-10 bg-white dark:bg-gray-900`;
+
 function toPercent(confidence: number): number {
   return Math.round(confidence <= 1 ? confidence * 100 : confidence);
 }
@@ -153,22 +158,22 @@ export default function PotansiyelAdayDetayManager({ prospectId }: { prospectId:
                 </Chip>
               </div>
             </div>
-            <dl className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-2 text-theme-sm">
+            <dl className="grid grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-2 text-theme-sm">
               <dt className="text-gray-500 dark:text-gray-400">E-posta</dt>
-              <dd className="text-gray-800 dark:text-white/90">{p.email ?? "-"}</dd>
+              <dd className="min-w-0 wrap-break-word text-gray-800 dark:text-white/90">{p.email ?? "-"}</dd>
               <dt className="text-gray-500 dark:text-gray-400">Telefon</dt>
-              <dd className="text-gray-800 dark:text-white/90">{p.phone ?? "-"}</dd>
+              <dd className="min-w-0 wrap-break-word text-gray-800 dark:text-white/90">{p.phone ?? "-"}</dd>
               <dt className="text-gray-500 dark:text-gray-400">Kaynak</dt>
-              <dd className="text-gray-800 dark:text-white/90">
+              <dd className="min-w-0 wrap-break-word text-gray-800 dark:text-white/90">
                 {p.source_type ?? "-"}
                 {p.source_detail ? ` · ${p.source_detail}` : ""}
               </dd>
               <dt className="text-gray-500 dark:text-gray-400">UTM</dt>
-              <dd className="text-gray-800 dark:text-white/90">
+              <dd className="min-w-0 wrap-break-word text-gray-800 dark:text-white/90">
                 {`kaynak: ${p.utm_source ?? "-"} · ortam: ${p.utm_medium ?? "-"} · kampanya: ${p.utm_campaign ?? "-"}`}
               </dd>
               <dt className="text-gray-500 dark:text-gray-400">Oluşturma</dt>
-              <dd className="text-gray-800 dark:text-white/90">{formatDate(new Date(p.created_at))}</dd>
+              <dd className="min-w-0 wrap-break-word text-gray-800 dark:text-white/90">{formatDate(new Date(p.created_at))}</dd>
             </dl>
             {p.tags.length > 0 && (
               <div className="flex flex-wrap gap-2">
@@ -214,7 +219,7 @@ export default function PotansiyelAdayDetayManager({ prospectId }: { prospectId:
         <p className="mb-4 text-theme-sm text-gray-600 dark:text-gray-400">
           Kanal izni olmayan, reddedilmiş veya süresi dolmuş kanallara iletişim gönderilmez.
         </p>
-        <div className="grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-5">
           {CONSENT_CHANNELS.map((ch) => {
             const c = consents.find((x) => x.channel === ch.key);
             const status = c?.status ?? "none";
@@ -263,7 +268,7 @@ export default function PotansiyelAdayDetayManager({ prospectId }: { prospectId:
                 </div>
                 {Object.keys(ev.metadata ?? {}).length > 0 && (
                   <details className="mt-2">
-                    <summary className="cursor-pointer text-theme-xs text-brand-500 dark:text-brand-400">Metadata</summary>
+                    <summary className="cursor-pointer py-3.5 text-theme-xs text-brand-500 dark:text-brand-400">Metadata</summary>
                     <pre className="mt-2 overflow-x-auto rounded-md bg-white p-2 text-theme-xs text-gray-700 dark:bg-gray-900 dark:text-gray-300">
                       {JSON.stringify(ev.metadata, null, 2)}
                     </pre>
@@ -280,7 +285,7 @@ export default function PotansiyelAdayDetayManager({ prospectId }: { prospectId:
         {provenance.length === 0 ? (
           <p className="text-theme-sm text-gray-500 dark:text-gray-400">Kaynak kanıtı kaydı yok.</p>
         ) : (
-          <div className="grid gap-4 md:grid-cols-2">
+          <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
             {provenance.map((pv) => (
               <div key={pv.id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
                 <div className="flex flex-wrap items-center justify-between gap-2">
@@ -292,7 +297,7 @@ export default function PotansiyelAdayDetayManager({ prospectId }: { prospectId:
                   <div>{`Çekilme: ${formatDate(new Date(pv.fetched_at))}`}</div>
                 </dl>
                 <details className="mt-3">
-                  <summary className="cursor-pointer text-theme-xs text-brand-500 dark:text-brand-400">Ham veri</summary>
+                  <summary className="cursor-pointer py-3.5 text-theme-xs text-brand-500 dark:text-brand-400">Ham veri</summary>
                   <pre className="mt-2 overflow-x-auto rounded-md bg-gray-50 p-2 text-theme-xs text-gray-700 dark:bg-white/5 dark:text-gray-300">
                     {JSON.stringify(pv.raw_payload, null, 2)}
                   </pre>
@@ -312,7 +317,7 @@ export default function PotansiyelAdayDetayManager({ prospectId }: { prospectId:
             <table className="min-w-full">
               <thead className="border-b border-gray-100 dark:border-gray-800">
                 <tr>
-                  <th className={thClass}>Tarih</th>
+                  <th className={TH_STICKY}>Tarih</th>
                   <th className={thClass}>Toplam</th>
                   <th className={thClass}>Fit</th>
                   <th className={thClass}>Intent</th>
@@ -324,7 +329,7 @@ export default function PotansiyelAdayDetayManager({ prospectId }: { prospectId:
               <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
                 {scoreHistory.map((s) => (
                   <tr key={s.id}>
-                    <td className={`${tdClass} whitespace-nowrap`}>{formatDateTime(s.computed_at)}</td>
+                    <td className={`${TD_STICKY} whitespace-nowrap`}>{formatDateTime(s.computed_at)}</td>
                     <td className={`${tdClass} font-semibold ${scoreTextClass(s.total_score)}`}>{s.total_score}</td>
                     <td className={tdClass}>{s.fit_score}</td>
                     <td className={tdClass}>{s.intent_score}</td>
@@ -370,7 +375,7 @@ export default function PotansiyelAdayDetayManager({ prospectId }: { prospectId:
 
 function BackLink() {
   return (
-    <Link href={LIST_BACK} className="text-theme-sm font-medium text-brand-500 hover:text-brand-600 dark:text-brand-400">
+    <Link href={LIST_BACK} className="inline-flex min-h-11 items-center text-theme-sm font-medium text-brand-500 hover:text-brand-600 dark:text-brand-400">
       ← Adaylara dön
     </Link>
   );
