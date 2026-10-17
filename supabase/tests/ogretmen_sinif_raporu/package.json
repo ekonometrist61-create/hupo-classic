@@ -1,0 +1,13 @@
+{
+  "name": "ogretmen-sinif-raporu-sql-testleri",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Öğretmen sınıf raporu (ogretmen_siniflarim) migration testleri için PGlite (Docker gerektirmez).",
+  "type": "module",
+  "scripts": {
+    "test": "node kos.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}

@@ -5,6 +5,8 @@ plugins {
     id("com.android.application")
     // The Flutter Gradle Plugin must be applied after the Android and Kotlin Gradle plugins.
     id("dev.flutter.flutter-gradle-plugin")
+    // Firebase (push): google-services.json okur. Yapılandırma dosyası yoksa derleme hata verir.
+    id("com.google.gms.google-services")
 }
 
 // Yayin (release) imzasi: android/key.properties dosyasi varsa kullanilir.

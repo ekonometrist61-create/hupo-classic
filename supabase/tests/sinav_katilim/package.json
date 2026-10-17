@@ -1,0 +1,13 @@
+{
+  "name": "sinav-katilim-testi",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Deneme sınavı katılım onayı testi (K6): PGlite ile migration 20261040000000.",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.10"
+  }
+}

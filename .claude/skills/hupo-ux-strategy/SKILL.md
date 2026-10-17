@@ -10,7 +10,7 @@ description: "Hupolingo için kullanıcı araştırması, ürün konumlandırmas
 4. Yolculuğu giriş → görev → sonuç → sonraki adım olarak tasarla. Geri dönüş, oturumu sürdürme, vazgeçme ve bağlantı kesilmesi yollarını ekle.
 5. Yeni görsel yön gerekiyorsa iki kısa alternatif üret; hedef kitle, bilişsel yük, marka ve uygulanabilirlikle seçimini gerekçelendir. Küçük düzeltmelerde alternatif töreni yapma.
 6. Üç-beş gözlenebilir kabul kriteri tanımla. Kullanıcının görevi tamamlamasını ölç; buton tıklamasını tek başına değer olarak sayma.
-7. Mevcut TASKS.md fazlarına bağla; kapsam dışında kalan işleri açıkça yaz. Özellikleri sırf brief'te var diye tek seferde uygulama.
+7. Mevcut PROJE_GUNLUGU.md fazlarına bağla; kapsam dışında kalan işleri açıkça yaz. Özellikleri sırf brief'te var diye tek seferde uygulama.
 
 ## Hupo yolculukları
 - Öğrenci: sınıf/konu → kısa görev → soru → ipucu/açıklama → tekrar → öğrenme sonucu → ödül/sonraki görev. İlk oturumda uzun form, tüm koleksiyon veya ödeme gösterme.

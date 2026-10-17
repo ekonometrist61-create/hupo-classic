@@ -21,7 +21,7 @@ Web + mobil; öğrenci deneyimi, veli raporu ve satın alma akışı, public sat
 - Sahte yorum, sayı, basın logosu, uzman ve sertifika yok. Güvenlik veya hukuki uygunluk iddiası uygulanmış sistem kanıtı gerektirir.
 
 ## Okunan kaynakların durumu
-MASTER_BRIEF.md v2, AGENTS.md v2, TASKS.md v2 (27 Eylül 2026 tarihli belgeler) temel alınmıştır. Sonraki görünür kullanıcı marka tercihleri bağlam olarak eklenmiştir. Kullanıcının yerel repo'su, gerçek ekranları ve onaylı güncel master Hupo asset'i bu çalışma sırasında incelenmemiştir.
+MASTER_BRIEF.md v2, AGENTS.md v2, TASKS.md v2 (27 Eylül 2026 tarihli belgeler; bugünkü adı PROJE_GUNLUGU.md) temel alınmıştır. Sonraki görünür kullanıcı marka tercihleri bağlam olarak eklenmiştir. Kullanıcının yerel repo'su, gerçek ekranları ve onaylı güncel master Hupo asset'i bu çalışma sırasında incelenmemiştir.
 Karakter adlarında eski belgeler ile sonraki tercihler çelişebilir (ör. Bozkır Lideri/Reisi). Bu paket kalan 35 karakter adını yeniden tanımlamaz; güncel onaylı tabloyu bul ve fark varsa karar kaydına ekle. Maskotun gaga/ayak gibi ayrıntılarında onaylı master görseli esas al.
 Fiyatlandırma benchmarkları tarihli referanstır; güncel fiyat veya ürün fiyatı gibi kullanma. Önce gerçek stack, ödeme ve içerik kapsamını kontrol et.
 

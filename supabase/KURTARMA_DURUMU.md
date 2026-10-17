@@ -4,7 +4,7 @@
 > `supabase db reset` / `supabase test db` çalıştırılmadan önce tamamlanması
 > gereken eksikleri listeler.
 > Son güncelleme: 28 Eylül 2026
-> İlgili: `kurtarilan/KURTARMA_RAPORU.md` §3, `TASKS.md` §3-§4
+> İlgili: `kurtarilan/KURTARMA_RAPORU.md` §3, `PROJE_GUNLUGU.md` §3-§4
 
 ---
 
@@ -72,7 +72,7 @@ hata üretmez, hepsi kullanım sözleşmesinden geri kurulmuş tanımlardır:
 
 > Not: `user_badges` ve `evaluate_badges` aslında **mevcut**
 > (`20260920000000_initial_schema.sql` ve `20260920000500_badges.sql`).
-> TASKS.md'deki "eksik" kaydı bu iki kalem için geçersizdir.
+> PROJE_GUNLUGU.md'deki "eksik" kaydı bu iki kalem için geçersizdir.
 > `app_settings` de mevcut (`20260920001100_payments_iyzico.sql`).
 >
 > Kural: bu tablodaki satırlar için **tahmin yürütülmedi**; her türetilmiş

@@ -54,3 +54,8 @@ docs/arsiv/
 # Uretim promptlari (*.prompt.txt) herkese acik klasore girmez.
 web-panel/public/characters/**/*.prompt.txt
 .vercel
+
+# Firebase yerel yapılandırma (push)
+mobile-app/firebase_defines.json
+mobile-app/android/app/google-services.json
+mobile-app/ios/Runner/GoogleService-Info.plist

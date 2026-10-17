@@ -1,7 +1,7 @@
 # Kelime Evreni — entegrasyon notu
 
 Kaynak: `HUPOLINGO_Kelime_Evreni_Flutter_Claude_Paketi.zip` (v0.1). Branch: `feature/kelime-evreni`.
-Karar kaydı ve kalan işler: `TASKS.md` §13.
+Karar kaydı ve kalan işler: `PROJE_GUNLUGU.md` §13.
 
 ## 1. Fark analizi (paket ↔ mevcut repo)
 
@@ -86,7 +86,7 @@ Durum işaretleri: `[x]` kod ve bir otomatik kontrolle doğrulandı; `[ ]` yapı
 ## 4. Bilinen sınırlar
 
 - Gerçek cihaz ve tarayıcı görsel kontrolü yapılmadı (oturum ve cihaz gerekir).
-- Tek yöneticili kurulumda dört göz nedeniyle yayın yapılamaz; bu bir ürün kararıdır (TASKS §13.1 K5).
+- Tek yöneticili kurulumda dört göz nedeniyle yayın yapılamaz; bu bir ürün kararıdır (PROJE_GUNLUGU §13.1 K5).
 - Eşzamanlılık yükü ve gerçek `award_xp_and_streak` (seri, lig, bildirim) ile birlikte SQL testi yapılmadı.
 - İçerik taslak olarak yüklü (93 anlam, 49 ilişki, 48 soru). Yayın için ilişkilerin ve soruların ayrı bir yönetici tarafından onaylanması gerekir (dört göz). Tek yöneticili kurulumda yayın yapılamaz. İçerik dil uzmanı incelemesinden geçmemiştir.
 - Arena (kelime meydan okuma): puanlama `dogru x 4 - yanlis` (mevcut Arena kuralı), Arena XP üretmez (mevcut davranış). Yanıtlarla tekrar/ustalık kaydı oluşmaz. Gerçek cihazda iki hesapla uçtan uca deneme yapılmadı.

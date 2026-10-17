@@ -1,0 +1,14 @@
+﻿{
+  "name": "veli-cocuk-bildirim-sql-testleri",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Ã–ÄŸretmen sÄ±nÄ±f raporu (ogretmen_siniflarim) migration testleri iÃ§in PGlite (Docker gerektirmez).",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}
+

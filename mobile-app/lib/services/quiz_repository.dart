@@ -234,24 +234,18 @@ class QuizRepository {
     return ProfileOverview.fromMap(Map<String, dynamic>.from(data as Map));
   }
 
+  /// Bildirim kutusu `get_bildirimler` RPC'si üzerinden okunur: arşivlenmiş ya da süresi dolmuş
+  /// kampanya kayıtları sunucuda elenir, böylece web paneli ve uygulama aynı listeyi gösterir.
   Future<List<AppNotification>> fetchNotifications({int limit = 40}) async {
-    final rows = await _client
-        .from('notifications')
-        .select('id, tur, baslik, mesaj, ikon, okundu, created_at')
-        .eq('alici_id', _uid)
-        .order('created_at', ascending: false)
-        .limit(limit);
-    return [for (final r in rows) AppNotification.fromMap(r)];
+    final data = await _client.rpc('get_bildirimler', params: {'p_limit': limit, 'p_offset': 0});
+    final satirlar = (data as Map)['satirlar'] as List? ?? const [];
+    return [for (final r in satirlar) AppNotification.fromMap(Map<String, dynamic>.from(r as Map))];
   }
 
+  /// Tam okunmamış sayısı (istemcide 100 ile sınırlı değildir).
   Future<int> fetchUnreadCount() async {
-    final rows = await _client
-        .from('notifications')
-        .select('id')
-        .eq('alici_id', _uid)
-        .eq('okundu', false)
-        .limit(100);
-    return rows.length;
+    final data = await _client.rpc('get_bildirimler', params: {'p_limit': 1, 'p_offset': 0});
+    return ((data as Map)['okunmamis_sayi'] as num?)?.toInt() ?? 0;
   }
 
   Future<void> markAllNotificationsRead() async {

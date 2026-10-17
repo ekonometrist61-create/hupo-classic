@@ -1,5 +1,5 @@
 import LegalDocument from "@/components/legal/LegalDocument";
-import { termsSections } from "@/lib/legal/content";
+import { termsSections, termsSummary } from "@/lib/legal/content";
 import { Metadata } from "next";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
@@ -15,7 +15,8 @@ export default async function TermsPage({ params }: { params: Promise<{ locale: 
   return (
     <LegalDocument
       title="Kullanım Koşulları"
-      updatedLabel="Son güncelleme: 9 Ekim 2026 (taslak)"
+      updatedLabel="Son güncelleme: 17 Ekim 2026 (taslak)"
+      summary={termsSummary}
       sections={termsSections}
     />
   );

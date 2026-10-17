@@ -7,10 +7,12 @@ import Link from "next/link";
 export default async function LegalDocument({
   title,
   updatedLabel,
+  summary,
   sections,
 }: {
   title: string;
   updatedLabel: string;
+  summary?: string[];
   sections: LegalSection[];
 }) {
   const t = await getTranslations("common");
@@ -33,6 +35,22 @@ export default async function LegalDocument({
 
         <h1 className="mt-8 text-3xl font-extrabold tracking-tight">{title}</h1>
         <p className="mt-2 text-sm text-navy-muted">{updatedLabel}</p>
+
+        {summary && summary.length > 0 && (
+          <section
+            aria-labelledby="legal-summary"
+            className="mt-6 rounded-xl border border-navy/10 bg-cream-dark px-5 py-4"
+          >
+            <h2 id="legal-summary" className="text-lg font-bold">
+              Kısaca
+            </h2>
+            <ul className="mt-3 list-disc space-y-2 ps-5 text-base leading-relaxed">
+              {summary.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
+          </section>
+        )}
 
         <div className="mt-8 space-y-8">
           {sections.map((section) => (

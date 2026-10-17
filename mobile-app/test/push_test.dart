@@ -61,7 +61,12 @@ class _FakeBackend implements PushBackend {
 }
 
 class _FakeApi implements PushApi {
-  _FakeApi({this.needsConsent = false, this.enabled = false, this.failSet = false});
+  _FakeApi({
+    this.needsConsent = false,
+    this.enabled = false,
+    this.failSet = false,
+    this.onIzinAllowed = true,
+  });
 
   bool needsConsent;
   bool enabled;
@@ -70,6 +75,20 @@ class _FakeApi implements PushApi {
   final registered = <String>[];
   final unregistered = <String>[];
   String? lastPlatform;
+
+  /// Sıklık sınırı: false ise ön izin gösterilmez.
+  bool onIzinAllowed;
+  int onIzinBaslatCount = 0;
+  final bildirilen = <String>[];
+
+  @override
+  Future<bool> onIzinBaslat() async {
+    onIzinBaslatCount++;
+    return onIzinAllowed;
+  }
+
+  @override
+  Future<void> onIzinBildir(String sonuc) async => bildirilen.add(sonuc);
 
   @override
   Future<PushPreference> getPreference() async => PushPreference(
@@ -279,36 +298,80 @@ void main() {
       expect(find.textContaining('henüz kullanılamıyor'), findsOneWidget);
     });
 
-    testWidgets('açma: önce açıklama penceresi; "Şimdi değil" izin istemez', (tester) async {
+    testWidgets('açma: önce Hupo ön izin ekranı; "Şimdilik değil" izin istemez ve ölçülür', (tester) async {
       final backend = _FakeBackend();
       final api = _FakeApi();
       await pump(tester, backend, api);
 
       await tester.tap(find.byKey(const Key('push-switch')));
       await tester.pumpAndSettle();
-      expect(find.text('Bildirimleri açalım mı?'), findsOneWidget);
+      expect(find.text('Hupo sana haber versin mi?'), findsOneWidget);
       expect(find.textContaining('20:00 ile sabah 08:00'), findsOneWidget);
 
-      await tester.tap(find.text('Şimdi değil'));
+      await tester.tap(find.text('Şimdilik değil'));
       await tester.pumpAndSettle();
       expect(backend.permissionRequests, 0);
       expect(api.setCalls, isEmpty);
+      expect(api.bildirilen, ['ertele']);
     });
 
-    testWidgets('açma: onaylayınca izin istenir ve anahtar açık görünür', (tester) async {
+    testWidgets('açma: "Evet, haber versin" → izin istenir, anahtar açılır, sonuçlar ölçülür', (tester) async {
       final backend = _FakeBackend();
       final api = _FakeApi();
       await pump(tester, backend, api);
 
       await tester.tap(find.byKey(const Key('push-switch')));
       await tester.pumpAndSettle();
-      await tester.tap(find.text('Evet, aç'));
+      await tester.tap(find.text('Evet, haber versin'));
       await tester.pumpAndSettle();
 
       expect(backend.permissionRequests, 1);
       expect(api.registered, isNotEmpty);
       expect(sw(tester).value, isTrue);
       expect(find.textContaining('Bildirimler açıldı'), findsOneWidget);
+      expect(api.bildirilen, ['evet', 'sistem_verildi']);
+    });
+
+    testWidgets('sıklık sınırı dolunca Hupo ekranı atlanır, doğrudan sistem izni istenir', (tester) async {
+      final backend = _FakeBackend();
+      final api = _FakeApi(onIzinAllowed: false);
+      await pump(tester, backend, api);
+
+      await tester.tap(find.byKey(const Key('push-switch')));
+      await tester.pumpAndSettle();
+      expect(find.text('Hupo sana haber versin mi?'), findsNothing);
+      expect(backend.permissionRequests, 1);
+      // Hupo ekranı yok → yalnız sistem penceresinin sonucu ölçülür (evet/ertele yazılmaz).
+      expect(api.bildirilen, ['sistem_verildi']);
+      expect(sw(tester).value, isTrue);
+    });
+
+    testWidgets('sistem izni reddedilirse sonuç "sistem_reddedildi" olarak ölçülür', (tester) async {
+      final backend = _FakeBackend(grantOnRequest: false);
+      final api = _FakeApi();
+      await pump(tester, backend, api);
+
+      await tester.tap(find.byKey(const Key('push-switch')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Evet, haber versin'));
+      await tester.pumpAndSettle();
+
+      expect(api.bildirilen, ['evet', 'sistem_reddedildi']);
+      expect(sw(tester).value, isFalse);
+    });
+
+    testWidgets('izin zaten verilmişse sistem sonucu ölçülmez (yalnız kullanıcı cevabı)', (tester) async {
+      final backend = _FakeBackend(permission: PushPermission.granted);
+      final api = _FakeApi();
+      await pump(tester, backend, api);
+
+      await tester.tap(find.byKey(const Key('push-switch')));
+      await tester.pumpAndSettle();
+      await tester.tap(find.text('Evet, haber versin'));
+      await tester.pumpAndSettle();
+
+      expect(backend.permissionRequests, 0);
+      expect(api.bildirilen, ['evet']);
     });
 
     testWidgets('metinlerde suçlayıcı/baskıcı ifade yok', (tester) async {

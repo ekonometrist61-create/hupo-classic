@@ -37,6 +37,12 @@ abstract class PushApi {
   Future<PushPreference> setPreference(bool enabled);
   Future<void> registerToken(String token, String platform);
   Future<void> unregisterToken(String token);
+
+  /// Ön izin gösterilebilir mi? 14 günde en fazla 2 gösterim. true dönerse gösterim sayılır.
+  Future<bool> onIzinBaslat();
+
+  /// Ön izin sonucunu ölçüme yazar: evet | ertele | sistem_verildi | sistem_reddedildi.
+  Future<void> onIzinBildir(String sonuc);
 }
 
 class SupabasePushApi implements PushApi {
@@ -69,5 +75,16 @@ class SupabasePushApi implements PushApi {
   @override
   Future<void> unregisterToken(String token) async {
     await _client.rpc('unregister_device_token', params: {'p_token': token});
+  }
+
+  @override
+  Future<bool> onIzinBaslat() async {
+    final data = await _client.rpc('push_on_izin_baslat');
+    return data == true;
+  }
+
+  @override
+  Future<void> onIzinBildir(String sonuc) async {
+    await _client.rpc('push_on_izin_bildir', params: {'p_sonuc': sonuc});
   }
 }

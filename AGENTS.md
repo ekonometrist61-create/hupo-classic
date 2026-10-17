@@ -1,7 +1,7 @@
 # AGENTS.md — Proje Okulu / Öğrenci Hazırlık (Hupo)
 
 > Bu dosya, bu depoda çalışan **her ajan** ve **her insan** için kuralları tanımlar.
-> Başlamadan önce `MASTER_BRIEF.md`'yi oku.
+> Başlamadan önce `MASTER_BRIEF.md`'yi ve `PROJE_GUNLUGU.md` açık işler panosunu (§9) oku.
 
 ---
 
@@ -183,3 +183,76 @@ supabase test db                       # supabase/tests/*.sql
 
 Bir değişiklik yapmadan önce hangi katmanı etkilediğini söyle. Katmanlar arası
 bağımlılık: `supabase` → `mobile-app`/`web-panel` → (ortak) mesaj anahtarları.
+
+---
+
+## 9. Proje Günlüğü (`PROJE_GUNLUGU.md`)
+
+Projenin planlarını, kararlarını, gelişmelerini, sorunlarını ve açık işlerini tuttuğu
+tek günlük. Eski adı `TASKS.md`; 2026-10-17'de yeniden adlandırıldı. Eski bölüm
+numaraları (`§11.7` gibi) aynen geçerlidir; kod yorumları bu numaralara atıf yapar.
+
+Bu dosya sohbet bitince de bağlamı taşır. Ana oturum ve alt ajanlar aşağıdaki kurallara uyar.
+
+### 9.1 Başlamadan önce
+1. `PROJE_GUNLUGU.md` içindeki **A. Açık işler panosunu** oku.
+2. Görevin konusuna ait kayıtları bul: konu kodu ile (ör. `grep "· VEL ·"`).
+3. Görev bir açık işe (`GÖR-###`) bağlıysa onu kullan; değilse yeni GÖR numarası aç.
+
+### 9.2 Ne zaman kayıt açılır
+Zorunlu:
+- Plan çıkarıldığında veya değiştiğinde → `Tür: Plan`
+- Karar alındığında ya da önerildiğinde → `Tür: Karar`
+- Önemli gelişmede (dağıtım, migration, büyük değişiklik, canlı veri) → `Tür: Gelişme`
+- Sorun veya hata bulunduğunda → `Tür: Sorun`
+- İş ertelendiğinde → `Durum: ERTELENDİ` (gerekçe ile)
+- İş bittiğinde veya doğrulanamadığında → `Durum` ve `Doğrulama` alanları
+
+Gerekmez: yazım düzeltmesi, tek satırlık yorum, dışarıyı etkilemeyen okuma/arama adımları.
+
+### 9.3 Kayıt biçimi
+
+```
+### K-0042 · 2026-10-17 14:05 · VEL · Kısa başlık
+- **Tür:** Plan | Karar | Gelişme | Sorun | Yapılacak | Not
+- **Konu:** VEL
+- **Bağlam:** Neden bu kayıt açıldı, ne tetikledi.
+- **Plan:** Adımlar (numaralı).
+- **Karar:** Ne karar verildi, kim verdi. Kullanıcı kararı `ONAYLI`; ajan önerisi `ONAY BEKLİYOR`.
+- **Durum:** PLANLANDI | DEVAM | BEKLİYOR | ENGELLİ | ERTELENDİ | TAMAMLANDI | İPTAL
+- **Doğrulama:** DOĞRULANDI | KISMİ | DOĞRULANMADI | — (yalnızca Plan/Karar/Not türünde)
+- **Sahip:** Ajan | Kullanıcı | Hukuk | Dış hizmet
+- **Önem:** Kritik | Yüksek | Orta | Düşük
+- **Açıklama:** Kısa düz metin: ne oldu, ne kaldı.
+- **Kanıt:** Commit, dosya yolu, komut ve sonucu (ör. `npm run lint` — 0 hata).
+- **İlgili:** GÖR-…, eski § numaraları, dosya yolları.
+```
+
+Konu kodları:
+
+| Kod | Alan | Kod | Alan |
+|---|---|---|---|
+| GÜV | Güvenlik | YÖN | Yönetim paneli |
+| VT | Veritabanı ve migration | WEB | Web sitesi ve landing |
+| MOB | Mobil uygulama | TSR | Tasarım ve UX |
+| VEL | Veli paneli ve anket | BYM | Büyüme ve ölçüm |
+| DEN | Deneme sınavı | HUK | Hukuk ve KVKK |
+| ALT | Altyapı, dağıtım, alan adı | BEL | Belge ve süreç |
+
+### 9.4 Açık işler panosu (A bölümü)
+- Her açık iş bir `GÖR-###` satırıdır. Numara bir kez verilir, yeniden kullanılmaz.
+- İş kapanınca önce K kaydı yazılır (`TAMAMLANDI` + `DOĞRULANDI`), sonra satır panodan çıkarılır.
+- Yeni açık iş panonun sonuna eklenir.
+
+### 9.5 Değişmez kurallar
+1. **Kayıt silinmez.** Eski kayıt yeniden yazılmaz; değişiklik gerekirse aynı kaydın altına `- **Güncelleme 2026-10-18 10:30:** …` eklenir.
+2. **`TAMAMLANDI` yalnızca `DOĞRULANDI` ile birlikte.** Kod yazıldı ama test, ekran veya canlı kontrol yapılmadıysa `Doğrulama: DOĞRULANMADI` ve durum `DEVAM` ya da `BEKLİYOR` olur.
+3. **Görsel iş ekran kanıtı olmadan `DOĞRULANDI` olamaz.** Tarayıcı veya cihaz yoksa bunu açıkça yaz.
+4. **Karar kaynağı yazılır.** Kullanıcının onayı `ONAYLI`; ajan önerisi onaylanana kadar `ONAY BEKLİYOR`. Onay gelince yeni kayıt değil, aynı kaydın güncellemesi yazılır.
+5. **Erteleme gerekçesiz olmaz.** `ERTELENDİ` yanına neden ve tekrar açılma koşulu yazılır.
+6. **Hassas bilgi yazılmaz.** Anahtar, şifre, jeton ve kişisel veri (bkz. §5). "Anahtar yenilendi" yazılır, değeri yazılmaz.
+7. **Zaman.** Tarih `2026-10-17`, saat 24 saat, Türkiye saati. Saat tahmin edilmez; `Get-Date` ile alınır.
+8. **Numara sırası.** K numaraları sırayla artar. Yeni K kaydı B bölümünde en üste eklenir.
+9. **Eş zamanlı yazım.** Yazmadan önce dosyayı yeniden oku, yalnızca kendi kaydını ekle, başka ajanın satırını değiştirme.
+10. **Alt ajanlar** kendi işinin kaydını yazar ve raporundaki `FILES` / `TEST` alanlarını kayda aktarır. Ana oturum kaydın durumunu doğrular.
+11. `.claude/agents/` ve `.claude/skills/` altındaki tüm tanımlar bu kurala tabidir.

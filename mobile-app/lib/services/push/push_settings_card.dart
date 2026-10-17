@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../../theme/app_theme.dart';
 import '../../widgets/ui/game_card.dart';
+import 'push_backend.dart';
+import 'push_pre_permission.dart';
 import 'push_providers.dart';
 import 'push_service.dart';
 
@@ -21,51 +23,65 @@ class PushSettingsCard extends ConsumerStatefulWidget {
 class _PushSettingsCardState extends ConsumerState<PushSettingsCard> {
   bool _busy = false;
 
-  static const _explainTitle = 'Bildirimleri açalım mı?';
-  static const _explainBody =
-      'Yeni rozet, seviye ve günlük hedef gibi güzel haberleri telefonundan haber verelim. '
-      'İstediğin zaman buradan kapatabilirsin. '
-      'Akşam 20:00 ile sabah 08:00 arasında bildirim göndermeyiz.';
-
-  Future<bool> _confirm() async {
-    final ok = await showDialog<bool>(
-      context: context,
-      builder: (ctx) => AlertDialog(
-        title: Text(_explainTitle, style: appText(size: 20, weight: FontWeight.w900)),
-        content: Text(
-          _explainBody,
-          style: appText(
-              size: 14, weight: FontWeight.w700, color: AppColors.muted, height: 1.4),
-        ),
-        actions: [
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(false),
-            child: const Text('Şimdi değil'),
-          ),
-          TextButton(
-            onPressed: () => Navigator.of(ctx).pop(true),
-            child: const Text('Evet, aç'),
-          ),
-        ],
-      ),
-    );
-    return ok == true;
-  }
+  Future<bool> _confirm() => showPushPrePermission(context);
 
   void _say(String text) {
     if (!mounted) return;
     ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(text)));
   }
 
+  /// Ön izin, velinin onayı yokken gösterilmez: çocuk önce izin verip sonra "onay gerekli" görmesin.
+  Future<bool> _onIzinGosterilebilir() async {
+    try {
+      final pref = await ref.read(pushPreferenceProvider.future);
+      if (pref.needsParentConsent) {
+        _say('Bildirimleri açmak için velinin onayı gerekiyor.');
+        return false;
+      }
+      return true;
+    } catch (_) {
+      _say('Bir şeyler ters gitti, biraz sonra tekrar deneyelim.');
+      return false;
+    }
+  }
+
+  /// Ön izin sorusu. Sıklık sınırı dolduysa Hupo ekranı atlanır: kullanıcı anahtarı kendisi açtığı
+  /// için doğrudan sistem izni istenir. Sınır içindeyse cevap ölçülür.
+  Future<bool> _onIzinSorusu() async {
+    final api = ref.read(pushApiProvider);
+    if (!await api.onIzinBaslat()) return true;
+    final evet = await _confirm();
+    await api.onIzinBildir(evet ? 'evet' : 'ertele');
+    return evet;
+  }
+
   Future<void> _toggle(bool on) async {
     if (_busy) return;
-    if (on && !await _confirm()) return;
+    if (on) {
+      if (!await _onIzinGosterilebilir()) return;
+      try {
+        if (!await _onIzinSorusu()) return;
+      } catch (_) {
+        _say('Bir şeyler ters gitti, biraz sonra tekrar deneyelim.');
+        return;
+      }
+    }
     if (!mounted) return;
     setState(() => _busy = true);
     try {
       final service = ref.read(pushServiceProvider);
       if (on) {
-        switch (await service.enable()) {
+        // Sistem penceresi bu çağrıda açılacak mı? (yalnızca "notDetermined" ise ölçülür)
+        final izinOncesi = await ref.read(pushBackendProvider).permissionStatus();
+        final sonuc = await service.enable();
+        if (izinOncesi == PushPermission.notDetermined) {
+          if (sonuc == PushEnableResult.enabled) {
+            await ref.read(pushApiProvider).onIzinBildir('sistem_verildi');
+          } else if (sonuc == PushEnableResult.permissionDenied) {
+            await ref.read(pushApiProvider).onIzinBildir('sistem_reddedildi');
+          }
+        }
+        switch (sonuc) {
           case PushEnableResult.enabled:
             _say('Bildirimler açıldı. İstediğin zaman kapatabilirsin.');
           case PushEnableResult.needsParentConsent:
