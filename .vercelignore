@@ -1,0 +1,32 @@
+# Kökten Vercel dağıtımı için yükleme dışlamaları.
+# web-panel build'i yalnızca web-panel/ ve mobile-app/assets/characters'a ihtiyaç duyar
+# (web-panel prebuild: scripts/sync-karakterler.mjs).
+
+# Çalışma oturumu ve araç klasörleri (kilit dosyaları dağıtım sırasında kaybolabiliyor)
+.claude/
+.git/
+.vercel/
+
+# Web-panel dışı, build'de kullanılmayan klasörler
+supabase/
+docs/
+kurtarilan/
+soru-bankasi/
+tools/
+research_notes/
+reports/
+telefonda-ac/
+
+# Derleme çıktıları ve bağımlılıklar
+node_modules/
+**/node_modules/
+web-panel/.next/
+web-panel/test-results/
+web-panel/playwright-report/
+mobile-app/build/
+mobile-app/.dart_tool/
+
+# Yerel ortam dosyaları: demo bayrağı ve token içerebilirler; yüklenmemeli
+.env
+.env.*
+**/.env*.local
