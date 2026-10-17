@@ -247,7 +247,7 @@ begin
     -- ---------------------------------------------------------------
     no := no + 1;
     senaryo := 'Kampanya taslağı kaydedilir; ön kontrol olmadan PLANLANAMAZ (23514)';
-    v_kam := public.admin_kampanya_kaydet(null, 'YM kampanya', 'eposta', v_seg, 'Merhaba', 'Haftalık özet hazır');
+    v_kam := public.admin_kampanya_kaydet(null, 'YM kampanya', 'push', v_seg, 'Merhaba', 'Haftalık özet hazır');
     v_int := 0;
     begin perform public.admin_kampanya_planla(v_kam); exception when check_violation then v_int := v_int + 1; end;
     gecti := (v_int = 1);
@@ -262,6 +262,18 @@ begin
     gecti := (v_json ->> 'sessiz_saat')::boolean and v_int = 1;
     detay := v_json::text;
     return next;
+
+    no := no + 1;
+    senaryo := 'Hukuk kapısı kapalıyken planlama reddedilir (23514); ön kontrol yine çalışır (K-0018)';
+    v_json := public.admin_kampanya_on_kontrol(v_kam, v_gun);
+    v_int := 0;
+    begin perform public.admin_kampanya_planla(v_kam); exception when check_violation then v_int := v_int + 1; end;
+    gecti := v_int = 1 and not (v_json ->> 'kapi_acik')::boolean;
+    detay := format('reddedilen=%s kapi_acik=%s', v_int, v_json ->> 'kapi_acik');
+    return next;
+
+    -- Test durumu: kapı yalnızca bu senaryo için yönetici RPC'siyle açılır (uygulama kodunda açma yolu yok).
+    perform public.admin_pazarlama_push_kapisi_guncelle('onaylandi', 'hupolingo-ticari-ileti-2026-10-v2', 'gerekli_kayit_tamam', 'YM test: kapı açık');
 
     no := no + 1;
     senaryo := 'Gün içi (12:00 yerel) ön kontrol temiz: gönderilecek>=1; planlama başarılı, outbox olayı PII içermez';
@@ -284,7 +296,7 @@ begin
     no := no + 1;
     senaryo := 'Planlanmış kampanya düzenlenemez (23514); iptal edilince iptal olayı yazılır';
     v_int := 0;
-    begin perform public.admin_kampanya_kaydet(v_kam, 'Yeni ad', 'eposta', v_seg, 'B', 'M'); exception when check_violation then v_int := v_int + 1; end;
+    begin perform public.admin_kampanya_kaydet(v_kam, 'Yeni ad', 'push', v_seg, 'B', 'M'); exception when check_violation then v_int := v_int + 1; end;
     perform public.admin_kampanya_iptal(v_kam);
     v_prev := current_setting('role'); perform set_config('role', 'none', true);
     select durum into v_text from public.iletisim_kampanyalari where id = v_kam;
@@ -295,7 +307,7 @@ begin
 
     no := no + 1;
     senaryo := 'Açık kampanyada kullanılan segment arşivlenemez; iptal sonrası arşivlenir';
-    v_kam := public.admin_kampanya_kaydet(null, 'YM ikinci', 'eposta', v_seg, 'Selam', 'Mesaj');
+    v_kam := public.admin_kampanya_kaydet(null, 'YM ikinci', 'push', v_seg, 'Selam', 'Mesaj');
     v_int := 0;
     begin perform public.admin_segment_arsivle(v_seg); exception when foreign_key_violation then v_int := v_int + 1; end;
     perform public.admin_kampanya_iptal(v_kam);

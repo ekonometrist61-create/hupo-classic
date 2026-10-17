@@ -56,11 +56,66 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR-037 | WEB | Hero'daki soru görseli uygulama dilinde illüstrasyon (5. sınıf fen sorusu). Gerçek ekran görüntüsü için telefon bağlantısı ve kilit açma gerekli; ardından `hero-soru.jpg` değiştirilecek | BEKLİYOR | Kullanıcı (cihaz) + Ajan | Orta | Yeni |
 | GÖR-038 | WEB | Footer: "Hakkımızda", "Blog", "İletişim" bağlantıları `#`; YouTube hesabı 404; App Store ve Google Play rozetleri bağlantısız (kullanıcı ertelemişti) | BEKLİYOR | Kullanıcı (hesaplar) + Ajan | Orta | Yeni |
 | GÖR-039 | WEB | Landing canlı doğrulaması: 7 commit push edildi (`8898cd7`→`ae1c078`). Canlıda header, hero, fayda, sayfa sırası ve `/yonetim-giris` bağlantısı kontrol edilmeli; Vercel dağıtım durumu ve Lighthouse doğrulanmadı | BEKLİYOR | Ajan (tarayıcı) + Kullanıcı (Vercel) | Yüksek | Yeni |
-| GÖR-040 | YÖN | Ham bildirim formu (`BildirimManager` → `admin_send_notification`): `ogrenci` ve `tumu` hedefleri kategorisiz serbest metin gönderiyor; öğrenciye yalnızca hizmet bildirimi kuralı UI'da zorunlu değil. Karar: formdan kaldırılsın mı, ya da öğrenci için kategori zorunlu bir RPC mi (K-0018 önerisi c) | BEKLİYOR (karar) | Kullanıcı | Yüksek | K-0018, AGENTS §5 |
+| GÖR-040 | YÖN | Ham bildirim formu (`BildirimManager` → `admin_send_notification`): `ogrenci` ve `tumu` hedefleri kategorisiz serbest metin gönderiyor; öğrenciye yalnızca hizmet bildirimi kuralı UI'da zorunlu değil. Ham formdan `ogrenci` ve `tumu` kaldırıldı (K-0018 onaylı, kod uygulandı). Kalan karar: öğrenci hesaplarına hizmet bildirimi gerekiyorsa kategori (sistem, akademik, duyuru) zorunlu ayrı bir akış kurulsun mu | BEKLİYOR (karar) | Kullanıcı | Orta | K-0018, AGENTS §5 |
+| GÖR-041 | YÖN | Segmentli bildirim: uzak DB'ye `20261044000000` uygulaması (`db:deploy`) ve web-panel dağıtımı (kullanıcı onayı); gerçek yönetici oturumuyla uçtan uca test (kaydet → ön kontrol → planla → dağıtım sonucu). Demo modu bu zinciri doğrulamaz | BEKLİYOR | Kullanıcı (onay, oturum) + Ajan | Yüksek | K-0018 |
+| GÖR-043 | HUK | MEB ODSGM içerikleri (icerik/834, 54 kaynak): altbilgide "Tüm Hakları Saklıdır" yazıyor. Birebir aktarım için MEB'den yazılı izin veya hukuk görüşü gerekli; o zamana kadar yalnızca uyarlama. Lisans kaydı `belirsiz` | BEKLİYOR | Hukuk + Kullanıcı | Yüksek | K-0020 |
+| GÖR-042 | YÖN | Soru Atölyesi (PDF → etiketli soru → varyasyon → denetim → panel import). Faz 0 belgeleri ve şema yazıldı; Faz 1'den devam. Faz 6 (migration/RPC/panel) ayrı onay ister. Lisans dayanağı kaynak kaydına yazılmalı | DEVAM | Ajan + Kullanıcı | Yüksek | K-0020 |
 
 ---
 
 ## B. Kayıtlar (en yeni üstte)
+
+### K-0021 · 2026-10-17 14:53 · YÖN · Soru Atölyesi: LLM sağlayıcısı Gemini ücretsiz katmana alındı
+- **Tür:** Karar
+- **Konu:** YÖN, ALT, HUK
+- **Bağlam:** Kullanıcı ücretsiz API anahtarı veya DeepSeek V4 Flash istedi. Araştırma: DeepSeek API'si kalıcı ücretsiz değil (deneme kredisi), kaynaklara göre API PDF kabul etmiyor (metne çevirme gerekir); kullanıcının "4.1 Flash" dediği model adı kaynaklarda bulunamadı, "V4 Flash" görünüyor. Gemini API ücretsiz katman sunuyor ve PDF'i doğrudan kabul ediyor; ücretsiz katmanda Google verileri ürün geliştirmek için kullanabilir.
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17): **Gemini API, ücretsiz katman.** K-0020'deki Claude API seçimi bu kararla değişti. Claude yedek sağlayıcı olarak kodda duruyor (`LLM_SAGLAYICI=anthropic`).
+- **Plan:** `src/lib/llm.ts` sağlayıcı katmanı (varsayılan gemini). Anahtar `GEMINI_API_KEY` yalnızca `.env` veya ortam değişkeni; model `GEMINI_MODEL` (varsayılan `gemini-2.5-flash`, AI Studio'dan teyit edilmeli). Gizlilik: ücretsiz katmanda veri ürün geliştirme için kullanılabilir; kaynak MEB'in kamuya açık PDF'leri, ancak bu kararın gerekçesi kayda geçti.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ. `npm test` 27/27 geçti (sahte Gemini ve Anthropic yanıtlarıyla). Gerçek API çağrısı yapılmadı: `GEMINI_API_KEY` henüz tanımlı değil. Gemini'nin güncel ücretsiz limitleri ve model adı kaynaklarda tutarsız, AI Studio'dan teyit edilmeli.
+- **Sahip:** Ajan + Kullanıcı (anahtar)
+- **Önem:** Yüksek
+- **Açıklama:** Anahtarı kullanıcı AI Studio'dan alıp yerel `.env` dosyasına yazacak (`.env.example` şablonu var). Anahtar sohbete ve git'e girmemeli.
+- **İlgili:** K-0020, GÖR-042, GÖR-043
+
+### K-0020 · 2026-10-17 14:12 · YÖN · Soru Atölyesi: PDF'ten etiketli soru üretim programı (brief ve plan)
+- **Tür:** Plan
+- **Konu:** YÖN, VT, MOB
+- **Bağlam:** Kullanıcı, MEB'in herkese açık PDF içeriklerinden Hupo'ya uygun soruları etiketli ve denetimli üretecek, sonra yönetim paneline toplu aktaracak bir program istedi. Program önce `C:\Dev\Soru-Cevap Hazırlama Programı` içinde bağımsız geliştirilecek. Brief: `BRIEF.md`, plan: `PLAN.md`, şema: `sema/soru-paketi.v1.schema.json` (aynı klasör).
+- **Plan:** Faz 0 zemin → 1 LLM'siz çekirdek (şema, kural denetimi, mevcut CSV'ye export) → 2 PDF→aday soru + zenginleştirme → 3 varyasyon → 4 LLM hakem + kör çözüm → 5 yerel inceleme ekranı → 6 panel entegrasyonu (migration, `admin_import_questions_v2`, panel sekmesi, ayrı iş olarak Flutter kademeli ipucu) → 7 pilot (~100 soru).
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17): birebir aktarım ve kazanım/kalıptan özgün üretim birlikte olacak; LLM Claude API, anahtar yalnızca ortam değişkeninde. `ONAY BEKLİYOR`: Node.js + TypeScript yığını; Faz 6 (migration ve RPC) ayrı onayla.
+- **Durum:** DEVAM
+- **Doğrulama:** DOĞRULANMADI (yalnızca belge ve şema yazıldı; şema JSON olarak okundu, doğrulayıcı henüz yok)
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **Açıklama:**
+  - Telif: kullanıcı MEB içeriğinin serbest olduğunu beyan etti. Ajan web'de MEB EBA/soru bankası için açık lisans kanıtı bulamadı; bir 2015 MEB sınav kitapçığında izinsiz çoğaltma ve ticari kullanım yasağı ibaresi var. Program her kaynağa `lisans_dayanagi` yazdırır, boşsa birebir kaynağı export'a almaz. Yazılı izin veya hukuk görüşü önerilir (HUK).
+  - Keşifte bulunan mevcut kusurlar Faz 6'da kapatılacak: panel CSV/formunda `sinif` yok (RPC `sinif` yazıyor; yerelde NULL = RLS yüzünden öğrenciye görünmez, canlı doğrulayıcı gövdesi teyitsiz); mükerrer anahtarı sınıfı içermiyor; `csv.ts` formül enjeksiyonu önlemi ve birim testi yok; "Din Kültürü" ders adı tutarsız.
+  - Ana quizde cevap öncesi ipucu ve yanlış şık başına geri bildirim yok (ipucu `cozum_adimlari[0]` içinde); yeni alanlar için kolon yetkisi (cevaptan önce ipucu okunabilir, doğru cevap kapalı) kararı gerekir.
+  - Kazanım kodu uydurulmaz (K8, Kelime Evreni kararı); doğrulanamayan kod null kalır.
+- **Kanıt:** `C:\Dev\Soru-Cevap Hazırlama Programı\{BRIEF.md,PLAN.md,sema\soru-paketi.v1.schema.json}`.
+- **Güncelleme 2026-10-17 14:30:** Faz 1 çekirdeği yazıldı (`src/lib`, `src/qa/katmanA.ts`, `src/export/panelCsv.ts`, `src/cli.ts`; bağımlılık yalnızca ajv). `npm test` — 11/11 geçti. `npm run export -- altin-set\ornek-paket.json …` bilerek bozuk soruyu kırmızı yakaladı, temiz soruyu panel CSV'sine yazdı. Doğrulama hâlâ KISMİ: üretilen CSV panelin gerçek önizlemesinde denenmedi; panel `sinif` sütununu yok sayıyor ve okul değerini olduğu gibi geçiriyor (panel şablonu "İlkokul", veri tabanı değerleri küçük harf `ilkokul`; export küçük harf yazar, tutarsızlık Faz 6'da ele alınacak). Katman B (LLM), PDF okuma, varyasyon ve inceleme ekranı henüz yok.
+- **Güncelleme 2026-10-17 14:34 (Faz 2 kodu ve MEB kaynağı):** Faz 2 kodu yazıldı: `src/lib/anthropic.ts` (araç çağrısı, bütçe tavanı, anahtar yalnızca ortamdan), `src/ingest/kaynak.ts` (sha256, kaynak kaydı), `src/ingest/aday.ts` (PDF belge girişi → aday soru, şemaya tek tek doğrulama), `src/enrich/zenginlestir.ts` (kademeli ipucu, yanlış şık geri bildirimi, beceri/düzey). `npm test` — 23/23 geçti (API sahte istemciyle; gerçek çağrı yapılmadı). **Canlı çalıştırma yapılmadı:** `ANTHROPIC_API_KEY` tanımlı değil, `.env` yok. Kullanıcı ODSGM sayfasını verdi (`odsgm.meb.gov.tr/www/temel-egitim-kitaplari/icerik/834`, 54 kaynak, 2–8. sınıf). **HUK bulgusu:** sayfanın altbilgisinde "2026 © MEB. Tüm Hakları Saklıdır." yazıyor, açık lisans yok. Bu, K-0020'nin "serbest" varsayımıyla çelişiyor. Kullanıcı kararı `ONAYLI`: **uyarlama ve özgün üretim**. Kaynaklar `lisans_durumu=belirsiz` ile kaydedilir; `belirsiz` kaynakta birebir aktarım kodla kapatıldı (model 'birebir' dese bile aday 'uyarlama'ya çevrilir, test var). Birebir aktarım için MEB'den yazılı izin veya hukuk görüşü gerekir (HUK, GÖR-043).
+- **İlgili:** GÖR-042, GÖR-036, GÖR-026, `web-panel/src/components/yonetim/sorular/`, `supabase/migrations/20260927000100_admin_soru_listesi_ve_ice_aktarma.sql`.
+
+### K-0019 · 2026-10-17 13:32 · ALT · Commit zinciri: .vercelignore, birikmiş değişiklikler ve günlük
+- **Tür:** Gelişme
+- **Konu:** ALT, BEL, VT, VEL
+- **Bağlam:** Kullanıcı yükleme ayarı, production dağıtımı ve kalan değişiklikler için commit istedi. Diğer ajanların da bu commit'lerden haberdar olması istendi.
+- **Plan:** (1) Web paneli değişikliklerini commit et (K-0015). (2) `.vercelignore` değişikliğini ayrı commit et (K-0016). (3) Kalan değişiklikleri gizli anahtar taramasından geçirip commit et. (4) Günlüğe yaz.
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17): "hepsini commit et", "yaz günlüğe, diğer ajanlar da bilsin". Commit'ler yalnızca yerel; push yapılmadı, dağıtım yapılmadı.
+- **Durum:** TAMAMLANDI
+- **Doğrulama:** DOĞRULANDI. `git log` üç yeni commit'i gösteriyor. Çalışma ağacı temiz. Gizli anahtar kalıbı taraması: gerçek anahtar yok; eşleşmeler rol adlarının metin geçişi. `node_modules` klasörleri `.gitignore` ile dışarıda.
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:**
+  - `9a22041`: `web-panel` içindeki 126 değişiklik (Çocuklarım sayfası dahil). Production'da.
+  - `e84e977`: `.vercelignore` (yükleme kapsamı). Yalnızca yerel.
+  - `9ce66a0`: kalan 64 dosya: `TASKS.md` → `PROJE_GUNLUGU.md`, veli–çocuk bildirim migration'ı ve testi, `eposta-gonder`, push/telefon/anket migration'ları ve testleri, mobil push ön izin değişiklikleri, yasal sayfalar.
+  - Uzak veritabanına yalnızca `20261042000000` uygulandı. `9ce66a0` içindeki diğer migration'lar **uygulanmadı**; her biri ayrı onaya tabi.
+  - Diğer ajanlar için: yeni kayıt açarken K numarasını son kayıttan sonra al. Bu günlükte bazı numaralar çakıştı (K-0008, K-0014, K-0015); ilgili kayıtlar başka oturumlara ait, değiştirilmedi.
+- **Kanıt:** `git log --oneline -3` → `9ce66a0`, `e84e977`, `9a22041`. `git status --short` → boş.
+- **İlgili:** K-0015, K-0016, GÖR-033, GÖR-013, GÖR-030.
 
 ### K-0018 · 2026-10-17 13:25 · YÖN · Segmentli bildirim gönderimi: plan (onay bekliyor)
 - **Tür:** Plan
@@ -112,6 +167,24 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
   - Risk: uzak DB'de `eposta`/`sms`/`uygulama_ici` kanalında açık kampanya varsa planla reddedilir; bu kampanyalar iptal edilmez, bilgi olarak raporlanır (önce sorgu ile bakılacak).
 - **Kanıt:** `npm run db:status` (uzak = yerel, `20261042`'ye kadar); `npm test` (supabase/tests/bildirim_kampanya): 94/0; `node tools/sql-sozdizim-denetimi.mjs`: 126 dosya, 0 hata.
 - **İlgili:** GÖR-031, GÖR-040 (yeni), K-0003, K-0005, §23, §25.
+- **Güncelleme 2026-10-17 13:48:** Kullanıcı (a)–(e) önerilerinin tamamını onayladı (`ONAYLI`). Uygulandı:
+  - Migration `20261044000000_segment_bildirim_dagitim_kapisi.sql` (yerelde; uzakta henüz yok): `admin_kampanya_kaydet` yalnız `push` kanalını kabul eder; `admin_kampanya_on_kontrol` sonuca `kapi_acik` ve `kanal_dagitilir` ekler; `admin_kampanya_planla` kanal push değilse veya kapı kapalıysa reddeder. Hukuk kapısını açan yol, yeni tablo ve yeni kanal eklenmedi.
+  - PGlite `supabase/tests/bildirim_kampanya`: 107 geçti, 0 başarısız (94 önceki + migration idempotency 2 + yeni bölüm N 11). README beklenen sayısı 54'ten 107'ye güncellendi.
+  - `supabase/tests/yonetim_merkezi_tests.sql` (pgTAP değil; yerelde çalıştırılmadı): eposta kampanyaları push'a çevrildi; kapı kapalı red senaryosu eklendi, kapı yalnızca bu senaryo için yönetici RPC'siyle açılıyor.
+  - Web: yeni `panel/SegmentliBildirim.tsx` (segment önizleme, taslak, ön kontrol, planla, push kampanya listesi) ve `panel/BildirimSekmeleri.tsx` (bildirimler sayfasında iki sekme). `BildirimManager` hedefi yalnız veli (`ogrenci`/`tumu` kaldırıldı). `CampaignsManager`: yalnız push kanalı, `gonderildi` durumu, iptal nedeni, alıcı sayısı, kapı uyarısı, kapı kapalıyken planla pasif. `SegmentsManager`: elle veli seçimi (en fazla 1000), push önizlemesi. `types.ts` ve mesajlar tr/en (anahtar sayıları eşit).
+  - Doğrulama: `npx tsc --noEmit` çıkış 0. `npx eslint` (değişen 7 dosya): 0 hata, 1 uyarı (`BildirimManager.tsx:47` `setLoading` effect içinde; değişiklikten önce de vardı). `node tools/sql-sozdizim-denetimi.mjs`: 127 dosya, 0 hata. `npm run db:preview`: yalnız `20261044000000_segment_bildirim_dagitim_kapisi.sql` bekliyor. Uzak `iletisim_kampanyalari` tablosu boş; açık kampanya yok.
+  - Tarayıcı (demo modu, `NEXT_PUBLIC_DEMO_MODE=1`, port 3010, konsol hatası 0): bildirimler iki sekme, segment seçince önizleme (214 / 131 / 83), kapı kapalı uyarısı, hızlı bildirimde öğrenci hedefi yok; segmentler sayfasında elle veli bölümü; kampanya formunda yalnız push. Ekran görüntüsü: `%TEMP%\bildirim-segment.png`.
+  - Doğrulanmayan: gerçek yönetici oturumuyla kaydet → ön kontrol → planla → dağıtım zinciri. Demo modu kayıt yapmaz; bu akış DOĞRULANMADI. Demo'da `ParentPicker` `admin_list_users` için 401 veriyor (mevcut bileşen davranışı; oturum yok).
+  - Açık: uzak DB'ye `db:deploy` ve web dağıtımı kullanıcı onayı bekliyor (GÖR-041).
+  - **Durum:** DEVAM · **Doğrulama:** KISMİ · **Sahip:** Ajan (kod ve testler), Kullanıcı (uzak DB uygulaması, web dağıtımı, gerçek oturumla test)
+- **Güncelleme 2026-10-17 15:10:** Kullanıcı uzak DB uygulaması ve web dağıtımını onayladı.
+  - Uzak DB: `npm run db:deploy` çıkış 0; `20261044000000` yerel ve uzakta eşleşik.
+  - Web dağıtımı 1: kökten `vercel deploy --prod --archive=tgz`; yükleme 2,1 GB'ta `fetch failed` ile düştü. Dağıtım 2: aynı komut, çıktı vermeden sonlandı (çıkış -1).
+  - Neden: yükleme boyutu `web-panel/.next` (2,2 GB). Kökteki `.vercelignore` bu klasörü dışlamıyor görünüyordu; `web-panel/.vercelignore` eklendi (`.next/`, `node_modules/`, test çıktıları, `.env*`). Bu dosya commit'lenmedi.
+  - Dağıtım 3: `web-panel-qk8cdc190-hupo1.vercel.app` ready, production `https://hupolingo.com`.
+  - Smoke: `/tr`, `/tr/yonetim-giris`, `/tr/yonetim/bildirimler` → 307 (K-0015'teki önceki dağıtımla aynı davranış; hedef adres doğrulanmadı).
+  - Doğrulanmayan: yeni sürümün canlıda yönetici sayfasında göründüğü (oturum gerekli), gerçek kampanya zinciri (GÖR-041).
+  - **Durum:** DEVAM · **Doğrulama:** KISMİ
 
 ### K-0017 · 2026-10-17 · HUK · Gizlilik ve kullanım koşulları metinleri: KVKK ve tüketici hukuku için güçlendirildi
 - **Tür:** Gelişme
@@ -295,6 +368,48 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - **Kanıt:** `node test.mjs` → 31 geçti, 0 başarısız. `npx tsc --noEmit` çıkış 0. `npx eslint` çıkış 0. Çeviri JSON'ları geçerli.
 - **İlgili:** GÖR-033, GÖR-030, GÖR-019, K-0010.
 
+### K-0013 · 2026-10-17 14:38 · YÖN · Veli Hedefler, Aktivite, Denemeler sayfaları 500: kök neden ve düzeltme
+- **Tür:** Sorun
+- **Konu:** VEL
+- **Bağlam:** Eklenti (tarayıcı) kontrolünde Hedefler, Aktivite Akışı ve Deneme Sınavları "sunucu hatası" verdi (React #441 konsol hatası). Dersler, Tekrar, Başarılar, Üyelik çalıştı.
+- **Kök neden:** Üç sunucu sayfası (`page.tsx`, `"use client"` yok) `ChildScope`'a bir `render` fonksiyonu geçiriyordu. Next.js bu fonksiyonu istemci bileşenine aktaramaz: "Functions cannot be passed directly to Client Components". Dersler/Tekrar/Başarılar bu fonksiyonu istemci bileşenlerinin içinde kurduğu için etkilenmemişti. Dev günlüğünde aynı hata 2026-10-17 00:3x'te görülmüştü.
+- **Düzeltme:** İstemci sarmalayıcıları eklendi: `GoalsScope.tsx`, `ActivityScope.tsx`, `ExamsScope.tsx` (`"use client"`; render fonksiyonu burada). Üç sayfa yalnızca `<XScope students={…} />` veriyor.
+- **Doğrulama:** `tsc --noEmit` 0 hata; ESLint (6 dosya) temiz; dev (demo) sunucu günlüğünde hata yok, üç rota 200; kabul testi `-g veli-paneli` 10/10 geçti (390, 768, 1024 px; demo verisi).
+- **Deploy:** Minimal sahne klasöründen `vercel deploy --prod --archive=tgz`: Ready, alias `hupolingo.com`, deployment `web-panel-he1oivcu2-hupo1.vercel.app`. Production'da oturumlu yeniden kontrol henüz yapılmadı (eklenti ile).
+- **Eklenti turu 2 (894 px, veli):** Hedefler, Aktivite, Denemeler, Dersler, Tekrar, Başarılar GEÇTİ; konsol hatası yok. Açık: (a) Çocuklarım "Bağlantı tarihi kayıtlı değil" = `cocuk.baglandi_at` null (UI doğru, veri eksik; yerelde kod hatası değil, DB kaydı kontrol edilmeli). (b) Deneme kaydı formu yalnızca yaklaşan bir deneme sınavı varsa çıkıyor (`get_upcoming_mock_exams_for_child`); o hesapta yaklaşan sınav olmadığı için form görünmedi, bu bir hata değil.
+- **Eklentinin diğer bulguları (sonraki kontrol):** Çocuklarım sayfasında "Bağlantı tarihi kayıtlı değil" (veri tutarsızlığı; sinif/üyelik kaydı eksik olabilir). Sayfa genişlikleri eklentiyle test edilemedi; bu kontrol Playwright ile yapıldı (yukarıdaki kabul testi).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ (yerel ve kabul testi DOĞRULANDI; production'da oturumlu kontrol bekliyor)
+- **Sahip:** Ajan; production kontrolü Kullanıcı (eklenti)
+- **Önem:** Yüksek
+- **İlgili:** K-0012, K-0011 (eklenti raporu), GÖR-022.
+
+### K-0012 · 2026-10-17 13:54 · YÖN · Production deploy tamamlandı; erişim ve test hesabı engeli
+- **Tür:** Gelişme
+- **Konu:** YÖN
+- **Bağlam:** Kullanıcı iki kararını uygulamamı istedi: (1) kökten yeniden dağıtım için `.vercelignore` ve yeniden deneme, (2) Vercel'in kök `.gitignore`'a eklediği `.env*` satırı. Ayrıca oturumlu sayfa kontrolü için test hesabı değişkenlerini (E2E_*) ayarlamamı istedi.
+- **Karar (uygulandı):**
+  1. `.vercelignore` eklendi (kök): `.claude/`, `.git/`, `.vercel/`, `supabase/`, `docs/`, `kurtarilan/`, `tools/` vb., `node_modules`, `web-panel/.next/`, `mobile-app/build/`, `.env*`. `mobile-app/assets/characters` bilerek korundu (web-panel `prebuild` buna bağlı).
+  2. `.gitignore` değişikliği GERİ ALINDI (`git diff` boş). Kökte `.env.local` yok; kök `.env*` gereksiz. Kullanıcı tutulmasını isterse tek satır eklenir.
+- **Deploy:**
+  - Kökten `--archive=tgz` denemesi: 2,1 GB yükleme (`.next` 2,2 GB; `.vercelignore` bu dağıtımda uygulanmadı) → durduruldu (kendi süreç ağacım).
+  - Çözüm: minimal sahne klasörü (web-panel kaynakları, `node_modules`, `.next`, `.env*.local` HARİÇ; karakter görselleri 81 dosya) üzerinden `vercel deploy --prod --yes --archive=tgz`. Sahne klasörü silindi.
+  - Sonuç: **Ready** (50 sn), deployment `web-panel-4kbd430aj-hupo1.vercel.app`, alias `https://hupolingo.com` (Vercel "Aliased" çıktısı).
+  - Önceki deployment `web-panel-fyyx80tyz-hupo1.vercel.app` (diğer oturumun) yerine geçti.
+- **Doğrulama (düzeltme):** K-0011'deki "smoke 200" sonucu GEÇERSİZ. O 200 yanıtı Vercel SSO giriş sayfasıydı (Deployment Protection açık). Bu kayıtta yeniden kontrol edildi: `vercel curl` ile (kullanıcının Vercel oturumu, salt okuma):
+  - `hupolingo.com/tr` → 307 (ana sayfaya)
+  - `hupolingo.com/tr/yonetim` → 307 `/yonetim-giris?next=/yonetim` (oturum gerekli; **demo modu production'da kapalı**)
+  - `hupolingo.com/tr/veli-paneli` → 307 `/veli-paneli/giris?next=…` (oturum gerekli)
+- **Test hesabı (E2E_VELI_EMAIL / E2E_VELI_PASSWORD / E2E_ADMIN_EMAIL / E2E_ADMIN_PASSWORD):** AYARLANAMADI. Ortamda hiçbir test hesabı tanımlı değil (`.claude/settings.local.json` ve `web-panel/.env.local` içinde E2E_ değişkeni yok). Hesap oluşturmak production Supabase Auth'a kullanıcı eklemek ve admin/öğretmen rolü atamak demektir; bu, açık onay olmadan yapılmadı.
+- **Oturumlu kontrol için iki engel:**
+  1. Vercel Deployment Protection: tarayıcı otomasyonu SSO'ya takılır. Çözüm: Vercel'de "Protection Bypass for Automation" gizli anahtarı üretip `.claude/settings.local.json` env bloğuna `VERCEL_AUTOMATION_BYPASS_SECRET` olarak eklemek (gitignored), ya da production için Deployment Protection'ı kapatmak.
+  2. Test hesapları: veli, öğretmen ve yönetici test kullanıcıları (Supabase Auth) ve rol atamaları. Değerler `.claude/settings.local.json` env bloğunda durmalı (CLAUDE.md §Gizli anahtarlar).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ. Build ve deploy tamam; production'da girişe yönlendirme ve demo kapalılığı doğrulandı. Oturumlu sayfalar (veli menüsü, öğretmen sınıf ekranı, yönetim 390 px) henüz gözden geçirilmedi.
+- **Sahip:** Kullanıcı (test hesapları ve bypass anahtarı veya koruma kararı, onay), Ajan (kontrol)
+- **Önem:** Yüksek
+- **İlgili:** GÖR-012 (`hupolingo.com` artık bu deployment'a alias'lı; DNS durumu ayrıca teyit edilmeli), GÖR-020, GÖR-022, K-0011.
+
 ### K-0011 · 2026-10-17 13:17 · YÖN · Merkez/sorular kontrolü, production deploy ve smoke testi
 - **Tür:** Gelişme
 - **Konu:** YÖN
@@ -321,6 +436,7 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
   - `hupolingo.com` alan adı DNS'i henüz çözümlenmiyor (GÖR-012); kontrol `vercel.app` adresiyle yapıldı.
 - **Durum:** DEVAM
 - **Doğrulama:** KISMİ (build, tip denetimi, kabul testi ve public smoke tamam; oturumlu tarayıcı kontrolü ve yayın kaynağı teyidi yok)
+- **Güncelleme 2026-10-17 13:54:** "Public smoke 200" sonucu GEÇERSİZ: 200 yanıtları Vercel SSO sayfasıydı (Deployment Protection). Doğru kontrol K-0012'de (`vercel curl`, 307 login yönlendirmeleri). Ayrıca yayındaki dağıtım `fyyx80tyz` idi; sonradan K-0012'deki dağıtım ile değiştirildi.
 - **Güncelleme 2026-10-17 13:2x:** Kendi yeniden deneme `--prod --archive=tgz` başarısız oldu: `ENOENT … .claude/scheduled_tasks.lock` (başka bir oturumun kilit dosyası arşivleme sırasında kayboldu) ve `read ECONNRESET`. Süreç kendi ağacımdan durduruldu; ikinci bir production dağıtımı yapılmadı. Yayındaki sürüm (`web-panel-fyyx80tyz-hupo1.vercel.app`) hâlâ diğer oturumun dağıtımı. Öneri: dağıtım, `.claude/` klasöründeki çalışma kilit dosyaları yokken ya da kilit dosyaları hariç tutularak yapılmalı (`.vercelignore` eklenmesi kullanıcı kararı).
 - **Sahip:** Kullanıcı (test hesapları, yayın kaynağı teyidi, `.gitignore` kararı), Ajan (kontrol)
 - **Önem:** Yüksek

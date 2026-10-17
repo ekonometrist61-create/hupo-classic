@@ -1,0 +1,9 @@
+# Yükleme dışlamaları: derleme çıktıları ve bağımlılıklar Vercel'de yeniden üretilir.
+# Kökten dağıtımda (Root Directory = web-panel) bu dosya kullanılmazsa yükleme 2 GB'a çıkıyor.
+.next/
+node_modules/
+test-results/
+playwright-report/
+coverage/
+.env
+.env.*

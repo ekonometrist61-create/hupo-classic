@@ -15,7 +15,12 @@ import { dokunmaHedefi } from "../ui/responsive";
 import { adminCall, useAdminRpc } from "../useAdminRpc";
 import { DEMO_SEGMENT_PREVIEW, DEMO_SEGMENTS } from "./demoData";
 import type { Channel, Segment, SegmentCriteria, SegmentPreview } from "./types";
-import { CHANNELS } from "./types";
+import { DAGITILABILIR_KANALLAR } from "./types";
+import type { AdminUser } from "../types";
+import ParentPicker from "../panel/ParentPicker";
+
+/** Elle seçilebilecek en fazla veli (SQL `_segment_veliler` ile aynı sınır). */
+const MANUEL_VELI_SINIRI = 1000;
 
 const GRADES = [1, 2, 3, 4, 5, 6, 7, 8];
 type PlanOpt = { kod: string; ad: string };
@@ -54,6 +59,7 @@ function clean(c: SegmentCriteria): SegmentCriteria {
   if (c.aktiflik) out.aktiflik = c.aktiflik;
   if (c.ilk_gorev_bekleyen) out.ilk_gorev_bekleyen = true;
   if (c.yenileme_yaklasan) out.yenileme_yaklasan = true;
+  if (c.veli_idleri?.length) out.veli_idleri = c.veli_idleri;
   return out;
 }
 
@@ -68,6 +74,7 @@ export function describeCriteria(
   if (c.aktiflik) out.push(t(`activity.${c.aktiflik}`));
   if (c.ilk_gorev_bekleyen) out.push(t("firstTask"));
   if (c.yenileme_yaklasan) out.push(t("renewal"));
+  if (c.veli_idleri?.length) out.push(t("chips.manual", { n: c.veli_idleri.length }));
   return out;
 }
 
@@ -78,7 +85,10 @@ export default function SegmentsManager() {
     kod === "free" ? t("planFree") : (plans.find((p) => p.kod === kod)?.ad ?? kod);
 
   const [crit, setCrit] = useState<SegmentCriteria>({});
-  const [channel, setChannel] = useState<Channel>("eposta");
+  // Yalnızca dağıtıcısı olan kanal (push) için izin önizlemesi yapılır (K-0018).
+  const channel: Channel = DAGITILABILIR_KANALLAR[0];
+  // Elle seçilen velilerin adları (yalnızca bu oturumda seçilenler; kayıtlı segmentte kimlik görünür).
+  const [veliAdlari, setVeliAdlari] = useState<Record<string, string>>({});
   const [name, setName] = useState("");
   const [desc, setDesc] = useState("");
   const [editId, setEditId] = useState<string | null>(null);
@@ -198,19 +208,48 @@ export default function SegmentsManager() {
                 </select>
               </div>
               <div>
-                <label className={labelClass} htmlFor="seg-ch">{t("previewChannel")}</label>
-                <select
-                  id="seg-ch"
-                  className={inputClass}
-                  value={channel}
-                  onChange={(e) => setChannel(e.target.value as Channel)}
-                >
-                  {CHANNELS.map((c) => (
-                    <option key={c} value={c}>{t(`channels.${c}`)}</option>
-                  ))}
-                </select>
+                <span className={labelClass}>{t("previewChannel")}</span>
+                <p className="flex min-h-11 items-center text-theme-sm text-gray-700 dark:text-gray-300">{t(`channels.${channel}`)}</p>
               </div>
             </div>
+
+            <fieldset>
+              <legend className="mb-2 text-theme-sm font-semibold">{t("manualTitle")}</legend>
+              <p className="mb-2 text-theme-xs text-gray-500 dark:text-gray-400">{t("manualHint")}</p>
+              <ParentPicker
+                selected={null}
+                onSelect={(u: AdminUser | null) => {
+                  if (!u) return;
+                  const mevcut = crit.veli_idleri ?? [];
+                  if (mevcut.includes(u.id)) return;
+                  if (mevcut.length >= MANUEL_VELI_SINIRI) {
+                    setFb({ kind: "error", msg: t("manualLimit") });
+                    return;
+                  }
+                  setVeliAdlari((m) => ({ ...m, [u.id]: u.ad ?? t("manualUnnamed") }));
+                  setCrit({ ...crit, veli_idleri: [...mevcut, u.id] });
+                }}
+              />
+              {(crit.veli_idleri?.length ?? 0) > 0 && (
+                <ul className="mt-3 space-y-1.5">
+                  {crit.veli_idleri?.map((id) => (
+                    <li key={id} className="flex items-center justify-between gap-2 text-theme-sm">
+                      <span className="truncate">{veliAdlari[id] ?? t("manualUnnamed")}</span>
+                      <button
+                        type="button"
+                        className={`${dokunmaHedefi} text-error-600 hover:text-error-700`}
+                        onClick={() => setCrit({ ...crit, veli_idleri: (crit.veli_idleri ?? []).filter((x) => x !== id) })}
+                      >
+                        {t("manualRemove")}
+                      </button>
+                    </li>
+                  ))}
+                </ul>
+              )}
+              <p className="mt-2 text-theme-xs text-gray-500 dark:text-gray-400">
+                {t("manualCount", { n: crit.veli_idleri?.length ?? 0, max: MANUEL_VELI_SINIRI })}
+              </p>
+            </fieldset>
 
             <div className="flex flex-wrap gap-5">
               <label className="flex min-h-11 items-center gap-2 text-theme-sm">

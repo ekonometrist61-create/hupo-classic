@@ -3,6 +3,8 @@
 
 export type Channel = "eposta" | "push" | "sms" | "uygulama_ici";
 export const CHANNELS: Channel[] = ["eposta", "push", "sms", "uygulama_ici"];
+/** Dağıtıcısı olan kanallar (K-0018). Diğerleri kaydedilemez ve planlanamaz. */
+export const DAGITILABILIR_KANALLAR: Channel[] = ["push"];
 
 // ---- Aile profili -------------------------------------------------------
 export interface VeliProfile {
@@ -31,6 +33,8 @@ export interface SegmentCriteria {
   aktiflik?: "aktif_7" | "pasif_7" | "pasif_30";
   ilk_gorev_bekleyen?: boolean;
   yenileme_yaklasan?: boolean;
+  /** Elle seçilen veli kimlikleri (en fazla 1000). */
+  veli_idleri?: string[];
 }
 
 export interface SegmentPreview {
@@ -51,7 +55,7 @@ export interface Segment {
 }
 
 // ---- Kampanya -----------------------------------------------------------
-export type CampaignStatus = "taslak" | "kontrol_edildi" | "planlandi" | "iptal";
+export type CampaignStatus = "taslak" | "kontrol_edildi" | "planlandi" | "gonderildi" | "iptal";
 
 export interface PreflightResult {
   hedef: number;
@@ -63,6 +67,12 @@ export interface PreflightResult {
   haftalik_limit: number;
   planlanan_at: string;
   kontrol_zamani: string;
+  /** Pazarlama push kapısı açık mı (K-0018 sonrası ön kontrollerde var). */
+  kapi_acik?: boolean;
+  kanal_dagitilir?: boolean;
+  /** Dağıtımdan sonra (gonderildi) ve iptalde kampanya_push_gonder yazar. */
+  alici_sayisi?: number;
+  iptal_nedeni?: string;
 }
 
 export interface IletisimKampanya {

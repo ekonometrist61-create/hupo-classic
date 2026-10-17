@@ -22,12 +22,13 @@ import type {
   PreflightResult,
   Segment,
 } from "./types";
-import { CHANNELS } from "./types";
+import { DAGITILABILIR_KANALLAR } from "./types";
 
 const STATUS_COLOR: Record<CampaignStatus, "light" | "info" | "success" | "error"> = {
   taslak: "light",
   kontrol_edildi: "info",
   planlandi: "success",
+  gonderildi: "success",
   iptal: "error",
 };
 
@@ -64,6 +65,17 @@ export default function CampaignsManager() {
     list.reload();
   };
 
+  /** Durum altındaki kısa not: iptal nedeni veya dağıtılan alıcı sayısı (onkontrol'den). */
+  const durumNotu = (c: IletisimKampanya): string | null => {
+    if (c.durum === "iptal" && c.onkontrol?.iptal_nedeni) {
+      return t(`iptalNedeni.${c.onkontrol.iptal_nedeni}`);
+    }
+    if (c.durum === "gonderildi" && c.onkontrol?.alici_sayisi !== undefined) {
+      return t("recipients", { n: c.onkontrol.alici_sayisi });
+    }
+    return null;
+  };
+
   /** Kampanya eylemleri: hem kart hem tablo görünümünde aynı düğmeler kullanılır. */
   const campaignActions = (c: IletisimKampanya) => (
     <>
@@ -96,8 +108,8 @@ export default function CampaignsManager() {
           <h2 className="text-lg font-semibold text-navy dark:text-white/90">{t("rhythmTitle")}</h2>
           <p className="mt-1 text-theme-xs text-gray-500 dark:text-gray-400">{t("rhythmDesc")}</p>
           <div className="mt-3 flex flex-wrap gap-2">
-            {CHANNELS.map((c) => (
-              <Badge key={c} size="sm" color={c === "eposta" ? "info" : c === "push" ? "primary" : "light"}>
+            {DAGITILABILIR_KANALLAR.map((c) => (
+              <Badge key={c} size="sm" color="primary">
                 {t(`channels.${c}`)}
               </Badge>
             ))}
@@ -143,6 +155,7 @@ export default function CampaignsManager() {
                         <b className="min-w-0 text-theme-sm wrap-break-word text-gray-800 dark:text-white/90">{c.ad}</b>
                         <Badge size="sm" color={STATUS_COLOR[c.durum]}>{t(`status.${c.durum}`)}</Badge>
                       </div>
+                      {durumNotu(c) && <p className="mt-1 text-theme-xs text-gray-500 dark:text-gray-400">{durumNotu(c)}</p>}
                       <dl className="mt-2 grid grid-cols-[auto_1fr] gap-x-3 gap-y-1 text-theme-xs">
                         <dt className="text-gray-500 dark:text-gray-400">{t("cols.channel")}</dt>
                         <dd>{t(`channels.${c.kanal}`)}</dd>
@@ -179,6 +192,7 @@ export default function CampaignsManager() {
                           <td className={tdClass}>{c.segment_ad}</td>
                           <td className={tdClass}>
                             <Badge size="sm" color={STATUS_COLOR[c.durum]}>{t(`status.${c.durum}`)}</Badge>
+                            {durumNotu(c) && <p className="mt-1 text-theme-xs text-gray-500 dark:text-gray-400">{durumNotu(c)}</p>}
                           </td>
                           <td className={`${tdClass} whitespace-nowrap`}>{formatDateTime(c.planlanan_at)}</td>
                           <td className={`${tdClass} whitespace-nowrap text-end`}>
@@ -237,7 +251,7 @@ function Compose({
 }) {
   const t = useTranslations("yonetim.merkez.campaigns");
   const [ad, setAd] = useState(initial?.ad ?? "");
-  const [kanal, setKanal] = useState<Channel>(initial?.kanal ?? "eposta");
+  const [kanal, setKanal] = useState<Channel>(initial?.kanal ?? DAGITILABILIR_KANALLAR[0]);
   const [segmentId, setSegmentId] = useState(initial?.segment_id ?? presetSegment ?? segments[0]?.id ?? "");
   const [baslik, setBaslik] = useState(initial?.baslik ?? "");
   const [mesaj, setMesaj] = useState(initial?.mesaj ?? "");
@@ -275,7 +289,7 @@ function Compose({
             <div>
               <label className={labelClass} htmlFor="c-kanal">{t("form.channel")}</label>
               <select id="c-kanal" className={inputClass} value={kanal} onChange={(e) => setKanal(e.target.value as Channel)}>
-                {CHANNELS.map((c) => <option key={c} value={c}>{t(`channels.${c}`)}</option>)}
+                {DAGITILABILIR_KANALLAR.map((c) => <option key={c} value={c}>{t(`channels.${c}`)}</option>)}
               </select>
             </div>
             <div>
@@ -362,7 +376,8 @@ function Preflight({
     onChanged();
   };
 
-  const canPlan = result && !result.sessiz_saat && result.gonderilecek > 0 && !planned;
+  // Kapı kapalıysa planlama yapılmaz (K-0018); sunucu da aynısını zorlar.
+  const canPlan = result && result.kapi_acik === true && !result.sessiz_saat && result.gonderilecek > 0 && !planned;
 
   return (
     <Modal isOpen onClose={onClose} className="m-4 max-w-lg p-6 sm:p-8">
@@ -399,7 +414,18 @@ function Preflight({
                 </Badge>
               </dd>
             </div>
+            <div className="flex justify-between px-4 py-3">
+              <dt>{t("pf.gate")}</dt>
+              <dd>
+                <Badge size="sm" color={result.kapi_acik === true ? "success" : "error"}>
+                  {result.kapi_acik === true ? t("pf.gateOpen") : t("pf.gateClosed")}
+                </Badge>
+              </dd>
+            </div>
           </dl>
+        )}
+        {result && result.kapi_acik !== true && (
+          <Feedback kind="error" message={t("pf.gateNote")} />
         )}
         <Feedback kind={fb?.kind ?? "ok"} message={fb?.msg ?? null} />
         <p className="text-theme-xs text-gray-500 dark:text-gray-400">{t("preflightNote")}</p>

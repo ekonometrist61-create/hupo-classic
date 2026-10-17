@@ -626,6 +626,7 @@ ok('ön kontrol kapı kapalıyken de çalışır: kapi_acik=false, kanal_dagitil
   nOn1.kapi_acik === false && nOn1.kanal_dagitilir === true && nOn1.gonderilecek === 1, JSON.stringify(nOn1));
 
 await hataBekle('kapı kapalıyken planlama reddedilir', () => sorgu(`select public.admin_kampanya_planla($1)`, [n1]), 'kapısı kapalı');
+await postgres();
 ok('reddedilen planlama kampanyayı kontrol_edildi durumunda bırakır',
   (await sorgu(`select durum from public.iletisim_kampanyalari where id = $1`, [n1]))[0].durum === 'kontrol_edildi');
 
@@ -655,6 +656,7 @@ await kimsin(ADMIN);
 await sorgu(`select public.admin_pazarlama_push_kapisi_guncelle('onaylandi', 'hupolingo-ticari-ileti-2026-10-v2', 'gerekli_kayit_tamam', 'N testi: kapı açık')`);
 await kimsin(ADMIN);
 await sorgu(`select public.admin_kampanya_planla($1)`, [n1]);
+await postgres();
 const [{ durum: dPlan }] = await sorgu(`select durum from public.iletisim_kampanyalari where id = $1`, [n1]);
 ok('kapı açılınca planlama başarılı → planlandi', dPlan === 'planlandi', dPlan);
 

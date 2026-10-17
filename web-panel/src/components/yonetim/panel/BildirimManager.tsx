@@ -21,13 +21,12 @@ interface Bildirim {
 interface FormState {
   baslik: string;
   mesaj: string;
-  hedef: "veli" | "ogrenci" | "tumu";
 }
 
-const EMPTY_FORM: FormState = { baslik: "", mesaj: "", hedef: "veli" };
-const HEDEFLER = ["veli", "ogrenci", "tumu"] as const;
+const EMPTY_FORM: FormState = { baslik: "", mesaj: "" };
 const PAGE_SIZE = 25;
 
+/** Hızlı bildirim yalnızca velilere gider. Öğrenci hesaplarına serbest metin gönderilmez (K-0018, GÖR-040). */
 // Tablo kendi kapsayıcısında kayar (md ve üzeri); kart görünümü md altında.
 export default function BildirimManager() {
   const t = useTranslations("yonetim.bildirimler");
@@ -82,7 +81,7 @@ export default function BildirimManager() {
       p_mesaj: form.mesaj.trim(),
       p_ikon: "bell",
       p_alici_id: null,
-      p_hedef_rol: form.hedef,
+      p_hedef_rol: "veli",
     });
     setSending(false);
     if (err) return setFormError(err.message);
@@ -118,19 +117,7 @@ export default function BildirimManager() {
 
         {form && (
           <form onSubmit={gonder} className="space-y-4">
-            <div>
-              <label className={labelClass} htmlFor="b-hedef">{t("form.audience")}</label>
-              <select
-                id="b-hedef"
-                className={inputClass}
-                value={form.hedef}
-                onChange={(e) => setF("hedef", e.target.value as FormState["hedef"])}
-              >
-                {HEDEFLER.map((v) => (
-                  <option key={v} value={v}>{t(`audience.${v}`)}</option>
-                ))}
-              </select>
-            </div>
+            <p className="text-theme-xs text-gray-500 dark:text-gray-400">{t("form.veliNote")}</p>
             <div>
               <label className={labelClass} htmlFor="b-baslik">{t("form.title")} *</label>
               <input

@@ -16,7 +16,11 @@ npm install
 npm test
 ```
 
-Beklenen son satır: `SONUÇ: 54 geçti, 0 başarısız`.
+Beklenen son satır: `SONUÇ: 107 geçti, 0 başarısız`.
+
+Segmentli bildirim (20261044): push dışı kanal kaydedilemez ve planlanamaz; pazarlama push kapısı
+kapalıyken planlama reddedilir; ön kontrol kapı durumunu döner; öğrenci ve izinsiz veli alıcı değildir.
+Kapı açık senaryosu yalnızca test veritabanında, mevcut yönetici RPC'siyle açılarak denenir.
 
 Notlar:
 - `stubs.sql` ve `stubs2.sql` Supabase ortamını taklit eder (auth.uid, roller, pg_cron, bağımlı tablolar).
