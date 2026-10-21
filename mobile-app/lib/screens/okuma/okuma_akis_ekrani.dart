@@ -108,7 +108,9 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
               : null,
         );
       case OkumaAsama.yukleniyor:
-        ekran = _Bekleme(baslik: d.secilen?.baslik ?? OkumaMetin.uygulamaAdi, metin: OkumaMetin.hikayeAciliyor);
+        ekran = _Bekleme(
+            baslik: d.secilen?.baslik ?? OkumaMetin.uygulamaAdi,
+            metin: OkumaMetin.hikayeAciliyor);
       case OkumaAsama.okuma:
         ekran = OkuyucuEkrani(
           // Hikâye değişince okuyucu sıfırdan başlar.
@@ -118,6 +120,7 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
           baslik: d.paket?.baslik ?? OkumaMetin.uygulamaAdi,
           cevrimdisi: d.cevrimdisi,
           sinif: d.secilen?.anaSinif ?? 4,
+          tur: d.secilen?.tur ?? 'hikaye',
           onGeri: _akis.listeyeDon,
           onSayfaGorundu: _akis.sayfaGorundu,
           onSozcukAcildi: _akis.sozcukAcildi,
@@ -133,11 +136,14 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
       case OkumaAsama.anket:
         ekran = AnketEkrani(onBitti: _akis.anketBitti);
       case OkumaAsama.bitiriliyor:
-        ekran = const _Bekleme(baslik: OkumaMetin.uygulamaAdi, metin: OkumaMetin.sonucYukleniyor);
+        ekran = const _Bekleme(
+            baslik: OkumaMetin.uygulamaAdi, metin: OkumaMetin.sonucYukleniyor);
       case OkumaAsama.sonuc:
         final sonuc = d.sonuc;
         ekran = sonuc == null
-            ? const _Bekleme(baslik: OkumaMetin.uygulamaAdi, metin: OkumaMetin.sonucYukleniyor)
+            ? const _Bekleme(
+                baslik: OkumaMetin.uygulamaAdi,
+                metin: OkumaMetin.sonucYukleniyor)
             : SonucEkrani(
                 sonuc: sonuc,
                 kotaDolu: d.oneri?.kotaDolu ?? false,
@@ -199,12 +205,14 @@ class _Bekleme extends StatelessWidget {
           label: metin,
           child: Column(
             children: [
-              const OkumaMaskot(poz: HupoPose.dusunuyor, boyut: OkumaTema.hupoSonucKisa),
+              const OkumaMaskot(
+                  poz: HupoPose.dusunuyor, boyut: OkumaTema.hupoSonucKisa),
               const SizedBox(height: OkumaTema.bosluk16),
               Text(
                 metin,
                 textAlign: TextAlign.center,
-                style: OkumaTema.yazi(OkumaTema.yaziSecenek, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
+                style: OkumaTema.yazi(OkumaTema.yaziSecenek,
+                    kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
               ),
               const SizedBox(height: OkumaTema.bosluk16),
               const CircularProgressIndicator(),

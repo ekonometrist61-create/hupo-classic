@@ -71,7 +71,10 @@ Kabul: 390×844 ve 1024×768 (+360×640 ve 2.0 yazı ölçeği) ekran görüntü
 
 ## Faz 1 ilerleme
 - (a) TAMAM: gösterim kuralları okuma_motoru'na taşındı (gosterim_kurallari.dart, 7 test), okuyucu bütçesi bu tek kaynağa bağlandı (ilk geçiş, cümle başına tek vurgu, sınıf/moda göre bütçe). dart test 47/47, lutter analyze okuma temiz, okuma ekran testleri geçti.
-- (b) sıradaki: V3 bileşenleri, süre etiketi, otomatik geçiş.
+- (b) TAMAM: V3 bileşenleri `lib/widgets/okuma/okuma_v3.dart` (başlık bandı, tür/sınıf/süre çipleri, ilerleme, adım rozeti, sahne yedeği, atasözü kartı, Anlamı kutusu, kelime paneli, geri sayım). Okuyucu ve soru ekranı bunlara bağlandı. Süre kuralı tek kaynağa alındı (`sure.dart`, 5 test). Geri sayım çubuğu eklendi; hareket azaltmada çubuk yerine süre metni. Testler: okuma 82/82, motor 53/53, V3 5/5. Önizleme 390 ve 1024 genişlikte kontrol edildi.
+- (b) ertelenen kalemler (veri sözleşmesi yok): Kelime Keşfi (eş/zıt anlam alanı), Bilgi Kutusu, Düşünme soruları, sahne görseli (Faz 2), üst bar düğmesi (mevcut app bar yeterli).
+- (b) karar bekleyen: V3 başlık bandındaki Hupo maskotu okuyucuda kapalı (K8). Açmak için tek satır (`maskot: true`). Kullanıcı kararı gerekir.
+- (b) süre uyumsuzluğu bulundu ve düzeltildi: derleyici ile belge farklıydı (2→60, 3→80 … ve yarım dakika). Derleyici belgeye hizalandı; önceki derlemelerdeki süre değerleri eski kalır, yeniden derlenince güncellenir. Prototip klasörü ayrı bir git deposu; `atolye/src/derle.ts` ve `sema/etiket-sozlugu.v1.json` orada commit'lenmedi.
 
 ## Faz 2.0 ilerleme (fiş katmanı, yerel)
 - Migration: `supabase/migrations/20261057000000_okuma_hikaye_fisleri.sql` (tablo, doğrulayıcı, idempotent içe aktarma, listeleme). Metin alanı yok; hak/müfredat onayı içe aktarmayla değişmez; brief_draft dışı fiş güncellenmez.

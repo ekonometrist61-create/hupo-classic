@@ -3,13 +3,22 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:okuma_motoru/okuma_motoru.dart'
-    show Cikti, SayfaSecimi, Stil, hikayeSecimi, ikonBul, kIkonVarlikKlasoru, kMaskotIkonKimligi;
+    show
+        Cikti,
+        SayfaSecimi,
+        Stil,
+        hikayeSecimi,
+        ikonBul,
+        kIkonVarlikKlasoru,
+        kMaskotIkonKimligi,
+        okumaDakikasi;
 
 import '../../providers/okuma_providers.dart';
 import '../../services/okuma_cihaz_deposu.dart';
 import '../../settings/app_settings.dart';
 import '../../widgets/hupo/hupo.dart';
 import '../../widgets/okuma/okuma_bilesenler.dart';
+import '../../widgets/okuma/okuma_v3.dart';
 import 'okuma_tema.dart';
 
 /// Sayfa sayfa okuma ekranı. Hedef: çocuk hikâyeyi rahatça okur. Ana eylem: "Sonraki sayfa" /
@@ -30,10 +39,14 @@ class OkuyucuEkrani extends ConsumerStatefulWidget {
     this.onSozcukAcildi,
     this.cevrimdisi = false,
     this.sinif = 4,
+    this.tur = 'hikaye',
   });
 
   /// Hikâyenin ana sınıfı; sayfa başına vurgu ve çıkartma bütçesini belirler.
   final int sinif;
+
+  /// Tür kodu (gizem, macera, bilim, doga, mizah); başlık bandındaki çip ve sahne için.
+  final String tur;
 
   final List<List<Cikti>> sayfalar;
 
@@ -67,7 +80,8 @@ class _Butce {
   final Set<int> cikartma;
 }
 
-class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProviderStateMixin {
+class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
+    with TickerProviderStateMixin {
   int _sayfa = 0;
   bool _ileri = true;
   late bool _sade;
@@ -119,13 +133,15 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
     final aranan = kelime.toLowerCase();
     for (final m in RegExp(r'[^.!?…]+[.!?…]?').allMatches(metin)) {
       final cumle = m.group(0)!.trim();
-      if (cumle.isNotEmpty && cumle.toLowerCase().contains(aranan)) return cumle;
+      if (cumle.isNotEmpty && cumle.toLowerCase().contains(aranan))
+        return cumle;
     }
     return null;
   }
 
   TapGestureRecognizer _tanyici(String anahtar, VoidCallback onTap) =>
-      _tanyicilar.putIfAbsent('$_sayfa:$anahtar', () => TapGestureRecognizer()..onTap = onTap);
+      _tanyicilar.putIfAbsent(
+          '$_sayfa:$anahtar', () => TapGestureRecognizer()..onTap = onTap);
 
   TextStyle _taban() => OkumaTema.yazi(
         _buyuk ? OkumaTema.yaziOkumaBuyuk : OkumaTema.yaziOkuma,
@@ -163,34 +179,43 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
             decorationColor: OkumaTema.primary,
             decorationThickness: 2,
           ),
-          recognizer: _tanyici('$i', () => _sozAc(c.metin, OkumaMetin.sozlukKelime)),
+          recognizer:
+              _tanyici('$i', () => _sozAc(c.metin, OkumaMetin.sozlukKelime)),
         );
       case Stil.deyim:
         if (!vurgulu) return TextSpan(text: c.metin, style: taban);
         return TextSpan(
           text: c.metin,
-          style: taban.copyWith(fontWeight: OkumaTema.kalinlikVurgu, backgroundColor: OkumaTema.sunSoft),
-          recognizer: _tanyici('$i', () => _sozAc(c.metin, OkumaMetin.sozlukDeyim)),
+          style: taban.copyWith(
+              fontWeight: OkumaTema.kalinlikVurgu,
+              backgroundColor: OkumaTema.sunSoft),
+          recognizer:
+              _tanyici('$i', () => _sozAc(c.metin, OkumaMetin.sozlukDeyim)),
         );
       case Stil.atasozu:
         // Sayfadaki ilk atasözü blok olarak gösterilir; ikinci ve sonrası satır içi tırnaklı metindir.
         return TextSpan(
           text: '“${c.metin}”',
-          style: taban.copyWith(fontStyle: FontStyle.italic, fontWeight: OkumaTema.kalinlikGovde),
+          style: taban.copyWith(
+              fontStyle: FontStyle.italic, fontWeight: OkumaTema.kalinlikGovde),
         );
       case Stil.isaret:
         // Emoji glifi yerine katalog SVG'si (K3). Maskot metin içinde gösterilmez (K8).
         final kimlik = c.ikonId;
-        if (kimlik == null || kimlik == kMaskotIkonKimligi || !b.cikartma.contains(i)) return const TextSpan(text: '');
+        if (kimlik == null ||
+            kimlik == kMaskotIkonKimligi ||
+            !b.cikartma.contains(i)) return const TextSpan(text: '');
         final kayit = ikonBul(kimlik);
         if (kayit == null) return const TextSpan(text: '');
-        final boy = (taban.fontSize ?? OkumaTema.yaziOkuma) + OkumaTema.cikartmaFarki;
+        final boy =
+            (taban.fontSize ?? OkumaTema.yaziOkuma) + OkumaTema.cikartmaFarki;
         return WidgetSpan(
           alignment: PlaceholderAlignment.middle,
           child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 2),
             // Çıkartma süs amaçlıdır; anlamı metin taşır, ekran okuyucuda atlanır.
-            child: SvgPicture.asset('$kIkonVarlikKlasoru${kayit.renkliDosya}', height: boy, excludeFromSemantics: true),
+            child: SvgPicture.asset('$kIkonVarlikKlasoru${kayit.renkliDosya}',
+                height: boy, excludeFromSemantics: true),
           ),
         );
     }
@@ -215,9 +240,8 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
         akit();
         parcalar.add(Padding(
           padding: const EdgeInsets.symmetric(vertical: OkumaTema.bosluk8),
-          child: _AtasozuBlok(
+          child: OkumaAtasozuKarti(
             metin: c.metin,
-            taban: taban,
             onTap: () => _sozAc(c.metin, OkumaMetin.sozlukAtasozu),
           ),
         ));
@@ -232,7 +256,8 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
   void _sozAc(String metin, String etiket) {
     widget.onSozcukAcildi?.call(metin);
     final anlam = widget.anlamlar[metin] ?? OkumaMetin.anlamYok;
-    final ornek = etiket == OkumaMetin.sozlukAtasozu ? null : _ornekCumle(metin);
+    final ornek =
+        etiket == OkumaMetin.sozlukAtasozu ? null : _ornekCumle(metin);
     final denetleyici = AnimationController(
       vsync: this,
       duration: OkumaTema.sure(context, OkumaTema.hareketAltSayfa),
@@ -240,7 +265,13 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
     showModalBottomSheet<void>(
       context: context,
       transitionAnimationController: denetleyici,
-      builder: (ctx) => _SozlukSayfasi(etiket: etiket, metin: metin, anlam: anlam, ornek: ornek),
+      builder: (ctx) => OkumaKelimePaneli(
+        etiket: etiket,
+        metin: metin,
+        anlam: anlam,
+        ornek: ornek,
+        onKapat: () => Navigator.pop(ctx),
+      ),
     ).whenComplete(denetleyici.dispose);
   }
 
@@ -262,29 +293,40 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
       context: context,
       builder: (ctx) => SafeArea(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(OkumaTema.yanBoslukTelefon, OkumaTema.bosluk8, OkumaTema.yanBoslukTelefon, OkumaTema.bosluk20),
+          padding: const EdgeInsets.fromLTRB(
+              OkumaTema.yanBoslukTelefon,
+              OkumaTema.bosluk8,
+              OkumaTema.yanBoslukTelefon,
+              OkumaTema.bosluk20),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
                 OkumaMetin.okuyucuKelimeler,
-                style: OkumaTema.yazi(OkumaTema.yaziEkranBaslik - 4, kalinlik: OkumaTema.kalinlikBaslik),
+                style: OkumaTema.yazi(OkumaTema.yaziEkranBaslik - 4,
+                    kalinlik: OkumaTema.kalinlikBaslik),
               ),
               const SizedBox(height: OkumaTema.bosluk12),
               if (satirlar.isEmpty)
                 Text(
                   OkumaMetin.okuyucuKelimeYok,
-                  style: OkumaTema.yazi(OkumaTema.yaziYardimci, renk: OkumaTema.muted),
+                  style: OkumaTema.yazi(OkumaTema.yaziYardimci,
+                      renk: OkumaTema.muted),
                 )
               else
                 for (final s in satirlar)
                   ListTile(
                     minTileHeight: OkumaTema.butonYukseklik,
                     contentPadding: EdgeInsets.zero,
-                    title: Text(s.metin, style: OkumaTema.yazi(OkumaTema.yaziSecenek, kalinlik: OkumaTema.kalinlikVurgu)),
-                    subtitle: Text(s.etiket, style: OkumaTema.yazi(OkumaTema.yaziEtiket, renk: OkumaTema.muted)),
-                    trailing: const Icon(Icons.chevron_right_rounded, color: OkumaTema.primary),
+                    title: Text(s.metin,
+                        style: OkumaTema.yazi(OkumaTema.yaziSecenek,
+                            kalinlik: OkumaTema.kalinlikVurgu)),
+                    subtitle: Text(s.etiket,
+                        style: OkumaTema.yazi(OkumaTema.yaziEtiket,
+                            renk: OkumaTema.muted)),
+                    trailing: const Icon(Icons.chevron_right_rounded,
+                        color: OkumaTema.primary),
                     onTap: () {
                       Navigator.pop(ctx);
                       _sozAc(s.metin, s.etiket);
@@ -315,14 +357,19 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
 
           return SafeArea(
             child: SingleChildScrollView(
-              padding: const EdgeInsets.fromLTRB(OkumaTema.yanBoslukTelefon, OkumaTema.bosluk8, OkumaTema.yanBoslukTelefon, OkumaTema.bosluk20),
+              padding: const EdgeInsets.fromLTRB(
+                  OkumaTema.yanBoslukTelefon,
+                  OkumaTema.bosluk8,
+                  OkumaTema.yanBoslukTelefon,
+                  OkumaTema.bosluk20),
               child: Column(
                 mainAxisSize: MainAxisSize.min,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     OkumaMetin.okuyucuAyar,
-                    style: OkumaTema.yazi(OkumaTema.yaziEkranBaslik - 4, kalinlik: OkumaTema.kalinlikBaslik),
+                    style: OkumaTema.yazi(OkumaTema.yaziEkranBaslik - 4,
+                        kalinlik: OkumaTema.kalinlikBaslik),
                   ),
                   const SizedBox(height: OkumaTema.bosluk16),
                   const _AyarBasligi(OkumaMetin.okuyucuMod),
@@ -345,7 +392,8 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
                   const SizedBox(height: OkumaTema.bosluk8),
                   Text(
                     _sade ? OkumaMetin.modSadeNot : OkumaMetin.modZenginNot,
-                    style: OkumaTema.yazi(OkumaTema.yaziYardimci, renk: OkumaTema.muted, satir: 1.4),
+                    style: OkumaTema.yazi(OkumaTema.yaziYardimci,
+                        renk: OkumaTema.muted, satir: 1.4),
                   ),
                   const SizedBox(height: OkumaTema.bosluk16),
                   const _AyarBasligi(OkumaMetin.okuyucuYazi),
@@ -384,7 +432,9 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
                     ],
                   ),
                   const SizedBox(height: OkumaTema.bosluk20),
-                  OkumaIkincilButon(etiket: OkumaMetin.kapat, onPressed: () => Navigator.pop(ctx)),
+                  OkumaIkincilButon(
+                      etiket: OkumaMetin.kapat,
+                      onPressed: () => Navigator.pop(ctx)),
                 ],
               ),
             ),
@@ -400,7 +450,9 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
     return [
       for (final sayfa in _sayfalar)
         for (final c in sayfa)
-          if (c.stil == Stil.atasozu && gorulen.add(c.metin) && (widget.anlamlar[c.metin]?.trim().isNotEmpty ?? false))
+          if (c.stil == Stil.atasozu &&
+              gorulen.add(c.metin) &&
+              (widget.anlamlar[c.metin]?.trim().isNotEmpty ?? false))
             (metin: c.metin, anlam: widget.anlamlar[c.metin]!.trim()),
     ];
   }
@@ -456,15 +508,19 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
             liveRegion: true,
             child: Container(
               padding: const EdgeInsets.all(OkumaTema.bosluk12),
-              decoration: BoxDecoration(color: OkumaTema.sunSoft, borderRadius: BorderRadius.circular(OkumaTema.koseGirdi)),
+              decoration: BoxDecoration(
+                  color: OkumaTema.sunSoft,
+                  borderRadius: BorderRadius.circular(OkumaTema.koseGirdi)),
               child: Row(
                 children: [
-                  const Icon(Icons.cloud_off_rounded, size: OkumaTema.ikonOrta, color: OkumaTema.ink),
+                  const Icon(Icons.cloud_off_rounded,
+                      size: OkumaTema.ikonOrta, color: OkumaTema.ink),
                   const SizedBox(width: OkumaTema.bosluk8),
                   Expanded(
                     child: Text(
                       OkumaMetin.hikayeCevrimdisi,
-                      style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu),
+                      style: OkumaTema.yazi(OkumaTema.yaziEtiket,
+                          kalinlik: OkumaTema.kalinlikVurgu),
                     ),
                   ),
                 ],
@@ -473,10 +529,27 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
           ),
           const SizedBox(height: OkumaTema.bosluk12),
         ],
-        _IlerlemeSatiri(sayfa: _sayfa + 1, toplam: toplam),
+        OkumaBaslikBandi(
+          baslik: widget.baslik,
+          tur: widget.tur,
+          sinifEtiketi: okumaSinifEtiketi(widget.sinif, widget.sinif),
+          dakika: okumaDakikasi(_sayfalar, widget.sinif),
+        ),
+        const SizedBox(height: OkumaTema.bosluk16),
+        OkumaIlerleme(
+            deger: (_sayfa + 1) / toplam,
+            etiket: OkumaMetin.okuyucuSayfa(_sayfa + 1, toplam)),
         if (dusunAtasozleri.isNotEmpty) ...[
           const SizedBox(height: OkumaTema.bosluk12),
           _AdimSatiri(dusunde: son),
+        ],
+        // Sahne: ilk sayfada büyük; sonraki sayfalarda dar şerit. Sade modda ve 7–8. sınıfta yalnız ilk sayfa.
+        if (_sayfa == 0) ...[
+          const SizedBox(height: OkumaTema.bosluk16),
+          OkumaSahne(tur: widget.tur),
+        ] else if (!_sade && widget.sinif <= 6) ...[
+          const SizedBox(height: OkumaTema.bosluk12),
+          OkumaSahne(tur: widget.tur, yukseklik: 56),
         ],
         const SizedBox(height: OkumaTema.bosluk16),
         // Sayfa geçişi: hafif kayma ve belirme. Hareket azaltmada süre sıfır, geçiş anlık.
@@ -491,7 +564,8 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
             return Opacity(
               opacity: gorunur,
               child: Transform.translate(
-                offset: Offset((1 - t) * OkumaTema.hareketSayfaKaymasi * yon, 0),
+                offset:
+                    Offset((1 - t) * OkumaTema.hareketSayfaKaymasi * yon, 0),
                 child: child,
               ),
             );
@@ -551,149 +625,6 @@ class _SayfaKagidi extends StatelessWidget {
   }
 }
 
-class _IlerlemeSatiri extends StatelessWidget {
-  const _IlerlemeSatiri({required this.sayfa, required this.toplam});
-
-  final int sayfa;
-  final int toplam;
-
-  @override
-  Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Expanded(
-          child: ClipRRect(
-            borderRadius: BorderRadius.circular(OkumaTema.ilerlemeYuksekligi / 2),
-            child: LinearProgressIndicator(
-              value: sayfa / toplam,
-              minHeight: OkumaTema.ilerlemeYuksekligi,
-              color: OkumaTema.primary,
-              backgroundColor: OkumaTema.lineDark,
-            ),
-          ),
-        ),
-        const SizedBox(width: OkumaTema.bosluk12),
-        Text(
-          OkumaMetin.okuyucuSayfa(sayfa, toplam),
-          style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
-        ),
-      ],
-    );
-  }
-}
-
-/// Atasözü bloğu: krem zemin, sol altın çubuk, italik ve tırnaklı metin. Dokununca anlamı açılır.
-class _AtasozuBlok extends StatelessWidget {
-  const _AtasozuBlok({required this.metin, required this.taban, required this.onTap});
-
-  final String metin;
-  final TextStyle taban;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final sekil = BorderRadius.circular(OkumaTema.koseGirdi);
-    return Semantics(
-      button: true,
-      label: 'Atasözü: $metin. Anlamı için çift dokun.',
-      onTap: onTap,
-      child: ExcludeSemantics(
-        child: Material(
-          color: OkumaTema.background,
-          borderRadius: sekil,
-          clipBehavior: Clip.antiAlias,
-          child: InkWell(
-            borderRadius: sekil,
-            onTap: onTap,
-            child: IntrinsicHeight(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  Container(width: OkumaTema.bosluk4, color: OkumaTema.sun),
-                  Expanded(
-                    child: Padding(
-                      padding: const EdgeInsets.fromLTRB(OkumaTema.bosluk16, OkumaTema.bosluk12, OkumaTema.bosluk12, OkumaTema.bosluk12),
-                      child: Text(
-                        '“$metin”',
-                        style: taban.copyWith(fontStyle: FontStyle.italic, fontWeight: OkumaTema.kalinlikGovde),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-/// Kelime, deyim ya da atasözü alt sayfası: etiket, başlık, anlam, sayfadan örnek cümle ve kapat.
-/// Ses ya da ek görsel yoktur.
-class _SozlukSayfasi extends StatelessWidget {
-  const _SozlukSayfasi({required this.etiket, required this.metin, required this.anlam, this.ornek});
-
-  final String etiket;
-  final String metin;
-  final String anlam;
-  final String? ornek;
-
-  @override
-  Widget build(BuildContext context) {
-    return SafeArea(
-      child: Padding(
-        padding: const EdgeInsets.fromLTRB(OkumaTema.yanBoslukTelefon, OkumaTema.bosluk8, OkumaTema.yanBoslukTelefon, OkumaTema.bosluk20),
-        child: Column(
-          mainAxisSize: MainAxisSize.min,
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(etiket, style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted)),
-            const SizedBox(height: OkumaTema.bosluk4),
-            Semantics(
-              header: true,
-              child: Text(
-                metin,
-                style: OkumaTema.yazi(OkumaTema.yaziSozlukKelime, kalinlik: OkumaTema.kalinlikBaslik, satir: 1.2),
-              ),
-            ),
-            const SizedBox(height: OkumaTema.bosluk12),
-            Text(
-              anlam,
-              style: OkumaTema.yazi(OkumaTema.yaziSozlukAnlam, satir: 1.5),
-            ),
-            if (ornek != null) ...[
-              const SizedBox(height: OkumaTema.bosluk16),
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(OkumaTema.bosluk16),
-                decoration: BoxDecoration(
-                  color: OkumaTema.background,
-                  borderRadius: BorderRadius.circular(OkumaTema.koseGirdi),
-                  border: Border.all(color: OkumaTema.lineDark, width: OkumaTema.kenarVarsayilan),
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Text(OkumaMetin.sozlukOrnek, style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted)),
-                    const SizedBox(height: OkumaTema.bosluk4),
-                    Text(
-                      '“$ornek”',
-                      style: OkumaTema.yazi(OkumaTema.yaziSecenek - 1, satir: 1.5).copyWith(fontStyle: FontStyle.italic),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-            const SizedBox(height: OkumaTema.bosluk20),
-            OkumaIkincilButon(etiket: OkumaMetin.kapat, onPressed: () => Navigator.pop(context)),
-          ],
-        ),
-      ),
-    );
-  }
-}
-
 /// İki adımlı gösterge: Oku (sayfalar) ve Düşün (son sayfa, isteğe bağlı).
 class _AdimSatiri extends StatelessWidget {
   const _AdimSatiri({required this.dusunde});
@@ -704,42 +635,13 @@ class _AdimSatiri extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        _AdimEtiketi(sira: 1, etiket: OkumaMetin.adimOku, aktif: !dusunde),
+        OkumaAdimRozeti(sira: 1, etiket: OkumaMetin.adimOku, aktif: !dusunde),
         const SizedBox(width: OkumaTema.bosluk8),
-        const Icon(Icons.chevron_right_rounded, size: OkumaTema.ikonOrta, color: OkumaTema.muted),
+        const Icon(Icons.chevron_right_rounded,
+            size: OkumaTema.ikonOrta, color: OkumaTema.muted),
         const SizedBox(width: OkumaTema.bosluk8),
-        _AdimEtiketi(sira: 2, etiket: OkumaMetin.adimDusun, aktif: dusunde),
+        OkumaAdimRozeti(sira: 2, etiket: OkumaMetin.adimDusun, aktif: dusunde),
       ],
-    );
-  }
-}
-
-class _AdimEtiketi extends StatelessWidget {
-  const _AdimEtiketi({required this.sira, required this.etiket, required this.aktif});
-
-  final int sira;
-  final String etiket;
-  final bool aktif;
-
-  @override
-  Widget build(BuildContext context) {
-    return Semantics(
-      selected: aktif,
-      child: Container(
-        padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk12, vertical: OkumaTema.bosluk4),
-        decoration: BoxDecoration(
-          color: aktif ? OkumaTema.primarySoft : null,
-          borderRadius: BorderRadius.circular(OkumaTema.koseGirdi),
-        ),
-        child: Text(
-          '$sira  $etiket',
-          style: OkumaTema.yazi(
-            OkumaTema.yaziEtiket,
-            kalinlik: OkumaTema.kalinlikVurgu,
-            renk: aktif ? OkumaTema.primary : OkumaTema.muted,
-          ),
-        ),
-      ),
     );
   }
 }
@@ -783,19 +685,22 @@ class _DusunKartiState extends ConsumerState<_DusunKarti> {
       decoration: BoxDecoration(
         color: OkumaTema.background,
         borderRadius: BorderRadius.circular(OkumaTema.koseGirdi),
-        border: Border.all(color: OkumaTema.lineDark, width: OkumaTema.kenarVarsayilan),
+        border: Border.all(
+            color: OkumaTema.lineDark, width: OkumaTema.kenarVarsayilan),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
             OkumaMetin.adimDusun,
-            style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
+            style: OkumaTema.yazi(OkumaTema.yaziEtiket,
+                kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
           ),
           const SizedBox(height: OkumaTema.bosluk4),
           Text(
             OkumaMetin.dusunIpucu,
-            style: OkumaTema.yazi(OkumaTema.yaziYardimci, renk: OkumaTema.muted, satir: 1.4),
+            style: OkumaTema.yazi(OkumaTema.yaziYardimci,
+                renk: OkumaTema.muted, satir: 1.4),
           ),
           for (final a in widget.atasozler) ...[
             const SizedBox(height: OkumaTema.bosluk16),
@@ -805,23 +710,23 @@ class _DusunKartiState extends ConsumerState<_DusunKarti> {
                   .copyWith(fontStyle: FontStyle.italic),
             ),
             const SizedBox(height: OkumaTema.bosluk8),
-            Text(
-              '${OkumaMetin.dusunAnlam}: ${a.anlam}',
-              style: OkumaTema.yazi(OkumaTema.yaziSecenek - 1, satir: 1.5),
-            ),
+            OkumaAnlamKutusu(anlam: a.anlam),
             const SizedBox(height: OkumaTema.bosluk8),
             if (_eklenen.contains(a.metin))
               Semantics(
                 liveRegion: true,
                 child: Text(
                   OkumaMetin.sozlugeEklendi,
-                  style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.primary),
+                  style: OkumaTema.yazi(OkumaTema.yaziEtiket,
+                      kalinlik: OkumaTema.kalinlikVurgu,
+                      renk: OkumaTema.primary),
                 ),
               )
             else
               Align(
                 alignment: Alignment.centerLeft,
-                child: OkumaIkincilButon(etiket: OkumaMetin.sozlugeEkle, onPressed: () => _ekle(a)),
+                child: OkumaIkincilButon(
+                    etiket: OkumaMetin.sozlugeEkle, onPressed: () => _ekle(a)),
               ),
           ],
         ],
@@ -839,7 +744,9 @@ class _AyarBasligi extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(bottom: OkumaTema.bosluk8),
-      child: Text(metin, style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu)),
+      child: Text(metin,
+          style: OkumaTema.yazi(OkumaTema.yaziYardimci,
+              kalinlik: OkumaTema.kalinlikVurgu)),
     );
   }
 }

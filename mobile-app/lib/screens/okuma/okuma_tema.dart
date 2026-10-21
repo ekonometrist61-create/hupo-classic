@@ -107,7 +107,8 @@ abstract final class OkumaTema {
   static const double hupoCevap = 96;
   static const double hupoSonuc = 160;
   static const double hupoSonucKisa = 120;
-  static const double hupoSonucBuyukYazi = 72; // kısa ekran + büyük yazı: başlığa yer açar
+  static const double hupoSonucBuyukYazi =
+      72; // kısa ekran + büyük yazı: başlığa yer açar
   static const double sonucKabukPay = 8;
   static const double sonucKonfetiTasma = 32;
   static const double sonucYildizBoyut = 88;
@@ -149,7 +150,9 @@ abstract final class OkumaTema {
 
   /// Hareket süresi: hareket azaltma açıksa sıfır (uygulamanın "Hareketi azalt" ayarı da buna yansır).
   static Duration sure(BuildContext context, int ms) =>
-      MediaQuery.disableAnimationsOf(context) ? Duration.zero : Duration(milliseconds: ms);
+      MediaQuery.disableAnimationsOf(context)
+          ? Duration.zero
+          : Duration(milliseconds: ms);
 
   /// Yazı stili: boyut, kalınlık, renk ve satır yüksekliği tek yerden. [aile] null ise
   /// uygulamanın seçili yazı tipi (Nunito/Lexend) geçerlidir.
@@ -183,16 +186,19 @@ class OkumaMetin {
 
   // ── Öğren kartı ───────────────────────────────────────────────────────────
   static const kartBaslik = 'Bugünkü hikâye';
-  static const kartAciklama = 'Kendini ya da sevdiğin birini kahraman yap, hikâyeyi oku.';
+  static const kartAciklama =
+      'Kendini ya da sevdiğin birini kahraman yap, hikâyeyi oku.';
   static const kartBasla = 'Hikâyeye başla';
   static String kartSeri(int gun) => '$gun günlük okuma serisi';
-  static const kartKotaDolu = 'Bugünkü hikâyeni okudun. Yarın yeni bir hikâye seni bekliyor.';
+  static const kartKotaDolu =
+      'Bugünkü hikâyeni okudun. Yarın yeni bir hikâye seni bekliyor.';
   static const kartOkuduklarim = 'Okuduklarım';
   static const kartOkudukSayi = 'hikâye okudun';
 
   // ── Kahraman ──────────────────────────────────────────────────────────────
   static const kahramanBaslik = 'Kahramanın kim olsun?';
-  static const kahramanAlt = 'Kendini, bir aile üyeni, bir hayvanı ya da hayalî bir karakteri seçebilirsin.';
+  static const kahramanAlt =
+      'Kendini, bir aile üyeni, bir hayvanı ya da hayalî bir karakteri seçebilirsin.';
   static const kahramanOnerilen = 'Ya da birini seç:';
   static const kahramanAdEtiket = 'Kahramanın adı';
   static const kahramanAdIpucu = 'Adını yaz';
@@ -206,29 +212,34 @@ class OkumaMetin {
   static const kahramanGizlilik = 'Yazdığın adlar yalnızca bu cihazda kalır.';
   static const kahramanKaydet = 'Bu kahramanı bu cihaza kaydet';
   static const kahramanlarimBaslik = 'Kahramanlarım';
-  static const kahramanlarimAlt = 'Bu cihaza kaydettiklerin. Dokununca hemen devam edersin.';
+  static const kahramanlarimAlt =
+      'Bu cihaza kaydettiklerin. Dokununca hemen devam edersin.';
   static String kahramanSilEtiket(String ad) => '$ad kahramanını sil';
   static const kahramanSilindi = 'Kahraman silindi.';
 
   // ── Hikâye seçimi ─────────────────────────────────────────────────────────
   static const hikayeBaslik = 'Hangi hikâyeyi okuyalım?';
-  static String hikayeAlt(String kahraman) => '$kahraman için hikâyeler seçtim.';
+  static String hikayeAlt(String kahraman) =>
+      '$kahraman için hikâyeler seçtim.';
   static const hikayeHepsi = 'Hepsi';
   static const hikayeBasla = 'Hikâyeye başla';
   static const hikayeBos = 'Bu filtrede hikâye yok.';
   static const hikayeBosIpucu = 'Konu ya da türü değiştirerek bak.';
   static const hikayeFiltreTemizle = 'Filtreleri temizle';
-  static const hikayeKahramanYok = 'Bu kahramanla şimdilik uygun bir hikâye yok. Başka bir kahraman deneyebilirsin.';
+  static const hikayeKahramanYok =
+      'Bu kahramanla şimdilik uygun bir hikâye yok. Başka bir kahraman deneyebilirsin.';
   static const hikayeKahramanYokBaslik = 'Bu kahramana uygun hikâye yok';
   static const hikayeYukleniyor = 'Hikâyeler hazırlanıyor…';
   static const hikayeAciliyor = 'Hikâyen hazırlanıyor…';
   static const hikayeYeni = 'Yeni';
-  static const hikayeCevrimdisi = 'İnternet yok. Bu hikâyeyi cihazından okuyorsun; sorular için bağlanman gerekir.';
+  static const hikayeCevrimdisi =
+      'İnternet yok. Bu hikâyeyi cihazından okuyorsun; sorular için bağlanman gerekir.';
   static String hikayeSure(int dk) => '$dk dk';
   static String hikayeSoru(int n) => '$n soru';
 
   // ── Okuyucu ──────────────────────────────────────────────────────────────
   static String okuyucuSayfa(int n, int toplam) => 'Sayfa $n / $toplam';
+  static String gecisSureli(int sn) => '$sn sn sonra sonraki soruya geçilecek';
   static const sonrakiSayfa = 'Sonraki sayfa';
   static const onceki = 'Önceki';
   static const sorularaGec = 'Sorulara geç';
@@ -238,8 +249,10 @@ class OkumaMetin {
   static const okuyucuMod = 'Okuma modu';
   static const sade = 'Sade';
   static const zengin = 'Zengin';
-  static const modSadeNot = 'Daha sakin bir sayfa. Önemli yer ve çıkartmalar gizlenir.';
-  static const modZenginNot = 'Önemli yerler, kelimeler ve çıkartmalar renkle öne çıkar.';
+  static const modSadeNot =
+      'Daha sakin bir sayfa. Önemli yer ve çıkartmalar gizlenir.';
+  static const modZenginNot =
+      'Önemli yerler, kelimeler ve çıkartmalar renkle öne çıkar.';
   static const okuyucuYazi = 'Yazı boyutu';
   static const normal = 'Normal';
   static const buyukYazi = 'Büyük';
@@ -253,21 +266,25 @@ class OkumaMetin {
   static const anlamYok = 'Bu sözcüğün anlamı henüz eklenmedi.';
   static const adimOku = 'Oku';
   static const adimDusun = 'Düşün';
-  static const dusunIpucu = 'İstersen bu sözü kendi hayatından bir örnekle düşünebilirsin.';
+  static const dusunIpucu =
+      'İstersen bu sözü kendi hayatından bir örnekle düşünebilirsin.';
   static const dusunAnlam = 'Anlamı';
   static const sozlugeEkle = 'Sözlüğe ekle';
   static const sozlugeEklendi = 'Defterine eklendi.';
   static const okuduklarimSekme = 'Okuduklarım';
   static const sozlugumSekme = 'Sözlüğüm';
-  static const sozlugumAlt = 'Hikâyelerden eklediğin atasözleri ve anlamları. Yalnız bu cihazda saklanır.';
-  static const sozlugumBos = 'Sözlüğün henüz boş. Bir hikâyenin sonundaki Düşün bölümünden atasözü ekleyebilirsin.';
+  static const sozlugumAlt =
+      'Hikâyelerden eklediğin atasözleri ve anlamları. Yalnız bu cihazda saklanır.';
+  static const sozlugumBos =
+      'Sözlüğün henüz boş. Bir hikâyenin sonundaki Düşün bölümünden atasözü ekleyebilirsin.';
   static const okuyucuBos = 'Bu hikâye şu an açılamıyor.';
 
   // ── Sorular ──────────────────────────────────────────────────────────────
   static String soruSayac(int n, int toplam) => 'Soru $n / $toplam';
   static const soruIpucu = 'İpucu';
   static const soruIpucuBaslik = 'Bir ipucu';
-  static String soruIpucuSayfa(int sayfa) => 'Cevabı bulmak için hikâyenin $sayfa. sayfasına bakabilirsin.';
+  static String soruIpucuSayfa(int sayfa) =>
+      'Cevabı bulmak için hikâyenin $sayfa. sayfasına bakabilirsin.';
   static const soruCevapla = 'Cevapla';
   static const soruSecKisa = 'Bir şık seç, sonra cevapla.';
   static const soruSecildi = 'Seçtin';
@@ -283,7 +300,8 @@ class OkumaMetin {
 
   // ── Anket ────────────────────────────────────────────────────────────────
   static const anketBaslik = 'Bu hikâye nasıldı?';
-  static const anketAlt = 'Birkaç dokunuşla bitirebilirsin. Yazı yazmak zorunda değilsin.';
+  static const anketAlt =
+      'Birkaç dokunuşla bitirebilirsin. Yazı yazmak zorunda değilsin.';
   static const anketYildizBos = 'Bir yıldız seçebilirsin.';
   static String anketYildiz(int n) => '$n / 5 yıldız';
   static const anketDaha = 'Nasıl daha iyi olurdu?';
@@ -294,8 +312,10 @@ class OkumaMetin {
   static const anketHayir = 'Hayır';
   static const anketGonder = 'Gönder';
   static const anketSimdiDegil = 'Şimdi değil';
-  static const anketPasif = 'Göndermek için bir yıldız seç ya da şimdi değil de.';
-  static const anketGonderilemedi = 'Yanıtın gönderilemedi, ama sorun değil. Hikâyeni bitirdin!';
+  static const anketPasif =
+      'Göndermek için bir yıldız seç ya da şimdi değil de.';
+  static const anketGonderilemedi =
+      'Yanıtın gönderilemedi, ama sorun değil. Hikâyeni bitirdin!';
 
   /// Sunucu beyaz listesindeki kodlar → çocuğa gösterilen etiket (sıra sabit).
   static const anketSecenekleri = <(String, String)>[
@@ -317,30 +337,36 @@ class OkumaMetin {
   static const sonucOrta = 'İyi gidiyorsun.';
   static const sonucDusuk = 'İstersen sayfalara dönüp tekrar bakabilirsin.';
   static const sonucTesvik = 'Bir sonraki hikâyede daha da iyi olacaksın.';
-  static const sonucTekrarGel = 'Yakında tekrar gel, seni bekleyen yeni bir hikâye var!';
+  static const sonucTekrarGel =
+      'Yakında tekrar gel, seni bekleyen yeni bir hikâye var!';
   static const sonucPdf = 'Hikâyeyi PDF olarak indir';
   static const sonucYeni = 'Yeni hikâye seç';
-  static String sonucOzet(int toplam, int dogruSayisi) => '$toplam sorudan $dogruSayisi tanesini bildin.';
+  static String sonucOzet(int toplam, int dogruSayisi) =>
+      '$toplam sorudan $dogruSayisi tanesini bildin.';
   static String sonucXp(int xp) => '+$xp XP kazandın';
   static String sonucSeri(int gun) => '$gun günlük okuma serisi';
   static const sonucSiradaki = 'Sıradaki hikâye';
   static const sonucSiradakiBasla = 'Bu hikâyeyi oku';
-  static const sonucYarin = 'Bugünkü hikâyeni okudun. Yarın yeni bir hikâye seni bekliyor.';
+  static const sonucYarin =
+      'Bugünkü hikâyeni okudun. Yarın yeni bir hikâye seni bekliyor.';
   static const sonucYukleniyor = 'Sonucun hazırlanıyor…';
 
   // ── Kota ve PDF ──────────────────────────────────────────────────────────
   static const kotaBaslik = 'Bugünkü hikâyeni okudun';
-  static const kotaAciklama = 'Yarın yeni bir hikâye seni bekliyor. Şimdi kısa bir mola verebilirsin.';
+  static const kotaAciklama =
+      'Yarın yeni bir hikâye seni bekliyor. Şimdi kısa bir mola verebilirsin.';
   static const kotaTamam = 'Tamam';
   static const pdfHazirlaniyor = 'PDF hazırlanıyor…';
   static const pdfHazir = 'PDF hazır.';
   static const pdfHata = 'PDF hazırlanamadı. Birazdan yeniden dene.';
   static const pdfHakBaslik = 'PDF hakkın bu ay doldu';
-  static const pdfHakAciklama = 'Bu özellik için velinle devam et. Okuma ve sorular her zaman açık.';
+  static const pdfHakAciklama =
+      'Bu özellik için velinle devam et. Okuma ve sorular her zaman açık.';
 
   // ── Okuduklarım ──────────────────────────────────────────────────────────
   static const okuduklarimBaslik = 'Okuduklarım';
-  static const okuduklarimBos = 'Henüz bir hikâye bitirmedin. İlk hikâyeni seçmeye ne dersin?';
+  static const okuduklarimBos =
+      'Henüz bir hikâye bitirmedin. İlk hikâyeni seçmeye ne dersin?';
   static const okuduklarimAlt = 'Bitirdiğin hikâyeler bu cihazda saklanır.';
   static const okuduklarimTekrar = 'Yeniden oku';
 }

@@ -5,10 +5,12 @@ import 'package:flutter/material.dart';
 import '../../models/okuma_models.dart';
 import '../../widgets/hupo/hupo.dart';
 import '../../widgets/okuma/okuma_bilesenler.dart';
+import '../../widgets/okuma/okuma_v3.dart';
 import 'okuma_tema.dart';
 
 /// Cevabı sunucuya gönderip sonucu döner (okuma_cevap_kontrol). Doğru anahtar istemcide yoktur.
-typedef OkumaCevapKaynagi = Future<OkumaCevapSonucu> Function(String soruId, String secenekId);
+typedef OkumaCevapKaynagi = Future<OkumaCevapSonucu> Function(
+    String soruId, String secenekId);
 
 /// Tek soru, tek deneme, anında geri bildirim (K-0036, H1). Akış: seç → Cevapla → geri bildirim.
 /// Seçim cevaplamadan önce değiştirilebilir. Yanlışta kırmızı X ve ceza yok.
@@ -59,7 +61,11 @@ class _SorularEkraniState extends State<SorularEkrani> {
   void _gecisiZamanla({required bool dogru}) {
     _gecis?.cancel();
     if (_sonSoru) return;
-    _gecis = Timer(Duration(seconds: dogru ? OkumaTema.dogruGecisSaniye : OkumaTema.yanlisGecisSaniye), () {
+    _gecis = Timer(
+        Duration(
+            seconds: dogru
+                ? OkumaTema.dogruGecisSaniye
+                : OkumaTema.yanlisGecisSaniye), () {
       if (mounted) _ileri();
     });
   }
@@ -122,21 +128,27 @@ class _SorularEkraniState extends State<SorularEkrani> {
       context: context,
       builder: (ctx) => SafeArea(
         child: Padding(
-          padding: const EdgeInsets.fromLTRB(OkumaTema.yanBoslukTelefon, OkumaTema.bosluk8, OkumaTema.yanBoslukTelefon, OkumaTema.bosluk20),
+          padding: const EdgeInsets.fromLTRB(
+              OkumaTema.yanBoslukTelefon,
+              OkumaTema.bosluk8,
+              OkumaTema.yanBoslukTelefon,
+              OkumaTema.bosluk20),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Row(
                 children: [
-                  const OkumaMaskot(poz: HupoPose.ipucuIster, boyut: OkumaTema.hupoIpucu),
+                  const OkumaMaskot(
+                      poz: HupoPose.ipucuIster, boyut: OkumaTema.hupoIpucu),
                   const SizedBox(width: OkumaTema.bosluk16),
                   Expanded(
                     child: Semantics(
                       header: true,
                       child: Text(
                         OkumaMetin.soruIpucuBaslik,
-                        style: OkumaTema.yazi(OkumaTema.yaziSoru, kalinlik: OkumaTema.kalinlikBaslik),
+                        style: OkumaTema.yazi(OkumaTema.yaziSoru,
+                            kalinlik: OkumaTema.kalinlikBaslik),
                       ),
                     ),
                   ),
@@ -148,7 +160,9 @@ class _SorularEkraniState extends State<SorularEkrani> {
                 style: OkumaTema.yazi(OkumaTema.yaziSecenek, satir: 1.5),
               ),
               const SizedBox(height: OkumaTema.bosluk20),
-              OkumaIkincilButon(etiket: OkumaMetin.kapat, onPressed: () => Navigator.pop(ctx)),
+              OkumaIkincilButon(
+                  etiket: OkumaMetin.kapat,
+                  onPressed: () => Navigator.pop(ctx)),
             ],
           ),
         ),
@@ -168,7 +182,9 @@ class _SorularEkraniState extends State<SorularEkrani> {
   Widget build(BuildContext context) {
     final soru = widget.sorular[_i];
     final g = _geri;
-    final ipucu = soru.dayanakSayfa == null ? null : OkumaMetin.soruIpucuSayfa(soru.dayanakSayfa!);
+    final ipucu = soru.dayanakSayfa == null
+        ? null
+        : OkumaMetin.soruIpucuSayfa(soru.dayanakSayfa!);
     return OkumaEkranIskeleti(
       baslik: OkumaMetin.soruSayac(_i + 1, widget.sorular.length),
       icerik: [
@@ -178,11 +194,13 @@ class _SorularEkraniState extends State<SorularEkrani> {
             if (ipucu != null && !_cevaplandi)
               TextButton.icon(
                 onPressed: () => _ipucuAc(ipucu),
-                icon: const Icon(Icons.lightbulb_outline_rounded, size: OkumaTema.ikonOrta),
+                icon: const Icon(Icons.lightbulb_outline_rounded,
+                    size: OkumaTema.ikonOrta),
                 label: const Text(OkumaMetin.soruIpucu),
               ),
             const SizedBox(width: OkumaTema.bosluk4),
-            const OkumaMaskot(poz: HupoPose.rehberSol, boyut: OkumaTema.hupoRehber),
+            const OkumaMaskot(
+                poz: HupoPose.rehberSol, boyut: OkumaTema.hupoRehber),
           ],
         ),
         const SizedBox(height: OkumaTema.bosluk16),
@@ -190,7 +208,8 @@ class _SorularEkraniState extends State<SorularEkrani> {
           header: true,
           child: Text(
             soru.metin,
-            style: OkumaTema.yazi(OkumaTema.yaziSoru, kalinlik: OkumaTema.kalinlikVurgu, satir: OkumaTema.satirSoru),
+            style: OkumaTema.yazi(OkumaTema.yaziSoru,
+                kalinlik: OkumaTema.kalinlikVurgu, satir: OkumaTema.satirSoru),
           ),
         ),
         const SizedBox(height: OkumaTema.bosluk24),
@@ -199,9 +218,12 @@ class _SorularEkraniState extends State<SorularEkrani> {
             harf: 'ABCD'[k],
             metin: soru.secenekler[k].metin,
             durum: _durum(soru.secenekler[k].id),
-            onTap: (_cevaplandi || _kontrol) ? null : () => _sec(soru.secenekler[k].id),
+            onTap: (_cevaplandi || _kontrol)
+                ? null
+                : () => _sec(soru.secenekler[k].id),
           ),
-          if (k < soru.secenekler.length - 1) const SizedBox(height: OkumaTema.secenekAraligi),
+          if (k < soru.secenekler.length - 1)
+            const SizedBox(height: OkumaTema.secenekAraligi),
         ],
         if (g != null) ...[
           const SizedBox(height: OkumaTema.bosluk20),
@@ -214,13 +236,28 @@ class _SorularEkraniState extends State<SorularEkrani> {
 
   Widget _altEylem(OkumaCevapSonucu? g) {
     if (g != null) {
-      return OkumaButon(
+      final buton = OkumaButon(
         etiket: _sonSoru ? OkumaMetin.soruSonuc : OkumaMetin.soruSonraki,
         onPressed: _ileri,
       );
+      // Otomatik geçiş süresi görünür; "Sonraki soru" bekletmeden geçirir (zamanlayıcı _ileri'de iptal edilir).
+      if (_sonSoru) return buton;
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          OkumaGeriSayim(
+              sure: Duration(
+                  seconds: g.dogru
+                      ? OkumaTema.dogruGecisSaniye
+                      : OkumaTema.yanlisGecisSaniye)),
+          const SizedBox(height: OkumaTema.bosluk12),
+          buton,
+        ],
+      );
     }
     if (_kontrol) {
-      return const OkumaButon(etiket: OkumaMetin.soruCevapla, onPressed: null, yukleniyor: true);
+      return const OkumaButon(
+          etiket: OkumaMetin.soruCevapla, onPressed: null, yukleniyor: true);
     }
     if (_hata) {
       return Column(
@@ -230,12 +267,15 @@ class _SorularEkraniState extends State<SorularEkrani> {
             liveRegion: true,
             child: Row(
               children: [
-                const Icon(Icons.error_outline_rounded, color: OkumaTema.coralDark, size: OkumaTema.ikonOrta),
+                const Icon(Icons.error_outline_rounded,
+                    color: OkumaTema.coralDark, size: OkumaTema.ikonOrta),
                 const SizedBox(width: OkumaTema.bosluk8),
                 Expanded(
                   child: Text(
                     OkumaMetin.soruKaydedilmedi,
-                    style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.coralDark),
+                    style: OkumaTema.yazi(OkumaTema.yaziYardimci,
+                        kalinlik: OkumaTema.kalinlikVurgu,
+                        renk: OkumaTema.coralDark),
                   ),
                 ),
               ],
@@ -254,7 +294,8 @@ class _SorularEkraniState extends State<SorularEkrani> {
           Text(
             OkumaMetin.soruSecKisa,
             textAlign: TextAlign.center,
-            style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
+            style: OkumaTema.yazi(OkumaTema.yaziYardimci,
+                kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
           ),
           const SizedBox(height: OkumaTema.bosluk8),
         ],
@@ -271,7 +312,11 @@ class _SorularEkraniState extends State<SorularEkrani> {
 enum _Durum { bos, secili, dogru, yanlis, dogruGoster, pasif }
 
 class _SecenekKarti extends StatelessWidget {
-  const _SecenekKarti({required this.harf, required this.metin, required this.durum, this.onTap});
+  const _SecenekKarti(
+      {required this.harf,
+      required this.metin,
+      required this.durum,
+      this.onTap});
 
   final String harf;
   final String metin;
@@ -281,12 +326,48 @@ class _SecenekKarti extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final (zemin, kenar, kalinlik, rozetZemin, rozetYazi) = switch (durum) {
-      _Durum.bos => (OkumaTema.surface, OkumaTema.muted, OkumaTema.kenarVarsayilan, OkumaTema.surface, OkumaTema.ink),
-      _Durum.secili => (OkumaTema.primarySoft, OkumaTema.primary, OkumaTema.kenarSecili, OkumaTema.primary, OkumaTema.surface),
-      _Durum.dogru => (OkumaTema.mintSoft, OkumaTema.mintDark, OkumaTema.kenarUyari, OkumaTema.mintDark, OkumaTema.surface),
-      _Durum.yanlis => (OkumaTema.coralSoft, OkumaTema.coralDark, OkumaTema.kenarUyari, OkumaTema.coralDark, OkumaTema.surface),
-      _Durum.dogruGoster => (OkumaTema.mintSoft, OkumaTema.mintDark, OkumaTema.kenarUyari, OkumaTema.mintDark, OkumaTema.surface),
-      _Durum.pasif => (OkumaTema.surface, OkumaTema.lineDark, OkumaTema.kenarVarsayilan, OkumaTema.lineDark, OkumaTema.ink),
+      _Durum.bos => (
+          OkumaTema.surface,
+          OkumaTema.muted,
+          OkumaTema.kenarVarsayilan,
+          OkumaTema.surface,
+          OkumaTema.ink
+        ),
+      _Durum.secili => (
+          OkumaTema.primarySoft,
+          OkumaTema.primary,
+          OkumaTema.kenarSecili,
+          OkumaTema.primary,
+          OkumaTema.surface
+        ),
+      _Durum.dogru => (
+          OkumaTema.mintSoft,
+          OkumaTema.mintDark,
+          OkumaTema.kenarUyari,
+          OkumaTema.mintDark,
+          OkumaTema.surface
+        ),
+      _Durum.yanlis => (
+          OkumaTema.coralSoft,
+          OkumaTema.coralDark,
+          OkumaTema.kenarUyari,
+          OkumaTema.coralDark,
+          OkumaTema.surface
+        ),
+      _Durum.dogruGoster => (
+          OkumaTema.mintSoft,
+          OkumaTema.mintDark,
+          OkumaTema.kenarUyari,
+          OkumaTema.mintDark,
+          OkumaTema.surface
+        ),
+      _Durum.pasif => (
+          OkumaTema.surface,
+          OkumaTema.lineDark,
+          OkumaTema.kenarVarsayilan,
+          OkumaTema.lineDark,
+          OkumaTema.ink
+        ),
     };
     final durumEtiketi = switch (durum) {
       _Durum.secili => 'Seçili',
@@ -305,31 +386,39 @@ class _SecenekKarti extends StatelessWidget {
       child: ExcludeSemantics(
         child: Material(
           color: zemin,
-          shape: RoundedRectangleBorder(borderRadius: sekil, side: BorderSide(color: kenar, width: kalinlik)),
+          shape: RoundedRectangleBorder(
+              borderRadius: sekil,
+              side: BorderSide(color: kenar, width: kalinlik)),
           child: InkWell(
             borderRadius: sekil,
             onTap: onTap,
             child: ConstrainedBox(
-              constraints: const BoxConstraints(minHeight: OkumaTema.secenekMinYukseklik),
+              constraints: const BoxConstraints(
+                  minHeight: OkumaTema.secenekMinYukseklik),
               child: Padding(
-                padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk16, vertical: OkumaTema.bosluk12),
+                padding: const EdgeInsets.symmetric(
+                    horizontal: OkumaTema.bosluk16,
+                    vertical: OkumaTema.bosluk12),
                 child: Row(
                   children: [
                     Container(
                       width: OkumaTema.dokunmaMin - 12,
                       height: OkumaTema.dokunmaMin - 12,
                       alignment: Alignment.center,
-                      decoration: BoxDecoration(shape: BoxShape.circle, color: rozetZemin),
+                      decoration: BoxDecoration(
+                          shape: BoxShape.circle, color: rozetZemin),
                       child: Text(
                         harf,
-                        style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu, renk: rozetYazi),
+                        style: OkumaTema.yazi(OkumaTema.yaziYardimci,
+                            kalinlik: OkumaTema.kalinlikVurgu, renk: rozetYazi),
                       ),
                     ),
                     const SizedBox(width: OkumaTema.bosluk12),
                     Expanded(
                       child: Text(
                         metin,
-                        style: OkumaTema.yazi(OkumaTema.yaziSecenek, kalinlik: OkumaTema.kalinlikVurgu, satir: 1.35),
+                        style: OkumaTema.yazi(OkumaTema.yaziSecenek,
+                            kalinlik: OkumaTema.kalinlikVurgu, satir: 1.35),
                       ),
                     ),
                     const SizedBox(width: OkumaTema.bosluk8),
@@ -358,22 +447,32 @@ class _DurumIkonu extends StatelessWidget {
         return Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(Icons.check_circle_rounded, color: OkumaTema.primary, size: OkumaTema.ikonOrta),
+            const Icon(Icons.check_circle_rounded,
+                color: OkumaTema.primary, size: OkumaTema.ikonOrta),
             const SizedBox(width: OkumaTema.bosluk4),
-            Text(OkumaMetin.soruSecildi, style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.primaryDark)),
+            Text(OkumaMetin.soruSecildi,
+                style: OkumaTema.yazi(OkumaTema.yaziEtiket,
+                    kalinlik: OkumaTema.kalinlikVurgu,
+                    renk: OkumaTema.primaryDark)),
           ],
         );
       case _Durum.dogru:
-        return const Icon(Icons.check_circle_rounded, color: OkumaTema.mintDark, size: OkumaTema.ikonOrta);
+        return const Icon(Icons.check_circle_rounded,
+            color: OkumaTema.mintDark, size: OkumaTema.ikonOrta);
       case _Durum.yanlis:
-        return const Icon(Icons.lightbulb_outline_rounded, color: OkumaTema.coralDark, size: OkumaTema.ikonOrta);
+        return const Icon(Icons.lightbulb_outline_rounded,
+            color: OkumaTema.coralDark, size: OkumaTema.ikonOrta);
       case _Durum.dogruGoster:
         return Row(
           mainAxisSize: MainAxisSize.min,
           children: [
-            const Icon(Icons.check_circle_rounded, color: OkumaTema.mintDark, size: OkumaTema.ikonOrta),
+            const Icon(Icons.check_circle_rounded,
+                color: OkumaTema.mintDark, size: OkumaTema.ikonOrta),
             const SizedBox(width: OkumaTema.bosluk4),
-            Text(OkumaMetin.soruDogruCevap, style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.mintDark)),
+            Text(OkumaMetin.soruDogruCevap,
+                style: OkumaTema.yazi(OkumaTema.yaziEtiket,
+                    kalinlik: OkumaTema.kalinlikVurgu,
+                    renk: OkumaTema.mintDark)),
           ],
         );
       case _Durum.bos:
@@ -424,14 +523,17 @@ class _GeriBildirimAlani extends StatelessWidget {
                         style: OkumaTema.yazi(
                           OkumaTema.yaziSoru,
                           kalinlik: OkumaTema.kalinlikBaslik,
-                          renk: dogru ? OkumaTema.mintDark : OkumaTema.coralDark,
+                          renk:
+                              dogru ? OkumaTema.mintDark : OkumaTema.coralDark,
                         ),
                       ),
                       if (!dogru) ...[
                         const SizedBox(height: OkumaTema.bosluk4),
                         Text(
                           OkumaMetin.soruAciklamaya,
-                          style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
+                          style: OkumaTema.yazi(OkumaTema.yaziYardimci,
+                              kalinlik: OkumaTema.kalinlikVurgu,
+                              renk: OkumaTema.muted),
                         ),
                       ],
                     ],
@@ -463,12 +565,14 @@ class _GeriBildirimAlani extends StatelessWidget {
               children: [
                 Text(
                   OkumaMetin.soruAciklama,
-                  style: OkumaTema.yazi(OkumaTema.yaziSecenek, kalinlik: OkumaTema.kalinlikVurgu),
+                  style: OkumaTema.yazi(OkumaTema.yaziSecenek,
+                      kalinlik: OkumaTema.kalinlikVurgu),
                 ),
                 const SizedBox(height: OkumaTema.bosluk8),
                 Text(
                   geri.aciklama,
-                  style: OkumaTema.yazi(OkumaTema.yaziSecenek - 1, satir: OkumaTema.satirGovde),
+                  style: OkumaTema.yazi(OkumaTema.yaziSecenek - 1,
+                      satir: OkumaTema.satirGovde),
                 ),
               ],
             ),
@@ -504,7 +608,9 @@ class _NoktaGostergesi extends StatelessWidget {
                     color: sonuclar[k] != null ? OkumaTema.primary : null,
                     border: Border.all(
                       color: k == aktif ? OkumaTema.primary : OkumaTema.muted,
-                      width: k == aktif ? OkumaTema.odakHalkaKalinligi : OkumaTema.kenarVarsayilan,
+                      width: k == aktif
+                          ? OkumaTema.odakHalkaKalinligi
+                          : OkumaTema.kenarVarsayilan,
                     ),
                   ),
                 ),

@@ -5,10 +5,26 @@
 /// çözücünün dışarıya açılması gereken adlarını gösterir.
 library;
 
-export 'hikaye_cozucu.dart' show Baglam, Cikti, HikayeHatasi, Hikaye, Stil, YuvaAdayi, sayfalariCoz;
-export 'gosterim_kurallari.dart' show SayfaButcesi, SayfaSecimi, hikayeSecimi, sayfaButcesi, kHikayeAtasozuSiniri, kSayfaKesifSiniri;
-export 'ikon_kayit.dart' show IkonKaydi, ikonBul, ikonKimligiCoz, ikonKatalogu, kIkonVarlikKlasoru, kMaskotIkonKimligi;
+export 'hikaye_cozucu.dart'
+    show Baglam, Cikti, HikayeHatasi, Hikaye, Stil, YuvaAdayi, sayfalariCoz;
+export 'gosterim_kurallari.dart'
+    show
+        SayfaButcesi,
+        SayfaSecimi,
+        hikayeSecimi,
+        sayfaButcesi,
+        kHikayeAtasozuSiniri,
+        kSayfaKesifSiniri;
+export 'ikon_kayit.dart'
+    show
+        IkonKaydi,
+        ikonBul,
+        ikonKimligiCoz,
+        ikonKatalogu,
+        kIkonVarlikKlasoru,
+        kMaskotIkonKimligi;
 export 'paket.dart' show hikayeFromPaket, yuvalarFromSozluk;
+export 'sure.dart' show okumaDakikasi, okumaHizi;
 export 'turkce_ad.dart' show Hal, ekle;
 
 /// Bu uygulama sürümünün açabildiği en yüksek paket motoru sürümü.
