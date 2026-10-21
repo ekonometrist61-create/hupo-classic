@@ -107,6 +107,10 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - **Doğrulanmadı:** web `next build`, cihaz/Flutter Web görünümü.
 - **Sıradaki:** Faz 1 (V3 arayüz portu), sözleşme genişletmesi (ayrı migration onayı), 120 hikâye pilot dönüşümü.
 
+### K-0097 · 2026-10-22 · VT/MOB/TSR · Görseller, yeni türler, atasözleri, 3–4. sınıf 15 hikâye
+- **Yapılan:** 30 Gemini sahne görseli, 7 yeni tür, soru sınırı 8, pilot-2'ye 4 atasözü (süre güncel), yeni 15 hikâye (HR-015…032) uzak DB'de taslak; migration 20261060–62. Ayrıntı: `docs/okuma-entegrasyon/PILOT_2_3_4_SINIF_2026-10-22.md`.
+- **Açık:** hukuk/telif, Ajan A/B ve insan okuması, 90 fiş, görsel gözden geçirme.
+
 ### K-0096 · 2026-10-21 · VT/TSR · 2. sınıf pilot: uzak DB'ye içe aktarım
 - **Yapılan:** 20261058 (paket doğrulayıcı fis_kodu + fiş.hikaye_slug) ve 20261059 (sözlük 39, 15 fiş, 15 taslak paket) uzakta uygulandı; önce yerelde provası geçti. Hikâyelere kavram hedefi, atasözü (9), işaret ve fis_kodu eklendi; hedef kimlikleri hikâye bazında benzersizleştirildi (ortak kimlik etiketleri eziyordu).
 - **Doğrulama:** yerel migrasyon sınaması 15 hikâye, 15 fiş bağlı, 39/39 sözlük; okuma testleri 187/188 (#18 önceden bilinen).
