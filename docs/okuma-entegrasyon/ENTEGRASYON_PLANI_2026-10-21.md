@@ -1,4 +1,4 @@
-# HupoRead → Hupolingo entegrasyonu: değerlendirme ve plan (2026-10-21)
+﻿# HupoRead → Hupolingo entegrasyonu: değerlendirme ve plan (2026-10-21)
 
 Durum: **ONAY BEKLİYOR.** Bu oturumda kod, veritabanı ve içerik değiştirilmedi; yalnız okundu.
 Önceki planlar: `C:\Dev\Senin Hikayen - HupoRead\docs\HUPO_ENTEGRASYON_PLANI.md` (§10 kesinleşen kararlar hâlâ geçerli), `docs/hupo-design-growth/okuma-*.md`, `PROJE_GUNLUGU.md` K-0080…K-0091.
@@ -69,6 +69,10 @@ Kabul: 390×844 ve 1024×768 (+360×640 ve 2.0 yazı ölçeği) ekran görüntü
 ### Faz 6 — Sonra
 İngilizce (K-0091'deki ön analiz), Storage/CDN'e geçiş (egress eşiği), sesli okuma (TTS kararı), hikâye atama, 1. sınıf ayrı pilot, release imzası.
 
+## Faz 1 ilerleme
+- (a) TAMAM: gösterim kuralları okuma_motoru'na taşındı (gosterim_kurallari.dart, 7 test), okuyucu bütçesi bu tek kaynağa bağlandı (ilk geçiş, cümle başına tek vurgu, sınıf/moda göre bütçe). dart test 47/47, lutter analyze okuma temiz, okuma ekran testleri geçti.
+- (b) sıradaki: V3 bileşenleri, süre etiketi, otomatik geçiş.
+
 ## 4b. Kararlar ve ek gereksinimler (kullanıcı, 2026-10-21)
 
 **Kararlar:** Faz 0 başlatıldı. Prototip dondurulur, geliştirme Hupolingo'da. Sahne görselleri sunucudan. Landing bölümü pilot sonrası (önce `/demo` örneği). Yayın setinin insan okumasını kullanıcı yapar.
@@ -79,6 +83,32 @@ Kabul: 390×844 ve 1024×768 (+360×640 ve 2.0 yazı ölçeği) ekran görüntü
 3. **Kullanım süresi analitiği (yeni, Faz 3b):** mobil + Flutter Web + web sitesi + paneller için "nerede ne kadar vakit". Bugün yalnız web-panelde PostHog var (`AnalyticsProvider.tsx`, çerez onaylı); Flutter tarafında kullanım süresi ölçümü yok. Önerilen tasarım: tek olay şeması (`yuzey` = mobil/flutter-web/site/veli/yonetim, `ekran`, `sure_sn`, anonim oturum), Flutter'da hafif ekran-süresi gözlemcisi (uygulama arka plana gidince oturum kapanır, boşta süre sayılmaz), sunucuda özet tablo + yönetim panosu (yüzey × ekran × süre). Çocuk verisi için KVKK: kimliksiz veya sözde-kimlikli, rıza/aydınlatma güncellemesi (GÖR-045 kapsamı). Mevcut Growth CRM olay altyapısı (`20261014000000_growth_crm_core.sql`) yeniden kullanılabilir mi, Faz 3b başında incelenir.
 4. **120 hikâyelik içerik hattı (Faz 2):** kullanıcı `.md` hikâyeleri verecek; ben bunları Atölye biçimine (`.hikaye.md` + derleyici, etiketler, hedefler, sınıf bandı, sorular) uyarlarım. Önce 2–3 hikâyelik pilot dönüşüm ve kullanıcı onayı, sonra toplu (Haiku ile mekanik dönüşüm, Sonnet ile doğrulama). Kullanıcının verdiği metne içerik düzeyinde dokunmam; uygunsuzluk veya sınıf-seviye uyumsuzluğu işaretlenir, değiştirilmez. Derleyici hata/uyarı raporu kullanıcıya özetlenir; insan okuması kullanıcıda.
 
+## 4c. "120 hikâye" paketinin değerlendirmesi (ChatGPT çıktısı, `HupoRead_Ilk_120_Hikaye_Arsivi.zip`)
+
+**Ne olduğu:** 120 hikâye değil, **120 üretim fişi** (kimlik HR-001…HR-120, başlık, 86–145 karakterlik öykü çekirdeği, sınıf, tür, söz varlığı kategorisi, değer, ikon önerisi, telif sınıfı). Dosya kendisi de "tam hikâye değildir" diyor. Kullanıcının "hikâyeleri biçime uyarlayacaksın" beklentisi bu yüzden yerine **üretim işi** olarak okunmalı: 120 tam metin yazmak gerekiyor.
+
+**Doğrulanan (ölçüldü):** 120 benzersiz kimlik ve başlık; sınıf dağılımı 2:15, 3:12, 4:13, 5:20, 6:20, 7:20, 8:20 (1. sınıf yok); tür 11 çeşit; telif sınıfı Ö=93, A=18, K=9; durum hepsi `brief_draft`, `rights_cleared=false`, `curriculum_verified=false` (dürüst bayraklar). Sabit kahraman adı yalnız 2 fişte geçiyor (Hupo/Ela/Ali tipi); gerisi kahraman-token modeline uygun.
+
+**Eksikler / riskler:**
+1. **Sözleşme uyumsuzluğu.** Fişte somut kelime, deyim, atasözü, kazanım kodu, soru ve sınıf bandı bilgisi yok; yalnız kategori ("yön bildiren sözcükler"). Sistemimiz bunları somut istiyor (sözlük yuvaları, hedefler, ≤2 atasözü, sorular). Üretimde sözlükten seçilecek; ilk adım fiş → hedef listesi çıkarımı.
+2. **Sözlükte olmayan hedef yok kuralı.** Hedef yapılacak her kelime/deyim/atasözü onaylı sözlükte (Ajan A/B + insan) olmalı; fişteki "sesteş: yüz — sınıf uygunluğu editörce kontrol edilecek" gibi notlar bu kapıya girer.
+3. **İkon eşleşmesi zayıf (kaba ölçüm, tam sözcük eşleşmesi):** 216 benzersiz ikon önerisinin yalnız 63'ü (~%29) katalogdaki etiket/etikette var. En sık eksikler: gölge, terazi, fotoğraf, kapı, kutu, el, taş, oba, zarf, sözlük, ekran, kopuz, sofra, ok. İki yol: önerileri kataloğa en yakın ikona eşle, kalan özgün kavramları yeni ikon olarak üret (80+ ikon, her biri insan QA).
+4. **Telif/kaynak (A=18, K=9):** Kaynak bağlantısı, edisyon ve hak durumu fiş başına kayıtlı değil; yayın koşulu olarak her A/K için editör kaydı gerekir. Kamu malı çekirdekler (Ezop, Grimm, Verne, Ö. Seyfettin, Mesnevî, Dede Korkut) makul görünüyor; ancak çeviriler/sadeleştirmeler korunur, **hikâye sıfırdan anlatılmalı**. Hukuki doğrulama bizde yok (GÖR-045/GÖR-043 kapsamı); hukukçu onayı gerekir.
+5. **İçerik duyarlılığı:** 8. sınıf "Yalnız Efe" (HR-117) savaş/şiddet çerçevesi içerir; yaş uygunluğu ve duyarlılık incelemesi şart. Mizah/Nasreddin fıkra uyarlamalarında kalıp yargı riski kontrol edilmeli.
+6. **Kapsam:** 4–5. sınıf pilot kümesi 33 fiş (13+20). 1. sınıf yok; mevcut 24 taslak (sınıf 1–8, 3'er) ile çakışma/mükerrer tema denetimi gerekir. Seri/devam hikâyesi var mı belirsiz.
+7. **Uzunluk hedefleri** (ör. 8. sınıf 1.200–1.800 sözcük) mevcut taslakların (bazıları hedefin altında) ve ekran/okuma süresi modelinin üstünde; bu uzunlukta 120 hikâye = yaklaşık 100 bin sözcük. Maliyet ve insan okuma yükü (kullanıcı okuyacak) büyük; **dalgalı yayın** şart.
+8. **Prompt hatası:** ChatGPT'nin istediği "uçtan uca 2., 5., 8. sınıf pilot" bizim hattımıza uyuyor; ancak "tekrar kayıt oluşturmadan, ID'leri koruyarak içe aktar" yalnız fiş katmanı için mümkün (tam sürüm paketi olmadan `okuma_paket_ice_aktar` çalışmaz).
+
+**Kullanıcı notu (2026-10-21):** ChatGPT yalnız kurguyu yazmış; tam metinleri üretmesi için ona talimat verildi. Hikâye üretimine ben başlamıyorum; ChatGPT metinleri gelince 2.1 (içe aktarma) ve doğrulama adımları uygulanır. Bu arada fiş katmanı, ikon eşlemesi ve sözleşme işleri hazırlanabilir.
+
+**Eklenen işler (Faz 2 altında, sırayla):**
+- **2.0 Fiş katmanı (migration, ayrı onay):** `okuma_hikaye_fisleri` (fis_kodu HR-xxx benzersiz, idempotent upsert, alanlar yukarıdaki fişle birebir, `durum`, `hikaye_id` bağı, telif kayıt alanları: kaynak/edisyon/hak notu/onaylayan). `okuma_hikaye_surumleri`'ne dokunulmaz. Yönetim panelinde "Fişler" sekmesi: filtre, durum, tam metne bağlama, telif kaydı, silme/düzenleme yok değil (taslak fiş serbest düzenlenir).
+- **2.1 İçe aktarma betiği:** katalog JSON → fişler (kuru çalıştırma, ID koruma, tekrar çalıştırmada kayıt çoğalmaz); md bölümleri doğrulama için okunur, tek kaynak JSON.
+- **2.2 Pilot üretim (2., 5., 8. sınıf, 3 fiş):** fiş → hedef çıkarımı (sözlükten) → tam metin (sınıf bandı, token'lı kahraman) → derleyici → Ajan A/B → kullanıcı okuması. Ölçüt: derleyici hatasız, gösterim kuralları geçer, telif kaydı dolu, kullanıcı onayı. Sonuç kaliteyi belirler, kalan 117 için şablon çıkar.
+- **2.3 Dalga üretimi:** önce 4–5. sınıf (33 fiş) → 6–8 → 2–3; her dalga 10–15 hikâye, insan okumasını kullanıcı yapar; üretimde mekanik/ön taslak işi Haiku, redaksiyon ve kural denetimi Sonnet.
+- **2.4 İkon kapsamı:** fişlerden çıkan ikon önerileri → kataloğa eşleme tablosu; eksik özgün ikonlar toplu üretim listesi (öncelik: pilot dalga).
+- **2.5 Önce çözülecek engel:** PGlite'taki kırmızı test (atölyede 5 pakette `ogrenme_hedefleri[6].etiket` kuralı); yeni hikâyeler aynı doğrulayıcıdan geçeceği için üretim şablonu bu kuralı baştan karşılar.
+
 ## 5. Kullanıcıdan gereken kararlar
 
 1. Faz 0'ı başlatayım mı (commit bölme, dal, taban testleri)? Commit onayı sizde.
@@ -86,3 +116,4 @@ Kabul: 390×844 ve 1024×768 (+360×640 ve 2.0 yazı ölçeği) ekran görüntü
 3. Sahne görselleri sunucudan (Storage + paket alanı) mı, ilk pilotta gömülü mü? (Önerim: sunucudan; Faz 1'de yedek sahne ile görselsiz çalışır.)
 4. Landing bölümü pilot sonrasına mı kalsın? (Önerim: evet; öncesinde yalnız `/demo` örneği.)
 5. İlk yayın seti 4–5. sınıf, 12–24 hikâye ve insan okuması için kim (siz mi, bir Türkçe öğretmeni mi)?
+

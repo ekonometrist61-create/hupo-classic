@@ -117,6 +117,7 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
           anlamlar: d.anlamlar,
           baslik: d.paket?.baslik ?? OkumaMetin.uygulamaAdi,
           cevrimdisi: d.cevrimdisi,
+          sinif: d.secilen?.anaSinif ?? 4,
           onGeri: _akis.listeyeDon,
           onSayfaGorundu: _akis.sayfaGorundu,
           onSozcukAcildi: _akis.sozcukAcildi,

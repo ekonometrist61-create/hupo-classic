@@ -2,7 +2,8 @@ import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:okuma_motoru/okuma_motoru.dart' show Cikti, Stil, ikonBul, kIkonVarlikKlasoru, kMaskotIkonKimligi;
+import 'package:okuma_motoru/okuma_motoru.dart'
+    show Cikti, SayfaSecimi, Stil, hikayeSecimi, ikonBul, kIkonVarlikKlasoru, kMaskotIkonKimligi;
 
 import '../../providers/okuma_providers.dart';
 import '../../services/okuma_cihaz_deposu.dart';
@@ -28,7 +29,11 @@ class OkuyucuEkrani extends ConsumerStatefulWidget {
     this.onSayfaGorundu,
     this.onSozcukAcildi,
     this.cevrimdisi = false,
+    this.sinif = 4,
   });
+
+  /// Hikâyenin ana sınıfı; sayfa başına vurgu ve çıkartma bütçesini belirler.
+  final int sinif;
 
   final List<List<Cikti>> sayfalar;
 
@@ -94,31 +99,18 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani> with TickerProvid
     super.dispose();
   }
 
-  bool _vurguMu(Stil s) => s == Stil.kelime || s == Stil.deyim || s == Stil.onemli;
+  /// Gösterim kuralları (tek kaynak: okuma_motoru `hikayeSecimi`): ilk geçiş, cümle başına tek
+  /// vurgu, sınıfa ve moda göre sayfa bütçesi. Sade/Zengin değişince yeniden hesaplanır.
+  List<SayfaSecimi>? _secim;
+  bool? _secimSade;
 
-  int _oncelik(Stil s) => switch (s) {
-        Stil.kelime => 3,
-        Stil.deyim => 2,
-        _ => 1,
-      };
-
-  /// Sayfa bütçesi: vurgular öncelik sırasıyla (kelime > deyim > önemli yer) en fazla sınıra kadar seçilir.
   _Butce _butce(List<Cikti> sayfa) {
-    final adaylar = [
-      for (var i = 0; i < sayfa.length; i++)
-        if (_vurguMu(sayfa[i].stil)) i,
-    ];
-    adaylar.sort((a, b) {
-      final p = _oncelik(sayfa[b].stil).compareTo(_oncelik(sayfa[a].stil));
-      return p != 0 ? p : a.compareTo(b);
-    });
-    final vurguMax = _sade ? OkumaTema.okumaVurguSade : OkumaTema.okumaVurguZengin;
-    final cikartmaMax = _sade ? OkumaTema.okumaCikartmaSade : OkumaTema.okumaCikartmaZengin;
-    final cikartmalar = <int>{};
-    for (var i = 0; i < sayfa.length && cikartmalar.length < cikartmaMax; i++) {
-      if (sayfa[i].stil == Stil.isaret) cikartmalar.add(i);
+    if (_secim == null || _secimSade != _sade) {
+      _secim = hikayeSecimi(_sayfalar, sinif: widget.sinif, sade: _sade);
+      _secimSade = _sade;
     }
-    return _Butce(adaylar.take(vurguMax).toSet(), cikartmalar);
+    final s = _secim![_sayfa.clamp(0, _secim!.length - 1)];
+    return _Butce(s.vurgu, s.cikartma);
   }
 
   /// Kelime alt sayfasındaki örnek: sayfadaki, sözcüğü içeren ilk cümle. Yoksa null.

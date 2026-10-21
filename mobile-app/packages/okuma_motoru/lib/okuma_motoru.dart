@@ -6,6 +6,7 @@
 library;
 
 export 'hikaye_cozucu.dart' show Baglam, Cikti, HikayeHatasi, Hikaye, Stil, YuvaAdayi, sayfalariCoz;
+export 'gosterim_kurallari.dart' show SayfaButcesi, SayfaSecimi, hikayeSecimi, sayfaButcesi, kHikayeAtasozuSiniri, kSayfaKesifSiniri;
 export 'ikon_kayit.dart' show IkonKaydi, ikonBul, ikonKimligiCoz, ikonKatalogu, kIkonVarlikKlasoru, kMaskotIkonKimligi;
 export 'paket.dart' show hikayeFromPaket, yuvalarFromSozluk;
 export 'turkce_ad.dart' show Hal, ekle;
