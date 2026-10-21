@@ -231,9 +231,11 @@ begin
 
   select string_agg(p.proname, ',' order by p.proname) into t from pg_proc p join pg_namespace ns on ns.oid = p.pronamespace
    where ns.nspname = 'public' and p.proname like 'okuma\_%' and not has_function_privilege('authenticated', p.oid, 'execute');
-  perform pg_temp.k('27 RPC authenticated için açık (envanter)',
+  -- Envanter kilidi: yeni okuma_* RPC eklenince sayı bilinçli olarak güncellenir.
+  -- 27 = önceki RPC'ler; +2 = okuma_fis_ice_aktar, okuma_fis_listele (20261057000000).
+  perform pg_temp.k('29 RPC authenticated için açık (envanter)',
     t is null and (select count(*) from pg_proc p join pg_namespace ns on ns.oid = p.pronamespace
-                    where ns.nspname = 'public' and p.proname like 'okuma\_%') = 27,
+                    where ns.nspname = 'public' and p.proname like 'okuma\_%') = 29,
     coalesce(t, 'kapalı yok') || ' / toplam ' || (select count(*) from pg_proc p join pg_namespace ns on ns.oid = p.pronamespace where ns.nspname = 'public' and p.proname like 'okuma\_%'));
 
   select string_agg(c.relname, ',') into t from pg_class c join pg_namespace ns on ns.oid = c.relnamespace

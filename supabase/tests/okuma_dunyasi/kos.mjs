@@ -24,6 +24,7 @@ const migrasyonlar = [
   mig('20261050000400_okuma_dunyasi_sozluk.sql'),
   mig('20261050000500_export_my_data_okuma.sql'),
   mig('20261051000000_okuma_dusun_alani.sql'),
+  mig('20261057000000_okuma_hikaye_fisleri.sql'),
 ];
 const paketDizini = process.env.OKUMA_PAKET_DIZINI || 'C:\\Dev\\Senin Hikayen - HupoRead\\atolye\\cikti';
 
@@ -72,14 +73,34 @@ if (fs.existsSync(sozlukOrnek)) {
 
 await adim('test-yukleme', () => db.exec(fs.readFileSync(path.join(here, 'testler.sql'), 'utf8')));
 const bildirimler = [];
-const sonuc = await adim('testler', async () => {
+await adim('testler', async () => {
   try {
-    return await db.query('select * from pg_temp.okuma_testleri_sonuc()', [], { onNotice: (n) => bildirimler.push(n.message) });
+    await db.query('select pg_temp.okuma_testleri()', [], { onNotice: (n) => bildirimler.push(n.message) });
   } catch (e) {
     console.log(bildirimler.join('\n'));
     throw e;
   }
 });
+
+// Hikâye fişleri: 120 fişlik katalog (fixtures/hr_katalog.json) katalog → fiş eşlemesiyle sınanır.
+await adim('fis-testler-yukleme', () => db.exec(fs.readFileSync(path.join(here, 'fis_testler.sql'), 'utf8')));
+const katalog = JSON.parse(fs.readFileSync(path.join(here, 'fixtures', 'hr_katalog.json'), 'utf8').replace(/^﻿/, ''));
+const fisKatalogu = katalog.entries.map((e) => ({
+  fis_kodu: e.id,
+  baslik: e.title,
+  sinif: e.grade,
+  sinif_bandi: e.band.replace('–', '-'),
+  tur: e.genre,
+  kurgu_cekirdegi: e.story_seed,
+  soz_varligi: e.language,
+  bilgi_beceri_deger: e.concepts,
+  ikon_onerileri: e.icon_suggestions,
+  telif_sinifi: e.rights_class,
+  kaynak_sinifi: e.source,
+  telif_notu: e.rights_explanation,
+}));
+await adim('fis-testleri', () => db.query('select pg_temp.fis_testleri($1::jsonb)', [JSON.stringify(fisKatalogu)]));
+const sonuc = await adim('sonuc', () => db.query('select no, senaryo, gecti, detay from pg_temp.sonuc order by no'));
 
 let gecen = 0;
 for (const r of sonuc.rows) {
@@ -98,3 +119,4 @@ const okumaKapsami = sonExport && /okuma_/.test(fs.readFileSync(path.join(migKla
 console.log(`\nNOT export_my_data: son tanım ${sonExport || '(bulunamadı)'}; okuma_* tablolarını kapsıyor mu: ${okumaKapsami ? 'EVET' : 'HAYIR (eksik; ayrı migration gerekir)'}`);
 
 process.exit(gecen === sonuc.rows.length && sonuc.rows.length > 0 ? 0 : 1);
+

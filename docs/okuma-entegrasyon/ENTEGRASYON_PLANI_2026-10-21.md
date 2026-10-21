@@ -73,6 +73,13 @@ Kabul: 390×844 ve 1024×768 (+360×640 ve 2.0 yazı ölçeği) ekran görüntü
 - (a) TAMAM: gösterim kuralları okuma_motoru'na taşındı (gosterim_kurallari.dart, 7 test), okuyucu bütçesi bu tek kaynağa bağlandı (ilk geçiş, cümle başına tek vurgu, sınıf/moda göre bütçe). dart test 47/47, lutter analyze okuma temiz, okuma ekran testleri geçti.
 - (b) sıradaki: V3 bileşenleri, süre etiketi, otomatik geçiş.
 
+## Faz 2.0 ilerleme (fiş katmanı, yerel)
+- Migration: `supabase/migrations/20261057000000_okuma_hikaye_fisleri.sql` (tablo, doğrulayıcı, idempotent içe aktarma, listeleme). Metin alanı yok; hak/müfredat onayı içe aktarmayla değişmez; brief_draft dışı fiş güncellenmez.
+- PGlite: 16 yeni senaryo geçti (yetki, kuru çalıştırma, idempotency, atomiklik, bilinmeyen alan, sınıf-bant, içerik koruması, 120 fiş). RPC envanter kilidi 27→29 olarak güncellendi.
+- Sürüm numarası çakışması: ilk taslak 20261054000000 idi; Kelime Evreni aynı numarayı uzakta kullanmış. 20261057000000'a taşındı.
+- `db:preview`: 2 migration bekliyor: `20261056000000_kelime_teyit_duzeltmeleri.sql` (Kelime Evreni, bu işe ait değil, test edilmedi) ve `20261057000000_okuma_hikaye_fisleri.sql`. `db:deploy` ikisini birlikte uygular; ayrı onay gerekir.
+- Hikâye metni üretimi yok; ChatGPT'den tam metinler bekleniyor.
+
 ## 4b. Kararlar ve ek gereksinimler (kullanıcı, 2026-10-21)
 
 **Kararlar:** Faz 0 başlatıldı. Prototip dondurulur, geliştirme Hupolingo'da. Sahne görselleri sunucudan. Landing bölümü pilot sonrası (önce `/demo` örneği). Yayın setinin insan okumasını kullanıcı yapar.
