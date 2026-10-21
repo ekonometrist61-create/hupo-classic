@@ -69,6 +69,16 @@ Kabul: 390×844 ve 1024×768 (+360×640 ve 2.0 yazı ölçeği) ekran görüntü
 ### Faz 6 — Sonra
 İngilizce (K-0091'deki ön analiz), Storage/CDN'e geçiş (egress eşiği), sesli okuma (TTS kararı), hikâye atama, 1. sınıf ayrı pilot, release imzası.
 
+## 4b. Kararlar ve ek gereksinimler (kullanıcı, 2026-10-21)
+
+**Kararlar:** Faz 0 başlatıldı. Prototip dondurulur, geliştirme Hupolingo'da. Sahne görselleri sunucudan. Landing bölümü pilot sonrası (önce `/demo` örneği). Yayın setinin insan okumasını kullanıcı yapar.
+
+**Ek gereksinimler (her biri bir faza bağlandı):**
+1. **Veli ve öğretmen dashboard'u (Faz 3):** çocuğun öğrendiği kavramlar (hedef durumu: tanıştı → tanıdı → aktardı), okunan hikâyeler, öğrenilen kelime sayısı, doğru/yanlış dağılımı (işlem türüne göre), aldığı değerler (Maarif), tema ilgisi, zorluk seyri, okuma süresi. Öğretmende sınıf düzeyinde toplulaştırma (min-N). Mevcut RPC'ler (`okuma_veli_ozeti`, öğretmen raporu) hangi alanları verdiği denetlenir; eksik metrikler için ek RPC. Öğrenme metriği XP/süre ile karıştırılmaz.
+2. **Yönetimde hikâye yaşam döngüsü (Faz 3):** yükleme (var: `okuma_paket_ice_aktar`), **düzenleme** (şimdi sürümler değişmez; düzenleme = yeni taslak sürüm üretip eskiyi arşivleme; panelde metin editörü + kuru çalıştırma), **çıkarma** (yayından kaldır = arşiv, var), **silme** (yalnız taslak/arşiv ve oturumu olmayan hikâyeler; oturumu olanlar için yumuşak silme; `log_admin_action` ile kayıt). Toplu işlem. Genel istatistikler: karne + boşluk haritası var, genel özet panosu eklenir.
+3. **Kullanım süresi analitiği (yeni, Faz 3b):** mobil + Flutter Web + web sitesi + paneller için "nerede ne kadar vakit". Bugün yalnız web-panelde PostHog var (`AnalyticsProvider.tsx`, çerez onaylı); Flutter tarafında kullanım süresi ölçümü yok. Önerilen tasarım: tek olay şeması (`yuzey` = mobil/flutter-web/site/veli/yonetim, `ekran`, `sure_sn`, anonim oturum), Flutter'da hafif ekran-süresi gözlemcisi (uygulama arka plana gidince oturum kapanır, boşta süre sayılmaz), sunucuda özet tablo + yönetim panosu (yüzey × ekran × süre). Çocuk verisi için KVKK: kimliksiz veya sözde-kimlikli, rıza/aydınlatma güncellemesi (GÖR-045 kapsamı). Mevcut Growth CRM olay altyapısı (`20261014000000_growth_crm_core.sql`) yeniden kullanılabilir mi, Faz 3b başında incelenir.
+4. **120 hikâyelik içerik hattı (Faz 2):** kullanıcı `.md` hikâyeleri verecek; ben bunları Atölye biçimine (`.hikaye.md` + derleyici, etiketler, hedefler, sınıf bandı, sorular) uyarlarım. Önce 2–3 hikâyelik pilot dönüşüm ve kullanıcı onayı, sonra toplu (Haiku ile mekanik dönüşüm, Sonnet ile doğrulama). Kullanıcının verdiği metne içerik düzeyinde dokunmam; uygunsuzluk veya sınıf-seviye uyumsuzluğu işaretlenir, değiştirilmez. Derleyici hata/uyarı raporu kullanıcıya özetlenir; insan okuması kullanıcıda.
+
 ## 5. Kullanıcıdan gereken kararlar
 
 1. Faz 0'ı başlatayım mı (commit bölme, dal, taban testleri)? Commit onayı sizde.
