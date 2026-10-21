@@ -79,6 +79,7 @@ Kabul: 390×844 ve 1024×768 (+360×640 ve 2.0 yazı ölçeği) ekran görüntü
 - Sürüm numarası çakışması: ilk taslak 20261054000000 idi; Kelime Evreni aynı numarayı uzakta kullanmış. 20261057000000'a taşındı.
 - `db:preview`: 2 migration bekliyor: `20261056000000_kelime_teyit_duzeltmeleri.sql` (Kelime Evreni, bu işe ait değil, test edilmedi) ve `20261057000000_okuma_hikaye_fisleri.sql`. `db:deploy` ikisini birlikte uygular; ayrı onay gerekir.
 - Hikâye metni üretimi yok; ChatGPT'den tam metinler bekleniyor.
+- **Uzakta uygulandı (2026-10-21, kullanıcı onayı):** `20261057000000_okuma_hikaye_fisleri.sql`. `db:preview` sonrası `db:deploy` çalıştı; ardından `db:preview` "Remote database is up to date" verdi. 20261056 deploy öncesi zaten uzakta uygulanmış görüldü (Kelime Evreni çalışması).
 
 ## 4b. Kararlar ve ek gereksinimler (kullanıcı, 2026-10-21)
 

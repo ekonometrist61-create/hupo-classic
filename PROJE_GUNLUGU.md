@@ -60,10 +60,1350 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR-041 | YÖN | Segmentli bildirim: uzak DB'ye `20261044000000` uygulaması (`db:deploy`) ve web-panel dağıtımı (kullanıcı onayı); gerçek yönetici oturumuyla uçtan uca test (kaydet → ön kontrol → planla → dağıtım sonucu). Demo modu bu zinciri doğrulamaz | BEKLİYOR | Kullanıcı (onay, oturum) + Ajan | Yüksek | K-0018 |
 | GÖR-043 | HUK | MEB ODSGM içerikleri (icerik/834, 54 kaynak): altbilgide "Tüm Hakları Saklıdır" yazıyor. Birebir aktarım için MEB'den yazılı izin veya hukuk görüşü gerekli; o zamana kadar yalnızca uyarlama. Lisans kaydı `belirsiz` | BEKLİYOR | Hukuk + Kullanıcı | Yüksek | K-0020 |
 | GÖR-042 | YÖN | Soru Atölyesi (PDF → etiketli soru → varyasyon → denetim → panel import). Faz 0 belgeleri ve şema yazıldı; Faz 1'den devam. Faz 6 (migration/RPC/panel) ayrı onay ister. Lisans dayanağı kaynak kaydına yazılmalı | DEVAM | Ajan + Kullanıcı | Yüksek | K-0020 |
+| GÖR-044 | MOB | Senin Hikayen / Okuma Dünyası ana iş: F0 iskeleti ve kit testi tamam; F1 (Dart motor, Türkçe ek vektörleri), F2 (derleyici, şemalar) ve örnek hikâyeler sıradaki | DEVAM | Ajan + Kullanıcı | Yüksek | K-0022, K-0023 |
+| GÖR-045 | HUK | Okuma Dünyası hukuku: aydınlatma güncellemesi (okuma geçmişi, anket, veli değer tercihi için KVKK m.6 sorusu), saklama süresi, AI üretimli metnin telifi, MEB/TDK metni | BEKLİYOR | Hukuk | Yüksek | K-0022, GÖR-019, GÖR-043 |
+| GÖR-046 | VT | (KAPANDI, bkz. K-0028) Kelime Evreni veli özeti rıza kapısını sunucuda uygulamıyor (`kelime_veli_ozeti` 20261022000000:611; kapı yalnız ChildScope arayüzünde); `export_my_data` Kelime tablolarını kapsamıyor. Düzeltme migration'ı ayrı onayla | TAMAMLANDI (rıza kapısı PGlite'ta DOĞRULANDI; migrasyonlar 20261045/20261046 uzakta; export çalışma zamanı testi GÖR-048'e taşındı) | Ajan | Yüksek | K-0022, GÖR-041, K-0024, K-0025, K-0027, K-0028 |
+| GÖR-048 | VT | `export_my_data` (20261046) çalışma zamanı testi: PGlite'ta `student_stats`, `user_answers`, `xp_events`, `user_badges`, `notifications` tabloları yok; Kelime bölümü dahil tam çağrı test edilmedi. Test ortamı tamamlanınca koşulacak | DEVAM | Ajan | Orta | K-0027, K-0028 |
+| GÖR-049 | YÖN | Dört göz ve iki yönetici hesabı: sistem (`DORT_GOZ`) iki ayrı yönetici hesabı ister. Hazırlayan AI ajanı bir hesap sahibi değildir. Okuma Dünyası tasarımında (F7) ajan işlemlerinin hangi hesapla yapılacağı ve ikinci onayın kimde olacağı netleştirilecek | BEKLİYOR (tasarım) | Ajan + Kullanıcı | Yüksek | K-0025, K-0028 |
+| GÖR-050 | YÖN | Katman B (LLM hakem) canlı çağrısı: ortamdaki `GEMINI_API_KEY` Gemini tarafından reddediliyor (HTTP 401; değer `AQ.` ile başlıyor, Gemini API anahtarları genellikle `AIza` ile başlar). `ANTHROPIC_API_KEY` tanımlı değil. Geçerli bir Gemini anahtarı (AI Studio) ya da Claude anahtarı ortam değişkeni olarak tanımlanmalı; sonra `hakem` komutu iki örnek hikâyede çalıştırılacak | KAPANDI (K-0034: canlı hakem çalıştı) | Kullanıcı | Yüksek | K-0033, K-0034 |
+| GÖR-051 | MOB | HupoRead görsel ve içerik yükseltme: F1 uygulandı (PDF palet/serif/vektör kapak, emoji → SVG okuyucu ve PDF, maskot düzeltmesi). Açık: F2 okuyucu Oku/Keşfet/Düşün akışı (Düşün isteğe bağlı mı?), F3 canlı içerik sözleşmesi (DB onayı), F4 raster sahneler | DEVAM | Ajan + Kullanıcı | Yüksek | K-0076, K-0077, K-0078 |
+| GÖR-052 | MOB | Okuma PDF gerçek kontrolü: ikonlu gerçek bir hikâyeyle sayfa incelemesi, 2. ve 8. sınıf ile mürekkep tasarrufu PNG'lerinin incelenmesi, baskı denemesi, PDF indir akışında tema seçimi (karar), 8. sınıf için sözlük adayı (içerik) | BEKLİYOR | Ajan + Kullanıcı (içerik, baskı, karar) | Orta | K-0085 |
+| GÖR-053 | BEL | Çakışan çalışma: okuma PDF ve motor dosyaları iki ajan tarafından düzenlendi (K-0078, K-0085). Commit öncesi birleştirme ve gözden geçirme gerekli; okuma dosyaları henüz git'e alınmadı (untracked) | BEKLİYOR (karar) | Kullanıcı (commit onayı) + Ajan | Yüksek | K-0078, K-0085 |
 
 ---
 
 ## B. Kayıtlar (en yeni üstte)
+
+### K-0092 · 2026-10-21 · MOB/VT/TSR · HupoRead → Hupolingo entegrasyonu: karar, Faz 0 tamam
+- **Tür:** Karar + Kayıt
+- **Konu:** MOB, VT, TSR, WEB
+- **Karar (kullanıcı):** Faz 0 başlasın; prototip donar, geliştirme yalnız Hupolingo'da; sahne görselleri sunucudan (Storage + paket alanı); landing bölümü pilot sonrası (önce `/demo` örneği); ilk yayın setinin insan okumasını kullanıcı yapar; kullanıcı ~120 hikâyeyi `.md` olarak verecek, Atölye biçimine uyarlanacak.
+- **Ek gereksinimler:** veli/öğretmen dashboard'u (kavram, hikâye, kelime sayısı, doğru-yanlış dağılımı, değerler); yönetimde hikâye yükleme/düzenleme/çıkarma/silme + genel istatistik; mobil, web app, site ve panellerde kullanım süresi analitiği. Plan: `docs/okuma-entegrasyon/ENTEGRASYON_PLANI_2026-10-21.md` (§4b).
+- **Faz 0 yapılanlar:** dal `feature/huporead-entegrasyon`; okuma dosyaları (mobil, paneller, 7 migration, testler, belgeler) tek commit'te git'e alındı (GÖR-053 kapandı); `db:status`: yerel ve uzak migration listesi birebir aynı.
+- **Taban testleri:** `flutter test` okuma 77/77; `dart test` motor 40/40; PGlite 171/172 (tek kırmızı önceden var: atölyedeki 5 gerçek paket `ogrenme_hedefleri[6].etiket 2-120 karakter` kuralına takılıyor; 120 hikâye içe aktarımından önce çözülmeli); web eslint (okuma klasörleri) ve `tsc --noEmit` temiz; `flutter analyze` 4 info, hiçbiri okumada (push dosyaları).
+- **Doğrulanmadı:** web `next build`, cihaz/Flutter Web görünümü.
+- **Sıradaki:** Faz 1 (V3 arayüz portu), sözleşme genişletmesi (ayrı migration onayı), 120 hikâye pilot dönüşümü.
+
+### K-0093 · 2026-10-21 · VT/TSR · Hikâye fişleri migration'ı uzakta uygulandı
+- **Tür:** Kayıt (kullanıcı onayı: tüm bekleyen migration'lar)
+- **Konu:** VT, TSR
+- **Yapılan:** `20261057000000_okuma_hikaye_fisleri.sql` (fiş tablosu, doğrulayıcı, idempotent içe aktarma, listeleme; metin alanı yok). `db:preview` önce yalnız bu migration'ı gösterdi; `db:deploy` uyguladı; sonra `db:preview` 'up to date' verdi.
+- **Doğrulama:** PGlite 187/188 (kırmızı #18 önceden bilinen paket sorunu), 16 yeni fiş senaryosu geçti.
+- **Sürüm çakışması:** ilk taslak 20261054 idi (Kelime Evreni ile aynı numara); 20261057'ye taşındı.
+- **Açık:** 120 fişin uzak DB'ye yazılması (içe aktarma) henüz yapılmadı; ayrı onay gerekir. Hikâye metinleri ChatGPT'den bekleniyor.
+
+### K-0091 · 2026-10-21 · MOB/TSR · HupoRead devir notu: İngilizce iş ertelendi, açık kalemler
+- **Tür:** Not + Karar (kullanıcı: İngilizce işi ertelendi)
+- **Konu:** MOB, TSR
+- **Bağlam:** Kullanıcı HupoRead'i Türkçe + İngilizce yapma fikrini (ana ekranda dil seçimi, İngilizce hikâye ve soruların veri tabanına konması) ertelemeye karar verdi. Yeni bir sohbette yeni iş verilecek. Bu kayıt o sohbet için devir notudur.
+- **Karar:** İngilizce iş yapılmadı. Kod, veri tabanı ve içerik değişikliği yok.
+- **Ertelenen iş için ön analiz (uygulanmadı):**
+  1. Dil seçimi ana ekranda: Türkçe / English / Türkçe + English. Tercih hesapta saklanır. "Hangi tipte okuma" sorusu dil mi, okuma modu mu diye netleşmedi (varsayım: dil).
+  2. Veri tabanı: hikâye ve soru tablolarına `dil` alanı; (hikâye, dil) çifti benzersiz. Uzak DB migration'ı, kullanıcı onayı gerekir.
+  3. Motor: Türkçe ek çekimi (`turkce_ad.dart`) İngilizcede kullanılmaz. İngilizce paketler şablonsuz düz metin olur, kahraman adı değişmez.
+  4. Atasözleri çevrilmez; İngilizce karşılık (proverb) ya da farklı bir deyim gerekir.
+  5. Sözlük iki yönlü önerilir (İngilizce kelime, Türkçe anlam). Yeni alan gerektirir.
+  6. Seviye: İngilizce için ayrı ölçek (A1–B1 gibi), MEB İngilizce kazanımlarıyla eşleştirme gerekir.
+  7. Çeviriler yayın kapısından geçer (Ajan A/B, insan okuması, dört göz). Makine çevirisi taslaktır.
+  8. Önerilen pilot: 3 hikâye ve soruları. Karar bekleyen üç soru: dil seçimi açılışta mı, her seferinde mi sorulacak; iki dilli görünüm nasıl olacak (yan yana, paragraf altı, yalnız kelime anlamı); pilot hikâyeler hangileri.
+- **Açık kalemler (HupoRead, `C:\Dev\Senin Hikayen - HupoRead\flutter_prototip`):**
+  1. **Cihaz:** Son derleme (K-0090, 9 madde) telefona kurulmadı, telefon bağlı değildi. Telefonda ad ve ikonu değişmiş önceki sürüm var. Kurulum: `adb install -r build\app\outputs\flutter-apk\app-debug.apk` (adb: `C:\Users\cengi\AppData\Local\Android\Sdk\platform-tools\adb.exe`).
+  2. **Cihazda doğrulanmadı:** PDF'in Android İndirilenler'e kaydı (`file_saver`), "Paylaş" eylemi, sahne görselleri, otomatik geçiş ve geri sayım çubuğu, okuyucu panelleri.
+  3. **PDF kusuru:** Kapak sahne bandında fener görselinin üstü hafif kırpılıyor.
+  4. **Taslak içerik:** `okuma_v3_icerik.dart` içinde 1 Bilgi Kutusu ve 3 Düşün sorusu editör onayı bekliyor.
+  5. **Süreler:** 8 hikâyenin "N dk" değerleri tahmin (kelime sayısı / sınıf hızı).
+  6. **Sözlüğe ekle:** Yalnız bellekte. Hupolingo'daki hesap bağlı rafa port kararı açık.
+  7. **Sesli okuma:** Yok. TTS kararı açık.
+  8. **Gösterim kuralları:** Kod ve testler var (`lib/gosterim_kurallari.dart`, 7 test), belge `docs/OKUMA_GOSTERIM_KURALLARI.md`. "Hikâye başına en çok 2 atasözü" kuralı yalnız belgede, kodda zorlanmıyor.
+  9. **Port:** Prototipin Hupolingo `mobile-app` içine taşınması ayrı karar (K-0083'teki soru hâlâ geçerli).
+  10. **Yayın:** Okuma bayrağı kapalı, katalogda yayınlanmış hikâye yok (K-0069, K-0082). Açma ve yayın kullanıcı onayı ister.
+- **İlgili açık kayıtlar:** GÖR-001 (GEMINI_API_KEY döndürme, güvenlik, açık), GÖR-051 (görsel yükseltme), GÖR-052 (PDF gerçek kontrolü), GÖR-053 (okuma dosyaları untracked, commit kararı).
+- **Tekrarlayan tuzaklar:**
+  - `flutter test` uzun sürebilir. Takılan bir `dart` veya `flutter_tester` süreci olursa öldür, `--timeout` ver.
+  - Ekran görüntüsünü PowerShell yönlendirmesiyle (`>`) yazmak PNG'yi bozar. Cihazda `screencap -p /sdcard/x.png`, sonra `adb pull`.
+  - Telefon kilitliyse görüntü siyah çıkar. Kilidi kullanıcı açmalı.
+  - Önizleme testi (`test/onizleme_test.dart`) ortam değişkeni ister: `ONIZLEME_KLASORU`, `FLUTTER_SDK_YOLU`. Yoksa atlanır.
+- **Durum:** BEKLİYOR (kullanıcı yeni sohbette iş verecek)
+- **Sahip:** Kullanıcı (sonraki iş), Ajan
+- **Önem:** Orta
+- **İlgili:** K-0083, K-0086, K-0090, K-0069, K-0082, GÖR-001, GÖR-051, GÖR-052, GÖR-053
+
+### K-0089 · 2026-10-21 · VT · Yayın kararı: 6. sınıf Türkçe 91 soru onaylandı (kullanıcı kararı)
+- **Tür:** Karar (ONAYLI, kullanıcı)
+- **Karar:** Kullanıcı "hepsini onayla" dedi. Parti soru-uretim-2026-10-21-tr6: 91 soru onay_durumu='onaylandi', insan_onayi_kim='kullanici', karar 'onay'. Kalite 'sari' ve insan örneklemi yapılmadan yayına alındı.
+- **Doğrulama:** Sayımlar aşağıda sorgulandı (yeni onaylı 91 beklenen).
+- **Durum:** TAMAMLANDI (yayın). **Sahip:** Kullanıcı (karar), Ajan (uygulama)
+- **İlgili:** K-0088.
+
+### K-0088 · 2026-10-21 · VT · 6. sınıf Türkçe 91 soru veri tabanına aktarıldı (parti soru-uretim-2026-10-21-tr6, beklemede)
+- **Tür:** Karar + Gelişme
+- **Bağlam:** Kullanıcı "veri tabanına aktarımı yap". Önceki parti ile aynı yöntem: SQL aktarımı, transaction, dis_soru_id çakışması yok.
+- **Karar:** 91 soru onay_durumu='beklemede', kalite 'sari', kaynak_turu 'uretilen', uretim_yontemi 'llm'. Yayın onayı ayrı karar olarak kullanıcıdan istenecek.
+- **Doğrulama:** DOĞRULANDI (eklenen 91, beklemede 91; toplam 915; onaylı 824 değişmedi).
+- **Durum:** Aktarım TAMAMLANDI; yayın BEKLİYOR.
+- **Sahip:** Ajan · **Önem:** Yüksek
+- **İlgili:** K-0071, K-0073.
+
+### K-0087 · 2026-10-21 21:44 · MOB · Kelime Evreni: MEB'e göre 1–8. sınıf söz varlığı veri tabanı (Sonnet doğrulamalı)
+- **Tür:** Gelişme
+- **Konu:** MOB
+- **Bağlam:** Kullanıcı isteği: Kelime Evreni için 1–8. sınıf eş anlamlı, zıt anlamlı ve eş sesli kelime veri tabanı; MEB müfredatına ve içeriğine göre; sonunda Sonnet 5.5 doğrulaması.
+- **Plan:** (1) MEB Türkçe programı PDF'lerinden kazanım alt maddelerini metin olarak çıkar (`mufredat.json`); (2) sınıf başına ilişki dosyaları; (3) yapısal doğrulama (`dogrula.mjs`); (4) Sonnet 5.5 dil denetimi; bulgu düzeltme; ikinci denetim.
+- **Karar:** Kazanım kodu ve metni yalnızca resmî PDF'ten alındı; kod uydurulmadı. 1. sınıfta program kazanımı yok: kayıtlar `kapsam: hazirlik`, kazanım null. Eş sesli yalnızca köken ayrımı net sözcüklerle sınırlandı; çok anlamlılar ayrı tutuldu. Uzak DB'ye uygulama ve mevcut 93 anlamlık başlangıç içeriğiyle birleştirme: ONAY BEKLİYOR (kullanıcı).
+- **Durum:** BEKLİYOR
+- **Doğrulama:** KISMİ. Yapısal DOĞRULANDI (`dogrula.mjs`: 118 ilişki, HATA yok). Dil: Sonnet 5.5 iki tur; tur 1'de 70 kayıtta bulgu (6 kritik) düzeltildi, tur 2 "küçük düzeltme" dedi ve yüksek bulgu düzeltildi. Son yama turu (17 kayıt) yeniden denetlenmedi. TDK doğrulaması yapılamadı (502). Uzman (dil) incelemesi yok.
+- **Sahip:** Ajan (içerik ve doğrulama), Kullanıcı (uzak DB onayı), Dil uzmanı (yayın öncesi)
+- **Önem:** Orta
+- **Açıklama:** `docs/kelime-evreni/veritabani/` altında 118 ilişki, 218 kelime, 232 anlam. Açık şüpheler ve sınırlar README'de. Uzak Supabase'e uygulanmadı; `kelime_sorulari` bu adımda üretilmedi.
+- **Kanıt:** `node docs/kelime-evreni/veritabani/dogrula.mjs` → "HATA: yok". Sonnet raporları: tur 1 (70 bulgulu kayıt, 6 kritik), tur 2 (küçük düzeltme gerekir, kritik yok).
+- **İlgili:** GÖR-026, §13.2 (içerik maddesi), `docs/kelime-evreni/ENTEGRASYON.md`, `docs/kelime-evreni/veritabani/README.md`
+- **Güncelleme 2026-10-21 (dilbilgisi.net teyidi):** Sözlük (eş anlamlı, zıt anlamlı, eş sesli harf sayfaları) ile 118 kayıt karşılaştırıldı. Sonuç: 75 doğrulandı, 5 kısmi, 38 sözlükte yok (`teyit-dilbilgisi.json`). Siteye göre düzeltildi: s4-16 kalabalık–tenha, s6-10 verimli–kısır, s6-15 yar (sevgili anlamı kaldırıldı). Veri tabanına (yerel dosyalar) eklendi; uzak Supabase'e yazılmadı. Doğrulama durumu: KISMİ (38 çift sözlükte yok, yayın öncesi ikinci kaynak gerek).
+- **Güncelleme 2026-10-21 (uzak yükleme):** `supabase/migrations/20261052000000_kelime_meb_sozlugu.sql` üretildi (`uret-migration.mjs`). Yerelde PGlite'ta önceki kelime migration zincirine eklendi: +227 anlam, +116 ilişki; onaylı ilişki 0, yayında soru 0. Uzak yükleme YAPILMADI: Supabase CLI parola (`SUPABASE_DB_PASSWORD`) istedi, bu oturumda tanımlı değil. Açık karar: mevcut 93 kelimelik taslak seed ile aynı kavramlar farklı tanımla tekrar ediyor (ör. `yüz` 4 anlam); eski seed'in kaldırılması içerik silme olduğu için kullanıcı onayı gerekir. `db:deploy` bekleyen tüm yerel migration'ları uygular; okuma dünyası migration'ları (20261050000300–20261051000000) için uzak durum kontrol edilmeli.
+- **Güncelleme 2026-10-21 (uzak uygulandı):** Kullanıcı onayıyla `npm run db:deploy` çalıştırıldı; uzakta yalnızca `20261052000000_kelime_meb_sozlugu.sql` bekliyordu (okuma migration'ları zaten uzakta). Doğrulama (uzak SQL): anlam 320, ilişki 165, onaylı ilişki 49 (değişmedi), yayında soru 48 (değişmedi). Yerel PGlite testiyle aynı sayılar. Eski 93 kelimelik taslakla çakışan kavramlar hâlâ çift; eski taslağın kaldırılması ayrı karar (içerik silme). DOĞRULAMA: KISMİ (yapısal ve SQL sayıları tamam; dil uzmanı incelemesi yok).
+- **Güncelleme 2026-10-21 (yenileme migration'ı uygulandı):** Kullanıcı onayıyla `supabase/migrations/20261053000000_kelime_meb_sozlugu_yenile.sql` uzakta uygulandı (`db:deploy`). Eski taslak kaldırıldı (48 soru, 49 ilişki, 93 anlam; bağlı 5 deneme ve 5 ustalık kaydı CASCADE ile silindi, bunlar test hesaplarına aitti). `kelime_iliskileri`'ne `sinif` ve `kazanim_kodlari` eklendi; `kelime_mufredat_kazanimlari` (18 kazanım, RLS açık, istemci yetkisi yok) oluşturuldu. Uzak sayılar: anlam 232, ilişki 118, sınıfsız 0, onaylı 0, soru 0, eski tohum kalıntısı 0. SONUÇ: Kelime Evreni'nde yayında soru kalmadı; öğrenci ekranı içerik gelene kadar boş. Soru üretimi ve dört göz onayı sonraki adım.
+- **Güncelleme 2026-10-21 (içerik alanları uygulandı):** `supabase/migrations/20261054000000_kelime_icerik_ornek_hatirlatici.sql` uzakta uygulandı. `kelime_iliskileri`'ne `ornek`, `hatirlatici`, `teknik` eklendi; 118 ilişkinin tamamı dolu (uzak SQL). Üretici: `uret-icerik-migration.mjs`. Tüm sınıf/kazanım/örnek/hatırlatıcı bilgisi artık veri tabanında; yayında soru hâlâ yok.
+- **Güncelleme 2026-10-21 (taslak sorular):** `supabase/migrations/20261055000000_kelime_taslak_sorular.sql` uzakta uygulandı. Her ilişkiden bir TASLAK soru (118: 43 eş anlamlı, 63 zıt anlamlı, 12 eş sesli). Çeldiriciler sınıfa göre seçildi ve birbirleriyle ilişkisiz. Üretici `uret-soru-migration.mjs`. Uzak SQL: toplam 118, taslak 118, yayında 0. Yayın için dört göz kuralı tek yöneticide engel; yayın kararı kullanıcıda. Soru kalitesi için dil uzmanı incelemesi yapılmadı.
+- **Güncelleme 2026-10-21 (Gemini teyidi ve düzeltmeler):** `docs/kelime-evreni/veritabani/gemini-teyit.mjs` ile 118 ilişki ve 118 taslak soru Gemini (`gemini-3.8-flash`) ile denetlendi; sonuç `teyit-gemini.json`. İlişki: 94 tamam, 10 düzeltme, 14 sorunlu. Soru: 112 tamam, 2 düzeltme, 4 sorunlu. Çocuk güvenliği bayrağı 0. Uygulanan düzeltmeler: 8 örnek/hatırlatıcı metni, 3 anlam metni (mühim, sol, düş). Uzakta `20261056000000_kelime_teyit_duzeltmeleri.sql` tek işlemde çalıştırıldı ve sürüm geçmişine işaretlendi; taslak sorular yeniden üretildi (118, yayında 0). AÇIK KARARLAR (kullanıcı): (a) -sız/-siz türevli zıt çiftler (saygı–saygısızlık, tutarlı–tutarsız, bilinçli–bilinçsiz, bağımsız–bağımlı, olumlu–olumsuz, başarı–başarısızlık); (b) "yakın anlamlı" çiftlerin eş anlamlı etiketi (mutlu–sevinçli, hızlı–çabuk, arkadaş–dost, küçük–minik, sevinç–neşe, anlatmak–açıklamak, değiştirmek–dönüştürmek, tedbirli–dikkatli). Okuma migration'ı `20261057000000_okuma_hikaye_fisleri.sql` bekliyor; bu oturumda uygulanmadı (ayrı çalışma).
+
+### K-0090 · 2026-10-21 · MOB · HupoRead prototip: ana sayfa, sonuç, süre, otomatik geçiş, gösterim kuralları, PDF
+- **Numara:** Önceden K-0087 olarak yazılmıştı; aynı numara Kelime Evreni kaydında da vardı, bu yüzden yeniden numaralandı.
+- **Tür:** GELİŞME + KARAR
+- **Konu:** MOB
+- **Bağlam:** Telefona "HupoRead" adıyla (kendi ikonuyla) kurulum sonrası kullanıcı 9 madde istedi. Proje: `C:\Dev\Senin Hikayen - HupoRead\flutter_prototip` (Hupolingo `mobile-app` değişmedi).
+- **Yapılanlar:** (1) Ana sayfa (kahraman seçimi) V3 diline taşındı: başlık bandı, öne çıkan "Hazır Hupo" kartı, iki gruplu kart ızgarası. (2) Hikâye kartı: tanıtım metni artık kesilmiyor, küçük resim kart yüksekliğine uyuyor. (3) Gösterim kuralları kodlandı (`lib/gosterim_kurallari.dart`, 7 test) ve belgelendi: `docs/OKUMA_GOSTERIM_KURALLARI.md` (ilk geçiş, cümle başına tek vurgu, sınıf/moda göre sayfa bütçesi, kart sınırları, üretici kuralları). (4) Sonuç ekranı: gradyan panel, yıldız göstergesi, okunan hikâye kartı, gerçek oturum özeti. (5) Hikâye kartında ve okuyucuda "N dk" (kelime sayısı / sınıfa göre hız; tahmindir). (6) Otomatik geçiş zaten vardı; son soruda yoktu, eklendi; geri sayım çubuğu görünür; test eklendi. (7) Araç önerilen adlarına "Araba" eklendi (kart görseli zaten otomobildi). (8–9) PDF (alt ajan): `file_saver` ile Android İndirilenler'e kaydeder, "Paylaş" eylemi ayrı; tasarım Literata serif, sahne görselli kapak, Hupo, tür şeridi, süre satırı, mürekkep tasarrufu seçeneği.
+- **Doğrulama:** `flutter test` 56 geçti; `flutter analyze` yeni sorun yok; ekranlar test içi render ile görüldü (ana, hikâye seçimi, sonuç, PDF sayfaları). APK derlendi. Telefon bağlı olmadığı için kurulum ve cihazda deneme YAPILMADI; PDF'nin cihazda İndirilenler'e yazılması doğrulanmadı.
+- **Açık:** PDF kapak bandında fener görselinin üstü hafif kırpılıyor; hikâye başına en çok 2 atasözü kuralı üretim tarafında (kodda zorlanmıyor); 8 hikâyenin süre değerleri tahmini; Hupolingo'ya port.
+- **Durum:** DEVAM
+- **Sahip:** Ajan, Kullanıcı (cihaz denemesi)
+- **Önem:** Yüksek
+- **İlgili:** K-0086, K-0085
+
+### K-0086 · 2026-10-21 · MOB · Senin Hikâyen prototipi: V3 mockup'a sadık okuyucu, hikâye seçimi ve sahne görselleri
+- **Tür:** GELİŞME + KARAR
+- **Konu:** MOB
+- **Bağlam:** Kullanıcı ChatGPT'nin mockup'ı (`HupoRead_ Renkli Okuma Macerası.png`) ve V3 brifi (`HupoRead_V3_Onaylanan_Mockupa_Sadik_Tam_Paket.zip`) kalitesinde arayüz istedi. Önceki turlar (K-0078, K-0083) okuyucuyu bilinçli olarak düz metin kartı bırakmıştı (K4/K8); bu kararlar kullanıcı isteğiyle geri alındı.
+- **Yapılanlar (yalnız `C:\Dev\Senin Hikayen - HupoRead\flutter_prototip`; Hupolingo `mobile-app` değişmedi):**
+  1. `lib/widgets/okuma_v3.dart` (yeni): üst bar düğmesi, sahne kartı (görsel yoksa türün yedek sahnesi), tür/sınıf çipleri, hikâye başlık bandı + Hupo, ilerleme, adım rozeti, sayfa kağıdı, kelime hapı, Kelime Keşfi kartı, kelime paneli (ikon, anlam, benzerler, örnek, Bilgi Kutusu, sözlüğe ekle aç/kapa), atasözü kartı, Anlamı kutusu, Düşünme sorusu kartı.
+  2. `okuyucu.dart` yeniden yazıldı: sahne (1. sayfada büyük, sonrakilerde aynı sahnenin kaydırılmış şeridi; Sade modda ve 7–8. sınıfta yalnız 1. sayfa), Keşfet paneli, atasözü sayfasında Düşün kartları, Oku→Düşün adımı. `hikaye_secim.dart`: sahne küçük resimli kartlar, tür filtre hapları. `sonuc.dart`: oturumun gerçek özeti (sayfa, bakılan kelime, deftere eklenen söz; sıfırlar gösterilmez).
+  3. 8 hikâye için `assets/okuma/sahneler/<slug>.jpg` (nano-banana, kişisiz sahne; kahraman çocuğun seçimi olduğundan sahnede sabit yüz yok). `flutter_svg` eklendi. Buton metinleri mockup'a uyduruldu: "Devam et" / "Geri".
+  4. Benzer anlamlılar uydurulmadı: aynı sözlük yuvasındaki adaylardan gelir. `okuma_v3_icerik.dart`: yalnız görünüm eşlemeleri ve **TASLAK** içerik (1 Bilgi Kutusu, 3 Düşün sorusu; editör onayı bekler).
+- **Doğrulama:** `flutter test` 47 geçti (7 önizleme testi atlanır); yeni `okuma_v3_test.dart` 6 senaryo. `flutter analyze`: yeni sorun yok (tek uyarı önceden var: `pdf_hikaye.dart` çift import). Eski testlerde metin ve sembol beklentileri güncellendi; `katalog_test` beklentisi 7→8 (8. hikâye zaten kataloğa girmişti). Ekran görüntüleri test içi render ile (390x844 ve 1024x768) incelendi: hikâye seçimi, okuyucu (sayfa 1, kelime sayfası, panel, Düşün sayfası), sorular, sonuç.
+- **Bulgu:** Alt sayfada `transitionAnimationController` + `dispose` kalıbı kapatma düğmesini işlevsiz bıraktı; prototipte `sheetAnimationStyle` ile değiştirildi. Aynı kalıp Hupolingo `okuyucu_ekrani.dart` içinde de var, kontrol edilmedi.
+- **Açık / sınır:** (a) Cihazda denenmedi (APK derlenmedi). (b) Sesli okuma yok (düğme eklenmedi; TTS paketi kararı). (c) "Sözlüğe ekle" yalnız bellekte; Hupolingo'da hesap anahtarlı yerel raf var. (d) Sahnede kişi yok; bisiklet sahnesinde sürücü yok (mockup'tan bilinçli sapma). (e) Eş/zıt anlam ve Bilgi Kutusu için paket sözleşmesi alanı yok; taslak içerik yayın kapısından geçmeli. (f) Sonuç ekranında yıldız/anket ayrı ekranda kaldı. (g) Hupolingo `mobile-app`'e port ayrı karar.
+- **Durum:** DEVAM
+- **Sahip:** Ajan, Kullanıcı (cihaz denemesi, port kararı, içerik onayı)
+- **Önem:** Yüksek
+- **İlgili:** K-0076…K-0084, GÖR-044, GÖR-051
+
+### K-0085 · 2026-10-21 21:07 · MOB/TSR · Okuma PDF şablonu, genel SVG ikon kataloğu ve motor kimlik katmanı
+- **Tür:** Gelişme + Sorun
+- **Konu:** MOB, TSR
+- **Bağlam:** Kullanıcı HupoRead ZIP paketini (PDF tasarım örneği, 89 ikon, manifest, tokenlar) hikâyeye bağlı değil, genel ikon kütüphanesi ve PDF şablonu takviyesi olarak birleştirip güzelleştirmeyi istedi. Aynı dönemde başka bir ajan okuyucu ve PDF dosyalarını düzenledi (K-0078).
+- **Yapılanlar:**
+  1. Genel ikon kataloğu: `mobile-app/assets/okuma/hikaye_ikonlari/` (178 SVG + `manifest.json`, ~140 KB). Üretici `mobile-app/tool/ikon_katalogu_uret.dart` manifestten `packages/okuma_motoru/lib/ikon_katalogu.g.dart` üretir; güvensiz SVG öğelerini (script, image, text, href, on*, url()) reddeder.
+  2. Kayıt katmanı `packages/okuma_motoru/lib/ikon_kayit.dart`: katalog kimliği, 16 eski emoji kodu ve ham emoji → kimlik. Maskot (`hupo`) katalogda değil, onaylı varlık olarak ayrı tutuluyor. `Cikti` sınıfına `ikonId` eklendi; `metin` alanı aynen kaldı.
+  3. PDF şablonu (`mobile-app/lib/services/okuma_pdf_hikaye.dart`): kapakta onaylı maskot (filigran yok); gövde Literata serif (SIL OFL 1.1, alt küme ~59 KB); başlık ve alt bilgi Nunito; sayfa numarası; sınıf bandına göre punto ve satır aralığı (2–4 / 5–6 / 7–8); seçici ikon bütçesi; soru kartları; ayrı cevap anahtarı sayfası; mürekkep tasarrufu (gri SVG, beyaz zemin). İkonlar `pw.SvgImage` ile vektör olarak gömülür; PNG kullanılmıyor.
+  4. `OkumaPdfIstegi` içine `sinif` (akıştan `satir.anaSinif`) ve `tema` alanları eklendi.
+  5. `pubspec.yaml`: Literata fontları, lisans dosyaları ve `assets/okuma/hikaye_ikonlari/` eklendi.
+- **Karar:** Ajan önerisi, `ONAY BEKLİYOR`: bant değerleri (ikon başına hedef kelime 120 / 190 / 300; punto 13.5 / 12.5 / 12) editoryal başlangıç değeridir. Marka metni mevcut hâliyle korundu ("Hupolingo · Senin Hikâyen", hupolingo.com); K7 marka kararıyla uyumu teyit edilmeli.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ.
+  - `dart test` (okuma_motoru): 40/40 geçti.
+  - `flutter test` (okuma_pdf, okuma_akis, okuma_kart, okuma_veri): 68/68 geçti; 89 ikonun tamamının PDF'e gömüldüğü test dahil.
+  - `flutter analyze` (değiştirilen dosyalar): hata yok, yalnız bilgi uyarıları.
+  - Görsel: katalog PDF'i ve renkli 5. sınıf PDF'i PNG'ye çevrilip incelendi. 2. ve 8. sınıf ile mürekkep tasarrufu PNG'leri üretildi ama incelenmedi. Baskı denenmedi.
+- **Sorun (açık):**
+  1. Repodaki tek hikâye fikstüründe ikon işareti yok; gerçek ikonlu hikâyeyle PDF kontrolü yapılmadı.
+  2. Fikstür sözlüğünde 8. sınıf için aday yok (içerik boşluğu).
+  3. PDF indir akışında tema seçimi arayüzde yok; yalnız `tema` parametresi var.
+  4. `okuma_pdf_hikaye.dart` ve motor dosyaları başka bir ajan tarafından da değiştirildi (sayfa başına ikon üst sınırı, maskotun satır içinden kaldırılması). Bu değişikliklerin görsel kontrolü benim tarafımda yapılmadı; mevcut testler geçiyor.
+  5. Okuyucu tarafı (`flutter_svg`) bu kaydın kapsamı dışında; K-0078'e bakın.
+  6. `assets/okuma/ikon_manifest.json` etiketlerinde bozuk Türkçe (ör. "KeÅŸfet") var. Dokunulmadı; ayrıca kontrol edilmeli.
+  7. Günlükte K numarası çakışması var: K-0077 iki kez, K-0076, K-0030, K-0029 de çift. §9.5 gereği kayıtlar silinmez; yeni kayıtlar K-0085'ten devam eder.
+  8. Kullanıcı sohbete bir fal.ai anahtarı yazdı. Kullanılmadı, değeri kayda yazılmadı. Bu iş için anahtar gerekmiyordu. Yenileme önerisi GÖR-001 kapsamında değerlendirilmeli.
+- **Sahip:** Ajan, Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** K-0078, K-0077, K-0084, GÖR-051, GÖR-001, GÖR-052, GÖR-053
+
+### K-0084 · 2026-10-21 · MOB/TSR · HupoRead / Senin Hikâyen: oturum devir notu (yeni sohbette devam)
+- **Tür:** Not
+- **Konu:** MOB, TSR
+- **Bağlam:** Kullanıcı farklı bir sohbette devam edecek. Bu kayıt, bu oturumun (K-0076…K-0083) özetidir.
+- **Bitenler:**
+  1. Plan ve direktör incelemesi: `docs/hupo-design-growth/okuma-gorsel-yukseltme-plani-2026-10-21.md`, `okuma-direktor-ortak-karar-2026-10-21.md`, `okuma-karar-ve-uygulama-2026-10-21.md` (K1–K10 son kararlar).
+  2. F1: PDF yeniden tasarımı (uygulama paleti, serif başlık, vektör kapak, atasözü bloğu, ikon sınırı), emoji yerine SVG ikon (`flutter_svg`), maskot düzeltmesi.
+  3. F2: Okuyucuda Oku · Düşün göstergesi, isteğe bağlı Düşün kartı, "Sözlüğe ekle" (yerel, hesap anahtarlı, en çok 100) ve Okuduklarım içinde Sözlüğüm sekmesi.
+  4. F3: `20261051000000_okuma_dusun_alani.sql` uzakta uygulandı (isteğe bağlı `hikaye.dusun`, en çok 3). PGlite: 171/172 (tek kırmızı önceden var: atölyedeki 5 gerçek paket doğrulayıcıdan geçmiyor).
+  5. F4: 46 karakter + 80 ikon denetlendi; voksel karakter yerine macera kâşifi, 2 ikon yeniden üretildi, maskot kaydı onaylı master kopyası; **büyücü kullanıcı kararıyla kaldırıldı** (ilkelere aykırı).
+  6. APK'lar telefonda (SM-S711B): Hupolingo (`com.ogrencihazirlik.ogrenci_hazirlik`) ve Senin Hikâyen prototip (`com.hupolingo.okuma_prototip`), ikisi de debug imzalı.
+- **Açık / sıradaki:**
+  1. **Prototipe taşıma kararı (bekliyor):** `C:\Dev\Senin Hikayen - HupoRead\flutter_prototip` içinde yalnız karakter seti eşitlendi. Düşün kartı, Sözlüğüm, SVG çıkartmalar ve yeni PDF üreticisi (`mobile-app/lib/services/okuma_pdf_hikaye.dart`) yalnız Hupolingo'da. Önerim: PDF + Düşün önce taşınsın, Sözlüğüm Hupolingo entegrasyonuyla.
+  2. Okuma bayrağı kapalı ve katalogda hikâye yok; açma/yayın kullanıcı onayı ister (önce Ajan A/B + insan okuması).
+  3. Hayalî kart astronot gösteriyor (ilk üretilmiş görsel kuralı).
+  4. Sözlüğüm kayıt silme yok; `dusun` soruları istemcide henüz gösterilmiyor (içerik yok).
+  5. Cihazda okuyucu/Düşün/PDF akışı görsel olarak denenmedi; 360x640 önizleme üreticisi yok.
+  6. **Güvenlik:** `GEMINI_API_KEY` değeri bu oturumda bir çıktıda göründü; kullanıcı test sürecinde sorun olmadığını söyledi, yine de yayın öncesi döndürülmeli (GÖR-001).
+- **Durum:** DEVAM
+- **Doğrulama:** Ayrıntı K-0078…K-0083 kayıtlarında.
+- **Sahip:** Ajan, Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** K-0076…K-0083, GÖR-051, GÖR-001
+
+### K-0083 · 2026-10-21 · MOB · Senin Hikâyen (flutter_prototip) APK: derleme, karakter eşitleme, telefona kurulum
+- **Tür:** GELİŞME + KARAR
+- **Konu:** MOB
+- **Bağlam:** Kullanıcı Hupolingo APK'sı yerine bağımsız "Senin Hikâyen" APK'sının güncellenmesini istedi. PLAN.md (ONAYLI): modül önce bağımsız klasörde (`C:\Dev\Senin Hikayen - HupoRead\flutter_prototip`) geliştirilir, sonra Hupolingo'ya entegre edilir.
+- **Yapılanlar:**
+  1. Prototip (`okuma_prototip`, kimlik `com.hupolingo.okuma_prototip`, ad "Senin Hikâyen") derlendi: debug APK 172,5 MB. Telefona `adb install -r` ile kuruldu; Hupolingo ile yan yana çalışıyor.
+  2. Karakter seti Hupolingo'daki güncel hâle eşitlendi (`karakterler/` 46 dosya, `karakter_manifest.json`). Büyücü ve voksel karakter prototipten de kaldırıldı; macera kâşifi ve onaylı maskot kopyası geldi. Prototip kodunda eski kimlik kalmadı.
+  3. Telefonda kahraman ekranı doğrulandı: "Hazır Hupo" kartı onaylı maskotu gösteriyor; "Çizgi film tarzı karakter" kartı mevcut bir görsel (astronot) kullanıyor.
+- **Açık / sınır:** Prototipte Hupolingo'daki son okuma geliştirmeleri yok: Düşün kartı, Sözlüğüm, SVG çıkartmalar ve yeni PDF üreticisi (`okuma_pdf_hikaye.dart`). Bunlar Hupolingo'ya bağımlı (providerlar, depo) olduğu için port işi ayrı bir karar: prototipe taşınıp taşınmayacağı kullanıcıya soruldu. Hayalî kart, türün ilk üretilmiş görselini seçiyor (macera kâşifi yerine astronot); kart seçim kuralı değişirse düzeltilecek.
+- **Durum:** Prototip APK kurulu ve çalışıyor; okuma geliştirmelerinin prototipe aktarımı bekliyor.
+- **Doğrulama:** Derleme başarılı; cihazda ekran görüntüsüyle ilk ekran ve kaydırılmış kahraman listesi incelendi. Hikâye akışı (okuyucu, sorular, PDF) cihazda bu turda denenmedi.
+- **Sahip:** Ajan, Kullanıcı (port kararı)
+- **Önem:** Orta
+- **İlgili:** K-0082, K-0081, GÖR-051
+
+### K-0082 · 2026-10-21 · MOB · HupoRead büyücü kaldırma, APK derleme ve telefona kurulum
+- **Tür:** GELİŞME + KARAR
+- **Konu:** MOB
+- **Bağlam:** Kullanıcı büyücü karakterinin ilkelerine aykırı olduğunu, maskot kartının kahraman olarak gösterilebileceğini belirtti; ardından uygulamanın APK olarak telefona kurulmasını istedi.
+- **Yapılanlar:**
+  1. `karakter_fantastik_buyucu` manifestten, dosyadan ve prompt belgesinden kaldırıldı. Karakter sayısı 46.
+  2. Maskot kartı: `hazir` kartı zaten animasyonlu Hupo bileşenini (`OkumaMaskot`) gösteriyor; kod değişikliği gerekmedi. `hupo_kus` kaydı onaylı master kopyası olarak kalıyor.
+  3. `flutter build apk --debug` başarılı (205,8 MB). Samsung SM-S711B'ye `adb install -r` ile kuruldu (Success); uygulama açıldı ve ana sayfa göründü.
+  4. Öğren sekmesinde Senin Hikâyen (okuma) kartı görünmüyor: sunucu tarafı özellik bayrağı kapalı ve kataloğa hikâye yüklenmemiş (K-0069 ile aynı durum). Bayrağı açmak ve hikâye yayınlamak çocuklara dönük, geri alınması zor bir değişiklik; kullanıcı onayı bekliyor.
+- **Açık / insan kararı:** Bayrağın açılması ve ilk hikâyelerin yayınlanması (4–5. sınıf, önce Ajan A/B ve insan okuması).
+- **Durum:** APK kuruldu ve çalışıyor; okuma modülü telefonda henüz canlı değil.
+- **Doğrulama:** `flutter test` okuma testleri 77/77 geçti (büyücü kaldırıldıktan sonra). Cihaz ekran görüntüsü: ana sayfa ve Öğren sekmesi. Okuma akışı uçtan uca denenmedi (bayrak kapalı).
+- **Sahip:** Kullanıcı (bayrak ve yayın onayı), Ajan
+- **Önem:** Orta
+- **İlgili:** K-0081, K-0069, GÖR-051
+
+### K-0081 · 2026-10-21 · MOB · HupoRead F4: görsel varlık denetimi ve düzeltmeler (nano-banana bağlı)
+- **Tür:** GELİŞME + SORUN
+- **Konu:** MOB
+- **Bağlam:** Claude Code yeniden başlatıldı; nano-banana yapılandırması doğrulandı (API anahtarı var, model `gemini-3.1-flash-image-preview`). K-0074'ün "üretim engelli" notuna karşın `assets/okuma/karakterler` (47) ve `ikonlar` (80) dosyaları diskte zaten vardı; manifestlerde `uretildi: true`. Üretim kaydı, çıktı klasörü veya MCP geçmişi bulunamadı; kökeni belgelenmemiş.
+- **Yapılanlar:**
+  1. Denetim: 127 dosya şeffaf RGBA, magenta kalıntısı yok, manifest–dosya eşleşmesi tam. Kontrol levhalarıyla görsel inceleme yapıldı.
+  2. Düzeltme: `karakter_fantastik_blok_kasif` (voksel/küp karakter; oyun estetiğine yakın, telif riski) → `karakter_fantastik_macera_kasifi` (yeni üretim, pusula kolyeli kâşif; manifest ve prompt güncellendi).
+  3. Düzeltme: `ikon_kullanici_bildirim` ve `ikon_oyun2_elmas`: şeffaf olmayan açık kutu arka planı kalmıştı; yeniden üretildi ve magenta anahtarlamayla şeffaflaştırıldı (çan: ilk denemede 4 varyant çıktı, tek nesneyle yeniden üretildi).
+  4. Düzeltme: `karakter_hayvan_hupo_kus.webp` (çocuk çizimi) onaylı master `assets/hupo/uygulama/rehber_sol.webp` kopyasıyla değiştirildi (K5 kararı); manifest etiket/açıklama/kaynak `onayli_hupo_master` olarak düzeltildi.
+  5. `okuma-varlik-promptlari.json`: blok karakter promptu yeni karakterle değiştirildi.
+- **Açık / insan kararı:** (a) `karakter_fantastik_buyucu` (büyücü) gorsel-kutuphane notunda editör onayı bekliyor; (b) `karakter_hayvan_hupo_kus` artık maskot kopyası: kahraman kartında gösterilip gösterilmeyeceği UI'da doğrulanmalı; (c) AI üretimli görsellerin telif durumu GÖR-045 hukuk başlığında.
+- **Durum:** F4 TAMAM (varlık seti, denetim ve 4 düzeltme); tek kabul eksiği: cihazda görsel doğrulama.
+- **Doğrulama:** Dosya ve manifest tutarlılığı (JSON geçerli, eksik dosya 0). `flutter test` okuma testleri (varlık, kart, PDF, sözlüğüm, depo) geçti. Kâşif ve ikonlar için kontrol levhası incelendi. Cihazda kahraman seçim ekranı görünümü **doğrulanmadı**.
+- **Sahip:** Ajan, Kullanıcı (büyücü onayı, maskot kartı kararı)
+- **Önem:** Orta
+- **İlgili:** K-0074, K-0079, K-0080, GÖR-051, GÖR-045
+
+### K-0080 · 2026-10-21 · VT/MOB · HupoRead F3 uzak migration, Sözlüğüm ekranı, nano-banana durumu
+- **Tür:** GELİŞME + KARAR + SORUN
+- **Konu:** VT, MOB
+- **Bağlam:** Kullanıcı uzak Supabase migration'ını onayladı; nano-banana için API anahtarını Windows kullanıcı ortam değişkenine yazdığını söyledi; Sözlüğüm listesinin yerini bize bıraktı.
+- **Yapılanlar:**
+  1. **Migration `20261051000000_okuma_dusun_alani.sql` uzakta uygulandı** (`npm run db:preview` ile yalnız bu migration bekliyordu; `db:deploy` sonrası bekleyen migration yok). Kapsam: `_okuma_paket_hatalari` doğrulayıcısına isteğe bağlı `hikaye.dusun` (en çok 3, her biri `{id, metin}`). Kopya kaynak migration'dan betikle üretildi; yalnız iki noktası değişti. Eski paketler etkilenmez.
+  2. **PGlite testleri:** `supabase/tests/okuma_dunyasi`: 6 yeni senaryo geçti (geriye uyum, 2 kabul, 4 red, dizi olmayan, kısa metin, bilinmeyen alan / büyük harf id).
+  3. **Sözlüğüm:** Okuduklarım ekranına ikinci sekme olarak eklendi (aynı kişisel raf, aynı giriş noktası; yeni menü öğesi yok). Boş durumda davet; liste anlam ve tarihle; sayı, puan ve sıralama yok. Widget testi 2 senaryo.
+  4. **nano-banana:** Kullanıcı ortamındaki `GEMINI_API_KEY`, proje `.env` dosyasındaki anahtarla özet karşılaştırmasıyla eşleşti (değer gösterilmedi). Bu oturumun süreci eski değeri taşıyor ve MCP bağlantısı zaman aşımına uğradı; **Claude Code'un yeniden başlatılması gerekiyor**. Yeniden başlatmadan F4 başlamaz.
+- **SORUN (güvenlik):** Bu oturumda bir hata çıktısında `GEMINI_API_KEY` değeri (`AQ.` ile başlayan) yanlışlıkla görüntülendi. Anahtar konuşma çıktısına düştüğü için **döndürülmesi önerilir** (GÖR-001 ile birlikte).
+- **SORUN (önceden var):** `supabase/tests/okuma_dunyasi` senaryosu "atölyedeki tüm gerçek paketler doğrulayıcıdan geçer" **26/31** veriyor; 5 gerçek paket doğrulamadan geçmiyor. Bu migration'dan önceki durum; içerik hattında ele alınacak.
+- **Açık / insan kararı:** Sözlüğüm kayıtlarını silme yok (kayıt yalnız eklenir); liste görünümünün ürün kararı yeniden gözden geçirilebilir. Düşün kartında `dusun` soruları henüz istemci tarafından gösterilmiyor (içerik yok; yayın kapısı içerik hazır olunca).
+- **Durum:** F3 TAMAM (uzak). F4 BEKLİYOR (yeniden başlatma).
+- **Doğrulama:** `flutter analyze` temiz; `flutter test` okuma testleri 77/77; SQL 171/172 (tek başarısız senaryo önceden var: atölye paketleri).
+- **Sahip:** Ajan, Kullanıcı (anahtar döndürme)
+- **Önem:** Yüksek
+- **İlgili:** K-0079, GÖR-001, GÖR-051, K-0074
+
+### K-0079 · 2026-10-21 · MOB/TSR · HupoRead görsel yükseltme: uygulama planı (F2–F4)
+- **Tür:** Plan + Karar
+- **Konu:** MOB, TSR
+- **Bağlam:** Kullanıcı K1–K10 için önerileri onayladı ve planın günlüğe yazılıp uygulamaya başlanmasını istedi. Düşün adımının isteğe bağlı olması önerisi kabul edildi.
+- **Plan:**
+  1. **F2 (uygulanıyor):** Okuyucuda iki adımlı gösterge (Oku · Düşün), yalnız hikâyede anlamı olan atasözü varsa. Son sayfada isteğe bağlı "Düşün" kartı: atasözü, anlamı, "Sözlüğe ekle". Sözlük kaydı yalnız cihazda, hesap anahtarlı kişisel rafta (`sozlugum`), en çok 100 kayıt; metin nötr ("Defterine eklendi.") ve XP/ödül yok. Atasözünün anlamı yoksa kart o atasözünü göstermez (uydurma içerik yok). Keşfet davranışı (kelime ve atasözü dokununca alt sayfa) değişmez.
+  2. **F2 testleri:** depo kaydı (tekrarsız, sınırlı, hesaba bağlı) birim testi; mevcut okuma testleri yeniden koşulur.
+  3. **F3 (başlamadı, onay bekliyor):** `dusun` ve ikon anotasyonu alanları; uzak Supabase migration'ı kullanıcı onayı olmadan yapılmaz. Yayın yalnız kullanıcı okuması ve onayıyla.
+  4. **F4 (engelli):** Raster sahne ve kapak görselleri; nano-banana bağlantısı (K-0074) düzelince.
+- **Açık / insan kararı:** F3 canlı DB onayı. Sözlüğüm için henüz bir liste ekranı yok; kayıtlar şimdilik yalnız saklanır (ayrı karar).
+- **Durum:** DEVAM (F2 uygulandı; F3–F4 açık)
+- **Doğrulama:** KISMİ. `flutter analyze` (okuyucu, depo, tema, PDF, yeni test) temiz. `flutter test` okuma testleri 75/75 geçti, depo testi 5 senaryo dahil. Okuyucudaki Düşün kartı ve gösterge için widget testi yok; cihazda görünüm doğrulanmadı.
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0078, GÖR-051
+
+### K-0078 · 2026-10-21 · MOB/TSR · HupoRead görsel yükseltme F1 uygulandı (PDF, okuyucu ikonları, manifest)
+- **Tür:** Gelişme + Karar
+- **Konu:** MOB, TSR
+- **Bağlam:** Kullanıcı K1–K10 kararlarını bize bıraktı (K7 marka adı: Senin Hikâyen). Kararlar `docs/hupo-design-growth/okuma-karar-ve-uygulama-2026-10-21.md` içinde.
+- **Yapılanlar:**
+  1. PDF (`okuma_pdf_hikaye.dart`): uygulama paleti, serif başlıklar, vektör kapak sahnesi, atasözü bloğu, sayfa başına ikon sınırı (2 / 1), metin içinde maskot yok, büyük harf hatası düzeltildi.
+  2. Okuyucu (`okuyucu_ekrani.dart`): emoji glifi yerine `flutter_svg` ile katalog SVG'si; maskot atlanır; süs ikonu ekran okuyucuda atlanır.
+  3. `okuma_tema.dart`: Zengin modda çıkartma sınırı 3 → 2.
+  4. `karakter_manifest.json`: `karakter_hayvan_hupo_kus` yanlış "onaylı master" etiketi düzeltildi.
+  5. `pubspec.yaml`: `flutter_svg ^2.3.0` eklendi; `pubspec.lock` 4 bağımlılık değiştirdi.
+- **Açık / insan kararı:** F2 (okuyucu Oku/Keşfet/Düşün akışı): Düşün adımı isteğe bağlı mı, zorunlu mu? Önerim: isteğe bağlı. F3 canlı DB migration onayı. F4 raster sahneler (K-0074).
+- **Durum:** DEVAM (F1 uygulandı; F2–F4 açık)
+- **Doğrulama:** KISMİ. `flutter analyze` (3 dosya) temiz; `flutter test test/okuma_*` 70/70 geçti; PDF'ler PNG'ye çevrilip görsel kontrol edildi (5. sınıf tam, 2. ve 8. sınıf hikâye sayfası). Okuyucu ikonları cihazda ve 360x640 önizlemede görülmedi; baskı denenmedi.
+- **Sahip:** Ajan, Kullanıcı (F2 akış kararı)
+- **Önem:** Yüksek
+- **İlgili:** K-0076, K-0077, GÖR-051, K-0074
+
+### K-0077 · 2026-10-21 · MOB/TSR · HupoRead plan direktör incelemesi: ortak karar tablosu
+- **Tür:** Karar + Sorun (plan düzeltmesi)
+- **Konu:** MOB, TSR
+- **Bağlam:** Kullanıcı `hupo-design-growth-director` ajanının da değerlendirmesini istedi. Ajan salt okunur inceleme yaptı.
+- **Yapılanlar:**
+  1. Maskot teşhisi düzeltildi: `assets/hupo/uygulama/rehber_sol.webp` onaylı Hupo görünümünde ve PNG'deki kuşla eşleşiyor. Sorun `karakter_hayvan_hupo_kus` etiketinde (çocuk görseli, "onayli_hupo_master" etiketi).
+  2. PDF başlık fontu düzeltildi: brief serif/display istiyor, kod Nunito kullanıyor.
+  3. K2, K3, K4, K5 güncellendi; K7–K10 eklendi (marka adı, okuyucuda Hupo ve ikon bütçesi, PDF stili, "Sözlüğe ekle" kaydı).
+  4. Karar belgesi: `docs/hupo-design-growth/okuma-direktor-ortak-karar-2026-10-21.md`.
+- **Açık / insan kararı:** K7 marka adı, K8 okuyucuda Hupo ve ikon bütçesi (K3 ile birlikte), K9 PDF stili, K10 "Sözlüğe ekle" kaydı, K5 maskot teyidi, K1/K2/K4/K6 onayı. Kullanıcı yanıtı gelmeden kod değişmez.
+- **Durum:** KARAR BEKLİYOR
+- **Doğrulama:** KISMİ (görüntü ve kod satırları bu oturumda doğrulandı; cihaz, PDF çıktısı ve baskı yok)
+- **Sahip:** Ajan, Kullanıcı (kararlar)
+- **Önem:** Yüksek
+- **İlgili:** K-0076, GÖR-051
+
+### K-0076 · 2026-10-21 · MOB/TSR · HupoRead görsel ve içerik sunumu yükseltme planı (kod değişmedi)
+- **Tür:** Plan + Karar
+- **Konu:** MOB, TSR
+- **Bağlam:** Kullanıcı ChatGPT ile hazırlanan HupoRead ZIP paketini (PDF tasarım örneği, 89 ikon, manifest, tokenlar) ve PNG referans ekranını verdi; görsel kalite ve içerik sunumunu yükseltme planı istedi. Kullanıcı, mevcut tasarım seviyesinin altına düşülmemesini istedi.
+- **Yapılanlar:**
+  1. ZIP'teki 179 dosya (178 SVG + manifest) repodaki `assets/okuma/hikaye_ikonlari/` ile SHA-256 olarak birebir eşleşti; yeni import gerekmiyor.
+  2. Palet farkı: PDF zip tokenlarını (`F5B73D`, `17344D`, `48AFCC`) kullanıyor, uygulama AppColors'ı (`F5C842`, `17324D`, `147D8A`) kullanıyor.
+  3. Emoji çelişkisi: PNG satır içi emoji içeriyor; brief bunu yasaklıyor; okuyucuda emoji "çıkartma" stili tanımlı.
+  4. Plan yazıldı: `docs/hupo-design-growth/okuma-gorsel-yukseltme-plani-2026-10-21.md` (F0–F5 fazları, kabul ölçütleri, riskler). Kod ve içerik değiştirilmedi.
+- **Açık / insan kararı:** K1 palet (öneri: AppColors tek kaynak), K2 Düşün adımı için `dusun` alanı (öneri: evet), K3 emoji → SVG (öneri: evet), K4 ilk fazlar görselsiz (öneri: evet), K5 onaylı maskot master teyidi, K6 canlı paket sözleşmesi ve migration onayı.
+- **Maskot uyarısı:** `karakter_hayvan_hupo_kus.webp` görüntülendi; kuş değil, turuncu saçlı bir çocuk çiziyor. PNG'deki kuşla eşleşmiyor. Onaylı master belirlenmeden maskotlu ekranlar kabul edilmez.
+- **Görsel kütüphane:** K-0074 (ENGELLİ: nano-banana anahtarı bayat; bu oturumda MCP bağlantısı zaman aşımına uğradı).
+- **Durum:** PLAN (karar bekliyor)
+- **Doğrulama:** KISMİ (dosya karşılaştırması, kod okuma, görüntü inceleme; cihazda görünüm ve PDF render yapılmadı)
+- **Sahip:** Ajan, Kullanıcı (kararlar)
+- **Önem:** Yüksek
+- **İlgili:** K-0074, K-0075, GÖR-044, GÖR-051
+
+### K-0077 · 2026-10-21 19:05 · MOB/TSR · Okuma Dünyası: görsel varlık üretimi, uygulama ve prototip APK'ları, PDF SVG ikonları
+- **Tür:** Gelişme + Karar
+- **Konu:** MOB, TSR
+- **Bağlam:** Kullanıcı görsel kütüphanesinin üretilmesini onayladı (ONAYLI) ve iki APK'nın (ana uygulama ve Senin Hikâyen prototipi) güncel hâle getirilmesini istedi.
+- **Yapılanlar:**
+  1. **Görsel üretimi:** Gemini görsel modeliyle (gemini-3.1-flash-image-preview) 47 karakter ve 80 ikon üretildi; kayıp yok. Arka plan macenta, kenarlardan okunup saydam yapıldı, WebP'ye çevrildi. İlk ikon partisinde zemin kalıntısı ve ızgara çıktılar görüldü; betik düzeltilip (tek nesne kuralı, kenar rengine göre anahtarlama) yeniden üretildi, iki ikon ayrıca düzeltildi. Kontrol tabloları incelendi.
+  2. **Ana uygulama:** ssets/okuma/karakterler/ (47) ve ssets/okuma/ikonlar/ (80) üretildi; manifestler uretildi: true yapıldı; pubspec'te iki klasör girdisi (ilk eklemede tek satırda birleşen hatalı girinti düzeltildi). okuma_varlik_test ve okuma_kart_test geçti. Debug APK derlendi, com.ogrencihazirlik.ogrenci_hazirlik telefona kuruldu. Okuma Dünyası bayrağı (okuma_ayarlari) canlıda kapalı olduğu için modül telefonda görünmüyor; bayrak açılmadı (onay bekliyor).
+  3. **Prototip (Senin Hikâyen):** gömülü "Hazır Hupo" paketleri revizyon sonrası sürüme güncellendi, 	ek-kanatli-ucurtma (sınıf 5, hazir dahil) kataloğa eklendi. Karakter görselleri ve KahramanGorsel kahraman kartına bağlandı; telefonda kartlar görsellerle göründü (doğrulandı). PDF emoji PNG'leri, kod-SVG eşlemesiyle (ikonKimligiCoz → ikonBul → hikaye_ikonlari/*.svg) değiştirildi; lutter analyze: 0 hata, 3 bilgi uyarısı. APK derlendi ve kuruldu.
+  4. **Ayrım:** PDF ikonları yalnızca ssets/okuma/hikaye_ikonlari/ içinde SVG + manifest.json; WebP'ler bu klasörde yok (doğrulandı: 0 WebP). Uygulama WebP'leri karakterler/ ve ikonlar/ içinde.
+- **Açık / doğrulanmadı:**
+  - Prototipte sonuç ekranı 2.0 düzeltmesi: kodda işaretler var ama telefonda doğrulanmadı.
+  - PDF çıktısı (SVG ikonlar) üretilip kontrol edilmedi.
+  - Hikâye akışı (hikâye listesi, okuyucu, sorular, PDF, sonuç) telefonda uçtan uca denenmedi.
+  - Ana uygulamada karakter/ikon görünümü, bayrak kapalı olduğu için görülemedi.
+  - Sonuç ekranı 2.0 ana uygulama düzeltmesi widget testleriyle doğrulandı (K-0075); cihazda değil.
+  - Gemini anahtarı sohbete düz metin olarak yazıldı: **yenilenmesi önerildi** (değeri bu kayda yazılmadı). Anahtar yalnızca komut süresince ortam değişkeni olarak kullanıldı; dosyaya yazılmadı.
+  - Ajan A/B denetimleri revize metinlere yeniden uygulanmadı; denetim alanları pending. Kör karşılaştırma ve sözlük hazırlığı yapılmadı.
+  - Ajan (Sonnet) oturum sınırına takıldı; prototip port işinin bir kısmı ana oturumda tamamlandı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ (üretim, derleme, kurulum ve kahraman kartı ekran görüntüsüyle doğrulandı; PDF, sonuç ekranı ve hikâye akışı doğrulanmadı)
+- **Sahip:** Ajan, Kullanıcı (bayrak açma, anahtar yenileme, son okuma)
+- **Önem:** Yüksek
+- **İlgili:** K-0074, K-0075, GÖR-044, GÖR-045
+
+- **Güncelleme 2026-10-21 19:07 (anahtar yönetimi):** Gemini ve fal.ai anahtarları sohbette düz metin olarak paylaşıldı. Değerleri bu kayda ya da hiçbir git'e bağlı dosyaya yazılmadı. Kural: anahtarlar yalnızca git dışı yerel yapılandırmada tutulur (\.claude/settings.local.json\ ya da kullanıcı ortam değişkenleri); ajanlar değerleri kullanmadan önce kullanıcıya sorar. Her iki anahtarın yenilenmesi önerildi, çünkü sohbet geçmişinde görünüyor. Kullanıcı, anahtarların dış dünyayla paylaşılmamasını istedi (iç bilgi).
+
+- **Güncelleme 2026-10-21 19:09 (ortam değişkenleri):** \GEMINI_API_KEY\ ve \FAL_KEY\ Windows kullanıcı ortam değişkeni olarak tanımlandı (kalıcı, değerler kayda yazılmadı). Yeni süreçler için Claude Code yeniden başlatılmalı. Görsel üretim MCP sunucusu (nano-banana) kendi yapılandırmasındaki eski anahtarı kullanıyor; bunun ortam değişkenine bağlanması ayrıca yapılacak. Anahtar yenileme önerisi geçerli.
+
+### K-0075 · 2026-10-21 10:05 · MOB/TSR · Okuma Dünyası Aşama A (yerel işler): denetimler, hikâye revizyonu, sonuç ekranı 2.0
+- **Tür:** Gelişme + Karar
+- **Konu:** MOB, TSR
+- **Bağlam:** Kullanıcı Aşama A'yı başlattı ve pilot için 4–5. sınıfları uygun buldu (`ONAYLI`).
+- **Yapılanlar:**
+  1. Hazır Hupo: iki hikâye (sınıf 4) zaten vardı; sınıf 5 için `tek-kanatli-ucurtma` `hazir` türüne açıldı. Sınıf 6–8 için hazir hikâye yok.
+  2. Sonuç ekranı 2.0: kök neden sabit alt alanın kısa ekranı kaplaması; maskot küçültme ve ikincil düğmeleri içeriğe taşıma. 4 yeni widget testi, önce/sonra PNG.
+  3. Platform denetimi (okuma ekranları): rapor `docs/hupo-design-growth/okuma-platform-denetimi-2026-10-21.md`; 1 Kritik (yasak ad listesi yok), 6 Yüksek, 10 karar bekleyen madde.
+  4. Ajan A (Opus) 26 hikâye: 9 pass, 13 review_needed, 4 fail. Ajan B (Opus): 1 pass, 21 review_needed, 4 fail. Raporlar `icerik/denetim/` (hikâye deposu).
+  5. Hikâye revizyonu (4 Sonnet yazar): düz "Kahraman" → token, vaaz sahneye, bilgi/güvenlik hataları (tutulma, kuyu, gölge, pusula, birincil kaynak), soru şık uzunluğu ve harf dağılımı, kanıt düzeyi B→C. Derleme hata 0, `npm test` 30/30 (yazarlar bildirdi).
+- **Açık / insan kararı:** sınıf-kazanım eşleşmeleri (TYMM PDF okunamadı), D19/D15 değer etiketleri, "sakin" TDK teyidi, kuş besleme ifadesi uzman onayı, `erkek_egilimli` etiketi, 1. sınıf harf-ses izi. Kör karşılaştırma yapılmadı (Haiku öncesi metin yedekte yok; yedek = revizyon öncesi hâl). Sözlük verisi hazırlanmadı. Yeni metinler henüz Ajan A/B ile yeniden denetlenmedi; `denetim:` alanları pending. Hiçbir hikâye yayınlanmadı.
+- **Görsel kütüphane:** K-0074 (ENGELLİ: görsel üretim aracı bayat anahtar).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ (derleme bu oturumda yeniden doğrulandı; cihaz/ekran okuyucu ve revize metinlerin yeniden denetimi yok)
+- **Sahip:** Ajan, Kullanıcı (son okuma, kararlar)
+- **Önem:** Yüksek
+- **İlgili:** K-0065, K-0066, K-0069, K-0074, GÖR-044, GÖR-045
+
+### K-0074 · 2026-10-21 · TSR · HupoRead görsel kütüphane: altyapı hazır, görsel üretim ENGELLİ
+- **Tür:** Gelişme
+- **Konu:** TSR
+- **Bağlam:** 47 karakter + 80 ikonluk bağımsız varlık kütüphanesi istendi.
+- **Durum:** ENGELLİ
+- **Doğrulama:** KISMİ
+- **Sahip:** Kullanıcı
+- **Önem:** Orta
+- **Açıklama:** nano-banana-2 MCP anahtarı geçersiz (400 API_KEY_INVALID); hiçbir görsel üretilmedi. Manifestler (üretildi=false), şema, Dart model/yükleyici ve kahraman kartı bağlantısı (yedek ikonlu) hazır. Anahtar düzeltilince üretim başlar.
+- **Kanıt:** `flutter test test/okuma_*` 61 test geçti; ilgili dosyalarda `flutter analyze` 0 sorun.
+- **İlgili:** `docs/hupo-design-growth/okuma-gorsel-kutuphane-2026-10-21.md`, `mobile-app/assets/okuma/`
+
+### K-0073 · 2026-10-21 · DEN · 6. sınıf Türkçe seti: 91 soru, 91/91 kazanım kapsandı (kapı 91/91)
+- **Tür:** Gelişme
+- **Bağlam:** 6. sınıf Türkçe programı ayrıştırıldı (91 kod; K-0072). Üretim: dinleme/izleme ve konuşma 37, okuma 19 (+3 ek), yazma 17 (+2 kapsam), eksik 15 kazanım için ek 15.
+- **Karar:** Haiku: ana set 75/76 (TR6-Y-016 BELIRSIZ, çıkarıldı), yeni 17 soru 17/17. Sonnet: DK-014 ve Y-001 ve Y-016 çıkarıldı (ikisi DÜZELT/BELIRSIZ); Y-E01 B şıkkı düzeltildi. Kodlama bozulması (çift kodlanmış Türkçe karakterler) 37 DK sorusunda onarıldı; kalan mojibake yok.
+- **Durum:** Türkçe 6: 91 soru, 91/91 kazanım, kapı 0 RED. Haiku/Sonnet denetimi tamam; Y-E01 düzeltmesi yalnız kapı ile doğrulandı (yeniden çözücü turu yapılmadı).
+- **Doğrulama:** KISMİ (kazanım metinleri PDF'ten parçalı çıkarıldı; başlıklar Haiku ile kesitlerden alındı; DÖP metniyle tam teyit yok).
+- **Sahip:** Ajan · **Önem:** Orta
+- **İlgili:** K-0072.
+
+### K-0072 · 2026-10-21 · BEL · 6. sınıf Türkçe programı ayrıştırıldı (73 kazanım kodu)
+- **Tür:** Gelişme
+- **Bağlam:** Ortaokul Türkçe DÖP (tymm 2026-09-02) 6. sınıf çıktıları için kazanım tablosu gerekiyordu.
+- **Karar:** Çıktılar, alan becerisi (dinleme, konuşma, okuma, yazma) bloklarından çıkarıldı: docs/soru-uretim/pilot/kazanim_6_turkce.json (T.D 18, T.K 19, T.O 19, T.Y 17 = 73 kod). Başlıklar PDF satır kırılmalarından dolayı bazen parçalı (ör. T.D.6.1, T.D.6.2).
+- **Durum:** TAMAMLANDI (ayrıştırma). Soru üretimi henüz başlamadı; kazanım metinleri kısmen parçalı, üretimden önce kontrol edilmeli.
+- **Doğrulama:** KISMİ (kod sayısı ve alan dağılımı kontrol edildi; metinler gözle kısmen doğrulandı)
+- **Sahip:** Ajan · **Önem:** Orta
+- **İlgili:** K-0067, K-0068 (6. sınıf diğer dersler).
+
+### K-0071 · 2026-10-21 · VT · Yayın kararı: 314 soru onaylandı (kullanıcı kararı)
+- **Tür:** Karar (ONAYLI, kullanıcı)
+- **Bağlam:** K-0070'te beklemede aktarılan parti soru-uretim-2026-10-21. Kullanıcı "Hepsini onayla" seçti.
+- **Karar:** 314 soru onay_durumu='onaylandi', insan_onayi_kim='kullanici', insan_onayi_karar='onay', soru_importlari.onayli=true. Kalite 'sari' ve insan örneklemi (§15) yapılmadan yayına alındı; bu kararın bedeli kullanıcıda.
+- **Doğrulama:** DOĞRULANDI (yeni onaylı 314, kalan beklemede 0, toplam 824, onaylı 824). Mevcut onaylı 510 değişmedi (510 + 314).
+- **Durum:** TAMAMLANDI (yayın). Takip: kalite 'sari' sorular için öğrenci verisi ve sonradan insan örneklemi.
+- **Sahip:** Kullanıcı (karar), Ajan (uygulama) · **Önem:** Yüksek
+- **İlgili:** K-0070, REHBER §15.
+
+### K-0070 · 2026-10-21 · VT · Soru paketi veri tabanına aktarıldı (parti soru-uretim-2026-10-21, 314 soru, beklemede)
+- **Tür:** Gelişme + Karar (kullanıcı talebi: "tüm soruları gerçek veri tabanına aktar")
+- **Bağlam:** Uzak Supabase (ccozfrpnvyrnktpffkwo). Admin RPC (admin_import_questions_v2) oturumsuz çağrılamaz (require_admin); CLI ile aynı doğrulama/eşleme kurallarıyla tek transaction'da SQL aktarımı yapıldı.
+- **Karar:** Hepsi onay_durumu='beklemede' (yayın kapısı insan onayı, §15, bekliyor). kaynak_turu='uretilen', uretim_yontemi='llm', kalite_durumu='sari', gorsel_gerekli=false. created_by boş (sistem). Mevcut 510 soru değişmedi (hepsi onaylandi). Paket: docs/soru-uretim/paket/soru_paketi_2026-10-21.json.
+- **Kapsam:** 4. sınıf: Türkçe 28, Matematik 28, Fen 25, Sosyal 28. 5. sınıf: Matematik 36, Fen 35, Sosyal 38. 6. sınıf: Matematik 30, Fen 36, Sosyal 30.
+- **Durum:** TAMAMLANDI (aktarım); yayın BEKLİYOR (insan onayı, §15; kullanıcı kararı).
+- **Doğrulama:** DOĞRULANDI (parti eklenen sayısı ve beklemede sayısı 314; onaylı sayı 510 değişmedi).
+- **Sahip:** Ajan · **Önem:** Yüksek
+- **Açıklama:** Fen 5 setindeki FEN5-B-001..003 DÖP ile 5. sınıf kabul edilerek eklendi (Sonnet 6–7 itirazı). Tartışmalı kalite kararları (Sonnet 6. sınıf fen, 5. sınıf fen ek) DÖP ile teyit edilmeli. Türkçe 6 eklenmedi (program ayrıştırması yok).
+- **İlgili:** K-0068, REHBER §15, §18; migration 20261047000000 (uzakta uygulanmış).
+
+### K-0069 · 2026-10-21 02:12 · VT/MOB · Okuma Dünyası: veritabanı migration'ları canlıya alındı; Android debug APK derlendi ve telefona kuruldu
+- **Tür:** Dağıtım (kullanıcı onaylı)
+- **Konu:** VT, MOB
+- **Yapılanlar:**
+  - **`db:deploy`:** `20261050000000`…`20261050000500` (6 migration: tablolar, yönetim, öğrenci, veli/öğretmen, sözlük, export_my_data) uzak DB'ye uygulandı. `db:status`: yerel ve uzak sürümler eşleşiyor. Bayrak `okuma_ayarlari` varsayılan KAPALI; **hikâye içeriği YÜKLENMEDİ**, sözlük boş.
+  - **APK:** `flutter build apk --debug` başarılı (205 MB; debug imzalı; `build\app\outputs\flutter-apk\app-debug.apk`). Android SDK ve JDK (Android Studio jbr) kullanıldı. Release imzası için `android/key.properties` yok; yayın APK'sı/AAB için anahtar gerekir.
+  - **Kurulum:** Samsung SM-S711B (Android 16), `adb install -r` → Success. `com.ogrencihazirlik.ogrenci_hazirlik` açıldı (pid 9512).
+- **Doğrulanmayan:** Okuma modülü telefonda görünmüyor: bayrak kapalı ve kataloğa hikâye yüklenmedi. Uçtan uca canlı akış denenmedi. Android SDK lisanslarından 7'si `flutter doctor --android-licenses` ile tam kabul edilmedi (build yine de başarılı).
+- **Sonraki (onay gerekir):** (1) Bayrağı açmak ve hikâyeleri (4–5. sınıf önce) yayına almak için kullanıcı onayı; önce Ajan A/B ve insan okuması. (2) Sözlük içe aktarma (`okuma_sozluk_ice_aktar`) ve paneldeki içe aktarma akışının gerçek hesapla denenmesi. (3) Release APK/AAB için imza anahtarı kararı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ (dağıtım ve kurulum doğrulandı; okuma akışı telefonda henüz denenmedi)
+- **Sahip:** Kullanıcı (bayrak ve içerik yayın kararı), Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0061, K-0065, K-0066
+
+### K-0068 · 2026-10-21 · DEN · 6. sınıf boşluk turu: Matematik 30 ve Fen 36 kazanım tamamen kapsandı
+- **Tür:** Gelişme
+- **Bağlam:** Kullanıcı: 6. sınıf boşlukların hepsi için ek tur, boşluk kalmasın.
+- **Karar:** Boş 11 kazanım (MAT.6.3.3 + 10 FB.6.x) için 11 soru yazıldı. Kapı: BOS6-011 sayısal ifade düzeltildi, 11/11. Haiku 11/11 anahtar uyumu (ilk çalışma girdi dosyası yokluğundan boş dönmüştü, yeniden çalıştırıldı). Sonnet 11 GEÇER. Birleştirildi.
+- **Durum:** Matematik 6: 30 soru, 24/24 kazanım. Fen 6: 36 soru, 36/36 kazanım. Sosyal 6: 30 soru, 18/18. Türkçe 6: ertelendi (program ayrıştırması).
+- **Doğrulama:** KISMİ (kazanım kodları ve kapı tamam; Sonnet kalite kararları DÖP metniyle tekrar doğrulanmalı; Haiku ve Sonnet dosyası boş-iyeleme gecikmesi yaşadı).
+- **Sahip:** Ajan · **Önem:** Orta
+- **İlgili:** K-0067.
+
+### K-0067 · 2026-10-21 · DEN · 6. sınıf pilotu: Matematik 29, Fen 26, Sosyal 30 soru; Türkçe 6 ertelendi
+- **Tür:** Gelişme + Karar
+- **Bağlam:** Kullanıcı: 6. sınıfa başla; token tasarrufu; işleri zorluğa göre Haiku'ya ver (kolay: kazanım çıkarımı, kapı, çözücü; zor: yazım ve kalite denetimi Sonnet).
+- **Karar:** Kazanım kaynakları: Matematik 6 (24 kod), Fen 6 (36 kod), Sosyal 6 (18 kod) DÖP'ten çıkarıldı. Türkçe 6 ertelendi: ortaokul Türkçe programında çıktı kodları paragrafların sonunda geliyor, metin ayrıştırması güvenilir değil (91 aday kod, kayık metinler).
+- **Denetim:** Matematik: kapı 1 RED (MAT6-002 sayısal ifade düzeltildi), Haiku 30/30, Sonnet MAT6-017 DÜZELT (yamuk tanımı) çıkarıldı → 29. Fen: kapı 0 RED, Haiku 30/30, Sonnet 3 DÜZELT + 1 RED (006, 027, 003; 012 hormon/hipofiz) çıkarıldı → 26. Sosyal: kapı 2 RED (çözüm satırı normalize edildi), Haiku 30/30 (SOS6-018 güven 2), Sonnet 30 GEÇER; mutlak ifade taraması temiz.
+- **Kapsam:** Matematik 6: 24 kazanım, 29 soru; 1 kazanım boş. Fen 6: 10 kazanım boş (26 soru). Sosyal 6: 18/18 tam.
+- **Durum:** DEVAM. Fen 6 eşiğin (20) üstünde ama kapsam eksik; Türkçe 6 ertelenmiş.
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** Sonnet kalite denetimi yine kazanım düzeyini yanlış tahmin etti (6. sınıf fen 6–7 kavramı, DÖP ile karşılaştırılmadı). Bu turdaki kalite kararları DÖP metniyle teyit edilmeli.
+- **İlgili:** K-0064, K-0065 (önceki), REHBER §18, kapi.cjs.
+
+### K-0066 · 2026-10-21 · VT/TSR · Okuma Dünyası: sözlük RPC'si, export_my_data genişletmesi, 21 hikâyenin uzunluk turu
+- **Tür:** Gelişme
+- **Konu:** VT, KVKK, TSR (içerik)
+- **Yapılanlar:**
+  - **Migration `20261050000400_okuma_dunyasi_sozluk.sql`:** `okuma_sozluk_girdileri/yuvalari/adaylari/kavramlari`, admin `okuma_sozluk_ice_aktar` (kuru çalıştırma, dört göz, günlük), öğrenci `okuma_sozluk_getir(p_hikaye_id)` (onaylı girdiler, çocuğun sınıfına uyan adaylar, yasaklı ikonlar elenir; önizleme izinli hesapta taslak da).
+  - **Migration `20261050000500_export_my_data_okuma.sql`:** `export_my_data` mevcut anahtarlar korunarak `okuma` anahtarıyla genişletildi (oturum, cevap, geri bildirim, hedef durumu, PDF, tercihler; çağıranın kendi verisi; doğru şık/anahtar yok).
+  - **Hikâye turu (Haiku ajanları):** sınıf 2–8, 21 hikâye genişletildi (olay/kahraman/değer korundu). Derleyici (ben doğruladım): 24 hikâyenin 24'ü HATASIZ, uzunluk ve sözcük hedefi uyarısı yok (yalnız 'Kanıt düzeyi C'). Örnek: sınıf 2 → 145–190 kelime, sınıf 5 → 418–433, sınıf 6 → 506–537, sınıf 7 → 569–581, sınıf 8 → 660–739.
+  - Örnek sözlükteki `sabreden_derviş` kimliği şemaya uyacak şekilde `sabreden_dervis` yapıldı. `yanlis-haber-odasi`'ndaki gereksiz cinsiyet vurgusu ("ekipteki bir kız") kaldırıldı.
+- **Kanıt:** PGlite `166/166` (önceki 139 + 27 yeni); atölye `npm test` 30/30; 24 hikâye derleme hatasız. `db:preview`: uzakta 6 okuma migration'ı bekliyor (000–500).
+- **Açık:**
+  - **Dağıtım yok; `db:deploy` kullanıcı onayı bekliyor.** Sıra: 000→500.
+  - Haiku'nun yazdığı metinler **editör gözünden geçmedi**: anlatım yer yer açıklayıcı/öğretici, edebî özgünlük ve keyif Ajan B + insan okumasıyla sınanmalı. Sınıf 5 hedefi (~450) hafif altında (418–433, aralık içinde).
+  - Ajan A'nın doğrulaması gereken iddialar: ayakkabı-yarışı (haftada üç kez koşma tavsiyesi sağlık tavsiyesi gibi okunabilir), gölgenin-peşinde (ölçüm ve öğle gölgesi), kırk-adim-kuyusu (eski kuyu çökmesi, su kaynağı olgusu), yıldızların-kaptanı (Kutup Yıldızı dönüşü, kırmızı ışık ve karanlığa alışma, Büyükayı tarifi), mercek (Galileo uydu gözlemi), göç (kuşların yiyeceğe alışması). `kelimelerin-yolculugu`: "kararlı" sözcüğünün olumsuz anlamı iddiası zayıf (Ajan B).
+  - Sözlük şeması `kavramlar` alanını henüz içermiyor (sunucu isteğe bağlı kabul ediyor); `sozluk.v1.schema.json` güncellenmeli. Sunucu sözlüğü canlıda boş: atölye sözlüğü `okuma_sozluk_ice_aktar` ile yüklenmeli (dağıtımdan sonra).
+  - Panelde sözlük içe aktarma ekranı yok (şimdilik RPC); uygulama `okuma_sozluk_getir`'i henüz çağırmıyor (anlam boş görünür).
+  - Ajan A/B denetimleri ve insan okuması yapılmadı; hiçbir hikâye yayınlanmadı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ
+- **Sahip:** Kullanıcı (deploy onayı, içerik okuması), Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0055, K-0061, K-0065, GÖR-045
+
+### K-0065 · 2026-10-21 · TSR · Okuma Dünyası: mobil/web uygulama, yönetim, veli ve öğretmen entegrasyonu YAZILDI (canlıya alınmadı)
+- **Tür:** Gelişme
+- **Konu:** MOB, PNL, VT, MON
+- **Bağlam:** K-0058 planı ve K-0061 veritabanı katmanı üzerine kullanıcı "karar ver ve entegre et/ettir" dedi; ajanlar (tasarım ajanı) uyguladı.
+- **Yapılanlar:**
+  - **Flutter (mobil + web):** `mobile-app/packages/okuma_motoru` (32/32), repository (10 öğrenci RPC), cihaz önbelleği (son 20 hikâye, sha256), Öğren sekmesinde "Bugünkü hikâye" kartı (bayrak kapalıyken görünmez), kota dolu sakin ekran, okuma serisi, Okuduklarım, geri dönüş mesajı (push yok), PDF (önce `okuma_pdf_hakki_kullan`, ertelenmiş yükleme). Prototipteki yerel cevap kontrolü KALKTI; kahraman/yoldaş adı yalnız bellekte.
+  - **Web panel:** `/yonetim/hikaye-atolyesi` (liste, sürüm ve denetim, önizleme, içe aktarma/kuru çalıştırma, karne, içerik boşluk haritası, sözlük ve hedefler, ayarlar), `/veli-paneli/okuma-dunyasi` (değer önceliği, rıza kilitli kart, özet), öğretmen sınıf raporuna okuma kartı. tr/en mesaj paketleri.
+- **Kanıt:** Flutter: `flutter test` 356/356 (yeni 54), `dart test` motor 32/32, `flutter build web --release` başarılı; ana `main.dart.js` +177.528 B (~0,17 MB, bütçe ≤1 MB içinde), PDF ayrı ertelenmiş parça (945.199 B). Web: `lint` 0 hata, `build` başarılı, 390/1280 ekran görüntüleri (sahte yanıtla).
+- **Açık / doğrulanmayan:** Canlı veritabanıyla uçtan uca test YOK (migration'lar uygulanmadı). Cihaz, TalkBack/VoiceOver, mobil APK/IPA boyutu ölçülmedi. Panel yazma akışları (içe aktarma, durum geçişi, ayar kaydı) ve gerçek veli/öğretmen oturumları denenmedi. `flutter analyze` 4 sorun (başkasına ait push dosyaları); koyu mod ve kontrast ölçümü yok.
+- **Kararlar (ajan):** anket seçenekleri sunucu beyaz listesine hizalandı (yıldız zorunlu); çocuk tarafında veli değerine göre sahne seçimi gerekmez (sıralama sunucuda); Roboto yedek yazı tipi isteği uygulama geneli, ayrı konu.
+- **Sonraki işler:** (1) **`db:deploy` kullanıcı onayı**, sonra bayrak izinli hesapta açılıp akış canlı RPC ile koşturulur. (2) Sözlük/anlam kaynağı: `okuma_sozluk_getir` RPC'si (küçük migration) ya da pakete `sozluk`; şimdilik anlamı boş ("henüz eklenmedi"). (3) `export_my_data` okuma tablolarını kapsamıyor (migration). (4) Hikâyelerin genişletilmesi, Ajan A/B denetimi ve insan okuması (yayın kapısı). (5) Hukuk GÖR-045, push, hedef durum kuralları pedagoji onayı.
+- **Durum:** DEVAM (kod yazıldı; canlı doğrulama ve yayın bekliyor)
+- **Doğrulama:** KISMİ
+- **Sahip:** Kullanıcı (deploy onayı, içerik okuması), Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0055, K-0058, K-0061, GÖR-045
+
+### K-0064 · 2026-10-21 · DEN · 5. sınıf boş kazanım ek turu: MAT.5.3.1 ve FB.5.3.1
+- **Tür:** Gelişme + Karar
+- **Bağlam:** Kullanıcı: Karpathy repo kurulumu (karpathy-guidelines skill, kullanıcı genelinde) ve Matematik/Fen boş kazanımları için ek tur.
+- **Karar:** 6 ek soru (MAT5-B-001..003, FEN5-B-001..003). Haiku 6/6 anahtarla uyumlu. Sonnet: MAT5-B-001 DÜZELT (çember), FEN5-B-001..003 RED (hücre, kloroplast 6–7. sınıf). **Kabul edildi, itirazlar DÖP ile çürütüldü:** FB.5.3.1 metni "bitki ve hayvan hücrelerinin özelliklerini belirleme ve karşılaştırma" 5. sınıf kazanımı; MAT.5.3.1 metni çember ve dikme çizimini içeriyor. Kapı 0 RED.
+- **Durum:** Matematik 5: 36 soru, kapsam tam (23/23). Fen 5: 35 soru, kapsam tam (27/27). Sosyal 5: 38 soru, kapsam tam.
+- **Doğrulama:** KISMİ (kazanım kodları DÖP metinleriyle eşlendi; Sonnet kalite itirazları DÖP ile çelişti — yeniden değerlendirme gerekebilir).
+- **Sahip:** Ajan · **Önem:** Orta
+- **İlgili:** K-0063.
+
+### K-0063 · 2026-10-21 · DEN · 5. sınıf setleri: Matematik 33, Fen 32, Sosyal 38; kapı uzunluk uyarıya dönüştü
+- **Tür:** Karar + Gelişme
+- **Bağlam:** Kullanıcı: "başlat" (Fen 5 ve Sosyal 5 ek üretim). Ayrıca hafıza kuralı: uzunluk tek başına red sebebi değil (feedback_onay_kurali_uzunluk). Kullanıcı: token tasarrufu esas.
+- **Karar:**
+  - Kapı (kapi.cjs) uzunluk bulgusunu artık **uyarı** olarak raporluyor, RED değil. Yani önceki turda yalnızca uzunluk yüzünden elenen soruların bir kısmı (Fen 5: 10, Sosyal 5: 8, Matematik 5: 4) geri getirilebilir durumda; matematikteki dört soru, eldeki denetlenmiş içerikle geri eklendi (açıklamalar yazarca tamamlandı, kapı 4/4).
+  - Fen 5 ek üretim (20 soru) Haiku 20/20 anahtarla uyumlu; Sonnet 3 DÜZELT (E-003, E-004, E-015: 7. sınıf kavramı ve kazanım dışı) çıkarıldı.
+  - Sosyal 5 ek üretim (20 soru): Haiku 20/20 anahtarla uyumlu; Sonnet 20 GEÇER.
+- **Durum:** Matematik 5: 33 soru, kapsam eksik MAT.5.3.1. Fen 5: 32 soru, kapsam eksik FB.5.3.1. Sosyal 5: 38 soru, kapsam tam. Üçü de kapıdan RED'siz geçiyor.
+- **Açık:** Fen 5 denetimi (Sonnet ek) tam; ilk 15 soru ayrıca denetlenmişti. Veritabanı aktarımı yok (en son, kullanıcı onayıyla).
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **İlgili:** K-0062, K-0063 (önceki), REHBER §3/§18, kapi.cjs.
+
+### K-0062 · 2026-10-18 · DEN · 5. sınıf pilotları: Matematik 29, Fen 15, Sosyal 18 soru
+- **Tür:** Gelişme + Sorun
+- **Bağlam:** Plan sırası 4 → 5 → 6–7 → 1–3 → 8 (en sonda, ayrı LGS stratejisi). Üç ders için aynı hat: yazar (Sonnet) → kapı → Haiku (kör çözüm) → Sonnet 5.5 (kalite).
+- **Karar:**
+  - **Matematik 5:** 22 + ek 7 = 29 soru, kapı 29/29, Haiku 30/30 anahtar uyumu. Kapsam eksik: MAT.5.3.1 ve MAT.5.6.1.
+  - **Fen 5:** kapı 10 RED (uzunluk) çıkarıldı; Haiku 20/20; Sonnet 5 DÜZELT (004, 012, 014, 023, 029) çıkarıldı. Kalan 15 soru: pilot eşiğinin (20) altında; 13 kazanım boş. Fen 5 yeniden üretim gerektiriyor.
+  - **Sosyal 5:** kapı 8 RED (uzunluk) çıkarıldı; Haiku 22/22 anahtar uyumu; Sonnet 5 DÜZELT (003, 015, 020, 021; ek matematikte E-004) çıkarıldı. Kalan 18 soru; 5 kazanım boş (SB.5.1.2, 5.1.3, 5.3.1, 5.4.2, 5.4.3).
+- **Durum:** DEVAM. Üç hücrenin ikisi (Fen 5, Sosyal 5) eşiğin altında; yeniden üretim turu gerekecek.
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** Yazarların en sık hatası doğru şığın en uzun şık olması (kapı ile yakalandı). Sonnet kalitesinde tutum/değer yargısı kalıbı (Sosyal) ve kazanım kayması (Fen: FB.5.x bazı kazanımlar 6–7. sınıf müfredatına yakın) riski. 5. sınıf kazanım eşlemesi doğrulanmalı. Kazanım listesi (matematik DÖP) TOC karışıklığı nedeniyle tam doğrulanmadı.
+- **Kanıt:** docs/soru-uretim/pilot/uretim_matematik_5_final.json (29), uretim_fen_5.json (15), uretim_sosyal_5.json (18); scratchpad/denetci_*_fen5.json, denetci_*_sos5_mat5ek.json.
+- **İlgili:** K-0060, PLAN_V2 §4.
+
+### K-0061 · 2026-10-18 · VT · Okuma Dünyası F1: veritabanı katmanı yazıldı ve PGlite'ta test edildi (DAĞITILMADI)
+- **Tür:** Gelişme + Karar
+- **Konu:** VT, MON, PNL
+- **Bağlam:** K-0058 planı kullanıcı tarafından kabul edildi; kalan kararlar ajana bırakıldı (`HUPO_ENTEGRASYON_PLANI.md` §10): ücretsiz günde 1 hikâye, PDF ayda 3 (premium sınırsız), paket teslimi v1'de RPC, çevrimdışı 20 hikâye, ilk set 4–5. sınıf.
+- **Yapılanlar:** 4 migration (`20261050000000…300`): 13 `okuma_*` tablo, RLS, değişmezlik tetikleyicisi, yayın kapısı (Ajan A/B pass + insan approved + dört göz, hem RPC'de hem tabloda), 25 RPC (öğrenci 10, veli 4, öğretmen 1, yönetim 10), bayrak varsayılan KAPALI. Sözleşme: `C:\Dev\Senin Hikayen - HupoRead\docs\OKUMA_RPC_SOZLESMESI.md`. Testler: `supabase/tests/okuma_dunyasi/`.
+- **Sapmalar (bilinçli):** etiket ve hedef bağları sürüm başına (değişmez sürüm modeli); denetim sürümde; içe aktarmada paket `insan: approved` dese bile sunucu `pending` yazar; `ilgi_egilimi` istemciye dönmez; veli ayrıntı özeti premium **veya denetim süresi (14 gün)** için açık; XP ayarları 10'un katı olmak zorunda (`award_xp_and_streak` 10/20/30 veriyor).
+- **Kanıt:** PGlite `139/139` senaryo (yetki matrisi, rıza, dört göz, bozuk paket reddi 13, değişmezlik, idempotent XP ve tavan, kota, PDF sayacı, `dogru`/`aciklama` sızıntı taraması, serbest metin parametre yok, cascade silme). Mutasyon testi: anahtar soyma satırı kaldırılınca 2 senaryo düştü. `db:preview`: uzakta yalnız bu 4 dosya bekliyor.
+- **Açık:** **Dağıtım yapılmadı; `db:deploy` ayrı kullanıcı onayı bekliyor.** Harness taklit içerir (gerçek `award_xp_and_streak`, `export_my_data`, Supabase rolleri, eşzamanlılık yok): staging'de `supabase db reset` ve `supabase test db` ile doğrulanmalı. `export_my_data` okuma tablolarını kapsamıyor (ayrı migration gerekli: oturum, cevap, geri bildirim, hedef durumu, PDF kullanımı, çocuk tercihleri). Hedef durum geçiş kuralları (retrieved, transferred, refresh_due) ajan tasarımı; pedagoji onayı gerekir. Öğretmen özetinde veli rızası aranmıyor, yalnız min-N 3 (mevcut kalıp); hukuk (GÖR-045) kapanmadan pilot açılmaz. Geri dönüş push'u sunucuda yok.
+- **Durum:** DEVAM (F2 yönetim paneli, F3 uygulama, F4 veli/öğretmen ajanları çalışıyor)
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan, Kullanıcı (deploy onayı)
+- **Önem:** Yüksek
+- **İlgili:** K-0052, K-0055, K-0058, GÖR-045
+
+### K-0060 · 2026-10-18 · DEN · 5. sınıf Matematik pilotu: 22 soru; kazanım kapsamı eksik
+- **Tür:** Gelişme + Sorun
+- **Bağlam:** Plan sırası: 4 kapanış → 5 → 6–7 → 1–3 → 8 (en sonda, ayrı LGS stratejisi; kullanıcı kararı).
+- **Plan:** Kazanım tablosu (Ortaokul Matematik 5–8 DÖP, mufredat.meb.gov.tr, 2026) → Sonnet yazar (30) → kapı → Haiku (kör çözüm) → Sonnet 5.5 (kalite).
+- **Karar:** Kapı: 4 RED (uzunluk) çıkarıldı. Haiku 30/30 anahtarla uyumlu. Sonnet 26 GEÇER / 4 DÜZELT (013, 015, 016, 017: araç adı sorusu, kazanım dışı açılar); DÜZELT olanlar çıkarıldı. Son set 22 soru, kapı 22/22.
+- **Durum:** DEVAM. Kazanım kapsamı eksik: MAT.5.2.2, 5.3.1, 5.3.3, 5.3.4, 5.3.6, 5.4.1, 5.6.1 boş. 20 eşiğinin üstünde ama kapsam tam değil.
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** Kazanım kodu çıkarımı 5. sınıf DÖP'ten yapıldı (23 kod, bölüm başlıkları ve TOC karışıklığı olabilir; 5.1.5 gibi kodlar eksik olabilir — doğrulanmalı). Geometri (5.3) ve çevre-alan kazanımları için ek üretim gerekir.
+- **Kanıt:** docs/soru-uretim/pilot/uretim_matematik_5.json (22 soru), kazanim_5_matematik.json, scratchpad/denetci_*_mat5.json.
+- **İlgili:** K-0059, PLAN_V2 §4.
+
+### K-0059 · 2026-10-18 · BEL · Soru üretim planı: ajan kararları, MEB yazım kılavuzu entegrasyonu, Hayat Bilgisi kazanımları
+- **Tür:** Karar + Gelişme
+- **Bağlam:** Kullanıcı: kararları ajan versin; en faydalı, en çok müşteri çeken, gelir üreten yol.
+- **Karar (ajan, gerekçeli, docs/soru-uretim/PLAN_V2.md §0):** Öncelik 4 → 8 (LGS) → 5 → 6–7 → 1–3. Ders: Türkçe/Matematik önce. 8. sınıfta T.C. İnkılap. Çözücüler Haiku + Gemini; kalite denetçisi Sonnet 5.5 (Gemini kalite rolü kalktı). Yayın için iki çözücü + Sonnet GEÇER + insan örneklemi (%10, atanacak kişi kullanıcıda). Fiyat/paket kararı verilmedi, kullanıcıda.
+- **Kanıt:** MEB "Bağlam Temelli Çoktan Seçmeli Soru Yazım Kılavuzu" (Mart 2026) tam PDF indirildi; REHBER §18'e eklendi. Kapı: kapsayıcı şık ve öznel kök kontrolleri eklendi. Matematik MAT4-023 ("hepsi" içeren şık) çıkarıldı (29 → 28). Hayat Bilgisi kazanımları çıkarıldı: 50 kod (1. sınıf 19, 2. sınıf 17, 3. sınıf 14).
+- **Engel:** İngilizce 4 ve Din Kültürü 4 programı tymm'de bulunamadı (sayfa 500 hatası; arama sonuçsuz).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0057, PLAN_V2, REHBER §18.
+
+### K-0058 · 2026-10-18 · TSR · Senin Hikâyen: Hupo entegrasyon planı (mimari, yönetim, metrikler, fiyatlandırma)
+- **Tür:** Plan
+- **Konu:** TSR, VT, MOB, PNL, MON
+- **Bağlam:** Kullanıcı, okuma modülünün mobil ve web uygulamaya, veli, öğretmen ve yönetim panellerine entegrasyonunu, içerik yönetimini, metrikleri, fiyatlandırmayı ve uygulamayı ağırlaştırmayan mimariyi sordu.
+- **Plan (özet):** Belge: `C:\Dev\Senin Hikayen - HupoRead\docs\HUPO_ENTEGRASYON_PLANI.md`. Mimari: küçük saf-Dart motor uygulamada; hikâye paketi Storage'da sürümlü dosya, soru anahtarı yalnız RPC, PDF ertelenmiş yükleme, yerel önbellek (~20 hikâye). Yönetim: hikâye atölyesi paneli (içe aktar, kuru çalıştırma, etiket editörü, denetim, karne), yayın kapısı sunucuda zorlanır. Metrikler: öğrenci, veli, öğretmen, yönetim ayrı; öğrenme XP/süreyle karıştırılmaz, cinsiyet kırılımı yok, min-N. Fiyat: ayrı SKU yok; mevcut plana hak kalemi (günlük hikâye kotası admin ayarı), veli içgörüsü ve PDF premium değer farkı; fiyat yok.
+- **Ölçülen:** hikâye paketi ham ortalama ~10 KB (29 paket, 291 KB), motor kaynağı ~12 KB, PDF yazı tipleri 259 KB, örnek sözlük 21,6 KB. **Ölçülmedi:** sıkıştırılmış boyut (tahmin ~3 KB), uygulama paketi boyut farkı.
+- **Doğrulanan Hupo yapısı:** `premium_gating` ve günlük kota, iyzico tabloları, öğretmen/sınıf tabloları, Storage kullanımı. Kod yazılmadı, migration yok.
+- **Karar bekleyen:** fiyat modeli, ücretsiz kota, PDF erişimi, öğretmen kapsamı, Storage+RPC melezi, çevrimdışı önbellek, ilk yayın seti.
+- **Durum:** ONAY BEKLİYOR
+- **Doğrulama:** YOK (plan)
+- **Sahip:** Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** K-0052, K-0055, K-0048, GÖR-045
+
+### K-0057 · 2026-10-18 · DEN · Sosyal Bilgiler 4: ek tur (Sonnet yazımı), birleşik set 28 soru; tüm kazanımlar kapsanıyor
+- **Tür:** Gelişme
+- **Bağlam:** K-0056 sonrası kalan kazanımlar için yeni tur. Üretici Sonnet 5.5; denetçi Haiku (kör çözüm) ve Gemini (kalite).
+- **Karar:** Ek 12 soru yazıldı. Kapı: 005 ve 011 (doğru şık en uzun) çıkarıldı. Gemini: 009 DÜZELT, çıkarıldı. Kalan 9 soru Haiku ile 9/9 anahtarla uyumlu. Birleşik set (19 + 9) = 28 soru; kapı 28/28; 14 kazanımın tamamı kapsanıyor.
+- **Durum:** TAMAMLANDI (Sosyal set, veritabanı aktarımı hariç). Veritabanı aktarımı en son ve kullanıcı onayına bağlı.
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** Ek 9 soru yalnızca Haiku ve Gemini tarafından denetlendi; Sonnet 5.5 kalite denetimi bu parça için yapılmadı (yazar Sonnet olduğu için bağımsız sayılmaz). Gemini ilk turda kalite denetiminde zayıf kaldı (K-0056). Birleşik setin kalite kararı bu nedenle tam değil; yayın öncesi Sonnet 5.5 ya da başka bağımsız bir kalite denetimi yapılmalı. Ayrıca zorluk etiketleri model tahmini.
+- **Kanıt:** docs/soru-uretim/pilot/uretim_sosyal_4_final.json (28 soru), 	ools/soru-uretim/kapi.cjs 28/28 KONTROL, scratchpad/denetci_a_sos4_ek.json.
+- **İlgili:** K-0056, K-0054, REHBER §15, §17.
+
+### K-0056 · 2026-10-18 · DEN · Sosyal Bilgiler 4: Gemini üretimi (üretici), Haiku + Sonnet 5.5 denetimi; 19 soru kaldı
+- **Tür:** Karar + Gelişme
+- **Bağlam:** Kullanıcı: soruları Gemini üretsin; Haiku ve Sonnet 5.5 kontrol etsin. Veritabanı aktarımı en sonda.
+- **Plan:** 1. Gemini 30 soru üretsin (REHBER + kazanım listesi). 2. Kapı. 3. Haiku (kör çözüm) + Sonnet 5.5 (kalite). 4. DÜZELT/RED çıkar.
+- **Karar:** Gemini ilk üretimde doğru şıkların %57'sini A'ya koydu ve 8 soruda doğru şık en uzundu. Harf dengesi şık sırasının yeniden düzenlenmesiyle sağlandı (metin değişmedi). En uzun şıklı 8 soru ve 3 eksik kazanım için 6 ek soru üretildi. Kapı 28/28. Haiku 28/28 anahtarla uyumlu. Sonnet 9 DÜZELT verdi (G2-003/G3-003 çelişkili kök, G2-010 muğlak eşleme, E1-02/03, G2-002/007, G3-007/008 mutlak ifadeler; Tekalif-i Milliye sorusu üç kez tekrarlı). Hepsi çıkarıldı. Kalan 19 soru; SB.4.1.2 boş.
+- **Durum:** BEKLİYOR (Sosyal 19 soru, 20 eşiğinin altında; yeniden üretim gerekebilir). İngilizce 4 programı hâlâ bekleniyor.
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** Gemini üretim kalitesi yüksek değil: harf dengesi, en uzun şık, mutlak ifade, tekrar eden kökler. Üretimden sonra Sonnet filtresi olmadan kullanılamaz. Tek başına kalite güvencesi olarak yetmiyor; denetim zinciri şart.
+- **Kanıt:** docs/soru-uretim/pilot/uretim_sosyal_4_gemini.json (19 soru), 	ools/soru-uretim/kapi.cjs 19/19 KONTROL, scratchpad/denetci_*_sos4_g.json.
+- **İlgili:** K-0054, REHBER §17, §16.
+
+### K-0055 · 2026-10-18 10:46 · TSR · Senin Hikâyen: sınıf 1–8 hikâye taslakları (24 yeni), şema ve derleyici güncellemesi
+- **Tür:** Gelişme + Karar
+- **Konu:** TSR, MEB (içerik), HUK (telif ve yayın kapısı)
+- **Bağlam:** Kullanıcı, Uzman V2 rehberine göre 5. sınıf için uzun hikâyeler ve her sınıf (1–8) için üç hikâye istedi. İlgi etiketi yalnızca sıralama için tutulacak; ikonlarda Twemoji ve Material kullanılacak, OpenMoji hukuk onayına kadar kullanılmayacak.
+- **Yapılanlar:**
+  - 24 yeni taslak: `icerik/taslak/` (sınıf 1–3: 9, sınıf 4: 3, sınıf 5: 3, sınıf 6: 3, sınıf 7: 3, sınıf 8: 3). Hepsi derleniyor, hata yok; hepsi `durum: taslak`, denetimler `pending`.
+  - Şema: sorular en az 2 (rehber: 1–4 soru), sayfalar en çok 12 (uzun hikâyeler için; önceki 8). `hedef_cinsiyetler` alanı kaldırıldı.
+  - Derleyici: ilgi etiketi sıralama için; ölçümler ve uyarılar.
+  - Katalog: `docs/ICERIK_TASLAK_LISTESI.md` (29 satır: 24 yeni + ilk 5 pilot).
+- **Kanıt:** `atolye npm test` → 30/30. Derleme: 24/24 hatasız.
+- **Açık (önemli):** Uzunluk hedeflerinin çoğu tutturulamadı. Derleyici sayımına göre: sınıf 2–3 hikâyeleri 104–153 kelime (hedef 120–330; robot-cop-kutusu hedefin altında), sınıf 4 247–258 (hedef 260–450), sınıf 5 342–349 (hedef 350–650), sınıf 6 428–444 (hedef 450–800), sınıf 7 449–486 (hedef 550–950), sınıf 8 354–428 (hedef 650–1100). Yazım sürecinde sayfa başına kelime yoğunluğu yetersiz kaldı; ikinci turda genişletme gerekli. Öğrenme hedefi sayısı (sözcük) bazı hikâyelerde sınıf aralığının altında. Sınıf 1 hikâyeleri harf-ses evresi uygunluğu açısından insan editörce ayrıca kontrol edilmeli.
+  - Kanıt düzeyi çoğu hikâyede B/C; resmî kazanım kodu doğrulanmadı.
+  - Ders bağlantılı fen/sosyal hedeflerin iddia kartları ve Ajan A kontrolü yapılmadı.
+  - Ajan A ve B denetimleri ve insan okuması yapılmadı; hiçbir hikâye yayınlanmadı.
+  - Uygulamaya (Flutter prototip) henüz bağlanmadı; ornek_veri.dart güncellenmedi.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ (derleme ve şema doğrulandı; içerik ve uzunluk denetimi bekliyor)
+- **Sahip:** Ajan, Kullanıcı (uzunluk ikinci tur, editör okuması)
+- **Önem:** Yüksek
+- **İlgili:** K-0052, K-0048, GÖR-045
+
+### K-0054 · 2026-10-18 · DEN · Sosyal Bilgiler 4 v2: çeldirici yeniden yazımı, 17 soru kaldı; İngilizce 4 programı bulunamadı
+- **Tür:** Gelişme + Sorun + Engel
+- **Bağlam:** K-0053'teki Sosyal setinin çeldirici kalıbı (doğru şık tek olumlu ve en uzun) kullanıcı kararıyla düzeltilmeye çalışıldı. Veritabanı aktarımı en sona bırakıldı (kullanıcı kararı).
+- **Plan:** 1. Çeldiricileri yeniden yaz (kök ve doğru şık korunur). 2. Kapı, Gemini, Haiku, Sonnet 5.5 kör denetimi. 3. DÜZELT ve RED olanları çıkar. 4. İngilizce 4 programını bul ve aynı akışı uygula.
+- **Karar:** v2'de Sonnet 5.5 yedi DÜZELT verdi (005, 009, 020, 021, 023, 029, 030); hepsi çıkarıldı. Sosyal seti 17 soru; SB.4.2.2 ve SB.4.6.2 kazanımları boş. Pilot hedefi 20–30 soru olduğu için Sosyal bu hâliyle pilot eşiğinin altında. Haiku 24/24 anahtarla uyumlu çözdü; Gemini ilk turda ve v2'de hepsini GEÇER verdi.
+- **Engel:** İngilizce 4 DÖP PDF'si iki aramada bulunamadı (mufredat ve tymm'de yok). Kazanım kodu uydurulmadı. Kullanıcıdan PDF ya da bağlantı beklenecek.
+- **Durum:** BEKLİYOR (İngilizce programı); Sosyal ENGELLİ (pilot eşiği altı, yeniden üretim gerekir)
+- **Doğrulama:** KISMİ
+- **Sahip:** Kullanıcı (İngilizce programı), Ajan (Sosyal yeniden üretim)
+- **Önem:** Orta
+- **Açıklama:** Sosyal'de çeldirici sorunu iki turda çözülemedi. Gemini kalite denetimi bu alanda güvenilir değil. Yeniden üretim için tutum kazanımları ayrı ele alınmalı (bilgi ağırlıklı kazanımlara odaklı). Ayrıca 2026 program sürümü sınıflarda henüz uygulanmıyor olabilir (K-0053 ve telafi belgesi notu).
+- **Kanıt:** docs/soru-uretim/pilot/uretim_sosyal_4_v2.json (17 soru), 	ools/soru-uretim/kapi.cjs 17/17 KONTROL, scratchpad/denetci_*_sos4_v2.json.
+- **İlgili:** K-0053, K-0051, REHBER §13, §15, §17.
+
+### K-0053 · 2026-10-18 · DEN · Sosyal Bilgiler 4 pilotu: 24 soru kaldı; değer yargısı çeldiricileri zayıf
+- **Tür:** Gelişme + Sorun
+- **Bağlam:** Ders pilot sırası (REHBER §13): Matematik ve Fen kapandı; Sosyal Bilgiler 4 sıradaki. Üretici Sonnet 5.5, kalite denetçisi Sonnet 5.5.
+- **Plan:** 1. Sosyal DÖP 14 kazanım (pilot/kazanim_4_sosyal.json). 2. §17 kuralları. 3. 30 soru üret, kapı, Haiku + Gemini + Sonnet kör denetimi, DÜZELT/RED çıkar.
+- **Karar:** Kapıdan iki RED (008, 014: doğru şık en uzun) çıkarıldı. Sonnet 4 DÜZELT (002, 003, 007, 018) verdi; hepsi çıkarıldı. Set 24 soru. Haiku 28/28 anahtarla uyumlu; Gemini 28 GEÇER.
+- **Durum:** DEVAM (Türkçe 28, Matematik 29, Fen 25, Sosyal 24).
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** Sosyal'de sorun, tutum ağırlıklı kazanımlarda (SB.4.1.x, SB.4.5.x) doğru şıkların tek olumlu ve en uzun şık olması; çeldiricilerin açıkça saçma ya da mutlak ifadeli olması. Bu kalıp Sosyal setinin büyük kısmında var; set olduğu gibi kullanılmamalı, çeldirici yeniden yazımı gerekir. Haiku'nun "Montu" işareti yanlıştı (iyelik hâli, doğru). Yayın kararı kullanıcıda (§15).
+- **Kanıt:** docs/soru-uretim/pilot/uretim_sosyal_4.json (24 soru); 	ools/soru-uretim/kapi.cjs 24/24 KONTROL; scratchpad/denetci_*_sos4.json.
+- **İlgili:** K-0051, REHBER §15, §17.
+
+### K-0052 · 2026-10-18 06:43 · TSR · Senin Hikâyen: Uzman V2 değerlendirmesi, etiket sistemi, ajan rehberi, ikon kütüphanesi
+- **Tür:** Karar + Gelişme
+- **Konu:** TSR, VT, UX, HUK
+- **Bağlam:** Kullanıcı "Okuma Hikâye Uzmanı V2" paketinin incelenmesini; her hikâye hazırlamada ajanların okuyacağı bir .md rehberi; hikâyelerin sınıf, zorluk, ilgi, tema, Maarif değeri vb. ile etiketlenip veritabanında tutulmasını; geniş bir ikon-emoji kütüphanesini (Twemoji, OpenMoji, Material; Türk-İslam görüşüne ters simgeler asla yok) istedi.
+- **Yapılanlar (proje: C:\Dev\Senin Hikayen - HupoRead):**
+  - Değerlendirme: `docs/UZMAN_V2_DEGERLENDIRME.md`. Rehber uzman girdisi olarak benimsendi; çelişkide öncelik: kullanıcı kararı > ajan rehberi > V2 > V1. 241 kavram adayı sözcük bankası değil, ders ve dil kavramı adayı; hiçbirinde kazanım ve zorluk dolu değil.
+  - Ajan rehberi: `docs/HIKAYE_URETIM_REHBERI_AJAN.md` (AGENTS.md'den zorunlu yönlendirme).
+  - Etiket sistemi: `etiketler` bloğu (şema, kontrollü sözlük `sema/etiket-sozlugu.v1.json`, derleyici doğrulaması, ölçümler, yayın kapısı); 5 hikâye etiketlendi; `hedef_cinsiyetler` kaldırıldı, yerine `ilgi_egilimi` (yalnız yumuşak sıralama etiketi, filtre değil, cinsiyet kırılımı yok). Soru şemasına `degerlendirme`, `hedef_id`, `olcme_turu`.
+  - DB taslağı: `sql/taslak_okuma_etiketleri.sql` + `docs/ETIKET_VE_VERITABANI.md` (veli istatistik sözleşmesi dahil).
+  - İkon kütüphanesi: `ikon_kutuphanesi/` (KURALLAR.json, derle.mjs, katalog 1923 simge: 1438 izinli, 101 inceleme, 384 yasak; Twemoji 1415 + OpenMoji 1438 SVG, Material 2152 ikon, LISANS.md). Ham depolar `kaynak-ikon/` (git dışı, sparse).
+- **Kararlar (ajan, kullanıcı yetkisiyle):** `ilgi_egilimi` varsayılan `ortak`; erdem ve ilke alanı doğrulanmadan eklenmedi; 1. sınıf harf-ses izi ayrı; OpenMoji (CC BY-SA 4.0) hukuk onayına kadar uygulamaya girmez, Twemoji (CC-BY 4.0, atıfla) ve Material birincil.
+- **Mevcut hikâyelerin bulguları:** kelime 300–410 (4. sınıf aralığında), 4 soru; yeni sözcük hedefi 1–2 (rehber 3–4, öğretim içeriği zayıf); soru dağılımı %50 hatırlama, değerlendirme yok; Tohum ve Balon için bilimsel iddia kartı ve Ajan A kontrolü yok (Tohum'da "3 gün sonra filiz" süresi şüpheli); kayip-defter'de D6 sahnesi dürüstlükle uyuşmuyor (ana değer D20 yazıldı); denetimler `pending`.
+- **Kanıt:** `npm test` (atölye) 30/30 (yeni: `etiketler.test.ts` 7 test); beş hikâye hatasız derlendi; `flutter analyze` temiz, `flutter test` 36/36 (ornek_veri etiketli paketlerle yenilendi); `ikon_kutuphanesi/derle.mjs` kendi doğrulamasını geçti (Türkiye bayrağı izinli; haç, Davut yıldızı, öpücük, bira, şarap, domuz, LGBT bayrağı, Noel ağacı, tabanca, Özgürlük Anıtı izinli değil; 🤘 🖕 🏩 yasak, 👌 ve 🌈 inceleme).
+- **Açık:** DB taslağı çalıştırılmadı (sözdizimi dahil); veli istatistik RPC'si yalnız sözleşme; Ajan A ve B denetimleri ve insan okuması yapılmadı; program sürümü (4. sınıf geçiş) ve kazanım kodları doğrulanmadı; ikon yasak listesi insan gözüyle taranmadı (kapsamlı değil); simge kütüphanesi henüz hikâye derleyicisine bağlanmadı (isaret kodları 16 sabit); Haiku ajanı oturum sınırına takılıp ikon kütüphanesini yarım bıraktı, işi ben tamamladım; hukuk (GÖR-045).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ (kod ve testler doğrulandı; içerik denetimleri ve DB bekliyor)
+- **Sahip:** Ajan, Kullanıcı (ilgi etiketi, kapsam, OpenMoji kararı)
+- **Önem:** Yüksek
+- **İlgili:** K-0023, K-0024, K-0040, K-0048, GÖR-045
+
+### K-0050 · 2026-10-18 02:05 · TSR · Senin Hikâyen: sonuç ekranı duyarlı düzen (mobil, tablet, masaüstü)
+- **Tür:** Düzeltme
+- **Konu:** TSR, UX
+- **Bağlam:** Kullanıcı sonuç ekranında scroll gerektiğini, teşvik ve "tekrar gel" mesajının altta kaldığını, düğmelerin kesildiğini bildirdi; tasarım ajanından mobil/tablet/masaüstü düzenlemesi istedi.
+- **Yapılanlar (tasarım ajanı):** Ekran `lib/ekranlar/sonuc.dart` dosyasına taşınıp yeniden yazıldı. Motivasyon metinleri başlığın altında tek kartta; yıldız Lottie sağ üst köşede; kısa ekranda maskot 120 dp; ikincil düğmeler yan yana (yazı ölçeği > 1.3'te alt alta); tablet/masaüstünde maskot ve başlık yan yana, içerik 720 dp ile sınırlı; alt alan en çok %45 yükseklik. `OkumaIkincilButon` artık metni kesmek yerine büyüyor (ortak bileşen).
+- **Kanıt:** `flutter analyze` → No issues found. `flutter test` → All tests passed (36; yeni `sonuc_ekrani_test.dart` 10 test: 390x844, 360x640, 768x1024, 1280x800 kaydırmasız; yazı ölçeği 2.0'da taşma yok). Ajan tarayıcıda geçici girişle ekran görüntüleri aldı, konsol hatası yok.
+- **Açık:** Gerçek cihaz, safe area, ekran okuyucu doğrulanmadı. `OkumaIkincilButon` değişikliği kahraman/hikâye/durum ekranlarını etkiler; bunlar görsel kontrol edilmedi. Karar bekleyenler: kısa ekranda maskot 120 dp, yeni kart görünümü ve yan yana düğmeler.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan, Kullanıcı (görsel onay)
+- **Önem:** Orta
+- **İlgili:** K-0043, K-0046, K-0048
+
+### K-0051 · 2026-10-18 · DEN · Fen 4 pilotu: 25 soru kaldı; Gemini kalite denetimi zayıf, Sonnet 5.5 kalite denetçisi olarak kullanıldı
+- **Tür:** Karar + Gelişme
+- **Bağlam:** Kullanıcı: Fen 4 pilotu devam etsin; kalite denetçisi Opus yerine Sonnet 5.5 olsun (karar: `ONAYLI`). REHBER §9 "Denetçi B en güçlü model" diyor; bu karar o kuralla çelişiyor ve izlenecek (Matematik'te Opus, Haiku ve Gemini'nin kaçırdığı iki gerçek hatayı yakalamıştı).
+- **Plan:** 1. Fen 4 soru üretimi (30 soru, görselsiz, §16). 2. Kapı betiği. 3. Kör denetim: Haiku (çözücü), Sonnet 5.5 (kalite), Gemini (çözücü + kalite). 4. DÜZELT ve RED olanları çıkar.
+- **Karar:** Matematik 028 üç denetimde iki kez DÜZELT aldı; soru çıkarıldı (29 soru). Fen'de Sonnet 5 DÜZELT verdi (003, 005, 014, 021, 030); 014'te 70 °C sıcak su çocuk deneyi güvenlik riski; çıkarıldı, Fen seti 25 soru. REHBER §16.8 güvenlik kuralı eklendi.
+- **Durum:** DEVAM (Türkçe 28, Matematik 29, Fen 25; Fen'de FB.4.8.1 kazanımı şu an kapsanmıyor).
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **Açıklama:** Haiku Fen 30/30 anahtarla uyuştu. Gemini 30/30 GEÇER verdi; oysa Sonnet 5 DÜZELT (özellikle 014'teki güvenlik riski) buldu. Gemini kalite denetiminde kör nokta: bu pilot için Gemini yalnızca çözücü olarak güvenilir sayılmalı, kalite kararı için tek başına yeterli değil. Yayın kararı insan örneklemine bağlı kalır (§15, karar kullanıcıda).
+- **Kanıt:** `docs/soru-uretim/pilot/uretim_fen_4.json` (25 soru), `tools/soru-uretim/kapi.cjs` (25/25 KONTROL), `scratchpad/denetci_a_fen4.json`, `denetci_b_fen4.json`, `denetci_gemini_fen4.json`.
+- **İlgili:** K-0049, REHBER §9, §15, §16.
+
+### K-0049 · 2026-10-18 · DEN · Soru üretim pilotu: Türkçe 4 kapandı (28), Matematik 4 pilotu (30), kapı betiği ve sınıf/ders planı
+- **Tür:** Karar + Gelişme
+- **Bağlam:** Kullanıcı "yapılabilecekleri sırayla yap" dedi (ders pilotu, ders kuralları, kazanım eşleşmesi, sınıf kademesi, insan örneklemi). Yöntem: `docs/soru-uretim/REHBER.md`.
+- **Plan:** 1. Türkçe 4 pilotunu 28 soruyla kapat (TR4-025, TR4-027 tartışmalı noktalama nedeniyle çıkarıldı). 2. Matematik 4 pilotu: 30 soru, kazanım kodlu, sayısal doğrulamalı. 3. Kapı betiği (`tools/soru-uretim/kapi.cjs`): şema, kazanım kodu, sayısal doğrulama, yapısal ipucu. 4. REHBER §11 (Matematik), §12 (kazanım eşleşmesi), §13 (ders sırası), §14 (sınıf kademesi), §15 (insan örneklemi).
+- **Karar:** Sağlayıcı bağımsızlığı için Gemini denetçi olarak kullanıldı (`GEMINI_API_KEY`, .env içinden). Kullanıcı kararı `ONAYLI`: yayın kararı insan örneklemine bağlanır (§15) — karar kullanıcıda, `ONAY BEKLİYOR`.
+- **Durum:** DEVAM (Türkçe ve Matematik pilotları tamam; diğer dersler sırada).
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **Açıklama:** Türkçe 4 (28 soru): anahtar uyumu 28/28 (Haiku), Opus ve Gemini kalite kararları ayrıştı; iki soru çıkarıldı. Matematik 4 (30 soru): kapı 30/30; kör çözüm Haiku 30/30 ve Gemini 30/30 anahtarla uyuştu. Opus kalite denetimi 4 DÜZELT verdi: 021 (parantez eksik, gerçek hata, düzeltildi), 028 (kök ve çeldiriciler, gerçek hata, yeniden kuruldu), 009 ve 010 (düzey itirazı). 009/010 itirazı DÖP metniyle çelişiyor: 4.1.10 hem parçadan bütüne hem bütünden parçaya, 4.1.6 bileşik kesirleri 4. sınıfta kapsıyor; bu iki soru tutuldu. Düzeltilen 021 ve 028 Haiku ve Gemini ile yeniden denetlendi; 028'in son hâli Opus tarafından denetlenmedi. Gemini matematikte 30/30 GEÇER verdi, Opus 4 sorun buldu: üç denetçinin de kör noktası olabilir, insan örneklemi §15'te.
+- **Kanıt:** `docs/soru-uretim/pilot/turkce_4_pilot_final_28.json`; `docs/soru-uretim/pilot/uretim_matematik_4.json`; `docs/soru-uretim/pilot/kazanim_4_matematik.json` (34 kod, DÖP 1–4); `node tools/soru-uretim/kapi.cjs` → Matematik 30/30 KONTROL, Türkçe 28/28 KONTROL.
+- **İlgili:** BEL, §11–§15 REHBER, `kaynak/SORU_UZMANI_REHBER_V3_orijinal.md`.
+
+### K-0048 · 2026-10-18 01:26 · TSR · Senin Hikâyen: cinsiyet kaldırıldı, yol arkadaşı metne işlendi, soru geçişi, PDF düzeltmeleri
+- **Tür:** Karar + Düzeltme
+- **Konu:** TSR, MOB, UX
+- **Bağlam:** Kullanıcı üç konuda karar verdi: (1) cinsiyet seçimi kaldırılsın; kahraman ve hikâye konuları çocuğun kendi seçimine bırakılsın, çünkü her iki cinsiyetin de sevdiği kahraman ve konular var. (2) Yol arkadaşı seçilmesine rağmen hikâyeye işlenmiyordu; kontrol edilsin. (3) Soru geçişleri zamanlansın ve PDF'te düzeltmeler yapılsın.
+- **Kararlar (ajan, kullanıcı yetkisiyle):**
+  - Cinsiyet: kahraman ekranından ve katalog filtresinden kaldırıldı. Hikâye, kahraman türü ve sınıfa göre listelenir; cinsiyet filtresi yok. Veride `hedef_cinsiyetler` alanı duruyor ama okunmuyor; şema temizliği ayrı iş. K-0023 ve K-0040 cinsiyet filtresi kararları bu kayıtla geçersiz.
+  - Soru geçişi: doğru cevapta 3 sn, yanlışta 6 sn sonra sonraki soruya geçilir (yanlışta doğru şıkkı okuma süresi). "Sonraki" süre beklemeden geçirir ve bekleyen zamanlayıcıyı iptal eder. Son soruda otomatik geçiş yok; sonuç düğmesi ekranda kalır (ajan kararı: geçilecek soru olmadığı için).
+  - PDF: kapaktan "Okuyan" satırı kaldırıldı; "Senin Hikâyen" ve hikâye başlığı kalın; alt bilgi kalın; hikâye sayfa başlıkları olmadan, bölümler paragraf olarak akar; başlık "Sorular" (kalın); "Cevap Anahtarı" (kalın); her sayfada soluk Hupo filigranı (`rehber_sol`, opaklık %13).
+  - Emoji ve simgeler PDF'e resim olarak gömülür (cihazın emoji yazı tipiyle PNG). Kelimeler parça parça değil, boşluksuz gruplarla yerleşir ("Hupo," gibi).
+  - Yol arkadaşı: kök neden, 5 hikâyenin 4'ünde yalnızca tek yerde (feneri'de yalnız bir değer varyantında) geçmesiydi; bahcedeki-tohum'da hiç yoktu. Her hikâyeye en az 2 varsayılan metin yeri eklendi (`{yoldas:...}`). Derleyici kuralı: varsayılan metinde en az 2 `yoldas` parçası, aksi hata.
+- **Yapılanlar:** kahraman_secim.dart (cinsiyet bölümü ve alanı), katalog.dart (`uygunMu` sınıf+tür; `cinsiyetKodu` kaldırıldı), hikaye_secim.dart, main.dart, tema.dart (metin sabitleri), sorular.dart (zamanlayıcı, iki sabit: `kDogruGecisSaniye`, `kYanlisGecisSaniye`), pdf_hikaye.dart (yeniden yazıldı), pubspec.yaml (PDF yazı tipleri), assets/fonts/NunitoPdf-Regular.ttf ve NunitoPdf-Bold.ttf (Nunito değişken yazı tipinden fonttools ile statik örnek, OFL), 5 hikâyeye yol arkadaşı yerleri, derle.ts (yol arkadaşı kuralı), ornek_veri.dart yenilendi (derlenmiş paketlerle eşleşiyor).
+- **Kanıt:**
+  - Prototip: `flutter analyze` → No issues found. `flutter test` → All tests passed (26). Yeni testler: `sorular_gecis_test.dart` (3 sn doğru, 6 sn yanlış, "Sonraki" ile çift atlama yok), `yoldas_test.dart` (beş hikâyede ad 2+ yerde; seçilmezse yedek ifade), `geri_donus_pdf_test.dart` (PDF `%PDF` ile başlıyor). `katalog_test.dart` cinsiyet testleri yerine sınıf+tür testi.
+  - Atölye: `npm test` → 23/23 (yeni: `yol_arkadasi.test.ts`, 2 test). Beş örnek hikâye derlendi, hata yok.
+  - `flutter build web` başarılı; önizleme (`localhost:8765`) ekran görüntüsünde cinsiyet bölümü yok.
+  - PDF görsel incelemesi: test ortamında üretilen örnek (kayip-defter) PyMuPDF ile sayfa sayfa incelendi: kapak, akan paragraflar, filigran, "Hupo, Ece'ye" yerleşimi doğru.
+- **Açık:**
+  - Emoji PDF'te test ortamında kutu olarak çıkıyor (test yazı tipinde emoji yok). Gerçek cihaz ve tarayıcıda renkli çıkması beklenir; doğrulanmadı.
+  - Kitap okuyan Hupo pozu yok. Filigran için mevcut `rehber_sol` kullanıldı. Kitap okuyan poz gerekirse tasarım ajanıyla üretilmeli (onaylı varlık kuralı).
+  - Yol arkadaşı yedek ifadesi ("bir arkadaşı") çocuk ad girmediğinde kullanılıyor; bu metinler tasarım ve editör gözünden incelenmeli.
+  - Soru geçiş süreleri erişilebilirlik açısından (ekran okuyucu, yavaş okuma) ayrıca ele alınmalı; okuma hızı için süre ayarı gerekebilir.
+  - Tarayıcıda akış ve PDF indirme görsel kontrolü yapılmadı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ: birim testleri, derleme, kahraman ekranı görsel kontrolü ve PDF sayfa incelemesi yapıldı; tarayıcıda uçtan uca akış ve emoji görünümü doğrulanmadı.
+- **Sahip:** Ajan, Kullanıcı (görsel onay, yedek ifadeler, süre kararları)
+- **Önem:** Yüksek
+- **İlgili:** K-0023, K-0040, K-0046, K-0047, K-0024
+
+### K-0047 · 2026-10-18 00:54 · TSR · Senin Hikâyen: kart tanıtımı, sınıfa göre şık, simge kuralı, PDF ve geri dönüş
+- **Tür:** Karar + Gelişme
+- **Konu:** TSR, MOB, HUK (geri dönüş bildirimi, PDF)
+- **Bağlam:** Kullanıcı istedi: hikâye kartlarında kısa tanıtım ve merak simgesi; hikâye içinde daha fazla simge ve kavram vurgusu; sınıfa göre şık sayısı; bitişte başka hikâye ya da "yakında tekrar gel" teşviki; 3 gün okumama sayacı ve otomatik bildirim; hikâyeyi markalı PDF olarak indirme (sorular sonda).
+- **Kararlar (ajan, kullanıcı yetkisiyle):**
+  - Şık sayısı: sınıf_alt ≤ 3 → 3 şık; sınıf_alt ≥ 4 → 4 şık. Derleyicide hata olarak uygulanır.
+  - Sahne işareti + otomatik kavram ikonu toplamı sayfada en çok 5 (K-0040'taki 3 sınırı kullanıcı isteğiyle yükseltildi). Otomatik ikon sayfada en çok 3; vurgu en çok 4.
+  - Hikâye kartında tanıtım metni ve merak rozeti.
+  - Bitiş: "başka bir hikâye" ve "yakında tekrar gel" teşviki. Kutlama yalnız tam doğruda kalır (K-0046).
+  - Geri dönüş: yalnız uygulama içi mesaj, 3 gün eşiği (`kGeriDonusGunEsigi`). Uzaktan push bildirimi uygulanmadı; sunucu işi, çocuk hesabı için veli onayı (GÖR-032) ve hukuk incelemesi (GÖR-045) gerektirir.
+  - PDF cihazda üretilir, sunucuya gitmez (K-0024). Kapakta marka, tanıtım ve okuyan adı; hikâye sayfaları (emoji ve çıkartmalar PDF yazı tipinde olmadığı için atlanır); sorular; veliler için cevap anahtarı; alt bilgide "Hupolingo · Senin Hikâyen" ve hupolingo.com.
+- **Yapılanlar:** `derle.ts` (şık kuralı, kavram ikonu ekleme, sınırlar, tanıtım ve hedef_cinsiyetler); şema (tanitim, ikon, 16 sahne işareti kodu); sözlük (18 kavram); 5 örnek hikâyeye tanıtım ve 4. şık; Dart motoru ikon ayrıştırma; prototip: hikaye_secim (tanıtım, rozet, geri dönüş bandı), katalog (tanitim), sonuç ekranı (tekrar gel, PDF), `pdf_hikaye.dart`, `geri_donus.dart`.
+- **Test düzeltmeleri:** Atölye sayfa beklentisi 7 → 8 (hikâyeler 8 sayfa). PDF testi için Flutter binding başlatıldı.
+- **Kanıt:**
+  - Prototip: `flutter analyze` → No issues found. `flutter test` → All tests passed (23; yeni: geri dönüş zamanlaması ×3, PDF baytları `%PDF` ile başlıyor).
+  - Atölye: `npm test` → 21/21 (yeni 4 kural testi: 4. sınıfta 3 şık hatası, 3. sınıfta 4 şık hatası ve 3 şıklı geçiş, sayfa başına en çok 3 ikon, sözlük yoksa ikon yok).
+  - Beş örnek hikâye derlendi: hata yok, yalnız sözlük yayın kapısı uyarıları.
+  - `flutter build web` başarılı. Önizleme `http://localhost:8765/` yeniden başlatıldı; ilk ekran (kahraman seçimi) ekran görüntüsüyle kontrol edildi.
+  - Gömülü veri (`ornek_veri.dart`) son paketlerle eşleşiyor: 38 ikon, 5 tanıtım.
+- **Açık:**
+  - Hikâye kartı, okuyucu simgeleri, sonuç ekranı ve PDF indirme tarayıcıda görsel olarak kontrol edilmedi.
+  - Hikâyeler 290–390 sözcük; klasik 500+ hedefi karşılanmadı.
+  - Sunucu tarafı cevap kontrolü (`okuma_cevap_kontrol`, F7) yok. Prototipteki yerel cevap kontrolü yayına çıkmadan önce kaldırılmalı.
+  - Push bildirimi (GÖR-032, GÖR-045) ve sunucuda okuma kaydı yok; geri dönüş şimdilik cihazda tutulan son okuma tarihine bakar.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ: birim testleri, derleme ve ilk ekran görsel kontrolü yapıldı; akışın tarayıcıdaki görsel kontrolü bekliyor.
+- **Sahip:** Ajan, Kullanıcı (görsel onay, şık ve simge kuralı onayı)
+- **Önem:** Yüksek
+- **İlgili:** K-0024, K-0040, K-0046, GÖR-032, GÖR-045
+
+### K-0046 · 2026-10-18 00:27 · TSR · Tasarım ajanı uygulaması (UX_INCELEME_3) ve test eşitlemesi
+- **Tür:** Gelişme
+- **Konu:** TSR, MOB
+- **Bağlam:** Kullanıcı tasarımın üst düzey ve özgün olmasını istedi. Tasarım ajanı UX_INCELEME_3 ile tüm öğrenci ekranlarını HupoTema üzerinden yeniden uyguladı.
+- **Yapılanlar:** Okuyucu (kitap sayfası, kelime/deyim/atasözü alt sayfaları, Aa ayar sayfası, Sade/Zengin), sorular (Seç → Cevapla → geri bildirim, kırmızı X yok), kahraman (10 tür kartı, önerilen isimler), hikâye (kapak kartı), anket (büyük yıldızlar), bitiş (kutlama yalnız tam doğruda). Ortak bileşenler `lib/widgets/`. P0: "Sen" varsayılan adı kaldırıldı (K-0042'nin gerçekleşmesi).
+- **Kararlar (ajan, kullanıcı yetkisiyle):** Sayfa başına çıkartma en çok 3 (K-0040 onaylı); "Hazır Hupo" kartı kalır; hikâyeler 8 sayfa (veri esas alındı).
+- **Test eşitlemesi:** Okuyucu testleri 8 sayfaya ve yeni arayüze (Aa sayfası, kelime listesi, Cevapla adımı) göre güncellendi. Parlak sözcüğünün anlamı sözlükteki güncel metne göre (`Güçlü ışık saçan.`) düzeltildi.
+- **Kanıt:** `flutter test` → `All tests passed!` (19 test). `flutter build web` başarılı. Önizleme sunucusu `http://localhost:8765/` güncel sürümle yeniden başlatıldı.
+- **Açık:** Tarayıcıda 390 ve 1024 px görsel kontrol; TalkBack/VoiceOver; ses yok (kapsam dışı); cihaz kaydı yok; Flutter Web'de emoji görünümü tarayıcıda doğrulanmalı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — birim testleri, derleme ve geçici uçtan uca akış ajan tarafından doğrulandı; görsel kontrol bekliyor.
+- **Sahip:** Ajan, Kullanıcı (görsel onay)
+- **Önem:** Yüksek
+- **İlgili:** K-0040, K-0042, K-0043, K-0044, K-0045
+
+### K-0045 · 2026-10-18 00:17 · VT · Beş tam uzunluklu test hikâyesi, hakem turu, derleyici sonuçları
+- **Tür:** Gelişme
+- **Konu:** MOB, TSR, BEL
+- **Bağlam:** Kullanıcı isteği: sistemi test etmek için en az beş gerçek uzunluklu hikâye; hikâyeler sadece sistem testi için değil, uygulamaya girecek kalitede istenir. Önceki örnekler 184–260 kelimeydi ve bu gerçek uzunluk sayılmazdı.
+- **Yapılanlar (`ornek/`):** Beş hikâye 8 sayfaya çıkarıldı (kapanış sayfaları eklendi), soru dayanakları değişmedi, değer sahneleri ve çıkartmalar korundu:
+  - Kayıp Defter (gizem, kütüphane): ~393 kelime.
+  - Feneri Kim Yakıyor? (macera, masalsı): ~324 kelime.
+  - Mahallenin En Hızlı Bisikleti (macera, spor): ~309 kelime.
+  - Bahçedeki Tohum (doğa, bahçe): ~298 kelime.
+  - Gökyüzündeki Balon (bilim, gökyüzü): ~291 kelime.
+  - Sözlük (`sozluk.ornek.json`): 6 kelime yuvası, 3 atasözü, 2 deyim; yuvaların çoğunda 3 aday.
+- **Derleyici:** Beş hikâye hatasız derlendi; uyarılar yalnızca sözlüğün taslak olmasından ve deyim yuvalarının tek adaylı olmasından. Derleyici testleri 17/17 (test beklentileri yeni hikâyelere göre güncellendi).
+- **Hakem (Gemini, gemini-3.8-flash):** Beş hikâyenin tamamı öneri "geçer" (ortalama 4.8–5). Hakem turunda bulunan gerçek sorunlar (cümle hataları, olay sırası, bir çocuk güvenliği izlenimi, tek yönlü soru cevapları) düzeltildi.
+- **Dürüst sınır:** Kelime sayıları 290–390 aralığında. Klasik 4–5. sınıf hikâyesi için 500+ kelime hedeflenirse ikinci bir içerik turu gerekir; bu, editör ve kullanıcı okumasıyla birlikte yapılmalı.
+- **Açık:** Prototip testleri (okuyucu, anket) tasarım ajanının son değişiklikleri nedeniyle güncellenecek; katalog ve motor testleri geçiyor.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — derleme ve hakem doğrulandı; tarayıcıda ve uçtan uca oynanış henüz kontrol edilmedi.
+- **Sahip:** Ajan, Kullanıcı (son okuma)
+- **Önem:** Yüksek
+- **İlgili:** K-0031, K-0034, K-0041, K-0043, K-0044
+
+### K-0044 · 2026-10-17 23:38 · TSR · Kullanıcı geri bildirimi: kahraman yelpazesi, çıkartmalar, Hupo pozları
+- **Tür:** Gelişme
+- **Konu:** TSR, MOB, VT
+- **Bağlam:** Kullanıcı üç geri bildirim verdi: (1) hikâye çok kısa (sistemi test etmek için böyle, konu uzatılmadı); (2) hikâyede GIF ve çıkartma yok, eğlenceli okuma için istenir; (3) tasarımda önemli bir değişiklik görülmüyor. Ek istek: kahraman seçenekleri daha geniş olsun, çocuk kendi adını da yazabilsin.
+- **Yapılanlar:**
+  - Kahraman yelpazesi: "Arkadaşım" türü eklendi (izinli hikâyelerde derleyici kodu `arkadas`). Hayvan, araç ve hayalî türlerinde hazır isim önerileri (ör. Kedi, Roket, Gökkuşağı Perisi); her türde kendi adını yazabilir. Hupo maskotu kahraman ekranında.
+  - Çıkartmalar: 16 sahne işareti kodu (ör. 🦉 `hupo`, 🚀 `roket`, 🐱 `kedi`, 🌊 `deniz`); derleyici, şema ve motor aynı listeyi kullanıyor. Örnek hikâyelere 2 çıkartma eklendi.
+  - Hupo pozları (hosgeldin, merak_ediyor, harika, bir_daha_dene) kahraman, hikâye seçme ve bitiş ekranlarında.
+  - Testler: motor 32/32, prototip 19/19; derleyici 17/17; web derlemesi başarılı.
+- **Açık / sonraki:**
+  - GIF: henüz yok. Kaynak (hazır GIF ya da üretim) gerekiyor; sonra sayfalara eklenecek.
+  - Hikâye uzunluğu: örnek hikâyeler sistem testi için kısa bırakıldı. Gerçek uzunluk içerik işidir; pilot hikâyeler ayrıca yazılacak.
+  - Tasarım: poz ve çıkartma etkisi var; kart ve buton dili (HupoTema köşe ve gölge değerleri) ekranlara henüz bağlı değil. Tasarım ajanıyla ikinci tur gerekiyor.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — birim testleri ve derleme geçti; tarayıcıda yeni görünüm henüz kontrol edilmedi.
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **İlgili:** K-0041, K-0042, K-0043
+
+### K-0043 · 2026-10-17 23:21 · TSR · Kullanıcı yetkisiyle kararlar: sonuç kutlaması, anket, cinsiyet sorusu, vurgu sınırı
+- **Tür:** Karar
+- **Konu:** TSR, MOB, HUK
+- **Bağlam:** Kullanıcı K-0042'deki üç açık kararı ajana bıraktı: "Sen karar ver ve ilerle; çocuğu teşvik etmek esas, gereksiz tebrik anlamsız."
+- **Kararlar (ajan, kullanıcı yetkisiyle):**
+  - `KARAR` Kutlama: Animasyon yalnız tüm sorular doğruysa çıkar. Diğer durumda sakin ikon ve teşvik cümlesi ("Bir sonraki hikâyede daha da iyi olacaksın."). Hikâyeyi bitirmek başlı başına başarı olduğu için bu cümle gösterilir; ayrıca kutlama dili yok.
+  - `KARAR` Cinsiyet sorusu görünür kalır (brif filtreyi istiyor); isteğe bağlı, yalnız cihazda kullanılır, kayıt edilmez. Profilde saklama, GÖR-045 hukuk görüşünden sonra.
+  - `KARAR` Vurgu sınırı: Zengin modda sayfada en çok 3, Sade modda 1 önemli yer (K-0036 ve tasarım dokümanıyla uyumlu).
+  - `KARAR` Hikâyeyi sevme anketi eklendi (brif maddesi): 1–5 yıldız, en çok 3 iyileştirme seçimi, "başka kahraman ister misin", "bu türden başka hikâye ister misin", "Şimdi değil" ile atlanabilir. Ödül ve serbest metin yok.
+- **Uygulama:** `flutter_prototip/lib/ekranlar/anket.dart`; `main.dart` akışı: kahraman → hikâye → okuma → sorular → anket → sonuç. Bitiş ekranı kutlamayı yalnız tam doğruda gösterir.
+- **Düzeltme:** Tasarım ajanının raporundaki "K-0041" numarası kullanılmıştı; bu kayıt tasarım bulgularını K-0042'ye bağlar.
+- **Kanıt:** `flutter test` → `All tests passed!` (19 test: anket 3 yeni). `flutter build web` başarılı. Önizleme sunucusu `http://localhost:8765/` yeniden başlatıldı (HTTP 200).
+- **Açık:** Anket yanıtları şimdilik yalnız bellekte; kalıcı kayıt F7 (sunucu) işi. Tarayıcı görsel kontrolü (anket ve bitiş) yapılmadı.
+- **Durum:** TAMAMLANDI bu kapsamda (karar, kod, test); görsel doğrulama bekliyor → DEVAM olarak işaretlendi.
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan (uygulama), Kullanıcı (yetki)
+- **Önem:** Yüksek
+- **İlgili:** K-0040, K-0041, K-0042, GÖR-045
+
+### K-0042 · 2026-10-17 23:05 · TSR · Tasarım ajanı incelemesi, HupoTema, "Ben" adı düzeltmesi, font bağlantısı
+- **Tür:** Gelişme
+- **Konu:** TSR, MOB
+- **Bağlam:** Kullanıcı isteği: tasarım sevimli, kullanışlı ve esnek olsun. Tasarım ajanı UX/UI incelemesi yaptı (`docs/tasarim/UX_INCELEME_2.md`). Ajanın taslağındaki kayıt numarası (K-0041) bu kayıtta zaten kullanılmıştı; bu kayıt K-0042 olarak yazıldı.
+- **Yapılanlar:**
+  - `flutter_prototip/lib/tema.dart`: tüm renk, yazı, boşluk, köşe, dokunma alanı, maskot boyutu ve hareket değerleri `HupoTema` içinde; `HupoRenk` ve `Metin` adları korundu. `temaVerisi()` ile tema üretimi.
+  - `main.dart`: tema `HupoTema.temaVerisi` ile bağlandı; yazı ailesi Nunito.
+  - Fontlar (`Nunito`, `Lexend`) `assets/fonts` altına kopyalandı ve pubspec'e tanımlandı.
+  - Hata düzeltmesi (ajan bulgusu): "Ben" seçilip ad boş bırakılınca kahraman adı "Sen" oluyordu. Prototipte profil adı olmadığı için "Ben" de artık ad ister.
+- **Açık (kullanıcı kararı bekleniyor):**
+  1. Düşük sonuçta Lottie kutlaması kapatılsın mı?
+  2. Kahraman ekranındaki "kız / erkek / fark etmez" sorusu hukuk görüşü (GÖR-045) gelene kadar gizlensin mi?
+  3. Vurgu sınırı (Zengin: 3, Sade: 1) ürün kararı olarak onaylansın mı?
+- **Ajan bulguları, henüz uygulanmadı:** Okuyucu gezinme düğmeleri sayfa sonunda; soruda cevapla adımı yok (dokunuşta cevaplanıyor); anket yok; Hupo maskotu ekranlarda yok (poz tablosu UX_INCELEME_2.md bölüm 3'te). Bu işler ekran dosyalarına dokunur; sırasıyla yapılacak.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — `flutter test` 16/16 geçti, `flutter build web` başarılı; yeni tema ve fontlar tarayıcıda görsel olarak kontrol edilmedi. Ajanın `flutter analyze` sonucu: hata yok.
+- **Sahip:** Ajan, Kullanıcı (3 açık karar)
+- **Önem:** Orta
+- **İlgili:** K-0036, K-0037, K-0040, K-0041, GÖR-045
+
+### K-0041 · 2026-10-17 22:58 · MOB · Hikâye seçme ekranı, cinsiyet etiketi, emoji sınırı 3 (K-0040 uygulaması)
+- **Tür:** Gelişme
+- **Konu:** MOB, TSR, VT
+- **Bağlam:** K-0040 kararları: cinsiyet filtresi brifte, sembol/emoji serbest (sayfa başına en çok 3, kullanıcı onayladı), çizgi film tarzı karakter, pilot 24.
+- **Yapılanlar:**
+  - `atolye/src/derle.ts`: sayfa başına sahne işareti sınırı 1 → 3. Hikâyeye `hedef_cinsiyetler` (kiz / erkek / fark_etmez; varsayılan hepsi). `sema/hikaye-paketi.v1.schema.json` güncellendi. İki örnek hikâye yeniden derlendi.
+  - `flutter_prototip/lib/katalog.dart`: hikâye kataloğu; uygunluk = kahraman türü izinli + sınıf aralığı + cinsiyet (cinsiyet seçilmezse ya da "fark_etmez" ise filtre yok).
+  - `flutter_prototip/lib/ekranlar/hikaye_secim.dart`: tür çipleri, hikâye kartları, boş durum ("Bu kahramanla şimdilik uygun bir hikâye yok...").
+  - `flutter_prototip/lib/main.dart`: akış kahraman → hikâye seçimi → okuma → sorular → sonuç.
+- **Kanıt:** atolye testleri 17/17. Prototip `flutter test` → 16 test (katalog filtresi 7 + ekran ve okuyucu 9) geçti; `flutter build web` başarılı.
+- **Hatırlatma (kural çelişkisi):** Kit ve ürün kuralları cinsiyete göre içerik kısıtlamasını ve cinsiyetin zorunlu tutulmasını yasaklıyor (K-0040'ta not düşüldü). Bu prototipte filtre yalnız yerel katalog verisiyle çalışıyor; profilde cinsiyet saklanması F7 ve hukuk onayına bağlı.
+- **Açık:** Örnek hikâyelerin cinsiyet etiketleri varsayılan (hepsi); gerçek pilot içerikte etiketlemeye karar verilecek. Tasarım ajanının UX incelemesi arka planda çalışıyor (`docs/tasarim/UX_INCELEME_2.md`); tema dosyası onun düzenlemesinde.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — birim testleri ve derleme geçti; hikâye seçme ekranı tarayıcıda görsel olarak kontrol edilmedi.
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0040, K-0023, K-0024, K-0038
+
+### K-0040 · 2026-10-17 22:31 · YÖN · Brif kararları: cinsiyet filtresi, sonuç animasyonu, çizgi film tarzı karakter, pilot 24
+- **Tür:** Karar
+- **Konu:** YÖN, TSR, HUK, MOB
+- **Bağlam:** Kullanıcı brifini tazeletti (`C:\Dev\Senin Hikayen - HupoRead\BRIEF.md`). Önceki kararların bazıları brifle çelişiyordu; kullanıcı yeniden karar verdi.
+- **Kararlar (kullanıcı, 2026-10-17 22:31):**
+  - `ONAYLI` — Cinsiyet filtresi brifte kalsın (K-0023'teki "filtrelenmez" kararı bu kayıtla değişti). **Çelişki uyarısı:** `docs/` ve kit kuralları cinsiyete göre içerik kısıtlamayı ve cinsiyeti zorunlu tutmayı yasaklıyor (veri minimizasyonu, KVKK). Filtreleme kabulü için kullanıcının açık onayı kaydedildi; uygulama öncesi hukuk görüşü (GÖR-045) ve veli rızası gerekli. Profilde cinsiyet tutulacaksa F7 şemasında ve aydınlatma metninde yer almalı.
+  - `ONAYLI` — Sonuç ekranında GIF ya da kısa animasyon; cümlelerde de konuyla ilgili dikkat çekici sembol/emoji olabilir. Öneri (uygulanacak): sayfa başına en çok 3 sembol (K-0036'daki "en çok 1" sınırı bu kararla değişti). GIF yerine uygulamanın Lottie dosyaları kullanıldı (K-0040 uygulama).
+  - `ONAYLI` — Çizgi film tarzı özgün karakter yeterli; markalı/telifli karakter adları yok. Etiket: "Çizgi film tarzı karakter".
+  - `ONAYLI` — Pilot 24 hikâye, sonra ölçek.
+- **Uygulama (prototip):** Sonuç ekranında Lottie yıldız animasyonu (hareket azaltma açıksa statik ikon); kahraman etiketi güncellendi; `assets/lottie/confetti.json` ve `star.json` prototipte. Testler 9/9; web derlemesi başarılı.
+- **Açık:** Cinsiyet filtresi için hikâye kataloğunda cinsiyet etiketi ve hikâye seçme ekranı (sıradaki iş); emoji sınırının 3 olarak uygulanması; hukuk görüşü.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — karar kullanıcı yanıtıyla; animasyon ve etiket birim testleri ve derlemeyle doğrulandı, tarayıcıda görsel kontrol yapılmadı.
+- **Sahip:** Kullanıcı (kararlar), Ajan (uygulama)
+- **Önem:** Yüksek
+- **İlgili:** K-0023, K-0024, K-0036, K-0039, GÖR-045
+
+### K-0039 · 2026-10-17 22:13 · TSR · Yanlış cevapta doğru şık gösterilir; yerel önizleme sunucusu
+- **Tür:** Karar
+- **Konu:** TSR, MOB
+- **Bağlam:** K-0038'de açık kalan ürün sorusu. Kullanıcı yanıtı: yanlış cevapta doğru şık gösterilsin.
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17 22:13). Yanlış cevapta doğru şık yumuşak mint çerçeve ve onay ikonu ile gösterilir; kırmızı X ya da ceza yok. Doğru şık bilgisi yalnız cevap verildikten sonra döner (üretimde sunucu yanıtında).
+- **Yapılanlar:** `flutter_prototip`: `GeriBildirim.dogruSecenekId` (isteğe bağlı), `sorular.dart` (dogruGoster durumu), `main.dart` (yerel kontrol doğru şıkkı döner), yeni widget testi.
+- **Kanıt:** `flutter test` → `All tests passed!` (9 test). `flutter build web` başarılı. Yerel önizleme sunucusu `http://localhost:8765/` üzerinde çalışıyor (HTTP 200).
+- **Hatırlatma:** Prototipteki yerel doğru-cevap kontrolü yalnız örnek veri içindir; üretimde sunucu RPC'si kullanılacak (F7). Önizleme yalnızca bu bilgisayarda açılır.
+- **Durum:** TAMAMLANDI bu kapsamda (karar + kod + test); tarayıcıda görsel doğrulama yeniden yapılmadı.
+- **Doğrulama:** KISMİ — birim testleri geçti; yeni görünüm tarayıcıda henüz gözle kontrol edilmedi.
+- **Sahip:** Kullanıcı (karar), Ajan (uygulama)
+- **Önem:** Orta
+- **İlgili:** K-0036, K-0037, K-0038
+
+### K-0038 · 2026-10-17 21:54 · MOB · Prototip web derlemesi ve 390 px görsel kontrol
+- **Tür:** Gelişme
+- **Konu:** MOB, TSR
+- **Bağlam:** K-0037 prototipinin görsel doğrulaması (GÖR-044 kapsamı). Kayıtta "görsel kontrol yapılmadı" yazıyordu.
+- **Yapılanlar:** `flutter build web` başarılı (`flutter_prototip/build/web`). Yerel sunucuda (port 8765) tarayıcı kontrolü: kahraman seçimi ekranı ve okuyucu ekranı 390×844 görüntüde alındı; konsol hatası yok, başarısız istek yok.
+- **Gözlemler:**
+  - Kahraman ekranı: 9 tür, ad alanı, cinsiyet çipleri ve düğme taşmadan görünüyor.
+  - Okuyucu: "Pati" adı metne doğru yerleşti ("Pati sahilde bunu fark etti."); sayfa sayacı ve gezinme düğmeleri görünüyor.
+  - Sayfa 1'de vurgu yok (örnek hikâyede kalın/renkli kelime sonraki sayfalarda); kelime ve atasözü stilleri bu kontrolde görülmedi.
+  - Küçük sorun: seçili "Hazır Hupo" çipinin ikonu koyu gri ve düşük kontrastlı.
+  - Sayfa tuvalde çiziliyor; DOM metni boş, bu yüzden metin doğrulaması ekran görüntüsüyle yapıldı.
+- **Güncelleme 2026-10-17 22:01 (tarayıcı kontrolü devamı, 390 px):**
+  - Sayfa 2: yol arkadaşı yoksa "bir dostuna" yedeği doğru geldi; değer sahnesi varsayılanı göründü.
+  - Sayfa 3: "parlak" kelimesi teal, noktalı alt çizgili; "Sayfadaki kelimeler" listesi görünüyor.
+  - Sayfa 4: atasözü italik ve tırnak içinde; düzeltilmiş "sabırla atılan" cümlesi doğru.
+  - Sorular: 1/4 soru görünüyor; yanlış cevapta yumuşak kutu ve açıklama çıkıyor, X yok; "Sonraki soru" cevaptan sonra aktif.
+  - Gözlem: yanlış cevapta doğru şık vurgulanmıyor; çocuk doğru cevabı bu ekranda görmüyor (açıklama metni ipucu veriyor). Ürün kararı gerekir.
+  - Gözlem: "Sayfadaki kelimeler" kelime çipi ve kelime vurgusu tutarlı.
+- **Doğrulanmayanlar:** 1024 px görünüm, sorulardaki diğer soruların ve bitiş ekranının görünümü, gerçek cihaz (Android SDK yok).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — 390 px'de kahraman, okuyucu (4 sayfa) ve ilk soru doğrulandı; 1024 px ve bitiş ekranı açık.
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **İlgili:** K-0037, K-0036, GÖR-044
+
+### K-0037 · 2026-10-17 18:17 · MOB · Okuma Dünyası Flutter prototipi: kahraman seçimi, okuyucu, sorular (F8, prototip)
+- **Tür:** Gelişme
+- **Konu:** MOB, TSR
+- **Bağlam:** K-0035/K-0036 tasarım kararları ve K-0030–K-0032 motor işi üzerine, ekranların ilk çalışan hali. Tasarım sözleşmesi `docs/tasarim/OKUMA_DUNYASI_EKRANLARI.md`.
+- **Yapılanlar:** `C:\Dev\Senin Hikayen - HupoRead\flutter_prototip\` (Flutter web, `okuma_motoru` path bağımlılığı):
+  - `lib/tema.dart`: renk tokenları (vurguAmber `#8A5B00`, K-0036) ve Türkçe sabit metinler.
+  - `lib/ekranlar/kahraman_secim.dart`: 9 kahraman türü, ad kuralı (1–24, harf/boşluk/kesme/kısa çizgi), isteğe bağlı cinsiyet (yalnız cihazda), yol arkadaşı.
+  - `lib/ekranlar/okuyucu.dart`: sayfa okuma; önemli yer (kalın + amber alt çizgi), kelime (teal noktalı, dokununca anlam), atasözü (italik), deyim (sarı zemin), işaret; Sade/Büyük yazı; "Sayfadaki kelimeler" listesi (H4).
+  - `lib/ekranlar/sorular.dart`: tek soru, tek deneme, anında geri bildirim (H1); yanlışta kırmızı X ve ceza yok (yumuşak mercan zemin + ampul ikonu).
+  - `lib/main.dart`: akış (kahraman → okuma → sorular → bitiş). Örnek hikâye: `lib/ornek_veri.dart` (derleyici çıktısı gömülü).
+- **Kanıt:** `flutter test` → `All tests passed!` (8 widget testi: sayfa sayacı, ilerleme, kelime anlamı, Sade modu, 24 karakter kesme, ad kuralı, yanlış cevap yumuşaklığı, tek deneme).
+- **Bilinen sınırlar / sapmalar:**
+  - **Güvenlik (kritik, prototip özel):** Doğru anahtar bu prototipte istemcide okunuyor (`_yerelKontrol`, main.dart). Üretimde bu kontrol sunucuda yapılacak (`okuma_cevap_kontrol` RPC'si, F7). Prototip dışına çıkmadan önce kaldırılmalı.
+  - Anında geri bildirim RPC'si şimdi yazılmadı: hikâye tabloları (`okuma_*`) henüz yok; RPC onlara bağlı, F7'de (`20261050`).
+  - Sınıf 4 sabit; yalnız tek örnek hikâye; atasözü çubuğu (sol altın çizgi) yerine italik + tırnak uygulandı; deyim ve atasözü zemin/çubuk ayrıntıları tam değil.
+  - Nunito/Lexend yazı tipleri paketlenmedi (varsayılan font kullanılıyor).
+  - Görsel doğrulama yapılmadı: 390 px ve 1024 px ekran görüntüsü, tarayıcı kontrolü ve cihaz testi yok. `flutter build web` çalıştırılmadı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — widget testleri geçti; görsel kontrol, sunucu kontrolü ve yayın kalitesi doğrulanmadı.
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0030, K-0032, K-0035, K-0036, GÖR-044
+
+### K-0036 · 2026-10-17 18:07 · TSR · Okuma Dünyası tasarım kararları (H1–H4) kullanıcı tarafından verildi
+- **Tür:** Karar
+- **Konu:** TSR, VT, MOB
+- **Bağlam:** K-0035 şartnamesindeki açık kararlar kullanıcıya soruldu.
+- **Karar:**
+  - `ONAYLI` H1 (kullanıcı): Quiz geri bildirimi her soruda anında gösterilir. Sonuç: cevap sunucuda kontrol edilir; yeni bir RPC gerekir (örn. `okuma_cevap_kontrol`). Doğru cevap anahtarı yine istemciye gönderilmez; yalnız seçilen şık için doğru/yanlış ve açıklama döner. Bu, K-0022/PLAN'daki "açıklamalar bitişte" ve "dogru anahtarı taranır" ilkelerini değiştirir; PLAN ve kabul testleri buna göre güncellenecek. RPC, F7 migration bloğunda (`20261050`) yer alacak.
+  - `ONAYLI` H2 (kullanıcı): Kahraman adı en çok 24 karakter.
+  - `ONAYLI` H3 (kullanıcı): Vurgu rengi `#8A5B00` (markadaki uyarı tonu; AA kontrast 5.6:1).
+  - `ONAYLI` H4 (kullanıcı): Okuyucu altında "Sayfadaki kelimeler" yedek listesi eklenir.
+- **Not (düzeltme):** K-0034 kaydının saati (18:20) Get-Date ile alınmamıştı; gerçek saat 18:02 idi. Kayıt içeriği değişmedi.
+- **Durum:** DEVAM (F8 Flutter kodlaması için tasarım kararları tamam; RPC F7'de)
+- **Doğrulama:** DOĞRULANDI (karar kullanıcı yanıtıyla)
+- **Sahip:** Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** K-0035, K-0022, K-0034
+
+### K-0035 · 2026-10-17 18:02 · TSR · Okuma Dünyası öğrenci ekranları: tasarım şartnamesi (5 ekran, H kararları bekliyor)
+- **Tür:** Plan
+- **Konu:** TSR, MOB, VEL
+- **Bağlam:** Kullanıcı Senin Hikâyen (HupoRead) öğrenci ekranları için kahraman seç, hikâye seç, okuyucu, sorular/sonuç ve anket ekranlarının tasarımını istedi. Yalnız tasarım; Flutter kodu yazılmadı.
+- **Plan:**
+  1. Ekran şartnamesi (hedef, ana eylem, durumlar, kabul, 390/1024 yerleşim, Türkçe const metinler, tokenlar, Hupo pozları) — `C:\Dev\Senin Hikayen - HupoRead\docs\tasarim\OKUMA_DUNYASI_EKRANLARI.md`.
+  2. Vurgu stilleri (önemli yer, kelime, deyim, atasözü) ve kontrast ölçümü (~40 çift; WCAG formülü, ekran ölçümü değil).
+  3. Bileşen listesi (mevcut ChunkyButton, Hupo, GameCard, ResponsivePage yeniden kullanılır; yeni widget'lar `widgets/okuma/`).
+  4. F8 öncesi 5 karar (H1–H5) kullanıcıya sorulacak.
+- **Karar:** Kullanıcı kararları (`ONAYLI`, K-0022…K-0024): kahraman 9 tür, cihazda cinsiyet sorusu, 3 öneri, Sade/Zengin, anket ödülsüz. Ajan önerileri `ONAY BEKLİYOR`: vurguAmber #9A6A12 (öneri token); anında geri bildirim (H1, kit'in "açıklamalar bitişte" kuralıyla çelişiyor); kahraman adı 24 karakter (H2); görünüm sorusunun avatar etkisi (H3); ürün adı ve ikon seti (H4); kelime dokunma alanı için yedek liste (H5).
+- **Durum:** BEKLİYOR
+- **Doğrulama:** DOĞRULANMADI — ekran, Flutter derlemesi, cihaz ve ekran görüntüsü yok. Kontrast oranları hesaplandı (metin ≥4.5:1 çiftleri başarılı; `lineDark` kenar ve `sunDark` metin/çizgi kullanılmıyor).
+- **Sahip:** Ajan (tasarım) + Kullanıcı (H1–H5)
+- **Önem:** Yüksek
+- **Açıklama:** Tasarım dosyası hazır; F8 (Flutter) ve H1 kararı olmadan yanlış cevap akışı kodlanmamalı. Kit ile brief arasındaki geri bildirim çelişkisi açıkça kayda geçti.
+- **Kanıt:** `C:\Dev\Senin Hikayen - HupoRead\docs\tasarim\OKUMA_DUNYASI_EKRANLARI.md` (A–I bölümleri); kaynaklar: `mobile-app/lib/theme/app_theme.dart`, `widgets/hupo/hupo_pose.dart`, `utils/motion.dart`, `utils/breakpoints.dart`.
+- **İlgili:** K-0022, K-0024, GÖR-044, GÖR-049, TSR kayıtları
+
+### K-0034 · 2026-10-17 18:20 · YÖN · Katman B canlı çalıştı: Gemini hakem, .env önceliği, örnek hikâyelerde düzeltmeler
+- **Tür:** Gelişme
+- **Konu:** YÖN, TSR, BEL
+- **Bağlam:** K-0033'teki engel çözüldü. Kullanıcı bildirdi: oturumda eski bir `GEMINI_API_KEY` ortam değişkeni kalmış ve doğru anahtarı gölgelemişti; Node `.env`'yi mevcut değişkenin üzerine yazmaz. Yeni Gemini anahtarları `AQ.` ile başlıyor (ilk varsayımım yanlıştı).
+- **Yapılanlar:**
+  - `atolye/src/saglayici.ts`: `envYukle(dosya)` — `.env` değerleri ortam değişkenlerinin üstüne yazılır. `--env <dosya>` ile kullanılır; anahtar kopyalanmaz, proje `.env` dosyası doğrudan okunur.
+  - Hakem modeli `gemini-3.8-flash` (proje `llm.ts` ile aynı). `gemini-2.5-pro` bu anahtarla HTTP 404 verdi.
+  - Çıktı sınırı 32.000 token (Gemini düşünme token'ları da bu sınırdan sayılır).
+  - Gemini `responseSchema`: puanlar tam sayı, kategori/önem/cevap enum (A–D). Kör çözüm şıkları artık boş dönmüyor.
+- **Canlı sonuçlar (hakem):**
+  - Kayıp Defter: ortalama 4.8, öneri gecer, 1 sorun (orta, olay tutarlılığı).
+  - Feneri: ortalama 4.5, öneri gecer, 2 sorun.
+  - Kör çözüm uyumsuzluğu: yok. Çıktılarda anahtar sızıntısı yok (dosya taraması).
+- **Hakemin bulduğu gerçek sorunlar ve düzeltmeler:**
+  - İki hikâyede tüm doğru cevaplar "A" idi; cevaplar dağıtıldı.
+  - Kayıp Defter D6 dalı, sonraki sayfalarla çelişiyordu (defter hemen teslim ediliyor, araştırma devam ediyor); D6 metni haritayı önce arkadaşlara göstermeye çevrildi.
+  - Feneri 4. sayfada "sabırla yakılan adım" anlatım hatası; "sabırla atılan" yapıldı.
+  - "Damlaya damlaya göl olur" bu bağlamda birikim anlamında okundu; yerine "Sabırla koruk helva olur." (sözlük girdisi güncellendi).
+- **Kanıt:** atolye testleri `# pass 17 / # fail 0`; Dart `dart test` → `All tests passed!` (32; fikstür yenilendi).
+- **Durum:** DEVAM
+- **Doğrulama:** DOĞRULANDI (canlı entegrasyon: rapor üretildi, zincir çalıştı). Hakem görüşleri öneridir; son okuma kullanıcıda (K-0025).
+- **Sahip:** Ajan, Kullanıcı (son okuma)
+- **Önem:** Yüksek
+- **İlgili:** K-0024, K-0025, K-0031, K-0033, GÖR-050
+
+### K-0033 · 2026-10-17 17:50 · YÖN · Katman B hakem: Gemini birincil, Claude yedek; canlı çağrı anahtar nedeniyle engelli
+- **Tür:** Karar
+- **Konu:** YÖN, BEL
+- **Bağlam:** Kullanıcı Katman B'yi ücretli Gemini ile denemek, Claude'u hazır tutmak istedi (Gemini çalışmazsa Claude).
+- **Karar:**
+  - `ONAYLI` (kullanıcı): Katman B hakemi Gemini (birincil, ücretli API). Claude (yedek, anahtar tanımlıysa devreye girer). Yazar Claude olduğu için hakem farklı aileden; K-0024'teki "farklı aile" hedefine daha yakın.
+  - `ONAYLI` (ajan kararı, tasarım): Hakem yalnızca geri bildirim üretir; yayın kararı vermez. Karar önerisi koddan hesaplanır (kesin kritik → reddet; kesin orta veya ortalama < 3.5 → incele; aksi gecer). Kör çözümde hakem cevap anahtarını görmez; uyumsuzluklar raporlanır.
+  - Gemini modeli varsayılanı `gemini-2.5-pro` (`GEMINI_HAKEM_MODEL` ile değişir); Claude hakem modeli `claude-opus-5-5` (`ANTHROPIC_HAKEM_MODEL`).
+- **Yapılanlar:** `atolye/src/saglayici.ts` (sağlayıcı zinciri, anahtar maskeleme), `atolye/src/katman_b.ts` (hakem girdisi, yanıt doğrulama, karar önerisi, kör çözüm), `atolye/src/cli.ts` (`hakem` komutu). Gönderilen veri yer tutucu adlıdır; çocuk adı yoktur; kör çözümde cevap anahtarı çıkarılmıştır.
+- **Kanıt:**
+  - `node --test --experimental-strip-types testler/*.test.ts` → `# tests 16 / # pass 16 / # fail 0` (ağ çağrısı yok; sahte HTTP).
+  - Canlı deneme: `hakem` komutu Gemini'ye istek attı; Gemini **HTTP 401** döndü. Ortamdaki `GEMINI_API_KEY` `AQ.` ile başlıyor; Gemini API anahtarları genellikle `AIza` ile başlar. Anahtar değeri kayda yazılmadı.
+  - `ANTHROPIC_API_KEY` tanımlı değil; yedek de çalışmadı.
+- **Engel:** Geçerli bir Gemini API anahtarı (AI Studio'dan, `AIza…`) ya da Claude anahtarı gerekiyor. Anahtar yalnızca ortam değişkeni olarak tanımlanmalı; sohbete ya da dosyaya yazılmamalı.
+- **Durum:** BEKLİYOR (anahtar)
+- **Doğrulama:** KISMİ — yapı ve zincir birim testleriyle doğrulandı; canlı çağrı başarısız (401).
+- **Sahip:** Kullanıcı (anahtar), Ajan (kod)
+- **Önem:** Yüksek
+- **İlgili:** K-0024, K-0025, K-0031, GÖR-050
+
+### K-0032 · 2026-10-17 17:40 · MOB · Dart motoru derlenmiş paketi okuyor (F1 ↔ F2 bağlantısı)
+- **Tür:** Gelişme
+- **Konu:** MOB
+- **Bağlam:** Derleyicinin çıktısı (hikâye paketi JSON) ile Dart motorunun birbirini okuyabilmesi gerekiyordu.
+- **Yapılanlar:** `dart/okuma_motoru/lib/paket.dart`: `hikayeFromPaket` (paket JSON → `Hikaye`), `yuvalarFromSozluk` (sözlük JSON → yuva adayları), `parcaFromJson`. `test/paket_test.dart`: derlenmiş "Feneri Kim Yakıyor?" paketi fikstür olarak kullanılır; hayvan/hayalî kahraman, yol arkadaşı var/yok, değer sahnesi, sınıf ve görülen sözcük seçimi, stiller ve sürüm kontrolü test edilir.
+- **Kanıt:** `dart analyze lib test` → `No issues found!`; `dart test` → `All tests passed!` (32 test: 13 ad çekimi, 12 birleştirme, 7 paket).
+- **Bilinen sınır:** Fikstür kopyalanmış bir dosya; derleyici değişince yeniden kopyalanmalı (otomatik üretim sonraki adım).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — paket okuma ve render birim testleriyle doğrulandı; Flutter ekranı ve gerçek sözlük henüz yok.
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0029, K-0030, K-0031, GÖR-044
+
+### K-0031 · 2026-10-17 17:28 · MOB · Okuma derleyicisi ve Katman A kapıları (F2)
+- **Tür:** Gelişme
+- **Konu:** MOB, TSR, BEL
+- **Bağlam:** Editörün yazdığı `.hikaye.md` dosyasını hikâye paketi v1'e çeviren ve kalite kapılarını uygulayan derleyici (LLM kullanmaz).
+- **Yapılanlar:**
+  - `sema/hikaye-paketi.v1.schema.json`, `sema/sozluk.v1.schema.json` (JSON Schema 2020-12).
+  - `atolye/src/derle.ts`: DSL → paket; şema doğrulaması; anlamsal kontroller (en az 2 omurga, sayfa başına ≤3 vurgu ve ≤1 işaret, değer/hareket/deyim referansları, `_default` ve değer kodu kontrolü, tür izni, quiz dayanağının omurgada olması, sözlük yuvası ve sınıf kapsamı).
+  - `atolye/src/cli.ts`: `derle <hikaye.md> [--sozluk json] [--cikti klasör]`; hata varsa paket yazılmaz.
+  - Örnekler (TASLAK, yayın kapısından geçmez): `ornek/kayip-defter.hikaye.md` (gerçekçi, ben/baba/anne/kardeş/başka biri), `ornek/feneri-kim-yakiyor.hikaye.md` (masalsı, hayvan/hayalî/ben), `ornek/sozluk.ornek.json`.
+- **Kanıt:**
+  - `node --test --experimental-strip-types testler/*.test.ts` → `# tests 8 / # pass 8 / # fail 0`.
+  - İki örnek CLI ile derlendi; hata yok, uyarılar beklenen türde (sözlük taslak; sınıf başına 1–2 aday, yayın kapısı 3).
+- **Bulunan ve düzeltilen:** Hareket sahnesi anahtarı "geliş" (Türkçe harf) token sözdizimine uymuyordu; ASCII "gelis" yapıldı. Ayrıca `as ... in` ifadesi Node tip sıyırma ile güvenli değildi; `Object.hasOwn` ile değiştirildi.
+- **Açık (F2 devamı / F4-F5):** Dart motorunun paket JSON'unu okuması (`fromJson`); derleyicinin test kapsamı genişletilecek; yayın kapısı (≥3 onaylı aday) gerçek sözlükle; Katman B (LLM hakem) F4'te.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — derleyici ve şema birim testleriyle doğrulandı; Dart tarafında paket okuma henüz yok; hikâyeler taslak.
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0022, K-0024, K-0030, GÖR-044
+
+### K-0030 · 2026-10-17 17:05 · MOB · Okuma motoru: hikâye birleştirici (F1, ikinci parça)
+- **Tür:** Gelişme
+- **Konu:** MOB, TSR
+- **Bağlam:** Motorun asıl işi: sayfa parçalarını ad, değer, tür ve sınıf bağlamıyla düz metne çevirmek.
+- **Yapılanlar:** `dart/okuma_motoru/lib/hikaye_cozucu.dart`: parça türleri (metin, kahraman adı, yol arkadaşı + yedek, vurgu, sözlük yuvası kelime/atasözü, deyim cümlesi, değer ve tür sahneleri, sahne işareti); stiller (normal, önemli, kelime, deyim, atasözü, işaret); sahne seçimi (öncelik sırası, yoksa `_default`); sınıfa göre yuva adayı, görülmemiş olan tercih edilir; izinli kahraman türü kontrolü; derinlik sınırı (4).
+- **Kanıt:** `dart test` → `All tests passed!` (25 test: 13 ad çekimi + 12 birleştirme). Test hatası: fikstürde sınıf 6 için atasözü adayı yoktu; fikstür düzeltildi. Linter kuralı (her sınıf için aday kapsamı) F2'de derleyiciye bırakıldı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — birim testleri geçti; gerçek hikâye paketleri (JSON) ve Flutter ekranı henüz yok.
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0029, K-0022, GÖR-044
+
+### K-0029 · 2026-10-17 16:50 · MOB · Okuma motoru: Türkçe ad çekimi (F1, ilk parça)
+- **Tür:** Gelişme
+- **Konu:** MOB, TSR
+- **Bağlam:** Onaylı planın F1 adımı: kahraman adının cümle içinde doğru ekle çekilmesi. Saf Dart paketi (E-1 kararı: tek motor).
+- **Yapılanlar:** `C:\Dev\Senin Hikayen - HupoRead\dart\okuma_motoru\`: `lib/turkce_ad.dart` (6 hal: yalın, belirtme, yönelme, bulunma, ayrılma, ilgi; ünlü uyumu, sert ünsüz, kesme işareti, Türkçe I/İ dönüşümü); `test/turkce_ad_test.dart` (9 ad × 5 hal altın vektörü + doğrulama testleri).
+- **Kanıt:** `dart test` → `All tests passed!` (13 test). Çalışma yolu boşluk içeriyor; sorun çıkmadı.
+- **Hatalar (düzeltildi):** İlk sürümde ilgi hâlinde ek sonundaki "n" eksikti; test vektöründe "Kemal" için bulunma/ayrılma yanlış yazılmıştı (son ünlü a → "-da/-dan").
+- **Bilinen sınır:** "ince l" istisnaları (Nihal, Hilal vb.) ve yabancı adlar yok; altın vektörler Türkçe uzman tarafından genişletilecek (GÖR-044 kapsamı).
+- **Durum:** DEVAM (F1 ilk parça; hikâye çözücü sonraki adım)
+- **Doğrulama:** KISMİ — yalnız çekim fonksiyonu; hikâye birleştirme ve Flutter entegrasyonu yok.
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **İlgili:** K-0022, K-0024, GÖR-044
+
+### K-0028 · 2026-10-17 16:48 · YÖN · E-6 ikinci yönetici kararı ve GÖR-046 kapanışı
+- **Tür:** Karar
+- **Konu:** YÖN, VT, HUK
+- **Bağlam:** K-0025'te E-6'nın ikinci yönetici kısmı belirsiz kalmıştı. Kullanıcı yanıtladı.
+- **Karar:**
+  - `ONAYLI` (kullanıcı): İkinci yönetici Cengizhan Salih (kullanıcı). Son okuma ve onay bu kişide.
+  - `ONAYLI` (kullanıcı): İlk aşama AI ön denetim ajanıdır (K-0025, `C:\Dev\Senin Hikayen - HupoRead\AGENTS.md`). Ajan yayın yetkisi taşımaz.
+  - Sistemdeki dört göz için iki ayrı yönetici hesabı gerekir; bu eşleştirme GÖR-049'da F7 tasarımına bırakıldı.
+- **GÖR-046 kapanışı:** Rıza kapısı PGlite'ta 4 senaryo ile doğrulandı (K-0026), migration 20261045 uzakta uygulandı. Export kapsamı migration 20261046 uzakta uygulandı (K-0027). Export'un çalışma zamanı testi GÖR-048'e taşındı; bu nedenle GÖR-046 satırı "TAMAMLANDI" olarak panodan çıkarıldı.
+- **Durum:** TAMAMLANDI (E-6 ikinci yönetici kararı); GÖR-046 kapandı
+- **Doğrulama:** DOĞRULANDI (E-6 kararı kullanıcı yanıtıyla; GÖR-046 rıza kapısı PGlite ile)
+- **Sahip:** Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** K-0025, K-0026, K-0027, GÖR-046, GÖR-047, GÖR-048, GÖR-049
+
+### K-0027 · 2026-10-17 16:45 · VT · export_my_data Kelime Evreni tablolarını kapsıyor (GÖR-046 ikinci parça)
+- **Tür:** Gelişme
+- **Konu:** VT, HUK
+- **Bağlam:** K-0022'de tespit edildi: `export_my_data` (20260920000800) Kelime Evreni kullanıcı verisini dışa aktarmıyordu; veri hakları (KVKK erişim) boşluğu.
+- **Yapılan:** `supabase/migrations/20261046000000_export_my_data_kelime.sql`: fonksiyon aynı gövdeyle yeniden tanımlandı; `kelime` anahtarı eklendi (`denemeler`, `ustaliklar`, `kaydedilenler`). Yalnızca `auth.uid()` satırları okunur. Grant/revoke yeniden yazıldı (authenticated).
+- **Kanıt:**
+  - PGlite: migration zinciri içinde derlendi (`tamam`); rıza davranış testi `1/1` geçti.
+  - `npm run db:preview`: yalnız `20261046000000` bekliyordu; `npm run db:deploy` uygulandı; `npm run db:status` uzakta `20261046000000` gösteriyor.
+- **Doğrulanmayan:** `export_my_data` çalışma zamanı testi yok. PGlite'ta `student_stats`, `user_answers`, `xp_events` gibi tablolar yok; fonksiyon bu tablolara dokunduğu için tam çağrı test edilemedi. Kelime sütun adları migration kaynağından okundu.
+- **Durum:** DEVAM (çalışma zamanı testi açık)
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0022, K-0025, K-0026, GÖR-046
+
+### K-0026 · 2026-10-17 16:26 · YÖN · GÖR-046 davranış testi ve Atölye sağlayıcısı Claude'a alındı
+- **Tür:** Gelişme
+- **Konu:** VT, YÖN, BEL
+- **Bağlam:** K-0025'te davranış testi eksikti (`consents` stub'ı yoktu). Ayrıca K-0024 kararıyla Atölye'nin varsayılan sağlayıcısı Gemini'den Claude'a alınacaktı.
+- **Yapılanlar:**
+  - `supabase/tests/kelime_veli_riza_stub.sql`: consents tablosunun asgari hali (yalnız test).
+  - `supabase/tests/kelime_veli_riza_tests.sql`: 4 senaryo: rıza yok → null; verildi → özet; geri çekildi → kapalı; bağlı olmayan veli → 42501.
+  - `C:\Dev\Soru-Cevap Hazırlama Programı`: `src/lib/llm.ts` varsayılanı `anthropic`; `.env.example` Claude'a çevrildi; `testler/faz2.test.ts` Gemini sahte yanıtlarına göre ayarlandı; model adı testi kodla eşleştirildi (`gemini-3.8-flash`, K-0021 "model adı teyit edilmeli" notu hâlâ geçerli).
+- **Kanıt:**
+  - PGlite: `kelime_veli_riza_tests.sql` → `1/1 senaryo geçti`, çıkış 0 (migration 20261045 dahil).
+  - Atölye: `node --test --experimental-strip-types testler/*.test.ts` → `# tests 27 / # pass 27 / # fail 0`.
+- **Durum:** DEVAM (GÖR-046 export kapsamı ve Kelime paketinin tam PGlite koşusu açık)
+- **Doğrulama:** KISMİ — GÖR-046 davranışı PGlite'ta doğrulandı; uzak DB'de yalnız migration listesi doğrulandı. Hukuk (GÖR-045) kapsam dışı.
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **İlgili:** K-0021, K-0024, K-0025, GÖR-046
+
+### K-0025 · 2026-10-17 16:18 · YÖN · E-6 ve E-9 yanıtı, AI denetim kuralı, rıza kapısı düzeltmesi (GÖR-046)
+- **Tür:** Karar
+- **Konu:** YÖN, VT, HUK, VEL
+- **Bağlam:** Kullanıcı E-6 (son okuma ve ön denetim) ve E-9 (migration bloğu ve zamanı) için yanıt verdi; migration yazımı ve uygulaması için yetki verdi.
+- **Karar:**
+  - `ONAYLI` E-6 (kullanıcı): Son okuma kullanıcıdadır. Ön denetim AI ajanı tarafından yapılır (ön filtre, pedagoji ve rehberlik, MEB müfredatı, Türkçe). Ajan yayın yetkisi taşımaz, yalnız geri bildirim üretir. Kural: `C:\Dev\Senin Hikayen - HupoRead\AGENTS.md`. Hupolingo ana AGENTS §5 değişmedi; bu proje için istisna.
+  - `ONAY BEKLİYOR` E-6 (ikinci yönetici): Kimlik belirtilmedi.
+  - `ONAYLI` E-7: GÖR-046 düzeltmesi yazıldı ve uygulandı (migration `20261045000000`).
+  - `ONAYLI` E-9 (yetki; zamanlama ajan kararı): Okuma Dünyası migration bloğu `20261050…` rezerve. Tablolar ve RPC'ler F2'de içerik formatı donduktan sonra, PGlite testleriyle birlikte uygulanır. Erken uygulanmaz; içerik formatı sonra değişirse üstüne düzeltme migration'ları birikir.
+- **Uygulama (GÖR-046):** `kelime_veli_ozeti` artık `_veli_riza_durumu` 'verildi' değilse özet hesaplamaz; null alanlar döner ve dönüşe `riza` alanı eklenir. Eski gövde `kelime_veli_ozeti_ham` adıyla korunur; istemci çağrı adı aynı kalır.
+- **Kanıt:** `npm run db:preview` yalnız `20261045000000_kelime_veli_ozeti_riza_kapisi.sql` bekliyordu. `npm run db:deploy` uygulandı; `npm run db:status` uzakta `20261045000000` gösteriyor. Web: `KelimeGelisimKarti.tsx` null alanlarla çökmüyor (kod okundu).
+- **Gözlem:** `db:status` (2026-10-17 16:13) `20261044000000` dahil tüm yerel migration'ların uzakta uygulanmış olduğunu gösterdi. GÖR-041 "BEKLİYOR" durumu güncel değil; kullanıcı teyidi gerekir.
+- **Doğrulama:** KISMİ — migration uzakta uygulandı (db:status). Davranış testi YOK: PGlite Kelime paketi kurulumunda `consents` tablosu stub'da eksik; test çalıştırılamadı (hata kurulumda, migration SQL'inde değil).
+- **Açık:** `export_my_data` Kelime tablolarını kapsamıyor (ayrı migration); PGlite stub'larının tamamlanması; web kartında "veri paylaşımı kapalı" mesajı (ürün işi).
+- **Durum:** DEVAM
+- **Sahip:** Kullanıcı (ikinci yönetici), Ajan (uygulama)
+- **Önem:** Yüksek
+- **İlgili:** K-0022, K-0024, GÖR-041, GÖR-046, GÖR-047
+
+### K-0024 · 2026-10-17 16:08 · YÖN · Senin Hikayen: E-kararlarına kullanıcı yanıtları
+- **Tür:** Karar
+- **Konu:** YÖN, VT, HUK, VEL
+- **Bağlam:** K-0023'teki E-1…E-9 açık kararlarına kullanıcı yanıt verdi.
+- **Karar:**
+  - `ONAYLI` E-1: Tek Dart motoru. Hikâyeyi birleştiren kod bir kez yazılır; uygulama ve atölye aynısını kullanır.
+  - `ONAYLI` E-2: "Annem" türü ve hazır Hupo kahramanı eklenir.
+  - `ONAYLI` E-4: Pilot ücretsiz. XP önerisi: tamamlama +10, quiz %67 ve üzeri ise +10, günde en çok 2 hikâyenin XP'si.
+  - `ONAYLI` E-5 (kullanıcı: "Gemini doğru düzgün çalışmıyor"; yazar ile hakem farklı model ailesinden olsun): Gemini varsayılan olmaktan çıkar. Yazar Claude Sonnet, hakem Claude Opus (aynı aile, farklı model). Gerçek farklı aile için ikinci sağlayıcı ayrı karar olur. K-0021'deki Gemini kararı bu kayıtla değişti; atölyedeki varsayılan sağlayıcı Claude'a çevrilecek.
+  - `ONAY BEKLİYOR` E-6: Kullanıcı "ikinci yönetici ve Türkçe editör: ONAYLANDI, AI okur" dedi. Türkçe editör rolünü yapay zekâ kontrolü karşılayacak. AGENTS kuralı gereği çocuk içeriğinin yayın öncesi insan onayı gerekir; bu kaldırılmadı. İkinci yönetici kimliği belirtilmedi. Teyit bekleniyor.
+  - `ONAYLI` E-7 (kısmi): Düzeltme migration'ının YAZILMASINA onay (GÖR-046). Uzak veritabanına uygulanması (`db:deploy`) ayrı onay ister. Hukuk görüşü (GÖR-045) bu onayla kapanmaz.
+  - `ONAYLI` E-8: Liste ajan tarafından seçilir, çocuk bu adları giremez. Kategoriler: (a) Allah, peygamber ve din büyükleri adları hayvan, araç ve hayalî karakterlerde yasak; (b) küfür, hakaret ve cinsel içerikli sözcükler tüm türlerde yasak; (c) bilinen çizgi film, oyun ve marka karakter adları yasak (telif); (d) kamuya açık gerçek kişilerin adları yasak. Listeye yeni ad ekleme yetkisi kimseye verilmez; değişiklik kod incelemesiyle yapılır. Tam liste kodda yazılacak.
+  - `ONAY BEKLİYOR` E-9: Migration bloğu (`20261050…`) ve dağıtım zamanı. Yanıt yok.
+  - E-3 (bilgi): Pilotta yumuşak sıralama kapalı.
+- **Durum:** DEVAM
+- **Doğrulama:** DOĞRULANMADI — yalnız karar kaydı; migration ve kod henüz yazılmadı.
+- **Sahip:** Kullanıcı (kararlar), Ajan (uygulama)
+- **Önem:** Yüksek
+- **İlgili:** K-0021, K-0022, K-0023, GÖR-045, GÖR-046, GÖR-047
+
+### K-0023 · 2026-10-17 15:53 · YÖN · Senin Hikayen: kullanıcı kararları ve F0 durumu
+- **Tür:** Karar
+- **Konu:** YÖN, HUK, TSR
+- **Bağlam:** K-0022 planı için üç soru soruldu (cinsiyet, pilot sınıf); plan ExitPlanMode ile onaylandı. Kullanıcı token tasarrufu istedi; bu turda F0'ın zorunlu kısmı yapıldı.
+- **Plan:** F0 — iskelet (README, PLAN.md), kit zip'i `kaynak-kit/` altına açıldı, kit testi, git init (commit yok). Ertelendi: sema şemaları, örnek hikâyeler, Dart smoke testi, KIT_DEGERLENDIRME dokümanı, memory kaydı.
+- **Karar:**
+  - `ONAYLI` (kullanıcı): Cinsiyet hesapta ve sunucuda tutulmaz; kahraman seçilirken cihazda sorulur, yalnız avatar ve yumuşak sıralama için; içerik asla kısıtlanmaz.
+  - `ONAYLI` (kullanıcı): Önce bağımsız klasörde geliştirilir, sonra Hupolingo'ya entegre edilir.
+  - `ONAYLI` (kullanıcı): Pilot 4. ve 5. sınıf, sınıf başına ~12 hikâye (~24).
+  - `ONAYLI` (kullanıcı, ExitPlanMode): Mimari ve faz sırası.
+  - `ONAY BEKLİYOR`: E-1 tek Dart motoru (öneri) · E-2 "Annem" türü + hazır Hupo (öneri: evet) · E-3 pilotta yumuşak sıralama kapalı (bilgi) · E-4 ücret ve XP tavanı · E-5 LLM: Gemini ücretsiz katman (K-0021), yazar ≠ hakem ailesi · E-6 ikinci yönetici ve Türkçe editörü · E-7 hukuk görüşü · E-8 hassas ad listesi · E-9 migration bloğu ve dağıtım zamanı.
+- **Güncelleme 2026-10-17 16:08:** E-1, E-2, E-4, E-5, E-7 (kısmi) ve E-8 yanıtlandı → K-0024. E-6 ve E-9 açık.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — kit testleri 15/15 geçti; Dart smoke, şema doğrulaması ve uygulama kodu yapılmadı.
+- **Sahip:** Kullanıcı (E-kararları), Ajan (F0)
+- **Önem:** Yüksek
+- **Açıklama:** Kit testi referans amaçlı çalıştırıldı; `kaynak-kit/` içinden başka bir şey çalıştırılmadı. Gizli anahtar taramasında eşleşme yok. git yalnızca `init` edildi, commit atılmadı. `.gitignore`: .env, veri/, .dart_tool/, build/, node_modules/.
+- **Kanıt:** `node --experimental-strip-types --test --test-reporter=tap .../tests/engine.test.mjs` → `# tests 15`, `# pass 15`, `# fail 0` (Node v24.21.0, çalışma dizini: scratchpad).
+- **İlgili:** K-0022, GÖR-044, GÖR-047
+
+### K-0022 · 2026-10-17 15:53 · YÖN · Senin Hikayen (Okuma Dünyası): kit değerlendirmesi ve iş planı
+- **Tür:** Plan
+- **Konu:** MOB, VT, VEL, YÖN, TSR, HUK
+- **Bağlam:** Kullanıcı `C:\Dev\Senin Hikayen - HupoRead` klasöründeki başlangıç kitini (başka bir yapay zekânın repo görmeden yazdığı zip ve iki md dosyası) değerlendirip iş planı istedi. Hedef: çocuk kahramanı seçer (kendisi, anne/baba, kardeş, başka biri, hayvan, araç, hayalî); konu ve sınıfa göre sözlük yerleşir; veli değer önceliği koyar; sonda anlama soruları ve ayrı anket gelir.
+- **Plan:**
+  1. Kit ↔ repo karşılaştırması: Edge Function/service_role, adaptör tablo, `reading_*` adları ve Flutter demosu gerçek repoyla çelişiyor → `okuma_*` tabloları + SECURITY DEFINER RPC.
+  2. Adlar cihazda kalır (sunucu token'lı sayfa verir); tek Dart motoru; Türkçe ek motoru (altın vektörler); sözlük yuvaları; çevrimdışı Hikâye Atölyesi (LLM taslak → Katman A/B → insan → dört göz).
+  3. F0–F11; pilot 4–5. sınıf, ~24 hikâye.
+  4. Migration bloğu `20261050…` rezerve (son mevcut 20261044); kapalı bayrak; PGlite testleri; staging yok → db:preview ve ayrı onay.
+  Tam plan: `C:\Dev\Senin Hikayen - HupoRead\PLAN.md`.
+- **Karar:** Plan kullanıcı tarafından onaylandı (2026-10-17). Mimari ve faz sırası ONAYLI; E-1…E-9 ONAY BEKLİYOR (K-0023).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — repo kanıtları okuma ve grep ile doğrulandı; uygulama ve test henüz yok.
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **Açıklama:** Kitin çekirdeği korunur (token'lı sayfa modeli, sahne varyantları + `_default`, quiz anahtarı yalnız sunucuda); altyapısı yeniden yazılır. Maarif D1–D20 MEB sayfasında doğrulandı. Sınıf bazlı resmî deyim/atasözü listesi doğrulanamadı; sözlük "editör önerisi" olarak tutulur.
+- **Kanıt:** Kit dosyalarının SHA256'sı zip içindekiyle eşleşti (CLAUDE_CODE_PROMPT.md, CUSTOM_HERO_DESIGN.md). `kelime_veli_ozeti` (`supabase/migrations/20261022000000_kelime_evreni.sql` 611–687) `_veli_riza_durumu`/`cocuk_riza_durumu` çağırmıyor. `export_my_data` yalnız `20260920000800_daily_goal_shield_privacy.sql` içinde; Kelime tabloları kapsam dışı.
+- **İlgili:** K-0023, GÖR-044, GÖR-045, GÖR-046, GÖR-047, GÖR-019, GÖR-043, K-0020, K-0021
+
+### K-0030 · 2026-10-18 00:03 · VT · Soru Atölyesi Faz 6: panel içe aktarma (migrasyon, RPC, panel) — uzak DB uygulanamadı
+- **Tür:** Sorun
+- **Konu:** VT, YÖN
+- **Bağlam:** Kullanıcı Faz 6'yı (panel entegrasyonu) onayladı: "Panel entegrasyonu (Faz 6) işini de yap". Uygulama, uzak Supabase veritabanına migration içerdiği için `npm run db:deploy` adımında otomatik işlem güvenlik sınıflandırıcısı tarafından reddedildi; uygulanmadı, aşılmaya çalışılmadı.
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-18): Faz 6 kapsamı (migrasyon + RPC + panel). Uygulama onayı: kullanıcı, `db:deploy` izni için kendi ayarını (ya da bu adımı kendisinin) çalıştırmalı.
+- **Yapılan (yerel):**
+  - `supabase/migrations/20261047000000_soru_paketi_ice_aktarma.sql`: questions'a Soru Atölyesi alanları (nullable, istemciye yetki YOK — ipucu/yanlış şık açıklaması öğrenciye cevaptan önce görünmez); `soru_importlari` ve `soru_kaynaklari` (yalnız admin okur); `_soru_paket_hatasi`; `admin_import_questions_v2` (sınıf zorunlu 1–8, okul-sınıf tutarlılığı, birebir için kaynak lisans dayanağı, kırmızı kalite reddi, insan onayı olmadan 'beklemede', tekrar kontrolü: dış kimlik ve ders+sınıf+konu+metin); `admin_geri_al_parti` (silmez, reddedildi yapar).
+  - Testler: `supabase/tests/soru_atolyesi/` (PGlite, kelime_evreni taklitleri + üretim sütun yetkisi + birebir `_soru_hatasi`): 10 senaryo geçti (A–J).
+  - Panel: `web-panel/src/components/yonetim/sorular/PaketImport.tsx` (JSON yükleme, önizleme, onay/hepsi seçenekleri, sonuç ve hata listesi, parti geri alma), `toplu-ekle/page.tsx`'e eklendi, tr/en çeviri anahtarları (`yonetim.sorular.paket`). `npm run lint`: 0 hata; `npm run build`: başarılı.
+  - Uzak DB önizleme (`db:preview`): yalnızca `20261047000000_soru_paketi_ice_aktarma.sql` uygulanacak, başka değişiklik yok.
+- **Durum:** DEVAM — uzak DB migrasyonu kullanıcı onayıyla uygulandı (`npm run db:deploy` → `Finished supabase db push`; `db:preview` sonrası `upToDate: true`). Panel canlıya alınmadı (kullanıcı kararı: sistem ham halinde).
+- **Güncelleme 2026-10-18 00:10:** Migrasyon uzak DB'de. Panel ve Flutter değişmedi. Canlı panelde doğrulama hâlâ yok.
+- **Doğrulama:** KISMİ. PGlite testleri 10/10 (yerel, gerçek DB değil). Build ve lint geçti. Canlı DB ve canlı panelde doğrulama YOK.
+- **Açıklama:** Eski CSV yolu (`admin_import_questions`) hâlâ sınıfsız satır kabul edebiliyor; yeni RPC'yi kullanan ekran bu sorunu kapatır. Eski yol kaldırılmadı. Flutter tarafındaki ipucu arayüzü ayrı iştir (bu kayıtta yok).
+- **Sonraki adım (kullanıcı):** Terminalde `cd "C:\Dev\hupo"` ve `npm run db:deploy` (ya da bu izni verme), sonra panel dağıtımı onayı.
+- **İlgili:** K-0020, K-0022, K-0029, GÖR-042
+
+### K-0029 · 2026-10-17 23:49 · YÖN · Soru Atölyesi: yapay zekâ düzeltme önerilerinin uygulanması (11 soru)
+- **Tür:** Karar
+- **Konu:** YÖN, BEL
+- **Bağlam:** Kullanıcı "sonraki adıma onay veriyorum, benim adıma yap" dedi. Sonraki adım olarak önerilen: kalan düzeltilmeli soruları düzeltmek. Faz 6 (panel/veritabanı) bu onayın kapsamında değil, yapılmadı.
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17, "sonraki adıma onay"). Kural: yapay zekâ düzeltme önerisi, düzeltilmiş soru deterministik kontrolden (katman A, hata seviyesi) geçerse uygulanır.
+- **Sonuç:** 11 düzeltme uygulandı (`kim: "Ajan · kural: Cengizhan Salih"`). Kalan 9 soru bekliyor: 6'sında düzeltme önerisi yok (`4okuma-ca-s0005`, `4okuma-s0016`, `4okuma-s0020`, `6bts1-s0016`, `4okuma-s0018-v01`, `4okuma-s0021-v01`), 3'ü önerilen düzeltmesi kontrolü geçmedi veya hakem uyarısı var (`6bts1-s0008`, `s0013`, `s0014`).
+- **Önemli sınır:** Düzeltilmiş ipuçlarının sızıntı açısından **yeniden hakem kontrolü yapılmadı**; hakem kaydı orijinal soruya ait. Deterministik kontrol yalnız "doğru şık metni ipucunda geçiyor mu" gibi açık sızıntıları yakalar. Bu 11 soru insan denetiminde ayrıca görülmeli.
+- **Doğrulama:** KISMİ. Kayıt sayıları `qa-toplu` ile doğrulandı (89 soru: 64 yeşil, 24 sarı, 1 kırmızı).
+- **Durum:** DEVAM
+- **İlgili:** K-0028, K-0026
+
+### K-0028 · 2026-10-17 23:46 · YÖN · Soru Atölyesi: kullanıcı kuralıyla toplu onay (69 soru)
+- **Tür:** Karar
+- **Konu:** YÖN, BEL
+- **Bağlam:** Kullanıcı 89 soruyu tek tek inceleyemeyeceğini, kabul kuralını şöyle belirtti: "soru veya cevap yanlış değilse kabuldür; ortalamadan uzun/kısa kelime sayısı tek başına red sebebi değildir."
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17): kural. Uygulama: öneri "onaylanabilir", kalite kırmızı değil, hakem bulgusu (hata ya da uyarı) yok, ipucu sızıntısı yok → onay.
+- **Sonuç:** 69 soru onaylandı. Kayıt `kim: "Ajan · kural: Cengizhan Salih"` ile yazıldı; hakem ve öneri uyumu notta. Kalan 20 soru bekliyor (çoğu düzeltilmeli, bunlar kural gereği onaylanmadı). Kararlar `veri/denetim/kararlar.json` içinde; denetim ekranından üzerine yazılarak geri alınabilir.
+- **Hafıza:** Kural `feedback_onay_kurali_uzunluk` olarak kaydedildi.
+- **Doğrulama:** KISMİ. Onaylar kullanıcı kuralıyla yapıldı; soru ve cevap doğruluğu insan tarafından tek tek kontrol edilmedi, yalnızca hakem ve yapay zekâ önerisi kullanıldı. Bu, kullanıcının bilinçli tercihi.
+- **Durum:** DEVAM
+- **İlgili:** K-0026, K-0027
+
+### K-0027 · 2026-10-17 23:15 · YÖN · Soru Atölyesi: okuma metinli yeniden çıkarma ve varyantların yenilenmesi
+- **Tür:** Gelişme
+- **Konu:** YÖN, VT
+- **Bağlam:** K-0026 önerisi kullanıcı tarafından kabul edildi ("önerin kabuldür").
+- **Uygulama:** (1) Çıkarma istemine "metni soruyla birlikte ver" kuralı eklendi (`METİN:` / `SORU:`); şema `soru_metni` üst sınırı 1200 → 4000. (2) Eski `4okuma`, `4okuma-ca`, bunlardan türeyen 30 varyant, ilgili hakem ve öneri kayıtları yedeğe alınıp (`veri/eski-2026-10-17/`) aktif veriden kaldırıldı. (3) Yeniden çıkarma: `4okuma` 34 aday (27'si metinli); `4okuma-ca` 9 aday (ilk denemede 0, ikincisinde 9 — kararsız, ayrıca ele alınmalı). (4) Zenginleştirme, hakem, öneri uygulandı. (5) Temiz ebeveynlerden 30 yeni varyant (0 reddedilen), onlar da hakem ve öneriden geçti.
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17).
+- **Sonuç:** Toplam 89 soru: 63 yeşil, 25 sarı, 1 kırmızı. Yeni `4okuma` önerileri: 40 onaylanabilir, 3 düzeltilmeli, 0 reddedilmeli (önceki 29 reddedilmeli büyük ölçüde giderildi). Çapraz mükerrer 0.
+- **Önemli:** İnsan kararları (`meb-odsgm-4okuma-ca-s0008` ve `s0013`, onay, Cengizhan Salih) yedekte. Yeni çıkarmada bu kimlikler başka sorulara ait; onaylar **uygulanmadı**. Bu sorular yeniden incelenip onaylanmalı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ. `npm test` 42/42. Çıkarma sonuçları ve öneri dağılımı yukarıdaki sayılarla doğrulandı. Denetim ekranında yeni soruların insan incelemesi yapılmadı.
+- **Açıklama:** `4okuma-ca` çıkarması kararsız (ilk çağrıda 0, ikincisinde 9); cevap anahtarı kitabında okuma metinleri çoğunlukla yok. Bu kaynağın yeniden tasarlanması ya da soru kitabıyla birleştirilmesi gerekebilir.
+- **İlgili:** K-0026, K-0025, GÖR-042
+
+### K-0026 · 2026-10-17 22:52 · YÖN · Soru Atölyesi: yapay zekâ ön incelemesi (öneri) ve okuma metni eksikliği
+- **Tür:** Sorun
+- **Konu:** YÖN, VT, TSR
+- **Bağlam:** Kullanıcı, denetim ekranındaki 114 soruyu Gemini ile gözden geçirmemi istedi. Bu bir ÖNERİDİR; denetim kararları (onay, düzeltme, red) yalnızca insan tarafından verilir ve bu kayıt onları değiştirmez.
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17): Gemini ile gözden geçirme. Öneriler `veri/denetim/ai-oneri.json` içinde, ekranda "karar değil" etiketiyle.
+- **Bulgular:** 114 soru: 67 onaylanabilir, 18 düzeltilmeli, 29 reddedilmeli (öneri). **Sistematik sorun:** Reddedilmeli önerilerin neredeyse tamamı `4okuma` (soru kitabı) ve türev varyantlarda; "Metne göre" diye başlayan soruların dayandığı **okuma metni soruya dahil edilmemiş**. Çıkarma adımı metni kaybetmiş. Bu nedenle `4okuma` sorularının çoğu bağımsız çözülemez. Ayrıca 8+ ipucunda doğru cevap söyleniyor (hakem de yakaladı; ipucu sızıntısı zenginleştirme adımında tekrar oluşuyor). Varyantlar, dayanağı eksik ebeveynlerden türediği için aynı sorunu taşıyor.
+- **Durum:** BEKLİYOR (kullanıcı kararı: okuma metinlerini ekleyerek `4okuma` yeniden çıkarılsın mı; eksik-metinli ebeveynlerden türeyen varyantlar atılsın mı)
+- **Doğrulama:** KISMİ. Testler 42/42. Sunucu API'sinde `ai_oneri` alanı ve tarayıcıda öneri kartı metni doğrulandı (konsol hatası yok).
+- **Önerilen düzeltme (onay bekliyor):** (1) Çıkarma isteminde her soru için ilgili okuma metnini de çıkarmasını istemek (metin soruyla birlikte `soru_metni`ne eklenir); (2) zenginleştirme isteminde ipucu kuralını daha sıkı yazmak ve hakem+ön incelemede ipucu sızıntısını kırmızı saymak; (3) etkilenen varyantları yeniden üretmek.
+- **Sahip:** Kullanıcı (karar), Ajan (uygulama)
+- **Önem:** Yüksek
+- **İlgili:** K-0024, K-0025, GÖR-042
+
+### K-0025 · 2026-10-17 22:25 · YÖN · Soru Atölyesi: LLM varyant üretimi (Faz 3) ve varyantların hakemden geçişi
+- **Tür:** Gelişme
+- **Konu:** YÖN, TSR
+- **Bağlam:** Planın Faz 3'ü. Onay ve hakem kontrolünden geçmiş sorulardan, kalıbı koruyan ve isim/sayı/yer değiştiren varyantlar üretmek; sayı hedefi için gerekli.
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17): "projeyi tamamlamaya devam et". Gemini varsayılan, token tasarrufu.
+- **Uygulama:** `src/vary/varyant.ts`. Bir çağrıda 10 ebeveyn; çıktı tam soru (ipucu, çözüm, yanlış şık açıklaması), ayrıca zenginleştirme gerekmez. Ebeveyn seçimi: kırmızı değil ve hakem bulgusu (ipucu sızıntısı dahil) yok. Kontroller: 4 şık (A–D), şema, metin benzerliği ≤%60 (kopya değil). Alt benzerlik sınırı konmadı: isim ve sayı değişince kelime örtüşmesi doğal olarak düşüyor. CLI: `varyant [--limit N] [--max-cagri N]`.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ. `npm test` 42/42. Gerçek veri: 30 ebeveyn → 30 varyant, 0 reddedilen (2 çağrı + 1 yardımcı). Örnek incelemesi: isim, yer ve nesneler değişmiş, kalıp korunmuş, doğru cevap tutarlı. Hakem (varyantlar): kör çözüm 30/30 anahtarla uyumlu. Toplam zenginleşmiş soru: 114 (77 yeşil, 34 sarı, 3 kırmızı). Çapraz mükerrer 0.
+- **Açıklama:** Varyantlar `veri/zengin/varyant-*.json` içinde, denetim ekranına da düşüyor ve ayrıca insan onayı gerekiyor. Varyant kalitesinin asıl sınanması, insan denetimiyle yapılacak; hakem yalnızca ön eleme.
+- **İlgili:** K-0024, K-0021, GÖR-042
+
+### K-0024 · 2026-10-17 22:15 · YÖN · Soru Atölyesi: LLM hakemi (kör çözüm + rubrik), token tasarruflu
+- **Tür:** Gelişme
+- **Konu:** YÖN, TSR
+- **Bağlam:** Kullanıcı, planın Katman B adımı olan LLM hakemini kodlamamı ve Gemini'yi tasarruflu kullanmamı istedi. (Not: `llm.ts` varsayılan sağlayıcısının Anthropic'e çevrildiği görüldü; kullanıcı "şimdilik Gemini" dedi. Bu kayıttaki K-0024 numarası ile `llm.ts` yorumundaki atıf çakışıyor, ilgili kayıt gözden geçirilmeli.)
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17): Gemini varsayılan; token tasarrufu isteniyor.
+- **Plan / uygulama:** `src/qa/hakem.ts`. (1) Kör çözüm: soru metni ve şıklar; doğru cevap, çözüm, ipucu gönderilmez; her parti tek çağrı (15 soru). (2) Rubrik (dil, seviye, tek doğru, çeldirici, ipucu güvenliği 0–5): yalnızca otomatik kontrolde kırmızı olmayan sorular; not en fazla 60 karakter. (3) Düşünme ayarı düşük (`thinkingLevel: LOW`), desteklenmezse ayarsız yeniden denenir. (4) Hakem bulguları denetim ekranına (`hakem-*`) eklenir. CLI: `hakem [--max-cagri N]`. Kararlar `veri/hakem/hakem.json`, yeniden çalıştırma yalnızca eksikleri işler.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ. `npm test` 38/38 (kör çözümde doğru cevap ve çözüm metninin gönderilmediği, ikinci çalıştırmada API çağrısı yapılmadığı dahil). Gerçek veri: 84 soru değerlendirildi (ilk denemede 30 kaydedilip durduruldu, kalanı tasarruflu ayarla tamamlandı). Kör çözüm: 84 soruda 2 uyuşmazlık (`4okuma-s0003`, `4okuma-s0021`). Rubrik: 83 soru, 14 düşük puan. Bulunanlar: (a) `4okuma-ca-s0010` ve `s0020`: soru metinde verilmeyen bir parçaya dayanıyor ("metin verilmemiş") → kaynaktaki soru metni eksik kopyalanmış olabilir, düzeltme gerekir; (b) 6–7 ipucunda doğru cevap doğrudan söyleniyor (`4okuma-ca-s0031`, `s0032`, `4okuma-s0010`, `s0016`, `s0033`, `6bts1-s0009`, `s0010`, `s0013`) → ipucu güvenliği kuralının ihlali. Bu ipuçları denetimde kırmızı/sarı olarak görünecek. Sayılar kesin değil; kör çözüm 2 uyuşmazlığı kendi başına kanıt sayılmaz, insan kontrolü gerekir.
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** K-0021, K-0022, K-0023, GÖR-042
+
+### K-0023 · 2026-10-17 21:56 · YÖN · Soru Atölyesi: büyük PDF yükleme (Files API) ve 6bts1 kaynağı
+- **Tür:** Gelişme
+- **Konu:** YÖN, VT, ALT
+- **Bağlam:** Doğrudan gövdeye koyma yöntemi ~20 MB üstünü kabul etmiyor. Gemini Files API ile yükleme eklendi (`src/lib/gemini-dosya.ts`); 15 MB üstü dosyalar otomatik bu yoldan gider.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ. Testler 35/35 (yükleme oturumu, bayt yükleme, ACTIVE beklemesi). Gerçek anahtarla 22,8 MB dosya 13 sn'de ACTIVE oldu (model çağrısı yapılmadı). `meb-odsgm-6bts1` (101 MB, daha önce yarım indirilmişti, curl ile tamamlandı, EOF ve boyut doğrulandı) ingest edildi: 16 aday, 0 şema reddi, 449 öğe çoktan seçmeli değil (atlandı). Zenginleştirme 16/16. Kalite: 9 yeşil / 6 sarı / 1 kırmızı (soru 8: iki çift aynı şık, panele gitmez). Üç kaynağın toplamı: 84 soru, çapraz mükerrer 0.
+- **Açıklama:** 6bts1 gibi açık uçlu ağırlıklı kitaplarda verim düşük; çoğu içerik atlanıyor. Kalan büyük kaynaklar: 6bts2 (147 MB), 4ing-2 (114 MB), 2calisma1/2 (~80 MB) ve LGS (bozuk, en sonda). Bunlar için de aynı akış çalışır, ancak her biri ücretli bir çağrıdır. Ayrıca `kaynak-kayitlari.json` içinde Türkçe başlıklar komut satırında bozuk kodlanmış görünüyor (ör. "SÄ±nÄ±f"); düzeltilmesi gerekiyor.
+- **Güncelleme 2026-10-17 22:05:** Yukarıdaki başlık bozukluğu yanlış teşhisti. Dosya UTF-8 ve doğru; sorun yalnızca PowerShell'in dosyayı varsayılan kodlamayla göstermesiydi. Kayıt değiştirilmedi.
+- **İlgili:** K-0021, K-0022, GÖR-042, GÖR-043
+
+### K-0022 · 2026-10-17 18:01 · YÖN · Soru Atölyesi: çapraz mükerrer kontrolü, denetim ekranı ve dışa aktarım
+- **Tür:** Gelişme
+- **Konu:** YÖN, VT, TSR
+- **Bağlam:** Kullanıcı, sistemin 1000'lerce soruyu yükleyebilmesi için çapraz kaynak mükerrer kontrolünü ve soru gözden geçirme ekranını istedi.
+- **Plan:** (1) `src/qa/mukerrer.ts`: tüm partiler arası benzerlik, aynı sınıf+ders içinde (≥0,95 hata, ≥0,85 uyarı). (2) `src/review/denetim.ts`: zenginleşmiş partileri birleştirme, karar deposu (`veri/denetim/kararlar.json`, atomik yazma), düzenleme ve dışa aktarım seçimi. (3) `src/review/sunucu.ts` + `public/index.html`: yalnızca 127.0.0.1, sayfalama, filtreler, kaynak PDF'i (`#page=N`), onay/düzelt/red, klavye kısayolları. (4) CLI: `qa-toplu`, `inceleme`, `disa-aktar`. (5) Dışa aktarım yalnız onaylı veya düzeltilmiş, kırmızı olmayan ve şemaya uyan soruları alır; arşiv `veri/cikti/` altına yazılır.
+- **Karar:** `ONAYLI` (kullanıcı, 2026-10-17): sistemin hazır hâle getirilmesi istendi. Panel entegrasyonu (migration/RPC) bu kayda dahil değil, ayrı onay gerekir.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ. `npm test` 34/34 geçti (mükerrer, karar, düzeltme, kırmızı engeli, sunucu uçları, yol kaçışı, BOM). Gerçek veriyle: 68 soru, çapraz mükerrer 0. Tarayıcıda (headless) denetim ekranı açıldı, liste ve detay doldu, konsol hatası yok; onay, red (neden zorunlu) ve sonraki soruya geçiş tıklamayla doğrulandı; test kararları geri alındı. Düzeltildi: alt eylem çubuğu soruyu kapatıyordu. **Doğrulanmadı:** PDF görüntüleyicisinin sayfa içeriği bu ortamda görülemedi (headless); gerçek Chrome'da bakılmalı. Düzenleme (düzelt) akışı tarayıcıda ayrıca denenmedi, yalnız API testi var.
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **Açıklama:**
+  - Yerel çalıştırma: `node --experimental-strip-types src/cli.ts inceleme` → `http://127.0.0.1:4173`.
+  - BOM hatası bulundu ve düzeltildi: Windows PowerShell ile yazılan `kararlar.json` okunamıyordu.
+  - Bilinen sınır: mükerrer kontrolü her istekte tüm soruları yeniden hesaplıyor; birkaç bin soruda yavaşlayabilir, önbellek gerekebilir.
+  - Kalan: insan incelemesi kapsamında panel `sinif` sorunu (K-0020, Faz 6) hâlâ açık; dışa aktarılan CSV'de sınıf bilgisi mevcut panelin kabul ettiği biçimde değil.
+- **Kanıt:** `npm test` → `ℹ tests 34 / ℹ pass 34 / ℹ fail 0`; `qa-toplu` → `68 · yeşil 55 · sarı 13 · kırmızı 0`, mükerrer 0.
+- **İlgili:** K-0020, K-0021, GÖR-042, GÖR-043
 
 ### K-0021 · 2026-10-17 14:53 · YÖN · Soru Atölyesi: LLM sağlayıcısı Gemini ücretsiz katmana alındı
 - **Tür:** Karar
@@ -76,6 +1416,8 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - **Sahip:** Ajan + Kullanıcı (anahtar)
 - **Önem:** Yüksek
 - **Açıklama:** Anahtarı kullanıcı AI Studio'dan alıp yerel `.env` dosyasına yazacak (`.env.example` şablonu var). Anahtar sohbete ve git'e girmemeli.
+- **Güncelleme 2026-10-17 17:54 (zenginleştirme ve ikinci kaynak):** `enrich` 4okuma-ca için çalıştı: 34/34 zenginleşti (ipucu, yanlış şık geri bildirimi, beceri, düzey, süre); kalite 23 yeşil / 11 sarı / 0 kırmızı, sarılar cümle uzunluğu uyarısı; ipucu sızıntısı tespit edilmedi. `meb-odsgm-4okuma` (soru kitabı, 22,8 MB, EOF doğrulandı) kaydedildi ve ingest edildi: 34 aday, 0 şema reddi; enrich: 34/34; kalite 32 yeşil / 2 sarı / 0 kırmızı. 22,8 MB dosya doğrudan Gemini'ye kabul edildi (sınırın üstünde olabilirdi, sorun çıkmadı). Açık: çapraz kaynak mükerrer kontrolü yok (Katman A yalnız aynı parti içinde bakıyor); insan incelemesi (Katman C) henüz yok; kayıt defterindeki diğer kaynaklar (7kkt, 6bts2, 3mat, 6bts1, 4ing-2, 3okuma-ca, 2calisma1) yarım kalan toplu indirmeden kalmış, EOF/sha doğrulaması yapılmadan kullanılmamalı.
+- **Güncelleme 2026-10-17 17:42 (canlı doğrulama):** Gemini ile uçtan uca çalıştı: `ingest meb-odsgm-4okuma-ca` → 34 aday soru, şema reddi 0, 74 öğe çoktan seçmeli olmadığı için atlandı, ~150 sn, 1 API çağrısı. Türkçe karakterler (`ı` dahil) doğru; `markitdown` aynı türde PDF'te `ı` düşürdü ve satır bölünmesi yaptı, bu yüzden PDF doğrudan Gemini'ye veriliyor. Çıkan sorular özgün (uyarlama), zorlama çalıştı. Kalite kapısı: 34 sarı (yanlış şık geri bildirimi henüz yok, `enrich` çalıştırılmadı), 0 kırmızı. **Bulunan hatalar ve düzeltmeler:** (1) Yeni Google anahtarları `AQ.` ile başlıyor, `AIza` varsayımı yanlıştı; (2) oturumda kalmış eski `GEMINI_API_KEY` ortam değişkeni `.env`'deki doğru anahtarı gölgeledi (Node `loadEnvFile` ezmez) → CLI artık `.env`'yi önceliklendiriyor; (3) Gemini şemasında serbest nesne (`siklar`) boş `{}` döndürdü → A–E açıkça tanımlandı; (4) çıktı sınırı 16000 token yetmedi (`MAX_TOKENS`) → 60000. **Güvenlik olayı:** bir kontrol komutu hatalı olarak API anahtarını sohbet çıktısına yazdırdı; anahtarın AI Studio'da silinip yenilenmesi önerildi (GÖR-001 ile aynı sınıf). `npm test` 27/27. Kalan: `enrich` canlı denemesi, 4okuma-ca bir cevap anahtarı kitabı (soru kitabıyla karşılaştırma), kayıt defterinde başlık kodlaması bozuk (Türkçe karakterler komut satırı argümanında bozuldu), yarım kalan toplu indirmenin temizliği, LGS en sona.
 - **İlgili:** K-0020, GÖR-042, GÖR-043
 
 ### K-0020 · 2026-10-17 14:12 · YÖN · Soru Atölyesi: PDF'ten etiketli soru üretim programı (brief ve plan)
