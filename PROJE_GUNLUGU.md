@@ -84,6 +84,14 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - **Doğrulanmadı:** web `next build`, cihaz/Flutter Web görünümü.
 - **Sıradaki:** Faz 1 (V3 arayüz portu), sözleşme genişletmesi (ayrı migration onayı), 120 hikâye pilot dönüşümü.
 
+### K-0094 · 2026-10-21 · MOB/TSR · HupoRead Faz 1(b): V3 bileşenleri, süre kuralı, geri sayım
+- **Tür:** Uygulama + Düzeltme
+- **Konu:** MOB, TSR
+- **Yapılan:** `lib/widgets/okuma/okuma_v3.dart` (başlık bandı, çipler, ilerleme, adım rozeti, sahne yedeği, atasözü kartı, Anlamı kutusu, kelime paneli, geri sayım); okuyucu ve soru ekranı bağlandı; süre kuralı motora taşındı (`sure.dart`); soru ekranında otomatik geçiş için görsel geri sayım (hareket azaltmada metin).
+- **Düzeltme:** derleyici süre tablosu ve yuvarlaması belgeyle uyuşmuyordu (3 dk vs 4 dk gösterebilirdi). Derleyici belgeye hizalandı (prototip klasöründe, ayrı git deposu, commit'lenmedi).
+- **Doğrulama:** okuma testleri 82/82, motor 53/53, V3 5/5; 390 ve 1024 önizleme incelendi; derleyici testleri 30/30.
+- **Açık:** Hupo maskotu okuyucuda kapalı (K8), kullanıcı kararı bekleniyor. Kelime Keşfi, Bilgi Kutusu, Düşünme soruları veri sözleşmesi olmadığı için ertelendi.
+
 ### K-0093 · 2026-10-21 · VT/TSR · Hikâye fişleri migration'ı uzakta uygulandı
 - **Tür:** Kayıt (kullanıcı onayı: tüm bekleyen migration'lar)
 - **Konu:** VT, TSR
