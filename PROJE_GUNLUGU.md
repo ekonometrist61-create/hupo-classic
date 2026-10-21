@@ -74,6 +74,29 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 
 ## B. Kayıtlar (en yeni üstte)
 
+### K-0093 · 2026-10-22 · DEN · Soru üretimi: kalan işler (devir kaydı)
+- **Tür:** Plan + Yapılacak
+- **Durum:** DEVAM. 42 hücreden 11 tamam, 31 kaldı.
+- **Tamamlanan (veri tabanına aktarıldı, onaylı):** 4. sınıf Türkçe 28, Matematik 28, Fen 25, Sosyal 28; 5. sınıf Matematik 36, Fen 35, Sosyal 38; 6. sınıf Türkçe 91, Matematik 30, Fen 36, Sosyal 30. Toplam yeni onaylı 405 (K-0071, K-0089).
+- **Kalan hücreler:**
+  - 1. sınıf: Türkçe, Matematik, Hayat Bilgisi
+  - 2. sınıf: Türkçe, Matematik, Hayat Bilgisi, İngilizce
+  - 3. sınıf: Türkçe, Matematik, Hayat Bilgisi, Fen, İngilizce
+  - 4. sınıf: İngilizce, Din Kültürü
+  - 5. sınıf: Türkçe, İngilizce, Din Kültürü
+  - 6. sınıf: İngilizce, Din Kültürü
+  - 7. sınıf: Türkçe, Matematik, Fen, Sosyal, İngilizce, Din Kültürü
+  - 8. sınıf (LGS, en son, ayrı strateji): Türkçe, Matematik, Fen, İngilizce, Din Kültürü, T.C. İnkılap
+- **Engeller:**
+  - İngilizce ve Din Kültürü programı PDF'i bulunamadı (2–8. sınıf). Kullanıcıdan bağlantı ya da dosya adı bekleniyor.
+  - 1–3. sınıf Türkçe ve Matematik kazanım PDF'leri indirildi, ayrıştırılmadı.
+  - Hayat Bilgisi 1–3 kazanım dosyası hazır (pilot/kazanim_1-3_hayat_bilgisi.json, 50 kod), soru yok.
+- **Hazır kaynaklar:** Ortaokul Türkçe 5–8 (tymm, 2026-09-02), Ortaokul Matematik 5–8 (mufredat), Fen 3–8 ve Sosyal DÖP (tymm). 5. ve 7. sınıf için ayrıştırma yapılabilir.
+- **Üretim hattı:** Yazar (Sonnet) → kapı (	ools/soru-uretim/kapi.cjs) → Haiku kör çözüm → Sonnet kalite denetimi → DÜZELT/RED çıkarılır → SQL içe aktarma (eklemede) → kullanıcı onayı ile yayın. Şablon: docs/soru-uretim/REHBER.md, plan: docs/soru-uretim/PLAN_V2.md.
+- **Açık kararlar:** 8. sınıf LGS stratejisi (kullanıcı ayrı çalışacak); yayın öncesi insan örneklemi (REHBER §15) henüz atanmadı; 4–6. sınıflardaki 405 yeni sorunun kalite "sarı" durumu ve kazanım metinlerinin DÖP ile teyidi.
+- **Doğrulama:** DOĞRULANDI (DB sayıları 2026-10-22 sorgusuyla).
+- **Sahip:** Kullanıcı (İngilizce/Din programları, yayın kararı, LGS), Ajan (kalan hücreler).
+
 ### K-0092 · 2026-10-21 · MOB/VT/TSR · HupoRead → Hupolingo entegrasyonu: karar, Faz 0 tamam
 - **Tür:** Karar + Kayıt
 - **Konu:** MOB, VT, TSR, WEB
@@ -83,6 +106,11 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - **Taban testleri:** `flutter test` okuma 77/77; `dart test` motor 40/40; PGlite 171/172 (tek kırmızı önceden var: atölyedeki 5 gerçek paket `ogrenme_hedefleri[6].etiket 2-120 karakter` kuralına takılıyor; 120 hikâye içe aktarımından önce çözülmeli); web eslint (okuma klasörleri) ve `tsc --noEmit` temiz; `flutter analyze` 4 info, hiçbiri okumada (push dosyaları).
 - **Doğrulanmadı:** web `next build`, cihaz/Flutter Web görünümü.
 - **Sıradaki:** Faz 1 (V3 arayüz portu), sözleşme genişletmesi (ayrı migration onayı), 120 hikâye pilot dönüşümü.
+
+### K-0096 · 2026-10-21 · VT/TSR · 2. sınıf pilot: uzak DB'ye içe aktarım
+- **Yapılan:** 20261058 (paket doğrulayıcı fis_kodu + fiş.hikaye_slug) ve 20261059 (sözlük 39, 15 fiş, 15 taslak paket) uzakta uygulandı; önce yerelde provası geçti. Hikâyelere kavram hedefi, atasözü (9), işaret ve fis_kodu eklendi; hedef kimlikleri hikâye bazında benzersizleştirildi (ortak kimlik etiketleri eziyordu).
+- **Doğrulama:** yerel migrasyon sınaması 15 hikâye, 15 fiş bağlı, 39/39 sözlük; okuma testleri 187/188 (#18 önceden bilinen).
+- **Açık:** raster resim kararı; A/K telif kaydı; yayın denetimi ve insan okuması; 105 fiş yazılmadı. Ayrıntı: `docs/okuma-entegrasyon/PILOT_2_SINIF_ICE_AKTARIM_2026-10-21.md`.
 
 ### K-0095 · 2026-10-21 · TSR/MOB · 2. sınıf pilot: 15 hikâye biçime dönüştürüldü, derlendi
 - **Yapılan:** 15 hikâye `icerik/pilot-2-sinif/` altında kahraman (`{kahraman}`) ve yol arkadaşı (`{yoldas}`) tokenlarıyla yeniden yazıldı; her biri 4 okuduğunu anlama sorusu, cevap anahtarı ve 2 kelime + 1 değer hedefi taşıyor. Sözlük: 30 yeni yuva (`ornek/sozluk.pilot-2.json`).
