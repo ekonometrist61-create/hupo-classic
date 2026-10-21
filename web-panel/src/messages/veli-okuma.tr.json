@@ -1,0 +1,115 @@
+{
+  "veliPaneli": {
+    "nav": {
+      "okumaDunyasi": "Okuma Dünyası"
+    },
+    "okuma": {
+      "giris": "Okuma Dünyası'nda çocuğunuz kendi adıyla yer aldığı kısa hikâyeler okur ve her hikâyenin sonunda anlama soruları yanıtlar. Bu sayfada okuma alışkanlığını ve hangi tür sorularda desteğe ihtiyaç duyduğunu görür, hikâye önerilerinde öne çıkmasını istediğiniz değerleri seçersiniz.",
+      "hikayeAdedi": "{sayi} hikâye",
+      "beceri": {
+        "hatirlama": "Açık bilgiyi bulma",
+        "cikarim": "Çıkarım",
+        "yorumlama": "Yorumlama",
+        "degerlendirme": "Değerlendirme",
+        "sozcuk_baglami": "Sözcük anlamı"
+      },
+      "hedefDurum": {
+        "introduced": "Tanıştı",
+        "recognized": "Bağlamda tanıdı",
+        "retrieved": "Hatırladı",
+        "transferred": "Farklı bağlamda kullandı",
+        "refresh_due": "Tekrar zamanı"
+      },
+      "ozet": {
+        "baslik": "Okuma özeti",
+        "donem": "Dönem",
+        "sonGun": "Son {gun} gün",
+        "aralik": "Son {gun} günün özeti.",
+        "yukleniyor": "Özet yükleniyor…",
+        "kapali": "Okuma Dünyası bu hesapta henüz açılmadı. Açıldığında özet burada görünür.",
+        "yetkisiz": "Bu çocuğun okuma özetini görme yetkiniz yok.",
+        "hata": "Özet alınamadı. Bağlantınızı kontrol edip yeniden deneyin.",
+        "tekrar": "Yeniden dene",
+        "rizaBaslik": "Okuma özeti kilitli",
+        "rizaYok": "Çocuğunuzun okuma verilerini gösterebilmemiz için veli onayı gerekiyor. Onay verene kadar özet hesaplanmaz.",
+        "rizaGeriCekildi": "Veri onayını geri çektiniz. Onay verene kadar okuma özeti hesaplanmaz ve gösterilmez.",
+        "yenile": "Onay verdim, özeti yenile",
+        "okunan": "Okunan hikâye",
+        "tamamlanan": "Tamamlanan hikâye",
+        "bosDonem": "Bu dönemde henüz hikâye okunmadı. Birkaç hikâye okunduktan sonra özet dolmaya başlar."
+      },
+      "premium": {
+        "baslik": "Ayrıntılı özet premium ile açılır",
+        "metin": "Hangi tür sorularda doğruluk, tema ve değer dağılımı, hedef durumları ve zorluk seyri premium üyelikte veya deneme süresinde görünür. Ücretsiz kullanımda hikâye okuma ve sorular açıktır (günlük hikâye sayısı sınırlı olabilir); değer önceliği seçimi de her zaman açıktır.",
+        "baglanti": "Üyelik ve planları incele"
+      },
+      "dogruluk": {
+        "baslik": "Soru doğruluğu (işlem türüne göre)",
+        "aciklama": "Çocuğunuz hangi tür anlama sorularında rahat, hangilerinde destek isteyebilir?",
+        "deger": "%{oran} · {soru} sorudan {dogru} doğru",
+        "yetersiz": "Henüz yeterli soru çözülmedi (en az 3 soru gerekir)",
+        "not": "Bu oranlar çocuğunuzu etiketlemez; hangi tür soruda birlikte konuşmanın işe yarayacağını gösterir."
+      },
+      "tema": { "baslik": "Okuduğu temalar", "bos": "Bu dönemde tema verisi yok." },
+      "deger": { "baslik": "Maarif değerleri", "bos": "Bu dönemde değer verisi yok." },
+      "ders": { "baslik": "Ders bağlantısı", "bos": "Bu dönemde ders verisi yok." },
+      "hedefler": {
+        "baslik": "Öğrenme hedefleri",
+        "aciklama": "Hikâyeyi okumak bir hedefi öğrenmek demek değildir. \"Hatırladı\" ve \"Farklı bağlamda kullandı\" yalnızca sonraki günlerde doğru yanıt verildiğinde görünür.",
+        "bos": "Henüz izlenen bir hedef yok.",
+        "pekisen": "Pekişen hedefler"
+      },
+      "zorluk": {
+        "baslik": "Zorluk seyri",
+        "aciklama": "Haftalık okunan hikâyelerin ortalama okuma ve kavram zorluğu (1 kolay, 5 zor).",
+        "bos": "Zorluk seyri için henüz veri yok.",
+        "hafta": "Hafta",
+        "hikaye": "Hikâye",
+        "okuma": "Okuma zorluğu",
+        "kavram": "Kavram zorluğu"
+      },
+      "sure": {
+        "baslik": "Ortalama okuma süresi",
+        "deger": "{dk} dk",
+        "yok": "Veri yok",
+        "not": "Yalnızca bilgi amaçlıdır; öğrenmenin göstergesi değildir."
+      },
+      "puan": {
+        "baslik": "Çocuğun hikâye puanı",
+        "deger": "{ort} / 5 ({oy} oy)",
+        "sevilen": "En çok sevdiği temalar: {temalar}",
+        "yetersiz": "Henüz yeterli oy yok (en az 3 oy gerekir)."
+      },
+      "nasil": {
+        "baslik": "Bu veriler nasıl hesaplanır?",
+        "oran": "Doğruluk oranı = doğru yanıt sayısı / yanıtlanan soru sayısıdır. Yanıtlanmayan soru yanlış sayılır.",
+        "minN": "Bir işlem türünde 3'ten az soru, puanda 3'ten az oy varsa oran gösterilmez; bu \"düşük\" anlamına gelmez, yalnızca henüz yeterli veri olmadığını söyler.",
+        "ogrenme": "Öğrenme göstergesi soru doğruluğu ve hedef durumlarıdır. XP ve okuma süresi öğrenme ölçüsü olarak kullanılmaz.",
+        "zaman": "Tarih aralığı yukarıdaki dönem seçiminden gelir; gün sınırı İstanbul saatidir.",
+        "cinsiyet": "Hiçbir istatistik cinsiyete göre ayrıştırılmaz ve çocuklar birbirleriyle kıyaslanmaz."
+      },
+      "degerler": {
+        "baslik": "Değer önceliği",
+        "aciklama": "Hikâye önerilerinde öne çıkmasını istediğiniz Maarif değerlerini seçin (en fazla 5).",
+        "yasakDegil": "Bu bir yasak değil, öneri önceliğidir: seçtiğiniz değerlerle eşleşen hikâyeler önerilerde öne alınır, diğer hikâyeler yine de açıktır.",
+        "yukleniyor": "Değerler yükleniyor…",
+        "kapali": "Okuma Dünyası bu hesapta henüz açılmadı. Açıldığında değer önceliğini buradan seçebilirsiniz.",
+        "hata": "Değerler alınamadı. Yeniden deneyin.",
+        "tekrar": "Yeniden dene",
+        "secimSayisi": "{sayi} / {enFazla} değer seçildi",
+        "catiNot": "\"Çatı\" etiketli üç değer (adalet, saygı, sorumluluk) Maarif modelinin bütün değerlere yayılan çatı değerleridir.",
+        "cati": "çatı değer",
+        "kaydet": "Önceliği kaydet",
+        "kaydediliyor": "Kaydediliyor…",
+        "kaydedildi": "Kaydedildi. Hikâye önerilerinde bu değerler öne alınacak.",
+        "hatalar": {
+          "EN_FAZLA_BES": "En fazla 5 değer seçebilirsiniz.",
+          "TEKRARLI_DEGER": "Aynı değer birden fazla seçildi.",
+          "GECERSIZ_DEGER": "Seçilen değerlerden biri geçersiz.",
+          "FORBIDDEN": "Bu çocuk için seçim yapma yetkiniz yok.",
+          "genel": "Kaydedilemedi. Seçimleriniz korundu; yeniden deneyin."
+        }
+      }
+    }
+  }
+}

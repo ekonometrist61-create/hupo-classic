@@ -1,0 +1,141 @@
+{
+ "$schema": "https://json-schema.org/draft/2020-12/schema",
+ "title": "HupoRead varlik manifesti",
+ "description": "karakter_manifest.json ve ikon_manifest.json için ortak kurallar. uretildi=false ise dosya yoktur; uygulama yedek ikon kullanır.",
+ "$defs": {
+  "karakter": {
+   "type": "object",
+   "required": [
+    "id",
+    "kategori",
+    "etiket",
+    "sinifMin",
+    "sinifMax",
+    "dosya",
+    "aciklama",
+    "uretildi"
+   ],
+   "properties": {
+    "id": {
+     "type": "string",
+     "pattern": "^karakter_(insan|fantastik|hayvan|arac)_[a-z0-9_]+$"
+    },
+    "kategori": {
+     "enum": [
+      "insan",
+      "fantastik",
+      "hayvan",
+      "arac"
+     ]
+    },
+    "etiket": {
+     "type": "string"
+    },
+    "sinifMin": {
+     "type": "integer",
+     "minimum": 2,
+     "maximum": 8
+    },
+    "sinifMax": {
+     "type": "integer",
+     "minimum": 2,
+     "maximum": 8
+    },
+    "kartTuru": {
+     "enum": [
+      "hazir",
+      "ben",
+      "anne",
+      "baba",
+      "kardes",
+      "arkadas",
+      "baska_biri",
+      "hayvan",
+      "arac",
+      "hayali"
+     ]
+    },
+    "dosya": {
+     "type": "string",
+     "pattern": "^karakterler/.+\\.webp$"
+    },
+    "aciklama": {
+     "type": "string"
+    },
+    "uretildi": {
+     "type": "boolean"
+    },
+    "kaynak": {
+     "type": "string"
+    }
+   }
+  },
+  "ikon": {
+   "type": "object",
+   "required": [
+    "id",
+    "kategori",
+    "etiket",
+    "dosya",
+    "uretildi"
+   ],
+   "properties": {
+    "id": {
+     "type": "string",
+     "pattern": "^ikon_[a-z0-9]+_[a-z0-9_]+$"
+    },
+    "kategori": {
+     "type": "string"
+    },
+    "etiket": {
+     "type": "string"
+    },
+    "dosya": {
+     "type": "string",
+     "pattern": "^ikonlar/.+\\.webp$"
+    },
+    "uretildi": {
+     "type": "boolean"
+    }
+   }
+  }
+ },
+ "oneOf": [
+  {
+   "type": "object",
+   "required": [
+    "surum",
+    "karakterler"
+   ],
+   "properties": {
+    "surum": {
+     "const": 1
+    },
+    "karakterler": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/karakter"
+     }
+    }
+   }
+  },
+  {
+   "type": "object",
+   "required": [
+    "surum",
+    "ikonlar"
+   ],
+   "properties": {
+    "surum": {
+     "const": 1
+    },
+    "ikonlar": {
+     "type": "array",
+     "items": {
+      "$ref": "#/$defs/ikon"
+     }
+    }
+   }
+  }
+ ]
+}

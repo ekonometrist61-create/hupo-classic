@@ -48,6 +48,7 @@ const VELI_NAV: VeliNavGroup[] = [
       { key: "questions", icon: <PieChartIcon /> },
       { key: "review", icon: <TaskIcon />, path: "/veli-paneli/tekrar" },
       { key: "exams", icon: <DocsIcon />, path: "/veli-paneli/denemeler" },
+      { key: "okumaDunyasi", icon: <DocsIcon />, path: "/veli-paneli/okuma-dunyasi" },
     ],
   },
   {

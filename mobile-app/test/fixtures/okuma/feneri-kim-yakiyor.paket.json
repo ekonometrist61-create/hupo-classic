@@ -1,0 +1,265 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "feneri-kim-yakiyor",
+    "baslik": "Feneri Kim Yakıyor?",
+    "tur": "macera",
+    "konu": "deniz",
+    "sinif_alt": 4,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "masalsi",
+    "izinli_turler": [
+      "hayvan",
+      "hayali",
+      "ben",
+      "baska_biri"
+    ],
+    "deger_anahtarlari": [
+      "D12",
+      "D20"
+    ],
+    "yetiskin_uygun": false,
+    "durum": "taslak"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kıyıdaki eski fenerin ışığı bir gece birden söndü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sahilde bunu fark etti. "
+        },
+        {
+          "t": "hareket",
+          "anahtar": "gelis"
+        },
+        {
+          "t": "metin",
+          "v": " Kapıda yazılı bir not vardı: Işığı birlikte arayın."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yardım etmek istedi ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir dostuna"
+        },
+        {
+          "t": "metin",
+          "v": " seslendi. "
+        },
+        {
+          "t": "deger",
+          "anahtar": "karar"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Mekanizmanın içinde "
+        },
+        {
+          "t": "kelime",
+          "yuva": "parlak_sifat"
+        },
+        {
+          "t": "metin",
+          "v": " bir anahtar buldu. Anahtar yerine oturunca fener yeniden yandı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Denize bakan "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir sözü hatırladı: "
+        },
+        {
+          "t": "atasozu",
+          "yuva": "sabir"
+        },
+        {
+          "t": "metin",
+          "v": " Işık, sabırla atılan her adımın sonunda yandı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {
+    "karar": {
+      "D20": [
+        {
+          "t": "metin",
+          "v": "Fenerin kırık camını temizleyip ışığın yeniden yanmasına yardım etti."
+        }
+      ],
+      "D12": [
+        {
+          "t": "metin",
+          "v": "Işık yanana kadar sabırla çalıştı."
+        }
+      ],
+      "_default": [
+        {
+          "t": "metin",
+          "v": "Ne yapacağını düşünerek fenerin etrafında dolaşmaya başladı."
+        }
+      ]
+    }
+  },
+  "hareket_sahneleri": {
+    "gelis": {
+      "hayvan": [
+        {
+          "t": "metin",
+          "v": "Patileriyle kumu ezerek fenerin kapısına yürüdü."
+        }
+      ],
+      "hayali": [
+        {
+          "t": "metin",
+          "v": "Parlayan izler bırakarak fenerin kapısına süzüldü."
+        }
+      ],
+      "ben": [
+        {
+          "t": "metin",
+          "v": "Merdivenleri koşarak çıktı ve fenerin kapısına vardı."
+        }
+      ],
+      "_default": [
+        {
+          "t": "metin",
+          "v": "Fenerin kapısına doğru yürüdü."
+        }
+      ]
+    }
+  },
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Kapıda kahramanı hangi not karşıladı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bekçiyi çağırın."
+        },
+        {
+          "id": "B",
+          "metin": "Fenere girmeyin."
+        },
+        {
+          "id": "C",
+          "metin": "Işığı birlikte arayın."
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Kapıdaki notta ışığın birlikte aranması yazıyordu."
+    },
+    {
+      "id": "s2",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 3,
+      "metin": "Mekanizmanın içinde ne bulundu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir kitap"
+        },
+        {
+          "id": "B",
+          "metin": "Bir anahtar"
+        },
+        {
+          "id": "C",
+          "metin": "Bir harita"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Parlak bir anahtar bulundu."
+    },
+    {
+      "id": "s3",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 3,
+      "metin": "Fener neden yeniden yandı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Anahtar yerine oturdu"
+        },
+        {
+          "id": "B",
+          "metin": "Bekçi geldi"
+        },
+        {
+          "id": "C",
+          "metin": "Gök gürledi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Anahtar yerine oturunca ışık yeniden yandı."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Hikâyedeki atasözü ne anlatıyor?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Her zaman en hızlı olmak gerekir"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnız kalmak en iyisidir"
+        },
+        {
+          "id": "C",
+          "metin": "Sabırla beklenen şey sonunda güzel olur"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Sabırla koruk helva olur: sabırla yapılan iş sonunda iyi sonuç verir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "elle",
+    "tarih": "2026-10-17"
+  }
+}

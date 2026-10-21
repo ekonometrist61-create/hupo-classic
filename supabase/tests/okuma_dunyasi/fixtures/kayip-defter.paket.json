@@ -1,0 +1,596 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "kayip-defter",
+    "baslik": "Kayıp Defter",
+    "tur": "gizem",
+    "konu": "kutuphane",
+    "sinif_alt": 4,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "baba",
+      "anne",
+      "kardes",
+      "arkadas",
+      "baska_biri"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D20"
+    ],
+    "yetiskin_uygun": true,
+    "etiketler": {
+      "ana_sinif": 4,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 1,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "gizem",
+        "okuma_kitap",
+        "dostluk"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D20",
+        "yardimci_deger": "D6"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "gizemli",
+          "tur": "lexeme",
+          "etiket": "gizemli",
+          "yuva": "gizemli_sifat",
+          "islev": "first_hint"
+        },
+        {
+          "id": "el_ele_vermek",
+          "tur": "idiom",
+          "etiket": "el ele vermek",
+          "yuva": "el_ele",
+          "islev": "application"
+        },
+        {
+          "id": "birlik_dirlik",
+          "tur": "proverb",
+          "etiket": "Birlikten kuvvet doğar",
+          "yuva": "isbirligi",
+          "islev": "application"
+        },
+        {
+          "id": "yardimseverlik",
+          "tur": "value",
+          "etiket": "Yardımseverlik",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (4. sınıf geçiş sürümü doğrulanmadı)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 424,
+        "tahmini_sure_dk": 4,
+        "sayfa_sayisi": 8,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 2,
+          "cikarim": 1,
+          "yorumlama": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 1,
+          "idiom": 1,
+          "proverb": 1,
+          "value": 1
+        },
+        "yoldas_yer_sayisi": 4,
+        "simge_sayisi": 17
+      }
+    },
+    "tanitim": "Kütüphanenin en arka rafında tozlu bir defter buldu. Haritadaki sırrı arkadaşlarıyla birlikte çözebilir misin?",
+    "durum": "taslak"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kütüphanenin en arka rafında, tozlu bir defter"
+        },
+        {
+          "t": "ikon",
+          "v": "📓"
+        },
+        {
+          "t": "metin",
+          "v": " buldu. Kapağında soluk mavi bir harita"
+        },
+        {
+          "t": "ikon",
+          "v": "🗺️"
+        },
+        {
+          "t": "metin",
+          "v": " çizilmişti. Kenarına küçük harflerle bir not yazılmıştı: \"Gizli köşeyi ancak birlikte bulursunuz.\" Defteri açınca sayfalardan eski bir kâğıt kokusu yayıldı. Bu not, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " için "
+        },
+        {
+          "t": "kelime",
+          "yuva": "gizemli_sifat"
+        },
+        {
+          "t": "metin",
+          "v": " bir davetti."
+        },
+        {
+          "t": "isaret",
+          "kod": "kitap"
+        },
+        {
+          "t": "metin",
+          "v": " Defterin kimin olduğunu ve neden raflara kaldırıldığını bilmiyordu. Ama içinde bir sırrın saklı olduğunu hissediyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Defteri masaya taşıdığında kütüphaneci Gülşen Hanım yanına geldi. Yıllardır bu kütüphanede çalışıyordu, ama bu defteri hiç görmemişti. Haritada üç işaret vardı: bir yıldız"
+        },
+        {
+          "t": "ikon",
+          "v": "⭐"
+        },
+        {
+          "t": "metin",
+          "v": ", bir kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "📖"
+        },
+        {
+          "t": "metin",
+          "v": " ve bir kapı. Gülşen Hanım gülümsedi: \"Bu defter"
+        },
+        {
+          "t": "ikon",
+          "v": "📓"
+        },
+        {
+          "t": "metin",
+          "v": " yıllar önce okulun unutulmuş bilim köşesine ait olabilir. Ama o köşeye giden yolu bugüne kadar kimse bulamadı.\" Bu sözler merakı daha da artırdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " haritayı önce tek başına çözmeye karar verdi. Yıldız"
+        },
+        {
+          "t": "ikon",
+          "v": "⭐"
+        },
+        {
+          "t": "metin",
+          "v": " işareti, kütüphanenin camından vuran güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "☀️"
+        },
+        {
+          "t": "metin",
+          "v": " ışığının düştüğü bir köşeyi gösteriyordu. Ama kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "📖"
+        },
+        {
+          "t": "metin",
+          "v": " işareti hangi kitabı anlatıyordu? Saatlerce raflar arasında dolaştı, her kitabın sırtına tek tek baktı, ama bir sonuç bulamadı. Yorulmuştu, ama vazgeçmek de istemiyordu. "
+        },
+        {
+          "t": "deger",
+          "anahtar": "karar"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşına"
+        },
+        {
+          "t": "metin",
+          "v": " seslendi. Arkadaşı haritayı görünce hemen heyecanlandı. "
+        },
+        {
+          "t": "deyim",
+          "yuva": "el_ele"
+        },
+        {
+          "t": "metin",
+          "v": " İkisi birlikte raflara baktılar. Kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "📖"
+        },
+        {
+          "t": "metin",
+          "v": " işareti, tozlu bir ansiklopedinin arkasındaki bir kâğıt parçasına işaret ediyordu: \"Beş adım sağa, üç adım geri.\" Kâğıdın altında küçük bir yıldız"
+        },
+        {
+          "t": "ikon",
+          "v": "⭐"
+        },
+        {
+          "t": "metin",
+          "v": " çizilmişti; demek ki doğru yoldaydılar."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " adımlarını dikkatle saydı. Bir dolabın arkasında eski, paslı bir kapı çıktı. Kilidi bozuktu ama tutamağı hâlâ sağlamdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kapıyı çekti, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " da yardım etti. Kapı gıcırdayarak açıldı. İçeride küçük bir mikroskop, renkli cam şişeler ve yıllardır dokunulmamış bir kutu duruyordu."
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        },
+        {
+          "t": "metin",
+          "v": " Toz, zamanın nasıl geçtiğini sessizce anlatıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kutunun içinde bir not ve eski bir defter"
+        },
+        {
+          "t": "ikon",
+          "v": "📓"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Not, defterin sahibine aitti: \"Bu köşeyi ben saklıyorum. Her işi tek başına yapmaya çalışan biri çoğu zaman yorulur; birlikte yapılan iş daha hafif olur.\" "
+        },
+        {
+          "t": "atasozu",
+          "yuva": "isbirligi"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözün ne demek istediğini artık çok iyi anlıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kütüphaneye döndüklerinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " kutunun yerini Gülşen Hanım'a anlattı. Bunu duyunca Gülşen Hanım çok sevindi: \"Bu köşeyi yıllardır arıyordum!\" Okul bilim köşesini yeniden açmak istiyordu; o gün bunu iki arkadaş birlikte başardı. Defter"
+        },
+        {
+          "t": "ikon",
+          "v": "📓"
+        },
+        {
+          "t": "metin",
+          "v": ", rafındaki yerine kondu."
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bulmacanın sonunda kendi cesaretini ve arkadaşının katkısını bir arada düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam kütüphane"
+        },
+        {
+          "t": "ikon",
+          "v": "📚"
+        },
+        {
+          "t": "metin",
+          "v": " kapanırken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " rafın önünde bir süre durdu. Tozlu defterin yerini artık herkes biliyordu ve bu, kütüphaneye yeni bir yakınlık katmıştı. Gülşen Hanım, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " için küçük bir kart hazırladı: \"Bir sırrı çözmek kadar, onu birlikte paylaşmak da güzeldir.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kartı cebine koydu. Ertesi gün kütüphaneye yine gelecekti; çünkü raflarda hâlâ okunmayı bekleyen kitaplar vardı ve artık her kitabın bir hikâyesi olduğunu biliyordu."
+        },
+        {
+          "t": "isaret",
+          "kod": "ay"
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {
+    "karar": {
+      "D6": [
+        {
+          "t": "metin",
+          "v": "Haritadaki sırrı tek başına çözüp kendine saklamak yerine, bulduklarını Gülşen Hanım'la paylaşmaya karar verdi."
+        }
+      ],
+      "D20": [
+        {
+          "t": "metin",
+          "v": "Haritanın sırrını çözmek için kütüphanedeki arkadaşlarından yardım istedi."
+        }
+      ],
+      "_default": [
+        {
+          "t": "metin",
+          "v": "Ne yapacağını düşündü ve haritayı dikkatle incelemeye devam etti."
+        }
+      ]
+    }
+  },
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "el_ele": [
+      {
+        "t": "metin",
+        "v": "Arkadaşıyla el ele verip ipuçlarını birleştirdi."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Kahraman defteri nerede buldu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bahçede"
+        },
+        {
+          "id": "B",
+          "metin": "Kütüphanenin en arka rafında"
+        },
+        {
+          "id": "C",
+          "metin": "Otobüste"
+        },
+        {
+          "id": "D",
+          "metin": "Okulun bahçesindeki çınar ağacında"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Defter, kütüphanenin en arka rafındaki tozlu kitaplar arasındaydı."
+    },
+    {
+      "id": "s2",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 2,
+      "metin": "Haritada hangi üç işaret vardı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yıldız, kitap ve kapı"
+        },
+        {
+          "id": "B",
+          "metin": "Ok, kalp ve ağaç"
+        },
+        {
+          "id": "C",
+          "metin": "Güneş, kuş ve balık"
+        },
+        {
+          "id": "D",
+          "metin": "Kalem, silgi ve cetvel"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Haritada bir yıldız, bir kitap ve bir kapı işareti vardı."
+    },
+    {
+      "id": "s3",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 5,
+      "metin": "Kahraman ve arkadaşı eski kapıyı nasıl buldu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Notta yazan adımları sayarak"
+        },
+        {
+          "id": "B",
+          "metin": "Rastgele duvarları kazarak"
+        },
+        {
+          "id": "C",
+          "metin": "Gülşen Hanım'ın anahtarıyla"
+        },
+        {
+          "id": "D",
+          "metin": "Bir kedinin yardımıyla"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Not, beş adım sağa ve üç adım geri demişti; ikisi adımlarını sayarak kapıyı buldu."
+    },
+    {
+      "id": "s4",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 6,
+      "metin": "Hikâyedeki atasözü neyi anlatıyor?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Birlikte çalışınca işler kolaylaşır"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnız çalışan her zaman kazanır"
+        },
+        {
+          "id": "C",
+          "metin": "Acele eden her zaman kazanır"
+        },
+        {
+          "id": "D",
+          "metin": "Sabah erken kalkan her zaman kazanır"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Bir elin nesi var, iki elin sesi var; birlikte yapılan iş daha kolay olur."
+    }
+  ],
+  "uretim": {
+    "kaynak": "elle",
+    "tarih": "2026-10-18"
+  }
+}

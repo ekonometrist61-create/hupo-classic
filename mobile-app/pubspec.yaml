@@ -17,6 +17,13 @@ dependencies:
   lottie: ^3.6.1
   shared_preferences: ^2.5.5
 
+  # Okuma Dünyası ("Senin Hikâyen"): saf Dart motoru (ad çekimi + hikâye çözücü).
+  okuma_motoru:
+    path: packages/okuma_motoru
+  # PDF yalnız ertelenmiş yüklemeyle (deferred import) kullanılır: ana paketi büyütmez.
+  pdf: ^3.13.1
+  printing: ^5.15.1
+
   # ── Güvenlik ────────────────────────────────────────────────────────────
   # Supabase JWT token'ını SharedPreferences yerine Android Keystore /
   # iOS Keychain'de saklar. minSdk 23 gerektirir (bkz. build.gradle.kts).
@@ -35,6 +42,7 @@ dependencies:
   sentry_flutter: 10.0.0
   firebase_core: ^5.0.0
   firebase_messaging: ^17.0.0
+  flutter_svg: ^2.3.0
 
 dev_dependencies:
   flutter_test:
@@ -69,8 +77,21 @@ flutter:
     - assets/audio/rewards/
     - assets/audio/rarity/
     - assets/nav/
+    - assets/okuma/
+    - assets/okuma/karakterler/
+    - assets/okuma/ikonlar/
     - assets/fonts/Nunito-OFL.txt
     - assets/fonts/Lexend-OFL.txt
+    # Senin Hikâyen PDF'i için Nunito'nun statik normal ve kalın örnekleri (kaynak: NunitoPdf-KAYNAK.txt).
+    - assets/fonts/NunitoPdf-Regular.ttf
+    - assets/fonts/NunitoPdf-Bold.ttf
+    # Senin Hikâyen PDF'i kitap gövdesi: Literata (SIL OFL 1.1; kaynak: LiterataPdf-KAYNAK.txt).
+    - assets/fonts/LiterataPdf-Regular.ttf
+    - assets/fonts/LiterataPdf-Bold.ttf
+    - assets/fonts/Literata-OFL.txt
+    - assets/fonts/LiterataPdf-KAYNAK.txt
+    # Genel semantik ikon kütüphanesi (89 kavram × renkli/sade SVG). Katalog: tool/ikon_katalogu_uret.dart.
+    - assets/okuma/hikaye_ikonlari/
 
   fonts:
     # Nunito (SIL OFL 1.1): yuvarlak hatlı, çocuk dostu; Türkçe karakterleri tam destekler.

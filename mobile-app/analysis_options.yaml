@@ -4,6 +4,8 @@ analyzer:
     - android/**
     - ios/**
     - web/**
+    # Yerel paketler kendi pubspec'iyle analiz edilir: `cd packages/okuma_motoru; dart test; dart analyze`.
+    - packages/**
     # build_runner ürettiği dosyalar — lint kapsamı dışı
     - "**/*.g.dart"
     - "**/*.freezed.dart"

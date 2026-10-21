@@ -1,0 +1,19 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    { "id": "gizemli", "tur": "kelime", "yazim": "gizemli", "anlam": "Ne olduğu tam anlaşılamayan, sır taşıyan.", "sinif_alt": 4, "sinif_ust": 5, "kaynak_turu": "editor_onerisi", "kazanim_kodu": null, "durum": "taslak" },
+    { "id": "esrarengiz", "tur": "kelime", "yazim": "esrarengiz", "anlam": "Nedeni bilinmeyen, sırlı.", "sinif_alt": 5, "sinif_ust": 6, "kaynak_turu": "editor_onerisi", "kazanim_kodu": null, "durum": "taslak" },
+    { "id": "parlak", "tur": "kelime", "yazim": "parlak", "anlam": "Güçlü ışık saçan, ışıltılı.", "sinif_alt": 4, "sinif_ust": 5, "kaynak_turu": "editor_onerisi", "kazanim_kodu": null, "durum": "taslak" },
+    { "id": "isiltili", "tur": "kelime", "yazim": "ışıltılı", "anlam": "Hafif ve sürekli parlayan.", "sinif_alt": 4, "sinif_ust": 5, "kaynak_turu": "editor_onerisi", "kazanim_kodu": null, "durum": "taslak" },
+    { "id": "bir_elin_nesi_var", "tur": "atasozu", "yazim": "Bir elin nesi var, iki elin sesi var.", "anlam": "Birlikte çalışmanın gücü; tek başına yapılamayanlar birlikte yapılır.", "sinif_alt": 4, "sinif_ust": 6, "kaynak_turu": "editor_onerisi", "kazanim_kodu": null, "durum": "taslak" },
+    { "id": "koruk_helva", "tur": "atasozu", "yazim": "Sabırla koruk helva olur.", "anlam": "Sabırla beklenen şey sonunda güzel olur.", "sinif_alt": 4, "sinif_ust": 6, "kaynak_turu": "editor_onerisi", "kazanim_kodu": null, "durum": "taslak" },
+    { "id": "el_ele_vermek", "tur": "deyim", "yazim": "el ele vermek", "anlam": "Birlikte çalışmak, yardımlaşmak.", "sinif_alt": 4, "sinif_ust": 6, "kaynak_turu": "editor_onerisi", "kazanim_kodu": null, "durum": "taslak" }
+  ],
+  "yuvalar": [
+    { "ad": "gizemli_sifat", "tur": "kelime", "adaylar": [{ "girdi": "gizemli" }, { "girdi": "esrarengiz" }] },
+    { "ad": "parlak_sifat", "tur": "kelime", "adaylar": [{ "girdi": "parlak" }, { "girdi": "isiltili" }] },
+    { "ad": "isbirligi", "tur": "atasozu", "adaylar": [{ "girdi": "bir_elin_nesi_var" }] },
+    { "ad": "sabir", "tur": "atasozu", "adaylar": [{ "girdi": "koruk_helva" }] },
+    { "ad": "el_ele", "tur": "deyim", "adaylar": [{ "girdi": "el_ele_vermek" }] }
+  ]
+}

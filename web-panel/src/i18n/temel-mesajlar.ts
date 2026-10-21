@@ -8,6 +8,8 @@ const MESAJ_PARCALARI = [
   "yonetim-panel",
   "yonetim-sorular",
   "yonetim-merkez",
+  "yonetim-okuma",
+  "veli-okuma",
 ] as const;
 
 function nesneMi(value: unknown): value is MesajNesnesi {

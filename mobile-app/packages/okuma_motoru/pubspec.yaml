@@ -1,0 +1,10 @@
+name: okuma_motoru
+description: Okuma Dünyası saf Dart motoru. Türkçe ad çekimi ve hikâye çözücü; Flutter'a bağımlı değildir.
+version: 0.1.0
+publish_to: none
+
+environment:
+  sdk: ">=3.5.0 <4.0.0"
+
+dev_dependencies:
+  test: ^1.25.0

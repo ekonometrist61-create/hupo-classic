@@ -1,0 +1,1767 @@
+{
+  "version": "0.1-demo",
+  "brand": "HupoRead",
+  "notes": "Sample original vector asset set. Final assets require professional review, child testing and polish.",
+  "icon_count": 89,
+  "icons": [
+    {
+      "id": "wave",
+      "category": "nature",
+      "label_tr": "Dalga",
+      "tags_tr": [
+        "deniz",
+        "dalga",
+        "kıyı",
+        "okyanus"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "wave.svg",
+        "muted": "wave.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "lighthouse",
+      "category": "places",
+      "label_tr": "Deniz feneri",
+      "tags_tr": [
+        "deniz feneri",
+        "fener",
+        "ışık kulesi"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "high",
+      "tone": "neutral",
+      "files": {
+        "color": "lighthouse.svg",
+        "muted": "lighthouse.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "key",
+      "category": "objects",
+      "label_tr": "Anahtar",
+      "tags_tr": [
+        "anahtar",
+        "kilidi aç"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "high",
+      "tone": "neutral",
+      "files": {
+        "color": "key.svg",
+        "muted": "key.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "gear",
+      "category": "objects",
+      "label_tr": "Mekanizma",
+      "tags_tr": [
+        "mekanizma",
+        "dişli",
+        "çark"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "high",
+      "tone": "neutral",
+      "files": {
+        "color": "gear.svg",
+        "muted": "gear.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "lantern",
+      "category": "objects",
+      "label_tr": "Kandil",
+      "tags_tr": [
+        "kandil",
+        "fener ışığı",
+        "lamba"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "lantern.svg",
+        "muted": "lantern.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "boat",
+      "category": "transport",
+      "label_tr": "Tekne",
+      "tags_tr": [
+        "tekne",
+        "balıkçı",
+        "kayık"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "boat.svg",
+        "muted": "boat.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "footprint",
+      "category": "objects",
+      "label_tr": "Ayak izi",
+      "tags_tr": [
+        "ayak izi",
+        "iz",
+        "adım"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "footprint.svg",
+        "muted": "footprint.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "book",
+      "category": "learning",
+      "label_tr": "Kitap",
+      "tags_tr": [
+        "kitap",
+        "okumak",
+        "sayfa",
+        "hikâye"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "book.svg",
+        "muted": "book.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "notebook",
+      "category": "objects",
+      "label_tr": "Defter",
+      "tags_tr": [
+        "defter",
+        "not",
+        "günlük"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "notebook.svg",
+        "muted": "notebook.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "pencil",
+      "category": "learning",
+      "label_tr": "Kalem",
+      "tags_tr": [
+        "kalem",
+        "yazmak"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "pencil.svg",
+        "muted": "pencil.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "scroll",
+      "category": "objects",
+      "label_tr": "Parşömen",
+      "tags_tr": [
+        "parşömen",
+        "mektup",
+        "mesaj"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "scroll.svg",
+        "muted": "scroll.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "star",
+      "category": "symbols",
+      "label_tr": "Yıldız",
+      "tags_tr": [
+        "yıldız",
+        "parlamak",
+        "başarı"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "star.svg",
+        "muted": "star.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "sun",
+      "category": "nature",
+      "label_tr": "Güneş",
+      "tags_tr": [
+        "güneş",
+        "sabah",
+        "aydınlık"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "sun.svg",
+        "muted": "sun.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "moon",
+      "category": "nature",
+      "label_tr": "Ay",
+      "tags_tr": [
+        "ay",
+        "gece",
+        "karanlık"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "moon.svg",
+        "muted": "moon.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "cloud",
+      "category": "nature",
+      "label_tr": "Bulut",
+      "tags_tr": [
+        "bulut",
+        "gökyüzü"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "cloud.svg",
+        "muted": "cloud.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "rain",
+      "category": "nature",
+      "label_tr": "Yağmur",
+      "tags_tr": [
+        "yağmur",
+        "yağış"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "rain.svg",
+        "muted": "rain.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "snow",
+      "category": "nature",
+      "label_tr": "Kar tanesi",
+      "tags_tr": [
+        "kar",
+        "kar tanesi",
+        "kış"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "snow.svg",
+        "muted": "snow.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "storm",
+      "category": "nature",
+      "label_tr": "Şimşek",
+      "tags_tr": [
+        "şimşek",
+        "gök gürültüsü",
+        "fırtına"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "storm.svg",
+        "muted": "storm.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "wind",
+      "category": "nature",
+      "label_tr": "Rüzgâr",
+      "tags_tr": [
+        "rüzgâr",
+        "esinti"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "wind.svg",
+        "muted": "wind.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "rainbow",
+      "category": "nature",
+      "label_tr": "Gökkuşağı",
+      "tags_tr": [
+        "gökkuşağı",
+        "renkler"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "rainbow.svg",
+        "muted": "rainbow.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "mountain",
+      "category": "places",
+      "label_tr": "Dağ",
+      "tags_tr": [
+        "dağ",
+        "zirve",
+        "tepe"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "mountain.svg",
+        "muted": "mountain.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "tree",
+      "category": "nature",
+      "label_tr": "Ağaç",
+      "tags_tr": [
+        "ağaç",
+        "orman",
+        "koru"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "tree.svg",
+        "muted": "tree.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "leaf",
+      "category": "nature",
+      "label_tr": "Yaprak",
+      "tags_tr": [
+        "yaprak",
+        "doğa",
+        "filiz"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "leaf.svg",
+        "muted": "leaf.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "flower",
+      "category": "nature",
+      "label_tr": "Çiçek",
+      "tags_tr": [
+        "çiçek",
+        "bahar"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "flower.svg",
+        "muted": "flower.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "seed",
+      "category": "nature",
+      "label_tr": "Tohum",
+      "tags_tr": [
+        "tohum",
+        "ekmek",
+        "büyümek"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "seed.svg",
+        "muted": "seed.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "drop",
+      "category": "nature",
+      "label_tr": "Su damlası",
+      "tags_tr": [
+        "su",
+        "damla",
+        "ıslak"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "drop.svg",
+        "muted": "drop.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "fish",
+      "category": "animals",
+      "label_tr": "Balık",
+      "tags_tr": [
+        "balık",
+        "balıkçı"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "fish.svg",
+        "muted": "fish.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "bird",
+      "category": "animals",
+      "label_tr": "Kuş",
+      "tags_tr": [
+        "kuş",
+        "uçmak",
+        "kanat"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "bird.svg",
+        "muted": "bird.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "cat",
+      "category": "animals",
+      "label_tr": "Kedi",
+      "tags_tr": [
+        "kedi",
+        "miyav"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "cat.svg",
+        "muted": "cat.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "dog",
+      "category": "animals",
+      "label_tr": "Köpek",
+      "tags_tr": [
+        "köpek",
+        "havlamak"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "dog.svg",
+        "muted": "dog.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "turtle",
+      "category": "animals",
+      "label_tr": "Kaplumbağa",
+      "tags_tr": [
+        "kaplumbağa",
+        "yavaş"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "turtle.svg",
+        "muted": "turtle.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "butterfly",
+      "category": "animals",
+      "label_tr": "Kelebek",
+      "tags_tr": [
+        "kelebek",
+        "koza"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "butterfly.svg",
+        "muted": "butterfly.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "compass",
+      "category": "discovery",
+      "label_tr": "Pusula",
+      "tags_tr": [
+        "pusula",
+        "yön",
+        "kuzey"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "compass.svg",
+        "muted": "compass.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "map",
+      "category": "discovery",
+      "label_tr": "Harita",
+      "tags_tr": [
+        "harita",
+        "yol haritası",
+        "rota"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "map.svg",
+        "muted": "map.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "telescope",
+      "category": "discovery",
+      "label_tr": "Teleskop",
+      "tags_tr": [
+        "teleskop",
+        "yıldız gözlemi"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "telescope.svg",
+        "muted": "telescope.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "magnifier",
+      "category": "learning",
+      "label_tr": "Büyüteç",
+      "tags_tr": [
+        "büyüteç",
+        "araştırma",
+        "inceleme"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "magnifier.svg",
+        "muted": "magnifier.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "microscope",
+      "category": "science",
+      "label_tr": "Mikroskop",
+      "tags_tr": [
+        "mikroskop",
+        "deney",
+        "bilim"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "microscope.svg",
+        "muted": "microscope.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "atom",
+      "category": "science",
+      "label_tr": "Atom",
+      "tags_tr": [
+        "atom",
+        "fizik",
+        "molekül"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "atom.svg",
+        "muted": "atom.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "planet",
+      "category": "science",
+      "label_tr": "Gezegen",
+      "tags_tr": [
+        "gezegen",
+        "uzay",
+        "satürn"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "planet.svg",
+        "muted": "planet.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "rocket",
+      "category": "transport",
+      "label_tr": "Roket",
+      "tags_tr": [
+        "roket",
+        "uzay aracı",
+        "fırlatma"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "rocket.svg",
+        "muted": "rocket.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "robot",
+      "category": "characters",
+      "label_tr": "Robot",
+      "tags_tr": [
+        "robot",
+        "yapay zekâ"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "robot.svg",
+        "muted": "robot.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "clock",
+      "category": "objects",
+      "label_tr": "Saat",
+      "tags_tr": [
+        "saat",
+        "zaman",
+        "dakika"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "clock.svg",
+        "muted": "clock.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "hourglass",
+      "category": "objects",
+      "label_tr": "Kum saati",
+      "tags_tr": [
+        "kum saati",
+        "beklemek",
+        "sabır"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "hourglass.svg",
+        "muted": "hourglass.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "chest",
+      "category": "objects",
+      "label_tr": "Sandık",
+      "tags_tr": [
+        "sandık",
+        "hazine",
+        "saklı"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "chest.svg",
+        "muted": "chest.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "lock",
+      "category": "objects",
+      "label_tr": "Kilit",
+      "tags_tr": [
+        "kilit",
+        "kapalı",
+        "şifre"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "lock.svg",
+        "muted": "lock.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "bridge",
+      "category": "places",
+      "label_tr": "Köprü",
+      "tags_tr": [
+        "köprü",
+        "geçit"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "bridge.svg",
+        "muted": "bridge.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "house",
+      "category": "places",
+      "label_tr": "Ev",
+      "tags_tr": [
+        "ev",
+        "yuva",
+        "aile"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "house.svg",
+        "muted": "house.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "castle",
+      "category": "places",
+      "label_tr": "Kale",
+      "tags_tr": [
+        "kale",
+        "şato"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "castle.svg",
+        "muted": "castle.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "shield",
+      "category": "symbols",
+      "label_tr": "Kalkan",
+      "tags_tr": [
+        "kalkan",
+        "korumak",
+        "güven"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "shield.svg",
+        "muted": "shield.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "heart",
+      "category": "emotions",
+      "label_tr": "Sevgi",
+      "tags_tr": [
+        "sevgi",
+        "iyilik",
+        "kalp"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "heart.svg",
+        "muted": "heart.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "friends",
+      "category": "emotions",
+      "label_tr": "Dostluk",
+      "tags_tr": [
+        "arkadaş",
+        "dostluk",
+        "birlikte"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "friends.svg",
+        "muted": "friends.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "teamwork",
+      "category": "emotions",
+      "label_tr": "İş birliği",
+      "tags_tr": [
+        "iş birliği",
+        "yardımlaşma",
+        "dayanışma"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "teamwork.svg",
+        "muted": "teamwork.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "courage",
+      "category": "emotions",
+      "label_tr": "Cesaret",
+      "tags_tr": [
+        "cesaret",
+        "korkusuz",
+        "kararlı"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "courage.svg",
+        "muted": "courage.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "patience",
+      "category": "emotions",
+      "label_tr": "Sabır",
+      "tags_tr": [
+        "sabır",
+        "beklemek",
+        "emek"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "patience.svg",
+        "muted": "patience.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "curiosity",
+      "category": "emotions",
+      "label_tr": "Merak",
+      "tags_tr": [
+        "merak",
+        "keşif",
+        "soru"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "curiosity.svg",
+        "muted": "curiosity.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "joy",
+      "category": "emotions",
+      "label_tr": "Sevinç",
+      "tags_tr": [
+        "sevinç",
+        "mutluluk",
+        "gülümsemek"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "joy.svg",
+        "muted": "joy.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "fear",
+      "category": "emotions",
+      "label_tr": "Korku",
+      "tags_tr": [
+        "korku",
+        "endişe",
+        "ürkmek"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "fear.svg",
+        "muted": "fear.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "idea",
+      "category": "learning",
+      "label_tr": "Fikir",
+      "tags_tr": [
+        "fikir",
+        "bulmak",
+        "aklına gelmek"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "idea.svg",
+        "muted": "idea.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "puzzle",
+      "category": "learning",
+      "label_tr": "Bulmaca",
+      "tags_tr": [
+        "bulmaca",
+        "çözüm",
+        "bilmece"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "puzzle.svg",
+        "muted": "puzzle.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "flag",
+      "category": "objects",
+      "label_tr": "Bayrak",
+      "tags_tr": [
+        "bayrak",
+        "işaret",
+        "hedef"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "flag.svg",
+        "muted": "flag.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "bell",
+      "category": "objects",
+      "label_tr": "Çan",
+      "tags_tr": [
+        "çan",
+        "uyarı",
+        "ses"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "bell.svg",
+        "muted": "bell.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "fire",
+      "category": "nature",
+      "label_tr": "Ateş",
+      "tags_tr": [
+        "ateş",
+        "alev",
+        "ısınmak"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "fire.svg",
+        "muted": "fire.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "globe",
+      "category": "science",
+      "label_tr": "Dünya",
+      "tags_tr": [
+        "dünya",
+        "ülke",
+        "harita dünya"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "globe.svg",
+        "muted": "globe.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "school",
+      "category": "places",
+      "label_tr": "Okul",
+      "tags_tr": [
+        "okul",
+        "sınıf",
+        "öğretmen"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "school.svg",
+        "muted": "school.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "math",
+      "category": "learning",
+      "label_tr": "Matematik",
+      "tags_tr": [
+        "matematik",
+        "sayı",
+        "hesap"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "math.svg",
+        "muted": "math.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "music",
+      "category": "learning",
+      "label_tr": "Müzik",
+      "tags_tr": [
+        "müzik",
+        "şarkı",
+        "nota"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "music.svg",
+        "muted": "music.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "ball",
+      "category": "sports",
+      "label_tr": "Top",
+      "tags_tr": [
+        "top",
+        "spor",
+        "futbol"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "ball.svg",
+        "muted": "ball.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "bicycle",
+      "category": "transport",
+      "label_tr": "Bisiklet",
+      "tags_tr": [
+        "bisiklet",
+        "sürmek"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "bicycle.svg",
+        "muted": "bicycle.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "train",
+      "category": "transport",
+      "label_tr": "Tren",
+      "tags_tr": [
+        "tren",
+        "lokomotif"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "train.svg",
+        "muted": "train.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "plane",
+      "category": "transport",
+      "label_tr": "Uçak",
+      "tags_tr": [
+        "uçak",
+        "hava yolculuğu"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "plane.svg",
+        "muted": "plane.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "car",
+      "category": "transport",
+      "label_tr": "Araba",
+      "tags_tr": [
+        "araba",
+        "otomobil",
+        "taşıt"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "car.svg",
+        "muted": "car.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "crystal",
+      "category": "fantasy",
+      "label_tr": "Kristal",
+      "tags_tr": [
+        "kristal",
+        "büyülü taş"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "crystal.svg",
+        "muted": "crystal.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "dragon",
+      "category": "fantasy",
+      "label_tr": "Ejderha",
+      "tags_tr": [
+        "ejderha",
+        "fantastik canlı"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "dragon.svg",
+        "muted": "dragon.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "castle-magic",
+      "category": "fantasy",
+      "label_tr": "Büyülü kule",
+      "tags_tr": [
+        "büyülü kule",
+        "sihir",
+        "büyü"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "castle-magic.svg",
+        "muted": "castle-magic.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "crown",
+      "category": "fantasy",
+      "label_tr": "Taç",
+      "tags_tr": [
+        "taç",
+        "krallık",
+        "hükümdar"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "crown.svg",
+        "muted": "crown.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "mask",
+      "category": "fantasy",
+      "label_tr": "Maske",
+      "tags_tr": [
+        "maske",
+        "gizemli kahraman",
+        "kimlik"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "mask.svg",
+        "muted": "mask.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "quest",
+      "category": "fantasy",
+      "label_tr": "Görev",
+      "tags_tr": [
+        "görev",
+        "macera",
+        "meydan okuma"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "quest.svg",
+        "muted": "quest.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "gift",
+      "category": "objects",
+      "label_tr": "Hediye",
+      "tags_tr": [
+        "hediye",
+        "armağan",
+        "ödül"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "gift.svg",
+        "muted": "gift.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "hand-help",
+      "category": "emotions",
+      "label_tr": "Yardım eli",
+      "tags_tr": [
+        "yardım",
+        "destek",
+        "yardım etmek"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "hand-help.svg",
+        "muted": "hand-help.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "question",
+      "category": "symbols",
+      "label_tr": "Soru",
+      "tags_tr": [
+        "soru",
+        "neden",
+        "nasıl"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "question.svg",
+        "muted": "question.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "check",
+      "category": "symbols",
+      "label_tr": "Tamam",
+      "tags_tr": [
+        "doğru",
+        "tamam",
+        "onay"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "check.svg",
+        "muted": "check.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "lightning-idea",
+      "category": "symbols",
+      "label_tr": "Keşif anı",
+      "tags_tr": [
+        "keşfetmek",
+        "çözmek",
+        "anlamak"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "lightning-idea.svg",
+        "muted": "lightning-idea.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "bookmark",
+      "category": "learning",
+      "label_tr": "Ayraç",
+      "tags_tr": [
+        "ayraç",
+        "işaretlemek",
+        "saklamak"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "bookmark.svg",
+        "muted": "bookmark.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "speech",
+      "category": "learning",
+      "label_tr": "Konuşma",
+      "tags_tr": [
+        "konuşmak",
+        "diyalog",
+        "sohbet"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "speech.svg",
+        "muted": "speech.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "forest",
+      "category": "places",
+      "label_tr": "Orman",
+      "tags_tr": [
+        "orman",
+        "ağaçlık"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "forest.svg",
+        "muted": "forest.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "desert",
+      "category": "places",
+      "label_tr": "Çöl",
+      "tags_tr": [
+        "çöl",
+        "kum",
+        "kum tepesi"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "desert.svg",
+        "muted": "desert.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "volcano",
+      "category": "places",
+      "label_tr": "Yanardağ",
+      "tags_tr": [
+        "yanardağ",
+        "lav",
+        "volkan"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "volcano.svg",
+        "muted": "volcano.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "glasses",
+      "category": "objects",
+      "label_tr": "Gözlük",
+      "tags_tr": [
+        "gözlük",
+        "görmek"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "glasses.svg",
+        "muted": "glasses.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": false,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    },
+    {
+      "id": "feather",
+      "category": "objects",
+      "label_tr": "Tüy",
+      "tags_tr": [
+        "tüy",
+        "baykuş",
+        "kuş tüyü"
+      ],
+      "grade_recommendation": "2-8",
+      "priority": "medium",
+      "tone": "neutral",
+      "files": {
+        "color": "feather.svg",
+        "muted": "feather.muted.svg"
+      },
+      "decorative_default": true,
+      "inline_allowed": true,
+      "license": "HupoRead project custom SVG (generated for this design brief; human QA required before publishing)"
+    }
+  ]
+}

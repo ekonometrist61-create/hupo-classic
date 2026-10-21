@@ -1,0 +1,517 @@
+import 'dart:async';
+
+import 'package:flutter/material.dart';
+
+import '../../models/okuma_models.dart';
+import '../../widgets/hupo/hupo.dart';
+import '../../widgets/okuma/okuma_bilesenler.dart';
+import 'okuma_tema.dart';
+
+/// Cevabı sunucuya gönderip sonucu döner (okuma_cevap_kontrol). Doğru anahtar istemcide yoktur.
+typedef OkumaCevapKaynagi = Future<OkumaCevapSonucu> Function(String soruId, String secenekId);
+
+/// Tek soru, tek deneme, anında geri bildirim (K-0036, H1). Akış: seç → Cevapla → geri bildirim.
+/// Seçim cevaplamadan önce değiştirilebilir. Yanlışta kırmızı X ve ceza yok.
+/// Cevaptan sonra sonraki soruya otomatik geçilir (doğru 3 sn, yanlış 6 sn). "Sonraki" her zaman
+/// süre beklemeden geçirir. Son soruda otomatik geçiş yoktur; sonuç düğmesi ekranda kalır (K-0048).
+class SorularEkrani extends StatefulWidget {
+  const SorularEkrani({
+    super.key,
+    required this.sorular,
+    required this.cevapKontrol,
+    required this.onBitti,
+  });
+
+  final List<OkumaSoru> sorular;
+  final OkumaCevapKaynagi cevapKontrol;
+  final void Function(int dogruSayisi) onBitti;
+
+  @override
+  State<SorularEkrani> createState() => _SorularEkraniState();
+}
+
+class _SorularEkraniState extends State<SorularEkrani> {
+  int _i = 0;
+  int _dogru = 0;
+  String? _secilen;
+  OkumaCevapSonucu? _geri;
+  bool _kontrol = false;
+  bool _hata = false;
+
+  /// Her sorunun sonucu: null cevaplanmadı, true doğru, false yanlış. Nokta göstergesi için.
+  late List<bool?> _sonuclar;
+
+  /// Otomatik geçiş zamanlayıcısı. Elle geçişte ya da ekran kapanınca iptal edilir.
+  Timer? _gecis;
+
+  @override
+  void initState() {
+    super.initState();
+    _sonuclar = List<bool?>.filled(widget.sorular.length, null);
+  }
+
+  @override
+  void dispose() {
+    _gecis?.cancel();
+    super.dispose();
+  }
+
+  void _gecisiZamanla({required bool dogru}) {
+    _gecis?.cancel();
+    if (_sonSoru) return;
+    _gecis = Timer(Duration(seconds: dogru ? OkumaTema.dogruGecisSaniye : OkumaTema.yanlisGecisSaniye), () {
+      if (mounted) _ileri();
+    });
+  }
+
+  bool get _cevaplandi => _geri != null;
+  bool get _sonSoru => _i == widget.sorular.length - 1;
+
+  void _sec(String secenekId) {
+    if (_cevaplandi || _kontrol) return;
+    setState(() {
+      _secilen = secenekId;
+      _hata = false;
+    });
+  }
+
+  Future<void> _cevapla() async {
+    final secilen = _secilen;
+    if (secilen == null || _kontrol || _cevaplandi) return;
+    final soruId = widget.sorular[_i].id;
+    final soruNo = _i;
+    setState(() {
+      _kontrol = true;
+      _hata = false;
+    });
+    try {
+      final g = await widget.cevapKontrol(soruId, secilen);
+      if (!mounted || soruNo != _i) return;
+      setState(() {
+        _geri = g;
+        _kontrol = false;
+        _sonuclar[_i] = g.dogru;
+        if (g.dogru) _dogru++;
+      });
+      _gecisiZamanla(dogru: g.dogru);
+    } catch (_) {
+      if (!mounted) return;
+      setState(() {
+        _kontrol = false;
+        _hata = true;
+      });
+    }
+  }
+
+  void _ileri() {
+    _gecis?.cancel();
+    if (_sonSoru) {
+      widget.onBitti(_dogru);
+      return;
+    }
+    setState(() {
+      _i++;
+      _secilen = null;
+      _geri = null;
+      _hata = false;
+    });
+  }
+
+  void _ipucuAc(String ipucu) {
+    showModalBottomSheet<void>(
+      context: context,
+      builder: (ctx) => SafeArea(
+        child: Padding(
+          padding: const EdgeInsets.fromLTRB(OkumaTema.yanBoslukTelefon, OkumaTema.bosluk8, OkumaTema.yanBoslukTelefon, OkumaTema.bosluk20),
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Row(
+                children: [
+                  const OkumaMaskot(poz: HupoPose.ipucuIster, boyut: OkumaTema.hupoIpucu),
+                  const SizedBox(width: OkumaTema.bosluk16),
+                  Expanded(
+                    child: Semantics(
+                      header: true,
+                      child: Text(
+                        OkumaMetin.soruIpucuBaslik,
+                        style: OkumaTema.yazi(OkumaTema.yaziSoru, kalinlik: OkumaTema.kalinlikBaslik),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+              const SizedBox(height: OkumaTema.bosluk16),
+              Text(
+                ipucu,
+                style: OkumaTema.yazi(OkumaTema.yaziSecenek, satir: 1.5),
+              ),
+              const SizedBox(height: OkumaTema.bosluk20),
+              OkumaIkincilButon(etiket: OkumaMetin.kapat, onPressed: () => Navigator.pop(ctx)),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  _Durum _durum(String secenekId) {
+    final g = _geri;
+    if (g == null) return secenekId == _secilen ? _Durum.secili : _Durum.bos;
+    if (secenekId == _secilen) return g.dogru ? _Durum.dogru : _Durum.yanlis;
+    if (secenekId == g.dogruSecenekId) return _Durum.dogruGoster;
+    return _Durum.pasif;
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    final soru = widget.sorular[_i];
+    final g = _geri;
+    final ipucu = soru.dayanakSayfa == null ? null : OkumaMetin.soruIpucuSayfa(soru.dayanakSayfa!);
+    return OkumaEkranIskeleti(
+      baslik: OkumaMetin.soruSayac(_i + 1, widget.sorular.length),
+      icerik: [
+        Row(
+          children: [
+            Expanded(child: _NoktaGostergesi(sonuclar: _sonuclar, aktif: _i)),
+            if (ipucu != null && !_cevaplandi)
+              TextButton.icon(
+                onPressed: () => _ipucuAc(ipucu),
+                icon: const Icon(Icons.lightbulb_outline_rounded, size: OkumaTema.ikonOrta),
+                label: const Text(OkumaMetin.soruIpucu),
+              ),
+            const SizedBox(width: OkumaTema.bosluk4),
+            const OkumaMaskot(poz: HupoPose.rehberSol, boyut: OkumaTema.hupoRehber),
+          ],
+        ),
+        const SizedBox(height: OkumaTema.bosluk16),
+        Semantics(
+          header: true,
+          child: Text(
+            soru.metin,
+            style: OkumaTema.yazi(OkumaTema.yaziSoru, kalinlik: OkumaTema.kalinlikVurgu, satir: OkumaTema.satirSoru),
+          ),
+        ),
+        const SizedBox(height: OkumaTema.bosluk24),
+        for (var k = 0; k < soru.secenekler.length; k++) ...[
+          _SecenekKarti(
+            harf: 'ABCD'[k],
+            metin: soru.secenekler[k].metin,
+            durum: _durum(soru.secenekler[k].id),
+            onTap: (_cevaplandi || _kontrol) ? null : () => _sec(soru.secenekler[k].id),
+          ),
+          if (k < soru.secenekler.length - 1) const SizedBox(height: OkumaTema.secenekAraligi),
+        ],
+        if (g != null) ...[
+          const SizedBox(height: OkumaTema.bosluk20),
+          _GeriBildirimAlani(key: ValueKey<int>(_i), geri: g),
+        ],
+      ],
+      altEylem: _altEylem(g),
+    );
+  }
+
+  Widget _altEylem(OkumaCevapSonucu? g) {
+    if (g != null) {
+      return OkumaButon(
+        etiket: _sonSoru ? OkumaMetin.soruSonuc : OkumaMetin.soruSonraki,
+        onPressed: _ileri,
+      );
+    }
+    if (_kontrol) {
+      return const OkumaButon(etiket: OkumaMetin.soruCevapla, onPressed: null, yukleniyor: true);
+    }
+    if (_hata) {
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Semantics(
+            liveRegion: true,
+            child: Row(
+              children: [
+                const Icon(Icons.error_outline_rounded, color: OkumaTema.coralDark, size: OkumaTema.ikonOrta),
+                const SizedBox(width: OkumaTema.bosluk8),
+                Expanded(
+                  child: Text(
+                    OkumaMetin.soruKaydedilmedi,
+                    style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.coralDark),
+                  ),
+                ),
+              ],
+            ),
+          ),
+          const SizedBox(height: OkumaTema.bosluk12),
+          OkumaButon(etiket: OkumaMetin.yenidenDene, onPressed: _cevapla),
+        ],
+      );
+    }
+    final secili = _secilen != null;
+    return Column(
+      mainAxisSize: MainAxisSize.min,
+      children: [
+        if (!secili) ...[
+          Text(
+            OkumaMetin.soruSecKisa,
+            textAlign: TextAlign.center,
+            style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
+          ),
+          const SizedBox(height: OkumaTema.bosluk8),
+        ],
+        OkumaButon(
+          etiket: OkumaMetin.soruCevapla,
+          onPressed: secili ? _cevapla : null,
+        ),
+      ],
+    );
+  }
+}
+
+/// Şık durumları. Her durum renk YANINDA ikon ya da metinle de anlatılır.
+enum _Durum { bos, secili, dogru, yanlis, dogruGoster, pasif }
+
+class _SecenekKarti extends StatelessWidget {
+  const _SecenekKarti({required this.harf, required this.metin, required this.durum, this.onTap});
+
+  final String harf;
+  final String metin;
+  final _Durum durum;
+  final VoidCallback? onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final (zemin, kenar, kalinlik, rozetZemin, rozetYazi) = switch (durum) {
+      _Durum.bos => (OkumaTema.surface, OkumaTema.muted, OkumaTema.kenarVarsayilan, OkumaTema.surface, OkumaTema.ink),
+      _Durum.secili => (OkumaTema.primarySoft, OkumaTema.primary, OkumaTema.kenarSecili, OkumaTema.primary, OkumaTema.surface),
+      _Durum.dogru => (OkumaTema.mintSoft, OkumaTema.mintDark, OkumaTema.kenarUyari, OkumaTema.mintDark, OkumaTema.surface),
+      _Durum.yanlis => (OkumaTema.coralSoft, OkumaTema.coralDark, OkumaTema.kenarUyari, OkumaTema.coralDark, OkumaTema.surface),
+      _Durum.dogruGoster => (OkumaTema.mintSoft, OkumaTema.mintDark, OkumaTema.kenarUyari, OkumaTema.mintDark, OkumaTema.surface),
+      _Durum.pasif => (OkumaTema.surface, OkumaTema.lineDark, OkumaTema.kenarVarsayilan, OkumaTema.lineDark, OkumaTema.ink),
+    };
+    final durumEtiketi = switch (durum) {
+      _Durum.secili => 'Seçili',
+      _Durum.dogru => 'Doğru',
+      _Durum.yanlis => 'Bu kez olmadı',
+      _Durum.dogruGoster => 'Doğru cevap',
+      _ => 'Seçilmedi',
+    };
+    final sekil = BorderRadius.circular(OkumaTema.koseButon);
+    return Semantics(
+      button: true,
+      enabled: onTap != null,
+      selected: durum == _Durum.secili,
+      label: '$harf seçeneği: $metin. $durumEtiketi.',
+      onTap: onTap,
+      child: ExcludeSemantics(
+        child: Material(
+          color: zemin,
+          shape: RoundedRectangleBorder(borderRadius: sekil, side: BorderSide(color: kenar, width: kalinlik)),
+          child: InkWell(
+            borderRadius: sekil,
+            onTap: onTap,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(minHeight: OkumaTema.secenekMinYukseklik),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk16, vertical: OkumaTema.bosluk12),
+                child: Row(
+                  children: [
+                    Container(
+                      width: OkumaTema.dokunmaMin - 12,
+                      height: OkumaTema.dokunmaMin - 12,
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(shape: BoxShape.circle, color: rozetZemin),
+                      child: Text(
+                        harf,
+                        style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu, renk: rozetYazi),
+                      ),
+                    ),
+                    const SizedBox(width: OkumaTema.bosluk12),
+                    Expanded(
+                      child: Text(
+                        metin,
+                        style: OkumaTema.yazi(OkumaTema.yaziSecenek, kalinlik: OkumaTema.kalinlikVurgu, satir: 1.35),
+                      ),
+                    ),
+                    const SizedBox(width: OkumaTema.bosluk8),
+                    _DurumIkonu(durum: durum),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/// Şıkların sağındaki durum ikonu ve kısa etiketi (renge ek olarak).
+class _DurumIkonu extends StatelessWidget {
+  const _DurumIkonu({required this.durum});
+
+  final _Durum durum;
+
+  @override
+  Widget build(BuildContext context) {
+    switch (durum) {
+      case _Durum.secili:
+        return Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.check_circle_rounded, color: OkumaTema.primary, size: OkumaTema.ikonOrta),
+            const SizedBox(width: OkumaTema.bosluk4),
+            Text(OkumaMetin.soruSecildi, style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.primaryDark)),
+          ],
+        );
+      case _Durum.dogru:
+        return const Icon(Icons.check_circle_rounded, color: OkumaTema.mintDark, size: OkumaTema.ikonOrta);
+      case _Durum.yanlis:
+        return const Icon(Icons.lightbulb_outline_rounded, color: OkumaTema.coralDark, size: OkumaTema.ikonOrta);
+      case _Durum.dogruGoster:
+        return Row(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            const Icon(Icons.check_circle_rounded, color: OkumaTema.mintDark, size: OkumaTema.ikonOrta),
+            const SizedBox(width: OkumaTema.bosluk4),
+            Text(OkumaMetin.soruDogruCevap, style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.mintDark)),
+          ],
+        );
+      case _Durum.bos:
+      case _Durum.pasif:
+        return const SizedBox.shrink();
+    }
+  }
+}
+
+/// Cevap sonrası geri bildirim: Hupo tepkisi, başlık ve açıklama. Hareket azaltmada anlık.
+class _GeriBildirimAlani extends StatelessWidget {
+  const _GeriBildirimAlani({super.key, required this.geri});
+
+  final OkumaCevapSonucu geri;
+
+  @override
+  Widget build(BuildContext context) {
+    final dogru = geri.dogru;
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        TweenAnimationBuilder<double>(
+          tween: Tween<double>(begin: 0, end: 1),
+          duration: OkumaTema.sure(context, OkumaTema.hareketDogruIkon),
+          curve: Curves.easeOutBack,
+          builder: (context, t, child) {
+            final gorunur = t < 0 ? 0.0 : (t > 1 ? 1.0 : t);
+            return Transform.scale(
+              scale: 0.8 + 0.2 * t,
+              child: Opacity(opacity: gorunur, child: child),
+            );
+          },
+          child: Semantics(
+            liveRegion: true,
+            child: Row(
+              children: [
+                OkumaMaskot(
+                  poz: dogru ? HupoPose.dogru : HupoPose.cokYaklastin,
+                  boyut: OkumaTema.hupoCevap,
+                ),
+                const SizedBox(width: OkumaTema.bosluk12),
+                Expanded(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        dogru ? OkumaMetin.soruDogru : OkumaMetin.olmadi,
+                        style: OkumaTema.yazi(
+                          OkumaTema.yaziSoru,
+                          kalinlik: OkumaTema.kalinlikBaslik,
+                          renk: dogru ? OkumaTema.mintDark : OkumaTema.coralDark,
+                        ),
+                      ),
+                      if (!dogru) ...[
+                        const SizedBox(height: OkumaTema.bosluk4),
+                        Text(
+                          OkumaMetin.soruAciklamaya,
+                          style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
+                        ),
+                      ],
+                    ],
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+        const SizedBox(height: OkumaTema.bosluk16),
+        TweenAnimationBuilder<double>(
+          tween: Tween<double>(begin: 0, end: 1),
+          duration: OkumaTema.sure(context, OkumaTema.hareketAciklama),
+          curve: Curves.easeOut,
+          builder: (context, t, child) {
+            final gorunur = t < 0 ? 0.0 : (t > 1 ? 1.0 : t);
+            return Opacity(
+              opacity: gorunur,
+              child: Transform.translate(
+                offset: Offset(0, (1 - t) * OkumaTema.hareketAciklamaYukselme),
+                child: child,
+              ),
+            );
+          },
+          child: OkumaKart(
+            kenar: dogru ? OkumaTema.mintDark : OkumaTema.coralDark,
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  OkumaMetin.soruAciklama,
+                  style: OkumaTema.yazi(OkumaTema.yaziSecenek, kalinlik: OkumaTema.kalinlikVurgu),
+                ),
+                const SizedBox(height: OkumaTema.bosluk8),
+                Text(
+                  geri.aciklama,
+                  style: OkumaTema.yazi(OkumaTema.yaziSecenek - 1, satir: OkumaTema.satirGovde),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+/// Soru ilerleme göstergesi: cevaplanan dolu nokta, şu anki soru halka, bekleyen içi boş. Renge ek olarak biçim farkı var.
+class _NoktaGostergesi extends StatelessWidget {
+  const _NoktaGostergesi({required this.sonuclar, required this.aktif});
+
+  final List<bool?> sonuclar;
+  final int aktif;
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      label: OkumaMetin.soruSayac(aktif + 1, sonuclar.length),
+      child: ExcludeSemantics(
+        child: Row(
+          children: [
+            for (var k = 0; k < sonuclar.length; k++)
+              Padding(
+                padding: const EdgeInsets.only(right: OkumaTema.bosluk8),
+                child: Container(
+                  width: OkumaTema.bosluk12,
+                  height: OkumaTema.bosluk12,
+                  decoration: BoxDecoration(
+                    shape: BoxShape.circle,
+                    color: sonuclar[k] != null ? OkumaTema.primary : null,
+                    border: Border.all(
+                      color: k == aktif ? OkumaTema.primary : OkumaTema.muted,
+                      width: k == aktif ? OkumaTema.odakHalkaKalinligi : OkumaTema.kenarVarsayilan,
+                    ),
+                  ),
+                ),
+              ),
+          ],
+        ),
+      ),
+    );
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "veliPaneli": {
+    "nav": {
+      "okumaDunyasi": "Reading World"
+    },
+    "okuma": {
+      "giris": "In Reading World your child reads short stories starring a hero of their own choice and answers comprehension questions at the end of each one. On this page you can see their reading habit and which kinds of questions may need support, and choose the values you want to see first in story suggestions.",
+      "hikayeAdedi": "{sayi} stories",
+      "beceri": {
+        "hatirlama": "Finding stated information",
+        "cikarim": "Inference",
+        "yorumlama": "Interpretation",
+        "degerlendirme": "Evaluation",
+        "sozcuk_baglami": "Word meaning"
+      },
+      "hedefDurum": {
+        "introduced": "Introduced",
+        "recognized": "Recognized in context",
+        "retrieved": "Recalled",
+        "transferred": "Used in a new context",
+        "refresh_due": "Time to review"
+      },
+      "ozet": {
+        "baslik": "Reading summary",
+        "donem": "Period",
+        "sonGun": "Last {gun} days",
+        "aralik": "Summary of the last {gun} days.",
+        "yukleniyor": "Loading summary…",
+        "kapali": "Reading World is not yet open for this account. The summary will appear here once it is.",
+        "yetkisiz": "You do not have permission to view this child's reading summary.",
+        "hata": "The summary could not be loaded. Check your connection and try again.",
+        "tekrar": "Try again",
+        "rizaBaslik": "Reading summary is locked",
+        "rizaYok": "We need parental consent before we can show your child's reading data. The summary is not calculated until you give consent.",
+        "rizaGeriCekildi": "You withdrew data consent. The reading summary is not calculated or shown until you give consent again.",
+        "yenile": "I gave consent, refresh the summary",
+        "okunan": "Stories read",
+        "tamamlanan": "Stories completed",
+        "bosDonem": "No stories were read in this period yet. The summary fills in after a few stories."
+      },
+      "premium": {
+        "baslik": "The detailed summary opens with premium",
+        "metin": "Accuracy by question type, theme and value distribution, goal progress and difficulty trend appear with a premium membership or during the trial. Reading and answering questions are available on the free plan (the daily story count may be limited); choosing value priorities is always open.",
+        "baglanti": "See membership and plans"
+      },
+      "dogruluk": {
+        "baslik": "Question accuracy (by question type)",
+        "aciklama": "Which kinds of comprehension questions does your child find easy, and which might need support?",
+        "deger": "{oran}% · {dogru} correct out of {soru} questions",
+        "yetersiz": "Not enough questions answered yet (at least 3 needed)",
+        "not": "These rates do not label your child; they show which type of question is worth talking through together."
+      },
+      "tema": { "baslik": "Themes read", "bos": "No theme data in this period." },
+      "deger": { "baslik": "Maarif values", "bos": "No value data in this period." },
+      "ders": { "baslik": "Subject links", "bos": "No subject data in this period." },
+      "hedefler": {
+        "baslik": "Learning goals",
+        "aciklama": "Reading a story does not mean a goal is learned. \"Recalled\" and \"Used in a new context\" only appear after correct answers on later days.",
+        "bos": "No goals are being tracked yet.",
+        "pekisen": "Consolidated goals"
+      },
+      "zorluk": {
+        "baslik": "Difficulty trend",
+        "aciklama": "Average reading and concept difficulty of stories read each week (1 easy, 5 hard).",
+        "bos": "No data for the difficulty trend yet.",
+        "hafta": "Week",
+        "hikaye": "Stories",
+        "okuma": "Reading difficulty",
+        "kavram": "Concept difficulty"
+      },
+      "sure": {
+        "baslik": "Average reading time",
+        "deger": "{dk} min",
+        "yok": "No data",
+        "not": "For information only; it is not an indicator of learning."
+      },
+      "puan": {
+        "baslik": "Child's story rating",
+        "deger": "{ort} / 5 ({oy} votes)",
+        "sevilen": "Favourite themes: {temalar}",
+        "yetersiz": "Not enough votes yet (at least 3 needed)."
+      },
+      "nasil": {
+        "baslik": "How is this calculated?",
+        "oran": "Accuracy = correct answers / questions answered. Unanswered questions count as incorrect.",
+        "minN": "If a question type has fewer than 3 questions, or the rating has fewer than 3 votes, no rate is shown. This does not mean \"low\"; it only means there is not enough data yet.",
+        "ogrenme": "Learning is indicated by question accuracy and goal progress. XP and reading time are not used as learning measures.",
+        "zaman": "The date range comes from the period selected above; the day boundary uses Istanbul time.",
+        "cinsiyet": "No statistic is broken down by gender, and children are never compared with each other."
+      },
+      "degerler": {
+        "baslik": "Value priorities",
+        "aciklama": "Choose the Maarif values you want to see first in story suggestions (up to 5).",
+        "yasakDegil": "This is not a restriction, just a suggestion priority: stories matching your chosen values are shown first, and other stories stay available.",
+        "yukleniyor": "Loading values…",
+        "kapali": "Reading World is not yet open for this account. You can choose value priorities here once it is.",
+        "hata": "Values could not be loaded. Try again.",
+        "tekrar": "Try again",
+        "secimSayisi": "{sayi} / {enFazla} values selected",
+        "catiNot": "The three values labelled \"umbrella\" (justice, respect, responsibility) are the umbrella values of the Maarif model that run through all the others.",
+        "cati": "umbrella value",
+        "kaydet": "Save priorities",
+        "kaydediliyor": "Saving…",
+        "kaydedildi": "Saved. These values will be shown first in story suggestions.",
+        "hatalar": {
+          "EN_FAZLA_BES": "You can choose at most 5 values.",
+          "TEKRARLI_DEGER": "The same value was selected more than once.",
+          "GECERSIZ_DEGER": "One of the selected values is invalid.",
+          "FORBIDDEN": "You do not have permission to make this choice for this child.",
+          "genel": "Could not save. Your selections were kept; try again."
+        }
+      }
+    }
+  }
+}

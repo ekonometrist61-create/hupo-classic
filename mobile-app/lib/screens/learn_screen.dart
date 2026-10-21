@@ -5,6 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
+import '../widgets/okuma/okuma_bugun_karti.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
 import 'cipher/cipher_list_screen.dart';
@@ -41,6 +42,8 @@ class LearnScreen extends ConsumerWidget {
                 const SizedBox(height: 4),
                 Text(_altBaslik, style: appText(color: AppColors.muted)),
                 const SizedBox(height: 24),
+                // "Senin Hikâyen": bayrak kapalıyken hiçbir yer kaplamaz.
+                const OkumaBugunKarti(),
                 Text(_derslerBasligi, style: appText(size: 19, weight: FontWeight.w900)),
                 const SizedBox(height: 12),
                 SubjectList(

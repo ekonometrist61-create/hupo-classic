@@ -1,0 +1,338 @@
+{
+  "yonetim": {
+    "shell": {
+      "nav": {
+        "hikayeAtolyesi": "Story Workshop"
+      },
+      "pageDesc": {
+        "hikayeAtolyesi": "Import, review, publish and monitor Reading World stories."
+      }
+    },
+    "hikayeAtolyesi": {
+      "title": "Story Workshop",
+      "giris": "Stories are not written in the panel; packages prepared in the workshop pipeline are imported, reviewed and published here. Publishing needs two AI reviews and a human approval, and the person who created a story cannot publish it.",
+      "sekmeler": "Story Workshop sections",
+      "sekme": {
+        "liste": "Stories",
+        "iceAktar": "Import",
+        "karne": "Story scorecard",
+        "bosluk": "Content gaps",
+        "sozluk": "Dictionary and goals",
+        "ayarlar": "Settings"
+      },
+      "loading": "Loading…",
+      "tekrarDene": "Try again",
+      "kurulumYok": "The Reading World database layer is not installed in this environment yet. This section works once it is.",
+      "hatalar": {
+        "demo": "Nothing can be saved in demo mode.",
+        "yetki": "Administrator permission is required for this action.",
+        "genel": "The action could not be completed. Try again later; if it persists, check the record.",
+        "YAYIN_KAPISI": "To publish, Agent A and Agent B reviews must be \"pass\" and the human decision \"approved\". Save the review and try again.",
+        "DORT_GOZ": "Four-eyes rule: the creator cannot publish or approve their own record. Another administrator must do it.",
+        "SURUM_DEGISMEZ": "The content and review of a published version cannot be changed. Import a new version instead.",
+        "GECERSIZ_GECIS": "This status change is not allowed.",
+        "BAD_DURUM": "Invalid status selected.",
+        "BAD_DENETIM": "The review values are invalid.",
+        "SURUM_BULUNAMADI": "Version not found. Refresh the list.",
+        "HIKAYE_BULUNAMADI": "Story not found. Refresh the list.",
+        "BAD_AYAR_ANAHTARI": "This setting is not recognized.",
+        "BAD_AYAR": "The value was not accepted.",
+        "BAD_TUR": "Invalid type.",
+        "BAD_ANAHTAR": "Invalid key format.",
+        "BAD_AD": "The name must be 1 to 80 characters.",
+        "BAD_ID": "The id may only contain lowercase letters, digits and underscores.",
+        "BAD_ETIKET": "The label must be 2 to 120 characters.",
+        "BAD_SINIF": "Grade must be between 1 and 8.",
+        "BAD_KANIT": "Evidence level must be A, B, C or D.",
+        "FORBIDDEN": "You do not have permission for this action.",
+        "EN_FAZLA_BES": "At most 5 values can be selected.",
+        "TEKRARLI_DEGER": "The same value was selected more than once.",
+        "GECERSIZ_DEGER": "An invalid value was selected."
+      },
+      "durumlar": {
+        "taslak": "Draft",
+        "incelemede": "In review",
+        "yayinda": "Published",
+        "arsiv": "Archived"
+      },
+      "denetim": {
+        "ajan_a": "Agent A (facts and accuracy)",
+        "ajan_b": "Agent B (suitability and quality)",
+        "insan": "Human decision"
+      },
+      "denetimDegerleri": {
+        "pending": "Pending",
+        "pass": "Pass",
+        "fail": "Fail",
+        "review_needed": "Needs review",
+        "approved": "Approved",
+        "rejected": "Rejected"
+      },
+      "gecis": {
+        "taslak": { "incelemede": "Send to review", "arsiv": "Archive" },
+        "incelemede": { "taslak": "Return to draft", "yayinda": "Publish", "arsiv": "Archive" },
+        "yayinda": { "arsiv": "Archive" },
+        "arsiv": { "taslak": "Restore to draft" }
+      },
+      "liste": {
+        "durum": "Status",
+        "tumu": "All",
+        "sinif": "Grade",
+        "sinifDeger": "Grade {n}",
+        "tema": "Theme",
+        "deger": "Value",
+        "sayi": "Showing {gorunen} versions (total {toplam}).",
+        "sinirUyari": "The first {limit} versions were loaded. Theme and value filters only apply to loaded versions; narrow by status or grade.",
+        "bos": "No stories imported yet. Upload the first package in the \"Import\" section.",
+        "suzgecBos": "No version matches these filters. Loosen the filters.",
+        "ac": "Review and manage",
+        "kolonBaslik": "Story",
+        "soru": "Questions",
+        "oturum": "Sessions",
+        "islem": "Action"
+      },
+      "detay": {
+        "baslik": "{baslik} version details",
+        "surum": "Version {no}",
+        "kapat": "Close",
+        "denetimBaslik": "Review",
+        "dortGoz": "Four eyes: creator {olusturan}, reviewer {inceleyen}. The creator and the publisher cannot be the same person; the server enforces this.",
+        "yayinaHazir": "All three reviews are complete; ready to publish.",
+        "yayinaHazirDegil": "To publish, Agent A must be \"Pass\", Agent B \"Pass\" and the human decision \"Approved\".",
+        "denetimiKaydet": "Save review",
+        "denetimKilitli": "The review of a published or archived version cannot be changed.",
+        "durumBaslik": "Status flow",
+        "onceKaydet": "Save the review first, then publish.",
+        "yayinOnay": "\"{baslik}\" will be published. Published content cannot be changed; the previous publication of the same story is archived. Continue?",
+        "arsivOnay": "The published version will be archived and hidden from children. Continue?",
+        "denetimKaydedildi": "Review saved.",
+        "durumDegisti": "Status updated: {durum}.",
+        "onizlemeBaslik": "Preview (with sample names)"
+      },
+      "onizleme": {
+        "not": "The preview uses fixed sample names: hero \"{kahraman}\", companion \"{yoldas}\". No real child name is used. Dashed labels are template placeholders.",
+        "sayfa": "Page {no}",
+        "secenek": "optional page",
+        "isaret": "marker: {kod}",
+        "yuva": {
+          "kelime": "word: {yuva}",
+          "atasozu": "proverb: {yuva}",
+          "deyim": "idiom: {yuva}"
+        },
+        "sahne": {
+          "deger": "value scene: {anahtar}",
+          "hareket": "movement scene: {anahtar}"
+        },
+        "bilinmeyen": "unknown part: {tur}",
+        "sorular": "Questions",
+        "dayanak": "evidence: page {sayfa}",
+        "dogru": "correct answer"
+      },
+      "iceAktar": {
+        "aciklama": "Upload or paste the story package (JSON) from the workshop. A dry run comes first: nothing is written, the package is only validated. If you confirm, it is saved as a draft; the status and human approval written in the package are ignored.",
+        "dosya": "Package file (.json)",
+        "yapistir": "or paste the package JSON",
+        "yer": "Paste the package JSON text here",
+        "cokBuyuk": "The file is too large (about 1.5 MB at most). Check the package file.",
+        "jsonHatali": "The text is not valid JSON. Check brackets and quotes.",
+        "kuruCalistir": "Dry run (writes nothing)",
+        "denetleniyor": "Validating…",
+        "temizle": "Clear",
+        "gecersiz": "Package is invalid: {sayi} errors",
+        "gecersizNot": "Nothing was written. Fix the errors in the workshop and upload the package again.",
+        "gecerli": "Package is valid. Not written yet.",
+        "mevcut": "The same story with the same content is already saved; no new version will be created.",
+        "yazildi": "The package was saved as a draft.",
+        "uyarilar": "{sayi} warnings",
+        "yazNot": "If you confirm, the package is written as a draft version and its goals are linked to the unapproved catalog. Review is required to publish.",
+        "onaylaYaz": "Confirm and write as draft",
+        "yaziliyor": "Writing…",
+        "ozet": {
+          "baslik": "Title",
+          "sinif": "Main grade",
+          "sayfa": "Pages",
+          "soru": "Questions",
+          "hedef": "Goals",
+          "surum": "Version"
+        }
+      },
+      "ayarlar": {
+        "kaydet": "Save",
+        "kaydedildi": "{ad} saved.",
+        "aktifOnay": "Reading World will be turned on. If pilot grades or allowed accounts are set, only they see it; otherwise all students do. Continue?",
+        "aktifAcik": "Currently on.",
+        "aktifKapali": "Currently off. Only allowed accounts and administrators can preview.",
+        "ac": "Turn on Reading World",
+        "kapat": "Turn off Reading World",
+        "pilotHepsi": "No grade selected: all grades once the flag is on.",
+        "pilotSecili": "Pilot: grades {liste}.",
+        "sinifDeger": "Grade {n}",
+        "izinliCok": "At most 200 accounts can be entered.",
+        "izinliGecersiz": "IDs must be valid UUIDs. Write one ID per line.",
+        "aralik": "{ad} must be a whole number between {min} and {max}.",
+        "onunKati": "{ad} must be a multiple of 10 (0, 10, 20 or 30).",
+        "xpToplam": "Completion XP plus accuracy bonus XP can be 30 at most.",
+        "alanlar": {
+          "aktif": {
+            "ad": "Feature flag",
+            "aciklama": "Off by default. While off, Reading World does not appear in the child app."
+          },
+          "pilot_siniflari": {
+            "ad": "Pilot grades",
+            "aciklama": "Students in the selected grades get access. If none is selected, everyone has access while the flag is on."
+          },
+          "izinli_kullanicilar": {
+            "ad": "Allowed accounts (preview)",
+            "aciklama": "IDs of accounts that can see in-review stories even while the flag is off. One UUID per line, up to 200."
+          },
+          "okuma_gunluk_hikaye": {
+            "ad": "Free stories per day",
+            "aciklama": "Number of different stories a free user can start per day. Trial and premium are unlimited; questions are never restricted."
+          },
+          "okuma_pdf_aylik_ucretsiz": {
+            "ad": "Free PDFs per month",
+            "aciklama": "Number of different stories a free user can download as PDF per month."
+          },
+          "xp_tamamlama": {
+            "ad": "Completion XP",
+            "aciklama": "Awarded on the first completion of a story. A multiple of 10."
+          },
+          "xp_dogru_bonus": {
+            "ad": "Accuracy bonus XP",
+            "aciklama": "Added when the accuracy threshold is met. A multiple of 10; together with completion XP at most 30."
+          },
+          "xp_gunluk_hikaye_tavani": {
+            "ad": "XP-earning stories per day",
+            "aciklama": "The most stories that can earn XP in one day."
+          },
+          "dogru_orani_esik": {
+            "ad": "Accuracy threshold for bonus (%)",
+            "aciklama": "An accuracy above this percentage earns the bonus XP."
+          },
+          "min_n": {
+            "ad": "Minimum sample size (min-N)",
+            "aciklama": "The fewest students or votes needed to show a value in scorecards and summaries. Below it, \"no observation\" is shown."
+          },
+          "saatlik_baslatma_siniri": {
+            "ad": "Hourly start limit",
+            "aciklama": "The most sessions one student can start per hour."
+          }
+        }
+      },
+      "sozluk": {
+        "baslik": "Label dictionary",
+        "aciklama": "Add or update a theme, subject, Maarif value or umbrella value. Deactivated themes and subjects are rejected in new packages.",
+        "tur": "Dictionary type",
+        "turler": {
+          "tema": "Theme",
+          "ders": "Subject",
+          "deger": "Maarif value",
+          "cati_deger": "Umbrella value"
+        },
+        "anahtar": "Key",
+        "anahtarDeger": "The value key must be between D1 and D20.",
+        "anahtarKod": "The key must start with a lowercase letter and may contain lowercase letters, digits and underscores (2–40 characters).",
+        "ad": "Display name",
+        "adGerekli": "The name must be 1 to 80 characters.",
+        "aktif": "Active",
+        "pasifNot": "An inactive entry cannot be used in new packages.",
+        "kaydet": "Save to dictionary",
+        "kaydediliyor": "Saving…",
+        "kaydedildi": "\"{anahtar}\" saved to the dictionary."
+      },
+      "hedef": {
+        "baslik": "Learning goal catalog",
+        "aciklama": "Add, update or approve a goal. Goals in packages are linked to the unapproved catalog on import.",
+        "id": "Goal id",
+        "idGecersiz": "The id must consist of lowercase letters, digits and underscores (80 characters at most).",
+        "tur": "Type",
+        "turler": {
+          "lexeme": "Word",
+          "idiom": "Idiom",
+          "proverb": "Proverb",
+          "homonym": "Homonym",
+          "concept": "Concept",
+          "fact": "Fact",
+          "misconception": "Misconception",
+          "value": "Value"
+        },
+        "kanit": "Evidence level",
+        "kanitDuzeyleri": {
+          "A": "A · verified against the official curriculum",
+          "B": "B · editor suggestion under an official theme",
+          "C": "C · general pedagogy, no official match",
+          "D": "D · remove from production"
+        },
+        "etiket": "Label",
+        "etiketGecersiz": "The label must be 2 to 120 characters.",
+        "sinif": "Grade (optional)",
+        "sinifYok": "Not specified",
+        "sinifGecersiz": "Grade must be between 1 and 8.",
+        "onayla": "Approve this goal",
+        "dortGoz": "Four eyes: the person who created the goal cannot approve it. If the type or label of an approved goal changes, the approval is dropped.",
+        "onaylaDugme": "Approve goal",
+        "kaydet": "Save goal",
+        "kaydediliyor": "Saving…",
+        "kaydedildi": "Goal \"{id}\" saved.",
+        "onaylandi": "Goal \"{id}\" approved."
+      },
+      "karne": {
+        "aciklama": "Per-story monitoring: completion, children's rating, drop-off page and question item analysis. If the number of students who started is below the minimum, no value is shown; \"no observation\" does not mean zero.",
+        "hikaye": "Story",
+        "sec": "Select a story",
+        "hikayeYok": "No stories for the scorecard yet. Import a package first.",
+        "yetersiz": "No observation: {baslatan} students started this version; at least {min} are needed for metrics.",
+        "gozlemYok": "no observation",
+        "baslatan": "Students started",
+        "oturum": "Sessions",
+        "tamamlama": "Completion rate",
+        "yildiz": "Average rating (votes)",
+        "sorunKodlari": "Reported problems",
+        "sorunYok": "No problems reported.",
+        "birakilan": "Drop-off page (sessions)",
+        "sayfaAdet": "Page {sayfa}: {adet}",
+        "maddeAnalizi": "Question item analysis",
+        "soru": "Question",
+        "cevap": "Answers",
+        "dogruOrani": "Correct rate",
+        "secenekler": "Option distribution"
+      },
+      "bosluk": {
+        "aciklama": "For the selected grade, shows how many stories are published at each theme and Maarif value intersection. Cells with zero are content gaps.",
+        "sinif": "Grade",
+        "sinifDeger": "Grade {n}",
+        "sozlukBos": "There is no active theme or value in the dictionary; the map cannot be drawn.",
+        "ozet": "{bos} of {toplam} intersections have no published story.",
+        "okuma": "Cell: published story count. \"+n\" is the in-review count. Column headers are Maarif value codes (hover to see the name).",
+        "temaDeger": "Theme \\ Value",
+        "tabloBaslik": "Published stories per theme and value intersection for grade {n}",
+        "hucre": {
+          "dolu": "{tema}, {deger}: {yayinda} published, {incelemede} in review.",
+          "yolda": "{tema}, {deger}: none published, {incelemede} in review.",
+          "bos": "{tema}, {deger}: gap, no story."
+        }
+      }
+    },
+    "okumaSinif": {
+      "baslik": "Reading World",
+      "aciklama": "Class story-reading summary. Only class-level aggregates are shown; there are no child names, IDs or individual answers.",
+      "sinif": "Class",
+      "yukleniyor": "Loading…",
+      "hata": "The reading summary could not be loaded. Try again.",
+      "tekrar": "Try again",
+      "yetersiz": "No observation: the summary is hidden because fewer than {min} students read stories in this period.",
+      "aralik": "Last {gun} days",
+      "oturum": "Reading sessions",
+      "tamamlama": "Completion rate",
+      "gozlemYok": "no observation",
+      "dogruluk": "Question accuracy (by question type)",
+      "zorlanilan": "Goals students struggle with",
+      "zorlanilanYok": "No goals to show: at least {min} students must miss a goal for it to appear.",
+      "hedefDeger": "Wrong rate {oran}% · {ogrenci} students",
+      "tema": "Theme interest",
+      "temaYok": "No themes to show: a theme needs at least {min} different students.",
+      "temaDeger": "{ogrenci} students · {hikaye} stories",
+      "not": "Rates are calculated as correct answers / questions answered. A value is not shown for a question type or goal without at least {min} students."
+    }
+  }
+}

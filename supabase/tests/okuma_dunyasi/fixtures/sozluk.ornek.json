@@ -1,0 +1,505 @@
+{
+    "sozluk_surumu":  1,
+    "girdiler":  [
+                     {
+                         "id":  "gizemli",
+                         "tur":  "kelime",
+                         "yazim":  "gizemli",
+                         "anlam":  "Ne olduğu tam anlaşılamayan, sır taşıyan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "sirli",
+                         "tur":  "kelime",
+                         "yazim":  "sırlı",
+                         "anlam":  "Bir sırrı olan, saklı tutulan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "tuhaf",
+                         "tur":  "kelime",
+                         "yazim":  "tuhaf",
+                         "anlam":  "Alışılmadık, insanı şaşırtan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "parlak",
+                         "tur":  "kelime",
+                         "yazim":  "parlak",
+                         "anlam":  "Güçlü ışık saçan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "isildayan",
+                         "tur":  "kelime",
+                         "yazim":  "ışıltılı",
+                         "anlam":  "Hafifçe titreyerek parlayan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "aydinlik",
+                         "tur":  "kelime",
+                         "yazim":  "aydınlık",
+                         "anlam":  "Işığı bol, karanlık olmayan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "hizli",
+                         "tur":  "kelime",
+                         "yazim":  "hızlı",
+                         "anlam":  "Kısa sürede çok yol alan ya da işini çabuk yapan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "cabuk",
+                         "tur":  "kelime",
+                         "yazim":  "çabuk",
+                         "anlam":  "Kısa sürede yapılan, hızlı olan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "suratli",
+                         "tur":  "kelime",
+                         "yazim":  "süratli",
+                         "anlam":  "Hızla giden, çok çabuk hareket eden.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "kararli",
+                         "tur":  "kelime",
+                         "yazim":  "kararlı",
+                         "anlam":  "Bir işi bitirmek için vazgeçmeyen.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "azimli",
+                         "tur":  "kelime",
+                         "yazim":  "azimli",
+                         "anlam":  "Bir hedefe ulaşmak için çok çalışan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "direncli",
+                         "tur":  "kelime",
+                         "yazim":  "dirençli",
+                         "anlam":  "Zorluklara rağmen pes etmeyen.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "sevincli",
+                         "tur":  "kelime",
+                         "yazim":  "sevinçli",
+                         "anlam":  "Mutluluk duyan, sevinç dolu.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "neseli",
+                         "tur":  "kelime",
+                         "yazim":  "neşeli",
+                         "anlam":  "İçinden gelen bir mutlulukla dolu olan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "mutlu",
+                         "tur":  "kelime",
+                         "yazim":  "mutlu",
+                         "anlam":  "Memnun ve huzurlu olan.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "sakin",
+                         "tur":  "kelime",
+                         "yazim":  "sakin",
+                         "anlam":  "Telaşsız, huzurlu.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "durgun",
+                         "tur":  "kelime",
+                         "yazim":  "durgun",
+                         "anlam":  "Hareketsiz, sessiz.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "dingin",
+                         "tur":  "kelime",
+                         "yazim":  "dingin",
+                         "anlam":  "Rahat ve sakin.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  5,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "bir_elin_nesi_var",
+                         "tur":  "atasozu",
+                         "yazim":  "Bir elin nesi var, iki elin sesi var.",
+                         "anlam":  "Birlikte çalışmanın gücü; tek başına zor olan iş birlikte kolaylaşır.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "birlik_dirlik",
+                         "tur":  "atasozu",
+                         "yazim":  "Birlik olan yerde dirlik olur.",
+                         "anlam":  "Birlik içinde olunca işler yolunda gider.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "komsu_kulu",
+                         "tur":  "atasozu",
+                         "yazim":  "Komşu komşunun külüne muhtaçtır.",
+                         "anlam":  "İnsanlar birbirinin yardımına ihtiyaç duyar.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "damlaya_damlaya",
+                         "tur":  "atasozu",
+                         "yazim":  "Damlaya damlaya göl olur.",
+                         "anlam":  "Küçük adımlar sabırla birikince büyük sonuç verir.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "sabreden_derviş",
+                         "tur":  "atasozu",
+                         "yazim":  "Sabreden derviş muradına ermiş.",
+                         "anlam":  "Sabırla bekleyen istediğine sonunda kavuşur.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "sakla_samani",
+                         "tur":  "atasozu",
+                         "yazim":  "Sakla samanı, gelir zamanı.",
+                         "anlam":  "Bir şeyin zamanı gelene kadar sabırla beklemek gerekir.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "el_ele_vermek",
+                         "tur":  "deyim",
+                         "yazim":  "el ele vermek",
+                         "anlam":  "Birlikte çalışmak, yardımlaşmak.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     },
+                     {
+                         "id":  "goz_kulak_olmak",
+                         "tur":  "deyim",
+                         "yazim":  "göz kulak olmak",
+                         "anlam":  "Bir şeyi dikkatle koruyup gözetmek.",
+                         "sinif_alt":  4,
+                         "sinif_ust":  6,
+                         "kaynak_turu":  "editor_onerisi",
+                         "kazanim_kodu":  null,
+                         "durum":  "taslak"
+                     }
+                 ],
+    "yuvalar":  [
+                    {
+                        "ad":  "gizemli_sifat",
+                        "tur":  "kelime",
+                        "adaylar":  [
+                                        {
+                                            "girdi":  "gizemli"
+                                        },
+                                        {
+                                            "girdi":  "sirli"
+                                        },
+                                        {
+                                            "girdi":  "tuhaf"
+                                        }
+                                    ]
+                    },
+                    {
+                        "ad":  "parlak_sifat",
+                        "tur":  "kelime",
+                        "adaylar":  [
+                                        {
+                                            "girdi":  "parlak"
+                                        },
+                                        {
+                                            "girdi":  "isildayan"
+                                        },
+                                        {
+                                            "girdi":  "aydinlik"
+                                        }
+                                    ]
+                    },
+                    {
+                        "ad":  "hizli_sifat",
+                        "tur":  "kelime",
+                        "adaylar":  [
+                                        {
+                                            "girdi":  "hizli"
+                                        },
+                                        {
+                                            "girdi":  "cabuk"
+                                        },
+                                        {
+                                            "girdi":  "suratli"
+                                        }
+                                    ]
+                    },
+                    {
+                        "ad":  "kararli_sifat",
+                        "tur":  "kelime",
+                        "adaylar":  [
+                                        {
+                                            "girdi":  "kararli"
+                                        },
+                                        {
+                                            "girdi":  "azimli"
+                                        },
+                                        {
+                                            "girdi":  "direncli"
+                                        }
+                                    ]
+                    },
+                    {
+                        "ad":  "sevincli_sifat",
+                        "tur":  "kelime",
+                        "adaylar":  [
+                                        {
+                                            "girdi":  "sevincli"
+                                        },
+                                        {
+                                            "girdi":  "neseli"
+                                        },
+                                        {
+                                            "girdi":  "mutlu"
+                                        }
+                                    ]
+                    },
+                    {
+                        "ad":  "sakin_sifat",
+                        "tur":  "kelime",
+                        "adaylar":  [
+                                        {
+                                            "girdi":  "sakin"
+                                        },
+                                        {
+                                            "girdi":  "durgun"
+                                        },
+                                        {
+                                            "girdi":  "dingin"
+                                        }
+                                    ]
+                    },
+                    {
+                        "ad":  "isbirligi",
+                        "tur":  "atasozu",
+                        "adaylar":  [
+                                        {
+                                            "girdi":  "bir_elin_nesi_var"
+                                        },
+                                        {
+                                            "girdi":  "birlik_dirlik"
+                                        },
+                                        {
+                                            "girdi":  "komsu_kulu"
+                                        }
+                                    ]
+                    },
+                    {
+                        "ad":  "sabir",
+                        "tur":  "atasozu",
+                        "adaylar":  [
+                                        {
+                                            "girdi":  "damlaya_damlaya"
+                                        },
+                                        {
+                                            "girdi":  "sabreden_derviş"
+                                        },
+                                        {
+                                            "girdi":  "sakla_samani"
+                                        }
+                                    ]
+                    },
+                    {
+                        "ad":  "el_ele",
+                        "tur":  "deyim",
+                        "adaylar":  [
+                                        {
+                                            "girdi":  "el_ele_vermek"
+                                        }
+                                    ]
+                    },
+                    {
+                        "ad":  "goz_kulak",
+                        "tur":  "deyim",
+                        "adaylar":  [
+                                        {
+                                            "girdi":  "goz_kulak_olmak"
+                                        }
+                                    ]
+                    }
+                ],
+    "kavramlar":  [
+                      {
+                          "ikon":  "🌊",
+                          "kelime":  "deniz"
+                      },
+                      {
+                          "ikon":  "📖",
+                          "kelime":  "kitap"
+                      },
+                      {
+                          "ikon":  "📓",
+                          "kelime":  "defter"
+                      },
+                      {
+                          "ikon":  "🔑",
+                          "kelime":  "anahtar"
+                      },
+                      {
+                          "ikon":  "🗺️",
+                          "kelime":  "harita"
+                      },
+                      {
+                          "ikon":  "🚲",
+                          "kelime":  "bisiklet"
+                      },
+                      {
+                          "ikon":  "🌱",
+                          "kelime":  "tohum"
+                      },
+                      {
+                          "ikon":  "☀️",
+                          "kelime":  "güneş"
+                      },
+                      {
+                          "ikon":  "🎈",
+                          "kelime":  "balon"
+                      },
+                      {
+                          "ikon":  "☁️",
+                          "kelime":  "bulut"
+                      },
+                      {
+                          "ikon":  "🏁",
+                          "kelime":  "yarış"
+                      },
+                      {
+                          "ikon":  "📚",
+                          "kelime":  "kütüphane"
+                      },
+                      {
+                          "ikon":  "🌷",
+                          "kelime":  "bahçe"
+                      },
+                      {
+                          "ikon":  "🐦",
+                          "kelime":  "kuş"
+                      },
+                      {
+                          "ikon":  "🐟",
+                          "kelime":  "balık"
+                      },
+                      {
+                          "ikon":  "💡",
+                          "kelime":  "fener"
+                      },
+                      {
+                          "ikon":  "⭐",
+                          "kelime":  "yıldız"
+                      },
+                      {
+                          "ikon":  "🏖️",
+                          "kelime":  "sahil"
+                      }
+                  ]
+}

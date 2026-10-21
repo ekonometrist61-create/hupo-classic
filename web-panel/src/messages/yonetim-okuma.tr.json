@@ -1,0 +1,338 @@
+{
+  "yonetim": {
+    "shell": {
+      "nav": {
+        "hikayeAtolyesi": "Hikâye Atölyesi"
+      },
+      "pageDesc": {
+        "hikayeAtolyesi": "Okuma Dünyası hikâyelerini içe aktar, denetle, yayınla ve izle."
+      }
+    },
+    "hikayeAtolyesi": {
+      "title": "Hikâye Atölyesi",
+      "giris": "Hikâyeler panelde yazılmaz; atölye hattında hazırlanan paketler burada içe aktarılır, denetlenir ve yayınlanır. Yayın için iki yapay zekâ denetimi ve insan onayı gerekir; hikâyeyi oluşturan kişi yayınlayamaz.",
+      "sekmeler": "Hikâye Atölyesi bölümleri",
+      "sekme": {
+        "liste": "Hikâyeler",
+        "iceAktar": "İçe aktar",
+        "karne": "Hikâye karnesi",
+        "bosluk": "İçerik boşluğu",
+        "sozluk": "Sözlük ve hedefler",
+        "ayarlar": "Ayarlar"
+      },
+      "loading": "Yükleniyor…",
+      "tekrarDene": "Yeniden dene",
+      "kurulumYok": "Okuma Dünyası veritabanı katmanı bu ortamda henüz kurulu değil. Kurulum yapılınca bu bölüm çalışır.",
+      "hatalar": {
+        "demo": "Demo modunda kayıt yapılamaz.",
+        "yetki": "Bu işlem için yönetici yetkisi gerekir.",
+        "genel": "İşlem tamamlanamadı. Bir süre sonra yeniden dene; sorun sürerse kaydı kontrol et.",
+        "YAYIN_KAPISI": "Yayın için Ajan A ve Ajan B denetimi \"geçti\", insan kararı \"onaylandı\" olmalı. Denetimi kaydedip yeniden dene.",
+        "DORT_GOZ": "Dört göz kuralı: Oluşturan kişi kendi kaydını yayınlayamaz veya onaylayamaz. Başka bir yönetici yapmalı.",
+        "SURUM_DEGISMEZ": "Yayındaki sürümün içeriği ve denetimi değiştirilemez. Değişiklik için yeni sürüm içe aktar.",
+        "GECERSIZ_GECIS": "Bu durumdan o duruma geçilemez.",
+        "BAD_DURUM": "Geçersiz durum seçildi.",
+        "BAD_DENETIM": "Denetim değerleri geçersiz.",
+        "SURUM_BULUNAMADI": "Sürüm bulunamadı. Listeyi yenile.",
+        "HIKAYE_BULUNAMADI": "Hikâye bulunamadı. Listeyi yenile.",
+        "BAD_AYAR_ANAHTARI": "Bu ayar tanınmıyor.",
+        "BAD_AYAR": "Değer kabul edilmedi.",
+        "BAD_TUR": "Tür geçersiz.",
+        "BAD_ANAHTAR": "Anahtar biçimi geçersiz.",
+        "BAD_AD": "Ad 1 ile 80 karakter arasında olmalı.",
+        "BAD_ID": "Kimlik yalnızca küçük harf, rakam ve alt çizgi içermeli.",
+        "BAD_ETIKET": "Etiket 2 ile 120 karakter arasında olmalı.",
+        "BAD_SINIF": "Sınıf 1 ile 8 arasında olmalı.",
+        "BAD_KANIT": "Kanıt düzeyi A, B, C veya D olmalı.",
+        "FORBIDDEN": "Bu işlem için yetkin yok.",
+        "EN_FAZLA_BES": "En fazla 5 değer seçilebilir.",
+        "TEKRARLI_DEGER": "Aynı değer birden fazla seçildi.",
+        "GECERSIZ_DEGER": "Geçersiz değer seçildi."
+      },
+      "durumlar": {
+        "taslak": "Taslak",
+        "incelemede": "İncelemede",
+        "yayinda": "Yayında",
+        "arsiv": "Arşiv"
+      },
+      "denetim": {
+        "ajan_a": "Ajan A (olgu ve doğruluk)",
+        "ajan_b": "Ajan B (uygunluk ve kalite)",
+        "insan": "İnsan kararı"
+      },
+      "denetimDegerleri": {
+        "pending": "Bekliyor",
+        "pass": "Geçti",
+        "fail": "Kaldı",
+        "review_needed": "İnceleme gerekli",
+        "approved": "Onaylandı",
+        "rejected": "Reddedildi"
+      },
+      "gecis": {
+        "taslak": { "incelemede": "İncelemeye gönder", "arsiv": "Arşivle" },
+        "incelemede": { "taslak": "Taslağa geri al", "yayinda": "Yayınla", "arsiv": "Arşivle" },
+        "yayinda": { "arsiv": "Arşivle" },
+        "arsiv": { "taslak": "Taslağa geri yükle" }
+      },
+      "liste": {
+        "durum": "Durum",
+        "tumu": "Tümü",
+        "sinif": "Sınıf",
+        "sinifDeger": "{n}. sınıf",
+        "tema": "Tema",
+        "deger": "Değer",
+        "sayi": "{gorunen} sürüm gösteriliyor (toplam {toplam}).",
+        "sinirUyari": "İlk {limit} sürüm yüklendi. Tema ve değer süzgeci yalnızca yüklenen sürümlerde çalışır; daraltmak için durum veya sınıf seç.",
+        "bos": "Henüz içe aktarılmış hikâye yok. \"İçe aktar\" bölümünden ilk paketi yükle.",
+        "suzgecBos": "Bu süzgece uyan sürüm yok. Süzgeçleri gevşet.",
+        "ac": "İncele ve yönet",
+        "kolonBaslik": "Hikâye",
+        "soru": "Soru",
+        "oturum": "Oturum",
+        "islem": "İşlem"
+      },
+      "detay": {
+        "baslik": "{baslik} sürüm ayrıntısı",
+        "surum": "Sürüm {no}",
+        "kapat": "Kapat",
+        "denetimBaslik": "Denetim",
+        "dortGoz": "Dört göz: oluşturan {olusturan}, inceleyen {inceleyen}. Oluşturan ve yayınlayan aynı kişi olamaz; sunucu bunu denetler.",
+        "yayinaHazir": "Üç denetim de tamam; yayına hazır.",
+        "yayinaHazirDegil": "Yayın için Ajan A \"Geçti\", Ajan B \"Geçti\" ve insan kararı \"Onaylandı\" olmalı.",
+        "denetimiKaydet": "Denetimi kaydet",
+        "denetimKilitli": "Yayındaki veya arşivdeki sürümün denetimi değiştirilemez.",
+        "durumBaslik": "Durum akışı",
+        "onceKaydet": "Önce denetimi kaydet, sonra yayınla.",
+        "yayinOnay": "\"{baslik}\" yayınlanacak. Yayınlanan içerik değiştirilemez; aynı hikâyenin önceki yayını arşive alınır. Devam edilsin mi?",
+        "arsivOnay": "Yayındaki sürüm arşive alınacak ve çocuklara gösterilmeyecek. Devam edilsin mi?",
+        "denetimKaydedildi": "Denetim kaydedildi.",
+        "durumDegisti": "Durum güncellendi: {durum}.",
+        "onizlemeBaslik": "Önizleme (örnek adlarla)"
+      },
+      "onizleme": {
+        "not": "Önizleme sabit örnek adlarla çizilir: kahraman \"{kahraman}\", yol arkadaşı \"{yoldas}\". Gerçek çocuk adı kullanılmaz. Kesikli çerçeveli etiketler şablon yer tutuculardır.",
+        "sayfa": "Sayfa {no}",
+        "secenek": "isteğe bağlı sayfa",
+        "isaret": "işaret: {kod}",
+        "yuva": {
+          "kelime": "sözcük: {yuva}",
+          "atasozu": "atasözü: {yuva}",
+          "deyim": "deyim: {yuva}"
+        },
+        "sahne": {
+          "deger": "değer sahnesi: {anahtar}",
+          "hareket": "hareket sahnesi: {anahtar}"
+        },
+        "bilinmeyen": "bilinmeyen parça: {tur}",
+        "sorular": "Sorular",
+        "dayanak": "dayanak: sayfa {sayfa}",
+        "dogru": "doğru yanıt"
+      },
+      "iceAktar": {
+        "aciklama": "Atölyeden çıkan hikâye paketini (JSON) yükle veya yapıştır. Önce kuru çalıştırma yapılır: hiçbir şey yazılmaz, paket doğrulanır. Sonucu onaylarsan taslak olarak kaydedilir; pakette yazan durum ve insan onayı yok sayılır.",
+        "dosya": "Paket dosyası (.json)",
+        "yapistir": "veya paket JSON'unu yapıştır",
+        "yer": "Paket JSON metnini buraya yapıştır",
+        "cokBuyuk": "Dosya çok büyük (en çok yaklaşık 1,5 MB). Paket dosyasını kontrol et.",
+        "jsonHatali": "Metin geçerli bir JSON değil. Parantez ve tırnakları kontrol et.",
+        "kuruCalistir": "Kuru çalıştır (yazmaz)",
+        "denetleniyor": "Denetleniyor…",
+        "temizle": "Temizle",
+        "gecersiz": "Paket geçersiz: {sayi} hata",
+        "gecersizNot": "Hiçbir şey yazılmadı. Hataları atölyede düzeltip paketi yeniden yükle.",
+        "gecerli": "Paket geçerli. Henüz yazılmadı.",
+        "mevcut": "Aynı hikâye ve aynı içerik zaten kayıtlı; yeni sürüm oluşturulmayacak.",
+        "yazildi": "Paket taslak olarak kaydedildi.",
+        "uyarilar": "{sayi} uyarı",
+        "yazNot": "Onaylarsan paket taslak sürüm olarak yazılır ve hedefleri onaysız kataloğa bağlanır. Yayın için denetim gerekir.",
+        "onaylaYaz": "Onayla ve taslak olarak yaz",
+        "yaziliyor": "Yazılıyor…",
+        "ozet": {
+          "baslik": "Başlık",
+          "sinif": "Ana sınıf",
+          "sayfa": "Sayfa",
+          "soru": "Soru",
+          "hedef": "Hedef",
+          "surum": "Sürüm"
+        }
+      },
+      "ayarlar": {
+        "kaydet": "Kaydet",
+        "kaydedildi": "{ad} kaydedildi.",
+        "aktifOnay": "Okuma Dünyası açılacak. Pilot sınıf ve izinli hesap kısıtı varsa yalnızca onlara görünür; yoksa tüm öğrencilere açılır. Devam edilsin mi?",
+        "aktifAcik": "Şu an açık.",
+        "aktifKapali": "Şu an kapalı. Yalnızca izinli hesaplar ve yöneticiler önizleme yapabilir.",
+        "ac": "Okuma Dünyası'nı aç",
+        "kapat": "Okuma Dünyası'nı kapat",
+        "pilotHepsi": "Hiçbir sınıf seçili değil: bayrak açıldığında tüm sınıflar.",
+        "pilotSecili": "Pilot: {liste}. sınıflar.",
+        "sinifDeger": "{n}. sınıf",
+        "izinliCok": "En çok 200 hesap girilebilir.",
+        "izinliGecersiz": "Kimlikler geçerli bir UUID olmalı. Her satıra bir kimlik yaz.",
+        "aralik": "{ad} {min} ile {max} arasında tam sayı olmalı.",
+        "onunKati": "{ad} 10'un katı olmalı (0, 10, 20 veya 30).",
+        "xpToplam": "Tamamlama XP'si ile doğru oranı bonusunun toplamı en çok 30 olabilir.",
+        "alanlar": {
+          "aktif": {
+            "ad": "Özellik bayrağı",
+            "aciklama": "Varsayılan kapalıdır. Kapalıyken çocuk uygulamasında Okuma Dünyası görünmez."
+          },
+          "pilot_siniflari": {
+            "ad": "Pilot sınıflar",
+            "aciklama": "Seçili sınıflardaki öğrenciler erişir. Hiçbiri seçili değilse bayrak açıkken herkes erişir."
+          },
+          "izinli_kullanicilar": {
+            "ad": "İzinli hesaplar (önizleme)",
+            "aciklama": "Bayrak kapalıyken bile incelemedeki hikâyeleri görebilecek hesapların kimlikleri. Her satıra bir UUID, en çok 200."
+          },
+          "okuma_gunluk_hikaye": {
+            "ad": "Günlük ücretsiz hikâye",
+            "aciklama": "Ücretsiz kullanıcının günde başlatabileceği farklı hikâye sayısı. Deneme ve premium sınırsızdır; sorular kısıtlanmaz."
+          },
+          "okuma_pdf_aylik_ucretsiz": {
+            "ad": "Aylık ücretsiz PDF hakkı",
+            "aciklama": "Ücretsiz kullanıcının ayda indirebileceği farklı hikâye sayısı."
+          },
+          "xp_tamamlama": {
+            "ad": "Tamamlama XP'si",
+            "aciklama": "Hikâyenin ilk tamamlanışında verilir. 10'un katı."
+          },
+          "xp_dogru_bonus": {
+            "ad": "Doğru oranı bonus XP'si",
+            "aciklama": "Doğru oranı eşiği aşılırsa eklenir. 10'un katı; tamamlama XP'siyle toplamı en çok 30."
+          },
+          "xp_gunluk_hikaye_tavani": {
+            "ad": "Günlük XP veren hikâye sayısı",
+            "aciklama": "Bir günde XP kazandıran en çok hikâye sayısı."
+          },
+          "dogru_orani_esik": {
+            "ad": "Bonus için doğru oranı eşiği (%)",
+            "aciklama": "Bu yüzdenin üzerinde doğru oranı bonus XP kazandırır."
+          },
+          "min_n": {
+            "ad": "Asgari örnek sayısı (min-N)",
+            "aciklama": "Karnede ve özetlerde değer göstermek için gereken en az öğrenci veya oy sayısı. Altında \"gözlem yok\" yazılır."
+          },
+          "saatlik_baslatma_siniri": {
+            "ad": "Saatlik başlatma sınırı",
+            "aciklama": "Bir öğrencinin saatte başlatabileceği en çok oturum sayısı."
+          }
+        }
+      },
+      "sozluk": {
+        "baslik": "Etiket sözlüğü",
+        "aciklama": "Tema, ders, Maarif değeri ve çatı değer ekle veya güncelle. Pasife alınan tema ve ders yeni paketlerde reddedilir.",
+        "tur": "Sözlük türü",
+        "turler": {
+          "tema": "Tema",
+          "ders": "Ders",
+          "deger": "Maarif değeri",
+          "cati_deger": "Çatı değer"
+        },
+        "anahtar": "Anahtar",
+        "anahtarDeger": "Değer anahtarı D1 ile D20 arasında olmalı.",
+        "anahtarKod": "Anahtar küçük harfle başlamalı; küçük harf, rakam ve alt çizgi içerebilir (2–40 karakter).",
+        "ad": "Görünen ad",
+        "adGerekli": "Ad 1 ile 80 karakter arasında olmalı.",
+        "aktif": "Aktif",
+        "pasifNot": "Pasif kayıt yeni paketlerde kullanılamaz.",
+        "kaydet": "Sözlüğe kaydet",
+        "kaydediliyor": "Kaydediliyor…",
+        "kaydedildi": "\"{anahtar}\" sözlüğe kaydedildi."
+      },
+      "hedef": {
+        "baslik": "Öğrenme hedefi kataloğu",
+        "aciklama": "Hedef ekle, güncelle veya onayla. Paketlerdeki hedefler içe aktarmada onaysız kataloğa bağlanır.",
+        "id": "Hedef kimliği",
+        "idGecersiz": "Kimlik küçük harf, rakam ve alt çizgiden oluşmalı (en çok 80 karakter).",
+        "tur": "Tür",
+        "turler": {
+          "lexeme": "Sözcük",
+          "idiom": "Deyim",
+          "proverb": "Atasözü",
+          "homonym": "Eş sesli",
+          "concept": "Kavram",
+          "fact": "Olgu",
+          "misconception": "Yanlış kavram",
+          "value": "Değer"
+        },
+        "kanit": "Kanıt düzeyi",
+        "kanitDuzeyleri": {
+          "A": "A · resmî kazanımdan doğrulandı",
+          "B": "B · resmî tema altında editör önerisi",
+          "C": "C · genel pedagojik, resmî eşleşme yok",
+          "D": "D · üretimden çıkar"
+        },
+        "etiket": "Etiket",
+        "etiketGecersiz": "Etiket 2 ile 120 karakter arasında olmalı.",
+        "sinif": "Sınıf (isteğe bağlı)",
+        "sinifYok": "Belirtilmedi",
+        "sinifGecersiz": "Sınıf 1 ile 8 arasında olmalı.",
+        "onayla": "Bu hedefi onayla",
+        "dortGoz": "Dört göz: hedefi oluşturan kişi onaylayamaz. Onaylı hedefin türü veya etiketi değişirse onay düşer.",
+        "onaylaDugme": "Hedefi onayla",
+        "kaydet": "Hedefi kaydet",
+        "kaydediliyor": "Kaydediliyor…",
+        "kaydedildi": "\"{id}\" hedefi kaydedildi.",
+        "onaylandi": "\"{id}\" hedefi onaylandı."
+      },
+      "karne": {
+        "aciklama": "Hikâye başına izleme: tamamlama, çocukların puanı, bırakılan sayfa ve soru madde analizi. Başlatan öğrenci sayısı asgari sayının altındaysa değer gösterilmez; \"gözlem yok\" sıfır demek değildir.",
+        "hikaye": "Hikâye",
+        "sec": "Hikâye seç",
+        "hikayeYok": "Karne için henüz hikâye yok. Önce bir paket içe aktar.",
+        "yetersiz": "Gözlem yok: bu sürümü başlatan öğrenci sayısı {baslatan}; metrikler için en az {min} gerekir.",
+        "gozlemYok": "gözlem yok",
+        "baslatan": "Başlatan öğrenci",
+        "oturum": "Oturum",
+        "tamamlama": "Tamamlama oranı",
+        "yildiz": "Ortalama puan (oy)",
+        "sorunKodlari": "Bildirilen sorunlar",
+        "sorunYok": "Bildirilen sorun yok.",
+        "birakilan": "Bırakılan sayfa (oturum sayısı)",
+        "sayfaAdet": "Sayfa {sayfa}: {adet}",
+        "maddeAnalizi": "Soru madde analizi",
+        "soru": "Soru",
+        "cevap": "Cevap sayısı",
+        "dogruOrani": "Doğru oranı",
+        "secenekler": "Seçenek dağılımı"
+      },
+      "bosluk": {
+        "aciklama": "Seçili sınıf için tema ve Maarif değeri kesişimlerinde kaç hikâyenin yayında olduğunu gösterir. Sıfır olan hücreler içerik boşluğudur.",
+        "sinif": "Sınıf",
+        "sinifDeger": "{n}. sınıf",
+        "sozlukBos": "Sözlükte aktif tema veya değer yok; harita çizilemiyor.",
+        "ozet": "{toplam} kesişimin {bos} tanesinde yayında hikâye yok.",
+        "okuma": "Hücre: yayındaki hikâye sayısı. \"+n\" incelemedeki hikâye sayısıdır. Sütun başlıkları Maarif değer kodlarıdır (üzerine gelince ad görünür).",
+        "temaDeger": "Tema \\ Değer",
+        "tabloBaslik": "{n}. sınıf için tema ve değer kesişimlerinde yayındaki hikâye sayısı",
+        "hucre": {
+          "dolu": "{tema}, {deger}: {yayinda} yayında, {incelemede} incelemede.",
+          "yolda": "{tema}, {deger}: yayında yok, {incelemede} incelemede.",
+          "bos": "{tema}, {deger}: boşluk, hikâye yok."
+        }
+      }
+    },
+    "okumaSinif": {
+      "baslik": "Okuma Dünyası",
+      "aciklama": "Sınıfın hikâye okuma özeti. Yalnızca sınıf düzeyinde toplu bilgi gösterilir; çocuk adı, kimliği ve tek tek cevaplar yoktur.",
+      "sinif": "Sınıf",
+      "yukleniyor": "Yükleniyor…",
+      "hata": "Okuma özeti alınamadı. Yeniden dene.",
+      "tekrar": "Yeniden dene",
+      "yetersiz": "Gözlem yok: bu dönemde en az {min} öğrenci hikâye okumadığı için özet gösterilmiyor.",
+      "aralik": "Son {gun} gün",
+      "oturum": "Okuma oturumu",
+      "tamamlama": "Tamamlama oranı",
+      "gozlemYok": "gözlem yok",
+      "dogruluk": "Soru doğruluğu (işlem türüne göre)",
+      "zorlanilan": "Zorlanılan hedefler",
+      "zorlanilanYok": "Gösterilecek hedef yok: bir hedef için en az {min} öğrencinin yanlış yapması gerekir.",
+      "hedefDeger": "Yanlış oranı %{oran} · {ogrenci} öğrenci",
+      "tema": "Tema ilgisi",
+      "temaYok": "Gösterilecek tema yok: bir tema için en az {min} farklı öğrenci gerekir.",
+      "temaDeger": "{ogrenci} öğrenci · {hikaye} hikâye",
+      "not": "Oranlar doğru cevap / cevaplanan soru olarak hesaplanır. Bir işlem türü veya hedef için en az {min} öğrenci yoksa değer gösterilmez."
+    }
+  }
+}

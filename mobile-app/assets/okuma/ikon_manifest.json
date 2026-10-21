@@ -1,0 +1,565 @@
+﻿{
+    "surum":  1,
+    "ikonlar":  [
+                    {
+                        "id":  "ikon_navigasyon_ana_sayfa",
+                        "kategori":  "navigasyon",
+                        "etiket":  "Ana Sayfa",
+                        "dosya":  "ikonlar/ikon_navigasyon_ana_sayfa.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_navigasyon_kesfet",
+                        "kategori":  "navigasyon",
+                        "etiket":  "Keşfet",
+                        "dosya":  "ikonlar/ikon_navigasyon_kesfet.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_navigasyon_hikayeler",
+                        "kategori":  "navigasyon",
+                        "etiket":  "Hikâyeler",
+                        "dosya":  "ikonlar/ikon_navigasyon_hikayeler.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_navigasyon_koleksiyon",
+                        "kategori":  "navigasyon",
+                        "etiket":  "Koleksiyon",
+                        "dosya":  "ikonlar/ikon_navigasyon_koleksiyon.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_navigasyon_gorevler",
+                        "kategori":  "navigasyon",
+                        "etiket":  "Görevler",
+                        "dosya":  "ikonlar/ikon_navigasyon_gorevler.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_navigasyon_profil",
+                        "kategori":  "navigasyon",
+                        "etiket":  "Profil",
+                        "dosya":  "ikonlar/ikon_navigasyon_profil.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_olusturma_kahraman",
+                        "kategori":  "olusturma",
+                        "etiket":  "Kahraman",
+                        "dosya":  "ikonlar/ikon_olusturma_kahraman.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_olusturma_konu",
+                        "kategori":  "olusturma",
+                        "etiket":  "Konu",
+                        "dosya":  "ikonlar/ikon_olusturma_konu.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_olusturma_ortam",
+                        "kategori":  "olusturma",
+                        "etiket":  "Ortam",
+                        "dosya":  "ikonlar/ikon_olusturma_ortam.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_olusturma_deger",
+                        "kategori":  "olusturma",
+                        "etiket":  "Değer",
+                        "dosya":  "ikonlar/ikon_olusturma_deger.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_olusturma_yol_arkadasi",
+                        "kategori":  "olusturma",
+                        "etiket":  "Yol arkadaşı",
+                        "dosya":  "ikonlar/ikon_olusturma_yol_arkadasi.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_olusturma_uzunluk",
+                        "kategori":  "olusturma",
+                        "etiket":  "Uzunluk",
+                        "dosya":  "ikonlar/ikon_olusturma_uzunluk.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma_oku",
+                        "kategori":  "okuma",
+                        "etiket":  "Oku",
+                        "dosya":  "ikonlar/ikon_okuma_oku.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma_dinle",
+                        "kategori":  "okuma",
+                        "etiket":  "Dinle",
+                        "dosya":  "ikonlar/ikon_okuma_dinle.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma_duraklat",
+                        "kategori":  "okuma",
+                        "etiket":  "Duraklat",
+                        "dosya":  "ikonlar/ikon_okuma_duraklat.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma_devam",
+                        "kategori":  "okuma",
+                        "etiket":  "Devam",
+                        "dosya":  "ikonlar/ikon_okuma_devam.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma_sozluk",
+                        "kategori":  "okuma",
+                        "etiket":  "Sözlük",
+                        "dosya":  "ikonlar/ikon_okuma_sozluk.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma_not",
+                        "kategori":  "okuma",
+                        "etiket":  "Not",
+                        "dosya":  "ikonlar/ikon_okuma_not.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma_kaydet",
+                        "kategori":  "okuma",
+                        "etiket":  "Kaydet",
+                        "dosya":  "ikonlar/ikon_okuma_kaydet.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma_favori",
+                        "kategori":  "okuma",
+                        "etiket":  "Favori",
+                        "dosya":  "ikonlar/ikon_okuma_favori.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun_xp",
+                        "kategori":  "oyun",
+                        "etiket":  "XP",
+                        "dosya":  "ikonlar/ikon_oyun_xp.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun_yildiz",
+                        "kategori":  "oyun",
+                        "etiket":  "Yıldız",
+                        "dosya":  "ikonlar/ikon_oyun_yildiz.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun_seviye",
+                        "kategori":  "oyun",
+                        "etiket":  "Seviye",
+                        "dosya":  "ikonlar/ikon_oyun_seviye.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun_rozet",
+                        "kategori":  "oyun",
+                        "etiket":  "Rozet",
+                        "dosya":  "ikonlar/ikon_oyun_rozet.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun_sandik",
+                        "kategori":  "oyun",
+                        "etiket":  "Sandık",
+                        "dosya":  "ikonlar/ikon_oyun_sandik.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun_kupa",
+                        "kategori":  "oyun",
+                        "etiket":  "Kupa",
+                        "dosya":  "ikonlar/ikon_oyun_kupa.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun_seri",
+                        "kategori":  "oyun",
+                        "etiket":  "Seri",
+                        "dosya":  "ikonlar/ikon_oyun_seri.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun_basari",
+                        "kategori":  "oyun",
+                        "etiket":  "Başarı",
+                        "dosya":  "ikonlar/ikon_oyun_basari.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_kullanici_arkadas",
+                        "kategori":  "kullanici",
+                        "etiket":  "Arkadaş",
+                        "dosya":  "ikonlar/ikon_kullanici_arkadas.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_kullanici_aile",
+                        "kategori":  "kullanici",
+                        "etiket":  "Aile",
+                        "dosya":  "ikonlar/ikon_kullanici_aile.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_kullanici_davet",
+                        "kategori":  "kullanici",
+                        "etiket":  "Davet",
+                        "dosya":  "ikonlar/ikon_kullanici_davet.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_kullanici_avatar",
+                        "kategori":  "kullanici",
+                        "etiket":  "Avatar",
+                        "dosya":  "ikonlar/ikon_kullanici_avatar.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_kullanici_bildirim",
+                        "kategori":  "kullanici",
+                        "etiket":  "Bildirim",
+                        "dosya":  "ikonlar/ikon_kullanici_bildirim.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_kullanici_kahraman_kutuphanesi",
+                        "kategori":  "kullanici",
+                        "etiket":  "Kahraman kitaplığı",
+                        "dosya":  "ikonlar/ikon_kullanici_kahraman_kutuphanesi.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_veli_ilerleme",
+                        "kategori":  "veli",
+                        "etiket":  "İlerleme",
+                        "dosya":  "ikonlar/ikon_veli_ilerleme.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_veli_rapor",
+                        "kategori":  "veli",
+                        "etiket":  "Rapor",
+                        "dosya":  "ikonlar/ikon_veli_rapor.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_veli_okuma_suresi",
+                        "kategori":  "veli",
+                        "etiket":  "Okuma süresi",
+                        "dosya":  "ikonlar/ikon_veli_okuma_suresi.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_veli_hedefler",
+                        "kategori":  "veli",
+                        "etiket":  "Hedefler",
+                        "dosya":  "ikonlar/ikon_veli_hedefler.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_veli_guvenlik",
+                        "kategori":  "veli",
+                        "etiket":  "Güvenlik",
+                        "dosya":  "ikonlar/ikon_veli_guvenlik.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_veli_takvim",
+                        "kategori":  "veli",
+                        "etiket":  "Takvim",
+                        "dosya":  "ikonlar/ikon_veli_takvim.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_ayarlar",
+                        "kategori":  "sistem",
+                        "etiket":  "Ayarlar",
+                        "dosya":  "ikonlar/ikon_sistem_ayarlar.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_paylas",
+                        "kategori":  "sistem",
+                        "etiket":  "Paylaş",
+                        "dosya":  "ikonlar/ikon_sistem_paylas.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_yardim",
+                        "kategori":  "sistem",
+                        "etiket":  "Yardım",
+                        "dosya":  "ikonlar/ikon_sistem_yardim.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_cevrimdisi",
+                        "kategori":  "sistem",
+                        "etiket":  "Çevrimdışı",
+                        "dosya":  "ikonlar/ikon_sistem_cevrimdisi.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_premium",
+                        "kategori":  "sistem",
+                        "etiket":  "Premium",
+                        "dosya":  "ikonlar/ikon_sistem_premium.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_kilit",
+                        "kategori":  "sistem",
+                        "etiket":  "Kilit",
+                        "dosya":  "ikonlar/ikon_sistem_kilit.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_onay",
+                        "kategori":  "sistem",
+                        "etiket":  "Onay",
+                        "dosya":  "ikonlar/ikon_sistem_onay.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_geri",
+                        "kategori":  "sistem",
+                        "etiket":  "Geri",
+                        "dosya":  "ikonlar/ikon_sistem_geri.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_ileri",
+                        "kategori":  "sistem",
+                        "etiket":  "İleri",
+                        "dosya":  "ikonlar/ikon_sistem_ileri.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_kapat",
+                        "kategori":  "sistem",
+                        "etiket":  "Kapat",
+                        "dosya":  "ikonlar/ikon_sistem_kapat.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_ekle",
+                        "kategori":  "sistem",
+                        "etiket":  "Ekle",
+                        "dosya":  "ikonlar/ikon_sistem_ekle.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_duzenle",
+                        "kategori":  "sistem",
+                        "etiket":  "Düzenle",
+                        "dosya":  "ikonlar/ikon_sistem_duzenle.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_sil",
+                        "kategori":  "sistem",
+                        "etiket":  "Sil",
+                        "dosya":  "ikonlar/ikon_sistem_sil.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_ara",
+                        "kategori":  "sistem",
+                        "etiket":  "Ara",
+                        "dosya":  "ikonlar/ikon_sistem_ara.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_filtre",
+                        "kategori":  "sistem",
+                        "etiket":  "Filtre",
+                        "dosya":  "ikonlar/ikon_sistem_filtre.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_ses_ac",
+                        "kategori":  "sistem",
+                        "etiket":  "Ses açık",
+                        "dosya":  "ikonlar/ikon_sistem_ses_ac.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_ses_kapat",
+                        "kategori":  "sistem",
+                        "etiket":  "Ses kapalı",
+                        "dosya":  "ikonlar/ikon_sistem_ses_kapat.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_cevrimici",
+                        "kategori":  "sistem",
+                        "etiket":  "Çevrimiçi",
+                        "dosya":  "ikonlar/ikon_sistem_cevrimici.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_bilgi",
+                        "kategori":  "sistem",
+                        "etiket":  "Bilgi",
+                        "dosya":  "ikonlar/ikon_sistem_bilgi.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_uyari",
+                        "kategori":  "sistem",
+                        "etiket":  "Uyarı",
+                        "dosya":  "ikonlar/ikon_sistem_uyari.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_mesaj",
+                        "kategori":  "sistem",
+                        "etiket":  "Mesaj",
+                        "dosya":  "ikonlar/ikon_sistem_mesaj.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_tema",
+                        "kategori":  "sistem",
+                        "etiket":  "Tema",
+                        "dosya":  "ikonlar/ikon_sistem_tema.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_dil",
+                        "kategori":  "sistem",
+                        "etiket":  "Dil",
+                        "dosya":  "ikonlar/ikon_sistem_dil.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_sistem_magaza",
+                        "kategori":  "sistem",
+                        "etiket":  "Mağaza",
+                        "dosya":  "ikonlar/ikon_sistem_magaza.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun2_elmas",
+                        "kategori":  "oyun2",
+                        "etiket":  "Elmas",
+                        "dosya":  "ikonlar/ikon_oyun2_elmas.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun2_tac",
+                        "kategori":  "oyun2",
+                        "etiket":  "Taç",
+                        "dosya":  "ikonlar/ikon_oyun2_tac.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun2_hediye",
+                        "kategori":  "oyun2",
+                        "etiket":  "Hediye",
+                        "dosya":  "ikonlar/ikon_oyun2_hediye.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_oyun2_hedef_gun",
+                        "kategori":  "oyun2",
+                        "etiket":  "Günlük hedef",
+                        "dosya":  "ikonlar/ikon_oyun2_hedef_gun.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_sayfa_cevir",
+                        "kategori":  "okuma2",
+                        "etiket":  "Sayfa çevir",
+                        "dosya":  "ikonlar/ikon_okuma2_sayfa_cevir.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_yazi_boyutu",
+                        "kategori":  "okuma2",
+                        "etiket":  "Yazı boyutu",
+                        "dosya":  "ikonlar/ikon_okuma2_yazi_boyutu.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_mikrofon",
+                        "kategori":  "okuma2",
+                        "etiket":  "Mikrofon",
+                        "dosya":  "ikonlar/ikon_okuma2_mikrofon.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_kalem",
+                        "kategori":  "okuma2",
+                        "etiket":  "Kalem",
+                        "dosya":  "ikonlar/ikon_okuma2_kalem.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_kitap_kapali",
+                        "kategori":  "okuma2",
+                        "etiket":  "Kapalı kitap",
+                        "dosya":  "ikonlar/ikon_okuma2_kitap_kapali.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_yeni_hikaye",
+                        "kategori":  "okuma2",
+                        "etiket":  "Yeni hikâye",
+                        "dosya":  "ikonlar/ikon_okuma2_yeni_hikaye.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_ozet",
+                        "kategori":  "okuma2",
+                        "etiket":  "Özet",
+                        "dosya":  "ikonlar/ikon_okuma2_ozet.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_tekrar",
+                        "kategori":  "okuma2",
+                        "etiket":  "Tekrar",
+                        "dosya":  "ikonlar/ikon_okuma2_tekrar.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_saat",
+                        "kategori":  "okuma2",
+                        "etiket":  "Saat",
+                        "dosya":  "ikonlar/ikon_okuma2_saat.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_sessiz_saat",
+                        "kategori":  "okuma2",
+                        "etiket":  "Sessiz saat",
+                        "dosya":  "ikonlar/ikon_okuma2_sessiz_saat.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_ebeveyn_kapisi",
+                        "kategori":  "okuma2",
+                        "etiket":  "Veli kapısı",
+                        "dosya":  "ikonlar/ikon_okuma2_ebeveyn_kapisi.webp",
+                        "uretildi":  true
+                    },
+                    {
+                        "id":  "ikon_okuma2_yildiz_sandik",
+                        "kategori":  "okuma2",
+                        "etiket":  "Ödül sandığı",
+                        "dosya":  "ikonlar/ikon_okuma2_yildiz_sandik.webp",
+                        "uretildi":  true
+                    }
+                ]
+}

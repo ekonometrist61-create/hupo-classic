@@ -10,6 +10,7 @@ import { useCurrentRole } from "@/hooks/useCurrentRole";
 import { DEMO_MODE } from "@/lib/demo-mode";
 import { createClient } from "@/utils/supabase/client";
 import type { AdminUser } from "../types";
+import OkumaSinifKarti from "../hikaye-atolyesi/OkumaSinifKarti";
 import ErrorNote from "./ErrorNote";
 import ModalShell from "./ModalShell";
 import OgretmenPicker from "./OgretmenPicker";
@@ -484,6 +485,11 @@ export default function SiniflarManager() {
           </div>
         )}
       </section>
+
+      {/* Okuma Dünyası kartı: yalnızca öğretmen, sınıf düzeyinde toplu özet (modül kurulu değilse kendini gizler). */}
+      {ogretmen && !loading && !error && raporlar.length > 0 && (
+        <OkumaSinifKarti siniflar={raporlar.map((r) => ({ id: r.id, ad: r.ad }))} />
+      )}
 
       {/* Yazma yalnızca admin için; öğretmen bu modalı hiç görmez. */}
       {yonetici && (
