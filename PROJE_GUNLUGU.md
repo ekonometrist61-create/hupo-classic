@@ -84,6 +84,11 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - **Doğrulanmadı:** web `next build`, cihaz/Flutter Web görünümü.
 - **Sıradaki:** Faz 1 (V3 arayüz portu), sözleşme genişletmesi (ayrı migration onayı), 120 hikâye pilot dönüşümü.
 
+### K-0095 · 2026-10-21 · TSR/MOB · 2. sınıf pilot: 15 hikâye biçime dönüştürüldü, derlendi
+- **Yapılan:** 15 hikâye `icerik/pilot-2-sinif/` altında kahraman (`{kahraman}`) ve yol arkadaşı (`{yoldas}`) tokenlarıyla yeniden yazıldı; her biri 4 okuduğunu anlama sorusu, cevap anahtarı ve 2 kelime + 1 değer hedefi taşıyor. Sözlük: 30 yeni yuva (`ornek/sozluk.pilot-2.json`).
+- **Doğrulama:** 15/15 derleme hatasız, 15 paket üretildi. Kalan uyarılar bilerek: kanıt C, 4 soru (karar), yuva aday sayısı (taslak).
+- **Açık:** uzunluk standardı (120–220 rehber / 300–500 katalog) kararı; editör ve insan okuması; A/K telif kaydı; uzak DB'ye yazma yok. Ayrıntı: `docs/okuma-entegrasyon/PILOT_2_SINIF_URETIM_2026-10-21.md`.
+
 ### K-0094 · 2026-10-21 · MOB/TSR · HupoRead Faz 1(b): V3 bileşenleri, süre kuralı, geri sayım
 - **Tür:** Uygulama + Düzeltme
 - **Konu:** MOB, TSR
