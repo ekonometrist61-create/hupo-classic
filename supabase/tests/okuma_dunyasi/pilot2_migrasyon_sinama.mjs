@@ -21,6 +21,7 @@ const migrasyonlar = [
   mig('20261051000000_okuma_dusun_alani.sql'),
   mig('20261057000000_okuma_hikaye_fisleri.sql'),
   mig('20261058000000_okuma_paket_fis_kodu.sql'),
+  mig('20261060000000_okuma_hikaye_turleri.sql'),
 ];
 
 const db = new PGlite();
@@ -31,8 +32,11 @@ for (const m of migrasyonlar) await db.exec(oku(m));
 await db.query('insert into auth.users (id, email) values ($1, $2)', ['00000000-0000-4000-8000-00000000b001', 'uzak-yonetici@example.test']);
 await db.query("insert into public.profiles (id, role, full_name) values ($1, 'admin', 'Uzak Yonetici')", ['00000000-0000-4000-8000-00000000b001']);
 
-await db.exec(oku(mig('20261059000000_okuma_pilot2_icerik.sql')));
-console.log('20261059 uygulandi (hata yok)');
+for (const ad of ['20261059000000_okuma_pilot2_icerik.sql', '20261061000000_okuma_pilot2_guncelleme.sql', '20261062000000_okuma_pilot3_4_icerik.sql']) {
+  if (!fs.existsSync(mig(ad))) continue;
+  await db.exec(oku(mig(ad)));
+  console.log(ad, 'uygulandi (hata yok)');
+}
 
 const hikaye = await db.query('select count(*)::int as n from public.okuma_hikayeleri');
 const fis = await db.query('select count(*)::int as n from public.okuma_hikaye_fisleri where hikaye_slug is not null');

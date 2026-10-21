@@ -92,6 +92,7 @@ flutter:
     - assets/fonts/LiterataPdf-KAYNAK.txt
     # Genel semantik ikon kütüphanesi (89 kavram × renkli/sade SVG). Katalog: tool/ikon_katalogu_uret.dart.
     - assets/okuma/hikaye_ikonlari/
+    - assets/okuma/sahneler/
 
   fonts:
     # Nunito (SIL OFL 1.1): yuvarlak hatlı, çocuk dostu; Türkçe karakterleri tam destekler.

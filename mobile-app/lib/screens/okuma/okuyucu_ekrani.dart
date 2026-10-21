@@ -40,6 +40,7 @@ class OkuyucuEkrani extends ConsumerStatefulWidget {
     this.cevrimdisi = false,
     this.sinif = 4,
     this.tur = 'hikaye',
+    this.sahneSlug,
   });
 
   /// Hikâyenin ana sınıfı; sayfa başına vurgu ve çıkartma bütçesini belirler.
@@ -47,6 +48,9 @@ class OkuyucuEkrani extends ConsumerStatefulWidget {
 
   /// Tür kodu (gizem, macera, bilim, doga, mizah); başlık bandındaki çip ve sahne için.
   final String tur;
+
+  /// Sahne görseli için hikâye adresi (assets/okuma/sahneler/<slug>.jpg); yoksa tür yedeği.
+  final String? sahneSlug;
 
   final List<List<Cikti>> sayfalar;
 
@@ -546,10 +550,10 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
         // Sahne: ilk sayfada büyük; sonraki sayfalarda dar şerit. Sade modda ve 7–8. sınıfta yalnız ilk sayfa.
         if (_sayfa == 0) ...[
           const SizedBox(height: OkumaTema.bosluk16),
-          OkumaSahne(tur: widget.tur),
+          OkumaSahne(tur: widget.tur, slug: widget.sahneSlug),
         ] else if (!_sade && widget.sinif <= 6) ...[
           const SizedBox(height: OkumaTema.bosluk12),
-          OkumaSahne(tur: widget.tur, yukseklik: 56),
+          OkumaSahne(tur: widget.tur, yukseklik: 56, slug: widget.sahneSlug),
         ],
         const SizedBox(height: OkumaTema.bosluk16),
         // Sayfa geçişi: hafif kayma ve belirme. Hareket azaltmada süre sıfır, geçiş anlık.

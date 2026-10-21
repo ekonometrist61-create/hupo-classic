@@ -67,6 +67,41 @@ OkumaTurStili okumaTurStili(String kod) => switch (kod) {
           zemin: OkumaTema.sunSoft,
           vurgu: OkumaTema.ink,
           simge: 'joy'),
+      'hayvanlar' => const OkumaTurStili(
+          etiket: 'Hayvanlar',
+          zemin: OkumaTema.mintSoft,
+          vurgu: OkumaTema.mintDark,
+          simge: 'cat'),
+      'arkadaslik' => const OkumaTurStili(
+          etiket: 'Arkadaşlık',
+          zemin: OkumaTema.coralSoft,
+          vurgu: OkumaTema.coralDark,
+          simge: 'friends'),
+      'fantastik' => const OkumaTurStili(
+          etiket: 'Fantastik',
+          zemin: OkumaTema.primarySoft,
+          vurgu: OkumaTema.primaryDark,
+          simge: 'castle-magic'),
+      'spor' => const OkumaTurStili(
+          etiket: 'Spor',
+          zemin: OkumaTema.mintSoft,
+          vurgu: OkumaTema.mintDark,
+          simge: 'bicycle'),
+      'tarih_kultur' => const OkumaTurStili(
+          etiket: 'Tarih ve Kültür',
+          zemin: OkumaTema.sunSoft,
+          vurgu: OkumaTema.ink,
+          simge: 'scroll'),
+      'bilim_kurgu' => const OkumaTurStili(
+          etiket: 'Bilim Kurgu',
+          zemin: Color(0x244EA9D9),
+          vurgu: OkumaTema.skyDark,
+          simge: 'planet'),
+      'gezi_kultur' => const OkumaTurStili(
+          etiket: 'Gezi ve Kültür',
+          zemin: OkumaTema.primarySoft,
+          vurgu: OkumaTema.primary,
+          simge: 'globe'),
       _ => const OkumaTurStili(
           etiket: 'Hikâye',
           zemin: OkumaTema.primarySoft,
@@ -295,29 +330,43 @@ class OkumaAdimRozeti extends StatelessWidget {
 /// Sayfa sahnesi (yedek): görsel dosyası yokken türün renginde, katalog ikonlu kutu. Boş kutu göstermez.
 /// Görsel sunucudan gelince bu kutu yerine kullanılır (Faz 2).
 class OkumaSahne extends StatelessWidget {
-  const OkumaSahne({super.key, required this.tur, this.yukseklik = 160});
+  const OkumaSahne({super.key, required this.tur, this.yukseklik = 160, this.slug});
 
   final String tur;
   final double yukseklik;
 
+  /// Hikâye adresi: varsa `assets/okuma/sahneler/<slug>.jpg` gösterilir; dosya yoksa tür yedeği.
+  final String? slug;
+
   @override
   Widget build(BuildContext context) {
     final stil = okumaTurStili(tur);
+    final yedek = Container(
+      decoration: BoxDecoration(
+        gradient: LinearGradient(
+          begin: Alignment.topLeft,
+          end: Alignment.bottomRight,
+          colors: [stil.zemin, OkumaTema.surface],
+        ),
+      ),
+      child: Center(
+          child: ExcludeSemantics(
+              child: OkumaKatalogIkon(stil.simge, boyut: yukseklik * 0.45))),
+    );
     return ClipRRect(
       borderRadius: BorderRadius.circular(OkumaTema.koseKart),
-      child: Container(
+      child: SizedBox(
         height: yukseklik,
         width: double.infinity,
-        decoration: BoxDecoration(
-          gradient: LinearGradient(
-            begin: Alignment.topLeft,
-            end: Alignment.bottomRight,
-            colors: [stil.zemin, OkumaTema.surface],
-          ),
-        ),
-        child: Center(
-            child: ExcludeSemantics(
-                child: OkumaKatalogIkon(stil.simge, boyut: yukseklik * 0.45))),
+        child: slug == null
+            ? yedek
+            : ExcludeSemantics(
+                child: Image.asset(
+                  'assets/okuma/sahneler/$slug.jpg',
+                  fit: BoxFit.cover,
+                  errorBuilder: (context, hata, iz) => yedek,
+                ),
+              ),
       ),
     );
   }

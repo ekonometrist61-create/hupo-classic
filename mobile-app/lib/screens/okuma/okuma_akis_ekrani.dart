@@ -121,6 +121,7 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
           cevrimdisi: d.cevrimdisi,
           sinif: d.secilen?.anaSinif ?? 4,
           tur: d.secilen?.tur ?? 'hikaye',
+          sahneSlug: d.secilen?.slug,
           onGeri: _akis.listeyeDon,
           onSayfaGorundu: _akis.sayfaGorundu,
           onSozcukAcildi: _akis.sozcukAcildi,

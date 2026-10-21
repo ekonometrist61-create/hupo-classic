@@ -185,6 +185,20 @@ _TurStili _turStili(String kod) => switch (kod) {
           etiket: 'Doğa', bant: OkumaTema.mintDark, bantMetin: OkumaTema.surface, ikon: Icons.eco_rounded, ikonRengi: OkumaTema.mintDark),
       'mizah' => const _TurStili(
           etiket: 'Mizah', bant: OkumaTema.sun, bantMetin: OkumaTema.ink, ikon: Icons.sentiment_very_satisfied_rounded, ikonRengi: OkumaTema.ink),
+      'hayvanlar' => const _TurStili(
+          etiket: 'Hayvanlar', bant: OkumaTema.mintDark, bantMetin: OkumaTema.surface, ikon: Icons.pets_rounded, ikonRengi: OkumaTema.mintDark),
+      'arkadaslik' => const _TurStili(
+          etiket: 'Arkadaşlık', bant: OkumaTema.coralDark, bantMetin: OkumaTema.surface, ikon: Icons.people_rounded, ikonRengi: OkumaTema.coralDark),
+      'fantastik' => const _TurStili(
+          etiket: 'Fantastik', bant: OkumaTema.primaryDark, bantMetin: OkumaTema.surface, ikon: Icons.auto_awesome_rounded, ikonRengi: OkumaTema.primaryDark),
+      'spor' => const _TurStili(
+          etiket: 'Spor', bant: OkumaTema.mintDark, bantMetin: OkumaTema.surface, ikon: Icons.directions_bike_rounded, ikonRengi: OkumaTema.mintDark),
+      'tarih_kultur' => const _TurStili(
+          etiket: 'Tarih ve Kültür', bant: OkumaTema.sun, bantMetin: OkumaTema.ink, ikon: Icons.account_balance_rounded, ikonRengi: OkumaTema.ink),
+      'bilim_kurgu' => const _TurStili(
+          etiket: 'Bilim Kurgu', bant: OkumaTema.primaryDark, bantMetin: OkumaTema.surface, ikon: Icons.rocket_launch_rounded, ikonRengi: OkumaTema.primaryDark),
+      'gezi_kultur' => const _TurStili(
+          etiket: 'Gezi ve Kültür', bant: OkumaTema.primary, bantMetin: OkumaTema.surface, ikon: Icons.public_rounded, ikonRengi: OkumaTema.primary),
       _ => const _TurStili(
           etiket: 'Hikâye', bant: OkumaTema.lineDark, bantMetin: OkumaTema.ink, ikon: Icons.auto_stories_rounded, ikonRengi: OkumaTema.primaryDark),
     };
