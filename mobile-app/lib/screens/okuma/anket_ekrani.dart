@@ -5,10 +5,9 @@ import '../../widgets/hupo/hupo.dart';
 import '../../widgets/okuma/okuma_bilesenler.dart';
 import 'okuma_tema.dart';
 
-
-/// Hikâyeyi sevme anketi. Hedef: çocuk hikâyeyi puanlar (1–5 yıldız zorunlu, sunucu sözleşmesi) ve isterse
-/// nasıl daha iyi olacağını seçer. Ödülsüz, atlanabilir, serbest metin yok. Ana eylem: "Gönder" (yıldız
-/// seçilince açılır); ikincil: "Şimdi değil". Yanıtlar yalnız hikâye geliştirme içindir.
+/// Hikâyeyi sevme anketi. Hedef: çocuk isterse hikâyeyi puanlar ve nasıl daha iyi olacağını seçer.
+/// Hiçbiri zorunlu değildir: hiçbir şey seçilmeden "Atla" ile geçilir (sunucuya yanıt yazılmaz).
+/// Ödülsüz, serbest metin yok. Yanıtlar yalnız hikâye geliştirme içindir.
 
 /// En çok iyileştirme seçimi.
 const _enFazlaIyilestirme = 3;
@@ -31,7 +30,12 @@ class _AnketEkraniState extends State<AnketEkrani> {
   bool? _ayniTur;
   String? _uyari;
 
-  bool get _yanitVar => _yildiz != null;
+  /// Hiçbir yanıt yoksa "Atla" görünür; varsa "Gönder".
+  bool get _yanitVar =>
+      _yildiz != null ||
+      _iyilestirmeler.isNotEmpty ||
+      _baskaKahraman != null ||
+      _ayniTur != null;
 
   void _gonder() {
     widget.onBitti(OkumaAnketYaniti(
@@ -75,45 +79,58 @@ class _AnketEkraniState extends State<AnketEkrani> {
           maskot: OkumaMaskot(poz: HupoPose.hazirMisin, boyut: OkumaTema.hupoBos),
           maskotSolda: false,
         ),
-        const SizedBox(height: OkumaTema.bosluk24),
-        // Yıldızlar: büyük dokunma alanı, seçili yıldız sarı dolgu ve koyu kenar taşır.
-        TweenAnimationBuilder<double>(
-          key: ValueKey<int>(_yildizSayaci),
-          tween: Tween<double>(begin: 0.92, end: 1),
-          duration: OkumaTema.sure(context, OkumaTema.hareketYildiz),
-          curve: Curves.easeOutBack,
-          builder: (context, t, child) => Transform.scale(scale: t, child: child),
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+        const SizedBox(height: OkumaTema.bosluk16),
+        _Bolum(
+          baslik: OkumaMetin.anketPuanBaslik,
+          child: Column(
             children: [
-              for (var i = 1; i <= 5; i++) _YildizDugmesi(deger: i, secili: yildiz != null && i <= yildiz, onTap: () => _yildizSec(i)),
+              // Yıldızlar: büyük dokunma alanı, seçili yıldız sarı dolgu ve koyu kenar taşır.
+              TweenAnimationBuilder<double>(
+                key: ValueKey<int>(_yildizSayaci),
+                tween: Tween<double>(begin: 0.92, end: 1),
+                duration: OkumaTema.sure(context, OkumaTema.hareketYildiz),
+                curve: Curves.easeOutBack,
+                builder: (context, t, child) => Transform.scale(scale: t, child: child),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    for (var i = 1; i <= 5; i++)
+                      _YildizDugmesi(deger: i, secili: yildiz != null && i <= yildiz, onTap: () => _yildizSec(i)),
+                  ],
+                ),
+              ),
+              const SizedBox(height: OkumaTema.bosluk4),
+              Text(
+                yildiz == null ? OkumaMetin.anketYildizBos : OkumaMetin.anketYildiz(yildiz),
+                style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu),
+              ),
             ],
           ),
         ),
-        const SizedBox(height: OkumaTema.bosluk8),
-        Center(
-          child: Text(
-            yildiz == null ? OkumaMetin.anketYildizBos : OkumaMetin.anketYildiz(yildiz),
-            style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu),
+        const SizedBox(height: OkumaTema.bosluk16),
+        _Bolum(
+          baslik: OkumaMetin.anketOneriBaslik,
+          child: LayoutBuilder(
+            builder: (context, kisit) {
+              // İki sütunlu, eşit kutular: dağınık chip akışı yerine düzenli bir ızgara.
+              final yarim = (kisit.maxWidth - OkumaTema.bosluk8) / 2;
+              return Wrap(
+                spacing: OkumaTema.bosluk8,
+                runSpacing: OkumaTema.bosluk8,
+                children: [
+                  for (final (kod, etiket) in OkumaMetin.anketSecenekleri)
+                    SizedBox(
+                      width: yarim,
+                      child: _SecimKutusu(
+                        etiket: etiket,
+                        secili: _iyilestirmeler.contains(kod),
+                        onTap: () => _iyilestirmeDegistir(kod, !_iyilestirmeler.contains(kod)),
+                      ),
+                    ),
+                ],
+              );
+            },
           ),
-        ),
-        const SizedBox(height: OkumaTema.bosluk24),
-        Text(
-          OkumaMetin.anketDaha,
-          style: OkumaTema.yazi(OkumaTema.yaziSecenek - 1, kalinlik: OkumaTema.kalinlikVurgu),
-        ),
-        const SizedBox(height: OkumaTema.bosluk8),
-        Wrap(
-          spacing: OkumaTema.bosluk8,
-          runSpacing: OkumaTema.bosluk8,
-          children: [
-            for (final (kod, etiket) in OkumaMetin.anketSecenekleri)
-              FilterChip(
-                label: Text(etiket),
-                selected: _iyilestirmeler.contains(kod),
-                onSelected: (v) => _iyilestirmeDegistir(kod, v),
-              ),
-          ],
         ),
         if (_uyari != null) ...[
           const SizedBox(height: OkumaTema.bosluk8),
@@ -125,37 +142,117 @@ class _AnketEkraniState extends State<AnketEkrani> {
             ),
           ),
         ],
-        const SizedBox(height: OkumaTema.bosluk24),
-        _EvetHayir(
-          soru: OkumaMetin.anketBaskaKahraman,
-          deger: _baskaKahraman,
-          onSec: (v) => setState(() => _baskaKahraman = v),
-        ),
         const SizedBox(height: OkumaTema.bosluk16),
-        _EvetHayir(
-          soru: OkumaMetin.anketBaskaHikaye,
-          deger: _ayniTur,
-          onSec: (v) => setState(() => _ayniTur = v),
+        _Bolum(
+          baslik: OkumaMetin.anketSonrakiBaslik,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              _EvetHayir(
+                soru: OkumaMetin.anketBaskaKahraman,
+                deger: _baskaKahraman,
+                onSec: (v) => setState(() => _baskaKahraman = v),
+              ),
+              const SizedBox(height: OkumaTema.bosluk12),
+              _EvetHayir(
+                soru: OkumaMetin.anketBaskaHikaye,
+                deger: _ayniTur,
+                onSec: (v) => setState(() => _ayniTur = v),
+              ),
+            ],
+          ),
         ),
-        if (!_yanitVar) ...[
-          const SizedBox(height: OkumaTema.bosluk24),
-          Text(
-            OkumaMetin.anketPasif,
-            textAlign: TextAlign.center,
-            style: OkumaTema.yazi(OkumaTema.yaziEtiket, renk: OkumaTema.muted),
-          ),
-        ],
+        const SizedBox(height: OkumaTema.bosluk12),
+        Text(
+          OkumaMetin.anketIstegeBagli,
+          textAlign: TextAlign.center,
+          style: OkumaTema.yazi(OkumaTema.yaziEtiket, renk: OkumaTema.muted),
+        ),
       ],
-      altEylem: Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          OkumaButon(etiket: OkumaMetin.anketGonder, onPressed: _yanitVar ? _gonder : null),
-          const SizedBox(height: OkumaTema.bosluk8),
-          OkumaIkincilButon(
-            etiket: OkumaMetin.anketSimdiDegil,
-            onPressed: () => widget.onBitti(null),
+      altEylem: OkumaButon(
+        etiket: _yanitVar ? OkumaMetin.anketGonder : OkumaMetin.anketAtla,
+        onPressed: _yanitVar ? _gonder : () => widget.onBitti(null),
+      ),
+    );
+  }
+}
+
+/// Ekranın bir bölümü: küçük başlık ve içerik. Bölümler arasında tutarlı boşluk.
+class _Bolum extends StatelessWidget {
+  const _Bolum({required this.baslik, required this.child});
+
+  final String baslik;
+  final Widget child;
+
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          baslik,
+          style: OkumaTema.yazi(OkumaTema.yaziSecenek - 1, kalinlik: OkumaTema.kalinlikBaslik),
+        ),
+        const SizedBox(height: OkumaTema.bosluk8),
+        child,
+      ],
+    );
+  }
+}
+
+/// Öneri kutusu: eşit yükseklik, seçili olduğunda dolgu ve onay simgesi (renk tek başına taşımaz).
+class _SecimKutusu extends StatelessWidget {
+  const _SecimKutusu({required this.etiket, required this.secili, required this.onTap});
+
+  final String etiket;
+  final bool secili;
+  final VoidCallback onTap;
+
+  @override
+  Widget build(BuildContext context) {
+    final sekil = BorderRadius.circular(OkumaTema.koseButon);
+    return Semantics(
+      button: true,
+      selected: secili,
+      label: etiket,
+      onTap: onTap,
+      child: ExcludeSemantics(
+        child: Material(
+          color: secili ? OkumaTema.primarySoft : OkumaTema.surface,
+          shape: RoundedRectangleBorder(
+            borderRadius: sekil,
+            side: BorderSide(
+              color: secili ? OkumaTema.primary : OkumaTema.muted,
+              width: secili ? OkumaTema.kenarSecili : OkumaTema.kenarVarsayilan,
+            ),
           ),
-        ],
+          child: InkWell(
+            borderRadius: sekil,
+            onTap: onTap,
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(minHeight: OkumaTema.butonYukseklik - 8),
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk12, vertical: OkumaTema.bosluk8),
+                child: Row(
+                  children: [
+                    Icon(
+                      secili ? Icons.check_circle_rounded : Icons.circle_outlined,
+                      size: OkumaTema.ikonOrta,
+                      color: secili ? OkumaTema.primary : OkumaTema.muted,
+                    ),
+                    const SizedBox(width: OkumaTema.bosluk8),
+                    Expanded(
+                      child: Text(
+                        etiket,
+                        style: OkumaTema.yazi(OkumaTema.yaziYardimci, kalinlik: OkumaTema.kalinlikVurgu, satir: 1.25),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        ),
       ),
     );
   }
@@ -218,11 +315,10 @@ class _EvetHayir extends StatelessWidget {
       children: [
         Text(soru, style: OkumaTema.yazi(OkumaTema.yaziSecenek - 1, kalinlik: OkumaTema.kalinlikVurgu)),
         const SizedBox(height: OkumaTema.bosluk8),
-        Wrap(
-          spacing: OkumaTema.bosluk8,
-          runSpacing: OkumaTema.bosluk8,
+        Row(
           children: [
             ChoiceChip(label: const Text(OkumaMetin.anketEvet), selected: deger == true, onSelected: (_) => onSec(true)),
+            const SizedBox(width: OkumaTema.bosluk8),
             ChoiceChip(label: const Text(OkumaMetin.anketHayir), selected: deger == false, onSelected: (_) => onSec(false)),
           ],
         ),

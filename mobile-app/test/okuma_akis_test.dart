@@ -182,8 +182,8 @@ void main() {
       expect(find.text('Bu hikâye nasıldı?'), findsOneWidget);
       expect(tester.takeException(), isNull);
 
-      // Anket: yıldız seçilmeden Gönder pasif; "Şimdi değil" her zaman var.
-      expect(find.text('Şimdi değil'), findsOneWidget);
+      // Anket: yanıt yokken "Atla" görünür (puan zorunlu değil); yanıt verilince "Gönder".
+      expect(find.text('Atla'), findsOneWidget);
       await _tikla(tester, find.byTooltip('4 yıldız'));
       await _tikla(tester, find.text('Daha komik olsun'));
       await _tikla(tester, find.text('Gönder'));
@@ -353,7 +353,7 @@ void main() {
     await _hikayeAc(tester);
     await _sayfalariOku(tester);
     await _sorulariCevapla(tester, _dogru);
-    await _tikla(tester, find.text('Şimdi değil'));
+    await _tikla(tester, find.text('Atla'));
     await _bekle(tester, 600);
 
     await _tikla(tester, find.text('Hikâyeyi PDF olarak indir'));
@@ -432,7 +432,7 @@ void main() {
       await _tikla(tester, find.text(i == 3 ? 'Sonucu gör' : 'Sonraki soru'));
     }
     expect(tester.takeException(), isNull);
-    await _tikla(tester, find.text('Şimdi değil'));
+    await _tikla(tester, find.text('Atla'));
     await _bekle(tester, 600);
     // Hepsi doğru: hareket azaltmada kutlama animasyonu (Lottie) oynamaz, metin yine görünür.
     expect(find.text('Hepsini doğru bildin!'), findsOneWidget);
@@ -449,7 +449,7 @@ void main() {
     await _hikayeAc(tester);
     await _sayfalariOku(tester);
     await _sorulariCevapla(tester, _yanlis);
-    await _tikla(tester, find.text('Şimdi değil'));
+    await _tikla(tester, find.text('Atla'));
     await _bekle(tester, 600);
     expect(find.text('Bugünkü hikâyeni okudun. Yarın yeni bir hikâye seni bekliyor.'), findsOneWidget);
     expect(find.text('Sıradaki hikâye'), findsNothing);
@@ -464,7 +464,7 @@ void main() {
     await _hikayeAc(tester);
     await _sayfalariOku(tester);
     await _sorulariCevapla(tester, _dogru);
-    await _tikla(tester, find.text('Şimdi değil'));
+    await _tikla(tester, find.text('Atla'));
     await _bekle(tester, 600);
     expect(find.text('Bağlantı kurulamadı. İnternetini kontrol edip yeniden dene.'), findsOneWidget);
     repo.bitirHatasi = null;

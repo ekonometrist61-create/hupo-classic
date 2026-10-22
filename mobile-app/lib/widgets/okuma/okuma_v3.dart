@@ -474,7 +474,8 @@ class OkumaAnlamKutusu extends StatelessWidget {
       );
 }
 
-/// Kelime, deyim veya atasözü alt sayfasının içeriği: tutamaç, metin, etiket, anlam, örnek cümle ve kapat.
+/// Kelime, deyim veya atasözü alt sayfasının içeriği: başlıkta kapat simgesi, anlam ve örnek cümle
+/// kaydırılabilir gövdede, "Kapat" düğmesi her zaman görünür altta. Kapat dokunulunca sayfa kapanır.
 class OkumaKelimePaneli extends StatelessWidget {
   const OkumaKelimePaneli({
     super.key,
@@ -493,78 +494,86 @@ class OkumaKelimePaneli extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) => SafeArea(
-        child: SingleChildScrollView(
+        child: Padding(
           padding: const EdgeInsets.fromLTRB(
               OkumaTema.yanBoslukTelefon,
-              OkumaTema.bosluk8,
+              OkumaTema.bosluk4,
               OkumaTema.yanBoslukTelefon,
               OkumaTema.bosluk20),
           child: Column(
             mainAxisSize: MainAxisSize.min,
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Center(
-                child: Container(
-                  width: 44,
-                  height: 5,
-                  margin: const EdgeInsets.only(bottom: OkumaTema.bosluk12),
-                  decoration: BoxDecoration(
-                      color: OkumaTema.lineDark,
-                      borderRadius: BorderRadius.circular(3)),
-                ),
-              ),
-              Text(etiket,
-                  style: OkumaTema.yazi(OkumaTema.yaziEtiket,
-                      kalinlik: OkumaTema.kalinlikVurgu,
-                      renk: OkumaTema.muted)),
-              const SizedBox(height: OkumaTema.bosluk4),
-              Semantics(
-                header: true,
-                child: Text(metin,
-                    style: OkumaTema.yazi(OkumaTema.yaziSozlukKelime,
-                        kalinlik: OkumaTema.kalinlikBaslik, satir: 1.2)),
-              ),
-              const SizedBox(height: OkumaTema.bosluk12),
-              Text(anlam,
-                  style: OkumaTema.yazi(OkumaTema.yaziSozlukAnlam, satir: 1.5)),
-              if (ornek != null) ...[
-                const SizedBox(height: OkumaTema.bosluk16),
-                Container(
-                  width: double.infinity,
-                  padding: const EdgeInsets.all(OkumaTema.bosluk16),
-                  decoration: BoxDecoration(
-                    color: OkumaTema.background,
-                    borderRadius: BorderRadius.circular(OkumaTema.koseGirdi),
-                    border: Border.all(
-                        color: OkumaTema.lineDark,
-                        width: OkumaTema.kenarVarsayilan),
+              Row(
+                children: [
+                  Expanded(
+                    child: Text(etiket,
+                        style: OkumaTema.yazi(OkumaTema.yaziEtiket,
+                            kalinlik: OkumaTema.kalinlikVurgu,
+                            renk: OkumaTema.muted)),
                   ),
+                  IconButton(
+                    tooltip: OkumaMetin.kapat,
+                    icon: const Icon(Icons.close_rounded),
+                    onPressed: onKapat,
+                  ),
+                ],
+              ),
+              Flexible(
+                child: SingleChildScrollView(
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(OkumaMetin.sozlukOrnek,
-                          style: OkumaTema.yazi(OkumaTema.yaziEtiket,
-                              kalinlik: OkumaTema.kalinlikVurgu,
-                              renk: OkumaTema.muted)),
-                      const SizedBox(height: OkumaTema.bosluk4),
-                      Text(
-                        '“$ornek”',
-                        style: OkumaTema.yazi(OkumaTema.yaziSecenek - 1,
-                                satir: 1.5)
-                            .copyWith(fontStyle: FontStyle.italic),
+                      Semantics(
+                        header: true,
+                        child: Text(metin,
+                            style: OkumaTema.yazi(OkumaTema.yaziSozlukKelime,
+                                kalinlik: OkumaTema.kalinlikBaslik, satir: 1.2)),
                       ),
+                      const SizedBox(height: OkumaTema.bosluk12),
+                      Text(anlam,
+                          style: OkumaTema.yazi(OkumaTema.yaziSozlukAnlam, satir: 1.5)),
+                      if (ornek != null) ...[
+                        const SizedBox(height: OkumaTema.bosluk16),
+                        Container(
+                          width: double.infinity,
+                          padding: const EdgeInsets.all(OkumaTema.bosluk16),
+                          decoration: BoxDecoration(
+                            color: OkumaTema.background,
+                            borderRadius: BorderRadius.circular(OkumaTema.koseGirdi),
+                            border: Border.all(
+                                color: OkumaTema.lineDark,
+                                width: OkumaTema.kenarVarsayilan),
+                          ),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text(OkumaMetin.sozlukOrnek,
+                                  style: OkumaTema.yazi(OkumaTema.yaziEtiket,
+                                      kalinlik: OkumaTema.kalinlikVurgu,
+                                      renk: OkumaTema.muted)),
+                              const SizedBox(height: OkumaTema.bosluk4),
+                              Text(
+                                '“$ornek”',
+                                style: OkumaTema.yazi(OkumaTema.yaziSecenek - 1,
+                                        satir: 1.5)
+                                    .copyWith(fontStyle: FontStyle.italic),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ],
                     ],
                   ),
                 ),
-              ],
-              const SizedBox(height: OkumaTema.bosluk20),
+              ),
+              const SizedBox(height: OkumaTema.bosluk16),
               OkumaIkincilButon(etiket: OkumaMetin.kapat, onPressed: onKapat),
             ],
           ),
         ),
       );
 }
-
 /// Otomatik geçiş geri sayımı. Hareket açıksa çubuk zamanla küçülür; hareket azaltmada
 /// çubuk yerine yalnız süre metni gösterilir (animasyon yok).
 class OkumaGeriSayim extends StatelessWidget {

@@ -34,6 +34,7 @@ class OkumaPdfIstegi {
     required this.sorular,
     this.sinif = 5,
     this.tema = OkumaPdfTema.renkli,
+    this.sahneSlug,
   });
 
   final String baslik;
@@ -45,6 +46,9 @@ class OkumaPdfIstegi {
   /// Ana sınıf (2–8). Tipografi ve ikon yoğunluğu buna göre seçilir.
   final int sinif;
   final OkumaPdfTema tema;
+
+  /// Kapak görseli için hikâye adresi (assets/okuma/sahneler/<slug>.jpg). Yoksa kapakta görsel yoktur.
+  final String? sahneSlug;
 }
 
 /// PDF'i üretir ve indirme/paylaşma penceresini açar (web'de dosya iner).

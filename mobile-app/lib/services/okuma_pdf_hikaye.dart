@@ -8,19 +8,18 @@
 // Tasarım (direktör ortak kararı K1, K3, K5, K7, K8, K9):
 // - Renkler uygulama paletidir (lib/theme/app_theme.dart, AppColors). Değişirse burası da değişmeli.
 // - Başlıklar ve kitap gövdesi serif (Literata); etiketler ve sorular Nunito.
-// - Maskot yalnız kapakta görünür; metin içinde maskot basılmaz.
+// - Kapakta hikâyenin sahne görseli basılır (maskot yok); metin içinde maskot basılmaz.
 // - İkonlar emoji değil, SVG vektörüdür (`assets/okuma/hikaye_ikonlari`). Sayfa başına en fazla
 //   iki ikon (2–4. sınıf) veya bir ikon (5–8. sınıf). Eksik ikon metni bozmadan atlanır.
 // - Atasözü ayrı blok olarak basılır; sayfa içi tam sayfa illüstrasyon yoktur.
 
 import 'dart:typed_data';
-import 'dart:ui' as ui;
 
+import 'package:file_saver/file_saver.dart';
 import 'package:flutter/services.dart' show rootBundle;
 import 'package:okuma_motoru/okuma_motoru.dart' show Cikti, IkonKaydi, Stil, ikonBul, kIkonVarlikKlasoru, kMaskotIkonKimligi;
 import 'package:pdf/pdf.dart';
 import 'package:pdf/widgets.dart' as pw;
-import 'package:printing/printing.dart';
 
 import 'okuma_pdf_hizmeti.dart';
 
@@ -28,7 +27,6 @@ const _siteAdresi = 'hupolingo.com';
 const _uygulamaAdi = 'Senin Hikâyen';
 const _uygulamaAdiBuyuk = 'SENİN HİKÂYEN';
 const _markaSol = 'Hupolingo · Senin Hikâyen';
-const _maskotVarlik = 'assets/hupo/uygulama/rehber_sol.webp';
 const _govdeNormal = 'assets/fonts/LiterataPdf-Regular.ttf';
 const _govdeKalin = 'assets/fonts/LiterataPdf-Bold.ttf';
 const _etiketNormal = 'assets/fonts/NunitoPdf-Regular.ttf';
@@ -96,7 +94,7 @@ final class _Varlik {
     required this.govdeKalin,
     required this.etiket,
     required this.etiketKalin,
-    required this.maskot,
+    required this.sahne,
     required this.tema,
   });
 
@@ -104,7 +102,8 @@ final class _Varlik {
   final pw.Font govdeKalin;
   final pw.Font etiket;
   final pw.Font etiketKalin;
-  final Uint8List? maskot;
+  /// Hikâyenin ilk sayfasındaki sahne görseli (JPEG). Yoksa kapakta görsel alanı renkli zemin olur.
+  final Uint8List? sahne;
   final OkumaPdfTema tema;
   final Map<String, String?> _svgler = {};
 
@@ -126,10 +125,16 @@ final class _Varlik {
   }
 }
 
-/// Üretir ve indirme/paylaşma penceresini açar (web'de dosya iner).
+/// Üretir ve cihaza kaydeder: Android'de İndirilenler'e, web'de tarayıcı indirmesi olarak.
 Future<void> hikayePdfIndir(OkumaPdfIstegi istek) async {
   final bytes = await hikayePdfYap(istek);
-  await Printing.sharePdf(bytes: bytes, filename: istek.dosyaAdi);
+  final ad = istek.dosyaAdi.replaceFirst(RegExp(r'\.pdf$', caseSensitive: false), '');
+  await FileSaver.instance.saveFile(
+    name: ad,
+    bytes: bytes,
+    fileExtension: 'pdf',
+    mimeType: MimeType.pdf,
+  );
 }
 
 Future<Uint8List> hikayePdfYap(OkumaPdfIstegi istek) async {
@@ -140,7 +145,7 @@ Future<Uint8List> hikayePdfYap(OkumaPdfIstegi istek) async {
     govdeKalin: pw.Font.ttf(await rootBundle.load(_govdeKalin)),
     etiket: pw.Font.ttf(await rootBundle.load(_etiketNormal)),
     etiketKalin: pw.Font.ttf(await rootBundle.load(_etiketKalin)),
-    maskot: await _maskotPng(),
+    sahne: await _sahneGorseli(istek.sahneSlug),
     tema: istek.tema,
   );
   final tema = pw.ThemeData.withFont(base: varlik.govde, bold: varlik.govdeKalin, italic: varlik.govde);
@@ -222,7 +227,7 @@ Future<Uint8List> hikayePdfYap(OkumaPdfIstegi istek) async {
   return dokuman.save();
 }
 
-/// Kapak: marka, hikâye başlığı, tanıtım ve vektör sahne (güneş, dalga) üzerinde maskot.
+/// Kapak: marka, hikâye başlığı, tanıtım ve hikâyenin sahne görseli.
 pw.Page _kapak(OkumaPdfIstegi istek, _Varlik v, pw.PageTheme tema) => pw.Page(
       pageTheme: tema,
       build: (ctx) => pw.Column(
@@ -247,24 +252,21 @@ pw.Page _kapak(OkumaPdfIstegi istek, _Varlik v, pw.PageTheme tema) => pw.Page(
       ),
     );
 
-/// Kapak sahnesi: açık turkuaz zemin, güneş ve iki dalga katmanı; ortada maskot.
-/// Ink-saver modunda sahne yerine yalnız çerçeve basılır.
+/// Kapak görseli: hikâyenin sahne görseli kapağın tamamını kaplar. Görsel yoksa turkuaz zemin ve dalgalar
+/// basılır; Hupo maskotu kapakta yer almaz. Mürekkep tasarrufunda yalnız çerçeve basılır.
 pw.Widget _kapakSahnesi(_Varlik v) {
   if (v.murekkep) {
     return pw.Container(decoration: pw.BoxDecoration(border: pw.Border.all(color: _cizgi, width: 0.9)));
   }
-  final maskot = v.maskot;
+  final sahne = v.sahne;
+  if (sahne != null) {
+    return pw.SizedBox.expand(child: pw.Image(pw.MemoryImage(sahne), fit: pw.BoxFit.cover));
+  }
   return pw.Container(
     color: _tealSoluk,
-    child: pw.CustomPaint(
-      painter: _kapakCizimi,
-      child: pw.Center(
-        child: maskot == null ? pw.SizedBox() : pw.Image(pw.MemoryImage(maskot), width: 170, height: 170),
-      ),
-    ),
+    child: pw.CustomPaint(painter: _kapakCizimi, child: pw.SizedBox.expand()),
   );
 }
-
 void _kapakCizimi(PdfGraphics canvas, PdfPoint boyut) {
   final w = boyut.x;
   final h = boyut.y;
@@ -513,14 +515,12 @@ List<pw.Widget> _cevapAnahtari(List<(int, String)> anahtar, _Varlik v) => [
       ),
     ];
 
-/// Maskot: onaylı Hupo varlığı PNG'ye çevrilir (pdf paketi WebP okumaz). Yeniden çizilmez.
-Future<Uint8List?> _maskotPng() async {
+/// Kapak görseli: hikâyenin sahne görseli (assets/okuma/sahneler/<slug>.jpg). Yoksa null.
+Future<Uint8List?> _sahneGorseli(String? slug) async {
+  if (slug == null || slug.isEmpty) return null;
   try {
-    final veri = await rootBundle.load(_maskotVarlik);
-    final kod = await ui.instantiateImageCodec(veri.buffer.asUint8List(), targetWidth: 480);
-    final kare = (await kod.getNextFrame()).image;
-    final png = await kare.toByteData(format: ui.ImageByteFormat.png);
-    return png?.buffer.asUint8List();
+    final veri = await rootBundle.load('assets/okuma/sahneler/.jpg');
+    return veri.buffer.asUint8List();
   } on Object {
     return null;
   }

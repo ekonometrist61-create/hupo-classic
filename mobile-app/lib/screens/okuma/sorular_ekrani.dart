@@ -46,6 +46,10 @@ class _SorularEkraniState extends State<SorularEkrani> {
   /// Otomatik geçiş zamanlayıcısı. Elle geçişte ya da ekran kapanınca iptal edilir.
   Timer? _gecis;
 
+  /// Cevap sonrası geri bildirim alanı: cevaplanınca bu alan görünür yere kaydırılır ki
+  /// açıklama çocuğun seçtiği şıkkın hemen altında, ekranın içinde görünsün.
+  final GlobalKey _geriKey = GlobalKey();
+
   @override
   void initState() {
     super.initState();
@@ -100,6 +104,18 @@ class _SorularEkraniState extends State<SorularEkrani> {
         if (g.dogru) _dogru++;
       });
       _gecisiZamanla(dogru: g.dogru);
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        final baglam = _geriKey.currentContext;
+        if (!mounted || baglam == null) return;
+        Scrollable.ensureVisible(
+          baglam,
+          alignment: 0.12,
+          duration: MediaQuery.disableAnimationsOf(baglam)
+              ? Duration.zero
+              : const Duration(milliseconds: 350),
+          curve: Curves.easeOut,
+        );
+      });
     } catch (_) {
       if (!mounted) return;
       setState(() {
@@ -227,7 +243,10 @@ class _SorularEkraniState extends State<SorularEkrani> {
         ],
         if (g != null) ...[
           const SizedBox(height: OkumaTema.bosluk20),
-          _GeriBildirimAlani(key: ValueKey<int>(_i), geri: g),
+          KeyedSubtree(
+            key: _geriKey,
+            child: _GeriBildirimAlani(key: ValueKey<int>(_i), geri: g),
+          ),
         ],
       ],
       altEylem: _altEylem(g),
@@ -510,7 +529,7 @@ class _GeriBildirimAlani extends StatelessWidget {
             child: Row(
               children: [
                 OkumaMaskot(
-                  poz: dogru ? HupoPose.dogru : HupoPose.cokYaklastin,
+                  poz: dogru ? HupoPose.dogru : HupoPose.merakEdiyor,
                   boyut: OkumaTema.hupoCevap,
                 ),
                 const SizedBox(width: OkumaTema.bosluk12),

@@ -50,6 +50,10 @@ class SonucEkrani extends StatefulWidget {
   State<SonucEkrani> createState() => _SonucEkraniState();
 }
 
+/// Telefonda maskot boyutları (başlığın yanında). Geniş ekranda biraz daha büyük.
+const double _maskotTelefon = 96;
+const double _maskotTelefonGeniz = 112;
+
 class _SonucEkraniState extends State<SonucEkrani> {
   bool _pdfBusy = false;
 
@@ -81,20 +85,18 @@ class _SonucEkraniState extends State<SonucEkrani> {
     final soruSayisi = widget.sonuc.soruSayisi;
     final dogruSayisi = widget.sonuc.dogruSayisi;
     final ekran = MediaQuery.sizeOf(context);
-    final genis = ekran.width >= OkumaTema.kirilimGenis;
     final buyukYazi = MediaQuery.textScalerOf(context).scale(1) > OkumaTema.sonucYaziBuyukEsigi;
     final kisaEkran = ekran.height < OkumaTema.kisaEkranYukseklik;
-    // Kısa ekranda büyük yazı: maskot daha da küçülür ki başlık ilk ekranda tam görünsün.
-    final pozBoyutu = kisaEkran
-        ? (buyukYazi ? OkumaTema.hupoSonucBuyukYazi : OkumaTema.hupoSonucKisa)
-        : OkumaTema.hupoSonuc;
+    // Maskot telefonda başlığın yanında küçük durur: motivasyon kartı ilk ekranda, düğmelerin üstünde kalsın.
+    final pozBoyutu = buyukYazi
+        ? OkumaTema.hupoSonucBuyukYazi
+        : (kisaEkran ? _maskotTelefon : _maskotTelefonGeniz);
 
     final hepsiDogru = soruSayisi > 0 && dogruSayisi == soruSayisi;
     // Soru yoksa yalnız okuma tamamlanmıştır: sakin, olumlu bitiş.
     final oran = soruSayisi == 0 ? 1.0 : dogruSayisi / soruSayisi;
-    final poz = hepsiDogru || oran >= 0.8
-        ? HupoPose.harika
-        : (oran >= 0.5 ? HupoPose.konuTamamlandi : HupoPose.cokYaklastin);
+    // Çocuk motivasyonunu korumak için düşük puanda da Hupo sevecen kalır (üzgün poz kullanılmaz).
+    final poz = hepsiDogru || oran >= 0.8 ? HupoPose.harika : HupoPose.konuTamamlandi;
     final kutlamaAcik = hepsiDogru && !MediaQuery.disableAnimationsOf(context);
 
     final String altMetin;
@@ -149,10 +151,8 @@ class _SonucEkraniState extends State<SonucEkrani> {
       ),
     );
 
-    final hizaAlign = genis
-        ? CrossAxisAlignment.start
-        : CrossAxisAlignment.center;
-    final hizaMetin = genis ? TextAlign.start : TextAlign.center;
+    const hizaAlign = CrossAxisAlignment.start;
+    const hizaMetin = TextAlign.start;
 
     final baslikBlok = Column(
       crossAxisAlignment: hizaAlign,
@@ -181,21 +181,15 @@ class _SonucEkraniState extends State<SonucEkrani> {
       ],
     );
 
-    final ustSatir = genis
-        ? Row(
-            children: [
-              maskotAlani,
-              const SizedBox(width: OkumaTema.bosluk32),
-              Expanded(child: baslikBlok),
-            ],
-          )
-        : Column(
-            children: [
-              maskotAlani,
-              const SizedBox(height: OkumaTema.bosluk8),
-              baslikBlok,
-            ],
-          );
+    // Maskot ve başlık yan yana: telefonda da motivasyon kartı ilk ekrana sığar.
+    final ustSatir = Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        maskotAlani,
+        const SizedBox(width: OkumaTema.bosluk16),
+        Expanded(child: baslikBlok),
+      ],
+    );
 
     // Sunucunun bildirdiği XP ve seri (yoksa satır gösterilmez; istemci uydurmaz).
     final xp = widget.sonuc.kazanilanXp;

@@ -74,11 +74,49 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 
 ## B. Kayıtlar (en yeni üstte)
 
+### K-0104 · 2026-10-22 23:24 · DEN/VT · 2. sınıf yayını (104 soru) ve İngilizce 2 kaynak bulgusu
+- **Tür:** Karar (kullanıcı: "yayın için uygundur") + Gelişme + Not
+- **Yayın:** 104 soru `beklemede` → `onaylandi`: Türkçe 34, Matematik 32, Hayat Bilgisi 38. `insan_onayi_kim='kullanici'`, `insan_onayi_karar='onay'`, `insan_onayi_zaman` = yayın anı. `soru_importlari.onayli` iki parti için `true`. Onaylı toplam 915 → 1019. `kalite_durumu` 'sari' olarak kaldı (insan örneklemi REHBER §15 yapılmadı; kullanıcı kararıyla yayına alındı). 3 BEKLET soru yayına alınmadı.
+- **İngilizce 2 kaynağı (kullanıcı verdi: `kazanmdeerlendirmelekleri.zip`):** İçinde 2023–2024 bir okulun "Kazanım Değerlendirme Ölçeği" Excel dosyaları var (`2. Snf 1. Dönem.xlsm`, `2. Snf 2. Dönem.xlsm`, sayfalar `YD1`/`YD2`; makrolar çalıştırılmadı). Kodlar `E2.1.L1`…`E2.10.S3` biçiminde; ama yalnızca **dinleme (L)** ve **konuşma (S)**. Okuma ve yazma kodu yok.
+- **Karar:** Bu kodlarla yazılı çoktan seçmeli soru üretilmedi. Dinleme/konuşma kazanımları yazılı soruyla ölçülemez (Türkçe T.D/T.K ile aynı kapsam kuralı). İngilizce 2 hücresi kapalı kalır.
+- **Açık seçenek (kullanıcı kararı gerekir):** Kelime ve kalıp tanımayı yazılı olarak sınayan bir vekil ölçüm (ör. `E2.7.L1` vücut bölümü adlarını tanıma → yazılı sözcük eşleştirme). Bu, kazanımın kendisini değil yazılı vekilini ölçer; etiketlenirse yanıltıcı olur. Kabul edilirse ayrı karar ve ayrı kayıt gerekir.
+- **Doğrulama:** DOĞRULANDI (sayımlar: onaylı toplam 1019; 2. sınıf parti dağılımı yukarıda). Yayın öncesi insan örneklemi yapılmadı.
+- **Durum:** TAMAMLANDI (2. sınıf üç ders yayında) · İngilizce 2: KAPALI (kodlar yalnızca dinleme/konuşma).
+- **Sahip:** Kullanıcı (yayın onayı verildi; İngilizce vekil ölçüm kararı) · Ajan.
+- **Önem:** Orta
+- **İlgili:** K-0103, K-0102; `C:\Users\cengi\Downloads\kazanmdeerlendirmelekleri.zip` (açılarak incelendi, kopyalanmadı).
+
+### K-0103 · 2026-10-22 23:09 · DEN · 2. sınıf kapanış: Türkçe, Matematik, Hayat Bilgisi (İngilizce 2 kapalı)
+- **Tür:** Karar + Gelişme (kullanıcı kararı: "1 numaralı öneri ile ilerleyelim")
+- **Konu:** DEN, VT
+- **Karar:** İngilizce 2 hücresi kapatıldı: sınıfa özel kazanım kodu içeren resmî kaynak bulunamadı (K-0102; web araması dahil). Yeniden açılması için tam 2. sınıf İngilizce programı ya da öğretmen kılavuzu PDF'i gerekir. 2. sınıf işi üç ders ile kapandı.
+- **Kapanış sayıları (veritabanı, `beklemede`, toplam 104):** Türkçe 34 (zorluk 3: 4), Matematik 32 (zorluk 3: 7), Hayat Bilgisi 38 (zorluk 3: 4). Onaylı 915 değişmedi. Benzerlik bekletmesi 3 soru (TR2-020, TR2-034, MAT2-033) aktarılmadı.
+- **Açık kalanlar (kapanışla kabul edildi, karar kullanıcıda):** (a) Zorluk 3 hedefi (%20) Türkçe ve Hayat Bilgisi'nde karşılanmadı (%11); (b) HB.2.2.3 kapsam dışı (görsel gerektiren levha tanıma); (c) insan örneklemi (REHBER §15) ve yayın kararı bekliyor; (d) benzerlik ve kazanım metinlerinin DÖP teyidi PDF ayrıştırmasıyla yapıldı, resmî teyit yok; (e) TR2-049 ve TR2-051…052, 056…057, HB2-043 ve diğer DÜZELT/RED sorular çıkarıldı.
+- **Doğrulama:** DOĞRULANDI (veritabanı sayımı ve kapı betiği: tüm final dosyalar 0 RED). Kalite denetimi her soru için kör çözüm (Haiku) ve kör kalite (Sonnet) ile yapıldı; kapanış için yeniden denetim yapılmadı.
+- **Durum:** TAMAMLANDI (üretim ve aktarım, 2. sınıf üç ders) · İngilizce 2: İPTAL/KAPALI (kaynak bekliyor). Yayın ve örneklem: BEKLİYOR.
+- **Sahip:** Kullanıcı (yayın ve örneklem kararı; İngilizce 2 kaynağı) · Ajan.
+- **Önem:** Orta
+- **İlgili:** K-0093, K-0098, K-0099, K-0100, K-0101, K-0102; REHBER §12, §15; `docs/soru-uretim/pilot/*_2_final.json`, `denetim_*_2.json`, `kazanim_2_*.json`.
+
+### K-0102 · 2026-10-22 08:48 · DEN/VT · 2. sınıf kalan işler: İngilizce 2 engeli, zorluk-3 ek-2 partisi ve 11 soru aktarımı
+- **Tür:** Gelişme + Sorun + Karar (kullanıcı talimatı: "deploy et, insan örneklemine takılma, kalan soruları üret")
+- **Konu:** DEN, VT
+- **Deploy:** `20261072000000` uzak migration geçmişinde `applied` olarak işaretlendi (`migration repair`); SQL zaten uzakta uygulanmıştı. `20261071000000_okuma_sayfa_siniri_40.sql` **deploy edilmedi**: kullanıcı onayı yalnızca 2. sınıf düzeltmesini kapsadı ve o dosya okuma modülüne ait. Yerel `20261073000000` dosyası da uzakta yok; ona dokunulmadı.
+- **İngilizce 2 (engelli):** MEB TTKB `c1_ingilizce_2.pdf` (öğretmen kılavuzu, 13 sayfa) yalnız 13 kazanım kodu içeriyor (E2.6–E2.10), hepsi dinleme (L) ve konuşma (S); okuma/yazma kodu yok. Program bütünü doğrulanamadı; dinleme/konuşma kazanımları metin sorularla ölçülemez (Türkçe'deki kapsam kuralı). Hücre üretilmedi. **Ek bulgu (2026-10-22):** kullanıcının verdiği tymm "İngilizce Dersi Öğretim Programı Tanıtım Kılavuzu" (17 sayfa) yalnızca çerçeve ve CEFR düzeylerini anlatıyor, kazanım kodu yok. Aynı sayfanın bağlantısı `ingilizce-dersi-2-8.pdf` (1114 sayfa) 2–8 ortak çerçevesidir: beceri ve tutum kodları (FLFS1–4, D, CS, V, SELS) ve temalar var; sınıfa özel `E2.x` öğrenme çıktısı kodu yok. REHBER §12 (kazanım kodu zorunlu) bu nedenle karşılanamıyor. 2. sınıf öğretmen kılavuzunun tam PDF'i de bulunamadı (sayfadaki bağlantı `meb.ai` kısaltması; takip edilmedi). Ek arama (2026-10-22): altinordu.meb.gov.tr'deki "İngilizce Dersi Programı" PDF'inde (81 sayfa) yalnızca ENG1, ENG4–ENG7 kodları var, ENG2 yok. `mufredat.meb.gov.tr/.../TTKB/İlkokul/2/İngilizce/` altında yalnızca `c1_ingilizce_2.pdf` mevcut (c2–c6: 404). Web aramasında `E2.x.R/W` kodlu tablo bulunamadı. İngilizce 2 hücresi kapalı kalır.
+- **Zorluk-3 ek-2:** Türkçe 8 taslak (TR2-051…058), Hayat Bilgisi 8 taslak (HB2-038…045). Kapı 16/16 KONTROL. Çözücü (Haiku) ve kalite (Sonnet) kör denetimi. Onay: 11 soru (Türkçe 4: TR2-053, 054, 055, 058; Hayat Bilgisi 7: HB2-038…042, 044, 045). Elenen: TR2-051, 052, 056, 057 (kalite DÜZELT: çeldirici ikinci doğru ya da cevap metinden çıkmıyor ya da kod uyumsuz); HB2-043 (kalite DÜZELT: çeldiriciler genel kültürle elenir). Zorluk önerileri uygulandı (tek adımlı bulunanlar 2).
+- **Sonuç (son final dosyalar, BEKLET dahil):** Türkçe 36, Matematik 33, Hayat Bilgisi 38. Zorluk 3 oranı: Türkçe 4/36 (%11), Hayat Bilgisi 4/38 (%11); Matematik ~%24. **Hedef %20 Türkçe ve Hayat Bilgisi'nde karşılanmadı.** Yazarlar hâlâ tek adımlı sorular üretiyor; yeni bir yazım yaklaşımı (ör. iki metin parçası birleştirme) ayrı karar gerektirir.
+- **Aktarım:** Parti `soru-uretim-2026-10-22-2sinif-ek2`, 11 soru, `beklemede`, `kalite_durumu='sari'`, `kaynak_turu='uretilen'`, görselsiz. Doğrulama: `_soru_paket_hatasi` (düzeltilmiş) 11/11 geçerli, kimlik ve metin tekrarı 0. Aktarım sonrası: toplam 1019; beklemede 104 (ilk parti 93 + ek-2 11); onaylı 915 değişmedi. İçe aktarılabilir 2. sınıf soruları: Türkçe 34, Matematik 32, Hayat Bilgisi 38 = 104 (3 BEKLET hariç).
+- **Doğrulama:** DOĞRULANDI (sayımlar, validator). Yapılmadı: insan örneklemi (kullanıcı talimatıyla ertelendi), zorluk kalibrasyonu, DÖP teyidi.
+- **Durum:** BEKLİYOR (insan örneklemi ve yayın kararı; İngilizce 2 program kaynağı; zorluk-3 hedefi kararı; `20261071` deploy kararı).
+- **Sahip:** Kullanıcı (örneklem, yayın, İngilizce 2 kaynağı, 20261071) · Ajan.
+- **Önem:** Orta
+- **İlgili:** K-0100, K-0101; migration `20261072000000`; `docs/soru-uretim/paket/soru_paketi_2sinif_ek2_2026-10-22.json`.
+
 ### K-0101 · 2026-10-22 08:37 · VT · Soru paketi doğrulayıcısı: sınıf alanı düzeltildi (uzakta uygulandı)
 - **Tür:** Gelişme + Karar (kullanıcı onayı: "düzenlemeyi yap")
 - **Konu:** VT
 - **Bağlam:** K-0100'de `admin_import_questions_v2` paketi 93/93 reddetmişti: canlı `_soru_hatasi` sınıf (1–12) ister, `20261047000000` sarmalayıcısı sınıfı geçirmiyordu. Canlı `_soru_paket_hatasi` gövdesi depo sürümüyle birebir aynı olduğu doğrulandı.
-- **Karar/Yapılan:** `supabase/migrations/20261072000000_soru_paketi_sinif_duzeltme.sql`: yalnız `_soru_paket_hatasi` yeniden tanımlandı; `_soru_hatasi` çağrısına `sinif` eklendi. Uzakta yalnız bu SQL `db query --linked -f` ile çalıştırıldı. `db:deploy` **çalıştırılmadı**: `db:preview` bekleyen `20261071000000_okuma_sayfa_siniri_40.sql` dosyasını da gösteriyordu; onu ayrıca onaylanmadı.
+- **Karar/Yapılan:** `supabase/migrations/20261072000000_soru_paketi_sinif_duzeltme.sql` (sonradan `20261073000000_soru_paketi_sinif_duzeltme.sql` olarak yeniden numaralandı; uzak geçmişte bu numarayla kayıtlı; `20261072` okuma modülünün kendi migration'ı): yalnız `_soru_paket_hatasi` yeniden tanımlandı; `_soru_hatasi` çağrısına `sinif` eklendi. Uzakta yalnız bu SQL `db query --linked -f` ile çalıştırıldı. `db:deploy` **çalıştırılmadı**: `db:preview` bekleyen `20261071000000_okuma_sayfa_siniri_40.sql` dosyasını da gösteriyordu; onu ayrıca onaylanmadı.
 - **Doğrulama:** DOĞRULANDI (salt okunur): 93/93 paket satırı `_soru_paket_hatasi` → null; geçersiz sınıf (13) → "sınıf zorunlu ve 1–8" hatası; `authenticated` için execute yetkisi kapalı (değişmedi).
 - **Açıklama:** 93 soru zaten K-0100'deki SQL aktarımıyla `beklemede` olarak içeridedir (parti `soru-uretim-2026-10-22-2sinif`, 93 kayıt); aynı parti tekrar aktarılamadığı için yeniden aktarım yapılmadı. Düzeltme gelecek paketler için RPC yolunu açar. 3 BEKLET soru (TR2-020, TR2-034, MAT2-033) aktarılmadı.
 - **Durum:** TAMAMLANDI (düzeltme) · Açık: `db:status` uzakta 20261072'yi kayıtlı görmeyecek (uzaktan elle uygulandı); `20261071` onayı bekliyor.
@@ -3253,3 +3291,10 @@ Paketler:
 - 300 gün temizliği: 20261070 pg_cron'u zorunlu kılar ve `kullanim_olaylari_temizle` işini (her gün 03:15 UTC) kurar; iş kurulamazsa migration hata verir. Uzakta uygulandı.
 - Karar (çocuğa okumayı sevdirme hedefi): HR-041…047 kısaltılmaz; ~85-90 kelimelik kısa sayfalara bölündü (9→24-36 sayfa). Sayfa sınırı 12→40 (20261071), yeni taslaklar 20261072 ile uzakta. Soruların dayanak_sayfa değeri anahtar sözcük örtüşmesiyle yeniden eşlendi (okuma insan gözüyle doğrulanmalı).
 - Not: 20261072 sürüm çakışması: soru-paketi işinin dosyası 20261073'e yeniden adlandırıldı, uygulanmadı (sahibi uygulamalı).
+
+### K-0102 · 2026-10-23 · VT/MOB/TSR · Okuma mobil düzeltmeleri: anlam, kelime paneli, kaydırma, anket, sonuç, PDF
+- Kök neden (anlam çıkmıyordu): sözlük girdileri taslaktı ve uygulama yalnız onaylı girdileri gösteriyordu; dört göz (tek yönetici) engeli. Çözüm: hikâyeye özgü sözlük alt kümesi paketin içine (`sozluk`) gömüldü; hikâye yayınının üç gözüyle birlikte onaylanır. Sözlük tablosu onayı ayrı kalır.
+- İkonlar: kavram→ikon eşleşmeleri (katalog etiketleri, 86 ikon) her hikâyeye üretildi; sayfa başına en çok 3 (uygulama ve PDF kendi bütçesiyle keser). Şema ikon kimliği 24 karaktere çıkarıldı.
+- Uzak DB (uygulandı): 20261075 (anket puanı isteğe bağlı), 20261076 (paket doğrulayıcı: sözluk + uzun ikon kimliği), 20261077 (45 hikâyeye yeni TASLAK sürüm). Yayın YAPILMADI: 12 test yayınındaki hikâyeler eski sürümle yayında kalıyor; yeni sürüm için insan okuması ve yayına alma kararı kullanıcıda.
+- Mobil: kelime paneli (başlıkta kapat simgesi, sabit Kapat düğmesi); okuyucu uzun sayfalarda birkaç saniye sonra yavaş otomatik kaydırma (dokununca durur, hareket azaltmada kapalı); soru geri bildirimi cevaptan sonra görünür alana kayar, yanlışta nötr Hupo pozu; anket puanı ve önerileri isteğe bağlı ("Atla"), iki sütunlu öneri ızgarası; sonuç ekranında maskot başlığın yanında (motivasyon kartı 360×640'ta düğmelerin üstünde, widget testiyle doğrulandı), düşük puanda üzgün poz yok; PDF "indir" artık dosyayı İndirilenler'e kaydeder (file_saver), kapakta maskot yok, hikâyenin sahne görseli kullanılır.
+- Doğrulama: flutter test 398/398 (önceki okuma akış testleri anket akışına göre güncellendi); yeni okuma_duzeltme_test (5), okuma_sozluk_paket_test (1); PGlite zinciri hatasız; kos.mjs 186/187 (#18 eski bilinen). APK derlendi; telefon kurulum sırasında bağlı değildi.

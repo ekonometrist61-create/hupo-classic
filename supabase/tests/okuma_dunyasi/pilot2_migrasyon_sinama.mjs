@@ -28,6 +28,8 @@ const migrasyonlar = [
   mig('20261068000000_okuma_uc_goz_yayin_kurali.sql'),
   mig('20261071000000_okuma_sayfa_siniri_40.sql'),
   mig('20261074000000_okuma_site_ozeti.sql'),
+  mig('20261075000000_okuma_anket_yildiz_istege_bagli.sql'),
+  mig('20261076000000_okuma_paket_sozluk_ikon.sql'),
 ];
 
 const db = new PGlite();
@@ -38,7 +40,7 @@ for (const m of migrasyonlar) await db.exec(oku(m));
 await db.query('insert into auth.users (id, email) values ($1, $2)', ['00000000-0000-4000-8000-00000000b001', 'uzak-yonetici@example.test']);
 await db.query("insert into public.profiles (id, role, full_name) values ($1, 'admin', 'Uzak Yonetici')", ['00000000-0000-4000-8000-00000000b001']);
 
-for (const ad of ['20261059000000_okuma_pilot2_icerik.sql', '20261061000000_okuma_pilot2_guncelleme.sql', '20261062000000_okuma_pilot3_4_icerik.sql', '20261067000000_okuma_pilot4_6_icerik.sql', '20261069000000_okuma_test_yayini.sql', '20261072000000_okuma_uzun_hikayeler_bolunmus.sql']) {
+for (const ad of ['20261059000000_okuma_pilot2_icerik.sql', '20261061000000_okuma_pilot2_guncelleme.sql', '20261062000000_okuma_pilot3_4_icerik.sql', '20261067000000_okuma_pilot4_6_icerik.sql', '20261069000000_okuma_test_yayini.sql', '20261072000000_okuma_uzun_hikayeler_bolunmus.sql', '20261077000000_okuma_ikon_sozluk_taslak.sql']) {
   if (!fs.existsSync(mig(ad))) continue;
   await db.exec(oku(mig(ad)));
   console.log(ad, 'uygulandi (hata yok)');

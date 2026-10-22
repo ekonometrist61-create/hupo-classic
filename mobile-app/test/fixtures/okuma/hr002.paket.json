@@ -1,0 +1,474 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr002-renkli-ucurtma",
+    "baslik": "Renkli Uçurtmanın Peşinde",
+    "tur": "macera",
+    "konu": "mahalle",
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "okuma_bandi": 1,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "kardes",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D20"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 2,
+      "okuma_zorlugu": 1,
+      "kavram_zorlugu": 1,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif",
+        "dayanisma"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D20"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "yukari",
+          "tur": "lexeme",
+          "etiket": "yukarı",
+          "yuva": "s2_yukari",
+          "islev": "first_hint"
+        },
+        {
+          "id": "harita",
+          "tur": "lexeme",
+          "etiket": "harita",
+          "yuva": "s2_harita",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr002",
+          "tur": "concept",
+          "etiket": "Yönler",
+          "islev": "application"
+        },
+        {
+          "id": "atasoz_hr002",
+          "tur": "proverb",
+          "etiket": "Komşu komşunun külüne muhtaçtır",
+          "yuva": "ata_komsu",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 225,
+        "tahmini_sure_dk": 4,
+        "sayfa_sayisi": 6,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1,
+          "proverb": 1
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 10
+      }
+    },
+    "tanitim": "Rüzgâr uçurtmayı sokaklara taşıdı. Bir harita çizen çocuk onu bulabilir mi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-002"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kırmızı, sarı ve mavi parçalarla bir uçurtma yapmıştı. Uçurtma birden "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_yukari"
+        },
+        {
+          "t": "metin",
+          "v": " yükseldi. İpi elinden kayınca sokak boyunca uçup gitti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " arkasından koşacaktı ki "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " kanadını açtı. \"Koşmadan önce nereye gittiğini görelim.\" "
+        },
+        {
+          "t": "isaret",
+          "kod": "kus"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Uçurtma önce fırının üstünden geçti. Sonra sola kıvrıldı ve saatli dükkânın arkasına kayboldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " cebindeki küçük deftere bir çizgi çizdi. Fırını, dükkânı ve büyük dut ağacını işaretledi. Böylece deftere küçük bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_harita"
+        },
+        {
+          "t": "metin",
+          "v": " çizilmiş oldu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Fırının önünde ekmek"
+        },
+        {
+          "t": "ikon",
+          "v": "seed"
+        },
+        {
+          "t": "metin",
+          "v": " kokusu vardı. Fırıncı dışarı çıktı. \"Biraz önce renkli bir şey geçti,\" dedi. \"Rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " onu batıya sürükledi.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterinin köşesine küçük bir ok çizdi. İlk kez bir harita"
+        },
+        {
+          "t": "ikon",
+          "v": "map"
+        },
+        {
+          "t": "metin",
+          "v": " yapmanın işe yaradığını düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sokağın sonunda iki yol ayrılıyordu. Biri yokuş yukarı çıkıyor, diğeri parka iniyordu. Hangi yolu seçeceğini bilemeyen "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yerdeki kurdeleye baktı. Bir süre sonra pencerede asılı rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " gülünün kanatlarının parka doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " döndüğünü fark etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " rüzgârın ara sıra yön"
+        },
+        {
+          "t": "ikon",
+          "v": "compass"
+        },
+        {
+          "t": "metin",
+          "v": " değiştirdiğini hatırlattı. Yalnızca buna güvenemezlerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dut ağacının yanına vardıklarında uçurtma görünmüyordu. Tam dönerken üst kattan bir ses"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " duyuldu: \"Bunu mu arıyorsunuz?\" Yaşlı bir komşu uçurtmayı balkonda bulmuştu. Balkona çıkıp almak yerine kapıyı çalıp yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " istediler. Komşu uçurtmayı güvenle getirdi. Bu yardımla "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " aklına şu söz geldi: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "ata_komsu"
+        },
+        {
+          "t": "metin",
+          "v": "\"."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " haritasına son bir işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " koydu. \"Yukarıda gördüm, aşağıda buldum!\" diye güldü. Bu kez ipi sağlam bağladı. Akşam arkadaşlarına hem uçurtmayı hem de üç sokaklık maceranın haritasını gösterdi. Annesi, onun dikkatine ve yardımlaşmaya sevindi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 2,
+      "metin": "Uçurtma ilk olarak nerenin üstünden geçti?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Fırının"
+        },
+        {
+          "id": "B",
+          "metin": "Okulun"
+        },
+        {
+          "id": "C",
+          "metin": "Parkın"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Uçurtma önce fırının üstünden geçti."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Çocuk deftere çizgi ve işaretler neden çizdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Uçurtmanın gittiği yolu hatırlamak için"
+        },
+        {
+          "id": "B",
+          "metin": "Defteri süslemek için"
+        },
+        {
+          "id": "C",
+          "metin": "Arkadaşlarına resim göstermek için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Fırını, dükkânı ve dut ağacını işaretleyerek uçurtmanın yolunu takip etti."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 6,
+      "metin": "Çocuk uçurtmasını bulunca ipi neden bu kez sağlam bağladı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir daha kaybolmasın diye"
+        },
+        {
+          "id": "B",
+          "metin": "Uçurtma çok ağır olduğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Komşu ona bunu söylediği için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Çocuk, sağlam bağlarsa uçurtmanın bir daha uçup gitmeyeceğini öğrenmişti."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "Metinde geçen harita sözcüğü ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yolları ve yerleri gösteren çizim"
+        },
+        {
+          "id": "B",
+          "metin": "Uçan bir oyuncak"
+        },
+        {
+          "id": "C",
+          "metin": "Büyük bir kapı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Çocuk defterine yolları ve yerleri gösteren bir çizim yaptı."
+    }
+  ],
+  "uretim": {
+    "kaynak": "elle",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "s2_yukari",
+        "tur": "kelime",
+        "yazim": "yukarı",
+        "anlam": "Daha yüksek bir yöne doğru.",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_harita",
+        "tur": "kelime",
+        "yazim": "harita",
+        "anlam": "Bir yeri, yolları ve önemli yerleri gösteren çizim.",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "ata_komsu",
+        "tur": "atasozu",
+        "yazim": "Komşu komşunun külüne muhtaçtır",
+        "anlam": "Komşuya her zaman ihtiyaç duyulur; komşular birbirine yardım eder.",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "s2_yukari",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_yukari"
+          }
+        ]
+      },
+      {
+        "ad": "s2_harita",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_harita"
+          }
+        ]
+      },
+      {
+        "ad": "ata_komsu",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "ata_komsu"
+          }
+        ]
+      }
+    ]
+  }
+}

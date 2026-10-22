@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -95,6 +97,40 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
   /// Kelime ve deyim dokunma tanıyıcıları. Sayfa ve indekse göre önbelleklenir; dispose'da kapanır.
   final Map<String, TapGestureRecognizer> _tanyicilar = {};
 
+  /// Uzun sayfa: birkaç saniye sonra yavaşça aşağı kayar ki çocuk metnin tamamını görsün.
+  /// Kullanıcı dokunduğunda durur; hareket azaltma açıksa hiç kaymaz.
+  final ScrollController _kaydirma = ScrollController();
+  Timer? _kaydirmaZamani;
+  static const _kaydirmaBeklemesi = Duration(seconds: 3);
+  static const _kaydirmaHizi = 35.0; // piksel / saniye
+
+  void _kaydirmayiDurdur() {
+    _kaydirmaZamani?.cancel();
+    if (_kaydirma.hasClients && _kaydirma.position.isScrollingNotifier.value) {
+      _kaydirma.jumpTo(_kaydirma.position.pixels);
+    }
+  }
+
+  void _otomatikKaydirmaPlanla() {
+    _kaydirmaZamani?.cancel();
+    if (!mounted || MediaQuery.disableAnimationsOf(context)) return;
+    _kaydirmaZamani = Timer(_kaydirmaBeklemesi, () {
+      if (!mounted || !_kaydirma.hasClients) return;
+      final son = _kaydirma.position.maxScrollExtent;
+      if (son <= 0) return;
+      final ms = (son / _kaydirmaHizi * 1000).round().clamp(4000, 20000);
+      _kaydirma.animateTo(son, duration: Duration(milliseconds: ms), curve: Curves.easeInOut);
+    });
+  }
+
+  void _sayfaBasinaDon() {
+    _kaydirmaZamani?.cancel();
+    if (_kaydirma.hasClients) _kaydirma.jumpTo(0);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _otomatikKaydirmaPlanla();
+    });
+  }
+
   List<List<Cikti>> get _sayfalar => widget.sayfalar;
   List<Cikti> get _mevcut => _sayfalar[_sayfa];
 
@@ -107,10 +143,15 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
     // Okuma yazı tipi seçilmediyse uygulamanın genel yazı tipi ayarı geçerli.
     _lexend = depo.lexend ?? ref.read(settingsProvider).font == AppFont.lexend;
     if (_sayfalar.isNotEmpty) widget.onSayfaGorundu?.call(0);
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) _otomatikKaydirmaPlanla();
+    });
   }
 
   @override
   void dispose() {
+    _kaydirmaZamani?.cancel();
+    _kaydirma.dispose();
     for (final t in _tanyicilar.values) {
       t.dispose();
     }
@@ -268,6 +309,7 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
     );
     showModalBottomSheet<void>(
       context: context,
+      isScrollControlled: true,
       transitionAnimationController: denetleyici,
       builder: (ctx) => OkumaKelimePaneli(
         etiket: etiket,
@@ -466,6 +508,7 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
       _ileri = yeni > _sayfa;
       _sayfa = yeni;
     });
+    _sayfaBasinaDon();
     widget.onSayfaGorundu?.call(yeni);
   }
 
@@ -494,6 +537,8 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
     return OkumaEkranIskeleti(
       baslik: widget.baslik,
       geri: widget.onGeri,
+      denetleyici: _kaydirma,
+      onKullaniciKaydirdi: _kaydirmayiDurdur,
       eylemler: [
         IconButton(
           tooltip: OkumaMetin.okuyucuKelimeler,

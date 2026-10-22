@@ -5,6 +5,7 @@
 // (2) ekran iskeleti ve (3) boş/hata bloğu bulunur.
 
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart' show ScrollDirection;
 
 import '../../screens/okuma/okuma_tema.dart';
 import '../../theme/app_theme.dart';
@@ -187,6 +188,8 @@ class OkumaEkranIskeleti extends StatelessWidget {
     this.altEylem,
     this.geri,
     this.eylemler = const [],
+    this.denetleyici,
+    this.onKullaniciKaydirdi,
   });
 
   final String baslik;
@@ -194,6 +197,12 @@ class OkumaEkranIskeleti extends StatelessWidget {
   final Widget? altEylem;
   final VoidCallback? geri;
   final List<Widget> eylemler;
+
+  /// İçerik kaydırma denetleyicisi (okuyucunun otomatik kaydırması için).
+  final ScrollController? denetleyici;
+
+  /// Kullanıcı parmağıyla kaydırdığında çağrılır (otomatik kaydırmayı durdurmak için).
+  final VoidCallback? onKullaniciKaydirdi;
 
   @override
   Widget build(BuildContext context) {
@@ -227,9 +236,16 @@ class OkumaEkranIskeleti extends StatelessWidget {
                     child: Center(
                       child: ConstrainedBox(
                         constraints: const BoxConstraints(maxWidth: OkumaTema.icerikTablet),
-                        child: ListView(
-                          padding: EdgeInsets.fromLTRB(yan, OkumaTema.bosluk8, yan, OkumaTema.bosluk24),
-                          children: icerik,
+                        child: NotificationListener<UserScrollNotification>(
+                          onNotification: (n) {
+                            if (n.direction != ScrollDirection.idle) onKullaniciKaydirdi?.call();
+                            return false;
+                          },
+                          child: ListView(
+                            controller: denetleyici,
+                            padding: EdgeInsets.fromLTRB(yan, OkumaTema.bosluk8, yan, OkumaTema.bosluk24),
+                            children: icerik,
+                          ),
                         ),
                       ),
                     ),

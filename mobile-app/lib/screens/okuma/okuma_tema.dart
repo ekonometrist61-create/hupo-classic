@@ -312,6 +312,11 @@ class OkumaMetin {
   static const anketHayir = 'Hayır';
   static const anketGonder = 'Gönder';
   static const anketSimdiDegil = 'Şimdi değil';
+  static const anketAtla = 'Atla';
+  static const anketIstegeBagli = 'İsteğe bağlı. Hiçbirini seçmeden de geçebilirsin.';
+  static const anketPuanBaslik = 'Puan';
+  static const anketOneriBaslik = 'Nasıl daha iyi olurdu?';
+  static const anketSonrakiBaslik = 'Sonraki hikâyeler';
   static const anketPasif =
       'Göndermek için bir yıldız seç ya da şimdi değil de.';
   static const anketGonderilemedi =

@@ -480,6 +480,7 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
           tanitim: paket.tanitim,
           dosyaAdi: '${satir.slug}.pdf',
           sinif: satir.anaSinif,
+          sahneSlug: satir.slug,
           sayfalar: sayfalar,
           sorular: [
             for (final s in paket.sorular)
