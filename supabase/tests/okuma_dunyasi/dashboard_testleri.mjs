@@ -24,6 +24,7 @@ const migrasyonlar = [
   mig('20261058000000_okuma_paket_fis_kodu.sql'),
   mig('20261060000000_okuma_hikaye_turleri.sql'),
   mig('20261065000000_okuma_dashboard_veli_ogretmen.sql'),
+  mig('20261078000000_okuma_dashboard_genislet.sql'),
 ];
 
 const db = new PGlite();
@@ -201,6 +202,39 @@ try {
   const listeVeli = await cagri(V1, 'public.okuma_ogretmen_sinif_ogrencileri($1)', [C1]);
   const listeAnon = await cagri(null, 'public.okuma_ogretmen_sinif_ogrencileri($1)', [C1]);
   k('liste: başka sınıfın öğretmeni ve veli 42501, anon reddedilir', listeBaska.hata?.kod === '42501' && listeVeli.hata?.kod === '42501' && !!listeAnon.hata, j([listeBaska, listeVeli, listeAnon]));
+
+  // --- Genişletme (20261078): doğru/yanlış, zorluk seyri, basamaklı hedef sayıları ------------
+  k('sınıf: dogruluk_toplami (8 soru, 7 doğru, 1 yanlış) ve türde yanlis alanı',
+    so.dogruluk_toplami.yeterli === true && so.dogruluk_toplami.soru === 8 && so.dogruluk_toplami.dogru === 7 && so.dogruluk_toplami.yanlis === 1
+      && so.olcme_turu_dogrulugu.kavram_dogrulugu.yanlis === 1 && so.olcme_turu_dogrulugu.kavram_dogrulugu.dogru === 3, j([so.dogruluk_toplami, so.olcme_turu_dogrulugu]));
+  k('sınıf: zorluk_seyri bu hafta 4 öğrenci; kimlik yok', so.zorluk_seyri.length >= 1 && so.zorluk_seyri.every((w) => w.ogrenci_sayisi >= 3), j(so.zorluk_seyri));
+  k('sınıf: kavram basamakları — tanıyan 3, hatırlayan/aktaran min-N altında null',
+    so.kavramlar[0].taniyan_sayisi === 3 && so.kavramlar[0].hatirlayan_sayisi === null && so.kavramlar[0].aktaran_sayisi === null, j(so.kavramlar));
+
+  // Üç öğrenci aktarım düzeyine geldi → basamaklar dolar
+  await db.exec(`insert into public.okuma_ogrenme_hedefleri (id, tur, etiket) values ('kav_su','concept','Su döngüsü')`);
+  await db.query("insert into public.okuma_hikaye_hedefleri (surum_id, hedef_id, islev) values ($1,'kav_su','first_hint')", [ra.surum_id]);
+  await db.exec(`insert into public.okuma_ogrenci_hedef_durumu (ogrenci_id, hedef_id, durum) values
+    ('${S[1]}','kav_su','transferred'), ('${S[2]}','kav_su','transferred'), ('${S[3]}','kav_su','transferred')`);
+  const sinif2 = await ok(T1, 'public.okuma_ogretmen_sinif_ozeti($1, 30)', [C1]);
+  const su = sinif2.ozet.kavramlar.find((x) => x.hedef_id === 'kav_su');
+  k('sınıf: 3 öğrenci aktardı → taniyan=hatirlayan=aktaran=3', su && su.taniyan_sayisi === 3 && su.hatirlayan_sayisi === 3 && su.aktaran_sayisi === 3, j(su));
+  k('sınıf: yanıtta öğrenci kimliği yok (genişletme sonrası)', S.slice(1).every((s) => !j(sinif2).includes(s)));
+
+  // Çocuğun hedefe bağlı yanlış cevabı: dönem içi soru/dogru/yanlis + toplam doğru/yanlış
+  await db.query(`insert into public.okuma_cevaplari (oturum_id, soru_id, secenek_id, dogru, beceri, olcme_turu, hedef_id)
+    values ($1,'s3','B',false,'yorumlama','transfer','kav_gunes')`, [o1]);
+  const v2 = (await ok(V1, 'public.okuma_veli_ozeti($1, 30)', [S[1]])).ozet;
+  const kg = v2.kavramlar.find((x) => x.hedef_id === 'kav_gunes');
+  k('veli: dogruluk_toplami (3 soru: 2 doğru, 1 yanlış, 3 soru ile yeterli)',
+    v2.dogruluk_toplami.yeterli === true && v2.dogruluk_toplami.soru === 3 && v2.dogruluk_toplami.dogru === 2 && v2.dogruluk_toplami.yanlis === 1, j(v2.dogruluk_toplami));
+  k('veli: kavram satırında soru/dogru/yanlis (1/0/1) ve yeni türde yanlis',
+    kg.soru === 1 && kg.dogru === 0 && kg.yanlis === 1 && v2.olcme_turu_dogrulugu.transfer.yeterli === false && v2.kelimeler[0].soru === 0, j([kg, v2.olcme_turu_dogrulugu]));
+  const v3 = (await ok(V1, 'public.okuma_veli_ozeti($1, 30)', [S[1]])).ozet;
+  k('veli: metin_kaniti 1 soru → yeterli=false (min-N 3 soru korunur)', v3.olcme_turu_dogrulugu.metin_kaniti.yeterli === false);
+  const eskiImza = (await db.query(`select count(*)::int as n from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+    where n.nspname = 'public' and p.proname = '_okuma_cocuk_hedef_listesi'`)).rows[0].n;
+  k('eski 2 argümanlı hedef yardımcısı düşürüldü (tek imza kaldı)', eskiImza === 1, String(eskiImza));
 
   // --- Envanter ---------------------------------------------------------
   const bilgi = (await db.query(`select p.proname, p.prosecdef, has_function_privilege('anon', p.oid, 'execute') as anon,

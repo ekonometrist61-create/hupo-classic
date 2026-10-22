@@ -25,6 +25,8 @@ const migrasyonlar = [
   mig('20261058000000_okuma_paket_fis_kodu.sql'),
   mig('20261060000000_okuma_hikaye_turleri.sql'),
   mig('20261064000000_okuma_yonetim_crud.sql'),
+  mig('20261068000000_okuma_uc_goz_yayin_kurali.sql'),
+  mig('20261079000000_okuma_toplu_islem.sql'),
 ];
 
 const db = new PGlite();
@@ -183,9 +185,58 @@ try {
   const silIncH = await cagri(A1, 'public.okuma_hikaye_sil($1)', [hD]);
   k('incelemedeki sürüm / hikâye silinemez (SURUM_SILINEMEZ)', hataIcerir(silInc, 'SURUM_SILINEMEZ', '55000') && hataIcerir(silIncH, 'SURUM_SILINEMEZ', '55000'), JSON.stringify([silInc, silIncH]));
 
+  // --- Toplu işlem (20261079): arşive al / sil, kuru çalıştırma, atlanan nedenleri ----
+  const toplu = (uid, idler, islem, kuru) => cagri(uid, 'public.okuma_toplu_islem($1::uuid[], $2, $3)', [`{${idler.join(',')}}`, islem, kuru]);
+  const bul = (r, id) => r.veri.sonuclar.find((x) => x.hikaye_id === id);
+  const tOgr = await toplu(O1, [hA], 'arsiv', true);
+  const tAnon = await toplu(null, [hA], 'arsiv', true);
+  k('toplu: öğrenci 42501, anon reddedilir', tOgr.hata?.kod === '42501' && !!tAnon.hata, JSON.stringify([tOgr, tAnon]));
+  const tBos = await toplu(A1, [], 'arsiv', true);
+  const tKotu = await toplu(A1, [hA], 'yoket', true);
+  k('toplu: boş liste ve geçersiz işlem BAD_LISTE / BAD_ISLEM (22023)', hataIcerir(tBos, 'BAD_LISTE', '22023') && hataIcerir(tKotu, 'BAD_ISLEM', '22023'), JSON.stringify([tBos, tKotu]));
+
+  const re = await ice(A1, paket('toplu-yayinda')); await yayinla(re.surum_id);
+  const hE = (await db.query("select id from public.okuma_hikayeleri where slug = 'toplu-yayinda'")).rows[0].id;
+  const rf = await ice(A1, paket('toplu-taslak'));
+  const hF = (await db.query("select id from public.okuma_hikayeleri where slug = 'toplu-taslak'")).rows[0].id;
+  const yokId = '00000000-0000-4000-8000-0000000000fe';
+
+  // kuru çalıştırma: hiçbir şey değişmez, sonuç gerçeği yansıtır
+  const kSil = await toplu(A1, [hE, hF, hA, hD, yokId], 'sil', true);
+  k('toplu sil (kuru): yayında=SURUM_YAYINDA, taslak=başarılı, oturumlu=OTURUM_VAR, incelemede=SURUM_SILINEMEZ, olmayan=HIKAYE_BULUNAMADI',
+    !kSil.hata && kSil.veri.kuru === true && bul(kSil, hE).neden === 'SURUM_YAYINDA' && bul(kSil, hF).sonuc === 'basarili'
+      && bul(kSil, hA).neden === 'OTURUM_VAR' && bul(kSil, hD).neden === 'SURUM_SILINEMEZ' && bul(kSil, yokId).neden === 'HIKAYE_BULUNAMADI'
+      && kSil.veri.basarili === 1 && kSil.veri.atlanan === 4, JSON.stringify(kSil));
+  k('toplu sil (kuru): hiçbir kayıt silinmedi',
+    (await say('okuma_hikayeleri', `id in ('${hE}','${hF}','${hA}','${hD}')`)) === 4 && (await say('okuma_hikaye_surumleri', `hikaye_id = '${hF}'`)) === 1);
+
+  // gerçek toplu sil: yalnız kurala uyan (taslak) gider
+  const gSil = await toplu(A1, [hE, hF, hA, hD], 'sil', false);
+  k('toplu sil (gerçek): yalnız oturumsuz taslak hikâye silinir; yayında / oturumlu / incelemede yerinde',
+    !gSil.hata && gSil.veri.basarili === 1 && bul(gSil, hF).etkilenen_surum === 1
+      && (await say('okuma_hikayeleri', `id = '${hF}'`)) === 0 && (await say('okuma_hikayeleri', `id in ('${hE}','${hA}','${hD}')`)) === 3, JSON.stringify(gSil));
+
+  // toplu arşiv: kuru -> gerçek
+  const kArs = await toplu(A1, [hE, hA, hD], 'arsiv', true);
+  k('toplu arşiv (kuru): yayında ve incelemede başarılı, zaten arşivdeki ZATEN_ARSIV; durum değişmez',
+    !kArs.hata && bul(kArs, hE).sonuc === 'basarili' && bul(kArs, hD).sonuc === 'basarili' && bul(kArs, hA).neden === 'ZATEN_ARSIV'
+      && (await say('okuma_hikaye_surumleri', `hikaye_id = '${hE}' and durum = 'yayinda'`)) === 1
+      && (await say('okuma_hikaye_surumleri', `hikaye_id = '${hD}' and durum = 'incelemede'`)) === 1, JSON.stringify(kArs));
+  const gArs = await toplu(A1, [hE, hA, hD], 'arsiv', false);
+  k('toplu arşiv (gerçek): yayında + incelemede sürümler arşive geçti, arsiv_at dolu; oturumlar korunur',
+    !gArs.hata && gArs.veri.basarili === 2 && gArs.veri.atlanan === 1
+      && (await say('okuma_hikaye_surumleri', `hikaye_id in ('${hE}','${hD}') and durum = 'arsiv' and arsiv_at is not null`)) === 2
+      && (await say('okuma_oturumlari', `hikaye_id = '${hA}'`)) === 2, JSON.stringify(gArs));
+
+  // arşivlenen oturumsuz hikâye artık toplu silinebilir; oturumlu hâlâ silinemez
+  const gSil2 = await toplu(A1, [hE, hA], 'sil', false);
+  k('toplu sil: arşivdeki oturumsuz hikâye silinir, oturumlu atlanır', gSil2.veri?.basarili === 1 && bul(gSil2, hA).neden === 'OTURUM_VAR'
+    && (await say('okuma_hikayeleri', `id = '${hE}'`)) === 0, JSON.stringify(gSil2));
+  k('toplu: yanıtta öğrenci kimliği yok', !JSON.stringify([kSil, gSil, kArs, gArs, gSil2]).includes(O1));
+
   // --- Denetim günlüğü --------------------------------------------------
-  const eksik = ['okuma_surum_silindi', 'okuma_hikaye_silindi', 'okuma_yonetim_istatistik'].filter(() => false);
-  for (const i of ['okuma_surum_silindi', 'okuma_hikaye_silindi', 'okuma_yonetim_istatistik']) {
+  const eksik = ['okuma_surum_silindi', 'okuma_hikaye_silindi', 'okuma_yonetim_istatistik', 'okuma_toplu_islem'].filter(() => false);
+  for (const i of ['okuma_surum_silindi', 'okuma_hikaye_silindi', 'okuma_yonetim_istatistik', 'okuma_toplu_islem']) {
     if ((await say('admin_audit_log', `islem = '${i}'`)) === 0) eksik.push(i);
   }
   k('log_admin_action kayıtları yazıldı', eksik.length === 0, eksik.join(','));
