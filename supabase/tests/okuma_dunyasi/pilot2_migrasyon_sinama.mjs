@@ -22,6 +22,10 @@ const migrasyonlar = [
   mig('20261057000000_okuma_hikaye_fisleri.sql'),
   mig('20261058000000_okuma_paket_fis_kodu.sql'),
   mig('20261060000000_okuma_hikaye_turleri.sql'),
+  mig('20261064000000_okuma_yonetim_crud.sql'),
+  mig('20261065000000_okuma_dashboard_veli_ogretmen.sql'),
+  mig('20261066000000_kullanim_suresi.sql'),
+  mig('20261068000000_okuma_uc_goz_yayin_kurali.sql'),
 ];
 
 const db = new PGlite();
@@ -32,7 +36,7 @@ for (const m of migrasyonlar) await db.exec(oku(m));
 await db.query('insert into auth.users (id, email) values ($1, $2)', ['00000000-0000-4000-8000-00000000b001', 'uzak-yonetici@example.test']);
 await db.query("insert into public.profiles (id, role, full_name) values ($1, 'admin', 'Uzak Yonetici')", ['00000000-0000-4000-8000-00000000b001']);
 
-for (const ad of ['20261059000000_okuma_pilot2_icerik.sql', '20261061000000_okuma_pilot2_guncelleme.sql', '20261062000000_okuma_pilot3_4_icerik.sql']) {
+for (const ad of ['20261059000000_okuma_pilot2_icerik.sql', '20261061000000_okuma_pilot2_guncelleme.sql', '20261062000000_okuma_pilot3_4_icerik.sql', '20261067000000_okuma_pilot4_6_icerik.sql', '20261069000000_okuma_test_yayini.sql']) {
   if (!fs.existsSync(mig(ad))) continue;
   await db.exec(oku(mig(ad)));
   console.log(ad, 'uygulandi (hata yok)');
@@ -42,7 +46,7 @@ const hikaye = await db.query('select count(*)::int as n from public.okuma_hikay
 const fis = await db.query('select count(*)::int as n from public.okuma_hikaye_fisleri where hikaye_slug is not null');
 const sozlukGirdi = await db.query('select count(*)::int as n from public.okuma_sozluk_girdileri');
 const sozlukYuva = await db.query('select count(*)::int as n from public.okuma_sozluk_yuvalari');
-const surum = await db.query("select durum, count(*)::int as n from public.okuma_hikaye_surumleri group by durum");
+const surum = await db.query("select durum, count(*)::int as n from public.okuma_hikaye_surumleri group by durum order by durum");
 const hedef = await db.query("select tur, count(*)::int as n from public.okuma_ogrenme_hedefleri group by tur order by tur");
 console.log('hikaye:', hikaye.rows[0].n);
 console.log('fis baglandi:', fis.rows[0].n, '/ 15');

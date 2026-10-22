@@ -54,7 +54,7 @@ export interface PaketSoru {
 }
 
 export interface Paket {
-  hikaye: { baslik: string; tanitim?: string };
+  hikaye: { baslik: string; tanitim?: string; tur?: string };
   sayfalar: { omurga: boolean; parcalar: Parca[] }[];
   deger_sahneleri?: Sahneler;
   hareket_sahneleri?: Sahneler;
@@ -94,6 +94,31 @@ export interface IceAktarYaniti {
   };
   hatalar?: unknown[];
   uyarilar?: unknown[];
+}
+
+export interface DagilimSatiri {
+  ana_sinif?: number;
+  sinif?: number | null;
+  tur?: string;
+  hikaye?: number;
+  oturum?: number;
+  tamamlanan?: number;
+}
+
+export interface IstatistikYaniti {
+  yayinda_hikaye: number;
+  surum_durumlari: Partial<Record<OkumaDurum, number>>;
+  toplam_oturum: number;
+  tamamlanan_oturum: number;
+  /** Yüzde 0-100; oturum yoksa null. */
+  tamamlama_orani: number | null;
+  /** Tamamlanan oturumlarda toplam doğru / toplam soru, yüzde 0-100; veri yoksa null. */
+  ortalama_dogruluk: number | null;
+  okunan_kelime: number;
+  yayinda_sinif_dagilimi: DagilimSatiri[];
+  yayinda_tur_dagilimi: DagilimSatiri[];
+  oturum_sinif_dagilimi: DagilimSatiri[];
+  oturum_tur_dagilimi: DagilimSatiri[];
 }
 
 export interface KarneSurumu {

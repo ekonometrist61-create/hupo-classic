@@ -10,6 +10,7 @@ import type { DenetimDurumu, OkumaDurum } from "@/lib/okuma/okuma";
 import ErrorNote from "../panel/ErrorNote";
 import { inputClass, labelClass, outlineBtn, primaryBtn } from "../panel/styles";
 import { useHataMetni, VeriDurumu } from "./ortak";
+import SurumAraclari from "./SurumAraclari";
 import SurumOnizleme from "./SurumOnizleme";
 import type { IcerikYaniti, SurumSatiri } from "./tipler";
 
@@ -165,6 +166,9 @@ export default function SurumDetay({ satir, onKapat, onDegisti }: Props) {
               <ErrorNote message={hataMesaji} />
             </div>
           </div>
+
+          {/* Düzenle / sil */}
+          <SurumAraclari satir={satir} durum={durum} paket={icerik.data.paket} onDegisti={onDegisti} onSilindi={onKapat} />
 
           {/* Önizleme */}
           <details className="group">

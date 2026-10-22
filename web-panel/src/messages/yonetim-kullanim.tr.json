@@ -1,0 +1,40 @@
+{
+  "yonetim": {
+    "shell": {
+      "nav": {
+        "kullanim": "Kullanım süresi"
+      },
+      "pageDesc": {
+        "kullanim": "Hangi yüzeyde, hangi ekranda ne kadar vakit geçirildiğini anonim olarak izle."
+      }
+    },
+    "kullanim": {
+      "title": "Kullanım süresi",
+      "aciklama": "Veriler anonimdir: hesap, çocuk ya da kişi bilgisi içermez; yalnızca yüzey, ekran adı ve süre tutulur. 300 gün saklanır. Beşten az oturumlu satırlar gizlenir. Web yüzeylerinde yalnızca analitik izni veren ziyaretçiler ölçülür.",
+      "donem": "Dönem",
+      "gunSecenek": "Son {n} gün",
+      "yuzey": "Yüzey",
+      "tumYuzeyler": "Tüm yüzeyler",
+      "yenile": "Yenile",
+      "yukleniyor": "Yükleniyor…",
+      "kurulumYok": "Kullanım süresi veritabanı katmanı bu ortamda henüz kurulu değil.",
+      "hata": "Rapor alınamadı. Yönetici yetkini kontrol edip yeniden dene.",
+      "veriYok": "Bu dönem için gösterilecek yeterli veri yok.",
+      "trendBaslik": "Günlük toplam süre",
+      "tabloBaslik": "Yüzey ve ekran bazında süre",
+      "ekran": "Ekran",
+      "toplamSure": "Toplam süre",
+      "oturum": "Oturum",
+      "ortalamaSure": "Ortalama süre",
+      "bastirmaNotu": "Gizlilik için beşten az oturumlu ekranlar ve günler listelenmez; bu yüzden toplamlar gerçek değerden küçük olabilir.",
+      "yuzeyler": {
+        "mobil": "Mobil uygulama",
+        "flutter_web": "Web uygulaması",
+        "site": "Halka açık site",
+        "yonetim": "Yönetim paneli",
+        "veli": "Veli paneli",
+        "ogretmen": "Öğretmen paneli"
+      }
+    }
+  }
+}

@@ -15,6 +15,7 @@
       "sekme": {
         "liste": "Stories",
         "iceAktar": "Import",
+        "istatistik": "Statistics",
         "karne": "Story scorecard",
         "bosluk": "Content gaps",
         "sozluk": "Dictionary and goals",
@@ -47,7 +48,10 @@
         "FORBIDDEN": "You do not have permission for this action.",
         "EN_FAZLA_BES": "At most 5 values can be selected.",
         "TEKRARLI_DEGER": "The same value was selected more than once.",
-        "GECERSIZ_DEGER": "An invalid value was selected."
+        "GECERSIZ_DEGER": "An invalid value was selected.",
+        "SURUM_SILINEMEZ": "Only draft or archived versions can be deleted. Move a version under review back to draft or archive first.",
+        "OTURUM_VAR": "Children have already read this content, so it cannot be deleted. Archive it instead.",
+        "SURUM_YAYINDA": "A published version cannot be deleted. Archive it first."
       },
       "durumlar": {
         "taslak": "Draft",
@@ -69,10 +73,21 @@
         "rejected": "Rejected"
       },
       "gecis": {
-        "taslak": { "incelemede": "Send to review", "arsiv": "Archive" },
-        "incelemede": { "taslak": "Return to draft", "yayinda": "Publish", "arsiv": "Archive" },
-        "yayinda": { "arsiv": "Archive" },
-        "arsiv": { "taslak": "Restore to draft" }
+        "taslak": {
+          "incelemede": "Send to review",
+          "arsiv": "Archive"
+        },
+        "incelemede": {
+          "taslak": "Return to draft",
+          "yayinda": "Publish",
+          "arsiv": "Archive"
+        },
+        "yayinda": {
+          "arsiv": "Archive"
+        },
+        "arsiv": {
+          "taslak": "Restore to draft"
+        }
       },
       "liste": {
         "durum": "Status",
@@ -304,18 +319,115 @@
         "sozlukBos": "There is no active theme or value in the dictionary; the map cannot be drawn.",
         "ozet": "{bos} of {toplam} intersections have no published story.",
         "okuma": "Cell: published story count. \"+n\" is the in-review count. Column headers are Maarif value codes (hover to see the name).",
-        "temaDeger": "Theme \\ Value",
+        "kelimeSayisi": "Words read",
+      "toplamSure": "Total reading time",
+      "dk": "{dk} min",
+      "okunanHikayeler": "Stories read",
+      "okunanHikayelerYok": "No stories to show: a story appears only when at least {min} different students have read it.",
+      "hikayeDeger": "{ogrenci} students · {oturum} reads",
+      "dogruOrani": "{oran}% correct",
+      "turDagilimi": "Story genres",
+      "turYok": "No genres to show: a genre needs at least {min} different students.",
+      "turDeger": "{ogrenci} students · {oturum} reads",
+      "kavramlar": "Concepts",
+      "atasozleri": "Proverbs and idioms",
+      "kelimeler": "New words",
+      "hedefYok": "No items to show: an item needs at least {min} different students.",
+      "hedefGorenSayisi": "{ogrenci} students encountered it",
+      "hedefOgrenenSayisi": "{ogrenci} students encountered it · {ogrenen} recognised or recalled it",
+      "okunanHikaye": "Stories read",
+      "tamamlananHikaye": "Stories completed",
+      "ogrenciBaslik": "Student summary",
+      "ogrenciAciklama": "Reading summary of a single student. Shown only for students in your class whose parent has consented to sharing reading data.",
+      "ogrenciSec": "Student",
+      "ogrenciSecin": "Select a student",
+      "adsiz": "(unnamed student)",
+      "rizaYokKisa": "no parent consent",
+      "rizaYok": "This student's parent has not consented to sharing reading data; no summary is shown.",
+      "rizaGeriCekildi": "This student's parent withdrew consent; no summary is shown.",
+      "ogrenciYetkisiz": "You do not have access to this student's summary.",
+      "temaDeger": "Theme \\ Value",
         "tabloBaslik": "Published stories per theme and value intersection for grade {n}",
         "hucre": {
           "dolu": "{tema}, {deger}: {yayinda} published, {incelemede} in review.",
           "yolda": "{tema}, {deger}: none published, {incelemede} in review.",
           "bos": "{tema}, {deger}: gap, no story."
         }
+      },
+      "araclar": {
+        "baslik": "Edit and delete",
+        "not": "Editing creates a new draft version; the published version stays unchanged until the new version passes review and is published. Content that has been read is archived, not deleted.",
+        "duzenle": "Edit (new draft version)",
+        "duzenleKapat": "Close editor",
+        "surumSil": "Delete this version",
+        "hikayeSil": "Delete the whole story",
+        "oturumluIpucu": "This version was read in {n} sessions and cannot be deleted. Archive it if needed.",
+        "silmeIpucu": "Only draft or archived versions can be deleted. Archive a published version first.",
+        "surumSilBaslik": "Delete this version?",
+        "surumSilMetin": "Version {no} of \"{baslik}\" will be permanently deleted.",
+        "hikayeSilBaslik": "Delete this story?",
+        "hikayeSilMetin": "\"{baslik}\" and all its versions will be permanently deleted. The linked production slip returns to a draft brief. A story with a published version or reading sessions cannot be deleted.",
+        "geriAlinamaz": "This cannot be undone.",
+        "vazgec": "Cancel",
+        "surumSilOnayla": "Delete version",
+        "hikayeSilOnayla": "Delete story"
+      },
+      "duzenle": {
+        "baslik": "Edit story",
+        "aciklama": "Saving adds your changes as a new draft version. When the new version passes review and is published, it replaces the previous one.",
+        "vazgec": "Close editor",
+        "baslikAlan": "Title",
+        "tanitimAlan": "Blurb",
+        "sayfalar": "Page text",
+        "yerTutucuNotu": "Hero, word and scene placeholders are not changed here; only plain text is editable.",
+        "sayfaNo": "Page {n}",
+        "parcaEtiket": "Page {sayfa}, part {parca}",
+        "yerTutucu": "[{tur}]",
+        "sorular": "Questions",
+        "soruNo": "Question {n} ({id})",
+        "soruMetni": "Question text",
+        "secenekEtiket": "Option {id}",
+        "dogruSecenek": "Correct option",
+        "aciklamaAlan": "Explanation",
+        "onizleme": "Story preview (sample names)",
+        "jsonOnizleme": "Package to be sent (JSON)",
+        "yeniTaslakKaydet": "Save as new draft version",
+        "dogrula": "Validate only (do not save)",
+        "degisiklikYok": "No changes yet.",
+        "gecersiz": "The package did not pass validation. Fix the issues below.",
+        "dogrulamaTamam": "The package is valid. Use \"Save as new draft version\" to save it.",
+        "ayniIcerik": "This content is already saved (version {no}); no new version was created.",
+        "kaydedildi": "Saved: new draft version {no}. Open it from the list for review and publishing."
+      },
+      "istatistik": {
+        "aciklama": "Overall usage of published stories. This is admin data: totals are shown, individual children are not.",
+        "yenile": "Refresh",
+        "veriYok": "No data yet.",
+        "gozlemYok": "No data",
+        "sinifBilinmiyor": "Grade unknown",
+        "yayindaHikaye": "Published stories",
+        "toplamOturum": "Total reading sessions",
+        "tamamlananOturum": "Completed sessions",
+        "tamamlamaOrani": "Completion rate",
+        "tamamlamaNotu": "Completed sessions / started sessions",
+        "ortalamaDogruluk": "Average accuracy",
+        "dogrulukNotu": "Correct answers / questions in completed sessions",
+        "okunanKelime": "Words read",
+        "kelimeNotu": "Word total of completed readings",
+        "surumDurumlari": "Versions by status",
+        "yayindaSinif": "Published stories by grade",
+        "yayindaTur": "Published stories by genre",
+        "oturumSinif": "Reading sessions by grade",
+        "oturumTur": "Reading sessions by genre",
+        "hikaye": "Stories",
+        "oturum": "Sessions",
+        "tamamlanan": "Completed",
+        "tur": "Genre"
       }
     },
     "okumaSinif": {
       "baslik": "Reading World",
-      "aciklama": "Class story-reading summary. Only class-level aggregates are shown; there are no child names, IDs or individual answers.",
+      "aciklama": "Class story-reading summary. Class totals contain no child names and need at least 3 students; a single student's summary opens with the selector below, only for students whose parent has given consent.",
       "sinif": "Class",
       "yukleniyor": "Loading…",
       "hata": "The reading summary could not be loaded. Try again.",

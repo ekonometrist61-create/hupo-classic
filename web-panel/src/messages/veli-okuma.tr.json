@@ -80,6 +80,32 @@
         "sevilen": "En çok sevdiği temalar: {temalar}",
         "yetersiz": "Henüz yeterli oy yok (en az 3 oy gerekir)."
       },
+      "yeni": {
+        "kelimeSayisi": "Okunan kelime",
+        "kelimeSayisiNot": "Tamamlanan hikâyelerdeki kelime sayısı. Okuma miktarını gösterir; anlamanın ölçüsü değildir.",
+        "hikayelerBaslik": "Okuduğu hikâyeler",
+        "hikayelerAciklama": "Son okunan hikâyeler; doğru sayısı hikâyenin sonundaki sorulardan gelir.",
+        "hikayelerBos": "Bu dönemde okunan hikâye yok.",
+        "dogruSoru": "{soru} sorudan {dogru} doğru",
+        "yarimKaldi": "yarım kaldı",
+        "turBaslik": "Hikâye türleri",
+        "turBos": "Bu dönemde tür verisi yok.",
+        "olcmeBaslik": "Soru türüne göre doğruluk",
+        "olcmeAciklama": "Metinden kanıt bulma, kavramı doğru anlama ve yeni bir durumda kullanma.",
+        "olcme": {
+          "metin_kaniti": "Metinden kanıt bulma",
+          "kavram_dogrulugu": "Kavramı doğru anlama",
+          "transfer": "Yeni durumda kullanma"
+        },
+        "kavramBaslik": "Karşılaştığı kavramlar",
+        "kavramAciklama": "Kavramı görmek öğrenmek demek değildir; durum etiketi ne kadar pekiştiğini söyler.",
+        "kavramBos": "Henüz izlenen bir kavram yok.",
+        "atasozuBaslik": "Atasözleri ve deyimler",
+        "atasozuBos": "Henüz izlenen atasözü veya deyim yok.",
+        "kelimeBaslik": "Yeni sözcükler",
+        "kelimeBos": "Henüz izlenen sözcük yok.",
+        "hikayeden": "{baslik} hikâyesinde"
+      },
       "nasil": {
         "baslik": "Bu veriler nasıl hesaplanır?",
         "oran": "Doğruluk oranı = doğru yanıt sayısı / yanıtlanan soru sayısıdır. Yanıtlanmayan soru yanlış sayılır.",

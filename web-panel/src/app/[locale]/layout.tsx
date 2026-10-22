@@ -1,5 +1,6 @@
 import AnalyticsProvider from "@/components/analytics/AnalyticsProvider";
 import CookieConsent from "@/components/analytics/CookieConsent";
+import KullanimSuresi from "@/components/analytics/KullanimSuresi";
 import { SidebarProvider } from "@/context/SidebarContext";
 import { ThemeProvider } from "@/context/ThemeContext";
 import { isRtl } from "@/i18n/languages";
@@ -49,6 +50,7 @@ export default async function RootLayout({
             </SidebarProvider>
             <CookieConsent />
             <AnalyticsProvider />
+            <KullanimSuresi />
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

@@ -74,6 +74,35 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 
 ## B. Kayıtlar (en yeni üstte)
 
+### K-0099 · 2026-10-22 07:45 · DEN · 2. sınıf zorluk 3 ek partisi: sonuç ve sınır
+- **Tür:** Gelişme
+- **Konu:** DEN
+- **Bağlam:** K-0098 sonrası zorluk 3 oranı çok düşüktü (Türkçe 2/27, Matematik 3/28, Hayat Bilgisi 1/25). Kullanıcı zorluk 3'ü artırmak için ek parti istedi.
+- **Plan:** Hücre başına 6 zorluk 3 taslak (Türkçe 6, Matematik 6, Hayat Bilgisi 6; yazar Sonnet). Ardından kapı, kör çözücü (Haiku) ve kör kalite (Sonnet, zorluk önerisi dahil). Onay koşulu K-0098 ile aynı: çözücü = anahtar, kalite GEÇER, kalitenin kendi cevabı = anahtar.
+- **Karar:** Kalite denetçisi bir soruyu zorluk 2 olarak önerdiyse etiket 2'ye indirildi (REHBER §4.6: zorluk etiketi iddialı konmaz). Bu nedenle zorluk 3 sayısı, eklenen taslak sayısından az arttı.
+- **Açıklama:** 18 taslaktan 16'sı onaylandı (Türkçe 5/6, Matematik 5/6, Hayat Bilgisi 6/6). Elenen: TR2-049 (kazanım kodu T.Y.2.2 yazma kazanımı, soru bağlamdan sözcük anlamı ölçüyor), MAT2-036 (kazanımla zayıf uyum, 6×12 çarpım tablosu dışı, şık öbeklenmesi). Zorluk 3 sayısı: Türkçe 2 → 3 (%9), Matematik 3 → 8 (%24), Hayat Bilgisi 1 → 3 (%10). Son toplam: Türkçe 32, Matematik 33, Hayat Bilgisi 31 (96 soru); her hücre kapı 0 RED, ≥20.
+- **Doğrulama:** KISMİ. Kapı: taslaklar 6/6 ×3; nihai dosyalar 32/33/31 KONTROL, 0 RED. Yapılmadı: REHBER §6 benzerlik kontrolü, insan örneklemi, veritabanı aktarımı.
+- **Durum:** BEKLİYOR. Türkçe ve Hayat Bilgisi'nde zorluk 3 hedefi (%20) karşılanmadı. Seçenekler: (a) zorluk 3 için ikinci ek parti; (b) etiketleri olduğu gibi bırakıp ürün içinde zorluk vaadi verilmemesi (REHBER §9).
+- **Sahip:** Kullanıcı (ikinci parti ya da kabul kararı) + Ajan.
+- **Önem:** Orta
+- **Kanıt:** `docs/soru-uretim/pilot/uretim_{turkce,matematik,hayat_bilgisi}_2_zor3.json` (taslak), `uretim_*_2_final.json` (güncellendi), `denetim_*_2.json` (zor3 kararları eklendi).
+- **İlgili:** K-0098, REHBER §4.6, §9, §17.7.
+
+### K-0098 · 2026-10-22 07:04 · DEN · 2. sınıf soru üretimi: Türkçe, Matematik, Hayat Bilgisi (taslak → kapı → kör çözüm → kör denetim)
+- **Tür:** Gelişme + Sorun
+- **Konu:** DEN
+- **Bağlam:** Kullanıcı "belirlediğimiz kurallara göre 2. sınıf sorularını hazırla" dedi. PLAN_V2 §3 üretim hattı uygulandı. İngilizce 2 program PDF'i bulunamadığı için üretilmedi (K-0093 engeli; PLAN_V2 §0.4 gereği program doğrulanmadan hücre açılmaz).
+- **Plan:** (1) Kazanım tabloları DÖP PDF'lerinden: `kazanim_2_turkce.json`, `kazanim_2_matematik.json`, `kazanim_2_hayat_bilgisi.json`. (2) Yazar (Sonnet) taslağı. (3) `tools/soru-uretim/kapi.cjs`. (4) Kör çözücü (Haiku) ve kör kalite (Sonnet), anahtar verilmeden. (5) GEÇER ve çözücü = anahtar olanlar onaylanır; DÜZELT/RED çıkarılır. (6) Eksik kazanım ya da 20 altı için ek parti, aynı hat.
+- **Karar (ajan, değiştirilebilir):** Kapsam dışı kazanımlar kendi dosyalarında gerekçeyle listelendi. Türkçe: dinleme/konuşma ve süreç kazanımları. Matematik: MAT.2.1.5, 2.3.2, 2.3.3, 2.3.4, 2.3.7 (şekil/model gerektirir). Hayat Bilgisi: HB.2.1.4, HB.2.6.1, HB.2.6.2 (süreç ya da üst düzey), HB.2.4.5 (dinî yorum; Din Kültürü ihtiyat kuralı), HB.2.2.3 (levha tanıma görsel gerektirir; iki görselsiz deneme denetimi geçemedi). Tutum/değer kazanımları yalnız bilgi-kavram düzeyinde sınandı (REHBER §17.1).
+- **Açıklama:** Taslak 105 soru (Türkçe 44, Matematik 30, Hayat Bilgisi 31); onaylı 80 (Türkçe 27, Matematik 28, Hayat Bilgisi 25); elenen 25. Her hücre ≥20. Kapsam: Türkçe 5/5 kod, Matematik 20/20 kod, Hayat Bilgisi 18/18 kod. Türkçe yazar taslağında kalite denetçisi 12 DÜZELT ve 1 RED verdi (kazanım kodu uyumsuzluğu, gevşek kök, bariz çeldirici); ek parti 16 sorunun 12'si geçti. Çözücü ile anahtar uyumu (taslak + ek): Türkçe 43/44 (TR2-025 elendi), Matematik 30/30, Hayat Bilgisi 31/31.
+- **Doğrulama:** KISMİ. Doğrulanan: kapı 27/27, 28/28, 25/25 KONTROL, 0 RED; onaylı sorularda çözücü = anahtar ve kalite = GEÇER (kalite kararında kendi cevabı da anahtarla aynı). Yapılmadı: REHBER §6 n-gram/parmak izi benzerlik kontrolü (betik kapsamında yok), insan örneklemi (§15), `questions` tablosuna aktarım, DÖP ile kazanım metinlerinin teyidi (PDF ayrıştırması).
+- **Sorunlar (açık):** (a) Zorluk 3 hedefin altında (Türkçe 2/27, Hayat Bilgisi 1/25, Matematik 3/28); zorluk etiketleri model tahmini. (b) Kalite notlarındaki küçük uyarılar (ör. HB2-025 "kayanın" okunuşu; MAT2-016 yuvarlama kazanımda var mı belirsiz; TR2-026 heceleme kuralı REHBER'de açık değil) onaylı setten çıkarılmadı; yayın öncesi gözden geçirilmeli. (c) Bazı Türkçe kazanım kodları (T.O.2.1 süreç harfi 'b') PDF'te eksik kaldı.
+- **Durum:** BEKLİYOR (kullanıcı kararı: insan örneklemi ve yayın onayı; İngilizce 2 program bağlantısı).
+- **Sahip:** Kullanıcı (yayın/örneklem kararı, DB içe aktarım onayı, İngilizce 2 program bağlantısı, LGS dahil sonraki hücreler) + Ajan (benzerlik kontrolü ve zorluk kalibrasyonu).
+- **Önem:** Yüksek
+- **Kanıt:** `docs/soru-uretim/pilot/uretim_{turkce,matematik,hayat_bilgisi}_2.json` (taslak), `*_2_ek.json` (ek parti), `*_2_final.json` (onaylı, durum KONTROL_ADAYI), `denetim_{turkce,matematik,hayat_bilgisi}_2.json` (çözücü ve kalite kararları), `kazanim_2_*.json`. `node tools/soru-uretim/kapi.cjs` → final 27/28/25 KONTROL.
+- **İlgili:** K-0093, K-0049, PLAN_V2 §0.4 ve §3, REHBER §5, §6, §15, §17, §18.
+
 ### K-0093 · 2026-10-22 · DEN · Soru üretimi: kalan işler (devir kaydı)
 - **Tür:** Plan + Yapılacak
 - **Durum:** DEVAM. 42 hücreden 11 tamam, 31 kaldı.
@@ -3185,3 +3214,9 @@ Paketler:
 - [ ] P7 Doğrulama: `npm run lint` (değişen dosyalar), `npm run build`, kabul testi 390/768/1024, ekran görüntüsü kanıtı
 - [ ] P8 Kayıt: hukuk metinleri avukat onayı, K8 ölçüm görevi, `Yakında` öğelerinin ürün sahibi kararı
 - [ ] Veli "Verdiğim yanıtlar" bölümü: görme ve değiştirme (KVKK erişim hakkı). v1 dışında, ertelendi.
+
+### K-0100 · 2026-10-22 · VT/MOB/TSR · HupoRead yüzeyler arası uyum: yönetim CRUD, dashboard, kullanım süresi, üç göz, test yayını
+- Uzak DB: 20261063 (genel bayrak açık), 64 (hikâye/sürüm sil + istatistik), 65 (veli/öğretmen dashboard, öğretmen sınıf toplamı + bireysel, rıza sunucuda), 66 (kullanım süresi, 300 gün), 67 (HR-033…047, 15 hikâye), 68 (üç göz: ajan_a, ajan_b, insan), 69 (2./3./4. sınıftan 4'er hikâye test yayını; insan onayı "okuma bekliyor").
+- Web: yönetim hikâye düzenle/sil/istatistik, /yonetim/kullanim, veli okuma gelişim kartları, çerez onayına bağlı kullanım ölçümü. Mobil: kullanim_suresi.dart (anonim, sekme/rota bazlı).
+- Doğrulama: PGlite kos 186/187 (#18 eski bilinen), yonetim_crud 27/27, dashboard 30/30, kullanım 17/17; web tsc temiz; Flutter okuma+kullanım testleri geçti. Tarayıcıda/telefonda görsel kontrol YAPILMADI.
+- Açık: HR-041…047 uzunluk kararı, hukuk/telif onayı, pg_cron (300 gün temizliği) kontrolü, Faz D, kalan 75 fiş, raster görsel gözden geçirme.

@@ -1,0 +1,40 @@
+{
+  "yonetim": {
+    "shell": {
+      "nav": {
+        "kullanim": "Usage time"
+      },
+      "pageDesc": {
+        "kullanim": "See, anonymously, how much time is spent on which screen of each surface."
+      }
+    },
+    "kullanim": {
+      "title": "Usage time",
+      "aciklama": "The data is anonymous: it holds no account, child or personal information, only the surface, screen name and duration. It is kept for 300 days. Rows with fewer than five sessions are hidden. On web surfaces only visitors who allow analytics are measured.",
+      "donem": "Period",
+      "gunSecenek": "Last {n} days",
+      "yuzey": "Surface",
+      "tumYuzeyler": "All surfaces",
+      "yenile": "Refresh",
+      "yukleniyor": "Loading…",
+      "kurulumYok": "The usage-time database layer is not installed in this environment yet.",
+      "hata": "The report could not be loaded. Check your admin access and try again.",
+      "veriYok": "Not enough data to show for this period.",
+      "trendBaslik": "Total time per day",
+      "tabloBaslik": "Time by surface and screen",
+      "ekran": "Screen",
+      "toplamSure": "Total time",
+      "oturum": "Sessions",
+      "ortalamaSure": "Average time",
+      "bastirmaNotu": "For privacy, screens and days with fewer than five sessions are not listed, so totals may be lower than the real values.",
+      "yuzeyler": {
+        "mobil": "Mobile app",
+        "flutter_web": "Web app",
+        "site": "Public site",
+        "yonetim": "Admin panel",
+        "veli": "Parent panel",
+        "ogretmen": "Teacher panel"
+      }
+    }
+  }
+}

@@ -9,11 +9,12 @@ import { cardClass } from "../panel/styles";
 import AyarlarSekmesi from "./AyarlarSekmesi";
 import BoslukHaritasi from "./BoslukHaritasi";
 import IceAktarSekmesi from "./IceAktarSekmesi";
+import IstatistikSekmesi from "./IstatistikSekmesi";
 import KarneSekmesi from "./KarneSekmesi";
 import ListeSekmesi from "./ListeSekmesi";
 import SozlukHedefSekmesi from "./SozlukHedefSekmesi";
 
-const SEKMELER = ["liste", "iceAktar", "karne", "bosluk", "sozluk", "ayarlar"] as const;
+const SEKMELER = ["liste", "iceAktar", "istatistik", "karne", "bosluk", "sozluk", "ayarlar"] as const;
 type Sekme = (typeof SEKMELER)[number];
 
 export default function HikayeAtolyesiManager() {
@@ -68,6 +69,7 @@ export default function HikayeAtolyesiManager() {
       <div role="tabpanel" id={`ha-panel-${sekme}`} aria-labelledby={`ha-tab-${sekme}`} tabIndex={0} className="focus-visible:outline-2 focus-visible:outline-brand-500">
         {sekme === "liste" && <ListeSekmesi key={listeAnahtari} />}
         {sekme === "iceAktar" && <IceAktarSekmesi onYazildi={() => setListeAnahtari((k) => k + 1)} />}
+        {sekme === "istatistik" && <IstatistikSekmesi />}
         {sekme === "karne" && <KarneSekmesi />}
         {sekme === "bosluk" && <BoslukHaritasi />}
         {sekme === "sozluk" && <SozlukHedefSekmesi />}

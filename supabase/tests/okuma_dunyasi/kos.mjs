@@ -27,6 +27,10 @@ const migrasyonlar = [
   mig('20261057000000_okuma_hikaye_fisleri.sql'),
   mig('20261058000000_okuma_paket_fis_kodu.sql'),
   mig('20261060000000_okuma_hikaye_turleri.sql'),
+  mig('20261068000000_okuma_uc_goz_yayin_kurali.sql'),
+  mig('20261064000000_okuma_yonetim_crud.sql'),
+  mig('20261065000000_okuma_dashboard_veli_ogretmen.sql'),
+  mig('20261066000000_kullanim_suresi.sql'),
 ];
 const paketDizini = process.env.OKUMA_PAKET_DIZINI || 'C:\\Dev\\Senin Hikayen - HupoRead\\atolye\\cikti';
 

@@ -15,11 +15,44 @@ export interface DagilimKalemi {
   hikaye: number;
 }
 
+/** Öğrenme hedefi satırı (kavram / atasözü-deyim / sözcük): ad + durum + son görüldüğü hikâye. */
+export interface HedefSatiri {
+  hedef_id: string;
+  etiket: string;
+  tur: string;
+  durum: string;
+  hikaye: string | null;
+}
+
+export interface SonHikaye {
+  hikaye_id: string;
+  baslik: string;
+  tur: string;
+  tarih: string;
+  tamamlandi: boolean;
+  dogru: number;
+  soru: number;
+}
+
+export interface TurKalemi {
+  tur: string;
+  hikaye: number;
+  oturum: number;
+}
+
 export interface OkumaOzet {
   gun: number;
   detay: boolean;
   okunan_hikaye: number;
   tamamlanan_hikaye: number;
+  okunan_kelime?: number;
+  toplam_sure_dk?: number;
+  son_hikayeler?: SonHikaye[];
+  tur_dagilimi?: TurKalemi[];
+  kavramlar?: HedefSatiri[];
+  atasozleri?: HedefSatiri[];
+  kelimeler?: HedefSatiri[];
+  olcme_turu_dogrulugu?: Record<string, SoruDogrulugu>;
   ortalama_sure_dk?: number | null;
   soru_dogrulugu?: Record<string, SoruDogrulugu>;
   tema_dagilimi?: DagilimKalemi[];
@@ -39,6 +72,9 @@ export interface OkumaOzetYaniti {
 
 /** Hedef durum sırası (öğrenme basamağı); "tekrar zamanı" ayrı bir durumdur. */
 export const HEDEF_DURUMLARI = ["introduced", "recognized", "retrieved", "transferred", "refresh_due"] as const;
+
+/** Soru türü (ölçme türü) anahtarları. */
+export const OLCME_TURLERI = ["metin_kaniti", "kavram_dogrulugu", "transfer"] as const;
 
 /** Çatı değerler (sözlükte D kodu): Adalet, Saygı, Sorumluluk. */
 export const CATI_DEGERLER = ["D1", "D14", "D16"] as const;

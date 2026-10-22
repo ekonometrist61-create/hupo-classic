@@ -10,6 +10,7 @@ import 'screens/root_shell.dart';
 import 'screens/splash_screen.dart';
 import 'services/audio/audio_manager.dart';
 import 'services/error_reporting.dart';
+import 'services/kullanim_suresi.dart';
 import 'services/push/push_host.dart';
 import 'services/secure_storage.dart';
 import 'settings/app_settings.dart';
@@ -33,10 +34,21 @@ Future<void> _uygulamayiBaslat() async {
   // Sık kullanılan sesleri önceden yükle (hata olursa sessizce devam eder).
   AudioManager.instance.preload();
 
+  // Anonim ekran-süresi ölçümü (hesaba bağlı değil; hatalar sessiz).
+  KullanimSuresi.baslat(rolBulucu: _kabaRol);
+
   runApp(ProviderScope(
     overrides: [sharedPreferencesProvider.overrideWithValue(prefs)],
     child: const App(),
   ));
+}
+
+/// Kaba rol: yalnız ogrenci|veli|ogretmen|admin|ziyaretci (kimlik değil).
+String _kabaRol() {
+  final u = Supabase.instance.client.auth.currentUser;
+  if (u == null) return 'ziyaretci';
+  final r = u.userMetadata?['role'];
+  return r is String && const {'ogrenci', 'veli', 'ogretmen', 'admin'}.contains(r) ? r : 'ogrenci';
 }
 
 class App extends ConsumerWidget {
@@ -49,6 +61,7 @@ class App extends ConsumerWidget {
     return MaterialApp(
       navigatorKey: pushNavigatorKey,
       scaffoldMessengerKey: pushMessengerKey,
+      navigatorObservers: [KullanimNavigatorObserver(() => KullanimSuresi.instance!)],
       title: 'Hupolingo',
       debugShowCheckedModeBanner: false,
       theme: buildAppTheme(fontFamily: settings.font.family),

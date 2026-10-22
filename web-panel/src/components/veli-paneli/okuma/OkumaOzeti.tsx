@@ -9,6 +9,7 @@ import { useAdminRpc } from "@/components/yonetim/useAdminRpc";
 import { Link } from "@/i18n/navigation";
 import { BECERILER } from "@/lib/okuma/okuma";
 import ConsentCard from "../ConsentCard";
+import OkumaGelisimKartlari from "./OkumaGelisimKartlari";
 import { HEDEF_DURUMLARI, type DagilimKalemi, type OkumaOzet, type OkumaOzetYaniti } from "./okumaTipleri";
 
 const DONEMLER = [7, 30, 90] as const;
@@ -108,9 +109,12 @@ function OzetGovdesi({ ozet }: { ozet: OkumaOzet }) {
     <div className="space-y-6">
       <p className="text-theme-xs text-gray-600 dark:text-gray-400">{t("ozet.aralik", { gun: ozet.gun })}</p>
 
-      <div className="grid grid-cols-2 gap-3">
+      <div className="grid grid-cols-2 gap-3 sm:grid-cols-3">
         <Olcu etiket={t("ozet.okunan")} deger={String(ozet.okunan_hikaye)} />
         <Olcu etiket={t("ozet.tamamlanan")} deger={String(ozet.tamamlanan_hikaye)} />
+        {ozet.okunan_kelime !== undefined && (
+          <Olcu etiket={t("yeni.kelimeSayisi")} deger={ozet.okunan_kelime.toLocaleString(locale === "en" ? "en-US" : "tr-TR")} not={t("yeni.kelimeSayisiNot")} />
+        )}
       </div>
 
       {ozet.okunan_hikaye === 0 && <p className="text-sm text-gray-600 dark:text-gray-300">{t("ozet.bosDonem")}</p>}
@@ -157,6 +161,8 @@ function OzetGovdesi({ ozet }: { ozet: OkumaOzet }) {
             <Dagilim baslik={t("deger.baslik")} bos={t("deger.bos")} kalemler={ozet.deger_dagilimi} adAl={(k) => k.ad ?? k.deger ?? ""} />
             <Dagilim baslik={t("ders.baslik")} bos={t("ders.bos")} kalemler={ozet.ders_dagilimi} adAl={(k) => k.ad ?? k.ders ?? ""} />
           </div>
+
+          <OkumaGelisimKartlari ozet={ozet} />
 
           <Alt baslik={t("hedefler.baslik")} aciklama={t("hedefler.aciklama")}>
             {Object.keys(ozet.hedef_durumlari ?? {}).length === 0 ? (

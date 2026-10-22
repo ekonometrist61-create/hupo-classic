@@ -15,6 +15,7 @@
       "sekme": {
         "liste": "Hikâyeler",
         "iceAktar": "İçe aktar",
+        "istatistik": "İstatistik",
         "karne": "Hikâye karnesi",
         "bosluk": "İçerik boşluğu",
         "sozluk": "Sözlük ve hedefler",
@@ -47,7 +48,10 @@
         "FORBIDDEN": "Bu işlem için yetkin yok.",
         "EN_FAZLA_BES": "En fazla 5 değer seçilebilir.",
         "TEKRARLI_DEGER": "Aynı değer birden fazla seçildi.",
-        "GECERSIZ_DEGER": "Geçersiz değer seçildi."
+        "GECERSIZ_DEGER": "Geçersiz değer seçildi.",
+        "SURUM_SILINEMEZ": "Yalnız taslak veya arşivdeki sürüm silinebilir. İncelemedeki sürümü önce taslağa ya da arşive al.",
+        "OTURUM_VAR": "Bu içeriği çocuklar okumuş; silinemez. Silmek yerine arşive al.",
+        "SURUM_YAYINDA": "Yayındaki sürüm silinemez. Önce arşive al."
       },
       "durumlar": {
         "taslak": "Taslak",
@@ -69,10 +73,21 @@
         "rejected": "Reddedildi"
       },
       "gecis": {
-        "taslak": { "incelemede": "İncelemeye gönder", "arsiv": "Arşivle" },
-        "incelemede": { "taslak": "Taslağa geri al", "yayinda": "Yayınla", "arsiv": "Arşivle" },
-        "yayinda": { "arsiv": "Arşivle" },
-        "arsiv": { "taslak": "Taslağa geri yükle" }
+        "taslak": {
+          "incelemede": "İncelemeye gönder",
+          "arsiv": "Arşivle"
+        },
+        "incelemede": {
+          "taslak": "Taslağa geri al",
+          "yayinda": "Yayınla",
+          "arsiv": "Arşivle"
+        },
+        "yayinda": {
+          "arsiv": "Arşivle"
+        },
+        "arsiv": {
+          "taslak": "Taslağa geri yükle"
+        }
       },
       "liste": {
         "durum": "Durum",
@@ -304,18 +319,115 @@
         "sozlukBos": "Sözlükte aktif tema veya değer yok; harita çizilemiyor.",
         "ozet": "{toplam} kesişimin {bos} tanesinde yayında hikâye yok.",
         "okuma": "Hücre: yayındaki hikâye sayısı. \"+n\" incelemedeki hikâye sayısıdır. Sütun başlıkları Maarif değer kodlarıdır (üzerine gelince ad görünür).",
-        "temaDeger": "Tema \\ Değer",
+        "kelimeSayisi": "Okunan kelime",
+      "toplamSure": "Toplam okuma süresi",
+      "dk": "{dk} dk",
+      "okunanHikayeler": "Okunan hikâyeler",
+      "okunanHikayelerYok": "Gösterilecek hikâye yok: bir hikâyenin gösterilmesi için en az {min} farklı öğrencinin okuması gerekir.",
+      "hikayeDeger": "{ogrenci} öğrenci · {oturum} okuma",
+      "dogruOrani": "doğru %{oran}",
+      "turDagilimi": "Hikâye türleri",
+      "turYok": "Gösterilecek tür yok: bir tür için en az {min} farklı öğrenci gerekir.",
+      "turDeger": "{ogrenci} öğrenci · {oturum} okuma",
+      "kavramlar": "Kavramlar",
+      "atasozleri": "Atasözleri ve deyimler",
+      "kelimeler": "Yeni sözcükler",
+      "hedefYok": "Gösterilecek öğe yok: bir öğe için en az {min} farklı öğrenci gerekir.",
+      "hedefGorenSayisi": "{ogrenci} öğrenci karşılaştı",
+      "hedefOgrenenSayisi": "{ogrenci} öğrenci karşılaştı · {ogrenen} öğrenci tanıdı veya hatırladı",
+      "okunanHikaye": "Okunan hikâye",
+      "tamamlananHikaye": "Tamamlanan hikâye",
+      "ogrenciBaslik": "Öğrenci özeti",
+      "ogrenciAciklama": "Tek bir öğrencinin okuma özeti. Yalnızca sınıfınızdaki ve velisi okuma verisi için onay vermiş öğrenciler için gösterilir.",
+      "ogrenciSec": "Öğrenci",
+      "ogrenciSecin": "Öğrenci seçin",
+      "adsiz": "(adsız öğrenci)",
+      "rizaYokKisa": "veli onayı yok",
+      "rizaYok": "Bu öğrencinin velisi okuma verisinin paylaşılması için onay vermedi; özet gösterilmez.",
+      "rizaGeriCekildi": "Bu öğrencinin velisi onayını geri çekti; özet gösterilmez.",
+      "ogrenciYetkisiz": "Bu öğrencinin özetini görme yetkiniz yok.",
+      "temaDeger": "Tema \\ Değer",
         "tabloBaslik": "{n}. sınıf için tema ve değer kesişimlerinde yayındaki hikâye sayısı",
         "hucre": {
           "dolu": "{tema}, {deger}: {yayinda} yayında, {incelemede} incelemede.",
           "yolda": "{tema}, {deger}: yayında yok, {incelemede} incelemede.",
           "bos": "{tema}, {deger}: boşluk, hikâye yok."
         }
+      },
+      "araclar": {
+        "baslik": "Düzenle ve sil",
+        "not": "Düzenleme yeni bir taslak sürüm üretir; yayındaki sürüm denetimden geçip yeni sürüm yayınlanana kadar değişmez. Okunmuş içerik silinmez, arşivlenir.",
+        "duzenle": "Düzenle (yeni taslak sürüm)",
+        "duzenleKapat": "Düzenlemeyi kapat",
+        "surumSil": "Bu sürümü sil",
+        "hikayeSil": "Hikâyeyi tümüyle sil",
+        "oturumluIpucu": "Bu sürümü {n} oturumda okumuşlar; silinemez. Gerekirse arşive al.",
+        "silmeIpucu": "Yalnız taslak veya arşivdeki sürüm silinebilir. Yayındaki sürümü önce arşive al.",
+        "surumSilBaslik": "Sürüm silinsin mi?",
+        "surumSilMetin": "\"{baslik}\" hikâyesinin {no}. sürümü kalıcı olarak silinecek.",
+        "hikayeSilBaslik": "Hikâye silinsin mi?",
+        "hikayeSilMetin": "\"{baslik}\" hikâyesi ve tüm sürümleri kalıcı olarak silinecek. Bağlı üretim fişi taslak brife döner. Yayında sürümü veya okuma oturumu olan hikâye silinmez.",
+        "geriAlinamaz": "Bu işlem geri alınamaz.",
+        "vazgec": "Vazgeç",
+        "surumSilOnayla": "Sürümü sil",
+        "hikayeSilOnayla": "Hikâyeyi sil"
+      },
+      "duzenle": {
+        "baslik": "Hikâyeyi düzenle",
+        "aciklama": "Kaydedince değişiklik yeni bir taslak sürüm olarak eklenir. Yeni sürüm denetimden geçip yayınlanınca öncekinin yerini alır.",
+        "vazgec": "Düzenlemeyi kapat",
+        "baslikAlan": "Başlık",
+        "tanitimAlan": "Tanıtım",
+        "sayfalar": "Sayfa metinleri",
+        "yerTutucuNotu": "Kahraman, kelime ve sahne yer tutucuları burada değiştirilmez; yalnız düz metinler düzenlenir.",
+        "sayfaNo": "Sayfa {n}",
+        "parcaEtiket": "Sayfa {sayfa}, parça {parca}",
+        "yerTutucu": "[{tur}]",
+        "sorular": "Sorular",
+        "soruNo": "Soru {n} ({id})",
+        "soruMetni": "Soru metni",
+        "secenekEtiket": "{id} seçeneği",
+        "dogruSecenek": "Doğru seçenek",
+        "aciklamaAlan": "Açıklama",
+        "onizleme": "Hikâye önizlemesi (örnek adlarla)",
+        "jsonOnizleme": "Gönderilecek paket (JSON)",
+        "yeniTaslakKaydet": "Yeni taslak sürüm olarak kaydet",
+        "dogrula": "Yalnız doğrula (kaydetme)",
+        "degisiklikYok": "Henüz değişiklik yok.",
+        "gecersiz": "Paket doğrulamadan geçmedi. Aşağıdaki sorunları düzelt.",
+        "dogrulamaTamam": "Paket geçerli. Kaydetmek için \"Yeni taslak sürüm olarak kaydet\" düğmesini kullan.",
+        "ayniIcerik": "Bu içerik zaten kayıtlı (sürüm {no}); yeni sürüm açılmadı.",
+        "kaydedildi": "Kaydedildi: yeni taslak sürüm {no}. Denetim ve yayın için listeden aç."
+      },
+      "istatistik": {
+        "aciklama": "Yayındaki hikâyelerin genel kullanımı. Bu sayfa yönetici verisidir; toplamlar gösterilir, tek tek çocuklar gösterilmez.",
+        "yenile": "Yenile",
+        "veriYok": "Henüz veri yok.",
+        "gozlemYok": "Gözlem yok",
+        "sinifBilinmiyor": "Sınıf bilinmiyor",
+        "yayindaHikaye": "Yayındaki hikâye",
+        "toplamOturum": "Toplam okuma oturumu",
+        "tamamlananOturum": "Tamamlanan oturum",
+        "tamamlamaOrani": "Tamamlama oranı",
+        "tamamlamaNotu": "Tamamlanan oturum / başlayan oturum",
+        "ortalamaDogruluk": "Ortalama doğruluk",
+        "dogrulukNotu": "Tamamlanan oturumlarda doğru cevap / soru",
+        "okunanKelime": "Okunan kelime",
+        "kelimeNotu": "Tamamlanan okumaların kelime toplamı",
+        "surumDurumlari": "Sürümler (duruma göre)",
+        "yayindaSinif": "Yayındaki hikâyeler: sınıfa göre",
+        "yayindaTur": "Yayındaki hikâyeler: türe göre",
+        "oturumSinif": "Okuma oturumları: sınıfa göre",
+        "oturumTur": "Okuma oturumları: türe göre",
+        "hikaye": "Hikâye",
+        "oturum": "Oturum",
+        "tamamlanan": "Tamamlanan",
+        "tur": "Tür"
       }
     },
     "okumaSinif": {
       "baslik": "Okuma Dünyası",
-      "aciklama": "Sınıfın hikâye okuma özeti. Yalnızca sınıf düzeyinde toplu bilgi gösterilir; çocuk adı, kimliği ve tek tek cevaplar yoktur.",
+      "aciklama": "Sınıfın hikâye okuma özeti. Sınıf toplamlarında çocuk adı yoktur ve en az 3 öğrenci aranır; tek tek öğrenci özeti yalnızca velisi onay vermiş öğrenciler için, aşağıdaki seçiciyle açılır.",
       "sinif": "Sınıf",
       "yukleniyor": "Yükleniyor…",
       "hata": "Okuma özeti alınamadı. Yeniden dene.",

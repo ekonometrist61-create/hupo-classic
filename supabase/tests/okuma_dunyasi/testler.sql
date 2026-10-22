@@ -232,10 +232,10 @@ begin
   select string_agg(p.proname, ',' order by p.proname) into t from pg_proc p join pg_namespace ns on ns.oid = p.pronamespace
    where ns.nspname = 'public' and p.proname like 'okuma\_%' and not has_function_privilege('authenticated', p.oid, 'execute');
   -- Envanter kilidi: yeni okuma_* RPC eklenince sayı bilinçli olarak güncellenir.
-  -- 27 = önceki RPC'ler; +2 = okuma_fis_ice_aktar, okuma_fis_listele (20261057000000).
-  perform pg_temp.k('29 RPC authenticated için açık (envanter)',
+  -- 27 = önceki RPC'ler; +2 = okuma_fis_ice_aktar, okuma_fis_listele (20261057000000); +3 = okuma_surum_sil, okuma_hikaye_sil, okuma_yonetim_istatistik (20261064000000); +2 = okuma_ogretmen_ogrenci_ozeti, okuma_ogretmen_sinif_ogrencileri (20261065000000).
+  perform pg_temp.k('34 RPC authenticated için açık (envanter)',
     t is null and (select count(*) from pg_proc p join pg_namespace ns on ns.oid = p.pronamespace
-                    where ns.nspname = 'public' and p.proname like 'okuma\_%') = 29,
+                    where ns.nspname = 'public' and p.proname like 'okuma\_%') = 34,
     coalesce(t, 'kapalı yok') || ' / toplam ' || (select count(*) from pg_proc p join pg_namespace ns on ns.oid = p.pronamespace where ns.nspname = 'public' and p.proname like 'okuma\_%'));
 
   select string_agg(c.relname, ',') into t from pg_class c join pg_namespace ns on ns.oid = c.relnamespace
@@ -408,8 +408,8 @@ begin
   perform pg_temp.c(adm1, format('public.okuma_surum_durum_degistir(%L,%L,null)', sk, 'incelemede'));
   perform pg_temp.k('denetim eksik: incelemedeki sürüm yayına geçemez (YAYIN_KAPISI)',
     pg_temp.h(adm2, format('public.okuma_surum_durum_degistir(%L,%L,null)', sk, 'yayinda'), 'YAYIN_KAPISI'), pg_temp.son_hata());
-  perform pg_temp.k('oluşturan kendi sürümünü insan olarak onaylayamaz (DORT_GOZ)',
-    pg_temp.h(adm1, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"insan":"approved"}'), 'DORT_GOZ'), pg_temp.son_hata());
+  r := pg_temp.c(adm1, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"insan":"approved"}'));
+  perform pg_temp.k('üç göz: oluşturan yönetici insan onayını verebilir (inceleyen = adm1)', (r -> 'denetim' ->> 'insan') = 'approved' and (select inceleyen_id from public.okuma_hikaye_surumleri where id = sk) = adm1, r::text);
   perform pg_temp.k('geçersiz denetim değeri / anahtarı reddedilir',
     pg_temp.h(adm2, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"insan":"belki"}'), 'BAD_DENETIM')
     and pg_temp.h(adm2, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"baska":"pass"}'), 'BAD_DENETIM'), pg_temp.son_hata());
@@ -417,8 +417,6 @@ begin
   perform pg_temp.k('ajan_b pending iken yayın kapısı kapalı',
     pg_temp.h(adm2, format('public.okuma_surum_durum_degistir(%L,%L,null)', sk, 'yayinda'), 'YAYIN_KAPISI'), pg_temp.son_hata());
   perform pg_temp.c(adm2, format('public.okuma_surum_durum_degistir(%L,%L,%L::jsonb)', sk, 'incelemede', '{"ajan_b":"pass"}'));
-  perform pg_temp.k('denetim tamam olsa da oluşturan yayınlayamaz (dört göz)',
-    pg_temp.h(adm1, format('public.okuma_surum_durum_degistir(%L,%L,null)', sk, 'yayinda'), 'DORT_GOZ'), pg_temp.son_hata());
   r := pg_temp.c(adm2, format('public.okuma_surum_durum_degistir(%L,%L,null)', sk, 'yayinda'));
   select count(*) into n from public.okuma_hikaye_surumleri where id = sk and durum = 'yayinda' and inceleyen_id = adm2 and yayin_at is not null;
   perform pg_temp.k('admin2 üç onayla yayınlar (inceleyen = adm2)', n = 1, r::text);
@@ -432,11 +430,11 @@ begin
   end;
   perform pg_temp.k('doğrudan UPDATE ile yayına alma CHECK kapısına takılır (23514)', ok, t);
   begin
-    update public.okuma_hikaye_surumleri set durum = 'yayinda', denetim = '{"ajan_a":"pass","ajan_b":"pass","insan":"approved"}', inceleyen_id = olusturan_id where id = s1;
+    update public.okuma_hikaye_surumleri set durum = 'yayinda', denetim = '{"ajan_a":"pass","ajan_b":"pass","insan":"approved"}', inceleyen_id = null where id = s1;
     ok := false; t := 'hata yok';
   exception when others then ok := sqlstate = '23514'; t := sqlstate || ' ' || sqlerrm;
   end;
-  perform pg_temp.k('doğrudan UPDATE ile oluşturan = onaylayan olamaz (CHECK dört göz)', ok, t);
+  perform pg_temp.k('doğrudan UPDATE ile inceleyen olmadan yayın CHECK kapısına takılır (üç göz)', ok, t);
 
   -- değişmezlik
   ok := true; t := '';

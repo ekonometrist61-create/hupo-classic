@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/app_providers.dart';
+import '../services/kullanim_suresi.dart';
 import '../theme/app_theme.dart';
 import '../utils/breakpoints.dart';
 import '../widgets/hupo/hupo.dart';
@@ -29,6 +30,8 @@ const _sekmeler = [
   _Sekme('Koleksiyon', 'assets/nav/koleksiyon.png'),
   _Sekme('Profil', 'assets/nav/profil.png'),
 ];
+
+const _sekmeAdlari = ['ana_sayfa', 'ogren', 'arena', 'koleksiyon', 'profil'];
 
 /// Sekme ikonu: özel PNG; seçili değilse yarı saydam.
 class _NavIkon extends StatelessWidget {
@@ -75,6 +78,12 @@ class _RootShellState extends ConsumerState<RootShell> {
     };
   }
 
+  @override
+  void dispose() {
+    KullanimSuresi.instance?.sekmeAdi = null;
+    super.dispose();
+  }
+
   void _sekmeSec(int i) => ref.read(shellTabProvider.notifier).state = i;
 
   Widget _rail(int secili) {
@@ -116,6 +125,11 @@ class _RootShellState extends ConsumerState<RootShell> {
   Widget build(BuildContext context) {
     final secili = ref.watch(shellTabProvider);
     _acilanlar.add(secili);
+    if (ModalRoute.of(context)?.isCurrent ?? true) {
+      KullanimSuresi.instance?.sekmeDegis('sekme/${_sekmeAdlari[secili]}');
+    } else {
+      KullanimSuresi.instance?.sekmeAdi = 'sekme/${_sekmeAdlari[secili]}';
+    }
     final masaustu = isDesktop(context);
 
     final govde = IndexedStack(

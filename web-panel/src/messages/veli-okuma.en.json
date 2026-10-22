@@ -80,6 +80,32 @@
         "sevilen": "Favourite themes: {temalar}",
         "yetersiz": "Not enough votes yet (at least 3 needed)."
       },
+      "yeni": {
+        "kelimeSayisi": "Words read",
+        "kelimeSayisiNot": "Word count of completed stories. It shows reading volume, not comprehension.",
+        "hikayelerBaslik": "Stories read",
+        "hikayelerAciklama": "Most recent stories; correct answers come from the questions at the end of each story.",
+        "hikayelerBos": "No stories read in this period.",
+        "dogruSoru": "{dogru} of {soru} correct",
+        "yarimKaldi": "unfinished",
+        "turBaslik": "Story genres",
+        "turBos": "No genre data in this period.",
+        "olcmeBaslik": "Accuracy by question type",
+        "olcmeAciklama": "Finding evidence in the text, understanding the concept, and using it in a new situation.",
+        "olcme": {
+          "metin_kaniti": "Finding evidence in the text",
+          "kavram_dogrulugu": "Understanding the concept",
+          "transfer": "Using it in a new situation"
+        },
+        "kavramBaslik": "Concepts encountered",
+        "kavramAciklama": "Seeing a concept is not learning it; the status shows how well it has settled.",
+        "kavramBos": "No concepts tracked yet.",
+        "atasozuBaslik": "Proverbs and idioms",
+        "atasozuBos": "No proverbs or idioms tracked yet.",
+        "kelimeBaslik": "New words",
+        "kelimeBos": "No words tracked yet.",
+        "hikayeden": "in the story {baslik}"
+      },
       "nasil": {
         "baslik": "How is this calculated?",
         "oran": "Accuracy = correct answers / questions answered. Unanswered questions count as incorrect.",
