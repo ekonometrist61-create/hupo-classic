@@ -627,25 +627,35 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
           _DusunKarti(atasozler: dusunAtasozleri),
         ],
       ],
-      altEylem: Row(
-        children: [
-          Expanded(
-            flex: 2,
-            child: OkumaIkincilButon(
-              etiket: OkumaMetin.onceki,
-              onPressed: _sayfa == 0 ? null : () => _sayfaGec(_sayfa - 1),
-            ),
-          ),
-          const SizedBox(width: OkumaTema.bosluk12),
-          Expanded(
-            flex: 3,
-            child: OkumaButon(
-              etiket: son ? OkumaMetin.sorularaGec : OkumaMetin.sonrakiSayfa,
-              onPressed: son ? widget.onBitti : () => _sayfaGec(_sayfa + 1),
-            ),
-          ),
-        ],
-      ),
+      altEylem: _altDugmeler(son),
+    );
+  }
+}
+
+extension on _OkuyucuEkraniState {
+  /// Önceki / Sonraki düğmeleri. Büyük yazıda (2x gibi) yan yana sığmaz ve sözcük ortadan bölünürdü;
+  /// o zaman asıl eylem üstte, "Önceki" altta tam genişlikte durur.
+  Widget _altDugmeler(bool son) {
+    final onceki = OkumaIkincilButon(
+      etiket: OkumaMetin.onceki,
+      onPressed: _sayfa == 0 ? null : () => _sayfaGec(_sayfa - 1),
+    );
+    final sonraki = OkumaButon(
+      etiket: son ? OkumaMetin.sorularaGec : OkumaMetin.sonrakiSayfa,
+      onPressed: son ? widget.onBitti : () => _sayfaGec(_sayfa + 1),
+    );
+    if (MediaQuery.textScalerOf(context).scale(16) > 24) {
+      return Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [sonraki, const SizedBox(height: OkumaTema.bosluk8), onceki],
+      );
+    }
+    return Row(
+      children: [
+        Expanded(flex: 2, child: onceki),
+        const SizedBox(width: OkumaTema.bosluk12),
+        Expanded(flex: 3, child: sonraki),
+      ],
     );
   }
 }

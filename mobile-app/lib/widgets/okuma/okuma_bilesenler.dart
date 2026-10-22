@@ -243,6 +243,9 @@ class OkumaEkranIskeleti extends StatelessWidget {
                           },
                           child: ListView(
                             controller: denetleyici,
+                            // İçerik kısa; hepsi kurulu olsun ki cevap sonrası geri bildirim alanına (GlobalKey) kaydırılabilsin.
+                            // ignore: deprecated_member_use
+                            cacheExtent: 20000,
                             padding: EdgeInsets.fromLTRB(yan, OkumaTema.bosluk8, yan, OkumaTema.bosluk24),
                             children: icerik,
                           ),

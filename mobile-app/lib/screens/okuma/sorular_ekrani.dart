@@ -109,7 +109,7 @@ class _SorularEkraniState extends State<SorularEkrani> {
         if (!mounted || baglam == null) return;
         Scrollable.ensureVisible(
           baglam,
-          alignment: 0.12,
+          alignment: 0.0,
           duration: MediaQuery.disableAnimationsOf(baglam)
               ? Duration.zero
               : const Duration(milliseconds: 350),
@@ -434,10 +434,18 @@ class _SecenekKarti extends StatelessWidget {
                     ),
                     const SizedBox(width: OkumaTema.bosluk12),
                     Expanded(
-                      child: Text(
-                        metin,
-                        style: OkumaTema.yazi(OkumaTema.yaziSecenek,
-                            kalinlik: OkumaTema.kalinlikVurgu, satir: 1.35),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text(
+                            metin,
+                            style: OkumaTema.yazi(OkumaTema.yaziSecenek,
+                                kalinlik: OkumaTema.kalinlikVurgu,
+                                satir: 1.35),
+                          ),
+                          // Durum etiketi metnin altında: yan yana durunca şık metnini dar bir sütuna sıkıştırıyordu.
+                          _DurumEtiketi(durum: durum),
+                        ],
                       ),
                     ),
                     const SizedBox(width: OkumaTema.bosluk8),
@@ -463,18 +471,8 @@ class _DurumIkonu extends StatelessWidget {
   Widget build(BuildContext context) {
     switch (durum) {
       case _Durum.secili:
-        return Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(Icons.check_circle_rounded,
-                color: OkumaTema.primary, size: OkumaTema.ikonOrta),
-            const SizedBox(width: OkumaTema.bosluk4),
-            Text(OkumaMetin.soruSecildi,
-                style: OkumaTema.yazi(OkumaTema.yaziEtiket,
-                    kalinlik: OkumaTema.kalinlikVurgu,
-                    renk: OkumaTema.primaryDark)),
-          ],
-        );
+        return const Icon(Icons.check_circle_rounded,
+            color: OkumaTema.primary, size: OkumaTema.ikonOrta);
       case _Durum.dogru:
         return const Icon(Icons.check_circle_rounded,
             color: OkumaTema.mintDark, size: OkumaTema.ikonOrta);
@@ -482,22 +480,35 @@ class _DurumIkonu extends StatelessWidget {
         return const Icon(Icons.lightbulb_outline_rounded,
             color: OkumaTema.coralDark, size: OkumaTema.ikonOrta);
       case _Durum.dogruGoster:
-        return Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(Icons.check_circle_rounded,
-                color: OkumaTema.mintDark, size: OkumaTema.ikonOrta),
-            const SizedBox(width: OkumaTema.bosluk4),
-            Text(OkumaMetin.soruDogruCevap,
-                style: OkumaTema.yazi(OkumaTema.yaziEtiket,
-                    kalinlik: OkumaTema.kalinlikVurgu,
-                    renk: OkumaTema.mintDark)),
-          ],
-        );
+        return const Icon(Icons.check_circle_rounded,
+            color: OkumaTema.mintDark, size: OkumaTema.ikonOrta);
       case _Durum.bos:
       case _Durum.pasif:
         return const SizedBox.shrink();
     }
+  }
+}
+
+/// Şık metninin altındaki kısa durum etiketi ("Seçildi", "Doğru cevap bu"); yalnız bu iki durumda.
+class _DurumEtiketi extends StatelessWidget {
+  const _DurumEtiketi({required this.durum});
+
+  final _Durum durum;
+
+  @override
+  Widget build(BuildContext context) {
+    final (metin, renk) = switch (durum) {
+      _Durum.secili => (OkumaMetin.soruSecildi, OkumaTema.primaryDark),
+      _Durum.dogruGoster => (OkumaMetin.soruDogruCevap, OkumaTema.mintDark),
+      _ => (null, OkumaTema.ink),
+    };
+    if (metin == null) return const SizedBox.shrink();
+    return Padding(
+      padding: const EdgeInsets.only(top: OkumaTema.bosluk4),
+      child: Text(metin,
+          style: OkumaTema.yazi(OkumaTema.yaziEtiket,
+              kalinlik: OkumaTema.kalinlikVurgu, renk: renk)),
+    );
   }
 }
 
