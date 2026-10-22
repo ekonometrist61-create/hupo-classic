@@ -69,10 +69,71 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR-051 | MOB | HupoRead görsel ve içerik yükseltme: F1 uygulandı (PDF palet/serif/vektör kapak, emoji → SVG okuyucu ve PDF, maskot düzeltmesi). Açık: F2 okuyucu Oku/Keşfet/Düşün akışı (Düşün isteğe bağlı mı?), F3 canlı içerik sözleşmesi (DB onayı), F4 raster sahneler | DEVAM | Ajan + Kullanıcı | Yüksek | K-0076, K-0077, K-0078 |
 | GÖR-052 | MOB | Okuma PDF gerçek kontrolü: ikonlu gerçek bir hikâyeyle sayfa incelemesi, 2. ve 8. sınıf ile mürekkep tasarrufu PNG'lerinin incelenmesi, baskı denemesi, PDF indir akışında tema seçimi (karar), 8. sınıf için sözlük adayı (içerik) | BEKLİYOR | Ajan + Kullanıcı (içerik, baskı, karar) | Orta | K-0085 |
 | GÖR-053 | BEL | Çakışan çalışma: okuma PDF ve motor dosyaları iki ajan tarafından düzenlendi (K-0078, K-0085). Commit öncesi birleştirme ve gözden geçirme gerekli; okuma dosyaları henüz git'e alınmadı (untracked) | BEKLİYOR (karar) | Kullanıcı (commit onayı) + Ajan | Yüksek | K-0078, K-0085 |
+| GÖR-054 | MOB | HupoRead hikâye veri tabanı (anotasyon hattı): 15 hikâye (HR-015…032, 3–4. sınıf) pakete derlendi; 76 hikâye kaldı (5–8. sınıf dahil). Açıklar: yazarların metin tekrarları (aşağıda K-0107), sözlük adaylarının insan onayı (53 aday onaysız), kanıt düzeyi C, HR-111/112 iki sürümden hangisinin esas alınacağı, 5–8. sınıf uzunluk kararının uygulanması (bölme yok, tasnif kademesiyle işaretli) | DEVAM | Ajan + Kullanıcı (onay, içerik) | Yüksek | K-0107 |
 
 ---
 
 ## B. Kayıtlar (en yeni üstte)
+
+### K-0107 · 2026-10-23 00:08 · MOB · HupoRead hikâye veri tabanı: tasnif, uzunluk kararı, pilot paketler ve kaynak sorunları
+- **Tür:** Gelişme + Karar + Sorun
+- **Konu:** MOB
+- **Bağlam:** Kullanıcı, HupoRead'in eğlenceli ve oyunlaştırılmış öğretimini (kelime, eş/zıt, deyim, atasözü, okuduğunu anlama) hikâyelerin içinden yapan bir veri tabanı istedi. Dosya yolları `icerik/okuma/kaynak/` altında toplandı; içerik işaretlemesi mevcut Okuma DSL'iyle (`donustur.mjs`, derleyici `atolye/src/derle.ts`) yapıldı.
+- **Plan:**
+  1. Kaynak envanteri ve kelime sayımı → `icerik/okuma/tasnif/hikaye-tasnif.csv` (93 satır; HR-111/112 iki sürüm).
+  2. Uzunluk ölçütü → `icerik/okuma/tasnif/OLCUT.md`.
+  3. 3–4. sınıf kısa hikâyeler (HR-015, 018, 019, 021–032) için anotasyon, derleme, sözlük adayları.
+  4. Kalan 5–8. sınıf hikâyeler için aynı hat (yapılmadı).
+- **Karar:** Uzunluk kararı proje sahibinin yetkisiyle verildi: hikâyeler bölünmez, metne dokunulmaz; uygulama sayfalara böler (üst sınır 40 sayfa); T4 kademe "uzun hikâye" olarak işaretlenir, bölme kararı editöryel adıma bırakıldı. Yol arkadaşı için Erkin'in "-di" ekindeki elle düzeltme kullanıcı onayıyla kabul edildi (HR-073). Görsel üretimi için Gemini ve fal.ai anahtarları kullanıcı onayıyla `.claude/settings.local.json` env bloğuna kaydedildi (git dışı, değerler günlükte yazılmadı). İkon seti: `mobile-app/assets/okuma/hikaye_ikonlari` (89 ikon) görsel seçim olarak kabul edildi; hikâye işaretlemesi eski kodları kullanır, uygulama kayıt tablosu (`ikon_kayit.dart`) bunları yeni ikonlara eşler. Derleyiciye dokunulmadı (`atolye` başka ekibin alanı).
+- **Yapılanlar:**
+  - Tasnif (kelime sayımı, sınıf bazında kademe): 3. sınıf 11 hikâye T2; 4. sınıf 12 hikâye T2; 5–8. sınıf 61 hikâye T4 (üst sınırın 3 katından fazla).
+  - HR-073 pilotu: `anotasyon/hr073.json` → `paket/hr073-bogacin-adil-karari.paket.json`. 5 kelime, 3 deyim, 4 soru (4 şık), 3 sahne görseli (Gemini `gemini-2.5-flash-image`, `gorsel/hr073/sahne-1..3.jpg`).
+  - 3–4. sınıf 15 hikâye: `anotasyon/hr015…hr032.json` → 15 paket (`paket/hr0NN-*.paket.json`), tümü derleyiciden geçti. Her kelime yuvasında 3 aday; deyimlerde 3 aday.
+  - `donustur.mjs` düzeltmeleri: (a) anotasyona `elle` alanı (ad + ek birleşimleri için elle düzeltme); (b) not başlığı algılaması büyük/küçük harf duyarlıydı ve "Öğrenmesi" gibi anlatı başlıklarında hikâyeyi kesiyordu; artık başlık başıyla eşleşiyor.
+- **Sorun (kaynak metinler):** Birçok 3–4. sınıf metninde bir paragrafın ilk cümlesi tek başına bir satır olarak, ardından tam paragraf olarak tekrar ediyor (ör. HR-018 "Bora duvara asılı eski bir bakım fotoğrafını fark etti", HR-019, HR-021, HR-022, HR-023, HR-025, HR-029, HR-030, HR-031). Metinler düzeltilmedi; yazar/editör düzeltmesi gerekiyor. Tekrarlar pakette de görünür. Bu olmadan yayın yapılmamalı.
+- **Sorun (uzunluk):** Son parti dosyasındaki HR-111/112 "Hedef kelime aralığı 4.000–5.000" diyor; proje içi `sinif_olcutleri` (8. sınıf: 1100) ile çelişiyor. Kaynak `p16-son-parti-HR111-112.md` olarak saklandı; mevcut `HR-111/112.md` dosyalarının üzerine yazılmadı. Hangi sürümün esas alınacağı kullanıcı kararı.
+- **Sorun (kopula):** Araç "Erkin'di" gibi ad+kopula birleşimlerini çözemiyor; HR-073'te bu tek ifade elle "{yol arkadaşı};" biçimine çevrildi (kopula düşürüldü). Onaylandı.
+- **Açık:** 76 hikâyenin anotasyonu; sözlük adaylarının insan onayı; yayın kapısı (Ajan A/B denetimi, insan okuması); HR-073 ve 3–4. sınıf sahne görselleri (yalnızca HR-073 için üretildi); 5–8. sınıf hikâyelerde deyim ve atasözü taraması; atasözü eksikliği (HR-073'te gerçek atasözü yok, eklemek yazar onayı gerektirir).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — derleyici 15/15 paket için hata yok; içerik editöryel ve pedagojik olarak doğrulanmadı; sözlük adayları onaysız (`durum: taslak`).
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **Açıklama:** Veri tabanının hattı çalışıyor, ancak kapsam yalnızca 16 hikâye (HR-073 + 15). Kalan 76 hikâye ve yayın kapıları açık.
+- **Kanıt:** `node tools/donustur.mjs uret anotasyon/hr0NN.json` → "Paket yazıldı" (15/15), `icerik/okuma/tasnif/hikaye-tasnif.csv`, `icerik/okuma/tasnif/OLCUT.md`, `icerik/okuma/gorsel/hr073/`.
+- **İlgili:** GÖR-054, K-0106, `icerik/okuma/tools/donustur.mjs`, `icerik/okuma/anotasyon/`.
+
+### K-0107 · 2026-10-23 00:29 · DEN/VT · 5. sınıf Türkçe: 29 soru beklemede aktarıldı
+- **Tür:** Gelişme + Karar (kullanıcı: "sen karar ver, devam et")
+- **Kaynak:** Ortaokul Türkçe DÖP 5–8 (tymm 2026-09-02), 5. sınıf kazanımları `docs/soru-uretim/pilot/kazanim_5_turkce.json`. 21 kod: okuma (T.O.5.x) ve yazma (T.Y.5.x) metinle ölçülebilenler. Dinleme, konuşma, akıcı okuma, süreç değerlendirme ve görsel gerektiren kazanımlar kapsam dışı (dosyada gerekçeli).
+- **Hat:** Yazar (Sonnet) 30 taslak (TR5-001…030) → `kapi.cjs` 30/30 KONTROL → kör çözüm (Haiku) + kör kalite (Sonnet): 25 GEÇER, 5 DÜZELT (TR5-013, 017, 020, 023, 025). Eksik kalan T.O.5.19 ve T.Y.5.12 için 4 yedek (TR5-031…034): 4/4 GEÇER. Zorluk önerisi TR5-032 için 1.
+- **Sonuç:** 29 onaylı soru; 21/21 kazanım kapsanmış; zorluk 1:8, 2:16, 3:5; doğru şık A9 B8 C6 D6.
+- **Aktarım:** Parti `soru-uretim-2026-10-23-5sinif-turkce`, 29 kayıt, `beklemede`, `kalite_durumu='sari'`, `kaynak_turu='uretilen'`, görselsiz. Canlı doğrulayıcı (`_soru_paket_hatasi`) 29/29 geçerli; kimlik ve metin tekrarı 0. Toplam 1048; onaylı 1019 değişmedi.
+- **Doğrulama:** DOĞRULANDI (kapı, denetim kayıtları, veritabanı sayımı). Yapılmadı: insan örneklemi (§15), benzerlik kontrolü (kaynak parmak izi ve iç 6-gram; bu hücrede henüz çalıştırılmadı), DÖP ile kazanım metinlerinin resmî teyidi.
+- **Durum:** BEKLİYOR (yayın kararı kullanıcıda; yayın öncesi benzerlik kontrolü yapılmalı) · 5. sınıf Türkçe: üretim ve aktarım TAMAM.
+- **Sahip:** Kullanıcı (yayın onayı) · Ajan (benzerlik kontrolü).
+- **Önem:** Orta
+- **İlgili:** K-0093, K-0106; `docs/soru-uretim/pilot/uretim_turkce_5*.json`, `denetim_turkce_5.json`, `kazanim_5_turkce.json`; `docs/soru-uretim/paket/soru_paketi_5sinif_turkce_2026-10-23.json`.
+
+### K-0106 · 2026-10-22 23:57 · VT · Hazır soruların veritabanı durumu ve bekleyen migration'lar
+- **Tür:** Gelişme + Not
+- **Bağlam:** Kullanıcı "hazır soruları veritabanına gönder, migrasyonunu yap" dedi.
+- **Bulgu:** Hazır (final ve yayına uygun) sorular zaten veritabanında: 2. sınıf Türkçe 34, Matematik 32, Hayat Bilgisi 38 (K-0104, onaylandı); 4. sınıf Sosyal 28 ve diğer önceki partiler (K-0070, K-0093) eşleşiyor. Veritabanında bekleyen hazır soru yok. Benzerlik bekletmesindeki 3 soru (TR2-020, TR2-034, MAT2-033) bilerek dışarıda.
+- **Migration:** `db:preview` iki bekleyen migration gösteriyor: `20261078000000_okuma_dashboard_genislet.sql` ve `20261079000000_okuma_toplu_islem.sql`. İkisi de okuma modülüne ait, bu oturumun işi değil ve onayı yok. **Uygulanmadı.** Kullanıcı onayı verilirse `db:deploy` ile uygulanır.
+- **Durum:** TAMAMLANDI (hazır soruların aktarımı kontrolü) · BEKLİYOR (20261078 ve 20261079 deploy kararı).
+- **Sahip:** Kullanıcı (migration onayı) · Ajan.
+- **Önem:** Düşük
+- **İlgili:** K-0070, K-0093, K-0104, K-0101.
+
+### K-0105 · 2026-10-22 23:52 · DEN · İngilizce 2 vekil ölçüm kararı: yapılmıyor
+- **Tür:** Karar (kullanıcı yetki verdi: "sen karar ver, kaliteye uygun olanı")
+- **Karar:** İngilizce 2 için yazılı vekil ölçüm üretilmiyor; hücre kapalı kalır.
+- **Gerekçe:** (1) Kodlar (`E2.x.L/S`) dinleme ve konuşma; yazılı sözcük eşleştirme bu becerileri ölçmez, etiketlenirse kazanım yanlış beyan edilir. (2) Kaynak resmî program değil; tek bir okulun 2023–2024 kazanım değerlendirme ölçeği (zip). Resmî 2. sınıf İngilizce kazanım tablosu bulunamadı (K-0102, K-0103, K-0104). (3) Yayınlanmış bir hücreyi kanıtsız kazanımla açmak, zorluk ve benzerlik kararlarında olduğu gibi ürün kalitesini düşürür.
+- **Kapsam dışı kalan:** İngilizce 2'nin tüm kodları (dinleme/konuşma). Türkçe T.D/T.K ile aynı kural.
+- **Açık (ileride):** Kelime tanıma için ayrı bir "yazılı sözcük" hücresi, ancak resmî bir kelime/beceri kaynağı ve ayrı etiket ile; mevcut kodlarla değil.
+- **Durum:** TAMAMLANDI (karar) · 2. sınıf kapanışı K-0103/K-0104 ile aynı.
+- **Sahip:** Ajan (karar), Kullanıcı (ileride ayrı kaynak isteyecekse).
+- **Önem:** Düşük
+- **İlgili:** K-0102, K-0103, K-0104.
 
 ### K-0104 · 2026-10-22 23:24 · DEN/VT · 2. sınıf yayını (104 soru) ve İngilizce 2 kaynak bulgusu
 - **Tür:** Karar (kullanıcı: "yayın için uygundur") + Gelişme + Not
@@ -3298,3 +3359,25 @@ Paketler:
 - Uzak DB (uygulandı): 20261075 (anket puanı isteğe bağlı), 20261076 (paket doğrulayıcı: sözluk + uzun ikon kimliği), 20261077 (45 hikâyeye yeni TASLAK sürüm). Yayın YAPILMADI: 12 test yayınındaki hikâyeler eski sürümle yayında kalıyor; yeni sürüm için insan okuması ve yayına alma kararı kullanıcıda.
 - Mobil: kelime paneli (başlıkta kapat simgesi, sabit Kapat düğmesi); okuyucu uzun sayfalarda birkaç saniye sonra yavaş otomatik kaydırma (dokununca durur, hareket azaltmada kapalı); soru geri bildirimi cevaptan sonra görünür alana kayar, yanlışta nötr Hupo pozu; anket puanı ve önerileri isteğe bağlı ("Atla"), iki sütunlu öneri ızgarası; sonuç ekranında maskot başlığın yanında (motivasyon kartı 360×640'ta düğmelerin üstünde, widget testiyle doğrulandı), düşük puanda üzgün poz yok; PDF "indir" artık dosyayı İndirilenler'e kaydeder (file_saver), kapakta maskot yok, hikâyenin sahne görseli kullanılır.
 - Doğrulama: flutter test 398/398 (önceki okuma akış testleri anket akışına göre güncellendi); yeni okuma_duzeltme_test (5), okuma_sozluk_paket_test (1); PGlite zinciri hatasız; kos.mjs 186/187 (#18 eski bilinen). APK derlendi; telefon kurulum sırasında bağlı değildi.
+
+### K-0103 · 2026-10-23 · WEB/TSR · Okuma Faz 4: /okuma-demo, veli bölümü, SEO taslağı (navigasyonsuz)
+- **Tür:** Gelişme
+- **Konu:** WEB
+- **Bağlam:** ENTEGRASYON_PLANI_2026-10-21 Faz 4. Kullanıcı kararı: landing bölümü pilot sonrası; önce tek örnek demo. Yayın kapısı (pilot bitişi + hukuk onayı) açık.
+- **Plan:** (1) `/okuma-demo` statik tek örnek (HR-014, Ela/Hupo); (2) veli bileşeni `VeliOkumaBolumu` yalnız demo altında; ana sayfaya eklenmedi; (3) `/okuma/sinif-okuma-anlama` SEO taslağı; (4) fiyat dokunulmadı.
+- **Karar:** Yeni sayfalar navigasyonda, sitemap'te ve canonical'da yok; ikisi de `robots: noindex`. Route `/demo` yerine `/okuma-demo` (mevcut `/demo` ürün demosu ve menü bağlantısı korundu). Kullanıcı kararı `ONAYLI` (planın yönü); noindex kaldırma kararı yayın kapısına bağlı — `ONAY BEKLİYOR`.
+- **Durum:** TAMAMLANDI (yalnız kod ve önizleme kapsamı). YAYIN BEKLİYOR: kaynak hikâye `durum: taslak`, `denetim: pending` (insan okuması ve üç göz onayı yok).
+- **Doğrulama:** DOĞRULANDI — `tsc --noEmit` 0 hata; ESLint 6 dosya 0 hata/0 uyarı; `next dev` ile iki sayfa 200; Playwright: 360/390/1024 ve koyu temada yatay taşma 0 px, konsol hatası yok, sayfa akışı (6 sayfa, dayanak düğmesi, yanlış/doğru geri bildirim, "Başka şık dene", radio kilidi) geçti; landing'de okuma bağlantısı 0. Kapsam dışı: `next build`, gerçek cihaz, en locale (sayfalar Türkçe).
+- **Açık:** Demo cevap anahtarı istemci paketinde (kayıtsız demo için kabul edildi); "Önizleme" rozeti yayında kaldırılacak; SEO sayfasındaki süreç cümleleri (üç onay, kaynak kaydı, sınıf/hedef sözcük önceden belirlenir) yayın anında gerçekten uygulanmış olmalı; "Veli özeti" maddesi ürün metriğiyle yeniden doğrulanmalı; okuma hakkı kalemi fiyat sayfasına eklenmedi (öneri: kullanıcı kararı).
+- **Sahip:** Ajan (kod), Kullanıcı (yayın, insan okuması, noindex kararı)
+- **Önem:** Orta
+- **Kanıt:** `web-panel/src/app/[locale]/(full-width-pages)/okuma-demo/page.tsx`, `.../okuma/sinif-okuma-anlama/page.tsx`, `web-panel/src/components/okuma-site/*`
+- **İlgili:** Faz 4, ENTEGRASYON_PLANI_2026-10-21.md; Maarif D17 = Tasarruf
+### K-0104 · 2026-10-23 · VT/MOB/TSR/WEB · Okuma fazları: durum, panel ve dashboard, site hazırlığı, mobil kabul
+- Faz durumu tek belgede: `docs/okuma-entegrasyon/FAZ_DURUMU_2026-10-23.md` (Faz 0 tamam; Faz 1 kod ve kabul ekran görüntüsü tamam, cihaz uçtan uca açık; Faz 2 kısmi; Faz 3 büyük ölçüde; Faz 3b kod tamam; Faz 4 hazırlık tamam ama yayın bloke; Faz 5 ve 6 kullanıcı kararı/sonraki).
+- Faz 1 kabul: 390×844, 1024×768, 360×640 (yazı 1.0 ve 2.0) golden ekran görüntüleri (`test/okuma_golden/`, 30 PNG). Düzeltmeler: geri bildirim alanı görünür kalır (cacheExtent), şık etiketleri metnin altına alındı, dar ekranda alt düğmeler alt alta. 360×640/2.0 içerik alanı sınırlı; kaydırarak görülüyor (tasarım sınırı).
+- Faz 3 yönetim: düzenleme (yeni taslak), silme kuralı arayüzde, toplu arşiv/silme (`okuma_toplu_islem`, migration 20261079, önizleme + gerçek işlem), karne uyarıları (tamamlama <%70, anlama <%60), sözlük yükleme (`SozlukYukle`). PGlite 36/36.
+- Faz 3 veli/öğretmen: dashboard metrikleri genişletildi (doğru/yanlış dağılımı, Maarif değerleri, zorluk seyri, öğrenme basamakları; min-N ≥3). Migration 20261078. PGlite 39/39.
+- Faz 4 site hazırlığı: `/okuma-demo` (statik örnek, yalnız istemci tarafı cevap kontrolü) ve `/okuma/sinif-okuma-anlama` (SEO); navigasyona, sitemap'e ve landing'e bağlı değil, noindex. Yayın kararı: pilot bitişi + insan okuması + üç göz onayı.
+- Uzakta uygulanmadı: 20261078 ve 20261079. Uygulanmadan yeni alanlar ve toplu işlem gelmez; arayüz eski sunucuda da çalışacak şekilde yazıldı.
+- Açık: 12 test yayınındaki hikâyelerin yeni sürümü (yayına alma ve insan okuması), eksik 15 sahne görseli, Faz 5 pilot kapsamı kararı, Ajan A/B denetimi (33 hikâye), fiyat sayfasında okuma hakkı kalemi.
