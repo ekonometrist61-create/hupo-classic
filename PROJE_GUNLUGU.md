@@ -61,7 +61,7 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR-043 | HUK | MEB ODSGM içerikleri (icerik/834, 54 kaynak): altbilgide "Tüm Hakları Saklıdır" yazıyor. Birebir aktarım için MEB'den yazılı izin veya hukuk görüşü gerekli; o zamana kadar yalnızca uyarlama. Lisans kaydı `belirsiz` | BEKLİYOR | Hukuk + Kullanıcı | Yüksek | K-0020 |
 | GÖR-042 | YÖN | Soru Atölyesi (PDF → etiketli soru → varyasyon → denetim → panel import). Faz 0 belgeleri ve şema yazıldı; Faz 1'den devam. Faz 6 (migration/RPC/panel) ayrı onay ister. Lisans dayanağı kaynak kaydına yazılmalı | DEVAM | Ajan + Kullanıcı | Yüksek | K-0020 |
 | GÖR-044 | MOB | Senin Hikayen / Okuma Dünyası ana iş: F0 iskeleti ve kit testi tamam; F1 (Dart motor, Türkçe ek vektörleri), F2 (derleyici, şemalar) ve örnek hikâyeler sıradaki | DEVAM | Ajan + Kullanıcı | Yüksek | K-0022, K-0023 |
-| GÖR-045 | HUK | Okuma Dünyası hukuku: aydınlatma güncellemesi (okuma geçmişi, anket, veli değer tercihi için KVKK m.6 sorusu), saklama süresi, AI üretimli metnin telifi, MEB/TDK metni | BEKLİYOR | Hukuk | Yüksek | K-0022, GÖR-019, GÖR-043 |
+| GÖR-045 | HUK | Okuma Dünyası hukuku: aydınlatma güncellemesi (okuma geçmişi, anket, veli değer tercihi için KVKK m.6 sorusu), saklama süresi, AI üretimli metnin telifi, MEB/TDK metni | TAMAMLANDI (2026-10-22, kullanıcı beyanı: hukuk onayı tamam; yazılı görüş dosyası kayda eklenmedi) | Hukuk | Yüksek | K-0022, GÖR-019, GÖR-043 |
 | GÖR-046 | VT | (KAPANDI, bkz. K-0028) Kelime Evreni veli özeti rıza kapısını sunucuda uygulamıyor (`kelime_veli_ozeti` 20261022000000:611; kapı yalnız ChildScope arayüzünde); `export_my_data` Kelime tablolarını kapsamıyor. Düzeltme migration'ı ayrı onayla | TAMAMLANDI (rıza kapısı PGlite'ta DOĞRULANDI; migrasyonlar 20261045/20261046 uzakta; export çalışma zamanı testi GÖR-048'e taşındı) | Ajan | Yüksek | K-0022, GÖR-041, K-0024, K-0025, K-0027, K-0028 |
 | GÖR-048 | VT | `export_my_data` (20261046) çalışma zamanı testi: PGlite'ta `student_stats`, `user_answers`, `xp_events`, `user_badges`, `notifications` tabloları yok; Kelime bölümü dahil tam çağrı test edilmedi. Test ortamı tamamlanınca koşulacak | DEVAM | Ajan | Orta | K-0027, K-0028 |
 | GÖR-049 | YÖN | Dört göz ve iki yönetici hesabı: sistem (`DORT_GOZ`) iki ayrı yönetici hesabı ister. Hazırlayan AI ajanı bir hesap sahibi değildir. Okuma Dünyası tasarımında (F7) ajan işlemlerinin hangi hesapla yapılacağı ve ikinci onayın kimde olacağı netleştirilecek | BEKLİYOR (tasarım) | Ajan + Kullanıcı | Yüksek | K-0025, K-0028 |
@@ -73,6 +73,33 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 ---
 
 ## B. Kayıtlar (en yeni üstte)
+
+### K-0101 · 2026-10-22 08:37 · VT · Soru paketi doğrulayıcısı: sınıf alanı düzeltildi (uzakta uygulandı)
+- **Tür:** Gelişme + Karar (kullanıcı onayı: "düzenlemeyi yap")
+- **Konu:** VT
+- **Bağlam:** K-0100'de `admin_import_questions_v2` paketi 93/93 reddetmişti: canlı `_soru_hatasi` sınıf (1–12) ister, `20261047000000` sarmalayıcısı sınıfı geçirmiyordu. Canlı `_soru_paket_hatasi` gövdesi depo sürümüyle birebir aynı olduğu doğrulandı.
+- **Karar/Yapılan:** `supabase/migrations/20261072000000_soru_paketi_sinif_duzeltme.sql`: yalnız `_soru_paket_hatasi` yeniden tanımlandı; `_soru_hatasi` çağrısına `sinif` eklendi. Uzakta yalnız bu SQL `db query --linked -f` ile çalıştırıldı. `db:deploy` **çalıştırılmadı**: `db:preview` bekleyen `20261071000000_okuma_sayfa_siniri_40.sql` dosyasını da gösteriyordu; onu ayrıca onaylanmadı.
+- **Doğrulama:** DOĞRULANDI (salt okunur): 93/93 paket satırı `_soru_paket_hatasi` → null; geçersiz sınıf (13) → "sınıf zorunlu ve 1–8" hatası; `authenticated` için execute yetkisi kapalı (değişmedi).
+- **Açıklama:** 93 soru zaten K-0100'deki SQL aktarımıyla `beklemede` olarak içeridedir (parti `soru-uretim-2026-10-22-2sinif`, 93 kayıt); aynı parti tekrar aktarılamadığı için yeniden aktarım yapılmadı. Düzeltme gelecek paketler için RPC yolunu açar. 3 BEKLET soru (TR2-020, TR2-034, MAT2-033) aktarılmadı.
+- **Durum:** TAMAMLANDI (düzeltme) · Açık: `db:status` uzakta 20261072'yi kayıtlı görmeyecek (uzaktan elle uygulandı); `20261071` onayı bekliyor.
+- **Sahip:** Kullanıcı (20261071 deploy onayı; BEKLET soruların aktarımı kararı) · Ajan.
+- **Önem:** Orta
+- **İlgili:** K-0100, K-0070; migration `20261047000000`, `20261072000000`; `supabase/KURTARMA_DURUMU.md`.
+
+### K-0100 · 2026-10-22 08:32 · VT · 2. sınıf 93 soru: benzerlik kontrolü ve veritabanına beklemede aktarım
+- **Tür:** Gelişme + Karar (kullanıcı onayı: benzerlik kontrolü ve veritabanı aktarımı) + Sorun
+- **Konu:** VT, DEN
+- **Bağlam:** K-0099 sonrası kullanıcı benzerlik kontrolünü ve veritabanı aktarımını onayladı. Uzak DB: `ccozfrpnvyrnktpffkwo`. Onay kapsamı: aktarım `beklemede` olarak (onaylandı değil; PLAN_V2 §7).
+- **Plan:** (1) Kaynak benzerlik: blueprint `veri/parmak_izleri_madde.jsonl.gz` (4 598 madde; aynı anahtar `SoruUzmaniCorpusV2`, aynı 6-gram blake2b, REHBER §6 eşiği: ortak ≥2 veya jaccard ≥0.15). (2) İç benzerlik (96 soru çiftleri). (3) Mevcut DB sinif 2 kayıtları (40) ile benzerlik. (4) Canlı doğrulayıcı ile salt okunur kuru çalıştırma. (5) Tek transaction ile beklemede aktarım.
+- **Karar:** 3 soru BEKLET (ikinci üye): TR2-020 (TR2-019 ile kök kalıbı, 3 ortak 6-gram), TR2-034 (TR2-033 ile kök kalıbı, 3 ortak 6-gram), MAT2-033 (MAT2-016 ile aynı yuvarlama şablonu, 5 ortak 6-gram, jaccard 0.167). Gerekçe: kök kalıbı paylaşıyor; içerik farklı. Geri alınabilir. Aktarılan parti: `soru-uretim-2026-10-22-2sinif`, 93 soru (Türkçe 30, Matematik 32, Hayat Bilgisi 31). Alanlar: `onay_durumu=beklemede`, `kalite_durumu=sari`, `kaynak_turu=uretilen`, `uretim_yontemi=llm`, `gorsel_gerekli=false`.
+- **Sorun:** Admin RPC `admin_import_questions_v2` bu parti için 93/93 satırı reddetti: canlı `_soru_hatasi` sınıf kuralı (1–12) zorunlu tutuyor; depodaki paket sarmalayıcısı (`20261047000000_soru_paketi_ice_aktarma.sql`) bu alanı geçirmiyor. Canlı `_soru_paket_hatasi` gövdesi doğrulanmadı. Canlı fonksiyon ile depo migration'ları arasında fark var (`supabase/KURTARMA_DURUMU.md`; `20260927000110` notu). Aktarım, sınıf alanı geçirilerek canlı `_soru_hatasi` ile ve aynı içerik kurallarıyla tek transaction SQL'i ile yapıldı (K-0070 yöntemi). RPC sarmalayıcısının düzeltilmesi ayrı onay ister.
+- **Açıklama:** Kaynak benzerlik: 96/96 soruda ortak 6-gram yok. İç benzerlik: 3 çift eşik üstü → 3 BEKLET (yukarıda). Mevcut DB 2. sınıf (40 kayıt, İngilizce dahil): eşik üstü eşleşme yok. Canlı doğrulama 93/93 geçti; kimlik çakışması 0; metin tekrarı 0. Toplam soru 915 → 1008; onaylı 915 değişmedi.
+- **Doğrulama:** DOĞRULANDI (aktarım sonrası sorgu): beklemede 93, bu partide beklemede+sari+uretilen+görselsiz 93, `soru_importlari` kaydı istenen 93 / eklenen 93 / hatalı 0. Yapılmadı: insan örneklemi (REHBER §15), zorluk kalibrasyonu, DÖP ile kazanım metinlerinin teyidi, yayın kararı.
+- **Durum:** BEKLİYOR. Yayın (onaylandı) için insan örneklemi ataması ve kullanıcı kararı; RPC sarmalayıcı sapmasının giderilmesi için ayrı onay.
+- **Sahip:** Kullanıcı (örneklem ataması, yayın kararı, sarmalayıcı düzeltme onayı) · Ajan (teknik takip).
+- **Önem:** Yüksek
+- **Kanıt:** Paket `docs/soru-uretim/paket/soru_paketi_2sinif_2026-10-22.json`; `soru_importlari` satırı `soru-uretim-2026-10-22-2sinif`; final dosyalarda `benzerlik` alanı ve BEKLET işaretleri.
+- **İlgili:** K-0070, K-0098, K-0099; REHBER §6, §15, §18; migration `20261047000000`, `20260927000110`; `supabase/KURTARMA_DURUMU.md`.
 
 ### K-0099 · 2026-10-22 07:45 · DEN · 2. sınıf zorluk 3 ek partisi: sonuç ve sınır
 - **Tür:** Gelişme
@@ -3220,3 +3247,9 @@ Paketler:
 - Web: yönetim hikâye düzenle/sil/istatistik, /yonetim/kullanim, veli okuma gelişim kartları, çerez onayına bağlı kullanım ölçümü. Mobil: kullanim_suresi.dart (anonim, sekme/rota bazlı).
 - Doğrulama: PGlite kos 186/187 (#18 eski bilinen), yonetim_crud 27/27, dashboard 30/30, kullanım 17/17; web tsc temiz; Flutter okuma+kullanım testleri geçti. Tarayıcıda/telefonda görsel kontrol YAPILMADI.
 - Açık: HR-041…047 uzunluk kararı, hukuk/telif onayı, pg_cron (300 gün temizliği) kontrolü, Faz D, kalan 75 fiş, raster görsel gözden geçirme.
+
+### K-0101 · 2026-10-22 · VT/MOB/TSR · Hukuk onayı kaydı, pg_cron temizliği, uzun hikâyeler kısa sayfalara
+- Hukuk onayı (GÖR-045 kapsamı: okuma verisi, kullanım süresi, AI metin telifi, A/K kaynaklı HR-005/006/007/008/010/033…) kullanıcı tarafından verildi; kayıt kullanıcı beyanına dayanır. GÖR-043 (MEB birebir aktarım) ayrı kalır.
+- 300 gün temizliği: 20261070 pg_cron'u zorunlu kılar ve `kullanim_olaylari_temizle` işini (her gün 03:15 UTC) kurar; iş kurulamazsa migration hata verir. Uzakta uygulandı.
+- Karar (çocuğa okumayı sevdirme hedefi): HR-041…047 kısaltılmaz; ~85-90 kelimelik kısa sayfalara bölündü (9→24-36 sayfa). Sayfa sınırı 12→40 (20261071), yeni taslaklar 20261072 ile uzakta. Soruların dayanak_sayfa değeri anahtar sözcük örtüşmesiyle yeniden eşlendi (okuma insan gözüyle doğrulanmalı).
+- Not: 20261072 sürüm çakışması: soru-paketi işinin dosyası 20261073'e yeniden adlandırıldı, uygulanmadı (sahibi uygulamalı).

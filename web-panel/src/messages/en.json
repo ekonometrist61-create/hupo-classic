@@ -803,6 +803,14 @@
       "appStore": "Download from App Store",
       "googlePlay": "Get from Google Play",
       "copyright": "© 2026 Hupolingo"
+    },
+    "hikayeler": {
+      "title": "Reading that is fun, with the child as the hero",
+      "desc": "Children step into the story as themselves or a friend: they explore, laugh and wonder. A few short questions at the end let them check what they understood.",
+      "sayi": "{count} stories available",
+      "sinif": "For grades {alt}–{ust}",
+      "turler": "Genres",
+      "not": "Stories go through three review steps before publishing. This number updates automatically as new stories are added."
     }
   },
   "sidebar": {

@@ -19,7 +19,7 @@ Kapsam: mobil uygulama, Flutter web, halka açık site, yönetim, veli ve öğre
 ## Rıza ve şeffaflık
 - Web sitede mevcut çerez tercih kuralına uyulur: analitik onayı yoksa olay gönderilmez.
 - Mobilde olaylar anonimdir ve hesapla ilişkilendirilmez; gizlilik metnine eklenmesi gereken cümle (hukuk onayına açık): "Uygulamayı geliştirmek için hangi ekranlarda ne kadar süre geçirildiğini, kimliğinizle ilişkilendirmeden ve anonim olarak ölçeriz; bu veriler 300 gün saklanır."
-- Çocuk verisi için hukuk görüşü (GÖR-045 kapsamı) alınmadan genel kullanıma geçilmemelidir.
+- Hukuk onayı verildi (2026-10-22, kullanıcı beyanı; GÖR-045). Yukarıdaki cümle gizlilik metnine eklenebilir.
 
 ## Açık
-Saklama süresini otomatik çalıştıran zamanlayıcı (`pg_cron`) uzak veritabanında kontrol edilecek; yoksa temizlik elle ya da planlı bir işle çalıştırılır.
+Çözüldü (2026-10-22): 20261070 pg_cron işini kurar (her gün 03:15 UTC).

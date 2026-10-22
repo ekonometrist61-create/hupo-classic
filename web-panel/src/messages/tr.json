@@ -802,6 +802,14 @@
       "appStore": "App Store'dan İndir",
       "googlePlay": "Google Play'den İndir",
       "copyright": "© 2026 Hupolingo"
+    },
+    "hikayeler": {
+      "title": "Okurken eğlenen, hikâyenin kahramanı olan çocuk",
+      "desc": "Çocuk hikâyede kendisi ya da bir arkadaşı olarak yol alır; keşfeder, güler, merak eder. Sonunda birkaç küçük soruyla anladığını dener.",
+      "sayi": "{count} yayında hikâye",
+      "sinif": "{alt}–{ust}. sınıf için",
+      "turler": "Türler",
+      "not": "Hikâyeler yayından önce üç aşamada incelenir. Yeni hikâyeler eklendikçe bu sayı kendiliğinden güncellenir."
     }
   },
   "sidebar": {

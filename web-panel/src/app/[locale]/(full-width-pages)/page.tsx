@@ -7,6 +7,7 @@ import { DuyuruSeridi } from "@/components/landing/sections/DuyuruSeridi";
 import { FaqSection } from "@/components/landing/sections/FaqSection";
 import { FinalCtaSection } from "@/components/landing/sections/FinalCtaSection";
 import { HeroSection } from "@/components/landing/sections/HeroSection";
+import { HikayelerSection } from "@/components/landing/sections/HikayelerSection";
 import { HowItWorksSection } from "@/components/landing/sections/HowItWorksSection";
 import { ParentPanelSection } from "@/components/landing/sections/ParentPanelSection";
 import { PricingSection } from "@/components/landing/sections/PricingSection";
@@ -48,6 +49,7 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
         <BenefitsSection />
         <DemoSection />
         <HowItWorksSection />
+        <HikayelerSection />
         <ParentPanelSection />
         <CharacterUniverseSection />
         <TrustSection />
