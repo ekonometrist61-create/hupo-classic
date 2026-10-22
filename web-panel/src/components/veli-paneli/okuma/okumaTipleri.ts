@@ -4,7 +4,17 @@ export interface SoruDogrulugu {
   yeterli: boolean;
   soru?: number;
   dogru?: number;
+  yanlis?: number;
   oran?: number;
+}
+
+/** Haftalık zorluk seyri satırı (veli: kendi çocuğu; öğretmen sınıfı: ogrenci_sayisi ile, en az 3 öğrenci). */
+export interface ZorlukHaftasi {
+  hafta: string;
+  hikaye: number;
+  ogrenci_sayisi?: number;
+  ort_okuma_zorlugu: number | null;
+  ort_kavram_zorlugu: number | null;
 }
 
 export interface DagilimKalemi {
@@ -22,6 +32,10 @@ export interface HedefSatiri {
   tur: string;
   durum: string;
   hikaye: string | null;
+  /** Dönem içinde bu hedefe bağlı sorular (20261078+). */
+  soru?: number;
+  dogru?: number;
+  yanlis?: number;
 }
 
 export interface SonHikaye {
@@ -55,10 +69,11 @@ export interface OkumaOzet {
   olcme_turu_dogrulugu?: Record<string, SoruDogrulugu>;
   ortalama_sure_dk?: number | null;
   soru_dogrulugu?: Record<string, SoruDogrulugu>;
+  dogruluk_toplami?: SoruDogrulugu;
   tema_dagilimi?: DagilimKalemi[];
   deger_dagilimi?: DagilimKalemi[];
   ders_dagilimi?: DagilimKalemi[];
-  zorluk_seyri?: { hafta: string; hikaye: number; ort_okuma_zorlugu: number | null; ort_kavram_zorlugu: number | null }[];
+  zorluk_seyri?: ZorlukHaftasi[];
   hedef_durumlari?: Record<string, number>;
   pekisen_hedefler?: { hedef_id: string; etiket: string; durum: string }[];
   cocuk_puani?: { oy: number; ortalama: number | null; sevilen_temalar: string[] };

@@ -54,7 +54,7 @@ export interface PaketSoru {
 }
 
 export interface Paket {
-  hikaye: { baslik: string; tanitim?: string; tur?: string };
+  hikaye: { baslik: string; slug?: string; tanitim?: string; tur?: string };
   sayfalar: { omurga: boolean; parcalar: Parca[] }[];
   deger_sahneleri?: Sahneler;
   hareket_sahneleri?: Sahneler;
@@ -174,4 +174,26 @@ export function kalemMetni(k: unknown): string {
     return yol ? `${yol}: ${mesaj}` : mesaj;
   }
   return String(k);
+}
+
+/** Karne uyarı eşikleri (yüzde, 0-100). Tek yerde tutulur; karne satırlarının hepsi bunu kullanır. */
+export const KARNE_ESIKLERI = { tamamlamaMin: 70, anlamaMin: 60 } as const;
+
+export type TopluIslem = "arsiv" | "sil";
+
+export interface TopluSonucSatiri {
+  hikaye_id: string;
+  slug: string | null;
+  sonuc: "basarili" | "atlandi";
+  neden: string | null;
+  ayrinti: string | null;
+  etkilenen_surum: number | null;
+}
+
+export interface TopluYaniti {
+  islem: TopluIslem;
+  kuru: boolean;
+  basarili: number;
+  atlanan: number;
+  sonuclar: TopluSonucSatiri[];
 }

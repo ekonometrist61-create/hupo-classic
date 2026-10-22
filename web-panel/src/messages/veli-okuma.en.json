@@ -47,12 +47,15 @@
         "baslik": "Question accuracy (by question type)",
         "aciklama": "Which kinds of comprehension questions does your child find easy, and which might need support?",
         "deger": "{oran}% · {dogru} correct out of {soru} questions",
+        "dagilim": "{oran}% · {dogru} correct, {yanlis} wrong",
+        "toplamBaslik": "Correct and wrong across all questions",
+        "toplam": "{dogru} correct, {yanlis} wrong out of {soru} questions ({oran}%)",
         "yetersiz": "Not enough questions answered yet (at least 3 needed)",
         "not": "These rates do not label your child; they show which type of question is worth talking through together."
       },
-      "tema": { "baslik": "Themes read", "bos": "No theme data in this period." },
-      "deger": { "baslik": "Maarif values", "bos": "No value data in this period." },
-      "ders": { "baslik": "Subject links", "bos": "No subject data in this period." },
+      "tema": { "baslik": "Themes read", "aciklama": "Which topics your child reads stories about most.", "bos": "No theme data in this period." },
+      "deger": { "baslik": "Maarif values", "aciklama": "Values explored in the stories read; it shows which values your child met, not that a value was \"gained\".", "bos": "No value data in this period." },
+      "ders": { "baslik": "Subject links", "aciklama": "Which school subject topics the stories relate to.", "bos": "No subject data in this period." },
       "hedefler": {
         "baslik": "Learning goals",
         "aciklama": "Reading a story does not mean a goal is learned. \"Recalled\" and \"Used in a new context\" only appear after correct answers on later days.",
@@ -69,6 +72,7 @@
         "kavram": "Concept difficulty"
       },
       "sure": {
+        "toplamBaslik": "Total reading time",
         "baslik": "Average reading time",
         "deger": "{dk} min",
         "yok": "No data",
@@ -98,11 +102,15 @@
           "transfer": "Using it in a new situation"
         },
         "kavramBaslik": "Concepts encountered",
-        "kavramAciklama": "Seeing a concept is not learning it; the status shows how well it has settled.",
+        "kavramAciklama": "Each concept shows its learning step: introduced, recognised in context, recalled, used in a new context. Seeing a concept is not learning it; a step advances with correct answers on later days.",
         "kavramBos": "No concepts tracked yet.",
+        "hedefDogruYanlis": "{dogru} correct, {yanlis} wrong",
+        "turAciklama": "Which story genres your child read.",
         "atasozuBaslik": "Proverbs and idioms",
+        "atasozuAciklama": "Proverbs and idioms met in stories, with how well they have settled.",
         "atasozuBos": "No proverbs or idioms tracked yet.",
         "kelimeBaslik": "New words",
+        "kelimeAciklama": "New words met in stories, with how well they have settled.",
         "kelimeBos": "No words tracked yet.",
         "hikayeden": "in the story {baslik}"
       },

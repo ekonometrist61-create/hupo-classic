@@ -5,14 +5,14 @@
 import { useState } from "react";
 import { useTranslations } from "next-intl";
 
-import { adminCall } from "@/components/yonetim/useAdminRpc";
+import { adminCall, useAdminRpc } from "@/components/yonetim/useAdminRpc";
 import type { OkumaDurum } from "@/lib/okuma/okuma";
 import ErrorNote from "../panel/ErrorNote";
 import ModalShell from "../panel/ModalShell";
 import { dangerBtn, outlineBtn } from "../panel/styles";
 import HikayeDuzenle from "./HikayeDuzenle";
 import { useHataMetni } from "./ortak";
-import type { Paket, SurumSatiri } from "./tipler";
+import type { Paket, SurumSatiri, TopluYaniti } from "./tipler";
 
 type SilHedefi = "surum" | "hikaye";
 
@@ -34,7 +34,32 @@ export default function SurumAraclari({ satir, durum, paket, onDegisti, onSilind
   const [islemde, setIslemde] = useState(false);
   const [hataMesaji, setHataMesaji] = useState<string | null>(null);
 
-  const surumSilinebilir = (durum === "taslak" || durum === "arsiv") && !(satir.oturum_sayisi && satir.oturum_sayisi > 0);
+  const oturumlu = !!satir.oturum_sayisi && satir.oturum_sayisi > 0;
+  const surumSilinebilir = (durum === "taslak" || durum === "arsiv") && !oturumlu;
+  const surumNedeni = surumSilinebilir
+    ? null
+    : oturumlu
+      ? t("oturumluIpucu", { n: satir.oturum_sayisi ?? 0 })
+      : durum === "yayinda"
+        ? t("yayindaIpucu")
+        : t("incelemedeIpucu");
+
+  // Hikâyenin tümü için kesin cevap sunucudan gelir (kuru çalıştırma: hiçbir şey silinmez): diğer sürümlerin
+  // durumu ve oturumları bu satırdan görünmez. Sunucu henüz kurulu değilse düğme açık kalır, kural işlemde yine denetlenir.
+  const hikayeKontrol = useAdminRpc<TopluYaniti>("okuma_toplu_islem", {
+    p_hikaye_idler: [satir.hikaye_id],
+    p_islem: "sil",
+    p_kuru: true,
+  });
+  const hikayeSonuc = hikayeKontrol.data?.sonuclar[0];
+  const hikayeSilinebilir = hikayeKontrol.missing || (!hikayeKontrol.loading && !hikayeKontrol.error && hikayeSonuc?.sonuc === "basarili");
+  const hikayeNedeni = hikayeKontrol.loading
+    ? t("kontrolEdiliyor")
+    : hikayeKontrol.error && !hikayeKontrol.missing
+      ? hata(hikayeKontrol.error)
+      : hikayeSilinebilir
+        ? null
+        : hata(hikayeSonuc?.neden ?? "");
 
   const sil = async () => {
     if (!onay) return;
@@ -63,18 +88,37 @@ export default function SurumAraclari({ satir, durum, paket, onDegisti, onSilind
         <button type="button" className={outlineBtn} disabled={islemde} onClick={() => setDuzenle((d) => !d)}>
           {duzenle ? t("duzenleKapat") : t("duzenle")}
         </button>
-        <button type="button" className={outlineBtn} disabled={islemde || !surumSilinebilir} onClick={() => setOnay("surum")}>
+        <button
+          type="button"
+          className={outlineBtn}
+          disabled={islemde || !surumSilinebilir}
+          aria-describedby={surumNedeni ? "ha-surum-neden" : undefined}
+          onClick={() => setOnay("surum")}
+        >
           {t("surumSil")}
         </button>
-        <button type="button" className={outlineBtn} disabled={islemde} onClick={() => setOnay("hikaye")}>
+        <button
+          type="button"
+          className={outlineBtn}
+          disabled={islemde || !hikayeSilinebilir}
+          aria-describedby={hikayeNedeni ? "ha-hikaye-neden" : undefined}
+          onClick={() => setOnay("hikaye")}
+        >
           {t("hikayeSil")}
         </button>
       </div>
-      {!surumSilinebilir && (
-        <p className="mt-2 text-theme-xs text-gray-500 dark:text-gray-400">
-          {satir.oturum_sayisi && satir.oturum_sayisi > 0 ? t("oturumluIpucu", { n: satir.oturum_sayisi }) : t("silmeIpucu")}
-        </p>
-      )}
+      <ul className="mt-2 space-y-1 text-theme-xs text-gray-600 dark:text-gray-300">
+        {surumNedeni && (
+          <li id="ha-surum-neden">
+            <span className="font-semibold">{t("surumSil")}:</span> {t("pasifNeden", { neden: surumNedeni })}
+          </li>
+        )}
+        {hikayeNedeni && (
+          <li id="ha-hikaye-neden">
+            <span className="font-semibold">{t("hikayeSil")}:</span> {t("pasifNeden", { neden: hikayeNedeni })}
+          </li>
+        )}
+      </ul>
       <div aria-live="polite" className="mt-3">
         <ErrorNote message={hataMesaji} />
       </div>
@@ -85,7 +129,10 @@ export default function SurumAraclari({ satir, durum, paket, onDegisti, onSilind
           slug={satir.slug}
           tur={paket.hikaye.tur}
           onKapat={() => setDuzenle(false)}
-          onKaydedildi={onDegisti}
+          onKaydedildi={() => {
+            onDegisti();
+            hikayeKontrol.reload();
+          }}
         />
       )}
 

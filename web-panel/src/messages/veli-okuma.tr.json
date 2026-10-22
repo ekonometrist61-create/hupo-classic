@@ -47,12 +47,15 @@
         "baslik": "Soru doğruluğu (işlem türüne göre)",
         "aciklama": "Çocuğunuz hangi tür anlama sorularında rahat, hangilerinde destek isteyebilir?",
         "deger": "%{oran} · {soru} sorudan {dogru} doğru",
+        "dagilim": "%{oran} · {dogru} doğru, {yanlis} yanlış",
+        "toplamBaslik": "Tüm sorularda doğru ve yanlış",
+        "toplam": "{soru} sorudan {dogru} doğru, {yanlis} yanlış (%{oran})",
         "yetersiz": "Henüz yeterli soru çözülmedi (en az 3 soru gerekir)",
         "not": "Bu oranlar çocuğunuzu etiketlemez; hangi tür soruda birlikte konuşmanın işe yarayacağını gösterir."
       },
-      "tema": { "baslik": "Okuduğu temalar", "bos": "Bu dönemde tema verisi yok." },
-      "deger": { "baslik": "Maarif değerleri", "bos": "Bu dönemde değer verisi yok." },
-      "ders": { "baslik": "Ders bağlantısı", "bos": "Bu dönemde ders verisi yok." },
+      "tema": { "baslik": "Okuduğu temalar", "aciklama": "Çocuğunuzun en çok hangi konulardaki hikâyeleri okuduğu.", "bos": "Bu dönemde tema verisi yok." },
+      "deger": { "baslik": "Maarif değerleri", "aciklama": "Okuduğu hikâyelerin işlediği değerler; çocuğunuzun hangi değerlerle karşılaştığını gösterir, değer \"kazandığını\" ölçmez.", "bos": "Bu dönemde değer verisi yok." },
+      "ders": { "baslik": "Ders bağlantısı", "aciklama": "Hikâyelerin okul derslerindeki hangi konularla ilişkili olduğu.", "bos": "Bu dönemde ders verisi yok." },
       "hedefler": {
         "baslik": "Öğrenme hedefleri",
         "aciklama": "Hikâyeyi okumak bir hedefi öğrenmek demek değildir. \"Hatırladı\" ve \"Farklı bağlamda kullandı\" yalnızca sonraki günlerde doğru yanıt verildiğinde görünür.",
@@ -69,6 +72,7 @@
         "kavram": "Kavram zorluğu"
       },
       "sure": {
+        "toplamBaslik": "Toplam okuma süresi",
         "baslik": "Ortalama okuma süresi",
         "deger": "{dk} dk",
         "yok": "Veri yok",
@@ -98,11 +102,15 @@
           "transfer": "Yeni durumda kullanma"
         },
         "kavramBaslik": "Karşılaştığı kavramlar",
-        "kavramAciklama": "Kavramı görmek öğrenmek demek değildir; durum etiketi ne kadar pekiştiğini söyler.",
+        "kavramAciklama": "Her kavramın yanında öğrenme basamağı görünür: tanıştı, bağlamda tanıdı, hatırladı, farklı bağlamda kullandı. Kavramı görmek öğrenmek demek değildir; basamak sonraki günlerde verilen doğru cevaplarla ilerler.",
         "kavramBos": "Henüz izlenen bir kavram yok.",
+        "hedefDogruYanlis": "{dogru} doğru, {yanlis} yanlış",
+        "turAciklama": "Çocuğunuzun hangi hikâye türlerini okuduğu.",
         "atasozuBaslik": "Atasözleri ve deyimler",
+        "atasozuAciklama": "Hikâyelerde karşılaştığı atasözleri ve deyimler ile pekişme durumları.",
         "atasozuBos": "Henüz izlenen atasözü veya deyim yok.",
         "kelimeBaslik": "Yeni sözcükler",
+        "kelimeAciklama": "Hikâyelerde karşılaştığı yeni sözcükler ve pekişme durumları.",
         "kelimeBos": "Henüz izlenen sözcük yok.",
         "hikayeden": "{baslik} hikâyesinde"
       },

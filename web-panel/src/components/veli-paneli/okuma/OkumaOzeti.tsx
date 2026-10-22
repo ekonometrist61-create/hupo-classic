@@ -10,6 +10,7 @@ import { Link } from "@/i18n/navigation";
 import { BECERILER } from "@/lib/okuma/okuma";
 import ConsentCard from "../ConsentCard";
 import OkumaGelisimKartlari from "./OkumaGelisimKartlari";
+import ZorlukTablosu from "./ZorlukTablosu";
 import { HEDEF_DURUMLARI, type DagilimKalemi, type OkumaOzet, type OkumaOzetYaniti } from "./okumaTipleri";
 
 const DONEMLER = [7, 30, 90] as const;
@@ -141,7 +142,7 @@ function OzetGovdesi({ ozet }: { ozet: OkumaOzet }) {
                     <div className="flex flex-wrap items-baseline justify-between gap-x-3 text-sm">
                       <span className="font-medium text-gray-800 dark:text-gray-100">{t(`beceri.${b}`)}</span>
                       <span className="text-gray-700 dark:text-gray-300">
-                        {yeterli ? t("dogruluk.deger", { oran: d.oran ?? 0, dogru: d.dogru ?? 0, soru: d.soru ?? 0 }) : t("dogruluk.yetersiz")}
+                        {yeterli ? t("dogruluk.dagilim", { oran: d.oran ?? 0, dogru: d.dogru ?? 0, yanlis: d.yanlis ?? Math.max(0, (d.soru ?? 0) - (d.dogru ?? 0)) }) : t("dogruluk.yetersiz")}
                       </span>
                     </div>
                     {yeterli && (
@@ -153,13 +154,24 @@ function OzetGovdesi({ ozet }: { ozet: OkumaOzet }) {
                 );
               })}
             </ul>
+            {ozet.dogruluk_toplami?.yeterli && (
+              <p className="mt-3 text-sm text-gray-800 dark:text-gray-100">
+                <span className="font-medium">{t("dogruluk.toplamBaslik")}: </span>
+                {t("dogruluk.toplam", {
+                  soru: ozet.dogruluk_toplami.soru ?? 0,
+                  dogru: ozet.dogruluk_toplami.dogru ?? 0,
+                  yanlis: ozet.dogruluk_toplami.yanlis ?? 0,
+                  oran: ozet.dogruluk_toplami.oran ?? 0,
+                })}
+              </p>
+            )}
             <p className="mt-3 text-theme-xs text-gray-600 dark:text-gray-400">{t("dogruluk.not")}</p>
           </Alt>
 
           <div className="grid gap-6 md:grid-cols-2">
-            <Dagilim baslik={t("tema.baslik")} bos={t("tema.bos")} kalemler={ozet.tema_dagilimi} adAl={(k) => k.ad ?? k.tema ?? ""} />
-            <Dagilim baslik={t("deger.baslik")} bos={t("deger.bos")} kalemler={ozet.deger_dagilimi} adAl={(k) => k.ad ?? k.deger ?? ""} />
-            <Dagilim baslik={t("ders.baslik")} bos={t("ders.bos")} kalemler={ozet.ders_dagilimi} adAl={(k) => k.ad ?? k.ders ?? ""} />
+            <Dagilim baslik={t("tema.baslik")} aciklama={t("tema.aciklama")} bos={t("tema.bos")} kalemler={ozet.tema_dagilimi} adAl={(k) => k.ad ?? k.tema ?? ""} />
+            <Dagilim baslik={t("deger.baslik")} aciklama={t("deger.aciklama")} bos={t("deger.bos")} kalemler={ozet.deger_dagilimi} adAl={(k) => k.ad ?? k.deger ?? ""} />
+            <Dagilim baslik={t("ders.baslik")} aciklama={t("ders.aciklama")} bos={t("ders.bos")} kalemler={ozet.ders_dagilimi} adAl={(k) => k.ad ?? k.ders ?? ""} />
           </div>
 
           <OkumaGelisimKartlari ozet={ozet} />
@@ -195,32 +207,16 @@ function OzetGovdesi({ ozet }: { ozet: OkumaOzet }) {
             {(ozet.zorluk_seyri?.length ?? 0) === 0 ? (
               <p className="text-sm text-gray-600 dark:text-gray-300">{t("zorluk.bos")}</p>
             ) : (
-              <div className="overflow-x-auto">
-                <table className="min-w-full text-left text-sm">
-                  <thead>
-                    <tr className="text-theme-xs text-gray-600 dark:text-gray-400">
-                      <th scope="col" className="py-1 pe-4 font-medium">{t("zorluk.hafta")}</th>
-                      <th scope="col" className="py-1 pe-4 font-medium">{t("zorluk.hikaye")}</th>
-                      <th scope="col" className="py-1 pe-4 font-medium">{t("zorluk.okuma")}</th>
-                      <th scope="col" className="py-1 font-medium">{t("zorluk.kavram")}</th>
-                    </tr>
-                  </thead>
-                  <tbody className="divide-y divide-gray-100 text-gray-700 dark:divide-gray-800 dark:text-gray-300">
-                    {ozet.zorluk_seyri?.map((z) => (
-                      <tr key={z.hafta}>
-                        <td className="py-2 pe-4">{new Intl.DateTimeFormat(locale === "en" ? "en-US" : "tr-TR", { day: "numeric", month: "short" }).format(new Date(z.hafta))}</td>
-                        <td className="py-2 pe-4">{z.hikaye}</td>
-                        <td className="py-2 pe-4">{z.ort_okuma_zorlugu ?? "-"}</td>
-                        <td className="py-2">{z.ort_kavram_zorlugu ?? "-"}</td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </div>
+              <ZorlukTablosu haftalar={ozet.zorluk_seyri ?? []} />
             )}
           </Alt>
 
-          <div className="grid gap-3 sm:grid-cols-2">
+          <div className="grid gap-3 sm:grid-cols-3">
+            <Olcu
+              etiket={t("sure.toplamBaslik")}
+              deger={ozet.toplam_sure_dk === undefined ? t("sure.yok") : t("sure.deger", { dk: ozet.toplam_sure_dk })}
+              not={t("sure.not")}
+            />
             <Olcu
               etiket={t("sure.baslik")}
               deger={ozet.ortalama_sure_dk === null || ozet.ortalama_sure_dk === undefined ? t("sure.yok") : t("sure.deger", { dk: ozet.ortalama_sure_dk })}
@@ -255,12 +251,12 @@ function OzetGovdesi({ ozet }: { ozet: OkumaOzet }) {
   );
 }
 
-function Dagilim({ baslik, bos, kalemler, adAl }: { baslik: string; bos: string; kalemler: DagilimKalemi[] | undefined; adAl: (k: DagilimKalemi) => string }) {
+function Dagilim({ baslik, aciklama, bos, kalemler, adAl }: { baslik: string; aciklama?: string; bos: string; kalemler: DagilimKalemi[] | undefined; adAl: (k: DagilimKalemi) => string }) {
   const t = useTranslations("veliPaneli.okuma");
   const liste = kalemler ?? [];
   const en = Math.max(1, ...liste.map((k) => k.hikaye));
   return (
-    <Alt baslik={baslik}>
+    <Alt baslik={baslik} aciklama={aciklama}>
       {liste.length === 0 ? (
         <p className="text-sm text-gray-600 dark:text-gray-300">{bos}</p>
       ) : (

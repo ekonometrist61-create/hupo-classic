@@ -176,7 +176,7 @@ export default function SurumDetay({ satir, onKapat, onDegisti }: Props) {
               {t("detay.onizlemeBaslik")}
             </summary>
             <div className="mt-3">
-              <SurumOnizleme paket={icerik.data.paket} />
+              <SurumOnizleme paket={icerik.data.paket} slug={satir.slug} />
             </div>
           </details>
         </div>

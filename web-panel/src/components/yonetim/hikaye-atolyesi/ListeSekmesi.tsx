@@ -6,10 +6,11 @@ import { useTranslations } from "next-intl";
 
 import { useAdminRpc } from "@/components/yonetim/useAdminRpc";
 import { OKUMA_DURUMLARI, type OkumaDurum } from "@/lib/okuma/okuma";
-import { inputClass, labelClass, linkBtn, tdClass, thClass } from "../panel/styles";
+import { inputClass, labelClass, linkBtn, outlineBtn, tdClass, thClass } from "../panel/styles";
 import { VeriDurumu } from "./ortak";
 import SurumDetay from "./SurumDetay";
-import type { ListeYaniti, SurumSatiri } from "./tipler";
+import TopluIslemModal, { type TopluHikaye } from "./TopluIslemModal";
+import type { ListeYaniti, SurumSatiri, TopluIslem } from "./tipler";
 
 const LIMIT = 200;
 const SINIFLAR = [1, 2, 3, 4, 5, 6, 7, 8];
@@ -22,6 +23,9 @@ export default function ListeSekmesi() {
   const [tema, setTema] = useState("");
   const [deger, setDeger] = useState("");
   const [secili, setSecili] = useState<SurumSatiri | null>(null);
+  // Toplu işlem: seçim hikâye kimliğiyle tutulur (aynı hikâyenin birden çok sürüm satırı tek seçimdir).
+  const [isaretli, setIsaretli] = useState<Set<string>>(new Set());
+  const [toplu, setToplu] = useState<TopluIslem | null>(null);
 
   const liste = useAdminRpc<ListeYaniti>("okuma_yonetim_liste", {
     p_durum: durum || null,
@@ -40,6 +44,34 @@ export default function ListeSekmesi() {
     (s) => (!tema || (s.temalar ?? []).includes(tema)) && (!deger || s.ana_deger === deger || s.yardimci_deger === deger),
   );
   const toplam = liste.data?.toplam ?? 0;
+
+  const gorunenHikayeler = useMemo(() => {
+    const harita = new Map<string, TopluHikaye>();
+    for (const s of gorunen) if (!harita.has(s.hikaye_id)) harita.set(s.hikaye_id, { id: s.hikaye_id, baslik: s.baslik, slug: s.slug });
+    return [...harita.values()];
+  }, [gorunen]);
+  // Süzgeç değişince görünmeyen hikâyeler seçimden düşer; kullanıcının görmediği şey işlenmez.
+  const gecerliSecim = gorunenHikayeler.filter((h) => isaretli.has(h.id));
+  const hepsiSecili = gorunenHikayeler.length > 0 && gecerliSecim.length === gorunenHikayeler.length;
+  const degistirSecim = (id: string) =>
+    setIsaretli((onceki) => {
+      const yeni = new Set(onceki);
+      if (yeni.has(id)) yeni.delete(id);
+      else yeni.add(id);
+      return yeni;
+    });
+  const tumunuSec = () => setIsaretli(hepsiSecili ? new Set() : new Set(gorunenHikayeler.map((h) => h.id)));
+  const secimKutusu = (s: SurumSatiri) => (
+    <label className="inline-flex min-h-11 min-w-11 cursor-pointer items-center justify-center">
+      <input
+        type="checkbox"
+        className="size-4"
+        checked={isaretli.has(s.hikaye_id)}
+        onChange={() => degistirSecim(s.hikaye_id)}
+        aria-label={t("toplu.sec", { baslik: s.baslik })}
+      />
+    </label>
+  );
 
   const etiketler = (s: SurumSatiri) => (s.temalar ?? []).join(", ") || "-";
   const degerler = (s: SurumSatiri) => [s.ana_deger, s.yardimci_deger].filter(Boolean).join(" · ") || "-";
@@ -95,6 +127,26 @@ export default function ListeSekmesi() {
           {toplam > satirlar.length && (
             <p className="mb-3 text-sm text-warning-700 dark:text-warning-400">{t("liste.sinirUyari", { limit: satirlar.length })}</p>
           )}
+          {gorunen.length > 0 && (
+            <div className="mb-3 flex flex-wrap items-center gap-3 rounded-xl border border-gray-200 p-3 dark:border-gray-800">
+              <label className="inline-flex min-h-11 cursor-pointer items-center gap-2 text-sm text-gray-700 dark:text-gray-300">
+                <input type="checkbox" className="size-4" checked={hepsiSecili} onChange={tumunuSec} />
+                {t("toplu.hepsi")}
+              </label>
+              <span className="text-sm text-gray-600 dark:text-gray-300" aria-live="polite">
+                {t("toplu.secilen", { n: gecerliSecim.length })}
+              </span>
+              <div className="flex flex-wrap gap-3 sm:ms-auto">
+                <button type="button" className={outlineBtn} disabled={gecerliSecim.length === 0} onClick={() => setToplu("arsiv")}>
+                  {t("toplu.arsivDugme")}
+                </button>
+                <button type="button" className={outlineBtn} disabled={gecerliSecim.length === 0} onClick={() => setToplu("sil")}>
+                  {t("toplu.silDugme")}
+                </button>
+              </div>
+              <p className="basis-full text-theme-xs text-gray-500 dark:text-gray-400">{t("toplu.kural")}</p>
+            </div>
+          )}
           {gorunen.length === 0 ? (
             <p className="py-6 text-sm text-gray-600 dark:text-gray-300">{satirlar.length === 0 ? t("liste.bos") : t("liste.suzgecBos")}</p>
           ) : (
@@ -104,7 +156,10 @@ export default function ListeSekmesi() {
                 {gorunen.map((s) => (
                   <li key={s.surum_id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
                     <div className="flex flex-wrap items-start justify-between gap-2">
-                      <p className="min-w-0 font-medium wrap-break-word text-gray-800 dark:text-white/90">{s.baslik}</p>
+                      <div className="flex min-w-0 items-start gap-1">
+                        {secimKutusu(s)}
+                        <p className="min-w-0 pt-3 font-medium wrap-break-word text-gray-800 dark:text-white/90">{s.baslik}</p>
+                      </div>
                       <span className="text-theme-xs font-medium text-gray-700 dark:text-gray-300">{t(`durumlar.${s.durum}`)}</span>
                     </div>
                     <p className="text-theme-xs wrap-break-word text-gray-500 dark:text-gray-400">
@@ -138,6 +193,7 @@ export default function ListeSekmesi() {
                 <table className="min-w-full text-left text-sm">
                   <thead>
                     <tr>
+                      <th className={thClass}><span className="sr-only">{t("toplu.secKolon")}</span></th>
                       <th className={thClass}>{t("liste.kolonBaslik")}</th>
                       <th className={thClass}>{t("liste.durum")}</th>
                       <th className={thClass}>{t("liste.sinif")}</th>
@@ -151,6 +207,7 @@ export default function ListeSekmesi() {
                   <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
                     {gorunen.map((s) => (
                       <tr key={s.surum_id}>
+                        <td className={tdClass}>{secimKutusu(s)}</td>
                         <td className={`${tdClass} max-w-xs`}>
                           <p className="font-medium wrap-break-word text-gray-800 dark:text-white/90">{s.baslik}</p>
                           <p className="text-theme-xs text-gray-500 dark:text-gray-400">{s.slug} · {t("detay.surum", { no: s.surum_no })}</p>
@@ -174,6 +231,21 @@ export default function ListeSekmesi() {
             </>
           )}
         </>
+      )}
+
+      {toplu && gecerliSecim.length > 0 && (
+        <TopluIslemModal
+          islem={toplu}
+          hikayeler={gecerliSecim}
+          onKapat={(degisti) => {
+            setToplu(null);
+            if (degisti) {
+              setIsaretli(new Set());
+              setSecili(null);
+              liste.reload();
+            }
+          }}
+        />
       )}
 
       {secili && (

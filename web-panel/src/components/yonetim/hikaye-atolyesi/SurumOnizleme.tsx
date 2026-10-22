@@ -79,13 +79,14 @@ function PartList({ parcalar, b, anahtarOn }: { parcalar: Parca[]; b: Baglam; an
   );
 }
 
-export default function SurumOnizleme({ paket }: { paket: Paket }) {
+export default function SurumOnizleme({ paket, slug }: { paket: Paket; slug?: string }) {
   const t = useTranslations("yonetim.hikayeAtolyesi.onizleme");
   const b: Baglam = { paket, derinlik: 0 };
   return (
     <div className="space-y-4">
       <p className="text-theme-xs text-gray-500 dark:text-gray-400">{t("not", { kahraman: KAHRAMAN.yalin, yoldas: YOLDAS.yalin })}</p>
       <h5 className="text-base font-semibold text-gray-800 dark:text-white/90">{paket.hikaye.baslik}</h5>
+      <SahneGorseliBilgisi slug={slug ?? paket.hikaye.slug} />
       <ol className="space-y-3">
         {paket.sayfalar.map((s, idx) => (
           <li key={idx} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
@@ -126,5 +127,19 @@ export default function SurumOnizleme({ paket }: { paket: Paket }) {
         </ol>
       </div>
     </div>
+  );
+}
+
+/** Yalnız bilgi: sahne görseli uygulama paketinde durur (sunucuda görsel alanı yok), panelden yüklenmez
+ *  ve varlığı panelden denetlenemez. Dosya yoksa uygulama tür rengini kullanır. */
+function SahneGorseliBilgisi({ slug }: { slug?: string }) {
+  const t = useTranslations("yonetim.hikayeAtolyesi.onizleme");
+  if (!slug) return null;
+  return (
+    <p className="rounded-lg bg-gray-50 px-3 py-2 text-theme-xs text-gray-600 dark:bg-white/5 dark:text-gray-300">
+      <span className="font-semibold">{t("sahneGorseli")}:</span> <code className="break-all">{`assets/okuma/sahneler/${slug}.jpg`}</code>
+      {" · "}
+      {t("sahneGorseliNot")}
+    </p>
   );
 }

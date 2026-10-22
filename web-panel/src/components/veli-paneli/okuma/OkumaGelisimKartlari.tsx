@@ -29,6 +29,7 @@ function HedefListesi({ satirlar, bos }: { satirlar: HedefSatiri[] | undefined; 
           <span className="text-theme-xs text-gray-600 dark:text-gray-400">
             {(HEDEF_DURUMLARI as readonly string[]).includes(h.durum) ? t(`hedefDurum.${h.durum}`) : h.durum}
             {h.hikaye ? ` · ${t("yeni.hikayeden", { baslik: h.hikaye })}` : ""}
+            {(h.soru ?? 0) > 0 ? ` · ${t("yeni.hedefDogruYanlis", { dogru: h.dogru ?? 0, yanlis: h.yanlis ?? 0 })}` : ""}
           </span>
         </li>
       ))}
@@ -68,7 +69,7 @@ export default function OkumaGelisimKartlari({ ozet }: { ozet: OkumaOzet }) {
       </Kart>
 
       <div className="grid gap-6 md:grid-cols-2">
-        <Kart baslik={t("yeni.turBaslik")}>
+        <Kart baslik={t("yeni.turBaslik")} aciklama={t("yeni.turAciklama")}>
           {turler.length === 0 ? (
             <p className="text-sm text-gray-600 dark:text-gray-300">{t("yeni.turBos")}</p>
           ) : (
@@ -97,7 +98,7 @@ export default function OkumaGelisimKartlari({ ozet }: { ozet: OkumaOzet }) {
                 <li key={o} className="flex flex-wrap items-baseline justify-between gap-x-3">
                   <span className="text-gray-800 dark:text-gray-100">{t(`yeni.olcme.${o}`)}</span>
                   <span className="text-gray-700 dark:text-gray-300">
-                    {yeterli ? t("dogruluk.deger", { oran: d.oran ?? 0, dogru: d.dogru ?? 0, soru: d.soru ?? 0 }) : t("dogruluk.yetersiz")}
+                    {yeterli ? t("dogruluk.dagilim", { oran: d.oran ?? 0, dogru: d.dogru ?? 0, yanlis: d.yanlis ?? Math.max(0, (d.soru ?? 0) - (d.dogru ?? 0)) }) : t("dogruluk.yetersiz")}
                   </span>
                 </li>
               );
@@ -109,10 +110,10 @@ export default function OkumaGelisimKartlari({ ozet }: { ozet: OkumaOzet }) {
       <Kart baslik={t("yeni.kavramBaslik")} aciklama={t("yeni.kavramAciklama")}>
         <HedefListesi satirlar={ozet.kavramlar} bos={t("yeni.kavramBos")} />
       </Kart>
-      <Kart baslik={t("yeni.atasozuBaslik")}>
+      <Kart baslik={t("yeni.atasozuBaslik")} aciklama={t("yeni.atasozuAciklama")}>
         <HedefListesi satirlar={ozet.atasozleri} bos={t("yeni.atasozuBos")} />
       </Kart>
-      <Kart baslik={t("yeni.kelimeBaslik")}>
+      <Kart baslik={t("yeni.kelimeBaslik")} aciklama={t("yeni.kelimeAciklama")}>
         <HedefListesi satirlar={ozet.kelimeler} bos={t("yeni.kelimeBos")} />
       </Kart>
     </div>

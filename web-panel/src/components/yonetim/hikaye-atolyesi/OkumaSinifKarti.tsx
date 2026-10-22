@@ -8,7 +8,8 @@ import { useTranslations } from "next-intl";
 
 import { useAdminRpc } from "@/components/yonetim/useAdminRpc";
 import OkumaGelisimKartlari from "@/components/veli-paneli/okuma/OkumaGelisimKartlari";
-import type { HedefSatiri, OkumaOzet } from "@/components/veli-paneli/okuma/okumaTipleri";
+import ZorlukTablosu from "@/components/veli-paneli/okuma/ZorlukTablosu";
+import type { HedefSatiri, OkumaOzet, SoruDogrulugu, ZorlukHaftasi } from "@/components/veli-paneli/okuma/okumaTipleri";
 import { BECERILER } from "@/lib/okuma/okuma";
 import { turEtiketi } from "@/lib/okuma/turler";
 import { cardClass, inputClass, labelClass } from "../panel/styles";
@@ -23,7 +24,9 @@ interface Ozet {
   ozet: null | {
     oturum_sayisi: number;
     tamamlama_orani: number | null;
-    soru_dogrulugu: Record<string, { yeterli: boolean; soru?: number; oran?: number }>;
+    soru_dogrulugu: Record<string, SoruDogrulugu>;
+    dogruluk_toplami?: SoruDogrulugu;
+    zorluk_seyri?: ZorlukHaftasi[];
     zorlanilan_hedefler: { hedef_id: string; etiket: string; yanlis_orani: number; ogrenci_sayisi: number }[];
     tema_ilgisi: { tema: string; ad: string | null; ogrenci_sayisi: number; hikaye_sayisi: number }[];
     okunan_kelime?: number;
@@ -31,7 +34,7 @@ interface Ozet {
     tur_dagilimi?: { tur: string; ogrenci_sayisi: number; hikaye_sayisi: number; oturum: number }[];
     okunan_hikayeler?: { hikaye_id: string; baslik: string; tur: string; ogrenci_sayisi: number; oturum: number; dogru_orani: number | null }[];
     deger_dagilimi?: { deger: string; ad: string | null; ogrenci_sayisi: number; hikaye_sayisi: number }[];
-    olcme_turu_dogrulugu?: Record<string, { yeterli: boolean; soru?: number; oran?: number }>;
+    olcme_turu_dogrulugu?: Record<string, SoruDogrulugu>;
     kavramlar?: SinifHedef[];
     atasozleri?: SinifHedef[];
     kelimeler?: SinifHedef[];
@@ -41,6 +44,23 @@ interface Ozet {
 interface SinifHedef extends Pick<HedefSatiri, "hedef_id" | "etiket" | "tur"> {
   ogrenci_sayisi: number;
   ogrenen_sayisi: number | null;
+  /** Kümülatif basamaklar (20261078+); her biri min-N altında null. */
+  taniyan_sayisi?: number | null;
+  hatirlayan_sayisi?: number | null;
+  aktaran_sayisi?: number | null;
+}
+
+type Cevirici = (anahtar: string, degerler?: Record<string, string | number>) => string;
+
+// Doğru/yanlış dağılımı: yeterli değilse "gözlem yok"; sayılar yoksa (eski sunucu) yalnız oran
+function dogrulukMetni(t: Cevirici, x: SoruDogrulugu | undefined): string {
+  if (!x?.yeterli || x.oran === undefined) return t("gozlemYok");
+  if (x.dogru === undefined) return `%${x.oran}`;
+  return t("dogrulukDeger", { oran: x.oran, dogru: x.dogru, yanlis: x.yanlis ?? Math.max(0, (x.soru ?? 0) - x.dogru) });
+}
+
+function Aciklama({ children }: { children: React.ReactNode }) {
+  return <p className="mt-0.5 text-theme-xs text-gray-600 dark:text-gray-400">{children}</p>;
 }
 
 interface OgrenciListesi {
@@ -126,17 +146,34 @@ function Govde({ d }: { d: Ozet }) {
 
       <div>
         <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100">{t("dogruluk")}</h4>
+        <Aciklama>{t("dogrulukAciklama")}</Aciklama>
         <ul className="mt-2 grid gap-2 sm:grid-cols-2">
           {BECERILER.map((b) => {
             const x = o.soru_dogrulugu?.[b];
             return (
-              <li key={b} className="flex items-baseline justify-between gap-3 rounded-lg border border-gray-200 px-3 py-2 text-sm dark:border-gray-800">
+              <li key={b} className="flex flex-wrap items-baseline justify-between gap-x-3 rounded-lg border border-gray-200 px-3 py-2 text-sm dark:border-gray-800">
                 <span className="text-gray-700 dark:text-gray-300">{tb(b)}</span>
-                <span className="font-semibold text-gray-800 dark:text-white/90">{x?.yeterli && x.oran !== undefined ? `%${x.oran}` : t("gozlemYok")}</span>
+                <span className="font-semibold text-gray-800 dark:text-white/90">{dogrulukMetni(t, x)}</span>
               </li>
             );
           })}
         </ul>
+        {o.dogruluk_toplami?.yeterli && (
+          <p className="mt-2 text-sm text-gray-800 dark:text-gray-100">
+            <span className="font-medium">{t("dogrulukToplam")}: </span>
+            {dogrulukMetni(t, o.dogruluk_toplami)}
+          </p>
+        )}
+      </div>
+
+      <div>
+        <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100">{t("zorlukBaslik")}</h4>
+        <Aciklama>{t("zorlukAciklama", { min: d.min_n })}</Aciklama>
+        {(o.zorluk_seyri?.length ?? 0) === 0 ? (
+          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{t("zorlukYok", { min: d.min_n })}</p>
+        ) : (
+          <div className="mt-2"><ZorlukTablosu haftalar={o.zorluk_seyri ?? []} ogrenciBasligi={t("zorlukOgrenci")} /></div>
+        )}
       </div>
 
       <div>
@@ -178,12 +215,13 @@ function Govde({ d }: { d: Ozet }) {
   );
 }
 
-function SinifHedefListesi({ baslik, bos, satirlar }: { baslik: string; bos: string; satirlar: SinifHedef[] | undefined }) {
+function SinifHedefListesi({ baslik, aciklama, bos, satirlar }: { baslik: string; aciklama?: string; bos: string; satirlar: SinifHedef[] | undefined }) {
   const t = useTranslations("yonetim.okumaSinif");
   const liste = satirlar ?? [];
   return (
     <div>
       <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100">{baslik}</h4>
+      {aciklama && <Aciklama>{aciklama}</Aciklama>}
       {liste.length === 0 ? (
         <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{bos}</p>
       ) : (
@@ -192,7 +230,11 @@ function SinifHedefListesi({ baslik, bos, satirlar }: { baslik: string; bos: str
             <li key={h.hedef_id} className="flex flex-wrap items-baseline justify-between gap-2 py-2">
               <span className="min-w-0 wrap-break-word text-gray-800 dark:text-gray-100">{h.etiket}</span>
               <span className="text-theme-xs text-gray-600 dark:text-gray-400">
-                {h.ogrenen_sayisi === null ? t("hedefGorenSayisi", { ogrenci: h.ogrenci_sayisi }) : t("hedefOgrenenSayisi", { ogrenci: h.ogrenci_sayisi, ogrenen: h.ogrenen_sayisi })}
+                {t("hedefGorenSayisi", { ogrenci: h.ogrenci_sayisi })}
+                {h.taniyan_sayisi != null && ` · ${t("basTaniyan", { n: h.taniyan_sayisi })}`}
+                {h.hatirlayan_sayisi != null && ` · ${t("basHatirlayan", { n: h.hatirlayan_sayisi })}`}
+                {h.aktaran_sayisi != null && ` · ${t("basAktaran", { n: h.aktaran_sayisi })}`}
+                {h.taniyan_sayisi === undefined && h.ogrenen_sayisi != null && ` · ${t("hedefOgrenenSayisi", { ogrenci: h.ogrenci_sayisi, ogrenen: h.ogrenen_sayisi })}`}
               </span>
             </li>
           ))}
@@ -221,11 +263,13 @@ function SinifGelisim({ o, minN }: { o: NonNullable<Ozet["ozet"]>; minN: number 
             <p className="text-theme-xs text-gray-600 dark:text-gray-400">{t("toplamSure")}</p>
             <p className="text-xl font-semibold text-gray-800 dark:text-white/90">{t("dk", { dk: o.toplam_sure_dk ?? 0 })}</p>
           </div>
+          <div className="col-span-2 md:col-span-3"><Aciklama>{t("kelimeAciklama")}</Aciklama></div>
         </div>
       )}
 
       <div>
         <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100">{t("okunanHikayeler")}</h4>
+        <Aciklama>{t("hikayelerAciklama")}</Aciklama>
         {hikayeler.length === 0 ? (
           <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{t("okunanHikayelerYok", { min: minN })}</p>
         ) : (
@@ -247,6 +291,7 @@ function SinifGelisim({ o, minN }: { o: NonNullable<Ozet["ozet"]>; minN: number 
 
       <div>
         <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100">{t("turDagilimi")}</h4>
+        <Aciklama>{t("turAciklama")}</Aciklama>
         {turler.length === 0 ? (
           <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{t("turYok", { min: minN })}</p>
         ) : (
@@ -268,20 +313,38 @@ function SinifGelisim({ o, minN }: { o: NonNullable<Ozet["ozet"]>; minN: number 
 
       <div>
         <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100">{tv("olcmeBaslik")}</h4>
+        <Aciklama>{t("olcmeAciklama")}</Aciklama>
         <ul className="mt-2 grid gap-2 sm:grid-cols-3">
           {(["metin_kaniti", "kavram_dogrulugu", "transfer"] as const).map((k) => {
             const x = o.olcme_turu_dogrulugu?.[k];
             return (
               <li key={k} className="flex items-baseline justify-between gap-3 rounded-lg border border-gray-200 px-3 py-2 text-sm dark:border-gray-800">
                 <span className="text-gray-700 dark:text-gray-300">{tv(`olcme.${k}`)}</span>
-                <span className="font-semibold text-gray-800 dark:text-white/90">{x?.yeterli && x.oran !== undefined ? `%${x.oran}` : t("gozlemYok")}</span>
+                <span className="font-semibold text-gray-800 dark:text-white/90">{dogrulukMetni(t, x)}</span>
               </li>
             );
           })}
         </ul>
       </div>
 
-      <SinifHedefListesi baslik={t("kavramlar")} bos={t("hedefYok", { min: minN })} satirlar={o.kavramlar} />
+      <div>
+        <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100">{t("degerBaslik")}</h4>
+        <Aciklama>{t("degerAciklama", { min: minN })}</Aciklama>
+        {(o.deger_dagilimi ?? []).length === 0 ? (
+          <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{t("degerYok", { min: minN })}</p>
+        ) : (
+          <ul className="mt-2 divide-y divide-gray-100 text-sm dark:divide-gray-800">
+            {(o.deger_dagilimi ?? []).map((x) => (
+              <li key={x.deger} className="flex flex-wrap items-baseline justify-between gap-2 py-2">
+                <span className="text-gray-800 dark:text-gray-100">{x.ad ?? x.deger}</span>
+                <span className="text-theme-xs text-gray-600 dark:text-gray-400">{t("temaDeger", { ogrenci: x.ogrenci_sayisi, hikaye: x.hikaye_sayisi })}</span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+
+      <SinifHedefListesi baslik={t("kavramlar")} aciklama={t("kavramAciklama")} bos={t("hedefYok", { min: minN })} satirlar={o.kavramlar} />
       <SinifHedefListesi baslik={t("atasozleri")} bos={t("hedefYok", { min: minN })} satirlar={o.atasozleri} />
       <SinifHedefListesi baslik={t("kelimeler")} bos={t("hedefYok", { min: minN })} satirlar={o.kelimeler} />
     </>
@@ -310,6 +373,7 @@ function OgrenciBolumu({ sinifId, gun }: { sinifId: string; gun: number }) {
     <div className="mt-8 border-t border-gray-100 pt-5 dark:border-gray-800">
       <h4 className="text-base font-semibold text-gray-800 dark:text-white/90">{t("ogrenciBaslik")}</h4>
       <p className="mt-1 text-theme-sm text-gray-600 dark:text-gray-300">{t("ogrenciAciklama")}</p>
+      <p className="mt-1 text-theme-xs text-gray-600 dark:text-gray-400">{t("ogrenciGizlilik")}</p>
       <div className="mt-3 max-w-sm">
         <label className={labelClass} htmlFor="okuma-ogrenci-sec">{t("ogrenciSec")}</label>
         <select id="okuma-ogrenci-sec" className={inputClass} value={ogrenciId} onChange={(e) => setOgrenciId(e.target.value)}>
@@ -359,14 +423,31 @@ function OgrenciBolumu({ sinifId, gun }: { sinifId: string; gun: number }) {
                 return (
                   <li key={b} className="flex items-baseline justify-between gap-3 rounded-lg border border-gray-200 px-3 py-2 text-sm dark:border-gray-800">
                     <span className="text-gray-700 dark:text-gray-300">{tb(b)}</span>
-                    <span className="font-semibold text-gray-800 dark:text-white/90">{x?.yeterli && x.oran !== undefined ? `%${x.oran}` : t("gozlemYok")}</span>
+                    <span className="font-semibold text-gray-800 dark:text-white/90">{dogrulukMetni(t, x)}</span>
                   </li>
                 );
               })}
             </ul>
           </div>
 
+          {o.dogruluk_toplami?.yeterli && (
+            <p className="text-sm text-gray-800 dark:text-gray-100">
+              <span className="font-medium">{t("dogrulukToplam")}: </span>
+              {dogrulukMetni(t, o.dogruluk_toplami)}
+            </p>
+          )}
+
           <OkumaGelisimKartlari ozet={o} />
+
+          <div>
+            <h4 className="text-sm font-semibold text-gray-800 dark:text-gray-100">{tv("zorluk.baslik")}</h4>
+            <Aciklama>{tv("zorluk.aciklama")}</Aciklama>
+            {(o.zorluk_seyri?.length ?? 0) === 0 ? (
+              <p className="mt-1 text-sm text-gray-600 dark:text-gray-300">{tv("zorluk.bos")}</p>
+            ) : (
+              <div className="mt-2"><ZorlukTablosu haftalar={o.zorluk_seyri ?? []} /></div>
+            )}
+          </div>
 
           <div className="grid gap-4 md:grid-cols-2">
             {(

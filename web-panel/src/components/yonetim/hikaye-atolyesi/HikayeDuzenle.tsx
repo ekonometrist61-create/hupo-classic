@@ -80,12 +80,13 @@ export default function HikayeDuzenle({ paket, slug, tur, onKapat, onKaydedildi 
       return;
     }
     setKalemler((data.uyarilar ?? []).map(kalemMetni));
-    if (kuru) {
-      setMesaj(t("dogrulamaTamam"));
-      return;
-    }
+    // Kuru çalıştırma önizlemesi: yeni sürüm açılır mı, aynı içerik mi? Hiçbir şey yazılmaz.
     if (data.mevcut) {
       setMesaj(t("ayniIcerik", { no: data.surum_no ?? 0 }));
+      return;
+    }
+    if (kuru) {
+      setMesaj(t("dogrulamaTamam"));
       return;
     }
     setMesaj(t("kaydedildi", { no: data.surum_no ?? 0 }));
@@ -234,7 +235,7 @@ export default function HikayeDuzenle({ paket, slug, tur, onKapat, onKaydedildi 
         <details>
           <summary className="min-h-11 cursor-pointer text-sm font-semibold text-gray-700 dark:text-gray-300">{t("onizleme")}</summary>
           <div className="mt-3">
-            <SurumOnizleme paket={taslak} />
+            <SurumOnizleme paket={taslak} slug={slug} />
           </div>
         </details>
         <details>

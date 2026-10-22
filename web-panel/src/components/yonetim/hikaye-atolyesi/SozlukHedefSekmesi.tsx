@@ -8,6 +8,7 @@ import { adminCall } from "@/components/yonetim/useAdminRpc";
 import ErrorNote from "../panel/ErrorNote";
 import { inputClass, labelClass, outlineBtn, primaryBtn } from "../panel/styles";
 import { useHataMetni } from "./ortak";
+import SozlukYukle from "./SozlukYukle";
 
 const SOZLUK_TURLERI = ["tema", "ders", "deger", "cati_deger"] as const;
 const HEDEF_TURLERI = ["lexeme", "idiom", "proverb", "homonym", "concept", "fact", "misconception", "value"] as const;
@@ -15,9 +16,12 @@ const KANIT = ["A", "B", "C", "D"] as const;
 
 export default function SozlukHedefSekmesi() {
   return (
-    <div className="grid gap-6 lg:grid-cols-2">
-      <SozlukFormu />
-      <HedefFormu />
+    <div className="space-y-6">
+      <div className="grid gap-6 lg:grid-cols-2">
+        <SozlukFormu />
+        <HedefFormu />
+      </div>
+      <SozlukYukle />
     </div>
   );
 }
