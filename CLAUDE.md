@@ -14,3 +14,6 @@ Her önemli ekranda hedef/ana eylem/durum/kabul kriterlerini tanımla. Uygulanan
 
 ## Gizli anahtarlar
 API anahtarları yalnızca `.claude/settings.local.json` (git'e girmez) veya ortam değişkenlerinde durur. `.claude/settings.json`, `.claude/mcp.json` ve diğer izlenen dosyalara düz metin anahtar yazılmaz; `${DEGISKEN}` referansı kullanılır.
+
+## Sürümleme
+App (mobile-app/pubspec.yaml) ve panel (web-panel/package.json) sürüm numarası kuralı ve yayın akışı: docs/SURUMLEME.md. Büyük değişiklikte MINOR artar; her sürümde sürüm notu ve git etiketi eklenir.
