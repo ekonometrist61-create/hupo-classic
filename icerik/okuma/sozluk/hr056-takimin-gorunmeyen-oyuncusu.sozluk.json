@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr056_parkur",
+      "tur": "kelime",
+      "yazim": "parkur",
+      "anlam": "Yarış için belirlenmiş yol ya da güzergâh.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr056_pist",
+      "tur": "kelime",
+      "yazim": "pist",
+      "anlam": "Koşu ya da yarış için hazırlanmış düz yol.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr056_sensor",
+      "tur": "kelime",
+      "yazim": "sensörün",
+      "anlam": "Ortamdaki bir değişikliği algılayıp ölçen cihaz.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr056_algilayici",
+      "tur": "kelime",
+      "yazim": "algılayıcı",
+      "anlam": "Bir değişikliği fark edip işaretleyen araç.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr056_motor",
+      "tur": "kelime",
+      "yazim": "motor",
+      "anlam": "Enerjiyi hareket hâline dönüştüren makine.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr056_viraj",
+      "tur": "kelime",
+      "yazim": "viraja",
+      "anlam": "Yolun yön değiştirdiği kıvrım.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr056_donemec",
+      "tur": "kelime",
+      "yazim": "dönemeç",
+      "anlam": "Yolun keskin biçimde dönen kısmı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr056_duzluk",
+      "tur": "kelime",
+      "yazim": "düzlük",
+      "anlam": "Düz ve eğimsiz yer.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr056_ici_burkulmak",
+      "tur": "deyim",
+      "yazim": "içi burkuldu",
+      "anlam": "Üzülmek, incinmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr056_gonlu_kirilmak",
+      "tur": "deyim",
+      "yazim": "gönlü kırılmak",
+      "anlam": "Kırgınlık duymak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr056_ici_rahat",
+      "tur": "deyim",
+      "yazim": "içi rahat etmek",
+      "anlam": "Hiçbir kaygısı olmamak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr056_parkur",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr056_parkur"
+        },
+        {
+          "girdi": "hr056_pist"
+        }
+      ]
+    },
+    {
+      "ad": "hr056_sensor",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr056_sensor"
+        },
+        {
+          "girdi": "hr056_algilayici"
+        },
+        {
+          "girdi": "hr056_motor"
+        }
+      ]
+    },
+    {
+      "ad": "hr056_viraj",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr056_viraj"
+        },
+        {
+          "girdi": "hr056_donemec"
+        },
+        {
+          "girdi": "hr056_duzluk"
+        }
+      ]
+    },
+    {
+      "ad": "hr056_ici_burkulmak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr056_ici_burkulmak"
+        },
+        {
+          "girdi": "hr056_gonlu_kirilmak"
+        },
+        {
+          "girdi": "hr056_ici_rahat"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

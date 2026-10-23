@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr105_veri",
+      "tur": "kelime",
+      "yazim": "veri",
+      "anlam": "Bir gözlem ya da ölçümden elde edilen ham bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_kayit",
+      "tur": "kelime",
+      "yazim": "kayıt",
+      "anlam": "Bir olay ya da ölçümün yazıya ya da veriye geçirilmiş hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_varsayim",
+      "tur": "kelime",
+      "yazim": "varsayım",
+      "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_belirsizlik",
+      "tur": "kelime",
+      "yazim": "belirsizlik",
+      "anlam": "Kesin olarak bilinmeyen durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_supheli",
+      "tur": "kelime",
+      "yazim": "şüphe",
+      "anlam": "Bir şeyin doğruluğundan tam emin olunmama hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_kesinlik",
+      "tur": "kelime",
+      "yazim": "kesinlik",
+      "anlam": "Şüphe bırakmayan, emin olunan durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_iklim",
+      "tur": "kelime",
+      "yazim": "iklim",
+      "anlam": "Bir bölgede uzun yıllar boyunca görülen ortalama hava koşulları.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_hava_durumu",
+      "tur": "kelime",
+      "yazim": "hava durumu",
+      "anlam": "Kısa süreli ve belirli bir yerdeki hava koşulları.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_mevsim",
+      "tur": "kelime",
+      "yazim": "mevsim",
+      "anlam": "Yılın belirli bir dönemindeki genel hava ve doğa durumu.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_olcum",
+      "tur": "kelime",
+      "yazim": "ölçüm",
+      "anlam": "Bir niceliği belirli bir birim ve araçla saptama işlemi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_gozlem",
+      "tur": "kelime",
+      "yazim": "gözlem",
+      "anlam": "Bir olguyu dikkatle izleyip kaydetme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_tahmin",
+      "tur": "kelime",
+      "yazim": "tahmin",
+      "anlam": "Kanıta dayanmadan ya da kısmen dayanarak öngörme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_dikkat",
+      "tur": "deyim",
+      "yazim": "dikkatini çekiyordu",
+      "anlam": "İlgi uyandırmak, göze çarpmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_goze_carpmak",
+      "tur": "deyim",
+      "yazim": "göze çarpmak",
+      "anlam": "Dikkati üzerine çekmek, belli olmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr105_ilgisini_cekmek",
+      "tur": "deyim",
+      "yazim": "ilgisini çekmek",
+      "anlam": "Birinin merakını uyandırmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr105_veri",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr105_veri"
+        },
+        {
+          "girdi": "hr105_kayit"
+        },
+        {
+          "girdi": "hr105_varsayim"
+        }
+      ]
+    },
+    {
+      "ad": "hr105_belirsizlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr105_belirsizlik"
+        },
+        {
+          "girdi": "hr105_supheli"
+        },
+        {
+          "girdi": "hr105_kesinlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr105_iklim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr105_iklim"
+        },
+        {
+          "girdi": "hr105_hava_durumu"
+        },
+        {
+          "girdi": "hr105_mevsim"
+        }
+      ]
+    },
+    {
+      "ad": "hr105_olcum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr105_olcum"
+        },
+        {
+          "girdi": "hr105_gozlem"
+        },
+        {
+          "girdi": "hr105_tahmin"
+        }
+      ]
+    },
+    {
+      "ad": "hr105_dikkat",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr105_dikkat"
+        },
+        {
+          "girdi": "hr105_goze_carpmak"
+        },
+        {
+          "girdi": "hr105_ilgisini_cekmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

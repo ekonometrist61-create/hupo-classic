@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr033_cubbe",
+      "tur": "kelime",
+      "yazim": "cübbesi",
+      "anlam": "Hocaların ve din adamlarının giydiği uzun, geniş dış giysi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr033_kaftan",
+      "tur": "kelime",
+      "yazim": "kaftan",
+      "anlam": "Uzun, bol ve genellikle kollu bir giysi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr033_kurk",
+      "tur": "kelime",
+      "yazim": "kürk",
+      "anlam": "Hayvan postundan yapılmış sıcak giysi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr033_gosterisli",
+      "tur": "kelime",
+      "yazim": "gösterişli",
+      "anlam": "Dikkat çekmek için süslü ve şık.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr033_sade",
+      "tur": "kelime",
+      "yazim": "sade",
+      "anlam": "Süssüz, yalın.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr033_zarif",
+      "tur": "kelime",
+      "yazim": "zarif",
+      "anlam": "İnce yapılı, güzel ve incelikli.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr033_yamali",
+      "tur": "kelime",
+      "yazim": "yamalı",
+      "anlam": "Yırtık yerleri kumaş parçasıyla onarılmış.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr033_eskimis",
+      "tur": "kelime",
+      "yazim": "eskimiş",
+      "anlam": "Kullanılmaktan eskiyip yıpranmış.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr033_yeni",
+      "tur": "kelime",
+      "yazim": "yeni",
+      "anlam": "Henüz kullanılmamış ya da yeni alınmış.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr033_dis_gorunus",
+      "tur": "kelime",
+      "yazim": "dış görünüşe aldanmak",
+      "anlam": "İnsanı tanımadan yalnızca görünüşüne bakarak karar vermek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr033_gozu_kapali_k",
+      "tur": "deyim",
+      "yazim": "gözü kapalı",
+      "anlam": "Dikkat etmeden, düşünmeden yapmak.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr033_cubbe",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr033_cubbe"
+        },
+        {
+          "girdi": "hr033_kaftan"
+        },
+        {
+          "girdi": "hr033_kurk"
+        }
+      ]
+    },
+    {
+      "ad": "hr033_gosterisli",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr033_gosterisli"
+        },
+        {
+          "girdi": "hr033_sade"
+        },
+        {
+          "girdi": "hr033_zarif"
+        }
+      ]
+    },
+    {
+      "ad": "hr033_yamali",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr033_yamali"
+        },
+        {
+          "girdi": "hr033_eskimis"
+        },
+        {
+          "girdi": "hr033_yeni"
+        }
+      ]
+    },
+    {
+      "ad": "hr033_dis_gorunus",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr033_dis_gorunus"
+        },
+        {
+          "girdi": "hr033_gozu_kapali_k"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

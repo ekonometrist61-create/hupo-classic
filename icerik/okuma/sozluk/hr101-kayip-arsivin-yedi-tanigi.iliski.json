@@ -1,0 +1,62 @@
+{
+  "hr101_tutarsizlik": {
+    "es": [
+      "hr101_celiski"
+    ],
+    "zit": []
+  },
+  "hr101_uyum": {
+    "es": [],
+    "zit": [
+      "hr101_celiski"
+    ]
+  },
+  "hr101_gorgu_tanigi": {
+    "es": [
+      "hr101_tanik"
+    ],
+    "zit": []
+  },
+  "hr101_sahit": {
+    "es": [
+      "hr101_tanik"
+    ],
+    "zit": []
+  },
+  "hr101_elini_basina": {
+    "es": [
+      "hr101_basini"
+    ],
+    "zit": []
+  },
+  "hr101_kafasini": {
+    "es": [
+      "hr101_basini"
+    ],
+    "zit": []
+  },
+  "hr101_delil": {
+    "es": [
+      "hr101_kanit"
+    ],
+    "zit": []
+  },
+  "hr101_dayanak": {
+    "es": [
+      "hr101_kanit"
+    ],
+    "zit": []
+  },
+  "hr101_muglak": {
+    "es": [
+      "hr101_belirsiz"
+    ],
+    "zit": []
+  },
+  "hr101_kesin": {
+    "es": [],
+    "zit": [
+      "hr101_belirsiz"
+    ]
+  }
+}

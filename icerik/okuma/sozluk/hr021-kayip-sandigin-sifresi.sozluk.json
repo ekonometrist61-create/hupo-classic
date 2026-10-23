@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr021_album",
+      "tur": "kelime",
+      "yazim": "albümünde",
+      "anlam": "Fotoğrafların yerleştirilip saklandığı kitap.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_defter",
+      "tur": "kelime",
+      "yazim": "defter",
+      "anlam": "Yazı yazmak ya da not tutmak için kullanılan kitap.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_dergi",
+      "tur": "kelime",
+      "yazim": "dergi",
+      "anlam": "Belli aralıklarla çıkan, çeşitli yazılar içeren yayın.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_mandal",
+      "tur": "kelime",
+      "yazim": "mandalı",
+      "anlam": "Bir kapağı ya da kilidi yerinde tutan tık sesi çıkaran parça.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_kilit",
+      "tur": "kelime",
+      "yazim": "kilit",
+      "anlam": "Bir kapıyı ya da sandığı anahtarla açılıp kapanan parça.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_mengene",
+      "tur": "kelime",
+      "yazim": "mengene",
+      "anlam": "Bir şeyi sıkıca tutmaya yarayan araç.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_hatira",
+      "tur": "kelime",
+      "yazim": "hatıra",
+      "anlam": "Yaşanmış bir olayı, unutulmayacak bir anıyı akla getiren şey.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_anı",
+      "tur": "kelime",
+      "yazim": "anı",
+      "anlam": "Geçmişte yaşanan ve akılda kalan olay.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_gelecek",
+      "tur": "kelime",
+      "yazim": "gelecek",
+      "anlam": "Henüz yaşanmamış zaman.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_sozunu_kesmek",
+      "tur": "deyim",
+      "yazim": "sözünü kesmek",
+      "anlam": "Biri konuşurken lafını bölmek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_ise_el_atmak",
+      "tur": "deyim",
+      "yazim": "işe el atmak",
+      "anlam": "Bir işe başlamak, işi üstlenmek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr021_kulak_vermek",
+      "tur": "deyim",
+      "yazim": "kulak vermek",
+      "anlam": "Dikkatle dinlemek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr021_album",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr021_album"
+        },
+        {
+          "girdi": "hr021_defter"
+        },
+        {
+          "girdi": "hr021_dergi"
+        }
+      ]
+    },
+    {
+      "ad": "hr021_mandal",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr021_mandal"
+        },
+        {
+          "girdi": "hr021_kilit"
+        },
+        {
+          "girdi": "hr021_mengene"
+        }
+      ]
+    },
+    {
+      "ad": "hr021_hatira",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr021_hatira"
+        },
+        {
+          "girdi": "hr021_anı"
+        },
+        {
+          "girdi": "hr021_gelecek"
+        }
+      ]
+    },
+    {
+      "ad": "hr021_sozunu_kesmek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr021_sozunu_kesmek"
+        },
+        {
+          "girdi": "hr021_ise_el_atmak"
+        },
+        {
+          "girdi": "hr021_kulak_vermek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

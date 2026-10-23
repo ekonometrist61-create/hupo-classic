@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr018_seyir",
+      "tur": "kelime",
+      "yazim": "seyir",
+      "anlam": "Gemi ya da uçağın yol alması; bir şeye bakıp izleme.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr018_gozlem_yeri",
+      "tur": "kelime",
+      "yazim": "gözlem",
+      "anlam": "Dikkatle bakarak inceleme.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr018_yolculuk",
+      "tur": "kelime",
+      "yazim": "yolculuk",
+      "anlam": "Bir yere gitmek için yapılan gezi.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr018_pano",
+      "tur": "kelime",
+      "yazim": "pano",
+      "anlam": "Bilgi ya da duyuru asılan düz yüzey.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr018_tabela",
+      "tur": "kelime",
+      "yazim": "tabela",
+      "anlam": "Yönü ya da adı gösteren levha.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr018_afis",
+      "tur": "kelime",
+      "yazim": "afiş",
+      "anlam": "Bir etkinliği duyurmak için asılan büyük kâğıt.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr018_ariza",
+      "tur": "kelime",
+      "yazim": "arızası",
+      "anlam": "Bir cihazın ya da sistemin düzgün çalışmamasına yol açan sorun.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr018_hasar",
+      "tur": "kelime",
+      "yazim": "hasar",
+      "anlam": "Bir şeyin zarar görmesi.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr018_bakim",
+      "tur": "kelime",
+      "yazim": "bakım",
+      "anlam": "Bir şeyi düzenli olarak kontrol edip korumak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr018_seyir",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr018_seyir"
+        },
+        {
+          "girdi": "hr018_gozlem_yeri"
+        },
+        {
+          "girdi": "hr018_yolculuk"
+        }
+      ]
+    },
+    {
+      "ad": "hr018_pano",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr018_pano"
+        },
+        {
+          "girdi": "hr018_tabela"
+        },
+        {
+          "girdi": "hr018_afis"
+        }
+      ]
+    },
+    {
+      "ad": "hr018_ariza",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr018_ariza"
+        },
+        {
+          "girdi": "hr018_hasar"
+        },
+        {
+          "girdi": "hr018_bakim"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

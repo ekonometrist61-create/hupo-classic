@@ -1,0 +1,1458 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr072-sinifin-gorunmez-yazari",
+    "baslik": "Sınıfın Görünmez Yazarı",
+    "tur": "gizem",
+    "konu": "iyilik_mahremiyet_iletisim",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D15"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "dayanisma",
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D15"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "imzasiz_hr072",
+          "tur": "lexeme",
+          "etiket": "imzasız",
+          "yuva": "hr072_imzasiz",
+          "islev": "first_hint"
+        },
+        {
+          "id": "soylenti_hr072",
+          "tur": "lexeme",
+          "etiket": "söylenti",
+          "yuva": "hr072_soylenti",
+          "islev": "application"
+        },
+        {
+          "id": "gonulluluk_hr072",
+          "tur": "lexeme",
+          "etiket": "gönüllülük",
+          "yuva": "hr072_gonulluluk",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr072",
+          "tur": "idiom",
+          "etiket": "Sözünü kesmek",
+          "yuva": "hr072_soz_kesmek",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr072",
+          "tur": "concept",
+          "etiket": "Mahremiyet ve iyilik ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 3027,
+        "tahmini_sure_dk": 27,
+        "sayfa_sayisi": 23,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 38,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Panoya imzasız bir not asıldı. Kimin yazdığını bulmak mı önemli, yoksa iyiliğin kendisi mi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-072"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Altıncı sınıf panosunda ilk not pazartesi sabahı ortaya çıktı. Beyaz bir kâğıda küçük, düzgün harflerle şöyle yazılmıştı: Dün teneffüste düşen kitaplarını kimse görmeden topladığını gördüm. Yaptığın iyilik gözden kaçmadı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kalp"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nSınıf başkanı "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " notu görünce durdu. Altında imza yoktu. Kimin için yazıldığı da belirtilmemişti. Yalnızca sağ alt köşede minik bir mavi yıldız çizilmişti. Arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Kesin biri şaka yapıyor,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Şaka olsa neden teşekkür etsin?\" diye sordu. İkisi de cevap bulamadı.\n\nTeneffüste haber bütün sınıfa yayıldı. Bazıları notun kendisi için yazıldığını düşündü, bazıları kimin bıraktığını merak etti. Sınıfın en sessiz öğrencilerinden Zeynep panoya uzun uzun baktı ama hiç konuşmadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun yüzündeki küçük gülümsemeyi gördü; bu gülümsemenin ne anlama geldiğini anlayamadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk nottan önce sınıfta pek çok küçük kırgınlık birikmişti. Grup çalışması sırasında bazı öğrenciler söz kesiyor, teneffüste oyun kuranlar hep aynı arkadaşlarını çağırıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunları görüyordu ama nasıl değiştireceğini bilmiyordu. Bir gün Zeynep defterini yere düşürdüğünde birkaç kâğıt savruldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yardım etmek için eğildiğinde Zeynep \"Ben toplarım,\" dedi. Sesindeki telaş, çevresindeki herkesin bakmasından rahatsız olduğunu gösteriyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıtları izinsiz okumadan toparladı. Sonra hiçbir şey olmamış gibi konuşmayı sürdürdü. O an mahremiyete saygının bazen çok küçük davranışlarda saklı olduğunu fark etti.\n\nMavi yıldızlı ilk notu okuduğunda da benzer bir duygu yaşadı. Yazı, birinin iyi davranışını görmüş ama onun adını herkesin önünde söylememişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu önce anlaşılmaz buldu. İyilik yapan birinin tanınması hoş olabilirdi. Fakat her öğrenci öne çıkmak istemeyebilirdi. Bazıları güzel bir davranışının büyük bir gösteriye dönüşmesinden rahatsız olabilirdi. Nazan Hanım, \"Övgü de kişiye göre farklı hissedilebilir,\" dedi. \"Bu yüzden "
+        },
+        {
+          "t": "vurgu",
+          "v": "güzel niyet kadar karşımızdakini anlamak önemlidir"
+        },
+        {
+          "t": "metin",
+          "v": ".\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " o günden sonra arkadaşlarına teşekkür ederken onların nasıl hissettiğine daha çok dikkat etmeye başladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi hafta ikinci not geldi: Bir arkadaşın konuşurken onu bölmeyip dinledin. Bazen dinlemek en güzel yardımdır. Bu kez köşede yine mavi yıldız vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bence yazarı bulmalıyız,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce bu fikre katıldı. Bir gizem vardı ve onu çözmek eğlenceli olabilirdi. Ama sınıf rehber öğretmeni Nazan Hanım'a danıştıklarında farklı bir soru duydu.\n\n\"Yazarı bulursanız ne kazanacaksınız?\" diye sordu öğretmen. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Gizemi çözmüş olacağız,\" dedi. Nazan Hanım, \"Peki kişi adını vermek istemiyorsa onun kararına saygı gösterecek misiniz?\" diye devam etti. Sınıf sessizleşti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk kez notların bir oyun değil, birinin kişisel tercihi de olabileceğini düşündü.\n\nÜçüncü not daha da ilginçti: Yalnız kalan bir arkadaşını oyuna çağırdın. Belki gününün en iyi anı buydu. Panonun önünde toplanan öğrenciler birbirlerine bakıyordu. Kim kiminle oynamıştı? "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen tahminler üretmeye başladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez onu durdurdu. \"Kim olduğunu bulmak zorunda değiliz,\" dedi. \"Notun anlattığı şeyi konuşabiliriz.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıf kendi arasında küçük bir karar aldı: Notlar kimseyi utandırmıyorsa ve saygılıysa panoda kalacaktı. Fakat "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr072_imzasiz"
+        },
+        {
+          "t": "metin",
+          "v": " yazarı bulmak için çantalara bakılmayacak, kimsenin el yazısı karşılaştırılmayacak, fotoğraf ya da mesajlar izinsiz incelenmeyecekti. Nazan Hanım bu kararı destekledi. \"Merak güzel,\" dedi. \"Ama her merak, başka birinin özel alanına girme hakkı vermez.\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " notları okudukça sınıftaki davranışlara daha çok dikkat etmeye başladı. Önceden teneffüste kimin kiminle oyun oynadığını fark etmezdi. Şimdi yalnız oturanları, yardım edenleri, bir sözle arkadaşını sevindirenleri görüyordu. Bir sabah yere düşen boya kalemlerini birlikte toplayan iki öğrenciyi izledi. \"Bunu panoya yazabiliriz,\" diye düşündü. Sonra durdu. \"Ama onlar ister mi?\" diye sordu kendi kendine."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " aklına notun yazarı hakkında çeşitli tahminler geliyordu. Bir gün panonun yakınındaki boya kalemlerinde mavi bir kalem gördü. \"İşte kanıt!\" diye fısıldadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Sınıftaki herkes aynı kalemi kullanabilir,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ikinci ipucunu gösterdi: Notlar hep sabah geliyordu. \"O zaman erkenden gelen biri,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yeniden karşı çıktı: \"Belki bir önceki gün bırakılıyordur.\" İki arkadaş küçük bir tartışmaya girdi. Sonunda Nazan Hanım, \"Bir davranışı anlamak için insanı gizlice takip etmek gerekir mi?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hayır demek zorunda kaldı. Merakı güçlüydü ama yöntemi doğru değildi.\n\nBir gün teneffüste "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", arkadaşlarından biriyle şakalaşırken \"Kim yazdıysa yakalayacağım,\" dedi. Yakınlarındaki Zeynep birden sessizleşti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu gördü ama nedenini anlamaya çalışmadı. Daha sonra "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Yakalayacağım kelimesi sanki yanlış bir şey yapılmış gibi duruyor,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " duraksadı. \"Öyle demek istemedim,\" diye karşılık verdi. \"Sadece merak ediyorum.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"O zaman merak ettiğini söyle ama kimseyi rahatsız edecek bir oyun kurma,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu uyarıya kızmadı. Kendisinin de bir sır paylaşmak istemediği zamanlar olduğunu hatırladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci not sınıfta farklı bir tartışma başlattı. \"Dinlemek neden iyilik sayılsın?\" diye sordu bir öğrenci. \"Hiçbir şey yapmıyorsun ki.\" Zeynep elini kaldırdı. \"Bazen biri konuşurken sözünü kesmemek, onu gerçekten duyduğunu gösterir,\" dedi. Nazan Hanım herkese ikişerli konuşma etkinliği yaptırdı."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr072_soz_kesmek"
+        },
+        {
+          "t": "metin",
+          "v": " Sonra anlatan kişi, dinlenmenin nasıl hissettirdiğini söyleyecekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " etkinliğin sonunda, \"Ben dinlerken aslında çok şey yapıyormuşum,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. \"Evet, en azından arkadaşının sözünü bitirmesine izin veriyorsun.\"\n\nSınıfta uzun süredir çekingen duran Meryem, üçüncü notun asıldığı gün "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " yanına geldi. \"Bence bazı güzel davranışların fark edilmesi iyi,\" dedi. \"Ama bazen isim yazılınca herkes o kişiye bakıyor.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun ne demek istediğini anladı. Meryem, kendisiyle ilgili bir not yazılmasını istemediğini açıkça söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu tercihe saygı göstereceklerine söz verdi. Etkinlik kuralları hazırlanırken \"Kişi istemiyorsa adını paylaşma\" maddesi eklendi. Nazan Hanım bu cümlenin yalnız panoya değil, sınıfın günlük ilişkilerine de uyduğunu belirtti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bu düşünce onu farklı bir fikre götürdü. Sınıf panosunun yanına boş bir kutu koydular. Üzerine İyilik Fikri Kutusu yazdılar. İsteyen öğrenciler, bir arkadaşını incitmeden ve özel bilgi paylaşmadan sınıfta gördükleri güzel davranışlar hakkında kısa not bırakabilecekti. Hiç kimse isim yazmaya zorlanmayacaktı. İlk gün kutuya yalnız iki kâğıt geldi. Sonraki hafta sayı arttı.\n\nİyilik Fikri Kutusu'nun hazırlanması sandıkları kadar kolay olmadı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " büyük, parlak bir kutu istiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " küçük, sade bir kutunun yeterli olacağını düşünüyordu. Zeynep ise kutunun herkesin erişebileceği bir yerde durmasını önerdi. Sonunda eski bir karton kutuyu birlikte kapladılar. Üzerine mavi yıldızlar çizdiler ama ilk notun yazarına ait olduğunu iddia etmediler. Bu yıldız artık tek bir kişiyi temsil etmiyordu; sınıfın birlikte seçtiği bir simgeydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kartonu düzeltirken bir şeyin anlamının insanlar onu nasıl kullandıkça değişebildiğini fark etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kutunun yanında küçük bir yönerge vardı. \"İstersen yaz; yazmak istemiyorsan da sorun değil.\" Bu cümleyi Zeynep önermişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başta anlamamıştı. \"Herkes yazarsa daha çok notumuz olur,\" diyordu. Nazan Hanım, "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr072_gonulluluk"
+        },
+        {
+          "t": "metin",
+          "v": " bir etkinliği gerçekten iyi kıldığını anlattı. İyilik için bile olsa zorunlu katılım, bazı çocukların kendilerini baskı altında hissetmesine neden olabilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kutunun kalabalık görünmesindense herkesin rahat hissetmesini daha önemli buldu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başta bu fikri sıkıcı buldu. \"Artık herkes not yazabilir,\" dedi. \"Görünmez yazarın sırrı kalmadı.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. \"Belki de mesele sır değildi,\" dedi. \"Belki iyi şeyleri daha çok görmekti.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " cevap vermedi ama kutuya ilk notunu o yazdı: Bugün biri sıraya girmeyi bekleyen arkadaşına yer verdi. Bunu fark ettim."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk hafta gelen notlardan biri yalnızca şunu söylüyordu: Bugün biri beni güldürdü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kimin güldürdüğünü ve neden güldüğünü merak etti. Ama notun yazarının ayrıntı vermemeyi seçtiğini düşündü. Diğer notta ise Bahçedeki küçük kâğıdı çöp kutusuna atan arkadaşımı gördüm yazıyordu. Sınıf bu iki davranışı konuştu. Biri başkasının duygusunu değiştirmiş, diğeri ortak alanı temiz tutmaya yardım etmişti. İkisi de gösterişsizdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Görünmez yazarın notları gibi,\" dedi.\n\nBir cuma günü panoda hiç yeni not yoktu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hayal kırıklığına uğradı. \"Belki kimse artık ilgilenmiyor,\" diye düşündü. Nazan Hanım bunun üzerine çocuklardan gün içinde fark ettikleri küçük iyilikleri akıllarından geçirmelerini istedi. Pek çok öğrenci örnek buldu ama hiçbiri yazmamıştı. Öğretmen, \"Bir davranışın değerli olması için panoya asılması gerekmez,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " rahatladı. Kutunun amacı not sayısı toplamak değildi. İnsanların çevrelerine farklı gözle bakmasına yardımcı olabilirdi; görünmeyen iyilikler de varlığını sürdürebilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Zeynep aynı hafta okul kütüphanesinde daha küçük sınıftan bir öğrenciyle karşılaştı. Çocuk aradığı kitabı bulamıyordu. Zeynep, kütüphane görevlisinden yardım istemesini önerdi; sonra görevliyle birlikte doğru rafı bulmalarına yardımcı oldu. Öğrenci teşekkür etti. Zeynep bu olayı panoya yazmayı düşünmedi. Çünkü kendisi için yeterince güzel bir andı. Eve giderken, insanın bir davranışını başkalarının görmesinin bazen hoş, bazen de gereksiz olabileceğini düşündü. İyilik tek bir biçimde yapılmıyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " aklına yeni bir fikir geldi: Kutudaki notları haftanın sonunda sayacak, en çok not yazan kişiye ödül vereceklerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen itiraz etti. \"İsimsiz notlara nasıl puan vereceğiz?\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"İmza atarlar,\" dedi. Nazan Hanım soruyu değiştirdi: \"Bu ödül insanların davranışını nasıl etkiler?\" Zeynep, bazı öğrencilerin yalnız ödül almak için not yazabileceğini söyledi. Başka bir öğrenci, \"İyi davranışlar yarış olursa biri daha az yazdı diye kendini kötü hissedebilir,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir süre düşündü. Sonunda puan tablosu yapmaktan vazgeçti. Bunun yerine herkesin katılabileceği bir teşekkür günü önerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Teşekkür günü için sınıf renkli kartlar hazırladı. Kartların üzerinde kişi adları yazmak zorunlu değildi. Bir kartta \"Birlikte çalışmak güzeldi\", diğerinde \"Dinlediğin için teşekkürler\" yazıyordu. Bazı öğrenciler kartları kendilerine vermek istemedi; bazıları arkadaşlarına özel olarak iletti. Nazan Hanım, herkesin tercihine saygı gösterdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk kez bir etkinliğin iyi geçmesi için herkesin aynı şeyi yapmasının gerekmediğini gördü. Ortak amaç, farklı yollarla da gerçekleştirilebilirdi.\n\nO sırada okulda küçük bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr072_soylenti"
+        },
+        {
+          "t": "metin",
+          "v": " yayıldı: Mavi yıldızlı notların yazarı belirli bir öğrenciydi. Bazıları bunu kesinmiş gibi anlatmaya başladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " söylentiyi duyunca rahatsız oldu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bile bir an \"Acaba doğru mu?\" diye sordu. Nazan Hanım sınıfla konuşarak birinin kimliği hakkında doğrulanmamış iddialar yaymanın arkadaşlık ilişkilerine zarar verebileceğini anlattı. Eğer bir öğrenci anonim kalmayı seçmişse bunu bozmak için başkalarını sıkıştırmak doğru değildi. Sınıf, notun yazarı hakkında tahmin yürütmeyi bırakma kararını yeniden onayladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir süre sonra kötü bir şey oldu. Kutudan çıkan bir kâğıtta bir öğrencinin adı yazılmış, ardından onu utandırabilecek bir ifade eklenmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıdı panoya asmadan Nazan Hanım'a gösterdi. Öğretmen, iyi niyetli bir etkinliğin başkalarını incitmek için kullanılmasına izin vermeyeceklerini anlattı. Sınıf kurallarını yeniden gözden geçirdi. Notların olumlu, saygılı ve kişisel sınırları koruyan içerikler taşıması gerekiyordu.\n\nZeynep bu konuşma sırasında elini kaldırdı. \"Birinden söz etmek istemiyorsak kendi duygumuzu yazsak olur mu?\" diye sordu. Nazan Hanım, \"Elbette,\" dedi. \"Birinin adını vermeden teşekkür duygusunu anlatabilirsiniz.\" Ertesi gün panoda yeni bir not vardı: Bugün kendimi yalnız hissettiğimde biri yanıma oturdu. Teşekkür ederim. Bu notun köşesinde yıldız yoktu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun kimin yazdığını merak etmedi; önemli olan duygunun sınıfa ulaşmasıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ay sonuna doğru panonun renkleri değişti. Başlangıçta yalnız mavi yıldızlı beyaz kâğıtlar varken şimdi farklı renklerde küçük kartlar vardı. Birinde sabır, diğerinde saygı, bir başkasında cesaret yazıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " her teneffüste panonun önünde durup yeni notları okuyordu. Bir gün "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bence insan başkasını mutlu etmeye başlayınca kendi de mutlu oluyor,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun gülümseyişine bakıp başını salladı.\n\nOkulun başka sınıfları da bu panoyu merak etti. Bazı öğretmenler benzer bir etkinlik düzenlemeyi düşündü. Nazan Hanım önce çocukların izinlerini ve mahremiyet kurallarını konuştu. \"Bir iyi davranışı kutlamak için kimin yaptığına dair her ayrıntıyı paylaşmak gerekmez,\" dedi. Sınıf hazırladığı küçük rehberde bu cümleyi özellikle vurguladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Söylentinin yayıldığı gün Zeynep teneffüste kütüphaneye gitti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu rafların arasında yalnız buldu. \"İyi misin?\" diye sordu. Zeynep omuz silkti. \"İnsanların başkaları hakkında konuşması bazen yorucu,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kimin ne yazdığını sormadı. Bunun yerine, \"İstersen burada biraz oturabiliriz,\" diye karşılık verdi. İkisi bir süre sessizce kitaplara baktı. Zeynep sonunda \"Bazen biri beni fark etsin istiyorum, bazen de kimse bakmasın,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. Bu duygunun tanıdık olduğunu fark etmişti. Bir arkadaşın aynı anda hem görülmek hem de rahat bırakılmak isteyebileceğini yeni öğreniyordu.\n\nErtesi gün "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", panoda kullanılan kelimelerle ilgili bir öneri getirdi. \"İyilik\" sözcüğünü herkes aynı şekilde anlamıyordu. Bazıları büyük yardımları, bazıları küçük davranışları düşünüyordu. Sınıf, örnekleri birlikte konuştu: yere düşen kâğıdı toplamak, birini dinlemek, grup çalışmasında söz hakkı vermek, ortak eşyayı korumak. Nazan Hanım, yardım teklif ederken karşı tarafın gerçekten yardım isteyip istemediğini sormanın önemli olduğunu da ekledi. İyi niyet her zaman doğru yöntemi kendiliğinden getirmeyebilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu Zeynep'in yere düşen defterini topladığı günü hatırlayarak anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıfta fark edilen bir başka durum da sessiz öğrencilerin yorumlarının az duyulmasıydı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", konuşmayı çok sevdiği için bazen arkadaşlarını istemeden bastırıyordu. Nazan Hanım küçük bir konuşma çemberi kurdu. İsteyen sırayla fikrini söyledi; konuşmak istemeyen pas geçebildi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kendi sırası gelmediğinde dinlemeye çalıştı. İlk başta beklemek zor geldi. Sonra uzun süredir az konuşan bir arkadaşının sınıftaki paylaşımlarla ilgili ilginç bir öneri getirdiğini duydu. \"Herkesin fikrini duymayınca bazı iyi fikirleri kaçırıyormuşum,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona gülümsedi.\n\nMavi yıldızlı notların gelmediği günlerden birinde sınıf beklenmedik bir teşekkür aldı. Okulun temizlik görevlisi, bazı öğrencilerin koridoru düzenli bıraktıklarını ve kullandıkları eşyaları yerlerine koyduklarını fark etmişti. Nazan Hanım bu teşekkürün öğrencilere iletilmesi için izin aldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bu davranışları kim yaptı?\" diye sormadı. \"Demek hepimiz kullandığımız alanlara daha dikkat etmeye başlamışız,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", teşekkürün bir kişiye ödül vermekten farklı olmasını sevdi. Ortak alanı korumak bir yarış değil, birlikte yaşamanın parçasıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir pazartesi panoya büyük bir kâğıt asıldı. Üzerinde bir çizelge vardı: solda görmek, ortada sormak, sağda saygı göstermek. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu üç sözcüğü sınıfa açıkladı. Önce arkadaşının durumunu fark etmek, sonra ona neye ihtiyacı olduğunu sormak, ardından verdiği cevaba saygı göstermek. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir örnek verdi: \"Biri yalnız oturuyorsa hemen onu zorla oyuna çekmek yerine oynamak isteyip istemediğini sorabilirim.\" Zeynep bu örneği duyunca başını kaldırdı. \"Bence güzel,\" dedi. Çünkü birinin yanında bulunmak ile onu zorlamak arasında önemli bir fark vardı.\n\nNazan Hanım yeni kartlarla küçük bir canlandırma etkinliği yaptı. Bir kartta, \"Arkadaşın çalışma sırasında sessiz kalıyor\" yazıyordu. Öğrenciler farklı yorumlar söyledi: sıkılmış olabilir, yorulmuş olabilir, düşünüyordur. Öğretmen, birinin davranışına bakarak duygusunu kesin bilemeyeceklerini anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu ilk gün Zeynep'in gülümsemesini yorumlamaya çalıştığında da yaşamıştı. Bir gülümseme, bir sırrın kanıtı değildi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bile bunu anladı. \"Demek yazarı bulmak için yüzlere bakmak da işe yaramaz,\" diye şakalaştı; sonra \"Zaten aramıyoruz,\" diye ekledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dönem ortasında okulda bir dayanışma kampanyası düzenlendi. Öğrenciler kullanılabilir durumdaki kitapları gönüllü olarak paylaşacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", iyilik panosunda kampanyayı tanıtmak istedi ama Nazan Hanım kimsenin bağış yapmaya zorlanmaması gerektiğini hatırlattı. Katılabilecekleri farklı yollar düşünülmeliydi: kitapların düzenlenmesine yardım etmek, afiş hazırlamak, okuma saatine katılmak. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk anda yalnız bağış sayısına bakacaktı. Sonra yardımlaşmanın farklı biçimleri olduğunu fark etti. Sınıf her katkıyı kişilerin isteğine göre görünür kıldı ya da gizli tuttu.\n\nKampanya sonrasında panoda bir not belirdi: Biri bana ihtiyacım olmadığında bile yardım etmek isteyip istemediğimi sordu. Hayır dediğimde de gülümsedi. Teşekkür ederim. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu cümleyi üç kez okudu. Birine saygı göstermek bazen onun \"hayır\" cevabını kabul etmekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " de notu sevdi. Daha önce herkesin yardım teklifini mutlaka kabul etmesi gerektiğini düşünüyordu. Şimdi bir arkadaşın kendi kararına yer açmanın da iyilik olabileceğini anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sene sonu yaklaştığında çocuklar notları defter hâline getirmeyi düşündü. Fakat bazı notlarda özel duygular vardı. Zeynep, \"Hepsini kalıcı bir kitapta toplamak doğru mu?\" diye sordu. Nazan Hanım, sınıfça yazılmış genel ve izin verilmiş ifadelerin seçilebileceğini, kişileri tanımlayabilecek özel ayrıntıların çıkarılması veya hiç kullanılmaması gerektiğini anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", yalnızca anonim genel iyilik fikirlerini içeren küçük bir broşür hazırlamayı önerdi. Böylece kimsenin istemediği bir hatıra başkalarına dağıtılmamış oldu.\n\nBroşürün ilk sayfasına başlık bulmak zorlaştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " \"Gizli Kahramanların Sınıfı\" istiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu ismin yeniden gizli kişiyi bulmaya yöneltebileceğini düşündü. Zeynep, \"Bir İyilik Fark Ettim\" başlığını önerdi. Herkes bunu sevdi. Çünkü başlık bir kişiye değil, birlikte gelişen bir alışkanlığa işaret ediyordu. Broşürde kısa örnekler vardı: söz kesmeden dinlemek, uygun zamanda yardım teklif etmek, başkasının mahremiyetini korumak, ortak alanı temiz bırakmak. Her örneğin yanında tek cümlelik bir düşünme sorusu yer alıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dönemin son haftasında mavi yıldızlı yeni bir not gelmedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " biraz üzüldü. \"Görünmez yazar artık yazmıyor,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Belki başka biçimde iyilik yapıyordur,\" diye cevap verdi. Zeynep panonun önünden geçerken durdu. \"Yazarın kim olduğunu hâlâ merak ediyor musunuz?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir süre düşündü. \"Eskisi kadar değil,\" dedi. \"Artık hepimiz bir şey yazıyoruz.\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", mavi yıldızlı ilk notun kopyasını defterine yapıştırdı. Altına şu cümleyi yazdı: Bir kişinin adını bilmiyorum ama başlattığı iyiliğin nasıl büyüdüğünü gördüm. Sonra defteri kapattı. Gizem çözülmemişti; fakat sınıftaki pek çok şey değişmişti. Daha çok öğrenci birbirine teşekkür ediyor, kimse fark etmese de yardım edenler artıyordu.\n\nDönem sonunda "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " panonun eski fotoğraflarına baktı. İlk fotoğrafta yalnız mavi yıldızlı tek bir kâğıt vardı. Sonrakilerde kutu, renkli kartlar ve öğrencilerin çizdiği küçük resimler görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sayıların artmasına sevinse de bunu bir puan yarışına çevirmemeleri gerektiğini hatırladı. Bazı günler az not vardı ama sınıfta güzel davranışlar yine görülüyordu. Kimin daha fazla iyilik yaptığı sayılamazdı; çünkü bazı yardımlar hiç kimsenin görmediği anlarda gerçekleşiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir gün "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " sessizce bir şey söyledi: \"Başta yazarı bulursam herkes bana 'Harika dedektif' diyecek sanıyordum.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şaşırdı. \"Şimdi?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " biraz düşündü. \"Şimdi kim olduğunu bulmamamın daha doğru olduğunu biliyorum. Çünkü sınıfımızdaki güzel şeyleri onun adı olmadan da fark edebildik.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu duyunca sevindi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " merakı kaybolmamıştı; yalnız yön değiştirmişti. Artık bir insanın sırrını çözmeye değil, nasıl daha iyi bir arkadaş olabileceğini öğrenmeye merak duyuyordu.\n\nZeynep o gün sınıftan son çıkanlardan biriydi. Panoya baktı, ardından çantasından küçük bir kâğıt çıkardı. Kâğıdın üzerinde bir cümle yazıyordu, fakat kimseye göstermedi. Bir süre düşünerek kâğıdı yeniden çantasına koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu kapıda bekliyordu. \"Geliyor musun?\" diye sordu. Zeynep başını salladı. Birlikte koridora çıktılar. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıdı merak etmişti ama sormadı. Her düşüncenin herkesle paylaşılması gerekmediğini artık biliyordu. Arkadaşının yanında sessizce yürümek de bazen iyi bir davranıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıfın hazırladığı küçük broşür başka bir okuldan da ilgi gördü. Öğretmenler örnekleri çocukların yaşına göre nasıl uyarlayabileceklerini konuştu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", uygulamanın aynı şekilde kopyalanması gerekmediğini söyledi. \"Bizim kutumuz işe yaradı çünkü kurallarını birlikte belirledik,\" dedi. \"Başka sınıflar da kendi ihtiyaçlarını konuşmalı.\" Nazan Hanım bu sözü takdir etti. Çünkü iyi bir fikir, uygulandığı yerdeki insanların duygularını ve haklarını dikkate aldığında değer kazanıyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " okuldan çıkarken panoda küçük bir boşluk gördü. Elini cebine atıp not kâğıdı aradı, sonra vazgeçti. Bugün bir şey yazmak istemiyordu. Bunun yerine koridorda elindeki kitapları taşımakta zorlanan arkadaşına yardım isteyip istemediğini sordu. Arkadaşı kabul edince birlikte yürüdüler. Kimse onları görmemiş olabilir, kimse panoya not yazmayabilirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunun önemsiz olduğunu düşünmüyordu. Çünkü o an yardım etmiş olmak, başkalarının bunu öğrenmesinden daha değerliydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sene sonunda Nazan Hanım, öğrencilere tek bir soru sordu: \"Bu etkinlik size ne öğretti?\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " elini kaldırdı. \"Bazen bir sırrı çözmekten daha iyi şeyler var,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülerek, \"Mesela o sırrın doğurduğu iyiliği çoğaltmak,\" diye tamamladı. Zeynep de sessizce başını salladı. Sınıf, görünmez yazarın kim olduğunu öğrenmedi. Ama belki de en güzel son buydu: Çünkü artık panoda yalnız bir kişinin değil, herkesin iyiliğinin izleri vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yaz tatilinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk notun fotoğrafını defterinin arasında buldu. Üzerindeki mavi yıldız artık ona bir dedektif işareti gibi görünmüyordu. Daha çok küçük bir kapıyı hatırlatıyordu: Birinin yaptığı iyi davranışı fark edip ona saygıyla yaklaşmanın kapısını. Defterini kapattı, ertesi yıl için bir hedef yazdı: \"Yalnızca iyilik yapanı görmek değil, yardıma ihtiyaç duyanı da anlamak.\" Sonra hedefinin yanına bir soru ekledi: \"Bu kişiye neyin iyi geleceğini gerçekten biliyor muyum, yoksa önce sormalı mıyım?\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ikinci seçeneğin daha güvenilir olduğunu öğrendiği için kendine gülümsedi. İyi bir arkadaşlık, bazen en güzel soruyla başlıyordu. Ve bir sınıfı değiştirmek için herkesin kim olduğunu bilmek gerekmiyordu. İyiliğin başlattığı küçük hareket, adı açıklanmadan da yeni ve güçlü arkadaşlıkların içinde sessizce ve güvenle yaşamaya devam edebilirdi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr072_soz_kesmek": [
+      {
+        "t": "metin",
+        "v": "Bir öğrenci bir dakikalık küçük bir anı anlatacak, diğeri sözünü kesmeden dinleyecekti."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "İlk notun altında ne yoktu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İmza"
+        },
+        {
+          "id": "B",
+          "metin": "Tarih"
+        },
+        {
+          "id": "C",
+          "metin": "Resim"
+        },
+        {
+          "id": "D",
+          "metin": "Kenar çizgisi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Notun altında imza yoktu; yalnızca köşede mavi bir yıldız vardı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 7,
+      "metin": "Kutunun kuralı neden önemliydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kimse isim yazmaya zorlanmıyordu; katılım isteğe bağlıydı"
+        },
+        {
+          "id": "B",
+          "metin": "Herkes isim yazmak zorundaydı"
+        },
+        {
+          "id": "C",
+          "metin": "Kutu yalnızca öğretmen içindi"
+        },
+        {
+          "id": "D",
+          "metin": "Notlar ödül için yazılıyordu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kutuya not bırakmak isteğe bağlıydı ve kimse adını yazmaya zorlanmıyordu."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 9,
+      "metin": "Nazan Hanım'a göre bir iyiliğin değeri neye bağlıdır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Panoya asılmasına bağlı değildir"
+        },
+        {
+          "id": "B",
+          "metin": "Ancak not yazılırsa değerlidir"
+        },
+        {
+          "id": "C",
+          "metin": "Yalnız öğretmenin gördüğü iyiliklerde vardır"
+        },
+        {
+          "id": "D",
+          "metin": "Notların sayısına bağlıdır"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "İyilik, panoda görünmese de değerini korur."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 11,
+      "metin": "Metinde geçen söylenti ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Doğrulanmamış, dolaşan haber ya da iddia"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür kitap"
+        },
+        {
+          "id": "C",
+          "metin": "Bir çeşit bayrak"
+        },
+        {
+          "id": "D",
+          "metin": "Bir oyun kuralı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Söylenti, kanıtı olmadan kulaktan kulağa yayılan bilgidir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr072_imzasiz",
+        "tur": "kelime",
+        "yazim": "imzasız",
+        "anlam": "Kimin yazdığı belirtilmemiş, adı ya da imzası olmayan.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_anonim",
+        "tur": "kelime",
+        "yazim": "anonim",
+        "anlam": "Adı belli olmayan, kimliği gizli kalan.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_kimlikli",
+        "tur": "kelime",
+        "yazim": "imzalı",
+        "anlam": "Kimliği ya da adı belli olan.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_soylenti",
+        "tur": "kelime",
+        "yazim": "söylenti",
+        "anlam": "Kanıtı belli olmadan dolaşan haber.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_dedikodu",
+        "tur": "kelime",
+        "yazim": "dedikodu",
+        "anlam": "Bir kişi hakkında kulaktan kulağa yayılan konuşma.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_dogrulanmis_bilgi",
+        "tur": "kelime",
+        "yazim": "doğrulanmış bilgi",
+        "anlam": "Kanıtlarla sınanmış, doğru kabul edilen bilgi.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_gonulluluk",
+        "tur": "kelime",
+        "yazim": "gönüllülüğün",
+        "anlam": "Zorunluluk olmadan, isteyerek yapılan iş.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_istek",
+        "tur": "kelime",
+        "yazim": "isteğe bağlı",
+        "anlam": "Kişinin kendi isteğine bırakılmış.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_zorunluluk",
+        "tur": "kelime",
+        "yazim": "zorunluluk",
+        "anlam": "Yapılmak zorunda olunan şey.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_soz_kesmek",
+        "tur": "deyim",
+        "yazim": "sözünü kesmek",
+        "anlam": "Birinin konuşmasını yarıda bölmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_lafini_bolmek",
+        "tur": "deyim",
+        "yazim": "lafını bölmek",
+        "anlam": "Konuşan birini durdurarak araya girmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr072_sabirla_dinlemek",
+        "tur": "kelime",
+        "yazim": "sabırla dinlemek",
+        "anlam": "Karşıdakini sözünü bitirene kadar beklemek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr072_imzasiz",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr072_imzasiz"
+          },
+          {
+            "girdi": "hr072_anonim"
+          },
+          {
+            "girdi": "hr072_kimlikli"
+          }
+        ]
+      },
+      {
+        "ad": "hr072_soylenti",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr072_soylenti"
+          },
+          {
+            "girdi": "hr072_dedikodu"
+          },
+          {
+            "girdi": "hr072_dogrulanmis_bilgi"
+          }
+        ]
+      },
+      {
+        "ad": "hr072_gonulluluk",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr072_gonulluluk"
+          },
+          {
+            "girdi": "hr072_istek"
+          },
+          {
+            "girdi": "hr072_zorunluluk"
+          }
+        ]
+      },
+      {
+        "ad": "hr072_soz_kesmek",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr072_soz_kesmek"
+          },
+          {
+            "girdi": "hr072_lafini_bolmek"
+          },
+          {
+            "girdi": "hr072_sabirla_dinlemek"
+          }
+        ]
+      }
+    ]
+  }
+}

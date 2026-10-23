@@ -1,0 +1,696 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr037-son-pasin-hikayesi",
+    "baslik": "Son Pasın Hikâyesi",
+    "tur": "spor",
+    "konu": "takim_ruhu",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D1",
+      "D4"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 4,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "sabir_emek",
+        "dayanisma"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D1",
+        "yardimci_deger": "D4"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "pas_hr037",
+          "tur": "lexeme",
+          "etiket": "pas",
+          "yuva": "hr037_pas",
+          "islev": "first_hint"
+        },
+        {
+          "id": "kale_hr037",
+          "tur": "lexeme",
+          "etiket": "kale",
+          "yuva": "hr037_kale",
+          "islev": "application"
+        },
+        {
+          "id": "savunma_hr037",
+          "tur": "lexeme",
+          "etiket": "savunma",
+          "yuva": "hr037_savunma",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr037",
+          "tur": "idiom",
+          "etiket": "Gözden kaçırmak",
+          "yuva": "hr037_gozden_kacirmak",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr037",
+          "tur": "concept",
+          "etiket": "Takım ruhu ve adalet",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 494,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 6,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 8,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Son dakikada gol atma fırsatı var. Kerem topu kendine mi tutacak, arkadaşına mı verecek?",
+    "durum": "taslak",
+    "fis_kodu": "HR-037"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okullar arası futbol turnuvasının son maçı başlamadan önce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ayakkabısının bağcıklarını üçüncü kez bağladı. Bu karşılaşmada bir gol atmayı öyle çok istiyordu ki takım arkadaşlarının konuşmalarını duymuyordu bile.\n\nKaptan Duru, \"Hep birlikte oynarsak kazanabiliriz,\" dedi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı ama içinden, Kazandıran gol benim olmalı, diye geçirdi.\n\nMaçtan bir gün önce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bahçede tek başına şut çalışmıştı. Her golün ardından ellerini havaya kaldırıyor, hayalinde arkadaşlarının kendisini alkışladığını görüyordu. Babası kenardan seslenmişti: \"Futbol tek kişinin oynadığı bir oyun değil.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Biliyorum,\" demiş ama nedenini tam düşünmemişti. Şimdi tribüne bakarken bu konuşma aklına geldi. Kazanmak istiyordu; bir yandan da arkadaşlarının kendisine güvenmesini. Fakat yalnızca kendi golünü düşünürse onların güvenini nasıl kazanacaktı?"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk yarıda "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " topu iki kez "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr037_kale"
+        },
+        {
+          "t": "metin",
+          "v": " taşıdı. Birinde şutunu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr037_savunma"
+        },
+        {
+          "t": "metin",
+          "v": " engelledi, ötekinde kalecinin üzerine vurdu."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr037_gozden_kacirmak"
+        },
+        {
+          "t": "metin",
+          "v": " Devre arasında takım gerideydi.\n\nÖğretmenleri taktik tahtasını açtı. \"Şut çekmek cesaret ister,\" dedi, \"ama iyi bir oyuncu sahadaki arkadaşlarını da görür.\"\n\nDuru, \""
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bugün çok iyi koşular yapıyor,\" diye ekledi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Biliyorum, ama gol atma fırsatını kaçırmaktan korkuyorum,\" dedi.\n\n\"Bazen fırsat topu paylaşınca büyür,\" diye cevap verdi Duru."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğretmen, tahta üzerinde üç küçük nokta çizerek topun gidebileceği yolları göstermişti. Bir çizgi doğrudan kaleye gidiyordu ama önünde iki savunmacı vardı. Diğer çizgi, boş alandaki arkadaşına uzanıyordu. \"İyi karar vermek, seçeneği görmekle başlar,\" demişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizimleri aklında tutmaya çalıştı. Sahaya dönünce seyircinin sesini değil, arkadaşlarının konumlarını dinledi. Duru ona boş alanı eliyle gösterince ilk kez ne yapacağını önceden planladı.\n\nİkinci yarıda takım daha dikkatli oynadı. Duru topu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " aktardı; "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez hemen şut çekmek yerine etrafına baktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr037_pas"
+        },
+        {
+          "t": "metin",
+          "v": " verdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " topu geri gönderince savunmanın arkasında boşluk açıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " golü attı. Skor eşitlendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Son bir dakika kalmıştı. Rakip takımın savunması "
+        },
+        {
+          "t": "kahraman",
+          "hal": "belirtme"
+        },
+        {
+          "t": "metin",
+          "v": " iki oyuncuyla karşıladı. O yine kaleye yöneldi; tribünden adını duyuyordu. Tam vuracakken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "belirtme",
+          "yedek": "bir arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " gördü. Kaleye daha yakındı ve önünde kimse yoktu.\n\nBir an içinde iki düşünce yarıştı: Golü kendim atabilirim. Pas verirsem takım daha iyi bir fırsat yakalar.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ayağını çevirdi, topu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": " gönderdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " düzgün bir vuruşla golü attı. Hakemin son düdüğüyle çocuklar sevinç içinde birbirlerine sarıldı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nTakım kupayı alırken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \""
+        },
+        {
+          "t": "vurgu",
+          "v": "Golü ben attım ama fırsatı sen hazırladın"
+        },
+        {
+          "t": "metin",
+          "v": ",\" dedi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. \"Ben de yalnızca topa bakarsam arkadaşlarımı gözden kaçırdığımı anladım.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rakip takımın kalecisi de maç sonunda yanlarına geldi. \"İyi oynadınız,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun elini sıktı. \"Sen de zor şutları kurtardın,\" diye karşılık verdi. Öğretmen, kazanmanın rakibe saygıyı azaltmaması gerektiğini hatırlattı. Çocuklar kupayı sırayla tutarak fotoğraf çektirdiler. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk fotoğrafta kenarda kalmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu ortalarına çağırdı. Çünkü o gün en çok öğrendiği şeylerden biri, sahadaki kimsenin görünmez olmaması gerektiğiydi.\n\nSoyunma odasında Duru ona bir fotoğraf gösterdi. Karede bütün takım aynı anda zıplıyordu. Hiç kimsenin yüzünde kimin gol attığına dair bir hesap yoktu. Öğretmenleri, \"İşte takım olmak bu,\" dedi. \"Bir kişinin parlaması değil, herkesin birbirinin ışığını artırması.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafı çantasına koydu. Eve giderken bir şeyi daha düşündü: Arkadaşını görebilmek için bazen topa değil, bütün sahaya bakmak gerekiyordu. Bu yalnızca futbolda değil, birlikte yapılan her işte önemliydi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr037_gozden_kacirmak": [
+      {
+        "t": "metin",
+        "v": "Yan tarafta boş bekleyen "
+      },
+      {
+        "t": "yoldas",
+        "hal": "belirtme",
+        "yedek": "bir arkadaşı"
+      },
+      {
+        "t": "metin",
+        "v": " gözden kaçırmıştı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Kerem maçtan önce ne yaptı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bağcıklarını üçüncü kez bağladı"
+        },
+        {
+          "id": "B",
+          "metin": "Top çalıştı"
+        },
+        {
+          "id": "C",
+          "metin": "Kaptanla konuştu"
+        },
+        {
+          "id": "D",
+          "metin": "Kupayı aldı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kerem, bağcıklarını üçüncü kez bağlayarak maça hazırlandı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Kerem ilk yarıda neden gol atamadı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Boşta bekleyen arkadaşını fark etmedi ve şutları engellendi"
+        },
+        {
+          "id": "B",
+          "metin": "Kalecinin çok iyi olduğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Sahada yağmur yağdığı için"
+        },
+        {
+          "id": "D",
+          "metin": "Topu kaybettiği için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kerem, boşta bekleyen arkadaşını görmediği için pas vermedi, şutları da engellendi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 5,
+      "metin": "Öğretmenin takım tanımına göre takım olmak nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir kişinin parlaması değil, herkesin birbirinin ışığını artırması"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnız en çok gol atan oyuncu"
+        },
+        {
+          "id": "C",
+          "metin": "Tek başına oynamak"
+        },
+        {
+          "id": "D",
+          "metin": "Rakibi yenmek"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Takım, herkesin birbirini desteklediği bir yapıdır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "Metinde geçen savunma sözcüğü ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Rakip takımın topu kaleye ulaştırmamaya çalışan oyuncuları"
+        },
+        {
+          "id": "B",
+          "metin": "Bir çeşit şut"
+        },
+        {
+          "id": "C",
+          "metin": "Kalenin rengi"
+        },
+        {
+          "id": "D",
+          "metin": "Hakemin düdüğü"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Savunma, rakibin hücumunu durdurmaya çalışan oyuncular ve bu görevdir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr037_pas",
+        "tur": "kelime",
+        "yazim": "pas",
+        "anlam": "Topu bir oyuncunun diğerine göndermesi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_sut",
+        "tur": "kelime",
+        "yazim": "şut",
+        "anlam": "Topa kuvvetle vurarak kaleye gönderme.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_orta",
+        "tur": "kelime",
+        "yazim": "orta",
+        "anlam": "Kanattan topu ceza sahasına gönderme.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_kale",
+        "tur": "kelime",
+        "yazim": "kaleye",
+        "anlam": "Gol atılan, iki direk ve üst çubuktan oluşan bölüm.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_file",
+        "tur": "kelime",
+        "yazim": "file",
+        "anlam": "Kalenin arkasına gerilen ağ.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_saha",
+        "tur": "kelime",
+        "yazim": "saha",
+        "anlam": "Maçın oynandığı alan.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_savunma",
+        "tur": "kelime",
+        "yazim": "savunma",
+        "anlam": "Rakibin hücumunu durdurmak için oynanan oyun.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_hucum",
+        "tur": "kelime",
+        "yazim": "hücum",
+        "anlam": "Rakip kaleye doğru ilerleme.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_korunma",
+        "tur": "kelime",
+        "yazim": "korunma",
+        "anlam": "Zarar görmemek için önlem alma.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_gozden_kacirmak",
+        "tur": "deyim",
+        "yazim": "gözden kaçırmak",
+        "anlam": "Bir ayrıntıyı ya da kişiyi fark etmemek.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_gozu_acik",
+        "tur": "deyim",
+        "yazim": "gözü açık olmak",
+        "anlam": "Dikkatli ve uyanık olmak.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr037_goze_batmak",
+        "tur": "deyim",
+        "yazim": "göze batmak",
+        "anlam": "Dikkat çekmek.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr037_pas",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr037_pas"
+          },
+          {
+            "girdi": "hr037_sut"
+          },
+          {
+            "girdi": "hr037_orta"
+          }
+        ]
+      },
+      {
+        "ad": "hr037_kale",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr037_kale"
+          },
+          {
+            "girdi": "hr037_file"
+          },
+          {
+            "girdi": "hr037_saha"
+          }
+        ]
+      },
+      {
+        "ad": "hr037_savunma",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr037_savunma"
+          },
+          {
+            "girdi": "hr037_hucum"
+          },
+          {
+            "girdi": "hr037_korunma"
+          }
+        ]
+      },
+      {
+        "ad": "hr037_gozden_kacirmak",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr037_gozden_kacirmak"
+          },
+          {
+            "girdi": "hr037_gozu_acik"
+          },
+          {
+            "girdi": "hr037_goze_batmak"
+          }
+        ]
+      }
+    ]
+  }
+}

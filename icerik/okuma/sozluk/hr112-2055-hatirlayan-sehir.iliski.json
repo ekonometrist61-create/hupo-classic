@@ -1,0 +1,62 @@
+{
+  "hr112_ongoru": {
+    "es": [
+      "hr112_tahmin"
+    ],
+    "zit": []
+  },
+  "hr112_kesinlik": {
+    "es": [],
+    "zit": [
+      "hr112_tahmin"
+    ]
+  },
+  "hr112_veri_azaltma": {
+    "es": [
+      "hr112_minimizasyon"
+    ],
+    "zit": []
+  },
+  "hr112_veri_birikimi": {
+    "es": [],
+    "zit": [
+      "hr112_minimizasyon"
+    ]
+  },
+  "hr112_karsi_sav": {
+    "es": [
+      "hr112_itiraz"
+    ],
+    "zit": []
+  },
+  "hr112_onay": {
+    "es": [],
+    "zit": [
+      "hr112_itiraz"
+    ]
+  },
+  "hr112_belge": {
+    "es": [
+      "hr112_kayit"
+    ],
+    "zit": []
+  },
+  "hr112_unutma": {
+    "es": [],
+    "zit": [
+      "hr112_kayit"
+    ]
+  },
+  "hr112_icine_agirlik_cokmek": {
+    "es": [
+      "hr112_agirlik"
+    ],
+    "zit": []
+  },
+  "hr112_ici_rahatlamak": {
+    "es": [],
+    "zit": [
+      "hr112_agirlik"
+    ]
+  }
+}

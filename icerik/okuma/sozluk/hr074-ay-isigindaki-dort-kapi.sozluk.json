@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr074_gozlem",
+      "tur": "kelime",
+      "yazim": "gözlem",
+      "anlam": "Bir şeyi dikkatle izleyip gördüklerini kaydetme.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr074_yorum",
+      "tur": "kelime",
+      "yazim": "yorum",
+      "anlam": "Gözlemden yola çıkarak yapılan açıklama.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr074_cikarim",
+      "tur": "kelime",
+      "yazim": "çıkarım",
+      "anlam": "Bilgilerden yola çıkarak varılan sonuç.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr074_butce",
+      "tur": "kelime",
+      "yazim": "bütçeyle",
+      "anlam": "Gelir ve giderlerin önceden planlanması; ayrılan para.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr074_odenek",
+      "tur": "kelime",
+      "yazim": "ödenek",
+      "anlam": "Belirli bir amaç için ayrılmış para.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr074_tasarruf",
+      "tur": "kelime",
+      "yazim": "tasarruf",
+      "anlam": "Harcamayı azaltarak para biriktirme.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr074_goz_karari",
+      "tur": "deyim",
+      "yazim": "göz kararı",
+      "anlam": "Ölçmeden, tahmini olarak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr074_gozu_kapali",
+      "tur": "deyim",
+      "yazim": "gözü kapalı",
+      "anlam": "Düşünmeden, dikkat etmeden.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr074_titizlikle",
+      "tur": "kelime",
+      "yazim": "titizlikle hesap etmek",
+      "anlam": "Her ayrıntıyı tek tek düşünerek hesaplamak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr074_gozlem",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr074_gozlem"
+        },
+        {
+          "girdi": "hr074_yorum"
+        },
+        {
+          "girdi": "hr074_cikarim"
+        }
+      ]
+    },
+    {
+      "ad": "hr074_butce",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr074_butce"
+        },
+        {
+          "girdi": "hr074_odenek"
+        },
+        {
+          "girdi": "hr074_tasarruf"
+        }
+      ]
+    },
+    {
+      "ad": "hr074_goz_karari",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr074_goz_karari"
+        },
+        {
+          "girdi": "hr074_gozu_kapali"
+        },
+        {
+          "girdi": "hr074_titizlikle"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

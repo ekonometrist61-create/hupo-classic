@@ -1,0 +1,595 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr034-2040-in-konusan-okul-cantasi",
+    "baslik": "2040'ın Konuşan Okul Çantası",
+    "tur": "mizah",
+    "konu": "dijital_denge",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D12",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 4,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "okul",
+        "bilim_teknoloji"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D12",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "ajanda_hr034",
+          "tur": "lexeme",
+          "etiket": "ajanda",
+          "yuva": "hr034_ajanda",
+          "islev": "first_hint"
+        },
+        {
+          "id": "secenek_hr034",
+          "tur": "lexeme",
+          "etiket": "seçenek",
+          "yuva": "hr034_secenek",
+          "islev": "application"
+        },
+        {
+          "id": "tebrik_hr034",
+          "tur": "lexeme",
+          "etiket": "tebrik",
+          "yuva": "hr034_tebrik",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr034",
+          "tur": "concept",
+          "etiket": "Araçları bilinçli kullanmak",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 471,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 6,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 4,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Akıllı çanta her soruyu çözüyor. Deniz neden kendi cevabını bulmak istedi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-034"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "2040 yılının pazartesi sabahı "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " okul çantası aniden konuştu:\n\n\"Günaydın! Çorapların eşleşti. Kahvaltın hazır. Matematik ödevini de yaptım!\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yorganın altından başını çıkardı. \"Ödevi mi yaptın? Ben daha soruları görmedim!\"\n\n\"Ben akıllı çantayım,\" diye cevap verdi çanta. \"İstersen dişlerini de senin yerine fırçalamayı deneyebilirim.\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. Fakat okula gidince işler karıştı. Öğretmeni problem çözmesini istediğinde çanta hemen masasından seslendi:\n\n\"Cevap kırk sekiz! Açıklaması için bir tuşa basınız!\"\n\nSınıf gülüşmeye başladı. Öğretmen, \""
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", cevabı sen nasıl buldun?\" diye sordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " cevap veremedi. Çünkü işlemi hiç denememişti. Teneffüste arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ona bir kâğıt uzattı. Üzerinde iki farklı yol gösteren bir matematik problemi vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Çantan çok hızlı,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"ama onun ne yaptığını anlamıyorsan hızının sana ne yararı var?\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " düşündü. Akşam çantanın ayarlarını açtı. Ekranda üç "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr034_secenek"
+        },
+        {
+          "t": "metin",
+          "v": " vardı: Benim yerime yap, "
+        },
+        {
+          "t": "vurgu",
+          "v": "Birlikte yap"
+        },
+        {
+          "t": "metin",
+          "v": ", Yalnızca hatırlat. "
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n\"Birlikte yap,\" dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nÇanta şaşırmış gibi küçük bir ışık yaktı. \"Emin misin? Tek başıma daha kısa sürüyor.\"\n\n\"Kısa sürmesi her zaman daha iyi olduğu anlamına gelmez.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sabah okula gelirken akıllı çanta, yağmur ihtimali olduğunu hatırlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şemsiyesini almayı unutmadı. Böylece çantanın gerçekten yararlı olduğu bir iş de ortaya çıktı. Sınıfa girince "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Benim yerime düşünmesini istemiyorum ama dikkat etmem gereken şeyleri hatırlatabilir,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " de kendi küçük "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr034_ajanda"
+        },
+        {
+          "t": "metin",
+          "v": " gösterdi: \"Ben de bunları deftere yazıyorum. Hangi araçla yaparsan yap, önemli olan kararın sende kalması.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözleri aklında tuttu.\n\nErtesi gün çanta matematik problemini okumaya başladı: \"Bir bahçede dört sıra ağaç var...\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu durdurdu. \"Önce ben çözeceğim. Takılırsam ipucu ver.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çanta sessiz kaldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dört sırayı çizdi, her sıraya altı ağaç koydu. Saydı, sonra çarpma işlemini yazdı.\n\n\"Yirmi dört!\" diye bağırdı.\n\n\"Doğru,\" dedi çanta. \"Aferin... Pardon, "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr034_tebrik"
+        },
+        {
+          "t": "metin",
+          "v": " ederim.\"\n\nO gün sınıfta teknoloji sergisi vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", çantasına yeni bir görev verdi: kaybolan defterlerin hangi rafta olduğunu hatırlatmak. Çanta herkese yardım etti, fakat kimsenin yerine ödev yapmadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sergide başka bir çocuk, çantanın her soruya doğru yanıt verdiğini görünce hemen aynısından istemişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona iki farklı kâğıt gösterdi. Birinde çantanın hazırladığı kusursuz cevaplar, diğerinde kendi silgileriyle düzelttiği işlemler vardı. \"İlkine bakınca hiçbir şey hatırlamıyorum,\" dedi. \"İkincisini yaparken iki kez yanıldım. Ama nerede yanıldığımı gördüğüm için artık yöntemi biliyorum.\" Arkadaşı, \"Demek hata yapmak bazen işe yarıyor,\" deyince öğretmen başını salladı. Bu konuşma serginin en çok ilgi gören kısmı oldu.\n\nGösteri bitince öğretmeni "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bugün çantana sen mi yardım ettin, çantan mı sana?\" diye sordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülerek cevap verdi: \"İkimiz de birbirimize. O hatırlattı, ben düşündüm.\"\n\nTam çıkacaklardı ki çanta yeniden konuştu: \"Akşam yemeğinde üç brokoli öneriyorum.\"\n\n\"Ona ben karar vereceğim!\" dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nÇanta bir süre sustu. Sonra ciddi bir sesle ekledi: \"Anlaşıldı. Brokoli danışmanlığı hizmetim şimdilik kapatıldı.\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülerken çantanın üstüne küçük bir etiket yapıştırdı: Önce kendim denerim. Ertesi sabah çanta yalnızca \"Ödev çantanda mı?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterini gösterdi. \"Bu soruyu sorman çok iyi,\" dedi. \"Cevabı kendim verebildiğim sürece yardımını seviyorum.\""
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Çanta öğretmene hangi cevabı verdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kırk sekiz"
+        },
+        {
+          "id": "B",
+          "metin": "Yirmi dört"
+        },
+        {
+          "id": "C",
+          "metin": "Altmış"
+        },
+        {
+          "id": "D",
+          "metin": "On iki"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Çanta, işlemi açıklamadan “Cevap kırk sekiz!” dedi."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Deniz neden çantanın hızlı çözmesini her zaman istemedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Hızlı çözüm, kendi düşünmesini ve öğrenmesini engelliyordu"
+        },
+        {
+          "id": "B",
+          "metin": "Çanta yavaş çalışıyordu"
+        },
+        {
+          "id": "C",
+          "metin": "Ödevi çok sevdiği için"
+        },
+        {
+          "id": "D",
+          "metin": "Öğretmen kızmıştı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Deniz, kendi cevabını bulmanın öğrenmek için önemli olduğunu anladı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Elif'in sözüne göre önemli olan nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kararın kişinin kendisinde kalması"
+        },
+        {
+          "id": "B",
+          "metin": "Çantanın hızlı olması"
+        },
+        {
+          "id": "C",
+          "metin": "Ödevin hiç yapılmaması"
+        },
+        {
+          "id": "D",
+          "metin": "Okulun kapanması"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Araç ne olursa olsun karar vermek insanın kendisine aittir."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "Metinde geçen seçenek sözcüğü ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Birden fazla arasından seçilebilecek durum"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tuş"
+        },
+        {
+          "id": "C",
+          "metin": "Bir sınıf"
+        },
+        {
+          "id": "D",
+          "metin": "Bir ödev"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Seçenek, birkaç olanağın her biridir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr034_ajanda",
+        "tur": "kelime",
+        "yazim": "ajandasını",
+        "anlam": "Gün ve görevleri yazmak için kullanılan defter.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr034_takvim",
+        "tur": "kelime",
+        "yazim": "takvim",
+        "anlam": "Günleri, haftaları ve ayları gösteren çizelge.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr034_secenek",
+        "tur": "kelime",
+        "yazim": "seçenek",
+        "anlam": "Birden çok olanaktan her biri.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr034_tercih",
+        "tur": "kelime",
+        "yazim": "tercih",
+        "anlam": "Birkaç şeyden birini seçme durumu.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr034_zorunluluk",
+        "tur": "kelime",
+        "yazim": "zorunluluk",
+        "anlam": "Yapılmasının kaçınılmaz olduğu durum.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr034_tebrik",
+        "tur": "kelime",
+        "yazim": "tebrik",
+        "anlam": "Bir başarıdan dolayı kutlama sözü.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr034_kutlama",
+        "tur": "kelime",
+        "yazim": "kutlama",
+        "anlam": "Sevinç ya da başarıyı birlikte anma.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr034_taziye",
+        "tur": "kelime",
+        "yazim": "taziye",
+        "anlam": "Bir kayıp için üzüntüyü paylaşma.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr034_ajanda",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr034_ajanda"
+          },
+          {
+            "girdi": "hr034_takvim"
+          }
+        ]
+      },
+      {
+        "ad": "hr034_secenek",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr034_secenek"
+          },
+          {
+            "girdi": "hr034_tercih"
+          },
+          {
+            "girdi": "hr034_zorunluluk"
+          }
+        ]
+      },
+      {
+        "ad": "hr034_tebrik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr034_tebrik"
+          },
+          {
+            "girdi": "hr034_kutlama"
+          },
+          {
+            "girdi": "hr034_taziye"
+          }
+        ]
+      }
+    ]
+  }
+}

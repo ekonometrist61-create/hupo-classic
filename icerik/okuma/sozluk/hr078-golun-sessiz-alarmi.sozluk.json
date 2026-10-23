@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr078_ekosistem",
+      "tur": "kelime",
+      "yazim": "ekosistemde",
+      "anlam": "Canlıların ve çevrelerinin birbirine bağlı olduğu düzen.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr078_yasam_alani",
+      "tur": "kelime",
+      "yazim": "yaşam alanı",
+      "anlam": "Canlıların yaşadığı ve ihtiyaçlarını karşıladığı ortam.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr078_corak_alan",
+      "tur": "kelime",
+      "yazim": "çorak alan",
+      "anlam": "Canlının az yaşadığı kurak yer.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr078_olcum",
+      "tur": "kelime",
+      "yazim": "ölçüm",
+      "anlam": "Bir şeyin miktarını ya da büyüklüğünü belirleme işi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr078_olcme",
+      "tur": "kelime",
+      "yazim": "ölçme",
+      "anlam": "Ölçüm yapma eylemi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr078_tahmin_d",
+      "tur": "kelime",
+      "yazim": "tahmin",
+      "anlam": "Ölçmeden yapılan yorum.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr078_kulak",
+      "tur": "deyim",
+      "yazim": "kulak verdi",
+      "anlam": "Dikkatle dinlemek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr078_kulak_kabartmak",
+      "tur": "deyim",
+      "yazim": "kulak kabartmak",
+      "anlam": "Dikkatle dinlemek için hazır olmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr078_kulak_ardi",
+      "tur": "deyim",
+      "yazim": "kulak ardı etmek",
+      "anlam": "Söyleneni dikkate almamak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr078_ekosistem",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr078_ekosistem"
+        },
+        {
+          "girdi": "hr078_yasam_alani"
+        },
+        {
+          "girdi": "hr078_corak_alan"
+        }
+      ]
+    },
+    {
+      "ad": "hr078_olcum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr078_olcum"
+        },
+        {
+          "girdi": "hr078_olcme"
+        },
+        {
+          "girdi": "hr078_tahmin_d"
+        }
+      ]
+    },
+    {
+      "ad": "hr078_kulak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr078_kulak"
+        },
+        {
+          "girdi": "hr078_kulak_kabartmak"
+        },
+        {
+          "girdi": "hr078_kulak_ardi"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

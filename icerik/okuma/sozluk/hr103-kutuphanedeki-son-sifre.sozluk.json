@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr103_baglam",
+      "tur": "kelime",
+      "yazim": "bağlamı",
+      "anlam": "Bir sözcüğün, cümlenin ya da metnin geçtiği çevre ve bağlı olduğu durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_cerceve",
+      "tur": "kelime",
+      "yazim": "çerçeve",
+      "anlam": "Bir olayı ya da düşünceyi çevreleyen genel durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_baglamdan_kopuk",
+      "tur": "kelime",
+      "yazim": "bağlamdan kopuk",
+      "anlam": "Çevresinden ayrılmış, neyle ilgili olduğu belli olmayan.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_emanet",
+      "tur": "kelime",
+      "yazim": "emanet",
+      "anlam": "Bir kişiye korunmak üzere bırakılan şey ya da sorumluluk.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_odunc",
+      "tur": "kelime",
+      "yazim": "ödünç",
+      "anlam": "Geri verilmek üzere geçici olarak alınan ya da verilen şey.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_kalici_mulk",
+      "tur": "kelime",
+      "yazim": "kalıcı mülk",
+      "anlam": "Sahibinin kalıcı olarak elinde tuttuğu şey.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_okunus",
+      "tur": "kelime",
+      "yazim": "okunuş",
+      "anlam": "Bir yazının ya da sözcüğün okunma biçimi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_okuma_onerisi",
+      "tur": "kelime",
+      "yazim": "okuma önerisi",
+      "anlam": "Belirsiz bir yazı için ileri sürülen olası okunuş.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_kesin_ceviri",
+      "tur": "kelime",
+      "yazim": "kesin çeviri",
+      "anlam": "Tek anlamı kesin olarak verilen, tartışmaya kapalı çeviri.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_kanit",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_delil",
+      "tur": "kelime",
+      "yazim": "delil",
+      "anlam": "Bir olayın doğruluğunu gösteren belge ya da nesne.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_iddia",
+      "tur": "kelime",
+      "yazim": "iddia",
+      "anlam": "Bir şeyin doğru olduğunu ileri sürme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_ic_cekti",
+      "tur": "deyim",
+      "yazim": "iç çekti",
+      "anlam": "Üzüntü ya da bıkkınlıkla derin bir nefes vermek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_icini_cekmek",
+      "tur": "deyim",
+      "yazim": "içini çekmek",
+      "anlam": "Derin bir üzüntüyle ya da yorgunlukla nefes vermek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr103_ah_cekmek",
+      "tur": "deyim",
+      "yazim": "ah çekmek",
+      "anlam": "Üzüntüyle, derinden iç geçirmek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr103_baglam",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr103_baglam"
+        },
+        {
+          "girdi": "hr103_cerceve"
+        },
+        {
+          "girdi": "hr103_baglamdan_kopuk"
+        }
+      ]
+    },
+    {
+      "ad": "hr103_emanet",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr103_emanet"
+        },
+        {
+          "girdi": "hr103_odunc"
+        },
+        {
+          "girdi": "hr103_kalici_mulk"
+        }
+      ]
+    },
+    {
+      "ad": "hr103_okunus",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr103_okunus"
+        },
+        {
+          "girdi": "hr103_okuma_onerisi"
+        },
+        {
+          "girdi": "hr103_kesin_ceviri"
+        }
+      ]
+    },
+    {
+      "ad": "hr103_kanit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr103_kanit"
+        },
+        {
+          "girdi": "hr103_delil"
+        },
+        {
+          "girdi": "hr103_iddia"
+        }
+      ]
+    },
+    {
+      "ad": "hr103_ic_cekti",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr103_ic_cekti"
+        },
+        {
+          "girdi": "hr103_icini_cekmek"
+        },
+        {
+          "girdi": "hr103_ah_cekmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

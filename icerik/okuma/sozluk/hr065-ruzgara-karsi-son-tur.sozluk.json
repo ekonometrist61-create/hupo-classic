@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr065_tempo",
+      "tur": "kelime",
+      "yazim": "tempo",
+      "anlam": "Bir hareketin ya da çalışmanın hızı ve düzeni.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr065_ritim",
+      "tur": "kelime",
+      "yazim": "ritim",
+      "anlam": "Düzenli tekrar eden ses ya da hareket örüntüsü.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr065_durgunluk",
+      "tur": "kelime",
+      "yazim": "durgunluk",
+      "anlam": "Hareketsiz, yavaş durum.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr065_isinma",
+      "tur": "kelime",
+      "yazim": "ısınmadan",
+      "anlam": "Egzersizden önce vücudu hafif hareketlerle hazırlama.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr065_esneme",
+      "tur": "kelime",
+      "yazim": "esneme",
+      "anlam": "Kasları gererek esnekliği artıran hareket.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr065_sogume",
+      "tur": "kelime",
+      "yazim": "soğuma",
+      "anlam": "Egzersizden sonra vücut ısısını yavaş yavaş düşürme.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr065_dayaniklilik",
+      "tur": "kelime",
+      "yazim": "dayanıklılık",
+      "anlam": "Zorluklara karşı uzun süre direnebilme.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr065_direnc",
+      "tur": "kelime",
+      "yazim": "direnç",
+      "anlam": "Zorluğa karşı gösterilen dayanma gücü.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr065_kirilganlik",
+      "tur": "kelime",
+      "yazim": "kırılganlık",
+      "anlam": "Kolayca zarar görebilme durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr065_tempo",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr065_tempo"
+        },
+        {
+          "girdi": "hr065_ritim"
+        },
+        {
+          "girdi": "hr065_durgunluk"
+        }
+      ]
+    },
+    {
+      "ad": "hr065_isinma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr065_isinma"
+        },
+        {
+          "girdi": "hr065_esneme"
+        },
+        {
+          "girdi": "hr065_sogume"
+        }
+      ]
+    },
+    {
+      "ad": "hr065_dayaniklilik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr065_dayaniklilik"
+        },
+        {
+          "girdi": "hr065_direnc"
+        },
+        {
+          "girdi": "hr065_kirilganlik"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

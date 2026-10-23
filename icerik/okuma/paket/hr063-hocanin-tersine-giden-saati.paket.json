@@ -1,0 +1,1019 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr063-hocanin-tersine-giden-saati",
+    "baslik": "Hoca'nın Tersine Giden Saati",
+    "tur": "tarih_kultur",
+    "konu": "olcum_gozlem",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D3"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kultur_miras",
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D3"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "golge_hr063",
+          "tur": "lexeme",
+          "etiket": "gölge",
+          "yuva": "hr063_golge",
+          "islev": "first_hint"
+        },
+        {
+          "id": "terazi_hr063",
+          "tur": "lexeme",
+          "etiket": "terazi",
+          "yuva": "hr063_terazi",
+          "islev": "application"
+        },
+        {
+          "id": "medrese_hr063",
+          "tur": "lexeme",
+          "etiket": "medrese",
+          "yuva": "hr063_medrese",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr063",
+          "tur": "idiom",
+          "etiket": "Boynunu bükmek",
+          "yuva": "hr063_boynunu_bukmek",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr063",
+          "tur": "concept",
+          "etiket": "Gözlem, koşul ve kanıt",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 2015,
+        "tahmini_sure_dk": 20,
+        "sayfa_sayisi": 16,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 51,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Meydandaki saat yanlış mı, yoksa herkes yanlış yere mi bakıyor? Hoca ve Yusuf gölgeyle ölçüm yapıyor.",
+    "durum": "taslak",
+    "fis_kodu": "HR-063"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşehir'in meydanında herkes aynı anda telaşlanmaya başlayınca, Nasreddin Hoca gökyüzüne baktı. Güneş henüz öğle yerine gelmemişti. Buna rağmen dükkânların önündeki insanlar öğlen olduğunu söylüyor, fırıncı ekmekleri aceleyle çıkarıyor, çıraklar kepenkleri kapatıyordu. İşin tuhafı, meydandaki büyük saatin akrebi de on ikinin üzerinde duruyordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "gunes"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n\"Güneş mi şaşırdı, saat mi?\" diye sordu Hoca yanındaki küçük "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", köyün marangozunun çırağıydı. Çivi kutusunu taşırken kalabalığın arasına sıkışmış, saatin kulesine bakıyordu. \"Saat şaşırmış olamaz,\" dedi. \"Geçen ay kasabadan usta getirdiler. Herkes ona bakıyor.\"\n\nHoca sakalını sıvazladı. \"Herkesin bakması bir şeyin doğru olduğunu gösterir mi?\"\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " cevap vermek yerine elindeki kutuyu daha sıkı kavradı. Ustanın yaptığı saati yanlış bulmak ona saygısızlık gibi geliyordu. Fakat "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr063_golge"
+        },
+        {
+          "t": "metin",
+          "v": " bakınca günün henüz erken olduğunu da fark etti. Hoca'nın sorusu, cebine düşmüş küçük bir taş gibi aklında kaldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O gün pazara gelenler birbirine karışmıştı. Tereyağı satıcısı müşterilerini beklerken sepetlerini toplamış, değirmenci un çuvallarını vaktinden önce göndermişti. Küçük Elif, babasının \"Güneş tepedeyken gel\" sözünü tuttuğu hâlde buluşmaya geç kalmış sayılmıştı. Meydandaki saat yalnızca vakti söylemiyor, insanların sözlerine de yön veriyordu.\n\n\"Bunun bir hesabı olmalı,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Ama saat ustanın işi. Biz nereden anlayalım?\"\n\nHoca gülümsedi. \"Anlamadığımız şeyi sorarak başlarız. Sonra bakarız, ölçeriz, karşılaştırırız. Belki hata saatindir, belki bizim baktığımız yerindir.\"\n\nErtesi sabah Hoca, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ayrilma",
+          "yedek": "bir arkadaştan"
+        },
+        {
+          "t": "metin",
+          "v": " iki eşit uzunlukta çubuk getirmesini istedi. Çubuklardan birini meydana, diğerini "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr063_medrese"
+        },
+        {
+          "t": "metin",
+          "v": " avlusuna diktiler. Her ikisinin yanına küçük taşlarla birer halka yaptılar. Güneş yükseldikçe çubukların gölgeleri kısalıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk iş olarak gölgelerin ucuna işaretler koydu.\n\n\"Gölge neden hareket ediyor?\" diye sordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Güneşin gökyüzünde görünen yeri değiştiği için,\" dedi Hoca. \"Bizim çubuklarımız ise yerinde duruyor. Bir şeyin değiştiğini anlamak için değişmeyen bir şeye ihtiyacımız var.\"\n\nİlk ölçüm sırasında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " acele etti. Gölgenin ucunu işaretlerken çubuğu eliyle hafifçe oynattı. Sonraki işaret diğerleriyle uyuşmayınca kaşlarını çattı. \"Demek bütün hesabımız yanlış.\"\n\n\"Bütün hesap mı?\" diye sordu Hoca. \"Yoksa bir işaret mi?\"\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çubuğun eğildiğini fark edince utandı. Hoca, taşların arasından eğilmiş olanı kaldırıp düz durması için yeniden toprağa bastırdı. \"Hata, doğruyu arayanın düşmanı değildir,\" dedi. \"Yeter ki onu saklamayalım.\"\n\nÖğlene doğru gölgeler kısaldı, sonra ters yöne uzamaya başladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunun değiştiği anı dikkatle not etti. İki avludaki sonuçlar birbirine yakındı. Meydan saatinin gösterdiği öğlen ise bu andan epey önce gelmişti. Çocuk defterindeki iki saati yan yana yazdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Saati geri almak gerek,\" dedi sevinerek.\n\nHoca başını salladı. \"Belki. Ama önce saatle ilgili ne biliyoruz?\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kuleyi işaret etti: \"Her gün aynı miktarda ileri gidiyor mu, yoksa yalnızca yanlış bir zamana mı ayarlanmış?\" Hoca, çocuğun sorusunu duyunca mutlulukla güldü. \"Şimdi gerçekten ölçmeye başladın.\"\n\nÜç gün boyunca "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", sabah güneşini, çubuk gölgelerini ve saatin gösterdiği vakti karşılaştırdı. Bir gün hava bulutlandı; gölgeyi seçemediler. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " o günün karşısına büyük bir soru işareti koydu. Komşuları, \"Çocuk gibi işaret koyacağınıza kuleye çıkıp saati düzeltin,\" diye söylendi."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr063_boynunu_bukmek"
+        },
+        {
+          "t": "metin",
+          "v": " \"Henüz nedenini bilmiyoruz,\" dedi.\n\nDördüncü gün, fırıncı Rıza Usta yanlarına yaklaştı. Saati yaptıranlardan biri olduğunu söyleyince "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " telaşlandı. \"Biz sizin saatinizi bozuk bulduk,\" deyiverdi. Ustanın yüzü asıldı. Hoca araya girdi: \"Saati değil, gösterdiği vakti araştırıyoruz. Yapılan işi küçümsemiyoruz; herkesin işine yarasın istiyoruz.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rıza Usta, yazılan notları dikkatle inceledi. \"Ben bu saati her sabah cami avlusundaki eski güneş işaretine göre kurduruyorum,\" dedi. \"Hatta tam doğru olsun diye üzerine bir çizgi çizdim.\"\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " o çizgiyi merak etti. Üçü birlikte avluya gittiler. Rıza Usta'nın gösterdiği taşın üzerinde uzun yıllar önce çizilmiş ince bir işaret vardı. Fakat hemen yanı başındaki dut ağacı büyümüş, öğle vakti taşın üzerine farklı bir gölge düşürmeye başlamıştı. Rıza Usta, çubuğun gölgesiyle ağacın gölgesini birbirine karıştırmıştı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " taşın başında eğilip uzun uzun baktı. \"Çizgi yerinde, fakat çevresi değişmiş,\" dedi. \"O hâlde eski işaret artık aynı işi görmüyor.\"\n\nHoca, \"Bir zamanlar işe yarayan bir yöntem, şartlar değişince yeniden sınanmalı,\" dedi. \"Saat tersine gidiyor sandık; meğer biz dünün gölgesine bakıyormuşuz.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rıza Usta'nın kulaklarına kadar kızardığı görüldü. \"Bütün kasaba bana gülecek.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onun bu sözünden üzüldü. Çünkü kendi çubuğunu eğdiği günü hatırladı. \"Ben de ölçerken hata yaptım,\" dedi. \"Hoca bana yanlışımı saklamamamı söyledi.\"\n\n\"Üstelik,\" diye ekledi Hoca, \"bir insanın hatasını anlaması, hiç hata yapmadığını iddia etmesinden daha değerli olabilir.\" Rıza Usta buna cevap vermedi ama saat ustasını çağırmaya razı oldu. Kulenin kapısını çocuklara açtırmadı; yüksekte çalışmak işin uzmanına aitti.\n\nUsta kasabaya geldiğinde "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " notlarını inceledi. Dişlilerin sağlam olduğunu, saatin düzenli işlediğini fakat yanlış vakte ayarlandığını açıkladı. Bir de saat sesinin uzun süredir herkesin davranışını belirlediğini söyledi: \"Bu yüzden küçük bir ayar hatası, büyük bir karışıklık oluşturmuş.\"\n\nHoca, çırakların, satıcıların ve köylülerin önünde şöyle dedi: \"Bir kişi bir şeyi yanlış yapabilir; hepimiz yanlışın peşinden gidince onu doğruya çevirmiş olmayız.\" Kalabalık sessizleşti. Sonra fırıncı kahkaha attı. \"Demek benim ekmekler pişmeden öğlen oluyormuş!\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Saat yeniden ayarlanırken herkes meydanda toplandı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu defa kuleye değil, yere diktiği çubuğun gölgesine bakıyordu. Usta işi bitirince saatin sesi duyuldu. Meydandaki insanlar birbirine bakıp gülümsedi. Fırıncı, ekmeklerin çıkmasına hâlâ vakit olduğunu söyledi. Elif'in babası ise buluşma saatlerini bundan sonra açıkça konuşacaklarına söz verdi.\n\nFakat "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " içinde yeni bir merak doğmuştu. \"Hoca'm, güneş her gün tam aynı yolu mu izler?\" diye sordu. Hoca, \"Gölgenin mevsimlerle değiştiğini de gözlersin,\" dedi. \"Bir günün ölçüsünü bütün günlere körü körüne uygulama.\"\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi hafta yeni bir sayfa açtı. Sayfanın tepesine Bildiklerim, yanına da Henüz bilmediklerim yazdı. İlk sütuna \"Saat bazen yanlış ayarlanır\" cümlesini koydu. İkinci sütuna \"Mevsimler değiştikçe gölgeler nasıl değişir?\" sorusunu ekledi. Sorunun karşısını boş bırakmak ona artık eksiklik gibi gelmiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birkaç gün sonra meydanda küçük bir tartışma çıktı. İki tüccar, bir sepet armudun ağırlığında anlaşamıyordu. Biri \"Herkes bu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr063_terazi"
+        },
+        {
+          "t": "metin",
+          "v": " kullanır,\" diyordu. Diğeri, terazinin kefelerinin eşit durmadığını söylüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sessizce yanlarına gitti. Terazinin boş kefelerini karşılaştırmayı önerdi. Bir tarafın ağır bastığı hemen görüldü.\n\n\"Bunu nasıl fark ettin?\" diye sordular.\n\n\"Önce neye güvendiğimizi sordum,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Sonra gerçekten doğru gösterip göstermediğine baktım.\" Tüccarlar tartışmayı bırakıp teraziyi düzelttiler. Hoca uzaktan onları izliyor, öğrencisinin yalnızca zamanı değil, düşünme biçimini de öğrendiğini görüyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " defteri beşinci gün beklenmedik bir işe daha yaradı. Meydanın batı tarafındaki çeşmeye giden su, bazı günler erken kesiliyordu. Nöbetçi, suyu \"tam ikindide\" kapattığını söylüyordu. Bahçesindeki fideleri sulamak isteyen Zeliha Teyze ise suyun daha vakit dolmadan kesildiğine inanıyordu. Herkes yine saate bakıyor, fakat kimse neyin değiştiğini sormuyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez hemen hüküm vermedi. Çeşmenin yanında durup nöbetçinin hangi saate baktığını öğrendi. Adamın evinde küçük, yaylı bir saat vardı ve uzun zamandır kurulmamıştı. İki saat arasında fark çıkınca nöbetçi de şaşırdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Ben kötülük etmedim ki,\" dedi adam. \"Görevimi vaktinde yaptığımı sandım.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", onun sesindeki üzüntüyü duydu. \"Biliyorum,\" diye cevap verdi. \"Zeliha Teyze de sana kızgın değil; fideleri susuz kalınca endişelenmiş.\" Nöbetçi, suyu kapattığı zamanı meydan saatine göre belirlemeye, saat bozulursa mahalleliye haber vermeye söz verdi. Hoca, bu küçük anlaşmazlığı dinledikten sonra "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Doğru ölçüm bazen bir tartışmadan daha fazlasını düzeltir,\" dedi. \"İnsanlar birbirlerini daha iyi anlar.\"\n\nO akşam meydandaki ahşap bankta küçük bir buluşma yapıldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", defterini açıp işaretleri anlattı. Önce iki ayrı çubuğu neden kullandıklarını gösterdi. Sonra başta kendi hatası yüzünden çıkan yanlış işareti de saklamadan açıkladı. Kalabalıktan biri, \"Madem yanlış ölçtün, bütün defterine nasıl güvenelim?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir an sustu. Ardından çizilmiş sayfayı kaldırdı: \"Yanlış kaydı silseydim nerede dikkatli olmamız gerektiğini göremezdik. Yeni ölçümü yanına yazdım. Başkası da deneyebilir.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bu söz, kasabanın yazı işleriyle ilgilenen İsmail Efendi'nin hoşuna gitti. Çocuktan defteri bir günlüğüne ödünç almak istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ne kadar sevindiğini belli etmemeye çalıştı; ama defterini verirken kapağına kendi adını yazmayı unutmadı. Ertesi gün defter geri geldiğinde son sayfasına güzel bir cümle eklenmişti: Sorular kapıyı açar; ölçüler içeriye ışık tutar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " cümleyi sevdi, fakat İsmail Efendi'ye ikinci kısmı için bir soru da sordu: \"Ölçüler yanlışsa ne olacak?\" İsmail Efendi gülerek \"O zaman yeni bir pencere açarsın,\" dedi.\n\nHafta sonu Hoca, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "belirtme",
+          "yedek": "bir arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " tepeye çıkarıp kasabanın iki yakasını gösterdi. Güneş iki aynı yükseklikteki çubuğa farklı zamanlarda aynı uzunlukta gölge düşürebilirdi; bu yüzden bir tek uzunluğa bakmak her zaman yeterli değildi. Sabah kısa bir süre önce görülen gölge, öğleden sonra yine aynı uzunlukta olabilirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"O hâlde gölgenin hangi yöne düştüğünü de yazmalıyız,\" dedi. Bu öneriyi duyan Hoca elini dizine vurdu. \"İşte gözlem dediğin! Yalnız rakam değil, koşul da kaydedilir.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkisi tepenin üstünde taşlarla küçük bir yön çizelgesi hazırladı. Kuzeyi işaretlediler, sonra çubuğun gölgesini farklı saatlerde çizdiler. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", sabahları bir tarafa, öğleden sonra öbür tarafa uzanan çizgileri karşılaştırdı. Bir kez daha iki benzer işaretin aynı anlama gelmeyebileceğini gördü. Hoca, \"Aynı görünen şeylerin gerçekten aynı olup olmadığını nasıl anlarsın?\" diye sorduğunda "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " artık hazırdı: \"Yalnız görüntüye bakmam. Nerede, ne zaman, hangi şartlarda olduğunu da sorarım.\"\n\nBu gözlemler bir başka kişiyi de değiştirdi. Saat ustası onarımını bitirdikten sonra bir süre kasabada kalmış, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " çizelgesini görmüştü. Çocuğa küçük bir cetvel hediye etti. \"İyi bir usta olacaksan önce soru soran biri olmalısın,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " cetveli kabul etti ama ona dikkatle baktı. \"Önce düzgün mü diye kontrol edeceğim,\" diye karşılık verdi. Usta yüksek sesle güldü. \"Et elbette. Benden aldın diye doğru olduğunu varsayma!\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " arkadaşı Elif, bütün bu olup bitenleri dinledikten sonra başka bir soru getirdi. \"Herkes meydan saatine göre iş yaparsa ve saat yine bozulursa ne olur?\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", cevabı hemen söylemedi. İkisi Hoca'ya gidip meydanda bir duyuru tahtası yapmayı önerdiler. Saat yanlış gösterdiğinde görevli tahtaya not bırakacaktı. Usta, haftada bir saat kontrolü yapacaktı. Fırıncı, su nöbetçisi ve pazar esnafı da birbirini haberdar edecekti. Böylece bir saatin hatası kasabanın bütün işlerini altüst etmeyecekti.\n\nTahta dikilirken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kendisini hiç bu kadar işe yarar hissetmemişti. Çünkü ilk gün herkesin doğru saydığı saati sorgulamak bile gözünü korkutmuştu. Şimdi ise bir sorun çıktığında yalnızca şikâyet etmek yerine nasıl davranabileceğini biliyordu. Elif tahtanın tepesine küçük bir güneş resmi çizdi. Altına da üç kelime yazdı: "
+        },
+        {
+          "t": "vurgu",
+          "v": "Bak, sor, doğrula"
+        },
+        {
+          "t": "metin",
+          "v": ". Hoca yazıyı gördüğünde, \"Üç kelime, uzun bir nutuktan daha işe yarar,\" dedi. \"Yeter ki onları gerçekten uygulayın.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün küçük bir çocuk, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " önüne kırık saplı bir kum saati koydu. \"Bu da zamanı söyler mi?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " camın içinden dökülen kum tanelerini izledi. \"Belli bir sürenin geçişini gösterir,\" dedi. \"Ama günün hangi saati olduğunu tek başına söylemez.\" Kum saatini düz bir yere koyup iki kez çevirdiler. Kumun akış süresi yaklaşık aynıydı. Çocuk, \"O zaman fırındaki ekmeğin ne zaman çıkacağını bununla anlayabiliriz!\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. Her ölçü aletinin bir iş için uygun olduğunu görmek, saatin sırrını çözmek kadar hoşuna gitmişti. Fırıncı da denemeyi duyunca, ekmekleri yalnız kule saatinin sesine göre değil, pişme süresine ve görünüşüne göre kontrol etmeye başladı. Böylece herkes kendi işinde daha dikkatli oldu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kum saatine son kez bakıp \"Bazen en önemli şey hangi aracı kullandığın değil, neyi ölçmek istediğini bilmendir,\" diye düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bu küçük değişiklik, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " için başka bir kapı açtı. Kasabalılar tahtanın önünde durup günün notlarını okudukça ölçme işinin yalnızca saat ustasına ait olmadığını gördüler. Bazen bir çocuk sorar, bir esnaf kendi bildiğini yeniden düşünür, bir usta hatasını açıklar ve hep birlikte daha güvenilir bir yol bulurlardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunun tek başına en doğru cevabı bulmaktan farklı olduğunu düşündü. Hoca, çocuğun yüzündeki ifadeyi görünce, \"Bir soruyu birlikte düşününce akıl çoğalır,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", gözlemlerini sonraki mevsimlerde sürdürmeye karar verdi. Defterinin boş sayfaları ilk kez ona yapılacak işler listesi gibi değil, keşfedilecek bir harita gibi görünüyordu.\n\nO akşam "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", marangoz dükkânına dönerken güneş batıya doğru ilerlemişti. Çarşının pencerelerinden altın renkli ışık süzülüyor, yeni ayarlanmış saat ağır ağır akşamı bildiriyordu. Çocuğun cebinde eğri bir çivi vardı. Onu atmak yerine saklamıştı; çünkü bazen küçücük bir eğrilik koca bir hesabı değiştirebilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Evde babası, \"Meydandaki saati kim düzeltti?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " düşündü. Saat ustası dişlilere bakmıştı. Rıza Usta yanlışını kabul etmişti. Hoca doğru soruları sormuştu. Kendisi de not tutmuştu. \"Birlikte düzelttik,\" dedi. Sonra ekledi: \"Ama asıl önemli olan, herkes ona baktığı için bir şeyin doğru sayılmadığını öğrenmem.\"\n\nBabası pencerenin yanına geldi. Gölgesi yerde uzanıyordu. \"İyi bir marangoz da bunu bilir,\" dedi. \"Cetveli kullanırız ama cetvelin kenarı kırıldıysa yeniden kontrol ederiz.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. Gün boyunca öğrendiklerinin yalnızca bir saatle ilgili olmadığını anlamıştı. Kendine duyduğu güven artık başkalarını susturma isteğinden değil, soruları sabırla araştırabileceğini bilmekten geliyordu.\n\nErtesi sabah meydandan geçerken kuleye son kez baktı. Saat düzenli ilerliyordu. Fakat "
+        },
+        {
+          "t": "yoldas",
+          "hal": "belirtme",
+          "yedek": "bir arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " sevindiren, rakamların yerli yerinde olması değildi. İnsanların saati gerektiğinde sorgulayabileceklerini bilmesiydi. Kendi kendine, \"Zamanı ölçmek başka, zamanla ne yapacağını bilmek başka,\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hoca'nın o sırada meydanda söylediği son söz de buna yakıştı: \"Saat tersine dönerse kolunu düzeltiriz. Düşüncemiz tersine dönerse sorularımızı!\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. Ertesi gün yeni bir ölçüm yapmak üzere defterini açtı; bu kez sayfanın başında tek kelimelik bir başlık vardı: Merak."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr063_boynunu_bukmek": [
+      {
+        "t": "yoldas",
+        "hal": "yalin",
+        "yedek": "bir arkadaş"
+      },
+      {
+        "t": "metin",
+        "v": " ise bu defa hemen boynunu bükmedi."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Meydandaki büyük saat ne gösteriyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Öğlen on ikiyi"
+        },
+        {
+          "id": "B",
+          "metin": "Sabah altıyı"
+        },
+        {
+          "id": "C",
+          "metin": "Akşam dokuzu"
+        },
+        {
+          "id": "D",
+          "metin": "Gece yarısını"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Saatin akrebi öğlen on ikinin üzerinde duruyordu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Hoca'ya göre hata nerede olabilirdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Saatte ya da baktıkları yerde"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnızca güneşte"
+        },
+        {
+          "id": "C",
+          "metin": "Pazarda"
+        },
+        {
+          "id": "D",
+          "metin": "Kuşta"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Hoca, hem saatin hem de gözlemin yanlış olabileceğini söyledi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Hoca'nın “Hata, doğruyu arayanın düşmanı değildir” sözü neyi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Hatanın öğrenmeyi sağlayabileceğini ve saklanmaması gerektiğini"
+        },
+        {
+          "id": "B",
+          "metin": "Hiç hata yapılmaması gerektiğini"
+        },
+        {
+          "id": "C",
+          "metin": "Hatanın kimseyi ilgilendirmediğini"
+        },
+        {
+          "id": "D",
+          "metin": "Hatanın saatle ilgili olmadığını"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Hata fark edilip açıkça ele alındığında doğruya yaklaşmayı sağlar."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 8,
+      "metin": "Metinde geçen kefe ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Terazinin iki yanındaki tabla"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür ekmek"
+        },
+        {
+          "id": "C",
+          "metin": "Bir gölge"
+        },
+        {
+          "id": "D",
+          "metin": "Bir saat parçası"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kefe, terazinin ağırlığı koyulan yandaki tablasıdır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr063_golge",
+        "tur": "kelime",
+        "yazim": "gölgesine",
+        "anlam": "Bir cismin ışığı engellemesiyle oluşan karanlık alan.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr063_karti",
+        "tur": "kelime",
+        "yazim": "karartı",
+        "anlam": "Bir şeyin yüzeyde oluşturduğu koyu iz.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr063_isik",
+        "tur": "kelime",
+        "yazim": "ışık",
+        "anlam": "Gözümüzün gördüğü aydınlatıcı enerji.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr063_terazi",
+        "tur": "kelime",
+        "yazim": "teraziyi",
+        "anlam": "Ağırlığı iki kefe üzerinde karşılaştırarak ölçen araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr063_kantar",
+        "tur": "kelime",
+        "yazim": "kantar",
+        "anlam": "Ağırlık ölçmek için kullanılan büyük alet.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr063_medrese",
+        "tur": "kelime",
+        "yazim": "medresenin",
+        "anlam": "Geçmişte din ve bilim eğitimi verilen eğitim kurumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr063_mektep",
+        "tur": "kelime",
+        "yazim": "mektep",
+        "anlam": "Eski dilde okul.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr063_kutuphane",
+        "tur": "kelime",
+        "yazim": "kütüphane",
+        "anlam": "Kitapların saklandığı ve okunduğu yer.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr063_boynunu_bukmek",
+        "tur": "deyim",
+        "yazim": "boynunu bükmek",
+        "anlam": "Çaresiz ve acınacak bir duruma düşmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr063_basini_egmek",
+        "tur": "deyim",
+        "yazim": "başını eğmek",
+        "anlam": "Saygı ya da mahcubiyetle başını indirmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr063_golge",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr063_golge"
+          },
+          {
+            "girdi": "hr063_karti"
+          },
+          {
+            "girdi": "hr063_isik"
+          }
+        ]
+      },
+      {
+        "ad": "hr063_terazi",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr063_terazi"
+          },
+          {
+            "girdi": "hr063_kantar"
+          }
+        ]
+      },
+      {
+        "ad": "hr063_medrese",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr063_medrese"
+          },
+          {
+            "girdi": "hr063_mektep"
+          },
+          {
+            "girdi": "hr063_kutuphane"
+          }
+        ]
+      },
+      {
+        "ad": "hr063_boynunu_bukmek",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr063_boynunu_bukmek"
+          },
+          {
+            "girdi": "hr063_basini_egmek"
+          }
+        ]
+      }
+    ]
+  }
+}

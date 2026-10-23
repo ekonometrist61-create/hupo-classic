@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr068_seyir",
+      "tur": "kelime",
+      "yazim": "seyir",
+      "anlam": "Denizde ya da havada ilerleme ve izlenen yol.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr068_yolculuk",
+      "tur": "kelime",
+      "yazim": "yolculuk",
+      "anlam": "Bir yere gitmek için yapılan gezi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr068_demirleme",
+      "tur": "kelime",
+      "yazim": "demirleme",
+      "anlam": "Geminin demirle bir yerde sabitlenmesi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr068_rota",
+      "tur": "kelime",
+      "yazim": "rota",
+      "anlam": "İzlenecek yolun yönü ve güzergâhı.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr068_guzergah",
+      "tur": "kelime",
+      "yazim": "güzergâh",
+      "anlam": "Bir yere gitmek için izlenen yol.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr068_sapma",
+      "tur": "kelime",
+      "yazim": "sapma",
+      "anlam": "Planlanan yoldan ayrılma.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr068_numune",
+      "tur": "kelime",
+      "yazim": "numune",
+      "anlam": "İnceleme için alınan örnek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr068_ornek",
+      "tur": "kelime",
+      "yazim": "örnek",
+      "anlam": "Bir şeyin özelliklerini gösteren parça.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr068_gozleri_parladi",
+      "tur": "deyim",
+      "yazim": "gözleri parladı",
+      "anlam": "Çok sevinmek ya da heyecanlanmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr068_gozu_dolmak",
+      "tur": "deyim",
+      "yazim": "gözü dolmak",
+      "anlam": "Duygulanıp ağlamaklı olmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr068_gozleri_kapandi",
+      "tur": "deyim",
+      "yazim": "gözleri kapandı",
+      "anlam": "Uykuya dalmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr068_seyir",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr068_seyir"
+        },
+        {
+          "girdi": "hr068_yolculuk"
+        },
+        {
+          "girdi": "hr068_demirleme"
+        }
+      ]
+    },
+    {
+      "ad": "hr068_rota",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr068_rota"
+        },
+        {
+          "girdi": "hr068_guzergah"
+        },
+        {
+          "girdi": "hr068_sapma"
+        }
+      ]
+    },
+    {
+      "ad": "hr068_numune",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr068_numune"
+        },
+        {
+          "girdi": "hr068_ornek"
+        }
+      ]
+    },
+    {
+      "ad": "hr068_gozleri_parladi",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr068_gozleri_parladi"
+        },
+        {
+          "girdi": "hr068_gozu_dolmak"
+        },
+        {
+          "girdi": "hr068_gozleri_kapandi"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

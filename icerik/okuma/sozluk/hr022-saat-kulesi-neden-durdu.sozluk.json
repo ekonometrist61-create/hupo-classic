@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr022_bakim",
+      "tur": "kelime",
+      "yazim": "bakım",
+      "anlam": "Bir şeyi düzenli olarak kontrol edip korumak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr022_onarim",
+      "tur": "kelime",
+      "yazim": "onarım",
+      "anlam": "Bozulmuş bir şeyi yeniden düzgün çalışır hale getirme.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr022_kullanim",
+      "tur": "kelime",
+      "yazim": "kullanım",
+      "anlam": "Bir şeyi kullanma biçimi.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr022_mekanizma",
+      "tur": "kelime",
+      "yazim": "mekanizmayı",
+      "anlam": "Parçaların birlikte çalışarak bir işi yapmasını sağlayan düzen.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr022_devre",
+      "tur": "kelime",
+      "yazim": "devre",
+      "anlam": "Elektrik akımının dolaştığı yol.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr022_parca",
+      "tur": "kelime",
+      "yazim": "parça",
+      "anlam": "Bir bütünün küçük bölümü.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr022_cark",
+      "tur": "kelime",
+      "yazim": "çarkların",
+      "anlam": "Dönerek hareket sağlayan dişli parçalar.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr022_disli",
+      "tur": "kelime",
+      "yazim": "dişli",
+      "anlam": "Dişleriyle birbirine geçerek dönen parça.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr022_kasnak",
+      "tur": "kelime",
+      "yazim": "kasnak",
+      "anlam": "Kayışla döndürülen yuvarlak tekerlek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr022_bakim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr022_bakim"
+        },
+        {
+          "girdi": "hr022_onarim"
+        },
+        {
+          "girdi": "hr022_kullanim"
+        }
+      ]
+    },
+    {
+      "ad": "hr022_mekanizma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr022_mekanizma"
+        },
+        {
+          "girdi": "hr022_devre"
+        },
+        {
+          "girdi": "hr022_parca"
+        }
+      ]
+    },
+    {
+      "ad": "hr022_cark",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr022_cark"
+        },
+        {
+          "girdi": "hr022_disli"
+        },
+        {
+          "girdi": "hr022_kasnak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

@@ -1,0 +1,1463 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr092-denizalti-09dan-mesaj",
+    "baslik": "Denizaltı 09'dan Mesaj",
+    "tur": "bilim_kurgu",
+    "konu": "iletisim_gecikme_dogrulama",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 7,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "guvenlik"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sinyal_hr092",
+          "tur": "lexeme",
+          "etiket": "sinyal",
+          "yuva": "hr092_sinyal",
+          "islev": "first_hint"
+        },
+        {
+          "id": "hipotez_hr092",
+          "tur": "lexeme",
+          "etiket": "hipotez",
+          "yuva": "hr092_hipotez",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr092",
+          "tur": "idiom",
+          "etiket": "Yüzünü buruşturmak",
+          "yuva": "hr092_yuz",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr092",
+          "tur": "concept",
+          "etiket": "Zaman damgası, kaynak ve doğrulama",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (7. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 3556,
+        "tahmini_sure_dk": 29,
+        "sayfa_sayisi": 28,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 35,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Kontrol odasında kırmızı bir ışık yanıyor. Denizaltı yirmi bir dakikadır sessiz. Gelen her satır aracın mesajı mı?",
+    "durum": "taslak",
+    "fis_kodu": "HR-092"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Araştırma merkezindeki ekranın köşesinde küçük, kırmızı bir ışık yandı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ışığı hemen fark etti, çünkü iki saattir tam o köşeyi izliyordu. Ekranda “Denizaltı 09 — son bağlantı: 14.42” yazıyordu. Saat 15.03'tü. Kendi kendine “Yirmi bir dakika” diye mırıldandı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "deniz"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nOn üçüncü yaş gününde hediye alacağına, okulun bilim kulübüyle birlikte kıyı araştırma merkezine gelmeyi seçmişti. Bugün merkezdeki uzmanlar, deniz tabanını haritalayan insansız araştırma aracının görevini ziyaretçilere anlatacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " araçların devasa pencereleri olan denizaltılar gibi göründüğünü sanmıştı. Oysa Denizaltı 09, kırmızı-beyaz bir kapsül kadar küçüktü; içinde insan değil, sensörler, bataryalar ve yön bulma sistemi vardı.\n\n“Yirmi bir dakika haber alamamak kötü mü?” diye sordu.\n\nMühendis Derya, bilgisayarı kontrol ederken acele etmedi. “Önce beklenen bağlantı zamanına bakmamız gerek,” dedi. “Araç her an aynı şekilde iletişim kuramaz. Suyun altında bağlantı yöntemleri havadakinden farklı.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yanındaki boş sandalyeye oturdu. “Telefon çekmeyince biraz yer değiştiriyoruz,” dedi. “Denizaltı da yer değiştirirse olur mu?”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Derya, suyun radyo dalgalarını birçok koşulda güçlü biçimde zayıflattığını, bu nedenle su altı iletişiminde çoğu zaman akustik "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr092_sinyal"
+        },
+        {
+          "t": "metin",
+          "v": " kullanıldığını açıkladı. “Ama akustik bağlantının veri hızı sınırlıdır, denizin koşulları da sinyali etkiler. Araç bazen verisini saklar, planlanan noktada yüzeye gelip radyo bağlantısıyla aktarır.”\n\nGörevin planında Denizaltı 09'un saat 15.00 civarında yeni bir konum mesajı yollaması bekleniyordu. Gelen mesaj yoktu. Derya'nın yüzü ciddileşti. “Bu tek başına tehlike kanıtı değil. Ancak kontrol etmemiz gereken bir sapma,” dedi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " aniden ekrandaki sarı simgeyi gösterdi. “Bakın! Deniz tabanında kırmızı bir bölge var. Robot oraya mı düştü?”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ekranın açıklamasını okudu. Kırmızı renk robotun düştüğü bir çukuru değil, önceki ölçümlerde düşük sıcaklık saptanan alanı gösteriyordu. “Renklerin anlamı var,” dedi. “Ben de ilk bakınca alarm sandım.”\n\nDerya onlara küçük bir not defteri uzattı. “İsterseniz bugün sizin göreviniz gördüğünüz olayları sırayla yazmak olsun. Yalnız ekranın üzerinde olanı değil, neyin gözlem, neyin yorum olduğunu da ayırın.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk satıra şunu yazdı: Planlanan bağlantı gecikti. Nedeni bilinmiyor.\n\nO sırada merkezde ikinci bir zil çaldı. Bu zil duyulduğunda teknedeki ekip yeni bir durum mesajı göndermeliydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun yalnız bir okul gezisi olmadığını anladı. Bir odadaki ışık, kilometrelerce ötede çalışan insanların kararlarını etkileyebiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kontrol odasında kimse bağırmıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu garip buldu. Filmlerde böyle anlarda herkes koşar, ekranlarda dev kırmızı yazılar belirirdi. Burada ise Derya ve deniz teknisyeni Barış sırayla kontrol listesine bakıyor, gelen verinin zaman damgalarını karşılaştırıyordu.\n\n“İki ayrı sessizliği karıştırmayalım,” dedi Barış. “Birincisi araçtan yeni veri gelmemesi. İkincisi ise bizim gönderdiğimiz komuta cevap gelmemesi. Bunların nedenleri aynı olmak zorunda değil.”\n\nDerya, aracın planlanan son görev noktasını açtı. Araç düşük hızla deniz tabanının belirli bir hattında ölçüm yapıyor, batarya ve sensör durumunu görev bilgisayarına kaydediyordu. Belirlenen sınırların dışına çıkarsa güvenlik davranışları vardı: görevi kesmek, emniyetli duruma geçmek ve uygun koşullarda yüzeye yönelmek gibi. Bunların nasıl çalışacağı aracın modeline ve görev planına bağlıydı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " “O zaman robot kendini kurtarır,” dedi.\n\n“Buna güvenlik mekanizması diyebiliriz, ama sonuç garanti değil,” diye cevap verdi Derya. “Bu yüzden karadan ve denizden takip ediyoruz.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Görev teknesindeki kaptanla kısa bir görüşme yapıldı. Deniz sakindi, teknede acil bir durum yoktu. Yine de kaptan bölgedeki hava ve deniz koşullarını yeniden doğruluyor, aracı izlemek için önceden hazırlanmış prosedürü uyguluyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kapalı bir alanda durdukları hâlde herkesin dışarıdaki rüzgârı neden bu kadar önemsediğini şimdi daha iyi anlıyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " veri grafiğini yakınlaştırdı. Son ulaşan kayıt, aracın yavaşladığını gösteriyordu. “Bir şeye takılmış olabilir,” dedi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başka ihtimalleri sıraladı: “Bir ölçüm noktasına yaklaşmış olabilir. Otomatik olarak hız düşürmüş olabilir. Sensör farklı kaydetmiş olabilir.”\n\nDerya onların söylediklerini yazmalarına izin verdi. “Bunlar "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr092_hipotez"
+        },
+        {
+          "t": "metin",
+          "v": ",” dedi. “Bir hipotez, sınanabilir bir açıklama önerisidir. Şu an hangisinin doğru olduğunu söyleyemeyiz.”\n\nTam o sırada sistemde yeni bir satır belirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ayağa fırladı. Fakat satır, Denizaltı 09'un mesajı değildi. Kıyı istasyonundan gelen zaman eşitleme kaydıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir an için kalbinin hızlandığını hissetti. Yeni görünen her satırı beklenen cevap sanmak ne kadar kolaydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Barış, öğrencilerin bu karışıklığını fark etti. “Bazen zihnimiz görmek istediğimiz şeye daha hızlı yönelir,” dedi. “Bu nedenle ekrandaki etiketleri okumadan karar vermeyiz.”\n\nGörev teknesinden gelen ikinci mesajda, aracın son konumundaki sualtı akıntısının beklentilerin üzerinde olabileceği bildirildi. Bu bilgi hemen kesin neden kabul edilmedi. Kaptan, aynı saatteki başka sensörlerle karşılaştırma yapılmasını istedi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterinin ikinci sayfasına üç sütun açtı: Bildiğimiz, bilmediğimiz, sınayabileceğimiz. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " son sütuna ilk maddeyi yazdı: “Yeni gelen mesajın gerçekten araçtan olduğunu doğrulamak.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir süre sonra kontrol odasındaki hoparlörlerden kısa bir ses dizisi duyuldu. Derya hemen kulaklığını taktı. Ses, birbirine benzeyen tıkırtılardan oluşuyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun robotun yardım çağrısı olabileceğini düşündü; fakat Derya herhangi bir yorum yapmadan kayıt numarasını not etti.\n\n“Bu akustik sinyalin cihazımızın beklediği biçimde olup olmadığını inceleyeceğiz,” dedi. “Dışarıdan gelen sesler, yankılar veya başka bir sistemin iletileri de olabilir.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sesin ortasında bir boşluk fark etmişti. “On beş saniye sonra aynı şey tekrar etti,” dedi. Derya bunun önemli bir gözlem olduğunu söyledi; ancak düzenli tekrarın tek başına kaynağı belirlemediğini de ekledi.\n\nBilgisayardaki zaman çizelgesini büyüttüler. Bazı paketlerin oluşturulma zamanı ve merkezde alınma zamanı farklıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce saatlerin bozuk olduğunu düşündü. Barış, iletinin işlenmesi, iletilmesi ve kaydedilmesi sırasında gecikmeler olabileceğini anlattı; ayrıca saatler tam eşitlenmediyse zaman damgalarının karşılaştırılmasının yanıltıcı olabileceğini gösterdi.\n\n“Yani bize yeni gelmiş bir mesaj, eski bir durumu anlatıyor olabilir,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Evet,” dedi Derya. “Bunun için mesajın üretildiği zaman ile bize ulaştığı zamanı ayrı tutuyoruz.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ekrandaki en yeni paketi açtı. Paketin üzerinde aracın adı görünmüyordu; yalnız kod ve kimlik doğrulama alanları vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " aklına geçen yıl sınıfta yaptıkları sahte mesaj oyunu geldi. Herkes kendi adını yazdığı bir kâğıdı zarfa koymuş, ama zarflar karışınca kimin yazdığını bulmak için yazı biçimlerine bakmışlardı. Burada ise tahmin etmek yeterli değildi; teknik doğrulama gerekiyordu.\n\nDerya, paketin beklenen protokole uygun olup olmadığını ve gerçekten göreve ait kimlik bilgilerini taşıyıp taşımadığını kontrol etti. Sonuç olumsuzdu. Sesin kaynağı Denizaltı 09 değildi."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr092_yuz"
+        },
+        {
+          "t": "metin",
+          "v": " “Boşuna sevinmişiz.”\n\n“Boşuna değil,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Yanlış alarmı ayırt etmeyi öğrendik.”\n\nBarış başıyla onayladı. “Yanlış kaynağı elemek de ilerlemedir. Ama bu, aracı bulduğumuz anlamına gelmez.”\n\nYarım saatlik süreç boyunca "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine küçük simgeler çizdi: bir dalga, saat ve soru işareti. Simgeler çocukça görünmüyordu; ölçümün hangi aşamada olduğunu hatırlatıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " en baştaki kırmızı alarm simgesinin yanına iki farklı not ekledi: İletişim gecikmesi olabilir ve Görev sapması olabilir."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Derya masanın kenarına dayanıp çocuklara baktı. “Bugün heyecanı kontrol etmeyi de öğreniyorsunuz,” dedi. “Bazen en zor iş, sonuca ulaştığınızı zannettiğiniz anda bir kez daha kontrol etmektir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", denizin altında sessiz kalan küçük kapsülü düşündü. Su karanlıktı, sıcaklık düşük olabilirdi, ama araç korkmuyor ve telaşlanmıyordu. Korku ve telaş onları izleyen insanlara aitti. İnsanların görevi bu duyguların karar vermeyi yönetmesine izin vermemekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Saat 16.10'da görev teknesinden farklı bir haber geldi. Ekip, araştırma aracının planlanan konuma yakın bir yerde yüzeyde olabileceğini düşündüren kısa bir sinyal yakalamıştı. Ancak dalga hareketleri ve yansıma nedeniyle konum kesin değildi. Derya bir koordinat okumak yerine kaptanla birlikte kaydın güvenilirliğini değerlendirdi.\n\n“Robot bizi bekliyor olabilir mi?” diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nBarış, böyle bir cümlede bile iki varsayım bulunduğunu söyledi: Robotun yüzeye çıktığı ve onların yerini beklediği varsayımı. “Henüz ikisini de doğrulamadık.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk kez bunun bir matematik problemi gibi yalnız sonuçtan ibaret olmadığını düşündü. Burada her karar başka bir kararı etkileyebilirdi. Deniz üstündeki ekip yalnız robotu aramıyor, kendi güvenliğini de koruyordu. Havanın bozacağı olası bir durumda aramayı ertelemek zorunda kalabilirlerdi. "
+        },
+        {
+          "t": "vurgu",
+          "v": "Kimse bir araştırma cihazı uğruna insanları tehlikeye atmak istemiyordu"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nKontrol odasında küçük bir tartışma başladı. Genç teknisyenlerden biri son mesajın aracın acil yükselme komutuyla ilişkili olabileceğini düşündü. Bir başkası bunun normal görev sonu mesajı olduğundan şüpheleniyordu. Derya ikisinin de iddiasını dinledi. Hangi paketlerin hangi kimlikle, hangi sırada geldiğini tek tek gösterdi. Aracın çalışma biçimi hakkındaki dokümantasyon olmadan sembolleri sezgiyle yorumlamamak gerektiğini hatırlattı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " büyüklerin birbirini dinlerken seslerini yükseltmemesine hayran kaldı. “Farklı düşününce tartışmıyorlar mı?” diye fısıldadı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Tartışıyorlar,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". “Ama galiba fikirleri tartışıyorlar, birbirlerini değil.”\n\nBir süre sonra teknedeki operatör, yüksek yansımaya neden olan bir bölgeden uzaklaşıp ekipmanın izin verdiği başka bir gözlem noktasında dinleme yaptıklarını bildirdi. Yeni kayıt daha temizdi. Derya ve Barış paketin kaynağını doğruladı. Bu kez mesaj gerçekten Denizaltı 09'a aitti. Ama içinde tek bir bilgi vardı: İşlem süreci tamamlanamadı. Kaydedilmiş veriler korunuyor.\n\n“Yani robot sağ mı?” diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". Soruyu sorar sormaz cansız bir araca canlıymış gibi seslendiğini fark edip gülümsedi.\n\nDerya da gülümsedi. “Aracın yanıt verdiğini biliyoruz, ama durumunun tamamını henüz bilmiyoruz. Kayıtların korunması iyi haber.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " göre bu küçük mesaj bütün günün en heyecanlı anıydı. Sanki karanlık suyun içinden gelen tek satırlık bir kartpostal almışlardı. Ancak Derya onların sevinmesine rağmen doğrulamayı bırakmadı. Son görev komutunu, sistemin beklediği yanıt biçimini ve güvenlik kurallarını karşılaştırdı. Teknedeki ekip de kendi prosedürünü uygulamayı sürdürdü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sonraki mesajda aracın yüzeye çıktığına dair konum bilgisi vardı. Tekne ekibi gözle doğrulama yapıncaya kadar kontrol odasında kimse “bulduk” demedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " beklemenin nasıl ağırlaştığını hissetti. Belirsizlik sona yaklaşırken daha da zor olabiliyordu.\n\nKırk dakika sonra kaptanın sesi duyuldu: “Araç yüzeyde görüldü. Ekip güvenli şekilde yaklaşma hazırlığında.”\n\nKontrol odasındaki herkes rahat bir nefes aldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sandalyesinden zıplayarak kalktı. “Şimdi bulduk, değil mi?”\n\n“Şimdi gördük,” dedi Derya. “Birazdan güvenli alım işlemini tamamlayacağız.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. Artık sözcüklerin küçük ayrımlarına sinir olmuyordu. Tam tersine, bu ayrımlar sayesinde olayların gerçek sırasını takip edebiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Araç merkeze getirildiğinde öğrenciler onu kapalı bakım alanının dışındaki camdan izledi. Gövdesinde birkaç küçük çizik bulunuyordu; ancak bunların o gün mü oluştuğu henüz belli değildi. Derya ve ekibi önce güvenlik kontrollerini yaptı, ardından veri belleğini inceliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eldivenli mühendislerin çalışmasını sessizce izledi.\n\n“İçinde bütün günün videosu var mı?” diye sordu.\n\n“Hayır,” dedi Derya. “Bu görevde bazı sensörlerin ölçümleri, konum ve sistem kayıtları tutuldu. Her araştırma aracında kamera bulunması gerekmez. Kamerası olsa bile sürekli video kaydetmesi şart değildir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hayal kırıklığına uğramadı. Verilerin de hikâyesi olabileceğini artık biliyordu. Zaman çizelgesindeki küçük iniş çıkışlar, suyun altında yapılan hareketlere ilişkin izlerdi. Bunları yorumlamak ise dikkat gerektiriyordu.\n\nİlk kontrol, aracın planlanan bir ölçüm noktasında beklenenden uzun kaldığını gösterdi. Sonra görevin durdurulduğu, sistemin güvenlik prosedürüne geçtiği görülüyordu. Ancak iletişimin niçin kesildiğine ilişkin birden fazla olasılık vardı. Akustik bağlantıyı etkileyen ortam koşulları, sinyal gölgelenmesi, zamanlama uyuşmazlığı ya da sistemin işlem sırasındaki gecikme dikkate alınmalıydı. Ekip, kayıtlara dayanmayan bir arıza iddiası oluşturmadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " daha önce “robot bir şeye takıldı” demişti. Şimdi bu tahminini yeniden düşünüyordu. “Elimizde buna dair iz yok,” dedi. “Başta öyle söylemem yanlıştı.”\n\nDerya, “Tahmin etmek tek başına yanlış değil,” diye karşılık verdi. “Önemli olan onu kanıt gibi sunmamak ve yeni bilgi gelince değiştirebilmek.”\n\nVeri kayıtlarında en ilginç bölüm, ölçümün yapıldığı bölgede su sıcaklığının kısa süreli değişmesiydi. Derya bunun farklı su kütleleriyle ilgili olabileceğini, ama tek kayıtla nedenini açıklayamayacaklarını söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", o bölgeyi haritada buldu. Kıyıdan uzak değildi; buna rağmen kıyıdaki su ile derindeki su birbirinden farklı koşullara sahip olabilirdi.\n\nBarış onlara suyun farklı derinliklerde sıcaklık, tuzluluk ve basınç gibi özellikler bakımından değişebileceğini anlattı. Böylece deniz, yalnız üst yüzeyi görünen tek renkli bir göl olmaktan çıktı; katmanları, hareketleri ve geçişleri olan karmaşık bir dünya hâline geldi.\n\n“Denizaltı 09'un başına gelen şey gerçekten tehlike miydi?” diye sordu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Derya cevap vermeden önce ekranı kapattı. “Görev için bir risk oluştu, güvenlik sistemi devreye girdi ve ekip gerekli kontrolleri yaptı. Sonuçta araç güvenli biçimde alındı. Ama sonucun iyi olması, riskin başta önemsiz olduğu anlamına gelmez.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu defterine özellikle yazdı. Bazen bir olayda kötü sonuç olmaması, dikkatli kararların işe yaradığını gösteriyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Denizaltı 09'un veri kayıtları üzerinde çalışıldıktan birkaç gün sonra Derya okul kulübüne küçük bir görev gönderdi. Bir grafik, bir harita ve üç ayrı açıklama vardı. Öğrencilerden, grafikte görülen sıcaklık değişiminin hangi açıklamayı desteklediğini düşünmeleri isteniyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sınıfın penceresi önündeki masaya oturdu.\n\nGrafikte belirli bir derinlikte sıcaklık önce yavaşça azalmış, ardından kısa bir aralıkta daha hızlı düşmüştü. İlk açıklamada bunun suyun tabanından yükselen soğuk bir kaynak nedeniyle olduğu, ikincisinde aracın başka su kütlesine geçtiği, üçüncüsünde ise sensörün hatalı ölçmüş olabileceği yazıyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " birinci açıklamayı seçti. “Soğuk su kaynağı maceramıza daha çok yakışıyor,” dedi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “Hikâyeye yakışması, doğru olduğunu kanıtlamıyor.”\n\nİkisi grafiğin yanında verilen sensör bilgilerine baktı. Verinin hangi cihazdan geldiği ve cihazın ne zaman kontrol edildiği belirtiliyordu. Fakat suyun tuzluluğuna ilişkin aynı anda alınmış yeterli ölçüm yoktu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yalnız bu sıcaklık grafiğiyle üç olasılıktan birini kesin seçemeyeceklerini düşündü. Derya'ya “Daha fazla veri gerekir” yanıtını gönderdiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Derya'nın dönüş mesajında “İyi başlangıç” yazıyordu. Ardından iki yeni grafik eklemişti. Biri aracın derinlik kaydı, diğeri aynı bölgede başka bir zamanda alınmış ölçümlerdi. Bu yeni bilgiler, açıklamaları değerlendirmelerini sağlıyordu; fakat hâlâ tek bir sonuca kilitlemiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun bir oyun olmadığını fark etti. Cevabı bilen bir öğretmenin hazırladığı bulmacada, yeni veriler hep doğru seçeneği belirginleştirebilirdi. Gerçek araştırmada ise veri bazen yeni sorular da doğurabilirdi.\n\nKulüp arkadaşları Selim, “Madem kesinleşmiyor, neden uğraşıyoruz?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez cevap verdi: “Çünkü olasılıkları daraltıyoruz. Başta neler olabileceğini bile bilmiyorduk.”\n\nDerya ertesi gün çevrim içi görüşmede onları dinledi. “Açıklamalarınızın her birini hangi verinin desteklediğini ve hangisinin eksik kaldığını söylemeniz, tek bir cevabı tahmin etmenizden daha yararlı,” dedi. “Bilimsel çalışma bazen ‘henüz bilmiyoruz’ cümlesini daha ayrıntılı ve daha dürüst hâle getirmektir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu konuşmayı defterine yazarken Denizaltı 09'un görevini hatırladı. Araç yüzeye dönmüştü, ama ölçümün her ayrıntısı kendiliğinden açıklanmamıştı. Robotun belleğindeki sayılar bir hikâyeyi anlatıyordu; bu hikâyeyi doğru okumak için yöntem, bağlam ve sabır gerekiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bilim kulübü gezisinin ikinci gününde başka bir konu konuşulmuştu. Görev teknesindeki ekibin araç arama sırasında zaman zaman konum değiştirmesi gerekmişti. Bazı öğrenciler, ekibin neden daha hızlı gitmediğini sormuştu. Kaptan, gemideki insanların güvenliğiyle aracın kurtarılmasının farklı öncelikler olduğunu açıklamıştı. Uygun olmayan hava koşullarında acele etmek, aranan cihazdan daha büyük bir risk yaratabilirdi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu konuyu okulun güvenlik kulübüyle paylaştı. Öğrenciler afet ve kaza haberlerinde sık görülen “kahramanca atıldı” cümlesini tartışmaya açtı. Yardım etmek istemek değerliydi; fakat eğitimsiz kişilerin tehlikeli bir alana girmesi yeni bir soruna yol açabilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kontrol odasında hiçbir çocuğun komuta cihazına yaklaşmamasının nedenini şimdi daha iyi anlıyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " “Ama biz sadece izledik,” dedi.\n\n“Yalnız izlemek değil,” diye düzeltti "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Gördüğümüzü anlamaya çalıştık. Bir şeyi yanlış sanınca sorduk. Bence bu da işin bir parçası.”\n\nDerya'nın gönderdiği son raporun halka açık özetinde aracın güvenli biçimde geri alındığı, bağlantı kayıtlarının incelendiği ve sonraki görev öncesi testlerin güncellendiği yazıyordu. Raporda yer almayan ayrıntıları çocuklar kendi hayalleriyle doldurmadı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir robotun son saniyede kaya düşmesinden kurtulduğu bir çizgi roman yapmak istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu eğlenceli buldu ama çizgi romanın başına “Bilimden esinlenen kurgu” yazmayı önerdi. Böylece gerçek görev raporuyla hayalî macera karışmayacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çizgi romanda Denizaltı 09'un iki konuşan yardımcısı vardı. Biri sürekli acele ediyor, diğeri her şeyi üç kez kontrol ediyordu. İlk taslakta aceleci yardımcı kötü, kontrollü yardımcı ise kusursuzdu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu okuduğunda hikâyenin fazla basit olduğunu düşündü. “İkisinin de iyi yanı olmalı,” dedi. “Biri hızlı karar verebilmeli, diğeri kanıta bakmalı. En iyi çözümü birlikte bulsunlar.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu fikirle son bölümü yeniden yazdı. Robotlar bir sorun karşısında önce hazır güvenlik adımlarını izliyor, sonra uygun zamanda verileri kontrol ederek karar veriyordu. Kahramanlıkları kuralları hiçe saymalarında değil, birlikte çalışabilmelerindeydi.\n\nSınıfın küçük çocukları çizgi romanı okuyunca karakterleri sevdi. Bir öğrenci “Gerçek robotlar da böyle konuşuyor mu?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " gülerek “Hayır, biz onlara ses verdik,” dedi. “Gerçek robotlardan aldığımız fikir, veriye bakma ve güvenli çalışma alışkanlığı.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birkaç hafta sonra merkez, öğrencilerden gezinin kendilerinde bıraktığı izlenimleri yazmalarını istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk taslağında “Robot kayboldu, biz onu kurtardık” demişti. Cümleyi okuyunca durdu. Araçla ilgili işleri mühendisler ve kaptan yürütmüştü. Kendileri yalnızca gözlemciydi. Bu yüzden metni değiştirdi: “Denizaltı 09'un bağlantısı gecikti; kontrol odasında uzmanların kararlarını nasıl doğruladığını izledik.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onun düzeltmesini gördü. “Böyle yazınca biz daha az kahraman gibi görünüyoruz,” dedi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu düşündü. “Belki de gerçek kahramanlık, olmayan şeyi yapmış gibi anlatmamak,” diye cevap verdi.\n\nİkisi birlikte Derya'ya teşekkür mektubu hazırladı. Mektupta tek bir soruya yer ayırdılar: “Bir cihazın gönderdiği bilgiye güvenmek için en önemli üç şey nedir?” Derya kısa ama dikkatli bir yanıt verdi: Bilginin kaynağı, kaydedildiği zaman ve elde edilme yöntemi bilinmeli; ayrıca mümkünse başka verilerle karşılaştırılmalıydı. “Üç madde başlangıçtır,” diye ekledi. “Her görevde başka ayrıntılar da gerekebilir.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu cevabı kesip defterinin içine koydu. Gün boyunca duyduğu bütün terimlerden sonra aslında en basit soruya dönmüşlerdi: Neyi nereden biliyoruz? Denizaltı 09'un sesi, onlara bu sorunun önemini hatırlatmıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bilim günü sunumunu hazırlarken haritadaki bir oku ters yönde çizdi. Oku gören "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " “Araç kıyıya dönmüş” dedi, fakat kayıt aracı o saatte hâlâ görev hattında gösteriyordu. İkisi haritanın üzerindeki kuzey işaretini inceledi. Ekran görüntüsünü döndürürken yön simgesini yanlışlıkla sabit bırakmışlardı.\n\n“Demek aynı noktalar başka yöne çevrilince bambaşka bir rota gibi görünebiliyor,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu hatayı saklamadan sınıf sunumuna küçük bir örnek olarak koymayı önerdi. Bir haritanın neyi gösterdiğini anlamak için ölçek, yön ve kaynak bilgisinin birlikte okunması gerektiğini anlatabileceklerdi.\n\nSınıfın önünde haritayı önce yanlış hâliyle gösterdiler. Öğrencilerin çoğu aracın kuzeye ilerlediğini söyledi. Sonra yön işaretini düzelttiklerinde herkesten şaşkın sesler yükseldi. “Bir ok yüzünden mi?” diye sordu Selim. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. “Bir ok bazen bütün hikâyenin yönünü değiştirebilir.”\n\nDerya da sunuma kısa bir sesli mesaj gönderdi. “Haritalar, grafikler ve sensör kayıtları aynı özenle okunmalı,” diyordu. “Aracımızın sorunu yalnız iletişim cihazında değildi; onu izleyen insanların da gelen bilgiyi doğru yorumlaması gerekiyordu.” Bu son cümle, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " bütün gezinin özeti gibi geldi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüp daha sonra küçük bir oyun geliştirdi. Oyuncular doğru yöne gitmek için üç kartı eşleştiriyordu: Konum, zaman, kaynak. Yanlış eşleşmede bir ceza sesi çıkmıyor; bunun yerine “Hangi bilgiyi yeniden kontrol etmek istersin?” sorusu görünüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " cezadan çok bu soruyu sevdi. Hata yapınca oyunun bitmemesi, yeniden düşünmeye yer bırakıyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " hazırladığı oyunu ilk deneyenlerden biri küçük kardeşi oldu. Kardeşi yanlış koordinatı seçince ekranda yalnız “Tekrar dene” yazıyordu. Çocuk üzülüp oyunu kapatmak istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ekranı değiştirdi: “Saat doğru, ama konumu yeniden inceleyebilirsin.” Sonraki denemede kardeşi neyi kontrol edeceğini bildiği için daha dikkatli oynadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", öğretici bir geri bildirimin yalnız hata olduğunu söylemekle kalmaması gerektiğini anladı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu düşünceyi genişletti. Oyundaki robot başarısız olduğunda başa dönmek yerine güvenli bir kontrol noktasında duracak, kullanıcıya hangi veriye yeniden bakmak istediğini soracaktı. Bu yaklaşım, Denizaltı 09'un gerçek görevindeki güvenlik süreçlerinden ilham alıyordu; ama birebir teknik uygulamayı taklit etmiyordu. Derya taslağı görünce çocukların hatayı cezalandırmak yerine anlamaya çalışmasını beğendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi hafta okulda bilim günü düzenlendi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", gezide öğrendiklerini anlatan küçük bir masa hazırladı. Masanın ortasında su altı araştırma aracının kartondan yapılmış bir modeli vardı. Yanında üç farklı haber örneği bulunuyordu. Birinde “Kayıp Denizaltı Felaketten Döndü” yazıyordu. İkincisinde “Araştırma Aracının Bağlantısı Gecikti; Ekip Kontrol Sürecini Uyguladı” cümlesi vardı. Üçüncüsü ise yalnız “Robot Denizde Kayboldu” diyordu.\n\n“Hangisini paylaşırdınız?” diye sordular ziyaretçilere. Çoğu öğrenci ilk başlığı heyecanlı buluyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kimseyi azarlamadı. Onlara üç başlıkta hangilerinin doğrulanmış bilgiye, hangilerinin yorum ve abartıya dayandığını sordu.\n\nBir öğrenci “Bütün gün beklediniz, demek gerçekten büyük bir tehlike vardı,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", görev sapmalarının ciddiyetle ele alınmasının doğru olduğunu; fakat “büyük felaket” sözcüğünün eldeki kayıtlarla desteklenmediğini anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ikinci başlığın daha sakin olmasına rağmen olayın özünü daha iyi aktardığını söyledi.\n\nÖğretmenleri, bilim gününde öğrencilerin yalnız doğru cevabı göstermekle yetinmemesini sevmişti. “İnsanların yanlış cevaba neden yöneldiğini anlamak da önemlidir,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " filmlerdeki hızlı kurtarma sahnelerini düşündü. Gerçek kontrol odasında en etkileyici şey yüksek sesler değil, kimsenin acele hüküm vermemesi olmuştu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sergi bitiminde Derya'dan kısa bir video geldi. Denizaltı 09 bakım tamamlandıktan sonra yeni bir göreve hazırlanıyordu. Bu kez sistemin bağlantı kontrol adımları gözden geçirilmiş, test süreçlerine yeni bir kayıt eklenmişti. “Bir sorun yaşandığında yalnız aracı geri getirmek yetmez,” dedi videoda. “Ne öğrendiğimizi sonraki göreve taşımamız gerekir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " son kez defterine baktı. İlk sayfada “Bağlantı gecikti, nedeni bilinmiyor” yazıyordu. Son sayfada ise pek çok kavram sıralanmıştı: sinyal, zaman damgası, hipotez, doğrulama, güvenlik, veri. İlk gün bu sözcüklerin ne anlama geldiğini tam bilmiyordu. Şimdi her birinin bir olayla bağlantısı vardı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " defteri görmek isteyince "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona son sayfadaki üç sütunu gösterdi. Bir zamanlar “Bildiğimiz” bölümünde tek bir satır bulunuyordu. Şimdi daha çok bilgi vardı, ama “Bilmediğimiz” sütunu da tamamen boşalmamıştı.\n\n“Bunca şeyden sonra hâlâ bilmediğimiz var,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Olacak,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Ama artık neyi bilmediğimizi daha iyi biliyoruz.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tam çıkacaklarken telefonuna yeni bir mesaj düştü. Gönderen Derya'ydı. Mesajın yanında küçük bir su altı ses kaydı simgesi bulunuyordu: “Bu kez araçtan değil, derin deniz canlılarının seslerini araştıran ekipten bir kayıt. Sonraki kulüp etkinliğiniz için uygun olabilir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kaydı hemen açmadı. Önce açıklamasına ve kaynağına baktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu görünce gülmeye başladı. “Sen artık gelen bütün mesajların kimden çıktığını sorgulayacaksın.”\n\n“Güzel değil mi?” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Merakımı biraz daha güvenilir yapıyor.”\n\nO akşam sahilde yürürken dalgalar taşlara vuruyordu. Denizaltı 09 artık suyun altında değildi, ama "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " denizin altında hâlâ cevap bekleyen çok sayıda soru bulunduğunu biliyordu. Dalgaların sesi ona bir mesaj gibi geliyordu. Bu kez mesajı hemen çözmeye çalışmadı. Önce dinledi, sonra ertesi gün neyi araştırabileceğini düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulübün son toplantısında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " tahtaya kocaman bir soru işareti çizdi. “Bu sembol artık bana başarısızlığı hatırlatmıyor,” dedi. “Bir şey daha kontrol edebileceğimizi hatırlatıyor.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun yanına küçük bir saat ve pusula çizdi. Çocuklar ilk günkü alarmı yeniden konuştu; kimsenin acele etmeden güvenlik planına bakmasını hatırladılar. Selim “Robot geri dönmeseydi ne yapardınız?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir an sustu. Böyle bir durumda uzman ekip kendi planına göre çalışacak, öğrenciler de güvenli yerlerinde kalacaktı. Hikâyeler bazen kurtarma sahnesini kahramanlıkla doldururdu; gerçek hayatta doğru görev paylaşımı daha önemliydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterini kapattı. Bilmediği çok şey vardı, ama bilmediğini söylemek artık onu korkutmuyordu.\n\nKontrol odasından ayrılırken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " duvardaki büyük saati fark etti. İlk gelişinde yalnız geciken dakikaları saymıştı. Şimdi aynı saat ona kayıtların ne zaman oluşturulduğunu, hangi sırayla ulaştığını ve neden doğru karşılaştırılması gerektiğini hatırlatıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " “Yine saate baktın,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “Bu kez yalnız kaç dakika geçtiğini değil, o dakikalarda ne öğrendiğimizi de düşünüyorum.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çalışma masasında duran karton denizaltıyı son kez eline aldığında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " gövdesinin üstüne küçük bir yıldız çizdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun bir ödül işareti olduğunu sandı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. “Yıldız benim kahramanlığım için değil,” dedi. “Derya Hanım ve ekip arkadaşları için. Bir şey ters gittiğinde paniğe kapılmadan sorumluluk aldılar.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yıldızın yanına küçük bir dalga çizdi. Sonra karton modeli kulüp dolabına yerleştirdiler. Bir sonraki yıl başka öğrenciler bu hikâyeyi okuduğunda, denizin altındaki sessizliğin insanların düşünmesini nasıl öğrettiğini görebilecekti."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr092_yuz": [
+      {
+        "t": "yoldas",
+        "hal": "yalin",
+        "yedek": "bir arkadaş"
+      },
+      {
+        "t": "metin",
+        "v": " yüzünü buruşturdu."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Son bağlantı saat kaçta görülmüştü?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "14.42"
+        },
+        {
+          "id": "B",
+          "metin": "15.03"
+        },
+        {
+          "id": "C",
+          "metin": "15.00"
+        },
+        {
+          "id": "D",
+          "metin": "16.10"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Ekranda son bağlantı 14.42 olarak yazıyordu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 5,
+      "metin": "Bu cümle hangi dikkat hatasını anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yeni görünen her veriyi beklenen cevap sanmak"
+        },
+        {
+          "id": "B",
+          "metin": "Verilerin hepsini unutmak"
+        },
+        {
+          "id": "C",
+          "metin": "Ekrana hiç bakmamak"
+        },
+        {
+          "id": "D",
+          "metin": "Saatleri hiç kontrol etmemek"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Yeni bir satır, beklenen cevap olmayabilir; etiketi okumadan karar verilmemelidir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 5,
+      "metin": "Derya'ya göre hipotez nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sınanabilen bir açıklama önerisi"
+        },
+        {
+          "id": "B",
+          "metin": "Kesin bir sonuç"
+        },
+        {
+          "id": "C",
+          "metin": "Bir tür ekran"
+        },
+        {
+          "id": "D",
+          "metin": "Bir kayıt numarası"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Hipotez, veriyle sınanabilen bir açıklama önerisidir; kesin sonuç değildir."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 7,
+      "metin": "Metinde geçen zaman damgası ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir verinin oluşturulduğu veya alındığı zamanı gösteren kayıt"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür saat"
+        },
+        {
+          "id": "C",
+          "metin": "Bir kamera"
+        },
+        {
+          "id": "D",
+          "metin": "Bir kurtarma ekibi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Zaman damgası, bir kaydın hangi zamanda oluşturulduğunu veya işlendiğini gösterir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr092_sinyal",
+        "tur": "kelime",
+        "yazim": "sinyallerin",
+        "anlam": "Bilgi taşıyan dalga ya da işaret.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr092_iletim",
+        "tur": "kelime",
+        "yazim": "iletim",
+        "anlam": "Bilginin bir yerden başka bir yere aktarılması.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr092_gurultu_s",
+        "tur": "kelime",
+        "yazim": "gürültü",
+        "anlam": "Bilgiyi bozan istenmeyen ses ya da veri.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr092_hipotez",
+        "tur": "kelime",
+        "yazim": "hipotez",
+        "anlam": "Sınanabilir açıklama önerisi.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr092_varsayim_h",
+        "tur": "kelime",
+        "yazim": "varsayım",
+        "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr092_kesin_sonuc",
+        "tur": "kelime",
+        "yazim": "kesin sonuç",
+        "anlam": "Kanıtlanmış, değişmeyen sonuç.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr092_yuz",
+        "tur": "deyim",
+        "yazim": "yüzünü buruşturdu",
+        "anlam": "Hoşnutsuzluk ya da tiksinti göstermek.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr092_kaslarini_catmak_b",
+        "tur": "deyim",
+        "yazim": "kaşlarını çatmak",
+        "anlam": "Hoşnutsuzluğunu yüzünü buruşturarak belli etmek.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr092_yuzu_gulmek",
+        "tur": "deyim",
+        "yazim": "yüzü gülmek",
+        "anlam": "Sevinçle, mutlulukla gülümsemek.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr092_sinyal",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr092_sinyal"
+          },
+          {
+            "girdi": "hr092_iletim"
+          },
+          {
+            "girdi": "hr092_gurultu_s"
+          }
+        ]
+      },
+      {
+        "ad": "hr092_hipotez",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr092_hipotez"
+          },
+          {
+            "girdi": "hr092_varsayim_h"
+          },
+          {
+            "girdi": "hr092_kesin_sonuc"
+          }
+        ]
+      },
+      {
+        "ad": "hr092_yuz",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr092_yuz"
+          },
+          {
+            "girdi": "hr092_kaslarini_catmak_b"
+          },
+          {
+            "girdi": "hr092_yuzu_gulmek"
+          }
+        ]
+      }
+    ]
+  }
+}

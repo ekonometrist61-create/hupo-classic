@@ -1,0 +1,138 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr036_bekci",
+      "tur": "kelime",
+      "yazim": "bekçi",
+      "anlam": "Bir yeri koruyup gözeten kişi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr036_gozcu",
+      "tur": "kelime",
+      "yazim": "gözcü",
+      "anlam": "Uzaktan bakıp bir şeyi gözetleyen kişi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr036_korkuluk",
+      "tur": "kelime",
+      "yazim": "korkulukları",
+      "anlam": "Düşmeyi önlemek için kenara konan parmaklık.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr036_parmaklik",
+      "tur": "kelime",
+      "yazim": "parmaklık",
+      "anlam": "Aralıklı demir çubuklardan oluşan koruyucu çit.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr036_merdiven",
+      "tur": "kelime",
+      "yazim": "merdiven",
+      "anlam": "Katlar arasında çıkmaya yarayan basamaklar.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr036_ugultu",
+      "tur": "kelime",
+      "yazim": "uğultusunu",
+      "anlam": "Uzaktan gelen, sürekli ve boğuk ses.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr036_gurultu",
+      "tur": "kelime",
+      "yazim": "gürültü",
+      "anlam": "Rahatsız eden yüksek ses.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr036_sessizlik",
+      "tur": "kelime",
+      "yazim": "sessizlik",
+      "anlam": "Hiç ses olmaması durumu.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr036_bekci",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr036_bekci"
+        },
+        {
+          "girdi": "hr036_gozcu"
+        }
+      ]
+    },
+    {
+      "ad": "hr036_korkuluk",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr036_korkuluk"
+        },
+        {
+          "girdi": "hr036_parmaklik"
+        },
+        {
+          "girdi": "hr036_merdiven"
+        }
+      ]
+    },
+    {
+      "ad": "hr036_ugultu",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr036_ugultu"
+        },
+        {
+          "girdi": "hr036_gurultu"
+        },
+        {
+          "girdi": "hr036_sessizlik"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

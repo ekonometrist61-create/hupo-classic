@@ -1,0 +1,1803 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr102-golgenin-sahibi-kim",
+    "baslik": "Gölgenin Sahibi Kim?",
+    "tur": "gizem",
+    "konu": "iddia_kanit_medya",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 8,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce",
+        "fen"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "iddia_hr102",
+          "tur": "lexeme",
+          "etiket": "iddia",
+          "yuva": "hr102_iddia",
+          "islev": "first_hint"
+        },
+        {
+          "id": "kanit_hr102",
+          "tur": "lexeme",
+          "etiket": "kanıt",
+          "yuva": "hr102_kanit",
+          "islev": "application"
+        },
+        {
+          "id": "belirsiz_hr102",
+          "tur": "lexeme",
+          "etiket": "belirsiz",
+          "yuva": "hr102_belirsiz",
+          "islev": "application"
+        },
+        {
+          "id": "guvenilir_hr102",
+          "tur": "lexeme",
+          "etiket": "güvenilir",
+          "yuva": "hr102_guvenilir",
+          "islev": "transfer"
+        },
+        {
+          "id": "deyim_hr102",
+          "tur": "idiom",
+          "etiket": "Hayal kırıklığına uğramak",
+          "yuva": "hr102_hayal",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr102",
+          "tur": "concept",
+          "etiket": "Gözlem ile yorumu ayırmak",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 4037,
+        "tahmini_sure_dk": 30,
+        "sayfa_sayisi": 37,
+        "soru_sayisi": 5,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1,
+          "degerlendirme": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 43,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Meydanda beliren bir gölge bir bekçinin ruhu mu, yoksa ışığın oyunu mu? Nil ve Kaan, korkuyu ve iddiayı kanıttan ayırmayı öğrenir.",
+    "durum": "taslak",
+    "fis_kodu": "HR-102"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kent meydanının taş duvarında ilk gölge perşembe gecesi belirdi. Bir insan siluetine benziyordu ama boyu normal bir insanın neredeyse iki katıydı. Kollarından biri uzun, başı hafif yana dönüktü. Duvarın üstündeki saat on bire yaklaşırken görüntü birden kayboldu. O an meydandan geçen biri telefonuyla birkaç saniyelik video çekmişti. Video sabaha karşı binlerce kez izlendi.\n\nSekizinci sınıf öğrencisi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", videoyu kahvaltıda gördü. Altında “Kayıp nöbetçinin gölgesi geri döndü” yazıyordu. Kentte yıllar önce meydanı koruduğu söylenen bir bekçi hakkında hikâyeler anlatılırdı. Kimisi onun yağmurlu gecelerde ortaya çıktığını, kimisi de gölgenin yalnızca yeni ayda görüldüğünü "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr102_iddia"
+        },
+        {
+          "t": "metin",
+          "v": " ediyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk anda ürperdi; sonra videoyu yavaşlattı. Siluetin alt kısmı, yerdeki taşlarla aynı yönde uzanıyordu. Ama görüntünün nereden geldiği belli değildi.\n\nArkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " aradı. “Bu akşam gidiyoruz,” dedi. “Gölgeyi kendi gözümüzle görelim.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen kabul etmedi. Meydan gece geç saatte boşalıyordu ve tek başlarına gitmeleri doğru değildi. Babasıyla konuştu, okulun bilim kulübü öğretmeniyle birlikte akşam erken saatlerde izinli gözlem yapabileceklerini öğrendi."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr102_hayal"
+        },
+        {
+          "t": "metin",
+          "v": " “Gizemlerin hepsi güvenlik formuna mı bağlanacak?” diye şakalaştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Gizem çözmekle kendimizi riske atmak aynı şey değil,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün okulda gölge hakkında konuşmayan kalmamıştı. Bir grup öğrenci fotoğraflara kırmızı daireler çiziyor, görüntüde olmayan yüzler görüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kırmızı daire çizilen yerde yalnızca iki çatlak taşı seçebiliyordu. “Bir şeyi aradığında benzer şekilleri her yerde görebilirsin,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " telefonunu kapattı. “Öyleyse önce neyi gerçekten gördüğümüzü yazalım.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bilim kulübü öğretmeni Leyla Hanım çocuklara basit bir düzenek gösterdi: beyaz perde, küçük oyuncak figür ve ışık kaynağı. Figür ışığa yakın durduğunda perde üzerindeki gölgesi büyüyordu. Işık başka bir yöne kaydırıldığında gölgenin boyu ve yeri değişiyordu. Leyla Hanım, “Bu yalnızca temel bir model,” dedi. “Meydandaki görüntünün nedeni olduğunu kanıtlamaz. Ama hangi değişkenlere bakacağımızı gösterebilir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine sorular yazdı: Gölgede ışık kaynağı var mıydı? Kaynağın yüksekliği neydi? Duvarın açısı ne kadar etkiliydi? Gölgenin kaybolduğu anda hangi ışıklar sönmüştü? "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " videodaki sesleri dinledi; arka planda bir araç geçiyor, sonra uzaktan müzik sesi duyuluyordu. Hiçbiri tek başına belirleyici değildi.\n\nAkşam öğretmen ve velilerinden biriyle meydana gittiler. Henüz karanlık çökmemişti. Belediyenin aydınlatma direkleri, bir kafeden gelen küçük ışıklar ve karşı binadaki reklam ekranı duvara farklı yönlerden bakıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " duvarın önünde durup kendi gölgesini gözledi. Işık açısına göre uzuyor, kısalıyor, bazen iki ayrı gölgeye ayrılıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " videonun çekildiği noktayı tahmin edip fotoğraf çekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " aynı görüntüyü elde edemediklerini söyledi. “Çünkü saat farklı, ışıklar farklı, belki de kamera konumu farklı,” dedi. Leyla Hanım her denemede tek bir değişkeni değiştirmelerini önerdi. Böylece hangi etkinin nereden geldiğini anlamaları kolaylaşacaktı.\n\nMeydanın kenarındaki fırından çıkan Hasan Bey yanlarına yaklaştı. “Gölgeyi mi arıyorsunuz?” diye sordu. “Ben de gördüm sandım ama sonra bir şey olmadı.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ne gördüğünü sordu. Hasan Bey, “Yandaki binanın önünden biri geçiyordu, duvarda kocaman göründü,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " heyecanlandı. “Demek insan!” Leyla Hanım hemen uyardı: “Hasan Bey'in gözlemi önemli bir ipucu, ama hangi ışığın gölgeyi oluşturduğunu hâlâ bilmiyoruz.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk bilim kulübü toplantısında Leyla Hanım, öğrencilerin ölçüm cetveline bakarken neden aynı nesne için farklı sayılar yazdıklarını sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ile "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " önce cetvellerin yanlış olduğunu sandı. Sonra çizimleri karşılaştırınca herkesin ışık kaynağını farklı uzaklığa koyduğunu gördüler. Öğretmen, “Tek bir değişkeni kontrol etmezseniz deneyinizin sonucu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr102_belirsiz"
+        },
+        {
+          "t": "metin",
+          "v": " kalır,” dedi. Masadaki küçük figürü sabit tuttular. Işığı on santimetre ileri, sonra geri aldılar; gölgenin boyu belirgin biçimde değişiyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir tablo hazırladı. Her denemede ışığın figüre uzaklığını, figürün perdeye uzaklığını ve gölgenin yaklaşık uzunluğunu not ettiler. Bazı ölçümler tam uyuşmuyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başlangıçta bunları silmek istedi. Leyla Hanım buna karşı çıktı. “Yanlış veya beklenmedik sonucu görmeden temiz tablo yaparsanız, deneyin ne kadar güvenilir olduğunu anlayamazsınız.” Sonraki ölçümlerde cetvelin eğik tutulduğunu fark ettiler. Düzeltince fark azaldı.\n\nÖğleden sonra "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " videodaki siluetin neden başının yana dönük gibi göründüğünü tartıştı. Belki aradaki cismin kenarı başka bir nesnenin gölgesiyle birleşmişti. Leyla Hanım, insan zihninin belirsiz şekilleri tanıdık görüntülere benzetme eğilimine değindi. Çocuklar bir bulut fotoğrafında tavşan, bir ağaç gövdesinde yüz görebiliyordu. Bu, görüntünün içine gerçekten tavşan veya yüz yerleştirilmiş olduğu anlamına gelmiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " günlüğüne şu cümleyi yazdı: “Gördüğüm şekil ile ona verdiğim anlam farklı olabilir.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bundan hoşlandı. Gizemleri çözmeye çalışırken ilk önce kendi gözlerinin anlattığı hikâyeye de soru sormaları gerekiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okulda ertesi gün yeni bir video yayıldı. Bu kez gölgenin gözlerinin parladığı iddia ediliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " videoyu orijinaliyle karşılaştırdı. Göz gibi görünen iki noktanın parlaklığı yalnızca ikinci videoda artmıştı. Ayrıca görüntü keskinleştirilmiş ve üzerine ürkütücü ses eklenmişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu değişiklikleri fark edince şaşırdı. “Biri bilerek korkutmaya mı çalışıyor?” diye sordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kesin bir suçlama yapmadı. Görüntünün kimin tarafından işlendiğini bilmiyorlardı. Düzenlenmiş video ile asıl kayıt arasındaki farkı işaretleyip açıklayıcı bir not hazırladılar. Notta görüntü düzenleme araçlarının bazen ayrıntıları belirginleştirdiğini, bazen de yanıltıcı biçimde değiştirebildiğini anlattılar. Ancak henüz gölgenin gerçek kaynağını söylemediler. "
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nOkul panosuna asılan not beklediklerinden çok ilgi gördü. Öğrencilerden biri “O zaman ilk video kesin sahte,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. “Hayır. "
+        },
+        {
+          "t": "vurgu",
+          "v": "Gölgenin gerçekten görünmüş olması, hakkında yapılan bütün yorumların doğru olduğu anlamına gelmiyor"
+        },
+        {
+          "t": "metin",
+          "v": ". Bir videonun sonradan işlenmiş olması da ilk kaydın bütünüyle uydurma olduğunu kanıtlamaz.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bu ayrımı yapmak kolay değildi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kendisinin de ilk gün görüntüde bir yüz gördüğünü itiraf etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Ben de önce ürktüm,” dedi. “Korkmak, düşündüğümüz şeyi doğru yapmıyor. Yine de duygumuz gerçek.” İkisi birlikte okulda küçük bir medya atölyesi düzenlemeye karar verdi. Öğrencilere video kaynaklarını, çekim tarihini, kırpılan bölümleri ve eklenen sesleri kontrol etmeyi göstereceklerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yeni videonun yayılmasından sonra meydandaki fırının önünde akşam müşterileri azaldı. Hasan Bey buna üzülüyordu. Komşularından biri dükkânı daha erken kapatmasını tavsiye etmiş, başka biri de gölgenin yakınındaki sokaktan geçmemeye başlamıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", söyledikleri sözlerin insanların günlük kararlarını etkilediğini görünce araştırmanın önemini daha iyi anladı.\n\nOkul gazetesi konuyla ilgili haber hazırlamak istedi. Gazete kulübünden Öykü, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " “Gölgenin sırrı çözüldü mü?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Henüz değil,” dedi. “Şimdilik bazı açıklamaları deniyoruz.” Öykü heyecanlı bir başlık yazmayı düşünüyordu ama kaynakları doğrulamadan kesin hüküm vermenin güven kaybettirebileceğini kabul etti. Haber başlığı “Kent Meydanındaki Gölgenin Kaynağı Araştırılıyor” oldu.\n\nHaberde herkesin adı geçmedi. Videoyu çeken kişinin izni olmadan görüntüsü kullanılmadı. Yine de yayımlanan her yeni parça yorumları hareketlendiriyordu. Bir kullanıcı, “Öğrenciler gerçeği saklıyor,” yazdı. Başka biri, “Demek ki belediye bir deney yapıyor,” diye iddia etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu yorumları okuyunca şaşırdı. İnsanlar onun açıkça söylemediği şeyleri aralara yerleştiriyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Tek tek cevap verelim,” dedi. Leyla Hanım daha sakin bir yöntem önerdi. Ellerinde doğrulanmış verileri, denenen açıklamaları ve henüz bilinmeyenleri ayıran küçük bir bilgilendirme hazırlayacaklardı. Bu metin bir tartışma kazanmak için değil, okuyanların neyin gözlem neyin varsayım olduğunu görebilmesi için yazılacaktı.\n\nErtesi gün "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bilgilendirme afişinin altına bir cümle ekledi: “Korkmuş olmak utanılacak bir şey değildir; korkuyu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr102_kanit"
+        },
+        {
+          "t": "metin",
+          "v": " yerine koymak ise bizi yanıltabilir.” Hasan Bey afişi görünce teşekkür etti. “Ben de gördüğümü anlamamıştım,” dedi. “Ama hiçbir şey bilmeden komşularımı korkutmak istemiyorum.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk kez araştırmasının yalnızca bir bilim kulübü projesi olmadığını hissetti. Toplum içindeki sözlerin de sonuçları vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir hafta sonra belediye, meydandaki aydınlatma düzeniyle ilgili çalışma yapılacağını duyurdu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu ilanı tesadüfen gördü. Gölgenin görüldüğü gece, reklam ekranında da yeni bir program denenmiş olabileceğini düşündü. Ancak belediyeyi suçlamak için hiçbir neden yoktu. Öğretmenleri aracılığıyla resmî bilgi istediler.\n\nGelen yanıtta meydandaki ışıkların saat programlarının bakım ekibi tarafından değiştirildiği yazıyordu. Işıkların bazıları gece belirli saatte otomatik sönüyordu. Bu bilgi, gölgenin kaybolduğu saatle uyumlu olabilirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen sonuca ulaşmak istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu durdurdu. “Bir iki saatin çakışması neden-sonuç ilişkisini kanıtlamaz,” dedi. “Işık kaynağının yerini de bulmamız gerekiyor.”\n\nBir sonraki gözlem için öğretmenleriyle birlikte meydanın önceden izin verilen bölümünde basit ölçümler yaptılar. Bir ışığın gücüyle değil, geliş yönüyle ve aradaki cismin konumuyla ilgilendiler. Yakındaki binanın girişinde uzun, metal bir heykel bulunuyordu. Heykel gündüz kimsenin dikkatini çekmiyor, akşamları vitrin ışıklarıyla gölge oluşturuyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " duvarın karşısına geçince siluet uzaktan bir insan gibi göründü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " heykelin konumunu not aldı, ardından ışığı gözleriyle izledi. Fakat iki nokta uyuşmuyordu: Heykelin gölgesi duvarın alt kısmına düşüyordu; videodaki gölge daha yüksekteydi. “Yine erken sonuca gittik,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez itiraz etmedi. Üstelik bir heykelin varlığı, insan gölgesini de imkânsız kılmazdı.\n\nGözlem sonunda öğretmenleri küçük bir öneride bulundu: Ertesi hafta belediyenin teknik görevlisiyle açık bir görüşme ayarlayabilirlerdi. Böylece ışıkların konumu ve çalışma saati hakkında doğrudan bilgi alabileceklerdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez sabırsızlanmadı. “Gizem kaçmıyor,” dedi. “Duvar yarın da burada.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bakım görevlileriyle yapılan görüşmede ekrana yansıyan ışığın çevresinde başka yüzeyler de olduğunu fark ettiler. Karşı binanın camları, otobüs durağının şeffaf panelleri ve metal heykel farklı biçimde ışığı yansıtıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk anda bunların hepsini tek bir kaynak gibi düşünmek istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise her yüzeyin etkisini ayrı gözlemek gerektiğini söyledi. Öğretmenleri güvenli gözlem sınırlarını belirledi; belediye personelinin görev alanına izinsiz girmediler.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir akşam önce çekilen başka bir güvenlik kamerası görüntüsünün varlığından söz edildiğini duydu. Hemen görüntüyü istemek yerine öğretmenine danıştı. Kamerada meydandan geçen insanların özel bilgileri bulunabilirdi. Bu nedenle kayıtların kendilerine verilmesi uygun olmayabilirdi. Teknik görevli, kişilerin görüntülerini paylaşmadan aydınlatma değişikliklerine ilişkin kayıtları sağlayabileceğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun araştırma için yeterli olabileceğini fark etti.\n\nAydınlatma çizelgesinde saat on bire yakın bir parlaklık değişimi vardı. Ancak ışığın değişmesi, görüntünün o gece kesin aynı biçimde oluştuğunu ispatlamıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " deneyi yeniden düzenledi. Önce heykelin gölgesini ölçtüler. Ardından yetkili görevlinin belirlediği güvenli noktadan geçen bir kişinin oluşturduğu gölgeyi gözlediler. İki şekil üst üste geldiğinde uzun bir kol görüntüsü oluşuyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " videoya baktı. Birkaç saniyeliğine herkesin korktuğu şey, sıradan iki gölgenin birleşimi gibi göründü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yine de rapora ölçüm hatalarını yazdı. Kamera açıları tam aynı değildi; duvarın üzerindeki yüzey dokusu gölgelerin kenarlarını değiştiriyordu. Bir görüntüyü kabaca benzetmek, geçmişteki bütün koşulları yeniden yaratmak değildi. “Belki gölgeyi açıklıyoruz ama videodaki her ayrıntıyı değil,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk günkü hâlini hatırlayıp gülümsedi. “Daha önce bir cümleyle bütün gizemi çözmek isterdim,” diye itiraf etti. “Şimdi iki kelime daha çok hoşuma gidiyor: olabilir, çünkü.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Teknik görevli Selçuk Bey, meydanın aydınlatma planını gösterdi. Yeni reklam ekranının arkasındaki güçlü ışığın bazı gecelerde duvara doğru yönlendiğini, ancak sistemin belirli saatlerde parlaklık değiştirdiğini anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " plandaki açıyı çizdi. Işık, heykelin yanındaki dar geçitten yansıma alıyor olabilirdi. Ama görüntünün insan biçimindeki kolu hâlâ açıklanmamıştı.\n\nSelçuk Bey çocukları bakım saatinde, yetkili yetişkinler eşliğinde yapılan güvenli bir gözleme davet etti. Işıklar kontrollü biçimde çalıştırıldığında heykelin gölgesi duvarda belirdi. Ardından geçitten servis görevlisi yürüdü. Heykelin gölgesiyle kişinin gölgesi kısa süre üst üste gelince videodaki tuhaf siluete şaşırtıcı biçimde benzeyen bir şekil oluştu. Herkes sustu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " telefonunu çıkardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen “Aynı noktadan çekelim,” dedi. Çekim için görevliden izin aldılar. Kamera açısı, yükseklik ve saat kaydedildi. Deneme iki kez tekrarlandı. Her ikisinde de benzer görüntü oluştu, fakat orijinal videoyla birebir aynı değildi. Selçuk Bey, aydınlatma programının o günden beri değiştirildiğini hatırlattı. Bu yüzden ancak güçlü bir açıklama önerdiklerini, geçmişteki görüntünün tüm koşullarını yeniden oluşturamadıklarını söylediler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bundan memnundu. Bir insan gölgesinin başka bir cisimle birleşmesi hem büyük silueti hem de biçimdeki tuhaflığı açıklıyordu. Saat programı, görüntünün aniden kaybolmasını da makul kılıyordu. Yine de rapora “kesin kanıt” yazmadı. “Elimizdeki verilerle en iyi uyuşan açıklama,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kontrollü gözlemin ardından "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir deney daha önerdi. Öğretmenlerinden izin alarak sınıfta basit bir karton model hazırladılar. Modelde duvarı beyaz kâğıt, heykeli karton figür, insanı küçük tahta çubuk temsil ediyordu. Işık kaynağını farklı yüksekliklere koyup iki gölgenin ne zaman birleştiğini gözlediler. Her birleşme aynı görüntüyü oluşturmuyordu. Bazıları bir insanı çağrıştırıyor, bazılarıysa yalnızca düzensiz bir leke gibi görünüyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", aynı şekli gören üç öğrenciden farklı yorumlar aldı. Biri “Bekçi,” dedi; bir başkası “Ağaç,” üçüncüsü “Uzun kollu robot.” Elif adlı arkadaşları hiçbir şey söylemedi, sadece “Eğik bir çizgi ve oval şekil görüyorum” diye tarif etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu dört cevabı yan yana yazdı. İnsanların nesneye verdikleri adlar, gördükleri çizgilerden daha farklıydı. Böylece deneylerinde gözlem ile yorum arasındaki sınır somutlaştı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", öğretmenine “O hâlde gözlerimiz bize yalan mı söylüyor?” diye sordu. Leyla Hanım gülümsedi. “Gözlerimiz çevremizi anlamamız için çok işe yarar,” dedi. “Ama beynimiz gördüklerini yorumlar. Yanılabileceğimiz için ölçüm, karşılaştırma ve farklı kişilerin gözlemleri değerlidir.” Çocuklar deneyin fotoğraflarını tarih ve ışık yerleriyle birlikte kaydetti; okuldaki sunumda gerçek meydan görüntüsüyle maket görüntüsünü karıştırmayacak biçimde etiketlemeye karar verdiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Deneyin sonundaki küçük tartışma en az sonuç kadar öğreticiydi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bence gizemi çözdük,” diyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise “Güçlü bir açıklama bulduk,” diye ısrar ediyordu. Leyla Hanım ikisine de rapordaki iddia cümlesini yeniden okumalarını istedi. Sonunda birlikte şu ifadeyi seçtiler: “Mevcut veriler, gölgenin birden fazla ışık ve cismin birleşmesiyle oluşmuş olabileceğini destekliyor.” Bu cümle daha uzundu ama neyi bildiklerini daha doğru anlatıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gölge videosunun yayıldığı günlerde sekizinci sınıftan Baran, akşam kursundan eve dönerken meydandan geçmemeye başlamıştı. Daha uzun bir yol seçiyor, bazı günler eve geç kalıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu duyunca, videonun yalnızca bir eğlence konusu olmadığını daha iyi anladı. Baran'la konuşurken “Korkulacak bir şey yok” demedi. Böyle bir cümle hem onu küçümseyebilir hem de henüz tam kanıtlanmamış bir güvence verebilirdi.\n\n“Orada ne olduğunu bilmiyorum,” dedi Baran. “Ama video her karşıma çıktığında korkuyorum.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona şimdiye kadar yaptıkları güvenli gözlemleri anlattı, ışık ve gölge ilişkisini gösterdi. Baran dikkatle dinledi ama bir anda rahatlamadı. “Beynim hâlâ o görüntüyü hatırlıyor,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu anlayabiliyordu. Korku, bir tabloya bakınca hemen silinmeyebilirdi.\n\nÖğretmenleri, endişe yaşayan öğrencilerin güvendikleri yetişkinlerle konuşmasını, gece gözlemine kendi başlarına çıkmamalarını söyledi. Baran da ailesiyle konuşup kurs saatinden sonra daha güvenli bir dönüş düzeni belirledi. Bu, gizemi çözmekten ayrı ama önemli bir ihtiyaçtı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir olayı açıklamanın insanların duygularıyla ilgilenmeyi gereksiz kılmadığını öğrendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi hafta Baran bilim kulübüne katıldı. İlk iş olarak sınıftaki gölge deneyini izledi. Aynı cisimden iki farklı gölge çıktığını görünce şaşırdı. “Videodaki gibi!” dedi. Sonra küçük bir kart aldı, üstüne Bir gölge gördüm, bir hikâye düşündüm yazdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kartı kulüp panosuna astı. Bazen öğrenme, korkunun ortadan kaybolmasından önce onun hakkında soru sorabilmekle başlardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okul gazetesinden Öykü, ilk videonun yalnızca on iki saniyelik olduğunu fark etti. “Öncesi ve sonrası yok,” dedi. “Oysa bir ışığın açılıp kapanması gibi olayları anlamak için daha uzun zaman aralığı gerekebilir.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " videoyu çeken kişinin yeniden görüşmeye izin verip vermeyeceğini sordu. İzin verilirse, çekim koşulları hakkında sorular soracaklardı; verilmezse bu sınıra saygı duyacaklardı.\n\nVideoyu çeken kişi öğretmenlerinin aracılığıyla kısa bir görüşmeyi kabul etti. Gece oradan geçerken durup ilginç bir görüntü gördüğünü, hızlıca telefonunu çıkardığını anlattı. “Korkutucu bir şey çektiğimi düşünmedim,” dedi. “Sabah videonun bu kadar yayıldığını görünce şaşırdım.” Görüntüye eklenen müziğin kendisine ait olmadığını da belirtti.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Videonun öncesinde ne oldu?” diye sordu. Kişi, reklam ekranının parladığını hatırladığını ama emin olmadığını söyledi. Bu ifade teknik kayıtlarla uyumlu olabilirdi. Fakat "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu kesin tanık saymadı. Hafıza ile cihaz kaydı birbirinden farklı türde bilgi sunuyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da ilk yayımlanan metnin “bekçi geri döndü” şeklinde yazılmadığını öğrendi. Bu yorum, videoyu paylaşan başka hesaplardan birinde eklenmişti. O anda mesele yalnızca ışık değil, bilgi zinciriydi: Görüntüyü kim çekmişti, kim kesmişti, kim müzik eklemişti, kim başlık yazmıştı? Bir iddianın yolu uzadıkça kaynağı unutuluyordu.\n\nİkili bu zinciri çizerek sunumlarına ekledi. Oklar, paylaşımın farklı aşamalarını gösteriyordu. Bazı bağlantılar belirsizdi ve öyle işaretlendi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bir videonun hikâyesi de videodaki olay kadar araştırılabilir,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Belki daha bile zor,” diye karşılık verdi. Çünkü ışığın gölgesi duvara düşerken, sözlerin gölgesi insanların zihninde uzuyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Araştırmaları ilerledikçe bir öğrenci grubu bu kez “Gölgeyi bilim kulübü yaptı” söylentisini yaydı. Bir fotoğrafta "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " elinde ışık ölçerle görülmesi, bazılarına göre bunun kanıtıydı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çok sinirlendi. “Biz açıklamaya çalışırken suçlu olduk,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun can sıkıcı olduğunu kabul etti. “Ama hemen karşı suçlamaya başlarsak aynı hatayı yaparız,” diye hatırlattı.\n\nÖğretmenleriyle birlikte, fotoğrafın ne zaman çekildiğini ve bilim kulübünün hangi amaçla ölçüm yaptığını açıklayan kısa bir bilgi yayımladılar. Fotoğrafın asıl paylaşıldığı sayfada tarihin yazdığı görülebiliyordu: İlk gölge videosundan sonraki gün. Demek ki fotoğraf, ilk olayın nedeni olarak gösterilemezdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu kanıtla açıklayınca bir miktar rahatladı.\n\nYine de birkaç kişi söylentiye inanmaya devam etti. Leyla Hanım çocuklara, doğru bir açıklamanın herkesi anında ikna etmek zorunda olmadığını anlattı. “Sizin sorumluluğunuz, elinizdeki kanıtı dürüstçe sunmak ve gerektiğinde hatanızı düzeltmektir,” dedi. “Herkesin duygusunu ve düşüncesini kontrol edemezsiniz.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " akşam defterine iki sütun çizdi. Bir tarafta bildiklerim, diğerinde başkalarının iddiaları yazıyordu. İlk sütunda ölçüm sonuçları, ışık kaydı ve tekrar edilen gölge deneyi vardı. İkinci sütunda geceleri dolaşan bekçi, gizli düzenek ve bilim kulübü suçlaması. Bu iki sütunu karıştırmadığında düşünmek daha kolaydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Meydanın duvarına asılan eski gölge videosu günlerce konuşulmuştu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hazırladıkları raporu okulun bilim gününde sundu. İlk slaytta orijinal görüntü, ikinci slaytta farklı ışık kaynaklarının çizimi, üçüncü slaytta kontrollü gözlem vardı. Son slaytta ise şu cümle yazıyordu: Bir iddia ilgi çekici olabilir; doğru sayılması için kanıt gerekir.\n\nSunumdan sonra bir öğrenci, “Yani bütün efsaneler yalan mı?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Efsaneler kültürün bir parçası olabilir,” dedi. “Ama tarihsel veya bilimsel bir iddiayı doğrulamak istediğimizde başka yöntemlere ihtiyacımız var.” Öğretmenleri de insanların hikâyelerden keyif alabileceğini, bunun "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr102_guvenilir"
+        },
+        {
+          "t": "metin",
+          "v": " bilgi aramaya engel olmadığını anlattı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk gün gölgeyi bir korku filmi gibi izlediğini söyledi. Şimdi en heyecan verici anın tuhaf bir şey görmek değil, yavaş yavaş nasıl oluştuğunu anlamak olduğunu düşünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise insanların birbirlerinin korkusuyla alay etmeden de kuşkucu olabileceğini öğrenmişti. Birinin endişesini küçümsemek, onu doğru bilgiye yaklaştırmıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Meydandaki duvar bir süre sonra yeniden sıradan görünmeye başladı. Ama akşam olduğunda "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hâlâ duvarın önünden geçerken ışıklara bakıyordu. Bir gölgenin her zaman bir sahibi olması gerekmiyordu; bazen birçok kaynağın kısa bir anda buluşmasıydı. Bu düşünce ona gizemli gelmeye devam etti. Yalnızca artık korkudan değil, meraktan ürperiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yerel bir haber sitesi okulun araştırmasını duyurmak istedi. Muhabir, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " hazırladığı notları okuyunca heyecanlandı. “Gölgenin sırrını çözen çocuklar” başlığını önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " nazikçe itiraz etti. “Güçlü bir açıklama bulduk ama geçmişteki bütün koşulları birebir yeniden oluşturmadık,” dedi. Muhabir bir süre düşündü. “Bu başlık fazla iddialıymış,” diyerek yeni bir öneri getirdi: “Öğrenciler meydandaki gizemi ışık ve kanıtlarla araştırdı.”\n\nRöportajda "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk gün nasıl heyecanlandığını anlattı. “Ben de hemen bir hikâyeye inandım,” dedi. “Sonra kendi ilk tahminimin yanılabileceğini öğrendim.” Muhabir, “Peki bu sizi cesaretsiz yapmadı mı?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " şaşırdı. “Tam tersi. Yanılabileceğimi bildiğim için yeniden denemeye cesaret ettim.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun güzel bir cevap olduğunu düşündü; arkadaşının heyecanı artık tek bir kesin sonuca bağlı değildi.\n\nHaber yayımlandığında bazı okuyucular teşekkür etti, bazıları daha fazla kanıt istedi. Birkaç kişi hâlâ eski bekçi hikâyesini anlatıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " buna kızmadı. İnsanlar hikâye anlatmayı sürdürebilir, yine de gündelik kararlarında güvenilir bilgilere dayanmayı öğrenebilirdi. Haberin altına eklenen küçük bir bağlantı, öğrencilerin gözlem tablolarını ve bulguların sınırlarını gösteriyordu. Böylece isteyenler yalnızca sonuç cümlesine bakmak yerine süreci de inceleyebilecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi sabah sınıfa gelen Leyla Hanım iki haber başlığını tahtaya yazdı. İlki “Gizem çözüldü!” diyordu. İkincisi “Öğrenciler olası ışık düzenini açıkladı” şeklindeydi. “Hangisi daha çok dikkat çeker?” diye sordu. Çoğu öğrenci ilkini seçti. “Hangisi elimizdeki kanıta daha uygun?” diye sorunca neredeyse hepsi ikinciyi işaretledi. Öğretmen gülümsedi. “Dikkat çekmek ile doğru anlatmak arasında seçim yapmak zorunda değiliz; ama doğruyu bozarsak uzun vadede güveni kaybederiz.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okulun görsel sanatlar kulübü, meydan projesine katılmak için küçük bir sergi hazırladı. Öğrenciler ışığın düştüğü açıya göre değişen gölgeler çiziyordu. Bir çalışmada heykel ve insan gölgesi iki ayrı renkle gösterilmiş, üst üste gelen bölgede üçüncü bir renk ortaya çıkmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizimi görünce deneyin fiziksel düzenini anlatmak için ne kadar yararlı olduğunu fark etti.\n\nSerginin açılışında sanat öğretmeni, “Bir görüntüyü sanat eseri olarak yorumlamakla bilimsel kanıt olarak sunmak farklı iştir,” dedi. “Buradaki resimler açıklamayı kolaylaştırır ama yerinde yapılan ölçümlerin yerine geçmez.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu ayrımı sevdi. Video hakkında çıkan söylentilerde insanlar hayal güçlerini kanıt gibi kullanmıştı. Oysa hayal gücü bir soruyu sormaya, bir model kurmaya ve anlatımı zenginleştirmeye de yardım edebilirdi.\n\nÖğrenciler sergiye küçük bir oyun ekledi. Ziyaretçiler aynı gölge şekline bakıp ne gördüklerini yazıyordu. Bir çocuk ejderha, biri kule, biri koşan bir insan gördü. Yanlarında ışık kaynaklarının yerleri gösterildiğinde gölge fiziksel olarak değişmiyordu; değişen insanların yorumu oluyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " oyunun sonunda “Görmek ve anlamlandırmak aynı adım değil,” diye açıkladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir veli gölgenin hâlâ korkutucu görünüp görünmediğini sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dürüstçe, “Bazen evet,” dedi. “Ama artık gördüğüm şeyin kaynağını merak ediyorum.” Veli onun cevabını sevdi. Çünkü bir soruyu araştırmak, bütün duyguları silmek zorunda değildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir akşam bilim kulübü erken saatlerde meydanda son gözlemini yaptı. Bu kez öğrencilerin yanında ışık kaynaklarının krokisi, ölçüm notları ve güvenli gözlem planı vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " duvarın önüne geldiğinde birkaç ay önce aynı noktada korkutucu bir hikâye dinlediğini hatırladı. Şimdi aynı duvarda güneşin batışıyla uzayan sıradan gölgeler görüyordu. Nesneler değişmemişti; onun bakışı değişmişti.\n\nHasan Bey fırından çıkıp yanlarına simit getirdi. “Artık kimse gölgeyi konuşmuyor sanıyordum,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “Konuşuyoruz, ama başka türlü.” Hasan Bey ışık haritasını inceledi. Duvarın yanındaki metal heykeli, karşı binanın ekranını ve geçitten yürüyen kişinin oluşturabileceği gölgeyi gördü. “Bazen gözümüzün önündeki şeyleri bile anlamak zaman alıyor,” dedi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Yalnızca bakmakla değil, doğru soruları sormakla,” diye ekledi. Sonra meydanın öbür ucunda oynayan çocuklara baktı. Onlardan biri elini ışığa uzatıp duvarda kuş şekli yaptı. Arkadaşları kahkahalarla güldü. Aynı duvar, bu kez korku değil oyun taşıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine son bir cümle yazdı: Gölgenin sahibini bulmaya çalışırken, onun kaynağını sormayı öğrendik. Defteri kapattı. Yeni bir ışık yakıldığında yeni gölgeler oluşacaktı. Belki başka bir gün birileri onları da yanlış anlayacaktı. O zaman çocukların elinde korkudan daha güçlü bir araç vardı: merak, dikkat ve kanıt arama alışkanlığı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bilim kulübünün son toplantısında Leyla Hanım, bütün ışıkları kapatıp ekranda aynı gölge şeklinin çizimini gösterdi. “Şimdi bunun gerçek bir insana ait olduğunu düşünseniz ne hissedersiniz?” diye sordu. Bazı öğrenciler tedirgin oldu, bazıları gülmeye başladı. Sonra aynı şeklin heykel ve insan gölgelerinin birleşimiyle oluşabildiğini anlatan model açıldı. Duygular değişti ama görüntünün kendisi pek değişmemişti.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bir açıklama öğrenmek, görüntüye bakışımızı değiştirebiliyor,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da bunun tek yönlü olmadığını ekledi. “Bazen çok korktuğumuz için gördüğümüz şekle daha korkutucu bir anlam da veriyoruz.” Öğretmen, hislerin gerçek olduğunu fakat tek başına bir iddiayı kanıtlamadığını hatırlattı.\n\nSınıfça bir olayın nasıl araştırılacağını anlatan küçük bir poster hazırladılar. Önce gözlemi ve yorumu ayırmak, ardından kaynağı bulmak, değişkenleri belirlemek, güvenli koşullarda denemek ve sonucun sınırlarını yazmak gerekiyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " posterin en başına “Merak et!” yazdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " en alta “Emin olmadığında bunu da söyle” cümlesini ekledi. İki söz yan yana olduğunda merak ve dikkat birbirini tamamlıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Posteri gören Baran, kendisinin gölgeden korktuğu günleri hatırladı. “İlk başta herkes bana gülüyor sanmıştım,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onunla konuşmanın en önemli adımlardan biri olduğunu düşündü. Eğer yalnızca “Korkma” deseydi Baran belki de bilim kulübüne hiç gelmeyecekti. Onu dinlemek araştırmanın sayısal sonuçları kadar gerekliydi.\n\nGün sonunda Leyla Hanım, “Peki gerçek bir söylentiyle karşılaştığınızda nasıl davranacaksınız?” diye sordu. Öğrenciler bir ağızdan “Paylaşmadan önce kontrol edeceğiz” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ekledi: “Ve hemen birini suçlamayacağız.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de “Korkmuş birini küçümsemeyeceğiz,” diye tamamladı.\n\nO akşam meydandan geçen "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", taş duvarda iki kısa gölge gördü. Bir an durup kaynaklarına baktı. Birisi lambadan, diğeri geçen bir bisikletten oluşuyordu. Görüntü sıradandı; yine de ışığın çizdiği çizgileri dikkatle izledi. Korkutucu hikâyenin sonunda bulduğu şey, gölgelerden daha ilginçti: Soru sormaktan vazgeçmemişti.\n\nMeydandaki çalışma sonrasında okul gazetesi, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " araştırma defterinden izin verilen bazı sayfaları yayımladı. Sayfalarda yalnızca başarılı denemeler değil, tutmayan ölçümler de vardı. Okuyuculardan biri neden yanlış sonuçları saklamadıklarını sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Çünkü neyi neden değiştirdiğimizi gösteriyorlar,” diye yanıt verdi. Başka bir çocuk, evde el feneriyle duvarda kuş şekli yapmayı denediğini anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona bunu güvenli, uygun bir ortamda yetişkin bilgisiyle yaptığını söyleyince sevindi; araştırmanın yeni sorular doğurması hoşuna gitmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bilim kulübü son toplantısında bir oyun oynadı. Öğretmen her gruba aynı bulanık fotoğrafı verdi, fakat açıklama cümlelerini farklı yazdı. Bir gruba “Gizemli yaratık”, başka bir gruba “Ağaç dalı”, üçüncü gruba “Belirsiz nesne” başlığı gösterildi. Öğrenciler görüntüyü farklı yorumladı. Başlıkların bakışı etkileyebildiğini kendi deneyimleriyle gördüler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " artık yalnızca videoyu değil, videonun yanında yazanı da kontrol edeceğini söyledi. Çünkü bir görüntünün önüne konan birkaç kelime, insanların ona yüklediği anlamı değiştirebilirdi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " son olarak “Eğer yarın başka bir gölge görünürse ne yaparız?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " düşünmeden yanıt vermedi. “Önce güvende kalırız,” dedi. “Sonra kimin ne gördüğünü, hangi ışıkların bulunduğunu ve elimizde hangi kayıtların olduğunu sorarız. Yeni olayın eskisine benzediğini söyleyebiliriz ama aynı nedenle oluştuğunu varsayamayız.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. Gerçek araştırma, her yeni soruya aynı cevabı yapıştırmak değildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir hafta sonra "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " okuluna medya okuryazarlığı atölyesi için gelen gazeteci, öğrencilerden aynı videoya iki ayrı başlık yazmalarını istedi. Bir grup “Gece yarısı meydanda korkunç yaratık” dedi. Diğer grup “Meydandaki siluetin kaynağı araştırılıyor” başlığını seçti. Aynı görüntü, ilk başlığın altında sanki kesinleşmiş bir olağanüstü olaydı; ikinci başlığın altında ise açıklanmayı bekleyen gözlemdi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hangisinin daha çok tıklanacağını tahmin edebiliyordu. Bunun onu rahatsız etmesi şaşırttı. “Birilerini heyecanlandırmak için emin olmadığımız şeyleri kesinmiş gibi söylemek kolay,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona, meydanda geç saatlere kadar korkuyla bekleyen komşularını hatırlattı. Sözcükler eğlence olarak yazılmış olsa da sonuçları gerçek olabiliyordu.\n\nAtölye çıkışında küçük bir öğrenci, “Ama masallar da gerçek değil; onları niçin seviyoruz?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu soruyu beğendi. “Masalda baştan kurmaca bir dünyaya girdiğimizi biliyoruz,” dedi. “Sorun hayal kurmakta değil, hayali kanıt diye sunmakta.” O günden sonra meydandaki duvarın önünden her geçtiğinde aynı şeyi düşündü: İnsan gölgesinden korkabilir; fakat gölge hakkında kurduğu hikâyenin sorumluluğunu da taşır."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sunumun son slaydına iki cümle yazdı: “Gördüğümüz şey bir gölgedir. Gölgenin neden oluştuğu ise ayrıca araştırılmalıdır.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk cümleye itiraz etmedi; ikinci cümleyi görünce gülümsedi. İki satır arasında heyecanı yok eden bir boşluk değil, gerçeğe ulaşmak için yürünecek bir yol vardı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr102_hayal": [
+      {
+        "t": "yoldas",
+        "hal": "yalin",
+        "yedek": "bir arkadaş"
+      },
+      {
+        "t": "metin",
+        "v": " biraz hayal kırıklığına uğradı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "İlk gölge hangi gece görülmüştü?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Perşembe gecesi"
+        },
+        {
+          "id": "B",
+          "metin": "Pazar sabahı"
+        },
+        {
+          "id": "C",
+          "metin": "Cuma öğleden sonra"
+        },
+        {
+          "id": "D",
+          "metin": "Salı akşamı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Metinde ilk gölge perşembe gecesi duvarda belirmişti."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 11,
+      "metin": "Nil'e göre iki olayın aynı saatte gerçekleşmesi ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Olaylar arasında kesin bir neden-sonuç ilişkisi vardır"
+        },
+        {
+          "id": "B",
+          "metin": "Olaylar tesadüfen de aynı saatte olabilir ve bu tek başına neden değildir"
+        },
+        {
+          "id": "C",
+          "metin": "Gölge gerçekten bir insandır"
+        },
+        {
+          "id": "D",
+          "metin": "Işıklar bozuk olduğunda gölge görünür"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Nil, aynı saatte olmanın neden-sonuç ilişkisini tek başına kanıtlamadığını söyler."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 36,
+      "metin": "Bu metne göre hayal kurmak ile sorun arasındaki fark nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Hayal kurmak tek başına sorun değildir; sorun hayali kanıt gibi sunmaktır"
+        },
+        {
+          "id": "B",
+          "metin": "Hayal kurmak her zaman yanlıştır"
+        },
+        {
+          "id": "C",
+          "metin": "Hayal kurmak ile kanıt aynı şeydir"
+        },
+        {
+          "id": "D",
+          "metin": "Hayal kurmanın hiçbir değeri yoktur"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Masal ve hayal kurmak sorun değildir; hayal ürününü kanıt gibi sunmak sorundur."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 10,
+      "metin": "Metinde “korkuyu kanıt yerine koymak” ne anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Korkunun, kanıtın yerine geçirilmesi"
+        },
+        {
+          "id": "B",
+          "metin": "Kanıtların korkutucu olması"
+        },
+        {
+          "id": "C",
+          "metin": "Korkmadan önce kanıt toplamak"
+        },
+        {
+          "id": "D",
+          "metin": "Kanıtların hepsini yok etmek"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Duygu, yani korku, kanıtın yerine konduğunda araştırma yanıltıcı sonuçlara götürebilir."
+    },
+    {
+      "id": "s5",
+      "beceri": "degerlendirme",
+      "dayanak_sayfa": 25,
+      "metin": "Sunumun son slaydındaki cümle neyi vurgular?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İlgi çekici bir iddia, doğru olduğu anlamına gelmez"
+        },
+        {
+          "id": "B",
+          "metin": "İlgi çeken her iddia doğrudur"
+        },
+        {
+          "id": "C",
+          "metin": "Kanıta gerek yoktur"
+        },
+        {
+          "id": "D",
+          "metin": "Gölgeler hakkında konuşmak yasaktır"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Son slayt, ilgi çekici bir iddianın doğrulanması için kanıt gerektiğini söyler."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr102_iddia",
+        "tur": "kelime",
+        "yazim": "iddia",
+        "anlam": "Bir şeyin doğru olduğunu ileri sürme.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_ileri_surulen",
+        "tur": "kelime",
+        "yazim": "ileri sürülen görüş",
+        "anlam": "Henüz kanıtlanmamış bir düşünce ya da savunulan fikir.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_dogrulanmis",
+        "tur": "kelime",
+        "yazim": "doğrulanmış bilgi",
+        "anlam": "Kanıtlarla sınanmış ve doğruluğu gösterilmiş bilgi.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_kanit",
+        "tur": "kelime",
+        "yazim": "kanıt",
+        "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_delil",
+        "tur": "kelime",
+        "yazim": "delil",
+        "anlam": "Bir olayın doğruluğunu gösteren belge ya da nesne.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_bulgu",
+        "tur": "kelime",
+        "yazim": "bulgu",
+        "anlam": "Bir inceleme sonucunda ortaya çıkan veri ya da sonuç.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_belirsiz",
+        "tur": "kelime",
+        "yazim": "belirsiz",
+        "anlam": "Ne olduğu ya da nasıl olduğu kesin bilinmeyen.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_muglak",
+        "tur": "kelime",
+        "yazim": "muğlak",
+        "anlam": "Birden fazla anlama gelebilen, açık olmayan.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_kesin",
+        "tur": "kelime",
+        "yazim": "kesin",
+        "anlam": "Şüphe bırakmayan, açıkça bilinen.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_guvenilir",
+        "tur": "kelime",
+        "yazim": "güvenilir",
+        "anlam": "Doğruluğuna ve sağlamlığına güvenilebilen.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_itimat",
+        "tur": "kelime",
+        "yazim": "itimat edilebilir",
+        "anlam": "Sözüne ve bilgisine inanılabilen.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_guvenilmez",
+        "tur": "kelime",
+        "yazim": "güvenilmez",
+        "anlam": "Doğruluğuna ve sağlamlığına güvenilemeyen.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_hayal",
+        "tur": "deyim",
+        "yazim": "hayal kırıklığına uğradı",
+        "anlam": "Beklenen şey olmadığında üzülmek.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_ici_burkulmak",
+        "tur": "deyim",
+        "yazim": "içi burkulmak",
+        "anlam": "Bir durumdan dolayı üzülmek, moralinin bozulması.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr102_ici_ferahlamak",
+        "tur": "deyim",
+        "yazim": "içi ferahlamak",
+        "anlam": "Bir sıkıntıdan kurtulunca rahatlamak.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr102_iddia",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr102_iddia"
+          },
+          {
+            "girdi": "hr102_ileri_surulen"
+          },
+          {
+            "girdi": "hr102_dogrulanmis"
+          }
+        ]
+      },
+      {
+        "ad": "hr102_kanit",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr102_kanit"
+          },
+          {
+            "girdi": "hr102_delil"
+          },
+          {
+            "girdi": "hr102_bulgu"
+          }
+        ]
+      },
+      {
+        "ad": "hr102_belirsiz",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr102_belirsiz"
+          },
+          {
+            "girdi": "hr102_muglak"
+          },
+          {
+            "girdi": "hr102_kesin"
+          }
+        ]
+      },
+      {
+        "ad": "hr102_guvenilir",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr102_guvenilir"
+          },
+          {
+            "girdi": "hr102_itimat"
+          },
+          {
+            "girdi": "hr102_guvenilmez"
+          }
+        ]
+      },
+      {
+        "ad": "hr102_hayal",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr102_hayal"
+          },
+          {
+            "girdi": "hr102_ici_burkulmak"
+          },
+          {
+            "girdi": "hr102_ici_ferahlamak"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr102_iddia",
+      "tur": "kelime",
+      "yazim": "iddia",
+      "anlam": "Bir şeyin doğru olduğunu ileri sürme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_ileri_surulen",
+      "tur": "kelime",
+      "yazim": "ileri sürülen görüş",
+      "anlam": "Henüz kanıtlanmamış bir düşünce ya da savunulan fikir.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_dogrulanmis",
+      "tur": "kelime",
+      "yazim": "doğrulanmış bilgi",
+      "anlam": "Kanıtlarla sınanmış ve doğruluğu gösterilmiş bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_kanit",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_delil",
+      "tur": "kelime",
+      "yazim": "delil",
+      "anlam": "Bir olayın doğruluğunu gösteren belge ya da nesne.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_bulgu",
+      "tur": "kelime",
+      "yazim": "bulgu",
+      "anlam": "Bir inceleme sonucunda ortaya çıkan veri ya da sonuç.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_belirsiz",
+      "tur": "kelime",
+      "yazim": "belirsiz",
+      "anlam": "Ne olduğu ya da nasıl olduğu kesin bilinmeyen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_muglak",
+      "tur": "kelime",
+      "yazim": "muğlak",
+      "anlam": "Birden fazla anlama gelebilen, açık olmayan.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_kesin",
+      "tur": "kelime",
+      "yazim": "kesin",
+      "anlam": "Şüphe bırakmayan, açıkça bilinen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_guvenilir",
+      "tur": "kelime",
+      "yazim": "güvenilir",
+      "anlam": "Doğruluğuna ve sağlamlığına güvenilebilen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_itimat",
+      "tur": "kelime",
+      "yazim": "itimat edilebilir",
+      "anlam": "Sözüne ve bilgisine inanılabilen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_guvenilmez",
+      "tur": "kelime",
+      "yazim": "güvenilmez",
+      "anlam": "Doğruluğuna ve sağlamlığına güvenilemeyen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_hayal",
+      "tur": "deyim",
+      "yazim": "hayal kırıklığına uğradı",
+      "anlam": "Beklenen şey olmadığında üzülmek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_ici_burkulmak",
+      "tur": "deyim",
+      "yazim": "içi burkulmak",
+      "anlam": "Bir durumdan dolayı üzülmek, moralinin bozulması.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr102_ici_ferahlamak",
+      "tur": "deyim",
+      "yazim": "içi ferahlamak",
+      "anlam": "Bir sıkıntıdan kurtulunca rahatlamak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr102_iddia",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr102_iddia"
+        },
+        {
+          "girdi": "hr102_ileri_surulen"
+        },
+        {
+          "girdi": "hr102_dogrulanmis"
+        }
+      ]
+    },
+    {
+      "ad": "hr102_kanit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr102_kanit"
+        },
+        {
+          "girdi": "hr102_delil"
+        },
+        {
+          "girdi": "hr102_bulgu"
+        }
+      ]
+    },
+    {
+      "ad": "hr102_belirsiz",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr102_belirsiz"
+        },
+        {
+          "girdi": "hr102_muglak"
+        },
+        {
+          "girdi": "hr102_kesin"
+        }
+      ]
+    },
+    {
+      "ad": "hr102_guvenilir",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr102_guvenilir"
+        },
+        {
+          "girdi": "hr102_itimat"
+        },
+        {
+          "girdi": "hr102_guvenilmez"
+        }
+      ]
+    },
+    {
+      "ad": "hr102_hayal",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr102_hayal"
+        },
+        {
+          "girdi": "hr102_ici_burkulmak"
+        },
+        {
+          "girdi": "hr102_ici_ferahlamak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

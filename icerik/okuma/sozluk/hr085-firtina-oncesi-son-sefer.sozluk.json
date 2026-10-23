@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr085_tahmin",
+      "tur": "kelime",
+      "yazim": "tahmini",
+      "anlam": "Gelecekteki koşullara ilişkin olası değerlendirme.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr085_ongoru",
+      "tur": "kelime",
+      "yazim": "öngörü",
+      "anlam": "Gelecekte neyin olabileceğini önceden düşünme.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr085_kesin_bilgi",
+      "tur": "kelime",
+      "yazim": "kesin bilgi",
+      "anlam": "Kanıtlanmış, değişmeyen bilgi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr085_uyari",
+      "tur": "kelime",
+      "yazim": "uyarı",
+      "anlam": "Belirli bir riskin ciddiyetine dikkat çeken bildirim.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr085_bildirim",
+      "tur": "kelime",
+      "yazim": "bildirim",
+      "anlam": "Bir durumu resmî ya da açık biçimde haber verme.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr085_guvence",
+      "tur": "kelime",
+      "yazim": "güvence",
+      "anlam": "Bir şeyin kesin olacağına dair söz.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr085_aklina",
+      "tur": "deyim",
+      "yazim": "aklına geldi",
+      "anlam": "Bir şeyin hatırlanması.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr085_hatirina_gelmek",
+      "tur": "deyim",
+      "yazim": "hatırına gelmek",
+      "anlam": "Bir şeyin zihinde canlanması.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr085_akldan_cikmak",
+      "tur": "deyim",
+      "yazim": "aklından çıkmamak",
+      "anlam": "Bir şeyi sürekli düşünmek, unutamamak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr085_tahmin",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr085_tahmin"
+        },
+        {
+          "girdi": "hr085_ongoru"
+        },
+        {
+          "girdi": "hr085_kesin_bilgi"
+        }
+      ]
+    },
+    {
+      "ad": "hr085_uyari",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr085_uyari"
+        },
+        {
+          "girdi": "hr085_bildirim"
+        },
+        {
+          "girdi": "hr085_guvence"
+        }
+      ]
+    },
+    {
+      "ad": "hr085_aklina",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr085_aklina"
+        },
+        {
+          "girdi": "hr085_hatirina_gelmek"
+        },
+        {
+          "girdi": "hr085_akldan_cikmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

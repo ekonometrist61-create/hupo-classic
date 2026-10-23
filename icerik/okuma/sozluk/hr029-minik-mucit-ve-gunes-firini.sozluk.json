@@ -1,0 +1,124 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr029_termometre",
+      "tur": "kelime",
+      "yazim": "termometre",
+      "anlam": "Sıcaklığı ölçmeye yarayan araç.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr029_cetvel_isi",
+      "tur": "kelime",
+      "yazim": "cetvel",
+      "anlam": "Uzunluk ölçmeye yarayan araç.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr029_saydam",
+      "tur": "kelime",
+      "yazim": "saydam",
+      "anlam": "Işığı geçiren, arkası görünen.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr029_seffaf",
+      "tur": "kelime",
+      "yazim": "şeffaf",
+      "anlam": "Arkası net görünen, açık.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr029_olcum",
+      "tur": "kelime",
+      "yazim": "ölçümü",
+      "anlam": "Bir şeyin miktarını ya da değerini bir araçla belirleme.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr029_gozlem",
+      "tur": "kelime",
+      "yazim": "gözlem",
+      "anlam": "Dikkatle bakıp kaydetme.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr029_tahmin",
+      "tur": "kelime",
+      "yazim": "tahmin",
+      "anlam": "Kesin bilgiye dayanmadan düşünülen sonuç.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr029_termometre",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr029_termometre"
+        },
+        {
+          "girdi": "hr029_cetvel_isi"
+        }
+      ]
+    },
+    {
+      "ad": "hr029_saydam",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr029_saydam"
+        },
+        {
+          "girdi": "hr029_seffaf"
+        }
+      ]
+    },
+    {
+      "ad": "hr029_olcum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr029_olcum"
+        },
+        {
+          "girdi": "hr029_gozlem"
+        },
+        {
+          "girdi": "hr029_tahmin"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

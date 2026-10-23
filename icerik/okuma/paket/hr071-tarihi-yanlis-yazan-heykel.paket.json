@@ -1,0 +1,1329 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr071-tarihi-yanlis-yazan-heykel",
+    "baslik": "Tarihi Yanlış Yazan Heykel",
+    "tur": "gizem",
+    "konu": "tarih_arastirma_kaynak",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kultur_miras",
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "kronoloji_hr071",
+          "tur": "lexeme",
+          "etiket": "kronoloji",
+          "yuva": "hr071_kronoloji",
+          "islev": "first_hint"
+        },
+        {
+          "id": "arsiv_hr071",
+          "tur": "lexeme",
+          "etiket": "arşiv",
+          "yuva": "hr071_arsiv",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr071",
+          "tur": "idiom",
+          "etiket": "Gözlerine inanamamak",
+          "yuva": "hr071_gozlerine",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr071",
+          "tur": "concept",
+          "etiket": "Olay tarihi ile belge tarihi ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 3030,
+        "tahmini_sure_dk": 27,
+        "sayfa_sayisi": 23,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 50,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Levhada 1962, eski fotoğrafta 1958 yazıyor. Tarih yanlış mı, yoksa iki ayrı olay mı var?",
+    "durum": "taslak",
+    "fis_kodu": "HR-071"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Parktaki heykelin altında yazan tarih, okulun eski fotoğrafında görünen tarihle uyuşmuyordu."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr071_gozlerine"
+        },
+        {
+          "t": "metin",
+          "v": " Heykelin kaidesine yerleştirilen levhada Açılış: 1962 yazıyordu. Oysa sınıflarının hazırladığı kent belleği sergisindeki fotoğrafın arkasında 1958'de açılan park notu vardı.\n\n\"Dört yıl hata yapmışlar,\" dedi arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kaidenin çevresinde dolaştı. \"Belki parkla heykelin açılışı farklıdır,\" diye karşılık verdi. Yanlarındaki Elvan, fotoğrafın köşesine baktı. \"Hatta fotoğrafın tarihi de sonradan yazılmış olabilir.\" Üçü birden sustu. Basit sandıkları çelişki bir anda farklı sorulara dönüşmüştü. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kitap"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nAltıncı sınıf öğrencileri, sosyal bilgiler dersi için şehrin ortak alanlarını araştırıyordu. Öğretmenleri Derya Hanım, herhangi bir yapıyla ilgili iddiaların en az iki güvenilir kaynakla kontrol edilmesini istemişti. Grubun görevi eski kent parkının değişimini anlatmaktı. Ama bugün parkın en dikkat çekici nesnesi olan heykelin tarih levhası, onları beklenmedik bir araştırmaya çağırmıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " telefonundan bir arama yaptı. İlk çıkan sayfada heykelin \"şehrin en eski anıtı\" olduğu yazıyordu. Derya Hanım, \"Bu sayfa bilgisini nereden almış?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sayfanın altına baktı. Kaynak gösterilmemişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"O zaman yalnızca bu bilgiye güvenemeyiz,\" dedi. Öğretmen, buldukları her kaynağın başlığı, tarihi ve hazırlayanı ile birlikte kaydedilmesini istedi.\n\nAraştırmanın ilk günü "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " eve gidip babasına gördükleri tarih farkını anlattı. Babası, çocukluğunda aynı parkta bisiklet sürdüğünü söyledi. \"Heykel hep oradaydı sanırım,\" diye ekledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bu hatırayı kanıt saymak istedi. Babası gülerek \"Ben kaç yılında oynadığımı bile tam hatırlamıyorum,\" dedi. \"Bazen yıllar birbirine karışır.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk kez yetişkinlerin de hafızalarından emin olmayabildiğini gördü. Ertesi gün Elvan'a bunu anlattı. Elvan, \"Aile hatırası araştırma için ipucu olabilir ama kesin tarih değildir,\" diye karşılık verdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu defterinde ayrı bir renkle işaretledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Derya Hanım her gruba bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr071_kronoloji"
+        },
+        {
+          "t": "metin",
+          "v": " şeridi hazırlattı. Uzun bir kâğıdın üzerine belirli yıllar aralığını işaretlemelerini istedi. Parkla ilgili belge tarihleri bu çizelgede yan yana gelince çocuklar önce fark etmedikleri bir ayrıntı gördüler. Parkın düzenlenmesi, ağaçlandırılması, tören ve levha hazırlığı aynı tarihte gerçekleşmek zorunda değildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bir tarih çizelgesi olmadan hepsini tek olay sanmışım,\" dedi. Öğretmen, zaman sırasının tarih araştırmasının temel araçlarından biri olduğunu, ama sıranın neden-sonuç ilişkisini tek başına kanıtlamadığını açıkladı.\n\nO sırada başka bir grup, şehrin eski çeşmelerini araştırıyordu. Onlar da benzer bir sorun yaşamıştı: Çeşmenin üzerindeki kitabede tamir yılı yazıyor, bazı internet sayfaları bunu yapım yılı diye aktarıyordu. Elvan, \"Aynı hata başka yerde de olabiliyormuş,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", taşın üzerine yazılan her tarihin yapının başlangıcı olmadığını fark etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendi araştırmalarının yalnız bir levhayı düzeltmekle kalmayabileceğini, şehirdeki bilgilendirme yazılarının nasıl anlaşılması gerektiği üzerine de düşünme fırsatı verebileceğini söyledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün belediye "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr071_arsiv"
+        },
+        {
+          "t": "metin",
+          "v": " halka açık bölümüne izinli bir sınıf ziyareti düzenlendi. Görevli, eski belediye bültenlerinin dijital kopyalarını gösterdi. Çocuklar parkın yapımına ilişkin kararları aradı. Bültenlerden birinde parkın 1958'de düzenlenmeye başlandığı yazıyordu. Başka bir belgede 1960 tarihli bir ağaçlandırma çalışması anlatılıyordu. Ancak heykelin açılışı hakkında henüz bilgi yoktu.\n\nBelediye arşivine gittikleri gün büyük pencerenin önünde tozlu görünüşlü bir harita asılıydı. Görevli, haritanın aslının özel koşullarda saklandığını, duvardakinin yüksek kaliteli kopya olduğunu anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen parkın bulunduğu köşeyi aradı. Eski haritada parkın yerinde henüz boş bir alan gösteriliyordu. \"Demek park yokmuş,\" dedi. Elvan haritanın tarihini gösterdi. Gerçekten parkın düzenlenmesinden önce hazırlanmıştı. Fakat bu tek harita bile o alanda daha önce insanların bulunup bulunmadığını söylemiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", tarih araştırmasında \"yok\" demenin bazen \"bu belgede gösterilmiyor\" demekten daha güçlü bir iddia olduğunu öğrendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bültenleri incelerken üçü farklı şeylere dikkat etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başlıklardaki tarihleri, Elvan kullanılan kelimeleri, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğraf olup olmadığını arıyordu. \"Açılış\", \"yenileme\", \"düzenleme\" ve \"anma töreni\" sözcüklerinin hepsi benzer görünse de farklı olayları anlatıyordu. Öğretmen, bir metindeki sözcüğün anlamını bağlamından koparmadan okumaları gerektiğini vurguladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " \"açılış\" sözcüğünü görünce sevinmiş, sonra belgenin hangi açılıştan söz ettiğini öğrenmek zorunda kalmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun defterine küçük bir not yazdı: Başlığı değil, bütün açıklamayı oku.\n\nArşiv görevlisinin masasındaki kayıt numaraları da çocukların ilgisini çekti. Her belgenin bir kimlik numarası ve dosya adı vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Neden yalnız tarihi yazmıyorsunuz?\" diye sordu. Görevli, aynı gün çok sayıda belge hazırlanabileceğini, dosya numaralarının kaynakları bulmayı kolaylaştırdığını anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu okul defterleriyle karşılaştırdı; bütün dosyaları \"ödev\" diye kaydetse hangisinin hangisi olduğunu karıştırırdı. O gün eve giderken park belgelerine ait kopyaların adlarını tarih ve belge türüne göre düzenledi. Araştırma yapmanın bazen heyecanlı bir keşiften çok dikkatli bir arşiv işi olduğunu anlamaya başlıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Demek park önceden varmış,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". Elvan, \"Ama heykel ne zaman konmuş, bilmiyoruz,\" diye ekledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizelgesine üç ayrı satır açtı: Parkın yapımı, Heykelin yerleştirilmesi, Levhanın hazırlanması. Şimdi çelişkiyi tek bir tarihle çözmek yerine farklı olayları ayırmaları gerektiğini görüyordu.\n\nArşiv görevlisi onlara eski bir tören programının kopyasını gösterdi. Programda parkta yapılacak kültür etkinlikleri yer alıyordu. Tarih 1962'ydi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen, \"Bulduk!\" dedi. Ama "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " programın başlığını dikkatle okudu. Program bir \"yenileme töreni\" için hazırlanmıştı. Heykelin ilk yerleştirilme tarihi bundan önce de olabilir, sonra da. Elvan, \"Belgedeki tarih, üzerinde yazan etkinliğin tarihidir,\" dedi. \"Bütün olayların değil.\"\n\nMüze uzmanı Nermin Hanım, çocukların getirdiği belgeleri inceledi. Heykelin kim tarafından yapıldığı, hangi amaçla konduğu ve ne zaman taşındığı gibi bilgilerin farklı kayıtlar gerektirebileceğini anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Peki levhanın yanlış olduğunu hemen söyleyebilir miyiz?\" diye sordu. Uzman, \"Önce levhadaki 'açılış' sözcüğünün hangi olayı anlattığını belirlemeliyiz,\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Nermin Hanım'ın verdiği küçük bir görev de yararlı oldu. Çocuklara aynı heykelin farklı yıllarda çekilmiş üç fotoğrafını gösterdi. İlk fotoğrafta heykelin çevresinde ağaç yoktu, ikincisinde küçük fidanlar görünüyordu, üçüncüsünde ağaçların boyu yükselmişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"O hâlde fotoğrafları sıraya koyabiliriz,\" dedi. Nermin Hanım bunu mümkün kılan ipuçlarını sordu. Fidanların büyümesi makul bir yönlendirme sağlıyordu, fakat budama veya yeniden dikim gibi başka etkenler de olabilirdi. Elvan, \"Tahminimizi tarihlerle ve belgelerle desteklemeliyiz,\" diye sonuç çıkardı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " en sevdiği fotoğraf en eski görüneniydi. Heykelin yanında iki çocuk, ellerinde uçurtmalarla duruyordu. Fotoğrafın arkasında adları yazmıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onların şimdi büyümüş olabileceklerini düşündü. \"Belki bir gün bu fotoğrafı onlara gösterebiliriz,\" dedi. Nermin Hanım, fotoğraflarda görünen kişilerin kimlikleri ve mahremiyeti konusunda dikkatli olmak gerektiğini hatırlattı. Çocuklar bu fotoğrafı izin gerektiren alanlarda paylaşmamaya karar verdi. Araştırma heyecanı, başkalarının fotoğraflarını diledikleri gibi kullanma hakkı vermiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıfa döndüklerinde "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " heyecanını kaybetmişti. \"Bir tarihin yanlış olup olmadığını bile anlayamadık,\" dedi. Derya Hanım, \"Aslında tarih araştırmasının nasıl yapılacağını öğreniyorsunuz,\" diye cevap verdi. \"Sorununuz aceleyle çözülmediği için başarısız olmadınız. Önce soruyu doğru kurdunuz.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözleri sevdi ama araştırmayı yarıda bırakmak istemiyordu.\n\nÇocuklar üçüncü hafta eski yerel gazete sayılarında araştırma yapmaya başladı. Derya Hanım güncel ve güvenilir arşiv kayıtlarını nasıl bulacaklarını anlattı. Bir haberde 1962'de parkta düzenlenen bir törenin fotoğrafı vardı. Heykel fotoğrafın arka planında görünüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Demek o tarihte oradaymış,\" dedi. Bu kez kimse itiraz etmedi. Fotoğraf, heykelin 1962'de parkta bulunduğunu destekliyordu. Ancak ilk yerleştirildiği günü hâlâ göstermiyordu.\n\nBir başka haberde parkın önceden yapılmış olduğu belirtiliyordu. Elvan, \"O zaman levhadaki 'açılış' parkın açılışıysa yanlış olabilir,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Ya heykelle ilgili bir tören anlatıyorsa?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " levhaya yeniden bakmak için parka gitmeyi önerdi. Öğretmenleri uygun bir saatte onlarla birlikte gitti. Levhanın küçük alt satırında şu ifade vardı: Anıt düzenlemesi yenilenmiştir. Üçü de bu satırı ilk gezide fark etmemişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Belki 1962 yenilemenin yılı,\" dedi Elvan. Nermin Hanım'a danıştılar. Uzman, bunun araştırmaya değer bir açıklama olduğunu ama doğrulamak için yapım veya yenileme kayıtlarının bulunması gerektiğini söyledi. Çocuklar belediyeye doğru bir açıklama isteği göndermek üzere öğretmenleriyle birlikte kısa bir yazı hazırladı. Yazıda kimseyi suçlamıyor, yalnızca iki farklı tarih bilgisinin nasıl yorumlanması gerektiğini soruyorlardı.\n\nParktaki ikinci ziyaretlerinde "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " levhanın etrafındaki küçücük yazıları okumaya çalıştı. İlk gün hemen büyük tarihi gördükleri için alttaki açıklamayı atlamışlardı. Şimdi gözlem yöntemlerini değiştirdiler. Önce bütün levhayı fotoğrafladılar; sonra metnin her satırını sırayla okudular. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bir kelimeyi atlamak bizi yanlış soruya götürmüş,\" dedi. Elvan ise \"Ama "
+        },
+        {
+          "t": "vurgu",
+          "v": "yanlış soru bile daha iyi bir soruya dönüşebilir"
+        },
+        {
+          "t": "metin",
+          "v": ",\" diye karşılık verdi. Derya Hanım onları onayladı; dikkatli okuma, tarih araştırmasının da bir parçasıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Belediyeye yazacakları mektubu hazırlarken anlaşmakta zorlandılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sert bir başlık seçmişti: \"Yanlış tarihi hemen düzeltin!\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " daha nazik bir dille yazmak istiyordu. Elvan üçüncü bir yol önerdi: \"Önce bulgularımızı anlatıp açıklama isteyelim. Sonra gerekirse düzeltme önerelim.\" Öğretmenleri bu yaklaşımı uygun buldu. Çocuklar mektupta hangi belgeleri kullandıklarını, hangi sorunun açık kaldığını ve ziyaretçilerin neden yanılabileceğini yazdı. Kaba bir emir yerine araştırmaya dayanan saygılı bir soru yöneltmiş oldular.\n\nYanıt beklerken okul gazetesi konuyu haber yapmak istedi. Gazetenin öğrenci editörü ilk başlığa \"Parkta Tarih Skandalı\" yazmıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu görünce heyecanlandı; araştırmaları çok dikkat çekecekti. Fakat "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kesinleşmemiş bir sorunu \"skandal\" olarak tanıtmanın insanları yanlış yönlendireceğini söyledi. Elvan \"Park Levhasındaki İki Tarih Neyi Anlatıyor?\" başlığını önerdi. Editör daha az gösterişli bulsa da kabul etti. Yazının sonuna, belediyeden açıklama beklendiğini belirten bir not eklendi. Böylece gazete, iddiayı kesin sonuç gibi sunmadan okurlara merak uyandırıcı bir soru aktardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bu süreçte "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " babası onu tekrar parka götürdü. Baba-oğul bankta otururken eski günleri konuştular. Babası çocukken heykelin yanından geçtiğini hatırlıyordu ama hangi yıl olduğunu söyleyemiyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez \"O zaman yanlış hatırlıyorsun,\" demedi. \"Belki bu hatırayı tarih çizelgesindeki bilgilerle karşılaştırabiliriz,\" dedi. Babası gülümsedi. \"Sizin araştırmanız bana da ayrıntılara daha dikkatli bakmayı öğretti,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bir öğrencinin yalnızca ders kitabından öğrenen kişi olmadığını, doğru sorularla çevresindekilere de katkıda bulunabileceğini hissetti.\n\nYanıt geldiğinde üçü sınıfta bir araya geldi. Belediye arşiv birimi, 1962 tarihli levhanın parkın ilk açılışını değil, anıtın yenilenen çevre düzenlemesini anlatması gerektiğini; mevcut levha metninin bunu yeterince açık ifade etmediğini bildirdi. Park daha önce kullanıma açılmıştı. Öğrencilerin fark ettiği çelişki, iki ayrı olayın tek bir sözcük altında toplanmasından kaynaklanıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Yani tarih yanlış mı?\" diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dikkatle cevap verdi: \"Tarih bir olayı anlatıyor olabilir, ama açıklama eksik. İnsanlar parkın açılışı sanabilir.\" Elvan, \"O zaman düzeltme önerimiz yalnız rakamı değiştirmek değil, neyin hangi tarihte olduğunu açıkça yazmak olmalı,\" dedi. Derya Hanım, bunu yazılı bir öneriye dönüştürmelerini istedi.\n\nÇocuklar iki satırlık yeni bir levha taslağı hazırladı: Parkın ilk düzenlenmesi: 1958. Anıt çevresinin yeniden düzenlenmesi: 1962. Ancak ilk tarihin de uygun belgelerle neyi gösterdiğini doğrulamak gerekiyordu. Belediyenin uzmanları nihai metni belirleyecekti. Çocuklar kendi taslaklarının resmî karar olmadığını özellikle belirtti. Bir araştırma sonucunu yetkili kuruma sunmakla onun yerine karar vermek farklıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Nihayet belediyenin yanıtı geldiğinde öğretmenleri sınıfa mektubun tamamını okudu. Kurum, levhanın mevcut ifadesinin ziyaretçilerde yanlış anlama oluşturabileceğini kabul ediyor, tarihi olayların ayrılması için yeni açıklama üzerinde çalışıldığını bildiriyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " \"Demek haklıymışız!\" diye sevindi. Derya Hanım onu durdurmadı ama \"Peki tam olarak hangi konuda?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Açıklamanın yetersiz olduğu konusunda,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Ama ilk düşündüğümüz gibi yalnız tarihi değiştirmek gerekmiyormuş,\" diye ekledi. Araştırma onların ilk tahminini değiştirmişti.\n\nYeni bilgilendirme panosu hazırlanırken belediye uzmanları çocukların önerisini doğrudan kopyalamadı. Eski fotoğraflar ve kayıtlar bir kez daha karşılaştırıldı. Öğretmen, bu durumu öğrencilerine anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " önce hayal kırıklığına uğradı: \"Biz yazdık, neden aynen asılmıyor?\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Çünkü onlar resmî bilgi yayımlıyor ve bütün kaynakları incelemek zorundalar,\" dedi. Elvan da nihai metnin açık, doğru ve herkesin anlayacağı bir biçimde hazırlanması gerektiğini söyledi. Öğrenciler bir öneri sunmanın değerini küçümsemedi; fakat uzman denetimini de araştırmanın doğal devamı olarak kabul etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birkaç hafta sonra parkta yeni bir bilgilendirme panosu yer aldı. Pano birden fazla tarihî olayı sırayla anlatıyor, her birinin neyi ifade ettiğini açıkça gösteriyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ve Elvan panoyu öğretmenleriyle birlikte gördüler. \"Şimdi daha anlaşılır,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Ve kimseyi küçük düşürmeden düzeltilmiş,\" diye ekledi.\n\nSınıf sunumunda üç ayrı belgeyi gösterdiler: eski fotoğraf, belediye kayıtlarının izinli alıntıları ve yeni pano. Sunumu dinleyen bir öğrenci, \"Heykel gerçekten bize yanlış tarih mi söylüyordu?\" diye sordu. Elvan gülümsedi. \"Heykel konuşmuyor. Biz levhadaki bilgiyi yorumluyorduk. Sorun, farklı olayların açıkça ayrılmamasıydı.\" Bu cevapta hem mizah hem de araştırmanın özü vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yeni pano asıldıktan sonra bir alt sınıftan öğrencilerle küçük bir okuma etkinliği yaptılar. Çocuklara eski levhanın kopyası ve yeni panonun fotoğrafı gösterildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Hangisinden parkın ve anıtın farklı tarihlerde düzenlendiğini daha kolay anlıyorsunuz?\" diye sordu. Küçük öğrencilerin çoğu yeni panonun daha açık olduğunu söyledi. Bir çocuk \"Yenilenmek ne demek?\" diye sorduğunda Elvan, \"Bir şeyin onarılması, düzenlenmesi veya yeniden ele alınması,\" diye açıkladı. Böylece panonun yalnız tarihleri doğru vermesi değil, sözcüklerinin de anlaşılır olması gerektiğini gördüler.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu etkinlik sırasında tasarımın da bilgi aktarımını etkilediğini fark etti. Eski levhada bütün metin aynı büyüklükteydi; yeni panoda olayların adları ve tarihleri ayrı satırlarda görünüyordu. İpek adında bir öğrenci, \"Ben yalnız büyük rakamı okumuştum,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kendi ilk hatasını hatırlayıp güldü. \"Ben de öyle yapmıştım.\" Artık bir bilginin doğru yazılmasının tek başına yeterli olmadığını, okurun onu nasıl algıladığının da önemli olduğunu biliyordu. Bu düşünceyi okul gazetesi için yeni bir yazıya dönüştürdü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıfın tartıştığı başka bir soru daha vardı: \"Bir levhadaki hata yüzünden geçmiş değişmiş olur mu?\" Derya Hanım bunun düşünmek için iyi bir soru olduğunu söyledi. Elvan, \"Geçmişte olan şey değişmez ama bizim onu anlamamız yanlış olabilir,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Yeni belgeler buldukça yorumumuz gelişebilir,\" diye ekledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise \"Düzeltilmiş levha insanların aynı olayı daha açık anlamasını sağlar,\" dedi. Öğretmen bu üç cevabı tahtaya yazdı. Çocuklar tarih çalışmasının yalnız geçmişi değil, bugün anlatılan bilgiyi de ilgilendirdiğini öğrendi.\n\nÇalışmaları kent kütüphanesinde düzenlenen küçük bir öğrenci etkinliğine davet edildi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sunum yapmadan önce çok heyecanlandı. \"Ya bir tarih daha yanlış çıkarsa?\" diye fısıldadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"O zaman belgemize bakarız; yine de bilmiyorsak bilmiyoruz deriz,\" diye karşılık verdi. Elvan, \"Soruyu not edip sonra araştırabiliriz,\" dedi. Bu cevaplar "
+        },
+        {
+          "t": "yoldas",
+          "hal": "belirtme",
+          "yedek": "bir arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " rahatlattı. Kalabalığın önüne çıktıklarında üçü de ezberledikleri metinden çok nasıl araştırdıklarını anlattı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Etkinlikte yaşlı bir ziyaretçi, parkın ilk yıllarında orada düzenlenen şenlikleri hatırladığını söyledi. Anısını paylaşmak için izin istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve arkadaşları onu dikkatle dinledi. Ziyaretçi, şenlikteki müzikleri ve kalabalığı anlatırken bazı ayrıntıları hatırlamadığını açıkça söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu not ederken şüpheyle değil, saygıyla yaklaşmaya çalıştı. Yaşanan bir olayı yaşayan kişinin hafızası değerliydi, ama yıllar sonra aktarılan her ayrıntı kesin tarih olarak kullanılamazdı. Bu ayrım, konuşmanın güzelliğini azaltmıyordu.\n\nZiyaretçinin getirdiği eski bir davetiyenin fotoğrafı üzerinde tarih yazıyordu. Çocuklar belgenin aslına zarar vermeden izinli kopyasını incelemek istedi. Kütüphane görevlisi belgeyi kayıt altına alacak uzman kişilere yönlendirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Belki bu davetiye araştırmamıza yardımcı olur,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Ama önce hangi etkinliği anlattığını okuyalım,\" diye hatırlattı. Üçü ilk park gezisindeki aceleci hâllerine gülmeye başladı. Artık tarih gördüklerinde hemen sonuç çıkarmak yerine önce olayın adını arıyorlardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yıl sonunda Derya Hanım öğrencilere araştırma defterlerini geri verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendi defterinin ilk sayfasında \"Levha kesin yanlış\" cümlesini buldu. Cümlenin yanına kırmızı kalemle küçük bir düzeltme yazdı: \"Levhanın anlattığı olay belirsiz.\" Sonraki sayfalarda nasıl daha açık bir sonuca ulaştıklarını görebiliyordu. Elvan da başlangıçtaki sorularını yeniden okuyup bazılarına cevap bulduğunu, bazılarının ise hâlâ araştırmaya açık olduğunu fark etti. Her iki durumu da başarı saydılar; çünkü amaç her soruyu hızla kapatmak değil, bilgiyi dürüst biçimde ilerletmekti.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " evde kardeşine eski ve yeni levhayı gösterdi. Kardeşi küçük olduğu için uzun metinleri okumakta zorlanıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ona yalnız rakamları değil, olayları da anlattı. \"Park önce yapılmış, sonra burada başka bir düzenleme gerçekleştirilmiş,\" dedi. Kardeşi \"O zaman iki tarih de bir şey anlatıyor,\" diye karşılık verdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sevinçle başını salladı. Kendi öğrendiğini sade bir dille açıklayabilmek, araştırmanın gerçekten anlaşıldığını gösteriyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir sonraki hafta okulun bahçe levhasındaki bir yazım hatası dikkatini çekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen yetkililere sert bir şikâyet yazmak yerine önce metni dikkatle okudu. Ardından sınıf temsilcisiyle konuşup hatanın uygun biçimde bildirilmesini önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu duyunca gülümsedi. \"Artık her levha sana bir araştırma konusu olacak,\" diye şakalaştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da güldü. \"Olabilir,\" dedi, \"ama önce gerçekten hata olup olmadığını anlamam gerek.\" Bu cevap, heykelin altındaki tarihle başlayan yolculuğun onu nasıl değiştirdiğini gösteriyordu.\n\nAraştırma grubu, yıl sonu dosyasında başka bir konuya da yer verdi: Düzeltme sürecinde emeği geçen kişiler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk taslağa yalnız üç öğrencinin adını yazmıştı. Elvan, arşiv görevlisini, müze uzmanını ve öğretmenlerini de anmaları gerektiğini söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " belediyenin inceleme yapan ekibini hatırlattı. Çocuklar, iyi bir araştırmanın çoğu zaman birçok kişinin emeğine dayandığını gördü. Dosyanın teşekkür bölümünü birlikte hazırladılar. Kimsenin kişisel iletişim bilgilerini paylaşmadılar; yalnız görevleri ve verdikleri destekler açıklandı. Bu, araştırma yaparken kaynak göstermek kadar katkıyı doğru tanımanın da önemli olduğunu hatırlattı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okul müdürü öğrencilere \"Bu çalışmadan bir kural çıkaracak olsanız ne derdiniz?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Tek kaynağa güvenmeyin,\" dedi. Elvan, \"Kaynakları karıştırmayın,\" diye ekledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise biraz düşünerek \"Tarih okurken olayın adını da okuyun,\" dedi. Müdür bu üç cümleyi okul panosuna asmak istedi. Öğrenciler kabul etti ama yanlarına küçük bir dördüncü cümle eklediler: Yeni bilgi gelirse düşünceni gözden geçir. Çünkü kendi araştırmalarında en büyük değişiklik, başlangıçta haklı olduklarını kanıtlamak yerine daha doğru sorulara yönelmeleriyle gerçekleşmişti.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " evdeki çalışma masasında parkın iki fotoğrafı duruyordu. Birinde eski levha, diğerinde yeni açıklama vardı. İki fotoğraf arasındaki fark, dört yılın farkından daha büyüktü. İlk fotoğraf ona aceleyi ve kesin konuşma isteğini, ikincisi sabrı ve iş birliğini hatırlatıyordu. Annesi bir gün fotoğraflara bakıp \"Hangisini daha çok seviyorsun?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"İkisini birlikte seviyorum,\" dedi. \"Çünkü ikinciyi anlamak için birinciye de ihtiyacımız vardı.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yaz tatilinde "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ailesiyle başka bir ilçeye gitti. Meydanda üzerinde çok eski bir tarih yazan çeşme levhası gördü. Eskiden olsa hemen telefonuyla arama yapar ve ilk bulduğu sonuca inanırdı. Bu kez levhayı dikkatle okudu. Tarihin yanında \"onarım\" sözcüğü yazıyordu. Gülümseyerek babasına, \"Bak, bu çeşmenin ilk yapıldığı yıl olmayabilir,\" dedi. Babası \"Nasıl anladın?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kelimeyi gösterdi ve park araştırmalarını anlattı. Bir kaynağın üzerindeki küçük sözcük, bütün yorumun yönünü değiştirebiliyordu. Babası, \"Demek okul gezisi hayat boyu işe yarayacak bir alışkanlık bırakmış,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " buna katıldı. Çünkü artık merak ettiği her konuda önce soru sorup sonra kanıt aramayı düşünüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıfa döndüğünde gezi anısını "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve Elvan'la paylaştı. Elvan, \"Yeni bir araştırmaya başlamak ister misin?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " eski alışkanlığından farklı biçimde cevap verdi: \"Önce o çeşmenin hangi tarihlerde yapılıp onarıldığına ilişkin güvenilir kaynak bulabilir miyiz, ona bakalım.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. Araştırma hevesi kaybolmamış, daha dikkatli hâle gelmişti. Üçü yeni bir defter açtı. İlk sayfaya büyük bir heykel çizmek yerine basit bir soru yazdılar: Bu tarih hangi olaya ait? Öğretmenleri o sayfayı gördüğünde, geçen yıl öğrendiklerinin yalnız bir proje için olmadığını anladı. Bir öğrencinin merakını doğru yönlendirmek bazen ona hazır cevap vermekten daha kalıcı bir etki bırakıyordu. Derya Hanım, yeni defterin kenarına küçük bir not yazdı: \"Bir bilgiyi kontrol etmek için soru sormaktan çekinmeyin.\" Çocuklar notu görünce sevindi. Daha önce onları rahatsız eden belirsizlik, artık araştırma için bir başlangıç işaretiydi. Bu kez de birbirlerini dinleyerek, kaynakları dikkatle okuyarak ve gerekirse ilk fikirlerini cesaretle ve açıkça değiştirerek birlikte ilerleyeceklerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " günlüğüne son bir cümle yazdı: Tarih yalnız rakamları ezberlemek değildir; her rakamın hangi olayı anlattığını anlamaktır. Birkaç hafta önce parkta gördüğü iki sayı onu kızdırmıştı. Şimdi aynı sayılar, bir şehrin geçmişine daha dikkatli bakmayı öğretiyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise internette ilk bulduğu bilgiyi paylaşmadan önce kaynağını aramaya karar verdi.\n\nDersin sonunda Derya Hanım, \"Araştırmanızın en zor yanı neydi?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " \"Acele etmemek,\" dedi. Elvan \"Bir olayla başka bir olayı karıştırmamak,\" diye ekledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " biraz düşündü. \"Birini haksız yere suçlamadan yanlış olabilecek bir bilgiyi düzeltmek,\" dedi. Üçü de parkın yanından her geçtiğinde yalnız heykele değil, altında yazan kelimelere de dikkat edeceğini biliyordu."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr071_gozlerine": [
+      {
+        "t": "kahraman",
+        "hal": "yalin"
+      },
+      {
+        "t": "metin",
+        "v": " önce gözlerine inanamadı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Heykelin kaidesindeki levhada hangi tarih yazıyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "1962"
+        },
+        {
+          "id": "B",
+          "metin": "1958"
+        },
+        {
+          "id": "C",
+          "metin": "1960"
+        },
+        {
+          "id": "D",
+          "metin": "1965"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Levhada “Açılış: 1962” yazıyordu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 1,
+      "metin": "Defne'nin “Belki parkla heykelin açılışı farklıdır” sözü neyi önerir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Park ve heykelin açılışı farklı olaylar olabilir"
+        },
+        {
+          "id": "B",
+          "metin": "Tarihler kesin olarak doğrudur"
+        },
+        {
+          "id": "C",
+          "metin": "Park hiç açılmamıştır"
+        },
+        {
+          "id": "D",
+          "metin": "Fotoğraf sahtedir"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Aynı tarih bazen farklı olaylara ait olabilir; bu yüzden olayların ayrılması gerekir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 6,
+      "metin": "Elvan'ın bu sözüne göre bir belgedeki tarih neyi gösterir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Üzerinde yazan etkinliğin tarihini; bütün olayların tarihini değil"
+        },
+        {
+          "id": "B",
+          "metin": "Her olayın başlangıç tarihini"
+        },
+        {
+          "id": "C",
+          "metin": "Belgenin hazırlandığı gün dışında hiçbir şeyi"
+        },
+        {
+          "id": "D",
+          "metin": "Sadece parkın yapım yılını"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Bir belgedeki tarih, o belgede anlatılan etkinliğe aittir."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "Metinde geçen kronoloji şeridi ne işe yarar?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Olayları zaman sırasına göre yerleştiren çizelge"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür fotoğraf"
+        },
+        {
+          "id": "C",
+          "metin": "Parkta oynanan bir oyun"
+        },
+        {
+          "id": "D",
+          "metin": "Bir çeşit levha"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kronoloji, olayları tarih sırasına göre dizen bir çizelgedir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr071_kronoloji",
+        "tur": "kelime",
+        "yazim": "kronoloji",
+        "anlam": "Olayları zaman sırasına göre dizme.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr071_zaman_cizelgesi",
+        "tur": "kelime",
+        "yazim": "zaman çizelgesi",
+        "anlam": "Olayların tarihleriyle gösterildiği çizelge.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr071_rastgele",
+        "tur": "kelime",
+        "yazim": "rastgele",
+        "anlam": "Sıra gözetmeden, gelişigüzel.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr071_arsiv",
+        "tur": "kelime",
+        "yazim": "arşivinin",
+        "anlam": "Belge ve kayıtların saklandığı yer.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr071_kayit",
+        "tur": "kelime",
+        "yazim": "kayıt",
+        "anlam": "Bir olayın yazılı ya da dijital olarak tutulan bilgisi.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr071_gozlerine",
+        "tur": "deyim",
+        "yazim": "gözlerine inanamadı",
+        "anlam": "Gördüğüne çok şaşırmak, doğru olduğuna güçlük çekmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr071_saskina_donmek",
+        "tur": "deyim",
+        "yazim": "şaşkına dönmek",
+        "anlam": "Çok şaşırıp ne diyeceğini bilmemek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr071_goz_atmak",
+        "tur": "deyim",
+        "yazim": "göz atmak",
+        "anlam": "Bir şeye kısaca bakıp geçmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr071_kronoloji",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr071_kronoloji"
+          },
+          {
+            "girdi": "hr071_zaman_cizelgesi"
+          },
+          {
+            "girdi": "hr071_rastgele"
+          }
+        ]
+      },
+      {
+        "ad": "hr071_arsiv",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr071_arsiv"
+          },
+          {
+            "girdi": "hr071_kayit"
+          }
+        ]
+      },
+      {
+        "ad": "hr071_gozlerine",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr071_gozlerine"
+          },
+          {
+            "girdi": "hr071_saskina_donmek"
+          },
+          {
+            "girdi": "hr071_goz_atmak"
+          }
+        ]
+      }
+    ]
+  }
+}

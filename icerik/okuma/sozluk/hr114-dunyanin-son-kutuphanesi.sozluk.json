@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr114_belirsizlik",
+      "tur": "kelime",
+      "yazim": "belirsizliği",
+      "anlam": "Kesin olarak bilinmeyen durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_supheli",
+      "tur": "kelime",
+      "yazim": "şüphe",
+      "anlam": "Bir şeyin doğruluğundan tam emin olunmama hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_kesinlik",
+      "tur": "kelime",
+      "yazim": "kesinlik",
+      "anlam": "Şüphe bırakmayan, emin olunan durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_dogrulama",
+      "tur": "kelime",
+      "yazim": "doğrulama",
+      "anlam": "Bir bilginin doğruluğunu kanıtlarla sınama.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_teyit",
+      "tur": "kelime",
+      "yazim": "teyit",
+      "anlam": "Bir bilginin başka kaynaklarla onaylanması.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_uydurma",
+      "tur": "kelime",
+      "yazim": "uydurma",
+      "anlam": "Gerçek olmayan bir bilgiyi gerçekmiş gibi sunma.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_arsiv",
+      "tur": "kelime",
+      "yazim": "arşivlerini",
+      "anlam": "Belgelerin düzenli biçimde saklandığı kayıt koleksiyonu.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_koleksiyon",
+      "tur": "kelime",
+      "yazim": "koleksiyon",
+      "anlam": "Bir arada toplanmış ve düzenlenmiş eserler ya da belgeler.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_envanter",
+      "tur": "kelime",
+      "yazim": "envanter",
+      "anlam": "Bir yerdeki eşya ya da belgelerin liste hâlinde kaydı.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_taniklik",
+      "tur": "kelime",
+      "yazim": "tanıklıkların",
+      "anlam": "Bir olayı görmüş ya da yaşamış kişinin anlatısı.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_ifade",
+      "tur": "kelime",
+      "yazim": "ifade",
+      "anlam": "Bir kişinin bir olay hakkında söylediği şey.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_anlati",
+      "tur": "kelime",
+      "yazim": "anlatı",
+      "anlam": "Bir olayın sırayla aktarıldığı metin ya da söz.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_panik",
+      "tur": "deyim",
+      "yazim": "paniğe kapıldı",
+      "anlam": "Ani bir korku ya da telaşa düşmek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_telaslanmak",
+      "tur": "deyim",
+      "yazim": "telaşlanmak",
+      "anlam": "Bir durum karşısında aşırı endişelenmek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr114_sakinlesmek",
+      "tur": "deyim",
+      "yazim": "sakinleşmek",
+      "anlam": "Heyecandan ya da korkudan kurtulup yatışmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr114_belirsizlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr114_belirsizlik"
+        },
+        {
+          "girdi": "hr114_supheli"
+        },
+        {
+          "girdi": "hr114_kesinlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr114_dogrulama",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr114_dogrulama"
+        },
+        {
+          "girdi": "hr114_teyit"
+        },
+        {
+          "girdi": "hr114_uydurma"
+        }
+      ]
+    },
+    {
+      "ad": "hr114_arsiv",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr114_arsiv"
+        },
+        {
+          "girdi": "hr114_koleksiyon"
+        },
+        {
+          "girdi": "hr114_envanter"
+        }
+      ]
+    },
+    {
+      "ad": "hr114_taniklik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr114_taniklik"
+        },
+        {
+          "girdi": "hr114_ifade"
+        },
+        {
+          "girdi": "hr114_anlati"
+        }
+      ]
+    },
+    {
+      "ad": "hr114_panik",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr114_panik"
+        },
+        {
+          "girdi": "hr114_telaslanmak"
+        },
+        {
+          "girdi": "hr114_sakinlesmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

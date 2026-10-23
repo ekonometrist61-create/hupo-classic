@@ -1,0 +1,615 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr038-muzik-kutusunun-sifresi",
+    "baslik": "Müzik Kutusunun Şifresi",
+    "tur": "gizem",
+    "konu": "ritim_aile_bellegi",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D18"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 4,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "gizem",
+        "aile",
+        "kultur_miras"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D18"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "nota_hr038",
+          "tur": "lexeme",
+          "etiket": "nota",
+          "yuva": "hr038_nota",
+          "islev": "first_hint"
+        },
+        {
+          "id": "melodi_hr038",
+          "tur": "lexeme",
+          "etiket": "melodi",
+          "yuva": "hr038_melodi",
+          "islev": "application"
+        },
+        {
+          "id": "duraklama_hr038",
+          "tur": "lexeme",
+          "etiket": "duraklama",
+          "yuva": "hr038_duraklama",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr038",
+          "tur": "idiom",
+          "etiket": "Gözleri dolmak",
+          "yuva": "hr038_gozleri_doldu",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr038",
+          "tur": "concept",
+          "etiket": "Ritim ve tekrar ile çıkarım",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 501,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 8,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Ceviz sandığındaki müzik kutusu açılmak istemiyor. Doğru ritim hangisi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-038"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Büyükannesi Zeliha, eski ceviz sandığını açtığında içinden avuç içi kadar bir müzik kutusu çıktı. Kapağındaki küçük kuşun kanadı kırılmıştı; altındaki kilit ise anahtarsızdı.\n\n\"Bu kutu eskiden şarkı söylerdi,\" dedi Zeliha. \"Ama nasıl açıldığını unuttum.\"\n\nTorunları "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kutuyu incelemeye başladılar. Üzerinde dört küçük düğme vardı. Her düğmeye basınca başka bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr038_nota"
+        },
+        {
+          "t": "metin",
+          "v": " duyuluyordu: do, re, mi, sol.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " daha önce okulun müzik dersinde seslerin yüksekliğiyle süresinin aynı şey olmadığını öğrenmişti. İnce ve kalın sesler bir özelliği, kısa ve uzun süreler başka bir özelliği anlatıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Ben en yüksek sesi bulmamız gerektiğini sanmıştım,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Belki notalar doğru ama çalma biçimimiz yanlış,\" diye cevap verdi. Bu yüzden acele etmek yerine duyduklarını küçük işaretlerle yazmaya karar verdiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " düğmelere rastgele bastı. Kutu küçük bir tık sesi çıkardı ama açılmadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kapağın kenarındaki işaretleri gösterdi: iki kısa çizgi, bir uzun çizgi ve küçük bir nokta. "
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n\"Bunlar seslerin süresini anlatıyor olabilir,\" dedi.\n\nÇocuklar masaya dört renkli kâğıt koydu. Her notaya bir renk verdiler ve duydukları sesleri sırayla yazdılar. İlk deneme başarısızdı. İkinci denemede müzik kutusu dört nota çaldı ama yine kapalı kaldı.\n\n\"Belki sırayı doğru, ritmi yanlış çalıyoruz,\" diye düşündü "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nBüyükanne pencerenin yanından eski bir fotoğraf getirdi. Fotoğrafta genç Zeliha, küçük bir çocukla birlikte piyano başındaydı. Kenarına şu cümle yazılmıştı: "
+        },
+        {
+          "t": "vurgu",
+          "v": "Önce iki kısa, sonra bir uzun"
+        },
+        {
+          "t": "metin",
+          "v": ". Sonunda hep birlikte sus."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " heyecanlandı. \"Sonunda bir ses daha yok. Bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr038_duraklama"
+        },
+        {
+          "t": "metin",
+          "v": " var!\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " notaları doğru sırayla çaldı; son düğmeden sonra bir an bekledi. Kapağın içinden yumuşak bir çıtırtı duyuldu. Kilit açılmıştı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", kapağı açmadan hemen önce bir kez daha durdu. \"Büyükanne, ya içindeki şey kırılacak kadar hassassa?\" diye sordu. Zeliha bir bez getirdi ve masanın üzerine serdi. Çocuklar kutuyu onun üstüne koyup kapağını yavaşça kaldırdılar. Sır çözmek onları heyecanlandırıyordu fakat eski eşyalara dikkatle davranmak da önemliydi. Sonradan fark ettiler ki kapakta küçük bir çizik vardı; onu zorlayarak açmaya kalksalardı hatıraya zarar verebilirlerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kutunun içinde altın ya da mücevher yoktu. Küçük bir kart, sararmış bir fotoğraf ve sarı kurdeleli bir mektup vardı. Mektupta, Zeliha'nın çocukluk arkadaşının uzak bir kente taşınmadan önce bu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr038_melodi"
+        },
+        {
+          "t": "metin",
+          "v": " armağan ettiği yazıyordu.\n\n\"Çocukken birlikte oyun oynardık,\" diye anlattı Zeliha. \"Bir gün bu küçük melodiyi her buluşmamızda çalmaya söz verdik. Sonra taşındılar. Aradan yıllar geçti ama bir melodiyi duyunca sanki arkadaşım yanımdaymış gibi olur.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", müziğin yalnızca notalardan oluşmadığını düşündü. Bir şarkı, insanın belleğinde uzak bir güne açılan kapı da olabilirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise fotoğraftaki iki çocuğun yüzlerini dikkatle inceledi; şimdi büyükannesi olan küçük kızın gülüşünü hemen tanıdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "deyim",
+          "yuva": "hr038_gozleri_doldu"
+        },
+        {
+          "t": "metin",
+          "v": " \"Bu melodiyi birlikte bestelemiştik,\" dedi. \"Yıllardır nerede sakladığımı düşünürdüm.\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Demek kutunun şifresi yalnızca nota değil, bir hatıraymış,\" dedi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kutuyu yeniden çaldı. Bu kez duraklamayı unutmadı. Büyükanne de müziğe hafifçe eşlik etti.\n\nO akşam aile albümünden başka fotoğraflar çıkardılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " her fotoğrafın arkasına kimlerin bulunduğunu yazmayı önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise büyükanneye anılarını kaydedecek küçük bir defter armağan etti. Çünkü bir gün başkalarının da bu hikâyeleri öğrenmesini istiyorlardı.\n\nMüzik kutusunun kanadı hâlâ kırıktı. Ama artık onun için önemli olan kusursuz görünüşü değil, içinde sakladığı seslerdi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr038_gozleri_doldu": [
+      {
+        "t": "metin",
+        "v": "Büyükanne mektubu okuyunca gözleri doldu."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Müzik kutusunda kaç düğme vardı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Dört"
+        },
+        {
+          "id": "B",
+          "metin": "İki"
+        },
+        {
+          "id": "C",
+          "metin": "Altı"
+        },
+        {
+          "id": "D",
+          "metin": "Üç"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kutunun üzerinde dört küçük düğme vardı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 5,
+      "metin": "Büyükanne gözleri neden doldu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Melodiyi arkadaşıyla birlikte bestelediğini ve yıllardır hatırladığını"
+        },
+        {
+          "id": "B",
+          "metin": "Kutu kırılmıştı"
+        },
+        {
+          "id": "C",
+          "metin": "Sınıfı çok seviyordu"
+        },
+        {
+          "id": "D",
+          "metin": "Yemek pişirmişti"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Mektubu okuyunca melodinin ve arkadaşlığın anısı canlandı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 5,
+      "metin": "İpek'in “şifre yalnızca nota değil, bir hatıra” sözü neyi gösterir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kutunun açılmasının notalardan çok anılarla bağlı olduğunu"
+        },
+        {
+          "id": "B",
+          "metin": "Kutunun hiç açılamayacağını"
+        },
+        {
+          "id": "C",
+          "metin": "Nota bilgisinin önemsiz olduğunu"
+        },
+        {
+          "id": "D",
+          "metin": "Kutunun altın olduğunu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kutunun sırrı, aile belleğindeki bir anıyla bağlantılıydı."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "Metinde geçen duraklama sözcüğü ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sesin bir süre durması"
+        },
+        {
+          "id": "B",
+          "metin": "Hızlanması"
+        },
+        {
+          "id": "C",
+          "metin": "Yükselmesi"
+        },
+        {
+          "id": "D",
+          "metin": "Kırılması"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Duraklama, bir sesin ya da hareketin kısa süre durmasıdır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr038_nota",
+        "tur": "kelime",
+        "yazim": "nota",
+        "anlam": "Ses yüksekliğini ve süresini gösteren işaret.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_ton",
+        "tur": "kelime",
+        "yazim": "ton",
+        "anlam": "Bir sesin yüksekliği ya da alçaklığı.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_ritim_k",
+        "tur": "kelime",
+        "yazim": "ritim",
+        "anlam": "Düzenli tekrar eden ses ve zaman örüntüsü.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_melodi",
+        "tur": "kelime",
+        "yazim": "melodiyi",
+        "anlam": "Birbiri ardınca gelen, hoş duyulan ses dizisi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_ezgi",
+        "tur": "kelime",
+        "yazim": "ezgi",
+        "anlam": "Şarkının ya da türkünün ana ses dizisi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_gurultu_k",
+        "tur": "kelime",
+        "yazim": "gürültü",
+        "anlam": "Düzensiz ve rahatsız edici ses.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_duraklama",
+        "tur": "kelime",
+        "yazim": "duraklama",
+        "anlam": "Sesin ya da hareketin kısa süre durması.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_ara",
+        "tur": "kelime",
+        "yazim": "ara",
+        "anlam": "İki şey arasındaki kısa boşluk.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_hizlanma",
+        "tur": "kelime",
+        "yazim": "hızlanma",
+        "anlam": "Hareketin ya da sesin daha çabuk olması.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_gozleri_doldu",
+        "tur": "deyim",
+        "yazim": "gözleri doldu",
+        "anlam": "Duygulanıp ağlamaklı olmak.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_gozu_kiymak",
+        "tur": "deyim",
+        "yazim": "gözü kıymak",
+        "anlam": "Bir şeyi yok etmeyi ya da vermeyi göze almak.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr038_gozleri_parladi_k",
+        "tur": "deyim",
+        "yazim": "gözleri parladı",
+        "anlam": "Çok sevinmek.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr038_nota",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr038_nota"
+          },
+          {
+            "girdi": "hr038_ton"
+          },
+          {
+            "girdi": "hr038_ritim_k"
+          }
+        ]
+      },
+      {
+        "ad": "hr038_melodi",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr038_melodi"
+          },
+          {
+            "girdi": "hr038_ezgi"
+          },
+          {
+            "girdi": "hr038_gurultu_k"
+          }
+        ]
+      },
+      {
+        "ad": "hr038_duraklama",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr038_duraklama"
+          },
+          {
+            "girdi": "hr038_ara"
+          },
+          {
+            "girdi": "hr038_hizlanma"
+          }
+        ]
+      },
+      {
+        "ad": "hr038_gozleri_doldu",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr038_gozleri_doldu"
+          },
+          {
+            "girdi": "hr038_gozu_kiymak"
+          },
+          {
+            "girdi": "hr038_gozleri_parladi_k"
+          }
+        ]
+      }
+    ]
+  }
+}

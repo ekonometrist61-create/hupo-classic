@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr058_bruloer",
+      "tur": "kelime",
+      "yazim": "brülörle",
+      "anlam": "Sıcak hava balonunun içindeki havayı ısıtan alev veren araç.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr058_ocak",
+      "tur": "kelime",
+      "yazim": "ocak",
+      "anlam": "Yakıt yakılarak ısı üreten yer.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr058_soba",
+      "tur": "kelime",
+      "yazim": "soba",
+      "anlam": "Odada ısınmak için kullanılan araç.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr058_kaldirma_kuvveti",
+      "tur": "kelime",
+      "yazim": "kaldırma kuvveti",
+      "anlam": "Bir sıvı ya da gaz içindeki cismi yukarı itmeye çalışan kuvvet.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr058_itme_kuvveti",
+      "tur": "kelime",
+      "yazim": "itme kuvveti",
+      "anlam": "Bir cismi ileri ya da geri doğru iten kuvvet.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr058_agirlik",
+      "tur": "kelime",
+      "yazim": "ağırlık",
+      "anlam": "Bir cismin yer çekimi nedeniyle aşağı doğru çektiği kuvvet.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr058_yogunluk",
+      "tur": "kelime",
+      "yazim": "yoğunluk",
+      "anlam": "Belli bir hacimdeki maddenin kütlesi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr058_hafiflik",
+      "tur": "kelime",
+      "yazim": "hafiflik",
+      "anlam": "Ağır olmama durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr058_kaslarini_catti",
+      "tur": "deyim",
+      "yazim": "kaşlarını çattı",
+      "anlam": "Hoşnutsuzluğunu yüzünü buruşturarak belli etmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr058_alnini_kirisitirmak",
+      "tur": "deyim",
+      "yazim": "alnını kırıştırmak",
+      "anlam": "Düşünceli ya da endişeli görünmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr058_gulumsemek_b",
+      "tur": "kelime",
+      "yazim": "gülümsemek",
+      "anlam": "Yüzünde hoşnutluk ifadesiyle hafifçe gülmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr058_bruloer",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr058_bruloer"
+        },
+        {
+          "girdi": "hr058_ocak"
+        },
+        {
+          "girdi": "hr058_soba"
+        }
+      ]
+    },
+    {
+      "ad": "hr058_kaldirma_kuvveti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr058_kaldirma_kuvveti"
+        },
+        {
+          "girdi": "hr058_itme_kuvveti"
+        },
+        {
+          "girdi": "hr058_agirlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr058_yogunluk",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr058_yogunluk"
+        },
+        {
+          "girdi": "hr058_hafiflik"
+        }
+      ]
+    },
+    {
+      "ad": "hr058_kaslarini_catti",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr058_kaslarini_catti"
+        },
+        {
+          "girdi": "hr058_alnini_kirisitirmak"
+        },
+        {
+          "girdi": "hr058_gulumsemek_b"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr101_celiski",
+      "tur": "kelime",
+      "yazim": "çelişki",
+      "anlam": "Birbirini tutmayan, birbiriyle bağdaşmayan bilgi ya da durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_tutarsizlik",
+      "tur": "kelime",
+      "yazim": "tutarsızlık",
+      "anlam": "Sözler ya da durumlar arasındaki uyumsuzluk.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_uyum",
+      "tur": "kelime",
+      "yazim": "uyum",
+      "anlam": "Parçaların ya da sözlerin birbiriyle bağdaşması.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_tanik",
+      "tur": "kelime",
+      "yazim": "tanık",
+      "anlam": "Bir olaya kendi gözüyle ya da kulağıyla tanıklık eden kişi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_gorgu_tanigi",
+      "tur": "kelime",
+      "yazim": "görgü tanığı",
+      "anlam": "Bir olayı bizzat görmüş olan tanık.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_sahit",
+      "tur": "kelime",
+      "yazim": "şahit",
+      "anlam": "Bir olayı görmüş ya da duymuş ve bunu anlatabilecek kişi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_basini",
+      "tur": "deyim",
+      "yazim": "başını tuttu",
+      "anlam": "Şaşkınlık, üzüntü ya da bıkkınlıkla elini başına götürmek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_elini_basina",
+      "tur": "deyim",
+      "yazim": "elini başına koymak",
+      "anlam": "Kaygı ya da şaşkınlıkla elini başına götürmek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_kafasini",
+      "tur": "deyim",
+      "yazim": "kafasını ellerinin arasına almak",
+      "anlam": "Sıkıntı ya da üzüntüyle kafasını iki eliyle tutmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_kanit",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_delil",
+      "tur": "kelime",
+      "yazim": "delil",
+      "anlam": "Bir olayın doğruluğunu gösteren belge ya da nesne.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_dayanak",
+      "tur": "kelime",
+      "yazim": "dayanak",
+      "anlam": "Bir düşünceyi ya da kararı destekleyen temel.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_belirsiz",
+      "tur": "kelime",
+      "yazim": "belirsiz",
+      "anlam": "Ne olduğu ya da nasıl olduğu kesin bilinmeyen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_muglak",
+      "tur": "kelime",
+      "yazim": "muğlak",
+      "anlam": "Birden fazla anlama gelebilen, açık olmayan.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr101_kesin",
+      "tur": "kelime",
+      "yazim": "kesin",
+      "anlam": "Şüphe bırakmayan, açıkça bilinen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr101_celiski",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr101_celiski"
+        },
+        {
+          "girdi": "hr101_tutarsizlik"
+        },
+        {
+          "girdi": "hr101_uyum"
+        }
+      ]
+    },
+    {
+      "ad": "hr101_tanik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr101_tanik"
+        },
+        {
+          "girdi": "hr101_gorgu_tanigi"
+        },
+        {
+          "girdi": "hr101_sahit"
+        }
+      ]
+    },
+    {
+      "ad": "hr101_basini",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr101_basini"
+        },
+        {
+          "girdi": "hr101_elini_basina"
+        },
+        {
+          "girdi": "hr101_kafasini"
+        }
+      ]
+    },
+    {
+      "ad": "hr101_kanit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr101_kanit"
+        },
+        {
+          "girdi": "hr101_delil"
+        },
+        {
+          "girdi": "hr101_dayanak"
+        }
+      ]
+    },
+    {
+      "ad": "hr101_belirsiz",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr101_belirsiz"
+        },
+        {
+          "girdi": "hr101_muglak"
+        },
+        {
+          "girdi": "hr101_kesin"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

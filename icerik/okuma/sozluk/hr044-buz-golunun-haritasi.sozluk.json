@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr044_pusula",
+      "tur": "kelime",
+      "yazim": "pusula",
+      "anlam": "Mıknatıslı iğnesiyle yönleri gösteren araç.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr044_harita_b",
+      "tur": "kelime",
+      "yazim": "harita",
+      "anlam": "Yeryüzünü küçültülmüş biçimde gösteren çizim.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr044_rota",
+      "tur": "kelime",
+      "yazim": "rota",
+      "anlam": "Gidilecek yolun önceden belirlenmiş planı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr044_guzergah",
+      "tur": "kelime",
+      "yazim": "güzergâh",
+      "anlam": "Bir yere gitmek için izlenen yol.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr044_sapma",
+      "tur": "kelime",
+      "yazim": "sapma",
+      "anlam": "Planlanan yoldan ayrılma.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr044_dayaniklilik",
+      "tur": "kelime",
+      "yazim": "dayanıklılık",
+      "anlam": "Zorluklara karşı uzun süre direnebilme.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr044_direnc",
+      "tur": "kelime",
+      "yazim": "direnç",
+      "anlam": "Zorluğa karşı gösterilen dayanma gücü.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr044_kirilganlik",
+      "tur": "kelime",
+      "yazim": "kırılganlık",
+      "anlam": "Kolayca zarar görebilme durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr044_one_atilmak",
+      "tur": "deyim",
+      "yazim": "öne atılmak",
+      "anlam": "Bir işe hemen girişmek, cesaretle ileri çıkmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr044_geri_cekilmek",
+      "tur": "deyim",
+      "yazim": "geri çekilmek",
+      "anlam": "Bir işten ya da tartışmadan uzak durmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr044_atilgan_olmak",
+      "tur": "kelime",
+      "yazim": "atılgan olmak",
+      "anlam": "Çekinmeden, cesaretle davranmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr044_pusula",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr044_pusula"
+        },
+        {
+          "girdi": "hr044_harita_b"
+        }
+      ]
+    },
+    {
+      "ad": "hr044_rota",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr044_rota"
+        },
+        {
+          "girdi": "hr044_guzergah"
+        },
+        {
+          "girdi": "hr044_sapma"
+        }
+      ]
+    },
+    {
+      "ad": "hr044_dayaniklilik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr044_dayaniklilik"
+        },
+        {
+          "girdi": "hr044_direnc"
+        },
+        {
+          "girdi": "hr044_kirilganlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr044_one_atilmak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr044_one_atilmak"
+        },
+        {
+          "girdi": "hr044_geri_cekilmek"
+        },
+        {
+          "girdi": "hr044_atilgan_olmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

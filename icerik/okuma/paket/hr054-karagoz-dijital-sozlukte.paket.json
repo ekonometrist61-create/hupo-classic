@@ -1,0 +1,984 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr054-karagoz-dijital-sozlukte",
+    "baslik": "Karagöz Dijital Sözlükte",
+    "tur": "mizah",
+    "konu": "deyim_mecaz",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D14",
+      "D15"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "sanat_yaraticilik",
+        "okul"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D15"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sozluk_hr054",
+          "tur": "lexeme",
+          "etiket": "sözlük",
+          "yuva": "hr054_sozluk",
+          "islev": "first_hint"
+        },
+        {
+          "id": "perde_hr054",
+          "tur": "lexeme",
+          "etiket": "perde",
+          "yuva": "hr054_perde",
+          "islev": "application"
+        },
+        {
+          "id": "kostum_hr054",
+          "tur": "lexeme",
+          "etiket": "kostüm",
+          "yuva": "hr054_kostum",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr054",
+          "tur": "idiom",
+          "etiket": "Kulak kabartmak",
+          "yuva": "hr054_kulak_kabartmak",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr054",
+          "tur": "concept",
+          "etiket": "Gerçek anlam ile mecaz anlam",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 2058,
+        "tahmini_sure_dk": 20,
+        "sayfa_sayisi": 16,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 17,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Karagöz deyimleri kelimesi kelimesine okuyunca sahne karışıyor. Dijital sözlük nasıl düzelecek?",
+    "durum": "taslak",
+    "fis_kodu": "HR-054"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Eteğimde zil yok, niye çalsın?” diye bağırdı Karagöz. Sesi eski tiyatro binasının kapısına kadar ulaştı. Hacivat sahne arkasından başını uzattı: “Karagöz'üm, sana yalnız sevindiğini söyledim!”\n\nTartışmanın sebebi, mahalle kütüphanesinin hazırladığı dijital "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr054_sozluk"
+        },
+        {
+          "t": "metin",
+          "v": ". Gösterinin yeni bölümünde çocuklar ekrandan bir deyim seçecek, Karagöz ile Hacivat da o deyimin anlamını oyunla anlatacaktı. Ancak sözlüğün deneme sürümünde bazı açıklamalar eksikti. Karagöz deyimleri kelimesi kelimesine okuyunca sahne bir anda karışmıştı.\n\nBeşinci sınıftan "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kütüphanenin gönüllü çocuk ekibindeydi. Arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise tablet uygulamasını test ediyordu. Hacivat onlardan sahneye çıkmadan önce her kartı kontrol etmelerini istedi."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr054_kulak_kabartmak"
+        },
+        {
+          "t": "metin",
+          "v": " Karagöz iki elini kulaklarının yanına koyup tavşan gibi zıplamaya başladı. “Kabarttım! Daha da kabartayım mı?” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kahkahasını tutamadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hacivat, “Bu deyim, bir konuşmayı dikkatle dinlemeye çalışmak demektir,” diye açıkladı. Karagöz, “Madem dinlemek, kulağı neden kabartıyoruz?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun bir mecaz olduğunu anlattı. Sözcüklerin gerçek anlamıyla kullanılan söz arasında fark olabilirdi.\n\nİkinci kartı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " seçti: Eteği zil çalmak. Karagöz hemen "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr054_kostum"
+        },
+        {
+          "t": "metin",
+          "v": " odasına koşup bulduğu minik zilleri eteğine dikmeye çalıştı. Hacivat, “Dur, iğneye dokunma; kostümler hazır,” diyerek onu durdurdu. Karagöz bir an düşündü. “Demek çok sevinen insana söyleniyormuş. Ama ben yine de zil sesini seviyorum.”\n\nKütüphaneci Zeynep Hanım gösteriyi bir hafta sonra yapılacak Dil Şenliğinde sunmak istiyordu. Ancak çocukların yalnız gülüp geçmesini değil, deyimlerin hangi durumlarda kullanıldığını anlamasını da önemsiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun için küçük bir oyun önerdi: Karagöz deyimin gerçek anlamını canlandıracak, Hacivat doğru kullanımını gösterecek, izleyiciler de hangi sahnenin deyimin anlamını anlattığını seçecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hazırlık başladı. Ağzı açık kalmak kartında Karagöz bir süre ağzını kapatmadan durdu; sonra bunun şaşırmak anlamına geldiğini öğrendi. Gözden düşmek kartında göz çizilmiş bir tahta parçasını yere bırakmayı düşündü ama "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu durdurdu. “Bu deyim, birinin değer ve güven kaybetmesi demek,” dedi. Hacivat da aynı deyimin gündelik konuşmada hangi durumlarda kullanılabileceğini anlattı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kitap"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nBir sorun vardı: Tablet bazen ekrandaki resmi deyimle eşleştiremiyordu. “Kulak kabartmak” kartı açıldığında kocaman bir kulak resmi çıkıyor, anlamı açıklayan örnek görünmüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", sözlüğün yalnız tek tek kelimelere bakarak görsel önerdiğini fark etti. “"
+        },
+        {
+          "t": "vurgu",
+          "v": "Deyimler kalıp sözler"
+        },
+        {
+          "t": "metin",
+          "v": ",” dedi. “Kelimeyi ayrı ayrı tanımak yetmeyebilir.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Zeynep Hanım, sözlükte hem gerçek anlam hem de deyim anlamı için iki ayrı alan açmalarını önerdi. Çocuklar önce “Karagöz'ün sandığı”, sonra “Hacivat'ın anlattığı” başlıklı iki kart hazırladı. Tablet bu kartları ayrı ayrı gösterince küçük testte herkes daha kolay anladı. Fakat üçüncü sınıftan bir çocuk, “O zaman deyimlerin hepsi komik mi?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", her deyimin mizah amacı taşımadığını anlattı. Bazı deyimler üzüntüyü, korkuyu, şaşkınlığı veya beklemeyi anlatabilirdi. Mizah, onları öğrenmek için kullandıkları bir yoldu.\n\nGösteriden bir gün önce prova sırasında Karagöz kostümünü bir yerde unuttu. Herkes onu ararken Hacivat “Eli ayağına dolaştı,” dedi. Karagöz gerçekten elleriyle ayaklarının karışabileceğinden korkmuş gibi zıpladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bu deyimin telaşla ne yapacağını bilememek anlamına geldiğini açıkladı. Karagöz durup ona baktı. “Bu sefer de benimle eğleniyorsunuz,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " biraz mahcup oldu. Eğlenceli öğrenme, birini sürekli küçümsemek anlamına gelmemeliydi. Deyimleri yanlış yorumlamanın komik olabileceğini, ama yanlış yapan kişiye saygı göstermeleri gerektiğini söyledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Karagöz omuzlarını düşürdü. “Ben yanlış anladıkça herkes gülüyor. Bir kez de siz şaşırın bakalım.” Bunun üzerine Hacivat yeni oyunda ilk yanlış yorumu kendisinin yapmasını önerdi. Seyirciden “Kafası karışmak” deyimi gelecekti. Hacivat başına birbirine dolanmış iplikler takacak, Karagöz de anlamını açıklayacaktı. Karagöz bu fikre bayıldı. “İşte şimdi eşit olduk!” diye bağırdı.\n\nDil Şenliği günü okulun salonu doldu. Gölge "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr054_perde"
+        },
+        {
+          "t": "metin",
+          "v": " arkasında ışık yandı. Önce Hacivat göründü ve uzun bir selamlama yaptı. Sonra Karagöz ortaya çıktı. “Ben de bugün dijital sözlük oldum,” dedi. “Ne söyleseniz kelimesi kelimesine anlatırım!”\n\nSeyirciler sırayla deyim seçti. İlk kart *İçi içine sığmamak*tı. Karagöz eline bir kutu alıp içine girmeye çalıştı. Çocuklar güldü. Ardından Hacivat, çok heyecanlanmak ve sevinmek anlamını anlattı. İkinci kart *Burnundan solumak*tı. Karagöz büyük bir burun taktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", öfkeli olmak anlamını açıkladı. Böylece herkesin yüzü gülerken sözlerin anlamı da yerini buluyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gösterinin ortasında tabletin ekranı karardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " paniğe kapıldı. Şarjın bitmiş olabileceğini düşündü. Hacivat, “Sözlük sustuysa sözümüz de mi bitti?” diye sordu. Karagöz hemen seyircilere döndü: “Bana bir deyim söyleyin, ben de ne sandığımı anlatayım.” Çocuklardan biri “Pabucu dama atılmak” dedi. Karagöz ayakkabısını dama atmaya hazırlandı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bunun birinin gözden düşmesi ya da yerine başkasının tercih edilmesi anlamına geldiğini hatırladı. Tablet olmadan da oyun sürdü.\n\nŞenlik bittiğinde Zeynep Hanım, eski gölge oyununun dijital araçla birleştiğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bununla gururlandı ama en sevdiği anın tabletin kapandığı bölüm olduğunu itiraf etti. Çünkü Karagöz ile Hacivat, deyimleri birlikte yaşayarak açıklamayı başarmıştı. Teknoloji yardımcı olabilirdi; anlamı kuran yine insanlardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Prova öncesindeki hafta boyunca "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " evde deyim defteri tutmuştu. Dedesi pazardan geldiğinde “Bugün elim ayağıma dolaştı,” demişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen nedenini sordu. Dedesi kalabalıkta alışveriş listesini düşürdüğünü, bir yandan da komşusuna yardım etmeye çalışırken telaşlandığını anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu not etti: Deyim bir olayın duygusunu kısa yoldan anlatıyor. Ertesi gün annesi misafir geleceğini öğrenince “Eteklerim zil çalıyor,” demişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce şenlik sahnesindeki Karagöz'ü hatırlayıp gülmüş, sonra annesinin niçin sevindiğini öğrenmişti. Aynı deyim, bir gösteride şaka olabiliyor, günlük hayatta gerçek bir duyguyu dile getirebiliyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " görevi daha farklıydı. Uygulama çalışırken kullanılan her deyimin anlamını kontrol ediyor, kısa açıklamaların çocukların okuyabileceği kadar anlaşılır olmasına dikkat ediyordu. Önce “gözden düşmek” için uzun bir tanım yazmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tanımı okuyunca “Buradaki üç kelimeyi de açıklamak gerek,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " tanımı değiştirdi: “Önceden sevilen veya güvenilen bir kişinin bu değeri yitirmesi.” Sonra bir örnek ekledi: “Arkadaşlarına verdiği sözleri tutmayınca ona duyulan güven azaldı.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", örnek cümlenin işe yaradığını söyledi. Bir deyimi yalnız ezberlemek yerine hikâyenin içinde görmek, anlamını daha kolay hatırlatıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Karagöz, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " tabletindeki resimleri incelemeye başladığında yeni bir sorun keşfetti. “Burnundan solumak” deyimindeki kişi o kadar öfkeli çizilmişti ki küçük çocuklar ürkebilirdi. Hacivat bunu görünce “Bazen öfkeyi anlatmak için korkutucu bir resim gerekmez,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", karakterin kaşlarını hafif çatıp kollarını bağladığı daha yumuşak bir çizim hazırladı. Öğrenciler bunu daha anlaşılır buldu. Zeynep Hanım, görsellerin de metin gibi özenle seçilmesi gerektiğini hatırlattı. Bir deyimin gerçek anlamını göstermekle çocuğu korkutmak farklı şeylerdi.\n\nGösteri ekibi şenlik öncesi iki küçük sınıfta deneme yaptı. İlk sınıfta bazı çocuklar deyimlerden hiçbiriyle karşılaşmamıştı. Karagöz'ün davranışlarına çok güldüler fakat soruların cevabını bulmakta zorlandılar. İkinci sınıfta öğretmen önce küçük örnekler okumuştu; öğrenciler daha çabuk yanıt verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", iki grubun farkını bir yarış sonucu gibi değerlendirmemelerini istedi. “Herkes aynı kelimeleri daha önce duymuş olmayabilir,” dedi. Bunun yerine sözlüğe kısa sesli örnekler ve açıklama kartları eklemeyi önerdiler. Deyimi ilk defa duyan çocuk da oyundan dışlanmayacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hacivat, sözlükteki cümlelerin yalnız yazıyla değil konuşmayla da duyulabilmesini istedi. Karagöz “Benim sesimi duyunca herkes anlarmış,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ona hemen katılmadı. Kimi çocuklar sesli okumayı sever, kimi sessiz okumayı tercih ederdi. Ayrıca herkesin işitme koşulları aynı değildi. Bu yüzden deyimlerin hem yazılı açıklamasını hem seslendirme seçeneğini koydular. Örnekleri gösteren küçük resimler de eklendi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir sözün anlaşılması için bazen birden fazla yol gerektiğini fark etti.\n\nGösterinin ortasındaki tablet arızası ilk anda "
+        },
+        {
+          "t": "yoldas",
+          "hal": "belirtme",
+          "yedek": "bir arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " çok üzmüştü. Haftalarca hazırladığı ekrana hiç kimse bakamayacak sanıyordu. Karagöz, onun yüzündeki ifadeyi görünce elini omzuna koydu. “Bak evlat, sözlük kapandı diye sözler tükenmedi,” dedi. “Hem sen öğrendiklerini unutmadın ki.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yavaşça gülümsedi. Hazırlık boyunca öğrenilen şeyler yalnız bir cihazda durmuyordu; çocukların aklında ve sahnedeki oyunda yaşamaya devam ediyordu. Hacivat da “Teknoloji güzel bir yardımcıdır, ama anlamı hep birlikte kurarız,” diye ekledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenlik sonunda en çok sevilen deyim için küçük bir oylama yapıldı. “Eteği zil çalmak” birinci oldu. Karagöz hemen ayağa fırladı. “Öyleyse gerçekten zil çalsın!” dedi. Kostümden çıkan birkaç küçük zil, sahnenin gerisinde bekleyen ekip tarafından güvenli biçimde sallandı. Çocuklar alkışlarken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülerek şöyle söyledi: “Bu kez hem deyimin anlamı doğru hem de gerçekten zil var.” Hacivat, “İşte iki farklı anlamın bir sahnede buluşması,” dedi. Karagöz, “Hacivat, sen yine sözü uzattın!” diye karşılık verdi. Seyirci ikinci kez kahkahaya boğuldu.\n\nErtesi hafta kütüphane görevlileri sözlüğün yeni sürümünü gösterdi. Her deyimin ekranında üç alan bulunuyordu: Ne sanabiliriz?, Gerçek kullanım ne anlatır? ve Bir örnek kur. Çocuklar deyimi seçince önce eğlenceli bir resim, sonra açık bir anlam, son olarak da kısa bir örnek görüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", örnek üretirken kimseyi inciten cümleler kullanılmamasına dikkat ettiklerini anlattı. İyi bir dil oyununun amacı biriyle alay etmek değil, dilin oyunlarını birlikte keşfetmekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " son raporuna küçük ama önemli bir not ekledi: “Sözlükte kelimeye bakmak bazen yetmez. Deyimin bütününü anlamak gerekir.” Teknoloji kulübünden bir öğrenci bu cümlenin altını çizdi. Benzer sorunlar otomatik çevirilerde ve arama motorlarında da yaşanabilirdi; kelimelerin yakın durması, birlikte her zaman gerçek anlamlarıyla kullanıldıkları anlamına gelmiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", deyimleri anlamanın yalnız Türkçe dersinde değil, günlük konuşmalarda yanlış anlaşılmaları önlemek için de değerli olduğunu düşünüyordu.\n\nBir gün küçük kardeşi ona “Aklım başımdan gitti” deyimini sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez hemen açıklamadı. “Sence gerçekten akıl insanın başından çıkıp gider mi?” diye sordu. Kardeşi güldü. “Hayır,” dedi. “Çok şaşırınca söylenir, değil mi?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sahnede öğrendiği yeni yöntemin işe yaradığını gördü. Önce çocuğun düşünmesine alan açmış, sonra anlamı birlikte bulmuşlardı. Akşam defterinin son sayfasına “Deyimler, dilin küçük tiyatrolarıdır,” diye yazdı. Her biri kısa bir sözle kocaman bir duygu canlandırabiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Karagöz ile Hacivat, bir sonraki gösteri için yeni bir oyun hazırlamaya koyuldu. Bu kez yalnız deyimleri değil, eş sesli sözcükleri ele alacaklardı. Karagöz “Yüz” kelimesini duyunca hem sayıyı hem yüzmeyi hem de insanın yüzünü aklına getirmişti. “Bu kadar anlamı tek kelimeye sığdıran kim?” diye sordu. Hacivat “Dilimiz,” dedi. Karagöz başını salladı: “Öyleyse dilimize kolay gelsin.” Yeni oyun henüz yazılmamıştı ama "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şimdiden ilk sahneyi hayal ediyordu.\n\nBir sonraki gösteriye hazırlık sırasında Karagöz yeni bir soru sordu: “Deyimi nereden tanırız? Biri bana tuhaf bir söz söylerse hemen deyim midir?” Hacivat bunun üzerine kitaplıktan bir sözlük getirdi. Deyimlerin kalıplaşmış olduğunu, çoğu zaman birden fazla sözcüğün birlikte yeni bir anlam taşıdığını açıkladı. Ama her benzetmenin deyim olmadığını da söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " örnek verdi: “Bulut pamuk gibiydi” bir benzetmeydi; “göz kulak olmak” ise korunmasına yardım etmek anlamında kullanılan bir deyimdi. Karagöz gülerek gözlerinden birini, kulaklarından birini tutup dolaşmaya kalktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onun bu hareketini çizdi; resmin altına da gerçek kullanımı ekledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okulun afiş yarışmasında "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " ekibi birinci olamadı. Başka bir sınıfın hazırladığı afiş daha çok oy aldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " önce buna üzüldü, çünkü günlerce çalışmışlardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", emeklerinin değersiz olmadığını söyledi. Zeynep Hanım, gösteriyi izleyen çocukların kullandıkları yeni deyimlere dikkat çekti. Üçüncü sınıftan bir öğrenci, bir arkadaşının iyi haberini duyunca “Eteklerin zil çalıyor galiba!” demişti. Sözü doğru bağlamda kullanmış olması ekibi sevindirdi. Her başarı bir kupa veya birincilik değildi; bazen öğrenilen bir sözcüğün günlük hayata karışmasıydı.\n\nKaragöz gösteriden sonra eski perdeyi dikkatle katladı. Hacivat, “Bunca yıl konuşuyoruz, yine de yeni sözler öğreniyoruz,” dedi. Karagöz bir an ciddi göründü. “İnsan her sözü bildiğini sanırsa sözün kendisini dinleyemez,” diye cevap verdi. Hacivat şaşkınlıkla ona baktı. “Ne kadar güzel söyledin!” Karagöz hemen gülerek geri çekildi: “Sen benimle dalga mı geçiyorsun? Güzel söz söyleyince de inanmadın mı?” İkisi kahkahayla birbirine sarıldı. Geleneksel oyunun perdesi kapanıyordu ama dilin oyunu bitmiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " son kez dijital sözlüğü açtı. En sevdiği kartı seçti: Kulak kabartmak. Ekrandaki resimde Karagöz tavşan kulaklarıyla bekliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir dokunuşla gerçek anlam açıklamasını gösterdi ve küçük kardeşine sordu: “Dinlerken insanın neye ihtiyacı var?” Kardeşi “Kulağa,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “Bir de dikkat etmeye.” O akşam iki kardeş birbirini dikkatle dinledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", uzun açıklamaların bazen tek bir güzel cümlenin etkisini vermediğini düşündü. Ama doğru cümleyi bulmak için birlikte gülmek de iyi bir yoldu.\n\nDil Şenliği'nin fotoğrafları sınıf panosuna asıldığında bir kare herkesin dikkatini çekti. Karagöz'ün eteğine takılmış küçük ziller, sahne ışığında parlıyordu. Altında “Eteği zil çalmak: Çok sevinmek” yazıyordu. Fotoğrafa bakan çocuklar yalnız zilleri değil, gösterinin sonunda Karagöz'ün yüzündeki mutluluğu da hatırlıyordu. Hacivat fotoğrafı görünce, “Şimdi deyimin hem görünen hem görünmeyen yanını öğrendiniz,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir sözcüğün resminin bazen öğrenmeye kapı açtığını ama bütün anlamı tek başına taşıyamayabileceğini düşündü. Bu yüzden uygulamaya koydukları görsellerin yanında kısa cümleler her zaman bulunacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenliğin ardından okul kitaplığında küçük bir “Söz Avcıları” köşesi açıldı. Öğrenciler duydukları bir deyimi kartlara yazıyor, onu nerede duyduklarını ve ne anlama geldiğini araştırıyordu. Yanlış bilinen anlamlar çizilip atılmıyor, düzeltme tarihiyle birlikte saklanıyordu. Böylece herkes öğrenmenin izlerini görebiliyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kartları dijital sözlüğe aktarırken önceden hazırlanmış sözlük kaynaklarıyla kontrol ediyor, emin olmadığı ifadeleri öğretmenine soruyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " için bu süreç, teknolojiden çok daha büyük bir armağandı: Birlikte düşünmek ve birbirinin sözünü önemsemek.\n\nSahnenin en küçük izleyicisi, gösteri sonrası Karagöz'e gelip “Ben de bir deyim buldum,” dedi. “Kalbim pır pır ediyor.” Karagöz başını eğip onu dinledi. Hacivat küçük kızın heyecanını fark etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " açıklamayı ekledi: “Bu, çok heyecanlanmayı anlatır.” Çocuk gülümseyerek bir sonraki deyimi düşünmeye başladı. Oyun sürüyordu. Daha öğrenecek çok güzel söz vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "- Deyimler: Eteği zil çalmak, kulak kabartmak, ağzı açık kalmak, gözden düşmek, eli ayağına dolaşmak, içi içine sığmamak. - Kavram: Gerçek anlam, mecaz anlam, kalıplaşmış söz, dijital sözlük. - Kültür: Karagöz ve Hacivat'ın geleneksel tipleriyle tamamen yeni olay örgüsü."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr054_kulak_kabartmak": [
+      {
+        "t": "kahraman",
+        "hal": "yalin"
+      },
+      {
+        "t": "metin",
+        "v": " ilk kartı seçti: Kulak kabartmak."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 2,
+      "metin": "İkinci kartı kim seçti?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yusuf"
+        },
+        {
+          "id": "B",
+          "metin": "Cansu"
+        },
+        {
+          "id": "C",
+          "metin": "Hacivat"
+        },
+        {
+          "id": "D",
+          "metin": "Zeynep Hanım"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "İkinci kartı Yusuf seçti: “Eteği zil çalmak.”"
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Karagöz neden minik zilleri eteğine dikmek istedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Eteği zil çalmak deyimini gerçek bir şey sandığı için"
+        },
+        {
+          "id": "B",
+          "metin": "Kostümü çok sevdiği için"
+        },
+        {
+          "id": "C",
+          "metin": "Hacivat'ı şaşırtmak için"
+        },
+        {
+          "id": "D",
+          "metin": "Zil satmak için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Karagöz, deyimin anlamını gerçek bir eylem sanıp zilleri dikmeye çalıştı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Yusuf'un “Deyimler kalıp sözler” sözü neyi söyler?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kelimeleri tek tek bilmek her zaman anlamı çözmeye yetmez"
+        },
+        {
+          "id": "B",
+          "metin": "Deyimler çok eskidir"
+        },
+        {
+          "id": "C",
+          "metin": "Deyimler yalnızca komiktir"
+        },
+        {
+          "id": "D",
+          "metin": "Deyimler öğrenilemez"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Deyimin anlamı, sözcüklerin ayrı ayrı anlamından farklıdır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "Metinde geçen kostüm ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir karakteri canlandırmak için giyilen özel giysi"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür perde"
+        },
+        {
+          "id": "C",
+          "metin": "Bir çeşit zil"
+        },
+        {
+          "id": "D",
+          "metin": "Bir kitap"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kostüm, oyuncunun rolüne uygun giydiği giysidir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr054_sozluk",
+        "tur": "kelime",
+        "yazim": "sözlüğü",
+        "anlam": "Sözcüklerin anlamlarını gösteren kitap ya da dijital araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_lugat",
+        "tur": "kelime",
+        "yazim": "lügat",
+        "anlam": "Sözcüklerin anlamlarının alfabetik sıralandığı kitap.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_ansiklopedi",
+        "tur": "kelime",
+        "yazim": "ansiklopedi",
+        "anlam": "Konuları ayrıntılı açıklayan çok ciltli eser.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_perde",
+        "tur": "kelime",
+        "yazim": "perdesinin",
+        "anlam": "Gölge oyununda gösterimin yansıdığı beyaz yüzey.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_ekran",
+        "tur": "kelime",
+        "yazim": "ekran",
+        "anlam": "Görüntünün yansıdığı yüzey.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_kostum",
+        "tur": "kelime",
+        "yazim": "kostüm",
+        "anlam": "Bir karakteri canlandırmak için giyilen özel giysi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_giysi",
+        "tur": "kelime",
+        "yazim": "giysi",
+        "anlam": "İnsanın vücuduna giydiği her türlü kıyafet.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_uniforma",
+        "tur": "kelime",
+        "yazim": "üniforma",
+        "anlam": "Bir kurum ya da grubun ortak giysisi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_kulak_kabartmak",
+        "tur": "deyim",
+        "yazim": "kulak kabartmak",
+        "anlam": "Bir konuşmayı dikkatle dinlemeye çalışmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_kulak_asmak",
+        "tur": "deyim",
+        "yazim": "kulak asmamak",
+        "anlam": "Söylenene önem vermeyip dinlememek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr054_kulak_vermek",
+        "tur": "deyim",
+        "yazim": "kulak vermek",
+        "anlam": "Dikkatle dinlemek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr054_sozluk",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr054_sozluk"
+          },
+          {
+            "girdi": "hr054_lugat"
+          },
+          {
+            "girdi": "hr054_ansiklopedi"
+          }
+        ]
+      },
+      {
+        "ad": "hr054_perde",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr054_perde"
+          },
+          {
+            "girdi": "hr054_ekran"
+          }
+        ]
+      },
+      {
+        "ad": "hr054_kostum",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr054_kostum"
+          },
+          {
+            "girdi": "hr054_giysi"
+          },
+          {
+            "girdi": "hr054_uniforma"
+          }
+        ]
+      },
+      {
+        "ad": "hr054_kulak_kabartmak",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr054_kulak_kabartmak"
+          },
+          {
+            "girdi": "hr054_kulak_asmak"
+          },
+          {
+            "girdi": "hr054_kulak_vermek"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr032_denetim",
+      "tur": "kelime",
+      "yazim": "denetim",
+      "anlam": "Bir şeyin doğruluğunu kontrol etme işi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr032_kontrol",
+      "tur": "kelime",
+      "yazim": "kontrol",
+      "anlam": "Bir şeyin istenen durumda olup olmadığını gözden geçirme.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr032_ihmal",
+      "tur": "kelime",
+      "yazim": "ihmal",
+      "anlam": "Gerekeni yapmayıp dikkatsiz davranma.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr032_agirlik",
+      "tur": "kelime",
+      "yazim": "ağırlıklarını",
+      "anlam": "Bir şeyin tartıda gösterdiği ölçü.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr032_hafiflik",
+      "tur": "kelime",
+      "yazim": "hafiflik",
+      "anlam": "Ağır olmama durumu.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr032_kilo",
+      "tur": "kelime",
+      "yazim": "kilo",
+      "anlam": "Bir şeyin ağırlığını gösteren ölçü.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr032_bakir",
+      "tur": "kelime",
+      "yazim": "bakır",
+      "anlam": "Kırmızımsı renkli, ısıyı ve elektriği iyi ileten metal.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr032_gumus",
+      "tur": "kelime",
+      "yazim": "gümüş",
+      "anlam": "Parlak, beyaz renkli değerli metal.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr032_altin",
+      "tur": "kelime",
+      "yazim": "altın",
+      "anlam": "Sarı renkli, çok değerli metal.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr032_olcup_bicmek",
+      "tur": "deyim",
+      "yazim": "ölçüp biçmek",
+      "anlam": "Bir işi düşünüp dikkatle, kontrollü yapmak.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr032_denetim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr032_denetim"
+        },
+        {
+          "girdi": "hr032_kontrol"
+        },
+        {
+          "girdi": "hr032_ihmal"
+        }
+      ]
+    },
+    {
+      "ad": "hr032_agirlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr032_agirlik"
+        },
+        {
+          "girdi": "hr032_hafiflik"
+        },
+        {
+          "girdi": "hr032_kilo"
+        }
+      ]
+    },
+    {
+      "ad": "hr032_bakir",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr032_bakir"
+        },
+        {
+          "girdi": "hr032_gumus"
+        },
+        {
+          "girdi": "hr032_altin"
+        }
+      ]
+    },
+    {
+      "ad": "hr032_olcup_bicmek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr032_olcup_bicmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

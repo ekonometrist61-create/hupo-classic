@@ -1,0 +1,62 @@
+{
+  "hr100_olcu": {
+    "es": [
+      "hr100_sinir"
+    ],
+    "zit": []
+  },
+  "hr100_sinirsizlik": {
+    "es": [],
+    "zit": [
+      "hr100_sinir"
+    ]
+  },
+  "hr100_ritim": {
+    "es": [
+      "hr100_tempo"
+    ],
+    "zit": []
+  },
+  "hr100_durgunluk": {
+    "es": [],
+    "zit": [
+      "hr100_tempo"
+    ]
+  },
+  "hr100_mola": {
+    "es": [
+      "hr100_dinlenme"
+    ],
+    "zit": []
+  },
+  "hr100_calisma": {
+    "es": [],
+    "zit": [
+      "hr100_dinlenme"
+    ]
+  },
+  "hr100_yaralanma": {
+    "es": [
+      "hr100_sakatlik"
+    ],
+    "zit": []
+  },
+  "hr100_saglik": {
+    "es": [],
+    "zit": [
+      "hr100_sakatlik"
+    ]
+  },
+  "hr100_sabirla_katlanmak": {
+    "es": [
+      "hr100_disini"
+    ],
+    "zit": []
+  },
+  "hr100_pes_etmek": {
+    "es": [],
+    "zit": [
+      "hr100_disini"
+    ]
+  }
+}

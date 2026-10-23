@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr030_kroki",
+      "tur": "kelime",
+      "yazim": "krokisini",
+      "anlam": "Bir yerin kabaca çizilmiş, yol ve yerleri gösteren şeması.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr030_harita",
+      "tur": "kelime",
+      "yazim": "harita",
+      "anlam": "Bir yerin ölçekli ve ayrıntılı çizimi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr030_plan",
+      "tur": "kelime",
+      "yazim": "plan",
+      "anlam": "Bir işin nasıl yapılacağını gösteren tasarı.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr030_guzergah",
+      "tur": "kelime",
+      "yazim": "güzergâhı",
+      "anlam": "Bir yere gidilecek izlenen yol.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr030_rota",
+      "tur": "kelime",
+      "yazim": "rota",
+      "anlam": "Gidilecek yolun belirlenmiş izi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr030_kestirme",
+      "tur": "kelime",
+      "yazim": "kestirme",
+      "anlam": "Normalden daha kısa olan yol.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr030_olcek",
+      "tur": "kelime",
+      "yazim": "ölçek",
+      "anlam": "Haritada gerçek uzunluğun küçültülmüş oranı.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr030_oran",
+      "tur": "kelime",
+      "yazim": "oran",
+      "anlam": "İki büyüklüğün birbirine göre durumu.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr030_gercek_boy",
+      "tur": "kelime",
+      "yazim": "gerçek boyut",
+      "anlam": "Bir şeyin olduğu büyüklük.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr030_kroki",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr030_kroki"
+        },
+        {
+          "girdi": "hr030_harita"
+        },
+        {
+          "girdi": "hr030_plan"
+        }
+      ]
+    },
+    {
+      "ad": "hr030_guzergah",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr030_guzergah"
+        },
+        {
+          "girdi": "hr030_rota"
+        },
+        {
+          "girdi": "hr030_kestirme"
+        }
+      ]
+    },
+    {
+      "ad": "hr030_olcek",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr030_olcek"
+        },
+        {
+          "girdi": "hr030_oran"
+        },
+        {
+          "girdi": "hr030_gercek_boy"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

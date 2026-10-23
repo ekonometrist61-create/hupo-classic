@@ -1,0 +1,1097 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr048-muzedeki-eksik-parca",
+    "baslik": "Müzedeki Eksik Parça",
+    "tur": "macera",
+    "konu": "kanit_miras",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D1"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kultur_miras",
+        "gizem"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D1"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "konservasyon_hr048",
+          "tur": "lexeme",
+          "etiket": "konservasyon",
+          "yuva": "hr048_konservasyon",
+          "islev": "first_hint"
+        },
+        {
+          "id": "restorasyon_hr048",
+          "tur": "lexeme",
+          "etiket": "restorasyon",
+          "yuva": "hr048_restorasyon",
+          "islev": "application"
+        },
+        {
+          "id": "vitrin_hr048",
+          "tur": "lexeme",
+          "etiket": "vitrin",
+          "yuva": "hr048_vitrin",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr048",
+          "tur": "idiom",
+          "etiket": "Gözünü kurcalamak",
+          "yuva": "hr048_gozunu_kurcalamak",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr048",
+          "tur": "concept",
+          "etiket": "Varsayım ile kanıt ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 2072,
+        "tahmini_sure_dk": 20,
+        "sayfa_sayisi": 18,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 25,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Tabakta bir parça eksik. Hırsızlık mı, yoksa koruma çalışması mı?",
+    "durum": "taslak",
+    "fis_kodu": "HR-048"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Müzedeki seramik tabak dün tamdı. Bugünse ortasında, küçük bir kuşun kanadı büyüklüğünde boşluk vardı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr048_vitrin"
+        },
+        {
+          "t": "metin",
+          "v": " karşısında durup bir kez daha baktı. Müze gezisine gelmeden önce öğretmenlerinin gönderdiği fotoğrafta, on altı parçadan birleştirilmiş mavi desenli tabağın tam ortasında sekiz köşeli bir yıldız bulunuyordu. Şimdiyse yıldızın bir köşesi yoktu.\n\n“Gördün mü?” diye fısıldadı arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": ". “Parça kayıp.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", vitrin kenarındaki açıklama levhasına eğildi. “Belki de hep böyleymiştir.”\n\n“Fotoğrafıma bak.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " telefonundaki görüntü, kuşkusunu doğruluyordu. Tabağın eksik yerinde eskiden turkuaz bir parça görünüyordu. Üstelik vitrinin kenarına yeni bir not yapıştırılmıştı: Koruma çalışmaları sürmektedir.\n\n“Biri çalmış olabilir,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". Sesi yükselince yanlarında duran küçük bir çocuk başını çevirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " birden rahatsız oldu. Müze salonu sessizdi; söyledikleri bir kişiyi gereksiz yere kuşku altında bırakabilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Olabilir,” diye düzeltti onu. “Ama bu sadece varsayım. Henüz bilmiyoruz.”\n\nO sabah beşinci sınıf öğrencileri, kent müzesinin yeni açılan “Toprağın Belleği” bölümünü geziyordu. Salonun girişinde kalın duvarlı eski bir fırının maketi, yanında da çömleklerin hangi aşamalardan geçerek yapıldığını anlatan bir pano vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " ilgisini çeken, müzedeki eşyalardan çok kırmızı kurdeleyle çevrilmiş “Girilmez” kapısıydı. Kapının üzerinde, ince fırçalarla çalışan bir el çizimi görülüyordu.\n\n“Kesin gizli oda,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Büyük ihtimalle çalışma odası,” diye karşılık verdi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Ama bakmadan hiçbir şeyi kesin söylemeyelim.”\n\nÖğretmenleri Selma Hanım, çocukların fotoğrafa ve tabağa sırayla bakmalarını istedi. Sonra sınıfın önünde üç soru sordu: “Neyi gördünüz? Ne düşündünüz? Hangisini kanıtlayabilirsiniz?”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gördüğü şeyleri sıraladı: Fotoğraftaki parça bugün yerinde değildi. Vitrinde yeni bir açıklama vardı. Müze çalışanlarının kapalı bir bölümü bulunuyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " “çalınmış olabilir” diye düşündüğünü söylediğinde öğretmen onu susturmadı; yalnızca düşünceyle kanıtın farklı olduğunu hatırlattı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Bir şey kaybolduğunda aklımıza ilk gelen açıklama, doğru açıklama olmak zorunda değil,” dedi. “Merakımızı koruyalım, ama kimseyi suçlamayalım.”\n\nÖğrenciler iki gruba ayrıldı. Bir grup çömlek yapımını öğrenirken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ve yeni arkadaşları Melis, müze görevlisi Aslı Hanım'dan bilgi almak için izin istedi. Aslı Hanım onları danışma masasındaki ziyaretçi defterinin yanına götürdü. Günün en yoğun saatinde bile sorularına zaman ayırmaya çalışıyordu.\n\n“Ortadaki seramik parçası neden yok?” diye sordu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nAslı Hanım, “Bu soruyu fark etmenize sevindim,” dedi. “Peki sizce bir eser neden vitrinden çıkarılabilir?”\n\n“Temizlemek için,” dedi Melis.\n\n“Başka müzeye götürmek için,” diye ekledi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Zarar gördüyse onarmak için,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Üçü de bazı durumlarda mümkün. Sizin gördüğünüz parça, "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr048_konservasyon"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr048_restorasyon"
+        },
+        {
+          "t": "metin",
+          "v": " çalışmalarında inceleniyor.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu iki sözcüğün birbirine benzediğini fark etti. Aslı Hanım, korumanın eserin bozulmasını önlemeye; restorasyonun ise gerekli durumlarda belgeli, kontrollü müdahaleye odaklandığını açıkladı. Bir nesneyi eski hâline getirmek için her boşluğu rastgele doldurmak doğru değildi. Bazen eksik alan açıkça görünür bırakılırdı.\n\n“Yani parçayı hemen yapıştırmayacak mısınız?” diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Önce neden ayrıldığını anlamamız gerekir. Kullanılacak malzemenin esere zarar vermeyeceğinden emin olmalıyız. Bir de yapılan işlemleri kayıt altına alırız.”\n\nBu yanıt "
+        },
+        {
+          "t": "yoldas",
+          "hal": "belirtme",
+          "yedek": "bir arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " biraz hayal kırıklığına uğrattı. Gizli oda sandığı yerde çalışanların uzun uzun ölçüm yaptığı, fotoğraf çektiği ve rapor yazdığı anlaşılıyordu. Fakat "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " merakı artmıştı. Ona göre asıl gizem, bir parçayı bulmak değil, küçük bir seramik parçasına neden bu kadar özen gösterildiğiydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Aslı Hanım bir eğitim etkinliği düzenlediklerini söyledi. Öğrenciler isterlerse müzenin öğretim atölyesinde, gerçek eser yerine hazırlanmış seramik kopyalarıyla birleştirme çalışması yapabileceklerdi. Selma Hanım kabul edince üç arkadaş atölyeye geçti. Masalarda numaralandırılmış seramik parçalar, fotoğraflar ve üzerinde desenlerin devam ettiği kartonlar duruyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen büyük parçaları bir araya getirmeye girişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bazı parçaların kenarlarının tam uyuşmadığını gördü.\n\n“Dur, kırılabilir,” dedi.\n\n“Bunlar zaten kopya.”\n\n“Yine de zorlamaya gerek yok.”\n\nAtölye sorumlusu Mert Bey, öğrencilere bir kural verdi: Önce gözlem, sonra deneme. Parçaları yapıştırmak yoktu; yalnızca kuru yerleştirme yapacaklardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kenar çizgilerini izledi, Melis aynı renkteki desenleri grupladı, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " de şekillerin dönük yönlerini karşılaştırdı. İlk on dakikada yalnızca dört parçayı yerleştirebildiler.\n\n“Bu hızla müze kapanır,” diye söylendi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Mert Bey güldü. “Aceleyi eser değil, saat hisseder. Tarihî bir nesnede hızlı olmak değil, dikkatli olmak önemlidir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki küçük parça arasındaki ilişkiyi fark etti. İkisinde de kuş tüyüne benzeyen ince siyah çizgiler vardı. Bir parçayı döndürdüğünde çizgiler birleşti.\n\n“İşte!” dedi. “Yıldızın altında bir kuş çizimi varmış.”\n\nFotoğrafın küçük ekranında görünmeyen desen, ellerindeki büyütülmüş kopyada ortaya çıkmıştı. Öğrenciler tüylerin yönünü izleyerek üç parçayı daha buldu. Ancak sekizinci parça ortada yoktu. Kutudaki parçaları iki kez saydılar. Numaralar birden ona kadar gidiyordu ama yedi numara yoktu.\n\n“İşte gerçek kayıp parça,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". “Atölyede de bir şey eksik!”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kutunun yanındaki listeyi kontrol etti. Yedi numaranın karşısında küçük bir not bulunuyordu: Bu parça örnek çalışma için ayrılmıştır."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Yok değil,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Başka yerde. Biz yine önce kötü ihtimali düşündük.”\n\nMert Bey, eksik parçanın neden masada olmadığını açıkladı. Amaç, öğrencilerin eksikle karşılaşınca süreci nasıl yöneteceklerini görmekti. Eksik bilgi olduğu hâlde sonuç uydurmak mı, yoksa bir süre belirsizliği kabul etmek mi daha doğruydu?\n\nMelis, parçalardan birine biraz daha yakından bakmak için masadan eğildi. Çatlak boyunca yapıştırıcıya benzeyen parlak bir iz gördü.\n\n“Bunu kim tamir etti?” diye sordu.\n\nMert Bey, izlerin eğitim kopyasının eski onarımına ait olduğunu söyledi. Sonra gerçek müze eserlerinde kullanılan malzemelerin neden belgelenmesi gerektiğini anlattı. Yıllar sonra başka bir uzman nesneyi incelerken hangi kısmın eski, hangi kısmın daha sonra eklendiğini ayırt edebilmeliydi. Yoksa eserin hikâyesi değişebilirdi.\n\nBu düşünce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " hoşuna gitti. İnsanlar anılarını deftere yazdığı gibi, müzeler de eserlerin geçmişini kaydediyordu. Bir kırık yalnızca kusur değildi; bazen nesnenin başından geçenlerin işaretiydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğleden sonra gruplar yeniden büyük salonda buluştu. Selma Hanım her gruptan gördüğü bir nesneyle ilgili üç cümle yazmasını istedi: Kesin bildiği şey, henüz bilmediği şey ve araştırmak istediği yeni soru. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıdına şöyle yazdı:\n\nBildiğim: Seramik parça koruma çalışması için çıkarılmış.\n\nBilmediğim: Parça ne zaman yerine dönecek?\n\nYeni sorum: Bir müze, bir nesnenin aslıyla yeni eklenen bölümünü ziyaretçiye nasıl anlatmalı?\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendi sayfasına, müzenin yalnızca eski eşya saklamadığını yazdı. O gün, tarihin de bakım istediğini anlamıştı.\n\nTam çıkacakları sırada Aslı Hanım onlara yeni hazırlanan bir bilgi kartı gösterdi. Üzerinde tabağın fotoğrafı, ayrılan parçanın yakın çekimi ve yapılan işlemlerin kısa açıklaması bulunuyordu. Kart ertesi gün vitrinin yanına konulacaktı. Ziyaretçiler boşluğa bakıp yanlış bir sonuca varmadan önce süreci öğrenebileceklerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Bizim fark ettiğimiz şey buna yardımcı oldu mu?” diye sordu Melis.\n\n“Aslında çalışma zaten sürüyordu,” dedi Aslı Hanım. “Ama sizin sorularınız bize ziyaretçinin neleri bilmek istediğini gösterdi. Bu da önemli.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " müze kapısında bir an durdu. “Bugün hiç hırsız yakalayamadık,” dedi.\n\n“Çünkü hırsız yoktu,” diye cevap verdi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Yine de maceraydı. En zor kısmı, hikâyenin sonunu baştan uydurmamakmış.”\n\nSelma Hanım gülümsedi. “Araştırmacı olmak bazen en heyecanlı açıklamadan vazgeçip en güçlü kanıtı seçmektir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eve dönerken telefonundaki eski fotoğrafı silmedi. Yeni çektiği fotoğrafla yan yana koydu. İlkinde tabak tamdı; ikincisinde bir boşluk vardı. Ama artık ikinci fotoğraf ona eksik bir hikâye gibi görünmüyordu. Tam tersine, daha önce bilmediği bir bölüm açılmıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam küçük kardeşi “Müzede ne buldun?” diye sorduğunda "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bir parçanın neden yerinde olmadığını öğrendim,” dedi.\n\n“Kayıp mıymış?”\n\n“Hayır. Korunuyormuş.”\n\nKardeşi bu farkı anlamak için biraz düşündü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " da ona eğitim atölyesindeki kuş çizimini gösterdi. İkisi masada kâğıttan bir yapboz yaptı. Kardeşi acele edip yanlış parçayı yerine sıkıştırınca "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülerek elini tuttu.\n\n“Önce kenarlara bakalım,” dedi. “Bir şeyin uymasını istemek, gerçekten uyduğu anlamına gelmez.”\n\nO günkü gezi aslında iki hafta önce sınıfta başlayan bir tartışmanın devamıydı. Sosyal bilgiler dersinde Selma Hanım, bir tabağın fotoğrafını tahtaya yansıtmış ve “Bu nesne kime aittir?” diye sormuştu. Kimileri onu yapan çömlekçiye, kimileri satın alan kişiye, kimileri de bulunduran müzeye ait saymıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " el kaldırıp, “Belki de hikâyesi hepimize aittir,” demişti. Öğretmen, bu cümlenin üzerinde durmalarını istemişti. Çünkü tarihî bir eser, özel mülkiyet ve ortak kültürel değer gibi farklı yönlerden ele alınabilirdi. Şimdi vitrinin önünde dururken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", o dersteki sorunun yalnızca bir sınav sorusu olmadığını fark ediyordu. Bir nesneyi koruyamayan insanlar onun hikâyesini de yitirebilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gezi sırasında sınıfın bir başka bölümü seramik üretim videolarını izledi. Öğrenciler toprağın suyla yoğrulduğunu, şekillendirildiğini, kurutulduğunu ve uygun koşullarda fırınlandığını gördü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “O kadar ısıdan çıkıp vitrinde duruyor, sonra küçücük bir yerinden ayrılıyor,” diye söylendi. Aslı Hanım, seramiklerin çok uzun ömürlü olabileceğini ama ani sıcaklık değişimleri, yanlış taşıma ve eski onarımların onlara zarar verebildiğini açıkladı. “Sağlam görünmekle hiç zarar görmemek aynı şey değil,” dedi. Melis hemen not aldı: “Dış görünüş, tek başına yeterli kanıt değildir.” Bu cümle biraz önceki hırsızlık varsayımlarına da uyuyordu.\n\n"
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr048_gozunu_kurcalamak"
+        },
+        {
+          "t": "metin",
+          "v": " Öğretmeninin gönderdiği görüntü geçen yılki katalogdan alınmıştı. Katalogdaki tabak aynı eser miydi? Deseni birbirine benzeyen iki tabak olamaz mıydı? "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce fotoğrafın altında bulunan küçük numarayı okudu: KM-218. Vitrinin kenarındaki levhada da KM-218 yazıyordu. İki görüntünün aynı esere ait olduğuna artık daha çok güvenebilirdi. “Böyle düşünmeye alışmak istiyorum,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Her şeyin numarasını mı ezberleyeceksin?” diye takıldı. “Hayır, bir iddiaya neden inandığımı bilmek istiyorum.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Atölyede Melis'in önüne gelen küçük parça herkesi yanıltmıştı. Desen aynıydı ama parçanın dış kıvrımı ortadaki boşluğa tam oturmuyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onu çevirdi, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " diğer köşeyle karşılaştırdı. İlk bakışta doğru görünen parçanın aslında başka bir tabağın kopyasından alındığı ortaya çıktı. Mert Bey, “Bu küçük deneme, benzer olmakla aynı olmak arasındaki farkı anlatıyor,” dedi. “Bir hikâyenin iki ayrıntısı birbirine uyabilir; ama ikisi birden aynı olayın parçası olmayabilir.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", dedektif kitaplarını neden sevdiğini hatırladı. İyi bir dedektif, yalnızca işine gelen ipucunu seçmezdi; düşüncesine uymayan ayrıntıyı da hesaba katardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yemek molasında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " birden sustu. İlk başta “çalınmış” derken sesini fazla yükselttiğini hatırlamıştı. Salonda çalışan güvenlik görevlisi onu duymuş muydu? Arkadaşlarıyla otururken “Birisi bir eşyam kayboldu diye beni suçlasa çok üzülürdüm,” dedi. Melis, “Sen kimseyi adlandırmadın,” diye karşılık verdi. “Ama yine de kulağa kötü gelebilir.” Üçü, müzeye dönünce doğru bilgi öğrendiklerini görevliyle de paylaşmaya karar verdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " özür dilemesi için öğretmenin onu zorlaması gerekmedi. Güvenlik görevlisinin yanına gidip “Az önce yanlış bir şey varsaydık; şimdi öğrendik,” dedi. Görevli, “Sormak iyidir, ama birilerini suçlamadan sormak daha iyidir,” diye cevap verdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", sorumluluk duygusunun yalnızca büyük hatalarla ilgili olmadığını o gün anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğleden sonraki sunumda gruplar eserleri için küçük birer “bilgi levhası” tasarladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", tabağın ne kadar eski olduğunu büyük harflerle yazmak istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", tam tarih bilinmiyorsa kesin yıl vermenin yanlış olacağını söyledi. Melis, “O zaman tahmini tarih aralığını belirtiriz,” dedi. Levhaya “Yaklaşık” sözcüğünü eklemek, onları daha az bilgili göstermiyor; bilgiyi daha dikkatli kullandıklarını gösteriyordu. Bir başka grup, eserin bütün boşluklarına hayalî parçalar çizmişti. Mert Bey, bunu sanat çalışması olarak beğendi fakat bir müze levhasında varsayımsal çizimlerin açıkça işaretlenmesi gerektiğini anlattı. “Hayal kurmak güzeldir,” dedi, “yalnızca hayalle bulguyu birbirine karıştırmamalıyız.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " evine dönünce anneannesinin eski bir fincanını hatırladı. Fincanın kulpu yıllar önce kırılmış, anneannesi onu içmek için değil, çiçek tohumlarını saklamak için kullanmaya başlamıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", fincanı neden atmadığını sorduğunda anneannesi, “Deden ilk maaşıyla almıştı,” dedi. “Benim için değeri artık yalnızca içindeki çayla ilgili değil.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir müze görevlisi gibi fincana bakmadı; ama onda da bir hikâye saklı olduğunu anladı. Her eski eşya müzelik değildi, her kırık eşya da çöpe gidecek değildi. Önemli olan geçmişe ve kullanılan nesnelere düşünmeden davranmamaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi hafta sınıf, müzeye yazdığı teşekkür mektubuna bir öneri ekledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ile arkadaşları, çocukların “Neden burada boşluk var?” diye sorabilecekleri küçük, anlaşılır bir etiket hazırlanmasını istedi. Öğretmen mektubu göndermeden önce tüm sınıfa okudu. Öneride görevlilere emir verilmiyor, bilgileri için teşekkür ediliyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kendisine ait cümleyi ekledi: “Merak eden çocuklar hemen en kötü sonucu düşünmesin diye açıklama yararlı olabilir.” İki gün sonra müzeden kısa bir yanıt geldi. Ziyaretçi levhasının hazırlanmakta olduğunu, önerilerinin de değerlendirmeye alındığını söylediler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir sorunun cevap bulmasının bazen yeni bir sorumluluk başlattığını düşündü: Doğru bilgiyi başkalarına da anlaşılır biçimde iletmek.\n\nO akşam "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterinin arka kapağına küçük bir not yazdı: Merak, cevap aramaktır. "
+        },
+        {
+          "t": "vurgu",
+          "v": "Kanıt, cevabın sağlam basacağı yerdir"
+        },
+        {
+          "t": "metin",
+          "v": ". Sonra iki fotoğrafın altına aynı cümleyi ekledi: Boşluk görünce önce sor."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", arkadaşlarının bir hafta sonra aynı esere tekrar bakmasını önerdi. Müze bu kez yeni açıklama kartını yerleştirmişti. Kartın kenarında çalışmanın başlangıç tarihi, parçanın incelendiği bölüm ve ziyaretçilerin sorularını iletebilecekleri bir iletişim noktası yazıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", vitrinin önünde duran iki kişinin yeni açıklamayı okuduğunu gördü. Birisi, “Demek tamir edildiği için alınmış,” dedi. Diğeri, “Hayır, önce inceleniyor; belki hemen yerine koymayacaklar,” diye düzeltti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ikisinin de doğru bilgiye ulaşmaya çalışmasına sevindi. Bazen bir etiketteki iki cümle bile yanlış bir söylentinin önüne geçebilirdi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ziyaretçi defterine aceleyle “Çok güzeldi” yazıp çıkacakken durdu. Cümlesinin altına şunu da ekledi: “Atölyede eksik parça bulmacasını sevdim. Başta bir hırsızlık olduğunu düşünmüştüm, şimdi önce kanıt toplamayı öğreniyorum.” Melis de kendi notunda seramiğin kuş desenini anlattı. Aslı Hanım, çocukların notlarını okuyup gülümsedi: “Bir müzenin en güzel yanı, ziyaretçilerinin sorularını değiştirebilmesidir.” Üç arkadaş çıktıklarında vitrindeki boşluk hâlâ aynı yerdeydi. Değişen, onların o boşluğa bakarken düşündükleriydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "- Sözcükler: Kanıt, varsayım, konservasyon, restorasyon, teşhir. - Okuduğunu anlama: Kesin gözlemle olası açıklamayı ayırt etme; kaynak sorgulama. - Değerler: Sabır, kültürel mirasa saygı, kimseyi kanıtsız suçlamama. - Kullanılabilecek etkileşim: “Gördüm / düşündüm / kanıtladım” üçlü eşleştirme kartı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr048_gozunu_kurcalamak": [
+      {
+        "t": "kahraman",
+        "hal": "ilgi"
+      },
+      {
+        "t": "metin",
+        "v": " gözünü kurcalayan ikinci mesele, fotoğrafın güvenilirliğiydi."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Bugün seramik tabağın ortasında ne vardı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Küçük bir kuşun kanadı büyüklüğünde boşluk"
+        },
+        {
+          "id": "B",
+          "metin": "Mavi bir daire"
+        },
+        {
+          "id": "C",
+          "metin": "Yeni bir resim"
+        },
+        {
+          "id": "D",
+          "metin": "Bir fotoğraf"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Tabağın ortasında küçük bir boşluk vardı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Öğretmen neden Kerem'i susturmadı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Düşünceyle kanıtın farklı olduğunu hatırlatmak istediği için"
+        },
+        {
+          "id": "B",
+          "metin": "Kerem'in yanlış söylediğini kesinleştirdiği için"
+        },
+        {
+          "id": "C",
+          "metin": "Müzede ses yasak olduğu için"
+        },
+        {
+          "id": "D",
+          "metin": "Tabak kırıldığı için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Öğretmen, düşünceyi kanıttan ayırmanın önemini göstermek istedi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 9,
+      "metin": "Selma Hanım'ın sözüne göre araştırmacı ne yapmalıdır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "En heyecanlı açıklama yerine en güçlü kanıtı seçmelidir"
+        },
+        {
+          "id": "B",
+          "metin": "Hep en heyecanlı açıklamayı seçmelidir"
+        },
+        {
+          "id": "C",
+          "metin": "Hiç açıklama yapmamalıdır"
+        },
+        {
+          "id": "D",
+          "metin": "Eserleri satmalıdır"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Araştırmacı, heyecan verici ama kanıtsız açıklamalardan kaçınmalıdır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "Metinde geçen konservasyon ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Eserin bozulmasını önlemeye yönelik koruma çalışması"
+        },
+        {
+          "id": "B",
+          "metin": "Bir eseri satma işlemi"
+        },
+        {
+          "id": "C",
+          "metin": "Eseri müzeye götürme"
+        },
+        {
+          "id": "D",
+          "metin": "Yeni bir eser yapma"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Konservasyon, eserin zamana ve etkenlere karşı korunmasıdır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr048_konservasyon",
+        "tur": "kelime",
+        "yazim": "konservasyon",
+        "anlam": "Eserin bozulmasını önleyen koruma çalışması.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_koruma",
+        "tur": "kelime",
+        "yazim": "koruma",
+        "anlam": "Bir şeyi zarardan ya da yok olmaktan esirgeme.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_yikim",
+        "tur": "kelime",
+        "yazim": "yıkım",
+        "anlam": "Bir yapının ya da eserin tamamen yok edilmesi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_restorasyon",
+        "tur": "kelime",
+        "yazim": "restorasyon",
+        "anlam": "Bir eseri eski hâline getirmek için yapılan belgeli onarım.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_onarim",
+        "tur": "kelime",
+        "yazim": "onarım",
+        "anlam": "Bozulmuş bir şeyi düzeltme işi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_tahrip",
+        "tur": "kelime",
+        "yazim": "tahrip",
+        "anlam": "Bir şeyi kötü biçimde bozma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_vitrin",
+        "tur": "kelime",
+        "yazim": "vitrinin",
+        "anlam": "Eşyaların sergilendiği camlı dolap.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_sergi_dolabi",
+        "tur": "kelime",
+        "yazim": "sergi dolabı",
+        "anlam": "Müzede eserlerin korunup gösterildiği dolap.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_raf",
+        "tur": "kelime",
+        "yazim": "raf",
+        "anlam": "Eşya koymak için duvara ya da dolaba yerleştirilen tahta ya da metal levha.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_gozunu_kurcalamak",
+        "tur": "deyim",
+        "yazim": "aklını kurcalayan",
+        "anlam": "Zihni meşgul edip rahatsız eden, merak uyandıran.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr048_gozunu_kapatmak",
+        "tur": "deyim",
+        "yazim": "gözünü kapatmak",
+        "anlam": "Bir şeyi görmezden gelmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr048_konservasyon",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr048_konservasyon"
+          },
+          {
+            "girdi": "hr048_koruma"
+          },
+          {
+            "girdi": "hr048_yikim"
+          }
+        ]
+      },
+      {
+        "ad": "hr048_restorasyon",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr048_restorasyon"
+          },
+          {
+            "girdi": "hr048_onarim"
+          },
+          {
+            "girdi": "hr048_tahrip"
+          }
+        ]
+      },
+      {
+        "ad": "hr048_vitrin",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr048_vitrin"
+          },
+          {
+            "girdi": "hr048_sergi_dolabi"
+          },
+          {
+            "girdi": "hr048_raf"
+          }
+        ]
+      },
+      {
+        "ad": "hr048_gozunu_kurcalamak",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr048_gozunu_kurcalamak"
+          },
+          {
+            "girdi": "hr048_gozunu_kapatmak"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,614 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr040-trenin-penceresindeki-turkiye",
+    "baslik": "Trenin Penceresindeki Türkiye",
+    "tur": "gezi_kultur",
+    "konu": "yer_kultur_cesitlilik",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D14",
+      "D20"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 4,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kultur_miras",
+        "okuma_kitap"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D20"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "ciborek_hr040",
+          "tur": "lexeme",
+          "etiket": "çibörek",
+          "yuva": "hr040_ciborek",
+          "islev": "first_hint"
+        },
+        {
+          "id": "bakir_hr040",
+          "tur": "lexeme",
+          "etiket": "bakır",
+          "yuva": "hr040_bakir",
+          "islev": "application"
+        },
+        {
+          "id": "baharat_hr040",
+          "tur": "lexeme",
+          "etiket": "baharat",
+          "yuva": "hr040_baharat",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr040",
+          "tur": "idiom",
+          "etiket": "Misafire yer açmak",
+          "yuva": "hr040_misafire_yer",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr040",
+          "tur": "concept",
+          "etiket": "Benzer ve farklı yanlar; yaşayan gelenek",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 467,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 6,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 0
+      }
+    },
+    "tanitim": "Üç durak, üç sofra. Yemekler, sözcükler ve desenler nasıl yolculuk etti?",
+    "durum": "taslak",
+    "fis_kodu": "HR-040"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk uzun tren yolculuğuna çıkacağı sabah erkenden uyandı. Annesiyle birlikte üç şehirde duracak, her durakta farklı bir aile dostunu ziyaret edeceklerdi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yolculuktan önce atlasını açmış, uğrayacakları şehirleri renkli kalemlerle işaretlemişti. \"İstasyona varınca doğuya mı gitmiş olacağız?\" diye sordu. Annesi güzergâhı gösterdi. \"Her durakta haritayı yeniden inceleyelim,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " böylece pencerenin dışındaki manzarayla kâğıttaki çizgiler arasında bağlantı kurabilecekti. Aklında bir oyun da vardı: Her şehirden duyduğu yeni bir kelimeyi not edecek, sonra benzerlerini arayacaktı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " küçük defterinin ilk sayfasına şunu yazdı: Aynı ülkede kaç farklı sofra kurulabilir?"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tren hareket edince pencereden tarlalar, dereler ve küçük istasyonlar akmaya başladı. İlk durak Eskişehir'di. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onları evinde karşıladı, sofraya "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr040_ciborek"
+        },
+        {
+          "t": "metin",
+          "v": " koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bizim evdeki böreğe benziyor ama şekli farklı,\" dedi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Yemeklerin yolu da insanların yolu gibi. Bir yerden başka yere taşınırken değişebilir,\" diye anlattı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine iki sütun çizdi: Benzerlikler ve Farklılıklar. İlk sütuna \"hamur ve paylaşmak\", ikinciye \"şekil ve hazırlanışı\" yazdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Eskişehir'den ayrılırken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " pazarda çalışan bir kadına yöresel bir sözcüğün anlamını sormuştu. Kadın, onun merakını görünce gülümseyerek açıklamış, sonra başka şehirlerde de farklı söyleyişler duyabileceğini anlatmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " aynı nesnenin farklı yerlerde bazen farklı adlarla anılmasına şaşırdı. \"Demek kelimeler de yolculuk ediyor,\" dedi. Annesi, \"Evet, insanlarla birlikte taşınıyor ve değişiyor,\" diye cevap verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterinde sözcüklere yeni bir sayfa ayırdı.\n\nİkinci gün Konya'ya vardılar. Mehmet amca onları tarihi bir sokakta gezdirdi. Taş binaları, eski kapıları ve avluları gösterdi. Öğle yemeğinde etli ekmek vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez yemeğin yanında anlatılan aile hikâyeleriyle de ilgilendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Mehmet amca, \"Eskiden akşam yemekleri ailece uzun sürerdi,\" dedi. \"Herkes gününü anlatırdı.\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Biz de bazen telefonu bir kenara koyup konuşuyoruz,\" diye cevap verdi. \"Demek bazı gelenekler bugün de devam ediyor.\"\n\nTrenin üçüncü durağı Gaziantep'ti. Burada teyzesi Ayla, onlara renkli bir pazar gezdirdi. "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr040_baharat"
+        },
+        {
+          "t": "metin",
+          "v": " kokusu birbirine karışıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tezgâhlardaki ürünlerin adlarını not etti. Bir dükkânda "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr040_bakir"
+        },
+        {
+          "t": "metin",
+          "v": " işleyen ustayı izledi.\n\n\"Bu desenleri yapmayı kim öğretti?\" diye sordu.\n\nUsta, \"Önce babamdan öğrendim, sonra kendi desenlerimi geliştirdim,\" dedi. \"Her yeni usta eski bilgiyi başka biçimde sürdürür.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Üçüncü günün öğleden sonrasında pazarın yanındaki küçük müzeyi de görmüşlerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", camın arkasındaki eski bir bakır tabağın üstünde ustanın desenlerine benzeyen çizgiler buldu. \"Bugünküyle dünkü arasında bir bağ var,\" dedi. Ayla teyze, \"Kültürel miras böyle yaşar; insanlar öğrendiklerini yalnızca saklamaz, kullanır ve geliştirir,\" diye açıkladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dönüş treninde gördüğü desenlerin küçük resimlerini yan yana çizdi ve altlarına ortak yanlarını yazdı.\n\nAkşam "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterini açınca sayfaların yemek adlarıyla dolduğunu gördü. Ama yalnızca yemeklerden söz etmek istemedi. Her durakta insanların onları aynı sıcaklıkla karşıladığını da yazdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Annesi, \"Peki sorunun cevabını buldun mu?\" diye sordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. \"Sayamadığım kadar farklı sofra var."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr040_misafire_yer"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nYolculuğun son sayfasına küçük bir Türkiye haritası çizdi. Üzerine uğradıkları şehirleri işaretledi. Haritanın altına da tek bir cümle yazdı: "
+        },
+        {
+          "t": "vurgu",
+          "v": "Farklılıkları öğrenmek, birbirimize yaklaşmanın başka bir yolu"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr040_misafire_yer": [
+      {
+        "t": "metin",
+        "v": "Ama sofralarda ortak olan bir şey de var: Misafire yer açmak.\""
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 2,
+      "metin": "İlk durakta Defne hangi yemeği gördü?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çibörek"
+        },
+        {
+          "id": "B",
+          "metin": "Pilav"
+        },
+        {
+          "id": "C",
+          "metin": "Etli ekmek"
+        },
+        {
+          "id": "D",
+          "metin": "Baklava"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "İlk durakta Banu teyze sofraya çibörek koydu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Banu teyze'ye göre yemekler neden değişir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İnsanlarla birlikte bir yerden başka yere taşınırken"
+        },
+        {
+          "id": "B",
+          "metin": "Ateşte kaldıkları için"
+        },
+        {
+          "id": "C",
+          "metin": "Tarlada büyüdükleri için"
+        },
+        {
+          "id": "D",
+          "metin": "Hiç değişmezler"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Yemekler, insanlarla birlikte yolculuk ederken yeni biçimler alır."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 6,
+      "metin": "Defne'ye göre sofralarda ortak olan şey nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Misafire yer açmak"
+        },
+        {
+          "id": "B",
+          "metin": "Aynı yemeği yemek"
+        },
+        {
+          "id": "C",
+          "metin": "Aynı şehirde olmak"
+        },
+        {
+          "id": "D",
+          "metin": "Aynı kalemi kullanmak"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Defne, her yerde misafire yer açıldığını fark etti."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 4,
+      "metin": "Metinde geçen baharat ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yemeklere tat ve koku veren bitkisel tozlar ya da çeşniler"
+        },
+        {
+          "id": "B",
+          "metin": "Bir çeşit çiçek"
+        },
+        {
+          "id": "C",
+          "metin": "Renkli bir kumaş"
+        },
+        {
+          "id": "D",
+          "metin": "Bir pazarın adı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Baharat, yemeklere tat ve koku veren maddelerdir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr040_ciborek",
+        "tur": "kelime",
+        "yazim": "çibörek",
+        "anlam": "İçine kıyma ya da peynir konup kızartılan hamur yemeği.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr040_borek",
+        "tur": "kelime",
+        "yazim": "börek",
+        "anlam": "Yufka arasına çeşitli iç konularak pişirilen hamur yemeği.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr040_pide",
+        "tur": "kelime",
+        "yazim": "pide",
+        "anlam": "Ekmek türü, uzun ve oval biçimli hamur yemeği.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr040_bakir",
+        "tur": "kelime",
+        "yazim": "bakır",
+        "anlam": "Kırmızımsı renkli, işlenebilen bir metal.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr040_tunc",
+        "tur": "kelime",
+        "yazim": "tunç",
+        "anlam": "Bakır ile kalayın karışımından elde edilen metal.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr040_demir",
+        "tur": "kelime",
+        "yazim": "demir",
+        "anlam": "Sert, gri renkli bir metal.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr040_baharat",
+        "tur": "kelime",
+        "yazim": "baharatların",
+        "anlam": "Yemeklere tat ve koku veren bitkisel tozlar ya da çeşniler.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr040_cesni",
+        "tur": "kelime",
+        "yazim": "çeşni",
+        "anlam": "Yemeğe tat katan madde.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr040_misafire_yer",
+        "tur": "deyim",
+        "yazim": "Misafire yer açmak",
+        "anlam": "Konuğu içtenlikle kabul etmek.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr040_kapi_acmak",
+        "tur": "deyim",
+        "yazim": "kapı açmak",
+        "anlam": "Bir şeyin yolunu açmak, fırsat vermek.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr040_kapiyi_kapamak",
+        "tur": "deyim",
+        "yazim": "kapıyı kapatmak",
+        "anlam": "Bir konuyu bitirmek.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr040_ciborek",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr040_ciborek"
+          },
+          {
+            "girdi": "hr040_borek"
+          },
+          {
+            "girdi": "hr040_pide"
+          }
+        ]
+      },
+      {
+        "ad": "hr040_bakir",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr040_bakir"
+          },
+          {
+            "girdi": "hr040_tunc"
+          },
+          {
+            "girdi": "hr040_demir"
+          }
+        ]
+      },
+      {
+        "ad": "hr040_baharat",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr040_baharat"
+          },
+          {
+            "girdi": "hr040_cesni"
+          }
+        ]
+      },
+      {
+        "ad": "hr040_misafire_yer",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr040_misafire_yer"
+          },
+          {
+            "girdi": "hr040_kapi_acmak"
+          },
+          {
+            "girdi": "hr040_kapiyi_kapamak"
+          }
+        ]
+      }
+    ]
+  }
+}

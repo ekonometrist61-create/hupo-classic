@@ -1,0 +1,780 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr057-sessiz-mesajlar-kulubu",
+    "baslik": "Sessiz Mesajlar Kulübü",
+    "tur": "arkadaslik",
+    "konu": "erisilebilirlik_iletisim",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D5",
+      "D20"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "dayanisma",
+        "okul"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D5",
+        "yardimci_deger": "D20"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "erisilebilirlik_hr057",
+          "tur": "lexeme",
+          "etiket": "erişilebilirlik",
+          "yuva": "hr057_erisilebilirlik",
+          "islev": "first_hint"
+        },
+        {
+          "id": "simge_hr057",
+          "tur": "lexeme",
+          "etiket": "simge",
+          "yuva": "hr057_simge",
+          "islev": "application"
+        },
+        {
+          "id": "altyazi_hr057",
+          "tur": "lexeme",
+          "etiket": "altyazı",
+          "yuva": "hr057_altyazi",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr057",
+          "tur": "idiom",
+          "etiket": "Yüzü aydınlanmak",
+          "yuva": "hr057_yuzu_aydinlandi",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr057",
+          "tur": "concept",
+          "etiket": "Çoklu iletişim yolları",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 2041,
+        "tahmini_sure_dk": 20,
+        "sayfa_sayisi": 16,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 25,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Bilim şenliğinde parkurun ipuçları yalnız seslendirilince ne olur? Herkes nasıl katılabilir?",
+    "durum": "taslak",
+    "fis_kodu": "HR-057"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okulun bilim şenliğine bir hafta kalmıştı. Beşinci sınıf öğrencileri, herkesin katılabileceği bir bulmaca parkuru hazırlamak istiyordu. Ancak ilk denemede bir sorun çıktı: Parkurun bütün ipuçları küçük bir hoparlörden sesli olarak veriliyordu.\n\nYeni öğrenci Elvan, hoparlörün bulunduğu masanın yanında durup arkadaşlarına baktı. Elvan işitme cihazı kullanıyordu ve gürültülü ortamlarda bazı konuşmaları anlamakta zorlanabiliyordu. Yüzleri göründüğünde, konuşma açık ve sırayla sürdüğünde daha rahat iletişim kuruyordu. O gün salonda onlarca öğrenci konuşuyor, hoparlör cızırtı çıkarıyordu. Elvan'ın yüzündeki rahatsızlığı ilk fark eden arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " oldu.\n\n“Sesi yükseltelim mi?” diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nElvan başını salladı. “Sesin daha yüksek olması her zaman daha anlaşılır olacağı anlamına gelmiyor,” dedi. “İpucunu yazılı da görebilsem iyi olur.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu yanıtı duyunca özür diledi. Yardım etmek istemişti ama neyin yararlı olacağını sormadan çözüm üretmeye çalışmıştı. Parkurun kurucusu olan Arman, “O zaman bütün soruları kâğıda yazalım,” dedi. Elvan gülümsedi: “Böylece yalnız benim için değil, sesin duyulmadığı durumlarda herkes için işe yarar.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Üç arkadaş bir masaya oturup ilk ipucunu yeniden tasarladı. Eskiden hoparlörden “Mavi kutunun altındaki haritayı bul” deniyordu. Şimdi aynı bilgi büyük yazıyla ekranda görünecek, yanında da basit bir kutu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr057_simge"
+        },
+        {
+          "t": "metin",
+          "v": " bulunacaktı. Arman çizdiği simgenin mavi kutuya benzemesini istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise rengin tek başına yeterli olmaması gerektiğini söyledi. Herkes renkleri aynı şekilde ayırt edemeyebilirdi. Kutunun üzerine bir yıldız işareti de eklediler.\n\nİkinci ipucunda yönler vardı: “Üç adım sağa, iki adım ileri.” Elvan, parkurun herkesin aynı şekilde hareket etmesini gerektirmemesi gerektiğini hatırlattı. Tekerlekli sandalye kullanan bir ziyaretçi veya kolayca yürüyemeyen biri için farklı ulaşım yolu sağlanmalıydı. Öğretmenleri parkuru okulun erişilebilir alanlarında kurmalarını istedi. Çocuklar ipuçlarını bir masadan diğerine geçerek bulabilecekleri, engel içermeyen bir düzen hazırladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hazırlık sırasında sınıf arkadaşlarından biri “Elvan için ayrı bir oyun yapalım,” dedi. Elvan buna pek sevinmedi. “Ayrı olmak istemiyorum,” dedi. “Aynı oyuna katılmak istiyorum. Hepimizin işine yarayan seçenekler olsa daha güzel.” Bu cümle "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " aklında kaldı. Bazen iyi niyetle hazırlanan ayrı çözümler de insanı grubun dışında hissettirebilirdi.\n\nÇocuklar bunun üzerine bir kulüp kurdu: Sessiz Mesajlar Kulübü. Ama adın yanlış anlaşılmaması için Elvan öneride bulundu. “Sessiz olmamız gerekmiyor,” dedi. “Bazen yazıyla, bazen simgeyle, bazen konuşarak iletişim kuracağız. Sessizlik yalnız bir seçenek.” Kulüp adını korudular ama altına şu cümleyi eklediler: Bir mesajın birden fazla yolu olabilir.\n\nKulübün ilk görevi, parkurdaki bütün ipuçlarını üç biçimde hazırlamaktı: Yazı, anlaşılır görsel işaret ve isteğe bağlı ses. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " her ipucunun kısa ve açık olmasına dikkat etti. Arman görselleri hazırladı. Elvan ise yazıların herkes tarafından rahatça okunup okunmadığını kontrol etti. Öğretmenleri, kullanıcılara tek bir yöntemi dayatmamalarını söyledi. Bazı kişiler işaret dilini kullanabilir, bazıları yazıyı veya konuşmayı tercih edebilirdi; herkesin iletişim tercihi aynı değildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Parkurun ilk denemesi beklenmedik biçimde başarısız oldu. Öğrenciler “yıldız işareti”ni görmek için uzun süre yanlış masalara baktı. Çünkü bir masanın üzerindeki yıldız çok küçüktü. Arman resmi büyüttü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yazının boyutunu artırdı. Elvan, “Biri yanlış yere gidince onun hatası demeden önce yönlendirmeyi kontrol edelim,” dedi. Bu söz yeni kulübün kuralı oldu.\n\nBilim şenliği günü salon kalabalıktı. Bir çocuk hoparlörün kapalı olduğunu sanarak görevliye seslendi. Görevli, yazılı ve görsel seçenekleri de gösterdi. Çocuk yazıyı okuyup ilerledi. Başka bir öğrenci işaretleri takip etmeyi tercih etti. Elvan ise arkadaşlarıyla birlikte parkurun tamamını bitirdi. En çok sevindiği şey herkesle aynı etkinlikte bulunmaktı.\n\nEtkinlik sonunda okul müdürü, parkuru hazırlayan çocukları tebrik etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " teşekkür ederken yalnız kendi adını söylemedi. “Bu parkuru Elvan'ın bize sorduğu bir sorudan yola çıkarak geliştirdik,” dedi. Elvan biraz mahcup oldu. “Aslında hepimiz farklı şeyleri fark ettik,” dedi. “Önemli olan birbirimizi dinlemekti.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenlikten sonra kulüp, okulun günlük duyurularını da gözden geçirmek istedi. Bazı duyurular yalnız sesli yapılıyordu. Öğrenciler okul yönetimine, önemli bilgilerin yazılı olarak da paylaşılmasını öneren bir mektup hazırladı. Yönetim bunu değerlendirmeye aldı. Elvan, bir oyun tasarımında başlayan küçük değişikliğin okul yaşamına uzanmasını sevdi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kulüp defterinin son sayfasına “"
+        },
+        {
+          "t": "vurgu",
+          "v": "İletişim yalnız ses değildir"
+        },
+        {
+          "t": "metin",
+          "v": ",” yazdı. Arman bunun yanına bir konuşma balonu, bir kâğıt ve iki el çizdi. Elvan ise bir kalem alıp üçünün altına küçük bir kalp koydu. Çünkü ona göre önemli olan mesajın hangi yolla geldiğinden önce, karşısındaki kişinin gerçekten kendisini duymaya ve anlamaya çalışmasıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " daha önce "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr057_erisilebilirlik"
+        },
+        {
+          "t": "metin",
+          "v": " sözcüğünü yalnız okulun girişindeki rampa ile ilişkilendiriyordu. Elvan'la konuştuktan sonra bir uygulamanın yazı büyüklüğünün, bir videodaki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr057_altyazi"
+        },
+        {
+          "t": "metin",
+          "v": ", bir kapının açılış yönünün de insanların katılımını etkileyebileceğini öğrendi. Ancak tek başına bütün sorunları çözecek fikirler bulduğunu düşünmek istemiyordu. Elvan neye ihtiyaç duyduğunu kendisi anlatabiliyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " görevi onun yerine konuşmak değil, birlikte tasarım yapmaktı. Bu farkı anlaması biraz zaman aldı. Önce sürekli “Senin için şunu yapalım” diyordu. Sonra “Sence bu nasıl?” diye sormaya başladı.\n\nKulüp kurulduğunda sınıftan bazı öğrenciler işaret dilini hemen öğrenip herkesle anlaşabileceklerini düşündü. Elvan onlara işaret dilinin kendi dil yapısı ve kuralları olan gerçek bir dil olduğunu, birkaç rastgele el hareketini ezberlemenin bütün dili öğrenmek anlamına gelmediğini anlattı. Öğretmenleri bu konuda güvenilir eğitim kaynakları ve uzmanlardan yararlanabileceklerini söyledi. Çocuklar o günkü bulmaca parkurunda herkesin anlayabileceği basit, önceden açıklanmış görsel simgeler kullanacaklardı. Bu işaretler bir işaret dilinin yerine geçtiği iddiasıyla sunulmayacaktı. Arman tasarladığı kartların altına kısa yazılı açıklamalar ekledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Elvan'ın en sevdiği ders aslında görsel sanatlardı. Küçük ayrıntıları ayırt etmede çok dikkatliydi. Parkur afişlerinin renk seçimini de o yapmak istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " önce bunun çok yorucu olabileceğini düşünerek işi kendisi üstlenmeye kalkmıştı. Elvan, “Ben çizim yapmayı seviyorum; bunu bana bırak,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " o anda yardım etmek isterken arkadaşının yeteneğini görmezden gelebileceğini fark etti. Elvan parlak turkuazı ve koyu laciverti yan yana kullanarak okunaklı bir işaret sistemi hazırladı. Ardından farklı ışıklarda nasıl göründüğünü kontrol ettiler. Tasarımın güzel görünmesi kadar anlaşılır olması da önemliydi.\n\nArman'ın ilk hazırladığı sesli ipucu “Haritanı kap, yıldızı bul” diye başlıyordu. Fakat metnin ekrandaki yazılı karşılığı yanlışlıkla “Haritayı kapat” olarak yazılmıştı. Bu küçük fark, oyunun bütün akışını değiştirdi. “Haritayı kap” ifadesindeki “kapmak” almak anlamına gelirken, “kapatmak” kapalı hâle getirmek demekti. Elvan bu yanlışlığı fark etti. Sınıfta kelimelerin yakın sesli olmasına rağmen farklı anlamlar taşıyabileceğini konuştular. Aynı mesajın farklı biçimlerde verildiğinde içeriğinin değişmemesi gerektiğini anladılar. Bundan sonra sesli ve yazılı ipuçlarını eşleştirerek kontrol edeceklerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk prova günü "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çok heyecanlıydı. Salonun önüne gelen üçüncü sınıf öğrencileri yazıyı okumaya başladığında biri satırı kaybetti. Arman, kartların yüksekliğini küçüklere göre ayarlamayı unutmuştu. Öğretmenleri masa düzenini değiştirdi, yazıların görüş alanında kalmasını sağladı. Bir başka öğrenci ise ipuçlarını okumak yerine simgeler üzerinden gitmeyi tercih etti. Elvan buna sevindi. Seçeneklerin amacı herkesi aynı yola zorlamak değildi. Kimi çocuk okumaya daha yeni alışmış, kimi daha uzun metinleri rahatça anlayabilir durumdaydı. Parkurun farklı yollar sunması öğrenmeyi destekliyordu.\n\nİkinci provada işler daha karışıktı. Hoparlör aynı anda iki ipucu seslendirdi. Gürültü artınca yalnız Elvan değil, başka öğrenciler de ne dendiğini anlayamadı. Arman önce ses düzeyini artırmak istedi. Elvan ona ilk gün söylediklerini hatırlattı: “Sesin yüksek olması her zaman netlik sağlamıyor.” Bu kez hoparlörün ipuçlarını sırayla vermesini ve yazıyla eş zamanlı görünmesini sağladılar. Görevler tamamlandığında küçük bir onay işareti belirecekti. Öğrenciler neyi yapıp yapmadıklarını daha kolay takip etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüp üyeleri şenlik öncesinde okul rehberlik servisiyle de görüştü. Onlara bir etkinliği daha kapsayıcı hâle getirmeye çalıştıklarını anlattılar. Rehber öğretmen, farklı ihtiyaçları olan öğrencilerin deneyimlerini tahmin etmek yerine görüşlerini almanın önemli olduğunu söyledi. Her öğrencinin kendisini nasıl tanımladığına, hangi desteği istediğine saygı göstermelerini önerdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu görüşmeden sonra tasarım ekibine daha fazla öğrenci davet etti. Çünkü bir etkinliği “herkes için” hazırladığını söylemek kolaydı; gerçekten kimin katılabildiğini görmek daha çok emek istiyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " en zorlandığı an, bir arkadaşının Elvan hakkında “Ona ayrıcalık tanıyorsunuz,” demesiydi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kızdı, fakat hemen tartışmaya başlamadı. Elvan söz aldı: “Yazılı ipucu yalnız benim işime yaramıyor. Hepiniz kullanabiliyorsunuz. Bazılarımızın erişebilmesi içinse özellikle gerekli.” Öğretmenleri, herkese aynı şeyi vermekle herkesin katılımını mümkün kılmak arasında fark olabileceğini anlattı. Diğer öğrenci bir süre düşündü, sonra “Ben de gürültüden bazı sözleri kaçırıyorum,” dedi. Bu konuşma, kulüpteki herkesin farklı ihtiyaçları olabileceğini göstermişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenliğin yapılacağı sabah yağmur yağdı. Planlanan açık hava masaları içeri taşındı. Bu kez sınıfın dar koridorlarında kalabalık oluşabilirdi. Arman parkuru yeniden çizdi, geçişler için geniş alan bıraktı. Öğretmenlerin yönlendirmesine uyup acil çıkışları ve geçiş yollarını boş tuttular. Elvan, istasyonların numaralarını daha büyük yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bekleyen öğrenciler için sıranın nerede başlayacağını gösteren bir kart hazırladı. Böylece mekân değişince yalnız resimleri değil, bütün deneyimin akışını yeniden düşünmeleri gerektiğini öğrendiler.\n\nŞenlikten bir gün önce bütün ipuçlarını sessizce deneyen bir grup oldu. Herkes hoparlör kapalıyken oyunu tamamlamaya çalıştı. İpucu kartları ve simgeler yeterince açık mıydı? İkinci turda yalnız sesli anlatımı denediler. Bu deneme görsel ve sesli anlatımların hangilerinde eksik bulunduğunu gösterdi. Arman bazı kelimeleri yanlış telaffuz ettiğini fark etti, düzeltti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir resimde kullanılan okun yönüyle yazılı talimatın uyuşmadığını gördü. Elvan ise görevlerin tamamlanması için zaman sınırını biraz artırmalarını önerdi. Amaç çocukları hızlıca bitirmeye zorlamak değildi; düşünmelerine alan tanımaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Etkinlik sırasında küçük bir çocuk ipucu kartındaki kalp resmine bakıp “Bu sevgi görevi mi?” diye sordu. Oysa kartın anlamı, yardım masasına gitmekti. Elvan resmi değiştirdi. Bu olay, bir simgenin herkes için aynı şeyi çağrıştırmayabileceğini gösterdi. İyi bir simge açık, tutarlı ve gerektiğinde yazıyla desteklenmiş olmalıydı. Kulübün tasarımlarında kalp artık yardım masası yerine arkadaşlık bölümünde kullanıldı. Görevli masasına ise belirgin bir “i” bilgi işareti kondu.\n\nŞenlik bittiğinde Elvan'ı tebrik edenler yalnız işitme farklılığından söz ediyordu. Oysa Elvan'ın en çok emek verdiği şey afişlerin tasarımıydı. “Renkleri beğendiniz mi?” diye sordu gururla."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr057_yuzu_aydinlandi"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", iyi niyetli insanların bazen bir arkadaşını yalnız tek bir özelliğiyle tanımlayabildiğini düşündü. Elvan işitme cihazı kullanan bir öğrenciydi, evet; ama aynı zamanda resim yapmayı seven, komik fıkralar anlatan, yarışma bulmacalarını hızla çözen bir arkadaşlarıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kısa bir süre sonra okulun aylık bülteninde şenlikle ilgili yazı yayımlandı. Yazının başlığı “Sessiz Çocuğun Büyük Başarısı”ydı. Elvan bu başlığı sevmedi; kendini sessiz bir çocuk olarak görmüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " birlikte editöre yazdıkları nazik bir notta başlığın neden uygun gelmediğini anlattı. Yeni başlık “Herkes İçin Bulmaca Parkuru” oldu. Elvan, kendi hikâyesinin nasıl anlatılacağı konusunda da söz sahibi olabildiği için mutluydu. Kulüp bu değişimi bir ders olarak not etti: İyi niyetli tanımlar bile birinin gerçek kişiliğini tam yansıtmayabilir. "
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nOkul yönetimi önemli duyuruların yazılı paylaşılması önerisini incelerken öğrencileri toplantıya çağırdı. Elvan, yalnızca sesli yapılan değişikliklerin bazı öğrenciler tarafından kaçırılabileceğini anlattı. Arman, yazılı duyurular için düzenli bir pano ve dijital ekran örneği hazırladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", uzun metinlerin önemli bilgilerini kısa maddelerle sunmanın yararlı olabileceğini söyledi. Yönetim, mevcut sistemlere uygun ve sürdürülebilir çözümleri değerlendireceğini belirtti. Çocuklar bütün kararların hemen uygulanmayacağını biliyordu ama görüşlerinin ciddiye alınması onları sevindirmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Elvan'ın ablası akşam yemeğinde ona en çok neyi sevdiğini sordu. Elvan, “Bütün yazıları ben düzenledim,” dedi. Ablası, resimlerini görmek istedi. İkisi tablet üzerinde afişleri açıp karşılaştırdı. Elvan ilk çizimlerde bazı renklerin birbirinden yeterince ayrılmadığını, son çizimlerde ise simgelerin daha net olduğunu gösterdi. Ablası “Gerçek tasarım işi yapmışsın,” dedi. Elvan'ın yüzü aydınlandı. Onun için en güzel övgü, tek başına bir engeli aştığının söylenmesi değil, yaptığı işin niteliğinin fark edilmesiydi.\n\nErtesi hafta kulüp üyeleri yeni bir macera oyunu tasarlamaya başladı. Bu kez okul bahçesindeki ağaçların türlerini bulacak, yaprak şekillerini karşılaştıracak ve sonunda ortak bir harita oluşturacaklardı. Elvan, her ağacın yanında yazılı bilgi ve çizim bulunmasını önerdi. Arman, isteyenlerin kısa sesli açıklamaları dinleyebileceğini söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " de parkurun güzergâhını okul görevlileriyle görüşerek herkesin erişebileceği şekilde belirlemeyi üstlendi. Bir önceki şenlikte öğrendiklerini yeni projeye aktarıyorlardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüp toplantısının sonunda öğretmenleri, “Bir yıl önce bu kadar ayrıntıyı düşünür müydünüz?” diye sordu. Üçü de başını salladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Hayır,” dedi. “Eskiden bir oyun tasarlamak için önce soruyu, sonra cevabı yazmak yeterli sanıyordum.” Elvan, “Şimdi kimin nasıl kullanacağını da düşünüyoruz,” diye ekledi. Arman son sözü söyledi: “Ve bir şeyi anlamadığımızda tahmin yürütmek yerine soruyoruz.” Bu üç cümle kulübün panosunda yerini aldı.\n\nYeni oyun duyurulduğunda başka sınıflardan öğrenciler de kulübe katılmak istedi. Her biri farklı bir beceri getirdi. Bir öğrenci kısa metinleri düzenlemede iyiydi, biri bitkileri tanıyordu, biri de insanların hangi işaretleri daha kolay fark ettiğini gözlemliyordu. Elvan, herkesin katkısını aynı çizelgede görmekten hoşlandı. İlk şenlikte yalnız bir ipucunun yazılı olmasını istemişti; şimdi bütün etkinliklerin daha anlaşılır hâle gelmesine yardım ediyordu. Ama bunu tek başına başardığını düşünmüyordu. Arkadaşlarıyla birlikte çalışmış, onların fikirlerini dinlemiş, gerektiğinde kendi önerilerini değiştirmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüp adını ilk duyduklarında “Sessiz Mesajlar” kulağa tuhaf gelmişti. Şimdi ise herkes o iki sözcüğün arkasında daha zengin bir düşünce olduğunu biliyordu. Bazen bir resim, bazen kısa bir cümle, bazen bir hareket, bazen bir ses işe yarıyordu. Önemli olan herkesin anlamaya ve anlaşılmaya katılabilmesiydi. Elvan son afişin köşesine küçük bir not koydu: “İyi iletişim, karşılıklı bir yolculuktur.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu cümleyi okuduğunda başını salladı. Artık arkadaşlarına yalnız yardım etmeyi değil, onlarla birlikte karar vermeyi de öğrendiğini hissediyordu. Bu gerçekten güzeldi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "- Kavramlar: Erişilebilirlik, iletişim biçimleri, görsel işaret, alternatif sunum. - Dil: İletişim–haberleşme, simge–işaret; eş anlamlı sözcükler ve bağlam. - Temsil notu: İşitme farklılığı olan herkesin iletişim tercihi ve deneyimi aynı değildir."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr057_yuzu_aydinlandi": [
+      {
+        "t": "metin",
+        "v": "Arkadaşları onun çizimlerini fark ettikçe yüzü aydınlandı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Elvan'ın kullandığı cihaz hangisidir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İşitme cihazı"
+        },
+        {
+          "id": "B",
+          "metin": "Tablet"
+        },
+        {
+          "id": "C",
+          "metin": "Hoparlör"
+        },
+        {
+          "id": "D",
+          "metin": "Kamera"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Elvan, gürültülü ortamlarda konuşmaları anlamak için işitme cihazı kullanıyordu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 9,
+      "metin": "Yazılı ipuçlarının neden herkese yararlı olduğu söylendi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Gürültüde kaçırılabilecek bilgiye yazıdan da ulaşılabildiği için"
+        },
+        {
+          "id": "B",
+          "metin": "Hoparlör bozulduğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Yazı daha ucuz olduğu için"
+        },
+        {
+          "id": "D",
+          "metin": "Kimse sesi duymadığı için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Yazılı bilgi, sesin duyulmadığı durumda herkesin işine yarar."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 5,
+      "metin": "Kulübün “İletişim yalnız ses değildir” sözü neyi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İletişimin yazı, simge ve yüz ifadesi gibi birçok yolla kurulabileceğini"
+        },
+        {
+          "id": "B",
+          "metin": "Sesin hiç kullanılmaması gerektiğini"
+        },
+        {
+          "id": "C",
+          "metin": "Kulübün sessiz kalması gerektiğini"
+        },
+        {
+          "id": "D",
+          "metin": "Hoparlörün kapatılması gerektiğini"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Mesaj birden fazla yoldan iletilebilir; önemli olan karşılıklı anlamadır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "Metinde geçen simge ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir anlamı ya da kavramı temsil eden işaret"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür hoparlör"
+        },
+        {
+          "id": "C",
+          "metin": "Bir yarışma"
+        },
+        {
+          "id": "D",
+          "metin": "Bir oyun masası"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Simge, bir şeyi görsel olarak temsil eden işarettir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr057_erisilebilirlik",
+        "tur": "kelime",
+        "yazim": "erişilebilirlik",
+        "anlam": "Herkesin kullanabileceği biçimde düzenlenmiş olma durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_kapsayicilik",
+        "tur": "kelime",
+        "yazim": "kapsayıcılık",
+        "anlam": "Herkesi içine alabilen, dışlamayan yaklaşım.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_karmasiklik",
+        "tur": "kelime",
+        "yazim": "karmaşıklık",
+        "anlam": "Karışık ve anlaşılması zor olma durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_simge",
+        "tur": "kelime",
+        "yazim": "simgesi",
+        "anlam": "Bir anlamı ya da kavramı temsil eden işaret.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_isaret",
+        "tur": "kelime",
+        "yazim": "işaret",
+        "anlam": "Bir şeyi belirtmek için kullanılan görünür iz ya da şekil.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_altyazi",
+        "tur": "kelime",
+        "yazim": "altyazının",
+        "anlam": "Filmde konuşmaların ekranın altına yazılan karşılığı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_ceviri_yazisi",
+        "tur": "kelime",
+        "yazim": "çeviri yazısı",
+        "anlam": "Bir metnin başka bir dile çevrilmiş yazılı hâli.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_yuzu_aydinlandi",
+        "tur": "deyim",
+        "yazim": "yüzü aydınlandı",
+        "anlam": "Sevinçle yüzü gülmek, mutlu olmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_yuzu_dusmek",
+        "tur": "deyim",
+        "yazim": "yüzü düşmek",
+        "anlam": "Üzülüp hüzünlenmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr057_yuzu_gulmek",
+        "tur": "deyim",
+        "yazim": "yüzü gülmek",
+        "anlam": "Sevinçli görünmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr057_erisilebilirlik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr057_erisilebilirlik"
+          },
+          {
+            "girdi": "hr057_kapsayicilik"
+          },
+          {
+            "girdi": "hr057_karmasiklik"
+          }
+        ]
+      },
+      {
+        "ad": "hr057_simge",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr057_simge"
+          },
+          {
+            "girdi": "hr057_isaret"
+          }
+        ]
+      },
+      {
+        "ad": "hr057_altyazi",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr057_altyazi"
+          },
+          {
+            "girdi": "hr057_ceviri_yazisi"
+          }
+        ]
+      },
+      {
+        "ad": "hr057_yuzu_aydinlandi",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr057_yuzu_aydinlandi"
+          },
+          {
+            "girdi": "hr057_yuzu_dusmek"
+          },
+          {
+            "girdi": "hr057_yuzu_gulmek"
+          }
+        ]
+      }
+    ]
+  }
+}

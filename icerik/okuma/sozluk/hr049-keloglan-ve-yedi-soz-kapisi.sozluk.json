@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr049_esik",
+      "tur": "kelime",
+      "yazim": "eşiğin",
+      "anlam": "Kapının alt kısmındaki, geçiş yapılan eşik çıkıntısı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr049_kapi",
+      "tur": "kelime",
+      "yazim": "kapı",
+      "anlam": "Bir yerin girişini kapatıp açan bölüm.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr049_heybe",
+      "tur": "kelime",
+      "yazim": "heybesine",
+      "anlam": "Yolculukta eşya taşımak için omuza asılan torba.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr049_canta",
+      "tur": "kelime",
+      "yazim": "çanta",
+      "anlam": "Eşya koymak için kullanılan taşıma kabı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr049_sepet",
+      "tur": "kelime",
+      "yazim": "sepet",
+      "anlam": "Ürün taşımak için örülmüş kap.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr049_kurnazlik",
+      "tur": "kelime",
+      "yazim": "kurnazlıkla",
+      "anlam": "Dürüst olmayan yollarla çıkar sağlama becerisi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr049_hile",
+      "tur": "kelime",
+      "yazim": "hile",
+      "anlam": "Kuralları gizlice çiğneyerek sağlanan çıkar.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr049_durustluk",
+      "tur": "kelime",
+      "yazim": "dürüstlük",
+      "anlam": "Doğru ve açık davranma.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr049_kulak_vermek",
+      "tur": "deyim",
+      "yazim": "kulak vermek",
+      "anlam": "Dikkatle dinlemek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr049_kulak_asmak",
+      "tur": "deyim",
+      "yazim": "kulak asmamak",
+      "anlam": "Söylenene önem vermeyip dinlememek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr049_kulagina_kupe",
+      "tur": "deyim",
+      "yazim": "kulağına küpe olmak",
+      "anlam": "Söylenen bir sözü ders alıp unutmamak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr049_esik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr049_esik"
+        },
+        {
+          "girdi": "hr049_kapi"
+        }
+      ]
+    },
+    {
+      "ad": "hr049_heybe",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr049_heybe"
+        },
+        {
+          "girdi": "hr049_canta"
+        },
+        {
+          "girdi": "hr049_sepet"
+        }
+      ]
+    },
+    {
+      "ad": "hr049_kurnazlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr049_kurnazlik"
+        },
+        {
+          "girdi": "hr049_hile"
+        },
+        {
+          "girdi": "hr049_durustluk"
+        }
+      ]
+    },
+    {
+      "ad": "hr049_kulak_vermek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr049_kulak_vermek"
+        },
+        {
+          "girdi": "hr049_kulak_asmak"
+        },
+        {
+          "girdi": "hr049_kulagina_kupe"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr064_simetri",
+      "tur": "kelime",
+      "yazim": "simetri",
+      "anlam": "Bir şeklin iki yarısının bir eksene göre birbirinin aynısı olması.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr064_denge",
+      "tur": "kelime",
+      "yazim": "denge",
+      "anlam": "Ağırlıkların ya da öğelerin birbirini dengelediği durum.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr064_duzensizlik",
+      "tur": "kelime",
+      "yazim": "düzensizlik",
+      "anlam": "Bir şeyin ölçüsüz ve dengesiz olması.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr064_avlu",
+      "tur": "kelime",
+      "yazim": "avlu",
+      "anlam": "Bir yapının çevresindeki açık alan.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr064_bahce",
+      "tur": "kelime",
+      "yazim": "bahçe",
+      "anlam": "Çevresi çitle ya da duvarla çevrili, bitki yetiştirilen alan.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr064_cati",
+      "tur": "kelime",
+      "yazim": "çatı",
+      "anlam": "Bir yapının üst örtüsü.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr064_karo",
+      "tur": "kelime",
+      "yazim": "karoları",
+      "anlam": "Duvar ya da zemin kaplamada kullanılan kare ya da çokgen çini parça.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr064_cini",
+      "tur": "kelime",
+      "yazim": "çini",
+      "anlam": "Pişirilmiş kilin üzerine desen işlenip sırlanarak yapılan süs malzemesi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr064_tugla",
+      "tur": "kelime",
+      "yazim": "tuğla",
+      "anlam": "Yapı yapımında kullanılan pişmiş kil blok.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr064_simetri",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr064_simetri"
+        },
+        {
+          "girdi": "hr064_denge"
+        },
+        {
+          "girdi": "hr064_duzensizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr064_avlu",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr064_avlu"
+        },
+        {
+          "girdi": "hr064_bahce"
+        },
+        {
+          "girdi": "hr064_cati"
+        }
+      ]
+    },
+    {
+      "ad": "hr064_karo",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr064_karo"
+        },
+        {
+          "girdi": "hr064_cini"
+        },
+        {
+          "girdi": "hr064_tugla"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

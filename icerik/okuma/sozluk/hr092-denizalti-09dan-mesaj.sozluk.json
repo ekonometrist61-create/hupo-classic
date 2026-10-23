@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr092_sinyal",
+      "tur": "kelime",
+      "yazim": "sinyallerin",
+      "anlam": "Bilgi taşıyan dalga ya da işaret.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr092_iletim",
+      "tur": "kelime",
+      "yazim": "iletim",
+      "anlam": "Bilginin bir yerden başka bir yere aktarılması.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr092_gurultu_s",
+      "tur": "kelime",
+      "yazim": "gürültü",
+      "anlam": "Bilgiyi bozan istenmeyen ses ya da veri.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr092_hipotez",
+      "tur": "kelime",
+      "yazim": "hipotez",
+      "anlam": "Sınanabilir açıklama önerisi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr092_varsayim_h",
+      "tur": "kelime",
+      "yazim": "varsayım",
+      "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr092_kesin_sonuc",
+      "tur": "kelime",
+      "yazim": "kesin sonuç",
+      "anlam": "Kanıtlanmış, değişmeyen sonuç.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr092_yuz",
+      "tur": "deyim",
+      "yazim": "yüzünü buruşturdu",
+      "anlam": "Hoşnutsuzluk ya da tiksinti göstermek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr092_kaslarini_catmak_b",
+      "tur": "deyim",
+      "yazim": "kaşlarını çatmak",
+      "anlam": "Hoşnutsuzluğunu yüzünü buruşturarak belli etmek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr092_yuzu_gulmek",
+      "tur": "deyim",
+      "yazim": "yüzü gülmek",
+      "anlam": "Sevinçle, mutlulukla gülümsemek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr092_sinyal",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr092_sinyal"
+        },
+        {
+          "girdi": "hr092_iletim"
+        },
+        {
+          "girdi": "hr092_gurultu_s"
+        }
+      ]
+    },
+    {
+      "ad": "hr092_hipotez",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr092_hipotez"
+        },
+        {
+          "girdi": "hr092_varsayim_h"
+        },
+        {
+          "girdi": "hr092_kesin_sonuc"
+        }
+      ]
+    },
+    {
+      "ad": "hr092_yuz",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr092_yuz"
+        },
+        {
+          "girdi": "hr092_kaslarini_catmak_b"
+        },
+        {
+          "girdi": "hr092_yuzu_gulmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

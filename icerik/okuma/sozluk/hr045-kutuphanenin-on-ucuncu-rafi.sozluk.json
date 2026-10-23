@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr045_emanet",
+      "tur": "kelime",
+      "yazim": "emanet",
+      "anlam": "Birine geçici olarak bırakılan, korunması istenen şey.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_odunc",
+      "tur": "kelime",
+      "yazim": "ödünç",
+      "anlam": "Bir şeyi geri verilmek üzere almak ya da vermek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_mulk",
+      "tur": "kelime",
+      "yazim": "mülk",
+      "anlam": "Bir kişinin sahip olduğu şey.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_muhur",
+      "tur": "kelime",
+      "yazim": "mühür",
+      "anlam": "Bir belgenin resmîliğini gösteren damga.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_damga",
+      "tur": "kelime",
+      "yazim": "damga",
+      "anlam": "Bir şeyin üzerine basılan iz ya da işaret.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_imza",
+      "tur": "kelime",
+      "yazim": "imza",
+      "anlam": "Bir kişinin adını kendi el yazısıyla yazması.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_katalog",
+      "tur": "kelime",
+      "yazim": "kataloglamak",
+      "anlam": "Kitapların bilgilerinin düzenli bir listede tutulması.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_liste",
+      "tur": "kelime",
+      "yazim": "liste",
+      "anlam": "Sırayla yazılmış adlar ya da kayıtlar.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_kunye",
+      "tur": "kelime",
+      "yazim": "künye",
+      "anlam": "Bir kitabın yazar, yayınevi ve yıl gibi kimlik bilgileri.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_gozleri_doldu",
+      "tur": "deyim",
+      "yazim": "gözleri doldu",
+      "anlam": "Duygulanıp ağlamaklı olmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_gozleri_parladi",
+      "tur": "deyim",
+      "yazim": "gözleri parladı",
+      "anlam": "Çok sevinmek ya da heyecanlanmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr045_gozu_karardi",
+      "tur": "deyim",
+      "yazim": "gözü karardı",
+      "anlam": "Öfkelenip kendini kaybetmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr045_emanet",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr045_emanet"
+        },
+        {
+          "girdi": "hr045_odunc"
+        },
+        {
+          "girdi": "hr045_mulk"
+        }
+      ]
+    },
+    {
+      "ad": "hr045_muhur",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr045_muhur"
+        },
+        {
+          "girdi": "hr045_damga"
+        },
+        {
+          "girdi": "hr045_imza"
+        }
+      ]
+    },
+    {
+      "ad": "hr045_katalog",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr045_katalog"
+        },
+        {
+          "girdi": "hr045_liste"
+        },
+        {
+          "girdi": "hr045_kunye"
+        }
+      ]
+    },
+    {
+      "ad": "hr045_gozleri_doldu",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr045_gozleri_doldu"
+        },
+        {
+          "girdi": "hr045_gozleri_parladi"
+        },
+        {
+          "girdi": "hr045_gozu_karardi"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

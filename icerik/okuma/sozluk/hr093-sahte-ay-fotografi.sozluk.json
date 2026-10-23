@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr093_iddia",
+      "tur": "kelime",
+      "yazim": "iddiayı",
+      "anlam": "Doğruluğu kanıtlanması gereken, ileri sürülen görüş.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr093_savunu",
+      "tur": "kelime",
+      "yazim": "savunu",
+      "anlam": "Bir görüşü destekleyen açıklama.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr093_kanit_i",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr093_teleskop",
+      "tur": "kelime",
+      "yazim": "teleskobundan",
+      "anlam": "Uzak gök cisimlerini büyüterek gösteren optik araç.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr093_durbun",
+      "tur": "kelime",
+      "yazim": "dürbün",
+      "anlam": "Uzaktaki nesneleri yakın gösteren optik araç.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr093_mikroskop",
+      "tur": "kelime",
+      "yazim": "mikroskop",
+      "anlam": "Çok küçük nesneleri büyüterek gösteren araç.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr093_dalga",
+      "tur": "deyim",
+      "yazim": "dalga geçmek",
+      "anlam": "Alay etmek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr093_alay_etmek",
+      "tur": "deyim",
+      "yazim": "alay etmek",
+      "anlam": "Bir kişiyi küçümseyerek gülmek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr093_ciddiye_almak",
+      "tur": "deyim",
+      "yazim": "ciddiye almak",
+      "anlam": "Önem vermek, dikkate almak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr093_iddia",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr093_iddia"
+        },
+        {
+          "girdi": "hr093_savunu"
+        },
+        {
+          "girdi": "hr093_kanit_i"
+        }
+      ]
+    },
+    {
+      "ad": "hr093_teleskop",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr093_teleskop"
+        },
+        {
+          "girdi": "hr093_durbun"
+        },
+        {
+          "girdi": "hr093_mikroskop"
+        }
+      ]
+    },
+    {
+      "ad": "hr093_dalga",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr093_dalga"
+        },
+        {
+          "girdi": "hr093_alay_etmek"
+        },
+        {
+          "girdi": "hr093_ciddiye_almak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

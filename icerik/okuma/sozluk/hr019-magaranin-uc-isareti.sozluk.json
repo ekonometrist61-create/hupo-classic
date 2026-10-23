@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr019_asindirmak",
+      "tur": "kelime",
+      "yazim": "aşındırdığı",
+      "anlam": "Su, rüzgâr gibi etkenlerle yüzeyi yavaş yavaş aşındırmak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr019_asinmak",
+      "tur": "kelime",
+      "yazim": "aşınmak",
+      "anlam": "Zamanla eskiyip incelmek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr019_yontmak",
+      "tur": "kelime",
+      "yazim": "yontmak",
+      "anlam": "Taşı istenen biçime getirmek için şekillendirmek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr019_katman",
+      "tur": "kelime",
+      "yazim": "katmanlarını",
+      "anlam": "Üst üste dizilmiş tabakaların her biri.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr019_tabaka",
+      "tur": "kelime",
+      "yazim": "tabaka",
+      "anlam": "Bir şeyin üst üste duran ince kısmı.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr019_yuzey",
+      "tur": "kelime",
+      "yazim": "yüzey",
+      "anlam": "Bir şeyin dış kısmı.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr019_buyutec",
+      "tur": "kelime",
+      "yazim": "büyüteci",
+      "anlam": "Küçük şeyleri büyütüp göstermeye yarayan mercek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr019_dürbün",
+      "tur": "kelime",
+      "yazim": "dürbün",
+      "anlam": "Uzaktaki şeyleri yakından görmeye yarayan araç.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr019_pusula",
+      "tur": "kelime",
+      "yazim": "pusula",
+      "anlam": "Yönü gösteren araç.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr019_asindirmak",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr019_asindirmak"
+        },
+        {
+          "girdi": "hr019_asinmak"
+        },
+        {
+          "girdi": "hr019_yontmak"
+        }
+      ]
+    },
+    {
+      "ad": "hr019_katman",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr019_katman"
+        },
+        {
+          "girdi": "hr019_tabaka"
+        },
+        {
+          "girdi": "hr019_yuzey"
+        }
+      ]
+    },
+    {
+      "ad": "hr019_buyutec",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr019_buyutec"
+        },
+        {
+          "girdi": "hr019_dürbün"
+        },
+        {
+          "girdi": "hr019_pusula"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr062_algoritma",
+      "tur": "kelime",
+      "yazim": "algoritma",
+      "anlam": "Bir sorunu çözmek için adım adım izlenen kurallar dizisi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr062_yontem",
+      "tur": "kelime",
+      "yazim": "yöntem",
+      "anlam": "Bir işi yapmak için izlenen yol.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr062_rastgelelik",
+      "tur": "kelime",
+      "yazim": "rastgelelik",
+      "anlam": "Kurala bağlı olmadan, tesadüfen gerçekleşme durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr062_sesteslik",
+      "tur": "kelime",
+      "yazim": "sesteşlik",
+      "anlam": "Yazılışı ve sesi aynı, anlamı farklı sözcüklerin durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr062_esanlamlilik",
+      "tur": "kelime",
+      "yazim": "eş anlamlılık",
+      "anlam": "Anlamları aynı ya da çok yakın sözcükler arasındaki ilişki.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr062_zitlik",
+      "tur": "kelime",
+      "yazim": "zıtlık",
+      "anlam": "Anlamları birbirinin karşıtı olan sözcükler arasındaki ilişki.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr062_dogrulama",
+      "tur": "kelime",
+      "yazim": "doğrulama",
+      "anlam": "Bir bilginin doğruluğunu kontrol etme işi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr062_kontrol",
+      "tur": "kelime",
+      "yazim": "kontrol",
+      "anlam": "Bir şeyin istenen durumda olup olmadığına bakma.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr062_varsayim",
+      "tur": "kelime",
+      "yazim": "varsayım",
+      "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr062_algoritma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr062_algoritma"
+        },
+        {
+          "girdi": "hr062_yontem"
+        },
+        {
+          "girdi": "hr062_rastgelelik"
+        }
+      ]
+    },
+    {
+      "ad": "hr062_sesteslik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr062_sesteslik"
+        },
+        {
+          "girdi": "hr062_esanlamlilik"
+        },
+        {
+          "girdi": "hr062_zitlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr062_dogrulama",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr062_dogrulama"
+        },
+        {
+          "girdi": "hr062_kontrol"
+        },
+        {
+          "girdi": "hr062_varsayim"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

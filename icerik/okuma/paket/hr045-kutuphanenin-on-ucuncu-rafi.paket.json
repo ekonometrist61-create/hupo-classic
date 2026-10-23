@@ -1,0 +1,1039 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr045-kutuphanenin-on-ucuncu-rafi",
+    "baslik": "Kütüphanenin On Üçüncü Rafı",
+    "tur": "gizem",
+    "konu": "kayit_emanet",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D4"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "gizem",
+        "okuma_kitap"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D4"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "emanet_hr045",
+          "tur": "lexeme",
+          "etiket": "emanet",
+          "yuva": "hr045_emanet",
+          "islev": "first_hint"
+        },
+        {
+          "id": "muhur_hr045",
+          "tur": "lexeme",
+          "etiket": "mühür",
+          "yuva": "hr045_muhur",
+          "islev": "application"
+        },
+        {
+          "id": "katalog_hr045",
+          "tur": "lexeme",
+          "etiket": "katalog",
+          "yuva": "hr045_katalog",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr045",
+          "tur": "idiom",
+          "etiket": "Gözleri dolmak",
+          "yuva": "hr045_gozleri_doldu",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr045",
+          "tur": "concept",
+          "etiket": "Kayıt ve kanıt ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 2039,
+        "tahmini_sure_dk": 20,
+        "sayfa_sayisi": 19,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 50,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Kitaplığın listesinde bir raf eksik. Kayıp bir raf mı, yoksa başka bir hikâye mi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-045"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", okul kütüphanesinin yeni düzenleneceğini duyunca ilk gönüllülerden biri oldu. Kitapları taşımak yerine etiketlerini kontrol etmeyi seviyordu. Çünkü bir kitabın nerede durduğunu bilmek, bazen içindekileri okumak kadar ilginçti.\n\nKütüphane görevlisi Sevim Hanım, rafların yenileneceğini, eski kayıtların bilgisayara aktarılacağını anlattı. Ferit bu görevi önce sıkıcı bulmuştu. Okul gazetesinde gizemli olaylar hakkında yazdığı için kendisine daha heyecanlı bir iş verilmesini bekliyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr045_katalog"
+        },
+        {
+          "t": "metin",
+          "v": "rın da şaşırtıcı sorular doğurabileceğini düşünüyordu. \"Bir kitap yanlış raftaysa onu arayan biri bulamaz,\" dedi. \"Bazen doğru hikâyeye ulaşmak, doğru etiketten geçer.\" Ferit gülerek \"Peki bugün bir sır çıkarsa haber ver,\" diye karşılık verdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onun bu sözünü gün boyunca hatırlayacaktı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ve arkadaşı Ferit'in işi, kitapların sırtındaki numaraları raf listesindeki yerleriyle karşılaştırmaktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk on iki rafı hızla kontrol etti. Ancak listenin sonraki sayfasında tuhaf bir boşluk vardı: Raf 12'nin ardından Raf 14 geliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"On üçüncü raf nerede?\" diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nFerit omuz silkti. \"Belki uğursuz saydıkları için atlamışlardır.\"\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsemedi. Bir okul kütüphanesinin böyle bir nedenle raf atlamasını mantıklı bulmuyordu. Sevim Hanım da şaşırdı. \"Eskiden burada ahşap dolaplar vardı,\" dedi. \"Yeni sistem kurulurken numaralar değişmiş olabilir. Eski defterlere bakalım.\"\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " eski defterin ilk sayfasında bir tarih aradı. Dış kapağın üzerinde yıl yazmıyordu; ama son sayfada mürekkebi biraz solmuş bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr045_muhur"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Ferit büyüteci getirince rakamlar daha kolay okunur oldu. \"Demek bu kayıtlar en azından o tarihte kullanılıyormuş,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". Sonra planın üzerine güncel kütüphane çizimini yerleştirdi. İki planın giriş kapıları aynı yerdeydi fakat masa ve dolapların konumları farklıydı. Ferit, \"On üçüncü rafın yerinde şimdi koltuk var,\" diye şaşırdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bir odanın değişmesi, içindeki hikâyelerin de değiştiği anlamına gelmez,\" dedi. Bu cümleyi tam olarak niçin söylediğini kendisi de bilmiyordu. Belki yıllardır aynı odada başka başka çocukların kitap okuduğunu düşündüğü içindi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk defterde rafların el çizimi bir planı vardı. Planın ortasında küçük bir dolap görünüyordu. Yanına yalnızca "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr045_emanet"
+        },
+        {
+          "t": "metin",
+          "v": " yazılmıştı. Dolabın numarası ise silinmişti. Ferit, \"Bütün gizem bu kelimede,\" diye fısıldadı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise hemen sonuç çıkarmadı. Emanet, birine geçici olarak bırakılan şey demekti; ancak burada neyin emanet edildiği belli değildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün iki arkadaş dijital katalogla eski kayıtları karşılaştırdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir kitap başlığının iki defterde farklı biçimde yazıldığını fark etti. Birinde Yolun Rengi, diğerinde Yolların Rengi vardı. Ferit aynı kitap sanıp numarayı işaretleyecekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onu durdurdu. \"Yazar adı aynı mı? Baskı yılı aynı mı?\" diye sordu.\n\nİncelediklerinde bunların farklı kitaplar olduğunu öğrendiler. Küçük bir harf farkı bile kayıtların karışmasına yol açabiliyordu. Bu kez Ferit dikkatli çalışmaya başladı. Bir kitabın yalnızca kapağına değil, künyesine de baktı.\n\nFerit kayıt defterinin üstünde bir silinti gördü. Hemen biri bilgi saklamış olabilir diye düşündü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " silinen yere dikkatle baktı, sonra eski kayıtlarda mürekkeplerin zamanla solabileceğini hatırladı. Sevim Hanım, belge uzmanlığı olmadan bunun nedenini kesinleştiremeyeceklerini söyledi. Ferit iddiasını geri çekti. \"Gizemi seviyorum diye kötü bir olay uydurmamalıyım,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " için bu cümle araştırmalarının yönünü belirleyen küçük bir dönüm noktasıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Üçüncü defterin arasında eski bir makbuz kopyası buldular. Üzerinde otuz kitaplık bir bağıştan söz ediliyordu. Fakat bağışın kayıt numaraları tam değildi. O akşam Ferit evde aile kitaplığının fotoğrafını çekip "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": " gönderdi. Fotoğrafta bazı kitaplar boylarına göre dizilmişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " \"Siz kitapları yazarlarına göre mi ayırıyorsunuz?\" diye sordu. Ferit, hiç düşünmediğini söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " de bütün evlerin aynı düzende olmak zorunda olmadığını fark etti. Ama okul kütüphanesi ortak kullanım içindi; bir öğrenci kitabı aldığı yerde bulabilmeliydi. Bunun için kuralların herkes tarafından anlaşılması gerekiyordu.\n\nSevim Hanım, bazı yıllarda el yazısıyla tutulan kayıtların bilgisayara eksik aktarılabildiğini söyledi.\n\n\"O zaman on üçüncü raf gerçekten kaybolmuş olabilir,\" dedi Ferit.\n\n\"Raf kaybolmaz,\" diye karşılık verdi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Belki sadece adı değişmiştir.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tabloyu hazırlarken Ferit bir başka ayrıntı buldu. Bazı numaraların yanına küçük yıldızlar çizilmişti. Önce bunları özel kitapların işareti sandılar. Sevim Hanım, eski görev çizelgesini getirip bu yıldızların o gün sayımı yapılan kitapları gösterdiğini anlattı. Ferit bir an durup \"Biz de bu defteri okuyan başka çocuklar için açıklama hazırlamalıyız,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " buna sevindi. Çünkü bir gün defteri başkası açtığında aynı soruları sormak zorunda kalmayabilirdi. İkili basit bir işaret açıklaması sayfası oluşturdu. Emin olduklarını açık yazdılar; emin olamadıklarının yanına soru işareti koydular.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ve Ferit, sıradan görünen bir sembolün yalnızca kayıt sistemini bilince anlam kazandığını fark etti. Ferit, \"Bir kitaba yıldız koyunca değerli, başka kitaba koymayınca değersiz olmuyor,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Tabii ki. İşaret, onu kullanan kişinin ne anlatmak istediğine bağlı,\" diye cevap verdi. Böylece tablolarına \"işaretin olası anlamı\" sütununu da eklediler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İki arkadaş sorularını bir tabloda topladı. İlk sütunda kitap numaraları, ikinci sütunda kayıt tarihleri, üçüncü sütunda bulunduğu yer yazıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çizelgeyi renklendirdiğinde birbirine benzeyen kayıtların aslında farklı dönemlere ait olduğunu gördü. En eski kayıtlar, binanın tadilatından önceki döneme uzanıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sevim Hanım, okulun arşiv sorumlusundan eski bina planını istedi. Plan geldiğinde üçü birlikte masaya açtı. On üçüncü rafın bulunduğu yerde bugün küçük bir okuma köşesi vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", eski plandaki koltuğun bulunduğu yere yürüdü. Çocukların bugün sessizce kitap okuduğu köşe bir zamanlar farklı bir amaçla kullanılmıştı. Bir mekânın geçmişini bilmek, ona daha dikkatli bakmasını sağladı. Ferit de köşedeki küçük lambaya baktı. \"Kayıp raf yerine okuma koltuğu gelmiş,\" dedi. \"Aslında burası hâlâ kitaplara hizmet ediyor.\" İkisi aynı odayı şimdi daha farklı görüyordu.\n\nEski ahşap dolap ise yıllar önce başka bir odaya taşınmıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hayalindeki gizli koridoru bulamamıştı ama yine de heyecanlandı. Çünkü aradıkları şeyin nereye götürüldüğünü öğrenmişlerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Depo okulun içinde, görevli eşliğinde girilen düzenli bir alandı. Ferit kapıda biraz durdu; eski eşyaların üstünde toz olduğunu görünce hapşırdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", dolabı hemen açmak istiyordu ama Sevim Hanım önce uygun eldiven ve temiz çalışma yüzeyi hazırladı. \"Eski belgeler bazen kırılgan olur,\" dedi. \"Bulduğumuz şeyi koruyamazsak bilgiyi de kaybedebiliriz.\" Ferit, araştırmacıların neden acele etmemesi gerektiğini bu kez daha iyi anladı. Meraklarının hızlı koşmasına izin verebilirlerdi ama elleri sakin davranmalıydı.\n\nOkul yönetiminin izniyle depodaki eski dolap incelendi. Dolapta birkaç boş çekmece, kullanılmayan kitap destekleri ve üstünde Bağışlar yazan kalın bir defter vardı. Sevim Hanım defteri dikkatle açtı. Sayfalar sararmıştı ama kayıtların çoğu okunuyordu.\n\nFerit, \"Büyük hazineyi bulduk!\" dedi. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kitap"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " defteri eline almadan önce durdu. \"Burada insanların isimleri olabilir. Her şeyi fotoğraflayıp paylaşmamalıyız,\" dedi. Sevim Hanım onu onayladı. Eski kayıtların da kişisel bilgiler içerebileceğini, kullanılacak bilgilerin dikkatle seçilmesi gerektiğini anlattı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sayfaları çevirirken kitap türlerinin zamanla nasıl değiştiğini gördüler. En eski kayıtlarda masal ve ansiklopedi çoktu. Daha sonraki yıllarda bilim dergileri, çizgi romanlar ve çocuk romanları artmıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir kitap türünü diğerinden üstün saymadı. Farklı zamanlarda, farklı çocukların farklı merakları olabileceğini düşündü. Ferit, \"Büyükbabamın sevdiği hikâyeyle benim sevdiğim aynı olmak zorunda değil,\" dedi. Sevim Hanım başını salladı. \"Önemli olan doğru kitapla doğru okurun buluşması.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözleri küçük bir kartın üzerine yazdı; kütüphane düzenlenince görünür bir yere asmak istiyordu.\n\nDefterde, yıllar önce mahallede yaşayan insanların okul kütüphanesine kitap gönderdiği yazıyordu. Bazı bağışlar tek kitaptı; bazıları ise bir sınıf dolusu. Bir sayfanın kenarına şu not düşülmüştü: Bu kitapları okuyacak çocuklarla hiç tanışmayacağım. Yine de hepsine iyi yolculuklar dilerim."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi akşam kütüphanedeki gönüllü çalışmalarını anlatırken annesi ona kendi çocukluğunda okuduğu bir kitabın adını söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kitabı aradığında yeni raflarda bulamadı. Sevim Hanım'a danışınca kitabın başka bir kütüphanede bulunabileceğini öğrendi. O an her kitabın tek bir rafta bulunmayacağını, kütüphanelerin birbirine bilgi sağlayabileceğini düşündü. Araştırması onu yalnızca geçmişe değil, farklı okuma yollarına da götürmüştü.\n\n"
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr045_gozleri_doldu"
+        },
+        {
+          "t": "metin",
+          "v": " Bir kitabı hiç tanımadığı başka bir çocuğa gönderen kişinin ne kadar umutlu olması gerektiğini düşündü. On üçüncü rafın gizemi, ona bir odadan daha büyük bir şey göstermişti: Okulun zaman içinde büyüyen ortak hafızasını."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " akşam evde kardeşine araştırmalarını anlatırken \"Emanet\" kelimesini kullandı. Kardeşi, \"Bana emanet ettiğin oyuncağı geri verdiğimde de aynı kelimeyi söylüyorsun,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. \"Evet, çünkü emanet alınan şeyi dikkatle korumamız gerekir.\" Sonra kütüphanedeki eski kitapları düşündü. Kitaplar, onları daha sonra okuyacak çocuklara kadar uzanan bir emanet gibiydi. Evinin rafındaki kitabı yerine koyarken yıpranmış bir sayfanın köşesini düzeltti. Bu küçük hareket, ertesi gün kütüphanede yapacağı işin anlamını değiştirmişti. Artık yalnızca bir gizemi çözmüyor, kitapları gelecek okurlar için koruyordu.\n\nKayıtları incelerken Ferit yeni bir sorun fark etti. Bağış defterindeki bir kitap, dijital katalogda hiç görünmüyordu. Acaba kayıp mıydı? "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kitabın adını yeniden kontrol etti, yazarı ve sayfa sayısını not aldı. Sonra arama sonuçlarında farklı bir yazımla benzer bir kayıt buldu. Kitap vardı; yalnızca başlığı sisteme yanlış geçirilmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Bu durumda kimse onu aradığında bulamaz,\" dedi Ferit.\n\nSevim Hanım, eski ve yeni bilgileri karşılaştırarak düzeltme yapılabileceğini söyledi. Çocuklar kitabı rafında buldu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sırtını düzeltti, Ferit kaydın doğru kitapla eşleştiğini işaretledi.\n\nAfişi tasarlamak da kolay olmamıştı. Ferit ilk taslağa \"Kayıp Hazine Bulundu!\" başlığını atmıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunun eğlenceli fakat yanıltıcı olduğunu söyledi. Ferit önce \"Kimse sıradan bağış defterini okumaz,\" diye itiraz etti. Sonra Sevim Hanım onlara eski defterdeki güzel dileği yeniden gösterdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bence asıl ilginç olan bu,\" dedi. İkili sonunda afişe \"On Üçüncü Rafın Unutulan İyiliği\" adını verdi. Böylece dikkat çekici bir başlığın gerçekleri değiştirmeden de yazılabileceğini gördüler.\n\nO gün pek çok çocuk kütüphaneye geldiğinde yeni bir afiş gördü: "
+        },
+        {
+          "t": "vurgu",
+          "v": "Bir kitabın yolculuğunu merak ettiniz mi"
+        },
+        {
+          "t": "metin",
+          "v": "? Afişte kişisel bilgi bulunmuyordu. Yalnızca okul kütüphanesine yıllar boyunca yapılan bağışların sayısı, kitap türleri ve okuma köşesinin geçmişi anlatılıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birinci sınıftan bir öğrenci afişin önünde durup sordu: \"Bütün bu kitapları kim getirmiş?\"\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Çok farklı insanlar,\" diye cevap verdi. \"Bazıları kendi adını bırakmış, bazıları yalnızca kitaplarını. Ama hepsi bir gün birinin okumasını istemiş.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yeni düzende bir başka yenilik önerdi: Her rafta yalnızca numara değil, türün adı da yazılacaktı. Böylece özellikle küçük öğrenciler aradıkları kitapları daha kolay bulabilecekti. Ferit renkli etiketlerin tasarımını yaptı. Sevim Hanım deneme için üç küçük öğrenciyi davet etti. Çocuklar en sevdikleri masal türünü birkaç dakika içinde bulabildi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Araştırmamız başka okurların işini de kolaylaştırdı,\" diye sevindi. On üçüncü rafın hikâyesi yeni düzenlemenin arkasında gizli kalmamış, kütüphaneyi daha kullanışlı kılmıştı.\n\nHaftanın sonunda yeni raf numaraları yerleştirildi. Bu kez hiçbir boşluk yoktu. Ferit eski on üçüncü rafın yerine küçük bir işaret hazırladı: Bir zamanlar burada bağış kitaplarının emanet dolabı bulunuyordu. Sevim Hanım işareti okuma köşesine astı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sevim Hanım küçük bir kütüphane etkinliği düzenlemelerini istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ile Ferit, öğrencilere eski raf planını gösterip güncel planla karşılaştırmalarını önerdi. Küçük bir grup boş olan on üçüncü numarayı hemen fark etti. Ferit soruya doğrudan cevap vermek yerine \"Sizce neden boş?\" diye sordu. Çocuklar farklı fikirler üretti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", eski dolabın fotoğrafını gösterince hep birlikte bu değişimin nedenini konuştular. Oyun sonunda öğrenciler bir kütüphanedeki düzenin de zamanla gelişebileceğini fark etti.\n\nFerit eski raf planının bir kopyasını yeni planla yan yana astı. Böylece gelen ziyaretçiler iki farklı dönemi karşılaştırabiliyordu. Bir öğrenci \"Peki sonraki yıllarda bu köşe yine değişir mi?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Değişebilir,\" dedi. \"Önemli olan değişirken geçmişi de anlamak.\" Sevim Hanım onların hazırladığı açıklama kartlarını görünce her ikisine de teşekkür etti. Çocukların merakı kütüphanenin yalnızca geçmişini değil, bugünkü kullanımını da güzelleştirmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", gizemi çözdükleri için sevinçliydi ama buldukları defterin korunmasına daha çok önem veriyordu. Kaybolmuş bir kayıt, eski bir eşyanın yok olması anlamına gelmiyordu. Bazen doğru soruyu sormak, insanlara geçmişin izlerini yeniden görme fırsatı veriyordu.\n\nSevim Hanım onları kapıdan uğurlarken iki küçük teşekkür kartı verdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kartta \"Titizliğiniz sayesinde eski kayıtlar daha anlaşılır oldu\" yazısını gördü. Ferit, \"Kitapların içinde sır ararken işimizin bu kadar işe yarayacağını düşünmemiştim,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " de aynı duygudaydı. Sır çözmek güzel bir başlangıçtı; ortaya çıkan bilgiyi başkalarıyla paylaşmak ise hikâyeyi tamamlıyordu.\n\nFerit çıkışta, \"Bir gün başka kayıp raf bulursak birlikte araştıralım mı?\" diye sordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. \"Önce gerçekten kayıp mı diye kontrol ederiz.\"\n\n\"Peki kayıp değilse?\"\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", Ferit'in kütüphaneyi artık yalnızca macera aradığı bir yer değil, başkalarıyla paylaşabileceği bir çalışma alanı olarak gördüğünü fark etti. İki arkadaş gelecek hafta küçük öğrencilere kitap seçmede yardımcı olmaya söz verdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"O zaman da neden öyle göründüğünü öğreniriz.\"\n\nBir sonraki hafta kütüphaneye gelen çocukların sayısı biraz arttı. Özellikle bağış defteriyle ilgili afiş, okuma köşesine yeni ziyaretçiler çekiyordu. Ferit bunu okul gazetesi için bir habere dönüştürdü. Haberde kimin hangi kitabı bağışladığını değil, eski rafın nasıl bulunduğunu ve kayıtların neden korunduğunu anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yazıyı okuduğunda hoşuna giden bir cümle vardı: \"Kütüphaneler yalnızca kitapları değil, okurların birbirlerine bıraktığı yolları da saklar.\" Ferit artık gizem bulmak kadar onu doğru anlatmaktan da zevk alıyordu.\n\nArtık kitap iade tarihi geldiğinde bunu bir yük olarak görmeyecekti. Kitabı zamanında geri getirirse başka bir okur onu beklediği yerde bulabilecekti.\n\nBir kitabın üzerine yazılmış eski numaranın bile ona ait bir yolculuğu anlatabileceğini düşünüyordu. Ferit'le birlikte buldukları defter, onu kitaplara daha yakından bakmaya davet etmişti. Artık kütüphaneye girdiğinde yalnızca yeni hikâye değil, eski bir iz de görebiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " o gün eve giderken çantasındaki kitabı biraz daha dikkatli taşıdı. Bir kitabın yalnızca içindeki hikâyeyi değil, onu yazanın, bağışlayanın, koruyanın ve okuyanın yolculuklarını da taşıyabileceğini anlamıştı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr045_gozleri_doldu": [
+      {
+        "t": "yoldas",
+        "hal": "yalin",
+        "yedek": "bir arkadaş"
+      },
+      {
+        "t": "metin",
+        "v": " notu okuyunca gözleri doldu."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Listede hangi raf eksikti?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "On üçüncü raf"
+        },
+        {
+          "id": "B",
+          "metin": "On dördüncü raf"
+        },
+        {
+          "id": "C",
+          "metin": "Birinci raf"
+        },
+        {
+          "id": "D",
+          "metin": "On ikinci raf"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Raf 12'den sonra Raf 14 geliyordu; arada on üçüncü raf yoktu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 4,
+      "metin": "Nil ile Ferit neden kitabın künyesine de baktı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Aynı kitabın farklı yazılmış iki kaydı olabileceği için"
+        },
+        {
+          "id": "B",
+          "metin": "Kitaplar çok ağır olduğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Künye renkli olduğu için"
+        },
+        {
+          "id": "D",
+          "metin": "Sevim Hanım istediği için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Farklı yazımlar, farklı kitapları ya da aynı kitabı iki kez gösterebilirdi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 10,
+      "metin": "Sevim Hanım'ın sözüne göre kütüphanenin en önemli işi nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Doğru kitapla doğru okuru buluşturmak"
+        },
+        {
+          "id": "B",
+          "metin": "Kitapları satmak"
+        },
+        {
+          "id": "C",
+          "metin": "Yıldız işaretlerini silmek"
+        },
+        {
+          "id": "D",
+          "metin": "Defterleri yakmak"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kütüphanenin amacı, kitabın doğru okura ulaşmasını sağlamaktır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "Metinde geçen emanet sözcüğü ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Birine geçici olarak bırakılan şey"
+        },
+        {
+          "id": "B",
+          "metin": "Kalıcı olarak satılan şey"
+        },
+        {
+          "id": "C",
+          "metin": "Yeni alınan kitap"
+        },
+        {
+          "id": "D",
+          "metin": "Okulun bahçesi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Emanet, sahibinden geçici olarak başkasına bırakılan şeydir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr045_emanet",
+        "tur": "kelime",
+        "yazim": "emanet",
+        "anlam": "Birine geçici olarak bırakılan, korunması istenen şey.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_odunc",
+        "tur": "kelime",
+        "yazim": "ödünç",
+        "anlam": "Bir şeyi geri verilmek üzere almak ya da vermek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_mulk",
+        "tur": "kelime",
+        "yazim": "mülk",
+        "anlam": "Bir kişinin sahip olduğu şey.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_muhur",
+        "tur": "kelime",
+        "yazim": "mühür",
+        "anlam": "Bir belgenin resmîliğini gösteren damga.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_damga",
+        "tur": "kelime",
+        "yazim": "damga",
+        "anlam": "Bir şeyin üzerine basılan iz ya da işaret.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_imza",
+        "tur": "kelime",
+        "yazim": "imza",
+        "anlam": "Bir kişinin adını kendi el yazısıyla yazması.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_katalog",
+        "tur": "kelime",
+        "yazim": "kataloglamak",
+        "anlam": "Kitapların bilgilerinin düzenli bir listede tutulması.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_liste",
+        "tur": "kelime",
+        "yazim": "liste",
+        "anlam": "Sırayla yazılmış adlar ya da kayıtlar.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_kunye",
+        "tur": "kelime",
+        "yazim": "künye",
+        "anlam": "Bir kitabın yazar, yayınevi ve yıl gibi kimlik bilgileri.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_gozleri_doldu",
+        "tur": "deyim",
+        "yazim": "gözleri doldu",
+        "anlam": "Duygulanıp ağlamaklı olmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_gozleri_parladi",
+        "tur": "deyim",
+        "yazim": "gözleri parladı",
+        "anlam": "Çok sevinmek ya da heyecanlanmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr045_gozu_karardi",
+        "tur": "deyim",
+        "yazim": "gözü karardı",
+        "anlam": "Öfkelenip kendini kaybetmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr045_emanet",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr045_emanet"
+          },
+          {
+            "girdi": "hr045_odunc"
+          },
+          {
+            "girdi": "hr045_mulk"
+          }
+        ]
+      },
+      {
+        "ad": "hr045_muhur",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr045_muhur"
+          },
+          {
+            "girdi": "hr045_damga"
+          },
+          {
+            "girdi": "hr045_imza"
+          }
+        ]
+      },
+      {
+        "ad": "hr045_katalog",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr045_katalog"
+          },
+          {
+            "girdi": "hr045_liste"
+          },
+          {
+            "girdi": "hr045_kunye"
+          }
+        ]
+      },
+      {
+        "ad": "hr045_gozleri_doldu",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr045_gozleri_doldu"
+          },
+          {
+            "girdi": "hr045_gozleri_parladi"
+          },
+          {
+            "girdi": "hr045_gozu_karardi"
+          }
+        ]
+      }
+    ]
+  }
+}

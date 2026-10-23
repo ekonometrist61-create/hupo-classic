@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr113_belirsizlik",
+      "tur": "kelime",
+      "yazim": "belirsizliği",
+      "anlam": "Kesin olarak bilinmeyen durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_supheli",
+      "tur": "kelime",
+      "yazim": "şüphe",
+      "anlam": "Bir şeyin doğruluğundan tam emin olunmama hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_kesinlik",
+      "tur": "kelime",
+      "yazim": "kesinlik",
+      "anlam": "Şüphe bırakmayan, emin olunan durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_model",
+      "tur": "kelime",
+      "yazim": "modellerle",
+      "anlam": "Bir olguyu açıklamak için kurulan basitleştirilmiş düzen ya da kurgu.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_sema",
+      "tur": "kelime",
+      "yazim": "şema",
+      "anlam": "Bir düzeni ya da ilişkiyi basitleştirerek gösteren çizim.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_simulasyon",
+      "tur": "kelime",
+      "yazim": "simülasyon",
+      "anlam": "Bir durumun bilgisayarda taklit edilerek incelenmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_olasilik",
+      "tur": "kelime",
+      "yazim": "olasılığı",
+      "anlam": "Bir olayın gerçekleşme ihtimali.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_ihtimal",
+      "tur": "kelime",
+      "yazim": "ihtimal",
+      "anlam": "Bir şeyin olabileceği durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_kesinlik_olasilik",
+      "tur": "kelime",
+      "yazim": "kesinlik",
+      "anlam": "Bir olayın kesinlikle gerçekleşeceği durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_varsayim",
+      "tur": "kelime",
+      "yazim": "varsayımların",
+      "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_onkabul",
+      "tur": "kelime",
+      "yazim": "önkabul",
+      "anlam": "İncelemeden önce kabul edilen görüş.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_kesin_bilgi",
+      "tur": "kelime",
+      "yazim": "kesin bilgi",
+      "anlam": "Kanıtlarla doğrulanmış, şüphe bırakmayan bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_gormezden",
+      "tur": "deyim",
+      "yazim": "görmezden gelip",
+      "anlam": "Bir şeyi fark etmezden gelmek, yok saymak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_yok_saymak",
+      "tur": "deyim",
+      "yazim": "yok saymak",
+      "anlam": "Bir gerçeği ya da durumu hiç varmış gibi davranmamak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr113_dikkate_almak",
+      "tur": "deyim",
+      "yazim": "dikkate almak",
+      "anlam": "Bir şeyi göz önünde bulundurmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr113_belirsizlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr113_belirsizlik"
+        },
+        {
+          "girdi": "hr113_supheli"
+        },
+        {
+          "girdi": "hr113_kesinlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr113_model",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr113_model"
+        },
+        {
+          "girdi": "hr113_sema"
+        },
+        {
+          "girdi": "hr113_simulasyon"
+        }
+      ]
+    },
+    {
+      "ad": "hr113_olasilik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr113_olasilik"
+        },
+        {
+          "girdi": "hr113_ihtimal"
+        },
+        {
+          "girdi": "hr113_kesinlik_olasilik"
+        }
+      ]
+    },
+    {
+      "ad": "hr113_varsayim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr113_varsayim"
+        },
+        {
+          "girdi": "hr113_onkabul"
+        },
+        {
+          "girdi": "hr113_kesin_bilgi"
+        }
+      ]
+    },
+    {
+      "ad": "hr113_gormezden",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr113_gormezden"
+        },
+        {
+          "girdi": "hr113_yok_saymak"
+        },
+        {
+          "girdi": "hr113_dikkate_almak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

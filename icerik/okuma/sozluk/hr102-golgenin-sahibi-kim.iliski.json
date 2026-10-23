@@ -1,0 +1,62 @@
+{
+  "hr102_ileri_surulen": {
+    "es": [
+      "hr102_iddia"
+    ],
+    "zit": []
+  },
+  "hr102_dogrulanmis": {
+    "es": [],
+    "zit": [
+      "hr102_iddia"
+    ]
+  },
+  "hr102_delil": {
+    "es": [
+      "hr102_kanit"
+    ],
+    "zit": []
+  },
+  "hr102_bulgu": {
+    "es": [
+      "hr102_kanit"
+    ],
+    "zit": []
+  },
+  "hr102_muglak": {
+    "es": [
+      "hr102_belirsiz"
+    ],
+    "zit": []
+  },
+  "hr102_kesin": {
+    "es": [],
+    "zit": [
+      "hr102_belirsiz"
+    ]
+  },
+  "hr102_itimat": {
+    "es": [
+      "hr102_guvenilir"
+    ],
+    "zit": []
+  },
+  "hr102_guvenilmez": {
+    "es": [],
+    "zit": [
+      "hr102_guvenilir"
+    ]
+  },
+  "hr102_ici_burkulmak": {
+    "es": [
+      "hr102_hayal"
+    ],
+    "zit": []
+  },
+  "hr102_ici_ferahlamak": {
+    "es": [],
+    "zit": [
+      "hr102_hayal"
+    ]
+  }
+}

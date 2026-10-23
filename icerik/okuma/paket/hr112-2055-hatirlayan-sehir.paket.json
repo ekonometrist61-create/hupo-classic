@@ -1,0 +1,1723 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr112-2055-hatirlayan-sehir",
+    "baslik": "2055: Hatırlayan Şehir",
+    "tur": "bilim_kurgu",
+    "konu": "veri_tahmin_mahremiyet",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 8,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "guvenlik"
+      ],
+      "ders_baglantisi": [
+        "fen",
+        "sosyal"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "tahmin_hr112",
+          "tur": "lexeme",
+          "etiket": "tahmin",
+          "yuva": "hr112_tahmin",
+          "islev": "first_hint"
+        },
+        {
+          "id": "minimizasyon_hr112",
+          "tur": "lexeme",
+          "etiket": "veri minimizasyonu",
+          "yuva": "hr112_minimizasyon",
+          "islev": "application"
+        },
+        {
+          "id": "itiraz_hr112",
+          "tur": "lexeme",
+          "etiket": "itiraz",
+          "yuva": "hr112_itiraz",
+          "islev": "application"
+        },
+        {
+          "id": "kayit_hr112",
+          "tur": "lexeme",
+          "etiket": "kayıt",
+          "yuva": "hr112_kayit",
+          "islev": "transfer"
+        },
+        {
+          "id": "deyim_hr112",
+          "tur": "idiom",
+          "etiket": "İçine ağırlık oturmak",
+          "yuva": "hr112_agirlik",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr112",
+          "tur": "concept",
+          "etiket": "Tahmin ile kaydı ayırmak",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 3965,
+        "tahmini_sure_dk": 30,
+        "sayfa_sayisi": 33,
+        "soru_sayisi": 5,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1,
+          "degerlendirme": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 27,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Güneşkent'te bir durak, yolcuya ne zaman neyi önereceğini bilen bir sistem. Elif ve arkadaşları, bir sistemin ne kadar hatırlaması gerektiğini sorar.",
+    "durum": "taslak",
+    "fis_kodu": "HR-112"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "2055 yılında Güneşkent'in otobüs durakları yalnızca otobüslerin ne zaman geleceğini değil, yolcuların nereye gitmek isteyeceğini de tahmin ederdi. Durakların çatısındaki ince ekranlar, insanlar yaklaşırken kişisel rotalar önerirdi. Yağmurlu günlerde yürümek istemeyenleri otobüse, acelesi olanları metroya yönlendirirdi. Belediye bu sisteme HAFIZA adını vermişti: Hareket Analizi ve Fırsatları İzleme Akıllısı.\n\nOn dört yaşındaki "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", HAFIZA'yı önce sevmişti. Sabah aceleyle evden çıktığında trafik sıkışıklığını haber veriyor, bilim kulübü toplantısından döndüğünde evine en kısa yolu buluyordu. Kardeşi Ömer'in unutkanlığı yüzünden otobüste bıraktığı şemsiyeyi bile hangi saatte hangi hatta taşıdığını gösteren "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr112_kayit"
+        },
+        {
+          "t": "metin",
+          "v": " bulmuşlardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " babası, “Şehir nihayet bizi dinliyor,” derdi.\n\nFakat bir perşembe sabahı durak ekranı "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " şu öneriyi sundu: Müzik kursu yerine doğrudan eve gitmek ister misin? Son üç haftadır kursta mutlu görünmüyorsun.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " durdu. Kursa neden gitmediğini kimse bilmiyordu; üç haftadır okul çıkışında ablasıyla kütüphanede buluşuyor, gizlice hazırladıkları küçük bir müzik kayıt projesini geliştiriyorlardı. Üstelik sistemin “mutlu görünmüyorsun” demesi daha da tuhaftı. Durak yüzünden bir şey okumuş olmalıydı. Ekranın altında kaynağa ilişkin hiçbir açıklama bulunmuyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O gün okulda arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ona yeni bir afiş gösterdi. Kent Konseyi gençlerden şehir teknolojilerini değerlendirecek projeler istiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen durak ekranındaki cümleyi anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " güldü: “Demek otobüs durağı senden daha iyi ne istediğini biliyor.”\n\n“Benim yerime karar verirse iyi bilebilir mi?” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". Sesindeki sertliğe kendisi de şaşırdı. Bilim kulübüne yazmayı düşündükleri proje başlığını değiştirdiler: Bir Şehir Ne Kadar Hatırlamalı?"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk araştırmayı küçük bir not defteriyle yaptılar. Bir hafta boyunca kendilerine önerilen rotaları, önerilerin gerekçelerini ve gerçekten işe yarayıp yaramadıklarını kaydettiler. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " ekranı her salı ona basketbol salonuna yöneliyordu, çünkü geçen yıl o salonda antrenman yapmıştı. Oysa dizindeki incinme geçtikten sonra başka bir sporla ilgilenmeye başlamıştı. Sistem bunu bilmiyor, eski alışkanlığı güncel tercih sanıyordu.\n\nSınıf arkadaşları Mina'nın durumu daha farklıydı. Mina görme güçlüğü yaşayan bir öğrenciydi ve sesli yönlendirmeleri kullanıyordu. HAFIZA onun için bazı yollardaki çalışmaları haber vererek yararlı oluyordu. Ancak geçen ay geçici olarak kullandığı bir güzergâhı “daima tercih edilen rota” olarak kaydetmişti. Şimdi daha kısa ve güvenli seçenekler varken onu uzun bir yola yönlendiriyordu.\n\n“Bu sistemi tamamen kapatalım desem,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “sana zarar vermiş olur muyum?”\n\n“Ben de tamamen kapatalım demiyorum,” dedi Mina. “Ama neden böyle karar verdiğini görmek, yanlışsa düzeltebilmek istiyorum.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Üç öğrenci öğretmenleri Deniz Hanım'a danıştı. Öğretmen, veriyle "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr112_tahmin"
+        },
+        {
+          "t": "metin",
+          "v": " birbirinden ayırmalarını istedi. “Durak gerçekten neyi biliyor? Neyi tahmin ediyor? Hangisini açıkça söylüyor?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine iki sütun çizdi. Birine kayıt, ötekine çıkarım yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " geçen yıl basketbol salonuna gittiği bir kayıttı. Bugün de oraya gitmek istediği ise çıkarımdı.\n\nOkul çıkışında HAFIZA'nın bilgi merkezini ziyaret ettiler. Görevli, hareket örüntülerini kullandığını anlattı. “Veriler birleşince şehir hizmetlerini iyileştiriyoruz. İnsanlar beklemiyor, araçlar boş dolaşmıyor,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir örnek gösterdi: "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": " yapılan eski basketbol önerisi. Görevli bunun bir tahmin hatası olabileceğini kabul etti ama tek bir yanlışın bütün sistemi değersizleştirmeyeceğini söyledi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de öyle düşünüyordu. Fakat hatanın nasıl düzeltileceği sorulduğunda görevli uzun bir kılavuza yönlendirdi. Kılavuzda hangi kaydın ne kadar saklandığına ilişkin açık bir cümle bulamadılar."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Araştırmanın üçüncü günü okul gezisinde küçük bir olay yaşandı. Sekizinci sınıflar tarihi bilim merkezine gidecekti. HAFIZA, kalabalığı azaltmak için öğrencileri farklı duraklara yönlendirdi. Sistem yalnızca önceki yolculuk kayıtlarını dikkate almış, öğretmenlerin yeni buluşma planını tam olarak işlememişti. Bazı öğrenciler doğru noktaya ulaşırken bir grup, kapalı bir servis girişine yöneldi.\n\nKimse kaybolmadı; öğretmenleri öğrencileri sayıp kapalı girişin yanındaki bekleme alanında topladı. Ancak buluşma gecikince ziyaretin bir bölümü iptal edildi. Deniz Hanım, “Teknolojik öneri yararlı olabilir,” dedi, “ama okul gezisinin güvenliğini ona bırakamayız.” Öğrencilerin konumları okulun doğrulanmış gezi planına göre yeniden kontrol edildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir önerinin resmî bilgi gibi sunulmasının tehlikesini ilk kez bu kadar açık gördü.\n\nSonraki gün yerel bir haber sitesi “HAFIZA okul gezisini felakete sürükledi” başlığı attı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " habere kızdı. “Ortada felaket yoktu. Sadece yanlış yönlendirme vardı,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", aynı hatanın iki uçta nasıl çarpıtıldığını düşündü: Belediyenin tanıtımında kusursuz görünen sistem, haberde tam bir tehdit gibi anlatılmıştı. Oysa araştırmanın değeri, olup biteni olduğu gibi yazmaktaydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bilim kulübünün toplantısında olayın zaman çizelgesini hazırladılar. Öğretmenler hangi saatte hangi durakta öğrenci saymıştı? Uyarı ne zaman gönderilmişti? Kapalı girişe yönlendirmeyi kim fark etmişti? "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", doğrulanmamış bir sosyal medya paylaşımını çizelgeden çıkardı. “Bu kişi orada değilmiş,” dedi. “Ona dayanamayız.”\n\nMina, “Sistemin hepsini bilmesi daha iyi yönlendirme yapmasını sağlamamış,” diye ekledi. “Belki doğru şeyi, doğru zamanda bilmesi yeterliydi.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu cümleyi raporun kapağına yazdı. O ana kadar yalnızca özel hayatı korumakla ilgilendiklerini sanmıştı. Oysa gereksiz veri toplanması, daha doğru karar verileceği anlamına da gelmiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Araştırmayı ilerletmek için HAFIZA'nın halka açık test merkezine başvurdular. Merkezdeki görevli Murat Bey, çeşitli şehir hizmetlerinin küçük modellerini gösterdi. Enerji tüketimini hesaplayan, otobüs doluluğunu tahmin eden ve belediye bisikletlerini dağıtan programlar yan yana çalışıyordu. Her programın kullandığı bilgi farklıydı. Bisikletlerin bir bölgede azalıp azalmadığını anlamak için tek tek insanların isimlerine ihtiyaç yoktu. Yalnızca hangi istasyonda kaç bisiklet kaldığını bilmek çoğu zaman yeterliydi.\n\nFakat HAFIZA'nın kişiselleştirme bölümü geçmiş yolculuklarla okul saatlerini birleştiriyordu. Murat Bey, “Böylece alışkanlıkları anlayabiliyoruz,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Peki alışkanlığımız değişince?” diye sordu. Görevli cevap vermeden önce ekrana baktı. “Sistem zamanla öğreniyor.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", eski bir kaydın kişiyi yıllarca izleyip izleyemeyeceğini sordu. Murat Bey kayıt saklama yöntemlerinin farklı olduğunu söyledi ama kesin süreleri uzman ekibin değerlendirmesi gerektiğini belirtti. Bu kez "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", teknik belirsizliği dürüstçe kabul ettiği için ona teşekkür etti. Bilimsel bir cevap, her soruya hemen yanıt vermek zorunda değildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Test merkezinden çıkarken Mina'nın ekranında tuhaf bir mesaj belirdi: Şehir içi hareket puanınız düştü. Önerileriniz sınırlandırıldı. Mina bir an olduğu yerde kaldı. “Ben ne yaptım?” dedi.\n\nDaha sonra anlaşıldı ki program, uzun süre kullanılmayan güzergâhlara düşük güven puanı veriyordu. Mina'nın tercihleri yanlış kaydedildiği için sistem onun gerçekten kullandığı yolları yeterince tanımıyordu. Mesajın ne anlama geldiği açık anlatılmadığından, Mina bunu bir cezalandırma gibi hissetmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu olayı kişisel kırgınlık başlığına değil, tasarım hatası başlığına ekledi. Bir kullanıcının sistemin ne yaptığını anlayamaması, yalnızca onun bilgisizliği sayılmamalıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " akşam büyükbabasıyla yürüyüşe çıktı. Büyükbabası her gün aynı parkta yavaş adımlarla dolaşır, kestirme yolları sevmezdi. HAFIZA ona sürekli daha kısa rotalar öneriyordu. Bir gün, “Kısa yolum hazır,” yazan ekranı eliyle kapatmıştı.\n\n“Niçin yeni rotayı denemiyorsun?” diye sordu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Çünkü benim yürüyüşüm bir yere en hızlı ulaşmak için değil,” dedi büyükbabası. “Eski çınarın önünde biraz durmayı seviyorum. Orada gençliğimde oturduğum bankın yerini hatırlıyorum. Makine bana daha kısa yol önerince yanlış bir şey yapmıyorum ki.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. “HAFIZA galiba insanların hep aynı amaçla yürüdüğünü sanıyor.”\n\nBüyükbabası ciddi bir ifadeyle ona baktı. “Daha önemlisi, bütün amaçlarımı bilmek zorunda değil.” Sonra eski bir hikâye anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " büyükannesiyle tanıştığı gün de o parkta yürümüştü. O anıyı anlatmak istemediği günler oluyordu. Parka yürümeye devam etmesi, hikâyeyi her seferinde paylaşmayı kabul ettiği anlamına gelmiyordu.\n\nErtesi sabah "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " deney raporuna yeni bir başlık açtı: İnsanın söylediğiyle sistemin tahmin ettiğini ayırmak. Büyükbabasının parkta durduğu yeri kaydetmedi. Bu bilgi, tasarımın sorununu anlatmak için gerekli değildi. Yalnızca insanların her zaman verimliliği en yüksek yolu istemeyebileceğini belirtti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüpte "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " buna itiraz etti: “Ama kişisel önerileri azaltırsak otobüsler boş dolaşabilir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " itirazı bekliyordu. “Her şeyi azaltmak değil, hizmet için gerekli olanı seçmek istiyoruz. Araçların hangi saatlerde dolu olduğunu bilmek için bütün yolcuların nerede durup ne düşündüğünü öğrenmek şart değil.”\n\nMina karşılarına üç örnek yazdı: anlık doluluk sayısı, konumdan bağımsız rota tercihi, kişinin aylar önceki özel ziyareti. “Bunların hepsi aynı veri değil,” dedi. “Hangisi hangi karara gerçekten yardım ediyor, bunu soralım.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğrenciler şehir tasarım yarışmasına sıradan bir sunum hazırlamak istemedi. Bunun yerine küçük bir HAFIZA modeli kurdular. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ekranların ve sensörlerin tasarımını yaptı, Mina sesli ve dokunarak kullanılabilir seçenekleri denetledi, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise sistemin hangi veriye neden ihtiyaç duyduğunu gösteren kılavuzu yazdı.\n\nBirinci kutu anlık ihtiyaç adını taşıyordu. Örneğin durakta o anda bekleyen yolcu sayısı, otobüsün doluluğunu hesaplamak için kullanılıyordu. Yolcuların isimleri tutulmuyordu. İkinci kutu gönüllü tercih idi. Bir kişi isterse az merdivenli ya da sesli yönlendirmeli bir rota seçebiliyor, tercihlerini sonradan silebiliyordu. Üçüncü kutu ise gerekçeli istisna başlığını taşıyordu; burada veri kullanılacaksa bunun amacı ve sınırı açıkça belirtiliyor, ilgili yetkili onayı ve denetim kaydı gerekiyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " modelleri tanıtırken tek bir iddiada bulunmamaya dikkat etti. “Bu düzen bütün sorunları yok etmeyecek,” dedi. “Amacımız bir hizmeti yürütmek için en az neye ihtiyaç duyulduğunu sormak.” Yarışmanın ön jürisi ona şu soruyu yöneltti: “Bir veri daha toplarsanız hizmet biraz daha iyileşebilir. Neden toplamayacaksınız?”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " birkaç saniye düşündü. “Önce iyileşmenin ne olduğunu ölçmeliyiz. Sonra bunun kişiye getirdiği riski, başka yöntemle aynı faydanın sağlanıp sağlanamayacağını değerlendirmeliyiz. Yalnızca toplayabiliyoruz diye toplamak iyi bir gerekçe değil.”\n\nJüri üyesi itirazını sürdürdü. “İnsanlar bazen ne istediklerini bilmiyor.”\n\nMina söze girdi: “O zaman sistemi daha anlaşılır yapmalı, kullanıcılara seçim yapabilecekleri bilgi vermeliyiz. Onlar yerine her şeyi seçmek çözüm değil.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " modelin son ekranını açtı. Burada örnek bir otobüs durağı vardı. Ekranın üstünde tek bir soru görünüyordu: Daha kolay ulaşım için hangi desteği istersin? Altında seçenekler ve “Şimdi değil” tuşu bulunuyordu. Böylece bir yolcu, sistemin kendi geçmişini ezbere bilmesine gerek olmadan yardım alabiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yarışma için hazırladıkları model, Güneşkent'in bir mahallesinde üç günlük gönüllü denemeye seçildi. Belediye bunun büyük bir uygulama olmadığını, yalnızca tasarımın kullanılabilirliğini inceleyeceklerini açıkladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Mahalledeki herkes bilgilendirilmeli,” diye önerdi. Murat Bey buna katıldı; test duraklarına neyin denenmekte olduğunu anlatan açık levhalar kondu. İsteyen eski yönlendirme sistemini kullanmaya devam edebiliyordu.\n\nİlk sabah işler fena gitmedi. İnsanlar anlık doluluk ekranını kolayca anladı. İki öğrenci, aileleriyle birlikte sesli yönlendirmeyi denedi. Ancak öğle saatlerinde yağmur başlayınca öneri sayısı arttı. Otobüslerden biri planlanandan erken dolmuş, yeni sistem bu değişikliği birkaç dakika gecikmeyle göstermişti. Yaşlı bir yolcu, boş sandığı otobüse bindiğinde ayakta kalmak zorunda kaldı."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr112_agirlik"
+        },
+        {
+          "t": "metin",
+          "v": " Dünyanın en iyi fikrini kurduklarını sanmıştı; oysa tek bir gecikme bile gerçek bir insanın gününü zorlaştırmıştı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hatayı buldu: Otobüs doluluk sayısını gönderen küçük sensör bir süre bağlantı kaybetmişti. Eski tasarımda veri gelmezse son sayı ekranda kalıyordu. Yeni düzende bunun yerine “Doluluk bilgisi güncel değil” uyarısı gösterilmesi gerekiyordu. Fakat test uygulamasındaki bu özellik, yanlışlıkla kapatılmıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Böyle bir hata yüzünden bütün denemeyi iptal ederler mi?” diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Bilmiyorum,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Ama saklayamayız.”\n\nMina, yaşlı yolcuyla konuşmak için belediye görevlisinden yardım aldı. Adam kısa bir özürden fazlasını istedi. “Bana neyin yanlış gittiğini söyleyin,” dedi. “Yarın aynı otobüse bineceğim. Ekrana güvenebilir miyim?”\n\nÇocuklar hata kaydını gösterdi, düzeltilen özelliği anlattı ve deneme bitene kadar güncel olmayan bilgilerin açıkça belirtileceğine söz verdi. Adam bunun makul olduğunu söyledi. “Ben sizden kusursuz olmanızı istemiyorum,” diye ekledi. “Yanlış yapınca gerçeği söylemenizi istiyorum.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " o cümleyi hiçbir jüri ödülünden daha önemli buldu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Üç günlük denemeden sonra katılanlara tercihlerini silmek isteyip istemedikleri soruldu. İnsanların çoğu yalnızca anlık durak sayımı kullanmıştı; bu nedenle adlarıyla ilişkilendirilmiş bir kayıt zaten yoktu. Bazıları sesli yönlendirme tercihini saklamak istedi. İki kişi ise geçmiş seçimlerinin sistemden kaldırılmasını talep etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr112_minimizasyon"
+        },
+        {
+          "t": "metin",
+          "v": " sadece başlangıçta az bilgi toplamak olmadığını anladı. Verinin artık gerekli olmadığı zamanı belirlemek de aynı derecede önemliydi.\n\nSistemin eski sürümünü kullanan bir kişi, “Ben bütün geçmiş yolculuklarımı sildirmek istiyorum,” dediğinde belediye kayıt masasındaki görevli bir form uzattı. Formun başında uzun teknik kelimeler vardı. Mina yüksek sesle okuduğu metnin ne demek istediğini anlayamadı. “Bir hakkı kullanabilmek için önce bu kadar zor bir dili öğrenmemiz mi gerekiyor?” dedi.\n\nBunun üzerine kulüp iki sayfalık açıklamanın tek sayfalık, anlaşılır bir sürümünü hazırladı. Ancak Deniz Hanım, hukuki metni kendi başlarına değiştiremeyeceklerini hatırlattı. Resmî açıklama birimiyle çalışarak sade bir bilgilendirme katmanı eklediler. Böylece doğruluk korunurken anlaşılabilirlik arttı. “"
+        },
+        {
+          "t": "vurgu",
+          "v": "Kolay anlatmak, eksiltmek değildir"
+        },
+        {
+          "t": "metin",
+          "v": ",” dedi öğretmenleri. “Bazen anlatanın konuyu daha iyi anlamasını gerektirir.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi gün büyükbabasıyla durakta karşılaştı. Eski sistemden gelen bir öneri hâlâ ekranda görünüyor, adamı parkın kısa yoluna çağırıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona ayarları değiştirmeyi teklif etti. Büyükbabası durup düşündü. “Önce seçeneklerimi bana anlat,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tek tek açıkladı: geçmiş alışkanlıkların kullanılmasını durdurmak, kişisel öneri geçmişini temizlemek, yalnızca anlık ulaşım bilgisi almak. Büyükbabası sonuncusunu seçti.\n\n“Bunu senin yerine ben seçseydim daha çabuk biterdi,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Doğru,” dedi büyükbabası. “Ama benim kararım olmazdı.”\n\nBu kısa konuşma "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " zihninde kaldı. Yardım etmek ile kişinin iradesini elinden almak arasındaki çizgi, bazen yalnızca bir soruyu ne zaman ve nasıl sorduğunda saklıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Güneşkent gazetesi çocukların projesine yer verdiğinde ilgi büyüdü. Bir grup şehir sakini yeni tasarımı hemen bütün duraklarda görmek istedi. Başka bir grup ise kişisel kayıtların azaltılmasının belediyenin trafik araştırmalarını zayıflatacağından korkuyordu. Kent Konseyi iki tarafı dinlemek için toplantı düzenledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " konuşmadan önce iki görüşün de güçlü yanlarını not etti; tartışmayı bir yarışma gibi yönetmek istemiyordu.\n\nToplantıda ulaşım planlamacısı Derya Hanım, geçmiş seyahat verilerinin yoğunluğu anlamakta kullanıldığını anlattı. “Sadece anlık sayılara bakarsak bayram öncesi hangi hatların kalabalıklaşacağını öngörmek zorlaşabilir,” dedi. Bu, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " şimdiye kadar yeterince düşünmediği bir itirazdı. Projelerinin bütün geçmiş verileri gereksiz saydığını sananlar olabilirdi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez el kaldırdı. “Biz geçmiş verilerin hiç kullanılmamasını önermedik,” dedi. “Kişiye bağlanması gerekmeyen toplam istatistiklerin kullanılmasını, amaçların açıkça söylenmesini ve geçmiş kayıtların süresiz tutulmamasını önerdik.” Derya Hanım başını salladı. “Bu tartışılabilir bir yaklaşım. Fakat istatistiklerin de küçük gruplarda kişileri dolaylı olarak tanıtmaması gerekir. Bazı mahallelerde bir durakta çok az kişi bulunuyor.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir not daha ekledi: Kimliksiz görünen veriler de bazen kişi hakkında ipucu verebilir. Daha önce yalnızca isimleri silmenin yeterli olacağını düşünmüştü. Veri korumak düşündüğünden daha kapsamlı bir çalışmaydı. Konseyden tüm sistemi değiştirmelerini istemek yerine, pilot uygulamayı bağımsız uzmanların ve mahalle temsilcilerinin izlemesini teklif etti.\n\nToplantının ardından bir gazeteci "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": ", “HAFIZA'yı yenebildin mi?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " soruyu düzeltti. “Bu bir insanla makine arasındaki maç değil. Bir şehrin teknolojiyle nasıl yaşayacağını birlikte tartışıyoruz.” Gazeteci gülümsedi ama "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " cümlesini olduğu gibi yazacağına söz vermedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi gün haber çıkınca başlığı ayrıca kontrol etmeye karar verdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Araştırmanın son haftasında belediyenin veri merkezi için düzenlenen eğitim gezisine katıldılar. Geniş salonda soğutma sistemleri sessizce çalışıyor, ışıklı göstergeler duvarlara ince çizgiler düşürüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " makinelerin arasından geçerken HAFIZA'nın şehirdeki her insanı tek bir dev kutuda tutan bir varlık olmadığını öğrendi. Farklı hizmetlerin ayrı sistemleri vardı; bazıları birbiriyle konuşuyor, bazıları yalnızca belirli sonuçları paylaşıyordu.\n\nRehberleri bir tahtaya üç sözcük yazdı: Toplama, kullanma, saklama. Ardından dördüncüsünü ekledi: Silme. Mina neden silmenin ayrıca yazıldığını sordu. “Çünkü bir bilginin sonsuza kadar durması doğal bir zorunluluk değildir,” dedi rehber. “Ama onu güvenle kaldırmak da tasarım ister.”\n\nÖğrenciler küçük bir simülasyonda veri sızıntısı yaşandığında ne olacağını gördüler. Gerçek kişilere ait kayıtlar kullanılmıyordu. Deney, bir uygulamanın ihtiyaç duymadığı hâlde tuttuğu yüzlerce alanın denetlenmesini zorlaştırdığını gösteriyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hangi alanların gerekli olduğunu işaretledi; "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " her alanın karşısına kullanım gerekçesini yazdı. Boş kalan gerekçeler, toplanmaması gereken veri adaylarıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ancak rehber yeni bir soru sordu: “Yanlış bir kararı düzeltmek için geçmiş kayıtları incelemeniz gerekirse?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen “Hiç kayıt tutmayalım” diyemedi. Bunun yerine kayıtların amacına uygun sınırlarla, gerekli süre kadar, yetkili erişimi ve denetimiyle ele alınabileceğini tartıştılar. Yasal ve teknik ayrıntıları uzmanların belirlemesi gerektiğini kabul ettiler.\n\nGezinin sonunda veri merkezinin boş eğitim odasına girdiler. Odada hiç ekran yoktu; yalnızca üç sandalye ve pencere vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " şaşırdı. “Burası ne için?” Rehber cevap verdi: “Teknoloji kararlarını tartışırken bazen bütün göstergeleri kapatıp birbirimizi dinlemek için.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu duyunca gülümsedi. Bir şehir ne kadar akıllı olursa olsun, vatandaşlarının birbirine soru sormayı unutmaması gerektiğini düşünüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Final sunumu öncesinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " herkesten projelerine yöneltilebilecek en güçlü "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr112_itiraz"
+        },
+        {
+          "t": "metin",
+          "v": " yazmasını istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Öngörü gücümüz azalabilir,” dedi. Mina, “Kullanıcılar seçeneklerin ne anlama geldiğini bilmeyebilir,” diye ekledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendi kâğıdına, Belediye yeterli kaynak ayıramayabilir yazdı. Başta bu itirazları jüri önünde saklamayı düşünmüştü; şimdi ise sunumun merkezine koymak istiyordu.\n\nDeniz Hanım önerilerini okuyunca memnun oldu. “İyi bir savunma, yalnızca kendi haklılığını övmek değildir,” dedi. “Karşı görüşün neden makul görünebileceğini anlamak ve buna gerekçeli cevap vermektir.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sunumun başına küçük bir not koydu: Bu bir başlangıç tasarımıdır; gerçek dünya denetimi gerektirir.\n\nO gün sınıfın bir köşesinde deneme yaptılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sistemin enerji kullanımını anlattı. Mina, sesli yönlendirme tercihinin nasıl değiştirildiğini gösterdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " veri alanlarını açıklarken bir arkadaşları, “İnsanlar bu kadar ayara zaman ayırmak istemezse?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " cevap verirken hiç kişiselleştirme yapmayan basit sürümün varsayılan seçenek olmasının önemini anlattı. Karmaşık tercihler isteyenler ek seçenekleri açabilecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir başka öğrenci, “Bu kadar temkinli olursanız şehir yavaşlar,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Belki bazı kararlar için biraz daha açıklama gerekir,” diye karşılık verdi. “Ama yanlış kararların düzeltilmesi de zaman ve kaynak tüketir. Hızlı olmayı tek başarı ölçüsü yapamayız.”\n\nProva bittikten sonra üçlü sessizce oturdu. Birbirlerine katılmadıkları konular hâlâ vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", sistemin daha çok veriyle daha isabetli tahminler yapabileceği bazı durumlar olduğunu savunuyordu. Mina ise kullanıcının anlayamadığı bir önerinin isabetli olsa bile sorun çıkarabileceğini düşünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu anlaşmazlığın projelerini zayıflatmadığını fark etti. Onları daha iyi sorular sormaya zorlamıştı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi gün afişi hazırlarken bir kavramı özellikle değiştirdi. Önce “akıllı şehir her şeyi bilir” yazmayı düşünmüştü. Bunun yerine “akıllı şehir doğru soruları sorar” cümlesini seçti. Bilmekle tahmin etmek arasındaki farkı öğrendikçe ilk sözün kibirli olduğunu fark etmişti. Deniz Hanım afişe bakıp bunun da tartışmaya açık bir önerme olduğunu söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " rahatsız olmadı; bir fikir değerliyse iyi bir sorudan kaçmamalıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Küçük kardeşi Ömer gösteri için hazırladıkları kartlara bakıp “Bir durak bana nereye gideceğimi sorsa, ben de ona soru sorabilir miyim?” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “Elbette. Neden bu yolu öneriyorsun, hangi bilgiye dayanıyorsun, fikrimi nasıl değiştiririm diye sorabilirsin.” Ömer bir kartın arkasına iri harflerle “NEDEN?” yazdı. Kart çocukça görünüyordu ama araştırmanın en büyük sorusunu taşıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu çöpe atmadı; proje dosyasının içine, bütün tabloların ve grafiklerin önüne yerleştirdi. Bir gün sistem başka bir öğrenciye anlaşılmaz bir öneri sunduğunda, bu basit sorunun hâlâ işe yarayacağını umuyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Final günü salonda parlak afişler ve öğrencilerin kendi kurduğu modeller vardı. Kimileri hava kirliliğini azaltan ölçüm cihazları tasarlamış, kimileri su kullanımını daha anlaşılır gösteren ekranlar hazırlamıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk kez yalnızca kendi fikirlerinin değil, başkalarının emeğinin de büyüklüğünü gördü. Yarışmada ödül almak güzel olacaktı ama asıl beklentisi kent yönetiminin sorularını ciddiye almasıydı.\n\nSunum sırası geldiğinde "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " model durağın ışıklarını yaktı. Ekran otobüsün doluluğunu, beklenen geliş süresini ve bilginin güncellenme zamanını gösterdi. Mina sesli yönlendirme seçeneğini çalıştırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de üç veri kutusunu tanıttı. Ardından sahnede beklenmedik bir soru geldi. Kent Konseyi'nin genç üyelerinden biri, “Yeni sistemde benim tercihimi kim görebilir?” diye sordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " görevli erişimlerini ve denetim kaydını anlattı. Genç üye devam etti: “Peki yanlış bilgi yüzünden zarar görürsem ne olacak?”\n\n“Şikâyet etmek, düzeltme istemek ve gerektiğinde bağımsız bir incelemeye başvurmak için açık bir yol bulunmalı,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “İnsanların yalnızca bir ekranın doğru çalışmasını beklemesi yeterli değil.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Jüri üyelerinden biri yanındaki dosyayı kapattı. “Sizce mevcut HAFIZA'yı tamamen değiştirmeli miyiz?”\n\nBu soru için hazırlanmış tek cümlelik bir yanıtları yoktu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": ", sonra Mina'ya baktı. Üçü aylardır çalışırken bazı yönlerde farklı düşünmüştü. Sonunda "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Biz aşamalı bir değişim öneriyoruz,” dedi. “Önce gereksiz verileri belirlemek, kullanıcıların seçeneklerini anlaşılır kılmak, sonra bağımsız ölçümle nelerin iyileştiğini görmek istiyoruz. Mevcut sistemin yararlı kısımlarını yok saymıyoruz.”\n\nSalonda birkaç kişi alkışladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " en çok, başta yalnızca teknolojiyi savunan "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsemesine sevindi. O gülümseme karşılıklı dinlemenin küçük bir sonucuydu. Jüri son sorusunu yönelttiğinde Mina söze girdi: “Bir şehirde yaşamaya değer olan şey yalnızca hızlı hareket etmek değildir. Kimsenin geride kalmamasıdır.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ödül töreninden iki saat önce yerel ağda sahte bir görsel dolaşıma girdi. Görselde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " sunumundan alınmış bir fotoğrafın altına “Çocuklar Güneşkent'in bütün kayıtlarını sildirecek” yazılmıştı. Birkaç dakika içinde yüzlerce kişi bu iddiayı paylaşmıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " telefonunu gösterirken sinirden gülüyordu. “Bütün sunumu dinleyip bunu mu çıkarmışlar?”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen karşılık vermek istedi. “Bizi yanlış anlayanların hepsi gerçeği bilsin!” diye bağırdı. Mina onu durdurdu. “Önce bu paylaşımın nereden geldiğini ve ne söylendiğini doğrulayalım.”\n\nÜç arkadaş resmin ilk paylaşıldığı sayfayı bulmaya çalıştı. Görselin üzerine eklenmiş yazı, aslında bir tartışma hesabından yayılmıştı. Fotoğraf gerçekti ama altyazısı sunumdaki önerileri yanlış yansıtıyordu. Kaydı izlediklerinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " “verileri gerektiği kadar kullanmak” dediği bölüm açıkça duyuluyordu. Deniz Hanım'ın önerisiyle kısa, sakin bir düzeltme hazırladılar. Düzeltmede asıl sunumdan doğrulanabilir bir bölüm ve raporun halka açık özeti vardı.\n\n“Elimizdeki yanlış haberi tekrar tekrar göstermeyelim mi?” diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“İnsanlara neyin doğru olduğunu anlatmak daha yararlı olabilir,” dedi Mina. “Yanlış iddiayı büyütmeye gerek yok.”\n\nBütün paylaşımlar silinmedi. Bazıları düzeltmeyi gördüğü hâlde önceki fikrini sürdürdü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu duruma üzülse de internetin bir düğmeyle gerçeği kabul eden bir yer olmadığını anladı. Kanıt sunabilir, yanlış bilgiyi düzeltebilir, ama herkesin ne düşüneceğini kontrol edemezdi.\n\nÖdül törenine döndüklerinde tören başlamıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " eli titriyordu. Deniz Hanım, “Sonuca değil, nasıl çalıştığınıza bak,” dedi. O an "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " için en önemli başarı, eleştiriye kızdığı hâlde onu dinlemeyi; yanlış haberle karşılaşınca doğrulanabilir bilgiye dönmeyi öğrenmiş olmasıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Jüri raporları hazırlanırken öğretmenleri, çocukların son kez pilot mahalleden gelen görüşleri okumalarını istedi. Raporda tam yüz otuz iki yorum vardı. Bazıları bir cümlelik teşekkür, bazıları ayrıntılı eleştiriydi. Bir kişi ekran yazılarının güneş altında zor seçildiğini, diğeri bazı durakların çok kalabalık olduğu saatlerde sesli anlatımın duyulmadığını yazmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce bunları küçük tasarım hataları sandı. Mina, “Kullanamayan biri için küçük hata değildir,” dedi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yorumları üçe ayırdı: doğrulanmış teknik sorunlar, kullanıcıların tercihleri ve yeni araştırma gerektiren iddialar. Böylece beğenilen bir özelliğin herkes için işe yaradığı varsayımını sorguladılar. Özellikle küçük çocuklar ile yaşlı yolcuların aynı düğmeleri aynı kolaylıkta bulmadığı görülüyordu. Mina, deneme sırasında sadece kendi deneyimlerinin yetmeyeceğini, daha çeşitli kullanıcılarla sınama yapmak gerektiğini hatırlattı.\n\nBir yorumda “Sistem neden seçimimi sormadan bildiğini düşünüyor?” yazıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu cümleyi okuyunca aylar önceki ilk durak mesajını hatırladı. O kişinin de kendi özel hikâyesi olabilirdi. Raporun içinde yalnızca gerekli olanı aktardılar; yorum sahibinin kim olduğunu araştırmadılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu yadırgamadı. Artık bir insanı anlamakla onun bütün bilgilerine sahip olmak arasındaki farkı daha iyi biliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğretmenlerinin önerisiyle rapora “Çözülemedi” başlıklı bir sayfa eklediler. Bu sayfada, hangi soruların henüz cevaplanmadığı ve sonraki testte nasıl araştırılacağı açıklanıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu sayfayı gizlemek istemedi. Tam tersine, onu sunumun sonuna koydu. Çünkü doğru bir araştırmanın yalnızca ulaşılan sonuçlarla değil, hangi sorulara henüz yanıt veremediğini dürüstçe belirtmesiyle de değer kazandığını anlamıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Jüri birincilik ödülünü başka bir gruba verdi: Kentin boşalan yağmur suyu depolarını izlemek için düşük maliyetli bir ölçüm ağı tasarlamışlardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " içinden kısa bir hayal kırıklığı geçirdi, sonra arkadaşlarını alkışladı. Kendi projeleri ise toplumsal etki ve kullanıcı katılımı alanında özel bir değerlendirme aldı. Bununla birlikte Kent Konseyi, pilot uygulamanın sonuçlarını inceleyecek bir çalışma grubuna öğrencileri davet etti.\n\nBu davet, kupadan daha zor bir sorumluluktu. Çünkü artık anlatılacak güzel fikirler kadar izlenecek sorunlar da vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", toplantılara tek başına katılmayacaklarını söyledi. Mina'nın erişilebilirlik gözlemleri, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " teknik itirazları ve farklı mahallelerin görüşleri birlikte dikkate alınmalıydı. Konsey başkanı bunu kabul etti. Çalışma grubunun ilk toplantısı halka açık yapılacak, çocuklar aileleri ve öğretmenlerinin desteğiyle katılabilecekti.\n\nEvde babası kutlama pastası hazırlamıştı. Ömer masaya oturunca “Artık otobüs durağı bana ödevimi de hatırlatır mı?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. “İstersen bir hatırlatıcı kullanırsın. Ama onun bütün hayatını bilmesi gerekmiyor.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Büyükbabası çatalını bıraktı. “Peki parkın uzun yolunu seçtiğimde artık bana yanlış yoldasın demeyecek mi?”\n\n“En azından bunun bir tercih olabileceğini anlaması için çalışıyoruz.”\n\nBüyükbabası başını salladı. “Şehir bizi hatırlayabilir. Ama bize kim olduğumuzu emretmesin.”\n\nBu söz "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " çok tanıdık geldi. Araştırmanın ilk gününde durak ekranda onun mutsuz olduğunu iddia etmişti. Şimdi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", tahminlerin bir öneri olarak kalabileceğini, insanın hayatının yerine geçmemesi gerektiğini daha iyi biliyordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birkaç ay sonra pilot uygulamanın yeni sürümü mahalle duraklarına kuruldu. Duraklar hâlâ otobüslerin doluluğunu gösteriyor, isteyenlere sesli yönlendirme yapıyordu. Fakat kimse nedenini anlamadığı kişisel puanlar görmüyordu. Öneri yapan sistem, bunun bir tahmin olduğunu açıkça belirtiyor; kişi isterse tercihini değiştirebiliyordu. Belediye uzmanları, gereksiz kayıtların azaltılması ve silme süreçleri üzerinde çalışmaya devam ediyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir sabah aynı durağa geldi. Ekran bu kez yalnızca şunu yazdı: Bir sonraki araç dört dakika sonra gelecek. İstersen alternatif rotalara bakabilirsin. Müzik kursunu, kütüphaneyi, ablasıyla hazırladığı sürpriz projeyi anmadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce buna sevindi, sonra ekranın sessizliğinin tek başına başarı olmadığını hatırladı. Arkasında çok sayıda insanın düşüncesi, itirazı ve denetimi vardı.\n\nAblasıyla yaptıkları müzik kaydını okul gösterisinde ilk kez çaldılar. Parçanın adını Unutulacak Kadar Özel koymuşlardı. Dinleyenlerden bazıları bunun ne anlama geldiğini sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şöyle anlattı: “İnsan her şeyi bütün dünyaya anlatmak zorunda değil. Ama paylaşmak istediğinde sesinin duyulmasını da ister.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gösteriden sonra "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Gelecek yıl enerji verimliliği projesi yapalım mı?” dedi. Mina, “Önce onu kimin kullanacağını düşünelim,” diye cevap verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ikisine baktı. Bir zamanlar sıradan bir durak mesajıyla başlayan huzursuzluk, arkadaşlarının dünyaya başka sorularla bakmasını sağlamıştı.\n\nOtobüs geldi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bindiğinde ekran ona bir koltuk seçmedi, nereye gideceğini sormadan bildiğini iddia etmedi. Yalnızca yolculuğuna ilişkin gerekli bilgiyi sundu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " camdan dışarı baktı. 2055'in şehri hâlâ ışıklı, hızlı ve karmaşıktı. İnsanlar kimi gün kestirme yoldan gidiyor, kimi gün parkta gereksiz görünen uzun bir yürüyüş yapıyordu. Şehir onları hatırladıkça daha yararlı olabilir, ama kimi şeyleri unutmayı öğrendikçe daha saygılı da olabilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun tek kişinin çözebileceği bir sorun olmadığını biliyordu. Onu sevindiren, artık soruyu birlikte soran insanların bulunmasıydı. Bu, geleceğin en umut verici yanıydı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr112_agirlik": [
+      {
+        "t": "kahraman",
+        "hal": "yalin"
+      },
+      {
+        "t": "metin",
+        "v": " bunu duyunca içine bir ağırlık oturdu."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Belediye sisteme hangi adı vermişti?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "HAFIZA"
+        },
+        {
+          "id": "B",
+          "metin": "GÜNEŞ"
+        },
+        {
+          "id": "C",
+          "metin": "ŞEHİR"
+        },
+        {
+          "id": "D",
+          "metin": "KONSEY"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Belediye sisteme HAFIZA adını vermişti."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 12,
+      "metin": "Elif'e göre bir veriyi yalnızca toplayabiliyor olmak ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Toplamak için yeterli bir gerekçe olur"
+        },
+        {
+          "id": "B",
+          "metin": "Toplamak için tek başına yeterli bir gerekçe olmaz"
+        },
+        {
+          "id": "C",
+          "metin": "Verinin daha güvenli olduğunu gösterir"
+        },
+        {
+          "id": "D",
+          "metin": "Sistemin daha yavaş çalışacağını gösterir"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Bir verinin toplanabilir olması, toplanması için tek başına yeterli gerekçe değildir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 22,
+      "metin": "Elif'in afişteki sözü değiştirmesinin nedeni nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bilmek ile tahmin etmek arasındaki farkı fark etmesi"
+        },
+        {
+          "id": "B",
+          "metin": "Afişin çok renkli olması"
+        },
+        {
+          "id": "C",
+          "metin": "Jürinin bunu istemesi"
+        },
+        {
+          "id": "D",
+          "metin": "Sistemin tüm yanıtları bilmesi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Elif, bilmek ile tahmin etmek arasındaki farkı öğrenince ilk sözün kibirli olduğunu fark eder."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 18,
+      "metin": "Metinde “kimliksiz” sözcüğü ne anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Adı ya da kimliği açıkça belirtilmeyen"
+        },
+        {
+          "id": "B",
+          "metin": "Hiç kullanılmayan"
+        },
+        {
+          "id": "C",
+          "metin": "Sahibi olmayan bir cihaz"
+        },
+        {
+          "id": "D",
+          "metin": "Yanlış bir yazıyla yazılmış"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kimliksiz, verinin üzerinde kişinin adı ya da kimliği açıkça yer almayan durumu anlatır."
+    },
+    {
+      "id": "s5",
+      "beceri": "degerlendirme",
+      "dayanak_sayfa": 20,
+      "metin": "Öğrencilerin yasal ve teknik ayrıntılar konusundaki tutumu nasıldır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kendi kararlarıyla hemen belirlemek"
+        },
+        {
+          "id": "B",
+          "metin": "Uzmanların değerlendirmesine güvenmek ve dikkatli davranmak"
+        },
+        {
+          "id": "C",
+          "metin": "Bu ayrıntıları tamamen görmezden gelmek"
+        },
+        {
+          "id": "D",
+          "metin": "Sadece jürinin görüşüne uymak"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Öğrenciler yasal ve teknik ayrıntıların uzmanlarca belirlenmesi gerektiğini kabul eder."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr112_tahmin",
+        "tur": "kelime",
+        "yazim": "tahmini",
+        "anlam": "Eldeki bilgilerden yola çıkarak öngörülen sonuç.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_ongoru",
+        "tur": "kelime",
+        "yazim": "öngörü",
+        "anlam": "Gelecekte olabilecek bir durumu önceden görme.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_kesinlik",
+        "tur": "kelime",
+        "yazim": "kesinlik",
+        "anlam": "Şüphe bırakmayan, emin olunan durum.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_minimizasyon",
+        "tur": "kelime",
+        "yazim": "veri minimizasyonunun",
+        "anlam": "Bir hizmet için yalnızca gerekli olan en az verinin toplanması ilkesi.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_veri_azaltma",
+        "tur": "kelime",
+        "yazim": "veri azaltma",
+        "anlam": "Gereksiz verilerin toplanmasını ve tutulmasını azaltma.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_veri_birikimi",
+        "tur": "kelime",
+        "yazim": "veri birikimi",
+        "anlam": "Gerekli olup olmadığına bakılmadan biriken çok büyük veri yığını.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_itiraz",
+        "tur": "kelime",
+        "yazim": "itirazı",
+        "anlam": "Bir görüşe ya da karara karşı çıkılarak öne sürülen düşünce.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_karsi_sav",
+        "tur": "kelime",
+        "yazim": "karşı sav",
+        "anlam": "Bir savın doğruluğunu çürütmek için ileri sürülen düşünce.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_onay",
+        "tur": "kelime",
+        "yazim": "onay",
+        "anlam": "Bir görüşü ya da kararı uygun bulup kabul etme.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_kayit",
+        "tur": "kelime",
+        "yazim": "kayıtlarla",
+        "anlam": "Bir olayın ya da bilginin yazıya ya da veriye geçirilmiş hâli.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_belge",
+        "tur": "kelime",
+        "yazim": "belge",
+        "anlam": "Bir bilgiyi ya da olayı kanıtlayan yazılı ya da basılı kâğıt.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_unutma",
+        "tur": "kelime",
+        "yazim": "unutma",
+        "anlam": "Bir bilgiyi zihninde ya da kayıtta tutmamak.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_agirlik",
+        "tur": "deyim",
+        "yazim": "içine bir ağırlık oturdu",
+        "anlam": "Bir olay yüzünden üzüntü ya da sorumluluk duygusu yaşamak.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_icine_agirlik_cokmek",
+        "tur": "deyim",
+        "yazim": "içine ağırlık çökmek",
+        "anlam": "Üzüntüyle dolup bunaltıcı bir duygu yaşamak.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr112_ici_rahatlamak",
+        "tur": "deyim",
+        "yazim": "içi rahatlamak",
+        "anlam": "Bir kaygı geçince huzur bulmak.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr112_tahmin",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr112_tahmin"
+          },
+          {
+            "girdi": "hr112_ongoru"
+          },
+          {
+            "girdi": "hr112_kesinlik"
+          }
+        ]
+      },
+      {
+        "ad": "hr112_minimizasyon",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr112_minimizasyon"
+          },
+          {
+            "girdi": "hr112_veri_azaltma"
+          },
+          {
+            "girdi": "hr112_veri_birikimi"
+          }
+        ]
+      },
+      {
+        "ad": "hr112_itiraz",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr112_itiraz"
+          },
+          {
+            "girdi": "hr112_karsi_sav"
+          },
+          {
+            "girdi": "hr112_onay"
+          }
+        ]
+      },
+      {
+        "ad": "hr112_kayit",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr112_kayit"
+          },
+          {
+            "girdi": "hr112_belge"
+          },
+          {
+            "girdi": "hr112_unutma"
+          }
+        ]
+      },
+      {
+        "ad": "hr112_agirlik",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr112_agirlik"
+          },
+          {
+            "girdi": "hr112_icine_agirlik_cokmek"
+          },
+          {
+            "girdi": "hr112_ici_rahatlamak"
+          }
+        ]
+      }
+    ]
+  }
+}

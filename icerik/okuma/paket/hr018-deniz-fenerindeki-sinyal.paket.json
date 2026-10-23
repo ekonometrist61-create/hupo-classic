@@ -1,0 +1,548 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr018-deniz-fenerindeki-sinyal",
+    "baslik": "Deniz Fenerindeki Sinyal",
+    "tur": "macera",
+    "konu": "deniz_guvenligi",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D16",
+      "D5"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 3,
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 2,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "guvenlik",
+        "dayanisma"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D16",
+        "yardimci_deger": "D5"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "seyir_hr018",
+          "tur": "lexeme",
+          "etiket": "seyir",
+          "yuva": "hr018_seyir",
+          "islev": "first_hint"
+        },
+        {
+          "id": "pano_hr018",
+          "tur": "lexeme",
+          "etiket": "pano",
+          "yuva": "hr018_pano",
+          "islev": "application"
+        },
+        {
+          "id": "ariza_hr018",
+          "tur": "lexeme",
+          "etiket": "arıza",
+          "yuva": "hr018_ariza",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr018",
+          "tur": "concept",
+          "etiket": "Sorumlu bildirim",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 408,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 4,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 9,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Fener neden yanmıyor? Elif ve Bora doğru kişiye nasıl haber verdi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-018"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kıyıdaki deniz feneri her akşam yanardı. O gece ise güneş ufukta kaybolurken fener karanlık kaldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", babasıyla yürüdüğü güvenli "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr018_seyir"
+        },
+        {
+          "t": "metin",
+          "v": " terasında durup denize baktı. Açıkta bir teknenin ışıkları görünüyordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "deniz"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n“Fener neden yanmıyor?” diye sordu. Yanındaki arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", fener binasına koşmayı önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " babası hemen durdurdu: “İçeri girmek bizim işimiz değil. Görevli ekibe haber vermeliyiz.”\n\nTerasta, liman işletmesinin acil iletişim numarasını gösteren bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr018_pano"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Telefon çekiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " panodaki numarayı okudu, babası liman görevlisini aradı. Görevli, fenerin hangi tarafta ve ne zamandır karanlık olduğunu sordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce “Az önce,” diyecekti, sonra düşündü. “Güneş battığından beri,” dedi. “Teknenin ışığını da görüyoruz ama fenerin ışığı yok.”\n\n“İstersen kuleye kadar gidip kapısına bakalım,” diye yineledi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ama bu kez kendisi de duraksadı. Terasın aşağısında deniz kabarıyor, dalgalar taşlara çarpıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bizim gördüğümüzü anlatmamız yeterli,” dedi. Babası görevliye telefonla konumlarını tarif ederken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " fenerin üst kısmındaki ışık yuvasını işaret etti. Böylece hangi fenerden söz ettiklerini kesinleştirdiler.\n\nTelefon görüşmesi bittikten sonra "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", denizdeki teknenin hâlâ ilerlediğini fark etti. “Görmüyorlar mı karanlığı?” diye kaygılandı. Babası, denizcilere yardım etmenin yetkili ekiplerin görevi olduğunu ve teknelerin başka seyir araçları da kullandığını açıkladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", aceleyle bağırıp işaret vermenin işi karıştırabileceğini anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " duvara asılı eski bir bakım fotoğrafını fark etti.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " duvara asılı eski bir bakım fotoğrafını fark etti. Fotoğrafın altında her ay kontrol yazıyordu. İkisi, liman görevlisinin telefon görüşmesinde söylediği bakım defterini merak etti. Görevli, daha sonra çocuklara defterin nasıl tutulduğunu göstermeyi kabul etti.\n\nBir süre sonra limanın servis aracı geldi. Görevliler fenerin elektrik sistemini güvenli biçimde kontrol etmeye başladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", terastan ayrılmadı. Rüzgâr güçlenirken denizdeki tekne liman yetkililerinden yönlendirme aldı.\n\nNihayet yüksek kulede beyaz bir ışık döndü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sevinçle, “Yanıyor!” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise rahat bir nefes aldı. O sırada görevli yanlarına geldi: “Arızayı erken bildirdiniz. Yapılması gerekeni doğru yaptınız.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün görevli, bakım defterinin bir kopyasını gösterdi. Tarih, saat, gözlenen sorun ve yapılan işlem ayrı sütunlarda yazılıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterdeki kaydı okudu: Akşam kontrolünde ışık devresi "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr018_ariza"
+        },
+        {
+          "t": "metin",
+          "v": " giderildi.\n\n“Demek bir sinyal bazen yalnız ışık değildir,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Doğru bilgiyi doğru kişiye ulaştırmak da bir işaret olabilir.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözü çok sevdi. Deniz fenerinin resmini çizdi; altına üç kelime yazdı: "
+        },
+        {
+          "t": "vurgu",
+          "v": "gözle, bildir, güvende kal"
+        },
+        {
+          "t": "metin",
+          "v": ". Bir sonraki akşam fener yanarken iki arkadaş ışığa değil, birlikte yaptıkları doğru işe bakıp gülümsedi.\n\nDil hedefi: ışık–karanlık, neden–sonuç; Kavram/değer: deniz güvenliği, sorumlu bildirim, iş birliği. İkon önerileri: deniz feneri, dalga, telsiz. Okuma sonrası: Çocuklar neden kuleye çıkmadı? Görevliye hangi gözlem yardımcı oldu?"
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Elif ve babası terasta neyi fark etti?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Fenerin yanmadığını"
+        },
+        {
+          "id": "B",
+          "metin": "Teknenin battığını"
+        },
+        {
+          "id": "C",
+          "metin": "Köpeğin kaybolduğunu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Açıkta tekne ışıkları görünüyordu ama fenerin ışığı yoktu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 1,
+      "metin": "Görevli neden fenerin ne zamandır karanlık olduğunu sordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Arızanın ne zaman başladığını bilmek için"
+        },
+        {
+          "id": "B",
+          "metin": "Teknenin rengini öğrenmek için"
+        },
+        {
+          "id": "C",
+          "metin": "Kulenin boyunu ölçmek için"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Görevli, arızanın ne zaman başladığını öğrenerek ekibi doğru yönlendirdi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Görevlinin “Arızayı erken bildirdiniz” sözü neyi gösterir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Doğru kişiye zamanında haber vermenin önemini"
+        },
+        {
+          "id": "B",
+          "metin": "Çocukların fenere çıktığını"
+        },
+        {
+          "id": "C",
+          "metin": "Arızanın çok büyük olduğunu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Sorunu zamanında bildirmek, ekiplerin hızlı müdahale etmesini sağlar."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "Metinde geçen pano ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bilgi ve numaraların asıldığı düz yüzey"
+        },
+        {
+          "id": "B",
+          "metin": "Denizde yüzen bir tekne"
+        },
+        {
+          "id": "C",
+          "metin": "Fenerin en üst katı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Pano, üzerine bilgi asılan düz bir yüzeydir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr018_seyir",
+        "tur": "kelime",
+        "yazim": "seyir",
+        "anlam": "Gemi ya da uçağın yol alması; bir şeye bakıp izleme.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr018_gozlem_yeri",
+        "tur": "kelime",
+        "yazim": "gözlem",
+        "anlam": "Dikkatle bakarak inceleme.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr018_yolculuk",
+        "tur": "kelime",
+        "yazim": "yolculuk",
+        "anlam": "Bir yere gitmek için yapılan gezi.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr018_pano",
+        "tur": "kelime",
+        "yazim": "pano",
+        "anlam": "Bilgi ya da duyuru asılan düz yüzey.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr018_tabela",
+        "tur": "kelime",
+        "yazim": "tabela",
+        "anlam": "Yönü ya da adı gösteren levha.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr018_afis",
+        "tur": "kelime",
+        "yazim": "afiş",
+        "anlam": "Bir etkinliği duyurmak için asılan büyük kâğıt.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr018_ariza",
+        "tur": "kelime",
+        "yazim": "arızası",
+        "anlam": "Bir cihazın ya da sistemin düzgün çalışmamasına yol açan sorun.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr018_hasar",
+        "tur": "kelime",
+        "yazim": "hasar",
+        "anlam": "Bir şeyin zarar görmesi.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr018_bakim",
+        "tur": "kelime",
+        "yazim": "bakım",
+        "anlam": "Bir şeyi düzenli olarak kontrol edip korumak.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr018_seyir",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr018_seyir"
+          },
+          {
+            "girdi": "hr018_gozlem_yeri"
+          },
+          {
+            "girdi": "hr018_yolculuk"
+          }
+        ]
+      },
+      {
+        "ad": "hr018_pano",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr018_pano"
+          },
+          {
+            "girdi": "hr018_tabela"
+          },
+          {
+            "girdi": "hr018_afis"
+          }
+        ]
+      },
+      {
+        "ad": "hr018_ariza",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr018_ariza"
+          },
+          {
+            "girdi": "hr018_hasar"
+          },
+          {
+            "girdi": "hr018_bakim"
+          }
+        ]
+      }
+    ]
+  }
+}

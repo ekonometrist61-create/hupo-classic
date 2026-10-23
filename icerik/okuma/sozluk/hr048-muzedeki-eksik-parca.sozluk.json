@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr048_konservasyon",
+      "tur": "kelime",
+      "yazim": "konservasyon",
+      "anlam": "Eserin bozulmasını önleyen koruma çalışması.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr048_koruma",
+      "tur": "kelime",
+      "yazim": "koruma",
+      "anlam": "Bir şeyi zarardan ya da yok olmaktan esirgeme.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr048_yikim",
+      "tur": "kelime",
+      "yazim": "yıkım",
+      "anlam": "Bir yapının ya da eserin tamamen yok edilmesi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr048_restorasyon",
+      "tur": "kelime",
+      "yazim": "restorasyon",
+      "anlam": "Bir eseri eski hâline getirmek için yapılan belgeli onarım.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr048_onarim",
+      "tur": "kelime",
+      "yazim": "onarım",
+      "anlam": "Bozulmuş bir şeyi düzeltme işi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr048_tahrip",
+      "tur": "kelime",
+      "yazim": "tahrip",
+      "anlam": "Bir şeyi kötü biçimde bozma.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr048_vitrin",
+      "tur": "kelime",
+      "yazim": "vitrinin",
+      "anlam": "Eşyaların sergilendiği camlı dolap.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr048_sergi_dolabi",
+      "tur": "kelime",
+      "yazim": "sergi dolabı",
+      "anlam": "Müzede eserlerin korunup gösterildiği dolap.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr048_raf",
+      "tur": "kelime",
+      "yazim": "raf",
+      "anlam": "Eşya koymak için duvara ya da dolaba yerleştirilen tahta ya da metal levha.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr048_gozunu_kurcalamak",
+      "tur": "deyim",
+      "yazim": "aklını kurcalayan",
+      "anlam": "Zihni meşgul edip rahatsız eden, merak uyandıran.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr048_gozunu_kapatmak",
+      "tur": "deyim",
+      "yazim": "gözünü kapatmak",
+      "anlam": "Bir şeyi görmezden gelmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr048_konservasyon",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr048_konservasyon"
+        },
+        {
+          "girdi": "hr048_koruma"
+        },
+        {
+          "girdi": "hr048_yikim"
+        }
+      ]
+    },
+    {
+      "ad": "hr048_restorasyon",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr048_restorasyon"
+        },
+        {
+          "girdi": "hr048_onarim"
+        },
+        {
+          "girdi": "hr048_tahrip"
+        }
+      ]
+    },
+    {
+      "ad": "hr048_vitrin",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr048_vitrin"
+        },
+        {
+          "girdi": "hr048_sergi_dolabi"
+        },
+        {
+          "girdi": "hr048_raf"
+        }
+      ]
+    },
+    {
+      "ad": "hr048_gozunu_kurcalamak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr048_gozunu_kurcalamak"
+        },
+        {
+          "girdi": "hr048_gozunu_kapatmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

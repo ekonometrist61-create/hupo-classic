@@ -1,0 +1,518 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr022-saat-kulesi-neden-durdu",
+    "baslik": "Saat Kulesi Neden Durdu?",
+    "tur": "gizem",
+    "konu": "olcme_bakim",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D16",
+      "D3"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 3,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif",
+        "guvenlik"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D16",
+        "yardimci_deger": "D3"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "bakim_hr022",
+          "tur": "lexeme",
+          "etiket": "bakım",
+          "yuva": "hr022_bakim",
+          "islev": "first_hint"
+        },
+        {
+          "id": "mekanizma_hr022",
+          "tur": "lexeme",
+          "etiket": "mekanizma",
+          "yuva": "hr022_mekanizma",
+          "islev": "application"
+        },
+        {
+          "id": "cark_hr022",
+          "tur": "lexeme",
+          "etiket": "çark",
+          "yuva": "hr022_cark",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr022",
+          "tur": "concept",
+          "etiket": "Saat okuma ve zaman sıralaması",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 417,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 6,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Kule on ikide çalmadı. Nil ve Emir gerçek zamanı nasıl buldu?",
+    "durum": "taslak",
+    "fis_kodu": "HR-022"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Meydandaki saat kulesi her öğlen on ikide çalardı. O gün çalmadı. Üstelik akrep on biri, yelkovan da altıyı gösteriyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Saat on bir buçukta kalmış!” dedi. Arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " saatine baktı: “Ama şimdi on iki on. Kule kırk dakikadır geride.”\n\nİkisi saat kulesine yaklaşmak istedi, fakat çevresinde "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr022_bakim"
+        },
+        {
+          "t": "metin",
+          "v": " için ayrılmış bir alan vardı. Bunun yerine belediyenin bilgi noktasına gittiler. Görevli, sorunun sabah bildirildiğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen “Demek ki arıza öğlende başlamamış,” diye düşündü.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " defterine üç zamanı yazdı: On bir otuz, on iki, on iki on. “Birinci zaman kulenin durduğu saat. İkinci zaman çalması gereken saat. Üçüncü zaman bizim baktığımız saat,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sıralamayı dikkatle kontrol etti. “Eğer bir saat durmuşsa gerçek zamanı ondan öğrenemeyiz,” diye ekledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O sırada meydanın karşısındaki çiçekçi, kuleden gelen sesleri özlediğini söyledi. “Her gün tam öğlen dükkânın önünde kısa bir mola verirdim. Bugün saati şaşırdım,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", duvardaki başka bir saati gösterdi; çiçekçinin telefonu da doğru saati gösteriyordu. İkisi birlikte saatleri karşılaştırınca farklı araçların aynı işi yapabildiğini konuştular.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Peki kule her zaman on iki kez mi çalar?” diye sordu. Çiçekçi başını salladı. “Hayır, saat başında bulunduğu saati bildiren farklı düzenler var. Bizim kulemiz de kendi kurallarına göre çalışır.” Çocuklar daha önce dikkat etmedikleri bu ayrıntıyı öğrenmiş oldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bilmediği kısmı defterinde boş bıraktı; uydurmak yerine sonra soracaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir süre sonra bakım ustası Fatma Hanım geldi.\n\nBir süre sonra bakım ustası Fatma Hanım geldi. Çocuklar, kuleye girmeden ona gördüklerini anlattılar. Usta bir güvenlik kapısından geçip içerideki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr022_mekanizma"
+        },
+        {
+          "t": "metin",
+          "v": " inceledi. "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr022_cark"
+        },
+        {
+          "t": "metin",
+          "v": " arasında küçük bir parça gevşemişti. Parçayı uygun aletlerle sağlamlaştırdı, sonra saati doğru zamana ayarladı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Kule neden durmuş?” diye sordu. Fatma Hanım, “Bazen büyük makineleri küçük parçalar durdurur,” dedi. “Bu yüzden düzenli bakım gerekir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " meydandaki iki farklı saatin bir an için aynı zamanı göstermediğini fark etti. “Hangisine güveneceğiz?” diye sordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Doğru çalışan ve güncellenen kaynakları karşılaştıracağız,” dedi usta. “Bir ölçüm yanlış olabilir; onu başka bilgilerle kontrol ederiz.”\n\nO akşam kule yeniden çaldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk sesi duyduğunda sevinçten zıplayacaktı ama etraftaki güvercinler ürkmesin diye durdu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine son bir satır ekledi: "
+        },
+        {
+          "t": "vurgu",
+          "v": "Önce gözlemledik, sonra bildirdik"
+        },
+        {
+          "t": "metin",
+          "v": ", en sonunda nedeni öğrendik.\n\nEve dönerken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " şakalaştı: “Saat kulede durmuş, bizim merakımız hiç durmamış!” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülerek, “Zaten soruları sormasaydık çarkın ne işe yaradığını öğrenemezdik,” dedi. Meydan her zamanki gibi kalabalıktı. Bu kez kulağa sıradan gelen saat sesi, ikisine küçük bir keşfi hatırlatıyordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dil hedefi: önce–sonra, saat okuma, zaman sıralaması; Kavram/değer: ölçme, bakım, kamu sorumluluğu. İkon önerileri: saat, çark, not. Okuma sonrası: Kule kaçta durmuştu? Çocuklar nasıl güvenli biçimde yardım sağladı?"
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Kule kaç saatini gösteriyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "On bir buçuk"
+        },
+        {
+          "id": "B",
+          "metin": "On iki on"
+        },
+        {
+          "id": "C",
+          "metin": "Dokuz"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Akrep on birde, yelkovan altıda: saat on bir buçuktu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 1,
+      "metin": "Kule ne kadar geriydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kırk dakika"
+        },
+        {
+          "id": "B",
+          "metin": "On dakika"
+        },
+        {
+          "id": "C",
+          "metin": "Bir saat"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Saat 12.10 iken kule 11.30'da kalmıştı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 1,
+      "metin": "Nil'in “Eğer bir saat durmuşsa…” sözü neyi söylüyor?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Durmuş bir saatten doğru zamanı öğrenemeyiz"
+        },
+        {
+          "id": "B",
+          "metin": "Saatleri hiç kullanmamalıyız"
+        },
+        {
+          "id": "C",
+          "metin": "Kulenin çok yüksek olduğunu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Durmuş bir saat yanlış zamanı gösterir; bu yüzden birkaç kaynağı karşılaştırmak gerekir."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "Metinde geçen bakım ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir şeyin düzenli onarılıp korunması"
+        },
+        {
+          "id": "B",
+          "metin": "Dans etmek"
+        },
+        {
+          "id": "C",
+          "metin": "Saatleri satmak"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Bakım, bir şeyi düzenli kontrol edip koruma işidir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr022_bakim",
+        "tur": "kelime",
+        "yazim": "bakım",
+        "anlam": "Bir şeyi düzenli olarak kontrol edip korumak.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr022_onarim",
+        "tur": "kelime",
+        "yazim": "onarım",
+        "anlam": "Bozulmuş bir şeyi yeniden düzgün çalışır hale getirme.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr022_kullanim",
+        "tur": "kelime",
+        "yazim": "kullanım",
+        "anlam": "Bir şeyi kullanma biçimi.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr022_mekanizma",
+        "tur": "kelime",
+        "yazim": "mekanizmayı",
+        "anlam": "Parçaların birlikte çalışarak bir işi yapmasını sağlayan düzen.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr022_devre",
+        "tur": "kelime",
+        "yazim": "devre",
+        "anlam": "Elektrik akımının dolaştığı yol.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr022_parca",
+        "tur": "kelime",
+        "yazim": "parça",
+        "anlam": "Bir bütünün küçük bölümü.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr022_cark",
+        "tur": "kelime",
+        "yazim": "çarkların",
+        "anlam": "Dönerek hareket sağlayan dişli parçalar.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr022_disli",
+        "tur": "kelime",
+        "yazim": "dişli",
+        "anlam": "Dişleriyle birbirine geçerek dönen parça.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr022_kasnak",
+        "tur": "kelime",
+        "yazim": "kasnak",
+        "anlam": "Kayışla döndürülen yuvarlak tekerlek.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr022_bakim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr022_bakim"
+          },
+          {
+            "girdi": "hr022_onarim"
+          },
+          {
+            "girdi": "hr022_kullanim"
+          }
+        ]
+      },
+      {
+        "ad": "hr022_mekanizma",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr022_mekanizma"
+          },
+          {
+            "girdi": "hr022_devre"
+          },
+          {
+            "girdi": "hr022_parca"
+          }
+        ]
+      },
+      {
+        "ad": "hr022_cark",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr022_cark"
+          },
+          {
+            "girdi": "hr022_disli"
+          },
+          {
+            "girdi": "hr022_kasnak"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr111_denetim",
+      "tur": "kelime",
+      "yazim": "denetim",
+      "anlam": "Bir işin ya da sürecin kurallara uygunluğunu inceleme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_kontrol",
+      "tur": "kelime",
+      "yazim": "kontrol",
+      "anlam": "Bir şeyin doğru ve düzenli olup olmadığına bakma işlemi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_ihmal",
+      "tur": "kelime",
+      "yazim": "ihmal",
+      "anlam": "Gerekeni yapmayarak dikkatsizlik etme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_kalkan",
+      "tur": "kelime",
+      "yazim": "kalkan",
+      "anlam": "Bir şeyi tehlikeden koruyan araç ya da düzen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_siper",
+      "tur": "kelime",
+      "yazim": "siper",
+      "anlam": "Tehlikeden korunmak için arkasına geçilen engel.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_savunmasizlik",
+      "tur": "kelime",
+      "yazim": "savunmasızlık",
+      "anlam": "Koruma olmadığı için tehlikeye açık olma hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_sorusturma",
+      "tur": "kelime",
+      "yazim": "soruşturma",
+      "anlam": "Bir olayın nedenlerini kanıtlarla araştırma.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_inceleme",
+      "tur": "kelime",
+      "yazim": "inceleme",
+      "anlam": "Bir konuyu dikkatle ve ayrıntılı biçimde inceleme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_arastirma",
+      "tur": "kelime",
+      "yazim": "araştırma",
+      "anlam": "Bir konuda bilgi bulmak için sistemli çalışma.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_varsayilan",
+      "tur": "kelime",
+      "yazim": "varsayılan",
+      "anlam": "Önceden belirlenmiş ve kendiliğinden geçerli olan.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_ontanimli",
+      "tur": "kelime",
+      "yazim": "öntanımlı",
+      "anlam": "Aksi belirtilmediği sürece geçerli olan.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_zorunlu",
+      "tur": "kelime",
+      "yazim": "zorunlu",
+      "anlam": "Mutlaka yapılması ya da uyulması gereken.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_soz",
+      "tur": "deyim",
+      "yazim": "söz istedi",
+      "anlam": "Bir tartışmada konuşma hakkı istemek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_soz_almak",
+      "tur": "deyim",
+      "yazim": "söz almak",
+      "anlam": "Konuşmak için sıra ya da izin almak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr111_susmak",
+      "tur": "deyim",
+      "yazim": "susmak",
+      "anlam": "Konuşmaktan vazgeçip sessiz kalmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr111_denetim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr111_denetim"
+        },
+        {
+          "girdi": "hr111_kontrol"
+        },
+        {
+          "girdi": "hr111_ihmal"
+        }
+      ]
+    },
+    {
+      "ad": "hr111_kalkan",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr111_kalkan"
+        },
+        {
+          "girdi": "hr111_siper"
+        },
+        {
+          "girdi": "hr111_savunmasizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr111_sorusturma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr111_sorusturma"
+        },
+        {
+          "girdi": "hr111_inceleme"
+        },
+        {
+          "girdi": "hr111_arastirma"
+        }
+      ]
+    },
+    {
+      "ad": "hr111_varsayilan",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr111_varsayilan"
+        },
+        {
+          "girdi": "hr111_ontanimli"
+        },
+        {
+          "girdi": "hr111_zorunlu"
+        }
+      ]
+    },
+    {
+      "ad": "hr111_soz",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr111_soz"
+        },
+        {
+          "girdi": "hr111_soz_almak"
+        },
+        {
+          "girdi": "hr111_susmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

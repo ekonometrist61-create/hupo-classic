@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr107_dilim",
+      "tur": "kelime",
+      "yazim": "saat dilimini",
+      "anlam": "Dünyada aynı yerel saati kullanan bölge.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_saat_kusagi",
+      "tur": "kelime",
+      "yazim": "saat kuşağı",
+      "anlam": "Boylamı yakın yerlerin ortak saat hesabı.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_zaman_dilimi",
+      "tur": "kelime",
+      "yazim": "zaman dilimi",
+      "anlam": "Belirli bir zaman aralığı ya da yerel saat bölgesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_varsayim",
+      "tur": "kelime",
+      "yazim": "varsayımı",
+      "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_onkabul",
+      "tur": "kelime",
+      "yazim": "önkabul",
+      "anlam": "İncelemeden önce kabul edilen görüş.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_kesin_bilgi",
+      "tur": "kelime",
+      "yazim": "kesin bilgi",
+      "anlam": "Kanıtlarla doğrulanmış, şüphe bırakmayan bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_baglam",
+      "tur": "kelime",
+      "yazim": "bağlamın",
+      "anlam": "Bir sözcüğün, cümlenin ya da olayın geçtiği çevre ve durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_cerceve",
+      "tur": "kelime",
+      "yazim": "çerçeve",
+      "anlam": "Bir olayı ya da düşünceyi çevreleyen genel durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_baglamdan_kopuk",
+      "tur": "kelime",
+      "yazim": "bağlamdan kopuk",
+      "anlam": "Çevresinden ayrılmış, nerede ve nasıl kullanıldığı belli olmayan.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_bakis",
+      "tur": "kelime",
+      "yazim": "bakış açısına",
+      "anlam": "Bir olaya hangi yönden bakıldığı, düşünce açısı.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_perspektif",
+      "tur": "kelime",
+      "yazim": "perspektif",
+      "anlam": "Bir olaya belli bir açıdan bakma biçimi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_gorus_acisi",
+      "tur": "kelime",
+      "yazim": "görüş açısı",
+      "anlam": "Bir konuya bakıştaki yön ve düşünce farkı.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_etek",
+      "tur": "deyim",
+      "yazim": "etekleri zil çalmak",
+      "anlam": "Çok sevinmek, coşkuyla hareketlenmek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_sevinmek",
+      "tur": "deyim",
+      "yazim": "sevinçten havalara uçmak",
+      "anlam": "Aşırı sevinmek, coşkuya kapılmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr107_ici_kararmak",
+      "tur": "deyim",
+      "yazim": "içi kararmak",
+      "anlam": "Üzülmek, moralinin bozulması.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr107_dilim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr107_dilim"
+        },
+        {
+          "girdi": "hr107_saat_kusagi"
+        },
+        {
+          "girdi": "hr107_zaman_dilimi"
+        }
+      ]
+    },
+    {
+      "ad": "hr107_varsayim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr107_varsayim"
+        },
+        {
+          "girdi": "hr107_onkabul"
+        },
+        {
+          "girdi": "hr107_kesin_bilgi"
+        }
+      ]
+    },
+    {
+      "ad": "hr107_baglam",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr107_baglam"
+        },
+        {
+          "girdi": "hr107_cerceve"
+        },
+        {
+          "girdi": "hr107_baglamdan_kopuk"
+        }
+      ]
+    },
+    {
+      "ad": "hr107_bakis",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr107_bakis"
+        },
+        {
+          "girdi": "hr107_perspektif"
+        },
+        {
+          "girdi": "hr107_gorus_acisi"
+        }
+      ]
+    },
+    {
+      "ad": "hr107_etek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr107_etek"
+        },
+        {
+          "girdi": "hr107_sevinmek"
+        },
+        {
+          "girdi": "hr107_ici_kararmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

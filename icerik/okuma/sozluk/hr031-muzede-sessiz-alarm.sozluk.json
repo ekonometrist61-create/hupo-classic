@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr031_sensor",
+      "tur": "kelime",
+      "yazim": "sensörler",
+      "anlam": "Hareket, ısı gibi değişiklikleri algılayan cihaz.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr031_alici",
+      "tur": "kelime",
+      "yazim": "alıcı",
+      "anlam": "Gelen bir sinyali alan araç.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr031_pusula_m",
+      "tur": "kelime",
+      "yazim": "pusula",
+      "anlam": "Yönü gösteren, mıknatıslı araç.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr031_algilamak",
+      "tur": "kelime",
+      "yazim": "algılayabilir",
+      "anlam": "Bir değişikliği duyu ya da cihazla fark etmek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr031_fark_etmek",
+      "tur": "kelime",
+      "yazim": "fark etmek",
+      "anlam": "Bir şeyin farkına varmak.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr031_gozden_kacirmak_m",
+      "tur": "kelime",
+      "yazim": "gözden kaçırmak",
+      "anlam": "Bir ayrıntıyı fark etmemek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr031_vitrin",
+      "tur": "kelime",
+      "yazim": "vitrindeki",
+      "anlam": "Eşyaların sergilendiği camlı dolap ya da bölme.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr031_sergi_dolabi",
+      "tur": "kelime",
+      "yazim": "sergi dolabı",
+      "anlam": "Müzede eserlerin korunup gösterildiği dolap.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr031_raf",
+      "tur": "kelime",
+      "yazim": "raf",
+      "anlam": "Eşya koymak için duvara ya da dolaba yerleştirilen tahta ya da metal levha.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr031_sensor",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr031_sensor"
+        },
+        {
+          "girdi": "hr031_alici"
+        },
+        {
+          "girdi": "hr031_pusula_m"
+        }
+      ]
+    },
+    {
+      "ad": "hr031_algilamak",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr031_algilamak"
+        },
+        {
+          "girdi": "hr031_fark_etmek"
+        },
+        {
+          "girdi": "hr031_gozden_kacirmak_m"
+        }
+      ]
+    },
+    {
+      "ad": "hr031_vitrin",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr031_vitrin"
+        },
+        {
+          "girdi": "hr031_sergi_dolabi"
+        },
+        {
+          "girdi": "hr031_raf"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

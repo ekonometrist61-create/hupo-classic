@@ -1,0 +1,32 @@
+{
+  "hr044_guzergah": {
+    "es": [
+      "hr044_rota"
+    ],
+    "zit": []
+  },
+  "hr044_direnc": {
+    "es": [
+      "hr044_dayaniklilik"
+    ],
+    "zit": []
+  },
+  "hr044_kirilganlik": {
+    "es": [],
+    "zit": [
+      "hr044_dayaniklilik"
+    ]
+  },
+  "hr044_geri_cekilmek": {
+    "es": [],
+    "zit": [
+      "hr044_one_atilmak"
+    ]
+  },
+  "hr044_atilgan_olmak": {
+    "es": [
+      "hr044_one_atilmak"
+    ],
+    "zit": []
+  }
+}

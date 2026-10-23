@@ -1,0 +1,172 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr057_erisilebilirlik",
+      "tur": "kelime",
+      "yazim": "erişilebilirlik",
+      "anlam": "Herkesin kullanabileceği biçimde düzenlenmiş olma durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr057_kapsayicilik",
+      "tur": "kelime",
+      "yazim": "kapsayıcılık",
+      "anlam": "Herkesi içine alabilen, dışlamayan yaklaşım.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr057_karmasiklik",
+      "tur": "kelime",
+      "yazim": "karmaşıklık",
+      "anlam": "Karışık ve anlaşılması zor olma durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr057_simge",
+      "tur": "kelime",
+      "yazim": "simgesi",
+      "anlam": "Bir anlamı ya da kavramı temsil eden işaret.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr057_isaret",
+      "tur": "kelime",
+      "yazim": "işaret",
+      "anlam": "Bir şeyi belirtmek için kullanılan görünür iz ya da şekil.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr057_altyazi",
+      "tur": "kelime",
+      "yazim": "altyazının",
+      "anlam": "Filmde konuşmaların ekranın altına yazılan karşılığı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr057_ceviri_yazisi",
+      "tur": "kelime",
+      "yazim": "çeviri yazısı",
+      "anlam": "Bir metnin başka bir dile çevrilmiş yazılı hâli.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr057_yuzu_aydinlandi",
+      "tur": "deyim",
+      "yazim": "yüzü aydınlandı",
+      "anlam": "Sevinçle yüzü gülmek, mutlu olmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr057_yuzu_dusmek",
+      "tur": "deyim",
+      "yazim": "yüzü düşmek",
+      "anlam": "Üzülüp hüzünlenmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr057_yuzu_gulmek",
+      "tur": "deyim",
+      "yazim": "yüzü gülmek",
+      "anlam": "Sevinçli görünmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr057_erisilebilirlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr057_erisilebilirlik"
+        },
+        {
+          "girdi": "hr057_kapsayicilik"
+        },
+        {
+          "girdi": "hr057_karmasiklik"
+        }
+      ]
+    },
+    {
+      "ad": "hr057_simge",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr057_simge"
+        },
+        {
+          "girdi": "hr057_isaret"
+        }
+      ]
+    },
+    {
+      "ad": "hr057_altyazi",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr057_altyazi"
+        },
+        {
+          "girdi": "hr057_ceviri_yazisi"
+        }
+      ]
+    },
+    {
+      "ad": "hr057_yuzu_aydinlandi",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr057_yuzu_aydinlandi"
+        },
+        {
+          "girdi": "hr057_yuzu_dusmek"
+        },
+        {
+          "girdi": "hr057_yuzu_gulmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

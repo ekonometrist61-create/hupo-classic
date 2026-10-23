@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr109_kanit",
+      "tur": "kelime",
+      "yazim": "kanıtlar",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgiler.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_delil",
+      "tur": "kelime",
+      "yazim": "delil",
+      "anlam": "Bir olayın doğruluğunu gösteren belge ya da nesne.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_dayanak",
+      "tur": "kelime",
+      "yazim": "dayanak",
+      "anlam": "Bir düşünceyi ya da kararı destekleyen temel.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_yorum",
+      "tur": "kelime",
+      "yazim": "yorumlarımızın",
+      "anlam": "Bir olayı ya da veriyi kendi bakışıyla açıklama.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_degerlendirme",
+      "tur": "kelime",
+      "yazim": "değerlendirme",
+      "anlam": "Bir şeyin değerini ya da doğruluğunu inceleyerek hüküm verme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_olgu",
+      "tur": "kelime",
+      "yazim": "olgu",
+      "anlam": "Gözlem ya da kanıtla doğrulanabilen gerçek durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_gozlem",
+      "tur": "kelime",
+      "yazim": "gözlemlerimiz",
+      "anlam": "Bir olguyu dikkatle izleyip kaydetme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_saptama",
+      "tur": "kelime",
+      "yazim": "saptama",
+      "anlam": "Bir durumu ya da değeri belirleyip kesinleştirme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_tespit",
+      "tur": "kelime",
+      "yazim": "tespit",
+      "anlam": "Bir şeyin varlığını ya da niteliğini belirleme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_baglam",
+      "tur": "kelime",
+      "yazim": "bağlamı",
+      "anlam": "Bir sözün ya da olayın geçtiği çevre ve durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_cerceve",
+      "tur": "kelime",
+      "yazim": "çerçeve",
+      "anlam": "Bir olayı ya da düşünceyi çevreleyen genel durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_baglamdan_kopuk",
+      "tur": "kelime",
+      "yazim": "bağlamdan kopuk",
+      "anlam": "Çevresinden ayrılmış, nerede kullanıldığı belli olmayan.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_araya",
+      "tur": "deyim",
+      "yazim": "araya girdi",
+      "anlam": "Bir konuşmaya ya da olaya müdahale etmek, konuşmayı bölmek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_sozunu_kesmek",
+      "tur": "deyim",
+      "yazim": "sözünü kesmek",
+      "anlam": "Birinin konuşmasını yarıda bırakmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr109_sessiz_kalmak",
+      "tur": "deyim",
+      "yazim": "sessiz kalmak",
+      "anlam": "Konuşmadan, bir şey söylemeden durmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr109_kanit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr109_kanit"
+        },
+        {
+          "girdi": "hr109_delil"
+        },
+        {
+          "girdi": "hr109_dayanak"
+        }
+      ]
+    },
+    {
+      "ad": "hr109_yorum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr109_yorum"
+        },
+        {
+          "girdi": "hr109_degerlendirme"
+        },
+        {
+          "girdi": "hr109_olgu"
+        }
+      ]
+    },
+    {
+      "ad": "hr109_gozlem",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr109_gozlem"
+        },
+        {
+          "girdi": "hr109_saptama"
+        },
+        {
+          "girdi": "hr109_tespit"
+        }
+      ]
+    },
+    {
+      "ad": "hr109_baglam",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr109_baglam"
+        },
+        {
+          "girdi": "hr109_cerceve"
+        },
+        {
+          "girdi": "hr109_baglamdan_kopuk"
+        }
+      ]
+    },
+    {
+      "ad": "hr109_araya",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr109_araya"
+        },
+        {
+          "girdi": "hr109_sozunu_kesmek"
+        },
+        {
+          "girdi": "hr109_sessiz_kalmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

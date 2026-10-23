@@ -1,0 +1,1117 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr079-zaman-kapsulunun-sifresi",
+    "baslik": "Zaman Kapsülünün Şifresi",
+    "tur": "bilim_kurgu",
+    "konu": "zaman_kapsulu_gelecek_soru",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif",
+        "bilim_teknoloji"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "sifre_hr079",
+          "tur": "lexeme",
+          "etiket": "şifre",
+          "yuva": "hr079_sifre",
+          "islev": "first_hint"
+        },
+        {
+          "id": "tahmin_hr079",
+          "tur": "lexeme",
+          "etiket": "tahmin",
+          "yuva": "hr079_tahmin",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr079",
+          "tur": "idiom",
+          "etiket": "İlgisini çekmek",
+          "yuva": "hr079_ilgisini",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr079",
+          "tur": "concept",
+          "etiket": "Tahmin ile kanıt ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 3090,
+        "tahmini_sure_dk": 27,
+        "sayfa_sayisi": 24,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 26,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Kapsülün içindeki son sayfa boş. Bir şifre mi, bir unutuş mu, yoksa geleceğe bırakılmış bir soru mu?",
+    "durum": "taslak",
+    "fis_kodu": "HR-079"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "2068 yılının eylül ayında, Armoni Ortaokulu'nun eski spor salonu yenilenirken yerin altında metal bir silindir bulundu. Silindirin kapağında iki tarih yazılıydı: 2038–2068. Yanında da küçük bir uyarı vardı: Geleceğin öğrencilerine. Açmadan önce birlikte karar verin.\n\nAltıncı sınıf öğrencisi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", silindirin ilk fotoğrafını okulun tarih panosunda görünce heyecanlandı. Arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Belki içinde eski bir oyun konsolu vardır,” dedi. Sera, “Bir mesaj olabilir,” diye düşündü. Baha ise kapağın üzerindeki ikinci cümleye takıldı. “Açmadan önce neye karar vereceğiz? Zaten bize bırakılmış.”\n\nOkul müdürü, kapsülü yetkili arşiv uzmanlarıyla birlikte açacaklarını duyurdu. İçeride eski öğrencilerin mektupları, okulun 2038 yılındaki görüntüleri ve dijital kayıtlar bulunabilirdi. Herkesin önünde açmak yerine önce koruma koşulları incelenecekti; eski malzemeleri yanlış biçimde kullanmak zarar verebilirdi. Bu nedenle çocuklar ilk gün yalnız şeffaf koruma kutusunun arkasından silindiri gördüler. "
+        },
+        {
+          "t": "isaret",
+          "kod": "gunes"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "deyim",
+          "yuva": "hr079_ilgisini"
+        },
+        {
+          "t": "metin",
+          "v": " Kapsülün kapağındaki sayı dizisini not etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunun bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr079_sifre"
+        },
+        {
+          "t": "metin",
+          "v": " olabileceğini söyledi. Sera ise “Belki de bir süs,” dedi. Dördü, öğretmenleri Aslı Hanım'ın gözetiminde tarih ve teknoloji kulübüne katılmaya karar verdi. Arşiv uzmanı, kapsül açılmadan önce eski okul gazetelerini ve mezuniyet kayıtlarını incelemelerine izin verecekti.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " o gece dedesinden 2038 yılına ait hatıralar dinledi. Dedesi o dönemde okulun yakınındaki kitapçıda çalışıyordu. İnsanların teknolojiyle ilgili heyecanını hatırlıyordu; herkes, birkaç yıl sonra işleri makinelerin bütünüyle yapacağını konuşuyordu. Oysa aynı yıllarda çocuklar hâlâ arkadaşlarıyla tartışıyor, kaybettikleri kalemleri arıyor, teneffüs zilini bekliyordu. “Bazı şeyler çok hızlı değişir,” dedi dedesi. “Bazı ihtiyaçlar ise kolay değişmez.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözün üzerine düşündü. Geleceğe gönderilecek bir kapsülde yalnız yeni cihazların fotoğrafları mı bulunmalıydı, yoksa insanların nasıl hissettiği de anlatılmalı mıydı?"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün kulüp toplantısında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " eski teknolojik cihazları incelemek istedi. Veri kartındaki dosya biçimini hiç duymamıştı. Uzmanların açıklamasını dinleyince, bilgiyi saklamanın yalnız bir kutuya koymak olmadığını anladı. Bir cihazın kırılmaması bile yetmeyebilirdi; yıllar sonra ona erişecek yazılım bulunmayabilirdi. Sera “Kâğıtlar daha mı güvenli?” diye sordu. Arşiv uzmanı, kâğıdın da nemden, ışıktan ve yanlış saklamadan zarar görebileceğini anlattı. Çocuklar sorunun tek bir teknoloji seçmekten çok, bilginin ileride okunabilmesini düşünmek olduğunu gördü.\n\nKapsülün üzerine yazılmış birlikte karar verin uyarısının nedeni de yavaş yavaş belirginleşiyordu. İçindeki mektuplar, başka çocukların bir zamanlar gönüllü olarak bıraktığı kişisel düşüncelerdi. Onları okulun herkes tarafından görülen duvarına gelişigüzel asmak doğru olmayabilirdi. Okul yönetimi arşiv koşullarını ve paylaşım izinlerini kontrol etti. Bazı belgeler eğitim amaçlı sergilenebilirken bazıları yalnız araştırma için incelenecekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", birine geçmişten mektup göndermekle onu tüm dünyaya yayımlamanın aynı şey olmadığını anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kapsül açıldığında sınıfta küçük bir sergi hazırlandı. İçinden kâğıt mektuplar, bir çocuk çizimi, dönemin okul fotoğrafı ve çalışır durumda olup olmadığı bilinmeyen bir veri kartı çıktı. Kâğıtlar koruma uzmanı tarafından ayrıldı. Veri kartıysa güvenli, çevrimdışı bir ortamda incelenecekti. Öğrencilere, “Eski dijital dosyalar da dikkatli açılmalı,” dendi. “Hangi yazılımla üretildiğini bilmiyorsak veri kaybına ya da güvenlik sorununa yol açabiliriz.”\n\nMektuplarda 2038'in çocukları geleceği hayal ediyordu. Biri bütün kitapların havada uçacağını yazmış, diğeri her çocuğun uzaya gideceğini tahmin etmişti. Sera, “Bu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr079_tahmin"
+        },
+        {
+          "t": "metin",
+          "v": " gerçekleşmedi,” deyince Aslı Hanım, “Gerçekleşmemesi onları değersiz kılmaz,” dedi. “Geleceği anlamanın bir yolu, geçmişte insanların neyi umduğuna bakmaktır.”\n\nÇocuklar veri kartından kurtarılan metinleri incelerken bir dosya buldu: Son Sayfa. Dosya açıldığında yalnızca boş bir sayfa görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun teknik hata olduğunu düşündü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Belki asıl şifre boşlukta,” dedi. Baha, “Belki yazmayı unutmuşlar,” diye karşılık verdi. Aslı Hanım dosyanın oluşturulma tarihini, biçimini ve kontrol kayıtlarını gösterdi. Sayfa gerçekten boş bırakılmış gibi görünüyordu; dosyada kayıp içerik olduğuna dair bir kanıt yoktu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Bunu neden yapmış olabilirler?” diye sordu Sera.\n\nAslı Hanım, “Bir tahmin yürütelim, ama tahminimizi kanıtla karıştırmayalım,” dedi. Çocuklar dört olasılık yazdı: unutulmuş olabilir; hata olmuş olabilir; gelecek öğrencilerinin doldurması için boş bırakılmış olabilir; bir soruya işaret ediyor olabilir. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kapağın üzerindeki cümleyi tekrar okudu: Açmadan önce birlikte karar verin. Belki kapsülün asıl amacı yalnız geçmişi göstermek değil, bugünün çocuklarına bir seçim yaptırmaktı.\n\nDijital metinlerde bir de küçük ses dosyası bulundu. Uzmanlar dosyayı güvenli ortamda açtıklarında gürültülü bir okul bahçesi duyuldu. Çocukların kahkahaları ve uzaktan gelen bir zil sesi, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " kendi okulunu hatırlattı. Sonra bir öğrenci, “Otuz yıl sonra bu sesi hâlâ duyacaklar mı?” diye soruyordu. Ses kaydı kısa sürüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bizim okulda zil daha farklı çalıyor,” dedi. Baha, “Ama teneffüse sevinmek pek değişmemiş,” diye ekledi. Ses kaydı onları tanımadıkları çocuklara yaklaştırmıştı. Geçmiş bir tarih tablosu değil, bir zamanlar nefes almış insanların yaşadığı gerçek bir dönemdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sera mektuplardan birinde küçük bir tohum resmi gördü. Mektubu yazan öğrenci, okul bahçesinde diktikleri fidanın büyüyüp büyümediğini merak ediyordu. Çocuklar okulun bahçesine çıktılar. Eski fotoğraflarla karşılaştırdıklarında güney duvarındaki büyük ağacın yıllardır orada olabileceğini düşündüler. Ancak fotoğraflardan kesin olarak aynı ağaç olduğunu söyleyemiyorlardı. Belediye kayıtlarında bahçeye dikilen ağaçlarla ilgili bilgiler bulundu. Müdürün yardımıyla ilgili kayıtları incelediler. Bir kısmı fidanın yerini doğruluyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir çocuğun yıllar önce bıraktığı küçük bir soruyu yanıtlamak için belge araştırmanın ne kadar heyecanlı olabileceğini gördü.\n\nBaha, eski yazıları okurken 2038 çocuklarının kullandığı bazı sözcükleri anlamakta zorlandı. O dönemde popüler olan oyunların isimleri, moda ifadeler ve kısaltmalar bugün farklıydı. Aslı Hanım, dilin de zamanla değiştiğini hatırlattı. Çocuklar bilinmeyen kelimeleri hemen kendi dönemlerinin anlamıyla yorumlamak yerine, eski kaynakların bağlamına baktı. Böylece kapsül yalnız bir tarih oyunu olmaktan çıktı; bir metni anlamak için yazıldığı zamanı bilmenin önemini gösteren bir çalışmaya dönüştü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Arşivde bulunan okul gazetesinde 2038 yılında yapılan bir toplantının haberi yer alıyordu. Haberin başlığı şuydu: “Zaman Kapsülüne Ne Koyalım?” Eski öğrenciler kendi geleceklerini anlatan birer mektup yazmıştı. Ancak son sayfanın neden boş olduğu haberde açıklanmıyordu. Haberin altında küçücük bir alıntı vardı: Gelecek, yalnız bizim cevaplarımızla tamamlanmayacak.\n\nBaha bu cümleyi görünce, “O zaman boş sayfa gerçekten bilinçli,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " tam emin değildi. “Bir alıntı var diye dosyanın neden boş olduğunu bildiğimizi söyleyemeyiz,” diye uyardı. Arşiv uzmanı onların dikkatini çekti: Belgeler farklı kişiler tarafından yazılmıştı. Gazetedeki söz, kapsülü hazırlayanların bütün düşüncelerini yansıtmayabilirdi. Öğrenciler eski mezunlardan hâlâ ulaşılabilecek kişilerin olup olmadığını araştırmak istedi. Okul yönetimi kamuya açık mezunlar derneği üzerinden uygun bir iletişim kurdu. Kişilerin özel bilgilerine izinsiz ulaşılmadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birkaç gün sonra kapsül projesinde yer almış olan emekli öğretmen Derya Hanım çevrim içi bir görüşmeye katıldı. Çocuklar ilk önce kapsülün yapımını sordu. Öğretmen, o günlerde gelecekteki yaşamı hayal etmenin sınıfı çok heyecanlandırdığını anlattı. “Hepimiz geleceği bilebileceğimizi sandık,” dedi. “Sonra çocuklardan biri, ‘Gelecektekiler bizim tahminlerimizi beğenmezse ne olacak?’ diye sordu. İşte o anda farklı bir şey yapmaya karar verdik.”\n\n“Son sayfayı bu yüzden mi boş bıraktınız?” diye sordu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Evet,” dedi Derya Hanım. “Ama boşluğun kendisi bir cevap değildi. Geleceğin öğrencilerine kendi sorularını sorma hakkı tanıdık. Biz geçmişten seslenebilirdik; onların yerine karar veremezdik.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir an düşündü. “O zaman biz de geleceğe bir soru bırakabiliriz.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Derya Hanım görüşmenin sonunda öğrencilerin merak ettiği bir ayrıntıyı anlattı. Kapsülü hazırlayan sınıfta herkes aynı fikri savunmamıştı. Bazıları onu yalnız eğlenceli bir hatıra olarak görmüş, bazıları gelecek kuşaklara uyarı yazmak istemişti. Bir öğrenci gelecekte hiçbir problemin kalmayacağını hayal etmiş, diğeri bunun imkânsız olduğunu söylemişti. Öğretmenleri, yazacakları mektuplarda tek bir ortak görüşe zorlamamıştı. Bunun yerine her öğrencinin kendi umut ve kaygılarını gerekçesiyle anlatmasını istemişti. Bu yüzden kapsülden birbirine benzemez mektuplar çıkmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", geleceği tek bir resim gibi çizmenin herkesin dünyasını daraltacağını düşündü.\n\nÇocuklar yeni kapsül için sınıflarından öneri topladı. Bazıları ilerideki öğrencilerin aynı okul bahçesinde oyun oynayıp oynamayacağını soruyordu. Bazıları suyun yeterli olup olmayacağını, kimi de dillerin nasıl değişeceğini merak ediyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk başta bütün önerileri tek bir soru altında toplamaya çalıştı. Sonra bunun bazı çocukların sesini kaybettireceğini fark etti. Ortak bir soru hazırlanabilir, ama yanında farklı soruların da bulunmasına izin verilmeliydi. Okul yönetimi öğrencilerin paylaşmayı kabul ettiği soruları küçük bir seçki hâlinde kapsüle koymayı uygun gördü. Böylece çoğunluğun kararı azınlığın merakını tamamen ortadan kaldırmıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", arkadaşlarının geleceğe dair kaygılarını okurken biraz huzursuz oldu. Belki otuz yıl sonra şehirlerde bazı sorunlar çözülmüş, yenileri ortaya çıkmış olacaktı. Hiç kimse bunun ayrıntılarını bilemezdi. Aslı Hanım, bilim kurgu öykülerinin bazen kesin tahminden çok olası gelecekleri düşünmek için yazıldığını anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendi hayalinde 2098'deki bir öğrencinin kapsülü açtığını canlandırdı. Bu öğrenci onların kullandığı kimi sözcükleri anlamayabilir, kimi korkularını gereksiz bulabilir, fakat mektuptaki merak duygusunu tanıyabilirdi. Bu düşünce, geleceğe gönderilecek sorunun biçimini değiştirdi.\n\nBir ders günü Aslı Hanım sınıfa uzun bir kâğıt şerit getirdi. Şeridin bir ucuna 2038, ortasına 2068, öbür ucuna 2098 yazdı. Öğrenciler kendi ailelerinin anlattığı olayları, okulun kuruluşunu ve kapsüllerin tarihlerine ilişkin bilgileri uygun yerlere yerleştirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " önce bütün tarihlerden bir hikâye çıkarmanın kolay olduğunu düşündü. Sonra bir olayın sonucunu başka bir olayın nedeni sanmanın mümkün olduğunu fark etti. Öğretmen, aynı dönemde yaşanan iki olayın mutlaka birbirine bağlı olmadığını anlattı. Tarih çizelgesi yalnız “ne zaman” sorusuna cevap veriyordu; “neden” için başka kaynaklar gerekiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " büyükbabasının anlattığı bir olayı şeride yazdı, sonra karşısına “aile hatırası” notunu düştü. Aslı Hanım bunu görünce sevindi. Anılar tarihi anlamanın önemli parçalarıydı ama resmi belgeyle aynı türden bilgi değildi. Bir öğrenci “O zaman anılara güvenmeyelim,” dedi. Öğretmen, “Güvenmemek ile kaynağın sınırını bilmek aynı şey değil,” diye cevap verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bundan etkilendi. Kapsülde bulunan mektuplar da geleceğe dair kesin rapor değildi; çocukların o günkü düşüncelerini anlatan değerli tanıklıklardı.\n\nZaman şeridinin sonuna yaklaştıklarında 2098 için boş bir alan bırakıldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " “Buraya uçan arabalar çizelim,” dedi. Sera bunun yanına ağaçlar koymak istedi. Baha, gelecekte okulda oynanacak oyunları düşündü. Aslı Hanım hepsine farklı renkli kalem verdi ve şeridin sonunda küçük bir başlık açtı: Tahminlerimiz. Hiçbiri bu çizimleri gerçekleşmiş olay gibi sunmadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " boş alanın ne kadar büyük göründüğünü fark etti. Geleceğe dair çizilen şeylerin kesin olmaması bir eksiklik değildi; henüz yaşanmamış zamanın doğasında vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okul, yeni bir kapsül hazırlamaya karar verdi. Bu kapsül 2098'de açılacaktı. Öğrenciler yine mektup yazabilecekti, ancak bu kez ortak bir sorunun da kapsüle konması istendi. Dört arkadaş görev aldı: Geleceğin öğrencilerine sorulacak soruyu bulacaklardı.\n\nİlk öneriler eğlenceliydi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Uçan arabalar hâlâ var mı?” diye yazdı. Baha, “Robotlar ödev yapıyor mu?” dedi. Sera, “İnsanlar doğayı korumayı öğrendi mi?” sorusunu önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise “Gelecekte çocuklar ne kadar özgür olacak?” diye sordu. Her soru başka bir düşünce taşıyordu. Ama hangisi otuz yıl sonra anlamlı kalacaktı?\n\nTartışma büyüdü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", teknolojinin geleceği değiştirdiğini savunuyordu. Sera, doğanın korunmadığı bir gelecekte teknolojinin tek başına çözüm olmadığını söylüyordu. Baha, okul hayatını daha somut buluyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise herkesin cevabını içine alabilecek bir soru istiyordu. Bir süre hiçbirinde anlaşamadılar. Sonra Aslı Hanım, “Sorunuzun yanıtını gelecektekilerin bulması gerekmiyor,” dedi. “Belki soru onlara neyi düşünmeleri gerektiğini değil, neyi düşünmek istediklerini hatırlatmalı.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bu fikir onları yeniden masaya oturttu. İlk olarak otuz yıl sonraki öğrencilerin bugünkü yaşamlarını bilmeyeceğini düşündüler. Aynı zamanda kendi tahminlerinin de eksik kalabileceğini kabul ettiler. Bir zamanlar gelecekteki herkesin uzaya gideceğini düşünen çocukların mektupları gibi, kendi beklentileri de gerçekleşmeyebilirdi. Soru, kesin tahmin gerektirmemeliydi.\n\nKapsül için seçilen sorunun son biçimi kolay bulunmadı. Sera, doğa konusunda bir sorunun hiç yer almamasına razı değildi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", teknolojiyi doğrudan anmayan bir cümlenin yetersiz olduğunu söylüyordu. Baha ise bütün çocukların cevaplayabileceği bir soru istiyordu. Tartışma sertleşince Aslı Hanım kâğıtları kenara bıraktırdı. “Şimdi herkes diğerinin kaygısını kendi sözleriyle anlatsın,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " Sera'nın gelecekte yaşam alanlarının korunmasını önemsediğini söyledi. Sera, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " yeniliklerin insanların hayatını nasıl değiştireceğini merak ettiğini açıkladı. Baha ise "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " tek bir gruba ait olmayan açık bir soru aradığını dile getirdi. Birbirlerinin sözlerini doğru anladıklarında yeni bir cümle kurmak kolaylaştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Son cümlede sorun sözcüğünü kullanıp kullanmayacakları da tartışıldı. Kimi öğrencilere göre gelecek yalnız sorunlardan ibaret değildi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bugün bildiklerinizle hangi iyiliği büyütebilirsiniz?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bunun fazla belirsiz olduğunu düşündü. Bir süre sonra iki soruyu aynı yerde kullanabileceklerini gördüler: Geleceğin çocukları hem çözmek istedikleri sorunları hem de korumak istedikleri güzel şeyleri anlatabilirdi. Böylece kapsüle konacak ortak metin, bir talimat değil, açık bir davet hâline geldi. Kapsülün içindeki boş sayfanın anlamını şimdi daha iyi kavrıyorlardı: Gelecek öğrencileri yalnız cevap verecek değil, yeni sorular da yazacaktı.\n\nKapsülün hazırlık komitesi, geleceğe nelerin konmaması gerektiğini de tartıştı. Baha okulun öğrencilerinin kişisel iletişim bilgilerini bir anı defterine eklemeyi önerdi. Sera bunun uygun olmadığını söyledi. İnsanların yıllar sonra kimin okuyacağını bilmediği kişisel bilgilerini saklamak riskliydi. Müdür ve arşiv uzmanı, paylaşılabilecek belgeler için gerekli izinlerin kontrol edilmesini istedi. Bazı öğrenciler yalnız ismini yazmak, bazıları ise hiçbir kişisel bilgi paylaşmamak istiyordu. Bu tercihlere saygı duyulmalıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Gelecek bizim her ayrıntımızı bilmek zorunda değil,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir başka tartışma, hangi mektupların seçileceği hakkındaydı. Sadece en güzel yazanların mektupları mı kalmalıydı? "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başlangıçta böyle düşündü; iyi yazılar gelecekte daha çok beğenilirdi. Aslı Hanım, kapsülün bir yarışma olmadığını açıkladı. Çocukların farklı seslerini korumak önemliydi. Daha kısa yazan ya da farklı biçimde kendisini ifade eden öğrencilerin düşünceleri de değerliydi. Bunun üzerine isteyenlerin çizimlerini, kısa notlarını veya sınıfça hazırlanan ortak kayıtları ekleyebilecekleri bir yöntem oluşturuldu. İçerikler güvenli ve onaylı biçimde saklanacaktı. Böylece geleceğin öğrencileri yalnız en güzel cümleleri değil, bir sınıfın ne kadar farklı biçimde düşünebildiğini görebilecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Baha, eski kapsülün kapağındaki iç içe geçmiş soru işaretlerini gösterdi. “Bence iki soru işareti iki zamanı anlatıyor,” dedi. “"
+        },
+        {
+          "t": "vurgu",
+          "v": "Geçmiş bize soruyor, gelecek bize soracak"
+        },
+        {
+          "t": "metin",
+          "v": ".” Bu yorum doğrulanmış değildi ama güzel bir fikirdi. Sera çizimi yeniden yaptı: Bir soru işaretinin ucuna küçük bir tohum, diğerine yıldız koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", geçmişten gelen bir sorunun gelecekte yeni bir soruya dönüşmesini düşündü.\n\nSonunda ortak cümlelerini buldular: Bugün bildiklerinizle hangi sorunu çözebilirsiniz ve bizden daha iyi anlamak istediğiniz şey nedir? "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu cümleyi teknolojiye, Sera doğaya, Baha okul yaşamına, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " insan haklarına bağlayabiliyordu. Fakat soru hiçbirini tek başına dayatmıyordu. Herkes kendi cevabını verebilir, hatta soruyu değiştirmeyi seçebilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kapsüle kişisel bilgiler değil, öğrencilerin yayınlanmasına izin verdiği ortak çalışmalar kondu. Çocuklar geleceğe gönderilecek kayıtların güvenli biçimde saklanması ve yıllar sonra okunabilmesi için yetişkinlerle birlikte farklı arşivleme yöntemlerini konuştu. Derya Hanım eski veri kartlarının açılmasının ne kadar zor olduğunu hatırlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Belki kâğıtla dijital kopyayı birlikte saklamak daha iyi olur,” dedi. Uzmanlar uygun malzeme ve saklama koşulları konusunda karar verdi. Çocuklar güvenli arşivleme işinin sandık seçmekten daha karmaşık olduğunu öğrendi.\n\nKapsülün kapanacağı gün okul bahçesinde küçük bir tören yapıldı. Herkes bir mektup yazmıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", uçan araçlar yerine güvenli ulaşım sorununa odaklanan bir not bırakmıştı. Sera doğa gözlemlerinden söz ediyordu. Baha okulda herkesin öğrenebileceği farklı yollar olmasını istiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " mektubu ise tek cümleyle başlıyordu: Sizin yerinize her şeyi bildiğimi sanmıyorum."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Eski kapsülden çıkan boş sayfanın görüntüsü yeni kapsülün üzerine işlendi. Altına da öğrencilerin hazırladığı ortak soru eklendi. Çocuklar kapağın kapanışını izlerken geçmiş ile geleceğin birbirine bağlandığını hissetti. Zaman bir çizgi gibi uzanıyordu; ama çizginin üzerindeki her insan kendi yerinden bir soru sorabiliyordu.\n\nTörende herkes kendi mektubunu okumadı. Kimi çocuk yazdıklarını başkalarıyla paylaşmak istemiyordu; bu tercihine saygı duyuldu. Sadece gönüllü olanlar kısa bölümler okudu. Bir öğrenci gelecekte de arkadaşlıkların değerli olmasını diliyordu. Başka biri geleceğin okullarında herkesin erişebileceği farklı öğrenme yolları olmasını istiyordu. Sera, en çok doğa gözlem defterlerini kapsüle koymakla gurur duydu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise hazırladıkları dijital arşivin ileride açılabilir olması için uzmanların yaptığı testleri merak ediyordu. Kapsül kapanınca hiçbiri kendi isteğinin tek doğru gelecek olduğunu düşünmüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kapağın son kez kapanmasını izlerken kendisini kısa süreliğine 2098'de hayal etti. Belki o zamanki öğrenciler bugün ona olağanüstü gelen bazı araçları sıradan bulacaktı. Belki kendi dönemlerinin dertleri ve sevinçleri bambaşka olacaktı. Ama yine de bir kutunun içinden çıkan eski bir mektubu okurken benzer bir heyecan yaşayabilirlerdi. Bu düşünce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "belirtme"
+        },
+        {
+          "t": "metin",
+          "v": " rahatlatmıştı. Geleceğin neye benzeyeceğini tamamen kontrol edemezdi; fakat bugünün insanlarına karşı sorumluluk alabilir, bir sonraki kuşağın kendi yolunu bulması için yer bırakabilirdi.\n\nKapsülü hazırlayan çocukların en çok tartıştığı konu aslında ne kadar çok bilgi gönderecekleriydi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " okulun her gününü kaydetmek istiyordu. Sera, böyle yaparlarsa önemli olanı seçemeyeceklerini söyledi. Dört arkadaş mektupları incelerken geçmişteki öğrencilerin ne kadar az şeyle çok şey anlatabildiğini görmüştü. Bir eski defter sayfasında yalnız “Bugün en yakın arkadaşımla barıştım” yazıyordu. Bu kısa cümle, o günün sevinci hakkında uzun bir rapordan daha fazla duygu taşıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendi mektubunda çok sayıda tahmin yerine bir günü anlatmaya karar verdi: Okul bahçesinde dört arkadaşın tartışıp sonra birlikte bir soru bulduğu günü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Mektupları yazarken öğretmen, cevaplanması zor bir soru sordu: “Geleceğin çocukları sizin yazdıklarınızı okuduktan sonra sizi nasıl tanısın isterdiniz?” Baha kendilerinin yalnız teknolojiyle ilgilenen insanlar gibi görünmesini istemiyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bugün kullandıkları araçların yıllar sonra komik gelebileceğini kabul etti. Sera, o zamanki öğrencilerin doğaya verilen önemle ilgilenmesini umdu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise en çok birlikte karar vermeye çalıştıklarının anlaşılmasını istiyordu. Aralarındaki farklar artık bir engel değil, kapsülü zenginleştiren ayrı seslerdi.\n\nYeni kapsül kapanmadan önce çocuklar eskisindeki boş sayfanın kopyasını masaya koydu. Her biri o sayfayı ilk gördüğünde ne düşündüğünü anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " dosyanın bozuk olduğunu sanmıştı. Baha yazılacak şeyin unutulduğunu düşünmüştü. Sera boşluğun kendisine bir anlam yüklemişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise bunun arkasındaki soruyu bulmak istemişti. Aynı sayfaya bakmış, dört ayrı açıklama üretmişlerdi. Sonra kaynak aramış, bir tanığa ulaşmış ve düşüncelerini değiştirmişlerdi. Bu süreç, buldukları cevaptan daha önemli görünüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Aslı Hanım, “Hikâyenizi geleceğe anlatmak için yalnız sonucu yazmayın,” dedi. “Hangi adımlardan geçerek anladığınızı da anlatın.” Çocuklar son sayfanın yanına kısa bir araştırma günlüğü ekledi. Böylece 2098 öğrencileri yalnız boş sayfanın anlamını değil, o anlama ulaşırken sorulan soruları da görebilecekti. Belki onlar da kendi zamanlarında bir başka gizemi çözerken aynı yöntemden yararlanacaktı.\n\nBaha, artık şifrenin bir sayı dizisi olmadığını düşünüyordu. Şifre, geçmişten gelen işaretin arkasındaki düşünceyi anlamak için kullanılan sorulardaydı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " buna itiraz etti: “Kapsülün gerçek şifresi de vardı; onu uzmanlar çözdü.” İkisi güldü. Bazen bir kelimenin gerçek ve mecaz anlamı aynı hikâyede buluşabiliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “O zaman ikisini de öğrendik,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tören için hazırlanan kutunun içine herkes bir eşya bırakmak istemişti. Baha eski bir oyun kartı, Sera kendi çizdiği küçük bir harita, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise geleceğin araçlarıyla ilgili tahmin listesi getirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kutuya sığacak yerin sınırlı olduğunu hatırlattı. Bunun üzerine çocuklar nesneleri neden seçtiklerini anlattı. Kimi anısını saklamak, kimi gelecek öğrencilere bir soru bırakmak istiyordu. Sonunda yalnız seçilmiş birkaç nesneyi koydular; diğerlerinin hikâyesini ortak deftere yazdılar. Kapsül artık her şeyi biriktiren bir kutu değil, düşünülerek hazırlanmış bir mesajdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Törenden sonra "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eve giderken dedesine uğradı. Dedesi ona çocukluğunda telefonların nasıl değiştiğini anlattı. Bir zamanlar cep telefonunun bile şaşırtıcı olduğunu, sonra görüntülü konuşmanın sıradanlaştığını söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Demek ki geleceği tahmin etmek çok zor,” dedi. Dedesi gülümsedi. “Zor,” dedi. “Ama geleceği etkilemek için onu tam tahmin etmek gerekmez. Bugün yaptığın şeyler de yarının bir parçasıdır.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi sabah okul bahçesindeki yeni toprağa baktı. Kapsül görünmüyordu; üzerinde küçük bir levha vardı. Levhada açılacağı tarih ve bir soru bulunuyordu: 2098'de neyi yeniden düşünmek istersiniz? "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", dün yazdıkları sorunun burada başka bir biçime dönüştüğünü gördü. Aslı Hanım, çocukların sorularını korumak yerine gelecekte sorunun değişmesine izin vermenin önemli olduğunu söyledi.\n\nBaha, “Peki ya 2098'de kapsülü açanlar bizim sorumuzu saçma bulursa?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. “O zaman kendi sorularını yazsınlar.” Sera, “Belki bizim bilmediğimiz şeyleri biliyor olacaklar,” diye ekledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Ya da bizim çözdüğümüz bir problemi yeniden çözmek zorunda kalacaklar,” dedi. Dördü bir süre sessiz kaldı. Gelecek yalnız ilerleme değil, dikkat isteyen sorumluluklar da taşıyabilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eski kapsülden çıkan boş sayfayı düşündü. Artık ona eksiklik gibi görünmüyordu. Bazen bir boşluk, unutulmuş bir cevap değil, gelecek bir insan için ayrılmış yerdi. Otuz yıl sonra başka çocuklar bu sayfayı açacak, belki onları hiç tanımadan aynı merakı hissedecekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine son bir cümle yazdı: İyi bir soru, zamanın içinden geçip başka birinin düşüncesinde yeniden başlayabilir."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr079_ilgisini": [
+      {
+        "t": "kahraman",
+        "hal": "ilgi"
+      },
+      {
+        "t": "metin",
+        "v": " ilgisini çeken, metalin üzerindeki küçük bir işaretti: iç içe geçmiş iki soru işareti."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Silindirin kapağındaki tarihler hangileriydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "2038 ve 2068"
+        },
+        {
+          "id": "B",
+          "metin": "2068 ve 2098"
+        },
+        {
+          "id": "C",
+          "metin": "2038 ve 2098"
+        },
+        {
+          "id": "D",
+          "metin": "2028 ve 2068"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kapakta 2038–2068 yazıyordu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Dedesinin sözüne göre hangisi doğrudur?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Teknoloji hızlı değişirken bazı insan ihtiyaçları kolay değişmez"
+        },
+        {
+          "id": "B",
+          "metin": "Her şey yavaş değişir"
+        },
+        {
+          "id": "C",
+          "metin": "İhtiyaçlar hiç değişmez"
+        },
+        {
+          "id": "D",
+          "metin": "Teknoloji hiç değişmez"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Dedesi, hızlı değişen şeyler ile kolay değişmeyen ihtiyaçları ayırıyordu."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Aslı Hanım'a göre gerçekleşmeyen tahminler ne olur?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Değersiz olmaz; geçmişin umutlarını gösterir"
+        },
+        {
+          "id": "B",
+          "metin": "Tamamen değersiz olur"
+        },
+        {
+          "id": "C",
+          "metin": "Bilim insanlarına bırakılır"
+        },
+        {
+          "id": "D",
+          "metin": "Hemen yok edilmelidir"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Gerçekleşmeyen tahmin de, insanların o dönemde neyi umduğunu anlatır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 4,
+      "metin": "Metinde geçen kapsül ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Geleceğe bırakılmak üzere eşyaların saklandığı kapalı kutu"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür kuş"
+        },
+        {
+          "id": "C",
+          "metin": "Bir çeşit sayfa"
+        },
+        {
+          "id": "D",
+          "metin": "Bir oyun konsolu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kapsül, bir dönemin bilgilerini ileride açılmak üzere saklayan kutudur."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr079_sifre",
+        "tur": "kelime",
+        "yazim": "şifre",
+        "anlam": "Yalnız izinli kişilerin bildiği gizli işaret ya da kod.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr079_parola",
+        "tur": "kelime",
+        "yazim": "parola",
+        "anlam": "Bir sistemi açmak için gereken gizli sözcük.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr079_acik_bilgi",
+        "tur": "kelime",
+        "yazim": "herkese açık bilgi",
+        "anlam": "Herkesin ulaşabildiği, gizli olmayan bilgi.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr079_tahmin",
+        "tur": "kelime",
+        "yazim": "tahminler",
+        "anlam": "Kesin bilgi olmadan yapılan olası yorum.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr079_ongoru",
+        "tur": "kelime",
+        "yazim": "öngörü",
+        "anlam": "Gelecekte olabileceği önceden düşünme.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr079_kanit",
+        "tur": "kelime",
+        "yazim": "kanıt",
+        "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr079_ilgisini",
+        "tur": "deyim",
+        "yazim": "ilgisini çeken",
+        "anlam": "Dikkatini üzerine toplayan.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr079_dikkat_cekmek",
+        "tur": "deyim",
+        "yazim": "dikkat çekmek",
+        "anlam": "Göz önüne gelmek, fark edilmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr079_ilgisini_kaybetmek",
+        "tur": "deyim",
+        "yazim": "ilgisini kaybetmek",
+        "anlam": "İlgi göstermeyi bırakmak.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr079_sifre",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr079_sifre"
+          },
+          {
+            "girdi": "hr079_parola"
+          },
+          {
+            "girdi": "hr079_acik_bilgi"
+          }
+        ]
+      },
+      {
+        "ad": "hr079_tahmin",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr079_tahmin"
+          },
+          {
+            "girdi": "hr079_ongoru"
+          },
+          {
+            "girdi": "hr079_kanit"
+          }
+        ]
+      },
+      {
+        "ad": "hr079_ilgisini",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr079_ilgisini"
+          },
+          {
+            "girdi": "hr079_dikkat_cekmek"
+          },
+          {
+            "girdi": "hr079_ilgisini_kaybetmek"
+          }
+        ]
+      }
+    ]
+  }
+}

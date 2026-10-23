@@ -1,0 +1,138 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr071_kronoloji",
+      "tur": "kelime",
+      "yazim": "kronoloji",
+      "anlam": "Olayları zaman sırasına göre dizme.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr071_zaman_cizelgesi",
+      "tur": "kelime",
+      "yazim": "zaman çizelgesi",
+      "anlam": "Olayların tarihleriyle gösterildiği çizelge.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr071_rastgele",
+      "tur": "kelime",
+      "yazim": "rastgele",
+      "anlam": "Sıra gözetmeden, gelişigüzel.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr071_arsiv",
+      "tur": "kelime",
+      "yazim": "arşivinin",
+      "anlam": "Belge ve kayıtların saklandığı yer.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr071_kayit",
+      "tur": "kelime",
+      "yazim": "kayıt",
+      "anlam": "Bir olayın yazılı ya da dijital olarak tutulan bilgisi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr071_gozlerine",
+      "tur": "deyim",
+      "yazim": "gözlerine inanamadı",
+      "anlam": "Gördüğüne çok şaşırmak, doğru olduğuna güçlük çekmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr071_saskina_donmek",
+      "tur": "deyim",
+      "yazim": "şaşkına dönmek",
+      "anlam": "Çok şaşırıp ne diyeceğini bilmemek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr071_goz_atmak",
+      "tur": "deyim",
+      "yazim": "göz atmak",
+      "anlam": "Bir şeye kısaca bakıp geçmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr071_kronoloji",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr071_kronoloji"
+        },
+        {
+          "girdi": "hr071_zaman_cizelgesi"
+        },
+        {
+          "girdi": "hr071_rastgele"
+        }
+      ]
+    },
+    {
+      "ad": "hr071_arsiv",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr071_arsiv"
+        },
+        {
+          "girdi": "hr071_kayit"
+        }
+      ]
+    },
+    {
+      "ad": "hr071_gozlerine",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr071_gozlerine"
+        },
+        {
+          "girdi": "hr071_saskina_donmek"
+        },
+        {
+          "girdi": "hr071_goz_atmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

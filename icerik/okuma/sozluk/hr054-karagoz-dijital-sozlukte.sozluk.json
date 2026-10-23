@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr054_sozluk",
+      "tur": "kelime",
+      "yazim": "sözlüğü",
+      "anlam": "Sözcüklerin anlamlarını gösteren kitap ya da dijital araç.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr054_lugat",
+      "tur": "kelime",
+      "yazim": "lügat",
+      "anlam": "Sözcüklerin anlamlarının alfabetik sıralandığı kitap.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr054_ansiklopedi",
+      "tur": "kelime",
+      "yazim": "ansiklopedi",
+      "anlam": "Konuları ayrıntılı açıklayan çok ciltli eser.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr054_perde",
+      "tur": "kelime",
+      "yazim": "perdesinin",
+      "anlam": "Gölge oyununda gösterimin yansıdığı beyaz yüzey.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr054_ekran",
+      "tur": "kelime",
+      "yazim": "ekran",
+      "anlam": "Görüntünün yansıdığı yüzey.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr054_kostum",
+      "tur": "kelime",
+      "yazim": "kostüm",
+      "anlam": "Bir karakteri canlandırmak için giyilen özel giysi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr054_giysi",
+      "tur": "kelime",
+      "yazim": "giysi",
+      "anlam": "İnsanın vücuduna giydiği her türlü kıyafet.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr054_uniforma",
+      "tur": "kelime",
+      "yazim": "üniforma",
+      "anlam": "Bir kurum ya da grubun ortak giysisi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr054_kulak_kabartmak",
+      "tur": "deyim",
+      "yazim": "kulak kabartmak",
+      "anlam": "Bir konuşmayı dikkatle dinlemeye çalışmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr054_kulak_asmak",
+      "tur": "deyim",
+      "yazim": "kulak asmamak",
+      "anlam": "Söylenene önem vermeyip dinlememek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr054_kulak_vermek",
+      "tur": "deyim",
+      "yazim": "kulak vermek",
+      "anlam": "Dikkatle dinlemek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr054_sozluk",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr054_sozluk"
+        },
+        {
+          "girdi": "hr054_lugat"
+        },
+        {
+          "girdi": "hr054_ansiklopedi"
+        }
+      ]
+    },
+    {
+      "ad": "hr054_perde",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr054_perde"
+        },
+        {
+          "girdi": "hr054_ekran"
+        }
+      ]
+    },
+    {
+      "ad": "hr054_kostum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr054_kostum"
+        },
+        {
+          "girdi": "hr054_giysi"
+        },
+        {
+          "girdi": "hr054_uniforma"
+        }
+      ]
+    },
+    {
+      "ad": "hr054_kulak_kabartmak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr054_kulak_kabartmak"
+        },
+        {
+          "girdi": "hr054_kulak_asmak"
+        },
+        {
+          "girdi": "hr054_kulak_vermek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

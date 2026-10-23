@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr041_kumul",
+      "tur": "kelime",
+      "yazim": "kumulun",
+      "anlam": "Rüzgâr ya da dalgalarla oluşan kum yığını.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_kum_tepesi",
+      "tur": "kelime",
+      "yazim": "kum tepesi",
+      "anlam": "Kumdan oluşmuş yükselti.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_kayalik",
+      "tur": "kelime",
+      "yazim": "kayalık",
+      "anlam": "Taşların çok olduğu sert, engebeli yer.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_gocmen",
+      "tur": "kelime",
+      "yazim": "göçmen",
+      "anlam": "Mevsim değişince başka yerlere göç eden canlı.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_gocer",
+      "tur": "kelime",
+      "yazim": "göçer",
+      "anlam": "Yerini yıl boyunca değiştiren, göçebe.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_yerlesik",
+      "tur": "kelime",
+      "yazim": "yerleşik",
+      "anlam": "Bir yerde kalıcı olarak yaşayan.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_yuva",
+      "tur": "kelime",
+      "yazim": "yuva",
+      "anlam": "Kuşların yumurta bırakıp barındığı yer.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_barinak",
+      "tur": "kelime",
+      "yazim": "barınak",
+      "anlam": "Canlıların korunup barındığı yer.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_siginak",
+      "tur": "kelime",
+      "yazim": "sığınak",
+      "anlam": "Tehlikeden korunmak için sığınılan yer.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_agzi_acik",
+      "tur": "deyim",
+      "yazim": "ağzı açık kalmak",
+      "anlam": "Çok şaşırıp ne diyeceğini bilememek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_dili_tutulmak",
+      "tur": "deyim",
+      "yazim": "dili tutulmak",
+      "anlam": "Şaşkınlıktan konuşamaz olmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr041_agzini_acmamak",
+      "tur": "deyim",
+      "yazim": "ağzını açmamak",
+      "anlam": "Konuşmaktan kaçınmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr041_kumul",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr041_kumul"
+        },
+        {
+          "girdi": "hr041_kum_tepesi"
+        },
+        {
+          "girdi": "hr041_kayalik"
+        }
+      ]
+    },
+    {
+      "ad": "hr041_gocmen",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr041_gocmen"
+        },
+        {
+          "girdi": "hr041_gocer"
+        },
+        {
+          "girdi": "hr041_yerlesik"
+        }
+      ]
+    },
+    {
+      "ad": "hr041_yuva",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr041_yuva"
+        },
+        {
+          "girdi": "hr041_barinak"
+        },
+        {
+          "girdi": "hr041_siginak"
+        }
+      ]
+    },
+    {
+      "ad": "hr041_agzi_acik",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr041_agzi_acik"
+        },
+        {
+          "girdi": "hr041_dili_tutulmak"
+        },
+        {
+          "girdi": "hr041_agzini_acmamak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

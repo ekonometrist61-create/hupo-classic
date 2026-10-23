@@ -1,0 +1,138 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr034_ajanda",
+      "tur": "kelime",
+      "yazim": "ajandasını",
+      "anlam": "Gün ve görevleri yazmak için kullanılan defter.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr034_takvim",
+      "tur": "kelime",
+      "yazim": "takvim",
+      "anlam": "Günleri, haftaları ve ayları gösteren çizelge.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr034_secenek",
+      "tur": "kelime",
+      "yazim": "seçenek",
+      "anlam": "Birden çok olanaktan her biri.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr034_tercih",
+      "tur": "kelime",
+      "yazim": "tercih",
+      "anlam": "Birkaç şeyden birini seçme durumu.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr034_zorunluluk",
+      "tur": "kelime",
+      "yazim": "zorunluluk",
+      "anlam": "Yapılmasının kaçınılmaz olduğu durum.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr034_tebrik",
+      "tur": "kelime",
+      "yazim": "tebrik",
+      "anlam": "Bir başarıdan dolayı kutlama sözü.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr034_kutlama",
+      "tur": "kelime",
+      "yazim": "kutlama",
+      "anlam": "Sevinç ya da başarıyı birlikte anma.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr034_taziye",
+      "tur": "kelime",
+      "yazim": "taziye",
+      "anlam": "Bir kayıp için üzüntüyü paylaşma.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr034_ajanda",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr034_ajanda"
+        },
+        {
+          "girdi": "hr034_takvim"
+        }
+      ]
+    },
+    {
+      "ad": "hr034_secenek",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr034_secenek"
+        },
+        {
+          "girdi": "hr034_tercih"
+        },
+        {
+          "girdi": "hr034_zorunluluk"
+        }
+      ]
+    },
+    {
+      "ad": "hr034_tebrik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr034_tebrik"
+        },
+        {
+          "girdi": "hr034_kutlama"
+        },
+        {
+          "girdi": "hr034_taziye"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

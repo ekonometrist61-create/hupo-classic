@@ -1,0 +1,32 @@
+{
+  "hr048_koruma": {
+    "es": [
+      "hr048_konservasyon"
+    ],
+    "zit": []
+  },
+  "hr048_yikim": {
+    "es": [],
+    "zit": [
+      "hr048_konservasyon"
+    ]
+  },
+  "hr048_onarim": {
+    "es": [
+      "hr048_restorasyon"
+    ],
+    "zit": []
+  },
+  "hr048_tahrip": {
+    "es": [],
+    "zit": [
+      "hr048_restorasyon"
+    ]
+  },
+  "hr048_sergi_dolabi": {
+    "es": [
+      "hr048_vitrin"
+    ],
+    "zit": []
+  }
+}

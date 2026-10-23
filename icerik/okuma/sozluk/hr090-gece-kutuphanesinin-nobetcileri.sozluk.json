@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr090_anlatici",
+      "tur": "kelime",
+      "yazim": "anlatıcı",
+      "anlam": "Bir olayı okura ya da dinleyiciye aktaran kişi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr090_oykucu",
+      "tur": "kelime",
+      "yazim": "öykücü",
+      "anlam": "Öykü anlatan kişi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr090_tanik",
+      "tur": "kelime",
+      "yazim": "tanık",
+      "anlam": "Bir olayı görmüş ya da duymuş kişi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr090_motif",
+      "tur": "kelime",
+      "yazim": "motif",
+      "anlam": "Bir eserde tekrarlanan, anlamı taşıyan öge.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr090_tema",
+      "tur": "kelime",
+      "yazim": "tema",
+      "anlam": "Bir eserin ana düşüncesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr090_gercek_olay",
+      "tur": "kelime",
+      "yazim": "gerçek olay",
+      "anlam": "Yaşanmış, kurgusal olmayan olay.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr090_gozu",
+      "tur": "deyim",
+      "yazim": "gözü karardı",
+      "anlam": "Sonucunu düşünmeden öfkeyle ya da cesaretle davranmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr090_ici_urpermek",
+      "tur": "deyim",
+      "yazim": "içi ürpermek",
+      "anlam": "Korkudan ya da tiksintiden titremek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr090_gozu_acilmak",
+      "tur": "deyim",
+      "yazim": "gözü açılmak",
+      "anlam": "Bir şeyi fark edip anlamak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr090_anlatici",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr090_anlatici"
+        },
+        {
+          "girdi": "hr090_oykucu"
+        },
+        {
+          "girdi": "hr090_tanik"
+        }
+      ]
+    },
+    {
+      "ad": "hr090_motif",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr090_motif"
+        },
+        {
+          "girdi": "hr090_tema"
+        },
+        {
+          "girdi": "hr090_gercek_olay"
+        }
+      ]
+    },
+    {
+      "ad": "hr090_gozu",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr090_gozu"
+        },
+        {
+          "girdi": "hr090_ici_urpermek"
+        },
+        {
+          "girdi": "hr090_gozu_acilmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

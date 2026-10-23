@@ -1,0 +1,62 @@
+{
+  "hr113_supheli": {
+    "es": [
+      "hr113_belirsizlik"
+    ],
+    "zit": []
+  },
+  "hr113_kesinlik": {
+    "es": [],
+    "zit": [
+      "hr113_belirsizlik"
+    ]
+  },
+  "hr113_sema": {
+    "es": [
+      "hr113_model"
+    ],
+    "zit": []
+  },
+  "hr113_simulasyon": {
+    "es": [
+      "hr113_model"
+    ],
+    "zit": []
+  },
+  "hr113_ihtimal": {
+    "es": [
+      "hr113_olasilik"
+    ],
+    "zit": []
+  },
+  "hr113_kesinlik_olasilik": {
+    "es": [],
+    "zit": [
+      "hr113_olasilik"
+    ]
+  },
+  "hr113_onkabul": {
+    "es": [
+      "hr113_varsayim"
+    ],
+    "zit": []
+  },
+  "hr113_kesin_bilgi": {
+    "es": [],
+    "zit": [
+      "hr113_varsayim"
+    ]
+  },
+  "hr113_yok_saymak": {
+    "es": [
+      "hr113_gormezden"
+    ],
+    "zit": []
+  },
+  "hr113_dikkate_almak": {
+    "es": [],
+    "zit": [
+      "hr113_gormezden"
+    ]
+  }
+}

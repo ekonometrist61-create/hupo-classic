@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr028_bulmaca",
+      "tur": "kelime",
+      "yazim": "bulmaca",
+      "anlam": "Düşünerek çözülen soru ve ipuçlarından oluşan oyun.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr028_kelime_oyunu",
+      "tur": "kelime",
+      "yazim": "kelime oyunu",
+      "anlam": "Sözcüklerle eğlenceli bir oyun.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr028_satranc",
+      "tur": "kelime",
+      "yazim": "satranç",
+      "anlam": "Taşlarla oynanan, düşünmeyi gerektiren oyun.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr028_engel",
+      "tur": "kelime",
+      "yazim": "engellerinden",
+      "anlam": "Yolu kapatan ya da zorlaştıran şey.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr028_kolaylik",
+      "tur": "kelime",
+      "yazim": "kolaylık",
+      "anlam": "Bir işi yapmayı kolaylaştıran durum.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr028_zorluk",
+      "tur": "kelime",
+      "yazim": "zorluk",
+      "anlam": "Bir işi güçleştiren durum.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr028_sifre",
+      "tur": "kelime",
+      "yazim": "şifresi",
+      "anlam": "Yalnız bilinen, gizli tutulan kod.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr028_kod",
+      "tur": "kelime",
+      "yazim": "kod",
+      "anlam": "Bir bilgiyi gizlemek ya da düzenlemek için kullanılan işaret dizisi.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr028_anahtar_soz",
+      "tur": "kelime",
+      "yazim": "anahtar",
+      "anlam": "Bir kilidi açan küçük parça.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr028_bulmaca",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr028_bulmaca"
+        },
+        {
+          "girdi": "hr028_kelime_oyunu"
+        },
+        {
+          "girdi": "hr028_satranc"
+        }
+      ]
+    },
+    {
+      "ad": "hr028_engel",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr028_engel"
+        },
+        {
+          "girdi": "hr028_kolaylik"
+        },
+        {
+          "girdi": "hr028_zorluk"
+        }
+      ]
+    },
+    {
+      "ad": "hr028_sifre",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr028_sifre"
+        },
+        {
+          "girdi": "hr028_kod"
+        },
+        {
+          "girdi": "hr028_anahtar_soz"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

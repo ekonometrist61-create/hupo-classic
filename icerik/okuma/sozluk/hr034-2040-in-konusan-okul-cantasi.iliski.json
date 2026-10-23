@@ -1,0 +1,26 @@
+{
+  "hr034_tercih": {
+    "es": [
+      "hr034_secenek"
+    ],
+    "zit": []
+  },
+  "hr034_zorunluluk": {
+    "es": [],
+    "zit": [
+      "hr034_secenek"
+    ]
+  },
+  "hr034_kutlama": {
+    "es": [
+      "hr034_tebrik"
+    ],
+    "zit": []
+  },
+  "hr034_taziye": {
+    "es": [],
+    "zit": [
+      "hr034_tebrik"
+    ]
+  }
+}

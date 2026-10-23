@@ -1,0 +1,62 @@
+{
+  "hr111_kontrol": {
+    "es": [
+      "hr111_denetim"
+    ],
+    "zit": []
+  },
+  "hr111_ihmal": {
+    "es": [],
+    "zit": [
+      "hr111_denetim"
+    ]
+  },
+  "hr111_siper": {
+    "es": [
+      "hr111_kalkan"
+    ],
+    "zit": []
+  },
+  "hr111_savunmasizlik": {
+    "es": [],
+    "zit": [
+      "hr111_kalkan"
+    ]
+  },
+  "hr111_inceleme": {
+    "es": [
+      "hr111_sorusturma"
+    ],
+    "zit": []
+  },
+  "hr111_arastirma": {
+    "es": [
+      "hr111_sorusturma"
+    ],
+    "zit": []
+  },
+  "hr111_ontanimli": {
+    "es": [
+      "hr111_varsayilan"
+    ],
+    "zit": []
+  },
+  "hr111_zorunlu": {
+    "es": [],
+    "zit": [
+      "hr111_varsayilan"
+    ]
+  },
+  "hr111_soz_almak": {
+    "es": [
+      "hr111_soz"
+    ],
+    "zit": []
+  },
+  "hr111_susmak": {
+    "es": [],
+    "zit": [
+      "hr111_soz"
+    ]
+  }
+}

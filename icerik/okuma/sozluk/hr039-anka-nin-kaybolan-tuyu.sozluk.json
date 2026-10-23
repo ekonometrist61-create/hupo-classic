@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr039_goc",
+      "tur": "kelime",
+      "yazim": "göç",
+      "anlam": "Canlıların uygun koşullar için yer değiştirmesi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr039_yolculuk_k",
+      "tur": "kelime",
+      "yazim": "yolculuk",
+      "anlam": "Bir yere gitmek için yapılan gezi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr039_yerlesme",
+      "tur": "kelime",
+      "yazim": "yerleşme",
+      "anlam": "Bir yerde kalıcı olarak oturma.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr039_manyetik",
+      "tur": "kelime",
+      "yazim": "manyetik",
+      "anlam": "Mıknatıs gibi çekim özelliği olan.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr039_elektrik",
+      "tur": "kelime",
+      "yazim": "elektrik",
+      "anlam": "Enerji taşıyan, akım oluşturan güç.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr039_isik",
+      "tur": "kelime",
+      "yazim": "ışık",
+      "anlam": "Gözümüzle gördüğümüz enerji.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr039_parilti",
+      "tur": "kelime",
+      "yazim": "parıltısını",
+      "anlam": "Işığın göz kamaştıracak biçimde yansıması.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr039_isilti",
+      "tur": "kelime",
+      "yazim": "ışıltı",
+      "anlam": "Parlak ve göz alıcı görünüm.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr039_karanlik",
+      "tur": "kelime",
+      "yazim": "karanlık",
+      "anlam": "Işığın olmadığı durum.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr039_kanat_germek",
+      "tur": "deyim",
+      "yazim": "kanat germek",
+      "anlam": "Birini koruyup kollamak.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr039_kanatlanmak",
+      "tur": "deyim",
+      "yazim": "kanatlanmak",
+      "anlam": "Çok sevinmek; hafifleyip uçar gibi olmak.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr039_goc",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr039_goc"
+        },
+        {
+          "girdi": "hr039_yolculuk_k"
+        },
+        {
+          "girdi": "hr039_yerlesme"
+        }
+      ]
+    },
+    {
+      "ad": "hr039_manyetik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr039_manyetik"
+        },
+        {
+          "girdi": "hr039_elektrik"
+        },
+        {
+          "girdi": "hr039_isik"
+        }
+      ]
+    },
+    {
+      "ad": "hr039_parilti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr039_parilti"
+        },
+        {
+          "girdi": "hr039_isilti"
+        },
+        {
+          "girdi": "hr039_karanlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr039_kanat_germek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr039_kanat_germek"
+        },
+        {
+          "girdi": "hr039_kanatlanmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

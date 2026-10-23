@@ -1,0 +1,821 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr043-kuledeki-son-isik",
+    "baslik": "Kuledeki Son Işık",
+    "tur": "macera",
+    "konu": "hava_gozlem",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D3"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "gizem",
+        "bilim_teknoloji"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D3"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "anten_hr043",
+          "tur": "lexeme",
+          "etiket": "anten",
+          "yuva": "hr043_anten",
+          "islev": "first_hint"
+        },
+        {
+          "id": "meteoroloji_hr043",
+          "tur": "lexeme",
+          "etiket": "meteoroloji",
+          "yuva": "hr043_meteoroloji",
+          "islev": "application"
+        },
+        {
+          "id": "olasilik_hr043",
+          "tur": "lexeme",
+          "etiket": "olasılık",
+          "yuva": "hr043_olasilik",
+          "islev": "application"
+        },
+        {
+          "id": "sagnak_hr043",
+          "tur": "lexeme",
+          "etiket": "sağanak",
+          "yuva": "hr043_sagnak",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr043",
+          "tur": "idiom",
+          "etiket": "El kaldırmak",
+          "yuva": "hr043_el_kaldirmak",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr043",
+          "tur": "concept",
+          "etiket": "Gözlem, tahmin ve kanıt ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 2045,
+        "tahmini_sure_dk": 20,
+        "sayfa_sayisi": 18,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 19,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Eski kulede yanıp sönen bir ışık var. Gizli bir mesaj mı, yoksa hava gözleminin bir parçası mı?",
+    "durum": "taslak",
+    "fis_kodu": "HR-043"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yağmurdan sonraki serin akşamda, kasabanın üzerindeki eski gözlem kulesinin penceresinde üç kez ışık göründü. Beşinci sınıf öğrencisi Nehir, balkonlarında otururken ışığın önce kısa, sonra uzun aralıklarla yandığını fark etti. Herkes kulenin yıllardır kullanılmadığını söylüyordu. Nehir ise geçen ay aynı tepede yenilenen bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr043_anten"
+        },
+        {
+          "t": "metin",
+          "v": " görmüştü.\n\n\"Anne, kulede biri olabilir mi?\" diye sordu.\n\nAnnesi perdeyi açıp baktı. \"Olabilir. Ama gece tek başımıza oraya gitmek doğru olmaz. Yarın belediyenin bilgi hattına sorabiliriz.\"\n\nNehir ertesi sabah okulda gördüklerini en yakın arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": " anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " doğa olaylarıyla ilgili videolar izlemeyi severdi. \"Belki gizli bir haberleşme sistemi,\" dedi heyecanla.\n\nÜçüncü arkadaşları Defne ise hemen karşı çıktı. \"Ya bakım lambasıysa? Önce gözlemimizi yazalım.\"\n\nÖğretmenleri Meryem Hanım bir bilim gözlem etkinliği planlıyordu. Çocukların notlarını görünce kulenin bulunduğu tepeyi gösteren eski bir fotoğraf çıkardı. Fotoğrafta kulenin yanında rüzgâr yönünü gösteren bir ok vardı. \"Bu yer eskiden hava gözlemleri için kullanılmış,\" dedi. \"Bugünkü işlevini bilmiyoruz. Birlikte araştırabiliriz.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çantasından çizgili defterini çıkarıp kuleye ait bir resim çizdi. Üzerine üç ışık işareti koydu. Nehir dikkatle baktı. \"Ben üç ışık gördüm ama aralarında eşit süre var mıydı, bilmiyorum,\" dedi. Defne \"O zaman aralıklara eşit çizgi koymayalım,\" diye önerdi. Çizimin altına "
+        },
+        {
+          "t": "vurgu",
+          "v": "yaklaşık gözlem"
+        },
+        {
+          "t": "metin",
+          "v": " yazdılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bu küçük kelimenin neden önemli olduğunu o an kavradı. Kesin olmayan bir şeyi kesinmiş gibi göstermek, resme bakacak herkesi yanlış yönlendirebilirdi. Bir sonraki gözlem için saat tutmayı, rüzgâr ve hava durumunu da not etmeyi planladılar. Her birinin ayrı görevi olacaktı. Nehir görsel kaydı, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " zamanlamayı, Defne notları kontrol edecekti. Böylece aynı olayı üç kişinin farklı bakışla inceleyebileceğini düşündüler.\n\nİlk görevleri, kuleye yaklaşmadan güvenilir bilgi bulmaktı. Belediye sayfasındaki duyuruları incelediler. Kulede bazı "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr043_meteoroloji"
+        },
+        {
+          "t": "metin",
+          "v": " sensörlerinin yenilendiğini öğrenince "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " gizli haberleşme fikri zayıfladı. Yine de geceki ışığın ne anlama geldiği açıklanmamıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir gün önce Nehir'in küçük kardeşi rüzgâr gülünü döndürmekte zorlanmıştı. Nehir ona, \"Rüzgâr yoksa dönmez,\" demişti. Kardeşi üfleyerek çarkı döndürünce ikisi gülmüştü. Okuldaki gözlem köşesinde Nehir bu anıyı anlattı. Öğretmenleri hava hareketinin farklı hızlarda olabileceğini, ölçüm araçlarının doğru kullanılmasının önemini açıklarken çocuklardan gözlemlerini basit cümlelerle yazmalarını istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başlangıçta \"çok rüzgârlı\" diye not aldı. Defne ona \"Ne kadar?\" diye sordu. Sınıftaki rüzgâr ölçerin değerini ve saati eklediler. Bu küçük değişiklik, bir gözlemden daha karşılaştırılabilir bir kayda geçmelerini sağladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Meryem Hanım, öğrencileri okulun küçük hava köşesine götürdü. Termometre, yağmur ölçer ve rüzgâr yönünü gösteren basit bir düzenek vardı. Nehir sabah sıcaklığını deftere yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " gökyüzündeki bulutların şeklini çizdi. Defne ise rüzgârın aniden yön değiştirdiğini fark etti.\n\n\"Hava tahmini yalnızca bulutlara bakmak mıdır?\" diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n\"Hayır,\" dedi öğretmenleri. \"Sıcaklık, basınç, nem, rüzgâr ve daha birçok veri birlikte değerlendirilir. Üstelik tahminin kesinlik derecesi vardır.\"\n\nOkuldaki hava köşesinin termometresi güneş altında kaldığında daha yüksek değer gösterebiliyordu. Defne, farklı yere taşındığında ölçümün niçin değiştiğini merak etti. Öğretmenleri, ölçümlerin karşılaştırılabilir olması için araçların doğru yere konması ve aynı yöntemle kullanılması gerektiğini anlattı. Nehir, evlerinin balkonunda tuttuğu sıcaklık notlarıyla okul kayıtlarının neden farklı olduğunu anladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yağmur ölçerin boşaltılması gerektiğini unuttuğu bir günü hatırladı. \"Demek sayı kadar sayının nasıl elde edildiği de önemli,\" dedi. Meryem Hanım, \"Bunu raporunuzun en üstüne yazın,\" diye önerdi. Çocuklar artık meteorolojiyle ilgili bir sözcük öğrendiklerinde onu doğrudan örneklerle ilişkilendirebiliyordu: nem, yağış, basınç ve rüzgâr yalnızca kitapta gördükleri kelimeler değildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O gün okulun küçük bahçe şenliğinin duyurusu yapılacaktı. Sınıf süslemeleri hazırlıyordu. Nehir hava tahmini sitesinde akşam için gök gürültülü "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr043_sagnak"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr043_olasilik"
+        },
+        {
+          "t": "metin",
+          "v": " gördü. Arkadaşı Tuna, \"Burada güneş var, yağmur gelmez,\" dedi. Defne buna itiraz etti: \"Bir yerde güneş olması, birkaç saat sonra başka bir hava olayı yaşanmayacağını göstermez.\"\n\nÇocuklar öğretmenlerinden resmi tahmin ve uyarıların nereden takip edildiğini öğrendi. Başka kaynaklarda farklı ifadeler görünce de tek bir videoya bakarak karar vermemeleri gerektiğini anladılar. O akşam notlarını gözden geçirirken \"hava durumu\" ile \"hava tahmini\" sözcüklerini aynıymış gibi kullanmış olduğunu gördü. Öğretmeninin anlattıklarını hatırladı: Biri belirli bir zamanda gözlenen durumu, diğeri geleceğe ilişkin değerlendirmeyi anlatıyordu. Defterindeki iki cümleyi düzeltti. Bu küçük ayrım, sonraki günün sorularını daha açık sormasına yardım edecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Nehir akşamki kule ışıklarının havayla ilişkili olabileceğini düşünmeye başladı.\n\nÖğle arasında duyuru panosuna küçük bir çizelge astılar: Gözlem, tahmin, gerçekleşen hava. Sınıftaki diğer öğrenciler de kendi gözlemlerini ekledi. Kimileri bulutları resmetti, kimileri rüzgârı hissettiğini yazdı. Çizelge giderek bir dedektif panosuna benziyordu. Fakat bu kez dedektiflerin peşinde bir insan değil, değişen hava vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Meryem Hanım, meteoroloji bölge müdürlüğündeki eski öğrencisi Burcu Hanım'ı çevrim içi görüşmeye davet etti. Burcu Hanım bir hava uzmanıydı. Öğrenciler sırayla sorularını yöneltti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kuledeki yanıp sönen ışığın gizli bir mesaj olup olmadığını sordu.\n\n\"Kulede ekipman kontrolü için kullanılan ışıklar olabilir,\" dedi uzman. \"Ama görüntüye bakarak görevini kesin söyleyemem. Hangi sistem olduğunu kurumdan doğrulamamız gerekir.\"\n\nNehir, \"Bir hava istasyonu tehlikeyi nasıl bildirir?\" diye sordu.\n\nBurcu Hanım, otomatik istasyonların ölçümleri elektronik yollarla iletebildiğini anlattı. Gözlem verileri uzmanlarca incelenir, uygun görülürse resmî uyarılar yayımlanırdı. Kuledeki ışık tek başına halka yönelik bir alarm anlamına gelmiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Burcu Hanım çevrim içi görüşmede bir örnek de gösterdi. İki haritada aynı bölgenin farklı zamanlardaki hava durumunu simgelerle işaretlemişti. Bir haritada yağmur olasılığı görünürken ötekinde yağışın gerçekleştiği alan gösteriliyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " iki haritayı ilk anda aynı sandı. Burcu Hanım, \"Biri tahmin, biri gözlem,\" dedi. \"Birbirine benzeyebilirler ama görevleri farklıdır.\" Çocuklar bir tahmini değerlendirirken ne zaman yayımlandığına ve hangi süreyi kapsadığına dikkat etmeleri gerektiğini öğrendi. Nehir bunu çok yararlı buldu; çünkü internette dolaşan eski bir uyarıyı güncel sanmanın da yanlış kararlar doğurabileceğini fark etti. Defne, sınıf panosuna tarihi olmayan hiçbir uyarı resmi asmayacaklarına karar verdi.\n\nGörüşme bittikten sonra Meryem Hanım önemli bir soru sordu: \"Bir ipucu gördüğünüzde hikâyeyi kim tamamlıyor?\"\n\n"
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr043_el_kaldirmak"
+        },
+        {
+          "t": "metin",
+          "v": " \"Bazen biz tamamlıyoruz. Ama kafamızdan.\" Sınıf güldü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"O hâlde bilmediğimiz kısmı araştırmadan kesin konuşmayacağız,\" dedi öğretmenleri.\n\nNehir yine de kulenin ışığını unutamıyordu. Ertesi akşam balkondan baktığında ışık bir kez daha yandı. Bu kez saatini not etti ve annesiyle birlikte görüntünün kısa bir videosunu çekti. Videoda uzaktaki kule görünüyordu ama ışığın niçin yandığı belli değildi. Nehir kameranın sınırlarını da fark etti: Bir görüntü, her sorunun cevabı değildi.\n\nŞenlikten bir gün önce sınıf içinde küçük bir tartışma yaşanmıştı. Tuna, hava tahmininin bazen tutmadığını söyleyerek uyarılara hiç güvenmemeyi savunuyordu. Defne ise bir tahminin olasılık bildirdiğini, bu yüzden gerçekleşmeyen bir olayın bütün tahmin yöntemlerini geçersiz kılmayacağını anlattı. Meryem Hanım çocuklardan iki cümleyi karşılaştırmalarını istedi: \"Mutlaka yağmur yağacak\" ve \"Sağanak olasılığı bulunuyor.\" Nehir ikinci cümlenin daha doğru olduğunu söyledi; kesinlik bildiren sözcükler farklı kararlar doğurabilirdi. Öğretmenleri bunun üzerine kısa bir etkinlik yaptırdı. Çocuklar meteoroloji bültenlerindeki \"olası\", \"bekleniyor\", \"yerel\" gibi sözcükleri işaretledi. Tuna sonunda \"Demek hava tahmini kehanet değil,\" dedi. Sınıf güldü. Meryem Hanım, \"Evet, bilimsel verilere dayalı bir değerlendirme,\" diye tamamladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Cuma sabahı hava açık başladı. Okul bahçesindeki masalara kitaplar dizildi, öğrencilerin yaptığı afişler asıldı. Nehir görevlilerden biriydi. Ancak öğleye doğru rüzgâr kuvvetlendi. Hafif afişler sallanıyor, bazı bulutlar kısa sürede çoğalıyordu. Meryem Hanım, okul idaresiyle birlikte güncel hava uyarılarını kontrol etti.\n\nŞenliğin açık hava bölümü ertelendi. Bazı öğrenciler üzüldü. Tuna, \"Belki yağmur yağmayacak. Boşuna hazırlanmış olduk,\" dedi.\n\nNehir, \"Belki yağmaz,\" diye cevap verdi, \"ama uyarı varsa önlem almak doğru. Bütün masaları içeri taşıyabiliriz.\"\n\nMasalardan birinin üzerinde, geçen yılki öğrencilerin hazırladığı çizim kitabı duruyordu. Nehir onu almak için geri dönecekti ama öğretmeni bahçedeki görevin sona erdiğini söyledi. Bir görevli kitabı güvenle içeri getirdi. Nehir önce kendi başına çıkabileceğini düşünmüştü. Sonra kararın neden yetişkinler tarafından verildiğini hatırladı; sert hava koşullarında kontrolsüz hareket etmek yeni riskler oluşturabilirdi. İçeri girdiklerinde başka bir sınıfın üzgün öğrencileriyle karşılaştılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Şenlik iptal olmadı, sadece yer değiştirdi,\" dedi. Tuna ve arkadaşları masaları yeniden kurdu; kitapların yanına bulut çizimleri asıp salonu küçük bir bilim müzesine çevirdiler. Böylece herkesin emeği değerlendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar öğretmenlerin yönlendirmesiyle kitapları kapalı salona taşıdı. İçeri taşınan masaların biri diğerlerine göre ağırdı. Nehir önce onu tek başına kaldırmayı denedi, sonra öğretmeninden yardım istedi. Birlikte taşırken \"Bugün yalnızca hava değil, ekip çalışması da öğrendik,\" diye şaka yaptı. Tuna kütüphane kitaplarının ıslanmadığını görünce rahatladı. Çünkü bir ay boyunca resimledikleri öyküleri ilk kez ziyaretçilere gösterecekti.\n\nKısa süre sonra yağmur başladı. Pencereden dışarı bakarken sert damlaların bahçedeki boş masalara vurduğunu gördüler. Eşyalar zarar görmemiş, öğrenciler içeride güvendeydi.\n\nTuna Nehir'e dönüp \"Ben yalnızca şimdiki güneşe baktım,\" dedi. \"Sen sonraki saatleri de düşündün.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tuna o gün Nehir'le birlikte salonun penceresinden bahçeyi izledi. Yağmurdan sonra rüzgâr hafifledi, bulutların bir kısmı dağıldı. Tuna \"Şimdi dışarı çıkabiliriz,\" dedi. Nehir, etkinliğin yeniden dışarı taşınıp taşınmayacağına öğretmenlerinin karar vereceğini hatırlattı. Çünkü hava yalnızca o anda pencereden görünen manzaradan ibaret değildi. Okul yönetimi etkinliği içeride sürdürmeyi uygun buldu. Bu karar ilk başta bazılarına gereksiz göründü ama içerideki program da çok güzel geçti. Çocuklar çizimlerini korumuş, misafirler rahatça kitapları incelemişti. Tuna, bir günün başarılı olması için bütün planların ilk biçimiyle gerçekleşmesinin gerekmediğini anladı.\n\n\"Aslında bunu öğretmenimiz ve uzmanların uyarısı sayesinde yaptık,\" diye karşılık verdi Nehir.\n\nMeryem Hanım çocuklardan günün sonunda bir karşılaştırma yapmalarını istedi. Sabah planlanan şenlikle gerçekleşen şenlik arasında hangi farklar vardı? Nehir masaların yerinin değiştiğini, Tuna bazı oyunların içeride oynanabildiğini, Defne ise kimi süslemelerin kaldırıldığını yazdı. Fakat ortak amaç değişmemişti: Öğrencilerin hazırladığı kitapları ve çizimleri paylaşmak. Nehir, bir planı uyarlamanın vazgeçmek anlamına gelmediğini fark etti. Sınıfın küçük gazetesi için yeni bir başlık buldu: \"Yağmurlu Günün Kitap Şenliği.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenlik içeride devam etti. Çocuklar kitaplarını anlattı, hazırladıkları hava gözlem tablosunu misafirlere gösterdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " masaya, \"Hava bir sır saklamaz; sadece onu anlamak için veri gerekir,\" yazılı küçük bir kart koydu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Nehir belediyeye soruyu yöneltirken annesinin yardımını almıştı. Başvuruda kişisel bir şikâyet değil, gözlemlenen ışığın hangi amaçla kullanıldığını öğrenmek istediklerini açıklamıştı. Yanıt kısa ama anlaşılırdı; ilgili birim, tesisin bakım kontrolleri hakkında genel bilgi vermişti. Nehir metni sınıf panosuna olduğu gibi asmak yerine öğretmeniyle birlikte özetledi. Kurum adını, yanıtın tarihini ve sorulan soruyu da eklediler. Böylece arkadaşları bilgiyi nereden öğrendiklerini görebilecekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Keşke ışığın mors alfabesiyle mesaj verdiği doğru çıksaydı,\" diye şaka yaptı. Defne, \"O zaman da bunu kanıtlamak gerekirdi,\" dedi.\n\nHafta sonunda belediyeden yanıt geldi. Yenilenen kuledeki ışık, bakım sırasında belirli aralıklarla yapılan bir ekipman kontrolünün parçasıydı. Kule, hava verilerini ölçen sistemlerden birini barındırıyordu. Işık, Nehir'in düşündüğü gibi insanları doğrudan uyaran bir mesaj değildi. Yine de kule, hava gözlemi için önemliydi. "
+        },
+        {
+          "t": "isaret",
+          "kod": "bulut"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Aslında çocukken ben de bulutların her şeklini bir işaret sanırdım,\" dedi öğretmenleri. \"Hayal kurmak güzeldir. Bilim yaparken ise hayalimizin hangi bölümünün kanıtlandığını bilmemiz gerekir.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözlere sevindi. Gizemli öyküler yazmaktan vazgeçmeyecekti. Sadece bilim gözlemleriyle kurmaca hikâyeleri birbirine karıştırmamayı öğrenecekti.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " biraz utanarak, \"Ben onu gizli bir istasyon sandım,\" dedi.\n\nDefne gülümsedi. \"Aslında istasyon kısmını doğru tahmin etmişsin. Gizli kısmını kanıtlamamıştık.\"\n\nÖğretmenleri raporlarını üç bölüme ayırmalarını istedi: Ne gördük? Ne düşündük? Ne öğrendik? Defne yazıyı yüksek sesle okuyunca bir cümlede tarih eksik olduğunu fark ettiler. Hemen eklediler; çünkü bir gözlemin ne zaman yapıldığı, ne görüldüğü kadar önemliydi.\n\nNehir ilk bölümde gece görülen ışığı, ikinci bölümde olası açıklamaları, üçüncü bölümde ise doğrulanmış bilgiyi yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", kanıtlanmayan fikrini silmek yerine yanına \"ilk varsayım\" notu düştü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Nehir okul gazetesine bir yazı hazırladı. İlk başlığı \"Kulede Gizli Alarm!\" olmuştu. Defne bunun gerçekte bulunmayan bir tehlike duygusu yaratacağını söyledi. Nehir başlığı \"Eski Kulenin Yeni Görevi\" olarak değiştirdi. Yazısına ışık hakkında öğrendiklerini, resmî hava uyarılarına nasıl ulaşabileceklerini ve alınan önlemlerin önemini ekledi. Yazı yayımlandığında en çok sorulan soru \"Kuleye nasıl gireriz?\" değil, \"Hava tahmini ne kadar önce hazırlanır?\" olmuştu.\n\nSonraki hafta kule yine ışık verdiğinde Işığı gördüğü ilk gün gözlemini kaydetmeseydi hangi ayrıntıları hatırlayıp hangilerini unutacağını düşündü. Küçük notların büyük yanlış anlamaları önleyebildiğini fark etti. Bundan sonra şaşırdığı her şeyi önce dikkatle gözlemlemeye karar verdi.\n\nNehir artık korkmadı. Ama bu kez yalnızca kuleye bakmadı; telefonundaki resmî hava tahminlerini ve gökyüzündeki bulutları da karşılaştırdı. İnsanların hava hakkında sorular sormasının, geçmişteki basit gözlemlerden bugünkü gelişmiş ölçümlere kadar uzanan büyük bir öğrenme yolculuğu olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Nehir eve döndüğünde balkonundan kuleyi yeniden gördü. Artık ışığa bakınca aklına yalnızca gizem gelmiyordu; orada çalışan görevlilerin emeğini de düşünüyordu. Bir veri işlenmeden, kontrol edilmeden ve doğru zamanda paylaşılmadan insanların karar vermesine yardım etmeyebilirdi. Bu farkındalıkla sınıf panosunda kendi adının çok büyük yazıldığını fark etti ve yanına "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ile Defne'nin adlarının da aynı boyda yazılmasını istedi. Çünkü bütün araştırmayı birlikte yürütmüşlerdi. Hatta kulenin işlevini öğrenmelerini sağlayan uzmanların adını da kaynak bölümüne eklediler. Nehir bilimi tek başına parlak bir fikir bulmak değil, farklı insanların ortak dikkati olarak görmeye başladı.\n\nSon kez kuleye bakan Nehir, ilk günkü korkusunu hatırladı. Bir ışığın neden yandığını bilmemek, onu hemen tehlike saymayı gerektirmiyordu. Doğru kaynakları araştırmak, hem merakı koruyor hem de gereksiz korkuyu azaltıyordu. Sınıf arkadaşlarının da bunu anlamasını istiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Defterinin son sayfasına şunu yazdı: Her ışık bir mesaj olabilir; ama hangi mesaj olduğunu ancak doğru kaynaklarla anlayabiliriz. Altına bir kule, bir bulut ve küçük bir soru işareti çizdi. Çünkü ona göre iyi bir araştırmacının çantasında üç şey bulunmalıydı: dikkatli gözler, sabırlı bir akıl ve yeni sorular."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr043_el_kaldirmak": [
+      {
+        "t": "yoldas",
+        "hal": "yalin",
+        "yedek": "bir arkadaş"
+      },
+      {
+        "t": "metin",
+        "v": " elini kaldırdı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Nehir kulede geçen ay ne görmüştü?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yenilenen bir anten"
+        },
+        {
+          "id": "B",
+          "metin": "Kırık bir pencere"
+        },
+        {
+          "id": "C",
+          "metin": "Büyük bir balon"
+        },
+        {
+          "id": "D",
+          "metin": "Eski bir saat"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Nehir, tepede yenilenmiş bir anten görmüştü."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Emir'in gizli haberleşme fikri neden zayıfladı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kulede meteoroloji sensörlerinin yenilendiği öğrenildi"
+        },
+        {
+          "id": "B",
+          "metin": "Kule yıkıldı"
+        },
+        {
+          "id": "C",
+          "metin": "Kimse gözlem yapmadı"
+        },
+        {
+          "id": "D",
+          "metin": "Hava güneşli oldu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Yenilenen sensörler, kulenin hava ölçümü için kullanıldığını gösterdi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Öğretmenin açıklamasına göre hava tahmini nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sıcaklık, basınç, nem ve rüzgâr gibi verilerin birlikte değerlendirilmesi"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnızca bulutlara bakmak"
+        },
+        {
+          "id": "C",
+          "metin": "Gelecekte olacak her olayı kesin bilmek"
+        },
+        {
+          "id": "D",
+          "metin": "Yalnızca termometre okumak"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Tahmin, birçok verinin birlikte yorumlanmasıdır ve bir kesinlik derecesi taşır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 5,
+      "metin": "Metinde geçen sağanak sözcüğü ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kısa süreli, şiddetli yağmur"
+        },
+        {
+          "id": "B",
+          "metin": "Çok sıcak bir rüzgâr"
+        },
+        {
+          "id": "C",
+          "metin": "Kuru bir bulut"
+        },
+        {
+          "id": "D",
+          "metin": "Kar fırtınası"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Sağanak, aniden başlayıp kısa süren şiddetli yağmurdur."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr043_anten",
+        "tur": "kelime",
+        "yazim": "anten",
+        "anlam": "Radyo ya da uydu sinyallerini alıp gönderen metal düzenek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_alici",
+        "tur": "kelime",
+        "yazim": "alıcı",
+        "anlam": "Gelen sinyali ya da bilgiyi alan cihaz.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_kablo",
+        "tur": "kelime",
+        "yazim": "kablo",
+        "anlam": "Elektrik ya da sinyal taşıyan ince, yalıtımlı tel.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_meteoroloji",
+        "tur": "kelime",
+        "yazim": "meteoroloji",
+        "anlam": "Hava olaylarını gözlemleyip inceleyen bilim dalı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_iklim",
+        "tur": "kelime",
+        "yazim": "iklim",
+        "anlam": "Bir bölgede uzun yıllar süren ortalama hava koşulları.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_jeoloji",
+        "tur": "kelime",
+        "yazim": "jeoloji",
+        "anlam": "Yerin yapısını ve oluşumunu inceleyen bilim dalı.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_olasilik",
+        "tur": "kelime",
+        "yazim": "olasılığı",
+        "anlam": "Bir şeyin gerçekleşme ihtimali.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_ihtimal",
+        "tur": "kelime",
+        "yazim": "ihtimal",
+        "anlam": "Bir şeyin olabilme durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_kesinlik",
+        "tur": "kelime",
+        "yazim": "kesinlik",
+        "anlam": "Bir şeyin kuşkusuz gerçekleşeceğini bilme durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_sagnak",
+        "tur": "kelime",
+        "yazim": "sağanak",
+        "anlam": "Kısa süreli, şiddetli yağmur.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_ciseleme",
+        "tur": "kelime",
+        "yazim": "çiseleme",
+        "anlam": "Çok ince ve hafif yağmur.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_kuraklik",
+        "tur": "kelime",
+        "yazim": "kuraklık",
+        "anlam": "Uzun süre yağmurun az yağdığı durum.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_el_kaldirmak",
+        "tur": "deyim",
+        "yazim": "elini kaldırdı",
+        "anlam": "Söz istemek ya da bir konuda katıldığını belirtmek için el kaldırmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_eli_cabuk",
+        "tur": "deyim",
+        "yazim": "elini çabuk tutmak",
+        "anlam": "Bir işi hızla yapmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr043_eli_acik",
+        "tur": "deyim",
+        "yazim": "eli açık olmak",
+        "anlam": "Cömert olmak.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr043_anten",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr043_anten"
+          },
+          {
+            "girdi": "hr043_alici"
+          },
+          {
+            "girdi": "hr043_kablo"
+          }
+        ]
+      },
+      {
+        "ad": "hr043_meteoroloji",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr043_meteoroloji"
+          },
+          {
+            "girdi": "hr043_iklim"
+          },
+          {
+            "girdi": "hr043_jeoloji"
+          }
+        ]
+      },
+      {
+        "ad": "hr043_olasilik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr043_olasilik"
+          },
+          {
+            "girdi": "hr043_ihtimal"
+          },
+          {
+            "girdi": "hr043_kesinlik"
+          }
+        ]
+      },
+      {
+        "ad": "hr043_sagnak",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr043_sagnak"
+          },
+          {
+            "girdi": "hr043_ciseleme"
+          },
+          {
+            "girdi": "hr043_kuraklik"
+          }
+        ]
+      },
+      {
+        "ad": "hr043_el_kaldirmak",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr043_el_kaldirmak"
+          },
+          {
+            "girdi": "hr043_eli_cabuk"
+          },
+          {
+            "girdi": "hr043_eli_acik"
+          }
+        ]
+      }
+    ]
+  }
+}

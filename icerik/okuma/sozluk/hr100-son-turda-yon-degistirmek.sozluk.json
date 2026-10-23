@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr100_sinir",
+      "tur": "kelime",
+      "yazim": "sınırlar",
+      "anlam": "Bir şeyin aşılmaması gereken yer ya da ölçü.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_olcu",
+      "tur": "kelime",
+      "yazim": "ölçü",
+      "anlam": "Bir şeyin ne kadar olduğunu ya da nasıl olması gerektiğini belirleyen değer.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_sinirsizlik",
+      "tur": "kelime",
+      "yazim": "sınırsızlık",
+      "anlam": "Bir şeyin ölçüsünün ya da sınırının olmaması hâli.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_tempo",
+      "tur": "kelime",
+      "yazim": "tempoyu",
+      "anlam": "Bir hareketin ya da çalışmanın hızı ve düzeni.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_ritim",
+      "tur": "kelime",
+      "yazim": "ritim",
+      "anlam": "Hareketlerin ya da seslerin düzenli biçimde tekrarlanması.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_durgunluk",
+      "tur": "kelime",
+      "yazim": "durgunluk",
+      "anlam": "Hareketin ya da etkinliğin yavaşlaması, durması hâli.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_dinlenme",
+      "tur": "kelime",
+      "yazim": "dinlenme",
+      "anlam": "Yorulan bedenin toparlanması için ara verme.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_mola",
+      "tur": "kelime",
+      "yazim": "mola",
+      "anlam": "Bir işe ya da etkinliğe kısa bir süre ara verme.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_calisma",
+      "tur": "kelime",
+      "yazim": "çalışma",
+      "anlam": "Bir iş ya da görevi yapma etkinliği.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_sakatlik",
+      "tur": "kelime",
+      "yazim": "sakatlık",
+      "anlam": "Bedenin bir bölgesinde süren ve hareketi engelleyen zarar.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_yaralanma",
+      "tur": "kelime",
+      "yazim": "yaralanma",
+      "anlam": "Bedende bir zarar oluşması durumu.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_saglik",
+      "tur": "kelime",
+      "yazim": "sağlık",
+      "anlam": "Bedenin ve ruhun iyi durumda olması hâli.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_disini",
+      "tur": "deyim",
+      "yazim": "dişini sıktı",
+      "anlam": "Acıya ya da zora karşı sabırla dayanmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_sabirla_katlanmak",
+      "tur": "deyim",
+      "yazim": "sabırla katlanmak",
+      "anlam": "Zorluğa sabırla dayanıp katlanmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr100_pes_etmek",
+      "tur": "deyim",
+      "yazim": "pes etmek",
+      "anlam": "Zorluk karşısında denemeyi bırakmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr100_sinir",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr100_sinir"
+        },
+        {
+          "girdi": "hr100_olcu"
+        },
+        {
+          "girdi": "hr100_sinirsizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr100_tempo",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr100_tempo"
+        },
+        {
+          "girdi": "hr100_ritim"
+        },
+        {
+          "girdi": "hr100_durgunluk"
+        }
+      ]
+    },
+    {
+      "ad": "hr100_dinlenme",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr100_dinlenme"
+        },
+        {
+          "girdi": "hr100_mola"
+        },
+        {
+          "girdi": "hr100_calisma"
+        }
+      ]
+    },
+    {
+      "ad": "hr100_sakatlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr100_sakatlik"
+        },
+        {
+          "girdi": "hr100_yaralanma"
+        },
+        {
+          "girdi": "hr100_saglik"
+        }
+      ]
+    },
+    {
+      "ad": "hr100_disini",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr100_disini"
+        },
+        {
+          "girdi": "hr100_sabirla_katlanmak"
+        },
+        {
+          "girdi": "hr100_pes_etmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

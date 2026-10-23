@@ -1,0 +1,584 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr028-uc-renkli-takim",
+    "baslik": "Üç Renkli Takım",
+    "tur": "arkadaslik",
+    "konu": "takim_calismasi",
+    "sinif_alt": 3,
+    "sinif_ust": 3,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D4",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 3,
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 2,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "dostluk",
+        "dayanisma"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D4",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "bulmaca_hr028",
+          "tur": "lexeme",
+          "etiket": "bulmaca",
+          "yuva": "hr028_bulmaca",
+          "islev": "first_hint"
+        },
+        {
+          "id": "engel_hr028",
+          "tur": "lexeme",
+          "etiket": "engel",
+          "yuva": "hr028_engel",
+          "islev": "application"
+        },
+        {
+          "id": "sifre_hr028",
+          "tur": "lexeme",
+          "etiket": "şifre",
+          "yuva": "hr028_sifre",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr028",
+          "tur": "concept",
+          "etiket": "Bireysel güçlü yönler ve takım",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 410,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 12,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Üç arkadaş, üç farklı yetenek. Birinci olamasalar da neyi kazandılar?",
+    "durum": "taslak",
+    "fis_kodu": "HR-028"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okul bahçesinde “Üç Renkli Oyun” yapılacaktı. Takımlar üç kişiydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ip atlamayı, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " top sürmeyi, Cem ise "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr028_bulmaca"
+        },
+        {
+          "t": "metin",
+          "v": " çözmeyi seviyordu. Üçü aynı takıma seçilince "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " homurdandı: “Biz hiç aynı oyunu sevmiyoruz.”\n\nÖğretmenleri kuralları açıkladı. İlk durakta ip "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr028_engel"
+        },
+        {
+          "t": "metin",
+          "v": " geçilecek, ikinci durakta top hedefe atılacak, son durakta renkli kartların "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr028_sifre"
+        },
+        {
+          "t": "metin",
+          "v": " çözülecekti. Takımın başarısı için üç görev de gerekliydi.\n\nBaşlama işareti verilince "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " öne fırladı. Fakat ilk ip engelinde takıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona yavaşça gösterdi: “Önce sağ ayak, sonra sol. Acele etme.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " denedi ve geçti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Top durağında "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " topu iki kez kaçırdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kızmak üzereydi, sonra ilk durakta aldığı yardımı hatırladı. “Topu sert değil, kontrollü gönder,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez hedefi buldu. Cem alkışladı.\n\nSon durakta masaya üç kart koyulmuştu: kırmızı, mavi ve sarı. Yanlarındaki notta şöyle yazıyordu: Kırmızı, maviden önce; sarı, kırmızıdan sonra; mavi ise en sonda. Cem kartları sıraya dizdi. Fakat öğretmen ilk dizilişi onaylamadı.\n\nCem dikkatle düşündü. “Sarı, kırmızıdan sonra olabilir; ama maviden önce olmak zorunda mı?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Mavi en son,” dedi. “Öyleyse sıra kırmızı, sarı, mavi!”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tam son kartı yerleştirirken bir rüzgâr çıktı ve mavi kart uçtu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " arkasından koşmaya kalktı, fakat öğretmen bahçe sınırını gösterdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", görevliden yedek kart istedi. Yarış biraz gecikti ama kurallara uydular.\n\nYarışın sonlarına doğru başka bir takımın kartlarından biri de yere düştü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onu görünce bir an tereddüt etti. Kartı geri vermek için durursa kendi takımları daha da yavaşlayacaktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gözleriyle ne yapacağını sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kartı alıp görevliye teslim etti. “Onlar da oyunu bitirebilsin,” dedi. Cem hafifçe gülümsedi; "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " en hızlı olduğu şeyin yalnız koşmak olmadığını düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Son kartları dizdikten sonra üç arkadaş ellerini üst üste koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ip atlamayı bilmeyenlere yeniden göstermeyi, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " topu korkmadan deneyenlere cesaret vermeyi, Cem ise zor bilmecelerin ipuçlarını paylaşmayı teklif etti. Kimse ötekinin bütün işlerini yapmak zorunda değildi. "
+        },
+        {
+          "t": "vurgu",
+          "v": "Herkes kendi güçlü yanını sunabilirdi"
+        },
+        {
+          "t": "metin",
+          "v": ". "
+        },
+        {
+          "t": "isaret",
+          "kod": "kalp"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nSonuçlar açıklandığında birinci olamadılar.\n\nSonuçlar açıklandığında birinci olamadılar. Üçüncülük kurdelesini alırken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " üzülmüştü. Cem ise her arkadaşının bir görevde takımı ilerlettiğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " üç kurdeleyi yan yana tuttu: “Farklı renkler birlikte daha güzel görünmüyor mu?”\n\nErtesi gün "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir öneriyle geldi: “Bu kez herkesin sevdiği bir oyunu birlikte deneyelim.” Önce ip atladılar, sonra top oynadılar, en sonda Cem'in bilmecelerini çözdüler. Üçü de bütün oyunları aynı derecede sevmedi. Yine de artık farklı olmanın birlikte eğlenmelerine engel olmadığını biliyorlardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dil hedefi: aynı–farklı, karşılaştırma, sıralama; Kavram/değer: takım çalışması, bireysel güçlü yönler, kurallara saygı. İkon önerileri: üç renk, top, el. Okuma sonrası: Her çocuk hangi görevde takımı ilerletti? Birinci olmamaları neyi değiştirdi?"
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Cem hangi işi severdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bulmaca çözmeyi"
+        },
+        {
+          "id": "B",
+          "metin": "Top sürmeyi"
+        },
+        {
+          "id": "C",
+          "metin": "İp atlamayı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Cem bulmaca çözmeyi severdi."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Üç arkadaşın bulduğu doğru kart sırası hangisiydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kırmızı, sarı, mavi"
+        },
+        {
+          "id": "B",
+          "metin": "Mavi, kırmızı, sarı"
+        },
+        {
+          "id": "C",
+          "metin": "Sarı, mavi, kırmızı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kırmızı maviden önce, sarı kırmızıdan sonra, mavi en sonda olmalıydı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Cem, Bora'nın hangi yönünü önemli buldu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yalnız koşmak değil, arkadaşına yardım edebilmesini"
+        },
+        {
+          "id": "B",
+          "metin": "Sadece hızlı koşmasını"
+        },
+        {
+          "id": "C",
+          "metin": "Topu çok sert atmasını"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Bora kartı görevliye teslim ederek başkasının oyununa da yardım etti."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "Metinde geçen engel ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yolu kapatan ya da zorlaştıran şey"
+        },
+        {
+          "id": "B",
+          "metin": "Bir oyun kartı"
+        },
+        {
+          "id": "C",
+          "metin": "Bir top türü"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Engel, geçilmesi zor olan bir şeydir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr028_bulmaca",
+        "tur": "kelime",
+        "yazim": "bulmaca",
+        "anlam": "Düşünerek çözülen soru ve ipuçlarından oluşan oyun.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_kelime_oyunu",
+        "tur": "kelime",
+        "yazim": "kelime oyunu",
+        "anlam": "Sözcüklerle eğlenceli bir oyun.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_satranc",
+        "tur": "kelime",
+        "yazim": "satranç",
+        "anlam": "Taşlarla oynanan, düşünmeyi gerektiren oyun.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_engel",
+        "tur": "kelime",
+        "yazim": "engellerinden",
+        "anlam": "Yolu kapatan ya da zorlaştıran şey.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_kolaylik",
+        "tur": "kelime",
+        "yazim": "kolaylık",
+        "anlam": "Bir işi yapmayı kolaylaştıran durum.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_zorluk",
+        "tur": "kelime",
+        "yazim": "zorluk",
+        "anlam": "Bir işi güçleştiren durum.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_sifre",
+        "tur": "kelime",
+        "yazim": "şifresi",
+        "anlam": "Yalnız bilinen, gizli tutulan kod.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_kod",
+        "tur": "kelime",
+        "yazim": "kod",
+        "anlam": "Bir bilgiyi gizlemek ya da düzenlemek için kullanılan işaret dizisi.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      },
+      {
+        "id": "hr028_anahtar_soz",
+        "tur": "kelime",
+        "yazim": "anahtar",
+        "anlam": "Bir kilidi açan küçük parça.",
+        "sinif_alt": 2,
+        "sinif_ust": 4
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr028_bulmaca",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr028_bulmaca"
+          },
+          {
+            "girdi": "hr028_kelime_oyunu"
+          },
+          {
+            "girdi": "hr028_satranc"
+          }
+        ]
+      },
+      {
+        "ad": "hr028_engel",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr028_engel"
+          },
+          {
+            "girdi": "hr028_kolaylik"
+          },
+          {
+            "girdi": "hr028_zorluk"
+          }
+        ]
+      },
+      {
+        "ad": "hr028_sifre",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr028_sifre"
+          },
+          {
+            "girdi": "hr028_kod"
+          },
+          {
+            "girdi": "hr028_anahtar_soz"
+          }
+        ]
+      }
+    ]
+  }
+}

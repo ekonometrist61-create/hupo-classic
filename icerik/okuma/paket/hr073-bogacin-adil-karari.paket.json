@@ -1,0 +1,988 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr073-bogacin-adil-karari",
+    "baslik": "Boğaç'ın Adil Kararı",
+    "tur": "tarih_kultur",
+    "konu": "adalet",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D1",
+      "D6"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kultur_miras",
+        "dayanisma"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D1",
+        "yardimci_deger": "D6"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "kervanbasi_hr073",
+          "tur": "lexeme",
+          "etiket": "kervanbaşı",
+          "yuva": "hr073_kervanbasi",
+          "islev": "first_hint"
+        },
+        {
+          "id": "hukum_hr073",
+          "tur": "lexeme",
+          "etiket": "hüküm",
+          "yuva": "hr073_hukum",
+          "islev": "application"
+        },
+        {
+          "id": "olculu_hr073",
+          "tur": "lexeme",
+          "etiket": "ölçülü",
+          "yuva": "hr073_olculu",
+          "islev": "application"
+        },
+        {
+          "id": "soylenti_hr073",
+          "tur": "lexeme",
+          "etiket": "söylenti",
+          "yuva": "hr073_soylenti",
+          "islev": "application"
+        },
+        {
+          "id": "kanit_hr073",
+          "tur": "lexeme",
+          "etiket": "kanıt",
+          "yuva": "hr073_kanit",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr073",
+          "tur": "concept",
+          "etiket": "Söylenti ile kanıt arasındaki fark",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr073",
+          "tur": "idiom",
+          "etiket": "Deyimlerin cümledeki anlamı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 2960,
+        "tahmini_sure_dk": 26,
+        "sayfa_sayisi": 26,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 5,
+          "concept": 1,
+          "idiom": 1
+        },
+        "yoldas_yer_sayisi": 8,
+        "simge_sayisi": 4
+      }
+    },
+    "tanitim": "Toy öncesinde bir sandık kayboldu. Boğaç kimseyi hemen suçlamadan gerçeği arayacak.",
+    "durum": "taslak",
+    "fis_kodu": "HR-073"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yaylanın üstüne sabah sisi çökerken oba meydanındaki direklere yeni sancaklar bağlanıyordu. Bir gün sonra ilkbahar toyu başlayacak, yakın obalardan konuklar gelecek, at yarışları yapılacak ve çocuklar büyüklerinin anlattığı eski hikâyeleri dinleyecekti. Boğaç, tören alanının yanından geçerken babasının ona verdiği görevleri düşünüyordu. Bu yıl yiğitler meclisine yalnızca seyirci olarak değil, gençlerin sözcüsü olarak katılacaktı. Yıllar önce bir boğanın karşısında gösterdiği cesaret, ona adını kazandırmıştı. Fakat adı ne zaman anılsa hep aynı şeyi duymaktan yorulmuştu: “Boğaç güçlüdür. Boğaç korkmaz.”\n\nO sabah annesi onu ocak başında durdurdu. Önüne bir tas sıcak çorba koydu ve meydandaki kalabalığı işaret etti.\n\n“Bugün kuvvetini gösterecek bir yarış yok,” dedi. “Yine de en zor sınavını verebilirsin.”\n\n“Nasıl olur? Yarış yoksa sınav da yoktur.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Yanılmak kolaydır oğlum. Hele herkes bir kişiyi suçlarken doğruyu aramak, koşan bir boğanın önünde durmaktan bile güç olabilir.”\n\nBoğaç bu sözlerin neden söylendiğini anlayamadan dışarıdan bağrışmalar yükseldi. Meydana koştuğunda, iki komşu obanın atlılarının karşı karşıya geldiğini gördü. Bir yanda "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr073_kervanbasi"
+        },
+        {
+          "t": "metin",
+          "v": " Kara Turgut, öte yanda yaşlı dokumacı İnci Ana duruyordu. Herkesin gözü kırmızı boyalı bir yük sandığındaydı.\n\n“Sandığın içindeki yün bize aitti,” dedi Kara Turgut. “Dün akşam ortak depodan kayboldu. Bu sabah İnci Ana'nın çadırında bulundu.”\n\nİnci Ana'nın yüzü bembeyazdı. “Sandık benim çadırıma getirildi,” dedi. “Ama kimin bıraktığını bilmiyorum.”\n\nKalabalığın içinden biri, “Belli ki çalmış,” diye bağırdı. Bir başkası, “Toy başlamadan cezası verilsin,” diye karşılık verdi. Boğaç, iki gün önce İnci Ana'nın çocuklara kilim dokumayı öğrettiğini hatırladı. Onun suçsuz olduğundan emin olmak istiyordu ama istemek, bilmek değildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Oba beyi, toy için kurulan büyük çadırın önünde sessizlik istedi. Kara Turgut öfkeyle sandığı gösterdi. İçindeki boyalı yünler gerçekten onun obasının damgasını taşıyordu. İnci Ana ise sandığa hiç dokunmadığını söylüyordu. Bey, Boğaç'a döndü.\n\n“Gençlerin sözcüsüsün. İnsanların kavga etmesini önleyebilir misin?”\n\nBoğaç, sandığın kapağına baktı. Aklına ilk gelen şey güçlü bir söz söylemekti: Sandık burada bulunduysa suçlu bellidir. Böyle deseydi kalabalık onu dinlerdi."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr073_kulak_cinlamak"
+        },
+        {
+          "t": "metin",
+          "v": " Sandığın bulunması, onu oraya kimin getirdiğini göstermiyordu.\n\n“Önce şunu öğrenmek istiyorum,” dedi. “Depoyu en son kim kapattı?”\n\nKara Turgut, genç kervancı Sarıhan'ı işaret etti. Sarıhan bir adım öne çıktı. “Ben kapattım. Akşam yağmur başlayınca herkes acele ediyordu.”\n\n“Kapıya kilit vurdun mu?”\n\n“Evet.”\n\n“Kilidi sabah sen mi açtın?”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Hayır, anahtarı amcama verdim.” "
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nKalabalığın uğultusu yeniden başladı. Boğaç elini kaldırdı. “Sorular bitmeden "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr073_hukum"
+        },
+        {
+          "t": "metin",
+          "v": " verilmez.”\n\nSandığı incelemek için diz çöktü. Kapağının üstünde ince bir yeşil ip vardı. Oysa Kara Turgut'un adamları yükleri genellikle siyah sicimle bağlıyordu. Köşelerde taze çamur izleri görünüyordu. Sandığın altındaki sürtünme çizgisi ise onun taşınmaktan çok sürüklenmiş olabileceğini düşündürüyordu. Bunlar küçük ayrıntılardı; tek başlarına hiçbirini kanıtlamıyorlardı.\n\nİnci Ana, “Çadırımın arkasından gece bir ses duydum,” dedi. “Rüzgâr sanmıştım. Sabah çıkınca sandığı gördüm.”\n\nBoğaç hemen birini suçlamadı. “Çadırın arkasına bakalım. Buradaki herkes de gördüğünü, duyduğunu söylesin. Ama tahminini gerçekmiş gibi anlatmasın.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çadırın arkasında dün geceki yağmurdan kalan yumuşak toprak vardı. Sandığın bırakıldığı yerde iki geniş çizgi uzanıyordu. Birkaç adım sonra çizgiler kayboluyor, yerlerini hayvan izleri alıyordu. Boğaç yerde diz çökmüşken yanında on yaşlarındaki bir çocuk belirdi. Çocuğun adı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": "; İnci Ana'nın komşusunun oğluydu.\n\n“Ben dün gece küçük bir araba gördüm,” dedi. “Üstü örtülüydü.” "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n“Kim sürüyordu?”\n\n“Göremedim. Ay bulutun arkasındaydı.” "
+        },
+        {
+          "t": "isaret",
+          "kod": "ay"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n“Peki neden şimdi söylüyorsun?”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başını eğdi. “Sabah herkes bağırıyordu. Söylediğim şey yanlış çıkarsa bana kızarlar sandım.”\n\nBoğaç, “Bilmediğini bilmediğin gibi söylemek cesarettir,” dedi. “Gördüğün şeyin üstüne bir hikâye kurmana gerek yok.”\n\nBirlikte arabaların durduğu alana gittiler. Üç küçük yük arabası vardı. İlkinin tekerlekleri dar, ikincininki genişti. Üçüncünün bir tekerleği yeni onarılmış, üstüne yeşil iple bağlanmıştı. Sarıhan, arabaya bakarken huzursuzca kıpırdandı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Boğaç bunu fark etti ama huzursuzluğu da suç kanıtı saymadı. “Bu arabayı kim kullandı?” diye sordu.\n\n“Ben,” dedi Sarıhan. “Depodaki ıslanan çuvalları kuru yere götürmek için.”\n\n“Yün sandığını da mı götürdün?”\n\nSarıhan karşılık vermedi."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr073_araya_girmek"
+        },
+        {
+          "t": "metin",
+          "v": " “Bir insan cevap vermeden önce korkabilir. Bırakın konuşsun.”\n\nSarıhan dudaklarını ısırdı. “Sandığı depodan çıkardım,” dedi sonunda. “Ama çalmak için değil. Çatı akıyordu. Yünler ıslanmasın istedim. Sonra arabayı çadırların arasına sürdüm. Rüzgâr çok sertti. İnci Ana'nın çadırının yanını en güvenli yer sandım.”\n\n“Öyleyse neden sabah söylemedin?”\n\n“Çünkü amcam bana danışmadan depoyu açtığımı öğrenirse kızacaktı. Sandığı daha sonra götürmeye karar verdim. Ama sabah ortalık karışınca korktum.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kara Turgut, “Bütün oba önünde bizi rezil ettin,” diyerek yeğenine bağırdı. Sarıhan gözlerini yere indirdi. İnci Ana rahat bir nefes aldı ama yüzündeki incinme geçmemişti. Sabah boyunca adının hırsızlıkla yan yana anıldığını unutması kolay değildi.\n\nBey çadıra dönülmesini emretti. Herkes Boğaç'ın hükmünü bekliyordu. Kara Turgut, “Sarıhan ağır ceza görmeli,” dedi. İnci Ana'nın komşuları ise “Turgut önce İnci Ana'dan özür dilesin,” diye karşılık verdi. Boğaç iki tarafın da haklı olduğu bir nokta bulunduğunu düşündü: Bir yanlış olmuştu ve bu yanlışın sonuçları vardı. Fakat öfkeyle verilen ağır bir karar, hatanın kendisini düzeltmeyecekti.\n\n“Üç ayrı şey var,” dedi. “Birincisi, Sarıhan sandığı haber vermeden taşımış ve bunu saklamış. İkincisi, sandığın bulunması üzerine İnci Ana "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr073_kanit"
+        },
+        {
+          "t": "metin",
+          "v": " olmadan suçlanmış. Üçüncüsü, deponun çatısı akıyormuş. Bu sonuncusunu düzeltmezsek başka sandıklar da zarar görebilir.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bey başını salladı. “Peki ne önerirsin?”\n\nBoğaç kalabalığa baktı. İlk kez herkesin onayını alacak bir karar vermenin mümkün olmayabileceğini anladı. Birileri daha ağır ceza isteyecek, birileri bütün olanları unutmayı tercih edecekti. "
+        },
+        {
+          "t": "vurgu",
+          "v": "Adalet"
+        },
+        {
+          "t": "metin",
+          "v": ", en yüksek sesle konuşanı memnun etmek değildi.\n\n“Sarıhan, depodaki yünleri korumak istemiş ama izin almadan yaptığı işi saklamış. Hatasını herkesin önünde açıklasın ve deponun onarımında çalışsın. Kara Turgut ise İnci Ana'ya yönelttiği suçlamayı geri alsın. Üstelik onun dokuduğu kilimlerin toya yetişmesi için ihtiyaç duyduğu ipleri taşımaya yardım etsin. Depo için de bir kayıt defteri tutalım. Kim neyi aldı, nereye koydu, yazılsın. Böylece yalnızca bu olay bitmez; benzeri de önlenir.”\n\n"
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr073_yuz_burusturmak"
+        },
+        {
+          "t": "metin",
+          "v": " Birkaç kişi gülümserken bazıları sessiz kaldı. Bey, “Kararın kolay değil, ama "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr073_olculu"
+        },
+        {
+          "t": "metin",
+          "v": ",” dedi. “İtirazı olan sebebini söylesin.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Önce kimse konuşmadı. Sonra İnci Ana ağır ağır ayağa kalktı. “Benim bir itirazım var,” dedi. Herkes şaşırdı. Onun sevinmesini bekliyorlardı.\n\n“Benim adımı temize çıkarmak için insanların önünde özür dilemeleri iyi,” dedi. “Ama yarın biri yine yanlış suçlanırsa aynı acıyı yaşayacak. Çocuklara "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr073_soylenti"
+        },
+        {
+          "t": "metin",
+          "v": " gerçek arasındaki farkı öğretmeliyiz.”\n\nBoğaç bu öneriyi beğendi. “Toyda hikâye anlatıcıları için zaman ayrılmıştı,” dedi. “Bir hikâyenin içinde bunu anlatabilir miyiz?”\n\nİnci Ana tebessüm etti. “Hikâye zaten yaşandı. Anlatırken kimseyi küçültmemek yeter.”\n\nBey, gençlerin sözünü dinledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir adım öne çıkıp, “Ben de arabayı gördüğümü önce söyleyemedim,” dedi. “Çünkü herkesin tahminleri gerçek gibi konuştuğu yerde, benim bildiğim küçücük şey değersiz geldi.”\n\nSarıhan ona baktı. “Senin söylediğin küçük şey, benim gerçeği açıklamama yardım etti.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kara Turgut derin bir nefes aldı. “Öyleyse ben de hatamı söyleyeyim. Yeğenime sormak yerine önce İnci Ana'yı suçladım. Çünkü sandık oradaydı. Kızgınlığım aklımın önüne geçti.”\n\nİnci Ana başını hafifçe eğdi. “Özürünü kabul ediyorum. Ama söylediklerinin izi bazen çamurdaki izden daha uzun kalır. Bunu unutma.”\n\nBu sözler Boğaç'ın aklında yer etti. Akşamüstü depoya gittiklerinde Sarıhan, Kara Turgut ve birkaç genç birlikte çatıdaki boşluğu kapatıyorlardı. İnci Ana da zarar gören yünleri ayıklamış, kurtarılabilecekleri havalandırmıştı. Çalışırken tartışıyorlardı ama bu kez tartışmanın yönü değişmişti: Kimin cezalandırılacağı değil, işin nasıl daha iyi yapılacağı konuşuluyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam çalışması bitmeden önce Boğaç, deponun onarımıyla ilgilenen marangozun yanında durdu. Yaşlı usta çatının çürük tahtasını sökmeye uğraşıyordu. “Bu delik ne zamandır burada?” diye sordu Boğaç.\n\nUsta, elindeki çekici bıraktı. “Kıştan beri küçük bir çatlak vardı. Yağmurun en sert yağdığı günlerde büyüdü. Sana ilginç bir şey söyleyeyim: Sarıhan dün akşam bana yardım istemek için uğradı. Ben de toy hazırlıkları yüzünden sabaha bırakmasını söyledim.”\n\nBoğaç şaşırdı. “Yani kimseye söylemeden hareket etmeden önce yardım istemiş?”\n\n“Evet. Ben ona öğleden sonra çatıyı kapatacağımı söylemiştim. Sonra kendi işlerim arasında unutmuşum.”\n\nBoğaç bir an durdu. Sarıhan’ın yanlışını saklaması hâlâ yanlıştı. Ama verdiği kararı etkileyen koşullar yeni öğrendiği şeyle değişiyordu. Bunun mecliste konuşulması gerektiğini düşündü. Yaşlı usta, “Ben de olanları öğrendim,” dedi. “Suçlu arandığında benim payımı kimse sormadı. Belki kendim söylemeliydim.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birlikte yeniden meclise gittiler. Beyin huzurunda usta, çatının gecikmiş onarımını anlattı. Kara Turgut önce kızdı: “Neden bunu en başta söylemedin?”\n\nUsta gözlerini kaçırmadı. “Hata yaptığımı kabul etmekten çekindim.”\n\nBoğaç gülümsedi. “Demek ki meydanda yalnızca sandığın nereye gittiğini değil, işlerin neden karıştığını da öğreniyoruz.”\n\nBey kayıt defterinin ilk sayfasına üç başlık yazdırdı: "
+        },
+        {
+          "t": "vurgu",
+          "v": "Görülen, düşünülen, doğrulanan"
+        },
+        {
+          "t": "metin",
+          "v": ". Çocuklar bunun ne anlama geldiğini sorduğunda Boğaç örnek verdi. “Sandığın İnci Ana'nın çadırında bulunması görülen şeydir. Onun çaldığını söylemek düşüncedir. Sandığı Sarıhan'ın taşıdığını onun açıklaması ve izler birlikte doğruladı.” "
+        },
+        {
+          "t": "isaret",
+          "kod": "kitap"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " deftere baktı. “Benim gördüğüm araba ne oluyor?”\n\n“Görülen. Kimin sürdüğünü görmediğin için ikinci satıra isim yazmadın. Bu yüzden bize yardımcı oldun.”\n\nİnci Ana da defterin kenarına küçük bir işaret koydu. “Bilmediğini söylemek ayıp değildir,” dedi. “Ama bilmediğin boşluğu öfkeyle doldurursan başkasına zarar verebilirsin.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi sabah onarım sürerken yeni bir sorun çıktı. Sandıktaki yünlerin iki topu ıslanmış, renkleri birbirine karışmıştı. Kara Turgut, bu yünlerin artık hiçbir işe yaramayacağını söyleyip üzüldü. İnci Ana onları güneşe sererek kuruttu. Kırmızıyla mavinin birleştiği yerlerde beklenmedik mor çizgiler oluşmuştu.\n\n“Yünü kusursuz hâline döndüremem,” dedi. “Ama desenini değiştirebilirim.”\n\nSarıhan, “Buna da yardım edebilir miyim?” diye sordu.\n\n“Dilersen ipleri ayıkla. Sabır ister.”\n\nSarıhan çadırın önüne oturup ipleri çözdü. Başlangıçta düğümler birbirine giriyordu. Her seferinde biraz daha sinirleniyor, hızlandıkça işi zorlaştırıyordu. İnci Ana ona yavaşça bir düğümü nasıl gevşeteceğini gösterdi. “Düğüm sertleştikçe sen de sertleşirsen kopar,” dedi. “Bazen çözüm kuvvette değil, yön değiştirmektedir.”\n\nBoğaç bu sözleri duyunca önceki günün tartışmasını hatırladı. Meydandaki herkes daha yüksek sesle konuşmuş, sorun buna rağmen çözülmemişti. Sorular sormaya başladıklarında ise anlaşmazlık yumuşamıştı. Yünün düğümüyle insanların anlaşmazlığı aynı şey değildi; yine de benzer bir düşünme biçimi gerekiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğleden sonra küçük çocuklar çadırın önüne toplandı. İnci Ana onlara rengârenk ipleri uzattı. “Toy için küçük bir ortak kilim dokuyacağız. Herkes tek bir sıra eklesin,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sarı ipleri seçti. Sarıhan mor çizgileri ayırdı. Kara Turgut ise en ağır tezgâh parçasını taşıdı. Çocukların kimi örgüyü yanlış geçirdiğinde İnci Ana hiç kızmadı. “Yanlışın yerini görürsen düzeltebilirsin,” dedi. “Görmeden çekiştirirsen bütün desen karışır.”\n\nBoğaç, toya gelen yabancı çocukların da tezgâha katılmasını önerdi. Başka obadan gelen bir kız, kendilerinin dokuduğu üçgen motifi anlattı. Bir oğlan, deniz kıyısındaki akrabalarından öğrendiği dalga desenini gösterdi. Her desenin ayrı bir hikâyesi vardı. Ortak kilim, baştaki kırmızı sandıktan çok daha büyük bir şeyin işareti hâline geliyordu: Farklı ellerin bir işi birlikte ortaya koyabilmesi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Toydan önceki akşam gençler ateşin çevresine toplandı. İçlerinden biri, “Boğaç'ın verdiği karar doğruysa neden Sarıhan'ı bütünüyle affetmedik?” diye sordu. Başka biri, “Çünkü gizlediği şey kavga çıkardı,” dedi. Üçüncüsü karşı çıktı: “Ama yünleri kurtarmaya çalıştı. Kötü niyeti yoktu.”\n\nBoğaç onların konuşmasını dinledi. Kendi içinde de bir çatışma vardı. Sarıhan'a sert davranmak istemiyordu. Yine de yalnızca niyete bakmak, olanları görmezden gelmek olurdu. “Bir karar verirken iki şeyi birlikte düşünüyoruz,” dedi. “İnsan ne yapmak istedi? Sonuçta ne oldu? İyi niyet, her sonucu doğru yapmaz. Kötü sonuç da her zaman kötü niyetten doğmaz.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Peki adalet herkese aynı ceza mı demektir?” diye sordu.\n\n“Her durumda aynı şeyi yapmak kolay bir kuraldır,” dedi Boğaç. “Ama olayların ayrıntıları farklıysa ölçü de bunları görmelidir. Çatıyı onarmayı geciktiren usta ile sandığı saklayan Sarıhan aynı şeyi yapmadı. İkisi de hatasını üstlenmeli, ama nedenleri ve yapabilecekleri telafi farklı.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Konuşmayı uzaktan izleyen Dede Korkut yanlarına geldi. Yaşlı ozan yere oturup eline bir avuç kum aldı. Parmaklarını aralayınca kumun bir kısmı döküldü. Sonra avucunu çok sıkı kapattı; bu kez de elinde kalan kumu kimse göremedi.\n\n“Yumuşaklık da sertlik de ölçüsüz olursa yol şaşar,” dedi. “Avuç açık kalırsa elindekini tutamazsın; hep kapalı kalırsa paylaşamazsın. Sözünü tartmak da buna benzer.”\n\nGençler bir süre sessiz kaldılar. Boğaç, bunu güzel bulsa da atasözleriyle tek başına karar verilemeyeceğini düşündü. Çünkü ertesi gün karşısına yeni bir anlaşmazlık çıktığında yalnızca güzel sözleri değil, insanların söylediklerini dikkatle dinlemeyi de hatırlaması gerekecekti. Dede Korkut sanki düşüncesini duymuş gibi gülümsedi.\n\n“Bir söz aklı açmalı,” dedi, “aklın yerine geçmemeli.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gece ilerlerken meydandaki sancaklardan biri yırtıldı. Sabah törene yetişmesi gerekiyordu. Kumaşı getiren genç, “Bunu Sara dikti; ne kadar dikkatsiz!” diye söyleniyordu. Sara, başka obadan gelen on üç yaşında bir dokumacıydı. Kız elindeki iğneyi indirip, “Dikişim düzgündü,” dedi. “Sancağı rüzgârda bıraktınız.”\n\nGençlerden bazıları Sara'yı destekledi, bazıları karşı çıktı. Boğaç araya girmeden önce durdu. Bir önceki günün olayından sonra kendi kararının da kolayca öfkeye dönüşebileceğini biliyordu. “Sancağı önce inceleyelim,” dedi.\n\nKumaşın yırtık yeri dikişten başlamıyordu. Ağacın kabuğuna takılan bir kenar incelmiş, sonra rüzgârla açılmıştı. Sara dikişi özenli yaptığını göstermek için diğer kenarı çevirdi. Gerçekten sağlamdı. Genç, ağacın sancak direğine çok yakın olduğunu kabul etti.\n\n“Öyleyse suçlu rüzgâr,” dedi bir çocuk gülerek.\n\n“Rüzgârı suçlayabiliriz,” dedi Sara, “ama sancak yerini biz seçtik. Onunla uğraşmak yerine yeri değiştirelim.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Herkes güldü. Sancağı söküp daha açık bir yere taşıdılar. Bu küçük tartışma uzun sürmedi. Boğaç, ilk olayın ardından herkesin birdenbire kusursuz olmadığını gördü. Yine acele suçlamalar yapılıyor, yine korkuyla cevaplar veriliyordu. Fark şu ki artık bazı insanlar soru sormayı hatırlıyordu. Öğrenmenin gerçekleştiğini gösteren şey, hiç hata yapmamak değil; hatayı daha çabuk fark etmekti.\n\nSancak yeniden yükseldiğinde yıldızlar belirginleşmişti. Boğaç tek başına meydanda kaldı. Sancağın gölgesi toprak üzerinde sallanıyordu. Annesinin sabah söylediği sözü düşündü: “En zor sınavını verebilirsin.” Belki de sınav bir kere bitmiyordu. Gücü yettiği her anda birini susturmak yerine dinleme, bir sonuca atlamak yerine araştırma seçimi yeniden önüne gelecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Toy sabahı geldiğinde İnci Ana ortak kilimi meydandaki direğe astı. Kilimin ortasında yalnızca terazi yoktu; farklı obalardan gelen çocukların dokuduğu çizgiler de terazinin iki yanına uzanıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", neden bir kefenin üstünde güneş, diğerinde ay motifi bulunduğunu sordu. İnci Ana, “Gündüz gördüğünle gece duyduğun birbirini tamamlayabilir,” dedi. “Ama ikisini de kendi başına yeterli sanma.”\n\nBoğaç bu açıklamayı sevdi. Çünkü gece duyulan sesler, sabah görülen sandık ve küçük arabanın izleri tek başına yeterli değildi. Hepsinin zamanını ve kaynağını anlamak gerekiyordu. Gençler kilimin önünde durup kendi sorularını tartıştılar. Kimi insanların neden söylentiye çabuk inandığını sordu. Kimi öfkeliyken düşünmenin neden zorlaştığını merak etti.\n\nBir çocuk, “Herkese güvenmek mi gerekir, yoksa kimseye güvenmemek mi?” diye sordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“İkisi de bizi yanıltabilir,” dedi Boğaç. “İnsanlara saygıyla yaklaşmak başka, her duyduğumuzu kanıtsız kabul etmek başka. Şüphe duymak da insanı hemen suçlamak demek değildir. Soru sorarken bile saygılı olabiliriz.”\n\nKara Turgut oradan geçerken konuşmaya katıldı. “Ben bu dersi biraz geç öğrendim,” dedi. “Ama öğrendiğimi göstermek için çabalayacağım.”\n\nSarıhan ona bakıp gülümsedi. Bir önceki gün kimse onunla yan yana görünmek istemezken şimdi depo defterinin yanında birlikte çalışıyorlardı. İnsanların güvenini yeniden kazanmak bir sabah sürmemişti. Yine de her doğru adım biraz işe yarıyordu. Bu, Boğaç'ın kararında görmeyi istediği asıl sonuçtu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün obanın geniş meydanı şenlik sesleriyle doldu. Atlar hazırlandı, çocuklar yarış çizgisinde toplandı, kazanlarda yemekler kaynadı. Boğaç'ın adı anons edildiğinde kimi onun boğa karşısındaki eski yiğitliğini bekliyordu. Oysa Boğaç, tören çadırına girerken elinde ne kılıç ne de yarış mızrağı taşıyordu. İnci Ana'nın kendi elleriyle dokuduğu küçük bir kilim vardı. Kilimin ortasına dengeli bir terazi işlenmişti.\n\nBey kilimi havaya kaldırdı. “Bu, Boğaç'ın yeni yiğitliğinin işareti olsun,” dedi. “Çünkü bir insanı haksız yere suçlamadan önce durmayı bildi. Gücü varken öfkesine yenilmedi. Herkes kolay hüküm isterken o soru sordu.”\n\nBoğaç alkışlar arasında gururlandı ama asıl sevindiği başka bir şeydi. Sarıhan, İnci Ana'nın tezgâhına yeni ipleri getiriyordu. Kara Turgut ise çocuklara deponun kayıt defterini gösteriyordu. Bir gün önce karşı karşıya duran insanlar, şimdi aynı işi yapabiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam Dede Korkut'u dinlemek için ateşin çevresinde toplandılar. Yaşlı ozan kopuzunun tellerine dokundu. “Yiğitliği yalnız güreşte arayan,” dedi, “sözün ağırlığını unutabilir. El kaldırmak için güç gerekir; haksız eli durdurmak içinse gönül ve akıl.”\n\nBoğaç annesinin yanına oturdu. “Sınavın ne olduğunu şimdi anladım,” dedi.\n\nAnnesi sordu: “Peki kazandın mı?”\n\nBoğaç bir süre düşündü. “Sanırım herkes bir parça kazandı. Ama ben en çok, bir şeye hemen inanmanın ne kadar kolay olduğunu öğrendim.”\n\nAnnesi başını salladı. “Öğrendiklerinin en değerlisi budur. İnsan gücünü bir günde gösterebilir. Adil kalmak içinse her gün yeniden karar vermesi gerekir.”\n\nKopuzun sesi karanlıkta yükselirken Boğaç, kilimin ortasındaki teraziyi düşündü. Terazinin iki kefesi de boştu; çünkü hangi olay gelirse gelsin, ölçünün yeniden kurulması gerekiyordu. İşte o gece Boğaç, adını kazandıran eski yiğitliğinden başka bir şeyi hatırlamaya karar verdi: Kimsenin sesini duymadan hüküm vermeyecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Günün ilerleyen saatlerinde toy yerinde küçük bir oyun kuruldu. Dede Korkut'un önerisiyle üç çocuk, aynı olayı üç farklı pencereden anlatacaktı. İlk çocuk, “Bir sandık kayboldu, sonra başka yerde bulundu,” dedi. İkinci çocuk, “Bir çocuk gece bir araba gördü,” diye ekledi. Üçüncü çocuk ise “İnci Ana suçlandı, sonra suçlamanın yanlış olduğu anlaşıldı,” dedi.\n\nOyun bitince izleyenlere sordular: “Hangisi bütün hikâye?”\n\nHiç kimse tek birini seçemedi. Çünkü her anlatım doğru bir parça içeriyor ama diğer parçaları eksik bırakıyordu. Boğaç ayağa kalktı. “Birinin yalnızca doğru şeyler söylemesi de yetmeyebilir,” dedi. “Önemli bir parçayı saklarsa dinleyen yanlış sonuca varabilir.”\n\nSarıhan söz istedi. “Ben de dün yalnızca sandığı kurtarmaya çalıştığımı söyleseydim eksik anlatmış olurdum. Çünkü izinsiz taşıdığımı gizlemiş ve insanları korkutmuştum.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kara Turgut, “Ben de yalnızca sandığı İnci Ana'nın yanında bulduğumu söyleyebilirdim. Oysa onu hırsız diye suçlamıştım. Sözümün sonucunu anlatmazsam yaptığım yanlışı küçültmüş olurum,” dedi.\n\nİnci Ana onları dinledi. “Birlikte çalışmaya başladık,” diye ekledi. “Bu da hikâyenin son parçası. Hata ve onarım birlikte anlatılmalı.”\n\nÇocukların bazıları not aldı. Bazıları oyunu bir daha oynamak istedi. Yeni turda biri kaybolan su testisini, diğeri yanlış yere götürülen yarış bayrağını konu etti. Artık oyun, yalnızca eğlenmek için değil, herkesin zihninde acele hükmün nasıl oluştuğunu görmek için oynanıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Toy sona erdiğinde konuk obaların atlıları yola dizildi. İnci Ana genç dokumacılara küçük ip yumakları armağan etti. Sarıhan deponun yeni çatısına son kez baktı; gelecek yağmurda suyun içeri sızmayacağından emin olmak için ustayla birlikte olukları denetledi. Kara Turgut defterin ilk sayfasını okudu ve kapağını dikkatle kapattı.\n\nBoğaç yol ayrımında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "belirtme",
+          "yedek": "bir arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " gördü. Çocuk bir arkadaşına, “Gördüğümü söyledim ama görmediğim şeyi uydurmadım,” diyordu. Arkadaşı gülerek, “Bundan sonra bilmediğimizde 'bilmiyorum' demek daha kolay,” diye karşılık verdi.\n\nBoğaç bu konuşmayı duyunca yavaşladı. Bir boğayı yenmek ona bir ad kazandırmıştı. Oysa bu olay ona başkalarının da kullanabileceği küçük bir alışkanlık öğretmişti: Önce dinlemek, sonra sormak, en son karar vermek. Bunun sonucunu her gün bir kez daha görmek mümkündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dede Korkut yanından geçerken kopuzuna hafifçe dokundu. “Bir yiğidin adını bazen tek bir büyük olay duyurur,” dedi. “Ama adın ne anlam taşıdığını küçük kararlar belirler.”\n\nBoğaç karşılık vermedi. Ufukta yükselen toz bulutunu, yola çıkan atlıları ve direklerde dalgalanan sancakları izledi. Artık gücünü kanıtlamak için yeni bir boğayla karşılaşması gerekmediğini biliyordu. En önemli karşılaşma, kimi zaman insanın kendi öfkesiyle yaptığı sessiz mücadeleydi.\n\nBoğaç, sabah sancağın yanından geçerken yeni kayıt defterine bir sayfa daha ekledi: “Bugün duyduklarım, bugün doğruladıklarım.” Bu iki satırın birbirine karışmaması için defteri kapatmadan önce uzun uzun düşündü."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr073_kulak_cinlamak": [
+      {
+        "t": "metin",
+        "v": "Ama annesinin söyledikleri kulağında çınladı."
+      }
+    ],
+    "hr073_yuz_burusturmak": [
+      {
+        "t": "metin",
+        "v": "Kara Turgut yüzünü buruşturdu."
+      }
+    ],
+    "hr073_araya_girmek": [
+      {
+        "t": "metin",
+        "v": "Kara Turgut öfkeyle üzerine yürümek isteyince Boğaç araya girdi."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Boğaç'ın adı anıldığında hep neyi duymaktan yorulmuştu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Güçlü ve korkmaz olduğunu"
+        },
+        {
+          "id": "B",
+          "metin": "Yarışı kazandığını"
+        },
+        {
+          "id": "C",
+          "metin": "Toy için hazırlandığını"
+        },
+        {
+          "id": "D",
+          "metin": "Her gün ormana gittiğini"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Adı anıldığında hep \"Boğaç güçlüdür. Boğaç korkmaz.\" sözünü duyuyordu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 3,
+      "metin": "Boğaç sandığın bulunmasının neden tek başına İnci Ana'yı suçlu yapmadığını düşündü?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sandığı kimin getirdiği belli değildi"
+        },
+        {
+          "id": "B",
+          "metin": "Sandık çok ağırdı"
+        },
+        {
+          "id": "C",
+          "metin": "İnci Ana sandığı açmıştı"
+        },
+        {
+          "id": "D",
+          "metin": "Sandığın çok eski olduğunu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Sandığın bulunması bir bulgudur; kimin getirdiğini kanıtlamaz."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 12,
+      "metin": "Defterdeki görülen, düşünülen ve doğrulanan başlıkları neyi öğretmek için kullanıldı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bilinen ile tahmini, kanıtlanmış ile söyleneni ayırmayı"
+        },
+        {
+          "id": "B",
+          "metin": "Defteri en çok kimin doldurduğunu"
+        },
+        {
+          "id": "C",
+          "metin": "Sandığın hangi yere konacağını"
+        },
+        {
+          "id": "D",
+          "metin": "Toyda hangi oyunun oynanacağını"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Üç başlık, gördüğümüz, düşündüğümüz ve doğruladığımız şeyleri birbirinden ayırmayı öğretir."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "Metinde geçen kervanbaşı sözcüğü neyi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kervanı yöneten, yolculuğu düzenleyen kişiyi"
+        },
+        {
+          "id": "B",
+          "metin": "Toy şenliğini izleyen çocuğu"
+        },
+        {
+          "id": "C",
+          "metin": "Kilim dokuyan ustayı"
+        },
+        {
+          "id": "D",
+          "metin": "Atlarına bakan çocuğu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kervanbaşı, kervanı yöneten kişidir; bu metinde Kara Turgut'tur."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr073_kervanbasi",
+        "tur": "kelime",
+        "yazim": "kervanbaşı",
+        "anlam": "Kervanı yöneten, yolculuğu düzenleyen kişi.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_kafile_basi",
+        "tur": "kelime",
+        "yazim": "kafile başı",
+        "anlam": "Birlikte yolculuk eden bir topluluğun başında bulunan kişi.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_kervanci",
+        "tur": "kelime",
+        "yazim": "kervancı",
+        "anlam": "Kervanla mal taşıyarak geçimini sağlayan kişi.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_hukum",
+        "tur": "kelime",
+        "yazim": "hüküm",
+        "anlam": "Bir olay hakkında verilen kesin karar.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_karar",
+        "tur": "kelime",
+        "yazim": "karar",
+        "anlam": "Düşünüp bir konuda seçilen yol ya da verilen sonuç.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_yargi",
+        "tur": "kelime",
+        "yazim": "yargı",
+        "anlam": "Bir davada mahkemenin verdiği sonuç.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_olculu",
+        "tur": "kelime",
+        "yazim": "ölçülü",
+        "anlam": "Aşırıya kaçmayan, dengeli.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_olcusuz",
+        "tur": "kelime",
+        "yazim": "ölçüsüz",
+        "anlam": "Sınırı aşan, dengesiz.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_agirbasli",
+        "tur": "kelime",
+        "yazim": "ağırbaşlı",
+        "anlam": "Sakin, ciddi ve düşünerek davranan.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_soylenti",
+        "tur": "kelime",
+        "yazim": "söylentiyle",
+        "anlam": "Kanıtı belli olmayan, ağızdan ağıza yayılan haber.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_haber",
+        "tur": "kelime",
+        "yazim": "haber",
+        "anlam": "Bir olay hakkında kaynağı belli bilgi.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_dedikodu",
+        "tur": "kelime",
+        "yazim": "dedikodu",
+        "anlam": "Bir kişi hakkında onun yokken konuşulan, çoğu zaman asılsız laf.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_kanit",
+        "tur": "kelime",
+        "yazim": "kanıt",
+        "anlam": "Bir şeyin doğruluğunu gösteren belge, iz ya da bulgu.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_tahmin",
+        "tur": "kelime",
+        "yazim": "tahmin",
+        "anlam": "Kesin bilgiye dayanmadan yapılan yorum.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_iddia",
+        "tur": "kelime",
+        "yazim": "iddia",
+        "anlam": "Doğruluğu henüz gösterilmemiş bir öne sürme.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_kulak_cinlamak",
+        "tur": "deyim",
+        "yazim": "kulağında çınlamak",
+        "anlam": "Bir söz ya da sesin uzun süre aklından gitmemesi.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_kulagina_kupe",
+        "tur": "deyim",
+        "yazim": "kulağına küpe olmak",
+        "anlam": "Söylenen bir sözü ders alıp unutmamak.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_aklinda_kalmak",
+        "tur": "deyim",
+        "yazim": "aklında kalmak",
+        "anlam": "Bir şeyi unutmayıp hatırlamak.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_yuz_burusturmak",
+        "tur": "deyim",
+        "yazim": "yüzünü buruşturmak",
+        "anlam": "Hoşnutsuzluğunu yüz ifadesiyle belli etmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_kaslarini_catmak",
+        "tur": "deyim",
+        "yazim": "kaşlarını çatmak",
+        "anlam": "Hoşnutsuzluğunu yüzünü buruşturarak belli etmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_suratini_asmak",
+        "tur": "deyim",
+        "yazim": "suratını asmak",
+        "anlam": "Somurtup hoşnutsuz görünmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_araya_girmek",
+        "tur": "deyim",
+        "yazim": "araya girmek",
+        "anlam": "Tartışan iki tarafın arasına girip kavgayı yatıştırmaya çalışmak.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_ise_el_atmak",
+        "tur": "deyim",
+        "yazim": "işe el atmak",
+        "anlam": "Bir işe başlamak, işi üstlenmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr073_sozunu_kesmek",
+        "tur": "deyim",
+        "yazim": "sözünü kesmek",
+        "anlam": "Biri konuşurken lafını bölmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr073_kervanbasi",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr073_kervanbasi"
+          },
+          {
+            "girdi": "hr073_kafile_basi"
+          },
+          {
+            "girdi": "hr073_kervanci"
+          }
+        ]
+      },
+      {
+        "ad": "hr073_hukum",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr073_hukum"
+          },
+          {
+            "girdi": "hr073_karar"
+          },
+          {
+            "girdi": "hr073_yargi"
+          }
+        ]
+      },
+      {
+        "ad": "hr073_olculu",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr073_olculu"
+          },
+          {
+            "girdi": "hr073_olcusuz"
+          },
+          {
+            "girdi": "hr073_agirbasli"
+          }
+        ]
+      },
+      {
+        "ad": "hr073_soylenti",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr073_soylenti"
+          },
+          {
+            "girdi": "hr073_haber"
+          },
+          {
+            "girdi": "hr073_dedikodu"
+          }
+        ]
+      },
+      {
+        "ad": "hr073_kanit",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr073_kanit"
+          },
+          {
+            "girdi": "hr073_tahmin"
+          },
+          {
+            "girdi": "hr073_iddia"
+          }
+        ]
+      },
+      {
+        "ad": "hr073_kulak_cinlamak",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr073_kulak_cinlamak"
+          },
+          {
+            "girdi": "hr073_kulagina_kupe"
+          },
+          {
+            "girdi": "hr073_aklinda_kalmak"
+          }
+        ]
+      },
+      {
+        "ad": "hr073_yuz_burusturmak",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr073_yuz_burusturmak"
+          },
+          {
+            "girdi": "hr073_kaslarini_catmak"
+          },
+          {
+            "girdi": "hr073_suratini_asmak"
+          }
+        ]
+      },
+      {
+        "ad": "hr073_araya_girmek",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr073_araya_girmek"
+          },
+          {
+            "girdi": "hr073_ise_el_atmak"
+          },
+          {
+            "girdi": "hr073_sozunu_kesmek"
+          }
+        ]
+      }
+    ]
+  }
+}

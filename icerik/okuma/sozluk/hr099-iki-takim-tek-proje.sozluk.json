@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr099_kanit",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_delil",
+      "tur": "kelime",
+      "yazim": "delil",
+      "anlam": "Bir olayın doğruluğunu gösteren belge ya da nesne.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_iddia",
+      "tur": "kelime",
+      "yazim": "iddia",
+      "anlam": "Bir şeyin doğru olduğunu ileri sürme.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_erisilebilirlik",
+      "tur": "kelime",
+      "yazim": "erişilebilirliğini",
+      "anlam": "Bir ürünün ya da yerin herkesin kullanabileceği biçimde olması.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_ulasilabilirlik",
+      "tur": "kelime",
+      "yazim": "ulaşılabilirlik",
+      "anlam": "Bir şeye ya da bir yere kolayca ulaşılabilme durumu.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_kapsayicilik",
+      "tur": "kelime",
+      "yazim": "kapsayıcılık",
+      "anlam": "Farklı insanları dışlamadan herkesi kapsayabilme özelliği.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_veri",
+      "tur": "kelime",
+      "yazim": "veri",
+      "anlam": "Gözlem ya da ölçümden elde edilen ham bilgi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_bilgi",
+      "tur": "kelime",
+      "yazim": "bilgi",
+      "anlam": "Bir konu hakkında öğrenilmiş ya da bilinen şey.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_kayit",
+      "tur": "kelime",
+      "yazim": "kayıt",
+      "anlam": "Bir olay ya da bilginin yazıya ya da veriye geçirilmiş hâli.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_guvenilir",
+      "tur": "kelime",
+      "yazim": "güvenilir",
+      "anlam": "Doğruluğuna ve sağlamlığına güvenilebilen.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_itimat",
+      "tur": "kelime",
+      "yazim": "itimat edilebilir",
+      "anlam": "Sözüne ve bilgisine inanılabilen.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_guvenilmez",
+      "tur": "kelime",
+      "yazim": "güvenilmez",
+      "anlam": "Doğruluğuna ve sağlamlığına güvenilemeyen.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_agiz",
+      "tur": "deyim",
+      "yazim": "ağzını açtı",
+      "anlam": "Bir şey söylemek için konuşmaya başlamak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_soze_girmek",
+      "tur": "deyim",
+      "yazim": "söze girmek",
+      "anlam": "Bir konuşmaya katılmak, söz almak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr099_agzini_kapamak",
+      "tur": "deyim",
+      "yazim": "ağzını kapamak",
+      "anlam": "Konuşmasını engellemek, susturmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr099_kanit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr099_kanit"
+        },
+        {
+          "girdi": "hr099_delil"
+        },
+        {
+          "girdi": "hr099_iddia"
+        }
+      ]
+    },
+    {
+      "ad": "hr099_erisilebilirlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr099_erisilebilirlik"
+        },
+        {
+          "girdi": "hr099_ulasilabilirlik"
+        },
+        {
+          "girdi": "hr099_kapsayicilik"
+        }
+      ]
+    },
+    {
+      "ad": "hr099_veri",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr099_veri"
+        },
+        {
+          "girdi": "hr099_bilgi"
+        },
+        {
+          "girdi": "hr099_kayit"
+        }
+      ]
+    },
+    {
+      "ad": "hr099_guvenilir",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr099_guvenilir"
+        },
+        {
+          "girdi": "hr099_itimat"
+        },
+        {
+          "girdi": "hr099_guvenilmez"
+        }
+      ]
+    },
+    {
+      "ad": "hr099_agiz",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr099_agiz"
+        },
+        {
+          "girdi": "hr099_soze_girmek"
+        },
+        {
+          "girdi": "hr099_agzini_kapamak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

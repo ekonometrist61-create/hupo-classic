@@ -1,0 +1,1085 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr062-hafizasi-karisan-android",
+    "baslik": "Hafızası Karışan Android",
+    "tur": "bilim_kurgu",
+    "konu": "veri_dogrulama",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "guvenlik"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "algoritma_hr062",
+          "tur": "lexeme",
+          "etiket": "algoritma",
+          "yuva": "hr062_algoritma",
+          "islev": "first_hint"
+        },
+        {
+          "id": "sesteslik_hr062",
+          "tur": "lexeme",
+          "etiket": "sesteşlik",
+          "yuva": "hr062_sesteslik",
+          "islev": "application"
+        },
+        {
+          "id": "dogrulama_hr062",
+          "tur": "lexeme",
+          "etiket": "doğrulama",
+          "yuva": "hr062_dogrulama",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr062",
+          "tur": "concept",
+          "etiket": "Veri, hata ve doğrulama",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 2059,
+        "tahmini_sure_dk": 20,
+        "sayfa_sayisi": 16,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 25,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Ev robotu kahvaltıya çorap getirdi. Hata nerede: robotta mı, komutta mı, verideki bir eksikte mi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-062"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ev robotu ARO, o sabah kahvaltı masasının üzerine üç çift çorap getirdi. “Günaydın,” dedi. “İstenen kahvaltı hazır.”\n\nBeşinci sınıftan "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce gülmeye başladı, sonra şaşırdı. “ARO, biz senden peynirli tost istemiştik.”\n\nRobot başını sağa çevirdi. “Talep kaydı: Tost. Eşleşen nesne: Çorap. Güven düzeyi: düşük.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " ablası "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", robotun ekranına baktı. Bir gün önce evdeki yardımcı yapay zekâ sisteminin güncellemesi yapılmıştı. ARO konuşulan sözcükleri bazen yanlış sınıflandırıyor, istekleri karıştırıyordu. Ailesi robotu ev işlerinde güvenli ve sınırlı görevler için kullanıyordu; mutfaktaki ısıtıcı araçları kendi başına çalıştırmasına izin verilmiyordu. Neyse ki çorapları masaya koymaktan başka bir iş yapmamıştı.\n\n“Belki de belleği silindi,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen itiraz etmedi. “Bu bir olasılık,” dedi. “Ama önce neyin yanlış gittiğini öğrenmeliyiz.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "ARO'nun ekranında son komutlar açıldı. “Tost getir” ifadesi yanında “toz getir” yazıyordu. Bir başka satırda “çorapları topla” talebi “çorabı hazırla” biçiminde kayıtlıydı. Robot iki ayrı komutu yanlış birleştirmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “İşte, hafızası karışmış!” dedi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Hafıza” sözcüğünün burada mecaz gibi kullanıldığını açıkladı. Robotun bir insan gibi anılar yaşadığını söylemek doğru değildi. Sistem verileri kaydediyor, belirli kurallarla işliyordu. Yanlış sonuç çıktığında veri, yazılım ve verilen komutlar birlikte kontrol edilmeliydi.\n\nAile, ARO'nun otomatik görevlerini geçici olarak durdurdu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " öğretmenleriyle okulun teknoloji kulübünde üzerinde çalıştıkları basit karar ağacını hatırladı. “Önce güvenli denemeler yapabiliriz,” dedi. “Ama kişisel kayıtları izinsiz paylaşmayalım.” Aile, yalnız örnek komutlarla bir test hazırlamayı kabul etti. Hiç kimsenin özel konuşmaları deney malzemesi olmayacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk testte "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " “Mavi kitabı masaya koy” dedi. ARO doğru kitabı getirdi. İkinci testte "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " “Masadaki kırmızı defteri bul” dedi. Robot önce mavi kitaba yöneldi, sonra durdu. “İki benzer nesne var. "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr062_dogrulama"
+        },
+        {
+          "t": "metin",
+          "v": " gerekli,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu yanıtı olumlu buldu. Yanlış nesneyi kesin doğru sanmaktansa soru sorması daha iyiydi.\n\nÜçüncü testte robot “oda” sözcüğünü “odun” olarak algıladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kahkahasını tutamadı. “ARO, biz evde odun istemiyoruz.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ses benzerliğinin tek başına anlamı belirlemediğini anlattı. Sözcüğün kullanıldığı cümle, önceki konuşma ve mevcut görev bilgisi önemliydi. Ama sistemin geçmiş konuşmaları gereksiz yere kaydetmesine de gerek yoktu. Yalnız gerekli veriler kullanılmalıydı.\n\nTeknoloji kulübünün öğretmeni Deniz Bey, çocukların hazırladığı test tablosunu inceledi. “Bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr062_algoritma"
+        },
+        {
+          "t": "metin",
+          "v": ", verilen kuralları ve verileri kullanarak sonuç üretebilir,” dedi. “Ama verdiği sonuç yanlış olabilir. Bu yüzden doğrulama, güvenlik sınırları ve insan denetimi önemlidir.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Robot yanıldığını söyleyebilir mi?” diye sordu. Öğretmen, sistemlerin belirsizlik bildirimi yapabilecek şekilde tasarlanabileceğini anlattı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ile "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun üzerine ARO için üç yeni ekran hazırladı. Birinci ekran “İsteği anladım”, ikincisi “Emin değilim, tekrar soracağım”, üçüncüsü “Bu görevi güvenle yapamam” diyordu. Çocuklar en çok üçüncü ekrana şaşırdı. Bir robotun her komuta “Evet” demesi iyi bir yardımcılık değildi. Tehlikeli veya yetkisiz görevleri durdurması da önemliydi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk gün robotun yanlışlarını komik buluyordu. Fakat bir an düşündü. ARO yanlış bir kitabı getirdiğinde sorun küçük olabilirdi; ama yanlış bir ilaç kutusunu seçseydi çok daha ciddi sonuçlar doğabilirdi. Bu yüzden aile, robotun sağlık, güvenlik veya önemli kişisel kararlar üzerinde bağımsız yetkisi olmaması gerektiğini açıkça belirledi. Robot bu tür taleplerde yetişkinlere başvurulmasını hatırlatacaktı.\n\nBir hafta sonunda ARO'nun komutları daha iyi ayırdığı görüldü. Ancak "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu “Artık hiç hata yapmaz” diye anlatmadı. Yalnızca yaptıkları denemelerde daha az karışıklık gözlediklerini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", evdeki teknoloji panosuna “Sistem başarılı olabilir, yine de kontrol gerekir” yazdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Cumartesi sabahı ARO yeniden kahvaltı masasına geldi. “Günaydın,” dedi. “Bugünkü görev: Masadaki kitapları düzenlemek. Başlamadan önce onay istiyorum.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “Onaylıyorum. Ama çorapları mutfağa getirme.”\n\nARO kısa bir duraklamadan sonra cevap verdi: “Çoraplar kahvaltı malzemesi değildir. Bilgi güncellendi.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kahkahaya boğuldu. Robotun insan gibi öğrenip öğrenmediği üzerine uzun uzun tartışmaya girmediler. Önemli olan, sistemi daha güvenli ve anlaşılır kullanabileceklerini öğrenmiş olmalarıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", teknolojinin yalnız ne yapabildiğini değil, ne zaman durması ve soru sorması gerektiğini de düşünmenin gerekli olduğunu artık biliyordu.\n\nARO'nun evde ilk kullanılmaya başlandığı günleri "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hâlâ hatırlıyordu. Robot, oyuncak kutusunu taşımasına yardım etmiş, masanın üzerindeki defterleri renklerine göre ayırmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " o zaman ARO'yu kusursuz bir yardımcı sanmıştı. Ablası ise her yeni cihazın belirli sınırları olduğunu söylemişti. “Bir robotun hızlı hareket etmesi, ne istediğimizi her zaman doğru anlayacağı anlamına gelmez,” demişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu uyarıyı çok ciddiye almamıştı. Çoraplı kahvaltı günü gelince ablasının ne demek istediğini daha iyi anlamıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", sorunu çözmeden önce ailece bir liste hazırlamalarını önerdi. Robotun hangi işleri yapmasına izin vardı? Hangi işlerde önce onay istemesi gerekiyordu? Hangi işleri kesinlikle yapmamalıydı? Herkes kendi önerisini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kitapları taşımak ve oyuncak kutusunu düzenlemek gibi güvenli görevler önerdi. Annesi, kapıları açma veya bir cihazı çalıştırma gibi işlerde insan kontrolünün gerekli olduğunu vurguladı. Babası da kişisel bilgilerin başkalarıyla paylaşılmaması gerektiğini söyledi. Liste tamamlandığında herkesin beklentisi daha açık hâle geldi.\n\nARO için hazırlanan ilk test kartında iki ayrı fotoğraf bulunuyordu. Birinde mavi bir kitap, diğerinde lacivert bir defter vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " “Mavi olanı getir” dediğinde robot hangisini seçeceğini bilemedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu hata olarak işaretlemek üzereydi, fakat durdu. Renk adları birbirine yakın olabilir, ayrıca iki nesne de koyu mavi görünebilirdi. “Belki de sorumuz yeterince açık değil,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " komutu değiştirdi: “Kapakta uçurtma resmi olan mavi kitabı getir.” Robot bu kez doğru kitabı seçti. Çocuklar, doğru cevabın yalnız iyi bir sistemle değil, açık bir istekle de ilişkili olduğunu öğrendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İkinci kartta aynı sözcük farklı cümlelerde kullanılıyordu. “Yüz sayfalık defter” ile “Yüzünü yıka” cümleleri yan yana yazılmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “ARO bu iki yüz sözcüğünü nasıl ayırıyor?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", Türkçede bazı sözcüklerin aynı yazılış ve sesle farklı anlamlar taşıyabildiğini anlattı. Buna "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr062_sesteslik"
+        },
+        {
+          "t": "metin",
+          "v": " dendiğini öğrendiler. Sözcüğün çevresindeki diğer kelimeler ne anlama geldiğini anlamaya yardım ediyordu. ARO'nun cümledeki bağlamı değerlendirmesi bu yüzden önemliydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu bölüm için küçük bir kelime oyunu hazırladı.\n\nOyunda birinci kartta “gül” yazıyordu. ARO önce çiçek resmini gösterdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Peki ‘Gül, çünkü çok komik’ cümlesinde?” diye sordu. Robot önce durdu, sonra fiil olan gülmekle ilgili açıklamayı seçti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", iki örneğin sesteş sözcüklerin anlamını göstermeye yardımcı olduğunu belirtti. Ama gerçek dilin bundan daha karmaşık olduğunu da söyledi. Kelimeler yalnız sözlük listelerinden ibaret değildi; insanlar onları cümlede, konuşmada ve çeşitli bağlamlarda kullanıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Testlerin ortasında ARO'nun ekranında yanlış bir uyarı belirdi: “Görev tamamlandı.” Oysa masadaki üç kitaptan biri yerindeydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu görünce “Robot yalan söylüyor,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Yalan söylemek insanın niyetiyle ilgili bir söz,” diye karşılık verdi. “Burada sistem yanlış sonuç üretiyor olabilir.” Robotun görevi nasıl tamamlandı saydığını araştırdılar. Yazılım, taşınması gereken kitap sayısını iki olarak kaydetmişti. ARO iki kitabı alınca işi tamamlanmış sayıyordu. Sorun yalnız robotun görmesinde değil, hazırlanan görev verisindeydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", yanlış sonucun nedenini bulunca kendini gerçek bir araştırmacı gibi hissetti.\n\nDeniz Bey okul kulübünde bu örneği anlattığında çocuklara bir soru sordu: “"
+        },
+        {
+          "t": "vurgu",
+          "v": "Yanlış cevabı her zaman cihaz mı üretir"
+        },
+        {
+          "t": "metin",
+          "v": ", yoksa bizim hazırladığımız bilgiler de hatalı olabilir mi?” Bir öğrenci “İkisi de,” dedi. Öğretmen, teknolojik sistemlerde veri kalitesi, açık görev tanımı ve kontrol süreçlerinin önemini anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " robotu kötülemek istemiyordu; ama başarılı görünen sonuçlara da sorgulamadan güvenmenin doğru olmadığını öğrenmişti. Bu yaklaşımı kulüp panosunda küçük bir şema hâline getirdi: İstek → Yorum → İşlem → Sonuç → Doğrulama."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " en sevdiği görev, ARO'nun yanlış anladığı cümleleri düzeltmekti. Fakat bir süre sonra arkadaşlarıyla ilgili örnekler vermek istediğinde "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onu durdurdu. “Başka insanların özel konuşmalarını izin almadan kullanamayız,” dedi. Bunun yerine hayalî kişilerle örnek cümleler yazdılar. “Ali kırmızı kutuyu istiyor” ve “Zeynep mavi kitabı seçiyor” gibi basit, kimseye ait özel bilgi içermeyen testler hazırladılar. ARO'nun öğrenme örnekleri için gerçek aile sohbetlerinin kaydedilmesine gerek yoktu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kişisel veri sözcüğünü ilk kez bu kadar somut bir olayda düşünüyordu.\n\nBir akşam ARO, “"
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " ödevini tamamlayabilirim,” diye öneride bulundu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", robotun kendisi yerine ödev yazmasını istemedi. “Bana konuyu araştırmak için soru sorabilirsin,” dedi, “ama sonucu benim anlamam ve yazmam gerekiyor.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun üzerine dijital yardımın da sınırları olabileceğini düşündü. Bir teknoloji her işi bizim yerimize yaparsa bazı becerileri kendimiz geliştiremeyebilirdik. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ARO'dan kendisine üç araştırma sorusu hazırlamasını istedi; cevapları kitaptan ve öğretmeniyle konuşarak bulacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüp gösterisi günü ARO küçük bir masanın üzerinde durdu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " üç farklı komut kartı okudu. Birincisi açık ve güvenliydi; robot doğru davranışı gösterdi. İkincisi belirsizdi; robot “Tekrar açıklar mısınız?” diye sordu. Üçüncü kart ise izin verilmemiş bir görev içeriyordu. ARO “Bu görevi gerçekleştiremiyorum,” diyerek durdu. İzleyenler üçüncü yanıtı da alkışladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şaşırdı. İnsanlar bir robotun durmasını neden başarı sayıyordu? Deniz Bey, “Çünkü her talebi düşünmeden uygulamamak da güvenli tasarımın parçası,” dedi.\n\nGösterinin sonunda bir öğrenci “Robot gerçekten düşündü mü?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ARO'nun insanlar gibi duygular yaşadığına veya düşünme biçimine sahip olduğuna ilişkin bir iddiada bulunamayacaklarını söyledi. Bildikleri şey, onun verileri ve programlanan işlemleri kullanarak sonuç ürettiğiydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", daha önce robotuna kızdığında ona insanmış gibi davrandığını fark etti. Teknolojinin nasıl çalıştığını anlamak, onu ne gereksiz yere küçümsemek ne de olduğundan fazla büyütmek demekti. En doğrusu yararlarını, sınırlılıklarını ve risklerini birlikte değerlendirmekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenlik sonrası ailece akşam yemeğinde ARO yeniden “Bugünkü göreviniz nedir?” diye sordu. Annesi, “Şimdi dinlenme zamanı,” dedi. Robot sessiz moda geçti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. “Bence bugün en iyi yaptığı şey bu.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bir teknolojinin sürekli çalışmasının gerekmediğini hatırlattı. İnsanlar bazen ekranlardan ve makinelerden uzaklaşıp birbirleriyle konuşmak isterdi. ARO sessizce beklerken aile masada günlerinin nasıl geçtiğini anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " robotun sessizliğini ilk kez rahatsız edici değil, dinlendirici buldu.\n\nErtesi gün "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yeni bir hikâye yazmaya başladı. Başlığı “Çoraplı Kahvaltı” idi. Hikâyesinde bir robot, bütün eşyaları karıştırıyor ve evdeki herkes onu düzeltmeye çalışıyordu. Ama öykünün sonunda robot bir anda kusursuz hâle gelmiyordu. Aile, doğru soru sormayı, sınırlar koymayı ve birbirini dinlemeyi öğreniyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu sonu sevdi. Çünkü kendi yaşadıkları da böyleydi. Bir hata, onların teknoloji hakkında daha dikkatli düşünmesine yol açmıştı. En komik günlerinden biri, en öğretici günlerinden birine dönüşmüştü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir ay sonra ARO'nun yazılımına yeni bir özellik eklendi. Robot, görev tamamlandığında yalnız “Bitti” demek yerine ne yaptığını kısa biçimde açıklıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu özelliği çok sevdi. Çünkü sonuç doğru görünse bile hangi işlemlerden geçtiğini anlamak istiyordu. Bir gün ARO kitapları dizerken iki defteri yanlış rafa koydu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", robotun açıklamasına bakınca kararını yalnız kapak rengine göre verdiğini gördü. Oysa raflar konuya göre düzenleniyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “İşte yine veriyle amaç arasındaki fark,” dedi. Robotun işi yaparken hangi kurala dayandığını anlamak, doğru sonuca ulaşmayı kolaylaştırıyordu.\n\nTeknoloji kulübü bu deneyimi küçük bir oyun hâline getirdi. Öğrenciler üç farklı talimat kartı hazırladı. Bir kart bilerek belirsiz yazılmıştı: “Şunu oraya götür.” İkinci kart daha açıktı: “Masanın sağındaki kitabı rafa koy.” Üçüncü kart ise koşullu ifadeler içeriyordu: “Kitap mavi kapaklıysa önce sahibini doğrula, değilse görevliye sor.” Çocuklar kartları karşılaştırdığında dilin açık kullanılmasının teknoloji için ne kadar önemli olabileceğini gördüler. Deniz Bey, bazı koşullu komutların günlük yaşamda da bulunduğunu anlattı. “Yağmur yağarsa şemsiyeni al,” cümlesi basit bir koşula dayanıyordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kitap"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eve döndüğünde küçük kardeşiyle aynı oyunu oynadı. Birisi robot olacak, diğeri komut verecekti. “Kitabı getir” dediğinde kardeşi masadaki herhangi bir kitabı seçti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce “Yanlış!” demek istedi, sonra komutunun yeterince açık olmadığını fark etti. “Üzerinde yeşil ağaç resmi bulunan kitabı getir,” diye düzeltti. Kardeşi doğru kitabı buldu. İkisi güldü. İletişim yalnız karşıdakinin anlamasını beklemek değildi; anlatanın da düşüncesini açık kurması gerekiyordu.\n\nARO bir gün “Bir hata olduğunda yardım istiyorum,” cümlesini seslendirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun gerçek anlamda yardım istediğini sanıp güldü. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bunun programlanan bir bilgilendirme cümlesi olduğunu anlattı. İnsanların yardıma ihtiyaç duyduğu zamanlarla teknolojik sistemlerin uyarı verdiği durumları aynı saymamak gerekiyordu. Ama iki durumda da iyi bir iletişim önemliydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", robotun insan gibi hissettiğini düşünmeden ona daha güvenli görevler verebileceğini anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yıl sonunda teknoloji kulübü çalışmalarını sergilediğinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir tabelaya yalnız üç sözcük yazdı: “Sor. Kontrol et. Koru.” Yanına küçük çorap resmi çizdi. Ziyaretçiler bunun neden orada olduğunu sorunca yaşadıkları komik kahvaltıyı anlattı. Sonra açıklamasını ekledi: “Bir robotun hata yapması bizi güldürebilir. Ama yanlış bilgiyle yapılan ciddi işlerde daha dikkatli olmalıyız.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kardeşinin konuşmasını gururla dinledi. ARO da masanın yanında sessizce duruyordu. Kimse ondan çorap getirmesini istememişti. Bu bile iyi bir başlangıç sayılabilirdi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " öğretmeni, sınıf içindeki yazılı anlatım etkinliğinde “Çoraplı Kahvaltı” hikâyesini okumak istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kabul etti. Arkadaşları robotun komik yanlışlarına güldü, sonra ondan ne öğrendiklerini tartıştı. Kimi “Komutları açık vermek,” dedi, kimi “Bilgiyi kontrol etmek.” Bir öğrenci “Bir şey yanlış giderse kimin suçlu olduğunu hemen aramak yerine nedenini araştırmak,” diye ekledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu yanıtı özellikle sevdi. Çünkü ilk gün ARO'ya kızmış, sonra kendi sözlerinin de bazen belirsiz olduğunu fark etmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hikâye okunduktan sonra "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", arkadaşlarının önerileriyle küçük bir düzeltme yaptı. Robotun son sahnede “Her şeyi öğrendim,” demesini çıkardı. Yerine “Yeni görevlerde yine doğrulama gerekebilir” cümlesini yazdı. Böylece kahramanı kusursuz görünmüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun daha inandırıcı ve daha öğretici olduğuna karar verdi. Hatalardan öğrenmek, bir daha hiç hata yapmamak demek değildi. Önemli olan her yeni durumda dikkatli ve sorgulayıcı kalabilmekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "- Kavramlar: Algoritma, veri, belirsizlik, doğrulama, insan denetimi. - Dil: Oda–odun benzerliği; bağlam, çok anlamlılık ve mecaz kullanım. - Dijital güven: Kişisel verilerin korunması; yüksek riskli görevlerde insan kontrolü."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Robot kahvaltı masasına ne getirdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Üç çift çorap"
+        },
+        {
+          "id": "B",
+          "metin": "Peynirli tost"
+        },
+        {
+          "id": "C",
+          "metin": "Kitaplar"
+        },
+        {
+          "id": "D",
+          "metin": "Defterler"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Robot, tost yerine üç çift çorap getirdi."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Robotun çorap getirmesinin nedeni neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Komutları yanlış birleştirmesi ve sözcükleri karıştırması"
+        },
+        {
+          "id": "B",
+          "metin": "Çorapların çok sevilmesi"
+        },
+        {
+          "id": "C",
+          "metin": "Ailenin çorap istemesi"
+        },
+        {
+          "id": "D",
+          "metin": "Tostun bitmesi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "“Tost” ve “toz”, “çorap” ve “çorabı” gibi benzer kayıtlar karışmıştı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Deniz Bey'in açıklamasına göre bir sistemin sonucu neye bağlıdır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kurallara, verilere ve doğrulamaya"
+        },
+        {
+          "id": "B",
+          "metin": "Yalnızca renklere"
+        },
+        {
+          "id": "C",
+          "metin": "Robotun boyuna"
+        },
+        {
+          "id": "D",
+          "metin": "Hava durumuna"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Sonuç, kuralların, verilerin ve kontrol süreçlerinin birlikte doğru çalışmasına bağlıdır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 7,
+      "metin": "Metinde sesteşlik ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Aynı yazılış ve sesle farklı anlamlar taşıyan sözcükler"
+        },
+        {
+          "id": "B",
+          "metin": "Ses kaydı yapmak"
+        },
+        {
+          "id": "C",
+          "metin": "Robotun çalması"
+        },
+        {
+          "id": "D",
+          "metin": "İki ayrı dil"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Sesteş sözcükler, yazılışları ve sesleri aynı olup anlamları farklı olan kelimelerdir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr062_algoritma",
+        "tur": "kelime",
+        "yazim": "algoritma",
+        "anlam": "Bir sorunu çözmek için adım adım izlenen kurallar dizisi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_yontem",
+        "tur": "kelime",
+        "yazim": "yöntem",
+        "anlam": "Bir işi yapmak için izlenen yol.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_rastgelelik",
+        "tur": "kelime",
+        "yazim": "rastgelelik",
+        "anlam": "Kurala bağlı olmadan, tesadüfen gerçekleşme durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_sesteslik",
+        "tur": "kelime",
+        "yazim": "sesteşlik",
+        "anlam": "Yazılışı ve sesi aynı, anlamı farklı sözcüklerin durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_esanlamlilik",
+        "tur": "kelime",
+        "yazim": "eş anlamlılık",
+        "anlam": "Anlamları aynı ya da çok yakın sözcükler arasındaki ilişki.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_zitlik",
+        "tur": "kelime",
+        "yazim": "zıtlık",
+        "anlam": "Anlamları birbirinin karşıtı olan sözcükler arasındaki ilişki.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_dogrulama",
+        "tur": "kelime",
+        "yazim": "doğrulama",
+        "anlam": "Bir bilginin doğruluğunu kontrol etme işi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_kontrol",
+        "tur": "kelime",
+        "yazim": "kontrol",
+        "anlam": "Bir şeyin istenen durumda olup olmadığına bakma.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr062_varsayim",
+        "tur": "kelime",
+        "yazim": "varsayım",
+        "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr062_algoritma",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr062_algoritma"
+          },
+          {
+            "girdi": "hr062_yontem"
+          },
+          {
+            "girdi": "hr062_rastgelelik"
+          }
+        ]
+      },
+      {
+        "ad": "hr062_sesteslik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr062_sesteslik"
+          },
+          {
+            "girdi": "hr062_esanlamlilik"
+          },
+          {
+            "girdi": "hr062_zitlik"
+          }
+        ]
+      },
+      {
+        "ad": "hr062_dogrulama",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr062_dogrulama"
+          },
+          {
+            "girdi": "hr062_kontrol"
+          },
+          {
+            "girdi": "hr062_varsayim"
+          }
+        ]
+      }
+    ]
+  }
+}

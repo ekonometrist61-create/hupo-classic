@@ -1,0 +1,522 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr030-ormanin-kaybolan-patikasi",
+    "baslik": "Ormanın Kaybolan Patikası",
+    "tur": "macera",
+    "konu": "harita_guzergah",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D16",
+      "D5"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 4,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "doga",
+        "guvenlik"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D16",
+        "yardimci_deger": "D5"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "kroki_hr030",
+          "tur": "lexeme",
+          "etiket": "kroki",
+          "yuva": "hr030_kroki",
+          "islev": "first_hint"
+        },
+        {
+          "id": "guzergah_hr030",
+          "tur": "lexeme",
+          "etiket": "güzergâh",
+          "yuva": "hr030_guzergah",
+          "islev": "application"
+        },
+        {
+          "id": "olcek_hr030",
+          "tur": "lexeme",
+          "etiket": "ölçek",
+          "yuva": "hr030_olcek",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr030",
+          "tur": "concept",
+          "etiket": "Kısa yol her zaman güvenli değildir",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 506,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 6,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 5,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Eski patika kısa ama kapalı. Üç arkadaş güvenli yolu nasıl buldu?",
+    "durum": "taslak",
+    "fis_kodu": "HR-030"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Orman parkındaki yürüyüşe hazırlanırken öğretmenleri, haritadaki ince yeşil çizgiyi gösterdi. “Bu, gölete ulaşan eski patikamız,” dedi. Ancak park girişindeki görevli onları durdurdu. Geceki şiddetli yağmur yüzünden bazı yerlerde toprak kaymış, patika geçici olarak kapatılmıştı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "orman"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n“Bütün gezi iptal mi?” diye sordu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nGörevli, güvenli ve açık bir başka yol olduğunu, yeni yön levhalarının henüz yerleştirilmediğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", arkadaşları "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ve Nisa ile görevliden alternatif yolun "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr030_kroki"
+        },
+        {
+          "t": "metin",
+          "v": " aldı. Öğretmenleri çocukların bir keşif görevi yapmasına izin verdi: Yürüyüş boyunca yalnızca açık "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr030_guzergah"
+        },
+        {
+          "t": "metin",
+          "v": " izleyecek, eksik levhaları not edeceklerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "İlk kavşakta iki yol ayrılıyordu. Haritada sağ taraftaki yolun sonunda piknik alanı, soldaki yolun sonunda gözlem terası görünüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sağa dönmek istedi, çünkü oradan kuş sesi geliyordu. Nisa ise haritadaki okları işaret etti. “Kuş sesi yönümüzü göstermiyor. Terasa gitmek için önce sola dönmeliyiz.”\n\nBiraz ileride yerde düşmüş bir levha gördüler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " levhayı kaldırmak istedi, fakat öğretmeni önce çevreye bakmalarını söyledi. Yağmurdan sonra zemin kaygandı. Görevlinin not alması için levhanın yerini haritada işaretlediler; ona dokunmadan yürüdüler.\n\nGözlem terasına vardıklarında gölet uzaktan görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Eski patika haritada daha kısa. Neden orayı kullanmıyoruz?” diye sordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“"
+        },
+        {
+          "t": "vurgu",
+          "v": "Çünkü kısa yol her zaman güvenli yol değildir"
+        },
+        {
+          "t": "metin",
+          "v": ",” dedi öğretmeni. “Harita, yolun nerede olduğunu gösterir; güncel levhalar ve görevliler ise hangi yolu kullanabileceğimizi bildirir.”\n\nGözlem terasında beklerken Nisa, krokideki küçük karelerin ne işe yaradığını merak etti. Öğretmenleri bunların harita üzerindeki belirli yerleri gösterdiğini anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Kâğıtta iki parmak uzaklıkta olan yerler gerçek hayatta niçin bu kadar uzak?” diye sordu. Öğretmen, haritaların gerçek yerleri küçülterek gösterdiğini söyledi; bunun için "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr030_olcek"
+        },
+        {
+          "t": "metin",
+          "v": " kullanıldığını ekledi. Çocuklar adımlarını sayarak kısa bir mesafeyi karşılaştırdı ama yaklaşık sonuçları kesin ölçüm sanmamaları gerektiğini de öğrendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yeni levhaların yalnız doğru yeri göstermesini değil, herkesçe anlaşılmasını istiyordu. Okuma güçlüğü yaşayan küçük çocukların da işaretleri anlayabilmesi için renk ve şeklin yazıyla birlikte kullanılmasını önerdi. Öğretmen öneriyi not etti.\n\nDönüşte park ofisinde görevli, çocukların işaretlediği noktaları inceledi.\n\nDönüşte park ofisinde görevli, çocukların işaretlediği noktaları inceledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bazı levhalara hayvan resimleri konmasını önerdi. Nisa ise hem simge hem yazı bulunmasının daha anlaşılır olacağını söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bir de kavşaktan önce levha koyarsanız insanlar son anda yön değiştirmek zorunda kalmaz,” diye ekledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Park görevlisi önerileri dinlerken Nisa küçük bir ayrıntı daha ekledi. Bazı renkleri ayırt etmekte zorlanan kişiler olabilirdi; bu yüzden yalnız renge güvenmemek gerektiğini söyledi. Levhalara ok, kısa sözcük ve kolay tanınan simgeler koymayı kararlaştırdılar. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da çizdiği kuş resmini yol işaretinden ayırdı: “Güzel bir resim, her zaman açık bir işaret olmayabilir.”\n\nBir hafta sonra sınıf yeniden parka geldi. Kapatılmış patikanın girişinde hâlâ uyarı vardı, fakat açık yola yeni levhalar yerleştirilmişti. Levhalarda yön oklarının yanında küçük yaprak simgeleri bulunuyordu. Park görevlisi çocuklara teşekkür etti: “Gözlemleriniz, yürüyüşçülerin işini kolaylaştırdı.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eve gidince iki haritayı yan yana koydu: Biri eski patikayı, diğeri güncel ve güvenli güzergâhı gösteriyordu. Aralarındaki farkı renklendirerek çizdi. Defterinin altına şu cümleyi yazdı: İyi bir yol bulmak, yalnızca hedefe varmak değil, oraya güvenle ulaşmaktır.\n\nDil hedefi: rota, yön, uyarı; çözüm önerme; Kavram/değer: kroki, güvenli güzergâh, doğayı koruma. İkon önerileri: orman, pusula, levha. Okuma sonrası: Hangi kanıt yeni yolu seçmelerini sağladı? Bir levha tasarlasan neler koyardın?"
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Patika neden kapatılmıştı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yağmur yüzünden toprak kaymıştı"
+        },
+        {
+          "id": "B",
+          "metin": "Park ücretsiz değildi"
+        },
+        {
+          "id": "C",
+          "metin": "Gölet kurumuştu"
+        },
+        {
+          "id": "D",
+          "metin": "Kuş yuvası vardı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Şiddetli yağmur bazı yerlerde toprağı kaydırmıştı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 3,
+      "metin": "Öğretmen eski kısa patikayı neden kullanmadı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kısa yol her zaman güvenli değildi; güncel levha ve görevliler daha doğru bilgi veriyordu"
+        },
+        {
+          "id": "B",
+          "metin": "Gölet yoktu"
+        },
+        {
+          "id": "C",
+          "metin": "Yağmur yağıyordu"
+        },
+        {
+          "id": "D",
+          "metin": "Harita yanlıştı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Güncel levhalar ve görevliler, hangi yolun güvenli olduğunu gösterir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 6,
+      "metin": "Selin'in defterine yazdığı cümleye göre iyi bir yol nasıl olmalı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Güvenle ulaştırmalı"
+        },
+        {
+          "id": "B",
+          "metin": "Hızlı olmalı"
+        },
+        {
+          "id": "C",
+          "metin": "Kısa olmalı"
+        },
+        {
+          "id": "D",
+          "metin": "Renkli olmalı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "İyi yol, hedefe güvenle ulaştıran yoldur."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "Metinde geçen ölçek sözcüğü ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Haritada gerçek uzaklığı küçülterek gösteren oran"
+        },
+        {
+          "id": "B",
+          "metin": "Yürüyüş ayakkabısı"
+        },
+        {
+          "id": "C",
+          "metin": "Park görevlisi"
+        },
+        {
+          "id": "D",
+          "metin": "Bir tür levha"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Harita ölçeği, gerçek uzaklığın küçültülmüş oranını gösterir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr030_kroki",
+        "tur": "kelime",
+        "yazim": "krokisini",
+        "anlam": "Bir yerin kabaca çizilmiş, yol ve yerleri gösteren şeması.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr030_harita",
+        "tur": "kelime",
+        "yazim": "harita",
+        "anlam": "Bir yerin ölçekli ve ayrıntılı çizimi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr030_plan",
+        "tur": "kelime",
+        "yazim": "plan",
+        "anlam": "Bir işin nasıl yapılacağını gösteren tasarı.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr030_guzergah",
+        "tur": "kelime",
+        "yazim": "güzergâhı",
+        "anlam": "Bir yere gidilecek izlenen yol.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr030_rota",
+        "tur": "kelime",
+        "yazim": "rota",
+        "anlam": "Gidilecek yolun belirlenmiş izi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr030_kestirme",
+        "tur": "kelime",
+        "yazim": "kestirme",
+        "anlam": "Normalden daha kısa olan yol.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr030_olcek",
+        "tur": "kelime",
+        "yazim": "ölçek",
+        "anlam": "Haritada gerçek uzunluğun küçültülmüş oranı.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr030_oran",
+        "tur": "kelime",
+        "yazim": "oran",
+        "anlam": "İki büyüklüğün birbirine göre durumu.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr030_gercek_boy",
+        "tur": "kelime",
+        "yazim": "gerçek boyut",
+        "anlam": "Bir şeyin olduğu büyüklük.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr030_kroki",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr030_kroki"
+          },
+          {
+            "girdi": "hr030_harita"
+          },
+          {
+            "girdi": "hr030_plan"
+          }
+        ]
+      },
+      {
+        "ad": "hr030_guzergah",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr030_guzergah"
+          },
+          {
+            "girdi": "hr030_rota"
+          },
+          {
+            "girdi": "hr030_kestirme"
+          }
+        ]
+      },
+      {
+        "ad": "hr030_olcek",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr030_olcek"
+          },
+          {
+            "girdi": "hr030_oran"
+          },
+          {
+            "girdi": "hr030_gercek_boy"
+          }
+        ]
+      }
+    ]
+  }
+}

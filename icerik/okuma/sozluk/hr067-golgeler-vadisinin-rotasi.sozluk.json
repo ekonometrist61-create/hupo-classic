@@ -1,0 +1,124 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr067_kroki",
+      "tur": "kelime",
+      "yazim": "krokisi",
+      "anlam": "Yerin yollarını ve önemli noktalarını kabaca gösteren çizim.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr067_harita_d",
+      "tur": "kelime",
+      "yazim": "harita",
+      "anlam": "Yeryüzünü ölçekli biçimde gösteren çizim.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr067_olcek",
+      "tur": "kelime",
+      "yazim": "ölçek",
+      "anlam": "Haritadaki uzunluğun gerçek uzunluğa oranı.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr067_oran",
+      "tur": "kelime",
+      "yazim": "oran",
+      "anlam": "İki büyüklüğün birbirine göre durumu.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr067_koordinat",
+      "tur": "kelime",
+      "yazim": "koordinatları",
+      "anlam": "Bir yeri haritada belirleyen sayı ya da harf çiftleri.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr067_konum",
+      "tur": "kelime",
+      "yazim": "konum",
+      "anlam": "Bir şeyin bulunduğu yer.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr067_yon",
+      "tur": "kelime",
+      "yazim": "yön",
+      "anlam": "Gidilecek ya da bakılacak doğrultu.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr067_kroki",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr067_kroki"
+        },
+        {
+          "girdi": "hr067_harita_d"
+        }
+      ]
+    },
+    {
+      "ad": "hr067_olcek",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr067_olcek"
+        },
+        {
+          "girdi": "hr067_oran"
+        }
+      ]
+    },
+    {
+      "ad": "hr067_koordinat",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr067_koordinat"
+        },
+        {
+          "girdi": "hr067_konum"
+        },
+        {
+          "girdi": "hr067_yon"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

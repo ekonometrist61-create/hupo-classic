@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr077_adalet",
+      "tur": "kelime",
+      "yazim": "adaletin",
+      "anlam": "Herkese hakkını durumuna uygun biçimde verme.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr077_esitlik",
+      "tur": "kelime",
+      "yazim": "eşitlik",
+      "anlam": "Herkesin aynı haklara sahip olması.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr077_haksizlik",
+      "tur": "kelime",
+      "yazim": "haksızlık",
+      "anlam": "Hakkı olan birine hakkını vermeme durumu.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr077_tahammul",
+      "tur": "kelime",
+      "yazim": "tahammül",
+      "anlam": "Zorluğa ya da rahatsızlığa sabırla dayanma.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr077_sabir",
+      "tur": "kelime",
+      "yazim": "sabır",
+      "anlam": "Bekleme ve dayanma gücü.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr077_sabirsizlik",
+      "tur": "kelime",
+      "yazim": "sabırsızlık",
+      "anlam": "Beklemeye dayanamama hâli.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr077_sozunu",
+      "tur": "deyim",
+      "yazim": "lafını ağzından almak",
+      "anlam": "Birinin söyleyeceği sözü önceden söylemek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr077_lafini_agzindan_almak",
+      "tur": "deyim",
+      "yazim": "lafını ağzından almak",
+      "anlam": "Birinin söyleyeceğini önceden söylemek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr077_soz_hakki_tanimak",
+      "tur": "kelime",
+      "yazim": "söz hakkı tanımak",
+      "anlam": "Birine konuşma izni vermek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr077_adalet",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr077_adalet"
+        },
+        {
+          "girdi": "hr077_esitlik"
+        },
+        {
+          "girdi": "hr077_haksizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr077_tahammul",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr077_tahammul"
+        },
+        {
+          "girdi": "hr077_sabir"
+        },
+        {
+          "girdi": "hr077_sabirsizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr077_sozunu",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr077_sozunu"
+        },
+        {
+          "girdi": "hr077_lafini_agzindan_almak"
+        },
+        {
+          "girdi": "hr077_soz_hakki_tanimak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

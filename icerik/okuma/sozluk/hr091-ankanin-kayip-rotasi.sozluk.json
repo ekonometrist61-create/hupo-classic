@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr091_goc",
+      "tur": "kelime",
+      "yazim": "göç",
+      "anlam": "Kuşların ya da insanların mevsimlere göre yer değiştirmesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr091_gecis",
+      "tur": "kelime",
+      "yazim": "geçiş",
+      "anlam": "Bir yerden başka bir yere geçme.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr091_yerlesik",
+      "tur": "kelime",
+      "yazim": "yerleşik",
+      "anlam": "Bir yerde kalıcı olarak yaşayan.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr091_gozlem",
+      "tur": "kelime",
+      "yazim": "gözlem",
+      "anlam": "Bir olguyu dikkatle izleyip kaydetme.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr091_izleme",
+      "tur": "kelime",
+      "yazim": "izleme",
+      "anlam": "Bir şeyin durumunu sürekli takip etme.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr091_tahmin_g",
+      "tur": "kelime",
+      "yazim": "tahmin",
+      "anlam": "Ölçmeden yapılan yorum.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr091_aklina",
+      "tur": "deyim",
+      "yazim": "aklına geldi",
+      "anlam": "Bir şeyin hatırlanması.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr091_hatirina_gelmek",
+      "tur": "deyim",
+      "yazim": "hatırına gelmek",
+      "anlam": "Bir şeyin zihinde canlanması.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr091_akldan_cikmamak",
+      "tur": "deyim",
+      "yazim": "aklından çıkmamak",
+      "anlam": "Bir şeyi sürekli düşünmek, unutamamak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr091_goc",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr091_goc"
+        },
+        {
+          "girdi": "hr091_gecis"
+        },
+        {
+          "girdi": "hr091_yerlesik"
+        }
+      ]
+    },
+    {
+      "ad": "hr091_gozlem",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr091_gozlem"
+        },
+        {
+          "girdi": "hr091_izleme"
+        },
+        {
+          "girdi": "hr091_tahmin_g"
+        }
+      ]
+    },
+    {
+      "ad": "hr091_aklina",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr091_aklina"
+        },
+        {
+          "girdi": "hr091_hatirina_gelmek"
+        },
+        {
+          "girdi": "hr091_akldan_cikmamak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

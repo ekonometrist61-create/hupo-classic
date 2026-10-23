@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr051_goc",
+      "tur": "kelime",
+      "yazim": "göç",
+      "anlam": "Canlıların uygun koşullar için yer değiştirmesi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_gocmen",
+      "tur": "kelime",
+      "yazim": "göçmen",
+      "anlam": "Göç eden, bir yerden başka bir yere giden canlı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_yerlesme",
+      "tur": "kelime",
+      "yazim": "yerleşme",
+      "anlam": "Bir yerde kalıcı olarak oturma.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_nem",
+      "tur": "kelime",
+      "yazim": "nemini",
+      "anlam": "Havada ya da toprakta bulunan su miktarı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_rutubet",
+      "tur": "kelime",
+      "yazim": "rutubet",
+      "anlam": "Bir yerdeki nem ve ıslaklık.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_kuraklik",
+      "tur": "kelime",
+      "yazim": "kuraklık",
+      "anlam": "Uzun süre yağmurun az yağdığı durum.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_mecaz",
+      "tur": "kelime",
+      "yazim": "mecaz",
+      "anlam": "Bir sözcüğü gerçek anlamından farklı, ama ilişkili bir anlamda kullanma.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_benzetme",
+      "tur": "kelime",
+      "yazim": "benzetme",
+      "anlam": "İki şeyi bir özellik bakımından karşılaştırma.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_gercek_anlam",
+      "tur": "kelime",
+      "yazim": "gerçek anlam",
+      "anlam": "Sözcüğün ilk ve olağan anlamı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_kulaktan_kulaga",
+      "tur": "deyim",
+      "yazim": "kulaktan kulağa haber yaydı",
+      "anlam": "Bir haberi ağızdan ağıza yaymak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_agizdan_agiza",
+      "tur": "deyim",
+      "yazim": "ağızdan ağıza",
+      "anlam": "Bir sözün birçok kişiye yayılması.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr051_gizli_kalmak",
+      "tur": "kelime",
+      "yazim": "gizli kalmak",
+      "anlam": "Kimsenin bilmediği, saklı kalan.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr051_goc",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr051_goc"
+        },
+        {
+          "girdi": "hr051_gocmen"
+        },
+        {
+          "girdi": "hr051_yerlesme"
+        }
+      ]
+    },
+    {
+      "ad": "hr051_nem",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr051_nem"
+        },
+        {
+          "girdi": "hr051_rutubet"
+        },
+        {
+          "girdi": "hr051_kuraklik"
+        }
+      ]
+    },
+    {
+      "ad": "hr051_mecaz",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr051_mecaz"
+        },
+        {
+          "girdi": "hr051_benzetme"
+        },
+        {
+          "girdi": "hr051_gercek_anlam"
+        }
+      ]
+    },
+    {
+      "ad": "hr051_kulaktan_kulaga",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr051_kulaktan_kulaga"
+        },
+        {
+          "girdi": "hr051_agizdan_agiza"
+        },
+        {
+          "girdi": "hr051_gizli_kalmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

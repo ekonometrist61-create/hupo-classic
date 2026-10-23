@@ -1,0 +1,22 @@
+{
+  "hr073_olculu": {
+    "es": [
+      "hr073_agirbasli"
+    ],
+    "zit": [
+      "hr073_olcusuz"
+    ]
+  },
+  "hr073_olcusuz": {
+    "es": [],
+    "zit": [
+      "hr073_olculu"
+    ]
+  },
+  "hr073_agirbasli": {
+    "es": [
+      "hr073_olculu"
+    ],
+    "zit": []
+  }
+}

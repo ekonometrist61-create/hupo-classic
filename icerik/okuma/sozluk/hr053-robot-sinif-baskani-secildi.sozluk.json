@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr053_desibel",
+      "tur": "kelime",
+      "yazim": "desibeli",
+      "anlam": "Sesin şiddetini ölçmek için kullanılan birim.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr053_birim",
+      "tur": "kelime",
+      "yazim": "birim",
+      "anlam": "Bir büyüklüğü ölçmek için kabul edilen değer.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr053_sessizlik",
+      "tur": "kelime",
+      "yazim": "sessizlik",
+      "anlam": "Hiç ses olmaması durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr053_temsilcilik",
+      "tur": "kelime",
+      "yazim": "temsilciliği",
+      "anlam": "Bir grubu başkalarına karşı temsil etme görevi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr053_gorev",
+      "tur": "kelime",
+      "yazim": "görev",
+      "anlam": "Bir kişiye verilen iş ya da sorumluluk.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr053_bireysellik",
+      "tur": "kelime",
+      "yazim": "bireycilik",
+      "anlam": "Ortak yarara bakmadan yalnızca kendini düşünme tutumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr053_algilama",
+      "tur": "kelime",
+      "yazim": "algılamasını",
+      "anlam": "Bir durumu duyu ya da cihazla fark etme.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr053_fark_etmek",
+      "tur": "kelime",
+      "yazim": "fark etmek",
+      "anlam": "Bir şeyin varlığına ya da değişikliğine dikkat etmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr053_gozden_kacirmak",
+      "tur": "kelime",
+      "yazim": "gözden kaçırmak",
+      "anlam": "Bir ayrıntıyı fark etmemek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr053_desibel",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr053_desibel"
+        },
+        {
+          "girdi": "hr053_birim"
+        },
+        {
+          "girdi": "hr053_sessizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr053_temsilcilik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr053_temsilcilik"
+        },
+        {
+          "girdi": "hr053_gorev"
+        },
+        {
+          "girdi": "hr053_bireysellik"
+        }
+      ]
+    },
+    {
+      "ad": "hr053_algilama",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr053_algilama"
+        },
+        {
+          "girdi": "hr053_fark_etmek"
+        },
+        {
+          "girdi": "hr053_gozden_kacirmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

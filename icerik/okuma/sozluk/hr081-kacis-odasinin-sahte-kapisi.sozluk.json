@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr081_celdirici",
+      "tur": "kelime",
+      "yazim": "çeldirici",
+      "anlam": "Doğru cevabı gizlemek için dikkati yanlış yöne çeken öğe.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr081_yanitici",
+      "tur": "kelime",
+      "yazim": "yanıltıcı",
+      "anlam": "Doğru sanılmasına yol açan, yanlışa götüren.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr081_acik_ipucu",
+      "tur": "kelime",
+      "yazim": "açık ipucu",
+      "anlam": "Doğruyu açıkça gösteren işaret.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr081_varsayim",
+      "tur": "kelime",
+      "yazim": "varsayımlarımızı",
+      "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr081_onkabul",
+      "tur": "kelime",
+      "yazim": "önkabul",
+      "anlam": "İncelemeden önceden kabul edilen görüş.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr081_kanit",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr081_gozlerini",
+      "tur": "deyim",
+      "yazim": "gözlerini devirdi",
+      "anlam": "Sabırsızlıkla ya da hoşnutsuzlukla gözlerini yukarı çevirmek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr081_kaslarini_catmak",
+      "tur": "deyim",
+      "yazim": "kaşlarını çatmak",
+      "anlam": "Kızgınlık ya da hoşnutsuzluk göstermek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr081_gozunu_kirpmadan",
+      "tur": "kelime",
+      "yazim": "gözünü kırpmadan dinlemek",
+      "anlam": "Dikkatle, hiç kıpırdamadan dinlemek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr081_celdirici",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr081_celdirici"
+        },
+        {
+          "girdi": "hr081_yanitici"
+        },
+        {
+          "girdi": "hr081_acik_ipucu"
+        }
+      ]
+    },
+    {
+      "ad": "hr081_varsayim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr081_varsayim"
+        },
+        {
+          "girdi": "hr081_onkabul"
+        },
+        {
+          "girdi": "hr081_kanit"
+        }
+      ]
+    },
+    {
+      "ad": "hr081_gozlerini",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr081_gozlerini"
+        },
+        {
+          "girdi": "hr081_kaslarini_catmak"
+        },
+        {
+          "girdi": "hr081_gozunu_kirpmadan"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

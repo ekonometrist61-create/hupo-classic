@@ -1,0 +1,44 @@
+{
+  "hr072_anonim": {
+    "es": [
+      "hr072_imzasiz"
+    ],
+    "zit": []
+  },
+  "hr072_kimlikli": {
+    "es": [],
+    "zit": [
+      "hr072_imzasiz"
+    ]
+  },
+  "hr072_dogrulanmis_bilgi": {
+    "es": [],
+    "zit": [
+      "hr072_soylenti"
+    ]
+  },
+  "hr072_istek": {
+    "es": [
+      "hr072_gonulluluk"
+    ],
+    "zit": []
+  },
+  "hr072_zorunluluk": {
+    "es": [],
+    "zit": [
+      "hr072_gonulluluk"
+    ]
+  },
+  "hr072_lafini_bolmek": {
+    "es": [
+      "hr072_soz_kesmek"
+    ],
+    "zit": []
+  },
+  "hr072_sabirla_dinlemek": {
+    "es": [],
+    "zit": [
+      "hr072_soz_kesmek"
+    ]
+  }
+}

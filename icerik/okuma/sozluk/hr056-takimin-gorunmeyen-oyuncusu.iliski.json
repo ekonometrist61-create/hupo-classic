@@ -1,0 +1,32 @@
+{
+  "hr056_algilayici": {
+    "es": [
+      "hr056_sensor"
+    ],
+    "zit": []
+  },
+  "hr056_donemec": {
+    "es": [
+      "hr056_viraj"
+    ],
+    "zit": []
+  },
+  "hr056_duzluk": {
+    "es": [],
+    "zit": [
+      "hr056_viraj"
+    ]
+  },
+  "hr056_gonlu_kirilmak": {
+    "es": [
+      "hr056_ici_burkulmak"
+    ],
+    "zit": []
+  },
+  "hr056_ici_rahat": {
+    "es": [],
+    "zit": [
+      "hr056_ici_burkulmak"
+    ]
+  }
+}

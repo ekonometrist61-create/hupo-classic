@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr079_sifre",
+      "tur": "kelime",
+      "yazim": "şifre",
+      "anlam": "Yalnız izinli kişilerin bildiği gizli işaret ya da kod.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr079_parola",
+      "tur": "kelime",
+      "yazim": "parola",
+      "anlam": "Bir sistemi açmak için gereken gizli sözcük.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr079_acik_bilgi",
+      "tur": "kelime",
+      "yazim": "herkese açık bilgi",
+      "anlam": "Herkesin ulaşabildiği, gizli olmayan bilgi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr079_tahmin",
+      "tur": "kelime",
+      "yazim": "tahminler",
+      "anlam": "Kesin bilgi olmadan yapılan olası yorum.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr079_ongoru",
+      "tur": "kelime",
+      "yazim": "öngörü",
+      "anlam": "Gelecekte olabileceği önceden düşünme.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr079_kanit",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr079_ilgisini",
+      "tur": "deyim",
+      "yazim": "ilgisini çeken",
+      "anlam": "Dikkatini üzerine toplayan.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr079_dikkat_cekmek",
+      "tur": "deyim",
+      "yazim": "dikkat çekmek",
+      "anlam": "Göz önüne gelmek, fark edilmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr079_ilgisini_kaybetmek",
+      "tur": "deyim",
+      "yazim": "ilgisini kaybetmek",
+      "anlam": "İlgi göstermeyi bırakmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr079_sifre",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr079_sifre"
+        },
+        {
+          "girdi": "hr079_parola"
+        },
+        {
+          "girdi": "hr079_acik_bilgi"
+        }
+      ]
+    },
+    {
+      "ad": "hr079_tahmin",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr079_tahmin"
+        },
+        {
+          "girdi": "hr079_ongoru"
+        },
+        {
+          "girdi": "hr079_kanit"
+        }
+      ]
+    },
+    {
+      "ad": "hr079_ilgisini",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr079_ilgisini"
+        },
+        {
+          "girdi": "hr079_dikkat_cekmek"
+        },
+        {
+          "girdi": "hr079_ilgisini_kaybetmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

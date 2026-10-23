@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr072_imzasiz",
+      "tur": "kelime",
+      "yazim": "imzasız",
+      "anlam": "Kimin yazdığı belirtilmemiş, adı ya da imzası olmayan.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_anonim",
+      "tur": "kelime",
+      "yazim": "anonim",
+      "anlam": "Adı belli olmayan, kimliği gizli kalan.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_kimlikli",
+      "tur": "kelime",
+      "yazim": "imzalı",
+      "anlam": "Kimliği ya da adı belli olan.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_soylenti",
+      "tur": "kelime",
+      "yazim": "söylenti",
+      "anlam": "Kanıtı belli olmadan dolaşan haber.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_dedikodu",
+      "tur": "kelime",
+      "yazim": "dedikodu",
+      "anlam": "Bir kişi hakkında kulaktan kulağa yayılan konuşma.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_dogrulanmis_bilgi",
+      "tur": "kelime",
+      "yazim": "doğrulanmış bilgi",
+      "anlam": "Kanıtlarla sınanmış, doğru kabul edilen bilgi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_gonulluluk",
+      "tur": "kelime",
+      "yazim": "gönüllülüğün",
+      "anlam": "Zorunluluk olmadan, isteyerek yapılan iş.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_istek",
+      "tur": "kelime",
+      "yazim": "isteğe bağlı",
+      "anlam": "Kişinin kendi isteğine bırakılmış.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_zorunluluk",
+      "tur": "kelime",
+      "yazim": "zorunluluk",
+      "anlam": "Yapılmak zorunda olunan şey.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_soz_kesmek",
+      "tur": "deyim",
+      "yazim": "sözünü kesmek",
+      "anlam": "Birinin konuşmasını yarıda bölmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_lafini_bolmek",
+      "tur": "deyim",
+      "yazim": "lafını bölmek",
+      "anlam": "Konuşan birini durdurarak araya girmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr072_sabirla_dinlemek",
+      "tur": "kelime",
+      "yazim": "sabırla dinlemek",
+      "anlam": "Karşıdakini sözünü bitirene kadar beklemek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr072_imzasiz",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr072_imzasiz"
+        },
+        {
+          "girdi": "hr072_anonim"
+        },
+        {
+          "girdi": "hr072_kimlikli"
+        }
+      ]
+    },
+    {
+      "ad": "hr072_soylenti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr072_soylenti"
+        },
+        {
+          "girdi": "hr072_dedikodu"
+        },
+        {
+          "girdi": "hr072_dogrulanmis_bilgi"
+        }
+      ]
+    },
+    {
+      "ad": "hr072_gonulluluk",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr072_gonulluluk"
+        },
+        {
+          "girdi": "hr072_istek"
+        },
+        {
+          "girdi": "hr072_zorunluluk"
+        }
+      ]
+    },
+    {
+      "ad": "hr072_soz_kesmek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr072_soz_kesmek"
+        },
+        {
+          "girdi": "hr072_lafini_bolmek"
+        },
+        {
+          "girdi": "hr072_sabirla_dinlemek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

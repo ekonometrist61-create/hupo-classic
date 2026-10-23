@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr061_gecikme",
+      "tur": "kelime",
+      "yazim": "gecikmesiyle",
+      "anlam": "Bir şeyin beklenenden sonra ulaşması ya da olması.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_erteleme",
+      "tur": "kelime",
+      "yazim": "erteleme",
+      "anlam": "Bir işi sonraki zamana bırakma.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_zamaninda",
+      "tur": "kelime",
+      "yazim": "zamanında",
+      "anlam": "Beklenen vakitte, tam zamanında.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_simulasyon",
+      "tur": "kelime",
+      "yazim": "simülasyon",
+      "anlam": "Gerçek bir durumu model üzerinde canlandırma.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_canlandirma",
+      "tur": "kelime",
+      "yazim": "canlandırma",
+      "anlam": "Bir durumu gösterme ya da yeniden oluşturma.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_deney",
+      "tur": "kelime",
+      "yazim": "deney",
+      "anlam": "Bir varsayımı sınamak için yapılan uygulama.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_protokol",
+      "tur": "kelime",
+      "yazim": "protokollerinin",
+      "anlam": "İletişimde uyulan ortak kurallar dizisi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_kural",
+      "tur": "kelime",
+      "yazim": "kural",
+      "anlam": "Uyulması gereken düzen.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_karisiklik",
+      "tur": "kelime",
+      "yazim": "karmaşa",
+      "anlam": "Düzensiz, karışık durum.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_gozleri_parladi",
+      "tur": "deyim",
+      "yazim": "gözleri parladı",
+      "anlam": "Çok sevinmek ya da heyecanlanmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_gozu_dolmak_b",
+      "tur": "deyim",
+      "yazim": "gözü dolmak",
+      "anlam": "Duygulanıp ağlamaklı olmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr061_gozleri_kapandi",
+      "tur": "deyim",
+      "yazim": "gözleri kapandı",
+      "anlam": "Uykuya dalmak ya da bir şeye kayıtsız kalmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr061_gecikme",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr061_gecikme"
+        },
+        {
+          "girdi": "hr061_erteleme"
+        },
+        {
+          "girdi": "hr061_zamaninda"
+        }
+      ]
+    },
+    {
+      "ad": "hr061_simulasyon",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr061_simulasyon"
+        },
+        {
+          "girdi": "hr061_canlandirma"
+        },
+        {
+          "girdi": "hr061_deney"
+        }
+      ]
+    },
+    {
+      "ad": "hr061_protokol",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr061_protokol"
+        },
+        {
+          "girdi": "hr061_kural"
+        },
+        {
+          "girdi": "hr061_karisiklik"
+        }
+      ]
+    },
+    {
+      "ad": "hr061_gozleri_parladi",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr061_gozleri_parladi"
+        },
+        {
+          "girdi": "hr061_gozu_dolmak_b"
+        },
+        {
+          "girdi": "hr061_gozleri_kapandi"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

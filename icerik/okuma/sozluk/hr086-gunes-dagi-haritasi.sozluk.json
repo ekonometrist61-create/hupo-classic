@@ -1,0 +1,138 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr086_topografya",
+      "tur": "kelime",
+      "yazim": "topografya",
+      "anlam": "Yeryüzü şekillerini ve yükseklik durumunu inceleyen bilim.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr086_yukselti_egrisi",
+      "tur": "kelime",
+      "yazim": "yükselti eğrisi",
+      "anlam": "Aynı yükseklikteki noktaları birleştiren harita çizgisi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr086_egim",
+      "tur": "kelime",
+      "yazim": "eğimli",
+      "anlam": "Yüzeyin yatayla yaptığı açının dik ya da yumuşak oluşu.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr086_meyil",
+      "tur": "kelime",
+      "yazim": "meyil",
+      "anlam": "Bir yüzeyin yatayla yaptığı eğim.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr086_duzluk",
+      "tur": "kelime",
+      "yazim": "düzlük",
+      "anlam": "Eğimi olmayan, düz arazi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr086_gozler",
+      "tur": "deyim",
+      "yazim": "gözlerini çevirmek",
+      "anlam": "Dikkatini bir yöne yöneltmek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr086_dikkat_vermek",
+      "tur": "kelime",
+      "yazim": "dikkat vermek",
+      "anlam": "Bir şeye özen göstermek, ilgi göstermek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr086_gozunu_kapatmak",
+      "tur": "deyim",
+      "yazim": "gözünü kapatmak",
+      "anlam": "Bir şeyi görmezlikten gelmek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr086_topografya",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr086_topografya"
+        },
+        {
+          "girdi": "hr086_yukselti_egrisi"
+        }
+      ]
+    },
+    {
+      "ad": "hr086_egim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr086_egim"
+        },
+        {
+          "girdi": "hr086_meyil"
+        },
+        {
+          "girdi": "hr086_duzluk"
+        }
+      ]
+    },
+    {
+      "ad": "hr086_gozler",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr086_gozler"
+        },
+        {
+          "girdi": "hr086_dikkat_vermek"
+        },
+        {
+          "girdi": "hr086_gozunu_kapatmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

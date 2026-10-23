@@ -1,0 +1,32 @@
+{
+  "hr079_parola": {
+    "es": [
+      "hr079_sifre"
+    ],
+    "zit": []
+  },
+  "hr079_acik_bilgi": {
+    "es": [],
+    "zit": [
+      "hr079_sifre"
+    ]
+  },
+  "hr079_ongoru": {
+    "es": [
+      "hr079_tahmin"
+    ],
+    "zit": []
+  },
+  "hr079_dikkat_cekmek": {
+    "es": [
+      "hr079_ilgisini"
+    ],
+    "zit": []
+  },
+  "hr079_ilgisini_kaybetmek": {
+    "es": [],
+    "zit": [
+      "hr079_ilgisini"
+    ]
+  }
+}

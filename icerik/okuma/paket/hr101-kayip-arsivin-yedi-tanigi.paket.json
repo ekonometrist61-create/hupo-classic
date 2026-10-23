@@ -1,0 +1,1712 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr101-kayip-arsivin-yedi-tanigi",
+    "baslik": "Kayıp Arşivin Yedi Tanığı",
+    "tur": "gizem",
+    "konu": "kanit_tanik_belirsizlik",
+    "sinif_alt": 8,
+    "sinif_ust": 8,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 8,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce",
+        "sosyal"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "celiski_hr101",
+          "tur": "lexeme",
+          "etiket": "çelişki",
+          "yuva": "hr101_celiski",
+          "islev": "first_hint"
+        },
+        {
+          "id": "tanik_hr101",
+          "tur": "lexeme",
+          "etiket": "tanık",
+          "yuva": "hr101_tanik",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr101",
+          "tur": "idiom",
+          "etiket": "Başını tutmak",
+          "yuva": "hr101_basini",
+          "islev": "application"
+        },
+        {
+          "id": "kanit_hr101",
+          "tur": "lexeme",
+          "etiket": "kanıt",
+          "yuva": "hr101_kanit",
+          "islev": "application"
+        },
+        {
+          "id": "belirsiz_hr101",
+          "tur": "lexeme",
+          "etiket": "belirsiz",
+          "yuva": "hr101_belirsiz",
+          "islev": "transfer"
+        },
+        {
+          "id": "kavram_hr101",
+          "tur": "concept",
+          "etiket": "Gözlem, duyum ve çıkarım ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 4082,
+        "tahmini_sure_dk": 31,
+        "sayfa_sayisi": 32,
+        "soru_sayisi": 5,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1,
+          "degerlendirme": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 4,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 37,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Bir fotoğrafın arkasındaki tarih doğru mu? Yedi tanık yedi ayrı şey anlatınca Elif ve Bora kesin cevabı değil, kanıtın sınırını öğrenir.",
+    "durum": "taslak",
+    "fis_kodu": "HR-101"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şehir Belleği Sergisi'ne üç gün kalmıştı. Belediye kütüphanesinin üst katındaki küçük salonda otuz iki fotoğraf asılıydı. Fotoğraflardan biri, 12 Mayıs 1984 tarihiyle etiketlenmişti. Eski bir taş köprünün üzerinde bayraklar taşıyan insanlar görünüyordu; köprünün girişinde geçici bir sahne kurulmuş, sahnenin önünde kalabalık birikmişti. Alt yazı, “Köprünün açılış töreni” diyordu.\n\nSekizinci sınıf öğrencisi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", fotoğrafın sağ köşesindeki dükkâna dikkat etti. Dükkânın tabelasında “Özlem Kasetçilik” yazıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " dedesi kasetçilik dükkânının daha sonra açıldığını anlatırdı. Fakat eski hikâyelere güvenip sergiyi değiştirmek istemiyordu. Depodaki dosyaları karıştırdı ve başka bir fotoğraf buldu. Aynı köprü, aynı dükkân, ama farklı bir tören. O fotoğrafın arkasında da 1984 yazıyordu.\n\nİki fotoğraf birbirini doğrular gibi görünüyordu. Yine de ayrıntılar uyuşmuyordu. İlk fotoğrafta dükkânın önünde duran çınar ağacının dalları çok daha genişti. İkinci fotoğrafta köprü korkuluğunda yeni bir onarım çizgisi vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", fotoğraflardan hangisinin önce çekildiğini düşünürken sınıf arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " içeri girdi. “Hâlâ şunu mu inceliyorsun?” diye sordu. “Sergi yarın kurulacak. Tarihi fotoğrafın üstünde yazıyor işte.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıdın arka yüzünü çevirdi. Mavi mürekkep hafifçe dağılmıştı. Son iki rakamın çevresinde soluk bir silinti izi vardı. “"
+        },
+        {
+          "t": "vurgu",
+          "v": "Bir fotoğrafın arkasına tarih yazılması, o tarihin doğru olduğu anlamına gelmez"
+        },
+        {
+          "t": "metin",
+          "v": ",” dedi. “Belki de sonradan biri yanlış yazdı.”\n\nKütüphane görevlisi Suna Hanım, çocukların tartışmasını duydu. “Bu fotoğrafları bize şehir arşivinden değil, farklı ailelerden gelen kutulardan derledik,” dedi. “Bazılarının tarihi kesin, bazılarınınki anlatılan hatıralara dayanıyor.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " etiketin yanına küçük bir soru işareti koydu. “O zaman açılış günü olduğunu söyleyemeyiz,” dedi. “Önce kaynağı anlamamız gerek.”\n\nSuna Hanım onları uyardı: “Eski fotoğrafları kimseye göstermeden kopyalamayın. Ailelerden alınan izinler sergide kullanılmaları için. Dijital paylaşım ayrı bir konu.” Çocuklar notları yalnızca izin verilen arşiv kayıtları üzerinden tutmayı kabul etti. Gizem sadece yanlış tarihi bulmak değildi; başkasının geçmişini güvenle koruyarak araştırmak da gerekiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " araştırması bir öğretmen görevine dönüştü. Sosyal bilgiler öğretmeni, köprü hakkında bilgi sahibi olabilecek yedi kişiyle görüşme yapılabileceğini söyledi. Ancak tanıkların her birinin hatırladıkları, deneyimleri ve gördükleri aynı olmayacaktı. Önce onlardan izin alacak, görüşmelerin amacını anlatacak, istemeyenlerin sesini kaydetmeyeceklerdi. Hiç kimse sırf hatırlayamadığı için yanlış söylemiş sayılmayacaktı.\n\nBirinci tanık eski belediye çalışanı Cemal Bey'di. Köprüde 1984'te bir açılış töreni yapıldığını hatırlıyordu. İkinci tanık, köprünün yakınında büyümüş Emine Hanım, aynı yıl yalnızca onarım yapıldığını söyledi. Üçüncü tanık eski fotoğrafçı Orhan Bey fotoğrafın hangi makineyle çekildiğini tahmin edebiliyordu ama yılından emin değildi. Dördüncü tanık bir müzik topluluğunda çalmış Aysun Hanım, törende duyduğu şarkıyı hatırlıyordu. Beşinci tanık dükkân sahibi Murat Bey, kasetçiliğin tabelasının babasının döneminde yenilendiğini anlattı. Altıncı tanık köprüden her gün geçen Şermin Hanım, tören gününde yağmur yağdığını söyledi. Yedinci tanık ise "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " dedesi Ziya Bey'di; kalabalığı hatırlıyor, ama köprüden başka bir nedenle de geçtiğini söylüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "deyim",
+          "yuva": "hr101_basini"
+        },
+        {
+          "t": "metin",
+          "v": " “Yedi "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr101_tanik"
+        },
+        {
+          "t": "metin",
+          "v": " var, yedi ayrı olay anlatıyorlar.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tabloya baktı. “Belki de yedi kişi yedi farklı yerden aynı olaya bakıyor.”\n\nBir harita çizdiler. Cemal Bey köprünün şehir merkezine bakan ucundaydı. Emine Hanım karşı sokaktaki balkonundan izliyordu. Orhan Bey sahnenin önünde, Aysun Hanım sahnenin arkasındaydı. Murat Bey dükkânda çalışırken sesleri duyuyordu. Şermin Hanım köprüyü geçiyordu. Ziya Bey de fotoğrafın çekildiği sırada kalabalığın gerisinde yürüyordu. Kimin hangi şeyi görebileceğini işaretleyince bazı çelişkiler hafifledi.\n\n“Yine de yıl aynı olmayabilir,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Bir kişi bir töreni, başka biri başka töreni hatırlıyor olabilir. İnsanlar benzer olayları zamanla birbirine karıştırabilir.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk defa sabırsızlığını bir kenara bıraktı. “O zaman bütün hatıraları tarih çizelgesine yazalım,” dedi. “Kimseyi yalancı çıkarmadan.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Eski fotoğrafçı Orhan Bey, onları dükkânının arka odasında karşıladı. Raflarda tozlanmış makineler, objektifler ve kutular vardı. Çocuklar eski makinelerden birini görünce şaşırdı. Orhan Bey, “Makinenin modeli fotoğrafın çekildiği tarihi her zaman göstermez,” dedi. “Aynı makineyle yıllarca çekim yapılabilir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", arşivdeki kâğıdın kenarındaki kesme izlerini anlattı. Orhan Bey fotoğrafı eline almadı; kendisine gösterilen korumalı kopyaya baktı. “Bu fotoğraf bir defa çoğaltılmış olabilir,” dedi. “Arka yazısı da orijinalin değil, daha sonra basılan kopyanın üzerindedir.”\n\n“Yani arka yüzdeki 1984 tarihi, çekim tarihini değil kopyalama tarihini mi gösterir?” diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“Olabilir,” dedi Orhan Bey. “Ama bunu tahmin olarak yazın. Kesin bilgi değil.”\n\nOrhan Bey, aynı günün diğer kareleri bulunursa fotoğrafın sırasından, ışığından ve törenin ilerleyişinden ipuçları çıkabileceğini anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dosyada üç benzer fotoğraf daha olduğunu hatırladı. Bunların birinde sahne boştu, diğerinde insanlar kürsünün etrafında toplanmıştı, üçüncüsünde herkes dağılmaya başlamıştı. Fotoğrafların çekim sırası yaklaşık belirlenebiliyordu ama hiçbirinin tarihi güvenilir biçimde yazılmamıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bazen görüntü çok şey anlatıyor, ama tarihini söylemiyor,” dedi. Orhan Bey gülümsedi. “Fotoğraf bir pencere gibidir,” dedi. “Pencerenin içinden gördüğün manzarayı anlatabilir; fakat pencerenin dışında kalanları unutursan yanlış hikâye kurarsın.”\n\nDönüş yolunda "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözü defterine yazdı. Orhan Bey konuşurken penceredeki ışık bile değişmişti. Sabah fotoğrafı ile öğleden sonra fotoğrafının gölgeleri farklı olabilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir an önce kesin sonuç çıkarmak istediğini fark etti; fakat artık tahminleri kanıtlardan ayırma konusunda daha dikkatliydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Murat Bey'le görüşmek için eski dükkânın bulunduğu sokağa gittiler. Kasetçiliğin yerinde şimdi küçük bir kitapçı vardı. Murat Bey emekli olmuştu ama kitapçının üst katında arada sırada eski plakları onarıyordu. Çocukları görünce kahvesini bir kenara bıraktı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğraftaki tabelayı gösterdi. “Bu yazı 1984 yılında burada olabilir miydi?” diye sordu. Murat Bey yüzünü buruşturdu. “İsim aynıydı ama tabelamız değişti,” dedi. “Babam ilk tabelayı elle boyamıştı. Fotoğraftaki büyük harfli levhayı sonradan yaptırdık.”\n\n“Ne zaman?”\n\nMurat Bey bir süre düşündü. “Kesin hatırlamıyorum. Kardeşim üniversiteyi kazandığı yıl olabilir.” Sonra durdu. “Ama o yılın hangisi olduğunu hemen söyleyemem. Eski vergi belgeleri ya da dükkân fotoğrafları daha iyi kaynak olur.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu kadar dikkatli cevaba şaşırmıştı. Büyükler genelde bir tarih sorulduğunda hemen cevap vermeye çalışıyordu. Murat Bey ise bilmediğini söylemekten rahatsız görünmüyordu. Dükkânın eski albümünden iki fotoğraf getirdi. İlkinde tabelanın yalnızca küçük harflerle yazıldığı görülüyordu. İkincisinde köprüdeki fotoğraftaki büyük tabelanın aynısı vardı. Albümün kenarında bir düğün davetiyesi duruyordu; üzerinde yıl yazılıydı. Çocuklar tarihten bir sınır çıkarabildi ama köprü fotoğrafının tam yılını belirleyemedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Yani büyük tabela en erken bu tarihten sonra asılmış olabilir,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Ama ne kadar sonra olduğunu bilmiyoruz.”\n\nMurat Bey başını salladı. “Tam da öyle.”\n\nEve dönerken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kalabalığın üzerindeki bayrakları düşündü. Belki köprü açılışı değil, başka bir kutlamaydı. Fotoğrafta görülen insanlar geçmişin içine sıkışmış gibiydi; oysa her biri o gün farklı bir nedenle orada bulunmuş olabilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şermin Hanım'ın anlatısı araştırmayı farklı bir yöne çevirdi. Kendisi o gün pazar çantasıyla köprüden geçtiğini, ayakkabılarının ıslandığını ve şemsiyesini açtığını hatırlıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu fotoğrafa bakarak kontrol etti. Görüntüde kimsenin elinde şemsiye yoktu, yerler de kuru görünüyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " heyecanlandı. “Demek ki Şermin Hanım yanlış hatırlıyor!” dedi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen karşı çıkmadı, ama deftere “"
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr101_celiski"
+        },
+        {
+          "t": "metin",
+          "v": "” yazdı. Şermin Hanım'a tekrar gidince anlatısını dikkatle dinledi. Kadın, “Yağmuru çok iyi hatırlıyorum,” dedi. “Çünkü yeni aldığım ayakkabılar zarar görmüştü. Ama kalabalığın olduğu güne mi, ertesi haftaya mı rastladı, emin değilim.”\n\nBu düzeltme "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " hoşuna gitti. Bir insanın anısı, ayrıntı bakımından canlı olsa bile tarihle yanlış eşleşebilirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da bunu kabul etti. “Belki yağmur doğru, gün yanlış,” dedi.\n\nHava durumu kayıtlarına bakma fikri akıllarına geldi; fakat eski yılların günlük kayıtlarına kolay ulaşamıyorlardı. Öğretmenleriyle konuşup kamuya açık güvenilir arşiv kaynaklarını araştırdılar. Bulabildikleri kayıtlar, o dönemde birkaç yağışlı gün olduğunu gösteriyordu ama hangi törenin hangi güne denk geldiğini ispatlamıyordu. Sonucu zorlamadılar."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir zamanlar tarih yazmayı olayları sıralamak sanırdı. Şimdi tarih yazmanın, neyin bilindiği kadar neyin bilinmediğini de dürüstçe belirtmek olduğunu öğreniyordu. Şermin Hanım'a teşekkür edip notun yanına “Hangi güne ait olduğu belirsiz anı” yazdılar. Yargı vermemek, araştırmayı bitirmek anlamına gelmiyordu; daha iyi bir soruyla devam etmekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yedinci tanık Ziya Bey, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " en çok soru sormakta zorlandığı kişiydi. Dedesinin anlattığı hikâyeleri küçük yaştan beri dinlerdi. Köprünün açılışında tanınmış bir müzisyenin sahneye çıktığını, herkesin şarkılar söylediğini, sonra kalabalığın komşu mahalleye doğru yürüdüğünü hatırlardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun bu anılarıyla büyümüştü. Şimdi bu hikâyenin bir bölümünün başka bir güne ait olabileceğini düşünmek bile tuhaf geliyordu.\n\nZiya Bey görüşme isteğini duyunca eski defterini çıkardı. “Ben de yanılıyor olabilirim,” dedi. “İnsan yıllar önce gördüğü sahneleri bazen bir film gibi birleştiriyor.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bize kesin tarih söylemek zorunda değilsin dede,” diye cevap verdi. “Yalnızca gördüğün şeyi ve neye dayanarak hatırladığını anlatmanı istiyorum.”\n\nZiya Bey köprüye ilk kez küçük kardeşiyle yürüdüğü günü anlattı. Karşıdan gelen insanlar bir kutlama için hazırlanıyordu. Ancak yıllar sonra anlatılarında kardeşinin üniversiteye gittiği yılı da aynı güne yerleştirdiğini fark etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterdeki isimleri karşılaştırınca bu iki olay arasında birkaç yıl bulunduğunu gördü. “Belki iki ayrı kutlamayı birleştirmişim,” dedi Ziya Bey. “Ama o köprünün üstünde birlikte yürüdüğümüzü hatırlıyorum.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bu anının değeri değişmiyor,” dedi. “Sadece tarihi konusunda daha dikkatli olacağız.” Dede torununun yüzüne baktı. Eskiden anlattığı her şeyin büyülenerek dinlendiğini bilirdi; şimdi ona soru soran, kanıt arayan bir genç vardı karşısında. Bu durumdan rahatsız olmadı. “Senin işin daha zor,” dedi. “Biz hatırlıyoruz, siz bunları başkalarının da öğrenebileceği bir biçime getirmeye çalışıyorsunuz.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", dede ile yaptığı görüşmede uzun bir sessizlik de kaydetti. Ziya Bey bir noktada konuşmayı bırakmış, pencereden eski köprüye bakmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen yeni bir soru sormadı. Çünkü bazen bir hatıranın söylenmemiş kısmına yer açmak gerekiyordu. Görüşmenin sonunda dedesi, “Yazdıklarında benim adım geçmesin,” dedi. “Sözümden izin verdiğim kadarını kullan.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu kabul etti. Tanık olmanın, insanın bütün hayatını herkese açmak anlamına gelmediğini yeniden gördü.\n\nErtesi sabah "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": " defterini gösterdi. “Dedemin anlattığı her şey ya doğru ya yanlış diye ikiye ayrılamıyor,” dedi. “Bazı parçaları doğrulayabiliyoruz; bazıları özel anı, bazıları "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr101_belirsiz"
+        },
+        {
+          "t": "metin",
+          "v": ".” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " “O zaman her tanığın anlatısını küçük etiketlerle gösterelim,” diye önerdi: gözlem, duyum, çıkarım, tarih belirsiz. Böylece bir kişinin tüm sözünü reddetmeden, hangi cümlenin neye dayandığını gösterebileceklerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Aysun Hanım, fotoğraftaki toplanmayı bir konser olarak hatırlıyordu. Yıllar önce yerel müzik topluluğunda çalışmış, köprü üzerinde kurulan küçük sahnelerden birinde şarkı söylemişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onu kültür merkezinde buldu. Kadın bir etkinlik afişi saklamıştı ama afiş nemden zarar görmüş, tarih kısmı okunmaz hâle gelmişti. Yine de üstünde “Köprü Şenliği” yazıyordu.\n\n“İşte!” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". “Demek açılış değil şenlikmiş.”\n\nAysun Hanım başını iki yana salladı. “Bir şenlik düzenlenmiş olması, fotoğraftaki günün o gün olduğunu ispatlamaz,” dedi. “Yılda birkaç etkinlik yapılıyordu.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " afişteki küçük logoya baktı. Bugün kullanılmayan bir dernek adı yazıyordu. Bu derneğin kurulduğu yıl biliniyorsa, afişin daha önce hazırlanmış olamayacağını düşündü. Ancak yine aynı sorun vardı: Afişin fotoğrafla bağlantısı kanıtlanmamıştı.\n\nAysun Hanım sahne yerini tarif etti. “Biz köprünün hemen çıkışında, bahçeye yakın taraftaydık. Fotoğraftaki sahne girişte duruyor.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu ayrımı krokiye işaretledi. İki sahne arasındaki fark yeni bir ihtimal doğurdu: Fotoğraflar birbirine benzeyen iki farklı etkinlikten olabilirdi. Suna Hanım'a döndüklerinde ekip artık “Tek bir günün bütün kareleri” varsayımını yeniden sorguluyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğretmenleri bu yaklaşımı destekledi. “Bir araştırmada yeni bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr101_kanit"
+        },
+        {
+          "t": "metin",
+          "v": " eski varsayımı zayıflatabilir,” dedi. “Bundan korkmayın.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendisini kaybolmuş gibi hissetti. İki gün önce yalnızca yanlış bir tarihi düzeltecekti; şimdi sergi panosundaki başlığın kendisi sorgulanıyordu. Fakat gerçeğin kolay olması gerekmiyordu.\n\nArşiv bilgisayarında fotoğrafları yan yana dizdiler. Birinde köprü üzerindeki sahne kuzey tarafta, diğerinde güney taraftaydı. Aynı ağacın farklı yıllardaki büyüklüğü de dikkat çekiyordu. İki kareyi aynı güne ait kabul etmek için yeterli kanıt yoktu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " not defterine kalın bir çizgi çekti. Üstüne “İki olası etkinlik” yazdı. Araştırmanın en önemli ilerlemesi belki de kesin tarih bulmak değil, yanlış bir birleştirmeyi ayırmaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Suna Hanım ertesi gün şehrin eski gazetelerinin dijitalleştirilmiş nüshalarına erişebilecekleri bir bağlantı buldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " arama kutusuna köprünün adını yazdı; onlarca haber çıktı. Gazetelerin bir kısmı eski yazı karakterleriyle taranmıştı ve arama sonuçları hatalıydı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Program bu kelimeyi okuyamıyor,” dedi. Sayfaları tek tek açmaya başladılar. Başlıkların büyüklüğüne, tarih satırlarına ve aynı sayfada yer alan ilanlara baktılar.\n\nBir gazetenin yerel haberler bölümünde “Köprü onarımı tamamlandı” cümlesi vardı. Haber, açılıştan değil, yıllar sonra yapılan güvenlik çalışmalarından söz ediyordu. Fotoğraflardan birindeki yeni korkuluk izi bu haberle uyumlu görünüyordu. Ancak gazete sayfasındaki küçük fotoğrafın köprüdeki kalabalıkla ilgili olmadığı anlaşıldı. Yine de önemli bir zaman sınırı yakalamışlardı: Onarım sonrası görülen korkuluk, onarımdan önce çekilmiş bir karede bulunamazdı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " “Demek şu fotoğraf kesin daha yeni,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " duraksadı. “Eğer gördüğümüz çizgi gerçekten o onarımla yapıldıysa.” Suna Hanım onları, varsayımı doğrulayacak teknik kayda yönlendirdi. Belediye arşivindeki onarım planını incelemek için izin istediler. Kayıtta korkuluğun ilgili bölümüne hangi yıl müdahale edildiği yazılıydı. Böylece fotoğrafın en erken çekilebileceği döneme ilişkin daha güvenilir bir sınır elde ettiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğretmenleri, “Bir kanıt bazen tam tarihi vermez,” dedi. “Ama bazı ihtimalleri eler.” Çocuklar bunu uzun süre düşündü. Eskiden buldukları her belgenin soruya bir cümleyle cevap vermesini beklerlerdi. Şimdi bir belgenin ancak başka belgelerle birlikte anlam kazandığını görüyorlardı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " gazetelerde bir başka etkinlik buldu. Köprü onarımından sonraki yıllarda, kentin kuruluş yıl dönümüne ilişkin yürüyüşler yapılmıştı. Fotoğraftaki bayraklar böyle bir töreni çağrıştırıyordu. Fakat bu kez de “çağrıştırıyor” sözcüğünü özellikle kullandılar. Gazete haberi kesin bağlantı kurmadan yalnızca olası bir açıklama sağlıyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " buldukları kayıtları bir dosyada topladı. Her sayfanın üstüne kaynağı, hangi tarihte erişildiğini ve hangi iddiayı desteklediğini yazdı. İnternetten alınmış görüntüleri izinsiz yayımlamadı; arşivde gösterilebilecek malzemeler için gerekli izinleri kontrol etti. Kayıt düzeni, gizemin çözümünden daha sıkıcı görünebilirdi ama bir sonraki araştırmacının aynı yolu yeniden izlemesini sağlayacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Suna Hanım sergi için son kontrole başladığında "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " henüz kesin tarihi bulamamıştı. Panodaki etiket güncellenmezse yanlış bilgi yayımlanacaktı. Suna Hanım, “Bazen eksik bilgiyle karar vermemiz gerekir,” dedi. “Ama eksikliği saklamayız.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yeni etiket için iki öneri yazdı. Birincisi “1984 köprü açılışı” ifadesinin yanına soru işareti koymaktı. İkincisi, “Köprüdeki tören; kesin tarih araştırılıyor” demekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ikinci seçeneği daha dürüst buldu. Ancak törenin kendisinin de ne olduğundan emin değillerdi. Bu kez daha dikkatli bir başlık buldular: Köprü Üzerinde Bir Toplanma — Tarihi ve Nedeni Araştırılıyor.\n\nÖğretmenleri, tanıkların anlatılarını yan yana koyan bir bilgi kartı hazırlamalarını önerdi. Bir kartta fotoğrafın hangi kısmından ne gördükleri, diğerinde görüşülen kişilerin hangi noktada durduğu gösterilecekti. Şahısların özel bilgileri yayımlanmayacak, izin verilen alıntılar kullanılacaktı. Tanık anlatıları birincil deneyim olarak değer taşıyacaktı ama tek başına kesin tarih kanıtı sayılmayacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kartları yerleştirirken bir ayrıntı fark etti. Köprünün üstündeki büyük pankartta yazı vardı; ama görüntünün düşük çözünürlüğü nedeniyle okunmuyordu. Dijital büyütme denemesinde harflerin kenarları bozulmuştu. Bir arkadaşları yapay zekâ ile yazıyı “tamamlamayı” teklif etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu öneriyi reddetti. “Program tahmin ettiği harfleri gerçekmiş gibi gösterebilir,” dedi. “O zaman kanıt üretmiş olmayız.”\n\nSuna Hanım, daha yüksek çözünürlüklü orijinal kopyayı bulmayı deneyeceğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " araştırma defterinin son sayfasına şunu yazdı: Görüntüyü iyileştirmek, görüntüde bulunmayan bilgiyi icat etmek değildir."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sergi afişleri basılmadan bir gün önce belediyenin tanıtım biriminden bir görevli geldi. Görevli, ziyaretçilerin kesin tarihler ve güçlü başlıklar görmek istediğini söyledi. “Köprü Açılışı, 1984” ifadesinin daha dikkat çekici olduğunu savundu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", fotoğraftaki ayrıntıları tek tek anlattı. Görevli önce sabırsızlandı. “Çocukların araştırmasını çok önemsiyoruz, ama afişte bu kadar soru işareti hoş durmaz,” dedi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir an kararsız kaldı. Bütün emekleri sergide görünmez olursa üzülecekti. O akşam yaptığı konuşmada "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " “Belki başlığa eski tarihi yazıp içeride açıklama yapabiliriz,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Ama dışarıda yazdığımız sözü içeride düzeltmek yeterli mi?” diye sordu. “Birçok ziyaretçi panoya kadar gelmeyebilir.”\n\nSuna Hanım iki öğrenciyi de dinledi. “Afiş insanların dikkatini çekmek için var,” dedi. “Ama araştırmada ulaşmadığınız bir sonucu kesinmiş gibi söyleyemezsiniz.” Onlara kısa ama dürüst başlıklar denemelerini önerdi. “Köprünün İki Hatırası” ve “Yedi Tanık, İki Fotoğraf” seçenekleri çıktı. En sonunda ikinciyi seçtiler. Hem merak uyandırıyor hem de tarih konusunda uydurma bir kesinlik taşımıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Görevli öneriyi görünce bir süre düşündü. “Bu daha ilginçmiş,” dedi. “Peki neden iki fotoğraf var?” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kendisini anlatırken buldu. Araştırmanın en güçlü tarafının kesin cevap vermemek değil, doğru soruyu açık biçimde göstermek olduğunu fark etti. Bazen dürüst başlık daha çok merak uyandırabiliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hazırlık sırasında yüksek çözünürlüklü bir tarama bulundu. Fotoğrafın sağ kenarında, önceki kopyada görünmeyen dar bir bölüm vardı. Bu bölümde sahnenin yanında asılı küçük bir bez parçası görülüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bezin üzerindeki şekilleri büyütüp incelemek istedi. Ancak pikseller belirginleşiyor, yazı hâlâ okunamıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " otomatik keskinleştirme aracıyla görüntüyü işlemeyi önerdi.\n\nOrhan Bey'e danıştılar. Fotoğrafçı, görüntü iyileştirmenin farklı yöntemleri bulunduğunu, bazılarının var olan çizgileri belirginleştirdiğini, bazılarının ise tahmine dayalı yeni ayrıntılar üretebildiğini anlattı. “İyileştirilmiş görüntüyü gösterirseniz nasıl işlendiğini belirtin,” dedi. “Ayrıca orijinal taramayı koruyun.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki sürümü yan yana koydu. İşlenmiş görüntüde bir harf “K” gibi görünüyordu. Orijinalde ise o şeklin harf olduğundan emin olmak mümkün değildi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Belki kentin adı,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Olabilir, ama başka bir işaret de olabilir,” diye yanıtladı. İpuçlarını istediği sonuca doğru çekmemeyi öğreniyordu.\n\nArşiv sorumlusu Suna Hanım, çocuklara fotoğrafın kenarlarının neden kesilebildiğini de gösterdi. Bazı aileler fotoğrafı albüme sığdırmak için kenarlarını kırpmış, bazı baskılarda ise görünüşü düzeltmek için kopya yeniden düzenlenmişti. Bu yüzden tek bir kopyanın çerçevesi, çekildiği anın tamamını göstermeyebilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk gün göremediği bir çizgi yüzünden yanlış tarih yazılacağını düşününce ürperdi. Sonra aynı hatayı önlemek için kaynakları karşılaştırmanın önemini hatırladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Panoya yedi tanığın kartı asıldığında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir eksiklik gördü. Kartlar kişilerin sözlerini anlatıyordu, ama birbirleriyle ilişkilerini göstermiyordu. Büyük bir zaman çizgisi çizdi; belediyenin onarım kayıtlarını ve gazetelerde buldukları etkinlikleri bu çizgiye yerleştirdi. Tanık anlatılarını kesin tarih veriyormuş gibi değil, olası dönemleri işaretleyen renkli şeritlerle gösterdi. Böylece sözlü tarihin gücü ve sınırı daha anlaşılır hâle geldi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir kartın yanında uzun süre durdu. Emine Hanım'ın “Açılış değil onarımdı” sözünü başlangıçta kesin karşı görüş sanmışlardı. Oysa Emine Hanım başka tarafta bulunan iskelenin söküldüğünü anlatıyordu; fotoğrafın tamamındaki kalabalığın ne için toplandığını görmemişti. Sözü yanlış değildi, ama kapsamı sınırlıydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kartın üstüne küçük bir not ekledi: “Tanığın doğrudan gördüğü bölüm: köprü onarımı.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " eski belediye çalışanı Cemal Bey'i yeniden aradı. Onun “Açılışı hatırlıyorum” sözünü sorarken hangi açılıştan bahsettiğini netleştirmek istedi. Cemal Bey uzun süre düşündü, ardından fotoğrafta görülen sahneyi değil, köprünün tekrar kullanıma açıldığı töreni hatırladığını söyledi. İlk görüşmedeki kelime farklı anlam taşımıştı. “Açılış” hem yeni köprünün ilk kullanıma girmesi hem de onarım sonrası trafiğe açılması için kullanılabiliyordu. Bir sözcüğün çok anlamlılığı tarihleme hatasına dönüşebilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu bulguyu not defterine ekledi. Dil dersinde öğrendikleri, arşiv araştırmasına beklemediği kadar yardım etmişti. Tek bir sözcüğün anlamını bağlamdan ayırarak okumak, bazen bütün bir olayı yanlış yere yerleştiriyordu. Bundan sonra tanıklara aynı soruyu tekrar etmek yerine neyi kastettiklerini açık biçimde soruyorlardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Serginin açılışından önce öğretmenleri sınıfa geldi. “Bütün tanıklarınızı dinlemişsiniz,” dedi. “Peki siz bu süreçte kendi varsayımlarınızı nasıl değiştirdiniz?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", dedesinin anlattıklarını ilk başta sorgulamak istemediğini itiraf etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise sergiyi yetiştirmek için tarihi hemen kesinleştirmeye çalıştığını söyledi. İkisi de araştırmacının yalnızca başkalarının sözlerini değil, kendi beklentilerini de denetlemesi gerektiğini anlamıştı.\n\nBirlikte küçük bir kutu hazırladılar: “Sen olsan başka hangi kaynağa bakardın?” Kutunun yanında boş kartlar duruyordu. Ziyaretçiler arşiv dosyası, eski gazete, fotoğrafın orijinali, farklı tanıklar gibi fikirler yazabilecekti. Bir öğrenci “Köprünün üstündeki taşların tarihi” önerisini yazdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " buna gülümsedi; malzemenin yaşı ile fotoğrafın tarihi aynı şey olmasa da yeni bir kanıt türünü düşündürüyor olabilirdi.\n\nAçılış günü görevli tanıtım afişindeki başlığı bir kez daha okudu. “Yedi Tanık, İki Fotoğraf,” dedi. “Aslında serginin içinde sekizinci bir tanık daha var.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " şaşırdı. “Kim?” Görevli fotoğrafları gösterdi. “Kendileri.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi, sonra ekledi: “Ama onların söylediklerini de dikkatle okumamız gerekiyor.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Son sergi toplantısında "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", yedi tanığın ifadelerini tek bir çizelgeye yerleştirdi. İlk sütunda kimin neyi gördüğü, ikinci sütunda hangi kaynağın bu anlatıyı desteklediği, üçüncü sütunda ise belirsizlikler vardı. Suna Hanım tek tek inceledi. “Fotoğrafın tek bir doğru hikâyesi varmış gibi sunamayız,” dedi. “Ama yaptığınız araştırmanın kendisi serginin en güçlü bölümü olabilir.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yeni bir pano çizdi. Ortada iki fotoğraf bulunacak, çevresinde yedi küçük tanık kartı yer alacaktı. Kartlarda kişilerin izniyle seçilmiş kısa sözler vardı. Bazılarında fotoğraftaki kalabalık, bazılarında müzik, bazılarında dükkân tabelası anlatılıyordu. En altta ise “Kesinleşenler”, “Muhtemel yorumlar” ve “Henüz bilmiyoruz” başlıklı üç bölüm bulunacaktı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " panonun önünde durunca araştırmanın nasıl değiştiğini hatırladı. Başta dedesini doğrulamak istemişti. Sonra yanlış bir tarihi düzeltmeye odaklanmıştı. Şimdi farklı bakış açılarını birlikte değerlendirmek istiyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Fotoğrafın kesin tarihini yazamayınca sergi eksik gibi görünmez mi?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını iki yana salladı. “Bilmediğimizi söylemek, yanlış bir şeyi biliyormuş gibi göstermekten daha iyi.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sergi açıldığında ziyaretçiler önce iki büyük fotoğrafı gördü. Sonra çevresindeki küçük kartlara yaklaştı. Yaşlı bir adam, “Ben bu şenliklerden birine katılmıştım,” dedi. Yanındaki çocuk, “Hangisine?” diye sorunca adam uzun süre düşündü. “Sanırım şu ikinci olana,” dedi, “ama emin değilim.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. Soru sormak, hatırayı değersizleştirmiyordu. Onu daha dikkatli dinlemeyi sağlıyordu.\n\nZiya Bey torununun hazırladığı panoya uzun uzun baktı. Kendi sözünden izin verdiği alıntıyı görünce gözleri doldu. “Bunu böyle anlatmanız hoşuma gitti,” dedi. “Benim anım benim için gerçek; ama hangi yıl olduğunu araştırmanız da doğru.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dedesine sarıldı. Bazen aynı olayla ilgili farklı türden doğrular bulunabilirdi: yaşanmış duygu, görülen görüntü, tarihsel kayıt. Bunları birbirine karıştırmadan yan yana koyabilmek büyük emek gerektiriyordu.\n\nSergi kapanışında öğretmenleri öğrencilere hangi ipucunun en önemli olduğunu sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " dükkân tabelasını söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bence 'emin değilim' diyen bütün tanıklar,” dedi. “Çünkü onların tereddüdü bizi yeni kanıt aramaya götürdü.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sergi açıldıktan sonra "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " en çok şaşırdığı şey, ziyaretçilerin fotoğraflardan çok araştırma defterini merak etmesiydi. Defterde silinen tarihler, üzeri çizilmiş tahminler ve sonradan eklenen notlar vardı. Bir kadın “Neden bu kadar çok düzeltme yaptınız?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Çünkü ilk düşündüğümüz şeyleri kanıtlarla karşılaştırdık,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de “Yanılabileceğimizi kabul edince daha iyi sorular sorduk,” diye ekledi.\n\nKadın kendi aile albümünde de tarihi karışmış fotoğraflar bulunduğunu anlattı. “Bazen annem bir yıl söyler, dayım başka bir yıl,” dedi. “Ben de kimin doğru söylediğini tartışırdım.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona, aynı fotoğrafın farklı insanlarda farklı hatıraları canlandırabileceğini, anlaşmazlığı hemen yalancılığa bağlamadan belge aramanın daha yararlı olacağını söyledi.\n\nÖğleden sonra sergiye gelen bir çocuk, “İki fotoğrafı birleştirip tek güzel kare yapamaz mısınız?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunun sanat için yapılabilecek bir kolaj olabileceğini, fakat tarihî belge diye sunulmaması gerektiğini anlattı. Çocuk başını salladı. “Yani yapılabilir ama gerçek fotoğraf olduğu söylenmemeli.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu duyunca gülümsedi. Araştırmalarının yalnızca bir tarihi düzeltmekten fazlasına dokunduğunu fark etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam sergi kapatılırken Suna Hanım kutuları tek tek saydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", fotoğrafı koyduğu dosyanın kapağına yeni bir etiket yapıştırdı: Kesin tarih bilinmiyor; kaynak araştırması sürüyor. Bu ifadeyi yazmak başlangıçta ona başarısızlık gibi gelmişti. Şimdi tersine, gelecekteki araştırmacılara bırakılmış dürüst bir davet gibiydi. Kaydın geçmişini ve yapılan araştırma adımlarını ekledi; böylece başkaları yeniden aynı soruları sormak zorunda kalmadan kaldıkları yerden ilerleyebilecekti.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " koridorda asılı kalan afişe baktı. “Yedi tanık, iki fotoğraf,” diye okudu. “Ama sayılar değişebilir. Başka bir tanık bulunabilir, başka bir fotoğraf çıkabilir.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. “O zaman hikâyemiz de değişir. Yeter ki neden değiştiğini açıklayabilelim.”\n\nKöprünün üzerinde gün batarken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " son kez dışarı çıktılar. Korkuluk boyunca yürürken farklı yıllarda oradan geçen insanları düşündüler. Biri yağmuru hatırlamış, biri şarkıyı, biri yeni açılan dükkânı. Hiçbirinin anlattığı geçmiş tek başına şehri doldurmuyordu. Ama hepsi birlikte, dikkatle dinlenirse daha geniş bir manzara açıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterinin arkasına son cümleyi yazdı: “Bir tarihin arkasında bazen tek bir tanık değil, birbirine sorular soran birçok ses vardır.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sergi kapandıktan birkaç gün sonra kütüphaneye bir mektup geldi. Mektubu yazan yaşlı bir ziyaretçi, köprüdeki etkinliklerden birine çocukken katıldığını söylüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu görünce heyecanlandı; belki de bekledikleri kesin tarih bulunacaktı. Ancak ziyaretçi olayın yılını hatırlamıyor, yalnızca yanında bulunan akrabasının ismini veriyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Sekizinci tanık!” diye seslendi.\n\nSuna Hanım, görüşme için önce izin alınması gerektiğini hatırlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " mektuba nazikçe cevap yazdı. Ziyaretçinin adının açık yayımlanıp yayımlanamayacağını, hangi bilgilerini paylaşmak istediğini ve anlatısını görüşme notu olarak kullanmalarına izin verip vermediğini sordu. Bir süre sonra gelen cevapta kişi adını gizli tutmak istediğini belirtti. Bu tercih kabul edildi.\n\nYeni tanık, fotoğraftaki pankartın kırmızı kenarlı olduğunu hatırlıyordu. Fotoğrafta pankartın rengi siyah-beyaz baskı yüzünden anlaşılamıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu ayrıntıyı kesin doğrulanmış bilgi olarak kullanmadı. “Renk bir ipucu olabilir,” dedi, “ama elimizde bunu doğrulayacak görüntü yok.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", araştırmanın hiç bitmeyeceğinden korktu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise artık başka türlü bakıyordu. Bütün soruların cevaplanması, yapılan işin değerli olması için şart değildi. Yeter ki araştırılan konu, kullanılan kanıtlar ve belirsizlikler açıkça gösterilsin. Son kayıt dosyasına yeni tanığın ifadesi ayrı bir not olarak eklendi, fakat sergi etiketi değiştirilmedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eve giderken köprünün üzerinden geçti. Bir zamanlar bu fotoğrafı doğru yıla yerleştirdiğinde gizemin tamamen biteceğini düşünmüştü. Şimdi şehrin geçmişinin tek bir fotoğraf çerçevesine sığmayacağını biliyordu. Her yeni tanık bir şey ekleyebilir, bazı soruları da çoğaltabilirdi. Köprünün altından geçen su gibi hikâyeler de akıp gidiyordu; önemli olan onları aceleyle tek bir kalıba hapsetmemekti.\n\nSuna Hanım sergi arşivinin son hâlini kontrol ederken çocuklara teşekkür etti. “Siz yalnızca bir fotoğrafı yeniden adlandırmadınız,” dedi. “Kaynakların nasıl karşılaştırılabileceğini de gösterdiniz.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk günlerde bu kadar uğraşmanın gereksiz olduğunu düşündüğünü itiraf etti. Şimdi elindeki dosyayı gelecekte aynı fotoğrafı araştıracak kişilere aktarabilmekten memnundu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise köprüden her geçtiğinde başka bir tanığın neler görebileceğini hayal ediyordu. Farklı pencerelerden bakılan aynı meydan, herkese aynı ayrıntıyı göstermiyordu. Bu yüzden insanları aceleyle karşı karşıya getirmek yerine anlatılarının sınırını anlamak gerekiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Açılış günü yaşlı bir ziyaretçi panonun önünde uzun süre durdu. Fotoğrafta görünmüyordu; köprünün o günkü kalabalığını da hatırlamıyordu. Fakat alt yazıya eklenen “tarih kesinleşmedi” ifadesinin yanına konmuş kaynak notlarını tek tek okudu. “Demek eskiden fotoğrafları yalnızca albüme koymuyorlarmış,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi: “Hayır, bazen de onlar hakkında yanlış başlık yazmışlar. Biz bunu düzeltmeye çalışıyoruz.”\n\nZiyaretçi bir ayrıntı sordu: “Bu iki fotoğrafın aynı makineden çıktığı belli mi?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun araştırılmadığını söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen cevap vermek istiyordu ama "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını hafifçe salladı. Sorular bitmediği için serginin eksik sayılmayacağını anlamışlardı. Bir kağıt bırakıp ziyaretçilerin bildikleri bir belge, tarih veya tanıklık varsa kaynağıyla birlikte paylaşmalarını istediler. Bu, rastgele yorum toplamak değildi; yeni bir araştırma kapısı açmaktı.\n\nAkşam kapanışta "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", panonun kenarına iliştirilen iki notu okudu. Biri bir arşiv numarasını öneriyordu, diğeri yalnızca “Ben öyle hatırlıyorum” diyordu. İki cümlenin değeri aynı değildi ama ikisini de küçümsemedi. Birini izlenebilir bir ipucuna, diğerini incelenmesi gereken bir tanıklığa dönüştürmenin yolunu düşünmeye başladı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr101_basini": [
+      {
+        "t": "yoldas",
+        "hal": "yalin",
+        "yedek": "bir arkadaş"
+      },
+      {
+        "t": "metin",
+        "v": " bu cevapları okuyunca başını tuttu."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Sergideki ilk fotoğrafın etiketinde hangi tarih yazıyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "12 Mayıs 1984"
+        },
+        {
+          "id": "B",
+          "metin": "12 Mayıs 1974"
+        },
+        {
+          "id": "C",
+          "metin": "21 Mayıs 1984"
+        },
+        {
+          "id": "D",
+          "metin": "Tarih yazmıyordu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Fotoğraflardan biri 12 Mayıs 1984 tarihiyle etiketlenmişti."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 5,
+      "metin": "Orhan Bey'in uyarısına göre fotoğrafın arkasındaki tarih neyi gösterebilir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kesin olarak çekim tarihini"
+        },
+        {
+          "id": "B",
+          "metin": "Kopyalama ya da basım tarihini"
+        },
+        {
+          "id": "C",
+          "metin": "Fotoğrafçının doğum tarihini"
+        },
+        {
+          "id": "D",
+          "metin": "Köprünün yapım tarihini"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Arka yazı, daha sonra basılan kopyanın üzerinde olabilir; bu yüzden çekim tarihini kesin olarak göstermeyebilir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 12,
+      "metin": "Tanıkların anlatıları farklı çıkınca Bora ne önerdi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Tanıkların hepsini sergiden çıkarmayı"
+        },
+        {
+          "id": "B",
+          "metin": "Her anlatıyı, hangi bilgiye dayandığını gösteren etiketlerle sunmayı"
+        },
+        {
+          "id": "C",
+          "metin": "Yalnızca ilk tanığı dinlemeyi"
+        },
+        {
+          "id": "D",
+          "metin": "Fotoğrafın arkasını tamamen silmeyi"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "Bora, gözlem, duyum, çıkarım ve tarih belirsiz etiketleriyle her anlatının hangi bilgiye dayandığını göstermeyi önerdi."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 9,
+      "metin": "Metinde “çelişki” sözcüğü neyi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Birbirini tutmayan iki bilgi ya da anlatı"
+        },
+        {
+          "id": "B",
+          "metin": "Bir fotoğrafın kopyası"
+        },
+        {
+          "id": "C",
+          "metin": "Sergi için yapılan bir afiş"
+        },
+        {
+          "id": "D",
+          "metin": "Bir köprünün adı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Çelişki, birbirini tutmayan iki anlatının ya da bilginin varlığını ifade eder."
+    },
+    {
+      "id": "s5",
+      "beceri": "degerlendirme",
+      "dayanak_sayfa": 16,
+      "metin": "“Bir kanıt bazen tam tarihi vermez” sözü neyi anlatır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir kanıt tam cevabı vermese de bazı ihtimalleri eleyebilir"
+        },
+        {
+          "id": "B",
+          "metin": "Her kanıt kesin tarihi gösterir"
+        },
+        {
+          "id": "C",
+          "metin": "Kanıt yalnızca yazılı belgelerden oluşur"
+        },
+        {
+          "id": "D",
+          "metin": "Kanıtlar araştırmada önemsizdir"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kanıt tek başına her soruyu yanıtlamaz, ama bazı olası açıklamaları eleyerek araştırmayı ilerletir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr101_celiski",
+        "tur": "kelime",
+        "yazim": "çelişki",
+        "anlam": "Birbirini tutmayan, birbiriyle bağdaşmayan bilgi ya da durum.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_tutarsizlik",
+        "tur": "kelime",
+        "yazim": "tutarsızlık",
+        "anlam": "Sözler ya da durumlar arasındaki uyumsuzluk.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_uyum",
+        "tur": "kelime",
+        "yazim": "uyum",
+        "anlam": "Parçaların ya da sözlerin birbiriyle bağdaşması.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_tanik",
+        "tur": "kelime",
+        "yazim": "tanık",
+        "anlam": "Bir olaya kendi gözüyle ya da kulağıyla tanıklık eden kişi.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_gorgu_tanigi",
+        "tur": "kelime",
+        "yazim": "görgü tanığı",
+        "anlam": "Bir olayı bizzat görmüş olan tanık.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_sahit",
+        "tur": "kelime",
+        "yazim": "şahit",
+        "anlam": "Bir olayı görmüş ya da duymuş ve bunu anlatabilecek kişi.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_basini",
+        "tur": "deyim",
+        "yazim": "başını tuttu",
+        "anlam": "Şaşkınlık, üzüntü ya da bıkkınlıkla elini başına götürmek.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_elini_basina",
+        "tur": "deyim",
+        "yazim": "elini başına koymak",
+        "anlam": "Kaygı ya da şaşkınlıkla elini başına götürmek.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_kafasini",
+        "tur": "deyim",
+        "yazim": "kafasını ellerinin arasına almak",
+        "anlam": "Sıkıntı ya da üzüntüyle kafasını iki eliyle tutmak.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_kanit",
+        "tur": "kelime",
+        "yazim": "kanıt",
+        "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_delil",
+        "tur": "kelime",
+        "yazim": "delil",
+        "anlam": "Bir olayın doğruluğunu gösteren belge ya da nesne.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_dayanak",
+        "tur": "kelime",
+        "yazim": "dayanak",
+        "anlam": "Bir düşünceyi ya da kararı destekleyen temel.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_belirsiz",
+        "tur": "kelime",
+        "yazim": "belirsiz",
+        "anlam": "Ne olduğu ya da nasıl olduğu kesin bilinmeyen.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_muglak",
+        "tur": "kelime",
+        "yazim": "muğlak",
+        "anlam": "Birden fazla anlama gelebilen, açık olmayan.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr101_kesin",
+        "tur": "kelime",
+        "yazim": "kesin",
+        "anlam": "Şüphe bırakmayan, açıkça bilinen.",
+        "sinif_alt": 7,
+        "sinif_ust": 8
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr101_celiski",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr101_celiski"
+          },
+          {
+            "girdi": "hr101_tutarsizlik"
+          },
+          {
+            "girdi": "hr101_uyum"
+          }
+        ]
+      },
+      {
+        "ad": "hr101_tanik",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr101_tanik"
+          },
+          {
+            "girdi": "hr101_gorgu_tanigi"
+          },
+          {
+            "girdi": "hr101_sahit"
+          }
+        ]
+      },
+      {
+        "ad": "hr101_basini",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr101_basini"
+          },
+          {
+            "girdi": "hr101_elini_basina"
+          },
+          {
+            "girdi": "hr101_kafasini"
+          }
+        ]
+      },
+      {
+        "ad": "hr101_kanit",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr101_kanit"
+          },
+          {
+            "girdi": "hr101_delil"
+          },
+          {
+            "girdi": "hr101_dayanak"
+          }
+        ]
+      },
+      {
+        "ad": "hr101_belirsiz",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr101_belirsiz"
+          },
+          {
+            "girdi": "hr101_muglak"
+          },
+          {
+            "girdi": "hr101_kesin"
+          }
+        ]
+      }
+    ]
+  }
+}

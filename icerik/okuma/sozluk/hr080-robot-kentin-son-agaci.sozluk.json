@@ -1,0 +1,138 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr080_golge",
+      "tur": "kelime",
+      "yazim": "gölgesinde",
+      "anlam": "Işığın bir cisim tarafından engellenmesiyle oluşan serin alan.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr080_golgelik",
+      "tur": "kelime",
+      "yazim": "gölgelik",
+      "anlam": "Güneşten koruyan, gölge veren yer.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr080_kok",
+      "tur": "kelime",
+      "yazim": "kökleri",
+      "anlam": "Bitkinin toprağa tutunup su aldığı kısım.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr080_govde",
+      "tur": "kelime",
+      "yazim": "gövde",
+      "anlam": "Bitkinin toprağın üstündeki ana kısmı.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr080_dal",
+      "tur": "kelime",
+      "yazim": "dal",
+      "anlam": "Gövdeden ayrılan ince kol.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr080_dikkat",
+      "tur": "deyim",
+      "yazim": "dikkat çekti",
+      "anlam": "Göz önüne gelmek, fark edilmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr080_goze_batmak",
+      "tur": "deyim",
+      "yazim": "göze batmak",
+      "anlam": "Dikkat çekecek kadar belirgin olmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr080_gozden_kacmak",
+      "tur": "deyim",
+      "yazim": "gözden kaçmak",
+      "anlam": "Fark edilmemek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr080_golge",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr080_golge"
+        },
+        {
+          "girdi": "hr080_golgelik"
+        }
+      ]
+    },
+    {
+      "ad": "hr080_kok",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr080_kok"
+        },
+        {
+          "girdi": "hr080_govde"
+        },
+        {
+          "girdi": "hr080_dal"
+        }
+      ]
+    },
+    {
+      "ad": "hr080_dikkat",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr080_dikkat"
+        },
+        {
+          "girdi": "hr080_goze_batmak"
+        },
+        {
+          "girdi": "hr080_gozden_kacmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

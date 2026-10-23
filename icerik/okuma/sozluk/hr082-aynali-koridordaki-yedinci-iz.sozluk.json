@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr082_taniklik",
+      "tur": "kelime",
+      "yazim": "tanıklıkları",
+      "anlam": "Bir olayı görmüş ya da işitmiş kişinin anlatımı.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr082_beyan",
+      "tur": "kelime",
+      "yazim": "beyan",
+      "anlam": "Sözlü ya da yazılı açıklama, ifade.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr082_kanit_d",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr082_yansima",
+      "tur": "kelime",
+      "yazim": "yansıma",
+      "anlam": "Işığın bir yüzeyden geri dönmesiyle oluşan görüntü ya da olay.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr082_aks",
+      "tur": "kelime",
+      "yazim": "aks",
+      "anlam": "Bir yüzeyde görülen ters görüntü.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr082_kirilma",
+      "tur": "kelime",
+      "yazim": "kırılma",
+      "anlam": "Işığın bir ortamdan başka bir ortama geçerken yön değiştirmesi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr082_basina",
+      "tur": "deyim",
+      "yazim": "başına gelir",
+      "anlam": "Bir kişinin yaşaması ya da karşılaşması.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr082_karsisina_cikmak",
+      "tur": "deyim",
+      "yazim": "karşısına çıkmak",
+      "anlam": "Bir durumla ya da kişiyle karşılaşmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr082_basindan_savmak",
+      "tur": "deyim",
+      "yazim": "başından savmak",
+      "anlam": "Bir kişi ya da durumdan kurtulmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr082_taniklik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr082_taniklik"
+        },
+        {
+          "girdi": "hr082_beyan"
+        },
+        {
+          "girdi": "hr082_kanit_d"
+        }
+      ]
+    },
+    {
+      "ad": "hr082_yansima",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr082_yansima"
+        },
+        {
+          "girdi": "hr082_aks"
+        },
+        {
+          "girdi": "hr082_kirilma"
+        }
+      ]
+    },
+    {
+      "ad": "hr082_basina",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr082_basina"
+        },
+        {
+          "girdi": "hr082_karsisina_cikmak"
+        },
+        {
+          "girdi": "hr082_basindan_savmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

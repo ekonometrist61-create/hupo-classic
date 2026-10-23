@@ -1,0 +1,545 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr035-ay-a-giden-ilk-posta",
+    "baslik": "Ay'a Giden İlk Posta",
+    "tur": "bilim_kurgu",
+    "konu": "uzay_iletisim",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D5",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 4,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 4,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "dayanisma"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D5",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "uydu_hr035",
+          "tur": "lexeme",
+          "etiket": "uydu",
+          "yuva": "hr035_uydu",
+          "islev": "first_hint"
+        },
+        {
+          "id": "maket_hr035",
+          "tur": "lexeme",
+          "etiket": "maket",
+          "yuva": "hr035_maket",
+          "islev": "application"
+        },
+        {
+          "id": "gecikme_hr035",
+          "tur": "lexeme",
+          "etiket": "gecikme",
+          "yuva": "hr035_gecikme",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr035",
+          "tur": "concept",
+          "etiket": "Veri aktarımı ve iletişim gecikmesi",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 477,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 6,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 8,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Dünya'dan Ay'a giden bir mektup neden bir anda kesildi? Çocuklar iletişimin nasıl çalıştığını öğrendi.",
+    "durum": "taslak",
+    "fis_kodu": "HR-035"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ay Üssü'ne gidecek ilk özel mektubu yazma hakkını iki kardeş kazanmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", Dünya'daki sınıfının resmini çizmiş; "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise altına yalnızca bir cümle yazmıştı: \"Burada sizi merak eden arkadaşlarınız var.\" "
+        },
+        {
+          "t": "isaret",
+          "kod": "ay"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nMektup Ay'da çalışan teyzeleri Selin'e gönderilecekti. Yeni posta sistemi önce kâğıdı görüntüye dönüştürüyor, ardından uzaya veri olarak iletiyordu. Teyzeleri Ay Üssü'ndeki yazıcıdan aynı mektubu alacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Posta merkezinde tavandan Dünya ve Ay'ın "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr035_maket"
+        },
+        {
+          "t": "metin",
+          "v": " sarkıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " aralarındaki boşluğa baktı. \"Ay şu kadar yakınsa mektup çabucak gider,\" dedi. Görevli iki maketi daha uzağa taşıdı. \"Bunlar gerçeğe göre küçültülmüş. Uzaydaki uzaklıkları maketle göstermek çok zor,\" diye açıkladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", mesajın nasıl ilerlediğini daha iyi anlamak için kabloları, anteni ve "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr035_uydu"
+        },
+        {
+          "t": "metin",
+          "v": " görevini çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı.\n\nBaşlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırmızıya döndü: Bağlantı kesildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Mektubumuz kayboldu mu?\" diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nGörevli, \"Hayır,\" dedi. \""
+        },
+        {
+          "t": "vurgu",
+          "v": "Mesajın kopyası burada güvende"
+        },
+        {
+          "t": "metin",
+          "v": ". Ancak şimdi göndermiyoruz. Önce bağlantının yeniden kurulması gerek.\"\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " üzülmüştü. Selin teyzesinin doğum gününe yalnızca bir gün kalmıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir çözüm önerdi: \"Mektubu aynı anda başka bir kanaldan göndersek?\"\n\nGörevli gülümsedi. \"İyi düşünce. Fakat bütün kanallar aynı anda çalışmayabilir. Önce hangisinin güvenilir olduğuna bakmalıyız.\"\n\nÇocuklar merkezin panosunda çizilmiş küçük bir şemayı inceledi. Bir çizgi Dünya istasyonundan yörüngedeki uyduya uzanıyor, ikinci çizgi uydudan Ay Üssü'ne gidiyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Mesajı küçük parçalara ayırsak?\" diye sordu. \"Bağlantı dönünce eksik kısmı tamamlarız.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Görevli, \"Bu da veri aktarımında kullanılan yöntemlerden biridir,\" dedi. Ardından çocuklara mesajın birden fazla parçasının nasıl kontrol edildiğini gösterdi. Kısa bir bekleyişten sonra uydu bağlantısı tekrar açıldı.\n\nEkrana İleti ulaştı yazısı düşünce "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " zıpladı. Fakat hemen bir soru sordu: \"Ay'daki teyze cevap verirse onu anında duyar mıyız?\"\n\nGörevli başını salladı. \"Hayır, sinyaller ışık hızında ilerlese de Dünya ile Ay arasındaki uzaklık yüzünden küçük bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr035_gecikme"
+        },
+        {
+          "t": "metin",
+          "v": " olur.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Görevli çocuklara gönderimden önce yaptıkları iki kontrolü de anlatmıştı: alıcının kimliği doğru muydu ve mesaj gerçekten bütünüyle gelmiş miydi? "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kendi mektubuna bakıp \"Ya çizimimizin yarısı gitseydi?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", doğrulama işaretini gösterdi. \"O zaman karşı taraf eksik parçayı isterdi.\" Mesajın güvenli iletimi artık ikisinin de zihninde bir bilmecenin çözümü gibiydi. Eve dönünce mektubun ilk taslağını sakladılar; günün sonunda öğrenilenlerin de bir hatıra olmasını istediler.\n\nErtesi akşam evde bir görüntü geldi. Selin teyze, elinde basılmış mektubu tutuyordu. \"Sınıfınızın resmini duvarıma astım,\" dedi. \"Ay'ın gökyüzünde Dünya çok güzel görünüyor. Ama sizin yazdıklarınız daha güzel.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Biz de buradan seni görüyoruz!\" diye seslendi.\n\nCevap hemen gelmedi. İki kardeş gülümseyerek bekledi. O küçük gecikme artık onları şaşırtmıyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", postanın yalnızca zarf ve pul olmadığını anladı. Bazen sevgi bir kâğıtta, bazen de uzaklara giden küçük veri parçalarında yolculuk ediyordu. Yine de en önemli şey, karşıdaki insanı hatırlamaktı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi gün sınıfta öğrendiklerini arkadaşlarına anlattı. Sınıfça bir mesaj göndermeden önce adını, alıcısını ve içeriğini kontrol etmeye karar verdiler. Çünkü uzaklık ne kadar büyük olursa olsun, dikkatli iletişim küçük ama önemli adımlarla başlıyordu."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "İlk mektubu yazma hakkını kimler kazanmıştı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İki kardeş"
+        },
+        {
+          "id": "B",
+          "metin": "Öğretmen ve öğrenci"
+        },
+        {
+          "id": "C",
+          "metin": "Görevli ve teyze"
+        },
+        {
+          "id": "D",
+          "metin": "Üç arkadaş"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Eylül ve Can, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 3,
+      "metin": "Mesaj kaybolmadığı için görevli ne yaptı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Mesajın kopyası güvende olduğu için bağlantının yeniden kurulmasını bekledi"
+        },
+        {
+          "id": "B",
+          "metin": "Mektubu çöpe attı"
+        },
+        {
+          "id": "C",
+          "metin": "Hemen Ay'a gönderdi"
+        },
+        {
+          "id": "D",
+          "metin": "Kâğıdı yaktı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Görevli, mesajın kopyasının güvende olduğunu bildiği için önce bağlantıyı bekledi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 2,
+      "metin": "Çocuklar iletişim hakkında ne fark etti?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İletişimin birçok aşaması ve dikkat gerektiren adımları olduğunu"
+        },
+        {
+          "id": "B",
+          "metin": "İletişimin çok kolay olduğunu"
+        },
+        {
+          "id": "C",
+          "metin": "Mektubun hiç gitmediğini"
+        },
+        {
+          "id": "D",
+          "metin": "Ayın yakın olduğunu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Mesaj, kopyalanma, parçalama ve doğrulama gibi adımlardan geçiyordu."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "Metinde geçen maket ne demektir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir şeyin küçültülmüş modeli"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür mektup"
+        },
+        {
+          "id": "C",
+          "metin": "Bir uydu"
+        },
+        {
+          "id": "D",
+          "metin": "Bir ekran"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Maket, gerçek bir şeyin küçültülmüş modelidir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr035_uydu",
+        "tur": "kelime",
+        "yazim": "uydunun",
+        "anlam": "Bir gezegenin çevresinde dönen gök cismi ya da bu amaçla gönderilen araç.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr035_gezegen",
+        "tur": "kelime",
+        "yazim": "gezegen",
+        "anlam": "Bir yıldızın çevresinde dönen büyük gök cismi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr035_yildiz",
+        "tur": "kelime",
+        "yazim": "yıldız",
+        "anlam": "Kendi ışığını yayan gök cismi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr035_maket",
+        "tur": "kelime",
+        "yazim": "maketleri",
+        "anlam": "Bir şeyin küçültülmüş modeli.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr035_model",
+        "tur": "kelime",
+        "yazim": "model",
+        "anlam": "Bir şeyin örnek alınan ya da küçültülmüş biçimi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr035_gercek_boyut",
+        "tur": "kelime",
+        "yazim": "gerçek boyut",
+        "anlam": "Bir şeyin olduğu büyüklük.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr035_gecikme",
+        "tur": "kelime",
+        "yazim": "gecikme",
+        "anlam": "Bir şeyin beklenenden sonra olması.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr035_bekleme",
+        "tur": "kelime",
+        "yazim": "bekleme",
+        "anlam": "Bir şey olana kadar zaman geçirme.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr035_acele",
+        "tur": "kelime",
+        "yazim": "acele",
+        "anlam": "Bir işi çabuk yapma isteği.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr035_uydu",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr035_uydu"
+          },
+          {
+            "girdi": "hr035_gezegen"
+          },
+          {
+            "girdi": "hr035_yildiz"
+          }
+        ]
+      },
+      {
+        "ad": "hr035_maket",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr035_maket"
+          },
+          {
+            "girdi": "hr035_model"
+          },
+          {
+            "girdi": "hr035_gercek_boyut"
+          }
+        ]
+      },
+      {
+        "ad": "hr035_gecikme",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr035_gecikme"
+          },
+          {
+            "girdi": "hr035_bekleme"
+          },
+          {
+            "girdi": "hr035_acele"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr043_anten",
+      "tur": "kelime",
+      "yazim": "anten",
+      "anlam": "Radyo ya da uydu sinyallerini alıp gönderen metal düzenek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_alici",
+      "tur": "kelime",
+      "yazim": "alıcı",
+      "anlam": "Gelen sinyali ya da bilgiyi alan cihaz.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_kablo",
+      "tur": "kelime",
+      "yazim": "kablo",
+      "anlam": "Elektrik ya da sinyal taşıyan ince, yalıtımlı tel.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_meteoroloji",
+      "tur": "kelime",
+      "yazim": "meteoroloji",
+      "anlam": "Hava olaylarını gözlemleyip inceleyen bilim dalı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_iklim",
+      "tur": "kelime",
+      "yazim": "iklim",
+      "anlam": "Bir bölgede uzun yıllar süren ortalama hava koşulları.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_jeoloji",
+      "tur": "kelime",
+      "yazim": "jeoloji",
+      "anlam": "Yerin yapısını ve oluşumunu inceleyen bilim dalı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_olasilik",
+      "tur": "kelime",
+      "yazim": "olasılığı",
+      "anlam": "Bir şeyin gerçekleşme ihtimali.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_ihtimal",
+      "tur": "kelime",
+      "yazim": "ihtimal",
+      "anlam": "Bir şeyin olabilme durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_kesinlik",
+      "tur": "kelime",
+      "yazim": "kesinlik",
+      "anlam": "Bir şeyin kuşkusuz gerçekleşeceğini bilme durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_sagnak",
+      "tur": "kelime",
+      "yazim": "sağanak",
+      "anlam": "Kısa süreli, şiddetli yağmur.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_ciseleme",
+      "tur": "kelime",
+      "yazim": "çiseleme",
+      "anlam": "Çok ince ve hafif yağmur.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_kuraklik",
+      "tur": "kelime",
+      "yazim": "kuraklık",
+      "anlam": "Uzun süre yağmurun az yağdığı durum.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_el_kaldirmak",
+      "tur": "deyim",
+      "yazim": "elini kaldırdı",
+      "anlam": "Söz istemek ya da bir konuda katıldığını belirtmek için el kaldırmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_eli_cabuk",
+      "tur": "deyim",
+      "yazim": "elini çabuk tutmak",
+      "anlam": "Bir işi hızla yapmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr043_eli_acik",
+      "tur": "deyim",
+      "yazim": "eli açık olmak",
+      "anlam": "Cömert olmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr043_anten",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr043_anten"
+        },
+        {
+          "girdi": "hr043_alici"
+        },
+        {
+          "girdi": "hr043_kablo"
+        }
+      ]
+    },
+    {
+      "ad": "hr043_meteoroloji",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr043_meteoroloji"
+        },
+        {
+          "girdi": "hr043_iklim"
+        },
+        {
+          "girdi": "hr043_jeoloji"
+        }
+      ]
+    },
+    {
+      "ad": "hr043_olasilik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr043_olasilik"
+        },
+        {
+          "girdi": "hr043_ihtimal"
+        },
+        {
+          "girdi": "hr043_kesinlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr043_sagnak",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr043_sagnak"
+        },
+        {
+          "girdi": "hr043_ciseleme"
+        },
+        {
+          "girdi": "hr043_kuraklik"
+        }
+      ]
+    },
+    {
+      "ad": "hr043_el_kaldirmak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr043_el_kaldirmak"
+        },
+        {
+          "girdi": "hr043_eli_cabuk"
+        },
+        {
+          "girdi": "hr043_eli_acik"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

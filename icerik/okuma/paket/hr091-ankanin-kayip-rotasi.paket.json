@@ -1,0 +1,1375 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr091-ankanin-kayip-rotasi",
+    "baslik": "Anka'nın Kayıp Rotası",
+    "tur": "fantastik",
+    "konu": "gocmen_kus_harita_efsane",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 7,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif",
+        "kultur_miras"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "goc_hr091",
+          "tur": "lexeme",
+          "etiket": "göç",
+          "yuva": "hr091_goc",
+          "islev": "first_hint"
+        },
+        {
+          "id": "gozlem_hr091",
+          "tur": "lexeme",
+          "etiket": "gözlem",
+          "yuva": "hr091_gozlem",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr091",
+          "tur": "idiom",
+          "etiket": "Aklına gelmek",
+          "yuva": "hr091_aklina",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr091",
+          "tur": "concept",
+          "etiket": "Efsane, gözlem ve harita ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (7. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 3552,
+        "tahmini_sure_dk": 29,
+        "sayfa_sayisi": 27,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 36,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Haritadan bir kırmızı çizgi silinmiş. Efsanedeki Anka mı yolunu değiştirdi, yoksa gözlem mi eksik?",
+    "durum": "taslak",
+    "fis_kodu": "HR-091"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Haritanın üstündeki kırmızı çizgi, bir gecede yok olmuştu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu ilk fark ettiğinde öğretmeninin bilgisayarına bakıyordu. Okulun doğa kulübü, şehir dışındaki sulak alana yapılacak kuş gözlemi için geçen yıllara ait kayıtları inceliyordu. Geçen yılın "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr091_goc"
+        },
+        {
+          "t": "metin",
+          "v": " haritasında gölün kıyısından geçen kırmızı yol, bu yılın görüntüsünde bulunmuyordu. Aynı bölgede yalnız açık mavi, kesik bir çizgi vardı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kus"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n“Anka yolunu değiştirmiş,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. “Anka gerçekten yaşıyorsa büyük haber. Ama bu işaretin ne olduğunu henüz bilmiyoruz.”\n\nHaritaları kulübe getiren biyoloji öğretmeni Melis Hanım, kırmızı çizginin bir kuş türünün geçmiş gözlem noktalarını birbirine bağlayan yaklaşık güzergâh olduğunu açıkladı. Her yıl aynı çizginin görünmesi gerekmiyordu. Rota bir tren yolu gibi tek ve değişmez değildi; rüzgâr, hava koşulları, besin ve dinlenme alanları göç eden kuşların davranışlarını etkileyebilirdi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " yine de haritanın sol köşesindeki küçük simgeyi gösterdi. Simgenin yanında eski yazıyla bir kelime duruyordu: Anka. Öğretmenin indirdiği veri dosyasında böyle bir kuş adı yoktu. Haritanın baskı örneğinde ise açıkça yazıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Demek biri gizli bir not bırakmış,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", eski baskının hangi kaynaktan geldiğini sordu. Dosyanın altında yerel bir kültür merkezinin adı bulunuyordu. Aynı merkez, yıllar önce “Kuşların İzindeki Masallar” başlıklı bir sergi düzenlemişti. Göç haritasını efsanelerle birlikte göstermişlerdi.\n\nKulüp üyesi Sude, sergiden kalma katlanmış broşürü bulunca herkes şaşırdı. Broşürün kapağında parlak tüyleri olan, bir kanadı geceyi, öteki sabahı taşıyan büyük bir kuş çizilmişti. Altında şu cümle yazıyordu: “Anka, bazen kaybolan yolu değil, unutulan soruyu gösterir.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıdı elinde çevirdi. Cümleyi sevmişti ama neyin kastedildiğini anlamamıştı. “İsterseniz kuş araştırmasını yapalım, sonra bu efsaneyi de inceleyelim,” dedi. Melis Hanım kabul etti. “Yalnız unutmayın,” diye ekledi. “Broşürdeki Anka bir kültür simgesi. Gerçek göç hareketlerini açıklamak için gözlem ve veriye ihtiyacımız olacak.”\n\nO akşam "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " odasında iki haritayı yan yana koydu. Kırmızı çizginin bittiği yerde küçük bir üçgen vardı. Üçgenin yakınında, geçen yıl büyük bir sazlık olarak işaretlenen bölge bu yıl açık renkli görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk kez kırmızı çizginin kaybolmasına değil, altında değişen araziye dikkat etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Cumartesi sabahı sulak alana gittiklerinde göl, güneşin altında gümüş gibi parlıyordu. Öğrenciler, izin verilmiş "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr091_gozlem"
+        },
+        {
+          "t": "metin",
+          "v": " platformunun üzerinde sırayla dürbün kullandı. Rehberleri Ceren Hanım, sessiz durmalarını istedi. Sazlıkların arasında gizlenen bir kuşun kanat sesi duyuldu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen dürbünü kaldırdı.\n\n“Bir kartal!” diye fısıldadı.\n\nCeren Hanım, kuşun biçimini ve hareketini birlikte izlemelerini söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk heyecanıyla gördüğü kuşu tanıdık bir türe benzetmişti. Kanat boyu ve uçuşu daha yakından incelendiğinde bunun başka bir tür olabileceği ortaya çıktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kulübün gözlem fişine “kesin tür belirlenmedi” yazdı.\n\n“İnsan böyle bir manzaraya bakarken bir ad bulmak istiyor,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\n“İsim bulamayınca gördüğün şey yok olmuyor,” diye cevap verdi Sude.\n\nGözlem sırasında su seviyesinin birkaç yıl öncesine ait fotoğraflardan farklı olduğunu gördüler. Ceren Hanım, mevsimsel dalgalanmanın tek başına uzun vadeli bir eğilim göstermediğini belirtti. Sulak alanın hangi bölümlerinin ne zaman değiştiğini öğrenmek için farklı yıllardan karşılaştırılabilir veriler gerekecekti. Ayrıca suyun azalması kadar kirlilik, insan etkinlikleri ve bitki örtüsü de kuşların kullandığı alanları etkileyebilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gölün kuzeyinde uzanan eski sazlık alanına bakarken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " küçük bir iskele fark etti. İskelenin yanındaki levhada, geçen sene düzenlenen bir yol çalışması anlatılıyordu. Yeni yolun göle yaklaşması, bölgede kullanılan bazı yürüyüş ve gözlem rotalarını değiştirmişti. Bu bilgi, kuş göç rotasının mutlaka değiştiğini kanıtlamıyordu; ama araştırılabilecek bir ipucuydu.\n\nÖğle arasında Ceren Hanım onlara iki farklı harita gösterdi. Birinde gözlemcilerin bildirdiği kuş görülme noktaları, ötekinde verici taşıyan az sayıda kuşun konum kayıtları vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki çizginin aynı yerde buluşmadığını gördü. “Hangisi doğru?” diye sordu.\n\n“İkisi farklı soruları yanıtlıyor,” dedi rehber. “Gözlem noktaları kuşların nerede görüldüğünü, verici kayıtları ise izlenen bireylerin nereden geçtiğini gösterir. İzlenen kuşlar bütün türü temsil etmeyebilir.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " broşürdeki Anka çizimini çıkardı. “Masalda tek kuş bütün göğü temsil ediyor. Bilimde ise birkaç kuşun bile hepsini temsil etmediğini söylüyorsunuz.”\n\n“Güzel fark ettin,” dedi Ceren Hanım. “Masalın gücü simgede. Bilimin gücü soruyu ölçülebilir biçimde sormasında.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu ayrımı not etti. Sonra gözlemevine bağlı küçük sergi salonuna geçti. Salonda yerel halkın kuşlarla ilgili sözlü anlatıları vardı. Yaşlı bir çobanın sesinden “Her bahar göğü yoklayıp dönen büyük kuş” masalını dinledi. Anlatının sonunda kuş insanlara yanlış yerde aradıkları yolu değil, dikkat etmeyi unuttukları toprağı gösteriyordu.\n\n"
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr091_aklina"
+        },
+        {
+          "t": "metin",
+          "v": " Belki de Anka'nın kayıp rotasını bulmak için önce suyun ve sazlıkların hikâyesine bakmalıydılar."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Pazartesi kulüp odasına geldiklerinde "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " masanın üzerine iki farklı harita bastırmıştı. Birini kırmızı kalemle işaretledi, diğerine kuşların görüldüğü noktaları mavi dairelerle koydu. İlk haritadaki çizgi, gölün kuzey kıyısında dümdüz uzanıyordu. İkincisinde noktalar sazlıkların çevresine yayılmıştı.\n\n“İlk harita hikâye gibi,” dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". “Başlangıcı, ortası, sonu var.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sayfayı çevirdi. Altta küçük yazıyla “şematik güzergâh” yazıyordu. “Bir anlatım kolaylığı olsun diye çizilmiş,” dedi. “Gerçek uçuşların hepsi tam bu çizginin üzerinden geçmemiş olabilir.”\n\nSude, kültür merkezinin arşivinden bir ses kaydı buldu. Eski bir anlatıcı, Anka'nın yedi vadinin üzerinden uçarak unuttuğu yuvasına döndüğünü söylüyordu. Ama broşürün başka bir sayfasında kuş beş vadiden geçiyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu tutarsızlık olarak işaretledi.\n\n“Anlatılar farklı olabilir,” dedi Sude. “Belki ayrı kişiler kendi yaşadıkları yerlere göre söylemiş.”\n\nMelis Hanım, sözlü kültürde tek bir kesin metin beklemenin doğru olmayabileceğini açıkladı. Aynı motif farklı bölgelerde başka olaylarla birlikte anlatılabilirdi. Bu çeşitlilik anlatının hatalı olduğunu değil, yaşadığı kültürün farklı seslerini taşıdığını gösterebilirdi. Yine de hangi varyantın nerede, kim tarafından aktarıldığını belirtmek gerekiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " masadaki iki haritayı, broşürdeki iki ayrı Anka öyküsünü ve sulak alan fotoğraflarını bir arada gördü. Farklı kaynakları zorla tek doğruya dönüştürmek yerine ne söylediğine göre ayırmak daha anlamlıydı.\n\nO sırada okul müdür yardımcısı içeri girdi. Bahar şenliği için bir sergi hazırlamalarını istiyordu. “Anka'nın Kayıp Rotası” başlığını duyunca sevindi. “Çocuklar için çok etkileyici bir efsane,” dedi. “Büyük bir kuş yaparsınız, altına da göç yolunun kesin haritasını koyarsınız.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tereddüt etti. Büyük kuş maketi fikri güzeldi; ancak kesin göç haritası yoktu. “Sergide efsaneyi ayrı, araştırmayı ayrı göstersek olur mu?” diye sordu. Müdür yardımcısı, sergi takvimine yetişmeleri koşuluyla kabul etti.\n\nÜçü iş bölümü yaptı. Sude anlatıların kaynaklarını derleyecekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " eldeki göç verisini görselleştirecekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise sulak alanın değişimine ilişkin doğrulanabilir bilgileri araştıracaktı. Herkes görevine hevesle başladı; ama bir hafta sonra en büyük anlaşmazlık da tam bu görevlerin arasında çıkacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hazırladığı haritayı büyük bir kâğıda bastırıp kulübe getirdiğinde yüzü gülüyordu. Kırmızı çizgi yeniden görünüyordu. Üstelik eski haritadakinden daha düzgün, daha etkileyici bir rota çizmişti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çizginin başlangıç ve bitiş noktalarına baktı. Bunlar gözlem verisindeki noktalardı; fakat "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " aradaki boşluğu kendi tahminiyle doldurmuştu.\n\n“Böyle sunarsak sanki kuşlar tam buradan uçmuş gibi anlaşılır,” dedi.\n\n“İnsanlar dağınık noktaları anlamaz,” diye karşılık verdi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". “Bir hikâye lazım.”\n\n“Bir hikâye olabilir,” dedi Sude, “ama çizginin tahmin olduğunu söylemezsek başka bir şey anlatmış oluruz.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sessizleşti. Çizimi hazırlamak için iki akşam uğraşmıştı. Şimdi arkadaşlarının ona yanlış yaptığını söylemesi canını yakıyordu. “İsterseniz bütün haritayı siz hazırlayın,” diye söylendi ve koridora çıktı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " peşinden gitmedi. Önce "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " neden kızdığını anlamaya çalıştı. Arkadaşının en çok sevdiği şey görsel tasarımdı. Başarısını gösterebileceği alanın değersizleştirildiğini hissetmiş olabilirdi. Biraz sonra yanına gittiğinde "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " pencere önünde duruyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Çizgin güzel,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Gerçekten güzel. Ama insanın aklına kazınacak bir çizgi, yanlışsa daha büyük sorun çıkarır.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başını kaldırmadan cevap verdi: “O zaman bu kadar uğraşmamın anlamı yok.”\n\n“Var. Çizgiyi kesikli yapabiliriz. Altına ‘Olası bağlantı, doğrudan izleme verisi değil’ yazarız. Hatta farklı çizgiler için renk anahtarı oluşturabiliriz.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk kez yüzüne baktı. “Böyle olursa benim haritam olduğu da anlaşılır mı?”\n\n“Altına tasarımını senin yaptığını yazarız,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Önemli olan iyi çalışmanın daha dürüst bir sonuca hizmet etmesi.”\n\nErtesi sabah "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " haritayı yeniden hazırladı. Bilinen gözlem noktalarını dolu dairelerle, varsayılan bağlantıları kesik çizgiyle, izlenen bireylerin verisini ayrı renkle gösterdi. İki haritanın arasına da büyük bir soru koydu: Kuşların nereden geçtiğini ne kadar biliyoruz?\n\nMelis Hanım çizimi görünce “Şimdi haritanın kendisi de soru sorduruyor,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", ilk kez bir tasarımın yalnız güzel olmak zorunda olmadığını; doğru düşünmeye yardım edebileceğini de anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ancak "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " sulak alan verisinde başka bir güçlük vardı. İnternette bulduğu iki rapor birbirine ters düşüyordu. Biri kıyı bitki örtüsünün genişlediğini, diğeri daraldığını söylüyordu. İlk bakışta raporlardan biri yanlış görünüyordu. Sonra karşılaştırdıkları yılların aynı olmadığını ve raporlardan birinin tüm gölü, ötekinin yalnız kuzey bölümünü ele aldığını fark ettiler.\n\n“"
+        },
+        {
+          "t": "vurgu",
+          "v": "Bir yeri geniş açıdan görmekle yakından incelemek farklı şey"
+        },
+        {
+          "t": "metin",
+          "v": ",” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nSude, “Efsanede Anka bütün vadileri tek bakışta görüyor,” diye gülümsedi. “Biz o kadar yüksekten bakamıyoruz.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de güldü. “Belki iyi ki bakamıyoruz. Aşağıdan bakınca ayrıntıları seçiyoruz.”\n\nKulüp öğretmeni onları çevrim içi bir söyleşide alan uzmanıyla buluşturdu. Araştırmacı, kuş göçünü anlamak için yalnız harita çizmenin yetmediğini, kuşların durakladığı alanlarda besin, su ve güvenli barınak koşullarının da incelendiğini anlattı. Farklı türlerin farklı zamanlarda ve farklı yolları kullanabildiğini vurguladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " “O zaman bizim kaybolan kırmızı çizgimiz gerçekten kaybolan kuş yolu olmayabilir,” dedi. Araştırmacı “Evet,” diye cevap verdi. “Haritadaki bir gösterim ortadan kalkmış olabilir. Göçteki gerçek değişimi saptamak için ise güvenilir, karşılaştırılabilir kayıtlar gerekir.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bu söz, serginin en önemli etiketine dönüştü: Haritadan silinen çizgi ile doğadan kaybolan yaşam aynı şey değildir. Ama ikisini de anlamak için dikkatle bakmak gerekir."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenlikten önceki çarşamba günü kültür merkezinden bir paket geldi. Pakette Anka masalının farklı anlatılarını gösteren küçük bir kitapçık, çizim izni verilen geleneksel motif örnekleri ve bir not vardı. Notu merkezin araştırmacısı yazmıştı: “Anka'yı tek bir doğru biçimde çizmek zorunda değilsiniz. Bu motif pek çok anlatıda değişir. Önemli olan kullandığınız anlatının kaynağını belirtmeniz.”\n\nSude paketi açarken sanki gizli bir hazine bulmuş gibi heyecanlandı. İçindeki bir resimde Anka'nın tüyleri alev rengindeydi. Başka birinde gökyüzünün mavisine karışıyor, üçüncüsünde ise kuş yerine yalnız bir kanat izi görünüyordu. Sude bu çeşitliliği sevdi. “Biz neden bir Anka yapmak zorundayız? Belki üç küçük Anka çizip yanlarına hangi anlatıdan ilham aldığımızı yazarız,” dedi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " farklı Anka figürlerini aynı haritanın çevresine yerleştirmeyi önerdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise onları doğrudan bilim haritasına koyunca, sanki gerçek göç yolunu Anka'nın belirlediği sanılabileceğini söyledi. Bir süre sonra üçü ortak çözümü buldu: Sergi iki ayrı ama yan yana duran bölümden oluşacaktı. Solda “İnsanların Anlattığı Kuş” başlıklı masal alanı, sağda “Doğada İzlenen Kuşlar” başlıklı gözlem alanı olacaktı. Ortadaki köprüde ziyaretçilere sorulacaktı: Bir benzetme gerçeği anlamamıza nasıl yardım eder, ne zaman yanıltabilir?"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sude bu köprünün altına tek bir tüy yerleştirdi. Tüy kartondandı, ancak öyle ince boyanmıştı ki uzaktan gerçek sanılıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " tüyün altına küçük bir cümle yazdı: “Anka'nın tüyü olduğunu söylemek için elimizde kanıt yok; ama onu hayal etmek için izin almamız gerekmiyor.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu cümleyi okuyunca önce güldü, sonra düşündü. Hayal gücüyle gerçeği ayırmak, birinden vazgeçmek demek değildi. Belki HupoRead için en güzel hikâyeler de tam bu iki dünyanın birbirine dokunduğu yerde doğardı.\n\nO gün okul bahçesinde beklenmedik bir konuk vardı. Gözlem alanından gelen Ceren Hanım, öğrencilerin yeni çalışmasını görmek için uğramıştı. Panoları gezdi, bütün kaynak etiketlerini okudu. Sonra sakin bir sesle, “Sergi güzel. Ancak gerçek kuşların nerede yuvalandığını gösteren hassas konumları herkesle paylaşmadığınızdan emin olun,” dedi. Bazı türlerin üreme alanları meraklı kalabalıkların yoğun ziyaretinden olumsuz etkilenebilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şaşırdı. Bilginin açık olması her zaman herkes için yararlı olmayabilirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen haritadaki ayrıntılı noktaları kaldırdı; genel bölgeyi gösterecek biçimde düzenledi. “Geçen hafta daha çok bilgi koymak istemiştim,” dedi. “Şimdi doğru bilgi bile yanlış yerde zarar verebilir, onu öğreniyorum.”\n\nSude gülümsedi. “Anka'nın ikinci dersi de bu olabilir: Bazen bilgiyi dikkatle paylaşmak, sır saklamak değildir; canlıları korumaktır.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bahar şenliği günü okulun salonu meraklılarla doldu. İlk gelen ziyaretçiler masal köşesindeki renkli Anka çizimlerine yöneldi. Küçük çocuklar en çok altın renkli tüyü sevdi. Bir öğrenci, “Bu kuş neden kimsenin görmediği kadar büyük?” diye sordu. Sude ona masalların insan düşüncesini simgelerle anlattığını, Anka'nın gerçek bir tür olarak tanımlanmadığını açıkladı. Çocuk tüyün önünde biraz daha durdu. “O zaman ben kendi Anka'mı çizebilirim,” dedi.\n\nSağdaki haritalar önünde ise başka sorular yükseldi. “Kuşlar yolu nasıl buluyor?” “Rüzgâr hep aynı yönden mi eser?” “Bir kuş neden göl kıyısında mola verir?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hepsine tek cevap vermeye çalışmadı. Bazı kuşların güneş, yıldızlar, Dünya'nın manyetik alanı ve çevresel işaretler gibi farklı ipuçlarından yararlanabildiğini; yöntemlerin türe ve koşullara göre değiştiğini öğrendiklerini anlattı. Emin olmadığı sorular için rehberin kaynak listesini gösterdi.\n\nBir veli, gölün kuzeyinin artık eskisi kadar kuş çekmediğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bunun kıymetli bir gözlem olabileceğini ama tek başına bölgesel bir sonucu kanıtlamadığını açıkladı. Veli alınmadı. “Ben de eski fotoğraflarıma bakayım,” dedi. “Belki tarihlerle birlikte daha iyi anlatabilirim.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğleden sonra "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " daha önce çizdiği düz kırmızı çizginin ilk hâlini çıkardı. Yeni haritanın yanına “Bu neden değişti?” başlığıyla koydu. Altına kısa bir açıklama yazmıştı: “İlk çizim, gözlem noktaları arasındaki boşlukları kesin rota gibi birleştiriyordu. İkinci çizimde doğrudan gözlenen veriler ile tahmini bağlantılar ayrıldı.” Ziyaretçilerden biri, “Bir şeyi düzeltince çalışmanız başarısız mı oluyor?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen cevap vermedi. Sonra, “Hayır,” dedi. “Bence gerçek çalışma, bazen yanlış çizgiyi silmeye cesaret ettiğimizde başlıyor.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " annesi de sergiye geldi. Sude'nin topladığı masalları okurken kendi çocukluğunda duyduğu bir Anka hikâyesini anlattı. Onun anlatısında kuş, insanların birbirinden uzaklaşan seslerini toplamak için gökyüzünde dolaşıyordu. Sude bu varyantı da defterine not etti, anlatıcının adını ve anlatıldığı tarihi ekledi. Tek bir kuşun kaç farklı anlama bürünebildiği onu şaşırtıyordu.\n\nŞenlik bitiminde çocuklar göldeki gözlem platformuna tekrar gitmek için bir plan yaptı. Fakat bu kez amaçları efsanedeki Anka'yı aramak değildi. Rehberin belirlediği güvenli zamanda, mevsimin hangi kuşları getirdiğini görmek, türleri tanımak ve gözlemlerini kaydetmek istiyorlardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kırmızı çizginin haritadan silindiği sabahı düşündü. Başta bir sırrın kaybolduğunu sanmıştı. Oysa kaybolan şey, bütün cevapları tek çizgide görme rahatlığıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenlikten sonraki ilk hafta Sude'nin defterine yeni bir mesaj geldi. Mesajı gönderen, göl kıyısındaki köyde yaşayan on üç yaşındaki Lale'ydi. Ailesi kuş gözlemi yapan rehberlerle çalışıyordu. Lale sergiyi internetten görmüş, haritadaki kesikli çizgileri merak etmişti. “Benim dedem her bahar gölün üstündeki kuşları anlatır,” diye yazmıştı. “Ama artık bazı günler onları hiç göremiyoruz. Bu da veri sayılır mı?”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " cevabı hemen göndermedi. Lale'nin gözlemini önemsiyordu; onu yok saymak istemiyordu. Aynı zamanda yıllara yayılan sistematik ölçümlerin yerini tutuyormuş gibi göstermek de doğru olmazdı. Rehbere danıştılar. Ceren Hanım, yerel gözlemlerin araştırmaya değer ipuçları sağlayabileceğini; tarih, yer ve gözlem koşulları düzenli kaydedilirse daha yararlı hâle geleceğini söyledi. Böylece Lale'ye kısa bir gözlem formu gönderdiler. Forma fotoğraf çekmek zorunluluğu koymadılar; bazı anları yalnızca dikkatle izlemek yeterliydi.\n\nBir hafta sonra Lale'den üç kayıt geldi. İlkinde kuşları sabah erken gördüğünü, ikincisinde öğleden sonra hiç görmediğini yazmıştı. Üçüncü kayıtta ise rüzgârın çok güçlü olduğunu belirtmişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Demek kuşlar yalnız sabah uçuyor,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. “Yalnız Lale'nin üç gözleminden bütün göç için böyle sonuç çıkaramayız.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sude, Lale'yi araştırmanın küçük bir parçası olmaktan öte bir arkadaş gibi tanımak istedi. Video görüşmesinde ona neden kuşları izlediğini sordu. Lale bir süre cevap vermedi. Sonra, “Dedem rahatsızlandığından beri eskisi kadar dışarı çıkamıyor,” dedi. “Onun sevdiği yere bakınca birlikte oturuyormuşuz gibi oluyor.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu cümleyi duyunca defterine yeni bir satır açtı: İnsanlar neden gözlem yapar? Bazen bir bilim sorusunun peşinden, bazen sevdiği birinin anısını taşımak için, bazen de yalnız meraktan. Bunların birbirini dışlaması gerekmiyordu. Lale'nin bilgisi sınırlı olabilirdi ama gölle kurduğu bağ gerçekti.\n\nİkinci görüşmelerinde Lale, dedesinin anlattığı bir Anka masalını seslendirdi. Ses kaydı kusursuz değildi; arada sokaktan motor sesi geliyor, bazen Lale bir sözcüğü unutup tekrar başlıyordu. Sude kaydı düzeltmek için bazı cümleleri kesmek istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", anlatının anlamını değiştirmemeleri ve Lale'den izin almaları gerektiğini hatırlattı. Sonunda ses dosyasını düzenlemek yerine konuşmanın yanında açıklayıcı bir metin yayımlamayı seçtiler. Sesin başında Lale'nin hangi köyde yaşadığı değil, masalı kimin aktardığına ilişkin izin verdiği genel bilgi bulunuyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Lale, gönderilen yeni sergi bağlantısını görünce sevindi. “Bizim köyün Anka'sı da burada,” dedi. Sonra bir soru sordu: “Peki sizin Anka'nız hangisi?”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir süre düşündü. “Bizimkisi galiba kırmızı çizgilerin arasında kaybolan,” dedi. “Ama artık onu ararken gerçek kuşları da düşünmeyi öğrendik.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüp okul gazetesine bir röportaj hazırladığında iş daha da ilginçleşti. Röportajı yapan sekizinci sınıf öğrencisi Mert, çocuklara art arda sorular yöneltti. “En önemli keşfiniz ne? Kuşların rotasını değiştirdiğini kanıtladınız mı? Yol çalışması yüzünden mi oldu?”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", üçüncü sorudan önce durdu. Yol çalışmasının göl çevresinde bazı şeyleri değiştirmiş olabileceğini biliyorlardı. Ancak ellerindeki kayıtlar bu çalışmanın kuş göçü üzerindeki belirli etkisini tek başına kanıtlamıyordu. “Bunu söyleyemeyiz,” dedi. “Araştırmaya değer bir soru olarak belirledik.”\n\nMert biraz hayal kırıklığına uğradı. “Gazetede cevapsız soru pek ilgi çekmez,” dedi.\n\nSude, broşürden aklında kalan sözü hatırlattı: Anka bazen unutulan soruyu gösterir. “Bence iyi bir soru çok ilgi çekebilir,” dedi. “Yeter ki okura sanki cevap kesinmiş gibi anlatmayalım.”\n\nMert röportajın başlığı için birkaç seçenek yazdı. “Gölde Büyük Sır!” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun fazla belirsiz ve sansasyonel olduğunu söyledi. “Kuşlar Kayboldu!” başlığı ise araştırmanın ulaştığı sonucu aşardı. Sonunda şu başlıkta anlaştılar: “Bir Efsanenin Peşinden Gerçek Kuşların Yoluna.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yazı yayımlandıktan sonra bazı öğrenciler sergiyi yeniden görmek istedi. Bir öğrenci "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " “Bunca uğraştınız, tek bir kesin cevap bulamadınız mı?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez kendini savunmak zorunda hissetmedi. “Çok şey öğrendik,” dedi. “Hangi haritanın neyi gösterdiğini, hangi verinin eksik olduğunu, efsanenin nerede başlayıp bilimin nerede devam ettiğini. Ayrıca yanlış çizdiğimiz bir yolu düzelttik. Bunlar da cevap.”\n\nAkşam evde babası, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " sergi boyunca değiştiğini fark ettiğini söyledi. “Eskiden bir bulmacayı ilk çözen olmak isterdin,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “Şimdi bazen ilk soran olmanın da güzel olduğunu düşünüyorum.”\n\nAnnesi masadaki karton tüye dokundu. “Anka masalını ilk anlatanlar da belki böyle düşünüyordu,” dedi. “İnsanlar çözemediği şeyleri anlatılarla anlamaya çalışır.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun bir olasılık olduğunu, tek bir efsane için herkesin aynı amaçla anlatı kurduğunu bilemeyeceklerini söyledi. Sonra üçü birlikte güldü. Evin içinde her cümle küçük bir araştırma sorusuna dönüşmeye başlamıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Göl kıyısındaki ikinci gözlem gününde çocuklar daha önce görmedikleri bir tabloyla karşılaştı. Su yüzeyinin kenarında genç saz sürgünleri çıkmış, eski yürüyüş yolunun yanına bilgi levhaları konmuştu. Levhalar ziyaretçilerin hangi bölgelere yaklaşmaması gerektiğini gösteriyordu. Ceren Hanım, kuşları rahatsız etmemek için belirlenmiş gözlem noktalarında kalmalarını istedi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " dürbünü eline aldıktan sonra uzun süre hiçbir şey söylemedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onun sıkıldığını sandı. Sonra "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " dürbünü uzattı. Uzakta iki kuş suyun kenarında duruyor, biri başını aşağı eğerek besleniyordu. “İlk geldiğimde yalnız büyük sürü görmek istiyordum,” dedi. “Şimdi tek kuşun davranışını izlemek de ilginç geliyor.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gözlem formuna saati yazdı. “Belki eskiden bu kadar küçük ayrıntılara bakmadığımız için gölü boş sanmışızdır,” dedi. Ceren Hanım gülümsedi. “Bu bir olasılık. Yine de geçmişteki gözlem koşullarını bilmeden kesin sonuç çıkarmayalım.”\n\nSude sessizce fotoğraf çekmek üzere telefonunu çıkardı, ardından kuşlar çok uzakta olduğu için görüntünün yeterli olmayacağını fark etti. Telefonunu geri koyup not almaya başladı. Bazen görmek ile kaydetmek farklı uğraşlardı. O anı aklında tutmak da onun için değerliydi. Yanlarındaki bilgi levhasında sulak alanların birçok canlıya geçici veya kalıcı yaşam alanı sunduğu yazıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kuşların yolunu çizmek için başladıkları araştırmanın, sonunda onların durduğu yerleri korumanın önemine uzandığını düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve Sude, kültür merkezinin önerisiyle bir sözlü anlatı masası daha hazırladı. Ziyaretçiler duydukları Anka hikâyelerini yazmadan önce anlatan kişiden izin isteyecek, anlatının nereden öğrenildiğini not edecekti. Kimi bir ninesinin sesini, kimi çocukluğundaki bir kitabın resmini hatırlıyordu. Sude bütün anlatıları aynı kalıba sokmamaya karar verdi.\n\nBir ziyaretçi “Anka tek bir doğru masal değilse hangisini öğreneceğiz?” diye sordu. Sude, farklı anlatıların kültürel çeşitlilik gösterebileceğini, bunların her birinin nerede aktarıldığı araştırılabileceğini anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", doğal kuş türleriyle ilgili bir sorunun ise masalın farklı varyantlarından değil, gözlem ve bilimsel kaynaklardan yanıtlanacağını ekledi.\n\nMasaya gelen küçük bir çocuk, Anka'nın kanadını neden ateşe benzettiklerini sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunun şiirsel bir imge olduğunu söyledi. “Gerçek kuşun kanadını yakmamız gerekmiyor,” diye ekledi. Çocuk güldü ve kendi kuşunu sarı boyadı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", iyi bir benzetmenin insanı hayal kurmaya götürebildiğini ama aynı anda gerçeği sorgulamayı da öğretebildiğini düşünüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " eve dönünce ilk çizdiği düz kırmızı çizgiyi buruşturup atmak istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu durdurdu. “Saklayalım,” dedi. “Çünkü nereden başladığımızı gösteriyor.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıdı düzeltip arkasına tarih attı. İlk çizimi kötü bir hatıra gibi değil, değişen düşüncesinin ilk basamağı gibi görmeye başladı. Sude de iki farklı Anka çizimini aynı deftere yapıştırdı. Böylece defterin bir yanında hayal gücünün, diğer yanında dikkatli gözlemin izleri bulunuyordu. Üçü bu iki alanın birbirine karışmadan yan yana durabildiğini görerek sevindi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dönüş yolunda otobüs göl kıyısından geçerken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " camın ardından gökyüzüne baktı. Bir kuş sürüsü güneye doğru ilerliyordu. “Sence nereye gidiyorlar?” diye sordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını iki yana salladı. “Buradan bakarak bilemeyiz. Ama gördüklerimizi yazabiliriz.”\n\nSude defterini çıkardı. Tarihi, saati, hava durumunu ve kuşların yaklaşık yönünü not etti. Türü tanımlayamadıkları için boş bıraktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " buna gülmedi. Eskiden boş kutular hoşuna gitmezdi; şimdi bir boşluğun yeni bir araştırmanın başlangıcı olabileceğini biliyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çantasındaki karton tüyü bulup defterin arasına koydu. Şenlikte herkes kendi Anka'sını çizebilmişti. Ama gökteki kuşların gerçek yaşamını korumak için hayalden başka şeylere de ihtiyaç vardı: sabır, güvenilir bilgi, dikkat ve birlikte hareket etme isteği.\n\n“Broşürde ne yazıyordu?” diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". “Anka unutulan soruyu gösterir mi?”\n\n“Evet,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Sanırım bizim sorumuz şuydu: Haritaya bakınca yalnız çizgiyi mi görüyoruz, yoksa çizginin geçtiği yerde yaşayanları da düşünüyor muyuz?”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Otobüs uzaklaşırken sulak alan sabahki kadar parlak görünmüyordu. Akşam ışığı suların üzerine daha yumuşak düşmüştü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", gölün bu kadar kısa sürede bile başka renge bürünebildiğini gördü. Değişimin hepsi aynı anlama gelmezdi. Bazısı bir günün ışığıydı, bazısı mevsimlerin döngüsü, bazısı da dikkatle araştırılması gereken uzun bir süreç.\n\nO akşam okulun internet sayfasında kulübün sergisi yayımlandı. Başlık, müdür yardımcısının ilk önerdiği gibi “Anka'nın Kayıp Rotası”ydı. Altındaki açıklama ise artık çok daha dikkatliydi: “Bir masalın izinden başlayan yolculuk, bizi kuşların gerçek dünyasını anlamaya götürdü.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " metni son kez okuyup kapattı. Masalın kuşu uçup gitmemişti; haritanın yanında yaşamaya devam ediyordu. Gerçek kuşların yoluysa gökyüzünde sürüyordu, insanların çizdiği bütün çizgilerden daha geniş ve daha karmaşık bir yol. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " pencereyi açıp gece rüzgârını dinledi. Belki yarın yeni bir soru bulacaktı. Artık bundan korkmuyordu.\n\nSude, ses kayıtlarının yanındaki izin kutularını yeniden kontrol etti. Masal anlatan kişilerin onay vermediği özel ayrıntıları sergi metninden çıkarmışlardı. Bu küçük işlem ona büyük bir ders verdi: Kültürel mirası yaşatmak, anlatan kişilerin saygı ve mahremiyet hakkını da gözetmekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bilimin veriye gösterdiği özenle sözlü kültüre gösterilen özen arasında beklemediği bir yakınlık buldu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi sabah göğe baktığında kuşları görmedi. Yine de defterine “Kuş yok” yazmadı; “Gözlem süresinde kuş görülmedi” diye not düştü. Küçük bir dil farkıydı ama büyük bir anlam taşıyordu. Doğa, insanların baktığı birkaç dakikadan çok daha geniş bir hayat sürüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu öğrendiği için mutluydu."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr091_aklina": [
+      {
+        "t": "kahraman",
+        "hal": "ilgi"
+      },
+      {
+        "t": "metin",
+        "v": " aklına broşürdeki cümle geldi."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Bu yılki haritada aynı bölgede hangi çizgi vardı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Açık mavi, kesik bir çizgi"
+        },
+        {
+          "id": "B",
+          "metin": "Kalın kırmızı çizgi"
+        },
+        {
+          "id": "C",
+          "metin": "Yeşil bir halka"
+        },
+        {
+          "id": "D",
+          "metin": "Hiçbir çizgi yoktu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Bu yılki haritada aynı bölgede yalnız açık mavi, kesik bir çizgi vardı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 4,
+      "metin": "Yol çalışması bilgisinin sonucu neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Göç rotasının değiştiğini kesin kanıtlamıyordu, ama araştırılacak bir ipucuydu"
+        },
+        {
+          "id": "B",
+          "metin": "Göç rotası kesin olarak değişti"
+        },
+        {
+          "id": "C",
+          "metin": "Yol çalışması kuşları öldürdü"
+        },
+        {
+          "id": "D",
+          "metin": "Hiçbir etkisi yoktu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Yol çalışması, rotanın değiştiğini gösteren bir ipucuydu ama kanıt değildi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Ceren Hanım'a göre masal ile bilimin güçleri nasıl ayrılır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Masal simgede, bilim ise soruyu ölçülebilir biçimde sormakta güçlüdür"
+        },
+        {
+          "id": "B",
+          "metin": "İkisi aynı güce sahiptir"
+        },
+        {
+          "id": "C",
+          "metin": "Masal ölçüm yapar"
+        },
+        {
+          "id": "D",
+          "metin": "Bilim yalnız hayal kurar"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Masalın gücü simgesinde, bilimin gücü ise ölçülebilir soruda yatar."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 4,
+      "metin": "Metinde geçen simge ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Başka bir anlamı temsil eden işaret ya da nesne"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür kuş"
+        },
+        {
+          "id": "C",
+          "metin": "Bir harita ölçeği"
+        },
+        {
+          "id": "D",
+          "metin": "Bir kültür merkezi"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Simge, bir anlamı temsil eden işarettir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr091_goc",
+        "tur": "kelime",
+        "yazim": "göç",
+        "anlam": "Kuşların ya da insanların mevsimlere göre yer değiştirmesi.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr091_gecis",
+        "tur": "kelime",
+        "yazim": "geçiş",
+        "anlam": "Bir yerden başka bir yere geçme.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr091_yerlesik",
+        "tur": "kelime",
+        "yazim": "yerleşik",
+        "anlam": "Bir yerde kalıcı olarak yaşayan.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr091_gozlem",
+        "tur": "kelime",
+        "yazim": "gözlem",
+        "anlam": "Bir olguyu dikkatle izleyip kaydetme.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr091_izleme",
+        "tur": "kelime",
+        "yazim": "izleme",
+        "anlam": "Bir şeyin durumunu sürekli takip etme.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr091_tahmin_g",
+        "tur": "kelime",
+        "yazim": "tahmin",
+        "anlam": "Ölçmeden yapılan yorum.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr091_aklina",
+        "tur": "deyim",
+        "yazim": "aklına geldi",
+        "anlam": "Bir şeyin hatırlanması.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr091_hatirina_gelmek",
+        "tur": "deyim",
+        "yazim": "hatırına gelmek",
+        "anlam": "Bir şeyin zihinde canlanması.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr091_akldan_cikmamak",
+        "tur": "deyim",
+        "yazim": "aklından çıkmamak",
+        "anlam": "Bir şeyi sürekli düşünmek, unutamamak.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr091_goc",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr091_goc"
+          },
+          {
+            "girdi": "hr091_gecis"
+          },
+          {
+            "girdi": "hr091_yerlesik"
+          }
+        ]
+      },
+      {
+        "ad": "hr091_gozlem",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr091_gozlem"
+          },
+          {
+            "girdi": "hr091_izleme"
+          },
+          {
+            "girdi": "hr091_tahmin_g"
+          }
+        ]
+      },
+      {
+        "ad": "hr091_aklina",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr091_aklina"
+          },
+          {
+            "girdi": "hr091_hatirina_gelmek"
+          },
+          {
+            "girdi": "hr091_akldan_cikmamak"
+          }
+        ]
+      }
+    ]
+  }
+}

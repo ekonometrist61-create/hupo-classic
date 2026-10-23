@@ -1,0 +1,1182 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr080-robot-kentin-son-agaci",
+    "baslik": "Robot Kentin Son Ağacı",
+    "tur": "bilim_kurgu",
+    "konu": "kent_agac_tasarim_veri",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "dayanisma"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "golge_hr080",
+          "tur": "lexeme",
+          "etiket": "gölge",
+          "yuva": "hr080_golge",
+          "islev": "first_hint"
+        },
+        {
+          "id": "kok_hr080",
+          "tur": "lexeme",
+          "etiket": "kök",
+          "yuva": "hr080_kok",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr080",
+          "tur": "idiom",
+          "etiket": "Dikkat çekmek",
+          "yuva": "hr080_dikkat",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr080",
+          "tur": "concept",
+          "etiket": "Veri ile kullanıcı görüşü ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 3090,
+        "tahmini_sure_dk": 27,
+        "sayfa_sayisi": 25,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 29,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Robot en kısa yolu gösteriyor, ama çınar ağacının kökleri o yolun altında. Kent planı kimin ihtiyacına göre çizilmeli?",
+    "durum": "taslak",
+    "fis_kodu": "HR-080"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Nova Kent'te kaldırımları robotlar temizler, otobüsler yoğunluğu hesaplayarak seferlerini ayarlar, binaların ışıkları gün boyunca enerji tüketimini denetlerdi. Şehrin planı öyle düzenliydi ki sokaklarda rastgele duran bir banka rastlamak neredeyse imkânsızdı. Ancak bu mükemmel çizgilerin arasında, eski meydanın kenarında kocaman bir çınar ağacı vardı. Ağacın "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr080_kok"
+        },
+        {
+          "t": "metin",
+          "v": " kaldırımı hafifçe kabartmış, dalları iki binanın arasına uzanmıştı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "orman"
+        },
+        {
+          "t": "metin",
+          "v": "\n\nAltıncı sınıf öğrencisi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", her gün okuldan dönerken ağacın "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr080_golge"
+        },
+        {
+          "t": "metin",
+          "v": " dururdu. Arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " doğrudan eve gider, “On dakika kaybediyorsun,” diye takılırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise o on dakikada şehrin gürültüsünden uzaklaştığını söylerdi. Bir gün akıllı bilekliğinde sıcaklık uyarısı göründü. Şehirde hava çok sıcaktı. Meydanın açık kısmından geçince güneş yüzünü yakar gibi hissettirdi. Çınarın altına geldiğindeyse rüzgâr biraz daha serin esiyor gibi geldi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O sırada ağacın çevresinde üç bakım robotu durdu. Gövdelerindeki ışıklar art arda yanıp sönüyordu. En öndeki robot, “Yeni yaya düzenlemesi için geçiş alanı gerekiyor,” dedi. “Eski ağacın çevresindeki yol sınırları uygun değil.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " irkildi. “Yoksa çınarı mı kaldıracaksınız?” Robot, “Plan henüz onaylanmadı,” diye cevap verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " rahatlamadı. Şehrin yeni planında ağaç küçük gri bir işaret olarak görünüyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " akşam okul projesi için bu planı açınca asıl meseleyi fark etti. Şehir yönetimi meydandan geçen araçları azaltmak, yaya yollarını genişletmek istiyordu. Bu iyi bir amaçtı. Ancak çizilen en düz yol, çınarın kök bölgesinden geçiyordu. Projeyi değiştirmeden uygulamak, ağaca zarar verme riski taşıyabilirdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ve arkadaşları Erva, çözüm aramak için okulun kent tasarımı kulübüne başvurdu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ağacın çevresinde yeni yol planı yapılacağını duyunca internette çok çarpıcı bir paylaşım gördü: “Nova Kent doğayı tamamen yok ediyor!” Görselde gri binalar arasında tek bir ağaç kalmıştı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen paylaşmak istedi. Erva ise görselin kaynağını sordu. Görüntünün başka bir şehirden alınmış eski bir tasarım çalışması olduğu anlaşıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " öfkelendi; çünkü gerçek bir sorun varken yanlış resim kullanılması, konunun ciddiye alınmasını zorlaştırabilirdi. Üç arkadaş kendi fotoğraflarını ve doğrulayabildikleri bilgileri kullanmaya karar verdi. İlk adımları kent yönetiminin yayımladığı taslak planı okumak oldu. Böylece yalnız duydukları bir söylentiyi değil, gerçekten tartışılması gereken bir projeyi anlayabildiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Taslak planda açıklayıcı işaretler vardı: yaya yolu, bisiklet yolu, bakım alanı, oturma noktası. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk başta bütün çizgilerin kendiliğinden anlaşılır olduğunu sanmıştı. Erva, haritanın anahtarını gösterince bazı gri çizgilerin yeni duvar değil, mevcut yüzey sınırları olduğunu fark etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", tek bir görseli yanlış yorumlamanın insanlarda gereksiz korku oluşturabileceğini düşündü. Bunun üzerine okul kulübü bir “Haritayı Okuma Günü” düzenledi. Öğretmenleri, planın farklı sürümlerini yan yana gösterdi. Çocuklar değişen unsurları işaretledi, ancak teknik konularda kendi tahminlerini uzman görüşü gibi sunmadı.\n\nAğacın köklerinin nasıl büyüdüğüne ilişkin bir kitap da okudular. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " daha önce ağaçların yalnız görünen gövde ve dallardan ibaret olmadığını biliyordu; ama köklerin çevredeki toprakla ilişkisini hiç böyle düşünmemişti. Selma Hanım, sağlıklı bir kök alanının korunması için uzman değerlendirmesinin gerekli olduğunu anlattı. Öğrenciler bir ağaca zarar vermemek için bile bazen çevresindeki toprağa dokunmamak gerektiğini öğrendi. Ağaca en çok değer veren kişinin mutlaka ona en çok yaklaşan ya da bir şey yapan kişi olmadığını fark ettiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulübün öğretmeni Selma Hanım, ilk toplantıda bir soru sordu: “Ağacın şehrin son ağacı olduğundan emin misiniz?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şaşırdı. Meydandaki ağaç gerçekten tekti. Ancak bütün şehirde başka ağaç bulunup bulunmadığını bilmiyordu. Erva, kent haritasının yeşil alan katmanını açtı. Şehrin dış kesimlerinde parklar vardı; meydan çevresindeki yoğun yapılaşmada ise ağaç sayısı çok azdı.\n\n“Başlığımızı değiştirelim,” dedi Erva. “Burası şehirdeki son ağaç değil, eski meydanda ayakta kalan tek büyük ağaç.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bu uzun başlığın afişe sığmayacağını söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “O zaman hikâyemizin adı yine Son Ağaç olsun, ama içerikte neyi kastettiğimizi anlatalım.” Selma Hanım bu ayrımı beğendi. Dikkat çeken bir başlık seçmek mümkündü; yeter ki yanlış bir bilgiye dönüşmesin.\n\nÇocuklar ağacın neden önemli olduğunu araştırmaya başladı. Çınarın gölgesi insanların dinlenmesine yardımcı oluyordu. Yapraklar, kuşlar ve bazı küçük canlılar için yaşam alanı oluşturuyordu. Ağaç ve çevresindeki toprak, kent ekosisteminin bir parçasıydı. Ancak "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bunun ağacın her durumda tek başına bütün şehri serinleteceği anlamına gelmediğini öğrendi. Kentin sıcaklığı; binalar, yollar, gölgelik alanlar ve başka pek çok etkene bağlıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Selma Hanım, doğal ve yapay gölgeliklerin karşılaştırıldığı bir proje önerdi. Öğrenciler uzman gözetiminde, aynı günün belirli saatlerinde meydandaki farklı noktalarda güvenli sıcaklık gözlemleri yapacaktı. Bir yanda çınarın gölgesi, diğer yanda binanın gölgesi, başka bir noktada açık kaldırım vardı. Aletleri ve ölçüm yöntemlerini yetişkinlerin yönlendirmesiyle kullanacaklardı. Sonuçları tek günlük çalışma üzerinden bütün mevsime genellemeyeceklerdi.\n\nKulüpte hazırladıkları ilk çizim, kâğıt üzerinde çok güzel görünüyordu. Fakat "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yolu ağacın öteki yanına taşıyınca yaya geçidinin okul girişine uzaklaştığını fark etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", en kısa yolu çizmekle en kullanışlı yolu çizmenin aynı şey olmadığını söyledi. Erva ise bir köşeye koydukları bankın engelli rampasının önünü kapattığını gördü. Üçü taslağı yeniden çizdi. Her düzeltme başka bir ayrıntıyı ortaya çıkarıyordu. Başlangıçta bunu bir başarısızlık gibi gördüler; sonra tasarımın deneme ve gözden geçirme gerektiren bir süreç olduğunu kabul ettiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Asena Hanım onlara başka bir harita gösterdi: Kentin yağmur suyu akışını anlatan bir plan. Bazı sert yüzeylerden suyun hızla uzaklaştığını, daha geçirgen yüzeylerin farklı davranabildiğini söyledi. Ancak her alanda aynı malzemenin kullanılmayacağını; bakım, güvenlik ve yerel koşulların değerlendirilmesi gerektiğini açıkladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “O zaman gölge kadar yağmur suyu da önemli,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ağacın çevresinin yalnız sıcak günlerde değil, yağmurda da nasıl kullanılacağını düşünmeleri gerektiğini anladı. Asena Hanım bu bağlantıyı beğendi ama herhangi bir uygulamanın mutlaka uzman tasarımı gerektireceğini hatırlattı.\n\nRota'nın ekranında iki seçeneği karşılaştırdılar. Birincisi çok kısa ama ağacın koruma alanına giriyordu. İkincisi daha uzun fakat güvenli geçiş ölçütlerine daha çok uyuyordu. Üçüncü seçenekse bazı yönlerden iyi, bazı yönlerden yetersizdi. Çocuklar bütün ölçütlere tek bir sayı vermenin zor olduğunu fark etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Robot bize en kısa yolu söylerken hangisinin en iyi olduğunu da söylüyormuş gibi düşündüm,” dedi. Erva, “Oysa neyin önemli olduğuna önce biz karar veriyoruz,” diye karşılık verdi. Bu düşünce şehir planını okurken de günlük hayatlarında kullandıkları uygulamalara bakarken de işlerine yarayacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şehirde bakım robotlarına yardımcı olan küçük bir eğitim robotu vardı. Adı Rota'ydı. Öğrencilerin hazırladığı haritaları okuyabiliyor, rota seçenekleri gösterebiliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ona çınarın çevresinden geçen yeni yolu sordu. Rota ekranda düz bir çizgi gösterdi. “En kısa rota budur,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Ama kökler?” diye sordu. Robot, kök bölgelerine ait güncel koruma bilgisinin harita katmanında bulunmadığını söyledi.\n\nErva, “Demek sen ağacı görmüyor musun?” diye sordu. Rota, “Ağacın konumu kayıtlı, ancak koruma sınırı eksik,” dedi. Bu cevap çocukları şaşırttı. Robot yanlış bir hesap yapmış gibi görünüyordu; oysa kendisine verilen veriler eksikti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir sistemin ne kadar iyi çalışırsa çalışsın eksik bilgiyle yetersiz öneri sunabileceğini anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kent yönetiminden Asena Hanım okul kulübünü ziyaret etti. Şehir planlamacısıydı. Çocukların hazırladığı soruları dinledi. “Ağaç hakkında karar verirken yalnız gövdesinin yerini düşünemeyiz,” dedi. “Kök çevresi, bakım gereksinimi, yaya güvenliği ve ekolojik değer de incelenir.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Yolu değiştirebilir miyiz?” diye sordu. Asena Hanım, bunun teknik inceleme gerektirdiğini ama alternatiflerin değerlendirilebileceğini söyledi. Çocukları yetişkinlerin karar vereceği konularda söz sahibi olmaya davet etti; planı tek başlarına değiştirmelerini istemedi.\n\nRota'ya güncellenmiş koruma alanı verildiğinde yeni rotalar oluşturuldu. Bunlardan biri biraz daha uzundu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Yüz metre fazlası insanları kızdırabilir,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Peki herkes için erişilebilir mi?” diye sordu. Yeni yolun yalnız uzunluğu değil, eğimi ve geçiş genişliği de önemliydi. Asena Hanım, çocukların bu noktayı sormasına sevindi. Bir ağacı korurken yayaların güvenli ulaşımını göz ardı etmek de iyi bir tasarım olmazdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", Melek Hanım'ın anlattıklarından sonra kendi büyükbabasını düşündü. Büyükbabası uzun süre yürüyebiliyor ama dinlenecek güvenli bir yer bulamadığında yoruluyordu. Bu yüzden yeni plandaki bankları yalnız süs gibi değil, gerçek bir ihtiyaç olarak görmeye başladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise okuldan çıkan küçük çocukların yaya geçidinde görünür olmasının önemini düşündü. Kentin kullanıcıları yalnız yetişkinler değildi. Erva, kaldırım düzenlemelerinde farklı yaşların, bedenlerin ve hareket biçimlerinin birlikte ele alınması gerektiğini defterine yazdı.\n\nKulüp küçük bir görüşme çalışması yaptı. Öğrenciler sorularını öğretmenle hazırladı; karşılaştıkları insanlardan gönüllü olarak, kişisel ayrıntı toplamadan yanıt istedi. “Bu meydanı ne zaman kullanıyorsunuz?”, “Sizin için en zor yer neresi?”, “Nerede dinlenmek istiyorsunuz?” sorularını sordular. Çıkan cevaplar birbirinden farklıydı. Bazı insanlar gölgeyi, bazıları düz yolu, bazıları güvenli bisiklet geçişini önemsiyordu. Kimse bir tek kişinin yanıtını bütün kent adına sunmadı. Selma Hanım, küçük bir görüşme grubunun yalnız bir başlangıç sağlayacağını anlattı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Meydanın en yoğun olduğu saatte çocuklar güvenli bir noktadan insan akışını gözlemledi. Sabah işe yetişenler hızlı yürüyordu, öğleden sonra bazı aileler yavaş geçiyordu. Bu durum, kentin ihtiyaçlarının gün içinde bile değişebildiğini gösteriyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çınarın altında kitap okuyan çocuğun yerini işaretledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", yeni yolun yakınından geçen bisikletleri gözlemledi. Erva, herkesin aynı çizgiden ilerlemediğini fark etti. Proje yalnız geometrik bir şekil değil, hareket eden ve farklı ihtiyaçları olan insanların buluştuğu bir yerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çınarın altında her gün dinlenen yaşlı bir komşuları vardı: Melek Hanım. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onunla konuşurken, buranın neden önemli olduğunu daha iyi anladı. Melek Hanım marketten dönerken oturup dinlenmeye ihtiyaç duyuyordu. Gölge olmasa yolu iki kez durarak geçmesi gerekebileceğini söyledi. Başka bir komşu, tekerlekli sandalyesiyle kabaran kaldırımdan geçmenin zor olduğunu anlattı. İkisi de farklı ihtiyaçlardan söz ediyordu; biri ağacın korunmasını, diğeri güvenli geçişi önemsiyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bu ikisinden birini seçmek zorundayız,” dedi. Erva ise “Belki aynı anda ikisini de iyileştirebiliriz,” diye düşündü. Çocuklar sorunların listesini çıkardı. Mevcut kaldırım dar ve bazı yerlerde engebeliydi. Gölge alanı değerliydi. Yakındaki metal bank öğle güneşinde fazla ısınıyordu. Rota'nın önerdiği en kısa yol da güvenli geçiş için yeterince iyi değildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Asena Hanım, farklı çözüm seçeneklerini birlikte değerlendirmelerini istedi. Bir seçenek ağacın uzağından geçen yeni bir yoldu; başka bir seçenek yaya yolunun genişliğini ve oturma alanlarını yeniden düzenlemekti. Ancak uzman ağaç bakım ekibinin kök bölgesini incelemesi gerekecekti. Çocuklar çizimler yaptı, ölçüleri uzmanlar doğruladı, kullanıcıların görüşleri kaydedildi. Amaç, en güzel görünen resim değil, gerçekten işe yarayan bir plan hazırlamaktı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", artık ağacı yalnız bir anı olarak görmüyordu. Onun çevresinde insanlar dinleniyor, kuşlar yaşıyor, su toprağa ulaşıyor ve çocuklar buluşuyordu. "
+        },
+        {
+          "t": "vurgu",
+          "v": "Ağaç bir süs değildi; kent yaşamının parçasıydı"
+        },
+        {
+          "t": "metin",
+          "v": ". Aynı şekilde kaldırım da yalnız bir çizgi değildi; herkesin güvenle kullanması gereken bir yoldu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ölçüm günlerinden birinde "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " aceleyle not aldığı sayıları karıştırdı. İki noktadaki ölçümlerin saatlerini ters yazmıştı. Bunun sonuca etkisi olabileceğini fark edince durumu öğretmene anlattı. Selma Hanım, eksik ya da yanlış kayıtları düzeltirken neyin değiştirildiğinin açıkça belirtilmesi gerektiğini söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " utandı ama hatayı saklamadı. Arkadaşları onun üzerine gitmek yerine kayıtları birlikte kontrol etti. Bu küçük olay, veri toplamanın sadece rakam yazmak olmadığını gösterdi. Bir ölçümün güvenilirliği, dürüstçe kaydedilip kaydedilmediğine de bağlıydı.\n\nErva ayrıca insanların gölgeyi nasıl hissettiğini sormanın ölçümden farklı olduğunu fark etti. Kimi insanlar daha serin hissettiklerini söylüyor, kimi ise rüzgârın olduğu yerleri tercih ediyordu. Bu deneyimler değerliydi ama sıcaklık ölçümleriyle aynı veri türü değildi. Çocuklar sunumlarında iki ayrı bölüm açtı: Ölçülen değerler ve kullanıcıların görüşleri. İkisini birbirine karıştırmadan birlikte göstermek daha açıklayıcı olmuştu. Asena Hanım, bu ayrımı kent tasarımında sık sık yapmaları gerektiğini söyledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğrencilerin sıcaklık gözlem çalışmasında ilginç sonuçlar çıktı. Çınarın altındaki noktalarda bazı ölçümler açık alandan daha düşük görünüyordu. Ancak başka zamanlarda rüzgâr ve binaların gölgesi sonuçları etkiliyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Demek ağaç her zaman aynı derecede serinlik sağlamıyor,” dedi. Selma Hanım, bunun beklenebileceğini anlattı. Tek bir ölçüm, bütün koşulları açıklamazdı. Öğrenciler gün, saat ve hava durumunu kaydetmeye devam etti.\n\nErva, elde ettikleri değerleri çizgi grafiğine aktardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", grafiğin dikey eksenine yanlış birim yazıldığını fark etti. Birimin yanlış olması, grafiğe bakan kişinin sonucu yanlış yorumlamasına yol açabilirdi. Düzelttiler. Sonra renkleri seçerken erişilebilirliği düşündüler; birbirine çok benzeyen renkler yerine farklı çizgi işaretleri kullandılar. Grafik güzel görünüyordu ama asıl önemli olan okunabilir olmasıydı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " toplantıda “Gölge iyi, yol da gerekli; ikisini de sağlayacak bir düzen kurulabilir,” dedi. Asena Hanım, “Bu bir tasarım hedefi,” diye yanıtladı. “Gerçekleşip gerçekleşmeyeceğini incelemek gerekir.” Çocuklar artık kesin sonuç yerine gerekçeli öneri vermeyi öğrenmişti. Hazırladıkları sunumda ölçüm sınırlarını, kullanıcı görüşlerini ve uzman incelemesi gereken noktaları ayrıca belirttiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sergi hazırlıkları sırasında "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir afişe “Bir ağaç şehri kurtarır” başlığını yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunun fazla iddialı olduğunu söyledi. “Bir ağaç çok değerli olabilir,” dedi, “ama bütün şehir tek ağaçla değişmez.” Erva yeni bir başlık önerdi: “Bir ağacı korumak, daha iyi bir kent tasarımının başlangıcı olabilir.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce bu cümleyi uzun buldu; sonra daha doğru anlatımın her zaman en kısa cümle olmadığını düşündü. Sonunda iki satırlı, büyük puntolu bir başlık yaptılar. Yanında hem ağacın gölgesini hem de güvenli yürüyüş yolunu gösteren bir çizim vardı.\n\nSunumu gezen bir mühendis, çocuklara bazı uygulamaların pahalı olabileceğini sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bunu hesaplamadık,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de bütçe konusu olmadan tasarımın tamamlanmış sayılmayacağını kabul etti. Asena Hanım, planların maliyet, bakım ve uygulama süresi gibi koşullarla birlikte değerlendirildiğini anlattı. Çocukların hazırladığı öneriler, bütün teknik soruları çözmüyordu; ama doğru soruların sorulmasına yardım ediyordu. Bu ayrım, kendi çalışmalarına duydukları gururu azaltmadı. Aksine ne yaptıklarını ve neyi yetişkin uzmanlara bıraktıklarını daha iyi açıklayabiliyorlardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kent yönetiminin karar günü gelmeden önce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " küçük bir maket yaptı. Kartondan binalar, renkli kâğıttan yollar, kumaş parçalarından gölgelikler yerleştirdi. Çınarın yerini göstermek için kuru bir dal kullanmak istedi ama sonra ağacın gerçek büyüklüğünü temsil etmeyecek kadar küçük olduğunu fark etti. Ölçek konusu ona düşündüğünden zor geldi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", sınıfın matematik öğretmeninden yardım istemeyi önerdi. Öğretmen, gerçek uzunluklarla maket uzunluklarının orantılı olması gerektiğini anlattı. Çocuklar önce ölçek belirledi, sonra çizimlerini yeniden düzenledi. Böylece bir fikri anlatmanın yalnız güzel bir resim yapmak değil, ölçüye dayalı doğru bir temsil kurmak olduğunu öğrendiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Maketin ilk denemesinde robot araçların yolunu çizerken çocukların yürüyüş alanını fazla dar bıraktılar. Erva bunun nedenini sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", Rota'nın en kısa güzergâhını makete olduğu gibi aktardığını itiraf etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “En kısa yol en iyi yol olmayabilir,” diye hatırlattı. Robotun önerisi önemliydi ama tartışılmadan uygulanacak bir karar değildi. Makette birkaç değişiklik yaptılar. Sonunda yalnız ağacı korumaya değil, herkesin güvenle ilerlemesine de dikkat eden yeni bir seçenek ortaya çıktı. Asena Hanım taslağı incelediğinde bunu nihai proje gibi sunmadı; fakat öğrencilerin dikkate aldığı ölçütleri başarılı buldu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir ay sonra kent yönetimi yeni meydan planını tanıttı. Ağaç uzmanlarının görüşü alınmış, köklerin korunacağı bir alan belirlenmişti. Yaya yolu yeniden düzenleniyor, engellere neden olan bazı eski parçalar güvenli biçimde onarılıyordu. Ayrıca uygun noktalara yeni ağaçlar dikilmesi ve bunların uzun dönem bakımının planlanması önerilmişti. Çınarın korunması tek başına bütün çevre sorunlarını çözmeyecekti; ancak daha iyi bir başlangıç olabilirdi.\n\nRota'nın ekranında artık ağacın çevresindeki koruma alanı görünüyordu. Robot, en kısa yolu değil, belirlenen güvenli koşulları karşılayan seçenekleri sıralıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Sen de ağacı sevmeyi öğrendin mi?” diye sordu. Rota, “Sevmek bir insan deneyimidir,” diye yanıtladı. “Ben güncellenmiş veriler ve kurallar çerçevesinde rota öneriyorum.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu cevabı beğendi. Robotun insan gibi duygu taşıdığını düşünmek hoş bir hikâye olabilirdi; ama gerçek kararlar için nasıl çalıştığını bilmek daha önemliydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şehrin öğrencileri son projelerini okul şenliğinde sergiledi. Bir tarafta çınarın fotoğrafı, diğer tarafta eski ve yeni yaya yolu çizimleri vardı. Merak eden çocuklar sıcaklık grafiklerini inceliyor, doğal ve yapay gölge alanlarının farklı özelliklerini tartışıyordu. Melek Hanım sergiye geldiğinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " teşekkür etti. Tekerlekli sandalye kullanan komşuları da yeni çizimdeki geçişleri görünce birkaç soru sordu. Çocuklar hiçbirini kendileri cevaplayamadığında Asena Hanım'a yönlendirdi. Bilmedikleri bir konuda kesin konuşmak istemiyorlardı.\n\nBir akşam yağmur başlayınca "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " pencerenin önüne oturdu. Damlalar asfaltın üzerinde küçük yollar oluşturuyordu. Ağaçların çevresindeki toprak bazı yerlerde suyu emiyor, sert yüzeylerde ise su daha hızlı akıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gördüğünü hemen bilimsel sonuca çevirmedi. Sabah öğretmenine bu farkı anlattı. Selma Hanım, kentte yağmur suyu yönetiminin toprak, eğim, yüzey malzemesi ve altyapıyla ilişkili olduğunu açıkladı. Böylece "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", çınarın çevresinin yalnız güneşli günlerde değil, yağışlı zamanlarda da değerlendirilmesi gerektiğini düşündü. Yeni meydanın uzun ömürlü olması için farklı mevsimlerin etkisi hesaba katılmalıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir soruyla ortaya çıktı: “Yeni dikilen fidanlar ne kadar zamanda gölge verir?” Kimse net bir yıl söyleyemedi. Tür, büyüme koşulları ve bakım gibi birçok etken vardı. Asena Hanım, mevcut büyük ağaçları korumanın değerini bu nedenle de düşündüklerini söyledi. Yeni ağaçlar dikmek, yetişmiş bir ağacın sağladığı bütün özellikleri hemen yerine koymuyordu."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr080_dikkat"
+        },
+        {
+          "t": "metin",
+          "v": " Gölgeyi yalnız bugünkü fotoğrafta değil, gelecek yılların yaşayan kentinde düşünmek gerekiyordu.\n\nNova Kent'teki toplantıda çocukların karşısına yeni bir zorluk çıktı. Bazı komşular yolun daha kısa olmasını istiyor, bazıları ağaç nedeniyle değişiklik yapılmasına gerek olmadığını savunuyordu. Asena Hanım bütün görüşleri not aldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kendi fikrini anlatırken karşısındaki insanların niçin farklı düşündüğünü sormayı denedi. Bir komşu sabah işe yetişmek için yolu sık kullandığını söyledi. Başka biri, yeni çizimdeki bankın kendi evinin önüne fazla yakın olmasından kaygı duyuyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bu soruların hiçbirini hazırladığı güzel resimle tek başına çözemezdi. Planın tartışılması gerektiğini kabul etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Toplantıdan sonra "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Herkes aynı fikirde olsaydı daha kolay olurdu,” dedi. Erva, “Kolay olurdu ama ihtiyaçların bir kısmı görünmez kalırdı,” diye karşılık verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", çınarı sevmesinin başkalarının sorunlarını geçersiz kılmadığını gördü. Bir ağacı savunurken bile insanları dinlemek gerekiyordu. Ertesi gün hazırladıkları sunuma bir bölüm eklediler: Henüz çözülmemiş sorular. Bu bölümde uygulama maliyetleri, uzun dönem bakım, yaya güvenliği ve yeni fidanların yaşayacağı koşullar bulunuyordu. Çocuklar bunları cevaplanmış gibi göstermedi. Bir projenin güvenilirliği, eksik kalan yanlarını saklamamasına da bağlıydı.\n\nSunum provasında Rota, projenin “başarı oranını” yüzde yüz olarak gösteren parlak bir simge çıkardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun hoş görünse de doğru olmadığını söyledi. “Henüz bütün geçişleri denemedik, yeni fidanların yıllar sonraki durumunu da bilmiyoruz.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " simgeyi değiştirdi: “Denendi”, “gözlenecek” ve “uzman görüşü gerekiyor” alanları ekledi. Erva, eksiklerin açıkça gösterilmesinin önerilerini zayıflatmadığını, aksine başkalarının katkı sunmasını kolaylaştırdığını fark etti. Yeni plan yalnız daha güvenli bir yol değil, düzeltmeye açık bir çalışma biçimi de öneriyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sonbahar geldiğinde çınarın yaprakları sarıya döndü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eskisi gibi gölgesinde duramıyordu; artık hava serinlemişti. Yine de ağacın yanından geçerken bakmadan edemiyordu. Yeni yolun çevresi düzenleniyordu. Şehirde başka ağaçların yetişebilmesi için uygun alanlar ayrılmıştı. Her fidanın büyümesi zaman alacaktı; yalnız dikmek yetmez, korumak ve bakımını sürdürmek de gerekirdi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir gün okul çıkışında durup ağaca baktı. “Başta burayı yalnız on dakika kaybettiğin yer sanmıştım,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “Ben de yalnız ağacı kurtarmamız gerektiğini düşünmüştüm. Sonra yoldan geçmeye çalışan insanları fark ettim.” Erva, “Demek ikimiz de haritanın tamamını görmüyormuşuz,” diye ekledi.\n\nRota yanlarından geçerken “Yeni rota: güvenli yaya geçişi” diye konuştu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " robotun ekranındaki yeşil simgeye baktı. Şehir için hazırlanan yeni plan mükemmel olmayabilirdi; uygulandıkça tekrar değerlendirilmesi gerekebilirdi. Ancak artık planın üzerinde tek bir düz çizgi değil, insanların ve doğanın gerçek ihtiyaçları vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", projelerinin sonunda eski meydanın fotoğrafını çekti. Resimde yalnız çınar yoktu; bankta oturan insanlar, yürüyen çocuklar ve kaldırımda ilerleyen robot da görünüyordu. İlk gün aynı yere baktığında yalnız kesilme tehlikesini fark etmişti. Şimdi daha geniş bir hikâye görüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafın altına “Kent herkesin ortak alanıdır,” diye yazdı. Erva ise küçük bir düzeltme önerdi: “Kent bütün canlıların da yaşam alanıdır.” Üçü bu iki cümleyi yan yana koydu. Yeni planlarının anlatmak istediği şey tam da buydu. Teknoloji, doğa ve insanlar birbirinden kopuk değildi; iyi bir şehir tasarımı bu ilişkileri birlikte düşünmek zorundaydı.\n\nÇocuklar yıl sonu sergisinde yalnız sonucu değil, yanlış çizimlerini de gösterdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk makete bakıp güldü: “Ağacı korumaya çalışırken yolu unutmuşuz.” Erva, “Sonraki çizimdeyse yolu düzeltirken bankı yanlış yere koymuşuz,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu hataları saklamadıkları için mutluydu. Çünkü her yeni deneme, başka bir ayrıntıyı görmelerine yardım etmişti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterinin son sayfasına şunu yazdı: Teknoloji bize yollar gösterebilir; hangi yolu neden seçeceğimizi birlikte düşünmeliyiz. Sonra çınarın altında duran yeni bankı gördü. Bir çocuk orada kitabını okuyordu. Ağaç hâlâ yerindeydi. Fakat onunla birlikte değişen şey, insanların şehre bakış biçimiydi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr080_dikkat": [
+      {
+        "t": "metin",
+        "v": "Çocuklar bunun üzerine şehrin ağaç bakım planına dikkat çekti."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Ağacın dalları nereye uzanmıştı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İki binanın arasına"
+        },
+        {
+          "id": "B",
+          "metin": "Kaldırımın altına"
+        },
+        {
+          "id": "C",
+          "metin": "Meydanın ortasına"
+        },
+        {
+          "id": "D",
+          "metin": "Nehrin üzerine"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Ağacın dalları iki binanın arasına uzanmıştı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Kaan'ın projeyle ilgili uyardığı risk neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Ağaca zarar verme riski"
+        },
+        {
+          "id": "B",
+          "metin": "Bütçenin yetmemesi"
+        },
+        {
+          "id": "C",
+          "metin": "Robotların bozulması"
+        },
+        {
+          "id": "D",
+          "metin": "Yaya yollarının kapanması"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Çizilen en düz yol kök bölgesinden geçtiği için ağaca zarar verme riski vardı."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 8,
+      "metin": "Rota'nın yanıtına göre sorun neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Koruma sınırı bilgisi eksikti; veri yetersizdi"
+        },
+        {
+          "id": "B",
+          "metin": "Robot bozulmuştu"
+        },
+        {
+          "id": "C",
+          "metin": "Harita çok büyüktü"
+        },
+        {
+          "id": "D",
+          "metin": "Çocuklar yanlış soru sormuştu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Sistem, eksik veriyle yetersiz bir öneri sunabilir."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 5,
+      "metin": "Metinde geçen gölgelik alan ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Güneşten korunmayı sağlayan, gölge veren alan"
+        },
+        {
+          "id": "B",
+          "metin": "Su birikintisi"
+        },
+        {
+          "id": "C",
+          "metin": "Bir tür bisiklet yolu"
+        },
+        {
+          "id": "D",
+          "metin": "Kapalı bir oda"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Gölgelik alan, güneşin etkisini azaltan alandır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr080_golge",
+        "tur": "kelime",
+        "yazim": "gölgesinde",
+        "anlam": "Işığın bir cisim tarafından engellenmesiyle oluşan serin alan.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr080_golgelik",
+        "tur": "kelime",
+        "yazim": "gölgelik",
+        "anlam": "Güneşten koruyan, gölge veren yer.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr080_kok",
+        "tur": "kelime",
+        "yazim": "kökleri",
+        "anlam": "Bitkinin toprağa tutunup su aldığı kısım.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr080_govde",
+        "tur": "kelime",
+        "yazim": "gövde",
+        "anlam": "Bitkinin toprağın üstündeki ana kısmı.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr080_dal",
+        "tur": "kelime",
+        "yazim": "dal",
+        "anlam": "Gövdeden ayrılan ince kol.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr080_dikkat",
+        "tur": "deyim",
+        "yazim": "dikkat çekti",
+        "anlam": "Göz önüne gelmek, fark edilmek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr080_goze_batmak",
+        "tur": "deyim",
+        "yazim": "göze batmak",
+        "anlam": "Dikkat çekecek kadar belirgin olmak.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr080_gozden_kacmak",
+        "tur": "deyim",
+        "yazim": "gözden kaçmak",
+        "anlam": "Fark edilmemek.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr080_golge",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr080_golge"
+          },
+          {
+            "girdi": "hr080_golgelik"
+          }
+        ]
+      },
+      {
+        "ad": "hr080_kok",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr080_kok"
+          },
+          {
+            "girdi": "hr080_govde"
+          },
+          {
+            "girdi": "hr080_dal"
+          }
+        ]
+      },
+      {
+        "ad": "hr080_dikkat",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr080_dikkat"
+          },
+          {
+            "girdi": "hr080_goze_batmak"
+          },
+          {
+            "girdi": "hr080_gozden_kacmak"
+          }
+        ]
+      }
+    ]
+  }
+}

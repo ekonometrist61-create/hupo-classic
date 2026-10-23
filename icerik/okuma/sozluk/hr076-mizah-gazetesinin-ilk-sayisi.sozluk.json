@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr076_parodi",
+      "tur": "kelime",
+      "yazim": "parodi",
+      "anlam": "Bilinen bir eseri ya da biçimi taklit ederek güldüren yazı.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr076_hiciv",
+      "tur": "kelime",
+      "yazim": "hiciv",
+      "anlam": "Bir kişi ya da durumu alaylı biçimde eleştiren yazı.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr076_gercek_haber",
+      "tur": "kelime",
+      "yazim": "gerçek haber",
+      "anlam": "Gerçek olaylara dayanan, kaynağı belli bilgi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr076_abarti",
+      "tur": "kelime",
+      "yazim": "abartı",
+      "anlam": "Bir şeyi olduğundan çok büyük ya da küçük gösterme.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr076_mubalaga",
+      "tur": "kelime",
+      "yazim": "mübalağa",
+      "anlam": "Bir şeyi olduğundan fazla göstererek anlatma.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr076_gercekcilik",
+      "tur": "kelime",
+      "yazim": "gerçekçilik",
+      "anlam": "Bir şeyi olduğu gibi gösterme.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr076_gozleri",
+      "tur": "deyim",
+      "yazim": "gözleri parladı",
+      "anlam": "Çok sevinmek ya da heyecanlanmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr076_sevincten_ucmak",
+      "tur": "deyim",
+      "yazim": "sevinçten uçmak",
+      "anlam": "Çok sevinmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr076_kaslari_catilmak",
+      "tur": "deyim",
+      "yazim": "kaşları çatılmak",
+      "anlam": "Kızmak ya da hoşnutsuz olmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr076_parodi",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr076_parodi"
+        },
+        {
+          "girdi": "hr076_hiciv"
+        },
+        {
+          "girdi": "hr076_gercek_haber"
+        }
+      ]
+    },
+    {
+      "ad": "hr076_abarti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr076_abarti"
+        },
+        {
+          "girdi": "hr076_mubalaga"
+        },
+        {
+          "girdi": "hr076_gercekcilik"
+        }
+      ]
+    },
+    {
+      "ad": "hr076_gozleri",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr076_gozleri"
+        },
+        {
+          "girdi": "hr076_sevincten_ucmak"
+        },
+        {
+          "girdi": "hr076_kaslari_catilmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

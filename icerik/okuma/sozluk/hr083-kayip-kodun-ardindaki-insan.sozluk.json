@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr083_katalog",
+      "tur": "kelime",
+      "yazim": "kataloğunda",
+      "anlam": "Kitapların bilgilerini düzenli biçimde gösteren liste ya da sistem.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr083_fihrist",
+      "tur": "kelime",
+      "yazim": "fihrist",
+      "anlam": "Kitap ya da yazıların adlarını gösteren liste.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr083_envanter",
+      "tur": "kelime",
+      "yazim": "envanter",
+      "anlam": "Bir yerdeki eşyaların sayılıp kaydedilmiş dökümü.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr083_yetki",
+      "tur": "kelime",
+      "yazim": "yetkili",
+      "anlam": "Bir işi yapmaya izni ve görevi olan.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr083_yetki_d",
+      "tur": "kelime",
+      "yazim": "yetki",
+      "anlam": "Bir işi yapma hakkı.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr083_yetkisiz",
+      "tur": "kelime",
+      "yazim": "yetkisiz",
+      "anlam": "Bir işi yapmaya izni olmayan.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr083_kafasina",
+      "tur": "deyim",
+      "yazim": "kafasına göre",
+      "anlam": "Kendi istediği gibi, keyfine göre.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr083_keyfince",
+      "tur": "deyim",
+      "yazim": "keyfince",
+      "anlam": "Kendi isteğine uyarak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr083_kurallara_uyarak",
+      "tur": "kelime",
+      "yazim": "kurallara uyarak",
+      "anlam": "Belirlenmiş kurallara bağlı kalarak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr083_katalog",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr083_katalog"
+        },
+        {
+          "girdi": "hr083_fihrist"
+        },
+        {
+          "girdi": "hr083_envanter"
+        }
+      ]
+    },
+    {
+      "ad": "hr083_yetki",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr083_yetki"
+        },
+        {
+          "girdi": "hr083_yetki_d"
+        },
+        {
+          "girdi": "hr083_yetkisiz"
+        }
+      ]
+    },
+    {
+      "ad": "hr083_kafasina",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr083_kafasina"
+        },
+        {
+          "girdi": "hr083_keyfince"
+        },
+        {
+          "girdi": "hr083_kurallara_uyarak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

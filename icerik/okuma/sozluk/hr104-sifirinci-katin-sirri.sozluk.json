@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr104_soylenti",
+      "tur": "kelime",
+      "yazim": "söylenti",
+      "anlam": "Kaynağı belli olmayan, ağızdan ağıza yayılan ve doğrulanmamış bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_dedikodu",
+      "tur": "kelime",
+      "yazim": "dedikodu",
+      "anlam": "Birinin hakkında doğrulanmadan konuşulan sözler.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_dogrulanmis_haber",
+      "tur": "kelime",
+      "yazim": "doğrulanmış haber",
+      "anlam": "Kaynağı kontrol edilmiş ve doğruluğu sınanmış bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_lejand",
+      "tur": "kelime",
+      "yazim": "lejand",
+      "anlam": "Harita ya da planda sembollerin anlamını açıklayan bölüm.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_aciklama_tablosu",
+      "tur": "kelime",
+      "yazim": "açıklama tablosu",
+      "anlam": "Bir çizim ya da haritadaki işaretlerin karşılığını gösteren tablo.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_gosterge",
+      "tur": "kelime",
+      "yazim": "gösterge",
+      "anlam": "Bir haritada ya da çizimde belli bir anlamı işaret eden simge.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_tutarli",
+      "tur": "kelime",
+      "yazim": "tutarlı",
+      "anlam": "Birbiriyle çelişmeyen, uyumlu.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_uyumlu",
+      "tur": "kelime",
+      "yazim": "uyumlu",
+      "anlam": "Birbirine uygun, bağdaşan.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_celiskili",
+      "tur": "kelime",
+      "yazim": "çelişkili",
+      "anlam": "Birbirini tutmayan, çelişen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_kanit",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_delil",
+      "tur": "kelime",
+      "yazim": "delil",
+      "anlam": "Bir olayın doğruluğunu gösteren belge ya da nesne.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_iddia",
+      "tur": "kelime",
+      "yazim": "iddia",
+      "anlam": "Bir şeyin doğru olduğunu ileri sürme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_omuz",
+      "tur": "deyim",
+      "yazim": "omuz silkti",
+      "anlam": "İlgisizlik ya da bilmezlik göstermek için omuzlarını kaldırmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_kayitsiz",
+      "tur": "deyim",
+      "yazim": "kayıtsız kaldı",
+      "anlam": "Bir duruma ilgi göstermeden durmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr104_umursamamak",
+      "tur": "deyim",
+      "yazim": "umursamamak",
+      "anlam": "Bir şeye önem vermemek, aldırmamak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr104_soylenti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr104_soylenti"
+        },
+        {
+          "girdi": "hr104_dedikodu"
+        },
+        {
+          "girdi": "hr104_dogrulanmis_haber"
+        }
+      ]
+    },
+    {
+      "ad": "hr104_lejand",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr104_lejand"
+        },
+        {
+          "girdi": "hr104_aciklama_tablosu"
+        },
+        {
+          "girdi": "hr104_gosterge"
+        }
+      ]
+    },
+    {
+      "ad": "hr104_tutarli",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr104_tutarli"
+        },
+        {
+          "girdi": "hr104_uyumlu"
+        },
+        {
+          "girdi": "hr104_celiskili"
+        }
+      ]
+    },
+    {
+      "ad": "hr104_kanit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr104_kanit"
+        },
+        {
+          "girdi": "hr104_delil"
+        },
+        {
+          "girdi": "hr104_iddia"
+        }
+      ]
+    },
+    {
+      "ad": "hr104_omuz",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr104_omuz"
+        },
+        {
+          "girdi": "hr104_kayitsiz"
+        },
+        {
+          "girdi": "hr104_umursamamak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

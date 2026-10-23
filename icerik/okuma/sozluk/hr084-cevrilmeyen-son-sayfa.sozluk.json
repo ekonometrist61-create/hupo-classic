@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr084_arsiv",
+      "tur": "kelime",
+      "yazim": "arşivinde",
+      "anlam": "Belge ve kayıtların düzenli olarak saklandığı yer.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr084_depo",
+      "tur": "kelime",
+      "yazim": "depo",
+      "anlam": "Eşyanın saklandığı yer.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr084_dagınıklık",
+      "tur": "kelime",
+      "yazim": "dağınıklık",
+      "anlam": "Düzensizlik, karışıklık.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr084_kanit",
+      "tur": "kelime",
+      "yazim": "kanıtların",
+      "anlam": "Bir iddiayı destekleyen, sınanabilir bilgi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr084_belge",
+      "tur": "kelime",
+      "yazim": "belge",
+      "anlam": "Bir bilgiyi yazılı olarak kanıtlayan kâğıt.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr084_varsayim_k",
+      "tur": "kelime",
+      "yazim": "varsayım",
+      "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr084_gormezden",
+      "tur": "deyim",
+      "yazim": "görmezden gelmekti",
+      "anlam": "Bilmezlikten gelmek, yok saymak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr084_goz_yummak",
+      "tur": "deyim",
+      "yazim": "göz yummak",
+      "anlam": "Bir kusuru fark etmemiş gibi davranmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr084_gozu_acik",
+      "tur": "deyim",
+      "yazim": "gözü açık olmak",
+      "anlam": "Dikkatli ve uyanık olmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr084_arsiv",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr084_arsiv"
+        },
+        {
+          "girdi": "hr084_depo"
+        },
+        {
+          "girdi": "hr084_dagınıklık"
+        }
+      ]
+    },
+    {
+      "ad": "hr084_kanit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr084_kanit"
+        },
+        {
+          "girdi": "hr084_belge"
+        },
+        {
+          "girdi": "hr084_varsayim_k"
+        }
+      ]
+    },
+    {
+      "ad": "hr084_gormezden",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr084_gormezden"
+        },
+        {
+          "girdi": "hr084_goz_yummak"
+        },
+        {
+          "girdi": "hr084_gozu_acik"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

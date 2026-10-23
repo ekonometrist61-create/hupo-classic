@@ -1,0 +1,517 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr033-ye-kurkum-ye-peki-neden",
+    "baslik": "Ye Kürküm Ye, Peki Neden?",
+    "tur": "tarih_kultur",
+    "konu": "gorunus_ve_saygi",
+    "sinif_alt": 4,
+    "sinif_ust": 4,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D14",
+      "D1"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 4,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kultur_miras",
+        "mizah"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D1"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "cubbe_hr033",
+          "tur": "lexeme",
+          "etiket": "cübbe",
+          "yuva": "hr033_cubbe",
+          "islev": "first_hint"
+        },
+        {
+          "id": "gosterisli_hr033",
+          "tur": "lexeme",
+          "etiket": "gösterişli",
+          "yuva": "hr033_gosterisli",
+          "islev": "application"
+        },
+        {
+          "id": "yamali_hr033",
+          "tur": "lexeme",
+          "etiket": "yamalı",
+          "yuva": "hr033_yamali",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr033",
+          "tur": "idiom",
+          "etiket": "Dış görünüşe aldanmak",
+          "yuva": "hr033_dis_gorunus",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr033",
+          "tur": "concept",
+          "etiket": "Görünüş ile değer; önyargı ve saygı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 458,
+        "tahmini_sure_dk": 6,
+        "sayfa_sayisi": 5,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 6,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Hoca eski cübbesiyle kapıda bekletildi. Kürkünü giyince herkes koştu. Çorbayı kim içmeliydi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-033"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kasabanın meydanında o sabah her zamankinden büyük bir telaş vardı. Değirmenci Hasan, yeni değirmeninin açılışı için herkesi yemeğe çağırmıştı. Kapıya rengârenk fenerler asılmış, avluda uzun bir sofra kurulmuştu.\n\nNasreddin Hoca, pazardan dönerken daveti hatırladı. Üzerinde günlük, eski "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr033_cubbe"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Eve uğramadan avluya girdi. Masaların yanından geçerken kimse ona yer göstermedi. Bir görevli, önündeki tabakları toplamakla meşguldü.\n\nHoca, \"Kolay gelsin evladım, boş bir yer var mı?\" diye sordu.\n\nGörevli başını kaldırmadan, \"Biraz bekleyin,\" dedi.\n\nAvlunun öbür ucunda, yeni ve "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr033_gosterisli"
+        },
+        {
+          "t": "metin",
+          "v": " giysili bir misafiri iki kişi kapıya kadar karşılamıştı. Hoca olanları izledi. Hasan'ın onu fark etmemiş olabileceğini düşünerek hemen alınmadı. Yine de insanların birbirine giysisine göre davranması içine sinmedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yolda eski ayakkabılarıyla koşturan bir çocuk gördü. Çocuğun elinde, değirmenin açılışında şarkı söyleyecek topluluğun notaları vardı. Sayfalar rüzgârda uçuşunca Hoca eğilip yardımcı oldu. Çocuk, \"Beni kimse fark etmez sanmıştım,\" dedi. Hoca gülümsedi: \"İnsan bazen dikkat edilmediğini hisseder. Ama yardım etmek için kimsenin bizi tanıması gerekmez.\" Bu küçük karşılaşma, Hoca’nın aklındaki soruyu daha da büyüttü: Bir davette insanları görünür kılan şey gerçekten neydi?\n\nSessizce evine gitti. Dolabından işlemeli, temiz kürkünü aldı ve yeniden davete döndü. Bu kez kapıdaki görevli doğruldu.\n\n\"Hoş geldiniz efendim! Şöyle buyurun. En güzel yer sizin.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hoca, önüne getirilen çorbanın kaşığını kaldırmadı. Kürkünün kolunu kâseye doğru uzatıp, \"Ye kürküm ye!\" dedi.\n\nYan masadaki çocuklardan "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " gülmeye başladı. Fakat ardından kaşlarını çattı.\n\n\"Hocam, kürk çorba içebilir mi?\"\n\n\"İçemez elbette. Peki sizce neden çorba önce bana değil de kürküme ikram edildi?\"\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " arkadaşı Efe cevap verdi: \"Çünkü kürkü görünce sizi önemli sandılar.\"\n\n\"Benim değerim, eve gidip kürk giyince mi arttı?\" diye sordu Hoca."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " önce cevap vermekte zorlandı. Sabah pazarda taşıdığı sepet ağır olduğu için onu evine kadar götüren komşuyu hatırladı. Komşunun giysileri de eskiydi ama içten davranışı gün boyu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "belirtme",
+          "yedek": "bir arkadaşı"
+        },
+        {
+          "t": "metin",
+          "v": " mutlu etmişti. \"Biri bana yardım ettiğinde üstündeki giysiyi hiç düşünmüyorum,\" dedi. Efe ise geçen hafta yeni ayakkabıları olduğu için arkadaşının eskileriyle alay ettiğini anımsadı. O an yüzü kızardı. \"Ben de bazen dış görünüşe bakıyorum,\" diye itiraf etti. Hoca, \""
+        },
+        {
+          "t": "vurgu",
+          "v": "Farkına varmak"
+        },
+        {
+          "t": "metin",
+          "v": ", değiştirmek için ilk adımdır,\" dedi.\n\nÇocuklar bir süre düşündü. Hasan da konuşmaları duyup yanlarına geldi. Hocanın sabahki gelişini öğrenince görevliyi çağırdı. Onu herkesin önünde azarlamadı; birlikte daha iyi bir karşılama düzeni kurabileceklerini söyledi. Çocuklar da kapıda sırayla konukları karşılamayı önerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğleden sonra küçük bir misafir geldi. Üzerinde "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr033_yamali"
+        },
+        {
+          "t": "metin",
+          "v": " bir yelek, elinde çiçek vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen koştu, ona sandalye çekti. Çocuk, çiçeği masanın ortasına koyarken gülümsedi.\n\nHoca fısıldadı: \"İşte şimdi soframız gerçekten zenginleşti.\"\n\nDönüş yolunda Efe, \"Bugün bir deyimi de öğrendim,\" dedi."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr033_dis_gorunus"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. \"Birini tanımak için ne giydiğine değil, nasıl davrandığına bakmalı.\"\n\nHoca, çocukların elindeki çiçeğe baktı. \"Üstelik bazen en güzel hediyeyi en gösterişsiz misafir getirir,\" diye ekledi. Artık avlu yalnızca yemek kokusuyla değil, herkesin eşit karşılandığı bir neşeyle doluydu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kalp"
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr033_dis_gorunus": [
+      {
+        "t": "metin",
+        "v": "\"Dış görünüşe aldanmak, insanı tanımadan karar vermekmiş.\""
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 3,
+      "metin": "Hoca çorbayı kime ikram etmek istedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kürküne"
+        },
+        {
+          "id": "B",
+          "metin": "Kendisine"
+        },
+        {
+          "id": "C",
+          "metin": "Görevliye"
+        },
+        {
+          "id": "D",
+          "metin": "Zeynep'e"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Hoca kürkünün kolunu kâseye uzatıp “Ye kürküm ye!” dedi."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 3,
+      "metin": "Efe'ye göre çorba neden önce kürke ikram edildi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kürkü görünce Hoca'yı önemli sandıkları için"
+        },
+        {
+          "id": "B",
+          "metin": "Hoca çok acıkmıştı"
+        },
+        {
+          "id": "C",
+          "metin": "Kürk sofrada en önce gelmişti"
+        },
+        {
+          "id": "D",
+          "metin": "Görevli Hoca'yı tanıyordu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Efe, insanların Hoca'yı giysisine göre önemli sandığını söyledi."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 3,
+      "metin": "Hoca'nın bu sorusu neyi sorgular?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İnsanın değerinin giysisine göre ölçülüp ölçülmemesini"
+        },
+        {
+          "id": "B",
+          "metin": "Kürkün çorbayı içip içmediğini"
+        },
+        {
+          "id": "C",
+          "metin": "Eve dönmenin gerekliliğini"
+        },
+        {
+          "id": "D",
+          "metin": "Pazarın kurulduğunu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Hoca, saygının giysiyle ölçülüp ölçülmediğini düşündürür."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "Metinde geçen gösterişli sözcüğü ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Dikkat çekmek için süslü, gösterişe düşkün"
+        },
+        {
+          "id": "B",
+          "metin": "Çok eski"
+        },
+        {
+          "id": "C",
+          "metin": "Yavaş"
+        },
+        {
+          "id": "D",
+          "metin": "Küçük"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Gösterişli, dikkat çekecek kadar süslü olan demektir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr033_cubbe",
+        "tur": "kelime",
+        "yazim": "cübbesi",
+        "anlam": "Hocaların ve din adamlarının giydiği uzun, geniş dış giysi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr033_kaftan",
+        "tur": "kelime",
+        "yazim": "kaftan",
+        "anlam": "Uzun, bol ve genellikle kollu bir giysi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr033_kurk",
+        "tur": "kelime",
+        "yazim": "kürk",
+        "anlam": "Hayvan postundan yapılmış sıcak giysi.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr033_gosterisli",
+        "tur": "kelime",
+        "yazim": "gösterişli",
+        "anlam": "Dikkat çekmek için süslü ve şık.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr033_sade",
+        "tur": "kelime",
+        "yazim": "sade",
+        "anlam": "Süssüz, yalın.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr033_zarif",
+        "tur": "kelime",
+        "yazim": "zarif",
+        "anlam": "İnce yapılı, güzel ve incelikli.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr033_yamali",
+        "tur": "kelime",
+        "yazim": "yamalı",
+        "anlam": "Yırtık yerleri kumaş parçasıyla onarılmış.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr033_eskimis",
+        "tur": "kelime",
+        "yazim": "eskimiş",
+        "anlam": "Kullanılmaktan eskiyip yıpranmış.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr033_yeni",
+        "tur": "kelime",
+        "yazim": "yeni",
+        "anlam": "Henüz kullanılmamış ya da yeni alınmış.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr033_dis_gorunus",
+        "tur": "kelime",
+        "yazim": "dış görünüşe aldanmak",
+        "anlam": "İnsanı tanımadan yalnızca görünüşüne bakarak karar vermek.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      },
+      {
+        "id": "hr033_gozu_kapali_k",
+        "tur": "deyim",
+        "yazim": "gözü kapalı",
+        "anlam": "Dikkat etmeden, düşünmeden yapmak.",
+        "sinif_alt": 3,
+        "sinif_ust": 5
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr033_cubbe",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr033_cubbe"
+          },
+          {
+            "girdi": "hr033_kaftan"
+          },
+          {
+            "girdi": "hr033_kurk"
+          }
+        ]
+      },
+      {
+        "ad": "hr033_gosterisli",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr033_gosterisli"
+          },
+          {
+            "girdi": "hr033_sade"
+          },
+          {
+            "girdi": "hr033_zarif"
+          }
+        ]
+      },
+      {
+        "ad": "hr033_yamali",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr033_yamali"
+          },
+          {
+            "girdi": "hr033_eskimis"
+          },
+          {
+            "girdi": "hr033_yeni"
+          }
+        ]
+      },
+      {
+        "ad": "hr033_dis_gorunus",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr033_dis_gorunus"
+          },
+          {
+            "girdi": "hr033_gozu_kapali_k"
+          }
+        ]
+      }
+    ]
+  }
+}

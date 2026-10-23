@@ -1,0 +1,1215 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr067-golgeler-vadisinin-rotasi",
+    "baslik": "Gölgeler Vadisinin Rotası",
+    "tur": "macera",
+    "konu": "guzergah_harita",
+    "sinif_alt": 6,
+    "sinif_ust": 6,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D16",
+      "D6"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 6,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "kesif",
+        "guvenlik"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D16",
+        "yardimci_deger": "D6"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "krokisi_hr067",
+          "tur": "lexeme",
+          "etiket": "kroki",
+          "yuva": "hr067_kroki",
+          "islev": "first_hint"
+        },
+        {
+          "id": "olcek_hr067",
+          "tur": "lexeme",
+          "etiket": "ölçek",
+          "yuva": "hr067_olcek",
+          "islev": "application"
+        },
+        {
+          "id": "koordinat_hr067",
+          "tur": "lexeme",
+          "etiket": "koordinat",
+          "yuva": "hr067_koordinat",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr067",
+          "tur": "concept",
+          "etiket": "Eski ve güncel harita ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 3028,
+        "tahmini_sure_dk": 27,
+        "sayfa_sayisi": 24,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 38,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Vadinin girişinde iki zıt ok var. Hangisi doğru? Eski kroki mi, güncel işaret mi?",
+    "durum": "taslak",
+    "fis_kodu": "HR-067"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Vadinin girişindeki levhada iki farklı ok vardı. Biri kuzeyi gösteriyor, diğeri neredeyse onun tam tersine bakıyordu. Üstelik ikisinin altında da aynı sözcük yazılıydı: Seyir Terası. "
+        },
+        {
+          "t": "isaret",
+          "kod": "orman"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", doğa kulübünün haritasını dizine açtı. \"Aynı yer iki zıt yönde olamaz,\" dedi. Yanındaki "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Belki iki farklı yol vardır,\" diye karşılık verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu düşünmemişti. Levhanın fotoğrafını çekip öğretmenleri Murat Bey'e gösterdiler. Öğretmen hiçbir oku seçmeden önce güvenli bekleme alanında toplanmalarını istedi.\n\nGezi öncesinde doğa kulübünde kısa bir hazırlık toplantısı yapılmıştı. Çocuklara birer harita verilip üç farklı renkte işaret kalemi dağıtıldı. Yeşil kalem yürüyüşe açık yolları, sarı kalem dikkat gerektiren noktaları, kırmızı kalem ise girilmeyecek alanları gösterecekti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " daha kâğıdı açar açmaz kırmızı bölgenin arasından bir çizgi çekti. \"En kısa yol burası,\" dedi. Murat Bey, \"Kâğıtta kısa görünmesi onu seçebileceğimiz anlamına gelmiyor,\" diye cevap verdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çizgisini silerken hafifçe sıkıldı; fakat sonradan kapalı köprünün önüne geldiklerinde bu konuşmayı hatırlayacaktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Toplantıda bir de rol paylaşımı yapıldı. Lina gözlem saatlerini yazacak, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " harita işaretlerini kaydedecek, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğraf çekme izni olan noktalarda görüntü alacaktı. Ancak asıl yönlendirmeyi öğretmenler ve rehber yapacaktı. Görev paylaşımı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " başta hoşuna gitmedi. \"Ben neden yolu bulamıyorum?\" diye sordu. Aysel Hanım, \"Yolu bulmayı öğrenebilirsin,\" dedi, \"ama kalabalık bir grubun güvenliği için karar verme yetkisi eğitimli yetişkinlerde kalır.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu düşündü. Sorumluluk almak her işi tek başına yapmak demek değildi.\n\nKulüp, hava durumunu da bir çizelgeye kaydetti. Rüzgârın yönü, bulutların yoğunluğu ve sıcaklık değişebilirdi. Lina, \"Bir gün önceki tahmin bugün neden farklı?\" diye sordu. Murat Bey, hava tahmininin gözlem ve hesaplamalarla oluşturulduğunu, yeni veriler geldikçe güncellenebildiğini söyledi. Çocuklar hava tahmininin geleceğe ilişkin bir öngörü olduğunu, kesin bir söz olmadığını öğrendi. Bu yüzden yürüyüş günü yetkililerin güncel değerlendirmesine göre hareket edeceklerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Aysel Hanım eski patika planının nasıl ellerine geçtiğini de anlattı. Kasabanın yerel tarih arşivinde bulunan bir çizimin izinli kopyasıydı. Üzerinde yazar adı yoktu; muhtemelen eski yolları bilen birinin kaba taslağıydı. "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr067_olcek"
+        },
+        {
+          "t": "metin",
+          "v": " çizgisi bulunmadığından mesafeler tam hesaplanamıyordu. \"Bir kaynağın bize ne söylediğini öğrenmek kadar ne söylemediğini anlamak da önemlidir,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu cümleyi not etti. İleride iki okun karşısında kaldığında defterin ilk sayfasına dönmek isteyecekti.\n\nHarita okuma oyununda öğretmen önce çok basit bir soru sordu: \"Kuzey yukarıdaysa doğu neresidir?\" Çocuklar sağ tarafı işaretledi. Sonra haritayı çevirdi ve aynı soruyu tekrar sordu. Bu kez bazıları doğuyu yine kâğıdın sağında gösterdi. Lina, pusulanın kuzeyiyle haritanın üst yönünü eşleştirmeden böyle bir cevap vermenin yanıltıcı olduğunu anlattı. Murat Bey küçük bir örnek verdi: \"Kitabı masada ters çevirdiğinde evlerin gerçek yeri değişmez; yalnız kâğıda bakışın değişir.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu benzetmeyi kullanarak kendi yanılgısını düzeltti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O gün herkes eve küçük bir görevle döndü. Mahallede güvenli bir noktadan gözlem yapacak, bir ağacın ya da binanın gölgesini farklı saatlerde not edecekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " apartmanlarının ortak bahçesindeki ağacı seçti. Sabah pencereden baktığında gölge bir yana uzanıyordu, akşamüstü ise başka bir yana. Fotoğrafları aynı açıdan çekmediği için iki görüntüyü tam karşılaştıramadı. Babası, \"Bir sonraki denemede aynı yerden bak,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", deneylerde karşılaştırmayı kolaylaştırmak için koşulları olabildiğince benzer tutmanın neden işe yaradığını fark etti.\n\nGeziden önceki akşam "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", dedesinin anlattığı bir vadi hikâyesini hatırladı. Dedesine göre eskiden köylüler hayvanlarını vadideki bir yoldan geçirirmiş. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu hikâyeyi gerçek harita gibi kullanmak istedi. Babası, \"Dedenin anlattığı bir hatıradır,\" dedi. \"Değerlidir ama bugünkü yol güvenliği için karar verdirmez.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", anıyla güncel bilgi arasındaki ayrımı ilk kez böyle somut gördü. Dedesini arayıp eskiden patikanın neden kullanıldığını sordu; fakat ertesi gün yalnızca rehberin gösterdiği açık rotada yürümeye söz verdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okulun doğa kulübü, belediyenin işaretlenmiş yürüyüş yollarında çevre gözlemi yapıyordu. Yanlarında iki öğretmen ve eğitimli bir doğa rehberi vardı. Amaç vadinin karşı yakasındaki seyir terasına ulaşıp kayaçları, bitki örtüsünü ve güneş ışığının farklı yamaçlara düşüşünü gözlemlemekti. Rehber Aysel Hanım, rota dışına çıkmanın yasak olduğunu hatırlattı.\n\n\"Bugün küçük bir tarihî belge de inceleyeceğiz,\" dedi. Çantasından yıpranmış görünümlü bir patika planının kopyasını çıkardı. \"Bu, yıllar önce çizilmiş bir yol "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr067_kroki"
+        },
+        {
+          "t": "metin",
+          "v": ". Fakat vadiye yeni düzenlemeler yapıldı. Eski planla bugünkü işaretlerin uyuşmasını beklemeyin.\"\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " gözleri parladı. \"Demek gizli bir yol var!\" Aysel Hanım gülümsedi. \"Eski bir yolun olması, bugün kullanılmasının güvenli olduğu anlamına gelmez. Biz sadece değişimi araştıracağız.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eski kâğıdın üzerine çizilmiş ince çizgiye baktı. Çizgi vadinin dibine iniyor, sonra kıvrılarak karşı yamaca çıkıyordu. Güncel haritada ise bir bölümün yerine koruyucu ahşap yürüyüş yolu yapılmıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüp üçerli gruplara ayrıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " yanında hesap işlerinde dikkatli olan Lina vardı. Ellerindeki görev kâğıdında şu sorular bulunuyordu: \"Eski ve yeni rotanın farkları nelerdir? Kuzeyi nasıl doğrularsınız? Hangi bilgiye hangi nedenle güvenirsiniz?\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk soruya hemen cevap vermek istedi ama Lina defterini açıp, \"Önce işaretleri tek tek kaydedelim,\" dedi.\n\nİlk gözlemleri beklediklerinden karışıktı. Levhanın eski oku yerinden oynamıştı. Yeni ok ise güncel haritada belirtilen yönü gösteriyordu. Aysel Hanım, \"Biri diğerinden eski diye otomatik olarak yanlış olmaz; yine de yürüyüşte yetkili güncel işaretleri ve rehberin yönlendirmesini kullanırız,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " elindeki pusulayı çevirdi. İbre kuzeyi gösterdiğinde levhanın yeni okunun yönüyle aynı doğrultuyu buldular.\n\n\"O zaman mesele çözüldü,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise durdu. \"Pusula kuzeyi gösteriyor. Seyir terası tam kuzeyde mi, bunu ayrıca haritadan okumamız gerekir.\" Lina başını salladı. \"Pusula, gideceğimiz yerin adını bilmez.\" Aysel Hanım bu cümleyi çok beğendi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yürüyüş başlarken bir grup öğrenci sırf eski levhayı ilginç bulduğu için onun önünde oyalanıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kuş sesleri arasından rehberin düdüğünü duydu. Aysel Hanım herkesi topladıktan sonra sayım yaptı. Lina defterine kişi sayısını yazdı. \"Yalnız yolu değil, birlikte geldiğimiz insanları da takip ediyoruz,\" dedi. Bir süre sonra çocuklardan biri matarasını düşürdüğünü fark etti. Öğretmene haber verildi; gerekli düzenleme yetişkinler tarafından yapıldı. Kimse tek başına geri gönderilmedi. Küçük olay, kulübün neden birlikte hareket ettiğini gösterdi.\n\nYürüyüşe başladıklarında patika iki küçük yamacın arasından ilerliyordu. Öğleye doğru güneş yükselmiş, çam ağaçlarının gölgeleri taşların üzerine uzanmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir gölgenin batıya doğru yattığını fark etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Demek batı burası,\" dedi. Lina, \"Gölgenin yönü günün saatine göre değişir,\" diye hatırlattı. \"Bir görüntüyü tek başına pusula gibi kullanmak güvenilir değil.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Murat Bey çocukları güvenli bir açıklıkta durdurdu. Aysel Hanım, küçük bir çubuğun gölgesini farklı zamanlarda gözlemleyen insanların geçmişte yön ve zamanla ilgili ipuçları elde ettiğini anlattı. Ancak bunu hava koşullarına, yere ve saate göre yorumlamak gerektiğini vurguladı. Çocuklar gölgenin fotoğrafını çekip saatini not etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine, \""
+        },
+        {
+          "t": "vurgu",
+          "v": "Gölge kanıttır, fakat bağlamı olmadan yeterli değildir"
+        },
+        {
+          "t": "metin",
+          "v": ",\" yazdı.\n\nEski haritada derenin olduğu bölüm ayrıca tartışıldı. Planın üzerindeki ince çizgi, ilk bakışta bir köprü gibi görünüyordu. Lina ise çizginin açıklama bölümünde köprü olarak tanımlanmadığını fark etti. \"Bunu köprü saymak için yeterli bilgi yok,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çizgiyi parmağıyla izledi. \"Belki yalnız yürüyüş yönüdür.\" Aysel Hanım kesin kanıt bulunmadığında yorumları birbirinden ayırmalarını istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine üç başlık açtı: Gördüğümüz, Tahmin ettiğimiz, Doğrulamamız gereken. Bu ayrım daha sonra terastaki tartışmayı da sakinleştirecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir süre sonra vadinin dibi göründü. Eski kâğıtta yolu kestiği sanılan küçük dere, güncel haritada daha geniş bir çizgi olarak gösteriliyordu. Aysel Hanım, yağışlı zamanlarda derenin seviyesinin değişebileceğini açıkladı. Karşıya geçmek için yalnızca işaretlenmiş ve açık durumdaki yaya köprüsünü kullanacaklardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " eski krokide dereyi aşan düz çizgiyi görünce \"Buradan daha kısa,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Ama orada yol var mı, güvenli mi bilmiyoruz,\" diye karşılık verdi.\n\nKöprüye yaklaştıklarında bakım ekibinin bıraktığı bir duyuru gördüler. Köprü geçici olarak kapalıydı. Rehber önceden bilgilendirilmişti; izin verilen alternatif güzergâhı kullanacaklardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"O kadar dolaşacağız!\" diye söylendi. Lina haritadaki mesafeleri karşılaştırdı. \"Kısa yol her zaman mümkün yol değildir,\" dedi. Grup alternatif rotaya yöneldi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Alternatif yürüyüş yolunda birkaç öğrenci yoruldu. Grup mola verdi. Selin adındaki öğrenci, \"En yavaş ben gidiyorum,\" diye mahcup oldu. Murat Bey, \"Yarışmıyoruz,\" dedi. \"Yürüme hızı insanın değerini ölçmez.\" Lina çantasından defterini çıkarıp tüm grubun şimdiye kadar gözlediklerini özetledi. Mola, boşa geçen zaman olmaktan çıktı. Bazıları çam kozalaklarının yerdeki dağılımını, bazıları yamaçlardaki taş renklerini anlatıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sabit durduklarında bile araştırmanın devam edebileceğini fark etti.\n\nYol uzayınca "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " aklına bir soru takıldı: \"Haritada bir santimetre gerçekte ne kadar?\" Aysel Hanım ölçeği gösterdi. Güncel haritada belirli bir uzunluğun arazide daha büyük bir mesafeyi temsil ettiğini anlattı. Çocuklar cetvelle iki yolun haritadaki uzunluğunu ölçtü; ama kıvrımlı yolların gerçek yürüyüş süresini yalnızca bu ölçümden çıkaramayacaklarını fark ettiler. Eğim, mola ve zemin de önemliydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğle molasında kulüp üyeleri büyük bir kaya gölgesinde oturdu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çantasından atıştırmalığını çıkarırken, \"Daha hızlı gitseydik şimdi terasta olurduk,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendisini savunma ihtiyacı hissetti; çünkü güvenli rotayı seçenlerden biri oydu. Murat Bey konuşmalarını duyunca \"Hız için neyi göze alırdınız?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " cevap vermedi. Köprüdeki kapalı tabelayı hatırlamıştı. \"Sanırım önce güvenlik,\" dedi.\n\nTerasa yaklaştıklarında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " cep telefonundaki harita ekranı bir an geç yüklenmeye başladı. Sinyal zayıftı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " huzursuz oldu. \"Telefon yol göstermiyor!\" Aysel Hanım, ellerinde önceden hazırlanmış güncel güzergâh bilgisinin ve işaretlenmiş yolun bulunduğunu, ayrıca rehberin güzergâhı bildiğini söyledi. Telefonların yardımcı araç olduğunu, tek güven kaynağı olamayacağını hatırlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", defterine yeni bir cümle yazdı: \"Güvenilirlik bazen birden fazla kaynağın birbirini desteklemesiyle artar.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Terasa giden patikanın son bölümünde küçük bir yön bulma oyunu düzenlendi. Öğretmen, çocuklara haritadaki "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr067_koordinat"
+        },
+        {
+          "t": "metin",
+          "v": " gösterdi; her grup izin verilen yürüyüş yolundaki belirli durakları bulacaktı. Lina başlangıç noktasını yanlış seçtiğinde bütün ölçümleri kaydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bir hata bütün rotayı etkileyebilir,\" dedi. Arkadaşını azarlamadı; birlikte koordinatları yeniden kontrol ettiler.\n\nİkinci denemede doğru noktayı buldular. Aysel Hanım, haritada yukarı yönün her zaman arazide yürüdüğün yön olmadığını, önce haritayı kuzeye göre yönlendirmek gerektiğini açıkladı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " haritayı döndürdüğünde vadi çizgisi gözünün önünde anlam kazandı. \"Bir anda her şey yerli yerine oturdu,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kâğıt üzerindeki çizgilerle gerçek yamaçlar arasında bağ kurmanın sevincini hissetti.\n\nSeyir terasına ulaştıklarında güneş vadinin batı yamacını aydınlatıyordu. Karşı tarafta gölgeler belirgindi. Rehber, yamacın yönünün güneşlenmeyi etkileyebileceğini, bunun da bazı bitkilerin yetişme koşullarıyla ilişkili olduğunu anlattı. Öğrenciler bitkilere dokunmadan fotoğraf çekti, gözlem notları aldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " şimdi yolun kısa olup olmadığını değil, gölgelerin neden iki yamaçta farklı göründüğünü merak ediyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Terasta, rehber eski planın fotoğrafını bir kez daha gösterdi. Planın ilk çizildiği sırada bazı ağaçların henüz büyümemiş, bazı patikaların ise kullanılır durumda olabileceğini anlattı. Lina, \"O hâlde aynı yeri yıllar sonra çizseydik daha farklı bir harita çıkardı,\" dedi. Aysel Hanım başını salladı. \"Harita belli bir zamanda derlenmiş bilgidir. Dünya değiştiğinde harita da güncellenmelidir.\" Bu cümle "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " çok hoşuna gitti. Eskiden bir haritayı sanki bütün cevapların bulunduğu bir kitap gibi görürdü; şimdi onun da sorulara, tarihe ve denetime ihtiyaç duyduğunu biliyordu.\n\nTam o sırada küçük bir tartışma çıktı. Kulübün diğer grubundan bir öğrenci, \"Eski yol mutlaka buradan geçiyordu,\" dedi. Elindeki planı havaya kaldırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise yoldan geriye kalan izlerin yer değiştirmiş olabileceğini düşündü. Lina daha temkinli konuştu: \"Eski krokideki çizgiyi bugünkü haritayla eşleştiriyoruz. Kesin konuşmak için başka kaynak gerekebilir.\" Aysel Hanım, notlarına bunu yazmalarını istedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dönüş yolunda küçük bir serinlik başladı. Güneş bulutların ardına girdi; gölgeler silikleşti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu fırsat bilip, \"Şimdi gölgeyle yön bulamazdık,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bu yüzden yalnız o yönteme güvenmemiştik,\" diye karşılık verdi. Lina da pusulanın ibresini etkileyebilecek bazı metal nesnelerden uzak tutmanın önemli olabileceğini hatırlattı. Aysel Hanım çocukların bu gözlemlerini dinledi ama yürüyüş sırasında kuralları tekrar etti: Deney için yoldan ayrılmak yoktu. Araştırmacı olmak, güvenlik kurallarını askıya almak demek değildi.\n\nDönüşte kulüp yalnızca terastan çekilmiş manzara fotoğraflarıyla yetinmedi. Üç ayrı çizelge hazırladılar: eski planla yeni haritanın farkları, yaptıkları yön kontrolleri ve güvenli rota seçiminin gerekçeleri. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk çizelgenin sonuna kendi el yazısıyla bir not ekledi: Kestirme yol diye gördüğüm şey, artık kullanılamayan bir çizgiydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okula döndüklerinde müdür yardımcısı onlara, \"En zor kısmı neydi?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Farklı bilgilerden hangisini kullanacağımıza karar vermek,\" dedi. Lina, \"Başlangıç noktasını yanlış seçince yeniden hesap yapmak,\" diye ekledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Kısa görünen yoldan gitmemek,\" dedi. Hepsi aynı geziye çıkmış ama farklı bir şey öğrenmişti.\n\nOkula döndüklerinde öğretmenleri herkesten bir cümleyle ilk tahmininin nasıl değiştiğini anlatmasını istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", \"İki ok varsa mutlaka iki güvenli yol vardır sanmıştım,\" dedi. Lina, \"Haritadaki bir koordinatı yanlış okuduğumda küçük hatanın bizi başka noktaya götürebileceğini gördüm,\" diye yazdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise \"Bir çizginin doğru olup olmadığını anlamak için çizginin ne zaman ve hangi amaçla yapıldığına da bakmak gerekir,\" cümlesini seçti. Hepsi ilk günkü fikirlerini değiştirmişti; hiçbiri bundan utanmıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulübün sunum gününde sınıftan biri, \"Kısa yol ile doğru yolun farkı nedir?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen cevap vermedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " söz aldı: \"Kısa yol bazen haritada kısa görünen çizgidir. Doğru yol ise güncel işaretlerle doğrulanan, güvenli ve izinli yoldur.\" Soru soran öğrenci başını salladı. Lina da \"Bazen iki yol da güvenlidir ama biri daha uzun olabilir,\" diye ekledi. Konuşma tek cümlelik bir slogan yerine, koşullara bağlı bir kararın nasıl verildiğini gösteren küçük bir derse dönüştü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kulüp sergisi hazırlanırken beklenmedik bir ziyaretçi geldi. Vadinin yakınındaki köyde yaşayan, geçmişte orman bakım işlerinde çalışmış olan Hasan Amca, eski yol planına bakmak istedi. Planı görünce uzun uzun sustu. \"Ben çocukken burada başka bir köprü vardı,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen, \"O zaman plandaki ince çizgi gerçekten köprü mü?\" diye sordu. Hasan Amca, \"Olabilir,\" diye cevap verdi. \"Ama tam nereye çizildiğini artık hatırlamıyorum.\" "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " önce hayal kırıklığına uğradı; kesin bir cevap bekliyordu. Sonra öğretmenlerinin sözünü hatırladı: Anılar değerli ipuçları sunar fakat konumları doğrulamak için başka belgelerle karşılaştırmak gerekir. Hasan Amca'nın anlattıklarını, izin verildiği ölçüde not ettiler.\n\nMurat Bey, çocukların Hasan Amca'yı sorguya çeker gibi davranmalarını istemedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " \"Siz yanlış hatırlıyor olabilirsiniz,\" demek yerine \"Bunu başka hangi kaynaklarla karşılaştırabiliriz?\" diye sordu. Hasan Amca, köy muhtarlığındaki eski fotoğrafları işaret etti. Fotoğrafların varlığı doğrulanınca, sınıf onları incelemek için resmî izin istedi. Bir hafta sonra öğretmenleriyle birlikte arşivin dijitalleştirilmiş kopyalarına baktılar. Fotoğraflardan birinde vadinin girişine benzeyen bir yer görülüyordu, fakat çekim açısı farklıydı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafın altındaki tarihi okuyup bugünkü planla karşılaştırdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Lina iki fotoğrafı üst üste koyup aynı nokta olduklarını söylemek istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Önce işaretleri bulalım,\" diye önerdi. Ufuk çizgisi, kayaların belirgin biçimleri ve bir duvar kalıntısı karşılaştırıldı. Fotoğrafın kesin olarak köprüyü gösterdiği söylenemiyordu, ama geçmişte vadinin bu bölümünde insan kullanımının bulunduğunu destekliyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu sonucu \"kanıtlandı\" diye değil, \"desteklendi\" diye yazdı. Murat Bey bu sözcük seçimine dikkat çekti: \"Araştırmada kullandığımız kelimeler, ne kadar emin olduğumuzu doğru anlatmalı.\"\n\nHasan Amca çocukların hazırladığı raporu gördüğünde çok sevindi. \"Benim anlattığımı olduğu gibi yazmışsınız,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Ama hatırlayamadığınız yeri de boş bırakmak zorundaydık,\" diye açıkladı. Hasan Amca buna kızmadı; aksine teşekkür etti. \"Ben yıllar önce gördüklerimi anlatırım, siz de şimdi neyin görülebildiğine bakarsınız,\" dedi. Farklı kuşakların bilgileri birbirine karışmadan yan yana durabiliyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", geçmişle ilgilenmenin her söylenene inanmak ya da her söyleneni reddetmek olmadığını fark etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sunuma katılan başka bir öğrenci, \"Eski haritalar yanlışsa onları niye saklıyoruz?\" diye sordu. Lina bu soruyu ilginç buldu. \"Çünkü eski bir harita bugünkü yolu göstermese de geçmişte insanların nerelerden geçmeye çalıştığını anlatabilir,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de \"Bir belgenin artık günlük kullanım için uygun olmaması, tarihî değerini yok etmez,\" diye ekledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir anda ilk günkü çizgiyi hatırladı. Eski patikayı izlememişlerdi; ama o çizgi sayesinde geçmişteki yaşam ve yollar hakkında yeni sorular sormuşlardı.\n\nKulübün final çalışması için bir \"Karar Ağacı\" çizildi. Üstte şu soru vardı: Yön bilgileri uyuşmazsa ne yaparız? İlk dalda güvenli bir yerde durup grubu bir arada tutmak, ikinci dalda güncel resmî işaretleri ve rehberin kararını kontrol etmek, üçüncü dalda eski bilgilerle güncel bilgilerin ayrımını yapmak yazıyordu. Dalların hiçbirinde \"denemek için bilinmeyen patikaya sap\" seçeneği yoktu. Öğrenciler bu şemayı başka kulüplerle de paylaştı. Güzergâhın bir bulmaca kadar heyecanlı olabileceğini, ancak gerçek arazinin bir oyun alanı olmadığını anlatmak istiyorlardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", şemanın altına küçük bir fotoğraf koydu. Fotoğrafta yanlış yönü gösteren eski okla güncel ok aynı karede görünüyordu. \"Bu fotoğrafı ilk çektiğimde ikisinden biri bizi gizli yola götürecek sanmıştım,\" dedi. \"Şimdi aynı fotoğraf bana başka bir şeyi hatırlatıyor: Birbirine zıt iki işaret gördüğünde hızlı davranmak değil, durup doğrulamak gerekir.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafın altına tarih ekledi. Çünkü bu işaretlerin zaman içinde değişebileceğini biliyordu.\n\nLina ise kişisel defterine başka bir çıkarım yazdı. \"Yanlış koordinat seçtiğimde hemen başarısız olduğumu düşündüm. Oysa hatayı fark etmek sonraki adımı kurtardı.\" Sonra kendi örneğini matematik dersinde öğretmenine anlattı. Öğretmen sınıfa, bir haritanın başlangıç noktasını yanlış belirlemenin hesap sonuçlarını nasıl değiştireceğini sordu. Lina tahtaya çıkarak küçük bir kareli harita çizdi. Böylece vadideki yürüyüş yalnız doğa kulübünde kalmadı; sınıftaki matematik dersine de yeni bir örnek taşıdı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birkaç hafta sonra okul panosunda üç harita yan yana asıldı. Birincisi eski patika planının kopyası, ikincisi güncel resmî yürüyüş haritası, üçüncüsü ise öğrencilerin gözlem notlarını gösteren kendi çizimleriydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", üçüncünün köşesine küçük bir açıklama koydu: \"Bu bir seyir defteridir; yürüyüş için resmî rehber yerine geçmez.\" Bu uyarı, araştırma ile gerçek yaşamda izlenecek güvenlik kuralı arasındaki farkı anlatıyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " panonun önünde uzun süre kaldı. Eskiden eski bir haritada gördüğü çizgiye hemen macera gözüyle bakardı. Şimdi yine macera hissediyordu, fakat soruları çoğalmıştı: Çizgi kim tarafından, ne zaman, hangi amaçla çizilmişti? Bugün aynı çizgiyi izlemek mümkün müydü? Rehberler ne diyordu? Başına eğildiği defterde artık yalnız oklar değil, sorular da vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Birkaç hafta sonra belediyenin bakım ekibi, vadinin girişindeki eski levhanın güvenli biçimde kaldırıldığını bildiren bir duyuru yaptı. Kulüp, yanlış oku gördüklerini yetkililere iletmişti; fakat onarımın nasıl ve ne zaman yapılacağına karar verenler uzmanlardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu duyunca gururlandı. Kendileri levhayı düzeltmeye çalışmamış, yalnız sorunu doğru yere bildirmişlerdi. \"Araştırmak bazen bir şeyi kendi elinle tamir etmek değil, gereken bilgiye ulaşan kişiye haber vermektir,\" dedi.\n\nBir sonraki yıl yeni öğrenciler aynı vadiye düzenlenen izinli geziye katıldığında kulübün üç üyesi onlara kendi çalışmalarını anlattı. Başta levhaların fotoğraflarını gösterip \"Hangisine güvenirdiniz?\" diye sordular. Küçükler farklı yanıtlar verdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hiçbirini hemen yanlışlamadı. \"Peki bu işaretlerin ne zaman konduğunu biliyor muyuz?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sorunun yüzlerde oluşturduğu şaşkınlığı görünce gülümsedi. Bir zamanlar kendisi de o levhaların önünde aynı şaşkınlığı yaşamıştı. Şimdi yeni bir grubun düşünme yolculuğu başlıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O yıl "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendi gezi defterini yeniden açtığında ilk sayfada eski levhanın çizimi duruyordu. Çizginin yanına küçük bir pusula, altına da bir soru koymuştu: \"Hangisi doğru?\" Defterin son sayfasında artık daha uzun bir soru bulunuyordu: \"Hangi bilgi, hangi zamanda, hangi amaçla ve hangi kanıtla doğru sayılabilir?\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ikinci sorunun daha zor ama daha değerli olduğunu düşünüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " onun defterine bakıp \"Bir dahaki sefere ilk önce soruyu yazalım,\" dedi. Lina gülerek \"Ve başlangıç noktasını kontrol etmeyi unutmayalım,\" diye ekledi. Üçü birden güldü. Gölgeler Vadisi'nde öğrendikleri en önemli şey, yönlerini kaybettikleri zaman değil, yönlerini araştırdıkları zaman başlamıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " serginin son gününde vadiye yeniden gitmek isteyip istemediğini düşündü. Evet, isterdi. Ama asıl hoşuna giden şeyin terastaki manzara olmadığını fark etti. Birbiriyle çelişen iki okun karşısında durup acele etmeden düşünmeyi öğrenmişti. Bundan sonra yolunu seçerken yalnızca en kısa çizgiye değil, çizginin anlattığı bütün bilgilere bakacaktı. Aynı zamanda yanındaki insanların sorularını da dinleyecek, kendi kararını gerektiğinde değiştirmekten çekinmeyecekti. Ona göre gerçek keşif, haritada görünmeyen bir yeri bulmak kadar, bildiğini sandığı bir şeyi yeniden sorgulamayı öğrenmekti. Yolculuğun sonunda defterinde daha az cevap değil, daha iyi sorular vardı; bu onu korkutmuyor, sevindiriyordu. Çünkü doğru soru, yeni ve anlamlı bir keşfin başlangıcı olabilirdi; üstelik o keşif güvenle, sabırla ve arkadaşlarıyla birlikte yapılabilirdi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Vadinin girişindeki levhada kaç farklı ok vardı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İki"
+        },
+        {
+          "id": "B",
+          "metin": "Üç"
+        },
+        {
+          "id": "C",
+          "metin": "Bir"
+        },
+        {
+          "id": "D",
+          "metin": "Dört"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Levhada biri kuzeyi, diğeri tam tersini gösteren iki ok vardı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 6,
+      "metin": "Lina neden “Pusula, gideceğimiz yerin adını bilmez” dedi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Pusula yalnız yönü gösterir; hedefin yerini haritadan okumak gerekir"
+        },
+        {
+          "id": "B",
+          "metin": "Pusula bozuktu"
+        },
+        {
+          "id": "C",
+          "metin": "Lina pusulayı sevmiyordu"
+        },
+        {
+          "id": "D",
+          "metin": "Pusulanın ibresi kırıktı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Pusula yön bulmaya yarar; hedef bilgisi başka kaynaktan gelir."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 13,
+      "metin": "Aysel Hanım'a göre harita nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Belli bir zamanda derlenmiş bilgi; dünya değiştikçe güncellenmesi gerekir"
+        },
+        {
+          "id": "B",
+          "metin": "Her zaman doğru olan kesin bilgi"
+        },
+        {
+          "id": "C",
+          "metin": "Yalnız eski insanlara ait bir belge"
+        },
+        {
+          "id": "D",
+          "metin": "Sadece süs olarak yapılan çizim"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Haritalar belirli bir zamanın bilgisini taşır; değişen arazide güncellenmelidir."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "Metinde geçen ölçek ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Haritadaki uzunlukla gerçek uzunluk arasındaki oran"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür patika"
+        },
+        {
+          "id": "C",
+          "metin": "Bir pusula iğnesi"
+        },
+        {
+          "id": "D",
+          "metin": "Bir köprü türü"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Ölçek, haritadaki bir uzunluğun arazideki karşılığını gösterir."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr067_kroki",
+        "tur": "kelime",
+        "yazim": "krokisi",
+        "anlam": "Yerin yollarını ve önemli noktalarını kabaca gösteren çizim.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr067_harita_d",
+        "tur": "kelime",
+        "yazim": "harita",
+        "anlam": "Yeryüzünü ölçekli biçimde gösteren çizim.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr067_olcek",
+        "tur": "kelime",
+        "yazim": "ölçek",
+        "anlam": "Haritadaki uzunluğun gerçek uzunluğa oranı.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr067_oran",
+        "tur": "kelime",
+        "yazim": "oran",
+        "anlam": "İki büyüklüğün birbirine göre durumu.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr067_koordinat",
+        "tur": "kelime",
+        "yazim": "koordinatları",
+        "anlam": "Bir yeri haritada belirleyen sayı ya da harf çiftleri.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr067_konum",
+        "tur": "kelime",
+        "yazim": "konum",
+        "anlam": "Bir şeyin bulunduğu yer.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      },
+      {
+        "id": "hr067_yon",
+        "tur": "kelime",
+        "yazim": "yön",
+        "anlam": "Gidilecek ya da bakılacak doğrultu.",
+        "sinif_alt": 5,
+        "sinif_ust": 7
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr067_kroki",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr067_kroki"
+          },
+          {
+            "girdi": "hr067_harita_d"
+          }
+        ]
+      },
+      {
+        "ad": "hr067_olcek",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr067_olcek"
+          },
+          {
+            "girdi": "hr067_oran"
+          }
+        ]
+      },
+      {
+        "ad": "hr067_koordinat",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr067_koordinat"
+          },
+          {
+            "girdi": "hr067_konum"
+          },
+          {
+            "girdi": "hr067_yon"
+          }
+        ]
+      }
+    ]
+  }
+}

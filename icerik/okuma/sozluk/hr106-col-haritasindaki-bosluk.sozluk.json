@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr106_guzergah",
+      "tur": "kelime",
+      "yazim": "güzergâhlar",
+      "anlam": "Bir yerden başka bir yere gidilirken izlenen yol.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_rota",
+      "tur": "kelime",
+      "yazim": "rota",
+      "anlam": "Bir yolculukta izlenecek yol ve durak sırası.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_yol_agi",
+      "tur": "kelime",
+      "yazim": "yol ağı",
+      "anlam": "Bir bölgedeki birbirine bağlı yollar bütünü.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_olcek",
+      "tur": "kelime",
+      "yazim": "ölçek",
+      "anlam": "Bir haritadaki uzunlukla gerçek uzunluk arasındaki oran.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_oran",
+      "tur": "kelime",
+      "yazim": "oran",
+      "anlam": "İki büyüklüğün birbirine göre değerini gösteren bağıntı.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_olcu",
+      "tur": "kelime",
+      "yazim": "ölçü",
+      "anlam": "Bir şeyin büyüklüğünü ya da miktarını belirlemek için kullanılan birim ya da değer.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_celiski",
+      "tur": "kelime",
+      "yazim": "çelişki",
+      "anlam": "Birbirini tutmayan, birbiriyle bağdaşmayan durum ya da ifade.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_tutarsizlik",
+      "tur": "kelime",
+      "yazim": "tutarsızlık",
+      "anlam": "Sözler ya da durumlar arasındaki uyumsuzluk.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_uyum",
+      "tur": "kelime",
+      "yazim": "uyum",
+      "anlam": "Parçaların ya da sözlerin birbiriyle bağdaşması.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_belirsizlik",
+      "tur": "kelime",
+      "yazim": "belirsizliği",
+      "anlam": "Kesin olarak bilinmeyen durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_supheli",
+      "tur": "kelime",
+      "yazim": "şüphe",
+      "anlam": "Bir şeyin doğruluğundan tam emin olunmama hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_kesinlik",
+      "tur": "kelime",
+      "yazim": "kesinlik",
+      "anlam": "Şüphe bırakmayan, emin olunan durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_rahat",
+      "tur": "deyim",
+      "yazim": "rahat bir nefes aldı",
+      "anlam": "Bir kaygı geçtikten sonra rahatlamak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_rahatlamak",
+      "tur": "deyim",
+      "yazim": "rahatlamak",
+      "anlam": "Bir sıkıntı ya da kaygı sona erince içi ferahlamak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr106_ici_ferahlamak",
+      "tur": "deyim",
+      "yazim": "içi ferahlamak",
+      "anlam": "Kaygıdan kurtulup rahatlamak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr106_guzergah",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr106_guzergah"
+        },
+        {
+          "girdi": "hr106_rota"
+        },
+        {
+          "girdi": "hr106_yol_agi"
+        }
+      ]
+    },
+    {
+      "ad": "hr106_olcek",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr106_olcek"
+        },
+        {
+          "girdi": "hr106_oran"
+        },
+        {
+          "girdi": "hr106_olcu"
+        }
+      ]
+    },
+    {
+      "ad": "hr106_celiski",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr106_celiski"
+        },
+        {
+          "girdi": "hr106_tutarsizlik"
+        },
+        {
+          "girdi": "hr106_uyum"
+        }
+      ]
+    },
+    {
+      "ad": "hr106_belirsizlik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr106_belirsizlik"
+        },
+        {
+          "girdi": "hr106_supheli"
+        },
+        {
+          "girdi": "hr106_kesinlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr106_rahat",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr106_rahat"
+        },
+        {
+          "girdi": "hr106_rahatlamak"
+        },
+        {
+          "girdi": "hr106_ici_ferahlamak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

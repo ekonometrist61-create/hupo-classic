@@ -1,0 +1,1495 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr087-buzulun-kalbindeki-kayit",
+    "baslik": "Buzulun Kalbindeki Kayıt",
+    "tur": "macera",
+    "konu": "buzul_veri_kaynak_elestirisi",
+    "sinif_alt": 7,
+    "sinif_ust": 7,
+    "okuma_bandi": 3,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D16"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 7,
+      "okuma_zorlugu": 5,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D16"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "veri_hr087",
+          "tur": "lexeme",
+          "etiket": "veri",
+          "yuva": "hr087_veri",
+          "islev": "first_hint"
+        },
+        {
+          "id": "egilim_hr087",
+          "tur": "lexeme",
+          "etiket": "eğilim",
+          "yuva": "hr087_egilim",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr087",
+          "tur": "idiom",
+          "etiket": "İç geçirmek",
+          "yuva": "hr087_ic",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr087",
+          "tur": "concept",
+          "etiket": "Gözlem, tahmin ve ölçüm ayrımı",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (7. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 3553,
+        "tahmini_sure_dk": 29,
+        "sayfa_sayisi": 25,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 43,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Müzedeki bir ses kaydı “iki adım” diyor. Sosyal medyada ise “iki metre, bir günde” yazıyor. Hangisi kanıt?",
+    "durum": "taslak",
+    "fis_kodu": "HR-087"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dağ araştırmaları müzesinin en soğuk odasında gerçek bir buzul yoktu. Yalnızca koyu mavi ışıklar, uzun bir cam vitrin ve hoparlörlerden gelen yavaş çatlama sesleri vardı. Yedinci sınıf öğrencisi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", müze gezisinde bu odaya girdiği anda durmuştu. Çatlak seslerini duyunca buzun canlı bir şey gibi konuştuğunu hayal etti. "
+        },
+        {
+          "t": "isaret",
+          "kod": "bulut"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n“Bu ses gerçek mi?” diye sordu arkadaşı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ".\n\nMüze eğitmeni Umay Hanım, seslerin çeşitli buzul ortamlarında kaydedilen doğal seslerden hazırlanmış bir kolaj olduğunu anlattı. “Bir buz kütlesi hareket ederken çatlama sesleri duyulabilir. Ama burada dinlediğiniz kayıt doğrudan bu vitrinden gelmiyor,” dedi.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " vitrine yaklaştı. İçinde birkaç taş örneği, eski bir defterin fotoğrafı ve üzerinde 1994 yazan küçük bir ses kaydı simgesi vardı. Yanında kısa bir açıklama bulunuyordu: “Yüksek dağ buzulunda ölçüm yapan araştırmacının alan notları.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kulaklığı taktı. Bir kadının yorgun fakat heyecanlı sesi duyuldu: “Bugün buz kenarının yaklaşık iki adım geriye çekildiğini gördüm. Önümüzdeki yıllarda bu hareketin nereye varacağını düşünmek zor.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başını kaldırdı. “İki adım mı? Demek buzul her gün iki adım eriyor!”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kulaklığı çıkarıp ona baktı. “Kadın ‘bugün gördüm’ diyor; ne zamandan beri izlediğini bilmiyoruz. Ayrıca ölçü mü yapmış, tahmin mi etmiş?”\n\nMüze eğitmeni gülümsedi. “Tam da sergide tartışmanızı istediğimiz soru. Ses kaydı bir gözlem içeriyor, ama tek başına uzun yılların değişimini anlatmıyor.”\n\nİçerideki soğuk ışıklar hâlâ parlıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", o anda buzdan daha ilginç bir şey bulduğunu düşündü: Yıllar önce söylenmiş birkaç cümle, bugün hâlâ insanları nasıl farklı sonuçlara götürebiliyordu?\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " müzeden çıkarken hediyelik eşya köşesinde satılan küçük bir buz kristali modelini eline aldı. Kristalin içindeki ince çizgiler ona ses kaydındaki çatlama seslerini hatırlatıyordu. Etiketin üzerinde “Buzulların belleği” yazıyordu. “Gerçekten bellekleri var mı?” diye sordu. Umay Hanım, bazı buzul katmanlarının geçmiş çevre koşullarına ilişkin izler taşıyabileceğini, ama bunları okumak için uzman ölçümleri gerektiğini anlattı. “Buz insan gibi hatırlamaz,” dedi. “Biz belirli maddelerin ve katmanların nasıl oluştuğunu araştırarak geçmişe dair sonuç çıkarırız.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", sergi salonunun duvarındaki iki fotoğrafı incelemeye devam ediyordu. İkisinin altında aynı dağın adı vardı, ama fotoğraflar farklı açılardan çekilmişti. “İlkinde buzul büyük, ikincisinde küçük,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " karşılaştırmadan önce çekim tarihlerini ve bakış açılarını bulmaları gerektiğini hatırlattı. Bir fotoğrafın uzaktan, ötekinin yakından çekilmiş olması görüntüdeki alanı olduğundan farklı gösterebilirdi. Umay Hanım bunu gösteren küçük bir ekran açtı. Aynı dağ, kamera açısı değiştikçe başka bir biçimde görünüyordu.\n\nGezinin sonunda öğrencilerden müzede en çok merak ettikleri şeyi yazmaları istendi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " “Buz kaç santimetre eridi?” diye yazdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise “Bir buzulun değiştiğini güvenilir biçimde nasıl anlarız?” sorusunu seçti. İki soru birbirine benziyordu; fakat ikinci sorunun cevaplanması için ölçme yöntemlerine, tarihlere ve kaynaklara bakmak gerekiyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu nedenle ödevin yalnız bir bilgi araştırması olmayacağını hissediyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okula döndüklerinde fen öğretmenleri onlara küçük bir araştırma görevi verdi. Müzenin açık "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr087_veri"
+        },
+        {
+          "t": "metin",
+          "v": " sayfasında bir dağ buzuluna ait ölçüm tabloları bulunuyordu. Öğrenciler aynı bölgeye ait farklı yılların bilgilerini karşılaştıracaktı. Çalışmayı yaparken gerçek araştırma cihazlarına dokunmayacak, yayımlanmış veri setleriyle çalışacaklardı.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk bulduğu grafiği açtı. Grafik 1994 ile 2024 arasındaki değişimi gösteriyordu, ama birkaç yılın karşısı boştu. “Eksik yıllarda buz hiç değişmemiş mi?” diye sordu.\n\n“Ölçüm yapılmamış olabilir,” dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Verinin bulunmaması, değişimin olmadığı anlamına gelmez.”\n\nÖğretmenleri, farklı yıllara ait uydu görüntülerini ve saha ölçümlerini aynı tür veri sanmamaları gerektiğini anlattı. Bir görüntü buzun görünen sınırını gösterebilir, başka bir ölçüm kalınlığı veya kütle değişimini değerlendirebilirdi. Bu bilgiler bağlantılıydı fakat birbirinin yerine geçmiyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " verileri karşılaştırmak için büyük bir tablo çizdi. Bir sütuna yıl, ikinciye ölçüm türü, üçüncüye birim, dördüncüye de bilgi kaynağını yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " buna “güvenilirlik” sütunu eklemek istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tereddüt etti. “Bir kaynak yalnız uydu görüntüsü olduğu için güvenilir değil diyemeyiz. Önce yöntemine bakalım.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğretmenleri bu ayrımı destekledi. “Veriyi anlamak, tek bir kaynağa puan vermekten ibaret değildir,” dedi. “Hangi soruyu hangi yöntemle yanıtladığımızı bilmek gerekir.”\n\nAraştırma ilerledikçe ortaya küçük bir tuhaflık çıktı. 1994 tarihli ses kaydıyla aynı yılın çizelgesindeki yer adı farklı görünüyordu. Ses kaydında “Göl Buzulu”, tabloda “Doğu Sırtı” yazıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunların iki ayrı yer olduğundan emin oldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise henüz emin değildi. Dağlardaki yer adları farklı araştırma ekiplerince değişik biçimlerde kullanılmış olabilirdi.\n\nMüze görevlisine soru göndermeye karar verdiler. Sorunun ne olduğunu kısa ve açık anlattılar; ses kaydının gerçek veriye nasıl bağlandığını öğrenmek istiyorlardı. Yanıt gelene kadar yorumlarını kesin sonuca dönüştürmediler.\n\nİlk veri tablosunu hazırlarken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir başka sıkıntıyla karşılaştı. İki yılın ölçümü farklı birimlerle yazılmıştı. Birinde alan kilometrekare, diğerinde hektar cinsindendi. Başlangıçta birini diğerinden küçük gördü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sayıları doğrudan karşılaştırmadan önce birimleri aynı düzleme getirmeleri gerektiğini söyledi. Öğretmenleri sınıfta bu dönüşümü nasıl yapacaklarını gösterdi. Rakamların kendileri değil, yanlarındaki birimler de bilgi taşıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Daha sonra eski raporlardan birinde ölçüm alanının tanımı değişmiş olduğunu fark ettiler. Önce yalnız ana buzul dilinin sınırı çizilmiş, sonraki raporda çevredeki küçük buz parçaları da incelenmişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " önce bütün verileri tek çizgiyle birleştirmek istedi, fakat "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ölçüm kapsamının değişmesini not etmeyi önerdi. Öğretmen bu kararı destekledi. “Bir grafik temiz görünsün diye yöntem farkını gizleyemeyiz,” dedi.\n\nSınıf arkadaşları bir öğle arasında projeyi dinlerken “Siz her şeyi şüpheye çevirmişsiniz,” diye takıldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gücenmedi. “Şüphe etmekle her şeyi reddetmek aynı değil,” dedi. “Biz hangi bilginin hangi koşulda doğru olduğunu anlamaya çalışıyoruz.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da söz aldı: “Eğer iki tablo aynı birimi kullanıyorsa karşılaştırabiliriz. Farklı yöntemle hazırlanmışlarsa bunun ne anlama geldiğini açıklamalıyız.” Arkadaşları bu cevabı düşündü. "
+        },
+        {
+          "t": "vurgu",
+          "v": "Bilgiye güvenmek, onu sorgusuz tekrarlamak demek değildi"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O hafta sınıf grubunda bir görsel dolaşmaya başladı. Üstünde büyük harflerle “BUZUL BİR GÜNDE İKİ METRE YOK OLDU” yazıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " görseli görünce kızdı. “Müzedeki kaydımızı almışlar!”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bağlantıyı açtı. Görselde ses kaydından bir cümle bulunuyor, altında da ürkütücü bir fotoğraf yer alıyordu. Ancak görselin kim tarafından hazırlandığı belli değildi. Fotoğraftaki yerin adı da yoktu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu sınıfta tartışmaya açmayı önerdi.\n\nBir arkadaşları, “Ama buzullar gerçekten eriyor, bu başlık o kadar önemli mi?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sakince cevap verdi. “Önemli. Gerçek bir sorunu yanlış bilgiyle anlatırsak insanlar diğer doğru bilgilere de güvenmeyebilir.”\n\nÖğretmenleri, paylaşımın kaynağına gitmelerini istedi. Müzedeki kayıtta “iki adım” ifadesi, belirsiz bir gözlemi anlatıyordu. Paylaşım bunu “iki metre”ye çevirmiş, üstelik “bir günde” ekleyerek kesin bir ölçüm gibi sunmuştu. Oysa kayıt boyunca böyle bir açıklama yoktu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " utandı. Sabah aynı paylaşımı yakınlarına göndermek üzereydi. Neyse ki "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " durdurmuştu. “Ben de korktuğum için hemen inanmıştım,” dedi. “İşin kötü yanı, paylaşımın beni etkileyebilmesi için gerçek dışı olması bile gerekmiyormuş. Yalnız bazı yerlerinin değiştirilmesi yetmiş.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki metni yan yana koydu: Gözlemcinin söylediği ve paylaşımın iddia ettiği. Sınıf, eksiltilen ve eklenen kelimelerin anlamı nasıl değiştirdiğini gördü. Böylece araştırma yalnız iklimle ilgili olmaktan çıkmış, haberleri nasıl okuduklarıyla ilgili bir soruya dönüşmüştü.\n\nYanlış başlığın yayıldığı günlerde okulda bir tartışma çıktı. Bazı öğrenciler konuyla ilgili bütün kötü haberlerin abartılı olduğunu savunuyor, bazıları ise en korkutucu paylaşımı bile doğru sanıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", iki yaklaşımın da iyi bir yol olmadığını düşündü. Verileri gereksiz yere küçümsemek de onları ölçülmüş olandan daha korkutucu göstermek de insanların kararlarını etkileyebilirdi.\n\nFen öğretmeni küçük gruplara üç haber başlığı verdi. Birinde “Bütün buzullar yarın yok olacak” gibi kesin ve yanlış bir ifade vardı. İkincisi, belirli bir bölgede belirli yıllar arasında gözlenen değişimi söylüyordu. Üçüncüsü ise hiçbir kaynak vermeden “Bilim insanları şaşkın” diyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " grubu başlıkları yalnız duygu uyandırma gücüne göre sıralamadı. Tarih, yer, ölçüm ve kaynak açıklığını karşılaştırdı. En sakin başlık, en çok doğrulanabilir ayrıntı içeren başlıktı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " okul gazetesine kısa bir düzeltme yazısı gönderdi. Yazıda müzedeki ses kaydının gerçek cümlesini aktardı; yanlış paylaşımın hangi sözcükleri değiştirdiğini gösterdi. Ancak görseli sürekli yeniden paylaşmadı; çünkü yanlış başlığın dolaşımını artırmak istemiyordu. Gazete editörü, düzeltmenin başına “Sıcak bir konu için soğukkanlı kontrol” yazdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başlığa gülümseyerek baktı. Bu kez kelime oyunu bilgiyi çarpıtmıyordu.\n\nYazı yayımlanınca bir öğrenci "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": " “Hata yaptığını açıklamak cesaret ister,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " omuz silkti. “Ben de yanlış anlamaya yakındım,” dedi. “Bence önemli olan bunu fark edince düzeltmek.” Bu cevap "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " hoşuna gitti. Araştırmaları yalnız buzulun kendisiyle değil, insanların yanlış bilgiler karşısındaki davranışlarıyla da ilgiliydi.\n\nMüze görevlisi yanıt verene kadar "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir gece, ailesiyle eski fotoğraflara baktı. Babası çocukluğunda yüksek dağlarda yürüyüş yapan bir kulübe katılmıştı. Albümde bulutların altında parlayan kar alanları vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafları görünce, “Bunları bugünkü görüntülerle karşılaştırabilir miyiz?” diye sordu. Babası önce kameranın yerini hatırlamaya çalıştı. Çoğunun tam konumunu bilmiyordu. Bazısında geniş açı kullanılmış, bazısında ufuk çizgisi kadrajın dışında kalmıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu farkları not etti. “Fotoğraflar güzel,” dedi, “ama ölçüm için yeterli değil.” Babası bunu üzüntüyle değil, merakla karşıladı. “O zaman araştırmacılar neden aynı yere tekrar tekrar gidiyor, daha iyi anlıyorum,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", belli noktaların düzenli ve açıklanmış yöntemlerle izlenmesinin neden önemli olduğunu onunla birlikte düşündü. Tek kare bir anı saklayabilirdi; yıllar boyunca aynı ölçümün yapılması ise değişimin yönünü anlamaya yardımcı olabilirdi.\n\nErtesi gün "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafları gördüğünde birinde karlı, ötekinde daha az karlı bir dağ olduğuna dikkat çekti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " fotoğrafın mevsimini kontrol etti. Biri kışın, diğeri yaz sonuna yakın çekilmişti. Buzul ile mevsimlik kar örtüsünün de aynı şey olmadığını anlamışlardı. Çocuklar yanlış karşılaştırmaları ayrı bir tabloya yazdı. İlk başta bu tablo hatalarından oluştuğu için can sıkıcıydı. Sonra her yanlış eşleştirmenin onlara doğru bir soru öğrettiğini fark ettiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Müzeden yanıt geldiğinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çoktan başka sorular hazırlamıştı. Umay Hanım, eski ses kayıtlarının sayısallaştırılması sırasında bazı yer adlarının bugünkü haritalardakinden farklı kullanıldığını açıkladı. “Göl Buzulu” adı yerel anlatılarda geçiyor, bilimsel raporlar ise aynı kütlenin belirli bir bölümünü “Doğu Sırtı” olarak adlandırıyordu. Ancak ikisini bire bir eşitlemeden önce koordinatlar ve ölçüm noktaları kontrol edilmeliydi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir harita açıp iki işareti yan yana koydu. Aralarında epey mesafe vardı. “Demek farklı yerler,” dedi.\n\nUmay Hanım'ın gönderdiği ek notlar daha ayrıntılıydı. İlk işaret tüm buzul alanına, ikincisi belirli bir ölçüm istasyonuna karşılık geliyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " haritadaki sembolleri karşılaştırınca yanılmış olduğunu anladı. Aynı alanın farklı parçaları bazen farklı isimlerle anılabiliyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ses kaydındaki araştırmacının defter fotoğrafını yeniden inceledi. Kadın buz kenarına yakın bir yerde duruyor, çevredeki taşları tarif ediyordu. Fotoğrafın altında kesin konum bilgisi yoktu. Bu nedenle eski gözlemi bugünkü uydu görüntüsüyle milimetrik olarak üst üste koymaya kalkmak doğru değildi. Öğretmenleri, güvenilir karşılaştırmanın aynı tür ve doğrulanabilir noktalar üzerinden yapılması gerektiğini vurguladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıfın önündeki ekranda uzun dönemli ölçümler gösterildi. Yıllar arasında iniş çıkışlar olsa da genel "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr087_egilim"
+        },
+        {
+          "t": "metin",
+          "v": " buz alanının küçülmesi yönündeydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ilk kez “eğilim” kelimesinin neden önemli olduğunu anladı. Tek bir yılın ölçümü bütün hikâyeyi anlatmazdı; çok sayıda gözlemi birlikte değerlendirmek gerekiyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", müzedeki eski sesi tekrar dinledi. Artık onu kesin bir gelecek tahmini gibi duymuyordu. Sesin içinde yalnız belirsizliğe rağmen gözlem yapmaya çalışan bir insan vardı.\n\nMüze ile bağlantılı çevrim içi görüşmede araştırmacı Selda Hanım öğrencilerin sorularını yanıtladı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ses kaydını ilk dinlediğinde araştırmacının neden iki adım dediğini merak etmişti. Selda Hanım, alan çalışanlarının bazen o anda gördükleri değişimleri günlük dilde kaydettiğini, bunun her zaman yayımlanmış ölçüm anlamına gelmediğini açıkladı. Kaydın yanında tarih, konum ve kullanılan yöntem açık değilse daha geniş sonuçlara gitmenin doğru olmadığını söyledi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Peki yıllardır süren ölçümler ne gösteriyor?” diye sordu. Selda Hanım onlara belirli bir dağ sistemi için yayımlanan uzun dönemli araştırmaların özetini gösterdi. Farklı yıllarda değişim hızları aynı değildi; ama birçok bölgede buz kütlelerinde gerileme gözleniyordu. “Her yerde aynı oranda ve aynı anda olduğunu söylemeyiz,” dedi. “Bu yüzden bölge ve zaman belirtiriz.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " konuşmanın sonunda bir şey daha sordu: “Bilim insanları emin olmadıkları şeyleri neden açıkça söylüyor?” Selda Hanım, bilimsel güvenilirliğin her ayrıntıyı bildiğini iddia etmekten değil, belirsizliğin sınırını göstermekten geçtiğini anlattı. “Eğer bir şeyi henüz ölçmediysen, ölçmüş gibi davranamazsın. Bu, doğru bildiklerini de korur.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözleri not ederken müzedeki kayıt sahibini düşündü. Kadın yıllar önce bir buzulun kenarında durmuş, gördüklerini aktarmıştı. Geleceği tek başına bilmesi beklenemezdi. Onun sesi bir sorunun başlangıcı olabilirdi; cevabın tamamı değil."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bilim gününe hazırlık sürerken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " karşısına bir sorun daha çıktı. Kullandıkları uydu görüntülerinin birinde sarı bir nokta bulunuyordu; açıklamasında “İstasyon A” yazıyordu. Ancak çizelgede yalnız “İstasyon B” ve “İstasyon C” görünüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bunu baskı hatası saydı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", ekranın köşesindeki küçük tarihe baktı. Harita 2008'de hazırlanmış, çizelge ise 2019'da güncellenmişti. Bir istasyonun taşınmış olabileceğini düşündü.\n\nMüze arşivinin iletişim bölümüne girdiler. Sorularını hazırlamadan önce aynı ekranda daha eski bir rapor buldular. Raporda A istasyonunun taş düşme tehlikesi nedeniyle ölçümler için uygun görülmediği, daha güvenli bir noktaya kurulan B istasyonuyla çalışmanın sürdüğü anlatılıyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " rahatladı. “Demek ortada gizem yokmuş,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " katılmadı. “Gizem vardı, ama cevabı bir canavar değil, küçük harflerle yazılmış bir açıklamaymış.”\n\nİstasyonların yerinin değişmesi onları başka bir güçlükle karşılaştırdı. Eski ve yeni istasyon aynı yükseklikte değildi; hava sıcaklığı ölçümleri bu nedenle bire bir yan yana konmamalıydı. Fen öğretmenleri, istasyon konumunun, kullanılan cihazın ve ölçüm saatinin sonuçlar üzerinde etkili olabileceğini söyledi. “Bilimi zorlaştıran şeylerden biri budur,” dedi. “Ama aynı zamanda güvenilir kılan da bu ayrıntılardır.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bilim günü panosunun bir köşesine dev bir ok çizmek istedi: “ESKİ İSTASYON YANLIŞ!” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " buna karşı çıktı. Eski istasyon, kullanıldığı dönemde yararlı ölçümler sağlamıştı. Sorun, onun verisini başka konumdaki ölçümlerle sanki tamamen aynı koşullarda alınmış gibi değerlendirmekti. Başlığı değiştirdiler: “Ölçüm yeri değişince sorumuz da değişir.”\n\nAraştırma ilerlerken sınıfta küçük bir anlaşmazlık çıktı. Grup arkadaşları Deniz, bütün bu açıklamaların dinleyiciyi sıkacağını söyledi. “Hikâye anlatıyoruz diye geldik, tablo açıklıyoruz,” diye yakındı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " onu anlıyordu. Kendisi de müzeye gittiğinde ilk önce mavi ışıkların ve çatlama sesinin etkisinde kalmıştı. İnsanlar bir gösterinin içinde merak etmek istiyordu. Fakat güzel bir sunum uğruna bilinmeyenleri saklamak istemiyordu.\n\nÜçü okulun boş toplantı odasında prova yapmaya karar verdi. Deniz girişte ses kaydını dinletti, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sosyal medyada yayılan yanlış başlığı gösterdi, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " da iki metnin farkını açıkladı. Ardından dinleyici rolündeki öğretmen bir soru sordu: “Peki araştırmacının gördüğü buzul alanı bugün tam olarak ne kadar küçülmüş?”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir an durdu. Çalıştıkları veri seti bazı yılları kapsıyordu, ayrıca bütün ölçümlerin yöntemi aynı değildi. Ellerindeki malzemeyle tek bir kesin sayı söylemeleri yanlış olacaktı. “Bu soruya güvenilir bir sayı vermek için aynı alanı aynı yöntemle izleyen araştırmalara bakmamız gerekiyor,” dedi. Deniz başını salladı. “Bir sunumda ‘şu anda bilmiyoruz’ demek insanı küçük düşürmüyormuş,” dedi. “Daha sağlam hissettiriyormuş.”\n\nErtesi prova için Deniz farklı bir giriş hazırladı. Önce sınıfa kulaklığı uzatacak, kaydı dinletecek, ardından soracaktı: “Bu ses bize neyi kesin söylüyor, neyi söylemiyor?” Öğretmen bunun merak uyandırdığını ama kimseyi yanıltmadığını belirtti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", sunumun asıl gücünün değiştiğini hissetti. Artık insanlar şaşırtıcı bir habere teslim olmayacak, onu birlikte çözmeye davet edilecekti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bilim gününden iki gün önce okul gazetesi için hazırlanan tanıtım afişi basıldı. Afişte buz dağının önünde yürüyen üç öğrenci silueti vardı. Altında “Buzulların son günü mü?” yazıyordu."
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr087_ic"
+        },
+        {
+          "t": "metin",
+          "v": " Bir kez daha merakı korkuyla karıştırmışlardı.\n\nGazetenin editörü Ece, çizimi yapan öğrencinin uzun uğraş verdiğini anlattı. Afişi tamamen kaldırmak kimseye iyi hissettirmeyecekti. Üçü kütüphanede bir araya gelip çözüm aradı. Ece başlıktaki soru işaretinin yanlış anlamayı önlemeye yettiğini düşünüyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise bir cümlenin soru biçiminde yazılmasının onun çağrıştırdığı yargıyı ortadan kaldırmadığını söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " iki alternatif sundu: “Buzulun Geçmişinden Gelen Ses” ve “Bir Ses Kaydının Peşinde.”\n\nEce ilkini seçti. Başlık hem serginin gizemini taşıyor hem de sonucu önceden ilan etmiyordu. Ressam arkadaşları ise dağ siluetinin yanına bir ölçüm defteri çizdi. Afiş eskisinden daha az gürültülü, ama daha davetkâr görünüyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " akşam evde büyükbabasına sergiyi anlattı. Büyükbabası yıllar önce aynı dağ silsilesinin eteklerinde yürüdüğünü söyledi. “Oradaki kar, çocukluğumda daha çoktu sanki,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu anıyı sevdi. “Bunu sergide anlatabilir miyim?” diye sordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Anlat,” dedi büyükbabası. “Ama yılları birbirine karıştırıyor olabilirim.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " birinci elden tanıklığın değerini düşündü. Büyükbabasının deneyimi gerçekti; ancak anıların bellekten aktarıldığını ve ölçüm yerini kesinleştirmediğini belirtmek gerekiyordu. Ertesi gün panoya yeni bir bölüm ekledi: “İnsanların anlattığı / araçların ölçtüğü.” Biri diğerinin düşmanı değildi. Aksine, tanıklık yeni sorular buldurabilir, ölçüm de bu soruların sınanmasına yardımcı olabilirdi.\n\nSergi düzenlenirken "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " iki fotoğrafı tekrar yan yana koydu. Bu kez fotoğrafın altına yalnız tarih yazmadı; görüntü açısını, kaynağın erişildiği yeri ve belirsiz gördükleri noktaları da ekledi. Bir akranı “Bu kadar dipnotu kim okuyacak?” diye takıldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Belki herkes okumaz,” dedi. “Ama merak eden biri cevabın izini sürebilsin.”\n\nSon provada ışıkları söndürmeden önce "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sınıfa yeni bir ses dinletti. Bu, buzun çatlama sesi değil, müzedeki arşiv görevlisinin açıklamasıydı. Görevli bir zamanlar kaybolduğu sanılan defter sayfalarının aslında başka bir kutuya taşındığını anlatıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kaydı seçmesinin nedenini açıkladı: “Bir kaydın yanlış etiketlenmesi bize bir şeyin yok olduğu izlenimini verebilir. Bazen doğru soru ‘Nereye kayboldu?’ değil, ‘Nereye kondu?’ olur.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Deniz ayağa kalkıp işaret fişeği gibi yükselen kolunu indirdi. “Başta bir felaket hikâyesi kurmak istemiştim,” dedi. “Şimdi elimizde daha iyi bir macera var. Herkesin cevabı hemen bulamadığı ama bulmak için çalıştığı bir macera.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ertesi gün kürsüye çıkarken heyecanlandı. Kendi sorularının da sınanacağını biliyordu. Fakat ilk kez, birini etkilemek için en büyük sözü söylemesi gerekmediğini anlıyordu. İyi seçilmiş bir soru bazen bütün salonu susturabilirdi.\n\nSınıf grubunda yanlış görselle ilgili tartışma sürerken bir arkadaşları "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " özel mesaj gönderdi. “İklim meselesi beni korkutuyor,” yazıyordu. “Bütün bunları okuyunca hiçbir şey yapamayacağımızı düşünüyorum.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " cevabı hemen yazmadı. Önce arkadaşının duygusunu hafife almamak gerektiğini düşündü. Ona korkunun anlaşılabilir olduğunu, ancak tek bir paylaşımın bütün geleceği anlatamayacağını söyledi. Ertesi gün öğretmenleriyle konuşup konuyu sınıfta sakin biçimde ele almayı önerdiler.\n\nÖğretmenleri, çevre sorunlarını konuşurken iki uçtan kaçınmaları gerektiğini anlattı: Birinde sorun görmezden geliniyor, diğerinde gelecekle ilgili kesin felaket cümleleri kuruluyordu. “Verilerin gösterdiği değişimleri ciddiye alırken çözüm arama becerimizi de koruyabiliriz,” dedi. Öğrenciler enerji tasarrufu, bilimsel araştırmaları destekleme ve yerel çevre çalışmaları hakkında hangi seçeneklerin kendi yaşamlarına uygun olduğunu tartıştı. Her önerinin etkisinin aynı olmadığını, bazı sorunların ortak kurum kararları gerektirdiğini kabul ettiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", arkadaşlarına yanlış bilgiyle mücadele etmek için sürekli korkutucu fotoğraflar paylaşmanın işe yaramayabileceğini söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", kaynağı açık bir grafik ve anlaşılır bir açıklamanın daha yararlı olabileceğini ekledi. Böylece sınıf, ses kaydının tetiklediği korku ve merakı, daha düşünceli bir araştırma yoluna yönlendirmeye başladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okulun bilim gününde iklim köşesini "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hazırladı. Panonun ortasına iki büyük görsel yerleştirdiler: Biri doğrulanmış yıllara ait bir grafik, diğeri de yanlış sosyal medya paylaşımının düzeltilmiş örneğiydi. Her ikisinin yanında kaynak, tarih ve ölçüm türü yazıyordu.\n\nEtkinliği gezen bir öğrenci, “Buzulların erimesi neden bizi ilgilendiriyor? Biz dağda yaşamıyoruz,” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", buzulların su döngüsü ve bazı bölgelerdeki su kaynaklarıyla ilişkili olduğunu anlattı; ancak her şehir için aynı sonuçları söylemenin doğru olmayacağını ekledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " da çevresel değişimlerin yalnız uzak yerlerde yaşayanları değil, canlıları ve ekosistemleri de etkileyebileceğini söyledi.\n\nBir ziyaretçi korkutucu bir grafik görünce “Her şey bitti mi?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun kolay bir soru olmadığını düşündü. “Hayır,” dedi, “ama önemli bir sorun var. Doğru bilgiyle hareket etmek, korkup hiçbir şey yapmamaktan daha yararlı.” Panolarına bireysel ve toplumsal düzeyde bilimsel bilgiye dayalı adımların araştırılması gerektiğini de yazmışlardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " sunumun sonunda müzedeki ses kaydını yeniden açtı. Bu kez kaydın altına büyük harflerle iddia değil, soru yazdı: Bir gözlemi zaman içindeki değişimden nasıl ayırırız? Ziyaretçilerin bazıları hemen cevap vermedi; grafiğe tekrar baktı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tam da bunu istiyordu. İnsanlar yalnız korkutucu bir başlığı hatırlamasın, neye baktıklarını da düşünsünler.\n\nGün bitiminde Umay Hanım'dan kısa bir mesaj geldi: “Araştırmamızı dikkatle anlatmanıza sevindim. Bir ses kaydının sınırlarını göstermek, onun değerini azaltmaz.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " mesajı "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yonelme",
+          "yedek": "bir arkadaşa"
+        },
+        {
+          "t": "metin",
+          "v": " okudu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " mavi ışıklı müze odasını hatırladı. İlk gün buzun sesi ona esrarengiz gelmişti. Şimdi o sesin, gerçeği arayan insanların sorularıyla birlikte anlam kazandığını düşünüyordu.\n\nBilim gününden sonra sınıftaki küçük okuma kulübü, konuyu bir macera hikâyesine dönüştürmek istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ilk taslağa, buzun içinde yüzlerce yıldır saklanan gizli bir makine ekledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise bunu fantastik kurgu olarak yazacaklarsa başta açıkça belirtmeleri gerektiğini söyledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " buna karşı çıkmadı. Artık gerçek verilerle hayalî olayların birbirine karışmamasını önemli buluyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hikâyede iki kardeş buzun altında bir ses duyuyor, önce eski bir canavarın uyandığını sanıyordu. Sonra bunun hareket eden buz kütlesinden gelen doğal bir ses olabileceğini araştırıyorlardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bu kısmın yanında okuyuculara kısa bir kavram kartı önerdi: “Buzul: Uzun süre boyunca birikip sıkışmış karın oluşturduğu ve kendi ağırlığıyla hareket edebilen büyük buz kütlesi.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " açıklamanın hikâyeyi durdurmasından çekindi. İkisi açıklamayı ayrı bir kartta sundu; isteyen okur dokunup görebilecekti.\n\nBir hafta sonra kulüpteki küçük bir öğrenci, “Buzul gerçekten konuşur mu?” diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “İnsan gibi konuşmaz,” dedi. “Ama ondan sesler duyabiliriz; bilim insanları da o sesleri ve başka izleri araştırabilir.” Küçük öğrenci başını salladı. “O zaman ben de hikâyeyi okumak istiyorum.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu cevabı duyunca sevindi. Hayal gücü ile dikkatli öğrenme birbirini engellemek zorunda değildi.\n\nBilim gününden birkaç gün sonra "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " müzeden yeni bir haber geldi. Arşive eklenen bir dosyada eski ses kaydının yanında el yazısıyla tutulmuş alan notlarının açıklamaları bulunuyordu. Notlarda “iki adım” sözünün kesin ölçüm olmadığını gösteren işaretler vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu öğrendiğinde rahatladı. Ama asıl sevinci, daha önceki dikkatli yorumlarının yeni bilgiyle uyumlu olması değildi. Yeni belge geldiğinde görüşlerini yeniden kontrol etmeye hazır olmalarıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " ise grafiklerini güncelledi. Eskiden kesin çizgiler arasında boşluk istemezdi. Şimdi ölçüm yapılmayan yılları farklı işaretlerle gösteriyor, karşılaştırma koşullarını not ediyordu. “Böyle yapınca çizim daha karmaşık görünüyor,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Ama daha dürüst,” diye cevap verdi.\n\nKış geldiğinde ikisi okul bahçesinde yağan karı izledi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " kar tanelerini avucuna alıp erimelerini seyretmeye çalıştı. “Bu küçük karın binlerce yıl kalmasını hayal etmek zor,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ona buzulların uzun zaman içinde oluştuğunu hatırlattı. Sonra ikisi de sessizleşti. Dağların üzerindeki buzları her gün göremiyorlardı, fakat insanın bir şeyi görememesi onun yok olduğu anlamına gelmiyordu. Onları araştırmaya değer kılan da belki buydu.\n\nOkulun yıl sonu sergisinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", en sevdiği notu panoya astı: “Bilmediğin şeyi açıkça söylemek, bildiğini değersizleştirmez.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hemen yanına şunu ekledi: “Bir veriyi anlatırken tarihini, ölçümünü ve kaynağını unutma.” İkisi cümleleri okuyunca müzedeki ilk ses kaydını hatırladı. O gün buzun çatlama sesleri bir bilinmezlik gibi gelmişti. Şimdi o sesler, iyi sorularla başlayan bir araştırmanın hatırasına dönüşmüştü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " müzeye yeniden gittiğinde ilk günkü ses kaydını başka kulaklarla dinliyormuş gibi hissetti. O cümle yine aynıydı. Değişen ses değil, onu dinleyenin sorduğu sorulardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", kaydın yanına küçük bir açıklama yerleştirildiğini gördü. Artık tarih, bağlam ve ölçüm sınırı daha açıktı. Bir müze etiketi bile yeni bilgiler ışığında daha dürüst hâle gelebiliyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " son notunu yazdı: Bir buzulun durumu hakkında iyi soru sormak, yalnız buzları değil, kendi düşünme biçimini de tanımayı gerektirir. Bundan sonra karşısına çıkan her çarpıcı grafik, onun için hem bir bilgi kaynağı hem de dikkatle incelenecek bir anlatı olacaktı."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr087_ic": [
+      {
+        "t": "kahraman",
+        "hal": "yalin"
+      },
+      {
+        "t": "metin",
+        "v": " başlığa bakıp iç geçirdi."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Ses kaydındaki kadın buzun kenarının ne kadar çekildiğini söylüyor?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yaklaşık iki adım"
+        },
+        {
+          "id": "B",
+          "metin": "İki metre"
+        },
+        {
+          "id": "C",
+          "metin": "Bir kilometre"
+        },
+        {
+          "id": "D",
+          "metin": "Yirmi santimetre"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Kadın, buz kenarının yaklaşık iki adım geriye çekildiğini gördüğünü söylüyor."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 4,
+      "metin": "Ada'nın bu sözünden çıkan sonuç nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Veri eksikliği, değişimin olmadığı anlamına gelmez"
+        },
+        {
+          "id": "B",
+          "metin": "Veri yoksa değişim kesinlikle yoktur"
+        },
+        {
+          "id": "C",
+          "metin": "Veriler hiç önemli değildir"
+        },
+        {
+          "id": "D",
+          "metin": "Ölçüm yapmak gereksizdir"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Bir değişimin kaydedilmemiş olması, değişimin gerçekleşmediğini kanıtlamaz."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 6,
+      "metin": "Ada'nın bu sözüne göre sağlıklı şüphe nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bilgiyi kanıta göre sınamak; her şeyi reddetmek değil"
+        },
+        {
+          "id": "B",
+          "metin": "Her bilgiyi yalan saymak"
+        },
+        {
+          "id": "C",
+          "metin": "Hiçbir bilgiye bakmamak"
+        },
+        {
+          "id": "D",
+          "metin": "Arkadaşları suçlamak"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Şüphe, bilgiyi kanıta göre sınamaktır; her şeyi reddetmek ise başka bir tutumdur."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 6,
+      "metin": "Metinde geçen koşul ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir durumu etkileyen ortam ve şartlar"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür dağ"
+        },
+        {
+          "id": "C",
+          "metin": "Bir kayıt cihazı"
+        },
+        {
+          "id": "D",
+          "metin": "Bir grafik türü"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Koşul, bir olayın gerçekleştiği ortam ve şartlardır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr087_veri",
+        "tur": "kelime",
+        "yazim": "veri",
+        "anlam": "Gözlem ya da ölçümle elde edilen ham bilgi.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr087_olcum",
+        "tur": "kelime",
+        "yazim": "ölçüm",
+        "anlam": "Bir şeyin miktarını ya da büyüklüğünü belirleme işi.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr087_tahmin_v",
+        "tur": "kelime",
+        "yazim": "tahmin",
+        "anlam": "Ölçmeden yapılan yorum.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr087_egilim",
+        "tur": "kelime",
+        "yazim": "eğilim",
+        "anlam": "Uzun süre gözlenen genel yön.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr087_gidis",
+        "tur": "kelime",
+        "yazim": "gidiş",
+        "anlam": "Bir olayın geliştiği yön.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr087_rastlanti",
+        "tur": "kelime",
+        "yazim": "rastlantı",
+        "anlam": "Plansız, tesadüfen olan durum.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr087_ic",
+        "tur": "deyim",
+        "yazim": "iç geçirdi",
+        "anlam": "Üzüntüyle ya da endişeyle derin bir nefes vermek.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr087_icini_cekmek",
+        "tur": "deyim",
+        "yazim": "içini çekmek",
+        "anlam": "Üzüntüyle derin nefes almak.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      },
+      {
+        "id": "hr087_ici_rahatlamak",
+        "tur": "deyim",
+        "yazim": "içi rahatlamak",
+        "anlam": "Endişesi geçip rahatlamak.",
+        "sinif_alt": 6,
+        "sinif_ust": 8
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr087_veri",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr087_veri"
+          },
+          {
+            "girdi": "hr087_olcum"
+          },
+          {
+            "girdi": "hr087_tahmin_v"
+          }
+        ]
+      },
+      {
+        "ad": "hr087_egilim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr087_egilim"
+          },
+          {
+            "girdi": "hr087_gidis"
+          },
+          {
+            "girdi": "hr087_rastlanti"
+          }
+        ]
+      },
+      {
+        "ad": "hr087_ic",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr087_ic"
+          },
+          {
+            "girdi": "hr087_icini_cekmek"
+          },
+          {
+            "girdi": "hr087_ici_rahatlamak"
+          }
+        ]
+      }
+    ]
+  }
+}

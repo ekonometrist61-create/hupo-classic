@@ -1,0 +1,172 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr026_gul",
+      "tur": "kelime",
+      "yazim": "gül",
+      "anlam": "Kokulu, renkli çiçek açan bir bitki.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr026_gulmek",
+      "tur": "kelime",
+      "yazim": "güldü",
+      "anlam": "Sevinçle ya da eğlenerek sesle gülmek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr026_yuz_sayi",
+      "tur": "kelime",
+      "yazim": "yüz",
+      "anlam": "Doksan dokuzdan sonra gelen sayı, yüz adet.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr026_yuz_surat",
+      "tur": "kelime",
+      "yazim": "yüz",
+      "anlam": "İnsanın gözlerinin, burnunun olduğu ön kısım.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr026_sayfa",
+      "tur": "kelime",
+      "yazim": "sayfa",
+      "anlam": "Kitap ya da defterdeki her bir yaprağın bir yüzü.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr026_kar",
+      "tur": "kelime",
+      "yazim": "kar",
+      "anlam": "Gökten yağan beyaz, soğuk kristaller.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr026_kar_kazanc",
+      "tur": "kelime",
+      "yazim": "kâr",
+      "anlam": "Bir işten elde edilen kazanç.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr026_zarar",
+      "tur": "kelime",
+      "yazim": "zarar",
+      "anlam": "Bir işten elde edilen kayıp.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr026_iki_buklum",
+      "tur": "deyim",
+      "yazim": "iki büklüm oldu",
+      "anlam": "Bedeni iki kat bükülmek; çok eğilmek (gülmekten, yorgunluktan).",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr026_agzi_acik_kalmak",
+      "tur": "deyim",
+      "yazim": "ağzı açık kalmak",
+      "anlam": "Şaşırıp ne diyeceğini bilememek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr026_gul",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr026_gul"
+        },
+        {
+          "girdi": "hr026_gulmek"
+        }
+      ]
+    },
+    {
+      "ad": "hr026_yuz",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr026_yuz_sayi"
+        },
+        {
+          "girdi": "hr026_yuz_surat"
+        },
+        {
+          "girdi": "hr026_sayfa"
+        }
+      ]
+    },
+    {
+      "ad": "hr026_kar",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr026_kar"
+        },
+        {
+          "girdi": "hr026_kar_kazanc"
+        },
+        {
+          "girdi": "hr026_zarar"
+        }
+      ]
+    },
+    {
+      "ad": "hr026_iki_buklum",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr026_iki_buklum"
+        },
+        {
+          "girdi": "hr026_agzi_acik_kalmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

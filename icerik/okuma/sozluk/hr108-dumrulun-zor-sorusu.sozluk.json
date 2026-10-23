@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr108_sorumluluk",
+      "tur": "kelime",
+      "yazim": "sorumluluğu",
+      "anlam": "Bir işin ya da davranışın sonucunu üstlenme yükümlülüğü.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_yukumluluk",
+      "tur": "kelime",
+      "yazim": "yükümlülük",
+      "anlam": "Bir kişinin yerine getirmesi gereken görev ya da borç.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_kayitsizlik",
+      "tur": "kelime",
+      "yazim": "kayıtsızlık",
+      "anlam": "Bir şeye karşı ilgisiz ve sorumsuz davranma.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_gurur",
+      "tur": "kelime",
+      "yazim": "gururla",
+      "anlam": "Kendi başarısından ya da değerinden onur duyarak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_ovunerek",
+      "tur": "kelime",
+      "yazim": "övünerek",
+      "anlam": "Kendi başarısını büyük görerek anlatarak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_alcakgonullu",
+      "tur": "kelime",
+      "yazim": "alçakgönüllü",
+      "anlam": "Kendini başkalarından üstün görmeyen, mütevazı.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_sabir",
+      "tur": "kelime",
+      "yazim": "sabır",
+      "anlam": "Zorluklar karşısında acele etmeden dayanma.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_metanet",
+      "tur": "kelime",
+      "yazim": "metanet",
+      "anlam": "Zor durumlarda sakin ve dayanıklı kalabilme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_sabirsizlik",
+      "tur": "kelime",
+      "yazim": "sabırsızlık",
+      "anlam": "Bir şeyin olmasını beklemekte zorlanma hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_yanki",
+      "tur": "kelime",
+      "yazim": "yankı",
+      "anlam": "Bir sesin bir engele çarpıp geri dönmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_yansima",
+      "tur": "kelime",
+      "yazim": "yansıma",
+      "anlam": "Işığın ya da sesin bir yüzeyden geri dönmesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_sessizlik",
+      "tur": "kelime",
+      "yazim": "sessizlik",
+      "anlam": "Ses olmayan, sakin durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_kas",
+      "tur": "deyim",
+      "yazim": "kaşlarını çattı",
+      "anlam": "Kızgınlık ya da hoşnutsuzluk göstermek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_suratini_asmak",
+      "tur": "deyim",
+      "yazim": "suratını asmak",
+      "anlam": "Hoşnutsuzluğunu yüzüne yansıtmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr108_yuzunu_eksitmek",
+      "tur": "deyim",
+      "yazim": "yüzünü ekşitmek",
+      "anlam": "Beğenmediğini yüz ifadesiyle göstermek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr108_sorumluluk",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr108_sorumluluk"
+        },
+        {
+          "girdi": "hr108_yukumluluk"
+        },
+        {
+          "girdi": "hr108_kayitsizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr108_gurur",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr108_gurur"
+        },
+        {
+          "girdi": "hr108_ovunerek"
+        },
+        {
+          "girdi": "hr108_alcakgonullu"
+        }
+      ]
+    },
+    {
+      "ad": "hr108_sabir",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr108_sabir"
+        },
+        {
+          "girdi": "hr108_metanet"
+        },
+        {
+          "girdi": "hr108_sabirsizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr108_yanki",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr108_yanki"
+        },
+        {
+          "girdi": "hr108_yansima"
+        },
+        {
+          "girdi": "hr108_sessizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr108_kas",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr108_kas"
+        },
+        {
+          "girdi": "hr108_suratini_asmak"
+        },
+        {
+          "girdi": "hr108_yuzunu_eksitmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

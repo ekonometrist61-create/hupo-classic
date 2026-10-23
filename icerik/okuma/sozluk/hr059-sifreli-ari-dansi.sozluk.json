@@ -1,0 +1,138 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr059_tozlasma",
+      "tur": "kelime",
+      "yazim": "tozlaşmasına",
+      "anlam": "Polenin bir çiçekten başka bir çiçeğe taşınması.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr059_ureme",
+      "tur": "kelime",
+      "yazim": "üreme",
+      "anlam": "Canlıların yeni bireyler oluşturması.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr059_nektar",
+      "tur": "kelime",
+      "yazim": "nektar",
+      "anlam": "Çiçeklerin özünden salgılanan tatlı sıvı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr059_bal",
+      "tur": "kelime",
+      "yazim": "bal",
+      "anlam": "Arıların nektardan ürettiği tatlı besin.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr059_tohum",
+      "tur": "kelime",
+      "yazim": "tohum",
+      "anlam": "Yeni bitki oluşturabilen bitki parçası.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr059_polen",
+      "tur": "kelime",
+      "yazim": "polen",
+      "anlam": "Çiçeklerin erkek kısmında bulunan, tozlaşmayı sağlayan toz.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr059_kovan",
+      "tur": "kelime",
+      "yazim": "kovan",
+      "anlam": "Arıların yaşadığı ve petekleri bulunan yuva.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr059_petek",
+      "tur": "kelime",
+      "yazim": "petek",
+      "anlam": "Arıların altıgen gözlerden oluşan yapısı.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr059_tozlasma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr059_tozlasma"
+        },
+        {
+          "girdi": "hr059_ureme"
+        }
+      ]
+    },
+    {
+      "ad": "hr059_nektar",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr059_nektar"
+        },
+        {
+          "girdi": "hr059_bal"
+        },
+        {
+          "girdi": "hr059_tohum"
+        }
+      ]
+    },
+    {
+      "ad": "hr059_polen",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr059_polen"
+        },
+        {
+          "girdi": "hr059_kovan"
+        },
+        {
+          "girdi": "hr059_petek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

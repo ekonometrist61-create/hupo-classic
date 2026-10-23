@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr060_ayristirma",
+      "tur": "kelime",
+      "yazim": "ayrıştırma",
+      "anlam": "Karışık bir şeyi türlerine göre ayırma.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr060_ayirma",
+      "tur": "kelime",
+      "yazim": "ayırma",
+      "anlam": "Birbirinden ayrı tutma işi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr060_karistirma",
+      "tur": "kelime",
+      "yazim": "karıştırma",
+      "anlam": "Birbirine katma işi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr060_geri_donusum",
+      "tur": "kelime",
+      "yazim": "geri dönüşüm",
+      "anlam": "Atıkların yeniden işlenerek yeni ürünler için kullanılması.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr060_yeniden_kullanim",
+      "tur": "kelime",
+      "yazim": "yeniden kullanım",
+      "anlam": "Bir eşyayı yeni bir işte tekrar kullanma.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr060_atma",
+      "tur": "kelime",
+      "yazim": "atma",
+      "anlam": "Bir şeyi kullanılmaz diye bırakma.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr060_ambalaj",
+      "tur": "kelime",
+      "yazim": "ambalaj",
+      "anlam": "Bir ürünü saran ve koruyan kap ya da kılıf.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr060_kilif",
+      "tur": "kelime",
+      "yazim": "kılıf",
+      "anlam": "Bir şeyin üzerini örten koruyucu kap.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr060_urun",
+      "tur": "kelime",
+      "yazim": "ürün",
+      "anlam": "Üretilip satılan şey.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr060_ayristirma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr060_ayristirma"
+        },
+        {
+          "girdi": "hr060_ayirma"
+        },
+        {
+          "girdi": "hr060_karistirma"
+        }
+      ]
+    },
+    {
+      "ad": "hr060_geri_donusum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr060_geri_donusum"
+        },
+        {
+          "girdi": "hr060_yeniden_kullanim"
+        },
+        {
+          "girdi": "hr060_atma"
+        }
+      ]
+    },
+    {
+      "ad": "hr060_ambalaj",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr060_ambalaj"
+        },
+        {
+          "girdi": "hr060_kilif"
+        },
+        {
+          "girdi": "hr060_urun"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

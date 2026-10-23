@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr023_misafir",
+      "tur": "kelime",
+      "yazim": "misafiriniz",
+      "anlam": "Evimize ziyarete gelen kişi.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_konuk",
+      "tur": "kelime",
+      "yazim": "konuk",
+      "anlam": "Bir yere davet edilerek gelen kişi.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_ev_sahibi",
+      "tur": "kelime",
+      "yazim": "ev sahibi",
+      "anlam": "Misafiri ağırlayan kişi.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_sofra",
+      "tur": "kelime",
+      "yazim": "sofraya",
+      "anlam": "Üzerinde yemek yenen yer; yemek için hazırlanmış masa.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_masa",
+      "tur": "kelime",
+      "yazim": "masa",
+      "anlam": "Üzerinde iş yapılan ya da yemek yenen eşya.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_tabak",
+      "tur": "kelime",
+      "yazim": "tabak",
+      "anlam": "Yemeğin konduğu yassı kap.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_uslu",
+      "tur": "kelime",
+      "yazim": "usluymuş",
+      "anlam": "Söz dinleyen, yaramazlık yapmayan.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_yaramaz",
+      "tur": "kelime",
+      "yazim": "yaramaz",
+      "anlam": "Sözü dinlemeyen, haşarı.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_nazik",
+      "tur": "kelime",
+      "yazim": "nazik",
+      "anlam": "Kibar ve saygılı.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_gozlerini_buyutmek",
+      "tur": "deyim",
+      "yazim": "gözlerini büyüttü",
+      "anlam": "Şaşırınca gözlerini iyice açmak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_gozu_kapali",
+      "tur": "deyim",
+      "yazim": "gözü kapalı",
+      "anlam": "Dikkat etmeden, düşünmeden yapmak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr023_gozden_kacirmak",
+      "tur": "deyim",
+      "yazim": "gözden kaçırmak",
+      "anlam": "Bir ayrıntıyı fark etmemek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr023_misafir",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr023_misafir"
+        },
+        {
+          "girdi": "hr023_konuk"
+        },
+        {
+          "girdi": "hr023_ev_sahibi"
+        }
+      ]
+    },
+    {
+      "ad": "hr023_sofra",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr023_sofra"
+        },
+        {
+          "girdi": "hr023_masa"
+        },
+        {
+          "girdi": "hr023_tabak"
+        }
+      ]
+    },
+    {
+      "ad": "hr023_uslu",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr023_uslu"
+        },
+        {
+          "girdi": "hr023_yaramaz"
+        },
+        {
+          "girdi": "hr023_nazik"
+        }
+      ]
+    },
+    {
+      "ad": "hr023_gozlerini_buyutmek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr023_gozlerini_buyutmek"
+        },
+        {
+          "girdi": "hr023_gozu_kapali"
+        },
+        {
+          "girdi": "hr023_gozden_kacirmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

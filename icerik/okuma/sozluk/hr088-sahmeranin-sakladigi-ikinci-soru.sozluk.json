@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr088_sarnic",
+      "tur": "kelime",
+      "yazim": "sarnıcın",
+      "anlam": "Yağmur ya da kaynak suyunu toplayan kapalı su deposu.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr088_su_deposu",
+      "tur": "kelime",
+      "yazim": "su deposu",
+      "anlam": "Suyun toplanıp saklandığı yer.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr088_kuyu",
+      "tur": "kelime",
+      "yazim": "kuyu",
+      "anlam": "Yerin altından su çıkarmak için açılan oyuk.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr088_sembol",
+      "tur": "kelime",
+      "yazim": "sembolleri",
+      "anlam": "Bir anlamı temsil eden işaret ya da nesne.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr088_alegori",
+      "tur": "kelime",
+      "yazim": "alegori",
+      "anlam": "Bir anlatıda başka bir anlamı temsil eden anlatım biçimi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr088_gercek_nesne",
+      "tur": "kelime",
+      "yazim": "gerçek nesne",
+      "anlam": "Doğrudan var olan, bir anlam taşımayan şey.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr088_yuz",
+      "tur": "deyim",
+      "yazim": "yüzünü çevirdi",
+      "anlam": "İlgisizlik ya da kırgınlık göstermek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr088_sirt_cevirmek",
+      "tur": "deyim",
+      "yazim": "sırt çevirmek",
+      "anlam": "Vazgeçmek, ilgilenmemek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr088_yuz_vermek",
+      "tur": "deyim",
+      "yazim": "yüz vermek",
+      "anlam": "Birine fazla serbestlik tanıyıp şımartmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr088_sarnic",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr088_sarnic"
+        },
+        {
+          "girdi": "hr088_su_deposu"
+        },
+        {
+          "girdi": "hr088_kuyu"
+        }
+      ]
+    },
+    {
+      "ad": "hr088_sembol",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr088_sembol"
+        },
+        {
+          "girdi": "hr088_alegori"
+        },
+        {
+          "girdi": "hr088_gercek_nesne"
+        }
+      ]
+    },
+    {
+      "ad": "hr088_yuz",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr088_yuz"
+        },
+        {
+          "girdi": "hr088_sirt_cevirmek"
+        },
+        {
+          "girdi": "hr088_yuz_vermek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

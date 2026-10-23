@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr050_teleskop",
+      "tur": "kelime",
+      "yazim": "teleskobu",
+      "anlam": "Uzaktaki gök cisimlerini büyüterek gösteren optik araç.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr050_durbun",
+      "tur": "kelime",
+      "yazim": "dürbün",
+      "anlam": "Uzaktaki nesneleri yakından göstermeye yarayan araç.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr050_mikroskop",
+      "tur": "kelime",
+      "yazim": "mikroskop",
+      "anlam": "Çok küçük cisimleri büyüterek gösteren araç.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr050_pusula",
+      "tur": "kelime",
+      "yazim": "pusula",
+      "anlam": "Mıknatıslı iğnesiyle yönleri gösteren araç.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr050_harita_c",
+      "tur": "kelime",
+      "yazim": "harita",
+      "anlam": "Yeryüzünün küçültülmüş çizimi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr050_takimyildizi",
+      "tur": "kelime",
+      "yazim": "takımyıldızı",
+      "anlam": "Gökyüzündeki yıldızların birleştirilerek oluşturulan hayalî desen.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr050_yildiz_kumesi",
+      "tur": "kelime",
+      "yazim": "yıldız kümesi",
+      "anlam": "Birbirine yakın görünen yıldızların topluluğu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr050_gezegen",
+      "tur": "kelime",
+      "yazim": "gezegen",
+      "anlam": "Bir yıldızın çevresinde dönen büyük gök cismi.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr050_kafasi_karismak",
+      "tur": "deyim",
+      "yazim": "kafasını karıştırabilirdi",
+      "anlam": "Ne yapacağını bilememek, düşüncesi dağılmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr050_akli_basina",
+      "tur": "deyim",
+      "yazim": "aklı başına gelmek",
+      "anlam": "Yanlış bir davranıştan sonra akıllanmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr050_kafasi_dagilmak",
+      "tur": "deyim",
+      "yazim": "kafası dağılmak",
+      "anlam": "Dikkatini toplayamamak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr050_teleskop",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr050_teleskop"
+        },
+        {
+          "girdi": "hr050_durbun"
+        },
+        {
+          "girdi": "hr050_mikroskop"
+        }
+      ]
+    },
+    {
+      "ad": "hr050_pusula",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr050_pusula"
+        },
+        {
+          "girdi": "hr050_harita_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr050_takimyildizi",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr050_takimyildizi"
+        },
+        {
+          "girdi": "hr050_yildiz_kumesi"
+        },
+        {
+          "girdi": "hr050_gezegen"
+        }
+      ]
+    },
+    {
+      "ad": "hr050_kafasi_karismak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr050_kafasi_karismak"
+        },
+        {
+          "girdi": "hr050_akli_basina"
+        },
+        {
+          "girdi": "hr050_kafasi_dagilmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

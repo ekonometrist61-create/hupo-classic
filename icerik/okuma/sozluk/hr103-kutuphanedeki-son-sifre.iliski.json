@@ -1,0 +1,62 @@
+{
+  "hr103_cerceve": {
+    "es": [
+      "hr103_baglam"
+    ],
+    "zit": []
+  },
+  "hr103_baglamdan_kopuk": {
+    "es": [],
+    "zit": [
+      "hr103_baglam"
+    ]
+  },
+  "hr103_odunc": {
+    "es": [
+      "hr103_emanet"
+    ],
+    "zit": []
+  },
+  "hr103_kalici_mulk": {
+    "es": [],
+    "zit": [
+      "hr103_emanet"
+    ]
+  },
+  "hr103_okuma_onerisi": {
+    "es": [
+      "hr103_okunus"
+    ],
+    "zit": []
+  },
+  "hr103_kesin_ceviri": {
+    "es": [],
+    "zit": [
+      "hr103_okunus"
+    ]
+  },
+  "hr103_delil": {
+    "es": [
+      "hr103_kanit"
+    ],
+    "zit": []
+  },
+  "hr103_iddia": {
+    "es": [],
+    "zit": [
+      "hr103_kanit"
+    ]
+  },
+  "hr103_icini_cekmek": {
+    "es": [
+      "hr103_ic_cekti"
+    ],
+    "zit": []
+  },
+  "hr103_ah_cekmek": {
+    "es": [
+      "hr103_ic_cekti"
+    ],
+    "zit": []
+  }
+}

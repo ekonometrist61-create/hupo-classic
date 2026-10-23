@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr040_ciborek",
+      "tur": "kelime",
+      "yazim": "çibörek",
+      "anlam": "İçine kıyma ya da peynir konup kızartılan hamur yemeği.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr040_borek",
+      "tur": "kelime",
+      "yazim": "börek",
+      "anlam": "Yufka arasına çeşitli iç konularak pişirilen hamur yemeği.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr040_pide",
+      "tur": "kelime",
+      "yazim": "pide",
+      "anlam": "Ekmek türü, uzun ve oval biçimli hamur yemeği.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr040_bakir",
+      "tur": "kelime",
+      "yazim": "bakır",
+      "anlam": "Kırmızımsı renkli, işlenebilen bir metal.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr040_tunc",
+      "tur": "kelime",
+      "yazim": "tunç",
+      "anlam": "Bakır ile kalayın karışımından elde edilen metal.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr040_demir",
+      "tur": "kelime",
+      "yazim": "demir",
+      "anlam": "Sert, gri renkli bir metal.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr040_baharat",
+      "tur": "kelime",
+      "yazim": "baharatların",
+      "anlam": "Yemeklere tat ve koku veren bitkisel tozlar ya da çeşniler.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr040_cesni",
+      "tur": "kelime",
+      "yazim": "çeşni",
+      "anlam": "Yemeğe tat katan madde.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr040_misafire_yer",
+      "tur": "deyim",
+      "yazim": "Misafire yer açmak",
+      "anlam": "Konuğu içtenlikle kabul etmek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr040_kapi_acmak",
+      "tur": "deyim",
+      "yazim": "kapı açmak",
+      "anlam": "Bir şeyin yolunu açmak, fırsat vermek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr040_kapiyi_kapamak",
+      "tur": "deyim",
+      "yazim": "kapıyı kapatmak",
+      "anlam": "Bir konuyu bitirmek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr040_ciborek",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr040_ciborek"
+        },
+        {
+          "girdi": "hr040_borek"
+        },
+        {
+          "girdi": "hr040_pide"
+        }
+      ]
+    },
+    {
+      "ad": "hr040_bakir",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr040_bakir"
+        },
+        {
+          "girdi": "hr040_tunc"
+        },
+        {
+          "girdi": "hr040_demir"
+        }
+      ]
+    },
+    {
+      "ad": "hr040_baharat",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr040_baharat"
+        },
+        {
+          "girdi": "hr040_cesni"
+        }
+      ]
+    },
+    {
+      "ad": "hr040_misafire_yer",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr040_misafire_yer"
+        },
+        {
+          "girdi": "hr040_kapi_acmak"
+        },
+        {
+          "girdi": "hr040_kapiyi_kapamak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

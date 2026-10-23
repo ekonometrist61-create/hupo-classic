@@ -1,0 +1,1088 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr058-gokyuzundeki-balonun-sirri",
+    "baslik": "Gökyüzündeki Balonun Sırrı",
+    "tur": "bilim",
+    "konu": "isi_yogunluk",
+    "sinif_alt": 5,
+    "sinif_ust": 5,
+    "okuma_bandi": 2,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas"
+    ],
+    "deger_anahtarlari": [
+      "D6",
+      "D5"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 5,
+      "okuma_zorlugu": 4,
+      "kavram_zorlugu": 5,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "kesif"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D6",
+        "yardimci_deger": "D5"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "bruloer_hr058",
+          "tur": "lexeme",
+          "etiket": "brülör",
+          "yuva": "hr058_bruloer",
+          "islev": "first_hint"
+        },
+        {
+          "id": "kaldirma_hr058",
+          "tur": "lexeme",
+          "etiket": "kaldırma kuvveti",
+          "yuva": "hr058_kaldirma_kuvveti",
+          "islev": "application"
+        },
+        {
+          "id": "yogunluk_hr058",
+          "tur": "lexeme",
+          "etiket": "yoğunluk",
+          "yuva": "hr058_yogunluk",
+          "islev": "application"
+        },
+        {
+          "id": "deyim_hr058",
+          "tur": "idiom",
+          "etiket": "Kaşlarını çatmak",
+          "yuva": "hr058_kaslarini_catti",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr058",
+          "tur": "concept",
+          "etiket": "Benzer görüntü, aynı neden değildir",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 2041,
+        "tahmini_sure_dk": 20,
+        "sayfa_sayisi": 16,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 3,
+          "idiom": 1,
+          "concept": 1
+        },
+        "yoldas_yer_sayisi": 13,
+        "simge_sayisi": 1
+      }
+    },
+    "tanitim": "Balon neden yükselir? Ayşe rengin mi, ısının mı etkisini araştırdı.",
+    "durum": "taslak",
+    "fis_kodu": "HR-058"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Balonun sepeti henüz yerden ayrılmamıştı ama "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " kalbi çoktan havalanmış gibiydi. Kasabanın bahar şenliğine gelen sıcak hava balonu, meydanın kenarında kocaman bir renkli kubbe gibi duruyordu. Sarı, turkuaz ve kırmızı parçalar güneşte parlıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " beşinci sınıfa gidiyordu; geçen ay okulda hava olaylarını öğrenmiş, sıcak havanın neden yükseldiğini merak etmeye başlamıştı. Şimdi sorusunun dev bir örneği karşısındaydı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "bulut"
+        },
+        {
+          "t": "metin",
+          "v": "\n\n“Balonu yukarı ne çekiyor?” diye sordu kardeşi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ". “Bir ip mi?”\n\nBabaları gülümsedi. “İpler balonun güvenli biçimde sabitlenmesinde kullanılıyor. Nasıl yükseldiğini görevli pilottan dinleyelim.”\n\nBalonun pilotu Selin Hanım, ziyaretçilere güvenlik çizgisinin gerisinde beklemelerini söylüyordu. Ekip, balonun içindeki havayı bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr058_bruloer"
+        },
+        {
+          "t": "metin",
+          "v": " ısıtıyordu. Alevin sesi zaman zaman yükseliyor, kumaş kubbe yavaşça biçimini alıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " brülör sözcüğünü defterine yazdı. “Sıcak hava balonunun içindeki havayı ısıtan araç,” diye not düştü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Selin Hanım, çocukların sorusunu duyunca onları güvenli izleme alanından balonun işleyişini anlatan panoya yönlendirdi. “Sıcak hava, çevresindeki daha serin havaya göre daha az yoğun hâle gelir,” dedi. “Balonun içinde bu fark yeterince oluştuğunda "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr058_kaldirma_kuvveti"
+        },
+        {
+          "t": "metin",
+          "v": " balonun toplam ağırlığını yenebilir.”\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " “Hava hafiflediği için mi?” diye sordu.\n\n“Basitçe böyle söyleyebilirsin,” dedi pilot. “Ama içerdeki hava yok olmuyor. Isındığında genişliyor ve aynı hacimdeki hava miktarı, dışarıdaki daha soğuk havaya göre azalıyor. Bu yüzden "
+        },
+        {
+          "t": "kelime",
+          "yuva": "hr058_yogunluk"
+        },
+        {
+          "t": "metin",
+          "v": " farkı önemli.”\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunun gerçek bir açıklama olduğuna sevindi. Fakat aklında başka soru vardı: “Balonun renginin bir etkisi var mı?” Selin Hanım, rengin tek başına balonu kaldırmadığını söyledi. Balonun tasarımı ve malzemesi elbette önemliydi; havalanma açıklamasında asıl belirleyici etkenlerden biri iç ve dış hava arasındaki yoğunluk farkıydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenlikte balon gösterisi başlamadan önce rüzgâr biraz kuvvetlendi. Görevliler anons yaptı: “Uçuş güvenliği için hava koşulları yeniden değerlendirilecek.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hayal kırıklığına uğradı. “Tam başlayacakken mi?” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de üzüldü ama pilotun neden beklediğini anlamak istiyordu. Selin Hanım, sıcak hava balonunun rüzgârdan etkilendiğini ve kalkışın yalnız balonun hazır olmasına değil uygun hava koşullarına bağlı olduğunu anlattı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ile "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", bekleme sırasında bilim standına uğradı. Burada balonlar ve hava akımı üzerine güvenli bir sınıf gösterisi vardı. Görevli, masanın üzerindeki basit çizimlerle sıcak ve soğuk havanın yoğunluk ilişkisini anlattı. Ateş ve yanıcı malzemeler içeren denemeleri yalnız eğitimli uzmanların yapması gerektiğini hatırlattı. Çocuklar brülörü kendilerinin kullanmaya kalkmayacaktı.\n\nStanttaki panoda iki ok vardı: Biri yukarı, biri aşağı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu okları görünce bir yanlış anlamayı fark etti. “Sıcak hava her zaman doğrudan yukarı gitmek zorunda mı?” diye sordu. Görevli, havanın hareketinin çevredeki koşullara bağlı olduğunu, sıcak hava balonunun da yalnız “sıcaklık yükselir” sözüyle açıklanamayacağını söyledi. Önemli olan, balonun içindeki sıcak havayla dışarıdaki havanın oluşturduğu yoğunluk farkının kaldırma kuvvetine etkisiydi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " not defterinde neden-sonuç zinciri kurdu: Brülör havayı ısıtır → iç hava daha az yoğun olur → dış hava ile yoğunluk farkı oluşur → uygun koşullarda balon yükselebilir. Sonra zincirin yanına “rüzgâr ve güvenlik” sözcüklerini ekledi. Bir olayın gerçekleşmesi bazen birden fazla koşula bağlı olabilirdi.\n\nÖğleden sonra hava sakinleşti. Görevliler kontrol yaptı; gerekli izinler ve güvenlik koşulları uygun olduğunda kısa bir gösteri gerçekleştirileceği açıklandı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güvenlik çizgisinin arkasında durup balonu izledi. Brülör yeniden çalıştığında büyük kubbe biraz daha dikleşti. Sepet yavaşça yükselirken herkesin yüzünde aynı hayranlık vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " hoplayıp zıpladı. “Uçuyor!”\n\nBalon kısa süre havada kaldı ve görevli ekibin yönetiminde yeniden indi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " aklında şimdi yalnız yükselme değil, iniş sorusu da vardı. Selin Hanım, havanın soğumasıyla kaldırma kuvvetinin azalabildiğini, pilotun ısıtmayı ve diğer uçuş koşullarını dikkatle yönettiğini açıkladı. Bir balonun uçurulması, çocukların tek başına deneyebileceği basit bir oyun değildi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Akşam evde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", şenlik fotoğrafını açtı. Balon gökyüzünde dev bir çiçek gibi görünüyordu. Fotoğrafın altına “Balon sıcak hava yüzünden yükselir” yazmak istedi, sonra durdu. Bu cümle ilk bakışta doğru gibi görünse de öğrendiği bilgiyi tam anlatmıyordu. Açıklamasını değiştirdi: “İçindeki ısıtılmış hava, dış havaya göre daha az yoğun olduğunda oluşan kaldırma kuvveti balonun yükselmesine yardımcı olur.”\n\n"
+        },
+        {
+          "t": "deyim",
+          "yuva": "hr058_kaslarini_catti"
+        },
+        {
+          "t": "metin",
+          "v": " “Ben arkadaşlarıma bunu nasıl anlatacağım?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. “Önce kısa söyle, sonra nedenini anlat.” Bir kâğıda iki balon çizdiler: Birinde iç ve dış havanın yoğunluk ilişkisini gösteren basit noktalar vardı. Noktaların bir model olduğunu, gerçek hava moleküllerinin görülen küçük toplar gibi olmadığını da not ettiler.\n\nBir hafta sonra "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sınıfta sunum yaptı. Sunumuna bir soruyla başladı: “Bir balon yalnız çok renkli olduğu için uçabilir mi?” Arkadaşları gülerek “Hayır,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sonra pilotun açıklamasını, güvenlik kontrollerini ve rüzgâr yüzünden yaşanan beklemeyi anlattı. Öğretmeni, “Gördüklerini bir başkasının açıklamasıyla karşılaştırmışsın,” dedi. “Bilimsel merakta bunun değeri büyük.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şenlikten yalnız güzel bir fotoğrafla dönmemişti. Artık bir şeyin nasıl olduğunu anlamanın, onu neden yaptığımızı sorgulamak kadar önemli olduğunu biliyordu. Gökyüzündeki büyük balon ona iki ayrı şey göstermişti: Hayal kurmak çok güzeldi; hayallerin güvenle gerçekleşmesi içinse bilgi, emek ve dikkat gerekiyordu.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " balon merakı aslında geçen kıştan başlamıştı. Babası bir gün mutfakta sıcak çayın üzerinde yükselen buharı gösterdiğinde, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sıcaklığın her şeyi yukarı çektiğini sanmıştı. Sonra öğretmeni, su buharının ve sıcak havanın farklı olaylar olduğunu anlatmıştı. Bir yanda sıvı suyun gaz hâline geçmesi, öte yanda havanın ısınması ve yoğunluk farkı bulunuyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " benzer görünen olayları birbirine karıştırdığını fark etmişti. Şimdi sıcak hava balonunu gördüğünde aynı hatayı yapmak istemiyordu. Defterine “"
+        },
+        {
+          "t": "vurgu",
+          "v": "Benzer görüntü, aynı neden demek değildir"
+        },
+        {
+          "t": "metin",
+          "v": "” yazdı. Bu cümle bilim standındaki sorularını daha dikkatli sormasına yardımcı oldu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenlikte bir başka gösteri de vardı: Uçurtma yarışması. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " uçurtmalarla balonların aynı şekilde uçtuğunu düşündü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de ilk anda bu fikri mantıklı buldu. Ancak uçurtma havadayken rüzgârın etkisini, ipin gerilmesini ve uçurtmanın biçimini düşündüler. Sıcak hava balonunda ise iç ve dış hava yoğunluğu farkı belirleyici bir etkendi. İki araç gökyüzünde bulunabilirdi ama aynı mekanizmayla uçmak zorunda değildi. Selin Hanım, “Önemli olan ‘uçuyor’ sözcüğünün arkasındaki fiziksel nedenleri araştırmanız,” dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", uçurtması gökyüzünde süzülürken bu farkı arkadaşlarına anlatmaya çalıştı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " standın önünde küçük bir not yarışması düzenlendiğini gördü. Katılanlar “Balon neden yükselir?” sorusuna bir cümleyle cevap verecekti. Bazıları “Çünkü içinde ateş var” yazdı, bazıları “Çünkü hava sıcaktır.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunların bir bölümünün açıklamanın başlangıcı olabileceğini, ama tek başına yeterli olmadığını düşündü. Cevabına yoğunluk ve kaldırma kuvveti sözcüklerini ekledi. Görevli, bu kavramları açıklamasını istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen cevap vermek yerine kendi çizimine baktı, sonra yavaş yavaş anlattı. Görevli “Doğru kavramı kullanmak kadar ne anlama geldiğini bilmek de önemli,” dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bekleme sırasında kalabalığın bir kısmı söylenmeye başladı. “Neden hemen uçurmuyorlar?” diye soranlar vardı. Bir adam, “Biraz rüzgârdan ne olur?” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bu sözü duyunca uçuş görevlilerinin neden dikkatli davranmak zorunda olduğunu düşündü. Uçuş kararını izleyiciler değil, sorumlu uzmanlar vermeliydi. Bir etkinliği heyecanla beklemek, güvenliği göz ardı etmeyi haklı çıkarmazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " başlangıçta üzülmüş olsa da babasıyla birlikte beklemeyi kabul etti. Bu sırada bilim standındaki başka etkinlikleri keşfetmeleri, beklemeyi sıkıcı olmaktan çıkardı.\n\nBilim standında çocuklara bir termometre gösterildi. Görevli, sıcaklığın ölçülebilir bir büyüklük olduğunu, “çok sıcak” veya “az sıcak” gibi sözlerin çoğu zaman karşılaştırmaya dayandığını anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hava durumuna bakarken sıcaklıkla rüzgâr hızını ayrı ayrı gördüğünü fark etti. Bunlar farklı ölçümlerdi. Birini bilmek, diğerini otomatik olarak belirlemiyordu. Balon görevlilerinin de birçok bilgiyi birlikte değerlendirdiğini öğrenince tek bir ekrana bakarak uçuş hakkında karar veremeyeceklerini anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir öğrencinin çizdiği balon resmi, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " dikkatini çekti. Resimde brülör, balonun içindeki havayı ısıtırken sepetin altında bir motor da görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", “Bu sıcak hava balonunda yönü bir motor mu belirliyor?” diye sordu. Selin Hanım, gördükleri balon türünün genellikle rüzgârla hareket ettiğini, pilotun farklı irtifalarda değişebilen rüzgârlardan yararlanarak hareketi belli ölçüde yönetebildiğini anlattı. Bu açıklama "
+        },
+        {
+          "t": "kahraman",
+          "hal": "belirtme"
+        },
+        {
+          "t": "metin",
+          "v": " şaşırttı. Balonun gökte görünmesi, uçak gibi aynı kontrol sistemine sahip olduğu anlamına gelmiyordu. Defterine yeni bir çizim ekledi.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " etkinlik alanında balonun neden kocaman bir kumaşa benzediğini sordu. Görevli, balonun dış kısmının sıcak havayı tutmaya yardımcı olan özel tasarlanmış bir zarf olduğunu, malzemenin dayanıklılığının önemli bulunduğunu söyledi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " “Zarf mı? İçine mektup mu koyuyorlar?” diyerek güldü. Aynı sözcüğün başka alanlarda farklı bir anlamla kullanılabildiğini öğrendiler. Türkçede “zarf” mektup zarfı olarak bilinse de balonun gövdesini anlatmak için teknik bir kullanım da vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", bir sözcüğün ne anlama geldiğini anlamak için kullanıldığı alanı ve cümleyi dikkatle okumak gerektiğini bir kez daha gördü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Şenlik fotoğrafları eve dönünce büyük ekranda açıldı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " en çok kendi uçurtmasını gösteren fotoğrafı sevdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ise balonun yalnız bir köşesinin göründüğü kareyi seçti. Çünkü o karede görevli ekibin güvenlik çizgisini kontrol ederken ne kadar dikkatli çalıştığı görülüyordu. Babaları iki fotoğrafı yan yana koydu. “Bilim yalnız uçan şeylere bakmak değildir,” dedi. “Onları güvenli biçimde nasıl tasarladığımızı ve kullandığımızı da anlamaktır.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu sözü sınıf sunumunun başlangıcına yazdı.\n\n"
+        },
+        {
+          "t": "kahraman",
+          "hal": "ilgi"
+        },
+        {
+          "t": "metin",
+          "v": " sınıfındaki arkadaşları farklı sorular sordu. Derya, “Sıcak hava hafifliyorsa balon neden sonsuza kadar yükselmiyor?” diye merak etti. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", balonun toplam ağırlığı, iç hava sıcaklığı, dış havanın yoğunluğu ve diğer uçuş koşullarının önemli olduğunu anlattı. Yükselmenin de sınırları vardı; her sıcak hava balonu her yüksekliğe çıkamazdı. Öğretmenleri çok karmaşık hesaplara girmeden, sistemin birden çok değişkene bağlı olabileceğini gösterdi. Çocuklar hayal ettikleri görüntüyle gerçek fiziksel koşulların aynı şey olmadığını anladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir başka öğrenci, “Sıcak hava balonunun içindeki gaz helyum mu?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", gördükleri sıcak hava balonunda yükselmeyi sağlayan şeyin özel bir hafif gazla doldurulma değil, içerdeki havanın ısıtılması olduğunu açıkladı. Helyum balonlarının farklı bir ilkeyle havada kalabildiğini öğrendiler. Aynı “balon” sözcüğü, görünüşte benzeyen ama farklı çalışan araçları anlatabiliyordu. Sunum sonunda öğretmenleri çocuklardan iki balon türünü bir tabloda karşılaştırmalarını istedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", farkları yazarken artık yalnız görüntüye bakmadığından emindi.\n\nŞenlikten birkaç hafta sonra okul bahçesinde düzenlenen “Merak Panosu” etkinliğinde her öğrenci cevabını henüz bilmediği bir soru astı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kendi sorusunu seçti: “Yükselmek için gereken koşullar değişirse pilot nasıl karar verir?” Bir sonraki bilim kulübü buluşmasında bu soruyu hava olayları, güvenlik ve karar verme başlıkları altında incelemeyi planladı. Öğretmeni “Bütün soruların cevabını bir günde bulmak gerekmiyor,” dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " buna sevindi. Balonun sırlarını öğrenmesi, yeni soru sormasına engel olmuyordu; tam tersine ona yeni keşifler için kapı açıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hafta sonu aynı meydandan geçerken şenlik alanının boş olduğunu gördü. Balon gitmiş, yerinde küçük çiçekler açmıştı. O an kendisini biraz üzgün hissetti. Fotoğraflar güzeldi ama canlı olarak görmenin heyecanı başkaydı. Sonra defterini açtı. Balonun resmini çizdiği sayfada üç farklı renkte ok vardı: Gözlediğim, öğrendiğim, hâlâ merak ettiğim. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu üç başlığı sevmişti. Bir olayı yalnız hatırlamak değil, ondan sonra ne öğrendiğini de görebilmek güzel oluyordu.\n\n"
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " bir akşam oyuncak arabalarının üzerine kâğıttan küçük bir balon çizimi yapıştırdı. “Bu da uçar mı?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü. “Bir şeyin üstüne balon resmi çizmek onu uçurmaz.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": ", “Peki sıcak hava resmi çizsem?” diye karşılık verdi. İkisi kahkahaya boğuldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sonra kâğıt üzerinde basit bir model kurdu. Nesnenin toplam ağırlığının, havanın özelliklerinin ve güvenli tasarımın önemini anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " çizimden uçan gerçek bir araç yapmaya kalkmadı; bunu bir bilim sorusu olarak defterine kaydetti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okulda düzenlenen kitap fuarında "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sıcak hava balonlarıyla ilgili bir çocuk kitabı buldu. İlk sayfalarda farklı balon türlerinin tarihini anlatan kısa bir bölüm vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", hikâyelerdeki buluşların bir gecede ortaya çıkmadığını fark etti. İnsanlar denemeler yapmış, hatalarından öğrenmiş ve güvenliği artırmaya çalışmıştı. Kitaptaki bilgileri başka kaynaklarla karşılaştırmak için kütüphaneciden yardım istedi. İnternette bulduğu her videonun güvenilir olmayabileceğini biliyordu. Özellikle tehlikeli denemeleri taklit etmemek gerektiğini aklında tutuyordu.\n\nBir sonraki sınıf sunumunda "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " arkadaşlarına kendi hazırladığı üç soruyu sordu. “Balon neden yükselir?”, “Hangi hava koşulları önemlidir?” ve “Bir açıklamanın doğru olduğundan nasıl emin olabiliriz?” Çocuklar ilk soruya daha kolay yanıt verdi. Üçüncü soruda düşünmek için zaman istediler. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " de hemen cevap vermedi. Öğretmenin yönlendirmesiyle gözlem, güvenilir kaynak ve gerekçe sözcüklerini tartıştılar. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu çok sevdi; çünkü artık öğrenmenin yalnız doğru cevabı duymak olmadığını biliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O gece defterine şunu yazdı: “Balonun en güzel yanı gökyüzüne yükselmesi değil, bana başımı kaldırıp soru sormayı öğretmesiydi.” Sonra cümleyi biraz düzeltti. Balonun yükselmesini izlemek de çok güzeldi. İkisini birbirinden ayırmak zorunda değildi. Bilimin heyecanı, hayretle bilgi arasında kurduğu bağdaydı.\n\nBahar şenliği yeniden düzenlendiğinde "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu kez yalnız izleyici olarak gitmedi; çocuklar için hazırlanan soru köşesinde gönüllü oldu. Küçük bir öğrenci ona balonun neden yere düşmediğini sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çocuğun sorusunu küçümsemeden dinledi, sonra uygun bir açıklama yaptı. Anlamadığı yerde yeniden soru sormasını istedi. Kendi ilk gününü hatırlıyordu: O da brülörün ne olduğunu bilmiyordu. Şimdi bu sözcüğü güvenle açıklayabiliyor, daha karmaşık sorulara ise gerektiğinde uzmanlara danışıyordu. Bildiklerinin sınırını kabul etmek, merakını azaltmamıştı. Tam tersine onu daha dikkatli bir öğrenen yapmıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Selin Hanım "
+        },
+        {
+          "t": "kahraman",
+          "hal": "belirtme"
+        },
+        {
+          "t": "metin",
+          "v": " bir sonraki baharda şenlik alanında yeniden gördüğünde “Bu yıl ne öğrendin?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterini gösterdi. “Havanın yoğunluğunu, kaldırma kuvvetini ve güvenliğin niçin önemli olduğunu,” dedi. Sonra gülümsedi: “Bir de soruları aceleyle bitirmemeyi.” Pilot başını salladı. “Güzel. Çünkü gökyüzünün soruları çoktur.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " balonun yavaşça şişmesini izledi. Gözlerinin önünde büyük renkli kubbe yine yükseliyordu; bu kez onunla birlikte içindeki bitmeyen merakı da büyüyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "- Kavramlar: Brülör, ısı, yoğunluk, kaldırma kuvveti, hava koşulları. - Dil: Neden-sonuç, bilimsel açıklama, “havalanmak” gerçek/mecaz kullanımı. - Güvenlik: Brülör ve uçuş ekipmanları yalnız yetkili uzmanlarca kullanılmalıdır."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {
+    "hr058_kaslarini_catti": [
+      {
+        "t": "yoldas",
+        "hal": "yalin",
+        "yedek": "bir arkadaş"
+      },
+      {
+        "t": "metin",
+        "v": " bu uzun cümleyi okuyunca kaşlarını çattı."
+      }
+    ]
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Balonun içindeki hava neyle ısıtılıyordu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Brülörle"
+        },
+        {
+          "id": "B",
+          "metin": "Güneş ışığıyla"
+        },
+        {
+          "id": "C",
+          "metin": "Odunla yakılan ateşle"
+        },
+        {
+          "id": "D",
+          "metin": "Elektrikle"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Ekip, balonun içindeki havayı brülörle ısıtıyordu."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 2,
+      "metin": "Balonun yükselmesinin temel nedeni neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "İç hava ile dış hava arasındaki yoğunluk farkı ve kaldırma kuvveti"
+        },
+        {
+          "id": "B",
+          "metin": "Balonun rengi"
+        },
+        {
+          "id": "C",
+          "metin": "Kuvvetli bir rüzgâr"
+        },
+        {
+          "id": "D",
+          "metin": "Balonun çok küçük olması"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Isınan iç hava daha az yoğun olduğunda kaldırma kuvveti balonu yukarı taşır."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 4,
+      "metin": "Ayşe'nin bu düşüncesi neyi gösterir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir olayın birden fazla etkene bağlı olabileceğini"
+        },
+        {
+          "id": "B",
+          "metin": "Bilimin önemsiz olduğunu"
+        },
+        {
+          "id": "C",
+          "metin": "Balonun hiç uçmayacağını"
+        },
+        {
+          "id": "D",
+          "metin": "Rüzgârın her zaman yararlı olduğunu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Balonun yükselmesi ısı, ağırlık, rüzgâr ve güvenlik gibi birçok koşula bağlıdır."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "Metinde geçen brülör ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Balonun içindeki havayı ısıtan araç"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür sepet"
+        },
+        {
+          "id": "C",
+          "metin": "Bir rüzgâr türü"
+        },
+        {
+          "id": "D",
+          "metin": "Bir gösteri alanı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Brülör, sıcak hava balonunun içindeki havayı ısıtan alev veren araçtır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "llm_taslak",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "hr058_bruloer",
+        "tur": "kelime",
+        "yazim": "brülörle",
+        "anlam": "Sıcak hava balonunun içindeki havayı ısıtan alev veren araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_ocak",
+        "tur": "kelime",
+        "yazim": "ocak",
+        "anlam": "Yakıt yakılarak ısı üreten yer.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_soba",
+        "tur": "kelime",
+        "yazim": "soba",
+        "anlam": "Odada ısınmak için kullanılan araç.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_kaldirma_kuvveti",
+        "tur": "kelime",
+        "yazim": "kaldırma kuvveti",
+        "anlam": "Bir sıvı ya da gaz içindeki cismi yukarı itmeye çalışan kuvvet.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_itme_kuvveti",
+        "tur": "kelime",
+        "yazim": "itme kuvveti",
+        "anlam": "Bir cismi ileri ya da geri doğru iten kuvvet.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_agirlik",
+        "tur": "kelime",
+        "yazim": "ağırlık",
+        "anlam": "Bir cismin yer çekimi nedeniyle aşağı doğru çektiği kuvvet.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_yogunluk",
+        "tur": "kelime",
+        "yazim": "yoğunluk",
+        "anlam": "Belli bir hacimdeki maddenin kütlesi.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_hafiflik",
+        "tur": "kelime",
+        "yazim": "hafiflik",
+        "anlam": "Ağır olmama durumu.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_kaslarini_catti",
+        "tur": "deyim",
+        "yazim": "kaşlarını çattı",
+        "anlam": "Hoşnutsuzluğunu yüzünü buruşturarak belli etmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_alnini_kirisitirmak",
+        "tur": "deyim",
+        "yazim": "alnını kırıştırmak",
+        "anlam": "Düşünceli ya da endişeli görünmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      },
+      {
+        "id": "hr058_gulumsemek_b",
+        "tur": "kelime",
+        "yazim": "gülümsemek",
+        "anlam": "Yüzünde hoşnutluk ifadesiyle hafifçe gülmek.",
+        "sinif_alt": 4,
+        "sinif_ust": 6
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "hr058_bruloer",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr058_bruloer"
+          },
+          {
+            "girdi": "hr058_ocak"
+          },
+          {
+            "girdi": "hr058_soba"
+          }
+        ]
+      },
+      {
+        "ad": "hr058_kaldirma_kuvveti",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr058_kaldirma_kuvveti"
+          },
+          {
+            "girdi": "hr058_itme_kuvveti"
+          },
+          {
+            "girdi": "hr058_agirlik"
+          }
+        ]
+      },
+      {
+        "ad": "hr058_yogunluk",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "hr058_yogunluk"
+          },
+          {
+            "girdi": "hr058_hafiflik"
+          }
+        ]
+      },
+      {
+        "ad": "hr058_kaslarini_catti",
+        "tur": "deyim",
+        "adaylar": [
+          {
+            "girdi": "hr058_kaslarini_catti"
+          },
+          {
+            "girdi": "hr058_alnini_kirisitirmak"
+          },
+          {
+            "girdi": "hr058_gulumsemek_b"
+          }
+        ]
+      }
+    ]
+  }
+}

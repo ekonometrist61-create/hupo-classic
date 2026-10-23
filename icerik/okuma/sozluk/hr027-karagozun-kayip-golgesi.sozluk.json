@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr027_perde",
+      "tur": "kelime",
+      "yazim": "perdeyi",
+      "anlam": "Gölge oyununda gösterimin yansıdığı beyaz yüzey.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr027_sahne",
+      "tur": "kelime",
+      "yazim": "sahne",
+      "anlam": "Gösterinin yapıldığı yer.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr027_fener",
+      "tur": "kelime",
+      "yazim": "feneri",
+      "anlam": "Işık veren, taşınabilen aydınlatma aracı.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr027_lamba",
+      "tur": "kelime",
+      "yazim": "lamba",
+      "anlam": "Işık veren araç.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr027_mum",
+      "tur": "kelime",
+      "yazim": "mum",
+      "anlam": "Yakıldığında ışık veren balmumu çubuk.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr027_ayirt",
+      "tur": "kelime",
+      "yazim": "ayırt",
+      "anlam": "İki ya da daha çok şeyi birbirinden seçebilmek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr027_seçmek",
+      "tur": "kelime",
+      "yazim": "seçmek",
+      "anlam": "Birkaç şey arasından birini almak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr027_karistirmak",
+      "tur": "kelime",
+      "yazim": "karıştırmak",
+      "anlam": "Birbirinden ayırt edilemeyecek hale getirmek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr027_golgede_kalmak",
+      "tur": "deyim",
+      "yazim": "gölgede kalmak",
+      "anlam": "Başkasının yanında fark edilmemek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr027_one_cikmak",
+      "tur": "kelime",
+      "yazim": "öne çıkmak",
+      "anlam": "Dikkat çekecek bir yerde olmak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr027_gölge_dusmek",
+      "tur": "deyim",
+      "yazim": "gölge düşürmek",
+      "anlam": "Bir şeyin değerini ya da güzelliğini azaltmak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr027_perde",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr027_perde"
+        },
+        {
+          "girdi": "hr027_sahne"
+        }
+      ]
+    },
+    {
+      "ad": "hr027_fener",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr027_fener"
+        },
+        {
+          "girdi": "hr027_lamba"
+        },
+        {
+          "girdi": "hr027_mum"
+        }
+      ]
+    },
+    {
+      "ad": "hr027_ayirt",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr027_ayirt"
+        },
+        {
+          "girdi": "hr027_seçmek"
+        },
+        {
+          "girdi": "hr027_karistirmak"
+        }
+      ]
+    },
+    {
+      "ad": "hr027_golgede_kalmak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr027_golgede_kalmak"
+        },
+        {
+          "girdi": "hr027_one_cikmak"
+        },
+        {
+          "girdi": "hr027_gölge_dusmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

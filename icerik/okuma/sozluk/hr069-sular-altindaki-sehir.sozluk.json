@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr069_maket",
+      "tur": "kelime",
+      "yazim": "maketin",
+      "anlam": "Gerçek bir nesnenin küçültülmüş modeli.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr069_model",
+      "tur": "kelime",
+      "yazim": "model",
+      "anlam": "Bir şeyin örnek alınarak yapılmış biçimi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr069_gercek_boyut",
+      "tur": "kelime",
+      "yazim": "gerçek boyut",
+      "anlam": "Bir şeyin olduğu büyüklük.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr069_kiyi",
+      "tur": "kelime",
+      "yazim": "kıyı",
+      "anlam": "Karanın denizle birleştiği şerit.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr069_sahil",
+      "tur": "kelime",
+      "yazim": "sahil",
+      "anlam": "Denize bitişik kara parçası.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr069_acik_deniz",
+      "tur": "kelime",
+      "yazim": "açık deniz",
+      "anlam": "Karadan uzak deniz kısmı.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr069_ticaret",
+      "tur": "kelime",
+      "yazim": "ticaret yollarının",
+      "anlam": "Mal alışverişinin yapıldığı güzergâhlar.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr069_alisveris",
+      "tur": "kelime",
+      "yazim": "alışveriş",
+      "anlam": "Mal ya da hizmetin karşılığında değiştirilmesi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr069_yol",
+      "tur": "kelime",
+      "yazim": "yol",
+      "anlam": "Bir yerden başka bir yere giden güzergâh.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr069_maket",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr069_maket"
+        },
+        {
+          "girdi": "hr069_model"
+        },
+        {
+          "girdi": "hr069_gercek_boyut"
+        }
+      ]
+    },
+    {
+      "ad": "hr069_kiyi",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr069_kiyi"
+        },
+        {
+          "girdi": "hr069_sahil"
+        },
+        {
+          "girdi": "hr069_acik_deniz"
+        }
+      ]
+    },
+    {
+      "ad": "hr069_ticaret",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr069_ticaret"
+        },
+        {
+          "girdi": "hr069_alisveris"
+        },
+        {
+          "girdi": "hr069_yol"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

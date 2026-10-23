@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr075_sestes",
+      "tur": "kelime",
+      "yazim": "sesteş",
+      "anlam": "Sesleri aynı, anlamları farklı olan sözcük.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr075_es_anlamli",
+      "tur": "kelime",
+      "yazim": "eş anlamlı",
+      "anlam": "Anlamları aynı ya da çok yakın olan sözcük.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr075_zit_anlamli",
+      "tur": "kelime",
+      "yazim": "zıt anlamlı",
+      "anlam": "Anlamları birbirinin tersi olan sözcük.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr075_baglam",
+      "tur": "kelime",
+      "yazim": "bağlamı",
+      "anlam": "Bir sözcüğün anlamını belirleyen çevre: önceki ve sonraki sözler, durum.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr075_cerceve",
+      "tur": "kelime",
+      "yazim": "çerçeve",
+      "anlam": "Bir olayı ya da sözü çevreleyen durum.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr075_yalitilmis",
+      "tur": "kelime",
+      "yazim": "yalıtılmış",
+      "anlam": "Çevresinden ayrılmış, bağlamı olmayan.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr075_etekleri",
+      "tur": "deyim",
+      "yazim": "etekleri zil çalmak",
+      "anlam": "Çok sevinmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr075_ici_icine_sigmamak",
+      "tur": "deyim",
+      "yazim": "içi içine sığmamak",
+      "anlam": "Çok heyecanlanmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr075_ici_burkulmak",
+      "tur": "deyim",
+      "yazim": "içi burkulmak",
+      "anlam": "Üzülmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr075_sestes",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr075_sestes"
+        },
+        {
+          "girdi": "hr075_es_anlamli"
+        },
+        {
+          "girdi": "hr075_zit_anlamli"
+        }
+      ]
+    },
+    {
+      "ad": "hr075_baglam",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr075_baglam"
+        },
+        {
+          "girdi": "hr075_cerceve"
+        },
+        {
+          "girdi": "hr075_yalitilmis"
+        }
+      ]
+    },
+    {
+      "ad": "hr075_etekleri",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr075_etekleri"
+        },
+        {
+          "girdi": "hr075_ici_icine_sigmamak"
+        },
+        {
+          "girdi": "hr075_ici_burkulmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

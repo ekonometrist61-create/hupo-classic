@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr089_ikileme",
+      "tur": "kelime",
+      "yazim": "ikileme",
+      "anlam": "Sözcüğün ya da sesin tekrarıyla anlamı pekiştiren söz biçimi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr089_yineleme",
+      "tur": "kelime",
+      "yazim": "yineleme",
+      "anlam": "Bir sözün ya da işin yeniden yapılması.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr089_sade_anlatim",
+      "tur": "kelime",
+      "yazim": "sade anlatım",
+      "anlam": "Süssüz, yalın ve açık anlatım.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr089_baglam",
+      "tur": "kelime",
+      "yazim": "bağlamı",
+      "anlam": "Bir sözün anlaşılmasını etkileyen çevre ve durum.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr089_cerceve",
+      "tur": "kelime",
+      "yazim": "çerçeve",
+      "anlam": "Bir olayı ya da sözü çevreleyen genel durum.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr089_yalitilmis_b",
+      "tur": "kelime",
+      "yazim": "yalıtılmış",
+      "anlam": "Çevresinden koparılmış, bağlamsız.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr089_gonul",
+      "tur": "deyim",
+      "yazim": "gönül almak",
+      "anlam": "Kırgınlığı gidermek, birinin gönlünü hoş etmek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr089_gonlunu_yapmak",
+      "tur": "deyim",
+      "yazim": "gönlünü yapmak",
+      "anlam": "Birinin üzüntüsünü gidermeye çalışmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr089_gonlunu_kirmak",
+      "tur": "deyim",
+      "yazim": "gönlünü kırmak",
+      "anlam": "Birinin üzülmesine yol açmak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr089_ikileme",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr089_ikileme"
+        },
+        {
+          "girdi": "hr089_yineleme"
+        },
+        {
+          "girdi": "hr089_sade_anlatim"
+        }
+      ]
+    },
+    {
+      "ad": "hr089_baglam",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr089_baglam"
+        },
+        {
+          "girdi": "hr089_cerceve"
+        },
+        {
+          "girdi": "hr089_yalitilmis_b"
+        }
+      ]
+    },
+    {
+      "ad": "hr089_gonul",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr089_gonul"
+        },
+        {
+          "girdi": "hr089_gonlunu_yapmak"
+        },
+        {
+          "girdi": "hr089_gonlunu_kirmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

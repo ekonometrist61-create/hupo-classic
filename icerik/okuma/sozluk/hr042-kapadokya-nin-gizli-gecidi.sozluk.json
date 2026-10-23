@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr042_peribacasi",
+      "tur": "kelime",
+      "yazim": "peribacaları",
+      "anlam": "Rüzgâr ve suyun yumuşak kayaçları aşındırmasıyla oluşan sivri kaya kuleleri.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_tepe",
+      "tur": "kelime",
+      "yazim": "tepe",
+      "anlam": "Çevresine göre yükselen kara parçası.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_vadi",
+      "tur": "kelime",
+      "yazim": "vadi",
+      "anlam": "İki yamaç arasında kalan, genellikle akarsuyun açtığı çukur.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_asindirmak",
+      "tur": "kelime",
+      "yazim": "aşındırmıştı",
+      "anlam": "Rüzgâr ve suyun yüzeyi yavaş yavaş eritip incelttiği.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_yontmak",
+      "tur": "kelime",
+      "yazim": "yontmak",
+      "anlam": "Taşa istenen biçimi vermek için kesip şekillendirmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_biriktirmek",
+      "tur": "kelime",
+      "yazim": "biriktirmek",
+      "anlam": "Bir şeyi üst üste toplayıp yığmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_kanal",
+      "tur": "kelime",
+      "yazim": "kanala",
+      "anlam": "Su akıtmak için açılmış uzun oluk ya da yol.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_oluk",
+      "tur": "kelime",
+      "yazim": "oluk",
+      "anlam": "Yağmur ya da su akması için yapılmış dar çukur.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_tunel",
+      "tur": "kelime",
+      "yazim": "tünel",
+      "anlam": "Yer altında ya da dağın içinde açılmış geçit.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_gozu_takilmak",
+      "tur": "deyim",
+      "yazim": "gözü takılmak",
+      "anlam": "Dikkati bir şeye çekilmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_gozden_kacirmak_b",
+      "tur": "deyim",
+      "yazim": "gözden kaçırmak",
+      "anlam": "Bir ayrıntıyı fark etmemek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr042_gozu_acik_b",
+      "tur": "deyim",
+      "yazim": "gözü açık olmak",
+      "anlam": "Dikkatli ve uyanık olmak.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr042_peribacasi",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr042_peribacasi"
+        },
+        {
+          "girdi": "hr042_tepe"
+        },
+        {
+          "girdi": "hr042_vadi"
+        }
+      ]
+    },
+    {
+      "ad": "hr042_asindirmak",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr042_asindirmak"
+        },
+        {
+          "girdi": "hr042_yontmak"
+        },
+        {
+          "girdi": "hr042_biriktirmek"
+        }
+      ]
+    },
+    {
+      "ad": "hr042_kanal",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr042_kanal"
+        },
+        {
+          "girdi": "hr042_oluk"
+        },
+        {
+          "girdi": "hr042_tunel"
+        }
+      ]
+    },
+    {
+      "ad": "hr042_gozu_takilmak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr042_gozu_takilmak"
+        },
+        {
+          "girdi": "hr042_gozden_kacirmak_b"
+        },
+        {
+          "girdi": "hr042_gozu_acik_b"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

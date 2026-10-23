@@ -1,0 +1,26 @@
+{
+  "hr025_uyum": {
+    "es": [
+      "hr025_ahenk"
+    ],
+    "zit": []
+  },
+  "hr025_ahenk": {
+    "es": [
+      "hr025_uyum"
+    ],
+    "zit": []
+  },
+  "hr025_catisma": {
+    "es": [],
+    "zit": [
+      "hr025_uyum"
+    ]
+  },
+  "hr025_kulak_asmak": {
+    "es": [],
+    "zit": [
+      "hr025_kulak_vermek"
+    ]
+  }
+}

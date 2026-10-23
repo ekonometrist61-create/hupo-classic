@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr055_afis",
+      "tur": "kelime",
+      "yazim": "afişinde",
+      "anlam": "Bir etkinliği ya da mesajı duyurmak için asılan büyük kâğıt.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_duyuru",
+      "tur": "kelime",
+      "yazim": "duyuru",
+      "anlam": "Bir haberin herkese bildirilmesi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_bulten",
+      "tur": "kelime",
+      "yazim": "bülten",
+      "anlam": "Düzenli çıkarılan kısa bilgi yayını.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_sozluk",
+      "tur": "kelime",
+      "yazim": "sözlük",
+      "anlam": "Sözcüklerin anlamlarının gösterildiği kaynak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_lugat",
+      "tur": "kelime",
+      "yazim": "lügat",
+      "anlam": "Sözcüklerin anlamlarının sıralandığı kitap.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_ansiklopedi",
+      "tur": "kelime",
+      "yazim": "ansiklopedi",
+      "anlam": "Konuları ayrıntılı anlatan çok ciltli eser.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_baglam",
+      "tur": "kelime",
+      "yazim": "bağlamı",
+      "anlam": "Bir sözün geçtiği cümle ve durum.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_cerceve",
+      "tur": "kelime",
+      "yazim": "çerçeve",
+      "anlam": "Bir şeyin içinde durduğu genel durum.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_baglantisizlik",
+      "tur": "kelime",
+      "yazim": "bağlantısızlık",
+      "anlam": "Birbiriyle ilgisi olmama durumu.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_kulak_misafiri",
+      "tur": "deyim",
+      "yazim": "kulak misafiri olmak",
+      "anlam": "İstemeden başkasının konuşmasını duymak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_kulak_kesilmek",
+      "tur": "deyim",
+      "yazim": "kulak kesilmek",
+      "anlam": "Büyük bir dikkatle dinlemek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr055_kulak_asmak_b",
+      "tur": "deyim",
+      "yazim": "kulak asmamak",
+      "anlam": "Söyleneni önemsemeden dinlememek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr055_afis",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr055_afis"
+        },
+        {
+          "girdi": "hr055_duyuru"
+        },
+        {
+          "girdi": "hr055_bulten"
+        }
+      ]
+    },
+    {
+      "ad": "hr055_sozluk",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr055_sozluk"
+        },
+        {
+          "girdi": "hr055_lugat"
+        },
+        {
+          "girdi": "hr055_ansiklopedi"
+        }
+      ]
+    },
+    {
+      "ad": "hr055_baglam",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr055_baglam"
+        },
+        {
+          "girdi": "hr055_cerceve"
+        },
+        {
+          "girdi": "hr055_baglantisizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr055_kulak_misafiri",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr055_kulak_misafiri"
+        },
+        {
+          "girdi": "hr055_kulak_kesilmek"
+        },
+        {
+          "girdi": "hr055_kulak_asmak_b"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

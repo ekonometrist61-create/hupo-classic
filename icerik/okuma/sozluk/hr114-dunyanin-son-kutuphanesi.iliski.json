@@ -1,0 +1,62 @@
+{
+  "hr114_supheli": {
+    "es": [
+      "hr114_belirsizlik"
+    ],
+    "zit": []
+  },
+  "hr114_kesinlik": {
+    "es": [],
+    "zit": [
+      "hr114_belirsizlik"
+    ]
+  },
+  "hr114_teyit": {
+    "es": [
+      "hr114_dogrulama"
+    ],
+    "zit": []
+  },
+  "hr114_uydurma": {
+    "es": [],
+    "zit": [
+      "hr114_dogrulama"
+    ]
+  },
+  "hr114_koleksiyon": {
+    "es": [
+      "hr114_arsiv"
+    ],
+    "zit": []
+  },
+  "hr114_envanter": {
+    "es": [
+      "hr114_arsiv"
+    ],
+    "zit": []
+  },
+  "hr114_ifade": {
+    "es": [
+      "hr114_taniklik"
+    ],
+    "zit": []
+  },
+  "hr114_anlati": {
+    "es": [
+      "hr114_taniklik"
+    ],
+    "zit": []
+  },
+  "hr114_telaslanmak": {
+    "es": [
+      "hr114_panik"
+    ],
+    "zit": []
+  },
+  "hr114_sakinlesmek": {
+    "es": [],
+    "zit": [
+      "hr114_panik"
+    ]
+  }
+}

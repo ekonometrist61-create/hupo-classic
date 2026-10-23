@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr070_hipotez",
+      "tur": "kelime",
+      "yazim": "hipotez",
+      "anlam": "Kanıtlanması gereken, deneye açık bir açıklama önerisi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr070_varsayim",
+      "tur": "kelime",
+      "yazim": "varsayım",
+      "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr070_kesin_bilgi",
+      "tur": "kelime",
+      "yazim": "kesin bilgi",
+      "anlam": "Kanıtlanmış ve doğrulanmış bilgi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr070_zamanlayici",
+      "tur": "kelime",
+      "yazim": "zamanlayıcı",
+      "anlam": "Belirlenen saatte bir işlemi başlatan ya da durduran düzenek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr070_sayac",
+      "tur": "kelime",
+      "yazim": "sayaç",
+      "anlam": "Olayların sayısını ya da süresini gösteren araç.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr070_veri",
+      "tur": "kelime",
+      "yazim": "verilerin",
+      "anlam": "Ölçülüp kaydedilen ham bilgi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr070_bilgi",
+      "tur": "kelime",
+      "yazim": "bilgi",
+      "anlam": "Bir konuda öğrenilen ya da bilinen şey.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr070_gurultu_c",
+      "tur": "kelime",
+      "yazim": "gürültü",
+      "anlam": "Ölçümü bozan rastgele ses ya da bilgi karmaşası.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr070_gozlerini_dikti",
+      "tur": "deyim",
+      "yazim": "gözlerini saate dikti",
+      "anlam": "Dikkatle bir şeye bakmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr070_goz_kulak",
+      "tur": "deyim",
+      "yazim": "göz kulak olmak",
+      "anlam": "Korumak, gözetmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr070_gozden_kacirmak_c",
+      "tur": "deyim",
+      "yazim": "gözden kaçırmak",
+      "anlam": "Bir ayrıntıyı fark etmemek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr070_hipotez",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr070_hipotez"
+        },
+        {
+          "girdi": "hr070_varsayim"
+        },
+        {
+          "girdi": "hr070_kesin_bilgi"
+        }
+      ]
+    },
+    {
+      "ad": "hr070_zamanlayici",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr070_zamanlayici"
+        },
+        {
+          "girdi": "hr070_sayac"
+        }
+      ]
+    },
+    {
+      "ad": "hr070_veri",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr070_veri"
+        },
+        {
+          "girdi": "hr070_bilgi"
+        },
+        {
+          "girdi": "hr070_gurultu_c"
+        }
+      ]
+    },
+    {
+      "ad": "hr070_gozlerini_dikti",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr070_gozlerini_dikti"
+        },
+        {
+          "girdi": "hr070_goz_kulak"
+        },
+        {
+          "girdi": "hr070_gozden_kacirmak_c"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

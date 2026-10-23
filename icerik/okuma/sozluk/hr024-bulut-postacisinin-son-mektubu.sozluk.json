@@ -1,0 +1,158 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr024_pusula",
+      "tur": "kelime",
+      "yazim": "pusulayı",
+      "anlam": "Kuzey, güney gibi yönleri gösteren iğneli araç.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr024_harita",
+      "tur": "kelime",
+      "yazim": "harita",
+      "anlam": "Bir yerin ya da bölgenin kâğıt üzerindeki gösterimi.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr024_adres",
+      "tur": "kelime",
+      "yazim": "adres",
+      "anlam": "Bir kişinin ya da yerin nerede olduğunu gösteren bilgi.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr024_konum",
+      "tur": "kelime",
+      "yazim": "konum",
+      "anlam": "Bir şeyin bulunduğu yer.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr024_isim",
+      "tur": "kelime",
+      "yazim": "isim",
+      "anlam": "Bir kişinin ya da yerin adı.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr024_yon",
+      "tur": "kelime",
+      "yazim": "yönlerini",
+      "anlam": "Gidilecek ya da bakılacak doğrultu.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr024_kuzey",
+      "tur": "kelime",
+      "yazim": "kuzey",
+      "anlam": "Pusulada üstte gösterilen yön.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr024_gozleri_parladi",
+      "tur": "deyim",
+      "yazim": "gözleri parladı",
+      "anlam": "Çok sevinmek, heyecanlanmak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr024_gozu_dolmak",
+      "tur": "deyim",
+      "yazim": "gözü dolmak",
+      "anlam": "Duygulanıp ağlamaklı olmak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr024_pusula",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr024_pusula"
+        },
+        {
+          "girdi": "hr024_harita"
+        }
+      ]
+    },
+    {
+      "ad": "hr024_adres",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr024_adres"
+        },
+        {
+          "girdi": "hr024_konum"
+        },
+        {
+          "girdi": "hr024_isim"
+        }
+      ]
+    },
+    {
+      "ad": "hr024_yon",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr024_yon"
+        },
+        {
+          "girdi": "hr024_kuzey"
+        }
+      ]
+    },
+    {
+      "ad": "hr024_gozleri_parladi",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr024_gozleri_parladi"
+        },
+        {
+          "girdi": "hr024_gozu_dolmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

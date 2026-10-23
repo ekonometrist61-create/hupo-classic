@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr037_pas",
+      "tur": "kelime",
+      "yazim": "pas",
+      "anlam": "Topu bir oyuncunun diğerine göndermesi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_sut",
+      "tur": "kelime",
+      "yazim": "şut",
+      "anlam": "Topa kuvvetle vurarak kaleye gönderme.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_orta",
+      "tur": "kelime",
+      "yazim": "orta",
+      "anlam": "Kanattan topu ceza sahasına gönderme.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_kale",
+      "tur": "kelime",
+      "yazim": "kaleye",
+      "anlam": "Gol atılan, iki direk ve üst çubuktan oluşan bölüm.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_file",
+      "tur": "kelime",
+      "yazim": "file",
+      "anlam": "Kalenin arkasına gerilen ağ.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_saha",
+      "tur": "kelime",
+      "yazim": "saha",
+      "anlam": "Maçın oynandığı alan.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_savunma",
+      "tur": "kelime",
+      "yazim": "savunma",
+      "anlam": "Rakibin hücumunu durdurmak için oynanan oyun.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_hucum",
+      "tur": "kelime",
+      "yazim": "hücum",
+      "anlam": "Rakip kaleye doğru ilerleme.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_korunma",
+      "tur": "kelime",
+      "yazim": "korunma",
+      "anlam": "Zarar görmemek için önlem alma.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_gozden_kacirmak",
+      "tur": "deyim",
+      "yazim": "gözden kaçırmak",
+      "anlam": "Bir ayrıntıyı ya da kişiyi fark etmemek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_gozu_acik",
+      "tur": "deyim",
+      "yazim": "gözü açık olmak",
+      "anlam": "Dikkatli ve uyanık olmak.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr037_goze_batmak",
+      "tur": "deyim",
+      "yazim": "göze batmak",
+      "anlam": "Dikkat çekmek.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr037_pas",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr037_pas"
+        },
+        {
+          "girdi": "hr037_sut"
+        },
+        {
+          "girdi": "hr037_orta"
+        }
+      ]
+    },
+    {
+      "ad": "hr037_kale",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr037_kale"
+        },
+        {
+          "girdi": "hr037_file"
+        },
+        {
+          "girdi": "hr037_saha"
+        }
+      ]
+    },
+    {
+      "ad": "hr037_savunma",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr037_savunma"
+        },
+        {
+          "girdi": "hr037_hucum"
+        },
+        {
+          "girdi": "hr037_korunma"
+        }
+      ]
+    },
+    {
+      "ad": "hr037_gozden_kacirmak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr037_gozden_kacirmak"
+        },
+        {
+          "girdi": "hr037_gozu_acik"
+        },
+        {
+          "girdi": "hr037_goze_batmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

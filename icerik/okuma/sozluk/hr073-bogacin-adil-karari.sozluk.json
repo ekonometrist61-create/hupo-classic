@@ -1,0 +1,392 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr073_kervanbasi",
+      "tur": "kelime",
+      "yazim": "kervanbaşı",
+      "anlam": "Kervanı yöneten, yolculuğu düzenleyen kişi.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_kafile_basi",
+      "tur": "kelime",
+      "yazim": "kafile başı",
+      "anlam": "Birlikte yolculuk eden bir topluluğun başında bulunan kişi.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_kervanci",
+      "tur": "kelime",
+      "yazim": "kervancı",
+      "anlam": "Kervanla mal taşıyarak geçimini sağlayan kişi.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_hukum",
+      "tur": "kelime",
+      "yazim": "hüküm",
+      "anlam": "Bir olay hakkında verilen kesin karar.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_karar",
+      "tur": "kelime",
+      "yazim": "karar",
+      "anlam": "Düşünüp bir konuda seçilen yol ya da verilen sonuç.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_yargi",
+      "tur": "kelime",
+      "yazim": "yargı",
+      "anlam": "Bir davada mahkemenin verdiği sonuç.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_olculu",
+      "tur": "kelime",
+      "yazim": "ölçülü",
+      "anlam": "Aşırıya kaçmayan, dengeli.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_olcusuz",
+      "tur": "kelime",
+      "yazim": "ölçüsüz",
+      "anlam": "Sınırı aşan, dengesiz.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_agirbasli",
+      "tur": "kelime",
+      "yazim": "ağırbaşlı",
+      "anlam": "Sakin, ciddi ve düşünerek davranan.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_soylenti",
+      "tur": "kelime",
+      "yazim": "söylentiyle",
+      "anlam": "Kanıtı belli olmayan, ağızdan ağıza yayılan haber.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_haber",
+      "tur": "kelime",
+      "yazim": "haber",
+      "anlam": "Bir olay hakkında kaynağı belli bilgi.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_dedikodu",
+      "tur": "kelime",
+      "yazim": "dedikodu",
+      "anlam": "Bir kişi hakkında onun yokken konuşulan, çoğu zaman asılsız laf.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_kanit",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir şeyin doğruluğunu gösteren belge, iz ya da bulgu.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_tahmin",
+      "tur": "kelime",
+      "yazim": "tahmin",
+      "anlam": "Kesin bilgiye dayanmadan yapılan yorum.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_iddia",
+      "tur": "kelime",
+      "yazim": "iddia",
+      "anlam": "Doğruluğu henüz gösterilmemiş bir öne sürme.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_kulak_cinlamak",
+      "tur": "deyim",
+      "yazim": "kulağında çınlamak",
+      "anlam": "Bir söz ya da sesin uzun süre aklından gitmemesi.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_kulagina_kupe",
+      "tur": "deyim",
+      "yazim": "kulağına küpe olmak",
+      "anlam": "Söylenen bir sözü ders alıp unutmamak.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_aklinda_kalmak",
+      "tur": "deyim",
+      "yazim": "aklında kalmak",
+      "anlam": "Bir şeyi unutmayıp hatırlamak.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_yuz_burusturmak",
+      "tur": "deyim",
+      "yazim": "yüzünü buruşturmak",
+      "anlam": "Hoşnutsuzluğunu yüz ifadesiyle belli etmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_kaslarini_catmak",
+      "tur": "deyim",
+      "yazim": "kaşlarını çatmak",
+      "anlam": "Hoşnutsuzluğunu yüzünü buruşturarak belli etmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_suratini_asmak",
+      "tur": "deyim",
+      "yazim": "suratını asmak",
+      "anlam": "Somurtup hoşnutsuz görünmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_araya_girmek",
+      "tur": "deyim",
+      "yazim": "araya girmek",
+      "anlam": "Tartışan iki tarafın arasına girip kavgayı yatıştırmaya çalışmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_ise_el_atmak",
+      "tur": "deyim",
+      "yazim": "işe el atmak",
+      "anlam": "Bir işe başlamak, işi üstlenmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr073_sozunu_kesmek",
+      "tur": "deyim",
+      "yazim": "sözünü kesmek",
+      "anlam": "Biri konuşurken lafını bölmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr073_kervanbasi",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr073_kervanbasi"
+        },
+        {
+          "girdi": "hr073_kafile_basi"
+        },
+        {
+          "girdi": "hr073_kervanci"
+        }
+      ]
+    },
+    {
+      "ad": "hr073_hukum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr073_hukum"
+        },
+        {
+          "girdi": "hr073_karar"
+        },
+        {
+          "girdi": "hr073_yargi"
+        }
+      ]
+    },
+    {
+      "ad": "hr073_olculu",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr073_olculu"
+        },
+        {
+          "girdi": "hr073_olcusuz"
+        },
+        {
+          "girdi": "hr073_agirbasli"
+        }
+      ]
+    },
+    {
+      "ad": "hr073_soylenti",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr073_soylenti"
+        },
+        {
+          "girdi": "hr073_haber"
+        },
+        {
+          "girdi": "hr073_dedikodu"
+        }
+      ]
+    },
+    {
+      "ad": "hr073_kanit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr073_kanit"
+        },
+        {
+          "girdi": "hr073_tahmin"
+        },
+        {
+          "girdi": "hr073_iddia"
+        }
+      ]
+    },
+    {
+      "ad": "hr073_kulak_cinlamak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr073_kulak_cinlamak"
+        },
+        {
+          "girdi": "hr073_kulagina_kupe"
+        },
+        {
+          "girdi": "hr073_aklinda_kalmak"
+        }
+      ]
+    },
+    {
+      "ad": "hr073_yuz_burusturmak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr073_yuz_burusturmak"
+        },
+        {
+          "girdi": "hr073_kaslarini_catmak"
+        },
+        {
+          "girdi": "hr073_suratini_asmak"
+        }
+      ]
+    },
+    {
+      "ad": "hr073_araya_girmek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr073_araya_girmek"
+        },
+        {
+          "girdi": "hr073_ise_el_atmak"
+        },
+        {
+          "girdi": "hr073_sozunu_kesmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

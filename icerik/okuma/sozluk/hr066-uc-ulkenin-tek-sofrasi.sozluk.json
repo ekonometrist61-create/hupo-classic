@@ -1,0 +1,124 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr066_olcu",
+      "tur": "kelime",
+      "yazim": "ölçüler",
+      "anlam": "Bir miktarı belirleyen ölçü değerleri.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr066_miktar",
+      "tur": "kelime",
+      "yazim": "miktar",
+      "anlam": "Bir şeyin ne kadar olduğu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr066_belirsizlik",
+      "tur": "kelime",
+      "yazim": "belirsizlik",
+      "anlam": "Ne olduğunun kesin bilinmemesi durumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr066_hacim",
+      "tur": "kelime",
+      "yazim": "hacim",
+      "anlam": "Bir cismin uzayda kapladığı yer.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr066_kapasite",
+      "tur": "kelime",
+      "yazim": "kapasite",
+      "anlam": "Bir kabın alabileceği en büyük miktar.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr066_kutle",
+      "tur": "kelime",
+      "yazim": "kütleyle",
+      "anlam": "Bir maddenin içerdiği madde miktarını gösteren büyüklük.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr066_agirlik",
+      "tur": "kelime",
+      "yazim": "ağırlık",
+      "anlam": "Bir cismin yer çekimi nedeniyle çektiği kuvvet.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr066_olcu",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr066_olcu"
+        },
+        {
+          "girdi": "hr066_miktar"
+        },
+        {
+          "girdi": "hr066_belirsizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr066_hacim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr066_hacim"
+        },
+        {
+          "girdi": "hr066_kapasite"
+        }
+      ]
+    },
+    {
+      "ad": "hr066_kutle",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr066_kutle"
+        },
+        {
+          "girdi": "hr066_agirlik"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

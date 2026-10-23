@@ -1,0 +1,186 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr052_kitabe",
+      "tur": "kelime",
+      "yazim": "kitabe",
+      "anlam": "Taş ya da yapı üzerine yazılmış yazı.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr052_yazit",
+      "tur": "kelime",
+      "yazim": "yazıt",
+      "anlam": "Bir yüzeye kazınmış ya da yazılmış eski yazı.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr052_muhur",
+      "tur": "kelime",
+      "yazim": "mühür",
+      "anlam": "Bir belgeyi resmî kılan damga.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr052_damga_b",
+      "tur": "kelime",
+      "yazim": "damga",
+      "anlam": "Bir şeyin üzerine basılan iz ya da işaret.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr052_imza",
+      "tur": "kelime",
+      "yazim": "imza",
+      "anlam": "Bir kişinin adını kendi el yazısıyla yazması.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr052_munazara",
+      "tur": "kelime",
+      "yazim": "münazaralara",
+      "anlam": "Belli kurallara göre yapılan, iki tarafın savunduğu tartışma.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr052_tartisma",
+      "tur": "kelime",
+      "yazim": "tartışma",
+      "anlam": "Bir konuda farklı görüşlerin karşılaştırılması.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr052_sessizlik",
+      "tur": "kelime",
+      "yazim": "sessizlik",
+      "anlam": "Hiç ses çıkmaması durumu.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr052_araya_girmek",
+      "tur": "deyim",
+      "yazim": "araya girmek",
+      "anlam": "Bir konuşmaya ya da tartışmaya karışmak.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr052_sozunu_kesmek",
+      "tur": "deyim",
+      "yazim": "sözünü kesmek",
+      "anlam": "Biri konuşurken lafını bölmek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr052_sessiz_kalmak",
+      "tur": "kelime",
+      "yazim": "sessiz kalmak",
+      "anlam": "Konuşmadan beklemek.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr052_kitabe",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr052_kitabe"
+        },
+        {
+          "girdi": "hr052_yazit"
+        }
+      ]
+    },
+    {
+      "ad": "hr052_muhur",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr052_muhur"
+        },
+        {
+          "girdi": "hr052_damga_b"
+        },
+        {
+          "girdi": "hr052_imza"
+        }
+      ]
+    },
+    {
+      "ad": "hr052_munazara",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr052_munazara"
+        },
+        {
+          "girdi": "hr052_tartisma"
+        },
+        {
+          "girdi": "hr052_sessizlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr052_araya_girmek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr052_araya_girmek"
+        },
+        {
+          "girdi": "hr052_sozunu_kesmek"
+        },
+        {
+          "girdi": "hr052_sessiz_kalmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

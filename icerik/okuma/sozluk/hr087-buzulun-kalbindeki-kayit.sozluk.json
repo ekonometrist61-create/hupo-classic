@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr087_veri",
+      "tur": "kelime",
+      "yazim": "veri",
+      "anlam": "Gözlem ya da ölçümle elde edilen ham bilgi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr087_olcum",
+      "tur": "kelime",
+      "yazim": "ölçüm",
+      "anlam": "Bir şeyin miktarını ya da büyüklüğünü belirleme işi.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr087_tahmin_v",
+      "tur": "kelime",
+      "yazim": "tahmin",
+      "anlam": "Ölçmeden yapılan yorum.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr087_egilim",
+      "tur": "kelime",
+      "yazim": "eğilim",
+      "anlam": "Uzun süre gözlenen genel yön.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr087_gidis",
+      "tur": "kelime",
+      "yazim": "gidiş",
+      "anlam": "Bir olayın geliştiği yön.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr087_rastlanti",
+      "tur": "kelime",
+      "yazim": "rastlantı",
+      "anlam": "Plansız, tesadüfen olan durum.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr087_ic",
+      "tur": "deyim",
+      "yazim": "iç geçirdi",
+      "anlam": "Üzüntüyle ya da endişeyle derin bir nefes vermek.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr087_icini_cekmek",
+      "tur": "deyim",
+      "yazim": "içini çekmek",
+      "anlam": "Üzüntüyle derin nefes almak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr087_ici_rahatlamak",
+      "tur": "deyim",
+      "yazim": "içi rahatlamak",
+      "anlam": "Endişesi geçip rahatlamak.",
+      "sinif_alt": 6,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr087_veri",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr087_veri"
+        },
+        {
+          "girdi": "hr087_olcum"
+        },
+        {
+          "girdi": "hr087_tahmin_v"
+        }
+      ]
+    },
+    {
+      "ad": "hr087_egilim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr087_egilim"
+        },
+        {
+          "girdi": "hr087_gidis"
+        },
+        {
+          "girdi": "hr087_rastlanti"
+        }
+      ]
+    },
+    {
+      "ad": "hr087_ic",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr087_ic"
+        },
+        {
+          "girdi": "hr087_icini_cekmek"
+        },
+        {
+          "girdi": "hr087_ici_rahatlamak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

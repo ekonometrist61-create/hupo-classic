@@ -1,0 +1,172 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr063_golge",
+      "tur": "kelime",
+      "yazim": "gölgesine",
+      "anlam": "Bir cismin ışığı engellemesiyle oluşan karanlık alan.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr063_karti",
+      "tur": "kelime",
+      "yazim": "karartı",
+      "anlam": "Bir şeyin yüzeyde oluşturduğu koyu iz.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr063_isik",
+      "tur": "kelime",
+      "yazim": "ışık",
+      "anlam": "Gözümüzün gördüğü aydınlatıcı enerji.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr063_terazi",
+      "tur": "kelime",
+      "yazim": "teraziyi",
+      "anlam": "Ağırlığı iki kefe üzerinde karşılaştırarak ölçen araç.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr063_kantar",
+      "tur": "kelime",
+      "yazim": "kantar",
+      "anlam": "Ağırlık ölçmek için kullanılan büyük alet.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr063_medrese",
+      "tur": "kelime",
+      "yazim": "medresenin",
+      "anlam": "Geçmişte din ve bilim eğitimi verilen eğitim kurumu.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr063_mektep",
+      "tur": "kelime",
+      "yazim": "mektep",
+      "anlam": "Eski dilde okul.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr063_kutuphane",
+      "tur": "kelime",
+      "yazim": "kütüphane",
+      "anlam": "Kitapların saklandığı ve okunduğu yer.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr063_boynunu_bukmek",
+      "tur": "deyim",
+      "yazim": "boynunu bükmek",
+      "anlam": "Çaresiz ve acınacak bir duruma düşmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr063_basini_egmek",
+      "tur": "deyim",
+      "yazim": "başını eğmek",
+      "anlam": "Saygı ya da mahcubiyetle başını indirmek.",
+      "sinif_alt": 4,
+      "sinif_ust": 6,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr063_golge",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr063_golge"
+        },
+        {
+          "girdi": "hr063_karti"
+        },
+        {
+          "girdi": "hr063_isik"
+        }
+      ]
+    },
+    {
+      "ad": "hr063_terazi",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr063_terazi"
+        },
+        {
+          "girdi": "hr063_kantar"
+        }
+      ]
+    },
+    {
+      "ad": "hr063_medrese",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr063_medrese"
+        },
+        {
+          "girdi": "hr063_mektep"
+        },
+        {
+          "girdi": "hr063_kutuphane"
+        }
+      ]
+    },
+    {
+      "ad": "hr063_boynunu_bukmek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr063_boynunu_bukmek"
+        },
+        {
+          "girdi": "hr063_basini_egmek"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

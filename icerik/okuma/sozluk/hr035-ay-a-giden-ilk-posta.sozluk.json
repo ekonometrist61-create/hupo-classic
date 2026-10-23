@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr035_uydu",
+      "tur": "kelime",
+      "yazim": "uydunun",
+      "anlam": "Bir gezegenin çevresinde dönen gök cismi ya da bu amaçla gönderilen araç.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr035_gezegen",
+      "tur": "kelime",
+      "yazim": "gezegen",
+      "anlam": "Bir yıldızın çevresinde dönen büyük gök cismi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr035_yildiz",
+      "tur": "kelime",
+      "yazim": "yıldız",
+      "anlam": "Kendi ışığını yayan gök cismi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr035_maket",
+      "tur": "kelime",
+      "yazim": "maketleri",
+      "anlam": "Bir şeyin küçültülmüş modeli.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr035_model",
+      "tur": "kelime",
+      "yazim": "model",
+      "anlam": "Bir şeyin örnek alınan ya da küçültülmüş biçimi.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr035_gercek_boyut",
+      "tur": "kelime",
+      "yazim": "gerçek boyut",
+      "anlam": "Bir şeyin olduğu büyüklük.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr035_gecikme",
+      "tur": "kelime",
+      "yazim": "gecikme",
+      "anlam": "Bir şeyin beklenenden sonra olması.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr035_bekleme",
+      "tur": "kelime",
+      "yazim": "bekleme",
+      "anlam": "Bir şey olana kadar zaman geçirme.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr035_acele",
+      "tur": "kelime",
+      "yazim": "acele",
+      "anlam": "Bir işi çabuk yapma isteği.",
+      "sinif_alt": 3,
+      "sinif_ust": 5,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr035_uydu",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr035_uydu"
+        },
+        {
+          "girdi": "hr035_gezegen"
+        },
+        {
+          "girdi": "hr035_yildiz"
+        }
+      ]
+    },
+    {
+      "ad": "hr035_maket",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr035_maket"
+        },
+        {
+          "girdi": "hr035_model"
+        },
+        {
+          "girdi": "hr035_gercek_boyut"
+        }
+      ]
+    },
+    {
+      "ad": "hr035_gecikme",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr035_gecikme"
+        },
+        {
+          "girdi": "hr035_bekleme"
+        },
+        {
+          "girdi": "hr035_acele"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

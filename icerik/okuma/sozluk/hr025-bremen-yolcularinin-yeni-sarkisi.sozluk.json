@@ -1,0 +1,200 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr025_degirmen",
+      "tur": "kelime",
+      "yazim": "değirmene",
+      "anlam": "Tahılı su ya da rüzgârla öğüten yapı.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_fabrika",
+      "tur": "kelime",
+      "yazim": "fabrika",
+      "anlam": "Büyük miktarda ürün üreten tesis.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_firin",
+      "tur": "kelime",
+      "yazim": "fırın",
+      "anlam": "Ekmek ya da yemek pişirilen yer.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_ritim",
+      "tur": "kelime",
+      "yazim": "ritim",
+      "anlam": "Seslerin düzenli biçimde tekrar etmesi.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_tempo",
+      "tur": "kelime",
+      "yazim": "tempo",
+      "anlam": "Müzik parçasının hızı.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_karmasa",
+      "tur": "kelime",
+      "yazim": "karmaşa",
+      "anlam": "Düzensiz, birbirine karışmış durum.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_uyum",
+      "tur": "kelime",
+      "yazim": "uyum",
+      "anlam": "Birlikte düzenli ve dengeli çalışma durumu.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_ahenk",
+      "tur": "kelime",
+      "yazim": "ahenk",
+      "anlam": "Seslerin ya da kişilerin birbirine güzel uyması.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_catisma",
+      "tur": "kelime",
+      "yazim": "çatışma",
+      "anlam": "Birbirine zıt düşen kişiler arasındaki anlaşmazlık.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_kulak_vermek",
+      "tur": "deyim",
+      "yazim": "kulak verdi",
+      "anlam": "Dikkatle dinlemek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_kulagina_kupe",
+      "tur": "deyim",
+      "yazim": "kulağına küpe olmak",
+      "anlam": "Yaşadığı olaydan ders alıp unutmamak.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr025_kulak_asmak",
+      "tur": "deyim",
+      "yazim": "kulak asmamak",
+      "anlam": "Söylenene önem vermeyip dinlememek.",
+      "sinif_alt": 2,
+      "sinif_ust": 4,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr025_degirmen",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr025_degirmen"
+        },
+        {
+          "girdi": "hr025_fabrika"
+        },
+        {
+          "girdi": "hr025_firin"
+        }
+      ]
+    },
+    {
+      "ad": "hr025_ritim",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr025_ritim"
+        },
+        {
+          "girdi": "hr025_tempo"
+        },
+        {
+          "girdi": "hr025_karmasa"
+        }
+      ]
+    },
+    {
+      "ad": "hr025_uyum",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr025_uyum"
+        },
+        {
+          "girdi": "hr025_ahenk"
+        },
+        {
+          "girdi": "hr025_catisma"
+        }
+      ]
+    },
+    {
+      "ad": "hr025_kulak_vermek",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr025_kulak_vermek"
+        },
+        {
+          "girdi": "hr025_kulagina_kupe"
+        },
+        {
+          "girdi": "hr025_kulak_asmak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

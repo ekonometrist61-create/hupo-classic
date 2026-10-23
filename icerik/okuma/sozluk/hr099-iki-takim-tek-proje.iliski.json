@@ -1,0 +1,62 @@
+{
+  "hr099_delil": {
+    "es": [
+      "hr099_kanit"
+    ],
+    "zit": []
+  },
+  "hr099_iddia": {
+    "es": [],
+    "zit": [
+      "hr099_kanit"
+    ]
+  },
+  "hr099_ulasilabilirlik": {
+    "es": [
+      "hr099_erisilebilirlik"
+    ],
+    "zit": []
+  },
+  "hr099_kapsayicilik": {
+    "es": [
+      "hr099_erisilebilirlik"
+    ],
+    "zit": []
+  },
+  "hr099_bilgi": {
+    "es": [
+      "hr099_veri"
+    ],
+    "zit": []
+  },
+  "hr099_kayit": {
+    "es": [
+      "hr099_veri"
+    ],
+    "zit": []
+  },
+  "hr099_itimat": {
+    "es": [
+      "hr099_guvenilir"
+    ],
+    "zit": []
+  },
+  "hr099_guvenilmez": {
+    "es": [],
+    "zit": [
+      "hr099_guvenilir"
+    ]
+  },
+  "hr099_soze_girmek": {
+    "es": [
+      "hr099_agiz"
+    ],
+    "zit": []
+  },
+  "hr099_agzini_kapamak": {
+    "es": [],
+    "zit": [
+      "hr099_agiz"
+    ]
+  }
+}

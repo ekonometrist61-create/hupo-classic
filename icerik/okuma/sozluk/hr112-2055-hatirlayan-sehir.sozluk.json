@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr112_tahmin",
+      "tur": "kelime",
+      "yazim": "tahmini",
+      "anlam": "Eldeki bilgilerden yola çıkarak öngörülen sonuç.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_ongoru",
+      "tur": "kelime",
+      "yazim": "öngörü",
+      "anlam": "Gelecekte olabilecek bir durumu önceden görme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_kesinlik",
+      "tur": "kelime",
+      "yazim": "kesinlik",
+      "anlam": "Şüphe bırakmayan, emin olunan durum.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_minimizasyon",
+      "tur": "kelime",
+      "yazim": "veri minimizasyonunun",
+      "anlam": "Bir hizmet için yalnızca gerekli olan en az verinin toplanması ilkesi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_veri_azaltma",
+      "tur": "kelime",
+      "yazim": "veri azaltma",
+      "anlam": "Gereksiz verilerin toplanmasını ve tutulmasını azaltma.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_veri_birikimi",
+      "tur": "kelime",
+      "yazim": "veri birikimi",
+      "anlam": "Gerekli olup olmadığına bakılmadan biriken çok büyük veri yığını.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_itiraz",
+      "tur": "kelime",
+      "yazim": "itirazı",
+      "anlam": "Bir görüşe ya da karara karşı çıkılarak öne sürülen düşünce.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_karsi_sav",
+      "tur": "kelime",
+      "yazim": "karşı sav",
+      "anlam": "Bir savın doğruluğunu çürütmek için ileri sürülen düşünce.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_onay",
+      "tur": "kelime",
+      "yazim": "onay",
+      "anlam": "Bir görüşü ya da kararı uygun bulup kabul etme.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_kayit",
+      "tur": "kelime",
+      "yazim": "kayıtlarla",
+      "anlam": "Bir olayın ya da bilginin yazıya ya da veriye geçirilmiş hâli.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_belge",
+      "tur": "kelime",
+      "yazim": "belge",
+      "anlam": "Bir bilgiyi ya da olayı kanıtlayan yazılı ya da basılı kâğıt.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_unutma",
+      "tur": "kelime",
+      "yazim": "unutma",
+      "anlam": "Bir bilgiyi zihninde ya da kayıtta tutmamak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_agirlik",
+      "tur": "deyim",
+      "yazim": "içine bir ağırlık oturdu",
+      "anlam": "Bir olay yüzünden üzüntü ya da sorumluluk duygusu yaşamak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_icine_agirlik_cokmek",
+      "tur": "deyim",
+      "yazim": "içine ağırlık çökmek",
+      "anlam": "Üzüntüyle dolup bunaltıcı bir duygu yaşamak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr112_ici_rahatlamak",
+      "tur": "deyim",
+      "yazim": "içi rahatlamak",
+      "anlam": "Bir kaygı geçince huzur bulmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr112_tahmin",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr112_tahmin"
+        },
+        {
+          "girdi": "hr112_ongoru"
+        },
+        {
+          "girdi": "hr112_kesinlik"
+        }
+      ]
+    },
+    {
+      "ad": "hr112_minimizasyon",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr112_minimizasyon"
+        },
+        {
+          "girdi": "hr112_veri_azaltma"
+        },
+        {
+          "girdi": "hr112_veri_birikimi"
+        }
+      ]
+    },
+    {
+      "ad": "hr112_itiraz",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr112_itiraz"
+        },
+        {
+          "girdi": "hr112_karsi_sav"
+        },
+        {
+          "girdi": "hr112_onay"
+        }
+      ]
+    },
+    {
+      "ad": "hr112_kayit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr112_kayit"
+        },
+        {
+          "girdi": "hr112_belge"
+        },
+        {
+          "girdi": "hr112_unutma"
+        }
+      ]
+    },
+    {
+      "ad": "hr112_agirlik",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr112_agirlik"
+        },
+        {
+          "girdi": "hr112_icine_agirlik_cokmek"
+        },
+        {
+          "girdi": "hr112_ici_rahatlamak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

@@ -1,0 +1,152 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr047_oruntu",
+      "tur": "kelime",
+      "yazim": "örüntünün",
+      "anlam": "Belli bir kurala göre tekrar eden ya da ilerleyen dizi.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr047_dizi",
+      "tur": "kelime",
+      "yazim": "dizi",
+      "anlam": "Sayı ya da şekillerin sıralı bir düzeni.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr047_rastgelelik",
+      "tur": "kelime",
+      "yazim": "rastgelelik",
+      "anlam": "Bir kurala bağlı olmayan, tesadüfi durum.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr047_sutun",
+      "tur": "kelime",
+      "yazim": "sütuna",
+      "anlam": "Tablonun yukarıdan aşağıya uzanan dikey bölümü.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr047_kolon",
+      "tur": "kelime",
+      "yazim": "kolon",
+      "anlam": "Tabloda dikey olarak sıralanan hücreler.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr047_satir",
+      "tur": "kelime",
+      "yazim": "satır",
+      "anlam": "Tabloda yatay olarak sıralanan hücreler.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr047_etiket",
+      "tur": "kelime",
+      "yazim": "etiket",
+      "anlam": "Bir şeyin üzerine yapıştırılan, bilgi taşıyan kâğıt.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr047_kart",
+      "tur": "kelime",
+      "yazim": "kart",
+      "anlam": "Üzerine bilgi yazılan küçük kâğıt parçası.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr047_damga",
+      "tur": "kelime",
+      "yazim": "damga",
+      "anlam": "Bir şeyin üzerine basılan iz ya da işaret.",
+      "sinif_alt": 5,
+      "sinif_ust": 7,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr047_oruntu",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr047_oruntu"
+        },
+        {
+          "girdi": "hr047_dizi"
+        },
+        {
+          "girdi": "hr047_rastgelelik"
+        }
+      ]
+    },
+    {
+      "ad": "hr047_sutun",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr047_sutun"
+        },
+        {
+          "girdi": "hr047_kolon"
+        },
+        {
+          "girdi": "hr047_satir"
+        }
+      ]
+    },
+    {
+      "ad": "hr047_etiket",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr047_etiket"
+        },
+        {
+          "girdi": "hr047_kart"
+        },
+        {
+          "girdi": "hr047_damga"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}
