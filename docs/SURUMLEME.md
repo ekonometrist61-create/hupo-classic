@@ -38,6 +38,9 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.2.1 · 2026-10-23
+
+Düzeltme (PATCH). Hikâye Atölyesi: "İncele ve yönet" detayı listenin altında açılıp oraya kaydırılıyor; ağır içerik yalnız düzenleme ve önizleme istenince yükleniyor; yayın adımları detayda gösteriliyor.
 
 ### app 1.1.0+2 · panel 0.2.0 · 2026-10-23
 

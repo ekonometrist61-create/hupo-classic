@@ -125,7 +125,10 @@
         "arsivOnay": "Yayındaki sürüm arşive alınacak ve çocuklara gösterilmeyecek. Devam edilsin mi?",
         "denetimKaydedildi": "Denetim kaydedildi.",
         "durumDegisti": "Durum güncellendi: {durum}.",
-        "onizlemeBaslik": "Önizleme (örnek adlarla)"
+        "onizlemeBaslik": "Önizleme (örnek adlarla)",
+        "icerikYukle": "Düzenle, sil ve önizleme için içeriği yükle",
+        "yayinAdimlari": "Yayına almak için sırayla: 1) Taslağı \"İncelemeye al\" ile incelemeye al. 2) Ajan A ve Ajan B denetimini \"Geçti\" yap. 3) İnsan onayını \"Onaylandı\" yap. 4) \"Denetimi kaydet\"e bas. 5) \"Yayınla\" düğmesi açılır. Yayındaki sürüm değişmez; yeni sürüm yayına alınınca eskisi arşive geçer.",
+        "icerikYukleNot": "Hikâye paketi büyük olduğu için bu bölüm istenince yüklenir."
       },
       "onizleme": {
         "not": "Önizleme sabit örnek adlarla çizilir: kahraman \"{kahraman}\", yol arkadaşı \"{yoldas}\". Gerçek çocuk adı kullanılmaz. Kesikli çerçeveli etiketler şablon yer tutuculardır.",

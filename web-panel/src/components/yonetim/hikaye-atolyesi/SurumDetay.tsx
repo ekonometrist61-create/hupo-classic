@@ -2,7 +2,7 @@
 
 // Seçili sürümün denetimi, durum akışı ve önizlemesi.
 // Dört göz ve yayın kapısı sunucuda zorlanır; burada yalnızca gösterilir, hata nazikçe iletilir.
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useTranslations } from "next-intl";
 
 import { adminCall, useAdminRpc } from "@/components/yonetim/useAdminRpc";
@@ -37,16 +37,31 @@ interface Props {
 export default function SurumDetay({ satir, onKapat, onDegisti }: Props) {
   const t = useTranslations("yonetim.hikayeAtolyesi");
   const hata = useHataMetni();
-  const icerik = useAdminRpc<IcerikYaniti>("okuma_surum_icerik_getir", { p_surum_id: satir.surum_id });
+  const kok = useRef<HTMLElement | null>(null);
+  // Ağır paket (içerik) yalnız düzenleme ve önizleme istenince yüklenir; durum ve denetim listedeki bilgiyle hemen görünür.
+  const [icerikIstendi, setIcerikIstendi] = useState(false);
+  const icerik = useAdminRpc<IcerikYaniti>(
+    "okuma_surum_icerik_getir",
+    { p_surum_id: satir.surum_id },
+    { enabled: icerikIstendi },
+  );
   const [islemde, setIslemde] = useState(false);
   const [mesaj, setMesaj] = useState<string | null>(null);
   const [hataMesaji, setHataMesaji] = useState<string | null>(null);
   // Denetim taslağı: kullanıcı değiştirene kadar sunucudaki değer gösterilir.
   const [duzenleme, setDuzenleme] = useState<DenetimDurumu | null>(null);
+  // Başarılı işlemden sonra listedeki satır eski kalabilir; yerel değer en son sunucu yanıtını taşır.
+  const [yerel, setYerel] = useState<{ durum?: OkumaDurum; denetim?: DenetimDurumu }>({});
 
-  const sunucuDenetim: DenetimDurumu = icerik.data?.denetim ?? satir.denetim ?? {};
+  useEffect(() => {
+    // Detay listenin altında açılır; kullanıcı görsün diye oraya kaydırılır ve başlığa odaklanılır.
+    kok.current?.scrollIntoView({ behavior: "smooth", block: "start" });
+    kok.current?.focus();
+  }, []);
+
+  const sunucuDenetim: DenetimDurumu = yerel.denetim ?? icerik.data?.denetim ?? satir.denetim ?? {};
   const denetim: DenetimDurumu = { ajan_a: "pending", ajan_b: "pending", insan: "pending", ...sunucuDenetim, ...(duzenleme ?? {}) };
-  const durum: OkumaDurum = icerik.data?.durum ?? satir.durum;
+  const durum: OkumaDurum = yerel.durum ?? icerik.data?.durum ?? satir.durum;
   const denetimDuzenlenebilir = durum === "taslak" || durum === "incelemede";
   const yayinaHazir = denetim.ajan_a === "pass" && denetim.ajan_b === "pass" && denetim.insan === "approved";
 
@@ -66,7 +81,8 @@ export default function SurumDetay({ satir, onKapat, onDegisti }: Props) {
     }
     setMesaj(basari);
     setDuzenleme(null);
-    icerik.reload();
+    setYerel((y) => ({ durum: hedef, denetim: denetimGonder ?? y.denetim }));
+    if (icerikIstendi) icerik.reload();
     onDegisti();
   };
 
@@ -83,7 +99,12 @@ export default function SurumDetay({ satir, onKapat, onDegisti }: Props) {
   };
 
   return (
-    <section aria-label={t("detay.baslik", { baslik: satir.baslik })} className="mt-6 rounded-2xl border border-brand-200 p-5 sm:p-6 dark:border-brand-800">
+    <section
+      ref={kok}
+      tabIndex={-1}
+      aria-label={t("detay.baslik", { baslik: satir.baslik })}
+      className="mt-6 scroll-mt-24 rounded-2xl border border-brand-200 p-5 outline-none sm:p-6 dark:border-brand-800"
+    >
       <div className="mb-4 flex flex-wrap items-start justify-between gap-3">
         <div className="min-w-0">
           <h4 className="text-base font-semibold wrap-break-word text-gray-800 dark:text-white/90">{satir.baslik}</h4>
@@ -96,16 +117,17 @@ export default function SurumDetay({ satir, onKapat, onDegisti }: Props) {
         </button>
       </div>
 
-      <VeriDurumu loading={icerik.loading} error={icerik.error} missing={icerik.missing} onRetry={icerik.reload} />
+      <div className="space-y-6">
+        <p className="rounded-xl bg-gray-50 p-3 text-theme-xs text-gray-600 dark:bg-gray-800/60 dark:text-gray-300">{t("detay.yayinAdimlari")}</p>
 
-      {!icerik.loading && !icerik.error && !icerik.missing && icerik.data && (
-        <div className="space-y-6">
           {/* Denetim */}
           <div>
             <h5 className="mb-1 text-sm font-semibold text-gray-700 dark:text-gray-300">{t("detay.denetimBaslik")}</h5>
-            <p className="mb-3 text-theme-xs text-gray-500 dark:text-gray-400">
-              {t("detay.dortGoz", { olusturan: kisalt(icerik.data.olusturan_id), inceleyen: kisalt(icerik.data.inceleyen_id) })}
-            </p>
+            {icerik.data && (
+              <p className="mb-3 text-theme-xs text-gray-500 dark:text-gray-400">
+                {t("detay.dortGoz", { olusturan: kisalt(icerik.data.olusturan_id), inceleyen: kisalt(icerik.data.inceleyen_id) })}
+              </p>
+            )}
             <div className="grid gap-3 sm:grid-cols-3">
               {(["ajan_a", "ajan_b", "insan"] as const).map((anahtar) => (
                 <div key={anahtar}>
@@ -167,20 +189,30 @@ export default function SurumDetay({ satir, onKapat, onDegisti }: Props) {
             </div>
           </div>
 
-          {/* Düzenle / sil */}
-          <SurumAraclari satir={satir} durum={durum} paket={icerik.data.paket} onDegisti={onDegisti} onSilindi={onKapat} />
-
-          {/* Önizleme */}
-          <details className="group">
-            <summary className="min-h-11 cursor-pointer text-sm font-semibold text-gray-700 dark:text-gray-300">
-              {t("detay.onizlemeBaslik")}
-            </summary>
-            <div className="mt-3">
-              <SurumOnizleme paket={icerik.data.paket} slug={satir.slug} />
+          {/* Düzenle / sil / önizleme: ağır içerik ancak istenince yüklenir */}
+          {!icerikIstendi && (
+            <div>
+              <button type="button" className={outlineBtn} onClick={() => setIcerikIstendi(true)}>
+                {t("detay.icerikYukle")}
+              </button>
+              <p className="mt-2 text-theme-xs text-gray-500 dark:text-gray-400">{t("detay.icerikYukleNot")}</p>
             </div>
-          </details>
-        </div>
-      )}
+          )}
+          <VeriDurumu loading={icerik.loading} error={icerik.error} missing={icerik.missing} onRetry={icerik.reload} />
+          {icerik.data && (
+            <>
+              <SurumAraclari satir={satir} durum={durum} paket={icerik.data.paket} onDegisti={onDegisti} onSilindi={onKapat} />
+              <details className="group">
+                <summary className="min-h-11 cursor-pointer text-sm font-semibold text-gray-700 dark:text-gray-300">
+                  {t("detay.onizlemeBaslik")}
+                </summary>
+                <div className="mt-3">
+                  <SurumOnizleme paket={icerik.data.paket} slug={satir.slug} />
+                </div>
+              </details>
+            </>
+          )}
+      </div>
     </section>
   );
 }

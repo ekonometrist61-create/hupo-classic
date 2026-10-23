@@ -125,7 +125,10 @@
         "arsivOnay": "The published version will be archived and hidden from children. Continue?",
         "denetimKaydedildi": "Review saved.",
         "durumDegisti": "Status updated: {durum}.",
-        "onizlemeBaslik": "Preview (with sample names)"
+        "onizlemeBaslik": "Preview (with sample names)",
+        "icerikYukle": "Load content for editing, deleting and preview",
+        "yayinAdimlari": "To publish, in order: 1) Move the draft to review with \"Move to review\". 2) Set Agent A and Agent B review to \"Passed\". 3) Set human approval to \"Approved\". 4) Press \"Save review\". 5) \"Publish\" becomes available. The published version stays unchanged until the new one is published; then the old one is archived.",
+        "icerikYukleNot": "The story package is large, so this section loads on request."
       },
       "onizleme": {
         "not": "The preview uses fixed sample names: hero \"{kahraman}\", companion \"{yoldas}\". No real child name is used. Dashed labels are template placeholders.",
