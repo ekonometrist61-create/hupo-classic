@@ -68,3 +68,8 @@ Kaynak plan: `ENTEGRASYON_PLANI_2026-10-21.md` ve `UYUM_PLANI_2026-10-22.md`. Bu
 - Faz 4: /okuma-demo ve /okuma/sinif-okuma-anlama hazır, bağlantısız ve noindex; yayın bloke.
 - Faz 5: genel bayrak açık; pilot kapsamı kullanıcı kararı.
 - Faz 6: kapsam dışı.
+## Devir notu (yeni oturum için, 2026-10-23)
+- Master: `e91f079` (panel 0.2.1, app 1.1.0+2, etiketler app-v1.1.0 ve panel-v0.2.0/0.2.1). Çalışma dalı `feature/huporead-entegrasyon` aynı noktada.
+- Sürüm kuralı: `docs/SURUMLEME.md`. Büyük değişiklik MINOR, düzeltme PATCH; her sürümde not ve etiket.
+- Sıradaki işler (kullanıcı kararı gerekenler önce): test hikâyelerinin yeni sürümleri için Ajan A/B denetimi ve insan onayı; 15 eksik sahne görseli; Faz 5 pilot kapsamı; cihazda PDF indirme ve kaydırma kontrolü; 33 hikâye için Ajan A/B denetimi.
+- Dikkat: kullanıcının commit'lenmemiş değişiklikleri (`decisions.md`, `push_config.dart`, veli-paneli aktivite/denemeler/hedefler, sorular, `icerik/`, bazı kelime migration'ları) çalışma ağacında duruyor; commit'e alınmadan önce kullanıcıya sorulmalı.

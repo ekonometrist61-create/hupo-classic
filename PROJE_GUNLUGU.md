@@ -69,11 +69,83 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR-051 | MOB | HupoRead görsel ve içerik yükseltme: F1 uygulandı (PDF palet/serif/vektör kapak, emoji → SVG okuyucu ve PDF, maskot düzeltmesi). Açık: F2 okuyucu Oku/Keşfet/Düşün akışı (Düşün isteğe bağlı mı?), F3 canlı içerik sözleşmesi (DB onayı), F4 raster sahneler | DEVAM | Ajan + Kullanıcı | Yüksek | K-0076, K-0077, K-0078 |
 | GÖR-052 | MOB | Okuma PDF gerçek kontrolü: ikonlu gerçek bir hikâyeyle sayfa incelemesi, 2. ve 8. sınıf ile mürekkep tasarrufu PNG'lerinin incelenmesi, baskı denemesi, PDF indir akışında tema seçimi (karar), 8. sınıf için sözlük adayı (içerik) | BEKLİYOR | Ajan + Kullanıcı (içerik, baskı, karar) | Orta | K-0085 |
 | GÖR-053 | BEL | Çakışan çalışma: okuma PDF ve motor dosyaları iki ajan tarafından düzenlendi (K-0078, K-0085). Commit öncesi birleştirme ve gözden geçirme gerekli; okuma dosyaları henüz git'e alınmadı (untracked) | BEKLİYOR (karar) | Kullanıcı (commit onayı) + Ajan | Yüksek | K-0078, K-0085 |
-| GÖR-054 | MOB | HupoRead hikâye veri tabanı (anotasyon hattı): 15 hikâye (HR-015…032, 3–4. sınıf) pakete derlendi; 76 hikâye kaldı (5–8. sınıf dahil). Açıklar: yazarların metin tekrarları (aşağıda K-0107), sözlük adaylarının insan onayı (53 aday onaysız), kanıt düzeyi C, HR-111/112 iki sürümden hangisinin esas alınacağı, 5–8. sınıf uzunluk kararının uygulanması (bölme yok, tasnif kademesiyle işaretli) | DEVAM | Ajan + Kullanıcı (onay, içerik) | Yüksek | K-0107 |
+| GÖR-054 | MOB | HupoRead hikâye veri tabanı (anotasyon hattı): 76 hikâye (3–7. sınıf ve HR-073) pakete derlendi; 15 hikâye kaldı (8. sınıf: HR-099, 100–109, 111–114; HR-110 kaynakta yok). Uzak DB'deki HR-015…032 taslaklarıyla yerel paketler arasında uyum kararı bekliyor (K-0110). Açıklar: yazarların metin tekrarları (aşağıda K-0107), sözlük adaylarının insan onayı (801 aday onaysız; liste tasnif/sozluk-adaylari-inceleme.csv), kanıt düzeyi C (76/76), HR-111/112 iki sürümden hangisinin esas alınacağı, 5–8. sınıf uzunluk kararının uygulanması (bölme yok, tasnif kademesiyle işaretli) | DEVAM | Ajan + Kullanıcı (onay, içerik) | Yüksek | K-0107 |
 
 ---
 
 ## B. Kayıtlar (en yeni üstte)
+
+### K-0112 · 2026-10-23 · MOB · HupoRead hikâye veri tabanı: 7. sınıf hikâyeler paketlendi (13 hikâye); toplam 76 paket; elle düzeltmeler onaylandı
+- **Tür:** Gelişme + Karar
+- **Konu:** MOB
+- **Bağlam:** K-0111 kapsamında devam. 7. sınıf hikâyeler (HR-081–093) anotasyonlandı ve derlendi. Kullanıcı üç elle metin düzeltmesini onayladı.
+- **Yapılanlar:**
+  - 13/13 7. sınıf hikâyesi `anotasyon/hr0NN.json` → `paket/hr0NN-*.paket.json`, derleyiciden hatasız geçti. Toplam paket: 76.
+  - Elle düzeltmeler (onaylandı, anotasyon katmanında, kaynak dosyalarda değil): HR-049 "Çocuğun adı Gülsüm'dü;" → "Çocuğun adı {yoldas:yalin|bir arkadaş};"; HR-050 "Can'ınkinde" → "Can'ın sertifikasında"; HR-064 "Bora'yla karşılaştı" → "{yoldas:yalin|bir arkadaş} ile karşılaştı". Üçü derlemede yeniden doğrulandı.
+  - Kahraman/yol arkadaşı seçimleri: ad ekleri (`-le`, `-yla`, `-lerin`) çözülemediği için HR-088'de yol arkadaşı Arin yerine Deren kullanıldı; HR-077'de kahraman token'ı kaldırıldı.
+  - Şema: tema `arkadaslik` geçersiz (yalnız tür değeri); tema olarak `dayanisma`/`kesif` kullanıldı. Okuma ve kavram zorluğu en fazla 5.
+- **Sayım düzeltmesi:** K-0111'deki "kalan 27" yanlıştı. Doğru kalan: 15 (8. sınıf: HR-099, 100–109, 111–114; HR-110 kaynakta yok).
+- **Açık (sözlük onayı):** 801 sözlük adayı onaysız. İnceleme listesi: `icerik/okuma/tasnif/sozluk-adaylari-inceleme.csv` (hikâye, sınıf, yuva, tür, yazım, anlam, eş/zıt, onay sütunu boş).
+- **Açık (kanıt düzeyi):** 76/76 hikâye `kanit_duzeyi=C`. Derleyici uyarısı: "resmî sınıf eşleşmesi yok; yayın öncesi insan kararı". Düzey, hikâyenin program kazanımlarıyla resmî eşleşmesi doğrulanınca yükseltilecek.
+- **Açık (kaynak, gözle tespit):** `p8-HR084-093.md` içinde HR-084 kapanışında (satır ~264–268) ve HR-088 kapanışında (satır ~1149–1167, uzun paragraf) aynı düşünceyi tekrarlayan cümleler görünüyor; tekrarların tamamı taranmadı. `p7-HR074-083.md` HR-075 cümle tekrarı K-0111'de. Editör kontrolü gerekli; metinlere dokunulmadı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — derleyici hatasız (76 paket); içerik editöryel/pedagojik olarak doğrulanmadı; sözlük adayları onaysız; kanıt düzeyi C.
+- **Sahip:** Ajan + Kullanıcı (sözlük onayı, kanıt düzeyi kararı)
+- **Önem:** Yüksek
+- **İlgili:** GÖR-054, K-0111, K-0110.
+
+### K-0111 · 2026-10-23 · MOB · HupoRead hikâye veri tabanı: 6. sınıf hikâyeler paketlendi (20 hikâye); toplam 63 paket
+- **Tür:** Gelişme + Sorun
+- **Konu:** MOB
+- **Bağlam:** K-0110 kapsamında devam. 6. sınıf hikâyeler (HR-041, 046, 047, 052, 055, 061, 067–080; HR-073 pilot) anotasyonlandı ve derlendi.
+- **Yapılanlar:**
+  - 20/20 6. sınıf hikâyesi `anotasyon/hr0NN.json` → `paket/hr0NN-*.paket.json`, derleyiciden hatasız geçti (HR-070–072 ve HR-074–080 bu oturumda yazıldı).
+  - Toplam paket: 63 (3. sınıf 11 + 4. sınıf 12 + 5. sınıf 20 + 6. sınıf 20, HR-073 dahil). Kalan: 27 hikâye (7. sınıf HR-081–093, 8. sınıf HR-099–114; HR-110 kaynakta yok; HR-111/112 sürüm kararı bekliyor).
+  - Metin değişikliği yapılmadı (elle düzeltme yok). Yalnızca kahraman/yol arkadaşı token'ı seçimleri yapıldı: HR-068, 069, 077'de kahraman token'ı kaldırıldı (`-le`/`-lerin` ekleri, HR-077'de "Mert'lerin"); HR-075'te yol arkadaşı Batu yerine Nehir seçildi ("Batu'yla" çözülemedi).
+  - Şema kararları: HR-074 `dunya_tipi=masalsi`; tema `arkadaslik` geçersiz (tür değeri), yerine `dayanisma`/`kesif`/`bilim_teknoloji` kullanıldı.
+- **Açık (kaynak):** `p7-HR074-083.md` içinde HR-075 "Ertesi hafta çocuklar teknoloji kulübünde" cümlesi iki kez yazılmış (`...kulübündeErtesi hafta...`). Metin değiştirilmedi; yazar/editör düzeltmesi gerekli.
+- **Açık (uzunluk):** Derleyici 6. sınıf için uyarı veriyor (hikâyeler 450–800 kelime pilot aralığının çok üstünde, ör. HR-070 ~3000 kelime). Tasnif kararı gereği bölme yapılmadı; uzunluk işareti tasnif CSV'sinde kalıyor.
+- **Açık (sözlük/kanıt):** Her yeni sözlük adayı onaysız; kanıt düzeyi C; öğrenme hedefi sayısı pilot aralığın (4–5) üstünde kalan hikâyeler uyarı veriyor.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — derleyici hatasız (paket yazıldı, şema geçti); içerik editöryel ve pedagojik olarak doğrulanmadı; görsel üretimi yapılmadı; uzak DB ile karşılaştırma yapılmadı.
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** GÖR-054, K-0110, K-0107.
+
+### K-0110 · 2026-10-23 · MOB · HupoRead hikâye veri tabanı: 5. sınıf hikâyeler paketlendi (20 hikâye); toplam 44 paket
+- **Tür:** Gelişme + Sorun
+- **Konu:** MOB
+- **Bağlam:** K-0109 kapsamında devam. 5. sınıf hikâyeler (HR-042–045, 048–051, 053–054, 056–060, 062, 063–066) anotasyonlandı ve derlendi.
+- **Yapılanlar:**
+  - 20/20 5. sınıf hikâyesi `anotasyon/hr0NN.json` → `paket/hr0NN-*.paket.json`, derleyiciden hatasız geçti.
+  - Toplam paket: 44 (3. sınıf 11 + 4. sınıf 12 + 5. sınıf 20 + HR-073). Kalan: 47 hikâye (6–8. sınıf).
+  - Kahraman/yol arkadaşı kararı: adı `-le` (vasıta/birlikte) hâlinde geçen hikâyelerde kahraman token'ı kaldırıldı (HR-043, 045, 056, 057); metin değişmedi.
+- **Metin düzeltmeleri (elle, kullanıcı onayı bekliyor):** Araç ad + kopula/iyelik/vasıta eklerini çözemediği için şu üç ifade değiştirildi (yalnızca anotasyon katmanında, kaynak dosyada değil):
+  - HR-049: "Çocuğun adı Gülsüm'dü;" → "Çocuğun adı {yol arkadaşı};" (kopula düşürüldü; daha önce onaylanan HR-073 deseni).
+  - HR-050: "Can'ınkinde" → "Can'ın sertifikasında".
+  - HR-064: "Bora'yla karşılaştı" → "{yol arkadaşı} ile karşılaştı".
+- **Sorun (kaynak ile veritabanı uyumu):** K-0108 (07:41, DEN/VT) kaydına göre başka bir oturum HR-015…032 hikâyelerini uzak veritabanına taslak olarak yüklemiş. Bu paketler aynı hikâyeler için hazırlandı; metin, token ve sözlük farklı olabilir. Yükleme öncesi hangi sürümün esas alınacağı kararı gerekli. Uzak DB'ye bu oturumdan yazılmadı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — derleyici hatasız; içerik editöryel ve pedagojik olarak doğrulanmadı; sözlük adayları onaysız; uzak DB ile karşılaştırma yapılmadı.
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** GÖR-054, K-0109, K-0107.
+
+### K-0109 · 2026-10-23 · MOB · HupoRead hikâye veri tabanı: 4. sınıf kısa hikâyeler tamamlandı (HR-033–040)
+- **Tür:** Gelişme
+- **Konu:** MOB
+- **Bağlam:** K-0107 kapsamında devam: 3. ve 4. sınıf kısa hikâyeler işlendi; 5. sınıf ve üstü uzun hikâyeler sonraki gruba bırakıldı.
+- **Yapılanlar:**
+  - `anotasyon/hr033.json` … `hr040.json` yazıldı; `donustur.mjs uret` ile 8/8 paket derlendi (`paket/hr033…hr040-*.paket.json`).
+  - Toplam: 3–4. sınıf 23 hikâye paket hâlinde (HR-015, 018, 019, 021–040).
+  - Kahraman/yol arkadaşı token'ları, yuva başına 3 aday, deyim ve ikon işaretlemesi her pakette var.
+  - Derleme sırasında düzeltilen anotasyon hataları: 4. sınıf soruları 4 şık, yol arkadaşı/kahraman adı içeren span'lar token öncesi aranıyor.
+- **Açık:** 5–8. sınıf hikâyeler (HR-041–047, 048–058, 059–062, 063–072, 073 (pilot tamam), 074–083, 084–093, 099–114). Kaynak metinlerdeki paragraf tekrarları K-0107'de (p15yeni dosyası); `p3-HR033-047.md` dosyasında aynı tekrar kalıbı taranıp bulunmadı (0 çift). Bu dosyada tekrarları yalnızca bu kontrolle doğruladım; okumada gözden kaçmış olabilir.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — derleyici hatasız; içerik ve sözlük onaysız.
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** GÖR-054, K-0107.
 
 ### K-0107 · 2026-10-23 00:08 · MOB · HupoRead hikâye veri tabanı: tasnif, uzunluk kararı, pilot paketler ve kaynak sorunları
 - **Tür:** Gelişme + Karar + Sorun
@@ -101,6 +173,45 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - **Açıklama:** Veri tabanının hattı çalışıyor, ancak kapsam yalnızca 16 hikâye (HR-073 + 15). Kalan 76 hikâye ve yayın kapıları açık.
 - **Kanıt:** `node tools/donustur.mjs uret anotasyon/hr0NN.json` → "Paket yazıldı" (15/15), `icerik/okuma/tasnif/hikaye-tasnif.csv`, `icerik/okuma/tasnif/OLCUT.md`, `icerik/okuma/gorsel/hr073/`.
 - **İlgili:** GÖR-054, K-0106, `icerik/okuma/tools/donustur.mjs`, `icerik/okuma/anotasyon/`.
+
+### K-0110 · 2026-10-23 19:52 · DEN/VT · Yayın: 17 bayraklı soru geri çekildi; 5. ve 7. sınıf Türkçe yayına alındı
+- **Tür:** Karar (kullanıcı onayı: "geri çek", "yayına al") + Gelişme
+- **Geri çekme:** K-0108'deki yayındaki 17 bayraklı soru `onaylandi` → `beklemede`; insan onayı alanları temizlendi. Liste: fen5-010, hb2-005, sos4-g1-010, tr4-022, fen5-024, sos5-030, sos5-025, sos5-e-018, fen6-026, mat6-030, mat6-026, tr6-o-012, tr6-e15-001, tr6-dk-030, tr6-o-018, tr6-y-012, tr6-y-015. Silinmediler; yeniden yayın için benzerlik kararı gerekir.
+- **Yayına alma:** 5. sınıf Türkçe (parti `soru-uretim-2026-10-23-5sinif-turkce`, 29 soru) ve 7. sınıf Türkçe (parti `soru-uretim-2026-10-23-7sinif-turkce`, 29 soru; `tr7-011` K-0109'da reddedildi) `onaylandi`. `insan_onayi_kim='kullanici'`, `insan_onayi_karar='onay'`. İki partinin `soru_importlari.onayli` = true.
+- **Yayındaki bayraklı sorular, kabul edilen risk:** 5. sınıf Türkçe'de `tr5-001` ve `tr5-010`, 7. sınıf Türkçe'de `tr7-001`, `tr7-013`, `tr7-015`, `tr7-028`, `tr7-029`, `tr7-032`, `tr7-033`, `tr7-034` (K-0109'da bayrak) yayına alındı; kullanıcı kararıyla. Bayrakların hepsi düşük örtüşmeli (jaccard ≤0,06); K-0109'da tr7-011 için gösterilen kopya düzeyi yoktu.
+- **Doğrulama:** DOĞRULANDI (salt sayım): `onaylandi` 1060 (önce 1019 − 17 + 58); `beklemede` 17 (geri çekilen); `reddedildi` 1 (tr7-011). Geri çekilen 17 soru bayraklı listede beklemede.
+- **Açık:** İnsan örneklemi (REHBER §15) yapılmadı; kullanıcı kararıyla yayına alındı. 5. sınıf Türkçe ve 7. sınıf Türkçe kazanım metinleri DÖP ile resmî teyit edilmedi. Kalan dersler için (5. sınıf İngilizce/Din, 6. sınıf İngilizce/Din, 7. sınıf diğer dersler, 8. sınıf) sonraki işler ayrı kayıtlarda.
+- **Durum:** TAMAMLANDI (geri çekme ve iki partinin yayına alınması) · Açık: 17 geri çekilen sorunun yeniden değerlendirilmesi (kullanıcı kararı).
+- **Sahip:** Kullanıcı (kararlar) · Ajan (sayım ve kayıt).
+- **Önem:** Yüksek
+- **İlgili:** K-0107, K-0108, K-0109.
+
+### K-0109 · 2026-10-23 08:00 · DEN/VT · 7. sınıf Türkçe: 30 soru beklemede aktarıldı; benzerlik kontrolü ve bir red
+- **Tür:** Gelişme + Sorun + Karar (kullanıcı: "yeni ders sorularını yaz")
+- **Kaynak:** Ortaokul Türkçe DÖP 5–8 (tymm 2026-09-02), 7. sınıf: 22 kod (okuma T.O.7.x, yazma T.Y.7.x). Kapsam dışı: dinleme, konuşma, görsel, süreç ve değerlendirme kodları (dosyada gerekçeli).
+- **Hat:** Yazar (Sonnet) 32 taslak → `kapi.cjs` 31/32 (TR7-025 tekrar eden şık, çıkarıldı) → kör çözüm (Haiku) + kör kalite (Sonnet): 28 GEÇER, 3 DÜZELT (TR7-017, 018, 022). T.Y.7.7 ve T.Y.7.8 için 2 yedek (TR7-033, 034): 2/2 GEÇER; bu iki soruda çözüm ve kalite tek Sonnet oturumunda iki adımla yapıldı (bağımsız model ayrımı yok; kayda işlendi).
+- **Sonuç:** 30 onaylı soru; 22/22 kazanım kapsanmış; zorluk 1:16, 2:13, 3:1 (kalite önerileri uygulandı; zorluk 3 hedefi için ayrıca çalışılmadı); doğru şık A8 B7 C7 D8.
+- **Aktarım:** Parti `soru-uretim-2026-10-23-7sinif-turkce`, 30 kayıt `beklemede`, `kalite_durumu='sari'`, görselsiz. Canlı doğrulayıcı 30/30 geçerli; kimlik ve metin tekrarı 0.
+- **Benzerlik kontrolü (7. sınıf, yayından önce):** Kaynak parmak izi: 0 bayrak. Veritabanı içi (1078 kayıt): 9 bayrak, çoğu jaccard ≤0,025 (ortak ifade). **`tr7-011` red edildi** (`onay_durumu='reddedildi'`): metnindeki "Bir ton kâğıdın geri dönüştürülmesi birçok ağacın kesilmesini önler" cümlesi yayındaki `tr6-o-012`'den neredeyse aynen alınmıştı. Kalan 8 bayraklı soru beklemede kalır; yayından önce gözden geçirilmeli: tr7-015, tr7-029, tr7-028, tr7-001, tr7-034, tr7-032, tr7-033, tr7-013.
+- **Önceki yayın bayrakları (K-0108):** Hâlâ kullanıcı kararında (17 yayında bayraklı soru).
+- **Doğrulama:** DOĞRULANDI (kapı, denetim kayıtları, veritabanı sayımı, benzerlik çıktısı). 7. sınıf benzerlik kontrolü bu kayıtla yapıldı.
+- **Durum:** BEKLİYOR (yayın kararı ve 8 bayraklı sorunun gözden geçirilmesi) · 7. sınıf Türkçe: üretim ve aktarım TAMAM.
+- **Sahip:** Kullanıcı (yayın onayı) · Ajan (bayraklı soruların gözden geçirilmesi).
+- **Önem:** Orta
+- **İlgili:** K-0107, K-0108; `docs/soru-uretim/pilot/uretim_turkce_7*.json`, `denetim_turkce_7.json`, `kazanim_7_turkce.json`; paket `docs/soru-uretim/paket/soru_paketi_7sinif_turkce_2026-10-23.json`.
+
+### K-0108 · 2026-10-23 07:41 · DEN/VT · Tüm sınıflar için benzerlik kontrolü (kaynak parmak izi + veritabanı içi 6-gram)
+- **Tür:** Gelişme + Sorun + Karar bekliyor
+- **Bağlam:** Kullanıcı yeni dersler yazmadan önce gerekli sınıfların benzerlik kontrolünü yapılmasını istedi. Önceden benzerlik yalnızca 2. sınıfın ilk 96 sorusu için yapılmıştı (K-0100).
+- **Yöntem:** Her aday soru (DB'de `dis_soru_id` dolu, 538 kayıt) için: (a) kaynak parmak izi (5. sınıf İOKBS, 4 598 madde, `SoruUzmaniCorpusV2`, 6-gram blake2b); (b) veritabanının tüm metinleri (1048 kayıt) ile 6-gram örtüşmesi. Eşik REHBER §6: ortak ≥2 veya jaccard ≥0,15. Sonuç dosyası: scratchpad `out/benzerlik_all.json`.
+- **Sonuç (kaynak):** 538 adayın 1'i bayraklı: `fen5-010` (3 ortak 6-gram, jaccard 0,037). Kaynak ile belirgin örtüşme yok.
+- **Sonuç (veritabanı içi):** 18 soru bayraklı; çoğu 2–4 ortak 6-gram ve jaccard 0,01–0,05 (ortak soru kalıbı, içerik farklı). En yüksek: `tr6-y-012`/`tr6-y-015` (4 ortak, 0,040), `sos5-025`/`sos5-e-018` (4 ortak, 0,035), `tr4-022`/`sos4-g1-010` (4 ortak, 0,039). Bayraklı sorular: fen5-010, hb2-005, sos4-g1-010, tr4-022, fen5-024, sos5-030, sos5-025, sos5-e-018, tr5-001, tr5-010, fen6-026, mat6-030, mat6-026, tr6-o-012, tr6-e15-001, tr6-dk-030, tr6-o-018, tr6-y-012, tr6-y-015.
+- **Kararlar:** (1) Beklemede olan `tr5-001` ve `tr5-010` (5. sınıf Türkçe, K-0107) bayraklı: yayına çıkmadılar; beklemede kalırlar. (2) Yayında olan 17 bayraklı soruya dokunulmadı: REHBER §6 gereği BEKLET (geri çekme) olması gerekiyor; bu outward-facing bir işlem olduğu için kullanıcı kararına bırakıldı. (3) Kaynak bayrağı olan `fen5-010` de aynı kararın altında.
+- **Doğrulama:** DOĞRULANDI (script çıktısı; sınıf bazında aday/bayrak sayıları: 2. sınıf 104 aday, 1 DB içi bayrak; 4. sınıf 109, 2 bayrak; 5. sınıf 138, 1 kaynak + 6 DB içi bayrak; 6. sınıf 187, 9 DB içi bayrak).
+- **Durum:** BEKLİYOR (yayındaki 17 bayraklı soru için kullanıcı kararı: geri çekme / olduğu gibi bırakma).
+- **Sahip:** Kullanıcı (geri çekme kararı) · Ajan.
+- **Önem:** Orta
+- **İlgili:** K-0100, K-0107; `docs/soru-uretim/REHBER.md` §6; scratchpad `out/benzerlik_all.json`.
 
 ### K-0107 · 2026-10-23 00:29 · DEN/VT · 5. sınıf Türkçe: 29 soru beklemede aktarıldı
 - **Tür:** Gelişme + Karar (kullanıcı: "sen karar ver, devam et")
@@ -3381,3 +3492,13 @@ Paketler:
 - Faz 4 site hazırlığı: `/okuma-demo` (statik örnek, yalnız istemci tarafı cevap kontrolü) ve `/okuma/sinif-okuma-anlama` (SEO); navigasyona, sitemap'e ve landing'e bağlı değil, noindex. Yayın kararı: pilot bitişi + insan okuması + üç göz onayı.
 - Uzakta uygulanmadı: 20261078 ve 20261079. Uygulanmadan yeni alanlar ve toplu işlem gelmez; arayüz eski sunucuda da çalışacak şekilde yazıldı.
 - Açık: 12 test yayınındaki hikâyelerin yeni sürümü (yayına alma ve insan okuması), eksik 15 sahne görseli, Faz 5 pilot kapsamı kararı, Ajan A/B denetimi (33 hikâye), fiyat sayfasında okuma hakkı kalemi.
+### K-0105 · 2026-10-23 · VT/MOB/TSR/WEB · Birleştirme, sürümleme kuralı, panel 0.2.1, devir
+- Master: `feature/huporead-entegrasyon` ileri sarılarak master'a birleştirildi ve yayınlandı (`2f0a241 → e91f079`). Vercel production otomatik build aldı (root: web-panel, Git entegrasyonu).
+- Sürümleme kuralı: `docs/SURUMLEME.md` (MAJOR/MINOR/PATCH tanımı, sürüm yerleri, etiket, sürüm notu, migration listesi). `CLAUDE.md` bu dosyaya bağlanır.
+- Sürümler: app `1.1.0+2` (etiket `app-v1.1.0`), panel `0.2.0` (`panel-v0.2.0`), panel `0.2.1` (`panel-v0.2.1`, Hikâye Atölyesi detay düzeltmesi).
+- Hikâye Atölyesi detayı: "İncele ve yönet" detayı listenin altında açılıyor ve oraya kaydırılıyor; ağır içerik (`okuma_surum_icerik_getir`) yalnız düzenleme/önizleme istenince yükleniyor; yayın adımları detayda gösteriliyor (önceki sorun: detay görünmüyordu, açılış çok yavaştı).
+- Uzakta uygulandı (kullanıcı onayı): 20261078 (dashboard genişletme), 20261079 (toplu işlem). PGlite: dashboard 39/39, yönetim 36/36.
+- Telefon: APK `1.1.0+2` kuruldu (`versionName=1.1.0`, 08:12).
+- Açık, kullanıcıda: (a) 12 test hikâyesinin yeni sürümlerinin yayına alınması (önce Ajan A/B denetimi, sonra insan onayı; panel yalnız kaydeder). (b) Sahne görselleri: 15 hikâye için eksik. (c) Faz 5 pilot kapsamı. (d) Okuma PDF indirme ve otomatik kaydırma cihazda henüz denenmedi. (e) Kelime anlamı ve ikonlar, yeni sürümler yayına girene kadar test hikâyelerinde görünmez.
+- Açık, teknik: Ajan A/B denetimi 33 hikâye için yapılmadı. `icerik/` (HR-073, HR-099) ve `20261073` migration'ı başka oturumdan; commit'e alınmadı. `decisions.md` ve `push_config.dart` kullanıcının bekleyen değişiklikleri; dokunulmadı.
+- Devir: yeni oturumda `docs/okuma-entegrasyon/FAZ_DURUMU_2026-10-23.md` ve bu kayıt okunmalı; çalışma dalı artık master ile aynı (`e91f079`).
