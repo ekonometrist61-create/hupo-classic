@@ -1,0 +1,13 @@
+{
+  "name": "anon-yuzey-sql-testleri",
+  "version": "1.0.0",
+  "private": true,
+  "description": "GÖR-003: anonim RPC yetkileri (20261080000000) için PGlite testi (Docker gerektirmez).",
+  "type": "module",
+  "scripts": {
+    "test": "node kos.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}

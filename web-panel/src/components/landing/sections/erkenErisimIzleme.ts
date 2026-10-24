@@ -1,7 +1,9 @@
-import { createClient } from "@/utils/supabase/client";
-
 // Ziyaretçi izleme: yalnızca anonim kimlik ve UTM. Kişisel veri yok.
 // Tüm okuma/yazmalar try/catch içinde; depolama yoksa sayfa yine çalışır.
+
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+// Vercel'de tanımlı olan publishable anahtar (ErkenErisimSection ile aynı).
+const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
 
 const VID_KEY = "hupo_vid";
 const UTM_KEY = "hupo_utm";
@@ -53,22 +55,33 @@ export function ilkTemasUtm(): Record<string, string> {
   return utm;
 }
 
+// Edge Function (growth-web-izle) IP hız sınırını uygular; RPC'lere doğrudan erişim kapalı.
+async function izlemeIstegi(govde: Record<string, unknown>): Promise<boolean> {
+  const res = await fetch(`${SUPABASE_URL}/functions/v1/growth-web-izle`, {
+    method: "POST",
+    headers: { "content-type": "application/json", apikey: SUPABASE_KEY ?? "" },
+    body: JSON.stringify(govde),
+  });
+  return res.ok;
+}
+
 // Form başarılı olduktan sonra: önce olay, sonra kimlik bağlama (bağlama olayları karta taşır).
 // Hata sessizce yutulur; kullanıcı akışı bunu beklemez.
 export async function erkenErisimSonrasiIzleme(email: string): Promise<void> {
   try {
-    const supabase = createClient();
     const vid = ziyaretciKimligi();
     const utm = ilkTemasUtm();
-    const olay = await supabase.rpc("growth_web_olay_kaydet", {
-      p_anonymous_id: vid,
-      p_event_name: "erken_erisim_gonderildi",
-      p_utm: utm,
+    const olay = await izlemeIstegi({
+      islem: "olay",
+      anonymous_id: vid,
+      event_name: "erken_erisim_gonderildi",
+      utm,
     });
-    if (olay.error) return;
-    await supabase.rpc("growth_web_kimlik_bagla", {
-      p_anonymous_id: vid,
-      p_eposta: email,
+    if (!olay) return;
+    await izlemeIstegi({
+      islem: "kimlik",
+      anonymous_id: vid,
+      eposta: email,
     });
   } catch {
     // İzleme başarısızlığı form sonucunu etkilemez.

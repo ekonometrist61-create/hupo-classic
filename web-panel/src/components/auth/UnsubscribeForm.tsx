@@ -1,12 +1,16 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
-import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
 import { useState } from "react";
 
+const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
+// Vercel'de tanımlı olan publishable anahtar (ErkenErisimSection ile aynı).
+const SUPABASE_KEY = process.env.NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY;
+
 // Ticari ileti iznini e-posta adresi üzerinden iptal eder. Hesap olsun olmasın aynı
 // sonuç gösterilir; hesabın varlığı bu ekrandan anlaşılamaz.
+// İstek Edge Function'a gider (IP hız sınırı); RPC'ye doğrudan erişim kapalı.
 const fieldClass =
   "mt-1.5 block h-12 w-full rounded-xl border border-gray-500 bg-white px-4 text-base text-navy placeholder:text-gray-500 focus:border-brand-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500";
 
@@ -29,14 +33,20 @@ export default function UnsubscribeForm() {
     }
 
     setLoading(true);
-    const supabase = createClient();
-    const { error: rpcError } = await supabase.rpc("iletisim_izni_iptal_et", {
-      p_email: adres,
-      p_kanal: "eposta",
-    });
+    let ok = false;
+    try {
+      const res = await fetch(`${SUPABASE_URL}/functions/v1/iletisim-izni-iptal`, {
+        method: "POST",
+        headers: { "content-type": "application/json", apikey: SUPABASE_KEY ?? "" },
+        body: JSON.stringify({ email: adres, kanal: "eposta" }),
+      });
+      ok = res.ok;
+    } catch {
+      ok = false;
+    }
     setLoading(false);
 
-    if (rpcError) {
+    if (!ok) {
       setError(t("errorGeneric"));
       return;
     }
