@@ -91,6 +91,9 @@ abstract class OkumaRepository {
   /// Paket (kota denetimli). Cihaz önbelleği bunun ÜSTÜNDE çalışır.
   Future<OkumaPaketi> hikayeGetir(String hikayeId);
 
+  /// Hikâyenin sunucudaki onaylı sözlüğü (`okuma_sozluk_getir`). Varsayılan: sunucu sözlüğü yok.
+  Future<Map<String, dynamic>?> sozlukGetir(String hikayeId) async => null;
+
   Future<OkumaOturum> oturumBaslat({
     required String hikayeId,
     required String kahramanTuru,
@@ -172,6 +175,10 @@ class SupabaseOkumaRepository implements OkumaRepository {
   @override
   Future<OkumaPaketi> hikayeGetir(String hikayeId) =>
       _rpc('okuma_hikaye_getir', {'p_hikaye_id': hikayeId}, (v) => OkumaPaketi.fromMap(_nesne(v)));
+
+  @override
+  Future<Map<String, dynamic>?> sozlukGetir(String hikayeId) =>
+      _rpc('okuma_sozluk_getir', {'p_hikaye_id': hikayeId}, (v) => _nesne(v));
 
   @override
   Future<OkumaOturum> oturumBaslat({

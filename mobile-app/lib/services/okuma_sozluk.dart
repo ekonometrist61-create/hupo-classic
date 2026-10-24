@@ -43,6 +43,34 @@ OkumaSozluk okumaSozluguKur(OkumaPaketi paket) {
   );
 }
 
+/// Sunucu sözlüğünü (`okuma_sozluk_getir`) paket sözlüğünün üstüne koyar.
+/// Yalnız onaylı adaylar alınır; yanıt boş, eksik ya da bozuksa paket sözlüğü aynen kalır.
+OkumaSozluk okumaSozlugunuSunucuylaBirlestir(OkumaSozluk temel, Map<String, dynamic>? sunucu) {
+  final yuvalar = sunucu?['yuvalar'];
+  if (yuvalar is! List || yuvalar.isEmpty) return temel;
+  final sonYuvalar = Map<String, List<YuvaAdayi>>.of(temel.yuvalar);
+  final sonAnlamlar = Map<String, String>.of(temel.anlamlar);
+  for (final y in yuvalar) {
+    if (y is! Map) continue;
+    final ad = y['yuva'];
+    final adaylar = y['adaylar'];
+    if (ad is! String || adaylar is! List) continue;
+    final liste = <YuvaAdayi>[];
+    for (final a in adaylar) {
+      if (a is! Map || a['onayli'] != true) continue;
+      final yazim = a['yazim'];
+      final anlam = a['anlam'];
+      final sinifAlt = a['sinif_alt'];
+      final sinifUst = a['sinif_ust'];
+      if (yazim is! String || anlam is! String || sinifAlt is! int || sinifUst is! int) continue;
+      liste.add(YuvaAdayi(yazim, sinifAlt, sinifUst));
+      sonAnlamlar[yazim] = anlam;
+    }
+    if (liste.isNotEmpty) sonYuvalar[ad] = liste;
+  }
+  return OkumaSozluk(yuvalar: sonYuvalar, anlamlar: sonAnlamlar);
+}
+
 /// Hikâyeyi cihazda çözer. Ad yalnız burada, bellekte metne girer.
 List<List<Cikti>> okumaSayfalariniCoz(
   OkumaPaketi paket,

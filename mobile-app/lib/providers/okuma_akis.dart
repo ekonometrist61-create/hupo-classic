@@ -252,9 +252,18 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
       return;
     }
 
-    // 2) Cihazda çöz (ad yalnız burada metne girer).
+    // 2) Sözlük: onaylı sunucu sözlüğü üstüne konur; alınamazsa paket sözlüğüyle devam edilir.
+    Map<String, dynamic>? sunucuSozlugu;
     try {
-      final sozluk = okumaSozluguKur(paket);
+      sunucuSozlugu = await _repo.sozlukGetir(satir.hikayeId);
+    } on Exception {
+      sunucuSozlugu = null;
+    }
+    if (_iptal(nesil)) return;
+
+    // 3) Cihazda çöz (ad yalnız burada metne girer).
+    try {
+      final sozluk = okumaSozlugunuSunucuylaBirlestir(okumaSozluguKur(paket), sunucuSozlugu);
       _sayfalar = okumaSayfalariniCoz(
         paket,
         sozluk,
