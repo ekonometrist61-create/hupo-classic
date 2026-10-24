@@ -144,10 +144,6 @@ abstract final class OkumaTema {
   static const int okumaVurguSade = 1;
   static const int okumaCikartmaSade = 0;
 
-  // ── Otomatik soru geçişi (saniye) ─────────────────────────────────────────
-  static const int dogruGecisSaniye = 3;
-  static const int yanlisGecisSaniye = 6;
-
   /// Hareket süresi: hareket azaltma açıksa sıfır (uygulamanın "Hareketi azalt" ayarı da buna yansır).
   static Duration sure(BuildContext context, int ms) =>
       MediaQuery.disableAnimationsOf(context)
@@ -183,6 +179,13 @@ class OkumaMetin {
   static const kapat = 'Kapat';
   static const yenidenDene = 'Yeniden dene';
   static const hikayelereDon = 'Hikâyelere dön';
+  static const beklemeUzadi =
+      'Bu biraz sürdü. Hikâyelere dönüp sonra yeniden deneyebilirsin.';
+  static const sorudanCikBaslik = 'Sorulardan çıkılsın mı?';
+  static const sorudanCikAciklama =
+      'Çıkarsan bu sorulara kaldığın yerden devam edemezsin.';
+  static const sorudanKal = 'Sorulara dön';
+  static const sorudanCik = 'Çık';
 
   // ── Öğren kartı ───────────────────────────────────────────────────────────
   static const kartBaslik = 'Bugünkü hikâye';

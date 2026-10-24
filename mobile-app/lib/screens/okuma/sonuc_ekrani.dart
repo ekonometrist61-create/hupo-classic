@@ -181,15 +181,21 @@ class _SonucEkraniState extends State<SonucEkrani> {
       ],
     );
 
-    // Maskot ve başlık yan yana: telefonda da motivasyon kartı ilk ekrana sığar.
-    final ustSatir = Row(
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-        maskotAlani,
-        const SizedBox(width: OkumaTema.bosluk16),
-        Expanded(child: baslikBlok),
-      ],
-    );
+    // Maskot ve başlık yan yana: telefonda da motivasyon kartı ilk ekrana sığar. Büyük yazıda dar
+    // sütun başlığı kelime ortasından kırar; bu durumda maskot başlığın üstünde durur.
+    final ustSatir = buyukYazi
+        ? Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [maskotAlani, const SizedBox(height: OkumaTema.bosluk8), baslikBlok],
+          )
+        : Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              maskotAlani,
+              const SizedBox(width: OkumaTema.bosluk16),
+              Expanded(child: baslikBlok),
+            ],
+          );
 
     // Sunucunun bildirdiği XP ve seri (yoksa satır gösterilmez; istemci uydurmaz).
     final xp = widget.sonuc.kazanilanXp;
@@ -242,7 +248,8 @@ class _SonucEkraniState extends State<SonucEkrani> {
     final oneriKarti = oneri == null || widget.onOneri == null
         ? null
         : OkumaKart(
-            etiket: ': . .',
+            // Ekran okuyucu yer tutucu yerine hikâyenin adını ve eylemi okur.
+            etiket: '${OkumaMetin.sonucSiradaki}: ${oneri.baslik}. ${OkumaMetin.sonucSiradakiBasla}',
             onTap: widget.onOneri,
             child: Row(
               children: [

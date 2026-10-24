@@ -116,6 +116,12 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
   final Map<String, String> _dogruAnahtari = {};
   int _sonIlerleme = -1;
 
+  /// Gezinme sayacı. Kullanıcı bir ekrandan çıktığında artar; arka plandaki açma ya da sonuç
+  /// işlemi kendi nesli değiştiyse durumu (ve ekranı) sessizce bırakır.
+  int _nesil = 0;
+
+  bool _iptal(int nesil) => nesil != _nesil;
+
   void _yay() {
     if (!mounted) return;
     state = OkumaAkisDurumu(
@@ -178,12 +184,14 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
   }
 
   void kahramanaDon() {
+    _nesil++;
     _kahraman = null;
     _katalog = const [];
     _asamaDegistir(OkumaAsama.kahraman);
   }
 
   void listeyeDon() {
+    _nesil++;
     _sonuc = null;
     _oneri = null;
     _asamaDegistir(OkumaAsama.liste);
@@ -215,6 +223,7 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
     final satir = _secilen;
     final kahraman = _kahraman;
     if (satir == null || kahraman == null) return;
+    final nesil = _nesil;
 
     // 1) Paket: geçerli önbellek varsa indirme ve kota harcanmaz.
     OkumaPaketi? paket = _onbellek.gecerliPaket(satir);
@@ -224,6 +233,7 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
         paket = await _repo.hikayeGetir(satir.hikayeId);
         await _onbellek.yaz(paket);
       } on OkumaException catch (e) {
+        if (_iptal(nesil)) return;
         if (e.hata == OkumaHatasi.kotaDoldu) {
           _asamaDegistir(OkumaAsama.kota);
           return;
@@ -266,6 +276,7 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
 
     // 3) Oturum: kota burada da denetlenir. İnternet yoksa önbellekten salt okuma.
     final oturumSonucu = await _oturumKur();
+    if (_iptal(nesil)) return;
     if (oturumSonucu == OkumaHatasi.kotaDoldu) {
       _asamaDegistir(OkumaAsama.kota);
       return;
@@ -396,6 +407,7 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
   }
 
   Future<void> _sonucuBekle() async {
+    final nesil = _nesil;
     _asamaDegistir(OkumaAsama.bitiriliyor);
     if (_bitirIstegi == null) _bitirBaslat();
     final istek = _bitirIstegi;
@@ -407,16 +419,20 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
       _sonuc = await istek;
     } on OkumaException catch (e) {
       _bitirIstegi = null; // yeniden denemede taze istek (sunucu idempotent)
+      if (_iptal(nesil)) return;
       _hataGoster(_Adim.sonuc, e.hata == OkumaHatasi.baglanti ? e.mesaj : _mesajSonucYuklenemedi);
       return;
     }
+    // Okuma kaydı, kullanıcı ekrandan çıksa da yazılır (çocuk hikâyeyi okudu ve cevapladı).
     final satir = _secilen;
     if (satir != null) await _depo.okunduYaz(satir, simdi: _simdi());
+    if (_iptal(nesil)) return;
     try {
       _oneri = await _repo.seriVeOneri();
     } on OkumaException {
       _oneri = null; // öneri isteğe bağlı; sonuç ekranı yine de açılır
     }
+    if (_iptal(nesil)) return;
     _asamaDegistir(OkumaAsama.sonuc);
   }
 

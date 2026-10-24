@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -33,6 +35,7 @@ class OkumaAkisEkrani extends ConsumerStatefulWidget {
 
 class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
   OkumaKatalogSatiri? _acilacak;
+  bool _sorudanCikSorusuAcik = false;
 
   @override
   void initState() {
@@ -50,16 +53,39 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
         Navigator.of(context).pop();
       case OkumaAsama.liste:
         _akis.kahramanaDon();
+      case OkumaAsama.sorular:
+        _sorudanCik();
       case OkumaAsama.hata:
       case OkumaAsama.okuma:
-      case OkumaAsama.sorular:
         _akis.listeyeDon();
       case OkumaAsama.anket:
         _akis.anketBitti(null);
       case OkumaAsama.yukleniyor:
       case OkumaAsama.bitiriliyor:
-        break; // sunucu işi sürerken geri alınmaz
+        // Sunucu işi sürerken de çıkış var; arka plandaki iş yeni ekranı bozmaz (nesil sayacı).
+        _akis.listeyeDon();
     }
+  }
+
+  /// Sorulardan çıkış: verilen cevaplar yarım kalacağı için önce onay istenir. Geri tuşu ve ekrandaki
+  /// geri düğmesi aynı yolu izler. Onay penceresi açıkken ikinci istek yok sayılır.
+  Future<void> _sorudanCik() async {
+    if (_sorudanCikSorusuAcik) return;
+    _sorudanCikSorusuAcik = true;
+    final cik = await showDialog<bool>(
+      context: context,
+      builder: (ctx) => AlertDialog(
+        title: Text(OkumaMetin.sorudanCikBaslik,
+            style: OkumaTema.yazi(OkumaTema.yaziKartBaslik, kalinlik: OkumaTema.kalinlikBaslik)),
+        content: Text(OkumaMetin.sorudanCikAciklama, style: OkumaTema.yazi(OkumaTema.yaziSecenek, satir: 1.4)),
+        actions: [
+          TextButton(onPressed: () => Navigator.pop(ctx, false), child: const Text(OkumaMetin.sorudanKal)),
+          TextButton(onPressed: () => Navigator.pop(ctx, true), child: const Text(OkumaMetin.sorudanCik)),
+        ],
+      ),
+    );
+    _sorudanCikSorusuAcik = false;
+    if (cik == true && mounted) _akis.listeyeDon();
   }
 
   Future<void> _okuduklarimAc() async {
@@ -109,8 +135,9 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
         );
       case OkumaAsama.yukleniyor:
         ekran = _Bekleme(
-            baslik: d.secilen?.baslik ?? OkumaMetin.uygulamaAdi,
-            metin: OkumaMetin.hikayeAciliyor);
+            baslik: OkumaMetin.uygulamaAdi,
+            metin: OkumaMetin.hikayeAciliyor,
+            onGeri: _akis.listeyeDon);
       case OkumaAsama.okuma:
         ekran = OkuyucuEkrani(
           // Hikâye değişince okuyucu sıfırdan başlar.
@@ -133,18 +160,22 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
           sorular: d.sorular,
           cevapKontrol: _akis.cevapKontrol,
           onBitti: _akis.sorularBitti,
+          onGeri: _sorudanCik,
         );
       case OkumaAsama.anket:
         ekran = AnketEkrani(onBitti: _akis.anketBitti);
       case OkumaAsama.bitiriliyor:
-        ekran = const _Bekleme(
-            baslik: OkumaMetin.uygulamaAdi, metin: OkumaMetin.sonucYukleniyor);
+        ekran = _Bekleme(
+            baslik: OkumaMetin.uygulamaAdi,
+            metin: OkumaMetin.sonucYukleniyor,
+            onGeri: _akis.listeyeDon);
       case OkumaAsama.sonuc:
         final sonuc = d.sonuc;
         ekran = sonuc == null
-            ? const _Bekleme(
+            ? _Bekleme(
                 baslik: OkumaMetin.uygulamaAdi,
-                metin: OkumaMetin.sonucYukleniyor)
+                metin: OkumaMetin.sonucYukleniyor,
+                onGeri: _akis.listeyeDon)
             : SonucEkrani(
                 sonuc: sonuc,
                 kotaDolu: d.oneri?.kotaDolu ?? false,
@@ -188,29 +219,56 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
   }
 }
 
-/// Bekleme: hikâye hazırlanırken ya da sonuç alınırken. Süre uydurulmaz.
-class _Bekleme extends StatelessWidget {
-  const _Bekleme({required this.baslik, required this.metin});
+/// Bekleme: hikâye hazırlanırken ya da sonuç alınırken. Süre uydurulmaz; geri düğmesi her zaman
+/// görünür. [_zamanAsimi] dolunca sakin bir mesaj ve çıkış düğmesi de çıkar.
+class _Bekleme extends StatefulWidget {
+  const _Bekleme({required this.baslik, required this.metin, required this.onGeri});
 
   final String baslik;
   final String metin;
+  final VoidCallback onGeri;
+
+  @override
+  State<_Bekleme> createState() => _BeklemeState();
+}
+
+class _BeklemeState extends State<_Bekleme> {
+  static const Duration _zamanAsimi = Duration(seconds: 20);
+
+  Timer? _zaman;
+  bool _uzadi = false;
+
+  @override
+  void initState() {
+    super.initState();
+    _zaman = Timer(_zamanAsimi, () {
+      if (mounted) setState(() => _uzadi = true);
+    });
+  }
+
+  @override
+  void dispose() {
+    _zaman?.cancel();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
     return OkumaEkranIskeleti(
-      baslik: baslik,
+      baslik: widget.baslik,
+      geri: widget.onGeri,
       icerik: [
         const SizedBox(height: OkumaTema.bosluk32),
         Semantics(
           liveRegion: true,
-          label: metin,
+          label: widget.metin,
           child: Column(
             children: [
               const OkumaMaskot(
                   poz: HupoPose.dusunuyor, boyut: OkumaTema.hupoSonucKisa),
               const SizedBox(height: OkumaTema.bosluk16),
               Text(
-                metin,
+                widget.metin,
                 textAlign: TextAlign.center,
                 style: OkumaTema.yazi(OkumaTema.yaziSecenek,
                     kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
@@ -220,6 +278,16 @@ class _Bekleme extends StatelessWidget {
             ],
           ),
         ),
+        if (_uzadi) ...[
+          const SizedBox(height: OkumaTema.bosluk24),
+          Text(
+            OkumaMetin.beklemeUzadi,
+            textAlign: TextAlign.center,
+            style: OkumaTema.yazi(OkumaTema.yaziYardimci, renk: OkumaTema.muted, satir: OkumaTema.satirGovde),
+          ),
+          const SizedBox(height: OkumaTema.bosluk16),
+          OkumaIkincilButon(etiket: OkumaMetin.hikayelereDon, onPressed: widget.onGeri),
+        ],
       ],
     );
   }

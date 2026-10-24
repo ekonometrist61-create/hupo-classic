@@ -1,11 +1,8 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 
 import '../../models/okuma_models.dart';
 import '../../widgets/hupo/hupo.dart';
 import '../../widgets/okuma/okuma_bilesenler.dart';
-import '../../widgets/okuma/okuma_v3.dart';
 import 'okuma_tema.dart';
 
 /// Cevabı sunucuya gönderip sonucu döner (okuma_cevap_kontrol). Doğru anahtar istemcide yoktur.
@@ -14,19 +11,24 @@ typedef OkumaCevapKaynagi = Future<OkumaCevapSonucu> Function(
 
 /// Tek soru, tek deneme, anında geri bildirim (K-0036, H1). Akış: seç → Cevapla → geri bildirim.
 /// Seçim cevaplamadan önce değiştirilebilir. Yanlışta kırmızı X ve ceza yok.
-/// Cevaptan sonra sonraki soruya otomatik geçilir (doğru 3 sn, yanlış 6 sn). "Sonraki" her zaman
-/// süre beklemeden geçirir. Son soruda otomatik geçiş yoktur; sonuç düğmesi ekranda kalır (K-0048).
+/// Cevaptan sonra sonraki soruya geçiş çocuğun kararıyla olur ("Sonraki soru"). Otomatik geçiş yoktur:
+/// açıklama, çocuk okumadan ekran değişmez (WCAG 2.2.1). Son soruda sonuç düğmesi ekranda kalır (K-0048).
+/// Geri düğmesi her zaman görünür; çıkış onay ister, çünkü yarım kalan cevaplar devam etmez.
 class SorularEkrani extends StatefulWidget {
   const SorularEkrani({
     super.key,
     required this.sorular,
     required this.cevapKontrol,
     required this.onBitti,
+    required this.onGeri,
   });
 
   final List<OkumaSoru> sorular;
   final OkumaCevapKaynagi cevapKontrol;
   final void Function(int dogruSayisi) onBitti;
+
+  /// Geri düğmesi ve geri tuşu. Onay penceresi üst katmanda gösterilir.
+  final VoidCallback onGeri;
 
   @override
   State<SorularEkrani> createState() => _SorularEkraniState();
@@ -43,9 +45,6 @@ class _SorularEkraniState extends State<SorularEkrani> {
   /// Her sorunun sonucu: null cevaplanmadı, true doğru, false yanlış. Nokta göstergesi için.
   late List<bool?> _sonuclar;
 
-  /// Otomatik geçiş zamanlayıcısı. Elle geçişte ya da ekran kapanınca iptal edilir.
-  Timer? _gecis;
-
   /// Cevap sonrası geri bildirim alanı: cevaplanınca bu alan görünür yere kaydırılır ki
   /// açıklama çocuğun seçtiği şıkkın hemen altında, ekranın içinde görünsün.
   final GlobalKey _geriKey = GlobalKey();
@@ -54,24 +53,6 @@ class _SorularEkraniState extends State<SorularEkrani> {
   void initState() {
     super.initState();
     _sonuclar = List<bool?>.filled(widget.sorular.length, null);
-  }
-
-  @override
-  void dispose() {
-    _gecis?.cancel();
-    super.dispose();
-  }
-
-  void _gecisiZamanla({required bool dogru}) {
-    _gecis?.cancel();
-    if (_sonSoru) return;
-    _gecis = Timer(
-        Duration(
-            seconds: dogru
-                ? OkumaTema.dogruGecisSaniye
-                : OkumaTema.yanlisGecisSaniye), () {
-      if (mounted) _ileri();
-    });
   }
 
   bool get _cevaplandi => _geri != null;
@@ -103,7 +84,6 @@ class _SorularEkraniState extends State<SorularEkrani> {
         _sonuclar[_i] = g.dogru;
         if (g.dogru) _dogru++;
       });
-      _gecisiZamanla(dogru: g.dogru);
       WidgetsBinding.instance.addPostFrameCallback((_) {
         final baglam = _geriKey.currentContext;
         if (!mounted || baglam == null) return;
@@ -126,7 +106,6 @@ class _SorularEkraniState extends State<SorularEkrani> {
   }
 
   void _ileri() {
-    _gecis?.cancel();
     if (_sonSoru) {
       widget.onBitti(_dogru);
       return;
@@ -203,6 +182,7 @@ class _SorularEkraniState extends State<SorularEkrani> {
         : OkumaMetin.soruIpucuSayfa(soru.dayanakSayfa!);
     return OkumaEkranIskeleti(
       baslik: OkumaMetin.soruSayac(_i + 1, widget.sorular.length),
+      geri: widget.onGeri,
       icerik: [
         Row(
           children: [
@@ -255,23 +235,9 @@ class _SorularEkraniState extends State<SorularEkrani> {
 
   Widget _altEylem(OkumaCevapSonucu? g) {
     if (g != null) {
-      final buton = OkumaButon(
+      return OkumaButon(
         etiket: _sonSoru ? OkumaMetin.soruSonuc : OkumaMetin.soruSonraki,
         onPressed: _ileri,
-      );
-      // Otomatik geçiş süresi görünür; "Sonraki soru" bekletmeden geçirir (zamanlayıcı _ileri'de iptal edilir).
-      if (_sonSoru) return buton;
-      return Column(
-        mainAxisSize: MainAxisSize.min,
-        children: [
-          OkumaGeriSayim(
-              sure: Duration(
-                  seconds: g.dogru
-                      ? OkumaTema.dogruGecisSaniye
-                      : OkumaTema.yanlisGecisSaniye)),
-          const SizedBox(height: OkumaTema.bosluk12),
-          buton,
-        ],
       );
     }
     if (_kontrol) {
@@ -521,6 +487,33 @@ class _GeriBildirimAlani extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final dogru = geri.dogru;
+    // Büyük yazıda Hupo başlığın üstüne geçer: dar sütunda başlık kelime ortasından kırılmasın.
+    final buyukYazi = MediaQuery.textScalerOf(context).scale(1) > OkumaTema.sonucYaziBuyukEsigi;
+    final maskot = OkumaMaskot(
+      poz: dogru ? HupoPose.dogru : HupoPose.merakEdiyor,
+      boyut: OkumaTema.hupoCevap,
+    );
+    final metin = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          dogru ? OkumaMetin.soruDogru : OkumaMetin.olmadi,
+          style: OkumaTema.yazi(
+            OkumaTema.yaziSoru,
+            kalinlik: OkumaTema.kalinlikBaslik,
+            renk: dogru ? OkumaTema.mintDark : OkumaTema.coralDark,
+          ),
+        ),
+        if (!dogru) ...[
+          const SizedBox(height: OkumaTema.bosluk4),
+          Text(
+            OkumaMetin.soruAciklamaya,
+            style: OkumaTema.yazi(OkumaTema.yaziYardimci,
+                kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.muted),
+          ),
+        ],
+      ],
+    );
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -537,40 +530,18 @@ class _GeriBildirimAlani extends StatelessWidget {
           },
           child: Semantics(
             liveRegion: true,
-            child: Row(
-              children: [
-                OkumaMaskot(
-                  poz: dogru ? HupoPose.dogru : HupoPose.merakEdiyor,
-                  boyut: OkumaTema.hupoCevap,
-                ),
-                const SizedBox(width: OkumaTema.bosluk12),
-                Expanded(
-                  child: Column(
+            child: buyukYazi
+                ? Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [maskot, const SizedBox(height: OkumaTema.bosluk8), metin],
+                  )
+                : Row(
                     children: [
-                      Text(
-                        dogru ? OkumaMetin.soruDogru : OkumaMetin.olmadi,
-                        style: OkumaTema.yazi(
-                          OkumaTema.yaziSoru,
-                          kalinlik: OkumaTema.kalinlikBaslik,
-                          renk:
-                              dogru ? OkumaTema.mintDark : OkumaTema.coralDark,
-                        ),
-                      ),
-                      if (!dogru) ...[
-                        const SizedBox(height: OkumaTema.bosluk4),
-                        Text(
-                          OkumaMetin.soruAciklamaya,
-                          style: OkumaTema.yazi(OkumaTema.yaziYardimci,
-                              kalinlik: OkumaTema.kalinlikVurgu,
-                              renk: OkumaTema.muted),
-                        ),
-                      ],
+                      maskot,
+                      const SizedBox(width: OkumaTema.bosluk12),
+                      Expanded(child: metin),
                     ],
                   ),
-                ),
-              ],
-            ),
           ),
         ),
         const SizedBox(height: OkumaTema.bosluk16),

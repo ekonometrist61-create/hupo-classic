@@ -55,7 +55,7 @@ class _KahramanSecimEkraniState extends ConsumerState<KahramanSecimEkrani> {
     final t = _tur;
     if (t == null) return OkumaMetin.kahramanDevamPasif;
     if (t.adIster) {
-      final hata = adKontrol(_ad.text);
+      final hata = adKontrol(_ad.text, tur: t);
       if (hata != null) return hata;
     }
     if (_yoldasVar && adKontrol(_yoldasAd.text) != null) return OkumaMetin.kahramanYoldasAdHata;
@@ -128,6 +128,7 @@ class _KahramanSecimEkraniState extends ConsumerState<KahramanSecimEkrani> {
           const SizedBox(height: OkumaTema.bosluk24),
           _AdAlani(
             denetleyici: _ad,
+            tur: t,
             hint: _ipucu(t),
             onChanged: () => setState(() {}),
             profilOnerisi: t == KahramanTuru.ben && profil.isNotEmpty && _ad.text.isEmpty ? profil : null,
@@ -288,6 +289,7 @@ IconData _ikon(KahramanTuru t) => switch (t) {
 class _AdAlani extends StatelessWidget {
   const _AdAlani({
     required this.denetleyici,
+    required this.tur,
     required this.hint,
     required this.onChanged,
     required this.onProfilOneri,
@@ -295,6 +297,7 @@ class _AdAlani extends StatelessWidget {
   });
 
   final TextEditingController denetleyici;
+  final KahramanTuru tur;
   final String hint;
   final VoidCallback onChanged;
   final String? profilOnerisi;
@@ -313,7 +316,7 @@ class _AdAlani extends StatelessWidget {
           maxLength: 24,
           buildCounter: (_, {required currentLength, required isFocused, required maxLength}) => null,
           onChanged: (_) => onChanged(),
-          decoration: InputDecoration(hintText: hint, errorText: metin.isEmpty ? null : adKontrol(metin)),
+          decoration: InputDecoration(hintText: hint, errorText: metin.isEmpty ? null : adKontrol(metin, tur: tur)),
         ),
         Align(
           alignment: Alignment.centerRight,

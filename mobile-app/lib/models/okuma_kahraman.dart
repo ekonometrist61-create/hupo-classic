@@ -47,6 +47,11 @@ extension KahramanTuruBilgi on KahramanTuru {
   /// Bu türde ad zorunlu mu? "Hazır Hupo" kendi adıyla gider.
   bool get adIster => this != KahramanTuru.hazir;
 
+  /// Allah, peygamber ve din büyükleri adları yalnız hayvan, araç ve hayalî karakterlerde yasaktır
+  /// (K-0024, E-8). İnsan adı olarak serbesttir.
+  bool get dinAdiYasakli =>
+      this == KahramanTuru.hayvan || this == KahramanTuru.arac || this == KahramanTuru.hayali;
+
   static KahramanTuru? koddan(String? kod) {
     for (final t in KahramanTuru.values) {
       if (t.kod == kod) return t;
@@ -84,12 +89,58 @@ final RegExp _adKurali = RegExp(r"^\p{L}[\p{L} .'\-]{0,23}$", unicode: true);
 const String kAdBos = 'Bir ad yaz.';
 const String kAdUzun = 'En fazla 24 harf olabilir.';
 const String kAdKarakter = 'Ad yalnızca harf, boşluk, kesme ya da kısa çizgiden oluşmalı.';
+const String kAdYasakli = 'Bu ad kullanılamaz. Başka bir ad dene.';
 
-/// Ad hatası: null ise ad geçerlidir.
-String? adKontrol(String ad) {
+/// Yasak ad listesi (K-0024, E-8). Liste kodda tutulur; yeni ad eklemek ya da çıkarmak kod incelemesi ister.
+/// (a) Allah, peygamber ve din büyükleri: [KahramanTuruBilgi.dinAdiYasakli] türlerinde yasak.
+/// (b) Küfür, hakaret ve cinsel sözcükler: tüm türlerde yasak.
+/// (c) Bilinen çizgi film, oyun ve marka karakter adları: tüm türlerde yasak (telif).
+/// (d) Kamuya açık gerçek kişilerin adları: tüm türlerde yasak.
+/// Liste Türkçe harfler sadeleştirilmiş (ç→c, ş→s, ı→i ...) biçimde tutulur; ad sözcüklere bölünüp tam sözcük
+/// olarak karşılaştırılır. Küfür kökleri çekimli biçimleri de yakalamak için başlangıç eşleşmesiyle kontrol edilir.
+const Set<String> _dinAdlari = {
+  'allah', 'tanri', 'peygamber', 'muhammed', 'mevlana', 'ebubekir', 'omer', 'osman', 'ali', 'hasan',
+  'huseyin', 'fatima', 'aise', 'hatice', 'adem', 'nuh', 'ibrahim', 'musa', 'isa', 'davud', 'suleyman',
+  'yusuf', 'meryem', 'cebrail', 'mikail', 'azrail',
+};
+const Set<String> _kufurAdlari = {
+  'amk', 'aq', 'amcik', 'orospu', 'pic', 'sik', 'siktir', 'yarak', 'yarrak', 'got', 'ibne', 'kahpe',
+  'gavat', 'pezevenk', 'surtuk', 'fahise', 'porno', 'seks', 'sex',
+};
+const List<String> _kufurKokleri = ['orospu', 'amcik', 'siktir', 'yarrak', 'pezevenk', 'surtuk', 'fahise', 'kahpe'];
+const Set<String> _markaAdlari = {
+  'pikachu', 'mickey', 'minnie', 'batman', 'superman', 'spiderman', 'pokemon', 'doraemon', 'naruto',
+  'shrek', 'barbie', 'sonic', 'mario', 'hulk', 'goofy',
+};
+const Set<String> _gercekKisiAdlari = {
+  'ataturk', 'tarkan', 'messi', 'ronaldo', 'ronaldinho', 'neymar', 'erdogan', 'obama', 'trump', 'putin',
+  'hitler', 'elon', 'musk',
+};
+
+/// Ad sadeleştirme: Türkçe büyük/küçük harf ve ayırt edici harfler ASCII'ye indirilir.
+String _sadelestir(String ad) {
+  const harita = {'ç': 'c', 'ğ': 'g', 'ı': 'i', 'ö': 'o', 'ş': 's', 'ü': 'u', 'â': 'a', 'î': 'i', 'û': 'u'};
+  final kucuk = ad.replaceAll('I', 'ı').replaceAll('İ', 'i').toLowerCase();
+  return kucuk.split('').map((c) => harita[c] ?? c).join();
+}
+
+bool _yasakliMi(String ad, {KahramanTuru? tur}) {
+  final dinYasak = tur?.dinAdiYasakli ?? false;
+  final sozcukler = _sadelestir(ad).split(RegExp(r'[^a-z]+')).where((s) => s.isNotEmpty);
+  for (final s in sozcukler) {
+    if (_kufurAdlari.contains(s) || _kufurKokleri.any(s.startsWith)) return true;
+    if (_markaAdlari.contains(s) || _gercekKisiAdlari.contains(s)) return true;
+    if (dinYasak && _dinAdlari.contains(s)) return true;
+  }
+  return false;
+}
+
+/// Ad hatası: null ise ad geçerlidir. [tur] verilirse türe özgü kurallar (din adları) da uygulanır.
+String? adKontrol(String ad, {KahramanTuru? tur}) {
   final t = ad.trim();
   if (t.isEmpty) return kAdBos;
   if (t.runes.length > 24) return kAdUzun;
   if (!_adKurali.hasMatch(t)) return kAdKarakter;
+  if (_yasakliMi(t, tur: tur)) return kAdYasakli;
   return null;
 }

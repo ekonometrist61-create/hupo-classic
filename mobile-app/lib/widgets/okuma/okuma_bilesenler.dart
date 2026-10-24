@@ -215,7 +215,12 @@ class OkumaEkranIskeleti extends StatelessWidget {
           elevation: 0,
           scrolledUnderElevation: 0,
           surfaceTintColor: Colors.transparent,
-          title: Text(baslik, style: OkumaTema.yazi(OkumaTema.yaziKartBaslik, kalinlik: OkumaTema.kalinlikBaslik)),
+          // Sığmazsa küçülür; üç nokta ile kesilmez (büyük yazıda kelime ortasından kesilmesin).
+          title: FittedBox(
+            fit: BoxFit.scaleDown,
+            alignment: AlignmentDirectional.centerStart,
+            child: Text(baslik, style: OkumaTema.yazi(OkumaTema.yaziKartBaslik, kalinlik: OkumaTema.kalinlikBaslik)),
+          ),
           leading: geri == null
               ? null
               : IconButton(

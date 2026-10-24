@@ -25,6 +25,8 @@ const _boyutlar = <String, Size>{
   '390x844': Size(390, 844),
   '1024x768': Size(1024, 768),
   '360x640': Size(360, 640),
+  // En dar yaygın telefon: büyük yazıda başlıkların kelime ortasından kırılması burada görülür.
+  '320x640': Size(320, 640),
 };
 const _olcekler = <double>[1.0, 2.0];
 
@@ -162,6 +164,7 @@ void main() {
               dogruSecenekId: 'a',
             ),
             onBitti: (_) {},
+            onGeri: () {},
           ),
           prefs,
         ));
@@ -179,9 +182,6 @@ void main() {
         await tester.pump(const Duration(milliseconds: 600));
         expect(tester.takeException(), isNull);
         await expectLater(find.byType(MaterialApp), matchesGoldenFile(_ad('sorular', b.key, olcek)));
-        // Zamanlayıcıyı (otomatik geçiş) temizle.
-        await tester.pumpWidget(const SizedBox());
-        await tester.pump(const Duration(seconds: 8));
       });
 
       testWidgets('anket $etiket', (tester) async {

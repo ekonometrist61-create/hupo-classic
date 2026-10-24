@@ -534,8 +534,9 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
     final taban = _taban();
     final parcalar = _parcalar(_mevcut, b, taban);
     final dusunAtasozleri = _dusunAtasozleri();
+    // Hikâye adı gövdedeki başlık bandında tam görünür; üst çubukta kısaltılmaz (kelime ortasından kesilirdi).
     return OkumaEkranIskeleti(
-      baslik: widget.baslik,
+      baslik: OkumaMetin.uygulamaAdi,
       geri: widget.onGeri,
       denetleyici: _kaydirma,
       onKullaniciKaydirdi: _kaydirmayiDurdur,

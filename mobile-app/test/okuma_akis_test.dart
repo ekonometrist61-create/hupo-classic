@@ -1,6 +1,6 @@
 // Okuma Dünyası: akış testleri (sahte depo + ProviderScope). Gerçek Supabase çağrısı YOKTUR.
 // Kapsam: kahraman → katalog → okuyucu → sorular → anket → sonuç; kota dolu; çevrimdışı tekrar okuma;
-// önbellek; otomatik soru geçişi (doğru 3 sn / yanlış 6 sn); hareket azaltma; büyük yazı; PDF hak denetimi;
+// önbellek; soru ilerlemesi (otomatik geçiş yok); hareket azaltma; büyük yazı; PDF hak denetimi;
 // ad gizliliği. Ekran boyutları: 390×844 ve 1024×768.
 
 import 'package:flutter/material.dart';
@@ -289,39 +289,37 @@ void main() {
     expect(find.text('Sayfa 1 / 4'), findsOneWidget);
   });
 
-  testWidgets('soru geçişi: doğru cevapta 3 sn, yanlışta 6 sn sonra otomatik; Sonraki anında', (tester) async {
+  testWidgets('soru geçişi: otomatik geçiş yok (WCAG 2.2.1); yalnız "Sonraki soru" ile ilerler', (tester) async {
     final repo = FakeOkumaRepository();
     await _ac(tester, repo);
     await _kahramanSec(tester);
     await _hikayeAc(tester);
     await _sayfalariOku(tester);
 
-    // Soru 1: doğru C → 3 sn.
-    await _soruCevapla(tester, 'C'); // yanıt geldiğinde sayaç başlar (≈350 ms sonra)
+    // Soru 1: doğru C. Açıklama okunsun diye süre geçse de soru değişmez.
+    await _soruCevapla(tester, 'C');
     expect(find.text('Doğru!'), findsWidgets);
-    await tester.pump(const Duration(milliseconds: 2400));
-    expect(find.text('Soru 1 / 4'), findsOneWidget, reason: '3 sn dolmadı');
-    await tester.pump(const Duration(milliseconds: 600));
-    await _bekle(tester);
+    await tester.pump(const Duration(seconds: 30));
+    expect(find.text('Soru 1 / 4'), findsOneWidget, reason: 'otomatik geçiş olmamalı');
+    expect(tester.takeException(), isNull);
+    await _tikla(tester, find.text('Sonraki soru'));
     expect(find.text('Soru 2 / 4'), findsOneWidget);
 
-    // Soru 2: yanlış (A, doğru değil varsayımıyla) → 6 sn.
+    // Soru 2: yanlış. Yanlışta da kendiliğinden geçiş yok.
     await _soruCevapla(tester, 'A');
     expect(find.text('Bu kez olmadı.'), findsOneWidget);
-    await tester.pump(const Duration(seconds: 5));
-    expect(find.text('Soru 2 / 4'), findsOneWidget, reason: 'yanlışta doğrusunu okumak için 6 sn beklenir');
-    await tester.pump(const Duration(milliseconds: 900));
-    await _bekle(tester);
+    await tester.pump(const Duration(seconds: 30));
+    expect(find.text('Soru 2 / 4'), findsOneWidget, reason: 'yanlışta da otomatik geçiş olmamalı');
+    await _tikla(tester, find.text('Sonraki soru'));
     expect(find.text('Soru 3 / 4'), findsOneWidget);
     expect(tester.takeException(), isNull);
 
-    // Sonraki: zamanlayıcıyı beklemeden anında (Soru 3: A doğru).
+    // Soru 3 ve 4: son soruda sonuç düğmesi ekranda kalır.
     await _soruCevapla(tester, 'A', bekle: true);
     await _tikla(tester, find.text('Sonraki soru'));
     expect(find.text('Soru 4 / 4'), findsOneWidget);
     await _soruCevapla(tester, 'A', bekle: true);
-    // Son soruda otomatik geçiş yok; sonuç düğmesi ekranda kalır.
-    await tester.pump(const Duration(seconds: 8));
+    await tester.pump(const Duration(seconds: 30));
     expect(find.text('Sonucu gör'), findsOneWidget);
     await tester.pumpAndSettle(const Duration(seconds: 1));
   });

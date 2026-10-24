@@ -123,6 +123,33 @@ void main() {
       expect(adKontrol("Ayşe-Nur O'Neil"), isNull);
     });
 
+    test('yasak ad: küfür, marka karakteri ve gerçek kişi her türde reddedilir', () {
+      for (final ad in ['Sik', 'Orospu', 'Batman', 'Pikachu', 'Atatürk', 'Cristiano Ronaldo', 'Tarkan']) {
+        expect(adKontrol(ad), kAdYasakli, reason: ad);
+        expect(adKontrol(ad, tur: KahramanTuru.ben), kAdYasakli, reason: ad);
+      }
+    });
+
+    test('yasak ad: din adları yalnız hayvan, araç ve hayalî türde yasak', () {
+      expect(adKontrol('Allah', tur: KahramanTuru.hayvan), kAdYasakli);
+      expect(adKontrol('Musa', tur: KahramanTuru.arac), kAdYasakli);
+      expect(adKontrol('Peygamber', tur: KahramanTuru.hayali), kAdYasakli);
+      expect(adKontrol('Musa', tur: KahramanTuru.ben), isNull);
+      expect(adKontrol('Muhammed', tur: KahramanTuru.anne), isNull);
+    });
+
+    test('yasak ad: Türkçe büyük/küçük harf duyarsız; hazır öneriler geçer', () {
+      expect(adKontrol('SİK'), kAdYasakli);
+      expect(adKontrol('ATATÜRK'), kAdYasakli);
+      expect(adKontrol('Orospuçocuğu'), kAdYasakli);
+      for (final t in KahramanTuru.values) {
+        for (final ad in kOnerilenIsimler[t] ?? const <String>[]) {
+          expect(adKontrol(ad, tur: t), isNull, reason: ad);
+        }
+      }
+      expect(adKontrol('Işık Muhafızı', tur: KahramanTuru.hayali), isNull);
+    });
+
     test('hazır Hupo ad istemez; diğer türler ister; cinsiyet türü yoktur', () {
       expect(KahramanTuru.hazir.adIster, isFalse);
       expect(KahramanTuru.ben.adIster, isTrue);
