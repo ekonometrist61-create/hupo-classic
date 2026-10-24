@@ -3,22 +3,24 @@
 # (web-panel prebuild: scripts/sync-karakterler.mjs).
 
 # Çalışma oturumu ve araç klasörleri (kilit dosyaları dağıtım sırasında kaybolabiliyor)
-.claude/
-.git/
-.vercel/
+# Kök klasöre sabitlenmiştir (baştaki /): aksi halde web-panel/src/utils/supabase gibi
+# iç içe aynı adlı klasörler de dışlanır ve build bozulur (K-0117).
+/.claude/
+/.git/
+/.vercel/
 
 # Web-panel dışı, build'de kullanılmayan klasörler
-supabase/
-docs/
-kurtarilan/
-soru-bankasi/
-tools/
-research_notes/
-reports/
-telefonda-ac/
+/supabase/
+/docs/
+/kurtarilan/
+/soru-bankasi/
+/tools/
+/research_notes/
+/reports/
+/telefonda-ac/
 
 # Derleme çıktıları ve bağımlılıklar
-node_modules/
+/node_modules/
 **/node_modules/
 web-panel/.next/
 web-panel/test-results/
