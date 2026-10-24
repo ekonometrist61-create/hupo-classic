@@ -301,10 +301,10 @@ begin
 
   -- 16. SECURITY DEFINER ve sabit search_path (AGENTS.md: zorunlu)
   no := no + 1;
-  senaryo := 'SECURITY DEFINER ve search_path = public, pg_temp sabit';
+  senaryo := 'SECURITY DEFINER ve search_path boş ("") sabit (GÖR-004 standardı)';
   gecti := false; detay := null;
   begin
-    select p.prosecdef and array_to_string(p.proconfig, ',') like '%search_path=public%pg_temp%'
+    select p.prosecdef and array_to_string(p.proconfig, ',') like '%search_path=""%'
       into gecti
       from pg_proc p
      where p.oid = 'public.ogretmen_siniflarim()'::regprocedure;

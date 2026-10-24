@@ -94,13 +94,13 @@ create or replace function public.ornek_fonksiyon(p_x uuid)
 returns jsonb
 language plpgsql
 security definer
-set search_path = public, pg_temp   -- ZORUNLU
+set search_path = ''   -- ZORUNLU (GÖR-004 standardı; gövdedeki her nesne public. ile nitelenir)
 as $$
 begin
   if auth.uid() is null then
     raise exception 'Oturum bulunamadı';
   end if;
-  ...
+  ...   -- örn. select ... from public.profiles where ...
 end;
 $$;
 
@@ -108,7 +108,7 @@ revoke execute on function public.ornek_fonksiyon(uuid) from public, anon;
 grant  execute on function public.ornek_fonksiyon(uuid) to authenticated;
 ```
 
-- `SECURITY DEFINER` **her zaman** `set search_path` ile birlikte
+- `SECURITY DEFINER` **her zaman** `set search_path = ''` ile birlikte; gövdede tablo, fonksiyon ve tip adları `public.` ile nitelenir (eski `public, pg_temp` tanımları uygulanmış migration'larda kalır, GÖR-004)
 - `service_role` fonksiyonları: `from public, anon, authenticated` revoke edilir
 - Her RPC'in `revoke` / `grant` satırı migration'da **mutlaka** bulunur
 - Yeni tablo → `enable row level security` + açık politika

@@ -35,6 +35,10 @@ for (const m of migrasyonlar) {
   await adim(path.basename(m), () => db.exec(fs.readFileSync(m, 'utf8')));
   console.log(`migration: ${path.basename(m)} tamam`);
 }
+// GÖR-004 (20261081000000): bu fonksiyonun search_path'i '' yapılır. Harness tüm 20261081 zincirini
+// kurmaz (diğer fonksiyonların tabloları burada yok); yalnızca bu satır uygulanır ve gövde yeni
+// ayarla çalıştırılır.
+await adim('gor004-ogretmen-siniflarim', () => db.exec("alter function public.ogretmen_siniflarim() set search_path = '';"));
 await adim('test-yukleme', () => db.exec(fs.readFileSync(testDosyasi, 'utf8')));
 const sonuc = await adim('testler', () => db.query('select * from pg_temp.ogretmen_sinif_raporu_testleri()'));
 
