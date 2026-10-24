@@ -202,6 +202,7 @@ class OkumaMetin {
   static const kahramanBaslik = 'Kahramanın kim olsun?';
   static const kahramanAlt =
       'Kendini, bir aile üyeni, bir hayvanı ya da hayalî bir karakteri seçebilirsin.';
+  static const kahramanUst = 'HAYDİ, HİKÂYE BAŞLASIN!';
   static const kahramanOnerilen = 'Ya da birini seç:';
   static const kahramanAdEtiket = 'Kahramanın adı';
   static const kahramanAdIpucu = 'Adını yaz';

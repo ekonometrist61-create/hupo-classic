@@ -62,7 +62,7 @@ class OkumaVitrin extends ConsumerWidget {
   }
 }
 
-/// HupoRead başlığı, alt açıklama, "Tüm hikâyeler" bağlantısı ve (varsa) seri rozeti.
+/// HupoRead başlığı ve alt açıklama; seri varsa sağda küçük bir rozet (tek satır, sade).
 class _Ust extends StatelessWidget {
   const _Ust({required this.seri});
 
@@ -71,8 +71,8 @@ class _Ust extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final serili = seri != null && seri!.seriDevam && seri!.seriSayisi > 0;
-    final buyuk = MediaQuery.textScalerOf(context).scale(1) >= _buyukYaziEsigi;
-    final baslik = Row(
+    return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         Container(
           width: 48,
@@ -93,37 +93,8 @@ class _Ust extends StatelessWidget {
             ],
           ),
         ),
-      ],
-    );
-    final tumu = TextButton(
-      onPressed: () => Navigator.of(context).push<void>(
-        MaterialPageRoute(builder: (_) => const HikayeKesifEkrani()),
-      ),
-      style: TextButton.styleFrom(
-        minimumSize: const Size(OkumaTema.dokunmaMin, OkumaTema.dokunmaMin),
-        padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk8),
-      ),
-      child: Text(
-        '${OkumaMetin.vitrinTumu} →',
-        style: appText(size: 15, weight: FontWeight.w800, color: AppColors.primaryDark),
-      ),
-    );
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        if (buyuk) ...[
-          baslik,
-          Align(alignment: Alignment.centerLeft, child: tumu),
-        ] else
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Expanded(child: baslik),
-              tumu,
-            ],
-          ),
         if (serili) ...[
-          const SizedBox(height: OkumaTema.bosluk8),
+          const SizedBox(width: OkumaTema.bosluk8),
           _SeriRozeti(gun: seri!.seriSayisi),
         ],
       ],
@@ -131,32 +102,32 @@ class _Ust extends StatelessWidget {
   }
 }
 
+/// Seri rozeti: alev ve gün sayısı. Ekran okuyucu "N günlük okuma serisi" der.
 class _SeriRozeti extends StatelessWidget {
   const _SeriRozeti({required this.gun});
 
   final int gun;
 
   @override
-  Widget build(BuildContext context) => Container(
-        constraints: const BoxConstraints(minHeight: 32),
-        padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk12, vertical: OkumaTema.bosluk4),
-        decoration: BoxDecoration(color: AppColors.coralSoft, borderRadius: BorderRadius.circular(16)),
-        child: Row(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            const Icon(Icons.local_fire_department_rounded, size: OkumaTema.ikonKucuk, color: AppColors.coralDark),
-            const SizedBox(width: OkumaTema.bosluk4),
-            Flexible(
-              child: Text(
-                OkumaMetin.kartSeri(gun),
-                style: appText(size: 14, weight: FontWeight.w800, color: AppColors.coralDark),
-              ),
+  Widget build(BuildContext context) => Semantics(
+        label: OkumaMetin.kartSeri(gun),
+        child: ExcludeSemantics(
+          child: Container(
+            constraints: const BoxConstraints(minHeight: 36, minWidth: 36),
+            padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk8, vertical: OkumaTema.bosluk4),
+            decoration: BoxDecoration(color: AppColors.coralSoft, borderRadius: BorderRadius.circular(18)),
+            child: Row(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                const Icon(Icons.local_fire_department_rounded, size: 20, color: AppColors.coralDark),
+                const SizedBox(width: 2),
+                Text('$gun', style: appText(size: 16, weight: FontWeight.w900, color: AppColors.coralDark)),
+              ],
             ),
-          ],
+          ),
         ),
       );
 }
-
 /// Ana hikâye kartı. Öncelik: kota dolu → devam → öneri → yeni kullanıcı (kahraman daveti).
 class _AnaKart extends ConsumerWidget {
   const _AnaKart({
@@ -409,10 +380,27 @@ class _KesifSeridi extends ConsumerWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Row(
+        Wrap(
+          alignment: WrapAlignment.spaceBetween,
+          crossAxisAlignment: WrapCrossAlignment.center,
           children: [
-            const Expanded(child: OkumaBaslik(OkumaMetin.vitrinKesif)),
-            Text('Kaydır →', style: appText(size: 14, color: AppColors.muted)),
+            Semantics(
+              header: true,
+              child: Text(OkumaMetin.vitrinKesif, style: appText(size: 20, weight: FontWeight.w900)),
+            ),
+            TextButton(
+              onPressed: () => Navigator.of(context).push<void>(
+                MaterialPageRoute(builder: (_) => const HikayeKesifEkrani()),
+              ),
+              style: TextButton.styleFrom(
+                minimumSize: const Size(OkumaTema.dokunmaMin, OkumaTema.dokunmaMin),
+                padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk8),
+              ),
+              child: Text(
+                '${OkumaMetin.vitrinTumu} →',
+                style: appText(size: 14, weight: FontWeight.w800, color: AppColors.primaryDark),
+              ),
+            ),
           ],
         ),
         const SizedBox(height: OkumaTema.bosluk12),

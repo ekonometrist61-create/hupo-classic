@@ -12,7 +12,6 @@ import '../../providers/okuma_providers.dart';
 import '../../services/okuma_cihaz_deposu.dart';
 import '../../theme/app_theme.dart';
 import '../../widgets/okuma/okuma_v3.dart';
-import '../../widgets/ui/chunky_button.dart';
 import 'okuduklarim_ekrani.dart';
 import 'okuma_akis_ekrani.dart';
 import 'okuma_tema.dart';
@@ -251,8 +250,6 @@ class HikayeKesifEkrani extends ConsumerWidget {
             _DevamSatiri(devam: devam, onTap: () => okumaAc(context, ref, satir: devam.satir)),
             const SizedBox(height: OkumaTema.bosluk24),
           ],
-          _OlusturKarti(onTap: () => okumaAc(context, ref)),
-          const SizedBox(height: OkumaTema.bosluk24),
           const OkumaBaslik(OkumaMetin.vitrinKesifBaslik),
           const SizedBox(height: OkumaTema.bosluk12),
           if (katalog.hasError)
@@ -362,43 +359,4 @@ class _DevamSatiri extends StatelessWidget {
       ),
     );
   }
-}
-
-/// "Hikâyemi oluştur": kahraman seçiminden başlayan ana eylem.
-class _OlusturKarti extends StatelessWidget {
-  const _OlusturKarti({required this.onTap});
-
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) => Container(
-        padding: const EdgeInsets.all(OkumaTema.bosluk20),
-        decoration: BoxDecoration(
-          color: AppColors.primary,
-          borderRadius: BorderRadius.circular(OkumaTema.koseKart),
-        ),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text(
-              OkumaMetin.vitrinYeniBaslik,
-              style: appText(size: 22, weight: FontWeight.w900, color: Colors.white, height: 1.2),
-            ),
-            const SizedBox(height: OkumaTema.bosluk8),
-            Text(
-              OkumaMetin.vitrinYeniAlt,
-              style: appText(size: 16, color: Colors.white, height: 1.35),
-            ),
-            const SizedBox(height: OkumaTema.bosluk16),
-            ChunkyButton(
-              label: OkumaMetin.vitrinOlustur,
-              icon: Icons.auto_awesome_rounded,
-              onPressed: onTap,
-              color: AppColors.surface,
-              shadowColor: AppColors.lineDark,
-              textColor: AppColors.primaryDark,
-            ),
-          ],
-        ),
-      );
 }

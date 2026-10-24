@@ -84,7 +84,10 @@ void main() {
       expect(find.byKey(_kart), findsOneWidget);
       expect(find.text('Bugünkü hikâye'), findsOneWidget);
       expect(find.text('Feneri Kim Yakıyor?'), findsOneWidget);
-      expect(find.text('3 günlük okuma serisi'), findsOneWidget);
+      final anlam = tester.ensureSemantics();
+      await tester.pump();
+      expect(find.bySemanticsLabel('3 günlük okuma serisi'), findsOneWidget);
+      anlam.dispose();
       expect(find.text('Hikâyeye başla'), findsOneWidget);
       expect(tester.takeException(), isNull);
     });
@@ -150,12 +153,13 @@ void main() {
     expect(find.text('Yeniden dene'), findsOneWidget);
   });
 
-  testWidgets('"Tüm hikâyeler" keşif ekranını açar ve yeni hikâye akışına giden düğme içerir', (tester) async {
+  testWidgets('"Tüm hikâyeler" keşif ekranını açar ve kategorileri gösterir', (tester) async {
     await _ogren(tester, FakeOkumaRepository());
     await tester.tap(find.text('Tüm hikâyeler →'));
     await tester.pump();
     await tester.pump(const Duration(milliseconds: 500));
-    expect(find.text('Hikâyemi oluştur'), findsOneWidget);
+    // Hikâyemi oluştur yalnız Öğren kartında; keşif ekranında ikinci bir kopyası yok.
+    expect(find.text('Hikâyemi oluştur'), findsNothing);
     expect(find.text('Hikâyeleri keşfet'), findsOneWidget);
     // Vitrin şeridi de aynı kategoriyi gösterdiği için (Learn ekranı yığında) birden çok olabilir.
     expect(find.text('1 hikâye'), findsWidgets);
@@ -186,7 +190,10 @@ void main() {
     final repo = _SerisizRepo();
     await _ogren(tester, repo);
     expect(find.byKey(_kart), findsOneWidget);
-    expect(find.textContaining('günlük okuma serisi'), findsNothing);
+    final anlam = tester.ensureSemantics();
+    await tester.pump();
+    expect(find.bySemanticsLabel(RegExp('günlük okuma serisi')), findsNothing);
+    anlam.dispose();
   });
 }
 
