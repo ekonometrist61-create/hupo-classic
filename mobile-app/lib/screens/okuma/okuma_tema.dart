@@ -377,4 +377,23 @@ class OkumaMetin {
       'Henüz bir hikâye bitirmedin. İlk hikâyeni seçmeye ne dersin?';
   static const okuduklarimAlt = 'Bitirdiğin hikâyeler bu cihazda saklanır.';
   static const okuduklarimTekrar = 'Yeniden oku';
+
+  // ── HupoRead vitrini (Öğren) ve Tüm hikâyeler ─────────────────────────────
+  static const vitrinBaslik = 'HupoRead';
+  static const vitrinAlt = 'Hikâye ve macera dünyan';
+  static const vitrinTumu = 'Tüm hikâyeler';
+  static const vitrinKesif = 'Keşfetmeye hazır mısın?';
+  static const vitrinKesifBaslik = 'Hikâyeleri keşfet';
+  static const vitrinKesifBos = 'Şu an gösterilecek hikâye yok. Yakında yenileri eklenecek.';
+  static const vitrinYeniEtiket = 'Sana özel macera';
+  static const vitrinYeniBaslik = 'Bu hikâyenin kahramanı sensin!';
+  static const vitrinYeniAlt = 'Kendini ya da sevdiğin birini kahraman yap.';
+  static const vitrinOlustur = 'Hikâyemi oluştur';
+  static const vitrinDevamBaslik = 'Maceran seni bekliyor!';
+  static const vitrinDevam = 'Kaldığın yerden devam et';
+  static const vitrinDevamBolum = 'Yarım kalan hikâye';
+  static const vitrinKotaGovde = 'Yarın yeni bir hikâye seni bekliyor.';
+  static const vitrinKatalogHata = 'Hikâyeler şu an yüklenemedi.';
+  static String vitrinSayfa(int n, int toplam) => 'Sayfa $n / $toplam';
+  static String vitrinSayi(int n) => '$n hikâye';
 }

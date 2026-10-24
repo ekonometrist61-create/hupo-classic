@@ -11,6 +11,7 @@ import 'okuma_tema.dart';
 class HikayeSecimEkrani extends StatefulWidget {
   const HikayeSecimEkrani({
     super.key,
+    this.ilkTur,
     required this.katalog,
     required this.kahramanAdi,
     required this.onSec,
@@ -23,6 +24,9 @@ class HikayeSecimEkrani extends StatefulWidget {
   });
 
   final List<OkumaKatalogSatiri> katalog;
+
+  /// Verilirse liste bu türle filtreli açılır (kategori kapağından).
+  final String? ilkTur;
 
   /// Başlıkta gösterilir; yalnız cihazda kalır.
   final String kahramanAdi;
@@ -43,7 +47,7 @@ class HikayeSecimEkrani extends StatefulWidget {
 }
 
 class _HikayeSecimEkraniState extends State<HikayeSecimEkrani> {
-  String? _tur;
+  late String? _tur = widget.ilkTur;
 
   @override
   Widget build(BuildContext context) {

@@ -87,6 +87,26 @@ final okumaSozlugumProvider = Provider.autoDispose<List<OkumaSozlukKaydi>>(
   (ref) => ref.watch(okumaCihazDeposuProvider).sozlugum(),
 );
 
+/// Yarım kalan hikâye (yalnız cihazda). Yoksa null.
+final okumaDevamProvider = Provider.autoDispose<OkumaDevam?>((ref) => ref.watch(okumaCihazDeposuProvider).devam());
+
+/// Vitrin için hikâye kataloğu (kategori sayıları, Tüm hikâyeler). Hata AsyncError olarak kalır;
+/// ekran "yüklenemedi" ile "hikâye yok" durumlarını ayırt eder.
+final okumaVitrinKatalogProvider = FutureProvider.autoDispose<List<OkumaKatalogSatiri>>(
+  (ref) => ref.watch(okumaRepositoryProvider).katalog(limit: 48),
+);
+
+/// Öğrencinin sınıfı (`my_sinif()`; sunucu belirler). Okunamazsa null: görseller varsayılan
+/// (2–4. sınıf) dilinde kalır.
+final okumaSinifProvider = FutureProvider.autoDispose<int?>((ref) async {
+  try {
+    final v = await ref.watch(supabaseProvider).rpc('my_sinif');
+    return v is num ? v.toInt() : null;
+  } on Object {
+    return null;
+  }
+});
+
 /// Cihazdaki "Okuduklarım" rafı.
 final okumaOkuduklarimProvider = Provider.autoDispose<List<OkunanHikaye>>(
   (ref) => ref.watch(okumaCihazDeposuProvider).okuduklarim(),

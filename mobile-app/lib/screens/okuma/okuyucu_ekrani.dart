@@ -43,7 +43,11 @@ class OkuyucuEkrani extends ConsumerStatefulWidget {
     this.sinif = 4,
     this.tur = 'hikaye',
     this.sahneSlug,
+    this.ilkSayfa = 0,
   });
+
+  /// Açılış sayfası (0 tabanlı). Yarım kalan hikâyede kaldığı yer.
+  final int ilkSayfa;
 
   /// Hikâyenin ana sınıfı; sayfa başına vurgu ve çıkartma bütçesini belirler.
   final int sinif;
@@ -142,7 +146,11 @@ class _OkuyucuEkraniState extends ConsumerState<OkuyucuEkrani>
     _buyuk = depo.buyukYazi;
     // Okuma yazı tipi seçilmediyse uygulamanın genel yazı tipi ayarı geçerli.
     _lexend = depo.lexend ?? ref.read(settingsProvider).font == AppFont.lexend;
-    if (_sayfalar.isNotEmpty) widget.onSayfaGorundu?.call(0);
+    // Yarım kalan hikâyede kaldığı sayfadan devam eder (sınırların içinde).
+    if (_sayfalar.isNotEmpty) {
+      _sayfa = widget.ilkSayfa.clamp(0, _sayfalar.length - 1);
+      widget.onSayfaGorundu?.call(_sayfa);
+    }
     WidgetsBinding.instance.addPostFrameCallback((_) {
       if (mounted) _otomatikKaydirmaPlanla();
     });

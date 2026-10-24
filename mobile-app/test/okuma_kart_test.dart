@@ -1,6 +1,8 @@
 // Öğren sekmesi "Bugünkü hikâye" kartı: özellik bayrağı kapalıyken HİÇ görünmez; açıkken öneri, seri,
 // kota dolu ve geri dönüş durumları; üç ekran boyutu ve büyük yazı.
 
+import 'dart:convert';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
@@ -51,7 +53,7 @@ Future<void> _ogren(
   await tester.pump(const Duration(milliseconds: 400));
 }
 
-const _kart = ValueKey('okuma-bugun-karti');
+const _kart = ValueKey('okuma-vitrin-kart');
 
 void main() {
   setUpAll(loadFonts);
@@ -97,9 +99,67 @@ void main() {
   testWidgets('bugünkü hak dolduysa kart "yarın yeni hikâye" der ve Okuduklarım sunar', (tester) async {
     final repo = FakeOkumaRepository(kotaDolu: true);
     await _ogren(tester, repo);
-    expect(find.text('Bugünkü hikâyeni okudun. Yarın yeni bir hikâye seni bekliyor.'), findsOneWidget);
+    expect(find.text('Bugünkü hikâyeni okudun'), findsOneWidget);
+    expect(find.text('Yarın yeni bir hikâye seni bekliyor.'), findsOneWidget);
     expect(find.text('Okuduklarım'), findsOneWidget);
     expect(find.text('Hikâyeye başla'), findsNothing);
+  });
+
+  testWidgets('yarım kalan hikâye varsa "Maceran seni bekliyor!" ve kaldığı sayfa gösterilir', (tester) async {
+    final devam = jsonEncode({
+      'satir': testSatiri().toMap(),
+      'sayfa': 2,
+      'toplam': 4,
+      'at': DateTime.now().toIso8601String(),
+    });
+    await _ogren(tester, FakeOkumaRepository(), onceki: {'okuma_kisisel_devam_u1': devam});
+    expect(find.text('Maceran seni bekliyor!'), findsOneWidget);
+    expect(find.text('Sayfa 3 / 4'), findsOneWidget);
+    expect(find.text('Kaldığın yerden devam et'), findsOneWidget);
+    expect(find.text('Hikâyeye başla'), findsNothing);
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('üç kategori kapağı görünür; sayı gerçek katalogdan gelir, boş kategori "Yakında" der', (tester) async {
+    await _ogren(tester, FakeOkumaRepository());
+    expect(find.text('Keşfetmeye hazır mısın?'), findsOneWidget);
+    expect(find.text('Gizem'), findsOneWidget);
+    expect(find.text('Uzay ve Bilim Kurgu'), findsOneWidget);
+    expect(find.text('Macera'), findsOneWidget);
+    // Fake katalogda yalnız bir macera hikâyesi var.
+    expect(find.text('1 hikâye'), findsOneWidget);
+    expect(find.text('Yakında'), findsNWidgets(2));
+  });
+
+  testWidgets('katalog boşken de kapaklar görünür (sayı uydurulmaz)', (tester) async {
+    await _ogren(tester, FakeOkumaRepository(katalogSatirlari: const []));
+    expect(find.text('Gizem'), findsOneWidget);
+    expect(find.text('Yakında'), findsNWidgets(3));
+    expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('katalog yüklenemezse kapaklar sayısız görünür, Tüm hikâyeler hata + yeniden dene gösterir', (tester) async {
+    final repo = FakeOkumaRepository()..katalogHatasi = okumaBaglantiHatasi;
+    await _ogren(tester, repo);
+    expect(find.text('Gizem'), findsOneWidget);
+    expect(find.text('Yakında'), findsNothing);
+    await tester.tap(find.text('Tüm hikâyeler →'));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
+    expect(find.text('Hikâyeler şu an yüklenemedi.'), findsOneWidget);
+    expect(find.text('Yeniden dene'), findsOneWidget);
+  });
+
+  testWidgets('"Tüm hikâyeler" keşif ekranını açar ve yeni hikâye akışına giden düğme içerir', (tester) async {
+    await _ogren(tester, FakeOkumaRepository());
+    await tester.tap(find.text('Tüm hikâyeler →'));
+    await tester.pump();
+    await tester.pump(const Duration(milliseconds: 500));
+    expect(find.text('Hikâyemi oluştur'), findsOneWidget);
+    expect(find.text('Hikâyeleri keşfet'), findsOneWidget);
+    // Vitrin şeridi de aynı kategoriyi gösterdiği için (Learn ekranı yığında) birden çok olabilir.
+    expect(find.text('1 hikâye'), findsWidgets);
+    expect(tester.takeException(), isNull);
   });
 
   testWidgets('3+ gün okunmadıysa kartta nazik geri dönüş mesajı (push yok)', (tester) async {

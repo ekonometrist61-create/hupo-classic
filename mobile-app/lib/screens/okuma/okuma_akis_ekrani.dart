@@ -24,10 +24,13 @@ import 'sorular_ekrani.dart';
 /// Ana eylem her adımda tek ve belirgindir. Durumlar: yükleniyor, hata (yeniden dene), bugünkü
 /// hikâye hakkı doldu, çevrimdışı salt okuma. Kahraman adı yalnız bu ağaçta, bellekte yaşar.
 class OkumaAkisEkrani extends ConsumerStatefulWidget {
-  const OkumaAkisEkrani({super.key, this.baslangicSatiri});
+  const OkumaAkisEkrani({super.key, this.baslangicSatiri, this.ilkTur});
 
   /// Verilirse (Öğren kartı önerisi, "Okuduklarım") kahraman seçildikten sonra doğrudan açılır.
   final OkumaKatalogSatiri? baslangicSatiri;
+
+  /// Kategori kapağından gelindiyse hikâye listesi bu türle açılır (ör. gizem).
+  final String? ilkTur;
 
   @override
   ConsumerState<OkumaAkisEkrani> createState() => _OkumaAkisEkraniState();
@@ -121,6 +124,7 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
       case OkumaAsama.liste:
         final son = depo.sonOkuma;
         ekran = HikayeSecimEkrani(
+          ilkTur: widget.ilkTur,
           katalog: d.katalog,
           kahramanAdi: d.kahraman?.ad ?? '',
           yukleniyor: d.katalogYukleniyor,
@@ -149,6 +153,7 @@ class _OkumaAkisEkraniState extends ConsumerState<OkumaAkisEkrani> {
           sinif: d.secilen?.anaSinif ?? 4,
           tur: d.secilen?.tur ?? 'hikaye',
           sahneSlug: d.secilen?.slug,
+          ilkSayfa: d.ilkSayfa,
           onGeri: _akis.listeyeDon,
           onSayfaGorundu: _akis.sayfaGorundu,
           onSozcukAcildi: _akis.sozcukAcildi,

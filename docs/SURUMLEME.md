@@ -38,6 +38,20 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### app 1.2.0+3 · 2026-10-24
+
+Büyük değişiklik (MINOR: yeni kullanıcı yüzeyi). Öğren sekmesinde HupoRead vitrini.
+- Öğren: "HupoRead" başlığı, seri rozeti, duruma göre ana hikâye kartı (yeni kullanıcı, öneri, yarım kalan hikâye, kota dolu), kategori kapak şeridi (katalogdan; hikâyesi olmayan kategori gizlenir).
+- "Tüm hikâyeler" keşif ekranı: yarım kalan hikâye, "Hikâyemi oluştur", tür kategorileri. Kategori kapağı ilgili türün listesini filtreli açar.
+- Yarım kalan hikâye yalnız bu cihazda tutulur (sunucuya gönderilmez); aynı hikâyeye dönünce kaldığı sayfadan açılır; hikâye bitince silinir.
+- Düzeltme: PDF kapağında hikâye sahne görseli artık doğru dosyadan okunur (önceden yol eksikti, kapak boş kalıyordu).
+
+**Migration:** yok. Mevcut RPC'ler kullanılır (okuma_seri_ve_oneri, okuma_katalog_filtre).
+
+**Uyumluluk:** Panel 0.3.0 ile çalışır. Kota kuralı değişmedi: yeni hikâye günde bir kez; kota dolu iken yarım hikâye öne çıkmaz.
+
+**Bilinen açıklar:** Yarım kalan hikâye yalnız bu cihazda tutulduğu için cihaz değişince kaybolur. Derleme bu turda yalnız debug APK olarak yapıldı; yayın imzası için `android/key.properties` yok.
+
 ### panel 0.3.0 · 2026-10-24
 
 Büyük değişiklik (MINOR: RPC, migration, paket biçimi). Soru Atölyesi JSON paket içe aktarma.

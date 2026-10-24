@@ -104,6 +104,10 @@ class FakeOkumaRepository implements OkumaRepository {
     ];
   }
 
+  /// Sunucu sözlüğü bu testlerde yok; paket sözlüğü kullanılır.
+  @override
+  Future<Map<String, dynamic>?> sozlukGetir(String hikayeId) async => null;
+
   @override
   Future<OkumaPaketi> hikayeGetir(String hikayeId) async {
     _kaydet('okuma_hikaye_getir', {'p_hikaye_id': hikayeId});

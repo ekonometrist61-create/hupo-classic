@@ -34,6 +34,20 @@ class OkumaSozlukKaydi {
   final DateTime at;
 }
 
+/// Yarım kalan hikâye: son açılan, henüz bitirilmemiş hikâye ve görülen son sayfa (0 tabanlı).
+/// Yalnız bu cihazda tutulur; sunucuya gönderilmez.
+class OkumaDevam {
+  const OkumaDevam({required this.satir, required this.sayfa, required this.toplam, required this.at});
+
+  final OkumaKatalogSatiri satir;
+  final int sayfa;
+  final int toplam;
+  final DateTime at;
+
+  /// 0–1 arası ilerleme. Sayfa sayısı bilinmiyorsa 0.
+  double get oran => toplam <= 0 ? 0 : ((sayfa + 1) / toplam).clamp(0.0, 1.0);
+}
+
 const String _onbellekSiraAnahtari = 'okuma_onbellek_sira';
 const String _paketOneki = 'okuma_paket_';
 const String _kisiselOnek = 'okuma_kisisel_';
@@ -201,7 +215,8 @@ class OkumaCihazDeposu {
     }
   }
 
-  /// Hikâye tamamlandığında çağrılır: raf güncellenir ve son okuma zamanı yazılır.
+  /// Hikâye tamamlandığında çağrılır: raf güncellenir, son okuma zamanı yazılır, bitmiş hikâyenin
+  /// "devam" kaydı silinir.
   Future<void> okunduYaz(OkumaKatalogSatiri satir, {required DateTime simdi}) async {
     final liste = [
       OkunanHikaye(satir: satir, okunduAt: simdi),
@@ -216,7 +231,34 @@ class OkumaCihazDeposu {
       ]),
     );
     await _prefs.setString(_anahtar('son_okuma'), simdi.toIso8601String());
+    if (devam()?.satir.hikayeId == satir.hikayeId) await devamSil();
   }
+
+  /// Yarım kalan hikâye. Bozuk ya da eksik kayıt yok sayılır.
+  OkumaDevam? devam() {
+    final ham = _prefs.getString(_anahtar('devam'));
+    if (ham == null) return null;
+    try {
+      final m = Map<String, dynamic>.from(jsonDecode(ham) as Map);
+      return OkumaDevam(
+        satir: OkumaKatalogSatiri.fromMap(Map<String, dynamic>.from(m['satir'] as Map)),
+        sayfa: (m['sayfa'] as num).toInt(),
+        toplam: (m['toplam'] as num).toInt(),
+        at: DateTime.parse(m['at'] as String),
+      );
+    } on Object {
+      return null;
+    }
+  }
+
+  /// Okuyucuda görülen sayfa değişince çağrılır (0 tabanlı sayfa indeksi).
+  Future<void> devamYaz(OkumaKatalogSatiri satir, {required int sayfa, required int toplam, required DateTime simdi}) =>
+      _prefs.setString(
+        _anahtar('devam'),
+        jsonEncode({'satir': satir.toMap(), 'sayfa': sayfa, 'toplam': toplam, 'at': simdi.toIso8601String()}),
+      );
+
+  Future<void> devamSil() => _prefs.remove(_anahtar('devam'));
 
   DateTime? get sonOkuma {
     final ham = _prefs.getString(_anahtar('son_okuma'));
