@@ -54,3 +54,6 @@ dev.log.err
 *.tsbuildinfo
 next-env.d.ts
 .env*
+
+# Karakter kopyası: mobile-app/assets/characters'tan predev/prebuild ile üretilir (scripts/sync-karakterler.mjs)
+public/characters/
