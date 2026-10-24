@@ -1,5 +1,6 @@
 import PageBreadcrumb from "@/components/common/PageBreadCrumb";
 import BulkImport from "@/components/yonetim/sorular/BulkImport";
+import PaketImport from "@/components/yonetim/sorular/PaketImport";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 
 export async function generateMetadata() {
@@ -20,6 +21,7 @@ export default async function BulkImportPage({
     <div>
       <PageBreadcrumb pageTitle={t("import.title")} />
       <BulkImport />
+      <PaketImport />
     </div>
   );
 }

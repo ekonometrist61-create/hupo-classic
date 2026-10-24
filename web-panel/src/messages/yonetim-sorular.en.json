@@ -91,6 +91,27 @@
         "deleted": "Question deleted.",
         "status": "Status updated."
       },
+      "paket": {
+        "title": "Question Workshop package (JSON)",
+        "help": "Upload the JSON package from Question Workshop. Grade is required (1–8). Verbatim questions need a license basis in their source. Red-quality questions are rejected. The same batch cannot be imported twice.",
+        "pick": "Choose package file",
+        "invalidFile": "The file is not a valid question package (version 1, batch id and questions list are required).",
+        "preview": "Batch {parti}: {adet} questions ready.",
+        "approve": "Only questions with human approval enter as approved (others stay pending)",
+        "allOrNothing": "All or nothing (if any row fails, nothing is added)",
+        "start": "Import",
+        "busy": "Importing…",
+        "error": "Operation failed: {hata}",
+        "summary": "Added: {eklenen} · Duplicates: {tekrar} · Rejected: {hatali}",
+        "partiId": "Batch id: {parti}",
+        "rejected": "Rejected rows (up to 50)",
+        "rowError": "Row {satir} ({soru}): {hata}",
+        "undoTitle": "Undo a batch",
+        "undoPlaceholder": "Batch id (e.g. meb-odsgm-4okuma-20261017)",
+        "undo": "Undo",
+        "undoDone": "Undone: {adet} questions marked as rejected.",
+        "undoNote": "Undo does not delete questions; it sets their status to rejected. Student answer history is kept."
+      },
       "import": {
         "title": "Bulk Question Import",
         "backToList": "Back to list",

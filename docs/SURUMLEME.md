@@ -38,6 +38,17 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.3.0 · 2026-10-24
+
+Büyük değişiklik (MINOR: RPC, migration, paket biçimi). Soru Atölyesi JSON paket içe aktarma.
+- `admin_import_questions_v2` RPC'si: Soru Atölyesi paketini (sürüm 1, parti kimliği, sınıf 1–8) tek işlemde içe aktarır; tekrarları ve hatalı satırları ayırır, "hepsi ya da hiçbiri" seçeneği vardır.
+- Parti geri alma: parti kimliğiyle sorular silinmeden "reddedildi" yapılır; öğrenci cevap geçmişi korunur.
+- Panel: Toplu Soru Ekleme sayfasına `PaketImport` ekranı (dosya seçme, önizleme, sonuç özeti, reddedilen satırlar, geri alma); TR/EN metinler.
+
+**Migration'lar (uzak veritabanında uygulandı):** 20261047000000, 20261073000000.
+
+**Uyumluluk:** İçe aktarılan sorular varsayılan olarak `beklemede` girer; yalnızca yönetici "insan onayı taşıyanlar onaylı girsin" kutusunu işaretlerse ve satırda insan onayı (onay/duzeltildi) varsa `onaylandi` olur. App tarafında değişiklik yoktur; öğrenciye dönük bir değişiklik yoktur (beklemedeki sorular öğrenciye gitmez).
+
 ### panel 0.2.1 · 2026-10-23
 
 Düzeltme (PATCH). Hikâye Atölyesi: "İncele ve yönet" detayı listenin altında açılıp oraya kaydırılıyor; ağır içerik yalnız düzenleme ve önizleme istenince yükleniyor; yayın adımları detayda gösteriliyor.

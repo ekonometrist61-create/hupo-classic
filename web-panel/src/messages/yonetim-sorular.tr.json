@@ -91,6 +91,27 @@
         "deleted": "Soru silindi.",
         "status": "Durum güncellendi."
       },
+      "paket": {
+        "title": "Soru Atölyesi paketi (JSON)",
+        "help": "Soru Atölyesi'nden çıkan JSON paketini yükleyin. Sınıf zorunludur (1–8). Birebir sorular için kaynağın lisans dayanağı olmalıdır. Kırmızı kaliteli sorular kabul edilmez. Aynı parti ikinci kez yüklenemez.",
+        "pick": "Paket dosyası seç",
+        "invalidFile": "Dosya geçerli bir soru paketi değil (sürüm 1, parti kimliği ve sorular listesi gerekir).",
+        "preview": "Parti {parti}: {adet} soru hazır.",
+        "approve": "Yalnızca insan onayı taşıyan sorular onaylı girsin (diğerleri beklemede)",
+        "allOrNothing": "Hepsi ya da hiçbiri (tek hata varsa hiçbir şey eklenmez)",
+        "start": "İçe aktar",
+        "busy": "İçe aktarılıyor…",
+        "error": "İşlem başarısız: {hata}",
+        "summary": "Eklenen: {eklenen} · Tekrar: {tekrar} · Hatalı: {hatali}",
+        "partiId": "Parti kimliği: {parti}",
+        "rejected": "Reddedilen satırlar (en fazla 50)",
+        "rowError": "Satır {satir} ({soru}): {hata}",
+        "undoTitle": "Partiyi geri al",
+        "undoPlaceholder": "Parti kimliği (örn. meb-odsgm-4okuma-20261017)",
+        "undo": "Geri al",
+        "undoDone": "Geri alındı: {adet} soru reddedildi olarak işaretlendi.",
+        "undoNote": "Geri alma soruları silmez; onay durumunu reddedildi yapar. Öğrenci cevap geçmişi korunur."
+      },
       "import": {
         "title": "Toplu Soru Ekleme",
         "backToList": "Listeye dön",
