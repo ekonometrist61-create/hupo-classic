@@ -74,3 +74,5 @@ Hupo ilk olarak “asam” sözcüğünün “masa” değil, “sama” olması
 ---
 @omurga
 Hupo sözcükleri yavaşça, hecelerini belirgin söyleyerek yeniden denedi. Serçe duyduğu sesleri tek tek not etti. Kemer “Asam!” dediğinde harfleri sıralayıp “masayı” buldular. “Pitak!” sesini de “kitap” olarak düzelttiler. Kemerden gelen son yankı yine karışıktı, fakat artık hangi sözcüğün söylendiğini anlayabiliyorlardı. Hupo defterinin altına şöyle yazdı: “Dikkatli dinle, karşılaştır, sonra karar ver.”
+
+Not: Gerçek yankıda ses aynen geri döner; hikâyedeki sözcüklerin tersine dönmesi kurgudur.

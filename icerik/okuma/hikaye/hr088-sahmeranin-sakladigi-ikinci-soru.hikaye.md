@@ -221,3 +221,5 @@ O artık neyi neden öğrendiğini de biliyordu.
 ---
 @omurga
 Masal onunla yaşayacaktı.
+
+Not: Bu bir masaldır; gerçek dünyaya ilişkin bilimsel veya dinî bir iddia taşımaz.

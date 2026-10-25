@@ -241,3 +241,5 @@ Beyrek, yolun üstündeki son kontrol levhasını incelerken Ilgın'ı yeniden g
 Yalın, geçitten dönen kervanın kayıtlarını incelerken {yoldas:ilgi|bir arkadaşın} hazırladığı işaretleri gördü. Her geçişte hava ve yol durumu yazılmıştı. Böylece verilen söz yalnız bir defalık törenin hatırası olmaktan çıkmış, düzenli bir sorumluluğa dönüşmüştü. Beyrek bu kayıtları görünce rahatladı. Yiğitlik bazen bir anlık gösteriden çok, her gün tekrar edilen dikkatli bir işe benziyordu.
 
 Ozan bu sahneyi anlatıya eklerken kendince yeni bir ikileme buldu: “Dinleye dinleye, anlaya anlaya.” {yoldas:yalin|bir arkadaş} bu ifadeye güldü; kulağa biraz tuhaf geldiğini söyledi. Ozan da gülerek “Öyleyse güzelini bulalım,” dedi. Birlikte kısa, akılda kalıcı bir dize kurdular. Böylece anlatının da taş gibi sabit olmadığını, onu aktaran insanların dikkatle yeniden şekillendirdiğini gördüler.
+
+Not: Bu hikâye, Dede Korkut anlatılarındaki karakterlerden esinlenen özgün bir uyarlamadır; olay örgüsü Dede Korkut Kitabı’ndaki hikâyelerle aynı değildir.

@@ -277,3 +277,5 @@ Gözlemevinden çıkarken akşam karanlığı tepenin üstüne çökmüştü. {k
 {yoldas:yalin|bir arkadaş} kapıda durup “Bir daha karanlıkta ne olduğunu bilmediğimiz bir yere girer miyiz?” diye sordu. {kahraman} gülümsedi. “Güvenli koşullar ve izin varsa, evet,” dedi. “Ama bu kez ilk gördüğümü bütünün adı diye ilan etmem.” Cem elindeki kayıt cihazını kaldırdı. “Ben de önce sesin kaynağını sorarım.”
 
 Beşi birlikte yokuştan indi. Kimse diğerinden tamamen vazgeçmemişti; kimse diğerinin aynısı olmamıştı. Paylaştıkları şey tek bir bakış açısı değil, birbirlerinin bakışlarını sınayabilecekleri ortak bir meraktı.
+
+Not: Bu hikâye, Mevlânâ’nın Mesnevî’sindeki “karanlıkta fil” kıssasından esinlenmiş özgün bir anlatıdır; Mesnevî metni değildir ve hikâyedeki yorumlar Mevlânâ’nın sözleri değildir.

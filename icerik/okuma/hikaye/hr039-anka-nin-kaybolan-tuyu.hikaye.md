@@ -85,3 +85,5 @@ Tam o sırada {yoldas:yalin|bir arkadaş}, sislerin arasından ortaya çıktı. 
 O gece annesine tüyün sesini anlattı. Annesi inanıp inanmamak yerine, "Bu deneyim sende hangi soruları uyandırdı?" diye sordu. {kahraman}, "Kuşların göç yollarını kim koruyor?" dedi. Ertesi hafta sınıflarıyla kuş gözlem etkinliğine katılmak için öğretmenine danıştı.
 
 Ertesi gün pencerenin önüne bir kuş gözlem çizelgesi astı. Artık gökyüzüne her baktığında yalnızca {yoldas:belirtme|bir arkadaşı} değil, yolculuğa çıkan gerçek kuşları da düşünüyordu.
+
+Not: Bu bir masaldır; gerçek dünyaya ilişkin bilimsel veya dinî bir iddia taşımaz.

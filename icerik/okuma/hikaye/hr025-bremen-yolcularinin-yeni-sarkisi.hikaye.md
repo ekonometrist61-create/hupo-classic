@@ -76,3 +76,5 @@ Akşama doğru uzaktan Bremen'in çanları duyuldu. Dört arkadaş birbirine bak
 ---
 @omurga
 Dil hedefi: ses–ritim–uyum, karşılaştırma; Kavram/değer: müzikal örüntü, farklılıklara saygı, dayanışma. İkon önerileri: eşek, kedi, nota. Okuma sonrası: İlk şarkı neden gürültüydü? Hayvanlar hangi değişiklikle uyum sağladı?
+
+Not: Bu hikâye, Grimm Kardeşler’in derlediği Bremen Mızıkacıları masalından esinlenen özgün bir uyarlamadır.

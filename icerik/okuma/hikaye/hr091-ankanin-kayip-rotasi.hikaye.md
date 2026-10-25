@@ -267,3 +267,5 @@ Sude, ses kayıtlarının yanındaki izin kutularını yeniden kontrol etti. Mas
 ---
 @omurga
 {kahraman} ertesi sabah göğe baktığında kuşları görmedi. Yine de defterine “Kuş yok” yazmadı; “Gözlem süresinde kuş görülmedi” diye not düştü. Küçük bir dil farkıydı ama büyük bir anlam taşıyordu. Doğa, insanların baktığı birkaç dakikadan çok daha geniş bir hayat sürüyordu. {kahraman} bunu öğrendiği için mutluydu.
+
+Not: Bu bir masaldır; gerçek dünyaya ilişkin bilimsel veya dinî bir iddia taşımaz.

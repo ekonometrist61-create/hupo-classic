@@ -183,3 +183,5 @@ Büyükannesi karşı kapıdan onu izliyordu. “Bugün çeşme sana ne söyledi
 ---
 @omurga
 - Anlatı geleneği: Şahmeran, Anadolu sözlü anlatılarından bir motif; bu metin özgün kurgu olarak yazılmıştır. - Kavramlar: Güven, merhamet, gizlilik, kaynak doğrulama, etik karar. - Güvenlik: Yabani hayvana dokunmama, tarihî yapıya izinsiz müdahale etmeme, gerçek tehlikede güvenilir yetişkine haber verme.
+
+Not: Bu bir masaldır; gerçek dünyaya ilişkin bilimsel veya dinî bir iddia taşımaz.

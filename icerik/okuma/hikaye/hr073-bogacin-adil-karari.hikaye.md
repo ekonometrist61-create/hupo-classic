@@ -303,3 +303,5 @@ Dede Korkut yanından geçerken kopuzuna hafifçe dokundu. “Bir yiğidin adın
 Boğaç karşılık vermedi. Ufukta yükselen toz bulutunu, yola çıkan atlıları ve direklerde dalgalanan sancakları izledi. Artık gücünü kanıtlamak için yeni bir boğayla karşılaşması gerekmediğini biliyordu. En önemli karşılaşma, kimi zaman insanın kendi öfkesiyle yaptığı sessiz mücadeleydi.
 
 Boğaç, sabah sancağın yanından geçerken yeni kayıt defterine bir sayfa daha ekledi: “Bugün duyduklarım, bugün doğruladıklarım.” Bu iki satırın birbirine karışmaması için defteri kapatmadan önce uzun uzun düşündü.
+
+Not: Bu hikâye, Dede Korkut anlatılarındaki karakterlerden esinlenen özgün bir uyarlamadır; olay örgüsü Dede Korkut Kitabı’ndaki hikâyelerle aynı değildir.

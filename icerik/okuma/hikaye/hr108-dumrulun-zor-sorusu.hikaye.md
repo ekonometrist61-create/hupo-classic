@@ -331,3 +331,5 @@ Köprüden inerken küçük bir çocukla karşılaştı. Çocuk korkuluğa yasla
 Çocuk gülerek bağırdı: “Birlikte yapabiliriz!”
 
 Yankı vadide dolaştı. Bu kez Dumrul sese katıldı. Kendi adını duymayı beklemiyordu. Sözün çoğalarak geri dönmesi yeterliydi.
+
+Not: Bu hikâye, Dede Korkut anlatılarındaki karakterlerden esinlenen özgün bir uyarlamadır; olay örgüsü Dede Korkut Kitabı’ndaki hikâyelerle aynı değildir.
