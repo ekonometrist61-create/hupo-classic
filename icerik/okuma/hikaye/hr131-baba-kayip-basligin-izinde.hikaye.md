@@ -31,7 +31,7 @@ sorular:
     dayanak_sayfa: 1
     metin: "Fotoğrafın hangi bölümü eksikti?"
     secenekler:
-      - {id: A, metin: "Fotoğrafın kenarındaki çizgiler"}
+      - {id: A, metin: "Kenardaki ince çizgiler"}
       - {id: B, metin: "Tarihi gösteren bir saat"}
       - {id: C, metin: "Ağacın kalın gövdesi"}
       - {id: D, metin: "Altındaki başlık"}
@@ -60,7 +60,7 @@ sorular:
       - {id: C, metin: "Alışveriş listesinde"}
       - {id: D, metin: "Sınıf günlüğünde"}
     dogru: B
-    dayanak: "Defterde aynı tarihe ait “Mahalle Kitap Değişim Buluşması” kaydı vardı."
+    dayanak: "Defterde ilk fotoğrafın tarihine ait “Mahalle Kitap Değişim Buluşması” kaydı vardı."
     aciklama: "Etkinliğin adı, eski duyuru defterindeki kayıtta yer alıyordu."
   - id: s4
     beceri: yorumlama
@@ -85,7 +85,7 @@ Fotoğrafçı {kahraman}, mahalle gazetesinin eski sayılarından bir sergi haz�
 Bir sonraki sayıda aynı ağacın önünde çekilmiş başka bir fotoğraf vardı. Bu fotoğrafın altında “Açık Hava Kitap Paylaşımı” yazıyordu. Ne var ki fotoğraftaki sepet farklıydı. {kahraman}, bu iki görüntünün farklı günlerde çekilmiş olabileceğini düşündü. Tarihleri karşılaştırdı ve aralarında bir hafta bulunduğunu gördü. Böylece ilk fotoğrafı yanlış etkinlikle eşleştirmekten vazgeçti.
 ---
 @omurga
-Arşiv sorumlusu eski bir duyuru defteri getirdi. Defterde aynı tarihe ait “Mahalle Kitap Değişim Buluşması” kaydı vardı. Kaydın yanındaki küçük çizimde ağacın bulunduğu meydan işaretlenmişti. {kahraman}, gazeteyi ve duyuru defterini birlikte inceleyince bilgilerin birbirini desteklediğini anladı. Sergi etiketi için etkinliğin adını ve tarihini yazdı. Ayrıca bilginin hangi belgelere dayandığını ekledi.
+Arşiv sorumlusu eski bir duyuru defteri getirdi. Defterde ilk fotoğrafın tarihine ait “Mahalle Kitap Değişim Buluşması” kaydı vardı. Kaydın yanındaki küçük çizimde ağacın bulunduğu meydan işaretlenmişti. {kahraman}, gazeteyi ve duyuru defterini birlikte inceleyince bilgilerin birbirini desteklediğini anladı. Sergi etiketi için etkinliğin adını ve tarihini yazdı. Ayrıca bilginin hangi belgelere dayandığını ekledi.
 ---
 @omurga
 Sergi açıldığında ziyaretçiler fotoğrafın altında kaynak açıklamasını gördü. Bir öğrenci “Bu başlığı nasıl buldunuz?” diye sordu. {kahraman}, yırtık kâğıdı ve karşılaştırdığı kayıtları gösterdi. “Bir fotoğraf bize çok şey anlatır,” dedi, “ama her sorunun cevabını tek başına vermez.” Öğrenci fotoğrafa yeniden baktı; bu kez yalnızca görüntüyü değil, onun ardındaki araştırmayı da merak ediyordu.

@@ -129,7 +129,7 @@ Cem'in sorusu ise farklıydı: “Kaydettiğim ses canlı bir varlıktan mı gel
 @omurga
 İkinci ziyaret gündüz yapıldı. Salon yine kontrollü biçimde karartılmıştı; fakat çocuklar bu kez birbirlerinin gözlem alanlarını sırayla geziyordu. İlk olarak {kahraman}, {yoldas:ilgi|bir arkadaşın} esnek parçayı incelediği noktaya geçti. Kendisi de parçanın bir halata benzediğini düşündü. Ardından Melis'in baktığı yere gidince kıvrımlı çizgiyi gördü. İki gözlemin birbiriyle çelişmesi gerekmiyordu: Aynı büyük nesnenin farklı bölümleri olabilirlerdi.
 
-{yoldas:yalin|bir arkadaş}, Narin'in önündeki geniş levhayı görünce “Bu bir yelpazeymiş,” dedi. Narin durdurdu. “Yelpazeye benziyor,” diye düzeltti. {yoldas:yalin|bir arkadaş} gülümsedi. Dilindeki tek bir ekin iddiasının gücünü nasıl değiştirdiğini fark etti. Ölçüm yapmayı seven biri olarak kesin sayılarla konuşmaya alışmıştı; fakat nesnenin adını vermek de ölçüm kadar dikkat gerektiriyordu.
+{yoldas:yalin|bir arkadaş}, Narin'in önündeki geniş levhayı görünce “Bu bir yelpazeymiş,” dedi. Narin durdurdu. “Yelpazeye benziyor,” diye düzeltti. {yoldas:yalin|bir arkadaş} gülümsedi. Dilindeki tek bir kesin iddiasının gücünü nasıl değiştirdiğini fark etti. Ölçüm yapmayı seven biri olarak kesin sayılarla konuşmaya alışmıştı; fakat nesnenin adını vermek de ölçüm kadar dikkat gerektiriyordu.
 
 Cem, başka bölümlerde dolaşırken sesin nerede daha yüksek duyulduğunu karşılaştırdı. Kaydın ses düzeyinin her yerde aynı olmadığını gözlemledi. Yine de yön belirlemek düşündüğünden zordu; odada ses yankılanıyordu. {kahraman} ona “Belki enstalasyonun kendisi ses üretiyordur,” dedi. Cem bu olasılığı not etti. Ardından “Bir sesin canlıya benzediğini söyleyebiliriz ama canlı olduğunu henüz bilmiyoruz,” diye ekledi.
 ---

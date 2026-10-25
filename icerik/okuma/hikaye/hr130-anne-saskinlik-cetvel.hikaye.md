@@ -42,7 +42,7 @@ sorular:
     dayanak_sayfa: 2
     metin: "İlk cetvelin sorunu neydi?"
     secenekler:
-      - {id: A, metin: "Çok renkliydi ve epey parlaktı"}
+      - {id: A, metin: "Çizgileri silinmiş ve soluktu"}
       - {id: B, metin: "Bir ucu duvara değmiyordu"}
       - {id: C, metin: "Okuldan yeni alınmıştı"}
       - {id: D, metin: "Sıfır noktası görünmüyordu"}
@@ -66,9 +66,9 @@ sorular:
     dayanak_sayfa: 2
     metin: "Ölçümü yeniden yapmak neyi sağladı?"
     secenekler:
-      - {id: A, metin: "Köşenin tamamen kapanmasını"}
+      - {id: A, metin: "Sorunun hiç fark edilmemesini"}
       - {id: B, metin: "Hatalı bilginin düzelmesini"}
-      - {id: C, metin: "Cetvelin yeniden boyanmasını"}
+      - {id: C, metin: "Cetvelin yeniden alınmasını"}
       - {id: D, metin: "Çizimin tamamen atılmasını"}
     dogru: B
     dayanak: "Sağlam cetvelle genişliği bir kez daha ölçtü."

@@ -66,10 +66,10 @@ sorular:
     dayanak_sayfa: 4
     metin: "Yolculara hangi bilgi duyuruldu?"
     secenekler:
-      - {id: A, metin: "Trenin dış rengi ve boyası"}
-      - {id: B, metin: "Yeni bilet bedeli ve indirimi"}
+      - {id: A, metin: "Trenin dış rengi"}
+      - {id: B, metin: "Yeni bilet bedeli"}
       - {id: C, metin: "Tahmini varış saati"}
-      - {id: D, metin: "İstasyonun tarihi ve kuruluşu"}
+      - {id: D, metin: "İstasyonun tarihi"}
     dogru: C
     dayanak: "Makinist kontrollü ilerledi, görevli de tahmini varış saatini yolculara duyurdu."
     aciklama: "Görevli, tahmini varış saatini yolculara duyurdu."
@@ -96,7 +96,7 @@ Bir yolcu, ertesi sabah yapılacak bir toplantıya yetişmek için erken varmak 
 Yolculardan biri, “Eski yan hattı kullansak daha çabuk gideriz,” dedi. {kahraman} böyle bir öneriye yalnızca zamana bakarak karar verilemeyeceğini biliyordu. Yan hattın o gece açık olduğuna dair hiçbir resmî bilgi bulunmuyordu. Makinist, hat kontrol merkezinden doğrulama istedi. Merkez, yan hattın bakım için kapalı olduğunu bildirdi. Böylece kısa görünen yolun kullanılmaması gerektiği kesinleşti.
 ---
 @omurga
-{kahraman}, güvenli güzergâhta devam etmek için verilen talimata uydu. Makinist kontrollü ilerledi, görevli de tahmini varış saatini yolculara duyurdu. {kahraman} bu yeni saatin bir öngörü, yani eldeki koşullara göre yapılan tahmin olduğunu açıkladı. Her yolcu gecikmenin nedenini öğrendi. Toplantıya yetişecek kişi, uygun olduğunda kendi planını değiştirmek için haber gönderdi.
+{kahraman}, güvenli güzergâhta devam etmek için verilen talimata uydu. Makinist kontrollü ilerledi, görevli de tahmini varış saatini yolculara duyurdu. {kahraman} bu yeni saatin bir öngörü, yani eldeki koşullara göre yapılan tahmin olduğunu açıkladı. Her yolcu gecikmenin nedenini öğrendi. Toplantıya yetişecek kişi, yeni saate göre planını değiştirmek için haber gönderdi.
 ---
 @omurga
 Sis gittikçe yoğunlaştı, ancak hat kontrolü ve işaretler izlenerek yolculuk sürdü. Yolcular pencereden yalnızca yakındaki ışıkları seçebiliyordu. {kahraman} içinden “Hızlı gitmek ile doğru gitmek her zaman aynı şey değil,” diye geçirdi. Gecikme can sıkıcıydı; yine de yol boyunca kimse gereksiz bir risk almak zorunda kalmadı.

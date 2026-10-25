@@ -69,7 +69,7 @@ sorular:
       - {id: A, metin: "Bir yarışma duyurusundan"}
       - {id: B, metin: "Yazdığı kısa öyküden"}
       - {id: C, metin: "Kendisinden dinleyince"}
-      - {id: D, metin: "Arkadaşından duyunca"}
+      - {id: D, metin: "Yerel radyo yayınından duyunca"}
     dogru: C
     dayanak: "{kahraman} onlara önceki tahmininin neden değiştiğini anlattı."
     aciklama: "Mühendis, değişikliği kasabalılara kendisi anlattı."

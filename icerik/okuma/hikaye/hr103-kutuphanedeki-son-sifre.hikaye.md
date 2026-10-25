@@ -47,7 +47,7 @@ deyim_cumleleri:
 @omurga
 Kütüphanenin dijitalleştirme odasında toz kokusu yoktu. Eski belgelerin durduğu kutular, sıcaklık ve nemin izlendiği ayrı bir bölümde korunuyordu. Sekizinci sınıf öğrencisi {kahraman}, eski kâğıtları hayal ettiğinden daha az romantik bulmuştu. Beyaz eldivenler, tarama ışıkları, kayıt numaraları ve sürekli tekrar edilen “Orijinale dokunma” uyarıları vardı. Yine de ekranın üzerinde yüz yıl öncesinden kalma bir mektubun görüntüsü belirdiğinde nefesi kesildi.
 
-Mektubun son satırındaki iki sözcük bulanıktı. Öğrencilerden biri “kilit” okudu. Diğeri “kilim” dedi. Üçüncü öğrenci satırın başındaki işaretlerin “kılıç” kelimesine benzediğini iddia etti. Cümlenin devamında eski evin deposundan söz ediliyordu. {kahraman:ilgi} arkadaşı {yoldas:yalin|bir arkadaş} hemen heyecanlandı. “Kilitse gizli bir oda olabilir,” dedi. “Kılıçsa aile hazinesi!”
+Mektubun son satırındaki iki sözcük bulanıktı. Öğrencilerden biri “kilit” okudu. Diğeri “kilim” dedi. Üçüncü öğrenci satırın başındaki işaretlerin “kılıç” kelimesine benzediğini iddia etti. Cümlenin devamında eski evin deposundan söz ediliyordu. {yoldas:yalin|bir arkadaş} hemen heyecanlandı. “Kilitse gizli bir oda olabilir,” dedi. “Kılıçsa aile hazinesi!”
 
 Kütüphane görevlisi Nevin Hanım, bilgisayarın başından kalktı. “Önce bir şey hatırlayalım,” dedi. “Bu belgeyi bize bağışlayan aile, yerel tarih çalışması için izin verdi. Kişisel bilgileri paylaşmayacağız. Ayrıca elimizdeki tarama, mektubun tamamını göstermiyor.” {kahraman} dosyanın sağ kenarının hafifçe kesildiğini fark etti. Belki de en önemli sözcükler kadrajın dışında kalmıştı.
 ---
@@ -189,7 +189,7 @@ Bu konuşmadan sonra sergide küçük bir yazı köşesi açıldı. Ziyaretçile
 @omurga
 Kütüphanedeki sergi günü yaklaştığında ekip bir pano hazırladı. En üstte büyük harflerle “Son Şifre” yazıyordu. Altında ise küçük bir açıklama vardı: Bu gerçek bir şifre olmayabilir; doğru okumak için kaynakları karşılaştırdığımız bir metindir. Bir yanda ilk tarama, öte yanda daha net ikinci belge bulunuyordu. Yanlarında uzman görüşünün özeti ve kullanılan yöntemin adımları yer alıyordu.
 
-Ziyaretçilerden biri “Peki o kilim nerede?” diye sordu. Nevin Hanım, aile belgelerinde örneklerden söz edildiğini ama bugün nerede bulunduklarını bilmediklerini açıkladı. İzin verilmemiş özel depolarda arama yapılmayacağını, bulundukları varsayılan evlerin konumlarının sergide duyurulmayacağını söyledi. {kahraman} bu sınırlardan memnundu. Merak etmek, insanların mahremiyetini yok saymak anlamına gelmiyordu.
+Ziyaretçilerden biri “Peki o kilim nerede?” diye sordu. Nevin Hanım, aile belgelerinde örneklerden söz edildiğini ama bugün nerede bulunduklarını bilmediklerini açıkladı. İzin verilmemiş özel depolarda arama yapılmayacağını, bulunduğu sanılan evlerin konumlarının sergide duyurulmayacağını söyledi. {kahraman} bu sınırlardan memnundu. Merak etmek, insanların mahremiyetini yok saymak anlamına gelmiyordu.
 
 {yoldas:yalin|bir arkadaş} ziyaretçilerin sorularını yanıtlarken farklı bir heyecan hissetti. Buldukları şey yalnızca “kilim” sözcüğü değildi. Yanlış bir okumayla nasıl kolayca başka bir hikâye kurulabileceğini de göstermişlerdi. İlk gün “kilit” diye duyduğu sözcüğe şimdi gülüyordu. “İyi ki hemen gizli oda ilan etmemişiz,” dedi {kahraman:yonelme}. {kahraman}, “Yoksa kendi yazdığımız hikâyeye inanıp gerçek mektupları kaçırırdık,” diye cevap verdi.
 ---

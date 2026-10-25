@@ -34,10 +34,10 @@ etiketler:
   program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "Bekçi hangi duyguları taşlarla gösterdi?", secenekler: [{id: A, metin: "Sevinç, üzüntü, öfke, şaşkınlık, sevgi, umut ve korku"}, {id: B, metin: "Mavi, mor, yeşil"}, {id: C, metin: "Kuş, kedi, köpek"}, {id: D, metin: "Sis ve yağmur"}], dogru: A, aciklama: "Bekçi, yedi duyguyu yedi taşla gösterdi."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Bekçiye göre korku taşını kim yeniden parlatabilir?", secenekler: [{id: A, metin: "Korkusunu tanıyan kişi"}, {id: B, metin: "Korkmadığını söyleyen kişi"}, {id: C, metin: "Rüzgâr"}, {id: D, metin: "Yedi çocuk"}], dogru: A, aciklama: "Bekçi, korkusunu fark edip tanıyan kişinin taşı yeniden parlatabileceğini söyledi."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Kahramanın “cesaret korkmamak değilmiş” sözü ne anlatır?", secenekler: [{id: A, metin: "Hiç korkmamak gerektiğini"}, {id: B, metin: "Cesaretin korkuyu fark edip doğru davranmak olduğunu"}, {id: C, metin: "Köprünün kapandığını"}, {id: D, metin: "Bir arkadaşının yanına gitmeyi"}], dogru: B, aciklama: "Kahraman, korkuyu fark edip güvenli bir biçimde davranmanın cesaret olduğunu anladı."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen korkuluk ne demektir?", secenekler: [{id: A, metin: "Bir çeşit korku filmi"}, {id: B, metin: "Korkak bir kişi"}, {id: C, metin: "Düşmeyi önlemek için köprü kenarına konan parmaklık"}, {id: D, metin: "Bir köprü türü"}], dogru: C, aciklama: "Korkuluk, köprünün kenarında düşmeyi engelleyen parmaklıktır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "Bekçi hangi duyguları taşlarla gösterdi?", secenekler: [{id: A, metin: "Sevinç, üzüntü, öfke, şaşkınlık, sevgi, umut ve korku"}, {id: B, metin: "Mavi, mor, yeşil, sarı ve kırmızı renkleri"}, {id: C, metin: "Kuş, kedi, köpek, tavşan ve at gibi hayvanları"}, {id: D, metin: "Sis, yağmur, kar, dolu ve fırtınayı gösterdi"}], dogru: A, aciklama: "Bekçi, yedi duyguyu yedi taşla gösterdi."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Bekçiye göre korku taşını kim yeniden parlatabilir?", secenekler: [{id: A, metin: "Korkusunu tanıyan kişi"}, {id: B, metin: "Korkmadığını söyleyen kişi"}, {id: C, metin: "Sisi dağıtan güçlü rüzgâr"}, {id: D, metin: "Köprüde oynayan yedi çocuk"}], dogru: A, aciklama: "Bekçi, korkusunu fark edip tanıyan kişinin taşı yeniden parlatabileceğini söyledi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Kahramanın “cesaret korkmamak değilmiş” sözü ne anlatır?", secenekler: [{id: A, metin: "Hiç korkmadan her zaman öne atılmak gerektiğini"}, {id: B, metin: "Cesaretin korkuyu fark edip doğru davranmak olduğunu"}, {id: C, metin: "Köprünün tamamen kapandığını ve artık geçilmediğini"}, {id: D, metin: "Bir arkadaşının yanına hemen ve dikkatsizce koşmayı"}], dogru: B, aciklama: "Kahraman, korkuyu fark edip güvenli bir biçimde davranmanın cesaret olduğunu anladı."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen korkuluk ne demektir?", secenekler: [{id: A, metin: "Gece izlenen ve çok korkutucu olan bir film türü"}, {id: B, metin: "Her şeyden çekinen ve cesaret edemeyen kişi"}, {id: C, metin: "Düşmeyi önlemek için köprü kenarına konan parmaklık"}, {id: D, metin: "Köprünün altında yaşayan bir hayvan türü"}], dogru: C, aciklama: "Korkuluk, köprünün kenarında düşmeyi engelleyen parmaklıktır."}
 ---
 @omurga
 {kahraman:ilgi} kasabasındaki eski taş köprü her akşam yedi farklı renkte parlardı. Kasabalılar bu ışığın nereden geldiğini bilmiyordu. Köprünün başında yaşayan {kelime:hr036_bekci} ise yalnızca şunu söylerdi: "Renkler, insanların unuttuğu duyguları hatırlatır."
@@ -62,9 +62,9 @@ Bekçi acele etmedi. "Korkmak utanılacak bir şey değil," dedi. "Bir şeyi nas
 
 {kahraman} derin bir nefes aldı. "Evet, yüksekten korkuyorum," dedi. "Ama kardeşimin yanına da gitmek istiyorum."
 
-Bekçiyle birlikte {kelime:hr036_korkuluk} kontrol ettiler. Sis hafifleyene kadar beklediler. Sonra {kahraman}, köprünün ortasına kadar yürüdü. {yoldas:yalin|bir arkadaş} de bulunduğu yerde güvenle bekliyordu.
+Bekçiyle birlikte {kelime:hr036_korkuluk}ları kontrol ettiler. Sis hafifleyene kadar beklediler. Sonra {kahraman}, köprünün ortasına kadar yürüdü. {yoldas:yalin|bir arkadaş} de bulunduğu yerde güvenle bekliyordu.
 
-{kahraman} adımlarını saydı. Bir, iki, üç... Ortaya geldiğinde nehrin {kelime:hr036_ugultu} duydu ama geri dönmedi. Bekçi yanındaydı. Birlikte {yoldas:yonelme|bir arkadaşa} ulaştılar.
+{kahraman} adımlarını saydı. Bir, iki, üç... Ortaya geldiğinde nehrin {kelime:hr036_ugultu}sunu duydu ama geri dönmedi. Bekçi yanındaydı. Birlikte {yoldas:yonelme|bir arkadaşa} ulaştılar.
 ---
 @omurga
 O anda köprünün mor taşı parladı. Ardından diğer renkler de usulca yerine döndü. {kahraman}, "Demek cesaret korkmamak değilmiş," dedi.

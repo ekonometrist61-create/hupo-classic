@@ -30,10 +30,10 @@ sorular:
     dayanak_sayfa: 2
     metin: "Bu gece hangi çizelge geçerliydi?"
     secenekler:
-      - {id: A, metin: "Yeni düzenlenmiş çizelge"}
-      - {id: B, metin: "İkisi birden geçerliydi"}
+      - {id: A, metin: "Yeni çizelge"}
+      - {id: B, metin: "İkisi de geçerliydi"}
       - {id: C, metin: "Eski çizelge"}
-      - {id: D, metin: "Kıyı hattının ayrı çizelgesi"}
+      - {id: D, metin: "Kıyı hattı çizelgesi"}
     dogru: C
     dayanak: "Bu gece eski çizelge geçerliydi."
     aciklama: "Yeni çizelge ertesi sabah yürürlüğe girecekti; bu gece eski çizelge geçerliydi."
@@ -55,7 +55,7 @@ sorular:
     metin: "Tren neden ek bekleme yaptı?"
     secenekler:
       - {id: A, metin: "Bilet kontrolü için"}
-      - {id: B, metin: "Yolcular uyuduğu için yavaşladı"}
+      - {id: B, metin: "Yolcular uyuyakaldığı için"}
       - {id: C, metin: "Teknik inceleme nedeniyle"}
       - {id: D, metin: "Yağmur başladı diye"}
     dogru: C
@@ -69,7 +69,7 @@ sorular:
       - {id: A, metin: "Görevli talimatı gerekliydi"}
       - {id: B, metin: "Çizelge tamamen kaybolmuştu"}
       - {id: C, metin: "İstasyon o gece kapanmıştı"}
-      - {id: D, metin: "Saat bozulmuş olabilirdi"}
+      - {id: D, metin: "Makinist bu kararı vermişti"}
     dogru: A
     dayanak: "{kahraman}, duraklama sürelerinin görevli talimatlarına bağlı olduğunu biliyordu."
     aciklama: "Duraklama süreleri görevli talimatlarına bağlıydı; bu yüzden değiştirilmedi."

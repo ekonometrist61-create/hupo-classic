@@ -8,7 +8,7 @@ sinif_alt: 5
 sinif_ust: 5
 kahraman_turu: arac
 deger_anahtarlari: [D16, D5]
-tanitim: "Dağ hattının son gece treni kar yüzünden güzergâh değiştirir. Makinist ve hat görevlisi, kısa görünen kestirmeyi reddedip doğrulanmış notlara göre karar verir."
+tanitim: "Dağ hattının son gece treni kar yüzünden güzergâh değiştirir. Tren ve hat görevlisi, kısa görünen kestirmeyi reddedip doğrulanmış notlara göre karar verir."
 durum: taslak
 uretim_kaynak: llm_taslak
 duzeltme_tarihi: "2026-10-24"
@@ -42,7 +42,7 @@ sorular:
     dayanak_sayfa: 3
     metin: "Önerilen kestirme yol neden seçilmedi?"
     secenekler:
-      - {id: A, metin: "Vagonların çok kalabalık olduğu için"}
+      - {id: A, metin: "Vagonların geç geldiği için"}
       - {id: B, metin: "Güvenliği bilinmediği için"}
       - {id: C, metin: "Çok uzun olduğu için"}
       - {id: D, metin: "Durak bulunmadığı için"}

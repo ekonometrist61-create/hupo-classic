@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Haritanın ortasındaki boş alanı Asya ve Yusuf uydurarak değil, kaynakları karşılaştırarak ve belirsizliği açıkça göstererek anlamaya çalışır."
+tanitim: "Haritanın ortasındaki boş alanı Asya ve bir arkadaşı uydurarak değil, kaynakları karşılaştırarak ve belirsizliği açıkça göstererek anlamaya çalışır."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -74,7 +74,7 @@ Bunu bir hikâye olarak hayal ettiler: Bir kervan sorumlusu, hızlı ulaşmak is
 @omurga
 Müzenin uzmanı, eski yol adlarının günümüzdeki adlarla birebir örtüşmeyebileceğini anlattı. Bir yerleşimin adı değişmiş, başka dile aktarılmış veya başka bir konumla karıştırılmış olabilirdi. Asya bu nedenle haritada bulduğu her eski adı doğrudan güncel haritaya yazmadı. Önce kaynaklarda aynı yer için kullanılan farklı adları karşılaştırdı.
 
-{yoldas:yalin|bir arkadaş}, bir anlatıda geçen “üç günlük yol” ifadesini kilometreye çevirmek istedi. Meryem Hanım, yolculuğun hızının koşullara göre değiştiğini söyledi. Üç gün, her kervan için aynı mesafeyi göstermeyebilirdi. Dağ, kum, hava ve yük durumu sonucu etkiliyordu. Bu nedenle sayısal kesinlik üretmek yanıltıcı olabilirdi.
+{yoldas:yalin|bir arkadaş}, bir anlatıda geçen “üç günlük yol” ifadesini kilometreye çevirmek istedi. Meryem Hanım, yolculuğun hızının koşullara göre değiştiğini söyledi. Üç gün, her kervan için aynı mesafeyi göstermeyebilirdi. Dağ, kum, hava ve yük durumu da sonucu etkiliyordu. Bu nedenle sayısal kesinlik üretmek yanıltıcı olabilirdi.
 
 Asya, bu çalışmanın sandığından daha çok dil bilgisi gerektirdiğini fark etti. Eski bir sözcüğün çevrilmesindeki küçük bir fark, haritada yüzlerce kilometrelik sapmaya neden olabilirdi. Metinleri okurken yalnızca ne söylendiğine değil, nasıl söylendiğine de bakması gerekiyordu.
 ---

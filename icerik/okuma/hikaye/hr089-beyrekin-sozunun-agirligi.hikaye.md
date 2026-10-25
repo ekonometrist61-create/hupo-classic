@@ -2,15 +2,15 @@
 baslik: "Beyrek'in Sözünün Ağırlığı"
 slug: "hr089-beyrekin-sozunun-agirligi"
 fis_kodu: "HR-089"
-tur: fantastik
+tur: tarih_kultur
 konu: soz_vefa_yanlis_anlama
 sinif_alt: 7
 sinif_ust: 7
 okuma_bandi: 3
-dunya_tipi: masalsi
+dunya_tipi: gercekci
 kahraman_turu: hazir
 izinli_turler: [arkadas]
-deger_anahtarlari: [D15, D6]
+deger_anahtarlari: [D6, D15]
 yetiskin_uygun: false
 tanitim: "Bir kervana verilen yardım sözü iki obayı kırgınlığa sürükledi. Söz tam olarak neydi, ve kim neyi duydu?"
 durum: taslak
@@ -24,8 +24,8 @@ etiketler:
   temalar: [kultur_miras, dayanisma]
   ders_baglantisi: [turkce]
   maarif:
-    ana_deger: D15
-    yardimci_deger: D6
+    ana_deger: D6
+    yardimci_deger: D15
   ogrenme_hedefleri:
     - {id: ikileme_hr089, tur: lexeme, etiket: "ikileme", yuva: hr089_ikileme, islev: first_hint}
     - {id: baglam_hr089, tur: lexeme, etiket: "bağlam", yuva: hr089_baglam, islev: application}

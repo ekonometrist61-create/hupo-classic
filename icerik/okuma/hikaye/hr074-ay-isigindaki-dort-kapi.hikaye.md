@@ -39,7 +39,7 @@ sorular:
   - {id: s3, beceri: yorumlama, dayanak_sayfa: 22, metin: "Kentin arşivindeki notlardan hangisi daha değerlidir?", secenekler: [{id: A, metin: "Kararın hangi bilgilere dayandığını anlatan notlar"}, {id: B, metin: "Yalnız sonucu yazan notlar"}, {id: C, metin: "Hiç not olmayan sayfalar"}, {id: D, metin: "En kısa notlar"}], dogru: A, aciklama: "Koşulları ve dayanağı yazan not, aynı sorun yeniden yaşandığında yol gösterir."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 12, metin: "Metinde geçen 'göz kararı' ne anlama gelir?", secenekler: [{id: A, metin: "Gözleri kapalı olarak"}, {id: B, metin: "Ölçmeden, tahmini olarak"}, {id: C, metin: "Çok dikkatli biçimde"}, {id: D, metin: "Renklere bakarak"}], dogru: B, aciklama: "Göz kararı, ölçü almadan tahmin yürütmek demektir."}
 deyim_cumleleri:
-  hr074_goz_karari: "Aşağı mahalleye taşınacak su miktarını göz kararı artırıp kimseyi zor durumda bırakmadılar."
+  hr074_goz_karari: "Su miktarını göz kararı değil, ölçüme dayanarak belirlediler."
 ---
 @omurga
 {kahraman}, büyükannesinin bıraktığı pirinç pusulayı açtığında ibrenin kuzeyi göstermediğini fark etti. İncecik kırmızı uç, karşı yamacın üzerindeki aya dönüktü. Ay henüz doğmamıştı. Yine de pusulanın camına, sanki karanlıkta saklanan biri nefes vermiş gibi küçük bir buğu yayıldı.

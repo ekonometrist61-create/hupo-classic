@@ -11,7 +11,7 @@ dunya_tipi: masalsi
 izinli_turler: [ben, arkadas, hayali]
 deger_anahtarlari: [D9, D5]
 yetiskin_uygun: false
-tanitim: "Altın bir tüy kendi yolunu seçiyor. Mira tüyü nereye götürecek?"
+tanitim: "Altın bir tüy kendi yolunu seçiyor. {kahraman} tüyü nereye götürecek?"
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -35,10 +35,10 @@ etiketler:
   program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Mira ormanda ne buldu?", secenekler: [{id: A, metin: "Kayıp bir kedi"}, {id: B, metin: "Altın gibi parlayan bir tüy"}, {id: C, metin: "Bir harita"}, {id: D, metin: "Eski bir anahtar"}], dogru: B, aciklama: "Mira, tepelerin ardındaki ormanda altın gibi parlayan bir tüy buldu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Mira neden soldaki kısa yoldan gitmedi?", secenekler: [{id: A, metin: "Yol çok karanlıktı"}, {id: B, metin: "Tüy ona farklı yönü gösterdi"}, {id: C, metin: "Bekçi onu çağırdı"}, {id: D, metin: "Yaban Hayatı Koruma Alanı levhası vardı ve ziyaretçiler girmemeliydi"}], dogru: D, aciklama: "Soldaki yol koruma alanına açılıyordu; güvenli yol seçildi."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Mira'nın vardığı sonuç neydi?", secenekler: [{id: A, metin: "Macera hiç yapılmamalıdır"}, {id: B, metin: "En hızlı yol her zaman doğru değildir"}, {id: C, metin: "Tüy hep soldan gitmelidir"}, {id: D, metin: "Anka yalnız uçar"}], dogru: B, aciklama: "Mira, en kısa ve en hızlı yolun güvenli olmayabileceğini öğrendi."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen göç ne demektir?", secenekler: [{id: A, metin: "Bir kuşun yuvası"}, {id: B, metin: "Bir tür uçurtma"}, {id: C, metin: "Kuşların yılın belli zamanlarında daha uygun yerlere gitmesi"}, {id: D, metin: "Bir kuş ailesi"}], dogru: C, aciklama: "Göç, canlıların uygun koşullar için uzun yolculuğa çıkmasıdır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Çocuk ormanda ne buldu?", secenekler: [{id: A, metin: "Ormanda kaybolmuş küçük bir kedi"}, {id: B, metin: "Altın gibi parlayan bir tüy"}, {id: C, metin: "Ormanın yolunu gösteren bir harita"}, {id: D, metin: "Kilidi açılmamış eski bir anahtar"}], dogru: B, aciklama: "Çocuk, tepelerin ardındaki ormanda altın gibi parlayan bir tüy buldu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Çocuk neden soldaki kısa yoldan gitmedi?", secenekler: [{id: A, metin: "Soldaki yol çok karanlık ve dar olduğu için"}, {id: B, metin: "Tüy ona sağdaki yolun çok daha kısa olduğunu gösterdi"}, {id: C, metin: "Bekçi soldaki yolun daha kısa olduğunu söylemişti"}, {id: D, metin: "Yaban Hayatı Koruma Alanı levhası vardı ve ziyaretçiler girmemeliydi"}], dogru: D, aciklama: "Soldaki yol koruma alanına açılıyordu; güvenli yol seçildi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Çocuğun vardığı sonuç neydi?", secenekler: [{id: A, metin: "Macera ve keşif hiçbir zaman yapılmamalıdır"}, {id: B, metin: "En hızlı yol her zaman doğru değildir"}, {id: C, metin: "Tüy her zaman soldaki yolu göstermelidir"}, {id: D, metin: "Anka yalnız uçar ve kimseyle birlikte olmaz"}], dogru: B, aciklama: "Çocuk, en kısa ve en hızlı yolun güvenli olmayabileceğini öğrendi."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen göç ne demektir?", secenekler: [{id: A, metin: "Bir kuşun yavrularını yüksek bir ağaca özenle yerleştirmesi"}, {id: B, metin: "Rüzgârda uçan, ipli ve renkli bir oyuncak uçurtma türü"}, {id: C, metin: "Kuşların yılın belli zamanlarında daha uygun yerlere gitmesi"}, {id: D, metin: "Aynı ağaçta birlikte yaşayan ve yuva kuran büyük bir kuş ailesi"}], dogru: C, aciklama: "Göç, canlıların uygun koşullar için uzun yolculuğa çıkmasıdır."}
 deyim_cumleleri:
   hr039_kanat_germek: "\"Gerçek yardım bazen birine kanat germektir.\""
 ---
@@ -54,7 +54,7 @@ Bekçi, "Belki birine yardım ediyordur," diye cevap verdi.
 @omurga
 Patika ikiye ayrıldığında {kahraman} durdu. Soldaki yol kısa görünüyordu ama üzerinde "Yaban Hayatı Koruma Alanı" yazan bir levha vardı; ziyaretçilerin girmemesi gerekiyordu. Sağdaki işaretli yol daha uzundu. {kahraman}, "Tüy soldan gitmemizi istiyor gibi," dedi. Bekçi, "Masallarda bile canlıların yaşam alanına saygı gerekir," diye cevap verdi. İkisi güvenli patikayı seçti. {kahraman} ilk kez bir macerada en hızlı yolun her zaman doğru yol olmadığını düşündü.
 
-{kahraman}, tüyün {kelime:hr039_parilti} izleyerek yürümeye başladı. Yoldaki ağaçların arasında minik kuşlar uçuşuyordu. Bir çalıya takılmış yuvayı görünce durdu. Yuvada iki yavru vardı, anne kuş ise korkuyla ötüyordu. {isaret:kus}
+{kahraman}, tüyün {kelime:hr039_parilti}sını izleyerek yürümeye başladı. Yoldaki ağaçların arasında minik kuşlar uçuşuyordu. Bir çalıya takılmış yuvayı görünce durdu. Yuvada iki yavru vardı, anne kuş ise korkuyla ötüyordu. {isaret:kus}
 ---
 @omurga
 {kahraman} yuvaya dokunmadı; orman bekçisini çağırdı. Bekçi yuvanın güvenli biçimde korunması için gerekli adımları attı. {kahraman}, yavruların yeniden sakinleşmesini izledi.
@@ -82,7 +82,7 @@ Tam o sırada {yoldas:yalin|bir arkadaş}, sislerin arasından ortaya çıktı. 
 {kahraman} akşam defterine gördüklerini yazdı. Gerçek dünyada kuşların göç ederken güneşten, yıldızlardan ve Dünya'nın {kelime:hr039_manyetik} alanından yararlanabildiğini öğrenince daha da meraklandı. Masalın büyüsü onu bilimsel bir soruya götürmüştü.
 ---
 @omurga
-O gece annesine tüyün sesini anlattı. Annesi inanıp inanmamak yerine, "Bu deneyim sende hangi soruları uyandırdı?" diye sordu. {kahraman}, "Kuşların göç yollarını kim koruyor?" dedi. Ertesi hafta sınıflarıyla kuş gözlem etkinliğine katılmak için öğretmenine danıştı.
+O gece annesine tüyün sesini anlattı. Annesi inanıp inanmamak yerine, "Bu deneyim sende hangi soruları uyandırdı?" diye sordu. {kahraman}, "Kuşların göç yollarını kim koruyor?" dedi. Ertesi hafta sınıfıyla kuş gözlem etkinliğine katılmak için öğretmenine danıştı.
 
 Ertesi gün pencerenin önüne bir kuş gözlem çizelgesi astı. Artık gökyüzüne her baktığında yalnızca {yoldas:belirtme|bir arkadaşı} değil, yolculuğa çıkan gerçek kuşları da düşünüyordu.
 

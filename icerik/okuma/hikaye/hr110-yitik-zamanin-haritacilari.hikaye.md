@@ -11,7 +11,7 @@ dunya_tipi: masalsi
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Hatıralara göre değişen haritalar şehrinde Mira ile Tuna, anı ile ortak kanıtı ayırmayı öğrenir ve kayıp mahalleyi bulur."
+tanitim: "Hatıralara göre değişen haritalar şehrinde {kahraman} ile {yoldas:yalin|bir arkadaşı}, anı ile ortak kanıtı ayırmayı öğrenir ve kayıp mahalleyi bulur."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -36,9 +36,9 @@ etiketler:
   program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 6, metin: "Mira'nın hatırasında Çınaraltı'na giden yol hangi köprüden geçiyordu?", secenekler: [{id: A, metin: "Balıkçı Köprüsü"}, {id: B, metin: "Saat Köprüsü"}, {id: C, metin: "Tuz Köprüsü"}, {id: D, metin: "Kumsaat Köprüsü"}], dogru: C, aciklama: "Mira'nın hatırasında yol Tuz Köprüsü'nden geçiyordu; Tuna ise Balıkçı Merdiveni'ni hatırlıyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 9, metin: "Bu sözden ne çıkarılabilir?", secenekler: [{id: A, metin: "Kalabalığın söylediği her şey doğrudur"}, {id: B, metin: "Hatıralar hiçbir zaman işe yaramaz"}, {id: C, metin: "Yalnızca haritacılar doğruyu bilir"}, {id: D, metin: "Bir bilginin çok kişi tarafından söylenmesi tek başına doğru olduğunu garanti etmez"}], dogru: D, aciklama: "İnsanlar birbirlerinden etkilenebilir; çok kişinin söylemesi, bilginin doğru olduğunu tek başına göstermez."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 8, metin: "Tuna'ya göre anı neyi söyler?", secenekler: [{id: A, metin: "Bir şeyin ölçüsünü kesin olarak"}, {id: B, metin: "Bir şeyi kimin yaptığını"}, {id: C, metin: "Bir şeyin bizim için nasıl olduğunu"}, {id: D, metin: "Bir şeyin hangi yılda yapıldığını"}], dogru: C, aciklama: "Tuna, anının bir şeyin bizim için nasıl olduğunu söylediğini, başkasının doğrulayabileceği bilgi vermediğini belirtir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 6, metin: "Kahramanın hatırasında Çınaraltı'na giden yol hangi köprüden geçiyordu?", secenekler: [{id: A, metin: "Balıkçı Köprüsü"}, {id: B, metin: "Saat Köprüsü"}, {id: C, metin: "Tuz Köprüsü"}, {id: D, metin: "Kumsaat Köprüsü"}], dogru: C, aciklama: "Kahramanın hatırasında yol Tuz Köprüsü'nden geçiyordu; yoldaşı ise Balıkçı Merdiveni'ni hatırlıyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 9, metin: "Kahramanın “Yani çok kişinin aynı şeyi söylemesi doğru olduğunu göstermez.” sözünden ne çıkarılabilir?", secenekler: [{id: A, metin: "Kalabalığın söylediği her şey doğrudur"}, {id: B, metin: "Hatıralar hiçbir zaman işe yaramaz"}, {id: C, metin: "Yalnızca haritacılar doğruyu bilir"}, {id: D, metin: "Bir bilginin çok kişi tarafından söylenmesi tek başına doğru olduğunu garanti etmez"}], dogru: D, aciklama: "İnsanlar birbirlerinden etkilenebilir; çok kişinin söylemesi, bilginin doğru olduğunu tek başına göstermez."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 8, metin: "Yoldaşa göre anı neyi söyler?", secenekler: [{id: A, metin: "Bir şeyin ölçüsünü kesin olarak"}, {id: B, metin: "Bir şeyi kimin yaptığını"}, {id: C, metin: "Bir şeyin bizim için nasıl olduğunu"}, {id: D, metin: "Bir şeyin hangi yılda yapıldığını"}], dogru: C, aciklama: "Yoldaş, anının bir şeyin bizim için nasıl olduğunu söylediğini, başkasının doğrulayabileceği bilgi vermediğini belirtir."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 9, metin: "Bu ifadede “bağımsız” ne anlama gelir?", secenekler: [{id: A, metin: "Parası olmayan"}, {id: B, metin: "Birbirinden etkilenmeden, ayrı ayrı karar veren"}, {id: C, metin: "Hiçbir şeyi bilmeyen"}, {id: D, metin: "Aynı evde yaşayan"}], dogru: B, aciklama: "Bağımsız iki kişi, birbirinden etkilenmeden aynı sonuca ulaşan kişilerdir."}
   - {id: s5, beceri: degerlendirme, dayanak_sayfa: 20, metin: "Metne göre haritadaki kanıt katmanı ne zaman değişebilir?", secenekler: [{id: A, metin: "Başka biri kontrol edip aynı sonuca vardığında"}, {id: B, metin: "Bir haritacı çok emin olduğunda"}, {id: C, metin: "Kum saati ters çevrildiğinde"}, {id: D, metin: "Herkes aynı şeyi hatırladığında"}], dogru: A, aciklama: "Kanıt katmanı, ancak başka biri kontrol edip aynı sonuca vardığında değişir; emin olmak ya da kalabalık olmak yetmez."}
 deyim_cumleleri:
@@ -179,7 +179,7 @@ Ertesi sabah Cemal Amca'nın tezgâhına bir kez daha uğradılar. Simitçi, kö
 @omurga
 Defterlerinde iki sütun doldukça şaşırtıcı bir şey oldu. Anılar sütunundaki ifadeler çelişiyordu. Köprü, merdiven, patika. Kanıt sütununda ise yalnızca birkaç satır vardı. Ama o satırlar birbirini tutuyordu.
 
-{kahraman} bu yüzden bir çizgiyi daha sevdi. Sağ sütundaki çizgiler çok zayıftı, ama aynı yere işaret ediyordu. Sol sütundaki çizgiler ise canlıydı, fakat birbirine dönük değildi.
+{kahraman} bu yüzden bir çizgiyi daha sevdi. Sağ sütundaki çizgiler çok zayıftı, ama aynı yere işaret ediyordu. Sol sütundaki çizgiler ise canlıydı, fakat birbirini tutmuyordu.
 
 “Orhan Usta, en güçlü hatırayı çizmemizi söylemişti,” dedi {kahraman}. “Ama güçlü hatıralar {kelime:hr110_tutarsiz}.”
 

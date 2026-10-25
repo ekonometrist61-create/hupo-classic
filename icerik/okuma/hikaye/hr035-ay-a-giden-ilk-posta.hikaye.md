@@ -34,10 +34,10 @@ etiketler:
   program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "İlk mektubu yazma hakkını kimler kazanmıştı?", secenekler: [{id: A, metin: "Öğretmen ve öğrenci"}, {id: B, metin: "Görevli ve teyze"}, {id: C, metin: "Üç arkadaş"}, {id: D, metin: "İki kardeş"}], dogru: D, aciklama: "Eylül ve Can, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Mesaj kaybolmadığı için görevli ne yaptı?", secenekler: [{id: A, metin: "Mektubu çöpe attı"}, {id: B, metin: "Hemen Ay'a gönderdi"}, {id: C, metin: "Kâğıdı yaktı"}, {id: D, metin: "Mesajın kopyası güvende olduğu için bağlantının yeniden kurulmasını bekledi"}], dogru: D, aciklama: "Görevli, mesajın kopyasının güvende olduğunu bildiği için önce bağlantıyı bekledi."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Çocuklar iletişim hakkında ne fark etti?", secenekler: [{id: A, metin: "İletişimin çok kolay olduğunu"}, {id: B, metin: "Mektubun hiç gitmediğini"}, {id: C, metin: "İletişimin birçok aşaması ve dikkat gerektiren adımları olduğunu"}, {id: D, metin: "Ayın yakın olduğunu"}], dogru: C, aciklama: "Mesaj, kopyalanma, parçalama ve doğrulama gibi adımlardan geçiyordu."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen maket ne demektir?", secenekler: [{id: A, metin: "Bir tür mektup"}, {id: B, metin: "Bir şeyin küçültülmüş modeli"}, {id: C, metin: "Bir uydu"}, {id: D, metin: "Bir ekran"}], dogru: B, aciklama: "Maket, gerçek bir şeyin küçültülmüş modelidir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "İlk mektubu yazma hakkını kimler kazanmıştı?", secenekler: [{id: A, metin: "Öğretmen ve öğrenci"}, {id: B, metin: "Görevli ve teyze"}, {id: C, metin: "Üç arkadaş"}, {id: D, metin: "İki kardeş"}], dogru: D, aciklama: "İki kardeş, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Mesaj kaybolmadığı için görevli ne yaptı?", secenekler: [{id: A, metin: "Mektubu hemen çöpe atıp Ay'a yeni bir mektup yazmaya başladı"}, {id: B, metin: "Mesajı eksik hâliyle hemen Ay'a gönderdi ve sonucu beklemedi"}, {id: C, metin: "Kâğıdı yakıp çocuklardan mesajı baştan yazmalarını istedi"}, {id: D, metin: "Mesajın kopyası güvende olduğu için bağlantının yeniden kurulmasını bekledi"}], dogru: D, aciklama: "Görevli, mesajın kopyasının güvende olduğunu bildiği için önce bağlantıyı bekledi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Çocuklar iletişim hakkında ne fark etti?", secenekler: [{id: A, metin: "İletişimin hiçbir hazırlık gerektirmeden kendiliğinden olduğunu"}, {id: B, metin: "Mektubun hiç gönderilmeden kaybolduğunu ve geri dönmediğini"}, {id: C, metin: "İletişimin birçok aşaması ve dikkat gerektiren adımları olduğunu"}, {id: D, metin: "Ayın Dünya'ya çok yakın olduğunu ve gecikme olmadığını"}], dogru: C, aciklama: "Mesaj, kopyalanma, parçalama ve doğrulama gibi adımlardan geçiyordu."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen maket ne demektir?", secenekler: [{id: A, metin: "Uzaya gönderilen özel bir mektup"}, {id: B, metin: "Bir şeyin küçültülmüş modeli"}, {id: C, metin: "Yörüngede dönen büyük bir uydu"}, {id: D, metin: "Bilgisayarda görüntü veren bir ekran"}], dogru: B, aciklama: "Maket, gerçek bir şeyin küçültülmüş modelidir."}
 ---
 @omurga
 Ay Üssü'ne gidecek ilk özel mektubu yazma hakkını iki kardeş kazanmıştı. {kahraman}, Dünya'daki sınıfının resmini çizmiş; {yoldas:yalin|bir arkadaş} ise altına yalnızca bir cümle yazmıştı: "Burada sizi merak eden arkadaşlarınız var." {isaret:ay}
@@ -65,7 +65,7 @@ Görevli gülümsedi. "İyi düşünce. Fakat bütün kanallar aynı anda çalı
 @omurga
 Görevli, "Bu da veri aktarımında kullanılan yöntemlerden biridir," dedi. Ardından çocuklara mesajın birden fazla parçasının nasıl kontrol edildiğini gösterdi. Kısa bir bekleyişten sonra uydu bağlantısı tekrar açıldı.
 
-Ekrana İleti ulaştı yazısı düşünce {yoldas:yalin|bir arkadaş} zıpladı. Fakat hemen bir soru sordu: "Ay'daki teyze cevap verirse onu anında duyar mıyız?"
+Ekranda “İleti ulaştı” yazısı çıkınca {yoldas:yalin|bir arkadaş} zıpladı. Fakat hemen bir soru sordu: "Ay'daki teyze cevap verirse onu anında duyar mıyız?"
 
 Görevli başını salladı. "Hayır, sinyaller ışık hızında ilerlese de Dünya ile Ay arasındaki uzaklık yüzünden küçük bir {kelime:hr035_gecikme} olur."
 ---

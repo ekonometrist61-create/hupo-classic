@@ -56,9 +56,9 @@ sorular:
     metin: "Kroki ne demektir?"
     secenekler:
       - {id: A, metin: "Kitapların bulunduğu uzun liste"}
-      - {id: B, metin: "Her köşede duran renkli bir defter"}
+      - {id: B, metin: "Masa örtülerinin renk listesi"}
       - {id: C, metin: "Yukarıdan çizilmiş basit plan"}
-      - {id: D, metin: "Uzun bir hikâye"}
+      - {id: D, metin: "Bir masal kitabının özeti"}
     dogru: C
     dayanak: "Kroki, bir yerin yukarıdan bakılarak çizilmiş basit planıydı."
     aciklama: "Kroki, bir yerin yukarıdan bakılarak çizilmiş basit plandır."

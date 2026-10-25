@@ -35,9 +35,9 @@ etiketler:
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Çanta öğretmene hangi cevabı verdi?", secenekler: [{id: A, metin: "Yirmi dört"}, {id: B, metin: "Altmış"}, {id: C, metin: "Kırk sekiz"}, {id: D, metin: "On iki"}], dogru: C, aciklama: "Çanta, işlemi açıklamadan “Cevap kırk sekiz!” dedi."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Kahraman neden çantanın hızlı çözmesini her zaman istemedi?", secenekler: [{id: A, metin: "Çanta yavaş çalışıyordu"}, {id: B, metin: "Ödevi çok sevdiği için"}, {id: C, metin: "Hızlı çözüm, kendi düşünmesini ve öğrenmesini engelliyordu"}, {id: D, metin: "Öğretmen kızmıştı"}], dogru: C, aciklama: "Kahraman, kendi cevabını bulmanın öğrenmek için önemli olduğunu anladı."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Yoldaşın sözüne göre önemli olan nedir?", secenekler: [{id: A, metin: "Kararın kişinin kendisinde kalması"}, {id: B, metin: "Çantanın hızlı olması"}, {id: C, metin: "Ödevin hiç yapılmaması"}, {id: D, metin: "Okulun kapanması"}], dogru: A, aciklama: "Araç ne olursa olsun karar vermek insanın kendisine aittir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen seçenek sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Bir tuş"}, {id: B, metin: "Birden fazla arasından seçilebilecek durum"}, {id: C, metin: "Bir sınıf"}, {id: D, metin: "Bir ödev"}], dogru: B, aciklama: "Seçenek, birkaç olanağın her biridir."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Kahraman neden çantanın hızlı çözmesini her zaman istemedi?", secenekler: [{id: A, metin: "Çanta her zaman yanlış cevap veriyordu"}, {id: B, metin: "Ödevleri çok sevdiği için hep geç bitiriyordu"}, {id: C, metin: "Hızlı çözüm, kendi düşünmesini ve öğrenmesini engelliyordu"}, {id: D, metin: "Öğretmen, ödevini hiç kontrol etmediği için"}], dogru: C, aciklama: "Kahraman, kendi cevabını bulmanın öğrenmek için önemli olduğunu anladı."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Yoldaşın sözüne göre önemli olan nedir?", secenekler: [{id: A, metin: "Kararın kişinin kendisinde kalması"}, {id: B, metin: "Çantanın her zaman hızlı çalışması"}, {id: C, metin: "Ödevin hiçbir şekilde yapılmaması"}, {id: D, metin: "Okulun erken kapanıp tatil olması"}], dogru: A, aciklama: "Araç ne olursa olsun karar vermek insanın kendisine aittir."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen seçenek sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Bilgisayarda bir tuşa basılarak yapılan işlem"}, {id: B, metin: "Birden fazla arasından seçilebilecek durum"}, {id: C, metin: "Derslerin yapıldığı, sıraların bulunduğu yer"}, {id: D, metin: "Öğrencinin evde yapması gereken yazılı görev"}], dogru: B, aciklama: "Seçenek, birkaç olanağın her biridir."}
 ---
 @omurga
 2040 yılının pazartesi sabahı {kahraman:ilgi} okul çantası aniden konuştu:
@@ -48,7 +48,7 @@ sorular:
 
 "Ben akıllı çantayım," diye cevap verdi çanta. "İstersen dişlerini de senin yerine fırçalamayı deneyebilirim."
 
-{kahraman} güldü. Fakat okula gidince işler karıştı. Öğretmeni problem çözmesini istediğinde çanta hemen masasından seslendi:
+{kahraman} güldü. Fakat okula gidince işler karıştı. Öğretmen problem çözmesini istediğinde çanta hemen masasından seslendi:
 
 "Cevap kırk sekiz! Açıklaması için bir tuşa basınız!"
 
@@ -86,7 +86,7 @@ O gün sınıfta teknoloji sergisi vardı. {kahraman}, çantasına yeni bir gör
 @omurga
 Sergide başka bir çocuk, çantanın her soruya doğru yanıt verdiğini görünce hemen aynısından istemişti. {kahraman} ona iki farklı kâğıt gösterdi. Birinde çantanın hazırladığı kusursuz cevaplar, diğerinde kendi silgileriyle düzelttiği işlemler vardı. "İlkine bakınca hiçbir şey hatırlamıyorum," dedi. "İkincisini yaparken iki kez yanıldım. Ama nerede yanıldığımı gördüğüm için artık yöntemi biliyorum." Arkadaşı, "Demek hata yapmak bazen işe yarıyor," deyince öğretmen başını salladı. Bu konuşma serginin en çok ilgi gören kısmı oldu.
 
-Gösteri bitince öğretmeni {kahraman:yonelme}, "Bugün çantana sen mi yardım ettin, çantan mı sana?" diye sordu.
+Gösteri bitince öğretmen {kahraman:yonelme}, "Bugün çantana sen mi yardım ettin, çantan mı sana?" diye sordu.
 ---
 @omurga
 {kahraman} gülerek cevap verdi: "İkimiz de birbirimize. O hatırlattı, ben düşündüm."

@@ -205,7 +205,7 @@ Son sabah gençlik kulübü istasyonda bir uğurlama buluşması hazırladı. {k
 @omurga
 {kahraman} trenin kapısına yaklaşırken istasyon saatine baktı. Bu kez telaşla değil, bir işi kontrol etmek için. {yoldas:yalin|bir arkadaş} ona kâğıttan katlanmış küçük bir pusula verdi. Üzerinde yön adları yoktu; dört kelime yazıyordu: sor, dinle, karşılaştır, düzelt. {kahraman} gülümsedi. “Bu pusula beni eve götürmez,” dedi. {yoldas:yalin|bir arkadaş} “Ama başka bir yere gittiğinde işe yarayabilir,” diye karşılık verdi.
 
-Bir sonraki karşılaştırmada {kahraman}, kendi yolculuğunun romanın yarışına benzemediğini özellikle yazdı. Seyahat günlüğünün en önemli sayfası, hedefe vardığı gün değil, acele etmeden bir soruyu yeniden sorduğu gündü. Bu farkı silmek istemedi.
+Bir sonraki karşılaştırmada {kahraman}, kendi yolculuğunun romandaki yarışa benzemediğini özellikle yazdı. Seyahat günlüğünün en önemli sayfası, hedefe vardığı gün değil, acele etmeden bir soruyu yeniden sorduğu gündü. Bu farkı silmek istemedi.
 ---
 @omurga
 Yolculuk projesinin kapanışında öğretmen, {kahraman:yonelme} Jules Verne'in eski romanıyla kendi deneyimi arasındaki en önemli farkı sordu. {kahraman} birkaç gün düşündükten sonra yanıt verdi. Romandaki dünya yolculuğu fikrinde belirli bir sürede birçok yere ulaşma heyecanı vardı. Kendi anlatısında ise tek bir durakta gereğinden uzun kalmış gibi görünen anların değeri ortaya çıkmıştı. Bu, klasik romanı kötülemek değil, ondan aldığı fikri başka bir soruyla yeniden kurmaktı.
@@ -227,7 +227,7 @@ Dönüş programı hazırlanırken {kahraman:ilgi} okuluna gönderilecek teşekk
 {kahraman} öğretmenine gönderdiği günlükte günleri yeniden sıraladı. Önce yaşadıklarını hatırladığı gibi yazdı, sonra biletleri ve notlarıyla karşılaştırdı. Bazı ayrıntılar düzeltilmişti. Günlüğü daha az heyecanlı bulmadı. Aksine, yolculuğun gerçekten yaşanmış küçük anları artık birbirine daha sağlam bağlarla tutunuyordu.
 ---
 @omurga
-{kahraman:ilgi} annesi onu evde karşıladığında çantanın içinden ilk olarak bir bilet çıkartması düştü. Üzerinde tarih ve saat yazıyordu. {kahraman} ilk gün bunları doğru okuyamadığı için kendisine kızdığını hatırladı. Annesi “Yolculuk nasıl geçti?” diye sordu. {kahraman} her şeyi bir kerede anlatmaya girişmedi. Önce çay koymalarını istedi, sonra defterini açtı.
+{kahraman:ilgi} annesi onu evde karşıladığında çantanın içinden ilk olarak bir bilet düştü. Üzerinde tarih ve saat yazıyordu. {kahraman} ilk gün bunları doğru okuyamadığı için kendisine kızdığını hatırladı. Annesi “Yolculuk nasıl geçti?” diye sordu. {kahraman} her şeyi bir kerede anlatmaya girişmedi. Önce çay koymalarını istedi, sonra defterini açtı.
 
 “Bir sürü şey gördüm,” dedi, “ama asıl öğrendiğim, gördüğüm şeyin bütün hikâye olmadığı.”
 

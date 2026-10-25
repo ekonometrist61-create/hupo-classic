@@ -56,7 +56,7 @@ sorular:
     secenekler:
       - {id: A, metin: "Birinci model"}
       - {id: B, metin: "İkinci model"}
-      - {id: C, metin: "Yan yana duran iki çizim"}
+      - {id: C, metin: "Hiçbir modelde çiçeklik yoktu"}
       - {id: D, metin: "Eğimi olmayan düz bir çizim"}
     dogru: B
     dayanak: "İkinci modelde çiçeklik biraz daha aşağıdaydı ve suyu topladı."
@@ -67,7 +67,7 @@ sorular:
     metin: "Planın uzmanlarca kontrol edilmesi neden önemliydi?"
     secenekler:
       - {id: A, metin: "Bahçeyi biraz daha süslemek için"}
-      - {id: B, metin: "Çizimleri gizlemek için"}
+      - {id: B, metin: "Planı daha pahalı yapmak için"}
       - {id: C, metin: "Çiçekleri değiştirmek için"}
       - {id: D, metin: "Çalışmayı güvenle yapmak için"}
     dogru: D

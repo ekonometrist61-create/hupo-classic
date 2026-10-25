@@ -8,7 +8,7 @@ sinif_alt: 4
 sinif_ust: 4
 kahraman_turu: baba
 deger_anahtarlari: [D6, D12]
-tanitim: "Arşivdeki eski bir fotoğrafta meydanın düzeni ters görünür. Fotoğrafçı {kahraman}, sorunun ters basılmış bir kopyadan kaynaklandığını kaynakları karşılaştırarak bulur."
+tanitim: "Arşivdeki eski bir fotoğrafta meydan ters görünür. Fotoğrafçı {kahraman}, sorunun ters basılmış bir kopyadan kaynaklandığını kaynakları karşılaştırarak bulur."
 durum: taslak
 uretim_kaynak: llm_taslak
 duzeltme_tarihi: "2026-10-24"
@@ -67,9 +67,9 @@ sorular:
     dayanak_sayfa: 4
     metin: "Sonucun güvenilirliği nasıl artırıldı?"
     secenekler:
-      - {id: A, metin: "Fotoğraf dikkatlice gizlenerek"}
-      - {id: B, metin: "Haber birkaç satır kısaltılarak"}
-      - {id: C, metin: "Tarih kısmı tamamen silinerek"}
+      - {id: A, metin: "Yalnızca fotoğrafın kendisine bakılarak"}
+      - {id: B, metin: "Sadece bir habere güvenilerek"}
+      - {id: C, metin: "Tahmin edilen yıl hemen yazılarak"}
       - {id: D, metin: "Kaynaklar yeniden incelenerek"}
     dogru: D
     dayanak: "Bulduğu sonucu arşiv kartına yazmadan önce kaynakları yeniden kontrol etti."
