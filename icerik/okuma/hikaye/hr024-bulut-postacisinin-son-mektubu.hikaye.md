@@ -35,10 +35,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Zarfta hangi adres yazıyordu?", secenekler: [{id: A, metin: "Kuzey Tepesi, Mavi Pencereli Ev"}, {id: B, metin: "Deniz Kıyısı, Kırmızı Ev"}, {id: C, metin: "Güney Vadisi"}], dogru: A, aciklama: "Zarfın üzerinde Kuzey Tepesi, Mavi Pencereli Ev yazıyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Pofuduk'un bir terslik olduğunu anlamasının nedeni neydi?", secenekler: [{id: A, metin: "Pusula kuzeyi gösterirken kendisi güneye gidiyordu"}, {id: B, metin: "Çantası çok ağırdı"}, {id: C, metin: "Yağmur başlamıştı"}], dogru: A, aciklama: "Pusulanın gösterdiği yönle uçuş yönü uyuşmuyordu."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Zarfta hangi adres yazıyordu?", secenekler: [{id: A, metin: "Deniz Kıyısı, Kırmızı Ev"}, {id: B, metin: "Kuzey Tepesi, Mavi Pencereli Ev"}, {id: C, metin: "Güney Vadisi"}], dogru: B, aciklama: "Zarfın üzerinde Kuzey Tepesi, Mavi Pencereli Ev yazıyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Pofuduk'un bir terslik olduğunu anlamasının nedeni neydi?", secenekler: [{id: A, metin: "Çantası çok ağırdı"}, {id: B, metin: "Yağmur başlamıştı"}, {id: C, metin: "Pusula kuzeyi gösterirken kendisi güneye gidiyordu"}], dogru: C, aciklama: "Pusulanın gösterdiği yönle uçuş yönü uyuşmuyordu."}
   - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Pofuduk zarftaki yıldız hakkında ne sonuca vardı?", secenekler: [{id: A, metin: "Yön göstermeyen, yalnızca süs olan bir resim"}, {id: B, metin: "Hazine haritası"}, {id: C, metin: "Ev numarası"}], dogru: A, aciklama: "Pofuduk yıldızın yön göstermediğini, sadece süs olduğunu anladı."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen yön sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Gidilecek doğrultu"}, {id: B, metin: "Bir mektup türü"}, {id: C, metin: "Bir bulut rengi"}], dogru: A, aciklama: "Yön, bir yere giderken izlenecek doğrultudur."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen yön sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Bir mektup türü"}, {id: B, metin: "Gidilecek doğrultu"}, {id: C, metin: "Bir bulut rengi"}], dogru: B, aciklama: "Yön, bir yere giderken izlenecek doğrultudur."}
 deyim_cumleleri:
   hr024_gozleri_parladi: "Zarfı açınca gözleri parladı."
 ---

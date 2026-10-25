@@ -36,9 +36,9 @@ etiketler:
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Takımda Deniz'e hangi görev verildi?", secenekler: [{id: A, metin: "Yedek olmak"}, {id: B, metin: "Kodlama"}, {id: C, metin: "Sunum"}, {id: D, metin: "Zaman tutmak"}], dogru: A, aciklama: "Deniz'e ilk başta yedek olması söylendi."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Deniz'in çizimi takıma neyi gösterdi?", secenekler: [{id: A, metin: "Hız değişiminin yerinin sorun olabileceğini"}, {id: B, metin: "Sensörün kırık olduğunu"}, {id: C, metin: "Yarışın bittiğini"}, {id: D, metin: "Okulun kapandığını"}], dogru: A, aciklama: "Deniz, sorunun sensörden önce hız değişiminde olabileceğini düşündü."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Deniz'in çizimi takıma neyi gösterdi?", secenekler: [{id: A, metin: "Sensörün kırık olduğunu"}, {id: B, metin: "Yarışın bittiğini"}, {id: C, metin: "Hız değişiminin yerinin sorun olabileceğini"}, {id: D, metin: "Okulun kapandığını"}], dogru: C, aciklama: "Deniz, sorunun sensörden önce hız değişiminde olabileceğini düşündü."}
   - {id: s3, beceri: yorumlama, dayanak_sayfa: 11, metin: "Takım neden başarısız denemelerini sakladı?", secenekler: [{id: A, metin: "Hatalardan öğrenip sonraki yarışa hazırlanmak için"}, {id: B, metin: "Kimseye göstermemek için"}, {id: C, metin: "Silmek için"}, {id: D, metin: "Öğretmen istediği için"}], dogru: A, aciklama: "Başarısız denemeler, gelişmenin yollarını göstermek için saklandı."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen sensör ne işe yarar?", secenekler: [{id: A, metin: "Ortamdaki bir değişikliği algılayıp ölçen cihaz"}, {id: B, metin: "Bir oyun kartı"}, {id: C, metin: "Bir tür viraj"}, {id: D, metin: "Bir kâğıt türü"}], dogru: A, aciklama: "Sensör, hız, sıcaklık, mesafe gibi değişkenleri algılar."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen sensör ne işe yarar?", secenekler: [{id: A, metin: "Bir oyun kartı"}, {id: B, metin: "Ortamdaki bir değişikliği algılayıp ölçen cihaz"}, {id: C, metin: "Bir tür viraj"}, {id: D, metin: "Bir kâğıt türü"}], dogru: B, aciklama: "Sensör, hız, sıcaklık, mesafe gibi değişkenleri algılar."}
 deyim_cumleleri:
   hr056_ici_burkulmak: "Deniz kızmadı ama içi burkuldu."
 ---

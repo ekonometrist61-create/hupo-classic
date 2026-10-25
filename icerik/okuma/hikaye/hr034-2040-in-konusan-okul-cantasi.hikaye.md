@@ -34,10 +34,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Çanta öğretmene hangi cevabı verdi?", secenekler: [{id: A, metin: "Kırk sekiz"}, {id: B, metin: "Yirmi dört"}, {id: C, metin: "Altmış"}, {id: D, metin: "On iki"}], dogru: A, aciklama: "Çanta, işlemi açıklamadan “Cevap kırk sekiz!” dedi."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Deniz neden çantanın hızlı çözmesini her zaman istemedi?", secenekler: [{id: A, metin: "Hızlı çözüm, kendi düşünmesini ve öğrenmesini engelliyordu"}, {id: B, metin: "Çanta yavaş çalışıyordu"}, {id: C, metin: "Ödevi çok sevdiği için"}, {id: D, metin: "Öğretmen kızmıştı"}], dogru: A, aciklama: "Deniz, kendi cevabını bulmanın öğrenmek için önemli olduğunu anladı."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Çanta öğretmene hangi cevabı verdi?", secenekler: [{id: A, metin: "Yirmi dört"}, {id: B, metin: "Altmış"}, {id: C, metin: "Kırk sekiz"}, {id: D, metin: "On iki"}], dogru: C, aciklama: "Çanta, işlemi açıklamadan “Cevap kırk sekiz!” dedi."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Deniz neden çantanın hızlı çözmesini her zaman istemedi?", secenekler: [{id: A, metin: "Çanta yavaş çalışıyordu"}, {id: B, metin: "Ödevi çok sevdiği için"}, {id: C, metin: "Hızlı çözüm, kendi düşünmesini ve öğrenmesini engelliyordu"}, {id: D, metin: "Öğretmen kızmıştı"}], dogru: C, aciklama: "Deniz, kendi cevabını bulmanın öğrenmek için önemli olduğunu anladı."}
   - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Elif'in sözüne göre önemli olan nedir?", secenekler: [{id: A, metin: "Kararın kişinin kendisinde kalması"}, {id: B, metin: "Çantanın hızlı olması"}, {id: C, metin: "Ödevin hiç yapılmaması"}, {id: D, metin: "Okulun kapanması"}], dogru: A, aciklama: "Araç ne olursa olsun karar vermek insanın kendisine aittir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen seçenek sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Birden fazla arasından seçilebilecek durum"}, {id: B, metin: "Bir tuş"}, {id: C, metin: "Bir sınıf"}, {id: D, metin: "Bir ödev"}], dogru: A, aciklama: "Seçenek, birkaç olanağın her biridir."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen seçenek sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Bir tuş"}, {id: B, metin: "Birden fazla arasından seçilebilecek durum"}, {id: C, metin: "Bir sınıf"}, {id: D, metin: "Bir ödev"}], dogru: B, aciklama: "Seçenek, birkaç olanağın her biridir."}
 ---
 @omurga
 2040 yılının pazartesi sabahı {kahraman:ilgi} okul çantası aniden konuştu:
