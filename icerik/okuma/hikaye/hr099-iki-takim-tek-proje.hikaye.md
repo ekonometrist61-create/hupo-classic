@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Okul sergisi için iki takım tek bir proje yapmak zorunda. Duru ve Melis, rekabetin yerine kullanıcının ihtiyacını dinlemeyi öğrenir."
+tanitim: "Okul sergisi için iki takım tek bir proje yapmak zorunda. {kahraman} ve Melis, rekabetin yerine kullanıcının ihtiyacını dinlemeyi öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
