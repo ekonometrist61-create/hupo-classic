@@ -38,6 +38,17 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.4.0 · 2026-10-25
+
+Büyük değişiklik (MINOR: yeni yönetici yüzeyi). Hikâye Atölyesi liste ekranı: denetim rozetleri, denetim süzgeci, toplu insan onayı.
+- Liste: her sürüm için Ajan A, Ajan B ve İnsan rozetleri; "Denetim" süzgeci (ajanlar geçti, ajan bekliyor, insan onaylı, insan bekliyor, yayına hazır).
+- Toplu onay: işaretli hikâyelerin taslak ya da incelemedeki sürümlerinde yalnız insan kararı değişir; ajan sonuçları olduğu gibi kalır. Onay için Ajan A ve Ajan B "geçti" olmalıdır. Kuralları sunucu (`okuma_surum_durum_degistir`) zorlar; hatalar sürüm başına gösterilir.
+- Toplu onay yayındaki sürüme dokunmaz; yalnız taslak ve incelemedeki sürümler etkilenir.
+
+**Migration:** yok (mevcut RPC kullanılır).
+
+**Uyumluluk:** Sunucu sözleşmesi değişmedi; panel 0.3.0 ile aynı RPC'ler.
+
 ### app 1.3.0+4 · 2026-10-25
 
 Büyük değişiklik (MINOR: yeni seçim yüzeyi). Kahraman seçimi ve vitrin görselleri yenilendi.

@@ -104,6 +104,19 @@
         "bos": "No stories imported yet. Upload the first package in the \"Import\" section.",
         "suzgecBos": "No version matches these filters. Loosen the filters.",
         "ac": "Review and manage",
+        "denetim": "Review",
+        "denetimKisa": {
+          "ajan_a": "Agent A",
+          "ajan_b": "Agent B",
+          "insan": "Human"
+        },
+        "denetimSuzgec": {
+          "ajanlarGecti": "Agent A and B passed",
+          "ajanBekliyor": "An agent has not passed yet",
+          "insanOnayli": "Human approved",
+          "insanBekliyor": "Awaiting human approval",
+          "yayinaHazir": "Ready to publish (A + B + human)"
+        },
         "kolonBaslik": "Story",
         "soru": "Questions",
         "oturum": "Sessions",
@@ -418,6 +431,13 @@
         "secKolon": "Selection",
         "hepsi": "Select all shown",
         "secilen": "{n} stories selected",
+        "onaylaDugme": "Approve selected",
+        "onayKaldirDugme": "Remove approval from selected",
+        "onayliSoru": "Give human approval to {n} versions? Only draft/in-review versions where Agent A and B both passed are approved; others are skipped.",
+        "onayKaldirSoru": "Remove human approval from {n} versions? The decision returns to Pending; published versions are untouched.",
+        "onayYok": "None of the selected versions qualify (must be draft/in review with Agent A and B passed).",
+        "onaySonuc": "{yapilan} versions updated, {atlanan} skipped.",
+        "onayHata": "{baslik}: {hata}",
         "arsivDugme": "Archive selected",
         "silDugme": "Delete selected",
         "kural": "Deleting applies only to draft/archived stories nobody has read; published, under-review or already-read stories are skipped with the reason shown. Read content is archived, never deleted. The action is first tried and rolled back (preview), then applied only after you confirm.",

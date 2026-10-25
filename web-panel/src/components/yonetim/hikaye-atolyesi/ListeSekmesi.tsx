@@ -4,10 +4,11 @@
 import { useMemo, useState } from "react";
 import { useTranslations } from "next-intl";
 
-import { useAdminRpc } from "@/components/yonetim/useAdminRpc";
-import { OKUMA_DURUMLARI, type OkumaDurum } from "@/lib/okuma/okuma";
+import { adminCall, useAdminRpc } from "@/components/yonetim/useAdminRpc";
+import { OKUMA_DURUMLARI, type DenetimDurumu, type OkumaDurum } from "@/lib/okuma/okuma";
+import ErrorNote from "../panel/ErrorNote";
 import { inputClass, labelClass, linkBtn, outlineBtn, tdClass, thClass } from "../panel/styles";
-import { VeriDurumu } from "./ortak";
+import { useHataMetni, VeriDurumu } from "./ortak";
 import SurumDetay from "./SurumDetay";
 import TopluIslemModal, { type TopluHikaye } from "./TopluIslemModal";
 import type { ListeYaniti, SurumSatiri, TopluIslem } from "./tipler";
@@ -16,8 +17,42 @@ const LIMIT = 200;
 const SINIFLAR = [1, 2, 3, 4, 5, 6, 7, 8];
 const EYLEM_BTN = `${linkBtn} inline-flex min-h-11 items-center`;
 
+const DENETIM_SUZGECLERI = ["ajanlarGecti", "ajanBekliyor", "insanOnayli", "insanBekliyor", "yayinaHazir"] as const;
+type DenetimSuzgeci = (typeof DENETIM_SUZGECLERI)[number];
+
+// Denetim alanları boşsa "bekliyor" sayılır (SurumDetay ile aynı varsayılan).
+const tamDenetim = (d: DenetimDurumu | null): Required<DenetimDurumu> => ({ ajan_a: "pending", ajan_b: "pending", insan: "pending", ...(d ?? {}) });
+const ajanlarGecti = (d: DenetimDurumu | null) => {
+  const x = tamDenetim(d);
+  return x.ajan_a === "pass" && x.ajan_b === "pass";
+};
+const denetimUyar = (d: DenetimDurumu | null, f: DenetimSuzgeci) => {
+  const x = tamDenetim(d);
+  if (f === "ajanlarGecti") return ajanlarGecti(d);
+  if (f === "ajanBekliyor") return !ajanlarGecti(d);
+  if (f === "insanOnayli") return x.insan === "approved";
+  if (f === "insanBekliyor") return x.insan !== "approved";
+  return ajanlarGecti(d) && x.insan === "approved";
+};
+// Yalnız taslak/incelemedeki sürümün denetimi değişebilir (sunucu da böyle zorlar).
+const denetimDuzenlenebilir = (s: SurumSatiri) => s.durum === "taslak" || s.durum === "incelemede";
+
+const ROZET: Record<string, string> = {
+  pass: "bg-success-50 text-success-700 dark:bg-success-500/15 dark:text-success-400",
+  approved: "bg-success-50 text-success-700 dark:bg-success-500/15 dark:text-success-400",
+  fail: "bg-error-50 text-error-700 dark:bg-error-500/15 dark:text-error-400",
+  rejected: "bg-error-50 text-error-700 dark:bg-error-500/15 dark:text-error-400",
+  review_needed: "bg-warning-50 text-warning-700 dark:bg-warning-500/15 dark:text-warning-400",
+  pending: "bg-gray-100 text-gray-600 dark:bg-gray-800 dark:text-gray-300",
+};
+
 export default function ListeSekmesi() {
   const t = useTranslations("yonetim.hikayeAtolyesi");
+  const hata = useHataMetni();
+  const [denetimSuzgeci, setDenetimSuzgeci] = useState<DenetimSuzgeci | "">("");
+  const [onayIslemde, setOnayIslemde] = useState(false);
+  const [onayMesaji, setOnayMesaji] = useState<string | null>(null);
+  const [onayHatalari, setOnayHatalari] = useState<string | null>(null);
   const [durum, setDurum] = useState<OkumaDurum | "">("");
   const [sinif, setSinif] = useState("");
   const [tema, setTema] = useState("");
@@ -41,7 +76,10 @@ export default function ListeSekmesi() {
     [satirlar],
   );
   const gorunen = satirlar.filter(
-    (s) => (!tema || (s.temalar ?? []).includes(tema)) && (!deger || s.ana_deger === deger || s.yardimci_deger === deger),
+    (s) =>
+      (!tema || (s.temalar ?? []).includes(tema)) &&
+      (!deger || s.ana_deger === deger || s.yardimci_deger === deger) &&
+      (!denetimSuzgeci || denetimUyar(s.denetim, denetimSuzgeci)),
   );
   const toplam = liste.data?.toplam ?? 0;
 
@@ -73,12 +111,67 @@ export default function ListeSekmesi() {
     </label>
   );
 
+  // Toplu insan onayı: seçili hikâyelerin taslak/incelemedeki sürümlerinde yalnız "insan" kararı değişir;
+  // ajan sonuçları olduğu gibi gönderilir. Dört göz ve kapılar sunucuda zorlanır, hata sürüm başına gösterilir.
+  const topluOnay = async (onayla: boolean) => {
+    const secimIdleri = new Set(gecerliSecim.map((h) => h.id));
+    const adaylar = gorunen.filter(
+      (s) =>
+        secimIdleri.has(s.hikaye_id) &&
+        denetimDuzenlenebilir(s) &&
+        (onayla ? ajanlarGecti(s.denetim) && tamDenetim(s.denetim).insan !== "approved" : tamDenetim(s.denetim).insan !== "pending"),
+    );
+    setOnayMesaji(null);
+    setOnayHatalari(null);
+    if (adaylar.length === 0) return setOnayMesaji(t("toplu.onayYok"));
+    if (!window.confirm(t(onayla ? "toplu.onayliSoru" : "toplu.onayKaldirSoru", { n: adaylar.length }))) return;
+    setOnayIslemde(true);
+    let yapilan = 0;
+    const hatalar: string[] = [];
+    for (const s of adaylar) {
+      const d = tamDenetim(s.denetim);
+      const { error } = await adminCall("okuma_surum_durum_degistir", {
+        p_surum_id: s.surum_id,
+        p_durum: s.durum,
+        p_denetim: { ajan_a: d.ajan_a, ajan_b: d.ajan_b, insan: onayla ? "approved" : "pending" },
+      });
+      if (error) hatalar.push(t("toplu.onayHata", { baslik: s.baslik, hata: hata(error) }));
+      else yapilan += 1;
+    }
+    setOnayIslemde(false);
+    setOnayMesaji(t("toplu.onaySonuc", { yapilan, atlanan: gecerliSecim.length - yapilan }));
+    setOnayHatalari(hatalar.length ? hatalar.join("\n") : null);
+    if (yapilan > 0) liste.reload();
+  };
+
+  const denetimRozetleri = (s: SurumSatiri) => {
+    const d = tamDenetim(s.denetim);
+    return (
+      <div className="flex flex-wrap gap-1">
+        {(["ajan_a", "ajan_b", "insan"] as const).map((k) => (
+          <span key={k} className={`inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-theme-xs font-medium ${ROZET[d[k]]}`}>
+            {t(`liste.denetimKisa.${k}`)}: {t(`denetimDegerleri.${d[k]}`)}
+          </span>
+        ))}
+      </div>
+    );
+  };
+
   const etiketler = (s: SurumSatiri) => (s.temalar ?? []).join(", ") || "-";
   const degerler = (s: SurumSatiri) => [s.ana_deger, s.yardimci_deger].filter(Boolean).join(" · ") || "-";
 
   return (
     <div>
-      <div className="mb-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+      <div className="mb-4 grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
+        <div>
+          <label className={labelClass} htmlFor="ha-f-denetim">{t("liste.denetim")}</label>
+          <select id="ha-f-denetim" className={inputClass} value={denetimSuzgeci} onChange={(e) => setDenetimSuzgeci(e.target.value as DenetimSuzgeci | "")}>
+            <option value="">{t("liste.tumu")}</option>
+            {DENETIM_SUZGECLERI.map((f) => (
+              <option key={f} value={f}>{t(`liste.denetimSuzgec.${f}`)}</option>
+            ))}
+          </select>
+        </div>
         <div>
           <label className={labelClass} htmlFor="ha-f-durum">{t("liste.durum")}</label>
           <select id="ha-f-durum" className={inputClass} value={durum} onChange={(e) => setDurum(e.target.value as OkumaDurum | "")}>
@@ -137,12 +230,22 @@ export default function ListeSekmesi() {
                 {t("toplu.secilen", { n: gecerliSecim.length })}
               </span>
               <div className="flex flex-wrap gap-3 sm:ms-auto">
+                <button type="button" className={outlineBtn} disabled={gecerliSecim.length === 0 || onayIslemde} onClick={() => void topluOnay(true)}>
+                  {t("toplu.onaylaDugme")}
+                </button>
+                <button type="button" className={outlineBtn} disabled={gecerliSecim.length === 0 || onayIslemde} onClick={() => void topluOnay(false)}>
+                  {t("toplu.onayKaldirDugme")}
+                </button>
                 <button type="button" className={outlineBtn} disabled={gecerliSecim.length === 0} onClick={() => setToplu("arsiv")}>
                   {t("toplu.arsivDugme")}
                 </button>
                 <button type="button" className={outlineBtn} disabled={gecerliSecim.length === 0} onClick={() => setToplu("sil")}>
                   {t("toplu.silDugme")}
                 </button>
+              </div>
+              <div aria-live="polite" className="basis-full space-y-1">
+                {onayMesaji && <p className="text-sm text-gray-700 dark:text-gray-300">{onayMesaji}</p>}
+                <ErrorNote message={onayHatalari} />
               </div>
               <p className="basis-full text-theme-xs text-gray-500 dark:text-gray-400">{t("toplu.kural")}</p>
             </div>
@@ -175,6 +278,10 @@ export default function ListeSekmesi() {
                         <dd className="text-gray-800 dark:text-white/90">{degerler(s)}</dd>
                       </div>
                       <div className="col-span-2">
+                        <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("liste.denetim")}</dt>
+                        <dd>{denetimRozetleri(s)}</dd>
+                      </div>
+                      <div className="col-span-2">
                         <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("liste.tema")}</dt>
                         <dd className="wrap-break-word text-gray-800 dark:text-white/90">{etiketler(s)}</dd>
                       </div>
@@ -196,6 +303,7 @@ export default function ListeSekmesi() {
                       <th className={thClass}><span className="sr-only">{t("toplu.secKolon")}</span></th>
                       <th className={thClass}>{t("liste.kolonBaslik")}</th>
                       <th className={thClass}>{t("liste.durum")}</th>
+                      <th className={thClass}>{t("liste.denetim")}</th>
                       <th className={thClass}>{t("liste.sinif")}</th>
                       <th className={thClass}>{t("liste.tema")}</th>
                       <th className={thClass}>{t("liste.deger")}</th>
@@ -213,6 +321,7 @@ export default function ListeSekmesi() {
                           <p className="text-theme-xs text-gray-500 dark:text-gray-400">{s.slug} · {t("detay.surum", { no: s.surum_no })}</p>
                         </td>
                         <td className={tdClass}>{t(`durumlar.${s.durum}`)}</td>
+                        <td className={`${tdClass} min-w-40`}>{denetimRozetleri(s)}</td>
                         <td className={tdClass}>{s.ana_sinif ?? "-"}</td>
                         <td className={`${tdClass} max-w-48 wrap-break-word`}>{etiketler(s)}</td>
                         <td className={tdClass}>{degerler(s)}</td>

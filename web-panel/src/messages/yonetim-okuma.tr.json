@@ -104,6 +104,19 @@
         "bos": "Henüz içe aktarılmış hikâye yok. \"İçe aktar\" bölümünden ilk paketi yükle.",
         "suzgecBos": "Bu süzgece uyan sürüm yok. Süzgeçleri gevşet.",
         "ac": "İncele ve yönet",
+        "denetim": "Denetim",
+        "denetimKisa": {
+          "ajan_a": "Ajan A",
+          "ajan_b": "Ajan B",
+          "insan": "İnsan"
+        },
+        "denetimSuzgec": {
+          "ajanlarGecti": "Ajan A ve B geçti",
+          "ajanBekliyor": "Bir ajan henüz geçmedi",
+          "insanOnayli": "İnsan onayladı",
+          "insanBekliyor": "İnsan onayı bekliyor",
+          "yayinaHazir": "Yayına hazır (A + B + insan)"
+        },
         "kolonBaslik": "Hikâye",
         "soru": "Soru",
         "oturum": "Oturum",
@@ -418,6 +431,13 @@
         "secKolon": "Seçim",
         "hepsi": "Görünenlerin hepsini seç",
         "secilen": "{n} hikâye seçili",
+        "onaylaDugme": "Seçilenleri onayla",
+        "onayKaldirDugme": "Seçilenlerin onayını kaldır",
+        "onayliSoru": "{n} sürüme insan onayı verilsin mi? Yalnız Ajan A ve Ajan B \"Geçti\" olan taslak/incelemedeki sürümler onaylanır; diğerleri atlanır.",
+        "onayKaldirSoru": "{n} sürümün insan onayı kaldırılsın mı? Karar \"Bekliyor\"a döner; yayındaki sürümlere dokunulmaz.",
+        "onayYok": "Seçilenler arasında bu işleme uygun sürüm yok (taslak/incelemede, Ajan A ve B geçmiş olmalı).",
+        "onaySonuc": "{yapilan} sürüm güncellendi, {atlanan} atlandı.",
+        "onayHata": "{baslik}: {hata}",
         "arsivDugme": "Seçilenleri arşive al",
         "silDugme": "Seçilenleri sil",
         "kural": "Silme yalnız taslak/arşivdeki ve hiç okunmamış hikâyeler içindir; yayında, incelemede veya okunmuş olanlar atlanır ve nedeni gösterilir. Okunmuş içerik silinmez, arşive alınır. Önce işlem denenip geri alınır (önizleme), sonra onayınla uygulanır.",
