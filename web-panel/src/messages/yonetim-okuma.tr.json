@@ -29,6 +29,8 @@
         "yetki": "Bu işlem için yönetici yetkisi gerekir.",
         "genel": "İşlem tamamlanamadı. Bir süre sonra yeniden dene; sorun sürerse kaydı kontrol et.",
         "YAYIN_KAPISI": "Yayın için Ajan A ve Ajan B denetimi \"geçti\", insan kararı \"onaylandı\" olmalı. Denetimi kaydedip yeniden dene.",
+        "ZATEN_YAYINDA": "Hikâyenin yayındaki sürümünden başka, denetimi tamam yeni bir sürüm yok.",
+        "YAYINDA_DEGIL": "Hikâyenin yayında sürümü yok; çekilecek bir şey bulunmadı.",
         "DORT_GOZ": "Dört göz kuralı: Oluşturan kişi kendi kaydını yayınlayamaz veya onaylayamaz. Başka bir yönetici yapmalı.",
         "SURUM_DEGISMEZ": "Yayındaki sürümün içeriği ve denetimi değiştirilemez. Değişiklik için yeni sürüm içe aktar.",
         "GECERSIZ_GECIS": "Bu durumdan o duruma geçilemez.",
@@ -438,15 +440,21 @@
         "onayYok": "Seçilenler arasında bu işleme uygun sürüm yok (taslak/incelemede, Ajan A ve B geçmiş olmalı).",
         "onaySonuc": "{yapilan} sürüm güncellendi, {atlanan} atlandı.",
         "onayHata": "{baslik}: {hata}",
+        "yayinaAlDugme": "Seçilenleri yayına al",
+        "yayindanCekDugme": "Seçilenleri yayından çek",
         "arsivDugme": "Seçilenleri arşive al",
         "silDugme": "Seçilenleri sil",
         "kural": "Silme yalnız taslak/arşivdeki ve hiç okunmamış hikâyeler içindir; yayında, incelemede veya okunmuş olanlar atlanır ve nedeni gösterilir. Okunmuş içerik silinmez, arşive alınır. Önce işlem denenip geri alınır (önizleme), sonra onayınla uygulanır.",
-        "kurulumYok": "Toplu işlem sunucuda henüz kurulu değil (20261079 uygulanmamış).",
+        "kurulumYok": "Toplu işlem sunucuda henüz kurulu değil (migrasyon uygulanmamış).",
         "baslik": {
+          "yayina_al": "{n} hikâye yayına alınsın mı?",
+          "yayindan_cek": "{n} hikâye yayından çekilsin mi?",
           "arsiv": "{n} hikâye arşive alınsın mı?",
           "sil": "{n} hikâye silinsin mi?"
         },
         "aciklama": {
+          "yayina_al": "Her hikâyenin Ajan A ve Ajan B \"geçti\", insan kararı \"onaylandı\" olan en yeni taslak veya incelemedeki sürümü yayına alınır; taslaktaki önce incelemeye geçer. Önceki yayındaki sürüm arşive gider. Denetimi tamam olmayan hikâyeler atlanır ve nedeni gösterilir.",
+          "yayindan_cek": "Seçilen hikâyelerin yayındaki sürümü arşive alınır; çocuklar artık göremez. Okuma oturumları ve karneler korunur.",
           "arsiv": "Seçilen hikâyelerin arşivde olmayan tüm sürümleri (yayındaki dahil) arşive alınır; çocuklara gösterilmez. Okuma oturumları ve karneler korunur.",
           "sil": "Kurala uyan hikâyeler tüm sürümleriyle silinir. Bağlı üretim fişi taslak brife döner."
         },
@@ -455,10 +463,14 @@
         "sonucBaslik": "Toplu işlem sonucu",
         "sonucOzet": "Tamamlandı: {basarili} hikâye işlendi, {atlanan} hikâye atlandı.",
         "geriAlinamaz": {
+          "yayina_al": "Yayına alınan sürüm çocuklara görünür olabilir; yayındaki sürümün içeriği değişmez.",
+          "yayindan_cek": "Arşive alınan sürüm çocuklara gösterilmez; yeniden yayına almak için önce taslağa dönmesi gerekir.",
           "arsiv": "Arşive alınan sürümler yeniden yayına doğrudan alınamaz (önce taslağa dönmeli).",
           "sil": "Bu işlem geri alınamaz."
         },
         "onayla": {
+          "yayina_al": "{n} hikâyeyi yayına al",
+          "yayindan_cek": "{n} hikâyeyi yayından çek",
           "arsiv": "{n} hikâyeyi arşive al",
           "sil": "{n} hikâyeyi sil"
         },

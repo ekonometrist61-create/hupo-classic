@@ -19,6 +19,14 @@ export interface TopluHikaye {
   slug: string;
 }
 
+// Her işlemin sunucu fonksiyonu; kurallar (yayın kapısı, dört göz, oturum koruması) orada zorlanır.
+const RPC: Record<TopluIslem, string> = {
+  arsiv: "okuma_toplu_islem",
+  sil: "okuma_toplu_islem",
+  yayina_al: "okuma_toplu_yayin",
+  yayindan_cek: "okuma_toplu_yayin",
+};
+
 interface Props {
   islem: TopluIslem;
   hikayeler: TopluHikaye[];
@@ -44,7 +52,7 @@ export default function TopluIslemModal({ islem, hikayeler, onKapat }: Props) {
     if (ilkYuk.current) return;
     ilkYuk.current = true;
     void (async () => {
-      const { data, error, missing } = await adminCall<TopluYaniti>("okuma_toplu_islem", {
+      const { data, error, missing } = await adminCall<TopluYaniti>(RPC[islem], {
         p_hikaye_idler: idKey.split(","),
         p_islem: islem,
         p_kuru: true,
@@ -61,7 +69,7 @@ export default function TopluIslemModal({ islem, hikayeler, onKapat }: Props) {
   const onayla = async () => {
     setIslemde(true);
     setHataMesaji(null);
-    const { data, error } = await adminCall<TopluYaniti>("okuma_toplu_islem", {
+    const { data, error } = await adminCall<TopluYaniti>(RPC[islem], {
       p_hikaye_idler: idler,
       p_islem: islem,
       p_kuru: false,

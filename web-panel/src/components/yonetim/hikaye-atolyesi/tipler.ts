@@ -179,7 +179,7 @@ export function kalemMetni(k: unknown): string {
 /** Karne uyarı eşikleri (yüzde, 0-100). Tek yerde tutulur; karne satırlarının hepsi bunu kullanır. */
 export const KARNE_ESIKLERI = { tamamlamaMin: 70, anlamaMin: 60 } as const;
 
-export type TopluIslem = "arsiv" | "sil";
+export type TopluIslem = "arsiv" | "sil" | "yayina_al" | "yayindan_cek";
 
 export interface TopluSonucSatiri {
   hikaye_id: string;

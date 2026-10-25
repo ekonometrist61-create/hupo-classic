@@ -7,7 +7,7 @@ import { useTranslations } from "next-intl";
 import { adminCall, useAdminRpc } from "@/components/yonetim/useAdminRpc";
 import { OKUMA_DURUMLARI, type DenetimDurumu, type OkumaDurum } from "@/lib/okuma/okuma";
 import ErrorNote from "../panel/ErrorNote";
-import { inputClass, labelClass, linkBtn, outlineBtn, tdClass, thClass } from "../panel/styles";
+import { inputClass, labelClass, linkBtn, outlineBtn, primaryBtn, tdClass, thClass } from "../panel/styles";
 import { useHataMetni, VeriDurumu } from "./ortak";
 import SurumDetay from "./SurumDetay";
 import TopluIslemModal, { type TopluHikaye } from "./TopluIslemModal";
@@ -235,6 +235,12 @@ export default function ListeSekmesi() {
                 </button>
                 <button type="button" className={outlineBtn} disabled={gecerliSecim.length === 0 || onayIslemde} onClick={() => void topluOnay(false)}>
                   {t("toplu.onayKaldirDugme")}
+                </button>
+                <button type="button" className={primaryBtn} disabled={gecerliSecim.length === 0} onClick={() => setToplu("yayina_al")}>
+                  {t("toplu.yayinaAlDugme")}
+                </button>
+                <button type="button" className={outlineBtn} disabled={gecerliSecim.length === 0} onClick={() => setToplu("yayindan_cek")}>
+                  {t("toplu.yayindanCekDugme")}
                 </button>
                 <button type="button" className={outlineBtn} disabled={gecerliSecim.length === 0} onClick={() => setToplu("arsiv")}>
                   {t("toplu.arsivDugme")}

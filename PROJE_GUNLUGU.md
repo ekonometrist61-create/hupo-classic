@@ -70,10 +70,25 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR-052 | MOB | Okuma PDF gerçek kontrolü: ikonlu gerçek bir hikâyeyle sayfa incelemesi, 2. ve 8. sınıf ile mürekkep tasarrufu PNG'lerinin incelenmesi, baskı denemesi, PDF indir akışında tema seçimi (karar), 8. sınıf için sözlük adayı (içerik) | BEKLİYOR | Ajan + Kullanıcı (içerik, baskı, karar) | Orta | K-0085 |
 | GÖR-053 | BEL | Çakışan çalışma: okuma PDF ve motor dosyaları iki ajan tarafından düzenlendi (K-0078, K-0085). Commit öncesi birleştirme ve gözden geçirme gerekli; okuma dosyaları henüz git'e alınmadı (untracked) | BEKLİYOR (karar) | Kullanıcı (commit onayı) + Ajan | Yüksek | K-0078, K-0085 |
 | GÖR-054 | MOB | HupoRead hikâye veri tabanı (anotasyon hattı): 76 hikâye (3–7. sınıf ve HR-073) pakete derlendi; 15 hikâye kaldı (8. sınıf: HR-099, 100–109, 111–114; HR-110 kaynakta yok). Uzak DB'deki HR-015…032 taslaklarıyla yerel paketler arasında uyum kararı bekliyor (K-0110). Açıklar: yazarların metin tekrarları (aşağıda K-0107), sözlük adaylarının insan onayı (801 aday onaysız; liste tasnif/sozluk-adaylari-inceleme.csv), kanıt düzeyi C (76/76), HR-111/112 iki sürümden hangisinin esas alınacağı, 5–8. sınıf uzunluk kararının uygulanması (bölme yok, tasnif kademesiyle işaretli) | DEVAM | Ajan + Kullanıcı (onay, içerik) | Yüksek | K-0107 |
+| GÖR-074 | YÖN | Hikâye Atölyesi toplu yayın (K-0145): "Seçilenleri yayına al / yayından çek" düğmeleri ve kuru çalıştırmalı onay ekranı ekran kontrolünden geçmedi. Yerel panel `NEXT_PUBLIC_DEMO_MODE=1` olduğu için yazmalar kapalı; admin oturumu yok. Gerçek yayın işlemi çalıştırılmadı; yayın kararı kullanıcıda (yayın kapısı gereği insan onayı). | BEKLİYOR (ekran kontrolü) | Kullanıcı (admin oturumu) + Ajan | Orta | K-0145 |
 
 ---
 
 ## B. Kayıtlar (en yeni üstte)
+
+### K-0145 · 2026-10-25 13:26 · YÖN/VT · Hikâye Atölyesi: toplu yayına al ve yayından çek (20261094)
+- **Tür:** Gelişme
+- **Konu:** YÖN
+- **Bağlam:** Yayın tek tek yapılıyordu (SurumDetay). Kullanıcı seçilen hikâyeleri toplu yayına almak ve yayından çekmek istedi. Yayın kapısı (Ajan A ve Ajan B `pass`, insan `approved`, inceleyen) değişmedi.
+- **Plan:** (1) `okuma_toplu_yayin(p_hikaye_idler, p_islem, p_kuru)`: `yayina_al` en yeni denetimi tamam taslak/incelemedeki sürümü yayına alır (taslaksa önce incelemeye); `yayindan_cek` yayındaki sürümü arşive alır. Geçişler `okuma_surum_durum_degistir` ile yapılır, kural tekrar yazılmaz. (2) Panel: liste araç çubuğunda iki düğme; toplu modal kuru çalıştırma → onay akışıyla çalışır. (3) TR/EN metinleri ve yeni hata kodları `ZATEN_YAYINDA`, `YAYINDA_DEGIL`.
+- **Karar:** Kullanıcı isteği (2026-10-25). Sahte denetim yazılmadı; canlı veride yayın işlemi çalıştırılmadı; yayın kararı kullanıcıda.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** `db:preview` yalnız 20261094'ü bekliyordu; `db:deploy` ile uygulandı, `db:status` uzakta 20261094'ü gösterdi. Yeni RPC anon'a kapalı, authenticated'a açık, SECURITY DEFINER ve `search_path` sabit. Ekran kontrolü yapılmadı (GÖR-074). Panel 0.5.0 olarak yayına alındı (SURUMLEME.md).
+- **Kanıt:** `node yonetim_crud_testleri.mjs` (supabase/tests/okuma_dunyasi): 45/45 senaryo geçti (önce 36/36). `npm run lint` (web-panel): 0 hata. `npx eslint` değişen dosyalar: temiz. `npm run build`: başarılı. `npm run db:preview`: yalnız 20261094. `npm run db:deploy`: uygulandı.
+- **İlgili:** GÖR-074, 20261068, 20261079, 20261094, `web-panel/src/components/yonetim/hikaye-atolyesi/ListeSekmesi.tsx`, `TopluIslemModal.tsx`.
 
 ### K-0112 · 2026-10-23 · MOB · HupoRead hikâye veri tabanı: 7. sınıf hikâyeler paketlendi (13 hikâye); toplam 76 paket; elle düzeltmeler onaylandı
 - **Tür:** Gelişme + Karar

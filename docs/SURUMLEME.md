@@ -38,6 +38,18 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.5.0 · 2026-10-25
+
+Büyük değişiklik (MINOR: yeni RPC, migration, yönetici yüzeyi). Hikâye Atölyesi toplu yayın.
+- Liste: "Seçilenleri yayına al" ve "Seçilenleri yayından çek" düğmeleri. Önce kuru çalıştırma: her hikâye için "yapılacak" ya da "atlandı + neden" gösterilir; onaylanınca gerçek işlem yapılır.
+- Yayına al: her hikâyenin en yeni taslak veya incelemedeki sürümü; Ajan A ve Ajan B "geçti", insan kararı "onaylandı", inceleyen kayıtlı olmalı. Taslak önce incelemeye geçer; önceki yayındaki sürüm arşive gider. Yayın kapısı sunucuda değişmedi.
+- Yayından çek: yayındaki sürüm arşive alınır; okuma oturumları ve karneler korunur.
+- Yeni hata kodları: ZATEN_YAYINDA, YAYINDA_DEGIL.
+
+**Migration'lar (uzak veritabanında uygulandı):** 20261094000000.
+
+**Uyumluluk:** App değişmedi. Migration uygulanmadan toplu yayın düğmeleri "kurulu değil" uyarısı verir; mevcut tek tek yayın ve toplu arşiv/silme etkilenmez.
+
 ### panel 0.4.0 · 2026-10-25
 
 Büyük değişiklik (MINOR: yeni yönetici yüzeyi). Hikâye Atölyesi liste ekranı: denetim rozetleri, denetim süzgeci, toplu insan onayı.
