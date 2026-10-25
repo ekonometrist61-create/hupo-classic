@@ -535,22 +535,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İşitme cihazı"
-        },
-        {
-          "id": "B",
           "metin": "Tablet"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Hoparlör"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kamera"
+        },
+        {
+          "id": "D",
+          "metin": "İşitme cihazı"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Elvan, gürültülü ortamlarda konuşmaları anlamak için işitme cihazı kullanıyordu."
     },
     {
@@ -561,22 +561,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Gürültüde kaçırılabilecek bilgiye yazıdan da ulaşılabildiği için"
-        },
-        {
-          "id": "B",
           "metin": "Hoparlör bozulduğu için"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yazı daha ucuz olduğu için"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kimse sesi duymadığı için"
+        },
+        {
+          "id": "D",
+          "metin": "Gürültüde kaçırılabilecek bilgiye yazıdan da ulaşılabildiği için"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Yazılı bilgi, sesin duyulmadığı durumda herkesin işine yarar."
     },
     {
@@ -613,22 +613,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir anlamı ya da kavramı temsil eden işaret"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür hoparlör"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir yarışma"
+        },
+        {
+          "id": "C",
+          "metin": "Bir anlamı ya da kavramı temsil eden işaret"
         },
         {
           "id": "D",
           "metin": "Bir oyun masası"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Simge, bir şeyi görsel olarak temsil eden işarettir."
     }
   ],

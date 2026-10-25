@@ -916,22 +916,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "On iki"
-        },
-        {
-          "id": "B",
           "metin": "On"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yirmi"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Altı"
+        },
+        {
+          "id": "D",
+          "metin": "On iki"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Gece boyunca duvara on iki afiş asılmıştı."
     },
     {
@@ -942,11 +942,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Deyimlerin görünür anlamıyla kastedilen anlamın karıştırılması ve yanlış bilgi vermesi nedeniyle"
+          "metin": "Renkleri çok parlak olduğu için"
         },
         {
           "id": "B",
-          "metin": "Renkleri çok parlak olduğu için"
+          "metin": "Deyimlerin görünür anlamıyla kastedilen anlamın karıştırılması ve yanlış bilgi vermesi nedeniyle"
         },
         {
           "id": "C",
@@ -957,7 +957,7 @@
           "metin": "Okul kapandığı için"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Afişler, deyimleri gerçek anlamıyla yorumlatarak çocukları yanıltabilirdi."
     },
     {
@@ -968,22 +968,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir deyimin resmi, her zaman o deyimin anlamını doğru göstermeyebilir"
-        },
-        {
-          "id": "B",
           "metin": "Resimlerin hiç kullanılmaması gerektiğini"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Deyimlerin yalnızca komik olduğunu"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Afiş asmanın yasak olduğunu"
+        },
+        {
+          "id": "D",
+          "metin": "Bir deyimin resmi, her zaman o deyimin anlamını doğru göstermeyebilir"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Görsel, deyimin mecaz anlamını her zaman doğru aktaramaz."
     },
     {
@@ -994,22 +994,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir sözün geçtiği cümle ve durum"
-        },
-        {
-          "id": "B",
           "metin": "Bir afiş türü"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir resim sanatı"
+        },
+        {
+          "id": "C",
+          "metin": "Bir sözün geçtiği cümle ve durum"
         },
         {
           "id": "D",
           "metin": "Bir kulüp adı"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Bağlam, bir sözün anlamını belirleyen çevredir."
     }
   ],

@@ -1214,22 +1214,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bayram günü"
-        },
-        {
-          "id": "B",
           "metin": "Posta binası"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yeni yıl"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kamera adı"
+        },
+        {
+          "id": "D",
+          "metin": "Bayram günü"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Fotoğrafın arkasında yalnızca “Bayram günü” yazıyordu."
     },
     {
@@ -1240,29 +1240,29 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Doğru bilinen kısmı daha değerli kılar"
-        },
-        {
-          "id": "B",
           "metin": "Belgeyi tamamen değersiz yapar"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kanıt aramayı durdurur"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Fotoğrafı yok etmeye yol açar"
+        },
+        {
+          "id": "D",
+          "metin": "Doğru bilinen kısmı daha değerli kılar"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Bilinmeyeni açıkça söylemek, bilinen kısmın güvenilirliğini artırır."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 6,
-      "metin": "Nehir'in harita hakkında vardığı sonuç nedir?",
+      "metin": "Kahramanın harita hakkında vardığı sonuç nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -1292,22 +1292,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Belgelerin korunup saklandığı yer"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür fotoğraf"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir oyun"
+        },
+        {
+          "id": "C",
+          "metin": "Belgelerin korunup saklandığı yer"
         },
         {
           "id": "D",
           "metin": "Bir harita işareti"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Arşiv, belgelerin düzenli biçimde saklandığı yerdir."
     }
   ],

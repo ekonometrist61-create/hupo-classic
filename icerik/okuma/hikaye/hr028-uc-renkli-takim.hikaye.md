@@ -36,7 +36,7 @@ etiketler:
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Cem hangi işi severdi?", secenekler: [{id: A, metin: "Bulmaca çözmeyi"}, {id: B, metin: "Top sürmeyi"}, {id: C, metin: "İp atlamayı"}], dogru: A, aciklama: "Cem bulmaca çözmeyi severdi."}
   - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Üç arkadaşın bulduğu doğru kart sırası hangisiydi?", secenekler: [{id: A, metin: "Mavi, kırmızı, sarı"}, {id: B, metin: "Sarı, mavi, kırmızı"}, {id: C, metin: "Kırmızı, sarı, mavi"}], dogru: C, aciklama: "Kırmızı maviden önce, sarı kırmızıdan sonra, mavi en sonda olmalıydı."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Cem, Bora'nın hangi yönünü önemli buldu?", secenekler: [{id: A, metin: "Sadece hızlı koşmasını"}, {id: B, metin: "Yalnız koşmak değil, arkadaşına yardım edebilmesini"}, {id: C, metin: "Topu çok sert atmasını"}], dogru: B, aciklama: "Bora kartı görevliye teslim ederek başkasının oyununa da yardım etti."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Cem, yoldaşın hangi yönünü önemli buldu?", secenekler: [{id: A, metin: "Sadece hızlı koşmasını"}, {id: B, metin: "Yalnız koşmak değil, arkadaşına yardım edebilmesini"}, {id: C, metin: "Topu çok sert atmasını"}], dogru: B, aciklama: "Yoldaş kartı görevliye teslim ederek başkasının oyununa da yardım etti."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen engel ne anlama gelir?", secenekler: [{id: A, metin: "Yolu kapatan ya da zorlaştıran şey"}, {id: B, metin: "Bir oyun kartı"}, {id: C, metin: "Bir top türü"}], dogru: A, aciklama: "Engel, geçilmesi zor olan bir şeydir."}
 ---
 @omurga

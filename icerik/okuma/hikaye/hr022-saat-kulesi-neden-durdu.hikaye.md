@@ -36,7 +36,7 @@ etiketler:
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kule kaç saatini gösteriyordu?", secenekler: [{id: A, metin: "On iki on"}, {id: B, metin: "Dokuz"}, {id: C, metin: "On bir buçuk"}], dogru: C, aciklama: "Akrep on birde, yelkovan altıda: saat on bir buçuktu."}
   - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Kule ne kadar geriydi?", secenekler: [{id: A, metin: "On dakika"}, {id: B, metin: "Kırk dakika"}, {id: C, metin: "Bir saat"}], dogru: B, aciklama: "Saat 12.10 iken kule 11.30'da kalmıştı."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 1, metin: "Nil'in “Eğer bir saat durmuşsa…” sözü neyi söylüyor?", secenekler: [{id: A, metin: "Durmuş bir saatten doğru zamanı öğrenemeyiz"}, {id: B, metin: "Saatleri hiç kullanmamalıyız"}, {id: C, metin: "Kulenin çok yüksek olduğunu"}], dogru: A, aciklama: "Durmuş bir saat yanlış zamanı gösterir; bu yüzden birkaç kaynağı karşılaştırmak gerekir."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 1, metin: "Kahramanın “Eğer bir saat durmuşsa…” sözü neyi söylüyor?", secenekler: [{id: A, metin: "Durmuş bir saatten doğru zamanı öğrenemeyiz"}, {id: B, metin: "Saatleri hiç kullanmamalıyız"}, {id: C, metin: "Kulenin çok yüksek olduğunu"}], dogru: A, aciklama: "Durmuş bir saat yanlış zamanı gösterir; bu yüzden birkaç kaynağı karşılaştırmak gerekir."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen bakım ne demektir?", secenekler: [{id: A, metin: "Dans etmek"}, {id: B, metin: "Saatleri satmak"}, {id: C, metin: "Bir şeyin düzenli onarılıp korunması"}], dogru: C, aciklama: "Bakım, bir şeyi düzenli kontrol edip koruma işidir."}
 ---
 @omurga

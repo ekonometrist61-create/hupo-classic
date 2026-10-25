@@ -1419,22 +1419,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Dumrul Köprüsü"
-        },
-        {
-          "id": "B",
           "metin": "Yankı Köprüsü"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Büyük Geçit"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "İki Yaka"
+        },
+        {
+          "id": "D",
+          "metin": "Dumrul Köprüsü"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Dumrul, köprünün adının “Dumrul Köprüsü” olmasını istiyordu."
     },
     {
@@ -1449,18 +1449,18 @@
         },
         {
           "id": "B",
-          "metin": "Yalnızca kişinin başarılarını"
+          "metin": "Kişinin gördüğünden daha geniş bir çevreyi ve başkalarının emeğini"
         },
         {
           "id": "C",
-          "metin": "Kişinin gördüğünden daha geniş bir çevreyi ve başkalarının emeğini"
+          "metin": "Yalnızca kişinin başarılarını"
         },
         {
           "id": "D",
           "metin": "Yalnızca geçmişte kalan bir köprüyü"
         }
       ],
-      "dogru": "C",
+      "dogru": "B",
       "aciklama": "Hatıralar, kişinin gözünün görmediği, başkalarının emeğini de kapsayabilir."
     },
     {
@@ -1475,18 +1475,18 @@
         },
         {
           "id": "B",
-          "metin": "Doğru olmak ile haklı görünmek ayrı şeylerdir"
+          "metin": "Haklı görünmek, doğru olmaktan daha önemlidir"
         },
         {
           "id": "C",
-          "metin": "Haklı görünmek, doğru olmaktan daha önemlidir"
+          "metin": "Doğru olmak ile haklı görünmek ayrı şeylerdir"
         },
         {
           "id": "D",
           "metin": "Doğru olmanın hiçbir önemi yoktur"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Bir kişi doğru olabilir, ama kendi bakış açısı yüzünden haklı görünmeyebilir."
     },
     {
@@ -1531,14 +1531,14 @@
         },
         {
           "id": "C",
-          "metin": "Karşılık beklemeden sorumluluğun kabul edildiği"
+          "metin": "Kimsenin özür dilemesine gerek olmadığı"
         },
         {
           "id": "D",
-          "metin": "Kimsenin özür dilemesine gerek olmadığı"
+          "metin": "Karşılık beklemeden sorumluluğun kabul edildiği"
         }
       ],
-      "dogru": "C",
+      "dogru": "D",
       "aciklama": "Dumrul'un özrü bir ödül kazanmak için değil, sorumluluğu kabul etmek için söylenmişti."
     }
   ],

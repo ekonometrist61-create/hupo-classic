@@ -1289,7 +1289,7 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 4,
-      "metin": "Ada'nın bu sözünden çıkan sonuç nedir?",
+      "metin": "Kahramanın bu sözünden çıkan sonuç nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -1315,15 +1315,15 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 6,
-      "metin": "Ada'nın bu sözüne göre sağlıklı şüphe nedir?",
+      "metin": "Kahramanın bu sözüne göre sağlıklı şüphe nedir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bilgiyi kanıta göre sınamak; her şeyi reddetmek değil"
+          "metin": "Her bilgiyi yalan saymak"
         },
         {
           "id": "B",
-          "metin": "Her bilgiyi yalan saymak"
+          "metin": "Bilgiyi kanıta göre sınamak; her şeyi reddetmek değil"
         },
         {
           "id": "C",
@@ -1334,7 +1334,7 @@
           "metin": "Arkadaşları suçlamak"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Şüphe, bilgiyi kanıta göre sınamaktır; her şeyi reddetmek ise başka bir tutumdur."
     },
     {
@@ -1345,22 +1345,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir durumu etkileyen ortam ve şartlar"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür dağ"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir kayıt cihazı"
+        },
+        {
+          "id": "C",
+          "metin": "Bir durumu etkileyen ortam ve şartlar"
         },
         {
           "id": "D",
           "metin": "Bir grafik türü"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Koşul, bir olayın gerçekleştiği ortam ve şartlardır."
     }
   ],

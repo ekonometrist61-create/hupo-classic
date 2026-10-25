@@ -1053,11 +1053,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bu okulda mizah yasaklanmıştır!"
+          "metin": "Mizah kulübü kapandı."
         },
         {
           "id": "B",
-          "metin": "Mizah kulübü kapandı."
+          "metin": "Bu okulda mizah yasaklanmıştır!"
         },
         {
           "id": "C",
@@ -1068,14 +1068,14 @@
           "metin": "Gazete çıkmayacak."
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kâğıtta “Bu okulda mizah yasaklanmıştır!” yazıyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Sena'nın bir haberin altına “Abartı olduğunu belirtelim” önermesinin amacı neydi?",
+      "metin": "Yoldaşın bir haberin altına “Abartı olduğunu belirtelim” önermesinin amacı neydi?",
       "secenekler": [
         {
           "id": "A",
@@ -1105,22 +1105,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Şakayı açıklamak, gerekirse değiştirmek"
-        },
-        {
-          "id": "B",
           "metin": "Onu anlayışsız ilan etmek"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Gazeteyi kapatmak"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Şakayı daha yüksek sesle tekrarlamak"
+        },
+        {
+          "id": "D",
+          "metin": "Şakayı açıklamak, gerekirse değiştirmek"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Mizahın karşılığı kişiden kişiye değişebilir; şaka açıklanabilir ya da yeniden yazılabilir."
     },
     {
@@ -1131,11 +1131,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir durumu olduğundan çok büyük ya da küçük göstermek"
+          "metin": "Bir çeşit gazete sayfası"
         },
         {
           "id": "B",
-          "metin": "Bir çeşit gazete sayfası"
+          "metin": "Bir durumu olduğundan çok büyük ya da küçük göstermek"
         },
         {
           "id": "C",
@@ -1146,7 +1146,7 @@
           "metin": "Bir tür bahçe bitkisi"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Abartı, bir şeyi olduğundan büyük ya da küçük göstermektir."
     }
   ],

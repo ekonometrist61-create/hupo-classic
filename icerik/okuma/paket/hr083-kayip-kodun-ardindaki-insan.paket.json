@@ -1037,7 +1037,7 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Defne'nin fark ettiği ilk garip değişiklik neydi?",
+      "metin": "Kahramanın fark ettiği ilk garip değişiklik neydi?",
       "secenekler": [
         {
           "id": "A",
@@ -1057,7 +1057,7 @@
         }
       ],
       "dogru": "A",
-      "aciklama": "Defne, ayırttığı bilim kurgu kitabının masal kategorisinde göründüğünü fark etti."
+      "aciklama": "Kahraman, ayırttığı bilim kurgu kitabının masal kategorisinde göründüğünü fark etti."
     },
     {
       "id": "s2",
@@ -1089,26 +1089,26 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 7,
-      "metin": "Defne'nin bu sözü neyi vurgular?",
+      "metin": "Kahramanın bu sözü neyi vurgular?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Ortak bir özellik, tek başına neden-sonuç kanıtı değildir"
-        },
-        {
-          "id": "B",
           "metin": "Etkinlik kesinlikle suçludur"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kitaplar hiç tanıtılmamalıdır"
+        },
+        {
+          "id": "C",
+          "metin": "Ortak bir özellik, tek başına neden-sonuç kanıtı değildir"
         },
         {
           "id": "D",
           "metin": "Değişiklik bir kullanıcının kararıdır"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "İki olayın aynı ortak özelliği paylaşması, birinin diğerinin nedeni olduğunu kanıtlamaz."
     },
     {
@@ -1119,11 +1119,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kitapların konu, tür ve raf düzenine göre gruplandırılması"
+          "metin": "Bir tür kitap kapağı"
         },
         {
           "id": "B",
-          "metin": "Bir tür kitap kapağı"
+          "metin": "Kitapların konu, tür ve raf düzenine göre gruplandırılması"
         },
         {
           "id": "C",
@@ -1134,7 +1134,7 @@
           "metin": "Bir okuma yarışması"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Sınıflandırma, kitapların düzenli gruplara ayrılmasıdır."
     }
   ],

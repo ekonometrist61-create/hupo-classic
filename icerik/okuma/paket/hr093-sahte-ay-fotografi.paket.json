@@ -1151,48 +1151,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir gözlemevinin adı"
-        },
-        {
-          "id": "B",
           "metin": "Bir oyun adı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir kitap adı"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Bir şarkı sözü"
+        },
+        {
+          "id": "D",
+          "metin": "Bir gözlemevinin adı"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Fotoğrafın altındaki açıklamada bir gözlemevinin adı yazıyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Leyla'nın bu sözünden çıkan sonuç nedir?",
+      "metin": "Kahramanın bu sözünden çıkan sonuç nedir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Beğeni sayısı, bilgiyi doğrulamaz"
-        },
-        {
-          "id": "B",
           "metin": "Beğeni sayısı en doğru ölçüdür"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Fotoğraf kesinlikle doğrudur"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Beğenmek yanlıştır"
+        },
+        {
+          "id": "D",
+          "metin": "Beğeni sayısı, bilgiyi doğrulamaz"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Beğeni sayısı, bir bilginin doğru olduğunu göstermez."
     },
     {
@@ -1203,22 +1203,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hemen inanmak değil; kaynağı tanıyıp karşılaştırarak"
-        },
-        {
-          "id": "B",
           "metin": "Her şeye körü körüne inanarak"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Hiçbir kaynağa bakmadan"
+        },
+        {
+          "id": "C",
+          "metin": "Hemen inanmak değil; kaynağı tanıyıp karşılaştırarak"
         },
         {
           "id": "D",
           "metin": "Yalnızca beğeni sayısına bakarak"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Güvenmek, kaynağı ve tarihi kontrol edip başka bilgilerle karşılaştırmayı gerektirir."
     },
     {
@@ -1229,11 +1229,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Gerçek olmayan, hayal ürünü olan"
+          "metin": "Çok büyük"
         },
         {
           "id": "B",
-          "metin": "Çok büyük"
+          "metin": "Gerçek olmayan, hayal ürünü olan"
         },
         {
           "id": "C",
@@ -1244,7 +1244,7 @@
           "metin": "Bilimsel olarak kanıtlanmış"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Hayalî, gerçek olmayan, hayal gücüyle yaratılmış anlamına gelir."
     }
   ],

@@ -35,7 +35,7 @@ etiketler:
   program_surumu: "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Ekin'in iki saksısından hangisi yeşermişti?", secenekler: [{id: A, metin: "Dolaptaki"}, {id: B, metin: "Pencere kenarında duran"}, {id: C, metin: "İkisi de soluk olan"}], dogru: B, aciklama: "Pencere kenarındaki fasulye yeşermiş, dolaptakinin filizi soluk kalmıştı."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kahramanın iki saksısından hangisi yeşermişti?", secenekler: [{id: A, metin: "Dolaptaki"}, {id: B, metin: "Pencere kenarında duran"}, {id: C, metin: "İkisi de soluk olan"}], dogru: B, aciklama: "Pencere kenarındaki fasulye yeşermiş, dolaptakinin filizi soluk kalmıştı."}
   - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "İki saksı arasındaki temel fark neydi?", secenekler: [{id: A, metin: "Su miktarı"}, {id: B, metin: "Tohum paketi"}, {id: C, metin: "Işık alıp almaması"}], dogru: C, aciklama: "Su aynı miktarda verildi; fark ışıktaydı."}
   - {id: s3, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen cetvelle ne yapıldı?", secenekler: [{id: A, metin: "Bitkilerin boyu ölçüldü"}, {id: B, metin: "Su kabı yıkandı"}, {id: C, metin: "Tohum ekildi"}], dogru: A, aciklama: "Cetvel, uzunluk ölçmeye yarayan bir araçtır."}
 deyim_cumleleri:

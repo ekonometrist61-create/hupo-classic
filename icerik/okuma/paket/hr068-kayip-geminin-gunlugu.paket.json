@@ -599,22 +599,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Son sayfası yırtılmıştı"
-        },
-        {
-          "id": "B",
           "metin": "Kapağı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Haritası"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Çanı"
+        },
+        {
+          "id": "D",
+          "metin": "Son sayfası yırtılmıştı"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Defterin son sayfası yırtılmıştı."
     },
     {
@@ -625,11 +625,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Su örneği alınan duraklar"
+          "metin": "Batma noktaları"
         },
         {
           "id": "B",
-          "metin": "Batma noktaları"
+          "metin": "Su örneği alınan duraklar"
         },
         {
           "id": "C",
@@ -640,7 +640,7 @@
           "metin": "Tehlikeli kayalar"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Açıklama kartı çarpıların örnek alınan durakları gösterdiğini belirtiyordu."
     },
     {
@@ -651,22 +651,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir haritanın güzel çizilmiş olması onu doğru yapmaz"
-        },
-        {
-          "id": "B",
           "metin": "Haritalar hiç kullanılmamalı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yalnız yeni haritalar doğrudur"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Haritalar kesinlikle doğrudur"
+        },
+        {
+          "id": "D",
+          "metin": "Bir haritanın güzel çizilmiş olması onu doğru yapmaz"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Kaynağın güvenilirliği ve tarihi kontrol edilmelidir."
     },
     {
@@ -677,22 +677,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Araştırma için alınan örnek"
-        },
-        {
-          "id": "B",
           "metin": "Bir gemi adı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir harita işareti"
+        },
+        {
+          "id": "C",
+          "metin": "Araştırma için alınan örnek"
         },
         {
           "id": "D",
           "metin": "Bir kitap türü"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Numune, incelemek üzere alınan örnektir."
     }
   ],

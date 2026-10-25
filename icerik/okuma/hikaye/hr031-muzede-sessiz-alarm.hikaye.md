@@ -36,7 +36,7 @@ etiketler:
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "İki alarm hangi ortak durumda duyulmuştu?", secenekler: [{id: A, metin: "Müze kapandığında"}, {id: B, metin: "Rehber konuştuğunda"}, {id: C, metin: "Pusula düştüğünde"}, {id: D, metin: "Havalandırma çalışmaya başladığında"}], dogru: D, aciklama: "İki alarm da havalandırma açıldığında duyulmuştu."}
   - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Alarmların nedeni neydi?", secenekler: [{id: A, metin: "Hırsızlar gelmişti"}, {id: B, metin: "Pusula bozulmuştu"}, {id: C, metin: "Telefon çalmıştı"}, {id: D, metin: "Bir algılayıcı havalandırma değişikliğine gereğinden fazla duyarlıydı"}], dogru: D, aciklama: "Teknik görevli, algılayıcının ayarının fazla hassas olduğunu buldu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "İpek'in “acele hüküm vermemek” sözü neyi anlatır?", secenekler: [{id: A, metin: "Müzeyi hemen kapatmayı"}, {id: B, metin: "Tahmin etmeyi yasaklamayı"}, {id: C, metin: "Pusulayı çalmayı"}, {id: D, metin: "Kanıt olmadan karar vermemeyi"}], dogru: D, aciklama: "İpek, kanıt toplamadan karar vermenin yanlış olabileceğini söyledi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "Kahramanın “acele hüküm vermemek” sözü neyi anlatır?", secenekler: [{id: A, metin: "Müzeyi hemen kapatmayı"}, {id: B, metin: "Tahmin etmeyi yasaklamayı"}, {id: C, metin: "Pusulayı çalmayı"}, {id: D, metin: "Kanıt olmadan karar vermemeyi"}], dogru: D, aciklama: "İpek, kanıt toplamadan karar vermenin yanlış olabileceğini söyledi."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen sensör ne işe yarar?", secenekler: [{id: A, metin: "Bir tür vitrin"}, {id: B, metin: "Ses çıkarır ama bir şey algılamaz"}, {id: C, metin: "Pusulanın parçası"}, {id: D, metin: "Hareket, sıcaklık gibi değişimleri algılar"}], dogru: D, aciklama: "Sensör, ortamdaki değişimi algılayan cihazdır."}
 ---
 @omurga
@@ -57,8 +57,6 @@ Rehber, alarmın duyulduğu iki saati kontrol odasındaki kayıtlara aktardı. {
 ---
 @omurga
 {yoldas:yalin|bir arkadaş} başka bir olasılık sundu: “Belki alarmı bir telefon sesi tetiklemiştir.” Rehber böyle bir tahmini de not etti; hemen doğru ya da yanlış diye işaretlemedi. {kahraman}, hangi düşüncenin kanıtlandığını anlamanın tahmin sayısını çoğaltmaktan daha önemli olduğunu söyledi. O sırada salonda kimseye suçlayıcı gözle bakmamaya özen gösterdiler.
-
-Teknik görevli salonun boşaltıldığı güvenli bir anda sistemi denetledi.
 
 Teknik görevli salonun boşaltıldığı güvenli bir anda sistemi denetledi. Vitrinin yakınındaki bir algılayıcının, havalandırmanın oluşturduğu değişime gereğinden fazla duyarlı ayarlandığını belirledi. Yetkili ekip ayarı düzenledi ve alarmı birkaç kez denedi. Artık gereksiz ses duyulmuyordu.
 ---

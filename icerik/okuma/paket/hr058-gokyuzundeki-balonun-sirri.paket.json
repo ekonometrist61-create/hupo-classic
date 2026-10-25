@@ -832,11 +832,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Brülörle"
+          "metin": "Güneş ışığıyla"
         },
         {
           "id": "B",
-          "metin": "Güneş ışığıyla"
+          "metin": "Brülörle"
         },
         {
           "id": "C",
@@ -847,7 +847,7 @@
           "metin": "Elektrikle"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Ekip, balonun içindeki havayı brülörle ısıtıyordu."
     },
     {
@@ -880,26 +880,26 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 4,
-      "metin": "Ayşe'nin bu düşüncesi neyi gösterir?",
+      "metin": "Kahramanın bu düşüncesi neyi gösterir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir olayın birden fazla etkene bağlı olabileceğini"
-        },
-        {
-          "id": "B",
           "metin": "Bilimin önemsiz olduğunu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Balonun hiç uçmayacağını"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Rüzgârın her zaman yararlı olduğunu"
+        },
+        {
+          "id": "D",
+          "metin": "Bir olayın birden fazla etkene bağlı olabileceğini"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Balonun yükselmesi ısı, ağırlık, rüzgâr ve güvenlik gibi birçok koşula bağlıdır."
     },
     {
@@ -910,11 +910,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Balonun içindeki havayı ısıtan araç"
+          "metin": "Bir tür sepet"
         },
         {
           "id": "B",
-          "metin": "Bir tür sepet"
+          "metin": "Balonun içindeki havayı ısıtan araç"
         },
         {
           "id": "C",
@@ -925,7 +925,7 @@
           "metin": "Bir gösteri alanı"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Brülör, sıcak hava balonunun içindeki havayı ısıtan alev veren araçtır."
     }
   ],

@@ -834,22 +834,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Sonbaharda"
-        },
-        {
-          "id": "B",
           "metin": "İlkbaharda"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yazda"
+        },
+        {
+          "id": "C",
+          "metin": "Sonbaharda"
         },
         {
           "id": "D",
           "metin": "Kışta"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Saatin akrebi sonbaharda takılı kalmıştı."
     },
     {
@@ -860,11 +860,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Havaya, besine ve güvenli alana"
+          "metin": "Yalnızca saate"
         },
         {
           "id": "B",
-          "metin": "Yalnızca saate"
+          "metin": "Havaya, besine ve güvenli alana"
         },
         {
           "id": "C",
@@ -875,7 +875,7 @@
           "metin": "Kuşların renklerine"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Mavi'ye göre yuva sayısı yalnızca hava ile değil, besin ve güvenli alanla da ilgiliydi."
     },
     {
@@ -886,22 +886,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Saat zamanı sayar, orman canlıların ilişkilerini yaşar"
-        },
-        {
-          "id": "B",
           "metin": "Saat ormanı büyütür"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Orman zamanı sayar"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "İkisi aynıdır"
+        },
+        {
+          "id": "D",
+          "metin": "Saat zamanı sayar, orman canlıların ilişkilerini yaşar"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Saat zamanı ölçer; ormanda ise canlıların birbirine bağlı ilişkileri sürer."
     },
     {
@@ -912,22 +912,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir şeyi başka bir şeyle anlamlı biçimde ilişkilendiren söz sanatı"
-        },
-        {
-          "id": "B",
           "metin": "Bilimsel bir ölçüm"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir ağaç türü"
+        },
+        {
+          "id": "C",
+          "metin": "Bir şeyi başka bir şeyle anlamlı biçimde ilişkilendiren söz sanatı"
         },
         {
           "id": "D",
           "metin": "Hava durumu"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Mecaz, bir sözcüğü gerçek anlamından farklı ama ilişkili bir anlamda kullanmaktır."
     }
   ],

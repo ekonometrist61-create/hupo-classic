@@ -755,22 +755,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Melike Hanım"
-        },
-        {
-          "id": "B",
           "metin": "Selin Hanım"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Sibel Hanım"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Aylin Hanım"
+        },
+        {
+          "id": "D",
+          "metin": "Melike Hanım"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Beşinci sınıfların öğretmeni Melike Hanım'dı."
     },
     {
@@ -781,22 +781,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hangi kasenin kastedildiği belli olmadığı için"
-        },
-        {
-          "id": "B",
           "metin": "Kaseler çok ağır olduğu için"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kase kırıldığı için"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kaseler renkli olduğu için"
+        },
+        {
+          "id": "D",
+          "metin": "Hangi kasenin kastedildiği belli olmadığı için"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Herkesin kendi kasesi farklı olabileceği için ölçü belirsizdi."
     },
     {
@@ -833,22 +833,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir maddenin içerdiği madde miktarını gösteren büyüklük"
-        },
-        {
-          "id": "B",
           "metin": "Bir kap türü"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir yemek adı"
+        },
+        {
+          "id": "C",
+          "metin": "Bir maddenin içerdiği madde miktarını gösteren büyüklük"
         },
         {
           "id": "D",
           "metin": "Bir yıldız"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Kütle, bir maddenin ne kadar madde içerdiğini gösterir; ağırlıkla ilişkilidir."
     }
   ],

@@ -1418,22 +1418,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir cümle bağlamından koparılırsa anlamı değişebilir"
-        },
-        {
-          "id": "B",
           "metin": "Cümleler hiç değişmez"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Söz önemsizdir"
+        },
+        {
+          "id": "C",
+          "metin": "Bir cümle bağlamından koparılırsa anlamı değişebilir"
         },
         {
           "id": "D",
           "metin": "Haberci yalan söylemiştir"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Bir cümlenin öncesi ve sonrası, anlamını belirler."
     },
     {
@@ -1444,11 +1444,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Eksik duymak ile bilerek değiştirmek farklı şeylerdir; yalan söylediği kanıtlanmadan bu söylenemez"
+          "metin": "Kesinlikle yalan söylemiştir"
         },
         {
           "id": "B",
-          "metin": "Kesinlikle yalan söylemiştir"
+          "metin": "Eksik duymak ile bilerek değiştirmek farklı şeylerdir; yalan söylediği kanıtlanmadan bu söylenemez"
         },
         {
           "id": "C",
@@ -1459,7 +1459,7 @@
           "metin": "Yalnız sözü değiştirmiştir"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Eksik duyulan bir söz, bilerek yapılmış bir değişiklik değildir."
     },
     {

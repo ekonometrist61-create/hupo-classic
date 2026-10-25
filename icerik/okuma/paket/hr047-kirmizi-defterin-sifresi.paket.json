@@ -1255,15 +1255,15 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 8,
-      "metin": "İrem'in bu sözü neyi vurgular?",
+      "metin": "Yoldaşın bu sözü neyi vurgular?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir örüntü bulmak, onun neyi anlattığını bilmek anlamına gelmez"
+          "metin": "Örüntünün her zaman doğru olduğunu"
         },
         {
           "id": "B",
-          "metin": "Örüntünün her zaman doğru olduğunu"
+          "metin": "Bir örüntü bulmak, onun neyi anlattığını bilmek anlamına gelmez"
         },
         {
           "id": "C",
@@ -1274,7 +1274,7 @@
           "metin": "Kuralın hiç bulunamayacağını"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kuralı bulmak ile belgenin anlamını anlamak farklı işlerdir."
     },
     {
@@ -1285,22 +1285,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tablonun dikey bölümlerinden biri"
-        },
-        {
-          "id": "B",
           "metin": "Bir kitap türü"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir yatay satır"
+        },
+        {
+          "id": "C",
+          "metin": "Tablonun dikey bölümlerinden biri"
         },
         {
           "id": "D",
           "metin": "Bir sayı kodu"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Sütun, bir tablonun yukarıdan aşağıya uzanan bölümüdür."
     }
   ],

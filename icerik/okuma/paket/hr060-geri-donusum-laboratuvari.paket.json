@@ -752,22 +752,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Plastik şişeler"
-        },
-        {
-          "id": "B",
           "metin": "Muz kabukları"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Cam kavanozlar"
+        },
+        {
+          "id": "C",
+          "metin": "Plastik şişeler"
         },
         {
           "id": "D",
           "metin": "Metal kutular"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Kâğıt kutusunda plastik şişeler bulunuyordu."
     },
     {
@@ -778,11 +778,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yetkili kurumların güncel bilgilerini incelemek istedikleri için"
+          "metin": "Afişlerin çok pahalı olduğu için"
         },
         {
           "id": "B",
-          "metin": "Afişlerin çok pahalı olduğu için"
+          "metin": "Yetkili kurumların güncel bilgilerini incelemek istedikleri için"
         },
         {
           "id": "C",
@@ -793,7 +793,7 @@
           "metin": "Kutular boş olduğu için"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Doğru bilgi için yetkili kaynaklar incelenmeliydi."
     },
     {
@@ -804,22 +804,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bulunan sonucun sınırlarını bilmek"
-        },
-        {
-          "id": "B",
           "metin": "Bütün soruları yok etmek"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Hiç veri toplamamak"
+        },
+        {
+          "id": "C",
+          "metin": "Bulunan sonucun sınırlarını bilmek"
         },
         {
           "id": "D",
           "metin": "Sadece renkli afiş yapmak"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Bir sonucun hangi koşullarda geçerli olduğunu bilmek, doğru karar için gereklidir."
     },
     {
@@ -830,22 +830,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir ürünü saran ve koruyan kap ya da kılıf"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür kutu oyunu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir kâğıt türü"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Bir çöp kovası"
+        },
+        {
+          "id": "D",
+          "metin": "Bir ürünü saran ve koruyan kap ya da kılıf"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Ambalaj, ürünü koruyan ve taşıyan kaptır."
     }
   ],

@@ -61,8 +61,6 @@ Bir süre sonra eşek ritmi kaçırdı. Çünkü çatıdan damlayan suyun sesi h
 @omurga
 Eşek bir daha anırmadan önce arkadaşlarına baktı. Onlardan işaret alınca sesini yükseltti. Kendi sesinin kıymetini kaybetmemiş, yalnız diğerlerine yer açmıştı. Değirmenin damlaları da sanki onlara eşlik ediyordu. Yağmurun sesi azaldıkça yeni bir ezgi kurdular.
 
-Dışarıda yağmur hafifledi.
-
 Dışarıda yağmur hafifledi. Yol kenarında bir grup çocuk vardı. Çocuklar değirmenin içinden gelen müziği merak etmişti. Hayvanlar kapıya çıktı ve kısa şarkılarını söylediler. Çocukların biri ellerini çırparak eşlik etti. Bir başkası yağmur damlalarının sesini taklit etti. Böylece şarkıya yeni bir ritim eklendi.
 
 {yoldas:yalin|bir arkadaş} gururla kabardı. “Artık hepimiz aynı sesle mi şarkı söyleyeceğiz?” diye sordu.

@@ -950,48 +950,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Mavi kapıya"
-        },
-        {
-          "id": "B",
           "metin": "Yeşil kapıya"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kırmızı kapıya"
+        },
+        {
+          "id": "C",
+          "metin": "Mavi kapıya"
         },
         {
           "id": "D",
           "metin": "Mor kapıya"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Pusula ibresini mavi kapıya çevirdi."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 4,
-      "metin": "Ayçın'ın fark ettiği şey neydi?",
+      "metin": "Kahramanın fark ettiği şey neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Eski bir eşya her zaman değersiz değildir"
-        },
-        {
-          "id": "B",
           "metin": "Eski eşyalar kullanılmamalıdır"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Pusula bozuktur"
+        },
+        {
+          "id": "C",
+          "metin": "Eski bir eşya her zaman değersiz değildir"
         },
         {
           "id": "D",
           "metin": "Kent çok eskidir"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Eski olmak ile değersiz olmak aynı şey değildir."
     },
     {
@@ -1028,11 +1028,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Ölçmeden, tahmini olarak"
+          "metin": "Gözleri kapalı olarak"
         },
         {
           "id": "B",
-          "metin": "Gözleri kapalı olarak"
+          "metin": "Ölçmeden, tahmini olarak"
         },
         {
           "id": "C",
@@ -1043,7 +1043,7 @@
           "metin": "Renklere bakarak"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Göz kararı, ölçü almadan tahmin yürütmek demektir."
     }
   ],

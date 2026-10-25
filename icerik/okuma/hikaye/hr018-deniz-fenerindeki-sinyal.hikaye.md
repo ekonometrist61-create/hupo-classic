@@ -34,7 +34,7 @@ etiketler:
   program_surumu: "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Elif ve babası terasta neyi fark etti?", secenekler: [{id: A, metin: "Fenerin yanmadığını"}, {id: B, metin: "Teknenin battığını"}, {id: C, metin: "Köpeğin kaybolduğunu"}], dogru: A, aciklama: "Açıkta tekne ışıkları görünüyordu ama fenerin ışığı yoktu."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kahraman ve babası terasta neyi fark etti?", secenekler: [{id: A, metin: "Fenerin yanmadığını"}, {id: B, metin: "Teknenin battığını"}, {id: C, metin: "Köpeğin kaybolduğunu"}], dogru: A, aciklama: "Açıkta tekne ışıkları görünüyordu ama fenerin ışığı yoktu."}
   - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Görevli neden fenerin ne zamandır karanlık olduğunu sordu?", secenekler: [{id: A, metin: "Teknenin rengini öğrenmek için"}, {id: B, metin: "Arızanın ne zaman başladığını bilmek için"}, {id: C, metin: "Kulenin boyunu ölçmek için"}], dogru: B, aciklama: "Görevli, arızanın ne zaman başladığını öğrenerek ekibi doğru yönlendirdi."}
   - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Görevlinin “Arızayı erken bildirdiniz” sözü neyi gösterir?", secenekler: [{id: A, metin: "Çocukların fenere çıktığını"}, {id: B, metin: "Arızanın çok büyük olduğunu"}, {id: C, metin: "Doğru kişiye zamanında haber vermenin önemini"}], dogru: C, aciklama: "Sorunu zamanında bildirmek, ekiplerin hızlı müdahale etmesini sağlar."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen pano ne demektir?", secenekler: [{id: A, metin: "Bilgi ve numaraların asıldığı düz yüzey"}, {id: B, metin: "Denizde yüzen bir tekne"}, {id: C, metin: "Fenerin en üst katı"}], dogru: A, aciklama: "Pano, üzerine bilgi asılan düz bir yüzeydir."}
@@ -54,8 +54,6 @@ Terasta, liman işletmesinin acil iletişim numarasını gösteren bir {kelime:h
 Telefon görüşmesi bittikten sonra {yoldas:yalin|bir arkadaş}, denizdeki teknenin hâlâ ilerlediğini fark etti. “Görmüyorlar mı karanlığı?” diye kaygılandı. Babası, denizcilere yardım etmenin yetkili ekiplerin görevi olduğunu ve teknelerin başka seyir araçları da kullandığını açıkladı. {yoldas:yalin|bir arkadaş}, aceleyle bağırıp işaret vermenin işi karıştırabileceğini anladı.
 ---
 @omurga
-{yoldas:yalin|bir arkadaş} duvara asılı eski bir bakım fotoğrafını fark etti.
-
 {yoldas:yalin|bir arkadaş} duvara asılı eski bir bakım fotoğrafını fark etti. Fotoğrafın altında her ay kontrol yazıyordu. İkisi, liman görevlisinin telefon görüşmesinde söylediği bakım defterini merak etti. Görevli, daha sonra çocuklara defterin nasıl tutulduğunu göstermeyi kabul etti.
 
 Bir süre sonra limanın servis aracı geldi. Görevliler fenerin elektrik sistemini güvenli biçimde kontrol etmeye başladı. {kahraman} ve {yoldas:yalin|bir arkadaş}, terastan ayrılmadı. Rüzgâr güçlenirken denizdeki tekne liman yetkililerinden yönlendirme aldı.

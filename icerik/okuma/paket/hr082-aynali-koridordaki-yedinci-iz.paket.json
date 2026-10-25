@@ -1193,37 +1193,37 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yedi"
-        },
-        {
-          "id": "B",
           "metin": "Altı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Dört"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Sekiz"
+        },
+        {
+          "id": "D",
+          "metin": "Yedi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Koridorda yan yana dizilmiş yedi ayna vardı."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 8,
-      "metin": "Leyla'nın Bora'ya bu sözle amacı neydi?",
+      "metin": "Kahramanın yoldaşa bu sözle amacı neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hatanın herkese olabileceğini söyleyerek onu rahatlatmak"
+          "metin": "Bora'yı suçlamak"
         },
         {
           "id": "B",
-          "metin": "Bora'yı suçlamak"
+          "metin": "Hatanın herkese olabileceğini söyleyerek onu rahatlatmak"
         },
         {
           "id": "C",
@@ -1234,33 +1234,33 @@
           "metin": "Aynalar hakkında konuşmayı bitirmek"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Leyla, yanılmanın herkesin başına gelebileceğini söyleyerek arkadaşını rahatlatmıştır."
+      "dogru": "B",
+      "aciklama": "Kahraman, yanılmanın herkesin başına gelebileceğini söyleyerek arkadaşını rahatlatmıştır."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 10,
-      "metin": "Leyla'nın bu notu neyi ayırır?",
+      "metin": "Yoldaşın bu notu neyi ayırır?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Görülen görüntü ile görüntüye yüklenen yorumu"
-        },
-        {
-          "id": "B",
           "metin": "Tiyatro ile sineması"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Gerçek ile hayali"
+        },
+        {
+          "id": "C",
+          "metin": "Görülen görüntü ile görüntüye yüklenen yorumu"
         },
         {
           "id": "D",
           "metin": "Erkek ile kız tanıkları"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Görüntü ile yorum farklı şeylerdir; yorum yanlış olabilir."
     },
     {
@@ -1271,22 +1271,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir olayı görmüş ya da işitmiş kişinin olayı anlatması"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür tiyatro oyunu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir ışık düzeni"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Bir kostüm"
+        },
+        {
+          "id": "D",
+          "metin": "Bir olayı görmüş ya da işitmiş kişinin olayı anlatması"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Tanıklık, olayı bizzat görmüş ya da duymuş kişinin anlatımıdır."
     }
   ],

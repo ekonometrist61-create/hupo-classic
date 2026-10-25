@@ -780,11 +780,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kelimeleri tek tek bilmek her zaman anlamı çözmeye yetmez"
+          "metin": "Deyimler çok eskidir"
         },
         {
           "id": "B",
-          "metin": "Deyimler çok eskidir"
+          "metin": "Kelimeleri tek tek bilmek her zaman anlamı çözmeye yetmez"
         },
         {
           "id": "C",
@@ -795,7 +795,7 @@
           "metin": "Deyimler öğrenilemez"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Deyimin anlamı, sözcüklerin ayrı ayrı anlamından farklıdır."
     },
     {
@@ -806,22 +806,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir karakteri canlandırmak için giyilen özel giysi"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür perde"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir çeşit zil"
+        },
+        {
+          "id": "C",
+          "metin": "Bir karakteri canlandırmak için giyilen özel giysi"
         },
         {
           "id": "D",
           "metin": "Bir kitap"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Kostüm, oyuncunun rolüne uygun giydiği giysidir."
     }
   ],

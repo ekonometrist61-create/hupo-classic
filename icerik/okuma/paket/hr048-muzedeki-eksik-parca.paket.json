@@ -841,48 +841,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Küçük bir kuşun kanadı büyüklüğünde boşluk"
-        },
-        {
-          "id": "B",
           "metin": "Mavi bir daire"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yeni bir resim"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Bir fotoğraf"
+        },
+        {
+          "id": "D",
+          "metin": "Küçük bir kuşun kanadı büyüklüğünde boşluk"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Tabağın ortasında küçük bir boşluk vardı."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Öğretmen neden Kerem'i susturmadı?",
+      "metin": "Öğretmen neden yoldaşı susturmadı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Düşünceyle kanıtın farklı olduğunu hatırlatmak istediği için"
-        },
-        {
-          "id": "B",
           "metin": "Kerem'in yanlış söylediğini kesinleştirdiği için"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Müzede ses yasak olduğu için"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Tabak kırıldığı için"
+        },
+        {
+          "id": "D",
+          "metin": "Düşünceyle kanıtın farklı olduğunu hatırlatmak istediği için"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Öğretmen, düşünceyi kanıttan ayırmanın önemini göstermek istedi."
     },
     {
@@ -893,22 +893,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "En heyecanlı açıklama yerine en güçlü kanıtı seçmelidir"
-        },
-        {
-          "id": "B",
           "metin": "Hep en heyecanlı açıklamayı seçmelidir"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Hiç açıklama yapmamalıdır"
+        },
+        {
+          "id": "C",
+          "metin": "En heyecanlı açıklama yerine en güçlü kanıtı seçmelidir"
         },
         {
           "id": "D",
           "metin": "Eserleri satmalıdır"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Araştırmacı, heyecan verici ama kanıtsız açıklamalardan kaçınmalıdır."
     },
     {
@@ -919,11 +919,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Eserin bozulmasını önlemeye yönelik koruma çalışması"
+          "metin": "Bir eseri satma işlemi"
         },
         {
           "id": "B",
-          "metin": "Bir eseri satma işlemi"
+          "metin": "Eserin bozulmasını önlemeye yönelik koruma çalışması"
         },
         {
           "id": "C",
@@ -934,7 +934,7 @@
           "metin": "Yeni bir eser yapma"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Konservasyon, eserin zamana ve etkenlere karşı korunmasıdır."
     }
   ],

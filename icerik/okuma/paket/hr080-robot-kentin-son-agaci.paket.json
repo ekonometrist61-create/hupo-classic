@@ -987,26 +987,26 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Kaan'ın projeyle ilgili uyardığı risk neydi?",
+      "metin": "Yoldaşın projeyle ilgili uyardığı risk neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Ağaca zarar verme riski"
-        },
-        {
-          "id": "B",
           "metin": "Bütçenin yetmemesi"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Robotların bozulması"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Yaya yollarının kapanması"
+        },
+        {
+          "id": "D",
+          "metin": "Ağaca zarar verme riski"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Çizilen en düz yol kök bölgesinden geçtiği için ağaca zarar verme riski vardı."
     },
     {
@@ -1017,11 +1017,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Koruma sınırı bilgisi eksikti; veri yetersizdi"
+          "metin": "Robot bozulmuştu"
         },
         {
           "id": "B",
-          "metin": "Robot bozulmuştu"
+          "metin": "Koruma sınırı bilgisi eksikti; veri yetersizdi"
         },
         {
           "id": "C",
@@ -1032,7 +1032,7 @@
           "metin": "Çocuklar yanlış soru sormuştu"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Sistem, eksik veriyle yetersiz bir öneri sunabilir."
     },
     {
@@ -1043,22 +1043,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Güneşten korunmayı sağlayan, gölge veren alan"
-        },
-        {
-          "id": "B",
           "metin": "Su birikintisi"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir tür bisiklet yolu"
+        },
+        {
+          "id": "C",
+          "metin": "Güneşten korunmayı sağlayan, gölge veren alan"
         },
         {
           "id": "D",
           "metin": "Kapalı bir oda"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Gölgelik alan, güneşin etkisini azaltan alandır."
     }
   ],

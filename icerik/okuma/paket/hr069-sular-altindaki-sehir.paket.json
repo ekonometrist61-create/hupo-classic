@@ -862,11 +862,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Güzel görünmesi tek başına kanıt sayılmaz; belgelerle karşılaştırılmalıdır"
+          "metin": "Kanıt olarak kullanılır"
         },
         {
           "id": "B",
-          "metin": "Kanıt olarak kullanılır"
+          "metin": "Güzel görünmesi tek başına kanıt sayılmaz; belgelerle karşılaştırılmalıdır"
         },
         {
           "id": "C",
@@ -877,7 +877,7 @@
           "metin": "Yalnız süs eşyasıdır"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Maket bir olasılığı canlandırır; kanıt yerine geçmez."
     },
     {
@@ -888,22 +888,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Haritadaki uzunluğun gerçekte karşılık geldiği mesafe oranı"
-        },
-        {
-          "id": "B",
           "metin": "Bir kap türü"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir yelken"
+        },
+        {
+          "id": "C",
+          "metin": "Haritadaki uzunluğun gerçekte karşılık geldiği mesafe oranı"
         },
         {
           "id": "D",
           "metin": "Bir tahta parçası"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Ölçek, haritadaki uzunluk ile arazideki mesafe arasındaki ilişkidir."
     }
   ],

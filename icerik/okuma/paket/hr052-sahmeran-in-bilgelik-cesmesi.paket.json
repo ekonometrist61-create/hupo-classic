@@ -1188,27 +1188,27 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 6,
-      "metin": "Mina ikinci damlada mektubu neden yerine koydu?",
+      "metin": "Kahraman ikinci damlada mektubu neden yerine koydu?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bilgiyi bilmenin herkese anlatma hakkı vermediğini düşündüğü için"
-        },
-        {
-          "id": "B",
           "metin": "Mektup çok eski olduğu için"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Mektup kendisine ait olduğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Bilgiyi bilmenin herkese anlatma hakkı vermediğini düşündüğü için"
         },
         {
           "id": "D",
           "metin": "Kütüphane kapandığı için"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Mina, özel bir mektubun sahibinin iznini gözetmesi gerektiğini anladı."
+      "dogru": "C",
+      "aciklama": "Kahraman, özel bir mektubun sahibinin iznini gözetmesi gerektiğini anladı."
     },
     {
       "id": "s3",
@@ -1244,11 +1244,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir belgeyi resmîleştiren damga"
+          "metin": "Bir tür kapı"
         },
         {
           "id": "B",
-          "metin": "Bir tür kapı"
+          "metin": "Bir belgeyi resmîleştiren damga"
         },
         {
           "id": "C",
@@ -1259,7 +1259,7 @@
           "metin": "Bir kitap"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Mühür, belgenin resmî olduğunu gösteren damgadır."
     }
   ],

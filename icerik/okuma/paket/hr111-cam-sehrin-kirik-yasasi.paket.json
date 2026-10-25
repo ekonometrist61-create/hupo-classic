@@ -1237,41 +1237,41 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Ada'nın pazardan aldığı müzik kutusunun hangi kısmı çatlamıştı?",
+      "metin": "Kahramanın pazardan aldığı müzik kutusunun hangi kısmı çatlamıştı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kapağı"
-        },
-        {
-          "id": "B",
           "metin": "Anahtarı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kemeri"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Mekanizması"
+        },
+        {
+          "id": "D",
+          "metin": "Kapağı"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Kutunun kapağı çatlamıştı; içindeki mekanizma ise sıkışmıştı."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 8,
-      "metin": "Ada'ya göre bir kişinin yalnızca korkmuş olması ne anlama gelir?",
+      "metin": "Kahramana göre bir kişinin yalnızca korkmuş olması ne anlama gelir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kötülük yaptığının kanıtıdır"
+          "metin": "Kötülük yaptığının kanıtı değildir"
         },
         {
           "id": "B",
-          "metin": "Kötülük yaptığının kanıtı değildir"
+          "metin": "Kötülük yaptığının kanıtıdır"
         },
         {
           "id": "C",
@@ -1282,14 +1282,14 @@
           "metin": "Okuldan ayrılması gerektiğini gösterir"
         }
       ],
-      "dogru": "B",
+      "dogru": "A",
       "aciklama": "Korkmuş olmak tek başına kötülük yapıldığının kanıtı değildir."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 21,
-      "metin": "Ada'ya göre düşüncelerin herkese görünmesi neyin yerini tutamaz?",
+      "metin": "Kahramana göre düşüncelerin herkese görünmesi neyin yerini tutamaz?",
       "secenekler": [
         {
           "id": "A",
@@ -1309,7 +1309,7 @@
         }
       ],
       "dogru": "B",
-      "aciklama": "Ada, düşüncelerin görünür olmasının güvenli bir soruşturmanın yerini tutamayacağını söyler."
+      "aciklama": "Kahraman, düşüncelerin görünür olmasının güvenli bir soruşturmanın yerini tutamayacağını söyler."
     },
     {
       "id": "s4",
@@ -1323,18 +1323,18 @@
         },
         {
           "id": "B",
-          "metin": "Farklı ihtiyaçları göz önünde bulundurmak"
+          "metin": "Bir sayıyı hesaplamak"
         },
         {
           "id": "C",
-          "metin": "Bir sayıyı hesaplamak"
+          "metin": "Farklı ihtiyaçları göz önünde bulundurmak"
         },
         {
           "id": "D",
           "metin": "Birini suçlamak"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Hesaba katmak, farklı ihtiyaçları karar verirken dikkate almak demektir."
     },
     {
@@ -1349,18 +1349,18 @@
         },
         {
           "id": "B",
-          "metin": "Anlaşılır, geri alınabilir ve baskı olmadan verilmiş olmalı"
-        },
-        {
-          "id": "C",
           "metin": "Yetişkinlerin kararıyla verilmeli"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Hiç yazılı olmamalı"
+        },
+        {
+          "id": "D",
+          "metin": "Anlaşılır, geri alınabilir ve baskı olmadan verilmiş olmalı"
         }
       ],
-      "dogru": "B",
+      "dogru": "D",
       "aciklama": "Rıza, anlaşılır, geri alınabilir ve baskısız verilmiş olmalıdır."
     }
   ],

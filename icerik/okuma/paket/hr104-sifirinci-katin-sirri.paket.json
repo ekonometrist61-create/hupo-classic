@@ -1436,37 +1436,37 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "0"
-        },
-        {
-          "id": "B",
           "metin": "-1"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "G"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "1"
+        },
+        {
+          "id": "D",
+          "metin": "0"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Asansörün ekranında tuhaf bir sayı olarak 0 görünüyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 15,
-      "metin": "Ekin'in bu benzetmesine göre sıfır ne anlama gelebilir?",
+      "metin": "Yoldaşın bu benzetmesine göre sıfır ne anlama gelebilir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Her yerde aynı anlamı taşıyan kesin bir gizli kat"
+          "metin": "Kullanıldığı bağlama göre farklı anlamlar taşıyabilen bir işaret"
         },
         {
           "id": "B",
-          "metin": "Kullanıldığı bağlama göre farklı anlamlar taşıyabilen bir işaret"
+          "metin": "Her yerde aynı anlamı taşıyan kesin bir gizli kat"
         },
         {
           "id": "C",
@@ -1477,7 +1477,7 @@
           "metin": "Yalnızca ziyaretçi için anlamı olan bir sayı"
         }
       ],
-      "dogru": "B",
+      "dogru": "A",
       "aciklama": "Sıfır, hangi plan ya da sistemde kullanıldığına göre farklı bir görev taşır."
     },
     {
@@ -1514,11 +1514,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Birbiriyle çelişmeyen, uyumlu"
+          "metin": "Çok uzun ve ayrıntılı"
         },
         {
           "id": "B",
-          "metin": "Çok uzun ve ayrıntılı"
+          "metin": "Birbiriyle çelişmeyen, uyumlu"
         },
         {
           "id": "C",
@@ -1529,7 +1529,7 @@
           "metin": "Hızlı değişen"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Tutarlı isimler, plan boyunca aynı yer için çelişmeyen adlar kullanılması anlamına gelir."
     },
     {
@@ -1548,14 +1548,14 @@
         },
         {
           "id": "C",
-          "metin": "Geçmişte hiç yanılmadığını iddia etmek"
+          "metin": "Kaynağı yeniden kontrol etmek"
         },
         {
           "id": "D",
-          "metin": "Kaynağı yeniden kontrol etmek"
+          "metin": "Geçmişte hiç yanılmadığını iddia etmek"
         }
       ],
-      "dogru": "C",
+      "dogru": "D",
       "aciklama": "Hatayı düzeltmek, önceki yanlışın kabul edilmesini gerektirir; yanılmadığını iddia etmek anlamına gelmez."
     }
   ],

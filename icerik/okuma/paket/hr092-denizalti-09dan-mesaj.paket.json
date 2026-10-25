@@ -1287,11 +1287,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Sınanabilen bir açıklama önerisi"
+          "metin": "Kesin bir sonuç"
         },
         {
           "id": "B",
-          "metin": "Kesin bir sonuç"
+          "metin": "Sınanabilen bir açıklama önerisi"
         },
         {
           "id": "C",
@@ -1302,7 +1302,7 @@
           "metin": "Bir kayıt numarası"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Hipotez, veriyle sınanabilen bir açıklama önerisidir; kesin sonuç değildir."
     },
     {
@@ -1313,22 +1313,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir verinin oluşturulduğu veya alındığı zamanı gösteren kayıt"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür saat"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir kamera"
+        },
+        {
+          "id": "C",
+          "metin": "Bir verinin oluşturulduğu veya alındığı zamanı gösteren kayıt"
         },
         {
           "id": "D",
           "metin": "Bir kurtarma ekibi"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Zaman damgası, bir kaydın hangi zamanda oluşturulduğunu veya işlendiğini gösterir."
     }
   ],

@@ -800,22 +800,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Saatte ya da baktıkları yerde"
-        },
-        {
-          "id": "B",
           "metin": "Yalnızca güneşte"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Pazarda"
+        },
+        {
+          "id": "C",
+          "metin": "Saatte ya da baktıkları yerde"
         },
         {
           "id": "D",
           "metin": "Kuşta"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Hoca, hem saatin hem de gözlemin yanlış olabileceğini söyledi."
     },
     {
@@ -826,22 +826,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hatanın öğrenmeyi sağlayabileceğini ve saklanmaması gerektiğini"
-        },
-        {
-          "id": "B",
           "metin": "Hiç hata yapılmaması gerektiğini"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Hatanın kimseyi ilgilendirmediğini"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Hatanın saatle ilgili olmadığını"
+        },
+        {
+          "id": "D",
+          "metin": "Hatanın öğrenmeyi sağlayabileceğini ve saklanmaması gerektiğini"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Hata fark edilip açıkça ele alındığında doğruya yaklaşmayı sağlar."
     },
     {

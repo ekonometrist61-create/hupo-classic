@@ -889,22 +889,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "2038 ve 2068"
-        },
-        {
-          "id": "B",
           "metin": "2068 ve 2098"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "2038 ve 2098"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "2028 ve 2068"
+        },
+        {
+          "id": "D",
+          "metin": "2038 ve 2068"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Kapakta 2038–2068 yazıyordu."
     },
     {
@@ -915,22 +915,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Teknoloji hızlı değişirken bazı insan ihtiyaçları kolay değişmez"
-        },
-        {
-          "id": "B",
           "metin": "Her şey yavaş değişir"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "İhtiyaçlar hiç değişmez"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Teknoloji hiç değişmez"
+        },
+        {
+          "id": "D",
+          "metin": "Teknoloji hızlı değişirken bazı insan ihtiyaçları kolay değişmez"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Dedesi, hızlı değişen şeyler ile kolay değişmeyen ihtiyaçları ayırıyordu."
     },
     {
@@ -941,11 +941,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Değersiz olmaz; geçmişin umutlarını gösterir"
+          "metin": "Tamamen değersiz olur"
         },
         {
           "id": "B",
-          "metin": "Tamamen değersiz olur"
+          "metin": "Değersiz olmaz; geçmişin umutlarını gösterir"
         },
         {
           "id": "C",
@@ -956,7 +956,7 @@
           "metin": "Hemen yok edilmelidir"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Gerçekleşmeyen tahmin de, insanların o dönemde neyi umduğunu anlatır."
     },
     {
@@ -967,22 +967,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Geleceğe bırakılmak üzere eşyaların saklandığı kapalı kutu"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür kuş"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir çeşit sayfa"
+        },
+        {
+          "id": "C",
+          "metin": "Geleceğe bırakılmak üzere eşyaların saklandığı kapalı kutu"
         },
         {
           "id": "D",
           "metin": "Bir oyun konsolu"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Kapsül, bir dönemin bilgilerini ileride açılmak üzere saklayan kutudur."
     }
   ],

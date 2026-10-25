@@ -1112,48 +1112,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "1962"
-        },
-        {
-          "id": "B",
           "metin": "1958"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "1960"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "1965"
+        },
+        {
+          "id": "D",
+          "metin": "1962"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Levhada “Açılış: 1962” yazıyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 1,
-      "metin": "Defne'nin “Belki parkla heykelin açılışı farklıdır” sözü neyi önerir?",
+      "metin": "Kahramanın “Belki parkla heykelin açılışı farklıdır” sözü neyi önerir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Park ve heykelin açılışı farklı olaylar olabilir"
-        },
-        {
-          "id": "B",
           "metin": "Tarihler kesin olarak doğrudur"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Park hiç açılmamıştır"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Fotoğraf sahtedir"
+        },
+        {
+          "id": "D",
+          "metin": "Park ve heykelin açılışı farklı olaylar olabilir"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Aynı tarih bazen farklı olaylara ait olabilir; bu yüzden olayların ayrılması gerekir."
     },
     {
@@ -1190,22 +1190,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Olayları zaman sırasına göre yerleştiren çizelge"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür fotoğraf"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Parkta oynanan bir oyun"
+        },
+        {
+          "id": "C",
+          "metin": "Olayları zaman sırasına göre yerleştiren çizelge"
         },
         {
           "id": "D",
           "metin": "Bir çeşit levha"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Kronoloji, olayları tarih sırasına göre dizen bir çizelgedir."
     }
   ],

@@ -1380,11 +1380,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "12 Mayıs 1984"
+          "metin": "12 Mayıs 1974"
         },
         {
           "id": "B",
-          "metin": "12 Mayıs 1974"
+          "metin": "12 Mayıs 1984"
         },
         {
           "id": "C",
@@ -1395,7 +1395,7 @@
           "metin": "Tarih yazmıyordu"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Fotoğraflardan biri 12 Mayıs 1984 tarihiyle etiketlenmişti."
     },
     {
@@ -1410,25 +1410,25 @@
         },
         {
           "id": "B",
-          "metin": "Kopyalama ya da basım tarihini"
+          "metin": "Fotoğrafçının doğum tarihini"
         },
         {
           "id": "C",
-          "metin": "Fotoğrafçının doğum tarihini"
+          "metin": "Kopyalama ya da basım tarihini"
         },
         {
           "id": "D",
           "metin": "Köprünün yapım tarihini"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Arka yazı, daha sonra basılan kopyanın üzerinde olabilir; bu yüzden çekim tarihini kesin olarak göstermeyebilir."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 12,
-      "metin": "Tanıkların anlatıları farklı çıkınca Bora ne önerdi?",
+      "metin": "Tanıkların anlatıları farklı çıkınca yoldaş ne önerdi?",
       "secenekler": [
         {
           "id": "A",
@@ -1448,7 +1448,7 @@
         }
       ],
       "dogru": "B",
-      "aciklama": "Bora, gözlem, duyum, çıkarım ve tarih belirsiz etiketleriyle her anlatının hangi bilgiye dayandığını göstermeyi önerdi."
+      "aciklama": "Yoldaş, gözlem, duyum, çıkarım ve tarih belirsiz etiketleriyle her anlatının hangi bilgiye dayandığını göstermeyi önerdi."
     },
     {
       "id": "s4",

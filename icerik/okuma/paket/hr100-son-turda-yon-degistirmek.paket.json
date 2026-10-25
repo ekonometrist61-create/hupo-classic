@@ -1439,26 +1439,26 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Defne'nin telefonunda on bir gündür hangi sayı duruyordu?",
+      "metin": "Kahramanın telefonunda on bir gündür hangi sayı duruyordu?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "4.42"
-        },
-        {
-          "id": "B",
           "metin": "4.24"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "4.52"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "3.42"
+        },
+        {
+          "id": "D",
+          "metin": "4.42"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Telefonunda 4.42 sayısı duruyordu; bu, bin iki yüz metrelik koşunun rekoruydu."
     },
     {
@@ -1473,18 +1473,18 @@
         },
         {
           "id": "B",
-          "metin": "Yorgunluk genel bir durumdur; belirli bir noktadaki ağrı ise dikkat gerektirir"
+          "metin": "Ağrı her zaman yorgunluktan gelir"
         },
         {
           "id": "C",
-          "metin": "Ağrı her zaman yorgunluktan gelir"
+          "metin": "Yorgunluk genel bir durumdur; belirli bir noktadaki ağrı ise dikkat gerektirir"
         },
         {
           "id": "D",
           "metin": "Yorgunluk önemli değildir"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Genel yorgunlukla belirli bir noktadaki ağrı farklı durumlardır; ağrı sağlık açısından dikkate alınmalıdır."
     },
     {
@@ -1499,18 +1499,18 @@
         },
         {
           "id": "B",
-          "metin": "Yalnızca en hızlı koşmakla"
+          "metin": "Doğru anda durabilmekle de"
         },
         {
           "id": "C",
-          "metin": "Doğru anda durabilmekle de"
+          "metin": "Yalnızca en hızlı koşmakla"
         },
         {
           "id": "D",
           "metin": "Kronometredeki sayıyla"
         }
       ],
-      "dogru": "C",
+      "dogru": "B",
       "aciklama": "Güç yalnızca acıya dayanmakla değil, bazen doğru anda durabilmekle de ölçülür."
     },
     {
@@ -1543,7 +1543,7 @@
       "id": "s5",
       "beceri": "degerlendirme",
       "dayanak_sayfa": 27,
-      "metin": "Defne'nin benimsediği yaklaşıma göre kendini nasıl değerlendirmelidir?",
+      "metin": "Kahramanın benimsediği yaklaşıma göre kendini nasıl değerlendirmelidir?",
       "secenekler": [
         {
           "id": "A",
@@ -1555,15 +1555,15 @@
         },
         {
           "id": "C",
-          "metin": "Kendi durumuna ve sağlığına bakarak"
+          "metin": "Arkadaşlarının yorumlarına göre"
         },
         {
           "id": "D",
-          "metin": "Arkadaşlarının yorumlarına göre"
+          "metin": "Kendi durumuna ve sağlığına bakarak"
         }
       ],
-      "dogru": "C",
-      "aciklama": "Defne, kendini başkalarının süresiyle değil, kendi durumuna ve sağlığına bakarak değerlendirmeyi benimser."
+      "dogru": "D",
+      "aciklama": "Kahraman, kendini başkalarının süresiyle değil, kendi durumuna ve sağlığına bakarak değerlendirmeyi benimser."
     }
   ],
   "uretim": {

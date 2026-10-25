@@ -432,11 +432,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Altın gibi parlayan bir tüy"
+          "metin": "Kayıp bir kedi"
         },
         {
           "id": "B",
-          "metin": "Kayıp bir kedi"
+          "metin": "Altın gibi parlayan bir tüy"
         },
         {
           "id": "C",
@@ -447,7 +447,7 @@
           "metin": "Eski bir anahtar"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Mira, tepelerin ardındaki ormanda altın gibi parlayan bir tüy buldu."
     },
     {
@@ -458,22 +458,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yaban Hayatı Koruma Alanı levhası vardı ve ziyaretçiler girmemeliydi"
-        },
-        {
-          "id": "B",
           "metin": "Yol çok karanlıktı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Tüy ona farklı yönü gösterdi"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Bekçi onu çağırdı"
+        },
+        {
+          "id": "D",
+          "metin": "Yaban Hayatı Koruma Alanı levhası vardı ve ziyaretçiler girmemeliydi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Soldaki yol koruma alanına açılıyordu; güvenli yol seçildi."
     },
     {
@@ -484,11 +484,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "En hızlı yol her zaman doğru değildir"
+          "metin": "Macera hiç yapılmamalıdır"
         },
         {
           "id": "B",
-          "metin": "Macera hiç yapılmamalıdır"
+          "metin": "En hızlı yol her zaman doğru değildir"
         },
         {
           "id": "C",
@@ -499,7 +499,7 @@
           "metin": "Anka yalnız uçar"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Mira, en kısa ve en hızlı yolun güvenli olmayabileceğini öğrendi."
     },
     {
@@ -510,22 +510,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kuşların yılın belli zamanlarında daha uygun yerlere gitmesi"
-        },
-        {
-          "id": "B",
           "metin": "Bir kuşun yuvası"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir tür uçurtma"
+        },
+        {
+          "id": "C",
+          "metin": "Kuşların yılın belli zamanlarında daha uygun yerlere gitmesi"
         },
         {
           "id": "D",
           "metin": "Bir kuş ailesi"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Göç, canlıların uygun koşullar için uzun yolculuğa çıkmasıdır."
     }
   ],

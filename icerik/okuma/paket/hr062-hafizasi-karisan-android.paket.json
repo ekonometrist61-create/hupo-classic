@@ -857,22 +857,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Üç çift çorap"
-        },
-        {
-          "id": "B",
           "metin": "Peynirli tost"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kitaplar"
+        },
+        {
+          "id": "C",
+          "metin": "Üç çift çorap"
         },
         {
           "id": "D",
           "metin": "Defterler"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Robot, tost yerine üç çift çorap getirdi."
     },
     {
@@ -883,22 +883,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Komutları yanlış birleştirmesi ve sözcükleri karıştırması"
-        },
-        {
-          "id": "B",
           "metin": "Çorapların çok sevilmesi"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Ailenin çorap istemesi"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Tostun bitmesi"
+        },
+        {
+          "id": "D",
+          "metin": "Komutları yanlış birleştirmesi ve sözcükleri karıştırması"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "“Tost” ve “toz”, “çorap” ve “çorabı” gibi benzer kayıtlar karışmıştı."
     },
     {
@@ -909,22 +909,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kurallara, verilere ve doğrulamaya"
-        },
-        {
-          "id": "B",
           "metin": "Yalnızca renklere"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Robotun boyuna"
+        },
+        {
+          "id": "C",
+          "metin": "Kurallara, verilere ve doğrulamaya"
         },
         {
           "id": "D",
           "metin": "Hava durumuna"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Sonuç, kuralların, verilerin ve kontrol süreçlerinin birlikte doğru çalışmasına bağlıdır."
     },
     {
@@ -935,11 +935,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Aynı yazılış ve sesle farklı anlamlar taşıyan sözcükler"
+          "metin": "Ses kaydı yapmak"
         },
         {
           "id": "B",
-          "metin": "Ses kaydı yapmak"
+          "metin": "Aynı yazılış ve sesle farklı anlamlar taşıyan sözcükler"
         },
         {
           "id": "C",
@@ -950,7 +950,7 @@
           "metin": "İki ayrı dil"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Sesteş sözcükler, yazılışları ve sesleri aynı olup anlamları farklı olan kelimelerdir."
     }
   ],

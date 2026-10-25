@@ -852,22 +852,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Başını kaldırmadan"
-        },
-        {
-          "id": "B",
           "metin": "Hızlı koşarak"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kafasıyla"
+        },
+        {
+          "id": "C",
+          "metin": "Başını kaldırmadan"
         },
         {
           "id": "D",
           "metin": "Ayağa sıçrayarak"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Mert başını kaldırmadan vurdu ve top direğe çarptı."
     },
     {
@@ -878,11 +878,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Güvende ve birlikte oynayabilmek için"
+          "metin": "Maç bitmişti"
         },
         {
           "id": "B",
-          "metin": "Maç bitmişti"
+          "metin": "Güvende ve birlikte oynayabilmek için"
         },
         {
           "id": "C",
@@ -893,7 +893,7 @@
           "metin": "Hava yağmurluydu"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Öğretmen, güvende ve birlikte oynanabilmesi gerektiğini söyledi."
     },
     {
@@ -904,22 +904,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Aynı olayın farklı deneyimler ve bakış açıları olabileceğini"
-        },
-        {
-          "id": "B",
           "metin": "Olayın tek bir doğru hikâyesi olduğunu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Olayın hiç yaşanmadığını"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Öğrencilerin yalan söylediğini"
+        },
+        {
+          "id": "D",
+          "metin": "Aynı olayın farklı deneyimler ve bakış açıları olabileceğini"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Her anlatım bir deneyimdir; gözlem ve yorumu ayırmak gerekir."
     },
     {
@@ -930,22 +930,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Duyu organlarıyla görülen ya da duyulan şeyi dikkatle kaydetme"
-        },
-        {
-          "id": "B",
           "metin": "Bir oyun kuralı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir tür top"
+        },
+        {
+          "id": "C",
+          "metin": "Duyu organlarıyla görülen ya da duyulan şeyi dikkatle kaydetme"
         },
         {
           "id": "D",
           "metin": "Bir maç kararı"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Gözlem, olayın doğrudan görülen ve kaydedilen kısmıdır."
     }
   ],

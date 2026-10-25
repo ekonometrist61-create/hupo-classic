@@ -1257,11 +1257,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İlk sert rüzgâr"
+          "metin": "Büyük bir dalga"
         },
         {
           "id": "B",
-          "metin": "Büyük bir dalga"
+          "metin": "İlk sert rüzgâr"
         },
         {
           "id": "C",
@@ -1272,7 +1272,7 @@
           "metin": "Bir kuş sürüsü"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kıyıya on dakika kala teknenin burnuna ilk sert rüzgâr vurmuştu."
     },
     {
@@ -1283,22 +1283,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kesin sözler değil, verilere dayanan olasılıklardır"
-        },
-        {
-          "id": "B",
           "metin": "Kesin ve değişmez bilgilerdir"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Hiç kullanılmamalıdır"
+        },
+        {
+          "id": "C",
+          "metin": "Kesin sözler değil, verilere dayanan olasılıklardır"
         },
         {
           "id": "D",
           "metin": "Yalnız ilk saatler için geçerlidir"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Tahminler, koşullara göre değişebilen olasılık değerlendirmeleridir."
     },
     {
@@ -1309,11 +1309,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Fazla görünen bir tedbir, otomatik olarak gereksiz sayılmaz"
+          "metin": "Her tedbir mutlaka gereksizdir"
         },
         {
           "id": "B",
-          "metin": "Her tedbir mutlaka gereksizdir"
+          "metin": "Fazla görünen bir tedbir, otomatik olarak gereksiz sayılmaz"
         },
         {
           "id": "C",
@@ -1324,7 +1324,7 @@
           "metin": "Yalnız bilgisayar tedbiri belirler"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Güvenlik açısından alınan bir önlem, sonradan gereksiz görünse de değerli olabilir."
     },
     {

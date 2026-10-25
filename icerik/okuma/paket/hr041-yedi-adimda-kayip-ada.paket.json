@@ -1065,37 +1065,37 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Gerçekte olmayan bir hazineyi çözdüklerini iddia etmek yanlış olacağı için"
-        },
-        {
-          "id": "B",
           "metin": "Başlık çok uzun olduğu için"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Harita yırtıldığı için"
+        },
+        {
+          "id": "C",
+          "metin": "Gerçekte olmayan bir hazineyi çözdüklerini iddia etmek yanlış olacağı için"
         },
         {
           "id": "D",
           "metin": "Öğretmen kızacağı için"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Kanıtlanmamış bir iddia, raporun güvenilirliğini zedeler."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 20,
-      "metin": "Selin'in eski haritayla ilgili sözü neyi gösterir?",
+      "metin": "Yoldaşın eski haritayla ilgili sözü neyi gösterir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Eski haritanın başka bir zamanın bilgisini taşıdığını"
+          "metin": "Eski haritaların hiç kullanılmaması gerektiğini"
         },
         {
           "id": "B",
-          "metin": "Eski haritaların hiç kullanılmaması gerektiğini"
+          "metin": "Eski haritanın başka bir zamanın bilgisini taşıdığını"
         },
         {
           "id": "C",
@@ -1106,7 +1106,7 @@
           "metin": "Kıyının hiç değişmediğini"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Eski harita, o dönemin durumunu gösterir; bugünü yansıtmaz."
     },
     {

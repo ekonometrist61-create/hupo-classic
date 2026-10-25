@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3071,
+        "kelime_sayisi": 3067,
         "tahmini_sure_dk": 27,
         "sayfa_sayisi": 23,
         "soru_sayisi": 4,
@@ -690,7 +690,7 @@
         },
         {
           "t": "metin",
-          "v": ", ince eleyip sık dokumak deyimini buldu. Anlamını öğrendikten sonra Çınar'ın hazırlanan rapora neden iyi uyduğunu düşündü. Arkadaşlarıyla gerçekten de her örneği ince ince değerlendiriyorlardı.\n\nErtesi hafta çocuklar teknoloji kulübündeErtesi hafta çocuklar teknoloji kulübünde küçük bir çalışma başlattı: Deyimlerin Gerçekten Gerçek Olmadığı Müze. Bir köşede Çınar'ın eğlenceli yanlış anlamaları, karşılarında ise deyimlerin doğru anlamları bulunuyordu. Ziyaretçiler resimlere gülüyor, sonra hangi cümlenin hangi bağlamda kullanıldığını tartışıyordu. Okulun sözlük rafı, uzun zamandır olmadığı kadar kalabalıktı."
+          "v": ", ince eleyip sık dokumak deyimini buldu. Anlamını öğrendikten sonra Çınar'ın hazırlanan rapora neden iyi uyduğunu düşündü. Arkadaşlarıyla gerçekten de her örneği ince ince değerlendiriyorlardı.\n\nErtesi hafta çocuklar teknoloji kulübünde küçük bir çalışma başlattı: Deyimlerin Gerçekten Gerçek Olmadığı Müze. Bir köşede Çınar'ın eğlenceli yanlış anlamaları, karşılarında ise deyimlerin doğru anlamları bulunuyordu. Ziyaretçiler resimlere gülüyor, sonra hangi cümlenin hangi bağlamda kullanıldığını tartışıyordu. Okulun sözlük rafı, uzun zamandır olmadığı kadar kalabalıktı."
         }
       ]
     },
@@ -828,22 +828,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Çınar"
-        },
-        {
-          "id": "B",
           "metin": "Batu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Nehir"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Selin"
+        },
+        {
+          "id": "D",
+          "metin": "Çınar"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Okulun asistanının adı Çınar'dı."
     },
     {
@@ -854,29 +854,29 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Önceki ve sonraki sözlere, konuşmanın durumuna bakılarak"
-        },
-        {
-          "id": "B",
           "metin": "Yalnız sözlükteki ilk anlama bakılarak"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Sözcüğün harf sayısına bakılarak"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Hiç kimse anlamını bilemez"
+        },
+        {
+          "id": "D",
+          "metin": "Önceki ve sonraki sözlere, konuşmanın durumuna bakılarak"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Bağlam, sözcüğün anlamını belirleyen çevredir."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 8,
-      "metin": "İdil'in sesteş sözcükler hakkında vardığı sonuç nedir?",
+      "metin": "Kahramanın sesteş sözcükler hakkında vardığı sonuç nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -906,22 +906,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Anlamı, kelimelerin tek tek anlamından farklı olan kalıplaşmış söz"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür oyun"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Ekranda çıkan bir resim"
+        },
+        {
+          "id": "C",
+          "metin": "Anlamı, kelimelerin tek tek anlamından farklı olan kalıplaşmış söz"
         },
         {
           "id": "D",
           "metin": "Bir zil sesi"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Deyim, kalıplaşmış ve mecaz anlamı olan bir sözdür."
     }
   ],

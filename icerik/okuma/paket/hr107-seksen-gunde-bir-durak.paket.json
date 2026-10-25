@@ -1797,15 +1797,15 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Ada'nın telefon ekranı neyi farklı gösteriyordu?",
+      "metin": "Kahramanın telefon ekranı neyi farklı gösteriyordu?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Evinden farklı bir saat dilimini"
+          "metin": "Bir trenin fiyatını"
         },
         {
           "id": "B",
-          "metin": "Bir trenin fiyatını"
+          "metin": "Evinden farklı bir saat dilimini"
         },
         {
           "id": "C",
@@ -1816,14 +1816,14 @@
           "metin": "Hava durumunu"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Telefon, evinden farklı bir saat dilimini gösteriyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 3,
-      "metin": "Leyla'nın bu sözüne göre bir topluluk hakkında ne yapılmalıdır?",
+      "metin": "Yoldaşın bu sözüne göre bir topluluk hakkında ne yapılmalıdır?",
       "secenekler": [
         {
           "id": "A",
@@ -1831,45 +1831,45 @@
         },
         {
           "id": "B",
-          "metin": "Tek bir akşama bakılarak hüküm verilmelidir"
+          "metin": "Topluluğun alışkanlıkları gözlemlenmeden yorum yapılmamalıdır"
         },
         {
           "id": "C",
-          "metin": "Topluluğun alışkanlıkları gözlemlenmeden yorum yapılmamalıdır"
+          "metin": "Tek bir akşama bakılarak hüküm verilmelidir"
         },
         {
           "id": "D",
           "metin": "Topluluk hakkında hiç konuşulmamalıdır"
         }
       ],
-      "dogru": "C",
+      "dogru": "B",
       "aciklama": "Bir topluluğun alışkanlığı tek bir olaydan anlaşılamaz; gözlem ve kaynak gerekir."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 4,
-      "metin": "Ada'nın vardığı sonuç nedir?",
+      "metin": "Kahramanın vardığı sonuç nedir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tek bir deneyimi bütün bir topluma genellememek gerektiği"
-        },
-        {
-          "id": "B",
           "metin": "Her deneyimin toplumu temsil ettiği"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yolculukların hiçbir öğretici yanı olmadığı"
+        },
+        {
+          "id": "C",
+          "metin": "Tek bir deneyimi bütün bir topluma genellememek gerektiği"
         },
         {
           "id": "D",
           "metin": "Her kentin aynı olduğu"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Ada, bir deneyimin bütün topluma ait bir özellik gibi anlatılamayacağını fark eder."
+      "dogru": "C",
+      "aciklama": "Kahraman, bir deneyimin bütün topluma ait bir özellik gibi anlatılamayacağını fark eder."
     },
     {
       "id": "s4",
@@ -1879,48 +1879,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir sözcüğün kullanıldığı durum ve çevre"
-        },
-        {
-          "id": "B",
           "metin": "Bir yolculuğun uzunluğu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir ürünün fiyatı"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Bir kitabın sayfa sayısı"
+        },
+        {
+          "id": "D",
+          "metin": "Bir sözcüğün kullanıldığı durum ve çevre"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Bağlam, bir sözcüğün ya da ifadenin hangi durumda kullanıldığını anlatır."
     },
     {
       "id": "s5",
       "beceri": "degerlendirme",
       "dayanak_sayfa": 18,
-      "metin": "Leyla'nın sözüne göre Ada'nın doğru tutumu nedir?",
+      "metin": "Yoldaşın sözüne göre kahramanın doğru tutumu nedir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Her şeyi tek başına üstlenmek"
+          "metin": "Sorumluluğunu kabul etmek, ama her şeyi tek başına yüklenmemek"
         },
         {
           "id": "B",
-          "metin": "Hiçbir sorumluluk almamak"
+          "metin": "Her şeyi tek başına üstlenmek"
         },
         {
           "id": "C",
-          "metin": "Sorumluluğunu kabul etmek, ama her şeyi tek başına yüklenmemek"
+          "metin": "Hiçbir sorumluluk almamak"
         },
         {
           "id": "D",
           "metin": "Yanlışı başkasına yüklemek"
         }
       ],
-      "dogru": "C",
+      "dogru": "A",
       "aciklama": "Sorumluluğu kabul etmek önemlidir; ancak bütün suçu tek başına taşımak gerekmez."
     }
   ],

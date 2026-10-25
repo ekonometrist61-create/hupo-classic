@@ -771,41 +771,41 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Ece sabah otelin terasında neyi sayıyordu?",
+      "metin": "Kahraman sabah otelin terasında neyi sayıyordu?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Balonları"
-        },
-        {
-          "id": "B",
           "metin": "Kuşları"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Arabaları"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kayaları"
+        },
+        {
+          "id": "D",
+          "metin": "Balonları"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Ece, gökyüzündeki balonları sayıyordu."
+      "dogru": "D",
+      "aciklama": "Kahraman, gökyüzündeki balonları sayıyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 3,
-      "metin": "Ece, paralel oyukların gizli geçit olduğunu neden hemen kabul etmedi?",
+      "metin": "Kahraman, paralel oyukların gizli geçit olduğunu neden hemen kabul etmedi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Her oyuğun bir kapı olmadığını, doğal bir iz de olabileceğini düşündüğü için"
+          "metin": "Oyukların çok derin olduğunu"
         },
         {
           "id": "B",
-          "metin": "Oyukların çok derin olduğunu"
+          "metin": "Her oyuğun bir kapı olmadığını, doğal bir iz de olabileceğini düşündüğü için"
         },
         {
           "id": "C",
@@ -816,8 +816,8 @@
           "metin": "Kayanın çok sıcak olduğunu"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Ece, bir izin kapı olup olmadığını kanıtlamadan karar vermek istemedi."
+      "dogru": "B",
+      "aciklama": "Kahraman, bir izin kapı olup olmadığını kanıtlamadan karar vermek istemedi."
     },
     {
       "id": "s3",
@@ -853,22 +853,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Rüzgâr ve suyun yüzeyi yavaş yavaş aşındırıp inceltmesi"
-        },
-        {
-          "id": "B",
           "metin": "Bir yere boya sürmek"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Hızla koşmak"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kaya kırmak"
+        },
+        {
+          "id": "D",
+          "metin": "Rüzgâr ve suyun yüzeyi yavaş yavaş aşındırıp inceltmesi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Aşındırmak, etkenlerin bir yüzeyi zamanla eritip incelttiği anlamına gelir."
     }
   ],

@@ -1471,29 +1471,29 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Perşembe gecesi"
-        },
-        {
-          "id": "B",
           "metin": "Pazar sabahı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Cuma öğleden sonra"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Salı akşamı"
+        },
+        {
+          "id": "D",
+          "metin": "Perşembe gecesi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Metinde ilk gölge perşembe gecesi duvarda belirmişti."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 11,
-      "metin": "Nil'e göre iki olayın aynı saatte gerçekleşmesi ne anlama gelir?",
+      "metin": "Kahramana göre iki olayın aynı saatte gerçekleşmesi ne anlama gelir?",
       "secenekler": [
         {
           "id": "A",
@@ -1501,19 +1501,19 @@
         },
         {
           "id": "B",
-          "metin": "Olaylar tesadüfen de aynı saatte olabilir ve bu tek başına neden değildir"
+          "metin": "Gölge gerçekten bir insandır"
         },
         {
           "id": "C",
-          "metin": "Gölge gerçekten bir insandır"
+          "metin": "Olaylar tesadüfen de aynı saatte olabilir ve bu tek başına neden değildir"
         },
         {
           "id": "D",
           "metin": "Işıklar bozuk olduğunda gölge görünür"
         }
       ],
-      "dogru": "B",
-      "aciklama": "Nil, aynı saatte olmanın neden-sonuç ilişkisini tek başına kanıtlamadığını söyler."
+      "dogru": "C",
+      "aciklama": "Kahraman, aynı saatte olmanın neden-sonuç ilişkisini tek başına kanıtlamadığını söyler."
     },
     {
       "id": "s3",
@@ -1523,22 +1523,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hayal kurmak tek başına sorun değildir; sorun hayali kanıt gibi sunmaktır"
-        },
-        {
-          "id": "B",
           "metin": "Hayal kurmak her zaman yanlıştır"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Hayal kurmak ile kanıt aynı şeydir"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Hayal kurmanın hiçbir değeri yoktur"
+        },
+        {
+          "id": "D",
+          "metin": "Hayal kurmak tek başına sorun değildir; sorun hayali kanıt gibi sunmaktır"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Masal ve hayal kurmak sorun değildir; hayal ürününü kanıt gibi sunmak sorundur."
     },
     {
@@ -1575,22 +1575,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İlgi çekici bir iddia, doğru olduğu anlamına gelmez"
-        },
-        {
-          "id": "B",
           "metin": "İlgi çeken her iddia doğrudur"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kanıta gerek yoktur"
+        },
+        {
+          "id": "C",
+          "metin": "İlgi çekici bir iddia, doğru olduğu anlamına gelmez"
         },
         {
           "id": "D",
           "metin": "Gölgeler hakkında konuşmak yasaktır"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Son slayt, ilgi çekici bir iddianın doğrulanması için kanıt gerektiğini söyler."
     }
   ],

@@ -1321,37 +1321,37 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "1984'te İlk Mezunlarımız"
-        },
-        {
-          "id": "B",
           "metin": "2001 Kutlama"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Eski Postane"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Okul Yıllığı"
+        },
+        {
+          "id": "D",
+          "metin": "1984'te İlk Mezunlarımız"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Fotoğrafın altında “1984'te İlk Mezunlarımız” yazıyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 3,
-      "metin": "Ada neden Ekin'in birkaç adım geri gelmesini istedi?",
+      "metin": "Yoldaş neden kahramanın birkaç adım geri gelmesini istedi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kadrajın tamamını görüp arka plandaki binaları fark etmek için"
+          "metin": "Fotoğrafı silmek için"
         },
         {
           "id": "B",
-          "metin": "Fotoğrafı silmek için"
+          "metin": "Kadrajın tamamını görüp arka plandaki binaları fark etmek için"
         },
         {
           "id": "C",
@@ -1362,33 +1362,33 @@
           "metin": "Dedesini aramak için"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Yakından bakınca arka plandaki ayrıntılar kaçıyordu."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 2,
-      "metin": "Ekin'in fark ettiği şey nedir?",
+      "metin": "Kahramanın fark ettiği şey nedir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir fotoğrafın var olması, altındaki her bilginin doğru olduğunu göstermez"
-        },
-        {
-          "id": "B",
           "metin": "Eski fotoğrafların hiç kullanılmaması gerektiği"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Fotoğrafların hep yanlış tarihlendiği"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Sergide hiçbir bilginin doğru olmadığı"
+        },
+        {
+          "id": "D",
+          "metin": "Bir fotoğrafın var olması, altındaki her bilginin doğru olduğunu göstermez"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Belge var olsa da üzerindeki açıklama ayrıca sınanmalıdır."
     },
     {
@@ -1399,22 +1399,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Posta ya da belge üzerine basılan iz ya da işaret"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür kuş"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir sergi duvarı"
+        },
+        {
+          "id": "C",
+          "metin": "Posta ya da belge üzerine basılan iz ya da işaret"
         },
         {
           "id": "D",
           "metin": "Bir fotoğraf çerçevesi"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Damga, posta üzerine basılan ve çoğu zaman tarih taşıyan iz dir."
     }
   ],

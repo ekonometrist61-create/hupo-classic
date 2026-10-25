@@ -1087,22 +1087,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Temizlik sırasında"
-        },
-        {
-          "id": "B",
           "metin": "Deprem"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Hırsızlık"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Yeni raf yapımı"
+        },
+        {
+          "id": "D",
+          "metin": "Temizlik sırasında"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Fikret Bey, değişikliğin temizlik sırasında olabileceğini söylemişti."
     },
     {
@@ -1135,15 +1135,15 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 4,
-      "metin": "Nisan'ın bu sözüne göre aynı olayın farklı anlatılması neyi gösterir?",
+      "metin": "Yoldaşın bu sözüne göre aynı olayın farklı anlatılması neyi gösterir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Farklı bakış açılarının olması, birinin kötü olduğu anlamına gelmez"
+          "metin": "Karakterlerden biri kesinlikle kötüdür"
         },
         {
           "id": "B",
-          "metin": "Karakterlerden biri kesinlikle kötüdür"
+          "metin": "Farklı bakış açılarının olması, birinin kötü olduğu anlamına gelmez"
         },
         {
           "id": "C",
@@ -1154,7 +1154,7 @@
           "metin": "Anlatıcılar birbirine kızgındır"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Farklı anlatımlar, olayın farklı yönlerden görülmesinden kaynaklanabilir."
     },
     {
@@ -1165,22 +1165,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir yapıtı oluşturan parçalar, unsurlar"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür raf"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir çeşit lamba"
+        },
+        {
+          "id": "C",
+          "metin": "Bir yapıtı oluşturan parçalar, unsurlar"
         },
         {
           "id": "D",
           "metin": "Bir oyun kartı"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Öge, bir yapıtın bileşenlerinden biridir."
     }
   ],

@@ -1015,22 +1015,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "On bir kırk iki"
-        },
-        {
-          "id": "B",
           "metin": "On iki"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Dokuz kırk"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "On bir otuz"
+        },
+        {
+          "id": "D",
+          "metin": "On bir kırk iki"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Ekranlar tam on bir kırk ikide birer birer karardı."
     },
     {
@@ -1041,37 +1041,37 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Laboratuvarın ışıkları yanmaya devam ediyordu ve diğer sınıfların bilgisayarları kapanmıyordu"
-        },
-        {
-          "id": "B",
           "metin": "Işıklar hiç çalışmıyordu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bilgisayarlar çok yeniydi"
+        },
+        {
+          "id": "C",
+          "metin": "Laboratuvarın ışıkları yanmaya devam ediyordu ve diğer sınıfların bilgisayarları kapanmıyordu"
         },
         {
           "id": "D",
           "metin": "Sınıfta kimse yoktu"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Elektrik kesintisi olsaydı ışıklar da sönerdi; diğer sınıflar da etkilenirdi."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 7,
-      "metin": "Kerem'in bu cümlesi neyi anlatır?",
+      "metin": "Kahramanın bu cümlesi neyi anlatır?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "İki olayın aynı zamanda olması, birinin diğerinin nedeni olduğunu kanıtlamaz"
+          "metin": "Olaylar hiç birlikte olmaz"
         },
         {
           "id": "B",
-          "metin": "Olaylar hiç birlikte olmaz"
+          "metin": "İki olayın aynı zamanda olması, birinin diğerinin nedeni olduğunu kanıtlamaz"
         },
         {
           "id": "C",
@@ -1082,7 +1082,7 @@
           "metin": "Her olay aynı nedenden doğar"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Zamansal birliktelik nedensellik için yeterli kanıt değildir."
     },
     {

@@ -835,22 +835,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Ayçiçeklerinin"
-        },
-        {
-          "id": "B",
           "metin": "Domateslerin"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Biberlerin"
+        },
+        {
+          "id": "C",
+          "metin": "Ayçiçeklerinin"
         },
         {
           "id": "D",
           "metin": "Çimlerin"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Bu yıl ayçiçeklerinin yarısı eskisi kadar büyümemişti."
     },
     {
@@ -861,11 +861,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir bitkinin gelişmesi birçok etkene bağlı olduğu için"
+          "metin": "Bahçe çok küçük olduğu için"
         },
         {
           "id": "B",
-          "metin": "Bahçe çok küçük olduğu için"
+          "metin": "Bir bitkinin gelişmesi birçok etkene bağlı olduğu için"
         },
         {
           "id": "C",
@@ -876,14 +876,14 @@
           "metin": "Selin'in sorusu olmadığı için"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Toprak, su, ışık ve başka etkenler birlikte etkili olabilir."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 8,
-      "metin": "Selin'in öğrendiği ders neydi?",
+      "metin": "Kahramanın öğrendiği ders neydi?",
       "secenekler": [
         {
           "id": "A",
@@ -913,22 +913,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Çiçeklerdeki tatlı sıvı"
-        },
-        {
-          "id": "B",
           "metin": "Bir tür arı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir kovan"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Bir oyun kartı"
+        },
+        {
+          "id": "D",
+          "metin": "Çiçeklerdeki tatlı sıvı"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Nektar, arıların çiçeklerden topladığı tatlı sıvıdır."
     }
   ],

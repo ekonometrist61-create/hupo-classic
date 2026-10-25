@@ -317,22 +317,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İki kardeş"
-        },
-        {
-          "id": "B",
           "metin": "Öğretmen ve öğrenci"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Görevli ve teyze"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Üç arkadaş"
+        },
+        {
+          "id": "D",
+          "metin": "İki kardeş"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Eylül ve Can, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."
     },
     {
@@ -343,22 +343,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Mesajın kopyası güvende olduğu için bağlantının yeniden kurulmasını bekledi"
-        },
-        {
-          "id": "B",
           "metin": "Mektubu çöpe attı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Hemen Ay'a gönderdi"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kâğıdı yaktı"
+        },
+        {
+          "id": "D",
+          "metin": "Mesajın kopyası güvende olduğu için bağlantının yeniden kurulmasını bekledi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Görevli, mesajın kopyasının güvende olduğunu bildiği için önce bağlantıyı bekledi."
     },
     {
@@ -369,22 +369,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İletişimin birçok aşaması ve dikkat gerektiren adımları olduğunu"
-        },
-        {
-          "id": "B",
           "metin": "İletişimin çok kolay olduğunu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Mektubun hiç gitmediğini"
+        },
+        {
+          "id": "C",
+          "metin": "İletişimin birçok aşaması ve dikkat gerektiren adımları olduğunu"
         },
         {
           "id": "D",
           "metin": "Ayın yakın olduğunu"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Mesaj, kopyalanma, parçalama ve doğrulama gibi adımlardan geçiyordu."
     },
     {
@@ -395,11 +395,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir şeyin küçültülmüş modeli"
+          "metin": "Bir tür mektup"
         },
         {
           "id": "B",
-          "metin": "Bir tür mektup"
+          "metin": "Bir şeyin küçültülmüş modeli"
         },
         {
           "id": "C",
@@ -410,7 +410,7 @@
           "metin": "Bir ekran"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Maket, gerçek bir şeyin küçültülmüş modelidir."
     }
   ],

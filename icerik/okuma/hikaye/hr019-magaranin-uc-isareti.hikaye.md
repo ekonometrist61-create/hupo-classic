@@ -34,7 +34,7 @@ etiketler:
   program_surumu: "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "Deniz üçüncü işaretin ne olduğunu düşündü?", secenekler: [{id: A, metin: "Bir hazine"}, {id: B, metin: "İki göz"}, {id: C, metin: "Bir nehir"}], dogru: B, aciklama: "Deniz, iki yan yana daireyi iki göz sanmıştı."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "Yoldaş üçüncü işaretin ne olduğunu düşündü?", secenekler: [{id: A, metin: "Bir hazine"}, {id: B, metin: "İki göz"}, {id: C, metin: "Bir nehir"}], dogru: B, aciklama: "Yoldaş, iki yan yana daireyi iki göz sanmıştı."}
   - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Üçüncü işaret neden bir insan izi değildi?", secenekler: [{id: A, metin: "Yeni çizilmiş bir resimdi"}, {id: B, metin: "Hazinenin haritasıydı"}, {id: C, metin: "Kayanın içindeki doğal bir boşluktu"}], dogru: C, aciklama: "Daireler kayadaki doğal yuvarlak boşluklardı."}
   - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Rehbere göre en önemli şey nedir?", secenekler: [{id: A, metin: "Hiç tahmin yürütmemek"}, {id: B, metin: "Yeni bilgi geldiğinde düşüncesini değiştirebilmek"}, {id: C, metin: "Mağaraya hemen girmek"}], dogru: B, aciklama: "Tahmin etmek serbesttir; yeni bilgi gelince düşünceyi güncellemek önemlidir."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen büyüteç ne işe yarar?", secenekler: [{id: A, metin: "Kayaları kırmaya"}, {id: B, metin: "Haritayı çizmeye"}, {id: C, metin: "Küçük şeyleri büyütüp daha iyi görmeye"}], dogru: C, aciklama: "Büyüteç, küçük ayrıntıları büyüterek gösteren bir araçtır."}

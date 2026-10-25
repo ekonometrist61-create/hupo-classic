@@ -780,11 +780,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Üç kırık parça, bir fırça ve bir kart"
+          "metin": "Altın ve mücevher"
         },
         {
           "id": "B",
-          "metin": "Altın ve mücevher"
+          "metin": "Üç kırık parça, bir fırça ve bir kart"
         },
         {
           "id": "C",
@@ -795,7 +795,7 @@
           "metin": "Bir defter"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kutuda üç kırık parça, bir fırça ve tek satırlık bir kart vardı."
     },
     {
@@ -806,11 +806,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Parçaların kenar biçimlerinin karşılaştırılması"
+          "metin": "Parçaların ağırlığı"
         },
         {
           "id": "B",
-          "metin": "Parçaların ağırlığı"
+          "metin": "Parçaların kenar biçimlerinin karşılaştırılması"
         },
         {
           "id": "C",
@@ -821,7 +821,7 @@
           "metin": "Kutunun boyu"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kenar biçimleri, parçaların bütün içindeki yerini belirlemeye yardım etti."
     },
     {
@@ -832,22 +832,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Simetri güçlü bir araçtır ama her güzel desen simetrik olmak zorunda değildir"
-        },
-        {
-          "id": "B",
           "metin": "Her desen simetrik olmalıdır"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Simetri hiç kullanılmamalıdır"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Desenler yalnızca renkle yapılır"
+        },
+        {
+          "id": "D",
+          "metin": "Simetri güçlü bir araçtır ama her güzel desen simetrik olmak zorunda değildir"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Simetri bir araçtır; tasarımın amacına göre serbest bırakılan alanlar da olabilir."
     },
     {
@@ -858,22 +858,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Etrafı yapılarla çevrili açık alan"
-        },
-        {
-          "id": "B",
           "metin": "Bir çini türü"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir yıldız"
+        },
+        {
+          "id": "C",
+          "metin": "Etrafı yapılarla çevrili açık alan"
         },
         {
           "id": "D",
           "metin": "Bir kâğıt"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Avlu, bir yapının çevresinde kalan açık alandır."
     }
   ],

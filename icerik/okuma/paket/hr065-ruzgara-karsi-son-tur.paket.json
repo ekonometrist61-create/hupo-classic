@@ -524,11 +524,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hızı durumuna uygun ve sürdürülebilir biçimde ayarlamak"
+          "metin": "Her zaman en hızlı koşmak"
         },
         {
           "id": "B",
-          "metin": "Her zaman en hızlı koşmak"
+          "metin": "Hızı durumuna uygun ve sürdürülebilir biçimde ayarlamak"
         },
         {
           "id": "C",
@@ -539,7 +539,7 @@
           "metin": "Yalnızca yavaş yürümek"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Tempo, koşunun hızını ve düzenini duruma göre ayarlamaktır."
     },
     {
@@ -550,22 +550,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Egzersizden önce vücudu hazırlayan hafif hareketler"
-        },
-        {
-          "id": "B",
           "metin": "Yarış çizgisi"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir tür rüzgâr"
+        },
+        {
+          "id": "C",
+          "metin": "Egzersizden önce vücudu hazırlayan hafif hareketler"
         },
         {
           "id": "D",
           "metin": "Su içmek"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Isınma, egzersizden önce kası ve eklemleri hazırlayan hafif harekettir."
     }
   ],

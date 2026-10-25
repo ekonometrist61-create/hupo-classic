@@ -565,22 +565,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Güçlü ve korkmaz olduğunu"
-        },
-        {
-          "id": "B",
           "metin": "Yarışı kazandığını"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Toy için hazırlandığını"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Her gün ormana gittiğini"
+        },
+        {
+          "id": "D",
+          "metin": "Güçlü ve korkmaz olduğunu"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Adı anıldığında hep \"Boğaç güçlüdür. Boğaç korkmaz.\" sözünü duyuyordu."
     },
     {
@@ -591,11 +591,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Sandığı kimin getirdiği belli değildi"
+          "metin": "Sandık çok ağırdı"
         },
         {
           "id": "B",
-          "metin": "Sandık çok ağırdı"
+          "metin": "Sandığı kimin getirdiği belli değildi"
         },
         {
           "id": "C",
@@ -606,7 +606,7 @@
           "metin": "Sandığın çok eski olduğunu"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Sandığın bulunması bir bulgudur; kimin getirdiğini kanıtlamaz."
     },
     {
@@ -643,22 +643,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kervanı yöneten, yolculuğu düzenleyen kişiyi"
-        },
-        {
-          "id": "B",
           "metin": "Toy şenliğini izleyen çocuğu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kilim dokuyan ustayı"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Atlarına bakan çocuğu"
+        },
+        {
+          "id": "D",
+          "metin": "Kervanı yöneten, yolculuğu düzenleyen kişiyi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Kervanbaşı, kervanı yöneten kişidir; bu metinde Kara Turgut'tur."
     }
   ],

@@ -1219,18 +1219,18 @@
         },
         {
           "id": "B",
-          "metin": "Neyi yaptığını ve neyi yapmadığını"
-        },
-        {
-          "id": "C",
           "metin": "Yalnızca kazandığı ödülleri"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Takımların adlarını"
+        },
+        {
+          "id": "D",
+          "metin": "Neyi yaptığını ve neyi yapmadığını"
         }
       ],
-      "dogru": "B",
+      "dogru": "D",
       "aciklama": "Nisan'a göre iyi proje, neyi yaptığını ve neyi yapmadığını açıklayan projedir."
     },
     {
@@ -1241,22 +1241,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir bilgiyi kısaca ifade eden işaret ya da ad"
-        },
-        {
-          "id": "B",
           "metin": "Bilgisayar programı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir ödül belgesi"
+        },
+        {
+          "id": "C",
+          "metin": "Bir bilgiyi kısaca ifade eden işaret ya da ad"
         },
         {
           "id": "D",
           "metin": "Bir sergi salonu"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Bu bağlamda kod, bir güzergâhı kısaca gösteren işaret ya da addır."
     },
     {
@@ -1267,11 +1267,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kusursuz bir ürün sunmayı"
+          "metin": "Projenin sınırlarını dürüstçe açıklamayı"
         },
         {
           "id": "B",
-          "metin": "Projenin sınırlarını dürüstçe açıklamayı"
+          "metin": "Kusursuz bir ürün sunmayı"
         },
         {
           "id": "C",
@@ -1282,7 +1282,7 @@
           "metin": "Jürinin beğenisini kazanmak için iddialı konuşmayı"
         }
       ],
-      "dogru": "B",
+      "dogru": "A",
       "aciklama": "Öğrenciler, projenin neyi yapıp neyi yapamadığını açıkça göstermeyi seçmiştir."
     }
   ],

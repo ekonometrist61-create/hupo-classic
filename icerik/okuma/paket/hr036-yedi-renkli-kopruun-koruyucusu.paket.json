@@ -406,15 +406,15 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 4,
-      "metin": "Defne'nin “cesaret korkmamak değilmiş” sözü ne anlatır?",
+      "metin": "Kahramanın “cesaret korkmamak değilmiş” sözü ne anlatır?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Cesaretin korkuyu fark edip doğru davranmak olduğunu"
+          "metin": "Hiç korkmamak gerektiğini"
         },
         {
           "id": "B",
-          "metin": "Hiç korkmamak gerektiğini"
+          "metin": "Cesaretin korkuyu fark edip doğru davranmak olduğunu"
         },
         {
           "id": "C",
@@ -425,7 +425,7 @@
           "metin": "Mert'in yanına gitmeyi"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Defne, korkuyu fark edip güvenli bir biçimde davranmanın cesaret olduğunu anladı."
     },
     {
@@ -436,22 +436,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Düşmeyi önlemek için köprü kenarına konan parmaklık"
-        },
-        {
-          "id": "B",
           "metin": "Bir çeşit korku filmi"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Korkak bir kişi"
+        },
+        {
+          "id": "C",
+          "metin": "Düşmeyi önlemek için köprü kenarına konan parmaklık"
         },
         {
           "id": "D",
           "metin": "Bir köprü türü"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Korkuluk, köprünün kenarında düşmeyi engelleyen parmaklıktır."
     }
   ],

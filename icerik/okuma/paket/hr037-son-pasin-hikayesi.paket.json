@@ -425,41 +425,41 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Kerem maçtan önce ne yaptı?",
+      "metin": "Kahraman maçtan önce ne yaptı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bağcıklarını üçüncü kez bağladı"
-        },
-        {
-          "id": "B",
           "metin": "Top çalıştı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kaptanla konuştu"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kupayı aldı"
+        },
+        {
+          "id": "D",
+          "metin": "Bağcıklarını üçüncü kez bağladı"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Kerem, bağcıklarını üçüncü kez bağlayarak maça hazırlandı."
+      "dogru": "D",
+      "aciklama": "Kahraman, bağcıklarını üçüncü kez bağlayarak maça hazırlandı."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Kerem ilk yarıda neden gol atamadı?",
+      "metin": "Kahraman ilk yarıda neden gol atamadı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Boşta bekleyen arkadaşını fark etmedi ve şutları engellendi"
+          "metin": "Kalecinin çok iyi olduğu için"
         },
         {
           "id": "B",
-          "metin": "Kalecinin çok iyi olduğu için"
+          "metin": "Boşta bekleyen arkadaşını fark etmedi ve şutları engellendi"
         },
         {
           "id": "C",
@@ -470,8 +470,8 @@
           "metin": "Topu kaybettiği için"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Kerem, boşta bekleyen arkadaşını görmediği için pas vermedi, şutları da engellendi."
+      "dogru": "B",
+      "aciklama": "Kahraman, boşta bekleyen arkadaşını görmediği için pas vermedi, şutları da engellendi."
     },
     {
       "id": "s3",
@@ -481,22 +481,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir kişinin parlaması değil, herkesin birbirinin ışığını artırması"
-        },
-        {
-          "id": "B",
           "metin": "Yalnız en çok gol atan oyuncu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Tek başına oynamak"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Rakibi yenmek"
+        },
+        {
+          "id": "D",
+          "metin": "Bir kişinin parlaması değil, herkesin birbirinin ışığını artırması"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Takım, herkesin birbirini desteklediği bir yapıdır."
     },
     {
@@ -507,22 +507,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Rakip takımın topu kaleye ulaştırmamaya çalışan oyuncuları"
-        },
-        {
-          "id": "B",
           "metin": "Bir çeşit şut"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kalenin rengi"
+        },
+        {
+          "id": "C",
+          "metin": "Rakip takımın topu kaleye ulaştırmamaya çalışan oyuncuları"
         },
         {
           "id": "D",
           "metin": "Hakemin düdüğü"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Savunma, rakibin hücumunu durdurmaya çalışan oyuncular ve bu görevdir."
     }
   ],

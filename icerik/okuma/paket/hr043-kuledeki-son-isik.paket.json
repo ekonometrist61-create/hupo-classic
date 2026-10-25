@@ -515,29 +515,29 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yenilenen bir anten"
-        },
-        {
-          "id": "B",
           "metin": "Kırık bir pencere"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Büyük bir balon"
+        },
+        {
+          "id": "C",
+          "metin": "Yenilenen bir anten"
         },
         {
           "id": "D",
           "metin": "Eski bir saat"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Nehir, tepede yenilenmiş bir anten görmüştü."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Emir'in gizli haberleşme fikri neden zayıfladı?",
+      "metin": "Yoldaşın gizli haberleşme fikri neden zayıfladı?",
       "secenekler": [
         {
           "id": "A",
@@ -567,22 +567,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Sıcaklık, basınç, nem ve rüzgâr gibi verilerin birlikte değerlendirilmesi"
-        },
-        {
-          "id": "B",
           "metin": "Yalnızca bulutlara bakmak"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Gelecekte olacak her olayı kesin bilmek"
+        },
+        {
+          "id": "C",
+          "metin": "Sıcaklık, basınç, nem ve rüzgâr gibi verilerin birlikte değerlendirilmesi"
         },
         {
           "id": "D",
           "metin": "Yalnızca termometre okumak"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Tahmin, birçok verinin birlikte yorumlanmasıdır ve bir kesinlik derecesi taşır."
     },
     {
@@ -593,11 +593,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kısa süreli, şiddetli yağmur"
+          "metin": "Çok sıcak bir rüzgâr"
         },
         {
           "id": "B",
-          "metin": "Çok sıcak bir rüzgâr"
+          "metin": "Kısa süreli, şiddetli yağmur"
         },
         {
           "id": "C",
@@ -608,7 +608,7 @@
           "metin": "Kar fırtınası"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Sağanak, aniden başlayıp kısa süren şiddetli yağmurdur."
     }
   ],

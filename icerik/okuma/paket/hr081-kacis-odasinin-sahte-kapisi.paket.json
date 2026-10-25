@@ -1024,22 +1024,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yanıltıcı bir işaret, bütün işaretlerin yanlış olduğu anlamına gelmez"
-        },
-        {
-          "id": "B",
           "metin": "Mavi işaretler her zaman doğrudur"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "İşaretler hiç kullanılmamalıdır"
+        },
+        {
+          "id": "C",
+          "metin": "Yanıltıcı bir işaret, bütün işaretlerin yanlış olduğu anlamına gelmez"
         },
         {
           "id": "D",
           "metin": "Haritalar tamamen yanlıştır"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Bir işaretin yanıltıcı olması, diğer işaretlerin de yanıltıcı olduğu anlamına gelmez."
     },
     {
@@ -1050,11 +1050,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Çelişen ifadelerden biri mutlaka yalan olmak zorunda değildir; koşullar farklı olabilir"
+          "metin": "Tanıklar hep yalan söyler"
         },
         {
           "id": "B",
-          "metin": "Tanıklar hep yalan söyler"
+          "metin": "Çelişen ifadelerden biri mutlaka yalan olmak zorunda değildir; koşullar farklı olabilir"
         },
         {
           "id": "C",
@@ -1065,7 +1065,7 @@
           "metin": "Yalnız ilk tanıklık doğrudur"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Tanıklıklar farklı dakikalara ve farklı ışık koşullarına aitti."
     },
     {

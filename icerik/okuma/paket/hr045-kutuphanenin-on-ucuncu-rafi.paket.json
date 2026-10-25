@@ -772,11 +772,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "On üçüncü raf"
+          "metin": "On dördüncü raf"
         },
         {
           "id": "B",
-          "metin": "On dördüncü raf"
+          "metin": "On üçüncü raf"
         },
         {
           "id": "C",
@@ -787,33 +787,33 @@
           "metin": "On ikinci raf"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Raf 12'den sonra Raf 14 geliyordu; arada on üçüncü raf yoktu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 4,
-      "metin": "Nil ile Ferit neden kitabın künyesine de baktı?",
+      "metin": "Yoldaş ile Ferit neden kitabın künyesine de baktı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Aynı kitabın farklı yazılmış iki kaydı olabileceği için"
-        },
-        {
-          "id": "B",
           "metin": "Kitaplar çok ağır olduğu için"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Künye renkli olduğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Aynı kitabın farklı yazılmış iki kaydı olabileceği için"
         },
         {
           "id": "D",
           "metin": "Sevim Hanım istediği için"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Farklı yazımlar, farklı kitapları ya da aynı kitabı iki kez gösterebilirdi."
     },
     {
@@ -850,11 +850,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Birine geçici olarak bırakılan şey"
+          "metin": "Kalıcı olarak satılan şey"
         },
         {
           "id": "B",
-          "metin": "Kalıcı olarak satılan şey"
+          "metin": "Birine geçici olarak bırakılan şey"
         },
         {
           "id": "C",
@@ -865,7 +865,7 @@
           "metin": "Okulun bahçesi"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Emanet, sahibinden geçici olarak başkasına bırakılan şeydir."
     }
   ],

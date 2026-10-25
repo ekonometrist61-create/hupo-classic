@@ -841,22 +841,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Aynada kendi davranışını görüp dürüst olmayı seçtiği için"
-        },
-        {
-          "id": "B",
           "metin": "Anahtarın altın olduğu için"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Bir yarasa ona verdiği için"
+        },
+        {
+          "id": "C",
+          "metin": "Aynada kendi davranışını görüp dürüst olmayı seçtiği için"
         },
         {
           "id": "D",
           "metin": "Tüccar ona yüzük verdiği için"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Aynada annesinin yüzünü gören Keloğlan, dürüst olmanın anahtarını hak ettiğini anladı."
     },
     {
@@ -867,11 +867,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Herkese eşit bölmek değil, ihtiyacı görmek"
+          "metin": "Hiç vermemek"
         },
         {
           "id": "B",
-          "metin": "Hiç vermemek"
+          "metin": "Herkese eşit bölmek değil, ihtiyacı görmek"
         },
         {
           "id": "C",
@@ -882,7 +882,7 @@
           "metin": "Yalnızca yemek yemek"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Paylaşmak, herkesin ihtiyacını dikkate almayı da içerir."
     },
     {

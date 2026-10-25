@@ -1524,18 +1524,18 @@
         },
         {
           "id": "B",
-          "metin": "Orada yeterli ölçümün olmayabileceğini"
+          "metin": "Haritanın tamamen yanlış olduğunu"
         },
         {
           "id": "C",
-          "metin": "Haritanın tamamen yanlış olduğunu"
+          "metin": "Orada yeterli ölçümün olmayabileceğini"
         },
         {
           "id": "D",
           "metin": "Orada buzun kesin olarak eridiğini"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Boşluk, yeterli ölçüm olmadığını gösterebilir; doğada bir şeyin yokluğunu kanıtlamaz."
     },
     {
@@ -1602,18 +1602,18 @@
         },
         {
           "id": "B",
-          "metin": "Güncel bilgiye dayanmak, kuralları izlemek ve gerekçeyi açıklamak"
+          "metin": "Herkesin fikrini aynı anda kabul etmek"
         },
         {
           "id": "C",
-          "metin": "Herkesin fikrini aynı anda kabul etmek"
+          "metin": "Güncel bilgiye dayanmak, kuralları izlemek ve gerekçeyi açıklamak"
         },
         {
           "id": "D",
           "metin": "Sonuçtan hiç söz etmemek"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Lina, güncel bilgiye dayanan, kuralları izleyen ve gerekçesi açıklanan kararların değerlendirilebileceğini söyler."
     }
   ],
@@ -1637,14 +1637,6 @@
         "tur": "kelime",
         "yazim": "kayıt",
         "anlam": "Bir olay ya da ölçümün yazıya ya da veriye geçirilmiş hâli.",
-        "sinif_alt": 7,
-        "sinif_ust": 8
-      },
-      {
-        "id": "hr105_varsayim",
-        "tur": "kelime",
-        "yazim": "varsayım",
-        "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
         "sinif_alt": 7,
         "sinif_ust": 8
       },
@@ -1685,14 +1677,6 @@
         "tur": "kelime",
         "yazim": "hava durumu",
         "anlam": "Kısa süreli ve belirli bir yerdeki hava koşulları.",
-        "sinif_alt": 7,
-        "sinif_ust": 8
-      },
-      {
-        "id": "hr105_mevsim",
-        "tur": "kelime",
-        "yazim": "mevsim",
-        "anlam": "Yılın belirli bir dönemindeki genel hava ve doğa durumu.",
         "sinif_alt": 7,
         "sinif_ust": 8
       },
@@ -1755,9 +1739,6 @@
           },
           {
             "girdi": "hr105_kayit"
-          },
-          {
-            "girdi": "hr105_varsayim"
           }
         ]
       },
@@ -1785,9 +1766,6 @@
           },
           {
             "girdi": "hr105_hava_durumu"
-          },
-          {
-            "girdi": "hr105_mevsim"
           }
         ]
       },

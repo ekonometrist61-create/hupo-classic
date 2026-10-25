@@ -970,37 +970,37 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tahminle doldurmak, gerçek verinin yerini tutmaz ve yanıltır"
-        },
-        {
-          "id": "B",
           "metin": "Tahminler her zaman doğrudur"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Grafik güzel görünsün diye"
+        },
+        {
+          "id": "C",
+          "metin": "Tahminle doldurmak, gerçek verinin yerini tutmaz ve yanıltır"
         },
         {
           "id": "D",
           "metin": "Öğretmen istediği için"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Eksik veri için tahmin yürütmek grafiği gerçek olmayan bir tabloya dönüştürür."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 22,
-      "metin": "Faruk'un afişte suçlayıcı bir dil yerine tercih ettiği yaklaşım neydi?",
+      "metin": "Yoldaşın afişte suçlayıcı bir dil yerine tercih ettiği yaklaşım neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Gölü paylaşan canlıları ve ortak sorumluluğu gösteren davetkâr bir dil"
+          "metin": "Kocaman bir parmakla insanları suçlamak"
         },
         {
           "id": "B",
-          "metin": "Kocaman bir parmakla insanları suçlamak"
+          "metin": "Gölü paylaşan canlıları ve ortak sorumluluğu gösteren davetkâr bir dil"
         },
         {
           "id": "C",
@@ -1011,7 +1011,7 @@
           "metin": "Yalnızca resim kullanmak"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Çevreyi korumak için insanları suçlamak yerine ortak sorumluluğu anlatmak daha etkilidir."
     },
     {

@@ -566,22 +566,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hız değişiminin yerinin sorun olabileceğini"
-        },
-        {
-          "id": "B",
           "metin": "Sensörün kırık olduğunu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yarışın bittiğini"
+        },
+        {
+          "id": "C",
+          "metin": "Hız değişiminin yerinin sorun olabileceğini"
         },
         {
           "id": "D",
           "metin": "Okulun kapandığını"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Deniz, sorunun sensörden önce hız değişiminde olabileceğini düşündü."
     },
     {
@@ -618,11 +618,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Ortamdaki bir değişikliği algılayıp ölçen cihaz"
+          "metin": "Bir oyun kartı"
         },
         {
           "id": "B",
-          "metin": "Bir oyun kartı"
+          "metin": "Ortamdaki bir değişikliği algılayıp ölçen cihaz"
         },
         {
           "id": "C",
@@ -633,7 +633,7 @@
           "metin": "Bir kâğıt türü"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Sensör, hız, sıcaklık, mesafe gibi değişkenleri algılar."
     }
   ],

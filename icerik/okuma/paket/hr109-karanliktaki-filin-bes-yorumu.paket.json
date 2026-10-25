@@ -1318,15 +1318,15 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Lalin hangi kulüpteydi?",
+      "metin": "Kahraman hangi kulüpteydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Araştırma kulübü"
+          "metin": "Müzik kulübü"
         },
         {
           "id": "B",
-          "metin": "Müzik kulübü"
+          "metin": "Araştırma kulübü"
         },
         {
           "id": "C",
@@ -1337,8 +1337,8 @@
           "metin": "Spor kulübü"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Lalin, okulun araştırma kulübündeydi."
+      "dogru": "B",
+      "aciklama": "Kahraman, okulun araştırma kulübündeydi."
     },
     {
       "id": "s2",
@@ -1352,18 +1352,18 @@
         },
         {
           "id": "B",
-          "metin": "Gözleme dayanarak yapılan yorumun da doğru olmasını"
+          "metin": "Ölçümün kayıt altına alınmasını"
         },
         {
           "id": "C",
-          "metin": "Ölçümün kayıt altına alınmasını"
+          "metin": "Gözleme dayanarak yapılan yorumun da doğru olmasını"
         },
         {
           "id": "D",
           "metin": "Bir çizim yapılmasını"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Doğru bir gözlem, ondan çıkarılan yorumun da doğru olduğu anlamına gelmez."
     },
     {
@@ -1374,11 +1374,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Farklı görüşlere kulak vermek"
+          "metin": "Bütün iddiaları eşit derecede doğru saymak"
         },
         {
           "id": "B",
-          "metin": "Bütün iddiaları eşit derecede doğru saymak"
+          "metin": "Farklı görüşlere kulak vermek"
         },
         {
           "id": "C",
@@ -1389,7 +1389,7 @@
           "metin": "Yorumları birlikte değerlendirmek"
         }
       ],
-      "dogru": "B",
+      "dogru": "A",
       "aciklama": "Birbirini dinlemek, iddiaların hepsini eşit derecede doğru kabul etmek anlamına gelmez."
     },
     {
@@ -1426,22 +1426,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Eski çalışmayı tamamen siler"
+          "metin": "Eski çalışmayı silmez, ama gerektiğinde değiştirebilir"
         },
         {
           "id": "B",
-          "metin": "Eski çalışmayı bütünüyle değersiz kılar"
+          "metin": "Eski çalışmayı tamamen siler"
         },
         {
           "id": "C",
-          "metin": "Eski çalışmayı silmez, ama gerektiğinde değiştirebilir"
+          "metin": "Eski çalışmayı bütünüyle değersiz kılar"
         },
         {
           "id": "D",
           "metin": "Eski çalışmayla hiçbir ilgisi yoktur"
         }
       ],
-      "dogru": "C",
+      "dogru": "A",
       "aciklama": "Yeni bilgi eski çalışmayı değersiz kılmaz; ancak gerektiğinde onu değiştirebilir."
     }
   ],

@@ -261,22 +261,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kürküne"
-        },
-        {
-          "id": "B",
           "metin": "Kendisine"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Görevliye"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Zeynep'e"
+        },
+        {
+          "id": "D",
+          "metin": "Kürküne"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Hoca kürkünün kolunu kâseye uzatıp “Ye kürküm ye!” dedi."
     },
     {
@@ -287,11 +287,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kürkü görünce Hoca'yı önemli sandıkları için"
+          "metin": "Hoca çok acıkmıştı"
         },
         {
           "id": "B",
-          "metin": "Hoca çok acıkmıştı"
+          "metin": "Kürkü görünce Hoca'yı önemli sandıkları için"
         },
         {
           "id": "C",
@@ -302,7 +302,7 @@
           "metin": "Görevli Hoca'yı tanıyordu"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Efe, insanların Hoca'yı giysisine göre önemli sandığını söyledi."
     },
     {
@@ -339,22 +339,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Dikkat çekmek için süslü, gösterişe düşkün"
-        },
-        {
-          "id": "B",
           "metin": "Çok eski"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yavaş"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Küçük"
+        },
+        {
+          "id": "D",
+          "metin": "Dikkat çekmek için süslü, gösterişe düşkün"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Gösterişli, dikkat çekecek kadar süslü olan demektir."
     }
   ],

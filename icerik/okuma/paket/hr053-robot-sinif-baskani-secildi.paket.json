@@ -588,48 +588,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Okul robotu MİKO"
-        },
-        {
-          "id": "B",
           "metin": "Berke"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Aylin Hanım"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Arda"
+        },
+        {
+          "id": "D",
+          "metin": "Okul robotu MİKO"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Seçimde birinci gelen aday, tekerlekli bir okul robotu olan MİKO'ydu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Elif'in itirazının nedeni neydi?",
+      "metin": "Kahramanın itirazının nedeni neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "MİKO kuralların amacına değil, yalnızca uyulup uyulmadığına bakıyordu"
-        },
-        {
-          "id": "B",
           "metin": "Robot çok yavaştı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kurallar çok kısaydı"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Öğretmen izin vermemişti"
+        },
+        {
+          "id": "D",
+          "metin": "MİKO kuralların amacına değil, yalnızca uyulup uyulmadığına bakıyordu"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Kuralın amacını gözetmeyen uygulama, düzen yerine sorun üretiyordu."
     },
     {
@@ -640,22 +640,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yapabilmek her zaman yapmak için yeterli sebep değildir"
-        },
-        {
-          "id": "B",
           "metin": "Robot çok pahalıdır"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Öğretmen izin vermez"
+        },
+        {
+          "id": "C",
+          "metin": "Yapabilmek her zaman yapmak için yeterli sebep değildir"
         },
         {
           "id": "D",
           "metin": "Robot çalışmaz"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Kişisel veriler gibi konularda yapılabilen bir şey, yapılmasının doğru olduğu anlamına gelmez."
     },
     {
@@ -666,11 +666,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Sesin şiddetini ölçen birim"
+          "metin": "Bir kitap türü"
         },
         {
           "id": "B",
-          "metin": "Bir kitap türü"
+          "metin": "Sesin şiddetini ölçen birim"
         },
         {
           "id": "C",
@@ -681,7 +681,7 @@
           "metin": "Bir tür kâğıt"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Desibel, sesin şiddetini ölçmek için kullanılan birimdir."
     }
   ],

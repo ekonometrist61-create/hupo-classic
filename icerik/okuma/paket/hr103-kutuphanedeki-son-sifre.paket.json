@@ -1469,11 +1469,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "kilit, kilim ve kılıç"
+          "metin": "kapı, kutu ve kilim"
         },
         {
           "id": "B",
-          "metin": "kapı, kutu ve kilim"
+          "metin": "kilit, kilim ve kılıç"
         },
         {
           "id": "C",
@@ -1484,7 +1484,7 @@
           "metin": "kilim, kilit ve anahtar"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Öğrenciler sözcüğü kilit, kilim ve kılıç olarak okudu."
     },
     {
@@ -1525,18 +1525,18 @@
         },
         {
           "id": "B",
-          "metin": "Görüntünün doğru olduğunu ve doğru yorumlandığını"
-        },
-        {
-          "id": "C",
           "metin": "Görüntünün renkli olmasını"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Görüntünün tarihini"
+        },
+        {
+          "id": "D",
+          "metin": "Görüntünün doğru olduğunu ve doğru yorumlandığını"
         }
       ],
-      "dogru": "B",
+      "dogru": "D",
       "aciklama": "Net bir görüntü, doğru olduğu ya da doğru yorumlandığı anlamına gelmez."
     },
     {
@@ -1547,22 +1547,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Sözcüğün kullanıldığı çevreyi ve anlam ilişkisini bilmediklerini"
-        },
-        {
-          "id": "B",
           "metin": "Mektubun yazarını bilmediklerini"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Mektubun kâğıdını bilmediklerini"
+        },
+        {
+          "id": "C",
+          "metin": "Sözcüğün kullanıldığı çevreyi ve anlam ilişkisini bilmediklerini"
         },
         {
           "id": "D",
           "metin": "Mektubun ne zaman yazıldığını kesin olarak bildiklerini"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Bağlam, sözcüğün hangi çevrede ve hangi anlamda kullanıldığını ifade eder."
     },
     {
@@ -1573,11 +1573,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Önerinin önemli olduğunu kabul etmek"
+          "metin": "Önerinin gerekçesini incelemek ve neyi bilmediğimizi görmek"
         },
         {
           "id": "B",
-          "metin": "Önerinin gerekçesini incelemek ve neyi bilmediğimizi görmek"
+          "metin": "Önerinin önemli olduğunu kabul etmek"
         },
         {
           "id": "C",
@@ -1588,7 +1588,7 @@
           "metin": "Önerinin yazarına bakarak karar vermek"
         }
       ],
-      "dogru": "B",
+      "dogru": "A",
       "aciklama": "Önerinin gerekçesi incelenirse hangi bilgilerin eksik olduğu da görülür."
     }
   ],
@@ -1660,14 +1660,6 @@
         "tur": "kelime",
         "yazim": "okuma önerisi",
         "anlam": "Belirsiz bir yazı için ileri sürülen olası okunuş.",
-        "sinif_alt": 7,
-        "sinif_ust": 8
-      },
-      {
-        "id": "hr103_kesin_ceviri",
-        "tur": "kelime",
-        "yazim": "kesin çeviri",
-        "anlam": "Tek anlamı kesin olarak verilen, tartışmaya kapalı çeviri.",
         "sinif_alt": 7,
         "sinif_ust": 8
       },
@@ -1760,9 +1752,6 @@
           },
           {
             "girdi": "hr103_okuma_onerisi"
-          },
-          {
-            "girdi": "hr103_kesin_ceviri"
           }
         ]
       },

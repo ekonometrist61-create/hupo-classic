@@ -1009,11 +1009,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İki"
+          "metin": "Üç"
         },
         {
           "id": "B",
-          "metin": "Üç"
+          "metin": "İki"
         },
         {
           "id": "C",
@@ -1024,7 +1024,7 @@
           "metin": "Dört"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Levhada biri kuzeyi, diğeri tam tersini gösteren iki ok vardı."
     },
     {
@@ -1035,22 +1035,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Pusula yalnız yönü gösterir; hedefin yerini haritadan okumak gerekir"
-        },
-        {
-          "id": "B",
           "metin": "Pusula bozuktu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Lina pusulayı sevmiyordu"
+        },
+        {
+          "id": "C",
+          "metin": "Pusula yalnız yönü gösterir; hedefin yerini haritadan okumak gerekir"
         },
         {
           "id": "D",
           "metin": "Pusulanın ibresi kırıktı"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Pusula yön bulmaya yarar; hedef bilgisi başka kaynaktan gelir."
     },
     {
@@ -1061,11 +1061,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Belli bir zamanda derlenmiş bilgi; dünya değiştikçe güncellenmesi gerekir"
+          "metin": "Her zaman doğru olan kesin bilgi"
         },
         {
           "id": "B",
-          "metin": "Her zaman doğru olan kesin bilgi"
+          "metin": "Belli bir zamanda derlenmiş bilgi; dünya değiştikçe güncellenmesi gerekir"
         },
         {
           "id": "C",
@@ -1076,7 +1076,7 @@
           "metin": "Sadece süs olarak yapılan çizim"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Haritalar belirli bir zamanın bilgisini taşır; değişen arazide güncellenmelidir."
     },
     {

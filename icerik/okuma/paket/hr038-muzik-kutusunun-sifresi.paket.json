@@ -374,48 +374,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Melodiyi arkadaşıyla birlikte bestelediğini ve yıllardır hatırladığını"
-        },
-        {
-          "id": "B",
           "metin": "Kutu kırılmıştı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Sınıfı çok seviyordu"
+        },
+        {
+          "id": "C",
+          "metin": "Melodiyi arkadaşıyla birlikte bestelediğini ve yıllardır hatırladığını"
         },
         {
           "id": "D",
           "metin": "Yemek pişirmişti"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Mektubu okuyunca melodinin ve arkadaşlığın anısı canlandı."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 5,
-      "metin": "İpek'in “şifre yalnızca nota değil, bir hatıra” sözü neyi gösterir?",
+      "metin": "Kahramanın “şifre yalnızca nota değil, bir hatıra” sözü neyi gösterir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kutunun açılmasının notalardan çok anılarla bağlı olduğunu"
-        },
-        {
-          "id": "B",
           "metin": "Kutunun hiç açılamayacağını"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Nota bilgisinin önemsiz olduğunu"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kutunun altın olduğunu"
+        },
+        {
+          "id": "D",
+          "metin": "Kutunun açılmasının notalardan çok anılarla bağlı olduğunu"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Kutunun sırrı, aile belleğindeki bir anıyla bağlantılıydı."
     },
     {

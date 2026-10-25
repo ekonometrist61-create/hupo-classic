@@ -1191,11 +1191,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İmza"
+          "metin": "Tarih"
         },
         {
           "id": "B",
-          "metin": "Tarih"
+          "metin": "İmza"
         },
         {
           "id": "C",
@@ -1206,7 +1206,7 @@
           "metin": "Kenar çizgisi"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Notun altında imza yoktu; yalnızca köşede mavi bir yıldız vardı."
     },
     {
@@ -1243,22 +1243,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Panoya asılmasına bağlı değildir"
-        },
-        {
-          "id": "B",
           "metin": "Ancak not yazılırsa değerlidir"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yalnız öğretmenin gördüğü iyiliklerde vardır"
+        },
+        {
+          "id": "C",
+          "metin": "Panoya asılmasına bağlı değildir"
         },
         {
           "id": "D",
           "metin": "Notların sayısına bağlıdır"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "İyilik, panoda görünmese de değerini korur."
     },
     {
@@ -1269,11 +1269,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Doğrulanmamış, dolaşan haber ya da iddia"
+          "metin": "Bir tür kitap"
         },
         {
           "id": "B",
-          "metin": "Bir tür kitap"
+          "metin": "Doğrulanmamış, dolaşan haber ya da iddia"
         },
         {
           "id": "C",
@@ -1284,7 +1284,7 @@
           "metin": "Bir oyun kuralı"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Söylenti, kanıtı olmadan kulaktan kulağa yayılan bilgidir."
     }
   ],

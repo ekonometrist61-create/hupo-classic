@@ -56,8 +56,6 @@ Nasreddin Hoca'nın evinde akşam için üç tabak hazırlanmıştı. Hoca, eşi
 @omurga
 Hoca'nın eşi, biraz önce gelemeyen misafirin haber göndermesini hatırlattı. {yoldas:yalin|bir arkadaş}, haber vermenin neden önemli olduğunu sordu. “Çünkü biz de ona göre hazırlanırız,” dedi. “**Küçük bir cümle** büyük bir yanlış anlamayı önleyebilir.” {yoldas:yalin|bir arkadaş}, okuldan geç döneceği gün ailesine haber vermeyi düşündü.
 
-Tam o sırada kapı çalındı.
-
 Tam o sırada kapı çalındı. {yoldas:ilgi|bir arkadaşın} karşı komşusu Hasan amca içeriye baktı. Elinde bir sepet vardı. “Size bahçemden elma getirdim. Ama oyalanmayayım,” dedi.
 
 Hoca, boş tabağı işaret etti. “Bakınız, tabak sizden önce gelmiş!”

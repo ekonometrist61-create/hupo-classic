@@ -1125,7 +1125,7 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 1,
-      "metin": "Deniz'in komutu hemen uygulamaması neden doğruydu?",
+      "metin": "Kahramanın komutu hemen uygulamaması neden doğruydu?",
       "secenekler": [
         {
           "id": "A",
@@ -1151,26 +1151,26 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 7,
-      "metin": "Deniz'in ulaştığı sonuç neydi?",
+      "metin": "Kahramanın ulaştığı sonuç neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir komutun şimdi gelmesi, şimdi uygulanması gerektiği anlamına gelmez"
-        },
-        {
-          "id": "B",
           "metin": "Komutlar hiç uygulanmamalı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Robot hep hızlı çalışmalı"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Mesajlar hiç gelmez"
+        },
+        {
+          "id": "D",
+          "metin": "Bir komutun şimdi gelmesi, şimdi uygulanması gerektiği anlamına gelmez"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Komutun zamanını ve bağlamını doğrulamak gerekir."
     },
     {
@@ -1181,11 +1181,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir şeyin beklenenden sonra ulaşması ya da olması"
+          "metin": "Bir tür düğme"
         },
         {
           "id": "B",
-          "metin": "Bir tür düğme"
+          "metin": "Bir şeyin beklenenden sonra ulaşması ya da olması"
         },
         {
           "id": "C",
@@ -1196,7 +1196,7 @@
           "metin": "Bir kamp adı"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Gecikme, bir olayın beklenen zamandan sonra gerçekleşmesidir."
     }
   ],

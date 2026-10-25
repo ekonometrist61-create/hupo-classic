@@ -378,55 +378,55 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kırk sekiz"
-        },
-        {
-          "id": "B",
           "metin": "Yirmi dört"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Altmış"
+        },
+        {
+          "id": "C",
+          "metin": "Kırk sekiz"
         },
         {
           "id": "D",
           "metin": "On iki"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Çanta, işlemi açıklamadan “Cevap kırk sekiz!” dedi."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Deniz neden çantanın hızlı çözmesini her zaman istemedi?",
+      "metin": "Kahraman neden çantanın hızlı çözmesini her zaman istemedi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hızlı çözüm, kendi düşünmesini ve öğrenmesini engelliyordu"
-        },
-        {
-          "id": "B",
           "metin": "Çanta yavaş çalışıyordu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Ödevi çok sevdiği için"
+        },
+        {
+          "id": "C",
+          "metin": "Hızlı çözüm, kendi düşünmesini ve öğrenmesini engelliyordu"
         },
         {
           "id": "D",
           "metin": "Öğretmen kızmıştı"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Deniz, kendi cevabını bulmanın öğrenmek için önemli olduğunu anladı."
+      "dogru": "C",
+      "aciklama": "Kahraman, kendi cevabını bulmanın öğrenmek için önemli olduğunu anladı."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 3,
-      "metin": "Elif'in sözüne göre önemli olan nedir?",
+      "metin": "Yoldaşın sözüne göre önemli olan nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -456,11 +456,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Birden fazla arasından seçilebilecek durum"
+          "metin": "Bir tuş"
         },
         {
           "id": "B",
-          "metin": "Bir tuş"
+          "metin": "Birden fazla arasından seçilebilecek durum"
         },
         {
           "id": "C",
@@ -471,7 +471,7 @@
           "metin": "Bir ödev"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Seçenek, birkaç olanağın her biridir."
     }
   ],

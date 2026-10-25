@@ -1284,11 +1284,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "K-17"
+          "metin": "Mirza-4"
         },
         {
           "id": "B",
-          "metin": "Mirza-4"
+          "metin": "K-17"
         },
         {
           "id": "C",
@@ -1299,7 +1299,7 @@
           "metin": "K-71"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kırmızı noktanın adı K-17 idi."
     },
     {
@@ -1344,14 +1344,14 @@
         },
         {
           "id": "C",
-          "metin": "Koşulları ve neden beklediği bilindiğinde"
+          "metin": "Yalnızca uydu zarar gördüğünde"
         },
         {
           "id": "D",
-          "metin": "Yalnızca uydu zarar gördüğünde"
+          "metin": "Koşulları ve neden beklediği bilindiğinde"
         }
       ],
-      "dogru": "C",
+      "dogru": "D",
       "aciklama": "Beklemek de, koşulları ve gerekçesi açıkça belirlenmiş bir karar olabilir."
     },
     {
