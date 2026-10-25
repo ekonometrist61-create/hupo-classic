@@ -32,7 +32,7 @@ etiketler:
     - {id: deyim_hr032, tur: idiom, etiket: "Ölçüp biçmek", yuva: hr032_olcup_bicmek, islev: application}
     - {id: kavram_hr032, tur: concept, etiket: "Doğru ölçü ve güven", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Keloğlan pazara ne almak için gitti?", secenekler: [{id: A, metin: "Ekmek"}, {id: B, metin: "Peynir"}, {id: C, metin: "Şeker"}, {id: D, metin: "Bulgur"}], dogru: D, aciklama: "Keloğlan annesi için bulgur almaya gitmişti."}

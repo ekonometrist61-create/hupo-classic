@@ -145,7 +145,7 @@ Boğaç kalabalığa baktı. İlk kez herkesin onayını alacak bir karar vermen
 @omurga
 Önce kimse konuşmadı. Sonra İnci Ana ağır ağır ayağa kalktı. “Benim bir itirazım var,” dedi. Herkes şaşırdı. Onun sevinmesini bekliyorlardı.
 
-“Benim adımı temize çıkarmak için insanların önünde özür dilemeleri iyi,” dedi. “Ama yarın biri yine yanlış suçlanırsa aynı acıyı yaşayacak. Çocuklara {kelime:hr073_soylenti} gerçek arasındaki farkı öğretmeliyiz.”
+“Benim adımı temize çıkarmak için insanların önünde özür dilemeleri iyi,” dedi. “Ama yarın biri yine yanlış suçlanırsa aynı acıyı yaşayacak. Çocuklara {kelime:hr073_soylenti} ile gerçek arasındaki farkı öğretmeliyiz.”
 
 Boğaç bu öneriyi beğendi. “Toyda hikâye anlatıcıları için zaman ayrılmıştı,” dedi. “Bir hikâyenin içinde bunu anlatabilir miyiz?”
 
@@ -255,7 +255,7 @@ Kara Turgut oradan geçerken konuşmaya katıldı. “Ben bu dersi biraz geç ö
 Sarıhan ona bakıp gülümsedi. Bir önceki gün kimse onunla yan yana görünmek istemezken şimdi depo defterinin yanında birlikte çalışıyorlardı. İnsanların güvenini yeniden kazanmak bir sabah sürmemişti. Yine de her doğru adım biraz işe yarıyordu. Bu, Boğaç'ın kararında görmeyi istediği asıl sonuçtu.
 ---
 @omurga
-Ertesi gün obanın geniş meydanı şenlik sesleriyle doldu. Atlar hazırlandı, çocuklar yarış çizgisinde toplandı, kazanlarda yemekler kaynadı. Boğaç'ın adı anons edildiğinde kimi onun boğa karşısındaki eski yiğitliğini bekliyordu. Oysa Boğaç, tören çadırına girerken elinde ne kılıç ne de yarış mızrağı taşıyordu. İnci Ana'nın kendi elleriyle dokuduğu küçük bir kilim vardı. Kilimin ortasına dengeli bir terazi işlenmişti.
+Öğleye doğru obanın geniş meydanı şenlik sesleriyle doldu. Atlar hazırlandı, çocuklar yarış çizgisinde toplandı, kazanlarda yemekler kaynadı. Boğaç'ın adı anons edildiğinde kimi onun boğa karşısındaki eski yiğitliğini bekliyordu. Oysa Boğaç, tören çadırına girerken elinde ne kılıç ne de yarış mızrağı taşıyordu. İnci Ana'nın kendi elleriyle dokuduğu küçük bir kilim vardı. Kilimin ortasına dengeli bir terazi işlenmişti.
 
 Bey kilimi havaya kaldırdı. “Bu, Boğaç'ın yeni yiğitliğinin işareti olsun,” dedi. “Çünkü bir insanı haksız yere suçlamadan önce durmayı bildi. Gücü varken öfkesine yenilmedi. Herkes kolay hüküm isterken o soru sordu.”
 

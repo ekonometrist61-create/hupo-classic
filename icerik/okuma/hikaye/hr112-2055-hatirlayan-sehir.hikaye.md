@@ -33,7 +33,7 @@ etiketler:
     - {id: deyim_hr112, tur: idiom, etiket: "İçine ağırlık oturmak", yuva: hr112_agirlik, islev: application}
     - {id: kavram_hr112, tur: concept, etiket: "Tahmin ile kaydı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Belediye sisteme hangi adı vermişti?", secenekler: [{id: A, metin: "GÜNEŞ"}, {id: B, metin: "ŞEHİR"}, {id: C, metin: "HAFIZA"}, {id: D, metin: "KONSEY"}], dogru: C, aciklama: "Belediye sisteme HAFIZA adını vermişti."}

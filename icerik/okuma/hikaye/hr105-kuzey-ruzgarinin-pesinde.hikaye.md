@@ -33,7 +33,7 @@ etiketler:
     - {id: deyim_hr105, tur: idiom, etiket: "Dikkatini çekmek", yuva: hr105_dikkat, islev: application}
     - {id: kavram_hr105, tur: concept, etiket: "Ölçüm koşullarını ve veri boşluklarını okumak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 13, metin: "Sensör iki gün boyunca diğerlerine göre nasıl bir değer gösteriyordu?", secenekler: [{id: A, metin: "Biraz daha yüksek"}, {id: B, metin: "Çok daha düşük"}, {id: C, metin: "Hiç değişmeyen"}, {id: D, metin: "Yalnızca gece görünen"}], dogru: A, aciklama: "Sensör, diğerlerinden biraz daha yüksek değer göstermişti."}

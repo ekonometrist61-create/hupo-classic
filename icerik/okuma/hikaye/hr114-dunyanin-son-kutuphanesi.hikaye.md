@@ -33,7 +33,7 @@ etiketler:
     - {id: deyim_hr114, tur: idiom, etiket: "Paniğe kapılmak", yuva: hr114_panik, islev: application}
     - {id: kavram_hr114, tur: concept, etiket: "Kaynağın güvenilirliğini sınamak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Birinci kayda göre gök olayı hangi yılda gerçekleşmişti?", secenekler: [{id: A, metin: "2071"}, {id: B, metin: "2091"}, {id: C, metin: "2069"}, {id: D, metin: "2075"}], dogru: C, aciklama: "Birinci kayıtta olay 2069 yılında gerçekleşmiş olarak yazıyordu."}

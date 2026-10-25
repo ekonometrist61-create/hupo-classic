@@ -32,7 +32,7 @@ etiketler:
     - {id: deyim_hr037, tur: idiom, etiket: "Gözden kaçırmak", yuva: hr037_gozden_kacirmak, islev: application}
     - {id: kavram_hr037, tur: concept, etiket: "Takım ruhu ve adalet", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kahraman maçtan önce ne yaptı?", secenekler: [{id: A, metin: "Top çalıştı"}, {id: B, metin: "Kaptanla konuştu"}, {id: C, metin: "Kupayı aldı"}, {id: D, metin: "Bağcıklarını üçüncü kez bağladı"}], dogru: D, aciklama: "Kahraman, bağcıklarını üçüncü kez bağlayarak maça hazırlandı."}

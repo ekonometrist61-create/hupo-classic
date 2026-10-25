@@ -33,7 +33,7 @@ etiketler:
     - {id: belirsiz_hr101, tur: lexeme, etiket: "belirsiz", yuva: hr101_belirsiz, islev: transfer}
     - {id: kavram_hr101, tur: concept, etiket: "Gözlem, duyum ve çıkarım ayrımı", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Sergideki ilk fotoğrafın etiketinde hangi tarih yazıyordu?", secenekler: [{id: A, metin: "12 Mayıs 1974"}, {id: B, metin: "12 Mayıs 1984"}, {id: C, metin: "21 Mayıs 1984"}, {id: D, metin: "Tarih yazmıyordu"}], dogru: B, aciklama: "Fotoğraflardan biri 12 Mayıs 1984 tarihiyle etiketlenmişti."}

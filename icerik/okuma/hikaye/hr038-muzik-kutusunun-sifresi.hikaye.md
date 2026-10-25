@@ -32,7 +32,7 @@ etiketler:
     - {id: deyim_hr038, tur: idiom, etiket: "Gözleri dolmak", yuva: hr038_gozleri_doldu, islev: application}
     - {id: kavram_hr038, tur: concept, etiket: "Ritim ve tekrar ile çıkarım", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Müzik kutusunda kaç düğme vardı?", secenekler: [{id: A, metin: "Dört"}, {id: B, metin: "İki"}, {id: C, metin: "Altı"}, {id: D, metin: "Üç"}], dogru: A, aciklama: "Kutunun üzerinde dört küçük düğme vardı."}

@@ -31,7 +31,7 @@ etiketler:
     - {id: gecikme_hr035, tur: lexeme, etiket: "gecikme", yuva: hr035_gecikme, islev: application}
     - {id: kavram_hr035, tur: concept, etiket: "Veri aktarımı ve iletişim gecikmesi", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "İlk mektubu yazma hakkını kimler kazanmıştı?", secenekler: [{id: A, metin: "Öğretmen ve öğrenci"}, {id: B, metin: "Görevli ve teyze"}, {id: C, metin: "Üç arkadaş"}, {id: D, metin: "İki kardeş"}], dogru: D, aciklama: "Eylül ve Can, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."}

@@ -33,7 +33,7 @@ etiketler:
     - {id: deyim_hr104, tur: idiom, etiket: "Omuz silkmek", yuva: hr104_omuz, islev: application}
     - {id: kavram_hr104, tur: concept, etiket: "Söylenti ile kanıtı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Asansörün ekranında hangi tuhaf sayı görünüyordu?", secenekler: [{id: A, metin: "-1"}, {id: B, metin: "G"}, {id: C, metin: "1"}, {id: D, metin: "0"}], dogru: D, aciklama: "Asansörün ekranında tuhaf bir sayı olarak 0 görünüyordu."}

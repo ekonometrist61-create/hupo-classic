@@ -32,7 +32,7 @@ etiketler:
     - {id: deyim_hr033, tur: idiom, etiket: "Dış görünüşe aldanmak", yuva: hr033_dis_gorunus, islev: application}
     - {id: kavram_hr033, tur: concept, etiket: "Görünüş ile değer; önyargı ve saygı", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 3, metin: "Hoca çorbayı kime ikram etmek istedi?", secenekler: [{id: A, metin: "Kendisine"}, {id: B, metin: "Görevliye"}, {id: C, metin: "Zeynep'e"}, {id: D, metin: "Kürküne"}], dogru: D, aciklama: "Hoca kürkünün kolunu kâseye uzatıp “Ye kürküm ye!” dedi."}

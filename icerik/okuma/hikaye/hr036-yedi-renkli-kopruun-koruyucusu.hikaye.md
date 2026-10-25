@@ -31,7 +31,7 @@ etiketler:
     - {id: ugultu_hr036, tur: lexeme, etiket: "uğultu", yuva: hr036_ugultu, islev: application}
     - {id: kavram_hr036, tur: concept, etiket: "Duyguları adlandırmak ve cesaret", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "Bekçi hangi duyguları taşlarla gösterdi?", secenekler: [{id: A, metin: "Sevinç, üzüntü, öfke, şaşkınlık, sevgi, umut ve korku"}, {id: B, metin: "Mavi, mor, yeşil"}, {id: C, metin: "Kuş, kedi, köpek"}, {id: D, metin: "Sis ve yağmur"}], dogru: A, aciklama: "Bekçi, yedi duyguyu yedi taşla gösterdi."}

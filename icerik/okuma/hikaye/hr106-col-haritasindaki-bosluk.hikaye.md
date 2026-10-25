@@ -33,7 +33,7 @@ etiketler:
     - {id: deyim_hr106, tur: idiom, etiket: "Rahat bir nefes almak", yuva: hr106_rahat, islev: application}
     - {id: kavram_hr106, tur: concept, etiket: "Tarihsel kanıt ile kurmacayı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Haritanın tam ortasında hangi bölüm bomboştu?", secenekler: [{id: A, metin: "Kervan yolunun başlangıcı"}, {id: B, metin: "Ticaret merkezlerinin adları"}, {id: C, metin: "Dağların çizgileri"}, {id: D, metin: "Kum rengi kâğıdın bir bölümü"}], dogru: D, aciklama: "Haritanın tam ortasında kum rengi kâğıdın bir bölümü boştu."}

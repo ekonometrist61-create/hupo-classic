@@ -33,7 +33,7 @@ etiketler:
     - {id: deyim_hr107, tur: idiom, etiket: "Etekleri zil çalmak", yuva: hr107_etek, islev: application}
     - {id: kavram_hr107, tur: concept, etiket: "Zaman farkı ile kültürel farkı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kahramanın telefon ekranı neyi farklı gösteriyordu?", secenekler: [{id: A, metin: "Bir trenin fiyatını"}, {id: B, metin: "Evinden farklı bir saat dilimini"}, {id: C, metin: "Bir kitabın adını"}, {id: D, metin: "Hava durumunu"}], dogru: B, aciklama: "Telefon, evinden farklı bir saat dilimini gösteriyordu."}

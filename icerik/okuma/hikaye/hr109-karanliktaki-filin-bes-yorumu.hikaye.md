@@ -33,7 +33,7 @@ etiketler:
     - {id: deyim_hr109, tur: idiom, etiket: "Araya girmek", yuva: hr109_araya, islev: application}
     - {id: kavram_hr109, tur: concept, etiket: "Gözlem, yorum ve kanıtı birbirinden ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kahraman hangi kulüpteydi?", secenekler: [{id: A, metin: "Müzik kulübü"}, {id: B, metin: "Araştırma kulübü"}, {id: C, metin: "Çizim kulübü"}, {id: D, metin: "Spor kulübü"}], dogru: B, aciklama: "Kahraman, okulun araştırma kulübündeydi."}

@@ -32,7 +32,7 @@ etiketler:
     - {id: deyim_hr040, tur: idiom, etiket: "Misafire yer açmak", yuva: hr040_misafire_yer, islev: application}
     - {id: kavram_hr040, tur: concept, etiket: "Benzer ve farklı yanlar; yaşayan gelenek", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "İlk durakta kahraman hangi yemeği gördü?", secenekler: [{id: A, metin: "Çibörek"}, {id: B, metin: "Pilav"}, {id: C, metin: "Etli ekmek"}, {id: D, metin: "Baklava"}], dogru: A, aciklama: "İlk durakta ev sahibi sofraya çibörek koydu."}

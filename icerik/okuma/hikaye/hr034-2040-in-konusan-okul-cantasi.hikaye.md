@@ -31,7 +31,7 @@ etiketler:
     - {id: tebrik_hr034, tur: lexeme, etiket: "tebrik", yuva: hr034_tebrik, islev: application}
     - {id: kavram_hr034, tur: concept, etiket: "Araçları bilinçli kullanmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Çanta öğretmene hangi cevabı verdi?", secenekler: [{id: A, metin: "Yirmi dört"}, {id: B, metin: "Altmış"}, {id: C, metin: "Kırk sekiz"}, {id: D, metin: "On iki"}], dogru: C, aciklama: "Çanta, işlemi açıklamadan “Cevap kırk sekiz!” dedi."}

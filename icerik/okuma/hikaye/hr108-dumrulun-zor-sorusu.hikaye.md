@@ -34,11 +34,11 @@ etiketler:
     - {id: deyim_hr108, tur: idiom, etiket: "Kaşlarını çatmak", yuva: hr108_kas, islev: application}
     - {id: kavram_hr108, tur: concept, etiket: "Yetki ile sorumluluğu ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Dumrul köprünün en yüksek taşına çıkarak herkese hangi adı söylemeye çalışırdı?", secenekler: [{id: A, metin: "Yankı Köprüsü"}, {id: B, metin: "Büyük Geçit"}, {id: C, metin: "İki Yaka"}, {id: D, metin: "Dumrul Köprüsü"}], dogru: D, aciklama: "Dumrul, köprünün adının “Dumrul Köprüsü” olmasını istiyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 8, metin: "Sesin bu sözüne göre hatıralar neyi kapsar?", secenekler: [{id: A, metin: "Yalnızca kişinin kendi gördüğü yeri"}, {id: B, metin: "Kişinin gördüğünden daha geniş bir çevreyi ve başkalarının emeğini"}, {id: C, metin: "Yalnızca kişinin başarılarını"}, {id: D, metin: "Yalnızca geçmişte kalan bir köprüyü"}], dogru: B, aciklama: "Hatıralar, kişinin gözünün görmediği, başkalarının emeğini de kapsayabilir."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 8, metin: "Sesin “Hatıraların yalnızca gözünün baktığı yer değildir” sözüne göre hatıralar neyi kapsar?", secenekler: [{id: A, metin: "Yalnızca kişinin kendi gördüğü yeri"}, {id: B, metin: "Kişinin gördüğünden daha geniş bir çevreyi ve başkalarının emeğini"}, {id: C, metin: "Yalnızca kişinin başarılarını"}, {id: D, metin: "Yalnızca geçmişte kalan bir köprüyü"}], dogru: B, aciklama: "Hatıralar, kişinin gözünün görmediği, başkalarının emeğini de kapsayabilir."}
   - {id: s3, beceri: yorumlama, dayanak_sayfa: 10, metin: "Bugün taşındaki bu cümleyle ne anlatılmak istenir?", secenekler: [{id: A, metin: "Doğru olan kişinin her zaman haklı olduğu"}, {id: B, metin: "Haklı görünmek, doğru olmaktan daha önemlidir"}, {id: C, metin: "Doğru olmak ile haklı görünmek ayrı şeylerdir"}, {id: D, metin: "Doğru olmanın hiçbir önemi yoktur"}], dogru: C, aciklama: "Bir kişi doğru olabilir, ama kendi bakış açısı yüzünden haklı görünmeyebilir."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 6, metin: "Metinde “yankı” sözcüğü hangi anlamda kullanılır?", secenekler: [{id: A, metin: "Bir sesin bir engele çarpıp geri dönmesi"}, {id: B, metin: "Bir köprünün yapım tarihi"}, {id: C, metin: "Bir ustanın yaptığı ölçüm"}, {id: D, metin: "Bir kadının sepeti"}], dogru: A, aciklama: "Yankı, seslerin duvar ya da kayalardan geri dönmesidir; metinde bu anlamda kullanılır."}
   - {id: s5, beceri: degerlendirme, dayanak_sayfa: 24, metin: "Dumrul'un özründen ne anlaşılmalıdır?", secenekler: [{id: A, metin: "Karşılığında bir ödül beklendiği"}, {id: B, metin: "Yalnızca zor durumdan kurtulmak istendiği"}, {id: C, metin: "Kimsenin özür dilemesine gerek olmadığı"}, {id: D, metin: "Karşılık beklemeden sorumluluğun kabul edildiği"}], dogru: D, aciklama: "Dumrul'un özrü bir ödül kazanmak için değil, sorumluluğu kabul etmek için söylenmişti."}
@@ -182,7 +182,7 @@ Dördüncü taşta hiçbir görüntü belirmedi. Yalnızca pürüzsüz, koyu bir
 
 “Sen kendini zaten çok görüyorsun,” diye karşılık verdi ses. “Bir başkasına yer aç.”
 
-Dumrul çevresine baktı. Köprüde kimse yoktu. Gece derin, rüzgâr soğuktu. Başka birinin yüzünü hayal etmeyi denedi. Umay'ı düşündü; günlerdir onardıkları taşların yükünü hesaplayan, işe başlamadan önce ölçüm yapan Umay'ı. Sonra {yoldas:belirtme|bir arkadaşı}, yıllarca köprü heyetini yönetirken kimseye tek başına hükmetmeyen kadını. Sonra geçmeyi bekleyen aileyi düşündü.
+Dumrul çevresine baktı. Köprüde kimse yoktu. Gece derin, rüzgâr soğuktu. Başka birinin yüzünü hayal etmeyi denedi. Umay'ı düşündü; günlerdir onardıkları taşların yükünü hesaplayan, işe başlamadan önce ölçüm yapan Umay'ı. Sonra köprü heyetinde kimseye tek başına hükmetmeyen {yoldas:belirtme|bir arkadaşı} düşündü. Sonra geçmeyi bekleyen aileyi düşündü.
 
 Taşın yüzeyinde Umay'ın elleri göründü. Çizdiği planların üstünde silgi izleri vardı. Çalışırken hata yapmış, düzeltmiş, yeniden denemişti. Dumrul kendi ellerinin yalnızca taş kaldırdığını, onun ellerininse görünmeyen bir düzeni korumaya çalıştığını düşündü. Ardından {yoldas:yalin|bir arkadaş} belirdi. Önündeki hesap defterinde küçük katkılar ve ihtiyaçlar yazılıydı. Köprü, tek bir güçlü kişinin eseri değil, birlikte sürdürülen bir sorumluluktu.
 ---
@@ -311,7 +311,7 @@ Ustanın yanında taşın yüzeyindeki küçük işaretleri inceledi. Bazıları
 @omurga
 Aylar sonra köprü yeniden açıldı. Güçlendirilen bölümün taşları eskilerden biraz farklı renkteydi. Dumrul bunun kötü göründüğünü düşünmedi. Yeni taşlar, yapının ihtiyaç duyduğu zamanlarda başka insanların da emek verdiğini gösteriyordu. Açılış günü vadide küçük bir kalabalık toplandı. {yoldas:yalin|bir arkadaş} onarım ekibindeki herkesin adını okudu. Dumrul’un adı da vardı, Umay'ın da. Kimse tek başına köprünün sahibi olarak anılmadı.
 
-Kalabalıktan biri “Bu geçidin adını Dumrul Köprüsü yapalım!” diye bağırdı. Eskiden olsa Dumrul {kelime:hr108_gurur} doğrulurdu. Şimdi bir an sustu. Ardından “Benim bir adım var,” dedi, “köprününse uzun bir hikâyesi. Hepimizin içinden geçen bir hikâye.”
+Kalabalıktan biri “Bu geçidin adını Dumrul Köprüsü yapalım!” diye bağırdı. Eskiden olsa Dumrul {kelime:hr108_gurur} içinde doğrulurdu. Şimdi bir an sustu. Ardından “Benim bir adım var,” dedi, “köprününse uzun bir hikâyesi. Hepimizin içinden geçen bir hikâye.”
 
 Ad konusunda tartışma çıktı. Kimileri Büyük Geçit adını, kimileri İki Yaka adını seviyordu. Çocuklar hâlâ Yankı Köprüsü demeye devam etti. Dumrul herkesin aynı adı söylemek zorunda olmadığını fark etti. Köprünün değeri tabelasından daha büyüktü.
 

@@ -31,7 +31,7 @@ etiketler:
     - {id: vitrin_hr031, tur: lexeme, etiket: "vitrin", yuva: hr031_vitrin, islev: application}
     - {id: kavram_hr031, tur: concept, etiket: "Kanıt ile varsayım", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "İki alarm hangi ortak durumda duyulmuştu?", secenekler: [{id: A, metin: "Müze kapandığında"}, {id: B, metin: "Rehber konuştuğunda"}, {id: C, metin: "Pusula düştüğünde"}, {id: D, metin: "Havalandırma çalışmaya başladığında"}], dogru: D, aciklama: "İki alarm da havalandırma açıldığında duyulmuştu."}

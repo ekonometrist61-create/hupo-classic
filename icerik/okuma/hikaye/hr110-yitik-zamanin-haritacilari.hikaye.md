@@ -33,7 +33,7 @@ etiketler:
     - {id: deyim_hr110, tur: idiom, etiket: "Kulak kesilmek", yuva: hr110_kulak, islev: application}
     - {id: kavram_hr110, tur: concept, etiket: "Anı ile ortak kanıtı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 6, metin: "Mira'nın hatırasında Çınaraltı'na giden yol hangi köprüden geçiyordu?", secenekler: [{id: A, metin: "Balıkçı Köprüsü"}, {id: B, metin: "Saat Köprüsü"}, {id: C, metin: "Tuz Köprüsü"}, {id: D, metin: "Kumsaat Köprüsü"}], dogru: C, aciklama: "Mira'nın hatırasında yol Tuz Köprüsü'nden geçiyordu; Tuna ise Balıkçı Merdiveni'ni hatırlıyordu."}

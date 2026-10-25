@@ -32,7 +32,7 @@ etiketler:
     - {id: deyim_hr039, tur: idiom, etiket: "Kanat germek", yuva: hr039_kanat_germek, islev: application}
     - {id: kavram_hr039, tur: concept, etiket: "Gerçek ve kurmaca ayrımı", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Mira ormanda ne buldu?", secenekler: [{id: A, metin: "Kayıp bir kedi"}, {id: B, metin: "Altın gibi parlayan bir tüy"}, {id: C, metin: "Bir harita"}, {id: D, metin: "Eski bir anahtar"}], dogru: B, aciklama: "Mira, tepelerin ardındaki ormanda altın gibi parlayan bir tüy buldu."}

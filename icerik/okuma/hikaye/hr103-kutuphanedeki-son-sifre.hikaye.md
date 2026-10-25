@@ -33,7 +33,7 @@ etiketler:
     - {id: deyim_hr103, tur: idiom, etiket: "İç çekmek", yuva: hr103_ic_cekti, islev: application}
     - {id: kavram_hr103, tur: concept, etiket: "Okuma önerisi ile günümüz Türkçesiyle açıklamayı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Öğrenciler mektubun son satırındaki bulanık sözcüğü hangi üç biçimde okudu?", secenekler: [{id: A, metin: "kapı, kutu ve kilim"}, {id: B, metin: "kilit, kilim ve kılıç"}, {id: C, metin: "kilit, kitap ve kılıç"}, {id: D, metin: "kilim, kilit ve anahtar"}], dogru: B, aciklama: "Öğrenciler sözcüğü kilit, kilim ve kılıç olarak okudu."}
