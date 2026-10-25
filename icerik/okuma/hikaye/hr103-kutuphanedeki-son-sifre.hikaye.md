@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Bulanık bir mektubun sözcüğü “kilit” mi, “kilim” mi? Duru ve Kerem gizli oda yerine bağlamı, kanıtı ve emanetin anlamını araştırır."
+tanitim: "Bulanık bir mektubun sözcüğü “kilit” mi, “kilim” mi? {kahraman} ile {yoldas:yalin|bir arkadaşı} gizli oda yerine bağlamı, kanıtı ve emanetin anlamını araştırır."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

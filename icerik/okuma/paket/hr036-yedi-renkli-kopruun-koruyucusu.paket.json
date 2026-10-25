@@ -90,7 +90,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Köprünün ışığı solunca kasaba karanlıkta kaldı. Defne korkusuyla nasıl yüzleşti?",
+    "tanitim": "Köprünün ışığı solunca kasaba karanlıkta kaldı. {kahraman} korkusuyla nasıl yüzleşti?",
     "durum": "taslak",
     "fis_kodu": "HR-036"
   },
@@ -422,11 +422,11 @@
         },
         {
           "id": "D",
-          "metin": "Mert'in yanına gitmeyi"
+          "metin": "Bir arkadaşının yanına gitmeyi"
         }
       ],
       "dogru": "B",
-      "aciklama": "Defne, korkuyu fark edip güvenli bir biçimde davranmanın cesaret olduğunu anladı."
+      "aciklama": "Kahraman, korkuyu fark edip güvenli bir biçimde davranmanın cesaret olduğunu anladı."
     },
     {
       "id": "s4",

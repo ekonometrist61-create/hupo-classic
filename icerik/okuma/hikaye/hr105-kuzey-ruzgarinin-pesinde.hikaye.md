@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Kutuptaki gezi ertelenince Ece hayal kırıklığı yaşar. Bir sensörün yanlış okunabileceğini ve boş bir verinin de bilgi taşıdığını öğrenir."
+tanitim: "Kutuptaki gezi ertelenince {kahraman} hayal kırıklığı yaşar. Bir sensörün yanlış okunabileceğini ve boş bir verinin de bilgi taşıdığını öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

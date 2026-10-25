@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Güneşkent'te bir durak, yolcuya ne zaman neyi önereceğini bilen bir sistem. Elif ve arkadaşları, bir sistemin ne kadar hatırlaması gerektiğini sorar."
+tanitim: "Güneşkent'te bir durak, yolcuya ne zaman neyi önereceğini bilen bir sistem. {kahraman} ve arkadaşları, bir sistemin ne kadar hatırlaması gerektiğini sorar."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

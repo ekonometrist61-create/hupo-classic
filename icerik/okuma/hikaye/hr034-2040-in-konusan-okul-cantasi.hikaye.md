@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas, hayali]
 deger_anahtarlari: [D12, D16]
 yetiskin_uygun: false
-tanitim: "Akıllı çanta her soruyu çözüyor. Deniz neden kendi cevabını bulmak istedi?"
+tanitim: "Akıllı çanta her soruyu çözüyor. {kahraman} neden kendi cevabını bulmak istedi?"
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

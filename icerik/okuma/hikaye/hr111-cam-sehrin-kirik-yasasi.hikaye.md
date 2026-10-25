@@ -11,7 +11,7 @@ dunya_tipi: masalsi
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Düşüncelerin duvarda göründüğü bir şehirde Ada, gizliliği ve güvenliği birlikte düşünmeyi öğrenir. Rıza ve sorumluluk üzerine bir yasa tartışması."
+tanitim: "Düşüncelerin duvarda göründüğü bir şehirde {kahraman}, gizliliği ve güvenliği birlikte düşünmeyi öğrenir. Rıza ve sorumluluk üzerine bir yasa tartışması."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

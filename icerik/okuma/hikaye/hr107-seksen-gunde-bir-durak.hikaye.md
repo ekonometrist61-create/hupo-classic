@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Ada'nın dünya gezisinde saat farkı, bir pazarlık ve yanlış bir çeviri var. Her yanlış anlaşılma ona acele etmeden dinlemeyi öğretir."
+tanitim: "{kahraman:ilgi} dünya gezisinde saat farkı, bir pazarlık ve yanlış bir çeviri var. Her yanlış anlaşılma ona acele etmeden dinlemeyi öğretir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D5]
 yetiskin_uygun: false
-tanitim: "Balon neden yükselir? Ayşe rengin mi, ısının mı etkisini araştırdı."
+tanitim: "Balon neden yükselir? {kahraman} rengin mi, ısının mı etkisini araştırdı."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

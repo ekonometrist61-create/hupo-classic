@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D1, D4]
 yetiskin_uygun: false
-tanitim: "Son dakikada gol atma fırsatı var. Kerem topu kendine mi tutacak, arkadaşına mı verecek?"
+tanitim: "Son dakikada gol atma fırsatı var. {kahraman} topu kendine mi tutacak, arkadaşına mı verecek?"
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

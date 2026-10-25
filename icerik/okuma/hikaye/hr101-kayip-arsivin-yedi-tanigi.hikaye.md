@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Bir fotoğrafın arkasındaki tarih doğru mu? Yedi tanık yedi ayrı şey anlatınca Elif ve Bora kesin cevabı değil, kanıtın sınırını öğrenir."
+tanitim: "Bir fotoğrafın arkasındaki tarih doğru mu? Yedi tanık yedi ayrı şey anlatınca {kahraman} ile {yoldas:yalin|bir arkadaşı} kanıtın sınırını öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

@@ -11,7 +11,7 @@ dunya_tipi: masalsi
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Bir gök olayının iki farklı tarihi var. Leyla, kaynakların güvenilirliğini ve neden korunması gerektiğini araştırırken kütüphanenin sırlarını öğrenir."
+tanitim: "Bir gök olayının iki farklı tarihi var. {kahraman}, kaynakların güvenilirliğini ve neden korunması gerektiğini araştırırken kütüphanenin sırlarını öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

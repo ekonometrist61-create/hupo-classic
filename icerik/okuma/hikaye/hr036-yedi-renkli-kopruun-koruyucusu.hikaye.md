@@ -11,7 +11,7 @@ dunya_tipi: masalsi
 izinli_turler: [ben, arkadas, hayali]
 deger_anahtarlari: [D5, D11]
 yetiskin_uygun: false
-tanitim: "Köprünün ışığı solunca kasaba karanlıkta kaldı. Defne korkusuyla nasıl yüzleşti?"
+tanitim: "Köprünün ışığı solunca kasaba karanlıkta kaldı. {kahraman} korkusuyla nasıl yüzleşti?"
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -36,7 +36,7 @@ etiketler:
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "Bekçi hangi duyguları taşlarla gösterdi?", secenekler: [{id: A, metin: "Sevinç, üzüntü, öfke, şaşkınlık, sevgi, umut ve korku"}, {id: B, metin: "Mavi, mor, yeşil"}, {id: C, metin: "Kuş, kedi, köpek"}, {id: D, metin: "Sis ve yağmur"}], dogru: A, aciklama: "Bekçi, yedi duyguyu yedi taşla gösterdi."}
   - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Bekçiye göre korku taşını kim yeniden parlatabilir?", secenekler: [{id: A, metin: "Korkusunu tanıyan kişi"}, {id: B, metin: "Korkmadığını söyleyen kişi"}, {id: C, metin: "Rüzgâr"}, {id: D, metin: "Yedi çocuk"}], dogru: A, aciklama: "Bekçi, korkusunu fark edip tanıyan kişinin taşı yeniden parlatabileceğini söyledi."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Kahramanın “cesaret korkmamak değilmiş” sözü ne anlatır?", secenekler: [{id: A, metin: "Hiç korkmamak gerektiğini"}, {id: B, metin: "Cesaretin korkuyu fark edip doğru davranmak olduğunu"}, {id: C, metin: "Köprünün kapandığını"}, {id: D, metin: "Mert'in yanına gitmeyi"}], dogru: B, aciklama: "Defne, korkuyu fark edip güvenli bir biçimde davranmanın cesaret olduğunu anladı."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Kahramanın “cesaret korkmamak değilmiş” sözü ne anlatır?", secenekler: [{id: A, metin: "Hiç korkmamak gerektiğini"}, {id: B, metin: "Cesaretin korkuyu fark edip doğru davranmak olduğunu"}, {id: C, metin: "Köprünün kapandığını"}, {id: D, metin: "Bir arkadaşının yanına gitmeyi"}], dogru: B, aciklama: "Kahraman, korkuyu fark edip güvenli bir biçimde davranmanın cesaret olduğunu anladı."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen korkuluk ne demektir?", secenekler: [{id: A, metin: "Bir çeşit korku filmi"}, {id: B, metin: "Korkak bir kişi"}, {id: C, metin: "Düşmeyi önlemek için köprü kenarına konan parmaklık"}, {id: D, metin: "Bir köprü türü"}], dogru: C, aciklama: "Korkuluk, köprünün kenarında düşmeyi engelleyen parmaklıktır."}
 ---
 @omurga

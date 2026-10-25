@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Meydanda beliren bir gölge bir bekçinin ruhu mu, yoksa ışığın oyunu mu? Nil ve Kaan, korkuyu ve iddiayı kanıttan ayırmayı öğrenir."
+tanitim: "Meydandaki gölge bir bekçinin ruhu mu, ışığın oyunu mu? {kahraman} ile {yoldas:yalin|bir arkadaşı} korkuyu ve iddiayı kanıttan ayırmayı öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

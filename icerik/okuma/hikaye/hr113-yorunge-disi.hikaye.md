@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Bir uydunun yakın geçişinde Deniz ve ekibi belirsiz verilerle karar vermeyi öğrenir. Kesinlikten çok, kararın gerekçesi önemlidir."
+tanitim: "Bir uydunun yakın geçişinde {kahraman} ve ekibi belirsiz verilerle karar vermeyi öğrenir. Kesinlikten çok, kararın gerekçesi önemlidir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

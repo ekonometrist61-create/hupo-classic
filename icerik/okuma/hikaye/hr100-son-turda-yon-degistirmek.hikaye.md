@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Yarışa iki gün kala ağrı başlayan Defne, rekor peşinden koşmak yerine sağlığını ve hedefini yeniden düşünmeyi öğrenir."
+tanitim: "Yarışa iki gün kala ağrı başlayan {kahraman}, rekor peşinden koşmak yerine sağlığını ve hedefini yeniden düşünmeyi öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"

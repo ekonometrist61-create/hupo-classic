@@ -105,7 +105,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Bir fotoğrafın arkasındaki tarih doğru mu? Yedi tanık yedi ayrı şey anlatınca Elif ve Bora kesin cevabı değil, kanıtın sınırını öğrenir.",
+    "tanitim": "Bir fotoğrafın arkasındaki tarih doğru mu? Yedi tanık yedi ayrı şey anlatınca {kahraman} ile {yoldas:yalin|bir arkadaşı} kanıtın sınırını öğrenir.",
     "durum": "taslak",
     "fis_kodu": "HR-101"
   },

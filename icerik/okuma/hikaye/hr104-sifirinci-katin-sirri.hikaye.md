@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Asansörde 0 katı var mı? Aras ve Ekin, söylentiyi kanıttan ve yanlış etiketi gerçek bir kattan ayırmayı öğrenir."
+tanitim: "Asansörde 0 katı var mı? {kahraman} ile {yoldas:yalin|bir arkadaşı}, söylentiyi kanıttan ve yanlış etiketi gerçek bir kattan ayırmayı öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
