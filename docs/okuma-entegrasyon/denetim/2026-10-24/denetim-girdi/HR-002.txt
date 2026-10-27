@@ -1,0 +1,69 @@
+# HR-002 · Renkli Uçurtmanın Peşinde · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=15c7b8ae-bbb1-4ef0-a24b-5ddbe8b682d0, surum_no=3, sha256=7a6e2d7366cb39158d6adca8b4cb94d94d2eba200b61545e99b710c7f600a907
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr002-renkli-ucurtma | Tür: macera | Konu: mahalle | Dünya: gercekci
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Rüzgâr uçurtmayı sokaklara taşıdı. Bir harita çizen çocuk onu bulabilir mi?
+İzinli türler: ben, kardes, arkadas, hayali
+Değer anahtarları (sürüm): D20 | maarif.ana_deger: D20
+Etiketler: ana_sinif=2, okuma_zorlugu=1, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: kesif, dayanisma | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: yukari (lexeme, first_hint: yukarı); harita (lexeme, application: harita); kavram_hr002 (concept, application: Yönler); atasoz_hr002 (proverb, application: Komşu komşunun külüne muhtaçtır)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":6,"simge_sayisi":10,"kelime_sayisi":225,"tahmini_sure_dk":4,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":2,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+[KAHRAMAN hal=yalin] kırmızı, sarı ve mavi parçalarla bir uçurtma yapmıştı. Uçurtma birden [KELİME yuva=s2_yukari] yükseldi. İpi elinden kayınca sokak boyunca uçup gitti. [KAHRAMAN hal=yalin] arkasından koşacaktı ki [YOLDAŞ hal=yalin yedek=Hupo] kanadını açtı. "Koşmadan önce nereye gittiğini görelim." [İŞARET kod=kus]
+--- Sayfa 2 ---
+Uçurtma önce fırının üstünden geçti. Sonra sola kıvrıldı ve saatli dükkânın arkasına kayboldu. [KAHRAMAN hal=yalin] cebindeki küçük deftere bir çizgi çizdi. Fırını, dükkânı ve büyük dut ağacını işaretledi. Böylece deftere küçük bir [KELİME yuva=s2_harita] çizilmiş oldu.
+--- Sayfa 3 ---
+Fırının önünde ekmek[İKON seed] kokusu vardı. Fırıncı dışarı çıktı. "Biraz önce renkli bir şey geçti," dedi. "Rüzgâr[İKON wind] onu batıya sürükledi." [KAHRAMAN hal=yalin] defterinin köşesine küçük bir ok çizdi. İlk kez bir harita[İKON map] yapmanın işe yaradığını düşündü.
+--- Sayfa 4 ---
+Sokağın sonunda iki yol ayrılıyordu. Biri yokuş yukarı çıkıyor, diğeri parka iniyordu. Hangi yolu seçeceğini bilemeyen [KAHRAMAN hal=yalin] yerdeki kurdeleye baktı. Bir süre sonra pencerede asılı rüzgâr[İKON wind] gülünün kanatlarının parka doğru[İKON check] döndüğünü fark etti. [YOLDAŞ hal=yalin yedek=Hupo] rüzgârın ara sıra yön[İKON compass] değiştirdiğini hatırlattı. Yalnızca buna güvenemezlerdi.
+--- Sayfa 5 ---
+Dut ağacının yanına vardıklarında uçurtma görünmüyordu. Tam dönerken üst kattan bir ses[İKON bell] duyuldu: "Bunu mu arıyorsunuz?" Yaşlı bir komşu uçurtmayı balkonda bulmuştu. Balkona çıkıp almak yerine kapıyı çalıp yardım[İKON hand-help] istediler. Komşu uçurtmayı güvenle getirdi. Bu yardımla [KAHRAMAN hal=ilgi] aklına şu söz geldi: "[ATASÖZÜ yuva=ata_komsu]".
+--- Sayfa 6 ---
+[KAHRAMAN hal=yalin] haritasına son bir işaret[İKON flag] koydu. "Yukarıda gördüm, aşağıda buldum!" diye güldü. Bu kez ipi sağlam bağladı. Akşam arkadaşlarına hem uçurtmayı hem de üç sokaklık maceranın haritasını gösterdi. Annesi, onun dikkatine ve yardımlaşmaya sevindi.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=A
+  Metin: Uçurtma ilk olarak nerenin üstünden geçti?
+  A) Fırının
+  B) Okulun
+  C) Parkın
+  Açıklama: Uçurtma önce fırının üstünden geçti.
+s2 [cikarim] dayanak_sayfa=2 doğru=A
+  Metin: Çocuk deftere çizgi ve işaretler neden çizdi?
+  A) Uçurtmanın gittiği yolu hatırlamak için
+  B) Defteri süslemek için
+  C) Arkadaşlarına resim göstermek için
+  Açıklama: Fırını, dükkânı ve dut ağacını işaretleyerek uçurtmanın yolunu takip etti.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Çocuk uçurtmasını bulunca ipi neden bu kez sağlam bağladı?
+  A) Bir daha kaybolmasın diye
+  B) Uçurtma çok ağır olduğu için
+  C) Komşu ona bunu söylediği için
+  Açıklama: Çocuk, sağlam bağlarsa uçurtmanın bir daha uçup gitmeyeceğini öğrenmişti.
+s4 [sozcuk_baglami] dayanak_sayfa=2 doğru=A
+  Metin: Metinde geçen harita sözcüğü ne anlama gelir?
+  A) Yolları ve yerleri gösteren çizim
+  B) Uçan bir oyuncak
+  C) Büyük bir kapı
+  Açıklama: Çocuk defterine yolları ve yerleri gösteren bir çizim yaptı.
+
+## Sözlük
+- s2_yukari | kelime | yazım: yukarı | 2–2 | anlam: Daha yüksek bir yöne doğru.
+- s2_harita | kelime | yazım: harita | 2–2 | anlam: Bir yeri, yolları ve önemli yerleri gösteren çizim.
+- ata_komsu | atasozu | yazım: Komşu komşunun külüne muhtaçtır | 2–2 | anlam: Komşuya her zaman ihtiyaç duyulur; komşular birbirine yardım eder.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

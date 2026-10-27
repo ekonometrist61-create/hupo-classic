@@ -1,0 +1,160 @@
+# HR-041 · Yedi Adımda Kayıp Ada · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=fd8896a6-5cc6-4346-84fa-b4131cc972cb, surum_no=2, sha256=77ba70e71be97a33a299e7da58c99535a90f936973fdf52ea1984b0af77b442c
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr041-yedi-adimda-kayip-ada | Tür: macera | Konu: kayip_ada_kiyi_haritasi | Dünya: gercekci
+Sınıf: 6–6 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Eski haritada bir ada var ama kıyı değişmiş. Hazine mi, yoksa başka bir sır mı?
+İzinli türler: ben, arkadas, baska_biri
+Değer anahtarları (sürüm): D5, D16 | maarif.ana_deger: D5
+Etiketler: ana_sinif=6, okuma_zorlugu=3, kavram_zorlugu=4, ilgi=ortak, kanit_duzeyi=C
+Temalar: doga, kesif, hayvanlar | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sozcuk_varsayim_hr041 (lexeme, first_hint: varsayım); sozcuk_olcek_hr041 (lexeme, application: ölçek); sozcuk_lagun_hr041 (lexeme, application: lagün); kavram_hr041 (concept, application: Varsayım ile kanıtı ayırmak; kıyının zamanla değiştiğini ve korunan alanlara saygı gösterilmesi gerektiğini anlamak); atasoz_hr041 (proverb, application: Acele işe şeytan karışır)
+Ölçülen: {"soru_sayisi":8,"sayfa_sayisi":35,"simge_sayisi":71,"kelime_sayisi":3085,"tahmini_sure_dk":27,"yoldas_yer_sayisi":24,"hedef_tur_dagilimi":{"lexeme":3,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":2,"hatirlama":2,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":2}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Altıncı sınıfların doğa kampı, Karadeniz kıyısındaki Çamlıburun Araştırma[İKON magnifier] Merkezi'nde yapılıyordu. Kamp merkezine vardıklarında girişte bir fotoğraf sergisi açılmıştı. Bir fotoğrafta deniz[İKON wave], neredeyse kıyıdaki taşa kadar uzanıyor; başka birinde aynı taş geniş bir kumluğun ortasında kalıyordu. [KAHRAMAN hal=yalin] fotoğraflara dikkatle bakmadan yürüdü. Selin ise her birinin altında yazan tarihi defterine geçirdi. O an ikisi de bu fotoğrafların sonraki günlerde ne kadar işe yarayacağını bilmiyordu. [İŞARET kod=ipucu] Kampın ilk akşamı, rehberleri Suna Hanım çocuklara bir harita[İKON map] gösterdi. Haritada patikalar, gözlem noktaları, dere yatakları ve koruma sınırları vardı. Ancak haritanın bir köşesi öyle çok silinmişti ki koyun ortasındaki küçük kara parçası bir ada gibi görünüyordu.
+--- Sayfa 2 ---
+“Burası Kayıp Ada mı?” diye sordu [KAHRAMAN hal=yalin]. Kamp başlamadan önce internette gördüğü bir paylaşımda, bölgedeki kayıp adaya ait olduğu söylenen eski bir hazine haritası vardı. Suna Hanım gülümsedi. “Haritalar bazen yanlış sorular sormamıza neden olur. Bu gördüğünüz çizimde suyun nerede başladığını bile kesin bilmiyoruz. Önce güvenilir bilgiyi bulmalıyız.” Sınıfın gözlem ekibinde dört arkadaş[İKON friends] vardı: haritalara meraklı Selin, sabırsız ama cesur [KAHRAMAN hal=yalin], kuşların seslerini ayırt eden [YOLDAŞ hal=yalin yedek=Hupo] ve gördüklerini deftere geçirmeyi seven Asya. Birlikte çalışacaklardı. Her grubun görevi, merkezdeki eski haritayı güncel haritayla karşılaştırmak ve gözlem izinleri verilen noktalara ilişkin bir rapor hazırlamaktı. Selin, eski haritanın altındaki notu fark etti: “Yedi adım[İKON footprint], tek yol; suyun anlattığına kulak ver.”
+--- Sayfa 3 ---
+Bir köşede çok küçük bir tarih yazıyordu. [KAHRAMAN hal=yalin], “Kesin hazine!” diye fısıldadı. [YOLDAŞ hal=yalin yedek=Hupo] ise tarihe bakıp “Bu harita[İKON map] kırk yıl önce çizilmiş. Kıyı aynı kalmış olabilir mi?” dedi. Suna Hanım onlara cevap vermek yerine yeni bir soru sordu: “Bir haritanın yaşı neden önemlidir?” Çocuklar denizlerin, rüzgârın ve akarsuların kıyıları zamanla değiştirebildiğini hatırladılar. Gruptaki herkes farklı bir [KELİME yuva=pd_varsayim] ortaya attı. [KAHRAMAN hal=yalin] eski bir geçit[İKON bridge] bulunacağını, Asya unutulmuş bir iskele kalıntısı görüleceğini, Selin ada diye çizilen yerin belki de sazlık olduğunu düşündü. [YOLDAŞ hal=yalin yedek=Hupo] ise kuşların oraya neden toplandığını öğrenmek istiyordu. Kamptaki ilk görev[İKON quest] aslında eski bir fotoğrafla başlamıştı.
+--- Sayfa 4 ---
+Fotoğrafta aynı tepe[İKON mountain], aynı gökyüzü[İKON cloud] ve birbirinden farklı iki su çizgisi vardı. Selin ikisinin aynı yer olduğunu söylemiş, [KAHRAMAN hal=yalin] buna inanmamıştı. Suna Hanım iki görüntünün çekildiği yılları okuduğunda [KAHRAMAN hal=ilgi] ağzı açık kaldı. “Bir yer nasıl böyle değişebilir?” diye sordu. Rehber, akarsuların taşıdığı malzemeden ve dalgaların kıyıda yaptığı değişikliklerden söz etti. Asya bu açıklamayı defterine not[İKON notebook] etti ama öğretmeni ona önemli bir ayrımı hatırlattı: “Bu genel bilgi. Bizim burada tam olarak ne olduğunu anlamak için gözlem yapmalıyız.” [KAHRAMAN hal=yalin] o andan sonra eski fotoğraftaki kara parçasını yalnızca bir gizem olarak değil, cevap bekleyen bir araştırma sorusu olarak görmeye başladı.
+--- Sayfa 5 ---
+Akşam çadırlarına dönmeden önce rapor defterlerinin ilk sayfasına bir kural yazdılar: “Varsayım kanıt değildir.” Altına ikinci bir kural eklediler: “İzinli güzergâhın dışına çıkılmayacak.” Böylece maceranın ilk adımı, bir gizem kadar bir sorumluluk da taşıyordu. Ertesi sabah Suna Hanım, ekipleri gözlem alanına götürdü. Önce herkes haritanın yönünü pusulaya göre ayarladı. Selin kâğıdı o kadar dikkatli çevirdi ki kuzey[İKON compass] oku gerçek yönü gösterdiğinde bir an durup gülümsedi. Daha önce yönleri yalnızca ders kitabında çizilmiş oklar olarak görmüştü; şimdi rüzgârın yönü, denizin konumu ve tepenin gölgesiyle ilişkilendiriyordu.
+--- Sayfa 6 ---
+[KAHRAMAN hal=yalin], “Kâğıttan bakınca patika çok kısa,” dedi. “Şuradan yürürsek beş dakikada ulaşırız.” Suna Hanım onu durdurdu. Haritanın altındaki [KELİME yuva=pd_olcek] çizgisini gösterdi. Kâğıttaki bir santimetre, arazide çok daha uzun bir mesafeye karşılık geliyordu. Çocuklar önce cetvelle ölçtüler, ardından izinli yürüyüş yolunun ne kadar sürdüğünü tahmin ettiler. [KAHRAMAN hal=ilgi] önerdiği kestirme ise sulak alanın sınırından geçiyordu. “Kestirme orası olsa bile kullanamayız,” dedi Asya. “Hem kuşların yuvalama alanı hem de geçiş yasak.” [KAHRAMAN hal=yalin] kaşlarını kaldırdı. “Ben sadece daha çabuk varmak istemiştim.”
+--- Sayfa 7 ---
+“Hızlı gitmek, doğru gitmek demek değil,” diye karşılık verdi [YOLDAŞ hal=yalin yedek=Hupo]. Bu söz [KAHRAMAN hal=ilgi] aklında kaldı. Suna Hanım eski bir atasözünü hatırlattı: “[ATASÖZÜ yuva=pd_ata_acele].” Yol ayrımındaki levha yeni boyanmıştı. Ancak hemen arkasındaki eski taşın üzerinde silinmiş kırmızı bir işaret[İKON flag] görünüyordu. [KAHRAMAN hal=yalin], bunun haritadaki simgelerden biri olduğunu düşündü. Suna Hanım, işaretin geçmişte kullanılmış yürüyüş rotasına ait olabileceğini söyledi. Öğrenciler levhanın fotoğrafını çektiler ve yeni rotayla eski işareti karşılaştırdılar. Selin defterine “Bir işaretin anlamı zamanla değişebilir” yazdı.
+--- Sayfa 8 ---
+Asya aynı sözün yalnızca haritalar için değil, günlük hayatta duydukları bazı sözcükler için de geçerli olabileceğini fark etti. Örneğin “ada” kelimesi, çevresi tamamen suyla kuşatılan yeri anlatıyordu; eski haritadaki şeklin bu tanıma hâlâ uyup uymadığı bilinmiyordu. Patikada ilerlerken taşların arasında beyaz, yassı kabuklar gördüler. Suna Hanım bunların bazılarını toplayıp incelemelerine izin vermedi; koruma alanında canlı veya cansız doğal malzemelerin yerinde bırakılması gerektiğini açıkladı. Bunun yerine çocuklar fotoğraf çekti, konum işaretledi ve çizim yaptı.
+--- Sayfa 9 ---
+Haritadaki birinci işaret[İKON flag], eski bir ahşap gözlem platformuydu. Gözlem kulesinin tahtaları yenilenmiş, yanına bilgilendirici levhalar konmuştu. Levhada kıyıya vuran kumun yıl içinde yer değiştirebildiği anlatılıyordu. Selin, haritanın kenarına bir not[İKON notebook] düştü: “Kıyı çizgisi sabit değildir.” İkinci işaret küçük bir tatlı su[İKON drop] gözlem kuyusuydu. Kuyuya dokunmadılar; rehberleri, ölçüm cihazıyla tuzluluk ve su seviyesi hakkında bilgi verdi. [KAHRAMAN hal=yalin] birden anladı: “Belki haritadaki çizgi denizin değil, suyun değiştiği bir yerin işareti.” Suna Hanım, “Bunu söylemek için artık bir gerekçen var,” dedi. “Ama tek kanıtla karar vermeyelim.”
+--- Sayfa 10 ---
+Öğleden sonra rüzgâr[İKON wind] hafifledi. [YOLDAŞ hal=yalin yedek=Hupo] kayıt cihazını çıkarıp ötüşleri dinledi. Sabah duydukları martı seslerinin arasında ince bir ötüş vardı. Rehber, bu kuş türünün göç sırasında sulak alanlarda mola verdiğini anlattı. Öğrenciler, sazlıkların yalnızca su[İKON drop] ve bitkiden oluşmadığını; göç eden canlılar için beslenme ve dinlenme alanı da olabileceğini öğrendi. Fakat eski haritada adanın bulunduğu yerde tuhaf bir sessizlik vardı. Kuş sesleri uzaktan geliyordu; sazlıkların yakınında ise iri, paslı bir levha duruyordu. Levhada yıllar önce kapanmış bir tekne[İKON boat] iskelesinin adı yazıyordu. [KAHRAMAN hal=yalin] heyecanlandı. “İşte!
+--- Sayfa 11 ---
+Kayıp Ada'nın iskelesi!” Asya hemen fotoğraf çekti. “Levha eskiden burada bir iskele olduğunu gösteriyor,” dedi. “Ama adaya çıkılabildiğini değil.” [YOLDAŞ hal=yalin yedek=Hupo], kıyıda birkaç eski halat parçası ve kırık tahta olduğunu fark etti. Onların arasından geçmedi; görevliye gösterdi. Suna Hanım, atıkların uzman ekip tarafından güvenli biçimde kaldırılması gerektiğini söyledi. [KAHRAMAN hal=yalin], “O zaman[İKON clock] gizem bir hazine değil, temizlenmesi gereken bir yer olabilir,” dedi. Gözlem platformunda öğle yemeği molası verdiler. Selin defterine üç sütun çizdi: “Gördüklerimiz, düşündüklerimiz, hâlâ bilmediklerimiz.” Gördüklerine eski iskele levhasını, ölçüm kuyusunu ve değişen kıyı çizgisini yazdı.
+--- Sayfa 12 ---
+Düşündüklerine ise “Ada sanılan yer eski bir kum seti olabilir” notunu ekledi. Son sütunda üç soru[İKON question] vardı: Bu kum seti şimdi neredeydi? Kuşlar neden burada dinleniyordu? Haritada neden yedi işaret[İKON flag] bulunuyordu? [KAHRAMAN hal=yalin] son soruya takıldı. “Yedinci işaret bir sandığı gösteriyor olabilir.” Asya gözlerini devirdi. “Her şeyi sandığa bağlama.” “Belki sandık[İKON chest] kuşlara yem doludur,” diye şaka yaptı [YOLDAŞ hal=yalin yedek=Hupo]. Dördü birden güldü. Sonra [YOLDAŞ hal=yalin yedek=Hupo] ciddi bir sesle ekledi: “Ama yedi adımın her biri başka bir gözlem noktasını gösteriyorsa, hepsini bir araya getirmeden sonuca ulaşamayız.”
+--- Sayfa 13 ---
+[YOLDAŞ hal=yalin yedek=Hupo], platformdan duydukları ince ötüşün kaydını sınıfın kuş[İKON bird] gözlem panosunda dinletti. Bir öğrenci bunun serçe sesi olduğunu düşündü. Başka biri göçmen bir kıyı kuşunun sesi olabileceğini söyledi. Suna Hanım kesin bir tür adı vermedi; güvenilir ses[İKON bell] kayıtlarıyla karşılaştırmadan emin olamayacaklarını açıkladı. [YOLDAŞ hal=yalin yedek=Hupo] biraz şaşırdı. Teknolojinin her soruya anında cevap vermesine alışmıştı. Fakat bu kez cihaz yalnızca ses topluyordu; yorum yapmak kendilerine düşüyordu. Asya bunu raporun kenarına ekledi: “Kayıt, gözlemin bir parçasıdır. Doğru yorum için başka kaynaklar da gerekir.”
+--- Sayfa 14 ---
+Günün sonunda çocuklar kamp merkezine döndü. Akşamki paylaşım toplantısında başka ekiplerin bulgularını da dinlediler. Bir grubun fotoğrafında eski haritadakine benzer bir kıyı şekli görülüyordu; bir diğeri kumulların rüzgârla hareket ettiğini anlatmıştı. Selin bu bilgileri kendi haritalarına ekledi. Gece[İKON moon] boyunca çadırların üzerinde yağmur[İKON rain] sesi duyulmuştu. [KAHRAMAN hal=yalin] sabah uyandığında kıyının sis içinde kaybolduğunu gördü. İlk anda yağmuru maceraya engel saydı. Ardından çadırın hemen dışındaki yağmur ölçer dikkatini çekti. Öğretmenleri ölçüm miktarını deftere yazıyor ve bir önceki günle karşılaştırıyordu.
+--- Sayfa 15 ---
+Selin, “Demek yürüyüş yapamasak da veri toplayabiliyoruz,” dedi. [KAHRAMAN hal=yalin] gönülsüzce defterini açtı. Hava durumu tahminiyle gerçekleşen hava olayının her zaman[İKON clock] birebir aynı olmayabileceğini de not[İKON notebook] etti. Böylece iptal edilen gezi, başka bir gözlem çalışmasına dönüşmüş oldu. Kampın ikinci günü hava kapalıydı. Rehber, rüzgârın hızlanabileceği uyarısıyla açık kıyı yürüyüşünü iptal etti. [KAHRAMAN hal=yalin] hayal kırıklığını saklayamadı. “Tam sonuca yaklaşmıştık.” Suna Hanım, “Araştırma[İKON magnifier] bazen durmayı da gerektirir,” dedi. “Bugün arşive bakacağız.” Merkezin küçük kütüphanesinde yıllara göre hazırlanmış haritalar, eski hava fotoğrafları ve kıyı raporları vardı.
+--- Sayfa 16 ---
+Asya, kırk yıl önce çekilmiş bir fotoğrafı buldu. Fotoğraftaki ada, aslında denizden ayrı duran küçük bir kara parçası gibi görünüyordu. Ancak altındaki açıklama, kış[İKON snow] aylarında suların yükseldiğini; yazın bazı yerlerde kum[İKON desert] setlerinin belirginleştiğini söylüyordu. “Demek ada bazen görünüyormuş,” dedi [KAHRAMAN hal=yalin]. Selin dikkatle baktı. “Görünür olmak başka, sürekli ada olmak başka.” [YOLDAŞ hal=yalin yedek=Hupo] daha yeni bir fotoğraf getirdi. Eski iskele artık kullanılmıyordu. Koruma sınırları da değişmişti. Bir zamanlar deniz[İKON wave] kenarında ziyaretçi kabul eden bölüm, bugün göçmen kuşların hassas alanı sayılıyordu.
+--- Sayfa 17 ---
+O an [KAHRAMAN hal=ilgi] yüzü düştü. “Hazine arama oyunu yerine dosya okuyoruz.” Asya ona eski defterdeki sözlerini hatırlattı: “Varsayım kanıt değildir. Sen bizi maceraya çağırdın ama asıl macera gerçeği öğrenmek olabilir.” [KAHRAMAN hal=yalin] önce itiraz edecekti. Sonra fotoğrafların farklı yıllarda çekildiğini fark etti. Aynı yeri karşılaştırmadan bir şey söylemek gerçekten zordu. “Peki,” dedi. “Hazineyi bir süreliğine unutuyorum.” Öğretmenler harita[İKON map] üzerinde dört yeni nokta işaretledi. Bunlar eski kumul çizgisi, yeni sazlık sınırı, ölçüm istasyonu ve mevcut gözlem platformuydu. Böylece toplam yedi durak tamamlandı. Suna Hanım, adaların ve kıyı şekillerinin değişimini anlamak[İKON lightning-idea] için bu noktaların birlikte incelenmesi gerektiğini açıkladı.
+--- Sayfa 18 ---
+Akşam [KAHRAMAN hal=yalin] defterine uzun bir cümle yazdı: “Bir ipucunu sevmek, onun doğru olduğunu kanıtlamaz.” Altına da küçük bir sandık[İKON chest] resmi çizdi; üstünü çizmedi. “Hayal kurmak da önemli,” dedi. “Sadece hayalle gerçeği karıştırmamak lazım.” Gecenin ilerleyen saatlerinde [KAHRAMAN hal=yalin], dışarıdan gelen rüzgâr[İKON wind] sesine uyandı. “Kıyı orada duruyor, biz burada uyuyoruz,” diye düşündü. Sandığı bir gün bulabileceğine ilişkin hayalinden vazgeçmek istemiyordu. Çadırın küçük penceresinden görünen yıldızlara baktı ve ilk defa bir maceranın sonunda hiçbir şey almadan dönmenin de değerli olabileceğini düşündü. Ertesi sabah kahvaltıda düşüncesini arkadaşlarıyla paylaştı. Selin, “Bilgi almak, eşya almak gibi değil,” dedi.
+--- Sayfa 19 ---
+“Bir yeri öğrenince onu bitirmiyoruz.” Asya ise kendilerine gösterilen eski fotoğrafları hatırlattı. “Daha önce gözlem yapanlar olmasa bugün neler değiştiğini anlayamazdık. Belki bizim kayıtlarımız da yıllar sonra işe yarar.” [KAHRAMAN hal=yalin] kahvaltısını bitirirken sandık[İKON chest] aramak kadar kayıt tutmanın da heyecanlı olabileceğine şaşırdı. Bu düşünce, biraz sonra görecekleri manzarayı daha dikkatli incelemesini sağlayacaktı. O sabah [KAHRAMAN hal=ilgi] aklında yeni bir soru[İKON question] vardı: “Koruma alanına kim karar veriyor?” Suna Hanım, bu tür kararların ilgili kurumlarca bilimsel çalışmalar ve mevzuat çerçevesinde alındığını anlattı. Çocuklar bir bölgenin herkese açık olmamasının, kimsenin onu sevmediği anlamına gelmediğini düşündü.
+--- Sayfa 20 ---
+Bazen bir alanı ziyaret etmekten vazgeçmek onu korumanın parçasıydı. Selin, “Bize yasak olan yer, kuşların evi olabilir,” dedi. Bu cümle [KAHRAMAN hal=ilgi] sandık[İKON chest] hayalini biraz geriye itti. Çünkü bir evin kapısını, sahibine sormadan açmayı doğru bulmuyordu. Üçüncü gün hava açınca izinli gezi yeniden başladı. Grup, görevliler eşliğinde son gözlem platformuna yürüdü. Platformdan açık deniz[İKON wave], kumullar ve dar bir [KELİME yuva=pd_lagun] görülüyordu. Selin haritayı açıp yedi noktayı teker teker işaretledi. Çizgileri birleştirince tuhaf bir şekil çıktı: Eski haritadaki 'adanın' çevresini çiziyorlardı.
+--- Sayfa 21 ---
+“Yani gizli yol bir yere gitmiyor,” dedi [YOLDAŞ hal=yalin yedek=Hupo]. “Bir sınırı gösteriyor.” Suna Hanım başını salladı. “Bu, çok önemli bir çıkarım. Ama hangi sınır?” Çocuklar, güncel koruma haritasıyla kendi çizimlerini yan yana koydu. Sınırlar tam olarak aynı değildi. Eski haritanın çizgisi bir zamanlar suyla çevrili olan kum[İKON desert] setini, yeni haritanın çizgisi ise bugün korunması gereken sazlık ve lagünü gösteriyordu. Aynı alan, iki farklı zamanda iki farklı görünüm kazanmıştı. Asya, sahada sessiz durma işaretini gösterdi. İnsan seslerinin kuşları rahatsız edebileceğini ve gözlemi zorlaştırabileceğini öğrenmişlerdi.
+--- Sayfa 22 ---
+[KAHRAMAN hal=yalin] önce sabırsızlandı; arkadaşlarına gördüğü her şeyi yüksek sesle anlatmak istiyordu. Sonra yalnızca defterine küçük bir çizim yaptı. Bir kuşun sığ suda yürüyerek beslendiğini, bir diğerinin ise daha uzak bir taşın üzerinde dinlendiğini gördü. Aynı alanı kullanan canlıların ihtiyaçlarının farklı olabileceğini anladı. Bu sessiz bekleyiş, birkaç dakika öncesine kadar boşa harcanan zaman[İKON clock] gibi gelmişti. Şimdi gözlemin kendisi yolculuğun en heyecanlı bölümüne dönüşüyordu. [KAHRAMAN hal=yalin] gözlerini kısıp dürbünle baktı. Kıyıda bir grup kuş[İKON bird] vardı. İki tanesi suya dalıyor, diğerleri birbirini takip ederek kumsalda yürüyordu.
+--- Sayfa 23 ---
+“Ben burayı bulup üzerine çıkabileceğimizi sanmıştım,” dedi. “Oysa önemli olan uzaktan görüp korumakmış.” Tam o sırada [YOLDAŞ hal=yalin yedek=Hupo] kayıt cihazında sabahki ince ötüşü duydu. Kuşların dinlendiği yerin yakınında küçük bir plastik atık birikintisi de görünüyordu. Asya dürbünle bakıp yerini haritaya işaretledi. Yetişkin görevlilerden biri, atıkların temizlenmesi için koruma ekibine bildirim yapılacağını söyledi. “Kayıp Ada'nın hazinesi kuşlar mı?” diye sordu [KAHRAMAN hal=yalin]. Selin, “Kuşlar, su[İKON drop], bitkiler ve hepsinin yaşadığı yer,” diye cevap verdi. Öğretmenleri çocukların yanına gelip notlarını inceledi. “Bugün çok iyi bir şey yaptınız,” dedi.
+--- Sayfa 24 ---
+“Bir yerin değerini yalnızca orada ne bulabileceğinize göre değil, orada nelerin yaşadığına göre değerlendirdiniz.” Asya son fotoğrafı çekti. Bu kez kadrajda hazine sandığı yoktu. Bir yanda su[İKON drop], öbür yanda sazlık, ortada güneş[İKON sun] ışığında dinlenen kuşlar vardı. Fotoğrafın altına şu açıklamayı yazdı: “Kayıp Ada değil, korunması gereken yaşayan kıyı.” Platformdan dönerken yürüyüş grubuna yakın bir okulun öğrencileri rastladı. Onlardan biri koruma alanını neden göremediklerini sordu. [KAHRAMAN hal=yalin] hemen “Çünkü orada kuşlar yaşıyor,” dedi. Ardından açıklamasının eksik olduğunu fark etti.
+--- Sayfa 25 ---
+Bir alanın bazı bölümleri gözleme açık, bazıları ise hassas dönemlerde kapalı[İKON lock] olabilirdi. Suna Hanım, ziyaret kurallarının resmî levhalardan öğrenilmesi gerektiğini gösterdi. [KAHRAMAN hal=yalin], günün başında aceleyle kullandığı cümleyi düzeltti: “Bazı bölgelere izin verilmiyor. Orada kuşlar besleniyor ve dinleniyor. Biz buradan gözlem yapabiliyoruz.” Çocuklar neden-sonuç ilişkisini anlatırken dikkatli olmanın önemini konuştu. Selin daha sonra rapora yalnızca yasakları değil, izinli ziyaret seçeneklerini de yazdı. Çünkü insanlara bir yeri korumayı anlatmak, doğayla bağlarını tümüyle kesmek anlamına gelmiyordu. Doğru bilgiyle ve doğru mesafeden tanımak mümkündü.
+--- Sayfa 26 ---
+Kampa döndüklerinde işlerinin bittiğini sandılar. Ancak Suna Hanım, “Gözlem yaptınız, şimdi bilgiyi başkalarının anlayacağı hâle getirin,” dedi. Her ekip kendi bulgularını sunacaktı. Selin haritaları büyüttü; [YOLDAŞ hal=yalin yedek=Hupo] kuş[İKON bird] seslerinden kısa bir kayıt hazırladı; Asya fotoğrafları sıraya koydu. [KAHRAMAN hal=yalin] ise sunumun girişini yazmayı üstlendi. Hazırlık sırasında küçük bir anlaşmazlık çıktı. [KAHRAMAN hal=yalin] sunumun en heyecanlı kısmını anlatmak istiyor, Selin ise yanlış anlaşılmaktan çekiniyordu. “Başlığa hazine dersek herkes gelir,” dedi [KAHRAMAN hal=yalin]. Selin, “Gelirler ama yanlış bir şey beklerler,” diye cevap verdi. Asya iki farklı başlık yazıp gruba gösterdi.
+--- Sayfa 27 ---
+Birincisi abartılıydı, ikincisi yalnızca “Kıyı Raporu” diyordu. [YOLDAŞ hal=yalin yedek=Hupo] üçüncü bir seçenek önerdi: “Gerçek soru[İKON question], kayıp adanın nerede olduğuydu. Cevabın da merak[İKON curiosity] uyandırmasını sağlayabiliriz.” Böylece dinleyiciyi kandırmadan ilgi çekmenin mümkün olduğunu gördüler. Herkes kendi fikrinden bir parça vazgeçti ve ortaya daha iyi bir metin çıktı. İlk taslağı şöyleydi: “Kırk yıllık hazine bilmecesini çözdük!” Asya başını iki yana salladı. “Gerçekte olmayan bir hazineyi çözdüğümüzü söyleyemeyiz.” [KAHRAMAN hal=yalin] kalemi bıraktı. “Ama kimse sıkıcı bir rapor dinlemek istemez.” Selin yeni bir başlık önerdi: “Haritada Kaybolan Ada Gerçekte Nereye Gitti?”
+--- Sayfa 28 ---
+“Bu hem merak[İKON curiosity] uyandırıyor hem de yanlış bir iddia kurmuyor,” dedi. Sunum günü, sınıflar merkezin küçük salonunda toplandı. [KAHRAMAN hal=yalin] önce eski haritayı gösterdi, sonra aynı yerin yeni fotoğrafını açtı. İzleyiciler farkı hemen göremedi. O da bir sonraki ekranda kumulun değişen şeklini renkli çizgilerle işaretledi. [YOLDAŞ hal=yalin yedek=Hupo] kaydedilen kuş[İKON bird] seslerini dinletti. Asya atıkların yerini ve görevlilere yapılan bildirimi anlattı. Sorular başladığında bir öğrenci, “Madem ada yok, eski haritayı çöpe atmak gerekmez mi?” diye sordu. Selin, “Hayır,” diye cevap verdi. “Eski harita[İKON map] bize geçmişteki durumu gösteriyor. Yanlış bilgi vermiyor; yalnızca başka bir zamanın bilgisini veriyor.”
+--- Sayfa 29 ---
+Suna Hanım öğrencilerin bu ayrımı fark etmesinden memnun oldu. Sonra gruba bir teklif sundu: Çalışmalarını merkezin ziyaretçi panosunda sergileyebilirlerdi. Ancak önce koruma görevlilerinin bilimsel bilgileri kontrol etmesi gerekiyordu. Çocuklar kabul etti. [KAHRAMAN hal=yalin], raporu tamamlamakla ünlü bir hazine bulmuş gibi hissetmedi. Daha güzel bir şey hissetti: Söylediklerinin başkaları için yararlı olabileceğini düşündü. Kendi fikirlerinin kontrol edilmesine de kızmıyordu. Çünkü doğruluğun alkıştan daha değerli olduğunu öğrenmişti. Rapor panoya asılmadan önce koruma görevlisi küçük bir düzeltme yapmıştı. Çocuklar kuşların beslenme alanını yalnızca “yuva[İKON house]” olarak adlandırmışlardı. Görevli, her göçmen kuşun o bölgede yuva yapmayabileceğini, bazılarının yalnızca dinlenip beslenmek için geldiğini anlattı.
+--- Sayfa 30 ---
+[YOLDAŞ hal=yalin yedek=Hupo] başta yaptığı hataya üzüldü. Sonra bu ayrımın neden önemli olduğunu düşündü: Yanlış bir kelime, doğru bir gözlemi bile yanlış anlaşılır hâle getirebilirdi. Selin rapordaki ifadeyi değiştirdi, [YOLDAŞ hal=yalin yedek=Hupo] ses[İKON bell] kaydının yanına gözlemin tarihini yazdı. Asya da çektiği kuş[İKON bird] fotoğrafının altına kesin tanımlayamadıkları tür adı koymadı. Hep birlikte daha az iddialı ama daha güvenilir bir sergi hazırlamışlardı. [KAHRAMAN hal=yalin], “Bunu görmek[İKON glasses] için yedi adımdan fazlası gerekiyormuş,” diye şaka yaptı. Veda toplantısında her öğrenci kampın ona öğrettiği tek şeyi söyleyecekti. [YOLDAŞ hal=yalin yedek=Hupo], “Doğanın sesini kaydetmek, onu gerçekten dinlemekle aynı şey değil,” dedi. Asya, “Fotoğrafın tarihi, fotoğraf kadar önemli,” diye ekledi.
+--- Sayfa 31 ---
+Selin, “Haritada küçük bir çizgi büyük bir fark gösterebilir,” dedi. Sıra [KAHRAMAN hal=yonelme] gelince hiç beklenmeyen bir cevap verdi: “Yanlış çıkmak sandığım kadar kötü değil. Çünkü yanlış olduğumu anladığımda yeni bir şey öğreniyorum.” Suna Hanım bu cümleyi duyunca gülümsedi. Çocukların ezberledikleri bilgiden çok, düşünme biçimlerinin değişmesi onu sevindirmişti. Son sabah çocuklar eşyalarını toplarken [YOLDAŞ hal=yalin yedek=Hupo] bir kuş[İKON bird] tüyü gördü. Onu alıp hatıra olarak saklamak[İKON bookmark] istedi. Sonra kampın ilk kuralını hatırladı: Doğadaki nesneler mümkün olduğunca yerinde kalmalıydı. Tüyün fotoğrafını çekti, olduğu yerde bıraktı. Otobüsün penceresinden son kez kıyıya bakarken [KAHRAMAN hal=yalin], kumullardan oluşmuş şekillerin ertesi yıl yine değişebileceğini düşündü.
+--- Sayfa 32 ---
+Belki başka bir sınıf kendi çizdikleri haritayı inceleyecek ve onların soramadığı bir soruyu soracaktı. Asya raporun bir kopyasını kamp merkezine bıraktıklarını hatırlattı. “Yaptığımız işin devamını başkaları getirebilir,” dedi. [YOLDAŞ hal=yalin yedek=Hupo], kuşların göç sırasında aynı yere dönüp dönmediğini merak[İKON curiosity] ediyordu. Suna Hanım, bazı türlerin belirli durakları tekrar kullanabildiğini ama bunun türlere ve koşullara göre değiştiğini anlattı. Selin, “O zaman[İKON clock] gelecek yılların gözlemleriyle bizim notlarımızı karşılaştırmak ilginç olur,” dedi. [KAHRAMAN hal=yalin] bu fikri daha önce bulmayı hayal ettiği sandıktan çok sevdi. Çünkü sandık[İKON chest] bir kez açılırdı; sorular ise yeni gözlemlerle büyürdü.
+--- Sayfa 33 ---
+[KAHRAMAN hal=yalin], “Ben olsam başta cebime koyardım,” dedi. “Ben de,” diye güldü [YOLDAŞ hal=yalin yedek=Hupo]. “Ama fotoğraf da hatıra olur.” Otobüse binmeden önce dört arkadaş[İKON friends], eski haritanın kopyasına son kez baktı. Selin yedi gözlem noktasını numaralandırdı. [KAHRAMAN hal=yalin] ilk gün yazdığı hazine tahmininin yanına bir not[İKON notebook] ekledi: “En değerli şeyi almak değil, ona zarar vermeden tanımak.” Asya, bu cümlenin raporun sonunda kullanılmasını önerdi. Otobüs yola çıktığında kamp geride kaldı. Kıyı boyunca uzanan sazlıklar küçüldü. Bir süre kimse konuşmadı. Sonra [KAHRAMAN hal=yalin], “Yine de bir gün gerçek bir hazine haritası bulsak fena olmaz,” dedi. Selin güldü. “Önce haritanın tarihini kontrol ederiz.” “Ölçeğini de,” diye ekledi Asya.
+--- Sayfa 34 ---
+“Güzergâh izinlerini de,” dedi [YOLDAŞ hal=yalin yedek=Hupo]. Kamp defterini çantasına yerleştirirken ilk sayfadaki aceleyle çizdiği sandığı gördü. Yanındaki son sayfada ise kuş[İKON bird] sesleri, kıyı haritası ve kaynak listesi vardı. Defterin nasıl değiştiğine şaşırdı. [KAHRAMAN hal=yalin] ellerini kaldırdı. “Tamam, tamam! Artık hazine avcılığı daha zor işmiş.” Okula döndüklerinde öğretmenleri raporu sınıf[İKON school] panosuna astı. Kayan kıyılar, göçmen kuşlar ve koruma sınırları hakkında başka öğrenciler de sorular sormaya başladı. [KAHRAMAN hal=yalin], haritadaki yedi adımın aslında tek bir yere gitmediğini düşündü. Her adım[İKON footprint], onu biraz daha dikkatli bir araştırmacıya dönüştürmüştü. [KAHRAMAN hal=yalin] son kez eski kıyı fotoğrafına baktı. Artık kumun değişimini de koruma alanının değerini de görebiliyordu.
+--- Sayfa 35 ---
+Otobüsün arka koltuğunda [YOLDAŞ hal=yalin yedek=Hupo] kayıt cihazını açıp ilk günün seslerini yeniden dinledi. [KAHRAMAN hal=yalin] bu kayıtların kampın başlangıcındaki hâllerini de hatırlattığını fark etti: O sırada herkes aynı kelimelere farklı anlamlar yüklüyordu. Ada dedikleri yer, son gün artık yalnızca bir kara parçası değildi. Bu yolculukta hiçbir sır bir anda çözülmemiş, her küçük gözlem onları başka bir soruya götürmüştü. [KAHRAMAN hal=yalin] defterine eklediği kaynakları da düşündü. Artık bir bilgiyi duyduğunda kimin söylediğini ve nereden öğrenildiğini sormayı unutmayacaktı. Defterinin son sayfasına yeni bir başlık yazdı: “Sekizinci Adım[İKON footprint]: Öğrendiklerimi Paylaşmak.” Altını çizdi. Çünkü bir keşif, yalnızca bulununca değil, doğru anlatılınca da büyüyordu. [İŞARET kod=kus]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=6 doğru=B
+  Metin: Çocuklar, bir arkadaşlarının önerdiği kestirme yolu neden kullanmadı?
+  A) Kestirme yol, haritada hiç gösterilmemişti
+  B) Kestirme yol sulak alanın sınırından geçiyordu ve orası kuşların yuvalama alanı olduğu için geçiş yasaktı
+  C) Kestirme yol kâğıttaki ölçekten çok daha uzundu
+  D) O gün hava çok kapalıydı
+  Açıklama: Asya, sulak alanın hem kuşların yuvalama alanı olduğunu hem de geçişe yasak olduğunu söyledi.
+s2 [hatirlama] dayanak_sayfa=15 doğru=C
+  Metin: Kampın ikinci günü açık kıyı yürüyüşü neden iptal edildi?
+  A) Kamptaki çocukların çoğu hastalanmıştı
+  B) Kuşlar o gün göç etmişti
+  C) Rehber, rüzgârın hızlanabileceği uyarısı nedeniyle yürüyüşü iptal etti
+  D) Harita kaybolmuştu
+  Açıklama: Hava kapalıydı ve rehber rüzgârın hızlanabileceği uyarısıyla açık kıyı yürüyüşünü iptal etti.
+s3 [cikarim] dayanak_sayfa=16 doğru=A
+  Metin: Selin “Görünür olmak başka, sürekli ada olmak başka” derken ne anlatmak istedi?
+  A) Kum seti bazı mevsimlerde görünse de oranın her zaman suyla çevrili bir ada olduğu söylenemez
+  B) Eski fotoğraftaki ada gerçekte hiç var olmamıştır
+  C) Adalar yalnızca kışın oluşur
+  D) Haritalarda adalar hep yanlış çizilir
+  Açıklama: Arşivdeki açıklamaya göre kış aylarında sular yükseliyor, yazın kum setleri belirginleşiyordu; yani ada her zaman görünmüyordu.
+s4 [cikarim] dayanak_sayfa=20 doğru=D
+  Metin: Çocuklar yedi noktayı haritada birleştirince ne ortaya çıktı?
+  A) Bir hazine sandığının yeri
+  B) Yeni bir yürüyüş rotası
+  C) Kuşların göç yolu
+  D) Eski haritadaki adanın çevresini gösteren bir sınır
+  Açıklama: Çizgiler eski haritadaki adanın çevresini çiziyordu; gruptan biri de gizli yolun bir yere değil, bir sınıra gittiğini söyledi.
+s5 [yorumlama] dayanak_sayfa=28 doğru=B
+  Metin: Selin, eski haritanın çöpe atılması gerekmediğini neden söyledi?
+  A) Çünkü eski harita çok değerli bir eşyaydı
+  B) Çünkü eski harita yanlış değil, geçmişteki başka bir zamanın bilgisini veriyordu
+  C) Çünkü yeni harita henüz hazır değildi
+  D) Çünkü eski harita hâlâ doğru adayı gösteriyordu
+  Açıklama: Selin, eski haritanın yanlış bilgi vermediğini, yalnızca başka bir zamanın bilgisini verdiğini söyledi.
+s6 [sozcuk_baglami] dayanak_sayfa=6 doğru=A
+  Metin: Metne göre haritadaki ölçek ne işe yarar?
+  A) Kâğıttaki uzunluğun arazide ne kadar bir mesafeye karşılık geldiğini gösterir
+  B) Kuzeyin hangi yönde olduğunu gösterir
+  C) Haritanın ne zaman çizildiğini gösterir
+  D) Korunan alanın sınırlarını gösterir
+  Açıklama: Suna Hanım ölçek çizgisini göstererek kâğıttaki bir santimetrenin arazide çok daha uzun bir mesafeye karşılık geldiğini anlattı.
+s7 [sozcuk_baglami] dayanak_sayfa=3 doğru=D
+  Metin: Metinde ‘herkes farklı bir varsayım ortaya attı’ denir. Varsayım ne demektir?
+  A) Kesin olarak kanıtlanmış bilgi
+  B) Bir haritadaki işaret
+  C) Rehberin verdiği bir görev
+  D) Henüz kanıtlanmamış, doğru olabileceği düşünülen fikir
+  Açıklama: Çocuklar adanın ne olduğuna dair farklı tahminler yürüttü; defterlerine de ‘Varsayım kanıt değildir’ yazdılar.
+s8 [degerlendirme] dayanak_sayfa=27 doğru=C
+  Metin: Selin’in önerdiği rapor başlığı neden “Kırk yıllık hazine bilmecesini çözdük!” başlığından daha uygundur?
+  A) Çünkü daha kısa bir başlıktır
+  B) Çünkü hazine kelimesini hiç kullanmaz
+  C) Çünkü hem merak uyandırır hem de gerçekte olmayan bir hazine iddiası kurmaz
+  D) Çünkü rapor yazan çocuklar başlığı çok beğenmiştir
+  Açıklama: Selin’in başlığı dinleyiciyi kandırmadan ilgi çekiyordu; ilk başlık ise olmayan bir hazineyi çözmüş gibi davranıyordu.
+
+## Sözlük
+- pd_varsayim | kelime | yazım: varsayım | 6–6 | anlam: Henüz kanıtlanmamış, doğru olabileceği düşünülen fikir.
+- pd_lagun | kelime | yazım: lagün | 6–6 | anlam: Denizden kum yığınlarıyla ayrılmış, sığ ve durgun su alanı.
+- pd_olcek | kelime | yazım: ölçek | 6–6 | anlam: Haritadaki uzunluğun gerçek arazide kaç uzunluğa karşılık geldiğini gösteren oran.
+- pd_ata_acele | atasozu | yazım: Acele işe şeytan karışır | 6–6 | anlam: Bir işi çok hızlı yapmaya çalışınca hata yapılır; sakin ve düşünerek davranmak gerekir.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

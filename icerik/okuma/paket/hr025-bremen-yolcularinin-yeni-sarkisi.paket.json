@@ -4,69 +4,64 @@
     "slug": "hr025-bremen-yolcularinin-yeni-sarkisi",
     "baslik": "Bremen Yolcularının Yeni Şarkısı",
     "tur": "hayvanlar",
-    "konu": "uyum_ritim",
+    "konu": "muzik",
     "sinif_alt": 3,
     "sinif_ust": 3,
     "okuma_bandi": 2,
     "dunya_tipi": "masalsi",
     "izinli_turler": [
-      "hayvan",
-      "hayali"
+      "ben",
+      "arkadas",
+      "hayvan"
     ],
     "deger_anahtarlari": [
-      "D4",
-      "D14"
+      "D14",
+      "D4"
     ],
     "yetiskin_uygun": false,
     "etiketler": {
       "ana_sinif": 3,
       "okuma_zorlugu": 2,
-      "kavram_zorlugu": 2,
+      "kavram_zorlugu": 3,
       "ilgi_egilimi": "ortak",
       "temalar": [
         "hayvanlar",
+        "dostluk",
         "sanat_yaraticilik"
       ],
       "ders_baglantisi": [
         "turkce"
       ],
       "maarif": {
-        "ana_deger": "D4",
-        "yardimci_deger": "D14"
+        "ana_deger": "D14",
+        "yardimci_deger": "D4"
       },
       "ogrenme_hedefleri": [
-        {
-          "id": "degirmen_hr025",
-          "tur": "lexeme",
-          "etiket": "değirmen",
-          "yuva": "hr025_degirmen",
-          "islev": "first_hint"
-        },
         {
           "id": "ritim_hr025",
           "tur": "lexeme",
           "etiket": "ritim",
-          "yuva": "hr025_ritim",
+          "yuva": "pa_ritim",
+          "islev": "first_hint"
+        },
+        {
+          "id": "ezgi_hr025",
+          "tur": "lexeme",
+          "etiket": "ezgi",
+          "yuva": "pa_ezgi",
           "islev": "application"
         },
         {
           "id": "uyum_hr025",
           "tur": "lexeme",
           "etiket": "uyum",
-          "yuva": "hr025_uyum",
-          "islev": "application"
-        },
-        {
-          "id": "deyim_hr025",
-          "tur": "idiom",
-          "etiket": "Kulak vermek",
-          "yuva": "hr025_kulak_vermek",
+          "yuva": "pa_uyum",
           "islev": "application"
         },
         {
           "id": "kavram_hr025",
           "tur": "concept",
-          "etiket": "Farklı seslerin uyumu",
+          "etiket": "Ses, ritim ve uyum",
           "islev": "application"
         }
       ],
@@ -78,26 +73,25 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 397,
+        "kelime_sayisi": 382,
         "tahmini_sure_dk": 6,
-        "sayfa_sayisi": 5,
-        "soru_sayisi": 4,
+        "sayfa_sayisi": 8,
+        "soru_sayisi": 5,
         "soru_beceri_dagilimi": {
-          "hatirlama": 1,
+          "hatirlama": 2,
           "cikarim": 1,
           "yorumlama": 1,
           "sozcuk_baglami": 1
         },
         "hedef_tur_dagilimi": {
           "lexeme": 3,
-          "idiom": 1,
           "concept": 1
         },
-        "yoldas_yer_sayisi": 5,
-        "simge_sayisi": 1
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 23
       }
     },
-    "tanitim": "Eşek, köpek, kedi ve horoz aynı anda şarkı söyleyince ne oldu? Uyum nasıl kuruldu?",
+    "tanitim": "Eşek, köpek, kedi ve horoz eski değirmende şarkı söylemek istiyor ama herkes aynı anda bağırıyor.",
     "durum": "taslak",
     "fis_kodu": "HR-025"
   },
@@ -107,40 +101,214 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Eşek, köpek, kedi ve horoz küçük bir orman yolunda yürüyordu. Bremen'e giden uzun yolun ortasında yağmur başladı. Dördü eski bir "
+          "v": "Eşek, köpek"
         },
         {
-          "t": "kelime",
-          "yuva": "hr025_degirmen"
-        },
-        {
-          "t": "metin",
-          "v": " sığındı. Çatının altından düşen damlalar, taşlara farklı seslerle vuruyordu: "
-        },
-        {
-          "t": "vurgu",
-          "v": "tak, tik, tuk"
+          "t": "ikon",
+          "v": "dog"
         },
         {
           "t": "metin",
-          "v": ".\n\n"
+          "v": ", kedi"
+        },
+        {
+          "t": "ikon",
+          "v": "cat"
+        },
+        {
+          "t": "metin",
+          "v": " ve horoz küçük bir orman yolunda yürüyordu. Yol arkadaşı "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": " kanatlarını çırptı. “Harika bir konser salonu bulduk!” dedi. Eşek yüksek sesle anırdı. Köpek havladı, kedi miyavladı. Fakat hepsi aynı anda bağırınca ortaya anlaşılmaz bir gürültü çıktı.\n\nKedi kulaklarını kapattı. “Hepimiz duyulmak istiyoruz ama kimse kimseyi dinlemiyor.” "
+          "v": " de yanlarındaydı. Bremen'e giden uzun yolun ortasında yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " başladı. Hepsi eski bir değirmene sığındı. Çatının altından düşen damlalar, taşlara farklı seslerle vuruyordu: tak, tik, tuk."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Horoz kanatlarını çırptı. \"Harika bir konser salonu bulduk!\" dedi. Eşek yüksek sesle anırdı. Köpek"
+        },
+        {
+          "t": "ikon",
+          "v": "dog"
+        },
+        {
+          "t": "metin",
+          "v": " havladı, kedi"
+        },
+        {
+          "t": "ikon",
+          "v": "cat"
+        },
+        {
+          "t": "metin",
+          "v": " miyavladı. Fakat hepsi aynı anda bağırınca ortaya anlaşılmaz bir gürültü çıktı. Kedi kulaklarını kapattı. \"Hepimiz duyulmak istiyoruz ama kimse kimseyi dinlemiyor.\" Eşek biraz alındı. \"Benim sesim zaten böyle güçlü. Sessiz mi olayım?\" \"Hayır,\" dedi köpek. \"Gücünü doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " zamanda kullansan yeter.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Önce horoz "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_ritim"
+        },
+        {
+          "t": "metin",
+          "v": " tuttu. \"Bir, iki, üç, dört.\" Kedi"
+        },
+        {
+          "t": "ikon",
+          "v": "cat"
+        },
+        {
+          "t": "metin",
+          "v": " ince sesini ikinci vuruşa, köpek"
+        },
+        {
+          "t": "ikon",
+          "v": "dog"
+        },
+        {
+          "t": "metin",
+          "v": " kalın sesini üçüncüye koydu. Eşek dördüncü vuruşta öyle güzel anırdı ki değirmenin içi neşeyle doldu. Sonra yer değiştirdiler. Birinin sesi ötekini bastırdığında durup yeniden başladılar."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir süre sonra eşek ritmi kaçırdı. Çünkü çatıdan damlayan suyun sesi hızlanmıştı. \"Ben yanlış mı söylüyorum?\" diye sordu. Horoz, \"Belki de herkes aynı ritmi duymuyor,\" dedi. Köpek"
+        },
+        {
+          "t": "ikon",
+          "v": "dog"
+        },
+        {
+          "t": "metin",
+          "v": " önce dört eşit adım"
+        },
+        {
+          "t": "ikon",
+          "v": "footprint"
+        },
+        {
+          "t": "metin",
+          "v": " attı, sonra ayak izlerini yerde gösterdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de vuruşları saymalarına yardım etti. Dört sesin arasına küçük bir sessizlik koyduklarında şarkı daha anlaşılır oldu. Kedi"
+        },
+        {
+          "t": "ikon",
+          "v": "cat"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Bazen susmak da müziğin parçası,\" diyerek gülümsedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Eşek bir daha anırmadan önce arkadaşlarına baktı. Onlardan işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " alınca sesini yükseltti. Kendi sesinin kıymetini kaybetmemiş, yalnız diğerlerine yer açmıştı. Değirmenin damlaları da sanki onlara eşlik ediyordu. Yağmurun sesi azaldıkça yeni bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_ezgi"
+        },
+        {
+          "t": "metin",
+          "v": " kurdular. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kus"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Dışarıda yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " hafifledi. Yol kenarında bir grup çocuk vardı. Çocuklar değirmenin içinden gelen müziği merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " etmişti. Hayvanlar kapıya çıktı ve kısa şarkılarını söylediler. Çocukların biri ellerini çırparak eşlik etti. Bir başkası yağmur damlalarının sesini taklit etti. Böylece şarkıya yeni bir ritim eklendi. Horoz gururla kabardı. \"Artık hepimiz aynı sesle mi şarkı söyleyeceğiz?\" diye sordu. \"Hayır,\" dedi kedi"
+        },
+        {
+          "t": "ikon",
+          "v": "cat"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Güzel olan zaten farklı seslerimiz.\" "
         },
         {
           "t": "isaret",
           "kod": "kedi"
-        },
-        {
-          "t": "metin",
-          "v": "\n\nEşek biraz alındı. “Benim sesim zaten böyle güçlü. Sessiz mi olayım?”"
         }
       ]
     },
@@ -149,360 +317,248 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "“Hayır,” dedi köpek. “Gücünü doğru zamanda kullansan yeter.”\n\nÖnce horoz "
+          "v": "Kedi"
+        },
+        {
+          "t": "ikon",
+          "v": "cat"
+        },
+        {
+          "t": "metin",
+          "v": ", değirmenin duvarına kulak verdi. Sesler artık birbirine karışmıyordu. \"Bence yolculuğumuzun bir şarkısı oldu,\" dedi. Horoz da bunu her molada yeniden söylemeyi önerdi. Yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " tamamen dinince yola devam ettiler. Köpek"
+        },
+        {
+          "t": "ikon",
+          "v": "dog"
+        },
+        {
+          "t": "metin",
+          "v": ", değirmende öğrendikleri ritmi unutmamak için adımlarını saydı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Eşek, su"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " birikintilerinden geçerken adımlarını yavaşlattı. Horoz zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " zaman hızlanmak istediğinde arkadaşları ona yetişmeleri için biraz durmasını söyledi. Akşama doğru uzaktan Bremen'in çanları duyuldu. Dört arkadaş"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " birbirine baktı. Çanların sesini kendi şarkılarına eklemeyi düşündüler. Şehre daha varmadan öğrendikleri şey açıktı: "
         },
         {
           "t": "kelime",
-          "yuva": "hr025_ritim"
-        },
-        {
-          "t": "metin",
-          "v": " tuttu. Bir, iki, üç, dört. Kedi ince sesini ikinci vuruşa, köpek kalın sesini üçüncüye koydu. Eşek dördüncü vuruşta öyle güzel anırdı ki değirmenin içi neşeyle doldu. Sonra yer değiştirdiler. Birinin sesi ötekini bastırdığında durup yeniden başladılar.\n\nBir süre sonra eşek ritmi kaçırdı. Çünkü çatıdan damlayan suyun sesi hızlanmıştı. “Ben yanlış mı söylüyorum?” diye sordu. "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": ", “Belki de herkes aynı ritmi duymuyor,” dedi. Köpek önce dört eşit adım attı, sonra ayak izlerini yerde gösterdi. Dört sesin arasına küçük bir sessizlik koyduklarında şarkı daha anlaşılır oldu. Kedi, “Bazen susmak da müziğin parçası,” diyerek gülümsedi."
-        }
-      ]
-    },
-    {
-      "omurga": true,
-      "parcalar": [
-        {
-          "t": "metin",
-          "v": "Eşek bir daha anırmadan önce arkadaşlarına baktı. Onlardan işaret alınca sesini yükseltti. Kendi sesinin kıymetini kaybetmemiş, yalnız diğerlerine yer açmıştı. Değirmenin damlaları da sanki onlara eşlik ediyordu. Yağmurun sesi azaldıkça yeni bir ezgi kurdular.\n\nDışarıda yağmur hafifledi.\n\nDışarıda yağmur hafifledi. Yol kenarında bir grup çocuk vardı. Çocuklar değirmenin içinden gelen müziği merak etmişti. Hayvanlar kapıya çıktı ve kısa şarkılarını söylediler. Çocukların biri ellerini çırparak eşlik etti. Bir başkası yağmur damlalarının sesini taklit etti. Böylece şarkıya yeni bir ritim eklendi.\n\n"
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " gururla kabardı. “Artık hepimiz aynı sesle mi şarkı söyleyeceğiz?” diye sordu."
-        }
-      ]
-    },
-    {
-      "omurga": true,
-      "parcalar": [
-        {
-          "t": "metin",
-          "v": "“Hayır,” dedi kedi. “Güzel olan zaten farklı seslerimiz.”\n\n"
-        },
-        {
-          "t": "deyim",
-          "yuva": "hr025_kulak_vermek"
-        },
-        {
-          "t": "metin",
-          "v": " Sesler artık birbirine karışmıyordu. “Bence yolculuğumuzun bir şarkısı oldu,” dedi. "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " da bunu her molada yeniden söylemeyi önerdi.\n\nYağmur tamamen dinince yola devam ettiler. Köpek, değirmende öğrendikleri ritmi unutmamak için adımlarını saydı. Eşek, su birikintilerinden geçerken adımlarını yavaşlattı. "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " zaman zaman hızlanmak istediğinde arkadaşları ona yetişmeleri için biraz durmasını söyledi.\n\nAkşama doğru uzaktan Bremen'in çanları duyuldu. Dört arkadaş birbirine baktı. Çanların sesini kendi şarkılarına eklemeyi düşündüler. Şehre daha varmadan öğrendikleri şey açıktı: "
-        },
-        {
-          "t": "kelime",
-          "yuva": "hr025_uyum"
+          "yuva": "pa_uyum"
         },
         {
           "t": "metin",
           "v": ", herkesin aynı olması değil, birbirine kulak vermesiydi."
         }
       ]
-    },
-    {
-      "omurga": true,
-      "parcalar": [
-        {
-          "t": "metin",
-          "v": "Dil hedefi: ses–ritim–uyum, karşılaştırma; Kavram/değer: müzikal örüntü, farklılıklara saygı, dayanışma. İkon önerileri: eşek, kedi, nota. Okuma sonrası: İlk şarkı neden gürültüydü? Hayvanlar hangi değişiklikle uyum sağladı?"
-        }
-      ]
     }
   ],
   "deger_sahneleri": {},
   "hareket_sahneleri": {},
-  "deyim_cumleleri": {
-    "hr025_kulak_vermek": [
-      {
-        "t": "metin",
-        "v": "Kedi, değirmenin duvarına kulak verdi."
-      }
-    ]
-  },
+  "deyim_cumleleri": {},
   "sorular": [
     {
       "id": "s1",
       "beceri": "hatirlama",
-      "dayanak_sayfa": 1,
-      "metin": "Bremen'e giden dört arkadaş kimlerdi?",
+      "dayanak_sayfa": 2,
+      "metin": "Hayvanlar aynı anda bağırınca ne oldu?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Eşek, köpek, kedi ve horoz"
+          "metin": "Anlaşılmaz bir gürültü çıktı"
         },
         {
           "id": "B",
-          "metin": "Tilki, kurt, ayı ve kuş"
+          "metin": "Güzel bir şarkı çıktı"
         },
         {
           "id": "C",
-          "metin": "Kedi, köpek ve kuş"
+          "metin": "Değirmen yıkıldı"
         }
       ],
       "dogru": "A",
-      "aciklama": "Hikâyenin dört kahramanı eşek, köpek, kedi ve horozdur."
+      "aciklama": "Hepsi aynı anda bağırınca ortaya anlaşılmaz bir gürültü çıktı."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
-      "dayanak_sayfa": 2,
-      "metin": "Hayvanlar neden durup yeniden başladı?",
+      "dayanak_sayfa": 4,
+      "metin": "Eşek ritmi neden kaçırdı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir ses ötekini bastırıyordu"
+          "metin": "Şarkıyı bilmediği için"
         },
         {
           "id": "B",
-          "metin": "Yağmur başlamıştı"
+          "metin": "Çok yorulduğu için"
         },
         {
           "id": "C",
-          "metin": "Çocuklar gelmişti"
+          "metin": "Çatıdan damlayan suyun sesi hızlandığı için"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Sesler birbirini bastırınca uyum bozuluyordu."
+      "dogru": "C",
+      "aciklama": "Damlaların sesi hızlanınca eşek ritmi kaçırdı."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
-      "dayanak_sayfa": 4,
-      "metin": "Hikâyeye göre uyum nedir?",
+      "dayanak_sayfa": 6,
+      "metin": "Kedinin \"Güzel olan zaten farklı seslerimiz\" sözü neyi anlatır?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Herkesin aynı olması değil, birbirini dinlemesi"
+          "metin": "Herkesin aynı sesle söylemesi gerektiğini"
         },
         {
           "id": "B",
-          "metin": "Herkesin aynı sesle konuşması"
+          "metin": "Farklı seslerin birlikte güzel bir uyum oluşturabileceğini"
         },
         {
           "id": "C",
-          "metin": "Yalnız eşeğin şarkı söylemesi"
+          "metin": "Kimsenin şarkı söylememesi gerektiğini"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Hayvanlar farklı seslerini koruyarak birbirlerini dinlediler."
+      "dogru": "B",
+      "aciklama": "Hayvanlar farklı seslerini birbirine kulak vererek birleştirince şarkı güzelleşti."
     },
     {
       "id": "s4",
       "beceri": "sozcuk_baglami",
-      "dayanak_sayfa": 2,
-      "metin": "Metinde geçen ritim ne demektir?",
+      "dayanak_sayfa": 3,
+      "metin": "Metinde geçen ritim sözcüğü ne anlama gelir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Düzenli tekrar eden ses ve zaman örüntüsü"
+          "metin": "Seslerin ya da vuruşların düzenli tekrar eden akışı"
         },
         {
           "id": "B",
-          "metin": "Yağmurun düştüğü yer"
+          "metin": "Bir hayvanın yürüyüşü"
         },
         {
           "id": "C",
-          "metin": "Bir çeşit değirmen"
+          "metin": "Bir şehrin adı"
         }
       ],
       "dogru": "A",
-      "aciklama": "Ritim, müzikte düzenli tekrar eden vuruşlardır."
+      "aciklama": "Horoz \"bir, iki, üç, dört\" diyerek düzenli vuruşlarla ritim tuttu."
+    },
+    {
+      "id": "s5",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 8,
+      "metin": "Hikâyenin sonunda hayvanlar uyum hakkında neyi öğrendi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Herkesin aynı sesle söylemesi gerektiğini"
+        },
+        {
+          "id": "B",
+          "metin": "Sesi en güçlü olanın önde olması gerektiğini"
+        },
+        {
+          "id": "C",
+          "metin": "Uyumun, herkesin aynı olması değil birbirine kulak vermesi olduğunu"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Metnin sonunda uyumun herkesin aynı olması değil, birbirine kulak vermesi olduğu söyleniyor."
     }
   ],
   "uretim": {
-    "kaynak": "llm_taslak",
+    "kaynak": "elle",
     "tarih": "2026-10-22"
   },
   "sozluk": {
     "sozluk_surumu": 1,
     "girdiler": [
       {
-        "id": "hr025_degirmen",
-        "tur": "kelime",
-        "yazim": "değirmene",
-        "anlam": "Tahılı su ya da rüzgârla öğüten yapı.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr025_fabrika",
-        "tur": "kelime",
-        "yazim": "fabrika",
-        "anlam": "Büyük miktarda ürün üreten tesis.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr025_firin",
-        "tur": "kelime",
-        "yazim": "fırın",
-        "anlam": "Ekmek ya da yemek pişirilen yer.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr025_ritim",
+        "id": "pa_ritim",
         "tur": "kelime",
         "yazim": "ritim",
-        "anlam": "Seslerin düzenli biçimde tekrar etmesi.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "anlam": "Seslerin ya da vuruşların düzenli tekrar eden akışı.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr025_tempo",
+        "id": "pa_ezgi",
         "tur": "kelime",
-        "yazim": "tempo",
-        "anlam": "Müzik parçasının hızı.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "ezgi",
+        "anlam": "Birbirini izleyen seslerle oluşan müzik; melodi.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr025_karmasa",
-        "tur": "kelime",
-        "yazim": "karmaşa",
-        "anlam": "Düzensiz, birbirine karışmış durum.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr025_uyum",
+        "id": "pa_uyum",
         "tur": "kelime",
         "yazim": "uyum",
-        "anlam": "Birlikte düzenli ve dengeli çalışma durumu.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr025_ahenk",
-        "tur": "kelime",
-        "yazim": "ahenk",
-        "anlam": "Seslerin ya da kişilerin birbirine güzel uyması.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr025_catisma",
-        "tur": "kelime",
-        "yazim": "çatışma",
-        "anlam": "Birbirine zıt düşen kişiler arasındaki anlaşmazlık.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr025_kulak_vermek",
-        "tur": "deyim",
-        "yazim": "kulak verdi",
-        "anlam": "Dikkatle dinlemek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr025_kulagina_kupe",
-        "tur": "deyim",
-        "yazim": "kulağına küpe olmak",
-        "anlam": "Yaşadığı olaydan ders alıp unutmamak.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr025_kulak_asmak",
-        "tur": "deyim",
-        "yazim": "kulak asmamak",
-        "anlam": "Söylenene önem vermeyip dinlememek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "anlam": "Farklı şeylerin birbirine karışmadan güzel bir bütün oluşturması.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       }
     ],
     "yuvalar": [
       {
-        "ad": "hr025_degirmen",
+        "ad": "pa_ritim",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr025_degirmen"
-          },
-          {
-            "girdi": "hr025_fabrika"
-          },
-          {
-            "girdi": "hr025_firin"
+            "girdi": "pa_ritim"
           }
         ]
       },
       {
-        "ad": "hr025_ritim",
+        "ad": "pa_ezgi",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr025_ritim"
-          },
-          {
-            "girdi": "hr025_tempo"
-          },
-          {
-            "girdi": "hr025_karmasa"
+            "girdi": "pa_ezgi"
           }
         ]
       },
       {
-        "ad": "hr025_uyum",
+        "ad": "pa_uyum",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr025_uyum"
-          },
-          {
-            "girdi": "hr025_ahenk"
-          },
-          {
-            "girdi": "hr025_catisma"
-          }
-        ]
-      },
-      {
-        "ad": "hr025_kulak_vermek",
-        "tur": "deyim",
-        "adaylar": [
-          {
-            "girdi": "hr025_kulak_vermek"
-          },
-          {
-            "girdi": "hr025_kulagina_kupe"
-          },
-          {
-            "girdi": "hr025_kulak_asmak"
+            "girdi": "pa_uyum"
           }
         ]
       }

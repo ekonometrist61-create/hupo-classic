@@ -1,0 +1,452 @@
+{
+  "hikaye": {
+    "tur": "arkadaslik",
+    "konu": "sinif",
+    "slug": "hr012-yeni-arkadasin-gizli-yetenegi",
+    "durum": "taslak",
+    "baslik": "Yeni Arkadaşın Gizli Yeteneği",
+    "tanitim": "Sessiz yeni bir arkadaş var. Grup çalışmasında onun gizli yeteneğini kim fark edecek?",
+    "fis_kodu": "HR-012",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D4"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 4,
+        "sayfa_sayisi": 6,
+        "simge_sayisi": 5,
+        "kelime_sayisi": 211,
+        "tahmini_sure_dk": 4,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "dostluk",
+        "okul"
+      ],
+      "ana_sinif": 2,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 1,
+      "kavram_zorlugu": 1,
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "cekingen",
+          "tur": "lexeme",
+          "yuva": "s2_cekingen",
+          "islev": "first_hint",
+          "etiket": "çekingen"
+        },
+        {
+          "id": "cesur",
+          "tur": "lexeme",
+          "yuva": "s2_cesur",
+          "islev": "application",
+          "etiket": "cesur"
+        },
+        {
+          "id": "kavram_hr012",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Kapsayıcılık"
+        },
+        {
+          "id": "atasoz_hr012",
+          "tur": "proverb",
+          "yuva": "ata_derin_su",
+          "islev": "application",
+          "etiket": "Derin su sessiz akar"
+        }
+      ]
+    },
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 1,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "kardes",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D14",
+      "D4"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "s2_cekingen",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_cekingen"
+          }
+        ]
+      },
+      {
+        "ad": "s2_cesur",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_cesur"
+          }
+        ]
+      },
+      {
+        "ad": "ata_derin_su",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "ata_derin_su"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "s2_cekingen",
+        "tur": "kelime",
+        "anlam": "Utangaç, kendini hemen göstermeyen.",
+        "yazim": "çekingen",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_cesur",
+        "tur": "kelime",
+        "anlam": "Korkmadan iş yapabilen.",
+        "yazim": "cesur",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "ata_derin_su",
+        "tur": "atasozu",
+        "anlam": "Bilgili ve olgun insanlar çoğu zaman az konuşur, gösteriş yapmaz.",
+        "yazim": "Derin su sessiz akar",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "A",
+      "metin": "Yeni gelen çocuk teneffüslerde nerede oturuyordu?",
+      "beceri": "hatirlama",
+      "aciklama": "Yeni çocuk teneffüslerde pencere kenarında oturuyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Pencere kenarında"
+        },
+        {
+          "id": "B",
+          "metin": "Bahçede"
+        },
+        {
+          "id": "C",
+          "metin": "Kantinde"
+        }
+      ],
+      "dayanak_sayfa": 1
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Çocuk işaretleri neden çizdi?",
+      "beceri": "cikarim",
+      "aciklama": "Çizdiği işaretler, evden okula gelirken geçtiği yerlerdi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Evden okula giderken geçtiği yerleri göstermek için"
+        },
+        {
+          "id": "B",
+          "metin": "Yeni bir oyun icat etmek için"
+        },
+        {
+          "id": "C",
+          "metin": "Öğretmenine kızmak için"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Ece'nin ilk gün yaptığı hata neydi?",
+      "beceri": "yorumlama",
+      "aciklama": "Ece, sessiz birinin fikri olmadığını sandığı için yanıldığını anladı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sessiz birinin fikri olmadığını sanmak"
+        },
+        {
+          "id": "B",
+          "metin": "Haritayı yanlış çizmek"
+        },
+        {
+          "id": "C",
+          "metin": "Arkadaşlarını oyuna çağırmamak"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen çekingen sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Yeni çocuk, arkadaşlarının davetine kibarca karşılık veriyor ama çok konuşmuyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Utangaç, kendini hemen göstermeyen"
+        },
+        {
+          "id": "B",
+          "metin": "Çok neşeli"
+        },
+        {
+          "id": "C",
+          "metin": "Çok hızlı konuşan"
+        }
+      ],
+      "dayanak_sayfa": 1
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıfa yeni gelen "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_cekingen"
+        },
+        {
+          "t": "metin",
+          "v": " biriydi. Teneffüslerde pencere kenarında oturuyor, arkadaşları oyuna çağırdığında kibarca başını sallıyordu. Ece onun kimseyi sevmediğini düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Grup çalışması başlarken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tek başına kalacak gibiydi. Ece yanına yaklaştı: \"Bizimle çalışmak ister misin?\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı ama ilk dakikalarda pek konuşmadı. Kâğıdın kenarına küçük işaretler koyuyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de bu işaretlerin ne olduğunu merakla bekliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ece işaretlerin bir haritaya benzediğini fark edip sordu: \"Bunlar ne?\" \"Evden okula gelirken geçtiğim yerler,\" dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". Kâğıda yollar çizdi: \"Burada kitapçı var, burada iki ağaç"
+        },
+        {
+          "t": "ikon",
+          "v": "tree"
+        },
+        {
+          "t": "metin",
+          "v": ", burada küçük bir meydan.\" Arkadaşları dinledikçe haritalar gerçekçileşti. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kalp"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bahçenin ağaçlarını, çeşmesini ve giriş kapısını çizdi. Sonra güvenli yürüyüş yolunu renkli kalemle işaretledi. Grupta bir sorun çıktı: çizilen park okuldan daha büyük görünüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " silgiyi alıp her şeyi silmek istemedi. \"Önce büyük ve küçük yerleri karşılaştıralım,\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ece \"Bunu nasıl"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " bu kadar güzel yaptın?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " omuz silkti: \"Eski mahallemde de haritalar çizerdim.\" Ece, konuşmadığı zamanlarda çevresini dikkatle izlediğini fark etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " sonraki hafta yeni bir harita"
+        },
+        {
+          "t": "ikon",
+          "v": "map"
+        },
+        {
+          "t": "metin",
+          "v": " görevi verdi. Bu kez "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " arkadaşlarına "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_cesur"
+        },
+        {
+          "t": "metin",
+          "v": " bir öneri yaptı: \"Yol için yeni bir çizgi deneyelim.\" Grup haritayı sınıfta sundu. Öğretmen katkıları sorduğunda Ece \"Yolumuzu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " buldu,\" dedi. Öğretmen gülümsedi: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "ata_derin_su"
+        },
+        {
+          "t": "metin",
+          "v": "\". "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de alkışladı. Ece, sessiz birinin fikri olmadığını sandığı için yanıldığını anladı."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

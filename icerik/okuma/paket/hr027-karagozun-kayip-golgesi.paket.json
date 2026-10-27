@@ -3,70 +3,66 @@
   "hikaye": {
     "slug": "hr027-karagozun-kayip-golgesi",
     "baslik": "Karagöz'ün Kayıp Gölgesi",
-    "tur": "tarih_kultur",
-    "konu": "isik_golge",
+    "tur": "mizah",
+    "konu": "golge_oyunu",
     "sinif_alt": 3,
     "sinif_ust": 3,
     "okuma_bandi": 2,
-    "dunya_tipi": "gercekci",
+    "dunya_tipi": "masalsi",
     "izinli_turler": [
       "ben",
-      "arkadas"
+      "arkadas",
+      "baska_biri",
+      "hayali"
     ],
     "deger_anahtarlari": [
-      "D7",
-      "D6"
+      "D14",
+      "D7"
     ],
     "yetiskin_uygun": false,
     "etiketler": {
       "ana_sinif": 3,
-      "okuma_zorlugu": 2,
-      "kavram_zorlugu": 2,
+      "okuma_zorlugu": 3,
+      "kavram_zorlugu": 3,
       "ilgi_egilimi": "ortak",
       "temalar": [
-        "sanat_yaraticilik",
-        "kultur_miras"
+        "mizah",
+        "kultur_miras",
+        "bilim_teknoloji"
       ],
       "ders_baglantisi": [
         "turkce"
       ],
       "maarif": {
-        "ana_deger": "D7",
-        "yardimci_deger": "D6"
+        "ana_deger": "D14",
+        "yardimci_deger": "D7"
       },
       "ogrenme_hedefleri": [
         {
-          "id": "perde_hr027",
+          "id": "sozcuk_golge_hr027",
           "tur": "lexeme",
-          "etiket": "perde",
-          "yuva": "hr027_perde",
+          "etiket": "gölge",
+          "yuva": "pb_golge",
           "islev": "first_hint"
         },
         {
-          "id": "fener_hr027",
+          "id": "sozcuk_perde_hr027",
           "tur": "lexeme",
-          "etiket": "fener",
-          "yuva": "hr027_fener",
+          "etiket": "perde",
+          "yuva": "pb_perde",
           "islev": "application"
         },
         {
-          "id": "ayirt_hr027",
+          "id": "sozcuk_mecaz_hr027",
           "tur": "lexeme",
-          "etiket": "ayırt etmek",
-          "yuva": "hr027_ayirt",
-          "islev": "application"
-        },
-        {
-          "id": "deyim_hr027",
-          "tur": "idiom",
-          "etiket": "Gölgede kalmak",
-          "yuva": "hr027_golgede_kalmak",
+          "etiket": "mecaz",
+          "yuva": "pb_mecaz",
           "islev": "application"
         },
         {
           "id": "kavram_hr027",
           "tur": "concept",
-          "etiket": "Işık ve gölge ilişkisi",
+          "etiket": "Işık ve gölge; gerçek ve mecaz anlam",
           "islev": "application"
         }
       ],
@@ -78,26 +74,25 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 381,
-        "tahmini_sure_dk": 6,
-        "sayfa_sayisi": 4,
-        "soru_sayisi": 4,
+        "kelime_sayisi": 350,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 8,
+        "soru_sayisi": 5,
         "soru_beceri_dagilimi": {
-          "hatirlama": 1,
+          "hatirlama": 2,
           "cikarim": 1,
           "yorumlama": 1,
           "sozcuk_baglami": 1
         },
         "hedef_tur_dagilimi": {
           "lexeme": 3,
-          "idiom": 1,
           "concept": 1
         },
-        "yoldas_yer_sayisi": 3,
-        "simge_sayisi": 0
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 7
       }
     },
-    "tanitim": "Karagöz gölgesini kaybetti sanıyor. Işık değişince gölge neden değişir?",
+    "tanitim": "Karagöz'ün gölgesi kayboldu! Işık, fener ve bir kaşıkla gölgenin sırrı çözülüyor.",
     "durum": "taslak",
     "fis_kodu": "HR-027"
   },
@@ -107,15 +102,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Karagöz sabah "
-        },
-        {
-          "t": "kelime",
-          "yuva": "hr027_perde"
-        },
-        {
-          "t": "metin",
-          "v": " kurmak için sahneye geldiğinde telaşla bağırdı: “Hacivat! Gölge yok! Gölge kayboldu!”\n\nHacivat içeri girdi. “Canım Karagöz'üm, gölgen nereye gidebilir?”\n\n“Belki benden sıkıldı da tatile çıktı!” dedi Karagöz. Oysa sahnenin arkasındaki lamba henüz yanmıyordu. Perde bembeyazdı.\n\nHacivat lambayı açtı. Bir anda Karagöz'ün gölgesi perdenin üzerine düştü. Karagöz sevinçle zıpladı. Fakat zıplayınca gölgesi de zıpladı. “Demek geri geldi. Bir de benimle alay ediyor!”\n\nHacivat gülerek lambayı biraz sağa kaydırdı. Karagöz'ün gölgesi sola uzadı. Lambayı yaklaştırınca gölge büyüdü, uzaklaştırınca küçüldü. “Görüyor musun?” dedi. “Işığın yeri değişince gölgenin görünüşü de değişiyor.”"
+          "v": "Karagöz sabah perdeyi kurmak için sahneye geldiğinde telaşla bağırdı: “Hacivat! Gölge yok! Gölge kayboldu!” Hacivat içeri girdi. “Canım Karagöz'üm, gölgen nereye gidebilir?” “Belki benden sıkıldı da tatile çıktı!” dedi Karagöz. Oysa sahnenin arkasındaki lamba henüz yanmıyordu. Perde bembeyazdı."
         }
       ]
     },
@@ -124,32 +111,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Karagöz kaşlarını çattı. “O zaman ben büyüdüm mü küçüldüm mü?”\n\n“Sen aynı Karagöz'sün. Yalnız gölgen değişiyor.”\n\nHacivat küçük bir deney daha yaptı. Masanın üzerine oyuncak bir ev koyup "
-        },
-        {
-          "t": "kelime",
-          "yuva": "hr027_fener"
-        },
-        {
-          "t": "metin",
-          "v": " farklı yönlerden tuttu. Evin bacası bazen uzun, bazen kısa bir gölge bırakıyordu. Karagöz bunu görünce, “Bacanın boyunu kim değiştiriyor?” diye sordu. "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " henüz gelmemişti ama perdeyi hazırlayan çırak, “Işığın yeri,” diye cevap verdi. Karagöz bir süre düşündü, ardından kendi gölgesine selam verdi. “Öyleyse kendimi büyümüş sanmayayım!”\n\nHacivat fenerin önüne ikinci bir oyuncak koydu. İki gölge üst üste gelince Karagöz hangisinin kendisine ait olduğunu "
-        },
-        {
-          "t": "kelime",
-          "yuva": "hr027_ayirt"
-        },
-        {
-          "t": "metin",
-          "v": " edemedi. Hacivat nesneleri ayrı ayrı hareket ettirdiğinde sorun çözüldü. “Bir şeyi anlamak için bazen parçaları tek tek incelemek gerekir,” dedi."
+          "v": "Hacivat lambayı açtı. Bir anda Karagöz'ün gölgesi perdenin üzerine düştü. Karagöz sevinçle zıpladı. Fakat zıplayınca gölgesi de zıpladı. “Demek geri geldi. Bir de benimle alay ediyor!”"
         }
       ]
     },
@@ -158,16 +120,15 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Az sonra seyirci çocuklar geldi.\n\nAz sonra seyirci çocuklar geldi. Hacivat iki ayrı fener hazırladı. Biri güçlü, diğeri daha zayıf ışık veriyordu. Çocuklardan güvenli mesafeden perdeyi izlemelerini istedi. Karagöz elindeki tahta kaşığı fenerin önünde tuttu. Kaşığın gölgesi perdeye uzadı. Sonra kaşığı biraz çevirdi; gölgenin şekli değişti.\n\nÇocuklardan biri, “Demek gölge gerçek nesneyle aynı olmak zorunda değil,” dedi. Hacivat bunu duyunca sevindi. Karagöz ise kaşığı perdenin arkasına sakladı. “Gölgeyi bırakıp kendisini kaybetmeyelim!” diye şaka yaptı.\n\nOyun bitince küçük "
+          "v": "Hacivat gülerek lambayı biraz sağa kaydırdı. Karagöz'ün gölgesi sola uzadı. Lambayı yaklaştırınca gölge büyüdü, uzaklaştırınca küçüldü. “Görüyor musun?” dedi. “Işığın yeri değişince gölgenin görünüşü de değişiyor.” Karagöz kaşlarını çattı. “O zaman"
         },
         {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "t": "ikon",
+          "v": "clock"
         },
         {
           "t": "metin",
-          "v": ", Hacivat'a bir deyim sordu: “Gölgede kalmak ne demek?”"
+          "v": " ben büyüdüm mü küçüldüm mü?” “Sen aynı Karagöz'sün. Yalnız gölgen değişiyor.”"
         }
       ]
     },
@@ -176,287 +137,341 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Hacivat cevap verdi: “Bazen biri, başka birinin yanında fark edilmez."
+          "v": "Hacivat küçük bir deney"
         },
         {
-          "t": "deyim",
-          "yuva": "hr027_golgede_kalmak"
-        },
-        {
-          "t": "metin",
-          "v": " Ama "
-        },
-        {
-          "t": "vurgu",
-          "v": "gerçek gölgeyle"
+          "t": "ikon",
+          "v": "microscope"
         },
         {
           "t": "metin",
-          "v": " aynı şey değildir.”\n\nKaragöz hemen öne atıldı. “Ben hiç gölgede kalmam! Perdeye çıkınca zaten gölge oluyorum!”\n\nHerkes güldü. "
+          "v": " daha yaptı. Masanın üzerine oyuncak bir ev"
+        },
+        {
+          "t": "ikon",
+          "v": "house"
+        },
+        {
+          "t": "metin",
+          "v": " koyup feneri farklı yönlerden tuttu. Evin bacası bazen uzun, bazen kısa bir gölge bırakıyordu. Karagöz bunu görünce, “Bacanın boyunu kim değiştiriyor?” diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " henüz gelmemişti ama perdeyi hazırlayan "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": " defterine iki cümle yazdı: Ağacın gölgesinde dinlendim. Kardeşimin başarısının gölgesinde kalmak istemiyorum. Birinde ışık, ötekinde mecaz vardı. O gün perde, hem kahkaha hem kelime öğretmişti.\n\nDil hedefi: deyim: gölgede kalmak; gerçek–mecaz; Kavram/değer: ışık ve gölge, dilde bağlam. İkon önerileri: gölge, perde, fener. Okuma sonrası: Karagöz neden ilk başta gölgesini göremedi? Deyimdeki gölge gerçek gölge midir?"
+          "v": ", “Işığın yeri,” diye cevap verdi. Karagöz bir süre düşündü, ardından kendi gölgesine selam verdi. “Öyleyse kendimi büyümüş sanmayayım!” "
+        },
+        {
+          "t": "isaret",
+          "kod": "gunes"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hacivat fenerin önüne ikinci bir oyuncak koydu. İki gölge üst üste gelince Karagöz hangisinin kendisine ait olduğunu ayırt edemedi. Hacivat nesneleri ayrı ayrı hareket ettirdiğinde sorun çözüldü. “Bir şeyi anlamak"
+        },
+        {
+          "t": "ikon",
+          "v": "lightning-idea"
+        },
+        {
+          "t": "metin",
+          "v": " için bazen parçaları tek tek incelemek gerekir,” dedi. Az sonra seyirci çocuklar geldi. Hacivat iki ayrı fener"
+        },
+        {
+          "t": "ikon",
+          "v": "lighthouse"
+        },
+        {
+          "t": "metin",
+          "v": " hazırladı. Biri güçlü, diğeri daha zayıf ışık veriyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hacivat çocuklardan güvenli mesafeden perdeyi izlemelerini istedi. Karagöz elindeki tahta kaşığı fenerin önünde tuttu. Kaşığın gölgesi perdeye uzadı. Sonra kaşığı biraz çevirdi; gölgenin şekli değişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", “Demek "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_golge"
+        },
+        {
+          "t": "metin",
+          "v": " gerçek nesneyle aynı olmak zorunda değil,” dedi. Hacivat bunu duyunca sevindi. Karagöz ise kaşığı perdenin arkasına sakladı. “Gölgeyi bırakıp kendisini kaybetmeyelim!” diye şaka yaptı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Oyun bitince küçük "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", Hacivat'a bir deyim sordu: “Gölgede kalmak ne demek?” Hacivat cevap verdi: “Bazen biri, başka birinin yanında fark edilmez. Buna gölgede kalmak deriz. Ama gerçek "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_golge"
+        },
+        {
+          "t": "metin",
+          "v": " ile aynı şey değildir.” Karagöz hemen öne atıldı. “Ben hiç gölgede kalmam! Perdeye çıkınca zaten "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_golge"
+        },
+        {
+          "t": "metin",
+          "v": " oluyorum!”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Herkes güldü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterine iki cümle yazdı: Ağacın gölgesinde dinlendim. Kardeşimin başarısının gölgesinde kalmak istemiyorum. Birinde ışık, ötekinde "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_mecaz"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. O gün "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_perde"
+        },
+        {
+          "t": "metin",
+          "v": ", hem kahkaha hem kelime öğretmişti. "
+        },
+        {
+          "t": "isaret",
+          "kod": "kitap"
         }
       ]
     }
   ],
   "deger_sahneleri": {},
   "hareket_sahneleri": {},
-  "deyim_cumleleri": {
-    "hr027_golgede_kalmak": [
-      {
-        "t": "metin",
-        "v": "Buna gölgede kalmak deriz."
-      }
-    ]
-  },
+  "deyim_cumleleri": {},
   "sorular": [
     {
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Karagöz gölgesini neden göremedi?",
+      "metin": "Karagöz sabah sahneye geldiğinde neden telaşlandı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Arkadaki lamba henüz yanmıyordu"
+          "metin": "Perdeyi kaybetmişti"
         },
         {
           "id": "B",
-          "metin": "Güneş batmıştı"
+          "metin": "Gölgesini göremiyordu"
         },
         {
           "id": "C",
-          "metin": "Gölgesi tatile çıkmıştı"
+          "metin": "Hacivat gelmemişti"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Lamba yanmadığı için perdede gölge oluşmuyordu."
+      "dogru": "B",
+      "aciklama": "Karagöz ‘Gölge yok! Gölge kayboldu!’ diye bağırmıştı."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 1,
-      "metin": "Hacivat'a göre gölge neye bağlı olarak değişir?",
+      "metin": "Karagöz'ün gölgesi başlangıçta perdede neden görünmüyordu?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Işığın yerine"
+          "metin": "Sahnenin arkasındaki lamba henüz yanmıyordu"
         },
         {
           "id": "B",
-          "metin": "Karagöz'ün kıyafetine"
+          "metin": "Gölge Karagöz'den sıkılıp gitmişti"
         },
         {
           "id": "C",
-          "metin": "Perdenin rengine"
+          "metin": "Perde çok küçüktü"
         }
       ],
       "dogru": "A",
-      "aciklama": "Işığın konumu değişince gölgenin şekli ve boyu değişir."
+      "aciklama": "Lamba yanmayınca perdede gölge oluşmuyordu; perde bembeyazdı."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
-      "dayanak_sayfa": 3,
-      "metin": "Karagöz'ün “Gölgeyi bırakıp kendisini kaybetmeyelim” şakası neyi hatırlatır?",
+      "dayanak_sayfa": 8,
+      "metin": "Çocuğun defterine yazdığı iki cümlenin farkı nedir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Gölgenin, kişinin kendisi olmadığını"
+          "metin": "İkisi de gerçek bir ağaçtan söz eder"
         },
         {
           "id": "B",
-          "metin": "Perdenin çok büyük olduğunu"
+          "metin": "İkisi de gölgenin ışıkla ilgisini anlatır"
         },
         {
           "id": "C",
-          "metin": "Lambanın kırıldığını"
+          "metin": "Birinde gerçek gölge, ötekinde mecaz anlam vardır"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Gölge gerçek nesne değildir; kişi gölgesinden daha önemlidir."
+      "dogru": "C",
+      "aciklama": "Ağacın gölgesi gerçek gölgedir; başarının gölgesinde kalmak ise mecazdır."
     },
     {
       "id": "s4",
       "beceri": "sozcuk_baglami",
-      "dayanak_sayfa": 4,
-      "metin": "Metinde geçen gölgede kalmak deyimi ne anlama gelir?",
+      "dayanak_sayfa": 8,
+      "metin": "Metinde geçen mecaz sözcüğü ne anlama gelir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Başkasının yanında fark edilmemek"
+          "metin": "Bir gölge oyunu"
         },
         {
           "id": "B",
-          "metin": "Gölgede uyumak"
+          "metin": "Bir sözün gerçek anlamından farklı, benzetmeli anlamı"
         },
         {
           "id": "C",
-          "metin": "Işıkta durmak"
+          "metin": "Işığı yakan bir lamba"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "‘Gölgede kalmak’ gerçek gölgeyi değil, fark edilmemeyi anlatır; bu bir mecazdır."
+    },
+    {
+      "id": "s5",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 3,
+      "metin": "Hacivat lambayı yaklaştırınca Karagöz'ün gölgesine ne oldu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Büyüdü"
+        },
+        {
+          "id": "B",
+          "metin": "Kayboldu"
+        },
+        {
+          "id": "C",
+          "metin": "Küçüldü"
         }
       ],
       "dogru": "A",
-      "aciklama": "Gölgede kalmak, daha çok öne çıkan biri yanında fark edilmemek demektir."
+      "aciklama": "Lamba yaklaşınca gölge büyüdü, uzaklaşınca küçüldü."
     }
   ],
   "uretim": {
-    "kaynak": "llm_taslak",
+    "kaynak": "elle",
     "tarih": "2026-10-22"
   },
   "sozluk": {
     "sozluk_surumu": 1,
     "girdiler": [
       {
-        "id": "hr027_perde",
+        "id": "pb_golge",
         "tur": "kelime",
-        "yazim": "perdeyi",
-        "anlam": "Gölge oyununda gösterimin yansıdığı beyaz yüzey.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "gölge",
+        "anlam": "Işığın önüne bir şey girince arkasında oluşan karanlık görüntü.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr027_sahne",
+        "id": "pb_perde",
         "tur": "kelime",
-        "yazim": "sahne",
-        "anlam": "Gösterinin yapıldığı yer.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "perde",
+        "anlam": "Gölge oyununda görüntülerin üzerine düştüğü beyaz örtü; pencereyi örten kumaş da perdedir.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr027_fener",
+        "id": "pb_mecaz",
         "tur": "kelime",
-        "yazim": "feneri",
-        "anlam": "Işık veren, taşınabilen aydınlatma aracı.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr027_lamba",
-        "tur": "kelime",
-        "yazim": "lamba",
-        "anlam": "Işık veren araç.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr027_mum",
-        "tur": "kelime",
-        "yazim": "mum",
-        "anlam": "Yakıldığında ışık veren balmumu çubuk.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr027_ayirt",
-        "tur": "kelime",
-        "yazim": "ayırt",
-        "anlam": "İki ya da daha çok şeyi birbirinden seçebilmek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr027_seçmek",
-        "tur": "kelime",
-        "yazim": "seçmek",
-        "anlam": "Birkaç şey arasından birini almak.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr027_karistirmak",
-        "tur": "kelime",
-        "yazim": "karıştırmak",
-        "anlam": "Birbirinden ayırt edilemeyecek hale getirmek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr027_golgede_kalmak",
-        "tur": "deyim",
-        "yazim": "gölgede kalmak",
-        "anlam": "Başkasının yanında fark edilmemek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr027_one_cikmak",
-        "tur": "kelime",
-        "yazim": "öne çıkmak",
-        "anlam": "Dikkat çekecek bir yerde olmak.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr027_gölge_dusmek",
-        "tur": "deyim",
-        "yazim": "gölge düşürmek",
-        "anlam": "Bir şeyin değerini ya da güzelliğini azaltmak.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "mecaz",
+        "anlam": "Bir sözün gerçek anlamından ayrılıp benzetmeyle kullanılan anlamı.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       }
     ],
     "yuvalar": [
       {
-        "ad": "hr027_perde",
+        "ad": "pb_golge",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr027_perde"
-          },
-          {
-            "girdi": "hr027_sahne"
+            "girdi": "pb_golge"
           }
         ]
       },
       {
-        "ad": "hr027_fener",
+        "ad": "pb_perde",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr027_fener"
-          },
-          {
-            "girdi": "hr027_lamba"
-          },
-          {
-            "girdi": "hr027_mum"
+            "girdi": "pb_perde"
           }
         ]
       },
       {
-        "ad": "hr027_ayirt",
+        "ad": "pb_mecaz",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr027_ayirt"
-          },
-          {
-            "girdi": "hr027_seçmek"
-          },
-          {
-            "girdi": "hr027_karistirmak"
-          }
-        ]
-      },
-      {
-        "ad": "hr027_golgede_kalmak",
-        "tur": "deyim",
-        "adaylar": [
-          {
-            "girdi": "hr027_golgede_kalmak"
-          },
-          {
-            "girdi": "hr027_one_cikmak"
-          },
-          {
-            "girdi": "hr027_gölge_dusmek"
+            "girdi": "pb_mecaz"
           }
         ]
       }

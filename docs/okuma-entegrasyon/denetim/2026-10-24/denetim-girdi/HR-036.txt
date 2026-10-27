@@ -1,0 +1,76 @@
+# HR-036 · Yedi Renkli Köprünün Koruyucusu · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=124bcc04-d687-41e0-8ffe-e0b5f531ef7f, surum_no=1, sha256=153d43dbc1be4bd47ed629a85f25ba9392e36596c21cd62aa3e269b6d4808b84
+Not: bu hikâyede 1 taslak sürüm var; yalnız en yeni (surum_no=1) denetlenmiştir.
+
+## Künye
+Slug: hr036-yedi-renkli-kopruun-koruyucusu | Tür: arkadaslik | Konu: duygular_cesaret | Dünya: masalsi
+Sınıf: 4–4 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Köprünün ışığı solunca kasaba karanlıkta kaldı. Defne korkusuyla nasıl yüzleşti?
+İzinli türler: ben, arkadas, hayali
+Değer anahtarları (sürüm): D5, D11 | maarif.ana_deger: D5
+Etiketler: ana_sinif=4, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: dostluk, dayanisma | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: bekci_hr036 (lexeme, first_hint: bekçi); korkuluk_hr036 (lexeme, application: korkuluk); ugultu_hr036 (lexeme, application: uğultu); kavram_hr036 (concept, application: Duyguları adlandırmak ve cesaret)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":5,"simge_sayisi":1,"kelime_sayisi":460,"tahmini_sure_dk":6,"yoldas_yer_sayisi":5,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+[KAHRAMAN hal=ilgi] kasabasındaki eski taş köprü her akşam yedi farklı renkte parlardı. Kasabalılar bu ışığın nereden geldiğini bilmiyordu. Köprünün başında yaşayan [KELİME yuva=hr036_bekci] ise yalnızca şunu söylerdi: "Renkler, insanların unuttuğu duyguları hatırlatır." O gece [KAHRAMAN hal=yalin] tuhaf bir rüya görmüştü. Köprünün taşlarının üzerinde yürürken her biri ona bir anısını fısıldıyordu: ilk bisiklet sürüşündeki sevinç, kaybolan kedisini ararken duyduğu üzüntü, arkadaşına kızdığı günün öfkesi. Uyandığında bunların hepsinin kendi duyguları olduğunu hatırladı. Yine de korku taşına gelince rüyadaki ses kesilmişti. [KAHRAMAN hal=yalin] ertesi sabah nedenini merak ederek bekçinin yanına gitti.
+--- Sayfa 2 ---
+Bir sabah köprünün mor ışığı kayboldu. Ardından sarı, mavi ve yeşil ışıklar da sönükleşti. Nehrin karşı kıyısındaki çocukların okula gitmesi zorlaştı; sis çöktüğünde köprü neredeyse görünmez oluyordu. [KAHRAMAN hal=yalin] çözüm bulmak için bekçiye koştu. Bekçi ona yedi taş gösterdi: sevinç, üzüntü, öfke, şaşkınlık, sevgi, umut ve korku. "Korku taşının rengi solmuş," dedi bekçi. "Onu yeniden parlatacak olan, korkmadığını söyleyen değil, korkusunu tanıyandır." [KAHRAMAN hal=yalin] hemen, "Ben hiçbir şeyden korkmam!" dedi. O sırada köprünün öbür ucundan küçük kardeşi [YOLDAŞ hal=ilgi yedek=bir arkadaşın] sesi geldi. "Sis başladı!" diye bağırıyordu.
+--- Sayfa 3 ---
+[KAHRAMAN hal=ilgi] kalbi hızlandı. Aslında yükseklikten korkuyordu. Köprü güvenliydi ama aşağıdaki suyu görünce elleri terliyordu. Yıllardır bu korkusunu arkadaşlarından saklamıştı. [İŞARET kod=kalp] Bekçi acele etmedi. "Korkmak utanılacak bir şey değil," dedi. "Bir şeyi nasıl güvenle yapacağını düşünmene yardım edebilir." [KAHRAMAN hal=yalin] derin bir nefes aldı. "Evet, yüksekten korkuyorum," dedi. "Ama kardeşimin yanına da gitmek istiyorum." Bekçiyle birlikte [KELİME yuva=hr036_korkuluk] kontrol ettiler. Sis hafifleyene kadar beklediler. Sonra [KAHRAMAN hal=yalin], köprünün ortasına kadar yürüdü. [YOLDAŞ hal=yalin yedek=bir arkadaş] de bulunduğu yerde güvenle bekliyordu. [KAHRAMAN hal=yalin] adımlarını saydı. Bir, iki, üç... Ortaya geldiğinde nehrin [KELİME yuva=hr036_ugultu] duydu ama geri dönmedi. Bekçi yanındaydı. Birlikte [YOLDAŞ hal=yonelme yedek=bir arkadaşa] ulaştılar.
+--- Sayfa 4 ---
+O anda köprünün mor taşı parladı. Ardından diğer renkler de usulca yerine döndü. [KAHRAMAN hal=yalin], "Demek cesaret korkmamak değilmiş," dedi. Bekçi gülümsedi. "[VURGU "Cesaret bazen yardım istemektir"]. Bazen de tehlikeyi fark edip doğru zamanı beklemek." [YOLDAŞ hal=yalin yedek=bir arkadaş] akşam ablasına, "Beni almaya geldiğin için teşekkür ederim," dedi. [KAHRAMAN hal=yalin] ise onu beklediği yerde kalmayı başardığı için kutladı. "Sen de korkmuş olabilirsin," dedi. [YOLDAŞ hal=yalin yedek=bir arkadaş] başını salladı. "Korktum ama rastgele koşarsam kayabilirdim. O yüzden seni bekledim." İki kardeş birbirlerine sarıldı. [KAHRAMAN hal=yalin] anladı ki cesaret gösteren yalnızca kendisi değildi; güvenli biçimde beklemek de bazen cesur bir karardı.
+--- Sayfa 5 ---
+Ertesi gün [KAHRAMAN hal=yalin], okulda korkusunu arkadaşlarına anlattı. Kimse onunla alay etmedi. Hatta Elif karanlıktan, Arda ise kalabalık önünde konuşmaktan çekindiğini söyledi. Çocuklar birbirlerine destek olmak için küçük bir söz verdiler. Köprü o gece yine yedi renkte parladı. [KAHRAMAN hal=yalin] ne zaman mor ışığı görse kendine aynı cümleyi hatırlattı: "Korkumu adlandırınca onu daha iyi anlayabiliyorum." Birkaç hafta sonra Elif sınıf önünde şiir okumak için çekindi. [KAHRAMAN hal=yalin] yanına oturup "İstersen önce bana oku," dedi. Elif küçük bir prova yaptı; sonra arkadaşlarının karşısına çıktı. Her kelimesi kusursuz değildi ama sonunda gülümsedi. [KAHRAMAN hal=yalin] o an köprüde öğrendiği şeyin yalnızca kendisine ait olmadığını fark etti: İnsanlar birbirlerinin korkularına saygı duyduğunda, dünyada görünmez köprüler de kuruluyordu.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=A
+  Metin: Bekçi hangi duyguları taşlarla gösterdi?
+  A) Sevinç, üzüntü, öfke, şaşkınlık, sevgi, umut ve korku
+  B) Mavi, mor, yeşil
+  C) Kuş, kedi, köpek
+  D) Sis ve yağmur
+  Açıklama: Bekçi, yedi duyguyu yedi taşla gösterdi.
+s2 [cikarim] dayanak_sayfa=2 doğru=A
+  Metin: Bekçiye göre korku taşını kim yeniden parlatabilir?
+  A) Korkusunu tanıyan kişi
+  B) Korkmadığını söyleyen kişi
+  C) Rüzgâr
+  D) Yedi çocuk
+  Açıklama: Bekçi, korkusunu fark edip tanıyan kişinin taşı yeniden parlatabileceğini söyledi.
+s3 [yorumlama] dayanak_sayfa=4 doğru=A
+  Metin: Defne'nin “cesaret korkmamak değilmiş” sözü ne anlatır?
+  A) Cesaretin korkuyu fark edip doğru davranmak olduğunu
+  B) Hiç korkmamak gerektiğini
+  C) Köprünün kapandığını
+  D) Mert'in yanına gitmeyi
+  Açıklama: Defne, korkuyu fark edip güvenli bir biçimde davranmanın cesaret olduğunu anladı.
+s4 [sozcuk_baglami] dayanak_sayfa=3 doğru=A
+  Metin: Metinde geçen korkuluk ne demektir?
+  A) Düşmeyi önlemek için köprü kenarına konan parmaklık
+  B) Bir çeşit korku filmi
+  C) Korkak bir kişi
+  D) Bir köprü türü
+  Açıklama: Korkuluk, köprünün kenarında düşmeyi engelleyen parmaklıktır.
+
+## Sözlük
+- hr036_bekci | kelime | yazım: bekçi | 3–5 | anlam: Bir yeri koruyup gözeten kişi.
+- hr036_gozcu | kelime | yazım: gözcü | 3–5 | anlam: Uzaktan bakıp bir şeyi gözetleyen kişi.
+- hr036_korkuluk | kelime | yazım: korkulukları | 3–5 | anlam: Düşmeyi önlemek için kenara konan parmaklık.
+- hr036_parmaklik | kelime | yazım: parmaklık | 3–5 | anlam: Aralıklı demir çubuklardan oluşan koruyucu çit.
+- hr036_merdiven | kelime | yazım: merdiven | 3–5 | anlam: Katlar arasında çıkmaya yarayan basamaklar.
+- hr036_ugultu | kelime | yazım: uğultusunu | 3–5 | anlam: Uzaktan gelen, sürekli ve boğuk ses.
+- hr036_gurultu | kelime | yazım: gürültü | 3–5 | anlam: Rahatsız eden yüksek ses.
+- hr036_sessizlik | kelime | yazım: sessizlik | 3–5 | anlam: Hiç ses olmaması durumu.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

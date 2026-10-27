@@ -4,23 +4,25 @@
     "slug": "hr024-bulut-postacisinin-son-mektubu",
     "baslik": "Bulut Postacısının Son Mektubu",
     "tur": "fantastik",
-    "konu": "yon_adres",
+    "konu": "bulutlar",
     "sinif_alt": 3,
     "sinif_ust": 3,
     "okuma_bandi": 2,
     "dunya_tipi": "masalsi",
     "izinli_turler": [
+      "ben",
+      "arkadas",
       "hayali"
     ],
     "deger_anahtarlari": [
       "D16",
-      "D5"
+      "D15"
     ],
     "yetiskin_uygun": false,
     "etiketler": {
       "ana_sinif": 3,
       "okuma_zorlugu": 2,
-      "kavram_zorlugu": 2,
+      "kavram_zorlugu": 3,
       "ilgi_egilimi": "ortak",
       "temalar": [
         "kesif",
@@ -31,41 +33,41 @@
       ],
       "maarif": {
         "ana_deger": "D16",
-        "yardimci_deger": "D5"
+        "yardimci_deger": "D15"
       },
       "ogrenme_hedefleri": [
-        {
-          "id": "pusula_hr024",
-          "tur": "lexeme",
-          "etiket": "pusula",
-          "yuva": "hr024_pusula",
-          "islev": "first_hint"
-        },
         {
           "id": "adres_hr024",
           "tur": "lexeme",
           "etiket": "adres",
-          "yuva": "hr024_adres",
+          "yuva": "pa_adres",
+          "islev": "first_hint"
+        },
+        {
+          "id": "pusula_hr024",
+          "tur": "lexeme",
+          "etiket": "pusula",
+          "yuva": "pa_pusula",
           "islev": "application"
         },
         {
           "id": "yon_hr024",
           "tur": "lexeme",
           "etiket": "yön",
-          "yuva": "hr024_yon",
-          "islev": "application"
-        },
-        {
-          "id": "deyim_hr024",
-          "tur": "idiom",
-          "etiket": "Gözleri parlamak",
-          "yuva": "hr024_gozleri_parladi",
+          "yuva": "pa_yon",
           "islev": "application"
         },
         {
           "id": "kavram_hr024",
           "tur": "concept",
-          "etiket": "Yön bilgisi ile süs arasındaki fark",
+          "etiket": "Yönler ve adres bilgisi",
+          "islev": "application"
+        },
+        {
+          "id": "atasoz_hr024",
+          "tur": "proverb",
+          "etiket": "Acele işe şeytan karışır",
+          "yuva": "pa_ata_acele",
           "islev": "application"
         }
       ],
@@ -77,26 +79,26 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 386,
+        "kelime_sayisi": 381,
         "tahmini_sure_dk": 6,
-        "sayfa_sayisi": 4,
-        "soru_sayisi": 4,
+        "sayfa_sayisi": 7,
+        "soru_sayisi": 5,
         "soru_beceri_dagilimi": {
-          "hatirlama": 1,
+          "hatirlama": 2,
           "cikarim": 1,
           "yorumlama": 1,
           "sozcuk_baglami": 1
         },
         "hedef_tur_dagilimi": {
           "lexeme": 3,
-          "idiom": 1,
-          "concept": 1
+          "concept": 1,
+          "proverb": 1
         },
-        "yoldas_yer_sayisi": 3,
-        "simge_sayisi": 1
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 20
       }
     },
-    "tanitim": "Zarftaki adres yanlış mı, yoksa pusula mı yanılıyor? Pofuduk doğru eve nasıl ulaştı?",
+    "tanitim": "Postacı Pofuduk kuzeye uçtuğunu sanıyor ama altında çöl var. Çantadaki son mektup yerine ulaşabilecek mi?",
     "durum": "taslak",
     "fis_kodu": "HR-024"
   },
@@ -106,118 +108,43 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Bulutlar Şehri'nde herkesin bir görevi vardı. Yağmur Bulutu bahçeleri sular, "
+          "v": "Bulutlar Şehri'nde herkesin bir görevi vardı. Yağmur"
         },
         {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " yelkenlere yardım eder, Postacı "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
+          "t": "ikon",
+          "v": "rain"
         },
         {
           "t": "metin",
-          "v": " ise mektupları götürürdü. O sabah "
+          "v": " Bulutu bahçeleri sular, Rüzgâr"
         },
         {
-          "t": "kahraman",
-          "hal": "ilgi"
+          "t": "ikon",
+          "v": "wind"
         },
         {
           "t": "metin",
-          "v": " çantasında yalnızca bir zarf kalmıştı. Üzerinde şu "
+          "v": " Bulutu yelkenlere yardım eder, Postacı Pofuduk ise mektupları götürürdü. O sabah Pofuduk'un çantasında yalnızca bir zarf kalmıştı. Üzerinde şu "
         },
         {
           "t": "kelime",
-          "yuva": "hr024_adres"
+          "yuva": "pa_adres"
         },
         {
           "t": "metin",
-          "v": " yazıyordu: Kuzey Tepesi, Mavi Pencereli Ev.\n\n"
+          "v": " yazıyordu: \"Kuzey Tepesi, Mavi Pencereli Ev"
         },
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " kuzeye uçtuğunu sanıyordu. Fakat birkaç dakika sonra altındaki deniz yerine kocaman bir çöl gördü. “Bu işte bir terslik var,” diye mırıldandı. Çantasındaki "
-        },
-        {
-          "t": "kelime",
-          "yuva": "hr024_pusula"
+          "t": "ikon",
+          "v": "house"
         },
         {
           "t": "metin",
-          "v": " çıkardı. İbre kuzeyi gösterirken kendisi güneye ilerliyordu.\n\n"
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " yanına sokuldu. “Ben seni sürükledim, özür dilerim.”\n\n“Önemli değil,” dedi "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ". “Ama mektup sahibini bekletmeyelim.”"
-        }
-      ]
-    },
-    {
-      "omurga": true,
-      "parcalar": [
-        {
-          "t": "metin",
-          "v": "İkisi birlikte "
-        },
-        {
-          "t": "kelime",
-          "yuva": "hr024_yon"
-        },
-        {
-          "t": "metin",
-          "v": " düzeltti. Derken birbirine benzeyen iki tepe gördüler. Birinde kırmızı çatılı, diğerinde mavi pencereli ev vardı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " hemen aşağı inecekti ki bir ayrıntıyı fark etti: Mavi pencere güneş ışığından mı mavi görünüyordu, yoksa gerçekten maviye mi boyanmıştı?\n\nAşağıdaki kuş sürüsüne seslendi. Kuşların lideri, mavi pencereli evin kuzeydeki ikinci tepede olduğunu söyledi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " teşekkür etti; adresin yalnızca renk değil, yön bilgisi de verdiğini anladı.\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " evin çatısına konmadan önce çantasını kontrol etti. Yağmur Bulutu biraz önce yanından geçmişti; zarfın ıslanmaması için onu dikkatle saklamıştı. Zarfın köşesindeki pulun üzerinde küçük bir yıldız vardı. Postacı, yıldızın yön göstermediğini, yalnız süs olduğunu fark etti. Bir resim, her zaman haritadaki bir işaret değildi. "
+          "v": ".\" "
         },
         {
           "t": "isaret",
-          "kod": "yildiz"
+          "kod": "bulut"
         }
       ]
     },
@@ -226,306 +153,407 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Tam mektubu bırakacağı sırada evin penceresi açıldı. İçeriden gelen ses, “Mavi pencereyi mi arıyorsun?” diye sordu. "
+          "v": "Pofuduk kuzeye uçtuğunu sanıyordu. Fakat birkaç dakika sonra altındaki deniz"
         },
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " adresi bir kez daha okudu ve tepeyi teyit etti. Yanlış bir eve gidip başkasının haberini paylaşmak istemiyordu. Zarfın üzerindeki ismi ve kapıdaki ismi karşılaştırdı. İkisi de aynıydı. Ancak ondan sonra yaklaşarak mektubu verdi.\n\nEvde yaşlı bir teyze yaşıyordu.\n\nEvde yaşlı bir teyze yaşıyordu."
-        },
-        {
-          "t": "deyim",
-          "yuva": "hr024_gozleri_parladi"
+          "t": "ikon",
+          "v": "wave"
         },
         {
           "t": "metin",
-          "v": " Uzakta okuyan torunu, kendi yaptığı çizimin fotoğrafını göndermişti. Mektupta Büyüyünce bulut ressamı olacağım yazıyordu.\n\n"
+          "v": " yerine kocaman bir çöl"
         },
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " teyzenin gülümsemesini görünce yorgunluğunu unuttu. “Bir mektup bu kadar önemli olabilir mi?” diye sordu."
-        }
-      ]
-    },
-    {
-      "omurga": true,
-      "parcalar": [
-        {
-          "t": "metin",
-          "v": "“Elbette,” dedi teyze. “Bazen bir haber, uzağı yakın eder.”\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
+          "t": "ikon",
+          "v": "desert"
         },
         {
           "t": "metin",
-          "v": " dönüş yolunda çantasını boş buldu ama kendisini eksik hissetmedi. O gün bir zarfın yalnız kâğıt değil, sevincin taşıyıcısı olduğunu öğrenmişti. Yeni bir mektup geldiğinde adresin yönünü iki kez kontrol edecekti.\n\nBulutlar Şehri'ne döndüğünde pusulasını girişteki panoya astı. Altına küçük bir not ekledi: Bir yere yetişmek kadar, "
-        },
-        {
-          "t": "vurgu",
-          "v": "doğru yere varmak"
-        },
-        {
-          "t": "metin",
-          "v": " da önemlidir. "
+          "v": " gördü. \"Bu işte bir terslik var,\" diye mırıldandı. Yanında uçan yol arkadaşı "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": " notu okuyup güldü. “Bir dahaki sefere önce birlikte haritaya bakalım!” dedi.\n\nDil hedefi: kuzey–güney, adres, yön bilgisi; Kavram/değer: sorumluluk, özür, duygusal bağ. İkon önerileri: bulut, zarf, pusula. Okuma sonrası: "
+          "v": " da şaşırmıştı. Çantasında bir "
         },
         {
-          "t": "kahraman",
-          "hal": "yalin"
+          "t": "kelime",
+          "yuva": "pa_pusula"
         },
         {
           "t": "metin",
-          "v": " hangi hatayı fark etti? Mektup neden değerliydi?"
+          "v": " vardı; onu çıkarıp baktı. İbre kuzeyi gösterirken kendisi güneye ilerliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " Bulutu yanına sokuldu. \"Ben seni sürükledim, özür dilerim.\" \"Önemli değil,\" dedi Pofuduk. \"Ama mektup"
+        },
+        {
+          "t": "ikon",
+          "v": "scroll"
+        },
+        {
+          "t": "metin",
+          "v": " sahibini bekletmeyelim.\" İkisi birlikte yönlerini düzeltti. Derken birbirine benzeyen iki tepe gördüler. Birinde kırmızı çatılı, diğerinde mavi pencereli ev vardı. Pofuduk hemen aşağı inecekti ki bir ayrıntıyı fark etti: Mavi pencere güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " ışığından mı mavi görünüyordu, yoksa gerçekten maviye mi boyanmıştı?"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " aşağıdaki kuş"
+        },
+        {
+          "t": "ikon",
+          "v": "bird"
+        },
+        {
+          "t": "metin",
+          "v": " sürüsüne seslendi. Kuşların lideri, mavi pencereli evin kuzeydeki ikinci tepede olduğunu söyledi. Pofuduk teşekkür etti; adresin yalnızca renk değil, "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_yon"
+        },
+        {
+          "t": "metin",
+          "v": " bilgisi de verdiğini anladı. Evin çatısına konmadan önce çantasını kontrol etti. Yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " Bulutu biraz önce yanından geçmişti; zarfın ıslanmaması için onu dikkatle saklamıştı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Zarfın köşesindeki pulun üzerinde küçük bir yıldız"
+        },
+        {
+          "t": "ikon",
+          "v": "star"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. Postacı, yıldızın yön"
+        },
+        {
+          "t": "ikon",
+          "v": "compass"
+        },
+        {
+          "t": "metin",
+          "v": " göstermediğini, yalnız süs olduğunu fark etti. Bir resim, her zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " haritadaki bir işaret değildi. Tam mektubu bırakacağı sırada evin penceresi açıldı. İçeriden gelen ses, \"Mavi pencereyi mi arıyorsun?\" diye sordu. Pofuduk adresi bir kez daha okudu ve tepeyi teyit etti. Yanlış bir eve gidip başkasının haberini paylaşmak istemiyordu. Zarfın üzerindeki ismi ve kapıdaki ismi karşılaştırdı. İkisi de aynıydı. Ancak ondan sonra yaklaşarak mektubu verdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Evde yaşlı bir teyze yaşıyordu. Zarfı açınca gözleri parladı. Uzakta okuyan torunu, kendi yaptığı çizimin fotoğrafını göndermişti. Mektupta \"Büyüyünce bulut"
+        },
+        {
+          "t": "ikon",
+          "v": "cloud"
+        },
+        {
+          "t": "metin",
+          "v": " ressamı olacağım\" yazıyordu. Pofuduk teyzenin gülümsemesini görünce yorgunluğunu unuttu. \"Bir mektup"
+        },
+        {
+          "t": "ikon",
+          "v": "scroll"
+        },
+        {
+          "t": "metin",
+          "v": " bu kadar önemli olabilir mi?\" diye sordu. \"Elbette,\" dedi teyze. \"Bazen bir haber, uzağı yakın eder.\" "
+        },
+        {
+          "t": "isaret",
+          "kod": "kalp"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Pofuduk dönüş yolunda çantasını boş buldu ama kendisini eksik hissetmedi. O gün bir zarfın yalnız kâğıt değil, sevincin taşıyıcısı olduğunu öğrenmişti. Yeni bir mektup"
+        },
+        {
+          "t": "ikon",
+          "v": "scroll"
+        },
+        {
+          "t": "metin",
+          "v": " geldiğinde adresin yönünü iki kez kontrol edecekti. Bulutlar Şehri'ne döndüğünde pusulasını girişteki panoya astı. Altına küçük bir not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " ekledi: \"Bir yere yetişmek kadar, doğru yere varmak da önemlidir.\" Rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " Bulutu notu okuyup güldü. \"Bir dahaki sefere önce birlikte haritaya bakalım!\" dedi. Pofuduk gülümsedi ve \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pa_ata_acele"
+        },
+        {
+          "t": "metin",
+          "v": "\" diye mırıldandı."
         }
       ]
     }
   ],
   "deger_sahneleri": {},
   "hareket_sahneleri": {},
-  "deyim_cumleleri": {
-    "hr024_gozleri_parladi": [
-      {
-        "t": "metin",
-        "v": "Zarfı açınca gözleri parladı."
-      }
-    ]
-  },
+  "deyim_cumleleri": {},
   "sorular": [
     {
       "id": "s1",
       "beceri": "hatirlama",
-      "dayanak_sayfa": 1,
-      "metin": "Zarfta hangi adres yazıyordu?",
+      "dayanak_sayfa": 2,
+      "metin": "Postacı kuzeye uçtuğunu sanırken aslında hangi yöne gidiyordu?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kuzey Tepesi, Mavi Pencereli Ev"
+          "metin": "Kuzeye"
         },
         {
           "id": "B",
-          "metin": "Deniz Kıyısı, Kırmızı Ev"
+          "metin": "Doğuya"
         },
         {
           "id": "C",
-          "metin": "Güney Vadisi"
+          "metin": "Güneye"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Zarfın üzerinde Kuzey Tepesi, Mavi Pencereli Ev yazıyordu."
+      "dogru": "C",
+      "aciklama": "Pusulanın ibresi kuzeyi gösterirken postacı güneye ilerliyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
-      "dayanak_sayfa": 1,
-      "metin": "Pofuduk'un bir terslik olduğunu anlamasının nedeni neydi?",
+      "dayanak_sayfa": 4,
+      "metin": "Postacı mavi pencereli evin hangi tepede olduğunu nasıl anladı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Pusula kuzeyi gösterirken kendisi güneye gidiyordu"
+          "metin": "Kuşların liderinin verdiği yön bilgisinden"
         },
         {
           "id": "B",
-          "metin": "Çantası çok ağırdı"
+          "metin": "Rüzgâr Bulutu'nun söylediklerinden"
         },
         {
           "id": "C",
-          "metin": "Yağmur başlamıştı"
+          "metin": "Pulun üzerindeki yıldızdan"
         }
       ],
       "dogru": "A",
-      "aciklama": "Pusulanın gösterdiği yönle uçuş yönü uyuşmuyordu."
+      "aciklama": "Kuşların lideri, mavi pencereli evin kuzeydeki ikinci tepede olduğunu söyledi."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
-      "dayanak_sayfa": 2,
-      "metin": "Pofuduk zarftaki yıldız hakkında ne sonuca vardı?",
+      "dayanak_sayfa": 7,
+      "metin": "\"Bir yere yetişmek kadar, doğru yere varmak da önemlidir\" sözü ne anlatır?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yön göstermeyen, yalnızca süs olan bir resim"
+          "metin": "Hızlı gitmenin her şeyden önemli olduğunu"
         },
         {
           "id": "B",
-          "metin": "Hazine haritası"
+          "metin": "Acele etmek kadar doğru yere ulaşmanın da değerli olduğunu"
         },
         {
           "id": "C",
-          "metin": "Ev numarası"
+          "metin": "Mektupların hiç gecikmemesi gerektiğini"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Pofuduk yıldızın yön göstermediğini, sadece süs olduğunu anladı."
+      "dogru": "B",
+      "aciklama": "Postacı, hızlı olmanın yanında mektubu doğru adrese götürmenin de önemli olduğunu öğrendi."
     },
     {
       "id": "s4",
       "beceri": "sozcuk_baglami",
       "dayanak_sayfa": 2,
-      "metin": "Metinde geçen yön sözcüğü ne anlama gelir?",
+      "metin": "Metinde geçen pusula sözcüğü ne anlama gelir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Gidilecek doğrultu"
+          "metin": "Mektup zarfı"
         },
         {
           "id": "B",
-          "metin": "Bir mektup türü"
+          "metin": "Şehir haritası"
         },
         {
           "id": "C",
-          "metin": "Bir bulut rengi"
+          "metin": "Yönleri bulmaya yarayan araç"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Pusulanın ibresi kuzeyi gösterir; postacı yönünü bununla kontrol etti."
+    },
+    {
+      "id": "s5",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 6,
+      "metin": "Teyzenin torunu mektupta ne yazmıştı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Büyüyünce bulut ressamı olacağım"
+        },
+        {
+          "id": "B",
+          "metin": "Yarın eve geliyorum"
+        },
+        {
+          "id": "C",
+          "metin": "Seni çok özledim"
         }
       ],
       "dogru": "A",
-      "aciklama": "Yön, bir yere giderken izlenecek doğrultudur."
+      "aciklama": "Torun kendi çizimini göndermiş ve bulut ressamı olmak istediğini yazmıştı."
     }
   ],
   "uretim": {
-    "kaynak": "llm_taslak",
+    "kaynak": "elle",
     "tarih": "2026-10-22"
   },
   "sozluk": {
     "sozluk_surumu": 1,
     "girdiler": [
       {
-        "id": "hr024_pusula",
-        "tur": "kelime",
-        "yazim": "pusulayı",
-        "anlam": "Kuzey, güney gibi yönleri gösteren iğneli araç.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr024_harita",
-        "tur": "kelime",
-        "yazim": "harita",
-        "anlam": "Bir yerin ya da bölgenin kâğıt üzerindeki gösterimi.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr024_adres",
+        "id": "pa_adres",
         "tur": "kelime",
         "yazim": "adres",
-        "anlam": "Bir kişinin ya da yerin nerede olduğunu gösteren bilgi.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "anlam": "Bir yerin ya da kişinin bulunduğu yeri gösteren bilgi.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr024_konum",
+        "id": "pa_pusula",
         "tur": "kelime",
-        "yazim": "konum",
-        "anlam": "Bir şeyin bulunduğu yer.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "pusula",
+        "anlam": "Yönleri bulmaya yarayan araç.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr024_isim",
+        "id": "pa_yon",
         "tur": "kelime",
-        "yazim": "isim",
-        "anlam": "Bir kişinin ya da yerin adı.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "yön",
+        "anlam": "Bir şeyin gittiği ya da bakılan taraf; kuzey, güney gibi.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr024_yon",
-        "tur": "kelime",
-        "yazim": "yönlerini",
-        "anlam": "Gidilecek ya da bakılacak doğrultu.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr024_kuzey",
-        "tur": "kelime",
-        "yazim": "kuzey",
-        "anlam": "Pusulada üstte gösterilen yön.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr024_gozleri_parladi",
-        "tur": "deyim",
-        "yazim": "gözleri parladı",
-        "anlam": "Çok sevinmek, heyecanlanmak.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr024_gozu_dolmak",
-        "tur": "deyim",
-        "yazim": "gözü dolmak",
-        "anlam": "Duygulanıp ağlamaklı olmak.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "id": "pa_ata_acele",
+        "tur": "atasozu",
+        "yazim": "Acele işe şeytan karışır",
+        "anlam": "Telaşla yapılan işlerde hata yapmak kolaylaşır.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       }
     ],
     "yuvalar": [
       {
-        "ad": "hr024_pusula",
+        "ad": "pa_adres",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr024_pusula"
-          },
-          {
-            "girdi": "hr024_harita"
+            "girdi": "pa_adres"
           }
         ]
       },
       {
-        "ad": "hr024_adres",
+        "ad": "pa_pusula",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr024_adres"
-          },
-          {
-            "girdi": "hr024_konum"
-          },
-          {
-            "girdi": "hr024_isim"
+            "girdi": "pa_pusula"
           }
         ]
       },
       {
-        "ad": "hr024_yon",
+        "ad": "pa_yon",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr024_yon"
-          },
-          {
-            "girdi": "hr024_kuzey"
+            "girdi": "pa_yon"
           }
         ]
       },
       {
-        "ad": "hr024_gozleri_parladi",
-        "tur": "deyim",
+        "ad": "pa_ata_acele",
+        "tur": "atasozu",
         "adaylar": [
           {
-            "girdi": "hr024_gozleri_parladi"
-          },
-          {
-            "girdi": "hr024_gozu_dolmak"
+            "girdi": "pa_ata_acele"
           }
         ]
       }

@@ -1,0 +1,69 @@
+# HR-006 · Düdük Kimin Olacak? · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=5c599a9f-31b0-4741-ab47-57b17c5e39a9, surum_no=2, sha256=114d4e609cc3db27946b380cec7f04c43d438dad1ce2a9a98b2a7acc00fafe79
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr006-dudek-kimin-olacak | Tür: mizah | Konu: pazar | Dünya: gercekci
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Üç çocuk Hoca'dan düdük istedi. Yalnız biri parasını biriktirmişti. Düdükler nasıl paylaşılacak?
+İzinli türler: ben, kardes, arkadas, hayali
+Değer anahtarları (sürüm): D16, D1 | maarif.ana_deger: D16
+Etiketler: ana_sinif=2, okuma_zorlugu=1, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: sabir_emek, dayanisma | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: emek (lexeme, first_hint: emek); harclik (lexeme, application: harçlık); kavram_hr006 (concept, application: Biriktirme); atasoz_hr006 (proverb, application: Emek olmadan yemek olmaz)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":6,"simge_sayisi":6,"kelime_sayisi":224,"tahmini_sure_dk":4,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":2,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Pazar kurulurken Nasreddin Hoca komşu köye gidiyordu. Üç çocuk peşine takıldı: "Bize düdük getir!" Hoca, "Olur," dedi. Çocuklar sevinip koştu. Yalnızca [KAHRAMAN hal=yalin] durdu. Her hafta aldığı [KELİME yuva=s2_harclik] içinden ayırdığı küçük parayı Hoca'ya uzattı.
+--- Sayfa 2 ---
+Hoca parayı alıp dikkatle baktı. "Bu parayı neden[İKON question] biriktirdin?" [KAHRAMAN hal=yalin] her hafta harçlığından küçük bir bölüm ayırdığını söyledi. Bir kez renkli bir şeker almak istemiş ama düdük için beklemeyi seçmişti. "Bu para bir [KELİME yuva=s2_emek] karşılığı," dedi Hoca. "Harcamadan önce iyi düşünmek lazım. Hoca bunu şöyle özetledi: "[ATASÖZÜ yuva=ata_emek]"."
+--- Sayfa 3 ---
+Hoca pazarda farklı boyda düdükler gördü ve [KAHRAMAN hal=ilgi] parasıyla küçük bir tanesini aldı. Akşam döndüğünde çocuklar etrafını sardı. Hoca kesesinden tek bir düdük çıkardı ve [KAHRAMAN hal=yonelme] verdi. Öteki çocuklar şaşırdı. "Bizimki nerede?" diye sordular.
+--- Sayfa 4 ---
+Hoca, "Düdük istediğinizi biliyorum," dedi. "Ama nasıl alınacağını konuşmamıştık. Yarın birlikte[İKON friends] bir iş bulup biriktirelim." Ertesi gün çocuklar evde kullanılmayan düdükleri tamir etti. Mahalledeki büyükler küçük bir şenlik hazırlamalarına yardım[İKON hand-help] etti. [YOLDAŞ hal=yalin yedek=Hupo] de tamir işinde elini çabuk tuttu.
+--- Sayfa 5 ---
+Çocuklar mahalle meydanını temizlemeye gönüllü oldu. Büyükler emeklerini küçük hediyelerle destekledi. Bir hafta sonra herkesin kendi düdüğü vardı. [YOLDAŞ hal=yalin yedek=Hupo] "Benim param var diye yalnız ben sevinmek istemem," dedi ve arkadaşlarına harçlıklarını nasıl planlayacaklarını gösterdi.
+--- Sayfa 6 ---
+Düdük sesleri mahalleye yayılınca Hoca elini kaldırdı: "Bir işte hem sabır[İKON patience] hem düzen önemli." Çocuklar sırayla çalabilecekleri küçük bir oyun kurdu. Düdükler artık birbirine karışmıyordu. [İŞARET kod=kalp] [KAHRAMAN hal=yalin] o akşam, "Beklemek[İKON hourglass] de öğrenmekmiş," dedi.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=A
+  Metin: Düdük için ilk parayı kim uzattı?
+  A) Yalnız bir çocuk
+  B) Bütün çocuklar
+  C) Hoca kendisi
+  Açıklama: Üç çocuk peşine takılmıştı ama yalnız biri parasını uzattı.
+s2 [cikarim] dayanak_sayfa=3 doğru=A
+  Metin: Hoca akşam neden önce tek bir düdük verdi?
+  A) Düdüğü istediklerini ama nasıl alınacağını konuşmadıklarını söylemek için
+  B) Ucuz olan düdüğü almak için
+  C) Diğer çocuklara kızdığı için
+  Açıklama: Hoca, nasıl alınacağının konuşulmadığını ve birlikte bir iş bulup biriktirmeleri gerektiğini söyledi.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Hikâyenin sonunda çocuklar neyi öğrenmiştir?
+  A) Beklemenin ve sırayla davranmanın önemini
+  B) Hiç para harcamamayı
+  C) Yüksek sesle çalmanın daha güzel olduğunu
+  Açıklama: Yusuf, beklemenin de öğrenmek olduğunu söyledi; çocuklar sırayla çalmayı öğrendi.
+s4 [sozcuk_baglami] dayanak_sayfa=2 doğru=A
+  Metin: Metinde geçen emek sözcüğü ne anlama gelir?
+  A) Bir iş için harcanan çaba ve zaman
+  B) Büyük bir ağaç
+  C) Yüksek bir ses
+  Açıklama: Hoca, düdüğün bir emek ürünü olduğunu ve harcamadan önce düşünmek gerektiğini söyledi.
+
+## Sözlük
+- s2_emek | kelime | yazım: emek | 2–2 | anlam: Bir iş için harcanan çaba ve zaman.
+- s2_harclik | kelime | yazım: harçlık | 2–2 | anlam: Çocuğa verilen küçük miktarda para.
+- ata_emek | atasozu | yazım: Emek olmadan yemek olmaz | 2–2 | anlam: Bir şeyi elde etmek için çalışmak gerekir.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

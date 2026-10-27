@@ -1,0 +1,248 @@
+{
+  "sozluk_surumu": 1,
+  "girdiler": [
+    {
+      "id": "hr110_kanit",
+      "tur": "kelime",
+      "yazim": "kanıt",
+      "anlam": "Bir şeyin doğru olduğunu gösteren, başkasının da kontrol edebileceği bilgi ya da belge.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_delil",
+      "tur": "kelime",
+      "yazim": "delil",
+      "anlam": "Bir iddiayı doğrulayan ya da çürüten belge ya da işaret.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_varsayim",
+      "tur": "kelime",
+      "yazim": "varsayım",
+      "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_tanik",
+      "tur": "kelime",
+      "yazim": "tanık",
+      "anlam": "Bir olayı gören ya da bir olay hakkında bilgisi olan kişi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_sahit",
+      "tur": "kelime",
+      "yazim": "şahit",
+      "anlam": "Bir olaya tanıklık eden kişi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_duyum",
+      "tur": "kelime",
+      "yazim": "duyum",
+      "anlam": "Bir şeyi başkasından duyarak edinilen bilgi.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_olcu",
+      "tur": "kelime",
+      "yazim": "ölçü",
+      "anlam": "Bir şeyin büyüklüğünü ya da uzunluğunu belirli bir birimle gösteren değer.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_olcut",
+      "tur": "kelime",
+      "yazim": "ölçüt",
+      "anlam": "Bir şeyi değerlendirirken dayanılan ortak nitelik.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_tahmin",
+      "tur": "kelime",
+      "yazim": "tahmin",
+      "anlam": "Ölçmeden, yaklaşık olarak düşünülen değer.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_tutarsiz",
+      "tur": "kelime",
+      "yazim": "tutarsız",
+      "anlam": "Parçaları birbiriyle uyuşmayan, çelişen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_celiskili",
+      "tur": "kelime",
+      "yazim": "çelişkili",
+      "anlam": "Birbirine ters düşen.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_tutarli",
+      "tur": "kelime",
+      "yazim": "tutarlı",
+      "anlam": "Parçaları birbiriyle uyumlu olan.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_kulak",
+      "tur": "deyim",
+      "yazim": "kulak kesildi",
+      "anlam": "Dikkatle dinlemeye hazırlanmak.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_dikkat",
+      "tur": "deyim",
+      "yazim": "dikkat kesilmek",
+      "anlam": "Bütün dikkatini bir şeye vermek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    },
+    {
+      "id": "hr110_kulak_asmamak",
+      "tur": "deyim",
+      "yazim": "kulak asmamak",
+      "anlam": "Söylenene aldırış etmemek.",
+      "sinif_alt": 7,
+      "sinif_ust": 8,
+      "kaynak_turu": "editor_onerisi",
+      "kazanim_kodu": null,
+      "durum": "taslak"
+    }
+  ],
+  "yuvalar": [
+    {
+      "ad": "hr110_kanit",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr110_kanit"
+        },
+        {
+          "girdi": "hr110_delil"
+        },
+        {
+          "girdi": "hr110_varsayim"
+        }
+      ]
+    },
+    {
+      "ad": "hr110_tanik",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr110_tanik"
+        },
+        {
+          "girdi": "hr110_sahit"
+        },
+        {
+          "girdi": "hr110_duyum"
+        }
+      ]
+    },
+    {
+      "ad": "hr110_olcu",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr110_olcu"
+        },
+        {
+          "girdi": "hr110_olcut"
+        },
+        {
+          "girdi": "hr110_tahmin"
+        }
+      ]
+    },
+    {
+      "ad": "hr110_tutarsiz",
+      "tur": "kelime",
+      "adaylar": [
+        {
+          "girdi": "hr110_tutarsiz"
+        },
+        {
+          "girdi": "hr110_celiskili"
+        },
+        {
+          "girdi": "hr110_tutarli"
+        }
+      ]
+    },
+    {
+      "ad": "hr110_kulak",
+      "tur": "deyim",
+      "adaylar": [
+        {
+          "girdi": "hr110_kulak"
+        },
+        {
+          "girdi": "hr110_dikkat"
+        },
+        {
+          "girdi": "hr110_kulak_asmamak"
+        }
+      ]
+    }
+  ],
+  "kavramlar": []
+}

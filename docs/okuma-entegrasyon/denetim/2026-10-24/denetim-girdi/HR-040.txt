@@ -1,0 +1,94 @@
+# HR-040 · Trenin Penceresindeki Türkiye · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=f39ccf6f-28fe-4098-8cc5-0e080974a8fd, surum_no=2, sha256=5364076692bf0afda496bde5903fb5bf2ca3e507fe80c707a13ea44d9f8d9ef8
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr040-trenin-penceresindeki-turkiye | Tür: gezi_kultur | Konu: tren_yolculugu | Dünya: gercekci
+Sınıf: 4–4 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Üç şehir, üç sofra ve bir defter. Farklı yerlerin ortak yanı ne olabilir?
+İzinli türler: ben, arkadas, hayali
+Değer anahtarları (sürüm): D14, D19 | maarif.ana_deger: D14
+Etiketler: ana_sinif=4, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: kultur_miras, kesif, aile | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: yoresel_hr040 (lexeme, first_hint: yöresel); miras_hr040 (lexeme, application: miras); durak_hr040 (lexeme, application: durak); kavram_hr040 (concept, application: Kültürel çeşitlilik ve harita); atasoz_hr040 (proverb, application: Misafir kısmetiyle gelir)
+Ölçülen: {"soru_sayisi":6,"sayfa_sayisi":9,"simge_sayisi":13,"kelime_sayisi":496,"tahmini_sure_dk":6,"yoldas_yer_sayisi":3,"hedef_tur_dagilimi":{"lexeme":3,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+[KAHRAMAN hal=yalin] ilk uzun tren yolculuğuna çıkacağı sabah erkenden uyandı. Annesiyle birlikte[İKON friends] üç şehirde duracak, her durakta farklı bir aile[İKON house] dostunu ziyaret edeceklerdi. [YOLDAŞ hal=yalin yedek=Hupo] da yolculukta not[İKON notebook] tutmaya hazırdı. [KAHRAMAN hal=yalin] yolculuktan önce atlasını açmış, uğrayacakları şehirleri renkli kalemlerle işaretlemişti. "İstasyona varınca doğuya mı gitmiş olacağız?" diye sordu. Annesi güzergâhı gösterdi. "Her durakta haritayı yeniden inceleyelim," dedi.
+--- Sayfa 2 ---
+[KAHRAMAN hal=yalin] böylece pencerenin dışındaki manzarayla kâğıttaki çizgiler arasında bağlantı kurabilecekti. Aklında bir oyun da vardı: Her şehirden duyduğu yeni bir kelimeyi not[İKON notebook] edecek, sonra benzerlerini arayacaktı. [KAHRAMAN hal=yalin] küçük defterinin ilk sayfasına şunu yazdı: *Aynı ülkede kaç farklı sofra kurulabilir?* [İŞARET kod=kitap] Tren[İKON train] hareket edince pencereden tarlalar, dereler ve küçük istasyonlar akmaya başladı. İlk [KELİME yuva=pc_durak] Eskişehir'di.
+--- Sayfa 3 ---
+Banu teyze onları evinde karşılayıp "[ATASÖZÜ yuva=pc_ata_misafir]" dedi. Sonra sofraya çibörek koydu. [KAHRAMAN hal=yalin], "Bizim evdeki böreğe benziyor ama şekli farklı," dedi. Banu teyze, "Yemeklerin yolu da insanların yolu gibi. Bir yerden başka yere taşınırken değişebilir," diye anlattı. [KAHRAMAN hal=yalin] defterine iki sütun çizdi: *Benzerlikler* ve *Farklılıklar*. İlk sütuna "hamur ve paylaşmak", ikinciye "şekil ve hazırlanışı" yazdı. [YOLDAŞ hal=yalin yedek=Hupo] de tabaktaki yemeğin adını defterine geçirdi.
+--- Sayfa 4 ---
+Eskişehir'den ayrılırken [KAHRAMAN hal=yalin] pazarda çalışan bir kadına [KELİME yuva=pc_yoresel] bir sözcüğün anlamını sormuştu. Kadın, onun merakını görünce gülümseyerek açıklamış, sonra başka şehirlerde de farklı söyleyişler duyabileceğini anlatmıştı. [KAHRAMAN hal=yalin] aynı nesnenin farklı yerlerde bazen farklı adlarla anılmasına şaşırdı. "Demek kelimeler de yolculuk ediyor," dedi. Annesi, "Evet, insanlarla birlikte[İKON friends] taşınıyor ve değişiyor," diye cevap verdi. [KAHRAMAN hal=yalin] defterinde sözcüklere yeni bir sayfa[İKON book] ayırdı.
+--- Sayfa 5 ---
+İkinci gün Konya'ya vardılar. Mehmet amca onları tarihi bir sokakta gezdirdi. Taş binaları, eski kapıları ve avluları gösterdi. Öğle yemeğinde etli ekmek[İKON seed] vardı. [KAHRAMAN hal=yalin] bu kez yemeğin yanında anlatılan aile[İKON house] hikâyeleriyle de ilgilendi. Mehmet amca, "Eskiden akşam yemekleri ailece uzun sürerdi," dedi. "Herkes gününü anlatırdı." [KAHRAMAN hal=yalin], "Biz de bazen telefonu bir kenara koyup konuşuyoruz," diye cevap verdi. "Demek bazı gelenekler bugün de devam ediyor."
+--- Sayfa 6 ---
+Trenin üçüncü durağı Gaziantep'ti. Burada teyzesi Ayla, onlara renkli bir pazar gezdirdi. Baharatların kokusu birbirine karışıyordu. [KAHRAMAN hal=yalin] tezgâhlardaki ürünlerin adlarını not[İKON notebook] etti. Bir dükkânda bakır işleyen ustayı izledi. "Bu desenleri yapmayı kim öğretti?" diye sordu. Usta, "Önce babamdan öğrendim, sonra kendi desenlerimi geliştirdim," dedi. "Her yeni usta eski bilgiyi başka biçimde sürdürür."
+--- Sayfa 7 ---
+Üçüncü günün öğleden sonrasında pazarın yanındaki küçük müzeyi de görmüşlerdi. [KAHRAMAN hal=yalin], camın arkasındaki eski bir bakır tabağın üstünde ustanın desenlerine benzeyen çizgiler buldu. "Bugünküyle dünkü arasında bir bağ var," dedi. Ayla teyze, "Kültürel [KELİME yuva=pc_miras] böyle yaşar; insanlar öğrendiklerini yalnızca saklamaz, kullanır ve geliştirir," diye açıkladı. [KAHRAMAN hal=yalin] dönüş treninde gördüğü desenlerin küçük resimlerini yan yana çizdi ve altlarına ortak yanlarını yazdı.
+--- Sayfa 8 ---
+Akşam [KAHRAMAN hal=yalin] defterini açınca sayfaların yemek adlarıyla dolduğunu gördü. Ama yalnızca yemeklerden söz etmek istemedi. Her durakta insanların onları aynı sıcaklıkla karşıladığını da yazdı. Annesi, "Peki sorunun cevabını buldun mu?" diye sordu. [KAHRAMAN hal=yalin] gülümsedi. "Sayamadığım kadar farklı sofra var. Ama sofralarda ortak olan bir şey de var: Misafire yer açmak."
+--- Sayfa 9 ---
+Yolculuğun son sayfasına küçük bir Türkiye haritası çizdi. Üzerine uğradıkları şehirleri işaretledi. [YOLDAŞ hal=yalin yedek=Hupo] haritanın kenarına küçük bir tren[İKON train] çizdi. Haritanın altına da tek bir cümle yazdı: *Farklılıkları öğrenmek, birbirimize yaklaşmanın başka bir yolu.* [İŞARET kod=kalp]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=3 doğru=B
+  Metin: Eskişehir'de Banu teyze sofraya ne koydu?
+  A) Etli ekmek
+  B) Çibörek
+  C) Baklava
+  D) Mantı
+  Açıklama: Banu teyze onları evinde karşıladı ve sofraya çibörek koydu.
+s2 [cikarim] dayanak_sayfa=4 doğru=C
+  Metin: Pazardaki kadının başka şehirlerde de farklı söyleyişler duyulabileceğini anlatması neyi gösterir?
+  A) Sözcüklerin hiç değişmediğini
+  B) Yalnızca Eskişehir'de farklı konuşulduğunu
+  C) Aynı ülkede bile sözcüklerin yöreden yöreye değişebileceğini
+  D) Kimsenin birbirini anlamadığını
+  Açıklama: Aynı nesne farklı yerlerde farklı adlarla anılabiliyordu; çocuk da kelimelerin insanlarla birlikte yolculuk ettiğini fark etti.
+s3 [sozcuk_baglami] dayanak_sayfa=4 doğru=D
+  Metin: Metinde geçen yöresel sözcüğü ne anlama gelir?
+  A) Çok eski
+  B) Yabancı dilden gelen
+  C) Çok gürültülü
+  D) Belli bir yöreye ait olan
+  Açıklama: Pazardaki kadın, başka şehirlerde de farklı söyleyişler olabileceğini anlattı; yani sözcük o yöreye aitti.
+s4 [yorumlama] dayanak_sayfa=7 doğru=A
+  Metin: Ayla teyzenin "Kültürel miras böyle yaşar" demesi ne anlama gelir?
+  A) Geçmişten gelen bilgiler yalnızca saklanmaz, kullanılıp geliştirilerek sürdürülür
+  B) Eski eşyalar müzede kalmalıdır
+  C) Desenler hiç değişmemelidir
+  D) Yeni şeyler öğrenmek gereksizdir
+  Açıklama: Müzedeki eski tabaktaki çizgilerle ustanın bugünkü desenleri arasında bağ vardı; bilgi kullanılarak ve geliştirilerek yaşıyordu.
+s5 [degerlendirme] dayanak_sayfa=8 doğru=B
+  Metin: Çocuğun "Farklılıkları öğrenmek, birbirimize yaklaşmanın başka bir yolu" sonucuna varması neden yerindedir?
+  A) Çünkü her yerde yemekler aynıdır
+  B) Çünkü her durakta farklılıklar görse de insanların onu aynı sıcaklıkla karşıladığını fark etmiştir
+  C) Çünkü yolculuk çok kısa sürmüştür
+  D) Çünkü hiç soru sormamıştır
+  Açıklama: Çocuk, farklı sofralar ve gelenekler gördü; ama her yerde misafire yer açıldığını ve sıcak karşılandığını fark etti.
+s6 [hatirlama] dayanak_sayfa=6 doğru=C
+  Metin: Gaziantep'teki bakır ustası desenleri yapmayı kimden öğrendi?
+  A) Bir kitaptan
+  B) Müzedeki bir görevliden
+  C) Babasından
+  D) Okulundaki öğretmeninden
+  Açıklama: Usta, desenleri önce babasından öğrendiğini, sonra kendi desenlerini geliştirdiğini söyledi.
+
+## Sözlük
+- pc_yoresel | kelime | yazım: yöresel | 4–4 | anlam: Yalnızca belli bir yöreye ait olan.
+- pc_miras | kelime | yazım: miras | 4–4 | anlam: Geçmişten bugüne kalan değerli bilgi, eşya ya da gelenekler.
+- pc_durak | kelime | yazım: durak | 4–4 | anlam: Bir aracın yolculuk sırasında durduğu yer.
+- pc_ata_misafir | atasozu | yazım: Misafir kısmetiyle gelir | 4–4 | anlam: Eve gelen konuk, kendi nasibiyle gelir; ağırlamak bereket getirir.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

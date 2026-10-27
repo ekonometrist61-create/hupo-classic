@@ -1,0 +1,69 @@
+# HR-008 · Aslan ile Farenin Yardımı · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=0f4b3904-d285-4743-9dee-5a29de99aa6d, surum_no=3, sha256=c1e014f3c8c516044b25d99e952e2e06e7f5e8689e40ad85f46f43877c77d966
+Not: bu hikâyede 3 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr008-aslan-ve-fare | Tür: hayvanlar | Konu: orman | Dünya: masalsi
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Küçük bir fare uyuyan aslanı uyandırdı. Aslan bir gün ona ihtiyaç duyacak mı?
+İzinli türler: hayvan, hayali
+Değer anahtarları (sürüm): D9, D20 | maarif.ana_deger: D9
+Etiketler: ana_sinif=2, okuma_zorlugu=1, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: hayvanlar, dostluk | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: guclu (lexeme, first_hint: güçlü); kucuk (lexeme, application: küçük); kavram_hr008 (concept, application: Empati); atasoz_hr008 (proverb, application: İyilik eden iyilik bulur)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":6,"simge_sayisi":7,"kelime_sayisi":203,"tahmini_sure_dk":4,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":2,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Küçük fare [KAHRAMAN hal=yalin], aslanın uyuduğu kayanın yanından geçerken kuru bir dalı kırdı. Aslan uyandı. "Kim var orada?" diye kükredi. [KAHRAMAN hal=yalin] titredi ama kaçmadı. "Benim. Seni uyandırdığım için üzgünüm." [YOLDAŞ hal=yalin yedek=Hupo] bu dürüstlüğü hayranlıkla izledi.
+--- Sayfa 2 ---
+Aslan farenin dürüstlüğüne şaşırdı. "Bir daha dikkatli ol," deyip onu bıraktı. Birkaç gün sonra [KAHRAMAN hal=yalin] ormanda yardım[İKON hand-help] isteyen bir ses[İKON bell] duydu. Aslan, avcıların bıraktığı eski bir ağa takılmıştı. Ağın iplerini çekse de kurtulamıyordu.
+--- Sayfa 3 ---
+[KAHRAMAN hal=yalin] arkadaşlarına korktuğunu saklamadan anlattı: "Korktum. Yine de doğruyu söylemek istedim." Sonra sesin geldiği yere gitti. Ağın kalın iplerine baktı. Aslanın pençeleri ağın aralıklarına sığmıyordu. "Ben [KELİME yuva=s2_kucuk] bir fareyim ama dar yerlere girebilirim," dedi.
+--- Sayfa 4 ---
+Aslan sabırsızlandı ama [KAHRAMAN hal=yalin] acele etmedi. "Yavaş[İKON turtle] yapabilirim," dedi, "ama dikkatli olacağım." Önce düğümlerin yerini buldu, sonra en gevşek ipten başladı. Dişleriyle gevşemiş ipleri kemirdi. Aslan pençelerini oynatmadan bekledi. [İŞARET kod=orman]
+--- Sayfa 5 ---
+Ağ açıldı ve aslan dikkatle dışarı çıktı. "Ben [KELİME yuva=s2_guclu] olduğum için her şeyi yapabileceğimi sanırdım," dedi. Fare gülümsedi: "Ben de küçük olduğum için yapamayacağım şeyler olduğunu sanırdım." İkisi su[İKON drop] kenarında oturup dinlendi. Aslan, "[ATASÖZÜ yuva=ata_iyilik]" sözünü hatırladı. [YOLDAŞ hal=yalin yedek=Hupo] onların birbirini anlamasına sevindi.
+--- Sayfa 6 ---
+Aslan, [KAHRAMAN hal=belirtme] yorgun görünce serin bir yaprakla gölge yaptı. İkisi birlikte[İKON friends] dereye doğru[İKON check] yürüdü. O gün ormanda güçten başka önemli bir şey konuşuldu: birinin ihtiyacını anlayabilmek.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=A
+  Metin: Fare aslanı neden uyandırdı?
+  A) Kuru bir dalı kırdığı için
+  B) Ona seslendiği için
+  C) Yardım istediği için
+  Açıklama: Fare kayanın yanından geçerken kuru bir dalı kırdı ve aslan uyandı.
+s2 [cikarim] dayanak_sayfa=3 doğru=A
+  Metin: Aslan ağdan neden kendi başına kurtulamadı?
+  A) Pençeleri ağın aralıklarına sığmadığı için
+  B) Ağ çok küçük olduğu için
+  C) Yardım gelmediği için
+  Açıklama: Aslanın büyük pençeleri ağın aralıklarına sığmıyordu.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Aslan ve fare sonunda neyi öğrenmiştir?
+  A) Birinin ihtiyacını anlayabilmeyi
+  B) Ormanda yalnız yaşamayı
+  C) Kuru dal kırmanın iyi olduğunu
+  Açıklama: Aslan, güçten başka önemli bir şeyin birinin ihtiyacını anlamak olduğunu fark etti.
+s4 [sozcuk_baglami] dayanak_sayfa=5 doğru=A
+  Metin: Metinde geçen güçlü sözcüğü ne anlama gelir?
+  A) Kuvvetli, çok güç harcayabilen
+  B) Çok korkak
+  C) Sessiz
+  Açıklama: Aslan, güçlü olduğu için her şeyi yapabileceğini düşünüyordu.
+
+## Sözlük
+- s2_guclu | kelime | yazım: güçlü | 2–2 | anlam: Kuvvetli, çok güç harcayabilen.
+- s2_kucuk | kelime | yazım: küçük | 2–2 | anlam: Boyutu ya da miktarı az olan.
+- ata_iyilik | atasozu | yazım: İyilik eden iyilik bulur | 2–2 | anlam: İyilik yapan kişi, bir gün karşılığını bulur.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

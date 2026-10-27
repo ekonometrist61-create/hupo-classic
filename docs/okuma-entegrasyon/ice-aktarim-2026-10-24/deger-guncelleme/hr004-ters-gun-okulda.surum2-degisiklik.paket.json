@@ -1,0 +1,468 @@
+{
+  "hikaye": {
+    "tur": "mizah",
+    "konu": "okul",
+    "slug": "hr004-ters-gun-okulda",
+    "durum": "taslak",
+    "baslik": "Ters Gün Okulda",
+    "tanitim": "Okulun tabelaları karıştı. Şaka ile gerçek işaretleri nasıl ayıracaklar?",
+    "fis_kodu": "HR-004",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D14",
+        "yardimci_deger": "D6"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 4,
+        "sayfa_sayisi": 6,
+        "simge_sayisi": 10,
+        "kelime_sayisi": 241,
+        "tahmini_sure_dk": 5,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "okul",
+        "mizah"
+      ],
+      "ana_sinif": 2,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 1,
+      "kavram_zorlugu": 1,
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "erken",
+          "tur": "lexeme",
+          "yuva": "s2_erken",
+          "islev": "first_hint",
+          "etiket": "erken"
+        },
+        {
+          "id": "gec",
+          "tur": "lexeme",
+          "yuva": "s2_gec",
+          "islev": "application",
+          "etiket": "geç"
+        },
+        {
+          "id": "kavram_hr004",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Kurallar"
+        },
+        {
+          "id": "atasoz_hr004",
+          "tur": "proverb",
+          "yuva": "ata_dost_aci",
+          "islev": "application",
+          "etiket": "Dost acı söyler"
+        }
+      ]
+    },
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 1,
+    "izinli_turler": [
+      "ben",
+      "kardes",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D14",
+      "D6"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "s2_erken",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_erken"
+          }
+        ]
+      },
+      {
+        "ad": "s2_gec",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_gec"
+          }
+        ]
+      },
+      {
+        "ad": "ata_dost_aci",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "ata_dost_aci"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "s2_erken",
+        "tur": "kelime",
+        "anlam": "Vaktinden önce olan, normalden önce gelen.",
+        "yazim": "erken",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_gec",
+        "tur": "kelime",
+        "anlam": "Vakti geçmiş, normalden sonra olan.",
+        "yazim": "geç",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "ata_dost_aci",
+        "tur": "atasozu",
+        "anlam": "Gerçek dost, bazen acı da olsa doğruyu söyler.",
+        "yazim": "Dost acı söyler",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "A",
+      "metin": "Okulun kapısında hangi yazı vardı?",
+      "beceri": "hatirlama",
+      "aciklama": "Çocuklar kapıda GİRİLMEZ yazısını gördü.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "GİRİLMEZ"
+        },
+        {
+          "id": "B",
+          "metin": "HOŞ GELDİN"
+        },
+        {
+          "id": "C",
+          "metin": "SESSİZ OL"
+        }
+      ],
+      "dayanak_sayfa": 1
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Çocuk sağa dön kartının şaka olduğunu bilmesine rağmen neden endişelendi?",
+      "beceri": "cikarim",
+      "aciklama": "Yeni gelen küçük çocuk yanlış yere gidebilirdi; şaka herkes için komik olmayabilirdi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Küçük kardeşi kartı görünce yanlış yere gidebilirdi"
+        },
+        {
+          "id": "B",
+          "metin": "Kart çok büyük değildi"
+        },
+        {
+          "id": "C",
+          "metin": "Öğretmen kızacaktı"
+        }
+      ],
+      "dayanak_sayfa": 2
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Melis şaka köşesi hakkında ne öğrendi?",
+      "beceri": "yorumlama",
+      "aciklama": "Melis, şakanın başkalarını zor durumda bırakmadan da yapılabileceğini kabul etti.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Şaka yapmak için başkalarını zor durumda bırakmaya gerek olmadığını"
+        },
+        {
+          "id": "B",
+          "metin": "Şaka köşesinin okulda yasak olduğunu"
+        },
+        {
+          "id": "C",
+          "metin": "Tabela yazmanın hiç gerekmediğini"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen erken sözcüğünün zıt anlamlısı hangisidir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Erken, vaktinden önce olmak demektir; geç ise normalden sonra olmaktır.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "geç"
+        },
+        {
+          "id": "B",
+          "metin": "yeni"
+        },
+        {
+          "id": "C",
+          "metin": "uzun"
+        }
+      ],
+      "dayanak_sayfa": 3
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Okula gelen çocuklar kapıda \"GİRİLMEZ\" yazısını görünce durdu. Oysa öğretmenleri içeride bekliyordu. Sınıfta tabelalar birbirine karışmıştı: pencereye \"KAPALI\", kapıya \"AÇIK\" yazılmıştı. \"Biri ters gün oyunu yapmış!\" dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": "."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Koridorda yerde \"SAĞA DÖN\" yazan bir kart vardı. Ok ise sola bakıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce güldü. Sonra küçük kardeşinin bu okula yeni geldiğini düşündü. Kardeşi bu işareti görse yanlış yere gidebilirdi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de bunu kabul etti: şaka herkes için komik olmayabilir. Bir arkadaşın doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " uyarısı için \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "ata_dost_aci"
+        },
+        {
+          "t": "metin",
+          "v": "\" denir."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sınıf"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " tahtasına \"BUGÜN YARIN\" yazılmıştı. Öğretmen çocuklardan ters anlamlı sözcükler bulmalarını istedi. Bir çift de "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_erken"
+        },
+        {
+          "t": "metin",
+          "v": " ile "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_gec"
+        },
+        {
+          "t": "metin",
+          "v": " oldu. Zeynep \"Gece"
+        },
+        {
+          "t": "ikon",
+          "v": "moon"
+        },
+        {
+          "t": "metin",
+          "v": " ve gündüz!\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " \"Temiz ve kirli!\" diye ekledi. Her çift için doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " anlamı gösteren küçük bir resim çizdiler."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gerçek yön"
+        },
+        {
+          "t": "ikon",
+          "v": "compass"
+        },
+        {
+          "t": "metin",
+          "v": " levhaları yerinde kaldı. Oyun için ayrı bir pano yaptılar ve üstüne \"ŞAKA KÖŞESİ\" yazdılar. Orada \"ÇOK UZUN KISA CETVEL\" gibi komik ifadeler vardı. Herkes bunun bir oyun olduğunu anlayabiliyordu. Melis, şaka için başkalarını zor durumda bırakmaya gerek olmadığını kabul etti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " tabelaları ayrı bir köşeye koymayı önerdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir tabela çözülemedi: \"SESSİZ KAHKAHA ALANI.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " elini kaldırdı. \"Kahkaha sesli olur. Sessiz kahkaha nasıl"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " olur?\" Hep birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " ağızlarını açıp ses"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " çıkarmadan gülmeye çalıştılar. Tabelanın sahibi Melis'ti. Özür diledi ve öğretmeninin yardımıyla şaka köşesini düzenledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Günün sonunda Melis duvarın en üstüne küçük bir not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " ekledi: \"Oyun ayrı, gerçek işaretler ayrı.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " karşısına bir gülümseme çizdi. Ertesi gün öteki sınıflardan gelen öğrenciler şaka köşesine uğrayıp kendi zıt anlamlı sözcük çiftlerini ekledi. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

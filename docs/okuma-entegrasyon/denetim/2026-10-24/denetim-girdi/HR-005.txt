@@ -1,0 +1,69 @@
+# HR-005 · Hoca'nın Gölündeki Umut · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=b3f2755a-f817-47e4-9203-7ddfb3eb5826, surum_no=3, sha256=e3fc27814d2565fc2a47deea29a198fe3c77b158352130f07252c766a33e7e71
+Not: bu hikâyede 3 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr005-hocanin-golundeki-umut | Tür: mizah | Konu: goller | Dünya: gercekci
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Nasreddin Hoca gölde yoğurt olur mu diye soruyor. Çocuklar nasıl sınayacak?
+İzinli türler: ben, arkadas, hayali
+Değer anahtarları (sürüm): D5 | maarif.ana_deger: D5
+Etiketler: ana_sinif=2, okuma_zorlugu=2, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: doga, okul | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: tahmin (lexeme, first_hint: tahmin); gozlem (lexeme, application: gözlem); kavram_hr005 (concept, application: Deneme ve gözlem); atasoz_hr005 (proverb, application: Sormakla yol bulunur)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":6,"simge_sayisi":6,"kelime_sayisi":212,"tahmini_sure_dk":4,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":2,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Nasreddin Hoca gölün kıyısında bir kap yoğurdu karıştırıyordu. Yanında [YOLDAŞ hal=yalin yedek=Hupo] de vardı. Köylü çocukları merakla yaklaştı. "Hocam, göle ne yapıyorsun?" diye sordular. "Biraz maya katıyorum," dedi Hoca.
+--- Sayfa 2 ---
+Çocuklardan biri gözlerini açtı: "Koca göl yoğurt olur mu?" Hoca gülümsedi: "Olmayabilir. Peki bir şeyin olup olmayacağını nasıl[İKON question] anlarız?" Kimi "Kesin olmaz," dedi, kimi "Belki," diye fısıldadı. Çocuklar birer [KELİME yuva=s2_tahmin] yürüttü.
+--- Sayfa 3 ---
+Sazlıkta bir kurbağa suya atlayınca halkalar oluştu. "Hocam, maya suya yayılırsa kurbağaya bir şey olur mu?" diye sordu en küçük çocuk. Hoca kabı kenara koydu. "Bir şeyi merak[İKON curiosity] ederken doğayı da düşünmeliyiz." Çocuklar göle hiçbir şey dökmemeye karar verdi.
+--- Sayfa 4 ---
+[KAHRAMAN hal=yalin] küçük bir kapta süt ve yoğurt ile deneme yapmayı önerdi. Köydeki yoğurt ustası sabırla anlattı: önce süt ısıtılır, sonra uygun koşullarda yoğurt oluşur. Çocuklar güvenli örneği izledi ve her adımı defterine yazdı. Defterine "Tahmin", "[KELİME yuva=s2_gozlem]" ve "Sonuç" başlıklarını koydu.
+--- Sayfa 5 ---
+Yol boyunca [YOLDAŞ hal=yalin yedek=Hupo] "Göle maya çalmak kocaman bir hayalmiş," dedi. Hoca gülümsedi: "Hayal kurmak güzel. Ama onu bilgiyle sınamak da gerek." Gölün kıyısına döndüklerinde suyun üstünde bir kurbağa gördüler. Göl kirlenmemişti. [İŞARET kod=balik]
+--- Sayfa 6 ---
+Çocuklar, göle yoğurt dökmenin suyu kirletebileceğini de konuştu. [KAHRAMAN hal=yalin] eve gidince ailesine gördüklerini anlattı. "Her tahmin doğru[İKON check] olmayabilir," dedi, "ama sormaktan vazgeçmemeliyiz." Annesi gülümsedi: "[ATASÖZÜ yuva=ata_sormakla]". Babası ona bir defter[İKON notebook] verdi. [KAHRAMAN hal=yalin] defterin kapağına "Merak[İKON curiosity] Kutum" yazdı.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=3 doğru=A
+  Metin: Kurbağa suya atlayınca ne oldu?
+  A) Suda halkalar oluştu
+  B) Göl kurudu
+  C) Kap devrildi
+  Açıklama: Kurbağa suya atlayınca etrafında halkalar oluştu.
+s2 [cikarim] dayanak_sayfa=4 doğru=A
+  Metin: Çocuklar defterlerine neden her adımı not etti?
+  A) Ne olduğunu gözlemleyip kaydetmek için
+  B) Sınav için
+  C) Kimseye göstermemek için
+  Açıklama: Çocuklar yapılanları izleyip not ederek sonucu anlamaya çalıştı.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Eve dönen çocuğun 'Her tahmin doğru olmayabilir' sözü neyi anlatır?
+  A) Tahminler yanlış çıksa da sormak önemlidir
+  B) Tahmin yapmak zamanın boşa harcanmasıdır
+  C) Hiç soru sorulmamalıdır
+  Açıklama: Çocuk, yanlış tahminler olsa da merak edip sormaktan vazgeçmemek gerektiğini söyledi.
+s4 [sozcuk_baglami] dayanak_sayfa=2 doğru=A
+  Metin: Metinde geçen tahmin yürütmek ne anlama gelir?
+  A) Bir şeyin ne olabileceğini düşünmek
+  B) Bir şeyi tam olarak bilmek
+  C) Hiçbir şey düşünmemek
+  Açıklama: Çocuklar olabileceklerini düşünerek fikir yürüttü.
+
+## Sözlük
+- s2_tahmin | kelime | yazım: tahmin | 2–2 | anlam: Bir şeyin ne olabileceğini düşünerek söyleme.
+- s2_gozlem | kelime | yazım: gözlem | 2–2 | anlam: Bir şeyi dikkatle izleyip inceleme.
+- ata_sormakla | atasozu | yazım: Sormakla yol bulunur | 2–2 | anlam: Bilmediğimiz şeyi sorarak öğrenir, çözüm buluruz.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

@@ -1,0 +1,92 @@
+# HR-021 · Kayıp Sandığın Şifresi · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=fc152a6c-6bfd-4374-a33f-f4f7463d5f5a, surum_no=3, sha256=7d8dcf8fa2e6a7d667e558aa2963b77812525260c260e89dc10ef874f4158a29
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr021-kayip-sandigin-sifresi | Tür: macera | Konu: kutuphane | Dünya: gercekci
+Sınıf: 4–4 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Dört boş yuva, dört gizemli cümle: Tozlu sandığı zorlamadan açmanın bir yolu var mı?
+İzinli türler: ben, arkadas
+Değer anahtarları (sürüm): D4, D16 | maarif.ana_deger: D4
+Etiketler: ana_sinif=4, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: gizem, dostluk, okul, kultur_miras | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sifre_hr021 (lexeme, first_hint: şifre); hatira_hr021 (lexeme, application: hatıra); kavram_hr021 (concept, application: Mantıksal sıralama ve ortak hafıza)
+Ölçülen: {"soru_sayisi":6,"sayfa_sayisi":9,"simge_sayisi":22,"kelime_sayisi":463,"tahmini_sure_dk":6,"yoldas_yer_sayisi":4,"hedef_tur_dagilimi":{"lexeme":2,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":2}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Kütüphanenin taşınacağı gün, dört arkadaş tozlu bir sandık buldu. Üzerinde güneş[İKON sun], yaprak, dalga[İKON wave] ve yıldız[İKON star] şekilleri vardı. Fakat şekillerin bulunduğu dört küçük yuva boştu. Sandığın yanında, yıllar önce hazırlanmış bir not duruyordu: "Bu sandık, bir sınıfın unutmadığı şeylerle açılır." "İçinde ne olabilir?" diye fısıldadı Ömer. "Eski haritalar!" dedi [YOLDAŞ hal=yalin yedek=Hupo]. "Belki de gizli bir kulübün defteri."
+--- Sayfa 2 ---
+Kütüphane görevlisi sandığın okula ait olduğunu, önce içindekileri kayıt altına almaları gerektiğini söyledi. Kilidi zorlamamalarını da hatırlattı. Çocuklar notu dikkatle inceledi. Altında dört cümle daha vardı: "Bizi ısıtan; büyümemizi sağlayan; temiz suyu koruyan; gece[İKON moon] yol gösteren." [KAHRAMAN hal=yalin] ilk cümleyi okuyunca güneşi düşündü. Ancak güneşin yerine hangi şeklin konacağını bilmiyorlardı.
+--- Sayfa 3 ---
+Okulun eski fotoğraf albümünde aynı dört simgenin bulunduğu bir sayfa[İKON book] keşfettiler. Sayfanın altında "Dördüncü Sınıf [KELİME yuva=pa_hatira] Projesi" yazıyordu. Albümde, öğrencilerin güneşli bir günde fidan diktiği, dere kıyısında temizlik yaptığı, geceleri yıldızları gözlediği fotoğraflar vardı.
+--- Sayfa 4 ---
+Albümün kenarında ayrıca dört farklı el yazısı vardı. Güneş[İKON sun] fotoğrafının yanına "Birlikte ısındık", fidanların altına "Birlikte büyüttük", dere temizliğine "Birlikte koruduk", yıldız[İKON star] gözlemine "Birlikte merak[İKON curiosity] ettik" yazılmıştı. [YOLDAŞ hal=yalin yedek=Hupo] bu cümleleri yüksek sesle okuduğunda [KAHRAMAN hal=yalin] sandığın notuyla aynı sözcüklerin tekrarlandığını fark etti. "Sanki biri hatırlamamızı istemiş," dedi. [İŞARET kod=ipucu]
+--- Sayfa 5 ---
+Ömer sandığı açmak için sabırsızlanıyordu. "Bir denesek ne olur? Belki doğru şekil kendiliğinden oturur." Görevli, parçaları zorlamanın eski kartonları kırabileceğini hatırlattı. Dört arkadaş[İKON friends] masanın üzerinde kâğıttan bir sandık[İKON chest] resmi çizdi, şekilleri önce oraya yerleştirdi. Bir şeyin cevabını bulmak için her zaman[İKON clock] asıl nesneyi kurcalamak gerekmediğini keşfettiler.
+--- Sayfa 6 ---
+Kerem, dört cümleyi fotoğraflarla eşleştirmek istedi. "Bizi ısıtan güneş[İKON sun]. Büyümemizi sağlayan yaprak[İKON leaf]," dedi. Ömer sözünü kesti: "Peki 'temiz suyu koruyan' neden dalga[İKON wave] olsun?" [YOLDAŞ hal=yalin yedek=Hupo] bir fotoğrafı gösterdi. Dere temizliğinin fotoğrafında, köşeye çizilmiş küçük bir dalga simgesi vardı. "Su dalgayla gösterilmiş," dedi [YOLDAŞ hal=yalin yedek=Hupo]. "Demek ki temiz suyu koruyan, dalga." [KAHRAMAN hal=yalin], "Her ipucunu fotoğraflarla sınadık, şimdi sıra bunları sıraya koymakta," diye düşündü. Yeniden albüme döndüler ve son sayfaya baktılar.
+--- Sayfa 7 ---
+Son sayfada küçük bir şiir vardı: "Güneş[İKON sun] bizi ısıtır, yaprak bizi büyütür, dalga[İKON wave] temiz suyu korur, yıldız[İKON star] geceye yol gösterir." Çocuklar bunun yalnızca bir şiir olmadığını, dört etkinliği sıralayan gizli düzen, yani [KELİME yuva=pa_sifre] olduğunu anladılar. Sandığın yanındaki çekmecede kartondan yapılmış dört şekil bulundu. Şekilleri şiirdeki sıraya göre yerleştirdiklerinde sandığın mekanik mandalı tık etti. Görevli kapağı kendisi açtı. [İŞARET kod=anahtar]
+--- Sayfa 8 ---
+İçeriden altın çıkmadı. Dört küçük defter[İKON notebook], öğrencilerin çekilmiş fotoğrafları ve bir paket kuru tohum[İKON seed] çıktı. Defterlerin birinde şu cümle yazılıydı: "Yıllar sonra açacak olanlara: Biz bu okulu yalnızca derslerimizle değil, birlikte yaptıklarımızla hatırlıyoruz." Ömer önce biraz hayal kırıklığına uğradı. Sonra tohum paketini eline aldı. "Bunları dikebilir miyiz?" diye sordu. Görevli, tohumların eski olduğu için filizlenmeyebileceğini, yine de denemelerini önerdi.
+--- Sayfa 9 ---
+Çocuklar sandığın içindekileri düzenleyip okul[İKON school] arşivine teslim etti. Çekmecedeki dört şeklin kopyalarını da yeni hatıra panosuna yerleştirdiler. Bir hafta sonra sınıflarına ait bir fotoğraf çektiler. Fotoğrafın arkasına herkes bir cümle yazdı. [KAHRAMAN hal=ilgi] cümlesi şuydu: "Bir sandığın en değerli şifresi, insanların birlikte biriktirdiği anılardır."
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=8 doğru=C
+  Metin: Sandığın içinden ne çıktı?
+  A) Altın sikkeler
+  B) Eski haritalar
+  C) Defterler, fotoğraflar ve bir paket kuru tohum
+  D) Gizli bir kulübün üyelik kartları
+  Açıklama: İçeriden altın çıkmadı; dört küçük defter, fotoğraflar ve kuru tohum paketi çıktı.
+s2 [cikarim] dayanak_sayfa=7 doğru=A
+  Metin: Çocuklar şekilleri hangi sıraya göre yerleştireceklerini nereden anladı?
+  A) Albümün son sayfasındaki şiirden
+  B) Görevlinin söylediği sıradan
+  C) Sandığın kilidinin üzerindeki numaralardan
+  D) Notun ilk cümlesinden
+  Açıklama: Son sayfadaki şiir, dört etkinliği sırayla hatırlatıyordu; şekilleri bu sıraya göre yerleştirdiler.
+s3 [yorumlama] dayanak_sayfa=4 doğru=B
+  Metin: Albümdeki "Birlikte ısındık", "Birlikte büyüttük" gibi yazılar sınıfın neyi önemsediğini gösterir?
+  A) Yarışmayı kazanmayı
+  B) Ortak yaşantıları ve iş birliğini
+  C) Tek başına çalışmayı
+  D) Hediye almayı
+  Açıklama: Her yazıda "Birlikte" sözcüğü vardı; sınıf yaptıklarını birlikte yapmayı önemsiyordu.
+s4 [sozcuk_baglami] dayanak_sayfa=7 doğru=D
+  Metin: Metinde geçen şifre sözcüğü ne anlama gelir?
+  A) Eski bir fotoğraf
+  B) Sandığın kilidi
+  C) Okulun adı
+  D) Çözülünce bir şeyi açan gizli işaret ya da söz
+  Açıklama: Şifre, doğru çözülünce sandığı açan gizli düzendir; çocuklar bunu şiirdeki sıra olarak buldu.
+s5 [sozcuk_baglami] dayanak_sayfa=3 doğru=A
+  Metin: Metinde geçen hatıra sözcüğü ne anlama gelir?
+  A) Geçmişten akılda kalan, unutulmak istenmeyen anı
+  B) Yeni alınan bir eşya
+  C) Okulun kapısı
+  D) Bir tür bilmece
+  Açıklama: Hatıra projesi, sınıfın unutmak istemediği anıları saklamak içindi.
+s6 [degerlendirme] dayanak_sayfa=5 doğru=C
+  Metin: Çocukların şekilleri sandığa zorlamak yerine önce kâğıt üzerinde denemesi hakkında ne söylenebilir?
+  A) Gereksiz bir zaman kaybıydı.
+  B) Görevliyi memnun etmek için yapıldı.
+  C) Eşyaya zarar vermeden çözüm aramanın akıllıca bir yoluydu.
+  D) Sandık zaten açık olduğu için yapıldı.
+  Açıklama: Zorlamak eski kartonları kırabilirdi; çocuklar nesneye zarar vermeden denedi.
+
+## Sözlük
+- pa_sifre | kelime | yazım: şifre | 4–4 | anlam: Çözülünce bir şeyi açan gizli işaret ya da söz.
+- pa_hatira | kelime | yazım: hatıra | 4–4 | anlam: Geçmişten akılda kalan, unutulmak istenmeyen anı.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

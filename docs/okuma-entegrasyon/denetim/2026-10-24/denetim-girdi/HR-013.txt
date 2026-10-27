@@ -1,0 +1,71 @@
+# HR-013 · Kırılan Oyuncak Köprü · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=95c0803c-a45e-4666-9213-e49fa5a4dd52, surum_no=3, sha256=8c422faa709d623f152972ca18346c01adef4acc849755f232bbc0ffc890d811
+Not: bu hikâyede 3 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr013-kirilan-oyuncak-kopru | Tür: arkadaslik | Konu: bahce | Dünya: gercekci
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Kartondan yapılan köprü yarıştan önce çöktü. Suçlu kim, nasıl onarılır?
+İzinli türler: ben, arkadas, kardes
+Değer anahtarları (sürüm): D16 | maarif.ana_deger: D16
+Etiketler: ana_sinif=2, okuma_zorlugu=1, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: okul, sabir_emek | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: saglam (lexeme, first_hint: sağlam); onarim (lexeme, application: onarım); kavram_hr013 (concept, application: Basit yapı tasarımı); atasoz_hr013 (proverb, application: Birlikten kuvvet doğar)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":7,"simge_sayisi":12,"kelime_sayisi":239,"tahmini_sure_dk":4,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":2,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Oyun köprüsü tam yarış başlayacakken çöktü. [KAHRAMAN hal=yalin] kartondan yapılan köprünün üstüne büyük kamyon oyuncağını koymuştu. "Sen bozdun!" diye bağırdı Mert. Gözleri dolan [KAHRAMAN hal=yalin] sessiz kaldı.
+--- Sayfa 2 ---
+Öğretmenleri yanlarına geldi. "Önce sorunu anlayalım," dedi. Köprünün ayakları ince kâğıttandı, oyuncak ise ağırdı. Mert yanlışlıkla suçladığını fark etti. "Ben de köprüyü sağlam yapmadım," dedi.
+--- Sayfa 3 ---
+[KAHRAMAN hal=yalin] kırılan parçalara bakarken çok üzgündü; dün akşam onu yapmak için uğraşmıştı. Mert ise uzun süre bir köprü[İKON bridge] hayali kurduğunu anlattı. Öğretmen[İKON school] "Şimdi birbirinizi dinleyin," dedi. [KAHRAMAN hal=yalin] ağır kamyonu dikkatsizce koyduğunu kabul etti. Mert de köprüyü denemeden bitmiş saydığını söyledi.
+--- Sayfa 4 ---
+Masada farklı kalınlıkta kartonlar vardı. Bir şerit düz tutulunca eğildi; ikiye katlanınca daha zor eğildi. "Demek aynı karton biçim değişince daha [KELİME yuva=s2_saglam] olabilir," dedi Mert. [YOLDAŞ hal=yalin yedek=Hupo] küçük bir köprü[İKON bridge] resmi çizerek fikirlerini göstermelerine yardım[İKON hand-help] etti.
+--- Sayfa 5 ---
+Yeni köprüyü kurmadan önce küçük bir ayak parçasını denediler. Tek başına devrilen parça iki yan destek eklenince durdu. [KAHRAMAN hal=yalin] her denemeyi bir çizelgeye işaretledi. Birbirlerini suçlamadıklarında daha çabuk çözüm[İKON puzzle] bulduklarını fark ettiler. Kalın kartondan dört ayak yaptılar ve üstüne iki kat yol koydular.
+--- Sayfa 6 ---
+Köprü[İKON bridge], en büyük kamyon konunca hafifçe eğildi ama yıkılmadı. "Bu kez oldu!" diye sevindiler. Öğretmen[İKON school], sorun çıktığında suçlu aramak yerine nedenini araştırmalarına sevindi. Bu [KELİME yuva=s2_onarim] işini birlikte[İKON friends] yaptılar. Mert gülerek "[ATASÖZÜ yuva=ata_birlik]" dedi.
+--- Sayfa 7 ---
+[YOLDAŞ hal=yalin yedek=Hupo] gülümsedi. Yarış başladığında oyuncak kamyon köprünün üstünden yavaşça geçti. Köprü[İKON bridge] sallanmadı. [İŞARET kod=yildiz] Mert küçük bir bayrak kaldırdı. İkisi birbirine bakıp güldü. Bu kez yalnızca köprüyü değil, birlikte[İKON friends] çözüm[İKON puzzle] bulmayı da başarmışlardı.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=A
+  Metin: Köprü yarış öncesinde neden çöktü?
+  A) Üstüne ağır bir kamyon konduğu için
+  B) Yağmur yağdığı için
+  C) Çocuklar üstüne bastığı için
+  Açıklama: Köprünün üstüne büyük bir kamyon oyuncağı konmuştu.
+s2 [cikarim] dayanak_sayfa=4 doğru=A
+  Metin: Kartonu ikiye katlayınca ne oldu?
+  A) Daha zor eğildiği için daha dayanıklı oldu
+  B) Rengi değişti
+  C) Daha hafif oldu
+  Açıklama: İki kat karton daha zor eğildi; bu da onu daha sağlam yaptı.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Öğretmen sorun çıkınca neye sevindi?
+  A) Nedenini birlikte araştırmalarına
+  B) Kimin suçlu olduğunu bulmalarına
+  C) Köprünün hemen yıkılmasına
+  Açıklama: Öğretmen, suçlu aramak yerine nedenini araştırmalarına sevindi.
+s4 [sozcuk_baglami] dayanak_sayfa=4 doğru=A
+  Metin: Metinde geçen sağlam sözcüğü ne anlama gelir?
+  A) Kolay bozulmayan, dayanıklı
+  B) Çok hafif
+  C) Renkli
+  Açıklama: İki kat karton, daha kolay bozulmayan bir yapı oluşturdu.
+
+## Sözlük
+- s2_saglam | kelime | yazım: sağlam | 2–2 | anlam: Kolay bozulmayan, dayanıklı.
+- s2_onarim | kelime | yazım: onarım | 2–2 | anlam: Bozulmuş bir şeyi yeniden düzeltme.
+- ata_birlik | atasozu | yazım: Birlikten kuvvet doğar | 2–2 | anlam: Birlikte çalışan insanlar daha çok iş başarır.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

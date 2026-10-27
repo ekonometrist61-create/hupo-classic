@@ -1,0 +1,93 @@
+# HR-030 · Ormanın Kaybolan Patikası · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=fa74a028-5663-4b8d-95e7-3faf2091302b, surum_no=3, sha256=0cb47a056f54767110a9b9c4d74c30c255cbb1e895819e2871c22d8c0f13e9bd
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr030-ormanin-kaybolan-patikasi | Tür: macera | Konu: orman_yuruyusu | Dünya: gercekci
+Sınıf: 4–4 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Patika kapalı, levhalar eksik. Üç arkadaş haritayla güvenli bir yol arıyor.
+İzinli türler: ben, arkadas, baska_biri
+Değer anahtarları (sürüm): D16, D5 | maarif.ana_deger: D16
+Etiketler: ana_sinif=4, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: kesif, doga, guvenlik | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sozcuk_kroki_hr030 (lexeme, first_hint: kroki); sozcuk_olcek_hr030 (lexeme, application: ölçek); sozcuk_guzergah_hr030 (lexeme, application: güzergâh); kavram_hr030 (concept, application: Harita okuma: kroki, ölçek ve güvenli güzergâh)
+Ölçülen: {"soru_sayisi":6,"sayfa_sayisi":9,"simge_sayisi":21,"kelime_sayisi":471,"tahmini_sure_dk":6,"yoldas_yer_sayisi":5,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":2,"hatirlama":1,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Orman parkındaki yürüyüşe hazırlanırken öğretmenleri, haritadaki ince yeşil çizgiyi gösterdi. “Bu, gölete ulaşan eski patikamız,” dedi. Ancak park girişindeki görevli onları durdurdu. Geceki şiddetli yağmur yüzünden bazı yerlerde toprak kaymış, patika geçici olarak kapatılmıştı. “Bütün gezi iptal mi?” diye sordu [KAHRAMAN hal=yalin].
+--- Sayfa 2 ---
+Görevli, güvenli ve açık bir başka yol olduğunu, yeni yön[İKON compass] levhalarının henüz yerleştirilmediğini söyledi. [KAHRAMAN hal=yalin], arkadaşları [YOLDAŞ hal=yalin yedek=Hupo] ve Nisa ile görevliden alternatif yol için bir [KELİME yuva=pb_kroki] aldı. Öğretmenleri çocukların bir keşif görevi yapmasına izin verdi: Yürüyüş boyunca yalnızca açık [KELİME yuva=pb_guzergah] üzerinden gidecek, eksik levhaları not[İKON notebook] edeceklerdi.
+--- Sayfa 3 ---
+İlk kavşakta iki yol ayrılıyordu. Haritada sağ taraftaki yolun sonunda piknik alanı, soldaki yolun sonunda gözlem terası görünüyordu. [YOLDAŞ hal=yalin yedek=Hupo] sağa dönmek istedi, çünkü oradan kuş[İKON bird] sesi geliyordu. Nisa ise haritadaki okları işaret[İKON flag] etti. “Kuş sesi yönümüzü göstermiyor. Terasa gitmek için önce sola dönmeliyiz.” [İŞARET kod=orman]
+--- Sayfa 4 ---
+Biraz ileride yerde düşmüş bir levha gördüler. [KAHRAMAN hal=yalin] levhayı kaldırmak istedi, fakat öğretmeni önce çevreye bakmalarını söyledi. Yağmurdan sonra zemin kaygandı. Görevlinin not[İKON notebook] alması için levhanın yerini haritada işaretlediler; ona dokunmadan yürüdüler. Gözlem terasına vardıklarında gölet uzaktan görünüyordu. [KAHRAMAN hal=yalin], “Eski patika haritada daha kısa. Neden orayı kullanmıyoruz?” diye sordu. “Çünkü kısa yol her zaman[İKON clock] güvenli yol değildir,” dedi öğretmeni. “Harita[İKON map], yolun nerede olduğunu gösterir; güncel levhalar ve görevliler ise hangi yolu kullanabileceğimizi bildirir.”
+--- Sayfa 5 ---
+Gözlem terasında beklerken Nisa, krokideki küçük karelerin ne işe yaradığını merak[İKON curiosity] etti. Öğretmenleri bunların harita[İKON map] üzerindeki belirli yerleri gösterdiğini anlattı. [YOLDAŞ hal=yalin yedek=Hupo], “Kâğıtta iki parmak uzaklıkta olan yerler gerçek hayatta niçin bu kadar uzak?” diye sordu. Öğretmen, haritaların gerçek yerleri küçülterek gösterdiğini söyledi; bu küçültme oranına [KELİME yuva=pb_olcek] dendiğini ekledi. Çocuklar adımlarını sayarak kısa bir mesafeyi karşılaştırdı ama yaklaşık sonuçları kesin ölçüm sanmamaları gerektiğini de öğrendiler.
+--- Sayfa 6 ---
+[KAHRAMAN hal=yalin] yeni levhaların yalnız doğru yeri göstermesini değil, herkesçe anlaşılmasını istiyordu. Okuma güçlüğü yaşayan küçük çocukların da işaretleri anlayabilmesi için renk ve şeklin yazıyla birlikte[İKON friends] kullanılmasını önerdi. Öğretmen öneriyi not[İKON notebook] etti. Dönüşte park ofisinde görevli, çocukların işaretlediği noktaları inceledi. [YOLDAŞ hal=yalin yedek=Hupo] bazı levhalara hayvan resimleri konmasını önerdi. Nisa ise hem simge hem yazı bulunmasının daha anlaşılır olacağını söyledi. [KAHRAMAN hal=yalin], “Bir de kavşaktan önce levha koyarsanız insanlar son anda yön[İKON compass] değiştirmek zorunda kalmaz,” diye ekledi. [İŞARET kod=ipucu]
+--- Sayfa 7 ---
+Park görevlisi önerileri dinlerken Nisa küçük bir ayrıntı daha ekledi. Bazı renkleri ayırt etmekte zorlanan kişiler olabilirdi; bu yüzden yalnız renge güvenmemek gerektiğini söyledi. Levhalara ok, kısa sözcük ve kolay tanınan simgeler koymayı kararlaştırdılar. [YOLDAŞ hal=yalin yedek=Hupo] da çizdiği kuş[İKON bird] resmini yol işaretinden ayırdı: “Güzel bir resim, her zaman[İKON clock] açık bir işaret[İKON flag] olmayabilir.”
+--- Sayfa 8 ---
+Bir hafta sonra sınıf yeniden parka geldi. Kapatılmış patikanın girişinde hâlâ uyarı[İKON bell] vardı, fakat açık yola yeni levhalar yerleştirilmişti. Levhalarda yön[İKON compass] oklarının yanında küçük yaprak[İKON leaf] simgeleri bulunuyordu. Park görevlisi çocuklara teşekkür etti: “Gözlemleriniz, yürüyüşçülerin işini kolaylaştırdı.”
+--- Sayfa 9 ---
+[KAHRAMAN hal=yalin] eve gidince iki haritayı yan yana koydu: Biri eski patikayı, diğeri güncel ve güvenli güzergâhı gösteriyordu. Aralarındaki farkı renklendirerek çizdi. Defterinin altına şu cümleyi yazdı: İyi bir yol bulmak[İKON idea], yalnızca hedefe varmak değil, oraya güvenle ulaşmaktır.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=B
+  Metin: Eski patika neden geçici olarak kapatılmıştı?
+  A) Yeni levhalar yapılacağı için
+  B) Geceki şiddetli yağmur toprağı kaydırdığı için
+  C) Göletin suyu taştığı için
+  D) Park tatil olduğu için
+  Açıklama: Geceki şiddetli yağmur yüzünden bazı yerlerde toprak kaymıştı.
+s2 [cikarim] dayanak_sayfa=3 doğru=A
+  Metin: Çocuklardan biri neden kuş sesine değil haritadaki oklara güvendi?
+  A) Harita gidilecek yönü gösterir, kuş sesi yön göstermez
+  B) Kuşlar o bölgede hiç yaşamaz
+  C) Harita kuş sesinden daha eskidir
+  D) Kuş sesi çocukları korkuttuğu için
+  Açıklama: Çocuk, kuş sesinin yönü göstermediğini; terasa gitmek için haritaya göre sola dönmeleri gerektiğini söyledi.
+s3 [yorumlama] dayanak_sayfa=4 doğru=C
+  Metin: ‘Kısa yol her zaman güvenli yol değildir’ sözü bu hikâyede ne anlatır?
+  A) Uzun yollar her zaman daha güzeldir
+  B) Haritalar çoğu zaman yanlıştır
+  C) Yolu seçerken yalnız kısalığa değil, güvenli olup olmadığına da bakılmalıdır
+  D) Yürüyüşlere hiç çıkılmamalıdır
+  Açıklama: Eski patika kısaydı ama kapalıydı; güncel levha ve görevli güvenli yolu bildiriyordu.
+s4 [sozcuk_baglami] dayanak_sayfa=5 doğru=A
+  Metin: Metinde geçen ölçek sözcüğü ne anlama gelir?
+  A) Haritadaki yerlerin gerçekte ne kadar küçültülerek gösterildiğini belirten oran
+  B) Haritayı süsleyen çizgiler
+  C) Yön gösteren bir levha
+  D) Bir kuş türü
+  Açıklama: Harita gerçek yerleri küçülterek gösterir; bu küçültme oranına ölçek denir.
+s5 [degerlendirme] dayanak_sayfa=7 doğru=B
+  Metin: Levhalara yalnız renk koymak yerine ok, kısa yazı ve simge de koymak neden daha iyi bir karardır?
+  A) Çünkü levha daha renkli görünür
+  B) Çünkü bazı kişiler renkleri ayırt etmekte zorlanabilir; birden fazla ipucu herkesin anlamasını sağlar
+  C) Çünkü yazı olmadan levha yapılamaz
+  D) Çünkü simgeler eskiden beri kullanılır
+  Açıklama: Çocuk, bazı renkleri ayırt etmekte zorlanan kişiler olabileceğini düşündü; ok, yazı ve simge birlikte daha açık bir işaret oluşturur.
+s6 [cikarim] dayanak_sayfa=4 doğru=D
+  Metin: Düşmüş levhaya dokunmadan yürümelerinin nedeni hangisidir?
+  A) Levha çok ağırdı
+  B) Levha onlara ait değildi
+  C) Levhada yazı yoktu
+  D) Yağmurdan sonra zemin kaygandı; konumunu işaretleyip görevliye bildirmek daha güvenliydi
+  Açıklama: Öğretmen önce çevreye bakmalarını söyledi; zemin kaygandı ve levhanın yeri haritada işaretlendi.
+
+## Sözlük
+- pb_kroki | kelime | yazım: kroki | 4–4 | anlam: Bir yerin yolunu göstermek için elle çizilen basit harita.
+- pb_olcek | kelime | yazım: ölçek | 4–4 | anlam: Haritadaki yerlerin gerçekte ne kadar küçültülerek çizildiğini gösteren oran.
+- pb_guzergah | kelime | yazım: güzergâh | 4–4 | anlam: Bir yere giderken izlenen yol.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

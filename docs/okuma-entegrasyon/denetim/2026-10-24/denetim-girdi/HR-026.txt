@@ -1,0 +1,77 @@
+# HR-026 · Kelime Makinesinin Karışıklığı · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=7f2aa754-40e2-4010-8203-1f4446c740c1, surum_no=2, sha256=655bdbb76c837ec80bf2ea205196c180cc2844d69d886992e817de9749dbd603
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr026-kelime-makinesinin-karisikligi | Tür: mizah | Konu: kelime_makinesi | Dünya: gercekci
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Dedenin kelime makinesi ‘gül’ ve ‘yüz’ karşısında şaşırıyor. Makine mi yanlış anlıyor, biz mi?
+İzinli türler: ben, kardes, arkadas, hayali
+Değer anahtarları (sürüm): D3, D2 | maarif.ana_deger: D3
+Etiketler: ana_sinif=3, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: mizah, bilim_teknoloji, okuma_kitap, aile | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sozcuk_gul_hr026 (lexeme, first_hint: gül); sozcuk_yuz_hr026 (lexeme, application: yüz); sozcuk_yaz_hr026 (lexeme, application: yaz); kavram_hr026 (concept, application: Bağlam ve çok anlamlılık (sesteş sözcükler))
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":7,"simge_sayisi":12,"kelime_sayisi":353,"tahmini_sure_dk":5,"yoldas_yer_sayisi":6,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":2}}
+
+## Sayfalar
+--- Sayfa 1 ---
+[KAHRAMAN hal=ilgi] dedesi, kelimelerle oynayan küçük bir makine yapmıştı. Makinenin üstünde üç düğme vardı: Oku, Düşün, Söyle. [KAHRAMAN hal=yalin] ilk düğmeye bastığında ekranda şu cümle belirdi: [VURGU "Bahçedeki {kelime:pb_gul} bana güldü."] “Çiçek mi kahkaha attı?” diye sordu kardeşi [YOLDAŞ hal=yalin yedek=Hupo].
+--- Sayfa 2 ---
+Makine cümleyi yorumlamak yerine masaya kırmızı bir gül resmi çizdi ve yanına kahkaha işareti koydu. [KAHRAMAN hal=yalin], “İkisi de [KELİME yuva=pb_gul] diye yazılıyor ama aynı anlama gelmiyor,” dedi. Dede gülümsedi. “Demek ki bir kelimenin nerede kullanıldığını anlamak[İKON lightning-idea] gerekiyor.” [İŞARET kod=ipucu]
+--- Sayfa 3 ---
+[YOLDAŞ hal=yalin yedek=Hupo] yeni cümleyi söyledi: “Dedem [KELİME yuva=pb_yuz] sayfasını okudu.” Makine masaya yüz tane yüz resmi çizdi. [YOLDAŞ hal=yalin yedek=Hupo] gülmekten iki büklüm oldu. “Ben sayıyı söyledim!” [KAHRAMAN hal=yalin] defterine örnekleri yazdı. Bir tarafta yüz sayısı, diğer tarafta yüz sözcüğünün insanın suratı anlamı vardı.
+--- Sayfa 4 ---
+Sonra kardeşinden yeni bir örnek istedi. [YOLDAŞ hal=yalin yedek=Hupo] hemen, “Yaz geldi, sen de [KELİME yuva=pb_yaz]!” dedi. Makine ekrana güneş[İKON sun] resmi ve bir kalem[İKON pencil] çizdi. Bu kez doğruya yaklaşmıştı. Dede masaya iki kart daha koydu. Birinde “Kışın kar[İKON snow] yağdı”, diğerinde “Bize kâr kaldı” yazıyordu. [KAHRAMAN hal=yalin] harfleri dikkatle inceledi. “Bunlar aynı yazılmıyor; sesleri de tam aynı değil,” dedi.
+--- Sayfa 5 ---
+Dede onayladı: “Her benzer kelimeyi aynı gruba koyamayız.” [YOLDAŞ hal=yalin yedek=Hupo] de yeni bir kart istedi. “O zaman[İKON clock] yalnız gerçekten aynı yazılan ve farklı anlamlara gelen örneklerle başlayalım.” Makine bu uyarıyı duyunca ekrana büyük bir soru[İKON curiosity] işareti çıkardı. [KAHRAMAN hal=yalin], “Sorular bazen cevaptan daha işe yarar,” diye düşündü. Makinenin hatasını bulmak[İKON idea], düğmelerine rastgele basmaktan daha çok zaman almış ama daha eğlenceli olmuştu.
+--- Sayfa 6 ---
+[KAHRAMAN hal=yalin] bütün cümlelerin küçük bir ipucu taşıdığını fark etti. “Yaz geldi” derken mevsimden söz ediyorlardı. “Sen de yaz” derken ise kalemle bir şeyler yazmayı istiyorlardı. Kelimenin yanındaki başka sözcükler anlamı bulmalarını sağlıyordu. Dede, “Peki makinenin hatasını nasıl azaltacağız?” diye sordu. [KAHRAMAN hal=yalin] bir kural kartı hazırladı: Önce tüm cümleyi oku; sonra kelimenin anlamını seç. Kartı makinenin yanına koydular. [İŞARET kod=kitap]
+--- Sayfa 7 ---
+Son denemede [YOLDAŞ hal=yalin yedek=Hupo], “Çay kıyısında çay içtik,” dedi. Makine bu kez su[İKON drop] akan bir dere ile iki fincan çizdi. İki kardeş sevinçle alkışladı. Ancak makine beklenmedik bir soru[İKON question][İKON curiosity] sordu: “Peki kelimelerin iki anlamı varsa, insanların da bazen birden fazla duygusu olur mu?” [KAHRAMAN hal=yalin] biraz düşündü. “Olur,” dedi. “Hem heyecanlı hem çekingen olabilirim.” Dede ona bakıp gülümsedi. Bir kelime oyunu, o gün yeni bir konuşmanın kapısını açmıştı.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=A
+  Metin: Makine ‘Bahçedeki gül bana güldü’ cümlesi için masaya ne çizdi?
+  A) Kırmızı bir gül resmi ve kahkaha işareti
+  B) Bir bahçe ve bir kapı
+  C) Güneş ve bir kalem
+  Açıklama: Makine masaya kırmızı bir gül resmi çizdi ve yanına kahkaha işareti koydu.
+s2 [cikarim] dayanak_sayfa=3 doğru=C
+  Metin: Makine ‘Dedem yüz sayfasını okudu’ cümlesinde neden yüz tane yüz resmi çizdi?
+  A) Çünkü cümleyi hiç duymadı
+  B) Çünkü kitapta yüz tane yüz vardı
+  C) Çünkü yüz sözcüğünün sayı mı, suratın adı mı olduğunu ayıramadı
+  Açıklama: Makine yüz sözcüğünün iki anlamını karıştırdı; çocuk ise sayıyı söylemişti.
+s3 [yorumlama] dayanak_sayfa=6 doğru=B
+  Metin: Kural kartında ‘Önce tüm cümleyi oku’ yazması neden önemlidir?
+  A) Çünkü cümle ne kadar kısaysa o kadar iyidir
+  B) Çünkü sözcüğün anlamını yanındaki sözcükler belli eder
+  C) Çünkü makine yalnızca ilk sözcüğü okur
+  Açıklama: Çocuk, kelimenin yanındaki sözcüklerin anlamı bulmayı sağladığını fark etmişti.
+s4 [sozcuk_baglami] dayanak_sayfa=4 doğru=A
+  Metin: ‘Yaz geldi, sen de yaz!’ cümlesindeki ikinci yaz sözcüğü ne demektir?
+  A) Kalemle bir şeyler yazmak
+  B) Yılın sıcak mevsimi
+  C) Denizde yüzmek
+  Açıklama: ‘Sen de yaz’ derken kalemle yazı yazmak kastediliyordu; ilk yaz ise mevsimdi.
+s5 [sozcuk_baglami] dayanak_sayfa=2 doğru=C
+  Metin: Makine ‘gül’ sözcüğünde hangi iki anlamı karıştırdı?
+  A) Bir çiçek ile bir yiyecek
+  B) Bir renk ile bir mevsim
+  C) Bir çiçek ile gülme eylemi
+  Açıklama: Cümlede hem gül çiçeği hem gülmek eylemi vardı; makine ikisini birleştirdi.
+
+## Sözlük
+- pb_gul | kelime | yazım: gül | 3–3 | anlam: Güzel kokulu, dikenli bir çiçek; aynı yazılan gül sözcüğü gülmek eyleminin emir biçimi de olabilir.
+- pb_yuz | kelime | yazım: yüz | 3–3 | anlam: Doksan dokuzdan sonra gelen sayı; aynı zamanda insanın gözlerinin, burnunun ve ağzının bulunduğu yer.
+- pb_yaz | kelime | yazım: yaz | 3–3 | anlam: Yılın en sıcak mevsimi; aynı yazılan yaz sözcüğü kalemle yazı yazmak anlamına da gelir.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

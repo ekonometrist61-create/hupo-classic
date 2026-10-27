@@ -123,17 +123,6 @@
       "durum": "taslak"
     },
     {
-      "id": "hr112_unutma",
-      "tur": "kelime",
-      "yazim": "unutma",
-      "anlam": "Bir bilgiyi zihninde ya da kayıtta tutmamak.",
-      "sinif_alt": 7,
-      "sinif_ust": 8,
-      "kaynak_turu": "editor_onerisi",
-      "kazanim_kodu": null,
-      "durum": "taslak"
-    },
-    {
       "id": "hr112_agirlik",
       "tur": "deyim",
       "yazim": "içine bir ağırlık oturdu",
@@ -222,9 +211,6 @@
         },
         {
           "girdi": "hr112_belge"
-        },
-        {
-          "girdi": "hr112_unutma"
         }
       ]
     },

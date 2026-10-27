@@ -1,0 +1,94 @@
+# HR-035 · Ay'a Giden İlk Posta · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=3fa9b284-5f68-44db-b70b-74f349cfc651, surum_no=2, sha256=7785761a3c95fcb7295e4af079038e72e61118e059c75663c0b10ac3507953c3
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr035-aya-giden-ilk-posta | Tür: bilim_kurgu | Konu: ay_postasi | Dünya: masalsi
+Sınıf: 4–4 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Bir mektup Ay'a nasıl gider? Bağlantı kopunca iki kardeş, mesajı kurtarmanın yolunu arar.
+İzinli türler: ben, arkadas, hayali
+Değer anahtarları (sürüm): D15, D16 | maarif.ana_deger: D15
+Etiketler: ana_sinif=4, okuma_zorlugu=3, kavram_zorlugu=4, ilgi=ortak, kanit_duzeyi=C
+Temalar: bilim_teknoloji, aile, kesif | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: gecikme_hr035 (lexeme, first_hint: gecikme); uydu_hr035 (lexeme, application: uydu); dogrulama_hr035 (lexeme, application: doğrulama); kavram_hr035 (concept, application: Veri aktarımı ve iletişim gecikmesi); atasoz_hr035 (proverb, application: Sabreden derviş muradına ermiş)
+Ölçülen: {"soru_sayisi":6,"sayfa_sayisi":9,"simge_sayisi":20,"kelime_sayisi":487,"tahmini_sure_dk":6,"yoldas_yer_sayisi":6,"hedef_tur_dagilimi":{"lexeme":3,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Ay[İKON moon] Üssü'ne gidecek ilk özel mektubu yazma hakkını iki kardeş kazanmıştı. [KAHRAMAN hal=yalin], Dünya[İKON globe]'daki sınıfının resmini çizmiş; Can ise altına yalnızca bir cümle yazmıştı: "Burada sizi merak eden arkadaşlarınız var." Mektup[İKON scroll] Ay'da çalışan teyzeleri Selin'e gönderilecekti. Yeni posta sistemi önce kâğıdı görüntüye dönüştürüyor, ardından uzaya veri olarak iletiyordu. Teyzeleri Ay Üssü'ndeki yazıcıdan aynı mektubu alacaktı.
+--- Sayfa 2 ---
+Posta merkezinde tavandan Dünya[İKON globe] ve Ay[İKON moon]'ın maketleri sarkıyordu. Can aralarındaki boşluğa baktı. "Ay şu kadar yakınsa mektup[İKON scroll] çabucak gider," dedi. [YOLDAŞ hal=yalin yedek=Hupo] iki maketi daha uzağa taşıdı. "Bunlar gerçeğe göre küçültülmüş. Uzaydaki uzaklıkları maketle göstermek çok zor," diye açıkladı. [İŞARET kod=ay]
+--- Sayfa 3 ---
+[KAHRAMAN hal=yalin], mesajın nasıl ilerlediğini daha iyi anlamak[İKON lightning-idea] için kabloları, anteni ve uydunun görevini çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı. Başlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırmızıya döndü: *Bağlantı kesildi.*
+--- Sayfa 4 ---
+"Mektubumuz kayboldu mu?" diye sordu Can. [YOLDAŞ hal=yalin yedek=Hupo], "Hayır," dedi. "Mesajın kopyası burada güvende. Ancak şimdi göndermiyoruz. Önce bağlantının yeniden kurulması gerek." [KAHRAMAN hal=yalin] üzülmüştü. Selin teyzesinin doğum gününe yalnızca bir gün kalmıştı. Can bir çözüm[İKON puzzle] önerdi: "Mektubu aynı anda başka bir kanaldan göndersek?" [YOLDAŞ hal=yalin yedek=Hupo] gülümsedi. "İyi düşünce. Fakat bütün kanallar aynı anda çalışmayabilir. Önce hangisinin güvenilir olduğuna bakmalıyız."
+--- Sayfa 5 ---
+Çocuklar merkezin panosunda çizilmiş küçük bir şemayı inceledi. Bir çizgi Dünya[İKON globe] istasyonundan yörüngedeki uyduya uzanıyor, ikinci çizgi uydudan Ay[İKON moon] Üssü'ne gidiyordu. [KAHRAMAN hal=yalin], "Mesajı küçük parçalara ayırsak?" diye sordu. "Bağlantı dönünce eksik kısmı tamamlarız." [YOLDAŞ hal=yalin yedek=Hupo], "Bu da veri aktarımında kullanılan yöntemlerden biridir," dedi. Ardından çocuklara mesajın birden fazla parçasının nasıl kontrol edildiğini gösterdi. Kısa bir bekleyişten sonra [KELİME yuva=pc_uydu] bağlantısı tekrar açıldı.
+--- Sayfa 6 ---
+Ekrana *İleti ulaştı* yazısı düşünce Can zıpladı. Fakat hemen bir soru[İKON curiosity] sordu: "Ay[İKON moon]'daki teyze cevap verirse onu anında duyar mıyız?" [YOLDAŞ hal=yalin yedek=Hupo] başını salladı. "Hayır, sinyaller ışık hızında ilerlese de Dünya[İKON globe] ile Ay arasındaki uzaklık yüzünden küçük bir [KELİME yuva=pc_gecikme] olur."
+--- Sayfa 7 ---
+[YOLDAŞ hal=yalin yedek=Hupo] çocuklara gönderimden önce yaptıkları iki kontrolü de anlatmıştı: alıcının kimliği doğru[İKON check] muydu ve mesaj gerçekten bütünüyle gelmiş miydi? Can kendi mektubuna bakıp "Ya çizimimizin yarısı gitseydi?" diye sordu. [KAHRAMAN hal=yalin] [KELİME yuva=pc_dogrulama] işaretini gösterdi. "O zaman[İKON clock] karşı taraf eksik parçayı isterdi." Mesajın güvenli iletimi artık ikisinin de zihninde bir bilmecenin çözümü gibiydi. Eve dönünce mektubun ilk taslağını sakladılar; günün sonunda öğrenilenlerin de bir hatıra olmasını istediler.
+--- Sayfa 8 ---
+Ertesi akşam evde bir görüntü geldi. Selin teyze, elinde basılmış mektubu tutuyordu. "Sınıfınızın resmini duvarıma astım," dedi. "Ay[İKON moon]'ın gökyüzünde Dünya[İKON globe] çok güzel görünüyor. Ama sizin yazdıklarınız daha güzel." Can, "Biz de buradan seni görüyoruz!" diye seslendi. Cevap hemen gelmedi. İki kardeş gülümseyerek bekledi. Can fısıldadı: "[ATASÖZÜ yuva=pc_ata_sabreden]" O küçük gecikme artık onları şaşırtmıyordu.
+--- Sayfa 9 ---
+[KAHRAMAN hal=yalin], postanın yalnızca zarf ve pul olmadığını anladı. Bazen sevgi[İKON heart] bir kâğıtta, bazen de uzaklara giden küçük veri parçalarında yolculuk ediyordu. Yine de en önemli şey, karşıdaki insanı hatırlamaktı. Can ertesi gün sınıfta öğrendiklerini arkadaşlarına anlattı. Sınıfça bir mesaj göndermeden önce adını, alıcısını ve içeriğini kontrol etmeye karar verdiler. Çünkü uzaklık ne kadar büyük olursa olsun, dikkatli iletişim küçük ama önemli adımlarla başlıyordu. [İŞARET kod=roket]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=3 doğru=B
+  Metin: Posta merkezinin ekranı birden kırmızıya dönünce ne yazdı?
+  A) İleti ulaştı
+  B) Bağlantı kesildi
+  C) Mektup kayboldu
+  D) Gönderim tamamlandı
+  Açıklama: Her şey yolundayken ekran kırmızıya döndü ve "Bağlantı kesildi" yazdı.
+s2 [cikarim] dayanak_sayfa=4 doğru=D
+  Metin: Görevli, "Bütün kanallar aynı anda çalışmayabilir" derken neyi anlatmak istedi?
+  A) Mektubun kesinlikle kaybolduğunu
+  B) Posta merkezinin kapatılacağını
+  C) Ay Üssü'nde kimsenin olmadığını
+  D) Başka bir kanala geçmeden önce hangisinin güvenilir olduğunu kontrol etmek gerektiğini
+  Açıklama: Görevli, çocukların önerisini kabul etti ama önce güvenilir kanalın belirlenmesi gerektiğini söyledi.
+s3 [sozcuk_baglami] dayanak_sayfa=6 doğru=A
+  Metin: Metinde geçen gecikme sözcüğü ne anlama gelir?
+  A) Bir şeyin beklenenden geç olması
+  B) Bir şeyin çok hızlı olması
+  C) Bir mektubun kaybolması
+  D) Bir şeyin yok edilmesi
+  Açıklama: Sinyaller ışık hızında ilerlese de uzaklık yüzünden cevap birazdan, yani geç gelir.
+s4 [yorumlama] dayanak_sayfa=9 doğru=C
+  Metin: Sınıfın bir mesaj göndermeden önce adı, alıcıyı ve içeriği kontrol etmeye karar vermesi neyi gösterir?
+  A) Mesajların hiç gönderilmemesi gerektiğini
+  B) Uzak mesafelerde mesaj göndermenin imkânsız olduğunu
+  C) Dikkatli iletişimin küçük ama önemli kontrollerle başladığını
+  D) Hızın her zaman en önemli şey olduğunu
+  Açıklama: Metin, uzaklık ne kadar büyük olursa olsun dikkatli iletişimin küçük adımlarla başladığını söylüyor.
+s5 [degerlendirme] dayanak_sayfa=5 doğru=B
+  Metin: Mesajı küçük parçalara ayırma fikri neden iyi bir çözümdür?
+  A) Mesaj daha uzun görünür
+  B) Bağlantı yeniden kurulunca yalnızca eksik kısım tamamlanabilir
+  C) Teyze mesajı hiç okuyamaz
+  D) Mesaj Ay'a daha uzun bir yoldan gider
+  Açıklama: Bağlantı dönünce eksik parça tekrar gönderilip tamamlanabilir; görevli de bunun veri aktarımında kullanılan bir yöntem olduğunu söyledi.
+s6 [hatirlama] dayanak_sayfa=8 doğru=A
+  Metin: Ay'daki teyze mektupla ne yaptı?
+  A) Sınıfın resmini duvarına astı
+  B) Mektubu geri gönderdi
+  C) Mektubu saklamak için kutuya koydu
+  D) Mektubu hiç okumadı
+  Açıklama: Teyze basılmış mektubu tutuyordu ve sınıfın resmini duvarına astığını söyledi.
+
+## Sözlük
+- pc_gecikme | kelime | yazım: gecikme | 4–4 | anlam: Bir şeyin beklenenden geç olması.
+- pc_uydu | kelime | yazım: uydu | 4–4 | anlam: Dünya'nın çevresinde dönen ve haberleşme gibi işler için uzaya gönderilen araç.
+- pc_dogrulama | kelime | yazım: doğrulama | 4–4 | anlam: Bir şeyin doğru olduğunu kontrol edip onaylama.
+- pc_ata_sabreden | atasozu | yazım: Sabreden derviş muradına ermiş | 4–4 | anlam: Sabırla bekleyen kişi, istediğine sonunda ulaşır.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

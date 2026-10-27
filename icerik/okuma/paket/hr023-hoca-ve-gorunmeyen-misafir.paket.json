@@ -4,7 +4,7 @@
     "slug": "hr023-hoca-ve-gorunmeyen-misafir",
     "baslik": "Hoca ve Görünmeyen Misafir",
     "tur": "mizah",
-    "konu": "misafirperverlik",
+    "konu": "misafirlik",
     "sinif_alt": 3,
     "sinif_ust": 3,
     "okuma_bandi": 2,
@@ -24,8 +24,9 @@
       "kavram_zorlugu": 3,
       "ilgi_egilimi": "ortak",
       "temalar": [
+        "mizah",
         "aile",
-        "dayanisma"
+        "kultur_miras"
       ],
       "ders_baglantisi": [
         "turkce"
@@ -39,34 +40,27 @@
           "id": "misafir_hr023",
           "tur": "lexeme",
           "etiket": "misafir",
-          "yuva": "hr023_misafir",
+          "yuva": "pa_misafir",
           "islev": "first_hint"
         },
         {
-          "id": "sofra_hr023",
+          "id": "israr_hr023",
           "tur": "lexeme",
-          "etiket": "sofra",
-          "yuva": "hr023_sofra",
+          "etiket": "ısrar",
+          "yuva": "pa_israr",
           "islev": "application"
         },
         {
-          "id": "uslu_hr023",
+          "id": "bilmece_hr023",
           "tur": "lexeme",
-          "etiket": "uslu",
-          "yuva": "hr023_uslu",
-          "islev": "application"
-        },
-        {
-          "id": "deyim_hr023",
-          "tur": "idiom",
-          "etiket": "Gözlerini büyütmek",
-          "yuva": "hr023_gozlerini_buyutmek",
+          "etiket": "bilmece",
+          "yuva": "pa_bilmece",
           "islev": "application"
         },
         {
           "id": "kavram_hr023",
           "tur": "concept",
-          "etiket": "Misafirin ihtiyacını anlamak",
+          "etiket": "Misafirperverlik ve kişisel sınırlara saygı",
           "islev": "application"
         }
       ],
@@ -78,26 +72,25 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 392,
-        "tahmini_sure_dk": 6,
-        "sayfa_sayisi": 4,
-        "soru_sayisi": 4,
+        "kelime_sayisi": 367,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 7,
+        "soru_sayisi": 5,
         "soru_beceri_dagilimi": {
-          "hatirlama": 1,
+          "hatirlama": 2,
           "cikarim": 1,
           "yorumlama": 1,
           "sozcuk_baglami": 1
         },
         "hedef_tur_dagilimi": {
           "lexeme": 3,
-          "idiom": 1,
           "concept": 1
         },
-        "yoldas_yer_sayisi": 13,
-        "simge_sayisi": 0
+        "yoldas_yer_sayisi": 2,
+        "simge_sayisi": 9
       }
     },
-    "tanitim": "Sofrada dördüncü bir tabak var ama kimse oturmuyor. Hoca bu tabağı nasıl açıklayacak?",
+    "tanitim": "Nasreddin Hoca'nın sofrasında dördüncü tabak neden boş? Görünmeyen misafirin sırrı bir soruyla çözülüyor.",
     "durum": "taslak",
     "fis_kodu": "HR-023"
   },
@@ -110,72 +103,58 @@
           "v": "Nasreddin Hoca'nın evinde akşam için üç tabak hazırlanmıştı. Hoca, eşi ve küçük komşuları "
         },
         {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "t": "kahraman",
+          "hal": "yalin"
         },
         {
           "t": "metin",
-          "v": " "
+          "v": " sofraya oturacaktı. Fakat masada dördüncü bir tabak daha vardı. Üstelik tabağın önünde kimse oturmuyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şaşkınlıkla sordu: \"Hocam, görünmeyen bir misafiriniz mi var?\" Hoca gözlerini büyüttü. \"Varsa bile çok usluymuş. Ayakkabılarını kapıda görmedim!\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülünce Hoca'nın eşi de gülümsedi. \"O tabak, bugün gelemeyeceğini haber veren bir konuğumuz içindi,\" dedi. \"Toplamayı unutmuşum.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " tabağı bir süre daha inceledi; yanında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " da merakla bakıyordu. Üstünde bir kaşık, yanında katlanmış bir peçete vardı. Ona göre "
         },
         {
           "t": "kelime",
-          "yuva": "hr023_sofra"
+          "yuva": "pa_misafir"
         },
         {
           "t": "metin",
-          "v": " oturacaktı. Fakat masada dördüncü bir tabak daha vardı. Üstelik tabağın önünde kimse oturmuyordu.\n\n"
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " şaşkınlıkla sordu: “Hocam, görünmeyen bir "
-        },
-        {
-          "t": "kelime",
-          "yuva": "hr023_misafir"
-        },
-        {
-          "t": "metin",
-          "v": " mi var?”\n\n"
-        },
-        {
-          "t": "deyim",
-          "yuva": "hr023_gozlerini_buyutmek"
-        },
-        {
-          "t": "metin",
-          "v": " “Varsa bile çok "
-        },
-        {
-          "t": "kelime",
-          "yuva": "hr023_uslu"
-        },
-        {
-          "t": "metin",
-          "v": ". Ayakkabılarını kapıda görmedim!”\n\n"
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " gülünce Hoca'nın eşi de gülümsedi. “O tabak, bugün gelemeyeceğini haber veren bir konuğumuz içindi,” dedi. “Toplamayı unutmuşum.”\n\n"
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " tabağı bir süre daha inceledi. Üstünde bir kaşık, yanında katlanmış bir peçete vardı. Ona göre misafir gerçekten görünmezse kaşığı nasıl tutacağını kimse bilemezdi. “Belki bir hayalet gelir,” diye şaka yaptı. Hoca ise “Önce evde görünür işleri tamamlayalım: Kapıyı biri çalarsa açacağız, sofrayı da sıcak tutacağız,” dedi."
+          "v": " gerçekten görünmezse kaşığı nasıl tutacağını kimse bilemezdi. \"Belki bir hayalet gelir,\" diye şaka yaptı."
         }
       ]
     },
@@ -184,42 +163,27 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Hoca'nın eşi, biraz önce gelemeyen misafirin haber göndermesini hatırlattı. "
+          "v": "Hoca ise \"Önce evde görünür işleri tamamlayalım: Kapıyı biri çalarsa açacağız, sofrayı da sıcak tutacağız,\" dedi. Hoca'nın eşi, biraz önce gelemeyen misafirin haber göndermesini hatırlattı. "
         },
         {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": ", haber vermenin neden önemli olduğunu sordu. “Çünkü biz de ona göre hazırlanırız,” dedi. “"
-        },
-        {
-          "t": "vurgu",
-          "v": "Küçük bir cümle"
+          "t": "kahraman",
+          "hal": "yalin"
         },
         {
           "t": "metin",
-          "v": " büyük bir yanlış anlamayı önleyebilir.” "
+          "v": ", haber vermenin neden önemli olduğunu sordu. \"Çünkü biz de ona göre hazırlanırız,\" dedi. \"Küçük bir cümle büyük bir yanlış anlamayı önleyebilir.\" "
         },
         {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": ", okuldan geç döneceği gün ailesine haber vermeyi düşündü.\n\nTam o sırada kapı çalındı.\n\nTam o sırada kapı çalındı. "
-        },
-        {
-          "t": "yoldas",
-          "hal": "ilgi",
-          "yedek": "bir arkadaşın"
+          "t": "kahraman",
+          "hal": "yalin"
         },
         {
           "t": "metin",
-          "v": " karşı komşusu Hasan amca içeriye baktı. Elinde bir sepet vardı. “Size bahçemden elma getirdim. Ama oyalanmayayım,” dedi.\n\nHoca, boş tabağı işaret etti. “Bakınız, tabak sizden önce gelmiş!”\n\nHasan amca şaşırdı. “Beni beklediğinizi bilmiyordum.”"
+          "v": ", okuldan geç döneceği gün ailesine haber vermeyi düşündü. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
         }
       ]
     },
@@ -228,34 +192,23 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "“Biz de bilmiyorduk,” dedi Hoca. “Bazen yer hazır olur, misafir sonradan belli olur.”\n\nHasan amca oturmak istemedi. Evinin kapısı açıktı ve kedisi içeride yalnız kalmıştı. Hoca bu kez ısrar etmedi. “Öyleyse elmalarınızı aldığımız gibi size de yol arkadaşı olalım,” dedi. "
+          "v": "Tam o sırada kapı çalındı. "
         },
         {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " ve Hoca sepeti taşımak için komşuya eşlik etti.\n\nDönüşte "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "t": "kahraman",
+          "hal": "ilgi"
         },
         {
           "t": "metin",
-          "v": " bir soru sordu: “Misafirperverlik, herkesi mutlaka sofraya oturtmak mıdır?”\n\nHoca başını iki yana salladı. “Misafirin ihtiyacını anlamak da önemlidir. Kimi oturup dinlenmek ister, kimi yalnızca kapıda selam verir.”\n\nEve geldiklerinde dördüncü tabağı yerine kaldırdılar. "
+          "v": " karşı komşusu Hasan amca içeriye baktı. Elinde bir sepet vardı. \"Size bahçemden elma getirdim. Ama oyalanmayayım,\" dedi. Hoca, boş tabağı işaret"
         },
         {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "t": "ikon",
+          "v": "flag"
         },
         {
           "t": "metin",
-          "v": ", “Demek görünmeyen misafirimiz aslında bir yanlış anlamaymış,” dedi."
+          "v": " etti. \"Bakınız, tabak sizden önce gelmiş!\" Hasan amca şaşırdı. \"Beni beklediğinizi bilmiyordum.\" \"Biz de bilmiyorduk,\" dedi Hoca. \"Bazen yer hazır olur, misafir sonradan belli olur.\""
         }
       ]
     },
@@ -264,300 +217,322 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "“Öyle,” dedi Hoca. “Ama yanlış anlamak, doğru soru sorunca hemen görünür olur.”\n\nYemekte elmalardan birini paylaştılar. Hoca, "
+          "v": "Hasan amca oturmak istemedi. Evinin kapısı açıktı ve kedisi içeride yalnız kalmıştı. Hoca bu kez "
         },
         {
-          "t": "yoldas",
-          "hal": "yonelme",
-          "yedek": "bir arkadaşa"
+          "t": "kelime",
+          "yuva": "pa_israr"
         },
         {
           "t": "metin",
-          "v": " bir bilmece sordu: “Dört tabağımız vardı; üç kişi oturduk; sonra misafir kapıya geldi. Kaç kişi sofrada yemek yedi?”\n\n“Üç,” dedi "
+          "v": " etmedi. \"Öyleyse elmalarınızı aldığımız gibi size de yol arkadaşı olalım,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ve Hoca komşuyu evine kadar geçirmek için ona eşlik etti. Dönüşte "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " sordu: \"Misafirperverlik, herkesi mutlaka sofraya oturtmak mıdır?\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Hoca başını iki yana salladı. \"Misafirin ihtiyacını anlamak da önemlidir. Kimi oturup dinlenmek ister, kimi yalnızca kapıda selam verir.\" Eve geldiklerinde dördüncü tabağı yerine kaldırdılar. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Demek görünmeyen misafirimiz aslında bir yanlış anlamaymış,\" dedi. \"Öyle,\" dedi Hoca. \"Ama yanlış anlamak, doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " sorunca hemen görünür olur.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yemekte elmalardan birini paylaştılar. Hoca, "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_bilmece"
+        },
+        {
+          "t": "metin",
+          "v": " sordu: \"Dört tabağımız vardı; üç kişi oturduk; sonra misafir kapıya geldi. Kaç kişi sofrada yemek yedi?\" \"Üç,\" dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Çünkü Hasan amca oturmadı.\" Hoca gülümsedi. \"Aferin! Görmediğimiz birini sayarken önce ne olduğunu anlamak"
+        },
+        {
+          "t": "ikon",
+          "v": "lightning-idea"
+        },
+        {
+          "t": "metin",
+          "v": " gerekir.\" "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": ". “Çünkü Hasan amca oturmadı.”\n\nHoca gülümsedi. “Aferin! Görmediğimiz birini sayarken önce ne olduğunu anlamak gerekir.” "
+          "v": " de başıyla onayladı. "
         },
         {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "t": "kahraman",
+          "hal": "yalin"
         },
         {
           "t": "metin",
-          "v": " artık sofradaki boş yerlere bakıp hemen korkunç bir hikâye düşünmemeye karar verdi.\n\nDil hedefi: gerçek–mecaz, soru cümlesi, çıkarım; Kavram/değer: misafirperverlik, iletişim, kişisel sınırlara saygı. İkon önerileri: tabak, sofra, kapı. Okuma sonrası: Boş tabağın gerçek nedeni neydi? Hoca misafire neden ısrar etmedi?"
+          "v": " artık sofradaki boş yerlere bakıp hemen korkunç bir hikâye"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " düşünmemeye karar verdi."
         }
       ]
     }
   ],
   "deger_sahneleri": {},
   "hareket_sahneleri": {},
-  "deyim_cumleleri": {
-    "hr023_gozlerini_buyutmek": [
-      {
-        "t": "metin",
-        "v": "Hoca gözlerini büyüttü."
-      }
-    ]
-  },
+  "deyim_cumleleri": {},
   "sorular": [
     {
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 2,
-      "metin": "Hoca boş tabağı işaret ederek ne dedi?",
+      "metin": "Dördüncü tabak neden masadaydı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tabak sizden önce gelmiş!"
+          "metin": "Görünmeyen bir misafir için konmuştu"
         },
         {
           "id": "B",
-          "metin": "Yemek bitti!"
+          "metin": "Gelemeyeceğini haber veren bir konuk içindi ve toplanmamıştı"
         },
         {
           "id": "C",
-          "metin": "Kapıyı kapatın!"
+          "metin": "Hasan amca için hazırlanmıştı"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Hoca, bu tabağın misafirden önce hazırlandığını söyledi."
+      "dogru": "B",
+      "aciklama": "Hoca'nın eşi, tabağın gelemeyeceğini haber veren bir konuk için olduğunu ve toplamayı unuttuğunu söyledi."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
-      "dayanak_sayfa": 3,
-      "metin": "Hasan amca neden oturmadı?",
+      "dayanak_sayfa": 5,
+      "metin": "Hasan amca neden sofraya oturmak istemedi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Evinin kapısı açık kalmış ve kedisi yalnızdı"
+          "metin": "Elmaları beğenmediği için"
         },
         {
           "id": "B",
-          "metin": "Yemek sevmiyordu"
+          "metin": "Yemek yemek istemediği için"
         },
         {
           "id": "C",
-          "metin": "Hoca'ya kızgındı"
+          "metin": "Evinin kapısı açıktı ve kedisi içeride yalnız kalmıştı"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Hasan amcanın evinin kapısı açıktı ve kedisi yalnızdı."
+      "dogru": "C",
+      "aciklama": "Hasan amca, evinin kapısı açık olduğu ve kedisi içeride yalnız kaldığı için oturmak istemedi."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
-      "dayanak_sayfa": 3,
-      "metin": "Hoca'ya göre misafirperverlik nedir?",
+      "dayanak_sayfa": 6,
+      "metin": "Hoca'nın \"Misafirin ihtiyacını anlamak da önemlidir\" sözü ne anlatır?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Misafirin ihtiyacını anlayıp ona göre davranmak"
+          "metin": "Misafirin ne istediğine dikkat etmenin, herkesi aynı biçimde ağırlamaktan önemli olduğunu"
         },
         {
           "id": "B",
-          "metin": "Herkesi mutlaka sofraya oturtmak"
+          "metin": "Misafirin her zaman sofrada oturması gerektiğini"
         },
         {
           "id": "C",
-          "metin": "Kapıyı hiç açmamak"
+          "metin": "Misafire hiç soru sorulmaması gerektiğini"
         }
       ],
       "dogru": "A",
-      "aciklama": "Hoca, misafirin ne istediğini anlamanın önemli olduğunu söyledi."
+      "aciklama": "Hoca, kimi misafirin dinlenmek, kimininse yalnızca selam vermek istediğini söyledi."
     },
     {
       "id": "s4",
       "beceri": "sozcuk_baglami",
-      "dayanak_sayfa": 1,
-      "metin": "Metinde geçen uslu sözcüğü ne anlama gelir?",
+      "dayanak_sayfa": 5,
+      "metin": "Metinde geçen ısrar etmek ifadesi ne anlama gelir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Akıllı, terbiyeli ve sakin"
+          "metin": "Bir şeyi hemen unutmak"
         },
         {
           "id": "B",
-          "metin": "Çok büyük"
+          "metin": "Bir şeyi kabul ettirmek için üstelemek"
         },
         {
           "id": "C",
-          "metin": "Çok hızlı"
+          "metin": "Bir yerden uzaklaşmak"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Uslu, iyi davranan, sakin olan kişi demektir."
+      "dogru": "B",
+      "aciklama": "Hasan amca oturmak istemeyince Hoca onu üstelemedi, ısrar etmedi."
+    },
+    {
+      "id": "s5",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 7,
+      "metin": "Hoca'nın sorduğu bilmecenin cevabı neydi?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Dört"
+        },
+        {
+          "id": "B",
+          "metin": "İki"
+        },
+        {
+          "id": "C",
+          "metin": "Üç"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Sofraya üç kişi oturdu; Hasan amca oturmadığı için cevap üçtü."
     }
   ],
   "uretim": {
-    "kaynak": "llm_taslak",
+    "kaynak": "elle",
     "tarih": "2026-10-22"
   },
   "sozluk": {
     "sozluk_surumu": 1,
     "girdiler": [
       {
-        "id": "hr023_misafir",
+        "id": "pa_misafir",
         "tur": "kelime",
-        "yazim": "misafiriniz",
-        "anlam": "Evimize ziyarete gelen kişi.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "misafir",
+        "anlam": "Bir eve ya da yere konuk olarak giden kişi.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr023_konuk",
+        "id": "pa_israr",
         "tur": "kelime",
-        "yazim": "konuk",
-        "anlam": "Bir yere davet edilerek gelen kişi.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "ısrar",
+        "anlam": "Bir şeyi kabul ettirmek için üstelemek.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr023_ev_sahibi",
+        "id": "pa_bilmece",
         "tur": "kelime",
-        "yazim": "ev sahibi",
-        "anlam": "Misafiri ağırlayan kişi.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr023_sofra",
-        "tur": "kelime",
-        "yazim": "sofraya",
-        "anlam": "Üzerinde yemek yenen yer; yemek için hazırlanmış masa.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr023_masa",
-        "tur": "kelime",
-        "yazim": "masa",
-        "anlam": "Üzerinde iş yapılan ya da yemek yenen eşya.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr023_tabak",
-        "tur": "kelime",
-        "yazim": "tabak",
-        "anlam": "Yemeğin konduğu yassı kap.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr023_uslu",
-        "tur": "kelime",
-        "yazim": "usluymuş",
-        "anlam": "Söz dinleyen, yaramazlık yapmayan.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr023_yaramaz",
-        "tur": "kelime",
-        "yazim": "yaramaz",
-        "anlam": "Sözü dinlemeyen, haşarı.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr023_nazik",
-        "tur": "kelime",
-        "yazim": "nazik",
-        "anlam": "Kibar ve saygılı.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr023_gozlerini_buyutmek",
-        "tur": "deyim",
-        "yazim": "gözlerini büyüttü",
-        "anlam": "Şaşırınca gözlerini iyice açmak.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr023_gozu_kapali",
-        "tur": "deyim",
-        "yazim": "gözü kapalı",
-        "anlam": "Dikkat etmeden, düşünmeden yapmak.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr023_gozden_kacirmak",
-        "tur": "deyim",
-        "yazim": "gözden kaçırmak",
-        "anlam": "Bir ayrıntıyı fark etmemek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "bilmece",
+        "anlam": "Cevabı düşünerek bulunan kısa soru ya da söz oyunu.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       }
     ],
     "yuvalar": [
       {
-        "ad": "hr023_misafir",
+        "ad": "pa_misafir",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr023_misafir"
-          },
-          {
-            "girdi": "hr023_konuk"
-          },
-          {
-            "girdi": "hr023_ev_sahibi"
+            "girdi": "pa_misafir"
           }
         ]
       },
       {
-        "ad": "hr023_sofra",
+        "ad": "pa_israr",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr023_sofra"
-          },
-          {
-            "girdi": "hr023_masa"
-          },
-          {
-            "girdi": "hr023_tabak"
+            "girdi": "pa_israr"
           }
         ]
       },
       {
-        "ad": "hr023_uslu",
+        "ad": "pa_bilmece",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr023_uslu"
-          },
-          {
-            "girdi": "hr023_yaramaz"
-          },
-          {
-            "girdi": "hr023_nazik"
-          }
-        ]
-      },
-      {
-        "ad": "hr023_gozlerini_buyutmek",
-        "tur": "deyim",
-        "adaylar": [
-          {
-            "girdi": "hr023_gozlerini_buyutmek"
-          },
-          {
-            "girdi": "hr023_gozu_kapali"
-          },
-          {
-            "girdi": "hr023_gozden_kacirmak"
+            "girdi": "pa_bilmece"
           }
         ]
       }

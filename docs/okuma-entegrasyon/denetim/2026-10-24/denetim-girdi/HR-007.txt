@@ -1,0 +1,71 @@
+# HR-007 · Kaplumbağa ile Tavşanın Yeni Yarışı · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=f11179c5-25e8-4b32-a701-851750eb35eb, surum_no=3, sha256=a0964ebd2473d4058dd2bd0ff4a6b9ef50d59fed160271e7610b290177d22547
+Not: bu hikâyede 3 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr007-kaplumbaga-ve-tavsan | Tür: hayvanlar | Konu: orman | Dünya: masalsi
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Tavşan yine hızlı koşmak istiyor. Yarışta sabır mı, hız mı kazanacak?
+İzinli türler: hayvan, hayali
+Değer anahtarları (sürüm): D12, D14 | maarif.ana_deger: D12
+Etiketler: ana_sinif=2, okuma_zorlugu=1, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: hayvanlar, sabir_emek | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: hizli (lexeme, first_hint: hızlı); yavas (lexeme, application: yavaş); kavram_hr007 (concept, application: Düzenli çaba); atasoz_hr007 (proverb, application: Sabreden derviş muradına ermiş)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":7,"simge_sayisi":12,"kelime_sayisi":239,"tahmini_sure_dk":4,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":2,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Tavşan, ormanın koşu yarışına yine ilk yazılan oldu. [KAHRAMAN hal=yalin] ise adını görünce biraz düşündü. Geçen yarıştan sonra herkes hızını konuşuyordu. Oysa [KAHRAMAN hal=yalin] yolun tadını çıkararak yürümeyi seviyordu. Ormanda herkes "[ATASÖZÜ yuva=ata_sabir]" derdi. Yarışı [YOLDAŞ hal=yalin yedek=Hupo] de izliyordu.
+--- Sayfa 2 ---
+Yarıştan önce orman[İKON forest][İKON tree] hayvanları yeni bir kural koydu: Kimse öteki yarışmacıyla alay etmeyecekti. Tavşan kuralı duyunca biraz utandı. Karşısına geçip "Bugün elimden geleni yapacağım," dedi. [KAHRAMAN hal=yalin] da "Ben de," diye cevap verdi.
+--- Sayfa 3 ---
+Bu kez parkur farklıydı: bir dere kenarı, küçük bir yokuş ve işaretli bir düzlük vardı. Yarış başlayınca Tavşan [KELİME yuva=s2_hizli] koştu. [KAHRAMAN hal=yalin] ise [KELİME yuva=s2_yavas] ama düzenli adımlarla ilerledi. Tavşan biraz ileride bir kirpinin yardım[İKON hand-help] istediğini duyunca durdu.
+--- Sayfa 4 ---
+Derenin yanına gelince taşlar ıslaktı. Tavşan büyük bir sıçrayış yapmak istedi ama durdu ve güvenli patikaya geçti. [KAHRAMAN hal=yalin] acele etmeden sağlam taşları seçti. İki yarışmacı da farklı hızlarda doğru[İKON check] kararlar veriyordu. [İŞARET kod=deniz]
+--- Sayfa 5 ---
+Yolun ortasında Kirpi bir yaprağı yuvasına taşıyordu. Yaprak[İKON leaf] bir kayanın altına sıkışmıştı. Tavşan tek başına çekmeyi denedi. [KAHRAMAN hal=yalin] "Önce yaprağın kenarını kaldıralım," dedi. Biri yaprağı tuttu, öteki yavaşça çekti. Kirpi teşekkür etti.
+--- Sayfa 6 ---
+Finişe yan yana geldiler. Orman[İKON forest][İKON tree] bekçisi kazananı hemen söylemedi: "Bugün iki farklı başarı[İKON star] gördüm. Biri hızını iyi kullandı, diğeri düzenli ilerledi. Üstelik yarış sırasında yardımı unutmadınız." [YOLDAŞ hal=yalin yedek=Hupo] gülümseyerek alkışladı. Tavşan güldü: "Ben de hızlı koşmayı öğretirim."
+--- Sayfa 7 ---
+İkisi, farklı hızlarda yürümenin arkadaş[İKON friends] olmaya engel olmadığını anladı. Orman[İKON tree] bekçisi herkese su[İKON drop] ikram etti. Tavşan, [KAHRAMAN hal=ilgi] ayak izlerine baktı. Onunki küçük ama düzenliydi. [KAHRAMAN hal=yalin] da Tavşan'ın hızlı adımlarına hayran kaldı.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=A
+  Metin: Yarıştan önce orman hayvanları hangi kuralı koydu?
+  A) Kimse öteki yarışmacıyla alay etmeyecek
+  B) Yarış yalnızca tavşan için yapılacak
+  C) Kimse yarışa katılmayacak
+  Açıklama: Orman hayvanları, kimsenin öteki yarışmacıyla alay etmemesi kuralını koydu.
+s2 [cikarim] dayanak_sayfa=4 doğru=A
+  Metin: Tavşan büyük bir sıçrayış yapmak isteyip neden durdu?
+  A) Taşlar ıslak ve kaygandı
+  B) Dere çok darydı
+  C) Yarış bitmişti
+  Açıklama: Derenin yanındaki taşlar ıslaktı; tavşan düşmemek için güvenli patikaya geçti.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Orman bekçisinin 'iki farklı başarı' sözü neyi anlatır?
+  A) Hızın da düzenli ilerlemenin de değerli olduğunu
+  B) Tavşanın kazandığını
+  C) Kaplumbağanın yarışa hiç katılmadığını
+  Açıklama: Bekçi, hem hızlı koşmanın hem düzenli ilerlemenin bir başarı olduğunu söyledi.
+s4 [sozcuk_baglami] dayanak_sayfa=3 doğru=A
+  Metin: Metinde geçen yavaş sözcüğü ne anlama gelir?
+  A) Hızı az olan, ağır ağır giden
+  B) Çok sessiz olan
+  C) Renkli olan
+  Açıklama: Kaplumbağa ağır ama düzenli adımlarla ilerledi.
+
+## Sözlük
+- s2_hizli | kelime | yazım: hızlı | 2–2 | anlam: Çabuk hareket eden, kısa sürede giden.
+- s2_yavas | kelime | yazım: yavaş | 2–2 | anlam: Hızı az olan, ağır ağır giden.
+- ata_sabir | atasozu | yazım: Sabreden derviş muradına ermiş | 2–2 | anlam: Sabırla bekleyen, istediğine sonunda kavuşur.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

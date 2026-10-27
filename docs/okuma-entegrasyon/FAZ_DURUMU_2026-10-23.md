@@ -68,6 +68,19 @@ Kaynak plan: `ENTEGRASYON_PLANI_2026-10-21.md` ve `UYUM_PLANI_2026-10-22.md`. Bu
 - Faz 4: /okuma-demo ve /okuma/sinif-okuma-anlama hazır, bağlantısız ve noindex; yayın bloke.
 - Faz 5: genel bayrak açık; pilot kapsamı kullanıcı kararı.
 - Faz 6: kapsam dışı.
+## Güncelleme 2026-10-24 (K-0122)
+- 2.3: 45 taslağın Ajan A/B denetimi tamam (90 rapor, `denetim/2026-10-23/OZET.md`); iki denetçiden pass alan hikâye yok. İnsan okuması ve yayın kararı açık.
+- 2.4: 45/45 sahne görseli dosyada (HR-033…047 dahil). Görsel onayı açık.
+- Sözlük adayları: CSV 1026 satır (91 hikâye), insan onayı yok. 50 bekleyen aday için A/B denetimi tamam (K-0123): 7 evet, 4 red, 39 beklemede; insan onayı hâlâ yok.
+- Canlı risk (K-0123): 12 test yayını hikâyesinin denetim alanı gerçek durumu yansıtmıyor (pass/approved yazılı, gerçekte yok). Düzeltme ve arşive alma taslağı `CANLI_TASLAK_2026-10-24.sql`; kullanıcı onayı bekliyor.
+- HR-015…032: yerel paket, uzak 20261062 ve uzak 20261077 metinleri farklı; sürüm kararı bekliyor (önerim: 20261077).
+- Faz 2.1 alanları: kayıtlı karar (K-0123): bilgi kutusu ve benzer/zıt ertelendi; Düşün isteğe bağlı (kodda zaten).
+- Faz 5 pilot: uygulandı (K-0124): `pilot_siniflari = [4,5]`, genel bayrak açık. Migrasyon 20261082.
+- Canlı 12 test hikâyesi: arşive alındı (K-0124); denetim alanları pending. İnsan okuması ve yeniden yayın yapılmadı.
+- HR-015…032: 20261077 esas alındı (K-0124). Yerel paketler güncellendi; anotasyon/hikâye metinleri eski, yeniden üretim gerekiyor. 147 yerel sözlük adayı 20261077 ile eşleşmedi.
+- 20261081 (GÖR-004): uygulanmadı ama uzakta görünüyor; kaynağı doğrulanmadı (K-0124).
+- Cihaz kontrolleri: 2026-10-24'te `adb devices` boş; cihaz bağlı değil.
+
 ## Devir notu (yeni oturum için, 2026-10-23)
 - Master: `e91f079` (panel 0.2.1, app 1.1.0+2, etiketler app-v1.1.0 ve panel-v0.2.0/0.2.1). Çalışma dalı `feature/huporead-entegrasyon` aynı noktada.
 - Sürüm kuralı: `docs/SURUMLEME.md`. Büyük değişiklik MINOR, düzeltme PATCH; her sürümde not ve etiket.

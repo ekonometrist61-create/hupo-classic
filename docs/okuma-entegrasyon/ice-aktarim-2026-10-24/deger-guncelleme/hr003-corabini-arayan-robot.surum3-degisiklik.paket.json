@@ -1,0 +1,429 @@
+{
+  "hikaye": {
+    "tur": "mizah",
+    "konu": "ev",
+    "slug": "hr003-corabini-arayan-robot",
+    "durum": "taslak",
+    "baslik": "Çorabını Arayan Robot",
+    "tanitim": "Ev robotu her mavi nesneyi çorap sanıyor. Doğru olanı nasıl bulacak?",
+    "fis_kodu": "HR-003",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D12",
+        "yardimci_deger": "D3"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 4,
+        "sayfa_sayisi": 6,
+        "simge_sayisi": 7,
+        "kelime_sayisi": 230,
+        "tahmini_sure_dk": 4,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "mizah",
+        "okul"
+      ],
+      "ana_sinif": 2,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 1,
+      "kavram_zorlugu": 1,
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "yuvarlak",
+          "tur": "lexeme",
+          "yuva": "s2_yuvarlak",
+          "islev": "first_hint",
+          "etiket": "yuvarlak"
+        },
+        {
+          "id": "kosel",
+          "tur": "lexeme",
+          "yuva": "s2_kosel",
+          "islev": "application",
+          "etiket": "köşeli"
+        },
+        {
+          "id": "kavram_hr003",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Sınıflandırma"
+        },
+        {
+          "id": "atasoz_hr003",
+          "tur": "proverb",
+          "yuva": "ata_parlayan",
+          "islev": "application",
+          "etiket": "Her parlayan altın değildir"
+        }
+      ]
+    },
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "dunya_tipi": "masalsi",
+    "okuma_bandi": 1,
+    "izinli_turler": [
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D12",
+      "D3"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "s2_yuvarlak",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_yuvarlak"
+          }
+        ]
+      },
+      {
+        "ad": "s2_kosel",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_kosel"
+          }
+        ]
+      },
+      {
+        "ad": "ata_parlayan",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "ata_parlayan"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "s2_yuvarlak",
+        "tur": "kelime",
+        "anlam": "Köşesi olmayan, daire gibi olan.",
+        "yazim": "yuvarlak",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_kosel",
+        "tur": "kelime",
+        "anlam": "Köşesi olan, düz kenarları bulunan.",
+        "yazim": "köşeli",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "ata_parlayan",
+        "tur": "atasozu",
+        "anlam": "Dışarıdan güzel görünen her şey değerli ya da doğru değildir.",
+        "yazim": "Her parlayan altın değildir",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "A",
+      "metin": "Robot başta neyi bulamadığını söyledi?",
+      "beceri": "hatirlama",
+      "aciklama": "Robot sabah mavi çorabını bulamadığını söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Mavi çorabını"
+        },
+        {
+          "id": "B",
+          "metin": "Kırmızı topunu"
+        },
+        {
+          "id": "C",
+          "metin": "Sarı limonunu"
+        }
+      ],
+      "dayanak_sayfa": 1
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Robot mavi mendili neden çorap sandı?",
+      "beceri": "cikarim",
+      "aciklama": "Robot, mavi olan her şeyin çorap olabileceğini düşündü.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Mavi olduğu için"
+        },
+        {
+          "id": "B",
+          "metin": "Yumuşak olduğu için"
+        },
+        {
+          "id": "C",
+          "metin": "Uzun olduğu için"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Robot son sahnede hangi davranışı kazandı?",
+      "beceri": "yorumlama",
+      "aciklama": "Robot, bir şeyin ne olduğunu anlamadan önce iki kez bakmaya karar verdi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir şeyi tanımadan önce iki kez bakmayı"
+        },
+        {
+          "id": "B",
+          "metin": "Hiç konuşmamayı"
+        },
+        {
+          "id": "C",
+          "metin": "Renklere hiç bakmamayı"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen yuvarlak sözcüğü hangisini anlatır?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Kupa yuvarlaktır; sert ve köşesizdir.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Köşesi olmayan, daire gibi olan"
+        },
+        {
+          "id": "B",
+          "metin": "Çok büyük olan"
+        },
+        {
+          "id": "C",
+          "metin": "Renkli olan"
+        }
+      ],
+      "dayanak_sayfa": 2
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ev robotu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sabah yüksek sesle bağırdı: \"Mavi çorabımı bulamıyorum!\" Aslında çorabı yoktu. Ama ne zaman mavi bir şey görse onu çorap sanıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Önce mavi kupayı getirdi. \"İşte!\" dedi. Zeynep güldü: \"Kupa "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_yuvarlak"
+        },
+        {
+          "t": "metin",
+          "v": " ve serttir. Çorap yumuşaktır.\" Bu kez mavi defteri getirdi. \"Defter"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " düz ve "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_kosel"
+        },
+        {
+          "t": "metin",
+          "v": ", çorap değil,\" dedi Zeynep."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Zeynep robotun önüne mavi bir mendil koydu. \"Bu çorap mı?\" diye sordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ışıklarını yakıp söndürdü. \"Mavi. O hâlde çorap olmalı!\" \"Mendil de mavi olabilir. Renk tek başına yetmez,\" dedi Zeynep. Bir atasözü der ki: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "ata_parlayan"
+        },
+        {
+          "t": "metin",
+          "v": "\". Robot"
+        },
+        {
+          "t": "ikon",
+          "v": "robot"
+        },
+        {
+          "t": "metin",
+          "v": " odanın köşesinden mavi bir oyuncak araba"
+        },
+        {
+          "t": "ikon",
+          "v": "car"
+        },
+        {
+          "t": "metin",
+          "v": " getirdi. Zeynep gülmekten sandalyeye oturdu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " yere üç çember çizdi ve üzerlerine \"renk\", \"biçim\" ve \"iş\" yazdı. Zeynep her çembere örnekler çizdi. Çorap yumuşak ve uzundu, kupanın sapı vardı, arabanın tekerlekleri dönüyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " nesneleri çemberlere yerleştirmeye başladı. Mavi bir topu önce çorap bölümüne koydu. Sonra topun yuvarlandığını görünce düzeltti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Oyunu biraz zorlaştırdılar. Masaya bir çorap, bir kitap"
+        },
+        {
+          "t": "ikon",
+          "v": "book"
+        },
+        {
+          "t": "metin",
+          "v": " ve bir top"
+        },
+        {
+          "t": "ikon",
+          "v": "ball"
+        },
+        {
+          "t": "metin",
+          "v": " koydular. \"Yalnız renge değil, biçime ve ne işe yaradığına da bak,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". Kitap okunuyordu, topla oynanıyordu, çorap ayağa giyiliyordu. Sonunda mavi çorabı çamaşır sepetinde buldular."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Peki benim ayağım nerede?\" diye sordu "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ciddi bir sesle. Herkes güldü. O günden sonra bir şeyin ne olduğunu anlamadan önce iki kez bakmaya karar verdi. Ertesi gün mutfakta bir limon gördü. \"Sarı top"
+        },
+        {
+          "t": "ikon",
+          "v": "ball"
+        },
+        {
+          "t": "metin",
+          "v": "!\" diye bağıracaktı ama durup kokladı. \"Hayır, bu limon.\""
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

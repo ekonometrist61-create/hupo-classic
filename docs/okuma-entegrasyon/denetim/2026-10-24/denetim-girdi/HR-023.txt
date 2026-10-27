@@ -1,0 +1,77 @@
+# HR-023 · Hoca ve Görünmeyen Misafir · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=7ac9b53f-6c35-42fd-a7bc-ed24f5118966, surum_no=2, sha256=f260886130f81b36615b7b01ff297894a3631e17e2248b40c404e5dfb751adbb
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr023-hoca-ve-gorunmeyen-misafir | Tür: mizah | Konu: misafirlik | Dünya: gercekci
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Nasreddin Hoca'nın sofrasında dördüncü tabak neden boş? Görünmeyen misafirin sırrı bir soruyla çözülüyor.
+İzinli türler: ben, arkadas
+Değer anahtarları (sürüm): D14, D20 | maarif.ana_deger: D14
+Etiketler: ana_sinif=3, okuma_zorlugu=2, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: mizah, aile, kultur_miras | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: misafir_hr023 (lexeme, first_hint: misafir); israr_hr023 (lexeme, application: ısrar); bilmece_hr023 (lexeme, application: bilmece); kavram_hr023 (concept, application: Misafirperverlik ve kişisel sınırlara saygı)
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":7,"simge_sayisi":9,"kelime_sayisi":367,"tahmini_sure_dk":5,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Nasreddin Hoca'nın evinde akşam için üç tabak hazırlanmıştı. Hoca, eşi ve küçük komşuları [KAHRAMAN hal=yalin] sofraya oturacaktı. Fakat masada dördüncü bir tabak daha vardı. Üstelik tabağın önünde kimse oturmuyordu. [KAHRAMAN hal=yalin] şaşkınlıkla sordu: "Hocam, görünmeyen bir misafiriniz mi var?" Hoca gözlerini büyüttü. "Varsa bile çok usluymuş. Ayakkabılarını kapıda görmedim!"
+--- Sayfa 2 ---
+[KAHRAMAN hal=yalin] gülünce Hoca'nın eşi de gülümsedi. "O tabak, bugün gelemeyeceğini haber veren bir konuğumuz içindi," dedi. "Toplamayı unutmuşum." [KAHRAMAN hal=yalin] tabağı bir süre daha inceledi; yanında [YOLDAŞ hal=yalin yedek=Hupo] da merakla bakıyordu. Üstünde bir kaşık, yanında katlanmış bir peçete vardı. Ona göre [KELİME yuva=pa_misafir] gerçekten görünmezse kaşığı nasıl tutacağını kimse bilemezdi. "Belki bir hayalet gelir," diye şaka yaptı.
+--- Sayfa 3 ---
+Hoca ise "Önce evde görünür işleri tamamlayalım: Kapıyı biri çalarsa açacağız, sofrayı da sıcak tutacağız," dedi. Hoca'nın eşi, biraz önce gelemeyen misafirin haber göndermesini hatırlattı. [KAHRAMAN hal=yalin], haber vermenin neden önemli olduğunu sordu. "Çünkü biz de ona göre hazırlanırız," dedi. "Küçük bir cümle büyük bir yanlış anlamayı önleyebilir." [KAHRAMAN hal=yalin], okuldan geç döneceği gün ailesine haber vermeyi düşündü. [İŞARET kod=ipucu]
+--- Sayfa 4 ---
+Tam o sırada kapı çalındı. [KAHRAMAN hal=ilgi] karşı komşusu Hasan amca içeriye baktı. Elinde bir sepet vardı. "Size bahçemden elma getirdim. Ama oyalanmayayım," dedi. Hoca, boş tabağı işaret[İKON flag] etti. "Bakınız, tabak sizden önce gelmiş!" Hasan amca şaşırdı. "Beni beklediğinizi bilmiyordum." "Biz de bilmiyorduk," dedi Hoca. "Bazen yer hazır olur, misafir sonradan belli olur."
+--- Sayfa 5 ---
+Hasan amca oturmak istemedi. Evinin kapısı açıktı ve kedisi içeride yalnız kalmıştı. Hoca bu kez [KELİME yuva=pa_israr] etmedi. "Öyleyse elmalarınızı aldığımız gibi size de yol arkadaşı olalım," dedi. [KAHRAMAN hal=yalin] ve Hoca komşuyu evine kadar geçirmek için ona eşlik etti. Dönüşte [KAHRAMAN hal=yalin] bir soru[İKON question][İKON curiosity] sordu: "Misafirperverlik, herkesi mutlaka sofraya oturtmak mıdır?"
+--- Sayfa 6 ---
+Hoca başını iki yana salladı. "Misafirin ihtiyacını anlamak da önemlidir. Kimi oturup dinlenmek ister, kimi yalnızca kapıda selam verir." Eve geldiklerinde dördüncü tabağı yerine kaldırdılar. [KAHRAMAN hal=yalin], "Demek görünmeyen misafirimiz aslında bir yanlış anlamaymış," dedi. "Öyle," dedi Hoca. "Ama yanlış anlamak, doğru[İKON check] soru[İKON question][İKON curiosity] sorunca hemen görünür olur."
+--- Sayfa 7 ---
+Yemekte elmalardan birini paylaştılar. Hoca, [KAHRAMAN hal=yonelme] bir [KELİME yuva=pa_bilmece] sordu: "Dört tabağımız vardı; üç kişi oturduk; sonra misafir kapıya geldi. Kaç kişi sofrada yemek yedi?" "Üç," dedi [KAHRAMAN hal=yalin]. "Çünkü Hasan amca oturmadı." Hoca gülümsedi. "Aferin! Görmediğimiz birini sayarken önce ne olduğunu anlamak[İKON lightning-idea] gerekir." [YOLDAŞ hal=yalin yedek=Hupo] de başıyla onayladı. [KAHRAMAN hal=yalin] artık sofradaki boş yerlere bakıp hemen korkunç bir hikâye[İKON book] düşünmemeye karar verdi.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=B
+  Metin: Dördüncü tabak neden masadaydı?
+  A) Görünmeyen bir misafir için konmuştu
+  B) Gelemeyeceğini haber veren bir konuk içindi ve toplanmamıştı
+  C) Hasan amca için hazırlanmıştı
+  Açıklama: Hoca'nın eşi, tabağın gelemeyeceğini haber veren bir konuk için olduğunu ve toplamayı unuttuğunu söyledi.
+s2 [cikarim] dayanak_sayfa=5 doğru=C
+  Metin: Hasan amca neden sofraya oturmak istemedi?
+  A) Elmaları beğenmediği için
+  B) Yemek yemek istemediği için
+  C) Evinin kapısı açıktı ve kedisi içeride yalnız kalmıştı
+  Açıklama: Hasan amca, evinin kapısı açık olduğu ve kedisi içeride yalnız kaldığı için oturmak istemedi.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Hoca'nın "Misafirin ihtiyacını anlamak da önemlidir" sözü ne anlatır?
+  A) Misafirin ne istediğine dikkat etmenin, herkesi aynı biçimde ağırlamaktan önemli olduğunu
+  B) Misafirin her zaman sofrada oturması gerektiğini
+  C) Misafire hiç soru sorulmaması gerektiğini
+  Açıklama: Hoca, kimi misafirin dinlenmek, kimininse yalnızca selam vermek istediğini söyledi.
+s4 [sozcuk_baglami] dayanak_sayfa=5 doğru=B
+  Metin: Metinde geçen ısrar etmek ifadesi ne anlama gelir?
+  A) Bir şeyi hemen unutmak
+  B) Bir şeyi kabul ettirmek için üstelemek
+  C) Bir yerden uzaklaşmak
+  Açıklama: Hasan amca oturmak istemeyince Hoca onu üstelemedi, ısrar etmedi.
+s5 [hatirlama] dayanak_sayfa=7 doğru=C
+  Metin: Hoca'nın sorduğu bilmecenin cevabı neydi?
+  A) Dört
+  B) İki
+  C) Üç
+  Açıklama: Sofraya üç kişi oturdu; Hasan amca oturmadığı için cevap üçtü.
+
+## Sözlük
+- pa_misafir | kelime | yazım: misafir | 3–3 | anlam: Bir eve ya da yere konuk olarak giden kişi.
+- pa_israr | kelime | yazım: ısrar | 3–3 | anlam: Bir şeyi kabul ettirmek için üstelemek.
+- pa_bilmece | kelime | yazım: bilmece | 3–3 | anlam: Cevabı düşünerek bulunan kısa soru ya da söz oyunu.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

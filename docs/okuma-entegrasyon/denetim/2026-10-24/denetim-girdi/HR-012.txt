@@ -1,0 +1,69 @@
+# HR-012 · Yeni Arkadaşın Gizli Yeteneği · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=c58e1d79-ee62-4c04-921a-81a0baa2a61b, surum_no=3, sha256=469ed5e4227a9d80b2a7155089222d10ac3415ae9c6339c1cee6a6e7d8e4a3cd
+Not: bu hikâyede 3 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr012-yeni-arkadasin-gizli-yetenegi | Tür: arkadaslik | Konu: sinif | Dünya: gercekci
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Sessiz yeni bir arkadaş var. Grup çalışmasında onun gizli yeteneğini kim fark edecek?
+İzinli türler: ben, arkadas, kardes, hayali
+Değer anahtarları (sürüm): D14 | maarif.ana_deger: D14
+Etiketler: ana_sinif=2, okuma_zorlugu=1, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: dostluk, okul | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: cekingen (lexeme, first_hint: çekingen); cesur (lexeme, application: cesur); kavram_hr012 (concept, application: Kapsayıcılık); atasoz_hr012 (proverb, application: Derin su sessiz akar)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":6,"simge_sayisi":5,"kelime_sayisi":211,"tahmini_sure_dk":4,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":2,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Sınıfa yeni gelen [KAHRAMAN hal=yalin] [KELİME yuva=s2_cekingen] biriydi. Teneffüslerde pencere kenarında oturuyor, arkadaşları oyuna çağırdığında kibarca başını sallıyordu. Ece onun kimseyi sevmediğini düşündü.
+--- Sayfa 2 ---
+Grup çalışması başlarken [KAHRAMAN hal=yalin] tek başına kalacak gibiydi. Ece yanına yaklaştı: "Bizimle çalışmak ister misin?" [KAHRAMAN hal=yalin] başını salladı ama ilk dakikalarda pek konuşmadı. Kâğıdın kenarına küçük işaretler koyuyordu. [YOLDAŞ hal=yalin yedek=Hupo] de bu işaretlerin ne olduğunu merakla bekliyordu.
+--- Sayfa 3 ---
+Ece işaretlerin bir haritaya benzediğini fark edip sordu: "Bunlar ne?" "Evden okula gelirken geçtiğim yerler," dedi [KAHRAMAN hal=yalin]. Kâğıda yollar çizdi: "Burada kitapçı var, burada iki ağaç[İKON tree], burada küçük bir meydan." Arkadaşları dinledikçe haritalar gerçekçileşti. [İŞARET kod=kalp]
+--- Sayfa 4 ---
+Bahçenin ağaçlarını, çeşmesini ve giriş kapısını çizdi. Sonra güvenli yürüyüş yolunu renkli kalemle işaretledi. Grupta bir sorun çıktı: çizilen park okuldan daha büyük görünüyordu. [KAHRAMAN hal=yalin] silgiyi alıp her şeyi silmek istemedi. "Önce büyük ve küçük yerleri karşılaştıralım," dedi.
+--- Sayfa 5 ---
+Ece "Bunu nasıl[İKON question] bu kadar güzel yaptın?" diye sordu. [KAHRAMAN hal=yalin] omuz silkti: "Eski mahallemde de haritalar çizerdim." Ece, konuşmadığı zamanlarda çevresini dikkatle izlediğini fark etti.
+--- Sayfa 6 ---
+Öğretmen[İKON school] sonraki hafta yeni bir harita[İKON map] görevi verdi. Bu kez [KAHRAMAN hal=yalin] arkadaşlarına [KELİME yuva=s2_cesur] bir öneri yaptı: "Yol için yeni bir çizgi deneyelim." Grup haritayı sınıfta sundu. Öğretmen katkıları sorduğunda Ece "Yolumuzu [KAHRAMAN hal=yalin] buldu," dedi. Öğretmen gülümsedi: "[ATASÖZÜ yuva=ata_derin_su]". [YOLDAŞ hal=yalin yedek=Hupo] de alkışladı. Ece, sessiz birinin fikri olmadığını sandığı için yanıldığını anladı.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=A
+  Metin: Yeni gelen çocuk teneffüslerde nerede oturuyordu?
+  A) Pencere kenarında
+  B) Bahçede
+  C) Kantinde
+  Açıklama: Yeni çocuk teneffüslerde pencere kenarında oturuyordu.
+s2 [cikarim] dayanak_sayfa=3 doğru=A
+  Metin: Çocuk işaretleri neden çizdi?
+  A) Evden okula giderken geçtiği yerleri göstermek için
+  B) Yeni bir oyun icat etmek için
+  C) Öğretmenine kızmak için
+  Açıklama: Çizdiği işaretler, evden okula gelirken geçtiği yerlerdi.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Ece'nin ilk gün yaptığı hata neydi?
+  A) Sessiz birinin fikri olmadığını sanmak
+  B) Haritayı yanlış çizmek
+  C) Arkadaşlarını oyuna çağırmamak
+  Açıklama: Ece, sessiz birinin fikri olmadığını sandığı için yanıldığını anladı.
+s4 [sozcuk_baglami] dayanak_sayfa=1 doğru=A
+  Metin: Metinde geçen çekingen sözcüğü ne anlama gelir?
+  A) Utangaç, kendini hemen göstermeyen
+  B) Çok neşeli
+  C) Çok hızlı konuşan
+  Açıklama: Yeni çocuk, arkadaşlarının davetine kibarca karşılık veriyor ama çok konuşmuyordu.
+
+## Sözlük
+- s2_cekingen | kelime | yazım: çekingen | 2–2 | anlam: Utangaç, kendini hemen göstermeyen.
+- s2_cesur | kelime | yazım: cesur | 2–2 | anlam: Korkmadan iş yapabilen.
+- ata_derin_su | atasozu | yazım: Derin su sessiz akar | 2–2 | anlam: Bilgili ve olgun insanlar çoğu zaman az konuşur, gösteriş yapmaz.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

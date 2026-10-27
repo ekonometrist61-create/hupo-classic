@@ -1,0 +1,93 @@
+# HR-032 · Pazardaki Akıllı Terazi · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=ef4fa4bc-baab-43d3-9248-f7439e2bc256, surum_no=3, sha256=98cb3b1615aca78018cae3cc36294aa8606f408ba159f1607e5e35cb671b5fa1
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr032-keloglan-ve-akilli-terazi | Tür: tarih_kultur | Konu: pazar_terazisi | Dünya: masalsi
+Sınıf: 4–4 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Pazarda terazinin bir kefesi neden aşağıda kalıyor? Kimseyi küçük düşürmeden doğrusu nasıl bulunur?
+İzinli türler: ben, arkadas, baska_biri
+Değer anahtarları (sürüm): D1, D6 | maarif.ana_deger: D1
+Etiketler: ana_sinif=4, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: kultur_miras, dayanisma, guvenlik | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sozcuk_terazi_hr032 (lexeme, first_hint: terazi); sozcuk_denetim_hr032 (lexeme, application: denetim); sozcuk_olcu_hr032 (lexeme, application: ölçü); kavram_hr032 (concept, application: Adil ölçme, doğru tartı ve onarıcı sorumluluk)
+Ölçülen: {"soru_sayisi":6,"sayfa_sayisi":9,"simge_sayisi":13,"kelime_sayisi":461,"tahmini_sure_dk":6,"yoldas_yer_sayisi":4,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":2,"hatirlama":1,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+[KAHRAMAN hal=yalin], kasabanın pazarına annesi için bulgur almaya gitti. Sepetinde birkaç bakır para ve düzgünce katlanmış bir alışveriş listesi vardı. İlk tezgâhta satıcı, bir kese bulguru teraziye koydu. Terazinin bir kefesi aşağı indi, öteki hafifçe havada kaldı. [KAHRAMAN hal=yalin] keseye, sonra satıcının kullandığı ağırlığa baktı. “Usta, bunun tam bir [KELİME yuva=pb_olcu] olduğundan emin miyiz?” diye sordu.
+--- Sayfa 2 ---
+Satıcı kaşlarını kaldırdı. “Bunca yıldır tartıyorum. Sen mi öğreteceksin?” [KAHRAMAN hal=yalin] tartışmak istemedi. “Ben de öğrenmeye çalışıyorum,” dedi. “Aynı ağırlığı başka terazide ölçebilir miyiz?” Yan tezgâhta çalışan [YOLDAŞ hal=yalin yedek=Hupo], herkesin kullanabildiği denetim ağırlıklarını gösterdi. [KAHRAMAN hal=yalin], pazardaki belediye görevlisinden de yardım[İKON hand-help] istedi. Görevli önce terazinin dengeli bir zemine oturup oturmadığını kontrol etti. Ardından standart ağırlıkla bir deneme yaptı. İlk terazinin ayarının bozulduğu ortaya çıktı.
+--- Sayfa 3 ---
+Satıcının yüzü kızardı. “Demek müşterilere eksik vermiş olabilirim,” dedi. “Kasten yapmadım, ama yine de sorun var.” Pazar görevlisi, ölçme aracının bakım için ayrılması gerektiğini anlattı. Satıcı, o gün satış yaptığı müşterilere durumu duyurmayı ve gerekli düzeltmeleri yapmayı kabul etti. [KAHRAMAN hal=yalin] da kimseyi küçük düşürmeden sorunu çözebildikleri için sevindi.
+--- Sayfa 4 ---
+[KAHRAMAN hal=yalin] [KELİME yuva=pb_denetim] işlemini dikkatle izlerken pazara iki müşteri daha geldi. Biri satıcıya sertçe çıkışmak istedi. [KAHRAMAN hal=yalin] araya girip, “Önce sorunu anlayalım; yanlış teraziyi kullanmayı durdurmak herkes için iyi,” dedi. Satıcı da özür dileyerek terazisini düzelttireceğini yineledi. Pazarda yüksek sesle tartışmak yerine açık konuşmanın daha çok işe yaradığını gördüler. [İŞARET kod=ipucu]
+--- Sayfa 5 ---
+Görevli, doğru[İKON check] tartımın yalnız alıcıya değil satıcıya da güven[İKON shield] sağladığını açıkladı. [KAHRAMAN hal=yalin] defterine ağırlık birimlerini yazdı. Bir kilogramın bin gram ettiğini hatırladı; ancak bir torbanın ağır mı hafif mi olduğunu görünüşüne bakıp söyleyemiyordu. İçindeki tanelerin boyutu, torbanın ağırlığını tek başına göstermiyordu.
+--- Sayfa 6 ---
+[YOLDAŞ hal=yalin yedek=Hupo] ona iki torba gösterdi. Birinde iri taneli, diğerinde ince taneli bulgur vardı. “İkisi de aynı ağırlıkta olabilir mi?” diye sordu. [KAHRAMAN hal=yalin] torbaları elinde tartar gibi yaptı, sonra vazgeçti. “Görünüşe bakıp karar veremem. Teraziye ihtiyacım var.” [YOLDAŞ hal=yalin yedek=Hupo], “İşte buna ölçüp biçmek derler,” diye gülümsedi. “Bir işe girişmeden önce düşünmek, kontrol etmek.”
+--- Sayfa 7 ---
+Bir müşteri, “Benim aldığım ürünler için de aynı kontrol yapılacak mı?” diye sordu. Satıcı adlarını ve alışveriş saatlerini not[İKON notebook] ederek geri dönenlerin ölçümünü yeniden yapacağını söyledi. [KAHRAMAN hal=yalin] işin burasında kendi payını düşündü: “Bir yanlışlığı görmek yetmez; düzeltilmesine de yardım[İKON hand-help] etmek gerekir.” [YOLDAŞ hal=yalin yedek=Hupo] onayladı. Güven[İKON shield], söylenen güzel sözlerle değil, yapılan doğru işlerle yeniden kuruluyordu.
+--- Sayfa 8 ---
+[KAHRAMAN hal=yalin] doğru[İKON check] ayarlanmış terazide ihtiyacı kadar bulguru aldı. Eve döndüğünde annesi keseyi açıp sordu: “Pazarda neden[İKON question] bu kadar geç kaldın?” “Bulgur aldım, bir de akıl,” dedi [KAHRAMAN hal=yalin]. “İkisini de ölçerek aldım.” Annesi gülerek, “Akıl terazide tartılır mı hiç?” diye karşılık verdi. [KAHRAMAN hal=yalin] sepetini bıraktı. “Tartılmaz ama doğru ölçüyle iş yapmak akıllıca olur.”
+--- Sayfa 9 ---
+Ertesi pazar satıcı, tezgâhına yeni denetlenmiş bir [KELİME yuva=pb_terazi] koymuştu. Yanına da küçük bir yazı asmıştı: Ölçüde doğruluk, alışverişte güven[İKON shield]. [KAHRAMAN hal=yalin] bu yazıyı görünce başıyla selam verdi. Satıcı da ona teşekkür etti. Kasabada o gün belki büyük bir hazine[İKON chest] bulunmamıştı; ama herkesin hakkını koruyan küçük bir adım[İKON footprint] atılmıştı. [İŞARET kod=yildiz]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=B
+  Metin: İlk terazinin ayarının bozuk olduğu nasıl ortaya çıktı?
+  A) Satıcı kendisi itiraf etti
+  B) Görevli dengeli zeminde standart ağırlıkla bir deneme yaptı
+  C) Teraziyi çocuklar söküp inceledi
+  D) Annesi pazara gelip kontrol etti
+  Açıklama: Pazar görevlisi önce zemini kontrol etti, sonra standart ağırlıkla deneme yaptı.
+s2 [cikarim] dayanak_sayfa=3 doğru=C
+  Metin: Satıcı ‘Kasten yapmadım, ama yine de sorun var’ derken neyi kabul etmiş olur?
+  A) Müşterileri kandırmak istediğini
+  B) Teraziyi hiç kullanmadığını
+  C) Niyeti kötü olmasa da eksik tartmanın müşterilere zarar vermiş olabileceğini
+  D) Pazarın kapatılması gerektiğini
+  Açıklama: Satıcı, bilerek yapmasa da eksik tartı olasılığının bir sorun olduğunu kabul etti.
+s3 [yorumlama] dayanak_sayfa=7 doğru=B
+  Metin: ‘Güven, söylenen güzel sözlerle değil, yapılan doğru işlerle yeniden kuruluyordu’ cümlesi ne anlatır?
+  A) Güzel söz söylemek yasaktır
+  B) Hata yapıldığında özür ve düzeltme, güveni geri getiren asıl şeydir
+  C) Satıcı yeni bir terazi almak zorundaydı
+  D) Güven yalnızca zengin satıcılarda olur
+  Açıklama: Satıcı özür dilemiş, müşterilere duyuru yapmayı ve düzeltmeyi kabul etmişti; güven bu davranışlarla geri geliyordu.
+s4 [sozcuk_baglami] dayanak_sayfa=4 doğru=A
+  Metin: ‘Denetim işlemi’ ifadesindeki denetim sözcüğü ne demektir?
+  A) Bir şeyin doğru ve kurallara uygun olup olmadığını kontrol etme
+  B) Pazarda ürün satma
+  C) Bir hediyeyi paketleme
+  D) Yüksek sesle tartışma
+  Açıklama: Görevli, terazinin doğru çalışıp çalışmadığını kontrol ediyordu.
+s5 [degerlendirme] dayanak_sayfa=4 doğru=C
+  Metin: Çocuğun pazarda araya girip ‘Önce sorunu anlayalım’ demesi neden iyi bir davranıştır?
+  A) Çünkü satıcıdan intikam alır
+  B) Çünkü sorun kendiliğinden kaybolur
+  C) Çünkü bağırmak yerine sorunun çözülmesine ve doğrunun bulunmasına yardım eder
+  D) Çünkü pazarda kimse konuşmaz
+  Açıklama: Çocuk sert çıkışmak yerine sakin kalıp sorunu anlamaya çalıştı; böylece kimse küçük düşürülmedi.
+s6 [cikarim] dayanak_sayfa=6 doğru=D
+  Metin: Çocuk iki bulgur torbasının hangisinin ağır olduğuna neden bakarak karar veremedi?
+  A) Torbalar birbirinin aynısıydı
+  B) Taneler iriyse torba kesin hafiftir
+  C) Torbalar çok uzaktaydı
+  D) Görünüş ağırlığı tek başına göstermez; tartmak gerekir
+  Açıklama: Tanelerin boyutu torbanın ağırlığını tek başına göstermiyordu; bu yüzden teraziye ihtiyaç vardı.
+
+## Sözlük
+- pb_terazi | kelime | yazım: terazi | 4–4 | anlam: Bir şeyin ağırlığını ölçmek için kullanılan, iki kefeli ya da dijital alet.
+- pb_denetim | kelime | yazım: denetim | 4–4 | anlam: Bir şeyin doğru ve kurallara uygun olup olmadığına bakma.
+- pb_olcu | kelime | yazım: ölçü | 4–4 | anlam: Bir şeyin ağırlığını, boyunu ya da miktarını belirleyen değer.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

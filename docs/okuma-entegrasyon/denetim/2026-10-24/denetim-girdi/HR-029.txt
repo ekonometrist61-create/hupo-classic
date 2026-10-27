@@ -1,0 +1,77 @@
+# HR-029 · Minik Mucit ve Güneş Fırını · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=b327331c-26ce-48f6-97df-3e03b97b4dd5, surum_no=2, sha256=86ddd6d9b66987bf0c1c0588031b3c653a1c8b6d6cea5206d53e4d59112d42be
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr029-minik-mucit-ve-gunes-firini | Tür: bilim | Konu: gunes_enerjisi | Dünya: gercekci
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: İki kutu, iki termometre ve bir bulut: Güneşin ısısını göstermek sanıldığından zor!
+İzinli türler: ben, arkadas, baska_biri
+Değer anahtarları (sürüm): D3, D16 | maarif.ana_deger: D3
+Etiketler: ana_sinif=3, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: bilim_teknoloji, kesif, okul | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sozcuk_termometre_hr029 (lexeme, first_hint: termometre); sozcuk_enerji_hr029 (lexeme, application: enerji); sozcuk_olcum_hr029 (lexeme, application: ölçüm); kavram_hr029 (concept, application: Güneş enerjisi ve ısınma; adil karşılaştırma ve ölçüm)
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":7,"simge_sayisi":18,"kelime_sayisi":375,"tahmini_sure_dk":5,"yoldas_yer_sayisi":5,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+[KAHRAMAN hal=yalin], okulun bilim gününde güneş[İKON sun] enerjisini anlatmak istiyordu. Ama güneşi bir kavanoza dolduramayacağına göre, onun ısısını nasıl gösterecekti? Öğretmeniyle birlikte[İKON friends] bir kutu modeli hazırlamaya karar verdi.
+--- Sayfa 2 ---
+Öğretmen[İKON school] iki eş boy karton kutunun içini aynı koyu renkli kâğıtla kapladı. İkisine de aynı tür saydam kapak yerleştirdi. [KAHRAMAN hal=yalin] ikisinin içine de [KELİME yuva=pb_termometre] koydu. Hiçbirine yiyecek koymadılar; amaç yalnız sıcaklığı gözlemekti. “Birini güneşte, birini gölgede bekleteceğiz,” dedi [KAHRAMAN hal=yalin]. “Başka koşulları mümkün olduğunca aynı tutmalıyız.”
+--- Sayfa 3 ---
+Arkadaşı [YOLDAŞ hal=yalin yedek=Hupo] ilk ölçümü deftere yazdı. Her iki termometre de yaklaşık aynı değeri gösteriyordu. On dakika[İKON clock] sonra güneşte duran kutunun sıcaklığı daha yüksek çıktı. [YOLDAŞ hal=yalin yedek=Hupo] hemen bağırdı: “Süper! Kutunun içinde ateş[İKON fire] var!” [KAHRAMAN hal=yalin] güldü. “Ateş yok. Ama güneşten gelen [KELİME yuva=pb_enerji] kutuyu ısıtıyor olabilir.” Öğretmen[İKON school], saydam kapağın ışığın bir kısmını içeri aldığını ve kutunun ısı kaybını azaltmaya yardımcı olduğunu anlattı. [KAHRAMAN hal=yalin] elini kutuya uzatınca öğretmeni uyardı: “Ölçüm için termometreyi kullanalım. Isınan yüzeylere dokunmak gerekmiyor.” [İŞARET kod=gunes]
+--- Sayfa 4 ---
+Deneyin başında [YOLDAŞ hal=yalin yedek=Hupo] güneşteki kutuyu daha sık açmak istemişti. Öğretmen[İKON school], kapağın her açılışında içerdeki koşulların değişebileceğini hatırlattı. Bunun üzerine ölçüm zamanlarını önceden belirlediler. [KAHRAMAN hal=yalin] çizdiği tabloya saatleri, iki sıcaklığı ve havanın durumunu yazdı. Böylece yalnız “sıcak” veya “soğuk” demek yerine sayıları karşılaştırabildi.
+--- Sayfa 5 ---
+İkinci ölçümde [YOLDAŞ hal=yalin yedek=Hupo], gölgede duran kutunun da biraz ısındığını görünce şaşırdı. “O kutuya doğrudan güneş[İKON sun] gelmedi,” dedi. Öğretmen[İKON school], havanın sıcaklığının da değişebileceğini söyledi. [KAHRAMAN hal=yalin], “Öyleyse iki kutunun farkına birlikte[İKON friends] bakmalıyız,” diyerek her ikisinin değerini yeniden okudu. Bir deneyde tek bir sonucun her şeyi anlatmayacağını fark etmişti.
+--- Sayfa 6 ---
+Öğleye doğru bulutlar güneşin önünü kapattı. Sonraki ölçüm bekledikleri kadar yüksek çıkmadı. [YOLDAŞ hal=yalin yedek=Hupo], “Deney[İKON microscope] bozuldu,” diye üzüldü. [KAHRAMAN hal=yalin] defterdeki önceki değerleri gösterdi. “Hayır, yeni bir bilgi öğrendik. Hava durumu da sonucu etkileyebiliyor.” [KAHRAMAN hal=yalin] deney başında yazdığı tahmini okudu. Sonuç tam beklediği gibi değildi; özellikle bulutlu saatte fark azalmıştı. Bu kez defterine bir sonuç cümlesi yerine yeni bir soru[İKON question][İKON curiosity] yazdı: “Farklı günlerde ölçsek aynı sonuç çıkar mı?”
+--- Sayfa 7 ---
+Bilim gününde çocuklar kutuları masaya yerleştirdi. [KAHRAMAN hal=yalin] ziyaretçilere hangi kutunun nerede durduğunu sordu; sonra ölçümleri gösterdi. Küçük bir öğrenci “Bununla yemek pişirebilir miyiz?” diye sorunca [KAHRAMAN hal=yalin] dikkatli cevap verdi: “Güneş[İKON sun] ısısından yararlanan gerçek düzenekler var. Bizim yaptığımız ise öğretmen[İKON school] gözetiminde kullanılan bir [KELİME yuva=pb_olcum] modeli.” Sergi sonunda öğretmen ona bir yıldız[İKON star] çıkartması verdi. [KAHRAMAN hal=yalin] yıldızı defterine yapıştırmadı; kutuların fotoğrafının yanına koydu. Çünkü en çok, ilk tahminlerini ölçerek karşılaştırabilmiş olmasına seviniyordu. [İŞARET kod=yildiz]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=B
+  Metin: Çocuk iki kutuyu nerede bekletmeyi planladı?
+  A) İkisini de güneşte
+  B) Birini güneşte, birini gölgede
+  C) Birini sınıfta, birini bahçede yağmurda
+  Açıklama: Çocuk birini güneşte, birini gölgede bekleteceklerini söyledi.
+s2 [cikarim] dayanak_sayfa=6 doğru=C
+  Metin: Bulutlu saatte iki kutu arasındaki fark neden azaldı?
+  A) Çünkü termometreler bozuldu
+  B) Çünkü kutular yer değiştirdi
+  C) Çünkü bulutlar güneşin önünü kapatıp kutuya gelen enerjiyi azalttı
+  Açıklama: Bulutlar güneşi kapatınca güneşteki kutu daha az ısındı; hava durumu sonucu etkiledi.
+s3 [yorumlama] dayanak_sayfa=4 doğru=A
+  Metin: Ölçüm zamanlarını önceden belirlemek neden iyi bir fikirdi?
+  A) Kapağı sık sık açmak koşulları değiştirebilirdi; plan sonuçları daha güvenilir yaptı
+  B) Böylece deney daha çabuk bitti
+  C) Böylece kutuyu hiç açmaya gerek kalmadı
+  Açıklama: Kapağın her açılışında içerdeki koşullar değişebileceği için ölçüm saatleri baştan belirlendi.
+s4 [sozcuk_baglami] dayanak_sayfa=3 doğru=B
+  Metin: Metinde geçen enerji sözcüğü bu cümlede neyi anlatır: ‘Güneşten gelen enerji kutuyu ısıtıyor olabilir’?
+  A) Kutunun içindeki bir ateşi
+  B) Isıtma gibi işleri yapabilen güç
+  C) Kutunun rengini
+  Açıklama: Güneşten gelen enerji, kutunun ısınmasını sağlayan güçtür; kutuda ateş yoktur.
+s5 [hatirlama] dayanak_sayfa=3 doğru=A
+  Metin: Öğretmen ısınan kutu yüzeyleri için çocuklara ne yapmalarını söyledi?
+  A) Yüzeye dokunmak yerine termometreyi kullanmalarını
+  B) Kutuyu elleriyle yoklamalarını
+  C) Kapağı çıkarıp içine bakmalarını
+  Açıklama: Öğretmen, ölçüm için termometreyi kullanmalarını ve ısınan yüzeylere dokunmamalarını söyledi.
+
+## Sözlük
+- pb_termometre | kelime | yazım: termometre | 3–3 | anlam: Sıcaklığı ölçmeye yarayan alet.
+- pb_enerji | kelime | yazım: enerji | 3–3 | anlam: Isıtmak, ışık vermek ya da hareket ettirmek gibi işleri yapabilen güç.
+- pb_olcum | kelime | yazım: ölçüm | 3–3 | anlam: Bir şeyin boyunu, sıcaklığını ya da ağırlığını bir araçla öğrenme işi.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

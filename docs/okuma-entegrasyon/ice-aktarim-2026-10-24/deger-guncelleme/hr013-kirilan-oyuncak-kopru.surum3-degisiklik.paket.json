@@ -1,0 +1,488 @@
+{
+  "hikaye": {
+    "tur": "arkadaslik",
+    "konu": "bahce",
+    "slug": "hr013-kirilan-oyuncak-kopru",
+    "durum": "taslak",
+    "baslik": "Kırılan Oyuncak Köprü",
+    "tanitim": "Kartondan yapılan köprü yarıştan önce çöktü. Suçlu kim, nasıl onarılır?",
+    "fis_kodu": "HR-013",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D16",
+        "yardimci_deger": "D6"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 4,
+        "sayfa_sayisi": 7,
+        "simge_sayisi": 12,
+        "kelime_sayisi": 239,
+        "tahmini_sure_dk": 4,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "okul",
+        "sabir_emek"
+      ],
+      "ana_sinif": 2,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 1,
+      "kavram_zorlugu": 1,
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "saglam",
+          "tur": "lexeme",
+          "yuva": "s2_saglam",
+          "islev": "first_hint",
+          "etiket": "sağlam"
+        },
+        {
+          "id": "onarim",
+          "tur": "lexeme",
+          "yuva": "s2_onarim",
+          "islev": "application",
+          "etiket": "onarım"
+        },
+        {
+          "id": "kavram_hr013",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Basit yapı tasarımı"
+        },
+        {
+          "id": "atasoz_hr013",
+          "tur": "proverb",
+          "yuva": "ata_birlik",
+          "islev": "application",
+          "etiket": "Birlikten kuvvet doğar"
+        }
+      ]
+    },
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 1,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "kardes"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D16",
+      "D6"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "s2_saglam",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_saglam"
+          }
+        ]
+      },
+      {
+        "ad": "s2_onarim",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_onarim"
+          }
+        ]
+      },
+      {
+        "ad": "ata_birlik",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "ata_birlik"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "s2_saglam",
+        "tur": "kelime",
+        "anlam": "Kolay bozulmayan, dayanıklı.",
+        "yazim": "sağlam",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_onarim",
+        "tur": "kelime",
+        "anlam": "Bozulmuş bir şeyi yeniden düzeltme.",
+        "yazim": "onarım",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "ata_birlik",
+        "tur": "atasozu",
+        "anlam": "Birlikte çalışan insanlar daha çok iş başarır.",
+        "yazim": "Birlikten kuvvet doğar",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "A",
+      "metin": "Köprü yarış öncesinde neden çöktü?",
+      "beceri": "hatirlama",
+      "aciklama": "Köprünün üstüne büyük bir kamyon oyuncağı konmuştu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Üstüne ağır bir kamyon konduğu için"
+        },
+        {
+          "id": "B",
+          "metin": "Yağmur yağdığı için"
+        },
+        {
+          "id": "C",
+          "metin": "Çocuklar üstüne bastığı için"
+        }
+      ],
+      "dayanak_sayfa": 1
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Kartonu ikiye katlayınca ne oldu?",
+      "beceri": "cikarim",
+      "aciklama": "İki kat karton daha zor eğildi; bu da onu daha sağlam yaptı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Daha zor eğildiği için daha dayanıklı oldu"
+        },
+        {
+          "id": "B",
+          "metin": "Rengi değişti"
+        },
+        {
+          "id": "C",
+          "metin": "Daha hafif oldu"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Öğretmen sorun çıkınca neye sevindi?",
+      "beceri": "yorumlama",
+      "aciklama": "Öğretmen, suçlu aramak yerine nedenini araştırmalarına sevindi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Nedenini birlikte araştırmalarına"
+        },
+        {
+          "id": "B",
+          "metin": "Kimin suçlu olduğunu bulmalarına"
+        },
+        {
+          "id": "C",
+          "metin": "Köprünün hemen yıkılmasına"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen sağlam sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "İki kat karton, daha kolay bozulmayan bir yapı oluşturdu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kolay bozulmayan, dayanıklı"
+        },
+        {
+          "id": "B",
+          "metin": "Çok hafif"
+        },
+        {
+          "id": "C",
+          "metin": "Renkli"
+        }
+      ],
+      "dayanak_sayfa": 4
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Oyun köprüsü tam yarış başlayacakken çöktü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kartondan yapılan köprünün üstüne büyük kamyon oyuncağını koymuştu. \"Sen bozdun!\" diye bağırdı Mert. Gözleri dolan "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sessiz kaldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğretmenleri yanlarına geldi. \"Önce sorunu anlayalım,\" dedi. Köprünün ayakları ince kâğıttandı, oyuncak ise ağırdı. Mert yanlışlıkla suçladığını fark etti. \"Ben de köprüyü sağlam yapmadım,\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kırılan parçalara bakarken çok üzgündü; dün akşam onu yapmak için uğraşmıştı. Mert ise uzun süre bir köprü"
+        },
+        {
+          "t": "ikon",
+          "v": "bridge"
+        },
+        {
+          "t": "metin",
+          "v": " hayali kurduğunu anlattı. Öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": " \"Şimdi birbirinizi dinleyin,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ağır kamyonu dikkatsizce koyduğunu kabul etti. Mert de köprüyü denemeden bitmiş saydığını söyledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Masada farklı kalınlıkta kartonlar vardı. Bir şerit düz tutulunca eğildi; ikiye katlanınca daha zor eğildi. \"Demek aynı karton biçim değişince daha "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_saglam"
+        },
+        {
+          "t": "metin",
+          "v": " olabilir,\" dedi Mert. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " küçük bir köprü"
+        },
+        {
+          "t": "ikon",
+          "v": "bridge"
+        },
+        {
+          "t": "metin",
+          "v": " resmi çizerek fikirlerini göstermelerine yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yeni köprüyü kurmadan önce küçük bir ayak parçasını denediler. Tek başına devrilen parça iki yan destek eklenince durdu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " her denemeyi bir çizelgeye işaretledi. Birbirlerini suçlamadıklarında daha çabuk çözüm"
+        },
+        {
+          "t": "ikon",
+          "v": "puzzle"
+        },
+        {
+          "t": "metin",
+          "v": " bulduklarını fark ettiler. Kalın kartondan dört ayak yaptılar ve üstüne iki kat yol koydular."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Köprü"
+        },
+        {
+          "t": "ikon",
+          "v": "bridge"
+        },
+        {
+          "t": "metin",
+          "v": ", en büyük kamyon konunca hafifçe eğildi ama yıkılmadı. \"Bu kez oldu!\" diye sevindiler. Öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": ", sorun çıktığında suçlu aramak yerine nedenini araştırmalarına sevindi. Bu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_onarim"
+        },
+        {
+          "t": "metin",
+          "v": " işini birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " yaptılar. Mert gülerek \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "ata_birlik"
+        },
+        {
+          "t": "metin",
+          "v": "\" dedi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " gülümsedi. Yarış başladığında oyuncak kamyon köprünün üstünden yavaşça geçti. Köprü"
+        },
+        {
+          "t": "ikon",
+          "v": "bridge"
+        },
+        {
+          "t": "metin",
+          "v": " sallanmadı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        },
+        {
+          "t": "metin",
+          "v": " Mert küçük bir bayrak kaldırdı. İkisi birbirine bakıp güldü. Bu kez yalnızca köprüyü değil, birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " çözüm"
+        },
+        {
+          "t": "ikon",
+          "v": "puzzle"
+        },
+        {
+          "t": "metin",
+          "v": " bulmayı da başarmışlardı."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

@@ -3,20 +3,21 @@
   "hikaye": {
     "slug": "hr026-kelime-makinesinin-karisikligi",
     "baslik": "Kelime Makinesinin Karışıklığı",
-    "tur": "bilim_kurgu",
-    "konu": "cok_anlamlilik",
+    "tur": "mizah",
+    "konu": "kelime_makinesi",
     "sinif_alt": 3,
     "sinif_ust": 3,
     "okuma_bandi": 2,
     "dunya_tipi": "gercekci",
     "izinli_turler": [
       "ben",
+      "kardes",
       "arkadas",
       "hayali"
     ],
     "deger_anahtarlari": [
-      "D14",
-      "D6"
+      "D3",
+      "D2"
     ],
     "yetiskin_uygun": false,
     "etiketler": {
@@ -25,49 +26,44 @@
       "kavram_zorlugu": 3,
       "ilgi_egilimi": "ortak",
       "temalar": [
-        "okul",
-        "mizah"
+        "mizah",
+        "bilim_teknoloji",
+        "okuma_kitap",
+        "aile"
       ],
       "ders_baglantisi": [
         "turkce"
       ],
       "maarif": {
-        "ana_deger": "D14",
-        "yardimci_deger": "D6"
+        "ana_deger": "D3",
+        "yardimci_deger": "D2"
       },
       "ogrenme_hedefleri": [
         {
-          "id": "gul_hr026",
+          "id": "sozcuk_gul_hr026",
           "tur": "lexeme",
           "etiket": "gül",
-          "yuva": "hr026_gul",
+          "yuva": "pb_gul",
           "islev": "first_hint"
         },
         {
-          "id": "yuz_hr026",
+          "id": "sozcuk_yuz_hr026",
           "tur": "lexeme",
           "etiket": "yüz",
-          "yuva": "hr026_yuz",
+          "yuva": "pb_yuz",
           "islev": "application"
         },
         {
-          "id": "kar_hr026",
+          "id": "sozcuk_yaz_hr026",
           "tur": "lexeme",
-          "etiket": "kâr",
-          "yuva": "hr026_kar",
-          "islev": "application"
-        },
-        {
-          "id": "deyim_hr026",
-          "tur": "idiom",
-          "etiket": "İki büklüm olmak",
-          "yuva": "hr026_iki_buklum",
+          "etiket": "yaz",
+          "yuva": "pb_yaz",
           "islev": "application"
         },
         {
           "id": "kavram_hr026",
           "tur": "concept",
-          "etiket": "Bağlama göre anlam",
+          "etiket": "Bağlam ve çok anlamlılık (sesteş sözcükler)",
           "islev": "application"
         }
       ],
@@ -79,26 +75,25 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 394,
-        "tahmini_sure_dk": 6,
-        "sayfa_sayisi": 4,
-        "soru_sayisi": 4,
+        "kelime_sayisi": 353,
+        "tahmini_sure_dk": 5,
+        "sayfa_sayisi": 7,
+        "soru_sayisi": 5,
         "soru_beceri_dagilimi": {
           "hatirlama": 1,
           "cikarim": 1,
           "yorumlama": 1,
-          "sozcuk_baglami": 1
+          "sozcuk_baglami": 2
         },
         "hedef_tur_dagilimi": {
           "lexeme": 3,
-          "idiom": 1,
           "concept": 1
         },
-        "yoldas_yer_sayisi": 5,
-        "simge_sayisi": 1
+        "yoldas_yer_sayisi": 6,
+        "simge_sayisi": 12
       }
     },
-    "tanitim": "Makine neden gülü yanlış anlıyor? Aynı yazılan kelimeler farklı anlam taşıyınca ne olur?",
+    "tanitim": "Dedenin kelime makinesi ‘gül’ ve ‘yüz’ karşısında şaşırıyor. Makine mi yanlış anlıyor, biz mi?",
     "durum": "taslak",
     "fis_kodu": "HR-026"
   },
@@ -120,57 +115,24 @@
         },
         {
           "t": "metin",
-          "v": " ilk düğmeye bastığında ekranda şu cümle belirdi: Bahçedeki "
+          "v": " ilk düğmeye bastığında ekranda şu cümle belirdi: "
         },
         {
-          "t": "kelime",
-          "yuva": "hr026_gul"
+          "t": "vurgu",
+          "v": "Bahçedeki {kelime:pb_gul} bana güldü."
         },
         {
           "t": "metin",
-          "v": " bana güldü.\n\n“Çiçek mi kahkaha attı?” diye sordu kardeşi "
+          "v": " “Çiçek mi kahkaha attı?” diye sordu kardeşi "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": ".\n\nMakine cümleyi yorumlamak yerine masaya kırmızı bir gül resmi çizdi ve yanına kahkaha işareti koydu. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ", “İkisi de gül diye yazılıyor ama aynı anlama gelmiyor,” dedi.\n\nDede gülümsedi. “Demek ki bir kelimenin nerede kullanıldığını anlamak gerekiyor.”\n\n"
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " yeni cümleyi söyledi: “Dedem "
-        },
-        {
-          "t": "kelime",
-          "yuva": "hr026_yuz"
-        },
-        {
-          "t": "metin",
-          "v": " sayfasını okudu.” Makine masaya yüz tane yüz resmi çizdi."
-        },
-        {
-          "t": "deyim",
-          "yuva": "hr026_iki_buklum"
-        },
-        {
-          "t": "metin",
-          "v": " “Ben sayıyı söyledim!”"
+          "v": "."
         }
       ]
     },
@@ -178,33 +140,121 @@
       "omurga": true,
       "parcalar": [
         {
+          "t": "metin",
+          "v": "Makine cümleyi yorumlamak yerine masaya kırmızı bir gül resmi çizdi ve yanına kahkaha işareti koydu. "
+        },
+        {
           "t": "kahraman",
           "hal": "yalin"
         },
         {
           "t": "metin",
-          "v": " defterine örnekleri yazdı. Bir tarafta yüz sayısı, diğer tarafta yüz sözcüğünün insanın suratı anlamı vardı. Sonra kardeşinden yeni bir örnek istedi. "
+          "v": ", “İkisi de "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_gul"
+        },
+        {
+          "t": "metin",
+          "v": " diye yazılıyor ama aynı anlama gelmiyor,” dedi. Dede gülümsedi. “Demek ki bir kelimenin nerede kullanıldığını anlamak"
+        },
+        {
+          "t": "ikon",
+          "v": "lightning-idea"
+        },
+        {
+          "t": "metin",
+          "v": " gerekiyor.” "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " yeni cümleyi söyledi: “Dedem "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_yuz"
+        },
+        {
+          "t": "metin",
+          "v": " sayfasını okudu.” Makine masaya yüz tane yüz resmi çizdi. "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": " hemen, “Yaz geldi, sen de yaz!” dedi. Makine ekrana güneş resmi ve bir kalem çizdi. Bu kez doğruya yaklaşmıştı. "
+          "v": " gülmekten iki büklüm oldu. “Ben sayıyı söyledim!” "
         },
         {
-          "t": "isaret",
-          "kod": "kitap"
+          "t": "kahraman",
+          "hal": "yalin"
         },
         {
           "t": "metin",
-          "v": "\n\nDede, masaya iki kart daha koydu. Birinde “Kışın "
+          "v": " defterine örnekleri yazdı. Bir tarafta yüz sayısı, diğer tarafta yüz sözcüğünün insanın suratı anlamı vardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sonra kardeşinden yeni bir örnek istedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " hemen, “Yaz geldi, sen de "
         },
         {
           "t": "kelime",
-          "yuva": "hr026_kar"
+          "yuva": "pb_yaz"
+        },
+        {
+          "t": "metin",
+          "v": "!” dedi. Makine ekrana güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " resmi ve bir kalem"
+        },
+        {
+          "t": "ikon",
+          "v": "pencil"
+        },
+        {
+          "t": "metin",
+          "v": " çizdi. Bu kez doğruya yaklaşmıştı. Dede masaya iki kart daha koydu. Birinde “Kışın kar"
+        },
+        {
+          "t": "ikon",
+          "v": "snow"
         },
         {
           "t": "metin",
@@ -216,16 +266,7 @@
         },
         {
           "t": "metin",
-          "v": " harfleri dikkatle inceledi. “Bunlar aynı yazılmıyor; sesleri de tam aynı değil,” dedi. Dede onayladı: “Her benzer kelimeyi aynı gruba koyamayız.” "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " de yeni bir kart istedi. “O zaman yalnız gerçekten aynı yazılan ve farklı anlamlara gelen örneklerle başlayalım.”"
+          "v": " harfleri dikkatle inceledi. “Bunlar aynı yazılmıyor; sesleri de tam aynı değil,” dedi."
         }
       ]
     },
@@ -234,7 +275,32 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Makine bu uyarıyı duyunca ekrana büyük bir soru işareti çıkardı. "
+          "v": "Dede onayladı: “Her benzer kelimeyi aynı gruba koyamayız.” "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de yeni bir kart istedi. “O zaman"
+        },
+        {
+          "t": "ikon",
+          "v": "clock"
+        },
+        {
+          "t": "metin",
+          "v": " yalnız gerçekten aynı yazılan ve farklı anlamlara gelen örneklerle başlayalım.” Makine bu uyarıyı duyunca ekrana büyük bir soru"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " işareti çıkardı. "
         },
         {
           "t": "kahraman",
@@ -242,15 +308,28 @@
         },
         {
           "t": "metin",
-          "v": ", “"
+          "v": ", “Sorular bazen cevaptan daha işe yarar,” diye düşündü. Makinenin hatasını bulmak"
         },
         {
-          "t": "vurgu",
-          "v": "Sorular bazen cevaptan daha işe yarar"
+          "t": "ikon",
+          "v": "idea"
         },
         {
           "t": "metin",
-          "v": ",” diye düşündü. Makinenin hatasını bulmak, düğmelerine rastgele basmaktan daha çok zaman almış ama daha eğlenceli olmuştu.\n\n"
+          "v": ", düğmelerine rastgele basmaktan daha çok zaman almış ama daha eğlenceli olmuştu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bütün cümlelerin küçük bir ipucu taşıdığını fark etti. “Yaz geldi” derken mevsimden söz ediyorlardı. “Sen de yaz” derken ise kalemle bir şeyler yazmayı istiyorlardı. Kelimenin yanındaki başka sözcükler anlamı bulmalarını sağlıyordu. Dede, “Peki makinenin hatasını nasıl azaltacağız?” diye sordu. "
         },
         {
           "t": "kahraman",
@@ -258,23 +337,11 @@
         },
         {
           "t": "metin",
-          "v": " bütün cümlelerin küçük bir ipucu taşıdığını fark etti.\n\n"
+          "v": " bir kural kartı hazırladı: Önce tüm cümleyi oku; sonra kelimenin anlamını seç. Kartı makinenin yanına koydular. "
         },
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bütün cümlelerin küçük bir ipucu taşıdığını fark etti. “Yaz geldi” derken mevsimden söz ediyorlardı. “Sen de yaz” derken ise kalemle bir şeyler yazmayı istiyorlardı. Kelimenin yanındaki başka sözcükler anlamı bulmalarını sağlıyordu.\n\nDede, “Peki makinenin hatasını nasıl azaltacağız?” diye sordu. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bir kural kartı hazırladı: Önce tüm cümleyi oku; sonra kelimenin anlamını seç. Kartı makinenin yanına koydular."
+          "t": "isaret",
+          "kod": "kitap"
         }
       ]
     },
@@ -288,11 +355,31 @@
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": ", “Çay kıyısında çay içtik,” dedi. Makine bu kez su akan bir dere ile iki fincan çizdi. İki kardeş sevinçle alkışladı.\n\nAncak makine beklenmedik bir soru sordu: “Peki kelimelerin iki anlamı varsa, insanların da bazen birden fazla duygusu olur mu?”\n\n"
+          "v": ", “Çay kıyısında çay içtik,” dedi. Makine bu kez su"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " akan bir dere ile iki fincan çizdi. İki kardeş sevinçle alkışladı. Ancak makine beklenmedik bir soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " sordu: “Peki kelimelerin iki anlamı varsa, insanların da bazen birden fazla duygusu olur mu?” "
         },
         {
           "t": "kahraman",
@@ -300,256 +387,183 @@
         },
         {
           "t": "metin",
-          "v": " biraz düşündü. “Olur,” dedi. “Hem heyecanlı hem çekingen olabilirim.” Dede ona bakıp gülümsedi. Bir kelime oyunu, o gün yeni bir konuşmanın kapısını açmıştı.\n\nDil hedefi: sesteş/homograf kullanımlar: gül, yüz, yaz, çay; Kavram/değer: bağlam, çok anlamlılık, esnek düşünme. İkon önerileri: robot, sözlük, konuşma balonu. Okuma sonrası: “Yaz geldi, sen de yaz” cümlesindeki iki yazın anlamı nedir?"
+          "v": " biraz düşündü. “Olur,” dedi. “Hem heyecanlı hem çekingen olabilirim.” Dede ona bakıp gülümsedi. Bir kelime oyunu, o gün yeni bir konuşmanın kapısını açmıştı."
         }
       ]
     }
   ],
   "deger_sahneleri": {},
   "hareket_sahneleri": {},
-  "deyim_cumleleri": {
-    "hr026_iki_buklum": [
-      {
-        "t": "yoldas",
-        "hal": "yalin",
-        "yedek": "bir arkadaş"
-      },
-      {
-        "t": "metin",
-        "v": " gülmekten iki büklüm oldu."
-      }
-    ]
-  },
+  "deyim_cumleleri": {},
   "sorular": [
     {
       "id": "s1",
       "beceri": "hatirlama",
-      "dayanak_sayfa": 1,
-      "metin": "Mert'in cümlesindeki yüz sözcüğü neyi anlatıyor?",
+      "dayanak_sayfa": 2,
+      "metin": "Makine ‘Bahçedeki gül bana güldü’ cümlesi için masaya ne çizdi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Sayıyı, yüz tane sayfayı"
+          "metin": "Kırmızı bir gül resmi ve kahkaha işareti"
         },
         {
           "id": "B",
-          "metin": "İnsanın suratını"
+          "metin": "Bir bahçe ve bir kapı"
         },
         {
           "id": "C",
-          "metin": "Bir yüzeyi"
+          "metin": "Güneş ve bir kalem"
         }
       ],
       "dogru": "A",
-      "aciklama": "Mert'in cümlesinde yüz sayı anlamında kullanılıyor."
+      "aciklama": "Makine masaya kırmızı bir gül resmi çizdi ve yanına kahkaha işareti koydu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 3,
-      "metin": "Ada cümlelerdeki anlamı nasıl buldu?",
+      "metin": "Makine ‘Dedem yüz sayfasını okudu’ cümlesinde neden yüz tane yüz resmi çizdi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kelimenin yanındaki sözcüklerden yararlanarak"
+          "metin": "Çünkü cümleyi hiç duymadı"
         },
         {
           "id": "B",
-          "metin": "Makineyi kapatarak"
+          "metin": "Çünkü kitapta yüz tane yüz vardı"
         },
         {
           "id": "C",
-          "metin": "Kartları karıştırarak"
+          "metin": "Çünkü yüz sözcüğünün sayı mı, suratın adı mı olduğunu ayıramadı"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Yanındaki sözcükler anlamı seçmeye yardımcı oluyordu."
+      "dogru": "C",
+      "aciklama": "Makine yüz sözcüğünün iki anlamını karıştırdı; çocuk ise sayıyı söylemişti."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
-      "dayanak_sayfa": 3,
-      "metin": "Ada'nın “Sorular bazen cevaptan daha işe yarar” düşüncesi neyi gösterir?",
+      "dayanak_sayfa": 6,
+      "metin": "Kural kartında ‘Önce tüm cümleyi oku’ yazması neden önemlidir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Soru sormanın öğrenmeyi desteklediğini"
+          "metin": "Çünkü cümle ne kadar kısaysa o kadar iyidir"
         },
         {
           "id": "B",
-          "metin": "Soru işareti çizilmemesi gerektiğini"
+          "metin": "Çünkü sözcüğün anlamını yanındaki sözcükler belli eder"
         },
         {
           "id": "C",
-          "metin": "Dedenin hiç cevap vermediğini"
+          "metin": "Çünkü makine yalnızca ilk sözcüğü okur"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Makinenin hatasını bulmak için sorular sormak, çocukları düşündürdü."
+      "dogru": "B",
+      "aciklama": "Çocuk, kelimenin yanındaki sözcüklerin anlamı bulmayı sağladığını fark etmişti."
     },
     {
       "id": "s4",
       "beceri": "sozcuk_baglami",
-      "dayanak_sayfa": 2,
-      "metin": "“Bize kâr kaldı” cümlesinde kâr sözcüğü ne anlama gelir?",
+      "dayanak_sayfa": 4,
+      "metin": "‘Yaz geldi, sen de yaz!’ cümlesindeki ikinci yaz sözcüğü ne demektir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kazanç, para artışı"
+          "metin": "Kalemle bir şeyler yazmak"
         },
         {
           "id": "B",
-          "metin": "Kar yağışı"
+          "metin": "Yılın sıcak mevsimi"
         },
         {
           "id": "C",
-          "metin": "Kırmızı renk"
+          "metin": "Denizde yüzmek"
         }
       ],
       "dogru": "A",
-      "aciklama": "Kâr, bir işten elde edilen kazançtır."
+      "aciklama": "‘Sen de yaz’ derken kalemle yazı yazmak kastediliyordu; ilk yaz ise mevsimdi."
+    },
+    {
+      "id": "s5",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 2,
+      "metin": "Makine ‘gül’ sözcüğünde hangi iki anlamı karıştırdı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir çiçek ile bir yiyecek"
+        },
+        {
+          "id": "B",
+          "metin": "Bir renk ile bir mevsim"
+        },
+        {
+          "id": "C",
+          "metin": "Bir çiçek ile gülme eylemi"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Cümlede hem gül çiçeği hem gülmek eylemi vardı; makine ikisini birleştirdi."
     }
   ],
   "uretim": {
-    "kaynak": "llm_taslak",
+    "kaynak": "elle",
     "tarih": "2026-10-22"
   },
   "sozluk": {
     "sozluk_surumu": 1,
     "girdiler": [
       {
-        "id": "hr026_gul",
+        "id": "pb_gul",
         "tur": "kelime",
         "yazim": "gül",
-        "anlam": "Kokulu, renkli çiçek açan bir bitki.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "anlam": "Güzel kokulu, dikenli bir çiçek; aynı yazılan gül sözcüğü gülmek eyleminin emir biçimi de olabilir.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr026_gulmek",
-        "tur": "kelime",
-        "yazim": "güldü",
-        "anlam": "Sevinçle ya da eğlenerek sesle gülmek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr026_yuz_sayi",
+        "id": "pb_yuz",
         "tur": "kelime",
         "yazim": "yüz",
-        "anlam": "Doksan dokuzdan sonra gelen sayı, yüz adet.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "anlam": "Doksan dokuzdan sonra gelen sayı; aynı zamanda insanın gözlerinin, burnunun ve ağzının bulunduğu yer.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr026_yuz_surat",
+        "id": "pb_yaz",
         "tur": "kelime",
-        "yazim": "yüz",
-        "anlam": "İnsanın gözlerinin, burnunun olduğu ön kısım.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr026_sayfa",
-        "tur": "kelime",
-        "yazim": "sayfa",
-        "anlam": "Kitap ya da defterdeki her bir yaprağın bir yüzü.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr026_kar",
-        "tur": "kelime",
-        "yazim": "kar",
-        "anlam": "Gökten yağan beyaz, soğuk kristaller.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr026_kar_kazanc",
-        "tur": "kelime",
-        "yazim": "kâr",
-        "anlam": "Bir işten elde edilen kazanç.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr026_zarar",
-        "tur": "kelime",
-        "yazim": "zarar",
-        "anlam": "Bir işten elde edilen kayıp.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr026_iki_buklum",
-        "tur": "deyim",
-        "yazim": "iki büklüm oldu",
-        "anlam": "Bedeni iki kat bükülmek; çok eğilmek (gülmekten, yorgunluktan).",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr026_agzi_acik_kalmak",
-        "tur": "deyim",
-        "yazim": "ağzı açık kalmak",
-        "anlam": "Şaşırıp ne diyeceğini bilememek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "yaz",
+        "anlam": "Yılın en sıcak mevsimi; aynı yazılan yaz sözcüğü kalemle yazı yazmak anlamına da gelir.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       }
     ],
     "yuvalar": [
       {
-        "ad": "hr026_gul",
+        "ad": "pb_gul",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr026_gul"
-          },
-          {
-            "girdi": "hr026_gulmek"
+            "girdi": "pb_gul"
           }
         ]
       },
       {
-        "ad": "hr026_yuz",
+        "ad": "pb_yuz",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr026_yuz_sayi"
-          },
-          {
-            "girdi": "hr026_yuz_surat"
-          },
-          {
-            "girdi": "hr026_sayfa"
+            "girdi": "pb_yuz"
           }
         ]
       },
       {
-        "ad": "hr026_kar",
+        "ad": "pb_yaz",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr026_kar"
-          },
-          {
-            "girdi": "hr026_kar_kazanc"
-          },
-          {
-            "girdi": "hr026_zarar"
-          }
-        ]
-      },
-      {
-        "ad": "hr026_iki_buklum",
-        "tur": "deyim",
-        "adaylar": [
-          {
-            "girdi": "hr026_iki_buklum"
-          },
-          {
-            "girdi": "hr026_agzi_acik_kalmak"
+            "girdi": "pb_yaz"
           }
         ]
       }

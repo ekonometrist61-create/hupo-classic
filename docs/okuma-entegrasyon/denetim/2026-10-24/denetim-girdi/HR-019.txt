@@ -1,0 +1,77 @@
+# HR-019 · Mağaranın Üç İşareti · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=23d8eeaf-1f29-4a7e-8c5d-3f8434ac1aa4, surum_no=2, sha256=f540b08d983f86de68e0cf1a49dfe04c0246b537650ac905ac746f5a2e1a15a3
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr019-magaranin-uc-isareti | Tür: macera | Konu: magara | Dünya: gercekci
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Mağara girişindeki üç gizemli işaret hazineyi mi gösteriyor? İzleri doğru okumak sanıldığından zor.
+İzinli türler: ben, arkadas
+Değer anahtarları (sürüm): D5, D14 | maarif.ana_deger: D5
+Etiketler: ana_sinif=3, okuma_zorlugu=2, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: kesif, doga, gizem | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: iz_hr019 (lexeme, first_hint: iz); katman_hr019 (lexeme, application: katman); tahmin_hr019 (lexeme, application: tahmin); kavram_hr019 (concept, application: Varsayım ve kanıt)
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":7,"simge_sayisi":11,"kelime_sayisi":359,"tahmini_sure_dk":5,"yoldas_yer_sayisi":7,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Rehber Zeynep Hanım, gezi grubunu mağaranın önünde durdurdu. Girişte serin bir hava hissediliyor, kayalıkların üzerinde üç eski işaret[İKON flag] görünüyordu. [KAHRAMAN hal=yalin], "İçeri girsek ne güzel olur!" dedi. Rehber başını salladı: "Burası koruma altında. Bugün mağaraya girmeden çevresindeki izleri okuyacağız."
+--- Sayfa 2 ---
+İlk işaret[İKON flag], dalgaya benzeyen kıvrımlı bir çizgiydi. Çocuklar bunun bir nehir resmi olduğunu düşündü. Zeynep Hanım, çizginin yanında üst üste duran taş katmanlarını gösterdi. "Sizce bu kayalar bir günde mi oluştu?" diye sordu. "Hayır," dedi [YOLDAŞ hal=yalin yedek=Hupo]. "Belki çok uzun zamanda."
+--- Sayfa 3 ---
+İkinci işaret[İKON flag], üçgen biçimindeydi. [KAHRAMAN hal=yalin] bunun hazineyi gösterdiğini iddia etti. [YOLDAŞ hal=yalin yedek=Hupo] ise rehberin dağıttığı haritada aynı üçgenin bir tepeyi gösterdiğini fark etti. İkisi haritayı çevirdi; çevredeki tepelerin yerini işaretlediler. Üçüncü işaret en küçüğüydü: Yan yana iki daire. [KAHRAMAN hal=yalin] bunun iki göz olduğunu söyledi. Rehber büyüteci [YOLDAŞ hal=yonelme yedek=Hupo] uzattı. Dairelerin aslında kayanın içindeki doğal yuvarlak boşluklar olduğunu gördüler. "Her [KELİME yuva=pa_iz] bir insanın bıraktığı işaret değildir," dedi [YOLDAŞ hal=yalin yedek=Hupo].
+--- Sayfa 4 ---
+Grup, mağaranın önüne konan bilgi levhasını okudu. Burada geçmişte suyun kayaları aşındırdığı, bazı boşlukların böyle oluştuğu anlatılıyordu. [KAHRAMAN hal=yalin] biraz utandı. "Hazine[İKON chest] var sandım," diye mırıldandı. Zeynep Hanım gülümsedi. "[KELİME yuva=pa_tahmin] etmek kötü değil. Önemli olan yeni bilgi geldiğinde düşüncemizi değiştirebilmek."
+--- Sayfa 5 ---
+Rehber çocuklara taş katmanlarının fotoğraflarını gösterdi. En üstte açık renkli ince bir [KELİME yuva=pa_katman], altında koyu renkli daha kalın bir katman vardı. "Pastanın katları gibi," dedi [KAHRAMAN hal=yalin]. Zeynep Hanım benzetmeyi sevdi ama ekledi: "Kayaların nasıl[İKON question] oluştuğunu anlamak[İKON lightning-idea] için bilim[İKON microscope] insanları daha çok gözlem yapar. Tek fotoğrafla bütün geçmişi bilemeyiz."
+--- Sayfa 6 ---
+[YOLDAŞ hal=yalin yedek=Hupo] taşların yüzeyindeki küçük delikleri merak[İKON curiosity] etti. Rehber, bazılarını suyun ve zamanla gerçekleşen aşınmanın oluşturabileceğini anlattı; başka nedenlerin de olabileceğini söyledi. [YOLDAŞ hal=yalin yedek=Hupo], "Öyleyse her deliğe eski insan işareti dememeliyiz," dedi. [KAHRAMAN hal=yalin] ilk tahminine yeniden baktı. Hazine[İKON chest] beklerken kayaların kendi öyküsünü dinlemek ona daha ilginç gelmeye başlamıştı. [İŞARET kod=ipucu]
+--- Sayfa 7 ---
+Çocuklar üç işareti defterlerine sırayla çizdi: kıvrımlı katman, tepe[İKON mountain] simgesi ve doğal boşluk. Sonra defterleri karıştırıp birbirlerine ne anlama geldiklerini sordular. [KAHRAMAN hal=yalin], "Ben en çok üçüncüsünde yanıldım," dedi. [YOLDAŞ hal=yalin yedek=Hupo] ise "İlk işaretin de tam anlamını araştırmamız gerek," diye ekledi. Dönüş yolunda [KAHRAMAN hal=yalin] bir çakıl taşı buldu. Onu cebine koymak yerine ait olduğu yerde bıraktı. "Hatıra olarak fotoğraf ve çizimlerimiz yeter," dedi. Mağaranın karanlığı ardında kalmıştı; fakat çocukların aklında açılan sorular daha da aydınlıktı.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=3 doğru=B
+  Metin: Üçüncü işaretin gerçekte ne olduğu anlaşıldı?
+  A) Bir çift göz resmi
+  B) Kayanın içindeki doğal yuvarlak boşluklar
+  C) Hazinenin yerini gösteren daireler
+  Açıklama: Büyüteçle bakınca dairelerin kayanın içindeki doğal boşluklar olduğunu gördüler.
+s2 [cikarim] dayanak_sayfa=4 doğru=C
+  Metin: Çocuk bilgi levhasını okuyunca neden utandı?
+  A) Mağaraya girmek istediği için
+  B) Rehberi dinlemediği için
+  C) Hazine olduğunu sanmış, ama boşlukların suyla oluştuğunu öğrenmişti
+  Açıklama: Levhada boşlukların suyun kayaları aşındırmasıyla oluştuğu yazıyordu; çocuk hazine sandığı için utandı.
+s3 [yorumlama] dayanak_sayfa=4 doğru=A
+  Metin: Rehberin "Önemli olan yeni bilgi geldiğinde düşüncemizi değiştirebilmek" sözü neyi anlatır?
+  A) Yeni şeyler öğrendikçe fikrimizi gözden geçirmemiz gerektiğini
+  B) İlk tahminimizde hep ısrar etmemiz gerektiğini
+  C) Rehberlerin hiç yanılmadığını
+  Açıklama: Rehber, tahmin etmenin kötü olmadığını, önemli olanın yeni bilgiyle düşünceyi değiştirmek olduğunu söyledi.
+s4 [sozcuk_baglami] dayanak_sayfa=5 doğru=C
+  Metin: Metinde geçen katman sözcüğü ne anlama gelir?
+  A) Bir tür harita
+  B) Kayanın içindeki boşluk
+  C) Üst üste duran tabakalardan her biri
+  Açıklama: Taş katmanları üst üste duran açık ve koyu renkli tabakalardı.
+s5 [hatirlama] dayanak_sayfa=7 doğru=B
+  Metin: Çocuk dönüş yolunda bulduğu çakıl taşını ne yaptı?
+  A) Cebine koydu
+  B) Ait olduğu yerde bıraktı
+  C) Defterine yapıştırdı
+  Açıklama: Taşı almadı; hatıra olarak fotoğraf ve çizimlerin yeteceğini söyledi.
+
+## Sözlük
+- pa_iz | kelime | yazım: iz | 3–3 | anlam: Bir şeyin ya da birinin geçtiği yerde bıraktığı belirti.
+- pa_katman | kelime | yazım: katman | 3–3 | anlam: Üst üste duran tabakalardan her biri.
+- pa_tahmin | kelime | yazım: tahmin | 3–3 | anlam: Kesin bilmeden, ipuçlarına bakarak düşünülen sonuç.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)
