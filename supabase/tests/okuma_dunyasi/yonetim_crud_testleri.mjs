@@ -27,6 +27,7 @@ const migrasyonlar = [
   mig('20261064000000_okuma_yonetim_crud.sql'),
   mig('20261068000000_okuma_uc_goz_yayin_kurali.sql'),
   mig('20261079000000_okuma_toplu_islem.sql'),
+  mig('20261094000000_okuma_toplu_yayin.sql'),
 ];
 
 const db = new PGlite();
@@ -234,9 +235,68 @@ try {
     && (await say('okuma_hikayeleri', `id = '${hE}'`)) === 0, JSON.stringify(gSil2));
   k('toplu: yanıtta öğrenci kimliği yok', !JSON.stringify([kSil, gSil, kArs, gArs, gSil2]).includes(O1));
 
+  // --- Toplu yayın (20261094): yayına al / yayından çek, kuru çalıştırma, atlanan nedenleri ----
+  const yayin = (uid, idler, islem, kuru) => cagri(uid, 'public.okuma_toplu_yayin($1::uuid[], $2, $3)', [`{${idler.join(',')}}`, islem, kuru]);
+  const bulY = (r, id) => r.veri?.sonuclar?.find((x) => x.hikaye_id === id);
+  const yOgr = await yayin(O1, [yokId], 'yayina_al', true);
+  const yAnon = await yayin(null, [yokId], 'yayina_al', true);
+  const yKotu = await yayin(A1, [yokId], 'yoket', true);
+  k('toplu yayın: öğrenci 42501, anon reddedilir, geçersiz işlem BAD_ISLEM (22023)',
+    yOgr.hata?.kod === '42501' && !!yAnon.hata && hataIcerir(yKotu, 'BAD_ISLEM', '22023'), JSON.stringify([yOgr, yAnon, yKotu]));
+
+  // Yayına hazır: incelemede, Ajan A/B pass + insan onaylı (kapı açık)
+  const yHazir = await ice(A1, paket('yayin-hazir'));
+  await durum(A1, yHazir.surum_id, 'incelemede', { ajan_a: 'pass', ajan_b: 'pass', insan: 'approved' });
+  const yHazirH = (await db.query("select id from public.okuma_hikayeleri where slug = 'yayin-hazir'")).rows[0].id;
+  // Denetimi eksik: Ajan B review_needed → kapı kapalı
+  const yEksik = await ice(A1, paket('yayin-eksik'));
+  await durum(A1, yEksik.surum_id, 'incelemede', { ajan_a: 'pass', ajan_b: 'review_needed', insan: 'approved' });
+  const yEksikH = (await db.query("select id from public.okuma_hikayeleri where slug = 'yayin-eksik'")).rows[0].id;
+  // Taslakta onaylı: önce incelemeye alınıp sonra yayına geçmeli
+  const yTaslak = await ice(A1, paket('yayin-taslak'));
+  await durum(A1, yTaslak.surum_id, 'taslak', { ajan_a: 'pass', ajan_b: 'pass', insan: 'approved' });
+  const yTaslakH = (await db.query("select id from public.okuma_hikayeleri where slug = 'yayin-taslak'")).rows[0].id;
+
+  const yKuru = await yayin(A1, [yHazirH, yEksikH, yTaslakH, yokId], 'yayina_al', true);
+  k('toplu yayına al (kuru): onaylılar başarılı, denetimi eksik YAYIN_KAPISI, olmayan HIKAYE_BULUNAMADI',
+    !yKuru.hata && yKuru.veri.kuru === true && bulY(yKuru, yHazirH)?.sonuc === 'basarili' && bulY(yKuru, yTaslakH)?.sonuc === 'basarili'
+      && bulY(yKuru, yEksikH)?.neden === 'YAYIN_KAPISI' && bulY(yKuru, yokId)?.neden === 'HIKAYE_BULUNAMADI'
+      && yKuru.veri.basarili === 2 && yKuru.veri.atlanan === 2, JSON.stringify(yKuru));
+  k('toplu yayına al (kuru): hiçbir sürüm değişmedi',
+    (await say('okuma_hikaye_surumleri', `hikaye_id in ('${yHazirH}','${yTaslakH}') and durum = 'yayinda'`)) === 0
+      && (await say('okuma_hikaye_surumleri', `hikaye_id = '${yTaslakH}' and durum = 'taslak'`)) === 1);
+
+  const yGercek = await yayin(A1, [yHazirH, yEksikH, yTaslakH], 'yayina_al', false);
+  k('toplu yayına al (gerçek): onaylılar yayında (taslak önce incelemeye geçer), eksik incelemede kalır',
+    !yGercek.hata && yGercek.veri.basarili === 2 && yGercek.veri.atlanan === 1
+      && (await say('okuma_hikaye_surumleri', `hikaye_id = '${yHazirH}' and durum = 'yayinda' and yayin_at is not null`)) === 1
+      && (await say('okuma_hikaye_surumleri', `hikaye_id = '${yTaslakH}' and durum = 'yayinda'`)) === 1
+      && (await say('okuma_hikaye_surumleri', `hikaye_id = '${yEksikH}' and durum = 'incelemede'`)) === 1, JSON.stringify(yGercek));
+  const yTekrar = await yayin(A1, [yHazirH], 'yayina_al', true);
+  k('toplu yayına al: zaten yayında ve yeni onaylı sürüm yoksa ZATEN_YAYINDA', bulY(yTekrar, yHazirH)?.neden === 'ZATEN_YAYINDA', JSON.stringify(yTekrar));
+
+  const yCekKuru = await yayin(A1, [yHazirH, yEksikH], 'yayindan_cek', true);
+  k('toplu yayından çek (kuru): yayındaki hikâye başarılı, yayında sürümü olmayan YAYINDA_DEGIL',
+    !yCekKuru.hata && bulY(yCekKuru, yHazirH)?.sonuc === 'basarili' && bulY(yCekKuru, yEksikH)?.neden === 'YAYINDA_DEGIL', JSON.stringify(yCekKuru));
+  k('toplu yayından çek (kuru): yayındaki sürüm hâlâ yayında',
+    (await say('okuma_hikaye_surumleri', `hikaye_id = '${yHazirH}' and durum = 'yayinda'`)) === 1);
+  const yCek = await yayin(A1, [yHazirH, yTaslakH, yEksikH], 'yayindan_cek', false);
+  k('toplu yayından çek (gerçek): yayındaki sürümler arşive geçer (arsiv_at dolu), hikâyeler ve incelemedeki sürüm korunur',
+    !yCek.hata && yCek.veri.basarili === 2 && yCek.veri.atlanan === 1
+      && (await say('okuma_hikaye_surumleri', `hikaye_id in ('${yHazirH}','${yTaslakH}') and durum = 'arsiv' and arsiv_at is not null`)) === 2
+      && (await say('okuma_hikayeleri', `id in ('${yHazirH}','${yTaslakH}','${yEksikH}')`)) === 3
+      && (await say('okuma_hikaye_surumleri', `hikaye_id = '${yEksikH}' and durum = 'incelemede'`)) === 1, JSON.stringify(yCek));
+
+  const yayinEnvanter = (await db.query(`select p.prosecdef, has_function_privilege('anon', p.oid, 'execute') as anon,
+      has_function_privilege('authenticated', p.oid, 'execute') as auth, p.proconfig::text as cfg
+    from pg_proc p join pg_namespace n on n.oid = p.pronamespace
+   where n.nspname = 'public' and p.proname = 'okuma_toplu_yayin'`)).rows[0];
+  k('okuma_toplu_yayin: SECURITY DEFINER, search_path sabit, authenticated açık, anon kapalı',
+    !!yayinEnvanter && yayinEnvanter.prosecdef && !yayinEnvanter.anon && yayinEnvanter.auth && /search_path=/.test(yayinEnvanter.cfg), JSON.stringify(yayinEnvanter));
+
   // --- Denetim günlüğü --------------------------------------------------
   const eksik = ['okuma_surum_silindi', 'okuma_hikaye_silindi', 'okuma_yonetim_istatistik', 'okuma_toplu_islem'].filter(() => false);
-  for (const i of ['okuma_surum_silindi', 'okuma_hikaye_silindi', 'okuma_yonetim_istatistik', 'okuma_toplu_islem']) {
+  for (const i of ['okuma_surum_silindi', 'okuma_hikaye_silindi', 'okuma_yonetim_istatistik', 'okuma_toplu_islem', 'okuma_toplu_yayin']) {
     if ((await say('admin_audit_log', `islem = '${i}'`)) === 0) eksik.push(i);
   }
   k('log_admin_action kayıtları yazıldı', eksik.length === 0, eksik.join(','));
