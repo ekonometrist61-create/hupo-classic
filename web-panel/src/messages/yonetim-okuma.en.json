@@ -29,6 +29,8 @@
         "yetki": "Administrator permission is required for this action.",
         "genel": "The action could not be completed. Try again later; if it persists, check the record.",
         "YAYIN_KAPISI": "To publish, Agent A and Agent B reviews must be \"pass\" and the human decision \"approved\". Save the review and try again.",
+        "ZATEN_YAYINDA": "The story has no new fully approved version besides the one already published.",
+        "YAYINDA_DEGIL": "The story has no published version to withdraw.",
         "DORT_GOZ": "Four-eyes rule: the creator cannot publish or approve their own record. Another administrator must do it.",
         "SURUM_DEGISMEZ": "The content and review of a published version cannot be changed. Import a new version instead.",
         "GECERSIZ_GECIS": "This status change is not allowed.",
@@ -104,6 +106,19 @@
         "bos": "No stories imported yet. Upload the first package in the \"Import\" section.",
         "suzgecBos": "No version matches these filters. Loosen the filters.",
         "ac": "Review and manage",
+        "denetim": "Review",
+        "denetimKisa": {
+          "ajan_a": "Agent A",
+          "ajan_b": "Agent B",
+          "insan": "Human"
+        },
+        "denetimSuzgec": {
+          "ajanlarGecti": "Agent A and B passed",
+          "ajanBekliyor": "An agent has not passed yet",
+          "insanOnayli": "Human approved",
+          "insanBekliyor": "Awaiting human approval",
+          "yayinaHazir": "Ready to publish (A + B + human)"
+        },
         "kolonBaslik": "Story",
         "soru": "Questions",
         "oturum": "Sessions",
@@ -418,15 +433,28 @@
         "secKolon": "Selection",
         "hepsi": "Select all shown",
         "secilen": "{n} stories selected",
+        "onaylaDugme": "Approve selected",
+        "onayKaldirDugme": "Remove approval from selected",
+        "onayliSoru": "Give human approval to {n} versions? Only draft/in-review versions where Agent A and B both passed are approved; others are skipped.",
+        "onayKaldirSoru": "Remove human approval from {n} versions? The decision returns to Pending; published versions are untouched.",
+        "onayYok": "None of the selected versions qualify (must be draft/in review with Agent A and B passed).",
+        "onaySonuc": "{yapilan} versions updated, {atlanan} skipped.",
+        "onayHata": "{baslik}: {hata}",
+        "yayinaAlDugme": "Publish selected",
+        "yayindanCekDugme": "Unpublish selected",
         "arsivDugme": "Archive selected",
         "silDugme": "Delete selected",
         "kural": "Deleting applies only to draft/archived stories nobody has read; published, under-review or already-read stories are skipped with the reason shown. Read content is archived, never deleted. The action is first tried and rolled back (preview), then applied only after you confirm.",
-        "kurulumYok": "Bulk actions are not installed on the server yet (20261079 not applied).",
+        "kurulumYok": "Bulk actions are not installed on the server yet (migration not applied).",
         "baslik": {
+          "yayina_al": "Publish {n} stories?",
+          "yayindan_cek": "Unpublish {n} stories?",
           "arsiv": "Archive {n} stories?",
           "sil": "Delete {n} stories?"
         },
         "aciklama": {
+          "yayina_al": "For each story, the newest draft or in-review version where Agent A and Agent B both passed and the human decision is approved is published; a draft is first moved to review. The previous published version goes to the archive. Stories without a complete review are skipped, with the reason shown.",
+          "yayindan_cek": "The published version of the selected stories moves to the archive; children can no longer see it. Reading sessions and report cards are kept.",
           "arsiv": "All non-archived versions of the selected stories (including published ones) move to the archive and are hidden from children. Reading sessions and report cards are kept.",
           "sil": "Stories that meet the rule are deleted with all their versions. The linked production slip returns to a draft brief."
         },
@@ -435,10 +463,14 @@
         "sonucBaslik": "Bulk action result",
         "sonucOzet": "Done: {basarili} stories processed, {atlanan} skipped.",
         "geriAlinamaz": {
+          "yayina_al": "The published version may become visible to children; the published content does not change.",
+          "yayindan_cek": "An archived version is hidden from children; to publish it again it must first return to draft.",
           "arsiv": "Archived versions cannot go straight back to published (they must return to draft first).",
           "sil": "This cannot be undone."
         },
         "onayla": {
+          "yayina_al": "Publish {n} stories",
+          "yayindan_cek": "Unpublish {n} stories",
           "arsiv": "Archive {n} stories",
           "sil": "Delete {n} stories"
         },
