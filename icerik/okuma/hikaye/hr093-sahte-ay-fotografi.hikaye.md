@@ -34,10 +34,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (7. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Fotoğrafın altındaki açıklamada ne yazıyordu?", secenekler: [{id: A, metin: "Bir oyun adı"}, {id: B, metin: "Bir kitap adı"}, {id: C, metin: "Bir şarkı sözü"}, {id: D, metin: "Bir gözlemevinin adı"}], dogru: D, aciklama: "Fotoğrafın altındaki açıklamada bir gözlemevinin adı yazıyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Kahramanın bu sözünden çıkan sonuç nedir?", secenekler: [{id: A, metin: "Beğeni sayısı en doğru ölçüdür"}, {id: B, metin: "Fotoğraf kesinlikle doğrudur"}, {id: C, metin: "Beğenmek yanlıştır"}, {id: D, metin: "Beğeni sayısı, bilgiyi doğrulamaz"}], dogru: D, aciklama: "Beğeni sayısı, bir bilginin doğru olduğunu göstermez."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 15, metin: "Defne'ye göre bir bilgiye güvenmek nasıl olmalıdır?", secenekler: [{id: A, metin: "Her şeye körü körüne inanarak"}, {id: B, metin: "Hiçbir kaynağa bakmadan"}, {id: C, metin: "Hemen inanmak değil; kaynağı tanıyıp karşılaştırarak"}, {id: D, metin: "Yalnızca beğeni sayısına bakarak"}], dogru: C, aciklama: "Güvenmek, kaynağı ve tarihi kontrol edip başka bilgilerle karşılaştırmayı gerektirir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 20, metin: "Metinde geçen hayalî ne anlama gelir?", secenekler: [{id: A, metin: "Çok büyük"}, {id: B, metin: "Gerçek olmayan, hayal ürünü olan"}, {id: C, metin: "Çok eski"}, {id: D, metin: "Bilimsel olarak kanıtlanmış"}], dogru: B, aciklama: "Hayalî, gerçek olmayan, hayal gücüyle yaratılmış anlamına gelir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Fotoğrafın altındaki açıklamada ne yazıyordu?", secenekler: [{id: A, metin: "Bir bilgisayar oyununun adı"}, {id: B, metin: "Bir kitabın yayın adı"}, {id: C, metin: "Bir şarkının sözleri"}, {id: D, metin: "Bir gözlemevinin adı"}], dogru: D, aciklama: "Fotoğrafın altındaki açıklamada bir gözlemevinin adı yazıyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Kahramanın “Beğeni, fotoğrafı kaç kişinin beğendiğini gösterir” sözünden çıkan sonuç nedir?", secenekler: [{id: A, metin: "Beğeni sayısı en doğru ölçüdür"}, {id: B, metin: "Fotoğraf kesinlikle doğrudur"}, {id: C, metin: "Beğenmek ve paylaşmak yanlış bir davranıştır"}, {id: D, metin: "Beğeni sayısı, bilgiyi doğrulamaz"}], dogru: D, aciklama: "Beğeni sayısı, bir bilginin doğru olduğunu göstermez."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 15, metin: "Defne'ye göre bir bilgiye güvenmek nasıl olmalıdır?", secenekler: [{id: A, metin: "Her şeye körü körüne inanarak ve sorgulamadan kabul ederek"}, {id: B, metin: "Hiçbir kaynağa bakmadan, yalnız çevrenin sözüne güvenerek"}, {id: C, metin: "Hemen inanmak değil; kaynağı tanıyıp karşılaştırarak"}, {id: D, metin: "Yalnızca beğeni sayısına bakarak ve en çok beğeneni seçerek"}], dogru: C, aciklama: "Güvenmek, kaynağı ve tarihi kontrol edip başka bilgilerle karşılaştırmayı gerektirir."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 20, metin: "Metinde geçen hayalî ne anlama gelir?", secenekler: [{id: A, metin: "Gözle görülemeyecek kadar küçük"}, {id: B, metin: "Gerçek olmayan, hayal ürünü olan"}, {id: C, metin: "Uzun süredir bilinen ve tanınan"}, {id: D, metin: "Bilimce kanıtlanmış ve doğrulanmış"}], dogru: B, aciklama: "Hayalî, gerçek olmayan, hayal gücüyle yaratılmış anlamına gelir."}
 deyim_cumleleri:
   hr093_dalga: "“Bir kişiyi ikna etmek için onunla dalga geçmek gerekmiyor.”"
 ---
@@ -50,7 +50,7 @@ Yedinci sınıf öğrencisi {kahraman} görüntüye önce hayranlıkla baktı. S
 
 {kahraman}, insanların çok konuştuğu bir şeyin kendiliğinden doğru olmadığını biliyordu. Yine de görüntü etkileyiciydi. Mor halkanın arkasında yıldızlar öyle düzenli parlıyordu ki gerçek olmasını istiyordu. Bu isteğin araştırmasını etkilememesi için telefonu kapatıp bir bardak su içti.
 
-Ertesi gün okulun astronomi kulübünde konu açıldı. Bazı öğrenciler fotoğrafı profil resmi yapmış, bazıları ise “Bilim insanları saklıyor” yorumlarına inanmıştı. Fen öğretmenleri Dilan Hanım, sınıf tahtasına tek bir soru yazdı: Bir fotoğrafın doğru görünmesiyle doğru olması arasında ne fark var?
+Ertesi gün okulun astronomi kulübünde konu açıldı. Bazı öğrenciler fotoğrafı profil resmi yapmış, bazıları ise “Bilim insanları saklıyor” yorumlarına inanmıştı. Fen öğretmeni Dilan Hanım, sınıf tahtasına tek bir soru yazdı: Bir fotoğrafın doğru görünmesiyle doğru olması arasında ne fark var?
 ---
 @omurga
 {yoldas:yalin|bir arkadaş} hemen söz aldı. “Fotoğrafı çekmişlerse bir şey görmüşlerdir.”
@@ -183,7 +183,7 @@ Deneyin sonunda bazı öğrenciler internetteki bütün fotoğrafları yanlış 
 @omurga
 Bir hafta sonra okul gazetesi, sahte Ay fotoğrafıyla ilgili iki farklı metin hazırladı. İlkini {kahraman} yazmıştı. Metin kaynakların nasıl karşılaştırıldığını anlatıyor, buldukları sanatçı bağlantısını gösteriyordu. İkinci metin, {yoldas:ilgi|bir arkadaşın} kişisel deneyimiydi: Çok beğendiği bir görüntüyü gerçek sanması, sonra hata yaptığını öğrenmesi ve arkadaşına düzeltme göndermesi.
 
-Gazete editörü yalnız {kahraman:ilgi} yazısını yayımlamak istedi. “İçinde daha çok bilgi var,” dedi. {yoldas:yalin|bir arkadaş} bunun üzerine sesini çıkarmadı ama üzüldü. Yanlışının ortaya çıkmasıyla başkalarının gülmesi arasında sıkışmış hissediyordu. {kahraman} onun sessizliğini fark etti. “Benim yazım kanıtları anlatıyor,” dedi. “{yoldas:ilgi|bir arkadaşın} yazısı neden inandığımızı. Bence ikisi birbirini tamamlıyor.”
+Gazete editörü yalnız {kahraman:ilgi} yazısını yayımlamak istedi. “İçinde daha çok bilgi var,” dedi. {yoldas:yalin|bir arkadaş} bunun üzerine sesini çıkarmadı ama üzüldü. Yanlışının ortaya çıkmasıyla başkalarının gülmesi arasında sıkışmış hissediyordu. {kahraman} onun sessizliğini fark etti. “Benim yazım kanıtları anlatıyor,” dedi. “{yoldas:ilgi|bir arkadaşın} yazısı ise neden inandığımızı anlatıyor. Bence ikisi birbirini tamamlıyor.”
 
 Editör bir süre düşündü. Sonunda iki yazıyı yan yana yayımlamaya karar verdi. Üstlerine tek bir başlık koydu: “Bir Görseli Sevmek, Onun Doğru Olduğunu Bilmek Değildir.” {yoldas:yalin|bir arkadaş} bu başlığı sevdi. Fotoğrafı ilk gün gördüğünde hissettiği hayranlığın yanlış olmadığını anlatıyordu. Yanılan şey fotoğrafa yüklediği bilgi değeriydi.
 ---
@@ -250,7 +250,7 @@ Bilim şenliğinde {kahraman} ve arkadaşları bir etkinlik köşesi hazırladı
 @omurga
 Şenlik çıkışında Mete iki çizim gösterdi. Birinde Ay'ın çevresinde gerçekçi bir gece göğü, ötekinde ise dev mor halkaları olan hayalî bir gezegen vardı. İlk çizimin altına “Gördüğüm”, ikincisinin altına “Düşlediğim” yazmıştı.
 
-{kahraman} iki resmi yan yana tuttu. “İkisini de seviyorum,” dedi. “Hangisi hangisi belli olduğunda daha da güzel.”
+{kahraman} iki resmi yan yana tuttu. “İkisini de seviyorum,” dedi. “Hangisinin hangisi olduğu belli olduğunda daha da güzel.”
 
 {yoldas:yalin|bir arkadaş} onlara katıldı. “Dünyada yeni bir Ay bulmadık,” dedi. “Ama internetteki bir görüntünün nasıl bambaşka hikâyeye dönüştüğünü bulduk.”
 
@@ -269,7 +269,7 @@ Küçük kardeşi yanına geldi. “Sence gökyüzünde daha bilmediğimiz şeyl
 
 {kahraman} gülümsedi. “Merak ederek,” dedi. “Ama merak ettiklerimizi doğrulamayı da öğrenerek.”
 
-Şenlikten sonra {kahraman} gazetede küçük bir köşe açtı: “Bu hafta neyi nasıl doğruladık?” Köşeye yalnız yanlış fotoğraflar gelmiyordu. Bir öğrenci okulun bahçesindeki yeni kuş yuvasına ilişkin fotoğraf göndermişti. Görsel gerçekti, fakat yuvaların tam yerini yayımlamak istemediler; canlıları rahatsız edebilecek meraklı kalabalıklar oluşabilirdi. {kahraman}, bilgi paylaşırken zarar vermeme sorumluluğunun da önemli olduğunu düşündü. Başka bir öğrenci, kendisine ait olmayan çizimi izinsiz kullanıp kullanamayacağını sordu. Defne eserin sahibinden izin alınması veya uygun lisans koşullarının gözetilmesi gerektiğini anlattı. Böylece fotoğraf doğrulama köşesi, insanların emeklerine ve güvenliğine saygı göstermeyi de öğrenilen bir yere dönüştü. {kahraman} akşam gazetenin yeni sayısını kaydederken başlığın altına küçük bir not ekledi: “Merak değerli; ama merakın yolu bazen durup sormaktan geçer.” Bu cümle ona mor Ay fotoğrafını gördüğü ilk anı hatırlattı. Gökyüzünün güzelliği değişmemişti. Yalnız kendisinin ona bakışı biraz daha dikkatli, biraz daha meraklı olmuştu.
+Şenlikten sonra {kahraman} gazetede küçük bir köşe açtı: “Bu hafta neyi nasıl doğruladık?” Köşeye yalnız yanlış fotoğraflar gelmiyordu. Bir öğrenci okulun bahçesindeki yeni kuş yuvasına ilişkin fotoğraf göndermişti. Görsel gerçekti, fakat yuvaların tam yerini yayımlamak istemediler; canlıları rahatsız edebilecek meraklı kalabalıklar oluşabilirdi. {kahraman}, bilgi paylaşırken zarar vermeme sorumluluğunun da önemli olduğunu düşündü. Başka bir öğrenci, kendisine ait olmayan çizimi izinsiz kullanıp kullanamayacağını sordu. Defne eserin sahibinden izin alınması veya uygun lisans koşullarının gözetilmesi gerektiğini anlattı. Böylece fotoğraf doğrulama köşesi, insanların emeklerine ve güvenliğine saygı göstermeyi de öğrenilebilen bir yere dönüştü. {kahraman} akşam gazetenin yeni sayısını kaydederken başlığın altına küçük bir not ekledi: “Merak değerli; ama merakın yolu bazen durup sormaktan geçer.” Bu cümle ona mor Ay fotoğrafını gördüğü ilk anı hatırlattı. Gökyüzünün güzelliği değişmemişti. Yalnız kendisinin ona bakışı biraz daha dikkatli, biraz daha meraklı olmuştu.
 ---
 @omurga
 Defne son sayının kenarına küçük bir kare yerleştirdi. Karede hiçbir resim yoktu; yalnız “Buraya görmediğin şeyi hayal et” yazıyordu. {yoldas:yalin|bir arkadaş} önce karenin eksik basıldığını sandı. Sonra çocukların onu kendi hayalî gezegenleriyle doldurabileceğini anladı. {kahraman} bu fikri sevdi. Görmediğimiz her boşluğu kesin bir haberle doldurmak zorunda değildik. Bazen boşluk bir soruydu, bazen kurguya davet, bazen de yeni bir gözlem için sabır gerekiyordu. Gazetenin en çok yorum alan köşesi o boş kare oldu.

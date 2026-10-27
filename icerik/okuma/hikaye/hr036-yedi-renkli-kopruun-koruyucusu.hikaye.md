@@ -53,7 +53,7 @@ Bir sabah köprünün mor ışığı kayboldu. Ardından sarı, mavi ve yeşil �
 
 {kahraman} hemen, "Ben hiçbir şeyden korkmam!" dedi.
 
-O sırada köprünün öbür ucundan küçük kardeşi {yoldas:ilgi|bir arkadaşın} sesi geldi. "Sis başladı!" diye bağırıyordu.
+O sırada köprünün öbür ucundan {kahraman:ilgi} küçük kardeşinin sesi geldi. "Sis başladı!" diye bağırıyordu.
 ---
 @omurga
 {kahraman:ilgi} kalbi hızlandı. Aslında yükseklikten korkuyordu. Köprü güvenliydi ama aşağıdaki suyu görünce elleri terliyordu. Yıllardır bu korkusunu arkadaşlarından saklamıştı. {isaret:kalp}
@@ -71,7 +71,7 @@ O anda köprünün mor taşı parladı. Ardından diğer renkler de usulca yerin
 
 Bekçi gülümsedi. "**Cesaret bazen yardım istemektir**. Bazen de tehlikeyi fark edip doğru zamanı beklemek."
 
-{yoldas:yalin|bir arkadaş} akşam ablasına, "Beni almaya geldiğin için teşekkür ederim," dedi. {kahraman} ise onu beklediği yerde kalmayı başardığı için kutladı. "Sen de korkmuş olabilirsin," dedi. {yoldas:yalin|bir arkadaş} başını salladı. "Korktum ama rastgele koşarsam kayabilirdim. O yüzden seni bekledim." İki kardeş birbirlerine sarıldı. {kahraman} anladı ki cesaret gösteren yalnızca kendisi değildi; güvenli biçimde beklemek de bazen cesur bir karardı.
+{yoldas:yalin|bir arkadaş} akşam ablasına, "Beni almaya geldiğin için teşekkür ederim," dedi. {kahraman} ise onu beklediği yerde kalmayı başardığı için kutladı. "Sen de korkmuş olabilirsin," dedi. {yoldas:yalin|bir arkadaş} başını salladı. "Korktum ama rastgele koşarsam kayabilirdim. O yüzden seni bekledim." {kahraman} ile {yoldas:yalin|bir arkadaş} birbirlerine sarıldı. {kahraman} anladı ki cesaret gösteren yalnızca kendisi değildi; güvenli biçimde beklemek de bazen cesur bir karardı.
 ---
 @omurga
 Ertesi gün {kahraman}, okulda korkusunu arkadaşlarına anlattı. Kimse onunla alay etmedi. Hatta Elif karanlıktan, Arda ise kalabalık önünde konuşmaktan çekindiğini söyledi. Çocuklar birbirlerine destek olmak için küçük bir söz verdiler.

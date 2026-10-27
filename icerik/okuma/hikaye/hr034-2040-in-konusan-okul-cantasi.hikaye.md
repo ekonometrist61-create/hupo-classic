@@ -54,7 +54,7 @@ sorular:
 
 Sınıf gülüşmeye başladı. Öğretmen, "{kahraman}, cevabı sen nasıl buldun?" diye sordu.
 
-{kahraman} cevap veremedi. Çünkü işlemi hiç denememişti. Teneffüste arkadaşı {yoldas:yalin|bir arkadaş} ona bir kâğıt uzattı. Üzerinde iki farklı yol gösteren bir matematik problemi vardı.
+{kahraman} cevap veremedi. Çünkü işlemi hiç denememişti. Teneffüste {yoldas:yalin|bir arkadaş} ona bir kâğıt uzattı. Üzerinde iki farklı yol gösteren bir matematik problemi vardı.
 ---
 @omurga
 "Çantan çok hızlı," dedi {yoldas:yalin|bir arkadaş}, "ama onun ne yaptığını anlamıyorsan hızının sana ne yararı var?"
@@ -84,7 +84,7 @@ Ertesi gün çanta matematik problemini okumaya başladı: "Bir bahçede dört s
 O gün sınıfta teknoloji sergisi vardı. {kahraman}, çantasına yeni bir görev verdi: kaybolan defterlerin hangi rafta olduğunu hatırlatmak. Çanta herkese yardım etti, fakat kimsenin yerine ödev yapmadı.
 ---
 @omurga
-Sergide başka bir çocuk, çantanın her soruya doğru yanıt verdiğini görünce hemen aynısından istemişti. {kahraman} ona iki farklı kâğıt gösterdi. Birinde çantanın hazırladığı kusursuz cevaplar, diğerinde kendi silgileriyle düzelttiği işlemler vardı. "İlkine bakınca hiçbir şey hatırlamıyorum," dedi. "İkincisini yaparken iki kez yanıldım. Ama nerede yanıldığımı gördüğüm için artık yöntemi biliyorum." Arkadaşı, "Demek hata yapmak bazen işe yarıyor," deyince öğretmen başını salladı. Bu konuşma serginin en çok ilgi gören kısmı oldu.
+Sergide başka bir çocuk, çantanın her soruya doğru yanıt verdiğini görünce hemen aynısından istemişti. {kahraman} ona iki farklı kâğıt gösterdi. Birinde çantanın hazırladığı kusursuz cevaplar, diğerinde kendi silgileriyle düzelttiği işlemler vardı. "İlkine bakınca hiçbir şey hatırlamıyorum," dedi. "İkincisini yaparken iki kez yanıldım. Ama nerede yanıldığımı gördüğüm için artık yöntemi biliyorum." Çocuk, "Demek hata yapmak bazen işe yarıyor," deyince öğretmen başını salladı. Bu konuşma serginin en çok ilgi gören kısmı oldu.
 
 Gösteri bitince öğretmen {kahraman:yonelme}, "Bugün çantana sen mi yardım ettin, çantan mı sana?" diye sordu.
 ---

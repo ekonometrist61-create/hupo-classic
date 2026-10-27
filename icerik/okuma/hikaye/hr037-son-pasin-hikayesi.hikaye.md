@@ -49,7 +49,7 @@ Kaptan Duru, "Hep birlikte oynarsak kazanabiliriz," dedi.
 
 {kahraman} başını salladı ama içinden, Kazandıran gol benim olmalı, diye geçirdi.
 
-Maçtan bir gün önce {kahraman}, bahçede tek başına şut çalışmıştı. Her golün ardından ellerini havaya kaldırıyor, hayalinde arkadaşlarının kendisini alkışladığını görüyordu. Babası kenardan seslenmişti: "Futbol tek kişinin oynadığı bir oyun değil." {kahraman}, "Biliyorum," demiş ama nedenini tam düşünmemişti. Şimdi tribüne bakarken bu konuşma aklına geldi. Kazanmak istiyordu; bir yandan da arkadaşlarının kendisine güvenmesini. Fakat yalnızca kendi golünü düşünürse onların güvenini nasıl kazanacaktı?
+Maçtan bir gün önce {kahraman}, bahçede tek başına şut çalışmıştı. Her golün ardından ellerini havaya kaldırıyor, hayalinde arkadaşlarının kendisini alkışladığını görüyordu. Babası kenardan seslenmişti: "Futbol tek kişinin oynadığı bir oyun değil." {kahraman}, "Biliyorum," demiş ama nedenini tam düşünmemişti. Şimdi tribüne bakarken bu konuşma aklına geldi. Kazanmak istiyordu; bir yandan da arkadaşlarının kendisine güvenmesini istiyordu. Fakat yalnızca kendi golünü düşünürse onların güvenini nasıl kazanacaktı?
 ---
 @omurga
 İlk yarıda {kahraman} topu iki kez {kelime:hr037_kale}ye taşıdı. Birinde şutunu {kelime:hr037_savunma} engelledi, ötekinde kalecinin üzerine vurdu.[[deyim:hr037_gozden_kacirmak]] Devre arasında takım gerideydi.

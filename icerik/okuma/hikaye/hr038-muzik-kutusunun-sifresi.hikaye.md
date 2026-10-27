@@ -72,7 +72,7 @@ Büyükanne pencerenin yanından eski bir fotoğraf getirdi. Fotoğrafta genç Z
 @omurga
 Kutunun içinde altın ya da mücevher yoktu. Küçük bir kart, sararmış bir fotoğraf ve sarı kurdeleli bir mektup vardı. Mektupta, Zeliha'nın çocukluk arkadaşının uzak bir kente taşınmadan önce bu {kelime:hr038_melodi}yi armağan ettiği yazıyordu.
 
-"Çocukken birlikte oyun oynardık," diye anlattı Zeliha. "Bir gün bu küçük melodiyi her buluşmamızda çalmaya söz verdik. Sonra taşındılar. Aradan yıllar geçti ama bir melodiyi duyunca sanki arkadaşım yanımdaymış gibi olur." {kahraman}, müziğin yalnızca notalardan oluşmadığını düşündü. Bir şarkı, insanın belleğinde uzak bir güne açılan kapı da olabilirdi. {yoldas:yalin|bir arkadaş} ise fotoğraftaki iki çocuğun yüzlerini dikkatle inceledi; şimdi büyükannesi olan küçük kızın gülüşünü hemen tanıdı.
+"Çocukken birlikte oyun oynardık," diye anlattı Zeliha. "Bir gün bu küçük melodiyi her buluşmamızda çalmaya söz verdik. Sonra taşındılar. Aradan yıllar geçti ama bir melodiyi duyunca sanki arkadaşım yanımdaymış gibi olur." {kahraman}, müziğin yalnızca notalardan oluşmadığını düşündü. Bir şarkı, insanın belleğinde uzak bir güne açılan kapı da olabilirdi. {yoldas:yalin|bir arkadaş} ise fotoğraftaki kişilerin yüzlerini dikkatle inceledi; genç hâlindeki Zeliha'nın gülüşünü hemen tanıdı.
 ---
 @omurga
 [[deyim:hr038_gozleri_doldu]] "Bu melodiyi birlikte bestelemiştik," dedi. "Yıllardır nerede sakladığımı düşünürdüm."

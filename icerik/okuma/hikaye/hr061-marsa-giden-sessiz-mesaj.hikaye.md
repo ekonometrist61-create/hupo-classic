@@ -47,7 +47,7 @@ Mars istasyonundan gelen mesaj yalnızca üç sözcüktü: Kapıyı şimdi aç. 
 
 Altıncı sınıftan {kahraman}, ekrandaki yazıya bakınca elini kırmızı kontrol düğmesine uzattı. Arkadaşı {yoldas:yalin|bir arkadaş} onu durdurdu. “Bekle,” dedi. “Bu mesaj bize ne zaman gönderildi?”
 
-İkisi okulun uzay araştırmaları kampındaydı. Gerçek Mars'ta değillerdi; eğitim merkezindeki büyük bir {kelime:hr061_simulasyon} odasında görev yapıyorlardı. Ancak ekrandaki görevler gerçek uzay iletişiminin bazı zorluklarını modelleyecek şekilde hazırlanmıştı. Öğrenciler bir Mars robotunu yönetiyor gibi karar verecek, mesajların {kelime:hr061_gecikme} başa çıkacaktı. Simülasyonda “Kapıyı aç” komutu, laboratuvar maketindeki bir hava kilidi kapısına aitti. Yanlış zamanda açılırsa görevin puanı düşecekti.
+İkisi okulun uzay araştırmaları kampındaydı. Gerçek Mars'ta değillerdi; eğitim merkezindeki büyük bir {kelime:hr061_simulasyon} odasında görev yapıyorlardı. Ancak ekrandaki görevler gerçek uzay iletişiminin bazı zorluklarını modelleyecek şekilde hazırlanmıştı. Öğrenciler bir Mars robotunu yönetir gibi karar verecek, mesajların {kelime:hr061_gecikme} başa çıkacaktı. Simülasyonda “Kapıyı aç” komutu, laboratuvar maketindeki bir hava kilidi kapısına aitti. Yanlış zamanda açılırsa görevin puanı düşecekti.
 
 {kahraman} ekrandaki zaman damgasına baktı. Mesaj on bir dakika önce gönderilmişti. “Ama şimdi geldi,” dedi.
 
@@ -168,7 +168,7 @@ Bora, sunumdan sonra enerji tablosunu sınıf panosuna astı. İlk gün hangi de
 Akşam günlüğüne bir cümle yazdı: “Uzaklık, yalnız kilometrelerle ölçülmez; bazen iki insanın birbirini anlaması için de zaman gerekir.” Bu bir mecazdı. Gerçek Mars iletişim gecikmesini bu cümleyle açıklamak doğru olmazdı; ama yaşadıklarını anlatmak için uygun bulmuştu. {yoldas:yalin|bir arkadaş} ile ilk günkü tartışmalarını hatırladı. Birbirlerini dinlediklerinde aralarındaki yanlış anlaşılmalar azalmıştı. {kahraman} defterinin yanına küçük bir Mars resmi çizdi. Kırmızı gezegenin yanına, gönderilmeden önce kontrol edilen bir mesaj simgesi koydu.
 ---
 @omurga
-Yıllar sonra o günkü defteri açtığında belki bir uzay mühendisi olmayacaktı. Ama öğrendiği şey yaşamında kalacaktı: Bir mesajın ne zaman gönderildiğini, hangi koşulda doğru olduğunu ve kimin karar verdiğini sormak. {kahraman}, gözünü gökyüzüne çevirdi. Bulutların arasında küçücük bir açıklık vardı. Mars'ı seçemese de onun orada olduğunu biliyordu. Uzak bir gezegene gönderilen tek cümle, ona yakınındaki arkadaşlarını daha iyi dinlemeyi ve karar vermeden önce en doğru soruyu zamanında sormayı öğretmişti.
+Yıllar sonra o günkü defteri açtığında belki bir uzay mühendisi olmayacaktı. Ama öğrendiği şey yaşamında kalacaktı: Bir mesajın ne zaman gönderildiğini, hangi koşulda doğru olduğunu ve kimin karar verdiğini sormak. {kahraman}, gözünü gökyüzüne çevirdi. Bulutların arasında küçücük bir açıklık vardı. Mars'ı seçemese de onun orada olduğunu biliyordu. Uzak bir gezegenden gelen tek cümle, ona yakınındaki arkadaşlarını daha iyi dinlemeyi ve karar vermeden önce en doğru soruyu zamanında sormayı öğretmişti.
 ---
 @omurga
 - Kavramlar: Mars, ışık hızı, iletişim gecikmesi, zaman damgası, protokol, güvenli mod. - Dil: Koşullu ifadeler; mesajdaki “şimdi” sözcüğünün bağlama bağlı anlamı. - Bilimsel not: Gerçek Dünya–Mars sinyal gecikmesi sabit değildir; öyküdeki 11 dakika simülasyon değeridir.

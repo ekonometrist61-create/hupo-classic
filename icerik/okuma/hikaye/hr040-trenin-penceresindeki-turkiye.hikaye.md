@@ -66,7 +66,7 @@ Mehmet amca, "Eskiden akşam yemekleri ailece uzun sürerdi," dedi. "Herkes gün
 
 {kahraman}, "Biz de bazen telefonu bir kenara koyup konuşuyoruz," diye cevap verdi. "Demek bazı gelenekler bugün de devam ediyor."
 
-Trenin üçüncü durağı Gaziantep'ti. Burada teyzesi Ayla, onlara renkli bir pazar gezdirdi. {kelime:hr040_baharat} kokusu birbirine karışıyordu. {kahraman} tezgâhlardaki ürünlerin adlarını not etti. Bir dükkânda {kelime:hr040_bakir} işleyen ustayı izledi.
+Trenin üçüncü durağı Gaziantep'ti. Burada Ayla teyze, onlara renkli bir pazar gezdirdi. {kelime:hr040_baharat} kokusu birbirine karışıyordu. {kahraman} tezgâhlardaki ürünlerin adlarını not etti. Bir dükkânda {kelime:hr040_bakir} işleyen ustayı izledi.
 
 "Bu desenleri yapmayı kim öğretti?" diye sordu.
 

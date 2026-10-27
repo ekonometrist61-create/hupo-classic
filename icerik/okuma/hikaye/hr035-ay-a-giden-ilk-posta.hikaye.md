@@ -45,7 +45,7 @@ Ay Üssü'ne gidecek ilk özel mektubu yazma hakkını iki kardeş kazanmıştı
 Mektup Ay'da çalışan teyzeleri Selin'e gönderilecekti. Yeni posta sistemi önce kâğıdı görüntüye dönüştürüyor, ardından uzaya veri olarak iletiyordu. Teyzeleri Ay Üssü'ndeki yazıcıdan aynı mektubu alacaktı.
 ---
 @omurga
-Posta merkezinde tavandan Dünya ve Ay'ın {kelime:hr035_maket} sarkıyordu. {yoldas:yalin|bir arkadaş} aralarındaki boşluğa baktı. "Ay şu kadar yakınsa mektup çabucak gider," dedi. Görevli iki maketi daha uzağa taşıdı. "Bunlar gerçeğe göre küçültülmüş. Uzaydaki uzaklıkları maketle göstermek çok zor," diye açıkladı. {kahraman}, mesajın nasıl ilerlediğini daha iyi anlamak için kabloları, anteni ve {kelime:hr035_uydu} görevini çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı.
+Posta merkezinde tavandan Dünya ve Ay'ın birer {kelime:hr035_maket}i sarkıyordu. {yoldas:yalin|bir arkadaş} aralarındaki boşluğa baktı. "Ay şu kadar yakınsa mektup çabucak gider," dedi. Görevli iki maketi daha uzağa taşıdı. "Bunlar gerçeğe göre küçültülmüş. Uzaydaki uzaklıkları maketle göstermek çok zor," diye açıkladı. {kahraman}, mesajın nasıl ilerlediğini daha iyi anlamak için kabloları, anteni ve {kelime:hr035_uydu} rolünü gösteren okları çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı.
 
 Başlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırmızıya döndü: Bağlantı kesildi.
 ---
@@ -54,7 +54,7 @@ Başlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırm
 
 Görevli, "Hayır," dedi. "**Mesajın kopyası burada güvende**. Ancak şimdi göndermiyoruz. Önce bağlantının yeniden kurulması gerek."
 
-{kahraman} üzülmüştü. Selin teyzesinin doğum gününe yalnızca bir gün kalmıştı. {yoldas:yalin|bir arkadaş} bir çözüm önerdi: "Mektubu aynı anda başka bir kanaldan göndersek?"
+{kahraman} üzülmüştü. Selin teyzenin doğum gününe yalnızca bir gün kalmıştı. {yoldas:yalin|bir arkadaş} bir çözüm önerdi: "Mektubu aynı anda başka bir kanaldan göndersek?"
 
 Görevli gülümsedi. "İyi düşünce. Fakat bütün kanallar aynı anda çalışmayabilir. Önce hangisinin güvenilir olduğuna bakmalıyız."
 

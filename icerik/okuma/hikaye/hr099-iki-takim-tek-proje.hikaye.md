@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Okul sergisi için iki takım tek bir proje yapmak zorunda. {kahraman} ve Melis, rekabetin yerine kullanıcının ihtiyacını dinlemeyi öğrenir."
+tanitim: "Okul sergisi için iki takım tek bir proje yapmak zorunda. {kahraman} ve Atlas, rekabetin yerine kullanıcının ihtiyacını dinlemeyi öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -36,11 +36,11 @@ etiketler:
   program_surumu: "TYMM 2026-27 (7. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 11, metin: "Pano değiştikten sonra iki takımın ortak adı ne oldu?", secenekler: [{id: A, metin: "Ortak Adım — Kıvılcım ve Pusula"}, {id: B, metin: "Akıllı Durak: Pusula Takımı"}, {id: C, metin: "Akıllı Durak 2"}, {id: D, metin: "Kıvılcım Takımı"}], dogru: A, aciklama: "Pano değiştikten sonra proje adı “Ortak Adım — Kıvılcım ve Pusula” oldu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 12, metin: "Bu metne göre bir hatayı kabul etmek ile kendini bütünüyle suçlamak arasındaki fark nedir?", secenekler: [{id: A, metin: "İkisi aynı şeydir"}, {id: B, metin: "Hatayı kabul etmek sorumluluk almaktır; kendini bütünüyle suçlamak ise bu sorumluluğu aşmaktır"}, {id: C, metin: "Hatayı kabul etmek kendini suçlamaktır"}, {id: D, metin: "Hiçbir hata kabul edilmemelidir"}], dogru: B, aciklama: "Hatayı kabul etmek sorumluluk almaktır; her şeyi üzerine almak ise gereğinden fazla suçlamaktır."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 14, metin: "Nisan'ın iyi proje hakkındaki sözüne göre iyi proje neyi açıklar?", secenekler: [{id: A, metin: "Her şeyi yaptığını"}, {id: B, metin: "Yalnızca kazandığı ödülleri"}, {id: C, metin: "Takımların adlarını"}, {id: D, metin: "Neyi yaptığını ve neyi yapmadığını"}], dogru: D, aciklama: "Nisan'a göre iyi proje, neyi yaptığını ve neyi yapmadığını açıklayan projedir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 13, metin: "Metinde “kod” sözcüğü bu bağlamda ne anlama gelir?", secenekler: [{id: A, metin: "Bilgisayar programı"}, {id: B, metin: "Bir ödül belgesi"}, {id: C, metin: "Bir bilgiyi kısaca ifade eden işaret ya da ad"}, {id: D, metin: "Bir sergi salonu"}], dogru: C, aciklama: "Bu bağlamda kod, bir güzergâhı kısaca gösteren işaret ya da addır."}
-  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 14, metin: "Öğrencilerin sergide seçtiği yaklaşım neyi öne çıkarır?", secenekler: [{id: A, metin: "Projenin sınırlarını dürüstçe açıklamayı"}, {id: B, metin: "Kusursuz bir ürün sunmayı"}, {id: C, metin: "Rakip takımı eleştirmeyi"}, {id: D, metin: "Jürinin beğenisini kazanmak için iddialı konuşmayı"}], dogru: A, aciklama: "Öğrenciler, projenin neyi yapıp neyi yapamadığını açıkça göstermeyi seçmiştir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 11, metin: "Pano değiştikten sonra iki takımın ortak adı ne oldu?", secenekler: [{id: A, metin: "Ortak Adım — Kıvılcım ve Pusula"}, {id: B, metin: "Akıllı Durak: Pusula Takımı"}, {id: C, metin: "Akıllı Durak 2 — Yeni Sürüm"}, {id: D, metin: "Kıvılcım Takımı — Tek Başına Sunum"}], dogru: A, aciklama: "Pano değiştikten sonra proje adı “Ortak Adım — Kıvılcım ve Pusula” oldu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 12, metin: "Bu metne göre bir hatayı kabul etmek ile kendini bütünüyle suçlamak arasındaki fark nedir?", secenekler: [{id: A, metin: "İkisi aynı şeydir; hatayı kabul eden kişi her zaman kendini de bütünüyle suçlamış olur"}, {id: B, metin: "Hatayı kabul etmek sorumluluk almaktır; kendini bütünüyle suçlamak ise bu sorumluluğu aşmaktır"}, {id: C, metin: "Hatayı kabul etmek kendini suçlamaktır ve bu yüzden hiçbir zaman yapılmamalıdır"}, {id: D, metin: "Hiçbir hata kabul edilmemelidir; çünkü her kabul bir zayıflık göstergesidir"}], dogru: B, aciklama: "Hatayı kabul etmek sorumluluk almaktır; her şeyi üzerine almak ise gereğinden fazla suçlamaktır."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 14, metin: "Nisan'ın iyi proje hakkındaki sözüne göre iyi proje neyi açıklar?", secenekler: [{id: A, metin: "Her şeyi yaptığını ve eksiği olmadığını"}, {id: B, metin: "Yalnızca kazandığı ödül ve dereceleri"}, {id: C, metin: "Takımların adlarını ve sunum saatlerini"}, {id: D, metin: "Neyi yaptığını ve neyi yapmadığını"}], dogru: D, aciklama: "Nisan'a göre iyi proje, neyi yaptığını ve neyi yapmadığını açıklayan projedir."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 13, metin: "Metinde “kod” sözcüğü bu bağlamda ne anlama gelir?", secenekler: [{id: A, metin: "Bilgisayar için yazılmış uzun bir program metni"}, {id: B, metin: "Bir ödül için verilen resmî bir belge"}, {id: C, metin: "Bir bilgiyi kısaca ifade eden işaret ya da ad"}, {id: D, metin: "Sergi için ayrılmış büyük bir salon"}], dogru: C, aciklama: "Bu bağlamda kod, bir güzergâhı kısaca gösteren işaret ya da addır."}
+  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 14, metin: "Öğrencilerin sergide seçtiği yaklaşım neyi öne çıkarır?", secenekler: [{id: A, metin: "Projenin sınırlarını dürüstçe açıklamayı"}, {id: B, metin: "Hiçbir eksiği olmayan kusursuz bir ürün sunmayı"}, {id: C, metin: "Rakip takımın eksiklerini sergi boyunca eleştirmeyi"}, {id: D, metin: "Jürinin beğenisini kazanmak için iddialı konuşmayı"}], dogru: A, aciklama: "Öğrenciler, projenin neyi yapıp neyi yapamadığını açıkça göstermeyi seçmiştir."}
 deyim_cumleleri:
   hr099_agiz: "{yoldas:yalin|bir arkadaş} maket fikrini anlatmak için ağzını açtı, sonra vazgeçti."
 ---
@@ -142,7 +142,7 @@ Tartışma yükselirken Nisan duvarın ortasına bir çizgi çekti. Sol tarafa �
 {kahraman}, mavi kartonun üstündeki cümlelere baktı. Gerçekten bildiği şeyler azdı: Geçen yarışmada Pusula'nın sensörü bozulmuş, jüri karşısında çalışmamıştı. Sonra Atlas'ın, kendi proje masalarının yakınından geçtiğini görmüştü. Geri kalanı yorumdu.
 ---
 @omurga
-Atlas da duraksadı. {kahraman:ilgi} kendilerini kopyacılıkla suçladığını düşünüyordu. Oysa {kahraman} bunu daha önce açıkça söylememişti; davranışından anlam çıkarmıştı.
+Atlas da duraksadı. Kahramanın kendilerini kopyacılıkla suçladığını düşünmüştü. Oysa {kahraman} bunu daha önce açıkça söylememişti; davranışından anlam çıkarmıştı.
 
 “Belki bu yüzden kodlarını paylaşmak istemiyorlar,” dedi Nisan. “Ama bugün birbirimizi denetleyebileceğimiz bir yöntem kurabiliriz.”
 
@@ -398,6 +398,3 @@ Pencerenin dışında okul servisleri sırayla hareket ediyordu. Bir araç dura�
 {kahraman} defterinin son sayfasına tek bir cümle yazdı: Birlikte çalışmak, herkesin aynı fikri savunması değil; farklı fikirlerin aynı problemi anlamak için yan yana gelmesidir.
 
 Sonra defteri kapattı. Bu kez masanın hangi ucuna oturduğunun hiçbir önemi yoktu.
----
-@omurga
-- Dil: Önyargı, müzakere, varsayım, kanıt, bağlam; neden-sonuç ve ana düşünce. - Disiplinler: Teknoloji tasarımı, erişilebilirlik, etik veri kullanımı, güvenlik, kullanıcı araştırması. - Değerler: İş birliği, dürüstlük, sorumluluk, saygıyla anlaşmazlık çözme. - İkon adayları: durak, harita, rampa, düğme, kroki. - Yayın denetimi: Resmî kazanım kodu ve kaynak/telif denetimi henüz yapılmadı. Hikâyedeki prototip, gerçek yolcu bilgilendirme hizmeti değildir.

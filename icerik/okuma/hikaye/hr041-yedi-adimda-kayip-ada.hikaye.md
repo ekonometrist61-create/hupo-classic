@@ -35,12 +35,12 @@ etiketler:
   program_surumu: "TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 18, metin: "Sunum için kuş seslerinden kısa kaydı kim hazırladı?", secenekler: [{id: A, metin: "Cem"}, {id: B, metin: "Kaan"}, {id: C, metin: "Selin"}, {id: D, metin: "Asya"}], dogru: A, aciklama: "Cem, kuş seslerinden kısa bir kayıt hazırlamıştı."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 18, metin: "Sunum için kuş seslerinden kısa kaydı kim hazırladı?", secenekler: [{id: A, metin: "Cem"}, {id: B, metin: "Suna Hanım"}, {id: C, metin: "Görevli"}, {id: D, metin: "Asya"}], dogru: A, aciklama: "Cem, kuş seslerinden kısa bir kayıt hazırlamıştı."}
   - {id: s2, beceri: cikarim, dayanak_sayfa: 19, metin: "Asya neden ilk başlığa itiraz etti?", secenekler: [{id: A, metin: "Başlık çok uzun olduğu için"}, {id: B, metin: "Harita yırtıldığı için"}, {id: C, metin: "Gerçekte olmayan bir hazineyi çözdüklerini iddia etmek yanlış olacağı için"}, {id: D, metin: "Öğretmen kızacağı için"}], dogru: C, aciklama: "Kanıtlanmamış bir iddia, raporun güvenilirliğini zedeler."}
   - {id: s3, beceri: yorumlama, dayanak_sayfa: 20, metin: "Yoldaşın eski haritayla ilgili sözü neyi gösterir?", secenekler: [{id: A, metin: "Eski haritaların hiç kullanılmaması gerektiğini"}, {id: B, metin: "Eski haritanın başka bir zamanın bilgisini taşıdığını"}, {id: C, metin: "Haritanın çöpe atılması gerektiğini"}, {id: D, metin: "Kıyının hiç değişmediğini"}], dogru: B, aciklama: "Eski harita, o dönemin durumunu gösterir; bugünü yansıtmaz."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 23, metin: "Metinde geçen kumul ne demektir?", secenekler: [{id: A, metin: "Rüzgâr ve dalgalarla oluşan kum yığını"}, {id: B, metin: "Bir tür kuş"}, {id: C, metin: "Bir harita"}, {id: D, metin: "Bir kayıt cihazı"}], dogru: A, aciklama: "Kumul, rüzgârın taşıdığı kumların biriktiği tepecik ya da yığındır."}
 deyim_cumleleri:
-  hr041_agzi_acik: "Suna Hanım iki görüntünün çekildiği yılları okuduğunda {kahraman:ilgi} ağzı açık kaldı."
+  hr041_agzi_acik: "Fotoğrafların altındaki tarihleri görünce {kahraman:ilgi} ağzı açık kaldı."
 ---
 @omurga
 Altıncı sınıfların doğa kampı, Karadeniz kıyısındaki Çamlıburun Araştırma Merkezi'nde yapılıyordu. Kamp merkezine vardıklarında girişte bir fotoğraf sergisi açılmıştı. Bir fotoğrafta deniz, neredeyse kıyıdaki taşa kadar uzanıyor; başka birinde aynı taş geniş bir kumluğun ortasında kalıyordu. {kahraman} fotoğraflara dikkatle bakmadan yürüdü. {yoldas:yalin|bir arkadaş} ise her birinin altında yazan tarihi defterine geçirdi. O an ikisi de bu fotoğrafların sonraki günlerde ne kadar işe yarayacağını bilmiyordu.
@@ -191,7 +191,7 @@ Hazırlık sırasında küçük bir anlaşmazlık çıktı. {kahraman} sunumun e
 
 "Bu hem merak uyandırıyor hem de yanlış bir iddia kurmuyor," dedi.
 
-Sunum günü, sınıflar merkezin küçük salonunda toplandı. {kahraman} önce eski haritayı gösterdi, sonra aynı yerin yeni fotoğrafını açtı. İzleyiciler farkı hemen göremedi. O da bir sonraki ekranda {kelime:hr041_kumul} değişen şeklini renkli çizgilerle işaretledi. Cem kaydedilen kuş seslerini dinletti. Asya atıkların yerini ve görevlilere yapılan bildirimi anlattı. {isaret:kus}
+Sunum günü, sınıflar merkezin küçük salonunda toplandı. {kahraman} önce eski haritayı gösterdi, sonra aynı yerin yeni fotoğrafını açtı. İzleyiciler farkı hemen göremedi. O da bir sonraki ekranda {kelime:hr041_kumul}un değişen şeklini renkli çizgilerle işaretledi. Cem kaydedilen kuş seslerini dinletti. Asya atıkların yerini ve görevlilere yapılan bildirimi anlattı. {isaret:kus}
 
 Sorular başladığında bir öğrenci, "Madem ada yok, eski haritayı çöpe atmak gerekmez mi?" diye sordu.
 ---
@@ -200,7 +200,7 @@ Sorular başladığında bir öğrenci, "Madem ada yok, eski haritayı çöpe at
 
 Suna Hanım öğrencilerin bu ayrımı fark etmesinden memnun oldu. Sonra gruba bir teklif sundu: Çalışmalarını merkezin ziyaretçi panosunda sergileyebilirlerdi. Ancak önce koruma görevlilerinin bilimsel bilgileri kontrol etmesi gerekiyordu. Çocuklar kabul etti.
 
-{kahraman}, raporu tamamlamakla ünlü bir hazine bulmuş gibi hissetmedi. Daha güzel bir şey hissetti: Söylediklerinin başkaları için yararlı olabileceğini düşündü. Kendi fikirlerinin kontrol edilmesine de kızmıyordu. Çünkü doğruluğun alkıştan daha değerli olduğunu öğrenmişti.
+{kahraman}, raporu tamamlamakla bir hazine bulmuş gibi hissetmedi. Daha güzel bir şey hissetti: Söylediklerinin başkaları için yararlı olabileceğini düşündü. Kendi fikirlerinin kontrol edilmesine de kızmıyordu. Çünkü doğruluğun alkıştan daha değerli olduğunu öğrenmişti.
 ---
 @omurga
 Rapor panoya asılmadan önce koruma görevlisi küçük bir düzeltme yapmıştı. Çocuklar kuşların beslenme alanını yalnızca "yuva" olarak adlandırmışlardı. Görevli, her {kelime:hr041_gocmen} kuşun o bölgede yuva yapmayabileceğini, bazılarının yalnızca dinlenip beslenmek için geldiğini anlattı. Cem başta yaptığı hataya üzüldü. Sonra bu ayrımın neden önemli olduğunu düşündü: Yanlış bir kelime, doğru bir gözlemi bile yanlış anlaşılır hâle getirebilirdi. {yoldas:yalin|bir arkadaş} rapordaki ifadeyi değiştirdi, Cem ses kaydının yanına gözlemin tarihini yazdı. Asya da çektiği kuş fotoğrafının altına kesin tanımlayamadıkları tür adı koymadı. Hep birlikte daha az iddialı ama daha güvenilir bir sergi hazırlamışlardı. {kahraman}, "Bunu görmek için yedi adımdan fazlası gerekiyormuş," diye şaka yaptı.
@@ -208,7 +208,7 @@ Rapor panoya asılmadan önce koruma görevlisi küçük bir düzeltme yapmışt
 @omurga
 Veda toplantısında her öğrenci kampın ona öğrettiği tek şeyi söyleyecekti. Cem, "Doğanın sesini kaydetmek, onu gerçekten dinlemekle aynı şey değil," dedi. Asya, "Fotoğrafın tarihi, fotoğraf kadar önemli," diye ekledi. {yoldas:yalin|bir arkadaş}, "Haritada küçük bir çizgi büyük bir fark gösterebilir," dedi. Sıra {kahraman:yonelme} gelince hiç beklenmeyen bir cevap verdi: "Yanlış çıkmak sandığım kadar kötü değil. Çünkü yanlış olduğumu anladığımda yeni bir şey öğreniyorum." Suna Hanım bu cümleyi duyunca gülümsedi. Çocukların ezberledikleri bilgiden çok, düşünme biçimlerinin değişmesi onu sevindirmişti.
 
-Son sabah çocuklar eşyalarını toplarken Cem bir kuş tüyü gördü. Onu alıp hatıra olarak saklamak istedi. Sonra kampın ilk kuralını hatırladı: Doğadaki nesneler mümkün olduğunca yerinde kalmalıydı. Tüyün fotoğrafını çekti, olduğu yerde bıraktı.
+Son sabah çocuklar eşyalarını toplarken Cem bir kuş tüyü gördü. Onu alıp hatıra olarak saklamak istedi. Sonra koruma alanındaki kuralı hatırladı: Doğadaki nesneler mümkün olduğunca yerinde kalmalıydı. Tüyün fotoğrafını çekti, olduğu yerde bıraktı.
 ---
 @omurga
 Otobüsün penceresinden son kez kıyıya bakarken {kahraman}, kumullardan oluşmuş şekillerin ertesi yıl yine değişebileceğini düşündü. Belki başka bir sınıf kendi çizdikleri haritayı inceleyecek ve onların soramadığı bir soruyu soracaktı. Asya raporun bir kopyasını kamp merkezine bıraktıklarını hatırlattı. "Yaptığımız işin devamını başkaları getirebilir," dedi. Cem, kuşların göç sırasında aynı yere dönüp dönmediğini merak ediyordu. Suna Hanım, bazı türlerin belirli durakları tekrar kullanabildiğini ama bunun türlere ve koşullara göre değiştiğini anlattı. {yoldas:yalin|bir arkadaş}, "O zaman gelecek yılların gözlemleriyle bizim notlarımızı karşılaştırmak ilginç olur," dedi. {kahraman} bu fikri daha önce bulmayı hayal ettiği sandıktan çok sevdi. Çünkü sandık bir kez açılırdı; sorular ise yeni gözlemlerle büyürdü.

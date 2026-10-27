@@ -47,7 +47,7 @@ Akşehir'in meydanında herkes aynı anda telaşlanmaya başlayınca, Nasreddin 
 
 "Güneş mi şaşırdı, saat mi?" diye sordu Hoca yanındaki {yoldas:yonelme|bir arkadaşa}.
 
-{yoldas:yalin|bir arkadaş}, köyün marangozunun yanına sık uğrardı. Çivi kutusunu taşırken kalabalığın arasına sıkışmış, saatin kulesine bakıyordu. "Saat şaşırmış olamaz," dedi. "Geçen ay kasabadan usta getirdiler. Herkes ona bakıyor."
+{yoldas:yalin|bir arkadaş}, kasabanın marangozunun yanına sık uğrardı. Çivi kutusunu taşırken kalabalığın arasına sıkışmış, saatin kulesine bakıyordu. "Saat şaşırmış olamaz," dedi. "Geçen ay kasabadan usta getirdiler. Herkes ona bakıyor."
 
 Hoca sakalını sıvazladı. "Herkesin bakması bir şeyin doğru olduğunu gösterir mi?"
 
@@ -100,7 +100,7 @@ Rıza Usta'nın kulaklarına kadar kızardığı görüldü. "Bütün kasaba ban
 
 Usta kasabaya geldiğinde {yoldas:ilgi|bir arkadaşın} notlarını inceledi. Dişlilerin sağlam olduğunu, saatin düzenli işlediğini fakat yanlış vakte ayarlandığını açıkladı. Bir de saatin uzun süredir herkesin davranışını belirlediğini söyledi: "Bu yüzden küçük bir ayar hatası, büyük bir karışıklık oluşturmuş."
 
-Hoca, çırakların, satıcıların ve köylülerin önünde şöyle dedi: "Bir kişi bir şeyi yanlış yapabilir; hepimiz yanlışın peşinden gidince onu doğruya çevirmiş olmayız." Kalabalık sessizleşti. Sonra fırıncı kahkaha attı. "Demek benim ekmekler pişmeden öğlen oluyormuş!"
+Hoca, çırakların, satıcıların ve kasabalıların önünde şöyle dedi: "Bir kişi bir şeyi yanlış yapabilir; hepimiz yanlışın peşinden gidince onu doğruya çevirmiş olmayız." Kalabalık sessizleşti. Sonra fırıncı kahkaha attı. "Demek benim ekmekler pişmeden öğlen oluyormuş!"
 ---
 @omurga
 Saat yeniden ayarlanırken herkes meydanda toplandı. {yoldas:yalin|bir arkadaş} bu defa kuleye değil, yere diktiği çubuğun gölgesine bakıyordu. Usta işi bitirince saatin sesi duyuldu. Meydandaki insanlar birbirine bakıp gülümsedi. Fırıncı, ekmeklerin çıkmasına hâlâ vakit olduğunu söyledi. Elif'in babası ise buluşma saatlerini bundan sonra açıkça konuşacaklarına söz verdi.
