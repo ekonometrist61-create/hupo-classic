@@ -1,0 +1,283 @@
+[
+ {
+  "id": "MAT6-612-01",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.2",
+  "surec_bileseni": "d",
+  "konu": "Çarpanlar ve katlar",
+  "alt_konu": "2 ve 5 ile bölünebilme",
+  "soru_metni": "Bir kutudaki kalem sayısı hem 2 ile hem de 5 ile tam bölünebiliyor. Buna göre kalem sayısı aşağıdakilerden hangisi olabilir?",
+  "siklar": {
+   "A": "52",
+   "B": "85",
+   "C": "33",
+   "D": "40"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir sayının 2 ile bölünmesi için son basamağına, 5 ile bölünmesi için de son basamağına bak.",
+  "cozum_adimlari": [
+   "Bir sayı hem 2 hem 5 ile tam bölünüyorsa son basamağı hem çift hem de 0 ya da 5 olmalıdır.",
+   "52 çifttir ama son basamağı 2'dir; 5 ile bölünmez.",
+   "85 son basamağı 5 olduğu için 5 ile bölünür, ama çift değildir; 2 ile bölünmez.",
+   "33 ne çifttir ne de son basamağı 0 ya da 5'tir.",
+   "40 hem çifttir hem de son basamağı 0'dır; 40 = 2 × 20 = 5 × 8. Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yalnız 2 ile bölünebilen sayıyı yeterli sanmak.",
+   "B": "Yalnız 5 ile bölünebilen sayıyı yeterli sanmak.",
+   "C": "İki koşulun da sağlanmadığı bir sayıyı yanlışlıkla seçmek.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "kanit_duzeyi": "B",
+  "blueprint_surum": "BLUEPRINT_GOR070_MAT612_2026-10-27",
+  "sayisal_dogrulama": {
+   "ifade": "40 % 2 === 0 && 40 % 5 === 0",
+   "beklenen_sonuc": true
+  },
+  "denetim": { "ajan_a": "pending", "ajan_b": "pending", "hakem": "pending", "kor_cozum": "pass (gemini-3.8-flash, 6/6 eşleşme; yalnız kök ve şıklar gönderildi, 2026-10-27)" },
+  "durum": "BEKLET"
+ },
+ {
+  "id": "MAT6-612-02",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.2",
+  "surec_bileseni": "d",
+  "konu": "Çarpanlar ve katlar",
+  "alt_konu": "10 ile bölünebilme",
+  "soru_metni": "Bir öğretmen öğrencilerden 10 ile tam bölünebilen bir sayı bulmalarını istiyor. Aşağıdaki sayılardan hangisi 10 ile tam bölünür?",
+  "siklar": {
+   "A": "345",
+   "B": "352",
+   "C": "370",
+   "D": "365"
+  },
+  "dogru_sik": "C",
+  "ipucu": "10 ile bölünebilen sayılar hangi rakamla biter?",
+  "cozum_adimlari": [
+   "Bir sayı 10 ile tam bölünüyorsa son basamağı 0 olmalıdır.",
+   "345 son basamağı 5'tir; 2 ile de 10 ile de bölünmez.",
+   "352 son basamağı 2'dir; yalnız 2 ile bölünür.",
+   "365 son basamağı 5'tir; 10 ile bölünmez.",
+   "370 son basamağı 0'dır ve 370 = 10 × 37'dir. Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yalnız 5 ile bölünebilmeyi yeterli görmek.",
+   "B": "Yalnız 2 ile bölünebilmeyi yeterli görmek.",
+   "C": "Doğru.",
+   "D": "Son basamağı 5 olan sayının 10 ile bölüneceğini sanmak."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "kanit_duzeyi": "B",
+  "blueprint_surum": "BLUEPRINT_GOR070_MAT612_2026-10-27",
+  "sayisal_dogrulama": {
+   "ifade": "370 % 10",
+   "beklenen_sonuc": 0
+  },
+  "denetim": { "ajan_a": "pending", "ajan_b": "pending", "hakem": "pending", "kor_cozum": "pass (gemini-3.8-flash, 6/6 eşleşme; yalnız kök ve şıklar gönderildi, 2026-10-27)" },
+  "durum": "BEKLET"
+ },
+ {
+  "id": "MAT6-612-03",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.2",
+  "surec_bileseni": "d",
+  "konu": "Çarpanlar ve katlar",
+  "alt_konu": "3 ile bölünebilme",
+  "soru_metni": "Bir bahçıvan fidanlarını 3 eşit sıraya dizmek istiyor. Aşağıdaki fidan sayılarından hangisi bu isteği tam olarak karşılar?",
+  "siklar": {
+   "A": "418",
+   "B": "417",
+   "C": "421",
+   "D": "529"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Fidan sayısının 3 ile tam bölünebilmesi için rakamlarının toplamına bak.",
+  "cozum_adimlari": [
+   "Bir sayı 3 ile tam bölünüyorsa rakamları toplamı da 3 ile tam bölünmelidir.",
+   "418 için 4 + 1 + 8 = 13'tür; 3 ile bölünmez.",
+   "417 için 4 + 1 + 7 = 12'dir; 3 ile bölünür, çünkü 417 = 3 × 139.",
+   "421 için 4 + 2 + 1 = 7'dir; 3 ile bölünmez.",
+   "529 için 5 + 2 + 9 = 16'dır; 3 ile bölünmez. Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Son basamağı 8 olan sayının 3 ile bölünebileceğini sanmak.",
+   "B": "Doğru.",
+   "C": "Son basamağı 1 olan sayının 3 ile bölünebileceğini sanmak.",
+   "D": "Son basamağı 9 olan sayıyı 9 kuralıyla karıştırıp 3 ile bölünür sanmak."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "kanit_duzeyi": "B",
+  "blueprint_surum": "BLUEPRINT_GOR070_MAT612_2026-10-27",
+  "sayisal_dogrulama": {
+   "ifade": "417 % 3",
+   "beklenen_sonuc": 0
+  },
+  "denetim": { "ajan_a": "pending", "ajan_b": "pending", "hakem": "pending", "kor_cozum": "pass (gemini-3.8-flash, 6/6 eşleşme; yalnız kök ve şıklar gönderildi, 2026-10-27)" },
+  "durum": "BEKLET"
+ },
+ {
+  "id": "MAT6-612-04",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.2",
+  "surec_bileseni": "d",
+  "konu": "Çarpanlar ve katlar",
+  "alt_konu": "4 ile bölünebilme",
+  "soru_metni": "Bir kitapçı kitapları 4'er kitaplık paketlere koyacak. Aşağıdaki sayılardan hangisi kitapların hiç artmadan tam paketlere bölünmesini sağlar?",
+  "siklar": {
+   "A": "1316",
+   "B": "1314",
+   "C": "1322",
+   "D": "1330"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bir sayının 4 ile bölünebilmesi için son iki basamağına bak.",
+  "cozum_adimlari": [
+   "Bir sayı 4 ile tam bölünüyorsa son iki basamağından oluşan sayı 4 ile tam bölünmelidir.",
+   "1314 için son iki basamak 14'tür; 14, 4 ile bölünmez.",
+   "1322 için son iki basamak 22'dir; 22, 4 ile bölünmez. Sayı çift olsa da bu yeterli değildir.",
+   "1330 için son iki basamak 30'dur; 30, 4 ile bölünmez.",
+   "1316 için son iki basamak 16'dır ve 16 = 4 × 4'tür; 1316 = 4 × 329. Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Son basamağı 4 olan sayının 4 ile bölünebileceğini sanmak.",
+   "C": "Her çift sayının 4 ile bölüneceğini sanmak.",
+   "D": "Son basamağın 0 olmasını yeterli görmek."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "kanit_duzeyi": "B",
+  "blueprint_surum": "BLUEPRINT_GOR070_MAT612_2026-10-27",
+  "sayisal_dogrulama": {
+   "ifade": "1316 % 4",
+   "beklenen_sonuc": 0
+  },
+  "denetim": { "ajan_a": "pending", "ajan_b": "pending", "hakem": "pending", "kor_cozum": "pass (gemini-3.8-flash, 6/6 eşleşme; yalnız kök ve şıklar gönderildi, 2026-10-27)" },
+  "durum": "BEKLET"
+ },
+ {
+  "id": "MAT6-612-05",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.2",
+  "surec_bileseni": "b",
+  "konu": "Çarpanlar ve katlar",
+  "alt_konu": "2 ve 3 koşullarını birleştirme",
+  "soru_metni": "Bir sayının 6 ile tam bölünebilmesi için hem 2 ile hem de 3 ile tam bölünmesi gerekir. Buna göre aşağıdaki sayılardan hangisi 6 ile tam bölünür?",
+  "siklar": {
+   "A": "86",
+   "B": "75",
+   "C": "84",
+   "D": "93"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Sayının hem çift olup hem de rakamları toplamının 3'ün katı olup olmadığına bak.",
+  "cozum_adimlari": [
+   "Bir sayı 6 ile tam bölünüyorsa hem 2 hem de 3 ile tam bölünmelidir.",
+   "86 çifttir ama rakamları toplamı 8 + 6 = 14'tür; 3 ile bölünmez.",
+   "75 için rakamlar toplamı 12'dir ve 3 ile bölünür; ama 75 çift değildir.",
+   "93 için rakamlar toplamı 12'dir ve 3 ile bölünür; ama 93 çift değildir.",
+   "84 hem çifttir hem de rakamları toplamı 12'dir; 84 = 6 × 14. Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yalnız 2 ile bölünebilmeyi yeterli görmek.",
+   "B": "Yalnız 3 ile bölünebilmeyi yeterli görmek.",
+   "C": "Doğru.",
+   "D": "Rakamlar toplamı 3'ün katı olan sayının 6 ile de bölüneceğini sanmak; çift olma koşulunu atlamak."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "kanit_duzeyi": "B",
+  "blueprint_surum": "BLUEPRINT_GOR070_MAT612_2026-10-27",
+  "sayisal_dogrulama": {
+   "ifade": "84 % 6",
+   "beklenen_sonuc": 0
+  },
+  "denetim": { "ajan_a": "pending", "ajan_b": "pending", "hakem": "pending", "kor_cozum": "pass (gemini-3.8-flash, 6/6 eşleşme; yalnız kök ve şıklar gönderildi, 2026-10-27)" },
+  "durum": "BEKLET"
+ },
+ {
+  "id": "MAT6-612-06",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.2",
+  "surec_bileseni": "c",
+  "konu": "Çarpanlar ve katlar",
+  "alt_konu": "Genelleme sınaması",
+  "soru_metni": "Bir öğrenci \"Son basamağı 0 olan her sayı 4 ile tam bölünür\" diyor. Bu genellemenin doğru olmadığını göstermek için aşağıdakilerden hangisi uygun bir örnektir?",
+  "siklar": {
+   "A": "120",
+   "B": "130",
+   "C": "200",
+   "D": "40"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Genellemeyi çürütmek için son basamağı 0 olan ama 4 ile bölünmeyen bir sayı ara.",
+  "cozum_adimlari": [
+   "Bir genellemeyi çürütmek için, varsayımı sağlayıp sonucu sağlamayan bir örnek gerekir.",
+   "120, 200 ve 40 son basamağı 0 olan sayılardır ve hepsi 4 ile tam bölünür; bu örnekler genellemeyi destekler, çürütmez.",
+   "130 son basamağı 0 olduğu hâlde 130 = 4 × 32 + 2 olduğundan 4 ile tam bölünmez.",
+   "Bu nedenle 130 genellemeyi çürütür. Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Varsayımı ve sonucu birlikte sağlayan bir örneği çürütme sanmak.",
+   "B": "Doğru.",
+   "C": "Büyük sayılarla genellemenin doğru olduğunu sanmak.",
+   "D": "Küçük sayının genellemeyi çürüttüğünü sanmak; 40 burada 4 ile bölünür."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "degerlendirme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "kanit_duzeyi": "B",
+  "blueprint_surum": "BLUEPRINT_GOR070_MAT612_2026-10-27",
+  "sayisal_dogrulama": {
+   "ifade": "130 % 4",
+   "beklenen_sonuc": 2
+  },
+  "denetim": { "ajan_a": "pending", "ajan_b": "pending", "hakem": "pending", "kor_cozum": "pass (gemini-3.8-flash, 6/6 eşleşme; yalnız kök ve şıklar gönderildi, 2026-10-27)" },
+  "durum": "BEKLET"
+ }
+]
