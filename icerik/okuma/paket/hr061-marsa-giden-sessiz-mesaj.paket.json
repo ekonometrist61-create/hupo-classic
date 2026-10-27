@@ -140,7 +140,7 @@
         },
         {
           "t": "metin",
-          "v": " odasında görev yapıyorlardı. Ancak ekrandaki görevler gerçek uzay iletişiminin bazı zorluklarını modelleyecek şekilde hazırlanmıştı. Öğrenciler bir Mars robotunu yönetiyor gibi karar verecek, mesajların "
+          "v": " odasında görev yapıyorlardı. Ancak ekrandaki görevler gerçek uzay iletişiminin bazı zorluklarını modelleyecek şekilde hazırlanmıştı. Öğrenciler bir Mars robotunu yönetir gibi karar verecek, mesajların "
         },
         {
           "t": "kelime",
@@ -804,7 +804,7 @@
         },
         {
           "t": "metin",
-          "v": ", “Ben hızdan, sen de beklemekten çok şey umuyoruz,” dedi. "
+          "v": ", “Ben hızdan, sen de beklemekten çok şey öğrendik,” dedi. "
         },
         {
           "t": "yoldas",
@@ -1066,7 +1066,7 @@
         },
         {
           "t": "metin",
-          "v": ", gözünü gökyüzüne çevirdi. Bulutların arasında küçücük bir açıklık vardı. Mars'ı seçemese de onun orada olduğunu biliyordu. Uzak bir gezegene gönderilen tek cümle, ona yakınındaki arkadaşlarını daha iyi dinlemeyi ve karar vermeden önce en doğru soruyu zamanında sormayı öğretmişti."
+          "v": ", gözünü gökyüzüne çevirdi. Bulutların arasında küçücük bir açıklık vardı. Mars'ı seçemese de onun orada olduğunu biliyordu. Uzak bir gezegenden gelen tek cümle, ona yakınındaki arkadaşlarını daha iyi dinlemeyi ve karar vermeden önce en doğru soruyu zamanında sormayı öğretmişti."
         }
       ]
     },
@@ -1133,15 +1133,15 @@
         },
         {
           "id": "B",
-          "metin": "Düğme çalışmıyordu"
+          "metin": "Kontrol düğmesi o an bakım modunda olduğu için komutları kabul etmiyordu"
         },
         {
           "id": "C",
-          "metin": "Robot uyuyordu"
+          "metin": "Robot o sırada uyku modunda olduğu ve komut bekleyemediği için"
         },
         {
           "id": "D",
-          "metin": "Kontrol odası kapalıydı"
+          "metin": "Kontrol odasının o saatte kapalı olduğu ve ekibin dışarıda bulunduğu için"
         }
       ],
       "dogru": "A",
@@ -1155,15 +1155,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Komutlar hiç uygulanmamalı"
+          "metin": "Komutlar güvenlik kararlarından bağımsız olarak hemen uygulanmalı"
         },
         {
           "id": "B",
-          "metin": "Robot hep hızlı çalışmalı"
+          "metin": "Robotlar her durumda kontrol merkezinden onay beklemeli"
         },
         {
           "id": "C",
-          "metin": "Mesajlar hiç gelmez"
+          "metin": "Uzaktan gelen mesajlara hiçbir koşulda güvenilmemesi gerekir"
         },
         {
           "id": "D",
@@ -1181,7 +1181,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür düğme"
+          "metin": "Kontrol odasında kullanılan küçük bir düğme türü"
         },
         {
           "id": "B",
@@ -1189,11 +1189,11 @@
         },
         {
           "id": "C",
-          "metin": "Bir mesaj numarası"
+          "metin": "Her mesaja verilen ve kayda geçen benzersiz numara"
         },
         {
           "id": "D",
-          "metin": "Bir kamp adı"
+          "metin": "Eğitim merkezindeki bir simülasyon odasının adı"
         }
       ],
       "dogru": "B",

@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3546,
+        "kelime_sayisi": 3545,
         "tahmini_sure_dk": 29,
         "sayfa_sayisi": 31,
         "soru_sayisi": 4,
@@ -373,7 +373,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "İlk kitapta ormana giren kızın hikâyesi anlatılıyordu. Kız, uzaktan duyduğu sesleri dev sanıyor, dalların hareketini kendisine karşı kurulan bir plan gibi yorumluyordu. Birkaç sayfa sonra aynı olay, ormanda kaybolmuş küçük bir köpeğin bakış açısından anlatılıyordu. Köpek insanlardan korkuyordu; dev sandığı sesler ise yağmurdan korunmak için devrilen dallardı.\n\n"
+          "v": "İlk kitapta ormana giren kızın hikâyesi anlatılıyordu. Kız, uzaktan duyduğu sesleri dev sanıyor, dalların hareketini kendisine karşı kurulan bir plan gibi yorumluyordu. Birkaç sayfa sonra aynı olay, ormanda kaybolmuş küçük bir köpeğin bakış açısından anlatılıyordu. Köpek insanlardan korkuyordu; kızın dev sandığı sesler ise rüzgârda devrilen dalların gürültüsüydü.\n\n"
         },
         {
           "t": "yoldas",
@@ -657,7 +657,7 @@
         },
         {
           "t": "metin",
-          "v": " ve Bora bu kez oyunu hazırlayan ekipteydi. Her biri aynı başlangıçtan iki farklı son yazacaktı. Ancak kurgu sonlar, ilk bölümde verilmiş ipuçlarını görmezden gelemeyecekti.\n\nHikâyenin açılışında okuldan eve dönen bir çocuk, kapısının önünde ıslanmış bir zarf buluyordu. Zarfın üzerinde yalnız “Doğru yere ulaştır” yazıyordu. Bora ilk sonu yazdı: Zarfta gizli hazine haritası vardır; çocuğu uzak bir adaya götürür. "
+          "v": " ve Bora bu kez oyunu hazırlayan ekipteydi. Her biri aynı başlangıçtan iki farklı son yazacaktı. Ancak kurgu sonlar, ilk bölümde verilmiş ipuçlarını görmezden gelemeyecekti.\n\nHikâyenin açılışında okuldan eve dönen bir çocuk, kapısının önünde ıslanmış bir zarf buluyordu. Zarfın üzerinde “Doğru yere ulaştır” yazıyordu. Bora ilk sonu yazdı: Zarfta gizli hazine haritası vardır; çocuğu uzak bir adaya götürür. "
         },
         {
           "t": "yoldas",
@@ -812,7 +812,7 @@
         },
         {
           "t": "metin",
-          "v": ". “Hikâyeler hayal gücüyle ilerleyebilir. Emanet kitaplar ise dikkatli bir düzenle korunur.”\n\nÜçü o gün odadan çıkarken karton pusulayı eski yerine koydu. "
+          "v": ". “Hikâyeler hayal gücüyle ilerleyebilir. Emanet kitaplar ise dikkatli bir düzenle korunur.”\n\nÜçü o gün odadan çıkarken tahta pusulayı eski yerine koydu. "
         },
         {
           "t": "kahraman",
@@ -1109,7 +1109,7 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Bu soru hangi düşünceyi taşır?",
+      "metin": "Yoldaşın “Herkesin içinden ne geçtiğini nereden biliyor?” sorusu hangi düşünceyi taşır?",
       "secenekler": [
         {
           "id": "A",
@@ -1117,15 +1117,15 @@
         },
         {
           "id": "B",
-          "metin": "Anlatıcı her şeyi kesin bilir"
+          "metin": "Anlatıcı her şeyi kesin bilir; karakterlerin içinden geçenler de ona açıktır"
         },
         {
           "id": "C",
-          "metin": "Kitaplar hiç okunmamalıdır"
+          "metin": "Kitaplar, yalnız öğretmenin onayladığı bir listeden seçilerek okunmalıdır"
         },
         {
           "id": "D",
-          "metin": "Işıklar kapatılmalıdır"
+          "metin": "Gece kütüphanede okumak her zaman daha doğru bir yöntemdir"
         }
       ],
       "dogru": "A",
@@ -1139,7 +1139,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Karakterlerden biri kesinlikle kötüdür"
+          "metin": "Karakterlerden biri kesinlikle kötüdür ve metin bunu açıkça söyler"
         },
         {
           "id": "B",
@@ -1147,11 +1147,11 @@
         },
         {
           "id": "C",
-          "metin": "Olay hiç yaşanmamıştır"
+          "metin": "Bütün anlatıcılar olayı kesin olarak görmüş ve aynı şekilde hatırlamıştır"
         },
         {
           "id": "D",
-          "metin": "Anlatıcılar birbirine kızgındır"
+          "metin": "Anlatıcılar birbirine kızgındır ve aralarındaki çatışma hikâyeyi bozar"
         }
       ],
       "dogru": "B",
@@ -1165,11 +1165,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür raf"
+          "metin": "Kitapların konduğu, kolayca taşınabilen küçük bir masa"
         },
         {
           "id": "B",
-          "metin": "Bir çeşit lamba"
+          "metin": "Gece okuma sırasında ışık veren eski bir lamba türü"
         },
         {
           "id": "C",
@@ -1177,7 +1177,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir oyun kartı"
+          "metin": "Okuma oyununda kullanılan bir tür oyun kartı"
         }
       ],
       "dogru": "C",

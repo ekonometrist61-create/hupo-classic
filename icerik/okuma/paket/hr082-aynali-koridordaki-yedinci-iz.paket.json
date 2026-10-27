@@ -578,7 +578,7 @@
         },
         {
           "t": "metin",
-          "v": " modelde yedinci aynanın önündeki işaretin yerini aradı. İşaret oyuncunun duracağı noktayı gösteriyordu; aynanın kendi parçası değildi. Bu ayrım, işaret kaybolduğunda neden ışık düzeninin de değişmiş gibi görünebileceğini açıklıyordu. Oyuncu yanlış noktada durursa sahnedeki görüntü farklı algılanabilirdi. Halit Bey, “Bazen küçücük bir işaret bütün sahnenin zamanlamasını belirler,” dedi. "
+          "v": " modelde yedinci aynanın önündeki işaretin yerini aradı. İşaret oyuncunun duracağı noktayı gösteriyordu; aynanın kendi parçası değildi. Bu ayrım, işaret kaybolduğunda neden ışık düzeninin de değişmiş gibi görünebileceğini açıklıyordu. Oyuncu yanlış noktada durursa sahnedeki görüntü farklı algılanabilirdi. Figen Hanım, “Bazen küçücük bir işaret bütün sahnenin zamanlamasını belirler,” dedi. "
         },
         {
           "t": "kahraman",
@@ -620,7 +620,7 @@
         },
         {
           "t": "metin",
-          "v": ", “Emin misiniz?” diye sorunca Nalan Hanım düşündü. “Dün akşam işaretleri tek tek saymadım,” dedi. “Koridoru temizledim, ama yedinci işarete özellikle bakmadım.” Esra onun sözünü deftere iki ayrı biçimde yazdı: Koridorda temizlik yaptım ve İşaretin yerinde olduğunu sanıyorum. İlk cümle kişisel gözlemdi; ikincisi daha belirsizdi."
+          "v": ", “Emin misiniz?” diye sorunca Nalan Hanım düşündü. “Dün akşam işaretleri tek tek saymadım,” dedi. “Koridoru temizledim, ama yedinci işarete özellikle bakmadım.” Esra onun sözünü deftere iki ayrı biçimde yazdı: Koridorda temizlik yaptım ve işaretin yerinde olduğunu sanıyorum. İlk cümle kişisel gözlemdi; ikincisi daha belirsizdi."
         }
       ]
     },
@@ -1215,11 +1215,11 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 8,
-      "metin": "Kahramanın yoldaşa bu sözle amacı neydi?",
+      "metin": "Kahramanın “Yanlış hatırlamış olabilirsin, bu herkesin başına gelir.” sözüyle yoldaşa amacı neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yoldaşı suçlamak"
+          "metin": "Yoldaşın gördüğü şeyi kesin bir hata sayıp azarlamak"
         },
         {
           "id": "B",
@@ -1227,11 +1227,11 @@
         },
         {
           "id": "C",
-          "metin": "Gözlemi bırakmasını istemek"
+          "metin": "Yoldaşını gözlemini tekrar kontrol etmekten vazgeçirmek"
         },
         {
           "id": "D",
-          "metin": "Aynalar hakkında konuşmayı bitirmek"
+          "metin": "Aynalar hakkındaki tartışmayı hemen sonlandırıp dağılmak"
         }
       ],
       "dogru": "B",
@@ -1241,15 +1241,15 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 10,
-      "metin": "Yoldaşın bu notu neyi ayırır?",
+      "metin": "Kahramanın deney sonunda yazdığı “Gördüğüm görüntü gerçektir; nesnenin yeri hakkındaki yorumum yanlış olabilir.” notu neyi ayırır?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tiyatro ile sineması"
+          "metin": "Tiyatro oyunu ile sinema filmi arasındaki farkı"
         },
         {
           "id": "B",
-          "metin": "Gerçek ile hayali"
+          "metin": "Olayın gerçekleştiği saatle kaydedildiği saati"
         },
         {
           "id": "C",
@@ -1257,7 +1257,7 @@
         },
         {
           "id": "D",
-          "metin": "Erkek ile kız tanıkları"
+          "metin": "Sahnedeki oyuncu ile seyirci arasındaki mesafeyi"
         }
       ],
       "dogru": "C",
@@ -1271,15 +1271,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür tiyatro oyunu"
+          "metin": "Sahnede oyuncuların yaptığı kısa bir hareket dizisi"
         },
         {
           "id": "B",
-          "metin": "Bir ışık düzeni"
+          "metin": "Aynaların ışığı yansıtmak için kullanılan düzeni"
         },
         {
           "id": "C",
-          "metin": "Bir kostüm"
+          "metin": "Sahnede giyilen dönemi yansıtan kıyafet ve aksesuar"
         },
         {
           "id": "D",

@@ -11,7 +11,7 @@ dunya_tipi: masalsi
 izinli_turler: [ben, arkadas, hayali]
 deger_anahtarlari: [D6, D4]
 yetiskin_uygun: false
-tanitim: "Kasabanın çeşmesi susmuş. Yeraltında bir masal bahçesi, dört kapı ve üç damla. Bilgelik nedir?"
+tanitim: "Kasabanın çeşmesi susmuş. Yeraltında bir masal bahçesi, dört avlu ve üç damla. Bilgelik nedir?"
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -124,7 +124,7 @@ Leyla gerçek defterini kapatınca büyükannesi, “Masalını bitirdin mi?” 
 
 “Daha değil,” dedi Leyla. “{kahraman:ilgi} bir karar vermesi gerekiyor.”
 
-Hikâyenin sonunda {kahraman:yonelme} Şahmeran'ın yeraltındaki bahçesinin yolunu anlatıp anlatmaması soruldu. Bazı insanlar o bahçeyi yalnız meraktan ziyaret etmek isteyecek, bazıları bitkileri koparacak, bazıları da Şahmeran'ı rahatsız edecekti. {kahraman}, herkesten gizlenmesi gereken mutlak bir sırla karşılaşmamıştı; güvenliği ve izni gözetmesi gereken bir yer öğrenmişti. “Onun yerini izinsiz paylaşmayacağım,” dedi. “Ama yaşadığım dersi anlatabilirim.”
+Hikâyenin sonunda {kahraman}, Şahmeran'ın yeraltındaki bahçesinin yolunu anlatıp anlatmayacağını düşündü. Bazı insanlar o bahçeyi yalnız meraktan ziyaret etmek isteyecek, bazıları bitkileri koparacak, bazıları da Şahmeran'ı rahatsız edecekti. {kahraman}, herkesten gizlenmesi gereken mutlak bir sırla karşılaşmamıştı; güvenliği ve izni gözetmesi gereken bir yer öğrenmişti. “Onun yerini izinsiz paylaşmayacağım,” dedi. “Ama yaşadığım dersi anlatabilirim.”
 
 Leyla yazısını ertesi gün büyükannesine okudu. Büyükannesi Şahmeran'ın iyi niyetli bir bilgeliğin simgesi olarak kullanılmasını beğendi. Yalnız bir noktayı sordu: “Sence güven, insanların her sırrı sonsuza kadar saklaması mıdır?” Leyla düşündü. Birinin tehlikede olduğu durumlarda güvendiği bir yetişkine başvurmak doğru olurdu. Bunu metne ekledi. Masaldaki güven kavramı, düşünmeden susmak değil, kimlerin korunması gerektiğini anlamaktı.
 ---

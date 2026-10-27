@@ -78,7 +78,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 494,
+        "kelime_sayisi": 496,
         "tahmini_sure_dk": 6,
         "sayfa_sayisi": 6,
         "soru_sayisi": 4,
@@ -139,7 +139,7 @@
         },
         {
           "t": "metin",
-          "v": ", \"Biliyorum,\" demiş ama nedenini tam düşünmemişti. Şimdi tribüne bakarken bu konuşma aklına geldi. Kazanmak istiyordu; bir yandan da arkadaşlarının kendisine güvenmesini. Fakat yalnızca kendi golünü düşünürse onların güvenini nasıl kazanacaktı?"
+          "v": ", \"Biliyorum,\" demiş ama nedenini tam düşünmemişti. Şimdi tribüne bakarken bu konuşma aklına geldi. Kazanmak istiyordu; bir yandan da arkadaşlarının kendisine güvenmesini istiyordu. Fakat yalnızca kendi golünü düşünürse onların güvenini nasıl kazanacaktı?"
         }
       ]
     },
@@ -164,7 +164,7 @@
         },
         {
           "t": "metin",
-          "v": " taşıdı. Birinde şutunu "
+          "v": "ye taşıdı. Birinde şutunu "
         },
         {
           "t": "kelime",
@@ -429,15 +429,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Top çalıştı"
+          "metin": "Kupanın yanında fotoğraf çektirdi"
         },
         {
           "id": "B",
-          "metin": "Kaptanla konuştu"
+          "metin": "Rakip takımın kalecisiyle tokalaştı"
         },
         {
           "id": "C",
-          "metin": "Kupayı aldı"
+          "metin": "Hakemle maç kuralları üzerine tartıştı"
         },
         {
           "id": "D",
@@ -455,7 +455,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kalecinin çok iyi olduğu için"
+          "metin": "Rakip kalecinin çok uzun boylu ve güçlü olduğu için"
         },
         {
           "id": "B",
@@ -463,11 +463,11 @@
         },
         {
           "id": "C",
-          "metin": "Sahada yağmur yağdığı için"
+          "metin": "Sahada yağmur yağdığı ve top çok kaydığı için"
         },
         {
           "id": "D",
-          "metin": "Topu kaybettiği için"
+          "metin": "Öğretmen onu ilk yarıda oyundan çıkardığı için"
         }
       ],
       "dogru": "B",
@@ -481,15 +481,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yalnız en çok gol atan oyuncu"
+          "metin": "Yalnız en çok gol atan ve en çok alkış alan oyuncu"
         },
         {
           "id": "B",
-          "metin": "Tek başına oynamak"
+          "metin": "Her oyuncunun kendi başına, diğerlerinden bağımsız oynaması"
         },
         {
           "id": "C",
-          "metin": "Rakibi yenmek"
+          "metin": "Rakip takımın tüm oyuncularını sahadan uzaklaştırmak"
         },
         {
           "id": "D",
@@ -507,11 +507,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir çeşit şut"
+          "metin": "Kaleciye yakın mesafeden atılan sert ve hızlı bir şut"
         },
         {
           "id": "B",
-          "metin": "Kalenin rengi"
+          "metin": "Kalenin direklerini ve ağlarını boyayan özel bir renk"
         },
         {
           "id": "C",
@@ -519,7 +519,7 @@
         },
         {
           "id": "D",
-          "metin": "Hakemin düdüğü"
+          "metin": "Maçı yöneten hakemin oyunu durdurmak için çaldığı düdük"
         }
       ],
       "dogru": "C",

@@ -86,7 +86,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3412,
+        "kelime_sayisi": 3411,
         "tahmini_sure_dk": 26,
         "sayfa_sayisi": 23,
         "soru_sayisi": 5,
@@ -106,7 +106,7 @@
         "simge_sayisi": 0
       }
     },
-    "tanitim": "Hatıralara göre değişen haritalar şehrinde Mira ile Tuna, anı ile ortak kanıtı ayırmayı öğrenir ve kayıp mahalleyi bulur.",
+    "tanitim": "Hatıralara göre değişen haritalar şehrinde {kahraman} ile {yoldas:yalin|bir arkadaş}, anı ile ortak kanıtı ayırmayı öğrenir ve kayıp mahalleyi bulur.",
     "durum": "taslak",
     "fis_kodu": "HR-110"
   },
@@ -705,7 +705,7 @@
         },
         {
           "t": "metin",
-          "v": " bu yüzden bir çizgiyi daha sevdi. Sağ sütundaki çizgiler çok zayıftı, ama aynı yere işaret ediyordu. Sol sütundaki çizgiler ise canlıydı, fakat birbirine dönük değildi.\n\n“Orhan Usta, en güçlü hatırayı çizmemizi söylemişti,” dedi "
+          "v": " bu yüzden bir çizgiyi daha sevdi. Sağ sütundaki çizgiler çok zayıftı, ama aynı yere işaret ediyordu. Sol sütundaki çizgiler ise canlıydı, fakat birbirini tutmuyordu.\n\n“Orhan Usta, en güçlü hatırayı çizmemizi söylemişti,” dedi "
         },
         {
           "t": "kahraman",
@@ -1240,7 +1240,7 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 6,
-      "metin": "Mira'nın hatırasında Çınaraltı'na giden yol hangi köprüden geçiyordu?",
+      "metin": "Kahramanın hatırasında Çınaraltı'na giden yol hangi köprüden geçiyordu?",
       "secenekler": [
         {
           "id": "A",
@@ -1260,25 +1260,25 @@
         }
       ],
       "dogru": "C",
-      "aciklama": "Mira'nın hatırasında yol Tuz Köprüsü'nden geçiyordu; Tuna ise Balıkçı Merdiveni'ni hatırlıyordu."
+      "aciklama": "Kahramanın hatırasında yol Tuz Köprüsü'nden geçiyordu; yoldaşı ise Balıkçı Merdiveni'ni hatırlıyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 9,
-      "metin": "Bu sözden ne çıkarılabilir?",
+      "metin": "Kahramanın “Yani çok kişinin aynı şeyi söylemesi doğru olduğunu göstermez.” sözünden ne çıkarılabilir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kalabalığın söylediği her şey doğrudur"
+          "metin": "Kalabalığın birlikte söylediği her şey kesinlikle doğrudur ve sorgulanmaz"
         },
         {
           "id": "B",
-          "metin": "Hatıralar hiçbir zaman işe yaramaz"
+          "metin": "Kişisel hatıralar hiçbir durumda bilgi kaynağı olarak güvenilir sayılamaz"
         },
         {
           "id": "C",
-          "metin": "Yalnızca haritacılar doğruyu bilir"
+          "metin": "Yalnızca haritacılar ve loncanın ustaları doğruyu bilebilir"
         },
         {
           "id": "D",
@@ -1292,15 +1292,15 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 8,
-      "metin": "Tuna'ya göre anı neyi söyler?",
+      "metin": "Yoldaşa göre anı neyi söyler?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir şeyin ölçüsünü kesin olarak"
+          "metin": "Bir şeyin ölçüsünü kesin ve sayısal olarak"
         },
         {
           "id": "B",
-          "metin": "Bir şeyi kimin yaptığını"
+          "metin": "Bir şeyi kimin, hangi amaçla yaptığını"
         },
         {
           "id": "C",
@@ -1308,11 +1308,11 @@
         },
         {
           "id": "D",
-          "metin": "Bir şeyin hangi yılda yapıldığını"
+          "metin": "Bir şeyin tam olarak hangi yılda yapıldığını"
         }
       ],
       "dogru": "C",
-      "aciklama": "Tuna, anının bir şeyin bizim için nasıl olduğunu söylediğini, başkasının doğrulayabileceği bilgi vermediğini belirtir."
+      "aciklama": "Yoldaş, anının bir şeyin bizim için nasıl olduğunu söylediğini, başkasının doğrulayabileceği bilgi vermediğini belirtir."
     },
     {
       "id": "s4",
@@ -1322,7 +1322,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Parası olmayan"
+          "metin": "Parası olmayan, maddi sıkıntı içindeki"
         },
         {
           "id": "B",
@@ -1330,11 +1330,11 @@
         },
         {
           "id": "C",
-          "metin": "Hiçbir şeyi bilmeyen"
+          "metin": "Hiçbir konuda bilgisi olmayan ve düşünmeyen"
         },
         {
           "id": "D",
-          "metin": "Aynı evde yaşayan"
+          "metin": "Aynı evde ve aynı odada birlikte yaşayan"
         }
       ],
       "dogru": "B",
@@ -1352,15 +1352,15 @@
         },
         {
           "id": "B",
-          "metin": "Bir haritacı çok emin olduğunda"
+          "metin": "Bir haritacı kendi çizgisinden çok emin olduğunda"
         },
         {
           "id": "C",
-          "metin": "Kum saati ters çevrildiğinde"
+          "metin": "Kum saatinin üst camındaki kum tükendiğinde ve ters çevrildiğinde"
         },
         {
           "id": "D",
-          "metin": "Herkes aynı şeyi hatırladığında"
+          "metin": "Şehirdeki herkes aynı şeyi hatırladığında ve tekrar ettiğinde"
         }
       ],
       "dogru": "A",

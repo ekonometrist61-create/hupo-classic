@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 477,
+        "kelime_sayisi": 481,
         "tahmini_sure_dk": 6,
         "sayfa_sayisi": 6,
         "soru_sayisi": 4,
@@ -133,7 +133,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Posta merkezinde tavandan Dünya ve Ay'ın "
+          "v": "Posta merkezinde tavandan Dünya ve Ay'ın birer "
         },
         {
           "t": "kelime",
@@ -141,7 +141,7 @@
         },
         {
           "t": "metin",
-          "v": " sarkıyordu. "
+          "v": "i sarkıyordu. "
         },
         {
           "t": "yoldas",
@@ -166,7 +166,7 @@
         },
         {
           "t": "metin",
-          "v": " görevini çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı.\n\nBaşlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırmızıya döndü: Bağlantı kesildi."
+          "v": " rolünü gösteren okları çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı.\n\nBaşlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırmızıya döndü: Bağlantı kesildi."
         }
       ]
     },
@@ -200,7 +200,7 @@
         },
         {
           "t": "metin",
-          "v": " üzülmüştü. Selin teyzesinin doğum gününe yalnızca bir gün kalmıştı. "
+          "v": " üzülmüştü. Selin teyzenin doğum gününe yalnızca bir gün kalmıştı. "
         },
         {
           "t": "yoldas",
@@ -226,7 +226,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Görevli, \"Bu da veri aktarımında kullanılan yöntemlerden biridir,\" dedi. Ardından çocuklara mesajın birden fazla parçasının nasıl kontrol edildiğini gösterdi. Kısa bir bekleyişten sonra uydu bağlantısı tekrar açıldı.\n\nEkrana İleti ulaştı yazısı düşünce "
+          "v": "Görevli, \"Bu da veri aktarımında kullanılan yöntemlerden biridir,\" dedi. Ardından çocuklara mesajın birden fazla parçasının nasıl kontrol edildiğini gösterdi. Kısa bir bekleyişten sonra uydu bağlantısı tekrar açıldı.\n\nEkranda “İleti ulaştı” yazısı çıkınca "
         },
         {
           "t": "yoldas",
@@ -333,7 +333,7 @@
         }
       ],
       "dogru": "D",
-      "aciklama": "Eylül ve Can, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."
+      "aciklama": "İki kardeş, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."
     },
     {
       "id": "s2",
@@ -343,15 +343,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Mektubu çöpe attı"
+          "metin": "Mektubu hemen çöpe atıp Ay'a yeni bir mektup yazmaya başladı"
         },
         {
           "id": "B",
-          "metin": "Hemen Ay'a gönderdi"
+          "metin": "Mesajı eksik hâliyle hemen Ay'a gönderdi ve sonucu beklemedi"
         },
         {
           "id": "C",
-          "metin": "Kâğıdı yaktı"
+          "metin": "Kâğıdı yakıp çocuklardan mesajı baştan yazmalarını istedi"
         },
         {
           "id": "D",
@@ -369,11 +369,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İletişimin çok kolay olduğunu"
+          "metin": "İletişimin hiçbir hazırlık gerektirmeden kendiliğinden olduğunu"
         },
         {
           "id": "B",
-          "metin": "Mektubun hiç gitmediğini"
+          "metin": "Mektubun hiç gönderilmeden kaybolduğunu ve geri dönmediğini"
         },
         {
           "id": "C",
@@ -381,7 +381,7 @@
         },
         {
           "id": "D",
-          "metin": "Ayın yakın olduğunu"
+          "metin": "Ayın Dünya'ya çok yakın olduğunu ve gecikme olmadığını"
         }
       ],
       "dogru": "C",
@@ -395,7 +395,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür mektup"
+          "metin": "Uzaya gönderilen özel bir mektup"
         },
         {
           "id": "B",
@@ -403,11 +403,11 @@
         },
         {
           "id": "C",
-          "metin": "Bir uydu"
+          "metin": "Yörüngede dönen büyük bir uydu"
         },
         {
           "id": "D",
-          "metin": "Bir ekran"
+          "metin": "Bilgisayarda görüntü veren bir ekran"
         }
       ],
       "dogru": "B",

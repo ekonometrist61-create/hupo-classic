@@ -495,7 +495,7 @@
         },
         {
           "t": "metin",
-          "v": " gülümsedi. Dilindeki tek bir ekin iddiasının gücünü nasıl değiştirdiğini fark etti. Ölçüm yapmayı seven biri olarak kesin sayılarla konuşmaya alışmıştı; fakat nesnenin adını vermek de ölçüm kadar dikkat gerektiriyordu.\n\nCem, başka bölümlerde dolaşırken sesin nerede daha yüksek duyulduğunu karşılaştırdı. Kaydın ses düzeyinin her yerde aynı olmadığını gözlemledi. Yine de yön belirlemek düşündüğünden zordu; odada ses yankılanıyordu. "
+          "v": " gülümsedi. Dilindeki tek bir kesin iddiasının gücünü nasıl değiştirdiğini fark etti. Ölçüm yapmayı seven biri olarak kesin sayılarla konuşmaya alışmıştı; fakat nesnenin adını vermek de ölçüm kadar dikkat gerektiriyordu.\n\nCem, başka bölümlerde dolaşırken sesin nerede daha yüksek duyulduğunu karşılaştırdı. Kaydın ses düzeyinin her yerde aynı olmadığını gözlemledi. Yine de yön belirlemek düşündüğünden zordu; odada ses yankılanıyordu. "
         },
         {
           "t": "kahraman",
@@ -1348,11 +1348,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Gözlemin yapılmış olmasını"
+          "metin": "Gözlemin gerçekten yapılmış ve yazılmış olmasını"
         },
         {
           "id": "B",
-          "metin": "Ölçümün kayıt altına alınmasını"
+          "metin": "Ölçümün dikkatle kayıt altına alınmasını ve saklanmasını"
         },
         {
           "id": "C",
@@ -1360,7 +1360,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir çizim yapılmasını"
+          "metin": "Gözlemin bir çizimle de kayda geçirilmesini"
         }
       ],
       "dogru": "C",
@@ -1378,15 +1378,15 @@
         },
         {
           "id": "B",
-          "metin": "Farklı görüşlere kulak vermek"
+          "metin": "Farklı görüşlere sabırla kulak vermek ve anlamaya çalışmak"
         },
         {
           "id": "C",
-          "metin": "Kanıtları karşılaştırmak"
+          "metin": "Kanıtları birbiriyle dikkatle karşılaştırmak"
         },
         {
           "id": "D",
-          "metin": "Yorumları birlikte değerlendirmek"
+          "metin": "Yorumları birlikte dikkatle değerlendirmek ve tartışmak"
         }
       ],
       "dogru": "A",
@@ -1400,7 +1400,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Denizin ortasında kara parçası"
+          "metin": "Denizin ortasında etrafı su ile çevrili kara parçası"
         },
         {
           "id": "B",
@@ -1408,11 +1408,11 @@
         },
         {
           "id": "C",
-          "metin": "Bir sunum için hazırlanan tablo"
+          "metin": "Bir sunum için ayrıntılarla hazırlanmış karşılaştırma tablosu"
         },
         {
           "id": "D",
-          "metin": "Bir gözlem aracı"
+          "metin": "Bir gözlem sırasında kullanılan ölçüm ve kayıt aracı"
         }
       ],
       "dogru": "B",
@@ -1430,15 +1430,15 @@
         },
         {
           "id": "B",
-          "metin": "Eski çalışmayı tamamen siler"
+          "metin": "Eski çalışmanın bütün sonuçlarını tamamen ortadan siler"
         },
         {
           "id": "C",
-          "metin": "Eski çalışmayı bütünüyle değersiz kılar"
+          "metin": "Eski çalışmayı bütünüyle değersiz kılar ve yeniden başlatır"
         },
         {
           "id": "D",
-          "metin": "Eski çalışmayla hiçbir ilgisi yoktur"
+          "metin": "Eski çalışmayla hiçbir ilgisi olmayan ayrı bir alan açar"
         }
       ],
       "dogru": "A",

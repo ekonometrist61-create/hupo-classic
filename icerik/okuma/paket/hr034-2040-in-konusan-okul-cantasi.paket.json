@@ -72,7 +72,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 471,
+        "kelime_sayisi": 470,
         "tahmini_sure_dk": 6,
         "sayfa_sayisi": 6,
         "soru_sayisi": 4,
@@ -124,7 +124,7 @@
         },
         {
           "t": "metin",
-          "v": " güldü. Fakat okula gidince işler karıştı. Öğretmeni problem çözmesini istediğinde çanta hemen masasından seslendi:\n\n\"Cevap kırk sekiz! Açıklaması için bir tuşa basınız!\"\n\nSınıf gülüşmeye başladı. Öğretmen, \""
+          "v": " güldü. Fakat okula gidince işler karıştı. Öğretmen problem çözmesini istediğinde çanta hemen masasından seslendi:\n\n\"Cevap kırk sekiz! Açıklaması için bir tuşa basınız!\"\n\nSınıf gülüşmeye başladı. Öğretmen, \""
         },
         {
           "t": "kahraman",
@@ -140,7 +140,7 @@
         },
         {
           "t": "metin",
-          "v": " cevap veremedi. Çünkü işlemi hiç denememişti. Teneffüste arkadaşı "
+          "v": " cevap veremedi. Çünkü işlemi hiç denememişti. Teneffüste "
         },
         {
           "t": "yoldas",
@@ -316,7 +316,7 @@
         },
         {
           "t": "metin",
-          "v": " ona iki farklı kâğıt gösterdi. Birinde çantanın hazırladığı kusursuz cevaplar, diğerinde kendi silgileriyle düzelttiği işlemler vardı. \"İlkine bakınca hiçbir şey hatırlamıyorum,\" dedi. \"İkincisini yaparken iki kez yanıldım. Ama nerede yanıldığımı gördüğüm için artık yöntemi biliyorum.\" Arkadaşı, \"Demek hata yapmak bazen işe yarıyor,\" deyince öğretmen başını salladı. Bu konuşma serginin en çok ilgi gören kısmı oldu.\n\nGösteri bitince öğretmeni "
+          "v": " ona iki farklı kâğıt gösterdi. Birinde çantanın hazırladığı kusursuz cevaplar, diğerinde kendi silgileriyle düzelttiği işlemler vardı. \"İlkine bakınca hiçbir şey hatırlamıyorum,\" dedi. \"İkincisini yaparken iki kez yanıldım. Ama nerede yanıldığımı gördüğüm için artık yöntemi biliyorum.\" Çocuk, \"Demek hata yapmak bazen işe yarıyor,\" deyince öğretmen başını salladı. Bu konuşma serginin en çok ilgi gören kısmı oldu.\n\nGösteri bitince öğretmen "
         },
         {
           "t": "kahraman",
@@ -404,11 +404,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Çanta yavaş çalışıyordu"
+          "metin": "Çanta her zaman yanlış cevap veriyordu"
         },
         {
           "id": "B",
-          "metin": "Ödevi çok sevdiği için"
+          "metin": "Ödevleri çok sevdiği için hep geç bitiriyordu"
         },
         {
           "id": "C",
@@ -416,7 +416,7 @@
         },
         {
           "id": "D",
-          "metin": "Öğretmen kızmıştı"
+          "metin": "Öğretmen, ödevini hiç kontrol etmediği için"
         }
       ],
       "dogru": "C",
@@ -434,15 +434,15 @@
         },
         {
           "id": "B",
-          "metin": "Çantanın hızlı olması"
+          "metin": "Çantanın her zaman hızlı çalışması"
         },
         {
           "id": "C",
-          "metin": "Ödevin hiç yapılmaması"
+          "metin": "Ödevin hiçbir şekilde yapılmaması"
         },
         {
           "id": "D",
-          "metin": "Okulun kapanması"
+          "metin": "Okulun erken kapanıp tatil olması"
         }
       ],
       "dogru": "A",
@@ -456,7 +456,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tuş"
+          "metin": "Bilgisayarda bir tuşa basılarak yapılan işlem"
         },
         {
           "id": "B",
@@ -464,11 +464,11 @@
         },
         {
           "id": "C",
-          "metin": "Bir sınıf"
+          "metin": "Derslerin yapıldığı, sıraların bulunduğu yer"
         },
         {
           "id": "D",
-          "metin": "Bir ödev"
+          "metin": "Öğrencinin evde yapması gereken yazılı görev"
         }
       ],
       "dogru": "B",

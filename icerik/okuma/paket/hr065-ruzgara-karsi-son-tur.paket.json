@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2006,
+        "kelime_sayisi": 2002,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 15,
         "soru_sayisi": 4,
@@ -432,7 +432,7 @@
         },
         {
           "t": "metin",
-          "v": " yanına \"özgüven\", Baran'ın yanına \"tempo\", Nisan'ın yanına \"dayanışma\", Efe'nin yanına \"nefes\" yazdı. Kendi adının yanına ne koyacağını bilemedi. Sonunda \"denge\" kelimesini seçti. Çünkü hızla güvenliği, kişisel hedefle takım arkadaşlığını, cesaretle dikkatli olmayı birlikte düşünmeyi öğrenmişti. Bu seçim ona yarışta kazandığı herhangi bir sıralamadan daha kalıcı görünüyordu.\n\nSelin Hanım birkaç hafta sonra önceki koşu çizelgelerini sınıfa getirdi. Herkesin en hızlı turunu seçmek yerine düzenli ilerlemesini gösteren küçük çizgiler hazırlamıştı. Deniz kendi çizgisinde bazı günlerin aşağı indiğini gördü. Önce üzüldü. Öğretmen, \"Bu bir yarışta ne kadar değerli olduğunu göstermiyor,\" dedi. \"Yalnızca bu günlerdeki ölçümleri gösteriyor. Hastalık, yorgunluk, hava ve pek çok başka etken olabilir.\" Baran kendi çizgisindeki inişleri silmek istedi, sonra Yusuf'un saati değil ama Selin Hanım'ın sözünü düşündü: Gerçek veri, yalnız güzel görünen kısımlardan oluşmaz."
+          "v": " yanına \"özgüven\", Baran'ın yanına \"tempo\", Nisan'ın yanına \"dayanışma\", Efe'nin yanına \"nefes\" yazdı. Kendi adının yanına ne koyacağını bilemedi. Sonunda \"denge\" kelimesini seçti. Çünkü hızla güvenliği, kişisel hedefle takım arkadaşlığını, cesaretle dikkatli olmayı birlikte düşünmeyi öğrenmişti. Bu seçim ona yarışta kazandığı herhangi bir sıralamadan daha kalıcı görünüyordu.\n\nSelin Hanım birkaç hafta sonra önceki koşu çizelgelerini sınıfa getirdi. Herkesin en hızlı turunu seçmek yerine düzenli ilerlemesini gösteren küçük çizgiler hazırlamıştı. Deniz kendi çizgisinde bazı günlerin aşağı indiğini gördü. Önce üzüldü. Öğretmen, \"Bu bir yarışta ne kadar değerli olduğunu göstermiyor,\" dedi. \"Yalnızca bu günlerdeki ölçümleri gösteriyor. Hastalık, yorgunluk, hava ve pek çok başka etken olabilir.\" Baran kendi çizgisindeki inişleri silmek istedi, sonra Selin Hanım'ın sözünü düşündü: Gerçek veri, yalnız güzel görünen kısımlardan oluşmaz."
         }
       ]
     },
@@ -476,15 +476,15 @@
         },
         {
           "id": "B",
-          "metin": "Aylin Hanım"
+          "metin": "Okul müdürü"
         },
         {
           "id": "C",
-          "metin": "Suna Hanım"
+          "metin": "Parkur görevlisi"
         },
         {
           "id": "D",
-          "metin": "Cemil Usta"
+          "metin": "Belediye memuru"
         }
       ],
       "dogru": "A",
@@ -494,7 +494,7 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 3,
-      "metin": "Ela neden kaygılandı?",
+      "metin": "Takımdan bir arkadaş neden kaygılandı?",
       "secenekler": [
         {
           "id": "A",
@@ -502,19 +502,19 @@
         },
         {
           "id": "B",
-          "metin": "Parkurun çok uzun olduğu için"
+          "metin": "Parkurun bazı bölümlerinin çok dik olduğunu ve sağlığını riske atacağını düşündüğü için"
         },
         {
           "id": "C",
-          "metin": "Madalya istediği için"
+          "metin": "Madalya kazanmayı çok istediği ve bu yüzden takımdan ayrı, tek başına koşmak istediği için"
         },
         {
           "id": "D",
-          "metin": "Sınıfın onu dinlemediği için"
+          "metin": "Sınıf arkadaşlarının yarış planına onu dahil etmediğini ve fikirlerini dinlemediğini düşündüğü için"
         }
       ],
       "dogru": "A",
-      "aciklama": "Ela, yavaşlığının takımın sıralamasını düşüreceğinden korkuyordu."
+      "aciklama": "Takım arkadaşı, yavaşlığının takımın sıralamasını düşüreceğinden korkuyordu."
     },
     {
       "id": "s3",
@@ -524,7 +524,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Her zaman en hızlı koşmak"
+          "metin": "Her zaman en hızlı tempoda koşup hiç dinlenmeden devam etmek"
         },
         {
           "id": "B",
@@ -532,11 +532,11 @@
         },
         {
           "id": "C",
-          "metin": "Hiç koşmamak"
+          "metin": "Yarışın ortasında tamamen durup takımın dönmesini beklemek"
         },
         {
           "id": "D",
-          "metin": "Yalnızca yavaş yürümek"
+          "metin": "Yalnızca yavaş yürüyerek ilerleyip koşudan tamamen vazgeçmek"
         }
       ],
       "dogru": "B",
@@ -550,11 +550,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yarış çizgisi"
+          "metin": "Yarış başlamadan önce çizilen son çizgi"
         },
         {
           "id": "B",
-          "metin": "Bir tür rüzgâr"
+          "metin": "Parkurda sık esen sert bir rüzgâr türü"
         },
         {
           "id": "C",
@@ -562,7 +562,7 @@
         },
         {
           "id": "D",
-          "metin": "Su içmek"
+          "metin": "Yarıştan sonra vücudu dinlendiren uzun bir yürüyüş"
         }
       ],
       "dogru": "C",

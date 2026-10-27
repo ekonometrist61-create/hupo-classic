@@ -86,7 +86,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 4018,
+        "kelime_sayisi": 4017,
         "tahmini_sure_dk": 30,
         "sayfa_sayisi": 34,
         "soru_sayisi": 5,
@@ -106,7 +106,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Asansörde 0 katı var mı? {kahraman} ile {yoldas:yalin|bir arkadaşı}, söylentiyi kanıttan ve yanlış etiketi gerçek bir kattan ayırmayı öğrenir.",
+    "tanitim": "Asansörde 0 katı var mı? {kahraman} ile {yoldas:yalin|bir arkadaş}, söylentiyi kanıttan ve yanlış etiketi gerçek bir kattan ayırmayı öğrenir.",
     "durum": "taslak",
     "fis_kodu": "HR-104"
   },
@@ -145,7 +145,7 @@
         },
         {
           "t": "metin",
-          "v": " ve arkadaşı "
+          "v": " ve "
         },
         {
           "t": "yoldas",
@@ -472,7 +472,7 @@
         },
         {
           "t": "metin",
-          "v": ", “ama şimdi biz de tahmin yürütüyoruz.”\n\nGörüntüyü gönderen öğrenciye kaynağını sordular. Öğrenci onu başka bir gruptan almıştı. Grubun yöneticisi fotoğrafı bir ziyaretçinin hesabında görmüştü. Sonunda görüntünün iki yıl önce aynı binada yapılan tadilat sırasında çekildiği anlaşıldı. Levhanın tam hâlinde Yetkisiz giriş tehlikelidir — teknik servis yazıyordu. Yeni binada birçok teknik servis odası bulunması doğaldı; fotoğraf, bu odanın hangi katta olduğuna bile kanıt oluşturmuyordu.\n\n"
+          "v": ", “ama şimdi biz de tahmin yürütüyoruz.”\n\nGörüntüyü gönderen öğrenciye kaynağını sordular. Öğrenci onu başka bir gruptan almıştı. Grubun yöneticisi fotoğrafı bir ziyaretçinin hesabında görmüştü. Sonunda görüntünün iki yıl önce aynı binada yapılan tadilat sırasında çekildiği anlaşıldı. Levhanın tam hâlinde “Yetkisiz giriş tehlikelidir — teknik servis” yazıyordu. Yeni binada birçok teknik servis odası bulunması doğaldı; fotoğraf, bu odanın hangi katta olduğuna bile kanıt oluşturmuyordu.\n\n"
         },
         {
           "t": "kahraman",
@@ -1440,7 +1440,7 @@
         },
         {
           "id": "B",
-          "metin": "G"
+          "metin": "2"
         },
         {
           "id": "C",
@@ -1458,7 +1458,7 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 15,
-      "metin": "Yoldaşın bu benzetmesine göre sıfır ne anlama gelebilir?",
+      "metin": "Yoldaşın “Bir sözcüğün farklı metinlerde farklı anlam taşıması gibi” benzetmesine göre sıfır ne anlama gelebilir?",
       "secenekler": [
         {
           "id": "A",
@@ -1466,15 +1466,15 @@
         },
         {
           "id": "B",
-          "metin": "Her yerde aynı anlamı taşıyan kesin bir gizli kat"
+          "metin": "Her yerde aynı anlamı taşıyan, kesin ve gizli bir kat göstergesi"
         },
         {
           "id": "C",
-          "metin": "Binanın kesinlikle var olmayan bir katı"
+          "metin": "Binanın kesinlikle var olmayan, yalnızca söylentide geçen bir katı"
         },
         {
           "id": "D",
-          "metin": "Yalnızca ziyaretçi için anlamı olan bir sayı"
+          "metin": "Yalnızca ziyaretçi uygulaması için anlamı olan bir kayıt kodu"
         }
       ],
       "dogru": "A",
@@ -1488,11 +1488,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kapalı her kapının bir sırrı vardır"
+          "metin": "Kapalı her kapının içinde mutlaka saklanmaya değer bir sır vardır"
         },
         {
           "id": "B",
-          "metin": "Kapalı bir kapı her zaman tehlikelidir"
+          "metin": "Kapalı bir kapı, içinde ne olduğu bilinmediği için çoğunlukla tehlikelidir ve açılmamalıdır"
         },
         {
           "id": "C",
@@ -1500,7 +1500,7 @@
         },
         {
           "id": "D",
-          "metin": "Kapıların hiçbir zaman kapalı olmamalıdır"
+          "metin": "Kapıların, güvenlik gerekçesi olsa bile hiçbir zaman kapalı tutulmaması gerekir"
         }
       ],
       "dogru": "C",
@@ -1540,15 +1540,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bilgiyi güncellemek"
+          "metin": "Bilgiyi gerçeğe uygun biçimde güncellemek"
         },
         {
           "id": "B",
-          "metin": "Kullanıcıyı doğru yönlendirmek"
+          "metin": "Kullanıcıyı doğru bir yola yönlendirmek"
         },
         {
           "id": "C",
-          "metin": "Kaynağı yeniden kontrol etmek"
+          "metin": "Kaynağı baştan yeniden kontrol etmek"
         },
         {
           "id": "D",

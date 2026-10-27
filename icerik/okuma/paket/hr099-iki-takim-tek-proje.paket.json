@@ -86,9 +86,9 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3575,
+        "kelime_sayisi": 3518,
         "tahmini_sure_dk": 29,
-        "sayfa_sayisi": 32,
+        "sayfa_sayisi": 31,
         "soru_sayisi": 5,
         "soru_beceri_dagilimi": {
           "hatirlama": 1,
@@ -106,7 +106,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Okul sergisi için iki takım tek bir proje yapmak zorunda. {kahraman} ve Melis, rekabetin yerine kullanıcının ihtiyacını dinlemeyi öğrenir.",
+    "tanitim": "Okul sergisi için iki takım tek bir proje yapmak zorunda. {kahraman} ve Atlas, rekabetin yerine kullanıcının ihtiyacını dinlemeyi öğrenir.",
     "durum": "taslak",
     "fis_kodu": "HR-099"
   },
@@ -354,15 +354,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Atlas da duraksadı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " kendilerini kopyacılıkla suçladığını düşünüyordu. Oysa "
+          "v": "Atlas da duraksadı. Kahramanın kendilerini kopyacılıkla suçladığını düşünmüştü. Oysa "
         },
         {
           "t": "kahraman",
@@ -1128,15 +1120,6 @@
           "v": " defterinin son sayfasına tek bir cümle yazdı: Birlikte çalışmak, herkesin aynı fikri savunması değil; farklı fikirlerin aynı problemi anlamak için yan yana gelmesidir.\n\nSonra defteri kapattı. Bu kez masanın hangi ucuna oturduğunun hiçbir önemi yoktu."
         }
       ]
-    },
-    {
-      "omurga": true,
-      "parcalar": [
-        {
-          "t": "metin",
-          "v": "- Dil: Önyargı, müzakere, varsayım, kanıt, bağlam; neden-sonuç ve ana düşünce. - Disiplinler: Teknoloji tasarımı, erişilebilirlik, etik veri kullanımı, güvenlik, kullanıcı araştırması. - Değerler: İş birliği, dürüstlük, sorumluluk, saygıyla anlaşmazlık çözme. - İkon adayları: durak, harita, rampa, düğme, kroki. - Yayın denetimi: Resmî kazanım kodu ve kaynak/telif denetimi henüz yapılmadı. Hikâyedeki prototip, gerçek yolcu bilgilendirme hizmeti değildir."
-        }
-      ]
     }
   ],
   "deger_sahneleri": {},
@@ -1171,11 +1154,11 @@
         },
         {
           "id": "C",
-          "metin": "Akıllı Durak 2"
+          "metin": "Akıllı Durak 2 — Yeni Sürüm"
         },
         {
           "id": "D",
-          "metin": "Kıvılcım Takımı"
+          "metin": "Kıvılcım Takımı — Tek Başına Sunum"
         }
       ],
       "dogru": "A",
@@ -1189,7 +1172,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İkisi aynı şeydir"
+          "metin": "İkisi aynı şeydir; hatayı kabul eden kişi her zaman kendini de bütünüyle suçlamış olur"
         },
         {
           "id": "B",
@@ -1197,11 +1180,11 @@
         },
         {
           "id": "C",
-          "metin": "Hatayı kabul etmek kendini suçlamaktır"
+          "metin": "Hatayı kabul etmek kendini suçlamaktır ve bu yüzden hiçbir zaman yapılmamalıdır"
         },
         {
           "id": "D",
-          "metin": "Hiçbir hata kabul edilmemelidir"
+          "metin": "Hiçbir hata kabul edilmemelidir; çünkü her kabul bir zayıflık göstergesidir"
         }
       ],
       "dogru": "B",
@@ -1215,15 +1198,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Her şeyi yaptığını"
+          "metin": "Her şeyi yaptığını ve eksiği olmadığını"
         },
         {
           "id": "B",
-          "metin": "Yalnızca kazandığı ödülleri"
+          "metin": "Yalnızca kazandığı ödül ve dereceleri"
         },
         {
           "id": "C",
-          "metin": "Takımların adlarını"
+          "metin": "Takımların adlarını ve sunum saatlerini"
         },
         {
           "id": "D",
@@ -1241,11 +1224,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bilgisayar programı"
+          "metin": "Bilgisayar için yazılmış uzun bir program metni"
         },
         {
           "id": "B",
-          "metin": "Bir ödül belgesi"
+          "metin": "Bir ödül için verilen resmî bir belge"
         },
         {
           "id": "C",
@@ -1253,7 +1236,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir sergi salonu"
+          "metin": "Sergi için ayrılmış büyük bir salon"
         }
       ],
       "dogru": "C",
@@ -1271,11 +1254,11 @@
         },
         {
           "id": "B",
-          "metin": "Kusursuz bir ürün sunmayı"
+          "metin": "Hiçbir eksiği olmayan kusursuz bir ürün sunmayı"
         },
         {
           "id": "C",
-          "metin": "Rakip takımı eleştirmeyi"
+          "metin": "Rakip takımın eksiklerini sergi boyunca eleştirmeyi"
         },
         {
           "id": "D",

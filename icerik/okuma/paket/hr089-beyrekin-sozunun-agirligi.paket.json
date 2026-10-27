@@ -3,18 +3,18 @@
   "hikaye": {
     "slug": "hr089-beyrekin-sozunun-agirligi",
     "baslik": "Beyrek'in Sözünün Ağırlığı",
-    "tur": "fantastik",
+    "tur": "tarih_kultur",
     "konu": "soz_vefa_yanlis_anlama",
     "sinif_alt": 7,
     "sinif_ust": 7,
     "okuma_bandi": 3,
-    "dunya_tipi": "masalsi",
+    "dunya_tipi": "gercekci",
     "izinli_turler": [
       "arkadas"
     ],
     "deger_anahtarlari": [
-      "D15",
-      "D6"
+      "D6",
+      "D15"
     ],
     "yetiskin_uygun": false,
     "etiketler": {
@@ -30,8 +30,8 @@
         "turkce"
       ],
       "maarif": {
-        "ana_deger": "D15",
-        "yardimci_deger": "D6"
+        "ana_deger": "D6",
+        "yardimci_deger": "D15"
       },
       "ogrenme_hedefleri": [
         {

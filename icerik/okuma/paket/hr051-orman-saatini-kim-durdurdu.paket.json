@@ -80,7 +80,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2050,
+        "kelime_sayisi": 2051,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 18,
         "soru_sayisi": 4,
@@ -175,7 +175,7 @@
         },
         {
           "t": "metin",
-          "v": " kontrol ediyordu. “Kış yeniden gelecekmiş,” dedi "
+          "v": "ini kontrol ediyordu. “Kış yeniden gelecekmiş,” dedi "
         },
         {
           "t": "yoldas",
@@ -280,7 +280,7 @@
         },
         {
           "t": "metin",
-          "v": " bu ayrıntıyı defterine özellikle ekledi.\n\nEkin Hanım saatin yakınındaki toprağı inceledi. Sert esen fırtınada kopan ince bir dal, ahşap çarkların arasına sıkışmıştı. Dal, saatin mevsim kanadını engelliyordu. "
+          "v": " bu ayrıntıyı defterine özellikle ekledi.\n\nEkin Hanım saatin çevresini inceledi. Sert esen fırtınada kopan ince bir dal, ahşap çarkların arasına sıkışmıştı. Dal, saatin mevsim kanadını engelliyordu. "
         },
         {
           "t": "yoldas",
@@ -340,7 +340,7 @@
         },
         {
           "t": "metin",
-          "v": " düşündü. Bir haftalık veri bazen günlük değişimleri gösterebilirdi; uzun süreli iklim örüntülerini ise tek başına açıklayamazdı. Babasının sorusu hikâyeyi geliştirdi. Hayvanların yalnız bir hafta değil, yıl boyunca farklı aralıklarla gözlem yapmaya karar verdiği bir bölüm ekledi. Doruk, kayıtların yıllar içinde karşılaştırılmasını önerdi. Hava durumunun o günkü koşulları, ikliminse uzun süreli örüntüleri anlattığını öğrendiler."
+          "v": " düşündü. Bir haftalık veri bazen günlük değişimleri gösterebilirdi; uzun süreli iklim örüntülerini ise tek başına açıklayamazdı. Babasının sorusu hikâyeyi geliştirdi. Hayvanların yalnız bir hafta değil, yıl boyunca farklı aralıklarla gözlem yapmaya karar verdiği bir bölüm ekledi. Doruk, kayıtların yıllar içinde karşılaştırılmasını önerdi. Hava durumunun o günkü koşullarını, iklimin ise uzun süreli örüntülerini anlattığını öğrendiler."
         }
       ]
     },
@@ -482,7 +482,7 @@
         },
         {
           "t": "metin",
-          "v": " hemen panikledi. Pati ise köpüğün nedenini belirlemeden “zehirli” demelerinin doğru olmadığını söyledi. Ekin Hanım'a haber verdiler; görevli suyun görünüşünden kesin sonuç çıkarılamayacağını, şüpheli bir durumda yetkili birimlerce inceleme yapılması gerektiğini anlattı. Çocuklar da gerçek hayatta böyle bir durum görürlerse suya dokunmadan yetişkinlere bildirmeleri gerektiğini öğrendi. Böylece hikâyedeki merak, tehlikeli denemelere dönüşmedi.\n\nOrmanın eski fotoğraflarına bakmak, Doruk'un aklına gelmişti. Park girişindeki ziyaretçi merkezinde on yıl önce çekilmiş görüntüler vardı. Bazı ağaçlar büyümüş, yürüyüş yolları değiştirilmiş, bir açıklığa yeni fidanlar dikilmişti. "
+          "v": " hemen panikledi. Pati ise köpüğün nedenini belirlemeden “zehirli” demelerinin doğru olmadığını söyledi. Ekin Hanım'a haber verdiler; görevli suyun görünüşünden kesin sonuç çıkarılamayacağını, şüpheli bir durumda yetkili birimlerce inceleme yapılması gerektiğini anlattı. Çocuklar da gerçek hayatta böyle bir durum görürlerse suya dokunmadan yetişkinlere bildirmeleri gerektiğini öğrendiler. Böylece hikâyedeki merak, tehlikeli denemelere dönüşmedi.\n\nOrmanın eski fotoğraflarına bakmak, Doruk'un aklına gelmişti. Park girişindeki ziyaretçi merkezinde on yıl önce çekilmiş görüntüler vardı. Bazı ağaçlar büyümüş, yürüyüş yolları değiştirilmiş, bir açıklığa yeni fidanlar dikilmişti. "
         },
         {
           "t": "yoldas",
@@ -779,7 +779,7 @@
         },
         {
           "t": "metin",
-          "v": " küçük resmine baktı. Sincap artık kuyruğunu telaşla sallamıyordu. Bir yaprağın üzerine oturmuş, defterini açmıştı."
+          "v": " küçük resmine baktı. Resimdeki sincap artık kuyruğunu telaşla sallamıyordu. Bir yaprağın üzerine oturmuş, defterini açmıştı."
         }
       ]
     },
@@ -810,10 +810,6 @@
   "hareket_sahneleri": {},
   "deyim_cumleleri": {
     "hr051_kulaktan_kulaga": [
-      {
-        "t": "metin",
-        "v": "Sincap "
-      },
       {
         "t": "yoldas",
         "hal": "yalin",
@@ -860,7 +856,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yalnızca saate"
+          "metin": "Yalnızca saatin durmasına bağlı"
         },
         {
           "id": "B",
@@ -868,11 +864,11 @@
         },
         {
           "id": "C",
-          "metin": "Yalnızca sincaplara"
+          "metin": "Yalnızca sincapların sayısına bağlı"
         },
         {
           "id": "D",
-          "metin": "Kuşların renklerine"
+          "metin": "Kuşların renklerine ve ötüşüne bağlı"
         }
       ],
       "dogru": "B",
@@ -886,15 +882,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Saat ormanı büyütür"
+          "metin": "Saat mevsimi tek başına belirler, orman yalnızca süs olur"
         },
         {
           "id": "B",
-          "metin": "Orman zamanı sayar"
+          "metin": "Orman zamanı sayar, saat de canlıları birbirine bağlar"
         },
         {
           "id": "C",
-          "metin": "İkisi aynıdır"
+          "metin": "İkisi de zamanı ölçer ve aynı işi görür"
         },
         {
           "id": "D",
@@ -912,11 +908,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bilimsel bir ölçüm"
+          "metin": "Bir olayın bilimsel yöntemle ölçülüp kaydedilmesi ve analizi"
         },
         {
           "id": "B",
-          "metin": "Bir ağaç türü"
+          "metin": "Yapraklarını her kış döken büyük bir orman ağacı türü"
         },
         {
           "id": "C",
@@ -924,7 +920,7 @@
         },
         {
           "id": "D",
-          "metin": "Hava durumu"
+          "metin": "Bir bölgede uzun süreli hava koşullarının kaydı ve analizi"
         }
       ],
       "dogru": "C",

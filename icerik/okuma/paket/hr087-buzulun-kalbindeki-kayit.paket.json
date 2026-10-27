@@ -1289,7 +1289,7 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 4,
-      "metin": "Kahramanın bu sözünden çıkan sonuç nedir?",
+      "metin": "Kahramanın “Verinin bulunmaması, değişimin olmadığı anlamına gelmez.” sözünden çıkan sonuç nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -1297,15 +1297,15 @@
         },
         {
           "id": "B",
-          "metin": "Veri yoksa değişim kesinlikle yoktur"
+          "metin": "Veri yoksa, buzulda kesinlikle hiçbir değişim olmamıştır"
         },
         {
           "id": "C",
-          "metin": "Veriler hiç önemli değildir"
+          "metin": "Buzulla ilgili veriler bilimsel çalışmada önemli değildir"
         },
         {
           "id": "D",
-          "metin": "Ölçüm yapmak gereksizdir"
+          "metin": "Ölçüm yapmak zaman kaybıdır, sonuçlara güvenilemez"
         }
       ],
       "dogru": "A",
@@ -1315,11 +1315,11 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 6,
-      "metin": "Kahramanın bu sözüne göre sağlıklı şüphe nedir?",
+      "metin": "Kahramanın “Şüphe etmekle her şeyi reddetmek aynı değil.” sözüne göre sağlıklı şüphe nedir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Her bilgiyi yalan saymak"
+          "metin": "Okunan her bilgiyi baştan sona yalan saymak ve reddetmek"
         },
         {
           "id": "B",
@@ -1327,11 +1327,11 @@
         },
         {
           "id": "C",
-          "metin": "Hiçbir bilgiye bakmamak"
+          "metin": "Hiçbir bilgiye bakmadan doğrudan kendi görüşünü kabul etmek"
         },
         {
           "id": "D",
-          "metin": "Arkadaşları suçlamak"
+          "metin": "Bir bilgiyi yayan arkadaşları peşinden suçlu aramak"
         }
       ],
       "dogru": "B",
@@ -1345,11 +1345,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür dağ"
+          "metin": "Buzulların altında oluşan küçük bir göl"
         },
         {
           "id": "B",
-          "metin": "Bir kayıt cihazı"
+          "metin": "Sesleri ve konuşmaları kaydeden küçük bir cihaz"
         },
         {
           "id": "C",
@@ -1357,7 +1357,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir grafik türü"
+          "metin": "Verileri sütunlar hâlinde gösteren bir tablo türü"
         }
       ],
       "dogru": "C",

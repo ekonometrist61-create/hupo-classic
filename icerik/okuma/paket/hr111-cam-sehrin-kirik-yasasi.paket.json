@@ -1319,11 +1319,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Parayı saymak"
+          "metin": "Eldeki parayı tek tek saymak ve kaydetmek"
         },
         {
           "id": "B",
-          "metin": "Bir sayıyı hesaplamak"
+          "metin": "Bir sayının değerini hesap makinesiyle hesaplamak"
         },
         {
           "id": "C",
@@ -1331,7 +1331,7 @@
         },
         {
           "id": "D",
-          "metin": "Birini suçlamak"
+          "metin": "Birini bir olaydan suçlu tutmak ve sorumlu saymak"
         }
       ],
       "dogru": "C",
@@ -1349,11 +1349,11 @@
         },
         {
           "id": "B",
-          "metin": "Yetişkinlerin kararıyla verilmeli"
+          "metin": "Yetişkinlerin kendi aralarındaki kararıyla verilmeli"
         },
         {
           "id": "C",
-          "metin": "Hiç yazılı olmamalı"
+          "metin": "Hiçbir zaman yazılı olmamalı ve kayda geçirilmemeli"
         },
         {
           "id": "D",

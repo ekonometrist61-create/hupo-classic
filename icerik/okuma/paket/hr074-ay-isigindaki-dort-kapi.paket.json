@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3082,
+        "kelime_sayisi": 3079,
         "tahmini_sure_dk": 27,
         "sayfa_sayisi": 25,
         "soru_sayisi": 4,
@@ -389,7 +389,7 @@
         },
         {
           "t": "metin",
-          "v": " bütün bunları not defterine üç sütun hâlinde yazdı: Gördüklerimiz, Tahminlerimiz, Doğrulayabileceklerimiz. Un izi ilk sütundaydı. Fırıncının sandığı taşıdığı düşüncesi ikinci sütuna yazıldı. Kurdele ve depo ise üçüncü sütundaki araştırma yoluydu. Bu düzen ilk başta çok basit göründü. Ama "
+          "v": " bütün bunları not defterine üç sütun hâlinde yazdı: Gördüklerimiz, Tahminlerimiz, Doğrulayabileceklerimiz. Un izi ilk sütundaydı. Fırıncının elmaları taşıdığı düşüncesi ikinci sütuna yazıldı. Kurdele ve depo ise üçüncü sütundaki araştırma yoluydu. Bu düzen ilk başta çok basit göründü. Ama "
         },
         {
           "t": "kahraman",
@@ -527,7 +527,7 @@
         },
         {
           "t": "metin",
-          "v": " ne yapılacağını tartışıyordu. Duru, bütün parayı yeni kitaplara ayırmak istiyordu. Ağabeyi Efe ise eski kitapların çoğunun yıprandığını, önce raflarla aydınlatmayı onarmak gerektiğini söylüyordu.\n\n“Kitap olmadan kütüphane mi olur?” diye sordu Duru. “Yeni kitaplar çocukları buraya getirir.”\n\n“Raf devrilirse kitapların faydası kalır mı?” diye karşılık verdi Efe. “Okumak için yeterli ışık da gerekiyor.”\n\nTerazinin kefelerinden biri Duru'nun sözleriyle, öteki Efe'ninkilerle doldu. Fakat terazi bir türlü dengelenmiyordu. Kapının üstünde bir cümle parladı: İki iyi amaç çelişince, nasıl karar verirsin?\n\n"
+          "v": " hakkında ne yapılacağını tartışıyordu. Duru, bütün parayı yeni kitaplara ayırmak istiyordu. Ağabeyi Efe ise eski kitapların çoğunun yıprandığını, önce raflarla aydınlatmayı onarmak gerektiğini söylüyordu.\n\n“Kitap olmadan kütüphane mi olur?” diye sordu Duru. “Yeni kitaplar çocukları buraya getirir.”\n\n“Raf devrilirse kitapların faydası kalır mı?” diye karşılık verdi Efe. “Okumak için yeterli ışık da gerekiyor.”\n\nTerazinin kefelerinden biri Duru'nun sözleriyle, öteki Efe'ninkilerle doldu. Fakat terazi bir türlü dengelenmiyordu. Kapının üstünde bir cümle parladı: İki iyi amaç çelişince, nasıl karar verirsin?\n\n"
         },
         {
           "t": "yoldas",
@@ -937,7 +937,7 @@
     "hr074_goz_karari": [
       {
         "t": "metin",
-        "v": "Aşağı mahalleye taşınacak su miktarını göz kararı artırıp kimseyi zor durumda bırakmadılar."
+        "v": "Su miktarını göz kararı değil, ölçüme dayanarak belirlediler."
       }
     ]
   },
@@ -976,11 +976,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Eski eşyalar kullanılmamalıdır"
+          "metin": "Eski eşyalar yalnızca müzede saklanmalıdır"
         },
         {
           "id": "B",
-          "metin": "Pusula bozuktur"
+          "metin": "Pusula bu kentte yalnız gece çalışan bir alettir"
         },
         {
           "id": "C",
@@ -988,7 +988,7 @@
         },
         {
           "id": "D",
-          "metin": "Kent çok eskidir"
+          "metin": "Kent o kadar eski ki hiç kimse oraya gitmemiştir"
         }
       ],
       "dogru": "C",
@@ -1006,15 +1006,15 @@
         },
         {
           "id": "B",
-          "metin": "Yalnız sonucu yazan notlar"
+          "metin": "Yalnız sonucu yazıp koşulları atlayan notlar"
         },
         {
           "id": "C",
-          "metin": "Hiç not olmayan sayfalar"
+          "metin": "Hangi koşulda yazıldığı belli olmayan kâğıtlar"
         },
         {
           "id": "D",
-          "metin": "En kısa notlar"
+          "metin": "Yalnızca birkaç kelimeden oluşan kısa notlar"
         }
       ],
       "dogru": "A",

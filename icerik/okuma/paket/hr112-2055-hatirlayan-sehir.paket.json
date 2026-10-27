@@ -1378,7 +1378,7 @@
       },
       {
         "t": "metin",
-        "v": " bunu duyunca içine bir ağırlık oturdu."
+        "v": " bunu görünce içine bir ağırlık oturdu."
       }
     ]
   },
@@ -1417,7 +1417,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Toplamak için yeterli bir gerekçe olur"
+          "metin": "Toplamak için yeterli bir gerekçe olduğunu gösterir"
         },
         {
           "id": "B",
@@ -1425,11 +1425,11 @@
         },
         {
           "id": "C",
-          "metin": "Verinin daha güvenli olduğunu gösterir"
+          "metin": "Verinin daha güvenli bir şekilde saklanacağını gösterir"
         },
         {
           "id": "D",
-          "metin": "Sistemin daha yavaş çalışacağını gösterir"
+          "metin": "Sistemin önerileri daha yavaş üreteceğini gösterir"
         }
       ],
       "dogru": "B",
@@ -1447,15 +1447,15 @@
         },
         {
           "id": "B",
-          "metin": "Afişin çok renkli olması"
+          "metin": "Afişin çok renkli ve dikkat çekici olması"
         },
         {
           "id": "C",
-          "metin": "Jürinin bunu istemesi"
+          "metin": "Jürinin bunu açıkça istemesi ve talep etmesi"
         },
         {
           "id": "D",
-          "metin": "Sistemin tüm yanıtları bilmesi"
+          "metin": "Sistemin bütün soruların yanıtını bilmesi"
         }
       ],
       "dogru": "A",
@@ -1469,15 +1469,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hiç kullanılmayan"
+          "metin": "Uzun süredir hiç kimse tarafından kullanılmayan"
         },
         {
           "id": "B",
-          "metin": "Sahibi olmayan bir cihaz"
+          "metin": "Sahibi olmayan ve kendi başına çalışan bir cihaz"
         },
         {
           "id": "C",
-          "metin": "Yanlış bir yazıyla yazılmış"
+          "metin": "Yanlış bir yazım kuralıyla ve hatalı biçimde yazılmış"
         },
         {
           "id": "D",
@@ -1495,11 +1495,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kendi kararlarıyla hemen belirlemek"
+          "metin": "Kendi kararlarıyla hemen ve tek başına belirlemek"
         },
         {
           "id": "B",
-          "metin": "Bu ayrıntıları tamamen görmezden gelmek"
+          "metin": "Bu ayrıntıları önemsiz sayıp tamamen görmezden gelmek"
         },
         {
           "id": "C",
@@ -1507,7 +1507,7 @@
         },
         {
           "id": "D",
-          "metin": "Sadece jürinin görüşüne uymak"
+          "metin": "Sadece jürinin görüşüne sorgusuz sualsiz uymak"
         }
       ],
       "dogru": "C",

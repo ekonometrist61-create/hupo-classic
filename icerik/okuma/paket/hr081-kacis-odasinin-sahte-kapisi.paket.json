@@ -70,7 +70,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3579,
+        "kelime_sayisi": 3578,
         "tahmini_sure_dk": 29,
         "sayfa_sayisi": 25,
         "soru_sayisi": 4,
@@ -494,7 +494,7 @@
         },
         {
           "t": "metin",
-          "v": ", önce diğer bulmacaları çözmeleri gerektiğini söyledi.\n\nÜçüncü aşamada beş sayı buldular: 2, 4, 8, 16 ve boş bir kutu. "
+          "v": ", önce diğer bulmacaları çözmeleri gerektiğini söyledi.\n\nÜçüncü aşamada dört sayı buldular: 2, 4, 8, 16 ve boş bir kutu. "
         },
         {
           "t": "yoldas",
@@ -966,7 +966,7 @@
         },
         {
           "t": "metin",
-          "v": " daha çok soru sormayı, Deniz farklı açıklamaları değerlendirmeyi, Rüzgâr ise önce dinleyip sonra itiraz etmeyi deneyecekti. Hiçbiri her seferinde başarılı olacağını söylemedi. Ama artık takım olarak aynı önemli hatayı birlikte fark edebilecek ortak bir dile artık sahiptiler. Bu bile yeni bir oyuna başlamak için gerçekten güçlü bir başlangıçtı.\n\nRüzgâr afişe uzun uzun baktı. "
+          "v": " daha çok soru sormayı, Deniz farklı açıklamaları değerlendirmeyi, Rüzgâr ise önce dinleyip sonra itiraz etmeyi deneyecekti. Hiçbiri her seferinde başarılı olacağını söylemedi. Ama artık takım olarak aynı önemli hatayı birlikte fark edebilecek ortak bir dile sahiptiler. Bu bile yeni bir oyuna başlamak için gerçekten güçlü bir başlangıçtı.\n\nRüzgâr afişe uzun uzun baktı. "
         },
         {
           "t": "kahraman",
@@ -1020,15 +1020,15 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 6,
-      "metin": "Deniz'in bu sözüyle ne kastedilir?",
+      "metin": "Deniz'in “Bir işaretin yanıltıcı olması hepsinin yanlış olduğu anlamına gelmez.” sözüyle ne kastedilir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Mavi işaretler her zaman doğrudur"
+          "metin": "Mavi renkli işaretler her zaman doğru yolu gösterir"
         },
         {
           "id": "B",
-          "metin": "İşaretler hiç kullanılmamalıdır"
+          "metin": "İşaretlere hiç bakmamak oyunu çözmenin en güvenli yoludur"
         },
         {
           "id": "C",
@@ -1036,7 +1036,7 @@
         },
         {
           "id": "D",
-          "metin": "Haritalar tamamen yanlıştır"
+          "metin": "Haritadaki bütün bilgiler tamamen yanlış olduğu için kullanılmaz"
         }
       ],
       "dogru": "C",
@@ -1050,7 +1050,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tanıklar hep yalan söyler"
+          "metin": "Tanıklar her zaman yalan söyler, bu yüzden hiçbir ifadeye güvenilemez."
         },
         {
           "id": "B",
@@ -1058,11 +1058,11 @@
         },
         {
           "id": "C",
-          "metin": "Hiçbir tanıklık dinlenmemelidir"
+          "metin": "Hiçbir tanıklık dinlenmemeli; olay yalnız fotoğraflara bakılarak anlaşılmalı."
         },
         {
           "id": "D",
-          "metin": "Yalnız ilk tanıklık doğrudur"
+          "metin": "Yalnız ilk tanıklık doğrudur; sonra gelen ifadeler ilkine göre değerlendirilmeli."
         }
       ],
       "dogru": "B",
@@ -1080,15 +1080,15 @@
         },
         {
           "id": "B",
-          "metin": "Bir tür kapı"
+          "metin": "Odadaki kapıların yerini gösteren bir harita"
         },
         {
           "id": "C",
-          "metin": "Bir oyun kuralı"
+          "metin": "Oyunda yardım isteme hakkını anlatan kısa bir kural"
         },
         {
           "id": "D",
-          "metin": "Bir ekip üyesi"
+          "metin": "Ekipte bulmacaları en hızlı çözen kişi"
         }
       ],
       "dogru": "A",

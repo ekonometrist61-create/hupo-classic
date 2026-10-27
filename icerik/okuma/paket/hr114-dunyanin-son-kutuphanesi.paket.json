@@ -1266,15 +1266,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kütüphanedeki boş bir raf"
+          "metin": "Kütüphanedeki boş bir rafın yerini gösteren işaret"
         },
         {
           "id": "B",
-          "metin": "Bir sayfanın kenarındaki boşluk"
+          "metin": "Bir sayfanın kenarında bırakılmış geniş boş alan"
         },
         {
           "id": "C",
-          "metin": "Arşivin kapalı olduğu gün"
+          "metin": "Arşiv görevlisinin tatilde olmasından doğan bir gecikme"
         },
         {
           "id": "D",
@@ -1296,15 +1296,15 @@
         },
         {
           "id": "B",
-          "metin": "Herkesin dikkatini çektiği için"
+          "metin": "Herkesin dikkatini çektiği ve uzun süre tartışıldığı için"
         },
         {
           "id": "C",
-          "metin": "Arşivde yer kapladığı için"
+          "metin": "Arşivde çok yer kapladığı ve sürekli düzenlenmesi gerektiği için"
         },
         {
           "id": "D",
-          "metin": "Kimsenin okumadığı bir bilgi olduğu için"
+          "metin": "Kimsenin okumadığı bir bilgi olarak uzun süre saklandığı için"
         }
       ],
       "dogru": "A",

@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3090,
+        "kelime_sayisi": 3092,
         "tahmini_sure_dk": 27,
         "sayfa_sayisi": 25,
         "soru_sayisi": 4,
@@ -341,7 +341,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Asena Hanım onlara başka bir harita gösterdi: Kentin yağmur suyu akışını anlatan bir plan. Bazı sert yüzeylerden suyun hızla uzaklaştığını, daha geçirgen yüzeylerin farklı davranabildiğini söyledi. Ancak her alanda aynı malzemenin kullanılmayacağını; bakım, güvenlik ve yerel koşulların değerlendirilmesi gerektiğini açıkladı. "
+          "v": "Selma Hanım onlara başka bir harita gösterdi: Kentin yağmur suyu akışını anlatan bir plan. Bazı sert yüzeylerden suyun hızla uzaklaştığını, daha geçirgen yüzeylerin farklı davranabildiğini söyledi. Ancak her alanda aynı malzemenin kullanılmayacağını; bakım, güvenlik ve yerel koşulların değerlendirilmesi gerektiğini açıkladı. "
         },
         {
           "t": "yoldas",
@@ -358,7 +358,7 @@
         },
         {
           "t": "metin",
-          "v": ", ağacın çevresinin yalnız sıcak günlerde değil, yağmurda da nasıl kullanılacağını düşünmeleri gerektiğini anladı. Asena Hanım bu bağlantıyı beğendi ama herhangi bir uygulamanın mutlaka uzman tasarımı gerektireceğini hatırlattı.\n\nRota'nın ekranında iki seçeneği karşılaştırdılar. Birincisi çok kısa ama ağacın koruma alanına giriyordu. İkincisi daha uzun fakat güvenli geçiş ölçütlerine daha çok uyuyordu. Üçüncü seçenekse bazı yönlerden iyi, bazı yönlerden yetersizdi. Çocuklar bütün ölçütlere tek bir sayı vermenin zor olduğunu fark etti. "
+          "v": ", ağacın çevresinin yalnız sıcak günlerde değil, yağmurda da nasıl kullanılacağını düşünmeleri gerektiğini anladı. Selma Hanım bu bağlantıyı beğendi ama herhangi bir uygulamanın mutlaka uzman tasarımı gerektireceğini hatırlattı.\n\nŞehrin rota ekranında iki seçeneği karşılaştırdılar. Birincisi çok kısa ama ağacın koruma alanına giriyordu. İkincisi daha uzun fakat güvenli geçiş ölçütlerine daha çok uyuyordu. Üçüncü seçenekse bazı yönlerden iyi, bazı yönlerden yetersizdi. Çocuklar bütün ölçütlere tek bir sayı vermenin zor olduğunu fark etti. "
         },
         {
           "t": "yoldas",
@@ -449,7 +449,7 @@
         },
         {
           "t": "metin",
-          "v": ", Melek Hanım'ın anlattıklarından sonra kendi büyükbabasını düşündü. Büyükbabası uzun süre yürüyebiliyor ama dinlenecek güvenli bir yer bulamadığında yoruluyordu. Bu yüzden yeni plandaki bankları yalnız süs gibi değil, gerçek bir ihtiyaç olarak görmeye başladı. "
+          "v": ", yaşlı bir komşunun anlattıklarından sonra kendi büyükbabasını düşündü. Büyükbabası uzun süre yürüyebiliyor ama dinlenecek güvenli bir yer bulamadığında yoruluyordu. Bu yüzden yeni plandaki bankları yalnız süs gibi değil, gerçek bir ihtiyaç olarak görmeye başladı. "
         },
         {
           "t": "kahraman",
@@ -682,7 +682,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Maketin ilk denemesinde robot araçların yolunu çizerken çocukların yürüyüş alanını fazla dar bıraktılar. Erva bunun nedenini sordu. "
+          "v": "Maketin ilk denemesinde Rota'nın önerdiği yolu çizerken çocukların yürüyüş alanını fazla dar bıraktılar. Erva bunun nedenini sordu. "
         },
         {
           "t": "yoldas",
@@ -1017,7 +1017,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Robot bozulmuştu"
+          "metin": "Robotun yazılımında geçici bir teknik arıza vardı"
         },
         {
           "id": "B",
@@ -1025,11 +1025,11 @@
         },
         {
           "id": "C",
-          "metin": "Harita çok büyüktü"
+          "metin": "Meydan planı yayalar için fazla karmaşık çizilmişti"
         },
         {
           "id": "D",
-          "metin": "Çocuklar yanlış soru sormuştu"
+          "metin": "Çocukların sorduğu soru robot için anlaşılır değildi"
         }
       ],
       "dogru": "B",

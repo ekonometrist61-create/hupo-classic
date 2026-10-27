@@ -1041,11 +1041,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Işıklar hiç çalışmıyordu"
+          "metin": "Laboratuvardaki bütün ışıklar kesinti sırasında tamamen sönmüştü ve oda karanlıktı"
         },
         {
           "id": "B",
-          "metin": "Bilgisayarlar çok yeniydi"
+          "metin": "Laboratuvardaki bilgisayarlar çok yeni olduğu için hiçbir zaman arıza yapmıyordu"
         },
         {
           "id": "C",
@@ -1053,7 +1053,7 @@
         },
         {
           "id": "D",
-          "metin": "Sınıfta kimse yoktu"
+          "metin": "Sınıfta kimse yoktu, bu yüzden kesintiyi kimse fark etmemiş ve haber verilmemişti"
         }
       ],
       "dogru": "C",
@@ -1063,11 +1063,11 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 7,
-      "metin": "Kahramanın bu cümlesi neyi anlatır?",
+      "metin": "Kahramanın art arda gerçekleşen iki olay hakkında söylediği neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Olaylar hiç birlikte olmaz"
+          "metin": "Aynı anda gerçekleşen olaylar her zaman birbirinin nedenidir"
         },
         {
           "id": "B",
@@ -1075,11 +1075,11 @@
         },
         {
           "id": "C",
-          "metin": "Saat hiç kullanılmamalı"
+          "metin": "Olayların zamanını ölçmek bilimsel çalışmada tamamen gereksizdir"
         },
         {
           "id": "D",
-          "metin": "Her olay aynı nedenden doğar"
+          "metin": "Bir kesinti olduğunda her zaman yalnız tek bir nedeni olur"
         }
       ],
       "dogru": "B",
@@ -1097,15 +1097,15 @@
         },
         {
           "id": "B",
-          "metin": "Bir tür ekran"
+          "metin": "Bilgisayar ekranında kısa süre beliren bir uyarı penceresi"
         },
         {
           "id": "C",
-          "metin": "Bir çeşit kablo"
+          "metin": "Elektrik akımını bir noktadan diğerine taşıyan ince kablo"
         },
         {
           "id": "D",
-          "metin": "Bir oyun kartı"
+          "metin": "Bir oyunda puan hesaplamak için kullanılan küçük kart"
         }
       ],
       "dogru": "A",

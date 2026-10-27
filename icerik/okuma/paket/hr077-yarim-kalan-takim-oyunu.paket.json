@@ -70,7 +70,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3077,
+        "kelime_sayisi": 3076,
         "tahmini_sure_dk": 27,
         "sayfa_sayisi": 26,
         "soru_sayisi": 4,
@@ -819,7 +819,7 @@
         },
         {
           "t": "metin",
-          "v": ", “Ben de senin önünde iki savunmacı olduğunu düşünmemiştim,” diye karşılık verdi. İkisi birbirine baktı. Geçmişteki bir hatayı tekrar görmek, onu yeniden yaşamak zorunda olmak demek değildi. Farklı açılardan bakınca olayın yeni ayrıntıları ortaya çıkabiliyordu. Öğretmen videoyu kapattı ve “Gördüğünüz şeyin size ne öğrettiğini kendi cümlenizle anlatın,” dedi.\n\nSınıf dağıldığında Elvan tahtadaki iki sütuna yeniden baktı. Gözlem ve yorum sözcükleri ilk gün yalnız bir ders etkinliğine benziyordu. Şimdi ise sahada, sınıfta ve arkadaşlarıyla konuşurken kullanabildiği gerçek bir araç olmuştu. Onun için takım olmak artık aynı renkte forma giymekten daha fazlasını anlatıyordu. Birlikte düşünmek, birbirinin sesini duymak ve gerekirse yeniden başlamak da oyunun parçasıydı."
+          "v": ", “Ben de senin önünde iki savunmacı olduğunu düşünmemiştim,” diye karşılık verdi. İkisi birbirine baktı. Geçmişteki bir hatayı tekrar görmek, onu yeniden yaşamak zorunda olmak demek değildi. Farklı açılardan bakınca olayın yeni ayrıntıları ortaya çıkabiliyordu. Öğretmen videoyu kapattı ve “Gördüğünüz şeyin size ne öğrettiğini kendi cümlenizle anlatın,” dedi.\n\nSınıf dağıldığında Elvan tahtadaki sütunlara yeniden baktı. Gözlem ve yorum sözcükleri ilk gün yalnız bir ders etkinliğine benziyordu. Şimdi ise sahada, sınıfta ve arkadaşlarıyla konuşurken kullanabildiği gerçek bir araç olmuştu. Onun için takım olmak artık aynı renkte forma giymekten daha fazlasını anlatıyordu. Birlikte düşünmek, birbirinin sesini duymak ve gerekirse yeniden başlamak da oyunun parçasıydı."
         }
       ]
     },
@@ -878,7 +878,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Maç bitmişti"
+          "metin": "Maç çoktan bitmiş, herkes sahadan ayrılmıştı"
         },
         {
           "id": "B",
@@ -886,11 +886,11 @@
         },
         {
           "id": "C",
-          "metin": "Top kaybolmuştu"
+          "metin": "Top kaybolmuş, yenisi bulunamamıştı"
         },
         {
           "id": "D",
-          "metin": "Hava yağmurluydu"
+          "metin": "Hava çok sıcaktı, oyuncular dinlenmek istedi"
         }
       ],
       "dogru": "B",
@@ -904,15 +904,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Olayın tek bir doğru hikâyesi olduğunu"
+          "metin": "Olayın yalnızca tek bir anlatımla doğru öğrenilebileceğini"
         },
         {
           "id": "B",
-          "metin": "Olayın hiç yaşanmadığını"
+          "metin": "Olayın hiç yaşanmadığını ve bütün anlatımların uydurma olduğunu"
         },
         {
           "id": "C",
-          "metin": "Öğrencilerin yalan söylediğini"
+          "metin": "Öğrencilerin birbirine bilerek yanlış bilgi verdiğini"
         },
         {
           "id": "D",
@@ -930,11 +930,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir oyun kuralı"
+          "metin": "Oyunda hangi takımın top süreceğini belirleyen kural"
         },
         {
           "id": "B",
-          "metin": "Bir tür top"
+          "metin": "Futbolda kullanılan, kaplaması sert bir top türü"
         },
         {
           "id": "C",
@@ -942,7 +942,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir maç kararı"
+          "metin": "Hakemin oyunu durdurmak için verdiği kısa karar"
         }
       ],
       "dogru": "C",

@@ -259,7 +259,7 @@
         },
         {
           "t": "metin",
-          "v": " halka açık bölümüne izinli bir sınıf ziyareti düzenlendi. Görevli, eski belediye bültenlerinin dijital kopyalarını gösterdi. Çocuklar parkın yapımına ilişkin kararları aradı. Bültenlerden birinde parkın 1958'de düzenlenmeye başlandığı yazıyordu. Başka bir belgede 1960 tarihli bir ağaçlandırma çalışması anlatılıyordu. Ancak heykelin açılışı hakkında henüz bilgi yoktu.\n\nBelediye arşivine gittikleri gün büyük pencerenin önünde tozlu görünüşlü bir harita asılıydı. Görevli, haritanın aslının özel koşullarda saklandığını, duvardakinin yüksek kaliteli kopya olduğunu anlattı. "
+          "v": " halka açık bölümüne izinli bir sınıf ziyareti düzenlendi. Görevli, eski belediye bültenlerinin dijital kopyalarını gösterdi. Çocuklar parkın yapımına ilişkin kararları aradı. Bültenlerden birinde parkın 1958'de düzenlenmeye başlandığı yazıyordu. Başka bir belgede 1960 tarihli bir ağaçlandırma çalışması anlatılıyordu. Ancak heykelin açılışı hakkında henüz bilgi yoktu.\n\nBelediye arşivine gittikleri gün büyük pencerenin önünde eskimiş görünüşlü bir harita asılıydı. Görevli, haritanın aslının özel koşullarda saklandığını, duvardakinin yüksek kaliteli kopya olduğunu anlattı. "
         },
         {
           "t": "yoldas",
@@ -1138,15 +1138,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tarihler kesin olarak doğrudur"
+          "metin": "Levhadaki tarihler kesin doğrudur, bu yüzden tartışmaya gerek yoktur"
         },
         {
           "id": "B",
-          "metin": "Park hiç açılmamıştır"
+          "metin": "Park hiç açılmamış, levhadaki tarih de bu yüzden var"
         },
         {
           "id": "C",
-          "metin": "Fotoğraf sahtedir"
+          "metin": "Fotoğraf sahtedir, hiçbir tarihsel bilgi taşımaz"
         },
         {
           "id": "D",
@@ -1168,15 +1168,15 @@
         },
         {
           "id": "B",
-          "metin": "Her olayın başlangıç tarihini"
+          "metin": "Belgede anlatılan olayların hepsinin başlangıç tarihini"
         },
         {
           "id": "C",
-          "metin": "Belgenin hazırlandığı gün dışında hiçbir şeyi"
+          "metin": "Belgenin hazırlandığı günden başka hiçbir olayın tarihini göstermez"
         },
         {
           "id": "D",
-          "metin": "Sadece parkın yapım yılını"
+          "metin": "Yalnızca parkın ilk yapıldığı yılı ve kurucusunu gösterir"
         }
       ],
       "dogru": "A",
@@ -1190,11 +1190,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür fotoğraf"
+          "metin": "Eski bir belediye bülteninin ilk sayfasındaki başlık"
         },
         {
           "id": "B",
-          "metin": "Parkta oynanan bir oyun"
+          "metin": "Parkta çocuklar için düzenlenen bir yarışmanın kuralı"
         },
         {
           "id": "C",
@@ -1202,7 +1202,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir çeşit levha"
+          "metin": "Ağaç gövdelerine çakılan, yaşı ölçmeye yarayan bir bant"
         }
       ],
       "dogru": "C",

@@ -86,7 +86,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3993,
+        "kelime_sayisi": 3991,
         "tahmini_sure_dk": 30,
         "sayfa_sayisi": 34,
         "soru_sayisi": 5,
@@ -106,7 +106,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Bulanık bir mektubun sözcüğü “kilit” mi, “kilim” mi? {kahraman} ile {yoldas:yalin|bir arkadaşı} gizli oda yerine bağlamı, kanıtı ve emanetin anlamını araştırır.",
+    "tanitim": "Bulanık bir mektubun sözcüğü “kilit” mi, “kilim” mi? {kahraman} ile {yoldas:yalin|bir arkadaş} gizli oda yerine bağlamı, kanıtı ve emanetin anlamını araştırır.",
     "durum": "taslak",
     "fis_kodu": "HR-103"
   },
@@ -125,14 +125,6 @@
         {
           "t": "metin",
           "v": ", eski kâğıtları hayal ettiğinden daha az romantik bulmuştu. Beyaz eldivenler, tarama ışıkları, kayıt numaraları ve sürekli tekrar edilen “Orijinale dokunma” uyarıları vardı. Yine de ekranın üzerinde yüz yıl öncesinden kalma bir mektubun görüntüsü belirdiğinde nefesi kesildi.\n\nMektubun son satırındaki iki sözcük bulanıktı. Öğrencilerden biri “kilit” okudu. Diğeri “kilim” dedi. Üçüncü öğrenci satırın başındaki işaretlerin “kılıç” kelimesine benzediğini iddia etti. Cümlenin devamında eski evin deposundan söz ediliyordu. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " arkadaşı "
         },
         {
           "t": "yoldas",
@@ -1024,7 +1016,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Kütüphanedeki sergi günü yaklaştığında ekip bir pano hazırladı. En üstte büyük harflerle “Son Şifre” yazıyordu. Altında ise küçük bir açıklama vardı: Bu gerçek bir şifre olmayabilir; doğru okumak için kaynakları karşılaştırdığımız bir metindir. Bir yanda ilk tarama, öte yanda daha net ikinci belge bulunuyordu. Yanlarında uzman görüşünün özeti ve kullanılan yöntemin adımları yer alıyordu.\n\nZiyaretçilerden biri “Peki o kilim nerede?” diye sordu. Nevin Hanım, aile belgelerinde örneklerden söz edildiğini ama bugün nerede bulunduklarını bilmediklerini açıkladı. İzin verilmemiş özel depolarda arama yapılmayacağını, bulundukları varsayılan evlerin konumlarının sergide duyurulmayacağını söyledi. "
+          "v": "Kütüphanedeki sergi günü yaklaştığında ekip bir pano hazırladı. En üstte büyük harflerle “Son Şifre” yazıyordu. Altında ise küçük bir açıklama vardı: Bu gerçek bir şifre olmayabilir; doğru okumak için kaynakları karşılaştırdığımız bir metindir. Bir yanda ilk tarama, öte yanda daha net ikinci belge bulunuyordu. Yanlarında uzman görüşünün özeti ve kullanılan yöntemin adımları yer alıyordu.\n\nZiyaretçilerden biri “Peki o kilim nerede?” diye sordu. Nevin Hanım, aile belgelerinde örneklerden söz edildiğini ama bugün nerede bulunduklarını bilmediklerini açıkladı. İzin verilmemiş özel depolarda arama yapılmayacağını, bulunduğu sanılan evlerin konumlarının sergide duyurulmayacağını söyledi. "
         },
         {
           "t": "kahraman",
@@ -1262,7 +1254,7 @@
         },
         {
           "t": "metin",
-          "v": " güldü. “Bunu ödev kuralı yapalım.”\n\nErtesi ders Türkçe öğretmenleri tahtaya “emanet” kelimesini yazdı. Çocuklardan sözcüğü farklı cümlelerde kullanmalarını istedi. Biri ödünç bırakılan bir kitaptan, diğeri bakımı üstlenilen bir hayvandan, üçüncüsü de gelecek kuşaklara aktarılan kültürel mirastan söz etti. "
+          "v": " güldü. “Bunu ödev kuralı yapalım.”\n\nErtesi ders Türkçe öğretmeni tahtaya “emanet” kelimesini yazdı. Çocuklardan sözcüğü farklı cümlelerde kullanmalarını istedi. Biri ödünç bırakılan bir kitaptan, diğeri bakımı üstlenilen bir hayvandan, üçüncüsü de gelecek kuşaklara aktarılan kültürel mirastan söz etti. "
         },
         {
           "t": "kahraman",
@@ -1507,7 +1499,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir sırrı herkese açıklamayı"
+          "metin": "Ortak bir eşyayı kendi malı gibi kullanmayı"
         }
       ],
       "dogru": "B",
@@ -1521,15 +1513,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Görüntünün kolay okunmasını"
+          "metin": "Görüntünün ilk bakışta kolay okunmasını"
         },
         {
           "id": "B",
-          "metin": "Görüntünün renkli olmasını"
+          "metin": "Görüntünün renkli ve canlı görünmesini"
         },
         {
           "id": "C",
-          "metin": "Görüntünün tarihini"
+          "metin": "Görüntünün çekildiği tarihi göstermesini"
         },
         {
           "id": "D",
@@ -1547,11 +1539,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Mektubun yazarını bilmediklerini"
+          "metin": "Mektubu kimin yazdığını ve yazarın niyetini bilmediklerini"
         },
         {
           "id": "B",
-          "metin": "Mektubun kâğıdını bilmediklerini"
+          "metin": "Mektubun hangi kâğıda ve mürekkeple yazıldığını bilmediklerini"
         },
         {
           "id": "C",
@@ -1569,7 +1561,7 @@
       "id": "s5",
       "beceri": "degerlendirme",
       "dayanak_sayfa": 29,
-      "metin": "Bu cümleye göre bir okuma önerisini değerlendirmenin en doğru yolu nedir?",
+      "metin": "Kahramanın söylediği “Bir öneri doğru olmayabilir, ama onu gerekçesiyle incelediğimizde neyi bilmediğimizi görürüz.” cümlesine göre bir okuma önerisini değerlendirmenin en doğru yolu nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -1577,15 +1569,15 @@
         },
         {
           "id": "B",
-          "metin": "Önerinin önemli olduğunu kabul etmek"
+          "metin": "Önerinin önemli bir bilgi içerdiğini baştan kabul etmek"
         },
         {
           "id": "C",
-          "metin": "En çok beğenilen öneriyi seçmek"
+          "metin": "Önerileri arasından en çok beğenilen olanı seçmek"
         },
         {
           "id": "D",
-          "metin": "Önerinin yazarına bakarak karar vermek"
+          "metin": "Önerinin yazarının ünlü biri olmasına bakarak karar vermek"
         }
       ],
       "dogru": "A",

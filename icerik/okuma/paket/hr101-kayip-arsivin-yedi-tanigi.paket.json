@@ -85,7 +85,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 4082,
+        "kelime_sayisi": 4085,
         "tahmini_sure_dk": 31,
         "sayfa_sayisi": 32,
         "soru_sayisi": 5,
@@ -1310,7 +1310,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Açılış günü yaşlı bir ziyaretçi panonun önünde uzun süre durdu. Fotoğrafta görünmüyordu; köprünün o günkü kalabalığını da hatırlamıyordu. Fakat alt yazıya eklenen “tarih kesinleşmedi” ifadesinin yanına konmuş kaynak notlarını tek tek okudu. “Demek eskiden fotoğrafları yalnızca albüme koymuyorlarmış,” dedi. "
+          "v": "Sergi açık olduğu günlerden birinde yaşlı bir ziyaretçi panonun önünde uzun süre durdu. Fotoğrafta görünmüyordu; köprünün o günkü kalabalığını da hatırlamıyordu. Fakat alt yazıya eklenen “tarih kesinleşmedi” ifadesinin yanına konmuş kaynak notlarını tek tek okudu. “Demek eskiden fotoğrafları yalnızca albüme koymuyorlarmış,” dedi. "
         },
         {
           "t": "kahraman",
@@ -1432,7 +1432,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tanıkların hepsini sergiden çıkarmayı"
+          "metin": "Tanıkların hepsini sergiden çıkarıp yalnızca kesin tarihli belgeleri göstermeyi"
         },
         {
           "id": "B",
@@ -1440,11 +1440,11 @@
         },
         {
           "id": "C",
-          "metin": "Yalnızca ilk tanığı dinlemeyi"
+          "metin": "Yalnızca ilk tanığın anlatısını dinleyip diğerlerini hiç dikkate almamayı"
         },
         {
           "id": "D",
-          "metin": "Fotoğrafın arkasını tamamen silmeyi"
+          "metin": "Fotoğrafın arkasındaki bütün yazıları tamamen silip ayrıntıları gizlemeyi"
         }
       ],
       "dogru": "B",
@@ -1462,15 +1462,15 @@
         },
         {
           "id": "B",
-          "metin": "Bir fotoğrafın kopyası"
+          "metin": "Aynı fotoğrafın yeniden basılmış bir kopyası"
         },
         {
           "id": "C",
-          "metin": "Sergi için yapılan bir afiş"
+          "metin": "Sergi için hazırlanmış büyük bir tanıtım afişi"
         },
         {
           "id": "D",
-          "metin": "Bir köprünün adı"
+          "metin": "Şehirdeki eski bir köprünün resmî adı"
         }
       ],
       "dogru": "A",
@@ -1488,15 +1488,15 @@
         },
         {
           "id": "B",
-          "metin": "Her kanıt kesin tarihi gösterir"
+          "metin": "Her kanıt kesin tarihi gösterir ve araştırma bu yüzden hemen biter"
         },
         {
           "id": "C",
-          "metin": "Kanıt yalnızca yazılı belgelerden oluşur"
+          "metin": "Kanıt yalnızca yazılı belgelerden oluşur, sözlü anlatılar hiçbir değer taşımaz"
         },
         {
           "id": "D",
-          "metin": "Kanıtlar araştırmada önemsizdir"
+          "metin": "Kanıtlar araştırmada önemsizdir; tanıkların sözleri tek başına yeterlidir"
         }
       ],
       "dogru": "A",

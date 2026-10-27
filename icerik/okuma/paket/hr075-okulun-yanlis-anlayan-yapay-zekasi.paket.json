@@ -222,7 +222,7 @@
         },
         {
           "t": "metin",
-          "v": " acele etmedi. Aynı sözü iki ayrı cümlede denemelerini önerdi: Bahçede küçük kardeşime göz kulak oldum. ve Biyoloji kitabında göz ve kulak resimleri var. Çınar ikisini de organlarla ilişkilendirdi. Oysa ilk cümlede birini kollamak anlamı vardı. "
+          "v": " acele etmedi. Aynı sözü iki ayrı cümlede denemelerini önerdi: “Bahçede küçük kardeşime göz kulak oldum.” ve “Biyoloji kitabında göz ve kulak resimleri var.” Çınar ikisini de organlarla ilişkilendirdi. Oysa ilk cümlede birini kollamak anlamı vardı. "
         },
         {
           "t": "kahraman",
@@ -815,7 +815,7 @@
     "hr075_etekleri": [
       {
         "t": "metin",
-        "v": "Üçüncü grup deyimleri ele aldı ve “Etekleri zil çalmak” sözü için gerçek bir zilin gerekli olmadığını anlattı."
+        "v": "Bir grup deyimleri ele aldı ve “Etekleri zil çalmak” sözü için gerçek bir zilin gerekli olmadığını anlattı."
       }
     ]
   },
@@ -854,15 +854,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yalnız sözlükteki ilk anlama bakılarak"
+          "metin": "Yalnız sözlükteki ilk verilen anlama bakılarak"
         },
         {
           "id": "B",
-          "metin": "Sözcüğün harf sayısına bakılarak"
+          "metin": "Sözcüğün harf sayısına ve yazılışına bakılarak"
         },
         {
           "id": "C",
-          "metin": "Hiç kimse anlamını bilemez"
+          "metin": "Hiç kimse bir sözcüğün anlamını kesin olarak bilemez"
         },
         {
           "id": "D",
@@ -884,15 +884,15 @@
         },
         {
           "id": "B",
-          "metin": "Sesteş sözcükler hiç kullanılmaz"
+          "metin": "Sesteş sözcükler yalnız şiirde ve masallarda kullanılır"
         },
         {
           "id": "C",
-          "metin": "Yalnız çiçek adları sesteştir"
+          "metin": "Sesteş sözcükler ancak aynı anlama gelen kelimelerden oluşur"
         },
         {
           "id": "D",
-          "metin": "Her sözcük yalnız bir anlam taşır"
+          "metin": "Her sözcüğün cümle içinde değişmeyen tek bir anlamı vardır"
         }
       ],
       "dogru": "A",
@@ -906,11 +906,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür oyun"
+          "metin": "Çocukların sınıfta oynadığı bir kelime türetme oyunu"
         },
         {
           "id": "B",
-          "metin": "Ekranda çıkan bir resim"
+          "metin": "Ekranda kısa süre beliren, sesli bildirim veren bir resim"
         },
         {
           "id": "C",
@@ -918,7 +918,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir zil sesi"
+          "metin": "Okul zilinin çaldığını haber veren kısa bir uyarı sesi"
         }
       ],
       "dogru": "C",

@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3013,
+        "kelime_sayisi": 3015,
         "tahmini_sure_dk": 27,
         "sayfa_sayisi": 23,
         "soru_sayisi": 4,
@@ -213,7 +213,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Öğretmenleri Ayten Hanım sınıflarını deniz kıyısındaki tarih müzesine getirmişti. Çocuklar eski "
+          "v": "Öğretmenleri Ayten Hanım sınıflarını deniz kıyısındaki tarih müzesine getirmişti. Çocuklar "
         },
         {
           "t": "kelime",
@@ -221,7 +221,7 @@
         },
         {
           "t": "metin",
-          "v": " nasıl oluştuğunu ve bir kıyı yerleşiminin neden zaman içinde değişebileceğini araştıracaktı. Müze uzmanı Uğur Bey, maketin gerçek buluntulardan ve bilimsel bilgilere dayanan birden fazla olasılıktan esinlenilerek hazırlandığını anlattı. \"Bir maketin güzel görünmesi onu tek başına kanıt yapmaz,\" dedi.\n\n"
+          "v": " yollarının eski çağlarda nasıl oluştuğunu ve bir kıyı yerleşiminin neden zaman içinde değişebileceğini araştıracaktı. Müze uzmanı Uğur Bey, maketin gerçek buluntulardan ve bilimsel bilgilere dayanan birden fazla olasılıktan esinlenilerek hazırlandığını anlattı. \"Bir maketin güzel görünmesi onu tek başına kanıt yapmaz,\" dedi.\n\n"
         },
         {
           "t": "yoldas",
@@ -630,7 +630,7 @@
         },
         {
           "t": "metin",
-          "v": " bu satırı iki kez okudu. Macera, bilmediğin bir yere gizlice girmek değil, doğru yöntemle yeni bilgiye ulaşmaktı.\n\nMüze ziyaretini anlattıkları okul gazetesinde editör, çok heyecanlı bir başlık istedi. \"Denizin Yuttuğu Gerçek Şehir Bulundu!\" diye önerdi. "
+          "v": " bu satırı iki kez okudu. Macera, bilmediği bir yere gizlice girmek değil, doğru yöntemle yeni bilgiye ulaşmaktı.\n\nMüze ziyaretini anlattıkları okul gazetesinde editör, çok heyecanlı bir başlık istedi. \"Denizin Yuttuğu Gerçek Şehir Bulundu!\" diye önerdi. "
         },
         {
           "t": "yoldas",
@@ -840,15 +840,15 @@
         },
         {
           "id": "B",
-          "metin": "İkisi her zaman aynıdır"
+          "metin": "Kıyıdaki düzenlemeler ile deniz seviyesindeki değişim her zaman aynı süreçtir"
         },
         {
           "id": "C",
-          "metin": "Deniz seviyesi hiç değişmez"
+          "metin": "Deniz seviyesi hiç değişmez, bu yüzden kıyı çizgisi de hiçbir zaman değişmez"
         },
         {
           "id": "D",
-          "metin": "Kıyılar yalnız insanlarca değişir"
+          "metin": "Kıyılar yalnız insanların yaptığı düzenlemelerle değişir, doğal süreçler etkili olmaz"
         }
       ],
       "dogru": "A",
@@ -862,7 +862,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kanıt olarak kullanılır"
+          "metin": "Müzeye gelen ziyaretçilere hikâyeyi eğlenceli anlatmaya yarar"
         },
         {
           "id": "B",
@@ -870,11 +870,11 @@
         },
         {
           "id": "C",
-          "metin": "Gerçek bir kenti birebir gösterir"
+          "metin": "Kentin geçmişteki her ayrıntısını tam olarak kanıtlar"
         },
         {
           "id": "D",
-          "metin": "Yalnız süs eşyasıdır"
+          "metin": "Müzede yalnızca dekor olarak konmuş, işlevi olmayan bir parçadır"
         }
       ],
       "dogru": "B",
@@ -888,11 +888,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir kap türü"
+          "metin": "Eski kentlerde su taşımak için kullanılan bir kap türü"
         },
         {
           "id": "B",
-          "metin": "Bir yelken"
+          "metin": "Gemiye bağlanan, yük taşımak için kullanılan kalın bir ip"
         },
         {
           "id": "C",
@@ -900,7 +900,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir tahta parçası"
+          "metin": "Kıyıdaki kayaların üzerinde biriken ince bir tortu"
         }
       ],
       "dogru": "C",

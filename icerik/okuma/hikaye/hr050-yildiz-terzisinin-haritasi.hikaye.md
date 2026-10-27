@@ -36,9 +36,9 @@ etiketler:
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Düğme ne zaman düştü?", secenekler: [{id: A, metin: "Sabah altıda"}, {id: B, metin: "Öğlen"}, {id: C, metin: "Akşam beşte"}, {id: D, metin: "Gece on ikide"}], dogru: D, aciklama: "Saat kulesindeki akrep gece on ikiyi gösterirken düğme düştü."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Kahraman neden rahatladı?", secenekler: [{id: A, metin: "Yıldızların uzak cisimler, hayalî çizgilerin ise desen olduğunu bildiği için"}, {id: B, metin: "Terzinin çok yaşlı olduğu için"}, {id: C, metin: "Kardeşinin uyuduğu için"}, {id: D, metin: "Düğmenin altın olduğu için"}], dogru: A, aciklama: "Kahraman, astronomi bilgisiyle gökyüzündeki hayalî çizgileri gerçek yıldız bağlantılarından ayırabiliyordu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "Kahramana göre takımyıldızı çizgileri nasıl görülmeli?", secenekler: [{id: A, metin: "Gerçek yıldız bağları olarak"}, {id: B, metin: "Hiç görülmemesi gereken çizgiler olarak"}, {id: C, metin: "Yalnız gündüz görülen çizgiler olarak"}, {id: D, metin: "Tek doğru değil, farklı hikâyelerle birleşebilen desenler olarak"}], dogru: D, aciklama: "Takımyıldızları kültürlere göre farklı hikâyelerle anlatılabilir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen pusula ne işe yarar?", secenekler: [{id: A, metin: "Yıldız çizer"}, {id: B, metin: "Yönleri göstermeye yarar"}, {id: C, metin: "Düğme diker"}, {id: D, metin: "Ay'ı büyütür"}], dogru: B, aciklama: "Pusula, yönleri bulmada kullanılan bir araçtır."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Kahraman neden rahatladı?", secenekler: [{id: A, metin: "Yıldızların uzak cisimler, hayalî çizgilerin ise desen olduğunu bildiği için"}, {id: B, metin: "Terzinin yıldızları tamir edebileceğine inandığı için"}, {id: C, metin: "Kardeşinin uyandığını ve artık yalnız olmadığını gördüğü için"}, {id: D, metin: "Düğmenin altından yapıldığını ve değerli olduğunu anladığı için"}], dogru: A, aciklama: "Kahraman, astronomi bilgisiyle gökyüzündeki hayalî çizgileri gerçek yıldız bağlantılarından ayırabiliyordu."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "Kahramana göre takımyıldızı çizgileri nasıl görülmeli?", secenekler: [{id: A, metin: "Yıldızları fiziksel olarak birbirine bağlayan gerçek yollar olarak"}, {id: B, metin: "Gökyüzünü kirleten, hiç görülmemesi gereken çizgiler olarak"}, {id: C, metin: "Yalnız gündüz ve ışıklı kentlerde görülebilen çizgiler olarak"}, {id: D, metin: "Tek doğru değil, farklı hikâyelerle birleşebilen desenler olarak"}], dogru: D, aciklama: "Takımyıldızları kültürlere göre farklı hikâyelerle anlatılabilir."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen pusula ne işe yarar?", secenekler: [{id: A, metin: "Gökyüzüne yeni yıldızlar çizer ve parlatır"}, {id: B, metin: "Yönleri bulmak için gözlemcilere yol gösterir"}, {id: C, metin: "Terzinin düğmelerini gökyüzüne diker ve bağlar"}, {id: D, metin: "Gece gökyüzündeki bulutları dağıtarak açar"}], dogru: B, aciklama: "Pusula, yönleri bulmada kullanılan bir araçtır."}
 deyim_cumleleri:
   hr050_kafasi_karismak: "Bazen iyi niyetle verilen çok fazla öneri de insanın kafasını karıştırabilirdi."
 ---
@@ -47,7 +47,7 @@ Kasabanın saat kulesindeki akrep, gece on ikiyi gösterirken gökyüzünden bir
 
 Düğmeyi bulan {kahraman}, onu bahçelerindeki masanın üzerine koydu. Bir taş kadar soğuktu ama parmaklarını çektiğinde masanın üzerinde ince bir ışık izi bırakıyordu. {kahraman} beşinci sınıfa gidiyordu; yıldızlarla ilgilenmeyi sever, bazen {kelime:hr050_teleskop} olan komşuları Gülseren Hanım'ın gözlemlerine katılırdı. Yine de gökyüzünden düğme düştüğünü hiçbir kitapta okumamıştı.
 
-“Birileri göğe gömlek mi dikiyor?” diye güldü kardeşi {yoldas:yalin|bir arkadaş}.
+“Birileri göğe gömlek mi dikiyor?” diye güldü {yoldas:yalin|bir arkadaş}.
 
 Şaka gibi görünen söz, ertesi gece tuhaf biçimde gerçek oldu. {kahraman} pencereden baktığında karşı apartmanın çatısında uzun şapkalı birinin gümüş ipliklerle uğraştığını gördü. Yabancı kişi yukarı doğru ince bir iğne uzatıyor, yıldızların arasına ışıklı çizgiler örüyordu. Bir an sonra bir yıldız kümesindeki üç nokta yer değiştirdi. {kahraman} gözlerini ovuşturdu. Çizgiler yeniden göründüğünde gökyüzündeki şekil artık bildiği gibi değildi.
 ---
@@ -146,7 +146,7 @@ Ertesi gün okulda {kahraman:ilgi} anlattıklarına herkes inanmadı. Bazıları
 Bahar geldiğinde yıldız gecesini tekrarladılar. Bu kez {kahraman} yeni gelen öğrencilere kendi öğrendiklerini anlattı, ama önce onlara gökyüzünde ne gördüklerini sordu. Bir çocuk üç yıldızı bir çiçek, bir başkası bir taç gibi çizdi. {kahraman} ikisinin resmini de panoya astı. Panonun altına bilimsel bilgilerle hayalî çizimlerin farklı renklerle yazıldığı küçük bir anahtar ekledi. Böylece kimse hangi bilginin gözlem, hangisinin yaratıcı yorum olduğunu karıştırmadı. Gülseren Hanım, “En iyi haritalar bazen nereye baktığını değil, nasıl baktığını da öğretir,” dedi. {kahraman} kuzeyi işaretleyen oku yeniden kontrol etti, sonra başını kaldırdı. Yıldızlar yerindeydi; değişen, onları okuyan gözlerdi.
 ---
 @omurga
-{yoldas:yalin|bir arkadaş}, defterin sonuna küçük bir yıldız çizip altına şunu yazdı: “Bir sorunun cevabını bulamadığımda onu silmeyeceğim. Daha iyi bir gözlem için saklayacağım.” {kahraman} kardeşinin cümlesini görünce gülümsedi.
+{yoldas:yalin|bir arkadaş}, defterin sonuna küçük bir yıldız çizip altına şunu yazdı: “Bir sorunun cevabını bulamadığımda onu silmeyeceğim. Daha iyi bir gözlem için saklayacağım.” {kahraman} bu cümleyi görünce gülümsedi.
 ---
 @omurga
 - Kavramlar: Yön, gökyüzü gözlemi, takımyıldızı, ışık kirliliği. - Dil: “Gökyüzüne yama yapmak” mecazı; gözlem ile yorum ayrımı. - Bilimsel not: Takımyıldızı çizgileri hayalîdir; yıldızların fiziksel olarak birbirine bağlandığı iddia edilmez.

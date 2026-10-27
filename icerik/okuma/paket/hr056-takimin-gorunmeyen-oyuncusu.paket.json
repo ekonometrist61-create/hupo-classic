@@ -132,7 +132,7 @@
         },
         {
           "t": "metin",
-          "v": " Öğretmenleri Cenk Bey, takımlara ilk deneme için on dakika verdiğinde sessizce kenara oturdu. Robot ilk "
+          "v": " Öğretmenleri Cenk Bey, takımlara ilk deneme için on dakika verdiğinde Deniz sessizce kenara oturdu. Robot ilk "
         },
         {
           "t": "kelime",
@@ -140,7 +140,7 @@
         },
         {
           "t": "metin",
-          "v": " hızlı girdi, çizgiyi kaçırıp karton duvara çarptı. Toprak "
+          "v": "a hızlı girdi, çizgiyi kaçırıp karton duvara çarptı. Toprak "
         },
         {
           "t": "kelime",
@@ -148,7 +148,7 @@
         },
         {
           "t": "metin",
-          "v": " bozuk olduğunu düşündü. "
+          "v": "ün bozuk olduğunu düşündü. "
         },
         {
           "t": "yoldas",
@@ -288,7 +288,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Toprak, sensörün bozuk olduğundan çok emindi. Eve gidince kendi kendine küçük bir deneme yapmak istemişti. Öğretmeninden izin alarak okulun kulüp saatinde aynı sensörü farklı hızlarda test etti. Sonuçları görünce sensörün çoğu koşulda doğru çalıştığı ortaya çıktı. Toprak biraz utandı; çünkü ilk anda sorun olduğunu düşündüğü parçayı suçlamıştı. Deniz ona “Ben de bazen harita çizince her şeyin çözüleceğini sanıyorum,” dedi. “Ama plan işe yarıyor mu diye denememiz gerekiyor.” Toprak, bu sözden sonra Deniz'i daha dikkatle dinlemeye başladı. İkisinin de elindeki bilgi tek başına yeterli değildi.\n\nEce, süreleri kaydederken küçük bir yöntem geliştirdi. Tek bir denemeye bakmak yerine üç denemenin sonuçlarını yan yana yazıyordu. Bir denemede robot çok hızlı gitmiş ama çizgiyi kaçırmıştı. Başka birinde yavaş ilerlemiş ama hedefe ulaşmıştı. Ece, yarışta yalnız hızın değil, parkuru tamamlamanın da puan getirdiğini hatırlattı. “En hızlı denememiz her zaman en iyi denememiz değil,” dedi. "
+          "v": "Toprak, sensörün bozuk olduğundan çok emindi ve bunu kendi kendine denemek istiyordu. Öğretmeninden izin alarak okulun kulüp saatinde aynı sensörü farklı hızlarda test etti. Sonuçları görünce sensörün çoğu koşulda doğru çalıştığı ortaya çıktı. Toprak biraz utandı; çünkü ilk anda sorun olduğunu düşündüğü parçayı suçlamıştı. Deniz ona “Ben de bazen harita çizince her şeyin çözüleceğini sanıyorum,” dedi. “Ama plan işe yarıyor mu diye denememiz gerekiyor.” Toprak, bu sözden sonra Deniz'i daha dikkatle dinlemeye başladı. İkisinin de elindeki bilgi tek başına yeterli değildi.\n\nEce, süreleri kaydederken küçük bir yöntem geliştirdi. Tek bir denemeye bakmak yerine üç denemenin sonuçlarını yan yana yazıyordu. Bir denemede robot çok hızlı gitmiş ama çizgiyi kaçırmıştı. Başka birinde yavaş ilerlemiş ama hedefe ulaşmıştı. Ece, yarışta yalnız hızın değil, parkuru tamamlamanın da puan getirdiğini hatırlattı. “En hızlı denememiz her zaman en iyi denememiz değil,” dedi. "
         },
         {
           "t": "yoldas",
@@ -566,11 +566,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Sensörün kırık olduğunu"
+          "metin": "Sensörün kırık olduğunu ve yeni parça alınması gerektiğini"
         },
         {
           "id": "B",
-          "metin": "Yarışın bittiğini"
+          "metin": "Yarışın erken bittiğini ve takımın ödül alamayacağını"
         },
         {
           "id": "C",
@@ -578,7 +578,7 @@
         },
         {
           "id": "D",
-          "metin": "Okulun kapandığını"
+          "metin": "Okulun turnuva alanının küçüldüğünü ve masaların kaldırıldığını"
         }
       ],
       "dogru": "C",
@@ -596,15 +596,15 @@
         },
         {
           "id": "B",
-          "metin": "Kimseye göstermemek için"
+          "metin": "Takım arkadaşlarının onları görmesini istemediği ve utandığı için"
         },
         {
           "id": "C",
-          "metin": "Silmek için"
+          "metin": "Bu denemeleri yarış sonrasında tamamen unutmak istediği için"
         },
         {
           "id": "D",
-          "metin": "Öğretmen istediği için"
+          "metin": "Öğretmenleri bu denemeleri ayrıca değerlendirmeyi istediği için"
         }
       ],
       "dogru": "A",
@@ -618,7 +618,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir oyun kartı"
+          "metin": "Oyunda sıra belirlemek için kullanılan küçük bir kart"
         },
         {
           "id": "B",
@@ -626,11 +626,11 @@
         },
         {
           "id": "C",
-          "metin": "Bir tür viraj"
+          "metin": "Robotun hızlı dönüş yaptığı yere verilen ad"
         },
         {
           "id": "D",
-          "metin": "Bir kâğıt türü"
+          "metin": "Parkur çizmek için kullanılan kalın bir kâğıt türü"
         }
       ],
       "dogru": "B",

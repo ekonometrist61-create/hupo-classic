@@ -86,7 +86,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3978,
+        "kelime_sayisi": 3977,
         "tahmini_sure_dk": 30,
         "sayfa_sayisi": 33,
         "soru_sayisi": 5,
@@ -1481,7 +1481,7 @@
         },
         {
           "t": "metin",
-          "v": ", kendi yolculuğunun romanın yarışına benzemediğini özellikle yazdı. Seyahat günlüğünün en önemli sayfası, hedefe vardığı gün değil, acele etmeden bir soruyu yeniden sorduğu gündü. Bu farkı silmek istemedi."
+          "v": ", kendi yolculuğunun romandaki yarışa benzemediğini özellikle yazdı. Seyahat günlüğünün en önemli sayfası, hedefe vardığı gün değil, acele etmeden bir soruyu yeniden sorduğu gündü. Bu farkı silmek istemedi."
         }
       ]
     },
@@ -1610,7 +1610,7 @@
         },
         {
           "t": "metin",
-          "v": " annesi onu evde karşıladığında çantanın içinden ilk olarak bir bilet çıkartması düştü. Üzerinde tarih ve saat yazıyordu. "
+          "v": " annesi onu evde karşıladığında çantanın içinden ilk olarak bir bilet düştü. Üzerinde tarih ve saat yazıyordu. "
         },
         {
           "t": "kahraman",
@@ -1801,7 +1801,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir trenin fiyatını"
+          "metin": "Bir trenin bilet fiyatını ve koltuk numarasını"
         },
         {
           "id": "B",
@@ -1809,11 +1809,11 @@
         },
         {
           "id": "C",
-          "metin": "Bir kitabın adını"
+          "metin": "Gezi rehberindeki bir kitabın adını ve yazarını"
         },
         {
           "id": "D",
-          "metin": "Hava durumunu"
+          "metin": "Bulunulan kentin hava durumunu ve sıcaklığını"
         }
       ],
       "dogru": "B",
@@ -1823,7 +1823,7 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 3,
-      "metin": "Yoldaşın bu sözüne göre bir topluluk hakkında ne yapılmalıdır?",
+      "metin": "Yoldaşın “Bir topluluğun alışkanlığını tek bir akşamdan çıkaramazsın.” sözüne göre bir topluluk hakkında ne yapılmalıdır?",
       "secenekler": [
         {
           "id": "A",
@@ -1835,11 +1835,11 @@
         },
         {
           "id": "C",
-          "metin": "Tek bir akşama bakılarak hüküm verilmelidir"
+          "metin": "Tek bir akşama bakılarak kesin bir hüküm verilmelidir"
         },
         {
           "id": "D",
-          "metin": "Topluluk hakkında hiç konuşulmamalıdır"
+          "metin": "Topluluk hakkında kimseyle hiç konuşulmamalıdır"
         }
       ],
       "dogru": "B",
@@ -1853,11 +1853,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Her deneyimin toplumu temsil ettiği"
+          "metin": "Her deneyimin bütün bir toplumu temsil ettiği"
         },
         {
           "id": "B",
-          "metin": "Yolculukların hiçbir öğretici yanı olmadığı"
+          "metin": "Yolculukların hiçbir öğretici ve açıklayıcı yanı olmadığı"
         },
         {
           "id": "C",
@@ -1865,7 +1865,7 @@
         },
         {
           "id": "D",
-          "metin": "Her kentin aynı olduğu"
+          "metin": "Bütün kentlerin hemen hemen aynı özellikleri taşıdığı"
         }
       ],
       "dogru": "C",
@@ -1879,15 +1879,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir yolculuğun uzunluğu"
+          "metin": "Bir yolculuğun ne kadar sürdüğü ve uzunluğu"
         },
         {
           "id": "B",
-          "metin": "Bir ürünün fiyatı"
+          "metin": "Bir ürünün pazardaki fiyatı ve satış koşulu"
         },
         {
           "id": "C",
-          "metin": "Bir kitabın sayfa sayısı"
+          "metin": "Bir kitabın sayfa sayısı ve baskı yılı"
         },
         {
           "id": "D",
@@ -1901,7 +1901,7 @@
       "id": "s5",
       "beceri": "degerlendirme",
       "dayanak_sayfa": 18,
-      "metin": "Yoldaşın sözüne göre kahramanın doğru tutumu nedir?",
+      "metin": "Yoldaşın “Bir sorumluluğu kabul etmekle bütün suçu tek başına taşımak farklı.” sözüne göre kahramanın doğru tutumu nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -1909,15 +1909,15 @@
         },
         {
           "id": "B",
-          "metin": "Her şeyi tek başına üstlenmek"
+          "metin": "Yaşanan her şeyin bütün sorumluluğunu tek başına üstlenmek"
         },
         {
           "id": "C",
-          "metin": "Hiçbir sorumluluk almamak"
+          "metin": "Yaşanan olaylarla ilgili hiçbir sorumluluk almayıp geçiştirmek"
         },
         {
           "id": "D",
-          "metin": "Yanlışı başkasına yüklemek"
+          "metin": "Yaşanan yanlışı tamamen başka birinin üzerine yüklemek"
         }
       ],
       "dogru": "A",

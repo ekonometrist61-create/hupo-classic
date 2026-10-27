@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3521,
+        "kelime_sayisi": 3524,
         "tahmini_sure_dk": 29,
         "sayfa_sayisi": 27,
         "soru_sayisi": 4,
@@ -133,7 +133,7 @@
         },
         {
           "t": "metin",
-          "v": ", insanların çok konuştuğu bir şeyin kendiliğinden doğru olmadığını biliyordu. Yine de görüntü etkileyiciydi. Mor halkanın arkasında yıldızlar öyle düzenli parlıyordu ki gerçek olmasını istiyordu. Bu isteğin araştırmasını etkilememesi için telefonu kapatıp bir bardak su içti.\n\nErtesi gün okulun astronomi kulübünde konu açıldı. Bazı öğrenciler fotoğrafı profil resmi yapmış, bazıları ise “Bilim insanları saklıyor” yorumlarına inanmıştı. Fen öğretmenleri Dilan Hanım, sınıf tahtasına tek bir soru yazdı: Bir fotoğrafın doğru görünmesiyle doğru olması arasında ne fark var?"
+          "v": ", insanların çok konuştuğu bir şeyin kendiliğinden doğru olmadığını biliyordu. Yine de görüntü etkileyiciydi. Mor halkanın arkasında yıldızlar öyle düzenli parlıyordu ki gerçek olmasını istiyordu. Bu isteğin araştırmasını etkilememesi için telefonu kapatıp bir bardak su içti.\n\nErtesi gün okulun astronomi kulübünde konu açıldı. Bazı öğrenciler fotoğrafı profil resmi yapmış, bazıları ise “Bilim insanları saklıyor” yorumlarına inanmıştı. Fen öğretmeni Dilan Hanım, sınıf tahtasına tek bir soru yazdı: Bir fotoğrafın doğru görünmesiyle doğru olması arasında ne fark var?"
         }
       ]
     },
@@ -733,7 +733,7 @@
         },
         {
           "t": "metin",
-          "v": " yazısı neden inandığımızı. Bence ikisi birbirini tamamlıyor.”\n\nEditör bir süre düşündü. Sonunda iki yazıyı yan yana yayımlamaya karar verdi. Üstlerine tek bir başlık koydu: “Bir Görseli Sevmek, Onun Doğru Olduğunu Bilmek Değildir.” "
+          "v": " yazısı ise neden inandığımızı anlatıyor. Bence ikisi birbirini tamamlıyor.”\n\nEditör bir süre düşündü. Sonunda iki yazıyı yan yana yayımlamaya karar verdi. Üstlerine tek bir başlık koydu: “Bir Görseli Sevmek, Onun Doğru Olduğunu Bilmek Değildir.” "
         },
         {
           "t": "yoldas",
@@ -1027,7 +1027,7 @@
         },
         {
           "t": "metin",
-          "v": " iki resmi yan yana tuttu. “İkisini de seviyorum,” dedi. “Hangisi hangisi belli olduğunda daha da güzel.”\n\n"
+          "v": " iki resmi yan yana tuttu. “İkisini de seviyorum,” dedi. “Hangisinin hangisi olduğu belli olduğunda daha da güzel.”\n\n"
         },
         {
           "t": "yoldas",
@@ -1093,7 +1093,7 @@
         },
         {
           "t": "metin",
-          "v": ", bilgi paylaşırken zarar vermeme sorumluluğunun da önemli olduğunu düşündü. Başka bir öğrenci, kendisine ait olmayan çizimi izinsiz kullanıp kullanamayacağını sordu. Defne eserin sahibinden izin alınması veya uygun lisans koşullarının gözetilmesi gerektiğini anlattı. Böylece fotoğraf doğrulama köşesi, insanların emeklerine ve güvenliğine saygı göstermeyi de öğrenilen bir yere dönüştü. "
+          "v": ", bilgi paylaşırken zarar vermeme sorumluluğunun da önemli olduğunu düşündü. Başka bir öğrenci, kendisine ait olmayan çizimi izinsiz kullanıp kullanamayacağını sordu. Defne eserin sahibinden izin alınması veya uygun lisans koşullarının gözetilmesi gerektiğini anlattı. Böylece fotoğraf doğrulama köşesi, insanların emeklerine ve güvenliğine saygı göstermeyi de öğrenilebilen bir yere dönüştü. "
         },
         {
           "t": "kahraman",
@@ -1151,15 +1151,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir oyun adı"
+          "metin": "Bir bilgisayar oyununun adı"
         },
         {
           "id": "B",
-          "metin": "Bir kitap adı"
+          "metin": "Bir kitabın yayın adı"
         },
         {
           "id": "C",
-          "metin": "Bir şarkı sözü"
+          "metin": "Bir şarkının sözleri"
         },
         {
           "id": "D",
@@ -1173,7 +1173,7 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Kahramanın bu sözünden çıkan sonuç nedir?",
+      "metin": "Kahramanın “Beğeni, fotoğrafı kaç kişinin beğendiğini gösterir” sözünden çıkan sonuç nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -1185,7 +1185,7 @@
         },
         {
           "id": "C",
-          "metin": "Beğenmek yanlıştır"
+          "metin": "Beğenmek ve paylaşmak yanlış bir davranıştır"
         },
         {
           "id": "D",
@@ -1203,11 +1203,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Her şeye körü körüne inanarak"
+          "metin": "Her şeye körü körüne inanarak ve sorgulamadan kabul ederek"
         },
         {
           "id": "B",
-          "metin": "Hiçbir kaynağa bakmadan"
+          "metin": "Hiçbir kaynağa bakmadan, yalnız çevrenin sözüne güvenerek"
         },
         {
           "id": "C",
@@ -1215,7 +1215,7 @@
         },
         {
           "id": "D",
-          "metin": "Yalnızca beğeni sayısına bakarak"
+          "metin": "Yalnızca beğeni sayısına bakarak ve en çok beğeneni seçerek"
         }
       ],
       "dogru": "C",
@@ -1229,7 +1229,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Çok büyük"
+          "metin": "Gözle görülemeyecek kadar küçük"
         },
         {
           "id": "B",
@@ -1237,11 +1237,11 @@
         },
         {
           "id": "C",
-          "metin": "Çok eski"
+          "metin": "Uzun süredir bilinen ve tanınan"
         },
         {
           "id": "D",
-          "metin": "Bilimsel olarak kanıtlanmış"
+          "metin": "Bilimce kanıtlanmış ve doğrulanmış"
         }
       ],
       "dogru": "B",

@@ -79,7 +79,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2051,
+        "kelime_sayisi": 2050,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 17,
         "soru_sayisi": 4,
@@ -140,7 +140,7 @@
         },
         {
           "t": "metin",
-          "v": " olan komşuları Gülseren Hanım'ın gözlemlerine katılırdı. Yine de gökyüzünden düğme düştüğünü hiçbir kitapta okumamıştı.\n\n“Birileri göğe gömlek mi dikiyor?” diye güldü kardeşi "
+          "v": " olan komşuları Gülseren Hanım'ın gözlemlerine katılırdı. Yine de gökyüzünden düğme düştüğünü hiçbir kitapta okumamıştı.\n\n“Birileri göğe gömlek mi dikiyor?” diye güldü "
         },
         {
           "t": "yoldas",
@@ -829,7 +829,7 @@
         },
         {
           "t": "metin",
-          "v": " kardeşinin cümlesini görünce gülümsedi."
+          "v": " bu cümleyi görünce gülümsedi."
         }
       ]
     },
@@ -892,15 +892,15 @@
         },
         {
           "id": "B",
-          "metin": "Terzinin çok yaşlı olduğu için"
+          "metin": "Terzinin yıldızları tamir edebileceğine inandığı için"
         },
         {
           "id": "C",
-          "metin": "Kardeşinin uyuduğu için"
+          "metin": "Kardeşinin uyandığını ve artık yalnız olmadığını gördüğü için"
         },
         {
           "id": "D",
-          "metin": "Düğmenin altın olduğu için"
+          "metin": "Düğmenin altından yapıldığını ve değerli olduğunu anladığı için"
         }
       ],
       "dogru": "A",
@@ -914,15 +914,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Gerçek yıldız bağları olarak"
+          "metin": "Yıldızları fiziksel olarak birbirine bağlayan gerçek yollar olarak"
         },
         {
           "id": "B",
-          "metin": "Hiç görülmemesi gereken çizgiler olarak"
+          "metin": "Gökyüzünü kirleten, hiç görülmemesi gereken çizgiler olarak"
         },
         {
           "id": "C",
-          "metin": "Yalnız gündüz görülen çizgiler olarak"
+          "metin": "Yalnız gündüz ve ışıklı kentlerde görülebilen çizgiler olarak"
         },
         {
           "id": "D",
@@ -940,19 +940,19 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yıldız çizer"
+          "metin": "Gökyüzüne yeni yıldızlar çizer ve parlatır"
         },
         {
           "id": "B",
-          "metin": "Yönleri göstermeye yarar"
+          "metin": "Yönleri bulmak için gözlemcilere yol gösterir"
         },
         {
           "id": "C",
-          "metin": "Düğme diker"
+          "metin": "Terzinin düğmelerini gökyüzüne diker ve bağlar"
         },
         {
           "id": "D",
-          "metin": "Ay'ı büyütür"
+          "metin": "Gece gökyüzündeki bulutları dağıtarak açar"
         }
       ],
       "dogru": "B",

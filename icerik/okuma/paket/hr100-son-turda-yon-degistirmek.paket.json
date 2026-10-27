@@ -353,7 +353,7 @@
         },
         {
           "t": "metin",
-          "v": " o an gözlerini kaldırdı. Babasının söyledikleri bir gecede bütün kırgınlığını geçirmedi, ama üzerine yüklenen baskının bir bölümünü indirdi.\n\nErtesi gün "
+          "v": " o an gözlerini kaldırdı. Babasının söyledikleri bir gecede bütün kırgınlığını gidermedi, ama üzerine yüklenen baskının bir bölümünü indirdi.\n\nErtesi gün "
         },
         {
           "t": "kahraman",
@@ -1205,7 +1205,7 @@
         },
         {
           "t": "metin",
-          "v": " ajandaya hemen sayı koymadı. Önce iyi hissettiğim bir spor günü yazdı. Sonraki sayfaya arkadaşlarımı dinlemek ekledi. Üçüncü sayfada uzun süre durdu; ardından gerekirse yardım istemek cümlesini yazdı. Bir zamanlar yardım istemeyi yenilgi saymıştı. Şimdi bunun sorumluluk olabileceğini biliyordu."
+          "v": " ajandaya hemen sayı koymadı. Önce “İyi hissettiğim bir spor günü” yazdı. Sonraki sayfaya “Arkadaşlarımı dinlemek” ekledi. Üçüncü sayfada uzun süre durdu; ardından “Gerekirse yardım istemek” cümlesini yazdı. Bir zamanlar yardım istemeyi yenilgi saymıştı. Şimdi bunun sorumluluk olabileceğini biliyordu."
         }
       ]
     },
@@ -1469,11 +1469,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İkisi aynı şeydir"
+          "metin": "İkisi aynı şeydir; her iki durum da kendiliğinden geçer ve dikkat gerektirmez"
         },
         {
           "id": "B",
-          "metin": "Ağrı her zaman yorgunluktan gelir"
+          "metin": "Ağrı her zaman yorgunluktan gelir ve bu yüzden ciddiye alınmasına gerek yoktur"
         },
         {
           "id": "C",
@@ -1481,7 +1481,7 @@
         },
         {
           "id": "D",
-          "metin": "Yorgunluk önemli değildir"
+          "metin": "Yorgunluk önemlidir ama belirli bir noktadaki ağrı yalnızca sporcunun iradesine bağlıdır"
         }
       ],
       "dogru": "C",
@@ -1517,7 +1517,7 @@
       "id": "s4",
       "beceri": "sozcuk_baglami",
       "dayanak_sayfa": 26,
-      "metin": "Bu cümlede “heyecan” sözcüğü ne anlatır?",
+      "metin": "“Yarışmanın heyecanı güzeldir.” Bu cümlede “heyecan” sözcüğü ne anlatır?",
       "secenekler": [
         {
           "id": "A",
@@ -1525,15 +1525,15 @@
         },
         {
           "id": "B",
-          "metin": "Bir hastalık"
+          "metin": "Geçici bir sağlık rahatsızlığı"
         },
         {
           "id": "C",
-          "metin": "Bir yarışın kuralı"
+          "metin": "Yarışta uyulan bir sıralama kuralı"
         },
         {
           "id": "D",
-          "metin": "Bir sıralama tablosu"
+          "metin": "Derecelerin yazıldığı sıralama tablosu"
         }
       ],
       "dogru": "A",

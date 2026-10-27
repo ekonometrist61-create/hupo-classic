@@ -56,7 +56,7 @@ Selin Hanım, çocukların sorusunu duyunca onları güvenli izleme alanından b
 
 {yoldas:yalin|bir arkadaş} “Hava hafiflediği için mi?” diye sordu.
 
-“Basitçe böyle söyleyebilirsin,” dedi pilot. “Ama içerdeki hava yok olmuyor. Isındığında genişliyor ve aynı hacimdeki hava miktarı, dışarıdaki daha soğuk havaya göre azalıyor. Bu yüzden {kelime:hr058_yogunluk} farkı önemli.”
+“Basitçe böyle söyleyebilirsin,” dedi pilot. “Ama içerdeki hava yok olmuyor. Isındığında genişliyor ve aynı hacimdeki havanın kütlesi, dışarıdaki daha soğuk havaya göre azalıyor. Bu yüzden {kelime:hr058_yogunluk} farkı önemli.”
 
 {kahraman} bunun gerçek bir açıklama olduğuna sevindi. Fakat aklında başka soru vardı: “Balonun renginin bir etkisi var mı?” Selin Hanım, rengin tek başına balonu kaldırmadığını söyledi. Balonun tasarımı ve malzemesi elbette önemliydi; havalanma açıklamasında asıl belirleyici etkenlerden biri iç ve dış hava arasındaki yoğunluk farkıydı.
 ---

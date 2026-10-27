@@ -35,10 +35,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kâğıtta yazan cümleye göre yedi kapıyı geçen kişi ne yapar?", secenekler: [{id: A, metin: "Dileğini kendi eliyle kurar"}, {id: B, metin: "Altın anahtar bulur"}, {id: C, metin: "Köyü terk eder"}, {id: D, metin: "Hiç konuşmaz"}], dogru: A, aciklama: "Kâğıtta, yedi kapıyı geçen kişinin dileğini kendi eliyle kuracağı yazıyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Keloğlan ilk kapıdan sonra neden anahtarı cebine koydu?", secenekler: [{id: A, metin: "Anahtarın altın olduğu için"}, {id: B, metin: "Bir yarasa ona verdiği için"}, {id: C, metin: "Aynada kendi davranışını görüp dürüst olmayı seçtiği için"}, {id: D, metin: "Tüccar ona yüzük verdiği için"}], dogru: C, aciklama: "Aynada annesinin yüzünü gören Keloğlan, dürüst olmanın anahtarını hak ettiğini anladı."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 12, metin: "Yaşlı kadına göre paylaşmak nedir?", secenekler: [{id: A, metin: "Hiç vermemek"}, {id: B, metin: "Herkese eşit bölmek değil, ihtiyacı görmek"}, {id: C, metin: "Sadece kendine ayırmak"}, {id: D, metin: "Yalnızca yemek yemek"}], dogru: B, aciklama: "Paylaşmak, herkesin ihtiyacını dikkate almayı da içerir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 6, metin: "Metinde kurnazlık sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Dürüst olmayan yollarla çıkar sağlama becerisi"}, {id: B, metin: "Çok uyumak"}, {id: C, metin: "Dikkatlice dinlemek"}, {id: D, metin: "Hızlı koşmak"}], dogru: A, aciklama: "Kurnazlık, çoğu zaman dürüstlükten uzak akıllılıktır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kâğıtta yazan cümleye göre yedi kapıyı geçen kişi ne yapar?", secenekler: [{id: A, metin: "Dileğini kendi eliyle kurar"}, {id: B, metin: "Altın bir anahtar bulup bekler"}, {id: C, metin: "Köyünü kalıcı olarak terk eder"}, {id: D, metin: "Hiç konuşmadan kapıdan çıkar"}], dogru: A, aciklama: "Kâğıtta, yedi kapıyı geçen kişinin dileğini kendi eliyle kuracağı yazıyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Ana karakter ilk kapıdan sonra neden anahtarı cebine koydu?", secenekler: [{id: A, metin: "Anahtarın altından yapılmış olabileceğini düşündüğü için"}, {id: B, metin: "Bir yarasanın ona kapının yolunu gösterdiği için"}, {id: C, metin: "Aynada annesinin yüzünü görüp dürüst olmayı seçtiği için"}, {id: D, metin: "Tüccar ona altın yüzüğü verip sorgusuz geçirdiği için"}], dogru: C, aciklama: "Aynada annesinin yüzünü gören kahraman, dürüst olmanın anahtarını hak ettiğini anladı."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 12, metin: "Yaşlı kadına göre paylaşmak nedir?", secenekler: [{id: A, metin: "Kimseye hiçbir şey vermeden saklamak"}, {id: B, metin: "Herkese eşit bölmek değil, ihtiyacı görmek"}, {id: C, metin: "Yalnızca kendine ayırmak ve saklamak"}, {id: D, metin: "Sofradakilerin yalnızca bir kısmını doyurmak"}], dogru: B, aciklama: "Paylaşmak, herkesin ihtiyacını dikkate almayı da içerir."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 6, metin: "Metinde kurnazlık sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Dürüst olmayan yollarla çıkar sağlama becerisi"}, {id: B, metin: "Gece geç saatlere kadar uyanık kalabilme"}, {id: C, metin: "Herkesi dikkatle ve sabırla dinleyebilme"}, {id: D, metin: "Yolda hızlı koşup önce varabilme becerisi"}], dogru: A, aciklama: "Kurnazlık, çoğu zaman dürüstlükten uzak akıllılıktır."}
 deyim_cumleleri:
   hr049_kulak_vermek: "Yolun sonunda küçük bir not buldu: Kulak vermek, yalnız sesi duymak değildir."
 ---
@@ -54,7 +54,7 @@ Annesi anahtarları eline aldı. “Bir gün boyunca yanında taşıyıp duraca�
 
 “Kolay söylenir. Zor zamanda da tutabiliyorsan ne mutlu sana.”
 
-{kahraman} küçük {kelime:hr049_heybe} ekmek, su ve ip koyup yola çıktı. Köy meydanında çocuklar etrafını sardı. Onlara bütün kapıları tek başına açacağını söylemek istedi. Fakat annesinin sözü aklına geldi; bilmediği bir işi başardığını önceden söylemek gösteriş olurdu. “Ne çıkacağını bilmiyorum,” dedi. “Dönersem anlatırım.” Bu yanıt çocukların hoşuna gitmedi ama yaşlı terzi ona başıyla selam verdi.
+{kahraman} küçük {kelime:hr049_heybe} ekmek, su ve ip koyup yola çıktı. Köy meydanında çocuklar etrafını sardı. Onlara bütün kapıları tek başına açacağını söylemek istedi. Fakat annesinin sözü aklına geldi; henüz yapmadığı bir işi önceden söylemek gösteriş olurdu. “Ne çıkacağını bilmiyorum,” dedi. “Dönersem anlatırım.” Bu yanıt çocukların hoşuna gitmedi ama yaşlı terzi ona başıyla selam verdi.
 
 Değirmenin ardındaki taşlık yolda ilk kapıyı buldu. Kapının üzerinde “Dürüstlük” yazıyordu. Ortada iki sepet vardı: birinde parlak elmalar, ötekinde toprağa düşmüş, üstü çizilmiş elmalar. Kapının yanından bir ses geldi: “Köye dönüp elmaların hepsinin sağlam olduğunu söylersen hızlıca geçersin.”
 
@@ -94,7 +94,7 @@ Beşinci kapının önünde tüccar kıyafetli biri oturuyordu. {kahraman} ona y
 
 Tüccar birden kâğıttan yapılmış bir şekle dönüştü. Beşinci kapı açıldığında {kahraman}, aşırı kolay görünen çözümlerin neden bazen en tehlikeli yollar olabildiğini düşündü.
 
-Altıncı kapının üzerinde “Cesaret” yazılıydı. İçeriden uğultulu bir ses geliyordu. {kahraman} ürküp geri çekildi. Gözleri karanlığa alışınca yerde bir yarasa gördü. Hayvanın kanadı, bir ipin halkasına takılmıştı. Uğultunun kaynağı yarasanın çırpınmasıydı. {kahraman} hayvanı incitmeden nasıl yardım edebileceğini düşündü. Tek başına elini uzatmak yerine kapıdan aldığı uzun değnekle ipi gevşetti, yarasa kurtulunca da yolu açtı. Cesaretin düşüncesizce tehlikeye atılmak olmadığını anladı. Bazen korktuğunu kabul edip güvenli bir çözüm aramak daha cesurcaydı.
+Altıncı kapının üzerinde “Cesaret” yazılıydı. İçeriden uğultulu bir ses geliyordu. {kahraman} ürküp geri çekildi. Gözleri karanlığa alışınca yerde bir yarasa gördü. Hayvanın kanadı, bir ipin halkasına takılmıştı. Uğultunun kaynağı yarasanın çırpınmasıydı. {kahraman} hayvanı incitmeden nasıl yardım edebileceğini düşündü. Tek başına elini uzatmak yerine yerde duran uzun bir değnekle ipi gevşetti, yarasa kurtulunca da yolu açtı. Cesaretin düşüncesizce tehlikeye atılmak olmadığını anladı. Bazen korktuğunu kabul edip güvenli bir çözüm aramak daha cesurcaydı.
 ---
 @omurga
 Yedinci kapı diğerlerinden farklıydı. Önünde ne sepet, ne dere, ne de konuşan kuş vardı. Taşın üzerine “Söz” yazılmıştı. Kapı, “Başından geçenleri anlat. Ama kendini olduğundan büyük gösterme,” dedi. {kahraman} ilk altı kapıyı düşündü. Elmalar, {yoldas:ilgi|bir arkadaşın} yünleri, sofradaki çorba, kuşlar, tüccarın yüzüğü ve yarasa… Kapıların hepsi farklıydı ama aralarında bir bağ vardı. Her seferinde birinin, bazen de kendisinin iyiliğini düşünerek karar vermişti.
@@ -106,7 +106,7 @@ Kapının taşları bir süre sessiz kaldı. Ardından yavaşça ayrıldı. {kah
 @omurga
 {kahraman} bir an öfkelendi. “Bunca yolu geldim, kapı kapı dolaştım. Sonunda yine köye mi döneceğim?”
 
-Sonra üçüncü kapıdaki sofrayı ve ikinci kapıdaki {yoldas:belirtme|bir arkadaşı} hatırladı. Sorun yalnız vanayı çevirmek değildi. Su kanalı, köyün ortak emeğiyle onarılmalıydı. Çevredeki taşları kaldırmaya çalıştı ama bazıları çok ağırdı. İşte o zaman annesinin “Sözün ağırlığı” dediği şey anlam kazandı. İlk iş olarak köye dönmek, herkesle konuşmak gerekiyordu.
+Sonra üçüncü kapıdaki sofrayı ve ikinci kapıdaki {yoldas:belirtme|bir arkadaşı} hatırladı. Sorun yalnız vanayı çevirmek değildi. Su kanalı, köyün ortak emeğiyle onarılmalıydı. Çevredeki taşları kaldırmaya çalıştı ama bazıları çok ağırdı. İşte o zaman annesinin söz ağırlığı hakkındaki uyarısı anlam kazandı. İlk iş olarak köye dönmek, herkesle konuşmak gerekiyordu.
 
 Köy meydanında toplananlara gördüklerini anlattı. Kimi “Bu masala benziyor,” dedi, kimi “Çocukça bir oyun,” diye küçümsedi. {kahraman} buna kızmadı. Kanaldaki bozuk yeri gösteren bir çizim yaptı, kimlerin hangi işte yardımcı olabileceğini sordu. Terzi sağlam ip getirdi. Değirmenci vanayı incelemek için aletlerini hazırladı. {yoldas:ilgi|bir arkadaşın} ailesi yoldaki küçük taşları toplayabileceklerini söyledi. Yaşlılar eski su yolunu bilen kişileri çağırdı. Bir iş bölümü yaptılar.
 ---

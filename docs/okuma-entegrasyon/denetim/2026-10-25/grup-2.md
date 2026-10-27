@@ -125,3 +125,57 @@ Editör:
 
 <!-- SONU -->
 
+### HR-048 — hüküm: review_needed
+Düzeltildi:
+- s1, s2, s3, s4 çeldiricileri uzunluk ve ipucu dengesi için yeniden yazıldı (dogru harfleri ve metni değişmedi; s1 çeldiricileri ~20 karakterden ~40 karaktere çıkarıldı).
+- Sayfa 1: "diye fısıldadı arkadaşı {yoldas}" → "diye fısıldadı {kahraman}, {yoldas}" (konuşan belirsizdi; kahraman olarak netleştirildi).
+- Sayfa 6: "dönük yönlerini" → "dönüş yönlerini" (anlatım).
+- Sayfa 7: "Ancak sekizinci parça ortada yoktu" → "Ancak yedi numaralı parça ortada yoktu" (aynı sayfadaki "yedi numara yoktu" ile çelişki giderildi).
+- Ajan A'nın "Kerem" bulgusu güncel metinde geçerli değil (ad yok; önceden düzeltilmiş).
+Editör:
+- Sayfa 18 sonundaki öğretmen notu (Sözcükler / Okuduğunu anlama / Değerler / Kullanılabilecek etkileşim) kurgu dışı; çıkarmak kısaltma sayılacağı için insan kararı.
+- Vaaz ve tez tekrarı: sayfa 2 ("Söyledikleri bir kişiyi gereksiz yere kuşku altında bırakabilirdi"), sayfa 3 ("Bir şey kaybolduğunda aklımıza ilk gelen açıklama…"), sayfa 9 (Selma Hanım'ın "en güçlü kanıtı seçmek" cümlesi; s3'ün dayanağı, yazar kararı), sayfa 11 ("Dış görünüş, tek başına yeterli kanıt değildir"), sayfa 13 ("Bir hikâyenin iki ayrıntısı birbirine uyabilir…"), sayfa 15 ("Hayal kurmak güzeldir…"), sayfa 17 ("Kanıt, cevabın sağlam basacağı yerdir" defter notu slogan tonunda).
+- Sahne sırası: sayfa 9 akşam sahnesinden sonra sayfa 10–16 (gezi, atölye, yemek molası) geri dönüyor; sıra insan editöründe.
+- Sayfa 12 deyimi ("gözünü kurcalamak") Türkçe sözlükte doğrulanmadı; ön yüz cümlesi insan kontrolünde.
+- Sözlük (dosya dışı, düzenlenmedi): "hr048_vitrin" girdisi "vitrinin" yazılmış, "hr048_gozunu_kurcalamak" girdisi "aklını kurcalayan" yazılmış; ikisi de metinle eşleştirilmeli.
+- Uzunluk: ~18 @omurga sayfası; kısaltma yasak, bölme kararı insan editöründe.
+
+<!-- SONU -->
+
+### HR-049 — hüküm: review_needed
+Düzeltildi:
+- s1, s2, s3, s4 çeldiricileri uzunluk dengesi için yeniden yazıldı (dogru harfleri değişmedi).
+- s2 soru kökü: "Keloğlan ilk kapıdan sonra…" → "Ana karakter ilk kapıdan sonra…" (ad metinde geçmiyor; kahraman anılıyor).
+- s2 dogru C: "Aynada kendi davranışını görüp dürüst olmayı seçtiği için" → "Aynada annesinin yüzünü görüp dürüst olmayı seçtiği için" (metinde kahraman aynada annesinin yüzünü görüyor; soru–metin uyumu. Harf ve seçenek yapısı aynı.)
+- Sayfa 2: "bilmediği bir işi başardığını önceden söylemek" → "henüz yapmadığı bir işi önceden söylemek" (anlam çelişkisi).
+- Sayfa 6: "kapıdan aldığı uzun değnekle" → "yerde duran uzun bir değnekle" (metinde kapıdan alınan bir değnek yok; süreklilik).
+- Sayfa 9: "annesinin “Sözün ağırlığı” dediği şey" → "annesinin söz ağırlığı hakkındaki uyarısı" (tırnaklı söz metinde geçmiyor).
+Editör:
+- Ajan B (yüksek): didaktik yoğunluk; her kapıda değerin ayrıca açıklanması (sayfa 2, 3, 6, 9, 11, 13, 15, 16). Bu sahne düzeyinde yeniden yazım, yazar kararı.
+- Sayfa 17 sonundaki öğretmen notu (Kavramlar / Dil / Değerler / Kaynak) kurgu dışı; ders materyaline taşınması insan kararı.
+- Sayfa 15: "Belki de yedi kapının asıl amacı…" masalın amacını açıklıyor; çıkarma kararı yazarda.
+- Sayfa 8: "Çocuğun adı {yoldas:yalin|bir arkadaş}" yoldaş yer tutucusu ad yerine kullanılıyor; yazar kararı.
+- Başlık "Keloğlan ve Yedi Söz Kapısı" ile kahraman {kahraman} placeholder'ı arasında kimlik tutarlılığı; insan kararı.
+- Sayfa 11–14 ve 17'de vaaz tekrarı ("Dürüst olmak, yalnız başkalarına yalan söylememek değildi", "Cesaret kapısının…", "Bir kapının önünde ayakta durup…") yazar kararı.
+- Sözlük (dosya dışı): "hr049_esik", "hr049_heybe", "hr049_kurnazlik" girdileri çekimli yazılmış; sözlük biçimleri "eşik", "heybe", "kurnazlık" olmalı.
+- Uzunluk: ~17 sayfa; kısaltma yasak.
+
+<!-- SONU -->
+
+### HR-050 — hüküm: review_needed
+Düzeltildi:
+- s2, s3, s4 çeldiricileri uzunluk dengesi için yeniden yazıldı (dogru harfleri ve metni değişmedi). s1 çeldiricileri olduğu gibi bırakıldı (dogru da kısa, belirgin ipucu yok).
+- Sayfa 2: "diye güldü kardeşi {yoldas}" → "diye güldü {yoldas}" (kardeş izinli yoldaş türü değil; HR-042 ile aynı kural).
+- Sayfa 16: "{kahraman} kardeşinin cümlesini görünce" → "{kahraman} bu cümleyi görünce" (cümleyi yazan yoldaş; kardeş–yoldaş karışıklığı giderildi).
+- Ajan A'nın "Defne" bulgusu güncel metinde geçerli değil (s2 kökünde "Kahraman"; önceden düzeltilmiş).
+Editör:
+- Ajan B (orta): tez tekrarı ve ders tonu — sayfa 4 ("Demek ki bazen görmek için acele etmemek gerekiyor"), sayfa 8 ("Gökyüzünü okumak iki ayrı iştir" başlığı/yorumu), sayfa 12 ("En iyi haritalar bazen nereye baktığını değil…"), sayfa 15 ("bilimsel merakın bazen sınır tanımamayı değil…"), sayfa 16 (defter notu "Bir sorunun cevabını bulamadığımda…" kapanışta dersi tekrarlıyor). Yazar kararı.
+- Sayfa 14: "Yanlış yapmış olmak onu küçültmüyordu" açıklayıcı; sertifika sahnesi kalsın, cümle çıkarılması yazar kararı.
+- Sayfa 19 sonundaki öğretmen notu (Kavramlar / Dil / Bilimsel not) kurgu dışı; insan kararı.
+- Kardeş ilişkisi: sayfa 9 ve 16'da aile kardeşi ile sayfa 2/15'teki yoldaş ayrı tutuldu; aynı kişi olup olmadığı yazar kararı.
+- Sözlük (dosya dışı): "hr050_teleskop" girdisi "teleskobu" (çekimli), "hr050_kafasi_karismak" tanım ve yazım uyumsuz; sözlük biçimleri "teleskop" ve "kafası karışmak" olmalı.
+- Uzunluk: ~19 sayfa; kısaltma yasak, bölme kararı insan editöründe.
+
+<!-- SONU -->
+Doğrulama: `node tools/okuma-hikaye-denetim.mjs` — hikâye 104, soru 431, sorusuz yok, dağılım A=108 B=108 C=108 D=107, karşılıksız ad 0, dosyalar parse edildi. Çıktıdaki "Tek harfi 3+ kez olan kısa hikâye: 4" satırı bu turda incelenmedi (önceki tur ile karşılaştırılmadı).
+

@@ -1257,7 +1257,7 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 5,
-      "metin": "Bu cümle hangi dikkat hatasını anlatır?",
+      "metin": "“Yeni görünen her satırı beklenen cevap sanmak ne kadar kolaydı.” Bu cümle hangi dikkat hatasını anlatır?",
       "secenekler": [
         {
           "id": "A",
@@ -1265,15 +1265,15 @@
         },
         {
           "id": "B",
-          "metin": "Verilerin hepsini unutmak"
+          "metin": "Gelen verilerin hepsini hemen unutup yeni bilgi aramamak"
         },
         {
           "id": "C",
-          "metin": "Ekrana hiç bakmamak"
+          "metin": "Ekrana hiç bakmadan yalnız başkalarının sözüne güvenmek"
         },
         {
           "id": "D",
-          "metin": "Saatleri hiç kontrol etmemek"
+          "metin": "Saatleri hiç kontrol etmeden zaman damgalarını tamamen yok saymak"
         }
       ],
       "dogru": "A",
@@ -1287,7 +1287,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kesin bir sonuç"
+          "metin": "Kesin ve tartışılmayan bir sonuç"
         },
         {
           "id": "B",
@@ -1295,11 +1295,11 @@
         },
         {
           "id": "C",
-          "metin": "Bir tür ekran"
+          "metin": "Veriyi doğrudan gösteren bir ekran"
         },
         {
           "id": "D",
-          "metin": "Bir kayıt numarası"
+          "metin": "Gönderilen her mesajın kayıt numarası"
         }
       ],
       "dogru": "B",
@@ -1313,11 +1313,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür saat"
+          "metin": "Ekranda yalnız saati gösteren küçük bir dijital saat"
         },
         {
           "id": "B",
-          "metin": "Bir kamera"
+          "metin": "Denizin altındaki görüntüleri kaydeden küçük bir kamera"
         },
         {
           "id": "C",
@@ -1325,7 +1325,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir kurtarma ekibi"
+          "metin": "Kayıp aracı yüzeye çıkarmak için görevlendirilen kurtarma ekibi"
         }
       ],
       "dogru": "C",

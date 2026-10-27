@@ -500,7 +500,7 @@
         },
         {
           "t": "metin",
-          "v": " ailesi de bir sürpriz yaptı. Annesi, kızına çocukluğunda okul çıkışı duyduğu pazar seslerini anlattı. "
+          "v": " ailesi de bir sürpriz yaptı. Annesi, ona çocukluğunda okul çıkışı duyduğu pazar seslerini anlattı. "
         },
         {
           "t": "yoldas",
@@ -781,15 +781,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kaseler çok ağır olduğu için"
+          "metin": "Kaseler çok ağır olduğu ve dolapta yer kapladığı için"
         },
         {
           "id": "B",
-          "metin": "Kase kırıldığı için"
+          "metin": "Kasenin tarif sırasında kırılma ihtimali yüksek olduğu için"
         },
         {
           "id": "C",
-          "metin": "Kaseler renkli olduğu için"
+          "metin": "Kaseler farklı renklerde boyandığı ve dikkat çektiği için"
         },
         {
           "id": "D",
@@ -807,19 +807,19 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hangi ölçünün kullanıldığının açıkça"
+          "metin": "Hangi ölçünün kullanıldığının açıkça belirtilmesi"
         },
         {
           "id": "B",
-          "metin": "Yemeğin rengi"
+          "metin": "Yemeğin rengi ve sunumdaki süslemenin ayrıntılı olarak yazılması"
         },
         {
           "id": "C",
-          "metin": "Pişirme yeri"
+          "metin": "Yemeğin hangi ocakta pişirildiğinin ayrıntılı olarak yazılması"
         },
         {
           "id": "D",
-          "metin": "Çocuğun adı"
+          "metin": "Tarifi yazan çocuğun adının ve yaşının tarifin başına eklenmesi"
         }
       ],
       "dogru": "A",
@@ -833,11 +833,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir kap türü"
+          "metin": "Sıvıların ve katıların ölçüldüğü ölçü kabının özel bir türü"
         },
         {
           "id": "B",
-          "metin": "Bir yemek adı"
+          "metin": "Tarifte kullanılan sıcak yemeklerin ortak adı olan bir sözcük"
         },
         {
           "id": "C",
@@ -845,7 +845,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir yıldız"
+          "metin": "Gökyüzünde gece görünen çok parlak ve uzak bir gök cismi"
         }
       ],
       "dogru": "C",

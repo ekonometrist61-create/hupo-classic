@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3073,
+        "kelime_sayisi": 3074,
         "tahmini_sure_dk": 27,
         "sayfa_sayisi": 26,
         "soru_sayisi": 4,
@@ -220,7 +220,7 @@
         },
         {
           "t": "metin",
-          "v": " değişikliklerin dikkatle izlenmesi gerektiğini öğrendi. Okuduklarını kısa bir şemaya dönüştürdü; böcekler, su bitkileri, balıklar ve kuşlar arasında oklar çizdi. Sonra okların her yerde aynı anlamı taşımadığını fark edip öğretmene danıştı. Şema, anlamadığı bir konuyu gizlemek için değil, doğru soruyu bulmak için kullanışlıydı."
+          "v": " değişikliklerinin dikkatle izlenmesi gerektiğini öğrendi. Okuduklarını kısa bir şemaya dönüştürdü; böcekler, su bitkileri, balıklar ve kuşlar arasında oklar çizdi. Sonra okların her yerde aynı anlamı taşımadığını fark edip öğretmene danıştı. Şema, anlamadığı bir konuyu gizlemek için değil, doğru soruyu bulmak için kullanışlıydı."
         }
       ]
     },
@@ -708,7 +708,7 @@
         },
         {
           "t": "metin",
-          "v": ", başlangıçta bu sözün başarısızlık gibi geldiğini hatırladı. Şimdi bunun güvenilirlik taşıdığını biliyordu.\n\nAraştırma projesinin küçük sergisini gezen çocuklar arasında farklı yorumlar da vardı. Biri gölde bütün avcılığın yasaklanmasını savunuyor, diğeri insanların orada uzun yıllardır çalıştığını hatırlatıyordu. "
+          "v": ", başlangıçta bu sözün başarısızlık gibi geldiğini hatırladı. Şimdi bunun güvenilirlik taşıdığını biliyordu.\n\nAraştırma projesinin küçük sergisini gezen çocuklar arasında farklı yorumlar da vardı. Biri gölde bütün avcılığın yasaklanmasını savunuyor, diğeri insanların orada uzun yıllardır geçimini sağladığını hatırlatıyordu. "
         },
         {
           "t": "kahraman",
@@ -970,11 +970,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tahminler her zaman doğrudur"
+          "metin": "Tahminler çoğu zaman gerçek verilerden daha doğru olur"
         },
         {
           "id": "B",
-          "metin": "Grafik güzel görünsün diye"
+          "metin": "Grafiğin görsel olarak daha düzgün ve dolu görünmesi için"
         },
         {
           "id": "C",
@@ -982,7 +982,7 @@
         },
         {
           "id": "D",
-          "metin": "Öğretmen istediği için"
+          "metin": "Öğretmen bunu ödev olarak kendisinin istediği için"
         }
       ],
       "dogru": "C",
@@ -996,7 +996,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kocaman bir parmakla insanları suçlamak"
+          "metin": "İnsanları tek tek adlandırıp kocaman bir parmakla suçlamak"
         },
         {
           "id": "B",
@@ -1004,11 +1004,11 @@
         },
         {
           "id": "C",
-          "metin": "Kirlilik korkusu yaratmak"
+          "metin": "Gölün tehlikede olduğunu korkutucu bir dille anlatmak"
         },
         {
           "id": "D",
-          "metin": "Yalnızca resim kullanmak"
+          "metin": "Yalnızca büyük bir resim koyup hiçbir açıklama yazmamak"
         }
       ],
       "dogru": "B",
@@ -1026,15 +1026,15 @@
         },
         {
           "id": "B",
-          "metin": "Göldeki büyük bir ada"
+          "metin": "Gölde kuşların yuva yaptığı, su ortasında küçük bir ada"
         },
         {
           "id": "C",
-          "metin": "Bir tür kuş"
+          "metin": "Sazlıklarda yaşayan, uzun bacaklı bir su kuşu türü"
         },
         {
           "id": "D",
-          "metin": "Bir kıyı yolu"
+          "metin": "Kıyıdan göle uzanan, yayalara ayrılmış ahşap bir yol"
         }
       ],
       "dogru": "A",

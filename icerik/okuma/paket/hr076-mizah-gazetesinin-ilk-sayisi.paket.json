@@ -70,7 +70,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3074,
+        "kelime_sayisi": 3072,
         "tahmini_sure_dk": 27,
         "sayfa_sayisi": 25,
         "soru_sayisi": 4,
@@ -99,7 +99,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Okulun koridorundaki duyuru panosuna asılan kâğıtta kocaman bir cümle yazıyordu: Bu okulda mizah yasaklanmıştır! Altında daha küçük harflerle, “Şaka yapmıyoruz, sadece gülüşmeleri denetliyoruz,” denmişti. Okuyan öğrenciler önce şaşırdı, ardından kahkaha attı. Kâğıdı asan "
+          "v": "Okulun koridorundaki duyuru panosuna asılan kâğıtta kocaman bir cümle yazıyordu: Bu okulda mizah yasaklanmıştır! Altında daha küçük harflerle, “Şaka yapmıyoruz, sadece gülüşmeleri denetliyoruz,” denmişti. Okuyan öğrenciler önce şaşırdılar, ardından kahkaha attılar. Kâğıdı asan "
         },
         {
           "t": "kahraman",
@@ -271,7 +271,7 @@
         },
         {
           "t": "metin",
-          "v": ", Hasan Bey'in karikatürünü ilk gördüğü zamanki düşüncesini yeniden sorguladı."
+          "v": ", kendi esprilerinin karşısındakini nasıl etkileyebileceğini yeniden düşündü."
         }
       ]
     },
@@ -372,7 +372,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Hasan Bey'le konuştuktan sonra üçlü kantinin yanındaki küçük masaya oturdu. Ela, “İnsan önce kendi çizimine âşık olunca eleştiriyi duyması zorlaşıyor,” dedi. "
+          "v": "Hasan Bey'le konuştuktan sonra üçü kantinin yanındaki küçük masaya oturdu. Ela, “İnsan önce kendi çizimine âşık olunca eleştiriyi duyması zorlaşıyor,” dedi. "
         },
         {
           "t": "kahraman",
@@ -844,7 +844,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Gazetenin tam ortasında herkesin rahatça görebildiği büyük karikatür herkesin ilgisini çekti. Bir öğrenci, okuldaki kayıp eşyaların gizli bir toplantı yaptığı odayı çizmişti. Bir çorap “Ben spor salonundan kaçtım,” diyor, bir su şişesi “Kapağımı bulursanız kimliğimi açıklarım,” diye bağırıyordu. Okuyan çocuklar hep birlikte hem gülüyor hem de eşyalarına isim yazmanın faydasını konuşuyordu. Kimsenin adı geçmiyor, kimse utandırılmıyordu. Şaka yine de güçlüydü.\n\nŞenlik için hazırlanmış başka bir köşede “Yanlış Anlaşılan Başlıklar” adlı küçük bir oyun bulunuyordu. Ziyaretçiler iki başlıktan hangisinin gerçekten okul duyurusu olabileceğini seçiyordu. Biri “Okul Bahçesinde Yarın Ağaç Dikimi Var”, öteki “Ağaçlar Sınıf Başkanlığına Aday” idi. Küçük öğrenciler ikinci başlığa gülüyor, ama sonra ilk cümlenin gerçek bir duyuru olabileceğini söylüyordu. "
+          "v": "Gazetenin tam ortasında herkesin rahatça görebildiği büyük karikatür herkesin ilgisini çekti. Bir öğrenci, okuldaki kayıp eşyaların gizli bir toplantı yaptığı odayı çizmişti. Bir çorap “Ben spor salonundan kaçtım,” diyor, bir su şişesi “Kapağımı bulursanız kimliğimi açıklarım,” diye bağırıyordu. Okuyan çocuklar hep birlikte hem gülüyor hem de eşyalarına isim yazmanın faydasını konuşuyordu. Kimsenin adı geçmiyor, kimse utandırılmıyordu. Şaka yine de güçlüydü.\n\nŞenlik için hazırlanmış başka bir köşede “Yanlış Anlaşılan Başlıklar” adlı küçük bir oyun bulunuyordu. Ziyaretçiler iki başlıktan hangisinin gerçekten okul duyurusu olabileceğini seçiyordu. Biri “Okul Bahçesinde Yarın Ağaç Dikimi Var”, öteki “Ağaçlar Sınıf Başkanlığına Aday” idi. Küçük öğrenciler ikinci başlığa gülüyor, ama sonra ilk başlığın gerçek bir duyuru olabileceğini söylüyordu. "
         },
         {
           "t": "yoldas",
@@ -1083,15 +1083,15 @@
         },
         {
           "id": "B",
-          "metin": "Gazeteyi daha uzun yapmak"
+          "metin": "Gazetenin sayfa sayısını ve boyutunu artırmak"
         },
         {
           "id": "C",
-          "metin": "Haberi gizlemek"
+          "metin": "Haberin kimin yazdığını okurdan tamamen gizlemek"
         },
         {
           "id": "D",
-          "metin": "Okuru kızdırmak"
+          "metin": "Okuru bilerek kızdırıp gazeteyi okutmamak"
         }
       ],
       "dogru": "A",
@@ -1105,11 +1105,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Onu anlayışsız ilan etmek"
+          "metin": "Onu anlayışsız ilan edip bu konuyu kapatmak"
         },
         {
           "id": "B",
-          "metin": "Gazeteyi kapatmak"
+          "metin": "Gazetedeki bütün şakaları bir hafta durdurmak"
         },
         {
           "id": "C",
@@ -1131,7 +1131,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir çeşit gazete sayfası"
+          "metin": "Gazetenin her sayfasında yer alan küçük bir köşe"
         },
         {
           "id": "B",
@@ -1139,11 +1139,11 @@
         },
         {
           "id": "C",
-          "metin": "Bir resim tekniği"
+          "metin": "Karikatürde kullanılan renkli bir boyama tekniği"
         },
         {
           "id": "D",
-          "metin": "Bir tür bahçe bitkisi"
+          "metin": "Bahçede yetişen, yapraklarında desen bulunan bir bitki"
         }
       ],
       "dogru": "B",

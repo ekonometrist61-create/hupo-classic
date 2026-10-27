@@ -559,7 +559,7 @@
         },
         {
           "t": "metin",
-          "v": ", kimin güldürdüğünü ve neden güldüğünü merak etti. Ama notun yazarının ayrıntı vermemeyi seçtiğini düşündü. Diğer notta ise Bahçedeki küçük kâğıdı çöp kutusuna atan arkadaşımı gördüm yazıyordu. Sınıf bu iki davranışı konuştu. Biri başkasının duygusunu değiştirmiş, diğeri ortak alanı temiz tutmaya yardım etmişti. İkisi de gösterişsizdi. "
+          "v": ", kimin güldürdüğünü ve neden güldüğünü merak etti. Ama notun yazarının ayrıntı vermemeyi seçtiğini düşündü. Diğer notta ise bahçedeki küçük kâğıdı çöp kutusuna atan arkadaşımı gördüm yazıyordu. Sınıf bu iki davranışı konuştu. Biri başkasının duygusunu değiştirmiş, diğeri ortak alanı temiz tutmaya yardım etmişti. İkisi de gösterişsizdi. "
         },
         {
           "t": "yoldas",
@@ -1221,15 +1221,15 @@
         },
         {
           "id": "B",
-          "metin": "Herkes isim yazmak zorundaydı"
+          "metin": "Herkes kutuya bir not bırakmak ve adını açıkça yazmak zorundaydı"
         },
         {
           "id": "C",
-          "metin": "Kutu yalnızca öğretmen içindi"
+          "metin": "Kutu yalnızca öğretmenin okuması için panoya değil dolaba konmuştu"
         },
         {
           "id": "D",
-          "metin": "Notlar ödül için yazılıyordu"
+          "metin": "Notlar sınıfta en çok not yazan öğrenciye ödül vermek için yazılıyordu"
         }
       ],
       "dogru": "A",
@@ -1269,7 +1269,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür kitap"
+          "metin": "Yazılı bir kaynaktan derlenmiş kısa bir kitap"
         },
         {
           "id": "B",
@@ -1277,11 +1277,11 @@
         },
         {
           "id": "C",
-          "metin": "Bir çeşit bayrak"
+          "metin": "Okul kulübünün kullandığı küçük bir amblem"
         },
         {
           "id": "D",
-          "metin": "Bir oyun kuralı"
+          "metin": "Sınıf içinde uygulanan bir oyun kuralı"
         }
       ],
       "dogru": "B",

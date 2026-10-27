@@ -369,7 +369,7 @@
         },
         {
           "t": "metin",
-          "v": " önce şenlik sahnesindeki Karagöz'ü hatırlayıp gülmüş, sonra annesinin niçin sevindiğini öğrenmişti. Aynı deyim, bir gösteride şaka olabiliyor, günlük hayatta gerçek bir duyguyu dile getirebiliyordu.\n\n"
+          "v": " önce provadaki Karagöz'ü hatırlayıp gülmüş, sonra annesinin niçin sevindiğini öğrenmişti. Aynı deyim, bir gösteride şaka olabiliyor, günlük hayatta gerçek bir duyguyu dile getirebiliyordu.\n\n"
         },
         {
           "t": "yoldas",
@@ -520,7 +520,7 @@
         },
         {
           "t": "metin",
-          "v": " son raporuna küçük ama önemli bir not ekledi: “Sözlükte kelimeye bakmak bazen yetmez. Deyimin bütününü anlamak gerekir.” Teknoloji kulübünden bir öğrenci bu cümlenin altını çizdi. Benzer sorunlar otomatik çevirilerde ve arama motorlarında da yaşanabilirdi; kelimelerin yakın durması, birlikte her zaman gerçek anlamlarıyla kullanıldıkları anlamına gelmiyordu. "
+          "v": " son raporuna küçük ama önemli bir not ekledi: “Sözlükte kelimeye bakmak bazen yetmez. Deyimin bütününü anlamak gerekir.” Teknoloji kulübünden bir öğrenci bu cümlenin altını çizdi. Benzer sorunlar otomatik çevirilerde ve arama motorlarında da yaşanabilirdi; kelimelerin yan yana durması, onların her zaman gerçek anlamlarıyla kullanıldığı anlamına gelmiyordu. "
         },
         {
           "t": "kahraman",
@@ -728,11 +728,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yusuf"
+          "metin": "Kahramanın arkadaşı"
         },
         {
           "id": "B",
-          "metin": "Cansu"
+          "metin": "Kahramanın kendisi"
         },
         {
           "id": "C",
@@ -744,7 +744,7 @@
         }
       ],
       "dogru": "A",
-      "aciklama": "İkinci kartı Yusuf seçti: “Eteği zil çalmak.”"
+      "aciklama": "İkinci kartı kahramanın arkadaşı seçti: “Eteği zil çalmak.”"
     },
     {
       "id": "s2",
@@ -758,15 +758,15 @@
         },
         {
           "id": "B",
-          "metin": "Kostümü çok sevdiği için"
+          "metin": "Kostümünü çok sevdiği ve daha süslü görünmek istediği için"
         },
         {
           "id": "C",
-          "metin": "Hacivat'ı şaşırtmak için"
+          "metin": "Hacivat'ı şaşırtıp sahneden uzaklaştırmak istediği için"
         },
         {
           "id": "D",
-          "metin": "Zil satmak için"
+          "metin": "Zil satan bir dükkânın reklamını yapmak istediği için"
         }
       ],
       "dogru": "A",
@@ -776,11 +776,11 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 3,
-      "metin": "Yusuf'un “Deyimler kalıp sözler” sözü neyi söyler?",
+      "metin": "Arkadaşının “Deyimler kalıp sözler” sözü neyi söyler?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Deyimler çok eskidir"
+          "metin": "Deyimler çok eski olduğu için bugün kullanılmaz"
         },
         {
           "id": "B",
@@ -788,11 +788,11 @@
         },
         {
           "id": "C",
-          "metin": "Deyimler yalnızca komiktir"
+          "metin": "Deyimler yalnızca komik olduğu için gösterilerde kullanılır"
         },
         {
           "id": "D",
-          "metin": "Deyimler öğrenilemez"
+          "metin": "Deyimler yalnızca kitaplarda geçer, günlük konuşmada kullanılmaz"
         }
       ],
       "dogru": "B",
@@ -806,11 +806,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür perde"
+          "metin": "Sahneyi ayıran büyük bir perde ya da kumaş parçası"
         },
         {
           "id": "B",
-          "metin": "Bir çeşit zil"
+          "metin": "Eteğe dikilmek için yapılmış küçük metal bir zil türü"
         },
         {
           "id": "C",
@@ -818,7 +818,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir kitap"
+          "metin": "Gösteriyi anlatan ve sayfalarında resimler bulunan kitap"
         }
       ],
       "dogru": "C",

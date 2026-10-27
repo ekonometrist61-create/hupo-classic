@@ -1183,7 +1183,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yol çok uzun olduğu için"
+          "metin": "Yol haritada çok uzun göründüğü için yürüyüşçüleri hemen yorabilir"
         },
         {
           "id": "B",
@@ -1191,11 +1191,11 @@
         },
         {
           "id": "C",
-          "metin": "Haritada çizgi olmadığı için"
+          "metin": "Haritada yükselti çizgileri çok seyrek çizildiği için yol eksik görünebilir"
         },
         {
           "id": "D",
-          "metin": "Yükseklik ölçülemediği için"
+          "metin": "Yükseklik değerleri hiçbir zaman tam doğru ölçülemediği için yorum zordur"
         }
       ],
       "dogru": "B",
@@ -1205,7 +1205,7 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 5,
-      "metin": "Yoldaşın bu sözüyle ne kastedilir?",
+      "metin": "Yoldaşın “Kâğıtta kısa olması ayaklarımız için kısa hissettirmeyebilir.” sözüyle ne kastedilir?",
       "secenekler": [
         {
           "id": "A",
@@ -1235,11 +1235,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir tür yürüyüş ayakkabısı"
+          "metin": "Dağ yürüyüşlerinde giyilen sağlam bir ayakkabı"
         },
         {
           "id": "B",
-          "metin": "Bir yön levhası"
+          "metin": "Patikada yönü gösteren küçük bir tabela"
         },
         {
           "id": "C",
@@ -1247,7 +1247,7 @@
         },
         {
           "id": "D",
-          "metin": "Bir hava olayı"
+          "metin": "Dağ yamacında sık görülen sisli bir hava olayı"
         }
       ],
       "dogru": "C",

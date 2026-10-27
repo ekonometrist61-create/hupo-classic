@@ -35,10 +35,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Bugün seramik tabağın ortasında ne vardı?", secenekler: [{id: A, metin: "Mavi bir daire"}, {id: B, metin: "Yeni bir resim"}, {id: C, metin: "Bir fotoğraf"}, {id: D, metin: "Küçük bir kuşun kanadı büyüklüğünde boşluk"}], dogru: D, aciklama: "Tabağın ortasında küçük bir boşluk vardı."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Öğretmen neden yoldaşı susturmadı?", secenekler: [{id: A, metin: "Yoldaşın yanlış söylediğini kesinleştirdiği için"}, {id: B, metin: "Müzede ses yasak olduğu için"}, {id: C, metin: "Tabak kırıldığı için"}, {id: D, metin: "Düşünceyle kanıtın farklı olduğunu hatırlatmak istediği için"}], dogru: D, aciklama: "Öğretmen, düşünceyi kanıttan ayırmanın önemini göstermek istedi."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 9, metin: "Selma Hanım'ın sözüne göre araştırmacı ne yapmalıdır?", secenekler: [{id: A, metin: "Hep en heyecanlı açıklamayı seçmelidir"}, {id: B, metin: "Hiç açıklama yapmamalıdır"}, {id: C, metin: "En heyecanlı açıklama yerine en güçlü kanıtı seçmelidir"}, {id: D, metin: "Eserleri satmalıdır"}], dogru: C, aciklama: "Araştırmacı, heyecan verici ama kanıtsız açıklamalardan kaçınmalıdır."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen konservasyon ne demektir?", secenekler: [{id: A, metin: "Bir eseri satma işlemi"}, {id: B, metin: "Eserin bozulmasını önlemeye yönelik koruma çalışması"}, {id: C, metin: "Eseri müzeye götürme"}, {id: D, metin: "Yeni bir eser yapma"}], dogru: B, aciklama: "Konservasyon, eserin zamana ve etkenlere karşı korunmasıdır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Bugün seramik tabağın ortasında ne vardı?", secenekler: [{id: A, metin: "Ortasında yeni çizilmiş bir gemi resmi"}, {id: B, metin: "Tabağın kenarında küçük bir sarı leke"}, {id: C, metin: "Vitrinin üstünde bir fotoğraf makinesi"}, {id: D, metin: "Küçük bir kuşun kanadı büyüklüğünde boşluk"}], dogru: D, aciklama: "Tabağın ortasında küçük bir boşluk vardı."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Öğretmen neden yoldaşı susturmadı?", secenekler: [{id: A, metin: "Yoldaşın yanlış söylediğini kesinleştirdiği için"}, {id: B, metin: "Müzede herkesin sessiz kalması gerektiği için"}, {id: C, metin: "Tartışmayı sınıfın dışına taşımak istediği için"}, {id: D, metin: "Düşünceyle kanıtın farklı olduğunu hatırlatmak istediği için"}], dogru: D, aciklama: "Öğretmen, düşünceyi kanıttan ayırmanın önemini göstermek istedi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 9, metin: "Selma Hanım'ın sözüne göre araştırmacı ne yapmalıdır?", secenekler: [{id: A, metin: "Her zaman en heyecanlı açıklamayı hemen seçmelidir"}, {id: B, metin: "Hiçbir açıklama yapmadan yalnızca gözlemle yetinmelidir"}, {id: C, metin: "En heyecanlı açıklama yerine en güçlü kanıtı seçmelidir"}, {id: D, metin: "Bulduğu eserleri en yüksek fiyata satmalıdır"}], dogru: C, aciklama: "Araştırmacı, heyecan verici ama kanıtsız açıklamalardan kaçınmalıdır."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen konservasyon ne demektir?", secenekler: [{id: A, metin: "Eseri başka bir müzeye satma ve devretme işlemi"}, {id: B, metin: "Eserin bozulmasını önlemeye yönelik koruma çalışması"}, {id: C, metin: "Eseri vitrinden kalıcı olarak kaldırma işlemi"}, {id: D, metin: "Eksik parçaları eserin üzerine boyayarak tamamlama"}], dogru: B, aciklama: "Konservasyon, eserin zamana ve etkenlere karşı korunmasıdır."}
 deyim_cumleleri:
   hr048_gozunu_kurcalamak: "{kahraman:ilgi} gözünü kurcalayan ikinci mesele, fotoğrafın güvenilirliğiydi."
 ---
@@ -47,7 +47,7 @@ Müzedeki seramik tabak dün tamdı. Bugünse ortasında, küçük bir kuşun ka
 
 {kahraman}, {kelime:hr048_vitrin} karşısında durup bir kez daha baktı. Müze gezisine gelmeden önce öğretmenlerinin gönderdiği fotoğrafta, on altı parçadan birleştirilmiş mavi desenli tabağın tam ortasında sekiz köşeli bir yıldız bulunuyordu. Şimdiyse yıldızın bir köşesi yoktu.
 
-“Gördün mü?” diye fısıldadı arkadaşı {yoldas:yonelme|bir arkadaşa}. “Parça kayıp.”
+“Gördün mü?” diye fısıldadı {kahraman}, {yoldas:yonelme|bir arkadaşa}. “Parça kayıp.”
 
 {yoldas:yalin|bir arkadaş}, vitrin kenarındaki açıklama levhasına eğildi. “Belki de hep böyleymiştir.”
 
@@ -107,7 +107,7 @@ Aslı Hanım bir eğitim etkinliği düzenlediklerini söyledi. Öğrenciler ist
 
 “Yine de zorlamaya gerek yok.”
 
-Atölye sorumlusu Mert Bey, öğrencilere bir kural verdi: Önce gözlem, sonra deneme. Parçaları yapıştırmak yoktu; yalnızca kuru yerleştirme yapacaklardı. {kahraman} kenar çizgilerini izledi, Melis aynı renkteki desenleri grupladı, {yoldas:yalin|bir arkadaş} de şekillerin dönük yönlerini karşılaştırdı. İlk on dakikada yalnızca dört parçayı yerleştirebildiler.
+Atölye sorumlusu Mert Bey, öğrencilere bir kural verdi: Önce gözlem, sonra deneme. Parçaları yapıştırmak yoktu; yalnızca kuru yerleştirme yapacaklardı. {kahraman} kenar çizgilerini izledi, Melis aynı renkteki desenleri grupladı, {yoldas:yalin|bir arkadaş} de şekillerin dönüş yönlerini karşılaştırdı. İlk on dakikada yalnızca dört parçayı yerleştirebildiler.
 
 “Bu hızla müze kapanır,” diye söylendi {yoldas:yalin|bir arkadaş}.
 ---
@@ -118,7 +118,7 @@ Mert Bey güldü. “Aceleyi eser değil, saat hisseder. Tarihî bir nesnede hı
 
 “İşte!” dedi. “Yıldızın altında bir kuş çizimi varmış.”
 
-Fotoğrafın küçük ekranında görünmeyen desen, ellerindeki büyütülmüş kopyada ortaya çıkmıştı. Öğrenciler tüylerin yönünü izleyerek üç parçayı daha buldu. Ancak sekizinci parça ortada yoktu. Kutudaki parçaları iki kez saydılar. Numaralar birden ona kadar gidiyordu ama yedi numara yoktu.
+Fotoğrafın küçük ekranında görünmeyen desen, ellerindeki büyütülmüş kopyada ortaya çıkmıştı. Öğrenciler tüylerin yönünü izleyerek üç parçayı daha buldu. Ancak yedi numaralı parça ortada yoktu. Kutudaki parçaları iki kez saydılar. Numaralar birden ona kadar gidiyordu ama yedi numara yoktu.
 
 “İşte gerçek kayıp parça,” dedi {yoldas:yalin|bir arkadaş}. “Atölyede de bir şey eksik!”
 

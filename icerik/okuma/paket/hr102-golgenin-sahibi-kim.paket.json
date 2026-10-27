@@ -1497,11 +1497,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Olaylar arasında kesin bir neden-sonuç ilişkisi vardır"
+          "metin": "Olaylar arasında kesin bir neden-sonuç ilişkisi vardır; biri diğerini doğurmuştur"
         },
         {
           "id": "B",
-          "metin": "Gölge gerçekten bir insandır"
+          "metin": "Gölge gerçekten bir insanın varlığından oluşur ve bunu hemen kanıtlamak mümkündür"
         },
         {
           "id": "C",
@@ -1509,7 +1509,7 @@
         },
         {
           "id": "D",
-          "metin": "Işıklar bozuk olduğunda gölge görünür"
+          "metin": "Işıklar bozuk olduğunda gölge görünür ve bu yüzden her gece belirli saatte oluşur"
         }
       ],
       "dogru": "C",
@@ -1523,15 +1523,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hayal kurmak her zaman yanlıştır"
+          "metin": "Hayal kurmak her zaman yanlıştır ve hiçbir masalın okurda değeri yoktur"
         },
         {
           "id": "B",
-          "metin": "Hayal kurmak ile kanıt aynı şeydir"
+          "metin": "Hayal kurmak ile kanıt aynı şeydir; ikisi de bir olayı açıklamaya yarar"
         },
         {
           "id": "C",
-          "metin": "Hayal kurmanın hiçbir değeri yoktur"
+          "metin": "Hayal kurmanın hiçbir değeri yoktur; yalnızca gerçek ölçümler önemlidir"
         },
         {
           "id": "D",
@@ -1553,15 +1553,15 @@
         },
         {
           "id": "B",
-          "metin": "Kanıtların korkutucu olması"
+          "metin": "Kanıtların çok korkutucu bulunması"
         },
         {
           "id": "C",
-          "metin": "Korkmadan önce kanıt toplamak"
+          "metin": "Korkmadan önce ayrıntılı bir kanıt toplamak"
         },
         {
           "id": "D",
-          "metin": "Kanıtların hepsini yok etmek"
+          "metin": "Kanıtların hepsini bilerek yok etmek ve gizlemek"
         }
       ],
       "dogru": "A",
@@ -1575,11 +1575,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İlgi çeken her iddia doğrudur"
+          "metin": "İlgi çekip çok paylaşılan her iddia kesinlikle doğrudur"
         },
         {
           "id": "B",
-          "metin": "Kanıta gerek yoktur"
+          "metin": "Kanıtı olmayan bir iddia da güvenle yayılabilir"
         },
         {
           "id": "C",
@@ -1587,7 +1587,7 @@
         },
         {
           "id": "D",
-          "metin": "Gölgeler hakkında konuşmak yasaktır"
+          "metin": "Gölgeler hakkında konuşmak yasaktır; yalnızca öğretmenler yorum yapabilir"
         }
       ],
       "dogru": "C",

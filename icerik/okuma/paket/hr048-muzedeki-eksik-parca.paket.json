@@ -78,7 +78,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2072,
+        "kelime_sayisi": 2074,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 18,
         "soru_sayisi": 4,
@@ -123,7 +123,15 @@
         },
         {
           "t": "metin",
-          "v": " karşısında durup bir kez daha baktı. Müze gezisine gelmeden önce öğretmenlerinin gönderdiği fotoğrafta, on altı parçadan birleştirilmiş mavi desenli tabağın tam ortasında sekiz köşeli bir yıldız bulunuyordu. Şimdiyse yıldızın bir köşesi yoktu.\n\n“Gördün mü?” diye fısıldadı arkadaşı "
+          "v": " karşısında durup bir kez daha baktı. Müze gezisine gelmeden önce öğretmenlerinin gönderdiği fotoğrafta, on altı parçadan birleştirilmiş mavi desenli tabağın tam ortasında sekiz köşeli bir yıldız bulunuyordu. Şimdiyse yıldızın bir köşesi yoktu.\n\n“Gördün mü?” diye fısıldadı "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
         },
         {
           "t": "yoldas",
@@ -371,7 +379,7 @@
         },
         {
           "t": "metin",
-          "v": " de şekillerin dönük yönlerini karşılaştırdı. İlk on dakikada yalnızca dört parçayı yerleştirebildiler.\n\n“Bu hızla müze kapanır,” diye söylendi "
+          "v": " de şekillerin dönüş yönlerini karşılaştırdı. İlk on dakikada yalnızca dört parçayı yerleştirebildiler.\n\n“Bu hızla müze kapanır,” diye söylendi "
         },
         {
           "t": "yoldas",
@@ -397,7 +405,7 @@
         },
         {
           "t": "metin",
-          "v": " iki küçük parça arasındaki ilişkiyi fark etti. İkisinde de kuş tüyüne benzeyen ince siyah çizgiler vardı. Bir parçayı döndürdüğünde çizgiler birleşti.\n\n“İşte!” dedi. “Yıldızın altında bir kuş çizimi varmış.”\n\nFotoğrafın küçük ekranında görünmeyen desen, ellerindeki büyütülmüş kopyada ortaya çıkmıştı. Öğrenciler tüylerin yönünü izleyerek üç parçayı daha buldu. Ancak sekizinci parça ortada yoktu. Kutudaki parçaları iki kez saydılar. Numaralar birden ona kadar gidiyordu ama yedi numara yoktu.\n\n“İşte gerçek kayıp parça,” dedi "
+          "v": " iki küçük parça arasındaki ilişkiyi fark etti. İkisinde de kuş tüyüne benzeyen ince siyah çizgiler vardı. Bir parçayı döndürdüğünde çizgiler birleşti.\n\n“İşte!” dedi. “Yıldızın altında bir kuş çizimi varmış.”\n\nFotoğrafın küçük ekranında görünmeyen desen, ellerindeki büyütülmüş kopyada ortaya çıkmıştı. Öğrenciler tüylerin yönünü izleyerek üç parçayı daha buldu. Ancak yedi numaralı parça ortada yoktu. Kutudaki parçaları iki kez saydılar. Numaralar birden ona kadar gidiyordu ama yedi numara yoktu.\n\n“İşte gerçek kayıp parça,” dedi "
         },
         {
           "t": "yoldas",
@@ -841,15 +849,15 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Mavi bir daire"
+          "metin": "Ortasında yeni çizilmiş bir gemi resmi"
         },
         {
           "id": "B",
-          "metin": "Yeni bir resim"
+          "metin": "Tabağın kenarında küçük bir sarı leke"
         },
         {
           "id": "C",
-          "metin": "Bir fotoğraf"
+          "metin": "Vitrinin üstünde bir fotoğraf makinesi"
         },
         {
           "id": "D",
@@ -871,11 +879,11 @@
         },
         {
           "id": "B",
-          "metin": "Müzede ses yasak olduğu için"
+          "metin": "Müzede herkesin sessiz kalması gerektiği için"
         },
         {
           "id": "C",
-          "metin": "Tabak kırıldığı için"
+          "metin": "Tartışmayı sınıfın dışına taşımak istediği için"
         },
         {
           "id": "D",
@@ -893,11 +901,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hep en heyecanlı açıklamayı seçmelidir"
+          "metin": "Her zaman en heyecanlı açıklamayı hemen seçmelidir"
         },
         {
           "id": "B",
-          "metin": "Hiç açıklama yapmamalıdır"
+          "metin": "Hiçbir açıklama yapmadan yalnızca gözlemle yetinmelidir"
         },
         {
           "id": "C",
@@ -905,7 +913,7 @@
         },
         {
           "id": "D",
-          "metin": "Eserleri satmalıdır"
+          "metin": "Bulduğu eserleri en yüksek fiyata satmalıdır"
         }
       ],
       "dogru": "C",
@@ -919,7 +927,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir eseri satma işlemi"
+          "metin": "Eseri başka bir müzeye satma ve devretme işlemi"
         },
         {
           "id": "B",
@@ -927,11 +935,11 @@
         },
         {
           "id": "C",
-          "metin": "Eseri müzeye götürme"
+          "metin": "Eseri vitrinden kalıcı olarak kaldırma işlemi"
         },
         {
           "id": "D",
-          "metin": "Yeni bir eser yapma"
+          "metin": "Eksik parçaları eserin üzerine boyayarak tamamlama"
         }
       ],
       "dogru": "B",
