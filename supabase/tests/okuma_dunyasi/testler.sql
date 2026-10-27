@@ -1190,6 +1190,24 @@ begin
                 and not has_function_privilege('anon', p.oid, 'execute') and has_function_privilege('authenticated', p.oid, 'execute')
            from pg_proc p where p.proname = 'export_my_data' and p.pronamespace = 'public'::regnamespace), pg_temp.son_hata());
 
+  -- GÖR-048: export_my_data 'kelime' bölümü kendi verisini taşır, başkasınınkini taşımaz
+  insert into public.kelime_denemeleri (ogrenci_id, soru_id, anlam_id, secilen_indeks, dogru_mu, ipucu_kullanildi, kazanilan_xp)
+    values (ob, '00000000-0000-0000-0000-00000000a001', '00000000-0000-0000-0000-00000000b001', 2, true, false, 5),
+           (oa, '00000000-0000-0000-0000-00000000a002', '00000000-0000-0000-0000-00000000b002', 0, false, true, 0);
+  insert into public.kelime_kaydedilenler (ogrenci_id, anlam_id) values (ob, '00000000-0000-0000-0000-00000000b001');
+  insert into public.kelime_ustaliklari (ogrenci_id, anlam_id, beceri, basari_seviyesi, sonraki_tekrar_tarihi, son_cevap_tarihi)
+    values (ob, '00000000-0000-0000-0000-00000000b001', 'anlam', 2, current_date + 1, now());
+  perform pg_temp.k('export: kelime bölümü yalnız kendi denemelerini, ustalıklarını ve kayıtlarını içerir',
+    (pg_temp.c(ob, 'public.export_my_data()') #> '{kelime,denemeler}') @> '[{"secilen_indeks":2,"dogru_mu":true,"kazanilan_xp":5}]'::jsonb
+    and jsonb_array_length(pg_temp.c(ob, 'public.export_my_data()') #> '{kelime,denemeler}')
+          = (select count(*) from public.kelime_denemeleri where ogrenci_id = ob)
+    and jsonb_array_length(pg_temp.c(ob, 'public.export_my_data()') #> '{kelime,ustaliklar}')
+          = (select count(*) from public.kelime_ustaliklari where ogrenci_id = ob)
+    and jsonb_array_length(pg_temp.c(ob, 'public.export_my_data()') #> '{kelime,kaydedilenler}')
+          = (select count(*) from public.kelime_kaydedilenler where ogrenci_id = ob)
+    and position('00000000-0000-0000-0000-00000000a002' in (pg_temp.c(ob, 'public.export_my_data()') #> '{kelime}')::text) = 0,
+    pg_temp.son_hata());
+
   -- ---------------- Düşün alanı (20261051000000): isteğe bağlı hikaye.dusun ----------------
   perform pg_temp.k('düşün: dusun alanı olmayan gerçek paket doğrulayıcıdan geçer (geriye uyum)',
     exists (select 1 from public.test_paketler where public._okuma_paket_hatalari(icerik) = '[]'::jsonb), '');
