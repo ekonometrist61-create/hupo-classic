@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../models/okuma_degerler.dart';
 import '../../models/okuma_models.dart';
 import '../../widgets/hupo/hupo.dart';
 import '../../widgets/okuma/okuma_bilesenler.dart';
@@ -7,10 +8,11 @@ import 'okuma_tema.dart';
 
 /// Hikâye seçme ekranı. Hedef: çocuk, kahramanına uygun hikâyelerden birini seçer.
 /// Ana eylem: bir hikâye kartına dokunmak. Durumlar: yükleniyor, hata (yeniden dene), boş
-/// (bu kahramana uygun hikâye yok), filtre boş, geri dönüş mesajı.
+/// (bu kahraman için hikâyeler hazırlanıyor), filtre boş, geri dönüş mesajı.
 class HikayeSecimEkrani extends StatefulWidget {
   const HikayeSecimEkrani({
     super.key,
+    this.ilkTur,
     required this.katalog,
     required this.kahramanAdi,
     required this.onSec,
@@ -23,6 +25,9 @@ class HikayeSecimEkrani extends StatefulWidget {
   });
 
   final List<OkumaKatalogSatiri> katalog;
+
+  /// Verilirse liste bu türle filtreli açılır (kategori kapağından).
+  final String? ilkTur;
 
   /// Başlıkta gösterilir; yalnız cihazda kalır.
   final String kahramanAdi;
@@ -43,13 +48,36 @@ class HikayeSecimEkrani extends StatefulWidget {
 }
 
 class _HikayeSecimEkraniState extends State<HikayeSecimEkrani> {
-  String? _tur;
+  late String? _tur = widget.ilkTur;
+
+  /// Seçili değer (D-kodu). Hem ana hem yardımcı değere göre eşleşir.
+  String? _deger;
+
+  /// Yalnız veli tercihiyle eşleşen hikâyeler.
+  bool _veliTercihi = false;
+
+  void _filtreleriTemizle() => setState(() {
+        _tur = null;
+        _deger = null;
+        _veliTercihi = false;
+      });
 
   @override
   Widget build(BuildContext context) {
     final uygunlar = widget.katalog;
     final turler = {for (final h in uygunlar) h.tur}.toList();
-    final liste = uygunlar.where((h) => _tur == null || h.tur == _tur).toList();
+    final degerKumesi = <String>{};
+    for (final h in uygunlar) {
+      if (h.anaDeger != null) degerKumesi.add(h.anaDeger!);
+      if (h.yardimciDeger != null) degerKumesi.add(h.yardimciDeger!);
+    }
+    final degerler = degerKumesi.toList()..sort((a, b) => okumaDegerSirasi(a).compareTo(okumaDegerSirasi(b)));
+    final veliTercihiVar = uygunlar.any((h) => h.degerEslesmesi);
+    final liste = uygunlar
+        .where((h) => _tur == null || h.tur == _tur)
+        .where((h) => _deger == null || h.anaDeger == _deger || h.yardimciDeger == _deger)
+        .where((h) => !_veliTercihi || h.degerEslesmesi)
+        .toList();
     return OkumaEkranIskeleti(
       baslik: OkumaMetin.uygulamaAdi,
       geri: widget.onGeri,
@@ -110,6 +138,27 @@ class _HikayeSecimEkraniState extends State<HikayeSecimEkrani> {
                   ),
               ],
             ),
+          if (degerler.isNotEmpty || veliTercihiVar) ...[
+            const SizedBox(height: OkumaTema.bosluk12),
+            Wrap(
+              spacing: OkumaTema.bosluk8,
+              runSpacing: OkumaTema.bosluk8,
+              children: [
+                if (veliTercihiVar)
+                  FilterChip(
+                    label: const Text(OkumaMetin.degerVeliTercihi),
+                    selected: _veliTercihi,
+                    onSelected: (v) => setState(() => _veliTercihi = v),
+                  ),
+                for (final d in degerler)
+                  FilterChip(
+                    label: Text(okumaDegerAdi(d)),
+                    selected: _deger == d,
+                    onSelected: (v) => setState(() => _deger = v ? d : null),
+                  ),
+              ],
+            ),
+          ],
           const SizedBox(height: OkumaTema.bosluk20),
           if (uygunlar.isEmpty)
             DurumEkrani(
@@ -125,7 +174,7 @@ class _HikayeSecimEkraniState extends State<HikayeSecimEkrani> {
               baslik: OkumaMetin.hikayeBos,
               aciklama: OkumaMetin.hikayeBosIpucu,
               birincilEtiket: OkumaMetin.hikayeFiltreTemizle,
-              birincil: () => setState(() => _tur = null),
+              birincil: _filtreleriTemizle,
             )
           else
             for (final h in liste)
@@ -220,9 +269,13 @@ class _HikayeKapak extends StatelessWidget {
       if (sure != null && sure > 0) OkumaMetin.hikayeSure(sure),
       if (hikaye.soruSayisi > 0) OkumaMetin.hikayeSoru(hikaye.soruSayisi),
     ].join(' · ');
+    final degerAdi = hikaye.anaDeger == null ? null : okumaDegerAdi(hikaye.anaDeger!);
     return Semantics(
       button: true,
-      label: 'Hikâye: ${hikaye.baslik}. ${stil.etiket}, $ayrinti.${tanitim == null ? '' : ' $tanitim'}'
+      label: 'Hikâye: ${hikaye.baslik}. ${stil.etiket}, $ayrinti.'
+          '${degerAdi == null ? '' : ' Değer: $degerAdi.'}'
+          '${hikaye.degerEslesmesi ? ' ${OkumaMetin.degerVeliTercihiRozet}.' : ''}'
+          '${tanitim == null ? '' : ' $tanitim'}'
           '${hikaye.gorulmedi ? ' Yeni.' : ''} ${OkumaMetin.hikayeBasla}.',
       onTap: onTap,
       child: ExcludeSemantics(
@@ -325,6 +378,18 @@ class _HikayeKapak extends StatelessWidget {
                             ),
                             child: Text(ayrinti, style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu)),
                           ),
+                          if (degerAdi != null)
+                            Container(
+                              padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk12, vertical: OkumaTema.bosluk4),
+                              decoration: BoxDecoration(
+                                color: OkumaTema.sunSoft,
+                                borderRadius: BorderRadius.circular(OkumaTema.koseCip),
+                              ),
+                              child: Text(
+                                hikaye.degerEslesmesi ? '$degerAdi · ${OkumaMetin.degerVeliTercihiRozet}' : degerAdi,
+                                style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu),
+                              ),
+                            ),
                           Container(
                             constraints: const BoxConstraints(minHeight: OkumaTema.dokunmaMin),
                             padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk16),

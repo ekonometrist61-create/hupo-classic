@@ -6,6 +6,7 @@
 // Gizlilik: kahraman ve yol arkadaşı adı yalnız bu sınıfın belleğinde ve metni çözerken kullanılır.
 // Sunucu çağrılarına, hata metinlerine ve günlüğe girmez.
 
+import 'dart:async';
 import 'dart:math';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -47,6 +48,7 @@ class OkumaAkisDurumu {
     this.hataMesaji,
     this.oneri,
     this.anketUyarisi = false,
+    this.ilkSayfa = 0,
   });
 
   final OkumaAsama asama;
@@ -68,6 +70,9 @@ class OkumaAkisDurumu {
   final String? hataMesaji;
   final OkumaSeriVeOneri? oneri;
   final bool anketUyarisi;
+
+  /// Okuyucunun açılacağı sayfa (0 tabanlı). Yarım kalan hikâyede kaldığı yer; yoksa 0.
+  final int ilkSayfa;
 }
 
 class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
@@ -115,6 +120,7 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
   final Set<String> _dokunulan = {};
   final Map<String, String> _dogruAnahtari = {};
   int _sonIlerleme = -1;
+  int _ilkSayfa = 0;
 
   /// Gezinme sayacı. Kullanıcı bir ekrandan çıktığında artar; arka plandaki açma ya da sonuç
   /// işlemi kendi nesli değiştiyse durumu (ve ekranı) sessizce bırakır.
@@ -142,6 +148,7 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
       hataMesaji: _hata,
       oneri: _oneri,
       anketUyarisi: _anketUyarisi,
+      ilkSayfa: _ilkSayfa,
     );
   }
 
@@ -211,6 +218,9 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
     _dogruAnahtari.clear();
     _dokunulan.clear();
     _sonIlerleme = -1;
+    // Yarım kalan aynı hikâyeyse kaldığı sayfadan açılır (cihazdaki kayıt; sunucuya gitmez).
+    final devam = _depo.devam();
+    _ilkSayfa = devam != null && devam.satir.hikayeId == satir.hikayeId ? devam.sayfa : 0;
     _cevrimdisi = false;
     _oturum = null;
     _bitirIstegi = null;
@@ -341,6 +351,11 @@ class OkumaAkisDenetleyici extends StateNotifier<OkumaAkisDurumu> {
   void sayfaGorundu(int indeks) {
     final oturum = _oturum;
     if (oturum == null) return;
+    // Yarım kalma kaydı yalnız cihazda; hikâye bitince (sonuç) yazılmaz ve okunduYaz siler.
+    final secilen = _secilen;
+    if (secilen != null && _sonuc == null) {
+      unawaited(_depo.devamYaz(secilen, sayfa: indeks, toplam: _sayfalar.length, simdi: _simdi()));
+    }
     final sayfa = (indeks + 1).clamp(0, 12);
     if (sayfa <= _sonIlerleme) return;
     _sonIlerleme = sayfa;

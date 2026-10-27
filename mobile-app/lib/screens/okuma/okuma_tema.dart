@@ -202,6 +202,7 @@ class OkumaMetin {
   static const kahramanBaslik = 'Kahramanın kim olsun?';
   static const kahramanAlt =
       'Kendini, bir aile üyeni, bir hayvanı ya da hayalî bir karakteri seçebilirsin.';
+  static const kahramanUst = 'HAYDİ, HİKÂYE BAŞLASIN!';
   static const kahramanOnerilen = 'Ya da birini seç:';
   static const kahramanAdEtiket = 'Kahramanın adı';
   static const kahramanAdIpucu = 'Adını yaz';
@@ -230,11 +231,13 @@ class OkumaMetin {
   static const hikayeBosIpucu = 'Konu ya da türü değiştirerek bak.';
   static const hikayeFiltreTemizle = 'Filtreleri temizle';
   static const hikayeKahramanYok =
-      'Bu kahramanla şimdilik uygun bir hikâye yok. Başka bir kahraman deneyebilirsin.';
-  static const hikayeKahramanYokBaslik = 'Bu kahramana uygun hikâye yok';
+      'Bu kahraman için hikâyeler hazırlanıyor. Yakında yeni hikâyeler eklenecek; başka bir kahraman da deneyebilirsin.';
+  static const hikayeKahramanYokBaslik = 'Hikâyeler hazırlanıyor';
   static const hikayeYukleniyor = 'Hikâyeler hazırlanıyor…';
   static const hikayeAciliyor = 'Hikâyen hazırlanıyor…';
   static const hikayeYeni = 'Yeni';
+  static const degerVeliTercihi = 'Veli tercihleri';
+  static const degerVeliTercihiRozet = 'Veli tercihi';
   static const hikayeCevrimdisi =
       'İnternet yok. Bu hikâyeyi cihazından okuyorsun; sorular için bağlanman gerekir.';
   static String hikayeSure(int dk) => '$dk dk';
@@ -377,4 +380,23 @@ class OkumaMetin {
       'Henüz bir hikâye bitirmedin. İlk hikâyeni seçmeye ne dersin?';
   static const okuduklarimAlt = 'Bitirdiğin hikâyeler bu cihazda saklanır.';
   static const okuduklarimTekrar = 'Yeniden oku';
+
+  // ── HupoRead vitrini (Öğren) ve Tüm hikâyeler ─────────────────────────────
+  static const vitrinBaslik = 'HupoRead';
+  static const vitrinAlt = 'Hikâye ve macera dünyan';
+  static const vitrinTumu = 'Tüm hikâyeler';
+  static const vitrinKesif = 'Keşfetmeye hazır mısın?';
+  static const vitrinKesifBaslik = 'Hikâyeleri keşfet';
+  static const vitrinKesifBos = 'Şu an gösterilecek hikâye yok. Yakında yenileri eklenecek.';
+  static const vitrinYeniEtiket = 'Sana özel macera';
+  static const vitrinYeniBaslik = 'Bu hikâyenin kahramanı sensin!';
+  static const vitrinYeniAlt = 'Kendini ya da sevdiğin birini kahraman yap.';
+  static const vitrinOlustur = 'Hikâyemi oluştur';
+  static const vitrinDevamBaslik = 'Maceran seni bekliyor!';
+  static const vitrinDevam = 'Kaldığın yerden devam et';
+  static const vitrinDevamBolum = 'Yarım kalan hikâye';
+  static const vitrinKotaGovde = 'Yarın yeni bir hikâye seni bekliyor.';
+  static const vitrinKatalogHata = 'Hikâyeler şu an yüklenemedi.';
+  static String vitrinSayfa(int n, int toplam) => 'Sayfa $n / $toplam';
+  static String vitrinSayi(int n) => '$n hikâye';
 }

@@ -5,7 +5,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
-import '../widgets/okuma/okuma_bugun_karti.dart';
+import '../widgets/okuma/okuma_vitrin.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
 import 'cipher/cipher_list_screen.dart';
@@ -16,7 +16,6 @@ import 'saved_questions_screen.dart';
 import 'subject_topics_screen.dart';
 
 const String _baslik = 'Öğren';
-const String _altBaslik = 'Bir ders seç, kısa bir çalışma yap.';
 const String _derslerBasligi = 'Dersler';
 const String _araclarBasligi = 'Çalışma araçların';
 
@@ -39,11 +38,9 @@ class LearnScreen extends ConsumerWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(_baslik, style: appText(size: 30, weight: FontWeight.w900)),
-                const SizedBox(height: 4),
-                Text(_altBaslik, style: appText(color: AppColors.muted)),
-                const SizedBox(height: 24),
-                // "Senin Hikâyen": bayrak kapalıyken hiçbir yer kaplamaz.
-                const OkumaBugunKarti(),
+                const SizedBox(height: 12),
+                // HupoRead vitrini: bayrak kapalıyken hiçbir yer kaplamaz.
+                const OkumaVitrin(),
                 Text(_derslerBasligi, style: appText(size: 19, weight: FontWeight.w900)),
                 const SizedBox(height: 12),
                 SubjectList(

@@ -100,7 +100,7 @@ Future<void> _adYaz(WidgetTester tester, String ad) async {
   await tester.pump();
 }
 
-Future<void> _kahramanSec(WidgetTester tester, {String tur = 'Hayvan', String ad = _ad}) async {
+Future<void> _kahramanSec(WidgetTester tester, {String tur = 'Hayvan Dostlarımız', String ad = _ad}) async {
   await _tikla(tester, find.text(tur));
   await _adYaz(tester, ad);
   await _tikla(tester, find.text('Hikâyeleri gör'));
@@ -382,7 +382,7 @@ void main() {
     final o = await _ac(tester, repo);
     expect(find.text('Kahramanlarım'), findsNothing);
 
-    await _tikla(tester, find.text('Hayvan'));
+    await _tikla(tester, find.text('Hayvan Dostlarımız'));
     await _adYaz(tester, 'Pati');
     // Anahtarı aç: bu cihaza kaydet.
     final kaydetSatiri = find.text('Bu kahramanı bu cihaza kaydet');
@@ -485,7 +485,7 @@ void main() {
     final repo = FakeOkumaRepository(katalogSatirlari: []);
     await _ac(tester, repo);
     await _kahramanSec(tester);
-    expect(find.text('Bu kahramana uygun hikâye yok'), findsOneWidget);
+    expect(find.text('Hikâyeler hazırlanıyor'), findsOneWidget);
     expect(find.text('Kahramanı değiştir'), findsOneWidget);
   });
 
@@ -519,7 +519,7 @@ void main() {
   testWidgets('yol arkadaşı adı sunucuya gitmez, yalnız "var mı" gider', (tester) async {
     final repo = FakeOkumaRepository();
     await _ac(tester, repo);
-    await _tikla(tester, find.text('Hayvan'));
+    await _tikla(tester, find.text('Hayvan Dostlarımız'));
     await _adYaz(tester, 'Pati');
     await tester.scrollUntilVisible(find.text('Yol arkadaşı ekle (isteğe bağlı)'), 150, scrollable: find.byType(Scrollable).first);
     await tester.tap(find.byType(Switch).first);

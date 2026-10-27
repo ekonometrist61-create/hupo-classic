@@ -5,7 +5,7 @@ import '../../models/okuma_kahraman.dart';
 import '../../providers/app_providers.dart';
 import '../../providers/okuma_providers.dart';
 import '../../widgets/hupo/hupo.dart';
-import '../../widgets/okuma/kahraman_gorsel.dart';
+import '../../widgets/okuma/kahraman_secici.dart';
 import '../../widgets/okuma/okuma_bilesenler.dart';
 import 'okuma_tema.dart';
 
@@ -25,6 +25,9 @@ class KahramanSecimEkrani extends ConsumerStatefulWidget {
 
 class _KahramanSecimEkraniState extends ConsumerState<KahramanSecimEkrani> {
   KahramanTuru? _tur;
+
+  /// Hayvan ve araç gibi gruplarda seçilen alt seçenek (ör. 'at', 'otomobil'); yalnız görünüm içindir.
+  String? _alt;
   final _ad = TextEditingController();
   final _yoldasAd = TextEditingController();
   bool _yoldasVar = false;
@@ -95,21 +98,26 @@ class _KahramanSecimEkraniState extends ConsumerState<KahramanSecimEkrani> {
       baslik: OkumaMetin.uygulamaAdi,
       geri: widget.onGeri,
       icerik: [
-        const BaslikSatiri(
-          baslik: OkumaMetin.kahramanBaslik,
-          alt: OkumaMetin.kahramanAlt,
-          maskot: OkumaMaskot(poz: HupoPose.hosgeldin, boyut: OkumaTema.hupoKarsilama),
-        ),
-        const SizedBox(height: OkumaTema.bosluk16),
+        const _BaslikKarti(),
+        const SizedBox(height: OkumaTema.bosluk20),
         if (_raf.isNotEmpty) ...[
           _KahramanlarimRafi(raf: _raf, onSec: widget.onDevam, onSil: _rafSil),
           const SizedBox(height: OkumaTema.bosluk20),
         ],
-        _KahramanIzgara(
+        KahramanSecici(
           secili: t,
-          onSec: (tur) => setState(() => _tur = tur),
+          secilenAlt: _alt,
+          onSec: (tur, {alt, isim}) {
+            setState(() {
+              _tur = tur;
+              _alt = alt;
+            });
+            // Hayvan ve araçta alt seçenek adı öneri olarak yazılır; çocuk değiştirebilir.
+            if (isim != null) _isimYaz(isim);
+          },
         ),
-        if (t != null && kOnerilenIsimler[t] != null) ...[
+        // Hayvan ve araçta ad alt seçenekten gelir; öneri çipleri yalnız hayalî karakter için.
+        if (t == KahramanTuru.hayali && kOnerilenIsimler[t] != null) ...[
           const SizedBox(height: OkumaTema.bosluk20),
           Text(
             OkumaMetin.kahramanOnerilen,
@@ -338,148 +346,49 @@ class _AdAlani extends StatelessWidget {
   }
 }
 
-/// Kahraman renk ailesi: yumuşak zemin ve vurgu (kenar, ikon). Yalnız AppColors.
-class _KartRengi {
-  const _KartRengi(this.zemin, this.vurgu);
-  final Color zemin;
-  final Color vurgu;
-}
-
-_KartRengi _rengi(KahramanTuru t) => switch (t) {
-      KahramanTuru.hazir => const _KartRengi(OkumaTema.sunSoft, OkumaTema.primaryDark),
-      KahramanTuru.ben => const _KartRengi(OkumaTema.primarySoft, OkumaTema.primary),
-      KahramanTuru.anne => const _KartRengi(OkumaTema.coralSoft, OkumaTema.coralDark),
-      KahramanTuru.baba => const _KartRengi(OkumaTema.mintSoft, OkumaTema.mintDark),
-      KahramanTuru.kardes => const _KartRengi(OkumaTema.sunSoft, OkumaTema.primaryDark),
-      KahramanTuru.arkadas => const _KartRengi(OkumaTema.mintSoft, OkumaTema.primaryDark),
-      KahramanTuru.baskaBiri => const _KartRengi(OkumaTema.line, OkumaTema.skyDark),
-      KahramanTuru.hayvan => const _KartRengi(OkumaTema.coralSoft, OkumaTema.coralDark),
-      KahramanTuru.arac => const _KartRengi(OkumaTema.primarySoft, OkumaTema.primaryDark),
-      KahramanTuru.hayali => const _KartRengi(OkumaTema.sunSoft, OkumaTema.primary),
-    };
-
-/// Kahraman ızgarası. Geniş ekranda 5 sütun, telefonda 3; yazı çok büyükse 2 sütun.
-/// Satırlar IntrinsicHeight ile eşit yükseklikte olur; etiket metni sarar.
-class _KahramanIzgara extends StatelessWidget {
-  const _KahramanIzgara({required this.secili, required this.onSec});
-
-  final KahramanTuru? secili;
-  final ValueChanged<KahramanTuru> onSec;
+/// Üst kart: yumuşak zemin, küçük üst başlık, büyük başlık, açıklama ve Hupo.
+class _BaslikKarti extends StatelessWidget {
+  const _BaslikKarti();
 
   @override
   Widget build(BuildContext context) {
-    final yaziOlcegi = MediaQuery.textScalerOf(context).scale(1);
-    return LayoutBuilder(
-      builder: (context, kisit) {
-        final sutun = kisit.maxWidth >= OkumaTema.kirilimGenis ? 5 : (yaziOlcegi > 1.3 ? 2 : 3);
-        const turler = KahramanTuru.values;
-        final satirlar = <Widget>[];
-        for (var i = 0; i < turler.length; i += sutun) {
-          final bitis = i + sutun > turler.length ? turler.length : i + sutun;
-          final parca = turler.sublist(i, bitis);
-          satirlar.add(
-            IntrinsicHeight(
-              child: Row(
-                crossAxisAlignment: CrossAxisAlignment.stretch,
-                children: [
-                  for (final t in parca)
-                    Expanded(
-                      child: Padding(
-                        padding: const EdgeInsets.all(OkumaTema.bosluk4),
-                        child: _KahramanKarti(tur: t, secili: secili == t, onTap: () => onSec(t)),
-                      ),
-                    ),
-                  for (var k = parca.length; k < sutun; k++) const Expanded(child: SizedBox.shrink()),
-                ],
-              ),
-            ),
-          );
-        }
-        return Column(children: satirlar);
-      },
-    );
-  }
-}
-
-class _KahramanKarti extends StatelessWidget {
-  const _KahramanKarti({required this.tur, required this.secili, required this.onTap});
-
-  final KahramanTuru tur;
-  final bool secili;
-  final VoidCallback onTap;
-
-  @override
-  Widget build(BuildContext context) {
-    final r = _rengi(tur);
-    final kenar = secili ? r.vurgu : OkumaTema.muted;
-    final sekil = BorderRadius.circular(OkumaTema.koseKart);
-    return Semantics(
-      button: true,
-      selected: secili,
-      label: 'Kahraman: ${tur.etiket}',
-      onTap: onTap,
-      child: ExcludeSemantics(
-        child: DecoratedBox(
-          decoration: BoxDecoration(boxShadow: const [BoxShadow(color: OkumaTema.lineDark, offset: Offset(0, OkumaTema.kabartmaKart))], borderRadius: sekil),
-          child: Material(
-            color: secili ? r.zemin : OkumaTema.surface,
-            shape: RoundedRectangleBorder(
-              borderRadius: sekil,
-              side: BorderSide(color: kenar, width: secili ? OkumaTema.kenarSecili : OkumaTema.kenarVarsayilan),
-            ),
-            child: InkWell(
-              borderRadius: sekil,
-              onTap: onTap,
-              child: ConstrainedBox(
-                constraints: const BoxConstraints(minHeight: OkumaTema.kartMinYukseklik),
-                child: Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: OkumaTema.bosluk8, vertical: OkumaTema.bosluk12),
-                  child: Column(
-                    mainAxisSize: MainAxisSize.min,
-                    children: [
-                      SizedBox(
-                        width: OkumaTema.hupoKapakCikartma,
-                        height: OkumaTema.hupoKapakCikartma,
-                        child: Stack(
-                          alignment: Alignment.center,
-                          clipBehavior: Clip.none,
-                          children: [
-                            if (tur == KahramanTuru.hazir)
-                              const OkumaMaskot(poz: HupoPose.hosgeldin, boyut: OkumaTema.hupoKapakCikartma)
-                            else
-                              KahramanGorsel(
-                                turKodu: tur.kod,
-                                boyut: OkumaTema.hupoKapakCikartma,
-                                yedek: Container(
-                                  width: OkumaTema.hupoKapakCikartma,
-                                  height: OkumaTema.hupoKapakCikartma,
-                                  decoration: BoxDecoration(shape: BoxShape.circle, color: secili ? OkumaTema.surface : r.zemin),
-                                  child: Icon(_ikon(tur), color: r.vurgu, size: OkumaTema.ikonBuyuk - 16),
-                                ),
-                              ),
-                            if (secili)
-                              Positioned(
-                                top: -4,
-                                right: -4,
-                                child: Icon(Icons.check_circle_rounded, color: r.vurgu, size: OkumaTema.ikonOrta),
-                              ),
-                          ],
-                        ),
-                      ),
-                      const SizedBox(height: OkumaTema.bosluk8),
-                      Text(
-                        tur.etiket,
-                        textAlign: TextAlign.center,
-                        style: OkumaTema.yazi(OkumaTema.yaziHata, kalinlik: OkumaTema.kalinlikVurgu, satir: 1.2),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-            ),
+    final buyuk = MediaQuery.textScalerOf(context).scale(1) >= 1.3;
+    final metin = Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Text(
+          OkumaMetin.kahramanUst,
+          style: OkumaTema.yazi(OkumaTema.yaziEtiket, kalinlik: OkumaTema.kalinlikVurgu, renk: OkumaTema.primaryDark, harf: 0.4),
+        ),
+        const SizedBox(height: OkumaTema.bosluk8),
+        Semantics(
+          header: true,
+          child: Text(
+            OkumaMetin.kahramanBaslik,
+            style: OkumaTema.yazi(28, kalinlik: OkumaTema.kalinlikBaslik, satir: 1.15),
           ),
         ),
-      ),
+        const SizedBox(height: OkumaTema.bosluk8),
+        Text(
+          OkumaMetin.kahramanAlt,
+          style: OkumaTema.yazi(OkumaTema.yaziYardimci, renk: OkumaTema.ink, satir: 1.35),
+        ),
+      ],
+    );
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(OkumaTema.bosluk20),
+      decoration: BoxDecoration(color: OkumaTema.primarySoft, borderRadius: BorderRadius.circular(28)),
+      child: buyuk
+          ? metin
+          : Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              children: [
+                Expanded(child: metin),
+                const SizedBox(width: OkumaTema.bosluk12),
+                const OkumaMaskot(poz: HupoPose.hosgeldin, boyut: OkumaTema.hupoKarsilama),
+              ],
+            ),
     );
   }
 }

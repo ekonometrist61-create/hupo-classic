@@ -519,7 +519,7 @@ List<pw.Widget> _cevapAnahtari(List<(int, String)> anahtar, _Varlik v) => [
 Future<Uint8List?> _sahneGorseli(String? slug) async {
   if (slug == null || slug.isEmpty) return null;
   try {
-    final veri = await rootBundle.load('assets/okuma/sahneler/.jpg');
+    final veri = await rootBundle.load('assets/okuma/sahneler/$slug.jpg');
     return veri.buffer.asUint8List();
   } on Object {
     return null;
