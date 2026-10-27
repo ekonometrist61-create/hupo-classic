@@ -91,6 +91,21 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - Editör kararları (kullanıcı yetkisiyle verildi): HR-089 ana değer D6, tür tarih_kultur; HR-108 s5 kökü 'kadından dilediği özür'; HR-073 'yüzünü buruşturmak' kaldı (TDK doğrulaması bekliyor).
 - Açık (editör): tüm hikâyelerde vaaz tonu/kapanış tekrarları ve uzunluk (kısaltma yapılmadı); metin sonundaki 'Dil hedefi/Okuma sonrası' öğretmen notlarının ayrı içerik dosyasına taşınması; sözlük dosyaları (çekimli girdi/temel biçim kararı, kullanılmayan girdiler, TDK); HR-125/129 yoldaş 'Serçe' sabit; HR-125 ritim tutarsızlığı; HR-076 gerçek görevli adı; HR-109 'Taşkent'; HR-035/039 yoldaş türü çelişkisi; HR-114 s17 telif ayrıntısı hukuki doğrulama. HR-015…032 paketleri K-0124 kaynağına dokunulmadı.
 
+#### Durum ve kalanlar (2026-10-27)
+- **Commit'ler:** `1d6bf08` (cevap dengeleme), `5fdcc77`, `25c15cc`, `397af76`, `74a2a7e`, `2e3259d`, `dfcf275`, `65f2f30`, `3969e46`, `664a9a6` (model denetimi ve paketler), `7edef04` (bu kayıt).
+- **Push:** `feature/huporead-entegrasyon` `c5dc932..7edef04`. Aynı oturumda hazır bekleyen 4 başka commit da gitti (`93f810d`, `ce37de6`, `b8fd6cf`, `6efbce6`); içerikleri bu kayıtta incelenmedi.
+- **Teknik kalan:**
+  - HR-015…032: .md dosyaları esas metin değil; paketler K-0124 kaynağında (20261077). Hangisinin esas olduğu kararı bekliyor.
+  - Model denetiminde 15 hikâyenin hükmü raporlarda bulunamadı (rate limit ile kesilen gruplar); tekrar denetim gerekebilir.
+  - Denetim aracının "tek harfi 3+ kez kısa hikâye: 4" uyarısı incelenmedi.
+  - `denetim` alanları `pending`, Ajan A/B kaydı yazılmadı, `published=false`.
+- **Editör kalan:**
+  - Vaaz tonu ve kapanış tekrarları (neredeyse tüm hikâyeler); uzunluk.
+  - Metin sonundaki "Dil hedefi / Okuma sonrası" notlarının ayrı içerik dosyasına taşınması.
+  - Sözlük: çekimli girdi kararı, kullanılmayan girdiler, TDK doğrulaması (HR-073 "yüzünü buruşturmak").
+  - HR-125 ritim tutarsızlığı; HR-125/129 yoldaş "Serçe" sabit; HR-076 gerçek görevli adı; HR-109 "Taşkent"; HR-035/039 yoldaş türü; HR-114 s17 telif ayrıntısı.
+- **Kullanıcı kalan:** yayın kapısı ve insan onayı; çalışma ağacındaki ~98 başka commitlenmemiş değişiklik (başka oturumların işi).
+
 ### K-0112 · 2026-10-23 · MOB · HupoRead hikâye veri tabanı: 7. sınıf hikâyeler paketlendi (13 hikâye); toplam 76 paket; elle düzeltmeler onaylandı
 - **Tür:** Gelişme + Karar
 - **Konu:** MOB
