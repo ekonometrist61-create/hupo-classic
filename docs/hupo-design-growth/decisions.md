@@ -50,3 +50,11 @@ Repo ile paket arasındaki çelişkileri burada kısa kaydet; fiyat, karakter ad
 | 2026-10-23 | Veli bölümü ölçülebilir iddia içermez; ana sayfaya eklenmez | Plan: iddia yok, landing pilot sonrası | UYGULANDI | `components/okuma-site/VeliOkumaBolumu.tsx` |
 | 2026-10-23 | Okuma sayfaları için landing üst bilgisi yerine sade üst bilgi | Landing çapa menüsü bu sayfalarda karşılıksız kalırdı | UYGULANDI | `components/okuma-site/OkumaSiteUst.tsx` |
 | 2026-10-23 | Fiyat sayfasına dokunulmadı; okuma hakkı kalemi öneri olarak bırakıldı | Plan: ayrı SKU yok, fiyat kararı kullanıcıda | ERTELENDİ | — |
+
+## Veli ödeme ekranı A/C taslağı (2026-10-28)
+
+| Tarih | Karar | Gerekçe | Durum | Dosya |
+|---|---|---|---|---|
+| 2026-10-28 | A ve C metinleri koşullu taslak olarak yazıldı; yayın yok | Ücretsiz deneme self-serve değil (yalnız `admin_deneme_baslat`); ödeme akışında deneme yok; `plans.deneme_gun` yalnız gösteriliyor; deneme sonu davranışı tanımsız | BEKLİYOR (proje sahibi onayı; açık sorular 1, 2, 3, 9) | `docs/growth-crm/experiments/A-C_metin_tasarim_taslagi.md` |
+| 2026-10-28 | Hupo maskotu veli ödeme ekranında yok; C banner'ında nötr ikon | Veli UI maskotu azaltır; ödeme çağrısı maskotla yapılmaz | ÖNERİ (onay bekliyor) | `web-panel/src/components/veli-paneli/PlanKarti.tsx` (ilgili) |
+| 2026-10-28 | "14 Gün İade Garantisi", "%100 Güvenli Ödeme", "Gizli Ücret Yok" A ve C'de kullanılmaz | Landing'de doğrulanmamış iddialar (2026-10-09 AÇIK RİSK) | ÖNERİ (kontrol kolu kararı bekliyor) | `web-panel/src/messages/tr.json` (landing.pricing) |

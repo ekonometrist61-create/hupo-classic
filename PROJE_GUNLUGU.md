@@ -4769,5 +4769,25 @@ Paketler:
 ### K-0192 · 2026-10-28 · YÖN · I3 karar formu veritabanından doldurma (yerel; TS=Python çapraz kontrolü); I4 bloklu (varyant kararı)
 - I2 zaten I1'de tamam. I4 için ürün kararı gerekli: hangi varyant gösterilecek.
 
+### K-0194 · 2026-10-28 · VEL · Veli ödeme ekranı A/C metin taslağı: yayını bloklayan 3 bulgu
+- **Tür:** Karar
+- **Konu:** VEL
+- **Bağlam:** I4 kararı (K-0193) sonrası A (deneme vurgusu) ve C (deneme sonu hatırlatması) metin ve tasarım taslağı istendi. Taslak: `docs/growth-crm/experiments/A-C_metin_tasarim_taslagi.md`.
+- **Plan:** (1) Kaynak ve migration okuması. (2) A ve C metinlerini koşullu yazmak. (3) Yasak kontrolü tablosu. (4) Açık sorular proje sahibine.
+- **Karar:** Taslak yalnız öneridir; yayın, kod ve veritabanı değişikliği yok. ONAY BEKLİYOR: proje sahibi son onayı. Yayın kapısı için açık sorular 1, 2, 3 ve 9 yanıtlanmalı.
+- **Durum:** BEKLİYOR
+- **Doğrulama:** KISMİ. Kaynak okuması ve migration karşılaştırması yapıldı. Canlı veritabanı sorgusu, tarayıcı kontrolü ve ödeme sandbox testi yapılmadı.
+- **Sahip:** Kullanıcı (K1, K2, K3 kararları ve salt okunur `plans` kontrolü); Hukuk (K9)
+- **Önem:** Kritik
+- **Açıklama:** (a) Ödeme akışında (`payment_create_pending`) deneme mantığı yok; deneme yalnız `admin_deneme_baslat` ile elle açılıyor. (b) `PlanKarti`, `plans.deneme_gun` değerini ödeme uygulanmadan gösteriyor; kontrol kolu da yanıltıcı olabilir. (c) Deneme sonu davranışı (ücret, yenileme, erişim) veride tanımlı değil. Sayılar admin ayarından gelir; metinde sabit sayı yok.
+- **Kanıt:** `supabase/migrations/20261018010000_deneme_suresi.sql`, `20261025000200_plan_deneme_gun.sql`, `20260920001100_payments_iyzico.sql`; `web-panel/src/components/veli-paneli/PlanKarti.tsx`.
+- **İlgili:** K-0193; GİE §33; `decisions.md` 2026-10-09 ve 2026-10-16; GÖR-018/019; K-0011.
+
 ### K-0193 · 2026-10-28 · YÖN · I4 kararı: ilk test A/C (sunum), referans ölçümü mağaza yayını ve ilk indirmelerden sonra başlar; metin onayı ajan taslağı + proje sahibi
 - Referans sayacı şu an başlatılmadı (tetikleyici: mağaza yayını + ilk gerçek indirmeler).
+
+###  · 2026-10-28 · YÖN · Oturum sonu devri: I4 kararları (1 kabul, 2/3/5 benim önerilerim, 4 ikisi, 6 terminoloji + maskot yok + landing iddiaları doğru) ve kalanlar
+- Kararlar: `docs/growth-crm/experiments/A-C_metin_tasarim_taslagi.md` §9 ve `GIE_ANALIZ_VE_IS_PLANI` §33–§34.
+- Yapılanlar bu oturumda: GIE Faz 0–6 (yerel ve uzak), 20261113–20261123 uzakta, A/B motoru A1–A3 + I1–I3, Customer-Lab L1–L3, ajan taslağı A/C.
+- Kalanlar: kartsız deneme akışı, sandbox ödeme testi, 30 gün web referansı, A ekranı ve I4 çağrıları, C ikinci dalga, mobil (BACKLOG-M1). Kullanıcıda: tarayıcı kontrolü, hukuk (108/109, çerez, HupoMentor), web panel dağıtımı.
+- Başka sohbette devam edilecek; bellek: project_gie_kararlar.

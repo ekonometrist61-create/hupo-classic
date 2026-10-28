@@ -343,3 +343,16 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - **Referans ölçümü (30 gün):** Başlangıç, uygulama mağazaya yüklendikten ve ilk indirenler geldikten sonra. Şu an sayaç başlatılmadı; tetikleyici: mağaza yayını + ilk gerçek indirmeler. Referans ölçümü tamamlanmadan örneklem hesabı kesinleşmez.
 - **Metin ve tasarım onayı:** Önce pazarlama ve iletişim (proje tasarım-büyüme ajanı taslak hazırlar); son onay: proje sahibi. Hukuk metinleri (çerez, gizlilik) ayrıca kontrol edilir.
 - **Yasaklar:** Aynı kullanıcıya farklı fiyat; sahte aciliyet veya sosyal kanıt; çocuk ekranında satın alma çağrısı.
+
+## 34. Oturum sonu devri (2026-10-28)
+**Uzakta uygulanan:** 20261113–20261123 (108 ve 109 hâlâ dışarıda; hukuk kararı).
+**Yerelde commit'li, uzakta ve canlıda ayrıca yayın gerekir:** yönetim ekranları (harcama, elde-tutma, veri-kalitesi, rapor-taslaklari, ogrenme-toplam, ab-deneyler). Web paneli Vercel'de; push ve dağıtım yapılmadı.
+**Kalanlar (sıralı):**
+1. Kartsız deneme akışı (ürün işi, hukuk onayı) ve plan kaydında `deneme_gun`.
+2. Sandbox'ta uçtan uca ödeme testi (kayıt, deneme, ödeme, dönüş).
+3. 30 günlük web referans ölçümü (tetikleyici §33/§34 madde 5).
+4. A varyantı ekranı (metinler i18n'e), ön kayıtlı deney tanımı, I4 uygulama çağrıları (`ab_maruziyet_kaydet`, `ab_donusum_kaydet`).
+5. C varyantı ikinci dalga; hukuk: e-posta sınıfı (hizmet/ticari), alt bilgi.
+6. Mobil entegrasyon: BACKLOG-M1.
+7. Kullanıcı: tarayıcı kontrolü (yönetici girişiyle), hukuk (108/109 saklama, çerez metni, HupoMentor), web paneli dağıtımı.
+**Görüntü yeri:** yönetim paneli (Vercel) üzerinden yetkili yönetici girişi. Python araçları (ajan, kalite, analiz, Customer-Lab) yerelde, Oracle'da değil.
