@@ -127,7 +127,7 @@ export async function PricingSection() {
                 </ul>
 
                 <TrackedLink
-                  href={tip.kod === "free" ? "/demo" : "/veli-paneli/kayit"}
+                  href="/veli-paneli/kayit"
                   olay="fiyat_tiklandi"
                   ozellik={{ plan: tip.kod }}
                   className={`mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none ${
