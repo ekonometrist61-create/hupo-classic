@@ -325,3 +325,8 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - Tablolarda kullanıcı kimliği yok; tekillik anahtarı SHA-256 özeti (D1).
 - Test `supabase/tests/ab_olay` 24/24.
 - Uzakta uygulanmadı; deploy onayı bekleniyor. D3 (mobil) uygulama entegrasyonu ayrı sürüm onayı gerektirir.
+
+## 31. Olay kaydı uzakta; mobil entegrasyon kararı (2026-10-28)
+- `20261123000000_ab_olay` uzakta uygulandı (onayla). Temizlik zamanlayıcıları aktif: `ab_tekillik_temizle` 03:40, `ab_gunluk_temizle` 03:42 (UTC).
+- **Mobil (D3) kararı:** Mobil olay entegrasyonu bu aşamada yapılmayacak. Gerekçe: çalışan deney yok; ayrı bir mağaza sürümü için ayrı yayın kararı gerekir. Karar: web entegrasyonu (I2–I3) tamamlanıp ilk web deneyi doğrulanmadan mobil kod yazılmaz; mobil olay çağrıları bir sonraki planlı uygulama sürümüne eklenir, ayrıca yayın yapılmaz.
+- Mobil ilk deney, mobil kol kayıtlarının web'deki deneyle aynı şemayı kullandığı test edildikten sonra başlatılır.

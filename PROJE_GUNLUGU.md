@@ -4756,3 +4756,6 @@ Paketler:
 
 ### K-0190 · 2026-10-28 · VT · Deney olay kaydı I1 (yerel, 24/24); D1–D4 kararları uygulandı
 - `20261123_ab_olay` uzakta değil; deploy onayı bekleniyor.
+
+### K-0191 · 2026-10-28 · VT · 20261123 uzakta (onaylı); temizlik cron işleri aktif; mobil D3 kararı
+- Mobil olay entegrasyonu ilk web deneyinden sonra, bir sonraki planlı sürümle; ayrı yayın yok.
