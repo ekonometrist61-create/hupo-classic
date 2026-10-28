@@ -276,3 +276,8 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - Test: `scripts/customer-lab/test_katalog.py` 9/9 (eşik, gizli değer, etiket, kişi alanı yok, tekrarlanabilirlik).
 - Örnek çıktı: `scripts/customer-lab/katalog-ornek.json` (sentetik girdiden, 3 persona).
 - L1 veritabanı şeması (sentetik_* tabloları) bu adımda yok; L2'de, ayrı onayla yapılır.
+
+## 22. Faz 4: eşik sayımı (yerel, 2026-10-28)
+- `20261119000000_growth_ml_esik`: `admin_growth_ml_esik()` yalnız ölçüm. Model B (ücretli veli, eşik 500), Model C (iptal eden veli 200 ve en az 2 abonelik döngüsü olan veli 2), Model D (ilk başarılı ödemeden ay, eşik 6). Model eğitimi yok.
+- Test: `supabase/tests/growth_ml_esik` 15/15.
+- Uzakta uygulanmadı; deploy onayı bekleniyor. Eşikler sezgiseldir; ML kararı insan onaylı ayrı bir adımdır.
