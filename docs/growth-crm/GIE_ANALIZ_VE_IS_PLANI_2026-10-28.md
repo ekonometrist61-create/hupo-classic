@@ -287,3 +287,8 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - `scripts/customer-lab/fiyat_senaryo.py`: fiyat duyarlılığı senaryo koşucusu; varsayımlar çıktıda açık; negatif esneklik ve gizli d1 reddedilir. Test 23/23 (katalog + senaryo).
 - Örnek: `persona-ornek.json` → `senaryo-ornek.json` (sentetik).
 - Uzakta uygulanmadı; deploy onayı bekleniyor. Sentetik tablolara gerçek veri yazılmaz.
+
+## 24. Customer-Lab L3 ve gerçek A/B spec'i (yerel, 2026-10-28)
+- `20261120_sentetik_lab` uzakta uygulandı (onayla).
+- `scripts/customer-lab/ab_aday.py`: A/B aday listesi; iki oranlı örneklem formülü (klasik sonuç 0.5→0.6 için 385 doğrulandı), Bonferroni düzeltmesi, referansa eşit adaylar atlanır. Test: tüm Customer-Lab Python testleri 33/33.
+- `docs/growth-crm/specs/AB_MOTORU_SPEC.md`: gerçek A/B motorunun spec'i (kod yok; deney kaydı, atama, SRM, guardrail, ara bakış yasağı).
