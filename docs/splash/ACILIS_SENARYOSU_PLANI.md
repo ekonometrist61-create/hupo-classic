@@ -222,7 +222,17 @@ Kullanıcı kararları ajana devretti ("sen karar ver, kaliteli olsun"). Alınan
 - **Uyuyan Hupo:** `mobile-app/assets/hupo/splash/hupo_uyuyan.webp` (147 KB, alfa korunur). Yalnız iki göz bölgesi değişti. Karşılaştırma: `uretim-2026-10-28/uyuyan-hupo-master-yama-ham.png` (sol master, orta yama, sağ ham çıktı). Kalan: silik halka izi çok hafif; Faz 4'te gerçek boyutta cihazda bakılacak. **Henüz `pubspec.yaml`'a kayıtlı değil** (dosya başka oturumun bekleyen değişikliğinde; Faz 4'te kaydedilir).
 - **Logo yönleri:** `uretim-2026-10-28/logo-yonleri-A-B-C.png`. **Bunlar yapay zekâ konseptidir, nihai logo değildir:** raster, harf aralığı ve font doğrulanmadı. Nihai logo için tasarımcı vektörel çizer; **marka tescil/benzerlik taraması (HUK) yapılmadan** kilitlenmez. A (maskot üstte) kalabalık bulundu, elendi.
 
-Sıradaki üretim işleri: (1) kanat katmanı (gövdeden kesilip arkası tamamlanacak; ±6° dönüş için), (2) göz açık↔kapalı kırpma geçişi ve sıçrama için ek kareler, (3) logo C'nin vektörleştirilmesi.
+**Katmanlı Hupo üretildi** (`mobile-app/assets/hupo/splash/`, 3 katman + `hupo_katmanlar.json` konum/pivot/açı aralığı; hepsi 845×900 `hero_splash` tuvalinde):
+
+| Katman | Boyut | İçerik |
+|--------|-------|--------|
+| `hupo_govde.webp` | 845×900, 127 KB | Master, sağ kanat çıkarılmış (kanat kökü gövdede bırakıldı, boşluk oluşmasın) |
+| `hupo_kanat.webp` | 315×590, 40 KB | Sağ kanat (selam). Pivot (560, 440); **güvenli açı aralığı −4° … +6°** |
+| `hupo_goz_kapali.webp` | 416×320, 28 KB | Gözü kapatan yama; yalnız kırpmada/uykuda gövdenin üstüne konur |
+
+Doğrulama (görsel ve sayısal, uygulamada denenmedi): üç katman açık gözle birleşince master'dan ortalama fark 0,71/255; kapalı gözle `hupo_uyuyan` ile 1,10/255 (`katmanlar-dogrulama-master-acik-kapali.png`). Kanat 0° konumunda master ile birebir; döndürülmüş karelerde hayalet kanat yok (`kanat-aci-testi-*.png`). **Bilinen sınır:** −6° ve +8° gibi uç açılarda kök hattında silik bir çizgi görünüyor; bu yüzden aralık −4°…+6° ile sınırlı. Sıçrama için ek kare gerekmiyor (bütün katmanların ölçek/öteleme dönüşümü yeter). `hupo_uyuyan.webp` artık bu katmanlardan türetilebilir ve yedek olarak kalır.
+
+Sıradaki: **Faz 4** (katmanlarla "Hupo Uyanır" sahnesi, native splash'in uyuyan Hupo'ya geçmesi, pubspec kaydı) ve logo C'nin vektörleştirilmesi (tasarımcı).
 
 ## 7. Karar gereken noktalar
 
