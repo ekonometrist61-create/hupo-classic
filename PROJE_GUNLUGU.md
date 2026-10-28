@@ -391,6 +391,47 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 
 ## B. Kayıtlar (en yeni üstte)
 
+### K-0171 · 2026-10-28 · BİL/WEB · Bildirim, e-posta, SMS ve captcha: durum denetimi; auth formlarına Turnstile
+- Denetim (salt okunur): `supabase secrets list` ve `functions list` (yalnız ad ve durum).
+- **E-posta, Brevo (`eposta-gonder`):** fonksiyon ACTIVE; `BREVO_API_KEY`, `EPOSTA_GONDEREN_ADRES`, `EPOSTA_GONDER_SECRET` tanımlı. Cron `eposta-outbox-gonder` (5 dk) Vault'taki `olay_worker_secret` ile çağırıyor; Vault'ta ve `OLAY_WORKER_SECRET` env'inde yok → 401, kuyruk birikir, kayıt kaybolmaz. Growth journey motoru KAPALI.
+- **Sınav sonucu e-postası (`olay-kutusu-gonder`):** Resend'e bağlı, Brevo'dan ayrı. `RESEND_API_KEY`, `OLAY_MAIL_FROM`, `PUBLIC_SITE_URL`, `OLAY_WORKER_SECRET` yok → çalışmıyor; olaylar kuyrukta birikir (401, talep öncesi). İki sağlayıcı ikiliği var.
+- **SMS (`telefon-kod-gonder`, İleti Merkezi):** `ILETIMERKEZI_KEY/HASH/SENDER` tanımlı; gönderici `APITEST` (450, onaylı başlık yok). Web OTP arayüzü yok; kullanıcıya görünmüyor.
+- **Push (`send-push`, FCM):** `FIREBASE_SERVICE_ACCOUNT` ve `PUSH_WEBHOOK_SECRET` tanımlı; 2026-10-17'de bir gönderim FCM tarafından kabul edildi. Veritabanı webhook'unun kurulu olduğu doğrulanmadı. Pazarlama push kapısı KAPALI.
+- **In-app kutu ve duyurular:** migration'lar uzakta (20261035–38), kod var; tarayıcı testi yok.
+- **Captcha:** `CAPTCHA_SECRET` tanımlı; `deneme-on-kayit` ve `veli-adayi-kayit` ACTIVE; landing formları Turnstile'da (§21.6). Giriş, kayıt ve şifre sıfırlama formlarında captcha YOKTU.
+- **Yapılan (kod, commit YOK):** `SignInForm`, `SignUpForm`, `ForgotPasswordForm`: `TurnstileWidget` eklendi; `signInWithPassword`, `signUp` ve `resetPasswordForEmail` çağrılarına `captchaToken` geçiriliyor; her denemeden sonra widget yenileniyor. İstemcide kapı yok: token yoksa istek yine gider. Zorlama, Supabase Dashboard'daki Bot protection (Turnstile) ayarıyla yapılır.
+- **Doğrulama:** `tsc --noEmit` 0 hata; `eslint src/components/auth` 0 hata. Tarayıcı testi yapılmadı.
+- **Dikkat:** Dashboard captcha açılmadan önce mobil uygulama (`mobile-app/lib/auth/login.dart`, `signup.dart`) captchaToken göndermeli; aksi halde mobil giriş ve kayıt kırılır.
+- **Kullanıcının yapacakları (sırayla):**
+  1. Vault'ta `olay_worker_secret` ve env'de `OLAY_WORKER_SECRET` aynı değerle oluşturulur; cron 401 hatası biter.
+  2. Sınav sonucu e-postası için: `olay-kutusu-gonder` ya Resend bilgileriyle (`RESEND_API_KEY`, `OLAY_MAIL_FROM`, `PUBLIC_SITE_URL`) çalıştırılır, ya da `_shared/eposta.ts`'e geçirilir (önerilen; Brevo ile yeter, kod değişikliği gerekir).
+  3. İleti Merkezi panelinde onaylı başlık (≤11 karakter, Türkçe karakter yok) alınır; `ILETIMERKEZI_SENDER` güncellenir ve `tools/telefon-kod-test.mjs` ile test edilir.
+  4. Dashboard → Auth → Bot protection → Turnstile açılır (mobil token'ı gönderdikten sonra).
+  5. `push_outbox` → `send-push` veritabanı webhook'unun kurulu olduğu Dashboard'dan doğrulanır.
+- **Güncelleme (aynı gün, kullanıcı yetkisiyle):** (1) `OLAY_WORKER_SECRET` env ve Vault `olay_worker_secret` aynı değerle oluşturuldu (değer kayda yazılmadı). Sonrası `net._http_response`: zamanlayıcı çağrıları 401 → 200. (2) `olay-kutusu-gonder` ortak Brevo/Resend katmanına geçirildi ve deploy edildi; yetkisiz çağrı 401. Gerçek sınav sonucu e-postası gönderilmedi (test olayı yok). (3) Push: `push_outbox_webhook` tetikleyicisi veritabanında kurulu (salt okunur doğrulandı). (4) Mobil captcha: `mobile-app/lib/auth/turnstile.dart` (webview_flutter), giriş ve kayıt `captchaToken` gönderiyor; `--dart-define=TURNSTILE_SITE_KEY=…` verilmezse eski davranış. `flutter analyze lib/auth` temiz; cihazda denenmedi, derleme (APK) yapılmadı, pubspec.yaml'a `webview_flutter` eklendi.
+- **Kalan:** İleti Merkezi onaylı başlık (kullanıcı); Auth SMTP kayıt denemesi (kullanıcı); mobil sürümün site anahtarıyla derlenip yayınlanması; ondan sonra Dashboard Bot protection.
+- **Durum:** KISMEN.
+
+### K-0168 · 2026-10-28 · MOB/WEB/TSR · Giriş filmi sesi: v1 reddedildi, v2 (sıcak mallet + 4 notalık imza) ve iki sürüm
+- **Tür:** Gelişme + Sorun
+- **Bağlam:** v1 sesi (tiz çan, kıvılcım, hışırtı) kullanıcı tarafından "yakışmadı" bulundu; daha profesyonel, pedagojik ve nöropazarlama ilkelerine uygun ses istendi.
+- **Yapılan:** `remotion/tools/giris_ses_uret.py` baştan yazıldı (Hu-po-lin-go = 4 hece = 4 nota; gerilim→çözülme; zirve öncesi "nefes çekme"; ayıklama; D majör; −16 LUFS). İki sürüm: `tam` (varsayılan), `sade`. Sesler Oracle'da mevcut videolara ffmpeg ile eklendi (yeniden render yok). `giris-film/onizleme.html` iki sürümü video ile birlikte oynatır. Ayrıntı: `docs/splash/GIRIS_FILMI.md` "Ses tasarımı".
+- **Karar:** Yok. `ONAY BEKLİYOR`: kulakla dinleme ve tam/sade seçimi (kullanıcı).
+- **Durum:** ÜRETİLDİ; uygulamalara bağlanmadı.
+- **Doğrulama:** KISMİ. Ölçüldü: −16,0 LUFS, tepe −3,0/−3,5 dBFS, kırpma 0, spektrum dengesi, olay yükselişleri, AAC/Opus kodlama sonrası kaynakla 0,00 ms kayma (çapraz korelasyon), akış süreleri eşit, sayfa tarayıcıda açıldı (seek, iki sürüm). **Doğrulanmadı:** sesin kulakla dinlenmesi, telefon hoparlörü/kulaklık, "nöropazarlama" etkileri (ölçülmedi), çocuk/veli tercih testi.
+- **Sahip:** Kullanıcı (dinleme, seçim) + Ajan · **Önem:** Orta
+- **İlgili:** K-0167, `docs/splash/GIRIS_FILMI.md`
+
+### K-0167 · 2026-10-28 · MOB/WEB/TSR · Giriş filmi "Kelime Evreni" (mobil + web): senaryo, üretim planı, Remotion/Oracle üretimi
+- **Tür:** Gelişme + Plan
+- **Bağlam:** Kullanıcı mobil ve web için profesyonel, etkileyici bir giriş istedi; senaryo, üretim planı ve Oracle'da Remotion ile üretim yetkisi verdi (`ONAYLI`). K-0166'daki "çıkartma gibi hareket" sorununa karşı farklı kurgu seçildi.
+- **Yapılan:** Senaryo: gece → iki göz yıldızı → ~1100 yıldız/nokta Hupo'ya toplanır → göz açılışı, sıçrama, kanat selamı → altın iz "Hupolingo"yu sarar → sabah (5,0 sn). `HupoGirisMobil` (1080×2340) ve `HupoGirisWeb` (1920×1080), 60 fps; MP4 + WebM + poster ≈ 2,3–2,6 MB her biri (`docs/splash/giris-film/`). Noktalar onaylı master'dan örneklenir (yeni karakter çizimi yok). Oracle'da tek seferlik kapsayıcıyla render (servislere dokunulmadı; render ≈ 7 dk). Belge: `docs/splash/GIRIS_FILMI.md`; araç: `docs/splash/remotion/oracle-render.ps1`.
+- **Karar:** Yok. `ONAY BEKLİYOR`: senaryo ve süre, slogan "Birlikte öğrenelim" (`hupo-ux-writing`), mobilde film yerine Flutter sahnesi önerisi, ses tasarımı.
+- **Durum:** FİLM ÜRETİLDİ; uygulamalara BAĞLANMADI (Faz 5–9 açık).
+- **Doğrulama:** KISMİ. Kareler ve hareket şeridi gözle incelendi, 5 kusur bulunup düzeltildi. Film akıcı izlenmedi; uygulamada/tarayıcıda oynatma, ses, Safari/iOS, düşük uç cihaz, farklı mobil oranlarda kırpma doğrulanmadı.
+- **Sahip:** Kullanıcı (izleme, onay) + Ajan · **Önem:** Orta
+- **İlgili:** K-0166, GÖR-077, `docs/splash/ACILIS_SENARYOSU_PLANI.md`. Oracle: disk %91 (4,4 GB boş) iken çalışıldı; kapsayıcı `--rm`, kalıcı veri bırakılmadı.
+
 ### K-0166 · 2026-10-28 08:37 · MOB/TSR · Mobil açılış yenileme: teşhis, "Hupo Uyanır" senaryosu ve üretim planı
 - **Tür:** Plan
 - **Konu:** MOB/TSR
@@ -4598,3 +4639,65 @@ Paketler:
 - Kararlar (kullanıcı "sen karar ver" dedi): PostHog kalır (yalnız web, çerez onaylı, çocuk ve mobil dışı; hukuk metni şart). Migration 108 şimdi uygulanmaz (edge + istemci yayını + eski sürüm oranı koşulu). 109 hukuk onayı olmadan uygulanmaz. Motor bayrakları KAPALI; açılış sırası ve koşulları `GIE_ANALIZ_VE_IS_PLANI` §10. Manuel `growth_harcama` tablosu yapılacak (Faz 1). Customer-Lab ve HupoMentor inşa edilecek, şu an yok; ayrı spec'ler.
 - Oracle kişisel veri kuralı onaylandı: ham kişisel veri gönderilmez.
 - DOĞRULANMADI: Coolify arayüzündeki eski kayıtlar; n8n dışarı erişim denetimi.
+
+### K-0169 · 2026-10-28 · YÖN/VT · GIE Faz 0 tanımları ve Faz 1 `growth_harcama` (yerel)
+- Faz 0: aktive hane, aktif gün, aktif kullanıcı ve düzenli aile tanımları `OLAY_TAKSONOMISI.md` §8'e koddan çıkarılarak yazıldı.
+- Faz 1: `20261113000000_growth_harcama.sql` (tablo, RLS açık ve politikasız, admin RPC'leri: ekle/listele/sil; PII e-posta reddi; tutar ve tarih sınırları; denetim kaydı). Test `supabase/tests/growth_harcama` 27/27 geçti (PGlite).
+- DOĞRULANMADI / YAPILMADI: uzak DB'ye uygulanmadı; 5 admin sayfası yapılmadı; W1, W5, W6 ve W3 admin ekranı durumu kontrol edilmedi; commit atılmadı.
+- Test hatası (kendi testimde) düzeltildi: boş liste kontrolü silme sırasını bozuyordu; sıralama düzeltildi.
+
+### K-0170 · 2026-10-28 · VT/YÖN · `20261113` uzakta uygulandı; harcama ekranı yapıldı
+- Kullanıcı deploy onayı verdi. Önizleme: 108 ve 109 uzak son migration'dan önce kaldığı için `--include-all` gerekiyordu; kullanılmadı. 108 ve 109 geçici olarak dışarı alındı, yalnız `20261113` uygulandı, dosyalar geri konuldu (doğrulandı).
+- Uzak durum: 20261110–20261113 uygulandı; 20261108 ve 20261109 bekliyor (kararlar gereği).
+- `/yonetim/harcama` ekranı (`HarcamaManager.tsx`), nav girişi, tr/en çeviriler. `tsc` ve `eslint` temiz. Tarayıcıda görsel kontrol YAPILMADI.
+- Commit atılmadı.
+
+### K-0171 · 2026-10-28 · VT/YÖN · Kohort ve CAC (yerel); elde tutma ekranı; çeviri dosyası onarımı
+- `20261114000000_growth_kohort_cac.sql`: `admin_growth_kohort`, `admin_growth_cac`. Test `supabase/tests/growth_kohort_cac` 22/22 (PGlite). Uzakta uygulanmadı; onay bekliyor.
+- Ekranlar: `/yonetim/harcama` CAC kartı; `/yonetim/elde-tutma` yeni sayfa. `tsc` ve `eslint` temiz; tarayıcı kontrolü yapılmadı.
+- Çeviri dosyaları ilk yamada bozuldu; HEAD'den yeniden üretildi ve doğrulandı. `yonetim-sorular.*` dosyaları bu oturumda değiştirilmedi.
+- Commit atılmadı.
+
+### K-0172 · 2026-10-28 · VT/YÖN · `20261114` uzakta uygulandı; veri kalitesi ekranı; W1/W5/W6 kontrolü
+- Deploy (onaylı): 20261114 uygulandı; 108 ve 109 dışarıda, geri konuldu. Bir önizleme "Connection timed out" verdi; ikinci denemede başarılı.
+- Yerel: `20261115000000_growth_veri_kalitesi.sql` + test 13/13; `/yonetim/veri-kalitesi` ekranı; tr/en çeviriler. `tsc` ve `eslint` temiz. Uzakta uygulanmadı (onay bekliyor).
+- W1: abonelik alanları camelCase, RPC ile eşleşiyor. W5: CRM aksiyonları mevcut. W6: `next` güvenli yönlendirme var; birim testi doğrulanmadı.
+- Commit atılmadı.
+
+### K-0173 · 2026-10-28 · VT/YÖN/GÜV · veri kalitesi deploy; dev smoke; n8n dış erişim bulgusu; Faz 2 dilim 1 (yerel)
+- Deploy (onaylı): 20261115 uygulandı; 108/109 dışarıda, geri konuldu. İlk deneme kimlik hatasıyla durdu, DB değişmemişti.
+- Dev smoke: localhost:3010, 4 yeni rota 307 (yetki kapısı). Tarayıcıda yönetici girişi ile görsel kontrol bekliyor.
+- n8n: konteyner çalışıyor; N8N_HOST nip.io; 0.0.0.0:5678 yayınlı; host iptables 5678'i kabul etmiyor; PC'den erişim zaman aşımı. Ollama'ya ait 11434 kuralı kaldı. Değişiklik yok (onay gerekir).
+- Faz 2 dilim 1 (yerel): `20261116000000_growth_rapor_taslak` + test 19/19. Gönderim yok, uzakta uygulanmadı.
+- Commit atılmadı.
+
+### K-0174 · 2026-10-28 · VT/GÜV · 20261116 uzakta; n8n loopback (onaylı a); 11434 kuralı kaldırıldı
+- Deploy: 20261116 uygulandı (108/109 dışarıda, geri konuldu).
+- n8n: compose yedeği alındı; port 127.0.0.1:5678:5678 (önceki 5678:3000 mapping çalışmıyordu); ollama/open-webui compose tanımları kaldırıldı; yalnız n8n yeniden oluşturuldu; volume korundu. Health 200 (loopback). Dışarıdan 5678 ve domain zaman aşımı.
+- Firewall: iptables INPUT'tan 11434 kuralı kaldırıldı; rules.v4 güncellendi.
+- Açık: Coolify kaynak tanımı eski; domain/Traefik yolu incelenmedi.
+- Commit atılmadı.
+
+### K-0175 · 2026-10-28 · YÖN/VT · Faz 1b, 2, 3 yerel; faz durum tablosu
+- Faz 2: `20261116` uzakta uygulandı (onayla); rapor taslağı yönetici ekranı yerelde (`RaporTaslakManager`); gönderim yok.
+- Faz 1b: `scripts/icerik-kalite/kalite_motoru.py` (yerel, Oracle'a gönderilmedi). 104 hikâye tarandı; rapor `docs/okuma-entegrasyon/kalite/`. 12 hikâyede metadata eksik (HR-121–132).
+- Faz 3: `20261117000000_growth_ogrenme_toplu` (test 15/15), ekran `/yonetim/ogrenme-toplam`. Uzakta uygulanmadı.
+- Faz 4 ertelendi; Faz 5 ve 6 için karar/spec bekleniyor. Kullanıcı yapacakları plan §17'de.
+- Commit atılmadı.
+
+### K-0176 · 2026-10-28 · YÖN/VT/GÜV · 20261117 uzakta; Faz 5 canlı (sentetik); Faz 6 spec; hukuk taslağı; kararlar; commit 2b16766
+- Deploy (onaylı): 20261117 uygulandı; 108/109 dışarıda, geri konuldu.
+- Faz 5: `scripts/growth-ajan` (sağlayıcı katmanı, üç ajan, sayı doğrulaması). Birim testleri 14/14. Canlı Gemini çalışması sentetik veriyle: üç ajan taslak, uydurma sayı yok. Çıktılar `docs/growth-crm/ajan-ciktilari/`. Anahtar `.env` dosyasından okundu, ekrana yazılmadı.
+- Faz 6: `docs/growth-crm/specs/CUSTOMER_LAB_SPEC.md`, `HUPOMENTOR_SPEC.md` (kod yok; HupoMentor hukuk onayı olmadan kodlanmaz).
+- Hukuk: `docs/hukuk-taslak/ANALITIK_CEREZ_VE_SAKLAMA_TASLAGI.md` (taslak; yayınlanmaz).
+- Kararlar: plan §19 (Faz 2 alıcılar/saat/gölge mod; n8n loopback ve domain kaldırma; kanal CAC ertelendi; Faz 4 ertelendi).
+- Commit 2b16766: yalnız bu oturumun dosyaları. adminNav.tsx için yalnız benim 5 satırım indekslendi (başka oturumun kazanimKapsami/forms değişikliği dışarıda). PROJE_GUNLUGU.md başka oturumların girdilerini içerdiği için commit dışı.
+- YAPILAMADI (erişim yok): Coolify'da n8n port/kaynak değişikliği ve domain kaldırma; yönetici girişiyle tarayıcı kontrolü. Coolify API/paneli için kimlik bilgisi yok.
+- Not: K-0171 iki kez kullanılmış (başka oturumun BİL/WEB kaydı ile bu oturumun kohort kaydı). Numara çakışması, düzeltilmedi.
+
+### K-0177 · 2026-10-28 · GÜV/VT · Coolify kaydı düzeltildi (onaylı)
+- Yol: `coolify-db` (services id 1 ve service_applications) üzerinden. Yedek: sunucuda `/home/ubuntu/coolify-backup-20261028` (700; dosyalar 600).
+- `docker_compose_raw` ve `docker_compose`: ollama ve open-webui kaldırıldı; n8n portu `127.0.0.1:5678:5678`. Tek transaction, doğrulandı.
+- `service_applications`: ollama ve open-webui kayıtları silindi; yalnız n8n kaldı (fqdn yok; n8n'in Coolify yönlendirmesi hiç yoktu, alan adı yalnız ortam değişkenlerinde).
+- Doğrulama: diskteki compose geçerli; n8n 127.0.0.1:5678 üzerinden healthz 200.
+- Kalan: N8N_HOST ve WEBHOOK_URL ortam değerleri alan adını hâlâ içeriyor (yönlendirme yok; zararsız). Temizlenecekse ayrı onayla.
