@@ -134,6 +134,25 @@ Yeni yaklaşım: kanat açısını oynatmak yerine **gerçek uçuş pozları** (
 Döngü P1→P2→P3→P2 (12 kare = 2,5 Hz); gövde aşağı vuruşta yükselir, yukarı vuruşta alçalır; inişte P4, yere değince katmanlı duruş pozuna geçilir (sıkışma + gölge). Pozlar Gemini ile master referansıyla üretildi (P3/P4 ikinci denemede), **göz arası mesafesiyle** hizalandı ve şeffaf sprite yapıldı (1500×1500, göz orta noktası (750, 640)).
 Çıktı: `uretim-2026-10-28/hupo-ucar-onizleme.mp4` (4,4 sn). **Bilinen sınırlar:** uçuş pozları master'ın birebir yeniden çizimi değil, aynı karakterin **yeniden üretilmiş** pozlarıdır (yüz ve renkler tutarlı, ince ayrıntı ve göz tonu hafif farklı; marka onayı gerekir); pozlar arası geçişler "çift kare" kesmedir, ara kare yok (çizgi film uçuşu gibi okunur, gerçek hareket akıcılığı kullanıcının izlemesine bağlı); P1–P4 toplam ≈ 650 KB, **mobil paket bütçesi (≤ 400 KB) aşılıyor**, Faz 4'te küçültülecek (ör. 1000 px, 3 poz).
 
+### 3.1d Revize 3 (28 Ekim): "HUPO SIGNATURE ENTRANCE" prompt'una göre 1,6 sn imza: `HupoImza`
+
+Kullanıcı uçuş sürümünü ("daha iyi ama hâlâ profesyonel tat yok") yeterli bulmadı ve **Claude Code Master Implementation Prompt** (4 sahne, 1600 ms, ana sayfaya kesintisiz bağlanma) verdi; Remotion'la üretim istendi. Prompt'un özü: kısa, rafine, bebeksi olmayan; ucuz büyütme-küçültme yok; Hupo ana sayfadaki **gerçek** konumuna yerleşir; ana sayfa bileşenleri hafif stagger ile gelir. Uçuş sürümü (§3.1c) bu tasarımın yerine **seçenek olarak** kalır (ilk açılışta "tanışma" için kullanılabilir).
+
+**Faz A (audit):** bu oturumda zaten yapıldı (bkz. §1, §1.1; `HeroHeader`/`_Hero` yeniden okundu: Hupo 104 dp solda, 3 StatPill, sarı ilerleme çubuğu, krem zemin).
+**Faz B/C (tasarım + prototip):** `uretim-2026-10-28/hupo-imza-onizleme.mp4` (1080×2340, 60 fps, 2,0 sn = 1,6 sn akış + 0,4 sn bekleme). **Bu bir Remotion prototipidir, çalışan Flutter demosu değildir.**
+
+| Sahne | ms | Önizlemede |
+|---|---|---|
+| 1 First Spark | 0–300 | Düz turkuaz, **uyuyan** Hupo sistem splash boyunda (144 dp) |
+| 2 Hupo Awakens | 300–750 | Hafif büyüme/yükselme, gözler açılır (400), doğal kırpma (600–670), kanat katlı→açık (hafif aşımla), kanat ucundan **3** altın kıvılcım, küçük gövde eğimi |
+| 3 Wing Signature | 750–1150 | Kanat ucundan **ince** altın iz (üç katman çizgi, filtre/flash yok) başlığa doğru kavis çizer; Hupo izin ucunda süzülür; tam ekran turkuaz, ana sayfa başlığına **daralarak dönüşür** (alt köşeler 36 dp) |
+| 4 Ready to Explore | 1150–1600 | Hupo ana sayfadaki konuma (sol, 104 dp) oturur; üst çubuk, selamlama, 3 StatPill (60 ms aralıkla), seviye çubuğu dolar, kartlar kademeli |
+
+Düzeltilenler (kare incelemesinde bulundu): Hupo'nun ana sayfa konumuna varmaması (spring çok geç sönüyordu; ölçekleme merkezi %80'deydi, ~190 px kayıyordu) ve boş StatPill ikonları.
+**Sonuç (`ONAY BEKLİYOR`):** native splash yine **uyuyan Hupo** gösterir (Faz 1'deki native Hupo mantığı geri döner), **ama** Faz 1'de ürettiğim native görsel *açık gözlü* poz; yeniden üretilmeli (uyuyan, 144 dp). Düz-turkuaz kararı yalnız uçuş sürümü için geçerliydi.
+**Önizleme ≠ uygulama (dürüstlük):** ana sayfa öğeleri (StatPill, kartlar) gerçek bileşenin **yaklaşık** çizimidir; font/ölçüler cihazda doğrulanmadı; Hupo ana sayfadaki `HupoMood.greeting` pozunu kullanır, önizleme **master rig**'i: Faz 4'te son karede pozun eşleştirilmesi (veya greeting pozunun bu rig'e çevrilmesi) gerekir, aksi hâlde "başka pozda sıçrama" olur. Kare süresi/jank, düşük cihaz, iOS ölçülmedi.
+**Hâlâ iyileştirilebilir:** altın izin kıvrımı ve kıvılcım parıltısı daha zengin olabilir; kafa hareketi gövde eğimiyle taklit (ayrı baş katmanı yok); iz ekranın ~%60'ını kat eder; sol kanat sabit.
+
 ### 3.2 Sonraki açılışlar (dönen kullanıcı, ≈ 0,8 – 0,9 s)
 
 Native'de uyuyan Hupo → Flutter ilk karesi aynı → göz açılır, kısa kanat selamı (0,3 s) → Hupo, Giriş başlığındaki veya
