@@ -391,6 +391,15 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 
 ## B. Kayıtlar (en yeni üstte)
 
+### K-0180 · 2026-10-28 · MOB/WEB/TSR · Giriş filmi uygulamaya bağlandı (Flutter, ağırlıksız); ses ve film K-0167/K-0168'i devralır
+- **Not (numara):** Film ve ses kayıtları önce K-0167 ve K-0168 numaralarıyla yazıldı; aynı numaralar başka oturumlarca da kullanıldı. Giriş filmiyle ilgili güncel kayıt budur; commit mesajlarındaki "K-0167/K-0168" film işine aittir.
+- **Tür:** Gelişme · **Karar (kullanıcı, `ONAYLI`):** "bunu kullanalım, ama uygulamaya ağırlık yapmasın".
+- **Yapılan:** İlk açılışta (cihazda bir kez) 5 sn'lik "Kelime Evreni" filmi oynar: `mobile-app/lib/widgets/splash/hupo_giris_filmi.dart` (tek `CustomPainter`; video yok, yeni paket yok). `SplashGate` ilk açılışta bunu kullanır; sonraki açılış (900 ms) ve hareket azalt (statik kare) değişmedi. Ses: `AudioEvent.brand` → `hupo_giris_sesi.m4a`; film ses başlayana kadar (≤ 350 ms) bekler, ses başlamazsa sessiz oynar. Flutter web aynı kodu kullanır (yatay yerleşim dahil). Eski `hupo_marka_sesi.mp3` silindi.
+- **Ağırlık:** net varlık ≈ +72 KB (ses 47 + göz yaması 28 + nokta verisi 22 − eski ses 25); yeni bağımlılık 0; film bitince görseller bellekten atılır; kare süreleri yavaşsa parçacıklar yarıya iner. Ayrıntı tablosu `docs/splash/GIRIS_FILMI.md` "Uygulama ağırlığı".
+- **Doğrulama:** KISMİ. Geçti: 24 widget testi (film yaşam döngüsü, ses gecikmesi/hatası, atlama, hareket azalt, zamanlayıcı sızıntısı yok; portre/yatay/küçük ekranda 11 anda çizim), `flutter analyze` temiz; kareler gözle Remotion filmiyle karşılaştırıldı; test ortamında CPU ≈ 7 ms/kare (ort.), p95 ≈ 16–18 ms. **Doğrulanmadı:** gerçek cihazda oynatma ve kare süresi (GPU/raster dahil), düşük uç Android, iOS, sesin kulakla dinlenmesi ve ses-görüntü kayması cihazda, web otomatik ses engeli davranışı, APK/IPA/web paket boyutu (derlenmedi), slogan "Birlikte öğrenelim" metin onayı (`hupo-ux-writing`).
+- **Sahip:** Kullanıcı (cihazda deneme, kulak onayı) + Ajan · **Önem:** Orta
+- **İlgili:** K-0166, K-0167, K-0168 (film/ses), `docs/splash/GIRIS_FILMI.md`, `docs/splash/BAKIM.md`
+
 ### K-0171 · 2026-10-28 · BİL/WEB · Bildirim, e-posta, SMS ve captcha: durum denetimi; auth formlarına Turnstile
 - Denetim (salt okunur): `supabase secrets list` ve `functions list` (yalnız ad ve durum).
 - **E-posta, Brevo (`eposta-gonder`):** fonksiyon ACTIVE; `BREVO_API_KEY`, `EPOSTA_GONDEREN_ADRES`, `EPOSTA_GONDER_SECRET` tanımlı. Cron `eposta-outbox-gonder` (5 dk) Vault'taki `olay_worker_secret` ile çağırıyor; Vault'ta ve `OLAY_WORKER_SECRET` env'inde yok → 401, kuyruk birikir, kayıt kaybolmaz. Growth journey motoru KAPALI.

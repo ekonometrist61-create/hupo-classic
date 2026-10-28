@@ -63,7 +63,15 @@ class _Noktalar {
   // Sabit tohumla üretilir: her çalıştırmada aynı görünüm.
   late final List<double> bx = _rastgele(adet, 1), by = _rastgele(adet, 2);
   late final List<double> gecik = _rastgele(adet, 3), yon = _rastgele(adet, 4);
-  late final List<double> goruntu = _rastgele(adet, 5), isik = _rastgele(adet, 6);
+  late final List<double> goruntu = _rastgele(adet, 5);
+
+  /// Nokta başına başlangıç gecikmesi (sn): gözlerden uzaklaştıkça artar (yükleme anında bir kez hesaplanır).
+  late final List<double> gecikS = [
+    for (var i = 0; i < adet; i++)
+      0.85 +
+          0.5 * math.min(1.0, math.sqrt(math.pow(x[i] - (goz[0].dx + goz[1].dx) / 2, 2) + math.pow(y[i] - (goz[0].dy + goz[1].dy) / 2, 2)) / 620) +
+          0.1 * gecik[i],
+  ];
 
   static List<double> _rastgele(int n, int tohum) {
     final r = math.Random(tohum * 7919);
@@ -165,27 +173,48 @@ class _HupoGirisFilmiState extends State<HupoGirisFilmi> with SingleTickerProvid
 
   Future<void> _hazirla() async {
     final isler = <Future<void>>[
-      rootBundle.loadString(kGirisKaynakNoktalar).then((s) => _veri.noktalar = _Noktalar.coz(s), onError: (_) {}),
+      rootBundle.loadString(kGirisKaynakNoktalar).then((s) {
+        _veri.noktalar = _Noktalar.coz(s);
+        rootBundle.evict(kGirisKaynakNoktalar); // 22 KB'lık metin önbellekte kalmasın
+      }, onError: (_) {}),
       _resim(kGirisKaynakHero).then((i) => _veri.hero = i, onError: (_) {}),
       _resim(kGirisKaynakGozKapali).then((i) => _veri.gozKapali = i, onError: (_) {}),
     ];
-    try {
-      await Future.wait(isler).timeout(widget.hazirlikZamanAsimi);
-    } catch (_) {
-      // Hazır olmayan parça atlanır; film mevcut parçalarla oynar.
-    }
+    // Hazır olmayan parça atlanır; film mevcut parçalarla oynar.
+    await _bekle(Future.wait(isler), widget.hazirlikZamanAsimi);
     if (!mounted) return;
     final ses = widget.sesiBaslat;
     if (ses != null) {
+      Future<void> baslayan;
       try {
-        await ses().timeout(const Duration(milliseconds: 350));
+        baslayan = ses();
       } catch (_) {
-        // Ses başlamazsa (web otomatik oynatma engeli vb.) film sessiz oynar.
+        baslayan = Future<void>.value();
       }
+      // Ses başlamazsa (web otomatik oynatma engeli vb.) film sessiz oynar.
+      await _bekle(baslayan, const Duration(milliseconds: 350));
     }
     if (!mounted) return;
     _c.forward();
     widget.onBasladi?.call();
+  }
+
+  final List<Timer> _zamanlayicilar = [];
+
+  /// [is_] bitene (hata dahil) ya da [sure] dolana kadar bekler. Zamanlayıcı dispose'ta iptal edilir.
+  Future<void> _bekle(Future<Object?> is_, Duration sure) {
+    final bitti = Completer<void>();
+    final zaman = Timer(sure, () {
+      if (!bitti.isCompleted) bitti.complete();
+    });
+    _zamanlayicilar.add(zaman);
+    void tamam() {
+      zaman.cancel();
+      if (!bitti.isCompleted) bitti.complete();
+    }
+
+    is_.then((_) => tamam(), onError: (_) => tamam());
+    return bitti.future;
   }
 
   Future<ui.Image> _resim(String yol) {
@@ -215,10 +244,17 @@ class _HupoGirisFilmiState extends State<HupoGirisFilmi> with SingleTickerProvid
 
   @override
   void dispose() {
+    for (final z in _zamanlayicilar) {
+      z.cancel();
+    }
     SchedulerBinding.instance.removeTimingsCallback(_sureleriDinle);
     _c.removeStatusListener(_durum);
     _c.dispose();
     _veri.dispose();
+    // Film yalnız ilk açılışta oynar: çözülmüş görseller (≈ 3,5 MB bellek) bırakılır.
+    final onbellek = PaintingBinding.instance.imageCache;
+    onbellek.evict(const AssetImage(kGirisKaynakHero));
+    onbellek.evict(const AssetImage(kGirisKaynakGozKapali));
     super.dispose();
   }
 
@@ -332,6 +368,7 @@ class _FilmPainter extends CustomPainter {
 
   void _yazilariKur(Size size) {
     _boyut = size;
+    _parlakHarfler.clear();
     _dikey = size.height > size.width;
     _s = math.min(size.width, size.height) / 1080;
 
@@ -388,6 +425,19 @@ class _FilmPainter extends CustomPainter {
       textDirection: TextDirection.ltr,
     )..layout();
   }
+
+  final Map<int, TextPainter> _parlakHarfler = {};
+
+  TextPainter _parlakHarf(int i, int kademe) => _parlakHarfler.putIfAbsent(
+        i * 16 + kademe,
+        () => TextPainter(
+          text: TextSpan(
+            text: _kKelime[i],
+            style: _kelimeStil.copyWith(color: Color.lerp(Colors.white, const Color(0xFFFFE9A0), kademe / 8)),
+          ),
+          textDirection: TextDirection.ltr,
+        )..layout(),
+      );
 
   @override
   void paint(Canvas canvas, Size size) {
@@ -479,7 +529,7 @@ class _FilmPainter extends CustomPainter {
 
     _hupo(canvas, xf, hupoOpak, gozKapali);
     // Sistem splash'indeki Hupo: ilk kare onunla aynı, sonra gecede erir
-    final hayalet = 1 - _kEaseOut.transform((t / 0.4).clamp(0.0, 1.0));
+    final hayalet = 1 - _kEaseInOut.transform((t / 0.35).clamp(0.0, 1.0));
     if (hayalet > 0.01) _hayaletHupo(canvas, size, hayalet);
     canvas.restore();
 
@@ -523,55 +573,58 @@ class _FilmPainter extends CustomPainter {
     final iz = _boya
       ..style = PaintingStyle.stroke
       ..strokeCap = StrokeCap.round;
-    final goz = nk.goz;
-    final gozOrta = Offset((goz[0].dx + goz[1].dx) / 2, (goz[0].dy + goz[1].dy) / 2);
+
+    // Hupo dönüşümü kare başına bir kez hesaplanır (nokta başına sin/cos yok).
+    final aci = xf.tilt * math.pi / 180;
+    final ca = math.cos(aci), sa = math.sin(aci);
+    final kx = xf.k * xf.sx, ky = xf.k * xf.sy;
+    final kenarR = 5.2 * tabanK * (dus ? 1.35 : 1.0);
+    final icR = 6.4 * tabanK * (dus ? 1.35 : 1.0);
+    final w = size.width, h = size.height;
 
     for (var i = 0; i < nk.adet; i += adim) {
-      final gorunur = _ip(t, [0.55 + 0.4 * nk.goruntu[i], 1.0 + 0.3 * nk.goruntu[i]], [0, 1]);
+      final ga = 0.55 + 0.4 * nk.goruntu[i];
+      final gorunur = ((t - ga) / (1.0 + 0.3 * nk.goruntu[i] - ga)).clamp(0.0, 1.0);
       if (gorunur <= 0.01) continue;
-      final d = math.sqrt(math.pow(nk.x[i] - gozOrta.dx, 2) + math.pow(nk.y[i] - gozOrta.dy, 2));
-      final gecik = 0.85 + 0.5 * math.min(1.0, d / 620) + 0.1 * nk.gecik[i];
-      final u = ((t - gecik) / 0.62).clamp(0.0, 1.0);
+      final u = ((t - nk.gecikS[i]) / 0.62).clamp(0.0, 1.0);
       final e = _kEaseOut.transform(u);
 
-      final hedef = xf.ekran(nk.x[i], nk.y[i]);
-      final bas = Offset(nk.bx[i] * size.width, nk.by[i] * size.height);
-      final yon = nk.yon[i] > 0.5 ? 1.0 : -1.0;
-      final vx = hedef.dx - bas.dx, vy = hedef.dy - bas.dy;
-      final ctrl = Offset((bas.dx + hedef.dx) / 2 - vy * 0.35 * yon, (bas.dy + hedef.dy) / 2 + vx * 0.35 * yon);
-      Offset q(double k) {
-        final m = 1 - k;
-        return Offset(m * m * bas.dx + 2 * m * k * ctrl.dx + k * k * hedef.dx, m * m * bas.dy + 2 * m * k * ctrl.dy + k * k * hedef.dy);
-      }
+      final lx = (nk.x[i] - _kRW / 2) * kx, ly = (nk.y[i] - _kRH / 2) * ky;
+      final hx = xf.cx + lx * ca - ly * sa, hy = xf.cy + lx * sa + ly * ca;
+      final bx = nk.bx[i] * w, by = nk.by[i] * h;
+      final yon = nk.yon[i] > 0.5 ? 0.35 : -0.35;
+      final vx = hx - bx, vy = hy - by;
+      final cx = (bx + hx) / 2 - vy * yon, cy = (by + hy) / 2 + vx * yon;
 
-      final p = q(e);
+      final m = 1 - e;
+      final px = m * m * bx + 2 * m * e * cx + e * e * hx;
+      final py = m * m * by + 2 * m * e * cy + e * e * hy;
       final yolda = u > 0 && u < 1;
-      final rHedef = (nk.kenar[i] ? 5.2 : 6.4) * tabanK * (dus ? 1.35 : 1.0);
-      final r = _ip(u, [0, 0.85, 1], [1.4 * s, rHedef * 0.9, rHedef]);
+      final rHedef = nk.kenar[i] ? kenarR : icR;
+      final r = u < 0.85 ? 1.4 * s + (rHedef * 0.9 - 1.4 * s) * (u / 0.85) : rHedef * 0.9 + (rHedef * 0.1) * ((u - 0.85) / 0.15);
       final o = gorunur * noktaOpak * (u < 1 ? 0.55 + 0.45 * u : 1.0);
 
-      if (yolda && !dus) {
-        final pe = q(math.max(0.0, e - 0.05));
+      // Kısa kuyruk yalnız her üçüncü parçacıkta: görünüm aynı, çizim sayısı %33 az.
+      if (yolda && !dus && i % 3 == 0) {
+        final e2 = math.max(0.0, e - 0.05);
+        final m2 = 1 - e2;
         iz
           ..style = PaintingStyle.stroke
           ..strokeWidth = r * 0.9
           ..color = _a(const Color(0xFFDFF7FB), 0.3 * (1 - u) * o);
-        canvas.drawLine(pe, p, iz);
-        if (nk.isik[i] > 0.55) {
-          iz
-            ..style = PaintingStyle.fill
-            ..color = _a(const Color(0xFFFFF6CF), 0.16 * (1 - u) * o);
-          canvas.drawCircle(p, r * 2.6, iz);
-        }
+        canvas.drawLine(
+          Offset(m2 * m2 * bx + 2 * m2 * e2 * cx + e2 * e2 * hx, m2 * m2 * by + 2 * m2 * e2 * cy + e2 * e2 * hy),
+          Offset(px, py),
+          iz,
+        );
       }
       iz
         ..style = PaintingStyle.fill
         ..color = u < 1 ? _a(const Color(0xFFEAFCFF), o) : _a(Color.fromARGB(255, nk.r[i], nk.g[i], nk.b[i]), o);
-      canvas.drawCircle(p, r, iz);
+      canvas.drawCircle(Offset(px, py), r, iz);
     }
     iz.style = PaintingStyle.fill;
   }
-
   void _yildizCiz(Canvas canvas, Offset merkez, double boyut, double donus, Color renk) {
     canvas.save();
     canvas.translate(merkez.dx, merkez.dy);
@@ -661,12 +714,9 @@ class _FilmPainter extends CustomPainter {
         final p = _ip(t, [b, b + 0.45], [0, 1], _kEaseOut);
         if (p <= 0.003) continue;
         final g = math.exp(-math.pow((t - (3.95 + i * 0.06)) / 0.11, 2));
-        final yazi = g > 0.04
-            ? (TextPainter(
-                text: TextSpan(text: _kKelime[i], style: _kelimeStil.copyWith(color: Color.lerp(Colors.white, const Color(0xFFFFE9A0), g))),
-                textDirection: TextDirection.ltr,
-              )..layout())
-            : _harfYazi[i];
+        // Parlama 8 kademeye yuvarlanır: her harf için en çok 8 yazı nesnesi kurulur, kare başına yerleşim yapılmaz.
+        final kademe = (g * 8).round();
+        final yazi = kademe >= 1 ? _parlakHarf(i, kademe) : _harfYazi[i];
         final konum = Offset(kutu.left + _harfX[i], kutu.top + (1 - p) * 54 * s - g * 4 * s);
         if (p < 0.999) {
           canvas.saveLayer((konum & yazi.size).inflate(30 * s), Paint()..color = Color.fromRGBO(255, 255, 255, p));
@@ -721,6 +771,7 @@ class _FilmPainter extends CustomPainter {
       kisim,
       boya
         ..strokeWidth = 10 * s
+        ..color = Colors.white // gölge katmanın yarı saydam rengi gradyanı soldurmasın
         ..shader = ui.Gradient.linear(Offset(kutu.right, kutu.top), Offset(kutu.left, kutu.bottom), const [Color(0xFFFFE08A), AppColors.sun, AppColors.sunDark], const [0, 0.55, 1]),
     );
     if (ilerleme < 1) {

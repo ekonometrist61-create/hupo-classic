@@ -2,7 +2,7 @@
 
 > Tarih: 28 Ekim 2026 · Kayıt: K-0167 · Kaynak: `docs/splash/remotion/src/HupoGiris.tsx`
 > Bu belge `ACILIS_SENARYOSU_PLANI.md` içindeki ilk-açılış sahnesinin (§3.1) **yerine geçen aday** senaryodur.
-> Durum: film üretildi; **uygulamalara bağlanmadı**. Onay bekliyor (§6).
+> Durum: film onaylandı (kullanıcı, 28 Ekim) ve **mobil + Flutter web uygulamasına bağlandı** (§5, K-0169). Video uygulamaya gömülmez; aynı senaryo Flutter'da çizilir.
 
 ## 1. Fikir
 
@@ -112,16 +112,40 @@ Webde video varsayılan olarak sessiz başlar (tarayıcı politikası), ses içi
 - Hupo altında çamurlu altın leke (turkuaz üstünde %16 altın) → soğuk açık turkuaz ışık.
 - Web yerleşimi sağa/sola kayıktı → kilit (Hupo + yazı + iz) ortalandı. İlk kare gradyanlıydı → native ile aynı düz #147D8A.
 
-## 5. Entegrasyon önerisi (yapılmadı)
+## 5. Uygulamaya entegrasyon (yapıldı, K-0169)
 
-**A. Web (app.hupolingo.com ve hupolingo.com girişi)**: `<video muted playsinline>` + poster (`HupoGirisWeb.webm` önce, MP4 yedek),
-oturumda bir kez (`sessionStorage`), dokununca/tuşla atla, `prefers-reduced-motion` ve `Save-Data` açıkken yalnız poster.
-Ağırlık ≈ 2,4 MB (ilk yükte değil, sayfa etkileşime geçince yüklenir). Panel (`/yonetim`, `/veli-paneli`) hariç: yöneticiye/veliye her girişte film oynatılmaz.
-Not: çalışma ağacında `web-panel/src/components/common/WelcomeSplash.tsx` başka bir oturum tarafından silinmiş durumda; web bağlama işi o değişikliği tamamlayan oturumla çakışmamalı.
+**Karar (kullanıcı: "bunu kullanalım, ama uygulamaya ağırlık yapmasın"):** video (≈ 2,4 MB) uygulamaya **gömülmedi**; aynı senaryo
+Flutter'da tek `CustomPainter` ile çizilir (`mobile-app/lib/widgets/splash/hupo_giris_filmi.dart`). Remotion filmleri
+(`giris-film/`) onay ve tanıtım içindir; zamanlama kaynağı `HupoGiris.tsx` ile aynıdır (saniye cinsinden).
 
-**B. Mobil**: yalnız **cihazda ilk açılış** (§3.3-A "Merhaba" kartıyla birleşir). Seçenekler: (1) `video_player` ile MP4 (+ 2,4 MB asset, bütçe ≤ 400 KB aşılır → ilk açılışta indirilebilir/uzak asset) veya (2) aynı senaryonun Flutter katmanlı sahnesi (parçacıklar `CustomPainter`, JSON 24 KB). **Öneri: (2)**, çünkü video ekran oranına/oynatıcıya bağımlı, sonraki açılışlarla tutarlı değil ve paket bütçesini aşıyor; film zamanlama + görsel referans olur. Sonraki açılışlar bu filmi **oynatmaz** (≤ 900 ms kuralı sürer).
+- **Nerede oynar:** yalnız **cihazda ilk açılış** (`AppOpenScene.full`, `SplashGate`). Sonraki açılışlar eski kısa sahneyi (900 ms), hareket azalt ise statik kareyi kullanır; değişmedi.
+  Flutter web (app.hupolingo.com) aynı kodu kullanır: yatay ekranda Hupo solda, yazı sağda. Yönetim paneli ve veli paneli (Next.js) etkilenmez.
+- **Ses:** `AudioEvent.brand` artık `assets/audio/brand/hupo_giris_sesi.m4a`'yı çalar (eski `hupo_marka_sesi.mp3` silindi). Film, ses başladıktan sonra (en çok 350 ms bekler) başlar, böylece ikisi aynı anda açılır. Ses başlamazsa (web otomatik oynatma engeli, ses kapalı, hata) film **sessiz oynar**; çökme yok.
+- **Atlama:** dokununca 600 ms sonra (mevcut kapı). **Hareket azalt:** film oynamaz.
+- **Kalite uyumu:** ilk 12–30 karede ortalama kare süresi > 18 ms ise parçacıklar yarıya iner, izler kalkar (yalnız aşağı yönde).
+- **Sistem splash'iyle süreklilik:** ilk karede sistem splash'indeki Hupo aynı boyda (144 dp) ve ortada durur, ≈ 0,35 sn'de geceye erir. (Sistem splash'i değişmedi.)
+- Sahne, Remotion sürümünden bilerek şu kadar farklıdır: kanat sallanması yerine gövde hafifçe sallanır (kanat katmanı ≈ 190 KB ek görsel olurdu), bulanıklık yok, parçacık ışımaları yok.
 
+## Uygulama ağırlığı (ölçülen / ölçülmeyen)
+
+| Kalem | Boyut | Not |
+|---|---|---|
+| Yeni: `hupo_giris_sesi.m4a` (AAC 72 kb/s, 5 sn) | 47 KB | WAV'a göre kayma 0,00 ms, korelasyon 0,996 |
+| Yeni: `hupo_goz_kapali.webp` (göz yaması) | 28 KB | tek ek görsel |
+| Yeni: `giris_noktalar.json` (1099 nokta) | 22 KB | yükleme sonrası bellekten atılır |
+| Silinen: `hupo_marka_sesi.mp3` | −25 KB | |
+| **Net varlık artışı** | **≈ +72 KB** | plan bütçesi ≤ 400 KB; APK/IPA ve web paketi **derlenip ölçülmedi** (sıkıştırma ve tree-shaking sonrası farklı olabilir) |
+| Yeni paket bağımlılığı | 0 | video_player, Rive, Lottie eklenmedi |
+| Yeni kod | ≈ 600 satır Dart (tek dosya) | |
+| Bellek | film bitince çözülmüş görseller atılır (≈ 3,5 MB) ve nokta metni önbellekten silinir | cihazda ölçülmedi |
+| CPU (test ortamı, zayıf PC, ölçüm paralel koşunun gürültüsüne açık) | kare başına ort. ≈ 7 ms, p95 ≈ 16–18 ms (build+layout+çizim kaydı) | **GPU/raster ve gerçek cihaz kare süresi ölçülmedi** |
+
+Ölçüm komutları: `HUPO_OLCUM=1 flutter test test/hupo_giris_filmi_test.dart --plain-name CPU`; anahtar kareleri PNG olarak almak için `HUPO_KARE_DIR=<klasör>`.
+Testler: `test/hupo_giris_filmi_test.dart` (yaşam döngüsü, ses sözleşmesi, 3 ekran boyutunda 11 anda çizim), `splash_entrance_test.dart`, `splash_gate_test.dart`.
 ## 6. Dürüstlük: doğrulananlar / doğrulanmayanlar
 
 **Doğrulandı:** Remotion'da iki biçimin tüm kareleri üretildi; 12–16 anahtar kare ve 0,08 sn adımlı hareket şeridi gözle incelendi (göz açılışı, sıçrama, kayma, kırpma, ark, yazı hizası); dosyalar sunucuda render edildi ve indirildi (boyutlar `docs/splash/giris-film/`).
-**Doğrulanmadı:** filmi **baştan sona akıcı izlemedim** (yalnız kareler; hareketin hissi, yavaş/hızlı olma kullanıcı değerlendirmesi); uygulamada ve tarayıcıda oynatma; ses; Safari/Firefox/iOS; düşük uç cihaz; kare süresi; mobil ekran oranı farklılığında kırpma (ör. 16:9 ve 20:9 mobil); slogan metni ve hukuk/marka onayı. Hupo katmanları ve master onaylı varlıklardır, **yeni karakter çizimi yok**; ancak "Hupo yıldız noktalarından oluşur" yorumu marka sahibinin onayına tabidir. Harf bulutu yalnız dekor; pedagojik içerik değildir.
+**Uygulama (Flutter) tarafı doğrulananlar:** 24 widget testi geçti (ilk açılışta film, ses gecikmesi/hatası, atlama, hareket azalt, sızıntı yok); portre/yatay/küçük ekranda 11 anahtar karede hatasız çizim ve kareler gözle Remotion filmiyle karşılaştırıldı.
+**Doğrulanmadı (uygulama):** gerçek cihazda (Galaxy S23 FE, düşük uç Android) ve iOS'ta oynatma, kare süresi/jank, sesin kulakla dinlenmesi ve ses-görüntü kayması (yalnız ses başlatma sözleşmesi ve süre testlendi), web tarayıcısında otomatik ses engeli davranışı, sistem gezinme çubuğu renginin gece sahnesinde koyulaşmaması (turkuaz kalır), APK/IPA/web paket boyutu.
+
+**Doğrulanmadı (film):** filmi **baştan sona akıcı izlemedim** (yalnız kareler; hareketin hissi, yavaş/hızlı olma kullanıcı değerlendirmesi); uygulamada ve tarayıcıda oynatma; ses; Safari/Firefox/iOS; düşük uç cihaz; kare süresi; mobil ekran oranı farklılığında kırpma (ör. 16:9 ve 20:9 mobil); slogan metni ve hukuk/marka onayı. Hupo katmanları ve master onaylı varlıklardır, **yeni karakter çizimi yok**; ancak "Hupo yıldız noktalarından oluşur" yorumu marka sahibinin onayına tabidir. Harf bulutu yalnız dekor; pedagojik içerik değildir.

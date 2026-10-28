@@ -7,10 +7,12 @@
 
 import 'dart:async';
 import 'dart:io';
+import 'dart:math' as math;
 import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ogrenci_hazirlik/services/app_open_service.dart';
 import 'package:ogrenci_hazirlik/widgets/splash/hupo_giris_filmi.dart';
@@ -50,6 +52,21 @@ void _ekran(WidgetTester tester, Size boyut) {
 }
 
 void main() {
+  // Varlık bildirimi (AssetManifest) gerçek zaman bölgesinde önbelleğe alınır: ilk testin sahte zaman
+  // bölgesinde yarım kalan bir yükleme sonraki tüm görsel çözümlemelerini kilitlemesin.
+  setUpAll(() async {
+    await AssetManifest.loadFromAssetBundle(rootBundle);
+    // Gerçek Nunito: testte varsayılan yazı tipi (Ahem) kutu çizer; düzen ölçüleri gerçeğe yakın olsun.
+    final yazi = FontLoader('Nunito')..addFont(rootBundle.load('assets/fonts/Nunito.ttf'));
+    await yazi.load();
+  });
+
+  setUp(() {
+    PaintingBinding.instance.imageCache.clear();
+    PaintingBinding.instance.imageCache.clearLiveImages();
+    rootBundle.evict(kGirisKaynakNoktalar);
+  });
+
   group('HupoGirisFilmi yaşam döngüsü', () {
     testWidgets('film süresi bitince onFinished tam bir kez çağrılır', (tester) async {
       var biten = 0;
@@ -139,7 +156,7 @@ void main() {
           if (kareDizin != null) {
             final sinir = anahtar.currentContext!.findRenderObject()! as RenderRepaintBoundary;
             await tester.runAsync(() async {
-              final resim = await sinir.toImage(pixelRatio: 1.0);
+              final resim = await sinir.toImage();
               final veri = await resim.toByteData(format: ui.ImageByteFormat.png);
               final dosya = File('$kareDizin/${ekran.$1 == 'küçük' ? 'kucuk' : ekran.$1}_${an.toStringAsFixed(2)}.png');
               dosya.parent.createSync(recursive: true);
@@ -166,9 +183,18 @@ void main() {
         sayac.stop();
         sureler.add(sayac.elapsedMicroseconds / 1000);
       }
+      final sureler_ = List<double>.of(sureler); // zaman sırası (dilim istatistiği için)
       sureler.sort();
       final ort = sureler.reduce((a, b) => a + b) / sureler.length;
       final p95 = sureler[(sureler.length * 0.95).floor()];
+      // ignore: avoid_print
+      final dilim = <String>[];
+      for (var d = 0; d < 5; d++) {
+        final parca = [for (var i = d * 60; i < math.min((d + 1) * 60, 300); i++) sureler_[i]];
+        dilim.add('$d-${d + 1}s: ${(parca.reduce((a, b) => a + b) / parca.length).toStringAsFixed(1)}/${parca.reduce(math.max).toStringAsFixed(0)}');
+      }
+      // ignore: avoid_print
+      print('GIRIS_DILIM ort/maks ms -> ${dilim.join('  ')}');
       // ignore: avoid_print
       print('GIRIS_OLCUM kare=${sureler.length} ort=${ort.toStringAsFixed(2)} ms  p95=${p95.toStringAsFixed(2)} ms  maks=${sureler.last.toStringAsFixed(2)} ms');
       // Geniş bir güvenlik sınırı: bütçe 16,7 ms; bu makinede (zayıf PC) ortalama bunun altında kalmalı.

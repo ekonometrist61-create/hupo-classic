@@ -9,6 +9,12 @@
 > `warmStart/resume/directRedirect` kaldırıldı. Sistem splash'i (Android 12+, eski Android, iOS) sahnenin
 > ilk karesiyle aynı Hupo'dur: `mobile-app/tool/splash_varliklari_uret.py`. Sahne `Material` altında çizilir.
 
+> **28 Ekim 2026 (K-0169, giriş filmi):** **İlk açılış** artık 5 sn'lik "Kelime Evreni" giriş filmidir
+> (`lib/widgets/splash/hupo_giris_filmi.dart`, senaryo [GIRIS_FILMI.md](GIRIS_FILMI.md)). Bu belgedeki "Kanat İmzası"
+> (`HupoSignatureEntrance`) yalnız **sonraki açılışlar (900 ms kısa sahne)** ve **hareket azalt (statik kare)** için kalır.
+> Marka sesi film ile tek parçadır (`assets/audio/brand/hupo_giris_sesi.m4a`, `AudioEvent.brand`); film ses başlayana
+> kadar (en çok 350 ms) bekler. Film dokununca 600 ms sonra atlanır. Ağırlık notları: GIRIS_FILMI.md "Uygulama ağırlığı".
+
 ---
 
 ## 1. Ne değişti?
