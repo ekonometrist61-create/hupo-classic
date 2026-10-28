@@ -4786,7 +4786,7 @@ Paketler:
 ### K-0193 · 2026-10-28 · YÖN · I4 kararı: ilk test A/C (sunum), referans ölçümü mağaza yayını ve ilk indirmelerden sonra başlar; metin onayı ajan taslağı + proje sahibi
 - Referans sayacı şu an başlatılmadı (tetikleyici: mağaza yayını + ilk gerçek indirmeler).
 
-###  · 2026-10-28 · YÖN · Oturum sonu devri: I4 kararları (1 kabul, 2/3/5 benim önerilerim, 4 ikisi, 6 terminoloji + maskot yok + landing iddiaları doğru) ve kalanlar
+### K-0195 · 2026-10-28 · YÖN · Oturum sonu devri: I4 kararları (1 kabul, 2/3/5 benim önerilerim, 4 ikisi, 6 terminoloji + maskot yok + landing iddiaları doğru) ve kalanlar
 - Kararlar: `docs/growth-crm/experiments/A-C_metin_tasarim_taslagi.md` §9 ve `GIE_ANALIZ_VE_IS_PLANI` §33–§34.
 - Yapılanlar bu oturumda: GIE Faz 0–6 (yerel ve uzak), 20261113–20261123 uzakta, A/B motoru A1–A3 + I1–I3, Customer-Lab L1–L3, ajan taslağı A/C.
 - Kalanlar: kartsız deneme akışı, sandbox ödeme testi, 30 gün web referansı, A ekranı ve I4 çağrıları, C ikinci dalga, mobil (BACKLOG-M1). Kullanıcıda: tarayıcı kontrolü, hukuk (108/109, çerez, HupoMentor), web panel dağıtımı.
