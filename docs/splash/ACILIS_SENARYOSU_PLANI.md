@@ -208,6 +208,22 @@ Beyaz yazı / #147D8A kontrastı elle hesaplandı ≈ 4,85:1 (ekranda ölçülme
 
 ---
 
+### 5.1 Faz 2 üretim başlangıcı (28 Ekim 2026)
+
+Kullanıcı kararları ajana devretti ("sen karar ver, kaliteli olsun"). Alınan kararlar (`ONAY BEKLİYOR`, kullanıcı itiraz etmedi):
+
+| Karar | Seçim | Gerekçe |
+|-------|-------|---------|
+| D2 Katmanlı Hupo | **Master'a bölgesel yama:** yapay zekâ yalnız düzenlenecek bölgeyi üretir; o bölge hizalanıp renk uyumlanarak master'a yamanır; geri kalan her piksel master'dır. | Tam yeniden çizim marka kuralını bozar (ham çıktıda çizgi kalınlığı/yumuşaklık/ölçek kaydı gözlendi). |
+| D1 Teknoloji | **Önce katmanlı sprite (Flutter, sıfır bağımlılık, web uyumlu);** Rive kapısı Faz 3'te. | Aynı katmanlı varlık iki yolda da kullanılır. |
+| D3 Logo | **Yön C** (kelime işareti + altın kanat yayı) birincil; **yön B** (rozet) ikincil/avatar. | Yön C, sahnedeki "kanat ucundan altın yay yazının altına oturur" anıyla birebir örtüşüyor; okunaklı, doğru yazılmış. |
+
+Üretilenler (araç: Gemini `gemini-3-pro-image`; Fal.ai anahtarı geçerli, henüz kullanılmadı):
+- **Uyuyan Hupo:** `mobile-app/assets/hupo/splash/hupo_uyuyan.webp` (147 KB, alfa korunur). Yalnız iki göz bölgesi değişti. Karşılaştırma: `uretim-2026-10-28/uyuyan-hupo-master-yama-ham.png` (sol master, orta yama, sağ ham çıktı). Kalan: silik halka izi çok hafif; Faz 4'te gerçek boyutta cihazda bakılacak. **Henüz `pubspec.yaml`'a kayıtlı değil** (dosya başka oturumun bekleyen değişikliğinde; Faz 4'te kaydedilir).
+- **Logo yönleri:** `uretim-2026-10-28/logo-yonleri-A-B-C.png`. **Bunlar yapay zekâ konseptidir, nihai logo değildir:** raster, harf aralığı ve font doğrulanmadı. Nihai logo için tasarımcı vektörel çizer; **marka tescil/benzerlik taraması (HUK) yapılmadan** kilitlenmez. A (maskot üstte) kalabalık bulundu, elendi.
+
+Sıradaki üretim işleri: (1) kanat katmanı (gövdeden kesilip arkası tamamlanacak; ±6° dönüş için), (2) göz açık↔kapalı kırpma geçişi ve sıçrama için ek kareler, (3) logo C'nin vektörleştirilmesi.
+
 ## 7. Karar gereken noktalar
 
 | # | Karar | Öneri |
