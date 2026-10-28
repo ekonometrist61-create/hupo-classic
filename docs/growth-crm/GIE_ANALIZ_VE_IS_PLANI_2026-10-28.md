@@ -263,3 +263,10 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 | Hukuk metinleri | Taslak hazırlandı (`docs/hukuk-taslak/`). Yayınlanmaz; hukuk onayı gerekir | Taslak |
 | Tarayıcı kontrolü | Yönetici girişi gerektirir. Kimlik bilgisi bende yok | Kullanıcıda |
 | Commit | Yalnız GIE kapsamındaki dosyalar commit'lendi. `PROJE_GUNLUGU.md` başka oturumların girdilerini de içerdiği için commit dışı | Tamam |
+
+## 20. Faz 2 tamamlanıyor: zamanlı taslak (2026-10-28)
+- `20261118000000_growth_rapor_zamanli`: kohort, CAC ve veri kalitesi çekirdeklere ayrıldı; `admin_*` fonksiyonları aynı imzayla yetki kontrolünü koruyor (regresyon: kohort 22/22, veri kalitesi 13/13).
+- `growth_rapor_zamanli_uret()`: oturumsuz çalışır, yalnız taslak yazar; aynı hafta için tek kayıt (manuel üretimle paylaşılır). İcerik `kaynak = zamanli`.
+- Zamanlayıcı: pg_cron, pazartesi 05:30 UTC (08:30 İstanbul). Önceki karardaki "n8n zamanlayıcısı" yerine pg_cron kullanılıyor; gerekçe: n8n'e veritabanı kimliği koymamak.
+- Test: `supabase/tests/growth_rapor_zamanli` 20/20.
+- Uzakta uygulanmadı (önizleme: yalnız bu dosya bekliyor); deploy onayı bekleniyor.

@@ -4706,3 +4706,6 @@ Paketler:
 - n8n: şablon (`docker_compose_raw`), işlenmiş compose (`docker_compose`) ve diskteki compose'dan alan adı kaldırıldı (N8N_HOST=localhost, WEBHOOK_URL=http://localhost:5678/, N8N_PROTOCOL=http). Şifreleme anahtarı değişmedi. n8n yeniden oluşturuldu; healthz 200; konteyner içinde alan adı yok. Yedekler: `/home/ubuntu/coolify-backup-20261028` (ikinci tur dosyalar dahil).
 - Commit'ler: 28faa69 (web-panel), d8d50ca (mobile-app), 2a57641 (supabase), fe1e050 (docs), 4743cd4 (günlük, CLAUDE.md, betikler, .claude). Önceki: 2b16766 (GIE). Commit öncesi tüm dosyalarda gizli değer deseni taranmadı → temiz (iki yanlış alarm: değişken adı).
 - Dikkat: commit'ler tek tek gözden geçirilmemiş başka oturum işlerini içerir; ayrı test koşulmadı. `mobile-app/test/_gecici_hata_ayiklama_test.dart` geçici hata ayıklama testi gibi görünüyor; gözden geçirilmeli. Push yapılmadı.
+
+### K-0179 · 2026-10-28 · VT · Faz 2 zamanlı taslak (yerel): 20261118, test 20/20; regresyon kohort 22/22, veri kalitesi 13/13
+- Önizleme: yalnız 20261118 bekliyor. Deploy onayı bekleniyor (108/109 yine dışarıda).
