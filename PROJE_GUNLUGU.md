@@ -4701,3 +4701,8 @@ Paketler:
 - `service_applications`: ollama ve open-webui kayıtları silindi; yalnız n8n kaldı (fqdn yok; n8n'in Coolify yönlendirmesi hiç yoktu, alan adı yalnız ortam değişkenlerinde).
 - Doğrulama: diskteki compose geçerli; n8n 127.0.0.1:5678 üzerinden healthz 200.
 - Kalan: N8N_HOST ve WEBHOOK_URL ortam değerleri alan adını hâlâ içeriyor (yönlendirme yok; zararsız). Temizlenecekse ayrı onayla.
+
+### K-0178 · 2026-10-28 · GÜV/YÖN · n8n alan adı temizlendi; bekleyen değişiklikler commit'lendi
+- n8n: şablon (`docker_compose_raw`), işlenmiş compose (`docker_compose`) ve diskteki compose'dan alan adı kaldırıldı (N8N_HOST=localhost, WEBHOOK_URL=http://localhost:5678/, N8N_PROTOCOL=http). Şifreleme anahtarı değişmedi. n8n yeniden oluşturuldu; healthz 200; konteyner içinde alan adı yok. Yedekler: `/home/ubuntu/coolify-backup-20261028` (ikinci tur dosyalar dahil).
+- Commit'ler: 28faa69 (web-panel), d8d50ca (mobile-app), 2a57641 (supabase), fe1e050 (docs), 4743cd4 (günlük, CLAUDE.md, betikler, .claude). Önceki: 2b16766 (GIE). Commit öncesi tüm dosyalarda gizli değer deseni taranmadı → temiz (iki yanlış alarm: değişken adı).
+- Dikkat: commit'ler tek tek gözden geçirilmemiş başka oturum işlerini içerir; ayrı test koşulmadı. `mobile-app/test/_gecici_hata_ayiklama_test.dart` geçici hata ayıklama testi gibi görünüyor; gözden geçirilmeli. Push yapılmadı.
