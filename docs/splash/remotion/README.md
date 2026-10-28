@@ -10,7 +10,11 @@ Katmanlar `mobile-app/assets/hupo/splash/` içindeki `hupo_govde`, `hupo_kanat`,
   24–54 kanat selamı (−4°…+6°) · 26–46 altın yay · 38+ marka adı (harf harf) · 62+ konuşma balonu.
 - Çıktı: `../uretim-2026-10-28/hupo-uyanir-onizleme.mp4`.
 
-## En güncel: `HupoImza` (1,6 sn "Signature Entrance", ana sayfaya bağlanan)
+## En güncel: `HupoGirisMobil` / `HupoGirisWeb` ("Kelime Evreni" giriş filmi)
+5,0 sn, 60 fps; 1080×2340 ve 1920×1080. Senaryo ve plan: [../GIRIS_FILMI.md](../GIRIS_FILMI.md). Parçacık verisi `data/hupo_noktalar.json`
+(`python -I tools/noktalar_uret.py`, master'dan örnekler). Render: `oracle-render.ps1` (Oracle'da tek seferlik kapsayıcı). Çıktı: `../giris-film/`.
+
+## Önceki: `HupoImza` (1,6 sn "Signature Entrance", ana sayfaya bağlanan)
 1080×2340, 60 fps, 120 kare. Plan §3.1d. Katmanlar: `hupo_govde_kanatsiz`, `hupo_kanat_sag`, `hupo_kanat_sol`, `hupo_goz_kapali` (`public/`).
 Render: `npx remotion render src/index.ts HupoImza out/hupo_imza.mp4 --public-dir=public --codec=h264`.
 Çıktı: `../uretim-2026-10-28/hupo-imza-onizleme.mp4`. Ana sayfa çizimi `HeroHeader`/`_Hero` düzeninin yaklaşığıdır.
