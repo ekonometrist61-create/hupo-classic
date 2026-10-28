@@ -158,3 +158,108 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
    - **Customer-Lab:** Faz 6'dan sonra, kendi spec dosyasıyla. Sentetik veri yalnız `sentetik_*` şemasında; gerçek metriklere yazılmaz; çıktı yalnız hipotez, pazarlamada "kanıt" diye kullanılmaz.
    - **HupoMentor:** çocuğa dönük yapay zekâ özel ders öğretmeni. Growth'tan önce pedagoji, içerik güvenliği (prompt injection dahil), KVKK ve veli onayı gerekir. Growth'a yalnız toplulaştırılmış kullanım metriği gelir; sohbet içeriği, yanlış cevap ve zayıf konu hiçbir zaman growth'a girmez.
    - İkisi için de önce spec yazılır (`docs/`), sonra kod. Spec olmadan growth tarafında entegrasyon işi açılmaz.
+
+## 11. Uygulama durumu (2026-10-28)
+
+| Faz / iş | Durum | Kanıt |
+|---|---|---|
+| Faz 0: aktivasyon ve aktif tanımları | **Yapıldı** | `OLAY_TAKSONOMISI.md` §8 |
+| Faz 0: W durum tablosu | Commit `f36e8f3` ile W2, W3 (huni), W4 (KVKK, birleştirme), W7 (giriş olayları), W8a/b (anon kapatma ve saklama dosyaları), W9 (seed), W10 (sonraki adım) kod olarak var. **W1, W5, W6 ve W3 admin ekranı durumu doğrulanmadı.** | `git show --stat f36e8f3` |
+| Faz 1: `growth_harcama` (manuel harcama) | **Yapıldı, yerelde test edildi:** migration `20261113000000`, test 27/27 | `supabase/tests/growth_harcama/` |
+| Faz 1: 5 admin sayfası | **Yapılmadı** | — |
+| Faz 1: uzak DB'ye uygulama (`db:preview` → içerik okuma → `db:deploy`) | **Yapılmadı.** `20261113` ekli dosya, `20261112` ve sonrası uzakta uygulanmadı. | `K-0165` ve bu belge §10 |
+| 108 ve 109 migration'ları | Bekliyor (§10 koşulları) | §10 |
+| Motor bayrakları | KAPALI | §10 |
+| Commit | Yapılmadı (TAMAMLAMA_PLANI ortak kuralı) | — |
+
+## 12. Güncelleme (2026-10-28): deploy ve harcama ekranı
+
+- **Deploy:** `20261113000000_growth_harcama` uzak DB'ye uygulandı (`db:deploy`). `20261108` ve `20261109` bilerek uygulanmadı: geçici olarak dışarı alındı, deploy sonrası aynı yerine geri konuldu. Uzak durum: 20261113 uygulandı; 108 ve 109 bekliyor.
+- **Uyarı:** CLI, 108 ve 109 uzak son migration'dan önce kaldığı için `db:deploy` komutunu her seferinde reddedecek. `--include-all` kullanılırsa bu iki migration da uygulanır; kullanılmamalı. 108 ve 109 kararları verilene kadar her deploy aynı dışarı alma adımını gerektirir.
+- **Admin ekranı:** `/yonetim/harcama` (Reklam Harcaması). Ekle, kanal toplamları (para birimi ayrı), kayıt listesi, sil. Nav'da "Growth Analitik"in altında. `tsc` ve `eslint` temiz. Tarayıcıda görsel kontrol yapılmadı.
+- **Mevcut ekranlar:** Growth Analitik (huni, UTM, aktiflik, lifecycle, prospect), Müşteri 360, Segmentler, Journey, Gönderim Günlüğü, AI Öneriler zaten var. Faz 1'in "5 sayfası" büyük ölçüde mevcut; eksik kalanlar aşağıda.
+- **Eksik:** D1/D7/D30 kohort görünümü (RPC yok); CAC hesabı (harcama + yeni hane); Veri kalitesi ve izin ekranı. Kohort ve CAC RPC'leri yeni migration olarak yazılıp PGlite testiyle doğrulanmalı.
+
+## 13. Güncelleme (2026-10-28): kohort ve CAC (yerel, deploy onayı bekliyor)
+
+- **Migration:** `20261114000000_growth_kohort_cac.sql`. `admin_growth_kohort(p_gun)` (D1/D7/D30, özet ve haftalık kohort) ve `admin_growth_cac(p_gun)` (para birimi başına harcama / kayıtlı hane). Gizlilik eşiği 5, mevcut `_growth_gizle` ve `_growth_yuzde` ile.
+- **Kayıtlı hane:** lifecycle `visitor` ve `lead` dışında kalan haneler. Lead varsayılan başlangıçtır; kayıt olmayan aday paydaya girmez.
+- **Test:** `supabase/tests/growth_kohort_cac` 22/22 geçti (PGlite). Test sırasında yakalanan hatalar: yetki modeli stub'ı (`profiles.role`), `auth.uid()` okuma biçimi (`request.jwt.claims`), kohort örnek büyüklüğünün eşikten küçük kalması ve test fikstürünün `veli` profili ile fazladan hane üretmesi. Hepsi düzeltildi.
+- **Ekranlar:** `/yonetim/harcama` içine CAC kartı (`HarcamaManager`). Yeni `/yonetim/elde-tutma` sayfası (`EldeTutmaManager`): üç özet kartı ve haftalık kohort tablosu. Nav girişi ve tr/en çeviriler eklendi. `tsc` ve `eslint` temiz. Tarayıcıda görsel kontrol yapılmadı.
+- **Kanal bazlı CAC yok:** hane kanal atfı (UTM) harcama kanalı ile eşleşmiyor. Yalnız toplam CAC gösterilir.
+- **Uzak DB:** `20261114` uygulanmadı; deploy onayı bekleniyor. 108 ve 109 yine bekliyor.
+- **Çeviri dosyası onarımı:** `yonetim-panel.tr.json` ve `.en.json` ilk yamada bozulmuştu (here-string sonu yeni satır eksikliği). Dosyalar git HEAD'inden yeniden üretildi, yalnız eklemeler içeriyor (+73, silme yok), JSON doğrulandı.
+
+## 14. Güncelleme (2026-10-28): deploy ve veri kalitesi ekranı
+
+- **Deploy:** `20261114000000_growth_kohort_cac` uzakta uygulandı (onayla). 108 ve 109 yine dışarıda; dosyalar geri konuldu. Uzak: 20261113 ve 20261114 uygulandı.
+- **Veri kalitesi ve izin:** `20261115000000_growth_veri_kalitesi.sql` (`admin_growth_veri_kalitesi`). Kontroller: e-postası boş hane, aktive ama tarihsiz hane. İzin özeti: kanal başına açık, kapalı, kayıt yok (yalnız veli profilleri). Sayılar 5'in altındaysa gizli.
+- **Test:** `supabase/tests/growth_veri_kalitesi` 13/13 (PGlite). `growth_households.email` NOT NULL ve benzersiz olduğundan "eksik e-posta" boş veya boşluk metnini sayar.
+- **Ekran:** `/yonetim/veri-kalitesi`, nav girişi, tr/en çeviriler. `tsc` ve `eslint` temiz.
+- **Uzak:** `20261115` uygulanmadı; deploy onayı bekliyor.
+- **Faz 1 ekranları (yerel):** Huni ve genel (Growth Analitik, mevcut), Elde tutma (kohort, yeni), Segmentler (mevcut), Otomasyon ve öneri (Journey, Gönderim Günlüğü, AI Öneriler; mevcut), Veri kalitesi ve izin (yeni). Beş sayfa tamam; tarayıcı kontrolü yapılmadı.
+- **W durumu:** W1 abonelik tarihleri RPC ile UI arasında camelCase olarak eşleşiyor. W5 CRM aksiyonları (ekip, görev, destek, sahip, KVKK, birleştirme) mevcut. W6 `next` yönlendirmesi güvenli (`guvenliYonlendirme`). Birim testleri bu turda doğrulanmadı.
+
+## 15. Güncelleme (2026-10-28): veri kalitesi deploy, tarayıcı kontrolü, n8n bulgusu, Faz 2 dilim 1
+
+- **Deploy:** `20261115000000_growth_veri_kalitesi` uzakta uygulandı (onayla). Önizleme sırasında bağlantı kimlik hatası verdi; ikinci denemede başarılı, bu sırada uzak durum kontrol edildi (uygulanmamış). 108 ve 109 dışarıda, geri konuldu.
+- **Tarayıcı kontrolü (kısmi):** `next dev` localhost:3010'da çalışıyor. Dört yeni rota (`harcama`, `elde-tutma`, `veri-kalitesi`, `growth-analitik`) yetkisiz erişimde 307 ile yönlendiriliyor. Render'ı görmek için yönetici girişi gerekiyor; projede test hesabı yok. Yönetici girişiyle tam görsel kontrol yapılacak.
+- **n8n (plan §4.8 kapatıldı):** Konteyner 3 hafta çalışıyor; `N8N_HOST=n8n.144.24.177.156.nip.io`, port `0.0.0.0:5678`. Dışarıdan PC'den istekler zaman aşımına uğradı; sunucu güvenlik duvarında 5678 yok. Sunucu içinden `127.0.0.1:5678` yanıt vermedi. Ayrıca Ollama için kalan `11434` kuralı hâlâ açık. Güvenlik duvarı/port değişikliği onay gerektirdiği için yapılmadı.
+- **Faz 2 dilim 1 (yerel):** `20261116000000_growth_rapor_taslak` (taslak tablo, idempotent ISO hafta üretimi, tek seferlik onay/red, denetim kaydı). Gönderim yok. Test 19/19. Uzakta uygulanmadı; onay bekliyor.
+
+## 16. Güncelleme (2026-10-28): 20261116 deploy ve n8n loopback
+
+- **Deploy:** `20261116000000_growth_rapor_taslak` uzakta uygulandı (onayla). 108 ve 109 dışarıda; geri konuldu. Uzak: 20261115 ve 20261116 uygulandı.
+- **n8n (onaylı seçenek a):**
+  - Compose yedeği: `/data/coolify/services/zidws1rr2a2i2idejms2tuit/docker-compose.yml.bak-20261028`.
+  - Compose'ta n8n portu `127.0.0.1:5678:5678`. Eski `5678:3000` mapping'i zaten çalışmıyordu: konteyner içinde n8n `5678`'de dinliyor, `3000` boş.
+  - Ollama ve open-webui servis ve volume tanımları compose'tan kaldırıldı (konteynerler zaten kaldırılmıştı).
+  - Yalnız n8n servisi yeniden oluşturuldu. Volume (`zidws1rr2a2i2idejms2tuit_n8n`) aynen duruyor.
+  - Host iptables'tan `11434` kuralı kaldırıldı; `/etc/iptables/rules.v4` de güncellendi.
+  - Doğrulama: `127.0.0.1:5678/healthz` → 200. PC'den `144.24.177.156:5678` ve `n8n.144.24.177.156.nip.io` → zaman aşımı.
+- **Açık risk:** Coolify'daki kaynak tanımı hâlâ eski (`5678:3000`, ollama, open-webui). Coolify bir sonraki dağıtımda bunları geri yazabilir. Kalıcı çözüm Coolify arayüzünde aynı değişikliği yapmak.
+- **Açık soru:** Domain (`n8n.144.24.177.156.nip.io`) dışarıdan da yanıt vermiyor. Traefik yönlendirmesi incelenmedi; kullanılacaksa ayrıca ele alınmalı.
+
+## 17. Kullanıcının yapacakları (bekleyen, sonra birlikte bakılacak)
+
+1. **Coolify'da n8n kaynağını güncelle:** port `127.0.0.1:5678:5678` olarak değişsin; `ollama` ve `open-webui` kaynakları silinsin. Aksi halde bir sonraki Coolify dağıtımı eski ayarı geri yazabilir.
+2. **n8n domain kararı:** `n8n.144.24.177.156.nip.io` kullanılacak mı? Kullanılacaksa Traefik yönlendirmesi ve kimlik doğrulama birlikte incelenir; kullanılmayacaksa kapatılır.
+3. **Tarayıcı kontrolü:** Yönetici olarak giriş yap; `/yonetim/harcama`, `/yonetim/elde-tutma`, `/yonetim/veri-kalitesi`, `/yonetim/growth-analitik` ekranlarını birlikte kontrol edelim. Yerel sunucu: `http://localhost:3010` (PID 4092; durdurmak için kapatılabilir).
+4. **Kanal bazlı CAC için karar:** hane atfı (UTM) ile harcama kanalını eşleştirmek istenirse ayrı bir tasarım gerekir.
+5. **Kayıtlı hane tanımı:** `visitor` ve `lead` dışındaki haneler (onaylandı; tekrar gözden geçirilecek).
+6. **Faz 2 gönderim kararı:** haftalık rapor e-postası/iç bildirimi açılacak mı, hangi alıcılar, hangi saat. Şu an hiçbir gönderim yok.
+7. **Hukuk:** çerez/gizlilik metni (PostHog), saklama süreleri (109), MEB/KVKK kapsamı; bunlar kodlanmadan önce yanıt bekliyor.
+8. **Commit:** GIE dosyaları ve yeni migration'lar henüz commit'lenmedi. Ne zaman commit atılacağı kararı size ait.
+
+## 18. Faz durumu (2026-10-28)
+
+| Faz | Durum | Ne var / neden bekliyor |
+|---|---|---|
+| 0 Zemin | Tamam | Tanımlar (§8), disk (24 GB boş), W durum kontrolü |
+| 1 Growth Analytics V1 | Yerelde tamam; uzakta: 20261113, 20261114, 20261115 uygulandı | 5 ekran: huni (mevcut), kohort (yeni), segment (mevcut), otomasyon/öneri (mevcut), veri kalitesi (yeni). Tarayıcı kontrolü bekliyor |
+| 1b İçerik kalite motoru | Tarama tamam | `scripts/icerik-kalite/kalite_motoru.py`, 104 hikâye: benzer çift yok, kodlama sorunu yok. 12 hikâyede (HR-121–132) metadata eksik (anotasyon bekleniyor). Rapor: `docs/okuma-entegrasyon/kalite/` (yerel, Oracle'a gerek yok) |
+| 2 Onaylı otomasyon | Dilim 1 tamam; uzakta: 20261116 uygulandı | Rapor taslağı + yönetici onay ekranı (`/yonetim/rapor-taslaklari`). **Gönderim yok.** Gönderim kararı kullanıcıda (§17.6) |
+| 3 Öğrenme analitiği (toplu) | Yerelde tamam | `20261117000000_growth_ogrenme_toplu` (test 15/15), ekran `/yonetim/ogrenme-toplam`. Uzakta uygulanmadı; onay bekliyor. Doğruluk, beceri ve kişi bilgisi kasıtlı olarak dışarıda |
+| 4 ML | Ertelendi (koşullu) | Etiketli veri eşiği sağlanmadı (ücretli dönüşüm, iptal). Eşik sayımı sonraki iş |
+| 5 LLM ajanları | Beklemede: karar gerekiyor | Sağlayıcı (Gemini API varsayılan) ve toplu veriyi dış servise göndermek için onay gerekir |
+| 6 Deney ve Customer-Lab | Beklemede: spec gerekiyor | Kullanıcı: "inşa edilecek". Önce ayrı spec dosyaları yazılacak; kod yok |
+
+**Kapanan kararlar:** Kişisel veri Oracle'a gönderilmez. Dış erişim: n8n yalnız loopback. Gönderim ve dağıtım her zaman ayrı onayla açılır.
+
+## 19. Kararlar ve uygulama (2026-10-28, onayla)
+
+| Konu | Karar | Durum |
+|---|---|---|
+| 20261117 (öğrenme toplu) | Uzakta uygulandı | Tamam |
+| Faz 2 alıcılar | Yalnız yönetici hesapları (admin rolü). Veli, öğrenci ve dış adres yok | Karar; gönderim kodu yok |
+| Faz 2 saat | Pazartesi 09:00 (İstanbul). Taslak 08:30'da üretilir | Karar; n8n zamanlayıcısı kurulmadı |
+| Faz 2 mod | İlk 4 hafta gölge modu: taslak üretilir, yalnız panelde görünür, gönderim yok. Gönderim açmak için 4 haftalık inceleme | Karar |
+| Her rapor | Onaylanmadan gönderim yok (tek tık onay, yönetici) | Karar; onay ekranı hazır |
+| n8n domain | Kullanılmayacak. n8n yalnız loopback (127.0.0.1:5678), SSH tüneli ile erişilir. Domain Coolify'dan kaldırılır | Karar; Coolify adımı kullanıcıda (§17.1) |
+| Kanal bazlı CAC | Şimdilik yok. Kanal atfı ölçülene dek yalnız toplam CAC. Kriter: hane kaynak alanının en az %80'i dolu olmalı | Karar |
+| Faz 4 (ML) | Ertelendi. Eşik sayımı sonraki iş | Karar |
+| Faz 5 (LLM) | Gemini API, yalnız toplu ve kişi içermeyen veri. Üç ajan çalıştı (sentetik veriyle); çıktılar `docs/growth-crm/ajan-ciktilari/` altında taslak. Sayı doğrulaması uydurma sayıyı reddeder | Tamam (sentetik canlı test) |
+| Faz 6 | Customer-Lab ve HupoMentor için spec yazıldı (`docs/growth-crm/specs/`). HupoMentor, hukuk onayı olmadan kodlanmaz | Spec tamam; kod yok |
+| Hukuk metinleri | Taslak hazırlandı (`docs/hukuk-taslak/`). Yayınlanmaz; hukuk onayı gerekir | Taslak |
+| Tarayıcı kontrolü | Yönetici girişi gerektirir. Kimlik bilgisi bende yok | Kullanıcıda |
+| Commit | Yalnız GIE kapsamındaki dosyalar commit'lendi. `PROJE_GUNLUGU.md` başka oturumların girdilerini de içerdiği için commit dışı | Tamam |

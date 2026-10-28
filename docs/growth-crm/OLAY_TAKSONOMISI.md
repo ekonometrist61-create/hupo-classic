@@ -93,3 +93,20 @@ yalnızca istemci tarafındaki boşluğu kapatır.
 - **`ErkenErisimSection` kullanılmıyor:** Erken erişim olayı ve UTM ilk temas kaydı şu an hiçbir
   sayfada çalışmaz. Sayfa bağlanınca bu belge güncellenir.
 - **Saklama kuralları** hukuk onayı bekliyor; süreler `20261109` dosya başında sabittir.
+
+## 8. Tanımlar (Faz 0, 2026-10-28)
+
+Bu tanımlar koddan çıkarıldı. Metrikler bu tanımlara göre hesaplanır; başka bir yerde farklı tanım kullanılırsa bu bölüm esas alınır.
+
+| Terim | Tanım | Kaynak |
+|---|---|---|
+| **Aktive hane** | Hanenin çocuğu ilk soru cevabını verdiyse. Bir kez yazılır; sonraki cevaplar değiştirmez. Alan: `growth_households.activated_at`. | `20261104` §3 (user_answers AFTER INSERT) |
+| **Aktif gün (hane)** | Hanenin çocuğunun cevap verdiği takvim günü. Tek satır: (hane, gün). Yalnız hane ve gün saklanır; cevap içeriği yok. | `growth_hane_aktif_gunleri` (`20261104`) |
+| **Aktif kullanıcı (DAU / WAU / MAU)** | Pencere içinde en az bir cevap kaydı olan öğrenci (`answer_events.student_id`). DAU: bugün (İstanbul saati). WAU: son 7 gün. MAU: son 30 gün. | `admin_growth_aktiflik` (`20261105`) |
+| **Düzenli aile** | Son 14 günde en az 3 aktif gün (hane). | `20261104` §3 (engaged kuralı) |
+| **Kullanım dışı (at_risk)** | Aktive veya düzenli hanede son aktif günden 14 gün geçmişse. | `20261104` §3 |
+
+**Notlar**
+- Pazarlama "aktif" ile öğrenme metriği ayrıdır. Aktif kullanıcı bir cevap verme sayısıdır; XP, seri (streak) veya süre bu tanıma girmez.
+- Eski `aktif_7_gun` görünümü (XP/streak tabanlı) bu tanımla değiştirilmiş olmalı. Değiştirildiği bu belgede **doğrulanmadı**; W3 kapsamında kod ve sorgu kontrolü yapılacak.
+- Harcama (`growth_harcama`) bir olay değildir; bu tabloya yazılmaz. CAC yalnız harcama girilmiş dönemde hesaplanır.

@@ -42,6 +42,11 @@
         "trials": "Denemeler",
         "analytics": "Analitik",
         "growthAnalitik": "Growth Analitik",
+        "harcama": "Reklam Harcaması",
+        "eldeTutma": "Elde Tutma",
+        "veriKalitesi": "Veri Kalitesi ve İzin",
+        "raporTaslak": "Haftalık Rapor Taslakları",
+        "ogrenmeToplam": "Öğrenme Analitiği (Toplu)",
         "aiOneriler": "AI Öneriler",
         "access": "Ekip & yetkiler",
         "channels": "Kanal ayarları",
@@ -79,6 +84,11 @@
         "satisHatti": "Satış hattı — Lead ve fırsat yönetimi",
         "destekMasasi": "Destek masası — müşteri destek talepleri",
         "growthAnalitik": "Growth analitik — dönüşüm hunisi ve segment metrikleri",
+        "harcama": "Manuel reklam harcaması. CAC için girilir; reklam hesabı bağlı değildir.",
+        "eldeTutma": "Kayıt sonrası D1, D7 ve D30 elde tutma oranları. 5'in altındaki sayılar gizlenir.",
+        "veriKalitesi": "Veri kalitesi kontrolleri ve kanal bazlı iletişim izni özeti. Küçük sayılar gizlenir.",
+        "raporTaslak": "Haftalık büyüme raporu taslakları. Gönderim yapılmaz; yalnız inceleme ve onay.",
+        "ogrenmeToplam": "Sınıf ve hikâye bazında toplu kullanım. Her hücrede en az 10 öğrenci; doğruluk ve kişi bilgisi yok.",
         "aiOneriler": "AI öneriler — bir sonraki en iyi aksiyon",
         "journey-otomasyonlari": "Journey otomasyonları — müşteri yolculukları",
         "mesajSablonlari": "Mesaj şablonları — kanal bazlı içerik",
@@ -1100,6 +1110,168 @@
         "cancel": "Vazgeç"
       },
       "pager": { "prev": "Önceki", "next": "Sonraki" }
+    },
+    "harcama": {
+      "description": "Reklam harcamasını elle girin. Reklam hesapları bağlı değildir; CAC yalnız harcama girilmiş dönemler için hesaplanır.",
+      "form": {
+        "title": "Harcama ekle",
+        "date": "Tarih",
+        "channel": "Kanal",
+        "amount": "Tutar",
+        "currency": "Para birimi",
+        "note": "Not (isteğe bağlı)",
+        "notePlaceholder": "Örn. Mart kampanyası",
+        "submit": "Kaydet",
+        "saving": "Kaydediliyor…",
+        "saved": "Harcama kaydedildi.",
+        "errAmount": "Tutar sıfırdan büyük bir sayı olmalı."
+      },
+      "window": { "label": "Dönem", "days": "Son {count} gün" },
+      "totals": {
+        "title": "Kanal toplamları",
+        "note": "Para birimleri ayrı toplanır; TL ile dolar karıştırılmaz.",
+        "empty": "Bu dönemde harcama girilmemiş. CAC henüz hesaplanamaz.",
+        "cacNote": "CAC henüz hesaplanmıyor; harcama kayıtları bu hesap için hazırlanıyor."
+      },
+      "cac": {
+        "title": "CAC (kayıt başına edinim maliyeti)",
+        "note": "Toplam harcama ÷ kayıtlı hane. Kanal bazlı CAC yok; para birimleri ayrı hesaplanır.",
+        "newHouseholds": "Kayıtlı hane",
+        "hidden": "Gizli (5'ten az)",
+        "spend": "Harcama",
+        "none": "Hesaplanamaz",
+        "lowData": "5'ten az kayıt; CAC gizli",
+        "noSpend": "Bu dönemde harcama girilmemiş; CAC hesaplanmıyor."
+      },
+      "table": {
+        "title": "Kayıtlar",
+        "empty": "Bu dönemde kayıt yok.",
+        "delete": "Sil",
+        "confirmDelete": "Bu harcama kaydı silinsin mi? İşlem denetim kaydına yazılır.",
+        "cols": { "date": "Tarih", "channel": "Kanal", "amount": "Tutar", "note": "Not", "action": "İşlem" }
+      },
+      "channels": {
+        "meta": "Meta",
+        "google_ads": "Google Ads",
+        "tiktok": "TikTok",
+        "youtube": "YouTube",
+        "instagram": "Instagram",
+        "diger": "Diğer"
+      },
+      "loading": "Yükleniyor…",
+      "loadError": "Harcama verisi yüklenemedi.",
+      "retry": "Tekrar dene"
+    },
+    "eldeTutma": {
+      "title": "Elde tutma (kohort)",
+      "description": "Kayıt olan haneler, kayıt gününden tam 1, 7 ve 30 gün sonra en az bir aktif günle geri döndü mü.",
+      "window": { "label": "Dönem", "days": "Son {count} gün" },
+      "cards": { "d1": "D1 (1. gün)", "d7": "D7 (7. gün)", "d30": "D30 (30. gün)" },
+      "hidden": "Gizli (5'ten az)",
+      "eligible": "Uygun",
+      "retained": "Tutulan",
+      "note": "Olgunluk: yalnız N. günü dolmuş haneler paydaya girer. Pay veya payda 5'in altındaysa oran gizlenir. Kayıtlı hane: visitor ve lead dışındaki haneler.",
+      "loading": "Yükleniyor…",
+      "loadError": "Elde tutma verisi yüklenemedi.",
+      "retry": "Tekrar dene",
+      "weekly": {
+        "title": "Haftalık kohortlar",
+        "empty": "Bu dönemde kayıtlı hane yok.",
+        "cols": { "week": "Hafta (Pzt)", "size": "Boyut" }
+      }
+    },
+    "veriKalitesi": {
+      "loading": "Yükleniyor…",
+      "loadError": "Veri kalitesi verisi yüklenemedi.",
+      "retry": "Tekrar dene",
+      "hidden": "Gizli (5'ten az)",
+      "quality": {
+        "title": "Veri kalitesi",
+        "veliToplam": "Veli profili",
+        "eposta_eksik": "E-postası eksik hane",
+        "eposta_eksikDesc": "E-posta alanı boş veya yalnız boşluk. Ölçüm ve bildirim yapılamaz.",
+        "aktif_tarihsiz": "Aktive hane, tarih yok",
+        "aktif_tarihsizDesc": "Aktive ve sonrası aşamada olup aktivasyon tarihi boş. Yaşam döngüsü hatası olabilir."
+      },
+      "consent": {
+        "title": "İletişim izni (kanal bazlı)",
+        "note": "Yalnız veli profilleri. Tercih kaydı olmayan veli, o kanal için izin vermemiş sayılır.",
+        "cols": {
+          "channel": "Kanal",
+          "on": "İzin açık",
+          "off": "İzin kapalı",
+          "none": "Kayıt yok"
+        }
+      },
+      "channels": {
+        "eposta": "E-posta",
+        "push": "Anlık bildirim",
+        "sms": "SMS",
+        "uygulama_ici": "Uygulama içi"
+      }
+    },
+    "raporTaslak": {
+      "title": "Haftalık büyüme raporu",
+      "description": "Her ISO hafta için bir taslak üretilir. Taslak yalnız burada karara bağlanır; hiçbir alıcıya gönderilmez.",
+      "produce": "Bu haftanın taslağını üret",
+      "produced": "Taslak hazır (aynı hafta için yeni kayıt açılmaz).",
+      "loading": "Yükleniyor…",
+      "empty": "Henüz taslak yok. Bu haftanın taslağını üretebilirsiniz.",
+      "approve": "Onayla",
+      "reject": "Reddet",
+      "approved": "Rapor onaylandı. Bu yalnız kayıt işaretidir; gönderim ayrı bir adımdır.",
+      "rejected": "Rapor reddedildi.",
+      "confirmApprove": "Rapor onaylansın mı? Onay yalnız kayıt olarak işaretlenir; hiçbir alıcıya gönderilmez.",
+      "noteLabel": "Not (isteğe bağlı)",
+      "createdAt": "Üretildi",
+      "decidedAt": "Karar",
+      "hidden": "Gizli (5'ten az)",
+      "noSpend": "Harcama yok; CAC hesaplanmadı.",
+      "status": {
+        "taslak": "Taslak",
+        "onaylandi": "Onaylandı",
+        "reddedildi": "Reddedildi"
+      },
+      "sections": {
+        "retention": "Elde tutma",
+        "cac": "CAC",
+        "quality": "Veri kalitesi"
+      },
+      "quality": {
+        "eposta_eksik": "E-postası eksik hane",
+        "aktif_tarihsiz": "Aktive hane, tarih yok"
+      }
+    },
+    "ogrenmeToplam": {
+      "title": "Toplu öğrenme görünümü",
+      "description": "Oturum, öğrenci sayısı ve tamamlama oranı. Doğruluk, beceri ve kişi bilgisi bu ekranda yoktur.",
+      "window": {
+        "label": "Dönem",
+        "days": "Son {count} gün"
+      },
+      "loading": "Yükleniyor…",
+      "loadError": "Toplu öğrenme verisi yüklenemedi.",
+      "retry": "Tekrar dene",
+      "threshold": "Gösterim eşiği: hücre başına en az {count} öğrenci. Altındaki satırlar gizlenir.",
+      "classes": {
+        "title": "Sınıflar",
+        "empty": "Bu dönemde eşik üstü sınıf yok.",
+        "cols": {
+          "grade": "Sınıf"
+        }
+      },
+      "stories": {
+        "title": "Hikâyeler",
+        "empty": "Bu dönemde eşik üstü hikâye yok.",
+        "cols": {
+          "story": "Hikâye"
+        }
+      },
+      "cols": {
+        "students": "Öğrenci",
+        "sessions": "Oturum",
+        "completion": "Tamamlama"
+      }
     },
     "growthAnalitik": {
       "title": "Growth Analitik",

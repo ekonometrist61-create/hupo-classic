@@ -1,0 +1,23 @@
+{
+  "ajan": "quality_auditor",
+  "saglayici": "gemini",
+  "durum": "taslak",
+  "uydurma_sayilar": [],
+  "cikti": {
+    "baslik": "Veri Kalitesi ve İzin Denetim Raporu",
+    "maddeler": [
+      {
+        "metin": "E-posta eksik veri sayısı 'gizli' (null) olarak görünmektedir; veri bütünlüğü ve erişilebilirlik risklerini önlemek adına bu eksik kayıt sayısının tespit edilerek alanın doldurulması önerilir.",
+        "kaynak": "veri_kalitesi.kalite"
+      },
+      {
+        "metin": "Sistemde 7 adet aktif ancak tarihsiz kayıt bulunmaktadır; zaman damgalarının eksikliği analiz ve takip riskleri doğurduğundan bu kayıtların tarihlerinin sisteme işlenmesi önerilir.",
+        "kaynak": "veri_kalitesi.kalite"
+      },
+      {
+        "metin": "Toplam 240 veli kaydının 28 tanesinde izin durumu 'kayit_yok' olarak belirlenmiştir; mevzuat uyumu ve iletişim izin risklerini gidermek adına bu 28 kayıt için izin teyit süreçlerinin tamamlanması önerilir.",
+        "kaynak": "veri_kalitesi.izin"
+      }
+    ]
+  }
+}

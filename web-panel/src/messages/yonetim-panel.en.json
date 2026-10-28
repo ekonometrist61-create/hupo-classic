@@ -42,6 +42,11 @@
         "trials": "Trials",
         "analytics": "Analytics",
         "growthAnalitik": "Growth Analytics",
+        "harcama": "Ad spend",
+        "eldeTutma": "Retention",
+        "veriKalitesi": "Data Quality and Consent",
+        "raporTaslak": "Weekly Report Drafts",
+        "ogrenmeToplam": "Learning analytics (aggregate)",
         "aiOneriler": "AI Recommendations",
         "access": "Team & permissions",
         "channels": "Channel settings",
@@ -79,6 +84,11 @@
         "satisHatti": "Sales pipeline — Lead and opportunity management",
         "destekMasasi": "Support desk — customer support tickets",
         "growthAnalitik": "Growth analytics — conversion funnel and segment metrics",
+        "harcama": "Manual ad spend. Entered for CAC; ad accounts are not connected.",
+        "eldeTutma": "Retention at D1, D7 and D30 after sign-up. Counts below 5 are hidden.",
+        "veriKalitesi": "Data quality checks and channel-level consent summary. Small counts are hidden.",
+        "raporTaslak": "Weekly growth report drafts. Nothing is sent; review and approval only.",
+        "ogrenmeToplam": "Aggregate use by class and story. At least 10 students per cell; no correctness or personal data.",
         "aiOneriler": "AI recommendations — next best action",
         "journey-otomasyonlari": "Journey automations — customer journeys",
         "mesajSablonlari": "Message templates — channel-based content",
@@ -1100,6 +1110,168 @@
         "cancel": "Cancel"
       },
       "pager": { "prev": "Previous", "next": "Next" }
+    },
+    "harcama": {
+      "description": "Enter ad spend manually. Ad accounts are not connected; CAC is calculated only for periods with entries.",
+      "form": {
+        "title": "Add spend",
+        "date": "Date",
+        "channel": "Channel",
+        "amount": "Amount",
+        "currency": "Currency",
+        "note": "Note (optional)",
+        "notePlaceholder": "e.g. March campaign",
+        "submit": "Save",
+        "saving": "Saving…",
+        "saved": "Spend saved.",
+        "errAmount": "Amount must be a number greater than zero."
+      },
+      "window": { "label": "Period", "days": "Last {count} days" },
+      "totals": {
+        "title": "Channel totals",
+        "note": "Currencies are totaled separately; TRY and USD are not mixed.",
+        "empty": "No spend entered for this period. CAC cannot be calculated yet.",
+        "cacNote": "CAC is not calculated yet; spend records are being prepared for it."
+      },
+      "cac": {
+        "title": "CAC (cost per registered household)",
+        "note": "Total spend ÷ registered households. No channel-level CAC; currencies are calculated separately.",
+        "newHouseholds": "Registered households",
+        "hidden": "Hidden (fewer than 5)",
+        "spend": "Spend",
+        "none": "Not calculable",
+        "lowData": "Fewer than 5 registrations; CAC hidden",
+        "noSpend": "No spend entered for this period; CAC not calculated."
+      },
+      "table": {
+        "title": "Entries",
+        "empty": "No entries in this period.",
+        "delete": "Delete",
+        "confirmDelete": "Delete this spend entry? The action is written to the audit log.",
+        "cols": { "date": "Date", "channel": "Channel", "amount": "Amount", "note": "Note", "action": "Action" }
+      },
+      "channels": {
+        "meta": "Meta",
+        "google_ads": "Google Ads",
+        "tiktok": "TikTok",
+        "youtube": "YouTube",
+        "instagram": "Instagram",
+        "diger": "Other"
+      },
+      "loading": "Loading…",
+      "loadError": "Could not load spend data.",
+      "retry": "Try again"
+    },
+    "eldeTutma": {
+      "title": "Retention (cohorts)",
+      "description": "Registered households that came back with at least one active day exactly 1, 7 and 30 days after sign-up.",
+      "window": { "label": "Period", "days": "Last {count} days" },
+      "cards": { "d1": "D1 (day 1)", "d7": "D7 (day 7)", "d30": "D30 (day 30)" },
+      "hidden": "Hidden (fewer than 5)",
+      "eligible": "Eligible",
+      "retained": "Retained",
+      "note": "Maturity: only households whose N-th day has passed count in the denominator. Rates are hidden when numerator or denominator is below 5. Registered household: any lifecycle except visitor and lead.",
+      "loading": "Loading…",
+      "loadError": "Could not load retention data.",
+      "retry": "Try again",
+      "weekly": {
+        "title": "Weekly cohorts",
+        "empty": "No registered households in this period.",
+        "cols": { "week": "Week (Mon)", "size": "Size" }
+      }
+    },
+    "veriKalitesi": {
+      "loading": "Loading…",
+      "loadError": "Could not load data quality data.",
+      "retry": "Try again",
+      "hidden": "Hidden (fewer than 5)",
+      "quality": {
+        "title": "Data quality",
+        "veliToplam": "Parent profiles",
+        "eposta_eksik": "Households missing email",
+        "eposta_eksikDesc": "Email field is empty or only whitespace. Measurement and messaging are not possible.",
+        "aktif_tarihsiz": "Activated household, no date",
+        "aktif_tarihsizDesc": "Activated or later but no activation date. Possible lifecycle error."
+      },
+      "consent": {
+        "title": "Communication consent (per channel)",
+        "note": "Parent profiles only. A parent with no preference record is treated as not consenting for that channel.",
+        "cols": {
+          "channel": "Channel",
+          "on": "Consent on",
+          "off": "Consent off",
+          "none": "No record"
+        }
+      },
+      "channels": {
+        "eposta": "Email",
+        "push": "Push",
+        "sms": "SMS",
+        "uygulama_ici": "In-app"
+      }
+    },
+    "raporTaslak": {
+      "title": "Weekly growth report",
+      "description": "One draft per ISO week. Drafts are decided only here; nothing is sent to any recipient.",
+      "produce": "Generate this week's draft",
+      "produced": "Draft ready (no new record is created for the same week).",
+      "loading": "Loading…",
+      "empty": "No drafts yet. You can generate this week's draft.",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approved": "Report approved. This is a record only; sending is a separate step.",
+      "rejected": "Report rejected.",
+      "confirmApprove": "Approve this report? Approval is recorded only; nothing is sent to any recipient.",
+      "noteLabel": "Note (optional)",
+      "createdAt": "Generated",
+      "decidedAt": "Decided",
+      "hidden": "Hidden (fewer than 5)",
+      "noSpend": "No spend; CAC not calculated.",
+      "status": {
+        "taslak": "Draft",
+        "onaylandi": "Approved",
+        "reddedildi": "Rejected"
+      },
+      "sections": {
+        "retention": "Retention",
+        "cac": "CAC",
+        "quality": "Data quality"
+      },
+      "quality": {
+        "eposta_eksik": "Households missing email",
+        "aktif_tarihsiz": "Activated household, no date"
+      }
+    },
+    "ogrenmeToplam": {
+      "title": "Aggregate learning view",
+      "description": "Sessions, student count and completion rate. Correctness, skills and personal data are not shown here.",
+      "window": {
+        "label": "Period",
+        "days": "Last {count} days"
+      },
+      "loading": "Loading…",
+      "loadError": "Could not load aggregate learning data.",
+      "retry": "Try again",
+      "threshold": "Display threshold: at least {count} students per cell. Rows below it are hidden.",
+      "classes": {
+        "title": "Classes",
+        "empty": "No classes above the threshold in this period.",
+        "cols": {
+          "grade": "Grade"
+        }
+      },
+      "stories": {
+        "title": "Stories",
+        "empty": "No stories above the threshold in this period.",
+        "cols": {
+          "story": "Story"
+        }
+      },
+      "cols": {
+        "students": "Students",
+        "sessions": "Sessions",
+        "completion": "Completion"
+      }
     },
     "growthAnalitik": {
       "title": "Growth Analytics",
