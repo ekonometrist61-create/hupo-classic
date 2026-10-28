@@ -29,6 +29,7 @@ $stage = Join-Path $env:TEMP ('hupo-giris-' + [guid]::NewGuid().ToString('N'))
 New-Item -ItemType Directory -Force "$stage\public" | Out-Null
 Copy-Item -Recurse "$here\src" "$stage\src"
 Copy-Item -Recurse "$here\data" "$stage\data"
+Copy-Item "$here\audio\giris_ses.wav" "$stage\public\giris_ses.wav"
 $ass = Join-Path $repo 'mobile-app\assets\hupo\splash'
 foreach ($f in 'hupo_govde_kanatsiz', 'hupo_kanat_sag', 'hupo_kanat_sol', 'hupo_goz_kapali', 'hupo_goz_mutlu', 'hupo_govde', 'hupo_kanat') {
     Copy-Item "$ass\$f.webp" "$stage\public\$f.webp"

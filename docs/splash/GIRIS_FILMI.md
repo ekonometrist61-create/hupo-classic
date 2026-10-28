@@ -37,9 +37,23 @@ selamı); etkileyici olan kısım ışık, parçacık ve tipografi. Onaylı mast
 **Yerleşim:** mobil 1080×2340 (Hupo üstte, yazı altta, ortalı); web 1920×1080 (Hupo solda, kelime işareti sağda,
 altın iz tüm kilidi sarar). Son kare açık turkuaz; uygulamanın Giriş/Ana sayfasına çapraz geçişle devredilir.
 
-**Ses (üretilmedi):** marka sesi yalnız ilk açılışta (D4, kullanıcı kararı). Önerilen işaretler: 0,45 göz yıldızı
-(tek yumuşak çan) · 0,85–1,95 yükselen ışıltı · 2,48 göz açılışı (hafif "pırt") · 3,12 altın iz (cam/çıngırak süpürmesi).
-Mevcut `hupo_marka_sesi.mp3` zamanlamaya uyarlanmadı; dinlenmeden filme eklenmedi.
+**Ses (üretildi, K-0168):** `remotion/audio/giris_ses.wav` (5,0 sn, 48 kHz stereo, tepe -1,5 dBFS, kırpma yok).
+Harici ses dosyası yok; `remotion/tools/giris_ses_uret.py` ile sentezlendi. D majör pentatonik ve sıcak tonlar kullanıldı.
+
+| Zaman (sn) | Ses |
+|---|---|
+| 0,45 / 0,52 | İki can sesi (E6, B6): yıldız ateşi |
+| 0,85–1,95 | Filtreli hava yükselişi + altı kıvılcım (2,6–7,9 kHz, sol/sağ) |
+| 2,48 | Kısa "pırt" (aşağı kayan ton) ve G6 çan: göz açılışı |
+| 2,55 | Hafif hava (kanat selamı) |
+| 2,92 | Yumuşak tokmak: iniş |
+| 3,00–3,50 | Dokuz harf tıkı, D5'ten A6'ya yükselen pentatonik; soldan sağa pan |
+| 3,12–3,95 | Altın iz süpürmesi, 3,95'te D6-F#6-A6 akor parlaması |
+| 3,90–5,00 | Sıcak D majör yastığı, sona doğru söner |
+
+**Ses kararları:** Ses filmin parçasıdır. Webde video varsayılan olarak sessiz başlar, ses için kullanıcı bir kez dokunur
+(ilk girişte bir kez; `sessionStorage`). Mobilde bu film yalnız ilk açılışta oynar, D4 kararı korunur. Sesler dinlenerek
+değil ölçümle doğrulandı (tepe, kırpma, zarf ve zamanlama). **Kulak onayı kullanıcıdadır.**
 
 ## 3. Üretim planı ve durumu
 

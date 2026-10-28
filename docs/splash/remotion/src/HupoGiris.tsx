@@ -1,5 +1,5 @@
 import React, {useEffect, useRef, useState} from 'react';
-import {AbsoluteFill, continueRender, delayRender, Easing, Img, interpolate, interpolateColors, random, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
+import {Audio, AbsoluteFill, continueRender, delayRender, Easing, Img, interpolate, interpolateColors, random, staticFile, useCurrentFrame, useVideoConfig} from 'remotion';
 import {getLength, getPointAtLength, evolvePath} from '@remotion/paths';
 import {loadFont} from '@remotion/google-fonts/Nunito';
 import veri from '../data/hupo_noktalar.json';
@@ -309,6 +309,9 @@ export const HupoGiris: React.FC = () => {
       ) : null}
 
       {/* altin kanat izi */}
+      {/* ses: tum isaretler giris_ses.wav icinde zamanlanmistir (tools/giris_ses_uret.py) */}
+      <Audio src={staticFile('giris_ses.wav')} />
+
       {ark && rect ? (
         <svg width={W} height={H} style={{position: 'absolute', left: 0, top: 0}}>
           <defs>
