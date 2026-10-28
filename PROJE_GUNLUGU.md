@@ -4759,3 +4759,9 @@ Paketler:
 
 ### K-0191 · 2026-10-28 · VT · 20261123 uzakta (onaylı); temizlik cron işleri aktif; mobil D3 kararı
 - Mobil olay entegrasyonu ilk web deneyinden sonra, bir sonraki planlı sürümle; ayrı yayın yok.
+
+### BACKLOG-M1 · 2026-10-28 · MOBİL · Mobil olay entegrasyonu (ERTELENDİ, sonra yapılacak)
+- Karar: mobil A/B olay çağrıları şimdi yapılmayacak; ayrı mağaza yayını yapılmayacak.
+- Koşullar: (1) web ilk A/B deneyi uçtan uca doğrulanmış olacak; (2) mobil çağrılar web ile aynı şemayı kullanacak (`ab_maruziyet_kaydet`, `ab_donusum_kaydet`); (3) bir sonraki planlı uygulama sürümüne eklenecek.
+- Sahip: proje sahibi. Yapılma zamanı: web deneyi doğrulandıktan sonra, ayrı bir karar olmadan başlatılmaz.
+- Not: Bu kayıt, D3 kararının "ne zaman yapılacağı" kısmını kalıcı hale getirir.
