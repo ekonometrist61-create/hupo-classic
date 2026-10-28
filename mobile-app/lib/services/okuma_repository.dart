@@ -55,6 +55,8 @@ OkumaException okumaHatasiCevir(String sunucuMesaji) {
   }
   if (icerir('HIKAYE_BULUNAMADI')) return _hata(OkumaHatasi.hikayeBulunamadi, _mesajHikayeBulunamadi);
   if (icerir('KOTA_DOLDU')) return _hata(OkumaHatasi.kotaDoldu, _mesajKotaDoldu);
+  // Deneme sırasında günlük hikâye sınırı (deneme_sinir_tetik, P0402) aynı kota mesajını kullanır.
+  if (icerir('P0402')) return _hata(OkumaHatasi.kotaDoldu, _mesajKotaDoldu);
   if (icerir('RATE_LIMIT')) return _hata(OkumaHatasi.hizSiniri, _mesajHizSiniri);
   if (icerir('IDEMPOTENCY_CONFLICT')) return _hata(OkumaHatasi.cakisma, _mesajCakisma);
   if (icerir('OTURUM_BULUNAMADI')) return _hata(OkumaHatasi.oturumYok, _mesajOturumYok);

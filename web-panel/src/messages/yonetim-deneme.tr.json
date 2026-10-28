@@ -1,0 +1,33 @@
+{
+  "yonetim": {
+    "denemeSinirlari": {
+      "title": "Deneme sınırları",
+      "desc": "Ücretsiz denemedeki çocuğun özellik başına hakkı. Sınıfa özel alan boş bırakılırsa varsayılan geçerlidir. Değişiklik yalnızca sonraki kullanımlarda uygulanır.",
+      "varsayilanBaslik": "Varsayılan sınırlar",
+      "sinifBaslik": "Sınıfa özel sınır",
+      "sinifDesc": "Yalnızca bu sınıf için farklı bir değer gerekiyorsa doldurun. Boş alan varsayılanı kullanır.",
+      "sinifSec": "Sınıf",
+      "sinifAd": "{n}. sınıf",
+      "ozellik": "Özellik",
+      "sinir": "Sınır",
+      "pencere": "Pencere",
+      "pencereGunluk": "Günlük",
+      "pencereDeneme": "Deneme süresi boyunca",
+      "bos": "varsayılan",
+      "kaydet": "Kaydet",
+      "kaydediliyor": "Kaydediliyor…",
+      "kaydedildi": "Deneme sınırları kaydedildi.",
+      "hataAralik": "Her sınır 0 ile 1000 arasında tam sayı olmalı.",
+      "hataKaydet": "Kaydedilemedi. Lütfen tekrar deneyin.",
+      "eksik": "Bu ayar henüz veritabanında etkin değil (migration uygulanmamış).",
+      "ozellikler": {
+        "soru": "Soru çözme",
+        "kelime_evreni": "Kelime Evreni",
+        "carpim_sifresi": "Çarpım şifreleri",
+        "okuma_hikayesi": "Okuma hikâyesi",
+        "meydan_okuma": "Meydan okuma",
+        "deneme_sinavi": "Deneme sınavı"
+      }
+    }
+  }
+}

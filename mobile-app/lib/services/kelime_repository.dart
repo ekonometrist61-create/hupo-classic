@@ -50,6 +50,12 @@ KelimeException kelimeHatasiCevir(String sunucuMesaji) {
   if (sunucuMesaji.contains('RATE_LIMIT')) {
     return const KelimeException(KelimeHatasi.hizSiniri, _mesajHizSiniri);
   }
+  if (sunucuMesaji.contains('P0402')) {
+    // Deneme günlük sınırı: sunucu metni ("Bugünlük Kelime Evreni hakkın doldu. ...") çocuğa gösterilir.
+    final sinir = RegExp(r'(Bugünlük|Bu denemedeki) [^.]*hakkın doldu\.( Yarın yeniden açılır\.)?')
+        .firstMatch(sunucuMesaji);
+    return KelimeException(KelimeHatasi.bilinmeyen, sinir?.group(0) ?? _mesajBilinmeyen);
+  }
   if (sunucuMesaji.contains('IDEMPOTENCY_CONFLICT')) {
     return const KelimeException(KelimeHatasi.cevapCakismasi, _mesajCevapCakismasi);
   }

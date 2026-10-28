@@ -1,0 +1,19 @@
+{
+  "veliPaneli": {
+    "membership": {
+      "trial": {
+        "title": "Ücretsiz deneme",
+        "cocuk": "Çocuk",
+        "yukleniyor": "Yükleniyor…",
+        "hata": "Deneme bilgisi şu an alınamadı.",
+        "premium": "Bu hesapta premium plan aktif.",
+        "aktif": "Ücretsiz deneme aktif. Bitiş: {bitis} (kalan {kalan} gün).",
+        "limitler": "Deneme süresince çocuğunuz günde en fazla {soru} soru, {okuma} okuma hikâyesi, {kelime} Kelime Evreni cevabı ve {carpim} çarpım adımı çözebilir. Deneme boyunca {sinav} deneme sınavına katılabilir.",
+        "otomatik": "Kart bilgisi istenmez. Otomatik ücret alınmaz.",
+        "t3": "Ücretsiz denemeniz {bitis} tarihinde sona erecek. Otomatik ücret alınmaz. Devam etmek isterseniz planı kendiniz seçersiniz; ödeme ekranında tutarı görüp onaylarsınız.",
+        "bitti": "Ücretsiz denemeniz {bitis} tarihinde sona erdi. Ücret alınmadı.",
+        "ilerleme": "Çocuğunuzun ilerleme verisi ve tekrar listesi açık kalır."
+      }
+    }
+  }
+}

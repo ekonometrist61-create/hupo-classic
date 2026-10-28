@@ -80,6 +80,7 @@ await db.exec(`
 `);
 await db.exec(fs.readFileSync(path.join(MIG, '20261018010000_deneme_suresi.sql'), 'utf8'));
 await db.exec(fs.readFileSync(path.join(MIG, '20261125000000_kartsiz_deneme_kayitta.sql'), 'utf8'));
+await db.exec(fs.readFileSync(path.join(MIG, '20261126000000_deneme_yonetim_ve_gorunurluk.sql'), 'utf8'));
 ok('migration zinciri yüklendi', true);
 
 await db.exec(`insert into auth.users (id, email) values
@@ -129,17 +130,17 @@ const kotaC5 = await tek(`select public.remaining_free_questions($1) as k`, [COC
 ok('sınıf 3 soru sınırı override ile 5', kotaC3.k === 5, JSON.stringify(kotaC3));
 ok('sınıf 5 soru sınırı varsayılan 20', kotaC5.k === 20, JSON.stringify(kotaC5));
 
-console.log('\n== Kelime Evreni: günlük 30 ==');
+console.log('\n== Kelime Evreni: günlük 20 (20261126 düzeltmesi) ==');
 await istemci(COCUK5);
-for (let i = 0; i < 30; i++) {
+for (let i = 0; i < 20; i++) {
   await db.query(`insert into public.kelime_denemeleri (ogrenci_id) values ($1)`, [COCUK5]);
 }
-const kelime31 = await hataBul(() => db.query(`insert into public.kelime_denemeleri (ogrenci_id) values ($1)`, [COCUK5]));
-ok('31. kelime denemesi P0402 ile reddedilir', kelime31 && kelime31.kod === 'P0402', JSON.stringify(kelime31));
-ok('mesaj özelliği ve pencereyi söyler', kelime31 && /Kelime Evreni .*bugünkü/.test(kelime31.mesaj), kelime31 && kelime31.mesaj);
-// Hata sonrası satır geri alınmış olmalı: sayım hâlâ 30, yeni gün değil ama sınır aynı kalır
+const kelime21 = await hataBul(() => db.query(`insert into public.kelime_denemeleri (ogrenci_id) values ($1)`, [COCUK5]));
+ok('21. kelime denemesi P0402 ile reddedilir', kelime21 && kelime21.kod === 'P0402', JSON.stringify(kelime21));
+ok('mesaj özelliği ve günlük pencereyi söyler', kelime21 && /Bugünlük Kelime Evreni hakkın doldu\. Yarın yeniden açılır\./.test(kelime21.mesaj), kelime21 && kelime21.mesaj);
+// Hata sonrası satır geri alınmış olmalı: sayım hâlâ 20
 const kelimeSayi = await tek(`select count(*)::int as n from public.kelime_denemeleri where ogrenci_id = $1`, [COCUK5]);
-ok('reddedilen satır kalıcı olmaz (sayı 30)', kelimeSayi.n === 30, JSON.stringify(kelimeSayi));
+ok('reddedilen satır kalıcı olmaz (sayı 20)', kelimeSayi.n === 20, JSON.stringify(kelimeSayi));
 
 console.log('\n== Çarpım şifreleri: sınıf 3 override (günlük 2), sınıf 5 varsayılan (30) ==');
 await db.exec(`update public.app_settings set value = jsonb_set(value, '{siniflar,3,carpim_sifresi}',
@@ -153,7 +154,7 @@ await istemci(COCUK5);
 for (let i = 0; i < 3; i++) {
   await db.query(`insert into public.carpim_deneme_log (user_id) values ($1)`, [COCUK5]);
 }
-ok('sınıf 5: 3 çağrı varsayılan 40 içinde kalır', true);
+ok('sınıf 5: 3 çağrı varsayılan 20 içinde kalır', true);
 
 console.log('\n== Deneme sınavı: deneme süresi boyunca 2 ==');
 await istemci(COCUK5);
@@ -162,7 +163,7 @@ await db.query(`insert into public.deneme_sinavi_katilimlari (student_id, veli_i
 const sinav3 = await hataBul(() => db.query(
   `insert into public.deneme_sinavi_katilimlari (student_id, veli_id) values ($1, $2)`, [COCUK5, VELI]));
 ok('3. deneme sınavı katılımı P0402 (deneme penceresi)', sinav3 && sinav3.kod === 'P0402', JSON.stringify(sinav3));
-ok('mesaj "deneme süresindeki" der', sinav3 && /deneme süresindeki/.test(sinav3.mesaj), sinav3 && sinav3.mesaj);
+ok('mesaj deneme penceresini söyler', sinav3 && /Bu denemedeki Deneme sınavı hakkın doldu\./.test(sinav3.mesaj), sinav3 && sinav3.mesaj);
 
 console.log('\n== Okuma hikâyesi: günlük 2 ==');
 await istemci(COCUK5);
@@ -193,6 +194,31 @@ ok('deneme bitmiş hanede kelime sınırı uygulanmaz', bitisHata === null, JSON
 const kotaBitti = await tek(`select public.remaining_free_questions($1) as k`, [COCUK_BIT]);
 ok('deneme bitince soru kotası gating değerine döner (3)', kotaBitti.k === 3, JSON.stringify(kotaBitti));
 await servis();
+
+console.log('\n== Görünürlük: deneme_hak_durumu ==');
+await istemci(COCUK5);
+const durumCocuk = await tek(`select public.deneme_hak_durumu() as d`);
+const satirKelime = durumCocuk.d.ozellikler.find((s) => s.ozellik === 'kelime_evreni');
+const satirSinav = durumCocuk.d.ozellikler.find((s) => s.ozellik === 'deneme_sinavi');
+ok('çocuk kendi durumunu görür: deneme aktif', durumCocuk.d.deneme === true, JSON.stringify(durumCocuk.d));
+ok('kelime evreni: kullanılan 20, kalan 0', satirKelime && satirKelime.kullanilan === 20 && satirKelime.kalan === 0, JSON.stringify(satirKelime));
+ok('deneme sınavı: deneme penceresi, kullanılan 2, kalan 0',
+  satirSinav && satirSinav.pencere === 'deneme' && satirSinav.kullanilan === 2 && satirSinav.kalan === 0, JSON.stringify(satirSinav));
+ok('soru satırı var ve kalan 20', durumCocuk.d.ozellikler.some((s) => s.ozellik === 'soru' && s.kalan === 20));
+ok('kalan gün 14’e yakın', durumCocuk.d.kalan_gun >= 13 && durumCocuk.d.kalan_gun <= 14, JSON.stringify(durumCocuk.d));
+await istemci(VELI);
+const durumVeli = await tek(`select public.deneme_hak_durumu($1) as d`, [COCUK5]);
+ok('veli kendi çocuğunun durumunu görür', durumVeli.d.deneme === true && durumVeli.d.ozellikler.length === 6);
+await istemci(VELI2);
+const yetkisiz = await hataBul(() => db.query(`select public.deneme_hak_durumu($1)`, [COCUK5]));
+ok('ilgisiz veli başka çocuğun durumunu göremez (42501)', yetkisiz && yetkisiz.kod === '42501', JSON.stringify(yetkisiz));
+await servis();
+const oturumsuz = await hataBul(() => db.query(`select public.deneme_hak_durumu()`));
+ok('oturumsuz çağrı reddedilir (42501)', oturumsuz && oturumsuz.kod === '42501', JSON.stringify(oturumsuz));
+const yonetimOku = await tek(`select public.admin_get_deneme_sinirlari() as v`);
+ok('yönetici okuması varsayılan kelime sınırını 20 döndürür',
+  yonetimOku.v.varsayilan.kelime_evreni.sinir === 20 && yonetimOku.v.varsayilan.carpim_sifresi.sinir === 20,
+  JSON.stringify(yonetimOku.v.varsayilan));
 
 console.log('\n== Yönetici ayarı: doğrulama ==');
 const yanlisSinir = await hataBul(() => db.query(

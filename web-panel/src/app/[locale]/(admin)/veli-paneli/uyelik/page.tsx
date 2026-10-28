@@ -31,7 +31,7 @@ export default async function UyelikPage({
   // Üyelik verisi veliye aittir; çocuk listesi gerekmez.
   let body: React.ReactNode;
   if (access.kind === "ok") {
-    body = <MembershipView />;
+    body = <MembershipView students={access.students} />;
   } else if (access.kind === "error") {
     body = <VeliMessage text={t("error")} />;
   } else {
