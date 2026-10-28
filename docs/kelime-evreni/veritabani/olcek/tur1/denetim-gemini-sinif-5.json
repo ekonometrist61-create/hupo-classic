@@ -1,0 +1,300 @@
+{
+ "model": "gemini-3.8-flash",
+ "aile": "gemini",
+ "sonuc": [
+  {
+   "no": 1,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 2,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 3,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 4,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 5,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 6,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 7,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 8,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 9,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 10,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 11,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 12,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 13,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 14,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 15,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 16,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 17,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 18,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 19,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 20,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 21,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 22,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 23,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 24,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 25,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 26,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 27,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 28,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 29,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 30,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 31,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Sözcük türleri (sıfat) 5. sınıf müfredatında yer almaz (6. sınıf konusudur)."
+  },
+  {
+   "no": 32,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Zarflar 5. sınıf müfredatında yer almaz (7. sınıf konusudur)."
+  },
+  {
+   "no": 33,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Sözcük türü olarak fiil 5. sınıf müfredatında yer almaz (7. sınıf konusudur)."
+  },
+  {
+   "no": 34,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Zamirler 5. sınıf müfredatında yer almaz (6. sınıf konusudur)."
+  },
+  {
+   "no": 35,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Bağlaçlar 5. sınıf müfredatında yer almaz (6. sınıf konusudur)."
+  },
+  {
+   "no": 36,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Edatlar 5. sınıf müfredatında yer almaz (6. sınıf konusudur)."
+  },
+  {
+   "no": 37,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 38,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 39,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 40,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 41,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 42,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  }
+ ]
+}

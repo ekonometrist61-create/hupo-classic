@@ -1,0 +1,22 @@
+[
+ {"t":"zit_anlamli","s":7,"z":2,
+  "h":{"kelime":"kabul etmek","anlam":"Bir teklifi ya da isteği uygun bulmak.","tur":"kelime","sozcuk_turu":"fiil"},
+  "q":"“Teklifi kabul etti.” cümlesindeki “kabul etti” sözünün zıt anlamlısı hangisidir?",
+  "o":["bildirdi","düşündü","duydu","reddetti"],"d":3,
+  "a":"Kabul etmenin zıddı reddetmektir; diğerleri bu anlamın karşıtı değildir.","ip":null},
+ {"t":"zit_anlamli","s":7,"z":2,
+  "h":{"kelime":"daralmak","anlam":"Genişliği azalmak, dar hâle gelmek.","tur":"kelime","sozcuk_turu":"fiil"},
+  "q":"“Nehir yatağı bu bölgede daraldı.” cümlesindeki “daraldı” sözünün zıt anlamlısı hangisidir?",
+  "o":["yükseldi","genişledi","kurudu","aktı"],"d":1,
+  "a":"Daralmanın zıddı genişlemektir; yükselmek, kurumak ve akmak genişlikle ilgili karşıt eylemler değildir.","ip":null},
+ {"t":"zit_anlamli","s":7,"z":2,
+  "h":{"kelime":"birleştirmek","anlam":"Ayrı parçaları bir araya getirmek.","tur":"kelime","sozcuk_turu":"fiil"},
+  "q":"“Usta, kırık iki parçayı özenle birleştirdi.” cümlesindeki “birleştirdi” sözünün zıt anlamlısı hangisidir?",
+  "o":["ayırdı","taşıdı","boyadı","ölçtü"],"d":0,
+  "a":"Birleştirmenin zıddı ayırmaktır; taşımak, boyamak ve ölçmek parçaları bir araya getirmenin karşıtı değildir.","ip":null},
+ {"t":"zit_anlamli","s":7,"z":3,
+  "h":{"kelime":"yüceltmek","anlam":"Bir kişiyi ya da şeyi çok değerli göstermek.","tur":"kelime","sozcuk_turu":"fiil"},
+  "q":"“Yazar, hikâyesinde kahramanı yüceltti.” cümlesindeki “yüceltti” sözünün zıt anlamlısı hangisidir?",
+  "o":["övdü","kıskandı","alçalttı","korudu"],"d":2,
+  "a":"Yüceltmenin zıddı alçaltmaktır; övmek yakın anlamlıdır, kıskanmak ve korumak ise karşıt değildir.","ip":null}
+]

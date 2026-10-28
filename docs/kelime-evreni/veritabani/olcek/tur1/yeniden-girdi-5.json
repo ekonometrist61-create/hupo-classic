@@ -1,0 +1,365 @@
+[
+ {
+  "orijinal": {
+   "t": "zit_anlamli",
+   "s": 5,
+   "z": 2,
+   "h": {
+    "kelime": "azalmak",
+    "anlam": "Miktarı küçülmek, eksilmek.",
+    "tur": "kelime",
+    "sozcuk_turu": "fiil"
+   },
+   "q": "“Kış geldikçe gündüzlerin uzunluğu azalmaya başladı.” cümlesindeki “azalmak” sözcüğünün zıt anlamlısı hangisidir?",
+   "o": [
+    "artmak",
+    "değişmek",
+    "durmak",
+    "bitmek"
+   ],
+   "d": 0,
+   "a": "Azalmanın zıddı artmaktır. Değişmek, durmak ve bitmek miktarın tersine dönmesi değildir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "Kök 'azalmak' sözcüğünü soruyor ama cümlede 'azalmaya' geçiyor; tırnak içindeki biçim cümlede yok (diğer sorularda çekimli biçim alıntılanıyor), tutarsızlık.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "es_sesli",
+   "s": 5,
+   "z": 1,
+   "h": {
+    "kelime": "yaz",
+    "anlam": "Yılın dört mevsiminden biri.",
+    "tur": "kelime",
+    "sozcuk_turu": "isim"
+   },
+   "q": "Aşağıdakilerden hangisinde “yaz” sözcüğü mevsim anlamında kullanılmıştır?",
+   "o": [
+    "Cümleyi deftere temiz bir el yazısıyla yaz.",
+    "Tahtaya bugünün tarihini büyükçe yaz.",
+    "Yaz tatilinde dedemlerin köyüne gideceğiz.",
+    "Soruların cevabını kâğıda kurşun kalemle yaz."
+   ],
+   "d": 2,
+   "a": "Yalnız ilk cümlede yaz, mevsim anlamındadır. Diğerleri yazmak fiilidir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "Şık dengesizliği: üç çeldirici aynı 'yazmak' emir kipi kalıbında ve sonda 'yaz' ile bitiyor; doğru şık tek bildirme cümlesi ve 'yaz' başta, biçimden tahmin edilebilir.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "es_sesli",
+   "s": 5,
+   "z": 1,
+   "h": {
+    "kelime": "at",
+    "anlam": "Binek ve yük hayvanı.",
+    "tur": "kelime",
+    "sozcuk_turu": "isim"
+   },
+   "q": "Aşağıdakilerden hangisinde “at” sözcüğü hayvan anlamında kullanılmıştır?",
+   "o": [
+    "Topu arkadaşına doğru yavaşça at.",
+    "Çöpleri akşam mutlaka kutuya at.",
+    "Taşı gölün ortasına doğru at.",
+    "Çiftlikte beyaz bir at sabah otluyordu."
+   ],
+   "d": 3,
+   "a": "Yalnız ilk cümlede at, hayvandır. Diğerleri atmak fiilidir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 3,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 3,
+   "sorun": "Şık dengesizliği: üç çeldirici aynı 'atmak' emir kalıbında ('... at.'), doğru şık tek bildirme cümlesi; biçimden tahmin edilebilir.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "sozcuk_turu",
+   "s": 5,
+   "z": 2,
+   "h": {
+    "kelime": "yorgun",
+    "anlam": "Gücü azalmış, dinlenmeye ihtiyacı olan.",
+    "tur": "kelime",
+    "sozcuk_turu": "sifat"
+   },
+   "q": "“Kapıdan yorgun bir yolcu girdi.” cümlesindeki “yorgun” sözcüğünün türü nedir?",
+   "o": [
+    "İsim",
+    "Fiil",
+    "Sıfat",
+    "Zarf"
+   ],
+   "d": 2,
+   "a": "“Yorgun”, “yolcu” adının niteliğini bildirir; sıfattır.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 2,
+   "sorun": "Sözcük türleri (sıfat) 5. sınıf müfredatında yer almaz (6. sınıf konusudur).",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "sozcuk_turu",
+   "s": 5,
+   "z": 2,
+   "h": {
+    "kelime": "yavaşça",
+    "anlam": "Yavaş bir biçimde.",
+    "tur": "kelime",
+    "sozcuk_turu": "zarf"
+   },
+   "q": "“Araba yokuşu yavaşça çıktı.” cümlesindeki “yavaşça” sözcüğünün türü nedir?",
+   "o": [
+    "İsim",
+    "Sıfat",
+    "Fiil",
+    "Zarf"
+   ],
+   "d": 3,
+   "a": "“Yavaşça”, “çıktı” eyleminin nasıl yapıldığını bildirir; zarftır.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 3,
+   "sorun": "Zarflar 5. sınıf müfredatında yer almaz (7. sınıf konusudur).",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 3,
+   "sorun": "",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "sozcuk_turu",
+   "s": 5,
+   "z": 1,
+   "h": {
+    "kelime": "kaydı",
+    "anlam": "Kayma eylemini yaptı.",
+    "tur": "kelime",
+    "sozcuk_turu": "fiil"
+   },
+   "q": "“Gökyüzünde parlak bir yıldız kaydı.” cümlesindeki “kaydı” sözcüğünün türü nedir?",
+   "o": [
+    "Fiil",
+    "İsim",
+    "Sıfat",
+    "Zarf"
+   ],
+   "d": 0,
+   "a": "“Kaydı”, iş ve oluş bildirir; fiildir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 0,
+   "sorun": "Sözcük türü olarak fiil 5. sınıf müfredatında yer almaz (7. sınıf konusudur).",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "sozcuk_turu",
+   "s": 5,
+   "z": 3,
+   "h": {
+    "kelime": "o",
+    "anlam": "Üçüncü kişiyi gösteren söz.",
+    "tur": "kelime",
+    "sozcuk_turu": "zamir"
+   },
+   "q": "“Kitabı masaya o bıraktı.” cümlesindeki “o” sözcüğünün türü nedir?",
+   "o": [
+    "Sıfat",
+    "Zamir",
+    "Zarf",
+    "Bağlaç"
+   ],
+   "d": 1,
+   "a": "“O”, isim yerine kullanılmıştır; zamirdir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 1,
+   "sorun": "Zamirler 5. sınıf müfredatında yer almaz (6. sınıf konusudur).",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 1,
+   "sorun": "",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "sozcuk_turu",
+   "s": 5,
+   "z": 2,
+   "h": {
+    "kelime": "ama",
+    "anlam": "Karşıtlık bildiren söz.",
+    "tur": "kelime",
+    "sozcuk_turu": "baglac"
+   },
+   "q": "“Yağmur yağıyordu ama dışarı çıkmak istedik.” cümlesindeki “ama” sözcüğünün türü nedir?",
+   "o": [
+    "Edat",
+    "Zarf",
+    "Bağlaç",
+    "Zamir"
+   ],
+   "d": 2,
+   "a": "“Ama”, iki cümleyi karşıtlık ilgisiyle bağlar; bağlaçtır.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 2,
+   "sorun": "Bağlaçlar 5. sınıf müfredatında yer almaz (6. sınıf konusudur).",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "sozcuk_turu",
+   "s": 5,
+   "z": 3,
+   "h": {
+    "kelime": "için",
+    "anlam": "Amaç ya da yarar bildiren söz.",
+    "tur": "kelime",
+    "sozcuk_turu": "edat"
+   },
+   "q": "“Bu hediyeyi senin için aldım.” cümlesindeki “için” sözcüğünün türü nedir?",
+   "o": [
+    "Bağlaç",
+    "Zarf",
+    "Fiil",
+    "Edat"
+   ],
+   "d": 3,
+   "a": "“İçin”, tek başına anlamı olmayan, kendinden önceki sözcüğe bağlanan edattır.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 3,
+   "sorun": "Edatlar 5. sınıf müfredatında yer almaz (6. sınıf konusudur).",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 3,
+   "sorun": "",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "baglamda_anlam",
+   "s": 5,
+   "z": 2,
+   "h": {
+    "kelime": "temkinli",
+    "anlam": "Dikkatli ve ölçülü davranan.",
+    "tur": "kelime",
+    "sozcuk_turu": "sifat"
+   },
+   "q": "“Buzlu yolda temkinli yürüdü; her adımını dikkatle atıp kaymamaya çalıştı.” cümlesinde “temkinli” sözcüğü ne anlama gelir?",
+   "o": [
+    "Dikkatli ve ölçülü",
+    "Hızlı ve telaşlı",
+    "Neşeli ve rahat",
+    "Öfkeli ve sert"
+   ],
+   "d": 0,
+   "a": "Cümledeki “dikkatle atıp kaymamaya çalıştı” ifadesi temkinli sözcüğünü açıklar.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "İpucu sızması: bağlamdaki 'dikkatle' sözcüğü doğru şıkta 'Dikkatli' olarak tekrar ediyor.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "baglamda_anlam",
+   "s": 5,
+   "z": 2,
+   "h": {
+    "kelime": "ıssız",
+    "anlam": "Kimsenin bulunmadığı.",
+    "tur": "kelime",
+    "sozcuk_turu": "sifat"
+   },
+   "q": "“Kasabanın ıssız sokaklarında tek bir ışık yanmıyor, ses duyulmuyordu.” cümlesinde “ıssız” sözcüğü ne anlama gelir?",
+   "o": [
+    "Gürültülü ve canlı",
+    "Dar ve dolambaçlı",
+    "Kimsenin bulunmadığı",
+    "Temiz ve düzenli"
+   ],
+   "d": 2,
+   "a": "Işık ve ses olmaması sokağın boş ve kimsesiz olduğunu gösterir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "Şık dengesizliği: çeldiriciler 'X ve Y' ikili kalıbında, doğru şık tek yapılı ('Kimsenin bulunmadığı'); biçimden ayırt ediliyor.",
+   "tek": true
+  }
+ }
+]

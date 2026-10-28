@@ -1,0 +1,337 @@
+{
+ "aciklama": "2. sınıf sene başı seviye tespit (TASLAK, yayın kapısı açık). Kapsam: 1. sınıf plan kazanımları (kapsam_kaynagi=onceki_sinif; kullanıcı kararı 2026-10-24). Soru kaynağı: 1. sınıf havuzu (46 soru). Dağılım: TYMM taslak yıllık plan saat payı (Türkçe 21, Matematik 11, Hayat Bilgisi 8). Veri tabanına yazılmadı.",
+ "sinif": 2,
+ "tur": "sene_basi",
+ "hedef": {
+  "tr1": 21,
+  "mat1": 11,
+  "hb1": 8
+ },
+ "dislananlar": [
+  "mat1-08",
+  "hb1-03"
+ ],
+ "sorular": [
+  {
+   "sira": 1,
+   "id": "tr1-01",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 1,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 2,
+   "id": "tr1-02",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 1,
+   "dogru_sik": "B"
+  },
+  {
+   "sira": 3,
+   "id": "tr1-03",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 1,
+   "dogru_sik": "C"
+  },
+  {
+   "sira": 4,
+   "id": "tr1-04",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 1,
+   "dogru_sik": "D"
+  },
+  {
+   "sira": 5,
+   "id": "tr1-05",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 1,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 6,
+   "id": "tr1-06",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 1,
+   "dogru_sik": "B"
+  },
+  {
+   "sira": 7,
+   "id": "tr1-07",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 1,
+   "dogru_sik": "C"
+  },
+  {
+   "sira": 8,
+   "id": "tr1-08",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 1,
+   "dogru_sik": "D"
+  },
+  {
+   "sira": 9,
+   "id": "tr1-09",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 1,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 10,
+   "id": "tr1-10",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 1,
+   "dogru_sik": "B"
+  },
+  {
+   "sira": 11,
+   "id": "tr1-11",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 2,
+   "dogru_sik": "C"
+  },
+  {
+   "sira": 12,
+   "id": "tr1-12",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.2",
+   "zorluk": 2,
+   "dogru_sik": "D"
+  },
+  {
+   "sira": 13,
+   "id": "tr1-13",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.3",
+   "zorluk": 2,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 14,
+   "id": "tr1-14",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.3",
+   "zorluk": 2,
+   "dogru_sik": "B"
+  },
+  {
+   "sira": 15,
+   "id": "tr1-15",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.3",
+   "zorluk": 2,
+   "dogru_sik": "C"
+  },
+  {
+   "sira": 16,
+   "id": "tr1-16",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.3",
+   "zorluk": 2,
+   "dogru_sik": "D"
+  },
+  {
+   "sira": 17,
+   "id": "tr1-17",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.3",
+   "zorluk": 2,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 18,
+   "id": "tr1-18",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.3",
+   "zorluk": 2,
+   "dogru_sik": "B"
+  },
+  {
+   "sira": 19,
+   "id": "tr1-19",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.3",
+   "zorluk": 3,
+   "dogru_sik": "C"
+  },
+  {
+   "sira": 20,
+   "id": "tr1-20",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.O.1.3",
+   "zorluk": 2,
+   "dogru_sik": "D"
+  },
+  {
+   "sira": 21,
+   "id": "tr1-21",
+   "ders": "Türkçe",
+   "kazanim_kodu": "T.Y.1.3",
+   "zorluk": 1,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 22,
+   "id": "mat1-01",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.1.1",
+   "zorluk": 1,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 23,
+   "id": "mat1-02",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.1.2",
+   "zorluk": 1,
+   "dogru_sik": "B"
+  },
+  {
+   "sira": 24,
+   "id": "mat1-03",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.1.3",
+   "zorluk": 1,
+   "dogru_sik": "C"
+  },
+  {
+   "sira": 25,
+   "id": "mat1-04",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.1.4",
+   "zorluk": 1,
+   "dogru_sik": "D"
+  },
+  {
+   "sira": 26,
+   "id": "mat1-05",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.1.5",
+   "zorluk": 1,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 27,
+   "id": "mat1-06",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.1.6",
+   "zorluk": 1,
+   "dogru_sik": "B"
+  },
+  {
+   "sira": 28,
+   "id": "mat1-07",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.1.7",
+   "zorluk": 2,
+   "dogru_sik": "C"
+  },
+  {
+   "sira": 29,
+   "id": "mat1-12",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.2.4",
+   "zorluk": 2,
+   "dogru_sik": "D"
+  },
+  {
+   "sira": 30,
+   "id": "mat1-09",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.2.1",
+   "zorluk": 2,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 31,
+   "id": "mat1-10",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.2.2",
+   "zorluk": 2,
+   "dogru_sik": "B"
+  },
+  {
+   "sira": 32,
+   "id": "mat1-11",
+   "ders": "Matematik",
+   "kazanim_kodu": "MAT.1.2.3",
+   "zorluk": 2,
+   "dogru_sik": "C"
+  },
+  {
+   "sira": 33,
+   "id": "hb1-01",
+   "ders": "Hayat Bilgisi",
+   "kazanim_kodu": "HB.1.1.1",
+   "zorluk": 1,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 34,
+   "id": "hb1-02",
+   "ders": "Hayat Bilgisi",
+   "kazanim_kodu": "HB.1.1.3",
+   "zorluk": 1,
+   "dogru_sik": "B"
+  },
+  {
+   "sira": 35,
+   "id": "hb1-04",
+   "ders": "Hayat Bilgisi",
+   "kazanim_kodu": "HB.1.2.3",
+   "zorluk": 1,
+   "dogru_sik": "D"
+  },
+  {
+   "sira": 36,
+   "id": "hb1-07",
+   "ders": "Hayat Bilgisi",
+   "kazanim_kodu": "HB.1.4.1",
+   "zorluk": 2,
+   "dogru_sik": "C"
+  },
+  {
+   "sira": 37,
+   "id": "hb1-05",
+   "ders": "Hayat Bilgisi",
+   "kazanim_kodu": "HB.1.3.1",
+   "zorluk": 2,
+   "dogru_sik": "A"
+  },
+  {
+   "sira": 38,
+   "id": "hb1-06",
+   "ders": "Hayat Bilgisi",
+   "kazanim_kodu": "HB.1.3.3",
+   "zorluk": 2,
+   "dogru_sik": "B"
+  },
+  {
+   "sira": 39,
+   "id": "hb1-08",
+   "ders": "Hayat Bilgisi",
+   "kazanim_kodu": "HB.1.5.2",
+   "zorluk": 2,
+   "dogru_sik": "D"
+  },
+  {
+   "sira": 40,
+   "id": "hb1-09",
+   "ders": "Hayat Bilgisi",
+   "kazanim_kodu": "HB.1.6.1",
+   "zorluk": 3,
+   "dogru_sik": "A"
+  }
+ ],
+ "durum": "taslak; kullanıcı onayı ve veri tabanı aktarımı bekliyor"
+}

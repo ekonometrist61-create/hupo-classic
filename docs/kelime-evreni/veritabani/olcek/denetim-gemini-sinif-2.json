@@ -1,0 +1,20 @@
+{
+ "model": "gemini-3.8-flash",
+ "aile": "gemini",
+ "sonuc": [
+  {
+   "no": 1,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 2,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  }
+ ]
+}

@@ -1,0 +1,266 @@
+[
+ {
+  "orijinal": {
+   "t": "es_anlamli",
+   "s": 6,
+   "z": 2,
+   "h": {
+    "kelime": "yardımsever",
+    "anlam": "Başkalarına yardım etmeyi seven.",
+    "tur": "kelime",
+    "sozcuk_turu": "sifat"
+   },
+   "q": "“Komşumuz çok yardımsever biri.” cümlesindeki “yardımsever” sözcüğüyle eş anlamlı olan hangisidir?",
+   "o": [
+    "iyiliksever",
+    "kıskanç",
+    "çekingen",
+    "inatçı"
+   ],
+   "d": 0,
+   "a": "Yardımsever ile iyiliksever başkasına iyilik etmeyi seven demektir. Diğerleri bu özelliği taşımaz.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "İpucu sızması: kökteki 'yardımsever' ile doğru şık 'iyiliksever' aynı '-sever' öğesini paylaşıyor; tek bu şıkta görülüyor.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "es_sesli",
+   "s": 6,
+   "z": 2,
+   "h": {
+    "kelime": "gül",
+    "anlam": "Güzel kokulu, dikenli bir çiçek.",
+    "tur": "kelime",
+    "sozcuk_turu": "isim"
+   },
+   "q": "Aşağıdakilerden hangisinde “gül” sözcüğü çiçek anlamında kullanılmıştır?",
+   "o": [
+    "Komik anıyı anlatırken sen de bizimle gül.",
+    "Hadi, söylenen şakaya sen de içten bir şekilde gül.",
+    "Vazodaki kırmızı gül bütün odaya güzel koku yaydı.",
+    "Gözlerini kapatma, hadi bu güzel haberle bir gül."
+   ],
+   "d": 2,
+   "a": "Üçüncü cümlede gül, çiçektir. Diğer cümlelerde gül, gülmek eyleminin emir biçimidir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "Şık dengesizliği: üç çeldirici '... gül.' emir kalıbında, doğru şık tek bildirme cümlesi. D şıkkı ('Gözlerini kapatma, hadi bu güzel haberle bir gül.') anlamca doğal değil.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "es_sesli",
+   "s": 6,
+   "z": 1,
+   "h": {
+    "kelime": "bin",
+    "anlam": "Yüzün on katı olan sayı.",
+    "tur": "kelime",
+    "sozcuk_turu": "isim"
+   },
+   "q": "Aşağıdakilerden hangisinde “bin” sözcüğü sayı anlamında kullanılmıştır?",
+   "o": [
+    "Kutunun içinde tam bin renkli boncuk vardı.",
+    "Yola çıkmak için hemen sıradaki vapura bin.",
+    "Zaman kaybetmeden kalkan ilk otobüse bin.",
+    "Gel, acele et ve bizimle bu trene bin."
+   ],
+   "d": 0,
+   "a": "İlk cümlede bin sayıdır. Diğerlerinde bin, binmek eyleminin emir biçimidir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "Şık dengesizliği: üç çeldirici '... bin.' emir kalıbında ve aynı anlamda, doğru şık tek bildirme cümlesi; biçimden tahmin edilebilir.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "es_sesli",
+   "s": 6,
+   "z": 1,
+   "h": {
+    "kelime": "yaz",
+    "anlam": "Yılın sıcak mevsimi.",
+    "tur": "kelime",
+    "sozcuk_turu": "isim"
+   },
+   "q": "Aşağıdakilerden hangisinde “yaz” sözcüğü mevsim anlamında kullanılmıştır?",
+   "o": [
+    "Bu cümleyi defterine temiz harflerle yaz.",
+    "Kalemle adını kâğıdın köşesine dikkatlice yaz.",
+    "Gördüklerini en baştan sona düzgünce deftere yaz.",
+    "Yaz tatilinde dedemin köyüne gitmeyi çok seviyorum."
+   ],
+   "d": 3,
+   "a": "Son cümlede yaz mevsimdir. Diğerlerinde yaz, yazmak eyleminin emir biçimidir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 3,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 3,
+   "sorun": "Şık dengesizliği: üç çeldirici '... yaz.' emir kalıbında, doğru şık tek bildirme cümlesi ve 'Yaz' başta. C şıkkı ('en baştan sona') anlatımca kusurlu.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "deyim",
+   "s": 6,
+   "z": 2,
+   "h": {
+    "kelime": "içi içine sığmamak",
+    "anlam": "Çok heyecanlanıp yerinde duramamak.",
+    "tur": "deyim",
+    "sozcuk_turu": null
+   },
+   "q": "“Sınav sonucunu beklerken içim içime sığmıyordu.” cümlesindeki “içi içine sığmamak” deyimi ne anlama gelir?",
+   "o": [
+    "yorgunluktan uyumak",
+    "huzursuzca heyecanlanmak",
+    "rahat ve sakin olmak",
+    "korkudan saklanmak"
+   ],
+   "d": 1,
+   "a": "İçi içine sığmamak, büyük heyecandan yerinde duramamaktır. Diğer şıklar bu anlamı taşımaz.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 1,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 1,
+   "sorun": "TDK anlamı 'sevinç, heyecan veya sabırsızlıktan rahat duramamak'; doğru şıktaki 'huzursuzca heyecanlanmak' olumsuz çağrışımlı ve tam karşılamıyor.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "baglamda_anlam",
+   "s": 6,
+   "z": 3,
+   "h": {
+    "kelime": "mahzun",
+    "anlam": "Üzüntülü, kederli.",
+    "tur": "kelime",
+    "sozcuk_turu": "sifat"
+   },
+   "q": "“Yağmur altında bekleyen köpeğin bakışı mahzundu; sanki bir şeye çok üzülmüştü.” cümlesindeki “mahzun” sözcüğü ne anlama gelir?",
+   "o": [
+    "üzgün",
+    "öfkeli",
+    "meraklı",
+    "uykulu"
+   ],
+   "d": 0,
+   "a": "Cümledeki “çok üzülmüştü” ifadesi mahzunun üzgün anlamında olduğunu gösterir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "İpucu sızması: bağlamdaki 'çok üzülmüştü' doğru şık 'üzgün' ile aynı kökü taşıyor; soru sözcük bilgisi ölçmüyor.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "baglamda_anlam",
+   "s": 6,
+   "z": 2,
+   "h": {
+    "kelime": "kırılgan",
+    "anlam": "Kolayca kırılabilen.",
+    "tur": "kelime",
+    "sozcuk_turu": "sifat"
+   },
+   "q": "“Müzede kırılgan bir cam vazo vardı; hafifçe dokunulsa bile çatlayabilirdi.” cümlesindeki “kırılgan” sözcüğü ne anlama gelir?",
+   "o": [
+    "çok ağır",
+    "parlak",
+    "kolay kırılan",
+    "değerli"
+   ],
+   "d": 2,
+   "a": "Hafif dokunuşla çatlama, kolay kırılmayı gösterir. Kırılgan, kolay kırılan demektir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "İpucu sızması: kökteki 'kırılgan' sözcüğünün kökü doğru şıkta ('kolay kırılan') tekrar ediyor; bağlamda da 'çatlayabilirdi' var.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "baglamda_anlam",
+   "s": 6,
+   "z": 3,
+   "h": {
+    "kelime": "mütevazı",
+    "anlam": "Gösterişten uzak, sade.",
+    "tur": "kelime",
+    "sozcuk_turu": "sifat"
+   },
+   "q": "“Kasabanın mütevazı evleri süssüz ve sadeydi; hiçbiri gösterişli değildi.” cümlesindeki “mütevazı” sözcüğü ne anlama gelir?",
+   "o": [
+    "gösterişsiz",
+    "geniş",
+    "eski",
+    "renkli"
+   ],
+   "d": 0,
+   "a": "Evlerin süssüz, sade ve gösterişsiz olması mütevazı sözcüğünü açıklar.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "İpucu sızması: bağlamdaki 'hiçbiri gösterişli değildi' doğru şık 'gösterişsiz' ile neredeyse aynı.",
+   "tek": true
+  }
+ }
+]

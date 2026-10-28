@@ -1,0 +1,674 @@
+[
+ {
+  "t": "zit_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "uzun",
+   "anlam": "Boyu ya da süresi çok olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“uzun” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "kısa",
+   "dar",
+   "ince",
+   "alçak"
+  ],
+  "d": 0,
+  "a": "Doğru yanıt “kısa” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "sıcak",
+   "anlam": "Isısı yüksek olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“sıcak” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "ıslak",
+   "soğuk",
+   "tatlı",
+   "hafif"
+  ],
+  "d": 1,
+  "a": "Doğru yanıt “soğuk” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "doğru",
+   "anlam": "Gerçeğe uygun olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“doğru” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "gerçek",
+   "düzgün",
+   "yanlış",
+   "kesin"
+  ],
+  "d": 2,
+  "a": "Doğru yanıt “yanlış” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "temiz",
+   "anlam": "Kiri olmayan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“temiz” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "düzgün",
+   "parlak",
+   "boş",
+   "kirli"
+  ],
+  "d": 3,
+  "a": "Doğru yanıt “kirli” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "gece",
+   "anlam": "Güneşin battığı, karanlık zaman.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“gece” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "gündüz",
+   "akşam",
+   "sabah",
+   "yarın"
+  ],
+  "d": 0,
+  "a": "Doğru yanıt “gündüz” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "ileri",
+   "anlam": "Önde olan yön.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“ileri” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "yan",
+   "geri",
+   "üst",
+   "yakın"
+  ],
+  "d": 1,
+  "a": "Doğru yanıt “geri” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "erken",
+   "anlam": "Beklenen zamandan önce olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“erken” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "yavaş",
+   "uzak",
+   "geç",
+   "sonra"
+  ],
+  "d": 2,
+  "a": "Doğru yanıt “geç” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "tok",
+   "anlam": "Karnı doymuş olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“tok” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "susuz",
+   "yorgun",
+   "hasta",
+   "aç"
+  ],
+  "d": 3,
+  "a": "Doğru yanıt “aç” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "dolu",
+   "anlam": "İçinde boşluk kalmayan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“dolu” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "boş",
+   "kırık",
+   "yeni",
+   "sıcak"
+  ],
+  "d": 0,
+  "a": "Doğru yanıt “boş” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "kolay",
+   "anlam": "Az çabayla yapılan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“kolay” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "sakin",
+   "zor",
+   "eski",
+   "acı"
+  ],
+  "d": 1,
+  "a": "Doğru yanıt “zor” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "güzel",
+   "anlam": "Görünüşü ya da havası hoşa giden.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“güzel” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "büyük",
+   "temiz",
+   "hoş",
+   "sessiz"
+  ],
+  "d": 2,
+  "a": "Doğru yanıt “hoş” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "hediye",
+   "anlam": "Sevdiğimiz kişiye verilen şey.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“hediye” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "mektup",
+   "oyuncak",
+   "davet",
+   "armağan"
+  ],
+  "d": 3,
+  "a": "Doğru yanıt “armağan” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "yardım",
+   "anlam": "Güç durumdaki birine el uzatma.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“yardım” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "destek",
+   "ödev",
+   "hareket",
+   "karşılık"
+  ],
+  "d": 0,
+  "a": "Doğru yanıt “destek” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "anne",
+   "anlam": "Çocuğunu doğuran ya da büyüten kadın.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“anne” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "hala",
+   "ana",
+   "teyze",
+   "nine"
+  ],
+  "d": 1,
+  "a": "Doğru yanıt “ana” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "yiyecek",
+   "anlam": "Yenilen şeylerin genel adı.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“yiyecek” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "içecek",
+   "sofra",
+   "gıda",
+   "tabak"
+  ],
+  "d": 2,
+  "a": "Doğru yanıt “gıda” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "bol",
+   "anlam": "Gereğinden fazla olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“bol” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "az",
+   "geniş",
+   "hafif",
+   "çok"
+  ],
+  "d": 3,
+  "a": "Doğru yanıt “çok” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "yaramaz",
+   "anlam": "Söz dinlemeyen, haylazlık eden.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“yaramaz” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "haylaz",
+   "uslu",
+   "korkak",
+   "tembel"
+  ],
+  "d": 0,
+  "a": "Doğru yanıt “haylaz” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "doktor",
+   "anlam": "Hastaları tedavi eden kişi.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“doktor” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "hemşire",
+   "hekim",
+   "eczacı",
+   "ebe"
+  ],
+  "d": 1,
+  "a": "Doğru yanıt “hekim” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "bitirmek",
+   "anlam": "Bir işi sonuna getirmek.",
+   "tur": "kelime",
+   "sozcuk_turu": "fiil"
+  },
+  "q": "“bitirmek” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "bozmak",
+   "sürdürmek",
+   "tamamlamak",
+   "bırakmak"
+  ],
+  "d": 2,
+  "a": "Doğru yanıt “tamamlamak” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "yaşlı",
+   "anlam": "Yaşı ilerlemiş olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“yaşlı” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "hasta",
+   "güçsüz",
+   "yorgun",
+   "ihtiyar"
+  ],
+  "d": 3,
+  "a": "Doğru yanıt “ihtiyar” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "göz kulak olmak",
+   "anlam": "Korumak ve gözetmek.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Abla, tatildeyken küçük kardeşine göz kulak oldu.” cümlesindeki “göz kulak olmak” deyimi ne anlama gelir?",
+  "o": [
+   "korumak ve gözetmek",
+   "azarlayıp uyarmak",
+   "yalnız bırakmak",
+   "oyalayıp eğlendirmek"
+  ],
+  "d": 0,
+  "a": "Doğru yanıt “korumak ve gözetmek” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "kulak kesilmek",
+   "anlam": "Dikkatle dinlemek.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Öğretmen masalı anlatırken herkes kulak kesildi.” cümlesindeki “kulak kesilmek” deyimi ne anlama gelir?",
+  "o": [
+   "yüksek sesle konuşmak",
+   "dikkatle dinlemek",
+   "hemen uyuyakalmak",
+   "sessizce dışarı çıkmak"
+  ],
+  "d": 1,
+  "a": "Doğru yanıt “dikkatle dinlemek” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "ağzı kulaklarına varmak",
+   "anlam": "Çok sevinmek.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Piknik haberini duyunca ağzı kulaklarına vardı.” cümlesindeki “ağzı kulaklarına varmak” deyimi ne anlama gelir?",
+  "o": [
+   "çok üzülmek",
+   "çok korkmak",
+   "çok sevinmek",
+   "çok yorulmak"
+  ],
+  "d": 2,
+  "a": "Doğru yanıt “çok sevinmek” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "yüreği ağzına gelmek",
+   "anlam": "Çok korkmak.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Karanlık odada bir ses duyunca yüreği ağzına geldi.” cümlesindeki “yüreği ağzına gelmek” deyimi ne anlama gelir?",
+  "o": [
+   "çok acıkmak",
+   "çok susamak",
+   "çok gülmek",
+   "çok korkmak"
+  ],
+  "d": 3,
+  "a": "Doğru yanıt “çok korkmak” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "burnu havada olmak",
+   "anlam": "Kendini beğenmek.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Yarışmayı kazanınca burnu havada dolaşmaya başladı.” cümlesindeki “burnu havada olmak” deyimi ne anlama gelir?",
+  "o": [
+   "kendini beğenmek",
+   "utanıp saklanmak",
+   "havayı koklamak",
+   "yavaş yürümek"
+  ],
+  "d": 0,
+  "a": "Doğru yanıt “kendini beğenmek” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "el ele vermek",
+   "anlam": "Birlikte çalışmak.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Mahalledeki herkes parkı temizlemek için el ele verdi.” cümlesindeki “el ele vermek” deyimi ne anlama gelir?",
+  "o": [
+   "yalnız çalışmak",
+   "birlikte çalışmak",
+   "gösteri yapmak",
+   "elini yıkamak"
+  ],
+  "d": 1,
+  "a": "Doğru yanıt “birlikte çalışmak” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "Damlaya damlaya göl olur.",
+   "anlam": "Azar azar biriken şey zamanla büyür.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Damlaya damlaya göl olur.” atasözü ne anlatır?",
+  "o": [
+   "Su kenarında oturmak güvenlidir",
+   "Yağmurlu havada dışarı çıkılmaz",
+   "Azar azar biriken şey zamanla büyür",
+   "Büyük göller hep temiz kalır"
+  ],
+  "d": 2,
+  "a": "Doğru yanıt “Azar azar biriken şey zamanla büyür” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "Bir elin nesi var, iki elin sesi var.",
+   "anlam": "İşler birlikte yapılınca daha iyi olur.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Bir elin nesi var, iki elin sesi var.” atasözü ne anlatır?",
+  "o": [
+   "Her iş tek başına yapılmalıdır",
+   "Eller her zaman temiz tutulmalı",
+   "Alkış tutmak çok kolay bir iştir",
+   "İşler birlikte yapılınca daha iyi olur"
+  ],
+  "d": 3,
+  "a": "Doğru yanıt “İşler birlikte yapılınca daha iyi olur” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "Sabreden derviş muradına ermiş.",
+   "anlam": "Sabırla bekleyen isteğine kavuşur.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Sabreden derviş muradına ermiş.” atasözü ne anlatır?",
+  "o": [
+   "Sabırla bekleyen isteğine kavuşur",
+   "Aceleyle yapılan iş hep kazanır",
+   "Beklemek insanı çok yorar",
+   "İstenen şey her zaman kolay gelir"
+  ],
+  "d": 0,
+  "a": "Doğru yanıt “Sabırla bekleyen isteğine kavuşur” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "Ayağını yorganına göre uzat.",
+   "anlam": "Harcamayı sahip olduğun paraya göre yap.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Ayağını yorganına göre uzat.” atasözü ne anlatır?",
+  "o": [
+   "Soğuk günlerde kalın örtün",
+   "Harcamayı sahip olduğun paraya göre yap",
+   "Her zaman rahat bir yatakta uyu",
+   "Yatmadan önce ayaklarını yıka"
+  ],
+  "d": 1,
+  "a": "Doğru yanıt “Harcamayı sahip olduğun paraya göre yap” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "Ağaç yaşken eğilir.",
+   "anlam": "Eğitim küçük yaşta daha kolay verilir.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Ağaç yaşken eğilir.” atasözü ne anlatır?",
+  "o": [
+   "Ağaçlar her mevsim yeşil kalır",
+   "Yaşlı kişiler çok iyi dinlenir",
+   "Eğitim küçük yaşta daha kolay verilir",
+   "Eğilmeden büyüyen ağaç güçlenir"
+  ],
+  "d": 2,
+  "a": "Doğru yanıt “Eğitim küçük yaşta daha kolay verilir” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 3,
+  "z": 2,
+  "h": {
+   "kelime": "Üzüm üzüme baka baka kararır.",
+   "anlam": "İnsan çevresindekilerden etkilenir.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Üzüm üzüme baka baka kararır.” atasözü ne anlatır?",
+  "o": [
+   "Üzüm yemek sağlık için yararlıdır",
+   "Bağdaki üzümler geç olgunlaşır",
+   "Her meyve kendi mevsiminde yenir",
+   "İnsan çevresindekilerden etkilenir"
+  ],
+  "d": 3,
+  "a": "Doğru yanıt “İnsan çevresindekilerden etkilenir” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ }
+]

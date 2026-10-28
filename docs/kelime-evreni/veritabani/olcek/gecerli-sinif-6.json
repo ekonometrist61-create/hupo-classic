@@ -1,0 +1,170 @@
+[
+ {
+  "t": "es_anlamli",
+  "s": 6,
+  "z": 2,
+  "h": {
+   "kelime": "kaygı",
+   "anlam": "Kötü bir şey olacak diye içte duyulan tedirginlik.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“Sınav öncesi içimi büyük bir kaygı kapladı.” cümlesindeki “kaygı” sözcüğüyle eş anlamlı olan hangisidir?",
+  "o": [
+   "endişe",
+   "sevinç",
+   "öfke",
+   "merak"
+  ],
+  "d": 0,
+  "a": "Kaygı ile endişe, kötü bir şey olacak diye duyulan tedirginliği anlatır. Sevinç, öfke ve merak bu duyguyla eş anlamlı değildir.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 6,
+  "z": 2,
+  "h": {
+   "kelime": "dal",
+   "anlam": "Ağacın gövdesinden çıkan ince kol.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “dal” sözcüğü ağaç kolu anlamında kullanılmıştır?",
+  "o": [
+   "Derin havuza korkmadan atla ve suya dal.",
+   "Rüzgârda sallanan ince dal yere düştü.",
+   "Mercanları görmek için maskeni takıp denize dal.",
+   "Gözlüğünü tak, hadi şimdi sen de havuza dal."
+  ],
+  "d": 1,
+  "a": "İkinci cümlede dal, ağacın koludur. Diğer cümlelerde dal, suya dalmak eyleminin emir biçimidir.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 6,
+  "z": 1,
+  "h": {
+   "kelime": "yat",
+   "anlam": "Gezinti ve yarış için kullanılan şık tekne.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “yat” sözcüğü tekne anlamında kullanılmıştır?",
+  "o": [
+   "Sabah erken kalkmak için akşam erken yat.",
+   "Çok yorulduysan hemen odana gidip rahatça yat.",
+   "Limanda beyaz bir yat sabaha kadar bekledi.",
+   "Hastaysan evde kal ve doktorun söylediği gibi yat."
+  ],
+  "d": 2,
+  "a": "Üçüncü cümlede yat, bir tekne türüdür. Diğer cümlelerde yat, yatmak eyleminin emir biçimidir.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 6,
+  "z": 1,
+  "h": {
+   "kelime": "kaz",
+   "anlam": "Su kenarında yaşayan, iri bir evcil kuş.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “kaz” sözcüğü kuş anlamında kullanılmıştır?",
+  "o": [
+   "Bahçede fidan dikmek için önce toprağı kaz.",
+   "Hazinenin yerini bulmak istiyorsan şuraya derin bir çukur kaz.",
+   "Kum havuzunda küçük bir hendek kaz, suyu akıtalım.",
+   "Çiftlikteki beyaz kaz yavrularını gözetiyordu."
+  ],
+  "d": 3,
+  "a": "Dördüncü cümlede kaz, bir kuştur. Diğer cümlelerde kaz, kazmak eyleminin emir biçimidir.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 6,
+  "z": 2,
+  "h": {
+   "kelime": "içi içine sığmamak",
+   "anlam": "Heyecan ya da sabırsızlıktan yerinde duramamak.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Sınav sonucunu beklerken içim içime sığmıyordu.” cümlesindeki “içi içine sığmamak” deyimi ne anlama gelir?",
+  "o": [
+   "yorgunluktan uyumak",
+   "heyecandan yerinde duramamak",
+   "rahat ve sakin olmak",
+   "korkudan saklanmak"
+  ],
+  "d": 1,
+  "a": "İçi içine sığmamak, heyecan ve sabırsızlıktan rahat duramamaktır. Diğer şıklar bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 6,
+  "z": 3,
+  "h": {
+   "kelime": "mahzun",
+   "anlam": "Üzüntülü, kederli.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Sahibini kaybeden köpeğin bakışı mahzundu; başı öne eğikti, gözleri dolu doluydu.” cümlesindeki “mahzun” sözcüğü ne anlama gelir?",
+  "o": [
+   "öfkeli",
+   "meraklı",
+   "uykulu",
+   "üzgün"
+  ],
+  "d": 3,
+  "a": "Başın öne eğik, gözlerin dolu olması mahzunun üzgün anlamında olduğunu gösterir.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 6,
+  "z": 2,
+  "h": {
+   "kelime": "kırılgan",
+   "anlam": "Çabuk zarar görebilen, dayanıksız.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Müzedeki ince cam vazo çok kırılgandı; hafifçe dokunulsa bile çatlayabilirdi.” cümlesindeki “kırılgan” sözcüğü ne anlama gelir?",
+  "o": [
+   "çabuk zarar gören",
+   "çok ağırlıklı",
+   "göz alıcı",
+   "pahalı ve nadir"
+  ],
+  "d": 0,
+  "a": "Hafif dokunuşla çatlama, vazonun çabuk zarar gördüğünü gösterir. Diğer şıklar cümleden çıkarılamaz.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 6,
+  "z": 3,
+  "h": {
+   "kelime": "mütevazı",
+   "anlam": "Gösterişten uzak, sade.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Kasabanın mütevazı evlerinde süslü eşya yoktu; duvarlar çıplak, mobilyalar azdı.” cümlesindeki “mütevazı” sözcüğü ne anlama gelir?",
+  "o": [
+   "geniş ve ferah",
+   "eski ve yıkık",
+   "sade ve gösterişsiz",
+   "renkli ve neşeli"
+  ],
+  "d": 2,
+  "a": "Süslü eşyanın olmaması, duvarların çıplak ve mobilyanın az olması evlerin sade olduğunu gösterir.",
+  "ip": null
+ }
+]

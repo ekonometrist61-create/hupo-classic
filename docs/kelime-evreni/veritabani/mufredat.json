@@ -1,0 +1,25 @@
+{
+  "_aciklama": "MEB Türkçe öğretim programlarından birebir alınmış kazanım alt maddeleri. Metinler kaynak PDF'ten kopyalanmıştır; kod ve metin uydurulmamıştır.",
+  "_kaynaklar": {
+    "ilkokul_1_4_2026": "Türkçe Dersi (1, 2, 3 ve 4. Sınıflar) Öğretim Programı, mufredat.meb.gov.tr (Dosyalar/202681493354625-Türkçe (1-4) DÖP TTKB.pdf)",
+    "ortaokul_5_8_2025": "Ortaokul Türkçe Dersi Öğretim Programı, mufredat.meb.gov.tr (Dosyalar/202582516532361-ortaokul türkçe.pdf)"
+  },
+  "T.K.2.2.d": { "sinif": 2, "alan": "Konuşma", "kazanim": "T.K.2.2", "alt_madde": "d", "metin": "Konuşmalarında zıt anlamlı sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.O.2.2.f": { "sinif": 2, "alan": "Okuma", "kazanim": "T.O.2.2", "alt_madde": "f", "metin": "Okuduğu metindeki zıt anlamlı sözcükleri bulur.", "kaynak": "ilkokul_1_4_2026" },
+  "T.O.3.2.h": { "sinif": 3, "alan": "Okuma", "kazanim": "T.O.3.2", "alt_madde": "h", "metin": "Okuduğu metindeki zıt anlamlı ve eş anlamlı sözcükleri bulur.", "kaynak": "ilkokul_1_4_2026" },
+  "T.K.3.2.e": { "sinif": 3, "alan": "Konuşma", "kazanim": "T.K.3.2", "alt_madde": "e", "metin": "Konuşmalarında zıt anlamlı sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.K.3.2.f": { "sinif": 3, "alan": "Konuşma", "kazanim": "T.K.3.2", "alt_madde": "f", "metin": "Konuşmalarında eş anlamlı sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.Y.3.2.e": { "sinif": 3, "alan": "Yazma", "kazanim": "T.Y.3.2", "alt_madde": "e", "metin": "Yazılarında zıt anlamlı sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.Y.3.2.f": { "sinif": 3, "alan": "Yazma", "kazanim": "T.Y.3.2", "alt_madde": "f", "metin": "Yazılarında eş anlamlı sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.O.4.2.h": { "sinif": 4, "alan": "Okuma", "kazanim": "T.O.4.2", "alt_madde": "h", "metin": "Okuduğu metindeki eş anlamlı, zıt anlamlı veya eş sesli sözcükleri sınıflandırır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.K.4.2.g": { "sinif": 4, "alan": "Konuşma", "kazanim": "T.K.4.2", "alt_madde": "g", "metin": "Konuşmalarında zıt anlamlı sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.K.4.2.ğ": { "sinif": 4, "alan": "Konuşma", "kazanim": "T.K.4.2", "alt_madde": "ğ", "metin": "Konuşmalarında eş anlamlı sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.K.4.2.h": { "sinif": 4, "alan": "Konuşma", "kazanim": "T.K.4.2", "alt_madde": "h", "metin": "Konuşmalarında eş sesli sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.Y.4.2.h": { "sinif": 4, "alan": "Yazma", "kazanim": "T.Y.4.2", "alt_madde": "h", "metin": "Yazılarında zıt anlamlı sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.Y.4.2.ı": { "sinif": 4, "alan": "Yazma", "kazanim": "T.Y.4.2", "alt_madde": "ı", "metin": "Yazılarında eş anlamlı sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.Y.4.2.i": { "sinif": 4, "alan": "Yazma", "kazanim": "T.Y.4.2", "alt_madde": "i", "metin": "Yazılarında eş sesli sözcükleri kullanır.", "kaynak": "ilkokul_1_4_2026" },
+  "T.K.5.22.b": { "sinif": 5, "alan": "Konuşma", "kazanim": "T.K.5.22", "alt_madde": "b", "ortak_kazanim": "T.K.5.22 / T.K.6.22 / T.K.7.22 / T.K.8.22", "metin": "Aynı anlamı farklı söz varlığı unsurlarıyla (eş ve yakın anlamlı kelime, zıt anlamlı ve eş sesli kelime, çağrıştırdığı kelime; atasözü, deyim, kalıp söz, terim, ikileme, pekiştirme) ifade eder.", "kaynak": "ortaokul_5_8_2025" },
+  "T.K.6.22.b": { "sinif": 6, "alan": "Konuşma", "kazanim": "T.K.6.22", "alt_madde": "b", "ortak_kazanim": "T.K.5.22 / T.K.6.22 / T.K.7.22 / T.K.8.22", "metin": "Aynı anlamı farklı söz varlığı unsurlarıyla (eş ve yakın anlamlı kelime, zıt anlamlı ve eş sesli kelime, çağrıştırdığı kelime; atasözü, deyim, kalıp söz, terim, ikileme, pekiştirme) ifade eder.", "kaynak": "ortaokul_5_8_2025" },
+  "T.K.7.22.b": { "sinif": 7, "alan": "Konuşma", "kazanim": "T.K.7.22", "alt_madde": "b", "ortak_kazanim": "T.K.5.22 / T.K.6.22 / T.K.7.22 / T.K.8.22", "metin": "Aynı anlamı farklı söz varlığı unsurlarıyla (eş ve yakın anlamlı kelime, zıt anlamlı ve eş sesli kelime, çağrıştırdığı kelime; atasözü, deyim, kalıp söz, terim, ikileme, pekiştirme) ifade eder.", "kaynak": "ortaokul_5_8_2025" },
+  "T.K.8.22.b": { "sinif": 8, "alan": "Konuşma", "kazanim": "T.K.8.22", "alt_madde": "b", "ortak_kazanim": "T.K.5.22 / T.K.6.22 / T.K.7.22 / T.K.8.22", "metin": "Aynı anlamı farklı söz varlığı unsurlarıyla (eş ve yakın anlamlı kelime, zıt anlamlı ve eş sesli kelime, çağrıştırdığı kelime; atasözü, deyim, kalıp söz, terim, ikileme, pekiştirme) ifade eder.", "kaynak": "ortaokul_5_8_2025" }
+}

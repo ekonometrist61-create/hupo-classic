@@ -1,0 +1,68 @@
+[
+ {
+  "orijinal": {
+   "t": "es_anlamli",
+   "s": 3,
+   "z": 1,
+   "h": {
+    "kelime": "güzel",
+    "anlam": "Görünüşü ya da havası hoşa giden.",
+    "tur": "kelime",
+    "sozcuk_turu": "sifat"
+   },
+   "q": "“güzel” sözcüğünün eş anlamlısı hangisidir?",
+   "o": [
+    "büyük",
+    "temiz",
+    "hoş",
+    "sessiz"
+   ],
+   "d": 2,
+   "a": "Doğru yanıt “hoş” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 2,
+   "sorun": "“Güzel” ile “hoş” sözcükleri tam eş anlamlı değil, yakın anlamlıdır.",
+   "tek": false
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "es_anlamli",
+   "s": 3,
+   "z": 1,
+   "h": {
+    "kelime": "bol",
+    "anlam": "Gereğinden fazla olan.",
+    "tur": "kelime",
+    "sozcuk_turu": "sifat"
+   },
+   "q": "“bol” sözcüğünün eş anlamlısı hangisidir?",
+   "o": [
+    "az",
+    "geniş",
+    "hafif",
+    "çok"
+   ],
+   "d": 3,
+   "a": "Doğru yanıt “çok” şıkkıdır; diğer şıklar bu anlamı taşımaz.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 3,
+   "sorun": "“Bol” sözcüğünün anlamına göre hem “çok” hem “geniş” (dar olmayan) eş/yakın anlam oluşturabilir, iki şık da çeldiriciliği aşarak kafa karıştırmaktadır.",
+   "tek": false
+  },
+  "claude": {
+   "cevap": 3,
+   "sorun": "TDK'de 'bol' ilk anlamıyla 'gereğinden geniş' (bol pantolon); 'geniş' çeldiricisi de eş anlamlı kabul edilebilir. Bağlam cümlesi yok; 'geniş' değiştirilmeli.",
+   "tek": false
+  }
+ }
+]
