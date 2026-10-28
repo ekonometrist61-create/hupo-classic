@@ -232,6 +232,8 @@ Kullanıcı kararları ajana devretti ("sen karar ver, kaliteli olsun"). Alınan
 
 Doğrulama (görsel ve sayısal, uygulamada denenmedi): üç katman açık gözle birleşince master'dan ortalama fark 0,71/255; kapalı gözle `hupo_uyuyan` ile 1,10/255 (`katmanlar-dogrulama-master-acik-kapali.png`). Kanat 0° konumunda master ile birebir; döndürülmüş karelerde hayalet kanat yok (`kanat-aci-testi-*.png`). **Bilinen sınır:** −6° ve +8° gibi uç açılarda kök hattında silik bir çizgi görünüyor; bu yüzden aralık −4°…+6° ile sınırlı. Sıçrama için ek kare gerekmiyor (bütün katmanların ölçek/öteleme dönüşümü yeter). `hupo_uyuyan.webp` artık bu katmanlardan türetilebilir ve yedek olarak kalır.
 
+**Hareket önizlemesi (Remotion) üretildi:** `uretim-2026-10-28/hupo-uyanir-onizleme.mp4` (1080×1920, 30 fps, 3,2 sn; kaynak `docs/splash/remotion/`). Katmanlı Hupo ile §3.1 zaman çizelgesini oynatır: uyuyan Hupo (native boyutta) → gözler açılır, kırpma, sıçrama → kanat selamı → altın yay yazının altına oturur → "Hupolingo" harf harf → konuşma balonu. Oracle sunucusunda, mevcut `video-studio-render` imajından tek seferlik, kaynak sınırlı kapsayıcıyla render edildi (96 kare ≈ 1 dk altında). **Doğrulama:** kareler ve son kare gözle incelendi; videoyu baştan sona kullanıcı izlemedi, hareketin akıcılığı (kare kare ivme) değerlendirilmedi. Bu bir **referanstır, uygulama değil**: Flutter'daki gerçek sahne Faz 4'te kurulur ve cihazda ayrıca doğrulanır.
+
 Sıradaki: **Faz 4** (katmanlarla "Hupo Uyanır" sahnesi, native splash'in uyuyan Hupo'ya geçmesi, pubspec kaydı) ve logo C'nin vektörleştirilmesi (tasarımcı).
 
 ## 7. Karar gereken noktalar
