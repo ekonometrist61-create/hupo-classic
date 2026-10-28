@@ -304,3 +304,8 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - Test 16/16. Sahte veri (spec §9): sıfır etkide yanlış pozitif ~%5 (1500 sim.), SRM yanlış alarmı <%1, gerçek etkide (0.20→0.25, n=1100) güç ~%80.
 - Veritabanı değişikliği yok; A1 deploy'undan bağımsız.
 - Düzeltme: z-testi beklentisi testte yanlıştı (385 örneklem %80 güç için z≈2.80); uygulama doğru hesaplıyordu, test düzeltildi.
+
+## 27. A/B motoru: A1 deploy ve A3 ekranı (2026-10-28)
+- `20261121000000_ab_deney` uzakta uygulandı (kullanıcı onayı ile). Beş fonksiyon katalogda doğrulandı.
+- A3 ekranı: `/yonetim/ab-deneyler`. Deney taslağı, onay notuyla başlatma, gerekçeyle durdurma, liste. Atama ve sonuç analizi ekranda yok. `tsc` ve `eslint` temiz; tarayıcı kontrolü yapılmadı.
+- A3'ün "karar kaydı" kısmı (analiz sonucunun veritabanına yazılması) yeni tablo gerektiriyor; ayrı onay ile yapılacak.

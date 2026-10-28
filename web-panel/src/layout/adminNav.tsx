@@ -95,6 +95,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { key: "veriKalitesi", icon: <PieChartIcon />, path: "/yonetim/veri-kalitesi", roles: ADMIN },
       { key: "raporTaslak", icon: <MailIcon />, path: "/yonetim/rapor-taslaklari", roles: ADMIN },
       { key: "ogrenmeToplam", icon: <PieChartIcon />, path: "/yonetim/ogrenme-toplam", roles: ADMIN },
+      { key: "abDeney", icon: <BoltIcon />, path: "/yonetim/ab-deneyler", roles: ADMIN },
       { key: "kullanim", icon: <PieChartIcon />, path: "/yonetim/kullanim", roles: ADMIN },
       { key: "aiOneriler", icon: <BoltIcon />, path: "/yonetim/ai-oneriler", roles: ADMIN },
       { key: "access", icon: <LockIcon />, path: "/yonetim/ekip", roles: ADMIN },

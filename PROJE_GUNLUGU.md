@@ -4739,3 +4739,6 @@ Paketler:
 
 ### K-0185 · 2026-10-28 · YÖN · A/B A2 yerel: analiz modülü ve sahte veri hata oranları (16/16)
 - Yalnız yerel; veritabanı değişikliği yok. A1 (20261121) deploy onayı hâlâ bekliyor.
+
+### K-0186 · 2026-10-28 · VT/YÖN · A1 uzakta uygulandı (onaylı, katalog doğrulandı); A3 deney ekranı (tsc/eslint temiz)
+- Karar kaydı (analiz sonucunun DB'ye yazılması) ayrı onay gerektirir.

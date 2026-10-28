@@ -47,6 +47,7 @@
         "veriKalitesi": "Veri Kalitesi ve İzin",
         "raporTaslak": "Haftalık Rapor Taslakları",
         "ogrenmeToplam": "Öğrenme Analitiği (Toplu)",
+        "abDeney": "A/B Deneyleri",
         "aiOneriler": "AI Öneriler",
         "access": "Ekip & yetkiler",
         "channels": "Kanal ayarları",
@@ -89,6 +90,7 @@
         "veriKalitesi": "Veri kalitesi kontrolleri ve kanal bazlı iletişim izni özeti. Küçük sayılar gizlenir.",
         "raporTaslak": "Haftalık büyüme raporu taslakları. Gönderim yapılmaz; yalnız inceleme ve onay.",
         "ogrenmeToplam": "Sınıf ve hikâye bazında toplu kullanım. Her hücrede en az 10 öğrenci; doğruluk ve kişi bilgisi yok.",
+        "abDeney": "Gerçek deneyler: taslak, onayla başlat, guardrail ihlalinde durdur. Atama ve sonuç analizi ayrı adımlardır.",
         "aiOneriler": "AI öneriler — bir sonraki en iyi aksiyon",
         "journey-otomasyonlari": "Journey otomasyonları — müşteri yolculukları",
         "mesajSablonlari": "Mesaj şablonları — kanal bazlı içerik",
@@ -1271,6 +1273,67 @@
         "students": "Öğrenci",
         "sessions": "Oturum",
         "completion": "Tamamlama"
+      }
+    },
+    "abDeney": {
+      "title": "A/B deneyleri",
+      "description": "Deney tanımı ve yaşam döngüsü. Başlatma onay notu ister; durdurma gerekçe ister. Sonuç analizi bu ekranda değildir.",
+      "loading": "Yükleniyor…",
+      "saved": "Deney taslağı kaydedildi.",
+      "started": "Deney başlatıldı.",
+      "stopped": "Deney durduruldu.",
+      "confirmStart": "Deney başlatılsın mı? Başlatılan deney tanımı değiştirilemez.",
+      "confirmStop": "Deney durdurulsun mu? Bu işlem geri alınamaz.",
+      "create": {
+        "title": "Yeni deney taslağı",
+        "note": "Taslak, başlatılana kadar kullanıcıya atama yapmaz. Guardrail en az iki metrik; örneklem en az 30.",
+        "fields": {
+          "name": "Deney adı",
+          "primary": "Birincil metrik",
+          "owner": "Sorumlu kişi",
+          "hypothesis": "Hipotez",
+          "guardrail": "Guardrail metrikleri (virgülle, en az 2)",
+          "guardrailPlaceholder": "iade_orani, sikayet_orani",
+          "baseline": "Referans oranı (%)",
+          "minEffect": "Minimum ilgi farkı (% puan)",
+          "sample": "Kol başına örneklem",
+          "start": "Başlangıç",
+          "end": "Bitiş"
+        },
+        "submit": "Taslağı kaydet"
+      },
+      "errors": {
+        "guardrail": "En az iki guardrail metrik gerekir.",
+        "percent": "Oranlar 0 ile 100 arasında olmalı.",
+        "onayNotu": "Başlatmak için onay notu yazın.",
+        "neden": "Durdurmak için gerekçe yazın."
+      },
+      "list": {
+        "title": "Deneyler",
+        "empty": "Henüz deney yok.",
+        "cols": {
+          "name": "Deney",
+          "status": "Durum",
+          "dates": "Tarihler",
+          "guardrail": "Guardrail",
+          "action": "İşlem"
+        }
+      },
+      "status": {
+        "taslak": "Taslak",
+        "yayinda": "Yayında",
+        "bitti": "Bitti",
+        "durduruldu": "Durduruldu"
+      },
+      "start": {
+        "label": "Onayla ve başlat",
+        "note": "Onay notu",
+        "notePlaceholder": "Onay veren ve dayanak"
+      },
+      "stop": {
+        "label": "Durdur",
+        "reason": "Durdurma gerekçesi",
+        "reasonPlaceholder": "Guardrail ihlali, hata vb."
       }
     },
     "growthAnalitik": {

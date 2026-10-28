@@ -47,6 +47,7 @@
         "veriKalitesi": "Data Quality and Consent",
         "raporTaslak": "Weekly Report Drafts",
         "ogrenmeToplam": "Learning analytics (aggregate)",
+        "abDeney": "A/B experiments",
         "aiOneriler": "AI Recommendations",
         "access": "Team & permissions",
         "channels": "Channel settings",
@@ -89,6 +90,7 @@
         "veriKalitesi": "Data quality checks and channel-level consent summary. Small counts are hidden.",
         "raporTaslak": "Weekly growth report drafts. Nothing is sent; review and approval only.",
         "ogrenmeToplam": "Aggregate use by class and story. At least 10 students per cell; no correctness or personal data.",
+        "abDeney": "Real experiments: draft, approve and start, stop on guardrail breach. Assignment and result analysis are separate steps.",
         "aiOneriler": "AI recommendations — next best action",
         "journey-otomasyonlari": "Journey automations — customer journeys",
         "mesajSablonlari": "Message templates — channel-based content",
@@ -1271,6 +1273,67 @@
         "students": "Students",
         "sessions": "Sessions",
         "completion": "Completion"
+      }
+    },
+    "abDeney": {
+      "title": "A/B experiments",
+      "description": "Experiment definition and lifecycle. Starting needs an approval note; stopping needs a reason. Result analysis is not on this screen.",
+      "loading": "Loading…",
+      "saved": "Experiment draft saved.",
+      "started": "Experiment started.",
+      "stopped": "Experiment stopped.",
+      "confirmStart": "Start the experiment? Its definition cannot be changed after start.",
+      "confirmStop": "Stop the experiment? This cannot be undone.",
+      "create": {
+        "title": "New experiment draft",
+        "note": "A draft assigns no users until started. At least two guardrail metrics; at least 30 per arm.",
+        "fields": {
+          "name": "Experiment name",
+          "primary": "Primary metric",
+          "owner": "Owner",
+          "hypothesis": "Hypothesis",
+          "guardrail": "Guardrail metrics (comma-separated, at least 2)",
+          "guardrailPlaceholder": "refund_rate, complaint_rate",
+          "baseline": "Baseline rate (%)",
+          "minEffect": "Minimum detectable effect (% points)",
+          "sample": "Sample per arm",
+          "start": "Start",
+          "end": "End"
+        },
+        "submit": "Save draft"
+      },
+      "errors": {
+        "guardrail": "At least two guardrail metrics are required.",
+        "percent": "Rates must be between 0 and 100.",
+        "onayNotu": "Write an approval note to start.",
+        "neden": "Write a reason to stop."
+      },
+      "list": {
+        "title": "Experiments",
+        "empty": "No experiments yet.",
+        "cols": {
+          "name": "Experiment",
+          "status": "Status",
+          "dates": "Dates",
+          "guardrail": "Guardrails",
+          "action": "Action"
+        }
+      },
+      "status": {
+        "taslak": "Draft",
+        "yayinda": "Running",
+        "bitti": "Ended",
+        "durduruldu": "Stopped"
+      },
+      "start": {
+        "label": "Approve and start",
+        "note": "Approval note",
+        "notePlaceholder": "Approver and basis"
+      },
+      "stop": {
+        "label": "Stop",
+        "reason": "Stop reason",
+        "reasonPlaceholder": "Guardrail breach, error, etc."
       }
     },
     "growthAnalitik": {
