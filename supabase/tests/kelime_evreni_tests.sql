@@ -56,6 +56,14 @@ begin
   return v_sonuc;
 end $fn$;
 
+-- İki farklı aileden model "pass" kaydı (yönetici oturumunda çağrılır)
+create or replace function pg_temp.kelime_denetle(p_tur text, p_id text)
+returns void language plpgsql as $fn$
+begin
+  perform public.kelime_denetim_kaydet(p_tur, p_id, 'claude-test', 'claude', 'pass', null);
+  perform public.kelime_denetim_kaydet(p_tur, p_id, 'gemini-test', 'gemini', 'pass', null);
+end $fn$;
+
 create or replace function pg_temp.kelime_evreni_testleri()
 returns table (no integer, senaryo text, gecti boolean, detay text)
 language plpgsql
@@ -90,6 +98,7 @@ declare
   v_sayi   integer;
   v_bool   boolean;
   v_id     uuid;
+  v_id2    uuid;
   v_sicak  uuid;
   v_soguk  uuid;
   v_xp_cagri_once integer;
@@ -527,15 +536,17 @@ begin
   return next;
 
   no := no + 1;
-  senaryo := 'İlişki: kaydeden yönetici kendi ilişkisini onaylayamaz (DORT_GOZ); farklı yönetici onaylar; tekrar onay idempotent';
+  senaryo := 'İlişki: denetimsiz onay reddedilir (DENETIM_EKSIK); aynı aileden iki model yetmez; iki aileden pass ile onaylanır; tekrar onay idempotent';
   perform pg_temp.kelime_giris(adm1);
   v_sicak := public.kelime_anlam_kaydet('sıcak', 'ısısı yüksek', 'sifat', null);
   v_soguk := public.kelime_anlam_kaydet('soğuk', 'ısısı düşük', 'sifat', null);
   v_id := public.kelime_iliski_kaydet(v_sicak, v_soguk, 'zit_anlamli');
-  gecti := pg_temp.kelime_hata_bekle(format($q$select public.kelime_iliski_onayla(%L)$q$, v_id), 'DORT_GOZ');
-  perform pg_temp.kelime_cikis();
-  perform pg_temp.kelime_giris(adm2);
-  perform public.kelime_iliski_onayla(v_id);
+  gecti := pg_temp.kelime_hata_bekle(format($q$select public.kelime_iliski_onayla(%L)$q$, v_id), 'DENETIM_EKSIK');
+  perform public.kelime_denetim_kaydet('iliski', v_id::text, 'claude-a', 'claude', 'pass', null);
+  perform public.kelime_denetim_kaydet('iliski', v_id::text, 'claude-b', 'claude', 'pass', null);
+  gecti := gecti and pg_temp.kelime_hata_bekle(format($q$select public.kelime_iliski_onayla(%L)$q$, v_id), 'DENETIM_EKSIK');
+  perform public.kelime_denetim_kaydet('iliski', v_id::text, 'gemini-a', 'gemini', 'pass', null);
+  perform public.kelime_iliski_onayla(v_id);  -- aynı yönetici: dört göz yok
   perform public.kelime_iliski_onayla(v_id);  -- ikinci çağrı hata vermez
   perform pg_temp.kelime_cikis();
   gecti := gecti and pg_temp.kelime_sorgu_text(format('select onay_tarihi is not null from public.kelime_iliskileri where id = %L', v_id))::boolean;
@@ -578,19 +589,18 @@ begin
   return next;
 
   no := no + 1;
-  senaryo := 'Taslak → incelemede → yayında: yazan yönetici yayınlayamaz (DORT_GOZ), farklı yönetici yayınlar';
+  senaryo := 'Taslak → incelemede → yayında: denetimsiz yayın reddedilir (DENETIM_EKSIK); iki aileden pass sonrası yazan yönetici yayınlar';
   perform pg_temp.kelime_giris(adm1);
   v_id := public.kelime_soru_kaydet(null, v_sicak, 'zit_anlamli', 5, 'T.5.2.1',
       'Sıcak kelimesinin zıt anlamlısı hangisidir?', '["Soğuk","Ilık"]'::jsonb, 0, null,
       'Isı konusuna bak.', 'Sıcak ile soğuk birbirinin karşıtıdır.');
   perform public.kelime_soru_durum_degistir(v_id, 'incelemede');
-  v_bool := pg_temp.kelime_hata_bekle(format($q$select public.kelime_soru_durum_degistir(%L, 'yayinda')$q$, v_id), 'DORT_GOZ');
-  perform pg_temp.kelime_cikis();
-  perform pg_temp.kelime_giris(adm2);
+  v_bool := pg_temp.kelime_hata_bekle(format($q$select public.kelime_soru_durum_degistir(%L, 'yayinda')$q$, v_id), 'DENETIM_EKSIK');
+  perform pg_temp.kelime_denetle('soru', v_id::text);
   v_json := public.kelime_soru_durum_degistir(v_id, 'yayinda');
   perform pg_temp.kelime_cikis();
   gecti := v_bool and (v_json ->> 'durum') = 'yayinda'
-       and pg_temp.kelime_sorgu_text(format('select inceleyen_id::text from public.kelime_sorulari where id = %L', v_id)) = adm2::text;
+       and pg_temp.kelime_sorgu_text(format('select inceleyen_id::text from public.kelime_sorulari where id = %L', v_id)) = adm1::text;
   detay := v_json::text;
   return next;
 
@@ -624,6 +634,7 @@ begin
   perform public.kelime_soru_durum_degistir(v_id, 'incelemede');
   perform pg_temp.kelime_cikis();
   perform pg_temp.kelime_giris(adm1);
+  perform pg_temp.kelime_denetle('soru', v_id::text);
   perform public.kelime_soru_durum_degistir(v_id, 'yayinda');
   perform pg_temp.kelime_cikis();
   perform pg_temp.kelime_giris(ogr6);
@@ -754,7 +765,7 @@ begin
   return next;
 
   no := no + 1;
-  senaryo := 'Puanlama: doğru x 4 - yanlış (en az 0); doğru şık sunucudan okunur; iki oyuncu bitirince meydan "bitti"';
+  senaryo := 'Puanlama: doğru x (2 + zorluk) - yanlış (en az 0); doğru şık sunucudan okunur; iki oyuncu bitirince meydan "bitti"';
   v_sor1 := v_m1 -> 'sorular' -> 0 ->> 'id';
   v_sor2 := v_m1 -> 'sorular' -> 1 ->> 'id';
   v_sor3 := v_m1 -> 'sorular' -> 2 ->> 'id';
@@ -774,7 +785,8 @@ begin
   perform pg_temp.kelime_cikis();
   gecti := (v_cevap ->> 'dogru_sayisi')::integer = 2
        and (v_cevap ->> 'yanlis_sayisi')::integer = 1
-       and (v_cevap ->> 'puan')::numeric = 7
+       and (v_cevap ->> 'puan')::numeric = pg_temp.kelime_sorgu_text(format(
+             'select (sum(2 + zorluk) - 1)::text from public.kelime_sorulari where id in (%L, %L)', v_sor1, v_sor3))::numeric
        and (v_cevap2 ->> 'puan')::numeric = 0
        and (v_cevap2 ->> 'yanlis_sayisi')::integer = 2
        and pg_temp.kelime_sorgu_text(format('select durum from public.meydan_okumalar where id = %L', v_m1 ->> 'id')) = 'bitti'
@@ -792,6 +804,105 @@ begin
   perform pg_temp.kelime_cikis();
   gecti := (v_cevap ->> 'dogru_sayisi')::integer = 0 and (v_cevap ->> 'yanlis_sayisi')::integer = 0;
   detay := v_cevap::text;
+  return next;
+
+  -- ---------------------------------------------------------------
+  -- Sözcük çekirdeği (20261095)
+  -- ---------------------------------------------------------------
+  no := no + 1;
+  senaryo := 'Denetim kaydı: öğrenci yazamaz; taslaktaki soruya denetim yazılamaz; son karar fail ise yayın kapalı';
+  perform pg_temp.kelime_giris(ogr5);
+  v_bool := pg_temp.kelime_hata_bekle(
+      format($q$select public.kelime_denetim_kaydet('soru', %L, 'claude-x', 'claude', 'pass', null)$q$, q1::text), 'FORBIDDEN')
+    or pg_temp.kelime_hata_bekle(
+      format($q$select public.kelime_denetim_kaydet('soru', %L, 'claude-x', 'claude', 'pass', null)$q$, q1::text), 'ADMIN');
+  perform pg_temp.kelime_cikis();
+  perform pg_temp.kelime_giris(adm1);
+  v_id := public.kelime_soru_kaydet(null, s_mutlu, 'es_anlamli', 5, null,
+      'Mutlu kelimesinin eş anlamlısı hangisidir?', '["Neşeli","Kederli"]'::jsonb, 0, null, null, 'Mutlu ile neşeli yakın anlamlıdır.');
+  gecti := pg_temp.kelime_hata_bekle(
+      format($q$select public.kelime_denetim_kaydet('soru', %L, 'claude-x', 'claude', 'pass', null)$q$, v_id::text),
+      'DENETIM_HEDEFI_INCELEMEDE_DEGIL');
+  perform public.kelime_soru_durum_degistir(v_id, 'incelemede');
+  perform pg_temp.kelime_denetle('soru', v_id::text);
+  perform public.kelime_denetim_kaydet('soru', v_id::text, 'gemini-test', 'gemini', 'fail', 'çeldirici zayıf');
+  gecti := gecti and v_bool and pg_temp.kelime_hata_bekle(
+      format($q$select public.kelime_soru_durum_degistir(%L, 'yayinda')$q$, v_id), 'DENETIM_EKSIK');
+  perform pg_temp.kelime_cikis();
+  detay := 'öğrenci reddi: ' || v_bool;
+  return next;
+
+  no := no + 1;
+  senaryo := 'Hikâye sözlüğü toplu onay: denetimsiz atlanır, iki aileden pass ile onaylanır';
+  insert into public.okuma_sozluk_girdileri (id, tur, yazim, anlam, olusturan_id)
+  values ('t_deneme_girdi', 'kelime', 'deneme', 'sınanan sözcük örneği', adm1);
+  perform pg_temp.kelime_giris(adm1);
+  v_json := public.okuma_sozluk_girdi_onayla(array['t_deneme_girdi']);
+  v_bool := (v_json ->> 'onaylanan')::integer = 0 and v_json -> 'atlanan' -> 0 ->> 'neden' = 'denetim_eksik';
+  perform pg_temp.kelime_denetle('sozluk', 't_deneme_girdi');
+  v_json2 := public.okuma_sozluk_girdi_onayla(array['t_deneme_girdi']);
+  perform pg_temp.kelime_cikis();
+  gecti := v_bool and (v_json2 ->> 'onaylanan')::integer = 1
+       and pg_temp.kelime_sorgu_text('select durum from public.okuma_sozluk_girdileri where id = ''t_deneme_girdi''') = 'onayli';
+  detay := v_json::text || ' | ' || v_json2::text;
+  return next;
+
+  no := no + 1;
+  senaryo := 'Deyim alanı: soru kaydedilir; Arena kelime puanı zorluğa göre 3/4/5 (üç doğru = 12, hepsi yanlış = 0)';
+  perform pg_temp.kelime_giris(adm1);
+  for v_sayi in 1..3 loop
+    v_id := public.kelime_soru_kaydet(null, s_mutlu, 'deyim', 5, null,
+        'Deyim sorusu ' || v_sayi || ': hangi anlam doğrudur?', '["doğru anlam","yanlış anlam"]'::jsonb, 0, null, null,
+        'Deyimin anlamı ilk seçenektir.', v_sayi);
+    perform public.kelime_soru_durum_degistir(v_id, 'incelemede');
+    perform pg_temp.kelime_denetle('soru', v_id::text);
+    perform public.kelime_soru_durum_degistir(v_id, 'yayinda');
+  end loop;
+  perform pg_temp.kelime_cikis();
+  perform pg_temp.kelime_giris(ogr5);
+  v_m1 := public.create_kelime_challenge('deyim');
+  perform pg_temp.kelime_cikis();
+  perform pg_temp.kelime_giris(ogr6);
+  perform public.join_challenge(v_m1 ->> 'kod');
+  v_cevap2 := public.submit_challenge((v_m1 ->> 'id')::uuid, (
+    select jsonb_agg(jsonb_build_object('question_id', e ->> 'id', 'secilen_sik', 'B')) from jsonb_array_elements(v_m1 -> 'sorular') e));
+  perform pg_temp.kelime_cikis();
+  perform pg_temp.kelime_giris(ogr5);
+  v_cevap := public.submit_challenge((v_m1 ->> 'id')::uuid, (
+    select jsonb_agg(jsonb_build_object('question_id', e ->> 'id', 'secilen_sik', 'A')) from jsonb_array_elements(v_m1 -> 'sorular') e));
+  perform pg_temp.kelime_cikis();
+  gecti := jsonb_array_length(v_m1 -> 'sorular') = 3
+       and (v_cevap ->> 'puan')::numeric = 12 and (v_cevap ->> 'dogru_sayisi')::integer = 3
+       and (v_cevap2 ->> 'puan')::numeric = 0 and (v_cevap2 ->> 'yanlis_sayisi')::integer = 3;
+  detay := v_cevap::text || ' | ' || v_cevap2::text;
+  return next;
+
+  no := no + 1;
+  senaryo := 'Panel: inceleme kuyruğu kapıyı gösterir; toplu yayın kuru çalıştırmada yayınlamaz, gerçekte yalnız kapıdan geçeni yayınlar; öğrenci erişemez';
+  perform pg_temp.kelime_giris(adm1);
+  v_id := public.kelime_soru_kaydet(null, s_mutlu, 'baglamda_anlam', 7, null,
+      'Kuyruk sorusu bir: cümleden anlam çıkar.', '["doğru","yanlış"]'::jsonb, 0, null, null, 'Kuyruk sınaması bir.', 2);
+  perform public.kelime_soru_durum_degistir(v_id, 'incelemede');
+  perform pg_temp.kelime_denetle('soru', v_id::text);
+  v_id2 := public.kelime_soru_kaydet(null, s_mutlu, 'baglamda_anlam', 7, null,
+      'Kuyruk sorusu iki: cümleden anlam çıkar.', '["doğru","yanlış"]'::jsonb, 0, null, null, 'Kuyruk sınaması iki.', 2);
+  perform public.kelime_soru_durum_degistir(v_id2, 'incelemede');
+  v_json := public.kelime_inceleme_kuyrugu(7::smallint, 'baglamda_anlam', 50);
+  v_json2 := public.kelime_toplu_yayinla(array[v_id, v_id2], true);
+  v_bool := (v_json ->> 'toplam')::integer = 2
+        and (select count(*) from jsonb_array_elements(v_json -> 'satirlar') e where (e ->> 'kapi')::boolean) = 1
+        and (v_json2 ->> 'yayinlanan')::integer = 1 and jsonb_array_length(v_json2 -> 'atlanan') = 1
+        and pg_temp.kelime_sorgu_text(format('select durum from public.kelime_sorulari where id = %L', v_id)) = 'incelemede';
+  v_json2 := public.kelime_toplu_yayinla(array[v_id, v_id2], false);
+  perform pg_temp.kelime_cikis();
+  perform pg_temp.kelime_giris(ogr5);
+  gecti := v_bool and (v_json2 ->> 'yayinlanan')::integer = 1
+       and pg_temp.kelime_sorgu_text(format('select durum from public.kelime_sorulari where id = %L', v_id)) = 'yayinda'
+       and pg_temp.kelime_sorgu_text(format('select durum from public.kelime_sorulari where id = %L', v_id2)) = 'incelemede'
+       and (pg_temp.kelime_hata_bekle('select public.kelime_inceleme_kuyrugu()', 'FORBIDDEN')
+            or pg_temp.kelime_hata_bekle('select public.kelime_inceleme_kuyrugu()', 'ADMIN'));
+  perform pg_temp.kelime_cikis();
+  detay := v_json2::text;
   return next;
 end;
 $fn$;

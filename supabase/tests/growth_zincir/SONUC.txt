@@ -1,0 +1,16 @@
+Zincir: 183 dosya, 168 OK, 15 HATA
+HATA 20261015120000_site_gorselleri.sql: column "file_size_limit" of relation "buckets" does not exist
+HATA 20261034000000_telefon_dogrulama.sql: column "telefon" does not exist
+HATA 20261059000000_okuma_pilot2_icerik.sql: pilot içe aktarma: yönetici profil bulunamadı
+HATA 20261061000000_okuma_pilot2_guncelleme.sql: iÃ§e aktarma: yÃ¶netici profil bulunamadÄ±
+HATA 20261062000000_okuma_pilot3_4_icerik.sql: iÃ§e aktarma: yÃ¶netici profil bulunamadÄ±
+HATA 20261067000000_okuma_pilot4_6_icerik.sql: iÃ§e aktarma: yÃ¶netici profil bulunamadÄ±
+HATA 20261069000000_okuma_test_yayini.sql: iÃ§e aktarma: yÃ¶netici profil bulunamadÄ±
+HATA 20261072000000_okuma_uzun_hikayeler_bolunmus.sql: içe aktarma: yönetici profil bulunamadı
+HATA 20261077000000_okuma_ikon_sozluk_taslak.sql: içe aktarma: yönetici profil bulunamadı
+HATA 20261081000000_search_path_standart.sql: function public.telefon_normalize(text) does not exist
+HATA 20261082000000_okuma_canli_duzeltme.sql: GERI_CEKME_BEKLENMEYEN_SAYI: 0
+HATA 20261087000000_okuma_yerel_hikaye_taslak.sql: iÃ§e aktarma: yÃ¶netici profil bulunamadÄ±
+HATA 20261089000000_okuma_sozluk_yukle.sql: sözlük yükleme: yönetici profil bulunamadı
+HATA 20261091000000_okuma_ajan_denetim_isle.sql: TASLAK_SURUM_YOK: hr001-
+HATA 20261092000000_okuma_ajan_denetim_surum_bazli.sql: SURUM_EŞLEŞMEDI: 00f4f1b6-08b2-40ac-a362-cfa6f2cc17d0
