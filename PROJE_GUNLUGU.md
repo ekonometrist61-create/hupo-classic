@@ -4749,3 +4749,7 @@ Paketler:
 
 ### K-0188 · 2026-10-28 · YÖN · A3 karar formu (yerel; tsc/eslint temiz)
 - Yeni veritabanı değişikliği yok; tarayıcı kontrolü sizde.
+
+### K-0189 · 2026-10-28 · YÖN · Deney olay ingest tasarım taslağı (kod yok); bellek durumu güncellendi
+- `docs/growth-crm/specs/AB_OLAY_INGEST_SPEC.md`: gizlilik sınırı, önerilen yaklaşım, açık kararlar D1–D4 (kullanıcı yanıtı bekleniyor), onaylı aşamalar I0–I4.
+- Veritabanı ve deploy değişikliği yok.
