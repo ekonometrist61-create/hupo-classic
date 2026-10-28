@@ -1,0 +1,9 @@
+{
+  "id": "ilk_gun_geri_donen",
+  "etiket": "İlk gün geri dönen veli (hipotez)",
+  "n": 120,
+  "parametreler": {
+    "d1_oran_yuzde": 70.0
+  },
+  "kaynak": "kohort.ozet[gun=1]"
+}

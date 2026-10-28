@@ -281,3 +281,9 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - `20261119000000_growth_ml_esik`: `admin_growth_ml_esik()` yalnız ölçüm. Model B (ücretli veli, eşik 500), Model C (iptal eden veli 200 ve en az 2 abonelik döngüsü olan veli 2), Model D (ilk başarılı ödemeden ay, eşik 6). Model eğitimi yok.
 - Test: `supabase/tests/growth_ml_esik` 15/15.
 - Uzakta uygulanmadı; deploy onayı bekleniyor. Eşikler sezgiseldir; ML kararı insan onaylı ayrı bir adımdır.
+
+## 23. Customer-Lab L2 (yerel, 2026-10-28)
+- `20261120000000_sentetik_lab`: `sentetik_kosu`, `sentetik_sonuc` (gerçek tablolara FK yok; etiket = 'hipotez' check; alt <= üst check; RLS açık, politikasız). Yönetici fonksiyonları: kaydet (en fazla 200 sonuç), listele. Test 15/15 (`supabase/tests/sentetik_lab`).
+- `scripts/customer-lab/fiyat_senaryo.py`: fiyat duyarlılığı senaryo koşucusu; varsayımlar çıktıda açık; negatif esneklik ve gizli d1 reddedilir. Test 23/23 (katalog + senaryo).
+- Örnek: `persona-ornek.json` → `senaryo-ornek.json` (sentetik).
+- Uzakta uygulanmadı; deploy onayı bekleniyor. Sentetik tablolara gerçek veri yazılmaz.

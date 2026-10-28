@@ -1,0 +1,39 @@
+{
+  "tur": "fiyat_senaryosu",
+  "etiket": "hipotez",
+  "uyari": "Varsayıma dayalı hipotez. Gerçek dönüşüm ölçümü değildir; A/B testiyle doğrulanmadan karar kanıtı sayılmaz.",
+  "tohum": 42,
+  "varsayimlar": {
+    "baz_donusum_carpani": 0.2,
+    "fiyat_esnekligi": -0.5,
+    "referans_fiyat_kurus": 9900,
+    "belirsizlik_bandi": 0.3
+  },
+  "persona": {
+    "id": "ilk_gun_geri_donen",
+    "d1_oran_yuzde": 70.0
+  },
+  "sonuclar": [
+    {
+      "senaryo": "fiyat_9900",
+      "fiyat_kurus": 9900,
+      "beklenen_alt": 0.098,
+      "beklenen_ust": 0.182,
+      "etiket": "hipotez"
+    },
+    {
+      "senaryo": "fiyat_14900",
+      "fiyat_kurus": 14900,
+      "beklenen_alt": 0.0799,
+      "beklenen_ust": 0.1484,
+      "etiket": "hipotez"
+    },
+    {
+      "senaryo": "fiyat_19900",
+      "fiyat_kurus": 19900,
+      "beklenen_alt": 0.0691,
+      "beklenen_ust": 0.1284,
+      "etiket": "hipotez"
+    }
+  ]
+}
