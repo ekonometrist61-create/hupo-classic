@@ -4768,3 +4768,6 @@ Paketler:
 
 ### K-0192 · 2026-10-28 · YÖN · I3 karar formu veritabanından doldurma (yerel; TS=Python çapraz kontrolü); I4 bloklu (varyant kararı)
 - I2 zaten I1'de tamam. I4 için ürün kararı gerekli: hangi varyant gösterilecek.
+
+### K-0193 · 2026-10-28 · YÖN · I4 kararı: ilk test A/C (sunum), referans ölçümü mağaza yayını ve ilk indirmelerden sonra başlar; metin onayı ajan taslağı + proje sahibi
+- Referans sayacı şu an başlatılmadı (tetikleyici: mağaza yayını + ilk gerçek indirmeler).

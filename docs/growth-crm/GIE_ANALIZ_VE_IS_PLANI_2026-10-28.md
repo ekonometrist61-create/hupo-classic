@@ -336,3 +336,10 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - **I3 (karar formu sayıları):** Tamam (yerel). "Veritabanından doldur" düğmesi `admin_ab_sayilar` ile n ve x alır; oran, p ve %95 güven aralığı bu sayılardan hesaplanır. Tarayıcı p-değeri hesabı Python referansıyla bire bir eşleşti (p=0.004732; CI 0.0314–0.1712). Yeni veritabanı değişikliği yok.
 - **I4 (uygulama entegrasyonu):** Bloklu. Gerekçe: deneyin kendisi henüz yok. Maruziyet kaydı, kullanıcıya bir kol (kontrol veya deney) gösterilmesini gerektirir; ürün tarafında hangi varyantın (örn. fiyat veya paket sunumu) gösterileceği belirlenmeden kod yazılamaz. Ayrıca fiyat değişikliği insan onaylı olmalı (proje kuralı). Gerekli karar: birincil hipotez için görülecek varyant.
 - **Mobil (BACKLOG-M1):** Ertelendi; koşulları günlükte.
+
+## 33. I4 karar kaydı (2026-10-28, kullanıcı onaylı)
+- **İlk test:** Yalnızca sunum (fiyat değişmez). Varyant A (deneme vurgusu) veya C (deneme sonu hatırlatması). Yıllık paket (B) ikinci testte; D ve E kapsam dışı.
+- **Birincil hipotez (D2):** 7 gün içinde ücretli ödeme oranı.
+- **Referans ölçümü (30 gün):** Başlangıç, uygulama mağazaya yüklendikten ve ilk indirenler geldikten sonra. Şu an sayaç başlatılmadı; tetikleyici: mağaza yayını + ilk gerçek indirmeler. Referans ölçümü tamamlanmadan örneklem hesabı kesinleşmez.
+- **Metin ve tasarım onayı:** Önce pazarlama ve iletişim (proje tasarım-büyüme ajanı taslak hazırlar); son onay: proje sahibi. Hukuk metinleri (çerez, gizlilik) ayrıca kontrol edilir.
+- **Yasaklar:** Aynı kullanıcıya farklı fiyat; sahte aciliyet veya sosyal kanıt; çocuk ekranında satın alma çağrısı.
