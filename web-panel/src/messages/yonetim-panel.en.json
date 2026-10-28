@@ -55,6 +55,7 @@
         "destekMasasi": "Support Desk",
         "mesajSablonlari": "Message templates",
         "siteIcerik": "Site content",
+        "mesajGunlugu": "Message log",
         "settings": "App settings"
       },
       "pageDesc": {
@@ -81,6 +82,7 @@
         "mesajSablonlari": "Message templates — channel-based content",
         "siteIcerik": "Site content — landing, sign-in, sign-up and parent panel texts"
       },
+        "mesajGunlugu": "Log of sent and skipped messages. Email and phone are masked.",
       "command": {
         "open": "Search everywhere...",
         "title": "Quick access",
@@ -628,7 +630,30 @@
       "customerLink": "Customer 360°",
       "form": { "title": "New Support Ticket", "subject": "Subject", "category": "Category", "status": "Status", "priority": "Priority", "householdId": "Customer ID", "errSubject": "Subject must be 1-200 characters.", "errHousehold": "Enter a valid customer ID.", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
       "statusModal": { "title": "Change Status", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
-      "pager": { "prev": "Previous", "next": "Next" }
+      "pager": { "prev": "Previous", "next": "Next" },
+      "stepsButton": "Steps",
+      "steps": {
+        "titleFor": "Steps: {name}",
+        "activeNote": "Journey is active. Steps are read-only; pause it first to edit.",
+        "editHint": "Steps cannot be saved while the journey has pending or running enrollments; the server rejects the change in that case.",
+        "loading": "Loading steps...",
+        "empty": "No steps yet. Add a step and save.",
+        "addStep": "Add step",
+        "maxReached": "At most 20 steps can be added.",
+        "stepNo": "Step {no}",
+        "type": "Type",
+        "label": "Label",
+        "hours": "Wait time (hours, 0-8760)",
+        "moveUp": "Move up",
+        "moveDown": "Move down",
+        "remove": "Remove",
+        "channelClosed": "This channel is not active yet; the step is skipped.",
+        "errLabel": "Each step needs a label (max 120 characters).",
+        "errSaat": "For a wait step, hours must be a whole number from 0 to 8760.",
+        "saved": "Steps saved.",
+        "close": "Close",
+        "stepTypes": { "trigger": "Trigger", "delay": "Wait", "email": "Email", "push": "Push", "in_app": "In-app", "sms": "SMS", "whatsapp": "WhatsApp" }
+      }
     },
     "musteri360": {
       "title": "Customer 360°",
@@ -661,6 +686,24 @@
       "channels": {
         "email": "Email",
         "sms": "SMS",
+    "mesajGunlugu": {
+      "title": "Message Log",
+      "readOnlyNote": "This screen is read-only. Email and phone are masked; child information is not shown.",
+      "loading": "Loading...",
+      "loadError": "Could not load message records.",
+      "retry": "Try again",
+      "empty": "No message records yet.",
+      "emptyFiltered": "No records match the selected filters.",
+      "allChannels": "All channels",
+      "allStatus": "All statuses",
+      "filters": { "channel": "Channel", "status": "Status" },
+      "channels": { "email": "Email", "sms": "SMS", "push": "Push", "in_app": "In-app", "whatsapp": "WhatsApp" },
+      "statuses": { "kuyrukta": "Queued", "gonderildi": "Sent", "teslim_edildi": "Delivered", "acildi": "Opened", "tiklandi": "Clicked", "donustu": "Converted", "basarisiz": "Failed", "izin_yok": "No consent", "kanal_kapali": "Channel off" },
+      "source": { "campaign": "Campaign", "journey": "Journey" },
+      "consent": { "yes": "Consent given", "no": "No consent", "unknown": "Unknown" },
+      "cols": { "time": "Time", "channel": "Channel", "status": "Status", "source": "Campaign / Journey", "recipient": "Household (masked)", "consent": "Consent", "error": "Error" },
+      "pager": { "prev": "Previous", "next": "Next" }
+    },
         "phone": "Phone",
         "push": "Push"
       },

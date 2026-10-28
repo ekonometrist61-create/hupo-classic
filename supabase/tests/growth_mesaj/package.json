@@ -1,0 +1,11 @@
+{
+  "name": "hupo-growth-mesaj-testi",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test ../../functions/_shared/sablon.test.ts && node test.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.10"
+  }
+}

@@ -55,6 +55,7 @@
         "destekMasasi": "Destek Masası",
         "mesajSablonlari": "Mesaj Şablonları",
         "siteIcerik": "Site içeriği",
+        "mesajGunlugu": "Gönderim Günlüğü",
         "settings": "Uygulama ayarları"
       },
       "pageDesc": {
@@ -81,6 +82,7 @@
         "mesajSablonlari": "Mesaj şablonları — kanal bazlı içerik",
         "siteIcerik": "Site içeriği — landing, giriş, kayıt ve veli paneli metinleri"
       },
+        "mesajGunlugu": "Gönderilen ve atlanan mesajların kaydı. E-posta ve telefon maskelenir.",
       "command": {
         "open": "Her yerde ara...",
         "title": "Hızlı erişim",
@@ -628,7 +630,30 @@
       "customerLink": "Müşteri 360°",
       "form": { "title": "Yeni Destek Talebi", "subject": "Konu", "category": "Kategori", "status": "Durum", "priority": "Öncelik", "householdId": "Müşteri ID", "errSubject": "Konu 1-200 karakter olmalı.", "errHousehold": "Geçerli bir müşteri ID girin.", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
       "statusModal": { "title": "Durum Değiştir", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
-      "pager": { "prev": "Önceki", "next": "Sonraki" }
+      "pager": { "prev": "Önceki", "next": "Sonraki" },
+      "stepsButton": "Adımlar",
+      "steps": {
+        "titleFor": "Adımlar: {name}",
+        "activeNote": "Journey aktif. Adımlar yalnızca okunur; değiştirmek için önce duraklatın.",
+        "editHint": "Bekleyen ya da işlenen kaydı olan journey adımları kaydedilemez; sunucu bu durumda değişikliği reddeder.",
+        "loading": "Adımlar yükleniyor...",
+        "empty": "Henüz adım yok. Adım ekleyip kaydedin.",
+        "addStep": "Adım ekle",
+        "maxReached": "En fazla 20 adım eklenebilir.",
+        "stepNo": "Adım {no}",
+        "type": "Tür",
+        "label": "Etiket",
+        "hours": "Bekleme süresi (saat, 0-8760)",
+        "moveUp": "Yukarı taşı",
+        "moveDown": "Aşağı taşı",
+        "remove": "Sil",
+        "channelClosed": "Bu kanal henüz kapalı; adım atlanır.",
+        "errLabel": "Her adımın etiketi zorunlu (en fazla 120 karakter).",
+        "errSaat": "Bekleme adımında saat 0-8760 arası tam sayı olmalı.",
+        "saved": "Adımlar kaydedildi.",
+        "close": "Kapat",
+        "stepTypes": { "trigger": "Tetikleyici", "delay": "Bekleme", "email": "E-posta", "push": "Push", "in_app": "Uygulama içi", "sms": "SMS", "whatsapp": "WhatsApp" }
+      }
     },
     "musteri360": {
       "title": "Müşteri 360°",
@@ -661,6 +686,24 @@
       "channels": {
         "email": "E-posta",
         "sms": "SMS",
+    "mesajGunlugu": {
+      "title": "Gönderim Günlüğü",
+      "readOnlyNote": "Bu ekran yalnızca okunur. E-posta ve telefon maskelenir; çocuk bilgisi gösterilmez.",
+      "loading": "Yükleniyor...",
+      "loadError": "Gönderim kayıtları alınamadı.",
+      "retry": "Tekrar dene",
+      "empty": "Henüz gönderim kaydı yok.",
+      "emptyFiltered": "Seçili filtrelere uygun kayıt yok.",
+      "allChannels": "Tüm kanallar",
+      "allStatus": "Tüm durumlar",
+      "filters": { "channel": "Kanal", "status": "Durum" },
+      "channels": { "email": "E-posta", "sms": "SMS", "push": "Push", "in_app": "Uygulama içi", "whatsapp": "WhatsApp" },
+      "statuses": { "kuyrukta": "Kuyrukta", "gonderildi": "Gönderildi", "teslim_edildi": "Teslim edildi", "acildi": "Açıldı", "tiklandi": "Tıklandı", "donustu": "Dönüştü", "basarisiz": "Başarısız", "izin_yok": "İzin yok", "kanal_kapali": "Kanal kapalı" },
+      "source": { "campaign": "Kampanya", "journey": "Journey" },
+      "consent": { "yes": "İzin var", "no": "İzin yok", "unknown": "Bilinmiyor" },
+      "cols": { "time": "Zaman", "channel": "Kanal", "status": "Durum", "source": "Kampanya / Journey", "recipient": "Hane (maskeli)", "consent": "İzin", "error": "Hata" },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
+    },
         "phone": "Telefon",
         "push": "Push"
       },

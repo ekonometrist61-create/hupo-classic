@@ -74,6 +74,7 @@ export const NAV_GROUPS: NavGroup[] = [
       { key: "journeys", icon: <BoltIcon />, path: "/yonetim/journey-otomasyonlari", roles: ADMIN },
       { key: "mesajSablonlari", icon: <MailIcon />, path: "/yonetim/mesaj-sablonlari", roles: ADMIN },
       { key: "forms",icon: <TaskIcon />, path: "/yonetim/anketler", roles: ADMIN },
+      { key: "mesajGunlugu", icon: <MailIcon />, path: "/yonetim/mesaj-gunlugu", roles: ADMIN },
     ],
   },
   {

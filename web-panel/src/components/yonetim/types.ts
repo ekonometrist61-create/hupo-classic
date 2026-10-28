@@ -686,6 +686,31 @@ export interface GrowthLifecycleDagilim {
 }
 
 /** admin_prospect_kaynaklar() satırı. */
+/** admin_mesaj_gunlugu_listele() satır şekli (growth_message_log). Kişisel veri maskeli veya yok. */
+export interface GrowthMessageLog {
+  id: string;
+  zaman: string;
+  created_at: string;
+  sent_at: string | null;
+  channel: string; // email, sms, push, in_app, whatsapp
+  status: string; // queued, sent, failed, skipped (şemada kısıt yok)
+  error: string | null;
+  campaign_id: string | null;
+  kampanya_adi: string | null;
+  journey_id: string | null;
+  journey_adi: string | null;
+  hane_id: string | null;
+  hane_eposta_maskeli: string | null;
+  hane_telefon_maskeli: string | null;
+  /** İzin anlık görüntüsünün özeti; null: bilinmiyor. */
+  izin_verildi: boolean | null;
+}
+
+export interface GrowthMessageLogList {
+  rows: GrowthMessageLog[];
+  total: number;
+}
+
 export interface GrowthProspectKaynak {
   source_channel: string;
   count: number;
