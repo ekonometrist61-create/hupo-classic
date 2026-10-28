@@ -4,7 +4,8 @@
 // Toplanan: yüzey, ekran adı (yol; kimlik benzeri bölümler ":id" olur, sorgu yok), süre (sn), başlangıç,
 // rastgele oturum anahtarı, kaba rol (yüzeyden türetilir). Hesap/çocuk kimliği, e-posta, serbest metin YOK.
 // Çerez/analitik onayı ("granted") yoksa hiçbir şey kaydedilmez ve gönderilmez.
-// Sunucu: supabase/migrations/20261066000000_kullanim_suresi.sql (300 gün saklama).
+// Sunucu: supabase/migrations/20261066000000_kullanim_suresi.sql (300 gün saklama); giriş kapısı
+// supabase/functions/kullanim-izle (IP hız sınırı → service_role RPC).
 import {
   ANALYTICS_CONSENT_CHANGED_EVENT,
   readAnalyticsConsent,
@@ -71,10 +72,11 @@ async function gonder(): Promise<void> {
       const grup = kuyruk.slice(0, GRUP_LIMITI);
       let islendi = false;
       try {
-        const yanit = await fetch(`${url}/rest/v1/rpc/kullanim_olaylari_gonder`, {
+        // Edge Function (kullanim-izle) IP hız sınırını uygular; RPC'ye doğrudan erişim kapalı.
+        const yanit = await fetch(`${url}/functions/v1/kullanim-izle`, {
           method: "POST",
           headers: { "Content-Type": "application/json", apikey: anahtar },
-          body: JSON.stringify({ p_olaylar: grup }),
+          body: JSON.stringify({ olaylar: grup }),
           keepalive: true,
         });
         // 5xx dışındaki yanıtlarda (kabul ya da sunucu reddi) grup düşer; 5xx/ağ hatasında kuyrukta kalır.

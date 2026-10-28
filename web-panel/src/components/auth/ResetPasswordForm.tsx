@@ -2,8 +2,9 @@
 
 import { Link, useRouter } from "@/i18n/navigation";
 import { EyeCloseIcon } from "@/icons";
+import { authDilCevir, authHataAnahtari, authMetni } from "@/lib/auth/hata";
 import { createClient } from "@/utils/supabase/client";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 // E-posta bağlantısından gelen kullanıcı için yeni parola ekranı.
@@ -18,6 +19,7 @@ type Durum = "yukleniyor" | "hazir" | "gecersiz" | "tamam";
 export default function ResetPasswordForm() {
   const t = useTranslations("reset");
   const tCommon = useTranslations("common");
+  const dil = authDilCevir(useLocale());
   const router = useRouter();
   const [durum, setDurum] = useState<Durum>("yukleniyor");
   const [password, setPassword] = useState("");
@@ -70,7 +72,8 @@ export default function ResetPasswordForm() {
     const { error: updateError } = await supabase.auth.updateUser({ password });
     if (updateError) {
       setLoading(false);
-      setError(t("errorGeneric"));
+      const anahtar = authHataAnahtari(updateError);
+      setError(anahtar === "genel" ? t("errorGeneric") : authMetni(anahtar, dil));
       return;
     }
     // Sıfırlama oturumu kapatılır; kullanıcı yeni parolasıyla giriş yapar.

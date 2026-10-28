@@ -1,8 +1,9 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
+import { authDilCevir, authHataAnahtari, authMetni } from "@/lib/auth/hata";
 import { createClient } from "@/utils/supabase/client";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 
 // Parola sıfırlama isteği. Bağlantı web'de başlatılır ve web'e döner; mobil
@@ -13,6 +14,7 @@ const fieldClass =
 
 export default function ForgotPasswordForm() {
   const t = useTranslations("forgot");
+  const dil = authDilCevir(useLocale());
   const [email, setEmail] = useState("");
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
@@ -31,7 +33,8 @@ export default function ForgotPasswordForm() {
     setLoading(false);
 
     if (authError) {
-      setError(t("errorGeneric"));
+      const anahtar = authHataAnahtari(authError);
+      setError(anahtar === "genel" ? t("errorGeneric") : authMetni(anahtar, dil));
       return;
     }
     // Hesabın var olup olmadığı bilgisi bilerek gösterilmez.

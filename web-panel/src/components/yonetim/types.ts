@@ -416,6 +416,29 @@ export interface Musteri360Ozet {
   kaynaklar: Array<{ kaynak: string; adet: number }>;
 }
 
+/**
+ * admin_musteri_360_detay().abonelik: growth_customer_360.subscription (camelCase jsonb).
+ * Çekirdek abonelikte (source 'core') plan = plan_kod ve planName dolu; projeksiyonda (source 'projection') planName yoktur.
+ */
+export interface Musteri360Abonelik {
+  source: "core" | "projection";
+  coreSubscriptionId: string | null;
+  status: string | null;
+  plan: string | null;
+  planName?: string | null;
+  billingCycle?: string | null;
+  startedAt: string | null;
+  endsAt: string | null;
+  nextRenewalAt?: string | null;
+  trialStartedAt?: string | null;
+  trialEndsAt?: string | null;
+  autoRenew?: boolean | null;
+  cancelledAt?: string | null;
+  cancelReason?: string | null;
+  provider?: string | null;
+  priceKurus?: number | null;
+}
+
 /** admin_musteri_360_detay() dönüşü — RPC Türkçe anahtarlar döner. */
 export interface Musteri360Detay {
   musteri: {
@@ -474,7 +497,7 @@ export interface Musteri360Detay {
     is_default: boolean;
     created_at: string;
   }>;
-  abonelik: Record<string, unknown> | null;
+  abonelik: Musteri360Abonelik | null;
   abonelik_projeksiyonu: Array<Record<string, unknown>>;
   islemler: Array<{
     id: string;
@@ -483,7 +506,7 @@ export interface Musteri360Detay {
     currency: string;
     status: string;
     occurred_at: string;
-    description: string | null;
+    payment_type: string | null;
   }>;
   olaylar: Array<{
     id: string;
@@ -663,29 +686,6 @@ export interface GrowthTemplateList {
   total: number;
 }
 
-// ---------------------------------------------------------------------
-// Growth analitik ve AI öneriler (salt okunur)
-// ---------------------------------------------------------------------
-
-/** admin_growth_ozet(p_gun) dönüşü. */
-export interface GrowthOzet {
-  total_households: number;
-  active_households: number;
-  total_prospects: number;
-  converted_prospects: number;
-  open_leads: number;
-  open_tickets: number;
-  recent_events: number;
-  message_log_count: number;
-}
-
-/** admin_lifecycle_dagilim() satırı. */
-export interface GrowthLifecycleDagilim {
-  lifecycle: string;
-  count: number;
-}
-
-/** admin_prospect_kaynaklar() satırı. */
 /** admin_mesaj_gunlugu_listele() satır şekli (growth_message_log). Kişisel veri maskeli veya yok. */
 export interface GrowthMessageLog {
   id: string;
@@ -711,6 +711,29 @@ export interface GrowthMessageLogList {
   total: number;
 }
 
+// ---------------------------------------------------------------------
+// Growth analitik ve AI öneriler (salt okunur)
+// ---------------------------------------------------------------------
+
+/** admin_growth_ozet(p_gun) dönüşü. */
+export interface GrowthOzet {
+  total_households: number;
+  active_households: number;
+  total_prospects: number;
+  converted_prospects: number;
+  open_leads: number;
+  open_tickets: number;
+  recent_events: number;
+  message_log_count: number;
+}
+
+/** admin_lifecycle_dagilim() satırı. */
+export interface GrowthLifecycleDagilim {
+  lifecycle: string;
+  count: number;
+}
+
+/** admin_prospect_kaynaklar() satırı. */
 export interface GrowthProspectKaynak {
   source_channel: string;
   count: number;

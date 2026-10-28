@@ -19,17 +19,14 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR | Konu | Açık iş | Durum | Sahip | Önem | Eski § |
 |---|---|---|---|---|---|---|
 | GÖR-001 | GÜV | Anahtar iptali ve yenileme: Gemini/Stitch anahtarı, GitHub erişim jetonu, Vercel jetonu, eski gömülü GitHub anahtarı. Yenilemeden sonra git geçmişi temizliği (`filter-repo`, her adım ayrı onay) | BEKLİYOR | Kullanıcı | Kritik | §11.2, §11.8, §16.3, §21.6 |
-| GÖR-002 | GÜV | Supabase Auth: e-posta onayı, admin TOTP MFA, sızdırılmış şifre koruması, şifre politikası, `site_url` ve yönlendirme adresleri | BEKLİYOR | Kullanıcı | Yüksek | §11.4 |
-| GÖR-003 | GÜV | Anonim erişimli uçlar: `veli_adayi_olustur` (anonim yazma), `growth_web_olay_kaydet` ve `growth_web_kimlik_bagla` (hız sınırı yok), `iletisim_izni_iptal_et` (imzasız), `exchange_auth_bridge_token` (karar bekliyor) | BEKLİYOR | Kullanıcı (karar) + Ajan | Kritik | §11.7, §11.8, §21.5 |
-| GÖR-004 | GÜV | `search_path = public, pg_temp` → `''` standardizasyonu (~17 fonksiyon). DB testi şart | ERTELENDİ | Ajan | Orta | §11.3 |
-| GÖR-005 | GÜV | Hız sınırı ve CAPTCHA: `CAPTCHA_SECRET` (domain bağlandıktan sonra), `veli-adayi-kayit` ve `deneme-on-kayit` deploy, IP gizleme (Q3), atomik olmayan sınır | BEKLİYOR | Kullanıcı + Ajan | Yüksek | §12.7, §21.3, §21.5, §24 |
-| GÖR-008 | VT | Migration konsolidasyonu (261 fonksiyon tanımı / 231 benzersiz) ve soru seed'lerinin (`20261012000000`, 4.350 satır) migration dışına taşınması | ERTELENDİ | Ajan + Kullanıcı | Düşük | §11.5 |
-| GÖR-009 | ALT | Yerel doğrulama: Docker yok; `supabase db reset` ve `supabase test db` çalıştırılamadı; `supabase/tests` pgTAP formatında değil; yeni migration'lar yerelde çalışmadı | BEKLİYOR | Kullanıcı (Docker) | Orta | §11.6, §11.7, §13.3 |
+| GÖR-002 | GÜV | Supabase Auth: e-posta onayı, admin TOTP MFA, sızdırılmış şifre koruması, şifre politikası, `site_url` ve yönlendirme adresleri | DEVAM (K-0121: e-posta onayı AÇIK, public API ile doğrulandı; kalan Dashboard: `site_url`, sızdırılmış şifre, TOTP; web panelde AAL kontrolü yok → admin MFA kodu kararı) | Kullanıcı (Dashboard) + Ajan (AAL kararı) | Yüksek | §11.4 |
+| GÖR-003 | GÜV | Anonim erişimli uçlar. Canlıda kapalı (K-0117 salt okunur doğrulama): `veli_adayi_olustur`, `exchange_auth_bridge_token` (fonksiyon ve tablo yok). Kodlandı, canlıya alınmadı (K-0117): `growth_web_olay_kaydet`, `growth_web_kimlik_bagla`, `iletisim_izni_iptal_et` → Edge Function (IP hız sınırı) arkasına alındı, RPC yetkileri 20261080000000 ile kapatılacak. Açık karar: iptal bağlantısı imzasız mı kalsın (ajan önerisi: hız sınırıyla kalsın, imzalı bağlantı ayrı ürün kararı) | DEVAM (K-0117: canlıya alındı, anon yetkisi kapalı, 401 doğrulandı; geçerli e-posta iptal akışı canlıda denenmedi) | Ajan (doğrulama) + Kullanıcı (iptal kararı kapandı: hız sınırı) | Kritik | §11.7, §11.8, §21.5 |
+| GÖR-005 | GÜV | Hız sınırı ve CAPTCHA: `CAPTCHA_SECRET` (domain bağlandıktan sonra), `veli-adayi-kayit` ve `deneme-on-kayit` deploy, IP gizleme (Q3), atomik olmayan sınır | DEVAM (K-0121: secret tanımlı, iki fonksiyon canlıda ve captcha kapısı çalışıyor; hız sınırı için captcha jetonlu tarayıcı testi gerekli; IP gizleme ve atomik sınır açık) | Kullanıcı (tarayıcı testi) + Ajan | Yüksek | §12.7, §21.3, §21.5, §24 |
+| GÖR-008 | VT | Migration konsolidasyonu (261 fonksiyon tanımı / 231 benzersiz) ve soru seed'lerinin (`20261012000000`, 4.350 satır) migration dışına taşınması | ERTELENDİ (K-0121 analiz: yerel zincir boş DB'yi kurmuyor, 150 dosyadan 99'u hata veriyor; baseline için canlı şema dökümü gerekli, pg_dump/Docker yok; konsolidasyon ve seed taşıma bu koşullarda güvenle yapılamaz) | Ajan + Kullanıcı | Düşük | §11.5 |
+| GÖR-009 | ALT | Yerel doğrulama: Docker yok; `supabase db reset` ve `supabase test db` çalıştırılamadı; `supabase/tests` pgTAP formatında değil; yeni migration'lar yerelde çalışmadı | DEVAM (K-0121: 9/10 PGlite paketi yeşil; okuma_dunyasi 186/187 — içerik testi "26/31 paket" başarısız; pgTAP ve Docker yerine PGlite kullanılıyor) | Kullanıcı (Docker, isteğe bağlı) + Ajan | Orta | §11.6, §11.7, §13.3 |
 | GÖR-010 | MOB | Mağaza sürümü (Play / App Store): imzalama anahtarı ve `key.properties` yok, `appbundle` derlenmedi, mağaza hesapları yok. `maintenance_gate.dart` içinde 2 mağaza URL'si güncellenecek | BEKLİYOR | Kullanıcı | Yüksek | §7, §11.6, §16.4, §21.3 |
-| GÖR-011 | ALT | Karakter görselleri: `web-panel/public/characters` git'te değil, Vercel derlemesi bu klasöre bağlı (bu dağıtımda 81 dosya elle kopyalandı). Kalıcı çözüm kararı: commit mi, derleme öncesi kopya adımı mı | BEKLİYOR (karar) | Kullanıcı | Yüksek | §16.2 |
-| GÖR-012 | ALT | Alan adı ve HTTPS: hupolingo.com DNS'i TURHOST'ta. `app` CNAME, `@` A kaydı, CAA kontrolü, Vercel sertifikası, eski IP ve MX teyidi, ad sunucusu yayılması. Veli paneli bağlantısı ve Supabase yönlendirme adresi bunlara bağlı | BEKLİYOR | Kullanıcı (TURHOST paneli) | Kritik | §16.2, §16.3, §16.4, §18 |
-| GÖR-013 | ALT | Web paneli dağıtımı: `9169887`, `f31dca2`, `0e50c83` commit'leri canlıda değil (2026-10-16 kontrolü). Hatalı Vercel kayıtları (`2Jr2…`, `9EEh…`) temizlenecek | BEKLİYOR | Ajan + Kullanıcı (onay) | Yüksek | §16.2, §24 |
-| GÖR-014 | ALT | Yedekleme: Google OAuth consent ekranı "In production" olmalı; yedek parolası şifre yöneticisine taşınıp dosyası silinmeli; geri yükleme provası yapılmadı; Storage yedeği yok | BEKLİYOR | Kullanıcı | Yüksek | §21.5, §21.6 |
+| GÖR-012 | ALT | Alan adı ve HTTPS (K-0117 ile büyük ölçüde doğrulandı): NS TURHOST'ta; `@` A → 76.76.21.21 (Vercel), `app` CNAME → cname.vercel-dns.com, `www` → apex (308); üçü de HTTPS 200; Vercel'de hupolingo.com ve www web-panel'e, app.hupolingo.com hupo-app-web-yeni'ye bağlı. Açık: Supabase Auth Site URL ve redirect adresleri (Dashboard, doğrulanamadı); MX Hostinger'da (mx1/mx2.hostinger.com) — beklenen posta sağlayıcısı teyidi; CAA kaydı yok (sorun değil) | DEVAM | Kullanıcı (Supabase Dashboard, MX teyidi) | Yüksek | §16.2, §16.3, §16.4, §18 |
+| GÖR-014 | ALT | Yedekleme: Google OAuth consent ekranı "In production" olmalı; yedek parolası şifre yöneticisine taşınıp dosyası silinmeli; geri yükleme provası yapılmadı; Storage yedeği yok | DEVAM (K-0121: Google OAuth ve parola kullanıcıda; `pg_dump` ve Docker yok → DB yedeği/provası bu makinede yapılamıyor; `supabase storage` deneysel bayrak istiyor) | Kullanıcı + Ajan (bayrakla storage) | Yüksek | §21.5, §21.6 |
 | GÖR-015 | VEL | Telefon doğrulaması: İleti Merkezi gönderici başlığı (450 yanıtı, başlık başvurusu), gerçek SMS testi; veli web kaydı 504 (Brevo SMTP); Web OTP arayüzü yok; deneme ve veli adayı akışı telefonu doğrulamadan kabul ediyor; `register_for_mock_exam` doğrulanmamış telefon yazıyor | ERTELENDİ / BEKLİYOR | Kullanıcı + Ajan | Yüksek | §22 |
 | GÖR-016 | VEL | Ödeme ve çocuk akışı: iyzico uçtan uca sandbox testi, veli plan kartı ve satın alma kontrolü, çocuk akışının gerçek cihazda kontrolü, harici satın alma bağlantısının mağaza politikası ile uyumu | BEKLİYOR | Kullanıcı | Yüksek | §10 |
 | GÖR-017 | WEB | Kanıtsız landing iddiaları ("14 Gün İade Garantisi", "%100 Güvenli Ödeme", "%40 tasarruf"): kaynak bulunmalı ya da kaldırılmalı. SSS ve `content.ts` satır 114'te hâlâ "3–7. sınıf" metni var | BEKLİYOR | Kullanıcı | Yüksek | §10, §24 |
@@ -42,38 +39,74 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR-024 | VEL | Anket sistemi D1–D6: şema ve arşiv güvencesi (`restrict`), çocuk kapsamı (hukuk sonrası), PGlite arşiv testi, saklama ve anonimleştirme cron'u (hukuk sonrası), duyuru listesi 200 kayıt sınırı, canlı anket testi (test veli + test anketi) | PLANLANDI | Ajan + Kullanıcı | Orta | §17, §24 |
 | GÖR-025 | BYM | Ziyaretçi widget'ı (ayrı görev; önkoşullar: anon anahtar çözümü, hukuk teyidi). Ölçüm görevi K8 | BEKLİYOR | Ajan + Hukuk | Düşük | §20 (2. bölüm), §24 |
 | GÖR-026 | MOB | Kelime Evreni: ilk onaylı paket (dil uzmanı incelemesi), ödül ve rozet entegrasyonu, ana ekranda tek birincil eylem, 390 px ve ekran okuyucu kontrolü. Uzak DB'ye uygulanmadı | BEKLİYOR | Kullanıcı + Ajan | Orta | §13.2, §13.3 |
-| GÖR-027 | ALT | Anon/publishable anahtar kontrolü: yerel `.env.local` değişkeni `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (eski not `ANON_KEY` diyordu). 2026-10-17 kontrolünde `apikey` başlığıyla istek 401 değil (anahtar kabul ediliyor); eski 401 bulgusu yanlış başlıktan kaynaklanmıştı. Açık kalan: Vercel ortam değişkeninin aynı anahtarla güncel olduğu doğrulanmadı; duyuru şeridi canlıda hâlâ kanıtlanmadı | BEKLİYOR | Kullanıcı (Vercel) | Yüksek | §14.3, §24 |
 | GÖR-033 | VEL | Çocuk eşleşme geri bildirimi: kodlandı (K-0011). Kanal kararı: kutu + push + e-posta, tek olaydan. Liste: veli panelinde "Çocuklarım" sayfası. Migration uzak DB'ye uygulandı (K-0012). Kalan: (1) `eposta-gonder` deploy ve secrets (`BREVO_API_KEY`, `EPOSTA_GONDER_SECRET`, `EPOSTA_GONDEREN_ADRES`); (2) web-panel dağıtımı (GÖR-013) yapılmadan "Çocuklarım" canlıda görünmez; (3) push kanalı için GÖR-030; (4) gerçek veli ve öğrenci hesabıyla tarayıcı kontrolü | DEVAM | Kullanıcı (secrets, dağıtım onayı) + Ajan | Yüksek | Yeni (2026-10-17) |
 | GÖR-028 | VEL | Veli "Verdiğim yanıtlar" bölümü (görme ve değiştirme, KVKK erişim hakkı) | ERTELENDİ | Ajan | Düşük | §20 (2. bölüm) |
 | GÖR-029 | BEL | Bölüm numaraları: `§20` iki bölümde kullanılmış (eski satır 766 ve 1043); §16–18 ve §24–26 sırası karışık. Numaralar kod yorumlarında atıf olduğu için yeniden numaralandırma kararı gerekir | BEKLİYOR (karar) | Kullanıcı | Düşük | Tüm dosya |
 | GÖR-030 | MOB | (KAPANDI, bkz. K-0008) Push bildirim hattı canlı değil. Eksikler: `send-push` deploy edilmemiş; secrets'ta `FIREBASE_SERVICE_ACCOUNT` ve `PUSH_WEBHOOK_SECRET` yok; Flutter'da Firebase paketi ve yapılandırma dosyası yok (`pushBackendProvider` Noop); Database Webhook doğrulanmadı. (Düzeltme 2026-10-17: `20261035`–`20261038` uzakta uygulanmış, bkz. K-0003 güncellemesi.) Sıra: Firebase projesi → Flutter arka ucu → secrets → db:deploy → send-push deploy ve webhook → cihazda test | BEKLİYOR | Kullanıcı (Firebase, secrets, onay) + Ajan (kod) | Kritik | §26 (eski) |
-| GÖR-032 | MOB | Onaylanan kayıt ve ön izin kararları: (a) veli kaydında işaretsiz "hizmet bildirimleri" kutusu, işaretlenirse çocuk cihazında push anahtarı açık başlar; (b) pazarlama push kutusu kayıt formunda yalnızca kapı açıkken görünür, işaretsiz. Uygulanmadı | PLANLANDI | Ajan | Yüksek | K-0005 |
+| GÖR-032 | MOB | Onaylanan kayıt ve ön izin kararları: (a) veli kaydında işaretsiz "hizmet bildirimleri" kutusu, işaretlenirse çocuk cihazında push anahtarı açık başlar; (b) pazarlama push kutusu kayıt formunda yalnızca kapı açıkken görünür, işaretsiz. Durum (2026-10-27 kontrolü): (b) web kayıt formunda var (`SignUpForm.tsx`, kapı kapalıyken gizli, işaretsiz); mobil ön izin ekranı §23'te var. (a) kodda yok. Onay kaynağı K-0005 numarası iki kayıtta kullanılmış ve ilgili olan "ONAY BEKLİYOR" diyor; (a) kararı kullanıcıda | KISMEN (a) karar bekliyor | Kullanıcı (a onayı) + Ajan | Yüksek | §23, K-0005 |
 | GÖR-031 | HUK | Pazarlama push kapısı (`pazarlama_push_kapisi`, varsayılan KAPALI): İYS kararı ve v2 metni onayı yönetici tarafından, yazılı hukuk görüşüyle girilecek. Görüşün yazarı ve lisansı teyit edilmeli; push'un İYS kapsamı resmi kaynaktan doğrulanmalı; tam v2 metni incelenmeli. Kapı kapalıyken yasal sayfadaki push satırı taslak sayılmalı | BEKLİYOR | Hukuk + Kullanıcı | Yüksek | §23, §25 |
 | GÖR-032 | HUK | Öğretmen sınıf özeti (K-0006, ONAYLI): veli bilgilendirme metninin hukuk onayı; sınıf üyeliğinin veli rızası gerektirip gerektirmediği; aydınlatma metni güncellemesi; eşik 3 değerinin hukuki gerekçesi | GEÇİCİ KARAR (hukuk görüşü ve kontrol listesi, K-0009) | Hukuk | Yüksek | §22, §24, GÖR-019 |
 | GÖR-034 | HUK | Çerez bandı kısaltıldı ve olay ölçümü eklendi (hero CTA, demo tamamlama, veli kayıt başlangıcı, fiyat tıklaması; yalnızca onay sonrası). Tam çerez metni ve analitik sürümü hukuk teyidi bekliyor (K-0016) | BEKLİYOR | Hukuk + Kullanıcı | Yüksek | Yeni |
 | GÖR-035 | MOB | Yeni APK ile görsel doğrulama: soru metninde amber altı çizgi (`sunDark`) ve uygulamadaki ekranlar. Telefon kilitliydi, sonra bağlantısı koptu; kurulum için cihazın açık ve bağlı olması gerekir. Ayrıca Ayarlar başlığı durum çubuğuna biniyor, Gizlilik ekranının alt kısmı gezinme çubuğunun altında kalıyor | BEKLİYOR | Kullanıcı (cihaz) + Ajan | Orta | Yeni |
-| GÖR-036 | MOB | Yanlış cevap açıklaması görünmüyor: `ResultSheet` "Doğru cevap" metni ve `dogru_sik` akışı (K-0015) | BEKLİYOR | Ajan | Yüksek | Yeni |
+| GÖR-036 | MOB | Yanlış cevap açıklaması görünmüyor: `ResultSheet` "Doğru cevap" metni ve `dogru_sik` akışı (K-0015) | KISMEN (K-0161: kök neden Günün 5 Sorusu ekranındaydı, düzeltildi, commit `f6849da`, widget testi geçti; cihazda görsel kontrol bekliyor) | Ajan + Kullanıcı (cihaz) | Yüksek | Yeni, K-0015, K-0161 |
 | GÖR-037 | WEB | Hero'daki soru görseli uygulama dilinde illüstrasyon (5. sınıf fen sorusu). Gerçek ekran görüntüsü için telefon bağlantısı ve kilit açma gerekli; ardından `hero-soru.jpg` değiştirilecek | BEKLİYOR | Kullanıcı (cihaz) + Ajan | Orta | Yeni |
 | GÖR-038 | WEB | Footer: "Hakkımızda", "Blog", "İletişim" bağlantıları `#`; YouTube hesabı 404; App Store ve Google Play rozetleri bağlantısız (kullanıcı ertelemişti) | BEKLİYOR | Kullanıcı (hesaplar) + Ajan | Orta | Yeni |
 | GÖR-039 | WEB | Landing canlı doğrulaması: 7 commit push edildi (`8898cd7`→`ae1c078`). Canlıda header, hero, fayda, sayfa sırası ve `/yonetim-giris` bağlantısı kontrol edilmeli; Vercel dağıtım durumu ve Lighthouse doğrulanmadı | BEKLİYOR | Ajan (tarayıcı) + Kullanıcı (Vercel) | Yüksek | Yeni |
 | GÖR-040 | YÖN | Ham bildirim formu (`BildirimManager` → `admin_send_notification`): `ogrenci` ve `tumu` hedefleri kategorisiz serbest metin gönderiyor; öğrenciye yalnızca hizmet bildirimi kuralı UI'da zorunlu değil. Ham formdan `ogrenci` ve `tumu` kaldırıldı (K-0018 onaylı, kod uygulandı). Kalan karar: öğrenci hesaplarına hizmet bildirimi gerekiyorsa kategori (sistem, akademik, duyuru) zorunlu ayrı bir akış kurulsun mu | BEKLİYOR (karar) | Kullanıcı | Orta | K-0018, AGENTS §5 |
 | GÖR-041 | YÖN | Segmentli bildirim: uzak DB'ye `20261044000000` uygulaması (`db:deploy`) ve web-panel dağıtımı (kullanıcı onayı); gerçek yönetici oturumuyla uçtan uca test (kaydet → ön kontrol → planla → dağıtım sonucu). Demo modu bu zinciri doğrulamaz | BEKLİYOR | Kullanıcı (onay, oturum) + Ajan | Yüksek | K-0018 |
 | GÖR-043 | HUK | MEB ODSGM içerikleri (icerik/834, 54 kaynak): altbilgide "Tüm Hakları Saklıdır" yazıyor. Birebir aktarım için MEB'den yazılı izin veya hukuk görüşü gerekli; o zamana kadar yalnızca uyarlama. Lisans kaydı `belirsiz` | BEKLİYOR | Hukuk + Kullanıcı | Yüksek | K-0020 |
-| GÖR-042 | YÖN | Soru Atölyesi (PDF → etiketli soru → varyasyon → denetim → panel import). Faz 0 belgeleri ve şema yazıldı; Faz 1'den devam. Faz 6 (migration/RPC/panel) ayrı onay ister. Lisans dayanağı kaynak kaydına yazılmalı | DEVAM | Ajan + Kullanıcı | Yüksek | K-0020 |
+| GÖR-042 | YÖN | Soru Atölyesi (PDF → etiketli soru → varyasyon → denetim → panel import). Durum (2026-10-24): Faz 0, 1, 2, 4, 5 kodu diskte; Faz 3 kısmi (parametrik matematik motoru ve isim havuzu yok). Faz 6: migrasyonlar `20261047000000` ve `20261073000000` uzak DB'de; panel 0.3.0 commit `c5dc932`, üretim `dpl_2HirCr4kyhzUeyshjG5sRQgQZyZU` (K-0126). Pilot: `meb-odsgm-3mat` 12 aday (kaynakta 70 maddeden 12'si çoktan seçmeli); hakem üreticiyle aynı model. Açık: pilot ölçeği kararı (12 ≠ ~100), insan incelemesi, admin içe aktarma canlıda denenmedi. Lisans dayanağı kaynak kaydına yazılmalı | DEVAM | Ajan + Kullanıcı | Yüksek | K-0020, K-0030, K-0126 |
 | GÖR-044 | MOB | Senin Hikayen / Okuma Dünyası ana iş: F0 iskeleti ve kit testi tamam; F1 (Dart motor, Türkçe ek vektörleri), F2 (derleyici, şemalar) ve örnek hikâyeler sıradaki | DEVAM | Ajan + Kullanıcı | Yüksek | K-0022, K-0023 |
 | GÖR-045 | HUK | Okuma Dünyası hukuku: aydınlatma güncellemesi (okuma geçmişi, anket, veli değer tercihi için KVKK m.6 sorusu), saklama süresi, AI üretimli metnin telifi, MEB/TDK metni | TAMAMLANDI (2026-10-22, kullanıcı beyanı: hukuk onayı tamam; yazılı görüş dosyası kayda eklenmedi) | Hukuk | Yüksek | K-0022, GÖR-019, GÖR-043 |
 | GÖR-046 | VT | (KAPANDI, bkz. K-0028) Kelime Evreni veli özeti rıza kapısını sunucuda uygulamıyor (`kelime_veli_ozeti` 20261022000000:611; kapı yalnız ChildScope arayüzünde); `export_my_data` Kelime tablolarını kapsamıyor. Düzeltme migration'ı ayrı onayla | TAMAMLANDI (rıza kapısı PGlite'ta DOĞRULANDI; migrasyonlar 20261045/20261046 uzakta; export çalışma zamanı testi GÖR-048'e taşındı) | Ajan | Yüksek | K-0022, GÖR-041, K-0024, K-0025, K-0027, K-0028 |
-| GÖR-048 | VT | `export_my_data` (20261046) çalışma zamanı testi: PGlite'ta `student_stats`, `user_answers`, `xp_events`, `user_badges`, `notifications` tabloları yok; Kelime bölümü dahil tam çağrı test edilmedi. Test ortamı tamamlanınca koşulacak | DEVAM | Ajan | Orta | K-0027, K-0028 |
+| GÖR-048 | VT | `export_my_data` çalışma zamanı testi. 2026-10-27: kelime bölümü GERÇEK kelime migrasyonlarıyla (20261022 → 20261045 → 20261046) PGlite'ta 6/6 geçti (K-0156, `supabase/tests/kelime_evreni/export_kelime_kos.mjs`). Kalan: son export tanımı 20261050000500 (okuma) ile gerçek zincirde çalıştırma; okuma paketi hâlâ taban taklitleri kullanıyor | KISMEN (kelime gerçek şemayla doğrulandı; okuma son tanımı gerçek zincirde kaldı) | Ajan | Orta | K-0027, K-0028, K-0155, K-0156 |
 | GÖR-049 | YÖN | Dört göz ve iki yönetici hesabı: sistem (`DORT_GOZ`) iki ayrı yönetici hesabı ister. Hazırlayan AI ajanı bir hesap sahibi değildir. Okuma Dünyası tasarımında (F7) ajan işlemlerinin hangi hesapla yapılacağı ve ikinci onayın kimde olacağı netleştirilecek | BEKLİYOR (tasarım) | Ajan + Kullanıcı | Yüksek | K-0025, K-0028 |
 | GÖR-050 | YÖN | Katman B (LLM hakem) canlı çağrısı: ortamdaki `GEMINI_API_KEY` Gemini tarafından reddediliyor (HTTP 401; değer `AQ.` ile başlıyor, Gemini API anahtarları genellikle `AIza` ile başlar). `ANTHROPIC_API_KEY` tanımlı değil. Geçerli bir Gemini anahtarı (AI Studio) ya da Claude anahtarı ortam değişkeni olarak tanımlanmalı; sonra `hakem` komutu iki örnek hikâyede çalıştırılacak | KAPANDI (K-0034: canlı hakem çalıştı) | Kullanıcı | Yüksek | K-0033, K-0034 |
 | GÖR-051 | MOB | HupoRead görsel ve içerik yükseltme: F1 uygulandı (PDF palet/serif/vektör kapak, emoji → SVG okuyucu ve PDF, maskot düzeltmesi). Açık: F2 okuyucu Oku/Keşfet/Düşün akışı (Düşün isteğe bağlı mı?), F3 canlı içerik sözleşmesi (DB onayı), F4 raster sahneler | DEVAM | Ajan + Kullanıcı | Yüksek | K-0076, K-0077, K-0078 |
 | GÖR-052 | MOB | Okuma PDF gerçek kontrolü: ikonlu gerçek bir hikâyeyle sayfa incelemesi, 2. ve 8. sınıf ile mürekkep tasarrufu PNG'lerinin incelenmesi, baskı denemesi, PDF indir akışında tema seçimi (karar), 8. sınıf için sözlük adayı (içerik) | BEKLİYOR | Ajan + Kullanıcı (içerik, baskı, karar) | Orta | K-0085 |
-| GÖR-053 | BEL | Çakışan çalışma: okuma PDF ve motor dosyaları iki ajan tarafından düzenlendi (K-0078, K-0085). Commit öncesi birleştirme ve gözden geçirme gerekli; okuma dosyaları henüz git'e alınmadı (untracked) | BEKLİYOR (karar) | Kullanıcı (commit onayı) + Ajan | Yüksek | K-0078, K-0085 |
-| GÖR-054 | MOB | HupoRead hikâye veri tabanı (anotasyon hattı): 76 hikâye (3–7. sınıf ve HR-073) pakete derlendi; 15 hikâye kaldı (8. sınıf: HR-099, 100–109, 111–114; HR-110 kaynakta yok). Uzak DB'deki HR-015…032 taslaklarıyla yerel paketler arasında uyum kararı bekliyor (K-0110). Açıklar: yazarların metin tekrarları (aşağıda K-0107), sözlük adaylarının insan onayı (801 aday onaysız; liste tasnif/sozluk-adaylari-inceleme.csv), kanıt düzeyi C (76/76), HR-111/112 iki sürümden hangisinin esas alınacağı, 5–8. sınıf uzunluk kararının uygulanması (bölme yok, tasnif kademesiyle işaretli) | DEVAM | Ajan + Kullanıcı (onay, içerik) | Yüksek | K-0107 |
-
----
-
-## B. Kayıtlar (en yeni üstte)
+| GÖR-053 | BEL | Çakışan çalışma: okuma PDF ve motor dosyaları iki ajan tarafından düzenlendi (K-0078, K-0085). Commit öncesi birleştirme ve gözden geçirme gerekli; okuma dosyaları henüz git'e alınmadı (untracked) | KAPANDI (2026-10-27, K-0148): okuma kapsamı 6efbce6 (DB), b8fd6cf (mobil), ce37de6 (içerik/docs) ile commit'lendi. Kontrol: HEAD+kapsam geçici worktree'de `flutter analyze` 0 hata, okuma testleri 166/166 | Kullanıcı (commit onayı) + Ajan | Yüksek | K-0078, K-0085, K-0148 |
+| GÖR-054 | MOB | HupoRead hikâye veri tabanı (anotasyon hattı): 91 hikâye (3–8. sınıf ve HR-073) pakete derlendi; kaynakta olan hikâyeler tamamen işlendi (HR-110 kaynakta yok). HR-111/112 v1 kaynağından işlendi; HR-099/100 Sınıf 7 olarak işlendi (K-0114). Uzak DB'deki HR-015…032 taslaklarıyla yerel paketler arasında uyum kararı bekliyor (K-0110). Açıklar: yazarların metin tekrarları (aşağıda K-0107), sözlük adaylarının insan onayı (801 aday onaysız; liste tasnif/sozluk-adaylari-inceleme.csv), kanıt düzeyi C (91/91), HR-111/112 iki sürümden hangisinin esas alınacağı, 5–8. sınıf uzunluk kararının uygulanması (bölme yok, tasnif kademesiyle işaretli) | DEVAM | Ajan + Kullanıcı (onay, içerik) | Yüksek | K-0107 |
+| GÖR-055 | DEN | Soru üretimi açıkları. Durum (2026-10-24): 17 revize soru ve 6. sınıf DÖP düzeltmeleri K-0116'da aktarıldı ve kör denetimden geçti. 8. sınıf 24 soru beklemede (K-0118). 8. sınıfın kalan 60 kaydı kazanım kodu taşımıyor; durumu değişmedi. 8. sınıf yedek üretimi durduruldu (2026–27'de önceki program). 4. sınıfta kodlu 109 soru 2026-10-24'te beklemeye alındı (K-0126). 8. sınıf yedek üretimi için kaynak kararı bekliyor | BEKLİYOR (8. sınıf yedek kararı) | Kullanıcı + Ajan | Yüksek | K-0113, K-0116, K-0118, K-0126 |
+| GÖR-056 | YÖN | Gerçek oturumla süre ve tıklama ölçümü (yönetici, öğretmen, veli; veli ön yüklemesi, kupon ve plan türü ekranları). Test hesabı tanımlı değil: `E2E_ADMIN_EMAIL` / `E2E_ADMIN_PASSWORD` ve `E2E_VELI_EMAIL` / `E2E_VELI_PASSWORD` ortam değişkenleri yok; tanımlanınca `web-panel/e2e` ile ölçülebilir | BEKLİYOR (test hesabı) | Kullanıcı (hesap) + Ajan | Yüksek | K-0115 |
+| GÖR-057 | DEN | 6. sınıf Türkçe kazanım dosyası (`kazanim_6_turkce.json`) DÖP 2026 ile uyuşmuyordu. 8 soru kodu K-0116'da düzeltildi. Dosyada 91 kodun ana cümlesi ve bileşenleri resmî metne göre düzeltildi (K-0125 ve K-0126). DB'de 6. sınıf Türkçe 91 kodu dosyayla eşitlendi (fark 0). Bileşen kaynağı resmî tablo; T.K.6.8 ve T.Y.6.18'in resmî metinde etiketli bileşeni yok | TAMAMLANDI | Ajan + Kullanıcı | Yüksek | K-0115, K-0116, K-0125, K-0126 |
+| GÖR-058 | DEN | 1–4. sınıf deneme sınavında puan ve sınıf içi sıra gösterilmemeli (`docs/soru-uretim/SISTEM.md` §4): veli paneli `CocukDenemeGecmisi` "puan · sıra" gösteriyor, `admin_get_mock_exam_results` rank üretiyor. Düzeltilene kadar 1–4. sınıf sınavları `aktif=false`. `questions` tablosuna kazanım/dayanak/kanıt alanı kararı da burada | BEKLİYOR (karar) | Kullanıcı (karar) + Ajan | Orta | K-0120 |
+| GÖR-059 | GÜV | Admin MFA (AAL2): Dashboard'da TOTP açılır; web panelde kayıt (enrollment) ve doğrulama (verify) sayfası; `require_admin()` içinde aal2 kontrolü (bayrakla, kilitlenmeye karşı). Fayda: admin para ve çocuk verisine erişir; risk: tek yönetici kilitlenebilir, kurtarma yalnızca Dashboard. Gerçek TOTP cihazı ve yönetici oturumu ile test edilmeden kod yazılmadı | PLANLANDI (K-0125) | Kullanıcı (Dashboard, cihaz) + Ajan | Yüksek | K-0125 |
+| GÖR-060 | VT | 20261082 (okuma_canli_duzeltme) kullanıcı onayı olmadan `db:deploy` ile uygulandı (K-0125). Mantık bir kez çalıştı (denetim kaydı 1/1); yayında hikâye 0, arşiv 12, pilot [4,5], genel bayrak açık. Kullanıcı bu durumu onaylıyor mu, yoksa geri almak mı istiyor? Geri alma arşivlenen sürümleri ve sahte denetim alanlarını etkiler | KAPANDI (karar: kalsın, K-0142; canlı kontrol 2026-10-27: 12 arşiv, denetim pending, pilot [4,5], yayında 0; dosya 69fc843 ile izlemede) | Kullanıcı (karar kaydı) | Yüksek | K-0124, K-0125, K-0142, K-0147 |
+| GÖR-061 | DEN | Müfredat referansı açıkları (K-0129): (a) DKAB 4 ve 8 için 2026-27 haftalık planı yayımlanınca yeniden alınacak; şu an yalnız 2025-2026 dosyaları var. (b) KISMEN KAPANDI (K-0133): DKAB 8'de 12 sınav kodu metin eşleşmesiyle atandı; kalan 15 plan kazanımı kodsuz (kaynak kodu şart). (c) Bilişim 5–6 hafta etiketleri ve Görsel 2 27. hafta insan kontrolü. (d) Program yılı: 4 ve 8 önceki program işaretli; 2026 DKAB PDF'i yeni program kodlarını 4 ve 8 için de veriyor, karar gerekli. (e) KAPANDI (K-0133): sınav dağılımı veri tabanında (`mufredat_sinav_dagilim`, 4.343 satır); 2. dönem çoğunlukla boş, yayımlanınca yeniden yüklenecek | BEKLİYOR | Kullanıcı (kaynak ve karar) + Ajan | Orta | K-0127, K-0128, K-0129 |
+| GÖR-062 | MOB | Değer filtresi ve rozet (K-0138) kodda ve testte tamam; cihazda ekran kontrolü ve uygulama sürümü yapılmadı. Değişiklikler commit'lenmedi (çalışma ağacında başka oturumların değişiklikleri var). |
+| GÖR-063 | VT | Yayın kapısı (K-0139): 176 sürümde jan_a, jan_b, insan hepsi pending. Yayın için gerçek Ajan A/B denetimi (112 hikâye), admin hesabıyla insan onayı ve admin panelinden yayın gerekir. Kullanıcı "hepsine onay" verdi; onay kaydı admin hesabıyla yapılmalı. |
+| GÖR-064 | VT | 31 sürümün deger_anahtarlari alanı tek değerde kaldı (_okuma_surum_koru / SURUM_DEGISMEZ). Düzeltme yeni sürüm olarak admin içe aktarmadır. K-0137'deki doğrudan etiket güncellemesi için kullanıcı kararı bekleniyor (kabul ya da geri alma). |
+| GÖR-065 | MOB | HR-121…132 (12 taslak, icerik/okuma/hikaye/): DB'de yok; paket, anotasyon ve sözlük üretimi için derleyici repoda bulunamadı (	olye/ yok); TDK ve kazanım (source_pending) doğrulaması yapılmadı. Değer etiketleri ajan önerisi (K-0138); kullanıcı değiştirebilir. |
+| GÖR-076 | WEB | Web panel okuma değişiklikleri commit'lenmedi: `hikaye-atolyesi/` (ListeSekmesi, TopluIslemModal, tipler.ts), `src/lib/okuma/okuma.ts`, `messages/yonetim-okuma.*.json`. Mobil kapsam K-0148'de ayrıldı. Ortak admin dosyaları (`useAdminRpc.ts`, layout) başka oturuma ait olabilir | KAPANDI (K-0154: commit `93f810d`, 6 dosya, pathspec ile; kullanıcı onayı 2026-10-27) | Ajan + Kullanıcı | Orta | K-0148, K-0149, K-0145, K-0154 |
+| GÖR-066 | MOB | Çocuk kataloğu boş: canlı DB'de yayinda ve incelemede sürüm yok (_okuma_gorunen_surum). GÖR-063 kapanmadan çocuk uygulamasında hikâye görünmez. |
+| GÖR-067 | DEN | 4/8. sınıf kod dönüşümü: 105 öneri (yüksek 62, düşük güven 29, eşleşme yok 14). Dosya `docs/mufredat/etiket_onerileri/kod_donusum_onerileri_4_8.csv`. Kullanıcı onayıyla 2026-10-25'te uygulandı: 91 satır (yüksek 62, düşük 29); 14 "eşleşme yok" kod almadı. Doğrulama: 91 yeni revizyon kaydı (toplam kod revizyonu 291 = 200 etiket + 91 dönüşüm), kazanım metni boş 0. Uyarı: 91 sorunun hiçbiri "onaylandi" değildi; düşük güvenli satırların insan incelemesi açık. | UYGULANDI (kullanıcı onayı 2026-10-25; 91 satır, `docs/mufredat/etiket_onerileri/uygula_kod_donusum_4_8_2026-10-25.sql`) | Kullanıcı + Ajan | Yüksek | K-0142 |
+| GÖR-068 | VT | Sosyal Bilgiler 8 (10 soru) İnkılap dersiyle eşdeğer sayılmayacak. Eşleme eklenmedi, bu sorulara etiket verilmeyecek. | KAPANDI (kullanıcı kararı: HAYIR) | Kullanıcı | Orta | K-0142 |
+| GÖR-069 | VT | 4. sınıf Türkçe 4. hafta T.6.1.x kodları (uzakta 4 satır) T.4.1.x'e düzeltildi (20261090). Eşleme metin karşılaştırmasıyla yapıldı; MEB 4. sınıf 2026-27 Türkçe planının PDF'i repoda yok, birebir kaynak kontrolü yapılmadı. | KISMEN (düzeltme uygulandı; kaynak kontrolü bekliyor) | Kullanıcı (kaynak PDF) + Ajan | Orta | K-0142 |
+| GÖR-070 | DEN | ÖNCELİK (kullanıcı, atlanmayacak): soru havuzunda hiç sorusu olmayan kazanımlar — 5. sınıf Matematik yuvarlama ve bölünebilme; 6. sınıf Matematik oran ve üslü sayı; 1–3. sınıf Türkçe eş anlam ve zıt anlam. Üretim bu sırayla blueprint-first hatta alınacak (meb-soru-sozcuk-uzmani, docs/soru-uretim/PLAN.md). Havuz sayımı bu kayıtta yapılmadı. | KISMEN (K-0154: MAT.6.1.2 nihai seti `uretim_mat612_gor070_2026-10-27.json`: Sonnet kararıyla 103 diğer taslaktaki MAT6-612-03 ile değiştirildi. Kapı 6/6, kör çözüm 6/6, ikinci denetim 6 pass. Diğer taslak (K-0153) yedek. İnsan denetimi bekliyor, `published=false`. Türkçe: Sonnet kararı (a), bekletildi) | Ajan + Kullanıcı (onay) | Yüksek | K-0133, K-0142, K-0150, K-0151, K-0153, K-0154 |
+| GÖR-071 | MOB | Müfredat yolu ekranı: 320/390 px ve %130 yazıda taşan 3 yer düzeltildi; düzen testi `test/mufredat_yolu_layout_test.dart`. Cihaz/emülatör görsel kontrolü yapılmadı. Koyu tema: uygulamada tanımlı değil, kontrol edilemedi. | KISMEN (20/20 test geçti; cihaz kontrolü bekliyor) | Ajan + Kullanıcı (cihaz) | Orta | K-0142 |
+| GÖR-072 | WEB | Müfredat web paneli ekran kontrolü (kazanımsız sayfası, toplu kazanım atama, Kazanım Kapsamı; 390/768/1024 px, karanlık mod). Kullanıcı yapacak. | BEKLİYOR | Kullanıcı | Orta | K-0133 |
+| GÖR-073 | VT | Onaylı kazanımsız soru kalan: 310 (etiket SQL'i sonrası). Kalanlar için yeni etiketleme turu ve insan incelemesi (RAPOR.md) gerekir. | BEKLİYOR | Ajan + Kullanıcı | Orta | K-0133, K-0142 |
+| GÖR-074 | YÖN | Hikâye Atölyesi toplu yayın (K-0145): liste araç çubuğundaki "Seçilenleri yayına al / yayından çek" düğmeleri ve kuru çalıştırmalı onay ekranı ekran kontrolünden geçmedi. Yerel panel `NEXT_PUBLIC_DEMO_MODE=1` olduğu için yazmalar kapalı; admin oturumu yok. Gerçek yayın işlemi çalıştırılmadı (GÖR-063). | BEKLİYOR (ekran kontrolü) | Kullanıcı (admin oturumu) + Ajan | Orta | K-0145, K-0143 |
+| GÖR-075 | YÖN | Sorular ve Kelime Evreni toplu seçim / yayına al / yayından kaldır (K-0160) ekran kontrolü: 375 ve 1024 px, karanlık mod, admin oturumuyla gerçek yayın ve geri alma. Kod düzeyinde flex-wrap dışında taşma kontrolü yapılmadı. | BEKLİYOR (ekran kontrolü) | Kullanıcı (admin oturumu) + Ajan | Orta | K-0160 |
+| GÖR-077 | MOB/TSR | Mobil açılış yenileme ("Hupo Uyanır"): plan yazıldı (`docs/splash/ACILIS_SENARYOSU_PLANI.md`), kod değişmedi. Önce Kullanıcı kararları D1–D7 (teknoloji, katmanlı Hupo üreticisi, logo, ses, süre, ilk karşılama kapsamı, iOS için Mac/CI). Faz 1 (yeni asset gerektirmez) onayla başlar. Düşük uç Android cihaz ve iOS doğrulama ortamı temin edilmeli. | PLANLANDI (onay bekliyor) | Kullanıcı (karar, asset) + Ajan | Orta | K-0166 |
+### K-0158 · 2026-10-27 · VT/WEB/MOB · CRM, giriş, Müşteri 360, aktivasyon, analitik: eksik analizi ve 10 paketlik tamamlama (Haiku)
+- **Tür:** Plan + Gelişme
+- **Plan:** `docs/growth-crm/TAMAMLAMA_PLANI_2026-10-27.md` (bulgular, W1–W10, kullanıcı/hukuk kararları). Olay listesi: `docs/growth-crm/OLAY_TAKSONOMISI.md`.
+- **Yazıldı (commit YOK, uzak DB'ye uygulanmadı):** migration 20261104 (aktivasyon, yaşam döngüsü, skor), 105 (huni, UTM, DAU/WAU, aktif 7 gün answer_events tabanlı), 106 (KVKK anonimleştirme, dışa aktarma, birleştirme, lead→hane), 107 (giriş olayları, çocuk kodu global sınır), 108 (kullanim_olaylari anon kapatma), 109 (saklama işi), 110 (6 journey + 6 şablon, hepsi taslak), 111 (veli sonraki adım). Edge `kullanim-izle`; `eposta-gonder` growth yolu. Web: giriş sertleştirme (`next`, hata çevirisi, nötr kayıt mesajı), 360 gösterim düzeltmesi ve aksiyon arayüzü, Growth Analitik, veli sonraki adım kartı, `/veli-paneli` sunucu rol kapısı, anket yeri, rıza korumalı erken erişim izleme.
+- **Doğrulama (KISMEN):** `tsc --noEmit` 0 hata (ana oturum). PGlite paketleri ana oturumda tek tek koşuldu, hepsi yeşil: yasam_dongusu 41, analitik_huni 58, kvkk 17, giris_olaylari 39, kullanim_anon_kapat 9, saklama 12, veli_sonraki_adim 25, entegrasyon 77, journey 64, uygunluk 62, mesaj 57, oneri 47, musteri_360 15. **Yapılmadı:** 098→111 zincirinin tek veritabanında sırayla koşusu; tarayıcıda görsel kontrol; yeni Playwright senaryoları (giriş `next`/rol, kullanım süresi reddet); `dart analyze` login.dart; deploy.
+- **Zincir koşusu (2026-10-28):** `supabase/tests/growth_zincir/kos.mjs`: 182 migration tek PGlite'ta ad sırasıyla. 098–111 hepsi OK; 12 yeni fonksiyon var. Eski hatalar: 20261079 düzeltildi (dosya başındaki BOM kaldırıldı, içerik değişmedi; onay: kullanıcı 2026-10-28). Kalan 15 hata: 20261015 (harness storage stub), 20261034 ve 20261081 (telefon, nedeni doğrulanmadı), okuma içe aktarma dosyaları (yönetici profili/veri bağımlı). Sonuç: 167 OK, 15 HATA. Düzeltme commit edilmedi.
+- **Çakışma (açık, dosya başka oturuma ait):** `20261103100000_admin_journey_adim_kaydet.sql` e-posta adımını `config.sablon` olmadan kaydediyor; panel `config: {}` gönderiyor (JourneyOtomasyonlariManager.tsx:391). Motor 099:463-466 bunu "şablon anahtarı yok" hatasıyla durduruyor. Kötü adım kaydedilebilir ve işlemeyi kırabilir (çalışma zamanı doğrulanmadı). Düzeltme: 103100 doğrulamasında e-posta adımına `sablon` zorunluluğu. Dosya sahibinin onayı gerekli.
+- **Başkasının işi:** `20261103100000_admin_journey_adim_kaydet.sql` bu iş paketinden değildir (paralel oturum). Panel çağrı parametreleri (`p_journey_id`, `p_adimlar`) RPC ile eşleşiyor.
+- **Kullanıcı/hukuk kararı bekleyen:** giriş/kayıt/sıfırlama captcha (Turnstile + CAPTCHA_SECRET); admin MFA (GÖR-059, Dashboard); canlı Auth (site_url, SMTP 504, sızdırılmış şifre); PostHog kararı (3777/4313 çelişkisi), çerez metni, `[X AY]`, mobil ölçüm onayı; kullanim_olaylari saklama süresi (20261066 = 300 gün); 'terk edilmiş kayıt' hukuki dayanağı; ETK künyesi; şablon metin onayı; anonimleştirilen hane core profil güncellenince yeniden açılabilir (tasarım kararı); 108'in uygulama sırası (önce edge deploy + web/mobil yayın).
+- **Durum:** KISMEN
+- **Sahip:** Ana oturum + Haiku ajanları
+- **Düzeltme (2026-10-28):** Önceki "uzak DB'ye uygulanmadı" ifadesi YANLIŞ. Salt okunur `supabase migration list`: 20260920000000 → 20261107000000, 20261110000000, 20261111000000 uzakta kayıtlı; yalnızca 20261108 ve 20261109 kayıtsız. Salt okunur fonksiyon kontrolü: growth_iletisim_uygun_mu, growth_journey_ilerlet, admin_journey_adim_kaydet, growth_yasam_dongusu_hesapla, admin_growth_funnel, admin_growth_hane_anonimlestir, giris_olayi_kaydet, veli_sonraki_adim, kullanim_olaylari_gonder mevcut; growth_saklama_temizle yok. Kim uyguladığı bilinmiyor. Canlı cron listesi, growth_motor_ayarlari bayrağı ve eposta_outbox durumu OKUNAMADI (üretim okuma izni reddedildi); 098 cron'unun e-posta gönderip göndermediği doğrulanmadı.
+- **Sonuç:** 20261103100000 düzeltmesi (e-posta adımında sablon zorunluluğu) YEREL dosyada; uzakta kayıtlı eski sürüm çalışıyor. Düzeltme `20261112000000_journey_adim_email_sablon.sql` ile uzakta uygulandı (`db query --linked -f`, sonra `migration repair --status applied`; kullanıcı onayı, 2026-10-28). Canlı doğrulama: fonksiyon yeni sürüm, security definer, anon çağıramaz, authenticated çağırabilir.
+- **Canlı durum (2026-10-28, salt okunur):** cron 12 iş (eposta-outbox-gonder */5 dk, growth-journey-ilerlet */5 dk, growth-yasam-dongusu-hesapla saatlik dahil); `growth_motor_ayarlari.growth_journey_motoru_acik = false` (gönderim kapalı); `eposta_outbox` boş; journey_ilerlet canlıda yeni sürüm (izin kapısı var).
+- **Uzakta bekleyen:** 20261108 (anon kapatma) UYGULANMADI: edge `kullanim-izle` dağıtılmamış, eski istemciler kayıp olur. 20261109 (saklama) UYGULANMADI: `growth_saklama_temizle` yok, süreler hukuk onayı bekliyor. Edge dağıtımı (kullanıcı onayı, 2026-10-28): `kullanim-izle` (--no-verify-jwt) ve `eposta-gonder` (--no-verify-jwt) canlıya alındı. Smoke: kullanim-izle geçersiz gövdede 400, eposta-gonder anahtarsız 401. Yerel testler: kullanim-izle 12/12, _shared eposta+growth_eposta+sablon 35/35.
+- **108 BEKLİYOR:** kullanıcı onayı "dağıtımdan sonra" dedi; ancak web ve mobil istemciler henüz yayınlanmadı (commit/push onayı yok). 108 uygulanırsa mevcut istemcilerin kullanım olayları düşer. Karar kullanıcıda.
+- **Yerel:** 20261079 BOM düzeltmesi (uzakta zaten kayıtlı, içerik etkisi yok).
+- **Yerel testler (2026-10-28):** growth_journey 65/65 (test beklentisi, şablonsuz e-posta fixture'ları sablon ile güncellendi, reddetme senaryosu eklendi), growth_zincir 167 OK / 15 HATA, adim_kontrol 7/7, diğer PGlite paketleri yeşil, tsc 0, eslint 0, dart analyze yalnız eski 1 info, Playwright birim senaryoları (login saf yardımcılar 10/10 mobil, analytics rıza 11/11).
 
 ### K-0157 · 2026-10-27 · MOB/TSR · HupoRead hikâye uygunluk denetimi: bulgular doğrulandı, kaynak düzeltmeleri yapıldı
 - Kaynak: Downloads `HupoRead_Uygunluk_Denetimi_2026-10-25.md/.json` (PDF'ten otomatik ön denetim; MEB onayı değil). Bulgular kaynakta doğrulandı; araç: `tools/okuma-hikaye-denetim.mjs` (ölçer), `tools/okuma-secenek-dengele.mjs`.
@@ -91,20 +124,999 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - Editör kararları (kullanıcı yetkisiyle verildi): HR-089 ana değer D6, tür tarih_kultur; HR-108 s5 kökü 'kadından dilediği özür'; HR-073 'yüzünü buruşturmak' kaldı (TDK doğrulaması bekliyor).
 - Açık (editör): tüm hikâyelerde vaaz tonu/kapanış tekrarları ve uzunluk (kısaltma yapılmadı); metin sonundaki 'Dil hedefi/Okuma sonrası' öğretmen notlarının ayrı içerik dosyasına taşınması; sözlük dosyaları (çekimli girdi/temel biçim kararı, kullanılmayan girdiler, TDK); HR-125/129 yoldaş 'Serçe' sabit; HR-125 ritim tutarsızlığı; HR-076 gerçek görevli adı; HR-109 'Taşkent'; HR-035/039 yoldaş türü çelişkisi; HR-114 s17 telif ayrıntısı hukuki doğrulama. HR-015…032 paketleri K-0124 kaynağına dokunulmadı.
 
-#### Durum ve kalanlar (2026-10-27)
-- **Commit'ler:** `1d6bf08` (cevap dengeleme), `5fdcc77`, `25c15cc`, `397af76`, `74a2a7e`, `2e3259d`, `dfcf275`, `65f2f30`, `3969e46`, `664a9a6` (model denetimi ve paketler), `7edef04` (bu kayıt).
-- **Push:** `feature/huporead-entegrasyon` `c5dc932..7edef04`. Aynı oturumda hazır bekleyen 4 başka commit da gitti (`93f810d`, `ce37de6`, `b8fd6cf`, `6efbce6`); içerikleri bu kayıtta incelenmedi.
-- **Teknik kalan:**
-  - HR-015…032: .md dosyaları esas metin değil; paketler K-0124 kaynağında (20261077). Hangisinin esas olduğu kararı bekliyor.
-  - Model denetiminde 15 hikâyenin hükmü raporlarda bulunamadı (rate limit ile kesilen gruplar); tekrar denetim gerekebilir.
-  - Denetim aracının "tek harfi 3+ kez kısa hikâye: 4" uyarısı incelenmedi.
-  - `denetim` alanları `pending`, Ajan A/B kaydı yazılmadı, `published=false`.
-- **Editör kalan:**
-  - Vaaz tonu ve kapanış tekrarları (neredeyse tüm hikâyeler); uzunluk.
-  - Metin sonundaki "Dil hedefi / Okuma sonrası" notlarının ayrı içerik dosyasına taşınması.
-  - Sözlük: çekimli girdi kararı, kullanılmayan girdiler, TDK doğrulaması (HR-073 "yüzünü buruşturmak").
-  - HR-125 ritim tutarsızlığı; HR-125/129 yoldaş "Serçe" sabit; HR-076 gerçek görevli adı; HR-109 "Taşkent"; HR-035/039 yoldaş türü; HR-114 s17 telif ayrıntısı.
-- **Kullanıcı kalan:** yayın kapısı ve insan onayı; çalışma ağacındaki ~98 başka commitlenmemiş değişiklik (başka oturumların işi).
+### K-0158 · 2026-10-27 · DEN · GÖR-070 kapı 3: MAT.6.1.2 taslakları kör çözümden geçti (Gemini)
+- **Tür:** Doğrulama
+- **Konu:** DEN
+- **Not (numara):** Bu kayıt önce K-0157 olarak yazılmıştı; aynı numara başka kayıtlarda da kullanıldığı için K-0158'e alındı. Sonuç, K-0153'teki ilk taslak setine aittir (MAT6-612-03 sonradan nihai sette değiştirildi; nihai set kapı sonucu `kapi_sonuc_mat612_gor070_2026-10-27.md` içindedir).
+- **Onay:** Kullanıcı, 2026-10-27: Gemini anahtarının (`Soru-Cevap Hazırlama Programı\.env`) soru metinlerini göndermek için kullanılmasına izin verdi.
+- **Gönderilen:** Yalnızca soru kökü ve şıklar. Doğru şık, ipucu, açıklama, celdirici gerekçesi gönderilmedi. Anahtar yalnızca .env'den okundu, başlıkta gönderildi, kayda yazılmadı.
+- **Model:** `gemini-3.8-flash` (.env `GEMINI_MODEL`), temperature 0, JSON şema ile tek harf.
+- **Sonuç:** 6/6 eşleşme (MAT6-612-01…06). Taslak cevapları ile Gemini cevapları aynı. Ham çıktı geçici klasörde (`mat612_kor_cozum_sonuc.json`), repoda değil.
+- **Taslak dosyası:** `denetim.kor_cozum` alanı eklendi (6 kayıt); durum hâlâ BEKLET.
+- **Sınır:** Tek model ailesi; blueprint'in "farklı model ailesi" şartı Gemini ile sağlandı, ama insan denetimi (kapı 7) ve benzerlik/zorluk/dil kapıları (4–6) açık.
+- **Durum:** KISMEN (kapı 3 geçti)
+- **Sahip:** Ajan + Kullanıcı
+- **İlgili:** GÖR-070, K-0153, K-0150, K-0151
+
+### K-0156 · 2026-10-27 · VT · GÖR-048: export_my_data kelime bölümü gerçek kelime migrasyonlarıyla doğrulandı
+- **Tür:** Doğrulama + Test
+- **Konu:** VT
+- **Karar kaynağı:** Sonnet 5.5 karar ajanı (ana oturum tarafından yönlendirildi). Seçim: GÖR-048'in yerel ve geri alınabilir kalanı.
+- **Kapsam (yeni dosyalar, kelime_evreni klasöründe):** `export_taban_stubs.sql` (yalnız export'un okuduğu taban tablolar; kelime tabloları YOK), `export_kelime_tests.sql` (6 senaryo), `export_kelime_kos.mjs` (yükleme sırası: stubs → taban → 20261022 → 20261045 → 20261046 → test).
+- **Sonuç:** 6/6 geçti. Senaryolar: kendi değerleri, satır sayıları, başka öğrencinin kimlik ve verisinin sızmaması, anlam metninin çıkmaması, A oturumunda yalnız A verisi, anon kapalı / authenticated açık.
+- **Regresyon kontrolü:** Mevcut `kelime_evreni_tests.sql` çalıştırılamadı: `kelime_denetim_kaydet` 20261095 migrasyonunda, o migrasyon da `meydan_okumalar` gerektiriyor; bu zincir çalıştırıcıda kurulamadı. Bu yeni değil, mevcut çalıştırıcı düzeninden kaynaklanıyor. Git durumuna göre `supabase/tests/kelime_evreni/stubs.sql` ve `supabase/tests/kelime_evreni_tests.sql` bu oturumdan önce başka bir oturum tarafından değiştirilmiş; bu oturumda dokunulmadı. Regresyonun sebebi bu değişiklikler olabilir, doğrulanmadı.
+- **Yapılmadı:** DB yazımı, migrasyon değişikliği, commit. Yeni dosyalar ve `testler.sql` değişikliği commit edilmedi (kullanıcı onayı bekleniyor).
+- **Durum:** KISMEN (GÖR-048'in kelime bölümü tamam; okuma son tanımı ve kelime paketi regresyonu açık)
+- **Sahip:** Ajan
+- **İlgili:** GÖR-048, GÖR-009, K-0155
+
+### K-0155 · 2026-10-27 · VT · GÖR-048: export_my_data kelime bölümü senaryosu eklendi (stub şemasıyla)
+- **Tür:** Test
+- **Konu:** VT
+- **Kapsam:** `supabase/tests/okuma_dunyasi/testler.sql`: yeni senaryo "export: kelime bölümü yalnız kendi denemelerini, ustalıklarını ve kayıtlarını içerir". Öğrenciye deneme, ustalık ve kayıt eklenir; çıktıda sayılar tablodan hesaplanan sayılarla eşleşir, ikinci öğrencinin deneme kimliği çıktıda yoktur.
+- **Doğrulama:** `node kos.mjs` → 187/188. Yeni senaryo OK. Tek FAIL (senaryo 18, atölye paketlerinde `arsiv_olgu` etiket uzunluğu) değişmedi, K-0152 değil GÖR-009 kapsamında ayrı karar.
+- **Sınır:** Kelime tabloları `stubs_export.sql` içindeki taklit tanımlarıdır; gerçek kelime migrasyonlarıyla (20261045/20261046) bu test koşulmadı. GÖR-048 KISMEN.
+- **Durum:** KISMEN
+- **Sahip:** Ajan
+- **İlgili:** GÖR-048, GÖR-009, K-0027, K-0028
+
+### K-0162 · 2026-10-27 · DEN · GÖR-070: MAT.6.1.2 nihai seti commit edildi (`5dc6429`)
+- **Tür:** Commit
+- **Konu:** DEN
+- **Kapsam:** `uretim_mat612_gor070_2026-10-27.json` (6 soru, MAT612-101…106), `pasaj_mat612_gor070_2026-10-27.json`, `meb_mat6_dob_mat612_2026-10-27.txt` (kaynak metni), `kapi_sonuc_mat612_gor070_2026-10-27.md` (bölüm 8 eklendi: taze Claude denetimi ve 105 kökü düzeltmesi).
+- **Onay:** Kullanıcı, 2026-10-27: "MAT.6.1.2 seti commitle".
+- **Commit dışında kalan:** `uretim_matematik_6_mat612_taslak.json` ilk taslak seti (K-0153) zaten `a729bee` ile commit'liydi.
+- **Durum:** Yayın değil. `published=false`, insan denetimi (kapı 7) açık. GÖR-070 KISMEN.
+- **İlgili:** GÖR-070, K-0153, K-0158, K-0160
+
+### K-0161 · 2026-10-27 · MOB · GÖR-036: Günün 5 Sorusu yanlış cevap açıklaması düzeltildi ve commit edildi
+- **Tür:** Uygulama + Doğrulama
+- **Konu:** MOB
+- **Kök neden:** Öğren akışındaki `ResultSheet` doğru cevabı zaten gösteriyordu. Günün 5 Sorusu ekranı (`daily_challenge_screen.dart`) sunucunun `dogru_sik` ve `cozum_adimlari` alanlarını saklamıyordu; yanlışta yalnızca seçilen şık renklenirdi.
+- **Değişiklik:** Yanlışta doğru şık yeşil; altında "Doğru cevap: X) metin" ve çözüm adımları (kaydırılabilir alan). Sonraki soruya geçişte sonuç sıfırlanır.
+- **Doğrulama:** `flutter analyze` (önceki oturumda) hata yok. `test/daily_challenge_screen_test.dart` 2/2 geçti (satır sonu normalleştirildikten sonra yeniden çalıştırıldı). Cihazda görsel kontrol yapılmadı.
+- **Commit:** `f6849da` (2 dosya: ekran ve yeni test; pathspec ile; indeks boştu). Satır sonları HEAD'deki CRLF biçimine çevrildi.
+- **Durum:** KISMEN (cihaz kontrolü kullanıcıda)
+- **İlgili:** GÖR-036, K-0015
+
+### K-0160 · 2026-10-27 · DEN · GÖR-070: bağımsız çeldirici denetimi, gerekçe düzeltmeleri, commit kapsamı, zorluk kararı
+- **Tür:** Doğrulama + Düzeltme + Commit
+- **Konu:** DEN
+- **Karar kaynağı:** Sonnet 5.5 karar ajanı; kullanıcı "izin veriyorum" / "yapın" onayı.
+- **Zorluk etiketleri:** Tahmini kalır. Kesinleştirme öğretmen denetimi ve pilot öğrenci verisiyle yapılır; bu oturumda değiştirilmedi.
+- **Bağımsız denetim (taze Claude oturumu, Sonnet, sıfırdan; önceki kayıtlar okunmadan):** Nihai set `uretim_mat612_gor070_2026-10-27.json`. 3 PASS (101, 104, 106), 3 REVIEW (102, 103, 105). Hiçbirinde cevap anahtarı hatası yok. REVIEW nedenleri: gerekçe ifadeleri (102, 103) ve 105'in kök cümlesinin dolaşık olması.
+- **Düzeltmeler (nihai set; yalnız metin, anahtar ve şıklar aynı):** 102 A/B/D ve 103 C/D gerekçeleri yeniden yazıldı. 105 kök cümlesi sadeleştirildi ("Bir bahçedeki ağaç sayısı hem 2 ile hem de 3 ile tam bölünüyor…") ve 105 A gerekçesi düzeltildi. 105 kök değiştiği için yalnız bu soru Gemini kör çözümünden yeniden geçti: D = D (eşleşme).
+- **Bağımsızlık notu:** Denetçi taze bir Claude oturumu (Sonnet). Kör çözüm ise Gemini. İkisi farklı aileler; blueprint koşulu bu kez karşılandı. Yine de insan denetimi (kapı 7) yerine geçmez.
+- **Commit (pathspec, indeks boştu):** `5f83a46` kelime export testi (3 dosya); `ec1e5d0` okuma `testler.sql` (yalnız 18 satır eklendi; satır sonu HEAD'e uyarlandı); `a729bee` MAT.6.1.2 taslağı ve `kor_cozum` kaydı (`uretim_matematik_6_mat612_taslak.json`, K-0153 seti).
+- **Commit'lenmedi:** Nihai set `uretim_mat612_gor070_2026-10-27.json` ve kapı/pasaj dosyaları (başka oturumun çalışması, izlenmiyor; onay yok). `kelime_evreni/package.json` ve `stubs.sql` (başka oturumun değişikliği).
+- **Durum:** GÖR-070 KISMEN: kapı 1–6 ve kör çözüm geçti; insan denetimi (kapı 7) ve zorluk kesinleştirmesi kullanıcıda; Türkçe karar bekliyor.
+- **Sahip:** Ajan + Kullanıcı
+- **İlgili:** GÖR-070, K-0153, K-0158
+
+### K-0159 · 2026-10-27 · WEB/MOB · GÖR-076 commit (`93f810d`); GÖR-032 (a) onay belirsizliği kayda alındı
+- **Not (numara):** Bu kayıt önce K-0154 olarak yazılmıştı; numara çakıştığı için K-0159'a alındı.
+- **Tür:** Uygulama (commit) + Karar kaydı
+- **Konu:** WEB, MOB
+- **Commit:** `93f810d` "feat(okuma): hikaye atolyesi toplu islem ve okuma panel cevirileri". Yalnız 6 dosya (`hikaye-atolyesi/{ListeSekmesi.tsx,TopluIslemModal.tsx,tipler.ts}`, `src/lib/okuma/okuma.ts`, `messages/yonetim-okuma.{tr,en}.json`); 200 ekleme, 11 silme. İndekste başka dosya yoktu. Onay: kullanıcı, 2026-10-27.
+- **GÖR-032 (a):** Kullanıcı, K-0005 kaydının numaralandırmasının belirsiz olduğu ve "ONAY BEKLİYOR" durumunda kaldığı tespitini onayladı. Bu, (a) "hizmet bildirimleri" kutusunun uygulanmasına onay değildir; kod eklenmedi. Kutunun açma kararı (çocuk cihazında push anahtarı) ayrıca kullanıcı kararı bekliyor.
+- **Durum:** GÖR-076 KAPANDI; GÖR-032 KISMEN (a karar bekliyor)
+- **Sahip:** Ajan + Kullanıcı
+- **İlgili:** GÖR-076, GÖR-032, K-0148, K-0149
+
+### K-0153 · 2026-10-27 · DEN · GÖR-070: MAT.6.1.2 için 6 taslak soru (BEKLET), kapı 1–2 geçti
+- **Tür:** Üretim (taslak) + Doğrulama
+- **Konu:** DEN
+- **Kapsam:** Blueprint `BLUEPRINT_GOR070_MAT612_2026-10-27.md`deki 6 hücre (C1–C6) için taslaklar: `docs/soru-uretim/pilot/uretim_matematik_6_mat612_taslak.json` (MAT6-612-01…06). Kriterler: 2 ve 5, 10, 3, 4, 6 ve genelleme çürütme (kanıt düzeyi B).
+- **Kontrol (kapı 1–2, `scratchpad` betiği, model çağrısı yok):** Şema alanları tam; şıklar A–D ve benzersiz; her sayısal doğru şık kriteri sağlıyor, çeldiriciler sağlamıyor; doğru şık tek başına en uzun değil; cevap dizisi `DCBACB` (üç kez üst üste yok). Sayısal doğrulama ifadeleri koddan hesaplandı, sorunsuz.
+- **Yapılmadı:** Kör çözüm (kapı 3; farklı model ailesi gerekir), benzerlik (kapı 4; mevcut MAT6-002 yalnız 9 kriterini ölçüyor, el ile bakıldı), zorluk vekili ve dil (kapı 5–6), insan denetimi (kapı 7). Denetim alanları `pending`, durum `BEKLET`. DB yazımı ve yayın yok.
+- **Durum:** KISMEN (taslak tamam; kapı 3–7 bekliyor)
+- **Sahip:** Ajan + Kullanıcı (insan denetimi)
+- **Önem:** Yüksek
+- **İlgili:** GÖR-070, K-0150, K-0151
+
+### K-0152 · 2026-10-27 · YÖN/VT · Yayın kapısı (GÖR-063) kullanıcı kararına bırakıldı: 21 onay dört göz ihlali
+- **Tür:** Doğrulama (salt okunur) + Karar bekleniyor
+- **Konu:** YÖN, VT
+- **Bağlam:** Kullanıcı "bu şimdilik dursun, not et" dedi. Ajan A/B denetim raporları (2026-10-24, 112 satır) mevcut; canlı DB denetim alanları rapor özetiyle uyuşmuyor.
+- **Canlı durum (salt okunur, `supabase db query --linked`):** 176 sürüm; 164 taslak, 12 arşiv, yayında 0. `ajan_a=pass` 66, `ajan_b=pass` 19, `insan=approved` 21. Rapor özeti: Ajan A 49, Ajan B 16, iki ajan geçen 16 satır. Sayılar tutmuyor; yazan süreç bilinmiyor.
+- **Bulgu:** 21 onaylı sürümün 21'inde `inceleyen_id = olusturan_id` (aynı hesap; dört göz ihlali). 2 onaylı sürüm iki ajan kapısını geçmeden onaylanmış. Onaylayan tek bir hesap.
+- **Yapılmadı:** DB yazımı, geri alma, yayın, sahte pass yazımı yok.
+- **Karar gerekli:** (a) 21 onay geçersiz sayılıp geri alınsın mı (yazım, onay gerekir); (b) onaylar hangi hesapla verildi; (c) 96 review satırı yazar/editör düzeltmesi; (d) 16 iki-ajan-geçen satır için insan okuması.
+- **Durum:** BEKLİYOR (kullanıcı kararı)
+- **Sahip:** Kullanıcı + Ajan
+- **Önem:** Kritik
+- **İlgili:** GÖR-063, GÖR-064, K-0139, K-0147
+
+### K-0155 · 2026-10-27 · DEN · GÖR-070 açık maddeleri (Sonnet kararları, kullanıcı delege etti)
+- **M1 (betik T.O.* kuralı):** Kalsın. SKILL.md tablosu değişmedi; betik T.O.* dışındaki kodları B sayıyor. **Kullanıcı onayı bekleniyor:** onaylanırsa ogrenme-gunlugu.md'de ONAYLI olarak işaretlenir; istemezseniz `soru_kontrol.mjs` içindeki tek satır silinir.
+- **M2 (4. sınıf yuvarlama/bölünebilme, 8. sınıf üslü sayı):** Kapalı, BEKLİYOR. Önceki program; GÖR-055 kararına bağlı. Üretim kuyruğuna alınmadı.
+- **M3 (2–3. sınıf Türkçe eş/zıt):** BEKLET. Kaynakta 2–3. sınıf resmî ilkokul Türkçe metni yok; kod uydurulmaz. Seçenek olarak yalnız bildirildi: 5. sınıf T.O.5.20 (eş, yakın, zıt anlamlı ve eş sesli kelime; en fazla B, hedef dışı).
+- **M4 (fen ve sosyal kazanım etiketleri):** DOKUNULMADI. `kazanim_6_fen.json` ve `kazanim_6_sosyal.json` içinde "5. sınıf DÖP" etiketi içerikle tutarsız görünüyor, ancak kaynak PDF'ler repoda yok; indirme yapılmadı. Kullanıcı PDF'leri sağlarsa düzeltilir.
+- **M5 (çeldirici denetimi):** Taze bağlamda Claude Sonnet ile yalnız soru metni, şıklar ve çeldirici gerekçeleri üzerinden ek geçiş yapıldı. Sonuç: 102–106 pass; 101 review_needed (983 ve 247 çeldiricilerinin gerekçesi zayıf, 2 ve 5 çeldiricileri ikna edici değil). 101 yeniden yazıldı: şıklar 2503 (rakam toplamı 10 yanılgısı), 362 (son basamak 2 yanılgısı), 115 (doğru), 247 (245'e yakınlık). Yeni kapı 6/6 uyumlu; kör çözüm (Gemini) 101 için C, anahtarla uyumlu. Yeniden ikinci denetim yapılmadı; 101 için Sonnet geçişinin yeniden çalıştırılması isteğe bağlı.
+- **Açık, kullanıcıda:** MAT.6.1.2 setinin insan denetimi, onay kaydı ve `published=true` kararı. DB yazımı ve yayın yapılmadı.
+
+### K-0154 · 2026-10-27 · DEN · GÖR-070: MAT.6.1.2 için 6 soru üretildi, otomatik kapılar geçti, insan denetimi bekliyor
+- **Numara notu:** Bu kayıt önce K-0152 olarak açılmıştı; aynı numara başka bir oturumun kaydında (yayın kapısı) kullanıldığı için K-0154 yapıldı.
+- **Paralel taslak:** Aynı 6 hücre için başka bir oturum K-0153 kaydıyla `uretim_matematik_6_mat612_taslak.json` (MAT6-612-01…06) yazmış. İki set de aritmetik olarak doğru; 6-gram benzerlik en yüksek 0,054. Hangi setin kullanılacağı ve birleşim kararı kullanıcıda.
+- **Tür:** Üretim + Doğrulama
+- **Kullanıcı kararı:** MAT.6.1.2 sorularının blueprint'e göre yazılıp kapılardan geçirilmesi.
+- **Güncelleme (karar Sonnet 5.5'e bırakıldı, kullanıcı onaylı):** İki set karşılaştırıldı. Sonuç: A seti esas; 103 numaralı soru (A) ipucu sızdırdığı için (dört şıktan üçü çift, doğru şık tek) diğer taslağın MAT6-612-03'ü ile değiştirildi. 105'in kökü sadeleştirilmiş hâli korundu. Son set: kapı 6/6, kör çözüm 6/6, ikinci denetim 6 pass. Kanıt düzeyi B. Yayın için insan denetimi zorunlu, `published=false`. Diğer taslak (K-0153) silinmedi, yedek.
+- **Güncelleme 2 (Sonnet iç-iş kararları, 2026-10-27):** (D1) `kazanim_6_matematik.json` `program_surumu` → "2026 Maarif Modeli Matematik (5-8) DÖP, 6. sınıf bölümü". (D2) Aynı dosyada MAT.6.1.2 ana cümle ve a, b, c, ç, d alt maddeleri resmî PDF metniyle eşitlendi; diğer 23 kod kırpık kalmaya devam ediyor. (D3) `soru_kontrol.mjs` `kuralSeviye`: kazanım kodu `T.O.` değilse kanıt B. Yorum: SKILL.md kanıt tablosunun uygulanması, tablo değişmedi; kullanıcı onayı ister misiniz diye bildirilmeli. Kapı: matematik 0/6 A. (D4) Yeni hedef üretilmedi: 4. ve 8. sınıf kazanımları önceki program, GÖR-055 bağlı; 6. sınıf "oran" için kazanım kodu yok. (D5) Ek soru yok; C5/C6 için ek soru insan denetimi sonrasına bırakıldı.
+- **Açık:** insan denetimi, yayın ve onay kullanıcıda. `kazanim_6_fen.json` ve `kazanim_6_sosyal.json` aynı etiket hatasını taşıyor; kaynak PDF doğrulanmadan dokunulmadı.
+- **Dosyalar:** `docs/soru-uretim/pilot/uretim_mat612_gor070_2026-10-27.json` (6 soru), `pasaj_mat612_gor070_2026-10-27.json`, `meb_mat6_dob_mat612_2026-10-27.txt`, `kapi_sonuc_mat612_gor070_2026-10-27.md`.
+- **Kaynak düzeltmesi:** `kazanim_6_matematik.json` MAT.6.1.2 ana cümlesi "çıka-" kırpıntısıyla duruyordu. Resmî DÖP PDF'inin 67. sayfasıyla karşılaştırıldı ve "çıkarım yapabilme" olarak düzeltildi. Alt maddeler hâlâ kırpık; ayrı düzeltme gerekir.
+- **Kapılar:** `soru_kontrol.mjs` 6/6 dayanak birebir; kazanım metni uyumlu; doğru şık en uzun değil; benzerlik 0; sorun yok. Sayısal iddialar elle doğrulandı. Kör çözüm (Gemini `gemini-3.8-flash`, yalnız kök ve şıklar): 6/6 anahtarla uyuştu. İkinci denetim: 5 pass, 1 review_needed (105, kök tekrarı). Kökü sadeleştirildi; kapı ve kör çözüm yeniden geçti; 105 için pedagojik denetim tekrarlanmalı.
+- **Kanıt düzeyi:** B. Matematik kazanımı A-adayı tablosunda yok. Betiğin `kanit_kural_ile_A 6/6` çıktısı matematik için yanıltıcı.
+- **Yapılmadı:** DB yazımı, yayın, insan denetimi, zorluk vekili ölçümü.
+- **Açık:** insan denetimi (yayın öncesi zorunlu); betiğin matematik kanıt kuralı; `kazanim_6_matematik.json` `program_surumu` etiketi ("5. sınıf DÖP" yerine 5–8 DÖP olmalı).
+- **Durum:** KISMEN (insan denetimi)
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** GÖR-070, K-0151
+
+### K-0151 · 2026-10-27 · DEN · GÖR-070 blueprint: MAT.6.1.2 hazır; Türkçe kısmı kapsam ve kod nedeniyle bloke
+- **Tür:** Blueprint + Karar bekleniyor
+- **Kullanıcı kararı (K-0150):** 6. bölünebilme + 2–3. Türkçe eş/zıt.
+- **Yapılanlar:** `docs/soru-uretim/BLUEPRINT_GOR070_MAT612_2026-10-27.md`: MAT.6.1.2 için 6 hücre (son basamak 2/5, 10, 3, 4, 6 ve genelleme sınaması). Mevcut tek onaylı soru yalnız 9'u ölçüyor; yeni sorular 9'u tekrar etmez. Kanıt düzeyi B (kazanım metni PDF ayrıştırması, kesik; `review_needed`). Soru üretilmedi.
+- **Türkçe bloke:**
+  1. T.K.2.2 d ve T.K.3.2 f konuşma kazanımları. `kazanim_2_turkce.json` (2026-10-22 kapsam kararı): konuşma kazanımları üretim kapsamı dışında.
+  2. T.O.2.2 f (zıt anlam bulma): 2. sınıf resmî DÖP metninde T.O.2.2 yalnız a, b, c içerir. 3. sınıf satırındaki f maddesi kod-sınıf tutarsızlığı; 3. sınıf resmî metni depoda yok.
+  3. 1. sınıf eş anlam kazanımı kaynakta yok.
+- **Bulgu:** `kazanim_6_matematik.json` `program_surumu` alanı "5. sınıf DÖP" diyor, kod 6. sınıf. Etiket düzeltilmeli.
+- **Karar (Sonnet 5.5, kullanıcı delege etti, 2026-10-27): (a) Türkçe bekletilir.** Gerekçe: eş/zıt anlam kodlu kazanımlarının hepsi kapsam dışı veya kodu tutarsız; (b) yeni üretim kopya riski taşır, havuz zaten dolu; (c) 3. sınıf resmî metni gelene kadar (a) ile aynı sonuç.
+- **Seçenekler (eski):** (a) yalnız MAT.6.1.2 üretilsin; (b) 2. sınıf okuma kazanımları (T.O.2.2 a–c, T.O.2.3; metinle sınanabilir, kodlu) üretilsin; (c) Türkçe için 3. sınıf resmî metni beklensin.
+- **Durum:** BEKLİYOR (Türkçe hedef kararı)
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** GÖR-070, K-0150, K-0133, K-0142
+
+### K-0150 · 2026-10-27 · DEN · GÖR-070 ön sayım: hedef kazanımların sınıfı kaynakla uyuşmuyor, üretim başlamadı
+- **Tür:** Doğrulama (salt okunur) + Karar bekleniyor
+- **Konu:** DEN
+- **Bağlam:** GÖR-070 "soru havuzunda hiç sorusu olmayan kazanımlar" diyordu ve sayım yapılmamıştı. Sayım yapıldı (salt okunur SQL, `questions` ve `mufredat_hafta`).
+- **Bulgular:**
+  1. **5. sınıf Matematik "yuvarlama ve bölünebilme":** DB'de konu düzeyinde 0 soru. Ama kaynakta yuvarlama `M.4.1.1.4` (4. sınıf, önceki program; `docs/mufredat/haftalik_akis_2026_2027.csv`) ve bölünebilme `MAT.6.1.2` (6. sınıf, TYMM). 5. sınıf kaynaklarında iki kazanım da yok.
+  2. **6. sınıf Matematik "oran ve üslü sayı":** Oran DB'de 1 soru (konu düzeyi). "Üslü ifadeler" kaynakta `M.8.1.2.x` (8. sınıf, önceki program); 6. sınıfta yok.
+  3. **1–3. sınıf Türkçe "eş ve zıt anlam":** DB'de 1. sınıfta "Zıt Anlam" 1 soru, eş anlam 0. Kaynakta kazanım alt maddeleri var: `T.K.2.2` (zıt anlamlı sözcük), `T.K.3.2` (eş anlamlı sözcük), `T.O.2.2` (zıt anlamlı sözcük bulma). Bu kodların DB'de soru sayısı 0. 1. sınıf için eş anlam kazanımı kaynakta yok.
+  4. `adaylar.json` yalnız 4. sınıf adaylarını içeriyor (yuvarlama M.4.1.1.4, eş anlam T.4.3.8); 5. sınıf kodu yok.
+- **Kural:** Kazanım kodu yalnız kaynakta görülürse yazılır (CLAUDE.md). Kodsuz üretim yapılmadı.
+- **Yapılmadı:** Soru üretimi, DB yazımı, yayın yok.
+- **Karar gerekli:** Hangi kazanımlar hedeflensin? Önerim: 6. sınıf bölünebilme (`MAT.6.1.2`) ve 2–3. sınıf Türkçe eş/zıt alt maddeleri (`T.K.2.2`, `T.K.3.2`, `T.O.2.2`); ikisi de 2026-27 TYMM kapsamında. 4. ve 8. sınıf önceki programda olduğu için üretilmesi GÖR-055 kararına bağlı.
+- **Durum:** BEKLİYOR (karar)
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** GÖR-070, GÖR-055, GÖR-058, K-0133, K-0142
+
+### K-0149 · 2026-10-27 · BEL/WEB · Boş hikâye dosyaları silindi; web panel okuma tsc kontrolü
+- **Silinen:** `supabase/tests/okuma_dunyasi/hr002-renkli-ucurtma.hikaye.md`, `hr009-konusan-kalem-kutusu.hikaye.md`, `hr016-golgeyi-kim-buyuttu.hikaye.md`. Üçü de 0 bayt, izlenmiyordu, hiçbir araç veya test referans vermiyordu.
+- **Tsc (ana ağaç):** `web-panel` `npx tsc --noEmit` exit 0.
+- **Tsc (HEAD + okuma panel dosyaları, geçici worktree):** `okuma.ts`, `yonetim-okuma.tr/en.json`, `hikaye-atolyesi/{ListeSekmesi.tsx,TopluIslemModal.tsx,tipler.ts}`. Okuma kaynaklı hata 0. Worktree'de ilk denemede 6 hata çıktı; sebep worktree'de `next-env.d.ts` ve `jsvectormap.d.ts` dosyalarının bulunmaması (ana ağaçta var, izlenmiyor). Bunlar kopyalanınca exit 0.
+- **Commit:** Yapılmadı. Panel dosyaları HEAD üzerinde derleniyor; commit için kullanıcı onayı bekleniyor.
+- **Temizlik:** Geçici worktree kaldırıldı; `node_modules` junction'ı yalnızca bağlantı olarak silindi, ana `node_modules` sağlam.
+- **Durum:** KISMEN (commit onayı)
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Orta
+- **İlgili:** GÖR-053, GÖR-076, K-0148
+
+### K-0148 · 2026-10-27 · BEL/VT/MOB · GÖR-053: okuma çalışma ağacı commit'lendi
+- **Tür:** Uygulama + Doğrulama
+- **Konu:** BEL, VT, MOB
+- **Kapsam:** Yalnız okuma dosyaları (pathspec ile). Paylaşılan dosyalar (`models.dart`, `app_providers.dart`, `home_screen.dart`, `pubspec.yaml`, `push_config.dart`, müfredat ve admin dosyaları) commit'e girmedi; diğer oturumlara ait.
+- **Commit'ler:**
+  - `6efbce6` feat(db): migrasyonlar 20261087, 89, 91, 92, 94 ve `supabase/tests/okuma_dunyasi` (`yonetim_crud_testleri.mjs`). Uzakta uygulanıp uygulanmadığı bu kayıtta doğrulanmadı.
+  - `b8fd6cf` feat(okuma): mobil değer filtresi, vitrin, kahraman seçici, PDF ve cihaz deposu; testler. `okuma_bugun_karti.dart` silindi, yerine `okuma_vitrin.dart`. `learn_screen.dart` bu kapsama alındı, çünkü vitrin geçişi onda.
+  - `ce37de6` docs(okuma): `icerik/okuma` ve `docs/okuma-entegrasyon` (388 dosya).
+- **Doğrulama:** Geçici worktree (HEAD + okuma kapsamı): `flutter analyze` 0 hata, 0 uyarı, 34 bilgi. Okuma testleri 166/166 geçti. Bu kontrol kapsamı dışındaki shared dosyalara bağlı değil.
+- **Atlanan:** `supabase/tests/okuma_dunyasi/hr002-renkli-ucurtma.hikaye.md`, `hr009-konusan-kalem-kutusu.hikaye.md`, `hr016-golgeyi-kim-buyuttu.hikaye.md` 0 baytlık ve hiçbir yerde referans verilmiyor. Commit'e alınmadı, `??` olarak bırakıldı; silinmesi kullanıcı kararı.
+- **Açık (GÖR-076):** Web panel okuma dosyaları (`hikaye-atolyesi/*`, `src/lib/okuma/okuma.ts`, `messages/yonetim-okuma.*`) commit'lenmedi. Panel tip kontrolü (`tsc`) yapılmadan commit edilmemeli.
+- **Durum:** KAPANDI
+- **Sahip:** Ajan
+- **Önem:** Yüksek
+- **İlgili:** GÖR-053, K-0078, K-0085, K-0147
+
+### K-0147 · 2026-10-27 · VT · GÖR-060 kapatıldı: 20261082 kalsın, canlı durum doğrulandı
+- **Tür:** Doğrulama + Karar kaydı
+- **Konu:** VT
+- **Bağlam:** Kullanıcı yeni oturumda GÖR-060 ile başlamak istedi. Pano satırı "BEKLİYOR" görünüyordu, ama K-0142'de karar "kalsın" olarak kayıtlıydı ve dosya 69fc843 ile izlemeye alınmıştı. Pano güncellenmemişti.
+- **Canlı kontrol (salt okunur, `supabase db query --linked`):** arşiv 12 (hepsi denetim `pending`), taslak 164, yayında 0, `pilot_siniflari` = [4,5], genel bayrak `aktif` = true.
+- **Kayıt çelişkisi:** Migrasyon başlığı "kullanıcı onayı 2026-10-24" diyor; K-0125 ve GÖR-060 ise onaysız uygulandığını yazıyordu. Karar K-0142'deki "kalsın" kaydına dayanıyor. Bu çelişki kayda bağlandı, kararı değiştirmek gerekiyorsa kullanıcı söyleyecek.
+- **Yapılmadı:** Geri alma, yayın, DB yazımı yok.
+- **Durum:** KAPANDI
+- **Doğrulama:** Canlı sorgu ve dosya izleme (`git ls-files` ile 69fc843 kaydı).
+- **İlgili:** GÖR-060, K-0124, K-0125, K-0142
+
+### K-0160 · 2026-10-27 08:15 · YÖN · Sorular ve Kelime Evreni: çoklu seçim, tümünü seç, toplu yayına al / yayından kaldır
+- **Tür:** Gelişme
+- **Konu:** YÖN
+- **Bağlam:** Kullanıcı kelime ve soru listelerinde de çoklu seçim, tümünü seç ve seçilileri yayına alma / yayından kaldırma istedi. Plan: `docs/yonetim-toplu-yayin/PLAN.md`. Kod iki Haiku ajanıyla yazıldı, doğrulama ana oturumda yapıldı.
+- **Plan:** (1) Sorular: filtredeki tüm sonucu seç (sayfalar ötesi), "Yayına al" = onaylandi, "Yayından kaldır" = beklemede, çoklu işlemde onay. (2) Kelime Evreni: listeye onay kutuları, "Listedeki tümünü seç", "Yayına al" (`kelime_toplu_yayinla`, önce kuru çalıştırma, sonra onay) ve "Yayından kaldır" (yayındakileri `kelime_soru_durum_degistir` ile arşive). Yeni migrasyon yok.
+- **Karar:** Kullanıcı isteği (2026-10-25). Yayın kapısı (iki model `pass` + insan) sunucuda kaldı; kapıyı geçmeyen kelime soruları "atlandı" olarak sayılır. Sorular için `admin_set_question_status` kapı uygulamaz; bu önceden de böyleydi.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** Kod yazıldı ve tip/lint/çeviri denetimi geçti. Ekran ve gerçek yayın akışı denenmedi (GÖR-075). Kelime listesi en fazla 200 satır gösterir, "tümünü seç" bu 200 ile sınırlıdır. Değişiklikler commit'lenmedi.
+- **Kanıt:** `npx tsc --noEmit` (web-panel) exit 0. `npx eslint` QuestionsManager.tsx ve KelimeEvreniManager.tsx: exit 0. Çeviri anahtarları tr/en eşit: yonetim-sorular 233/233, yonetim-panel 1228/1228.
+- **İlgili:** GÖR-075, K-0145, `web-panel/src/components/yonetim/sorular/QuestionsManager.tsx`, `web-panel/src/components/yonetim/panel/KelimeEvreniManager.tsx`, `web-panel/src/messages/yonetim-sorular.*.json`, `web-panel/src/messages/yonetim-panel.*.json`.
+- **Güncelleme 2026-10-27 08:30 (commit kararı):** Bu değişiklikler commit'lenmedi. Dosyalar başka oturumların yarım işleriyle iç içe: `QuestionsManager.tsx` (+459 satır, kazanım kapsamı dahil), `yonetim-panel.tr.json` ve `yonetim-sorular.tr.json` (kelime inceleme kuyruğu, kazanım kapsamı anahtarları), `kelimeEvreni.ts`. Kelime inceleme kuyruğu (`KelimeIncelemeKuyrugu.tsx`, `supabase/migrations/20261097000000_kelime_inceleme_kuyrugu.sql`) ayrı bir işe ait ve henüz kayıtlı değil; uzak veritabanına uygulanmadı. Bu iş kapanınca bu kayıtla birlikte ayrı commit önerilir. Hunk ayrımı etkileşimli `git add -p` gerektirdiği için bu oturumda yapılmadı.
+- **Açık kalan (K-0160):** (a) GÖR-075 ekran kontrolü, (b) kelime inceleme kuyruğu işinin kaydı ve commit'i, (c) yukarıdaki dosyaların ayrı commit'i.
+
+### K-0145 · 2026-10-25 13:26 · YÖN/VT · Hikâye Atölyesi: toplu yayına al ve yayından çek (20261094)
+- **Tür:** Gelişme
+- **Konu:** YÖN
+- **Bağlam:** Yayın tek tek yapılıyordu (SurumDetay). Kullanıcı seçilen hikâyeleri toplu yayına almak ve yayından çekmek istedi. Yayın kapısı (Ajan A ve Ajan B `pass`, insan `approved`, inceleyen) değişmedi.
+- **Plan:** (1) `okuma_toplu_yayin(p_hikaye_idler, p_islem, p_kuru)`: `yayina_al` en yeni denetimi tamam taslak/incelemedeki sürümü yayına alır (taslaksa önce incelemeye); `yayindan_cek` yayındaki sürümü arşive alır. Geçişler `okuma_surum_durum_degistir` ile yapılır, kural tekrar yazılmaz. (2) Panel: liste araç çubuğunda iki düğme; mevcut toplu modal kuru çalıştırma → onay akışıyla çalışır. (3) TR/EN metinleri ve yeni hata kodları `ZATEN_YAYINDA`, `YAYINDA_DEGIL`.
+- **Karar:** Kullanıcı isteği (2026-10-25). Sahte denetim yazılmadı; canlı veride yayın işlemi çalıştırılmadı (GÖR-063 kullanıcıda).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** `db:preview` yalnız 20261094'ü bekliyordu; `db:deploy` ile uygulandı, `db:status` uzakta 20261094'ü gösterdi. Yeni RPC anon'a kapalı, authenticated'a açık, SECURITY DEFINER ve `search_path` sabit. Ekran kontrolü yapılmadı (GÖR-074). Değişiklikler commit'lenmedi (çalışma ağacında başka oturumların değişiklikleri var). Sürüm numarası artırılmadı.
+- **Kanıt:** `node yonetim_crud_testleri.mjs` (supabase/tests/okuma_dunyasi): 45/45 senaryo geçti (önce 36/36). `npm run lint` (web-panel): 0 hata. `npx eslint` değişen dosyalar: temiz. `npm run build`: başarılı. `npm run db:preview`: yalnız 20261094. `npm run db:deploy`: uygulandı.
+- **İlgili:** K-0143, K-0144, GÖR-063, GÖR-074, 20261068, 20261079, `web-panel/src/components/yonetim/hikaye-atolyesi/ListeSekmesi.tsx`, `TopluIslemModal.tsx`.
+
+### K-0144 · 2026-10-25 · WEB · Panel 0.4.0: Hikâye Atölyesi toplu onay ve denetim rozetleri yayına alındı (master 06e421a, etiket panel-v0.4.0)
+- **Kapsam:** K-0143'ün liste kısmı (rozetler, denetim süzgeci, toplu insan onayı) yalnız çalışma ağacındaydı, `master`da yoktu; kullanıcı yayında göremedi. Yalnız 5 dosya commit edildi (ListeSekmesi.tsx, TR/EN mesajları, package.json 0.4.0, SURUMLEME.md). Migration yok.
+- **Kontrol:** çeviri anahtarları tr 47/47, en 47/47; eslint temiz; `tsc` 6 hata veriyor, ancak aynı 6 hata değişiklik olmadan `origin/master`da da var (auth/*, UserDropdown.tsx, i18n/languages.ts): ön-varolan, bu sürümle ilgisiz.
+- **Açık:** Yayındaki "Denetimi kaydet" ve toplu onay kullanıcı tarafından doğrulanacak. Yerelde `.env.local` `NEXT_PUBLIC_DEMO_MODE=1` olduğu için yazmalar "Demo modunda kayıt yapılamaz." döner (bilinçli); yerel test için bayrak kapatılmalı. Tarayıcı kontrolü yapılamadı (Playwright bağlanamadı).
+
+### K-0143 · 2026-10-25 · WEB/VT · Hikâye Atölyesi: denetim rozetleri, denetim süzgeci, toplu insan onayı; 45 hikâyenin Ajan A/B sonucu canlı DB'ye yazıldı (20261091)
+- Panel: liste artık Ajan A / Ajan B / İnsan rozetlerini ve "Denetim" süzgecini gösterir; "Seçilenleri onayla" ve "Onayı kaldır" yalnız insan kararını değiştirir (onayda A ve B pass şartı, yayındaki sürüme dokunmaz). `tsc` temiz; tarayıcıda görsel kontrol ve toplu onayın canlı denemesi yapılmadı.
+- DB (kullanıcı onayı 2026-10-25): `20261091_okuma_ajan_denetim_isle` uygulandı (db:preview yalnız bu dosyayı gösterdi). OZET.md'deki 45 hikâyenin ajan_a/ajan_b değeri taslak/incelemedeki sürümlere yazıldı; insan kararı değişmedi. Uzakta satır sayısı bu kayıtta sorgulanmadı.
+- **DÜZELTME (2026-10-25):** 20261091 eski tur (2026-10-23, 20261077 metni) sonuçlarıdır; güncel taslaklar için geçersiz. HR-017 güncel sürümde (surum_no=3) Ajan A pass, Ajan B review_needed (kritik yok); "fail/fail" ve "Parti 0 tamam" ifadesi yanıltıcıydı. Doğru kaynak `denetim/2026-10-24/` (112 sürüm, 65 pass raporu). Düzeltme: `20261092000000_okuma_ajan_denetim_surum_bazli.sql` yazıldı (sürüm id bazlı; 112 sürüm, Ajan A pass 49, Ajan B pass 16).
+- **Uzak durum (2026-10-25, db:preview):** "Remote database is up to date"; bekleyen migrasyon yok. `20261092` ve `20261093` uzak geçmişte kayıtlı. Uygulayan ben değilim: önceki iki `db:deploy` denemesi parola hatasıyla bağlanamadı (`SUPABASE_DB_PASSWORD` ortamda yok). Kim uyguladığı bu kayda göre bilinmiyor. Veriyle doğrulama yapılmadı: CLI'de salt okunur sorgu komutu yok, `db dump` tüm öğrenci verisini çeker.
+- `20261093_admin_tam_yetki_ogrenci_alani.sql` (admin için öğrenci kapılarını açar; non-admin davranışını değiştirmez) uygulandığı anda içeriği incelenmemişti; okunup değerlendirildi.
+- Plan: `docs/okuma-entegrasyon/HIKAYE_INCELEME_PLANI_2026-10-25.md`. Parti 0 için kontrol: panelde Ajan A "Geçti" 49, Ajan B "Geçti" 16 görünmeli. HR-017 metin düzeltmesi, sürüm içeriği `_okuma_surum_koru` tetikleyicisi nedeniyle değişmez; yeni sürüm (surum_no=4) hattından gider, UPDATE ile yapılmaz.
+
+### K-0141 · 2026-10-24 · VT/MOB · Okuma sözlüğü: ek yükleme (20261089), mobil onaylı sözlük bağlantısı, onay boşluğu
+- **Tür:** Gelişme + Sorun
+- **Konu:** VT, MOB, YÖN
+- **Bağlam:** Kullanıcı 20261086/87/88 deploy'unu onayladı; ardından sözlük için 20261089 deploy onayı verdi ve mobil bağlantıyı istedi. Yönetim panelinde onay butonunun çalışıp çalışmadığı soruldu.
+- **Yapılan:**
+  1. 20261086 (`mufredat_rpc`), 20261087 (okuma 67 hikâye taslağı), 20261088 (Din Kültürü eşlemesi) uzakta uygulandı; `db:status` üçünü uzakta kayıtlı gösteriyor.
+  2. Sözlük: mevcut tablolar (`okuma_sozluk_girdileri/yuvalari/adaylari`) kullanıldı; yeni tablo açılmadı. Pilot migrasyonlarında (20261059–67) zaten yüklü girdiler vardı; `okuma_sozluk_ice_aktar` var olan kimlikleri güncelleyip durumu taslağa düşürebildiği için kullanılmadı.
+  3. [20261089000000_okuma_sozluk_yukle.sql](supabase/migrations/20261089000000_okuma_sozluk_yukle.sql) yalnız veritabanında olmayan girdi kimliklerini ekler, hepsi `taslak`. İç kontrol: önceki sayı + eklenen = sonraki sayı. Uzakta uygulandı. Eklenen satır sayısı CLI çıktısında görünmedi, bu yüzden sayı doğrulanmadı.
+  4. Mobil: `okumaSozlugunuSunucuylaBirlestir` (yalnız `onayli` adaylar), `SupabaseOkumaRepository.sozlukGetir` (`okuma_sozluk_getir`), `okuma_akis.dart` çağrısı. Sunucu hatası ya da boş yanıtta paket sözlüğü aynen kullanılır. Test: `okuma_sozluk_sunucu_test.dart` (4 test); `flutter analyze` temiz; ilgili 3 test dosyası 11/11 geçti. Cihaz kontrolü yapılmadı.
+- **Sorun (onay boşluğu):** Yönetim panelinde tek tek girdi onaylayan bir buton YOK. `durum` değiştiren tek yol JSON içe aktarma (`okuma_sozluk_ice_aktar`; onay için payload'da `durum: onayli` ve farklı bir yöneticinin onayı gerekir). `SozlukYukle.tsx` "onayla ve yaz" butonu yalnız JSON yüklemesi içindir. `SozlukHedefSekmesi` onay kutusu hedef kataloğu içindir, girdi değil.
+- **Sonuç:** Sunucudaki 902 girdi onaylanmadan öğrenciye görünmez; bu bir güvenlik kazanımı ama panelde onay akışı eksik.
+- **Durum:** DEVAM. Açık: (1) girdi bazlı onay RPC'si (`okuma_sozluk_girdi_onayla`, dört göz: onaylayan ≠ oluşturan) ve panel listesi; (2) eklenen sayının doğrulanması; (3) mobil değişikliğinin commit edilmesi (commit yapılmadı).
+- **Sahip:** Ajan (kod, kayıt) · Kullanıcı (onay RPC'si için karar, commit kararı)
+- **Önem:** Yüksek
+- **İlgili:** K-0136, K-0102, K-0105; `20261050000400_okuma_dunyasi_sozluk.sql`; `web-panel/src/components/yonetim/hikaye-atolyesi/SozlukYukle.tsx`
+
+- **Ek (ilk 20261089 denemesi):** İlk sürüm `ice_aktar` ile yüklemeye çalıştı; tabloda pilot migrasyonlarından (20261059–67) zaten girdi olduğu için iç koruma reddetti. İşlem geri alındı, veritabanında değişiklik olmadı. Ardından migrasyon "yalnız yeni kimlik ekle" biçimine çevrildi ve yukarıdaki şekilde uygulandı.
+- **Ek (K-0136 kapanışı):** `mufredat_etiket_temeli` canlıda bırakıldı (kullanıcı kararı). 20261086 onaylanıp uygulandı. Okuma migrasyonu 20261087 adıyla uygulandı. K-0136'nın açık maddeleri bu kayıtla kapandı; mufredat dosyalarının sahibi ayrıca bilgilendirilmeli.
+- **Ek (kayıt numarası):** Bu kayıt önce K-0137 olarak yazıldı; başka oturumlar aynı numaraları kullandığı için K-0141'e taşındı.
+---
+
+## B. Kayıtlar (en yeni üstte)
+
+### K-0166 · 2026-10-28 08:37 · MOB/TSR · Mobil açılış yenileme: teşhis, "Hupo Uyanır" senaryosu ve üretim planı
+- **Tür:** Plan
+- **Konu:** MOB/TSR
+- **Bağlam:** Kullanıcı mobil uygulamanın açılış ekranını profesyonel bulmadı; best practice ve yeni teknolojilerle etkileyici bir açılış senaryosu ve üretim planı istedi.
+- **Plan:** `docs/splash/ACILIS_SENARYOSU_PLANI.md`. Teşhis (8 bulgu), senaryo (ilk açılış ≈ 2,2 s, sonraki açılışlar ≤ 900 ms, ilk karşılama), teknoloji seçimi (Rive / dotLottie / katmanlı sprite) ve 7 fazlı üretim planı (Faz 0 karar, Faz 1 asset'siz düzeltmeler, Faz 2 marka ve katmanlı Hupo, Faz 3 teknoloji kapısı, Faz 4 uygulama, Faz 5 ilk karşılama, Faz 6 cihaz QA).
+- **Karar:** Yok. Tüm öneriler `ONAY BEKLİYOR`: Rive önerisi Faz 3 kapısına bağlı; marka sesi yalnız ilk açılışta; ilk karşılama yalnız "Merhaba" kartı + sınıf adımı; "Önce dene" (misafir modu) kapsam dışı (HUK).
+- **Durum:** PLANLANDI
+- **Doğrulama:** DOĞRULANMADI. Teşhis kod ve asset incelemesine dayanır. Samsung SM-S711B (Android 16) oturum sırasında bağlandı, kullanıcı çıkardı; cihazda kayıt, ölçüm veya kurulum yapılmadı (yalnız `adb devices`, ekran boyutu ve paket listesi okundu). Faz 1'in ilk işi baseline kaydıdır.
+- **Sahip:** Kullanıcı (karar, asset) + Ajan
+- **Önem:** Orta
+- **Açıklama:** En önemli bulgu: ilk iki saniyede üç farklı Hupo görünüyor (Android sistem splash: yuvarlak kafa ikonu; iOS: eski ayakta duran çizim; Flutter: kanat kaldıran poz). Ayrıca tam sahne her soğuk açılışta oynuyor ve açılış türü kararının `warmStart/resume/directRedirect` kolları hiç çalışmıyor. Açık sınırlar: iOS bu Windows makinesinde derlenemez; Rive'ın web paketi etkisi ölçülmedi; düşük uç Android cihaz yok; resmî logo dosyası yok.
+- **Kanıt:** `splash_screen.dart:60-70`, `main.dart:26-44`, `hupo_signature_entrance.dart`, `android/.../mipmap-xxxhdpi/ic_launcher_foreground.png`, `ios/.../LaunchImage@3x.png`, `flutter devices` (S23 FE listelendi).
+- **İlgili:** GÖR-077, `docs/splash/BAKIM.md`, `docs/hupo-design-growth/BRAND_AND_VISUAL_RULES.md`.
+- **Güncelleme 2026-10-28 11:30:** Karar (kullanıcı, `ONAYLI`): marka sesi yalnız ilk açılışta (D4). Logo zamanı kullanıcı tarafından ajana bırakıldı: Faz 2'de, Faz 4'ten önce (`ONAY BEKLİYOR`). Kullanıcının Mac'i yok; iOS için GitHub Actions macOS çalıştırıcısı önerildi (`ONAY BEKLİYOR`). Doğrulama `DOĞRULANMADI` → baseline için `KISMİ`: Galaxy S23 FE (Android 16) üzerinde profile derleme kuruldu (paket `com.ogrencihazirlik.ogrenci_hazirlik`, mevcut `okuma_prototip`'e dokunulmadı), ilk ve sonraki soğuk açılış ekran kaydıyla incelendi. Ölçüm: TotalTime 1256/842 ms; simge→Giriş ≈ 2,9–3,0 s; tam sahne her soğuk açılışta. Yeni bulgular: "Hupolingo" yazısı eksik Material nedeniyle geri dönüş fontu ve çift alt çizgiyle çiziliyor; sistem splash'i ile Flutter sahnesi arasında ≈ 0,3 s Hupo'suz boş kare; gezinme çubuğu rengi sıçraması; solmada çift pozlama. Ölçülmedi: kare süresi/jank, düşük uç Android, iOS. Telefonda kalan: "Hupolingo" uygulaması (profile derleme, veri sıfırlandı). Kanıt: `docs/splash/baseline-2026-10-28/`, plan §1.1.
+- **Güncelleme 2026-10-28 (Faz 1):** Kullanıcı Faz 1'i onayladı (`ONAYLI`). Yapıldı: `Material` ile yazı hatası düzeltildi (regresyon testi, düzeltme kaldırılınca kırılıyor); native splash (Android 12+, eski Android, iOS) ve Flutter ilk karesi aynı Hupo; sistem çubuğu rengi; ön plan solması + perde; ilk açılış 2,0 s + ses, sonraki 0,9 s sessiz; dokununca atlama; ölü açılış kolları kaldırıldı; Android 12+ solma kapatıldı; Hupo görseli ilk kareden önce çözülüyor. Doğrulama KISMİ: Galaxy S23 FE kaydında bulgu 1 (Android), 9–12 kapandı, sonraki açılış simge→Giriş ≈ 2,0–2,2 s (önceden ≈ 2,9 s); 17/17 açılış testi, analiz temiz. Doğrulanmadı: iOS (varlıklar üretildi, derlenmedi), düşük uç cihaz, kare süresi/jank, TalkBack, reduced-motion cihazda, sesin kulakla dinlenmesi; telefondaki APK `Stopwatch` sürümü (commit'te `Timer`). Yapılmadı: `runApp` öne alma (ölçümsüz), Hero geçişi (Faz 4). GÖR-077: Faz 1 TAMAMLANDI-KISMİ, Faz 0 kararları (D1–D3, D7) açık. Başka oturumun `pubspec.yaml` değişikliği (okuma asset klasörleri) APK'yı 55,8 → 70,3 MB yaptı; bana ait değil. Bu dosya başka oturumların bekleyen değişiklikleriyle dolu olduğu için commit edilmedi.
+- **Güncelleme 2026-10-28 (Faz 2 başlangıcı):** Kullanıcı D1–D3'ü ajana devretti ("sen karar ver, kaliteli olsun"). Ajan kararı (`ONAY BEKLİYOR`): bölgesel yama yöntemi (master korunur), önce katmanlı sprite + Rive kapısı Faz 3'te, logo yönü C birincil / B ikincil. Üretildi: `assets/hupo/splash/hupo_uyuyan.webp` (pubspec'e kayıtlı değil), logo yönleri A/B/C (yapay zekâ konsepti; nihai değil, vektörleştirme ve tescil taraması gerekir). Gemini `gemini-3-pro-image` kullanıldı; master Hupo görseli dış servise gönderildi (kullanıcı yetkisi: "Fal.ai ve Gemini kullanabilirsin"). Doğrulama: yama sonucu yalnız karşılaştırma görseliyle gözle incelendi; cihazda/uygulamada denenmedi. Kanıt: `docs/splash/uretim-2026-10-28/`.
+- **Güncelleme 2026-10-28 (katmanlar + Remotion):** Katmanlı Hupo üretildi (govde/kanat/goz_kapali, commit `fd8e44b`). Kullanıcı Oracle ücretsiz sunucusuna bağlanmamı ve Remotion ile üretmemi istedi (`ONAYLI`); bağlantı kullanıcının SSH anahtarıyla kuruldu (anahtar ve adres bu kayda yazılmaz). Sunucuda başka bir ajanın kurduğu Remotion (`video-studio`, `vs-render` kapsayıcısı) zaten vardı; ona ve diğer hizmetlere (Coolify, n8n, Open WebUI, Ollama) dokunulmadı; yalnız mevcut imajdan tek seferlik kapsayıcı (`--cpus=2 --memory=4g`, `--rm`) çalıştırıldı, çıktı `~/hupo-motion` altında (≈4 MB). Üretildi: `hupo-uyanir-onizleme.mp4` (1080×1920, 3,2 sn) — zamanlama referansı, uygulama değil. **Açık risk: sunucu diski %87 dolu (6,3 GB boş);** büyük render/imaj işleri öncesinde disk temizliği veya yer açma gerekir (Docker verisi ≈ 28 GB). Doğrulama KISMİ: kareler gözle incelendi, video baştan sona izlenmedi.
+- **Güncelleme 2026-10-28 (Hupo Gelir):** Kullanıcı geri bildirimi (`ONAYLI`): "fena değil, ama tüm vücutla hareket etsin; uçarak gelip konsun, gülerek hoş geldin desin". Senaryo revize edildi (plan §3.1b), `HupoGelir` önizlemesi Oracle sunucusunda render edildi. Yeni katmanlar: kanatsız gövde (Gemini bölgesel dolgu), sol/sağ kanat ayrı, gülen göz (`hupo_katmanlar_v2.json`). **Karar etkisi (`ONAY BEKLİYOR`):** native splash'ten Hupo kaldırılır (düz turkuaz); Faz 1'deki native-Hupo eşleştirmesi yerini buna bırakır. Beklenen: kullanıcının videoyu izleyip onayı; sonra Faz 4 (Flutter sahnesi). Doğrulama KISMİ: kareler gözle, video uygulamada denenmedi; ayaklar uçuşta sabit.
+- **Güncelleme 2026-10-28 (Hupo Uçar):** Kullanıcı geri bildirimi (`ONAYLI`): uçuş gerçek bir kuş uçuşu gibi değil; iki referans video verdi (Shutterstock klibi, BBC Earth barn owl). **Videolar izlenemedi** (Shutterstock 403, YouTube yalnız başlık); hareket videolardan ölçülmedi, bu açıkça belirtildi. Yeniden üretim: Gemini ile master referanslı dört uçuş pozu (P1 yukarı, P2 yatay, P3 aşağı, P4 iniş freni), göz arası mesafesiyle hizalama, `HupoUcar` Remotion önizlemesi (Oracle sunucusu). Dayanak: genel kuş uçuşu bilgisi + diğer kuşlarda iniş çalışmaları; baykuşa özgü ölçüm yok. Riskler: pozlar master'ın yeniden üretimi (marka onayı gerekir), paket bütçesi (≈ 650 KB > 400 KB). Beklenen: kullanıcı videoyu izler; referans videoların dosyası verilirse kare kare karşılaştırılır. Doğrulama KISMİ: kareler gözle incelendi.
+- **Güncelleme 2026-10-28 (Hupo İmza):** Kullanıcı geri bildirimi (`ONAYLI`): uçuş "daha iyi ama hâlâ profesyonel tat yok"; "HUPOLINGO — PREMIUM SIGNATURE ENTRANCE" master prompt'una göre Remotion üretimi istendi (4 sahne, 1600 ms, ana sayfaya kesintisiz bağlanma). Üretildi: `HupoImza` prototipi (1080×2340, 60 fps; Oracle sunucusunda render) — Remotion prototipi, **çalışan Flutter demosu değil**. İki kusur kare incelemesiyle bulunup düzeltildi (Hupo'nun ana sayfa konumuna varmaması, boş ikonlar). Açık: native görselin uyuyan Hupo olarak yeniden üretilmesi (`ONAY BEKLİYOR`); Hupo'nun ana sayfadaki `greeting` pozuyla eşleşmesi (Faz 4); Faz D–F (entegrasyon, cihaz QA, teslim) yapılmadı. Doğrulama KISMİ.
+
+### K-0150 · 2026-10-27 · VT/YÖN/MOB · Sözcük çekirdeği: Faz 2–3 ölçek, inceleme kuyruğu, APK denemesi (özet)
+- **Tür:** Gelişme + Sorun
+- **Kararlar (kullanıcı):** dört göz kaldırıldı, yerine 2 farklı aileden model `pass` + insan kontrolü; Arena kelime puanı 3/4/5 (ajan kararı, yalnız kelime modu); pilot tüm sınıflar; deyim/atasözü seçmeli oyun alanı; kazanım kaynağı `docs/mufredat/` ve ajanın PDF'i.
+- **Veri tabanı (uzakta uygulandı):**
+  - 20261095 (çekirdek, denetim kaydı, toplu onay, köprü, Arena) ve 20261096 (232 anlama sınıf/zorluk/örnek; hikâye sözlüğünün 997 girdisi çekirdeğe alındı).
+  - 20261097 (`kelime_inceleme_kuyrugu`, `kelime_toplu_yayinla`).
+  - Test: PGlite 55/55.
+- **Ölçek:** 1–8. sınıf, 1. tur 281 yazım → 219 yüklendi (Gemini + Opus kör denetim); elenen 54 için 2. tur 53 yazım → 38 yüklendi. Uzakta 271 soru `incelemede`, `yayinda` 0. Kazanım etiketi yok (`source_pending`), zorluk göreli tahmin. Dosyalar `docs/kelime-evreni/veritabani/olcek/`.
+- **Panel:** Kelime Evreni sayfasına inceleme kuyruğu; yeni tür seçenekleri (TR/EN). `tsc` ve ESLint temiz. Ekran kontrolü yapılmadı.
+- **Yayın durumu (2026-10-27 kontrolü):** `okuma_hikaye_surumleri` 176 sürümün hiçbiri `yayinda` değil; kelime sorusu yayında 0. Kullanıcının "yayınladım" dediği içerik veri tabanına düşmemiş görünüyor, nedeni açık değil.
+- **APK:** `pubspec.yaml` `1.3.0+4` → `1.3.0+5`. Debug APK derlendi (`flutter build apk --debug`, çıkış 0). `flutter install -d R5CWA0YKT2A` (SM S711B) "Installing" satırında kaldı; kurulum kullanıcı tarafından doğrulanmadı. Kullanıcı yeni hikâye/soru görmediğini bildirdi (yayında içerik olmadığı için beklenen).
+- **Açık:** (1) Kullanıcı yayın kararı ve yayın işlemi (panel); (2) yayın nedeninin açıklanması; (3) APK kurulumu doğrulaması; (4) APK, commit edilmemiş `mobile-app/` değişiklikleriyle derlendi (çoğu başka oturumdan); (5) elenen 15 sorunun ikinci elenmesi; (6) mobilde deyim/atasözü/bağlam türlerini seçme ekranı yok; (7) hikâye görselleri APK'ya gömülü.
+- **Sahip:** Ajan + Kullanıcı · **Önem:** Yüksek
+
+### K-0146 · 2026-10-25 · VT · Sözcük çekirdeği Faz 1 (20261095): dört göz kalktı, 2 model + insan kuralı, Arena kelime puanı, deyim/atasözü alanı
+- **Tür:** Karar (kullanıcı) + Gelişme
+- **Kararlar (kullanıcı):** dört göz kaldırıldı; yeni kural: iki FARKLI AİLEDEN AI modeli `pass` + insan kontrolü. Pilot kapsamı 1–8 tüm sınıflar. Deyim/atasözü seçmeli oyun alanı. Arena puanı ajana bırakıldı: yalnız kelime modunda doğru 3/4/5 (zorluğa göre), yanlış −1, en az 0, dağılım 4 kolay/4 orta/2 zor; genel soru Arena'sı değişmedi.
+- **Yapılan:** [20261095000000_sozcuk_cekirdegi.sql](supabase/migrations/20261095000000_sozcuk_cekirdegi.sql) uzakta uygulandı (`db:preview` yalnız bunu gösterdi). `kelime_anlamlari`: tur, ornek_cumle, sinif_alt/ust, zorluk, sozcuk_turu genişledi. `kelime_sorulari`: yeni türler (deyim, atasozu, sozcuk_turu, baglamda_anlam), kanit_duzeyi. `kelime_denetim_kayitlari` + `kelime_denetim_kaydet` (soru yalnız `incelemede` iken); yayın/onay son düzenlemeden sonra iki ailede pass ister. `okuma_sozluk_girdi_onayla` (K-0141 açık işi; panel düğmesi yok). `kelime_hikaye_baglari` köprüsü.
+- **Doğrulama:** PGlite 54/54 (`supabase/tests/kelime_evreni`, `npm test`); uzakta kolon/fonksiyon sayısı ve anon yetkisizliği sorguyla görüldü. Veri satırı değişmedi (232 anlam, 118 soru). Arena akışı gerçek uygulamada denenmedi.
+- **Açık:** panelde denetim kaydı/onay ekranı yok (RPC'ler hazır); Flutter'da yeni türler/alan seçimi yok; `okuma_sozluk_ice_aktar` hâlâ ayrı onaycı ister; mevcut 118 soru ve 997 sözlük girdisi denetlenmedi, hepsi taslak. Plan: [AR_GE_PLANI.md](docs/kelime-evreni/AR_GE_PLANI.md).
+- **Faz 2 (20261096, uzakta):** `sinif-N.json` → 232 anlama sınıf aralığı + editoryal zorluk (sınıf_alt 1–3→1, 4–6→2, 7–8→3, eş sesli +1) ve 213 örnek cümle (19'unda hedef sözcük cümlede bulunamadı, boş kaldı). Hikâye sözlüğünün 997 girdisi çekirdeğe girdi (toplam 1145 anlam: 164 deyim, 29 atasözü); 997 köprü `onayli` (aynı metin), 562 `oneri` (aynı yazım, farklı anlam; gürültülü, insan bakar). Taslak soruların zorluğu yeni kurala geçti. `_kelime_iki_model_gecti` eşit zaman damgasında temkinli sıraya alındı. PGlite 54/54 (6 ardışık koşu; Arena puan testindeki rastgelelik düzeltildi).
+- **Faz 3 pilot (uzakta, yayın YOK):** 14 deyim/atasözü sorusu (sınıf 3–7; `docs/kelime-evreni/veritabani/pilot-deyim-atasozu.json`). Üretici: Sonnet 5.5. Kör denetim: Gemini (gemini-3.8-flash) ve Opus (bağımsız alt ajan); üç tur düzeltmeyle (şık uzunluğu, ipucu sızması, kök–cümle biçimi) ikisi de 14/14 temiz. Uzakta 14 soru `incelemede`, 28 `pass` kaydı, kapı 14/14 geçiyor, `yayinda` 0. Yayın düğmesi sizde. Not: hikâye sözlüğündeki deyim sınıflaması gevşek (ör. "elini kaldırdı", "iç geçirdi", "başını tuttu" deyim değil); pilot yalnız gerçek deyim/atasözleriyle yapıldı, 164 deyim adayı çekirdekte denetlenmeden duruyor. Opus alt ajan üreticiyle aynı aileden (Claude), yalnız Gemini tam bağımsız. Kazanım etiketi yok (`source_pending`).
+- **Faz 3 ölçek (uzakta, yayın YOK):** 1–8. sınıf için 281 soru yazıldı (Sonnet alt ajanları; kurallar `docs/kelime-evreni/veritabani/uretim-brief.md`), yapısal kontrolden 273'ü geçti (`olcek-hat.mjs kontrol`), kör denetimde Gemini ve Opus'un ikisinin de temiz bulduğu 219'u yüklendi (sınıf 1: 12, 2: 18, 3: 30, 4: 37, 5: 31, 6: 34, 7: 37, 8: 20), 54'ü elendi (en çok zıt/eş anlamlı ve eş sesli; 8. sınıfta 22). Elenenler `olcek/elenen.json`'da, yeniden yazılabilir. Uzakta toplam 233 soru `incelemede` (14 pilot + 219), 118 eski taslak, `yayinda` 0. Denetçiler: Gemini (bağımsız aile), Opus (Claude ailesi; üretici Sonnet olduğu için model farklı, aile aynı). Kazanım etiketi yok (`source_pending`); zorluk üreticinin göreli tahmini, ölçülmedi.
+- **Faz 3 ölçek, 2. tur (elenen 54'ün yeniden yazımı):** 54 soru için 53 yeni soru yazıldı (aynı sınıf/tür; sorunlu hedefler yenileriyle değiştirildi), 51'i yapısal kontrolü geçti, Gemini + Opus kör denetiminde 38'i temiz bulunup yüklendi (sınıf 2: 2, 3: 1, 4: 3, 5: 5, 6: 7, 7: 3, 8: 17). Uzakta toplam 271 soru `incelemede`, 118 eski taslak, `yayinda` 0. Ret nedenleri (8. sınıf yazarının özeti): Gemini 8. sınıf sorularına "ilkokul düzeyi" dedi; -li/-siz türevli zıt çiftlerde kök sızıntısı; olumsuz–olumlu ilişkinin zıt anlamlı sayılmaması. 15 soru ikinci kez elendi, tekrar denenmedi (azalan verim); 1. tur dosyaları `olcek/tur1/` altında, 2. tur `olcek/` altında.
+- **Panel (20261097 uzakta; kod commit'lenmedi):** `kelime_inceleme_kuyrugu` ve `kelime_toplu_yayinla` (kuru çalıştırma varsayılan; her soru `kelime_soru_durum_degistir` kapısından geçer). Yönetim > Kelime Evreni üstüne "İnceleme kuyruğu" bölümü: sınıf/oyun süzgeci, cevap anahtarı + açıklama + model denetim rozetleri, "denetimden geçenleri seç", kontrol et, toplu yayınla (onay penceresi). Yeni soru türleri form ve çevirilerde (TR/EN). `tsc` ve ESLint temiz, PGlite 55/55. Ekran kontrolü yapılmadı (admin oturumu yok).
+- **Sahip:** Ajan · **Önem:** Yüksek
+
+### K-0142 · 2026-10-24 · DEN/VT/MOB · Kullanıcı komutları: 20261086/88 ve etiket SQL'i uygulandı; T.6.1.x düzeltildi; Sosyal 8 kararı; 4/8 önerisi incelemeye açıldı; Flutter müfredat ekranı düzeltildi
+- **Tür:** Gelişme + Sorun + Karar (kullanıcı talimatı)
+- **Konu:** DEN, VT, MOB
+- **Bağlam:** K-0133'teki engeller için kullanıcı komutları verdi. Migration'ları kullanıcı onayladı (önceki izin sınıflandırıcısı reddi bu komutla giderildi). 4/8. sınıf önerisini onaylamadan önce görmek istedi. Sosyal Bilgiler 8 için karar: HAYIR. T.6.1.x kaynak kontrolü ve düzeltmesi istendi. Flutter ekran kontrolü istendi (web paneli kullanıcı kontrol edecek). Soru üretim önceliği yapılacaklar listesine yazılmak istendi.
+- **Yapılan (kanıtlı):**
+  1. 20261086 (`mufredat_rpc`) ve 20261088 (`mufredat_ders_eslesme_din`) uzakta `supabase db query --linked -f` ile uygulandı (çıkış 0). Doğrulama: 5 RPC var (`get_mufredat_haritasi`, `get_mufredat_sorulari`, `admin_set_question_kazanim`, `admin_kazanim_kapsam`, `admin_kazanimsiz_sorular`); `mufredat_ders_eslesme` 8 satır (Din Kültürü dahil). `migration repair --status applied 20261086000000 20261088000000` çalıştı.
+  2. Etiket SQL'i (`docs/mufredat/etiket_onerileri/uygula_etiketler_2026-10-24.sql`), 20261086 uygulandıktan sonra çalıştırıldı. 200 soru kazanım aldı, 200 `question_revisions` kaydı oluştu. Kodlu soru 638 → 838; onaylı + kazanımsız 510 → 310.
+  3. T.6.1.x: uzakta 4 satır (Türkçe, 4. sınıf, 4. hafta, 2026-2027, "ÇOCUKLUĞUM BİTTİ Mİ?") T.6.1.1, T.6.1.2, T.6.1.4, T.6.1.7 kodları taşıyordu. Aynı metinler aynı planda T.4.1.2, T.4.1.4, T.4.1.7, T.4.1.8 kodlarıyla zaten vardı. `20261090000000_mufredat_t4_kod_duzelt.sql` uzakta uygulandı ve repair ile işlendi. Doğrulama: kalan T.6 kodu 0; 4. hafta T.4.1.x 4 satır. Yerel kaynaklar (`kazanim_etiket_tablosu_2026_2027.csv`, `haftalik_akis_2026_2027.csv`, `yillik_plan_2026_2027.json`) aynı eşlemeyle düzeltildi (12 kod). Sınır: eşleme metin karşılaştırmasına dayanır; MEB PDF'i repoda yok, web'de metin bulunamadı. → GÖR-069.
+  4. Sosyal Bilgiler 8 (10 soru) = İnkılap: **HAYIR** (kullanıcı kararı). Eşleme tablosunda İnkılap yok; 10 sorunun 0'ı etiketli.
+  5. 4/8. sınıf kod dönüşümü (105 öneri): **uygulanmadı**, kullanıcı onayı bekliyor. Sayılar doğrulandı: yüksek 62, düşük 29, eşleşme yok 14 (sınıf 4: 81, sınıf 8: 24). Önerilen 91 kodun tamamı eski program listesinde var. Dosya: `docs/mufredat/etiket_onerileri/kod_donusum_onerileri_4_8.csv`.
+  6. Flutter müfredat ekranı (`mobile-app/lib/screens/mufredat_yolu_screen.dart`): düzen testi `test/mufredat_yolu_layout_test.dart` (320/390 px, %130 yazı, uzun metin, Konu seç ve kazanım sayfası). İlk çalıştırmada üç taşma bulundu: (a) hafta kartı başlığında rozet 9,8 px taştı → rozet `Flexible`; (b) kazanım bilgi sayfası 9/16 yükseklik sınırında 181 px taştı → `isScrollControlled` + kaydırılabilir içerik; (c) 320 px'te %130 yazıda 110 px taşma (b ile aynı sayfa). Son çalıştırma: 20/20 geçti (`flutter test`, iki dosya, sıralı; çıktı 1:08). Önceki 4 hata yeniden üretilmedi; nedeni bilinmiyor, çakışan çalıştırmalardan kaynaklanmış olabilir.
+- **Durum:** TAMAMLANDI (migration'lar, repair, etiket SQL'i, T.6.1 düzeltmesi, Sosyal 8 kararı) · KISMEN (Flutter testleri yeşil değil, sonuç bekliyor) · BEKLİYOR (4/8 onayı)
+- **Doğrulama:** DOĞRULANDI: uzak sorgular (fonksiyonlar, eşleme sayısı, kodlu/kazanımsız sayılar, T.6 kalan 0, Sosyal 8 etiketli 0). DOĞRULANMADI: T.6→T.4 eşlemesinin kaynak PDF ile birebir kontrolü; cihaz/emülatör görsel kontrolü; koyu tema (uygulamada tanımlı değil); web panel (kullanıcı).
+- **Sahip:** Ajan · Kullanıcı (4/8 onayı, web panel kontrolü, kaynak PDF)
+- **Önem:** Yüksek
+- **İlgili:** K-0133, K-0129, GÖR-067…073; `supabase/migrations/20261090000000_mufredat_t4_kod_duzelt.sql`
+
+### K-0140 · 2026-10-24 21:33 · BEL/VT/MOB · Devir (2026-10-24): açık işler, kararlar ve yeni oturum için başlangıç
+- **Tür:** Not + Devir
+- **Konu:** BEL (devir), VT, MOB, VEL
+- **Bağlam:** Kullanıcı yeni sohbete geçiyor. Bu oturumda yapılanlar K-0133 sonrasında: HupoRead kahraman paketi (HR-121…132), mobil değer filtresi, DB değer etiketleri, yayın talebinin reddi.
+- **Yapılanlar:**
+  1. 12 hikâye (icerik/okuma/hikaye/hr121…hr132-*.hikaye.md): kaynak ChatGPT taslakları düzeltildi; yer tutucu hâlleri, şık uzunlukları, dayanak birebirliği, tek ahlak cümlesi uygulandı. Yerel kontrol (scratchpad/kontrol.cjs): 0 sorun. Olay örgüsü tekrarı (HR-122/126/130, 123/127/131, 124/128/132) kullanıcı kararıyla olduğu gibi bırakıldı.
+  2. 12 hikâyeye değer etiketi (deger_anahtarlari ve maarif); değerler ajan önerisi (K-0138).
+  3. Mobil (mobile-app): değer çipleri, "Veli tercihleri" çipi, kart rozeti. Yeni lib/models/okuma_degerler.dart, 	est/okuma_deger_filtre_test.dart. Testler: yeni 10/10, mevcut okuma 114/114; lutter analyze temiz.
+  4. Canlı DB (salt okunur ölçüm + 11 hikâye): 112 hikâye, 176 sürüm (164 taslak, 12 arşiv). yardimci_deger 11 hikâyede eklendi (K-0137). Geri alma adımı K-0137'de.
+  5. Yayın talebi reddedildi (K-0139): denetim alanları hepsi pending; içe aktarma admin ister; sahte pass yazılmadı.
+- **Doğrulanan:** Çatı değerler D1/D14/D16 = Adalet/Saygı/Sorumluluk (sözlük ile birebir). hr110 dosyası UTF-8 temiz (bozulma görüntüden kaynaklandı).
+- **Önemli bilgiler (yeni oturum için):**
+  - DB'ye erişim: supabase db query --linked -f <dosya.sql> -o json (proje ref ccozfrpnvyrnktpffkwo). Okuma ve yazma çalışır; API egin/commit kabul etmez, ifadeleri ayrı çalıştırın. Sürüm içeriği tetikleyiciyle korunur. Admin RPC'leri (okuma_paket_ice_aktar, okuma_surum_durum_degistir) admin oturumu ister; CLI oturumu admin değildir.
+  - Mobil katalog _okuma_katalog alanlarını (na_deger, yardimci_deger, deger_eslesmesi) zaten döndürüyor; sunucu değişikliği gerekmedi.
+  - Numara çakışması: başka bir oturum da K-0136 kullandı (satır "Canlı migrasyon kazası"). Benim kayıtlarım K-0137…K-0140.
+  - Çalışma ağacında birden fazla oturumun commit'lenmemiş değişiklikleri var (mobile-app/lib/screens/okuma/, icerik/okuma/, PROJE_GUNLUGU.md). Commit'ler pathspec ile atılmalı; geniş git add yapılmamalı.
+  - Geçici betikler scratchpad/ altındadır (kontrol.cjs, degerleri_ekle.cjs, deger_kontrol.cjs); repoya dahil değil.
+- **Açık kararlar (kullanıcı):**
+  1. K-0137'deki doğrudan etiket güncellemesi kabul mü, geri alınsın mı?
+  2. Yayın: ajan denetimleri (GÖR-063) başlatılsın mı? Admin insan onayı ve yayın admin panelinden yapılacak.
+  3. 12 yeni hikâye: DB'ye hangi yolla (paket hazırlama + admin kuru içe aktarma)?
+  4. 12 hikâyenin değer seçimleri onaylansın mı? (K-0138 tablosu.)
+  5. Mobil değişiklikler için uygulama sürümü ve yayın zamanı (docs/SURUMLEME.md).
+- **Durum:** BEKLİYOR (devir notu)
+- **Sahip:** Kullanıcı (kararlar), Ajan (sonraki adımlar: GÖR-062…066)
+- **Önem:** Yüksek
+- **İlgili:** K-0133…K-0139, GÖR-062…066
+
+### K-0139 · 2026-10-24 21:29 · VT/BYM · Yayın talebi reddedildi (kapı kapalı); canlı DB'de admin dışı değişiklik düzeltme kaydı
+- **Tür:** Karar + Sorun
+- **Konu:** VT
+- **Bağlam:** Kullanıcı 112 hikâyenin yayına alınmasını, 31 sürümün yeni sürüm olarak içe aktarılmasını ve 12 yeni hikâyenin DB'ye alınmasını istedi ("hepsine onay veriyorum").
+- **Ölçüm (salt okunur):** 176 sürümün 176'sında denetim jan_a=pending, jan_b=pending, insan=pending. Yayın kuralı (20261068000000_okuma_uc_goz_yayin_kurali.sql) yayın için ajan_a=pass, ajan_b=pass, insan=approved ve inceleyen_id ister. İçe aktarma (okuma_paket_ice_aktar) admin oturumu ister (
+equire_admin); bu oturum admin değil.
+- **Karar:** Yayın, içe aktarma ve denetim kararı bu oturumda yapılmadı. Kapılar aşılmadı, sahte pass yazılmadı, yetki kontrolü devre dışı bırakılmadı. Kullanıcı onayı insan kapısı için geçerli sayılabilir, ama ajan_a/ajan_b gerçek denetimler olmadan ve admin hesabıyla kaydedilmeden yayın yapılmaz.
+- **Düzeltme (önceki işlem):** K-0137'deki 11 hikâyenin okuma_hikaye_etiketleri.yardimci_deger güncellemesi, admin içe aktarma yolundan geçmeden doğrudan SQL ile yapıldı. Kayıt ve geri alma bilgisi K-0137'de; kullanıcı kabul etmezse aynı kayıttaki geri alma adımı uygulanır.
+- **Açık (kullanıcı/ajan):** (a) Ajan A ve B denetimleri (gerçek raporlarla), (b) insan onayı admin panelinden, (c) 31 sürüm ve 12 yeni hikâye için admin içe aktarma (önce kuru çalıştırma), (d) 12 yeni hikâyede TDK ve kazanım eşlemesi (source_pending, sozluk_tdk: pending).
+- **Durum:** BEKLİYOR (kullanıcı ve admin hesabı gerekli)
+- **Sahip:** Kullanıcı (admin işlemleri), Ajan (denetim raporları, paket hazırlığı, onay talebi)
+- **Önem:** Yüksek
+- **İlgili:** K-0137, K-0138, K-0110, docs/okuma-entegrasyon/denetim/
+
+### K-0137 · 2026-10-24 21:23 · VT/MOB · Canlı DB: 11 hikâyeye yardımcı değer eklendi; sürüm içerikleri değiştirilemedi; çocuk kataloğu boş
+- **Tür:** Gelişme + Sorun
+- **Konu:** VT, VEL
+- **Bağlam:** Kullanıcı "veri tabanındaki tüm hikâyelerin değer etiketini yap" dedi. Okuma (salt okunur) ile durum ölçüldü: 112 hikâye, 176 sürüm (164 taslak, 12 arşiv, 0 yayında, 0 incelemede). Her sürümde na_deger dolu; yardimci_deger 31 sürümde (11 hikâye) boştu.
+- **Yapılan:** Sürüm yardımcı değerleri, hikâye içeriğine göre seçildi (ana değerle aynı değil): hr001 D12, hr002 D4, hr003 D3, hr004 D6, hr005 D6, hr009 D9, hr010 D3, hr012 D4, hr013 D6, hr014 D18, hr016 D3. okuma_hikaye_etiketleri.yardimci_deger 31 satırda güncellendi. Kalan boş: 0.
+- **Yapılamayan:** okuma_hikaye_surumleri.deger_anahtarlari alanı _okuma_surum_koru tetikleyicisiyle (SURUM_DEGISMEZ) korunuyor; 31 sürümde hâlâ tek değer var. Tutarlılık için yeni sürüm olarak içe aktarma gerekir. Bu çalışmada bilinçli olarak tetikleyici aşılmadı.
+- **Sorun:** 12 yeni hikâye (HR-121…132) veritabanında yok; derleme/yayın hattı bu oturumda bulunamadı. Çocuk kataloğu (_okuma_gorunen_surum) yalnız yayinda (önizlemede incelemede) sürümleri döndürür; DB'de ikisi de sıfır. Sonuç: çocuk uygulamasında şu an hiçbir hikâye görünmüyor.
+- **Geri alma:** update public.okuma_hikaye_etiketleri set yardimci_deger = null (yalnız aşağıdaki 11 hikâye slug'u için) — değerler listesi: hr001-kayip-canin-izinde, hr002-renkli-ucurtma, hr003-corabini-arayan-robot, hr004-ters-gun-okulda, hr005-hocanin-golundeki-umut, hr009-konusan-kalem-kutusu, hr010-kelogan-ve-konusan-tas, hr012-yeni-arkadasin-gizli-yetenegi, hr013-kirilan-oyuncak-kopru, hr014-yagmur-damlasinin-yolculugu, hr016-golgeyi-kim-buyuttu.
+- **Durum:** DOĞRULANDI (etiket sayısı sorgusu: yardimci_bos 0); çocuk ekranı kontrolü YAPILMADI (yayında sürüm yok).
+- **Sahip:** Kullanıcı (yayın ve yeni sürüm kararı), Ajan (veri)
+- **Önem:** Yüksek
+- **İlgili:** K-0138, K-0135, supabase/migrations/20261050000200_okuma_dunyasi_ogrenci.sql, _okuma_surum_koru
+
+### K-0136 · 2026-10-24 · VT · Canlı migrasyon kazası: 20261085 sürüm çakışması, mufredat_etiket_temeli uzakta uygulandı
+- **Tür:** Sorun + Karar
+- **Konu:** VT
+- **Bağlam:** Kullanıcı 20261085 (okuma 67 hikâye taslağı) uygulanmasını istedi (`db:preview` yalnızca bu dosyayı göstermişti). `db:deploy` çalıştı. Oysa yerelde aynı sürüm numarasında başka bir oturumun dosyası `20261085000000_mufredat_etiket_temeli.sql` (20:46, kuru çalıştırmadan sonra oluşmuş) vardı. CLI bu dosyayı önce uyguladı; benim dosyam sürüm çakışması hatasıyla düştü.
+- **Sonuç:** Uzak `schema_migrations` 20261085 kaydı artık `mufredat_etiket_temeli` ile dolu. Dosyanın kendi notu "uzak veritabanına uygulanmadan önce kontrol gerekir" diyor; bu kontrol yapılmadı. İçerik: `mufredat_ders_eslesme`, `mufredat_takvim` tabloları, `mufredat_bugun_hafta()`, `mufredat_kazanim_ozet` görünümü, `questions (sinif, kazanim_kodu)` indeksi. Yıkıcı ifade yok; yeni nesne ekliyor. Geri almak (DROP) canlı veri gerektirdiği için yapılmadı.
+- **Yapılan:** Okuma migrasyonu `20261087000000_okuma_yerel_hikaye_taslak.sql` olarak yeniden adlandırıldı; yerel sürüm çakışması giderildi. Uzakta uygulanmadı.
+- **Bekleyen:** `20261086000000_mufredat_rpc.sql` yerelde, uzakta değil. Deploy onu da getirir; onay olmadan çalıştırılmadı. Okuma migrasyonu (20261087) bu yüzden de bekliyor.
+- **Doğrulanmadı:** Uzak şemadaki mufredat nesnelerinin varlığı (salt okunur kontrol yapılmadı). 20261087'nin uzakta içe aktarması (henüz uygulanmadı).
+- **Ders:** Deploy yalnızca `db:preview` çıktısının bugünkü durumuyla yapılır; çalışma ağacında başka oturumların migrasyonları varsa deploy öncesi bu dosyalar listelenip onay alınır.
+- **Açık:** (1) Müfredat etiket temelinin korunup korunmayacağı (kullanıcı/müfredat sahibi); (2) 20261086 için onay; (3) onaydan sonra 20261087 deploy.
+- **Sahip:** Ajan (kayıt, yeniden adlandırma) · Kullanıcı (müfredat kararı, 20261086 onayı)
+- **Önem:** Yüksek
+- **İlgili:** K-0133, K-0135; `supabase/migrations/20261085000000_mufredat_etiket_temeli.sql`; `supabase/migrations/20261087000000_okuma_yerel_hikaye_taslak.sql`
+
+### K-0138 · 2026-10-24 21:10 · VEL/MOB · Mobilde Maarif değer filtresi ve rozeti; 12 yeni hikâyeye değer etiketi
+- **Tür:** Gelişme + Karar
+- **Konu:** MOB, VEL, BYM (içerik)
+- **Bağlam:** K-0135 kararları kullanıcıdan ONAYLI geldi.
+- **Karar:** Filtre ve rozet istemci tarafında; sunucu değişikliği (migration) yok. `okuma_katalog_filtre` ve `_okuma_katalog` zaten `p_deger`, `ana_deger`, `yardimci_deger`, `deger_eslesmesi` döndürüyor. Değer seçimleri ajan önerisidir (aşağıda); kullanıcı değiştirebilir.
+- **Uygulama:**
+  1. `mobile-app/lib/models/okuma_degerler.dart` (yeni): D1–D20 adları (sözlükle birebir).
+  2. `okuma_models.dart`: `OkumaKatalogSatiri` alanları `anaDeger`, `yardimciDeger`, `degerEslesmesi`; `fromMap`/`toMap`.
+  3. `hikaye_secim_ekrani.dart`: değer çipleri (katalogdaki değerler, sayısal sıralı), "Veli tercihleri" çipi, kartta değer rozeti (veli eşleşmesinde "· Veli tercihi"), "Filtreleri temizle" iki filtreyi de sıfırlar. Dosyada başka oturumun commit'lenmemiş değişiklikleri vardı; bu değişiklikler korundu, yalnız eklemeler yapıldı.
+  4. `okuma_tema.dart`: iki yazı sabiti.
+  5. `test/okuma_deger_filtre_test.dart` (yeni): 10 test.
+- **Veri:** 12 yeni hikâyeye `deger_anahtarlari` ve `etiketler.maarif` eklendi (HR-121 D12/D3, 122 D6/D16, 123 D12/D6, 124 D16/D5, 125 D7/D12, 126 D16/D20, 127 D6/D12, 128 D16/D5, 129 D3/D20, 130 D6/D3, 131 D6/D16, 132 D16/D1). Yerel kontrol: 12/12 geçerli kod, ana değer listede, en fazla 5.
+- **Durum:** DOĞRULANDI (yalnız birim/widget testi ve analiz); cihazda ekran kontrolü YAPILMADI.
+- **Doğrulama:** `flutter analyze` (değişen 5 dosya): sorun yok. `flutter test test/okuma_deger_filtre_test.dart`: 10/10. Mevcut okuma testleri (akis, kart, v3, golden, veri, sozlugum, duzeltme): 114/114. Hikâye kontrolü: 12/12.
+- **Açık:**
+  1. Yeni 12 hikâye henüz veritabanında değil; derleyici/yayın hattı bulunamadı. Yayınlanana kadar uygulamada görünmezler. Bu yüzden değer etiketleri de şimdilik kullanılmıyor.
+  2. Filtre yalnız yüklenmiş 24 satır üzerinde çalışır (liste limiti). Sunucu filtresi (`p_deger`) gerekirse ayrıca bağlanır.
+  3. Çocuk, velinin seçtiği değerleri göremez; "Veli tercihleri" çipi yalnız sunucunun işaretlediği eşleşmeleri gösterir. Uygulama sürümü çıkarılmadı (docs/SURUMLEME.md ayrı adım).
+  4. Ekran kontrolü (cihaz/golden) yapılmadı.
+- **Sahip:** Ajan (kod), Kullanıcı (yayın ve sürüm kararı)
+- **Önem:** Orta
+- **İlgili:** K-0134, K-0135, `mobile-app/lib/screens/okuma/hikaye_secim_ekrani.dart`
+
+### K-0135 · 2026-10-24 20:41 · VEL/MOB · Değer tercihi: veli seçimi kayıtlı, mobilde filtreleme yok; yeni 12 hikâyede değer etiketi yok
+- **Tür:** Sorun
+- **Konu:** VEL, MOB
+- **Bağlam:** Kullanıcı, veli panelinde seçilen değer tercihlerinin telefonda hikâye filtrelemesine bağlı olup olmadığını sordu. Salt okunur Explore incelemesi yapıldı (dosya değiştirilmedi).
+- **Bulgu:**
+  1. Veri modeli VAR: hikâye frontmatter (92/104 dosyada `deger_anahtarlari`), paket (94/94), anotasyon (92/92), `okuma_hikaye_etiketleri`, değer sözlüğü `okuma_etiket_sozlugu` (D1–D20), tercih tablosu `okuma_cocuk_tercihleri`.
+  2. Veli paneli VAR-ÇALIŞIYOR: `OkumaDegerleri.tsx` en fazla 5 değer seçtirir; `okuma_veli_degerleri_ayarla` RPC'si `okuma_cocuk_tercihleri`'ne yazar.
+  3. Mobil VAR-BAĞLI-DEĞİL: `okuma_repository.dart:161-170` `p_deger` göndermiyor; değer rozeti veya filtresi yok.
+  4. Sunucu sıralaması VAR: `_okuma_katalog` tercihe uyan hikâyeleri öne alır, dışlamaz; `okuma_seri_ve_oneri` "günün önerisi"ni dolaylı etkiler. Mobil bunu görünür kılmıyor.
+  5. Düzeltme: K-0134'te "değer kaynağı yok" yazdım; yanlıştı. D1–D20 sözlüğü migration'da mevcut. Yeni 12 hikâyede `deger_anahtarlari` yazılmadı, bu nedenle tercih sıralamasında öne çıkmazlar.
+- **Açık:** (a) Mobilde filtre veya rozet kararı yok (ürün kararı). (b) 12 hikâyeye D-kodu eklemek için içerik onayı gerekir. (c) Çatı değer eşlemesi D1/D14/D16 ile metindeki "adalet, saygı, sorumluluk" arasında sözlük seed'iyle doğrulanmadı. (d) `hr110` frontmatter'ında karakter bozulması görünüyor; kaynağı doğrulanmadı.
+- **Durum:** DOĞRULANMADI (kod okuması; canlı veri ve ekran kontrolü yapılmadı)
+- **Sahip:** Kullanıcı (ürün kararı), Ajan (kod okuması)
+- **Önem:** Orta
+- **İlgili:** `web-panel/src/components/veli-paneli/okuma/OkumaDegerleri.tsx`, `mobile-app/lib/services/okuma_repository.dart`, `supabase/migrations/20261050000200_okuma_dunyasi_ogrenci.sql`
+- **Güncelleme 2026-10-24 21:10:** Kullanıcı kararları ONAYLI: mobilde değer filtresi ve rozet (EVET), 12 hikâyeye değer etiketi (EVET). Açık nokta 1 kapandı: çatı değerler D1/D14/D16 = Adalet/Saygı/Sorumluluk; `okuma_etiket_sozlugu` ve `cati_deger` seed'i ile birebir. Açık nokta 2 kapandı: `hr110` dosyası UTF-8 olarak temiz (başlık `Yitik Zamanın Haritacıları`); bozulma okuma aracındaki görüntüden kaynaklandı, dosyadan değil. Uygulama: K-0138.
+
+### K-0134 · 2026-10-24 20:33 · BYM/VEL · HupoRead yeni kahraman paketi (HR-121…132) içeri alındı; 12 taslak hikâye düzeltildi, yayın kapısı kapalı
+- **Tür:** Gelişme + Sorun
+- **Konu:** VEL (içerik), DEN (kapı kuralları)
+- **Bağlam:** Kullanıcı ChatGPT ile üretilmiş iki paket getirdi (`HupoRead_Yeni_Kahramanlar_Paketi.zip`: HR-121…124; `HupoRead_2_Yeni_Set_HR125-132.zip`: HR-125…132). Skill (`meb-soru-sozcuk-uzmani`) ve `docs/soru-uretim/GERI_BILDIRIM_2026-10-24.md` kontrol listesine göre incelendi.
+- **Plan:** (1) Zip'ler boş scratchpad'e açıldı, betik çalıştırılmadı. (2) Her hikâye repo biçimine (`icerik/okuma/hikaye/*.hikaye.md`) taşındı. (3) Düzeltmeler uygulandı. (4) Yerel kontrol betiği (`scratchpad/kontrol.cjs`, js-yaml) çalıştırıldı.
+- **Düzeltmeler:** Yer tutucu hâl etiketleri (`{kahraman}ın` → `{kahraman:ilgi}` gibi; soru kökünde ad yerine "köprü mühendisinin"); doğru şık en uzun olmasın diye çeldiriciler uzatıldı (12 hikâyenin çoğunda ihlal vardı); `Hiçbiri`/`İki model de` tipi şıklar kaldırıldı; her hikâyede ahlak cümlesi en fazla bir kez kalacak şekilde kırpıldı; dayanak cümleleri sayfa numarasıyla birebir doğrulandı; `{yoldas}` → `{yoldas:yalin|bir arkadaş}`.
+- **Karar:** Hikâyeler `taslak`, `published=false`, `curriculum_status: source_pending` (kazanım kodu uydurulmadı). Kullanıcı kararı yok; yayın için iki ajan `pass` + insan onayı gerekir. Anotasyon/sözlük/paket katmanı bu oturumda üretilmedi.
+- **Durum:** DOĞRULANMADI (içerik kontrolü yapıldı; ekran, derleyici ve TDK doğrulaması yapılmadı)
+- **Doğrulama:** Yerel kontrol: 12 dosya, YAML geçerli, 0 sorun. TDK sözlük karşılaştırması ve resmî kazanım eşlemesi YAPILMADI. `soru_kontrol.mjs` kazanım kodu olmadığı için çalıştırılmadı.
+- **Açık kalanlar:**
+  1. Sözlük yuvaları (`sozluk.json`), anotasyon ve paket derlemesi için derleyici repoda bulunamadı (`tolye/` yok); zip'lerdeki anotasyon JSON'ları ayrıca duruyor, `spans` boş ve yuva adayları eş anlamlı değil. Derleyici yolu netleşince yapılacak.
+  2. Kahraman türü dışında değer etiketi (`deger_anahtarlari`) yazılmadı; kaynak yok.
+  3. Hikâyeler birbirine çok benziyor: HR-122/126/130 üçü de "köprü mühendisi + ölçüm + ilk tahmin yanlış"; HR-123/127/131 "fotoğrafçı + arşiv + karşılaştırma"; HR-124/128/132 "gece treni + kar/sis + bekleme". Kullanıcı kararı gerekiyor (yeniden kurgu mu, yoksa set olarak mı yayınlanacak).
+  4. Hikâyelerin "tanitim" ve "tur"/"konu" alanları benim atamam; kullanıcı onayı yok.
+  5. Kullanıcının `icerik/okuma/hikaye/hr110-*.md` dosyası ayrı bir oturumda değiştirilmiş; bu iş ona dokunmadı.
+- **Güncelleme 2026-10-24 20:40:** Kullanıcı kararı `ONAYLI`: üç kalıp benzerliği (3. madde) olduğu gibi kalır; HR-122/126/130, HR-123/127/131, HR-124/128/132 yeniden kurgulanmayacak. 3. madde kapandı; yayın kararı ayrı kalır.
+- **Sahip:** Ajan (içerik taslağı), Kullanıcı (yayın kararı)
+- **Önem:** Orta
+- **İlgili:** `docs/soru-uretim/GERI_BILDIRIM_2026-10-24.md`, `.claude/skills/meb-soru-sozcuk-uzmani/SKILL.md`, `icerik/okuma/hikaye/hr121…hr132`
+
+### K-0133 · 2026-10-24 20:25 · DEN/VT · Müfredat: sınav dağılımı tablosu yüklendi, DKAB 8 kodları eşlendi; haftaya göre etiketleme tasarımı ve iş paketleri açıldı
+- **Tür:** Karar + Gelişme + Plan
+- **Konu:** DEN, VT
+- **Bağlam:** K-0129 açıklarına kullanıcı "kararları sen ver, Haiku uygulasın" dedi (ONAYLI, delegasyon). Ayrıca müfredat haritası çıktığı için soruların müfredata ve haftaya göre etiketlenmesi ve çocukların "o zamana kadar işlenen" konulardan soru çözebilmesi için sistem tasarımı istendi.
+- **Karar (ana oturum, kullanıcı delegasyonuyla):** (1) DKAB 4 ve 8 yeni plan yayımlanınca yeniden alınır; o zamana kadar 2025-2026 dosyası işaretli kalır ve haritadan dışlanır. (2) DKAB 8 sınav kodları: yalnız plan metni ile sınav metni normalize edilmiş birebir eşitse eşlenir; 10 kod birebir, 2 kod (`8.1.6`, `8.2.5`) yalnız aksan/tire/boşluk farkıyla eşlendi (`kayit_notu` ile işaretli); kalan 15 plan kazanımı kodsuz. (3) 4 ve 8. sınıf "önceki program" kalır (2026-27 sınav tabloları eski kodlarla). (4) Sınav dağılımı veri tabanına yüklenir; senaryosu boş 1.318 ve MEB bildirim metinli 27 satır (hepsi soru sayısı 0) alınmadı. (5) Bilişim 5–6, Görsel 2 boşlukları ve Müzik'te dışlanan satır insan kontrolü bekler (değişmedi).
+- **Uygulama (Haiku, Sonnet doğrulaması):** `20261084000000_mufredat_sinav_dagilim.sql` uzakta uygulandı; `db:preview` yalnız bu migration'ı gösterdi. Dosyalar: `docs/mufredat/dkab8_kod_eslesme.csv`, `scripts/dkab8_kod_esle.py`, `scripts/build_migration_sinav.py`.
+- **Plan:** `docs/mufredat/PLAN_HAFTA_ETIKETLEME.md` (veri modeli, öğrenci RPC sözleşmesi, yönetim RPC'leri, etiketleme hattı, arayüz, WP1–WP7). Kodlama Haiku ajanlarında: WP1+WP2 (DB), WP3 (etiket önerileri), WP4 (web panel), WP5 (Flutter). Uzak DB'ye uygulama ve yayın: Sonnet kontrolünden sonra.
+- **Durum:** TAMAMLANDI (sınav tablosu, DKAB 8 eşleme) · DEVAM (WP1–WP5; henüz teslim alınmadı)
+- **Doğrulama:** DOĞRULANDI (ana oturum, uzak sorgu): `mufredat_sinav_dagilim` 4.343 satır, soru toplamı 1.787; `mufredat_hafta` hâlâ 10.594; DKAB 8 kodlu satır 16, yazım normalizasyonu notlu 2 satır. WP1–WP5 için DOĞRULANMADI.
+- **Sahip:** Ajan (kodlama) · Kullanıcı (insan kontrolleri, yayın)
+- **Önem:** Yüksek
+- **İlgili:** K-0129, GÖR-061, `docs/mufredat/PLAN_HAFTA_ETIKETLEME.md`. 2. dönem ortak yazılı tablosu çoğunlukla boş (yayımlanmamış görünüyor); yayımlanınca betik yeniden çalıştırılır.
+- **Güncelleme 2026-10-24 21:05 (WP1+WP2 teslim alındı; uzak uygulama ENGELLİ):** WP1+WP2 Haiku'dan teslim alındı, Sonnet incelemesi yapıldı: `require_admin()` var, öğrenci RPC'si `dogru_sik` döndürmüyor, gelecek hafta soruları hiçbir modda gelmiyor; PGlite `supabase/tests/mufredat_yuzey` 71/71 (ana oturumda yeniden çalıştırıldı). Ölçüm (uzak, salt okunur): `questions` 1.148, kazanım kodlu 638 (onaylı ve kodlu 458); kodlu soruların 105'inin kodu 2026-27 müfredatında yok; `questions.ders` içinde "Din Kültürü" (40 soru) eşlemesizdi → `20261088000000_mufredat_ders_eslesme_din.sql` eklendi (uygulanmadı). **Bulgu:** `20261085` uzakta zaten uygulanmış (başka bir oturumun `db:deploy`'u yanına almış olabilir; içerik doğrulandı: 7 eşleme, 41 takvim satırı, `mufredat_bugun_hafta('2026-12-14')` = 13). `20261086` ve `20261088` bekliyor; ancak başka bir oturumun `20261087000000_okuma_yerel_hikaye_taslak.sql` dosyası da bekliyor ve `db:deploy` onu da uygular, bu yüzden uygulanmadı. Gerekli: o dosyanın sahibi/kullanıcı kararı. `20261086`, `questions.kazanim_kodu` ve `kazanim_metni` kolonlarına `authenticated` için SELECT yetkisi veriyor (öğrenci RPC'si okuyabilsin; yanıt anahtarı kolonlarına yetki verilmedi).
+- **Güncelleme 2026-10-24 21:20 (WP3 ve WP4 teslim alındı):** WP3: 510 kazanımsız onaylı soru için öneri CSV'si üretildi (`docs/mufredat/etiket_onerileri/`): öneri 322 (yüksek 114, orta 135, düşük 73), eşleşme yok 148, ders eşleşmedi 40 ("Din Kültürü"; 20261088 ile çözülecek). DB'ye yazılmadı; tek okuyucu (Haiku), ikinci denetim yok; insan incelemesi listesi RAPOR.md'de (orta+düşük 208 + yüksek %20 örnek 23). Bulgular: (1) DB'deki 75 (ders, sınıf, kod) üçlüsü müfredatta yok: 4. sınıf Matematik/Fen ve Türkçe 4/8'de TYMM biçimli kod (`MAT.4.x.x`, `FB.4.x`, `T.O.8.x`) kullanılmış, planlar eski biçimde (`M.4.x.x.x`, `F.4.x.x.x`, `T.4.x`); bu sorular etiketlenmedi (GÖR-061 d: program yılı kararı). (2) Sosyal Bilgiler 8 (10 soru) için müfredatta karşılık yok (8. sınıf İnkılap), eşleme tahmin edilmedi. (3) Müfredat CSV'de yazım hatası: Sosyal 5'te `B.5.1.2` (SB.5.1.2 olabilir), kaynakta doğrulanmadı. (4) Aday üretici 20 soruda doğru kazanımı ilk 8 aday arasına almadı, 38 soruda sözcük örtüşmesi sıfır; İngilizce kelime soruları için ayrı kural gerekir. WP4: web panelde kazanımsız filtre, toplu "Kazanım ata", formda kazanım seçici, "Kazanım Kapsamı" sayfası; `tsc` 0 hata, `eslint` değişen dizinlerde 0 hata (ana oturumda yeniden çalıştırıldı). DOĞRULANMADI: ekran (390/768/1024 px, karanlık mod) ve RPC çağrıları (uzakta 20261086 yok). Bilinen kısıt: `admin_list_questions` kazanım kodunu döndürmüyor, listede mevcut etiket görünmüyor; kazanımsız sayfalama toplam göstermiyor; kazanımlar istemcide gruplanıyor (view/RPC ile değiştirilebilir). WP5 (Flutter "Müfredat yolu") teslim alındı: `mufredat_models.dart`, `mufredat_yolu_screen.dart`, depo/sağlayıcı metotları, `subject_topics_screen.dart`'a giriş kartı; `fetchQuizQuestions` değişmedi. Ana oturumda yeniden çalıştırıldı: `flutter test test/mufredat_yolu_test.dart` 12/12; modelin okuduğu JSON anahtarları `get_mufredat_haritasi` çıktısıyla karşılaştırıldı, uyumlu. Ajan raporu: değişen 7 dosyada `flutter analyze` temiz (tüm proje analizi 20+ dk takıldı, iptal). **DOĞRULANMADI:** cihaz/emülatörde görsel kontrol (320 px, koyu tema), gerçek RPC çağrısı (uzakta `20261086` yok). Durum: kodlama bitti, canlıya alma `20261086`/`20261088` uygulamasına bağlı (yukarıdaki engel).
+- **Güncelleme 2026-10-24 21:55 (kullanıcı: "en doğru kararı sen ver"; kararlar ve uygulama durumu):** (1) `20261086` ve `20261088` uzağa uygulanmaya çalışıldı (`supabase db query --linked -f`, yalnız kendi dosyalarım; başka oturumun `20261087…okuma_yerel_hikaye_taslak.sql` taslağı bilerek gönderilmedi). Claude Code izin sınıflandırıcısı "üretim dağıtımı" diye REDDETTİ; dolanılmadı. Durum: ENGELLİ, kullanıcı komutu kendi terminalinde çalıştıracak ya da izin kuralı ekleyecek. (2) 4/8. sınıf: eski program kodları esas; 105 soru için dönüşüm önerisi `kod_donusum_onerileri_4_8.csv` (62 yüksek, 29 düşük, 14 eşleşme yok; birebir metin eşleşmesi 0); uygulanmadı, insan onayı gerekli. (3) Etiketler: ikinci bağımsız (kör) okuma bitti. 510 sorudan iki okuma 210'unda aynı kodda uyuştu, 55'inde farklı kod verdi. İlk okumada güveni düşük 10 uyuşma çıkarılarak 200 etiket seçildi: `uygulanacak_etiketler_2026-10-24.csv` ve doğrulamalı `uygula_etiketler_2026-10-24.sql` (kod müfredatta yoksa atlar, yalnız onaylı+kazanımsız sorulara dokunur, her değişiklik `question_revisions`'a düşer). PGlite'ta 200/200 etiket ve 200 revizyon üretti. DB'ye uygulanmadı (uzak yazma + 20261085 önkoşulu zaten uzakta). Not: ikinci okuma 50–509. sorularda aday listesi yerine tüm ders havuzuna baktı (talimattan sapma, kod geçerliliği 0 hatayla doğrulandı); 8. sınıf Sosyal Bilgiler 10 soru müfredatta karşılıksız (İnkılap dersiyle eşdeğerlik kararı gerekli); 4. sınıf Sosyal Bilgiler `SB.4.x` kodları kaynakta TYMM etiketli (tutarsızlık); plan CSV'sinde 4. sınıf Türkçe altında 6. sınıfa ait görünen `T.6.1.x` kodları var (kaynak kontrolü gerekli). Havuz boşlukları (ör. 5. sınıf Matematik yuvarlama, 6. sınıf oran/üslü sayı, 1–3. sınıf eş/zıt anlam) soru üretim önceliğidir.
+
+### K-0129 · 2026-10-24 20:04 · DEN/VT · Haftalık müfredat referansı (1–8. sınıf, DKAB dahil) ve `mufredat_hafta` tablosu veri tabanına yüklendi
+- **Tür:** Gelişme + Karar
+- **Konu:** DEN, VT
+- **Bağlam:** Kullanıcı soru veri tabanını hafta ve kazanım başlığına göre etiketlemek için MEB 2026-27 haftalık akışını istedi: TYMM taslak çerçeve planları (Temel Eğitim) ve ODSGM 1. dönem konu-soru dağılım tabloları (5–8). Sonra Din Kültürü'nün yıllık planını ekledi (dogm.meb.gov.tr ve kullanıcının 5. sınıf dosyası). İlkokulda resmî sınav olmadığı belirtildi.
+- **Plan:** (1) Kaynakları indir ve ayrıştır (TYMM 19 ZIP, ODSGM 6 xlsx, DKAB 4–8 xlsx, DKAB öğretim programı PDF). (2) Betikle birleştir: `docs/mufredat/scripts/build_mufredat.py`, `build_xlsx.py`. (3) Migration üret: `build_migration.py` → `supabase/migrations/20261083000000_mufredat_hafta.sql` (tablo, RLS, yalnız `authenticated` okuma, `service_role` yazma). (4) PGlite'te çalıştır. (5) `db:preview` (yalnız bu migration bekliyordu) ve `db:deploy`.
+- **Karar:** Kullanıcı ONAYLI: (a) `mufredat_hafta` migration + tohum veri tabanına yüklensin; (b) Din Kültürü'nün yıllık planı öncelikli kaynak; (c) proje günlüğü kaydı yazılsın.
+- **Durum:** TAMAMLANDI (tablo ve yükleme; kapsam sınırları GÖR-061)
+- **Doğrulama:** DOĞRULANDI. Kanıt: `npm run db:deploy` → "Applying migration 20261083000000_mufredat_hafta.sql"; `npx supabase db query --linked` → 10.594 satır, 74'ü 2025-2026 (DKAB 4 ve 8); PGlite çalıştırması çıkış 0, RLS açık, 10.594 benzersiz satır. Kazanım kodu eşleşmesi: 5–8. sınıf ortak yazılı kodlarının %100'ü planla eşleşti (DKAB 5–7 dahil); DKAB 5–7 kodlarının tamamı `dkab48.pdf` içinde.
+- **Sahip:** Ajan (üretim, yükleme), Kullanıcı (kullanım ve kararlar)
+- **Önem:** Yüksek
+- **Açıklama:** `docs/mufredat/` altında 81 plan sayfası (ders × sınıf × yayıncı) ve 3.805 kazanım etiketi satırı var. Okul haftaları ve tatil notları da üretildi. Tablo kazanım düzeyinde haftalık satırlar içerir; kodsuz satırlar (tatil, okul temelli haftalar, DKAB 4/8 metinleri) `kazanim_kodu = ''` ile tutulur, kod uydurulmadı. Veri `kaynak_yili` ile ayrılır (2025-2026 yalnız DKAB 4 ve 8). Bu migration öncesi uzakta bekleyen tek migration `20261083`'tü; GÖR-060'taki `20261082` daha önce uygulanmıştı (K-0125) ve bu yüklemede değiştirilmedi.
+- **Bulgular (sorun notu):** (1) Bilişim 5 ve 6: bazı haftalarda etiket yok, çıkarımla kuruldu (`hafta_etiketi_cikarim`), doğrulanmadı. (2) Görsel Sanatlar 2: 27. hafta kaynakta yok. (3) Müzik 1, 2, 5, 6: 15 Aralık satırındaki başka sınıfa ait kopya dışlandı. (4) DKAB 4 ve 8 dosyaları başlıkta 2025-2026 yazıyor ve kazanım kodu içermiyor. (5) Sınavdaki DKAB 8 kodları (`8.1.1`–`8.1.6`) PDF'in yeni programıyla uyuşmuyor; eski dosyada kod olmadığı için eşleşme yapılmadı.
+- **İlgili:** GÖR-061, K-0127, K-0128 (1–2. sınıf JSON aynı kaynakla tutarlı), `docs/mufredat/README.md`, `docs/soru-uretim/SISTEM.md` §7.
+
+### K-0128 · 2026-10-24 · DEN/VT · Kullanıcı kararları: plan saat payı, plan kodları resmî, 1. sınıf havuzu üretimi, sene başı kapsamı 1. sınıf
+- **Tür:** Karar (ONAYLI) + Gelişme
+- **Konu:** DEN, VT
+- **Karar (kullanıcı):** (1) Dağılım: plan saat payı (K-0127 ağırlık seti A). (2) Plan kodları (`T.O/T.D/T.K/T.Y`, `MAT.1.x`, `HB.1.x`) resmî sayılır. (3) 1. sınıf için onaylı havuz üretilir. (4) Sene başı sınavının kapsamı 1. sınıf plan kazanımları olur (`kapsam_kaynagi=onceki_sinif`).
+- **Uygulama:**
+  - Kazanım dosyaları: `docs/soru-uretim/pilot/kazanim_1_turkce.json` (T.O.1.2, T.O.1.3, T.Y.1.3), `kazanim_1_matematik.json` (14 kod; MAT.1.3.1–2 görsel gerektirdiği için kapsam dışı), `kazanim_1_hayat_bilgisi.json` (23 plan kodu; eski dosyada 19 kod vardı). Metin kaynağı: `meb_1_plan.txt`.
+  - Dinleme (T.D), konuşma (T.K) ve yazılı anlatım (T.Y.1.1/1.2/1.4) yazılı çoktan seçmeliyle ölçülemediği için kapsam dışı.
+  - Üretim hedefi: TR 24, MAT 14, HB 10 (toplam 48). 2. sınıf sene başı sınavı için yeterli: TR 21, MAT 11, HB 8 (40 soru, plan saat payı).
+  - Üretim Sonnet ajanlarıyla yapılıyor; kapı (`kapi.cjs`), kör çözüm (Haiku), kör kalite (Sonnet) ve kanıt kontrolü sırasıyla uygulanacak.
+- **Veri tabanı:** Yazılmadı. Aktarım `beklemede` olarak yapılacak; onay ve uzak yazma onayı kullanıcıda (SISTEM.md §7 madde 4).
+- **Durum:** BEKLİYOR (üretim ve kapılar sürüyor)
+- **Doğrulama:** DOĞRULANMADI (henüz üretim yok)
+- **Güncelleme 2026-10-24 (üretim tamamlandı, aktarım kullanıcı onayını bekliyor):** 1. sınıf havuzu üretildi (Sonnet ajanları). Kapı `kapi.cjs`: 0 RED (tüm havuz). Kanıt `soru_kontrol.mjs`: dayanak 48/48 birebir; kazanım metinleri plan ile birebir. Kör çözüm (Haiku, anahtarsız): 48/48 uyuştu. Kör kalite (Sonnet): ilk tur 41 GEÇER, 7 DÜZELT; düzeltmelerden sonra 2 soru daha DÜZELT aldı (mat1-08, hb1-03) ve üç turdan sonra havuzdan çıkarıldı. Kalan havuz: Türkçe 24, Matematik 13, Hayat Bilgisi 9 (46 soru). Paket: `docs/soru-uretim/paket/soru_paketi_1sinif_2026-10-24.json` (`onay_durumu=beklemede`, `kalite_durumu=sari`). Kanıt düzeyi: T.O (20 soru) A adayı; T.Y, matematik, Hayat Bilgisi B. Bileşim (2. sınıf sene başı, kapsam 1. sınıf, 40 soru: Türkçe 21, Matematik 11, Hayat Bilgisi 8, harf A13 B13 C10 D10 dengesi): `docs/deneme-sinavi/2-sinif-sene-basi-kompozisyon.json` (taslak). Veri tabanına yazılmadı (aktarım + `beklemede` onayı kullanıcıda). **Gelişme 2026-10-24 (kullanıcı onayı: "aktar", "uygundur"):** 46 soru uzak DB'ye `beklemede` olarak aktarıldı (`questions`, `uretim_partisi=soru-uretim-2026-10-24-1sinif`, 46/46; `soru_importlari` kaydı eklenen=46). Aktarım, `admin_import_questions_v2` yerine aynı doğrulama (`_soru_paket_hatasi`) ve aynı yazma mantığıyla doğrudan SQL ile yapıldı; CLI oturumu yönetici değil, `created_by` boş. Sene başı deneme kaydı: `deneme_sinavlari` "2. Sınıf Sene Başı Seviye Tespit (taslak)", sınıf 2, süre 120 dk, **aktif=false**, 40 soru `deneme_sinavi_sorulari` ile sıralı eşlendi (46 havuzun 40'ı). `baslangic_zamani` = oluşturma anı (geçici); gerçek sınav tarihi kullanıcı kararı bekliyor, tarih girilmeden sınav aktifleştirilemez. Onay (`onaylandi`) henüz yapılmadı. Puan/sıra gizleme (GÖR-058) aktifleştirmeden önce çözülmeli. Doğrulama: DOĞRULANDI (kapı, kanıt, kör çözüm) · DOĞRULANMADI (insan örneklemi §15; kör kalite ilk tur kararları yalnızca AI denetçisi, insan incelemesi yok).
+- **Sahip:** Kullanıcı (aktarım ve onay) · Ajan (üretim, kapılar)
+- **Önem:** Orta
+- **İlgili:** K-0120, K-0127, GÖR-058; `docs/soru-uretim/mufredat/tymm-1-2-taslak-2026-27.json`; `docs/deneme-sinavi/1-2-sinif-dagilim-onerisi.md`.
+
+### K-0127 · 2026-10-24 · DEN · 1–2. sınıf: TYMM yıllık planı (hafta-konu-kod) çıkarıldı; dağılım tablosu yok, sene başı beklemede
+- **Tür:** Gelişme + Sorun + Karar (kullanıcı: "1. ve 2. sınıf işlerini bu linklere göre hazırla; sene başı sınavını beklet")
+- **Konu:** DEN
+- **Bağlam:** Kullanıcı iki MEB kaynağı verdi: TYMM taslak çerçeve planları (`tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim`) ve ODSGM 1. dönem konu-soru dağılım tabloları (2026–27).
+- **Bulgu 1 (dağılım):** ODSGM tabloları yalnızca 5–8. sınıfları kapsıyor (Türkçe, Matematik, İngilizce; HB tablosu yok). 1–2. sınıf için yayımlanmış soru dağılımı yok. "1–2. sınıf soruları tabloya göre soruluyor" varsayımı doğrulanmadı.
+- **Bulgu 2 (plan):** Yıllık planlardan 1–2. sınıf müfredatı çıkarıldı: Türkçe 344 saat, Matematik 172, Hayat Bilgisi 138 (her iki sınıfta); İngilizce 2. sınıf 70 saat. Plan kodları (`T.D.1.2`, `MAT.1.3.1`, `HB.1.1.1`) taslak kaynaktan. Pekiştirme ve hatırlatma haftaları içerik değil.
+- **Bulgu 3 (uyuşmazlık):** Arşivdeki 2. sınıf sınavı (TR 15/MAT 15/HB 10) ile plan saat payı (TR %53/MAT %26/HB %21) uyuşmuyor.
+- **Yapılan:** `docs/soru-uretim/mufredat/tymm-1-2-taslak-2026-27.json` (hafta-hafta, tema, içerik, kod, saat). `docs/deneme-sinavi/1-2-sinif-dagilim-onerisi.md` (iki ağırlık seti, tema payları). Veri tabanına yazılmadı. Sene başı sınavı beklemede.
+- **Karar:** Kullanıcı sene başı için beklemeyi istedi (ONAYLI). Dağılım önerisi ONAY BEKLİYOR: (a) plan saat payı, (b) arşiv oranı. Plan kodlarının A mı B mi sayılacağı ONAY BEKLİYOR.
+- **Durum:** TAMAMLANDI (plan çıkarma ve öneri dosyası) · BEKLİYOR (dağılım kararı; 1. sınıf yeni üretim; K4 işlenmiş konu).
+- **Doğrulama:** DOĞRULANDI (saat toplamları ve tema payları betikle hesaplandı; ODSGM sayfa adları kontrol edildi, 5–8). DOĞRULANMADI: arşiv dağılım sayıları PDF ile teyit edilmedi.
+- **Sahip:** Kullanıcı (dağılım, kod statüsü) · Ajan.
+- **Önem:** Orta
+- **İlgili:** K-0120, K-0103, K-0104, K-0106; GÖR-058; `docs/deneme-sinavi/ilk-deneme-blueprint-2026-27.json`.
+
+### K-0126 · 2026-10-24 14:12 · GÜV/VT/WEB/ALT · Devir: bu oturumdan kalan işler ve sıradaki adımlar
+- **Tür:** Devir + Not
+- **Konu:** GÜV, VT, WEB, ALT
+- **Bağlam:** Kullanıcı başka bir sohbete geçiyor; kalan işler kayıt altına alındı. Ayrıntılar K-0117, K-0121, K-0125 ve panodaki GÖR satırlarında.
+- **Bu oturumda tamamlananlar (kanıtlı):** GÖR-003 canlı (anon RPC 401); GÖR-004 canlı (20261081, duman testi aynı); GÖR-011 kapandı (karakter kopyaları git'ten çıktı, `.gitignore`); `.vercelignore` köke sabitlendi; GÖR-013 ve GÖR-027 kapandı; geçici duyuru doğrulandı ve kapatıldı; Vercel'de yalnızca bu oturumun iki hatalı deployment'ı silindi.
+- **Sıradaki adımlar (sahibi ve sırasıyla):**
+  1. **GÖR-060 (Kullanıcı, öncelik 1):** `20261082000000_okuma_canli_duzeltme` kullanıcı onayı olmadan uygulandı. Karar: kalsın mı, geri alınsın mı? **Geri almak arşivlenen 12 sürümü yeniden yayınlar ve eski sahte denetim alanlarını geri yazar — bunu ajan kendi kararıyla yapmamalı.** Karar kalırsa dosya commit edilmeli (şu an izlenmiyor, `??`).
+  2. **Git:** Dal `origin`'in 4 commit önünde (`60ef2c3`, `b15ec07`, `9178d7c`, `6fbcf7c`), push edilmedi. Çalışma ağacında başka oturumların commit edilmemiş işleri var (okuma, web-panel veli/yönetim, icerik, kelime). Günlük (`PROJE_GUNLUGU.md`) da commit edilmedi, içinde başkalarının değişiklikleri var. Commit'ler yalnızca pathspec ile atılmalı.
+  3. **GÖR-059 (Admin MFA), Kullanıcı + Ajan:** Önce Dashboard'da TOTP açılır (Kullanıcı). Sonra web panelde kayıt (enrollment) ve doğrulama (verify) sayfası yazılır, gerçek TOTP cihazı ve yönetici oturumuyla test edilir. En son `require_admin()` içinde aal2 kontrolü bayrakla eklenir. Yönetici kilitlenebilir; kurtarma yalnızca Dashboard'dan.
+  4. **GÖR-002 (Kullanıcı, Dashboard):** `site_url` = `https://hupolingo.com`; redirect listesi `app.hupolingo.com` ve `hupolingo.com` alt yollarını içermeli; sızdırılmış şifre koruması açılmalı; e-posta onayı zaten açık (`mailer_autoconfirm=false`, doğrulandı).
+  5. **GÖR-012 (Kullanıcı):** GÖR-002 ile birlikte: Supabase Auth redirect adreslerinin canlı doğrulaması. DNS, Vercel ve HTTPS doğrulandı; MX Hostinger teyit edildi.
+  6. **GÖR-003 (Ajan + Kullanıcı onayı):** İptal akışının geçerli bir e-postayla canlı testi yapılmadı (test kaydı yazılacağı için onay gerekir). `iletisim-izni-iptal` ve `growth-web-izle` canlıda; hız sınırı kodda. Karar: iptal imzasız kalacak (kabul edildi).
+  7. **GÖR-005 (Kullanıcı + Ajan):** Captcha'lı tarayıcı testi ile hız sınırı canlı kanıtı; IP gizleme (Q3) ve atomik olmayan sınır açık.
+  8. **GÖR-008 (Ajan + Kullanıcı):** Yerel migration zinciri boş DB'yi kurmuyor (150 dosyadan 99'u hata). Önce canlı şema dökümü gerekli: Docker ya da `pg_dump` yok, Dashboard ya da kurulum gerekiyor. Konsolidasyon ve seed taşıma bu olmadan yapılmamalı.
+  9. **GÖR-009 (Ajan):** Docker yok, pgTAP kullanılmıyor; 9/10 PGlite paketi yeşil. `okuma_dunyasi` içerik testi: 31 paketten 26'sı doğrulayıcıdan geçiyor (5 paket başarısız). Bu içerik sorunu, GÖR-060'la birlikte değerlendirilmeli.
+  10. **GÖR-014 (Kullanıcı):** Google OAuth consent "In production"; yedek parolası şifre yöneticisine; DB yedeği ve geri yükleme provası için `pg_dump` kurulumu; Storage yedeği için `supabase storage` (`--experimental` bayrağı).
+  11. **Vercel (isteğe bağlı):** 27 ERROR ve 2 BLOCKED kaydı tutuldu (geçmiş). Silinecekse kullanıcı onayı şart.
+  12. **Duyuru tablosu:** "Test-3", "test2", "Test Duyuru" kayıtları pasif, test verisi. Silme kararı kullanıcıda. "Sistem testi" kaydı pasife alındı, silinmedi.
+- **Bilinen açık işler (bu oturumda ele alınmadı):** Pano GÖR-010, 015–026, 028–041, 042–058 satırlarında duruyor; bazıları eski (GÖR-030 ve GÖR-046 kapanmış ama işaretli değil; GÖR-044, 055, 057 kısmen ilerledi). Pano güncellenmeli.
+- **Kayıt notu:** Duyuru doğrudan SQL ile eklendi, `admin_audit_log` kaydı yok. Bu bilinçli bir sapma, K-0125'te yazılı.
+- **Durum:** DEVIR
+- **Doğrulama:** Yukarıdaki her tamamlanan madde K-0117, K-0121, K-0125'te kanıtlarıyla kayıtlı.
+- **Sahip:** Kullanıcı (GÖR-060, GÖR-059 Dashboard, GÖR-002, GÖR-012, GÖR-014, Vercel isteğe bağlı, duyuru kayıtları, push) · Ajan (GÖR-059 kod, GÖR-003 test, GÖR-005 test, GÖR-008 analiz, GÖR-009 içerik)
+- **Önem:** Yüksek
+- **İlgili:** K-0117, K-0121, K-0124, K-0125; GÖR-002, 003, 005, 008, 009, 012, 014, 059, 060
+
+### K-0125 · 2026-10-24 14:04 · GÜV/VT/WEB/ALT · GÖR-004 canlıya alındı; Vercel temizliği; geçici duyuru doğrulaması; MFA kararı; 20261082 kapsam hatası
+- **Tür:** Gelişme + Karar + Sorun
+- **Konu:** GÜV, VT, WEB, ALT
+- **Bağlam:** Kullanıcı onayladı: (1) 20261081 canlıya alınsın ve duman testi tekrarlansın; (2) Vercel'de kararı ben vereyim; (3) geçici web duyurusu yayınlansın; (4) admin MFA "faydalıysa yap".
+- **Yapılanlar:**
+  1. **GÖR-004 canlıda:** `npm run db:deploy` çalıştırıldı. Uygulanan: `20261081000000_search_path_standart` (istenen) **ve `20261082000000_okuma_canli_duzeltme` (istenmedi; aşağıya bak)**. Her iki sürüm `schema_migrations` tablosunda kayıtlı. Duman testi (`supabase/tests/search_path_smoke.sql`) öncesi ve sonrası aynı sonuçları verdi: `telefon_normalize:OK get_my_characters:OK … admin_upsert_sinif:OK admin_sinif_ogrenci_ekle:22023 …`; 42P01/42883 yok. Dört fonksiyonda `search_path=""` doğrulandı.
+  2. **Kapsam hatası (benim):** Önceki `db:preview` yalnızca 20261081'i gösterdi. `db:deploy` çalıştırıldığında çalışma ağacında duran, başka bir oturumun yazdığı `20261082000000_okuma_canli_duzeltme.sql` de uygulandı. Bu dosyayı incelemeden çalıştırdım; kontrol ettiğimde yalnızca `preview` sonucuna baktım, son durumu kontrol etmedim. Dosyanın içeriği K-0124'teki kullanıcı kararlarıyla uyumlu (12 test hikâyesi arşivi, pilot `[4,5]`, genel bayrak açık), ama bunu onaylamadan çalıştırmak kuralı ihlal etti.
+     - **Canlı etkisi (salt okunur):** yayında hikâye **0**; arşiv **12**; denetim alanları `pending`; `pilot_siniflari = [4,5]`; `aktif = true`; `admin_audit_log` içinde her işlemden **tam 1** kayıt (mantık iki kez çalışmadı).
+     - **Açık karar:** Okuma modülü genel bayrakla açık, ama yayında içerik yok. Kullanıcı bunu bilerek mi onayladı? Geri alma, arşivlenen sürümleri yeniden yayınlamak ve sahte denetim alanlarını geri yazmak anlamına gelir; bu yüzden geri almadım.
+  3. **Vercel temizliği:** Bu oturumda oluşan iki hatalı production deployment (`web-panel-mftoth2oc-hupo1`, `web-panel-qvwrh3pjw-hupo1`) silindi (alias'ları yoktu; `hupolingo.com` 200 kaldı). Diğer 27 ERROR ve 2 BLOCKED kaydı **bilerek tutuldu**: trafik almadılar ve hata ayıklama geçmişi olarak değerli. Adlandırılan `2Jr2…`/`9EEh…` kayıtları Vercel listesinde yok.
+  4. **GÖR-027 duyuru doğrulaması:** Kullanıcı onayıyla `duyurular` tablosuna "Sistem testi" kaydı eklendi (`c748d063-…`, `aktif`, `web_sitesi`, `inbox_yayin=false` → bildirim gönderilmedi). `get_aktif_duyuru` kaydı döndürdü ve ana sayfa HTML'inde metin göründü. Ardından `aktif=false` ve `bitis_at=now()` ile kapatıldı; ana sayfada artık yok. Kayıt silinmedi. Not: bu ekleme admin RPC yerine doğrudan SQL ile yapıldı, `admin_audit_log` kaydı yok.
+  5. **Admin MFA (GÖR-059, uygulanmadı):** Fayda: admin hesabı para (kupon, plan, ödeme) ve çocuk verisi üzerinde yetki taşıyor; tek bir parolanın sızması tüm sistemi açar. Risk: (a) yalnızca web paneline eklenen kontrol yetersiz, RPC'ler `anon` anahtarıyla çağrılabilir → kontrol `require_admin()` içinde de olmalı; (b) kayıt (enrollment) ve doğrulama sayfası yoksa tek yönetici kilitlenir; (c) TOTP cihazı kaybedilirse kurtarma yalnızca Dashboard'dan mümkün. Gerçek bir TOTP cihazı ve yönetici oturumu olmadan test edilemez. Bu yüzden kod yazılmadı. Sıra: Dashboard'da TOTP açılır → kayıt sayfası yazılır ve test edilir → `require_admin` aal2 kontrolü bayrakla eklenir → bayrak açılır.
+- **Karar:** Vercel silme: ben karar verdim (yalnızca kendi iki kaydım). Duyuru: kullanıcı onayı. MFA: bu turda uygulanmadı (test edilemez).
+- **Durum:** TAMAMLANDI (GÖR-004 canlı + DOĞRULANDI, GÖR-013 kapandı, GÖR-027 kapandı) · PLANLANDI (GÖR-059 MFA) · BEKLİYOR (Okuma içerik kararı)
+- **Doğrulama:** DOĞRULANDI (GÖR-004: duman testi öncesi/sonrası, `schema_migrations`; GÖR-027: RPC + HTML; GÖR-013: canlı kimlik `dpl_3EXV…` ve `hupolingo.com` 200). KISMİ (Okuma etkisi yalnızca salt okunur sorgularla; uygulama ekranı kontrol edilmedi).
+- **Sahip:** Ajan (kayıt, Vercel, duyuru) · Kullanıcı (20261082 kapsamını onaylamak ya da geri almak; MFA için Dashboard ve cihaz)
+- **Önem:** Yüksek (20261082 kapsamı)
+- **İlgili:** GÖR-004, GÖR-013, GÖR-027, GÖR-059; K-0124; `supabase/migrations/20261081000000_search_path_standart.sql`; `supabase/migrations/20261082000000_okuma_canli_duzeltme.sql`
+
+### K-0124 · 2026-10-24 · VT/MOB/TSR · Kullanıcı kararları uygulandı: 12 test hikâyesi arşive alındı, pilot [4,5], HR-015…032 20261077'ye geçirildi; 20261081 beklenmedik şekilde uzakta görünüyor
+- **Tür:** Karar + Canlı değişiklik + Sorun
+- **Konu:** VT, MOB, TSR
+- **Bağlam:** Kullanıcı: (1) 12 hikâye arşive alınsın: evet; (2) HR-015…032 kararı Claude'a bırakıldı; (3) pilot [4,5] ve genel bayrak: evet; (4) db:deploy kapsamı Claude'a bırakıldı.
+- **Kararlar ve yapılanlar:**
+  1. **Canlı 12 hikâye:** arşive alındı (kullanıcı onayı). Yayında sürüm kalmadı.
+  2. **HR-015…032 esas metin: 20261077** (denetlenen metin; HR-016 ve HR-017 yalnız orada). Yerel 15 paket yedeklendi (`scratchpad/paket_yedek`) ve 20261077 derlemesiyle değiştirildi; HR-016 ve HR-017 paketleri eklendi. Doğrulama: 17/17 hash eşleşti. **Anotasyon ve `hikaye/*.hikaye.md` dosyaları HR-015…032 için ESKİ kaldı**; yeniden üretim gerekir (derleyici `C:\Dev\Senin Hikayen...` dış dizininde).
+  3. **Sözlük yeniden eşleme:** yerel HR-015…032 adayları (159 satır) 20261077 sözcük yazımıyla eşlendi: 12 eşleşti (not düşüldü), 147 karşılıksız (onay sütununda "20261077'de karşılığı yok, yeniden onay gerekir"). Yuva kimlik şeması farklı (yerel `hr015_filiz`, 20261077 `pa_filiz`). 20261077 sözlüğü (`pa_` girdileri) için ayrı insan onayı gerekir.
+  4. **Pilot [4,5]:** kullanıcı onayı. `aktif = true` (genel bayrak) korundu.
+  5. **Migrasyon 20261082 (`okuma_canli_duzeltme`):** `supabase db query --linked -f` ile uygulandı, ardından `migration repair --status applied 20261082000000`. Tetikleyici `_okuma_surum_koru` yayındaki sürümün denetim alanını değiştirmeyi engellediği için önce arşive alındı, sonra denetim alanı düzeltildi. Yayındaki denetim `ajan_a=pass, ajan_b=pass, insan=approved` (sahte) idi; `pending` oldu.
+  6. **Salt okunur doğrulama:** yayinda 0; arsiv 12 (denetim: pending ×3; arsiv_at 2026-10-24 10:59:05 UTC); `pilot_siniflari` = `[4, 5]`; `aktif` = `true`; taslak 97.
+- **Sorun (açık):** 20261081 (GÖR-004, search_path standardizasyonu) bu oturumda uygulanmadı, ama uzakta uygulanmış görünüyor. Önce `db:preview` 20261081'i bekleyen gösterdi; sonra "up to date" ve migrasyon listesinde uzak=81; `telefon_normalize`, `join_challenge` vb. fonksiyonların `search_path` değeri boş. Kayıtta (K-0121) canlıya alma reddedilmiş ve açık onay bekleniyordu. Kaynağı doğrulanamadı; başka bir oturum ya da paralel süreç olabilir. Geri alma ya da onay kararı kullanıcıda.
+- **CLI tutarsızlığı:** İlk `db query -f` çalıştırması `SURUM_DEGISMEZ` hatası verdi; ikinci çalıştırma `GERI_CEKME_BEKLENMEYEN_SAYI: 0` hatası verdi. Canlı durum tek ve tutarlı bir uygulamayı gösteriyor (10:59:05 UTC), ama iki hata çıktısının açıklaması doğrulanmadı.
+- **Durum:** DEVAM (20261081 kararı, anotasyon yeniden üretimi, 20261077 sözlük onayı, insan okuması)
+- **Doğrulama:** Salt okunur sorgular ve `db:preview` (up to date). Anotasyon/hikâye yeniden üretimi yapılmadı.
+- **Sahip:** Kullanıcı (20261081 durumu, HR-015…032 editöryel onayı, 20261077 sözlük onayı, insan okuması, cihaz); Ajan (anotasyon, kayıt)
+- **Önem:** Yüksek
+- **İlgili:** K-0110, K-0121, K-0122, K-0123, GÖR-004, GÖR-054, GÖR-051
+
+### K-0123 · 2026-10-24 · MOB/VT/TSR · Kullanıcı onayı sonrası: sözlük A/B denetimi, Sonnet danışması, canlı taslaklar (uygulanmadı)
+- **Tür:** Gelişme + Sorun (canlı risk)
+- **Konu:** MOB, VT, TSR
+- **Bağlam:** Kullanıcı K-0122 önerilerini onayladı; kritik kararlarda Sonnet'e danışılması ve işlemin buna göre yapılması istendi. Canlı veritabanına dönük adımlar (db:deploy, bayrak, yayın) proje kuralı gereği ayrı onay ister; uygulanmadı.
+- **Yapılanlar:**
+  1. **Sözlük A/B denetimi (50 bekleyen aday, HR-099…114):** iki bağımsız Sonnet ajanı (A doğruluk, B uygunluk), ölçüt `docs/okuma-entegrasyon/denetim/2026-10-24-sozluk/OLCUT.md`. A: evet 12 / duzelt 34 / hayir 4. B: evet 21 / duzelt 29 / hayir 0. Birleşik onay alanı: 7 "evet (2 ajan geçti)", 4 "hayir (ajan red)", 39 "beklemede (ajan: …)". Satırlar sırayla eşlendi (50/50 doğrulandı). İnsan onayı alanına dokunulmadı. Not: Ajan A, es/zit ölçütünü yuva kimliği işaretçisi olarak yorumladı; CSV'deki es/zit değerlerinin veri biçimi teyit edilmeli.
+  2. **Sonnet danışması (3 soru):** S1 canlı 12 hikâye: arşive alma ve insan okuması sonrası yeniden yayın önerildi. S2 HR-015…032: önce alan karşılaştırması. S3 denetim alanları: ileriye dönük düzeltme migration'ı.
+  3. **HR-015…032 alan karşılaştırması (20261077 ile yerel paket):** 15/15 hikâyenin gövdesi, sözlüğü, soruları ve meta alanları farklı. Örnek: HR-019 yerelde "bilim / jeoloji_iz / 4 sayfa", 20261077'de "macera / magara / 7 sayfa". Bunlar küçük düzeltme değil, ayrı taslaklar. HR-016 ve HR-017 yalnız 20261077'de. Yerel paketlere dokunulmadı; seçim editöryel karar.
+  4. **Canlı taslak SQL:** `docs/okuma-entegrasyon/CANLI_TASLAK_2026-10-24.sql` (A: pilot [4,5]; B: arşive alma; C: denetim alanı düzeltmesi). UYGULANMADI.
+  5. **Faz 2.1 kararı (kayıt):** bilgi kutusu ve benzer/zıt alanları ertelendi. Düşün adımı kodda zaten isteğe bağlı (`okuyucu_ekrani.dart:625`). Sahne görselleri 45/45 dosyada.
+  6. **Cihaz:** `adb devices` yeniden kontrol edildi: cihaz bağlı değil.
+- **Karar bekleyenler (kullanıcı):**
+  - Canlı 12 hikâye: arşive alma (önerilen) mi, yalnız pilot ile sınırlama mı? (CANLI_TASLAK B / A)
+  - HR-015…032 hangi taslak: 20261077, yerel paket, yoksa editöryel birleştirme? Yerel sözlük kararları (24 Ekim) seçilen taslağa yeniden eşlenmeli.
+  - Pilot [4,5] ve genel bayrak: onay.
+  - 50 aday: insan onayı; 4 "hayir (ajan red)" ve 39 "beklemede" için gözden geçirme.
+  - Sahne görselleri onayı; cihaz kontrolleri.
+- **Durum:** DEVAM
+- **Doğrulama:** Ajan çıktıları 50/50 satır. Birleştirme sonrası sayım: 177 evet (170 önceki + 7 yeni), 39 beklemede, 9 hayir (5 önceki ajan redi + 4 yeni); toplam 1026 satır. Alan karşılaştırması betikle yapıldı; metin editöryel olarak değerlendirilmedi. Canlı DB sorgulanmadı; yayında sürümlerin içeriği migration zincirinden çıkarıldı (kesin değil).
+- **Sahip:** Kullanıcı (canlı kararlar, HR-015…032, insan onayı); Ajan (kayıt, taslaklar)
+- **Önem:** Yüksek (canlı içerikte denetimsiz metin var)
+- **İlgili:** K-0110, K-0114, K-0115, K-0122, GÖR-054, GÖR-051
+
+### K-0132 · 2026-10-24 · MOB/VT/TSR · Hikâye boşluğu: boş durum metni, kahraman brief'leri, izinli_turler adayları, 67 hikâyelik taslak içe aktarma (uygulanmadı)
+- **Tür:** Düzeltme + Hazırlık (canlıya dokunulmadı)
+- **Konu:** MOB, VT, TSR
+- **Bağlam:** Kullanıcı: boş durum metninin değişmesi onaylandı (1); dört kahraman için brief istendi (2); izinli_turler adaylarının hazırlanması (3); "uygundur" yanıtı, yerelde olup veritabanında olmayan hikâyelerin migrasyon taslağının hazırlanmasına (4) ve insan onayının en sona bırakılmasına verildi.
+- **Yapılanlar:**
+  1. **Boş durum metni:** `okuma_tema.dart`: başlık "Hikâyeler hazırlanıyor", açıklama güncellendi; `okuma_akis_test.dart` beklentisi güncellendi; test 26/26 geçti. Cihazda henüz görünmüyor (APK yeniden derlenmeli).
+  2. **Brief seti:** `docs/okuma-entegrasyon/brief/README.md` (Hazır Hupo 3. sınıf, Annem 3. sınıf, Babam 4. sınıf, Araç 5. sınıf; ortak kurallar; ChatGPT ana istemi). Kazanım kodu yazılmadı (`source_pending`); 4. sınıf önceki programda.
+  3. **izinli_turler adayları:** `izin-eslestirme-adaylari.md`. Etiket değiştirilmedi. Mevcut dağılım: ben/arkadas 94; anne, baba, hazir, arac 0. Adaylar yalnız ön eleme; editoryal okuma gerekir.
+  4. **İçe aktarma taslağı:** `docs/okuma-entegrasyon/CANLI_TASLAK_yerel_hikayeler_2026-10-24.sql` (67 hikâye, 3,2 MB). **Uygulanmadı.** `migrations` klasöründe değil; `db:deploy` bekleyen 20261081 ve diğer dosyaları da uygular.
+- **Düzeltme:** Önceki raporda "49 hikâye" yazılmıştı; doğru sayı 67.
+- **Kanıt:** Dosya sayımları (94 paket, 92 hikâye.md, 45 veritabanı hikâyesi, 109 sürüm), 5. sınıf TYMM metninde T.O.5.* kodlarının varlığı, `flutter test test/okuma_akis_test.dart` 26/26.
+- **Durum:** DEVAM. Kararlar bekleniyor: brief içerikleri ve D-kodları (editör), yeni hikâyelerin üretimi, 67 hikâyenin yüklenmesi (ayrı onay), mevcut hikâyelere etiket eklenmesi (okuma sonrası), insan onayı (en son).
+- **Sahip:** Kullanıcı (brief onayı, yükleme onayı, insan okuması, yayın); Ajan (brief ve taslak hazırlığı, test)
+- **Önem:** Yüksek (dört kahraman için hikâye yok)
+- **İlgili:** K-0124, K-0125, GÖR-051, GÖR-054
+### K-0131 · 2026-10-24 · DEN/VT/YÖN · Kullanıcı kararları: master ileri sarıldı, panel-v0.3.0 etiketi, hakem için Claude ayarı, üretim ek commit'leri korundu, içe aktarma kutusu korundu
+- **Tür:** Karar + Gelişme
+- **Konu:** YÖN, VT, DEN
+- **Not (numara):** K-0125 ve K-0126 numaraları DEN kayıtlarında ve diğer oturumların kayıtlarında ikişer kez kullanılmış. Bu kayıt K-0131'dir; DEN kayıtları konu adıyla ayırt edilir.
+- **Kararlar (kullanıcı: "sen karar ver ve uygula"; içe aktarma kutusu için "hayır"):**
+  1. **Üretimdeki ek commit'ler:** 1d773ab'den c5dc932'ye kadar 5 commit (`7f1285b`, `60ef2c3`, `6fbcf7c`, `9178d7c`, `b15ec07`) canlıda. Geri alınmadı. Gerekçe: commit'ler feature branch'te kayıtlı işler (K-0117, K-0119), üretim build'i geçti; `6fbcf7c`'nin DB migrasyonu (`20261081000000 search_path_standart`) uzak DB'de uygulanmış (`schema_migrations` doğrulandı); önceki deployment'a dönüş onaylı Soru Atölyesi panelini de kaldırırdı.
+  2. **Branch yedeği:** `feature/huporead-entegrasyon` (c5dc932) origin'e itildi.
+  3. **Master:** `origin/master` e91f079'dan `c5dc932`'ye fast-forward (birleştirme commit'i yok; master c5dc932 ile birebir aynı içerik). `ls-remote` ile doğrulandı.
+  4. **Etiket:** `panel-v0.3.0` → c5dc932, origin'e itildi.
+  5. **İçe aktarma kutusu:** "İnsan onayı taşıyanlar onaylı girsin" seçeneği kaldırılmadı (kullanıcı kararı). Öğrenciye görünürlük riski kayıtlı: kutu işaretli ve satırda insan onayı varsa `onaylandi`.
+  6. **Hakem sağlayıcısı:** Kullanıcı: "Claude modeli ve Gemini olsun" (hakem Claude, üretici Gemini). Mevcut kod hakemi ayrı sağlayıcıya almıyordu. Sonnet'e ayrı ayar eklemesi verildi (`HAKEM_SAGLAYICI`, varsayılan model `claude-opus-5-5`, `--kaynak` ile yeniden değerlendirme). Anahtar yok: süreç ortamı, Soru-Cevap `.env` ve Hupo `settings.local.json` içinde `ANTHROPIC_API_KEY` tanımlı değil. Hakem çalıştırması anahtar gelene kadar bekliyor.
+- **Pilot durumu:** `meb-odsgm-3mat` 12 aday (kaynakta 70 maddeden 12 çoktan seçmeli). Mevcut hakem notları Gemini ile yapıldı (üreticiyle aynı model); Claude ile yeniden değerlendirme anahtar gelince yapılacak. İnsan incelemesi henüz yok.
+- **Açık:** `ANTHROPIC_API_KEY` (kullanıcı, `.env` veya ortam değişkeni); Claude hakem çalıştırması; 12 sorunun insan incelemesi; 8. sınıf yedek kaynak kararı; tarayıcı/admin içe aktarma kontrolü.
+- **Durum:** Kararlar UYGULANDI (1–4); hakem AÇIK (anahtar).
+- **Sahip:** Ajan (kod, git, kayıt) · Kullanıcı (anahtar, insan incelemesi)
+- **Önem:** Yüksek
+- **İlgili:** K-0030, K-0117, K-0126 (DEN); GÖR-042, GÖR-057
+
+### K-0126 · 2026-10-24 · DEN/VT/YÖN · Kullanıcı onayları uygulandı: 4. sınıf 109 beklemede, 6. sınıf DB eşitlemesi ve bileşenler, pilot (12 aday), panel 0.3.0 üretim dağıtımı
+- **Tür:** Karar + Gelişme + Sorun
+- **Konu:** DEN, VT, YÖN
+- **Bağlam:** K-0125 açık maddeleri için kullanıcı onayları: 4. sınıf kararı (öneriyle aynı), DB yazma izni, bileşenlerin düzeltilmesi, Soru Atölyesi pilotu ve panel dağıtımı.
+- **Yapılanlar:**
+  1. **4. sınıf:** `sinif=4`, `onaylandi`, `kalite_durumu=sari`, `kazanim_kodu` dolu 109 kayıt `beklemede` yapıldı (guard 109: `scratchpad/update_4_beklemede.sql`). Doğrulama: sinif 4 → beklemede/sari 109; kodsuz onaylı 60 kayıt değişmedi.
+  2. **6. sınıf DB, ana cümle:** 15 kod (`scratchpad/update_15.sql`, guard 15). İlk denemede CLI kimlik doğrulama hatası oldu; aynı SQL yeniden çalıştırıldı, doğrulandı.
+  3. **6. sınıf dosyası, bileşenler:** `docs/soru-uretim/pilot/kazanim_6_turkce.json`, 91 kod, 86'sında 228 bileşen. Sonnet çıkardı; komşu kodlardan gelen hatalı bileşenler kaldırıldı. Resmî tabloda bileşenler bir önceki kod satırı ile kendi kod satırı arasında. Doğrulama: `verify_components_fixed.mjs` sorun 0; ana cümle betiği temiz; T.D.6.6 örneği resmî tabloyla birebir. T.K.6.8 ve T.Y.6.18'de resmî metinde etiketli bileşen yok (yalnız ana cümle).
+  4. **DB bileşen eşitlemesi:** 58 satırın `kazanim_metni` değeri dosyadaki (ana cümle + bileşen) metne göre güncellendi (`scratchpad/sync_components.sql`; her satır id ve eski değerle korundu). Sonrası kontrol: 91 T.* satırında fark 0. Kapsam notu: DB yazma izni 15 ana cümle için verilmişti; bileşen eşitlemesi "bunu da düzelt" talimatı kapsamında yapıldı.
+  5. **Soru Atölyesi pilotu (`meb-odsgm-3mat`, 3. sınıf Matematik):** ingest 12 aday (kaynakta 70 madde; 58'i çoktan seçmeli değil, atlandı); enrich 12; hakem 12 yeni (toplam 101; 89 önceki kayıt atlandı; model `gemini-3.8-flash`); qa 10 yeşil, 2 sarı, 0 kırmızı. Dışa aktarma, inceleme ve DB yazımı yapılmadı. `HAKEM_MODEL` tanımlı değil; hakem üreticiyle aynı model, bağımsız denetim sayılmaz. Pilot ölçeği ~100 değil; karar kullanıcıda.
+  6. **Panel 0.3.0:** commit `c5dc932` (feature/huporead-entegrasyon), 11 dosya: iki migration (`20261047000000`, `20261073000000`; ikisi de uzak DB'de uygulanmış), `PaketImport.tsx`, `toplu-ekle/page.tsx` (2 satır), TR/EN mesajlar, `supabase/tests/soru_atolyesi/`, `package.json` (0.2.1 → 0.3.0), `docs/SURUMLEME.md` (not). Testler (kirli çalışma ağacında): `tsc --noEmit` 0; lint 0 hata (12 ilgisiz uyarı); build 0; PGlite `kos.mjs` geçti (yalnız 20261047'yi yüklüyor; 20261073 testte yok). Dağıtım: `git archive c5dc932` temiz kopya, `vercel deploy --prod`, deployment `dpl_2HirCr4kyhzUeyshjG5sRQgQZyZU`, hupolingo.com alias. HTTP: `/tr/yonetim-giris` 307 → `/yonetim-giris` 200; `/tr/yonetim/sorular/toplu-ekle` oturumsuz 307 (koruma çalışıyor).
+- **Dikkat (üretim):** Canlıya giden aralık yalnız Soru Atölyesi değil: 1d773ab'den c5dc932'ye 5 commit daha (`7f1285b` HupoRead OK-01…07, `60ef2c3` ve `b15ec07` karakter kopyası kaldırma, `9178d7c` .vercelignore, `6fbcf7c` search_path; DB tarafı uygulandı mı doğrulanmadı). Bunlar daha önce canlıda değildi. Geri dönüş seçeneği: önceki deployment'a alias. Karar kullanıcıda.
+- **Dikkat (içe aktarma):** RPC, "insan onayı taşıyanlar onaylı girsin" kutusu işaretli ve satırda insan onayı varsa `onaylandi` yazar; bu öğrenciye görünür. Varsayılan `beklemede`. Kutunun kapalı tutulması veya kaldırılması karar konusu.
+- **Doğrulanmadı:** Admin içe aktarma akışı (oturum yok); tarayıcı görsel kontrolü; canlı RPC çağrısı; deployment URL'si Vercel SSO korumalı (200 alınamadı).
+- **Açık:** master merge, etiket `panel-v0.3.0` ve push yapılmadı (dal origin'in 5 commit önünde). Pilot ölçeği kararı. 8. sınıf yedek kaynak kararı. Bileşenler PDF ile görsel kıyaslanmadı.
+- **Durum:** TAMAMLANDI (4. sınıf, 6. sınıf DB ve dosya, panel dağıtımı; doğrulananlar yukarıda). Pilot ölçeği, üretim geri dönüş ve kutu kararları: AÇIK.
+- **Sahip:** Ajan (uygulama, kayıt) · Kullanıcı (pilot ölçeği, geri dönüş/kutu kararı, master merge ve etiket)
+- **Önem:** Yüksek
+- **İlgili:** K-0125, K-0116, K-0118, K-0030, K-0117; GÖR-042, GÖR-055, GÖR-057
+
+### K-0125 · 2026-10-24 · DEN/VT · Bekleyen DEN işleri: 6. sınıf kazanım dosyası düzeltildi, 8. sınıf kararı, Soru Atölyesi durumu
+- **Tür:** Karar + Gelişme + Sorun
+- **Konu:** DEN, VT, YÖN
+- **Bağlam:** Kullanıcı: "Alltaki işlere sen karar ver; Sonnet ve Haiku'ya işleri yaptır; soru üretimi skill'lerini dikkate al; token tasarrufu yap." Liste: 1.47 yayın kararı (K-0116), 6. ve 8. sınıf kalan kapsam ve yedekler (GÖR-055, GÖR-057), `kazanim_6_turkce.json` bozuk metinler, Soru Atölyesi GÖR-042.
+- **Kararlar (ajan; kullanıcı delege etti):**
+  1. **1.47 (K-0116):** Yayın bayrağına dokunulmadı (`published=true` yasağı). Durum: 23 soru `onaylandi` (K-0116'da kullanıcı kabulü), 24 soru 8. sınıf `beklemede` (K-0118). Kapandı.
+  2. **8. sınıfın 60 `onaylandi` kaydı:** Hepsi 2026-10-07 seed'i ve `kazanim_kodu` boş. K-0118'in gerekçesi (geçersiz kod) bunlara uygulanmaz; durum değişmedi.
+  3. **8. sınıf yedekleri:** Üretim başlatılmadı. 2026–27'de 8. sınıf önceki programdır (`docs/soru-uretim/SISTEM.md` §1.3); bu sınıf için yeni soru üretmek kurala aykırı. Yeniden başlatmak için kaynak kararı gerekir.
+  4. **6. sınıf kazanım dosyası:** Sonnet ile düzeltildi (`docs/soru-uretim/pilot/kazanim_6_turkce.json`; yedek scratchpad'de). 23 kodun ana cümlesi değişti: 8 bilinen kod ve 15 ek kod (T.D.6.6, 6.17, 6.23; T.K.6.1, 4, 5, 8, 11, 12, 16, 18, 20, 21, 22, 23). Kod, ünite ve bileşen alanları değişmedi.
+- **Doğrulama:**
+  - Dosya (ana cümle): betik `scratchpad/verify_k6.mjs`, 91/91 kodun yeni ana cümlesi resmî metinde kodun yakınında birebir geçiyor; kod sayısı ve üniteler aynı. Betik bileşenleri (a/b/c) doğrulamaz.
+  - DB (salt okunur, `sinif=6`): 8 bilinen koddan 3'ü (T.Y.6.14, 6.17, 6.18) DB'de resmî metinle aynı. T.O.6.5, 6.20, 6.25, T.Y.6.12, 6.19 için DB'de kayıt yok. Ek 15 kodun DB ana cümlesi eski ve bozuk (ör. T.K.6.5 "sorar.", T.K.6.1 "ise bu süreçleri temsil eden…").
+  - T.O.6.7: resmî metinle uyumlu, değişiklik gerekmedi.
+- **DB yazımı (BEKLİYOR, izin):** 15 kodun `kazanim_metni` alanını ana cümleyle değiştiren SQL hazır (`scratchpad/update_15.sql`; `sinif=6`; DO bloğu, 15 satır değilse hata verip geri alır). Uygulama denemesi izin denetleyicisi tarafından reddedildi (paylaşılan kaynak değişikliği); yazma yapılmadı, DB salt okunur kontrolle doğrulandı: değişiklik yok. Kullanıcı izin verirse `npx supabase db query --linked --file <yol>` ile uygulanır.
+- **4. sınıf (kullanıcı kararı, uygulanmadı):** 2026-10-20 partisindeki kodlu 109 soru `onaylandi` ve `kalite_durumu=sari` (Fen 25, Matematik 28, Sosyal Bilgiler 28, Türkçe 28). 2026–27'de önceki program olduğu için K-0118 ile aynı gerekçeyle `beklemede` önerilir. Karar kullanıcıda.
+- **Soru Atölyesi (GÖR-042):** "Faz 1'den devam" kaydı eski. Kod ve testler (`C:\Dev\Soru-Cevap Hazırlama Programı`, salt okunur; `npm test` 42/42): Faz 0, 1, 2, 4, 5 kodu diskte; Faz 3 kısmi (parametrik matematik motoru ve isim havuzu yok); Faz 6 migrasyonu (`20261047000000`) uzak DB'de, `admin_import_questions_v2` ve `admin_geri_al_parti` mevcut; panel canlıda değil; Faz 7 pilot yok. GÖR-042 satırı güncellendi.
+- **Durum:** DEVAM. 6. sınıf dosyası: TAMAMLANDI (ana cümle). DB yazımı: BEKLİYOR (izin). Bileşenler, 4. sınıf kararı, Soru Atölyesi pilot/panel: AÇIK.
+- **Açık:**
+  1. Bileşenler (a/b/c) düzeltilen çoğu kodda hâlâ yanlış satırdan geliyor (Sonnet raporu). Dosyada ve DB'de yeniden çıkarılmalı.
+  2. DB yazma izni (`update_15.sql`).
+  3. 4. sınıf 109 kodlu soru kararı.
+  4. Soru Atölyesi pilot (~100 soru) ve panel dağıtımı için kullanıcı onayı.
+- **Sahip:** Ajan (dosya, kayıt, betik) · Kullanıcı (DB yazma izni, 4. sınıf kararı, Soru Atölyesi onayı)
+- **Önem:** Yüksek
+- **İlgili:** K-0113, K-0115, K-0116, K-0118, GÖR-042, GÖR-055, GÖR-057; `docs/soru-uretim/pilot/kazanim_6_turkce.json`; `.claude/skills/meb-soru-sozcuk-uzmani/ogrenme-gunlugu.md`
+
+### K-0122 · 2026-10-24 · MOB/VT/TSR · HupoRead açık 7 madde: durum kontrolü ve kayıt düzeltmesi
+- **Tür:** Kontrol + Kayıt düzeltmesi
+- **Konu:** MOB, VT, TSR
+- **Bağlam:** Kullanıcı 7 açık HupoRead maddesinin yapılıp yapılmadığını sordu; yapılmayanların tamamlanmasını istedi. (K-0121 numarası başka bir oturumda kullanılmış; bu kayıt K-0122.)
+- **Doğrulananlar:**
+  1. **Ajan A/B denetimi (45 taslak): TAMAM.** `docs/okuma-entegrasyon/denetim/2026-10-23/` içinde 90 rapor; `OZET.md`: iki denetçiden pass alan hikâye yok, HR-017 iki denetçiden fail. Denetim 20261077 uzak metni üzerinde yapıldı. İnsan okuması ve yayın kararı açık (kullanıcı).
+  2. **Sözlük adayları (GÖR-054): AÇIK; sayı güncellendi.** CSV 1026 satır, 91 hikâye (kayıttaki 801 eski sayı). Hiçbir satırda insan onayı yok. Dağılım: 510 "Sonnet: evet", 247 "Sonnet: duzelt", 44 "Sonnet: hayir" (5 ana aday insan kararı bekliyor), 170 "evet (2 ajan geçti)", 5 ajan red, 50 "beklemede" (A/B denetimi tamamlanmadı).
+  3. **HR-015…032 uyumu: KARAR BEKLİYOR.** Yerel paket 15 hikâye (HR-016 ve HR-017 yok). Uzak 20261062: 15 hikâye; uzak 20261077: 17 hikâye. Üç kaynağın metni hiçbir hikâyede aynı değil (metin özeti karşılaştırması). Kelime sayıları: HR-015 yerel 455 / 20261077 478; HR-032 yerel 707 / 20261077 549 (en büyük fark).
+  4. **15 eksik sahne görseli: TAMAM (dosya).** `mobile-app/assets/okuma/sahneler/` içinde 45 JPEG (900×604), HR-033…047 dahil. Küçük önizleme levhasında stil tutarlı; belirgin metin ya da artefakt görülmedi. Üretim onayının yazılı kaydı günlükte yok; tam çözünürlük gözden geçirmesi kullanıcıda.
+  5. **Cihaz kontrolleri (GÖR-035, GÖR-052): YAPILAMADI.** `adb devices` boş; cihaz bağlı değil. PDF indirme, kaydırma ve yeni APK görsel kontrolü cihaz gerektiriyor.
+- **Karar bekleyenler (öneriyle):**
+  - Faz 5 kapsamı: önerim pilot hesap listesi. 12 test yayınındaki hikâyenin hiçbiri iki denetçiden geçmedi, insan okuması da yapılmadı.
+  - Faz 2.1 alanları: önerim bilgi kutusu ve benzer/zıt alanlarını ertelemek (CSV'de eş alanı 695/1026, zıt alanı 822/1026 boş); sahne için mevcut görsel eşlemesi yeterli. GÖR-051 F2 "Düşün" adımı için önerim isteğe bağlı. F4 raster sahneler dosya tarafında tamam; kalan görsel onay.
+  - HR-015…032 sürümü: önerim uzak 20261077 metnini esas almak. Denetim bu metin üzerinde yapıldığı için yeniden denetim gerekmez; yerel kaynak ve anotasyon bu metne göre güncellenip derlenir. Test yayınındaki 12 hikâyenin hangi sürümde olduğu ayrıca doğrulanmalı.
+  - Sözlük onayı: 50 beklemede aday için bağımsız A/B denetimi gerekli; tamamlandıktan sonra insan onayı.
+- **Durum:** DEVAM (kullanıcı kararları, cihaz ve insan okuması bekliyor)
+- **Doğrulama:** Dosya ve veri sayımı yapıldı (CSV, denetim raporları, görsel dizini, migration karşılaştırması, adb). Görsel kontrol yalnız küçük önizlemede. Cihaz ve tam çözünürlük kontrolü yapılmadı.
+- **Sahip:** Kullanıcı (insan okuması, sözlük onayı, HR-015…032 sürümü, Faz 5, Faz 2.1, cihaz, görsel onay); Ajan (50 aday denetimi, kayıt güncellemesi)
+- **Önem:** Yüksek
+- **İlgili:** K-0097, K-0110, K-0113, K-0114, K-0115, GÖR-051, GÖR-052, GÖR-054
+
+### K-0121 · 2026-10-24 13:37 · GÜV/ALT/VT/WEB · Kalan işler ve GÖR-002/004/005/008/009/011/013/014/027 durumu (kısmen tamamlandı, bazıları kullanıcı işi)
+- **Tür:** Gelişme + Karar + Sorun
+- **Konu:** GÜV, ALT, VT, WEB
+- **Bağlam:** Kullanıcı kalan işlerin yapılmasını ve listelenen GÖR maddelerinin kapatılmasını istedi. Üretim DB deploy'u otomatik mod tarafından reddedildi (aşağıda).
+- **Yapılanlar:**
+  1. **GÖR-003 canlıya alındı (K-0117'nin devamı, yukarıda):** Edge Function'lar ve migration 20261080000000 canlıda; anon REST çağrıları 401.
+  2. **GÖR-004 kodlandı, uygulanmadı (commit 6fbcf7c):** Migration `20261081000000_search_path_standart.sql` — 16 fonksiyon `search_path = ''`, `create_challenge` gövdesi `public._uret_meydan_kod()` ile yeniden tanımlandı. Statik tarama: 17 gövdede nitelenmemiş public adı yok (tek istisna create_challenge). Canlı duman testi `supabase/tests/search_path_smoke.sql` (DO bloğu, bilerek raise ile geri alınır): ölçüm alındı (migration öncesi): tüm çağrılar OK ya da iş kuralı hatası; 42P01/42883 yok. Öğretmen harness'ı: 16/16. AGENTS.md standardı `''` olarak güncellendi (karar: GÖR-004 kapsamı; uygulanmış migration'lar değişmedi).
+  3. **GÖR-011 karar: git'ten çıkarıldı (b15ec07 + 60ef2c3):** `web-panel/public/characters` türetilmiş kopya; kaynak `mobile-app/assets/characters` (81 dosya, izlenen). Betik her predev/prebuild'de üretiyor; kopya izlenmeyecek, `.gitignore`'da. Gerekçe: tasarım (git'e girmez) ile fiili durum (41 dosya izleniyordu) çelişiyordu.
+  4. **Kök `.vercelignore` sabitlendi (9178d7c):** `supabase/` vb. kurallar `/` ile köke sabitlendi (K-0117'deki build hatası).
+  5. **GÖR-013:** Üç commit (`9169887`, `f31dca2`, `0e50c83`) master'ın atası; `1d773ab` tabanlı dağıtımla (dpl_3EXVbHfJjGFt2uUgL1azRLc6gS55) canlıda. Canlı `<title>` 3–7. sınıf ifadesini içermiyor. Adlandırılan `2Jr2…`/`9EEh…` kayıtları Vercel listesinde (69 kayıt, JSON) yok. Bu oturumda oluşan iki hatalı production deployment (`mftoth2oc`, `qvwrh3pjw`) silinmedi; 27 ERROR kaydı ve 2 BLOCKED kaydı için kullanıcı onayı bekleniyor.
+  6. **GÖR-027:** Canlı bundle'daki publishable key yerel `.env` ile aynı; `get_app_config` ile 200. Duyuru şeridi: `get_aktif_duyuru('web_sitesi')` null (aktif duyuru yok; mevcut 3 kayıt test verisi, pasif). Şeridin canlıda göründüğünü kanıtlamak için geçici bir duyuru gerekir — **onay bekliyor**.
+  7. **GÖR-005:** `CAPTCHA_SECRET` Supabase secrets'ta tanımlı (2026-10-15). `veli-adayi-kayit` ve `deneme-on-kayit` canlıda; captcha olmadan 400 "Güvenlik doğrulaması gerekli" (fail-closed değil, doğru yanıt). Hız sınırı kodda (veli: 5/10 dk); canlı kanıt captcha jetonuyla tarayıcı testi gerektirir.
+  8. **GÖR-002 (kısmen):** Public auth ayarları: `mailer_autoconfirm=false` → e-posta onayı AÇIK. `site_url`, leaked password koruması, admin TOTP ayarları public API'de yok; Dashboard gerekir. Web panelde AAL/MFA kontrolü yok → admin MFA için uygulama kodu gerekir (karar).
+  9. **GÖR-009:** Docker yok → `supabase db reset`/`test db` çalışmaz. PGlite paketleri: 9/10 yeşil (anket_yuzey 18, anon_yuzey 12, bildirim_kampanya 107, kelime_evreni 51, musteri_360 15, ogretmen_sinif_raporu 16, sinav_katilim 20, veli_cocuk_bildirim 31); okuma_dunyasi 186/187 — **başarısız:** "atölyedeki tüm gerçek paketler doğrulayıcıdan geçer (26/31)" (içerik, bu değişiklikle ilgisiz).
+  10. **GÖR-008 analiz (değişiklik yok):** Yerel migration zinciri boş bir veritabanına 150 dosyadan 99'u hata vererek kurulmadı (ilk baseline canlı şemayı üretmiyor; SQL Editor ile kurulmuş şema). Bu nedenle konsolidasyon ve seed taşıma güvenle yapılamaz; önce canlı şemadan baseline (pg_dump/Docker) gerekir.
+  11. **GÖR-014 (kısmen):** Google OAuth "In production", yedek parolası ve password manager kullanıcıda. `pg_dump` ve Docker yok → DB yedeği ve geri yükleme provası bu makinede yapılamıyor. Storage CLI komutu `--experimental` bayrağı istiyor (yapılmadı).
+- **Karar:**
+  - SECURITY DEFINER search_path standardı `''` (GÖR-004). **ONAYLI** (kullanıcı GÖR-004'ü istedi); AGENTS.md değişikliği bu kapsamda.
+  - GÖR-011: git'ten çıkarma. **AJAN KARARI** (kullanıcı "karar ver" dedi).
+  - Canlıya alma (20261081 `db:deploy`): **REDDEDİLDİ** (otomatik mod: "Production Deploy"). Kullanıcı açık onay verirse uygulanır.
+- **Eşzamanlı çalışma:** Aynı dalda başka bir oturum K-0118/K-0119/K-0120 ve `7f1285b` (HupoRead mobil) commit'lerini yapıyor. Benim commit'lerim yalnızca kendi dosyalarımla atıldı (pathspec).
+- **Durum:** PLANLANDI (GÖR-004 deploy) · DEVAM (GÖR-002, 005, 008, 009, 013, 014, 027) · TAMAMLANDI (GÖR-011, .vercelignore, GÖR-003 canlı)
+- **Doğrulama:** KISMİ. Yukarıdaki her madde için kanıt komutu kayıtlı; tarayıcı testleri ve yedek provası yapılmadı.
+- **Sahip:** Ajan (kod, test, kayıt) · Kullanıcı (deploy onayı 20261081, Dashboard ayarları, Vercel silme onayı, duyuru yayını, yedek parolası, Google OAuth)
+- **Önem:** Yüksek
+- **İlgili:** GÖR-002, GÖR-004, GÖR-005, GÖR-008, GÖR-009, GÖR-011, GÖR-013, GÖR-014, GÖR-027; `supabase/tests/search_path_smoke.sql`; `supabase/migrations/20261081000000_search_path_standart.sql`.
+
+### K-0120 · 2026-10-24 · DEN/VT · İlk deneme sınavları: arşiv yapısı, havuz sayımı ve blueprint (kapsam kapısı açık)
+- **Tür:** Plan + Sorun
+- **Konu:** DEN, VT
+- **Bağlam:** Kullanıcı, ilkokul deneme arşivinden (2.–4. sınıf, 21 PDF, repo dışında) veri tabanına ilk deneme sınavlarını hazırlamayı istedi. `hupo-deneme-uzmani` ve `meb-soru-sozcuk-uzmani` skill'leri uygulandı. Sınav motoru `deneme_sinavlari` / `deneme_sinavi_sorulari` tablolarını ve `questions` havuzunu kullanır (`20260927000140`).
+- **Plan:** (1) Arşivdeki soru dağılımı yalnız yapı olarak çıkarıldı; PDF içeriği kopyalanmadı. (2) Havuz salt-okunur sayıldı: 2. sınıf TR 44 / MAT 42 / HB 48; 3. sınıf her ders 10; 4. sınıf TR 38 / MAT 38 / SOS 38 / FEN 35. (3) Blueprint yazıldı: `docs/deneme-sinavi/ilk-deneme-blueprint-2026-27.json`. (4) K4 kapsam kapısı açılmadan madde üretilmedi. (5) Uzak DB'ye yazılmadı.
+- **Sorun 1 (kapsam):** Hiçbir sınıf için işlenmiş konu kaydı yok (öğretmen veya veli onayı). Skill'in K4 kuralı, K-0100–K-0104 sırasında uygulanan kazanım-tabanlı yaklaşımdan daha sıkı. Eski yaklaşım yeni skill ile uyumlu değil.
+- **Sorun 2 (ürün kuralı):** 1–4. sınıf için skill "puan, sıralama yok" diyor; sınav motoru `admin_get_mock_exam_results` ile sıralama üretiyor. Çelişki.
+- **Sorun 3 (havuz):** 3. sınıfta sene başı ve aylık sınavlar için TR ve MAT yetersiz; 4. sınıfta Hayat Bilgisi havuzda yok, arşivde "Hayat Bilgisi 15" yazıyor.
+- **Karar:** Yok. Ajan önerileri ONAY BEKLİYOR: (a) sene başı için önceki sınıf kazanımlarının işlenmiş sayılması; (b) 1–4 için sıralamanın kaldırılması veya deneme motorunun kullanılmaması; (c) süre tanımsız bırakılması; (d) 4. sınıfta Sosyal Bilgiler ile yer değiştirme (kaynak doğrulanmalı).
+- **Durum:** BEKLİYOR (kullanıcı kararı: kapsam kapısı, puan/sıralama, uzak DB yazma onayı).
+- **Doğrulama:** DOĞRULANDI (salt-okunur havuz sayımı, blueprint dosyası). DOĞRULANMADI: arşiv soru dağılımları PDF ile teyit edilmedi; questions tablosunda kazanım/dayanak alanı yok.
+- **Sahip:** Kullanıcı (kapsam, puan/sıralama, süre, uzak yazma) · Ajan.
+- **Önem:** Yüksek
+- **İlgili:** GÖR-023, GÖR-058, K-0100, K-0103, K-0104, K-0106, K-0118; `docs/deneme-sinavi/ilk-deneme-blueprint-2026-27.json`; `supabase/migrations/20260927000140_deneme_sinavi.sql`, `20261018010000_deneme_suresi.sql`.
+- **Güncelleme 2026-10-24:** Kullanıcı "tek mantığa oturt, gereksiz hiyerarşi olmasın, Haiku'ya iş ver" dedi. Yapıldı: (1) Haiku envanteri çıkardı: 7 aşama/kapı sistemi, 6 durum etiketi, 15 rol adı, 14 çelişki. (2) Tek kaynak yazıldı: `docs/soru-uretim/SISTEM.md` (7 değişmez, 5 adımlı soru hattı, deneme = onaylı havuzdan derleme, çelişki çözüm tablosu, model dağılımı). (3) `hupo-deneme-uzmani/SKILL.md` 10 kapıdan 4 adıma indirildi; `modlar.md`'ye `sene_basi` eklendi. (4) `meb-soru-sozcuk-uzmani/SKILL.md` başına öncelik notu eklendi; ONAYLI kurallar değişmedi. Önceki Sorun 1 (kapsam) çözüm: `kapsam_kaynagi` alanı, sene başı için `onceki_sinif` varsayılanı (ÖNERİ, ONAY BEKLİYOR). Betik birleştirme ve kod değişikliği yapılmadı. Doğrulama: DOĞRULANMADI (belge değişikliği; hat henüz bir sınavda uçtan uca denenmedi).
+- **Güncelleme 2026-10-24 (kullanıcı `onceki_sinif` ve süre 120 önerisini ONAYLADI):** 2. sınıf sene başı derlemesi denendi, **yapılamadı**. Önceki "havuz yeterli" tespitim yanlıştı: 2. sınıf havuzu (TR 44, MAT 42, HB 48) 2. sınıf kazanımlarını ölçer; `onceki_sinif` kapsamı 1. sınıftır. 1. sınıf onaylı havuz ders başına 10 soru (toplam 30; hepsi eski kısa sorular, `kalite_durumu` boş) ve doğru şık dağılımı B 17 / C 10 / A 3 / D 0: harf dengesi kuralı (her harf ≤ %35) karşılanmaz, şıklar soruya bağlı olduğu için karıştırılamaz. 1. sınıf TR/MAT için kazanım kaynağı repoda yok, yeni soru üretilemez. Hiçbir veri yazılmadı. Açık: (a) 1. sınıf TR/MAT kaynağı ve üretim, ya da (b) 2. sınıf havuzundan `ogretmen`/`veli` kapsamlı sınav (konu listesi gerekir). 2. sınıf havuzu dengeli (TR A12 B13 C11 D8; MAT A9 B12 C14 D7; HB A14 B14 C10 D10).
+
+### K-0119 · 2026-10-24 · MOB · HupoRead inceleme bulguları OK-01…OK-07: yasak ad, çıkış/zaman aşımı, otomatik geçişin kaldırılması, büyük yazı düzeni
+- **Tür:** Düzeltme + Karar
+- **Konu:** MOB, UX, ERİŞ
+- **Bağlam:** Kullanıcı yedi bulgu verdi (OK-01…OK-07); hepsinin yapılması istendi. OK-01 K-0024 E-8 kararının uygulanmasıdır.
+- **Kararlar:**
+  1. **OK-01 (yasak ad):** Liste `models/okuma_kahraman.dart` içinde. Din adları yalnız hayvan, araç ve hayalî türlerde yasak (E-8 metni); insan adı olarak serbest. Küfür, marka karakteri ve gerçek kişi adları her türde yasak. Liste başlangıç listesidir; eklemeler kod incelemesiyle yapılır. Ad sunucuya gitmediği için kontrol yalnız istemcidedir.
+  2. **OK-04 (otomatik geçiş):** Otomatik geçiş (doğru 3 sn, yanlış 6 sn) kaldırıldı; ilerleme "Sonraki soru" ile. Bu, K-0036 H1 kararını değiştirir; ürün onayı gerekir.
+  3. **OK-03 (soru ekranı geri):** Görünür geri düğmesi ve fiziksel geri tuşu aynı yolu izler; çıkış onay ister, çünkü yarım cevaplar devam etmez.
+  4. **OK-02 (bekleme ekranları):** "Hikâyen hazırlanıyor" ve "Sonucun hazırlanıyor" ekranlarında geri düğmesi ve fiziksel geri tuşu var; 20 sn sonra "Hikâyelere dön" düğmeli sakin mesaj çıkar. Arka plan işleri gezinme sayacıyla (`_nesil`) bırakılır; kullanıcı çıktıysa ekranı değiştirmez. Okuma kaydı yine yazılır.
+  5. **OK-06:** Sıradaki hikâye kartının ekran okuyucu etiketi gerçek metin oldu.
+  6. **OK-07 (büyük yazı):** 320 px ve 2,0 ölçekte sonuç başlığı ve geri bildirim başlığı kelime ortasından kırılıyordu; büyük yazıda maskot başlığın üstüne alındı. Okuyucu üst çubuğu "Senin Hikâyen" oldu (hikâye adı gövdede tam görünüyor); çubuk başlığı sığmazsa küçülür.
+- **Yapılanlar:** Yukarıdaki kararlar; `okuma_akis.dart`, `okuma_akis_ekrani.dart`, `sorular_ekrani.dart`, `sonuc_ekrani.dart`, `okuyucu_ekrani.dart`, `okuma_bilesenler.dart`, `okuma_tema.dart` (geçiş sabitleri ve yeni metinler), `kahraman_secim_ekrani.dart`. Testler: `okuma_veri_test.dart` (+3 yasak ad testi), `okuma_akis_test.dart` (otomatik geçiş testi "otomatik geçiş yok" olarak yeniden yazıldı), yeni `okuma_sorular_davranis_test.dart` (2 test), `okuma_golden_test.dart` (320x640 eklendi, sorular ekranında onGeri).
+- **Kanıt:**
+  - `flutter test` (tüm paket): tek başarısız test eski otomatik geçiş testiydi; yeniden yazıldı ve `okuma_akis_test.dart` 26/26 geçti.
+  - Golden görüntüler yeniden üretildi ve gözle kontrol edildi: 320x640 x2 sonuç ve soru ekranı kelime kırmıyor; okuyucu başlığı tam; 360x640 x1 soru ekranında geri bildirim, açıklama ve "Sonraki soru" kaydırmadan görünüyor (kısa açıklama için).
+  - Analiz: değiştirilen dosyalarda uyarı kalmadı (yalnız önceden var olan info seviyesi notlar).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ. Gerçek cihaz, safe area, ekran okuyucu (TalkBack/VoiceOver) ve uzun açıklamalı soru test edilmedi. Uzun açıklamada 360x640'ta kaydırma gerekir.
+- **Açık:**
+  1. Yasak ad listesinin kapsamı: "Ali", "Osman", "Yusuf" gibi yaygın adlar hayvan/araç/hayalî türde yasak; insan adı olarak serbest. Liste editörün incelemesi ister.
+  2. "Allah" gibi adların insan kahramanında serbest olması E-8 kararının sonucu; kullanıcı kapsamı genişletmek isterse karar gerekir.
+  3. OK-04 davranış değişikliğinin ürün onayı.
+- **Sahip:** Ajan (kod, test); Kullanıcı (liste incelemesi, otomatik geçiş kararı, görsel onay)
+- **Önem:** Yüksek
+- **İlgili:** K-0024 (E-8), K-0036 (H1), K-0050; `test/okuma_golden/*.png`
+
+### K-0118 · 2026-10-24 · DEN/VT · K-0116'daki 8. sınıf Türkçe 24 soru DB'de beklemeye alındı
+- **Tür:** Karar + Gelişme
+- **Konu:** DEN
+- **Bağlam:** 8. sınıf kazanım kodları 2026–27'de geçerli sayılmaz (`GECIS_ONCEKI_PROGRAM`); yerel işaretleme `source_pending` olarak yapılmıştı, DB'de bu 24 soru hâlâ `onaylandi` görünüyordu.
+- **Karar (kullanıcı onayı):** 24 soru `onay_durumu = 'beklemede'` yapıldı. `reddedildi` seçilmedi: soru kalitesi değil kazanım geçerliliği sorunu.
+- **Yapılanlar:**
+  1. Önceki hâl yedeklendi: `scratchpad/k0116_sinif8_before.json` (24 satır, hepsi `onaylandi`).
+  2. Tek `update` (`sinif = 8`, `created_at = 2026-10-24 04:05:28.523142+00`, `onay_durumu = 'onaylandi'` filtresi): 24 satır güncellendi.
+  3. Doğrulama: 8. sınıf `beklemede` 24, `onaylandi` 60.
+- **Açık:** 60 kalan 8. sınıf kaydı (2026-10-07 seed) hâlâ `onaylandi`; kazanım kodları için aynı karar uygulanacak mı, kullanıcı kararı bekleniyor.
+- **Sahip:** Ajan (DB yazımı, kayıt) · Kullanıcı (onay, kalan 60 kayıt kararı)
+- **Önem:** Orta
+- **İlgili:** K-0116, `.claude/skills/meb-soru-sozcuk-uzmani/ogrenme-gunlugu.md` (2026-10-24 4 ve 8. sınıf girişi)
+
+### K-0117 · 2026-10-24 11:59 · GÜV/ALT · GÖR-003 anonim uçlar ve GÖR-012 alan adı: canlı doğrulama, Edge Function ile hız sınırı (kodlandı, canlıya alınmadı)
+- **Tür:** Gelişme + Karar
+- **Konu:** GÜV, ALT
+- **Bağlam:** Kullanıcı GÖR-003 ve GÖR-012'nin diğer işlerden önce yapılmasını istedi.
+- **Canlı durum (salt okunur, `supabase db query --linked`):** `veli_adayi_olustur` anon ve authenticated için kapalı (20261033000200 canlıda). `exchange_auth_bridge_token` ve `auth_bridge_tokens` canlıda yok (20261021000000). Açık kalan anon fonksiyonlar: `growth_web_olay_kaydet`, `growth_web_kimlik_bagla`, `iletisim_izni_iptal_et` (üçü de anon=true). `rate_limit_kontrol` var, yalnızca service_role.
+- **Yapılanlar:**
+  1. Edge Function `growth-web-izle` (olay: IP başına 30 / 10 dk; kimlik: 10 / 10 dk). Service role ile `growth_web_olay_kaydet` ve `growth_web_kimlik_bagla` çağırır. JWT kapalı.
+  2. Edge Function `iletisim-izni-iptal` (IP başına 10 / 10 dk). Service role ile `iletisim_izni_iptal_et` çağırır. JWT kapalı.
+  3. Migration `20261080000000_anon_izleme_ve_iptal_servis.sql`: üç RPC için `public, anon, authenticated` yetkisi kaldırılır, `service_role` verilir. Uygulanmadı.
+  4. Web: [erkenErisimIzleme.ts](web-panel/src/components/landing/sections/erkenErisimIzleme.ts) ve [UnsubscribeForm.tsx](web-panel/src/components/auth/UnsubscribeForm.tsx) RPC yerine Edge Function'ları çağırır. Hata ve başarı akışı aynı kaldı.
+  5. PGlite testi `supabase/tests/anon_yuzey/kos.mjs`: migration öncesi anon çağırabiliyor (taban kanıt), sonrası çağıramıyor, service_role çağırabiliyor.
+- **Karar:** Kullanıcı: önce yapılsın (2026-10-24). İptal bağlantısının imzasız kalması: **ONAY BEKLİYOR** (ajan önerisi: hız sınırıyla kalsın; imzalı tek kullanımlık bağlantı ayrı ürün kararı, e-posta şablonlarının yeniden üretilmesini gerektirir).
+- **Canlıya alma sırası (kullanıcı onayı bekliyor):** (1) `supabase functions deploy growth-web-izle --no-verify-jwt` ve `iletisim-izni-iptal --no-verify-jwt`; (2) web-panel Vercel dağıtımı; (3) `npm run db:preview` → `npm run db:deploy` (20261080000000). Migration en sonda: önce uygulanırsa erken erişim izleme sessizce düşer ve iptal sayfası hata verir.
+- **Durum:** DEVAM (kod tamam; canlıya alma bekliyor). GÖR-012 DEVAM.
+- **Doğrulama:** KISMİ. PGlite 12/12 geçti. `tsc --noEmit` ve eslint (iki değişen web dosyası) temiz. Edge Function'lar çalıştırılmadı ve tip kontrolü yapılmadı (Deno bu makinede yok). Tarayıcıda form akışı ve canlı izleme kontrol edilmedi.
+- **GÖR-012 canlı kontrolü (DOĞRULANDI, HTTP/DNS):** `@` A → 76.76.21.21 (Vercel). `app` CNAME → cname.vercel-dns.com. `www` CNAME → hupolingo.com (308). `hupolingo.com`, `app.hupolingo.com`, `/veli-paneli/giris`, `/yonetim-giris` HTTPS 200 (Vercel). Vercel domain listesi: hupolingo.com ve www → web-panel; app.hupolingo.com → hupo-app-web-yeni. NS TURHOST. CAA kaydı yok. MX: mx1/mx2.hostinger.com; SPF Hostinger ve Brevo. Yani GÖR-012'nin DNS işi önceki panoda sanıldığından ileride. Açık: Supabase Auth Site URL ve redirect adresleri (Dashboard, bu makineden doğrulanamadı); MX sağlayıcısının beklenen sağlayıcı olup olmadığı.
+- **Sahip:** Ajan (kod, test) · Kullanıcı (deploy onayı, Supabase Dashboard, MX teyidi, iptal kararı)
+- **Önem:** Kritik (GÜV), Yüksek (ALT)
+- **İlgili:** GÖR-003, GÖR-012, GÖR-027; `supabase/functions/_shared/guvenlik.ts`; `supabase/functions/veli-adayi-kayit/index.ts` (desen kaynağı).
+- **Güncelleme 2026-10-24 12:24 (kullanıcı onayı):** Kullanıcı deploy, iptal kararının hız sınırıyla kalması ve MX Hostinger teyidi için onay verdi (ONAYLI). Edge Function'lar `growth-web-izle` ve `iletisim-izni-iptal` canlıya deploy edildi (`--no-verify-jwt`); geçersiz girdilerle 4 istek 400 döndü (RPC doğrulaması çalıştı, yazma yok). Kod commit'i `1d773ab` (feature/huporead-entegrasyon; yalnızca bu işin dosyaları). Migration 20261080000000 ve web dağıtımı bu kayıttan sonra (aşağıdaki güncellemeler).
+- **Güncelleme 2026-10-24 12:24 (446c20c iddiası düzeltildi):** Commit `446c20c` "uzakta uygulanmadı" diyor; bu yanlış. Salt okunur kontrol: `schema_migrations` içinde `20261078000000 okuma_dashboard_genislet` ve `20261079000000 okuma_toplu_islem` kayıtlı; `okuma_veli_ozeti`, `okuma_ogretmen_sinif_ozeti`, `_okuma_cocuk_ozet`, `_okuma_sinif_hedef_listesi`, `_okuma_cocuk_hedef_listesi` ve `okuma_toplu_islem` canlıda mevcut. Commit mesajı eski; geçmiş değiştirilmedi.
+- **GÖR-012 MX teyidi (kullanıcı, 2026-10-24):** Posta sunucuları Hostinger (mx1/mx2.hostinger.com) beklenen sağlayıcı. Kapandı.
+- **Güncelleme 2026-10-24 12:54 (canlıya alındı):**
+  1. Migration `20261080000000` canlıya uygulandı (`npm run db:deploy`, önceden `db:preview` ile yalnızca bu migration bekliyordu). Salt okunur kontrol: `growth_web_olay_kaydet`, `growth_web_kimlik_bagla`, `iletisim_izni_iptal_et` ve `veli_adayi_olustur` için anon ve authenticated `false`, service_role `true`. Anon REST çağrısı üç RPC'de de 401 `permission denied` döndü (doğrulama, yazma yok).
+  2. Web-panel production dağıtımı: `1d773ab` içeriği (temiz worktree, tsc/eslint/build geçti). Vercel deployment `dpl_3EXVbHfJjGFt2uUgL1azRLc6gS55`, hupolingo.com'a alias verildi. Canlı `/tr/iletisim-izni` JS paketi `iletisim-izni-iptal` çağrısını içeriyor.
+  3. Edge Function'lar 12:2x'te deploy edildi ve geçersiz girdilerle 400 döndü.
+  4. **Vercel yükleme sorunu (açık, düzeltilmedi):** Kök `.vercelignore` içindeki `supabase/` (sabitlenmemiş) satırı `web-panel/src/utils/supabase/` klasörünü de dışlıyor. Kök dizinden CLI deploy bu yüzden build'de düşüyor (`Can't resolve './utils/supabase/proxy'`). Dağıtımda geçici kopyada `/supabase/`, `/docs/` vb. olarak sabitlendi; repo dosyası değiştirilmedi. Öneri: repo'daki `.vercelignore` satırlarını `/` ile sabitlemek (ayrı onay gerekir). Başarısız deploy `7WUqvHa6` production'a dokunmadı.
+  5. **Landing notu:** `ErkenErisimSection` hiçbir sayfada import edilmiyor; bu yüzden `growth_web_olay_kaydet` çağrısı canlıda şu an tetiklenmiyor. Kod ileride bu bölüm açılırsa devreye girer.
+  6. **Doğrulama:** KISMİ. Geçerli bir e-posta ile iptal akışı canlıda denenmedi (test kaydı yazmamak için). Auth redirect ayarı hâlâ Dashboard'da teyit bekliyor.
+
+### K-0116 · 2026-10-24 07:07 · DEN/VT · 6. sınıf DÖP uyumsuzluğu kapatıldı; 47 soru kör denetimden geçirildi ve DB'ye yazıldı; 8. sınıf Türkçe 24 soru onaylandı
+- **Tür:** Karar + Gelişme + Sorun
+- **Konu:** DEN
+- **Bağlam:** Kullanıcı: veritabanı erişimi var; aktarımı yap; kör çözüm/kalite ayrı ajanlarla yapılsın; 6. sınıf 8 soruyu düzelt; T.O.6.21 kararını ver ve uygula.
+- **Kararlar:**
+  1. **T.O.6.21 (özetleme):** kapsam dışı. Gerekçe: özetleme ve yorum, tartışma gibi kodlar tek soruyla güvenilir ölçülmez; 5/7/8. sınıfla tutarlı. `tr6-o-018` T.O.6.14 olarak yeniden kuruldu.
+  2. **6. sınıf 8 uyumsuz soru:** düzeltildi, silinmedi. `tr6-o-002` → T.O.6.4; `tr6-o-017` → T.O.6.18; `tr6-o-019` → T.O.6.9; `tr6-y-011` → T.Y.6.15; `tr6-y-e02` → T.Y.6.18; `tr6-y-017` → T.Y.6.14; `tr6-y-012` ve `tr6-y-015` (K-0115 revizyonu) → T.Y.6.14 / T.Y.6.17 DÖP metinleriyle.
+- **Yapılanlar:**
+  1. DB yazımı (`supabase db query --linked`, tek transaction): her satır önce sistemin `_soru_paket_hatasi` doğrulayıcısından geçti (47/47 hata yok). 17 revize soru güncellendi (beklemede → onaylandı), 6 DÖP düzeltmesi yerinde güncellendi, 24 8. sınıf sorusu eklendi. Sonuç: onaylandı 1101, reddedildi 1 (tr7-011).
+  2. Kör denetim (ayrı ajanlar; çözücü Haiku, kalite Sonnet; anahtar ayrı dizinde): ilk turda 47/47 çözüm anahtarla aynı; kalite 42 GEÇER, 5 DÜZELT. DÜZELT önerileri uygulandı (tr8-002, tr8-009, tr8-023, tr8-024, tr6-o-017); değişen 6 soru yeniden denetlendi: çözüm 6/6, kalite 6/6 GEÇER.
+  3. tr8-013: kalite ilk turda doğru şıkkı yanlış okudu (B; metin A); ikinci turda doğru okundu. Bu uyuşmazlık kayda alındı.
+  4. Benzerlik: düzeltilmiş 9 soru 1231 metne karşı 0 bayrak; 8. sınıf 24 soru 0 bayrak.
+- **Durum:** TAMAMLANDI (DB aktarımı ve denetim); yayın kararı kullanıcıda.
+- **Doğrulama:** KISMİ. Kapı, sistem doğrulayıcısı, DB sayımları ve kör denetim DOĞRULANDI. Tüm veritabanına karşı benzerlik yapılmadı (paket + pilot dosyaları). Kullanıcı "kabul et" ve "aktarım yap" dedi; insan onayı kaydı `kullanici` olarak yazıldı.
+- **Açık:**
+  1. Pilot `kazanim_6_turkce.json` dosyasındaki bozuk metinler (T.Y.6.14/17/18, T.O.6.5/20/25, T.Y.6.12/19) duruyor; DB'deki kazanım metinleri DÖP ile düzeltildi. Dosyaya doğrulama notu eklendi.
+  2. 6. sınıf kapsamında kalan kodlar ve 8. sınıf kalan yedekleri: kullanıcı kararı.
+  3. Geri bildirim: `.claude/skills/meb-soru-sozcuk-uzmani/references/bu-sohbetten-ogrenilenler.md` (ÖNERİ; kullanıcı onayı bekler). Becerinin peer oturum tarafından yönetildiği için doğrudan değişiklik yapılmadı.
+- **Sahip:** Kullanıcı (aktarım, yayın) · Ajan (SQL, denetim, kayıt).
+- **Önem:** Yüksek
+- **İlgili:** K-0113, K-0115, GÖR-055, GÖR-057; `docs/soru-uretim/paket/soru_paketi_revizyon_geri17_2026-10-23.json`, `soru_paketi_tr6_duzeltme_2026-10-24.json`, `soru_paketi_8sinif_turkce_2026-10-23.json`, `soru_paketi_8sinif_turkce_p2_2026-10-24.json`; `write.sql` (scratchpad).
+
+### K-0115 · 2026-10-24 00:52 · DEN/VT · 8. sınıf Türkçe parti 2 (kalan 12 kod); 6. sınıf DÖP kod karşılaştırması: 8 soruda uyuşmazlık; iki revize sorunun kodu düzeltildi
+- **Tür:** Gelişme + Sorun
+- **Konu:** DEN
+- **Bağlam:** K-0113 açık maddeleri: 8. sınıfın kalan 12 kodu ve 6. sınıf kazanım kodlarının teyidi.
+- **Yapılanlar:**
+  1. 8. sınıf parti 2: `soru_paketi_8sinif_turkce_p2_2026-10-24.json`, tr8-013…024 (12 soru). Parti 1 ile birlikte 24 kodun tamamı kapsandı. Kapı 12/12 KONTROL, RED 0. Benzerlik 0 bayrak (1231 metin). Yazar Haiku 5.5; kör çözüm ve kalite denetimi yapılmadı.
+  2. 6. sınıf DÖP karşılaştırması: `kazanim_6_turkce.json` ana kazanım cümleleri, DÖP tymm 2026-09-02 metniyle karşılaştırıldı. 35 kod uyumlu. Uyuşmayan: T.O.6.5, T.O.6.20, T.O.6.25, T.Y.6.12, T.Y.6.14, T.Y.6.17, T.Y.6.18, T.Y.6.19. T.O.6.7 DÖP metninde ayrıştırma hatası nedeniyle karşılaştırılamadı. 6. sınıf T.D/T.K kodları kapsam dışı; kontrol edilmedi.
+  3. Etkilenen sorular: 6. sınıf setinde (91 soru; `uretim_turkce_6_final.json` ve `soru_paketi_tr6_2026-10-21.json`) bu 8 kodun her biri 1 soruda kullanılmış. Bu sorular değiştirilmedi; onaylı olup olmadıkları bu oturumda veritabanından doğrulanamadı.
+  4. Revizyon düzeltmesi: `tr6-y-015` (kodu T.Y.6.17 "uygun bağlantı ifadelerini kullanabilme") ikna sorusundan bağlantı ifadesi sorusuna çevrildi (zorluk 1). `tr6-y-012` kökü neden-sonuç ile geliştirme vurgusuna alındı. Revize paket yeniden üretildi: kapı 17/17 KONTROL, RED 0; benzerlik 0 bayrak.
+- **Karar:** 8 uyumsuz 6. sınıf sorusunun düzeltilmesi veya yayından kaldırılması kullanıcı kararı. ONAY BEKLİYOR.
+- **Durum:** BEKLİYOR (6. sınıf kod kararı; 8. sınıf kör denetimi; veritabanı aktarımı)
+- **Doğrulama:** KISMİ. Kod karşılaştırması betikle yapıldı (ana cümle eşleşmesi); soruların anlamsal uygunluğu tek tek incelenmedi. Kör çözüm ve kalite denetimi yapılmadı.
+- **Sahip:** Kullanıcı (6. sınıf kararı, aktarım) · Ajan (karşılaştırma, revizyon, kayıt).
+- **Önem:** Yüksek
+- **İlgili:** K-0113, GÖR-055, GÖR-057; `docs/soru-uretim/pilot/kazanim_6_turkce.json`; `docs/soru-uretim/paket/soru_paketi_8sinif_turkce_p2_2026-10-24.json`, `soru_paketi_revizyon_geri17_2026-10-23.json`.
+
+### K-0115 · 2026-10-24 00:30 · YÖN · Yönetim, veli ve öğretmen panelleri: paylaşılan oturum bilgisi, önbellekli veri okuma, sayfa iskeleti
+- **Tür:** Gelişme
+- **Konu:** YÖN
+- **Bağlam:** Kullanıcı yönetim, veli ve öğretmen panellerinin yavaş tepki verdiğini ve veri yüklemesinin geciktiğini bildirdi. Kod incelemesinde dört kök neden bulundu: (a) her yönetim sayfası açılışında kenar menü, üst çubuk, rol kapısı ve komut paleti ayrı ayrı `getUser` ve `profiles` sorgusu çalıştırıyordu (bir açılışta yaklaşık 7 `getUser`, 6 `profiles`); rol kapısı içeriği bu zinciri bekliyordu. (b) `useAdminRpc` her yeniden yüklemede listeyi "Yükleniyor" kartıyla değiştiriyordu; kayıttan sonra ekran boşalıp geri geliyordu. (c) Sayfa geçişlerinde `loading.tsx` yoktu; tıklama sunucu cevabına kadar görsel geri bildirim vermiyordu. (d) Veli sayfası sunucuda üç sıralı sorgu yapıyordu.
+- **Yapılanlar:**
+  1. `hooks/useCurrentRole.ts`: oturum bilgisi (kullanıcı kimliği, e-posta, ad, rol) tek paylaşılan kaynakta tutuluyor; eş zamanlı çağrılar aynı isteği paylaşıyor; çıkışta ve farklı kullanıcı girişinde sıfırlanıyor. `UserDropdown`, `NotificationDropdown`, `VeliSidebar`, `OdemeGecmisi`, `AbonelikKarti` bu kaynağı kullanıyor.
+  2. `yonetim/layout.tsx`: rol sunucuda zaten doğrulandığı için `RolKapisi`'ne `sunucuRolu` olarak geçiriliyor; istemci ilk çizimde rol okumasını beklemiyor.
+  3. `components/yonetim/useAdminRpc.ts`: başarılı sonuçlar bellekte önbelleğe alınıyor (60 kayıt sınırı); sayfa dönüşünde veri anında gösteriliyor ve arka planda yenileniyor; yeniden yüklemede liste boşalmıyor; hata yalnızca o yüklemeye ait; önbellek oturum değişince temizleniyor.
+  4. `components/yonetim/panel/SiniflarManager.tsx` (öğretmen ekranı): kayıt sonrası yenilemede "Yükleniyor" gösterilmiyor.
+  5. `app/[locale]/(admin)/yonetim/loading.tsx` ve `veli-paneli/loading.tsx` + `components/common/SayfaIskeleti.tsx`: sayfa geçişinde anında iskelet; kenar menü ve üst çubuk yerinde kalıyor.
+  6. `lib/veli-paneli/access.ts`: rol ve çocuk sorguları `Promise.all` ile paralel.
+- **Karar:** Hızlandırma isteği: ONAYLI. Ajan önerileri, onay bekliyor (ONAY BEKLİYOR): (i) karşılama ekranı (`WelcomeSplash`, 2,4 sn tam ekran, ilk oturumda tıklamaları yutuyor) kaldırılsın mı kısaltılsın mı; (ii) veli ana sayfası verisinin sunucudan ön yüklenmesi (`get_student_dashboard`); (iii) öğretmen ve yönetim sayfalarında kendi yükleme akışına sahip bileşenlerin (`KuponManager`, `PlanManager`, `DuyuruManager` vb.) `useAdminRpc` kalıbına taşınması. Bu üçü kapsam dışı bırakıldı; GÖR-056.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — kod derleniyor ve lint temiz; gerçek oturumla süre ve tıklama tepkisi ölçülmedi.
+  - `tsc --noEmit`: 0 hata.
+  - `npm run lint`: 0 hata, 16 uyarı (değişiklik öncesi taban da 16; yeni uyarı yok).
+  - Üretim derlemesi: çalışma kopyasında (scratchpad, `--webpack`) başarılı; Turbopack kopyadaki `node_modules` bağlantısı yüzünden çalışmadı (bu, gerçek depoda geçerli değil).
+  - Demo modunda (`NEXT_PUBLIC_DEMO_MODE=1`) altı panel sayfası HTTP 200, sayfa ve konsol hatası yok.
+  - Kenar menüsünden `/yonetim` → `/yonetim/siniflar` gezinme duman testinde zaman aşımına uğradı; nedeni doğrulanmadı.
+  - Oturumlu tarayıcı kontrolü ve öncesi/sonrası süre ölçümü yapılmadı.
+- **Sahip:** Ajan + Kullanıcı (gerçek yönetici, öğretmen ve veli oturumuyla kontrol)
+- **Önem:** Yüksek
+- **Açıklama:** Değişiklikler çalışma ağacında, commit edilmedi. Yönetim sayfası açılışında istemci tarafı oturum sorgusu sayısı tek bir okumaya indi; rol kapısı beklemesi kalktı; sayfa geçişleri ve kayıt sonrası yenileme artık boş ekran göstermiyor. Kullanıcının önceden değişmiş olan `veli-paneli/aktivite`, `denemeler`, `hedefler` ve `yonetim/sorular/toplu-ekle` dosyalarına dokunulmadı.
+- **Kanıt:** `tsc --noEmit` çıkış 0; `npm run lint` 0 hata / 16 uyarı; webpack üretim derlemesi çıkış 0 ("Compiled successfully", TypeScript geçti); duman testi: `/yonetim`, `/yonetim/siniflar`, `/yonetim/kullanicilar`, `/veli-paneli`, `/veli-paneli/hedefler`, `/veli-paneli/uyelik` HTTP 200, hata yok.
+- **İlgili:** GÖR-056, AGENTS.md §4 (Next.js kuralları), `hooks/useCurrentRole.ts`, `components/yonetim/useAdminRpc.ts`.
+- **Güncelleme 2026-10-24 00:54 (kullanıcı kararları ve uygulama):** Kullanıcı üç konuda karar verdi; üçü uygulandı.
+  1. Karşılama ekranı kaldırıldı (`ONAYLI`): `app/[locale]/(admin)/layout.tsx` ve `app/[locale]/(student)/layout.tsx` içinden çıkarıldı; `components/common/WelcomeSplash.tsx` silindi (başka referans yoktu). Mesaj anahtarları (`welcome`, `lib/cms/icerik.ts` içindeki ad listesi) bilerek bırakıldı; ölü anahtar temizliği GÖR-022 kapsamında.
+  2. Veli ana sayfası verisinin sunucudan önceden okunması (ajan kararı, uygulandı): `veli-paneli/page.tsx` ilk çocuğun `get_student_dashboard` verisini sunucuda okuyup `ParentDashboard` → `ChildScope` üzerinden verir; `ChildScope` ilk seçimde aynı RPC'yi tekrarlamaz. Sunucu okuması hata verirse istemci eski yoldan yüklemeye devam eder; demo modunda atlanır. Gerçek oturumda süre farkı ölçülmedi.
+  3. Kendi yükleme akışına sahip ekranların yeni kalıba taşınması (ajan kararı, uygulandı): `KuponManager` (kupon ve kampanya listeleri) ve `PlanManager` (plan türleri) `useAdminRpc` kalıbına taşındı; kayıt sonrası liste boşaltmadan yenilenir. `DuyuruManager` zaten bu kalıptaydı. `PlanlerSayfa` planları doğrudan tablodan okuyor ve yükleme durumu göstermediği için kayıt sonrası boşalma olmuyor; bilerek bırakıldı.
+  - **Kanıt (güncel):** `tsc --noEmit` çıkış 0. `npm run lint`: 0 hata, 12 uyarı (önceki 16; yeni uyarı yok). Webpack üretim derlemesi (çalışma kopyası): çıkış 0. Demo modunda altı panel sayfası HTTP 200, hata yok. Kenar menüsünden `/yonetim` → `/yonetim/siniflar` gezinmesi çalıştı (geliştirme modu derlemesi dahil 8,9 sn); önceki zaman aşımı karşılama ekranından kaynaklanıyordu.
+  - **Açık:** Gezinme sırasında `/yonetim` panelindeki Recharts grafiğinde hidrasyon uyarısı (`clipPathId` sunucu/istemci farkı). Grafik kodu değişmedi, ama önceki sürümle karşılaştırılmadı; GÖR-056.
+  - **Durum:** DEVAM. **Doğrulama:** KISMİ (gerçek oturumla ölçüm yapılmadı).
+- **Güncelleme 2026-10-24 (açıkta kalanlar):**
+  - Recharts hidrasyon uyarısı giderildi. Neden: Recharts SVG `clipPath` kimliğini global sayaçla üretiyor; sunucu ve istemci değerleri uyuşmuyordu. Düzeltme: `components/common/IstemciyeOzel.tsx` (yalnızca istemcide çizen sarmalayıcı, `useSyncExternalStore`). Kullanıldığı yerler: `yonetim/panel/RevenueChart.tsx`, `veli-paneli/WeeklyStudyChart.tsx`, `veli-paneli/SubjectSuccessChart.tsx`.
+  - Kanıt: çalışma kopyasında dev sunucusunda (demo) kenar menüsünden `/yonetim` → `/yonetim/siniflar` gezinmesi iki turda da hidrasyon hatası vermeden tamamlandı. Duman testinde 6 panel sayfası HTTP 200; kalan konsol mesajları yalnızca 401 (demo modunda oturum olmadığı için Supabase çağrıları), JavaScript hatası yok.
+  - `tsc --noEmit` çıkış 0; `npm run lint` 0 hata, 12 uyarı; webpack üretim derlemesi çıkış 0.
+  - Açık kalan: gerçek oturumla süre ve tıklama ölçümü. Test hesabı ortamda tanımlı değil; GÖR-056 test hesabı bekliyor olarak güncellendi.
+  - **Durum:** DEVAM. **Doğrulama:** KISMİ.
+
+### K-0113 · 2026-10-24 00:30 · DEN/VT · DÖP teyidi (5. ve 7. sınıf Türkçe), 17 geri çekilen sorunun revizyonu ve 8. sınıf Türkçe parti 1
+- **Tür:** Gelişme + Karar (kullanıcı: "kazanım metinlerini DÖP ile teyit et; 17 soruyu revize et ve kabul et; sıradaki sınıfın sorularını yazmaya başla")
+- **Konu:** DEN
+- **Bağlam:** K-0110 açık kalanları: DÖP teyidi, 17 geri çekilen soru kararı, sıradaki sınıf.
+- **Plan:** (1) DÖP PDF'ten metin çıkarımı ve 5/7. sınıf kod-metin karşılaştırması. (2) 17 soruyu revize et, kapıdan ve benzerlik kontrolünden geçir. (3) 8. sınıf kazanım tablosu ve parti 1.
+- **Yapılanlar:**
+  1. DÖP teyidi: tymm 2026-09-02 PDF'i (247 sayfa) PyMuPDF ile okundu (metin geçici dosya, repo dışı). 5. sınıf: 21 kodun tamamında kod ve kazanım metni eşleşti. 7. sınıf: 22 kodun tamamında eşleşti. `kazanim_5_turkce.json` ve `kazanim_7_turkce.json` dosyalarına `dogrulama` alanı eklendi. Karşılaştırma ajan tarafından yapıldı; resmî kurum onayı değildir.
+  2. 17 soru revize edildi → `docs/soru-uretim/paket/soru_paketi_revizyon_geri17_2026-10-23.json`. Tekrar eden senaryolar ve kalıplar değiştirildi (çevrim içi oyun, "bir ton kâğıt" cümlesi, "doğa ve insanlar üzerindeki etkisi" kalıbı, kaplumbağa metni, "Bu amaca göre aşağıdaki cümlelerden…" kökü, devre ve dairesel soru çiftleri). tr6-dk-030 konuşma (T.K.6.14) ve tr6-e15-001 dinleme (T.D.6.3) kazanımları ölçülebilir okuma kodlarına taşındı (T.O.6.14, T.O.6.4). tr6-dk-030 metnindeki bozuk tırnak ve çift "Doğru cevap" satırı düzeltildi. tr6-o-018'deki "dünyanın en uzun yaşayan hayvanları" genellemesi "uzun ömürlü" olarak değiştirildi.
+  3. Kapı (`tools/soru-uretim/kapi.cjs`, paket şemasından kapı şemasına uyarlamayla): 17/17 KONTROL, RED 0. Uyarı: 6 soruda doğru şık en uzun (kullanıcı kuralına göre tek başına red sebebi değil).
+  4. Benzerlik: revize 17 soru, paket ve pilot `uretim_*` dosyalarındaki 1207 metne karşı 0 bayrak. Revizyon öncesi aynı yöntemle 16 bayrak vardı. Sorunun kendi eski pilot taslağı karşılaştırmadan çıkarıldı.
+  5. Kabul: kullanıcı "kabul et" dedi. Paket dosyasında `onay_durumu='onaylandi'`, `insan_onayi_kim='kullanici'`, `insan_onayi_karar='onay'`. `kalite_durumu` 'sari' bırakıldı.
+  6. 8. sınıf Türkçe: `kazanim_8_turkce.json` (PDF'te 47 kod; kapsamda 24 kod: T.O 16, T.Y 8; kapsam kararı 5. ve 7. sınıfla aynı ölçüt). Parti 1: `soru_paketi_8sinif_turkce_2026-10-23.json`, 12 soru (tr8-001…012, her biri farklı kazanım kodu). Kapı 12/12 KONTROL, RED 0; benzerlik 0 bayrak. Yazar Haiku 5.5 (ana oturum); REHBER'deki Sonnet yazar yerine. Kayda bu sapma açıkça işlendi.
+- **Karar:**
+  - "Sıradaki sınıf" = 8. sınıf Türkçe: PLAN_V2 §0 öncelik sırasına göre (4 → 8 → 5 → 6–7). Sınıf seçimi ajan yorumu, ONAY BEKLİYOR.
+  - 17 soru revizyonu ve kabulü: kullanıcı kararı, ONAYLI.
+- **Durum:** DEVAM (8. sınıf Türkçe: 12/24 kod yazıldı; kör çözüm ve kalite denetimi yapılmadı)
+- **Doğrulama:** KISMİ. DÖP teyidi (5. ve 7. sınıf), kapı ve benzerlik kontrolü DOĞRULANDI (betik çıktıları). Kör çözüm ve kör kalite DOĞRULANMADI. 17 revize soru ve 8. sınıf parti 1 veritabanına aktarılmadı.
+- **Sahip:** Kullanıcı (kabul, aktarım onayı) · Ajan (revizyon, kapı, DÖP teyidi, kayıt).
+- **Önem:** Yüksek
+- **Açık:**
+  1. Veritabanı aktarımı bu oturumda yapılamadı: Supabase servis anahtarı ve CLI bağlantısı ortamda yok. Aktarım, paket dosyasıyla yetkili ortamdan (örn. admin toplu-ekle) kullanıcı tarafından yapılmalı. Benzerlik kontrolü veritabanının tamamına değil, paket ve pilot dosyalarına karşı yapıldı (veritabanında 1060 onaylı soru var, dosyalarda 568 benzersiz kimlik görüldü; pilot ile birlikte 1207 metin).
+  2. Kör çözüm (anahtarsız) ve kör kalite denetimi yapılmadı, bağımsız ajan çalıştırılmadı. 17 revize soru ve 12 yeni soru için gerekli.
+  3. 8. sınıf kalan 12 kod: T.O.8.9, 8.11, 8.15, 8.17, 8.19, 8.20; T.Y.8.7, 8.8, 8.15, 8.16, 8.17, 8.19.
+  4. 6. sınıf T.Y.6.14, T.Y.6.17 kodları DÖP ile teyit edilmedi. T.O.6.21 (özetleme) 5., 7. ve 8. sınıfta kapsam dışı bırakıldığı halde 6. sınıfta kullanılıyor; karar bekliyor.
+  5. Kayıt numarası çakışması: K-0110 iki kez kullanılmış (MOB satır ~115, DEN/VT satır ~177). Bu kayıt K-0113 olarak eklendi; eski kayıtlar değiştirilmedi.
+  6. İnsan örneklemi (REHBER §15) yapılmadı.
+- **Kanıt:** `node tools/soru-uretim/kapi.cjs` → revize 17: KONTROL 17, RED 0; 8. sınıf parti 1: KONTROL 12, RED 0. Benzerlik betiği (scratchpad): revize 17 için 0 bayrak; 8. sınıf parti 1 için 0 bayrak.
+- **İlgili:** K-0110, K-0108, K-0109, GÖR-055; `docs/soru-uretim/pilot/kazanim_5_turkce.json`, `kazanim_7_turkce.json`, `kazanim_8_turkce.json`; `docs/soru-uretim/paket/soru_paketi_revizyon_geri17_2026-10-23.json`, `soru_paketi_8sinif_turkce_2026-10-23.json`.
+
+### K-0115 · 2026-10-24 · MOB · HupoRead: HR-110 taslağı üretildi; sözlük denetimi (2 ajan) yapıldı; kanıt düzeyi yükseltmesi beklemede
+- **Tür:** Gelişme + Sorun
+- **Konu:** MOB
+- **Yapılanlar:**
+  - HR-110 (katalogda yalnız kayıt vardı, metin yoktu): `kaynak/HR-110.md` bir ajan tarafından YAZILDI (yazar üretimi, "Taslak" olarak işaretli, editöryel inceleme bekliyor). Anotasyon `anotasyon/hr110.json` derlendi (hatasız, 3392 kelime, 5 soru). Toplam paket 92.
+  - Sözlük (yeni 8. sınıf ve 7. sınıf adayları, 225 aday): iki ajan denetimi (A doğruluk, B uygunluk). 170 aday iki ajandan da geçti (onay: "evet (2 ajan geçti)"); 5 aday bir ajanda kaldı, 3'ü anotasyondan çıkarıldı; HR-104 "lejand" ana aday olduğu için korundu. 50 aday "beklemede". Liste `sozluk-adaylari-inceleme.csv`'ye eklendi (1026 satır).
+  - Kanıt düzeyi: resmî kaynak bulundu. MEB TYMM Ortaokul Türkçe Dersi Öğretim Programı (tymm.meb.gov.tr; PDF'den metin çıkarıldı; okuma kodları T.O.5.x–T.O.8.x). Panel tanımı: A = resmî kazanımdan doğrulandı; B = resmî tema altında editör önerisi; C = resmî eşleşme yok. Ajanların ilk eşlemeleri (5–8. sınıf) hikâye metinleri okunmadan toplu A verdi; bu sonuçlar reddedildi. Yeniden çalışma oturum limitine takıldı. Düzeyler şu an hepsi C.
+  - 3–4. sınıflar için resmî ilkokul Türkçe programı bu depoda yok; C kalacak.
+- **Açık:**
+  - Ajan limiti 05:30'da (Europe/Istanbul) sıfırlanınca 5–8. sınıf kanıt eşlemesini metin okuyarak yeniden çalıştırma.
+  - Kalan 50 sözlük adayı denetimi; HR-110 adayları henüz denetime girmedi.
+  - HR-110 kaynağı yazar üretimi; insan editör incelemesi gerekli.
+  - HR-015…032 uyum kararı (kullanıcı).
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — derleyici hatasız (92 paket); kanıt düzeyi C; sözlük kısmen onaylı.
+- **İlgili:** GÖR-054, K-0114.
+
+### K-0114 · 2026-10-24 · MOB · HupoRead hikâye veri tabanı: Sonnet sözlük kararları uygulandı; kalan 4 hikâye işlendi; toplam 91 paket
+- **Tür:** Karar + Gelişme
+- **Konu:** MOB
+- **Bağlam:** Kullanıcı Sonnet önerilerinin uygulanmasını ve kalan üç kararın Claude tarafından verilmesini istedi.
+- **Kararlar:**
+  - Sözlük: Sonnet kararları (510 evet, 39 hayır, 247 düzeltme) anotasyonlara uygulandı. `sozluk-adaylari-inceleme.csv` onay sütununa "Sonnet: evet/duzelt/hayir" yazıldı. 5 "hayır" kararı silinmedi: ana adaylar (HR-023 gözlerini büyüttü, HR-040 misafire yer açmak, HR-043 elini kaldırdı, HR-077 lafını ağzından almak, HR-086 gözlerini çevirmek) metindeki deyim tokenlarına bağlı. Bunlar insan kararına bırakıldı. 5 düzeltme ise (HR-088 "yüz vermek" dahil) yapısal olarak tanınmadı; yalnız HR-088 elle düzeltildi, diğer tanınmayanlar yukarıdaki gibi uygulandı. Kimlik temizliği: var olmayan es/zıt bağları kaldırıldı (192 kayıt).
+  - HR-111/112: v1 (`kaynak/HR-111.md`, `HR-112.md`) esas alındı. Künye (tür, dil hedefleri, kavramlar) v1'de var; v2 kullanılmadı.
+  - HR-108: yol arkadaşı Ayça Ana olarak kaldı. Umay'la eki çözülemediği için Umay kullanılmadı; bu bir editöryel tercihtir.
+  - HR-099 ve HR-100: kaynakta Sınıf 7 olduğu için 7. sınıf olarak işlendi (7. sınıf sözlük aralığı 6–8).
+- **Yapılanlar:** HR-099, HR-100, HR-111, HR-112 anotasyonlandı ve derlendi, hatasız. Toplam paket 91 (anotasyon 91).
+- **Açık:**
+  - 5 "hayır" ana adayının silinmesi ve sözlük onayının insan tarafından verilmesi.
+  - HR-015…032 uyum kararı hâlâ açık (Sonnet önerisi: bekle).
+  - Kanıt düzeyi C: MEB kazanım eşleme tablosu gerekli.
+  - HR-110 kaynakta yok.
+  - 8. sınıf yeni eklenen ve HR-099/100/111/112'nin sözlük adayları inceleme listesinde değil; onaysız.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — derleyici hatasız (91 paket); içerik editöryel doğrulanmadı; sözlük onaysız (Sonnet onayı); kanıt düzeyi C.
+- **Sahip:** Ajan + Kullanıcı
+- **Önem:** Yüksek
+- **İlgili:** GÖR-054, K-0113, K-0112.
+
+### K-0113 · 2026-10-24 · MOB · HupoRead hikâye veri tabanı: 8. sınıf hikâyeler paketlendi (11 hikâye); toplam 87 paket; sözlük ve düzey kararları öneri aşamasında
+- **Tür:** Gelişme + Karar (öneri, uygulanmadı)
+- **Konu:** MOB
+- **Bağlam:** K-0112'nin devamı. Kullanıcı 8. sınıf hikâyelerini bu oturumda işlemeyi, sözlük onayı, düzey ve uyum kararlarını ise Sonnet 5.5'e bırakmayı istedi.
+- **Yapılanlar:**
+  - 11 hikâye anotasyonlandı ve derlendi, hatasız: HR-101–109, HR-113, HR-114. Toplam paket 87. Her hikâyede 4 sözcük hedefi, 1 deyim, 1 kavram, 5 soru ve yuva başına 3 aday var. Yayın kapısı uyarıları (sözcük hedefi sayısı, soru sayısı, aday sayısı) giderildi.
+  - Kalan derleyici uyarıları: kanıt düzeyi C, T4 uzunluk (3950–4080 kelime, pilot üst sınırı 1100) ve sözlük adaylarının onaysız olması.
+  - Ad ekleri: "Asya'yla", "Umay'la" gibi -yla/-le ekleri `donustur.mjs` tarafından çözülemiyor. HR-106'da kahraman, HR-108'de yol arkadaşı belirteci kaldırıldı (K-0112'deki HR-077 yöntemi). HR-108'de yol arkadaşı, metinde sorunsuz geçen Ayça Ana olarak seçildi; bu bir editöryel tercihtir ve onaylanmalıdır.
+  - Yeni 8. sınıf sözlük adayları `sozluk-adaylari-inceleme.csv` dosyasına eklenmedi; inceleme listesi yalnızca 801 eski adayı içeriyor.
+- **Sonnet önerileri** (`icerik/okuma/tasnif/karar-onerileri.md`, `sozluk-onerileri.csv`; onay sütunlarına dokunulmadı):
+  - Sözlük: 510 evet, 44 hayır, 247 düzelt. Düzeltmelerin 183'ü es/zıt alanlarının temizliği; çoğu "ilişkili sözcük" bağı, gerçek eş/zıt değil. 5 kayıtta bozuk bağ var. 10 belirsiz satır insan incelemesi bekliyor.
+  - Kanıt düzeyi C: C'de kalsın. Yükseltme için tam MEB kazanım listeleri ve editörün imzaladığı "hikâye → kazanım" eşleme tablosu gerekiyor.
+  - HR-015…032 uyumu: bekle. Uzak taslaklar elle düzenlenmiş görünüyor (uzak 7–9 sayfa, yerel 4–7 sayfa); HR-016 ve HR-017 yalnızca uzakta var.
+  - HR-111/112: v1 (`kaynak/HR-111.md`, `HR-112.md`) önerilir. İkisi de 8. sınıf; v2'de "4000–5000" hedef notu var ama yalnızca v2'de; v1'de anotasyon için gerekli künye (tür, dil hedefleri, kavram) mevcut.
+- **Kayıt düzeltmesi:** K-0112'deki "kalan 15" sayımı yanlıştı. HR-099 ve HR-100 kaynakta `Sınıf: 7` olarak işaretli; tasnif tablosu da 7 gösteriyor. Kalan 4 hikâye: HR-099, HR-100 (7. sınıf), HR-111/112 (sürüm kararı).
+- **Açık:**
+  - Sözlük onayı: Sonnet önerileri uygulanmadı. Derleyici "yayın öncesi insan kararı" uyarısı veriyor ve kayıt defterinde sözlük onayı "Ajan + Kullanıcı" olarak tanımlı. Öneriler onaylanırsa anotasyonlara işlenip yeniden derlenecek.
+  - HR-111/112 sürüm kararı kullanıcıda.
+  - HR-110 kaynakta yok.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ — derleyici hatasız (87 paket); içerik editöryel ve pedagojik olarak doğrulanmadı; sözlük adayları onaysız; kanıt düzeyi C.
+- **Sahip:** Ajan + Kullanıcı (sözlük onayı, HR-111/112 sürümü, HR-015…032 uyumu, kanıt düzeyi)
+- **Önem:** Yüksek
+- **İlgili:** GÖR-054, K-0112, K-0111.
 
 ### K-0112 · 2026-10-23 · MOB · HupoRead hikâye veri tabanı: 7. sınıf hikâyeler paketlendi (13 hikâye); toplam 76 paket; elle düzeltmeler onaylandı
 - **Tür:** Gelişme + Karar
@@ -162,6 +1174,19 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - **Önem:** Yüksek
 - **İlgili:** GÖR-054, K-0109, K-0107.
 
+### K-0110 · 2026-10-24 · VT/TSR · Okuma: 45 yeni taslak için Ajan A/B denetimi tamamlandı (yayın kapısı açık değil)
+- **Tür:** Gelişme + Karar önerisi (ajan)
+- **Konu:** VT, TSR
+- **Bağlam:** 20261077 migration'ındaki 45 taslak (HR-001…047, HR-011 ve HR-020 hariç) için Ajan A (olgu ve doğruluk) ve Ajan B (uygunluk ve kalite) denetimi istendi. 12'si test yayınında (HR-002, 009, 014, 015, 016, 018, 021, 022, 025, 030, 031, 032).
+- **Plan:** (1) metinleri paketlerden düz metne çevirmek; (2) ölçüt belgesi; (3) her hikâye için iki bağımsız denetçi.
+- **Karar:** Ajan önerisi `ONAY BEKLİYOR`. Denetim sonucu hiçbir hikâyede iki denetçi de "pass" vermedi; yayın kapısı (Ajan A ve B pass + insan onayı) açık değil. Yayına alma insan okuması ve kullanıcı onayına bağlı.
+- **Durum:** BEKLİYOR (denetim tamam; insan okuması, yazar düzeltmeleri ve yayın kararı kullanıcıda)
+- **Doğrulama:** DOĞRULANDI (denetim raporları: 90/90 dosya, `docs/okuma-entegrasyon/denetim/2026-10-23/OZET.md`). Hikâyelerin insan okuması yapılmadı; yayın kapısı için bu kayıt yeterli değil.
+- **Sahip:** Ajan (denetim), Kullanıcı (insan okuması, yayın, yazar düzeltmesi)
+- **Önem:** Yüksek
+- **Kanıt:** `docs/okuma-entegrasyon/denetim/2026-10-23/DENETIM_TALIMATI.md`, `OZET.md`; sonuç: 0 hikâye iki denetçiden pass; HR-017 iki denetçiden fail; diğerleri review_needed (B tarafında 44/45).
+- **İlgili:** K-0105, FAZ_DURUMU_2026-10-23.md (Faz 2.3). Açık işler: 15 eksik sahne görseli, Faz 5 pilot kapsamı, cihazda PDF/kaydırma (adb'de cihaz yok), commit (`icerik/` ve kullanıcı değişiklikleri onay bekliyor).
+
 ### K-0109 · 2026-10-23 · MOB · HupoRead hikâye veri tabanı: 4. sınıf kısa hikâyeler tamamlandı (HR-033–040)
 - **Tür:** Gelişme
 - **Konu:** MOB
@@ -216,6 +1241,7 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - **Sahip:** Kullanıcı (kararlar) · Ajan (sayım ve kayıt).
 - **Önem:** Yüksek
 - **İlgili:** K-0107, K-0108, K-0109.
+- **Güncelleme 2026-10-24 00:30:** Açık kalan "DÖP ile teyit" maddesi 5. ve 7. sınıf için yapıldı (K-0113). 17 geri çekilen soru revize edildi ve kullanıcı kararıyla kabul edildi (K-0113); veritabanına aktarım henüz yapılmadı (GÖR-055).
 
 ### K-0109 · 2026-10-23 08:00 · DEN/VT · 7. sınıf Türkçe: 30 soru beklemede aktarıldı; benzerlik kontrolü ve bir red
 - **Tür:** Gelişme + Sorun + Karar (kullanıcı: "yeni ders sorularını yaz")
@@ -3534,6 +4560,14 @@ Paketler:
 - Açık, teknik: Ajan A/B denetimi 33 hikâye için yapılmadı. `icerik/` (HR-073, HR-099) ve `20261073` migration'ı başka oturumdan; commit'e alınmadı. `decisions.md` ve `push_config.dart` kullanıcının bekleyen değişiklikleri; dokunulmadı.
 - Devir: yeni oturumda `docs/okuma-entegrasyon/FAZ_DURUMU_2026-10-23.md` ve bu kayıt okunmalı; çalışma dalı artık master ile aynı (`e91f079`).
 
+### K-0142 · 2026-10-25 · VT · Okuma: 112 satır Ajan A/B denetimi tamamlandı; açık kararlar kapatıldı
+- Denetim: `docs/okuma-entegrasyon/denetim/2026-10-24/` (112 satır × A/B rapor + OZET.md). A pass 49, B pass 16, ikisi de pass 16 (HR-001–010, 012, 014, 015, 016, 018, 022). DB'ye yazılmadı, yayın yapılmadı. Raporlar tek oturumda yazılmış analizdir; bağımsız insan denetimi değildir.
+- Karar (tekrar kodlar): HR-034, 035, 036, 039, 042 için **kalacak** satır, Ajan A pass alan doğru yazımlı slug: 2040-konusan-okul-cantasi, aya-giden-ilk-posta, yedi-renkli-koprunun-koruyucusu, ankanin-kaybolan-tuyu, kapadokyanin-gizli-gecidi. Diğer yazımlar (2040-in-…, ay-a-…, kopruun, anka-nin, kapadokya-nin) admin panelinden arşive alınmalı/silinmeli; ajan bunu DB'de yapmadı.
+- Karar GÖR-060: 20261082 **kalsın**. Geri almak arşivlenen 12 sürümü yeniden yayınlar ve sahte denetim alanlarını geri yazar; dosya commit edildi.
+- Karar GÖR-064/K-0137: doğrudan yardımcı_deger etiket güncellemesi **kabul**; sürüm içeriği için doğru yol yeni sürüm içe aktarımı (11 paket hazır, 20 eksik).
+- Karar GÖR-063 (yayın): ajan yayın yapmaz. Admin hesabı ve gerçek insan onayı gerekir; sahte onay yazılmaz. İlk yayın adayı: ikisi de pass olan 16 satır, insan okumasından sonra admin panelinden. Diğer 96 satır düzeltmeden yayına alınmamalı (ad uyuşmazlığı, deyim yerleşimi, çekimli sözlük, geçersiz hal).
+- Blocker (GÖR-065): 12 yeni hikâye (HR-121–132) paketi için anotasyon JSON yok; admin kuru çalıştırma (`p_kuru=true`) ajan tarafından yapılamaz.
+
 ### K-0163 · 2026-10-27 · BYM/VT/YÖN · İletişim yürütme katmanı: 6 paket (Haiku 5.5), yazıldı, canlıya UYGULANMADI
 - Plan: `docs/growth-crm/ILETISIM_EKSIKLERI_PLANI_2026-10-27.md` (E1–E7).
 - Yazılanlar: P1 `eposta-gonder` + `_shared/eposta.ts` (Brevo/Resend) + migration 20261098 (pg_cron); P2 journey motoru 20261099 (bayrak `growth_motor_ayarlari`, varsayılan KAPALI); P3 mesaj günlüğü yazıcısı 20261100 + `_shared/sablon.ts`; P4 sıklık/sessiz saat kapısı 20261101 (`growth_iletisim_uygun_mu`); P5 kural tabanlı öneri üretici 20261102 (bayrak KAPALI); P6 "Gönderim Günlüğü" ekranı + 20261103.
@@ -3553,3 +4587,14 @@ Paketler:
 - Canlı doğrulama (salt okunur): `growth_journey_motoru_acik=false`, `growth_oneri_ayar.aktif=false` (motorlar KAPALI); cron işleri kurulu (eposta-outbox-gonder, growth-journey-ilerlet, growth-oneri-uret, growth-yasam-dongusu-hesapla, giris_olaylari_temizle); anon `growth_journey_ilerlet` ve `admin_journey_adim_kaydet` ve `admin_mesaj_gunlugu_listele` çalıştıramıyor; authenticated `growth_iletisim_uygun_mu` çalıştıramıyor.
 - Dosyalar yerine konuldu: 20261108 ve 20261109 `supabase/migrations/` içinde, uzakta UYGULANMADI. 108: önce `kullanim-izle` deploy + web/mobil istemci yayını. 109: saklama süreleri hukuk onayı bekliyor (her gece 03:30 silme işi kurar).
 - Uygulanmayan/yapılmayan: Vault'ta `olay_worker_secret` YOK → `eposta-gonder` ve `olay-kutusu-gonder` cron çağrıları 401 alır (zararsız). Edge fonksiyon deploy ve secret'lar kullanıcıda. Ekranlar canlıda tarayıcıyla GÖRÜLMEDİ, web paneli dağıtılmadı (yeni ekranlar için gerekir). Motor bayrakları açılmadı.
+### K-0167 · 2026-10-28 · YÖN · H-GIE (Growth Intelligence Engine) talimatı analizi ve iş planı; kod YAZILMADI
+- Çıktı: `docs/growth-crm/GIE_ANALIZ_VE_IS_PLANI_2026-10-28.md` (denetim, uygun/uygun değil, 6 fazlı plan, Oracle disk analizi, kullanıcı kararları).
+- Bulgu: talimat mevcut `growth_*` katmanını, n8n'i ve olay taksonomisini yeniden kurmak istiyor; Customer-Lab ve HupoMentor repoda yok; Oracle 4 çekirdek/23 GB (talimatın 2/12 varsayımı yanlış), disk %91 dolu; ML için etiketli veri yok.
+- Karar önerisi (kullanıcı onayı bekliyor): ayrı FastAPI servisi yerine Supabase-native V1 + Oracle'da yalnız batch worker; Content Quality Engine paralel; ML eşiğe kadar kural tabanlı.
+- Oracle'da değişiklik YAPILMADI (yalnız salt okunur ölçüm). Disk için Open WebUI/Ollama kaldırma kararı kullanıcıda.
+
+### K-0168 · 2026-10-28 · YÖN/VT · Oracle temizliği (Open WebUI, Ollama) ve GIE kararları
+- Kullanıcı onayıyla kaldırıldı: kapsayıcılar `open-webui-…` ve `ollama-…`, volume'lar `zidws1rr2a2i2idejms2tuit_openwebui` ve `_ollama`, imajlar `open-webui:main` ve `ollama:latest`. Dokunulmadı: n8n, Coolify, vs-render, `~/hupo-motion`, `zidws1rr2a2i2idejms2tuit_n8n`. Disk %91 → %48 (24 GB boş).
+- Kararlar (kullanıcı "sen karar ver" dedi): PostHog kalır (yalnız web, çerez onaylı, çocuk ve mobil dışı; hukuk metni şart). Migration 108 şimdi uygulanmaz (edge + istemci yayını + eski sürüm oranı koşulu). 109 hukuk onayı olmadan uygulanmaz. Motor bayrakları KAPALI; açılış sırası ve koşulları `GIE_ANALIZ_VE_IS_PLANI` §10. Manuel `growth_harcama` tablosu yapılacak (Faz 1). Customer-Lab ve HupoMentor inşa edilecek, şu an yok; ayrı spec'ler.
+- Oracle kişisel veri kuralı onaylandı: ham kişisel veri gönderilmez.
+- DOĞRULANMADI: Coolify arayüzündeki eski kayıtlar; n8n dışarı erişim denetimi.

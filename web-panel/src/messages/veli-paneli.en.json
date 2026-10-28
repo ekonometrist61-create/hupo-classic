@@ -36,6 +36,42 @@
       "title": "No student linked yet",
       "text": "Once you link a student account to your parent account, study statistics will appear here."
     },
+    "sonrakiAdim": {
+      "title": "Next step",
+      "desc": "A few small steps are left to start using Hupo with your child. You can complete each one whenever you like.",
+      "loading": "Preparing your next step...",
+      "error": "We couldn't load your next step right now.",
+      "retry": "Try again",
+      "empty": "There are no steps to show right now.",
+      "ilerleme": "{tamam} of {toplam} steps done",
+      "durum": {
+        "tamam": "Done",
+        "siradaki": "Next",
+        "bekliyor": "Upcoming"
+      },
+      "adim": {
+        "cocuk_ekle": {
+          "baslik": "Add your child",
+          "aciklama": "Create a pairing code. The code is valid for 24 hours.",
+          "cta": "Create code"
+        },
+        "eslestir": {
+          "baslik": "Link your child",
+          "aciklama": "Your child enters the code in the Hupolingo app under Settings → Connect to parent.",
+          "cta": "Go to the code section"
+        },
+        "ilk_ders": {
+          "baslik": "Start the first lesson together",
+          "aciklama": "Progress will appear on this page once your child answers the first question.",
+          "cta": "Open the student app"
+        },
+        "deneme_veya_plan": {
+          "baslik": "Choose a plan",
+          "aciklama": "Look at the plans and pick the one that suits your child.",
+          "cta": "View plans"
+        }
+      }
+    },
     "cocukEkle": {
       "title": "Add your child",
       "desc": "Create a code and have your child enter it in the Hupolingo app under Settings → Connect to parent. The code is valid for 24 hours and can be used once.",

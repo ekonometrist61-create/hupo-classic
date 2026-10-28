@@ -26,6 +26,7 @@
         "potansiyelAdaylar": "Prospects",
         "classes": "Classes",
         "questions": "Question bank",
+        "kazanimKapsami": "Outcome Coverage",
         "mockExams": "Mock exams",
         "kelimeEvreni": "Word Universe",
         "notifications": "Notifications",
@@ -54,8 +55,8 @@
         "ekipAkisi": "Team Feed",
         "destekMasasi": "Support Desk",
         "mesajSablonlari": "Message templates",
-        "siteIcerik": "Site content",
         "mesajGunlugu": "Message log",
+        "siteIcerik": "Site content",
         "settings": "App settings"
       },
       "pageDesc": {
@@ -63,6 +64,7 @@
         "leads": "Interest and follow-up status of parents who have not joined yet.",
         "classes": "Manage classes and teacher assignments.",
         "questions": "Controlled content, approval and bulk upload for the question bank.",
+        "kazanimKapsami": "See approved question counts per curriculum outcome, in weekly order.",
         "mockExams": "Define mock exams, assign questions and track results.",
         "kelimeEvreni": "Prepare word game questions, review and publish them, and approve word relations.",
         "notifications": "Send push campaigns to segments or quick notices to parents. Student accounts receive no marketing.",
@@ -80,9 +82,9 @@
         "aiOneriler": "AI recommendations — next best action",
         "journey-otomasyonlari": "Journey automations — customer journeys",
         "mesajSablonlari": "Message templates — channel-based content",
+        "mesajGunlugu": "Log of sent and skipped messages. Email and phone are masked.",
         "siteIcerik": "Site content — landing, sign-in, sign-up and parent panel texts"
       },
-        "mesajGunlugu": "Log of sent and skipped messages. Email and phone are masked.",
       "command": {
         "open": "Search everywhere...",
         "title": "Quick access",
@@ -181,7 +183,11 @@
       "turler": {
         "es_anlamli": "Bridges of Meaning · synonyms",
         "zit_anlamli": "Valley of Opposites · antonyms",
-        "es_sesli": "Mirror Forest · homonyms"
+        "es_sesli": "Mirror Forest · homonyms",
+        "deyim": "Idiom Land · idioms",
+        "atasozu": "Proverb Spring · proverbs",
+        "sozcuk_turu": "Type Garden · word class",
+        "baglamda_anlam": "Context Trail · meaning from context"
       },
       "cols": {
         "kelime": "Word",
@@ -228,6 +234,46 @@
         "kaydet": "Save draft",
         "kaydediliyor": "Saving…",
         "vazgec": "Cancel"
+      },
+      "toplu": {
+        "listeTumu": "Select all in list ({sayi})",
+        "temizle": "Clear selection",
+        "sayfaTumu": "Select all on this page",
+        "satirSec": "Select {kelime}",
+        "seciliSayi": "{sayi} questions selected",
+        "yayinaAl": "Publish",
+        "yayindanKaldir": "Unpublish",
+        "limit": "At most 200 questions can be published at once. Narrow the selection.",
+        "yayinKuruOzet": "{yayinlanabilir} questions can be published, {atlanir} will be skipped. Publish them? They become visible to students right away.",
+        "yayinlanabilirYok": "None of the selected questions can be published. {atlanir} will be skipped.",
+        "yayinSonuc": "{yayinlandi} questions published, {atlandi} skipped.",
+        "kaldirYok": "None of the selected questions are published.",
+        "kaldirOnay": "{sayi} published questions will be archived and hidden from students. Continue?",
+        "kaldirSonuc": "{kaldirildi} questions unpublished, {atlandi} skipped."
+      },
+      "kuyruk": {
+        "baslik": "Review queue",
+        "aciklama": "Publishing needs a pass from two different model families. The publish button is your human check: read and approve the questions.",
+        "bos": "No questions under review.",
+        "sinif": "Grade",
+        "tur": "Game",
+        "tumu": "All",
+        "toplam": "{sayi} questions under review",
+        "kapiAcik": "Review passed",
+        "kapiKapali": "Review missing",
+        "dogru": "correct",
+        "cevapAnahtari": "Correct option",
+        "ipucu": "Hint",
+        "seciliSayi": "{sayi} selected",
+        "gecenleriSec": "Select those that passed review",
+        "temizle": "Clear selection",
+        "kontrolEt": "Check selected",
+        "yayinla": "Publish selected",
+        "kontrolSonuc": "Check: {yayinlanir} questions can be published, {atlanir} will be skipped.",
+        "yayinOnay": "{sayi} questions will become visible to students. Have you read them? Publish?",
+        "yayinSonuc": "{yayinlanan} questions published, {atlanan} skipped.",
+        "taslagaAl": "Back to draft",
+        "denetimYok": "No review recorded"
       },
       "sozluk": {
         "baslik": "Word inventory and relations",
@@ -280,6 +326,9 @@
         "ANLAM_BULUNAMADI": "Meaning not found. Refresh the page.",
         "ILISKI_BULUNAMADI": "Relation not found. Refresh the page.",
         "ADMIN_ONLY": "This action requires administrator access.",
+        "DENETIM_EKSIK": "Publishing needs a \"pass\" from two different model families (re-run the review if the question was edited).",
+        "DENETIM_HEDEFI_INCELEMEDE_DEGIL": "A review can only be recorded for a question under review.",
+        "BAD_LISTE": "Select between 1 and 200 questions.",
         "genel": "The action could not be completed. Check the details and try again."
       }
     },
@@ -596,40 +645,6 @@
       "activate": "Activate",
       "pause": "Pause",
       "form": { "title": "New Journey", "name": "Name", "trigger": "Trigger", "status": "Status", "errName": "Name is required (max 120 characters).", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
-      "pager": { "prev": "Previous", "next": "Next" }
-    },
-    "mesajSablonlari": {
-      "title": "Message Templates",
-      "loading": "Loading...",
-      "empty": "No templates found.",
-      "retry": "Try again",
-      "newTemplate": "New Template",
-      "edit": "Edit",
-      "allChannels": "All channels",
-      "allStatus": "All statuses",
-      "filters": { "channel": "Channel", "status": "Status" },
-      "channels": { "email": "Email", "sms": "SMS", "push": "Push", "in_app": "In-app", "whatsapp": "WhatsApp" },
-      "statuses": { "draft": "Draft", "active": "Active", "archived": "Archived" },
-      "cols": { "name": "Name", "channel": "Channel", "subject": "Subject", "status": "Status", "created": "Created" },
-      "form": { "titleNew": "New Template", "titleEdit": "Edit template", "name": "Name", "channel": "Channel", "subject": "Subject", "body": "Content", "bodyHint": "Use {{name}} to insert a variable.", "status": "Status", "errName": "Template name is required (max 120 characters).", "errBody": "Content is required.", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
-      "pager": { "prev": "Previous", "next": "Next" }
-    },
-    "destekMasasi": {
-      "title": "Support Desk",
-      "loading": "Loading...",
-      "empty": "No support tickets found.",
-      "retry": "Try again",
-      "allStatus": "All statuses",
-      "allPriority": "All priorities",
-      "allCategories": "All categories",
-      "newTicket": "New Ticket",
-      "statuses": { "new": "New", "open": "Open", "waiting": "Waiting", "resolved": "Resolved" },
-      "priorities": { "low": "Low", "normal": "Normal", "high": "High", "critical": "Critical" },
-      "categories": { "billing": "Billing", "technical": "Technical", "account": "Account", "content": "Content", "subscription": "Subscription", "other": "Other" },
-      "cols": { "ticketNo": "Ticket No", "subject": "Subject", "category": "Category", "status": "Status", "priority": "Priority", "assignee": "Assignee", "created": "Created", "customer": "Customer Link" },
-      "customerLink": "Customer 360°",
-      "form": { "title": "New Support Ticket", "subject": "Subject", "category": "Category", "status": "Status", "priority": "Priority", "householdId": "Customer ID", "errSubject": "Subject must be 1-200 characters.", "errHousehold": "Enter a valid customer ID.", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
-      "statusModal": { "title": "Change Status", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
       "pager": { "prev": "Previous", "next": "Next" },
       "stepsButton": "Steps",
       "steps": {
@@ -654,6 +669,58 @@
         "close": "Close",
         "stepTypes": { "trigger": "Trigger", "delay": "Wait", "email": "Email", "push": "Push", "in_app": "In-app", "sms": "SMS", "whatsapp": "WhatsApp" }
       }
+    },
+    "mesajSablonlari": {
+      "title": "Message Templates",
+      "loading": "Loading...",
+      "empty": "No templates found.",
+      "retry": "Try again",
+      "newTemplate": "New Template",
+      "edit": "Edit",
+      "allChannels": "All channels",
+      "allStatus": "All statuses",
+      "filters": { "channel": "Channel", "status": "Status" },
+      "channels": { "email": "Email", "sms": "SMS", "push": "Push", "in_app": "In-app", "whatsapp": "WhatsApp" },
+      "statuses": { "draft": "Draft", "active": "Active", "archived": "Archived" },
+      "cols": { "name": "Name", "channel": "Channel", "subject": "Subject", "status": "Status", "created": "Created" },
+      "form": { "titleNew": "New Template", "titleEdit": "Edit template", "name": "Name", "channel": "Channel", "subject": "Subject", "body": "Content", "bodyHint": "Use {{name}} to insert a variable.", "status": "Status", "errName": "Template name is required (max 120 characters).", "errBody": "Content is required.", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
+      "pager": { "prev": "Previous", "next": "Next" }
+    },
+    "mesajGunlugu": {
+      "title": "Message Log",
+      "readOnlyNote": "This screen is read-only. Email and phone are masked; child information is not shown.",
+      "loading": "Loading...",
+      "loadError": "Could not load message records.",
+      "retry": "Try again",
+      "empty": "No message records yet.",
+      "emptyFiltered": "No records match the selected filters.",
+      "allChannels": "All channels",
+      "allStatus": "All statuses",
+      "filters": { "channel": "Channel", "status": "Status" },
+      "channels": { "email": "Email", "sms": "SMS", "push": "Push", "in_app": "In-app", "whatsapp": "WhatsApp" },
+      "statuses": { "kuyrukta": "Queued", "gonderildi": "Sent", "teslim_edildi": "Delivered", "acildi": "Opened", "tiklandi": "Clicked", "donustu": "Converted", "basarisiz": "Failed", "izin_yok": "No consent", "kanal_kapali": "Channel off" },
+      "source": { "campaign": "Campaign", "journey": "Journey" },
+      "consent": { "yes": "Consent given", "no": "No consent", "unknown": "Unknown" },
+      "cols": { "time": "Time", "channel": "Channel", "status": "Status", "source": "Campaign / Journey", "recipient": "Household (masked)", "consent": "Consent", "error": "Error" },
+      "pager": { "prev": "Previous", "next": "Next" }
+    },
+    "destekMasasi": {
+      "title": "Support Desk",
+      "loading": "Loading...",
+      "empty": "No support tickets found.",
+      "retry": "Try again",
+      "allStatus": "All statuses",
+      "allPriority": "All priorities",
+      "allCategories": "All categories",
+      "newTicket": "New Ticket",
+      "statuses": { "new": "New", "open": "Open", "waiting": "Waiting", "resolved": "Resolved" },
+      "priorities": { "low": "Low", "normal": "Normal", "high": "High", "critical": "Critical" },
+      "categories": { "billing": "Billing", "technical": "Technical", "account": "Account", "content": "Content", "subscription": "Subscription", "other": "Other" },
+      "cols": { "ticketNo": "Ticket No", "subject": "Subject", "category": "Category", "status": "Status", "priority": "Priority", "assignee": "Assignee", "created": "Created", "customer": "Customer Link" },
+      "customerLink": "Customer 360°",
+      "form": { "title": "New Support Ticket", "subject": "Subject", "category": "Category", "status": "Status", "priority": "Priority", "householdId": "Customer ID", "errSubject": "Subject must be 1-200 characters.", "errHousehold": "Enter a valid customer ID.", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
+      "statusModal": { "title": "Change Status", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
+      "pager": { "prev": "Previous", "next": "Next" }
     },
     "musteri360": {
       "title": "Customer 360°",
@@ -686,24 +753,6 @@
       "channels": {
         "email": "Email",
         "sms": "SMS",
-    "mesajGunlugu": {
-      "title": "Message Log",
-      "readOnlyNote": "This screen is read-only. Email and phone are masked; child information is not shown.",
-      "loading": "Loading...",
-      "loadError": "Could not load message records.",
-      "retry": "Try again",
-      "empty": "No message records yet.",
-      "emptyFiltered": "No records match the selected filters.",
-      "allChannels": "All channels",
-      "allStatus": "All statuses",
-      "filters": { "channel": "Channel", "status": "Status" },
-      "channels": { "email": "Email", "sms": "SMS", "push": "Push", "in_app": "In-app", "whatsapp": "WhatsApp" },
-      "statuses": { "kuyrukta": "Queued", "gonderildi": "Sent", "teslim_edildi": "Delivered", "acildi": "Opened", "tiklandi": "Clicked", "donustu": "Converted", "basarisiz": "Failed", "izin_yok": "No consent", "kanal_kapali": "Channel off" },
-      "source": { "campaign": "Campaign", "journey": "Journey" },
-      "consent": { "yes": "Consent given", "no": "No consent", "unknown": "Unknown" },
-      "cols": { "time": "Time", "channel": "Channel", "status": "Status", "source": "Campaign / Journey", "recipient": "Household (masked)", "consent": "Consent", "error": "Error" },
-      "pager": { "prev": "Previous", "next": "Next" }
-    },
         "phone": "Phone",
         "push": "Push"
       },
@@ -739,7 +788,7 @@
         "phone": "Phone",
         "lifecycle": "Lifecycle",
         "plan": "Plan",
-        "mrr": "MRR",
+        "mrr": "Total payments",
         "health": "Health Score",
         "source": "Source",
         "consent": "Consent",
@@ -765,7 +814,8 @@
         "next": "Next"
       },
       "health": {
-        "label": "Health score (0-100)"
+        "label": "Health score (0-100)",
+        "noData": "No data"
       },
       "tabs": {
         "genel": "Overview",
@@ -836,6 +886,90 @@
         "tickets": "No support tickets.",
         "feed": "No team feed entries.",
         "events": "No event records."
+      },
+      "aksiyon": {
+        "yukleniyor": "Loading...",
+        "kaydediliyor": "Saving...",
+        "vazgec": "Cancel",
+        "hata": {
+          "genel": "The action could not be completed.",
+          "eksik": "This action is currently unavailable. Please notify the system administrator.",
+          "abonelik": "This action cannot be performed on subscribed households. End the subscription first.",
+          "demo": "Records cannot be saved in demo mode."
+        },
+        "not": {
+          "baslik": "Add note",
+          "tur": "Type",
+          "icerik": "Content",
+          "ekle": "Save note",
+          "hataIcerik": "Content must be 1-4000 characters.",
+          "basarili": "Note added.",
+          "tipler": { "note": "Note", "call": "Call", "meeting": "Meeting", "support": "Support" }
+        },
+        "gorev": {
+          "baslik": "Create task",
+          "gorevBaslik": "Task title",
+          "tur": "Type",
+          "oncelik": "Priority",
+          "bitis": "Due date",
+          "ekle": "Create task",
+          "hataBaslik": "Title is required (max 200 characters).",
+          "hataBitis": "Due date is required.",
+          "basarili": "Task created.",
+          "listeBaslik": "Tasks for this customer",
+          "bos": "No tasks for this customer."
+        },
+        "destek": {
+          "baslik": "Open support ticket",
+          "konu": "Subject",
+          "kategori": "Category",
+          "oncelik": "Priority",
+          "ekle": "Open ticket",
+          "hataKonu": "Subject must be 1-200 characters.",
+          "basarili": "Support ticket opened."
+        },
+        "sahip": {
+          "baslik": "Owner",
+          "mevcut": "Current owner",
+          "yok": "Unassigned",
+          "sec": "New owner",
+          "secim": "Select an admin",
+          "kaydet": "Assign owner",
+          "hataSec": "Select an admin.",
+          "basarili": "Owner updated.",
+          "bos": "No admins found."
+        },
+        "birlestir": {
+          "baslik": "Merge household",
+          "aciklama": "Merge this household with another customer record.",
+          "ara": "Find target household",
+          "araYer": "Name, email, phone or customer no",
+          "sonuc": "No matching household.",
+          "enAz": "Type at least 2 characters to search.",
+          "sec": "Select",
+          "secili": "Selected target",
+          "birlestirBtn": "Merge",
+          "onayBaslik": "Merge households",
+          "uyari": "This action cannot be undone. This household will be merged into the selected target household.",
+          "onayBtn": "Yes, merge",
+          "basarili": "Households merged.",
+          "hedefGit": "Go to target customer record"
+        },
+        "kvkk": {
+          "baslik": "Privacy (KVKK) actions",
+          "aciklama": "Visible to administrators only. These actions affect personal data.",
+          "aktar": "Export data",
+          "aktarAciklama": "Downloads the household's personal data as a JSON file.",
+          "aktarBasarili": "Data downloaded as a file.",
+          "anonim": "Anonymize",
+          "anonimAciklama": "Anonymizes the household's personal data. This cannot be undone.",
+          "onayBaslik": "Anonymize this household?",
+          "uyari": "This cannot be undone. Personal data will be anonymized and the record cannot be restored.",
+          "neden": "Reason (required)",
+          "hataNeden": "Reason must be 3-500 characters.",
+          "onayBtn": "Yes, anonymize",
+          "basarili": "Record anonymized."
+        }
       }
     },
     "crmGorevler": {
@@ -969,6 +1103,62 @@
     },
     "growthAnalitik": {
       "title": "Growth Analytics",
+      "error": "Data could not be loaded.",
+      "lowData": "There is not enough data to show for this period.",
+      "suppressed": "Low data (under 5, hidden)",
+      "hiddenNote": "Counts under 5 are hidden and shown as “—”.",
+      "csvButton": "Export CSV",
+      "funnel": {
+        "title": "Signup funnel",
+        "desc": "Households that signed up in the last {count} days. Each step is counted by its own criterion.",
+        "colStep": "Step",
+        "colCount": "Count",
+        "colPrevious": "Vs previous step",
+        "colSignup": "Vs signups",
+        "churn": "Churned",
+        "steps": {
+          "kayit": "Signed up",
+          "cocuk_bagli": "Linked a child",
+          "ilk_soru": "Solved first question",
+          "deneme_basladi": "Started trial",
+          "ucretli": "Paid"
+        }
+      },
+      "utm": {
+        "title": "Channel and campaign attribution",
+        "desc": "Visitors, sign-ups and paid counts by first-touch UTM over the last {count} days.",
+        "other": "Other (small groups)",
+        "cols": {
+          "channel": "Channel",
+          "medium": "Medium",
+          "campaign": "Campaign",
+          "visitors": "Visitors",
+          "signups": "Sign-ups",
+          "signupRate": "Sign-up %",
+          "paid": "Paid",
+          "paidRate": "Paid %"
+        }
+      },
+      "activity": {
+        "title": "Activity",
+        "desc": "Unique students who answered. Days are counted in Turkey time.",
+        "dau": "Daily active (DAU)",
+        "wau": "Weekly active (WAU)",
+        "mau": "Monthly active (MAU)",
+        "stickiness": "DAU / MAU: {pct}",
+        "stickinessLabel": "DAU/MAU stickiness (%)",
+        "series": "Daily active students",
+        "seriesDesc": "Each day of the selected period",
+        "seriesAria": "Daily active students chart for the last {count} days"
+      },
+      "csv": {
+        "funnel": "Signup funnel",
+        "utm": "Channel and campaign attribution",
+        "activity": "Activity",
+        "metric": "Metric",
+        "value": "Value",
+        "note": "Empty cell: count or rate under 5 (hidden). The file contains no personal data."
+      },
       "loading": "Loading...",
       "empty": "No data found.",
       "retry": "Try again",

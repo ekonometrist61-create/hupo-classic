@@ -1,9 +1,10 @@
 "use client";
 
+import { authDilCevir, authHataAnahtari, authMetni } from "@/lib/auth/hata";
 import { Link, useRouter } from "@/i18n/navigation";
 import { EyeCloseIcon } from "@/icons";
 import { createClient } from "@/utils/supabase/client";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
 // Veli hesabı oluşturma. Rol "veli" olarak gönderilir; veritabanındaki
@@ -20,6 +21,7 @@ const ILETISIM_METIN_SURUMU = "hupolingo-ticari-ileti-2026-10-v2";
 
 export default function SignUpForm() {
   const t = useTranslations("signup");
+  const dil = authDilCevir(useLocale());
   const router = useRouter();
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
@@ -82,18 +84,20 @@ export default function SignUpForm() {
     });
     setLoading(false);
 
+    // Hesap zaten varsa aynı nötr ekran gösterilir: kayıt çakışması dışarıya sızmaz.
     if (authError) {
-      setError(
-        authError.message.toLowerCase().includes("already registered")
-          ? t("errorExists")
-          : t("errorGeneric")
-      );
+      if (authHataAnahtari(authError) === "kayitNotr") {
+        setSent(true);
+        return;
+      }
+      const anahtar = authHataAnahtari(authError);
+      setError(anahtar === "genel" ? t("errorGeneric") : authMetni(anahtar, dil));
       return;
     }
 
-    // Supabase, zaten kayıtlı bir e-postada boş identities döndürür.
+    // Zaten kayıtlı e-postada Supabase boş identities döndürür; yeni hesapla aynı ekrana gidilir.
     if (data.user && data.user.identities?.length === 0) {
-      setError(t("errorExists"));
+      setSent(true);
       return;
     }
 
@@ -109,11 +113,11 @@ export default function SignUpForm() {
     return (
       <div>
         <h1 className="text-3xl font-extrabold tracking-tight text-navy">
-          {t("successTitle")}
+          {authMetni("kayitBaslik", dil)}
         </h1>
         <div className="mt-6 rounded-2xl bg-white p-6 shadow-sm ring-1 ring-navy/10 sm:p-8">
           <p role="status" className="text-base text-navy">
-            {t("successBody")}
+            {authMetni("kayitNotr", dil)}
           </p>
           <Link
             href="/veli-paneli/giris"

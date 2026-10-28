@@ -35,6 +35,12 @@ class _LoginScreenState extends State<LoginScreen> {
         email: _emailController.text.trim(),
         password: _passwordController.text,
       );
+      // Giriş kaydı (W7) yardımcıdır: hata yutulur, girişi bozmaz.
+      try {
+        await Supabase.instance.client.rpc('giris_olayi_kaydet', params: {'p_kanal': 'mobil'});
+      } catch (e) {
+        debugPrint('giris_olayi_kaydet basarisiz: $e');
+      }
       // Yönlendirmeyi AuthGate oturum değişimini dinleyerek yapar.
     } catch (e) {
       if (mounted) showError(context, authErrorMessage(e));

@@ -299,7 +299,7 @@ const J6 = id(206);
 await db.exec(`insert into public.growth_journeys (id, name, status) values ('${J6}', 'Adım editörü', 'draft')`);
 const gecerli = JSON.stringify([
   { step_type: 'trigger', label: 'Başlangıç' },
-  { step_type: 'email', label: 'Hoş geldin' },
+  { step_type: 'email', label: 'Hoş geldin', config: { sablon: 'test_sablon' } },
   { step_type: 'delay', label: '2 gün', config: { saat: 48 } },
   { step_type: 'push', label: 'Hatırlatma' },
 ]);
@@ -315,7 +315,7 @@ ok('geçerli adımlar sırayla yazıldı (1..4) ve sayı döndü',
 ok('denetim izi yazıldı', (await sorgu(`select count(*)::int n from public.test_admin_log where aksiyon = 'journey_adimlari_kaydedildi'`))[0].n === 1);
 
 await db.exec(`reset role; set role authenticated; select set_config('test.admin', 'evet', false);`);
-const yeniden = JSON.stringify([{ step_type: 'email', label: 'Tek adım' }]);
+const yeniden = JSON.stringify([{ step_type: 'email', label: 'Tek adım', config: { sablon: 'test_sablon' } }]);
 await sorgu(`select public.admin_journey_adim_kaydet($1, $2::jsonb)`, [J6, yeniden]);
 await postgres();
 ok('yeniden kaydetme adımları DEĞİŞTİRİR (eskiler silinir)',
@@ -327,6 +327,7 @@ const kotu = (a) => () => sorgu(`select public.admin_journey_adim_kaydet($1, $2:
 await hataBekle('condition adımı reddedilir (motor işlemez)', kotu([{ step_type: 'condition', label: 'x' }]), 'desteklenmiyor');
 await hataBekle('webhook adımı reddedilir', kotu([{ step_type: 'webhook', label: 'x' }]), 'desteklenmiyor');
 await hataBekle('boş etiket reddedilir', kotu([{ step_type: 'email', label: '  ' }]), 'etiketi');
+await hataBekle('şablonsuz e-posta adımı reddedilir (motor işleyemez)', kotu([{ step_type: 'email', label: 'Sessiz' }]), 'şablon anahtarı zorunlu');
 await hataBekle('bekleme saati yoksa reddedilir', kotu([{ step_type: 'delay', label: 'b' }]), 'saat sayı');
 await hataBekle('bekleme saati 8760 üstü reddedilir', kotu([{ step_type: 'delay', label: 'b', config: { saat: 9000 } }]), '0-8760');
 await hataBekle('21 adım reddedilir', kotu(Array.from({ length: 21 }, (_, i) => ({ step_type: 'email', label: `a${i}` }))), 'En fazla 20');

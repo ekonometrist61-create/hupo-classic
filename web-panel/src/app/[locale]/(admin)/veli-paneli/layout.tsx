@@ -1,42 +1,40 @@
-"use client";
+import { redirect } from "@/i18n/navigation";
+import VeliPaneliKabuk from "@/components/veli-paneli/VeliPaneliKabuk";
+import { DEMO_MODE } from "@/lib/demo-mode";
+import { createClient } from "@/utils/supabase/server";
 
-import { useSidebar } from "@/context/SidebarContext";
-import VeliSidebar from "@/layout/VeliSidebar";
-import VeliHeader from "@/layout/VeliHeader";
-import Backdrop from "@/layout/Backdrop";
-import AnketIstemi from "@/components/anket/AnketIstemi";
-import DuyuruBandi from "@/components/duyuru/DuyuruBandi";
-import React from "react";
-
-export default function VeliPaneliLayout({
+// Veli paneli sunucu rol kapısı (W10). Veli olmayan oturum rolüne uygun ana sayfaya gider:
+// yönetici /yonetim, öğretmen /yonetim/siniflar, öğrenci /ogrenci.
+// Oturum yoksa mevcut davranış korunur (sayfa "yalnızca veli" mesajını gösterir).
+// Asıl yetki veritabanındadır (RPC'lerde auth.uid() ve rol kontrolü); bu kapı yalnızca yanlış kişiyi yönlendirir.
+export default async function VeliPaneliLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
-  const { isExpanded, isHovered, isMobileOpen } = useSidebar();
+  const { locale } = await params;
 
-  // Sidebar xl (1280 px) altında gizli; içerik boşluğu da aynı kırılımda verilir (tablet daralmasını önler).
-  const mainMargin = isMobileOpen
-    ? "ml-0"
-    : isExpanded || isHovered
-    ? "xl:ml-[290px]"
-    : "xl:ml-[90px]";
+  // Yerel geliştirmede oturumsuz görüntüleme için (üretimde bayrak false).
+  if (!DEMO_MODE) {
+    const supabase = await createClient();
+    const {
+      data: { user },
+    } = await supabase.auth.getUser();
 
-  return (
-    <div className="min-h-screen bg-[#f4f6f6] xl:flex dark:bg-gray-950">
-      <VeliSidebar />
-      <Backdrop />
-      <div className="min-w-0 flex-1">
-        <VeliHeader />
-        <main
-          id="veli-icerik"
-          className={`transition-all duration-300 ease-in-out ${mainMargin} mx-auto max-w-400 p-4 pb-10 md:p-6 xl:px-8 xl:pt-8`}
-        >
-          <DuyuruBandi yuzey="veli_paneli" />
-          <AnketIstemi yuzey="veli_paneli" />
-          {children}
-        </main>
-      </div>
-    </div>
-  );
+    if (user) {
+      const { data: profile } = await supabase
+        .from("profiles")
+        .select("role")
+        .eq("id", user.id)
+        .maybeSingle();
+
+      if (profile?.role === "admin") redirect({ href: "/yonetim", locale });
+      if (profile?.role === "ogretmen") redirect({ href: "/yonetim/siniflar", locale });
+      if (profile?.role === "ogrenci") redirect({ href: "/ogrenci", locale });
+    }
+  }
+
+  return <VeliPaneliKabuk>{children}</VeliPaneliKabuk>;
 }

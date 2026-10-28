@@ -25,14 +25,16 @@ class KullanimRepository {
 
   final SupabaseClient? _istemci;
 
+  /// Edge Function kullanim-izle üzerinden gönderir (IP hız sınırı sunucuda; RPC'ye doğrudan erişim kapalı).
   Future<bool> gonder(List<Map<String, dynamic>> olaylar) async {
     try {
       final c = _istemci ?? Supabase.instance.client;
-      await c.rpc('kullanim_olaylari_gonder', params: {'p_olaylar': olaylar});
+      await c.functions.invoke('kullanim-izle', body: {'olaylar': olaylar});
       return true;
-    } on PostgrestException {
-      // Sunucu reddetti (doğrulama/hız sınırı): aynı grubu tekrar denemenin anlamı yok.
-      return true;
+    } on FunctionException catch (e) {
+      // 4xx: sunucu reddetti (doğrulama/hız sınırı); aynı grubu tekrar denemenin anlamı yok.
+      // 5xx ya da bağlantı yok (status 0): kuyrukta kalır, sonra yeniden denenir.
+      return e.status >= 400 && e.status < 500;
     } catch (_) {
       return false;
     }

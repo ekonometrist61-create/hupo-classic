@@ -134,3 +134,27 @@ Sormadan silinebilecek gerçek çöp neredeyse yok (dangling imaj 0, apt/journal
 - n8n arayüzünün dışarıya açıklığı ve kimlik doğrulaması bakılmadı.
 - Hangi migrasyon/ekranın canlıda tarayıcıyla görüldüğü: K-0163–K-0165'e göre görülmedi.
 - Faz süreleri tahmindir; Faz 4 eşikleri sezgiseldir, gerçek olay sayıları sorgulanmadı.
+
+## 10. Karar güncellemesi (2026-10-28, kullanıcı yanıtı)
+
+Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yerine geçer.
+
+### Uygulananlar
+- **Oracle temizliği yapıldı:** Open WebUI ve Ollama kapsayıcıları, `zidws1rr2a2i2idejms2tuit_openwebui` (1,1 GB) ve `_ollama` (6,6 GB) volume'ları, `open-webui:main` ve `ollama:latest` imajları kaldırıldı. n8n, Coolify, vs-render ve `~/hupo-motion` dokunulmadı. Disk %91 → %48, 24 GB boş. Coolify arayüzünde bu iki servise ait eski kayıt kalmış olabilir; sunucuda çalışmıyorlar. Yerel LLM seçeneği düştü; Faz 5 Gemini API ile ilerler.
+- **Kişisel veri Oracle'a gönderilmez:** onaylandı (§4.1 ve §8.2).
+
+### Kararlar
+1. **PostHog kalır.** EU bölgesi; yalnız web (landing ve veli paneli), yalnız çerez onayından sonra. Autocapture kapalı, `identified_only`, oturum kaydı kapalı. Çocuk verisi ve mobil uygulama PostHog'a gönderilmez; mobil ölçüm `kullanim_olaylari` üzerinden gider. Açık şart: çerez ve gizlilik metninin hukuk onayı, yayına geçmeden önce. Bu karar günlükteki eski çelişkili notları geçersiz kılar.
+2. **Migration 108 (anon kapatma) şimdi uygulanmaz.** Koşullar: (a) `kullanim-izle` edge fonksiyonu deploy edilmiş, (b) web ve mobil yeni sürümleri yayında, (c) eski sürüm kullanım oranı en az 2 hafta izlenmiş ve düşük. Gerekçe: anon yazım kapanınca eski uygulama sürümleri olay yazamaz; veri kaybı olur (K-0164 uyarısı).
+3. **Migration 109 (saklama) hukuk onayı olmadan uygulanmaz.** Saklama süreleri hukukçudan gelir; bu belge süre önermez.
+4. **Motor bayrakları (journey, öneri) şimdi KAPALI kalır.** Açılış sırası, tarih değil koşul bazlı:
+   - a. Secret'lar (`OLAY_WORKER_SECRET`, `BREVO_API_KEY` veya `RESEND_API_KEY`, `EPOSTA_GONDEREN_ADRES`) ve `eposta-gonder` deploy: kullanıcı.
+   - b. Dry-run: motor açık, e-posta gönderimi kapalı, 7 gün `growth_mesaj_gunlugu` incelenir (`izin_yok` ve `kanal_kapali` oranları beklenenden farklı mı).
+   - c. İlk gerçek journey: yalnız "hoş geldin", yalnız e-posta, yalnız izinli kullanıcılar; 1 hafta izlenir.
+   - d. Sıra: aktivasyon hatırlatması. Öneri üreticisi, admin onay kuyruğu ekranı olmadan açılmaz.
+   - SMS ve WhatsApp kapalı kalır (GÖR-018/019).
+5. **Manuel reklam harcaması tablosu: evet.** `growth_harcama` (tarih, kanal, tutar, para birimi, not, giren yönetici). Yalnız admin okur ve yazar; reklam hesabı bağlanmaz (OAuth ve veri sorumluluğu getirmez). Kural: harcama girilmemiş dönemde CAC "henüz yok" gösterilir. Uygulama Faz 1'de.
+6. **HupoMentor ve Customer-Lab henüz inşa edilmedi; yapılacak.** H-GIE'nin parçası değil, ayrı ürün işleri.
+   - **Customer-Lab:** Faz 6'dan sonra, kendi spec dosyasıyla. Sentetik veri yalnız `sentetik_*` şemasında; gerçek metriklere yazılmaz; çıktı yalnız hipotez, pazarlamada "kanıt" diye kullanılmaz.
+   - **HupoMentor:** çocuğa dönük yapay zekâ özel ders öğretmeni. Growth'tan önce pedagoji, içerik güvenliği (prompt injection dahil), KVKK ve veli onayı gerekir. Growth'a yalnız toplulaştırılmış kullanım metriği gelir; sohbet içeriği, yanlış cevap ve zayıf konu hiçbir zaman growth'a girmez.
+   - İkisi için de önce spec yazılır (`docs/`), sonra kod. Spec olmadan growth tarafında entegrasyon işi açılmaz.

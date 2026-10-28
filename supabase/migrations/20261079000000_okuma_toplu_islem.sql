@@ -1,4 +1,4 @@
-﻿-- =====================================================================
+-- =====================================================================
 -- Okuma Dünyası — yönetimde toplu işlem (Faz 3 yaşam döngüsü)
 --   okuma_toplu_islem(p_hikaye_idler, p_islem, p_kuru)
 --     p_islem = 'arsiv' : hikâyenin arşivde olmayan tüm sürümlerini arşive alır.

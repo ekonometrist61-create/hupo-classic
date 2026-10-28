@@ -1,0 +1,13 @@
+{
+  "name": "growth-kvkk-sql-testleri",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Growth KVKK (anonimleştirme, dışa aktarma, birleştirme) ve lead-hane migration testleri için PGlite (Docker gerektirmez).",
+  "type": "module",
+  "scripts": {
+    "test": "node kos.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}

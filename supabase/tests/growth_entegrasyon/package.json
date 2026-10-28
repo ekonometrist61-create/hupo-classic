@@ -1,0 +1,1 @@
+﻿{ "name": "hupo-growth-entegrasyon-testi", "private": true, "type": "module", "scripts": { "test": "node --test ../../functions/_shared/growth_eposta.test.ts && node test.mjs" }, "devDependencies": { "@electric-sql/pglite": "0.5.10" } }

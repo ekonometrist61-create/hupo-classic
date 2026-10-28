@@ -26,6 +26,7 @@
         "potansiyelAdaylar": "Potansiyel Adaylar",
         "classes": "Sınıflar",
         "questions": "Soru bankası",
+        "kazanimKapsami": "Kazanım Kapsamı",
         "mockExams": "Deneme sınavları",
         "kelimeEvreni": "Kelime Evreni",
         "notifications": "Bildirimler",
@@ -54,8 +55,8 @@
         "ekipAkisi": "Ekip Akışı",
         "destekMasasi": "Destek Masası",
         "mesajSablonlari": "Mesaj Şablonları",
-        "siteIcerik": "Site içeriği",
         "mesajGunlugu": "Gönderim Günlüğü",
+        "siteIcerik": "Site içeriği",
         "settings": "Uygulama ayarları"
       },
       "pageDesc": {
@@ -63,6 +64,7 @@
         "leads": "Henüz üye olmamış velilerin ilgi ve takip durumu.",
         "classes": "Sınıfları ve öğretmen atamalarını yönetin.",
         "questions": "Soru bankası için kontrollü içerik, onay ve toplu yükleme.",
+        "kazanimKapsami": "Her kazanımda kaç onaylı soru olduğunu hafta sırasıyla görün; boş kazanımları öncelikli üretin.",
         "mockExams": "Deneme sınavlarını tanımla, sorularını ata ve sonuçları izle.",
         "kelimeEvreni": "Kelime oyunlarının sorularını hazırla, incele ve yayınla; sözcük ilişkilerini onayla.",
         "notifications": "Segmentlere push kampanyası gönderin veya velilere hızlı bildirim yazın. Öğrenci hesaplarına pazarlama gitmez.",
@@ -80,9 +82,9 @@
         "aiOneriler": "AI öneriler — bir sonraki en iyi aksiyon",
         "journey-otomasyonlari": "Journey otomasyonları — müşteri yolculukları",
         "mesajSablonlari": "Mesaj şablonları — kanal bazlı içerik",
+        "mesajGunlugu": "Gönderilen ve atlanan mesajların kaydı. E-posta ve telefon maskelenir.",
         "siteIcerik": "Site içeriği — landing, giriş, kayıt ve veli paneli metinleri"
       },
-        "mesajGunlugu": "Gönderilen ve atlanan mesajların kaydı. E-posta ve telefon maskelenir.",
       "command": {
         "open": "Her yerde ara...",
         "title": "Hızlı erişim",
@@ -181,7 +183,11 @@
       "turler": {
         "es_anlamli": "Anlam Köprüleri · eş anlamlı",
         "zit_anlamli": "Zıtlık Vadisi · zıt anlamlı",
-        "es_sesli": "Aynalar Ormanı · eş sesli"
+        "es_sesli": "Aynalar Ormanı · eş sesli",
+        "deyim": "Deyimler Diyarı · deyim",
+        "atasozu": "Atasözü Pınarı · atasözü",
+        "sozcuk_turu": "Tür Bahçesi · sözcük türü",
+        "baglamda_anlam": "Bağlam Yolu · bağlamdan anlam"
       },
       "cols": {
         "kelime": "Kelime",
@@ -228,6 +234,46 @@
         "kaydet": "Taslağı kaydet",
         "kaydediliyor": "Kaydediliyor…",
         "vazgec": "Vazgeç"
+      },
+      "toplu": {
+        "listeTumu": "Listedeki tümünü seç ({sayi})",
+        "temizle": "Seçimi temizle",
+        "sayfaTumu": "Sayfadakilerin tümünü seç",
+        "satirSec": "{kelime} kelimesini seç",
+        "seciliSayi": "{sayi} soru seçildi",
+        "yayinaAl": "Yayına al",
+        "yayindanKaldir": "Yayından kaldır",
+        "limit": "Tek seferde en fazla 200 soru yayınlanabilir. Seçimi daraltın.",
+        "yayinKuruOzet": "{yayinlanabilir} soru yayınlanabilir, {atlanir} soru atlanır. Yayınlansın mı? Öğrencilere hemen görünür olur.",
+        "yayinlanabilirYok": "Seçilenlerde yayınlanabilir soru yok. {atlanir} soru atlanır.",
+        "yayinSonuc": "{yayinlandi} soru yayınlandı, {atlandi} soru atlandı.",
+        "kaldirYok": "Seçilenlerde yayında soru yok.",
+        "kaldirOnay": "{sayi} yayındaki soru arşivlenir ve öğrencilere görünmez. Devam edilsin mi?",
+        "kaldirSonuc": "{kaldirildi} soru yayından kaldırıldı, {atlandi} soru atlandı."
+      },
+      "kuyruk": {
+        "baslik": "İnceleme kuyruğu",
+        "aciklama": "Yayın için iki farklı model ailesi geçti vermiş olmalı. Yayınla düğmesi insan kontrolünüzdür: soruyu okuyup onaylayın.",
+        "bos": "İncelemede soru yok.",
+        "sinif": "Sınıf",
+        "tur": "Oyun",
+        "tumu": "Tümü",
+        "toplam": "{sayi} soru incelemede",
+        "kapiAcik": "Denetimden geçti",
+        "kapiKapali": "Denetim eksik",
+        "dogru": "doğru",
+        "cevapAnahtari": "Doğru şık",
+        "ipucu": "İpucu",
+        "seciliSayi": "{sayi} seçili",
+        "gecenleriSec": "Denetimden geçenleri seç",
+        "temizle": "Seçimi temizle",
+        "kontrolEt": "Seçilenleri kontrol et",
+        "yayinla": "Seçilenleri yayınla",
+        "kontrolSonuc": "Kontrol: {yayinlanir} soru yayınlanabilir, {atlanir} soru atlanır.",
+        "yayinOnay": "{sayi} soru öğrencilere görünür olacak. Soruları okudunuz mu? Yayınlansın mı?",
+        "yayinSonuc": "{yayinlanan} soru yayınlandı, {atlanan} soru atlandı.",
+        "taslagaAl": "Taslağa al",
+        "denetimYok": "Denetim kaydı yok"
       },
       "sozluk": {
         "baslik": "Sözcük envanteri ve ilişkiler",
@@ -280,6 +326,9 @@
         "ANLAM_BULUNAMADI": "Anlam bulunamadı. Sayfayı yenileyin.",
         "ILISKI_BULUNAMADI": "İlişki bulunamadı. Sayfayı yenileyin.",
         "ADMIN_ONLY": "Bu işlem için yönetici yetkisi gerekir.",
+        "DENETIM_EKSIK": "Yayın için iki farklı model ailesinden \"geçti\" kaydı gerekir (soru düzenlendiyse denetim yenilenmelidir).",
+        "DENETIM_HEDEFI_INCELEMEDE_DEGIL": "Denetim yalnız incelemedeki soruya yazılır.",
+        "BAD_LISTE": "Bir ile 200 arasında soru seçin.",
         "genel": "İşlem tamamlanamadı. Bilgileri kontrol edip tekrar deneyin."
       }
     },
@@ -596,40 +645,6 @@
       "activate": "Etkinleştir",
       "pause": "Duraklat",
       "form": { "title": "Yeni Journey", "name": "Ad", "trigger": "Tetikleyici", "status": "Durum", "errName": "Ad zorunlu (en fazla 120 karakter).", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
-      "pager": { "prev": "Önceki", "next": "Sonraki" }
-    },
-    "mesajSablonlari": {
-      "title": "Mesaj Şablonları",
-      "loading": "Yükleniyor...",
-      "empty": "Şablon bulunamadı.",
-      "retry": "Tekrar dene",
-      "newTemplate": "Yeni Şablon",
-      "edit": "Düzenle",
-      "allChannels": "Tüm kanallar",
-      "allStatus": "Tüm durumlar",
-      "filters": { "channel": "Kanal", "status": "Durum" },
-      "channels": { "email": "E-posta", "sms": "SMS", "push": "Push", "in_app": "Uygulama içi", "whatsapp": "WhatsApp" },
-      "statuses": { "draft": "Taslak", "active": "Aktif", "archived": "Arşiv" },
-      "cols": { "name": "Ad", "channel": "Kanal", "subject": "Konu", "status": "Durum", "created": "Oluşturma" },
-      "form": { "titleNew": "Yeni Şablon", "titleEdit": "Şablonu düzenle", "name": "Ad", "channel": "Kanal", "subject": "Konu", "body": "İçerik", "bodyHint": "Değişken eklemek için {{ad}} biçimini kullanın.", "status": "Durum", "errName": "Şablon adı zorunlu (en fazla 120 karakter).", "errBody": "İçerik zorunlu.", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
-      "pager": { "prev": "Önceki", "next": "Sonraki" }
-    },
-    "destekMasasi": {
-      "title": "Destek Masası",
-      "loading": "Yükleniyor...",
-      "empty": "Destek talebi bulunamadı.",
-      "retry": "Tekrar dene",
-      "allStatus": "Tüm durumlar",
-      "allPriority": "Tüm öncelikler",
-      "allCategories": "Tüm kategoriler",
-      "newTicket": "Yeni Talep",
-      "statuses": { "new": "Yeni", "open": "Açık", "waiting": "Bekliyor", "resolved": "Çözüldü" },
-      "priorities": { "low": "Düşük", "normal": "Normal", "high": "Yüksek", "critical": "Kritik" },
-      "categories": { "billing": "Faturalandırma", "technical": "Teknik", "account": "Hesap", "content": "İçerik", "subscription": "Abonelik", "other": "Diğer" },
-      "cols": { "ticketNo": "Talep No", "subject": "Konu", "category": "Kategori", "status": "Durum", "priority": "Öncelik", "assignee": "Atanan", "created": "Oluşturma", "customer": "Müşteri Bağ" },
-      "customerLink": "Müşteri 360°",
-      "form": { "title": "Yeni Destek Talebi", "subject": "Konu", "category": "Kategori", "status": "Durum", "priority": "Öncelik", "householdId": "Müşteri ID", "errSubject": "Konu 1-200 karakter olmalı.", "errHousehold": "Geçerli bir müşteri ID girin.", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
-      "statusModal": { "title": "Durum Değiştir", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
       "pager": { "prev": "Önceki", "next": "Sonraki" },
       "stepsButton": "Adımlar",
       "steps": {
@@ -654,6 +669,58 @@
         "close": "Kapat",
         "stepTypes": { "trigger": "Tetikleyici", "delay": "Bekleme", "email": "E-posta", "push": "Push", "in_app": "Uygulama içi", "sms": "SMS", "whatsapp": "WhatsApp" }
       }
+    },
+    "mesajSablonlari": {
+      "title": "Mesaj Şablonları",
+      "loading": "Yükleniyor...",
+      "empty": "Şablon bulunamadı.",
+      "retry": "Tekrar dene",
+      "newTemplate": "Yeni Şablon",
+      "edit": "Düzenle",
+      "allChannels": "Tüm kanallar",
+      "allStatus": "Tüm durumlar",
+      "filters": { "channel": "Kanal", "status": "Durum" },
+      "channels": { "email": "E-posta", "sms": "SMS", "push": "Push", "in_app": "Uygulama içi", "whatsapp": "WhatsApp" },
+      "statuses": { "draft": "Taslak", "active": "Aktif", "archived": "Arşiv" },
+      "cols": { "name": "Ad", "channel": "Kanal", "subject": "Konu", "status": "Durum", "created": "Oluşturma" },
+      "form": { "titleNew": "Yeni Şablon", "titleEdit": "Şablonu düzenle", "name": "Ad", "channel": "Kanal", "subject": "Konu", "body": "İçerik", "bodyHint": "Değişken eklemek için {{ad}} biçimini kullanın.", "status": "Durum", "errName": "Şablon adı zorunlu (en fazla 120 karakter).", "errBody": "İçerik zorunlu.", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
+    },
+    "mesajGunlugu": {
+      "title": "Gönderim Günlüğü",
+      "readOnlyNote": "Bu ekran yalnızca okunur. E-posta ve telefon maskelenir; çocuk bilgisi gösterilmez.",
+      "loading": "Yükleniyor...",
+      "loadError": "Gönderim kayıtları alınamadı.",
+      "retry": "Tekrar dene",
+      "empty": "Henüz gönderim kaydı yok.",
+      "emptyFiltered": "Seçili filtrelere uygun kayıt yok.",
+      "allChannels": "Tüm kanallar",
+      "allStatus": "Tüm durumlar",
+      "filters": { "channel": "Kanal", "status": "Durum" },
+      "channels": { "email": "E-posta", "sms": "SMS", "push": "Push", "in_app": "Uygulama içi", "whatsapp": "WhatsApp" },
+      "statuses": { "kuyrukta": "Kuyrukta", "gonderildi": "Gönderildi", "teslim_edildi": "Teslim edildi", "acildi": "Açıldı", "tiklandi": "Tıklandı", "donustu": "Dönüştü", "basarisiz": "Başarısız", "izin_yok": "İzin yok", "kanal_kapali": "Kanal kapalı" },
+      "source": { "campaign": "Kampanya", "journey": "Journey" },
+      "consent": { "yes": "İzin var", "no": "İzin yok", "unknown": "Bilinmiyor" },
+      "cols": { "time": "Zaman", "channel": "Kanal", "status": "Durum", "source": "Kampanya / Journey", "recipient": "Hane (maskeli)", "consent": "İzin", "error": "Hata" },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
+    },
+    "destekMasasi": {
+      "title": "Destek Masası",
+      "loading": "Yükleniyor...",
+      "empty": "Destek talebi bulunamadı.",
+      "retry": "Tekrar dene",
+      "allStatus": "Tüm durumlar",
+      "allPriority": "Tüm öncelikler",
+      "allCategories": "Tüm kategoriler",
+      "newTicket": "Yeni Talep",
+      "statuses": { "new": "Yeni", "open": "Açık", "waiting": "Bekliyor", "resolved": "Çözüldü" },
+      "priorities": { "low": "Düşük", "normal": "Normal", "high": "Yüksek", "critical": "Kritik" },
+      "categories": { "billing": "Faturalandırma", "technical": "Teknik", "account": "Hesap", "content": "İçerik", "subscription": "Abonelik", "other": "Diğer" },
+      "cols": { "ticketNo": "Talep No", "subject": "Konu", "category": "Kategori", "status": "Durum", "priority": "Öncelik", "assignee": "Atanan", "created": "Oluşturma", "customer": "Müşteri Bağ" },
+      "customerLink": "Müşteri 360°",
+      "form": { "title": "Yeni Destek Talebi", "subject": "Konu", "category": "Kategori", "status": "Durum", "priority": "Öncelik", "householdId": "Müşteri ID", "errSubject": "Konu 1-200 karakter olmalı.", "errHousehold": "Geçerli bir müşteri ID girin.", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
+      "statusModal": { "title": "Durum Değiştir", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
     },
     "musteri360": {
       "title": "Müşteri 360°",
@@ -686,24 +753,6 @@
       "channels": {
         "email": "E-posta",
         "sms": "SMS",
-    "mesajGunlugu": {
-      "title": "Gönderim Günlüğü",
-      "readOnlyNote": "Bu ekran yalnızca okunur. E-posta ve telefon maskelenir; çocuk bilgisi gösterilmez.",
-      "loading": "Yükleniyor...",
-      "loadError": "Gönderim kayıtları alınamadı.",
-      "retry": "Tekrar dene",
-      "empty": "Henüz gönderim kaydı yok.",
-      "emptyFiltered": "Seçili filtrelere uygun kayıt yok.",
-      "allChannels": "Tüm kanallar",
-      "allStatus": "Tüm durumlar",
-      "filters": { "channel": "Kanal", "status": "Durum" },
-      "channels": { "email": "E-posta", "sms": "SMS", "push": "Push", "in_app": "Uygulama içi", "whatsapp": "WhatsApp" },
-      "statuses": { "kuyrukta": "Kuyrukta", "gonderildi": "Gönderildi", "teslim_edildi": "Teslim edildi", "acildi": "Açıldı", "tiklandi": "Tıklandı", "donustu": "Dönüştü", "basarisiz": "Başarısız", "izin_yok": "İzin yok", "kanal_kapali": "Kanal kapalı" },
-      "source": { "campaign": "Kampanya", "journey": "Journey" },
-      "consent": { "yes": "İzin var", "no": "İzin yok", "unknown": "Bilinmiyor" },
-      "cols": { "time": "Zaman", "channel": "Kanal", "status": "Durum", "source": "Kampanya / Journey", "recipient": "Hane (maskeli)", "consent": "İzin", "error": "Hata" },
-      "pager": { "prev": "Önceki", "next": "Sonraki" }
-    },
         "phone": "Telefon",
         "push": "Push"
       },
@@ -739,7 +788,7 @@
         "phone": "Telefon",
         "lifecycle": "Yaşam Döngüsü",
         "plan": "Plan",
-        "mrr": "MRR",
+        "mrr": "Toplam ödeme",
         "health": "Sağlık Skoru",
         "source": "Kaynak",
         "consent": "İzin",
@@ -765,7 +814,8 @@
         "next": "Sonraki"
       },
       "health": {
-        "label": "Sağlık skoru (0-100)"
+        "label": "Sağlık skoru (0-100)",
+        "noData": "Veri yok"
       },
       "tabs": {
         "genel": "Genel Bakış",
@@ -836,6 +886,90 @@
         "tickets": "Destek talebi yok.",
         "feed": "Ekip akışında kayıt yok.",
         "events": "Olay kaydı yok."
+      },
+      "aksiyon": {
+        "yukleniyor": "Yükleniyor...",
+        "kaydediliyor": "Kaydediliyor...",
+        "vazgec": "Vazgeç",
+        "hata": {
+          "genel": "İşlem tamamlanamadı.",
+          "eksik": "Bu işlem şu an kullanılamıyor. Sistem yöneticinize bildirin.",
+          "abonelik": "Aboneli haneler üzerinde bu işlem yapılamaz. Önce aboneliği sonlandırın.",
+          "demo": "Demo modunda kayıt yapılamaz."
+        },
+        "not": {
+          "baslik": "Not ekle",
+          "tur": "Tür",
+          "icerik": "İçerik",
+          "ekle": "Notu kaydet",
+          "hataIcerik": "İçerik 1-4000 karakter olmalı.",
+          "basarili": "Not eklendi.",
+          "tipler": { "note": "Not", "call": "Arama", "meeting": "Toplantı", "support": "Destek" }
+        },
+        "gorev": {
+          "baslik": "Görev oluştur",
+          "gorevBaslik": "Görev başlığı",
+          "tur": "Tür",
+          "oncelik": "Öncelik",
+          "bitis": "Bitiş tarihi",
+          "ekle": "Görevi oluştur",
+          "hataBaslik": "Başlık zorunlu (en fazla 200 karakter).",
+          "hataBitis": "Bitiş tarihi zorunlu.",
+          "basarili": "Görev oluşturuldu.",
+          "listeBaslik": "Bu müşterinin görevleri",
+          "bos": "Bu müşteri için görev yok."
+        },
+        "destek": {
+          "baslik": "Destek kaydı aç",
+          "konu": "Konu",
+          "kategori": "Kategori",
+          "oncelik": "Öncelik",
+          "ekle": "Destek kaydını aç",
+          "hataKonu": "Konu 1-200 karakter olmalı.",
+          "basarili": "Destek kaydı açıldı."
+        },
+        "sahip": {
+          "baslik": "Sahip",
+          "mevcut": "Mevcut sahip",
+          "yok": "Atanmamış",
+          "sec": "Yeni sahip",
+          "secim": "Yönetici seçin",
+          "kaydet": "Sahibi ata",
+          "hataSec": "Bir yönetici seçin.",
+          "basarili": "Sahip güncellendi.",
+          "bos": "Yönetici bulunamadı."
+        },
+        "birlestir": {
+          "baslik": "Hane birleştir",
+          "aciklama": "Bu haneyi başka bir müşteri kaydıyla birleştirin.",
+          "ara": "Hedef hane ara",
+          "araYer": "Ad, e-posta, telefon veya müşteri no",
+          "sonuc": "Eşleşen hane yok.",
+          "enAz": "Aramak için en az 2 karakter yazın.",
+          "sec": "Seç",
+          "secili": "Seçili hedef",
+          "birlestirBtn": "Birleştir",
+          "onayBaslik": "Haneleri birleştirin",
+          "uyari": "Bu işlem geri alınamaz. Bu hane seçilen hedef hane ile birleştirilecek.",
+          "onayBtn": "Evet, birleştir",
+          "basarili": "Haneler birleştirildi.",
+          "hedefGit": "Hedef müşteri kaydına git"
+        },
+        "kvkk": {
+          "baslik": "KVKK işlemleri",
+          "aciklama": "Yalnızca yöneticiler görür. Bu işlemler kişisel verileri etkiler.",
+          "aktar": "Verileri dışa aktar",
+          "aktarAciklama": "Hanenin kişisel verileri JSON dosyası olarak indirilir.",
+          "aktarBasarili": "Veriler dosya olarak indirildi.",
+          "anonim": "Anonimleştir",
+          "anonimAciklama": "Hanenin kişisel verileri anonimleştirilir. Bu işlem geri alınamaz.",
+          "onayBaslik": "Hane anonimleştirilsin mi?",
+          "uyari": "Bu işlem geri alınamaz. Kişisel veriler anonimleştirilir ve kayıt eski haline döndürülemez.",
+          "neden": "Neden (zorunlu)",
+          "hataNeden": "Neden 3-500 karakter olmalı.",
+          "onayBtn": "Evet, anonimleştir",
+          "basarili": "Kayıt anonimleştirildi."
+        }
       }
     },
     "crmGorevler": {
@@ -969,6 +1103,62 @@
     },
     "growthAnalitik": {
       "title": "Growth Analitik",
+      "error": "Veriler alınamadı.",
+      "lowData": "Bu dönemde gösterilecek yeterli veri yok.",
+      "suppressed": "Az veri (5'ten az, gizli)",
+      "hiddenNote": "5'ten az olan sayılar gizlenir; bu hücreler “—” olarak görünür.",
+      "csvButton": "CSV indir",
+      "funnel": {
+        "title": "Kayıt huni",
+        "desc": "Son {count} günde kayıt olan haneler. Her adım kendi ölçütüyle sayılır.",
+        "colStep": "Adım",
+        "colCount": "Sayı",
+        "colPrevious": "Önceki adıma",
+        "colSignup": "Kayda göre",
+        "churn": "Ayrıldı (churn)",
+        "steps": {
+          "kayit": "Kayıt",
+          "cocuk_bagli": "Çocuk bağladı",
+          "ilk_soru": "İlk soruyu çözdü",
+          "deneme_basladi": "Deneme başladı",
+          "ucretli": "Ücretli"
+        }
+      },
+      "utm": {
+        "title": "Kanal ve kampanya atfı",
+        "desc": "Son {count} günde ilk temas UTM'ine göre ziyaretçi, kayıt ve ücretli sayıları.",
+        "other": "Diğer (küçük gruplar)",
+        "cols": {
+          "channel": "Kanal",
+          "medium": "Ortam",
+          "campaign": "Kampanya",
+          "visitors": "Ziyaretçi",
+          "signups": "Kayıt",
+          "signupRate": "Kayıt %",
+          "paid": "Ücretli",
+          "paidRate": "Ücretli %"
+        }
+      },
+      "activity": {
+        "title": "Aktiflik",
+        "desc": "Cevap veren benzersiz öğrenci sayısı. Günler Türkiye saatiyle sayılır.",
+        "dau": "Günlük aktif (DAU)",
+        "wau": "Haftalık aktif (WAU)",
+        "mau": "Aylık aktif (MAU)",
+        "stickiness": "DAU / MAU: {pct}",
+        "stickinessLabel": "DAU/MAU yapışkanlık (%)",
+        "series": "Günlük aktif öğrenci",
+        "seriesDesc": "Seçilen dönemin her günü",
+        "seriesAria": "Son {count} günün günlük aktif öğrenci grafiği"
+      },
+      "csv": {
+        "funnel": "Kayıt huni",
+        "utm": "Kanal ve kampanya atfı",
+        "activity": "Aktiflik",
+        "metric": "Ölçü",
+        "value": "Değer",
+        "note": "Boş hücre: 5'ten az olan (gizli) sayı veya oran. Dosyada kişisel veri yoktur."
+      },
       "loading": "Yükleniyor...",
       "empty": "Veri bulunamadı.",
       "retry": "Tekrar dene",
