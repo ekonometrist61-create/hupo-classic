@@ -1,4 +1,5 @@
 import { IconArrowRight, IconCheckCircle } from "@/components/landing/Icons";
+import { RevealGroup } from "@/components/landing/motion/RevealGroup";
 import { createClient } from "@/utils/supabase/server";
 import { TrackedLink } from "@/components/analytics/TrackedLink";
 import { getLocale, getTranslations } from "next-intl/server";
@@ -82,7 +83,7 @@ export async function PricingSection() {
           ) : null}
         </div>
 
-        <div className={`mt-12 grid gap-6 ${gridCols}`}>
+        <RevealGroup className={`mt-12 grid gap-6 ${gridCols}`}>
           {tipler.map((tip) => {
             const isPopular = tip.vurgulu;
             const ad = isEn && tip.ad_en ? tip.ad_en : tip.ad;
@@ -130,7 +131,7 @@ export async function PricingSection() {
                   href="/veli-paneli/kayit"
                   olay="fiyat_tiklandi"
                   ozellik={{ plan: tip.kod }}
-                  className={`mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-bold transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none ${
+                  className={`mt-8 inline-flex min-h-12 items-center justify-center gap-2 rounded-xl px-6 py-3 text-base font-bold transition-colors duration-200 ease-hupo-out focus-visible:outline-2 focus-visible:outline-offset-2 motion-reduce:transition-none ${
                     isPopular
                       ? "bg-brand-500 text-white hover:bg-brand-600 focus-visible:outline-brand-500"
                       : "border-2 border-navy/15 bg-white text-navy hover:border-brand-500 hover:text-brand-600 focus-visible:outline-brand-500 dark:border-gray-600 dark:bg-gray-800 dark:text-gray-100"
@@ -142,7 +143,7 @@ export async function PricingSection() {
               </div>
             );
           })}
-        </div>
+        </RevealGroup>
 
         <div className="mt-10 flex flex-wrap justify-center gap-x-8 gap-y-3">
           {trustBadges.map((badge) => (

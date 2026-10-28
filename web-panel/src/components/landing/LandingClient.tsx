@@ -45,7 +45,7 @@ export function MobileMenu() {
       {open && (
         <div
           id={panelId}
-          className="absolute inset-x-0 top-full z-40 border-b border-cream-dark bg-cream p-4 shadow-lg xl:hidden dark:border-gray-700 dark:bg-gray-900"
+          className="absolute inset-x-0 top-full z-40 border-b border-cream-dark bg-cream p-4 shadow-lg motion-safe:animate-hupo-menu-in xl:hidden dark:border-gray-700 dark:bg-gray-900"
         >
           <nav aria-label={t("label")} className="flex flex-col">
             {NAV_ITEMS.map((item) => (
@@ -115,20 +115,29 @@ export function FaqAccordion({ items }: { items: { q: string; a: string }[] }) {
               >
                 <span>{item.q}</span>
                 <IconChevronDown
-                  className={`h-5 w-5 shrink-0 text-brand-600 transition-transform motion-reduce:transition-none dark:text-brand-300 ${
+                  className={`h-5 w-5 shrink-0 text-brand-600 transition-transform duration-300 ease-hupo-out motion-reduce:transition-none dark:text-brand-300 ${
                     isOpen ? "rotate-180" : ""
                   }`}
                 />
               </button>
             </h3>
+            {/* Kapalı panel 0fr ile yüksekliği sıfırlanır; inert kapalıyken odak ve erişilebilirlik ağacının dışında kalır. */}
             <div
-              id={panelId}
-              role="region"
-              aria-labelledby={btnId}
-              hidden={!isOpen}
-              className="px-5 pb-5 text-base leading-relaxed text-navy-muted dark:text-gray-300"
+              className={`grid transition-[grid-template-rows] duration-300 ease-hupo-out motion-reduce:transition-none ${
+                isOpen ? "grid-rows-[1fr]" : "grid-rows-[0fr]"
+              }`}
             >
-              {item.a}
+              <div
+                id={panelId}
+                role="region"
+                aria-labelledby={btnId}
+                inert={!isOpen}
+                className="min-h-0 overflow-hidden"
+              >
+                <div className="px-5 pb-5 text-base leading-relaxed text-navy-muted dark:text-gray-300">
+                  {item.a}
+                </div>
+              </div>
             </div>
           </div>
         );

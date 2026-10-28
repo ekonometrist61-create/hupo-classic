@@ -1,7 +1,10 @@
 // Statik veri yalnızca fallback olarak kullanılır (DB boşsa)
 import { TrackedLink } from "@/components/analytics/TrackedLink";
 import { CHARACTER_CLASSES } from "@/data/characters";
+import { landingPrimaryBtn } from "@/components/landing/buttons";
 import { IconArrowRight } from "@/components/landing/Icons";
+import { RevealGroup } from "@/components/landing/motion/RevealGroup";
+import { SplitText } from "@/components/landing/motion/SplitText";
 import { createClient } from "@/utils/supabase/server";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
@@ -18,16 +21,13 @@ const CLASS_COLORS: Record<string, string> = {
   efsaneler:      "#6B7280",
 };
 
-const primaryBtn =
-  "inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 py-3 text-base font-bold text-white shadow-sm transition-colors hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 motion-reduce:transition-none";
-
 type ClassGroup = {
   kod: string;
   color: string;
   characters: { kod: string }[];
 };
 
-// Yol: sınıflar sırayla açılır. Her kartta bir açık karakter ve kilitli (silik) siluetler görünür.
+// Yol: sınıflar sırayla açılır (RevealGroup). Her kartta bir açık karakter ve kilitli (silik) siluetler görünür.
 // XP veya süre gösterilmez; bu bölüm koleksiyonu anlatır, başarı metriği değildir.
 export async function CharacterUniverseSection() {
   const t = await getTranslations("landing");
@@ -77,17 +77,34 @@ export async function CharacterUniverseSection() {
           <p className="inline-flex rounded-full bg-white/10 px-3 py-1 text-sm font-bold text-gold-300">
             {t("characters.eyebrow")}
           </p>
-          <h2 className="mt-4 text-balance text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl">
-            {t("characters.title")}
-          </h2>
+          {/* Başlık kelime kelime belirir. Blok sarmalayıcı: SplitText inline-block olduğu için etiketle aynı satıra düşmez. */}
+          <div className="mt-4">
+            <SplitText
+              text={t("characters.title")}
+              tag="h2"
+              textAlign="center"
+              splitType="words"
+              effect="rise"
+              trigger="view"
+              from={{ opacity: 0, y: 24 }}
+              to={{ opacity: 1, y: 0 }}
+              delay={70}
+              duration={0.8}
+              ease="hupo-out"
+              className="-my-2 py-2 text-balance text-3xl font-extrabold tracking-tight sm:text-4xl lg:text-5xl"
+            />
+            <noscript>
+              <style>{".split-parent{visibility:visible!important}"}</style>
+            </noscript>
+          </div>
           <p className="mx-auto mt-4 max-w-xl text-lg leading-relaxed text-white/70">
             {t("characters.desc")}
           </p>
         </div>
 
         {/* Yol: sekiz sınıf kartı, soldan sağa */}
-        <ol className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
-          {classes.map((cls, i) => {
+        <RevealGroup as="ol" className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-4 lg:grid-cols-8">
+          {classes.map((cls) => {
             const info = classData.find((d) => d.kod === cls.kod);
             const [acik, ...kilitli] = cls.characters;
 
@@ -95,11 +112,10 @@ export async function CharacterUniverseSection() {
               <li
                 key={cls.kod}
                 style={{
-                  animationDelay: `${i * 90}ms`,
                   background: `${cls.color}1f`,
                   borderColor: `${cls.color}55`,
                 }}
-                className="flex flex-col rounded-2xl border p-3 motion-safe:animate-[hupo-reveal_0.6s_ease-out_both]"
+                className="flex flex-col rounded-2xl border p-3"
               >
                 <p
                   className="text-center text-xs font-extrabold uppercase tracking-wide"
@@ -145,7 +161,7 @@ export async function CharacterUniverseSection() {
               </li>
             );
           })}
-        </ol>
+        </RevealGroup>
 
         {/* CTA */}
         <div className="mt-12 flex justify-center">
@@ -153,7 +169,7 @@ export async function CharacterUniverseSection() {
             href="/veli-paneli/kayit"
             olay="veli_kayit_baslatildi"
             ozellik={{ konum: "karakterler" }}
-            className={primaryBtn}
+            className={landingPrimaryBtn}
           >
             {t("characters.cta")}
             <IconArrowRight className="h-5 w-5" />

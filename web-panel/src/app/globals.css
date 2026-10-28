@@ -2,11 +2,31 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Karakter yolu: kartlar sırayla bir kez belirir; hareket tercihi "azalt" ise motion-safe ile hiç çalışmaz. */
-@keyframes hupo-reveal {
+/* Landing ilk boyama girişleri: yalnız transform (opacity yok); LCP ve ilk görünürlük gecikmez. motion-safe ile sarılır. */
+@keyframes hupo-rise {
+  from {
+    transform: translateY(24px);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* Hero maskotu: pop eğrisiyle tek seferlik giriş (yalnız maskot pop kullanır). */
+@keyframes hupo-mascot {
+  from {
+    transform: translateY(16px) scale(0.9);
+  }
+  to {
+    transform: none;
+  }
+}
+
+/* Mobil menü açılışı: kısa opacity + translateY(-8px). */
+@keyframes hupo-menu-in {
   from {
     opacity: 0;
-    transform: translateY(12px) scale(0.97);
+    transform: translateY(-8px);
   }
   to {
     opacity: 1;
@@ -29,6 +49,16 @@
   --font-*: initial;
   --font-outfit: Outfit, sans-serif;
   --animate-hupo-float: hupo-float 5s ease-in-out infinite;
+
+  /* Hupo hareket dili. Eğriler ve süreler motion/gsap.ts ile aynı sayılardır.
+     hupo-out: çıkış (reveal, hover, menü) · hupo-inout: aç-kapa, çizgi · hupo-pop: yalnız maskot. */
+  --ease-hupo-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-hupo-inout: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-hupo-pop: cubic-bezier(0.34, 1.4, 0.64, 1);
+  --animate-hupo-rise: hupo-rise 800ms var(--ease-hupo-out) both;
+  --animate-hupo-rise-late: hupo-rise 800ms var(--ease-hupo-out) 200ms both;
+  --animate-hupo-mascot: hupo-mascot 700ms var(--ease-hupo-pop) both;
+  --animate-hupo-menu-in: hupo-menu-in 240ms var(--ease-hupo-out) both;
 
   /* Landing'de koyu bölüm zemini (karakter evreni, deneme sınavı). Tek kaynak. */
   --color-night: #0f1e2d;
@@ -378,4 +408,14 @@
     display: none;
     -webkit-appearance: none;
   }
+}
+
+/* Lenis (yalnız landing): LandingMotion sayfaya html.lenis sınıfını ekler; sınıf yokken bu kurallar etkisizdir. */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
 }
