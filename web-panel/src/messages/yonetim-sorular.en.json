@@ -48,9 +48,17 @@
       },
       "bulk": {
         "selected": "{count} question(s) selected",
-        "approve": "Approve",
+        "approve": "Publish",
+        "approveAll": "Approve all in filter ({count})",
+        "approveAllHint": "Set the status filter to Pending for bulk approval",
+        "approveAllConfirm": "{count} pending questions in this filter will be approved. Continue?",
+        "approveAllProgress": "Approving…",
+        "selectAllFiltered": "Select all in filter ({count})",
+        "selectAllProgress": "Selecting…",
+        "clearSelection": "Clear selection",
+        "statusConfirm": "\"{action}\" will be applied to {count} questions. Continue?",
         "reject": "Reject",
-        "pending": "Set to pending",
+        "pending": "Unpublish",
         "delete": "Delete"
       },
       "form": {
@@ -111,6 +119,97 @@
         "undo": "Undo",
         "undoDone": "Undone: {adet} questions marked as rejected.",
         "undoNote": "Undo does not delete questions; it sets their status to rejected. Student answer history is kept."
+      },
+      "kazanim": {
+        "filter": {
+          "kazanimsiz": "Unlabelled only",
+          "sinif": "Grade",
+          "selectSinif": "Select grade",
+          "ders": "Curriculum subject",
+          "selectDers": "Select subject",
+          "loadingDers": "Loading subjects...",
+          "note": "The unlabelled list is filtered by grade and curriculum subject; search, status and difficulty filters are not used in this mode.",
+          "pickFirst": "Select a grade and subject to see unlabelled questions.",
+          "empty": "No unlabelled questions for this grade and subject.",
+          "page": "Page {sayfa}"
+        },
+        "picker": {
+          "sinif": "Grade",
+          "selectSinif": "Select grade",
+          "ders": "Subject",
+          "selectDers": "Select subject",
+          "loadingDers": "Loading subjects...",
+          "search": "Search outcomes",
+          "searchPlaceholder": "Type a code or text",
+          "pickSinif": "Select a grade first to see outcomes.",
+          "pickDers": "Select a subject to see outcomes.",
+          "loading": "Loading outcomes...",
+          "loadError": "Could not load outcomes",
+          "empty": "There are no curriculum outcomes for this subject and grade.",
+          "noMatch": "No outcome matches the search.",
+          "listLabel": "Outcome list",
+          "week": "Week {hafta}",
+          "selected": "Selected outcome: {kod}",
+          "moreResults": "Showing the first {gosterilen} of {toplam} results; narrow the search for more.",
+          "count": "{toplam} outcomes"
+        },
+        "bulk": {
+          "title": "Assign outcome",
+          "desc": "Choose one curriculum outcome for {count} question(s). The action is rejected if the outcome is not in the curriculum.",
+          "assign": "Assign outcome",
+          "none": "Select questions first.",
+          "apply": "Assign outcome",
+          "applying": "Applying...",
+          "remove": "Remove label",
+          "cancel": "Cancel",
+          "assigned": "Outcome {kod} assigned to {count} question(s).",
+          "removed": "Outcome label removed from {count} question(s).",
+          "error": "Could not apply the outcome: {hata}"
+        },
+        "kazanimsizTable": {
+          "ders": "Subject",
+          "sinif": "Grade",
+          "konu": "Topic",
+          "sinifSuffix": "grade"
+        },
+        "form": {
+          "label": "Curriculum outcome",
+          "hint": "If you do not choose a new outcome, the current label stays as it is.",
+          "pending": "On save, outcome {kod} will be assigned.",
+          "newHint": "You can add the outcome label from the edit screen after the question is saved.",
+          "error": "The question was saved but the outcome could not be assigned: {hata}"
+        },
+        "kapsam": {
+          "title": "Outcome Coverage",
+          "filters": {
+            "sinif": "Grade",
+            "selectSinif": "Select grade",
+            "ders": "Subject",
+            "selectDers": "Select subject",
+            "loadingDers": "Loading subjects..."
+          },
+          "pickSinif": "Select a grade first to see coverage.",
+          "pickDers": "Select a subject to see coverage.",
+          "loading": "Loading coverage...",
+          "loadError": "Could not load coverage",
+          "retry": "Try again",
+          "empty": "There are no curriculum outcomes for this subject and grade.",
+          "summary": "{bos} of {toplam} outcomes have no approved question.",
+          "summaryAllCovered": "All {toplam} outcomes have at least one approved question.",
+          "csv": "Download CSV",
+          "week": "Week {hafta}",
+          "noApproved": "No approved question",
+          "columns": {
+            "hafta": "Week",
+            "kod": "Code",
+            "kazanim": "Outcome",
+            "unite": "Unit / Theme",
+            "onayli": "Approved questions",
+            "bekleyen": "Pending questions",
+            "sinav1": "Exam 1 avg.",
+            "sinav2": "Exam 2 avg."
+          }
+        }
       },
       "import": {
         "title": "Bulk Question Import",

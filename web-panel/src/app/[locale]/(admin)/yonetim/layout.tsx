@@ -34,5 +34,10 @@ export default async function YonetimLayout({
     redirect({ href: "/yonetim-giris", locale });
   }
 
-  return <RolKapisi>{children}</RolKapisi>;
+  // Rol burada doğrulandı; istemciye aktarılır ki içerik tarayıcıdaki ikinci rol okumasını beklemesin.
+  return (
+    <RolKapisi sunucuRolu={profile?.role === "ogretmen" ? "ogretmen" : "admin"}>
+      {children}
+    </RolKapisi>
+  );
 }

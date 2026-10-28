@@ -1,5 +1,6 @@
 "use client";
 
+import { TurnstileWidget } from "@/components/guvenlik/TurnstileWidget";
 import { authDilCevir, authHataAnahtari, authMetni } from "@/lib/auth/hata";
 import { Link, useRouter } from "@/i18n/navigation";
 import { EyeCloseIcon } from "@/icons";
@@ -38,6 +39,8 @@ export default function SignUpForm() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [sent, setSent] = useState(false);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [captchaKey, setCaptchaKey] = useState(0);
 
   useEffect(() => {
     const kapiKontrol = async () => {
@@ -80,8 +83,12 @@ export default function SignUpForm() {
           iletisim_metin_surumu: ILETISIM_METIN_SURUMU,
         },
         emailRedirectTo: `${window.location.origin}/veli-paneli/giris`,
+        captchaToken: captchaToken ?? undefined,
       },
     });
+    // Turnstile token'ı tek kullanımlıktır; her denemeden sonra widget yenilenir.
+    setCaptchaToken(null);
+    setCaptchaKey((k) => k + 1);
     setLoading(false);
 
     // Hesap zaten varsa aynı nötr ekran gösterilir: kayıt çakışması dışarıya sızmaz.
@@ -263,6 +270,8 @@ export default function SignUpForm() {
               })}
             </p>
           </div>
+
+          <TurnstileWidget onToken={setCaptchaToken} resetKey={captchaKey} />
 
           {error && (
             <p

@@ -3,6 +3,7 @@
 import { STUDENT_APP_URL } from "@/lib/app-url";
 import { authDilCevir, authHataMetni, authMetni } from "@/lib/auth/hata";
 import { girisKaydiYaz } from "@/lib/auth/girisKaydi";
+import { TurnstileWidget } from "@/components/guvenlik/TurnstileWidget";
 import { guvenliYonlendirme } from "@/lib/auth/yonlendirme";
 import { Link, useRouter } from "@/i18n/navigation";
 import { EyeCloseIcon } from "@/icons";
@@ -49,6 +50,8 @@ export default function SignInForm({ variant = "veli" }: { variant?: Kapi }) {
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [captchaKey, setCaptchaKey] = useState(0);
 
   const router = useRouter();
   const dil = authDilCevir(useLocale());
@@ -63,7 +66,11 @@ export default function SignInForm({ variant = "veli" }: { variant?: Kapi }) {
     const { data, error: authError } = await supabase.auth.signInWithPassword({
       email,
       password,
+      options: { captchaToken: captchaToken ?? undefined },
     });
+    // Turnstile token'ı tek kullanımlıktır; her denemeden sonra widget yenilenir.
+    setCaptchaToken(null);
+    setCaptchaKey((k) => k + 1);
 
     if (authError) {
       setError(authHataMetni(authError, dil));
@@ -172,6 +179,8 @@ export default function SignInForm({ variant = "veli" }: { variant?: Kapi }) {
               {t("forgotLink")}
             </Link>
           </div>
+
+          <TurnstileWidget onToken={setCaptchaToken} resetKey={captchaKey} />
 
           {error && (
             <div

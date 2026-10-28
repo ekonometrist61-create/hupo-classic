@@ -11,6 +11,7 @@ import {
   YAxis,
 } from "recharts";
 
+import IstemciyeOzel from "@/components/common/IstemciyeOzel";
 import ChartCard from "./ChartCard";
 import { formatDate } from "@/utils/format";
 import { CHART_COLORS } from "./chartTheme";
@@ -53,6 +54,7 @@ export default function WeeklyStudyChart({ data }: { data: DailyStudy[] }) {
       ) : (
         <>
         <div role="img" aria-label={ozet} className="h-72">
+          <IstemciyeOzel>
           <ResponsiveContainer
             width="100%"
             height="100%"
@@ -109,6 +111,7 @@ export default function WeeklyStudyChart({ data }: { data: DailyStudy[] }) {
               />
             </BarChart>
           </ResponsiveContainer>
+        </IstemciyeOzel>
           </div>
           <p className="mt-3 text-theme-sm text-gray-600 dark:text-gray-300">{ozet}</p>
         </>

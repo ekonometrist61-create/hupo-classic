@@ -1,6 +1,7 @@
 "use client";
 
 import Badge from "@/components/ui/badge/Badge";
+import { oturumuBekle } from "@/hooks/useCurrentRole";
 import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
@@ -39,15 +40,14 @@ export default function AbonelikKarti() {
     let cancelled = false;
     const run = async () => {
       const supabase = createClient();
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-      if (!user) { setAbonelik(null); return; }
+      // Kullanıcı kimliği paylaşılan oturum bilgisinden gelir (ayrı getUser çağrısı yapılmaz).
+      const { kullaniciId } = await oturumuBekle();
+      if (!kullaniciId) { setAbonelik(null); return; }
 
       const { data, error } = await supabase
         .from("subscriptions")
         .select("id, plan_kod, durum, baslangic, bitis, saglayici, plans(ad)")
-        .eq("veli_id", user.id)
+        .eq("veli_id", kullaniciId)
         .order("created_at", { ascending: false })
         .limit(1)
         .maybeSingle();

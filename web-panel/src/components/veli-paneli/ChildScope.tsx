@@ -2,7 +2,7 @@
 
 import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import ConsentCard from "./ConsentCard";
 import StudentSwitcher from "./StudentSwitcher";
@@ -13,6 +13,8 @@ interface ChildScopeProps {
   students: Student[];
   /** Seçili çocuk ve verisi onaylıysa çağrılır; değilse onay yönlendirmesi gösterilir. */
   render: (studentId: string, data: DashboardData) => React.ReactNode;
+  /** Sunucuda okunmuş ilk çocuğun verisi (varsa ilk seçimde istemci RPC'si atlanır). */
+  ilkVeri?: { studentId: string; data: DashboardData };
 }
 
 interface LoadedResult {
@@ -22,13 +24,21 @@ interface LoadedResult {
 
 // Veli sayfalarının ortak kabuğu: çocuk seçimi, dashboard verisi ve veli onayı kapısı.
 // Öğrenci verisi yalnızca riza = "verildi" iken gösterilir (AGENTS.md §5.3).
-export default function ChildScope({ students, render }: ChildScopeProps) {
+export default function ChildScope({ students, render, ilkVeri }: ChildScopeProps) {
   const t = useTranslations("veliPaneli");
   const [selectedId, setSelectedId] = useState(students[0]?.id ?? "");
-  const [result, setResult] = useState<LoadedResult | null>(null);
+  const [result, setResult] = useState<LoadedResult | null>(
+    ilkVeri ? { studentId: ilkVeri.studentId, data: ilkVeri.data } : null,
+  );
+  // Sunucudan gelen ilk verinin kimliği; ilk seçimde bu çocuk için RPC tekrarlanmaz.
+  const ilkVeriBekleyen = useRef(ilkVeri?.studentId ?? null);
 
   useEffect(() => {
     if (!selectedId) return;
+    if (ilkVeriBekleyen.current === selectedId) {
+      ilkVeriBekleyen.current = null;
+      return;
+    }
     let cancelled = false;
 
     createClient()

@@ -1,6 +1,7 @@
 "use client";
 
 import { Link } from "@/i18n/navigation";
+import { TurnstileWidget } from "@/components/guvenlik/TurnstileWidget";
 import { authDilCevir, authHataAnahtari, authMetni } from "@/lib/auth/hata";
 import { createClient } from "@/utils/supabase/client";
 import { useLocale, useTranslations } from "next-intl";
@@ -19,6 +20,8 @@ export default function ForgotPasswordForm() {
   const [loading, setLoading] = useState(false);
   const [sent, setSent] = useState(false);
   const [error, setError] = useState<string | null>(null);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [captchaKey, setCaptchaKey] = useState(0);
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -28,8 +31,11 @@ export default function ForgotPasswordForm() {
     const supabase = createClient();
     const { error: authError } = await supabase.auth.resetPasswordForEmail(
       email.trim(),
-      { redirectTo: `${window.location.origin}/sifre-yeni` }
+      { redirectTo: `${window.location.origin}/sifre-yeni`, captchaToken: captchaToken ?? undefined }
     );
+    // Turnstile token'ı tek kullanımlıktır; her denemeden sonra widget yenilenir.
+    setCaptchaToken(null);
+    setCaptchaKey((k) => k + 1);
     setLoading(false);
 
     if (authError) {
@@ -90,6 +96,8 @@ export default function ForgotPasswordForm() {
               className={fieldClass}
             />
           </div>
+
+          <TurnstileWidget onToken={setCaptchaToken} resetKey={captchaKey} />
 
           {error && (
             <p

@@ -1,7 +1,6 @@
 import PageBreadcrumb from "@/components/common/PageBreadCrumb";
-import ActivityView from "@/components/veli-paneli/ActivityView";
+import ActivityScope from "@/components/veli-paneli/ActivityScope";
 import VeliMessage from "@/components/veli-paneli/VeliMessage";
-import ChildScope from "@/components/veli-paneli/ChildScope";
 import { redirect } from "@/i18n/navigation";
 import { loadVeliAccess } from "@/lib/veli-paneli/access";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -31,14 +30,7 @@ export default async function AktivitePage({
 
   let body: React.ReactNode;
   if (access.kind === "ok") {
-    body = (
-      <ChildScope
-        students={access.students}
-        render={(_studentId, data) => (
-          <ActivityView haftalik={data.haftalik} />
-        )}
-      />
-    );
+    body = <ActivityScope students={access.students} />;
   } else if (access.kind === "error") {
     body = <VeliMessage text={t("error")} />;
   } else {

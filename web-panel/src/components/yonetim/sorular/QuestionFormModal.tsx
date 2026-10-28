@@ -9,6 +9,7 @@ import { useTranslations } from "next-intl";
 import { useState } from "react";
 
 import type { AdminQuestion, QuestionInput, QuestionStatus } from "../types";
+import KazanimSecici from "../kazanim/KazanimSecici";
 import { dokunmaHedefi } from "../ui/responsive";
 import { OPTION_KEYS, splitSteps, validateQuestion } from "./csv";
 
@@ -31,7 +32,10 @@ export default function QuestionFormModal({
   onSaved,
 }: QuestionFormModalProps) {
   const t = useTranslations("yonetim.sorular");
+  const tk = useTranslations("yonetim.sorular.kazanim.form");
 
+  // Kazanım yalnız mevcut soruda ayrı çağrıyla yazılır; seçilmediyse null kalır (değişiklik yok).
+  const [kazanimKod, setKazanimKod] = useState<string | null>(null);
   const [okul, setOkul] = useState(question?.okul ?? "");
   const [ders, setDers] = useState(question?.ders ?? "");
   const [konu, setKonu] = useState(question?.konu ?? "");
@@ -91,6 +95,18 @@ export default function QuestionFormModal({
     if (rpcError) {
       setError(rpcError.message);
       return;
+    }
+    if (question && kazanimKod) {
+      setSaving(true);
+      const { error: kazanimError } = await createClient().rpc(
+        "admin_set_question_kazanim",
+        { p_ids: [question.id], p_kod: kazanimKod }
+      );
+      setSaving(false);
+      if (kazanimError) {
+        setError(tk("error", { hata: kazanimError.message }));
+        return;
+      }
     }
     onSaved();
   };
@@ -175,6 +191,25 @@ export default function QuestionFormModal({
             <option value="reddedildi">{t("status.reddedildi")}</option>
           </select>
         </div>
+      </div>
+
+      <div className="mt-4">
+        <Label>{tk("label")}</Label>
+        {question ? (
+          <>
+            <KazanimSecici
+              baslangicDers={ders}
+              secili={kazanimKod}
+              onSec={setKazanimKod}
+              disabled={saving}
+            />
+            <p className="mt-2 text-theme-xs text-gray-500 dark:text-gray-400">
+              {kazanimKod ? tk("pending", { kod: kazanimKod }) : tk("hint")}
+            </p>
+          </>
+        ) : (
+          <p className="text-theme-xs text-gray-500 dark:text-gray-400">{tk("newHint")}</p>
+        )}
       </div>
 
       <div className="mt-4">

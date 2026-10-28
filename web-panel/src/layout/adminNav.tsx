@@ -51,6 +51,7 @@ export const NAV_GROUPS: NavGroup[] = [
     key: "content",
     items: [
       { key: "questions", icon: <DocsIcon />, path: "/yonetim/sorular", roles: ADMIN },
+      { key: "kazanimKapsami", icon: <TableIcon />, path: "/yonetim/kazanim-kapsami", roles: ADMIN },
       { key: "mockExams", icon: <DocsIcon />, path: "/yonetim/deneme-sinavlari", roles: ADMIN },
       { key: "kelimeEvreni", icon: <DocsIcon />, path: "/yonetim/kelime-evreni", roles: ADMIN },
       { key: "hikayeAtolyesi", icon: <DocsIcon />, path: "/yonetim/hikaye-atolyesi", roles: ADMIN },
@@ -73,8 +74,8 @@ export const NAV_GROUPS: NavGroup[] = [
       { key: "campaigns", icon: <PaperPlaneIcon />, path: "/yonetim/kampanyalar", roles: ADMIN },
       { key: "journeys", icon: <BoltIcon />, path: "/yonetim/journey-otomasyonlari", roles: ADMIN },
       { key: "mesajSablonlari", icon: <MailIcon />, path: "/yonetim/mesaj-sablonlari", roles: ADMIN },
-      { key: "forms",icon: <TaskIcon />, path: "/yonetim/anketler", roles: ADMIN },
       { key: "mesajGunlugu", icon: <MailIcon />, path: "/yonetim/mesaj-gunlugu", roles: ADMIN },
+      { key: "forms",icon: <TaskIcon />, path: "/yonetim/anketler", roles: ADMIN },
     ],
   },
   {

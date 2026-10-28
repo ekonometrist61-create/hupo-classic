@@ -1,6 +1,7 @@
 "use client";
 
 import { useClickOutside } from "@/hooks/useClickOutside";
+import { useOturumBilgisi } from "@/hooks/useCurrentRole";
 import { getLanguage, languages } from "@/i18n/languages";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import type { Locale } from "@/i18n/routing";
@@ -8,7 +9,7 @@ import { ChevronDownIcon } from "@/icons";
 import { cn } from "@/utils";
 import { createClient } from "@/utils/supabase/client";
 import { useLocale, useTranslations } from "next-intl";
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { Dropdown } from "../ui/dropdown/Dropdown";
 import { DropdownItem } from "../ui/dropdown/DropdownItem";
 
@@ -21,24 +22,8 @@ export default function UserDropdown() {
   const [isSubDropdownOpen, setIsSubDropdownOpen] = useState(false);
   const subDropdownRef = useRef<HTMLLIElement>(null);
 
-  const [adSoyad, setAdSoyad] = useState<string | null>(null);
-  const [email, setEmail] = useState<string | null>(null);
-
-  useEffect(() => {
-    const supabase = createClient();
-    supabase.auth.getUser().then(({ data }) => {
-      if (!data.user) return;
-      setEmail(data.user.email ?? null);
-      supabase
-        .from("profiles")
-        .select("full_name")
-        .eq("id", data.user.id)
-        .maybeSingle()
-        .then(({ data: p }) => {
-          if (p?.full_name) setAdSoyad(p.full_name);
-        });
-    });
-  }, []);
+  // Ad ve e-posta paylaşılan oturum bilgisinden gelir; her açılışta ayrıca okunmaz.
+  const { adSoyad, email } = useOturumBilgisi();
 
   const currentLang = getLanguage(locale);
   const CurrentFlagIcon = currentLang.FlagIcon;

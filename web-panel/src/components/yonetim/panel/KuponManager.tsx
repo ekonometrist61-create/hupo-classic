@@ -1,10 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 
 import Badge from "@/components/ui/badge/Badge";
 import DesktopOnly from "@/components/ui/DesktopOnly";
+import { useAdminRpc } from "@/components/yonetim/useAdminRpc";
 import { createClient } from "@/utils/supabase/client";
 import ErrorNote from "./ErrorNote";
 import ModalShell from "./ModalShell";
@@ -80,14 +81,9 @@ export default function KuponManager() {
   const [tab, setTab] = useState<"kuponlar" | "kampanyalar">("kuponlar");
 
   /* — Kuponlar — */
-  const [kuponlar, setKuponlar] = useState<Kupon[]>([]);
-  const [toplam, setToplam] = useState(0);
   const [page, setPage] = useState(0);
   const [aramaK, setAramaK] = useState("");
   const [aktifFil, setAktifFil] = useState<"" | "true" | "false">("");
-  const [loadingK, setLoadingK] = useState(true);
-  const [errorK, setErrorK] = useState<string | null>(null);
-  const [reloadK, setReloadK] = useState(0);
 
   const [form, setForm] = useState<FormState | null>(null);
   const [editId, setEditId] = useState<string | null>(null);
@@ -95,10 +91,6 @@ export default function KuponManager() {
   const [formError, setFormError] = useState<string | null>(null);
 
   /* — Kampanyalar — */
-  const [kampanyalar, setKampanyalar] = useState<Kampanya[]>([]);
-  const [loadingKamp, setLoadingKamp] = useState(true);
-  const [errorKamp, setErrorKamp] = useState<string | null>(null);
-  const [reloadKamp, setReloadKamp] = useState(0);
   const [kampForm, setKampForm] = useState<{ ad: string; aciklama: string; aktif: boolean } | null>(null);
   const [kampEditId, setKampEditId] = useState<string | null>(null);
   const [kampSaving, setKampSaving] = useState(false);
@@ -106,51 +98,29 @@ export default function KuponManager() {
 
   const PAGE_SIZE = 25;
 
-  /* Kuponları yükle */
-  useEffect(() => {
-    let cancelled = false;
-    setLoadingK(true);
-    const run = async () => {
-      const { data, error } = await createClient().rpc("admin_list_coupons", {
-        p_aktif: aktifFil === "" ? null : aktifFil === "true",
-        p_arama: aramaK.trim() || null,
-        p_limit: PAGE_SIZE,
-        p_offset: page * PAGE_SIZE,
-        p_campaign_id: null,
-      });
-      if (cancelled) return;
-      if (error) { setErrorK(error.message); } else {
-        setErrorK(null);
-        const d = data as { toplam: number; satirlar: Kupon[] };
-        setKuponlar(d.satirlar ?? []);
-        setToplam(d.toplam ?? 0);
-      }
-      setLoadingK(false);
-    };
-    void run();
-    return () => { cancelled = true; };
-  }, [aramaK, aktifFil, page, reloadK]);
+  // Listeler ortak okuma kancasından gelir: filtre ve sayfa değişiminde önbellekteki veri korunur,
+  // kayıt, durum değiştirme ve silme sonrası yenileme liste boşaltmadan çalışır.
+  const kuponState = useAdminRpc<{ toplam: number; satirlar: Kupon[] }>("admin_list_coupons", {
+    p_aktif: aktifFil === "" ? null : aktifFil === "true",
+    p_arama: aramaK.trim() || null,
+    p_limit: PAGE_SIZE,
+    p_offset: page * PAGE_SIZE,
+    p_campaign_id: null,
+  });
+  const kampState = useAdminRpc<Kampanya[]>("admin_list_campaigns", undefined, {
+    enabled: tab === "kampanyalar",
+  });
 
-  /* Kampanyaları yükle */
-  useEffect(() => {
-    if (tab !== "kampanyalar") return;
-    let cancelled = false;
-    setLoadingKamp(true);
-    const run = async () => {
-      const { data, error } = await createClient().rpc("admin_list_campaigns");
-      if (cancelled) return;
-      if (error) { setErrorKamp(error.message); } else {
-        setErrorKamp(null);
-        setKampanyalar((data as Kampanya[]) ?? []);
-      }
-      setLoadingKamp(false);
-    };
-    void run();
-    return () => { cancelled = true; };
-  }, [tab, reloadKamp]);
+  const kuponlar = kuponState.data?.satirlar ?? [];
+  const toplam = kuponState.data?.toplam ?? 0;
+  const loadingK = kuponState.loading;
+  const errorK = kuponState.error;
+  const kampanyalar = kampState.data ?? [];
+  const loadingKamp = kampState.loading;
+  const errorKamp = kampState.error;
 
-  const reloadKuponlar = useCallback(() => setReloadK((k) => k + 1), []);
-  const reloadKampanyalar = useCallback(() => setReloadKamp((k) => k + 1), []);
+  const reloadKuponlar = kuponState.reload;
+  const reloadKampanyalar = kampState.reload;
 
   const openNew = () => { setForm(EMPTY_FORM); setEditId(null); setFormError(null); };
   const openEdit = (k: Kupon) => {
