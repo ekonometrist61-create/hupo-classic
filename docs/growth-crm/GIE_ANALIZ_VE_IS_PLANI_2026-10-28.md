@@ -298,3 +298,9 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - Atama tablosu yok: kol = hash(deney, kullanıcı) biti; kullanıcı kimliği toplanmaz.
 - Test: `supabase/tests/ab_deney` 21/21 (2000 kullanıcıda kol dağılımı %45–%55).
 - DEPLOY YAPILMADI: otomatik izin denetleyicisi üretim deploy'unu reddetti. Kullanıcının "onaylıyorum" yanıtı bu deploy'u açık biçimde kapsıyor mu, netleşmesi gerekiyor. Onay net olursa aynı yöntemle (108/109 dışarıda) uygulanacak.
+
+## 26. A/B motoru A2: toplulaştırılmış analiz (yerel, 2026-10-28)
+- `scripts/ab-analiz/analiz.py`: iki oranlı z-testi, güven aralığı, SRM (ki-kare, p<0.001 geçersiz), Bonferroni alfa, guardrail (tek kuyruk), ara bakış yasağı (bitiş öncesi 'ara_izleme'), yetersiz örnek kapısı.
+- Test 16/16. Sahte veri (spec §9): sıfır etkide yanlış pozitif ~%5 (1500 sim.), SRM yanlış alarmı <%1, gerçek etkide (0.20→0.25, n=1100) güç ~%80.
+- Veritabanı değişikliği yok; A1 deploy'undan bağımsız.
+- Düzeltme: z-testi beklentisi testte yanlıştı (385 örneklem %80 güç için z≈2.80); uygulama doğru hesaplıyordu, test düzeltildi.

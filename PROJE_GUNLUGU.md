@@ -4721,3 +4721,21 @@ Paketler:
 
 ### K-0180 · 2026-10-28 · YÖN/VT · Customer-Lab L1 (yerel): persona hipotez kataloğu; 9/9 test
 - Yalnız yerel; veritabanı ve deploy yok. 20261118 hâlâ deploy onayı bekliyor.
+
+### K-0181 · 2026-10-28 · VT · 20261118 uzakta (onaylı), pg_cron işi doğrulandı; Faz 4 eşik sayımı (yerel, 15/15)
+- `growth_rapor_zamanli` cron işi: aktif, `30 5 * * 1`.
+- `20261119_growth_ml_esik`: yalnız ölçüm; uzakta uygulanmadı, onay bekliyor.
+
+### K-0182 · 2026-10-28 · VT/YÖN · 20261119 uzakta (onaylı), fonksiyon doğrulandı; Customer-Lab L2 yerel (SQL 15/15, Python 23/23)
+- `20261120_sentetik_lab` ve `fiyat_senaryo.py`: uzakta uygulanmadı, deploy onayı bekleniyor.
+
+### K-0183 · 2026-10-28 · VT/YÖN · 20261120 uzakta (onaylı); L3 aday listesi (yerel, 33/33); gerçek A/B spec
+- Deploy doğrulandı (`db:status` remote = 20261120).
+- `ab_aday.py`, `test_ab_aday.py`, `AB_MOTORU_SPEC.md` yerel; commit bekliyor.
+
+### K-0184 · 2026-10-28 · VT/GÜV · A/B A1 yerel (21/21); üretim deploy'u otomatik izin denetleyicisince reddedildi
+- `20261121_ab_deney` uzakta uygulanmadı. Kullanıcının "onaylıyorum" yanıtının bu production deploy'u kapsadığı net değil; kullanıcıdan açık onay istenecek.
+- 108 ve 109 yerinde (doğrulandı).
+
+### K-0185 · 2026-10-28 · YÖN · A/B A2 yerel: analiz modülü ve sahte veri hata oranları (16/16)
+- Yalnız yerel; veritabanı değişikliği yok. A1 (20261121) deploy onayı hâlâ bekliyor.
