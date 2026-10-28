@@ -102,6 +102,23 @@ altını çizen **imza** olur.
 | 1,80 – 2,20 | Hupo nefes alır; küçük bir konuşma balonu: **"Merhaba, ben Hupo!"** | idle döngü | — |
 | 2,20 → | Balon, ilk karşılama kartına (§3.3) dönüşür. Hupo yerinde kalır, zemin sürer: **sahne değişmez, içerik gelir.** | `Hero` / ortak eleman | — |
 
+### 3.1b Revize (28 Ekim, kullanıcı isteği): "Hupo Gelir": tüm vücutla uçuş
+
+Kullanıcı yalnızca kanadın değil **tüm vücudun** hareket etmesini, Hupo'nun **uçarak gelip konmasını ve gülerek "hoş geldin" demesini** istedi. İlk senaryo (uyuyan Hupo uyanır) yerine bu geçerlidir; `uretim-2026-10-28/hupo-gelir-onizleme.mp4` (3→4,4 sn) onay bekliyor.
+
+| Kare (30 fps) | Ne olur |
+|---|---|
+| 0–6 | Düz turkuaz (sistem splash'iyle aynı), Hupo yok |
+| 6–54 | Hupo sağ üstten **uçarak gelir**: küçükten büyüğe (yaklaşır), yan yatar (bank), iki kanat çırpar, gövde sallanır, arkasında hava izi |
+| 54–66 | **Konma:** son bir çırpış, yere iner, sıkışır (squash/stretch), gölgesi belirir, gözünü kırpar |
+| 68–100 | **Gülen gözler** (^ ^), açık gaga, sevinçle iki kez zıplar, sağ kanatla selam verir, kıvılcımlar, **"Hoş geldin!"** balonu |
+| 96–132 | Altın yay çizilir, "Hupolingo" harf harf gelir |
+
+**Sonuç 1: sistem splash'i değişir.** Hupo gökten geldiği için native ekranda Hupo olmamalı: Android 12+ ikonu saydam, iOS görseli boş; yalnızca düz turkuaz. Bu, Faz 1'deki "native Hupo ile Flutter ilk karesi aynı" çözümünün yerini alır ve üç-farklı-Hupo sorununu kökten bitirir. (Faz 1 kodu ve `splash_varliklari_uret.py` bu durumda yeniden ele alınır.)
+**Sonuç 2: sonraki açılışlar** aynı uçuşun hızlı sürümü (≈ 0,9 s: yaklaşma + konma, gülen göz yok, balon yok).
+**Sonuç 3: yeni katman seti** (`hupo_katmanlar_v2.json`): kanatsız gövde (kanat altı Gemini bölgesel dolgusu), sol ve sağ kanat ayrı (sağ −30°…+25°, sol −12°…+45°; sağ kanat daha fazla yukarı kalkarsa yüzün önüne girer), kapalı ve **gülen** göz yamaları.
+**Doğrulama:** kareler gözle incelendi (halo düzeltildi); hareketin akıcılığı ve süreleri kullanıcının videoyu izlemesine bağlı, uygulamada denenmedi. **Bilinen sınır:** uçuşta ayaklar sabit (stilize), hava izi basit.
+
 ### 3.2 Sonraki açılışlar (dönen kullanıcı, ≈ 0,8 – 0,9 s)
 
 Native'de uyuyan Hupo → Flutter ilk karesi aynı → göz açılır, kısa kanat selamı (0,3 s) → Hupo, Giriş başlığındaki veya
