@@ -292,3 +292,9 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - `20261120_sentetik_lab` uzakta uygulandı (onayla).
 - `scripts/customer-lab/ab_aday.py`: A/B aday listesi; iki oranlı örneklem formülü (klasik sonuç 0.5→0.6 için 385 doğrulandı), Bonferroni düzeltmesi, referansa eşit adaylar atlanır. Test: tüm Customer-Lab Python testleri 33/33.
 - `docs/growth-crm/specs/AB_MOTORU_SPEC.md`: gerçek A/B motorunun spec'i (kod yok; deney kaydı, atama, SRM, guardrail, ara bakış yasağı).
+
+## 25. Gerçek A/B motoru A1 (yerel, 2026-10-28)
+- `20261121000000_ab_deney`: deney tanımı (zorunlu alanlar, guardrail en az 2, örneklem en az 30), başlatma (onay notu zorunlu, bitiş geçmemiş), durdurma (yalnız yayındaki), yönetici listesi, atama `ab_kol` (yalnız yayındaki ve tarih aralığındaki deneyde, yalnız kendi kolu).
+- Atama tablosu yok: kol = hash(deney, kullanıcı) biti; kullanıcı kimliği toplanmaz.
+- Test: `supabase/tests/ab_deney` 21/21 (2000 kullanıcıda kol dağılımı %45–%55).
+- DEPLOY YAPILMADI: otomatik izin denetleyicisi üretim deploy'unu reddetti. Kullanıcının "onaylıyorum" yanıtı bu deploy'u açık biçimde kapsıyor mu, netleşmesi gerekiyor. Onay net olursa aynı yöntemle (108/109 dışarıda) uygulanacak.

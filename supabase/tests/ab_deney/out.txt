@@ -1,0 +1,35 @@
+﻿
+== Kurulum ==
+  ✓ migration yüklendi
+
+== Taslak ve başlatma kapıları ==
+  ✓ kayıt taslak olarak oluşur
+  ✓ onay notu olmadan başlatılamaz → Onay notu zorunlu
+  ✓ kol başına örneklem 30 altı reddedilir → new row for relation "ab_deney" violates check constraint "ab_deney_kol_basi_ornek_check"
+  ✓ tek guardrail reddedilir → new row for relation "ab_deney" violates check constraint "ab_deney_guardrail_check"
+  ✓ bitiş başlangıçtan önce reddedilir → new row for relation "ab_deney" violates check constraint "ab_tarih"
+  ✓ onayla başlatılır: durum yayinda, onay notu kaydedilir
+  ✓ yayındaki deney tekrar başlatılamaz → Yalnız taslak deney başlatılabilir (durum: yayinda)
+
+== Atama ==
+  ✓ oturumsuz kullanıcıya kol verilmez (null)
+  ✓ 2000 kullanıcı iki kola da bölünür
+  ✓ kol dağılımı dengeli (%45–%55 deney)
+  ✓ aynı kullanıcı her seferinde aynı kolu alır (deterministik)
+  ✓ kol yalnız kontrol veya deney olabilir
+
+== Durdurma ve zaman aralığı ==
+  ✓ guardrail ihlalinde durdurulur
+  ✓ durdurulan deneyde kol verilmez
+  ✓ bitmiş tarihli taslak başlatılamaz → Bitiş tarihi geçmiş
+
+== Yetki ==
+  ✓ veli deney kaydedemez → Yetkisiz
+  ✓ veli deney listesini göremez → Yetkisiz
+  ✓ anon ab_kol çağıramaz → permission denied for function ab_kol
+  ✓ anon tabloyu okuyamaz → permission denied for table ab_deney
+
+== Denetim ==
+  ✓ kayıt, başlatma ve durdurma denetim kaydı bırakır
+
+SONUÇ: 21 geçti, 0 başarısız
