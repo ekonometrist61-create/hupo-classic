@@ -1276,6 +1276,42 @@
       }
     },
     "abDeney": {
+      "decision": {
+        "title": "Karar kaydı",
+        "note": "Analiz sonucunu girin. Sayılar analiz çıktısından yönetici tarafından girilir; sistem yeniden hesaplamaz. Bitiş tarihi geçmeden karar verilemez.",
+        "none": "Karar verilebilecek yayında veya durdurulmuş deney yok.",
+        "errors": {
+          "deney": "Önce bir deney seçin.",
+          "sayi": "Sonuç sayılarının tümünü girin."
+        },
+        "fields": {
+          "experiment": "Deney",
+          "choose": "Seçin…",
+          "outcome": "Sonuç durumu",
+          "control": "Kontrol oranı (%)",
+          "treatment": "Deney oranı (%)",
+          "p": "p-değeri",
+          "ciLow": "Güven aralığı alt (%)",
+          "ciHigh": "Güven aralığı üst (%)",
+          "decision": "Karar",
+          "srm": "SRM p-değeri (varsa)",
+          "reason": "Gerekçe"
+        },
+        "outcome": {
+          "karar_hazir": "Karar hazır",
+          "guardrail_ihlali": "Guardrail ihlali",
+          "srm_gecersiz": "SRM geçersiz",
+          "yetersiz_ornek": "Yetersiz örneklem"
+        },
+        "decisionOptions": {
+          "kazan_deney": "Deney kazandı",
+          "kazan_kontrol": "Kontrol kazandı",
+          "uygulama_yok": "Uygulama yok",
+          "tekrarla": "Tekrarla"
+        },
+        "submit": "Kararı kaydet",
+        "saved": "Karar kaydedildi."
+      },
       "title": "A/B deneyleri",
       "description": "Deney tanımı ve yaşam döngüsü. Başlatma onay notu ister; durdurma gerekçe ister. Sonuç analizi bu ekranda değildir.",
       "loading": "Yükleniyor…",

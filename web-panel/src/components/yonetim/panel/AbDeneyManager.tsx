@@ -5,6 +5,7 @@ import { useTranslations } from "next-intl";
 
 import { createClient } from "@/utils/supabase/client";
 import { cardClass, inputClass, labelClass, outlineBtn, primaryBtn, tdClass, thClass } from "./styles";
+import AbKararFormu from "./AbKararFormu";
 
 // admin_ab_deney_* RPC'leri (20261121000000_ab_deney.sql). Atama ekranda yok; yalnız yönetim.
 const ALFA = 0.05;
@@ -258,6 +259,8 @@ export default function AbDeneyManager() {
           </div>
         )}
       </section>
+
+      <AbKararFormu deneyler={liste ?? []} onSaved={yenile} />
     </div>
   );
 }

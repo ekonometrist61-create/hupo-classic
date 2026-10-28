@@ -315,3 +315,7 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - Test: `supabase/tests/ab_karar` 12/12.
 - SINIR: Sayılar yönetici tarafından, toplulaştırılmış analiz çıktısından girilir. Tablo sayıları yeniden hesaplamaz; deney olaylarının (dönüşüm verisi) veritabanına alınması ayrı bir iştir ve henüz yoktur. Bu nedenle kayıt "analiz kaydı"dır, bağımsız doğrulama değildir.
 - Karar kaydı için yönetici arayüzü (form) henüz yok; bir sonraki adım.
+
+## 29. A3 karar formu (yerel, 2026-10-28)
+- `AbKararFormu`: yayında veya durdurulmuş deneyler için karar kaydı formu (mevcut `admin_ab_karar_kaydet` RPC'si; yeni veritabanı değişikliği yok). Sunucu kurallarını (ara bakış, guardrail sırası) uygular; arayüz hatayı gösterir.
+- `tsc` ve `eslint` temiz; tarayıcı kontrolü yapılmadı.

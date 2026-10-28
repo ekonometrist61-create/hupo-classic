@@ -4746,3 +4746,6 @@ Paketler:
 ### K-0187 · 2026-10-28 · VT · A3 karar kaydı uzakta (onaylı, remote=20261122); test 12/12
 - Sınır: sayılar yönetici girişli; olay verisi (dönüşüm) DB'de yok → yeniden hesaplama yok.
 - Karar formu arayüzü henüz yok.
+
+### K-0188 · 2026-10-28 · YÖN · A3 karar formu (yerel; tsc/eslint temiz)
+- Yeni veritabanı değişikliği yok; tarayıcı kontrolü sizde.

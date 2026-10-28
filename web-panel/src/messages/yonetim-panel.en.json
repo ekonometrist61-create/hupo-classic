@@ -1276,6 +1276,42 @@
       }
     },
     "abDeney": {
+      "decision": {
+        "title": "Decision record",
+        "note": "Enter the analysis result. Numbers are entered by the admin from the analysis output; the system does not recalculate. A decision cannot be recorded before the end date.",
+        "none": "No running or stopped experiment is ready for a decision.",
+        "errors": {
+          "deney": "Choose an experiment first.",
+          "sayi": "Enter all result numbers."
+        },
+        "fields": {
+          "experiment": "Experiment",
+          "choose": "Choose…",
+          "outcome": "Outcome",
+          "control": "Control rate (%)",
+          "treatment": "Treatment rate (%)",
+          "p": "p-value",
+          "ciLow": "Confidence interval low (%)",
+          "ciHigh": "Confidence interval high (%)",
+          "decision": "Decision",
+          "srm": "SRM p-value (if any)",
+          "reason": "Reason"
+        },
+        "outcome": {
+          "karar_hazir": "Decision ready",
+          "guardrail_ihlali": "Guardrail breach",
+          "srm_gecersiz": "SRM invalid",
+          "yetersiz_ornek": "Insufficient sample"
+        },
+        "decisionOptions": {
+          "kazan_deney": "Treatment won",
+          "kazan_kontrol": "Control won",
+          "uygulama_yok": "No rollout",
+          "tekrarla": "Repeat"
+        },
+        "submit": "Save decision",
+        "saved": "Decision saved."
+      },
       "title": "A/B experiments",
       "description": "Experiment definition and lifecycle. Starting needs an approval note; stopping needs a reason. Result analysis is not on this screen.",
       "loading": "Loading…",
