@@ -119,6 +119,21 @@ Kullanıcı yalnızca kanadın değil **tüm vücudun** hareket etmesini, Hupo'n
 **Sonuç 3: yeni katman seti** (`hupo_katmanlar_v2.json`): kanatsız gövde (kanat altı Gemini bölgesel dolgusu), sol ve sağ kanat ayrı (sağ −30°…+25°, sol −12°…+45°; sağ kanat daha fazla yukarı kalkarsa yüzün önüne girer), kapalı ve **gülen** göz yamaları.
 **Doğrulama:** kareler gözle incelendi (halo düzeltildi); hareketin akıcılığı ve süreleri kullanıcının videoyu izlemesine bağlı, uygulamada denenmedi. **Bilinen sınır:** uçuşta ayaklar sabit (stilize), hava izi basit.
 
+### 3.1c Revize 2 (28 Ekim, kullanıcı geri bildirimi): gerçek kuş uçuşu: "Hupo Uçar"
+
+Geri bildirim: önceki sürümde Hupo gerçek bir kuş uçuşuyla gelmiyor, vücut hareketleri uygun değil. Kullanıcı iki referans video verdi (Shutterstock "owl flying green screen" klibi ve BBC Earth "Slow-Mo Barn Owl in Flight").
+**Referans durumu (dürüst):** Videoları izleyemedim. Shutterstock sayfası 403 verdi; YouTube sayfası yalnız başlığı döndürdü. **Hareket videolardan ölçülmedi.** Kullandığım dayanak: genel kuş uçuşu bilgisi + diğer kuşlardaki iniş çalışmaları (güvercin/atmaca: iniş sırasında gövde dikleşir, kanatlar geniş açılıp fren görevi görür, kuyruk aşağı iner, ayaklar öne uzanır). Baykuşa özgü ölçüm bulunamadı. **Videoların dosyası verilirse (kullanıcı indirip klasöre koyarsa) kare kare karşılaştırılır.**
+
+Yeni yaklaşım: kanat açısını oynatmak yerine **gerçek uçuş pozları** (kemik değil, poz sprite'ı):
+| Poz | Dosya | Anlam |
+|---|---|---|
+| P1 | `mobile-app/assets/hupo/splash/ucus/ucus_p1.webp` | Yukarı vuruş sonu: iki kanat tepede V, ayaklar karına kıvrık |
+| P2 | `ucus_p2.webp` | Orta vuruş: kanatlar yatay, süzülme |
+| P3 | `ucus_p3.webp` | Aşağı vuruş sonu: kanatlar aşağıda |
+| P4 | `ucus_p4.webp` | İniş freni: gövde dik, kanatlar geniş, bacaklar ve pençeler öne |
+Döngü P1→P2→P3→P2 (12 kare = 2,5 Hz); gövde aşağı vuruşta yükselir, yukarı vuruşta alçalır; inişte P4, yere değince katmanlı duruş pozuna geçilir (sıkışma + gölge). Pozlar Gemini ile master referansıyla üretildi (P3/P4 ikinci denemede), **göz arası mesafesiyle** hizalandı ve şeffaf sprite yapıldı (1500×1500, göz orta noktası (750, 640)).
+Çıktı: `uretim-2026-10-28/hupo-ucar-onizleme.mp4` (4,4 sn). **Bilinen sınırlar:** uçuş pozları master'ın birebir yeniden çizimi değil, aynı karakterin **yeniden üretilmiş** pozlarıdır (yüz ve renkler tutarlı, ince ayrıntı ve göz tonu hafif farklı; marka onayı gerekir); pozlar arası geçişler "çift kare" kesmedir, ara kare yok (çizgi film uçuşu gibi okunur, gerçek hareket akıcılığı kullanıcının izlemesine bağlı); P1–P4 toplam ≈ 650 KB, **mobil paket bütçesi (≤ 400 KB) aşılıyor**, Faz 4'te küçültülecek (ör. 1000 px, 3 poz).
+
 ### 3.2 Sonraki açılışlar (dönen kullanıcı, ≈ 0,8 – 0,9 s)
 
 Native'de uyuyan Hupo → Flutter ilk karesi aynı → göz açılır, kısa kanat selamı (0,3 s) → Hupo, Giriş başlığındaki veya

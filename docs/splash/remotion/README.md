@@ -10,7 +10,12 @@ Katmanlar `mobile-app/assets/hupo/splash/` içindeki `hupo_govde`, `hupo_kanat`,
   24–54 kanat selamı (−4°…+6°) · 26–46 altın yay · 38+ marka adı (harf harf) · 62+ konuşma balonu.
 - Çıktı: `../uretim-2026-10-28/hupo-uyanir-onizleme.mp4`.
 
-## Güncel: `HupoGelir` (kullanıcı isteğiyle tüm vücut uçuşu)
+## En güncel: `HupoUcar` (gerçek uçuş pozlarıyla)
+Plan §3.1c. Poz sprite'ları (`ucus_p1…p4.webp`, `mobile-app/assets/hupo/splash/ucus/`) ve duruş katmanları `public/` içine kopyalanır.
+Render: `npx remotion render src/index.ts HupoUcar out/hupo_ucar.mp4 --public-dir=public --codec=h264`.
+Çıktı: `../uretim-2026-10-28/hupo-ucar-onizleme.mp4`.
+
+## Önceki: `HupoGelir` (kanat açısı çırpma; gerçekçi bulunmadı)
 1080×1920, 30 fps, 132 kare (4,4 sn). Akış: plan §3.1b. Katman dosyaları (`public/` içine kopyalanır):
 `hupo_govde_kanatsiz`, `hupo_kanat_sag`, `hupo_kanat_sol`, `hupo_goz_mutlu`, `hupo_goz_kapali` (`.webp`, `mobile-app/assets/hupo/splash/`).
 Render: `npx remotion render src/index.ts HupoGelir out/hupo_gelir.mp4 --public-dir=public --codec=h264`.
