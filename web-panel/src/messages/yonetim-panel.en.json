@@ -1310,6 +1310,9 @@
           "tekrarla": "Repeat"
         },
         "submit": "Save decision",
+        "fill": "Fill from database",
+        "filled": "Counts loaded from the database (control n={kn}, treatment n={dn}). Rates, p and 95% CI were computed from these counts.",
+        "lowN": "Fewer than 30 per arm (threshold {esik}); counts are hidden.",
         "saved": "Decision saved."
       },
       "title": "A/B experiments",

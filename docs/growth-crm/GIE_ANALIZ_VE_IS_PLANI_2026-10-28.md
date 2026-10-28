@@ -330,3 +330,9 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - `20261123000000_ab_olay` uzakta uygulandı (onayla). Temizlik zamanlayıcıları aktif: `ab_tekillik_temizle` 03:40, `ab_gunluk_temizle` 03:42 (UTC).
 - **Mobil (D3) kararı:** Mobil olay entegrasyonu bu aşamada yapılmayacak. Gerekçe: çalışan deney yok; ayrı bir mağaza sürümü için ayrı yayın kararı gerekir. Karar: web entegrasyonu (I2–I3) tamamlanıp ilk web deneyi doğrulanmadan mobil kod yazılmaz; mobil olay çağrıları bir sonraki planlı uygulama sürümüne eklenir, ayrıca yayın yapılmaz.
 - Mobil ilk deney, mobil kol kayıtlarının web'deki deneyle aynı şemayı kullandığı test edildikten sonra başlatılır.
+
+## 32. I2–I4 durumu (2026-10-28)
+- **I2 (tekillik temizliği):** I1 ile birlikte tamamlandı (`ab_tekillik_temizle`, cron 03:40 UTC; uzakta doğrulandı).
+- **I3 (karar formu sayıları):** Tamam (yerel). "Veritabanından doldur" düğmesi `admin_ab_sayilar` ile n ve x alır; oran, p ve %95 güven aralığı bu sayılardan hesaplanır. Tarayıcı p-değeri hesabı Python referansıyla bire bir eşleşti (p=0.004732; CI 0.0314–0.1712). Yeni veritabanı değişikliği yok.
+- **I4 (uygulama entegrasyonu):** Bloklu. Gerekçe: deneyin kendisi henüz yok. Maruziyet kaydı, kullanıcıya bir kol (kontrol veya deney) gösterilmesini gerektirir; ürün tarafında hangi varyantın (örn. fiyat veya paket sunumu) gösterileceği belirlenmeden kod yazılamaz. Ayrıca fiyat değişikliği insan onaylı olmalı (proje kuralı). Gerekli karar: birincil hipotez için görülecek varyant.
+- **Mobil (BACKLOG-M1):** Ertelendi; koşulları günlükte.

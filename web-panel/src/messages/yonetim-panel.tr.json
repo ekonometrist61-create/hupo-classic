@@ -1310,6 +1310,9 @@
           "tekrarla": "Tekrarla"
         },
         "submit": "Kararı kaydet",
+        "fill": "Veritabanından doldur",
+        "filled": "Sayılar veritabanından alındı (kontrol n={kn}, deney n={dn}). Oran, p ve %95 güven aralığı bu sayılardan hesaplandı.",
+        "lowN": "Kol başına örneklem 30'un altında (eşik {esik}); sayılar gizli.",
         "saved": "Karar kaydedildi."
       },
       "title": "A/B deneyleri",

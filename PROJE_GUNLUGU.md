@@ -4765,3 +4765,6 @@ Paketler:
 - Koşullar: (1) web ilk A/B deneyi uçtan uca doğrulanmış olacak; (2) mobil çağrılar web ile aynı şemayı kullanacak (`ab_maruziyet_kaydet`, `ab_donusum_kaydet`); (3) bir sonraki planlı uygulama sürümüne eklenecek.
 - Sahip: proje sahibi. Yapılma zamanı: web deneyi doğrulandıktan sonra, ayrı bir karar olmadan başlatılmaz.
 - Not: Bu kayıt, D3 kararının "ne zaman yapılacağı" kısmını kalıcı hale getirir.
+
+### K-0192 · 2026-10-28 · YÖN · I3 karar formu veritabanından doldurma (yerel; TS=Python çapraz kontrolü); I4 bloklu (varyant kararı)
+- I2 zaten I1'de tamam. I4 için ürün kararı gerekli: hangi varyant gösterilecek.

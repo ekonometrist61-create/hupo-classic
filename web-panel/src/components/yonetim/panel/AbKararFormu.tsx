@@ -4,14 +4,41 @@ import { useState, type FormEvent } from "react";
 import { useTranslations } from "next-intl";
 
 import { createClient } from "@/utils/supabase/client";
-import { cardClass, inputClass, labelClass, primaryBtn } from "./styles";
+import { cardClass, inputClass, labelClass, outlineBtn, primaryBtn } from "./styles";
 
 // admin_ab_karar_kaydet (20261122000000_ab_karar.sql). Kuralları sunucu uygular:
 // bitiş öncesi karar yok; guardrail kararı yalnız durdurulmuş deneyde.
-type Deney = { id: string; ad: string; durum: string };
+type Deney = { id: string; ad: string; durum: string; birincil_metrik: string };
 
 type Sonuc = "karar_hazir" | "guardrail_ihlali" | "srm_gecersiz" | "yetersiz_ornek";
 type Karar = "kazan_deney" | "kazan_kontrol" | "uygulama_yok" | "tekrarla";
+
+type KolSayi = { maruziyet: number | null; metrikler: Record<string, number> | null };
+type SayilarYanit = { esik: number; kollar: { kontrol: KolSayi; deney: KolSayi } };
+
+// Normal dağılım: Abramowitz-Stegun 7.1.26 erf yaklaşımı (hata < 1.5e-7).
+// Referans hesap: scripts/ab-analiz/analiz.py (iki oranlı z, iki kuyruklu).
+function erf(x: number): number {
+  const s = Math.sign(x);
+  const a = Math.abs(x);
+  const t = 1 / (1 + 0.3275911 * a);
+  const y = 1 - ((((1.061405429 * t - 1.453152027) * t + 1.421413741) * t - 0.284496736) * t + 0.254829592) * t * Math.exp(-a * a);
+  return s * y;
+}
+const normalCdf = (z: number) => 0.5 * (1 + erf(z / Math.SQRT2));
+
+// Kontrol (xk/nk) ve deney (xd/nd) için p (iki kuyruklu) ve %95 güven aralığı (oran farkı, 0–1 ölçeğinde).
+export function ikiOranli(xk: number, nk: number, xd: number, nd: number) {
+  const pk = xk / nk;
+  const pd = xd / nd;
+  const fark = pd - pk;
+  const havuz = (xk + xd) / (nk + nd);
+  const se0 = Math.sqrt(havuz * (1 - havuz) * (1 / nk + 1 / nd));
+  const z = se0 === 0 ? 0 : fark / se0;
+  const p = 2 * (1 - normalCdf(Math.abs(z)));
+  const se = Math.sqrt((pk * (1 - pk)) / nk + (pd * (1 - pd)) / nd);
+  return { p, lo: fark - 1.959964 * se, hi: fark + 1.959964 * se };
+}
 
 export default function AbKararFormu({ deneyler, onSaved }: { deneyler: Deney[]; onSaved: () => void }) {
   const t = useTranslations("yonetim.abDeney.decision");
@@ -27,6 +54,41 @@ export default function AbKararFormu({ deneyler, onSaved }: { deneyler: Deney[];
   const [karar, setKarar] = useState<Karar>("kazan_deney");
   const [neden, setNeden] = useState("");
   const [busy, setBusy] = useState(false);
+  const [dolduruluyor, setDolduruluyor] = useState(false);
+
+  // Sayıları veritabanından alır (admin_ab_sayilar); oran, p ve güven aralığını bu sayılardan hesaplar.
+  const veritabanindanDoldur = async () => {
+    setHata(null);
+    setMesaj(null);
+    const d = uygun.find((x) => x.id === deneyId);
+    if (!d) {
+      setHata(t("errors.deney"));
+      return;
+    }
+    setDolduruluyor(true);
+    const { data, error } = await createClient().rpc("admin_ab_sayilar", { p_deney: d.id });
+    setDolduruluyor(false);
+    if (error) {
+      setHata(error.message);
+      return;
+    }
+    const y = data as SayilarYanit;
+    const k = y.kollar.kontrol;
+    const dy = y.kollar.deney;
+    if (k.maruziyet === null || dy.maruziyet === null || !k.maruziyet || !dy.maruziyet) {
+      setHata(t("lowN", { esik: y.esik }));
+      return;
+    }
+    const xk = k.metrikler?.[d.birincil_metrik] ?? 0;
+    const xd = dy.metrikler?.[d.birincil_metrik] ?? 0;
+    const r = ikiOranli(xk, k.maruziyet, xd, dy.maruziyet);
+    setKontrol(((xk / k.maruziyet) * 100).toFixed(2));
+    setDeney(((xd / dy.maruziyet) * 100).toFixed(2));
+    setP(r.p.toFixed(6));
+    setCiAlt((r.lo * 100).toFixed(2));
+    setCiUst((r.hi * 100).toFixed(2));
+    setMesaj(t("filled", { kn: k.maruziyet, dn: dy.maruziyet }));
+  };
   const [hata, setHata] = useState<string | null>(null);
   const [mesaj, setMesaj] = useState<string | null>(null);
 
@@ -141,6 +203,9 @@ export default function AbKararFormu({ deneyler, onSaved }: { deneyler: Deney[];
             <input id="karar-neden" type="text" className={inputClass} value={neden} maxLength={500} onChange={(e) => setNeden(e.target.value)} required />
           </div>
           <div className="flex items-end sm:col-span-2 lg:col-span-3">
+            <button type="button" className={`${outlineBtn} mr-3 w-full sm:w-auto`} disabled={dolduruluyor || !deneyId} onClick={veritabanindanDoldur}>
+              {t("fill")}
+            </button>
             <button type="submit" className={`${primaryBtn} w-full sm:w-auto`} disabled={busy}>{t("submit")}</button>
           </div>
         </form>
