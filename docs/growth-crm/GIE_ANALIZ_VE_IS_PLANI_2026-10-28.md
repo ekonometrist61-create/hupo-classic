@@ -319,3 +319,9 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 ## 29. A3 karar formu (yerel, 2026-10-28)
 - `AbKararFormu`: yayında veya durdurulmuş deneyler için karar kaydı formu (mevcut `admin_ab_karar_kaydet` RPC'si; yeni veritabanı değişikliği yok). Sunucu kurallarını (ara bakış, guardrail sırası) uygular; arayüz hatayı gösterir.
 - `tsc` ve `eslint` temiz; tarayıcı kontrolü yapılmadı.
+
+## 30. Deney olay kaydı I1 (yerel, 2026-10-28; D1–D4 onaylı)
+- `20261123000000_ab_olay`: `ab_maruziyet_kaydet` (kullanıcı başına bir kez; kol sunucuda), `ab_donusum_kaydet` (önce maruziyet; yalnız tanımlı metrikler; kullanıcı başına bir kez), `admin_ab_sayilar` (kol başına n<30 → gizli), temizlik işleri (tekillik 7 gün, günlük 400 gün sonra bitiş).
+- Tablolarda kullanıcı kimliği yok; tekillik anahtarı SHA-256 özeti (D1).
+- Test `supabase/tests/ab_olay` 24/24.
+- Uzakta uygulanmadı; deploy onayı bekleniyor. D3 (mobil) uygulama entegrasyonu ayrı sürüm onayı gerektirir.

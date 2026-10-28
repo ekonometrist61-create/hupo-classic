@@ -36,3 +36,9 @@ Durum: **taslak, kod ve veritabanı değişikliği yok.** Tarih: 2026-10-28. Ama
 - İstemci kol bilgisi gönderemez (test).
 - n < 30 günler raporlanmaz (test).
 - Tekillik kaydı 7 gün sonra silinir (test: zaman ilerletme).
+
+## 7. Kararlar (2026-10-28, kullanıcı onaylı)
+- **D1 tekillik (karar: kabul):** Kullanıcı başına bir kez sayımı için 7 günlük tekillik kaydı tutulur. Kayıt, deney + metrik + kullanıcı kimliğinin SHA-256 özetini içerir; kullanıcı kimliği saklanmaz, 7 gün sonra silinir. Analiz tablolarında kimlik yoktur.
+- **D2 birincil metrik (karar: uygun):** 7 gün içinde ücretli ödeme oranı.
+- **D3 uygulama kapsamı (karar: web ve mobil):** Mobil kısmı ayrı sürüm onayıyla yayınlanır; sunucu tarafı ortaktır.
+- **D4 saklama (karar: uygun):** Toplulaştırılmış günlük tablo, deney bitişinden sonra 400 gün tutulur; ardından silinir.

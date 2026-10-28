@@ -4753,3 +4753,6 @@ Paketler:
 ### K-0189 · 2026-10-28 · YÖN · Deney olay ingest tasarım taslağı (kod yok); bellek durumu güncellendi
 - `docs/growth-crm/specs/AB_OLAY_INGEST_SPEC.md`: gizlilik sınırı, önerilen yaklaşım, açık kararlar D1–D4 (kullanıcı yanıtı bekleniyor), onaylı aşamalar I0–I4.
 - Veritabanı ve deploy değişikliği yok.
+
+### K-0190 · 2026-10-28 · VT · Deney olay kaydı I1 (yerel, 24/24); D1–D4 kararları uygulandı
+- `20261123_ab_olay` uzakta değil; deploy onayı bekleniyor.
