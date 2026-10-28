@@ -14,17 +14,27 @@ import 'dart:math' as math;
 
 import 'package:flutter/material.dart';
 
+import '../../services/app_open_service.dart';
 import '../../theme/app_theme.dart';
 import 'wing_signature_painter.dart';
 
 const String kHupoEntranceAsset = 'assets/hupo/uygulama/hero_splash.webp';
 
-const Duration kSignatureEntranceDuration = Duration(milliseconds: 1600);
+const Duration kSignatureEntranceDuration = Duration(milliseconds: 2000);
+
+/// Sistem (native) splash'indeki Hupo'nun en uzun kenarı (dp).
+///
+/// Android 12+ ikonu ve iOS launch görseli bu ölçüyle üretilir
+/// (`tool/splash_varliklari_uret.py`); sahne ilk karede Hupo'yu aynı boyutta ve
+/// ekran ortasında çizer, böylece sistemden uygulamaya geçişte sıçrama olmaz.
+const double kNativeSplashHupoBoyu = 144;
 
 class _Faz {
   static const sparkBit   = 300 / 1600;  // 0.1875
   static const uyanmaBit  = 750 / 1600;  // 0.46875
   static const imzaBit    = 1150 / 1600; // 0.71875
+  static const yerlesmeBit = 0.85;       // marka adı/halka tamamlanır
+  static const cikisBas    = 0.90;       // ön plan solmaya başlar (perde)
 }
 
 /// Marka açılış sahnesi.
@@ -35,12 +45,16 @@ class HupoSignatureEntrance extends StatefulWidget {
     this.assetPath = kHupoEntranceAsset,
     this.reducedMotion = false,
     this.lowPerformance = false,
+    this.kisa = false,
   });
 
   final VoidCallback onFinished;
   final String assetPath;
   final bool reducedMotion;
   final bool lowPerformance;
+
+  /// Sonraki açılışlar için kısa sahne: aynı akış daha hızlı, marka adı yok.
+  final bool kisa;
 
   @override
   State<HupoSignatureEntrance> createState() => _HupoSignatureEntranceState();
@@ -57,8 +71,8 @@ class _HupoSignatureEntranceState extends State<HupoSignatureEntrance>
     _controller = AnimationController(
       vsync: this,
       duration: widget.reducedMotion
-          ? const Duration(milliseconds: 500)
-          : kSignatureEntranceDuration,
+          ? kHupoStatikKare
+          : (widget.kisa ? kHupoKisaSahne : kSignatureEntranceDuration),
     );
     _controller.addStatusListener(_durumDinle);
     _controller.forward();
@@ -80,11 +94,25 @@ class _HupoSignatureEntranceState extends State<HupoSignatureEntrance>
 
   @override
   Widget build(BuildContext context) {
+    // Sahne Scaffold/Material dışında çizilir: Material olmadan Text, Flutter'ın
+    // "eksik Material" stilini (tek aralıklı font + çift alt çizgi) alır.
+    // Saydam Material doğru DefaultTextStyle'ı sağlar.
+    return Material(
+      type: MaterialType.transparency,
+      child: _sahne(context),
+    );
+  }
+
+  Widget _sahne(BuildContext context) {
     if (widget.reducedMotion) {
       return _StatikMarkaKaresi(assetPath: widget.assetPath);
     }
 
     final izGorunur = !widget.lowPerformance;
+    final genislik = MediaQuery.sizeOf(context).width;
+    final tabanBoy = math.min(genislik * 0.62, 360.0);
+    // İlk karede Hupo, sistem splash'indeki ölçüde başlar.
+    final baslangicOlcek = kNativeSplashHupoBoyu / tabanBoy;
 
     return AnimatedBuilder(
       animation: _controller,
@@ -108,22 +136,27 @@ class _HupoSignatureEntranceState extends State<HupoSignatureEntrance>
                 .clamp(0.0, 1.0);
 
         // Sahne 4
-        final yerlesmeHam = ((t - _Faz.imzaBit) / (1 - _Faz.imzaBit))
+        // Yerleşme %85'te biter; %85–90 marka adı tam görünür kalır (okunsun).
+        final yerlesmeHam = ((t - _Faz.imzaBit) / (_Faz.yerlesmeBit - _Faz.imzaBit))
             .clamp(0.0, 1.0);
         final yerlesmeT = Curves.easeOut.transform(yerlesmeHam);
+
+        // Çıkış: yalnız ön plan (Hupo, iz, ad) son %8'de kaybolur; geriye düz
+        // zemin kalır ve SplashGate onu perde gibi açar. Böylece altındaki içerik
+        // büyük Hupo'nun hayaletiyle üst üste görünmez.
+        final cikisT = ((t - _Faz.cikisBas) / (1 - _Faz.cikisBas)).clamp(0.0, 1.0);
 
         return Stack(
           fit: StackFit.expand,
           children: [
-            // ── Sahne 1: Zemin gradyanı ──────────────────────────────────────
+            // ── Zemin: ilk karede sistem splash'iyle aynı düz turkuaz ────────
             DecoratedBox(
               decoration: BoxDecoration(
                 gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
                   colors: [
-                    Color.lerp(
-                        AppColors.primaryDark, AppColors.primary, zeminT)!,
+                    AppColors.primary,
                     Color.lerp(
                         AppColors.primary, AppColors.primaryLight, zeminT)!,
                   ],
@@ -131,58 +164,69 @@ class _HupoSignatureEntranceState extends State<HupoSignatureEntrance>
               ),
             ),
 
-            // ── Sahne 1: Bokeh partiküller (sağ üst köşe atmosferi) ──────────
-            if (izGorunur && zeminT > 0)
-              Positioned.fill(
-                child: IgnorePointer(
-                  child: CustomPaint(
-                    painter: _BokehPainter(progress: zeminT),
-                  ),
-                ),
-              ),
+            Opacity(
+              opacity: 1 - cikisT,
+              child: Stack(
+                fit: StackFit.expand,
+                children: [
+                  // ── Sahne 1: Bokeh partiküller (sağ üst köşe atmosferi) ────
+                  if (izGorunur && zeminT > 0)
+                    Positioned.fill(
+                      child: IgnorePointer(
+                        child: CustomPaint(
+                          painter: _BokehPainter(progress: zeminT),
+                        ),
+                      ),
+                    ),
 
-            // ── Sahne 2/4: Hupo + altın halka ───────────────────────────────
-            if (uyanmaHam > 0)
-              Align(
-                alignment: Alignment(0, 0.28 - 0.06 * yerlesmeT),
-                child: _HupoGovdesi(
-                  uyanmaT: uyanmaT,
-                  imzaHam: imzaHam,
-                  yerlesmeT: yerlesmeT,
-                  assetPath: widget.assetPath,
-                  dalgaGoster: izGorunur,
-                ),
-              ),
-
-            // ── Sahne 3: Hilal yay + kıvılcımlar ────────────────────────────
-            if (izGorunur && t >= _Faz.uyanmaBit)
-              Positioned.fill(
-                child: IgnorePointer(
-                  child: CustomPaint(
-                    painter: WingSignaturePainter(
-                      progress: imzaHam,
-                      wingOrigin: const Alignment(0.62, 0.42),
+                  // ── Hupo + altın halka: ilk kareden itibaren görünür ──────
+                  Align(
+                    alignment: Alignment(
+                      0,
+                      0.28 * uyanmaT - 0.06 * yerlesmeT,
+                    ),
+                    child: _HupoGovdesi(
+                      uyanmaT: uyanmaT,
+                      imzaHam: imzaHam,
+                      yerlesmeT: yerlesmeT,
+                      baslangicOlcek: baslangicOlcek,
+                      assetPath: widget.assetPath,
+                      dalgaGoster: izGorunur,
                     ),
                   ),
-                ),
-              ),
 
-            // ── Sahne 4: Marka adı ───────────────────────────────────────────
-            if (yerlesmeHam > 0)
-              Align(
-                alignment: const Alignment(0, 0.78),
-                child: Opacity(
-                  opacity: yerlesmeT,
-                  child: Text(
-                    'Hupolingo',
-                    style: appText(
-                      size: 34,
-                      weight: FontWeight.w900,
-                      color: Colors.white,
+                  // ── Sahne 3: Hilal yay + kıvılcımlar ──────────────────────
+                  if (izGorunur && t >= _Faz.uyanmaBit)
+                    Positioned.fill(
+                      child: IgnorePointer(
+                        child: CustomPaint(
+                          painter: WingSignaturePainter(
+                            progress: imzaHam,
+                            wingOrigin: const Alignment(0.62, 0.42),
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
+
+                  // ── Sahne 4: Marka adı (kısa sahnede yok) ─────────────────
+                  if (!widget.kisa && yerlesmeHam > 0)
+                    Align(
+                      alignment: const Alignment(0, 0.78),
+                      child: Opacity(
+                        opacity: yerlesmeT,
+                        child: Text(
+                          'Hupolingo',
+                          style: appText(
+                            size: 34,
+                            weight: FontWeight.w900,
+                            color: Colors.white,
+                          ),
+                        ),
+                      ),
+                    ),
+                ],
               ),
+            ),
           ],
         );
       },
@@ -197,6 +241,7 @@ class _HupoGovdesi extends StatelessWidget {
     required this.uyanmaT,
     required this.imzaHam,
     required this.yerlesmeT,
+    required this.baslangicOlcek,
     required this.assetPath,
     required this.dalgaGoster,
   });
@@ -204,6 +249,9 @@ class _HupoGovdesi extends StatelessWidget {
   final double uyanmaT;
   final double imzaHam;
   final double yerlesmeT;
+
+  /// İlk karedeki ölçek: sistem splash'indeki Hupo boyuna eşit.
+  final double baslangicOlcek;
   final String assetPath;
   final bool dalgaGoster;
 
@@ -213,47 +261,40 @@ class _HupoGovdesi extends StatelessWidget {
     final tabanBoy   = math.min(genislik * 0.62, 360.0);
     final ringBoy    = tabanBoy * 1.28;
 
-    final yukseklik = -30 * uyanmaT;
     final nefes     = dalgaGoster ? math.sin(imzaHam * math.pi) : 0.0;
-    final olcek     = 0.92 + 0.08 * uyanmaT + 0.02 * nefes + 0.01 * yerlesmeT;
+    final olcek     = baslangicOlcek + (1 - baslangicOlcek) * uyanmaT +
+        0.02 * nefes + 0.01 * yerlesmeT;
 
-    return Transform.translate(
-      offset: Offset(0, yukseklik),
-      child: Transform.scale(
-        scale: olcek,
-        alignment: Alignment.bottomCenter,
-        child: Opacity(
-          opacity: uyanmaT.clamp(0.0, 1.0),
-          child: SizedBox(
-            width: ringBoy,
-            height: ringBoy,
-            child: Stack(
-              alignment: Alignment.center,
-              clipBehavior: Clip.none,
-              children: [
-                // Altın halka — Sahne 4'te kanat izinden oluşur
-                if (yerlesmeT > 0)
-                  SizedBox.expand(
-                    child: CustomPaint(
-                      painter: _GoldenRingPainter(progress: yerlesmeT),
-                    ),
-                  ),
-
-                // Karakter görseli
-                SizedBox(
-                  width: tabanBoy,
-                  height: tabanBoy,
-                  child: Image.asset(
-                    assetPath,
-                    fit: BoxFit.contain,
-                    alignment: Alignment.bottomCenter,
-                    gaplessPlayback: true,
-                    errorBuilder: (_, __, ___) => const SizedBox.shrink(),
-                  ),
+    // Merkezden ölçeklenir: ilk karede Hupo ekran ortasında, native ikonla aynı yerde.
+    return Transform.scale(
+      scale: olcek,
+      child: SizedBox(
+        width: ringBoy,
+        height: ringBoy,
+        child: Stack(
+          alignment: Alignment.center,
+          clipBehavior: Clip.none,
+          children: [
+            // Altın halka — Sahne 4'te kanat izinden oluşur
+            if (yerlesmeT > 0)
+              SizedBox.expand(
+                child: CustomPaint(
+                  painter: _GoldenRingPainter(progress: yerlesmeT),
                 ),
-              ],
+              ),
+
+            // Karakter görseli (native splash gibi ortalı)
+            SizedBox(
+              width: tabanBoy,
+              height: tabanBoy,
+              child: Image.asset(
+                assetPath,
+                fit: BoxFit.contain,
+                gaplessPlayback: true,
+                errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+              ),
             ),
-          ),
+          ],
         ),
       ),
     );

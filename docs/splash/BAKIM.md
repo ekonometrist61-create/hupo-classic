@@ -1,7 +1,13 @@
 # HUPO SIGNATURE ENTRANCE — Kanat İmzası
 
 > Uygulama açılış deneyiminin bakım dokümantasyonu.
-> Son güncelleme: 10 Ekim 2026
+> Son güncelleme: 28 Ekim 2026
+>
+> **28 Ekim 2026 (Faz 1, bkz. [ACILIS_SENARYOSU_PLANI.md](ACILIS_SENARYOSU_PLANI.md)):** bu belgedeki
+> durum tablosu (§4) ve süreler eskidir. Güncel davranış: yalnız iki durum (ilk açılış 2000 ms + marka sesi;
+> sonraki açılış 900 ms kısa sahne, sessiz), hareket azalt → statik kare, dokununca 600 ms sonra atlama.
+> `warmStart/resume/directRedirect` kaldırıldı. Sistem splash'i (Android 12+, eski Android, iOS) sahnenin
+> ilk karesiyle aynı Hupo'dur: `mobile-app/tool/splash_varliklari_uret.py`. Sahne `Material` altında çizilir.
 
 ---
 

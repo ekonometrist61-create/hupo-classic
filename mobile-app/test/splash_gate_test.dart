@@ -47,17 +47,48 @@ void main() {
     expect(find.text('asıl uygulama'), findsOneWidget);
   });
 
-  testWidgets('hareket azaltılmışsa karşılama anında kalkar, çökme olmaz',
+  testWidgets('hareket azaltılmışsa yalnız statik kare gösterilir, çökme olmaz',
       (tester) async {
     await tester.pumpWidget(await _uygulama(ilkAcilis: false, azalt: true));
     await tester.pump();
-    // Hareket azalt: tam sahne oynatılmaz, yalnızca kısa statik karşılama.
-    expect(find.byType(HupoSignatureEntrance), findsNothing);
+    // Hareket azalt: hareketli sahne yok; statik kare (Hupolingo) görünür.
+    expect(find.text('Hupolingo'), findsOneWidget);
 
     await tester.pump(const Duration(milliseconds: 1600));
     await tester.pumpAndSettle();
+    expect(find.byType(HupoSignatureEntrance), findsNothing);
     expect(find.text('asıl uygulama'), findsOneWidget);
     expect(tester.takeException(), isNull);
+  });
+
+  testWidgets('sonraki açılışta kısa sahne oynar ve 900 ms + perdede biter',
+      (tester) async {
+    await tester.pumpWidget(await _uygulama(ilkAcilis: false));
+    await tester.pump();
+    expect(find.byType(HupoSignatureEntrance), findsOneWidget);
+
+    await tester.pump(const Duration(milliseconds: 900));
+    await tester.pump(const Duration(milliseconds: 400));
+    await tester.pumpAndSettle();
+    expect(find.byType(HupoSignatureEntrance), findsNothing);
+    expect(find.text('asıl uygulama'), findsOneWidget);
+  });
+
+  testWidgets('dokunma 600 ms öncesinde sahneyi atlamaz, sonrasında atlar',
+      (tester) async {
+    await tester.pumpWidget(await _uygulama());
+    await tester.pump(const Duration(milliseconds: 200));
+    await tester.tap(find.byType(HupoSignatureEntrance));
+    await tester.pump(const Duration(milliseconds: 500));
+    // Hâlâ oynuyor (eşik dolmadı).
+    expect(find.byType(HupoSignatureEntrance), findsOneWidget);
+
+    await tester.pump(const Duration(milliseconds: 100));
+    await tester.tap(find.byType(HupoSignatureEntrance));
+    await tester.pump(const Duration(milliseconds: 400));
+    await tester.pumpAndSettle();
+    expect(find.byType(HupoSignatureEntrance), findsNothing);
+    expect(find.text('asıl uygulama'), findsOneWidget);
   });
 
   testWidgets('karşılama kalkmadan sayfa kapanırsa zamanlayıcı sızmaz',

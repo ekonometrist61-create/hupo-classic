@@ -1,12 +1,12 @@
 // Uygulama açılış kapısı: asıl içerik (giriş ya da ana kabuk) altta arka planda
-// hazırlanırken Hupo marka sahnesi üstte oynar, sonra yumuşakça kaybolur.
+// hazırlanırken Hupo marka sahnesi üstte oynar, sonra perde gibi açılır.
 //
-// Tasarım kuralları (bkz. docs/splash/BAKIM.md):
-//  * İlk açılış / soğuk açılış → tam "Kanat İmzası" sahnesi (0–1600 ms).
-//  * Sıcak açılış              → 600 ms mikro karşılama.
-//  * Arka plandan dönüş        → animasyon YENİDEN OYNATILMAZ.
-//  * Deep link / auth redirect → sahne atlanır, zorla ana sayfaya yönlendirilmez.
-//  * Hareket azalt             → statik marka karesi.
+// Tasarım kuralları (bkz. docs/splash/ACILIS_SENARYOSU_PLANI.md, BAKIM.md):
+//  * İlk açılış            → tam "Kanat İmzası" sahnesi (1600 ms) + marka sesi.
+//  * Sonraki açılışlar     → kısa sahne (900 ms), sessiz.
+//  * Hareket azalt         → statik marka karesi.
+//  * Arka plandan dönüş    → SplashGate yeniden kurulmaz; sahne tekrar oynamaz.
+//  * Dokunma               → 600 ms sonra sahne atlanır.
 //
 // Sahne, içeriğin hazır olmasını BEKLEMEZ: kendi süresiyle biter ve altta
 // hazır olan içerik ortaya çıkar. Böylece gereksiz bekleme yoktur.
@@ -14,6 +14,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../services/app_open_service.dart';
@@ -40,14 +41,15 @@ class _SplashGateState extends ConsumerState<SplashGate>
   /// Sahne kalıcı olarak kaldırıldı mı?
   bool _kaldirildi = false;
 
-  /// Çıkış animasyonu başladı mı?
+  /// Çıkış animasyonu (perde) başladı mı?
   bool _kapaniyor = false;
 
-  /// Mikro karşılama zamanlayıcısı (tam sahne olmayan durumlar için).
+  /// Perde sonrası kaldırma zamanlayıcısı.
   Timer? _zamanlayici;
 
-  /// Arka plandan dönüş algılandı mı? (resume → sahne tekrar oynamaz)
-  bool _arkaPlandanDondu = false;
+  /// Dokunarak atlama eşiği doldu mu? (Timer: test ortamında sahte zamanla uyumlu.)
+  bool _atlanabilir = false;
+  Timer? _atlamaZamanlayici;
 
   @override
   void initState() {
@@ -57,47 +59,32 @@ class _SplashGateState extends ConsumerState<SplashGate>
     final prefs = ref.read(sharedPreferencesProvider);
     final settings = ref.read(settingsProvider);
 
-    final kind = resolveAppOpenKind(
-      firstGreetingDone: firstGreetingDone(prefs),
-      resumedFromBackground: false,
-      isDeepLink: false,
-    );
+    final kind = resolveAppOpenKind(firstGreetingDone: firstGreetingDone(prefs));
     _plan = planAppOpen(kind: kind, reducedMotion: settings.reduceMotion);
 
-    // Marka sesi YALNIZCA tam sahnede çalınır. Kısa/atlanan açılışlarda
-    // uygulama açılışında ses çalınmaz (teknik gereksinim).
-    if (_plan.playFullBrandScene) {
-      AudioManager.instance.play(AudioEvent.brand);
-    }
+    _atlamaZamanlayici = Timer(kHupoAtlamaEsigi, () => _atlanabilir = true);
 
-    // Tam sahne yoksa (mikro karşılama ya da atla) süre dolunca kapat.
-    if (!_plan.playFullBrandScene) {
-      if (_plan.skip) {
-        _kaldirildi = true;
-      } else {
-        _zamanlayici = Timer(_plan.duration, _kapat);
-      }
+    // Marka sesi YALNIZCA ilk açılışta, hareketli tam sahnede çalınır.
+    if (_plan.playBrandSound) {
+      AudioManager.instance.play(AudioEvent.brand);
     }
   }
 
   @override
   void dispose() {
     _zamanlayici?.cancel();
+    _atlamaZamanlayici?.cancel();
     WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 
   @override
   void didChangeAppLifecycleState(AppLifecycleState state) {
-    // Arka plana gidip dönerse sahne yeniden oynatılmaz.
-    if (state == AppLifecycleState.resumed && !_kaldirildi) {
-      _arkaPlandanDondu = true;
-      // Tam sahne oynarken geri dönüldüyse sahneyi hemen bitir.
-      if (_plan.playFullBrandScene) _kapat();
-    }
+    // Sahne oynarken arka plana gidip dönülürse hemen bitir.
+    if (state == AppLifecycleState.resumed && !_kaldirildi) _kapat();
   }
 
-  /// Sahneyi yumuşakça kapatır (fade-out) ve ardından kaldırır.
+  /// Sahneyi perde gibi açar (fade-out) ve ardından kaldırır.
   void _kapat() {
     if (!mounted || _kapaniyor || _kaldirildi) return;
     setState(() => _kapaniyor = true);
@@ -105,16 +92,21 @@ class _SplashGateState extends ConsumerState<SplashGate>
     _zamanlayici = Timer(Duration(milliseconds: solmaMs), () {
       if (!mounted) return;
       setState(() => _kaldirildi = true);
-      // Tam sahne gösterildiyse bir kez işaretle (kalıcı, oturumdan bağımsız).
-      if (_plan.playFullBrandScene) {
+      // İlk karşılama gösterildiyse bir kez işaretle (kalıcı, oturumdan bağımsız).
+      if (_plan.kind == AppOpenKind.firstLaunch) {
         markFirstGreetingDone(ref.read(sharedPreferencesProvider));
       }
     });
   }
 
+  /// Dokunarak atla: eşikten önce sahne atlanamaz.
+  void _dokunuldu() {
+    if (_atlanabilir) _kapat();
+  }
+
   @override
   Widget build(BuildContext context) {
-    // Sahne hiç gösterilmeyecekse doğrudan içerik.
+    // Sahne bittiyse doğrudan içerik.
     if (_kaldirildi) return widget.child;
 
     final azalt = ref.read(settingsProvider).reduceMotion;
@@ -124,60 +116,47 @@ class _SplashGateState extends ConsumerState<SplashGate>
       children: [
         // İçerik altta zaten hazır: sahne bitince kesintisiz ortaya çıkar.
         widget.child,
-        // Arka plandan dönüldüyse sahne gösterme.
-        if (!_arkaPlandanDondu)
-          Positioned.fill(
-            child: AnimatedOpacity(
-              opacity: _kapaniyor ? 0 : 1,
-              duration: Duration(milliseconds: azalt ? 0 : 350),
-              curve: kHupoEase,
-              child: IgnorePointer(
-                ignoring: _kapaniyor,
-                child: _plan.playFullBrandScene
-                    ? HupoSignatureEntrance(
+        Positioned.fill(
+          child: AnimatedOpacity(
+            opacity: _kapaniyor ? 0 : 1,
+            duration: Duration(milliseconds: azalt ? 0 : 350),
+            curve: kHupoEase,
+            child: IgnorePointer(
+              ignoring: _kapaniyor,
+              // Sahne dokunuşları altındaki içeriğe geçirmez; dokununca atlanır.
+              child: GestureDetector(
+                behavior: HitTestBehavior.opaque,
+                onTap: _dokunuldu,
+                child: Semantics(
+                  label: 'Hupolingo açılıyor',
+                  image: true,
+                  child: ExcludeSemantics(
+                    // Sistem çubukları sahneyle aynı turkuaz: sistem splash'inden
+                    // Flutter'a geçişte gezinme çubuğu rengi sıçramaz.
+                    child: AnnotatedRegion<SystemUiOverlayStyle>(
+                      value: const SystemUiOverlayStyle(
+                        statusBarColor: Colors.transparent,
+                        statusBarIconBrightness: Brightness.light,
+                        statusBarBrightness: Brightness.dark,
+                        systemNavigationBarColor: AppColorsSplash.primary,
+                        systemNavigationBarIconBrightness: Brightness.light,
+                        // Android 15+ gezinme çubuğuna kendi açık "kontrast" bandını çizer.
+                        systemNavigationBarContrastEnforced: false,
+                        systemNavigationBarDividerColor: Colors.transparent,
+                      ),
+                      child: HupoSignatureEntrance(
                         onFinished: _kapat,
-                        reducedMotion: azalt,
-                      )
-                    : const _MikroKarsilama(),
-              ),
-            ),
-          ),
-      ],
-    );
-  }
-}
-
-/// Sıcak açılış mikro karşılaması: çok kısa, sessiz, tam boy karakter yok.
-class _MikroKarsilama extends StatelessWidget {
-  const _MikroKarsilama();
-
-  @override
-  Widget build(BuildContext context) {
-    return Semantics(
-      label: 'Hupolingo açılıyor',
-      image: true,
-      child: const ExcludeSemantics(
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-              begin: Alignment.topCenter,
-              end: Alignment.bottomCenter,
-              colors: [AppColorsSplash.primaryDark, AppColorsSplash.primary],
-            ),
-          ),
-          child: Center(
-            child: SizedBox(
-              width: 132,
-              height: 132,
-              child: Image(
-                image: AssetImage(kHupoEntranceAsset),
-                fit: BoxFit.contain,
-                gaplessPlayback: true,
+                        reducedMotion: _plan.scene == AppOpenScene.still,
+                        kisa: _plan.scene == AppOpenScene.short,
+                      ),
+                    ),
+                  ),
+                ),
               ),
             ),
           ),
         ),
-      ),
+      ],
     );
   }
 }

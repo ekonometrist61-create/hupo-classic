@@ -3,11 +3,13 @@
 // Kapsam:
 //  * Açılış türü (AppOpenKind) ve plan (AppOpenPlan) kararları — saf fonksiyon.
 //  * İlk karşılama bayrağının kalıcılığı.
-//  * Marka sahnesinin oynayıp bitmesi ve ana sayfaya geçiş sinyali üretmesi.
-//  * Hareket azalt durumunda sahnenin statik kareye dönmesi.
-//  * Sahnenin içeriği bloke etmemesi (içerik altta hazır).
+//  * Marka sesi yalnız ilk açılışta.
+//  * Marka sahnesinin oynayıp bitmesi, kısa sahne ve hareket azalt kolu.
+//  * "Hupolingo" yazısının geri dönüş stiliyle (alt çizgi) çizilmemesi.
+//  * Dokunarak atlama ve sahnenin içeriği bloke etmemesi.
 //
-// NOT: Cihaz/emülatör üzerinde çalıştırılmadı; bunlar widget testleridir.
+// NOT: Cihaz davranışı (kare süresi, native geçiş) docs/splash/baseline-* ve
+// ACILIS_SENARYOSU_PLANI.md'deki cihaz kayıtlarıyla doğrulanır.
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -22,85 +24,46 @@ void main() {
   group('resolveAppOpenKind', () {
     test('ilk karşılama yapılmadıysa firstLaunch', () {
       expect(
-        resolveAppOpenKind(
-          firstGreetingDone: false,
-          resumedFromBackground: false,
-          isDeepLink: false,
-        ),
+        resolveAppOpenKind(firstGreetingDone: false),
         AppOpenKind.firstLaunch,
       );
     });
 
     test('karşılama yapıldıysa coldStart', () {
       expect(
-        resolveAppOpenKind(
-          firstGreetingDone: true,
-          resumedFromBackground: false,
-          isDeepLink: false,
-        ),
+        resolveAppOpenKind(firstGreetingDone: true),
         AppOpenKind.coldStart,
-      );
-    });
-
-    test('arka plandan dönüş resume kazanır', () {
-      expect(
-        resolveAppOpenKind(
-          firstGreetingDone: false,
-          resumedFromBackground: true,
-          isDeepLink: true,
-        ),
-        AppOpenKind.resume,
-      );
-    });
-
-    test('deep link directRedirect', () {
-      expect(
-        resolveAppOpenKind(
-          firstGreetingDone: false,
-          resumedFromBackground: false,
-          isDeepLink: true,
-        ),
-        AppOpenKind.directRedirect,
       );
     });
   });
 
   group('planAppOpen', () {
-    test('ilk/cold açılışta tam sahne 1600 ms', () {
+    test('ilk açılışta tam sahne 1600 ms ve marka sesi', () {
       final plan = planAppOpen(
         kind: AppOpenKind.firstLaunch,
         reducedMotion: false,
       );
-      expect(plan.playFullBrandScene, isTrue);
-      expect(plan.microGreeting, isFalse);
+      expect(plan.scene, AppOpenScene.full);
       expect(plan.duration, kHupoSahneToplam);
-      expect(plan.skip, isFalse);
+      expect(plan.playBrandSound, isTrue);
     });
 
-    test('hareket azalt açıkken tam sahne oynatılmaz', () {
+    test('sonraki açılışta kısa sahne (≤ 900 ms) ve ses yok', () {
       final plan = planAppOpen(
         kind: AppOpenKind.coldStart,
-        reducedMotion: true,
-      );
-      expect(plan.playFullBrandScene, isFalse);
-      expect(plan.microGreeting, isTrue);
-      expect(plan.duration.inMilliseconds, lessThanOrEqualTo(600));
-    });
-
-    test('sıcak açılışta kısa mikro karşılama', () {
-      final plan = planAppOpen(
-        kind: AppOpenKind.warmStart,
         reducedMotion: false,
       );
-      expect(plan.playFullBrandScene, isFalse);
-      expect(plan.microGreeting, isTrue);
-      expect(plan.duration, kHupoMikroKarsilama);
+      expect(plan.scene, AppOpenScene.short);
+      expect(plan.duration.inMilliseconds, lessThanOrEqualTo(900));
+      expect(plan.playBrandSound, isFalse);
     });
 
-    test('resume ve deep link sahneyi atlar', () {
-      for (final kind in [AppOpenKind.resume, AppOpenKind.directRedirect]) {
-        final plan = planAppOpen(kind: kind, reducedMotion: false);
-        expect(plan.skip, isTrue, reason: kind.name);
+    test('hareket azalt açıkken statik kare, ses yok', () {
+      for (final kind in AppOpenKind.values) {
+        final plan = planAppOpen(kind: kind, reducedMotion: true);
+        expect(plan.scene, AppOpenScene.still, reason: kind.name);
+        expect(plan.duration.inMilliseconds, lessThanOrEqualTo(600));
+        expect(plan.playBrandSound, isFalse, reason: kind.name);
       }
     });
   });
@@ -122,11 +85,25 @@ void main() {
         home: HupoSignatureEntrance(onFinished: () => bitti = true),
       ));
 
-      // Başlangıçta bitmemiş olmalı.
       expect(bitti, isFalse);
 
-      // Sahne süresini aşacak kadar ilerlet.
       await tester.pump(kSignatureEntranceDuration);
+      await tester.pumpAndSettle();
+      expect(bitti, isTrue);
+    });
+
+    testWidgets('kısa sahne 900 ms içinde biter ve marka adını göstermez',
+        (tester) async {
+      var bitti = false;
+      await tester.pumpWidget(MaterialApp(
+        home: HupoSignatureEntrance(
+          onFinished: () => bitti = true,
+          kisa: true,
+        ),
+      ));
+      await tester.pump(kHupoKisaSahne - const Duration(milliseconds: 50));
+      expect(find.text('Hupolingo'), findsNothing);
+      await tester.pump(const Duration(milliseconds: 100));
       await tester.pumpAndSettle();
       expect(bitti, isTrue);
     });
@@ -138,8 +115,32 @@ void main() {
           reducedMotion: true,
         ),
       ));
-      // Statik kare: Hupolingo marka adı görünür, animasyon beklenmez.
       expect(find.text('Hupolingo'), findsOneWidget);
+    });
+
+    // Regresyon: sahne Scaffold dışında (SplashGate katmanı) çizilir. Material
+    // olmazsa MaterialApp'in "eksik Material" stili (çift alt çizgi, tek
+    // aralıklı font) yazıya bulaşır.
+    testWidgets('Hupolingo yazısı alt çizgisiz ve tek aralıklı fontsuz çizilir',
+        (tester) async {
+      await tester.pumpWidget(const MaterialApp(
+        home: Stack(
+          children: [
+            Positioned.fill(
+              child: HupoSignatureEntrance(
+                onFinished: _noop,
+                reducedMotion: true,
+              ),
+            ),
+          ],
+        ),
+      ));
+      final yazi = tester.widget<Text>(find.text('Hupolingo'));
+      final stil = DefaultTextStyle.of(tester.element(find.text('Hupolingo')))
+          .style
+          .merge(yazi.style);
+      expect(stil.decoration, anyOf(isNull, TextDecoration.none));
+      expect(stil.fontFamily, isNot('monospace'));
     });
   });
 
@@ -158,9 +159,7 @@ void main() {
       ));
       await tester.pump();
 
-      // Tam sahne widget'ı görünür.
       expect(find.byType(HupoSignatureEntrance), findsOneWidget);
-      // İçerik altta hazır olmalı.
       expect(find.byType(_IsaretMetni), findsOneWidget);
     });
 
@@ -179,7 +178,6 @@ void main() {
       ));
       await tester.pump();
 
-      // Sahne + fade-out tamamlanana kadar ilerlet.
       await tester.pump(kSignatureEntranceDuration);
       await tester.pump(const Duration(milliseconds: 400));
       await tester.pumpAndSettle();
