@@ -4718,3 +4718,6 @@ Paketler:
 
 ### K-0179 · 2026-10-28 · VT · Faz 2 zamanlı taslak (yerel): 20261118, test 20/20; regresyon kohort 22/22, veri kalitesi 13/13
 - Önizleme: yalnız 20261118 bekliyor. Deploy onayı bekleniyor (108/109 yine dışarıda).
+
+### K-0180 · 2026-10-28 · YÖN/VT · Customer-Lab L1 (yerel): persona hipotez kataloğu; 9/9 test
+- Yalnız yerel; veritabanı ve deploy yok. 20261118 hâlâ deploy onayı bekliyor.

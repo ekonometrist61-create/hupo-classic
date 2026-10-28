@@ -270,3 +270,9 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 - Zamanlayıcı: pg_cron, pazartesi 05:30 UTC (08:30 İstanbul). Önceki karardaki "n8n zamanlayıcısı" yerine pg_cron kullanılıyor; gerekçe: n8n'e veritabanı kimliği koymamak.
 - Test: `supabase/tests/growth_rapor_zamanli` 20/20.
 - Uzakta uygulanmadı (önizleme: yalnız bu dosya bekliyor); deploy onayı bekleniyor.
+
+## 21. Customer-Lab L1 (yerel, 2026-10-28)
+- `scripts/customer-lab/katalog.py`: toplu rapor verisinden persona hipotez kataloğu. Her persona en az 10 hane ile türetilir; gizli değer persona üretmez; her çıktı "hipotez" ve kanıt-değildir uyarısı taşır.
+- Test: `scripts/customer-lab/test_katalog.py` 9/9 (eşik, gizli değer, etiket, kişi alanı yok, tekrarlanabilirlik).
+- Örnek çıktı: `scripts/customer-lab/katalog-ornek.json` (sentetik girdiden, 3 persona).
+- L1 veritabanı şeması (sentetik_* tabloları) bu adımda yok; L2'de, ayrı onayla yapılır.
