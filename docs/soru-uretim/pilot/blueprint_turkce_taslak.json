@@ -1,0 +1,165 @@
+{
+  "kaynak": "soru_adaylari ders=Türkçe sinif=5 durum=aday_cevap_anahtarli (havuz 730), sabit seed 20261017",
+  "not": "Taslak: kaynak metin bozuk karakterli (ş/ı/ğ kayıplı), kok uzunluğu soru_metni_taslak tamamını (paragraf dahil) sayar. Pilot, dogrulanmis veri degil.",
+  "ornek_n": 100,
+  "alt_alan": {
+    "sözcükte anlam": {
+      "sayi": 23,
+      "yuzde": 23
+    },
+    "cümlede anlam": {
+      "sayi": 18,
+      "yuzde": 18
+    },
+    "noktalama": {
+      "sayi": 11,
+      "yuzde": 11
+    },
+    "parçada anlam": {
+      "sayi": 9,
+      "yuzde": 9
+    },
+    "diğer": {
+      "sayi": 8,
+      "yuzde": 8
+    },
+    "yazım kuralları": {
+      "sayi": 8,
+      "yuzde": 8
+    },
+    "ses bilgisi": {
+      "sayi": 8,
+      "yuzde": 8
+    },
+    "söz sanatları": {
+      "sayi": 6,
+      "yuzde": 6
+    },
+    "başlık/anlatım": {
+      "sayi": 4,
+      "yuzde": 4
+    },
+    "ek ve kök": {
+      "sayi": 3,
+      "yuzde": 3
+    },
+    "sözcük türleri": {
+      "sayi": 2,
+      "yuzde": 2
+    }
+  },
+  "soru_tipi": {
+    "sınıflandırma": {
+      "sayi": 41,
+      "yuzde": 41
+    },
+    "olumsuz kök": {
+      "sayi": 25,
+      "yuzde": 25
+    },
+    "bilgi": {
+      "sayi": 11,
+      "yuzde": 11
+    },
+    "boşluk doldurma": {
+      "sayi": 8,
+      "yuzde": 8
+    },
+    "diğer": {
+      "sayi": 6,
+      "yuzde": 6
+    },
+    "çıkarım": {
+      "sayi": 4,
+      "yuzde": 4
+    },
+    "paragraf": {
+      "sayi": 4,
+      "yuzde": 4
+    },
+    "öncüllü": {
+      "sayi": 1,
+      "yuzde": 1
+    }
+  },
+  "bilissel_duzey": {
+    "anlama": {
+      "sayi": 40,
+      "yuzde": 40
+    },
+    "uygulama": {
+      "sayi": 38,
+      "yuzde": 38
+    },
+    "analiz": {
+      "sayi": 22,
+      "yuzde": 22
+    }
+  },
+  "tahmini_zorluk": {
+    "1": {
+      "sayi": 16,
+      "yuzde": 16
+    },
+    "2": {
+      "sayi": 83,
+      "yuzde": 83
+    },
+    "3": {
+      "sayi": 1,
+      "yuzde": 1
+    }
+  },
+  "baglam": {
+    "bağlamsız cümle": {
+      "sayi": 59,
+      "yuzde": 59
+    },
+    "metin/paragraf": {
+      "sayi": 32,
+      "yuzde": 32
+    },
+    "diyalog": {
+      "sayi": 4,
+      "yuzde": 4
+    },
+    "gündelik": {
+      "sayi": 4,
+      "yuzde": 4
+    },
+    "şiir": {
+      "sayi": 1,
+      "yuzde": 1
+    }
+  },
+  "dogru_sik": {
+    "C": {
+      "sayi": 34,
+      "yuzde": 34
+    },
+    "B": {
+      "sayi": 28,
+      "yuzde": 28
+    },
+    "D": {
+      "sayi": 20,
+      "yuzde": 20
+    },
+    "A": {
+      "sayi": 18,
+      "yuzde": 18
+    }
+  },
+  "secenek_adedi": {
+    "4": {
+      "sayi": 100,
+      "yuzde": 100
+    }
+  },
+  "kok_uzunlugu_kelime": {
+    "ortalama": 15.7,
+    "medyan": 9,
+    "min": 5,
+    "max": 70
+  }
+}

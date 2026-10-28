@@ -1,0 +1,38 @@
+{
+ "kaynak_url": "https://tymm.meb.gov.tr/assets/pdf/ortaokul-turkce-dersi_20260902_111157_977.pdf",
+ "program_surumu": "Maarif Modeli Ortaokul Türkçe DÖP (7. sınıf bölümü, tymm 2026-09-02)",
+ "dogrulama": "2026-10-23 (K-0111): tymm 2026-09-02 PDF metin katmanından (PyMuPDF) okundu; 22 kodun tamamında kod ve kazanım metni eşleşti (T.O.7.3–19, T.Y.7.7–19). Kodlar DÖP'te var; kapsam dışı kodlar tanımlı. Süreç bileşenleri bu sürümde doğrulanmadı.",
+ "not": "2026-10-23 kapsam kararı: yalnız metinle sınanabilen okuma (T.O) ve yazma (T.Y) kazanımları. Dinleme/izleme ve konuşma kazanımları kapsam_disi. Süreç bileşenleri boş (PDF ayrıştırması güvenilir değil); üretimde yalnız kazanım metni kullanılır. Üretimden önce DÖP ile teyit edilmeli.",
+ "kazanimlar": [
+  {"kod": "T.O.7.3", "sinif": 7, "ders": "Türkçe", "metin": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.4", "sinif": 7, "ders": "Türkçe", "metin": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.5", "sinif": 7, "ders": "Türkçe", "metin": "Metnin yüzey anlamını belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.7", "sinif": 7, "ders": "Türkçe", "metin": "Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.8", "sinif": 7, "ders": "Türkçe", "metin": "Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.9", "sinif": 7, "ders": "Türkçe", "metin": "Okuduklarını karşılaştırabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.11", "sinif": 7, "ders": "Türkçe", "metin": "Metni yorumlayabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.12", "sinif": 7, "ders": "Türkçe", "metin": "Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.13", "sinif": 7, "ders": "Türkçe", "metin": "Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.14", "sinif": 7, "ders": "Türkçe", "metin": "Metnin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.16", "sinif": 7, "ders": "Türkçe", "metin": "Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.17", "sinif": 7, "ders": "Türkçe", "metin": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.18", "sinif": 7, "ders": "Türkçe", "metin": "Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.19", "sinif": 7, "ders": "Türkçe", "metin": "Metinde kullanılan ikna tekniklerini belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.7.20", "sinif": 7, "ders": "Türkçe", "metin": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.7.7", "sinif": 7, "ders": "Türkçe", "metin": "Yazısında karşılaştırma yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.7.8", "sinif": 7, "ders": "Türkçe", "metin": "Yazısında sınıflandırma yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.7.15", "sinif": 7, "ders": "Türkçe", "metin": "Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.7.16", "sinif": 7, "ders": "Türkçe", "metin": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.7.17", "sinif": 7, "ders": "Türkçe", "metin": "Yazısında açık ve örtük ifadeleri kullanabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.7.18", "sinif": 7, "ders": "Türkçe", "metin": "Uygun bağlantı ifadelerini kullanabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.7.19", "sinif": 7, "ders": "Türkçe", "metin": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme", "surec_bilesenleri": []}
+ ],
+ "kapsam_disi": [
+  {"kod": "T.D.7.1–T.D.7.20", "neden": "Dinleme/izleme kazanımları ses veya video gerektirir."},
+  {"kod": "T.K.7.1–T.K.7.21", "neden": "Konuşma kazanımları sözlü performans gerektirir."},
+  {"kod": "T.O.7.1, T.O.7.2", "neden": "Materyal seçimi ve strateji yönetimi; metin sorusuyla ölçülemez."},
+  {"kod": "T.O.7.6", "neden": "Görselle iletilen anlam: görsel gerektirir."},
+  {"kod": "T.O.7.10, T.O.7.15, T.O.7.21–T.O.7.26", "neden": "Sınıflandırma, bölüm belirleme, özetleme, değerlendirme, eleştiri ve süreç; tek soruyla güvenilir ölçülemiyor (bu hücrede kapsam dışı)."},
+  {"kod": "T.Y.7.1–T.Y.7.6, T.Y.7.9–T.Y.7.14, T.Y.7.20", "neden": "Yazma süreci, yaratıcı üretim, yorum, değerlendirme, tartışma ve problem çözüm yazma; ürünü değil süreci ya da serbest üretimi ölçer."}
+ ]
+}

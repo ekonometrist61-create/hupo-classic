@@ -1,0 +1,524 @@
+{
+  "surum": "1",
+  "parti": {
+    "parti_id": "soru-uretim-2026-10-24-8sinif-turkce-p2",
+    "aciklama": "8. sınıf Türkçe parti 2 (12 soru; parti 1 ile 24 kod kapsanır). Yazar: Haiku 5.5 (ana oturum). Kapı ve benzerlik kontrolü yapıldı; kör çözüm ve kör kalite denetimi YAPILMADI."
+  },
+  "kaynaklar": [],
+  "sorular": [
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-013",
+      "konu": "Okuduklarını karşılaştırma",
+      "alt_konu": "İki metin arasında ortak ve farklı yön",
+      "zorluk": 2,
+      "soru_metni": "Metin 1: Kırsal kesimde yaşayan çocuklar okula yürüyerek gider; yol bazen bir saatten uzun sürer.\n\nMetin 2: Kentte yaşayan çocuklar okula servisle gider; trafik yoğun olduğunda servis gecikebilir.\n\nBu iki metne göre kırsal ve kentte yaşayan çocukların okula ulaşımı arasında hangi fark vardır?",
+      "siklar": {
+        "A": "Kırsal kesimde okula ulaşım yürüyerek, kentte ise çoğunlukla servisle yapılır.",
+        "B": "Kentte okula yürüyerek gidilir, kırsalda ise servis kullanılır.",
+        "C": "İki metinde de okula ulaşım yalnızca servisle yapılır.",
+        "D": "Kırsal kesimde trafik yoğunluğu, kentte ise uzun yürüyüşler sorun oluşturur."
+      },
+      "dogru_sik": "A",
+      "cozum_adimlari": [
+        "Birinci metinde kırsalda okula yürüyerek gidildiği anlatılır.",
+        "İkinci metinde kentte servisle gidildiği anlatılır.",
+        "Bu iki bilgi karşılaştırıldığında fark, ulaşım biçiminde ortaya çıkar.",
+        "Doğru cevap A seçeneğidir."
+      ],
+      "ipuclari": [
+        "Her metinde okula hangi araçla gidildiğine tek tek bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğru.",
+        "B": "Metinlerdeki kır ve kent bilgilerini yer değiştiren öğrenci için çekici.",
+        "C": "Tek bir metindeki bilgiyi iki metne genelleyen öğrenci için çekici.",
+        "D": "Trafik bilgisini kırsala bağlayan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.9",
+      "kazanim_metni": "Okuduklarını karşılaştırabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-014",
+      "konu": "Metni yorumlama",
+      "alt_konu": "Anlatımdan tutum çıkarımı",
+      "zorluk": 3,
+      "soru_metni": "Bir köy kütüphanesinde kitaplar yıllardır aynı düzende tutulmaktadır. Kütüphaneci, her kitabın raftaki yerini bir defterle kaydeder. Gelen her çocuk, kitabı alıp aynı rafa geri koymayı bir görev sayar.\n\nMetnin anlatımına göre kütüphanecinin tutumu hakkında hangi yorum yapılabilir?",
+      "siklar": {
+        "A": "Kütüphanecinin kitapları düzenli tutmak için yalnızca çocukları suçladığı söylenebilir.",
+        "B": "Kütüphanecinin kitapların yerini değiştirmek istediği ve buna izin vermediği anlaşılır.",
+        "C": "Kütüphanecinin düzenin korunmasına verdiği önemi ve bunu çocuklara da benimsetmeye çalıştığı söylenebilir.",
+        "D": "Kütüphanedeki kitapların sayısının az olduğu ve bu yüzden defter tutulduğu anlaşılır."
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Metinde kütüphanecinin kayıt tutarak düzeni sürdürdüğü anlatılır.",
+        "Çocukların kitapları aynı rafa geri koymayı görev saydığı da anlatılır; bu, düzenin benimsetildiğini gösterir.",
+        "A suçlamayı, B yasağı, D kitap sayısını metinde olmayan bilgilerle ilişkilendirir.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Kütüphanecinin yaptıklarından ve çocuklardan beklediğinden ne sonuç çıkarılabileceğine bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Metinde olmayan bir suçlamayı yorum sanan öğrenci için çekici.",
+        "B": "Düzen kelimesini değişim isteğiyle karıştıran öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Metinde verilmeyen kitap sayısını yoruma katan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.11",
+      "kazanim_metni": "Metni yorumlayabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-015",
+      "konu": "Metin bölümleri",
+      "alt_konu": "Paragrafın işlevini belirleme",
+      "zorluk": 2,
+      "soru_metni": "Kitap okumak, insanın kendini ve dünyayı anlamasına yardımcı olur. Bu nedenle okul yıllarında kazanılan okuma alışkanlığı büyük önem taşır.\n\nOkuyan kişi yeni kelimeler öğrenir, farklı bakış açılarıyla tanışır ve düşüncelerini daha ayrıntılı ifade eder. Kitaplar, insanın hayal gücünü de besler.\n\nSonuç olarak kitap okuma alışkanlığı, bireyin hem kişisel hem de toplumsal gelişimi için vazgeçilmez bir değerdir.\n\nAşağıdakilerden hangisi, metnin son paragrafının işlevini doğru açıklar?",
+      "siklar": {
+        "A": "Konuya giriş yaparak okuyucuyu metne hazırlar.",
+        "B": "Metnin ana fikrini yeniden vurgulayarak bitirir.",
+        "C": "Yeni bir örnek ekleyerek gelişmeyi sürdürür.",
+        "D": "Karşı görüşü ortaya koyarak tartışmayı başlatır."
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Son paragraf “Sonuç olarak” ifadesiyle başlar.",
+        "Kitap okuma alışkanlığının değerini yeniden söyleyerek metni toparlar.",
+        "A ilk paragrafın, C ikinci paragrafın, D ise metinde hiç bulunmayan bir işlevidir.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Paragrafın hangi bölümde yer aldığını ve ne tür bir cümleyle başladığını düşün."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Giriş işlevini son paragrafa veren öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Gelişme bölümünün işlevini son paragrafa veren öğrenci için çekici.",
+        "D": "Metinde karşı görüş bulunmadığını fark etmeyen öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.15",
+      "kazanim_metni": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-016",
+      "konu": "Düşünceyi geliştirme yolları",
+      "alt_konu": "Örnekleme",
+      "zorluk": 2,
+      "soru_metni": "Bisiklet, hem sağlığa hem de çevreye yararlı bir ulaşım aracıdır. Örneğin, kısa mesafelerde bisiklet kullanan biri hem egzersiz yapar hem de egzoz gazı salınımına katkıda bulunmaz. Ayrıca bisiklet yolları arttıkça kentlerde trafik yükü de azalır.\n\nYazar, bisikletin faydalarını anlatırken hangi düşünceyi geliştirme yolunu kullanmıştır?",
+      "siklar": {
+        "A": "Karşılaştırma",
+        "B": "Tanımlama",
+        "C": "Benzetme",
+        "D": "Örnekleme"
+      },
+      "dogru_sik": "D",
+      "cozum_adimlari": [
+        "Metinde “Örneğin” ifadesiyle kısa mesafede bisiklet kullanan birinin durumu anlatılır.",
+        "Bu bir somut durumun düşünceyi desteklemesidir: örnekleme.",
+        "Karşılaştırma iki şeyin benzerlik ve farkını, tanımlama bir kavramın ne olduğunu, benzetme iki şeyi benzeterek anlatmayı gerektirir; metinde bunlar yoktur.",
+        "Doğru cevap D seçeneğidir."
+      ],
+      "ipuclari": [
+        "Metinde düşüncenin somut bir durumla desteklendiği cümleyi bul."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Ulaşım araçlarını karşılaştırdığını sanan öğrenci için çekici.",
+        "B": "Bisikletin ne olduğunu anlatan cümleyi esas alan öğrenci için çekici.",
+        "C": "Bisikleti başka bir şeye benzetildiğini sanan öğrenci için çekici.",
+        "D": "Doğru."
+      },
+      "kazanim_kodu": "T.O.8.17",
+      "kazanim_metni": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-017",
+      "konu": "İkna teknikleri",
+      "alt_konu": "Uzman görüşüne başvurma",
+      "zorluk": 2,
+      "soru_metni": "Uzmanlar, her gün en az yarım saat yürüyüş yapmanın kalp sağlığını koruduğunu belirtiyor. Ayrıca düzenli yürüyüş, uyku kalitesini artırarak gün içindeki verimliliği de yükseltiyor. Bu nedenle yürüyüşü günlük programınıza eklemenizi öneririm.\n\nYazar, okuru yürüyüşü günlük programa eklemeye ikna etmek için hangi tekniği kullanmıştır?",
+      "siklar": {
+        "A": "Uzman görüşüne başvurmayı",
+        "B": "Duygularına hitap etmeyi",
+        "C": "Korkutmayı",
+        "D": "Çoğunluğun yaptığını söylemeyi"
+      },
+      "dogru_sik": "A",
+      "cozum_adimlari": [
+        "Metinde “Uzmanlar” ifadesiyle bir uzmanlık grubunun görüşü aktarılır.",
+        "Bu, okuru inandırmak için yetkili bir kaynağa dayanmaktır.",
+        "Duygusal hitap, korkutma ve çoğunluk tekniklerinin metinde bir izi yoktur.",
+        "Doğru cevap A seçeneğidir."
+      ],
+      "ipuclari": [
+        "Yazarın öneriyi neye dayandırdığına bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğru.",
+        "B": "Okurun sevdiklerine ya da duygularına seslenildiğini sanan öğrenci için çekici.",
+        "C": "Uyarı içeren cümleyi korkutma sanan öğrenci için çekici.",
+        "D": "Öneri cümlesini çoğunluğa dayalı sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.19",
+      "kazanim_metni": "Metinde kullanılan ikna tekniklerini belirlemeye yönelik çözümleme yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-018",
+      "konu": "Söz varlığı geliştirme",
+      "alt_konu": "Bağlamdan sözcük anlamı çıkarma",
+      "zorluk": 2,
+      "soru_metni": "Bir yazarın kelime hazinesi, okuduğu eserlerle zenginleşir. Yeni bir sözcükle karşılaşan okur, cümlenin geri kalanındaki ipuçlarını kullanarak sözcüğün anlamını çıkarmaya çalışır. Bu alışkanlık zamanla okurun söz dağarcığını genişletir.\n\nMetne göre bir okur, bilmediği bir sözcüğün anlamına nasıl ulaşabilir?",
+      "siklar": {
+        "A": "Sözlüğe başvurmadan sözcüğü hiçbir zaman çözemez.",
+        "B": "Cümlenin geri kalanındaki ipuçlarından yararlanarak anlamını tahmin eder.",
+        "C": "Yazarın kelime hazinesinin dar olduğunu düşünerek okumayı bırakır.",
+        "D": "Sözcüğü atlayıp yalnızca tanıdığı sözcüklerle okumaya devam eder."
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Metinde, yeni sözcüğün anlamının cümlenin geri kalanındaki ipuçlarıyla çıkarılabileceği anlatılır.",
+        "A ve D metinde anlatılan yöntemle çelişir; C metinde verilmeyen bir sonuçtur.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Metinde anlamı bulmanın yolu olarak ne söylendiğine bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Sözlük dışında hiçbir yolun olmadığını sanan öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Okuma sorununu yazarın sözcük hazinesiyle karıştıran öğrenci için çekici.",
+        "D": "Bilinmeyen sözcüğü atlamanın anlamı kavratacağını sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.20",
+      "kazanim_metni": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-019",
+      "konu": "Yazıda karşılaştırma",
+      "alt_konu": "Benzerlik ve farkı birlikte verme",
+      "zorluk": 2,
+      "soru_metni": "Burak, şehir hayatı ile köy hayatını karşılaştıran bir paragraf yazmak istiyor. Paragrafında iki yaşam biçiminin hem benzer hem de farklı yönlerini vermek istiyor.\n\nAşağıdaki cümlelerden hangisi Burak’ın bu amacına uygundur?",
+      "siklar": {
+        "A": "Köyde yaşam sakin, şehirde yaşam hareketlidir.",
+        "B": "Köy hayatı insanı daha huzurlu yapar.",
+        "C": "Hem şehirde hem köyde insanlar komşularıyla dayanışma içindedir; ancak köyde bu ilişki daha yakın, şehirde ise daha seyrektir.",
+        "D": "Şehirde trafik çok yoğundur ve insanlar sürekli koşuşturur."
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Burak’ın amacı, iki yaşam biçiminin hem ortak hem de ayrı yönlerini göstermektir.",
+        "C seçeneği ortak bir özelliği (dayanışma) ve bu özelliğin iki yerdeki farkını birlikte verir.",
+        "A yalnızca farkı, B yalnızca bir değer yargısını, D yalnızca şehri anlatır.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Cümlede hem ortak bir noktanın hem de bu noktadaki farkın bulunup bulunmadığına bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Yalnızca farkı veren cümleyi karşılaştırma sanan öğrenci için çekici.",
+        "B": "Değer yargısını karşılaştırma sanan öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Tek bir yaşam biçimini anlatan cümleyi karşılaştırma sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.Y.8.7",
+      "kazanim_metni": "Yazısında karşılaştırma yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-020",
+      "konu": "Yazıda sınıflandırma",
+      "alt_konu": "Ölçüte göre gruplama",
+      "zorluk": 2,
+      "soru_metni": "Merve, okul kütüphanesindeki kitapları yazısında tanıtmak istiyor. Kitapları türlerine göre sınıflandırarak yazmak istiyor.\n\nAşağıdakilerden hangisi Merve’nin bu amacına en uygun sınıflandırmadır?",
+      "siklar": {
+        "A": "Kalın ve ince olanlar; renkli ve renksiz olanlar",
+        "B": "Roman, şiir, öykü ve bilgi kitapları",
+        "C": "Yeni basılanlar ve eski basılanlar",
+        "D": "Okunan ve okunmayan kitaplar"
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Merve’nin ölçütü kitabın türüdür.",
+        "B seçeneği kitapları türlerine göre ayırır.",
+        "A fiziksel özellik, C basım tarihi, D okuma durumu ölçütüdür; türlere göre bir sınıflandırma değildir.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Sınıflandırma ölçütünün ne olduğunu, cümlede istenen ifadeden bul."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Fiziksel özelliği tür sanan öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Basım tarihini tür sanan öğrenci için çekici.",
+        "D": "Okuma durumunu tür sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.Y.8.8",
+      "kazanim_metni": "Yazısında sınıflandırma yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-021",
+      "konu": "Metni yapılandırma",
+      "alt_konu": "Örnekle düşünceyi geliştirme",
+      "zorluk": 3,
+      "soru_metni": "Emir, gençlerin spor yapmasının önemini anlatan bir paragraf yazıyor. Düşüncesini bir örnekle geliştirmek istiyor.\n\nAşağıdaki cümlelerden hangisi, paragrafın ikinci cümlesi olarak düşünceyi örnekle geliştirir?",
+      "siklar": {
+        "A": "Spor yapmak gençlerin en çok sevdiği etkinliktir.",
+        "B": "Spor önemlidir, herkes spor yapmalıdır.",
+        "C": "Spor, gençlerin özgüvenini artırır.",
+        "D": "Gençlerden biri her sabah koşarak hem enerjisini artırmış hem de okul başarısını yükseltmiştir."
+      },
+      "dogru_sik": "D",
+      "cozum_adimlari": [
+        "Düşünceyi örnekle geliştiren cümle, somut bir durumu ya da kişiyi anlatır.",
+        "D seçeneği somut bir gencin durumunu anlatır.",
+        "A ve B yeni bir örnek vermez; C bir iddiadır, örnek değildir.",
+        "Doğru cevap D seçeneğidir."
+      ],
+      "ipuclari": [
+        "Hangi cümlede somut bir durum anlatıldığına bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Konuyu yalnızca tekrar eden cümleyi geliştirme sanan öğrenci için çekici.",
+        "B": "Genel bir yargıyı örnek sanan öğrenci için çekici.",
+        "C": "Bir iddiayı örnek sanan öğrenci için çekici.",
+        "D": "Doğru."
+      },
+      "kazanim_kodu": "T.Y.8.15",
+      "kazanim_metni": "Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-022",
+      "konu": "Söz varlığıyla anlatımı zenginleştirme",
+      "alt_konu": "Betimleyici söz varlığı",
+      "zorluk": 1,
+      "soru_metni": "Aşağıdaki cümlelerden hangisi, yazının anlatımını en zengin ve canlı kılar?",
+      "siklar": {
+        "A": "Dağın eteğindeki köy, sabah sisinin içinde yavaşça uyanıyordu.",
+        "B": "Dağın eteğindeki köy güzeldi.",
+        "C": "Köy de dağ da bir şey yapıyordu.",
+        "D": "Köy, güzel bir yerdi ve orada insanlar yaşıyordu."
+      },
+      "dogru_sik": "A",
+      "cozum_adimlari": [
+        "A seçeneği, sis ve yavaş uyanma gibi betimleyici sözcüklerle okurun gözünde bir sahne oluşturur.",
+        "B ve D sıradan, genel sözcüklerle yazılmıştır; C ise anlamsızlığa yakın bir anlatımdır.",
+        "Doğru cevap A seçeneğidir."
+      ],
+      "ipuclari": [
+        "Hangi cümlede okurun gözünde bir sahne canlandığına bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğru.",
+        "B": "Genel bir değerlendirmeyi zengin anlatım sanan öğrenci için çekici.",
+        "C": "Tekrarlı bir anlatımı canlılık sanan öğrenci için çekici.",
+        "D": "Uzun cümleyi zenginlik sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.Y.8.16",
+      "kazanim_metni": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-023",
+      "konu": "Açık ve örtük ifade",
+      "alt_konu": "Örtük eleştiri",
+      "zorluk": 2,
+      "soru_metni": "Kerem, arkadaşının sürekli geç kalmasına ilişkin bir yazı yazıyor. Arkadaşını doğrudan suçlamak istemiyor; eleştirisini örtük biçimde iletmek istiyor.\n\nBu amaca uygun cümle hangisidir?",
+      "siklar": {
+        "A": "Sen hiç vaktinde gelmiyorsun, bu çok kötü.",
+        "B": "Bundan sonra beni beklettiğinde buluşmayı iptal edeceğim.",
+        "C": "Son buluşmalarımızda saatlerin planlandığı gibi işlemediğini fark ettim.",
+        "D": "Geç kalmamayı kendine ilke edinen biri olmalısın, sen bunu yapmıyorsun."
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Örtük ifade, söylenenin altında bir yargı bırakan anlatımdır.",
+        "C seçeneği saat sorununu gözlem olarak sunar ve yargıyı okura bırakır.",
+        "A ve D doğrudan suçlama, B doğrudan tehdit içerir; eleştiri açıkça dile getirilir.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Hangi cümlede yargı açıkça söylenmeden gözleme dayandırılmış?"
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Açık suçlamayı örtük anlatım sanan öğrenci için çekici.",
+        "B": "Doğrudan tehdit eden cümleyi örtük anlatım sanan öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Doğrudan yargıyı örtük sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.Y.8.17",
+      "kazanim_metni": "Yazısında açık ve örtük ifadeleri kullanabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-024",
+      "konu": "Bağlantı ifadeleri",
+      "alt_konu": "Karşıtlık ilişkisi",
+      "zorluk": 1,
+      "soru_metni": "Hava çok soğuktu. ___ biz pikniğe gittik.\n\nBoşluğa en uygun bağlantı ifadesi hangisidir?",
+      "siklar": {
+        "A": "Çünkü",
+        "B": "Buna rağmen",
+        "C": "Örneğin",
+        "D": "Ayrıca"
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "İki cümle arasında bir engel ve buna karşın yapılan bir eylem ilişkisi vardır.",
+        "“Buna rağmen”, engele karşın yapılan eylemi bağlayan karşıtlık ifadesidir.",
+        "A neden, C örnek, D ekleme ilişkisi kurar; bu cümleye uymaz.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "İkinci cümlede birinci cümledeki engele rağmen yapılan bir şeyin olduğuna bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Nedenle bağlanan cümleyi kurmaya çalışan öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Bir örnek verildiğini sanan öğrenci için çekici.",
+        "D": "Yeni bir bilgi eklendiğini sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.Y.8.19",
+      "kazanim_metni": "Uygun bağlantı ifadelerini kullanabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    }
+  ]
+}

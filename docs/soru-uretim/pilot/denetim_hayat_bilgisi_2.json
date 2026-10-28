@@ -1,0 +1,795 @@
+[
+ {
+  "id": "HB2-001",
+  "kazanim_kodu": "HB.2.1.1",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Planlı olmanın sonucu: sabah telaşsız hazırlanma. Kazanıma uygun, tek doğru. A ve D bariz yanlış (D'de 'hiç'), C makul yanılgı; zorluk 1 uygun. İsteğe bağlı: A/D daha makul çeldiriciyle değiştirilebilir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-002",
+  "kazanim_kodu": "HB.2.1.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Etkin dinleme: göz teması, sözü kesmeme. Şık uzunlukları dengeli, C makul kısmi yanılgı. Küçük not: kökteki 'dinlemek' yalnız D'de geçiyor (sözcük ipucu); istenirse kök 'arkadaşına saygı göstermek için' diye değiştirilebilir. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-003",
+  "kazanim_kodu": "HB.2.1.3",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "İçerik doğru ve kazanıma uygun. Zorluk etiketi iddialı: kök ('ikisinin de görüşünü dikkate alan') doğruyu zaten belirtiyor, çeldiriciler bariz; zorluk 2 -> 1 yapılmalı. Başka değişiklik gerekmez."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "HB2-004",
+  "kazanim_kodu": "HB.2.2.1",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Geç yatma -> sabah yorgunluğu. Kazanımı (alışkanlık-gelişme ilişkisi) iyi ölçüyor; çeldiriciler sağlıklı alışkanlıklar, koşma makul yanılgı. Tek doğru. Zorluk 2 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-005",
+  "kazanim_kodu": "HB.2.2.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Tanımadığına adres verilmez, güvenilir yetişkine söylenir. B (kısmi adres) ve C (okul adı) makul yanılgılar; şık uzunlukları dengeli. Korkutucu içerik yok. Zorluk 2 kabul edilebilir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-006",
+  "kazanim_kodu": "HB.2.2.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "RED",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Levha (mavi kare, beyaz üçgen içinde yürüyen kişi) gerçekte Yaya Geçidi; C doğru. Ancak kazanım levhayı TANIMA; metinle tarif etmek bu beceriyi ölçmez (7-8 yaş 'beyaz üçgen' tarifini çözmez, ezber/okuma sorusuna döner). Görselsiz pilotta yayınlanamaz. Gerçek levha görseli ile gorsel_gerekli=true olarak yeniden kurulursa kurtarılır (tarifi kaldır, kök 'Yandaki levha neyi gösterir?')."
+  },
+  "onay": false,
+  "neden": "kalite RED"
+ },
+ {
+  "id": "HB2-007",
+  "kazanim_kodu": "HB.2.2.4",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Ambulans/acil çağrı 112 (110 itfaiye, 155 polis, 156 jandarma) - numaralar doğru. Çeldiriciler gerçek acil numaraları, makul. Tek doğru. Zorluk 1 uygun. (008 ile aynı kazanımda ama farklı beceri.)"
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-008",
+  "kazanim_kodu": "HB.2.2.4",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "112 yönergesi: görevli kapatmanızı söyleyene kadar hatta kalınır. Doğru şık en kısa (ipucu yok), çeldiriciler makul. Küçük not: 'Görevli' belirsiz olabilir; 'Çağrıyı alan görevli izin verince' daha net ama zorunlu değil. Zorluk 2 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-009",
+  "kazanim_kodu": "HB.2.3.1",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Doktor/ilaç -> sağlık ihtiyacı. Ailenin ihtiyaçları karşılaması kazanımla uyumlu; tek doğru. Çeldiriciler kolay elenir ama bu yaş için kabul edilebilir. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-010",
+  "kazanim_kodu": "HB.2.3.1",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Dinleme ve sarılma -> destek. 'Ailesinden biri' ifadesi aile yapısı önkabulü içermiyor (iyi). B ve D aşırı koruyucu aile yanılgısı, makul. Şıklar paralel yapıda. Zorluk 2 kabul edilebilir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-011",
+  "kazanim_kodu": "HB.2.3.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Çarpınca özür dilenir. Tüm şıklar eşit uzunlukta nezaket sözü; B ve A makul karışıklıklar. Tek doğru, zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-012",
+  "kazanim_kodu": "HB.2.3.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "B",
+   "emin": "orta",
+   "notlar": "Cevap Cem (kitapları dağıtan). Sorun: soru görev-sorumluluk kavramını değil metin eşleştirme/okuma-mantık ölçüyor; 4 isim x 4 görev, ~60 kelimelik kök 7-8 yaş için çalışma belleğini zorluyor. Düzeltme: 3 öğrenci/3 görev ile kısalt (veya kökü 'görevini yapmayan öğrencinin yapılmayan işi' gibi kavrama bağla); çeldiriciler yalnız isim olduğu için makul-yanılgı değil. Zorluk 2 kalabilir."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "HB2-013",
+  "kazanim_kodu": "HB.2.4.1",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Tarihî mekân = yüzlerce yıl önce insan yapımı kale. D ('milyonlarca yıldır duran dağ') eski=tarihî yanılgısını sınayan iyi çeldirici; C doğal güzellik. Tek doğru. Doğru şık bir kelime daha uzun ama belirgin değil. Zorluk 2 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-014",
+  "kazanim_kodu": "HB.2.4.2",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Mahalle yönetimi = muhtar; bilgi doğru, kazanımla uyumlu. Çeldiriciler zayıf ama bu yaş için kabul edilebilir; 'mahalle' sözcüğü D'de de geçtiği için kesin ipucu değil. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-015",
+  "kazanim_kodu": "HB.2.4.3",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "MEB ana çizgisi: Selanik Askerî Rüştiyesi matematik öğretmeni Mustafa Efendi 'Kemal' adını verdi. Tarih bilgisi yaygın kabul, isim/tarih uydurma yok. Çeldiriciler (anne, baba, sınıf arkadaşı) makul. Doğru şık en kısa. Zorluk 2 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-016",
+  "kazanim_kodu": "HB.2.4.4",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "23 Nisan, Atatürk'ün dünya çocuklarına armağanı. 19 Mayıs (gençlik) makul çeldirici. Bilgi düzeyi; kazanımdaki 'yorumlama'ya göre basit ama kabul edilebilir. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-017",
+  "kazanim_kodu": "HB.2.4.4",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Cumhuriyetin ilanı 29 Ekim 1923. Küçük not: kök 'hangi bayramla' diyor, şıklar tarih (kabul edilebilir; istenirse 'hangi tarihte kutlanan bayramla'). 'Pano/resim' bağlamı süstür ama zararsız. 016 ile içerik çakışması düşük. Zorluk 2 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-018",
+  "kazanim_kodu": "HB.2.5.1",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Tarif ilkbahar; sonrası yaz -> C doğru, tek doğru. Zorluk 3 iddialı: mevsim sırası 1. sınıf düzeyi bilgi, iki adım ama kronoloji karmaşık değil; zorluk 3 -> 2. D şıkkı kökteki özelliklerin tekrarı (okuma tuzağı olarak kabul edilebilir)."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "HB2-019",
+  "kazanim_kodu": "HB.2.5.2",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Batıya dönünce sağ el kuzeyi gösterir (batı = 270 derece, +90 = kuzey). Çeldiriciler makul yönelme karışıklıkları (A sol, C arka, D yüz). Kazanımla uyumlu. Zor ama zorluk 3 etiketi dürüst; 2. sınıf için dönme-akıl yürütme ağır olabilir, görsel/uygulama desteği önerilir. Doğru cevap hesaplandı."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-020",
+  "kazanim_kodu": "HB.2.5.3",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Güvenilir kaynak = uzman kitabı; doğru şık en kısa, çeldiriciler (söylenti, ünlü paylaşımı, film) makul. Uyarı: 021 ile aynı beceriyi ölçüyor ve 'uzman' ipucu 021'e çapraz sızıyor (§18.1); ikisinden biri değiştirilmeli/ayrı tutulmalı. Zorluk 2 kabul edilebilir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-021",
+  "kazanim_kodu": "HB.2.5.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Cevap C (uzman kaynakla karşılaştırmak). Zorluk 3 iddialı -> 2 (tek adımlı kaynak doğrulama). A ve D bariz saçma (genel kültürle elenir): ör. A yerine 'Arkadaşının bilgisine güvenip hemen uygulamak' gibi makul yanılgı yaz. 020 ile ölçüm kopyası; biri elenebilir ya da 021 farklı beceriye kaydırılabilir."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "HB2-022",
+  "kazanim_kodu": "HB.2.5.4",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Musluğu kapatmak tasarruf; diğer üçü israf. Çeldiriciler kolay ve ortak 'israf' kalıbında ama zorluk 1 ve yaş için uygun. Tek doğru."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-023",
+  "kazanim_kodu": "HB.2.5.4",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Kâğıt tasarrufu -> ağaç korunması. A-C başka kaynak tasarrufu davranışları (su, enerji, giysi): iyi makul-yanılgı çeldiriciler, tek doğru. Not: A 022 B ile aynı diş fırçalama örneğini kullanıyor (hafif çapraz ipucu, kabul edilebilir). Zorluk 2 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-024",
+  "kazanim_kodu": "HB.2.6.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Top oynamak spor/oyun, sanat örneği değil; diğer üçü müzik/resim. Tek olumsuzluk (DEĞİLDİR büyük harf), çift olumsuzluk yok. Bilgi düzeyi, zorluk 2 kabul edilebilir (olumsuz kök). Küçük not: 'resim asmak' sanat örneği olarak biraz zayıf ama yanıltıcı değil."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-025",
+  "kazanim_kodu": "HB.2.1.3",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Kendi cevabım A: yalnız sırayla birer kez kaymak 'üçünün de kayması' koşulunu sağlar (B ilk kayanı tekrar ettirir, C ve D diğerlerini dışlar). Tek doğru, şık uzunlukları dengeli, bilgi-kavram düzeyi, değer yargısı yok. Küçük not (düzeltme şart değil): B şıkkındaki 'kayanın' kelimesi 'kaya+nın' (taş) gibi okunabilir; istenirse 'Önce kaymış olanın yeniden kayması' yazılır. Çeldiriciler biraz bariz ama zorluk 1 için kabul."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-026",
+  "kazanim_kodu": "HB.2.1.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Kendi cevabım C (Barışma): 'kırgınlığı konuşarak bitirdi, yeniden arkadaş oldu' tanımı tek şıkka oturur; Küsme/Tartışma/Uzaklaşma sürecin diğer evreleri, ikinci doğru yok. Kazanıma (arkadaşlık ilişkilerini düzenleme) kavram düzeyinde bağlanıyor, tutum yargısı yok. Kök, tanımı veriyor; bu bilinçli bir kavram-adlandırma sorusu, zorluk 1 uygun. Şıklar kısa ve dengeli. 'Kırgınlık' 2. sınıf için sınırda ama bağlamdan anlaşılır."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-027",
+  "kazanim_kodu": "HB.2.2.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Cevabım B (durup yolu izlemek); bilgi doğru, tek doğru var. Sorunlar: (1) Kökteki 'Dur' sözcüğü cevaptaki 'durdurup' ile eşleşiyor, ipucu cevabı veriyor (REHBER §4.1); (2) üç çeldirici de '...geçmek' ile bitiyor, doğru şık tek yapısal farklı ve tek 'durma' içeren şık (§4.2, §18.5); (3) kazanım 'levhaları tanıyabilme' ama soru levhayı tanıtmıyor, adı zaten verilmiş; ayrıca sürücü bakış açısı 2. sınıf öğrencisine (yaya) uzak. Öneri: levhayı tarif et ('kırmızı, sekiz köşeli, beyaz harflerle DUR yazan levha') ve 'Bu levha ne anlama gelir?' diye sor; şıkları yapısal olarak dengele (ör. dört şık da farklı levha anlamı: durmak / yavaşlamak / dönmek / park etmek). 'Yolu izlemek' de biraz belirsiz."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "HB2-028",
+  "kazanim_kodu": "HB.2.3.3",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Cevabım D: görev 'kitaplığı düzene sokmak', yalnız D bunu yerine getirir; A görevi erteler/atlar, B ve C başkasına yıkar. Tek doğru, şık uzunlukları dengeli (D en uzun değil). Tutum kazanımı bilgi-kavram düzeyinde işlenmiş; görevi kökte verdiği için yargı gerektirmiyor. Çeldiriciler gerçekçi kaçınma örüntüleri. Küçük dil notu: 'düzene sokmak' deyimi ve 'görevi için' kalıbı biraz ağır; 'görevini yapmak için' daha sade, ama düzeltme gerektirmez. Zorluk 1 uygun (kök cevabı neredeyse veriyor)."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-029",
+  "kazanim_kodu": "HB.2.3.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Cevabım B (eşyalarını düzenli tutma): oyuncağı kutuya koymak ödev, çiçek sulama ve sofra kurmayla eşleşmez. Çeldiriciler gerçek çocuk sorumlulukları olduğu için makul (yalnız yanlış kategori), tek doğru. Şıklar dengeli, değer yargısı yok. Zorluk 2 sınırda yüksek: tek adımlı sınıflama olduğu için 1'e de yakın; model_tahmini olarak kalabilir ama iddialı sayılırsa 1'e indirilmesi daha güvenli (§4.6)."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-030",
+  "kazanim_kodu": "HB.2.5.1",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Cevabım A: yaprakların sararıp dökülmesi sonbaharın tipik özelliği; B ilkbahar, C kış, D yaz. Bilgi Türkiye için kesin ve tek doğru; mutlak ifade yok. Şık uzunlukları dengeli. Küçük kazanım notu: kazanım 'hava olayları-mevsim ilişkisini çözümleme', soru ise mevsim özelliği hatırlama (bilgi düzeyi); A/B doğa olayı, yalnız C/D hava durumu. Kabul edilebilir yakınlık, zorluk 1 doğru. HB2-031 ile aynı kazanımda; ikisi arasında ipucu sızıntısı önemsiz."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-031",
+  "kazanim_kodu": "HB.2.5.1",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Cevabım C (Kış): karla kaplı yerler, buz tutmuş su birikintileri ve çok soğuk hava yalnız kışa uyar; sonbahar yapraksızlık için çekici ama kar/buz ile elenir. Tek doğru, kazanıma (gözlemden mevsim çıkarımı) HB2-030'dan daha yakın. Dil 2. sınıfa uygun ('su birikintisi' sınırda ama anlaşılır). Zorluk 2 iddialı: ipuçları çok bariz, kar tek başına yeterli; 1'e indirmek daha dürüst (§4.6). 'Mevsimi' her şıkta tekrarlıyor ama sorun değil."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "HB2-032",
+  "kazanim_kodu": "HB.2.2.4",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Gerekçe: sokak adı yok; eve ulaşmak için yer bilgisi gerekir, elde apartman adı ve karşıdaki okul var. 112 doğru. Kazanıma uygun, tek doğru, çeldiriciler makul (A hasta bilgisi, C kendi okulu, D hane bilgisi). Sorun yalnız zorluk: bağlam kullanılacak iki yer bilgisini doğrudan sayıyor, doğru şık metnin tekrarı; tek adımlı seçme, zorluk 2. Korkutucu içerik yok (hafif düşme).",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "HB2-033",
+  "kazanim_kodu": "HB.2.5.1",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Gerekçe: kar ve buz kış demek; kış, ilkbahar, yaz; iki mevsim sonra yaz, havanın çok sıcak geçmesi. Çeldiriciler makul (A bir sonraki mevsim, B sonbahar, D aynı mevsim). Tek doğru. Çıkarım (kış tespiti) ve iki adım ilerleme gerektirdiği için zorluk 3 savunulabilir (kronoloji, REHBER 17.7); sınır düzeyde. A'daki ağaç çiçeklenmesi ilkbahar için klasik bilgi, yazı dışlıyor.",
+   "zorluk_onerisi": 3
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "HB2-034",
+  "kazanim_kodu": "HB.2.5.3",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Gerekçe: iki ölçüt (uzman + güncel) yalnız A'da birlikte var; B güncel değil, C ve D uzman değil. Kazanım (bilgi toplama, kaynak seçimi) uygun, tek doğru, ölçütler eş anlamlı yazılmış (metin eşleştirme yok), A-B ve C-D çeldirici çiftleri makul. Zorluk: ölçütler kökte açıkça verilmiş, iki ölçütle eleme, zorluk 2. Dil: 'güncel' 2. sınıf için ağır olabilir; şıklardaki 'bu yıl / otuz yıl önce' bağlamı çözüyor, isteğe bağlı 'güncel' yerine 'yeni' denebilir.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "HB2-035",
+  "kazanim_kodu": "HB.2.2.1",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Gerekçe: iki alışkanlık hatası (el yıkamama, hareketsizlik) ve ikisini birden düzelten tek şık D (yemekten önce el yıkama + açık havada oynama). Bilgi doğru; kazanıma uygun; tek doğru. Çeldiriciler makul (A ve C 'dinlenme' yanılgısı, B yalnız hareketi düzeltiyor). B'de kötü alışkanlık açıkça yazılı (bariz yanlış) ama kabul edilebilir. Zorluk: iki alışkanlık, iki düzeltme eşleştirmesi; çok adımlı çıkarım değil, zorluk 2. 'bu iki sorun' ifadesi hafif belirsiz ama her okunuşta D çıkar.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "HB2-036",
+  "kazanim_kodu": "HB.2.5.4",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Gerekçe: oda güneş ışığıyla aydınlık, lamba gereksiz; radyo dinlenmiyor, gereksiz; bilgisayar kullanımda. Kapatılacaklar lamba ve radyo. Kazanım (tasarruflu kullanım) uygun, tek doğru, bilgi doğru. Üç cihaz için ayrı ölçüt değerlendirmesi ve lambada örtük çıkarım (güneş = lamba gerekmez) var, zorluk 3 sınırda ama savunulabilir. Küçük not: D tek öğeli şık, A-C ikili; yapısal fark test-wise ipucu olabilir, ikilemek için D 'Yalnızca lambayı' yerine ikili bir şık düşünülebilir (zorunlu değil).",
+   "zorluk_onerisi": 3
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "HB2-037",
+  "kazanim_kodu": "HB.2.1.1",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Gerekçe: Nil çalışmayı çarşamba bitirdi, elektrik perşembe akşamı kesildi, etkilenmez; Cem perşembe akşamına bırakmıştı, çalışamaz. Kazanım (planlı olmanın etkisi) uygun, tek doğru, değer yargısı değil neden-sonuç. Çeldiriciler makul (A ters çevirme, B 'herkes etkilenir', D 'kesinti önemsiz'). Zorluk: tek olay sırası okuması, zorluk 2; ayrıca hikâye 'planlı olan kazanır' beklentisiyle test-wise çözülebilir. Küçük dil notları: kök 'hangisi olur?' tuhaf, 'Cuma günü ne olur?' daha doğal; 'Cem yarım kalır' yerine 'hazır olmaz' daha doğru (başlanmadığı belirsiz).",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "HB2-038",
+  "kazanim_kodu": "HB.2.1.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Once dinle, sorusu kalirsa soz iste: tek savunulabilir sik. Celdiriciler (kesme, yanina gitme, fisildama) makul yanilgi. Iki kisa adim ama cok adimli degil; zorluk 2.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "HB2-039",
+  "kazanim_kodu": "HB.2.2.1",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Gec yatma-uykusuzluk-dinleyememe tek nedensel adim; zorluk 2. Celdiriciler (odev saati, kosma, sut) alakasiz ama kabul edilebilir; A ve D biraz bariz. Bilgi dogru, korkutucu icerik yok.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "HB2-040",
+  "kazanim_kodu": "HB.2.2.4",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "112 dogru (saglik acil); 155 polis, 156 jandarma, dogru eslestirme. C ve D makul yanilgi (dogru numara/eksik bilgi). Tek adimli bilgi uygulamasi; zorluk 2. Bayilan kisi sahnesi hafif, korkutucu degil.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "HB2-041",
+  "kazanim_kodu": "HB.2.3.1",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "orta",
+   "notlar": "Mont=giyinme, isitici=barinma; A tek sik (giyinme A,B; barinma A,D). Isitici kontrolu barinma sayilmasi hafif yoruma acik ama secenekler arasinda tek savunulabilir. Iki esleme ama eleme ile cozulur; zorluk 2.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "HB2-042",
+  "kazanim_kodu": "HB.2.3.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Sira: lutfen (isterken), tesekkur (alinca), rica ederim (arkadas tesekkur edince). Sikler ayni uc soz permutasyonu, ipucu yok. Siralama sorusu ama gunluk bilgi; zorluk 2.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "HB2-043",
+  "kazanim_kodu": "HB.2.4.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "REHBER §18.7: B (masal kitabi), C (kafe menusu), D (baska sehrin belediyesi) genel kulturle bariz elenir; kokte 'tabelada belediyenin adi yazar' dogru cevabi neredeyse veriyor. Makul celdiriciler lazim (ornegin muhtarin evine, okul panosuna, mahalledeki bir esnafa sormak gibi). Tek adim; zorluk 2 (hatta 1).",
+   "zorluk_onerisi": 2
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "HB2-044",
+  "kazanim_kodu": "HB.2.5.1",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Gozlemlerden sonbahar, sonraki mevsim kis: iki adim (mevsim tani + siralama). C 'simdiki donem', A/B onceki mevsimler: makul celdirici. Kokteki 'belli sirayla tekrarlanir' bilgisi baglam olarak gerekli. Zorluk 3 sinirda ama kabul.",
+   "zorluk_onerisi": 3
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "HB2-045",
+  "kazanim_kodu": "HB.2.5.4",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Pencereyi kapatmak tek adim; kok cevabi neredeyse veriyor. Zorluk 3 asiri iddiali; 2 (hatta 1). D (isitici pencere yaninda) biraz bariz/gercek disi, B-C makul. Dogru sik uzunlugu diger siklara yakin.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ }
+]

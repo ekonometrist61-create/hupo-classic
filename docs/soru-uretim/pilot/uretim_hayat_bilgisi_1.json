@@ -1,0 +1,364 @@
+{
+ "sorular": [
+  {
+   "id": "hb1-01",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Tanışma",
+   "kazanim_kodu": "HB.1.1.1",
+   "kazanim_metni": "Öğretmeni ve arkadaşlarıyla tanışabilme",
+   "pasaj_id": "hb1-01-p",
+   "pasaj_metin": "Yeni bir arkadaşla tanışırken önce adımızı söyleriz. Sonra onun adını soruruz.",
+   "dayanak": "önce adımızı söyleriz",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Yeni bir arkadaşla tanışırken önce ne yaparız?",
+   "siklar": {
+    "A": "Kendi adımızı söyleriz.",
+    "B": "Hangi sınıfta olduğunu sorarız.",
+    "C": "Ona oyun oynamayı öneririz.",
+    "D": "Elimizdeki oyuncağı gösteririz."
+   },
+   "dogru_sik": "A",
+   "ipucu": "Pasajda \"önce\" sözcüğünün yanında yazan işe bak.",
+   "cozum_adimlari": [
+    "Pasaja göre tanışırken ilk iş adımızı söylemektir.",
+    "Soru da tanışırken önce ne yapıldığını soruyor.",
+    "Kendi adımızı söylemek bu işe uyar.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Karşıdakini tanımak için soru sormak akla gelir ama pasajda bu iş ilk değil, sonra yapılan iştir.",
+    "C": "Oyun önermek arkadaşça görünür ama tanışmanın ilk adımı değildir.",
+    "D": "Bir şey göstermek paylaşmak gibi görünür ama pasajdaki ilk iş bu değildir."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "hb1-02",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Sınıf kuralları",
+   "kazanim_kodu": "HB.1.1.3",
+   "kazanim_metni": "Sınıf ve okul ortamında kurallara uygun davranabilme",
+   "pasaj_id": "hb1-02-p",
+   "pasaj_metin": "Sınıfta konuşmak için parmak kaldırırız. Arkadaşımız konuşurken onu dinleriz.",
+   "dayanak": "Sınıfta konuşmak için parmak kaldırırız",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Sınıfta konuşmak isteyen bir öğrenci ne yapmalıdır?",
+   "siklar": {
+    "A": "Arkadaşının sözünü keser.",
+    "B": "Parmak kaldırıp bekler.",
+    "C": "Yerinden kalkıp dolaşır.",
+    "D": "Yüksek sesle bağırır."
+   },
+   "dogru_sik": "B",
+   "ipucu": "Pasajın ilk cümlesinde konuşmak için yapılan şey yazıyor.",
+   "cozum_adimlari": [
+    "Pasaj, sınıfta konuşmak için ne yaptığımızı söylüyor.",
+    "Bu iş parmak kaldırmaktır.",
+    "Parmak kaldırıp beklemek kurala uyar.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Hemen konuşmak istenince akla gelir ama pasaja göre arkadaşı dinlemek gerekir.",
+    "C": "Yerinden kalkmak dikkat çekmek için yapılır ama konuşmak için gereken iş değildir.",
+    "D": "Bağırmak sesini duyurmak için yapılır ama pasajdaki kurala uymaz."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "hb1-03",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Kişisel alan ve beden güvenliği",
+   "kazanim_kodu": "HB.1.2.2",
+   "kazanim_metni": "Kişisel alan sınırlarını koruyabilme",
+   "pasaj_id": "hb1-03-p",
+   "pasaj_metin": "Bedenimiz bize aittir. Deniz'in yanına oturan biri, Deniz'in istemediği bir şekilde ona dokundu. Deniz hayır dedi ve durumu güvendiği bir büyüğe anlattı.",
+   "dayanak": "güvendiği bir büyüğe anlattı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Biri sana istemediğin bir şekilde dokunursa ne yapmalısın?",
+   "siklar": {
+    "A": "Utanır, kimseye bir şey söylemezsin.",
+    "B": "Gülüp geçer, bir şey demezsin.",
+    "C": "Hayır der, bir büyüğe anlatırsın.",
+    "D": "Ona vurur, sonra uzaklaşırsın."
+   },
+   "dogru_sik": "C",
+   "ipucu": "Pasajda Deniz'in dokunuştan sonra son olarak ne yaptığına bak.",
+   "cozum_adimlari": [
+    "Pasajda Deniz istemediği dokunuşa hayır dedi.",
+    "Sonra durumu güvendiği bir büyüğe anlattı.",
+    "Bu iki işi birlikte yapan şık, hayır demek ve bir büyüğe anlatmaktır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Utanıp saklamak çocuğa kolay gelir ama pasajdaki Deniz bir büyüğe anlatmıştır.",
+    "B": "Gülüp geçmek tartışmayı önler gibi görünür ama hayır demeyi ve anlatmayı içermez.",
+    "D": "Vurmak tepki gibi görünür ama pasajdaki Deniz böyle yapmamıştır."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "hb1-04",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Yaya trafik kuralları",
+   "kazanim_kodu": "HB.1.2.3",
+   "kazanim_metni": "Temel trafik kurallarına uygun davranabilme",
+   "pasaj_id": "hb1-04-p",
+   "pasaj_metin": "Yaya ışığı kırmızıyken kaldırımda bekleriz. Yeşil yanınca karşıya geçeriz.",
+   "dayanak": "Yaya ışığı kırmızıyken kaldırımda bekleriz",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Yaya ışığı kırmızıyken ne yaparız?",
+   "siklar": {
+    "A": "Koşarak karşıya geçeriz.",
+    "B": "Yola çıkıp arabaları izleriz.",
+    "C": "Araba yoksa hemen geçeriz.",
+    "D": "Kaldırımda durup bekleriz."
+   },
+   "dogru_sik": "D",
+   "ipucu": "Pasajda kırmızı ışık yanarken yapılan iş yazıyor.",
+   "cozum_adimlari": [
+    "Soru, yaya ışığı kırmızıyken ne yapıldığını soruyor.",
+    "Pasaja göre kırmızıyken kaldırımda bekleriz.",
+    "Kaldırımda durup beklemek bu cümleye uyar.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Koşarak geçmek vakit kazandırır gibi görünür ama kırmızıyken beklemek gerekir.",
+    "B": "Yola çıkıp izlemek dikkatli olmak gibi görünür ama kırmızıyken yola çıkılmaz.",
+    "C": "Araba görünmeyince geçmek kolay gelir ama kırmızıyken beklemek gerekir."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "hb1-05",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Ailem",
+   "kazanim_kodu": "HB.1.3.1",
+   "kazanim_metni": "Ailenin özelliklerini ifade edebilme",
+   "pasaj_id": "hb1-05-p",
+   "pasaj_metin": "Ailemizde annem, babam, ablam, kardeşim ve ben varız. Hepimiz aynı evde yaşıyoruz.",
+   "dayanak": "annem, babam, ablam, kardeşim ve ben varız",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Bu ailede toplam kaç kişi vardır?",
+   "siklar": {
+    "A": "Beş kişi",
+    "B": "Dört kişi",
+    "C": "Altı kişi",
+    "D": "Üç kişi"
+   },
+   "dogru_sik": "A",
+   "ipucu": "Konuşan çocuk da ailenin bir üyesidir. Pasajdaki herkesi say.",
+   "cozum_adimlari": [
+    "Pasajdaki kişileri sayalım: annem, babam, ablam, kardeşim ve ben.",
+    "Bir, iki, üç, dört, beş eder.",
+    "Aile beş kişidir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Konuşan çocuk kendini saymazsa dört bulur.",
+    "C": "Bir kişiyi iki kez sayınca altı çıkar.",
+    "D": "Yalnızca anne, baba ve bir kardeşi sayınca üç çıkar."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "hb1-06",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Evde görev paylaşımı",
+   "kazanim_kodu": "HB.1.3.3",
+   "kazanim_metni": "Aile bireylerinin görev ve sorumluluklarını çözümleyebilme",
+   "pasaj_id": "hb1-06-p",
+   "pasaj_metin": "Bizim evde herkesin bir işi var. Annem sofrayı kurar, babam yemek yapar, ablam çöpü çıkarır.",
+   "dayanak": "ablam çöpü çıkarır",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Bu evde ablanın işi nedir?",
+   "siklar": {
+    "A": "Sofrayı kurar.",
+    "B": "Çöpü çıkarır.",
+    "C": "Yemek yapar.",
+    "D": "Bulaşık yıkar."
+   },
+   "dogru_sik": "B",
+   "ipucu": "Pasajın ikinci cümlesinde her kişinin yanında bir iş yazıyor. Ablanın adını ara.",
+   "cozum_adimlari": [
+    "Pasaj, evdeki herkesin işini sayıyor.",
+    "Annem sofrayı kurar, babam yemek yapar.",
+    "Ablanın işi çöpü çıkarmaktır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Sofrayı kurmak pasajda geçer ama bu işi anne yapar.",
+    "C": "Yemek yapmak pasajda geçer ama bu işi baba yapar.",
+    "D": "Bulaşık yıkamak evde yapılan bir iştir ama pasajda ablanın işi olarak yazmaz."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "hb1-07",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Ülkemiz",
+   "kazanim_kodu": "HB.1.4.1",
+   "kazanim_metni": "Yaşadığı yerin ve ülkemizin genel özelliklerini açıklayabilme",
+   "pasaj_id": "hb1-07-p",
+   "pasaj_metin": "İstanbul çok kalabalık bir şehirdir ama ülkemizin başkenti Ankara'dır.",
+   "dayanak": "ülkemizin başkenti Ankara'dır",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ülkemizin başkenti hangi şehirdir?",
+   "siklar": {
+    "A": "İstanbul şehri",
+    "B": "İzmir şehri",
+    "C": "Ankara şehri",
+    "D": "Bursa şehri"
+   },
+   "dogru_sik": "C",
+   "ipucu": "Pasajda iki şehir geçiyor. Başkentin hangisi olduğu \"ama\" sözcüğünden sonra yazıyor.",
+   "cozum_adimlari": [
+    "Pasajda İstanbul'un kalabalık bir şehir olduğu yazıyor.",
+    "Başkent olan şehir ise \"ama\" sözcüğünden sonra söyleniyor.",
+    "Ülkemizin başkenti Ankara'dır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "İstanbul pasajda ilk geçen ve en kalabalık şehirdir, bu yüzden başkent sanılabilir.",
+    "B": "İzmir büyük ve bilinen bir şehirdir, bu yüzden akla gelebilir.",
+    "D": "Bursa büyük ve bilinen bir şehirdir, bu yüzden akla gelebilir."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "hb1-08",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Güneş, Dünya ve Ay modeli",
+   "kazanim_kodu": "HB.1.5.2",
+   "kazanim_metni": "Modeller üzerinden gök cisimlerini karşılaştırabilme",
+   "pasaj_id": "hb1-08-p",
+   "pasaj_metin": "Sınıf modelimizde Güneş bir basketbol topu, Dünya bir bilye, Ay ise bir bezelyedir.",
+   "dayanak": "Güneş bir basketbol topu, Dünya bir bilye, Ay ise bir bezelyedir",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Bu modele göre hangi cümle doğrudur?",
+   "siklar": {
+    "A": "Ay, Dünya'dan daha büyüktür.",
+    "B": "Dünya, Güneş'ten daha büyüktür.",
+    "C": "Ay, Güneş'ten daha büyüktür.",
+    "D": "Dünya, Ay'dan daha büyüktür."
+   },
+   "dogru_sik": "D",
+   "ipucu": "Modeldeki üç şeyin büyüklüğünü sırayla karşılaştır.",
+   "cozum_adimlari": [
+    "Modelde Güneş basketbol topu, Dünya bilye, Ay bezelyedir.",
+    "En büyük basketbol topu, sonra bilye, en küçük bezelyedir.",
+    "Bilye bezelyeden büyüktür, yani Dünya Ay'dan büyüktür.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Ay ile Dünya'nın sırası ters söylenmiştir; bezelye bilyeden küçüktür.",
+    "B": "Dünya ile Güneş'in sırası ters söylenmiştir; bilye basketbol topundan küçüktür.",
+    "C": "Ay ile Güneş'in sırası ters söylenmiştir; bezelye basketbol topundan küçüktür."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "hb1-09",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Bilimde merak ve soru",
+   "kazanim_kodu": "HB.1.6.1",
+   "kazanim_metni": "Bilimle ilgili merak ettiklerini sorabilme",
+   "pasaj_id": "hb1-09-p",
+   "pasaj_metin": "Bir çocuk, toprağa ektiği tohumun neden büyüdüğünü merak ediyor.",
+   "dayanak": "tohumun neden büyüdüğünü merak ediyor",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Çocuk merak ettiğini öğrenmek için hangi soruyu sormalıdır?",
+   "siklar": {
+    "A": "Tohum neden büyür?",
+    "B": "Toprağı kim hazırlamış?",
+    "C": "Tohum hangi renktir?",
+    "D": "Saksıyı nereden aldın?"
+   },
+   "dogru_sik": "A",
+   "ipucu": "Çocuğun neyi merak ettiği pasajın sonunda yazıyor. Soru o merakı sormalı.",
+   "cozum_adimlari": [
+    "Pasaj, çocuğun tohumun neden büyüdüğünü merak ettiğini söylüyor.",
+    "Merak edileni öğrenmek için tam bunu soran soru gerekir.",
+    "\"Tohum neden büyür?\" sorusu bu merakı sorar.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Toprak konusu pasajda geçer ama çocuk toprağın kim tarafından hazırlandığını merak etmiyor.",
+    "C": "Tohum hakkında bir sorudur ama çocuk tohumun rengini merak etmiyor.",
+    "D": "Ekme işiyle ilgili bir sorudur ama çocuk saksının nereden alındığını merak etmiyor."
+   },
+   "zorluk": 3,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "hb1-10",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Teknolojide merak ve soru",
+   "kazanim_kodu": "HB.1.6.2",
+   "kazanim_metni": "Teknoloji ile ilgili merak ettiklerini sorabilme",
+   "pasaj_id": "hb1-10-p",
+   "pasaj_metin": "Bir çocuk, robot süpürgenin odada yolunu nasıl bulduğunu merak ediyor.",
+   "dayanak": "yolunu nasıl bulduğunu merak ediyor",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Çocuk merak ettiğini öğrenmek için hangi soruyu sormalıdır?",
+   "siklar": {
+    "A": "Robot süpürge kaç liradır?",
+    "B": "Süpürge yolunu nasıl bulur?",
+    "C": "Robot süpürge hangi renktir?",
+    "D": "Robot süpürgeyi kim yapmış?"
+   },
+   "dogru_sik": "B",
+   "ipucu": "Çocuğun neyi merak ettiği pasajın sonunda yazıyor. Soru o merakı sormalı.",
+   "cozum_adimlari": [
+    "Pasaj, çocuğun robot süpürgenin yolunu nasıl bulduğunu merak ettiğini söylüyor.",
+    "Merak edileni öğrenmek için tam bunu soran soru gerekir.",
+    "\"Süpürge yolunu nasıl bulur?\" sorusu bu merakı sorar.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Robot süpürge hakkında bir sorudur ama çocuk fiyatını merak etmiyor.",
+    "C": "Robot süpürge hakkında bir sorudur ama çocuk rengini merak etmiyor.",
+    "D": "Robot süpürge hakkında bir sorudur ama çocuk onu kimin yaptığını merak etmiyor."
+   },
+   "zorluk": 3,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  }
+ ]
+}

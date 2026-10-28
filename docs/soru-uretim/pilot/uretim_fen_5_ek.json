@@ -1,0 +1,737 @@
+﻿[
+    {
+        "id":  "FEN5-E-001",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.1.4",
+        "surec_bileseni":  "a",
+        "konu":  "Güneş, Dünya ve Ay",
+        "alt_konu":  "Hacimsel büyüklük modeli",
+        "soru_metni":  "Eda, Güneş, Dünya ve Ay’ın hacimsel büyüklüklerini sınıfta temsil etmek için üç nesne seçti: büyük bir plaj topu, bir mandalina ve bir bilye. Eda nesneleri hacimleri büyükten küçüğe doğru eşleştirecektir. Hangi eşleştirme bu modele uygundur?",
+        "siklar":  {
+                       "A":  "Güneş: plaj topu, Dünya: mandalina, Ay: bilye",
+                       "B":  "Güneş: mandalina, Dünya: plaj topu, Ay: bilye",
+                       "C":  "Güneş: plaj topu, Dünya: bilye, Ay: mandalina",
+                       "D":  "Güneş: bilye, Dünya: mandalina, Ay: plaj topu"
+                   },
+        "dogru_sik":  "A",
+        "ipucu":  "Üç gök cisminin hacimlerini küçükten büyüğe doğru sırala, sonra nesnelerle eşleştir.",
+        "cozum_adimlari":  [
+                               "Güneş, üç gök cismi içinde en büyük hacme sahiptir.",
+                               "Dünya, Ay’dan daha büyüktür.",
+                               "Büyükten küçüğe sıra Güneş, Dünya, Ay olduğundan plaj topu, mandalina, bilye eşleşir.",
+                               "Doğru cevap A seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Doğru.",
+                                  "B":  "Dünya’yı yaşadığı için en büyük sanan öğrenci için çekici.",
+                                  "C":  "Ay’ın gökyüzünde Güneş kadar büyük göründüğünü hacmi de büyük sanan ve Dünya ile Ay’ı karıştıran öğrenci için çekici.",
+                                  "D":  "Sıralamayı tersine çeviren öğrenci için çekici."
+                              },
+        "zorluk":  1,
+        "soru_tipi":  "bilgi",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-002",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.2.4",
+        "surec_bileseni":  "a",
+        "konu":  "Kuvvet",
+        "alt_konu":  "Sürtünme kuvveti ve yüzey",
+        "soru_metni":  "Kış günü okulun buz tutmuş merdiven basamaklarında öğrenciler sık sık kayıyordu. Görevli basamaklara kum serdi ve kayma azaldı. Basamaklarda kayma azalmasının nedeni hangisidir?",
+        "siklar":  {
+                       "A":  "Yüzey düzleşir, sürtünme kuvveti azalır.",
+                       "B":  "Yüzey pürüzlenir, sürtünme kuvveti artar.",
+                       "C":  "Ayakkabı ağırlaşır, sürtünme kuvveti kalkar.",
+                       "D":  "Yüzey ısınır, sürtünme kuvveti azalır."
+                   },
+        "dogru_sik":  "B",
+        "ipucu":  "Kayma ile ayakkabı ve zemin arasındaki sürtünme kuvvetinin büyüklüğü arasındaki ilişkiyi düşün.",
+        "cozum_adimlari":  [
+                               "Kum, buz yüzeyini pürüzlü hâle getirir.",
+                               "Pürüzlü yüzeylerde sürtünme kuvveti daha büyüktür.",
+                               "Sürtünme arttığı için ayakkabı kolay kaymaz.",
+                               "Doğru cevap B seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Kum serilince yüzeyin düzleştiğini sanan öğrenci için çekici.",
+                                  "B":  "Doğru.",
+                                  "C":  "Ağırlığın sürtünmeyi ortadan kaldırdığını sanan öğrenci için çekici.",
+                                  "D":  "Kayma olayını ısı ile ilişkilendiren öğrenci için çekici."
+                              },
+        "zorluk":  2,
+        "soru_tipi":  "cikarim",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-003",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.3.1",
+        "surec_bileseni":  "c",
+        "konu":  "Canlılar ve hayat",
+        "alt_konu":  "Bitki ve hayvan hücresi farkı",
+        "soru_metni":  "Sude, fen laboratuvarında mikroskopla bir soğan zarı hücresini ve pamuklu çubukla kendi yanağının içinden aldığı hücreyi inceliyor. Soğan zarı hücresinde bulunup yanak hücresinde bulunmayan yapıyı belirlemek istiyor. Sude hangi yapıyı belirlemelidir?",
+        "siklar":  {
+                       "A":  "Hücre zarı",
+                       "B":  "Çekirdek",
+                       "C":  "Hücre duvarı",
+                       "D":  "Sitoplazma"
+                   },
+        "dogru_sik":  "C",
+        "ipucu":  "Her iki hücrede de görülen ortak yapıları ele, geriye kalanı seç.",
+        "cozum_adimlari":  [
+                               "Soğan bir bitkidir, yanak hücresi ise hayvan hücresidir.",
+                               "Hücre zarı, çekirdek ve sitoplazma her iki hücrede de bulunur.",
+                               "Hücre duvarı yalnızca bitki hücresinde bulunur.",
+                               "Doğru cevap C seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Her canlı hücrede bulunan bir yapıyı bitkiye özgü sanan öğrenci için çekici.",
+                                  "B":  "Çekirdeği bitkiye özgü sanan öğrenci için çekici.",
+                                  "C":  "Doğru.",
+                                  "D":  "Sitoplazmayı yalnızca bitkide sanan öğrenci için çekici."
+                              },
+        "zorluk":  2,
+        "soru_tipi":  "bilgi",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-004",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.3.3",
+        "surec_bileseni":  "ç",
+        "konu":  "Canlılar ve hayat",
+        "alt_konu":  "Eklem",
+        "soru_metni":  "Buse, kolunu dirsek bölgesinden büküp uzatıyor. Kol ve ön kol kemiklerinin birleştiği bu bölgeye, hareketi sağlayan yapı olarak etiket yazacaktır. Buse etikete hangi adı yazmalıdır?",
+        "siklar":  {
+                       "A":  "Kıkırdak",
+                       "B":  "Kas",
+                       "C":  "Kemik",
+                       "D":  "Eklem"
+                   },
+        "dogru_sik":  "D",
+        "ipucu":  "Kemiklerin birleşerek hareket edebildiği noktayı düşün.",
+        "cozum_adimlari":  [
+                               "Dirsek, kemiklerin birleştiği bölgedir.",
+                               "Kemiklerin birleştiği ve hareket edilebilen bölgelere eklem denir.",
+                               "Doğru cevap D seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Kıkırdağın eklemde bulunmasını eklem adıyla karıştıran öğrenci için çekici.",
+                                  "B":  "Hareketin kaslarla ilgili olduğunu bilip yapıyı kas sanan öğrenci için çekici.",
+                                  "C":  "Birleşen yapıların kemik olduğunu bilip bölgeye kemik diyen öğrenci için çekici.",
+                                  "D":  "Doğru."
+                              },
+        "zorluk":  1,
+        "soru_tipi":  "bilgi",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-005",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.3.4",
+        "surec_bileseni":  "c",
+        "konu":  "Canlılar ve hayat",
+        "alt_konu":  "Omurga sağlığı",
+        "soru_metni":  "Selin ağır okul çantasını her gün aynı omzunda taşıyor ve yürürken öne doğru eğiliyor. Son günlerde sırtında ve omzunda ağrı hissediyor. Selin, kemik ve kas sağlığını korumak için hangisini yapmalıdır?",
+        "siklar":  {
+                       "A":  "Çantayı iki askıyla taşıyıp içindekileri azaltmak",
+                       "B":  "Çantayı ağırlaştırıp omuz kaslarını güçlendirmek",
+                       "C":  "Çantayı tek omuzda taşırken öne doğru eğilmek",
+                       "D":  "Ağrıyan omzu dinlendirmek için saatlerce oturmak"
+                   },
+        "dogru_sik":  "A",
+        "ipucu":  "Yükün omurgaya ve omuzlara eşit ve az dağılması için neler yapılabileceğini düşün.",
+        "cozum_adimlari":  [
+                               "Ağırlığın tek omuza binmesi omurgaya ve kaslara zarar verebilir.",
+                               "Çantayı iki omuza dağıtmak ve hafifletmek yükü azaltır.",
+                               "Bu durum duruş bozukluğu riskini azaltır.",
+                               "Doğru cevap A seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Doğru.",
+                                  "B":  "Ağır yükün kasları güçlendireceğini sanan öğrenci için çekici.",
+                                  "C":  "Alışkanlığını sürdürmeyi sakıncasız sanan öğrenci için çekici.",
+                                  "D":  "Dinlenmeyi tek çözüm sanıp uzun süre kıpırdamamayı seçen öğrenci için çekici."
+                              },
+        "zorluk":  2,
+        "soru_tipi":  "problem",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-006",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.4.2",
+        "surec_bileseni":  "ç",
+        "konu":  "Işığın yayılması",
+        "alt_konu":  "Saydam, yarı saydam, opak",
+        "soru_metni":  "Ceren, mutfakta ışığa tuttuğu yağlı kâğıdın arkasındaki cisimleri bulanık ve silik gördü. Ceren yağlı kâğıdı ışığı geçirme durumuna göre etiketleyecektir. Yağlı kâğıt için hangi etiketi seçmelidir?",
+        "siklar":  {
+                       "A":  "Saydam",
+                       "B":  "Yarı saydam",
+                       "C":  "Opak",
+                       "D":  "Işık kaynağı"
+                   },
+        "dogru_sik":  "B",
+        "ipucu":  "Arkadaki cisimlerin tam net, bulanık ya da hiç görünmeme durumunu karşılaştır.",
+        "cozum_adimlari":  [
+                               "Cisimler görülüyor ama net değil.",
+                               "Işığın bir kısmı geçiyorsa madde yarı saydamdır.",
+                               "Doğru cevap B seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Işığı geçirdiği için saydam diyen öğrenci için çekici; saydamda cisimler net görülür.",
+                                  "B":  "Doğru.",
+                                  "C":  "Cisimleri tam seçemediği için opak diyen öğrenci için çekici; opak ışığı geçirmez.",
+                                  "D":  "Işığı kullanan her şeyi kaynak sanan öğrenci için çekici."
+                              },
+        "zorluk":  1,
+        "soru_tipi":  "bilgi",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-007",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.4.3",
+        "surec_bileseni":  "c",
+        "konu":  "Işığın yayılması",
+        "alt_konu":  "Tam gölgeyi etkileyen değişkenler",
+        "soru_metni":  "Sınıfta el feneri duvardan 2 m uzağa sabitlendi. Fener ile duvar arasında tutulan bir top, fenere doğru yaklaştırıldı. Fener ve duvar yerinden oynatılmadı. Duvardaki tam gölge için hangisi doğrudur?",
+        "siklar":  {
+                       "A":  "Küçülür; çünkü top duvardan uzaklaşmıştır.",
+                       "B":  "Değişmez; çünkü topun boyutu aynı kalmıştır.",
+                       "C":  "Büyür; çünkü top ışık kaynağına yaklaşmıştır.",
+                       "D":  "Kaybolur; çünkü top ışık kaynağının önünü kapatmıştır."
+                   },
+        "dogru_sik":  "C",
+        "ipucu":  "Topun ışık kaynağına olan uzaklığı değişirken duvardaki gölgenin boyutunu düşün.",
+        "cozum_adimlari":  [
+                               "Fener ve duvar sabit, yalnızca topun konumu değişiyor.",
+                               "Cisim ışık kaynağına yaklaşınca engellenen ışık demeti genişler.",
+                               "Bu nedenle duvardaki tam gölge büyür.",
+                               "Doğru cevap C seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Duvardan uzaklaşmayı gölgeyi küçülten etken sanan öğrenci için çekici.",
+                                  "B":  "Gölgenin yalnızca cismin boyutuna bağlı olduğunu sanan öğrenci için çekici.",
+                                  "C":  "Doğru.",
+                                  "D":  "Yaklaşan cismin ışığı tamamen kapatıp gölgeyi yok edeceğini sanan öğrenci için çekici."
+                              },
+        "zorluk":  2,
+        "soru_tipi":  "cikarim",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-008",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.5.5",
+        "surec_bileseni":  "b",
+        "konu":  "Madde ve ısı",
+        "alt_konu":  "Isı iletimi",
+        "soru_metni":  "Mert, odada uzun süredir duran çelik kaşığa ve tahta kaşığa sırayla dokundu. İki kaşık da oda sıcaklığındaydı ancak Mert çelik kaşığı daha soğuk hissetti. Bu gözlem hangisini gösterir?",
+        "siklar":  {
+                       "A":  "Çelik kaşığın sıcaklığı tahta kaşıktan daha düşüktür.",
+                       "B":  "Tahta kaşık ısıyı çelik kaşıktan daha iyi iletir.",
+                       "C":  "Çelik kaşık Mert’in elinden ısı almamıştır.",
+                       "D":  "Çelik kaşık Mert’in elinden ısıyı daha hızlı almıştır."
+                   },
+        "dogru_sik":  "D",
+        "ipucu":  "İki kaşığın sıcaklığı aynı iken elinden çekilen ısının hızını karşılaştır.",
+        "cozum_adimlari":  [
+                               "İki kaşık da oda sıcaklığındadır.",
+                               "Çelik, elden ısıyı hızlı alır; bu yüzden el ısı kaybeder ve soğuk hisseder.",
+                               "Tahta ısıyı yavaş ilettiğinden daha az soğuk hissedilir.",
+                               "Doğru cevap D seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Hissin sıcaklığın farklı olmasından geldiğini sanan öğrenci için çekici.",
+                                  "B":  "İletken ve yalıtkanı ters çeviren öğrenci için çekici.",
+                                  "C":  "Isı alışverişini hiç yok sayan öğrenci için çekici.",
+                                  "D":  "Doğru."
+                              },
+        "zorluk":  2,
+        "soru_tipi":  "cikarim",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-009",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.5.6",
+        "surec_bileseni":  "a",
+        "konu":  "Madde ve ısı",
+        "alt_konu":  "Isı yalıtımı modeli",
+        "soru_metni":  "Zeynep, suyun serin kalmasını sağlayan bir ısı yalıtım modeli kuruyor. Başlangıçta sıcaklığı 8 °C olan aynı miktarda suyu üç özdeş şişeye doldurdu. Şişelerden birini gazete kâğıdına, birini yün kazağa, birini metal folyoya sardı ve hepsini aynı odada bıraktı. Üç saat sonra sıcaklıklar gazete kâğıdında 14 °C, yün kazakta 11 °C, metal folyoda 17 °C oldu. Zeynep’in verilerine göre hangisi doğrudur?",
+        "siklar":  {
+                       "A":  "Yün kazak; su sıcaklığı en az artmıştır.",
+                       "B":  "Metal folyo; su sıcaklığı en az artmıştır.",
+                       "C":  "Gazete kâğıdı; su sıcaklığı en az artmıştır.",
+                       "D":  "Yün kazak; su sıcaklığı en çok artmıştır."
+                   },
+        "dogru_sik":  "A",
+        "ipucu":  "Suyun sıcaklığı en az artan şişeyi saran malzemenin ısıyı nasıl ilettiğini düşün.",
+        "cozum_adimlari":  [
+                               "Sıcaklığı en az artan su, çevreden en az ısı almıştır.",
+                               "Bu şişe yün kazakla sarılıdır.",
+                               "Yün kazak en iyi ısı yalıtım modelidir.",
+                               "Doğru cevap A seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Doğru.",
+                                  "B":  "Metal folyonun parlak olduğu için en iyi koruduğunu sanan öğrenci için çekici; veriler tersini gösteriyor.",
+                                  "C":  "Gazete kâğıdını en iyi yalıtkan sanan öğrenci için çekici; 14 °C, 11 °C’den yüksektir.",
+                                  "D":  "Yün kazakta sıcaklık artışını yanlış okuyan öğrenci için çekici."
+                              },
+        "zorluk":  3,
+        "soru_tipi":  "deney",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-010",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.6.1",
+        "surec_bileseni":  "b",
+        "konu":  "Elektrik",
+        "alt_konu":  "Devre eleman sembolleri",
+        "soru_metni":  "Ahmet, evdeki malzemelerle basit bir elektrik devresinin şemasını çizecek. Elinde pil, ampul, anahtar, makas, mıknatıs ve cetvel var. Şemada yalnızca devre elemanları sembolle gösterilecektir. Hangi grup yalnızca sembolü olan devre elemanlarından oluşur?",
+        "siklar":  {
+                       "A":  "Pil, makas, mıknatıs",
+                       "B":  "Pil, ampul, anahtar",
+                       "C":  "Ampul, cetvel, anahtar",
+                       "D":  "Anahtar, makas, cetvel"
+                   },
+        "dogru_sik":  "B",
+        "ipucu":  "Önce malzemelerden hangilerinin elektrik devresini oluşturan elemanlar olduğunu ayır.",
+        "cozum_adimlari":  [
+                               "Devre elemanları pil, ampul ve anahtardır.",
+                               "Makas, mıknatıs ve cetvel devre elemanı değildir.",
+                               "Şemada yalnızca pil, ampul ve anahtar sembolle gösterilir.",
+                               "Doğru cevap B seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Pil doğru ama makas ve mıknatıs devre elemanı değildir.",
+                                  "B":  "Doğru.",
+                                  "C":  "Ampul ve anahtar doğru ama cetvel devre elemanı değildir.",
+                                  "D":  "Anahtar doğru ama makas ve cetvel devre elemanı değildir."
+                              },
+        "zorluk":  2,
+        "soru_tipi":  "bilgi",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-011",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.6.2",
+        "surec_bileseni":  "a",
+        "konu":  "Elektrik",
+        "alt_konu":  "Şemaya uygun devre kurma",
+        "soru_metni":  "Naz, bir pil, bir anahtar ve bir ampulü kablolarla art arda bağlayan basit bir devre şeması çizdi. Naz, bu şemaya uygun bir deney düzeneği kuracak. Hangi düzenek şemasına uygundur?",
+        "siklar":  {
+                       "A":  "Pil, ampul ve kablo; anahtar açıkken ampul yanar.",
+                       "B":  "Pil, anahtar, ampul ve kablo; anahtar açıkken ampul yanar.",
+                       "C":  "Pil, anahtar, ampul ve kablo; anahtar kapanınca ampul yanar.",
+                       "D":  "Pil, anahtar ve kablo; anahtar kapanınca ampul yanar."
+                   },
+        "dogru_sik":  "C",
+        "ipucu":  "Şemadaki tüm elemanları ve anahtarın devreyi kapatmasını göz önünde bulundur.",
+        "cozum_adimlari":  [
+                               "Şemada pil, anahtar, ampul ve bağlantı kabloları vardır.",
+                               "Anahtar açıkken devre tamamlanmaz, ampul yanmaz.",
+                               "Anahtar kapanınca devre tamamlanır ve ampul yanar.",
+                               "Doğru cevap C seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Anahtarı şemadan çıkaran ve açık devrede akım geçtiğini sanan öğrenci için çekici.",
+                                  "B":  "Anahtar açıkken de ampulün yanacağını sanan öğrenci için çekici.",
+                                  "C":  "Doğru.",
+                                  "D":  "Ampulü düzenekten çıkarıp yine de yanmasını bekleyen öğrenci için çekici."
+                              },
+        "zorluk":  3,
+        "soru_tipi":  "deney",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-012",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.7.1",
+        "surec_bileseni":  "ç",
+        "konu":  "Geri dönüşüm",
+        "alt_konu":  "Evsel atıkları ayırma",
+        "soru_metni":  "Melek’in ailesi evdeki atıkları ayırarak biriktiriyor. Bir gün evde şunlar çöpe ayrıldı: kullanılmış ıslak mendil, meyve kabuğu, kırık seramik tabak ve boş cam kavanoz. Melek, geri dönüştürülebilen atığı belirleyip geri dönüşüm kutusuna atacak. Hangisini kutuya atmalıdır?",
+        "siklar":  {
+                       "A":  "Kullanılmış ıslak mendil",
+                       "B":  "Meyve kabuğu",
+                       "C":  "Kırık seramik tabak",
+                       "D":  "Boş cam kavanoz"
+                   },
+        "dogru_sik":  "D",
+        "ipucu":  "Hangi malzemenin yeniden değerlendirilerek yeni ürün yapılabileceğini düşün.",
+        "cozum_adimlari":  [
+                               "Islak mendil ve meyve kabuğu geri dönüştürülemez.",
+                               "Seramik, cam gibi geri dönüştürülemez.",
+                               "Cam kavanoz geri dönüştürülebilir.",
+                               "Doğru cevap D seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Kullanıldıktan sonra atılan bir kâğıt ürünü geri dönüşür sanan öğrenci için çekici.",
+                                  "B":  "Organik atığı geri dönüşüme gönderilecek atık sanan öğrenci için çekici.",
+                                  "C":  "Seramiği cam gibi geri dönüştürülebilir sanan öğrenci için çekici.",
+                                  "D":  "Doğru."
+                              },
+        "zorluk":  1,
+        "soru_tipi":  "bilgi",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-013",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.7.2",
+        "surec_bileseni":  "b",
+        "konu":  "Geri dönüşüm",
+        "alt_konu":  "Geri dönüşümün önemi",
+        "soru_metni":  "Bir belediye, mahalleden bir ayda topladığı 2 ton kâğıdı yeni kâğıt üretmek üzere geri dönüşüm tesisine gönderdi. Bu uygulamanın kaynakların etkili kullanımına katkısı hangisidir?",
+        "siklar":  {
+                       "A":  "Yeni kâğıt üretiminde kullanılan ağaç miktarı azalır.",
+                       "B":  "Yeni kâğıt üretimi için daha çok ağaç kesilmesi gerekir.",
+                       "C":  "Çöp alanlarında atıkların kapladığı yer artar.",
+                       "D":  "Yeni kâğıt üretiminde kullanılan enerji ve su artar."
+                   },
+        "dogru_sik":  "A",
+        "ipucu":  "Geri dönüşen kâğıdın yeni kâğıt üretiminde hangi hammaddenin yerine geçtiğini düşün.",
+        "cozum_adimlari":  [
+                               "Geri dönüşen kâğıt, yeni kâğıt için hammadde olarak kullanılır.",
+                               "Böylece kesilecek ağaç sayısı azalır.",
+                               "Doğal kaynaklar daha etkili kullanılır.",
+                               "Doğru cevap A seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Doğru.",
+                                  "B":  "Kâğıt üretimini her zaman ağaçtan sanıp geri dönüşümün ağaç tüketimini artıracağını düşünen öğrenci için çekici.",
+                                  "C":  "Atığı çöp alanına bırakmanın alan kazandıracağını tersine yorumlayan öğrenci için çekici.",
+                                  "D":  "Geri dönüşümü ek enerji ve su harcamak olarak gören öğrenci için çekici; oysa genellikle sıfırdan üretimden daha az kaynak gerekir."
+                              },
+        "zorluk":  2,
+        "soru_tipi":  "cikarim",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-014",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.2.4",
+        "surec_bileseni":  "b",
+        "konu":  "Kuvvet",
+        "alt_konu":  "Sürtünme kuvvetinde genelleme",
+        "soru_metni":  "Cem, aynı oyuncak arabayı her seferinde aynı büyüklükte kuvvetle iterek farklı zeminlerde yürüttü. Arabanın durana kadar aldığı yol halıda 1 m, çimende 2 m, parkede 4 m, buzda 7 m oldu. Cem bu verilerden bir genelleme yapacaktır. Verilerle uyumlu genelleme hangisidir?",
+        "siklar":  {
+                       "A":  "Zemin pürüzlü oldukça sürtünme azalır, araba daha uzağa gider.",
+                       "B":  "Zemin pürüzlü oldukça sürtünme artar, araba daha kısa yol alır.",
+                       "C":  "Zemin düz oldukça sürtünme artar, araba daha kısa yol alır.",
+                       "D":  "Zemin değişse de sürtünme aynı kalır, araba eşit yol alır."
+                   },
+        "dogru_sik":  "B",
+        "ipucu":  "Arabanın aldığı yol ile zeminin pürüzlülüğü arasındaki örüntüyü bul.",
+        "cozum_adimlari":  [
+                               "Halı pürüzlüdür ve araba orada en kısa yolu almıştır.",
+                               "Buz düzdür ve araba orada en uzun yolu almıştır.",
+                               "Pürüzlü zeminde sürtünme daha büyüktür, araba daha kısa yol alır.",
+                               "Doğru cevap B seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Pürüz ile sürtünme ilişkisini ters kuran öğrenci için çekici.",
+                                  "B":  "Doğru.",
+                                  "C":  "Düz yüzeyde sürtünmenin arttığını sanan öğrenci için çekici; verilerde buz en uzun yolu sağlamıştır.",
+                                  "D":  "Zeminin etkisini yok sayan öğrenci için çekici; veriler aksini gösterir."
+                              },
+        "zorluk":  3,
+        "soru_tipi":  "cikarim",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-015",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.3.1",
+        "surec_bileseni":  "a",
+        "konu":  "Canlılar ve hayat",
+        "alt_konu":  "Bitki ve hayvan hücresi ayrımı",
+        "soru_metni":  "Bir araştırmacı mikroskopta iki hücre inceledi. Birinci hücrede hücre zarı, sitoplazma, çekirdek, hücre duvarı ve kloroplast; ikinci hücrede hücre zarı, sitoplazma ve çekirdek gözlendi. Araştırmacının gözlemlerine göre hangisi doğrudur?",
+        "siklar":  {
+                       "A":  "İkinci hücre bitki hücresidir; çekirdek içerir.",
+                       "B":  "Birinci hücre hayvan hücresidir; hücre zarı içerir.",
+                       "C":  "Birinci hücre bitki hücresidir; kloroplast içerir.",
+                       "D":  "İki hücre de hayvan hücresidir; sitoplazma içerir."
+                   },
+        "dogru_sik":  "C",
+        "ipucu":  "İki hücrede ortak olmayan yapıların hangi hücre türüne ait olduğunu düşün.",
+        "cozum_adimlari":  [
+                               "Hücre duvarı ve kloroplast yalnızca bitki hücresinde bulunur.",
+                               "Birinci hücrede bu yapılar vardır; bitki hücresidir.",
+                               "İkinci hücrede bu yapılar yoktur; hayvan hücresi gibi görünür.",
+                               "Doğru cevap C seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Çekirdeği bitki hücresine özgü sanan öğrenci için çekici.",
+                                  "B":  "Ortak yapıyı hayvan hücresinin göstergesi sanan öğrenci için çekici.",
+                                  "C":  "Doğru.",
+                                  "D":  "Ortak yapı olan sitoplazmayı kanıt sayıp birinci hücreyi de hayvan hücresi sanan öğrenci için çekici."
+                              },
+        "zorluk":  3,
+        "soru_tipi":  "cikarim",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-016",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.3.3",
+        "surec_bileseni":  "c",
+        "konu":  "Canlılar ve hayat",
+        "alt_konu":  "Kaslar ve hareket",
+        "soru_metni":  "Hakan, merdiven çıkarken bacağını diz bölgesinden büküyor. Öğretmeni, bu sırada kemikleri hareket ettirmek için kasılıp gevşeyen yapıyı sorduğunda Hakan yapıları gruplandırıyor. Kemikleri hareket ettiren yapı hangisidir?",
+        "siklar":  {
+                       "A":  "Kıkırdak",
+                       "B":  "Kemik",
+                       "C":  "Eklem",
+                       "D":  "Kas"
+                   },
+        "dogru_sik":  "D",
+        "ipucu":  "Kasılıp gevşeyebilen yapıyı destek sağlayan yapılardan ayır.",
+        "cozum_adimlari":  [
+                               "Kemikler kendi kendine hareket edemez.",
+                               "Kaslar kasılıp gevşeyerek kemikleri hareket ettirir.",
+                               "Doğru cevap D seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Kıkırdağı hareket ettirici sanan öğrenci için çekici.",
+                                  "B":  "Destek sağlayan kemiği hareket ettirici sanan öğrenci için çekici.",
+                                  "C":  "Hareketin gerçekleştiği yeri hareket ettirici sanan öğrenci için çekici.",
+                                  "D":  "Doğru."
+                              },
+        "zorluk":  2,
+        "soru_tipi":  "bilgi",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-017",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.4.2",
+        "surec_bileseni":  "c",
+        "konu":  "Işığın yayılması",
+        "alt_konu":  "Maddeleri ışığı geçirmeye göre sınıflandırma",
+        "soru_metni":  "Zeynep, maddeleri ışığı geçirme durumuna göre sınıflandırıyor. Elinde cam bardak, buzlu cam ve kalın karton var. Zeynep’in yaptığı hangi sınıflandırma doğrudur?",
+        "siklar":  {
+                       "A":  "Cam bardak: saydam, buzlu cam: yarı saydam, karton: opak",
+                       "B":  "Cam bardak: yarı saydam, buzlu cam: saydam, karton: opak",
+                       "C":  "Cam bardak: saydam, buzlu cam: opak, karton: yarı saydam",
+                       "D":  "Cam bardak: opak, buzlu cam: yarı saydam, karton: saydam"
+                   },
+        "dogru_sik":  "A",
+        "ipucu":  "Arkasındaki cisimleri net, bulanık ya da hiç göstermesine göre her maddeyi yerleştir.",
+        "cozum_adimlari":  [
+                               "Cam bardak ışığı büyük oranda geçirir ve saydamdır.",
+                               "Buzlu cam ışığı kısmen geçirir ve yarı saydamdır.",
+                               "Kalın karton ışığı geçirmez ve opaktır.",
+                               "Doğru cevap A seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Doğru.",
+                                  "B":  "Cam bardak ile buzlu camın yerini değiştiren öğrenci için çekici.",
+                                  "C":  "Buzlu camı karton gibi sanan öğrenci için çekici.",
+                                  "D":  "Cam bardağı ışığı geçirmeyen sanan öğrenci için çekici."
+                              },
+        "zorluk":  2,
+        "soru_tipi":  "bilgi",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-018",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.4.3",
+        "surec_bileseni":  "c",
+        "konu":  "Işığın yayılması",
+        "alt_konu":  "Tam gölge ve uzaklık verileri",
+        "soru_metni":  "Ece, el feneri ile perde arasına yerleştirdiği bir kartonun perdeye uzaklığını değiştirdi. Fener ile perde arasındaki uzaklık ve karton sabit kaldı. Kartonun perdeye uzaklığı 60 cm iken tam gölgenin yüksekliği 18 cm, 40 cm iken 14 cm, 20 cm iken 11 cm oldu. Bu verilere göre hangisi doğrudur?",
+        "siklar":  {
+                       "A":  "Karton perdeye yaklaştıkça tam gölge büyür.",
+                       "B":  "Karton perdeye yaklaştıkça tam gölge küçülür.",
+                       "C":  "Kartonun perdeye uzaklığı tam gölgeyi etkilemez.",
+                       "D":  "Tam gölge yalnızca kartonun boyuna bağlıdır."
+                   },
+        "dogru_sik":  "B",
+        "ipucu":  "Perdeye uzaklık azalırken gölge yüksekliğinin nasıl değiştiğini sırayla oku.",
+        "cozum_adimlari":  [
+                               "Uzaklık 60, 40, 20 cm olurken gölge 18, 14, 11 cm olmuştur.",
+                               "Karton perdeye yaklaştıkça gölge yüksekliği azalmıştır.",
+                               "Tam gölge küçülür.",
+                               "Doğru cevap B seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Verileri ters okuyan öğrenci için çekici.",
+                                  "B":  "Doğru.",
+                                  "C":  "Verilerdeki değişimi görmeyip değişkeni etkisiz sanan öğrenci için çekici.",
+                                  "D":  "Yalnızca cismin boyutunu etkili sanan öğrenci için çekici; kartonun boyu sabit kalmıştır."
+                              },
+        "zorluk":  3,
+        "soru_tipi":  "deney",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-019",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.5.5",
+        "surec_bileseni":  "c",
+        "konu":  "Madde ve ısı",
+        "alt_konu":  "Isı iletkenleri",
+        "soru_metni":  "Defne, mutfak malzemelerini ısı iletimi bakımından gruplandırıyor. Malzemeler: alüminyum tencere, tahta kaşık, bakır tava, plastik kase ve yün çorap. Defne ısıyı iyi ileten malzemeleri bir gruba koyacaktır. Hangi grup doğrudur?",
+        "siklar":  {
+                       "A":  "Tahta kaşık ve plastik kase",
+                       "B":  "Yün çorap ve bakır tava",
+                       "C":  "Alüminyum tencere ve bakır tava",
+                       "D":  "Plastik kase ve yün çorap"
+                   },
+        "dogru_sik":  "C",
+        "ipucu":  "Metal olan ve olmayan malzemeleri ısı iletimi açısından ayır.",
+        "cozum_adimlari":  [
+                               "Metaller ısıyı iyi iletir.",
+                               "Alüminyum tencere ve bakır tava metaldir.",
+                               "Tahta, plastik ve yün ısıyı kötü iletir.",
+                               "Doğru cevap C seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Yalnızca yalıtkanlardan oluşan grup.",
+                                  "B":  "Yün çorabı iletken sanan öğrenci için çekici.",
+                                  "C":  "Doğru.",
+                                  "D":  "Yalıtkanları iletken sanan öğrenci için çekici."
+                              },
+        "zorluk":  2,
+        "soru_tipi":  "bilgi",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    },
+    {
+        "id":  "FEN5-E-020",
+        "sinif":  5,
+        "ders":  "Fen Bilimleri",
+        "mufredat_surum":  "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+        "kazanim_kodu":  "FB.5.6.1",
+        "surec_bileseni":  "a",
+        "konu":  "Elektrik",
+        "alt_konu":  "Ampul sembolü",
+        "soru_metni":  "Öğretmen tahtaya içinde çarpı işareti bulunan bir daire çizdi. Bu sembolün elektrik devre şemalarında gösterdiği devre elemanını öğrencilere sordu. Bu sembol hangi devre elemanını gösterir?",
+        "siklar":  {
+                       "A":  "Pil",
+                       "B":  "Anahtar",
+                       "C":  "Kablo",
+                       "D":  "Ampul"
+                   },
+        "dogru_sik":  "D",
+        "ipucu":  "Işık veren devre elemanının şemadaki gösterimini düşün.",
+        "cozum_adimlari":  [
+                               "Çarpılı daire, ampulün devre şemasındaki sembolüdür.",
+                               "Doğru cevap D seçeneğidir."
+                           ],
+        "celdirici_gerekce":  {
+                                  "A":  "Pili farklı bir sembolle gösterilen eleman sanan öğrenci için çekici.",
+                                  "B":  "Anahtarın sembolünü karıştıran öğrenci için çekici.",
+                                  "C":  "Kabloyu bu sembolle gösterilen eleman sanan öğrenci için çekici; kablo çizgiyle gösterilir.",
+                                  "D":  "Doğru."
+                              },
+        "zorluk":  1,
+        "soru_tipi":  "bilgi",
+        "olumsuzluk":  false,
+        "baglam_islevi":  "gerekli",
+        "gorsel_gerekli":  false,
+        "kaynak_turu":  "ozgun_ai"
+    }
+]

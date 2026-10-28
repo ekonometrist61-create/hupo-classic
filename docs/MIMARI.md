@@ -375,7 +375,7 @@ GitHub Actions her gün 03:30 TR → `pg_dump` (postgres:17) → AES-256 → Goo
 |---|---|---|
 | Web (yerel) | `NEXT_PUBLIC_SUPABASE_URL`, `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY`, `NEXT_PUBLIC_POSTHOG_KEY`, `NEXT_PUBLIC_POSTHOG_HOST`, `SUPABASE_SECRET_KEY` (yalnız sunucu, gerekirse), `NEXT_PUBLIC_DEMO_MODE` (yalnız yerel) | `web-panel/.env.local` (git dışı). Şablon: `.env.example` |
 | Web (Vercel) | Aynı ad listesi (üretim değerleri) | Vercel panelinde (proje bağlı: `web-panel/.vercel`) |
-| Mobil derleme | `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`, `WEB_BASE_URL` (varsayılan `https://hupolingo.com`), `APP_WEB_URL` (varsayılan `https://app.hupolingo.com`), `SENTRY_DSN` | `flutter run/build --dart-define=…`; web derlemesi Vercel'de `SENTRY_DSN` ortam değişkeni ile |
+| Mobil derleme | `SUPABASE_URL`, `SUPABASE_PUBLISHABLE_KEY`, `WEB_BASE_URL` (varsayılan `https://hupolingo.com`), `APP_WEB_URL` (varsayılan `https://app.hupolingo.com`), `SENTRY_DSN`, `TURNSTILE_SITE_KEY` (herkese açık; boşsa mobilde captcha istenmez; `webview_flutter` web'de çalışmaz, `app.hupolingo.com` derlemesi için ayrı çözüm gerekir) | `flutter run/build --dart-define=…`; web derlemesi Vercel'de `SENTRY_DSN` ortam değişkeni ile |
 | Edge Functions | §8 tablosundaki adlar | `supabase secrets set` (Supabase projesi) |
 | Android imza | `key.properties`, `*.jks` | Yerel, git dışı. **Diskte bulunamadı** (bkz. §12) |
 | Google Drive yedek | OAuth istemcisi ve yenileme jetonu | GitHub Actions gizli değişkenleri ve yerel (`docs/yedekleme/KURULUM.md`) |

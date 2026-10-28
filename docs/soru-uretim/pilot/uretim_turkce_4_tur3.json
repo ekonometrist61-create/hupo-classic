@@ -1,0 +1,1145 @@
+[
+  {
+    "id": "TR4-001",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.3",
+    "surec_bileseni": "d",
+    "konu": "Yazım kuralları",
+    "alt_konu": "Sözcüklerin doğru yazılışı",
+    "soru_metni": "Aşağıdaki sözcüklerden hangisi doğru yazılmıştır?",
+    "siklar": {
+      "A": "yanlız",
+      "B": "herkes",
+      "C": "yalnış",
+      "D": "şöför"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Her sözcüğü heceleyerek yavaşça oku ve günlük hayatta nasıl yazıldığını hatırlamaya çalış.",
+    "cozum_adimlari": [
+      "“Yalnız”, “yanlış” ve “şoför” sözcüklerinin doğru yazılışları bellidir; A, C ve D şıklarında bu sözcükler yanlış yazılmıştır.",
+      "“Herkes” sözcüğü B şıkkında doğru yazılmıştır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "“Yalnız” sözcüğündeki l ve n harfleri yer değiştirmiş; sık yapılan bir yazım yanlışıdır.",
+      "C": "“Yanlış” sözcüğü, “yalnız” ile karıştırılarak yanlış yazılmıştır.",
+      "D": "“Şoför” sözcüğündeki ünlüler karıştırılarak yazılmıştır."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-002",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.3",
+    "surec_bileseni": "e",
+    "konu": "Noktalama işaretleri",
+    "alt_konu": "Ünlem işareti",
+    "soru_metni": "Aşağıdaki cümlelerden hangisinin sonuna ünlem işareti (!) konmalıdır?",
+    "siklar": {
+      "A": "Aman dikkat et, yol çok kaygan",
+      "B": "Dün akşam kardeşimle parka gittik",
+      "C": "Bu kitabı kim aldı",
+      "D": "Okulumuz şehrin kenarında"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Hangi cümle birini uyarıyor ya da yüksek sesle söyleniyor?",
+    "cozum_adimlari": [
+      "Ünlem işareti uyarı, seslenme ve duygu bildiren cümlelerin sonuna konur.",
+      "A şıkkı bir uyarıdır; B ve D haber cümlesidir, C soru cümlesidir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Dün olanı anlatan düz bir haber cümlesidir; heyecanlı anlatım ünlem sanılabilir.",
+      "C": "Soru cümlesidir ve soru işareti alır; sonu ünlemle karıştırılabilir.",
+      "D": "Bir durumu bildiren haber cümlesidir ve nokta ile biter."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-003",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.3",
+    "surec_bileseni": "b",
+    "konu": "Metnin konusu",
+    "alt_konu": "Paragrafın konusunu bulma",
+    "soru_metni": "Arı, çiçeklerin tatlı özünü toplayıp kovanına taşır. Kovanda bu öz, zamanla bala dönüşür. Arılar balı peteklerin gözlerinde saklar. Arılar bu işi sabahtan akşama kadar birlikte çalışarak yapar. Bir arı bütün ömrü boyunca çok az bal yapabilir. Bu yüzden bal çok değerlidir.\n\nBu metnin konusu aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Arıların bal yapması",
+      "B": "Çiçeklerin tatlı özü",
+      "C": "Balın değerli olması",
+      "D": "Arıların kovan yapması"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Bütün cümlelerin ortak olarak anlattığı olayı düşün; tek bir cümlenin ayrıntısına takılma.",
+    "cozum_adimlari": [
+      "Metin çiçek özünün toplanmasını, bala dönüşmesini ve peteklerde saklanmasını anlatıyor.",
+      "Çiçek özü ve balın değeri birer ayrıntıdır; bütün cümleleri kapsayan konu arıların bal yapmasıdır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Çiçek özü metinde geçen bir ayrıntıdır; metnin tamamını kapsamaz.",
+      "C": "Son cümledeki bir yargıyı konu sanmaktır.",
+      "D": "Kovan sözcüğü metinde geçtiği için seçilebilir; ama metin kovan yapımını anlatmıyor."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-004",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.2",
+    "surec_bileseni": "ç",
+    "konu": "Çıkarım ve tahmin",
+    "alt_konu": "Verilen ipuçlarından sonuç çıkarma",
+    "soru_metni": "Defne sabah uyandığında pencerenin camının buğulandığını gördü. Dışarıda yağmur çiseliyor, sokaktaki ağaçlar sallanıyordu. Annesi ona kalın montunu giymesini söyledi.\n\nDefne’nin okula giderken yanına alması en olası olan şey hangisidir?",
+    "siklar": {
+      "A": "Güneş kremi",
+      "B": "Şemsiye",
+      "C": "Mayo",
+      "D": "Yelpaze"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Dışarıdaki hava durumuna dikkat et.",
+    "cozum_adimlari": [
+      "Metinde yağmurun çiselediği ve havanın soğuk olduğu anlatılıyor.",
+      "Yağmurdan korunmak için gereken eşya şemsiyedir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Güneş kremi güneşli havada gerekir; metinde güneşten söz edilmiyor.",
+      "C": "Mayo deniz ve sıcak hava eşyasıdır; metindeki hava soğuk.",
+      "D": "Yelpaze sıcak havada kullanılır; metindeki hava yağışlı ve soğuk."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-005",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.2",
+    "surec_bileseni": "h",
+    "konu": "Sözcükte anlam",
+    "alt_konu": "Zıt anlamlı sözcükler",
+    "soru_metni": "Aşağıdaki sözcük çiftlerinden hangisi zıt anlamlıdır?",
+    "siklar": {
+      "A": "güzel – hoş",
+      "B": "kırmak – bozmak",
+      "C": "geniş – dar",
+      "D": "yol – cadde"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Zıt anlamlı sözcükler birbirinin tersini anlatır.",
+    "cozum_adimlari": [
+      "A, B ve D şıklarındaki sözcükler birbirine yakın anlamlıdır.",
+      "“Geniş” ile “dar” birbirinin tersidir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "“Güzel” ile “hoş” birbirine yakın anlamlıdır, zıt değildir.",
+      "B": "“Kırmak” ile “bozmak” benzer anlam taşır, zıt değildir.",
+      "D": "“Yol” ile “cadde” yakın anlamlıdır; benzer sözcükler zıt sanılabilir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "sınıflandırma",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-006",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.3",
+    "surec_bileseni": "e",
+    "konu": "Noktalama işaretleri",
+    "alt_konu": "Kesme işareti",
+    "soru_metni": "Aşağıdaki cümlelerin hangisinde kesme işareti YANLIŞ kullanılmıştır?",
+    "siklar": {
+      "A": "Yaz tatilinde Antalya’ya gideceğiz.",
+      "B": "Elif’in çantası dolapta kaldı.",
+      "C": "Kitaplar’ı masaya özenle koydum.",
+      "D": "Atatürk’ü sevgiyle anıyoruz."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Özel adlara gelen ekler kesme işaretiyle ayrılır. Hangi sözcük özel ad değil?",
+    "cozum_adimlari": [
+      "Özel adlara gelen ekler kesme işaretiyle ayrılır: Antalya’ya, Elif’in, Atatürk’ü.",
+      "“Kitaplar” özel ad olmadığı için C şıkkında kesme işareti kullanılmamalı, “Kitapları” yazılmalıdır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Antalya özel addır; yönelme eki kesme işaretiyle doğru ayrılmıştır.",
+      "B": "Elif özel addır; tamlama eki kesme işaretiyle doğru ayrılmıştır.",
+      "D": "Atatürk özel addır; belirtme eki kesme işaretiyle doğru ayrılmıştır."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "olumsuz kök",
+    "olumsuzluk": true,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-007",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.3",
+    "surec_bileseni": "d",
+    "konu": "Yazım kuralları",
+    "alt_konu": "Ayrı ve bitişik yazılan sözcükler",
+    "soru_metni": "Aşağıdaki cümlelerden hangisi doğru yazılmıştır?",
+    "siklar": {
+      "A": "Sepetin içinde bir kaç elma kalmıştı.",
+      "B": "Çok yorgundu ama yinede gülümsedi.",
+      "C": "Çantamın içinde herşey yerli yerinde.",
+      "D": "Hava soğuktu, yine de dışarı çıktık."
+    },
+    "dogru_sik": "D",
+    "ipucu": "Her cümlede ayrı ya da bitişik yazılması gereken sözcükleri bul ve yazılışlarını tek tek düşün.",
+    "cozum_adimlari": [
+      "“Birkaç” bitişik; “her şey” ve “yine de” ayrı yazılır.",
+      "A’da “bir kaç”, B’de “yinede”, C’de “herşey” yanlış yazılmıştır.",
+      "D şıkkındaki “yine de” doğru yazılmıştır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "“Birkaç” sözcüğü ayrı yazılmış; oysa bitişik yazılır.",
+      "B": "“Yine de” bitişik yazılmış; oysa ayrı yazılır.",
+      "C": "“Her şey” bitişik yazılmış; oysa ayrı yazılır."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-008",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.3",
+    "surec_bileseni": "c",
+    "konu": "Ana duygu",
+    "alt_konu": "Metindeki duyguyu belirleme",
+    "soru_metni": "Kerem, aylardır büyüttüğü fidanın ilk kez çiçek açtığını görünce yerinde duramadı. Koşarak annesinin yanına gitti ve “Anne, bak, fidanım çiçek açmış!” diye bağırdı. Gözleri parlıyor, yüzünde kocaman bir gülümseme vardı.\n\nBu metinde Kerem’in baskın duygusu aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Endişe",
+      "B": "Kızgınlık",
+      "C": "Merak",
+      "D": "Sevinç"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Kerem’in yüzünün ve sesinin nasıl olduğuna bak.",
+    "cozum_adimlari": [
+      "Kerem koşuyor, bağırıyor, gözleri parlıyor ve gülümsüyor.",
+      "Bütün bu davranışlar sevinci gösterir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Kerem’in gözleri parlıyor ve gülümsüyor; endişe belirtisi yok.",
+      "B": "Bağırması kızgınlık sanılabilir ama bağırma sevinçten kaynaklanıyor.",
+      "C": "Koşarak annesine gitmesi merak sanılabilir; ama fidanın çiçek açması onu sevindirmiştir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-009",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.2",
+    "surec_bileseni": "h",
+    "konu": "Sözcükte anlam",
+    "alt_konu": "Eş anlamlı sözcükler",
+    "soru_metni": "Aşağıdaki sözcüklerden hangisi “cesur” sözcüğüyle eş anlamlıdır?",
+    "siklar": {
+      "A": "Uysal",
+      "B": "Çekingen",
+      "C": "Yürekli",
+      "D": "Sakin"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Korkmadan hareket eden birini hangi sözcükle anlatırsın?",
+    "cozum_adimlari": [
+      "“Cesur”, korkmayan anlamına gelir.",
+      "“Yürekli” de aynı anlamdadır; “çekingen” ise “cesur”un tersine yakın bir anlam taşır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "“Uysal” yumuşak huylu demektir; “cesur” ile aynı anlamı taşımaz.",
+      "B": "“Çekingen” cesaretin tersine yakın bir anlam taşır.",
+      "D": "“Sakin” dinginlik bildirir; korkusuz olmakla aynı şey değildir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "sınıflandırma",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-010",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.2",
+    "surec_bileseni": "ç",
+    "konu": "Çıkarım ve tahmin",
+    "alt_konu": "Olayın devamını tahmin etme",
+    "soru_metni": "Mina, sınıf kütüphanesinden aldığı kitabı iki gün içinde bitirdi. Kitabı teslim ederken öğretmenine, “Bu yazarın başka kitapları da var mı?” diye sordu. Öğretmeni gülümseyerek raflardan yeni bir kitap uzattı.\n\nBu metne göre Mina’nın bundan sonra yapması en olası davranış aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Yeni kitabı da okumaya başlar.",
+      "B": "Aynı kitabı yeniden okumak ister.",
+      "C": "Kütüphaneden kitap almayı bırakır.",
+      "D": "Kitap yerine oyun oynamayı seçer."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Mina’nın kitabı bitirdikten sonraki davranışlarından yola çıkarak olayın nasıl devam edeceğini düşün.",
+    "cozum_adimlari": [
+      "Mina kitabı iki günde bitirmiş ve aynı yazarın başka kitaplarını sormuştur.",
+      "Öğretmeni ona yeni bir kitap uzattığına göre Mina’nın bu kitabı da okumaya başlaması en olası davranıştır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Kitabı çok sevdiği için yeniden okumak isteyebilir; ama o başka bir kitap istemiştir.",
+      "C": "Kitabı hızlı bitirmek okumaktan sıkıldığını göstermez.",
+      "D": "Metinde Mina’nın oyuna yöneldiğine dair hiçbir ipucu yok."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-011",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.3",
+    "surec_bileseni": "e",
+    "konu": "Noktalama işaretleri",
+    "alt_konu": "İki nokta ve virgül",
+    "soru_metni": "Aşağıdaki cümlelerin hangisinde noktalama işareti YANLIŞ kullanılmıştır?",
+    "siklar": {
+      "A": "Çantama kalem, defter ve silgi koydum.",
+      "B": "Öğretmen, “Yarın sınav var.” dedi.",
+      "C": "Annem bana şunları aldı: kazak, eldiven ve bere.",
+      "D": "Dün akşam babamla birlikte: maça gittik."
+    },
+    "dogru_sik": "D",
+    "ipucu": "İki nokta, bir açıklama ya da sıralama başlamadan önce gelir.",
+    "cozum_adimlari": [
+      "A’da sıralama virgülle, B’de konuşma tırnakla, C’de açıklama iki nokta ile doğru gösterilmiştir.",
+      "D’de iki noktadan sonra açıklama ya da sıralama gelmediği için iki nokta yanlıştır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Sıralanan sözcükler virgülle ayrılmıştır; kullanım doğrudur.",
+      "B": "Konuşma tırnak içinde verilmiş ve virgülle ayrılmıştır; kullanım doğrudur.",
+      "C": "Sıralama bildiren “şunları” sözcüğünden sonra iki nokta doğru kullanılmıştır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "olumsuz kök",
+    "olumsuzluk": true,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-012",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.2",
+    "surec_bileseni": "h",
+    "konu": "Sözcükte anlam",
+    "alt_konu": "Eş sesli sözcükler",
+    "soru_metni": "“Yüz” sözcüğü aşağıdaki cümlelerin hangisinde “başın ön bölümü, surat” anlamında kullanılmıştır?",
+    "siklar": {
+      "A": "Bahçemizde yüz tane gül vardı.",
+      "B": "Kardeşimin yüzü çok solgundu.",
+      "C": "Öğretmen bize, “Havuzda yüz.” dedi.",
+      "D": "Annem yastığın yüzünü yıkadı."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Her cümlede “yüz” sözcüğünün neyi anlattığını, cümlenin geri kalanına bakarak belirle.",
+    "cozum_adimlari": [
+      "A’da “yüz” sayıyı, C’de “yüzmek” eylemini, D’de yastığın dış yüzeyini anlatır.",
+      "B’de “yüz” insanın başının ön bölümü, yani surat anlamındadır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "“Yüz” burada bir sayıdır (100); sözcüğün en bilinen anlamı olduğu için seçilebilir.",
+      "C": "“Yüz” burada yüzmek eylemidir; yazılışı aynı olduğu için karıştırılabilir.",
+      "D": "“Yüz” burada yastığın dış yüzeyidir; “yüzünü yıkadı” ifadesi surat anlamını çağrıştırır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "sınıflandırma",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-013",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.3",
+    "surec_bileseni": "c",
+    "konu": "Ana fikir",
+    "alt_konu": "Öyküden ana fikir çıkarma",
+    "soru_metni": "Bir köyde yaşlı bir çiftçi, her sabah tarlasına gitmeden önce toprağa küçük bir tohum eker, her akşam da onu sulardı. Çevresindekiler buna güler, “Bir tohumla ne olur ki?” derlerdi. Yıllar sonra çiftçinin ektiği tohumlar koca bir ormana dönüştü. Köylüler o ormanın gölgesinde dinlenirken çiftçiye teşekkür etti.\n\nBu metnin ana fikri aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Çiftçiler yaşlanınca tarlayı bırakmalıdır.",
+      "B": "Küçük ama sürekli çalışmalar büyük sonuç verir.",
+      "C": "Orman köylülerin en büyük zenginliğidir.",
+      "D": "Başkalarının sözlerine hiç kulak asmamak gerekir."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Her gün ekilen tek tohumun sonunda ne olduğunu düşün.",
+    "cozum_adimlari": [
+      "Çiftçi her gün küçük bir iş yapmış, yıllar sonra büyük bir orman ortaya çıkmıştır.",
+      "Metnin verdiği ileti, küçük ve düzenli çabaların büyük sonuç verdiğidir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yaşlanan çiftçilerin tarlayı bırakması metinde yok; yalnızca çiftçi yaşlı diye seçilebilir.",
+      "C": "Ormanın zenginlik olduğu bir ayrıntıdır; metnin vermek istediği ileti değildir.",
+      "D": "Çevredekilerin güldüğü okunup ders sanılabilir ama “hiç” genellemesi metinde yoktur."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-014",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.2",
+    "surec_bileseni": "ğ",
+    "konu": "Sınıflandırma",
+    "alt_konu": "Metne göre canlıları özelliğine göre gruplama",
+    "soru_metni": "Turna, leylek ve kırlangıç yumurtlayarak çoğalır; vücutları tüylerle kaplıdır. Yarasa ise yavrusunu sütle besler ve yumurtlamaz. Yine de bu dört canlı kanatlarını çırparak uçar.\n\nBu metne göre aşağıdaki canlılardan hangisi, çoğalma yönünden diğerleriyle aynı gruba girmez?",
+    "siklar": {
+      "A": "Turna",
+      "B": "Leylek",
+      "C": "Yarasa",
+      "D": "Kırlangıç"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Metinde her canlının nasıl çoğaldığını anlatan cümleleri karşılaştır.",
+    "cozum_adimlari": [
+      "Metne göre turna, leylek ve kırlangıç yumurtlayarak çoğalır.",
+      "Yarasa yavrusunu sütle besler ve yumurtlamaz; bu yüzden diğerlerinden ayrılır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Turna yumurtlar; yarasa gibi uçtuğu için yanlış gruplanabilir.",
+      "B": "Leylek yumurtlar; yalnızca uçma özelliğine bakan biri yarasayla aynı sanabilir.",
+      "D": "Kırlangıç yumurtlar; kanatlı olduğu için yarasayla karıştırılabilir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "sınıflandırma",
+    "olumsuzluk": true,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-015",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.3",
+    "surec_bileseni": "d",
+    "konu": "Yazım kuralları",
+    "alt_konu": "Büyük harf kullanımı",
+    "soru_metni": "Aşağıdaki cümlelerin hangisinde büyük harf kullanımı YANLIŞTIR?",
+    "siklar": {
+      "A": "Annem bana dün akşam Mavi bir kazak aldı.",
+      "B": "Kızılırmak Karadeniz’e dökülen bir akarsudur.",
+      "C": "Öğretmenimiz Selin Öztürk’ü çok severiz.",
+      "D": "Yarın Atatürk Orman Çiftliği’ne gideceğiz."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Cümle başı dışında büyük harfle başlayan her sözcüğün özel ad olup olmadığını kontrol et.",
+    "cozum_adimlari": [
+      "Cümle başındaki sözcükler ve özel adlar büyük harfle başlar.",
+      "“Mavi” bir renk adıdır, özel ad değildir; cümle ortasında küçük harfle yazılmalıdır.",
+      "Kızılırmak, Selin Öztürk ve Atatürk Orman Çiftliği özel addır; büyük harfle başlamaları doğrudur.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Kızılırmak bir akarsu adıdır (özel ad); büyük harfle doğru yazılmıştır.",
+      "C": "Selin Öztürk bir kişi adıdır; büyük harf doğru kullanılmıştır.",
+      "D": "Atatürk Orman Çiftliği bir kurum adıdır; her sözcüğü büyük harfle başlar."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "olumsuz kök",
+    "olumsuzluk": true,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-016",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.2",
+    "surec_bileseni": "ç",
+    "konu": "Sözcüğün bağlamdaki anlamı",
+    "alt_konu": "Anlamı bağlamdan tahmin etme",
+    "soru_metni": "Sınıfımızın en çekingen öğrencisi bugün ilk kez parmak kaldırıp konuştu. Hepimiz çok şaşırdık.\n\nBu cümlelere göre “çekingen” sözcüğü ne anlama gelir?",
+    "siklar": {
+      "A": "Konuşmaya cesaret edemeyen",
+      "B": "Çok gürültü yapan",
+      "C": "Derslere hiç gelmeyen",
+      "D": "Herkesle kolayca arkadaş olan"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Neden şaşırdıklarını düşün: öğrenci normalde nasıl davranıyordu?",
+    "cozum_adimlari": [
+      "Öğrencinin ilk kez konuşması herkesi şaşırtmıştır.",
+      "Demek ki bu öğrenci daha önce konuşmaya cesaret edemiyordu.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Parmak kaldırıp konuşan biri gürültü yapan biri değildir.",
+      "C": "Derse gelmeyen biri parmak kaldıramaz; metinde bu bilgi yok.",
+      "D": "Herkesle kolay arkadaş olan biri şaşırtıcı biçimde konuşmazdı; anlam tersine çevrilmiş."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-017",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.3",
+    "surec_bileseni": "a",
+    "konu": "Bilgi analizi",
+    "alt_konu": "Metinle çelişen bilgiyi bulma",
+    "soru_metni": "Mavi balina, dünyada yaşayan en büyük hayvandır. Boyu otuz metreye kadar uzar; ancak bu dev hayvan çok küçük deniz canlılarıyla beslenir. Mavi balina, nefes almak için belirli aralıklarla su yüzüne çıkar.\n\nBu metne göre aşağıdakilerden hangisi DOĞRU DEĞİLDİR?",
+    "siklar": {
+      "A": "Boyu otuz metreye ulaşabilir.",
+      "B": "Yaşayan hayvanların en büyüğüdür.",
+      "C": "Küçük deniz canlılarıyla beslenir.",
+      "D": "Suyun altında nefes alabilir."
+    },
+    "dogru_sik": "D",
+    "ipucu": "Her şıkkı metindeki cümlelerle tek tek karşılaştır.",
+    "cozum_adimlari": [
+      "A, B ve C şıkları metindeki bilgilerle uyuşuyor.",
+      "Metin, balinanın nefes almak için su yüzüne çıktığını söylüyor; D şıkkı bu bilgiyle çelişir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "“Otuz metreye kadar uzar” cümlesiyle uyuşur; metinde doğru bilgidir.",
+      "B": "İlk cümlede açıkça söylenmiştir; metinle uyuşur.",
+      "C": "“Küçük deniz canlılarıyla beslenir” cümlesiyle uyuşur; dev bir hayvan olduğu için yanlış sanılabilir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "olumsuz kök",
+    "olumsuzluk": true,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-018",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.3",
+    "surec_bileseni": "e",
+    "konu": "Noktalama işaretleri",
+    "alt_konu": "Yay ayraç",
+    "soru_metni": "“Atatürk (1881-1938) Türkiye’nin ilk cumhurbaşkanıdır.” cümlesinde yay ayraç hangi amaçla kullanılmıştır?",
+    "siklar": {
+      "A": "Başkasının sözünü aynen aktarmak için",
+      "B": "Cümlenin soru olduğunu göstermek için",
+      "C": "Cümleye ek açıklama vermek için",
+      "D": "Sıralanan sözcükleri ayırmak için"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Ayracın içindeki sayıları okumadan cümleyi oku; cümlenin anlamı bozuluyor mu?",
+    "cozum_adimlari": [
+      "Ayracın içinde Atatürk’ün doğum ve ölüm yılları yer alıyor.",
+      "Bu bilgi cümleyi tamamlayan ek bir açıklamadır; yay ayraç bu amaçla kullanılır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Başkasının sözü tırnak işaretiyle gösterilir; yay ayraçla karıştırılmıştır.",
+      "B": "Soru bildirmek için soru işareti kullanılır.",
+      "D": "Sıralanan sözcükler virgülle ayrılır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-019",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.3",
+    "surec_bileseni": "b",
+    "konu": "Metnin konusu",
+    "alt_konu": "Konuyu ayrıntıdan ayırma",
+    "soru_metni": "Her yıl nisan ayında okulumuzda kitap fuarı düzenlenir. Öğrenciler sınıf sınıf gezerek kitapları inceler. Yazarlar da çocuklarla buluşup kitaplarını imzalar. Fuarın son günü en çok okuyan öğrenciye ödül verilir.\n\nBu parçanın konusu aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Yazarların okulları ziyaret etmesi",
+      "B": "Ödül kazanmanın yolları",
+      "C": "Sınıfların dolaşma düzeni",
+      "D": "Okulda düzenlenen kitap fuarı"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Konu, bütün cümleleri kapsayan en geniş başlıktır; ayrıntılar yalnızca bir cümleyi anlatır.",
+    "cozum_adimlari": [
+      "Yazar ziyareti, sınıfları gezme ve ödül birer ayrıntıdır.",
+      "Bütün bu ayrıntıları kapsayan konu, okulda düzenlenen kitap fuarıdır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yazar ziyareti metindeki bir ayrıntıdır, konu değildir.",
+      "B": "Ödül metnin son cümlesindeki ayrıntıdır; konuyu kapsamaz.",
+      "C": "Sınıfları gezme bir ayrıntıdır; bütün metni kapsamaz."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-020",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.3",
+    "surec_bileseni": "d",
+    "konu": "Sözcükte anlam",
+    "alt_konu": "Gerçek ve mecaz anlam",
+    "soru_metni": "Aşağıdaki cümlelerin hangisinde “kırmak” sözcüğü mecaz anlamda kullanılmıştır?",
+    "siklar": {
+      "A": "Söylediğim söz arkadaşımı kırdı.",
+      "B": "Futbol topu mutfak camını kırdı.",
+      "C": "Çocuk cevizi küçük bir taşla kırdı.",
+      "D": "Kardeşim yanlışlıkla bardağı kırdı."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Her cümlede sözcüğün sözlükteki ilk anlamıyla mı yoksa başka bir anlamla mı kullanıldığını düşün.",
+    "cozum_adimlari": [
+      "B, C ve D’de kırılan şeyler somut nesnelerdir (cam, ceviz, bardak); “kırmak” gerçek anlamdadır.",
+      "A’da kırılan şey kişinin duygularıdır; “kırmak” burada “üzmek” anlamında, yani mecaz anlamda kullanılmıştır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Cam gerçekten kırılmıştır; sözcük gerçek anlamdadır.",
+      "C": "Cevizin kabuğu kırılmıştır; sözcük gerçek anlamdadır.",
+      "D": "Bardak parçalanmıştır; sözcük gerçek anlamdadır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "sınıflandırma",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-021",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.3",
+    "surec_bileseni": "e",
+    "konu": "Noktalama işaretleri",
+    "alt_konu": "Konuşma çizgisi",
+    "soru_metni": "— Bugün hava çok güzel.\n— Evet, parka gidelim.\n\nYukarıdaki konuşmada kullanılan konuşma çizgisi (—) ne işe yarar?",
+    "siklar": {
+      "A": "Cümlenin bittiğini gösterir.",
+      "B": "Satır sonunda sözcüğü bölmeye yarar.",
+      "C": "Konuşmanın yarım kaldığını gösterir.",
+      "D": "Satır başındaki konuşmayı gösterir."
+    },
+    "dogru_sik": "D",
+    "ipucu": "Bu işareti kitaplarda en çok hangi tür yazılarda gördüğünü hatırla.",
+    "cozum_adimlari": [
+      "Konuşma çizgisi (—), satır başına alınan konuşmayı gösterir; diyaloglarda her konuşmanın önüne konur.",
+      "Satır sonunda sözcüğü bölmek kısa çizginin (–) işidir; cümle sonunu nokta, yarım kalan sözü üç nokta gösterir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Cümlenin bittiğini nokta gösterir; çizgi satır başında durur.",
+      "B": "Satır sonunda sözcüğü bölme kısa çizginin işidir; konuşma çizgisiyle karıştırılmıştır.",
+      "C": "Yarım kalan sözü üç nokta gösterir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-022",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.2",
+    "surec_bileseni": "j",
+    "konu": "Mantıksal sıra",
+    "alt_konu": "Olayları sıraya koyma",
+    "soru_metni": "I. Sonra fidenin köklerini çukura yerleştirdi.\nII. Ayşe önce saksıya biraz toprak doldurdu.\nIII. En sonunda üzerine dikkatlice su verdi.\nIV. Toprağın içine küçük bir çukur açtı.\n\nYukarıdaki cümleler anlamlı bir paragraf oluşturacak biçimde sıralanırsa sıralama hangisi olur?",
+    "siklar": {
+      "A": "II – I – IV – III",
+      "B": "II – IV – I – III",
+      "C": "IV – II – I – III",
+      "D": "II – IV – III – I"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Bir fidanı saksıya dikerken yapılan işleri gerçek hayattaki sırasıyla gözünün önüne getir.",
+    "cozum_adimlari": [
+      "Önce saksıya toprak doldurulur (II), sonra toprağa çukur açılır (IV).",
+      "Fide çukura yerleştirilir (I) ve en son su verilir (III).",
+      "Doğru sıralama II – IV – I – III’tür.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Fide, çukur açılmadan yerleştirilmiş; işlerin sırası bozulmuş.",
+      "C": "Çukur, toprak doldurulmadan açılmış; işlerin sırası bozulmuş.",
+      "D": "Su, fide yerleştirilmeden verilmiş; en son yapılması gereken iş öne alınmış."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "sıralama",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-023",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.3",
+    "surec_bileseni": "e",
+    "konu": "Noktalama işaretleri",
+    "alt_konu": "Soru işareti",
+    "soru_metni": "Aşağıdaki cümlelerin hangisinin sonuna soru işareti KONMAZ?",
+    "siklar": {
+      "A": "Bu akşam bize gelir misin",
+      "B": "Yarın okulda hava nasıl olacak",
+      "C": "Bu sabah kapıyı kim çaldı",
+      "D": "Annem neden geciktiğimi sordu"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Soruyu doğrudan sormak ile birinin sorduğunu anlatmak aynı şey değildir.",
+    "cozum_adimlari": [
+      "A, B ve C doğrudan sorulan soru cümleleridir.",
+      "D’de bir soru anlatılıyor, doğrudan sorulmuyor; cümle haber cümlesidir ve nokta ile biter.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Doğrudan sorulan bir soru cümlesidir; soru işareti alır.",
+      "B": "Soru sözcüğü içerir ve doğrudan sorulur; soru işareti alır.",
+      "C": "“Kim” soru sözcüğü doğrudan soru kurar; soru işareti alır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "olumsuz kök",
+    "olumsuzluk": true,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-024",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.3",
+    "surec_bileseni": "a",
+    "konu": "Neden-sonuç",
+    "alt_konu": "Olayın nedenini bulma",
+    "soru_metni": "Bu yıl yağmur çok az yağdı. Barajdaki su seviyesi her hafta biraz daha düştü. Çiftçiler tarlalarını eskisi kadar sulayamadı. Belediye de halktan suyu tasarruflu kullanmasını istedi. Vatandaşlar musluklarını kapatmaya ve kısa duş almaya özen gösterdi.\n\nBu metne göre belediyenin halktan su tasarrufu istemesinin nedeni aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Yeni bir baraj yapılacak olması",
+      "B": "Su faturalarının zamlanması",
+      "C": "Barajdaki su miktarının azalması",
+      "D": "Barajda temizlik yapılacak olması"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Metinde önce ne oldu, sonra ne oldu? Olayları sırayla düşün.",
+    "cozum_adimlari": [
+      "Yağmur az yağmış ve barajdaki su seviyesi düşmüştür.",
+      "Su azaldığı için belediye tasarruf istemiştir; diğer şıklar metinde geçmiyor.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Baraj sözcüğü metinde geçtiği için seçilebilir; ama yeni baraj yapılacağı söylenmiyor.",
+      "B": "Tasarruf denince para akla gelir; ama metinde fatura zammı yok.",
+      "D": "Baraj sözcüğü metinde geçtiği için seçilebilir; ama temizlikten söz edilmiyor."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-025",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.3",
+    "surec_bileseni": "c",
+    "konu": "Ana fikir",
+    "alt_konu": "Örtülü ana fikri bulma",
+    "soru_metni": "Selim, bisikletini ilk sürdüğünde defalarca düştü. Dizleri yara içinde kaldı ama her sabah yeniden denedi. Bir ay sonra mahallede kimse onun kadar rahat pedal çeviremiyordu. Arkadaşları nasıl öğrendiğini sorunca Selim omuz silkerek “Her sabah yeniden denedim, o kadar,” dedi.\n\nBu parçanın ana fikri aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Vazgeçmeden denemek başarı getirir.",
+      "B": "Zor işlere hiç girişmemek gerekir.",
+      "C": "Bisiklet sürmeyi öğrenmek çok kolaydır.",
+      "D": "Mahallede herkes bisiklet sürmelidir."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Selim düştükçe ne yaptı ve sonunda ne oldu?",
+    "cozum_adimlari": [
+      "Selim defalarca düşmesine rağmen her sabah yeniden denemiş ve bisiklet sürmeyi öğrenmiştir.",
+      "Parçanın verdiği ileti, vazgeçmeden denemenin başarı getirdiğidir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Selim’in dizlerinin yaralanması, zor işlerden kaçınmak gerektiği gibi yanlış bir ders çıkarmaya yol açabilir.",
+      "C": "Selim’in sonunda ustalaşması öğrenmenin kolay olduğu anlamına gelmez; çok düşmüştür.",
+      "D": "Mahalle metinde bir ayrıntıdır; herkesin bisiklet sürmesi gerektiği söylenmiyor."
+    },
+    "zorluk": 3,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-026",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.3",
+    "surec_bileseni": "a",
+    "konu": "Bilgi analizi",
+    "alt_konu": "Metinden çıkarılamayan yargıyı bulma",
+    "soru_metni": "Karıncalar yuvalarını yer altında kurar. Yuvanın içinde yiyecek odaları, yavru odaları ve dinlenme odaları bulunur. Her karıncanın bir görevi vardır; kimi yiyecek taşır, kimi yuvayı temizler, kimi de yavrulara bakar. Bu düzenli çalışma sayesinde koloni yıllarca yaşayabilir.\n\nBu parçaya göre aşağıdakilerden hangisi ÇIKARILAMAZ?",
+    "siklar": {
+      "A": "Yuvalar yer altında kurulur.",
+      "B": "Yuvada yavru odaları bulunur.",
+      "C": "Karıncalar görevlerini paylaşır.",
+      "D": "Bütün karıncalar aynı işi yapar."
+    },
+    "dogru_sik": "D",
+    "ipucu": "Her şıkkı metindeki bir cümleyle eşleştirmeye çalış.",
+    "cozum_adimlari": [
+      "A, B ve C şıkları metinde açıkça söyleniyor.",
+      "Metinde karıncaların farklı görevleri olduğu anlatıldığı için D şıkkı metinle çelişir ve çıkarılamaz.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "İlk cümlede açıkça söylenmiştir; metinden çıkarılabilir.",
+      "B": "İkinci cümlede yavru odalarından söz edilir; metinden çıkarılabilir.",
+      "C": "“Kimi… kimi…” anlatımı görev paylaşımını gösterir; metinden çıkarılabilir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "olumsuz kök",
+    "olumsuzluk": true,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-027",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.4.5",
+    "surec_bileseni": "a",
+    "konu": "Hata bulma",
+    "alt_konu": "Noktalama hatasını fark etme",
+    "soru_metni": "(1) Dün annemle pazara gittik.\n(2) Annem elma, armut, ve muz aldı.\n(3) Babam, “Meyveler çok tatlı.” dedi.\n(4) Ben de ona katıldım, çünkü hepsi taptazeydi.\n\nBu parçadaki numaralı cümlelerden hangisinde noktalama hatası vardır?",
+    "siklar": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Her cümlede virgül, tırnak ve noktanın yerini tek tek kontrol et.",
+    "cozum_adimlari": [
+      "1., 3. ve 4. cümlelerde nokta, virgül ve tırnak işareti doğru kullanılmıştır.",
+      "2. cümlede “ve” bağlacından önce virgül konmuştur; sıralamada son sözcükten önce “ve” varsa virgül konmaz.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Cümle düzdür ve nokta ile bitmiştir; hata yoktur.",
+      "C": "Konuşma, virgül ve tırnak içinde doğru verilmiştir; hata yoktur.",
+      "D": "“Çünkü”den önce virgül kullanılması doğrudur; hata yoktur."
+    },
+    "zorluk": 3,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "hata bulma",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-028",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.3",
+    "surec_bileseni": "a",
+    "konu": "Karakter ve duygu analizi",
+    "alt_konu": "Duygudaki değişimi bulma",
+    "soru_metni": "Anneannem, taşındığımız yeni evde ilk geceyi uyuyamadan geçirdi. Sabaha kadar pencereden sokağı izledi, eski mahallesini özledi. Sabah olunca elinde fincanıyla bahçeye çıktı. Bahçedeki çiçekleri görünce “Ne güzel bir bahçe!” dedi, komşusuna da gülümseyerek “Günaydın.” dedi.\n\nBu metinde anneannenin duygusundaki değişim aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Mutluluktan özleme",
+      "B": "Özlemden öfkeye",
+      "C": "Özlemden mutluluğa",
+      "D": "Korkudan şaşkınlığa"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Metnin başındaki ve sonundaki davranışları ayrı ayrı değerlendir.",
+    "cozum_adimlari": [
+      "Gece anneanne eski mahallesini özlemektedir.",
+      "Sabah bahçeye çıkıp “Ne güzel bir bahçe!” demesi ve komşusuna gülümsemesi mutlu olduğunu gösterir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Duygu sırası tersine çevrilmiş; önce özlem, sonra mutluluk vardır.",
+      "B": "Başlangıç doğru (özlem) ama anneannenin sonda öfkeli olduğuna dair hiçbir ipucu yok.",
+      "D": "Metinde ne korku ne şaşkınlık belirtisi var."
+    },
+    "zorluk": 3,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-029",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.4.2",
+    "surec_bileseni": "h",
+    "konu": "Sözcükte anlam",
+    "alt_konu": "Eş sesli sözcükler",
+    "soru_metni": "“Yaz” sözcüğü aşağıdaki cümlelerin hangisinde diğerlerinden farklı anlamda kullanılmıştır?",
+    "siklar": {
+      "A": "Lütfen cevabı kâğıda yaz.",
+      "B": "Yaz tatilinde dedemlere gideceğiz.",
+      "C": "Bu yaz hava çok sıcak geçti.",
+      "D": "Her yaz sahile gideriz."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Her cümlede “yaz” sözcüğünün yerine başka bir sözcük koyup cümlenin anlamının bozulup bozulmadığına bak.",
+    "cozum_adimlari": [
+      "B, C ve D’de “yaz” mevsim adı olarak kullanılmıştır.",
+      "A’da “yaz” yazmak eylemini bildirir; bu yüzden anlamı farklıdır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "“Yaz” mevsim adıdır; diğer iki cümleyle aynı anlamdadır.",
+      "C": "“Yaz” mevsim adıdır; diğer iki cümleyle aynı anlamdadır.",
+      "D": "“Yaz” mevsim adıdır; diğer iki cümleyle aynı anlamdadır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "sınıflandırma",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "TR4-030",
+    "sinif": 4,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.K.4.2",
+    "surec_bileseni": "ö",
+    "konu": "Atasözleri",
+    "alt_konu": "Duruma uygun atasözünü bulma",
+    "soru_metni": "Eylül her gün harçlığının bir kısmını kumbarasına attı. Dört ay sonra kumbarayı açtığında istediği kitap setini alabilecek kadar parası olduğunu gördü.\n\nBu parçaya en uygun atasözü aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Ayağını yorganına göre uzat.",
+      "B": "Damlaya damlaya göl olur.",
+      "C": "Ağaç yaşken eğilir.",
+      "D": "Acele işe şeytan karışır."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Atasözünün anlamını düşün ve öyküyle aynı iletiyi verip vermediğine bak.",
+    "cozum_adimlari": [
+      "Eylül küçük birikimlerini düzenli olarak biriktirmiş ve sonunda büyük bir miktara ulaşmıştır.",
+      "“Damlaya damlaya göl olur” atasözü, küçük birikimlerin zamanla büyüdüğünü anlatır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Para konusunda geçtiği için seçilebilir; ama harcamayı gelire göre ayarlamak anlatılmıyor.",
+      "C": "Çocukla ilgili olduğu için seçilebilir; ama eğitimin erken verilmesinden söz edilmiyor.",
+      "D": "Metinde acele edilen bir iş yok; Eylül sabırla biriktirmiştir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  }
+]

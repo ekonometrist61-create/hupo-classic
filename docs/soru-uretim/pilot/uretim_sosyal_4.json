@@ -1,0 +1,938 @@
+[
+  {
+    "id": "SOS4-001",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.1.1",
+    "surec_bileseni": "a",
+    "konu": "Sosyal bilgiler dersinin katkıları",
+    "alt_konu": "Dersin bireysel ve toplumsal katkısı",
+    "soru_metni": "Mahallesindeki yardımlaşma örneklerini sosyal bilgiler dersinde inceleyen bir öğrencinin bu dersten elde edeceği en doğrudan katkı hangisidir?",
+    "siklar": {
+      "A": "İnsanların birbirine nasıl destek olduğunu fark eder.",
+      "B": "Maddelerin hâl değişimlerini deney yaparak gözlemler.",
+      "C": "Cümlelerdeki yazım yanlışlarını daha kolay bulur.",
+      "D": "Toplama ve çıkarma işlemlerini daha hızlı yapar."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Öğrencinin incelediği konunun hangi dersin alanına girdiğini düşün.",
+    "cozum_adimlari": [
+      "Öğrenci mahallesindeki yardımlaşma örneklerini inceliyor; bu, toplum içindeki insan ilişkileriyle ilgilidir.",
+      "İnsanlar arası ilişkileri ve toplumsal yaşamı anlamak sosyal bilgiler dersinin katkısıdır.",
+      "Hâl değişimi fen bilimlerinin, yazım kuralları Türkçenin, işlem hızı matematiğin alanındadır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Fen bilimleri dersinin katkısı sosyal bilgilerin katkısı sanılıyor (ders karışıklığı).",
+      "C": "Türkçe dersinin katkısı sosyal bilgilerin katkısı sanılıyor.",
+      "D": "Matematik dersinin katkısı sosyal bilgilerin katkısı sanılıyor."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-004",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.1.2",
+    "surec_bileseni": "b",
+    "konu": "Bireysel farklılıklar",
+    "alt_konu": "Farklılıklardan çıkarım",
+    "soru_metni": "Bir sınıfta kimi öğrenciler resim yapmayı, kimileri spor yapmayı sever. Öğretmen her öğrencinin ilgi alanını tanıtacağı bir gün düzenliyor. Bu etkinlikten çıkarılabilecek en uygun sonuç hangisidir?",
+    "siklar": {
+      "A": "Herkesin aynı alanda başarılı olması gerektiği",
+      "B": "Farklı ilgileri olan öğrencilerin birlikte çalışamayacağı",
+      "C": "Sınıfta tek bir ilgi alanının öne çıkarılması gerektiği",
+      "D": "İnsanların ilgilerinin birbirinden farklı olabileceği"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Etkinliğin amacı herkesin kendi ilgisini göstermesidir; sonucu buna göre düşün.",
+    "cozum_adimlari": [
+      "Etkinlikte her öğrenci kendi ilgi alanını tanıtıyor; ilgi alanlarının farklı olduğu görülüyor.",
+      "A, B ve C seçenekleri farklılığı bir sorun gibi gösteren ya da tek ilgiyi öne çıkaran ifadelerdir.",
+      "D seçeneği etkinlikten çıkan doğal sonuçtur.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Eşit davranmak, herkesin aynı olması gerektiği sanılıyor.",
+      "B": "Farklılık, ortak çalışmayı engelleyen bir engel sanılıyor.",
+      "C": "Çoğunluğun ilgisi tek doğru ilgi sanılıyor."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-005",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.1.3",
+    "surec_bileseni": "a",
+    "konu": "Toplumsal birlik",
+    "alt_konu": "Sınıfta birliği sürdürme",
+    "soru_metni": "Aşağıdakilerden hangisi sınıfta toplumsal birliği sürdürmeye katkı sağlar?",
+    "siklar": {
+      "A": "Sınıf kurallarını birlikte belirleyip bunlara uymak",
+      "B": "Her öğrencinin kendi koyduğu kurala göre davranması",
+      "C": "Grup çalışmalarında yalnızca kendi görüşünü uygulamak",
+      "D": "Arkadaşlarının hatalarını sınıfta herkese duyurmak"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Birlik, herkesin ortak bir düzene katıldığı durumlarda güçlenir.",
+    "cozum_adimlari": [
+      "Toplumsal birlik, bir topluluktaki bireylerin ortak kurallar çevresinde bir arada olmasıdır.",
+      "B, C ve D seçenekleri bireyleri birbirinden uzaklaştıran davranışlardır.",
+      "A seçeneğinde herkes kuralların oluşmasına katılmakta ve kurallara uymaktadır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Bireysel özgürlük, birlikte yaşama kurallarının yerine konuyor.",
+      "C": "Kendi görüşünü savunmak, birlik için gerekli sanılıyor.",
+      "D": "Hata bildirmek, kural koruma gibi görülüyor."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-006",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.1.3",
+    "surec_bileseni": "b",
+    "konu": "Toplumsal birlik",
+    "alt_konu": "Ailede birlik ve dayanışma",
+    "soru_metni": "Bir ailede ev işleri sırayla paylaşılıyor ve aileyi ilgilendiren kararlar birlikte alınıyor. Bu durumun aile birliğine etkisi aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Aile üyelerinin birbirinden bağımsız yaşamasını sağlar.",
+      "B": "Aile üyelerinin güvenini ve dayanışmasını artırır.",
+      "C": "Ev işlerinin yalnızca çocuklara kalmasına neden olur.",
+      "D": "Aile içindeki kararların tek kişiye bırakılmasını sağlar."
+    },
+    "dogru_sik": "B",
+    "ipucu": "İş paylaşımı ve ortak karar, aile üyeleri arasındaki ilişkiyi nasıl değiştirir, düşün.",
+    "cozum_adimlari": [
+      "Ev işlerini paylaşmak ve kararları birlikte almak ortak sorumluluk duygusu oluşturur.",
+      "A, C ve D seçenekleri verilen durumun tersini anlatır: ayrışma, yük bindirme ve tek kişinin karar vermesi.",
+      "Ortak sorumluluk üyeler arasındaki güveni ve dayanışmayı artırır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Paylaşım, bağımsızlıkla karıştırılıyor.",
+      "C": "İş paylaşımı, çocuklara iş yüklemek sanılıyor.",
+      "D": "Birlikte karar almanın tam tersi doğru sanılıyor."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-009",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.2.2",
+    "surec_bileseni": "b",
+    "konu": "Doğa ve insan",
+    "alt_konu": "Doğal koşullara uyum",
+    "soru_metni": "Bir bölgede yazlar kurak, kışlar yağışlı geçmektedir. Bölgede yaşayanlar kışın yağan suyu barajlarda biriktirip yazın kullanmaktadır. Bu durum doğa ile insan arasındaki hangi ilişkiyi gösterir?",
+    "siklar": {
+      "A": "İnsanlar yaşamlarını doğal koşullara göre düzenler.",
+      "B": "Doğal koşullar insanların yaşamını etkilemez.",
+      "C": "İnsanlar yağış miktarını kendi isteğine göre belirler.",
+      "D": "Doğa yalnızca kış aylarında insan yaşamını etkiler."
+    },
+    "dogru_sik": "A",
+    "ipucu": "İnsanların yaptığı işin, bölgenin yağış düzeniyle ilişkisini düşün.",
+    "cozum_adimlari": [
+      "Bölgede yazın su azdır, kışın fazladır.",
+      "İnsanlar suyu kışın biriktirip yazın kullanarak yaşamlarını bu duruma göre düzenlemiştir.",
+      "Bu, insanların doğal koşullara uyum sağladığını gösterir; diğer seçenekler verilen bilgiyle çelişir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "İnsanın önlem alması doğadan bağımsız olmak sanılıyor.",
+      "C": "Baraj yapmak yağışı denetlemek sanılıyor.",
+      "D": "Yağışın kışın olması etkinin yalnızca kışın olması sanılıyor."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-010",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.2.3",
+    "surec_bileseni": "b",
+    "konu": "Afetler",
+    "alt_konu": "Deprem anında doğru davranış",
+    "soru_metni": "Okulda ders sırasında deprem sarsıntısı başladığında öğrencilerin yapması gereken ilk davranış aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Asansörle hemen zemin kata inmek",
+      "B": "Çök-kapan-tutun hareketini yapmak",
+      "C": "Pencere önüne geçip dışarıyı izlemek",
+      "D": "Merdivenlerden koşarak bahçeye inmek"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Sarsıntı sürerken önce başını ve vücudunu koruyacak davranışı düşün.",
+    "cozum_adimlari": [
+      "Sarsıntı sırasında düşen eşyalardan korunmak ve ayakta kalmaya çalışırken düşmemek gerekir.",
+      "Asansör kullanmak, pencere önüne gitmek ve koşarak merdivene yönelmek tehlikelidir.",
+      "Önerilen davranış çök-kapan-tutun hareketidir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Hızlı çıkmak güvenli sanılıyor; deprem sırasında asansör tehlikelidir.",
+      "C": "Meraktan olayı izlemek; cam kırılma riskini gözden kaçırıyor.",
+      "D": "Binadan hemen çıkmak en güvenli sanılıyor; sarsıntı sırasında koşmak yaralanma riskidir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-011",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.2.3",
+    "surec_bileseni": "b",
+    "konu": "Afetler",
+    "alt_konu": "Sel etkisini azaltma",
+    "soru_metni": "Sel riski olan bir mahallede yaşayanların afetin zararını azaltmak için önceden yapabileceği çalışma aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Dere yatağının hemen kenarına yeni evler yapmak",
+      "B": "Dere yatağındaki suyun yolunu moloz yığarak daraltmak",
+      "C": "Dere yatağını temiz tutup yağış uyarılarını izlemek",
+      "D": "Uyarı yapıldığında olayı izlemek için dere kenarına gitmek"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Zararı azaltmak için sel gelmeden önce alınabilecek önlemi düşün.",
+    "cozum_adimlari": [
+      "Sel zararını azaltmak için suyun rahat akması ve halkın önceden uyarılması gerekir.",
+      "A seçeneği riski artırır, B seçeneği suyun yolunu kapatır, D seçeneği insanı tehlikeye atar.",
+      "C seçeneği suyun akışını kolaylaştırır ve önceden hazırlıklı olmayı sağlar.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Dere kenarı güzel ve kolay yerleşim sanılıyor; risk artıyor.",
+      "B": "Moloz yığmak su yolunu daraltır; kıyıyı korumak gibi görülüyor.",
+      "D": "Meraklı davranış güvenli sanılıyor; uyarı tehlikeden uzaklaşmak içindir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-012",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.2.3",
+    "surec_bileseni": "c",
+    "konu": "Afetler",
+    "alt_konu": "Tatbikatın amacı",
+    "soru_metni": "Bir okulda her dönem afet tatbikatı yapılmaktadır. Bu tatbikatın afetlerin etkilerini azaltmaya katkısı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Doğal afetlerin okul bölgesinde yaşanmasını engeller.",
+      "B": "Afetin oluşma nedenlerini tamamen ortadan kaldırır.",
+      "C": "Afet sonrası oluşan zararın tamamen okulca karşılanmasını sağlar.",
+      "D": "Öğrencilerin afette ne yapacağını önceden öğrenmesini sağlar."
+    },
+    "dogru_sik": "D",
+    "ipucu": "Tatbikat, afetten önce yapılan bir hazırlıktır; neyi değiştirip neyi değiştiremeyeceğini düşün.",
+    "cozum_adimlari": [
+      "Doğal afetler tatbikatlarla önlenemez, nedenleri de ortadan kalkmaz.",
+      "Tatbikat, afet anında nasıl davranılacağını önceden öğretir ve zararı azaltır.",
+      "A, B ve C seçenekleri tatbikatın yapamayacağı işlevleri anlatır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Hazırlık yapmak afeti önlemek sanılıyor.",
+      "B": "Önlem almak nedeni ortadan kaldırmak sanılıyor.",
+      "C": "Hazırlık, zararı kurumun karşılaması ile karıştırılıyor."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-013",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.3.2",
+    "surec_bileseni": "a",
+    "konu": "Aile tarihi",
+    "alt_konu": "Aile tarihi kanıtları",
+    "soru_metni": "Aşağıdakilerden hangisi aile tarihini öğrenmek için kullanılabilecek bir kanıttır?",
+    "siklar": {
+      "A": "Büyükannenin gençliğinden kalma bir fotoğraf",
+      "B": "Bakkaldan alınan ürünün güncel fiyat etiketi",
+      "C": "Okul kütüphanesinde bulunan bir hikâye kitabı",
+      "D": "Televizyondaki günlük hava durumu haberi"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Aile tarihi, ailenin geçmişte yaşadıklarını gösteren belgelerle öğrenilir.",
+    "cozum_adimlari": [
+      "Aile tarihi, ailenin geçmişine ait fotoğraf, belge ve anılar gibi kanıtlarla öğrenilir.",
+      "B, C ve D seçenekleri ailenin geçmişi hakkında bilgi vermez.",
+      "A seçeneğindeki eski fotoğraf ailenin geçmişinden kalan bir kanıttır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Fiyat etiketi geçmişe ait bir nesne gibi görülüyor ama güncel ve aileyle ilgisiz.",
+      "C": "Kitap yazılı bir kaynak olduğu için kanıt sanılıyor ama aile tarihiyle ilgisi yok.",
+      "D": "Haberi bir kayıt sanıp kanıt sayma; ailenin geçmişini göstermiyor."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-015",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.3.3",
+    "surec_bileseni": "a",
+    "konu": "Ortak miras",
+    "alt_konu": "Ortak miras ögeleri",
+    "soru_metni": "Aşağıdakilerden hangisi yakın çevredeki ortak miras ögelerine örnektir?",
+    "siklar": {
+      "A": "Bir ailenin atasından kalan ve evde saklanan bilezik",
+      "B": "Şehirde yüzyıllardır herkesin kullandığı tarihî çeşme",
+      "C": "Bir öğrencinin kendi topladığı pul koleksiyonu",
+      "D": "Bir esnafın dükkânında sattığı el yapımı süs eşyaları"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Ortak miras, belirli bir kişiye değil toplumun tamamına aittir.",
+    "cozum_adimlari": [
+      "Ortak miras ögeleri, geçmişten gelen ve toplumun bütününe ait olan kültürel değerlerdir.",
+      "A ve C kişilere ya da ailelere, D ise bir esnafın ticaretine aittir.",
+      "B seçeneğindeki tarihî çeşme yüzyıllardır herkesin kullandığı ortak bir mirastır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Aile yadigârı, geçmişten kaldığı için ortak miras sanılıyor ama yalnızca aileye aittir.",
+      "C": "Koleksiyon eski olabilir; ancak kişisel olduğu için ortak miras değildir.",
+      "D": "El yapımı olması kültürel değer sayılıyor ama bireysel ticari ürün."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-016",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.3.3",
+    "surec_bileseni": "b",
+    "konu": "Ortak miras",
+    "alt_konu": "Ortak mirası tanımanın önemi",
+    "soru_metni": "Yakın çevredeki tarihî bir hamamı gezen öğrenciler, bu yapının neden korunması gerektiğini tartışıyor. Aşağıdakilerden hangisi korunmasının nedenlerinden biridir?",
+    "siklar": {
+      "A": "Yapıyı kaldırıp yerine yeni binalar için alan açmak",
+      "B": "Yapının gelirinin yalnızca bir kişiye kalmasını sağlamak",
+      "C": "Geçmişle bağ kurmak ve gelecek kuşaklara aktarmak",
+      "D": "Yapıyı yalnızca turistlerin gezebileceği yer yapmak"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Tarihî yapıların değeri, geçmişle ve gelecekle kurduğu bağdadır.",
+    "cozum_adimlari": [
+      "Ortak miras ögeleri bir toplumun geçmişini yansıtır ve gelecek kuşaklara aktarılmalıdır.",
+      "A, B ve D seçenekleri yapıyı yok eder, tek kişiye ayırır ya da halkın kullanımından alır.",
+      "C seçeneği ortak mirasın korunma nedenini doğru anlatır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Gelişme, eski yapıları kaldırmak sanılıyor.",
+      "B": "Korumak, kişisel kazanç sağlamakla karıştırılıyor.",
+      "D": "Turizm geliri tek amaç sanılıyor; halkın ortak kullanımı yok sayılıyor."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-017",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.1",
+    "surec_bileseni": "a",
+    "konu": "Millî Mücadele",
+    "alt_konu": "Millî Mücadele'nin başlangıcı",
+    "soru_metni": "Mustafa Kemal Atatürk, Millî Mücadele’yi başlatmak amacıyla 19 Mayıs 1919’da hangi şehre çıkmıştır?",
+    "siklar": {
+      "A": "İzmir",
+      "B": "Ankara",
+      "C": "Sivas",
+      "D": "Samsun"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Bu şehir Karadeniz kıyısında bir limandır.",
+    "cozum_adimlari": [
+      "Mustafa Kemal Atatürk 19 Mayıs 1919’da Samsun’a çıkmıştır.",
+      "Bu tarih Millî Mücadele’nin başlangıcı kabul edilir.",
+      "İzmir, Ankara ve Sivas Millî Mücadele’nin diğer önemli şehirleridir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "İzmir’in işgali (15 Mayıs 1919) aynı dönemde olduğu için karıştırılıyor.",
+      "B": "Ankara, TBMM’nin açıldığı şehir olarak anılıyor; çıkış yeri sanılıyor.",
+      "C": "Sivas Kongresi nedeniyle Millî Mücadele ile ilişkilendiriliyor."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-019",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.2",
+    "surec_bileseni": "b",
+    "konu": "Cumhuriyet'in değişimleri",
+    "alt_konu": "Harf değişikliğinin katkısı",
+    "soru_metni": "1928’de Latin harflerine dayalı yeni Türk alfabesi kabul edilmiştir. Bu değişikliğin insanların hayatındaki en doğrudan katkısı hangisidir?",
+    "siklar": {
+      "A": "Okuma yazma öğrenmenin kolaylaşması",
+      "B": "Şehirler arası yolculuğun hızlanması",
+      "C": "Tarım ürünlerinin çeşitlenmesi",
+      "D": "Hastanelerin sayısının artması"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Alfabe, yazı ile ilgili bir araçtır; hangi alana dokunduğunu düşün.",
+    "cozum_adimlari": [
+      "Yeni Türk alfabesi Türkçenin seslerine uygun harflerden oluştuğu için öğrenmesi daha kolaydır.",
+      "Bu değişiklik okuma yazma öğrenmeyi kolaylaştırmıştır.",
+      "Ulaşım, tarım ve sağlık alanları doğrudan alfabeyle ilgili değildir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Cumhuriyet’in değişimleri arasında ulaşım da var; alan karıştırılıyor.",
+      "C": "Cumhuriyet’in ekonomik değişimleri harfle karıştırılıyor.",
+      "D": "Cumhuriyet’in sağlık alanındaki gelişmeleri harfle karıştırılıyor."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-020",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.2",
+    "surec_bileseni": "b",
+    "konu": "Cumhuriyet'in değişimleri",
+    "alt_konu": "Soyadı Kanunu'nun katkısı",
+    "soru_metni": "1934’te çıkarılan Soyadı Kanunu ile herkesin bir soyadı alması zorunlu olmuştur. Bu uygulamanın günlük hayata en doğrudan katkısı hangisidir?",
+    "siklar": {
+      "A": "Kadınların seçimlerde oy kullanabilmesi",
+      "B": "Okuma yazma oranının daha da yükselmesi",
+      "C": "Öğretimin tek çatı altında birleştirilmesi",
+      "D": "Kişilerin kayıtlarda kolay ayırt edilmesi"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Soyadı, bir kişiyi başkalarından ayıran isimle ilgilidir.",
+    "cozum_adimlari": [
+      "Soyadı Kanunu herkesin ad ve soyadla kayıt altına alınmasını sağlamıştır.",
+      "Kadınlara seçme hakkı, harf değişikliği ve öğretimin birleştirilmesi başka düzenlemelerin sonuçlarıdır.",
+      "Soyadı, aynı adı taşıyan kişileri resmî kayıtlarda ayırt etmeyi kolaylaştırır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Aynı dönemdeki bir başka düzenlemenin (1934 seçme hakkı) sonucu bu uygulamaya yazılıyor.",
+      "B": "Harf değişikliğinin sonucu bu uygulamaya yazılıyor.",
+      "C": "Öğretimin birleştirilmesi (Tevhid-i Tedrisat) bu uygulamayla karıştırılıyor."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-021",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.3",
+    "surec_bileseni": "a",
+    "konu": "Okulda demokrasi",
+    "alt_konu": "Demokratik katılım örneği",
+    "soru_metni": "Aşağıdakilerden hangisi okulda demokratik katılıma örnektir?",
+    "siklar": {
+      "A": "Sınıf gezisi yerini tek bir öğrencinin belirlemesi",
+      "B": "Kararların en sesli öğrencinin önerisine göre alınması",
+      "C": "Sınıf başkanının öğrencilerin oylarıyla seçilmesi",
+      "D": "Oylamaya yalnızca bazı öğrencilerin katılması"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Demokratik katılımda karara herkes eşit biçimde katkıda bulunabilir.",
+    "cozum_adimlari": [
+      "Demokratik katılım, kararlara ilgili herkesin eşit biçimde katılmasıdır.",
+      "A, B ve D seçeneklerinde karar tek bir kişiye ya da bir gruba bırakılmıştır.",
+      "C seçeneğinde bütün öğrenciler oy kullanarak sınıf başkanını seçmektedir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Karar vermek, sorumluluk almak gibi görülüyor ama tek kişi belirliyor.",
+      "B": "Sesli olan haklı sanılıyor; çoğunluk ya da oylama yok.",
+      "D": "Oylama yapılıyor diye demokratik sanılıyor ama herkes katılmıyor."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-022",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.3",
+    "surec_bileseni": "a",
+    "konu": "Okulda demokrasi",
+    "alt_konu": "Karar alma süreci adımları",
+    "soru_metni": "Bir sınıf, gezi yerini oylamayla belirleyecektir. Karar sürecinin adımları şunlardır:\nI. Sonucun sınıfa duyurulması\nII. Önerilerin toplanması\nIII. Oylamanın yapılması\nIV. Önerilerin üzerinde konuşulması\nBu adımlar demokratik karar sürecine göre sıralandığında hangisi doğru olur?",
+    "siklar": {
+      "A": "II - III - IV - I",
+      "B": "II - IV - III - I",
+      "C": "IV - II - III - I",
+      "D": "III - II - IV - I"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Karar vermeden önce seçeneklerin ortaya konması ve konuşulması gerekir.",
+    "cozum_adimlari": [
+      "Önce seçenekler ortaya konur, yani öneriler toplanır.",
+      "Sonra öneriler üzerinde konuşulur, ardından oylama yapılır.",
+      "En son sonuç herkese duyurulur: II, IV, III, I.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Oylama tartışmadan önce yapılıyor.",
+      "C": "Öneri toplanmadan konuşma başlıyor.",
+      "D": "Oylama süreci başlatıyor; oylama önerilerden önce sanılıyor."
+    },
+    "zorluk": 3,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "kronoloji",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-023",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.5.2",
+    "surec_bileseni": "a",
+    "konu": "İstek ve ihtiyaç",
+    "alt_konu": "İstek ile ihtiyaç ayrımı",
+    "soru_metni": "Aşağıdaki durumlardan hangisi bir istek örneğidir?",
+    "siklar": {
+      "A": "Susayan bir çocuğun yemekle birlikte su içmesi",
+      "B": "Hastalanan bir çocuğun doktorun verdiği ilacı kullanması",
+      "C": "Montu olan çocuğun yeni çıkan modeli de almak istemesi",
+      "D": "Soğuk günde dışarı çıkan çocuğun kalın giysi giymesi"
+    },
+    "dogru_sik": "C",
+    "ipucu": "İhtiyaç olmadan da yaşanabilecek bir durumu ara.",
+    "cozum_adimlari": [
+      "İhtiyaç, yaşamı sürdürmek için gerekli olan şeylerdir; istek ise gerekli olmayan arzulardır.",
+      "Su, ilaç ve kalın giysi gerçek ihtiyaçtır.",
+      "Montu olan çocuğun yeni modeli istemesi gerekli olmadığı için istektir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Su içmek günlük bir alışkanlık gibi görünüyor ama temel ihtiyaçtır.",
+      "B": "İlaç kullanmak isteğe bağlı sanılıyor ama sağlık ihtiyacıdır.",
+      "D": "Giysi giymek isteğe bağlı sanılıyor ama korunma ihtiyacıdır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-024",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.5.2",
+    "surec_bileseni": "b",
+    "konu": "İstek ve ihtiyaç",
+    "alt_konu": "Bilinçli seçim",
+    "soru_metni": "Elif’in ayakkabıları yırtıldığı için yeni bir ayakkabıya ihtiyacı var. Alışverişte beğendiği bir saç aksesuarını da almak istiyor. Parası yalnızca birine yetiyor. Bilinçli bir seçim yapmak isteyen Elif ne yapmalıdır?",
+    "siklar": {
+      "A": "Aksesuarı alıp yırtık ayakkabıyı bir süre daha giymeli",
+      "B": "Sınıf arkadaşlarının çoğunun aldığı ürünü seçmeli",
+      "C": "İkisini de almayıp parasını bir kenara ayırmalı",
+      "D": "Önce ayakkabıyı alıp aksesuarı sonraya bırakmalı"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Bilinçli seçimde önce hangi ürünün gerçekten gerekli olduğuna bakılır.",
+    "cozum_adimlari": [
+      "Ayakkabı gerçek bir ihtiyaçtır, aksesuar ise istektir.",
+      "Bilinçli seçimde para sınırlıysa önce ihtiyaç karşılanır, istek sonraya bırakılabilir.",
+      "A, B ve C seçenekleri ihtiyacı geri plana atar ya da başkasına göre karar verir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "İsteği ihtiyacın önüne koymak; yırtık ayakkabıya katlanmak.",
+      "B": "Başkalarının tercihine uyup kendi ihtiyacını yok sayma.",
+      "C": "Hiç harcamama, her durumda tasarruf gibi görülüyor; ihtiyaç karşılanmıyor."
+    },
+    "zorluk": 3,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-025",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.5.3",
+    "surec_bileseni": "a",
+    "konu": "Üretim, dağıtım ve tüketim",
+    "alt_konu": "Dağıtım aşaması",
+    "soru_metni": "Bir domatesin salça hâline gelip sofraya ulaşana kadar geçtiği süreçte dağıtım aşamasına aşağıdakilerden hangisi örnektir?",
+    "siklar": {
+      "A": "Domatesin tarlada yetiştirilip toplanması",
+      "B": "Domatesin fabrikada salçaya dönüştürülmesi",
+      "C": "Salçanın depodan marketlere taşınması",
+      "D": "Salçanın evde yemek yapılırken kullanılması"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Dağıtım, ürünün üretildiği yerden kullanılacağı yere gitmesidir.",
+    "cozum_adimlari": [
+      "Üretim, ürünün yetiştirilmesi ya da hazırlanmasıdır; tüketim, ürünün kullanılmasıdır.",
+      "Dağıtım ise ürünün üretildiği yerden satış yerlerine ulaştırılmasıdır.",
+      "A ve B üretim aşaması, D tüketim aşamasıdır; C dağıtım aşamasıdır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Domatesin yetiştirilmesi üretim aşamasıdır.",
+      "B": "Fabrikada işlenmesi üretim aşamasıdır.",
+      "D": "Evde kullanılması tüketim aşamasıdır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-026",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.5.3",
+    "surec_bileseni": "b",
+    "konu": "Üretim, dağıtım ve tüketim",
+    "alt_konu": "Ürün yolculuğu sırası",
+    "soru_metni": "Bir ekmeğin sofraya gelene kadar geçtiği aşamalar şunlardır:\nI. Ekmeğin satış yerine ulaştırılması\nII. Buğdayın tarlada yetiştirilmesi\nIII. Ekmeğin sofrada tüketilmesi\nIV. Buğdaydan elde edilen undan fırında ekmek yapılması\nBu aşamalar ürünün yolculuğuna göre sıralandığında hangisi doğru olur?",
+    "siklar": {
+      "A": "II - I - IV - III",
+      "B": "II - IV - I - III",
+      "C": "IV - II - I - III",
+      "D": "I - II - IV - III"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Üretimin dağıtımdan, dağıtımın tüketimden önce geldiğini hatırla.",
+    "cozum_adimlari": [
+      "Önce hammadde olan buğday yetiştirilir (II).",
+      "Sonra un ve ekmek üretilir (IV), ardından ekmek satış yerine ulaştırılır (I).",
+      "En son ekmek tüketilir (III): II, IV, I, III.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Dağıtım, ekmek üretilmeden önce yapılıyor.",
+      "C": "Ekmek, buğday yetiştirilmeden önce yapılıyor.",
+      "D": "Satış yerine ulaştırma en başa alınıyor."
+    },
+    "zorluk": 3,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "kronoloji",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-027",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.6.1",
+    "surec_bileseni": "b",
+    "konu": "Çevrim içi güvenlik",
+    "alt_konu": "Kişisel bilgilerin korunması",
+    "soru_metni": "Çevrim içi oyun oynayan bir öğrenciye tanımadığı biri adresini ve okulunu sorarsa öğrenci ne yapmalıdır?",
+    "siklar": {
+      "A": "Bilgi vermeyip durumu bir yetişkine bildirmeli",
+      "B": "Adresini verip karşısındaki kişiyle arkadaş olmalı",
+      "C": "Yalnızca okulunu söyleyip adresini saklamalı",
+      "D": "Karşısındaki samimi davranıyorsa bilgilerini paylaşmalı"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Tanımadığın kişilere kim olduğunu ve nerede yaşadığını anlatmak güvenli değildir.",
+    "cozum_adimlari": [
+      "Çevrim içi ortamda tanımadığımız kişilerle kişisel bilgiler paylaşılmaz.",
+      "Okul ve adres bilgisi de kişisel bilgidir.",
+      "Bu durumda bilgi vermeyip güvendiği bir yetişkine haber vermek gerekir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Arkadaş olmak güven yaratıyor sanılıyor; adres paylaşmak tehlikelidir.",
+      "C": "Kısmî paylaşım güvenli sanılıyor; okul da kişisel bilgidir.",
+      "D": "Samimiyet güven gibi algılanıyor; tanımadığın kişi güvenilir olmayabilir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-028",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.6.1",
+    "surec_bileseni": "b",
+    "konu": "Çevrim içi güvenlik",
+    "alt_konu": "Güvenli şifre",
+    "soru_metni": "Bir öğrenci çevrim içi hesabı için şifre oluşturacaktır. Aşağıdakilerden hangisi en güvenli davranıştır?",
+    "siklar": {
+      "A": "Kendi doğum tarihini ve adını şifre olarak belirlemek",
+      "B": "Şifresini güvendiği arkadaşıyla da paylaşmak",
+      "C": "Bütün hesaplarında aynı basit şifreyi kullanmak",
+      "D": "Harf ve rakamları karıştıran zor bir şifre seçmek"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Başkalarının tahmin etmesi zor olan şifre daha güvenlidir.",
+    "cozum_adimlari": [
+      "Güvenli bir şifre başkaları tarafından kolay tahmin edilemez.",
+      "Doğum tarihi tahmin edilebilir, paylaşılan şifre güvenliği azaltır, aynı basit şifre bütün hesapları riske atar.",
+      "Harf, rakam ve işaret karışımı tahmin edilmesi zor bir şifre oluşturur.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Hatırlaması kolay olduğu için güvenli sanılıyor ama tahmin edilebilir.",
+      "B": "Güvenilir arkadaşla paylaşmak sorun yaratmaz sanılıyor.",
+      "C": "Tek şifre kolaylık sağlıyor; tüm hesaplar riske giriyor."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-029",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.6.2",
+    "surec_bileseni": "ç",
+    "konu": "Bilim insanlarının çocukluğu",
+    "alt_konu": "Dönemin koşulları",
+    "soru_metni": "Elektriğin evlere henüz girmediği bir dönemde çocukluğunu yaşayan bir bilim insanının akşamları kitap okumak için kullanması en olası araç hangisidir?",
+    "siklar": {
+      "A": "Elektrikli masa lambası",
+      "B": "Bilgisayar ekranının ışığı",
+      "C": "Gaz lambası ya da mum",
+      "D": "Akıllı telefon ışığı"
+    },
+    "dogru_sik": "C",
+    "ipucu": "O dönemde evlerde bulunmayan şeyleri ele.",
+    "cozum_adimlari": [
+      "Elektriğin olmadığı bir dönemde elektrikle çalışan araçlar kullanılamaz.",
+      "Elektrikli lamba, bilgisayar ve akıllı telefon elektriğe bağlıdır.",
+      "O dönemde aydınlanmak için gaz lambası ya da mum kullanılırdı.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Günümüzdeki aydınlatma aracı dönemin aracı sanılıyor.",
+      "B": "Günümüz teknolojisi geçmişe taşınıyor.",
+      "D": "Günümüz teknolojisi geçmişe taşınıyor."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-030",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.6.2",
+    "surec_bileseni": "c",
+    "konu": "Bilim insanlarının çocukluğu",
+    "alt_konu": "Geçmiş ve günümüz koşulları",
+    "soru_metni": "Çocukluğu yaklaşık yüz yıl önce geçen bir bilim insanı, merak ettiği bir konuda bilgi edinmek istediğinde hangi kaynaklardan yararlanmış olması en olasıdır?",
+    "siklar": {
+      "A": "Arama motorlarından ve çevrim içi kaynaklardan",
+      "B": "Video paylaşım sitelerindeki anlatımlardan",
+      "C": "Cep telefonu uygulamalarındaki sözlüklerden",
+      "D": "Kitaplardan ve çevresindeki bilgili kişilerden"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Günümüzdeki bilgiye ulaşma yollarının o dönemde var olup olmadığını düşün.",
+    "cozum_adimlari": [
+      "Yaklaşık yüz yıl önce internet, video paylaşım siteleri ve cep telefonu uygulamaları yoktu.",
+      "Bu nedenle A, B ve C seçenekleri o dönemin koşullarına uymaz.",
+      "O dönemde bilgi kitaplardan ve çevredeki bilgili kişilerden öğrenilirdi.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Günümüzdeki bilgi kaynağı geçmişe taşınıyor.",
+      "B": "Günümüzdeki bilgi kaynağı geçmişe taşınıyor.",
+      "C": "Günümüz teknolojisi geçmişe taşınıyor."
+    },
+    "zorluk": 3,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  }
+]

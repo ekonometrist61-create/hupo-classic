@@ -1,0 +1,224 @@
+[
+ {
+  "id": "HB2-032",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.2.4",
+  "surec_bileseni": "",
+  "konu": "Acil durum",
+  "alt_konu": "Evin yerini tarif etme",
+  "soru_metni": "Bilge, dedesi düşüp ayağa kalkamayınca 112’yi aradı. Sokağın adını bilmiyor ama apartmanın bir adı var. Apartmanın karşısında da bir okul bulunuyor. Görevli evin yerini sorarsa Bilge ekibin eve ulaşması için ne söylemelidir?",
+  "siklar": {
+   "A": "Dedesinin adını ve kaç yaşında olduğunu",
+   "B": "Apartmanın adını ve yakındaki okulu",
+   "C": "Kendi okulunun adını ve sınıf öğretmenini",
+   "D": "Evde kaç kişi yaşadığını ve yaşlarını"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Ekibin evi bulabilmesi için hangi bilgilerin bir yeri tarif ettiğini düşün.",
+  "cozum_adimlari": [
+    "Ekibin eve ulaşabilmesi için görevlinin evin yerini bilmesi gerekir.",
+    "Bilge sokağın adını bilmiyor ama apartmanın adını ve yakındaki okulu biliyor.",
+    "Bu iki bilgi evin yerini tarif etmeye yeter; kişilere ait bilgiler ise yer göstermez.",
+    "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Hastanın bilgilerinin de önemli olduğu düşünülür; ancak adı ve yaşı ekibe evin yerini göstermez.",
+   "C": "Okul adı yer bildiren bir bilgi gibi göründüğü için seçilir; oysa Bilge’nin kendi okulu evin bulunduğu yeri göstermez.",
+   "D": "Evdeki kişilerle ilgili bilgi de olayla ilgili gibi görünür; ancak ekip bu bilgiyle evi bulamaz."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-033",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.5.1",
+  "surec_bileseni": "b",
+  "konu": "Hava olayları ve mevsimler",
+  "alt_konu": "Mevsim sırası ve mevsim özellikleri",
+  "soru_metni": "Okul bahçesini kar kapladı ve su birikintileri buz tuttu. Mevsimler her yıl aynı sırayla birbirini izler. Bu mevsimden iki mevsim sonra gelen mevsimin özelliği hangisidir?",
+  "siklar": {
+   "A": "Ağaçların çiçek açması",
+   "B": "Yaprakların sararıp dökülmesi",
+   "C": "Havanın çok sıcak geçmesi",
+   "D": "Karın yağıp yerde kalması"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce şu anki mevsimi bul, sonra mevsimleri sırayla iki adım ilerlet.",
+  "cozum_adimlari": [
+    "Karla kaplı yerler ve buz tutan su birikintileri kış mevsimini gösterir.",
+    "Mevsimler kıştan sonra ilkbahar, ilkbahardan sonra yaz olarak sürer.",
+    "Kıştan iki mevsim sonra yaz gelir ve hava çok sıcak geçer.",
+    "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bir mevsim sonrası sayılıp ilkbahar seçilir; oysa soru iki mevsim sonrasını ister.",
+   "B": "Sıra yanlış yönde ilerletilip sonbahar seçilir; sonbahar kıştan önce gelen mevsimdir.",
+   "D": "Bugünkü mevsimin özelliği seçilir; oysa soru iki mevsim sonrasını sorar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-034",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.5.3",
+  "surec_bileseni": "a",
+  "konu": "Afetlere karşı önlemler",
+  "alt_konu": "Bilgi kaynağı seçme",
+  "soru_metni": "Mina, depremden önce evde alınacak önlemleri öğrenmek istiyor. Öğretmeni, kaynağın hem konuyu bilenlerce hazırlanmış hem de güncel olması gerektiğini söyledi. Mina’nın önünde dört kaynak var. Mina hangisini seçmelidir?",
+  "siklar": {
+   "A": "Afet uzmanlarının bu yıl hazırladığı rehber",
+   "B": "Afet uzmanlarının otuz yıl önce hazırladığı rehber",
+   "C": "Arkadaşının bu yıl anlattığı bilgiler",
+   "D": "Tanımadığı birinin bu hafta yazdığı yorum"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Öğretmenin söylediği iki özelliğe her kaynağın uyup uymadığına tek tek bak.",
+  "cozum_adimlari": [
+    "Seçilecek kaynak hem konuyu bilenlerce hazırlanmış hem de güncel olmalıdır.",
+    "Otuz yıl önce hazırlanan rehber uzman işidir ama güncel değildir.",
+    "Arkadaşın anlattıkları ve tanımadık birinin yorumu yenidir ama konuyu bilenlerce hazırlanmamıştır.",
+    "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Uzmanlarca hazırlandığı için güvenilir görünür; ancak otuz yıl önce hazırlandığından güncel değildir.",
+   "C": "Yeni bir bilgi olduğu için seçilir; ancak arkadaşı konuyu bilenlerden biri değildir.",
+   "D": "En yeni paylaşım olduğu için seçilir; ancak tanımadığı kişinin konuyu bildiği belli değildir."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-035",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.2.1",
+  "surec_bileseni": "b",
+  "konu": "Sağlıklı büyüme ve gelişme",
+  "alt_konu": "Alışkanlık ve sağlık ilişkisi",
+  "soru_metni": "Kerem okuldan gelince ellerini yıkamadan atıştırıyor. Boş zamanlarında dışarı çıkmayıp ekran karşısında oturuyor. Sık sık hasta oluyor ve çabuk yoruluyor. Kerem bu iki sorununu birlikte azaltmak için ne yapmalıdır?",
+  "siklar": {
+   "A": "Yemekten önce ellerini yıkayıp evde daha çok dinlenmeli",
+   "B": "Ellerini yıkamadan yemek yiyip açık havada oynamalı",
+   "C": "Daha az atıştırıp evde daha çok dinlenmeli",
+   "D": "Yemekten önce ellerini yıkayıp açık havada oynamalı"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Her sorunun hangi alışkanlıktan geldiğini ayrı ayrı bul, sonra ikisini birden düzelten seçeneği ara.",
+  "cozum_adimlari": [
+    "Ellerini yıkamadan atıştırmak mikrop alıp hasta olmaya yol açabilir.",
+    "Hareketsiz kalıp ekran karşısında oturmak çabuk yorulmaya yol açabilir.",
+    "Bu yüzden Kerem yemekten önce ellerini yıkamalı ve açık havada hareket etmelidir.",
+    "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yorgun olan birinin dinlenmesi gerektiği düşünülür; oysa hareketsizlik sürdüğü için yorulma azalmaz.",
+   "B": "Hareket eklenince her şeyin düzeleceği düşünülür; oysa ellerini yıkamamak hasta olmaya yol açmaya devam eder.",
+   "C": "Az atıştırmanın iki sorunu da çözeceği düşünülür; oysa el temizliği de hareket de eksik kalır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-036",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.5.4",
+  "surec_bileseni": "b",
+  "konu": "Doğal kaynakları tasarruflu kullanma",
+  "alt_konu": "Elektrik tasarrufu",
+  "soru_metni": "Defne öğleden sonra güneş ışığıyla aydınlanan odasında bilgisayarda resim çiziyor. Lambası yanıyor, radyosu da açık ama Defne radyoyu dinlemiyor. Defne’nin elektriği boşa harcamaması için hangilerini kapatması gerekir?",
+  "siklar": {
+   "A": "Lambayı ve bilgisayarı",
+   "B": "Lambayı ve radyoyu",
+   "C": "Radyoyu ve bilgisayarı",
+   "D": "Yalnızca lambayı"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Her cihazın şu anda kullanılıp kullanılmadığına ve odanın aydınlık olup olmadığına bak.",
+  "cozum_adimlari": [
+    "Oda güneş ışığıyla aydınlık olduğu için lambaya gerek yoktur.",
+    "Defne radyoyu dinlemediği için radyo da boşuna elektrik harcar.",
+    "Bilgisayarı resim çizmek için kullandığından o açık kalmalıdır.",
+    "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Lambanın gereksiz olduğu bulunur; ancak bilgisayar resim çizmek için kullanıldığından kapatılmamalıdır.",
+   "C": "Radyonun gereksiz olduğu bulunur; ancak bilgisayar kullanılmaktadır ve oda aydınlıkken yanan lamba da boşa harcamadır.",
+   "D": "Lambanın gereksiz olduğu bulunur ve işin bittiği sanılır; oysa dinlenmeyen radyo da boşuna elektrik harcar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-037",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.1.1",
+  "surec_bileseni": "",
+  "konu": "Planlı olmak",
+  "alt_konu": "Planın sonuçları",
+  "soru_metni": "Cuma günü sınıfta resimli sunum yapılacak. Nil çalışmasını planlayıp çarşamba günü bitirdi, Cem ise çalışmayı perşembe akşamına bıraktı. O akşam elektrikler kesildi ve kimse çalışamadı. Bu durumda cuma günü hangisi olur?",
+  "siklar": {
+   "A": "Nil’in çalışması yarım kalır, Cem ise sunuma hazır olur",
+   "B": "Nil’in de Cem’in de çalışması yarım kalır",
+   "C": "Nil sunuma hazır olur, Cem’in çalışması yarım kalır",
+   "D": "Nil de Cem de sunuma hazır olur"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Elektrik kesilmeden önce her iki çocuğun çalışmasının ne durumda olduğunu düşün.",
+  "cozum_adimlari": [
+    "Nil çalışmasını planlayıp çarşamba günü bitirmiştir; perşembe akşamı yapacağı iş kalmamıştır.",
+    "Cem çalışmaya perşembe akşamı başlayacaktı ve o akşam çalışamamıştır.",
+    "Bu yüzden Nil sunuma hazırdır, Cem’in çalışması ise yarım kalmıştır.",
+    "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İki çocuğun durumu ters çevrilir; oysa elektrik kesildiğinde çalışmasını bitirmiş olan Nil değil, henüz başlamamış olan Cem etkilenir.",
+   "B": "“Kimse çalışamadı” cümlesine bakılıp iki çocuğun da etkilendiği sanılır; oysa Nil’in işi o akşamdan önce bitmiştir.",
+   "D": "Cem’in de sunuma yetişeceği düşünülür; oysa Cem çalışmaya o akşam başlayacaktı ve çalışamamıştır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

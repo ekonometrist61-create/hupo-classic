@@ -1,0 +1,1149 @@
+[
+ {
+  "id": "TR7-001",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.3",
+  "surec_bileseni": "",
+  "konu": "Okuma",
+  "alt_konu": "Metnin içeriğini tahmin etme",
+  "soru_metni": "Sabah erkenden kovandan çıkan işçi arı, kovana uzak bir yamaçta çiçek dolu bir alan buldu. Nektarı topladıktan sonra hızla kovana döndü ve diğer arıların arasında garip hareketler yapmaya başladı. Önce küçük daireler çizdi, ardından gövdesini sağa sola salladı. Çevresindeki arılar onu hiç kıpırdamadan, büyük bir dikkatle izliyordu. Bu hareketler gelişigüzel görünse de arılar için çok önemli bir anlam taşıyordu. Bilim insanları bu davranışı yıllarca inceledi ve sonunda şaşırtıcı bir sonuca ulaştı. Kovandaki bütün arılar o gün olağan işlerini bırakıp bu gösteriyi bekledi.\n\nBu metnin devamında en çok hangi konunun işlenmesi beklenir?",
+  "siklar": {
+   "A": "Arıların hareketlerle haberleşme biçiminin anlatılması",
+   "B": "Kovan yapımında kullanılan malzemelerin tanıtılması",
+   "C": "Arı sokmalarına karşı alınacak önlemlerin sıralanması",
+   "D": "Balın insan sağlığına yararlarının açıklanması"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Metnin en çok üzerinde durduğu olaya ve bu olayın vurgulanış biçimine dikkat et.",
+  "cozum_adimlari": [
+   "Metin, arının kovana dönünce yaptığı garip hareketleri ve bu hareketlerin önemli bir anlam taşıdığını vurgular.",
+   "Bilim insanlarının bu davranışı yıllarca incelemesi ve şaşırtıcı bir sonuca ulaşması, devamda bu hareketlerin anlamının açıklanacağını gösterir.",
+   "Bu nedenle devamda arıların hareketlerle haberleşmesi anlatılır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Kovan sözcüğünün metinde sık geçmesinden yola çıkıp konuyu kovan yapımı sanma.",
+   "C": "Arı kavramından çağrışımla sokma ve korunma konusunu bekleme.",
+   "D": "Arı denince akla gelen balı metnin asıl konusu sayma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-002",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.4",
+  "surec_bileseni": "",
+  "konu": "Söz varlığı",
+  "alt_konu": "Bağlamdan sözcük anlamı çıkarma",
+  "soru_metni": "Rehberimiz bizi şehrin kadim çarşısına götürdü. Taş duvarların üzerindeki yosunlar, bu yapıların yüzyılların yağmurunu gördüğünü gösteriyordu. Rehber, çarşının bin yıl önce kurulduğunu anlattı ve ilk dükkânların hangi köşelerde açıldığını tek tek gösterdi. Buna rağmen dükkânlar hâlâ açıktı ve dar sokaklar insanlarla doluydu. Bazı tezgâhların başında mesleği dedesinin dedesinden devralan esnaflar duruyordu. Çarşının girişindeki kapı o kadar eskimişti ki menteşeleri her açılışta uzun uzun gıcırdıyordu. Kadim çarşının havası, bizi sanki başka bir çağa götürmüştü.\n\nMetinde geçen “kadim” sözcüğü yerine aşağıdakilerden hangisi getirilirse anlam değişmez?",
+  "siklar": {
+   "A": "Çok kalabalık",
+   "B": "Çok eski",
+   "C": "Çok büyük",
+   "D": "Çok ünlü"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Sözcüğün geçtiği cümlelerde zamanla ilgili anlatılan ayrıntılara bak.",
+  "cozum_adimlari": [
+   "Metinde yosunların yüzyılların yağmurunu gördüğü, çarşının bin yıl önce kurulduğu ve kapının eskidiği söylenir.",
+   "Bu ayrıntıların hepsi çarşının çok eski olduğunu gösterir.",
+   "“Kadim” sözcüğü bu bağlamda “çok eski” anlamına gelir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sokakların insanlarla dolu olması kalabalık anlamını çağrıştırır ama sözcüğün anlamı zamanla ilgilidir.",
+   "C": "Çarşının tanıtılması büyüklük düşüncesi uyandırır ama metinde boyuta dair bir ayrıntı yoktur.",
+   "D": "Rehberin çarşıyı anlatması ünlü olma düşüncesini çağrıştırır ama metin bunu belirtmez."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-003",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.5",
+  "surec_bileseni": "",
+  "konu": "Okuma",
+  "alt_konu": "Yüzey anlam",
+  "soru_metni": "Okulumuzun arka bahçesi yıllardır kullanılmayan boş bir alandı. Geçen ay fen bilimleri öğretmenimiz burayı sebze bahçesine dönüştürmeyi önerdi. Önce öğrenciler toprağı kazıp taşları ayıkladı. Ardından sınıflar sırayla domates fidesi dikti. Fideler dikildikten sonra bahçeyi sulama işi her sabah bir sınıfa verildi. Öğretmenimiz her hafta bahçeye gelerek öğrencilerin çalışmasını denetledi. Bazı sınıflar bahçenin kenarına küçük bir tabela da astı. Bu tabelaya sınıfın adı ve diktikleri sebzenin ismi yazıldı. Bir ay sonra fideler boy verdi ve yapraklar çoğaldı. Şimdi hepimiz hasat zamanını sabırsızlıkla bekliyoruz.\n\nMetne göre öğrenciler fideleri dikmeden önce ne yapmıştır?",
+  "siklar": {
+   "A": "Sulama işini sınıflar arasında paylaştırmışlardır.",
+   "B": "Tohumları küçük saksılarda çimlendirmişlerdir.",
+   "C": "Toprağı eşeleyerek taşlardan temizlemişlerdir.",
+   "D": "Hasat için tarih belirleyip duyurmuşlardır."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Olayların sırasını gösteren sözcüklere dikkat et.",
+  "cozum_adimlari": [
+   "Metinde önce toprağın kazılıp taşların ayıklandığı, ardından fidelerin dikildiği belirtilir.",
+   "Sulama görevinin verilmesi fideler dikildikten sonra gerçekleşir.",
+   "Tohum çimlendirme ve hasat tarihi belirleme metinde geçmez.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sulama görevini, olayların sırasını karıştırarak dikimden önceye yerleştirme.",
+   "B": "Domates bitkisinden yola çıkıp tohum ekimini metinde anlatılmış sanma.",
+   "D": "Metnin sonundaki hasat beklentisini yapılmış bir hazırlık sayma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-004",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.7",
+  "surec_bileseni": "",
+  "konu": "Okuma",
+  "alt_konu": "Basit çıkarım",
+  "soru_metni": "Sınıfın en sessiz öğrencisi Deniz, derslerde çoğunlukla başını önüne eğer ve defterine bakardı. Öğretmen soru sorduğunda arkadaşları hemen parmak kaldırır, Deniz ise sessizce beklerdi. Bugün ise farklıydı. Öğretmen sorusunu sorduktan sonra Deniz ellerini sıranın altında birkaç kez sıktı, sonra elini yavaşça havaya kaldırdı. Öğretmen şaşırarak ona söz verdi. Deniz titreyen bir sesle cevabı söyledi. Sınıf bir an sustu, ardından herkes alkışladı. Deniz oturduğunda yanakları kızarmıştı ama yüzünde geniş bir gülümseme vardı.\n\nBu metinden Deniz’le ilgili aşağıdakilerden hangisi çıkarılabilir?",
+  "siklar": {
+   "A": "Derslerde sürekli başarısız olan biridir.",
+   "B": "Öğretmeniyle iletişimi kopuk biridir.",
+   "C": "Arkadaşları tarafından dışlanan biridir.",
+   "D": "Sınıfta söz almaktan çekinen biridir."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Kahramanın davranışlarındaki küçük ayrıntılar duygusunu yansıtır.",
+  "cozum_adimlari": [
+   "Deniz’in sessiz biri olduğu, elini kaldırmadan önce ellerini sıktığı ve sesinin titrediği anlatılır.",
+   "Öğretmenin şaşırması, bunun alışılmış bir davranış olmadığını gösterir.",
+   "Bu ayrıntılardan Deniz’in sınıfta söz almaktan çekindiği çıkarılır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sessizliği başarısızlıkla ilişkilendirme.",
+   "B": "Öğretmenin şaşırmasını aralarındaki iletişim sorunu sanma.",
+   "C": "Sessiz olmayı arkadaşlarından uzak kalmak diye yorumlama."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-005",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.8",
+  "surec_bileseni": "",
+  "konu": "Okuma",
+  "alt_konu": "Üst düzey çıkarım",
+  "soru_metni": "Köyün yaşlı taş ustası Hasan, genç çırağına her sabah aynı işi verirdi: dükkânın önünü süpürmek. Çırak aylar geçtikçe sıkıldı ve bir gün bu işin ne işe yaradığını sormak istedi. Usta cevap vermedi, yalnızca onu pazar yerine gönderdi. Çırak pazarda, ustasının yıllar önce döşediği kaldırımın hâlâ sapasağlam durduğunu gördü. Hemen yanındaki yeni yolun ise çoktan çöktüğünü fark etti. Dükkâna dönerken adımları yavaşladı. Usta, çırağın geldiğini görünce yalnızca gülümsedi. O akşam süpürgeyi eline aldığında ustasına tek soru yöneltmedi.\n\nÇırağın o akşam ustasına soru sormaktan vazgeçmesinin nedeni aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Sıkıldığı işin gerekli olmadığına karar vermiştir.",
+   "B": "Ustasından başka bir işe geçmek için izin istemeyi düşünmüştür.",
+   "C": "Ustasının sessizliğini bir kızgınlık işareti saymıştır.",
+   "D": "Sıradan görünen işlerin de değer taşıdığını anlamıştır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Çırağın pazarda gördükleriyle süpürme işi arasındaki ilişkiyi düşün.",
+  "cozum_adimlari": [
+   "Çırak, ustasının döşediği kaldırımın sağlam, yeni yolun ise çökmüş olduğunu görür.",
+   "Bu durum, özenle yapılan işin kalıcı olduğunu gösterir ve çırağa süpürme gibi sıradan işlerin de değerini düşündürür.",
+   "Dükkâna dönerken adımlarının yavaşlaması ve sorusunu sormaması, bu sonucu kavradığını gösterir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çırağın başlangıçtaki sıkıntısını sonuna kadar süren bir düşünce sanma.",
+   "B": "Çırağın sıkılmasından hareketle işten ayrılmak istediği sonucuna varma.",
+   "C": "Ustanın cevap vermemesini küskünlük olarak yorumlama."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-006",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.9",
+  "surec_bileseni": "",
+  "konu": "Okuma",
+  "alt_konu": "Metinleri karşılaştırma",
+  "soru_metni": "Metin 1: Ben kâğıt kitabı severim. Sayfaları çevirirken parmaklarımda hissettiğim doku bana huzur verir. Üstelik uzun süre okusam da gözlerim ekran ışığından yorulmaz. Mürekkep kokusu bile okumanın bir parçasıdır. Yine de hangi kitabı okursam okuyayım, her gün mutlaka yarım saatimi ona ayırırım.\n\nMetin 2: Ben ise elektronik kitabı tercih ederim. Çantamda tek bir cihazla yüzlerce kitap taşırım. Yazı boyutunu gözüme göre ayarlayabilirim. Ayrıca otobüste ya da kuyrukta bile okumayı sürdürebilirim. Kitap hangi biçimde olursa olsun, önemli olan okumayı günlük bir düzen hâline getirmektir.\n\nBu iki metnin ortak yönü aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Basılı kitabın gözü daha az yorduğu",
+   "B": "Taşıma kolaylığının tercihi belirlediği",
+   "C": "Okumanın günlük bir düzen olması gerektiği",
+   "D": "Kitap türünün okuma zevkini belirlediği"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yalnızca bir metinde geçen düşüncelerle ikisinde de bulunan düşünceyi ayır.",
+  "cozum_adimlari": [
+   "Birinci metin yalnızca basılı kitabın göz yormadığını, ikinci metin yalnızca taşıma kolaylığını vurgular.",
+   "İlk yazar her gün yarım saat ayırdığını, ikinci yazar da okumayı günlük bir düzen hâline getirmenin önemini söyler.",
+   "Ortak düşünce, okumanın günlük bir alışkanlık olması gerektiğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yalnızca birinci metinde geçen düşünceyi ortak sanma.",
+   "B": "Yalnızca ikinci metinde geçen düşünceyi ortak sanma.",
+   "D": "Her iki metinde geçen “hangi kitap, hangi biçim” ifadesini tür belirleyiciliği olarak yorumlama."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "paragraf",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-007",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.11",
+  "surec_bileseni": "",
+  "konu": "Okuma",
+  "alt_konu": "Metni yorumlama",
+  "soru_metni": "Okulumuzda teneffüs tercihlerini öğrenmek için bir anket yapıldı. Ankete katılan 120 öğrencinin 78’i teneffüste bahçede vakit geçirmeyi seçti. Otuz öğrenci kantinde oturmayı, geriye kalan on iki öğrenci ise sınıfta kalmayı tercih etti. Öğrenciler bahçede en çok top oyunlarını ve ip atlamayı sevdiklerini söyledi. Okul yönetimi, yeni binanın inşaatı nedeniyle bahçenin yarısının önümüzdeki dönem kapalı kalacağını duyurdu. Bu karar öğrenciler arasında çeşitli tepkilere yol açtı. Öğrencilerin bir kısmı çözüm olarak teneffüs saatlerinin sınıflara göre ayrılmasını önerdi.\n\nMetindeki bilgilere dayanarak aşağıdaki yorumlardan hangisi yapılabilir?",
+  "siklar": {
+   "A": "Kantinin kapanması öğrencilerin çoğunu etkiler.",
+   "B": "Bahçenin daralması öğrencilerin büyük bölümünü etkiler.",
+   "C": "Sınıfta kalanlar derse en çok ilgi duyanlardır.",
+   "D": "Teneffüs uzarsa bütün öğrenciler bahçeye çıkar."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Sayısal bilgileri karşılaştırıp hangi duruma dayanak olduğuna bak.",
+  "cozum_adimlari": [
+   "Öğrencilerin 78’i bahçeyi seçmiştir ve bu sayı 120’nin yarısından fazladır.",
+   "Bahçenin yarısının kapanması bu öğrencilerin çoğunu etkiler.",
+   "Kantin tercihi 30 öğrenciyle sınırlıdır, ilgi düzeyi ve teneffüs süresi hakkında bilgi yoktur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kantin ile bahçe tercihlerinin oranlarını birbirine karıştırma.",
+   "C": "Sınıfta kalmayı derse ilgiyle ilişkilendirme.",
+   "D": "Metinde olmayan bir koşulu kesin sonuç sayma."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-008",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.12",
+  "surec_bileseni": "",
+  "konu": "Öyküleyici metin",
+  "alt_konu": "Mekân unsuru",
+  "soru_metni": "Karanlık basarken Sinan vapurun üst güvertesine çıktı. İskelede bekleyen annesine uzaktan el salladı, sonra elini korkulukların soğuk demirine dayadı. Rüzgâr yüzüne tuzlu bir serinlik bırakıyordu. Martılar geminin arkasından çığlık çığlığa uçuyor, dalgalar köpürerek kıyıya geri dönüyordu. Gemi motorunun uğultusu, yolcuların konuşmalarını yarı yarıya bastırıyordu. Cebinden küçük defterini çıkardı ve ışıkları yanmaya başlayan şehre bakarak not almaya koyuldu. Sinan, yazdığı satırları arada bir yüksek sesle okuyup yeniden düzeltiyordu. Yanında oturan yaşlı bir adam ona gülümseyip denize doğru baktı.\n\nBu metinde olay aşağıdaki yerlerden hangisinde geçmektedir?",
+  "siklar": {
+   "A": "Yolcu gemisinin üst kısmı",
+   "B": "İskeledeki bekleme salonu",
+   "C": "Sahildeki yürüyüş yolu",
+   "D": "Balıkçı teknesinin kamarası"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Kahramanın bulunduğu yeri gösteren ayrıntıları, olayın başladığı andan itibaren izle.",
+  "cozum_adimlari": [
+   "Sinan vapurun üst bölümüne çıkar, korkuluklara dayanır ve gemi motorunun sesi duyulur.",
+   "Annesi iskelede bekler ama Sinan iskelede değildir.",
+   "Olay yolcu gemisinin üst kısmında geçer.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "İskelede bekleyen annenin anılmasından yola çıkıp olayı iskeleye taşıma.",
+   "C": "Kıyı, martı ve şehir ayrıntılarını sahilde geçen bir olay sanma.",
+   "D": "Deniz ve martı çağrışımıyla küçük bir tekne düşünme."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-009",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.12",
+  "surec_bileseni": "",
+  "konu": "Öyküleyici metin",
+  "alt_konu": "Çatışma",
+  "soru_metni": "Yarışmaya yalnızca iki gün kalmıştı. Yaren, resmini tamamlamak için en çok ihtiyaç duyduğu mavi boyayı çantasında aradı ama bulamadı. Dün gittiği kırtasiye de kapalıydı. Komşusu Elif’ten isteyebileceğini düşündü, ancak onunla birkaç gündür küs olduğunu hatırladı. Akşam boyunca odasında bir aşağı bir yukarı dolaştı. Resim, tüm renkleriyle masanın üstünde hazır bekliyordu, yalnızca gökyüzü eksikti. Annesi onun bu hâlini fark etti ama karışmadı. Sonunda gururunu bir kenara bırakıp komşunun kapısını çalmaya karar verdi.\n\nBu öyküde Yaren’in yaşadığı iç çatışma aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Gururu ile ihtiyacı arasında kalması",
+   "B": "Yarışmaya girmekten vazgeçmeyi ciddi biçimde düşünmesi",
+   "C": "Kırtasiyeye bir kez daha gitmekten çekinmesi",
+   "D": "Resmin konusunu baştan değiştirmeyi planlaması"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Kahramanın isteği ile duygusu arasındaki gerilimi düşün.",
+  "cozum_adimlari": [
+   "Yaren’in mavi boyaya ihtiyacı vardır ve boyayı ancak küs olduğu Elif’ten isteyebilir.",
+   "Elif’le küs olması, yardım istemesini zorlaştırır.",
+   "Sonunda gururunu bir kenara bırakması, çatışmanın gurur ile ihtiyaç arasında olduğunu gösterir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Yarışmaya kısa süre kalmasını vazgeçme isteğiyle karıştırma.",
+   "C": "Kapalı kırtasiyeyi asıl sorun sanma.",
+   "D": "Gökyüzünün eksik kalmasını konu değişikliğine yorma."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-010",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.13",
+  "surec_bileseni": "",
+  "konu": "Bilgilendirici metin",
+  "alt_konu": "Neden-sonuç yapısı",
+  "soru_metni": "Buzulların erimesi doğayı birçok yönden etkiler. Kutuplardaki buzulların erimesi deniz seviyesini yükseltir ve kıyıdaki şehirleri tehdit eder. Dağlardaki buzulların erimesi ise başka bir sorunu beraberinde getirir. Bu buzullar, kurak mevsimlerde akarsuları besleyen en önemli kaynaklardan biridir. Buzullar küçüldükçe nehirlere ulaşan su miktarı azalır ve tarım yapmak zorlaşır. Kutup hayvanları da erime yüzünden yaşam alanlarını yitirmektedir. Bilim insanları, bu değişimi izlemek için uydu görüntülerinden yararlanıyor. Sorunların çoğu, küresel ısınmanın hız kazanmasından kaynaklanıyor.\n\nMetne göre dağlardaki buzulların erimesinin sonucu aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Kıyı şehirlerinin su altında kalması",
+   "B": "Akarsulara akan suyun azalması",
+   "C": "Kutup hayvanlarının yuvalarını kaybetmesi",
+   "D": "Deniz suyunun tuz oranının artması"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Soruda geçen buzul türünün hangi cümlelerde anlatıldığına dikkat et.",
+  "cozum_adimlari": [
+   "Metin, kutuplardaki ve dağlardaki buzulların erimesinin sonuçlarını ayrı ayrı verir.",
+   "Kıyı şehirleri ve kutup hayvanları kutuplardaki erimeyle ilgilidir.",
+   "Dağlardaki buzulların erimesi, nehirlere ulaşan su miktarını azaltır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kutuplardaki erimenin sonucunu dağ buzullarına aktarma.",
+   "C": "Kutup hayvanlarına dair cümleyi dağ buzullarının sonucu sanma.",
+   "D": "Deniz ve buzul çağrışımıyla metinde olmayan bir sonuç ekleme."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-011",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.14",
+  "surec_bileseni": "",
+  "konu": "Bilgilendirici metin",
+  "alt_konu": "Anahtar kelimeler",
+  "soru_metni": "Her gün evlerimizde çok sayıda atık oluşur. Kâğıt, cam ve plastik gibi atıklar doğada uzun yıllar yok olmadan kalabilir. Geri dönüşüm, bu atıkların yeniden işlenerek kullanılabilir hâle getirilmesidir. Bir ton kâğıdın geri dönüştürülmesi, birçok ağacın kesilmesini önler. Böylece doğal kaynaklar daha uzun süre korunur. Atıkları ayrı kutularda biriktirmek bu sürecin ilk adımıdır. Ayrıştırılan atıklar, özel tesislerde işlenerek yeniden üretime katılır. Okullarda ve apartmanlarda kurulan toplama noktaları bu işi kolaylaştırır. Her kişinin bu sürece katkısı, çevreyi korumak için önemlidir.\n\nBu metnin anahtar kelimeleri aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "kâğıt, ağaç, ayrı kutu",
+   "B": "ev, doğa, plastik şişe",
+   "C": "atık, geri dönüşüm, kaynak",
+   "D": "cam, plastik, işlenmiş ürün"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Metnin tamamında konuyu taşıyan ve en çok yinelenen kavramları ara.",
+  "cozum_adimlari": [
+   "Metin atıkların oluşumunu, geri dönüşümü ve doğal kaynakların korunmasını anlatır.",
+   "Kâğıt, ağaç, cam ve plastik yalnızca verilen örneklerdir, metnin ana kavramları değildir.",
+   "Metnin konusunu taşıyan kavramlar atık, geri dönüşüm ve kaynaktır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Metinde sık geçen örnek sözcükleri anahtar kelime sanma.",
+   "B": "Metnin başında geçen genel sözcükleri konunun anahtarı sayma.",
+   "D": "Atık türlerini sıralayan örnekleri ana kavram yerine koyma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-012",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.16",
+  "surec_bileseni": "",
+  "konu": "Şiir",
+  "alt_konu": "Uyak düzeni",
+  "soru_metni": "Bahar Şiiri\n\nÇözülünce karlar, uyanır bahar,\nDallarda tomurcuk, kırlarda gül,\nGönlümde bir umut ışığı var,\nYollarda çocuklar, dalda bülbül.\n\nKarşıda uzanır yeşil dağ,\nÇocuklar koşar yol yol,\nEteğinde sarı bir bağ,\nÇiçek tutar her bir kol.\n\nAkşam iner, hava serin,\nYıldızlar yanar yamaçta,\nKöy uyur, gece derin,\nRüzgâr eser ağaçta.\n\nBu şiirdeki dörtlüklerin uyak düzeni aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "aabb",
+   "B": "abba",
+   "C": "aaaa",
+   "D": "abab"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Her dörtlükte dize sonlarındaki sesleri sırayla karşılaştır.",
+  "cozum_adimlari": [
+   "İlk dörtlükte dize sonları bahar, gül, var, bülbül olur.",
+   "Birinci dize üçüncüyle, ikinci dize dördüncüyle uyaklıdır.",
+   "Diğer dörtlüklerde de dağ-bağ, yol-kol ve serin-derin, yamaçta-ağaçta uyakları aynı sırayla gelir, düzen abab’dır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Dizeleri ikişer ikişer eşleştirerek ardışık uyak düşünme.",
+   "B": "Dizeleri sarmal uyak düzeniyle karıştırma.",
+   "C": "Bütün dize sonlarını aynı sesle bitiyor sanma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-013",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.17",
+  "surec_bileseni": "",
+  "konu": "Bilgilendirici metin",
+  "alt_konu": "Düşünceyi geliştirme yolları",
+  "soru_metni": "Okuma alışkanlığı konusunda okulumuzda yapılan bir araştırma dikkat çekici sonuçlar verdi. Araştırmaya katılan 200 öğrencinin 140’ı hafta sonları en az bir saat kitap okuduğunu söyledi. Başka bir deyişle, öğrencilerin yüzde yetmişi hafta sonunu okuyarak değerlendiriyor. Öğrencilerin 60’ı ise bu süreyi telefon ve tabletle geçirdiğini belirtti. Araştırma, kitap okumanın hafta sonu etkinlikleri arasında hâlâ önemli bir yere sahip olduğunu gösteriyor. Kütüphane görevlileri, bu sonuçların okulun kitap kampanyasından olumlu etkilendiğini düşünüyor. Araştırma, gelecek yıl daha geniş bir katılımla yinelenecek.\n\nBu metinde düşünceyi geliştirmek için aşağıdaki yollardan hangisine başvurulmuştur?",
+  "siklar": {
+   "A": "Örnek verme",
+   "B": "Tanım yapma",
+   "C": "Tanık gösterme",
+   "D": "Sayısal veri kullanma"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Metinde ne tür bilgilerin düşünceyi desteklediğine bak.",
+  "cozum_adimlari": [
+   "Metinde 200 öğrenci, 140 öğrenci ve yüzde yetmiş gibi sayısal bilgiler yer alır.",
+   "Bu sayılar, kitap okumanın hâlâ önemli olduğu düşüncesini desteklemek için kullanılır.",
+   "Başvurulan yol sayısal verilerden yararlanmadır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Araştırma sonuçlarını bir örnek anlatımı sanma.",
+   "B": "“Başka bir deyişle” ifadesini tanım yapma saymak.",
+   "C": "Kütüphane görevlilerinin görüşünü tanık gösterme sanma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-014",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.18",
+  "surec_bileseni": "",
+  "konu": "Söz sanatları",
+  "alt_konu": "Abartma",
+  "soru_metni": "Hasan Amca’nın bahçesindeki kabaklar o kadar büyüktü ki bir tanesi bütün köyü doyurur, kabuğu ise kocaman bir evin yerini tutardı. Komşular kabakları ilk gördüklerinde gözlerine inanamadılar. Hasan Amca ise gülümseyerek her sabah bahçesini suluyor, yaprakları tek tek ayıklıyordu. Kabaklar hasat zamanı gelince arabalara sığmadığı için köylüler birlikte çalışıp onları kasabaya taşıdı. Kasabadaki pazarcılar bu manzara karşısında şaşkınlıkla birbirlerine baktı. Hasan Amca, çocuklara kabakların nasıl yetiştirildiğini sabırla anlattı.\n\nMetnin ilk cümlesinde aşağıdaki söz sanatlarından hangisi kullanılmıştır?",
+  "siklar": {
+   "A": "Kişileştirme",
+   "B": "Benzetme",
+   "C": "Abartma",
+   "D": "Karşıtlık"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Bir nesnenin özelliğinin gerçekte olamayacak kadar büyütülüp büyütülmediğine bak.",
+  "cozum_adimlari": [
+   "İlk cümlede bir kabağın bütün köyü doyurması ve kabuğunun ev yerine geçmesi anlatılır.",
+   "Bu durum gerçekte olamaz, özellik gereğinden fazla büyütülmüştür.",
+   "Özelliği olduğundan fazla gösteren söz sanatı abartmadır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kabakların eve benzetilmesini insan özelliği verilmesi sanma.",
+   "B": "Kabuğun evin yerini tutmasını benzetme sanatı sayma.",
+   "D": "Büyük ve küçük gibi iki zıt kavram görmeden karşıtlık düşünme."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-015",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.19",
+  "surec_bileseni": "",
+  "konu": "İkna teknikleri",
+  "alt_konu": "Uzman görüşüne başvurma",
+  "soru_metni": "Sağlıklı bir yaşam için günlük beslenme alışkanlıklarımız çok önemlidir. Diyetisyenlerin büyük çoğunluğu, öğün atlamanın bedene zarar verdiğini söylüyor. Uzman bir beslenme danışmanı da kahvaltının güne enerjiyle başlamayı sağladığını vurguluyor. Uzmanların ortak görüşü, dengeli bir kahvaltının gün boyu dikkati artırdığı yönündedir. Okul çağındaki çocukların büyümesi için de sabah öğünü ayrı bir önem taşıyor. Güne yumurta, peynir ve tam tahıllı ekmekle başlamak güzel bir seçimdir. Bu nedenle siz de her sabah mutlaka kahvaltı yapın.\n\nBu metinde okuru ikna etmek için hangi tekniğe başvurulmuştur?",
+  "siklar": {
+   "A": "Korku uyandırma",
+   "B": "Uzman görüşünden yararlanma",
+   "C": "Ünlü kişileri örnek gösterme",
+   "D": "Çocuklara doğrudan seslenme"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Metinde görüşleri aktarılan kişilerin hangi özelliği öne çıkarılıyor, ona bak.",
+  "cozum_adimlari": [
+   "Metinde diyetisyenlerin ve bir beslenme danışmanının görüşlerine yer verilir.",
+   "Bu kişiler alanında bilgili oldukları için görüşleri güvenilir kabul edilir.",
+   "Okuru kahvaltı yapmaya ikna etmek için uzman görüşünden yararlanılmıştır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Öğün atlamanın zararlarının anılmasını korkutma sanma.",
+   "C": "Görüşü aktarılan kişileri ünlü saymak.",
+   "D": "Çocukların büyümesinden söz edilmesini çocuklara hitap sanma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-016",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.20",
+  "surec_bileseni": "",
+  "konu": "Söz varlığı",
+  "alt_konu": "Deyimler",
+  "soru_metni": "Kemal’in sınavına bir hafta kalmıştı. Annesi her akşam ona ders çalışması gerektiğini hatırlatıyor, o ise bilgisayarın başından kalkmıyordu. Babası da sınavın önemini defalarca anlattı. Arkadaşları ona birlikte çalışmayı teklif etmişti. Kemal ise bu uyarıları kulak ardı etti ve her seferinde bir sonraki güne erteledi. Sınav günü soruları okurken hiçbir konuyu iyi hatırlayamadığını fark etti. Çıkışta başını önüne eğdi ve ailesinin haklı olduğunu kendi kendine itiraf etti.\n\nMetinde geçen “kulak ardı etti” sözü aşağıdakilerden hangisiyle anlamca en yakındır?",
+  "siklar": {
+   "A": "Dikkate almadı",
+   "B": "Dikkatle dinledi",
+   "C": "Hemen uyguladı",
+   "D": "Not alarak izledi"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Kemal’in uyarılara karşı davranışının sonuçlarını düşün.",
+  "cozum_adimlari": [
+   "Kemal çalışması gerektiği uyarılarına rağmen bilgisayar başında kalır ve çalışmayı erteler.",
+   "Sınavda konuları hatırlayamaması ve ailesini haklı bulması, uyarıları önemsemediğini gösterir.",
+   "“Kulak ardı etmek” dikkate almamak anlamındadır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Uyarıların metinde anılmasından dinleme eylemi çıkarma.",
+   "C": "Annesi ve babasının uyarılarının sonucunu uygulama diye yorumlama.",
+   "D": "Arkadaşlarının teklifinden yola çıkıp ders izleme düşünme."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-017",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.7.7",
+  "surec_bileseni": "",
+  "konu": "Yazma",
+  "alt_konu": "Karşılaştırma yapma",
+  "soru_metni": "Bir öğrenci, kitap okumak ile film izlemeyi karşılaştıran bir paragraf yazıyor.\n\nBu paragrafa aşağıdaki cümlelerden hangisini eklerse iki etkinliği karşılaştırmış olur?",
+  "siklar": {
+   "A": "Kitapta olaylar zihinde canlanır, filmde ise görüntü hazır gelir.",
+   "B": "Kitap okumak, uzun süre sakin kalmayı gerektiren bir etkinliktir.",
+   "C": "Film izlemek, birçok insanın boş zamanlarında yaptığı bir etkinliktir.",
+   "D": "İyi bir kitap ya da film insana yeni bakış açıları kazandırır."
+  },
+  "dogru_sik": "A",
+  "ipucu": "İki etkinliği aynı cümlede ele alıp farkını gösteren ifadeyi ara.",
+  "cozum_adimlari": [
+   "Karşılaştırma, iki şeyin benzer ya da farklı yönlerini birlikte ele almayı gerektirir.",
+   "B ve C cümleleri yalnızca birer etkinlikten söz eder.",
+   "D cümlesi ikisini anar ama farkı ya da benzerliği göstermez, A cümlesi ise iki etkinliğin farkını karşılıklı verir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Yalnızca kitap okumayı anlatan cümleyi uygun sanma.",
+   "C": "Yalnızca film izlemeyi anlatan cümleyi uygun sanma.",
+   "D": "İki etkinliğin adının geçmesini karşılaştırma yapıldığı diye yorumlama."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-018",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.7.8",
+  "surec_bileseni": "",
+  "konu": "Yazma",
+  "alt_konu": "Sınıflandırma yapma",
+  "soru_metni": "Bir öğrenci, okul kütüphanesindeki kitapları gruplandıran bir yazı yazıyor.\n\nAşağıdaki cümlelerden hangisi yazıda sınıflandırma yapıldığını gösterir?",
+  "siklar": {
+   "A": "Raflardaki kitapları yılda bir kez sayıp yeniden düzenliyoruz.",
+   "B": "Kitaplar türüne göre roman, şiir ve bilgi kitabı diye gruplanır.",
+   "C": "Kütüphane hafta içi sabah sekizde açılır, akşam beşte kapanır.",
+   "D": "Roman kitapları öğrencilerin en çok ilgi gösterdiği kitaplardır."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir ölçüte göre ayrılan gruplar ve adları olan cümleyi ara.",
+  "cozum_adimlari": [
+   "Sınıflandırma, nesneleri ortak özelliklerine göre gruplara ayırıp adlandırmaktır.",
+   "B cümlesi kitapları türüne göre üç gruba ayırır.",
+   "Diğer cümleler düzenleme, çalışma saati ve ilgi bilgisi verir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kitapların düzenlenmesini gruplama sanma.",
+   "C": "Kütüphaneyle ilgili her bilgiyi yazıya uygun görme.",
+   "D": "Tek bir türden söz edilmesini sınıflandırma saymak."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-019",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.7.15",
+  "surec_bileseni": "",
+  "konu": "Yazma",
+  "alt_konu": "Düşünceyi örnekle geliştirme",
+  "soru_metni": "Bir öğrenci, paragrafına “Düzenli uyku, öğrenmeyi kolaylaştırır.” cümlesiyle başlıyor ve düşüncesini bir örnekle geliştirmek istiyor.\n\nBu cümleden sonra aşağıdakilerden hangisini yazması uygun olur?",
+  "siklar": {
+   "A": "Uykusuzluk, insanı hem dalgın hem sinirli yapan bir durumdur.",
+   "B": "Çocukların uyku saatleri yaşlarına göre bazı farklılıklar gösterir.",
+   "C": "Örneğin düzenli uyuyan Elif, çalıştıklarını sınavda kolayca hatırladı.",
+   "D": "Uyumak, canlıların dinlenmesini sağlayan doğal bir ihtiyaçtır."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Düşünceyi somut bir kişi ya da olayla destekleyen cümleyi ara.",
+  "cozum_adimlari": [
+   "Düşünceyi örnekle geliştirmek, ana düşünceyi somut bir olay veya kişiyle göstermek demektir.",
+   "C cümlesi düzenli uyuyan bir öğrencinin sınavdaki başarısını örnek verir.",
+   "A açıklama yapar, B ve D ise ana düşünceyle doğrudan ilgili somut örnek sunmaz.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Uykusuzluğun etkilerini anlatan genel açıklamayı örnek sanma.",
+   "B": "Uyku konusunu içeren her cümleyi uygun görme.",
+   "D": "Konuyla ilgili genel bir bilgiyi örnek sayma."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-020",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.7.16",
+  "surec_bileseni": "",
+  "konu": "Yazma",
+  "alt_konu": "Söz varlığıyla anlatımı zenginleştirme",
+  "soru_metni": "Bir öğrenci, yazısındaki “Yağmur çok yağıyordu.” cümlesini söz varlığından yararlanarak daha etkileyici hâle getirmek istiyor.\n\nBu amaçla aşağıdakilerden hangisini yazması uygundur?",
+  "siklar": {
+   "A": "Yağmur dün de çok yağdı, bugün de yağıyor.",
+   "B": "Yağmur çok çok yağıyordu, hem de pek çok.",
+   "C": "Yağmur oldukça fazla ve aşırı yağıyordu.",
+   "D": "Yağmur sanki gökyüzü boşalıyormuş gibi yağıyordu."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Anlatımı güçlendirmek için yeni bir anlam ya da imge katan cümleyi ara.",
+  "cozum_adimlari": [
+   "Söz varlığıyla zenginleştirmek, aynı anlamı tekrar etmek yerine imge ve etkili sözcükler kullanmaktır.",
+   "D cümlesi yağmurun şiddetini benzetmeyle canlı biçimde anlatır.",
+   "A başka bir bilgi ekler, B ve C ise aynı anlamı yinelemekten öteye geçmez.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Cümleyi uzatmayı zenginleştirme sayma.",
+   "B": "Sözcük tekrarını vurgulama sanma.",
+   "C": "Eş anlamlı sözcük ekleyerek anlatımı etkili sanma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-021",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.7.17",
+  "surec_bileseni": "",
+  "konu": "Yazma",
+  "alt_konu": "Açık ve örtük anlatım",
+  "soru_metni": "Bir öğrenci, arkadaşının geç kaldığını doğrudan söylemeden anlatmak istiyor.\n\nBunun için aşağıdaki cümlelerden hangisini kullanmalıdır?",
+  "siklar": {
+   "A": "Arkadaşım randevuya kırk dakika geç geldi.",
+   "B": "Arkadaşım geç kaldığı için çok sinirlendim.",
+   "C": "Arkadaşım yine geç kalacak, bunu biliyordum.",
+   "D": "Fincanlardaki kahveler çoktan soğumuş, kapıyı gözlüyordum."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Geç kalma bilgisinin cümlede açıkça söylenmeyip ayrıntılarla sezdirildiği seçeneği ara.",
+  "cozum_adimlari": [
+   "Örtük anlatımda düşünce doğrudan söylenmez, ayrıntılardan çıkarılır.",
+   "A, B ve C cümleleri geç kalmayı açıkça söyler.",
+   "D cümlesi soğumuş kahveleri ve kapıya bakmayı anlatarak geç kalmayı sezdirir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Süreyi belirtmeyi örtük anlatım sanma.",
+   "B": "Duygunun söylenmesini dolaylı anlatım sayma.",
+   "C": "Tahmin cümlesini dolaylı ifade sanma."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-022",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.7.18",
+  "surec_bileseni": "",
+  "konu": "Yazma",
+  "alt_konu": "Bağlantı ifadeleri",
+  "soru_metni": "Dün gece boyunca yoğun kar yağdı ve ana yollar ulaşıma kapandı. Belediye ekipleri sabaha kadar çalıştı. ........ okul açıktı ve öğrencilerin çoğu derse geldi.\n\nParagraftaki boşluğa aşağıdaki bağlantı ifadelerinden hangisi getirilmelidir?",
+  "siklar": {
+   "A": "Bu nedenle",
+   "B": "Ayrıca",
+   "C": "Buna rağmen",
+   "D": "Örneğin"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Boşluktan önceki durumun, sonraki cümleyle nasıl bir ilişki kurduğuna bak.",
+  "cozum_adimlari": [
+   "Önceki cümlelerde kar yüzünden yolların kapandığı anlatılır.",
+   "Sonraki cümlede buna karşın okulun açık olduğu ve öğrencilerin geldiği söylenir.",
+   "İki durum arasında karşıtlık vardır, bu nedenle “Buna rağmen” uygundur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kar ve kapalı yollar nedeniyle bir sonuç beklenmesi.",
+   "B": "Cümlelerin ardı ardına gelmesinden ekleme ilişkisi çıkarma.",
+   "D": "Örnek bildirme ile karşıtlık bildirmeyi karıştırma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-023",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.7.18",
+  "surec_bileseni": "",
+  "konu": "Yazma",
+  "alt_konu": "Bağlantı ifadeleri",
+  "soru_metni": "Ali sınava çok iyi hazırlanmıştı. ........ heyecanı yüzünden ilk soruyu yanlış okudu.\n\nParagraftaki boşluğa aşağıdaki bağlantı ifadelerinden hangisi getirilmelidir?",
+  "siklar": {
+   "A": "Bu yüzden",
+   "B": "Ancak",
+   "C": "Ayrıca",
+   "D": "Örneğin"
+  },
+  "dogru_sik": "B",
+  "ipucu": "İki cümlenin anlamının birbirine ters düşüp düşmediğine bak.",
+  "cozum_adimlari": [
+   "İlk cümlede Ali’nin iyi hazırlandığı söylenir.",
+   "İkinci cümlede heyecan yüzünden hata yaptığı belirtilir ve beklenenin tersi bir durum anlatılır.",
+   "Karşıtlık bildiren bağlantı ifadesi “Ancak”tır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Hazırlık ile hata arasında neden-sonuç ilişkisi kurma.",
+   "C": "İki cümlenin de Ali’yi anlatmasından ekleme ilişkisi çıkarma.",
+   "D": "İkinci cümleyi birincinin örneği sayma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-024",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.7.19",
+  "surec_bileseni": "",
+  "konu": "Yazım kuralları",
+  "alt_konu": "Bağlaç olan de/da",
+  "soru_metni": "Aşağıdaki cümlelerden hangisinin yazımı doğrudur?",
+  "siklar": {
+   "A": "Kardeşim de ben de sinemaya gideceğiz.",
+   "B": "Kardeşimde bende sinemaya gideceğiz.",
+   "C": "Kardeşim’de ben’de sinemaya gideceğiz.",
+   "D": "Kardeşimde ben de sinemaya gideceğiz."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bağlaç olan sözcüğün nasıl yazıldığını hatırla.",
+  "cozum_adimlari": [
+   "Bağlaç olan “de/da” kendinden önceki sözcükten ayrı yazılır.",
+   "Bağlaç olan “de/da” kesme işaretiyle ayrılmaz.",
+   "İki yerde de “de” ayrı yazılmış olan cümle A’dır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Bağlacı bulunma eki sanıp bitişik yazma.",
+   "C": "Bağlacı kesme işaretiyle ayırma.",
+   "D": "Birini ayrı, birini bitişik yazma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-026",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.5",
+  "surec_bileseni": "",
+  "konu": "Okuma",
+  "alt_konu": "Yüzey anlam",
+  "soru_metni": "Şehir müzesi bu hafta ziyaretçilere kapalı. Müdürlük, tavandaki ışıklandırma sisteminin yenilenmesi için çalışma başlattı. Çalışmalar yaklaşık on gün sürecek. Bu süre içinde sergilenen eserler özel kutularda saklanacak. Müze, kapalı kaldığı günlerde okullara çevrim içi tanıtım dosyaları gönderecek. Yeniden açıldığında ilk hafta giriş ücretsiz olacak. Müze görevlileri, ziyaretçilerin anlayışına teşekkür etti ve yeni düzeni merakla beklediklerini söyledi. Ziyaretçiler isterse müzenin internet sayfasından sanal bir gezi de yapabilecek.\n\nMetne göre müze bu hafta neden kapalıdır?",
+  "siklar": {
+   "A": "Eserlerin başka bir şehre taşınması",
+   "B": "Aydınlatma düzeninin yeniden kurulması",
+   "C": "Okullar için tanıtım dosyası hazırlanması",
+   "D": "Yeni bir sergi için salonların boşaltılması"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Kapanmanın gerekçesini bildiren cümleyi bul.",
+  "cozum_adimlari": [
+   "Metinde müdürlüğün ışıklandırma sisteminin yenilenmesi için çalışma başlattığı belirtilir.",
+   "Eserlerin kutularda saklanması ve tanıtım dosyaları çalışma sürerken yapılacak işlerdir.",
+   "Müzenin kapalı olma nedeni aydınlatma düzeninin yenilenmesidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Eserlerin kutularda saklanmasını taşınma sanma.",
+   "C": "Kapalı dönemde yapılacak işi kapanma nedeni sayma.",
+   "D": "Salonların boşaltılması fikrini eserlerin saklanmasından çıkarma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-027",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.7",
+  "surec_bileseni": "",
+  "konu": "Okuma",
+  "alt_konu": "Basit çıkarım",
+  "soru_metni": "Mahallemizdeki fırın, sabah altıdan önce kapısını açar. Fırıncı Cemal Usta o saatte tezgâhın başında olur ve önünde uzun bir sıra bulunur. Sıradakiler çoğunlukla omzunda çanta taşıyan, ceketinin yakasını kaldırmış insanlardır. Cemal Usta ekmekleri poşetlere koyarken fazla konuşmaz, yalnızca “Günaydın” der ve sıradakine döner. Saat yedi buçuğu geçince sıra kısalır ve usta nihayet bir bardak çay içebilir. Fırının camında asılı küçük bir not, akşam beşte kapanacaklarını bildirir. Mahalleli bu saatleri bilir ve ona göre davranır.\n\nBu metinden aşağıdakilerden hangisi çıkarılabilir?",
+  "siklar": {
+   "A": "Cemal Usta müşterileriyle uzun uzun sohbet eder.",
+   "B": "Fırın akşam saatlerinde en yoğun hâlini yaşar.",
+   "C": "Müşterilerin çoğu, güne erken başlayan insanlardır.",
+   "D": "Fırının önündeki sıra öğleye kadar uzar."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Sıradaki insanların özellikleri ve sıranın hangi saatte kısaldığı ayrıntılarını birleştir.",
+  "cozum_adimlari": [
+   "Fırının sabah altıdan önce açıldığı, sıradakilerin çanta taşıdığı ve sıranın yedi buçuktan sonra kısaldığı anlatılır.",
+   "Bu ayrıntılar, müşterilerin çoğunun işine ya da okuluna giderken ekmek aldığını gösterir.",
+   "Dolayısıyla müşteriler güne erken başlayan insanlardır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ustanın sıradakilere dönmesini sohbet sanma.",
+   "B": "Fırının akşam kapanmasını akşam yoğunluğu diye yorumlama.",
+   "D": "Sıranın uzunluğunu bütün sabaha yayma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-028",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.18",
+  "surec_bileseni": "",
+  "konu": "Söz sanatları",
+  "alt_konu": "Kişileştirme",
+  "soru_metni": "Sonbahar akşamı sokaktaki ağaçlar üzerlerindeki yaprakları sessizce yere bıraktı. Rüzgâr, kapıların önünde dolaşıp herkese kışın geldiğini fısıldadı. Eski çınar, yıllardır gördüğü her şeyi dallarıyla anlatmak ister gibi bekledi. Çocuklar sokağın başında sarı yaprakları toplayıp sepetlere doldurdu. Bakkal Mehmet Amca kapısının önüne iki kasa elma çıkardı. Karşı apartmanın penceresinden bir ses, eski bir türküyü mırıldanıyordu.\n\nMetindeki “Rüzgâr, kapıların önünde dolaşıp herkese kışın geldiğini fısıldadı.” cümlesinde hangi söz sanatı kullanılmıştır?",
+  "siklar": {
+   "A": "Abartma",
+   "B": "Benzetme",
+   "C": "Karşıtlık",
+   "D": "Kişileştirme"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Rüzgâra yüklenen eylemlere ve onları kimlerin yapabildiğine bak.",
+  "cozum_adimlari": [
+   "Cümlede rüzgâr dolaşır ve fısıldar.",
+   "Dolaşmak ve fısıldamak insana özgü davranışlardır.",
+   "İnsana özgü özelliklerin insan dışı varlığa verilmesi kişileştirmedir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğa olaylarının anlatımını abartı sanma.",
+   "B": "Bir şeyin başka bir şeye benzetildiğini düşünme.",
+   "C": "Kış ve sonbahar sözcüklerini zıt kavram saymak."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-029",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.19",
+  "surec_bileseni": "",
+  "konu": "İkna teknikleri",
+  "alt_konu": "Duygulara seslenme",
+  "soru_metni": "Ormanlar yok olursa torunlarınıza anlatacağınız bir doğa kalmayabilir. Bugün diktiğiniz bir fidan, yarın çocuklarınızın soluyacağı temiz havaya dönüşür. Sevdiklerinizin bir gün kuş sesi duymadan uyanacağını düşünmek bile insanın içini burkuyor. Her ağaç, bir yuvaya, bir gölgeye ve bir umuda sahip çıkmaktır. Şimdi harekete geçmezsek pişman olacağımız günler çok yakın. Gelin, birlikte bir fidan dikelim ve geleceğe bir sevgi bırakalım.\n\nBu metinde okuru ikna etmek için hangi tekniğe başvurulmuştur?",
+  "siklar": {
+   "A": "Uzman görüşünden yararlanma",
+   "B": "Sayısal verilerle destekleme",
+   "C": "Ünlü bir kişiyi örnek gösterme",
+   "D": "Duygulara seslenme"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Metnin okurda uyandırmaya çalıştığı duyguya dikkat et.",
+  "cozum_adimlari": [
+   "Metinde torunlar, çocuklar, kuş sesi, yuva ve umut gibi duygusal kavramlara yer verilir.",
+   "Pişmanlık ve sevgi vurgusu okurun duygularını harekete geçirir.",
+   "Metinde uzman görüşü, sayısal veri ve ünlü kişi yoktur, kullanılan teknik duygulara seslenmedir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğa konusunu bilimsel bir görüşle desteklenmiş sanma.",
+   "B": "Ağaç dikmenin yararlarını sayılarla anlatıldığı düşünme.",
+   "C": "Seslenen kişiyi otorite sayma."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-030",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.4",
+  "surec_bileseni": "",
+  "konu": "Söz varlığı",
+  "alt_konu": "Bağlamdan sözcük anlamı çıkarma",
+  "soru_metni": "Komşumuz Nurten Teyze akşam yemeğinden sonra elinde bir tabak tatlıyla kapımıza geldi. Bizim ona bir şey götürmediğimizi düşününce ne diyeceğimizi bilemedik. Kapıyı açan annemin yanakları kızardı, gözlerini yere indirdi. Annem mahcup bir sesle teşekkür etti ve komşumuzu içeri davet etti. Nurten Teyze gülümseyerek tatlıyı masaya bıraktı ve çay içmeden gitmeyeceğini söyledi. Bir süre sonra hepimiz salonda oturmuş, tatlıyı paylaşıyorduk. O gece annem, ertesi gün komşumuza bir kavanoz reçel götürmeye karar verdi.\n\nMetinde geçen “mahcup” sözcüğü yerine aşağıdakilerden hangisi getirilebilir?",
+  "siklar": {
+   "A": "Kızgın",
+   "B": "Heyecanlı",
+   "C": "Utanmış",
+   "D": "Üzgün"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Annenin yüzündeki ve bakışlarındaki değişiklikleri düşün.",
+  "cozum_adimlari": [
+   "Annenin yanakları kızarır ve gözlerini yere indirir.",
+   "Komşuya bir şey götürmemiş olmasının verdiği duygu burada belirleyicidir.",
+   "Bu davranışlar utanma duygusunu gösterir, “mahcup” utanmış anlamındadır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yanakların kızarmasını öfkeyle ilişkilendirme.",
+   "B": "Kapıda şaşırmayı heyecan sanma.",
+   "D": "Gözlerini yere indirmeyi üzüntüyle karıştırma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-031",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.13",
+  "surec_bileseni": "",
+  "konu": "Bilgilendirici metin",
+  "alt_konu": "Sınıflandırma yapısı",
+  "soru_metni": "Ekosistem, canlıların ve cansız çevrenin oluşturduğu bütündür. Ekosistemler, yer aldıkları ortama göre karasal ve sucul olmak üzere ikiye ayrılır. Ormanlar ve çöller karasal ekosistemlerdir. Göller, nehirler ve denizler ise sucul ekosistemlerdir. Her ekosistemde üreticiler, tüketiciler ve ayrıştırıcılar bulunur. Üreticiler besinini kendisi yapar, tüketiciler ise besin için başka canlılara bağlıdır. Ayrıştırıcılar, ölü canlıları parçalayarak doğaya madde kazandırır. Bu üç grup arasındaki dengeyi korumak, ekosistemin sağlığı için gereklidir.\n\nMetne göre aşağıdakilerden hangisi karasal ekosisteme örnektir?",
+  "siklar": {
+   "A": "Göl",
+   "B": "Çöl",
+   "C": "Deniz",
+   "D": "Nehir"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Metnin iki gruba ayırdığı yapıya ve gruplara verilen örneklere dikkat et.",
+  "cozum_adimlari": [
+   "Metin ekosistemleri karasal ve sucul olarak ikiye ayırır.",
+   "Ormanlar ve çöller karasal ekosistemlerdir.",
+   "Göl, deniz ve nehir sucul ekosistemler arasında yer alır, seçenekte karasal olan yalnızca çöldür.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Metinde geçen göl örneğini karasal grubun içine yerleştirme.",
+   "C": "Denizi, geniş bir alan olduğu için karasal sanma.",
+   "D": "Nehri yeryüzünde aktığı için karasal sayma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR7-032",
+  "sinif": 7,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.7.17",
+  "surec_bileseni": "",
+  "konu": "Bilgilendirici metin",
+  "alt_konu": "Düşünceyi geliştirme yolları",
+  "soru_metni": "Köpekler genellikle sahiplerinin yanında olmaktan hoşlanır ve onlara sıkı sıkıya bağlanır. Kediler ise daha bağımsız yaşar, kendi köşelerini tercih eder. Köpekler sahiplerini kapıda karşılar, kediler ise ilgi göstermek için kendi zamanlarını seçer. Köpekler çoğunlukla komutlara hızlı uyum sağlar, kedilerin eğitimi ise genellikle daha zordur. Köpeklerin dışarıda yürüyüşe çıkması gerekir, kediler ise evde de rahatça yaşayabilir. İki hayvan da sahiplerine sevgi verir, ancak bu sevgiyi gösterme biçimleri birbirinden çok farklıdır. Hangisinin seçileceği, ailenin yaşam tarzına bağlıdır.\n\nBu metinde düşünceyi geliştirmek için aşağıdaki yollardan hangisine başvurulmuştur?",
+  "siklar": {
+   "A": "Karşılaştırma yapma",
+   "B": "Tanım yapma",
+   "C": "Tanıklığa başvurma",
+   "D": "Sayısal veriye yer verme"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Metinde iki varlığın hangi yönlerden ele alındığına bak.",
+  "cozum_adimlari": [
+   "Metin köpeklerle kedileri bağlanma, eğitim ve bakım gibi yönlerden yan yana ele alır.",
+   "İki varlığın benzer ve farklı yönleri birlikte gösterilir.",
+   "Başvurulan yol karşılaştırmadır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Hayvanların özelliklerini sıralamayı tanım yapma sanma.",
+   "C": "Genel gözlemleri tanık gösterme sayma.",
+   "D": "“İki hayvan” ifadesini sayısal veri sanma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

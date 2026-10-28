@@ -1,0 +1,511 @@
+soru_id,ders,sinif,onerilen_kod,guven,gerekce,durum
+005b4125-90be-40af-962c-b898a9342685,Hayat Bilgisi,1,HB.1.5.1,orta,"Soru doğadaki bir olayı (gökkuşağı) adlandırıyor; kazanım doğadaki varlıkları gözlemlemeyi ölçer, olayı doğrudan ölçmüyor.",oneri
+05e2838a-4a9b-4661-89ed-30b2c8dd2924,Hayat Bilgisi,1,HB.1.2.1,orta,Diş fırçalama sıklığı sağlıklı yaşam için gerekenler kapsamında; kazanım fiili (belirleyebilme) uyumlu.,oneri
+13563a85-8aa2-432b-9514-65a436941eb8,Hayat Bilgisi,1,HB.1.3.1,orta,"Akrabalık adlarını (büyükanne) soruyor; kazanım ailenin özelliklerini ifade etmeyle ilgili, tam ölçmüyor.",oneri
+23bbd99e-6c44-43b8-9c50-776328f2aa7b,Hayat Bilgisi,1,HB.1.2.4,orta,Tanınmayan kişinin kapıyı çalması acil/güvenlik durumu; yapılması gerekeni soruyor.,oneri
+32332b38-489f-4998-ad52-712125f4fd8f,Hayat Bilgisi,1,HB.1.5.1,dusuk,"Mevsim adını ve yaprak dökümünü soruyor; aday listesinde mevsim kazanımı yok, en yakın doğa gözlemi.",oneri
+3574edca-36d0-4110-a25d-f71cc3436b0a,Hayat Bilgisi,1,HB.1.2.3,yuksek,"Yaya geçidinde karşıdan geçme kuralı, temel trafik kurallarına uygun davranış kazanımını doğrudan ölçüyor.",oneri
+3cddc2e0-8b53-45d0-8aa6-3f95cad6c061,Hayat Bilgisi,1,HB.1.1.3,yuksek,Ders sırasında sınıf kurallarına uygun davranış sorusu; kazanımla birebir.,oneri
+c2ab7d8c-5421-462b-a570-8d3c936c010a,Hayat Bilgisi,1,,,Arkadaşa yardım ve teselli (empati) sorusu; adaylardaki hiçbir kazanım bunu ölçmüyor.,eslesme_yok
+c46d3601-27c5-453c-96f6-668ccecc74ba,Hayat Bilgisi,1,HB.1.1.2,dusuk,Yazı aracını (kalem) tanıma; okul ortamı/ders araçlarını tanıma ile yakın ama fiil zayıf.,oneri
+e9f7f4c8-e926-41bd-81d7-fa4c211d6be8,Hayat Bilgisi,1,HB.1.2.1,orta,Yemekten önce el yıkama sağlık alışkanlığı; sağlıklı büyüme için yapılması gerekenler kazanımına yakın.,oneri
+18eccd4b-6853-43b3-bf29-954a574955ab,Matematik,1,MAT.1.1.1,orta,"Sayıların büyüklüğünü 20'ye kadar temsil etme ile ilgili; soru karşılaştırma yapıyor, kazanım tam örtüşmüyor.",oneri
+1bce82ff-fa8a-447f-8c20-e1309fde9b02,Matematik,1,MAT.1.2.2,orta,14 - 6 zihinden çıkarma; kazanım zihinden işlem yaparak sonucu muhakeme etmeyi ölçüyor.,oneri
+1c8c1a4b-15df-41f2-99da-aa370fb93997,Matematik,1,MAT.1.2.1,orta,"Üç sayının toplamı; günlük toplama işlemleri kazanımı ile uyumlu, işlem sayısı kazanımda belirtilmemiş.",oneri
+3cee4a72-3dcd-40a2-8f01-48f37e404bd6,Matematik,1,MAT.1.1.1,orta,"17 sayısında onluk ve birlik; sayıların temsiline ilişkin, basamak değeri kazanımda açık değil.",oneri
+5261e221-58bf-4959-9e67-e3b11375f776,Matematik,1,MAT.1.1.6,yuksek,"2, 4, 6, 8 örüntüsünde sonraki sayı; artan sayı örüntüsünü çözümleme kazanımıyla birebir.",oneri
+7f59da51-d46b-49f5-8e8f-8b308afebf7f,Matematik,1,MAT.1.2.1,orta,6 + 5 toplama işlemi; günlük toplama kazanımına uygun.,oneri
+b56ea872-5f3d-4014-a393-4881cdef0602,Matematik,1,MAT.1.3.5,orta,Kenarları eşit dört kenarlı şekil (kare) tanıma; biçimsel özelliklere göre sınıflandırma ile ilgili.,oneri
+f6bf9c21-7278-4f57-ae74-9baceb9a0da5,Matematik,1,,,"7 + 1 toplama; en uygun kazanım MAT.1.2.1 aday listesinde yok (aday üretici kaçırdı), adaylardan biri ölçmüyor.",eslesme_yok
+f78a05cd-fa57-40f5-adbd-8b505bcbb81b,Matematik,1,,,"Saat okuma (tam saat); adaylarda saat kazanımı yok, MAT.1.1.3 sıra sayısı ölçmüyor.",eslesme_yok
+ff3ede3c-acc8-4167-b79f-fa5d1e36d7cd,Matematik,1,MAT.1.1.9,orta,Paralarla toplama (5 TL + 10 TL); para büyüklükleri ve toplama-çıkarma kazanımına yakın.,oneri
+133a97d4-7dc3-43f8-9f89-1c147a2a55db,Türkçe,1,T.Y.1.3,orta,"Cümle sonuna nokta konulması; yazma kurallarını uygulama kapsamında, noktalama açıkça yazılı değil.",oneri
+1910f182-2d19-4bbe-83bd-3e8a02f3ec49,Türkçe,1,T.O.1.1,dusuk,"Sesli harfi ayırt etme; harf ve heceleri seslendirme kazanımına çok dolaylı bağlı, asıl ölçülen harf bilgisi.",oneri
+204a7dc9-a140-48e5-8b88-08ccb8286d21,Türkçe,1,T.O.1.2,orta,Cümledeki bilgiden (Ali'nin gittiği yer) sonuç çıkarma; okuduğu metindeki bilgiyle ilgili anlam kazanımı.,oneri
+74bef5ae-2c91-48d4-a42a-3a8865364189,Türkçe,1,T.O.1.2,dusuk,"Zıt anlamlı sözcük sorusu; adaylarda sözcük anlamı kazanımı yok, en yakın anlam oluşturma kazanımı.",oneri
+983f73ec-2073-45cb-a6f8-c51e0d0e70bc,Türkçe,1,T.Y.1.3,yuksek,Cümle başı büyük harf kuralını seçtirme; yazma kurallarını uygulama kazanımını doğrudan ölçüyor.,oneri
+a1d37f0f-5564-41fd-826d-13d67ce6a04d,Türkçe,1,T.O.1.2,dusuk,"Eş anlamlı sözcük sorusu; adaylarda sözcük anlamı kazanımı yok, en yakın anlam oluşturma kazanımı.",oneri
+d0e0aa51-0d01-4480-92d4-031adda35dc3,Türkçe,1,T.O.1.1,orta,"Hece sayımı; kazanım heceleri doğru seslendirmeyi kapsıyor, hece sayma açıkça yazılı değil.",oneri
+f59b981c-74d0-461f-af91-e2d1e8f09fdf,Türkçe,1,,,Alfabetik sıralama (sözlük sırası); adaylarda bu beceriyi ölçen kazanım yok.,eslesme_yok
+f917e577-f080-4bdc-aae3-354481db9d5f,Türkçe,1,T.Y.1.3,yuksek,Özel adın büyük harfle yazımını seçtiriyor; yazma kurallarını uygulama kazanımını doğrudan ölçüyor.,oneri
+fe214c1e-d54d-4bdd-9ea0-4aa3d588e517,Türkçe,1,T.O.1.2,orta,Cümlede verilen bilgiyi (ne içildi) bulma; okuduğu metindeki bilgiyle ilgili kazanım.,oneri
+0590a4fc-4329-4e8b-b9a9-ba2d003da908,Hayat Bilgisi,2,HB.2.3.3,yuksek,Evde oda toplama ev sorumluluğu; görev ve sorumlulukları günlük yaşamına yansıtma kazanımıyla birebir.,oneri
+0e8a48f4-6c38-4a61-af5e-72ebb58cd7ba,Hayat Bilgisi,2,HB.2.2.1,orta,"Tüketilmemesi gereken besin; sağlıklı büyüme ile alışkanlık ilişkisine yakın, ilişki çözümleme açıkça yok.",oneri
+263e17d0-5874-4753-9a93-658af627a6de,Hayat Bilgisi,2,HB.2.4.2,dusuk,"Başkentin adı; adaylarda ülkemiz başkenti/coğrafya kazanımı yok, en yakın yönetim birimleri kazanımı.",oneri
+338e3f57-a111-4680-8c2a-247fed2d8320,Hayat Bilgisi,2,HB.2.3.2,yuksek,Birinden bir şey isterken nezaket sözcüğü; nezaket ve görgü kurallarına uygun davranma kazanımı.,oneri
+5df2eb4b-bd61-45ae-879d-c074eb3d9558,Hayat Bilgisi,2,HB.2.2.1,orta,"Çocuk için uyku süresi; sağlıklı büyüme ve alışkanlık ilişkisi kazanımına yakın, uyku açıkça yok.",oneri
+82e79962-f2b5-4f6c-ad25-ba5f145b660c,Hayat Bilgisi,2,HB.2.2.1,dusuk,"Prizle oynamanın tehlikesi; elektrik güvenliği adaylarda yok, sağlık-güvenlik alışkanlığı kazanımı dolaylı.",oneri
+89e62198-d248-4d7e-86d7-a287399c8030,Hayat Bilgisi,2,HB.2.5.4,dusuk,"Yerdeki çöpün çevre davranışı; doğal kaynakları tasarruflu kullanma kazanımı dolaylı, çöp konusu açık değil.",oneri
+c273bc0d-b8c0-4c16-992e-6fd12f3401ba,Hayat Bilgisi,2,,,Tebeşirle tahtaya yazma (sınıf araçları); adaylarda ders araçlarını tanıma kazanımı yok.,eslesme_yok
+cc8303a7-5955-4564-8d39-60b0d7055143,Hayat Bilgisi,2,,,Zil çaldığında sınıfa geçme (okul kuralı); adaylarda okul kurallarına uyma kazanımı yok.,eslesme_yok
+cf3ebb08-3c9b-432d-9a70-27af1361cd27,Hayat Bilgisi,2,HB.2.2.4,yuksek,Yangında aranacak acil numara; acil durumda yetkililerle iletişim kurma kazanımıyla doğrudan ilişkili.,oneri
+2ca33082-704f-48db-95c6-1478c3742a1b,Matematik,2,MAT.2.2.4,orta,"Üç torbada toplam bilye (çarpma problemi); çarpmayı toplamaya dayalı çözme kazanımına yakın, bağlam çarpma.",oneri
+6adbdea1-d530-4217-9083-387be8faf2c3,Matematik,2,MAT.2.1.4,yuksek,5'er sayarken gelmeyen sayıyı bulma; ritmik sayma kazanımıyla birebir.,oneri
+a7a578a4-3ca1-4bd5-b5e5-d8e2a07ce855,Matematik,2,MAT.2.1.9,orta,"Yarım saatin dakika karşılığı; zaman ölçü birimleri kazanımına yakın, dönüşüm açıkça yazılı değil.",oneri
+a7f5d9f3-9316-4be9-b2a1-f9727bf2d8f2,Matematik,2,MAT.2.2.5,orta,4 × 6 çarpım sonucu; çarpma sonuçlarını zihinden bulma kazanımına yakın.,oneri
+a9fca1ca-ab1c-4e9e-b07b-f3404d1b48bb,Matematik,2,MAT.2.1.2,yuksek,58 sayısında basamak değeri; iki basamaklı sayıları çözümleme kazanımıyla uyumlu.,oneri
+c0638032-3eac-454f-ae45-bfd4ab0d5055,Matematik,2,MAT.2.3.3,dusuk,"Üçgenin köşe sayısı; geometrik şekillerin özelliklerine dair kazanım dolaylı, köşe sayımı açık değil.",oneri
+cb311f3b-49b9-4876-8130-861304c19c5e,Matematik,2,MAT.2.1.11,orta,"Metre-santimetre dönüşümü; standart uzunluk birimleri kazanımına yakın, dönüşüm açıkça yok.",oneri
+d934a5a3-99d7-47d4-8fca-bd249934a959,Matematik,2,MAT.2.2.2,orta,"72 - 45 çıkarma; sonucu tahminle ve zihinden bulma kazanımına yakın, onluk bozma açıkça yazılı değil.",oneri
+dfd2811f-3746-4dee-af05-fe20d2b8667f,Matematik,2,MAT.2.2.2,orta,Üç sayının toplamı; toplama sonuçlarını zihinden bulma kazanımına yakın.,oneri
+ed10c136-5bfc-4760-a6e5-63ab25e7400c,Matematik,2,MAT.2.2.2,orta,"38 + 27 eldeli toplama; toplama işlemi kazanımına yakın, eldeli işlem açıkça yazılı değil.",oneri
+010c7e46-2b63-433b-bc66-dc1819c1ebc7,Türkçe,2,T.O.1.2,dusuk,"Zıt anlamlı sözcük sorusu; adaylarda sözcük anlamı kazanımı yok, en yakın anlam oluşturma kazanımı.",oneri
+20aba302-b190-430c-913d-e6f893c8719d,Türkçe,2,T.O.1.2,dusuk,"Sesteş sözcüğün cümledeki anlamı; adaylarda sözcük anlamı kazanımı yok, en yakın anlam oluşturma kazanımı.",oneri
+2d6274b0-5f0a-4fc6-8836-76b5dd6a7f40,Türkçe,2,T.Y.2.3,yuksek,"""-ki"" ekinin ayrı/bitişik yazımı; yazma kurallarını uygulama kazanımını doğrudan ölçüyor.",oneri
+436006f8-c746-48f5-8bc7-9709421d1d3b,Türkçe,2,T.Y.2.3,yuksek,"""de/da"" bağlacının yazımı; yazma kurallarını uygulama kazanımını doğrudan ölçüyor.",oneri
+4496262c-51e5-41e3-91a9-8c4e0a650f06,Türkçe,2,T.O.2.2,orta,Cümledeki neden-sonuç ilişkisini bulma; metindeki bilgiyle anlam kurma kazanımına yakın.,oneri
+676624e7-bd8b-456b-bee4-255d2b2f5091,Türkçe,2,T.O.1.2,dusuk,"Eş anlamlı sözcük sorusu; adaylarda sözcük anlamı kazanımı yok, en yakın anlam oluşturma kazanımı.",oneri
+9c0c48a1-9828-4ced-ba27-c877305255ed,Türkçe,2,,,Alfabedeki harf sayısı; adaylarda alfabe bilgisi kazanımı yok.,eslesme_yok
+e096a441-4e82-43d7-822c-76a93e7a6413,Türkçe,2,,,Özel ad tanıma (adlar); dil bilgisi kazanımı adaylarda yok.,eslesme_yok
+e29a6603-e628-4f3e-ae7f-d6b6d0cb91fb,Türkçe,2,T.Y.2.3,orta,"Cümle sonuna soru işareti; noktalama açıkça yazılı değil, yazma kurallarına yakın.",oneri
+fa37cef6-f157-4788-a1ea-950c9ccd0dab,Türkçe,2,,,"Hece sayma; en uygun kazanım (hece/harf seslendirme) aday listesinde yok, aday üretici kaçırdı.",eslesme_yok
+4a384a61-1d21-400d-9b78-315576f97734,İngilizce,2,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+6129611e-06d1-435f-8c54-c5d9e54b25f0,İngilizce,2,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+63dcbe0d-eb1d-43f4-9a12-da2b2717e0dc,İngilizce,2,ENG.2.1.L3,dusuk,"Vocabulary (Goodbye) sorusu; en uygun ENG.2.1.V1 aday listesinde yok, ünite uyumlu L3 seçildi, belirsiz.",oneri
+670a4992-7e7c-4f3f-a366-89d25f07a3ce,İngilizce,2,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+6751d7f3-6b1e-4a6e-9d2a-be7198fefdd6,İngilizce,2,ENG.2.2.L3,dusuk,"Vocabulary (book) sorusu; en uygun ENG.2.2.V1 aday listesinde yok, ünite uyumlu L3 seçildi, belirsiz.",oneri
+79e78347-c4c1-420f-b92f-ee077cd21f6a,İngilizce,2,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+814c7aa7-2046-40b4-a9f8-59bce1fb1a98,İngilizce,2,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+cf2395e6-c7e3-4872-85b5-d5b84d6bca31,İngilizce,2,ENG.2.4.L3,dusuk,"Vocabulary (mother) sorusu; en uygun ENG.2.4.V1 aday listesinde yok, ünite uyumlu L3 seçildi, belirsiz.",oneri
+ddb72a17-79e4-4c59-9c87-151fb39cf4b1,İngilizce,2,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+e1903d53-7c3f-4c51-9b0c-516d3764392f,İngilizce,2,ENG.2.1.L3,dusuk,"Vocabulary (good morning) sorusu; en uygun ENG.2.1.V1 aday listesinde yok, ünite uyumlu L3 seçildi, belirsiz.",oneri
+18df22de-c29a-464c-a8b2-42d694942479,Fen Bilimleri,3,FB.3.7.2,yuksek,Bitkinin büyümesi için gerekenler; bitkinin yetişmesi için gerekenleri genelleme kazanımıyla birebir.,oneri
+4b0676b0-f758-4aff-9d72-e5791c2b2001,Fen Bilimleri,3,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+545b5cf5-32c9-4daf-8d8a-66b557da6109,Fen Bilimleri,3,FB.3.4.1,yuksek,Maddenin hâllerinden birinin dışındakini bulma; maddeyi hâllerine göre sınıflandırma kazanımıyla uyumlu.,oneri
+59ae5775-9b62-4eca-9f27-b3c7d07913bf,Fen Bilimleri,3,,,En yakın kazanım FB.3.4.3 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+60fde487-69f7-4489-849d-2a383fcbe0fa,Fen Bilimleri,3,FB.3.2.1,orta,"Canlı-cansız ayrımı; canlıları sınıflandırma kazanımına yakın, tanım açıkça yazılı değil.",oneri
+7f78f45f-5639-4de9-a5cc-128f74e6095c,Fen Bilimleri,3,FB.3.5.2,orta,"Kapıyı çekerek açma; kuvvetin etkisini gözleme dayalı tahmin kazanımına yakın, çekme/itme açıkça yok.",oneri
+9791680b-047a-4bc4-b463-7ea45ebf8a54,Fen Bilimleri,3,,,Sesin oluşumu (titreşim); adaylarda ses/titreşim kazanımı yok.,eslesme_yok
+97c6ffe5-c31b-4272-aaf5-a6d306864333,Fen Bilimleri,3,FB.3.2.2,orta,"Duyu organının zarar görmesi; duyu organlarıyla algılama ilişkisine yakın, zarar açıkça yok.",oneri
+9a056533-b24d-4379-b81e-6373b03c8e04,Fen Bilimleri,3,FB.3.4.1,yuksek,Suyun katı hâli; maddeyi hâllerine göre sınıflandırma kazanımıyla birebir.,oneri
+ee54daec-cf55-4cf1-bf67-dcd4e4180bff,Fen Bilimleri,3,FB.3.2.2,orta,"Koku alma organı; çevreyi farklı yollarla algılama kazanımına yakın, duyu organı açıkça yok.",oneri
+0d0f46d9-f00e-404e-b98c-b0b38f9cd5cd,Hayat Bilgisi,3,HB.3.2.1,yuksek,Kişisel bakım örneği (diş fırçalama); sağlığı koruyan davranışları düzenleme kazanımıyla uyumlu.,oneri
+2b6a9179-f523-4041-a465-343004c3c5a8,Hayat Bilgisi,3,HB.3.2.1,yuksek,Hastalanmamak için sağlıklı davranış; sağlığı korumaya yönelik davranışları düzenleme kazanımıyla birebir.,oneri
+52df0719-b629-438d-a5d0-1db2bd25daaf,Hayat Bilgisi,3,HB.3.5.4,dusuk,"Musluğu kapatarak su tasarrufu; çevresel sürdürülebilirlik kazanımı dolaylı, kaynaklardan bilgi toplamayı ölçüyor.",oneri
+5b333429-8603-4117-ba15-787e43d15ac7,Hayat Bilgisi,3,HB.3.2.3,orta,"Yayaların trafik ışığındaki geçiş rengi; trafik kurallarına uymanın önemi kazanımına yakın, renk bilgisi açık değil.",oneri
+6029b110-ed05-4f70-945e-33070537759a,Hayat Bilgisi,3,HB.3.2.2,orta,"Koridorda koşmanın tehlikesi; güvenliği tehdit eden durumlarda yapılması gerekenlere yakın, nedeni sorguluyor.",oneri
+a286ce52-f571-44f7-8b2f-ceb4e5434816,Hayat Bilgisi,3,HB.3.3.1,orta,"Komşulara karşı saygılı davranış; aile-toplum ilişkisi kazanımına yakın, davranış ilkesi açıkça yok.",oneri
+a6fb898a-fd9f-4ff9-8171-03e003946bd3,Hayat Bilgisi,3,HB.3.4.4,dusuk,"23 Nisan bayramının adı; millî birlik kazanımına dolaylı bağlı, belirli gün bilgisi açıkça yok.",oneri
+b6b87824-a5e0-4ca5-ad43-6e14bce8bbd1,Hayat Bilgisi,3,HB.3.3.2,dusuk,"Grup çalışmasında iş bölümü; dolaylı, kazanım yardım ve fikirleri eyleme dönüştürme üzerine.",oneri
+b7775be2-5d49-4f7d-a356-9e9c315366ac,Hayat Bilgisi,3,HB.3.4.2,orta,"Seçme ve seçilme hakkının yönetim biçimi; yönetim şekli kazanımına yakın, bilgi toplama ile ölçüm.",oneri
+c7b17aff-b82a-4fd8-a8eb-27c3fcbe65c5,Hayat Bilgisi,3,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+5adfd569-acb0-45ef-ae3e-08f812f9d4b4,Matematik,3,,,Kilogram-gram dönüşümü; adaylarda kütle birim dönüşümü kazanımı yok.,eslesme_yok
+7bfb8c90-7954-462c-8485-87473f2c62e9,Matematik,3,MAT.3.2.6,yuksek,İki kalem ve bir defterin toplam fiyatı; dört işlem gerektiren günlük yaşam problemi kazanımıyla birebir.,oneri
+87da1779-4757-454f-89e1-cfece3b62870,Matematik,3,,,Dik açının ölçüsü; adaylarda açı kazanımı yok.,eslesme_yok
+9dd881e4-84ea-4444-9a66-b0664ab913cf,Matematik,3,MAT.3.1.2,yuksek,Yazılı sayının (425) rakamla karşılığı; 1000'e kadar sayıları çözümleme/temsil kazanımıyla uyumlu.,oneri
+ac57295d-4362-477f-bb31-47a04935485a,Matematik,3,MAT.3.2.4,yuksek,İki basamaklı sayının bire çarpımı; çarpma işlemlerini çözümleme kazanımıyla uyumlu.,oneri
+bf50059c-448c-4c56-9147-a8ee3da7a4a2,Matematik,3,MAT.3.1.3,orta,"En küçük sayıyı seçme; sayıları sıralama kazanımına yakın, sıralama açıkça yazılı değil.",oneri
+c40f6d33-3270-450a-bc7e-fd73bc1e4c81,Matematik,3,MAT.3.1.11,orta,Bütünün dört eş parçasından üçü (3/4); kesrin payı-paydası ilişkisi kazanımına yakın.,oneri
+d0e61cd5-ef2e-4fcf-8b27-d27c5b57d136,Matematik,3,MAT.3.2.2,yuksek,500 - 236 eldeli çıkarma; toplama ve çıkarma işlemlerini çözümleme kazanımıyla birebir.,oneri
+d61d0096-d47a-465f-9861-cb0c83622eda,Matematik,3,MAT.3.2.4,yuksek,48 ÷ 6 bölme işlemi; çarpma ve bölme işlemlerini çözümleme kazanımıyla uyumlu.,oneri
+ecde5776-31db-471b-acd2-97ee9764daca,Matematik,3,MAT.3.2.2,yuksek,247 + 156 eldeli toplama; toplama işlemlerini çözümleme kazanımıyla birebir.,oneri
+1ce93f7f-3200-403a-b5a8-50c1653d8353,Türkçe,3,T.O.3.2,dusuk,"Atasözünün anlamı; okuduğu/dinlediği bilgiyle anlam oluşturma kazanımına dolaylı, atasözü açıkça yok.",oneri
+24835f2e-ee44-48be-9e57-29c3e3722b85,Türkçe,3,T.O.2.2,dusuk,"Terim anlam sorusu; adaylarda sözcük anlamı kazanımı yok, en yakın metindeki sözcüklerle ilgili kazanım.",oneri
+28921f01-7cf8-48d6-b70e-8d117f2336fc,Türkçe,3,T.O.2.2,dusuk,"Eş anlamlı sözcük sorusu; adaylarda sözcük anlamı kazanımı yok, en yakın metindeki sözcük kazanımı.",oneri
+310131e2-1b1c-4b33-9acc-baf2bf1faa72,Türkçe,3,T.O.2.2,dusuk,"Deyimin anlamı; adaylarda deyim kazanımı yok, en yakın metindeki sözcük anlam kazanımı.",oneri
+7c0853ca-8ed4-4e5c-85c8-b8be4e049f77,Türkçe,3,T.Y.2.3,orta,"Virgül kullanımı; yazma kurallarına yakın, noktalama açıkça yazılı değil.",oneri
+89406d79-7ec6-4d31-96b5-777f5c70cb2e,Türkçe,3,T.O.2.2,orta,Cümledeki karşılaştırmayı anlama; metindeki bilgiyle anlam kurma kazanımına yakın.,oneri
+92296930-8d71-4eb6-a268-b4addaf5cfaa,Türkçe,3,T.O.2.2,dusuk,"Mecaz anlam sorusu; adaylarda sözcük anlamı kazanımı yok, en yakın metindeki sözcük kazanımı.",oneri
+c67aca33-8c29-4a28-b22a-25b1e7a76f57,Türkçe,3,T.Y.2.3,yuksek,Büyük harf kullanımı; yazma kurallarını uygulama kazanımını doğrudan ölçüyor.,oneri
+d8b450c0-25bc-43e6-9b12-1c078bb59974,Türkçe,3,T.O.2.2,orta,Cümledeki amaç-sonuç ilişkisini bulma; metindeki bilgiyle anlam kurma kazanımına yakın.,oneri
+e53298bb-f6c0-4571-bc11-644bc682fba9,Türkçe,3,,,Sıfat (ön ad) tanıma; dilbilgisi kazanımı adaylarda yok.,eslesme_yok
+1940b406-34a3-4b86-9c94-dc1b4ff82ae4,İngilizce,3,ENG.3.5.L3,dusuk,"Bird (kuş) sözcüğü; hayvanlar konusu aday metinlerinde açık değil, vocabulary kazanımı (V1) aday listesinde yok.",oneri
+2d422f8e-bacb-43f0-855e-14d970a612e6,İngilizce,3,ENG.3.3.L3,dusuk,"Eye (göz) sözcüğü; vücut bölümleri ünitesi uyumlu, vocabulary kazanımı (V1) aday listesinde yok.",oneri
+2e2cdfac-6dda-46b7-8acf-33594182d602,İngilizce,3,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+2ee4c5c5-a780-4514-bbc3-a96025c8673e,İngilizce,3,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+5898e6bf-b4e5-475b-b78f-ba8c67fd76d6,İngilizce,3,ENG.3.2.L3,dusuk,"Pencil (kalem) sözcüğü; sınıf ünitesi uyumlu, vocabulary kazanımı (V1) aday listesinde yok.",oneri
+9ed21fc8-8278-4507-af1f-9a9557cb012a,İngilizce,3,ENG.3.6.L3,dusuk,"Bread (ekmek) sözcüğü; yiyecek ünitesi uyumlu, vocabulary kazanımı (V1) aday listesinde yok.",oneri
+9ed472a7-0231-435a-ab3f-fab2fcc3e448,İngilizce,3,ENG.3.4.L3,dusuk,"Sister (kız kardeş) sözcüğü; aile ünitesi uyumlu, vocabulary kazanımı (V1) aday listesinde yok.",oneri
+c2d8d09f-0bd9-48ce-b5bd-894477ceb632,İngilizce,3,ENG.3.1.L3,dusuk,"How are you cevabı; selamlaşma ünitesi uyumlu, konuşma kazanımı (S/L) aday listesinde net değil.",oneri
+e1ec0961-8874-4854-b9b6-c2a0b9000948,İngilizce,3,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+ed8b9084-9eec-460d-95e4-6ca3210d4a9b,İngilizce,3,ENG.3.1.L3,dusuk,"Tanışma cümlesinin anlamı; selamlaşma ünitesi uyumlu, kazanım fiili kısmen örtüşüyor.",oneri
+1534f4cb-44b3-4855-805e-ab879de87f9a,Din Kültürü,4,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+247b2bad-5626-4e72-95ac-fd4f994611b9,Din Kültürü,4,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+294efbd9-bf04-455f-a256-810dd820ec95,Din Kültürü,4,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+3dc5e855-b419-4cdb-94f1-e5e63fc8d0a2,Din Kültürü,4,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+da0c16df-c156-482d-be08-e3ee2c6da7e5,Din Kültürü,4,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+e14bfdd4-cd36-472c-a53f-ba57927230b9,Din Kültürü,4,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+e981c842-e799-4e9e-b232-c13949eaaedc,Din Kültürü,4,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+ed7baa49-f9b6-47bf-a7fc-9eb75f50a687,Din Kültürü,4,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+ee7f5c7c-4155-4196-8623-6eabd6bb06bb,Din Kültürü,4,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+f60ccbba-ccb4-427f-a1cb-383205f45e82,Din Kültürü,4,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+145d6eaa-92b9-4de0-b773-a843ea2c8bbf,Fen Bilimleri,4,F.4.2.1.1,orta,"Enerji kaynağı besin içeriği; besin içerikleri ve yaşam ilişkisi kazanımına yakın, karbonhidrat açıkça yok.",oneri
+15962b80-a74d-4c19-b5f7-a7e8625a169c,Fen Bilimleri,4,F.4.3.2.2,yuksek,Mıknatısın çektiği maddeyi deneyle keşfetme; mıknatısın etki ettiği maddeler kazanımıyla birebir.,oneri
+237f797f-d682-459d-8346-6fcb332a2d76,Fen Bilimleri,4,F.4.6.1.1,yuksek,Elektrik enerjisini tasarruflu kullanma; kaynakların tasarruflu kullanımı kazanımıyla birebir.,oneri
+3882a49c-5b21-44f2-a6b7-f8c9fbdb9852,Fen Bilimleri,4,F.4.1.1.3,yuksek,Fosillerin oluşumu; fosil oluşumunu açıklama kazanımıyla birebir.,oneri
+78318580-6e0a-4cb9-a00f-e0cab3a89992,Fen Bilimleri,4,F.4.4.3.1,dusuk,"Sesin maddelerdeki hızı; adaylarda ses kazanımı yok, en yakın madde hâlleri özelliği kazanımı.",oneri
+84fd94aa-43f2-422e-aea8-bc4dc3ab621b,Fen Bilimleri,4,,,İskelet ve vücut yapısı; adaylarda insan vücudu yapısı kazanımı yok.,eslesme_yok
+8ee2ab5e-3e24-4e0c-b180-38ab82213b61,Fen Bilimleri,4,F.4.7.1.1,yuksek,Basit devrenin bileşenleri ve gereken öğeler; devre elemanlarını işlevleriyle tanıma kazanımına uygun.,oneri
+a5b43edf-ebcb-4858-9b0b-4e5786b0c228,Fen Bilimleri,4,,,Saydam cisim (cam) tanıma; adaylarda ışığın madde ile etkileşimi kazanımı yok.,eslesme_yok
+b84a0200-b4fd-434d-ac60-54f55e2232a7,Fen Bilimleri,4,F.4.4.4.2,orta,"Suyun buharlaşması için ısıtma; ısı etkisiyle hâl değişimi kazanımına yakın, deney tasarlama fiili ölçülmüyor.",oneri
+f7ed6f85-a6e9-4963-8d55-48d450cf5a9c,Fen Bilimleri,4,F.4.4.5.1,yuksek,Tuzlu suyun karışım olarak sınıflandırılması; saf madde ve karışım sınıflandırma kazanımıyla birebir.,oneri
+23dbfe29-065a-471f-83b2-3d919b1302a4,Matematik,4,M.4.1.6.4,dusuk,"Farklı paydalı kesirleri büyüklük açısından karşılaştırma; kazanım eşit paydalı kesirler, fiil kısmen örtüşüyor.",oneri
+3ec6fd70-8d6d-4755-9450-75a2c9ec54a9,Matematik,4,M.4.1.1.3,yuksek,Üç ve dört basamaklı sayının basamak değerlerinden çözümlenmesi; basamak ve bölük kazanımıyla uyumlu.,oneri
+504bcc46-cb8b-4160-9c86-b0cc7b553356,Matematik,4,M.4.3.4.2,yuksek,Saat ve dakika ile süre problemi; zaman ölçme birimleri problemleri kazanımıyla birebir.,oneri
+6072b65d-314f-4ef8-b87f-0b9cc4651c3d,Matematik,4,M.4.3.2.3,yuksek,Dikdörtgenin çevre uzunluğunu hesaplama; şekillerin çevre problemleri kazanımıyla birebir.,oneri
+71f6eb27-0817-4702-a287-7e3c3997d203,Matematik,4,M.4.1.4.5,dusuk,"345 x 6 çarpımı; kazanım iki basamaklı sayı ile bir basamaklı çarpımın tahminini ölçüyor, sonuç hesabı değil.",oneri
+9419b042-9dbe-4613-b692-d2c821b84b64,Matematik,4,,,Ondalık sayı okuma; adaylarda ondalık gösterim kazanımı yok.,eslesme_yok
+ba8f1109-162e-4a3b-8621-c1ba940addfb,Matematik,4,M.4.1.5.2,yuksek,742 ÷ 7 bölme işlemi; en çok dört basamaklı sayıyı bir basamaklı sayıya bölme kazanımıyla birebir.,oneri
+d9a9f91d-ac1b-48dd-9686-150e3deab4b3,Matematik,4,M.4.2.3.4,yuksek,"Açı çeşitlerini (dar, dik, geniş, doğru) ölçüye göre belirleme; kazanımla birebir.",oneri
+e08846dc-34b3-41ec-9ee5-ed788ab5c58e,Matematik,4,M.4.1.1.3,yuksek,Binler bölüğündeki basamak değeri; bölük ve basamak kazanımıyla birebir.,oneri
+f60a5dd6-287f-4be6-bdfd-e6361c630f4d,Matematik,4,M.4.1.1.4,yuksek,En yakın yüzlüğe yuvarlama; doğal sayıları yuvarlama kazanımıyla birebir.,oneri
+34319917-1687-4ba6-b97d-64235970879c,Sosyal Bilgiler,4,,,"Deprem anında güvenli davranış; en uygun SB.4.3.6 (afet öncesi-sırası-sonrası hazırlık) aday listesinde yok, aday üretici kaçırdı.",eslesme_yok
+4a444c4d-e281-40c8-98dc-a975fe86c389,Sosyal Bilgiler,4,,,Müfredat kodu SB.4.2.2 TYMM programına ait; 4. sınıfta 2026-27 programı önceki program olduğu için TYMM kodu kullanılmadı.,eslesme_yok
+692e9b81-b152-4666-9fa2-b2c406f52b66,Sosyal Bilgiler,4,,,Müfredat kodu SB.4.3.1 TYMM programına ait; 4. sınıfta 2026-27 programı önceki program olduğu için TYMM kodu kullanılmadı.,eslesme_yok
+79c02c68-80cb-4613-b115-d5f68c907bef,Sosyal Bilgiler,4,,,Müfredat kodu SB.4.2.2 TYMM programına ait; 4. sınıfta 2026-27 programı önceki program olduğu için TYMM kodu kullanılmadı.,eslesme_yok
+825d5090-3ac2-47f7-8056-486f9068dea9,Sosyal Bilgiler,4,,,Müfredat kodu SB.4.3.2 TYMM programına ait; 4. sınıfta 2026-27 programı önceki program olduğu için TYMM kodu kullanılmadı.,eslesme_yok
+95f5aa34-548c-4503-8ccf-b9bc79f24472,Sosyal Bilgiler,4,,,Müfredat kodu SB.4.3.3 TYMM programına ait; 4. sınıfta 2026-27 programı önceki program olduğu için TYMM kodu kullanılmadı.,eslesme_yok
+c00ce5c0-7fec-4282-b0e1-e3bfab4c4a82,Sosyal Bilgiler,4,,,Müfredat kodu SB.4.5.1 TYMM programına ait; 4. sınıfta 2026-27 programı önceki program olduğu için TYMM kodu kullanılmadı.,eslesme_yok
+e7527a4c-50bb-4ae2-9f85-7ad2ba41d70e,Sosyal Bilgiler,4,,,Müfredat kodu SB.4.1.5 TYMM programına ait; 4. sınıfta 2026-27 programı önceki program olduğu için TYMM kodu kullanılmadı.,eslesme_yok
+f4597735-ee60-4c64-af09-e90426c7a7de,Sosyal Bilgiler,4,,,Müfredat kodu SB.4.1.1 TYMM programına ait; 4. sınıfta 2026-27 programı önceki program olduğu için TYMM kodu kullanılmadı.,eslesme_yok
+ff56ec5d-dde6-42ce-8607-fbda511ee6f7,Sosyal Bilgiler,4,,,Okul kurallarının amacı; adaylarda okul kuralları ve düzen kazanımı yok.,eslesme_yok
+031f90a5-b031-419b-a2ba-d0afdd96f444,Türkçe,4,,,Söz sanatı (kişileştirme); adaylarda söz sanatı kazanımı yok.,eslesme_yok
+13bc2b82-8af2-4e54-944d-a4e3b4ee7514,Türkçe,4,,,Sözcük türü (fiil); adaylarda dilbilgisi sözcük türü kazanımı yok.,eslesme_yok
+154c6415-b372-44a4-b267-52f0075abe30,Türkçe,4,,,"Ana fikir sorusu; en uygun ana fikri belirleme kazanımı (T.4.3.17 benzeri) aday listesinde yok, aday üretici kaçırdı.",eslesme_yok
+29ebe812-3678-4c7e-86e1-71a98340f0fc,Türkçe,4,,,"""mi"" soru edinin yazımı; adaylarda bu yazım kuralı kazanımı yok.",eslesme_yok
+63163ebc-c11f-488e-b4a3-72818d009550,Türkçe,4,T.4.4.10,orta,"Kesme işaretinin kullanım nedeni; büyük harf ve noktalama kullanımı kazanımına yakın, kesme açıkça yazılı değil.",oneri
+65cd0086-3565-4d7f-89a1-2028de5ff4e6,Türkçe,4,T.4.3.8,yuksek,Eş anlamlı sözcük bulma; kelimelerin eş anlamlılarını bulma kazanımıyla birebir.,oneri
+83582a00-cbef-4b78-8644-ea8c25f1b08e,Türkçe,4,T.4.3.17,orta,"Cümlenin duygu ifadesini bulma; metnin ana duygusunu belirleme kazanımına yakın, cümle düzeyinde.",oneri
+bd6b9c65-e4e3-4246-aeab-565996043a17,Türkçe,4,T.4.3.10,yuksek,"Sözcüğün mecaz anlamda kullanımı; gerçek, mecaz ve terim anlamlı sözcükleri belirleme kazanımıyla birebir.",oneri
+d8e93807-e1bc-4ead-88ff-72f2bb7cfd61,Türkçe,4,T.4.3.11,orta,Atasözünün anlamı; deyim ve atasözlerinin anlama katkısını kavrama kazanımına yakın.,oneri
+ef2d27ae-6348-4f78-b4f0-56085afaec17,Türkçe,4,T.4.3.11,orta,Deyimin anlamı; deyim ve atasözlerinin anlama katkısını kavrama kazanımına yakın.,oneri
+31a467c4-842d-4c08-afbf-005aeaf38de8,İngilizce,4,E4.1.L3,dusuk,"Chair (sandalye) sözcüğü; sınıf ünitesi uyumlu, vocabulary kazanımı aday listesinde yok, belirsiz.",oneri
+3f71f5a1-16f8-4aef-bcad-0fbb6882f95e,İngilizce,4,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+4065eae1-511a-47ac-9011-c6c4fa651280,İngilizce,4,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+69ce7d6c-4a47-4b47-8bcb-9bf09f4c9b4c,İngilizce,4,,,"Renk sözcüğü (black); adaylarda renk kelime kazanımı yok, aday üretici kaçırdı.",eslesme_yok
+722561cf-730a-4754-99a1-2637ffb75341,İngilizce,4,E4.10.L1,orta,Su (water) sözcüğü; yiyecek ve içecek sözcüklerini tanıma kazanımına doğrudan yakın.,oneri
+79b4d181-edc8-4f3c-8db2-f665732ca681,İngilizce,4,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+7af21b7e-4cb9-4af3-9b21-7725b91b8114,İngilizce,4,E4.1.L4,yuksek,Twenty (20) sayısının tanınması; bir ila elli arası sayıları tanıma kazanımıyla birebir.,oneri
+9b83171a-023c-4a2e-bde0-18e436fe8fd2,İngilizce,4,E4.9.S1,dusuk,"Grandfather (dede) sözcüğü; aile üyelerini tanıtma kazanımına dolaylı, sözcük tanıma açıkça yok.",oneri
+dc4dc59c-1ab1-4010-b5cc-28384cedf4df,İngilizce,4,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+f0f156c5-835c-40b1-9ef6-c70c1c8f8d6b,İngilizce,4,E4.5.S2,orta,"Saat sorma cümlesinin anlamı; zamanı konuşma kazanımına yakın, soru kalıbı açıkça yok.",oneri
+0d30b5a1-668c-48bf-97d2-a10b8601147c,Din Kültürü ve Ahlak Bilgisi,5,DKAB.5.2.1,orta,"Günde kaç vakit namaz kılındığı; namaz ibadetini özetleme kazanımına yakın, vakit sayısı açık değil.",oneri
+1db95546-2265-46fb-942e-7d2ecbbe4903,Din Kültürü ve Ahlak Bilgisi,5,,,Büyüklere saygılı davranış; adaylarda güzel ahlak ve saygı kazanımı yok.,eslesme_yok
+24f7b766-3ed1-43af-8717-a976ab1d1769,Din Kültürü ve Ahlak Bilgisi,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+2c8e5dc0-a873-4ba5-8dfe-873a5624fc2d,Din Kültürü ve Ahlak Bilgisi,5,,,Müslümanların selamlaşma sözü; adaylarda selam/ibadet kazanımı yok.,eslesme_yok
+31f31f0e-9033-438c-a064-c0e07a5c0fe9,Din Kültürü ve Ahlak Bilgisi,5,,,Hz. Muhammed'in El-Emin lakabı; adaylarda peygamberin hayatı kazanımı yok.,eslesme_yok
+33e4846f-d8c1-489e-8e41-35af2f0e96b1,Din Kültürü ve Ahlak Bilgisi,5,,,"İbadet yeri (cami); en uygun DKAB.5.5.3 (cami örnekleri) aday listesinde yok, aday üretici kaçırdı.",eslesme_yok
+43b32f00-1890-455a-87ba-7fbba8822934,Din Kültürü ve Ahlak Bilgisi,5,DKAB.5.2.2,orta,"Namaz öncesi abdest; namazın kılınışına hazırlık kazanımına yakın, abdest açıkça yok.",oneri
+54b67958-d568-49aa-b70d-40e52d7c5a11,Din Kültürü ve Ahlak Bilgisi,5,DKAB.5.4.2,dusuk,"Komşuya yardım öğüdü; peygamber kıssaları öğütleri kazanımına dolaylı, öğüt konusu açık değil.",oneri
+5c74b638-a0f9-487a-8a9a-c2d069a1fb00,Din Kültürü ve Ahlak Bilgisi,5,,,Oruç ayı (Ramazan); adaylarda oruç kazanımı yok.,eslesme_yok
+5d405357-81a3-4bd7-920f-1b8f0be8948a,Din Kültürü ve Ahlak Bilgisi,5,DKAB.5.3.2,yuksek,Müslümanların kutsal kitabı (Kur'an-ı Kerim); Kur'an-ı Kerim'in temel özellikleri kazanımıyla uyumlu.,oneri
+7a94a9f5-2165-45ed-b752-b29b99659e2c,Din Kültürü ve Ahlak Bilgisi,5,,,Cömertlik kavramı; adaylarda güzel ahlak kavramı kazanımı yok.,eslesme_yok
+84d5c0cd-cbf4-4331-8c22-3814d731837e,Din Kültürü ve Ahlak Bilgisi,5,DKAB.5.1.2,yuksek,Evreni yaratanın Allah olduğu; Allah'ın varlığını evrendeki düzenden hareketle kavrama kazanımına uygun.,oneri
+8994df61-31e0-41e0-ad3f-ad5f6af97f62,Din Kültürü ve Ahlak Bilgisi,5,DKAB.5.4.1,orta,"İslam peygamberinin kim olduğu; peygamberlik ve görevleri kazanımına yakın, isim bilgisi açık değil.",oneri
+9fd8ba3f-599d-441c-a083-8b81a8158149,Din Kültürü ve Ahlak Bilgisi,5,,,Dua tanımı; adaylarda dua kavramı kazanımı yok.,eslesme_yok
+b66777b5-c1a7-4679-b624-63281eca8edd,Din Kültürü ve Ahlak Bilgisi,5,,,Besmele tanımı; adaylarda dini ifade kazanımı yok.,eslesme_yok
+bddabf82-2c3d-43e9-ba4c-04166efe8d1a,Din Kültürü ve Ahlak Bilgisi,5,,,Güzel ahlaki davranış (büyüklere saygı); adaylarda ahlak kazanımı yok.,eslesme_yok
+c72c5cde-fba0-46f9-98a8-63cb3bdd4fff,Din Kültürü ve Ahlak Bilgisi,5,,,Şükür ifadesi (Elhamdülillah); adaylarda dini ifade kazanımı yok.,eslesme_yok
+ca89e131-6d1b-46c4-99d2-a58d9ecde6e1,Din Kültürü ve Ahlak Bilgisi,5,,,Dürüstlük kavramı; adaylarda güzel ahlak kazanımı yok.,eslesme_yok
+ce8e8167-8144-43b1-8cc6-d2a54c9c5632,Din Kültürü ve Ahlak Bilgisi,5,,,Hz. Muhammed'in doğum yeri; adaylarda peygamberin hayatı kazanımı yok.,eslesme_yok
+e048a0e6-f815-4e30-b9f8-5b7e258df310,Din Kültürü ve Ahlak Bilgisi,5,,,İsraf kavramı; adaylarda israf/tasarruf ahlak kazanımı yok.,eslesme_yok
+0c3d2e4b-c0f4-4be8-950c-6580c051bec6,Fen Bilimleri,5,FB.5.2.3,orta,"Kütle ölçen araç (terazi); kütle kavramını karşılaştırma kazanımına yakın, araç bilgisi açıkça yok.",oneri
+0da63255-c9d7-491c-8077-02cec0133811,Fen Bilimleri,5,FB.5.2.1,orta,"Duran topa vurulunca hareket etmesi; kuvvetin etkisi konusu, kazanım kuvveti büyüklükle tanımlamayı ölçüyor.",oneri
+3da235fd-166d-456c-be97-3471add74994,Fen Bilimleri,5,FB.5.1.2,yuksek,Ayın Dünya etrafındaki dolanım süresi; Ay'ın dönme ve dolanma hareketleri kazanımıyla birebir.,oneri
+423833f3-0e18-45d5-a783-82edab2acd58,Fen Bilimleri,5,FB.5.5.2,orta,"Sıcaklığı ölçen araç (termometre); ısı ve sıcaklık kavramları kazanımına yakın, araç bilgisi açık değil.",oneri
+4a6cc598-5064-4059-8c84-5960fa700997,Fen Bilimleri,5,FB.5.1.1,orta,Dünya'ya ışık ve ısı veren gök cismi (Güneş); Güneş ile ilgili bilgi toplama kazanımına yakın.,oneri
+4b982b94-28d0-4946-8242-515a112bad19,Fen Bilimleri,5,FB.5.5.5,dusuk,"Elektriği ileten madde (bakır); kazanım ısı iletimine göre sınıflandırma, elektrik iletkenliği adaylarda yok.",oneri
+4e0a85fc-3f3e-4481-8e21-22669f7c015b,Fen Bilimleri,5,FB.5.5.4,orta,"Buzun erimesi (katıdan sıvıya); hâl değişimi kazanımına yakın, erime açıkça yazılı değil.",oneri
+68bc0e48-6754-4069-8933-0d98ac3a69fb,Fen Bilimleri,5,FB.5.2.1,dusuk,"Çekme kuvveti örneği; kuvvet kazanımına dolaylı, itme/çekme ayrımı adaylarda açık değil.",oneri
+6f00b74d-248c-4f1d-8ed7-69cc79009f36,Fen Bilimleri,5,FB.5.1.4,orta,"Dünya'nın şeklini küreyle benzetme; gök cisimlerinin büyüklük ve hareketlerine yakın, şekil açıkça yok.",oneri
+72474646-c9c7-43e1-8bcc-8ecfbb10572e,Fen Bilimleri,5,FB.5.4.1,orta,"Işık üretmeyen ayna (yansıtma); ışığın doğrusal yayılması kazanımına yakın, yansıma açıkça yok.",oneri
+7d1e7c1b-3873-4954-abe2-100a11ba89a9,Fen Bilimleri,5,FB.5.3.2,dusuk,"Tadı alan duyu organı (dil); organ-sistem kazanımına dolaylı, duyu organı açıkça yok.",oneri
+80285984-fe8b-41e4-bf31-c331b8b8718f,Fen Bilimleri,5,FB.5.5.4,orta,"Suyun donması; hâl değişimi kazanımına yakın, donma açıkça yazılı değil.",oneri
+858d6869-c212-4dcf-9b68-8faccf06f53d,Fen Bilimleri,5,FB.5.5.4,orta,"Çamaşırın kuruması (buharlaşma); hâl değişimi kazanımına yakın, buharlaşma açıkça yazılı değil.",oneri
+88a13ab0-bb0a-4b26-9240-ddbb84456f0f,Fen Bilimleri,5,FB.5.3.4,orta,"Kemik ve diş sağlığı için kalsiyum; destek ve hareket sisteminin sağlığı kazanımına yakın, mineral açıkça yok.",oneri
+9da6a26f-bf38-4197-806d-96bc7884dd42,Fen Bilimleri,5,,,C vitamini ve meyve; adaylarda beslenme ve vitamin kazanımı yok.,eslesme_yok
+babcdf17-1da8-4a0e-995b-30fb7e22f760,Fen Bilimleri,5,FB.5.6.3,orta,"Ampulün ışık vermesi için pil; elektrik devresi değişkenleri kazanımına yakın, gereklilik açıkça yok.",oneri
+bee47420-59eb-4055-abfe-7f3d5182b486,Fen Bilimleri,5,FB.5.4.1,dusuk,"Doğal ışık kaynağı (Güneş); ışık kaynağı kazanımına dolaylı, doğal-yapay ayrımı açıkça yok.",oneri
+c5be1db4-0a72-44ae-94a9-4e211f359c39,Fen Bilimleri,5,,,Haberleşme araçlarının tarihsel sıralaması; adaylarda teknoloji tarihi kazanımı yok.,eslesme_yok
+d047163f-bc5e-4851-bc24-bd3521e266f9,Fen Bilimleri,5,FB.5.1.4,yuksek,Gece ve gündüzün nedeni (Dünya'nın kendi ekseni etrafında dönmesi); gök cisimlerinin hareketleri kazanımıyla uyumlu.,oneri
+fa985549-dc71-41f3-ab89-c98fdc8c0039,Fen Bilimleri,5,FB.5.7.1,yuksek,Geri dönüştürülebilen atık (cam şişe); evsel atıkları geri dönüştürülebilen ve dönüştürülemeyen olarak sınıflandırma kazanımıyla birebir.,oneri
+00b9e1bc-73a0-4ac9-a039-f924cd3346a1,Matematik,5,MAT.5.1.2,yuksek,Restoran hesabının paylaşımı; doğal sayılar ve işlemlerle gerçek yaşam problemi kazanımıyla birebir.,oneri
+11ac2091-aeec-418e-88df-1eee68e68708,Matematik,5,,,"Kalanlı bölmede en büyük bölünen; adaylarda kalanlı bölme kazanımı yok, en yakın kazanım bu soruyu tam ölçmüyor.",eslesme_yok
+16138e56-025b-418b-a371-7f025802cf72,Matematik,5,MAT.5.1.1,orta,"Altı basamaklı sayının basamak değerlerine göre çözümlenmesi; okuma-yazma kazanımına yakın, çözümleme açıkça yok.",oneri
+19574617-e73c-4841-982a-b45ed3204737,Matematik,5,MAT.5.1.2,yuksek,Kitabın kalan sayfa sayısı; doğal sayılarla gerçek yaşam problemi kazanımıyla birebir.,oneri
+1b8503c9-ccb3-4f84-a40b-3884d4194825,Matematik,5,MAT.5.2.1,yuksek,Bilinmeyen sayının eşitlik üzerinden bulunması; eşitliğin korunumu ve işlem özelliklerine dair kazanımla uyumlu.,oneri
+214bc118-a275-438b-95a7-92f7c5bd7bfc,Matematik,5,MAT.5.2.3,yuksek,Sayı örüntüsünde kuralı bulup farkı hesaplama; sayı örüntüsü kuralına ilişkin muhakeme kazanımıyla birebir.,oneri
+229ac134-fc30-4da2-a4fe-1e85c89e187a,Matematik,5,MAT.5.1.2,yuksek,Kutulardaki kalem sayısı; doğal sayılarla gerçek yaşam problemi kazanımıyla birebir.,oneri
+2683adcc-2444-412c-82b7-55b1cc228e81,Matematik,5,MAT.5.1.1,dusuk,"Çift sayıyı seçme; altı basamaklı sayıları okuma-yazma kazanımına dolaylı, çift-tek kavramı açıkça yok.",oneri
+2c6ae505-10bd-4a22-ba86-014d0654d5cf,Matematik,5,MAT.5.2.3,yuksek,Sayı örüntüsünde sıradaki sayı; örüntü kuralına ilişkin muhakeme kazanımıyla birebir.,oneri
+2fc71062-5f29-4ce1-abac-cd21c9612cbb,Matematik,5,MAT.5.1.2,yuksek,İleri-geri adım problemi; doğal sayılarla gerçek yaşam problemi kazanımıyla birebir.,oneri
+344597d5-596d-423c-90a9-b09fbba26622,Matematik,5,MAT.5.1.1,dusuk,"En yakın yüzlüğe yuvarlama; kazanım yuvarlamayı açıkça içermiyor, sayı okuma-yazma ile dolaylı ilişki.",oneri
+3b02d84d-afc0-4930-8bfd-9219816813eb,Matematik,5,MAT.5.1.1,orta,"Basamak değeri (5 000); çok basamaklı sayıların temsili kazanımına yakın, basamak değeri açıkça yok.",oneri
+3cdc6de5-068e-476e-902f-ec1ddc6a2c49,Matematik,5,MAT.5.2.4,orta,"936 ÷ 9 bölme işlemi; temel aritmetik algoritmaları kazanımına yakın, algoritma yorumu açıkça yok.",oneri
+3e3249c4-a5d8-4244-96ab-486d98fb2cc4,Matematik,5,,,En yakın kazanım MAT.5.2.4 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+42acc2ab-6a3e-4ea6-b27f-9108d44a749b,Matematik,5,,,En yakın kazanım MAT.5.2.4 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+45385713-ab41-4fa7-8b17-73ac0476bf03,Matematik,5,MAT.5.1.2,yuksek,125 öğrencinin sıralara oturması; doğal sayılarla gerçek yaşam problemi kazanımıyla birebir.,oneri
+4812620e-2f59-47da-b736-b4ed0ccd85d0,Matematik,5,,,En yakın kazanım MAT.5.2.4 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+4d590eed-1a2c-456b-9b75-8ee15d3536c1,Matematik,5,MAT.5.1.2,yuksek,Fazlalık-eksiklik ile toplam para problemi; doğal sayılarla gerçek yaşam problemi kazanımıyla birebir.,oneri
+517732ed-d16c-4c4e-bbaf-6c8787133baf,Matematik,5,MAT.5.1.1,orta,"Aynı rakamların basamak değerleri farkı; çok basamaklı sayılar kazanımına yakın, basamak değeri açıkça yok.",oneri
+52618d26-7876-4f9b-aad4-2536e6836aae,Matematik,5,MAT.5.1.2,yuksek,Toplam kitap sayısı problemi; doğal sayılarla gerçek yaşam problemi kazanımıyla birebir.,oneri
+54b9dee4-a1c5-49ac-bb85-8934b415c0c6,Matematik,5,MAT.5.1.1,orta,"Sayıdaki bölük sayısı; çok basamaklı sayıların yapısına yakın, bölük kavramı açıkça yok.",oneri
+5778787b-f460-4119-9799-edb3b967cfff,Matematik,5,MAT.5.1.2,yuksek,Birim fiyat üzerinden 8 defterin fiyatı; gerçek yaşam problemi kazanımıyla birebir.,oneri
+6b6a597b-fc3b-4a66-a00f-fa029781bd86,Matematik,5,MAT.5.2.2,yuksek,İşlem önceliğine göre sonuç; işlem önceliğini yorumlama kazanımıyla birebir.,oneri
+727d6651-6dea-401e-8bb9-c12c4fa7fedd,Matematik,5,MAT.5.1.1,yuksek,Sayının okunuşundan yazılışını bulma; altı basamaklı sayıları okuma ve yazma kazanımıyla birebir.,oneri
+73e93f80-2c13-4459-aaf1-613a6721a5a8,Matematik,5,MAT.5.2.4,orta,"Kalansız bölünebilme (paket sayısı); aritmetik işlem kazanımına yakın, bölünebilme kavramı açıkça yok.",oneri
+77345bf7-519d-4c8c-8852-e389906529b1,Matematik,5,MAT.5.1.2,yuksek,168 elmanın 7 sepete paylaştırılması; doğal sayılarla bölme problemi kazanımıyla birebir.,oneri
+777485fe-7a9a-4246-944e-02b77f3b275b,Matematik,5,MAT.5.1.2,yuksek,Koyun-tavuk toplam ayak problemi; doğal sayılarla gerçek yaşam problemi kazanımıyla birebir.,oneri
+79fc7ec1-6cc8-4ef7-888a-35304dcbb0fa,Matematik,5,MAT.5.1.1,dusuk,En yakın yüzlüğe yuvarlanan en büyük ve en küçük sayılar; kazanım yuvarlamayı açıkça içermiyor.,oneri
+7a5e2a0b-b49c-4865-bea6-fb57235ab698,Matematik,5,MAT.5.1.1,orta,"Rakamlardan en küçük tek beş basamaklı sayı; çok basamaklı sayıların yazılışına yakın, tek-çift koşulu açık değil.",oneri
+7c5851ef-ac3b-4049-adec-605383be0f74,Matematik,5,MAT.5.1.1,orta,"Sayıları küçükten büyüğe sıralama; çok basamaklı sayıların karşılaştırılması kazanımına yakın, sıralama açıkça yok.",oneri
+8bc9e863-5f17-4788-aaa5-bba04777b5e9,Matematik,5,,,En yakın kazanım MAT.5.2.4 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+93165a9a-725b-465b-9446-7f6327bf1bc4,Matematik,5,MAT.5.2.4,orta,"50 ile kısa yoldan çarpmanın yöntemi; temel aritmetik algoritmaları yorumlama kazanımına yakın, zihinden yöntem açıkça yok.",oneri
+94ec072e-e22a-4d66-82c9-ec6a6b236433,Matematik,5,,,En yakın kazanım MAT.5.2.4 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+97026a44-dc45-4aee-b232-7a8013ee7072,Matematik,5,MAT.5.2.2,yuksek,Parantez ve bölme-toplama önceliği ile sonuç; işlem önceliğini yorumlama kazanımıyla birebir.,oneri
+9bd54bd4-5e75-45f9-8c07-94d3edf46fe4,Matematik,5,MAT.5.1.2,yuksek,Anne-çocuk yaş problemi; doğal sayılarla gerçek yaşam problemi kazanımıyla birebir.,oneri
+9c6e0666-d2d3-4328-8a2a-6152130bfc46,Matematik,5,MAT.5.2.1,yuksek,Terimler arası ilişkiden eksilen bulma; eşitliğin korunumu ve işlem özelliklerine dair kazanımla uyumlu.,oneri
+9ce9c182-4fa3-4504-ab86-6a2f64f7f90d,Matematik,5,MAT.5.1.1,dusuk,"Roma rakamlarıyla toplama; sayı gösterimi kazanımına dolaylı, Roma rakamı adaylarda açık değil.",oneri
+9d700db1-8320-4eb9-8b8b-1134ef6f47b9,Matematik,5,,,En yakın kazanım MAT.5.2.4 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+ad26f989-3032-47db-8242-34d68ef7d727,Matematik,5,,,En yakın kazanım MAT.5.2.4 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+ae86e6a1-d442-49b5-bc8c-e567fc11cd29,Matematik,5,MAT.5.2.2,yuksek,18 + 6 × 4 işlem önceliği; işlem önceliğini yorumlama kazanımıyla birebir.,oneri
+b43bfeda-cd36-4200-8339-12a4490be81f,Matematik,5,MAT.5.1.2,yuksek,Kuyruk sırası üzerinden toplam kişi; doğal sayılarla gerçek yaşam problemi kazanımıyla birebir.,oneri
+b505ebbe-518c-4bdc-b108-a4fed7f35435,Matematik,5,MAT.5.1.2,yuksek,Kümeslerdeki tavuk ve satış problemi; doğal sayılarla iki işlemli gerçek yaşam problemi kazanımıyla birebir.,oneri
+b6c0eee1-a28a-43bf-a523-d683e40ab802,Matematik,5,MAT.5.1.1,orta,Sayının çözümlenmiş biçimden bulunması; çok basamaklı sayıların temsili kazanımına yakın.,oneri
+beae3b7d-3e9c-4c71-8d98-c094639bf27e,Matematik,5,MAT.5.1.1,orta,"Binler bölüğündeki basamak değerleri toplamı; çok basamaklı sayılar kazanımına yakın, bölük açıkça yok.",oneri
+c2700e93-ae3b-40da-bb63-3cfaae685941,Matematik,5,MAT.5.1.1,dusuk,En yakın binliğe yuvarlama; kazanım yuvarlamayı açıkça içermiyor.,oneri
+c39e0bf8-c2d1-42f2-b209-694492fd4435,Matematik,5,MAT.5.1.1,orta,"Basamak değeri ile sayı değeri farkı; çok basamaklı sayılar kazanımına yakın, fark açıkça yok.",oneri
+d7afe107-c2ea-45c6-855d-e9ee9376a85e,Matematik,5,,,En yakın kazanım MAT.5.2.4 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+f059550e-07bf-4782-8860-afd46de5b3bb,Matematik,5,MAT.5.2.2,yuksek,Parantez önceliğiyle bölme; işlem önceliğini yorumlama kazanımıyla birebir.,oneri
+f94463b6-87b8-47eb-9c5b-f92be614bebf,Matematik,5,MAT.5.1.1,orta,"Rakamlardan en büyük dört basamaklı çift sayı; çok basamaklı sayılar kazanımına yakın, çift koşulu açık değil.",oneri
+ff0d5fa7-df83-47b0-b003-e1e53faed07d,Matematik,5,,,En yakın kazanım MAT.5.2.4 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+03e73d7f-1313-45f0-931d-a18ae8826665,Sosyal Bilgiler,5,SB.5.4.3,orta,"Her çocuğun temel hakkı (eğitim); temel insan hak ve sorumluluklarının önemine yakın, sorgulama fiili kısmen örtüşüyor.",oneri
+0f3244a9-380c-4f30-b4bd-8f4a21e42782,Sosyal Bilgiler,5,,,29 Ekim milli bayramı; en uygun belirli gün/millî bayram kazanımı aday listesinde yok.,eslesme_yok
+1a510aee-b04d-4fc2-b321-26f277324210,Sosyal Bilgiler,5,,,"Mustafa Kemal'in 19 Mayıs 1919'da çıktığı şehir; Milli Mücadele kazanımı aday listesinde yok, aday üretici kaçırdı.",eslesme_yok
+2e29a02c-6f38-413a-b2c8-1b474086e981,Sosyal Bilgiler,5,,,Ana ve ara yönler; adaylarda yön ve konum kazanımı yok.,eslesme_yok
+41dd00a0-b757-4843-b751-e9a7c9c61cb6,Sosyal Bilgiler,5,SB.5.6.1,dusuk,"Ampulü geliştiren bilim insanı; teknolojik gelişmelerin toplum etkisi kazanımına dolaylı, bilim insanı açıkça yok.",oneri
+5fafe476-993b-4401-96dc-4da84a9d90ac,Sosyal Bilgiler,5,,,23 Nisan'ın anlamı (TBMM); belirli gün/millî egemenlik kazanımı aday listesinde yok.,eslesme_yok
+767f5bd2-da3b-4633-8dc5-7c9c70816cd3,Sosyal Bilgiler,5,,,19 Mayıs'ın armağan edildiği kesim; belirli gün/millî bayram kazanımı aday listesinde yok.,eslesme_yok
+7862b0a0-0d29-42cc-93c6-3d49e5307c64,Sosyal Bilgiler,5,SB.5.2.2,orta,"Beşerî (insan yapımı) unsur olarak yolu seçme; doğal ve beşerî çevre kazanımına yakın, tanım açıkça yok.",oneri
+7897b921-0776-47f8-bcf9-6a91f442f1b0,Sosyal Bilgiler,5,SB.5.5.2,yuksek,Gelir-gider planı olarak bütçe; ihtiyaç ve isteklerin bütçe kaynaklarıyla yönetilmesi kazanımıyla uyumlu.,oneri
+a4107550-b50f-4113-99a5-9b1f3b18b2f9,Sosyal Bilgiler,5,SB.5.5.2,orta,"Temel ihtiyacın beslenme olduğu; ihtiyaç-istek ayrımına yakın, kazanım bütçe odaklı.",oneri
+ad5e5c88-05b2-4b46-b789-da4f5b2de051,Sosyal Bilgiler,5,,,Güneşin doğduğu yön; adaylarda yön ve konum kazanımı yok.,eslesme_yok
+b8e33849-3959-48c4-a853-45404ed4bc44,Sosyal Bilgiler,5,SB.5.4.4,yuksek,Kimlik ve doğum kaydı için başvurulan kurum; başvurulabilecek kurumlar kazanımıyla birebir.,oneri
+c94adb61-cd52-4af3-ad90-17bbe75d6564,Sosyal Bilgiler,5,SB.5.2.3,orta,"Deprem anında güvenli davranış; afet etkilerini azaltmaya yönelik kazanıma yakın, davranış açıkça yok.",oneri
+cd3c667f-dade-49ba-b0d3-ff392a9292ac,Sosyal Bilgiler,5,SB.5.3.1,orta,Geleneksel el sanatlarının kültürel miras olarak örneklenmesi; ortak miras ögeleri kazanımına yakın.,oneri
+d1f84586-6dbd-4ac5-b072-e0ba354a5565,Sosyal Bilgiler,5,,,Kuzeyi gösteren yön bulma aracı (pusula); adaylarda yön bulma kazanımı yok.,eslesme_yok
+da7a0942-39d8-4fa7-b57f-891a1684c2e5,Sosyal Bilgiler,5,SB.5.4.3,orta,Görevlerin yerine getirilmesi olarak sorumluluk; temel hak ve sorumluluklar kazanımına yakın.,oneri
+e0078818-bf77-44fd-85c3-9b4e346d259f,Sosyal Bilgiler,5,,,Atatürk'ün doğum yeri; adaylarda Atatürk'ün hayatı kazanımı yok.,eslesme_yok
+e41faed3-6b1e-4657-bc69-e17d3504a998,Sosyal Bilgiler,5,SB.5.2.2,orta,"Doğal varlık (dağ); doğal ve beşerî çevre kazanımına yakın, ayrım açıkça yok.",oneri
+fa49ce58-7b23-4480-9041-9bc5d58bda18,Sosyal Bilgiler,5,,,Kroki tanımı; adaylarda kroki kazanımı yok.,eslesme_yok
+fcaad027-e1b8-4f31-a6e2-900310d7edcf,Sosyal Bilgiler,5,SB.5.2.4,dusuk,"Türkiye'nin yer aldığı kıtalar; komşu devletler kazanımına dolaylı, kıta bilgisi açıkça yok.",oneri
+17dc3d6f-584c-4484-87a7-e1beeab18f8a,Türkçe,5,,,Neden-sonuç ilişkisi; adaylarda cümlede anlam ilişkisi kazanımı yok.,eslesme_yok
+25976a0b-6b5f-44ae-9364-47216e327fb2,Türkçe,5,T.Y.5.16,yuksek,"""de"" bağlacının yanlış yazımını bulma; yazım ve noktalama kurallarını uygulama kazanımıyla birebir.",oneri
+4900096e-29cb-41df-a9a7-5cf46f9a821e,Türkçe,5,T.O.5.20,dusuk,"Zıt anlamlı sözcük; adaylarda sözcük anlamı kazanımı yok, en yakın söz varlığı çözümleme kazanımı.",oneri
+56bf1247-7ccf-42aa-9765-5eb989539e9c,Türkçe,5,T.O.5.20,dusuk,"Eş anlamlı sözcük; adaylarda sözcük anlamı kazanımı yok, en yakın söz varlığı çözümleme kazanımı.",oneri
+6a1ead3a-b70d-40d8-9cbb-4e3aa2c7903f,Türkçe,5,,,En yakın kazanım T.O.5.20 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+6d30aee9-96fd-42e3-bd7b-3770c9137f96,Türkçe,5,T.Y.5.16,yuksek,Virgül yerlerini sayma; yazım ve noktalama işaretleri kurallarını uygulama kazanımıyla birebir.,oneri
+71b26127-118e-4940-82f9-744a21f12a7b,Türkçe,5,T.Y.5.16,yuksek,Büyük harf kullanımındaki yanlışı bulma; yazım kurallarını uygulama kazanımıyla birebir.,oneri
+80d2b943-48c2-4390-ad88-de972ccfdded,Türkçe,5,,,Sözcük türü (sıfat); adaylarda dilbilgisi sözcük türü kazanımı yok.,eslesme_yok
+83af6a8f-184d-4da3-8ad2-2363b917244e,Türkçe,5,,,Sözcüğün hece sayısı; adaylarda hece/ses bilgisi kazanımı yok.,eslesme_yok
+8947b7e8-dd83-4b02-8832-bf160c464d7d,Türkçe,5,,,Sözcük kökü; adaylarda sözcük yapısı kazanımı yok.,eslesme_yok
+8a527b65-4f77-4149-8e8d-8e02c56443ca,Türkçe,5,T.O.5.20,dusuk,"Sesteş sözcüğün cümledeki anlamı; adaylarda sözcük anlamı kazanımı yok, en yakın söz varlığı kazanımı.",oneri
+99bfd8ae-14fb-4203-9a8c-6caad204fd05,Türkçe,5,T.Y.5.16,yuksek,Soru işareti gerektiren cümleyi seçme; yazım ve noktalama işaretleri kurallarını uygulama kazanımıyla birebir.,oneri
+b0c33c92-5e93-4a2c-9ed3-3a81f253e35c,Türkçe,5,T.O.5.6,yuksek,Paragrafta açıkça belirtilmeyen faydayı bulma; metnin yüzey anlamını belirleme kazanımıyla uyumlu.,oneri
+ba5143a4-20e9-444d-9084-cadb3c0377c1,Türkçe,5,T.O.5.5,orta,Deyimin anlamını bağlamdan çıkarma; anlamını bilmediği söz varlığı unsurlarını tahmin etme kazanımına yakın.,oneri
+d3e778b9-6943-4aa1-808a-3b2b271c0319,Türkçe,5,T.O.5.20,dusuk,"Eş anlamlı sözcük; adaylarda sözcük anlamı kazanımı yok, en yakın söz varlığı çözümleme kazanımı.",oneri
+d7b24330-6661-4e2e-8b89-1cd3836fde45,Türkçe,5,,,Cümledeki karşılaştırma anlam ilişkisi; adaylarda cümlede anlam ilişkisi kazanımı yok.,eslesme_yok
+d8685121-70b8-4770-9e3c-22e1edd5a87a,Türkçe,5,,,Alfabetik sıralama; adaylarda sözlük kullanımı kazanımı yok.,eslesme_yok
+dcc867d2-ff3f-42e1-9579-60073dc62021,Türkçe,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+e7d75cc8-f235-460b-bde3-a45274bd3b99,Türkçe,5,T.O.5.20,orta,Atasözünün asıl mesajı; metinden hareketle söz varlığını çözümleme kazanımına yakın.,oneri
+ef557c0b-e4b1-4b74-b2fe-ab52552e5ea8,Türkçe,5,T.Y.5.16,yuksek,"""mi"" soru ekinin yanlış yazımını bulma; yazım kurallarını uygulama kazanımıyla birebir.",oneri
+0b233d44-8fef-4262-8a80-277b8bba5bb7,İngilizce,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+0fe9dd70-c987-466c-b988-7eec46119ae8,İngilizce,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+1e76aeeb-85c1-4905-91e6-9ff03f20d83c,İngilizce,5,ENG.5.1.L3,dusuk,"Monday'den sonraki gün; okul ünitesi (günler) uyumlu, vocabulary kazanımı aday listesinde yok, belirsiz.",oneri
+27a6830d-2d46-4322-bd36-47c72bb6d3fd,İngilizce,5,ENG.5.3.L3,dusuk,"Kışın giyilen giysi (coat); giysi ünitesi uyumlu, vocabulary kazanımı aday listesinde yok, belirsiz.",oneri
+41f9dc10-26c3-418e-8de1-a07be10f92ed,İngilizce,5,,,"Bisiklet sürme (ride); yetenek ünitesi aday listesinde yok, ENG.5.4 ünitesi (aile) uyumsuz.",eslesme_yok
+4b15550e-9e47-4959-8000-dfa266bea299,İngilizce,5,,,"Çoğul yapım (books); gramer kazanımı tek bir ünitede değil, aday listesi uygun birimi göstermiyor.",eslesme_yok
+509ccd98-61e8-4ec5-a389-42e8116b8b1c,İngilizce,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+616dfdea-ec7a-4280-ad64-31d2900534fa,İngilizce,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+6af55556-c47f-41c1-a386-5da00a07149a,İngilizce,5,,,"Duygu sözcüğü (happy); aday ünite (okul hayatı) uyumsuz, duygu ünitesi aday listesinde yok.",eslesme_yok
+81184238-4f1a-4b69-8f67-b2c4f5b352c6,İngilizce,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+9df89376-fff7-4c94-bf9c-1b6c42ec612f,İngilizce,5,ENG.5.4.L3,dusuk,"Parents (ebeveyn) sözcüğü; aile ünitesi uyumlu, vocabulary kazanımı aday listesinde yok, belirsiz.",oneri
+a151f69c-bc83-4aa7-a30d-ff2c9c6e49bc,İngilizce,5,,,"Meslek sözcüğü (doctor); meslekler ünitesi aday listesinde yok, okul ünitesi uyumsuz.",eslesme_yok
+a27c630e-ea2c-4b7c-9f8a-a032769d8f25,İngilizce,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+a4fbebd8-63b9-4cf1-8055-336d187dbf1a,İngilizce,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+acaad916-bdf7-485d-ade9-81f3d0d5be56,İngilizce,5,ENG.5.1.R3,dusuk,"Yaş söyleme (old); okul ve kişisel bilgi ünitesi kısmen uyumlu, kazanım açıkça yaşı kapsamıyor.",oneri
+b7f6cb44-4485-4812-80db-53848e2beead,İngilizce,5,ENG.5.2.L3,orta,Sınıf yönergesi (close the door); sınıf ünitesi ve yönergeleri anlama kazanımına yakın.,oneri
+d58ea921-2277-44a7-be99-95c76835424a,İngilizce,5,ENG.5.1.L3,dusuk,"Milliyet (Turkish); okul ünitesi uyumsuz, milliyet kazanımı aday listesinde yok, belirsiz.",oneri
+da3bd148-689a-42a7-a9da-ace96cbf66aa,İngilizce,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+e1926325-f8cf-442c-bb40-b0f9e899799a,İngilizce,5,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+fe73af6d-8d59-4d68-82f5-0e423321a5fa,İngilizce,5,ENG.5.6.L3,dusuk,"Hoşlanma ifadesi (like); yiyecek ünitesi uyumlu, dil kullanımı kazanımı aday listesinde yok, belirsiz.",oneri
+1b1e5363-67c7-4b98-902e-53757c497b03,Din Kültürü,6,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+20066d33-1555-4bef-9bcd-2b9f3907ae3f,Din Kültürü,6,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+27c3cfbc-1a55-4ab3-af18-503740cbbf6a,Din Kültürü,6,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+4f8df30e-7e6c-4b71-8bb3-50e3b1ade33e,Din Kültürü,6,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+6b122430-3a19-42e1-a66d-fb7f938a8b37,Din Kültürü,6,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+716de301-38a9-44c3-b2c5-49e63a495e0c,Din Kültürü,6,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+9eb12ca5-dbef-4234-b3ad-893267cee2fc,Din Kültürü,6,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+aaed7cd3-b9da-4526-badc-3cd4d6cbeae7,Din Kültürü,6,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+bf807c19-8b39-477a-b4f0-41c2409c2c72,Din Kültürü,6,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+e8e8968c-fc21-448a-b788-6d81a0045e61,Din Kültürü,6,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+07068972-8e24-4c4e-95a9-a057c8ae30a8,Fen Bilimleri,6,,,Solunum organı (akciğer); adaylarda solunum sistemi kazanımı yok.,eslesme_yok
+09cdbf58-41bd-4c28-b373-040b88944748,Fen Bilimleri,6,FB.6.5.1,yuksek,Isıtılan metalin hacminin artması; ısı etkisiyle maddelerin genleşmesine dair kazanımla birebir.,oneri
+1a8bd0fd-13f2-4c80-a7bf-ea605d15fdf0,Fen Bilimleri,6,,,Sesin yüksekliği ve titreşim sıklığı; adaylarda ses kazanımı yok.,eslesme_yok
+1b7cc09f-024e-402f-b6e4-aba540e0082c,Fen Bilimleri,6,FB.6.1.1,orta,Güneş'e en yakın gezegen (Merkür); gezegenleri niteliklerine göre sınıflandırma kazanımına yakın.,oneri
+5fb3782b-3dc0-4d2f-9f99-863502542ff6,Fen Bilimleri,6,,,Bitki hücresine özgü kloroplast; adaylarda hücre yapısı kazanımı yok.,eslesme_yok
+8a2fc782-f547-4f50-81f4-5d0f0804bfc4,Fen Bilimleri,6,,,Besinlerin parçalanması (sindirim); adaylarda sindirim sistemi kazanımı yok.,eslesme_yok
+9c5232c2-f19a-4027-a3ca-a3bc0bac48ae,Fen Bilimleri,6,FB.6.2.1,yuksek,Zıt yönlü iki kuvvetin bileşkesi; aynı doğrultudaki kuvvetler arasındaki ilişkiyi açıklama kazanımıyla birebir.,oneri
+aad107da-744c-4f80-9f0e-820ec7d8b9fc,Fen Bilimleri,6,,,Isı iletimine göre iletken madde tanımı; adaylarda ısı iletimi kazanımı yok.,eslesme_yok
+d260e58c-98ba-44b1-952f-9359a459d776,Fen Bilimleri,6,FB.6.2.1,yuksek,Aynı yönlü iki kuvvetin bileşkesi; aynı doğrultudaki kuvvetler kazanımıyla birebir.,oneri
+e9e3e031-c1ce-4550-95b2-384e98a74494,Fen Bilimleri,6,FB.6.6.1,orta,"Elektriği iletmeyen madde (plastik); elektrik iletkenliği deneyi kazanımına yakın, deney açıkça sorulmuyor.",oneri
+0b4af0c8-9977-447f-b9f5-44ffe54cf8ef,Matematik,6,MAT.6.4.3,orta,"Kenarı verilen karenin alanı; geometrik şekil alanları kazanımına yakın, hesaplama açıkça yazılı değil.",oneri
+116cdc4c-3474-489a-841f-679df7cbce73,Matematik,6,MAT.6.1.4,yuksek,İki sayının EKOK'u; ortak kat ve ortak bölen kazanımıyla birebir.,oneri
+4fd0ed04-a9d3-4cb6-b84c-24c7bc324fad,Matematik,6,MAT.6.1.7,dusuk,"Kesirlerin toplanması; kesir gösterimleri kazanımına dolaylı, kesirlerde toplama adaylarda açık değil.",oneri
+674263a4-00b7-4fba-98e6-faa4c65c1bbf,Matematik,6,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+b3d05565-c360-4fcc-9f6d-d37e73a394e2,Matematik,6,MAT.6.2.3,orta,"Çok işlemli ifadede işlem önceliği; cebirsel ifade algoritmaları kazanımına yakın, öncelik açıkça yok.",oneri
+bc9f87f4-80bc-4673-9c38-c724c62549ac,Matematik,6,MAT.6.2.3,dusuk,"Üslü ifadenin değeri (2^4); algoritma kazanımına dolaylı, üslü sayı adaylarda açık değil.",oneri
+c1cc91f1-0eb5-444a-80a3-81e7d271f91c,Matematik,6,MAT.6.3.4,yuksek,Üçgenin iç açıları toplamı; üçgen açılarıyla ilgili kazanımla birebir.,oneri
+d6a73e2b-ad65-4188-beb9-e3dba2fb4eff,Matematik,6,MAT.6.1.4,yuksek,İki sayının EBOB'u; ortak böleni bulma kazanımıyla birebir.,oneri
+f05b5c32-6089-4947-a1c9-0c661b6a47af,Matematik,6,MAT.6.1.5,orta,"Ondalık sayıların çarpımı; ondalık gösterim kazanımına yakın, çarpma açıkça yazılı değil.",oneri
+f21ab96d-6078-4d76-88ed-d811dcf9ebe4,Matematik,6,MAT.6.2.1,yuksek,Bilinmeyeni bulma (x + 7 = 15); bilinen niceliklerden bilinmeyeni bulma kazanımıyla uyumlu.,oneri
+077070bc-6402-421e-947c-a13f4805dd35,Sosyal Bilgiler,6,SB.6.2.1,yuksek,Türkiye'nin yer aldığı kıtalar; ülkemizin konum özelliklerini algılama kazanımıyla birebir.,oneri
+0a00a552-3251-4fbf-bfc9-b95f79b2d8b1,Sosyal Bilgiler,6,SB.6.2.2,orta,"Yeryüzü şekli (plato) tanımı; doğal çevre özellikleri kazanımına yakın, şekil açıkça yok.",oneri
+1323a8db-4205-4e59-92e8-9abc418c898e,Sosyal Bilgiler,6,SB.6.5.1,orta,Doğal kaynakların bilinçli kullanımının önemi; kaynaklar ile ekonomik faaliyet ilişkisine yakın.,oneri
+3bb983eb-9b76-4787-9f04-cf8b5e1af762,Sosyal Bilgiler,6,SB.6.4.1,orta,"Demokraside yöneticilerin seçimle belirlenmesi; yönetimin karar alma sürecine yakın, seçim açıkça yok.",oneri
+523dde86-9cdc-4999-a268-e4e709177c32,Sosyal Bilgiler,6,SB.6.5.1,orta,"Ürün yetiştirme/yapma tanımı (üretim); ekonomik faaliyetler kazanımına yakın, kavram açıkça yok.",oneri
+57db1f21-75f6-4897-a04e-da0f7dcbaec0,Sosyal Bilgiler,6,SB.6.1.2,dusuk,"Somut olmayan kültürel miras (türkü); kültürel değerler kazanımına dolaylı, miras kavramı açıkça yok.",oneri
+93deb5cf-1735-400d-ab81-97ada3d482e0,Sosyal Bilgiler,6,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+95845413-7ebf-47b8-a0eb-cb5cc00a835f,Sosyal Bilgiler,6,,,Dönem ölçüsü (yüzyıl); adaylarda tarih ve zaman ölçüsü kazanımı yok.,eslesme_yok
+d3f3c796-ae26-450c-bd99-8e6a539092ac,Sosyal Bilgiler,6,SB.6.4.3,dusuk,"Çocuğun eğitim hakkı; vatandaşlık hakları kazanımına dolaylı, çocuk hakları açıkça yok.",oneri
+e73c91fc-498e-4cc4-9d98-c909474078da,Sosyal Bilgiler,6,SB.6.3.1,orta,"İlk yazılı Türk belgesi (Orhun Yazıtları); ilk Türk devletlerine ilişkin kazanıma yakın, belge açıkça yok.",oneri
+0379223d-a1d1-4d04-80e0-7ece32a68873,Türkçe,6,T.O.6.5,orta,Deyimin anlamını bağlamdan tahmin etme; anlamını bilmediği söz varlığı unsurlarını tahmin etme kazanımına yakın.,oneri
+14319301-a8b8-401a-96c1-e924ff3cb69c,Türkçe,6,T.O.6.21,orta,Atasözünün mesajı; metinden hareketle söz varlığını çözümleme kazanımına yakın.,oneri
+205b4338-a34a-4d47-b345-9f8d6fec69b9,Türkçe,6,,,En yakın kazanım T.O.6.21 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+2a8e5339-b85d-4fa5-b8eb-d3087953c5e0,Türkçe,6,T.Y.6.21,yuksek,İki noktanın kullanım amacını seçtirme; yazım kuralları ve noktalama işaretlerini uygulama kazanımıyla uyumlu.,oneri
+70a03f85-a8cb-45c2-8b76-5d7d84501677,Türkçe,6,T.Y.6.21,yuksek,Sayıların doğru yazımını seçtirme; yazım kurallarını uygulama kazanımıyla birebir.,oneri
+7bb76759-a81b-4cdb-a7da-8ec25a1ab08d,Türkçe,6,,,Öznel/nesnel yargı ayrımı; adaylarda yargı türü kazanımı yok.,eslesme_yok
+83c62b7a-7e9e-4d7a-a3d2-045f9336456d,Türkçe,6,,,Fiilin zamanı (gelecek); adaylarda fiil zamanı kazanımı yok.,eslesme_yok
+90564862-4cf3-42b9-ae0c-11523bbb0c79,Türkçe,6,T.D.6.18,orta,"Benzetme söz sanatının belirlenmesi; söz sanatlarını belirlemeye yönelik kazanıma yakın, ancak kazanım dinleme için.",oneri
+ad96b14b-b1c2-4a4d-9251-5d63c8a11b82,Türkçe,6,,,Cümledeki neden-sonuç ilişkisinde sonucu bulma; adaylarda cümlede anlam ilişkisi kazanımı yok.,eslesme_yok
+e47d57aa-acba-421b-b3a0-45327667ef17,Türkçe,6,,,En yakın kazanım T.O.6.21 aday listesinde yer almıyor (aday üretici kaçırdı); bu soru yeniden aday listesiyle sınıflandırılmalı.,eslesme_yok
+04f64329-a877-457a-b117-ecc0e55a9747,İngilizce,6,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+2038218e-7df3-47b2-b929-65a89c9b7fde,İngilizce,6,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+28fc9871-8606-4fa1-be53-87c653113547,İngilizce,6,ENG.6.4.L3,dusuk,"Teacher (öğretmen) sözcüğü; meslekler ünitesi uyumlu, vocabulary kazanımı aday listesinde yok, belirsiz.",oneri
+58f46e55-a9aa-4686-8cfe-be4e99519210,İngilizce,6,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+6ac27db4-d282-4162-90c8-c5be9b838ff9,İngilizce,6,ENG.6.2.L3,orta,Günlük rutin cümlesinin anlamı; günlük yaşam ünitesi ve anlam çıkarma kazanımına yakın.,oneri
+6fffd04c-b021-4caf-a67d-53860737357d,İngilizce,6,ENG.6.4.L3,dusuk,"Brother (erkek kardeş) sözcüğü; aile ünitesi uyumlu, vocabulary kazanımı aday listesinde yok, belirsiz.",oneri
+9e6e20ea-5aae-4740-8b8f-14e5c2ad7cc2,İngilizce,6,ENG.6.1.G1,orta,"Geniş zaman fiil çekimi (goes); dilbilgisi hedefi kazanımına yakın, ünite açıkça belirtilmemiş.",oneri
+a3206bed-5353-4a55-8ce2-2e329b1d5739,İngilizce,6,ENG.6.1.R3,dusuk,"Hobi cümlesinin anlamı; okul ünitesi uyumsuz, hobi kazanımı aday listesinde yok, belirsiz.",oneri
+ede460dc-06ab-4efa-9140-3c916de035db,İngilizce,6,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+f5b1c502-3324-405c-9093-7baf4646dc9d,İngilizce,6,ENG.6.3.L3,dusuk,"Where are you from (nereli); kişisel bilgi ünitesi uyumlu, kazanım açıkça bu soruyu kapsamıyor.",oneri
+01f2a80f-082a-4eea-852b-0b60a8d5a38d,Din Kültürü,7,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+1ad1a57f-211f-4916-b21c-a20c6865a9ef,Din Kültürü,7,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+322365e9-767f-4fbb-aa13-6f08bb876cac,Din Kültürü,7,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+44853558-fd07-450d-8de1-ccf83abf3624,Din Kültürü,7,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+458dcfe7-c529-4d86-b8b4-af9e42296ee6,Din Kültürü,7,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+498dd494-2719-4982-92ef-93db91e7ca43,Din Kültürü,7,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+946525a8-e61f-4165-afdd-6e571cc0957c,Din Kültürü,7,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+c68ebc57-f8b1-4151-af3f-d01fd28c75f9,Din Kültürü,7,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+c9ce9551-ef06-4317-ba5d-a504bfeb1cfa,Din Kültürü,7,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+f97d7edb-ac0a-49b1-937b-a24592cc2162,Din Kültürü,7,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+108074d3-3f9e-4e95-be0d-97fcfb543089,Fen Bilimleri,7,FB.7.2.3,orta,Elektrik süpürgesindeki enerji dönüşümü; enerji dönüşümü ve korunum kazanımına yakın.,oneri
+42e3aa59-1294-4681-b3d1-5de555ff4454,Fen Bilimleri,7,FB.7.3.3,yuksek,Kanı pompalayan organ (kalp); dolaşım sistemi yapı ve organlarının görevleri kazanımıyla birebir.,oneri
+6f0ea5c7-4987-4cdd-bf0f-b878ca6441f5,Fen Bilimleri,7,,,Ampulün parlaklığı ve pil sayısı; adaylarda elektrik devresi kazanımı yok.,eslesme_yok
+78d63d57-a6ac-4cbe-9c00-9b3d23ccfa75,Fen Bilimleri,7,FB.7.5.10,orta,"Tuzlu sudan tuzun ayrılması; karışımları ayırma yöntemine yakın, buharlaştırma açıkça yazılı değil.",oneri
+90d257f0-1570-48e2-9272-cce952520504,Fen Bilimleri,7,FB.7.1.5,yuksek,Kendi ışığını üreten gök cismi (yıldız); yıldız ve evren kavramlarını açıklama kazanımıyla uyumlu.,oneri
+c65f7670-5414-4663-a34b-4481aee65990,Fen Bilimleri,7,FB.7.2.1,yuksek,Kuvvet yönünde yol alan cisim (iş yapılması); fiziksel anlamda yapılan işe bağlı faktörler kazanımıyla uyumlu.,oneri
+d6699dc9-9c78-4a06-b294-f15a572239ce,Fen Bilimleri,7,,,Sinir sisteminin denetleyici rolü; adaylarda sinir sistemi kazanımı yok.,eslesme_yok
+de630f60-5655-4a16-b52b-35449f6f1a25,Fen Bilimleri,7,,,Siyah cisimlerin ışığı soğurması; adaylarda ışığın soğurulması kazanımı yok.,eslesme_yok
+ea1942ff-9d9e-4ae5-a6bc-6c125547024c,Fen Bilimleri,7,FB.7.5.1,orta,"Maddenin en küçük yapı taşı (atom); atomun yapısını çözümleme kazanımına yakın, tanım açıkça yok.",oneri
+f45e8366-1693-4d6c-993c-f3ce1d19cff2,Fen Bilimleri,7,FB.7.7.1,dusuk,"Tozlaşmayı sağlayan canlılar; besin zinciri ilişkisi kazanımına dolaylı, tozlaşma adaylarda açık değil.",oneri
+0a657e26-150f-406c-86fa-cacc4fd35b50,Matematik,7,,,Dikdörtgenin tanımı; adaylarda dörtgen tanıma kazanımı yok.,eslesme_yok
+0c7c8329-6708-444b-9ed7-c0a22b0b41e3,Matematik,7,MAT.7.1.7,yuksek,Doğru orantı ile 7 kalemin fiyatı; gerçek yaşam durumlarında doğru orantılı problemleri çözme kazanımıyla birebir.,oneri
+0d7e18cf-609a-49a4-9769-a9389376ca0e,Matematik,7,MAT.7.2.1,orta,"Cebirsel ifadenin x = 4 için değeri; cebirsel ifadelerle işlem kazanımına yakın, değer hesabı açıkça yok.",oneri
+2fdd49bc-645a-4582-8fea-f2494bbd0d02,Matematik,7,MAT.7.2.2,yuksek,2x - 3 = 11 denklemi; birinci dereceden bir bilinmeyenli denklem kazanımıyla birebir.,oneri
+4124b01c-0f10-44f8-b63e-627534d96522,Matematik,7,MAT.7.1.3,yuksek,Kesirlerin büyüklük sıralaması; rasyonel sayıların karşılaştırma ve sıralama kazanımıyla birebir.,oneri
+68564729-acde-4117-aab3-8a9383e7c30a,Matematik,7,MAT.7.1.1,orta,"Tam sayılarla toplama; doğal, tam ve rasyonel sayıları tanıma kazanımına yakın, işlem açıkça yok.",oneri
+8484bbf0-86e0-4c3b-ac83-6503f1b47281,Matematik,7,,,Dörtgenin iç açılar toplamı; adaylarda çokgen açı kazanımı yok.,eslesme_yok
+a6bb0be6-b9a0-4a93-8b96-4787a3169cda,Matematik,7,MAT.7.1.2,yuksek,3/4 kesrinin ondalık gösterimi; rasyonel sayıların ondalık gösterimi kazanımıyla birebir.,oneri
+bac6603e-916d-43e7-90be-9118ec5bc15e,Matematik,7,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+f64cdd66-be3c-4e30-ac22-ecc4d0a9432f,Matematik,7,MAT.7.6.1,orta,"Sayıların aritmetik ortalaması; veri ile çalışma kazanımına yakın, ortalama açıkça yazılı değil.",oneri
+03341c6a-270d-439b-a7d8-09e221746538,Sosyal Bilgiler,7,SB.7.3.1,orta,"İstanbul'u fetheden padişah; Osmanlı Devleti'nin gelişimine ilişkin kazanıma yakın, fetih açıkça yok.",oneri
+3ffb45ba-6e06-4e9c-8d76-4046446c8111,Sosyal Bilgiler,7,,,Nüfus yoğunluğunun nedeni; adaylarda nüfus kazanımı yok.,eslesme_yok
+5930811a-50b9-46db-9f60-29e02eb307e7,Sosyal Bilgiler,7,SB.7.5.2,dusuk,"Vergi ödemenin amacı; ekonomik gelişme kazanımına dolaylı, vergi kavramı açıkça yok.",oneri
+59abc795-c7ad-46d5-8966-db3191fd2563,Sosyal Bilgiler,7,SB.7.5.2,dusuk,"Göçün ekonomik nedeni; ekonomik faaliyet kazanımına dolaylı, göç nedenleri adaylarda yok.",oneri
+5ef8352d-3aca-47ee-a276-7265eb993b9c,Sosyal Bilgiler,7,SB.7.1.1,orta,"Kitle iletişim aracı (televizyon); iletişimin önemi kazanımına yakın, kavram açıkça yok.",oneri
+5f1c61e6-5a6f-41c1-94a8-8976d4b0fc2b,Sosyal Bilgiler,7,SB.7.3.1,orta,"Osmanlı Devleti'nin kurucusu; Osmanlı Devleti'nin gelişimine ilişkin kazanıma yakın, kurucu açıkça yok.",oneri
+81d3b7b5-f3da-4359-83c0-5bed14f9e16e,Sosyal Bilgiler,7,SB.7.1.1,dusuk,"İnternet bilgisini paylaşmadan doğrulama; iletişim kazanımına dolaylı, medya okuryazarlığı adaylarda yok.",oneri
+96a04bff-d3e2-4d85-902b-a6d61a70c8dd,Sosyal Bilgiler,7,SB.7.2.2,orta,Barış ve işbirliği için kurulan uluslararası örgüt; küresel sorunların çözümünde rol kazanımına yakın.,oneri
+c5ec1c50-b1db-4b70-961e-630e50efaf01,Sosyal Bilgiler,7,SB.7.4.3,orta,"İfade özgürlüğü ve demokrasinin temel ilkeleri; demokrasinin ilkeleri kazanımına yakın, hak adı açıkça yok.",oneri
+ea22b5b2-2938-4221-bded-4e3f32faef6a,Sosyal Bilgiler,7,SB.7.5.2,orta,"Üretimin temel unsuru (emek); üretim döngüsü kazanımına yakın, üretim faktörleri açıkça yok.",oneri
+1a9a540f-7990-4dec-9557-24542cf5097c,Türkçe,7,T.O.7.4,orta,Deyimin anlamını bağlamdan tahmin etme; anlamını bilmediği söz varlığı unsurlarını tahmin etme kazanımına yakın.,oneri
+33bf48d1-d03e-4d1c-9684-946b5e01b7f4,Türkçe,7,T.Y.7.21,yuksek,Yazım yanlışı olmayan cümleyi seçtirme; yazım kurallarını uygulama kazanımıyla birebir.,oneri
+5cb72c5b-9268-4ba9-aedf-923ace358479,Türkçe,7,,,Belirtili nesne tanıma; adaylarda cümle öğeleri kazanımı yok.,eslesme_yok
+779c03cb-e0a7-4390-9ea3-fe38d04d3171,Türkçe,7,T.O.7.5,orta,"Paragrafın ana düşüncesi; metnin anlamını belirleme kazanımına yakın, ana düşünce açıkça yazılı değil.",oneri
+a1f728d1-5119-463a-9872-4795a114ff2e,Türkçe,7,,,Cümledeki neden; adaylarda cümlede anlam ilişkisi kazanımı yok.,eslesme_yok
+ceeb9880-b512-477d-8695-1863ba2313e2,Türkçe,7,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+d0b5e800-ae23-4080-8da8-8a6d80c4d502,Türkçe,7,,,Cümlenin öznesi; adaylarda cümle öğeleri kazanımı yok.,eslesme_yok
+d7760377-264d-4f2a-b1e5-e18fa00afabc,Türkçe,7,T.O.7.7,orta,Mecaz anlamlı sözcük (sıcak); metnin derin anlamını belirleme kazanımına yakın.,oneri
+ddfe5f8e-54cd-4dc7-a53d-5a6117c9a36d,Türkçe,7,T.O.7.19,yuksek,Cümlede kişileştirme söz sanatını bulma; metindeki söz sanatlarını belirleme kazanımıyla birebir.,oneri
+f7bc51bb-6801-4b84-9bdb-a24f5d626f4c,Türkçe,7,T.Y.7.21,yuksek,Noktalı virgülün kullanım amacını seçtirme; yazım kuralları ve noktalama işaretlerini uygulama kazanımıyla uyumlu.,oneri
+0be971e9-a621-4088-81e4-db50a14cb767,İngilizce,7,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+56105dc7-5266-42cc-b93f-b8e25d01f6e9,İngilizce,7,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+5ddbcce1-0e5f-4977-966e-87833094dcc2,İngilizce,7,E7.5.L1,orta,"Tercih cümlesinin anlamı (tea over coffee); günlük rutin ve tercihler ünitesi uyumlu, dinleme kazanımına yakın.",oneri
+8d91c5b5-ab5c-4f5c-9274-6abc185cfc06,İngilizce,7,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+9083b1b9-0699-4716-a9e8-b25c0bee56d4,İngilizce,7,E7.9.R1,orta,"Geri dönüşüm önerisinin anlamı; çevre ünitesi uyumlu, metinde bilgiyi bulma kazanımına yakın.",oneri
+c119e54b-af99-4f1d-b307-37355c2af311,İngilizce,7,,,Aday üretici sözcük örtüşmesi bulamadı; bu soru sınıflandırılmadı (aday üretici kapsamı).,eslesme_yok
+c2e9a1c2-cd2f-4286-a2b6-b2c10c5415b6,İngilizce,7,E7.5.R2,orta,Olumsuz geçmiş zaman cümlesinin anlamı; geçmiş olayları anlama kazanımına yakın.,oneri
+e417c7fe-e1ea-4e2b-a2b5-dc3fcb9cef4a,İngilizce,7,E7.10.SI1,orta,"Karşılaştırma sıfatının derecesi (bigger); karşılaştırma yapma kazanımına yakın, dilbilgisi açıkça yok.",oneri
+ebcebc4f-4137-4e59-991d-2f60e744b8e4,İngilizce,7,E7.7.L1,orta,Gelecek plan cümlesinin anlamı; gelecek olaylarla ilgili ifadeleri anlama kazanımına yakın.,oneri
+ff3df68a-2e75-4c67-9afc-f955c4a163a7,İngilizce,7,E7.5.R2,orta,"Geçmiş zaman fiili (went); geçmiş olayları anlama kazanımına yakın, fiil çekimi açıkça yok.",oneri
+005c8f85-2751-410b-b3ba-feb529882700,Din Kültürü,8,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+06ee8579-d0a2-46de-9896-4804a816cdd9,Din Kültürü,8,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+31a345ed-d1b6-4b97-91e7-27809204c6aa,Din Kültürü,8,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+4d117a2a-3167-4e5b-9dec-5f623d6ae29e,Din Kültürü,8,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+576c637c-4eaa-4105-80e6-dbc50905efd6,Din Kültürü,8,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+91ce93bd-ed02-4426-b696-85f72f631d5a,Din Kültürü,8,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+a4099262-5cc9-484c-b487-66999d71419e,Din Kültürü,8,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+afbb737c-188d-4701-89ae-c5e541ff370f,Din Kültürü,8,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+e3cfee18-53d2-44c5-90fb-59f3adf29edc,Din Kültürü,8,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+ffb25acc-d86c-4ad2-b111-34fec262d928,Din Kültürü,8,,,"DB ders adı ""Din Kültürü"" müfredat adıyla birebir eşleşmiyor; tahmin yapılmadı.",ders_eslesmedi
+06b41338-7c8c-4e2d-9919-e8a8e27e6fdf,Fen Bilimleri,8,F.8.1.2.2,orta,"Hava olaylarını inceleyen bilim dalı (meteoroloji); bilim dalı ve uzmanlara ilişkin kazanıma yakın, meteoroloji açıkça yok.",oneri
+0a08661e-ad37-4453-9e2e-7d3a42c4575d,Fen Bilimleri,8,F.8.7.1.1,yuksek,Sürtünmeyle elektrik yükü kazanma (elektriklenme); elektriklenmeyi açıklama kazanımıyla birebir.,oneri
+37fddc51-e28f-4259-8c21-aef0c0f6a43d,Fen Bilimleri,8,,,Sürtünmede mekanik enerjinin ısıya dönüşmesi; adaylarda enerji dönüşümü kazanımı yok.,eslesme_yok
+3fe8081e-2ec4-496d-9a25-f28c42e57c55,Fen Bilimleri,8,F.8.2.2.1,yuksek,Kalıtsal özellikleri taşıyan yapı (DNA); kalıtım kavramlarını tanımlama kazanımına uygun.,oneri
+41b8acda-44c8-429d-8cc5-b7f994afdf9b,Fen Bilimleri,8,F.8.3.1.1,yuksek,Yüzey alanının katı basıncına etkisi; katı basıncını etkileyen değişkenleri keşfetme kazanımıyla birebir.,oneri
+6ea12c25-d7c6-4338-9447-f0deb3216265,Fen Bilimleri,8,F.8.4.4.1,yuksek,Turnusol kâğıdını kırmızıya çeviren madde (asit); asit ve bazların genel özelliklerini ifade etme kazanımıyla birebir.,oneri
+9e028128-998f-468d-846d-7c8797abfbc7,Fen Bilimleri,8,F.8.1.1.1,yuksek,Mevsimlerin oluşmasının nedeni; mevsimlerin oluşumuna yönelik tahmin kazanımıyla uyumlu.,oneri
+af3ebcd2-01c4-40e0-a96a-fe53793cecc7,Fen Bilimleri,8,F.8.5.1.1,yuksek,Kaldıraçta kuvvet kazancı; basit makinelerin sağladığı avantajları açıklama kazanımıyla birebir.,oneri
+b953d09a-cab4-41e9-aa50-9822366fb2f1,Fen Bilimleri,8,F.8.5.1.1,yuksek,Sabit makaranın kuvvet yönünü değiştirmesi; basit makinelerin avantajlarını açıklama kazanımıyla birebir.,oneri
+d52bc425-ded6-4524-82ca-d9f7592535bd,Fen Bilimleri,8,F.8.4.3.1,orta,"Kimyasal tepkimede korunan büyüklük (atom sayısı); bileşiklerin tepkime sonucu oluşumu kazanımına yakın, korunum açıkça yok.",oneri
+0c994ec7-2625-462a-ab72-5e34202b1be2,Matematik,8,,,"Üçgenin iç açılar toplamı; adaylarda üçgen açı kazanımı yok, en yakın kenar-açı ilişkisi bu soruyu ölçmüyor.",eslesme_yok
+4146dd27-9259-4b38-9136-b0204c5fa755,Matematik,8,M.8.3.1.5,yuksek,Dik kenarlardan hipotenüs bulma; Pisagor bağıntısını oluşturma ve problem çözme kazanımıyla birebir.,oneri
+4afaf6cf-06ce-4ca6-a271-530cceb3c959,Matematik,8,M.8.1.2.2,yuksek,2³ × 2⁴ üslü işlem; üslü ifadelerle ilgili temel kuralları anlama kazanımıyla birebir.,oneri
+674256b1-3da6-48ff-80ab-8fa051e8ae45,Matematik,8,M.8.1.1.1,yuksek,60'ın asal çarpanlarına ayrılışı; pozitif tam sayıların çarpanlarını bulma kazanımıyla uyumlu.,oneri
+6f362d4c-01ee-4be0-9464-e11e36ecea13,Matematik,8,M.8.1.3.1,yuksek,√144 değeri; tam kare sayılarla karekök ilişkisini belirleme kazanımıyla birebir.,oneri
+770df75b-aaf3-4e65-9122-8bcfca4c841c,Matematik,8,M.8.2.1.4,yuksek,x² - 9 ifadesinin çarpanlara ayrılması; cebirsel ifadeleri çarpanlara ayırma kazanımıyla birebir.,oneri
+7d81049f-ed0d-4ef9-bc40-ea584e93ccdc,Matematik,8,M.8.2.1.2,yuksek,(x + 3)² açılımı; cebirsel ifadelerin çarpımını yapma kazanımıyla uyumlu.,oneri
+8f3cf39b-802a-4b7a-8637-f68e6153f4d1,Matematik,8,M.8.2.2.1,yuksek,3x + 4 = 19 denklemi; birinci dereceden bir bilinmeyenli denklemleri çözme kazanımıyla birebir.,oneri
+abf14e3c-6724-43e2-9df0-eff7877858f6,Matematik,8,M.8.5.1.5,yuksek,Zarda çift sayı gelme olasılığı; basit bir olayın olma olasılığını hesaplama kazanımıyla birebir.,oneri
+d17c1982-cd73-4926-9e82-c077b90ed3f4,Matematik,8,M.8.2.3.2,orta,"En küçük tam sayı çözümü (x + 5 > 12); birinci dereceden eşitsizlik kazanımına yakın, çözüm yöntemi açıkça yok.",oneri
+03b2df09-b922-459b-9b66-aac000867184,Sosyal Bilgiler,8,,,Müfredatta bu ders-sınıf için 2026-2027 kazanım yok.,eslesme_yok
+1f69b318-7618-4e32-904c-89408d65fbd8,Sosyal Bilgiler,8,,,Müfredatta bu ders-sınıf için 2026-2027 kazanım yok.,eslesme_yok
+23f313c5-5efc-4113-80b8-d066faaef63e,Sosyal Bilgiler,8,,,Müfredatta bu ders-sınıf için 2026-2027 kazanım yok.,eslesme_yok
+26075725-cca2-47c2-9597-6c03dc144e95,Sosyal Bilgiler,8,,,Müfredatta bu ders-sınıf için 2026-2027 kazanım yok.,eslesme_yok
+3bdc5973-ee6c-4c54-834b-405e7a1f0a99,Sosyal Bilgiler,8,,,Müfredatta bu ders-sınıf için 2026-2027 kazanım yok.,eslesme_yok
+3d1526ff-8587-4906-8b98-c47a3aa1e403,Sosyal Bilgiler,8,,,Müfredatta bu ders-sınıf için 2026-2027 kazanım yok.,eslesme_yok
+42f487a5-70d7-453a-badf-308548095c5a,Sosyal Bilgiler,8,,,Müfredatta bu ders-sınıf için 2026-2027 kazanım yok.,eslesme_yok
+7e1e8c78-0169-4ebb-a8ff-ee786e4e2b69,Sosyal Bilgiler,8,,,Müfredatta bu ders-sınıf için 2026-2027 kazanım yok.,eslesme_yok
+856a06e1-7041-4eb2-aa03-ad2768a4b165,Sosyal Bilgiler,8,,,Müfredatta bu ders-sınıf için 2026-2027 kazanım yok.,eslesme_yok
+f052bb91-3a52-4d11-9608-f97064f36fdb,Sosyal Bilgiler,8,,,Müfredatta bu ders-sınıf için 2026-2027 kazanım yok.,eslesme_yok
+0d4804c1-7f62-4bc5-8b15-d435899759a1,Türkçe,8,,,Birleşik sözcük ve yazım yanlışı; adaylarda yazım kuralı kazanımı yok.,eslesme_yok
+15f19faa-623e-4ab1-bb4f-3bc9f5acfbe7,Türkçe,8,T.8.4.18,yuksek,Dolaylı tümleç (yer tamlayıcısı) seçtirme; cümlenin ögelerini ayırt etme kazanımıyla birebir.,oneri
+1c8d3159-0e90-40d2-b41a-8f0482cd9bba,Türkçe,8,T.8.3.7,yuksek,Abartma söz sanatının belirlenmesi; metindeki söz sanatlarını tespit etme kazanımıyla birebir.,oneri
+2a8e951d-c4f4-4cd8-85b6-ad0999a1ccd4,Türkçe,8,T.8.3.6,orta,Deyimin anlamı (eli kulağında); deyim ve atasözlerinin metne katkısını belirleme kazanımına yakın.,oneri
+382613e2-ed92-4bee-aa8b-757fe6b20429,Türkçe,8,T.8.3.14,orta,"Paragrafın konusu; metinle ilgili soruları cevaplama kazanımına yakın, konu kavramı açıkça yok.",oneri
+38a523b3-2754-46e0-badb-eb85eaaf136c,Türkçe,8,T.8.3.14,orta,"Paragrafın ana düşüncesi; metinle ilgili soruları cevaplama kazanımına yakın, ana düşünce açıkça yok.",oneri
+58b0cb89-3d5e-462e-bf65-6eef6f3c5dcd,Türkçe,8,T.8.3.9,yuksek,İsim-fiil türünü belirleme; fiilimsilerin cümledeki işlevlerini kavrama kazanımıyla birebir.,oneri
+61847cdf-8625-4a07-a9d6-14152390c8b2,Türkçe,8,T.8.3.1,orta,"Üç noktanın kullanım durumu; noktalama işaretlerine dikkat etme kazanımına yakın, kullanım kuralı açıkça yok.",oneri
+8368715c-5dd1-4230-b189-e0eb7032c37a,Türkçe,8,T.8.4.19,yuksek,Cümlenin yapısına göre türü (birleşik cümle); cümle türlerini tanıma kazanımıyla birebir.,oneri
+f71d44ab-16a4-4eb9-9864-96b2b8fe1b9d,Türkçe,8,T.8.3.9,yuksek,Sıfat-fiil türünü belirleme; fiilimsilerin cümledeki işlevlerini kavrama kazanımıyla birebir.,oneri
+35e01bc4-e351-4610-8dd3-ed0fc29832c2,İngilizce,8,E8.6.L1,orta,"Geçmiş yaz tatilindeki rafting etkinliği; macera ünitesi uyumlu, dinleme kazanımına yakın.",oneri
+4cae2246-029d-4032-adb4-c2da650cd7b2,İngilizce,8,E8.2.L1,orta,"İlgi alanı (gitar çalma); düzenli etkinlik ifadelerini anlama kazanımına yakın, ilgi ifadesi açıkça yok.",oneri
+4da8b408-7e4a-4d2f-9576-9cd21722a67b,İngilizce,8,E8.2.L1,dusuk,"Öneri cümlesinin anlamı (should); ünite uyumlu, öneri kazanımı aday listesinde net değil.",oneri
+551ecdb9-dbe9-423b-b933-dd4097f557cc,İngilizce,8,E8.4.L1,orta,Telefon ifadesinin anlamı (hold on); telefon ünitesi ifadelerini anlama kazanımına yakın.,oneri
+7feee692-c89e-4708-810a-8cc01c55239b,İngilizce,8,E8.3.L1,orta,Yemek tarifi cümlesinin anlamı (chop); bir sürecin betimlemesini anlama kazanımına yakın.,oneri
+8229cd83-dae6-4802-b9f6-0e990f612efa,İngilizce,8,E8.5.R2,orta,İnternette bilgi arama alışkanlığı; internet hakkında belirli bilgiyi bulma kazanımına yakın.,oneri
+89616fde-7419-4f6a-84a4-afbf63f38c2e,İngilizce,8,E8.7.R1,orta,Türkiye'nin ünlü olduğu yer (tarihî yerler); turizm metinlerinden bilgi bulma kazanımına yakın.,oneri
+94621aad-7d56-4106-baf2-1e2c96047980,İngilizce,8,E8.1.R1,orta,Arkadaş hakkında söylenen bilgi; arkadaşlık metinlerini anlama kazanımına yakın.,oneri
+9e92167e-7832-4062-a971-b7b1b3b7ac08,İngilizce,8,E8.3.L1,dusuk,"Tuzu uzatma rican ifadesi; yemek ünitesi uyumlu, rica kazanımı aday listesinde yok, belirsiz.",oneri
+d3e787be-0700-4593-9b9d-4ff14f228a7e,İngilizce,8,E8.1.L1,dusuk,"Generous (cömert) sözcüğü; arkadaşlık ünitesi uyumlu, vocabulary kazanımı aday listesinde yok, belirsiz.",oneri

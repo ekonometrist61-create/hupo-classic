@@ -1,0 +1,9 @@
+{"kalite":[
+{"id":"tr1-07","karar":"GEÇER","not":"Tek doğru C; metin kuş, yuva, yumurta ve yavruyu anlatıyor, diğer başlıklar metnin yalnızca bir ayrıntısına veya dışına dayanıyor."},
+{"id":"tr1-20","karar":"GEÇER","not":"Tek doğru D ve metinde açıkça geçiyor; kök ile şıklar üçüncü kişide uyumlu, dil sade."},
+{"id":"tr1-24","karar":"GEÇER","not":"Kök duyguyu verdiği için tek doğru ünlem işareti; bağlam kökle uyumlu, görsel gerekmiyor."},
+{"id":"mat1-07","karar":"GEÇER","not":"Yarısı 4 ise tamamı 8; kök net, çeldiriciler (yarı, +2, yarısı) makul."},
+{"id":"mat1-08","karar":"DÜZELT","not":"Doğru cevap D (6'dan çok) ama birimler karışık: şıklar silgi boyu mu kalem boyu mu belli değil, A ile C iç içe (3 de 6'dan az) ve C kolay elenir; öneri: 'Silgi boyuyla 6'dan az olur / tam 6 olur / 6'dan çok olur / 3 olur' yerine kökü 'Ali aynı şeridi silgiyle ölçerse kaç silgi boyu çıkar?' yapıp şıkları 'Kalem boyundan fazla silgi boyu çıkar / Eşit sayıda çıkar / Daha az silgi boyu çıkar / Ölçülemez' biçiminde aynı birimle yazmak."},
+{"id":"mat1-14","karar":"GEÇER","not":"6-3=3 tek doğru; çeldiriciler (2, 6, 9) tipik hata türlerini yakalıyor."},
+{"id":"hb1-03","karar":"DÜZELT","not":"Kök ikinci kişide ('yapmalısın'), şıklar birinci kişide ('derim, söylemem'); kök 'ne yaparsın?' ya da 'ne yaparım?' gibi şıklarla aynı kişi ekine çekilmeli, ayrıca bağlam doğru cevabı neredeyse kelimesi kelimesine veriyor."}
+]}

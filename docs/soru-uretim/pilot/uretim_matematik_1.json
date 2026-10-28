@@ -1,0 +1,507 @@
+{
+ "sorular": [
+  {
+   "id": "mat1-01",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "sayılar",
+   "kazanim_kodu": "MAT.1.1.1",
+   "kazanim_metni": "Rakamları ve 20’ye kadar olan sayıları (20 dâhil), niceliklerin büyüklüklerini temsil etmek için kullanabilme",
+   "pasaj_id": "mat1-01-p",
+   "pasaj_metin": "Ayşe'nin çantasında on dört kalem var.",
+   "dayanak": "çantasında on dört kalem var",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Kalem sayısı rakamlarla nasıl yazılır?",
+   "siklar": {
+    "A": "14",
+    "B": "41",
+    "C": "10",
+    "D": "13"
+   },
+   "dogru_sik": "A",
+   "ipucu": "Sayının adını yavaşça söyle ve duyduğun parçaları düşün.",
+   "cozum_adimlari": [
+    "Sayının adı \"on dört\" olarak verilmiş.",
+    "On dört, rakamlarla 14 diye yazılır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Rakamların yerini ters yazma hatası (14 yerine 41).",
+    "C": "Sayının adındaki yalnız \"on\" kısmını yazıp \"dört\" kısmını unutma.",
+    "D": "Sayıyı bir eksik sayma hatası (14 yerine 13)."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-02",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "nesne sayma",
+   "kazanim_kodu": "MAT.1.1.2",
+   "kazanim_metni": "Ögeleri dağınık veya düzenli bir şekilde bulunan bir nesne grubunu sayarken parçalar arasında ilişkileri çözümleyebilme",
+   "pasaj_id": "mat1-02-p",
+   "pasaj_metin": "Masanın üstünde 3 kırmızı ve 4 mavi balon dağınık duruyor.",
+   "dayanak": "3 kırmızı ve 4 mavi balon",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Masanın üstünde toplam kaç balon var?",
+   "siklar": {
+    "A": "3",
+    "B": "7",
+    "C": "6",
+    "D": "8"
+   },
+   "dogru_sik": "B",
+   "ipucu": "Balonları renklerine göre gruplara ayır ve her grubu ayrı düşün.",
+   "cozum_adimlari": [
+    "Kırmızı balonlar 3 tanedir.",
+    "Mavi balonlar 4 tanedir.",
+    "3 ve 4 balon birleşince 3 + 4 = 7 balon olur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Yalnız kırmızı balonları sayıp mavi grubu hesaba katmama.",
+    "C": "Balonlardan birini saymayı unutma (sayarken bir tane atlama).",
+    "D": "Balonlardan birini iki kez sayma."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-03",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "sıra sayıları",
+   "kazanim_kodu": "MAT.1.1.3",
+   "kazanim_metni": "Nesnelerin sıra sayısını gösterebilme",
+   "pasaj_id": "mat1-03-p",
+   "pasaj_metin": "Dört çocuk kuyrukta bekliyor. Ali baştan ikinci sırada, Ayşe ise Ali'nin hemen arkasında.",
+   "dayanak": "Ali baştan ikinci sırada, Ayşe ise Ali'nin hemen arkasında",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ayşe baştan kaçıncı sıradadır?",
+   "siklar": {
+    "A": "1. sırada",
+    "B": "2. sırada",
+    "C": "3. sırada",
+    "D": "4. sırada"
+   },
+   "dogru_sik": "C",
+   "ipucu": "Kuyruğu baştan başlayarak çocukları sırayla say.",
+   "cozum_adimlari": [
+    "Ali baştan ikinci sıradadır.",
+    "Ayşe, Ali'nin hemen arkasındadır; yani ikinciden sonra gelir.",
+    "İkinciden sonraki sıra üçüncüdür.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Kuyruğun başındaki çocuk sanıp birinci sırayı seçme.",
+    "B": "Ayşe'yi Ali ile karıştırıp Ali'nin sırasını yazma.",
+    "D": "Kuyrukta dört çocuk olduğu için son sırayı seçme."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-04",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "karşılaştırma",
+   "kazanim_kodu": "MAT.1.1.4",
+   "kazanim_metni": "İki niceliğin büyüklüğünü “çok”, “daha çok”, “az”, “daha az” veya “eşit” terimleriyle karşılaştırabilme",
+   "pasaj_id": "mat1-04-p",
+   "pasaj_metin": "Ali'nin 9 kalemi, Ayşe'nin 7 kalemi var.",
+   "dayanak": "Ali'nin 9 kalemi, Ayşe'nin 7 kalemi var",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Ayşe'nin kalemi daha çok.",
+    "B": "Ali'nin kalemi daha az.",
+    "C": "İkisinin kalemi eşit.",
+    "D": "Ali'nin kalemi daha çok."
+   },
+   "dogru_sik": "D",
+   "ipucu": "Sayarken hangi sayıyı daha sonra söylediğine bak.",
+   "cozum_adimlari": [
+    "Ali'nin 9 kalemi, Ayşe'nin 7 kalemi var.",
+    "Sayarken 9, 7'den sonra gelir; yani 9 daha büyüktür.",
+    "Bu yüzden Ali'nin kalemi daha çoktur.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Küçük sayıyı büyük sanıp iki kişiyi ters karşılaştırma.",
+    "B": "\"Daha az\" ve \"daha çok\" terimlerini karıştırma.",
+    "C": "İki sayı birbirine yakın olduğu için eşit sanma."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-05",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "ritmik sayma",
+   "kazanim_kodu": "MAT.1.1.5",
+   "kazanim_metni": "100’e kadar ileriye ve 20’den geriye doğru ritmik sayabilme",
+   "pasaj_id": "mat1-05-p",
+   "pasaj_metin": "Ayşe ileriye doğru onar onar sayıyor: 10, 20, 30, 40.",
+   "dayanak": "onar onar sayıyor: 10, 20, 30, 40",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ayşe'nin söyleyeceği sıradaki sayı kaçtır?",
+   "siklar": {
+    "A": "50",
+    "B": "41",
+    "C": "45",
+    "D": "60"
+   },
+   "dogru_sik": "A",
+   "ipucu": "Sayıların her adımda ne kadar arttığına bak.",
+   "cozum_adimlari": [
+    "Ayşe onar onar sayıyor: 10, 20, 30, 40.",
+    "Her adımda sayı 10 artıyor.",
+    "40'tan sonra gelen sayı 40 + 10 = 50 olur.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Onar sayma yerine birer birer sayıp 40'a 1 ekleme.",
+    "C": "Ritmi karıştırıp 40'a 5 ekleme.",
+    "D": "Bir adımı atlayıp 50 yerine bir sonraki onluğu söyleme."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-06",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "örüntüler",
+   "kazanim_kodu": "MAT.1.1.6",
+   "kazanim_metni": "Artan veya azalan sayı ve şekil örüntülerini çözümleyebilme",
+   "pasaj_id": "mat1-06-p",
+   "pasaj_metin": "Deniz kartlara 10, 8, 6, 4 sayılarını yazdı.",
+   "dayanak": "kartlara 10, 8, 6, 4 sayılarını yazdı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Aynı kuralla devam edersek sıradaki kartta hangi sayı olur?",
+   "siklar": {
+    "A": "3",
+    "B": "2",
+    "C": "6",
+    "D": "4"
+   },
+   "dogru_sik": "B",
+   "ipucu": "Sayıların her adımda nasıl değiştiğine dikkat et.",
+   "cozum_adimlari": [
+    "Sayılar 10, 8, 6, 4 diye gidiyor.",
+    "Her adımda sayı 2 azalıyor.",
+    "4'ten sonra 4 - 2 = 2 gelir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Kuralı birer birer azalma sanıp 4'ten 1 çıkarma.",
+    "C": "Geriye doğru değil ileriye bakıp bir önceki sayıyı yazma.",
+    "D": "Kuralı sürdürmeyip son sayıyı tekrar etme."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-07",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "tahmin",
+   "kazanim_kodu": "MAT.1.1.7",
+   "kazanim_metni": "Verilen bir çokluktaki ilişkilerden yararlanarak 20’ye kadar (20 dâhil) olan nesnelerin sayısını tahmin edebilme",
+   "pasaj_id": "mat1-07-p",
+   "pasaj_metin": "Bir kavanozun tam yarısı bilyelerle dolu. Kavanozun içinde 4 bilye var.",
+   "dayanak": "tam yarısı bilyelerle dolu",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Kavanoz tamamen dolarsa içinde kaç bilye olur?",
+   "siklar": {
+    "A": "4",
+    "B": "6",
+    "C": "8",
+    "D": "2"
+   },
+   "dogru_sik": "C",
+   "ipucu": "Dolu kısım ile kavanozun tamamı arasındaki ilişkiyi düşün.",
+   "cozum_adimlari": [
+    "Kavanozun yarısında 4 bilye var.",
+    "Diğer yarısı da aynı kadar bilye alır.",
+    "Tamamı 4 + 4 = 8 bilye olur.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Yarıdaki sayıyı kavanozun tamamı sanma.",
+    "B": "Yarıdaki sayıya ilişkiyi kullanmadan rastgele 2 ekleme.",
+    "D": "Yarıyı büyütmek yerine ikiye bölme."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-08",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "ölçme",
+   "kazanim_kodu": "MAT.1.1.8",
+   "kazanim_metni": "Standart olmayan uygun ölçme araçları ile nesnelerin uzunluğunu ve tartacağı kütlenin ölçüm sonuçlarını tahmin edebilme",
+   "pasaj_id": "mat1-08-p",
+   "pasaj_metin": "Bir silgi, bir kalemden daha kısadır. Ali bir şeridi kalemle ölçtü ve 6 kalem boyu buldu.",
+   "dayanak": "Bir silgi, bir kalemden daha kısadır",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ali aynı şeridi silgiyle ölçerse sonuç nasıl olur?",
+   "siklar": {
+    "A": "Kalemle aynı olur.",
+    "B": "Silgi boyu daha az olur.",
+    "C": "Ölçülemez olur.",
+    "D": "Silgi boyu çok olur."
+   },
+   "dogru_sik": "D",
+   "ipucu": "Silgi kalemden kısa olduğunda aynı uzunluğu kaç kez doldurursun?",
+   "cozum_adimlari": [
+    "Silgi, kalemden daha kısadır.",
+    "Kısa bir araçla aynı şerit daha çok kez doldurulur.",
+    "Bu yüzden silgi boyu sayısı kalem boyu sayısından daha çok olur.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Ölçme aracı değişse de sayının aynı kalacağını sanma.",
+    "B": "Kısa aracın daha az sayılacağını ters düşünme.",
+    "C": "Silgiyle ölçmenin mümkün olmadığını sanma."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-09",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "toplama ve çıkarma",
+   "kazanim_kodu": "MAT.1.2.1",
+   "kazanim_metni": "Günlük yaşamın içerdiği toplama ve çıkarma işlemlerini çözümleyebilme",
+   "pasaj_id": "mat1-09-p",
+   "pasaj_metin": "Ali'nin 15 bilyesi vardı. Ali 4 bilyesini arkadaşına verdi.",
+   "dayanak": "Ali'nin 15 bilyesi vardı. Ali 4 bilyesini arkadaşına verdi",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ali'nin geriye kaç bilyesi kaldı?",
+   "siklar": {
+    "A": "11",
+    "B": "19",
+    "C": "12",
+    "D": "10"
+   },
+   "dogru_sik": "A",
+   "ipucu": "Ali bilyesini verince elindeki bilye sayısı artar mı, azalır mı?",
+   "cozum_adimlari": [
+    "Ali'nin önce 15 bilyesi vardı.",
+    "Arkadaşına 4 bilye verdi; bilye sayısı azaldı.",
+    "15 - 4 = 11 olur.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Verme durumunda çıkarma yerine toplama yapma (15 + 4).",
+    "C": "Geriye doğru sayarken bir fazla sayma.",
+    "D": "Geriye doğru sayarken bir eksik sayma."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-10",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "zihinden işlem",
+   "kazanim_kodu": "MAT.1.2.2",
+   "kazanim_metni": "Toplama ve çıkarma işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+   "pasaj_id": "mat1-10-p",
+   "pasaj_metin": "Ali 6 + 6 = 12 olduğunu biliyor. Şimdi 6 + 7 işlemini zihninden yapacak.",
+   "dayanak": "6 + 6 = 12 olduğunu biliyor",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "6 + 7 işleminin sonucu kaçtır?",
+   "siklar": {
+    "A": "12",
+    "B": "13",
+    "C": "14",
+    "D": "11"
+   },
+   "dogru_sik": "B",
+   "ipucu": "Bildiğin işlemden başla; ikinci sayının nasıl değiştiğine bak.",
+   "cozum_adimlari": [
+    "Ali 6 + 6 = 12 olduğunu biliyor.",
+    "6 + 7 işleminde ikinci sayı 6'dan 1 fazladır.",
+    "Bu yüzden sonuç 12'den 1 fazladır: 12 + 1 = 13.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "İkinci sayıdaki farkı hesaba katmayıp bilinen sonucu aynen yazma.",
+    "C": "7 + 7 işlemiyle karıştırma.",
+    "D": "6 + 5 işlemiyle karıştırıp farkı ters yöne uygulama."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-11",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "eşitlik",
+   "kazanim_kodu": "MAT.1.2.3",
+   "kazanim_metni": "Eşit işaretinin anlamını toplama ve çıkarma işlemi bağlamında yorumlayabilme",
+   "pasaj_id": "mat1-11-p",
+   "pasaj_metin": "Ali'nin kartında 9 + 3 = 8 + ? yazıyor.",
+   "dayanak": "9 + 3 = 8 + ? yazıyor",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Eşitliğin doğru olması için ? yerine hangi sayı gelmelidir?",
+   "siklar": {
+    "A": "3",
+    "B": "5",
+    "C": "4",
+    "D": "1"
+   },
+   "dogru_sik": "C",
+   "ipucu": "Eşit işaretinin iki yanı aynı değerde olmalıdır.",
+   "cozum_adimlari": [
+    "Eşit işaretinin sol tarafı 9 + 3 = 12 eder.",
+    "Sağ taraf da 12 olmalıdır: 8 + ? = 12.",
+    "8'e 4 eklenince 12 olur; ? yerine 4 gelir.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Soldaki 3 sayısını görüp aynen yazma.",
+    "B": "Eksik sayıyı bulurken sayarken bir fazla ekleme.",
+    "D": "Soldaki 9 ile sağdaki 8 arasındaki farkı yazma."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-12",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "toplama-çıkarma ilişkisi",
+   "kazanim_kodu": "MAT.1.2.4",
+   "kazanim_metni": "Toplama ve çıkarma işlemlerinin ilişkisini yorumlayabilme",
+   "pasaj_id": "mat1-12-p",
+   "pasaj_metin": "Ayşe'nin kartında 8 + 6 = 14 yazıyor.",
+   "dayanak": "8 + 6 = 14 yazıyor",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Sonucu 8 olan çıkarma işlemi hangisidir?",
+   "siklar": {
+    "A": "14 - 8",
+    "B": "8 - 6",
+    "C": "14 + 6",
+    "D": "14 - 6"
+   },
+   "dogru_sik": "D",
+   "ipucu": "Toplama işlemindeki sayıların çıkarmada nasıl kullanıldığını düşün.",
+   "cozum_adimlari": [
+    "8 + 6 = 14 olduğuna göre toplamdan bir parça çıkarılırsa diğer parça kalır.",
+    "14'ten 6 çıkarılırsa 8 kalır: 14 - 6 = 8.",
+    "Diğer seçeneklerin sonuçları 6, 2 ve 20 olur.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Toplamdan 8'i çıkarınca 6 kaldığını fark etmeme; sonucu 8 sanma.",
+    "B": "Toplamı hiç kullanmayıp kartta geçen sayıları sırayla çıkarma.",
+    "C": "Çıkarma yerine toplama işlemini seçme."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-13",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "para",
+   "kazanim_kodu": "MAT.1.1.9",
+   "kazanim_metni": "Paraların (1 TL, 5 TL, 10 TL, 20 TL, 50 TL, 100 TL ve 200 TL) temsil ettiği büyüklükleri tanıyabilme",
+   "pasaj_id": "mat1-13-p",
+   "pasaj_metin": "Ali'nin cüzdanında bir 20 TL, bir 10 TL ve bir 5 TL var.",
+   "dayanak": "bir 20 TL, bir 10 TL ve bir 5 TL",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ali'nin cüzdanında toplam kaç TL var?",
+   "siklar": {
+    "A": "35",
+    "B": "30",
+    "C": "40",
+    "D": "25"
+   },
+   "dogru_sik": "A",
+   "ipucu": "Her paranın değerini ayrı ayrı düşün, sonra birleştir.",
+   "cozum_adimlari": [
+    "Paraların değerleri 20 TL, 10 TL ve 5 TL'dir.",
+    "Önce 20 + 10 = 30 TL olur.",
+    "Sonra 30 + 5 = 35 TL olur.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "5 TL'lik parayı hesaba katmama.",
+    "C": "5 TL'lik parayı 10 TL sanma.",
+    "D": "10 TL'lik parayı hesaba katmama (20 + 5)."
+   },
+   "zorluk": 3,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "mat1-14",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "veri",
+   "kazanim_kodu": "MAT.1.4.1",
+   "kazanim_metni": "Kategorik veriye dayalı temel veri grubu ile çalışabilme ve veriye dayalı karar verebilme",
+   "pasaj_id": "mat1-14-p",
+   "pasaj_metin": "Oylamada elma 6 oy, portakal 3 oy aldı.",
+   "dayanak": "elma 6 oy, portakal 3 oy aldı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Elma, portakaldan kaç oy fazla almıştır?",
+   "siklar": {
+    "A": "2",
+    "B": "3",
+    "C": "6",
+    "D": "9"
+   },
+   "dogru_sik": "B",
+   "ipucu": "Önce elmanın ve portakalın oy sayılarını bul.",
+   "cozum_adimlari": [
+    "Elma 6 oy aldı.",
+    "Portakal 3 oy aldı.",
+    "Aradaki fark 6 - 3 = 3 oydur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Portakal yerine muzu alıp farkı 6 - 4 = 2 sanma.",
+    "C": "Elmanın oy sayısını cevap sanıp farkı hesaplamama.",
+    "D": "Farkı bulmak yerine iki oy sayısını toplama (6 + 3)."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  }
+ ]
+}

@@ -1,0 +1,110 @@
+{
+  "school_year": "2026-2027",
+  "verified_2026_10_24": true,
+  "grade_status": {
+    "1": {
+      "applicable": "TYMM",
+      "verify_original_outcome_each_time": true,
+      "do_not_assume_tymm_2026_applies": false,
+      "subjects": [
+        "Türkçe",
+        "Matematik",
+        "Hayat Bilgisi"
+      ]
+    },
+    "2": {
+      "applicable": "TYMM",
+      "verify_original_outcome_each_time": true,
+      "do_not_assume_tymm_2026_applies": false,
+      "subjects": [
+        "Türkçe",
+        "Matematik",
+        "Hayat Bilgisi",
+        "İngilizce"
+      ]
+    },
+    "3": {
+      "applicable": "TYMM",
+      "verify_original_outcome_each_time": true,
+      "do_not_assume_tymm_2026_applies": false,
+      "subjects": [
+        "Türkçe",
+        "Matematik",
+        "Hayat Bilgisi",
+        "Fen Bilimleri",
+        "İngilizce"
+      ]
+    },
+    "4": {
+      "applicable": "ONCEKI_PROGRAM_KADEMELI_GECIS",
+      "verify_original_outcome_each_time": true,
+      "do_not_assume_tymm_2026_applies": true,
+      "subjects": [
+        "Türkçe",
+        "Matematik",
+        "Fen Bilimleri",
+        "Sosyal Bilgiler",
+        "İngilizce",
+        "Din Kültürü ve Ahlak Bilgisi (ders seçimi/mevzuata göre)"
+      ]
+    },
+    "5": {
+      "applicable": "TYMM",
+      "verify_original_outcome_each_time": true,
+      "do_not_assume_tymm_2026_applies": false,
+      "subjects": [
+        "Türkçe",
+        "Matematik",
+        "Fen Bilimleri",
+        "Sosyal Bilgiler",
+        "İngilizce",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ]
+    },
+    "6": {
+      "applicable": "TYMM",
+      "verify_original_outcome_each_time": true,
+      "do_not_assume_tymm_2026_applies": false,
+      "subjects": [
+        "Türkçe",
+        "Matematik",
+        "Fen Bilimleri",
+        "Sosyal Bilgiler",
+        "İngilizce",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ]
+    },
+    "7": {
+      "applicable": "TYMM",
+      "verify_original_outcome_each_time": true,
+      "do_not_assume_tymm_2026_applies": false,
+      "subjects": [
+        "Türkçe",
+        "Matematik",
+        "Fen Bilimleri",
+        "Sosyal Bilgiler",
+        "İngilizce",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ]
+    },
+    "8": {
+      "applicable": "ONCEKI_PROGRAM_KADEMELI_GECIS",
+      "verify_original_outcome_each_time": true,
+      "do_not_assume_tymm_2026_applies": true,
+      "subjects": [
+        "Türkçe",
+        "Matematik",
+        "Fen Bilimleri",
+        "T.C. İnkılap Tarihi ve Atatürkçülük",
+        "Din Kültürü ve Ahlak Bilgisi",
+        "İngilizce"
+      ]
+    }
+  },
+  "common_exam": "Scenario is determined by authorized zümre; source tables are input; not guessed. 5-7 OYSS: source announced 20 Oct 2026, launch 26 Oct; differs from LGS and IOKBS.",
+  "source_ids": [
+    "MEB_MAARIF_2026",
+    "MEB_2026_SENARYO",
+    "MEB_OYSS_2026"
+  ]
+}

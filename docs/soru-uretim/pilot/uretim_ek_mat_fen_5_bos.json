@@ -1,0 +1,224 @@
+[
+ {
+  "id": "MAT5-B-001",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "surec_bileseni": "a",
+  "konu": "Temel geometrik çizimler",
+  "alt_konu": "Çember çizimi: yarıçap ve çap",
+  "soru_metni": "Defne, defterine pergelle bir çember çizecektir. Pergelin iki ucu arasını 4 cm açıp iğneli ucunu O noktasına batırarak çemberi tamamlıyor. Çember üzerindeki her nokta O noktasına 4 cm uzaklıktadır.\n\nBuna göre Defne'nin çizdiği çemberin çapı kaç cm olur?",
+  "siklar": {
+   "A": "2 cm",
+   "B": "4 cm",
+   "C": "8 cm",
+   "D": "16 cm"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Çemberin merkezden çember üzerindeki noktaya olan uzaklığı hangi uzunluktur? Çap bu uzunlukla nasıl ilişkilidir?",
+  "cozum_adimlari": [
+   "Merkezden çember üzerindeki noktalara olan uzaklık yarıçaptır; yarıçap 4 cm'dir.",
+   "Çap, yarıçapın 2 katıdır: 4 x 2 = 8 cm.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çapın, yarıçapın yarısı olduğunu sanarak 4 / 2 işlemini yapma.",
+   "B": "Verilen uzaklığı doğrudan çap sanma, yarıçapla karıştırma.",
+   "C": "Doğru.",
+   "D": "Yarıçapı kendisiyle çarparak (4 x 4) çap bulma."
+  },
+  "zorluk": 1,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "4*2",
+   "beklenen_sonuc": 8
+  }
+ },
+ {
+  "id": "MAT5-B-002",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "surec_bileseni": "a",
+  "konu": "Temel geometrik çizimler",
+  "alt_konu": "Dikme çizimi ve dik açılar",
+  "soru_metni": "Mert, defterine bir d doğrusu çizdi. Sonra d doğrusu üzerindeki K noktasından, doğruya dik olacak biçimde bir dikme çizdi. Dikme ile d doğrusu K noktasında kesişerek dört açı oluşturdu.\n\nBuna göre bu dört açıdan kaç tanesi dik açıdır?",
+  "siklar": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Birbirine dik iki doğrunun kesiştiği noktada oluşan açıların ölçülerini düşün.",
+  "cozum_adimlari": [
+   "Dikme, doğruyla 90° lik açı yapar.",
+   "Kesişen iki dik doğrunun oluşturduğu dört açının hepsi 90° dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yalnızca çizilen tek açıyı dik sanma.",
+   "B": "Doğrunun iki yanındaki açıları sayıp diğer iki açıyı unutma.",
+   "C": "Dört açıdan birini dik olmayan sanma.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-B-003",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "surec_bileseni": "a",
+  "konu": "Temel geometrik çizimler",
+  "alt_konu": "Işın ve doğru parçası ayrımı",
+  "soru_metni": "Bir deniz feneri, ışığını bulunduğu noktadan başlayarak tek yönde uzaklara göndermektedir. Ali, bu ışık yolunu defterine çizecektir. Çizimi bir başlangıç noktasından başlayacak ve tek yönde sınırsız uzanacaktır.\n\nBuna göre Ali'nin çizeceği geometrik şekil hangisidir?",
+  "siklar": {
+   "A": "Doğru parçası",
+   "B": "Işın",
+   "C": "Doğru",
+   "D": "Çember"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir ucu belli, diğer ucu sınırsız olan şekli düşün.",
+  "cozum_adimlari": [
+   "Bir başlangıç noktası olan ve tek yönde sınırsız uzanan şekil ışındır.",
+   "Doğru parçasının iki ucu, doğrunun ise hiç ucu yoktur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Başlangıç noktasının olmasından yola çıkıp sınırsız uzanmayı unutma.",
+   "B": "Doğru.",
+   "C": "Sınırsız uzanmayı iki yönde uzanmakla karıştırma.",
+   "D": "Işığın yayılmasını daire biçiminde düşünme."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-B-001",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.5.3.1",
+  "surec_bileseni": "a",
+  "konu": "Hücre",
+  "alt_konu": "Bitki hücresine özgü yapı",
+  "soru_metni": "Elif, fen dersinde mikroskopla iki örnek inceledi: soğan zarından alınan hücreler ve kendi yanağından alınan hücreler. İki örnekte de çekirdek ve sitoplazma gördü. Soğan hücrelerinin köşeli olduğunu ve hücre zarının dışında sert bir katman bulunduğunu fark etti. Bu katmanı yanak hücrelerinde göremedi.\n\nBuna göre Elif'in yalnızca soğan hücrelerinde gördüğü yapı hangisidir?",
+  "siklar": {
+   "A": "Çekirdek",
+   "B": "Sitoplazma",
+   "C": "Hücre duvarı",
+   "D": "Hücre zarı"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Bu yapı bitki hücrelerinin şeklini korumasına yardım eder ve hayvan hücrelerinde bulunmaz.",
+  "cozum_adimlari": [
+   "Çekirdek ve sitoplazma iki örnekte de görüldü, bu yüzden ortak yapılardır.",
+   "Hücre zarının dışında bulunan sert katman hücre duvarıdır.",
+   "Hücre duvarı bitki hücrelerine özgüdür. Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çekirdek her iki hücrede de görüldüğü halde bitkiye özgü sanılabilir.",
+   "B": "Sitoplazma iki örnekte de var; ortak yapıyı farka karıştırma.",
+   "C": "Doğru.",
+   "D": "Hücre zarını sert dış katmanla karıştırma; zar her iki hücrede de bulunur."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-B-002",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.5.3.1",
+  "surec_bileseni": "a",
+  "konu": "Hücre",
+  "alt_konu": "Bitki ve hayvan hücresini ayırt etme",
+  "soru_metni": "Bir öğrenci, mikroskopta incelediği iki hücreyi şöyle not etti:\n\nX hücresi: Çekirdek, hücre zarı, hücre duvarı ve yeşil renkli kloroplastlar var.\nY hücresi: Çekirdek ve hücre zarı var; hücre duvarı ve kloroplast yok.\n\nBu notlara göre öğrenci hangi sonuca varmalıdır?",
+  "siklar": {
+   "A": "Y hücresi bitki hücresidir; çünkü çekirdek taşır.",
+   "B": "X hücresi bitki hücresidir; çünkü hücre duvarı ve kloroplast taşır.",
+   "C": "X hücresi hayvan hücresidir; çünkü kloroplast taşır.",
+   "D": "X ve Y bitki hücresidir; çünkü ikisi de çekirdek taşır."
+  },
+  "dogru_sik": "B",
+  "ipucu": "İki hücrede ortak bulunan yapılar ayırt etmeye yardım etmez; yalnızca birinde bulunan yapılara bak.",
+  "cozum_adimlari": [
+   "Çekirdek ve hücre zarı iki hücrede de var; bunlar ayırt edici değildir.",
+   "Hücre duvarı ve kloroplast bitki hücrelerine özgüdür; bunlar yalnızca X hücresinde var.",
+   "X bitki hücresidir. Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çekirdeğin yalnızca bitkide bulunduğunu sanma.",
+   "B": "Doğru.",
+   "C": "Kloroplastı hayvan hücresine ait sanma.",
+   "D": "Ortak yapıya bakıp iki hücreyi de bitki sayma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-B-003",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.5.3.1",
+  "surec_bileseni": "a",
+  "konu": "Hücre",
+  "alt_konu": "Kloroplast ve yaprağın rengi",
+  "soru_metni": "Bir öğrenci, bir bitkinin yaprağından ve bir hayvanın kas dokusundan hazırlanan örnekleri mikroskopta inceledi. Yaprak hücrelerinin yeşil, kas hücrelerinin ise yeşil olmadığını gördü.\n\nBuna göre yaprak hücrelerinin yeşil görünmesinin nedeni aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Yaprak hücrelerinde kloroplast bulunması",
+   "B": "Yaprak hücrelerinin çekirdek taşıması",
+   "C": "Kas hücrelerinin hücre zarı taşıması",
+   "D": "Kas hücrelerinde hücre duvarı olması"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yeşil renkli yapı yalnızca bitki hücrelerinde bulunur.",
+  "cozum_adimlari": [
+   "Yeşil görünüm, bitki hücrelerindeki kloroplasta bağlıdır.",
+   "Hayvan hücrelerinde kloroplast bulunmaz, bu yüzden kas hücreleri yeşil değildir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Çekirdek hem bitki hem hayvan hücresinde bulunur, renk farkını açıklamaz.",
+   "C": "Hücre zarı iki hücrede de vardır; bir farkı açıklamaz.",
+   "D": "Hücre duvarı hayvan hücresinde bulunmaz; yanlış bilgi içerir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

@@ -1,0 +1,1438 @@
+[
+ {
+  "id": "MAT5-001",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.1",
+  "surec_bileseni": "a",
+  "konu": "Doğal Sayılar",
+  "alt_konu": "Altı basamaklı sayıları yazma",
+  "soru_metni": "Bir belediye, yeni yapılan parkın maliyetini haber metninde “yüz kırk beş bin üç yüz yirmi lira” olarak duyurdu. Muhasebe defterine bu tutar rakamla yazılacaktır. Defterdeki yazılış aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "145 032",
+   "B": "145 320",
+   "C": "145 302",
+   "D": "145 230"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Sayıyı bölükler hâlinde düşün: önce bin sözcüğünden önceki, sonra sonraki kısmı yaz.",
+  "cozum_adimlari": [
+   "Binler bölüğü “yüz kırk beş” olduğundan 145 yazılır.",
+   "Birler bölüğü “üç yüz yirmi” olduğundan 320 yazılır.",
+   "Sayı 145 320’dir. Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yüzler basamağındaki 3’ü atlayıp sıfırı yüzler basamağına yazma; bu sayı “yüz kırk beş bin otuz iki” diye okunur.",
+   "B": "Doğru.",
+   "C": "Onlar ve birler basamaklarını yer değiştirme; sayı “üç yüz iki” olur.",
+   "D": "Yüzler ve onlar basamaklarını karıştırma; sayı “iki yüz otuz” olur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "suslu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-002",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.1",
+  "surec_bileseni": "b",
+  "konu": "Doğal Sayılar",
+  "alt_konu": "Bölükler ve basamak değeri",
+  "soru_metni": "Bir ilin nüfusu 642 805 olarak açıklanmıştır. Nüfus sayısında yer alan 4 rakamının basamak değeri kaçtır?",
+  "siklar": {
+   "A": "400 000",
+   "B": "4 000",
+   "C": "400",
+   "D": "40 000"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Sayıyı sağdan sola bölüklere ayır ve 4 rakamının hangi basamakta olduğunu bul.",
+  "cozum_adimlari": [
+   "Sayı bölüklerine ayrılır: 642 | 805.",
+   "4 rakamı binler bölüğünün onlar basamağında, yani on binler basamağındadır.",
+   "Basamak değeri 4 × 10 000 = 40 000’dir. Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "4’ün yüz binler basamağında olduğunu sanma; yüz binler basamağındaki rakam 6’dır.",
+   "B": "4’ü binler basamağında sayma; bir basamak sağa kaydırma.",
+   "C": "4’ü yüzler basamağında sayma; iki basamak sağa kaydırma.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "suslu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "4*10000",
+   "beklenen_sonuc": 40000
+  }
+ },
+ {
+  "id": "MAT5-003",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.2",
+  "surec_bileseni": "e",
+  "konu": "Doğal Sayılar",
+  "alt_konu": "Dört işlemli problem",
+  "soru_metni": "Bir kırtasiyeci 24 kutu kalem aldı ve her kutuda 12 kalem vardı. Kalemlerin 48 tanesi kırık çıktığı için ayrıldı. Kalan sağlam kalemleri 6’şarlı paketlere koyarak satacaktır. Kırtasiyeci kaç paket hazırlar?",
+  "siklar": {
+   "A": "40",
+   "B": "48",
+   "C": "240",
+   "D": "280"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce sağlam kalem sayısını bul, sonra paket sayısını hesapla.",
+  "cozum_adimlari": [
+   "Toplam kalem sayısı 24 × 12 = 288’dir.",
+   "Sağlam kalem sayısı 288 − 48 = 240’tır.",
+   "Paket sayısı 240 ÷ 6 = 40’tır. Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Kırık kalemleri çıkarmadan 288 ÷ 6 işlemini yapma.",
+   "C": "Sağlam kalem sayısını bulup paketlere bölmeyi unutma; ara sonucu nihai sanma.",
+   "D": "İşlem önceliği hatası: 288 − 48 ÷ 6 işlemini soldan sağa değil, bölmeyi önce yaparak hesaplama."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "(24*12-48)/6",
+   "beklenen_sonuc": 40
+  }
+ },
+ {
+  "id": "MAT5-004",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.2",
+  "surec_bileseni": "b",
+  "konu": "Doğal Sayılar",
+  "alt_konu": "Çok adımlı problem",
+  "soru_metni": "Bir otobüs firması hafta içi 5 gün boyunca her gün 3 sefer yapıyor ve her seferde 46 yolcu taşıyor. Hafta sonu 2 gün boyunca her gün 4 sefer yapıyor ve her seferde 38 yolcu taşıyor. Bu firma bir haftada toplam kaç yolcu taşır?",
+  "siklar": {
+   "A": "306",
+   "B": "690",
+   "C": "994",
+   "D": "966"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Hafta içi ve hafta sonu için taşınan yolcu sayılarını ayrı ayrı bulup birleştir.",
+  "cozum_adimlari": [
+   "Hafta içi yolcu sayısı 5 × 3 × 46 = 690’dır.",
+   "Hafta sonu yolcu sayısı 2 × 4 × 38 = 304’tür.",
+   "Toplam 690 + 304 = 994 yolcudur. Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sefer sayısını hesaba katmama: 5 × 46 + 2 × 38 işlemini yapma.",
+   "B": "Yalnızca hafta içi sonucunu bulup bırakma; ara sonucu nihai sanma.",
+   "C": "Doğru.",
+   "D": "Hafta sonu için de günde 3 sefer alma: 7 × 3 × 46 işlemini yapma."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "5*3*46+2*4*38",
+   "beklenen_sonuc": 994
+  }
+ },
+ {
+  "id": "MAT5-005",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "surec_bileseni": "a",
+  "konu": "Kesirler",
+  "alt_konu": "Kesrin ondalık gösterimi",
+  "soru_metni": "Bir çiftlikte toplam 50 hayvan vardır ve bunların 35’i tavuktur. Çiftlik sahibi, tavukların tüm hayvanlar içindeki payını ondalık gösterimle yazmak istiyor. Bu pay hangisidir?",
+  "siklar": {
+   "A": "0,7",
+   "B": "0,35",
+   "C": "0,07",
+   "D": "3,5"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Kesrin paydasını 10 veya 100 gibi bir sayıya getirmeyi dene.",
+  "cozum_adimlari": [
+   "Pay, 35/50 kesriyle gösterilir.",
+   "Pay ve payda 2 ile genişletilince 70/100 olur.",
+   "70/100 = 0,7’dir. Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Paydayı yok sayıp 35’i doğrudan ondalık yazma.",
+   "C": "Virgülü bir basamak fazla kaydırma; basamak değeri hatası.",
+   "D": "35/10 işlemini yapma; paydayı 50 yerine 10 alma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "35/50",
+   "beklenen_sonuc": 0.7
+  }
+ },
+ {
+  "id": "MAT5-006",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "surec_bileseni": "b",
+  "konu": "Kesirler",
+  "alt_konu": "Tam sayılı kesri bileşik kesre çevirme",
+  "soru_metni": "Ayşe’nin kek tarifinde 2 tam 1/4 su bardağı un gerekiyor. Elindeki ölçek 1/4 bardaklık olduğu için miktarı bileşik kesirle yazmak istiyor. Bu bileşik kesir hangisidir?",
+  "siklar": {
+   "A": "3/4",
+   "B": "7/4",
+   "C": "9/4",
+   "D": "9/2"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Tam kısmı, paydadaki birimlere çevirip kesir kısmıyla birleştir.",
+  "cozum_adimlari": [
+   "2 tam, 2 × 4 = 8 tane çeyrektir.",
+   "8 çeyreğe 1 çeyrek eklenince 9 çeyrek olur.",
+   "Bileşik kesir 9/4’tür. Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Tam kısmı ile payı toplama: (2 + 1)/4 yazma.",
+   "B": "Çarpma yerine çıkarma yapma: 2 × 4 − 1 = 7.",
+   "C": "Doğru.",
+   "D": "Payı doğru bulup paydayı tam kısım ile değiştirme; pay-payda karışması."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "2+1/4",
+   "beklenen_sonuc": 2.25
+  }
+ },
+ {
+  "id": "MAT5-007",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.4",
+  "surec_bileseni": "a",
+  "konu": "Kesirler",
+  "alt_konu": "Farklı gösterimleri karşılaştırma",
+  "soru_metni": "Üç arkadaş okul bahçesinde koşu yaptı. Ela 3/4 km, Demir 0,6 km ve Su 5/8 km koştu. Koşu mesafelerini küçükten büyüğe doğru sıralayan seçenek hangisidir?",
+  "siklar": {
+   "A": "Ela, Su, Demir",
+   "B": "Demir, Su, Ela",
+   "C": "Su, Demir, Ela",
+   "D": "Demir, Ela, Su"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Kesirleri ortak bir gösterime, örneğin ondalık gösterime çevirerek karşılaştır.",
+  "cozum_adimlari": [
+   "3/4 = 0,75; 5/8 = 0,625; Demir’in mesafesi 0,6’dır.",
+   "Küçükten büyüğe 0,6 < 0,625 < 0,75 olur.",
+   "Sıralama Demir, Su, Ela’dır. Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sıralamayı büyükten küçüğe yapma.",
+   "B": "Doğru.",
+   "C": "0,6’yı 0,625’ten büyük sanma; ondalık basamakları eşitlemeden karşılaştırma.",
+   "D": "Pay ve paydası büyük olan 5/8’i 3/4’ten büyük sanma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-008",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.4",
+  "surec_bileseni": "b",
+  "konu": "Kesirler",
+  "alt_konu": "Kesir, ondalık ve yüzde karşılaştırma",
+  "soru_metni": "Üç kardeş aynı boyuttaki çikolatalardan yedi. Duru bir çikolatanın 7/10’unu, Efe %65’ini, Kaan ise 0,68’ini yedi. Çikolatayı en az ve en çok yiyen kardeşler sırasıyla hangileridir?",
+  "siklar": {
+   "A": "En az Duru, en çok Kaan",
+   "B": "En az Kaan, en çok Efe",
+   "C": "En az Efe, en çok Kaan",
+   "D": "En az Efe, en çok Duru"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Üç miktarı da aynı gösterime çevirdikten sonra sırala.",
+  "cozum_adimlari": [
+   "Duru: 7/10 = 0,70; Efe: %65 = 0,65; Kaan: 0,68.",
+   "0,65 < 0,68 < 0,70 olduğundan en az Efe, en çok Duru yemiştir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sayıları dönüştürmeden 7, 65 ve 68’i karşılaştırma; pay olan 7’yi en küçük sanma.",
+   "B": "%65’i 65 olarak okuyup 0,68’den büyük sanma; yüzdeyi ondalığa çevirmeme.",
+   "C": "0,68’i 0,70’ten büyük sanma; basamak sayısı fazla olan ondalığı büyük kabul etme.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-009",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.1",
+  "surec_bileseni": "a",
+  "konu": "Cebir",
+  "alt_konu": "Eşitliğin korunumu",
+  "soru_metni": "Bir terazinin sol kefesinde bir paket pirinç ile 200 gramlık bir ağırlık, sağ kefesinde ise 700 gramlık bir ağırlık vardır ve terazi dengededir. Pirinç paketi kaç gramdır?",
+  "siklar": {
+   "A": "900",
+   "B": "700",
+   "C": "500",
+   "D": "200"
+  },
+  "dogru_sik": "C",
+  "ipucu": "İki kefeden eşit miktar çıkarılırsa terazi dengede kalır.",
+  "cozum_adimlari": [
+   "Denge, pirinç + 200 = 700 biçiminde yazılır.",
+   "İki kefeden de 200 gram çıkarılınca pirinç = 700 − 200 olur.",
+   "Pirinç paketi 500 gramdır. Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "700 ile 200’ü toplama; işlem seçme hatası.",
+   "B": "Sol kefedeki 200 gramı hesaba katmama.",
+   "C": "Doğru.",
+   "D": "Kefedeki ağırlığı pirinç paketinin kütlesi sanma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "700-200",
+   "beklenen_sonuc": 500
+  }
+ },
+ {
+  "id": "MAT5-011",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "surec_bileseni": "b",
+  "konu": "Cebir",
+  "alt_konu": "Sayı örüntüsünün kuralı",
+  "soru_metni": "Bir fırın, ilk gün 12 ekmek sattı. Sonraki her gün bir önceki günden 5 ekmek fazla satıyor. Bu düzen aynı biçimde sürerse fırın 10. günde kaç ekmek satar?",
+  "siklar": {
+   "A": "50",
+   "B": "57",
+   "C": "62",
+   "D": "45"
+  },
+  "dogru_sik": "B",
+  "ipucu": "İlk gün ile 10. gün arasında kaç kez artış olduğunu say.",
+  "cozum_adimlari": [
+   "Örüntü 12, 17, 22, ... biçiminde 5’er artar.",
+   "İlk günden 10. güne 9 kez artış olur: 9 × 5 = 45.",
+   "10. gündeki satış 12 + 45 = 57 ekmektir. Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İlk günkü 12’yi unutup yalnızca 10 × 5 işlemini yapma.",
+   "B": "Doğru.",
+   "C": "Artış sayısını 10 alma: 12 + 10 × 5.",
+   "D": "İlk günkü 12’yi toplamaya katmama: yalnızca 9 × 5 bulma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "12+(10-1)*5",
+   "beklenen_sonuc": 57
+  }
+ },
+ {
+  "id": "MAT5-012",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.4",
+  "surec_bileseni": "b",
+  "konu": "Cebir",
+  "alt_konu": "Algoritmayı ters işlemle yorumlama",
+  "soru_metni": "Bir paketleme makinesi, kendisine verilen fındık sayısını önce 4 ile çarpar, sonra çıkan sonuca 6 ekler. Makinenin çıkışında 54 fındık olduğuna göre makineye kaç fındık verilmiştir?",
+  "siklar": {
+   "A": "60",
+   "B": "48",
+   "C": "15",
+   "D": "12"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Makinenin yaptığı işlemleri sondan başa doğru, ters işlemlerle geri al.",
+  "cozum_adimlari": [
+   "Son işlem olan 6 eklemeyi geri alınca 54 − 6 = 48 olur.",
+   "İlk işlem olan 4 ile çarpmayı geri alınca 48 ÷ 4 = 12 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çıkarma yerine toplama yapma: 54 + 6.",
+   "B": "Yalnızca 6’yı çıkarıp 4’e bölmeyi unutma; ara sonucu nihai sanma.",
+   "C": "Ters işlemin yönünü karıştırma: (54 + 6) ÷ 4.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "(54-6)/4",
+   "beklenen_sonuc": 12
+  }
+ },
+ {
+  "id": "MAT5-014",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.2",
+  "surec_bileseni": "b",
+  "konu": "Geometri",
+  "alt_konu": "Çemberin özelliklerine yönelik çıkarım",
+  "soru_metni": "Bir bahçıvan, çember biçimindeki çiçekliğin tam ortasına bir kazık çakıp ucuna ip bağladı. İpin diğer ucunu çiçekliğin kenarındaki üç farklı noktaya götürerek ipin uzunluğunu üç kez ölçtü. Bu ölçümlerle ilgili hangi çıkarım doğrudur?",
+  "siklar": {
+   "A": "Üç ölçüm birbirine eşit uzunlukta çıkar.",
+   "B": "Ölçümlerin üçü de çapın uzunluğuna eşit çıkar.",
+   "C": "Kazığa yakın görünen noktadaki ölçüm en kısa çıkar.",
+   "D": "Ölçümler seçilen noktaya göre birbirinden farklı çıkar."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Merkezden çember üzerindeki noktalara olan uzaklığı düşün.",
+  "cozum_adimlari": [
+   "Kazık çemberin merkezindedir.",
+   "Çemberin üzerindeki bütün noktalar merkeze aynı uzaklıktadır; bu uzaklık yarıçaptır.",
+   "Üç ölçüm birbirine eşit çıkar. Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Yarıçapı çapla karıştırma; ölçülen uzunluk çapın yarısıdır.",
+   "C": "Gözle yakın görünen noktanın merkeze gerçekten yakın olduğunu sanma.",
+   "D": "Çember üzerindeki noktaların merkeze uzaklığının nokta seçimine bağlı olduğunu sanma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-018",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.5",
+  "surec_bileseni": "a",
+  "konu": "Geometri",
+  "alt_konu": "Çokgenin oluşumu",
+  "soru_metni": "Bir çiftçi tarlasını art arda dört düz tel çekerek çevirdi. Son tel, ilk telle birleşecek biçimde çekildi ve arada boşluk kalmadı. Tarlanın biçimi hangi çokgendir?",
+  "siklar": {
+   "A": "Üçgen",
+   "B": "Dörtgen",
+   "C": "Beşgen",
+   "D": "Altıgen"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Kapalı şekilde kaç düz tel varsa o kadar kenar ve köşe oluşur.",
+  "cozum_adimlari": [
+   "Her tel bir kenar oluşturur; dört tel dört kenar demektir.",
+   "Dört kenarlı kapalı şekle dörtgen denir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Köşe sayısını telden bir eksik sayma.",
+   "B": "Doğru.",
+   "C": "Telleri ve birleşme noktasını ayrı sayarak bir fazla bulma.",
+   "D": "Kenar ve köşe sayısı arasındaki ilişkiyi karıştırıp iki fazla sayma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-020",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.7",
+  "surec_bileseni": "b",
+  "konu": "Geometri",
+  "alt_konu": "Kesişen iki çemberle üçgen oluşturma",
+  "soru_metni": "Bir parkta merkezleri A ve B olan, yarıçapları 6 m olan iki çember biçimli yürüyüş yolu vardır. A ile B arasındaki uzaklık da 6 m’dir ve yollar K noktasında kesişir. A, B ve K noktaları arasına iple bir üçgen oluşturulursa ipin toplam uzunluğu kaç metre olur?",
+  "siklar": {
+   "A": "12",
+   "B": "24",
+   "C": "36",
+   "D": "18"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Çemberin merkezinden çember üzerindeki bir noktaya olan uzaklık yarıçaptır.",
+  "cozum_adimlari": [
+   "AK ve BK, birer yarıçap olduğundan 6 m’dir.",
+   "AB uzaklığı da 6 m olduğundan üçgenin üç kenarı 6 m’dir.",
+   "İpin uzunluğu 6 + 6 + 6 = 18 m’dir. Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Merkezler arası uzaklığı (AB) hesaba katmama; yalnızca iki yarıçapı toplama.",
+   "B": "Dört yarıçapı toplama; iki çemberin yarıçaplarını ikişer kez sayma.",
+   "C": "Kenar uzunluklarını toplamak yerine çarpma: 6 × 6.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "6+6+6",
+   "beklenen_sonuc": 18
+  }
+ },
+ {
+  "id": "MAT5-022",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.4.2",
+  "surec_bileseni": "c",
+  "konu": "Ölçme",
+  "alt_konu": "Birim karelerle alan",
+  "soru_metni": "Bir odanın zemini, kenarı 1 m olan kare biçimli fayanslarla döşenecektir. Dikdörtgen biçimli zeminin bir kenarına 6, komşu kenarına 4 fayans sığmaktadır. Zemini döşemek için kaç fayans gerekir?",
+  "siklar": {
+   "A": "10",
+   "B": "24",
+   "C": "20",
+   "D": "48"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir sıraya sığan fayans sayısı ile sıra sayısı arasındaki ilişkiyi düşün.",
+  "cozum_adimlari": [
+   "Bir sırada 6 fayans vardır ve 4 sıra gerekir.",
+   "Fayans sayısı 6 × 4 = 24’tür.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İki kenardaki fayans sayısını toplama: 6 + 4.",
+   "B": "Doğru.",
+   "C": "Alan yerine çevreyi hesaplama: 2 × (6 + 4).",
+   "D": "Bulunan sonucu gereksiz yere iki ile çarpma."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "6*4",
+   "beklenen_sonuc": 24
+  }
+ },
+ {
+  "id": "MAT5-023",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.4.3",
+  "surec_bileseni": "a",
+  "konu": "Ölçme",
+  "alt_konu": "Alanı verilen dikdörtgenin çevresi",
+  "soru_metni": "Alanı 36 m² olan dikdörtgen biçimli bir bahçenin kenar uzunlukları doğal sayıdır ve kısa kenarı 4 m’dir. Bahçenin çevresine çit çekilecektir. Çitin uzunluğu kaç metre olur?",
+  "siklar": {
+   "A": "26",
+   "B": "13",
+   "C": "9",
+   "D": "52"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce alan bilgisinden diğer kenarı bul.",
+  "cozum_adimlari": [
+   "Uzun kenar 36 ÷ 4 = 9 m’dir.",
+   "Çevre 2 × (4 + 9) = 26 m’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Yarım çevreyi çevre sanma; 2 ile çarpmayı unutma.",
+   "C": "Uzun kenarı bulup bırakma; ara sonucu nihai sanma.",
+   "D": "Yarım çevreyi 4 ile çarpma; çevre formülünü karıştırma."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "2*(4+36/4)",
+   "beklenen_sonuc": 26
+  }
+ },
+ {
+  "id": "MAT5-024",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.4.3",
+  "surec_bileseni": "b",
+  "konu": "Ölçme",
+  "alt_konu": "Aynı alana sahip dikdörtgenlerin çevreleri",
+  "soru_metni": "Alanı 24 m² olan, kenar uzunlukları doğal sayı olan dikdörtgen biçimli bir sebze bahçesinin çevresine çit çekilecektir. Çiftçi en az çit kullanmak istiyor. Bu durumda kaç metre çit gerekir?",
+  "siklar": {
+   "A": "50",
+   "B": "28",
+   "C": "22",
+   "D": "20"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Alanı 24 olan kenar çiftlerini listele ve her biri için çevreyi hesapla.",
+  "cozum_adimlari": [
+   "Kenar çiftleri: 1×24, 2×12, 3×8, 4×6.",
+   "Çevreler sırasıyla 50, 28, 22 ve 20 m’dir.",
+   "En küçük çevre 2 × (4 + 6) = 20 m’dir. Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İlk bulunan kenar çifti 1×24’ü yeterli sanıp diğer çiftleri denememe.",
+   "B": "2×12 çiftinde durma; diğer çiftleri denememe.",
+   "C": "3×8 çiftinde durma; bütün çarpan çiftlerini incelememe.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "2*(4+6)",
+   "beklenen_sonuc": 20
+  }
+ },
+ {
+  "id": "MAT5-025",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.4.4",
+  "surec_bileseni": "e",
+  "konu": "Ölçme",
+  "alt_konu": "Çevre uzunluğu problemi",
+  "soru_metni": "Dikdörtgen biçimli bir bahçenin kısa kenarı 8 m, uzun kenarı 12 m’dir. Bahçenin bütün çevresine tel çekilecek ve telin metresi 15 TL’dir. Bu iş için kaç TL ödenir?",
+  "siklar": {
+   "A": "300",
+   "B": "600",
+   "C": "480",
+   "D": "1 440"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bahçenin çevresini bul, sonra metre fiyatıyla ilişkilendir.",
+  "cozum_adimlari": [
+   "Çevre 2 × (12 + 8) = 40 m’dir.",
+   "Ödenecek tutar 40 × 15 = 600 TL’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yarım çevreyi (20 m) kullanma: (12 + 8) × 15.",
+   "B": "Doğru.",
+   "C": "Bir kısa kenarı atlama: (2 × 12 + 8) × 15.",
+   "D": "Çevre yerine alanı kullanma: 12 × 8 × 15."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "2*(12+8)*15",
+   "beklenen_sonuc": 600
+  }
+ },
+ {
+  "id": "MAT5-026",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.4.4",
+  "surec_bileseni": "b",
+  "konu": "Ölçme",
+  "alt_konu": "Çevre ve alan ilişkisi problemi",
+  "soru_metni": "Çevresi 30 m olan dikdörtgen biçimli bir havuzun uzun kenarı 10 m’dir. Havuzun tabanı seramikle kaplanacaktır. Kaplanacak alan kaç metrekaredir?",
+  "siklar": {
+   "A": "75",
+   "B": "100",
+   "C": "50",
+   "D": "150"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce çevre bilgisinden kısa kenarı bul.",
+  "cozum_adimlari": [
+   "Kısa ve uzun kenarın toplamı 30 ÷ 2 = 15 m’dir.",
+   "Kısa kenar 15 − 10 = 5 m’dir.",
+   "Alan 10 × 5 = 50 m²’dir. Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yarım çevreyi kısa kenarla çarpma: 15 × 5.",
+   "B": "Havuzu kare sanıp 10 × 10 yapma.",
+   "C": "Doğru.",
+   "D": "Yarım çevreyi uzun kenarla çarpma: 15 × 10."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "10*(30/2-10)",
+   "beklenen_sonuc": 50
+  }
+ },
+ {
+  "id": "MAT5-027",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "surec_bileseni": "ç",
+  "konu": "Veri",
+  "alt_konu": "Kategorik veri için anket sorusu",
+  "soru_metni": "Elif, sınıf arkadaşlarının en sevdiği meyveyi öğrenmek için kısa bir anket hazırlıyor. Topladığı veriyi elma, muz, çilek gibi kategorilere ayırarak gösterecek. Bu amaçla hangi anket sorusunu sormalıdır?",
+  "siklar": {
+   "A": "Elma, muz, çilek ve üzümden en çok hangisini seversin?",
+   "B": "Haftada kaç kez, hangi saatlerde meyve yersin?",
+   "C": "Bir kilogram elma ve muz için kaç lira ödersin?",
+   "D": "Bir günde kaç gram meyve yediğini tartarak yazar mısın?"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Kategorik veri, sayı ya da ölçüm değil, seçenek veya grup bilgisidir.",
+  "cozum_adimlari": [
+   "Amaç, hangi meyvenin tercih edildiğini kategorilere göre göstermektir.",
+   "Yanıtı bir meyve adı olan soru kategorik veri toplar.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Konu meyve olduğu için uygun sanma; sayma ve saat verisi toplar, tercih sormaz.",
+   "C": "Meyve konulu olduğu için uygun sanma; fiyat (sayısal) verisi toplar.",
+   "D": "Meyve konulu olduğu için uygun sanma; ölçüm (nicel) verisi toplar."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-028",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.2",
+  "surec_bileseni": "a",
+  "konu": "Veri",
+  "alt_konu": "Kategorik veriyi yorumlama",
+  "soru_metni": "Bir okulda 40 öğrenciye okula nasıl geldikleri soruldu. Cevaplara göre 14 öğrenci otobüsle, 12 öğrenci yürüyerek, 8 öğrenci bisikletle ve 6 öğrenci veli aracıyla geliyor. Bu verilere göre aşağıdaki çıkarımlardan hangisi doğrudur?",
+  "siklar": {
+   "A": "Otobüsle gelenlerin sayısı, tüm öğrencilerin yarısına eşittir.",
+   "B": "Veli aracıyla gelenler, bisikletle gelenlerden fazladır.",
+   "C": "Yürüyerek gelenler, otobüsle gelenlerden fazladır.",
+   "D": "Yürüyerek gelenler, bisikletle gelenlerden 4 kişi fazladır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Her seçeneği verilen sayılarla tek tek karşılaştır.",
+  "cozum_adimlari": [
+   "Otobüsle gelenler 14 kişidir; 40’ın yarısı 20 olduğundan A yanlıştır.",
+   "6 < 8 olduğundan B yanlıştır; 12 < 14 olduğundan C yanlıştır.",
+   "12 − 8 = 4 olduğundan D doğrudur. Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "En kalabalık grubu toplamın yarısı sanma; 14, 40’ın yarısından küçüktür.",
+   "B": "Sayıları karşılaştırırken büyük-küçük ilişkisini ters yorumlama.",
+   "C": "Sayıları karşılaştırırken büyük-küçük ilişkisini ters yorumlama.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-030",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.6.2",
+  "surec_bileseni": "b",
+  "konu": "Olasılık",
+  "alt_konu": "Az olası ve çok olası olaylar",
+  "soru_metni": "Bir torbada 2 kırmızı, 6 mavi ve 4 yeşil bilye vardır. Bilyeler aynı büyüklüktedir ve torbadan gözü kapalı bir bilye çekilecektir. Bu çekilişle ilgili hangi ifade doğrudur?",
+  "siklar": {
+   "A": "Listede ilk sıradaki renk olan kırmızı en olasıdır.",
+   "B": "Renklerin üçünün de çekilme olasılığı birbirine eşittir.",
+   "C": "Mavi bilyenin çekilme olasılığı diğer renklerden daha fazladır.",
+   "D": "Kırmızı bilyenin çekilme olasılığı mavi bilyeden daha fazladır."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Her rengin bilye sayısını karşılaştır.",
+  "cozum_adimlari": [
+   "Bilye sayıları: kırmızı 2, mavi 6, yeşil 4.",
+   "En çok bilyesi olan rengin çekilme olasılığı en yüksektir; bu renk mavidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sıralamada ilk geçen rengi daha olası sanma.",
+   "B": "Renk sayısına bakıp olasılıkları eşit kabul etme.",
+   "C": "Doğru.",
+   "D": "Sayısı az olan rengin daha olası olduğunu sanma; büyük-küçük ilişkisini ters yorumlama."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-E-001",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.2",
+  "surec_bileseni": "a",
+  "konu": "Cebir",
+  "alt_konu": "Problemde işlem önceliği",
+  "soru_metni": "Bir kafede girişte bir kez 30 TL sabit ücret alınıyor. Ayrıca 6 kişilik her masa için 5 TL servis ücreti isteniyor. 48 kişilik bir grup 6’şar kişilik masalara oturacaktır. Grup toplam kaç TL öder?",
+  "siklar": {
+   "A": "65",
+   "B": "70",
+   "C": "38",
+   "D": "190"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce kaç masa gerektiğini bul; sabit ücretin masa sayısından bağımsız olduğunu unutma.",
+  "cozum_adimlari": [
+   "Masa sayısı 48 ÷ 6 = 8’dir.",
+   "Servis ücreti 8 × 5 = 40 TL’dir; sabit ücret yalnızca bir kez eklenir.",
+   "Toplam ödeme 30 + 40 = 70 TL’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İşlemleri soldan sağa sırayla yapma: sabit ücreti kişi sayısına ekleyip masa sayısına bölme, (30 + 48) ÷ 6 × 5.",
+   "B": "Doğru.",
+   "C": "Masa sayısını bulup 5 TL ile çarpmayı unutma; 30 + 8 bulma, ara sonucu nihai sanma.",
+   "D": "Toplamayı çarpmadan önce yapma: sabit ücreti de masa ücretiyle çarpma, (30 + 8) × 5."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "30+48/6*5",
+   "beklenen_sonuc": 70
+  }
+ },
+ {
+  "id": "MAT5-E-002",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.2",
+  "surec_bileseni": "b",
+  "konu": "Cebir",
+  "alt_konu": "Parantezli çok adımlı işlem",
+  "soru_metni": "Bir fırında pişirilen 20 tepsi ekmeğin 8 tepsisi satıldı; her tepside 6 ekmek vardı. Kalan ekmekler 4 kutuya eşit dağıtıldı ve her kutuya ayrıca 5 simit kondu. Bir kutudaki ürün sayısı kaçtır?",
+  "siklar": {
+   "A": "33",
+   "B": "53",
+   "C": "123",
+   "D": "23"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce satılmayan tepsi sayısını bul, sonra ekmek sayısına geç; simitler en son eklenir.",
+  "cozum_adimlari": [
+   "Satılmayan tepsi sayısı 20 − 8 = 12’dir.",
+   "Kalan ekmek sayısı 12 × 6 = 72’dir.",
+   "Her kutuya 72 ÷ 4 = 18 ekmek düşer.",
+   "Kutudaki ürün sayısı 18 + 5 = 23’tür. İşlem 5 + 6 × (20 − 8) ÷ 4 biçiminde yazılır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Simit sayısını tepsideki ekmek sayısıyla toplayıp sonra tepsi sayısıyla çarpma, (5 + 6) × (20 − 8) ÷ 4.",
+   "B": "İşlemleri öncelik gözetmeden soldan sağa yapma, ((5 + 6) × 20 − 8) ÷ 4.",
+   "C": "Parantezi yok sayıp bölmeyi yalnızca 8’e uygulama, 5 + 6 × 20 − 8 ÷ 4.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "5+6*(20-8)/4",
+   "beklenen_sonuc": 23
+  }
+ },
+ {
+  "id": "MAT5-E-005",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.3",
+  "surec_bileseni": "c",
+  "konu": "Geometri",
+  "alt_konu": "Açı ölçüleriyle bilinmeyen açıyı bulma",
+  "soru_metni": "Bir mimar, düz bir duvar çizgisi üzerindeki K noktasından duvarın bir yanına iki çizgi çizerek 180°’lik düz açıyı üç açıya ayırdı. İlk iki açının ölçüleri 48° ve 77° olarak belirlendi. Üçüncü açı kaç derecedir?",
+  "siklar": {
+   "A": "55°",
+   "B": "125°",
+   "C": "103°",
+   "D": "132°"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Üç açının toplamının düz açıya eşit olduğunu kullan.",
+  "cozum_adimlari": [
+   "Üç açının ölçüleri toplamı 180°’dir.",
+   "İlk iki açının toplamı 48° + 77° = 125°’dir.",
+   "Üçüncü açı 180° − 125° = 55°’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Verilen iki açıyı toplayıp işlemi orada bırakma; ara sonucu nihai sanma.",
+   "C": "180°’den yalnızca 77°’yi çıkarma; diğer verilen açıyı hesaba katmama.",
+   "D": "180°’den yalnızca 48°’yi çıkarma; diğer verilen açıyı hesaba katmama."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "180-48-77",
+   "beklenen_sonuc": 55
+  }
+ },
+ {
+  "id": "MAT5-E-006",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "surec_bileseni": "b",
+  "konu": "Geometri",
+  "alt_konu": "Kesişen iki doğruda komşu açı",
+  "soru_metni": "İki cadde bir kavşakta kesişiyor ve kavşakta dört açı oluşuyor. Açılardan biri 65°’dir. Bu açıya komşu olan açı kaç derecedir?",
+  "siklar": {
+   "A": "25°",
+   "B": "65°",
+   "C": "295°",
+   "D": "115°"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Kesişen iki doğruda komşu iki açı birlikte düz bir çizgi oluşturur.",
+  "cozum_adimlari": [
+   "Komşu iki açının ölçüleri toplamı 180°’dir.",
+   "Komşu açı 180° − 65° = 115°’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Komşu açıların toplamını 180° yerine 90° sanma, 90° − 65°.",
+   "B": "Komşu açı ile karşıt (ters) açıyı karıştırma; karşıt açı 65°’dir.",
+   "C": "Dört açının toplamı olan 360°’den çıkarma, 360° − 65°.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "180-65",
+   "beklenen_sonuc": 115
+  }
+ },
+ {
+  "id": "MAT5-E-007",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "surec_bileseni": "b",
+  "konu": "Geometri",
+  "alt_konu": "Kesişen iki doğruda karşıt ve komşu açılar",
+  "soru_metni": "İki sokak bir kavşakta kesişiyor ve dört açı oluşuyor. Birbirinin karşısında olan iki açının ölçüleri toplamı 110°’dir. Bu açılardan birine komşu olan açı kaç derecedir?",
+  "siklar": {
+   "A": "70°",
+   "B": "125°",
+   "C": "55°",
+   "D": "110°"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Karşıt açıların ölçülerinin birbirine nasıl bağlı olduğunu düşün; sonra komşu açıya geç.",
+  "cozum_adimlari": [
+   "Karşıt açılar eşittir; her biri 110° ÷ 2 = 55°’dir.",
+   "Komşu açılar toplamı 180°’dir.",
+   "Komşu açı 180° − 55° = 125°’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Verilen toplamı tek bir açı sanıp 180°’den çıkarma, 180° − 110°.",
+   "B": "Doğru.",
+   "C": "Karşıt açıyı bulup işlemi orada bırakma; ara sonucu nihai sanma.",
+   "D": "İki açının toplamını tek bir açının ölçüsü sanma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "180-110/2",
+   "beklenen_sonuc": 125
+  }
+ },
+ {
+  "id": "MAT5-E-009",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.6",
+  "surec_bileseni": "c",
+  "konu": "Geometri",
+  "alt_konu": "Çıkarımı karşı örnekle değerlendirme",
+  "soru_metni": "Deniz, dörtgenleri incelerken “Dört kenarı da eşit uzunlukta olan her dörtgenin dört açısı da dik açıdır” çıkarımını yaptı. Bu çıkarımın yanlış olduğunu göstermek için aşağıdaki örneklerden hangisi kullanılabilir?",
+  "siklar": {
+   "A": "Dört kenarı 4 cm olan ve bütün açıları dik olan dörtgen",
+   "B": "Kenarları 3, 5, 3 ve 5 cm olan ve bütün açıları dik olan dörtgen",
+   "C": "Üç kenarı da 6 cm olan ve üç açısı da eşit olan üçgen",
+   "D": "Dört kenarı 5 cm olan ve iki açısı dar açı olan dörtgen"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir çıkarımı çürütmek için koşulunu sağlayıp sonucunu sağlamayan bir örnek gerekir.",
+  "cozum_adimlari": [
+   "Çıkarımın koşulu: dörtgenin dört kenarı eşittir. Sonucu: dört açısı da diktir.",
+   "Çürütmek için dört kenarı eşit olup bütün açıları dik olmayan bir örnek gerekir.",
+   "Dört kenarı 5 cm olan ve iki açısı dar olan dörtgen bu koşulu sağlar.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çıkarımı destekleyen bir örneği çürüten örnek sanma; bu dörtgen koşulu da sonucu da sağlar.",
+   "B": "Kenarları eşit olmayan bir dörtgeni örnek alma; çıkarımın koşulunu sağlamaz.",
+   "C": "Dörtgen olmayan bir şekli örnek alma; çıkarım yalnızca dörtgenler içindir.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-E-010",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.4.1",
+  "surec_bileseni": "a",
+  "konu": "Ölçme",
+  "alt_konu": "Çevresi verilen dikdörtgenin kenarları",
+  "soru_metni": "Ayşe, dikdörtgen biçimli bir fotoğraf çerçevesinin kenarlarını tam bir tur saracak 20 cm uzunluğunda bir süs şeridi kullanacaktır. Şerit ne artacak ne eksik kalacaktır. Çerçevenin kenar uzunlukları santimetre cinsinden doğal sayı olduğuna göre kenarları hangisi olabilir?",
+  "siklar": {
+   "A": "8 cm ve 12 cm",
+   "B": "2 cm ve 10 cm",
+   "C": "3 cm ve 7 cm",
+   "D": "4 cm ve 5 cm"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Şeridin uzunluğu çerçevenin çevresine eşittir; iki komşu kenarın toplamını bulmaya çalış.",
+  "cozum_adimlari": [
+   "Çevre 2 × (kısa kenar + uzun kenar) = 20 cm olduğundan iki kenarın toplamı 10 cm’dir.",
+   "Toplamı 10 olan çift 3 cm ve 7 cm’dir.",
+   "Diğer seçeneklerde toplamlar 20, 12 ve 9 cm’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kenarların toplamını çevre sanma; 8 + 12 = 20 bulup 2 ile çarpmayı unutma.",
+   "B": "Kenarların çarpımını (alanı) çevre sanma; 2 × 10 = 20.",
+   "C": "Doğru.",
+   "D": "Kenarların çarpımını (alanı) çevre sanma; 4 × 5 = 20."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "2*(3+7)",
+   "beklenen_sonuc": 20
+  }
+ },
+ {
+  "id": "MAT5-010",
+  "kazanim_kodu": "MAT.5.1.2",
+  "surec_bileseni": "a",
+  "konu": "Doğal sayılar",
+  "alt_konu": "Çok adımlı gerçek yaşam problemi",
+  "soru_metni": "Defne’nin cüzdanında 100 TL vardı. Her biri 12 TL olan 3 kitap aldı, sonra babası ona 8 TL verdi. Defne’nin cüzdanında son durumda kaç TL vardır?",
+  "siklar": {
+   "A": "72",
+   "B": "56",
+   "C": "40",
+   "D": "1 172"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Paranın azalmasına ve artmasına yol açan olayları sırasıyla ayır; harcamanın toplamını bulmak için önce kitap sayısını dikkate al.",
+  "cozum_adimlari": [
+   "3 kitabın fiyatı 3 × 12 = 36 TL’dir.",
+   "Kitaplar alındıktan sonra 100 − 36 = 64 TL kalır.",
+   "Babası 8 TL verince 64 + 8 = 72 TL olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Babasından gelen parayı da harcama gibi çıkarma: 100 − 36 − 8 işlemi yapılmış.",
+   "C": "Toplamayı çarpmadan önce yapma: 12 + 8 = 20 bulup 3 ile çarpma ve 100’den çıkarma, 100 − (12 + 8) × 3.",
+   "D": "İşlem seçimi hatası: başlangıçtaki 100 TL’yi 12 ile çarpma, 100 × 12 − 36 + 8."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "sayisal_dogrulama": {
+   "ifade": "100-3*12+8",
+   "beklenen_sonuc": 72
+  }
+ },
+ {
+  "id": "MAT5-019",
+  "kazanim_kodu": "MAT.5.3.6",
+  "surec_bileseni": "a",
+  "konu": "Geometri",
+  "alt_konu": "Kare ve dikdörtgenin ortak özellikleri",
+  "soru_metni": "Bir fotoğraf stüdyosunda kare biçimli ve dikdörtgen biçimli iki çerçeve vardır. Çerçevelerin kenar ve açıları incelendiğinde ikisi için de doğru olan ifade hangisidir?",
+  "siklar": {
+   "A": "Karşılıklı kenarlarının uzunlukları birbirine eşittir.",
+   "B": "Dört kenarının uzunluğu birbirine eşittir.",
+   "C": "Yan yana duran kenarları birbirine eşit uzunluktadır.",
+   "D": "Köşelerinden ikisinin açısı dar açı biçimindedir."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her ifadeyi önce kare için, sonra dikdörtgen için ayrı ayrı sına; yalnızca ikisinde birden geçerli olan ifade doğrudur.",
+  "cozum_adimlari": [
+   "Karede dört kenar eşittir; dikdörtgende yalnızca karşılıklı kenarlar eşittir.",
+   "Karşılıklı kenarların eşit olması hem kare hem dikdörtgen için geçerlidir.",
+   "Dört kenarın eşit olması ve yan yana kenarların eşit olması dikdörtgende her zaman doğru değildir.",
+   "İki şeklin de dört açısı dik açıdır; dar açı yoktur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Karenin özelliğini dikdörtgene de uygulama; dikdörtgenin kenarları genellikle farklı uzunluktadır.",
+   "C": "Yan yana kenarların eşitliği yalnızca kare için geçerlidir; dikdörtgende kısa ve uzun kenar yan yana durur.",
+   "D": "Açı özelliği yanlış bilinmiş: kare ve dikdörtgenin dört açısı da dik açıdır, dar açı yoktur."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "suslu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)"
+ },
+ {
+  "id": "MAT5-021",
+  "kazanim_kodu": "MAT.5.4.1",
+  "surec_bileseni": "a",
+  "konu": "Ölçme",
+  "alt_konu": "Çevresi verilen dikdörtgenin kenar uzunluğu",
+  "soru_metni": "Ela, 24 cm uzunluğundaki telin bütününü kullanarak dikdörtgen biçiminde bir fotoğraf çerçevesi yapacaktır. Çerçevenin kısa kenarı 5 cm olduğuna göre uzun kenarı kaç santimetredir?",
+  "siklar": {
+   "A": "19",
+   "B": "12",
+   "C": "7",
+   "D": "14"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Tel çerçevenin bütün kenarlarını oluşturur; dikdörtgende her uzunlukta kaç kenar bulunduğunu düşün.",
+  "cozum_adimlari": [
+   "Telin uzunluğu dikdörtgenin çevresine eşittir: 24 cm.",
+   "Bir kısa ve bir uzun kenarın toplamı çevrenin yarısıdır: 24 ÷ 2 = 12 cm.",
+   "Uzun kenar 12 − 5 = 7 cm’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Telin tamamından yalnızca bir kısa kenarı çıkarma: 24 − 5.",
+   "B": "Ara sonucu nihai sanma: çevrenin yarısı olan 12 cm’yi uzun kenar olarak alma.",
+   "C": "Doğru.",
+   "D": "Çevreden iki kısa kenarı çıkarıp kalanı uzun kenar sanma: 24 − 2 × 5, iki uzun kenarın toplamı olan 14 cm’yi bulma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "sayisal_dogrulama": {
+   "ifade": "24/2-5",
+   "beklenen_sonuc": 7
+  }
+ },
+ {
+  "id": "MAT5-029",
+  "kazanim_kodu": "MAT.5.6.1",
+  "surec_bileseni": "a",
+  "konu": "Olasılık",
+  "alt_konu": "Kesin olay",
+  "soru_metni": "Bir torbada 8 kırmızı bilye vardır ve torbada başka renkte bilye yoktur. Torbadan gözü kapalı bir bilye çekilecektir. Çekilen bilyenin kırmızı olma olasılığı hangisidir?",
+  "siklar": {
+   "A": "0",
+   "B": "1",
+   "C": "1/8",
+   "D": "1/2"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Torbadaki bilyelerin renklerine bak ve çekilebilecek bütün sonuçların hangi renkte olacağını düşün.",
+  "cozum_adimlari": [
+   "Torbadaki bütün bilyeler kırmızıdır.",
+   "Çekilen bilye mutlaka kırmızı olur; bu olay kesindir.",
+   "Kesin bir olayın olasılığı 1’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Olasılığı 0 sanma: 0 imkânsız olayın olasılığıdır, burada olay kesindir.",
+   "B": "Doğru.",
+   "C": "Tek bir bilyenin payını alma: 8 bilyeden birini seçilen sanıp 1/8 bulma.",
+   "D": "Yalnızca iki durum (kırmızı olur ya da olmaz) varmış gibi düşünüp eşit olasılık sanma."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)"
+ },
+ {
+  "id": "MAT5-B-001",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "surec_bileseni": "a",
+  "konu": "Temel geometrik çizimler",
+  "alt_konu": "Çember çizimi: yarıçap ve çap",
+  "soru_metni": "Defne, defterine pergelle bir çember çizecektir. Pergelin iki ucu arasını 4 cm açıp iğneli ucunu O noktasına batırarak çemberi tamamlıyor. Çember üzerindeki her nokta O noktasına 4 cm uzaklıktadır.\n\nBuna göre Defne'nin çizdiği çemberin çapı kaç cm olur?",
+  "siklar": {
+   "A": "2 cm",
+   "B": "4 cm",
+   "C": "8 cm",
+   "D": "16 cm"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Çemberin merkezden çember üzerindeki noktaya olan uzaklığı hangi uzunluktur? Çap bu uzunlukla nasıl ilişkilidir?",
+  "cozum_adimlari": [
+   "Merkezden çember üzerindeki noktalara olan uzaklık yarıçaptır; yarıçap 4 cm'dir.",
+   "Çap, yarıçapın 2 katıdır: 4 x 2 = 8 cm.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çapın, yarıçapın yarısı olduğunu sanarak 4 / 2 işlemini yapma.",
+   "B": "Verilen uzaklığı doğrudan çap sanma, yarıçapla karıştırma.",
+   "C": "Doğru.",
+   "D": "Yarıçapı kendisiyle çarparak (4 x 4) çap bulma."
+  },
+  "zorluk": 1,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "4*2",
+   "beklenen_sonuc": 8
+  }
+ },
+ {
+  "id": "MAT5-B-002",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "surec_bileseni": "a",
+  "konu": "Temel geometrik çizimler",
+  "alt_konu": "Dikme çizimi ve dik açılar",
+  "soru_metni": "Mert, defterine bir d doğrusu çizdi. Sonra d doğrusu üzerindeki K noktasından, doğruya dik olacak biçimde bir dikme çizdi. Dikme ile d doğrusu K noktasında kesişerek dört açı oluşturdu.\n\nBuna göre bu dört açıdan kaç tanesi dik açıdır?",
+  "siklar": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Birbirine dik iki doğrunun kesiştiği noktada oluşan açıların ölçülerini düşün.",
+  "cozum_adimlari": [
+   "Dikme, doğruyla 90° lik açı yapar.",
+   "Kesişen iki dik doğrunun oluşturduğu dört açının hepsi 90° dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yalnızca çizilen tek açıyı dik sanma.",
+   "B": "Doğrunun iki yanındaki açıları sayıp diğer iki açıyı unutma.",
+   "C": "Dört açıdan birini dik olmayan sanma.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-B-003",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "surec_bileseni": "a",
+  "konu": "Temel geometrik çizimler",
+  "alt_konu": "Işın ve doğru parçası ayrımı",
+  "soru_metni": "Bir deniz feneri, ışığını bulunduğu noktadan başlayarak tek yönde uzaklara göndermektedir. Ali, bu ışık yolunu defterine çizecektir. Çizimi bir başlangıç noktasından başlayacak ve tek yönde sınırsız uzanacaktır.\n\nBuna göre Ali'nin çizeceği geometrik şekil hangisidir?",
+  "siklar": {
+   "A": "Doğru parçası",
+   "B": "Işın",
+   "C": "Doğru",
+   "D": "Çember"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir ucu belli, diğer ucu sınırsız olan şekli düşün.",
+  "cozum_adimlari": [
+   "Bir başlangıç noktası olan ve tek yönde sınırsız uzanan şekil ışındır.",
+   "Doğru parçasının iki ucu, doğrunun ise hiç ucu yoktur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Başlangıç noktasının olmasından yola çıkıp sınırsız uzanmayı unutma.",
+   "B": "Doğru.",
+   "C": "Sınırsız uzanmayı iki yönde uzanmakla karıştırma.",
+   "D": "Işığın yayılmasını daire biçiminde düşünme."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

@@ -1,0 +1,78 @@
+[
+ {
+  "id": "TR6-Y-E01",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.1",
+  "surec_bileseni": "a",
+  "konu": "Yazma süreci",
+  "alt_konu": "Yazılı etkileşimde selamlama ve hitap",
+  "soru_metni": "Elif, okul gezisinin saatini öğrenmek için sınıf öğretmeni Sevim Hanım'a e-posta yazacaktır. Elif'in e-postaya başlarken yazacağı selamlama ve hitap ifadeleri öğretmene uygun olmalıdır.\n\nAşağıdakilerden hangisi bu e-postanın başlangıcı için en uygun olanıdır?",
+  "siklar": {
+   "A": "Merhaba Sevim, nasılsın? Gezinin saatini söyler misin?",
+   "B": "Sevgili öğretmenim, saygılarımla. Gezinin saatini öğrenebilir miyim?",
+   "C": "Selam hocam, naber? Gezinin saatini hemen yaz bana.",
+   "D": "Hey Sevim Hanım, gezinin saatini yazmazsan gelmem."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Öğretmene yazılan bir metinde hitap ve selamlama nazik ve saygılı olmalıdır.",
+  "cozum_adimlari": [
+   "Alıcı öğretmendir; bu yüzden hitap saygılı ve nazik olmalıdır.",
+   "A seçeneği öğretmeni sadece adıyla anıp arkadaş gibi hitap ediyor.",
+   "C ve D seçeneklerinde gündelik konuşma dili ve emir ya da tehdit tonu var.",
+   "B seçeneğinde saygılı hitap, nazik kapanış ve kibar bir istek bulunuyor.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Öğretmene sadece adıyla seslenmek ve arkadaş gibi yazmak hitap uygunluğunu bozar.",
+   "B": "Doğru.",
+   "C": "'Selam hocam, naber?' gündelik konuşma dilidir; 'yaz bana' emir tonundadır.",
+   "D": "'Hey' ile başlamak ve tehdit içermek yazışma nezaketine aykırıdır."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-E02",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.18",
+  "surec_bileseni": "a",
+  "konu": "Yazma süreci",
+  "alt_konu": "Bağlaç olan de/da'nın yazımı",
+  "soru_metni": "Mert, sınıf gazetesi için okul gezisini anlatan kısa bir yazı hazırlıyor. Yazısında bağlaç olan \"de\"nin yazımına dikkat etmek istiyor.\n\nAşağıdaki cümlelerden hangisinde bağlaç olan \"de\" doğru yazılmıştır?",
+  "siklar": {
+   "A": "Ben müzeye gittim, Ayşe'de bizimle geldi.",
+   "B": "Ben müzeye gittim, Ayşe de bizimle geldi.",
+   "C": "Ben müzeye gittim, Ayşede bizimle geldi.",
+   "D": "Ben müzeye gittim, Ayşe da bizimle geldi."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bağlaç olan de/da, önündeki sözcükten ayrı yazılır ve kesme işaretiyle ayrılmaz; ünlü uyumuna da uyar.",
+  "cozum_adimlari": [
+   "Cümledeki \"de\", 'Ayşe de' anlamında 'ayrıca, aynı şekilde' demektir; bu yüzden bağlaçtır.",
+   "Bağlaç olan de/da ayrı yazılır ve kesme işaretiyle ayrılmaz.",
+   "A seçeneğinde kesme işareti kullanılmış, C seçeneğinde bitişik yazılmıştır.",
+   "D seçeneğinde ünlü uyumuna aykırı olarak \"da\" yazılmıştır; 'Ayşe' sözcüğünden sonra \"de\" gelir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bağlaç olan de kesme işaretiyle ayrılmaz; kesme bulunma ekinde özel ada gelen ekler içindir.",
+   "B": "Doğru.",
+   "C": "Bağlaç olan de önündeki sözcüğe bitişik yazılmaz.",
+   "D": "Ayrı yazılmış ama ünlü uyumuna uymayan \"da\" kullanılmış; bu sözcükte \"de\" yazılmalıdır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

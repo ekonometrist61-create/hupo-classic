@@ -1,0 +1,1122 @@
+[
+  {
+    "id": "MAT4-001",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.1",
+    "surec_bileseni": "c",
+    "konu": "Doğal sayılar",
+    "alt_konu": "Altı basamaklı sayıları okuma ve yazma",
+    "soru_metni": "Bir futbol maçını 38 450 kişi izledi. İzleyici sayısı hangi seçenekte doğru okunmuştur?",
+    "siklar": {
+      "A": "otuz sekiz bin dört yüz beş",
+      "B": "otuz sekiz bin dört yüz elli",
+      "C": "üç yüz seksen dört bin elli",
+      "D": "otuz sekiz bin dört yüz kırk beş"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Sayıyı binler ve birler bölüğü olarak iki parçaya ayırıp her bölüğü ayrı oku.",
+    "cozum_adimlari": [
+      "38 450 sayısı iki bölükten oluşur: binler bölüğü 38, birler bölüğü 450.",
+      "Bölükler birlikte okunur: otuz sekiz bin dört yüz elli.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "450 yerine 405 okudu; sıfır ve beş rakamlarının basamağını karıştırdı.",
+      "C": "Bölükleri karıştırıp sayıyı 384 050 gibi okudu.",
+      "D": "Birler bölüğünü 445 gibi okudu; onlar basamağındaki rakamı yanlış değerlendirdi."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "suslu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-002",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.2",
+    "surec_bileseni": "a",
+    "konu": "Doğal sayılar",
+    "alt_konu": "Basamak ve bölükler",
+    "soru_metni": "528 346 sayısındaki 8 rakamı hangi basamaktadır?",
+    "siklar": {
+      "A": "Yüz binler basamağı",
+      "B": "On binler basamağı",
+      "C": "Binler basamağı",
+      "D": "Yüzler basamağı"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Sayıyı sağdan sola doğru birler, onlar, yüzler diyerek basamaklara ayır.",
+    "cozum_adimlari": [
+      "Sağdan sola: 6 birler, 4 onlar, 3 yüzler, 8 binler, 2 on binler, 5 yüz binler basamağındadır.",
+      "8 rakamı binler basamağındadır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Soldaki ilk rakamın (5) basamağıyla karıştırdı.",
+      "B": "Yanındaki 2 rakamının basamağını (on binler) 8 rakamınınki sandı.",
+      "D": "Binler bölüğünden sonra gelen 3 rakamının basamağıyla (yüzler) karıştırdı."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-003",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.3",
+    "surec_bileseni": "c",
+    "konu": "Doğal sayılar",
+    "alt_konu": "Yüzlüğe yuvarlama",
+    "soru_metni": "Bir kırtasiyede 4 678 defter vardır. Defter sayısı en yakın yüzlüğe yuvarlanırsa kaç olur?",
+    "siklar": {
+      "A": "5 000",
+      "B": "4 700",
+      "C": "4 680",
+      "D": "4 600"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Yüzler basamağının sağındaki iki rakama bak; bu iki rakamlı sayı 50’den küçük mü, büyük mü?",
+    "cozum_adimlari": [
+      "Yüzlüğe yuvarlarken yüzler basamağının sağındaki sayıya bakılır: 78, 50’den büyüktür.",
+      "Yüzler basamağı 6’dan 7’ye çıkar, sağdaki basamaklar sıfır olur: 4 700.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "En yakın binliğe yuvarladı.",
+      "C": "En yakın onluğa yuvarladı (4 678 yerine 4 680).",
+      "D": "Aşağı yuvarladı; 78’in 50’den büyük olduğunu görmedi."
+    },
+    "zorluk": 2,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "suslu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "47*100",
+      "beklenen_sonuc": 4700
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-004",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.4",
+    "surec_bileseni": "b",
+    "konu": "Doğal sayılar",
+    "alt_konu": "Biner biner geriye ritmik sayma",
+    "soru_metni": "Kaan, 302 400 sayısından başlayıp biner biner geriye doğru sayıyor. 5 adım geriye gittiğinde hangi sayıya ulaşır?",
+    "siklar": {
+      "A": "301 900",
+      "B": "298 400",
+      "C": "297 400",
+      "D": "252 400"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Biner geriye saymak, her adımda sayıdan aynı miktarı çıkarmak demektir.",
+    "cozum_adimlari": [
+      "Her adımda 1 000 çıkarılır; 5 adımda toplam 5 000 çıkarılır.",
+      "302 400 − 5 000 = 297 400",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yüzer yüzer sayarak 5 adımda yalnızca 500 çıkardı.",
+      "B": "4 adım geri gitti; bir adımı eksik saydı.",
+      "D": "Binler yerine on binler basamağından azalttı (5 × 10 000)."
+    },
+    "zorluk": 3,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "302400-5*1000",
+      "beklenen_sonuc": 297400
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-005",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.5",
+    "surec_bileseni": "b",
+    "konu": "Örüntüler",
+    "alt_konu": "Azalan sayı örüntüsü",
+    "soru_metni": "Bir sayı örüntüsü şöyle devam ediyor: 96, 89, 82, 75, … Bu örüntünün 7. sayısı kaçtır?",
+    "siklar": {
+      "A": "47",
+      "B": "54",
+      "C": "61",
+      "D": "68"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Ardışık iki sayı arasındaki farkı bul; 1. sayıdan 7. sayıya kaç adımda ulaşıldığını düşün.",
+    "cozum_adimlari": [
+      "Her adımda 7 azalır.",
+      "7. sayıya ulaşmak için 6 adım gerekir: 96 − 6 × 7 = 96 − 42 = 54.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "7 adım uyguladı; 8. sayıyı buldu.",
+      "C": "5 adım uyguladı; 6. sayıyı buldu.",
+      "D": "4 adım uyguladı; 5. sayıyı buldu."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "96-7*6",
+      "beklenen_sonuc": 54
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-006",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.6",
+    "surec_bileseni": "b",
+    "konu": "Kesirler",
+    "alt_konu": "Basit kesir temsili",
+    "soru_metni": "Bir pizza 8 eş dilime bölünüyor. Ali 3 dilim, Ece 2 dilim yiyor. Ali pizzanın kaçta kaçını yemiştir?",
+    "siklar": {
+      "A": "3/5",
+      "B": "5/8",
+      "C": "8/3",
+      "D": "3/8"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Kesirde payda, bütünün kaç eş parçaya bölündüğünü gösterir.",
+    "cozum_adimlari": [
+      "Pizza 8 eş parçaya bölündüğü için payda 8 olur.",
+      "Ali 3 dilim yediği için pay 3 olur: 3/8.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yenen dilimlerin toplamını (3 + 2 = 5) payda yaptı.",
+      "B": "Ali ile Ece’nin yediği dilimleri birlikte aldı.",
+      "C": "Payı ve paydayı ters yazdı."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "3/8",
+      "beklenen_sonuc": 0.375
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-007",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.7",
+    "surec_bileseni": "c",
+    "konu": "Kesirler",
+    "alt_konu": "Denk kesirler",
+    "soru_metni": "3/4 kesrine denk olan kesir aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "6/8",
+      "B": "4/5",
+      "C": "6/7",
+      "D": "9/16"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Denk kesirlerde pay ve payda aynı sayıyla çarpılır veya bölünür.",
+    "cozum_adimlari": [
+      "Pay ve payda 2 ile çarpılır: 3 × 2 = 6 ve 4 × 2 = 8.",
+      "Böylece 3/4 = 6/8 olur.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Hem paya hem paydaya 1 ekledi; toplama ile denk kesir elde edilmez.",
+      "C": "Payı 2 ile çarptı ama paydaya 3 ekledi; iki basamakta farklı işlem yaptı.",
+      "D": "Payı 3 ile, paydayı 4 ile çarptı; aynı sayıyı kullanmadı."
+    },
+    "zorluk": 2,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "3/4",
+      "beklenen_sonuc": 0.75
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-008",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.8",
+    "surec_bileseni": "b",
+    "konu": "Kesirler",
+    "alt_konu": "Birim kesirleri karşılaştırma",
+    "soru_metni": "Aynı büyüklükteki dört bütün, sırasıyla 4, 7, 9 ve 12 eş parçaya bölünüyor. Her bütünden bir parça alınıyor. Hangi bütünden alınan parça en büyüktür?",
+    "siklar": {
+      "A": "4 eş parçaya bölünen bütün",
+      "B": "7 eş parçaya bölünen bütün",
+      "C": "9 eş parçaya bölünen bütün",
+      "D": "12 eş parçaya bölünen bütün"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Aynı pizzayı 2 kişiye ve 4 kişiye paylaştırırsan kimin payının daha büyük olduğunu düşün.",
+    "cozum_adimlari": [
+      "Bütünler eşit büyüklüktedir; bütün ne kadar çok parçaya bölünürse her parça o kadar küçülür.",
+      "En az parçaya bölünen bütün 4 eş parçalı olandır; 1/4 verilen birim kesirlerin en büyüğüdür.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Paydası büyük olan birim kesri büyük sandı; ortadaki bir değeri seçti.",
+      "C": "Payda büyüdükçe parçanın da büyüdüğünü düşündü.",
+      "D": "Paydası en büyük kesri en büyük birim kesir sandı."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-009",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.10",
+    "surec_bileseni": "b",
+    "konu": "Kesirler",
+    "alt_konu": "Kesri verilen çokluğun tamamını bulma",
+    "soru_metni": "Bir kitabın 3/8’i 27 sayfadır. Kitabın tamamı kaç sayfadır?",
+    "siklar": {
+      "A": "216",
+      "B": "72",
+      "C": "45",
+      "D": "9"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Önce kitabın 1/8’inin kaç sayfa olduğunu bul.",
+    "cozum_adimlari": [
+      "3/8’i 27 sayfa ise 1/8’i 27 ÷ 3 = 9 sayfadır.",
+      "Kitap 8 eş parçadan oluşur: 9 × 8 = 72.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "27’yi 8 ile çarptı; 3’e bölmeyi unuttu.",
+      "C": "Kalan 5/8’i buldu (9 × 5).",
+      "D": "Yalnızca 1/8’in değerini bulup işlemi bıraktı (ara sonuç)."
+    },
+    "zorluk": 3,
+    "soru_tipi": "problem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "27/3*8",
+      "beklenen_sonuc": 72
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-010",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.11",
+    "surec_bileseni": "a",
+    "konu": "Kesirler",
+    "alt_konu": "Paydaları eşit kesirlerle toplama ve çıkarma",
+    "soru_metni": "5/9 + 7/9 − 4/9 işleminin sonucu kaçtır?",
+    "siklar": {
+      "A": "8/27",
+      "B": "12/9",
+      "C": "16/9",
+      "D": "8/9"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Paydalar eşit olduğunda işlem yalnızca paylara uygulanır; payda değişmez.",
+    "cozum_adimlari": [
+      "Paylara işlem yapılır: 5 + 7 − 4 = 8.",
+      "Payda aynı kalır: 8/9.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Paydaları da işleme katıp 9 + 9 + 9 = 27 yazdı.",
+      "B": "5/9 + 7/9 işlemini yapıp çıkarmayı yapmadı (ara sonuç).",
+      "C": "4/9’u da toplama işlemine kattı."
+    },
+    "zorluk": 2,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "(5+7-4)/9",
+      "beklenen_sonuc": 0.8888888888888888
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-011",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.12",
+    "surec_bileseni": "b",
+    "konu": "Kesirler",
+    "alt_konu": "Kesirlerle toplama-çıkarma problemi",
+    "soru_metni": "Bir su deposu tamamen doludur. Sabah deponun 2/9’si, öğleden sonra 4/9’u kullanılıyor. Deponun kaçta kaçı doludur?",
+    "siklar": {
+      "A": "7/9",
+      "B": "6/9",
+      "C": "3/9",
+      "D": "2/9"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Depoyu bütün (9/9) olarak düşün; önce kullanılan toplam miktarı bul.",
+    "cozum_adimlari": [
+      "Kullanılan miktar: 2/9 + 4/9 = 6/9.",
+      "Kalan miktar: 9/9 − 6/9 = 3/9.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yalnızca sabah kullanılan 2/9’yu çıkardı.",
+      "B": "Kullanılan miktarı kalan miktar sandı (ara sonuç).",
+      "D": "4/9 − 2/9 işlemini yaptı."
+    },
+    "zorluk": 2,
+    "soru_tipi": "problem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "(9-2-4)/9",
+      "beklenen_sonuc": 0.3333333333333333
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-012",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.1.13",
+    "surec_bileseni": "b",
+    "konu": "Ölçme",
+    "alt_konu": "Kütle birimlerini dönüştürme",
+    "soru_metni": "Bir aşçı 3 kg 450 g un kullanmıştır. Kullanılan un kaç gramdır?",
+    "siklar": {
+      "A": "3 045 g",
+      "B": "453 g",
+      "C": "30 450 g",
+      "D": "3 450 g"
+    },
+    "dogru_sik": "D",
+    "ipucu": "1 kilogramın kaç gram olduğunu hatırla ve kilogram kısmını grama çevir.",
+    "cozum_adimlari": [
+      "1 kg = 1 000 g olduğundan 3 kg = 3 000 g olur.",
+      "3 000 g + 450 g = 3 450 g",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "450 g’ı 45 g gibi yazdı; basamak değeri hatası yaptı.",
+      "B": "Kilogramı ve gramı doğrudan topladı (3 + 450).",
+      "C": "1 kg’ı 10 000 g sanarak hesapladı."
+    },
+    "zorluk": 2,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "suslu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "3*1000+450",
+      "beklenen_sonuc": 3450
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-013",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.2.1",
+    "surec_bileseni": "a",
+    "konu": "Toplama ve çıkarma",
+    "alt_konu": "Zihinden toplama",
+    "soru_metni": "Selin, 599 + 246 işlemini zihinden “600 + 246 − 1” diye düşünerek yapıyor. Selin’in bulduğu sonuç kaçtır?",
+    "siklar": {
+      "A": "845",
+      "B": "846",
+      "C": "847",
+      "D": "855"
+    },
+    "dogru_sik": "A",
+    "ipucu": "599 yerine 600 kullanıldığında toplamın ne kadar fazla çıktığını düşün.",
+    "cozum_adimlari": [
+      "600 + 246 = 846 bulunur.",
+      "599, 600’den 1 az olduğu için sonuçtan 1 çıkarılır: 846 − 1 = 845.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "1 çıkarmayı unuttu (ara sonuç).",
+      "C": "1 çıkarmak yerine 1 ekledi.",
+      "D": "Sonucu onlar basamağında yanlış topladı; 10 fazla buldu."
+    },
+    "zorluk": 2,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "600+246-1",
+      "beklenen_sonuc": 845
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-014",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.2.2",
+    "surec_bileseni": "a",
+    "konu": "Toplama ve çıkarma",
+    "alt_konu": "Dört basamaklı sayılarla toplama ve çıkarma",
+    "soru_metni": "6 485 + 2 758 − 3 906 işleminin sonucu kaçtır?",
+    "siklar": {
+      "A": "9 243",
+      "B": "6 337",
+      "C": "5 347",
+      "D": "5 337"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Önce toplamayı yap; sonra çıkarmada gerektiğinde bir üst basamaktan borç al ve o basamağı azalt.",
+    "cozum_adimlari": [
+      "6 485 + 2 758 = 9 243",
+      "9 243 − 3 906 = 5 337",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Toplamayı yapıp çıkarmayı yapmadı (ara sonuç).",
+      "B": "Yüzler basamağında borç aldıktan sonra binler basamağından 1 azaltmadı.",
+      "C": "Birler basamağında borç aldıktan sonra onlar basamağından 1 azaltmayı unuttu."
+    },
+    "zorluk": 2,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "6485+2758-3906",
+      "beklenen_sonuc": 5337
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-015",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.2.3",
+    "surec_bileseni": "b",
+    "konu": "Çarpma ve bölme",
+    "alt_konu": "Çarpma sonucunu tahmin etme",
+    "soru_metni": "Bir sinema salonunda 48 sıra vardır ve her sırada 52 koltuk bulunmaktadır. Salondaki koltuk sayısı için en uygun tahmin hangisidir?",
+    "siklar": {
+      "A": "250",
+      "B": "2 000",
+      "C": "2 500",
+      "D": "25 000"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Sayıları işlem yapması kolay olan en yakın onluklara yuvarla.",
+    "cozum_adimlari": [
+      "48 yaklaşık 50, 52 yaklaşık 50 alınır.",
+      "50 × 50 = 2 500 olduğundan en uygun tahmin 2 500’dür.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Çarpımda bir sıfırı eksik yazdı (basamak değeri hatası).",
+      "B": "48’i 40’a, 52’yi 50’ye yuvarlayıp yakın olmayan bir tahmin yaptı.",
+      "D": "Çarpımda fazladan bir sıfır yazdı (basamak değeri hatası)."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "suslu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "50*50",
+      "beklenen_sonuc": 2500
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-016",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.2.4",
+    "surec_bileseni": "a",
+    "konu": "Çarpma ve bölme",
+    "alt_konu": "Zihinden çarpma kısa yolları",
+    "soru_metni": "Defne, 25 × 48 işlemini zihinden yapmak için 48’i 4 × 12 biçiminde yazıp önce 25 × 4 işlemini yapıyor. Bu yolu sürdürürse işlemin sonucunu kaç bulur?",
+    "siklar": {
+      "A": "1 200",
+      "B": "100",
+      "C": "300",
+      "D": "12 000"
+    },
+    "dogru_sik": "A",
+    "ipucu": "25 × 4 işleminin sonucu, kalan çarpanla çarpılacak.",
+    "cozum_adimlari": [
+      "25 × 4 = 100",
+      "100 × 12 = 1 200",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "İlk adımın sonucunu cevap sandı (ara sonuç).",
+      "C": "25 × 12 işlemini yaptı.",
+      "D": "100 × 12 çarpımında fazladan bir sıfır yazdı (basamak değeri hatası)."
+    },
+    "zorluk": 2,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "25*48",
+      "beklenen_sonuc": 1200
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-017",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.2.5",
+    "surec_bileseni": "b",
+    "konu": "Çarpma ve bölme",
+    "alt_konu": "Çarpma ve bölme ilişkisi",
+    "soru_metni": "□ × 7 = 2 450 eşitliğinde □ yerine hangi sayı yazılmalıdır?",
+    "siklar": {
+      "A": "35",
+      "B": "305",
+      "C": "3 500",
+      "D": "350"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Çarpma ile bölme birbirinin tersi olan işlemlerdir.",
+    "cozum_adimlari": [
+      "Bilinmeyen çarpan, çarpımın diğer çarpana bölünmesiyle bulunur: □ = 2 450 ÷ 7.",
+      "2 450 ÷ 7 = 350",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Bölmede sıfırı yazmayı unuttu.",
+      "B": "Bölümde sıfırı yanlış basamağa koydu (basamak değeri karışıklığı).",
+      "C": "Bölümün sonuna fazladan bir sıfır ekledi."
+    },
+    "zorluk": 1,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "2450/7",
+      "beklenen_sonuc": 350
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-018",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.2.6",
+    "surec_bileseni": "b",
+    "konu": "Dört işlem",
+    "alt_konu": "Dört işlem içeren yönergeler",
+    "soru_metni": "Bir yönergede şu adımlar sırayla uygulanıyor: sayıyı 4 ile çarp, çarpımdan 18 çıkar, farkı 6’ya böl, bölüme 25 ekle. Başlangıç sayısı 15 ise sonuç kaç olur?",
+    "siklar": {
+      "A": "7",
+      "B": "32",
+      "C": "67",
+      "D": "82"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Adımları verilen sırayla uygula; her adımın sonucunu bir sonraki adıma aktar.",
+    "cozum_adimlari": [
+      "15 × 4 = 60",
+      "60 − 18 = 42",
+      "42 ÷ 6 = 7",
+      "7 + 25 = 32",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Son adım olan 25 eklemeyi yapmadı (ara sonuç).",
+      "C": "42’ye 25 ekledi; 6’ya bölme adımını atladı.",
+      "D": "Adımların sırasını bozup 60 − 18 ÷ 6 + 25 işlemini yaptı."
+    },
+    "zorluk": 3,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "(15*4-18)/6+25",
+      "beklenen_sonuc": 32
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-019",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.2.7",
+    "surec_bileseni": "b",
+    "konu": "Dört işlem",
+    "alt_konu": "Çok adımlı problem",
+    "soru_metni": "Bir okulda 4 sınıfın her birinde 28 öğrenci, 3 sınıfın her birinde 25 öğrenci vardır. Her öğrenciye 2 defter verilecektir. Toplam kaç defter gerekir?",
+    "siklar": {
+      "A": "374",
+      "B": "187",
+      "C": "299",
+      "D": "392"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Önce okuldaki toplam öğrenci sayısını bul.",
+    "cozum_adimlari": [
+      "Öğrenci sayısı: 4 × 28 + 3 × 25 = 112 + 75 = 187",
+      "Her öğrenciye 2 defter verilecek: 187 × 2 = 374",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Öğrenci sayısını defter sayısı sandı; 2 ile çarpmayı unuttu.",
+      "C": "Yalnızca 28 öğrencili sınıflar için 2 defter hesapladı (4 × 28 × 2 + 75).",
+      "D": "7 sınıfın hepsini 28 öğrencili sandı (7 × 28 × 2)."
+    },
+    "zorluk": 3,
+    "soru_tipi": "problem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "(4*28+3*25)*2",
+      "beklenen_sonuc": 374
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-020",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.2.8",
+    "surec_bileseni": "a",
+    "konu": "Dört işlem",
+    "alt_konu": "Problem durumunu yapılandırma",
+    "soru_metni": "Bir kitabevinde her rafta 35 kitap olan 6 raf vardır. Gün içinde 48 kitap satılıyor. Sonra her birinde 20 kitap bulunan 3 koli gelip raflara yerleştiriliyor. Kitabevinde kaç kitap olur?",
+    "siklar": {
+      "A": "102",
+      "B": "162",
+      "C": "318",
+      "D": "222"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Önce başlangıçtaki kitap sayısını bul; satışı ve gelen kolileri olay sırasına göre işle.",
+    "cozum_adimlari": [
+      "Başlangıç: 6 × 35 = 210 kitap",
+      "Satıştan sonra: 210 − 48 = 162 kitap",
+      "Gelen kitaplar: 3 × 20 = 60; 162 + 60 = 222",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Gelen kitapları eklemek yerine çıkardı (210 − 48 − 60).",
+      "B": "Kolilerle gelen kitapları eklemeyi unuttu (ara sonuç).",
+      "C": "Satılan kitapları da ekledi (210 + 48 + 60)."
+    },
+    "zorluk": 3,
+    "soru_tipi": "problem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "6*35-48+3*20",
+      "beklenen_sonuc": 222
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-021",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.2.9",
+    "surec_bileseni": "b",
+    "konu": "Dört işlem",
+    "alt_konu": "Eşitlik kavramı",
+    "soru_metni": "(56 ÷ 8) + 31 = (4 × □) − 2 eşitliğinde □ yerine hangi sayı yazılmalıdır?",
+    "siklar": {
+      "A": "10",
+      "B": "36",
+      "C": "38",
+      "D": "40"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Eşitliğin sol tarafının değerini bul; sonra sağ tarafı bu değere eşitleyecek şekilde tersten işlem yap.",
+    "cozum_adimlari": [
+      "Sol taraf: (56 ÷ 8) + 31 = 7 + 31 = 38",
+      "4 × □ − 2 = 38 olduğundan 4 × □ = 40",
+      "□ = 40 ÷ 4 = 10",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Sol taraftan 2 çıkarıp (38 − 2) bunu sonuç sandı.",
+      "C": "Sol tarafın değerini bilinmeyen sandı.",
+      "D": "4 × □ ifadesinin değerini bulup 4’e bölmeyi yapmadı (ara sonuç)."
+    },
+    "zorluk": 3,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "(56/8+31+2)/4",
+      "beklenen_sonuc": 10
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-022",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.3.1",
+    "surec_bileseni": "a",
+    "konu": "Geometri",
+    "alt_konu": "Küpün açınımı",
+    "soru_metni": "Bir küpün açınımında kaç tane kare bulunur?",
+    "siklar": {
+      "A": "12",
+      "B": "8",
+      "C": "6",
+      "D": "4"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Küpün yüzlerini tek tek düşün; açınımda her yüz ayrı bir şekil olarak görünür.",
+    "cozum_adimlari": [
+      "Küpün her yüzü bir karedir.",
+      "Küpün 6 yüzü olduğundan açınımında 6 kare bulunur.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Küpün kenar (ayrıt) sayısını verdi.",
+      "B": "Köşe sayısıyla karıştırdı.",
+      "D": "Yalnızca yan yüzleri saydı."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-024",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.3.3",
+    "surec_bileseni": "b",
+    "konu": "Geometri",
+    "alt_konu": "Dikdörtgenin çevresi",
+    "soru_metni": "Kısa kenarı 8 cm, uzun kenarı 13 cm olan dikdörtgen biçimindeki bir resmin çevresine şerit çekilecektir. Gereken şerit kaç santimetre olur?",
+    "siklar": {
+      "A": "104",
+      "B": "42",
+      "C": "29",
+      "D": "21"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Çevre, şeklin tüm kenarlarının toplam uzunluğudur; dikdörtgenin karşılıklı kenarları eşittir.",
+    "cozum_adimlari": [
+      "Dikdörtgenin iki kenarı 8 cm, iki kenarı 13 cm’dir.",
+      "Çevre = 8 + 13 + 8 + 13 = 42",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Çevre yerine alanı hesapladı (8 × 13).",
+      "C": "Yalnızca üç kenarı topladı (8 + 8 + 13).",
+      "D": "Yarım çevreyi buldu (8 + 13)."
+    },
+    "zorluk": 2,
+    "soru_tipi": "islem",
+    "olumsuzluk": false,
+    "baglam_islevi": "suslu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "2*(8+13)",
+      "beklenen_sonuc": 42
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-025",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.3.4",
+    "surec_bileseni": "b",
+    "konu": "Ölçme",
+    "alt_konu": "Standart olmayan birimle alan tahmini",
+    "soru_metni": "Elif, tahtanın yüzeyinin alanını bir defterin yüzeyini ölçü alarak tahmin ediyor. Tahtaya her sırada 12 defter gelecek biçimde 5 sıra defter sığıyor. Elif’in tahmini kaç defter yüzeyi eder?",
+    "siklar": {
+      "A": "12",
+      "B": "17",
+      "C": "34",
+      "D": "60"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Defterlerin tahtayı boşluksuz kapladığını düşün; kaç sıra olduğuna ve her sırada kaç defter bulunduğuna bak.",
+    "cozum_adimlari": [
+      "Tahtayı kaplayan defter sayısı, sıra sayısı ile her sıradaki defter sayısının çarpımıdır.",
+      "5 × 12 = 60",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yalnızca bir sıradaki defter sayısını aldı.",
+      "B": "Sıra sayısı ile sıradaki defter sayısını topladı (5 + 12).",
+      "C": "Çevre mantığıyla 2 × (5 + 12) işlemini yaptı."
+    },
+    "zorluk": 2,
+    "soru_tipi": "problem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "sayisal_dogrulama": {
+      "ifade": "5*12",
+      "beklenen_sonuc": 60
+    },
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-026",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.3.5",
+    "surec_bileseni": "c",
+    "konu": "Geometri",
+    "alt_konu": "Açıyı dönme miktarı olarak yorumlama",
+    "soru_metni": "Bir saatin yelkovanı 12’de iken tam 3’e gelecek biçimde dönüyor. Yelkovanın bu dönme miktarı hangi açıya karşılık gelir?",
+    "siklar": {
+      "A": "Dar açı",
+      "B": "Dik açı",
+      "C": "Geniş açı",
+      "D": "Tam dönme"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Yelkovanın tam turu 12’den başlayıp yine 12’ye gelmesidir; 3’e kadar turun kaçta kaçını döndüğünü düşün.",
+    "cozum_adimlari": [
+      "Saatte 12’den 3’e kadar dönme, tam turun dörtte biridir.",
+      "Tam turun dörtte biri dik açıya karşılık gelir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Dönmenin dik açıdan küçük olduğunu sandı.",
+      "C": "Dönmenin dik açıdan büyük olduğunu sandı.",
+      "D": "Başlangıç noktasından yola çıkan yelkovanın bir turu tamamladığını sandı."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-027",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.3.7",
+    "surec_bileseni": "c",
+    "konu": "Geometri",
+    "alt_konu": "Dar ve geniş açı",
+    "soru_metni": "Aşağıdaki ifadelerden hangisi doğrudur?",
+    "siklar": {
+      "A": "Dar açı, dik açıdan büyüktür.",
+      "B": "Geniş açı, dik açıdan küçüktür.",
+      "C": "Geniş açı, dik açıdan büyüktür.",
+      "D": "Dar açı, dik açıya eşittir."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Dik açıyı ölçüt alıp açıların ona göre küçük mü büyük mü olduğuna bak.",
+    "cozum_adimlari": [
+      "Dar açı, dik açıdan küçüktür.",
+      "Geniş açı, dik açıdan büyüktür.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Dar açının dik açıdan büyük olduğunu sandı; özellikleri ters yazdı.",
+      "B": "Geniş açının dik açıdan küçük olduğunu sandı; özellikleri ters yazdı.",
+      "D": "Dar açının dik açıya eşit olduğunu sandı."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-029",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.4.1",
+    "surec_bileseni": "a",
+    "konu": "Olasılık",
+    "alt_konu": "İmkânsız, olabilir, kesin",
+    "soru_metni": "Bir torbada 4 mavi ve 2 sarı bilye vardır. Torbadan gözü kapalı bir bilye çekilecektir. Aşağıdaki olaylardan hangisi kesindir?",
+    "siklar": {
+      "A": "Çekilen bilyenin mavi veya sarı olması",
+      "B": "Çekilen bilyenin sarı renkte olması",
+      "C": "Çekilen bilyenin mavi renkte olması",
+      "D": "Çekilen bilyenin kırmızı veya yeşil olması"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Torbadaki bilyelerin renklerine bak; çekilen bilyenin hangi renklerden biri olabileceğini düşün.",
+    "cozum_adimlari": [
+      "Torbada yalnızca mavi ve sarı bilye vardır.",
+      "Çekilen bilye mutlaka bu iki renkten biri olacağından “mavi veya sarı olması” kesindir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Sarı bilye var ama mavi bilye de çekilebilir; bu olay olabilir, kesin değildir.",
+      "C": "Mavi bilye çoğunlukta olsa da sarı bilye çekilebilir; bu olay olabilir, kesin değildir.",
+      "D": "Torbada kırmızı ve yeşil bilye yok; bu olay imkânsızdır."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "MAT4-030",
+    "sinif": 4,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.4.4.2",
+    "surec_bileseni": "c",
+    "konu": "Veri",
+    "alt_konu": "Veri toplama planı",
+    "soru_metni": "Sınıf arkadaşlarının en sevdiği mevsimi öğrenmek isteyen Burak hangi yolu izlemelidir?",
+    "siklar": {
+      "A": "Okul bahçesindeki ağaçları sayıp çizelgeye yazmak",
+      "B": "Öğrencilere sorup yanıtları tabloya işaretlemek",
+      "C": "Sınıftaki sıraların sayısını sayıp not etmek",
+      "D": "Öğrencilerin boylarını ölçüp çizelgeye yazmak"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Burak’ın bilmek istediği şeyi kimden ve nasıl öğrenebileceğini düşün.",
+    "cozum_adimlari": [
+      "Burak’ın öğrenmek istediği şey öğrencilerin mevsim tercihidir; bu bilgi öğrencilere sorularak toplanır.",
+      "Yanıtları tabloya işaretleyerek her mevsimin kaç oy aldığı görülür.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ağaç saymak öğrencilerin mevsim tercihiyle ilgisizdir.",
+      "C": "Sıra sayısı mevsim tercihi hakkında bilgi vermez.",
+      "D": "Boy ölçmek başka bir araştırma sorusuna ait veridir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  }
+]

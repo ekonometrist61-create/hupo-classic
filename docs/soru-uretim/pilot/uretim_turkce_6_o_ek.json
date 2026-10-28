@@ -1,0 +1,113 @@
+[
+ {
+  "id": "TR6-O-E01",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.1",
+  "surec_bileseni": "a",
+  "konu": "Okuma",
+  "alt_konu": "Okuma materyali seçimi",
+  "soru_metni": "Elif, sınıfta “Arıların Yaşamı” konulu bir sunum hazırlayacak. Önce öğrenmek istediklerini yazdı: arıların kaç türü olduğu, kovanda nasıl görev paylaştıkları ve balın nasıl yapıldığı. Sunum için bir haftası var. Evinde bilgisayar bulunuyor, okul kütüphanesinde ise çok sayıda kaynak var. Elif, konusuna doğrudan hizmet eden ve güvenilir bir kaynak arıyor.\n\nElif’in amacına en uygun okuma materyali aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Çiçek yetiştirmeyi anlatan bir bahçecilik dergisi sayısı",
+   "B": "Arı türlerini ve bal yapımını anlatan bir ansiklopedi maddesi",
+   "C": "Bir arıcının köy yolculuğunu anlattığı gezi günlüğü",
+   "D": "Bir bal markasının satış amaçlı tanıtım broşürü"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Elif’in yazdığı üç ihtiyaca bak: tür, görev paylaşımı, bal yapımı. Hangi kaynak bunları güvenilir biçimde verir?",
+  "cozum_adimlari": [
+   "Elif’in ihtiyacı arı türleri, görev paylaşımı ve bal yapımı hakkında güvenilir bilgidir.",
+   "Ansiklopedi maddesi bu konuları doğrudan ve doğrulanmış biçimde verir.",
+   "Bahçecilik dergisi arılarla ilgili değildir, gezi günlüğü kişisel bir anlatıdır, broşür ise satış amaçlıdır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çiçek ile arı arasındaki ilişkiden dolayı konuya yakın sanılır; ama kaynak arıları ele almaz.",
+   "B": "Doğru.",
+   "C": "Arıcı kelimesi konuyla bağ kurdurur; ancak içerik bilgi vermeyen kişisel bir anlatıdır.",
+   "D": "Bal kelimesi dikkat çeker; ancak amaç satıştır, bilgi güvenilirliği ve kapsamı yetersizdir."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-E02",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.2",
+  "surec_bileseni": "a",
+  "konu": "Okuma",
+  "alt_konu": "Akıcı okuma",
+  "soru_metni": "Deniz, Türkçe dersinde bir şiiri sesli okurken her sözcüğün sonunda duruyor, virgül ve noktaya dikkat etmeden aynı tonla okuyor. Bu yüzden dinleyen arkadaşları şiirin anlamını kavrayamıyor. Öğretmeni Deniz’e akıcı okumanın yolunu hatırlatmak istiyor.\n\nDeniz’in okumasını akıcı hâle getirmek için aşağıdakilerden hangisini yapması gerekir?",
+  "siklar": {
+   "A": "Metni mümkün olduğunca hızlı okuyup süreyi kısaltmalı.",
+   "B": "Her sözcüğü ayrı ayrı vurgulayarak yavaş yavaş okumalı.",
+   "C": "Noktalama işaretlerine göre duraklayıp anlama uygun vurgu yapmalı.",
+   "D": "Anlamını bilmediği sözcükleri atlayarak okumayı sürdürmeli."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Akıcı okuma yalnızca hız değildir; duraklama, vurgu ve anlam birlikte düşünülür.",
+  "cozum_adimlari": [
+   "Deniz’in sorunu noktalama işaretlerini gözetmemesi ve tek tonda okumasıdır.",
+   "Akıcı okuma; doğru duraklama, uygun vurgu ve anlamı yansıtan tonlamayı gerektirir.",
+   "Hızlı okumak, her sözcüğü vurgulamak ya da sözcük atlamak bu sorunu çözmez.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Akıcılığı hızla karıştıran yanılgı; hız anlamı bozar.",
+   "B": "Her sözcüğü vurgulamak okumayı kesik hâle getirir ve Deniz’in mevcut sorununu sürdürür.",
+   "C": "Doğru.",
+   "D": "Sözcük atlamak anlamı eksik bırakır; akıcılığı sağlamaz."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-E03",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.4",
+  "surec_bileseni": "a",
+  "konu": "Okuma",
+  "alt_konu": "Metnin içeriğini tahmin etme",
+  "soru_metni": "Kerem, kütüphaneden “Fırtınanın Ortasında Bir Fener” adlı kitabı aldı. Kitabın kapağında dalgalı bir deniz ve uzakta ışık saçan bir deniz feneri resmi var. Arka kapaktaki tanıtım yazısında şu bilgi yer alıyor: “Yaşlı bekçi Nuri, karanlık gecelerde yolunu şaşıran gemiler için lambasını yakar.” Kerem kitabı okumaya başlamadan önce içeriğini tahmin etmek istiyor.\n\nKerem’in başlıktan, kapaktan ve tanıtım yazısından hareketle yapacağı en uygun tahmin aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Dağ köyünde yaşayan bir ailenin hasat zamanı anlatılacaktır.",
+   "B": "Uzaya giden bilim insanlarının gezegen keşfi anlatılacaktır.",
+   "C": "Büyük bir şehirdeki okulun spor yarışması anlatılacaktır.",
+   "D": "Bir fener bekçisinin denizdeki gemilere yol göstermesi anlatılacaktır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Başlıktaki fener, kapaktaki deniz resmi ve tanıtımdaki gemiler aynı konuya işaret eder.",
+  "cozum_adimlari": [
+   "Başlıkta fener ve fırtına, kapakta deniz ve deniz feneri vardır.",
+   "Tanıtım yazısında bir bekçinin gemiler için lamba yaktığı belirtilir.",
+   "Bu üç ipucu birlikte fener bekçisi ve gemiler çevresinde bir olay olduğunu gösterir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ipuçlarıyla ilgisi olmayan, rastgele bir konu; ipuçlarını birlikte değerlendirmemekten doğar.",
+   "B": "Işık ve gece kavramından yanlış çağrışımla uzay konusuna gitmek.",
+   "C": "Kitap kapağındaki ve tanıtımdaki hiçbir ipucuyla bağdaşmayan bir konu.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

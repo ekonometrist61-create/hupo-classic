@@ -1,0 +1,353 @@
+[
+  {
+    "id": "SOS4-S-001",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.1.2",
+    "surec_bileseni": "b",
+    "konu": "Birey ve Toplum",
+    "alt_konu": "Bireysel özelliklere saygı",
+    "soru_metni": "Sınıfta Deniz gözlük takıyor, Ece sol eliyle yazıyor, Kaan ise sınıfın en uzun boylu öğrencisidir. Arkadaşları bu özellikleri doğal karşılayıp onlara saygı göstermektedir. Bireysel özelliklere saygı duyulmasının sınıf ortamına en doğrudan katkısı nedir?",
+    "siklar": {
+      "A": "Öğrencilerin birbirine benzer özellikler kazanması",
+      "B": "Öğrencilerin kendini rahat ve kabul görmüş hissetmesi",
+      "C": "Öğrencilerin ders başarılarının birbirine eşitlenmesi",
+      "D": "Öğrencilerin özelliklerine göre ayrı gruplarda çalışması"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Saygı görmenin bir kişinin sınıftaki duygularını nasıl etkilediğini düşün.",
+    "cozum_adimlari": [
+      "Metinde farklı bireysel özellikler var ve arkadaşlar bunlara saygı gösteriyor.",
+      "Saygı gören öğrenci kendini rahat hisseder ve sınıfta kabul gördüğünü düşünür.",
+      "Saygı, öğrencileri birbirine benzetmez, başarıyı eşitlemez ve gruplara ayırmayı gerektirmez.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Saygıyı herkesin aynı olması gerektiği düşüncesiyle karıştırır.",
+      "B": "Doğru.",
+      "C": "Saygıyı başarıyla ilişkilendirir; ilişki doğrudan değildir.",
+      "D": "Farklılığa saygıyı farklılığa göre ayırmakla karıştırır."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-002",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.1.2",
+    "surec_bileseni": "a",
+    "konu": "Birey ve Toplum",
+    "alt_konu": "Bireysel özellikler",
+    "soru_metni": "Bireysel özellikler, bir kişiyi başkalarından ayıran ve o kişiye ait olan niteliklerdir. Buna göre aşağıdakilerden hangisi bir öğrencinin bireysel özelliklerinden biridir?",
+    "siklar": {
+      "A": "Sınıfının adının 4/A olması",
+      "B": "Okulunun şehir merkezinde bulunması",
+      "C": "En sevdiği oyunun satranç olması",
+      "D": "Ders programında fen dersinin olması"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Kişiye ait olan ve kişiden kişiye değişebilen bir nitelik ara.",
+    "cozum_adimlari": [
+      "Bireysel özellik, kişinin kendisine ait niteliktir (sevdiği oyun, boyu, hobisi gibi).",
+      "Sınıf adı, okulun yeri ve ders programı öğrencilerin ortak olarak bağlı olduğu durumlardır.",
+      "En sevdiği oyun kişiye özgüdür.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ortak bir bilgiyi kişisel özellik sanmak.",
+      "B": "Çevre bilgisini kişisel özellikle karıştırmak.",
+      "C": "Doğru.",
+      "D": "Okul düzenini kişisel özellik sanmak."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "ipucu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-003",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.1.3",
+    "surec_bileseni": "a",
+    "konu": "Birey ve Toplum",
+    "alt_konu": "Toplumsal birlik",
+    "soru_metni": "Bir okulda bahçe temizliği için her sınıf bir bölümün sorumluluğunu almış ve gün sonunda bahçe birlikte toplanmıştır. Bu çalışma okul ortamında toplumsal birliğin sürdürülmesine nasıl katkı sağlar?",
+    "siklar": {
+      "A": "Öğrencilerin ortak amaç için iş birliği yapmasını sağlar.",
+      "B": "Sınıflar arasındaki yarışmanın artmasını sağlar.",
+      "C": "Öğrencilerin başka sınıflarla konuşmasını azaltır.",
+      "D": "Okul kurallarının öğrenciler tarafından değiştirilmesini sağlar."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Bütün sınıfların aynı iş için ne yaptığına dikkat et.",
+    "cozum_adimlari": [
+      "Her sınıf bir bölümü üstlenmiş, sonra bahçe birlikte toplanmıştır.",
+      "Bu, ortak bir amaç için iş birliği demektir ve birlik duygusunu güçlendirir.",
+      "Yarışma, uzaklaşma ve kural değiştirme çalışmada yer almamaktadır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Doğru.",
+      "B": "İş bölümünü rekabetle karıştırır.",
+      "C": "İş bölümünün ayrılık yarattığı yanılgısı.",
+      "D": "Katılımı kural koymakla karıştırır."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-004",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.2.2",
+    "surec_bileseni": "b",
+    "konu": "İnsanlar, Yerler ve Çevreler",
+    "alt_konu": "Doğa ve insan ilişkisi",
+    "soru_metni": "Kıyı kasabasında yaşayan ailelerin çoğu balıkçılık yapmaktadır. Bu durum doğa ve insan ilişkisi bakımından neyi gösterir?",
+    "siklar": {
+      "A": "Doğal çevrenin insan faaliyetlerinden bağımsız olduğunu",
+      "B": "İnsanların iklimi ihtiyaçlarına göre değiştirdiğini",
+      "C": "Mesleklerin doğal çevre özelliklerinden etkilendiğini",
+      "D": "Kıyıdaki insanların doğal çevreye ihtiyaç duymadığını"
+    },
+    "dogru_sik": "C",
+    "ipucu": "İnsanların yaşadığı yer ile yaptığı iş arasındaki bağı düşün.",
+    "cozum_adimlari": [
+      "Kasaba kıyıdadır ve insanlar deniz sayesinde balıkçılık yapmaktadır.",
+      "Yani yaşanılan yerin doğal özellikleri (deniz) meslek seçimini etkilemiştir.",
+      "Diğer seçenekler metindeki durumla uyuşmaz.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "İnsan ile doğa arasındaki karşılıklı ilişkiyi yok sayar.",
+      "B": "İklimin değiştirilebildiği yanılgısı.",
+      "C": "Doğru.",
+      "D": "Balıkçılığın doğaya bağımlılığını göz ardı eder."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-006",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.3.2",
+    "surec_bileseni": "a",
+    "konu": "Zaman ve Mekân",
+    "alt_konu": "Aile tarihi kanıtları",
+    "soru_metni": "Ayşe, aile tarihi çalışması için eski bir fotoğrafı inceliyor. Fotoğrafın arkasında \"1965 – İzmir\" yazmaktadır. Ayşe bu kanıttan hangi çıkarımı yapabilir?",
+    "siklar": {
+      "A": "Fotoğrafın 1965'te İzmir'de çekildiği",
+      "B": "Fotoğraftaki kişilerin İzmir'de doğduğu",
+      "C": "Ailenin 1965'te İzmir'e taşındığı",
+      "D": "Fotoğrafın ailenin ilk fotoğrafı olduğu"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Kanıtta yazan bilgilerin doğrudan neyi anlattığına bak.",
+    "cozum_adimlari": [
+      "Notta yalnızca bir yıl ve bir yer adı vardır.",
+      "Bu bilgi fotoğrafın ne zaman ve nerede çekildiğini gösterir.",
+      "Doğum yeri, taşınma ve ilk fotoğraf olması notta belirtilmemiştir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Doğru.",
+      "B": "Çekim yerini doğum yeriyle karıştırır.",
+      "C": "Kanıttan fazlasını çıkarır.",
+      "D": "Eski olmasını ilk olmakla karıştırır."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-007",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.1",
+    "surec_bileseni": "a",
+    "konu": "Etkin Vatandaşlık",
+    "alt_konu": "Türkiye Büyük Millet Meclisi",
+    "soru_metni": "23 Nisan 1920'de Ankara'da Türkiye Büyük Millet Meclisi açılmıştır. Bu meclis Millî Mücadele Dönemi'nde hangi görevi üstlenmiştir?",
+    "siklar": {
+      "A": "Padişahın İstanbul'dan gelen emirlerini uygulamıştır.",
+      "B": "Millî Mücadele'nin yönetimi için kararlar almıştır.",
+      "C": "Komutanların atamasını İstanbul'a bırakmıştır.",
+      "D": "İtilaf devletlerinin istediği kararları uygulamıştır."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Meclisin Ankara'da toplanmasının kimin adına karar alındığıyla ilgisini düşün.",
+    "cozum_adimlari": [
+      "Meclis, milletin temsilcilerinden oluşan ve Ankara'da toplanan bir meclistir.",
+      "Millî Mücadele'yi yönetmek için gerekli kararları almıştır.",
+      "Emirleri uygulamak veya İtilaf devletlerinin isteklerini yerine getirmek meclisin görevi olmamıştır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Meclisi İstanbul yönetimine bağlı sanır.",
+      "B": "Doğru.",
+      "C": "Karar yetkisinin kimde olduğunu karıştırır.",
+      "D": "Mücadelenin amacını tersine çevirir."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "ipucu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-008",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.2",
+    "surec_bileseni": "b",
+    "konu": "Etkin Vatandaşlık",
+    "alt_konu": "Cumhuriyetin getirdiği değişimler",
+    "soru_metni": "1934 yılında kadınlara milletvekili seçme ve seçilme hakkı verilmiştir. Bu değişikliğin toplum hayatına katkısı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Erkeklerin seçimlere katılmasını kaldırmıştır.",
+      "B": "Seçimlerin yerel yönetimlerce yapılmasını sağlamıştır.",
+      "C": "Kadınların yönetime katılmasının önünü açmıştır.",
+      "D": "Meclisteki milletvekili sayısını azaltmıştır."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Hakkın verildiği kişi grubunun kimler olduğuna bak.",
+    "cozum_adimlari": [
+      "Seçme ve seçilme hakkı verilen grup kadınlardır.",
+      "Bu hak kadınların hem oy kullanmasını hem de meclise girebilmesini sağlar.",
+      "Böylece kadınlar yönetime katılabilir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Hak verilmesini başka grubun hakkının kalkması sanır.",
+      "B": "Hakkın kapsamını karıştırır.",
+      "C": "Doğru.",
+      "D": "Sonucu sayıyla ilişkilendirir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "ipucu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-010",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.5.2",
+    "surec_bileseni": "b",
+    "konu": "Üretim, Dağıtım ve Tüketim",
+    "alt_konu": "İstek ve ihtiyaç",
+    "soru_metni": "İhtiyaçlar yaşamak ve eğitim görmek için gerekli olan şeylerdir. İstekler ise olmasa da yaşamı sürdürebildiğimiz şeylerdir. Buna göre aşağıdakilerden hangisi bir isteğe örnektir?",
+    "siklar": {
+      "A": "Sağlıklı beslenmek için meyve almak",
+      "B": "En yeni model oyun konsolunu almak",
+      "C": "Okulda kullanmak için defter almak",
+      "D": "Soğuk havada giymek için mont almak"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Olmasa da hayatımızı ve eğitimimizi sürdürebileceğimiz bir şey ara.",
+    "cozum_adimlari": [
+      "Meyve, defter ve mont yaşam ve eğitim için gerekli olan ihtiyaçlardır.",
+      "Oyun konsolu olmadan da yaşam ve eğitim sürer.",
+      "Bu nedenle konsol bir istektir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Beslenmeyi isteğe bağlı sanır.",
+      "B": "Doğru.",
+      "C": "Okul gereçlerini isteğe bağlı sanır.",
+      "D": "Giyinmeyi isteğe bağlı sanır."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "ipucu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-012",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.3",
+    "surec_bileseni": "a",
+    "konu": "Etkin Vatandaşlık",
+    "alt_konu": "Demokratik katılım",
+    "soru_metni": "Bir sınıf, gezi yerini demokratik yolla belirlemek istemektedir. Aşağıdakilerden hangisi bu süreçte öğrencilerin katılımını doğrudan sağlayan bir adımdır?",
+    "siklar": {
+      "A": "Gezi yerinin öğretmen tarafından seçilmesi",
+      "B": "Kararın okul yönetimi tarafından verilmesi",
+      "C": "Gezi yerinin sınıf başkanı tarafından seçilmesi",
+      "D": "Önerilerin sınıfta tartışılıp oylanması"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Karara bütün öğrencilerin nasıl dahil olabileceğini düşün.",
+    "cozum_adimlari": [
+      "Demokratik karar sürecinde öğrenciler görüş bildirir ve karara katılır.",
+      "Önerilerin tartışılıp oylanması öğrencilerin doğrudan katılımını sağlar.",
+      "Kararı tek bir kişinin veya kurumun vermesi katılımı sağlamaz.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Karar yetkisini yetişkine bırakmayı demokrasi sanır.",
+      "B": "Yönetimi karar mercii sanır.",
+      "C": "Temsilciyi sürecin yerine koyar.",
+      "D": "Doğru."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "ipucu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  }
+]

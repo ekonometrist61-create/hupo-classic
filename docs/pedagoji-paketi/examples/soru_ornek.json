@@ -1,0 +1,43 @@
+{
+  "id": "HUPO-EXAMPLE-G5-01",
+  "grade": 5,
+  "school_year": "2026-2027",
+  "subject": "Fen Bilimleri",
+  "output_type": "question",
+  "assessment_mode": "formative",
+  "curriculum_version": "TYMM",
+  "source_trace_status": "thematic_candidate",
+  "source_url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/fen-bilimleri-dersi",
+  "outcome_code": null,
+  "stem": "Örnek (MEB kazanımına eşleştirilmemiş): Bir öğrenci gölgenin boyunun gün içinde neden değişebileceğini araştırıyor. Önce hangi bilgiyi toplaması en uygundur?",
+  "options": [
+    {
+      "key": "A",
+      "text": "Farklı saatlerde gölge boyu ölçümleri"
+    },
+    {
+      "key": "B",
+      "text": "Öğrencinin en sevdiği renk"
+    },
+    {
+      "key": "C",
+      "text": "Defterin sayfa sayısı"
+    },
+    {
+      "key": "D",
+      "text": "Bahçedeki kapı sayısı"
+    }
+  ],
+  "key": "A",
+  "reasoning": "Gün içindeki gölge uzunluğunu incelemek için değişimi zamanla izlemek gerekir.",
+  "misconceptions": [
+    "İlgisiz veri seçimi"
+  ],
+  "difficulty_expected": "easy",
+  "empirical_p_value": null,
+  "scoring_rubric": null,
+  "rights_cleared": false,
+  "curriculum_verified": false,
+  "editor_approved": false,
+  "published": false
+}

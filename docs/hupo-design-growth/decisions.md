@@ -28,6 +28,7 @@ Bu dosya yeni, doğrulanmış proje kararları içindir. Paket önerileri kullan
 | 2026-10-09 | Landing'de korunan ama **kanıtsız** iddialar: "14 Gün İade Garantisi", "%100 Güvenli Ödeme", "Gizli Ücret Yok", "Yıllık planda %40 tasarruf", ücretsiz/premium/aile kapsam listeleri | Koordinatör "iddialar kalsın" kararı | AÇIK RİSK: yayın öncesi kullanıcı/hukuk doğrulaması gerekir; kanıt yoksa kaldırılmalı | `messages/tr.json`, `en.json` (landing.pricing) |
 | 2026-10-16 | Veli paneli mobil/tablet uyumu (PROJE_GUNLUGU §20, K1/K4/K6/K7): öğretmen `/yonetim/siniflar`'a yönlenir; ana ekran "Bu hafta" özetiyle (süre, çözülen soru, doğru oranı, tekrar bekleyen konu) açılır, XP ve seviye Başarılar'a taşındı; iletişim izni kartı Üyelik'e taşındı. Deneme kaydında **katılım onayı zorunlu**, **pazarlama onayı isteğe bağlı ve işaretsiz** iki ayrı kutu | Kullanıcı kararları K1/K4/K6/K7 — uygulandı. Kusur kanıtlandı: `consents.tur` kısıtı `sinav_pazarlama_izni` kaydını reddediyordu; kayıt pazarlama rızasına bağlıydı. Migration `20261040000000_sinav_katilim_onayi.sql` yazıldı, PGlite 20/20; **uzak DB'ye uygulanmadı** | `supabase/migrations/20261040000000_sinav_katilim_onayi.sql`, `web-panel/src/components/veli-paneli/**` |
 | 2026-10-16 | AÇIK: yenileme koşulu veride yok (gösterim "bilinmiyor"); iptal için destek kanalı doğrulanmadı (`[iletisim@hupolingo.com]` yalnız yer tutucu); deneme kaydı katılım ve pazarlama metinleri ÖNERİLEN metin, KVKK ve İleti Yönetim Sistemi (İYS) avukat onayı bekliyor; pazarlama onayını geri alma akışı yok | Hukuk ve ürün kararı bekliyor | AÇIK | `DenemeKaydiKarti.tsx`, `PlanKarti.tsx`, `AbonelikKarti.tsx` |
+| 2026-10-17 | Okuma Dünyası (Senin Hikâyen) öğrenci ekranları: vurgu üst sınırı Zengin ≤3 / Sade ≤1, yanlış cevap yumuşak (X yok), Lottie yalnız bitişte; öneri token `vurguAmber` #9A6A12 (onay bekliyor) | Kullanıcı brief'i ve kontrast ölçümü; ayrıntı `C:\Dev\Senin Hikayen - HupoRead\docs\tasarim\OKUMA_DUNYASI_EKRANLARI.md`. Anında geri bildirim (kit'in bitişte açıklama kuralıyla çelişir) kullanıcı kararı bekliyor (H1) | AÇIK (karar bekliyor) | `docs/tasarim/OKUMA_DUNYASI_EKRANLARI.md` (HupoRead) |
 
 ## Paket ile repo çelişkileri
 - **Renk:** Kit "Leaf Green #6DA940" önceki kimlik referansı olarak anıyor; repo mobil tokenları `mint #22C58B`, `sun #FFC533`, `primary #6C4DF6`. Repo tokenları esas; kit'in Gold `#F5C842` ile mobil `sun #FFC533` birbirine yakın, birleştirme mobil dalgasında karara bağlanacak.
@@ -38,3 +39,14 @@ Bu dosya yeni, doğrulanmış proje kararları içindir. Paket önerileri kullan
 - **Gizli anahtarlar:** `.claude/settings.json` ve `.claude/mcp.json` düz metin API anahtarı içeriyordu; anahtarlar `settings.local.json`'a taşındı / `${DEGISKEN}` referansına çevrildi. Anahtarlar git geçmişinde kaldığı için **döndürülmeli** (kullanıcı eylemi).
 
 Repo ile paket arasındaki çelişkileri burada kısa kaydet; fiyat, karakter adı ve onaylı asset bilgilerini kaynaksız kalıcılaştırma.
+
+## Okuma Faz 4 (2026-10-23)
+
+| Tarih | Karar | Gerekçe | Durum | Dosya |
+|---|---|---|---|---|
+| 2026-10-23 | Okuma demo rotası `/okuma-demo`; `/demo` ürün demosu olarak kalır | Mevcut `/demo` menüde ve landing'de kullanılıyor | UYGULANDI | `web-panel/src/app/[locale]/(full-width-pages)/okuma-demo/page.tsx` |
+| 2026-10-23 | Okuma sayfaları navigasyonda, sitemap ve canonical'da yok; `robots: noindex` | Pilot bitişi ve hukuk onayı öncesi yayın kapısı | UYGULANDI; noindex kaldırma YAYIN KARARINA BAĞLI | `okuma-demo/page.tsx`, `okuma/sinif-okuma-anlama/page.tsx` |
+| 2026-10-23 | Demo kayıtsız: cevap yalnız şık seçildikten sonra gösterilir, sunucuya gitmez | Plan Faz 4 kuralı; çocuk verisi toplanmaz | UYGULANDI | `components/okuma-site/OkumaDemo.tsx` |
+| 2026-10-23 | Veli bölümü ölçülebilir iddia içermez; ana sayfaya eklenmez | Plan: iddia yok, landing pilot sonrası | UYGULANDI | `components/okuma-site/VeliOkumaBolumu.tsx` |
+| 2026-10-23 | Okuma sayfaları için landing üst bilgisi yerine sade üst bilgi | Landing çapa menüsü bu sayfalarda karşılıksız kalırdı | UYGULANDI | `components/okuma-site/OkumaSiteUst.tsx` |
+| 2026-10-23 | Fiyat sayfasına dokunulmadı; okuma hakkı kalemi öneri olarak bırakıldı | Plan: ayrı SKU yok, fiyat kararı kullanıcıda | ERTELENDİ | — |

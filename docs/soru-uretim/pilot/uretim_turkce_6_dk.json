@@ -1,0 +1,1297 @@
+[
+  {
+    "id": "TR6-DK-001",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.1",
+    "surec_bileseni": "b",
+    "konu": "Materyal seÃ§imi",
+    "alt_konu": "Amaca uygun ses kaydÄ± seÃ§me",
+    "soru_metni": "Elif, arÄ±larÄ±n birbirine yiyecek yerini nasÄ±l bildirdiÄŸini Ã¶ÄŸrenmek iÃ§in dinleyeceÄŸi bir ses kaydÄ± seÃ§ecek. Elif'in amacÄ± dÃ¼ÅŸÃ¼nÃ¼ldÃ¼ÄŸÃ¼nde hangi kayÄ±t en uygun materyaldir?",
+    "siklar": {
+      "A": "Bir Ã§iftÃ§inin bal hasadÄ±nda yaÅŸadÄ±ÄŸÄ± komik olaylarÄ± anlattÄ±ÄŸÄ± sohbet",
+      "B": "Arı bilimcisinin arıların dansla haberleşmesini anlattığı röportaj",
+      "C": "ArÄ±cÄ±lÄ±k malzemelerinin fiyatlarÄ±nÄ± tanÄ±tan bir reklam kaydÄ±",
+      "D": "Bir Ã§ocuÄŸun arÄ± kovanÄ± hakkÄ±ndaki ÅŸiiri okuduÄŸu kayÄ±t"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Elif'in Ã¶ÄŸrenmek istediÄŸi konuyu uzman biri aÃ§Ä±klÄ±yor mu, buna bak.",
+    "cozum_adimlari": [
+      "Elif'in amacÄ± arÄ±larÄ±n haberleÅŸme yolunu Ã¶ÄŸrenmektir. Bu bilgiyi en gÃ¼venilir ve doÄŸrudan veren kaynak, konunun uzmanÄ±yla yapÄ±lan rÃ¶portajdÄ±r.",
+      "DoÄŸru cevap B seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Konuyla ilgili gÃ¶rÃ¼nÃ¼r ama haberleÅŸme bilgisi vermez, eÄŸlendirici bir anÄ± anlatÄ±r.",
+      "B": "DoÄŸru.",
+      "C": "ArÄ±yla ilgili bir ses kaydÄ±dÄ±r ama amaÃ§ dÄ±ÅŸÄ±, satÄ±ÅŸ amaÃ§lÄ±dÄ±r.",
+      "D": "Konuya benzer bir tÃ¼r, ancak bilgi vermez."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-002",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.2",
+    "surec_bileseni": "b",
+    "konu": "Dinleme stratejisi",
+    "alt_konu": "Not alarak dinleme",
+    "soru_metni": "Deniz, tarih Ã¶ÄŸretmeninin anlatacaÄŸÄ± savaÅŸÄ± dinlerken tarih, yer ve kiÅŸi adlarÄ±nÄ± unutmak istemiyor. Deniz iÃ§in en uygun dinleme stratejisi hangisidir?",
+    "siklar": {
+      "A": "GÃ¶zlerini kapatÄ±p anlatÄ±lanlarÄ± zihninde canlandÄ±rmasÄ±",
+      "B": "KonuÅŸmacÄ±nÄ±n sÃ¶zÃ¼nÃ¼ sÄ±k sÄ±k kesip aynÄ± yeri tekrar ettirmesi",
+      "C": "Dinlemeyi bÄ±rakÄ±p ders sonunda arkadaÅŸlarÄ±na sormasÄ±",
+      "D": "DuyduÄŸu Ã¶nemli bilgileri kÄ±sa notlarla kaydetmesi"
+    },
+    "dogru_sik": "D",
+    "ipucu": "AyrÄ±ntÄ±larÄ± unutmamak iÃ§in dinleme sÄ±rasÄ±nda yapÄ±labilecek bir eylem dÃ¼ÅŸÃ¼n.",
+    "cozum_adimlari": [
+      "Tarih, yer ve kiÅŸi adÄ± gibi ayrÄ±ntÄ±lar kolay unutulur. Dinlerken kÄ±sa not almak bu ayrÄ±ntÄ±larÄ± kalÄ±cÄ± kÄ±lan stratejidir.",
+      "DoÄŸru cevap D seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "CanlandÄ±rma anlamaya yardÄ±m eder ama ayrÄ±ntÄ±larÄ± kayÄ±t altÄ±na almaz.",
+      "B": "SÃ¶zÃ¼ kesmek dinleme akÄ±ÅŸÄ±nÄ± bozar; Ã¶ÄŸrenci bunu strateji sanabilir.",
+      "C": "Dinlemeyi bÄ±rakmak stratejiyi terk etmektir.",
+      "D": "DoÄŸru."
+    },
+    "zorluk": 2,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-003",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.4",
+    "surec_bileseni": "b",
+    "konu": "BaÄŸlamdan anlam tahmini",
+    "alt_konu": "SÃ¶z varlÄ±ÄŸÄ± unsurunun anlamÄ±nÄ± tahmin",
+    "soru_metni": "MÃ¼zede rehber ÅŸÃ¶yle diyor: â€œBu kadim Ã§anak yÃ¼zyÄ±llarca topraÄŸÄ±n altÄ±nda kalmÄ±ÅŸ. Ãœzerindeki desenler, o dÃ¶nemde yaÅŸayan insanlarÄ±n gÃ¼nlÃ¼k hayatÄ±nÄ± bugÃ¼n bile anlatÄ±yor. Uzmanlar Ã§anaÄŸÄ± uzun uÄŸraÅŸlar sonunda onarÄ±p sergiye hazÄ±rladÄ±.â€\n\nBu konuÅŸmada geÃ§en â€œkadimâ€ sÃ¶zcÃ¼ÄŸÃ¼nÃ¼n anlamÄ± iÃ§in en uygun tahmin hangisidir?",
+    "siklar": {
+      "A": "Çok eski olan",
+      "B": "Çok değerli olan",
+      "C": "Yakın zamanda yapılmış",
+      "D": "Kolayca kırılabilen"
+    },
+    "dogru_sik": "A",
+    "ipucu": "â€œYÃ¼zyÄ±llarcaâ€ ve â€œo dÃ¶nemde yaÅŸayan insanlarâ€ ifadelerine dikkat et.",
+    "cozum_adimlari": [
+      "Ã‡anaÄŸÄ±n yÃ¼zyÄ±llarca toprak altÄ±nda kalmasÄ± ve eski dÃ¶nem insanlarÄ±nÄ±n hayatÄ±nÄ± anlatmasÄ±, sÃ¶zcÃ¼ÄŸÃ¼n â€œÃ§ok eskiâ€ anlamÄ±na geldiÄŸini dÃ¼ÅŸÃ¼ndÃ¼rÃ¼r.",
+      "DoÄŸru cevap A seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "DoÄŸru.",
+      "B": "DeÄŸerli olabilir ama metinde fiyat ipucu yoktur.",
+      "C": "YÃ¼zyÄ±llarca ifadesiyle Ã§eliÅŸir.",
+      "D": "OnarÄ±lmÄ±ÅŸ olmasÄ± kÄ±rÄ±lganlÄ±k sanÄ±sÄ± yaratÄ±r ama sÃ¶zcÃ¼ÄŸÃ¼ aÃ§Ä±klamaz."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-004",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.6",
+    "surec_bileseni": "b",
+    "konu": "YÃ¼zey anlam",
+    "alt_konu": "DoÄŸrudan verilen bilgiyi belirleme",
+    "soru_metni": "Radyoda ÅŸu duyuru yapÄ±lÄ±yor: â€œYarÄ±n sabah ÅŸehrimizde yoÄŸun sis bekleniyor. GÃ¶rÃ¼ÅŸ mesafesi azalacaÄŸÄ±ndan sÃ¼rÃ¼cÃ¼lerin hÄ±zÄ±nÄ± dÃ¼ÅŸÃ¼rmesi ve Ã¶nÃ¼ndeki araÃ§la arasÄ±nÄ± aÃ§masÄ± Ã¶neriliyor. Sisin Ã¶ÄŸleden sonra daÄŸÄ±lmasÄ± bekleniyor.â€\n\nDuyuruya gÃ¶re sÃ¼rÃ¼cÃ¼lerden ne yapmalarÄ± isteniyor?",
+    "siklar": {
+      "A": "Sabah saatlerinde yola Ã§Ä±kmaktan vazgeÃ§meleri",
+      "B": "Ã–ÄŸleden sonraya kadar yolda beklemeleri",
+      "C": "YavaÅŸlayÄ±p Ã¶ndeki araÃ§tan uzak durmalarÄ±",
+      "D": "AraÃ§larÄ±nÄ±n farlarÄ±nÄ± sÃ¶ndÃ¼rmeleri"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Ä°stenen davranÄ±ÅŸ duyurunun ikinci cÃ¼mlesinde doÄŸrudan sÃ¶yleniyor.",
+    "cozum_adimlari": [
+      "Duyuruda sÃ¼rÃ¼cÃ¼lere hÄ±zÄ± dÃ¼ÅŸÃ¼rmeleri ve Ã¶ndeki araÃ§la aralarÄ±nÄ± aÃ§malarÄ± Ã¶neriliyor. Bu, ÅŸÄ±ktaki ifadeyle aynÄ± anlamdadÄ±r.",
+      "DoÄŸru cevap C seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Duyuruda yola Ã§Ä±kmamak deÄŸil, dikkatli sÃ¼rmek Ã¶nerilir.",
+      "B": "Sisin Ã¶ÄŸleden sonra daÄŸÄ±lacaÄŸÄ± bilgisi, beklemek Ã¶neriliyormuÅŸ gibi yanlÄ±ÅŸ okunur.",
+      "C": "DoÄŸru.",
+      "D": "Duyuruda farlarla ilgili bir istek yoktur."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-005",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.7",
+    "surec_bileseni": "b",
+    "konu": "Derin anlam",
+    "alt_konu": "Dinlenen anlatÄ±dan Ã§Ä±karÄ±m",
+    "soru_metni": "Bir hikÃ¢ye ÅŸÃ¶yle anlatÄ±lÄ±yor: â€œHasan, bu sabah ambarÄ±n anahtarÄ±nÄ± sessizce Ali Bey'in masasÄ±na bÄ±raktÄ±. Eski ceketini omzuna attÄ±, kapÄ±da durup yÄ±llarca emek verdiÄŸi tarlaya uzun uzun baktÄ±. â€˜Toprak insana Ã§ok ÅŸey Ã¶ÄŸretiyor,â€™ diye mÄ±rÄ±ldandÄ±, â€˜ama vedalaÅŸmayÄ± bir tÃ¼rlÃ¼ Ã¶ÄŸretmiyor.â€™ GÃ¶zleri dolmuÅŸtu.â€\n\nBu anlatÄ±mdan Hasan'la ilgili hangi Ã§Ä±karÄ±m yapÄ±labilir?",
+    "siklar": {
+      "A": "Ali Bey'e kÄ±rÄ±ldÄ±ÄŸÄ± iÃ§in anahtarÄ± geri veriyor.",
+      "B": "Ä°ÅŸinden ayrÄ±lÄ±yor ve bu duruma Ã¼zÃ¼lÃ¼yor.",
+      "C": "BaÅŸka bir tarlada daha iyi iÅŸ buldu, sevinÃ§li.",
+      "D": "AmbarÄ± kilitlemeyi unuttuÄŸu iÃ§in piÅŸmanlÄ±k duyuyor."
+    },
+    "dogru_sik": "B",
+    "ipucu": "AnahtarÄ± bÄ±rakma, tarlaya bakma ve gÃ¶zlerinin dolmasÄ± birlikte neyi gÃ¶sterir?",
+    "cozum_adimlari": [
+      "AnahtarÄ±n teslim edilmesi, uzun bakÄ±ÅŸ, â€œvedalaÅŸmaâ€ sÃ¶zÃ¼ ve dolan gÃ¶zler Hasan'Ä±n iÅŸinden ayrÄ±ldÄ±ÄŸÄ±nÄ± ve buna Ã¼zÃ¼ldÃ¼ÄŸÃ¼nÃ¼ gÃ¶sterir. Bunlar metinde doÄŸrudan sÃ¶ylenmez, Ã§Ä±karÄ±mla bulunur.",
+      "DoÄŸru cevap B seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "KÄ±rgÄ±nlÄ±k ifadesi metinde yoktur; yalnÄ±zca anahtarÄ±n bÄ±rakÄ±lmasÄ±ndan yanlÄ±ÅŸ Ã§Ä±karÄ±m yapÄ±lmÄ±ÅŸtÄ±r.",
+      "B": "DoÄŸru.",
+      "C": "Dolan gÃ¶zler sevinÃ§le baÄŸdaÅŸmaz.",
+      "D": "AnahtarÄ±n bÄ±rakÄ±lmasÄ± unutkanlÄ±k sanÄ±lmÄ±ÅŸtÄ±r."
+    },
+    "zorluk": 3,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-006",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.8",
+    "surec_bileseni": "a",
+    "konu": "Dinlediklerini karÅŸÄ±laÅŸtÄ±rma",
+    "alt_konu": "BenzerliÄŸi belirleme",
+    "soru_metni": "Ä°ki arkadaÅŸ tatil planlarÄ±nÄ± anlatÄ±yor.\nDefne: â€œBen deniz kenarÄ±nÄ± severim. SabahlarÄ± yÃ¼zer, akÅŸamlarÄ± kumsalda yÃ¼rÃ¼rÃ¼m.â€\nBarÄ±ÅŸ: â€œBen daÄŸ evinde kalmayÄ± seÃ§erim. SabahlarÄ± patikada yÃ¼rÃ¼rÃ¼m, akÅŸamlarÄ± ÅŸÃ¶mine baÅŸÄ±nda kitap okurum.â€\n\nÄ°ki konuÅŸmacÄ±nÄ±n tatil anlayÄ±ÅŸlarÄ±ndaki benzerlik hangisidir?",
+    "siklar": {
+      "A": "Gününü sabah ve akşam farklı işlere bölmeleri",
+      "B": "AkÅŸam saatlerini kitap okuyarak geÃ§irmeleri",
+      "C": "Tatil yeri olarak deniz kÄ±yÄ±sÄ±nÄ± seÃ§meleri",
+      "D": "SabahlarÄ± yÃ¼zme etkinliÄŸi yapmalarÄ±"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Ortak olan, etkinliklerin kendisi deÄŸil, gÃ¼nÃ¼n nasÄ±l bÃ¶lÃ¼ndÃ¼ÄŸÃ¼dÃ¼r.",
+    "cozum_adimlari": [
+      "Ä°kisi de sabah bir etkinlik, akÅŸam baÅŸka bir etkinlik yapÄ±yor. Etkinlikler ve yerler farklÄ± olduÄŸundan ortak yÃ¶n gÃ¼n planÄ±dÄ±r.",
+      "DoÄŸru cevap A seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "DoÄŸru.",
+      "B": "Kitap okuma yalnÄ±z BarÄ±ÅŸ'a aittir.",
+      "C": "Deniz yalnÄ±z Defne'nin seÃ§imidir.",
+      "D": "YÃ¼zme yalnÄ±z Defne'nin etkinliÄŸidir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-007",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.9",
+    "surec_bileseni": "b",
+    "konu": "SÄ±nÄ±flandÄ±rma",
+    "alt_konu": "Ã–lÃ§Ã¼te gÃ¶re gruplandÄ±rma",
+    "soru_metni": "Bir belgeselde ÅŸu canlÄ±lar tanÄ±tÄ±lÄ±yor: serÃ§e, yunus, kartal, balina. Sunucu, canlÄ±larÄ± â€œhavada uÃ§anlarâ€ ve â€œsuda yaÅŸayanlarâ€ Ã¶lÃ§Ã¼tÃ¼ne gÃ¶re gruplayacaÄŸÄ±nÄ± sÃ¶ylÃ¼yor.\n\nBu Ã¶lÃ§Ã¼te gÃ¶re gruplama hangisinde doÄŸru verilmiÅŸtir?",
+    "siklar": {
+      "A": "Havada: serÃ§e, yunus â€“ Suda: kartal, balina",
+      "B": "Havada: kartal, balina â€“ Suda: serÃ§e, yunus",
+      "C": "Havada: serÃ§e â€“ Suda: kartal, yunus, balina",
+      "D": "Havada: serÃ§e, kartal â€“ Suda: yunus, balina"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Her canlÄ±nÄ±n yaÅŸam ortamÄ±nÄ± tek tek dÃ¼ÅŸÃ¼n.",
+    "cozum_adimlari": [
+      "SerÃ§e ve kartal kuÅŸtur, havada uÃ§ar. Yunus ve balina suda yaÅŸar. DoÄŸru gruplama budur.",
+      "DoÄŸru cevap D seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yunus suda yaÅŸar, havada uÃ§maz.",
+      "B": "Balina havada, serÃ§e suda deÄŸildir; gruplar ters kurulmuÅŸtur.",
+      "C": "Kartal uÃ§an bir kuÅŸtur, havada olanlara yazÄ±lmalÄ±ydÄ±.",
+      "D": "DoÄŸru."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-008",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.10",
+    "surec_bileseni": "a",
+    "konu": "Yorumlama",
+    "alt_konu": "FarklÄ± bakÄ±ÅŸ aÃ§Ä±sÄ±yla yorum",
+    "soru_metni": "Okul radyosunda ÅŸu haber veriliyor: â€œOkulumuzda yapÄ±lan ankette Ã¶ÄŸrencilerin Ã§oÄŸu teneffÃ¼s sÃ¼resinin uzatÄ±lmasÄ±nÄ± istedi. MÃ¼dÃ¼r yardÄ±mcÄ±sÄ± ise teneffÃ¼s uzarsa ders sÃ¼relerinin kÄ±salacaÄŸÄ±nÄ±, bunun da konularÄ± iÅŸlemeyi zorlaÅŸtÄ±rabileceÄŸini sÃ¶yledi.â€\n\nMÃ¼dÃ¼r yardÄ±mcÄ±sÄ±nÄ±n bakÄ±ÅŸ aÃ§Ä±sÄ±yla bu duruma yorum yapÄ±ldÄ±ÄŸÄ±nda hangisi sÃ¶ylenir?",
+    "siklar": {
+      "A": "Anket sonucu, Ã¶ÄŸrencilerin istediÄŸi dÃ¼zenlemeyi haklÄ± Ã§Ä±karÄ±r.",
+      "B": "Daha uzun teneffÃ¼s, Ã¶ÄŸrencilerin derse katÄ±lÄ±mÄ±nÄ± artÄ±rÄ±r.",
+      "C": "Teneffüs uzarsa ders kısalacağı için öğrenme güçleşir.",
+      "D": "Okul yÃ¶netimi bundan sonra anket yapmamalÄ±dÄ±r."
+    },
+    "dogru_sik": "C",
+    "ipucu": "MÃ¼dÃ¼r yardÄ±mcÄ±sÄ±nÄ±n kaygÄ±sÄ± ders sÃ¼resiyle ilgilidir.",
+    "cozum_adimlari": [
+      "MÃ¼dÃ¼r yardÄ±mcÄ±sÄ±, teneffÃ¼s uzarsa ders sÃ¼relerinin kÄ±salacaÄŸÄ± ve iÅŸlemenin zorlaÅŸacaÄŸÄ± gÃ¶rÃ¼ÅŸÃ¼ndedir. Bu gÃ¶rÃ¼ÅŸe uyan yorum budur.",
+      "DoÄŸru cevap C seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Bu, Ã¶ÄŸrencilerin bakÄ±ÅŸ aÃ§Ä±sÄ±dÄ±r.",
+      "B": "Haberde bÃ¶yle bir gÃ¶rÃ¼ÅŸ yer almaz.",
+      "C": "DoÄŸru.",
+      "D": "Anketin gerekliliÄŸi tartÄ±ÅŸÄ±lmamÄ±ÅŸtÄ±r."
+    },
+    "zorluk": 3,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-009",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.11",
+    "surec_bileseni": "a",
+    "konu": "HikÃ¢ye unsurlarÄ±",
+    "alt_konu": "MekÃ¢n ve zamanÄ± belirleme",
+    "soru_metni": "Bir hikÃ¢ye ÅŸÃ¶yle baÅŸlÄ±yor: â€œKÄ±ÅŸ akÅŸamÄ±ydÄ±. KÃ¼Ã§Ã¼k Mina, dedesinin kÃ¶ydeki evinde ÅŸÃ¶mine baÅŸÄ±nda oturuyordu. DÄ±ÅŸarÄ±da kar yaÄŸÄ±yordu. KapÄ± vurulunca aÃ§tÄ±; karÅŸÄ±sÄ±nda Ä±slak tÃ¼yleriyle titreyen bir kedi duruyordu. Kediyi iÃ§eri aldÄ±, ona sÃ¼t verdi.â€\n\nBu hikÃ¢yede olaylarÄ±n geÃ§tiÄŸi mekÃ¢n ve zaman hangisidir?",
+    "siklar": {
+      "A": "Åehirdeki bir apartman, yaz sabahÄ±",
+      "B": "KÃ¶ydeki bir ev, kÄ±ÅŸ akÅŸamÄ±",
+      "C": "KÃ¶y okulunun bahÃ§esi, kÄ±ÅŸ sabahÄ±",
+      "D": "Dedenin tarlasÄ±, bahar akÅŸamÄ±"
+    },
+    "dogru_sik": "B",
+    "ipucu": "HikÃ¢yenin ilk iki cÃ¼mlesini inceleyin.",
+    "cozum_adimlari": [
+      "â€œKÄ±ÅŸ akÅŸamÄ±ydÄ±â€ ifadesi zamanÄ±, dedesinin kÃ¶ydeki evi mekÃ¢nÄ± gÃ¶sterir.",
+      "DoÄŸru cevap B seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Åehir ve yaz metne aykÄ±rÄ±dÄ±r.",
+      "B": "DoÄŸru.",
+      "C": "Okul bahÃ§esi metinde yoktur, sabah da yanlÄ±ÅŸtÄ±r.",
+      "D": "Tarla ve bahar metinde geÃ§mez."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-010",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.12",
+    "surec_bileseni": "a",
+    "konu": "Bilgilendirici metin yapÄ±sÄ±",
+    "alt_konu": "Bilgiler arasÄ± iliÅŸki",
+    "soru_metni": "Bir fen programÄ±nda su dÃ¶ngÃ¼sÃ¼ ÅŸÃ¶yle anlatÄ±lÄ±yor: â€œÃ–nce gÃ¼neÅŸin Ä±sÄ±ttÄ±ÄŸÄ± sular buharlaÅŸÄ±r. Buhar yÃ¼kselirken soÄŸur ve bulutlarÄ± oluÅŸturur. Bulutlardaki damlalar yaÄŸÄ±ÅŸ olarak yeryÃ¼zÃ¼ne iner. YaÄŸÄ±ÅŸlar akarsulara karÄ±ÅŸarak yeniden denizlere ulaÅŸÄ±r.â€\n\nBu anlatÄ±ma gÃ¶re bulutlarÄ±n oluÅŸmasÄ±na yol aÃ§an olay hangisidir?",
+    "siklar": {
+      "A": "Su buharÄ±nÄ±n yÃ¼kselirken soÄŸumasÄ±",
+      "B": "YaÄŸmur damlalarÄ±nÄ±n yeryÃ¼zÃ¼ne dÃ¼ÅŸmesi",
+      "C": "AkarsularÄ±n denizlere ulaÅŸmasÄ±",
+      "D": "GÃ¼neÅŸin bulutlarÄ± Ä±sÄ±tmasÄ±"
+    },
+    "dogru_sik": "A",
+    "ipucu": "OlaylarÄ±n sÄ±rasÄ±na bak; bulutlardan Ã¶nce ne olur?",
+    "cozum_adimlari": [
+      "AnlatÄ±mda bulut oluÅŸumundan hemen Ã¶nce gelen olay, buharÄ±n yÃ¼kselirken soÄŸumasÄ±dÄ±r. Bu iliÅŸki sÄ±ralamadan anlaÅŸÄ±lÄ±r.",
+      "DoÄŸru cevap A seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "DoÄŸru.",
+      "B": "YaÄŸÄ±ÅŸ, bulut oluÅŸumunun sonucudur; neden gibi gÃ¶rÃ¼lmÃ¼ÅŸtÃ¼r.",
+      "C": "Bu olay dÃ¶ngÃ¼nÃ¼n son basamaÄŸÄ±dÄ±r.",
+      "D": "GÃ¼neÅŸ suyu Ä±sÄ±tÄ±r, bulutlarÄ± deÄŸil."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-011",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.13",
+    "surec_bileseni": "a",
+    "konu": "Anahtar kelimeler",
+    "alt_konu": "Ä°Ã§eriÄŸi yansÄ±tan sÃ¶zcÃ¼kler",
+    "soru_metni": "Bir sunucu ÅŸunlarÄ± sÃ¶ylÃ¼yor: â€œPlastik atÄ±klar denizlerde yÄ±llarca Ã§Ã¶zÃ¼nmeden kalÄ±yor. BalÄ±klar ve kuÅŸlar bu atÄ±klarÄ± yiyecek sanÄ±p yutuyor. Bu yÃ¼zden deniz canlÄ±larÄ±nÄ±n sayÄ±sÄ± azalÄ±yor. AtÄ±klarÄ± ayÄ±rÄ±p geri dÃ¶nÃ¼ÅŸÃ¼me vermek, denizleri korumaya katkÄ± saÄŸlar.â€\n\nBu konuÅŸmanÄ±n iÃ§eriÄŸini en iyi yansÄ±tan anahtar sÃ¶zcÃ¼kler hangisidir?",
+    "siklar": {
+      "A": "balÄ±kÃ§Ä±lÄ±k, tuzluluk, deniz taÅŸÄ±macÄ±lÄ±ÄŸÄ±",
+      "B": "yÄ±llar, yutmak, azalmak",
+      "C": "Ã§evre, hava kirliliÄŸi, gÃ¼rÃ¼ltÃ¼",
+      "D": "plastik atÄ±k, deniz canlÄ±larÄ±, geri dÃ¶nÃ¼ÅŸÃ¼m"
+    },
+    "dogru_sik": "D",
+    "ipucu": "KonuÅŸmanÄ±n konusunu, sorununu ve Ã§Ã¶zÃ¼mÃ¼nÃ¼ anlatan sÃ¶zcÃ¼kleri seÃ§.",
+    "cozum_adimlari": [
+      "KonuÅŸma plastik atÄ±klarÄ±n deniz canlÄ±larÄ±na zararÄ±nÄ± ve geri dÃ¶nÃ¼ÅŸÃ¼mÃ¼ anlatÄ±r. Anahtar sÃ¶zcÃ¼kler bu Ã¼Ã§ temayÄ± kapsar.",
+      "DoÄŸru cevap D seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "KonuÅŸmada geÃ§meyen konulardÄ±r.",
+      "B": "Metinde geÃ§en sÃ¶zcÃ¼klerdir ama konuyu temsil etmez.",
+      "C": "Ã‡evre genel bir baÅŸlÄ±ktÄ±r; hava kirliliÄŸi ve gÃ¼rÃ¼ltÃ¼ konu dÄ±ÅŸÄ±dÄ±r.",
+      "D": "DoÄŸru."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-012",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.14",
+    "surec_bileseni": "a",
+    "konu": "Metnin bÃ¶lÃ¼mleri",
+    "alt_konu": "GiriÅŸ, geliÅŸme, sonuÃ§",
+    "soru_metni": "Bir programda sunucu ÅŸunlarÄ± sÃ¶ylÃ¼yor:\n1) â€œBugÃ¼n Ã§ocuklarÄ±n neden yeterince uyuyamadÄ±ÄŸÄ±nÄ± konuÅŸacaÄŸÄ±z.â€\n2) â€œAraÅŸtÄ±rmalara gÃ¶re ekran baÅŸÄ±nda geÃ§en sÃ¼re arttÄ±kÃ§a uyku sÃ¼resi kÄ±salÄ±yor. GeÃ§ saatte iÃ§ilen bazÄ± iÃ§ecekler de uykuyu bozuyor.â€\n3) â€œBu nedenle yatmadan bir saat Ã¶nce ekranlardan uzaklaÅŸmak saÄŸlÄ±klÄ± uyku iÃ§in iyi bir adÄ±mdÄ±r.â€\n\nBu konuÅŸmanÄ±n geliÅŸme bÃ¶lÃ¼mÃ¼ hangisidir?",
+    "siklar": {
+      "A": "Konunun tanÄ±tÄ±ldÄ±ÄŸÄ± birinci bÃ¶lÃ¼m",
+      "B": "Bir Ã¶neri sunulan Ã¼Ã§Ã¼ncÃ¼ bÃ¶lÃ¼m",
+      "C": "Uykuyu bozan etkenlerin aÃ§Ä±klandÄ±ÄŸÄ± ikinci bÃ¶lÃ¼m",
+      "D": "Konunun tanÄ±tÄ±ldÄ±ÄŸÄ± ve Ã¶nerinin verildiÄŸi bÃ¶lÃ¼mler"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Konunun nedenlerinin aÃ§Ä±klandÄ±ÄŸÄ± kÄ±smÄ± bul.",
+    "cozum_adimlari": [
+      "GeliÅŸme bÃ¶lÃ¼mÃ¼nde konunun ayrÄ±ntÄ±larÄ± ve nedenleri verilir. Bu konuÅŸmada ekran sÃ¼resi ve iÃ§eceklerin etkisi ikinci bÃ¶lÃ¼mde anlatÄ±lmÄ±ÅŸtÄ±r.",
+      "DoÄŸru cevap C seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Birinci bÃ¶lÃ¼m giriÅŸi oluÅŸturur.",
+      "B": "ÃœÃ§Ã¼ncÃ¼ bÃ¶lÃ¼m sonuÃ§ ve Ã¶neri bÃ¶lÃ¼mÃ¼dÃ¼r.",
+      "C": "DoÄŸru.",
+      "D": "GiriÅŸ ve sonuÃ§ bÃ¶lÃ¼mleri birlikte geliÅŸme sayÄ±lmaz."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-013",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.15",
+    "surec_bileseni": "a",
+    "konu": "DÃ¼ÅŸÃ¼nceyi geliÅŸtirme yollarÄ±",
+    "alt_konu": "Ã–rnekleme",
+    "soru_metni": "Bir doÄŸa programÄ±nda sunucu ÅŸÃ¶yle diyor: â€œGÃ¶Ã§men kuÅŸlar uzun yolculuklarda â€˜Vâ€™ biÃ§iminde uÃ§ar. Ã–ndeki kuÅŸ havayÄ± yarar, arkadakiler daha az gÃ¼Ã§ harcar. Bir kaz sÃ¼rÃ¼sÃ¼ bu dÃ¼zen sayesinde binlerce kilometreyi daha az yorularak aÅŸar.â€\n\nSunucu, dÃ¼ÅŸÃ¼ncesini geliÅŸtirirken hangi yoldan yararlanmÄ±ÅŸtÄ±r?",
+    "siklar": {
+      "A": "Ã–rneklendirme",
+      "B": "KarÅŸÄ±laÅŸtÄ±rma",
+      "C": "TanÄ±k gÃ¶sterme",
+      "D": "TanÄ±mlama"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Sunucu, genel bir bilgiyi belirli bir olayla destekliyor.",
+    "cozum_adimlari": [
+      "Sunucu genel bilgiyi (V biÃ§imiyle uÃ§uÅŸ) belirli bir sÃ¼rÃ¼ Ã¼zerinden aÃ§Ä±klamÄ±ÅŸtÄ±r. Bu Ã¶rneklendirmedir.",
+      "DoÄŸru cevap A seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "DoÄŸru.",
+      "B": "Ä°ki durum yan yana konmamÄ±ÅŸtÄ±r.",
+      "C": "Bir uzmandan alÄ±ntÄ± yapÄ±lmamÄ±ÅŸtÄ±r.",
+      "D": "Bir kavramÄ±n ne olduÄŸu aÃ§Ä±klanmamÄ±ÅŸtÄ±r."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-014",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.16",
+    "surec_bileseni": "a",
+    "konu": "SÃ¶z sanatlarÄ±",
+    "alt_konu": "KiÅŸileÅŸtirme",
+    "soru_metni": "Bir ÅŸiir dinletisinde ÅŸu dizeler okunuyor: â€œRÃ¼zgÃ¢r fÄ±sÄ±ldadÄ± kulaÄŸÄ±ma, / deniz kÃ¼kredi dalgalarla, / sabahÄ±n gÃ¼len yÃ¼zÃ¼ doÄŸdu daÄŸlarÄ±n ardÄ±ndan.â€\n\nBu dizelerde belirgin olarak hangi sÃ¶z sanatÄ± kullanÄ±lmÄ±ÅŸtÄ±r?",
+    "siklar": {
+      "A": "Karşılaştırma",
+      "B": "KiÅŸileÅŸtirme",
+      "C": "Benzetme",
+      "D": "Abartma"
+    },
+    "dogru_sik": "B",
+    "ipucu": "RÃ¼zgÃ¢r, deniz ve sabaha hangi Ã¶zellikler verilmiÅŸ?",
+    "cozum_adimlari": [
+      "RÃ¼zgÃ¢r, deniz ve sabah gibi insan olmayan varlÄ±klara fÄ±sÄ±ldama, kÃ¼kreme ve gÃ¼lme gibi insana ait Ã¶zellikler verilmiÅŸtir. Bu kiÅŸileÅŸtirmedir.",
+      "DoÄŸru cevap B seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "İki şeyin yan yana konulup kıyaslanması yoktur.",
+      "B": "DoÄŸru.",
+      "C": "“Gibi” gibi benzetme ilgisi kurulmamıştır.",
+      "D": "Gerçeği büyütme yoktur."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-015",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.17",
+    "surec_bileseni": "a",
+    "konu": "Ä°kna teknikleri",
+    "alt_konu": "ÃœnlÃ¼ Ã¶rneÄŸi gÃ¶sterme",
+    "soru_metni": "Bir televizyon reklamÄ±nda ÅŸu sÃ¶z iÅŸitiliyor: â€œÃœnlÃ¼ bisikletÃ§i Selin Kaya bÃ¼tÃ¼n yarÄ±ÅŸlarÄ±na bu marka bisikletle Ã§Ä±kÄ±yor ve kazanÄ±yor. Siz de Selin gibi hÄ±zlÄ± pedal Ã§evirin!â€\n\nBu reklamda baÅŸvurulan ikna tekniÄŸi hangisidir?",
+    "siklar": {
+      "A": "Sayısal verileri kanıt olarak sunma",
+      "B": "Fiyat indirimiyle ilgi çekme",
+      "C": "Ünlü birini örnek gösterme",
+      "D": "Acıma duygusuna seslenme"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Reklamda kimden sÃ¶z edildiÄŸine ve onun neden anÄ±ldÄ±ÄŸÄ±na dikkat et.",
+    "cozum_adimlari": [
+      "Reklam, Ã¼nlÃ¼ bir sporcunun bisikleti kullandÄ±ÄŸÄ±nÄ± sÃ¶yleyerek dinleyiciyi ikna etmeye Ã§alÄ±ÅŸÄ±yor.",
+      "DoÄŸru cevap C seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Reklamda sayÄ± veya veri yoktur.",
+      "B": "Ä°ndirim bilgisi yoktur.",
+      "C": "DoÄŸru.",
+      "D": "Duygusal bir acÄ±ma anlatÄ±lmamÄ±ÅŸtÄ±r."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-016",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.18",
+    "surec_bileseni": "b",
+    "konu": "Ã‡oklu ortam Ã¶geleri",
+    "alt_konu": "GÃ¶rsel ile sÃ¶zÃ¼n iliÅŸkisi",
+    "soru_metni": "Bir haber videosunda sunucu â€œBarajdaki su seviyesi bu yÄ±l belirgin biÃ§imde dÃ¼ÅŸtÃ¼â€ diyor. AynÄ± anda ekranda, barajÄ±n iki yÄ±l Ã¶nceki ve bugÃ¼nkÃ¼ fotoÄŸrafÄ± yan yana gÃ¶steriliyor. BugÃ¼nkÃ¼ fotoÄŸrafta su Ã§izgisinin kÄ±yÄ±dan Ã§ok uzaklaÅŸtÄ±ÄŸÄ± gÃ¶rÃ¼lÃ¼yor.\n\nFotoÄŸraflar, sunucunun sÃ¶zÃ¼yle nasÄ±l bir anlam iliÅŸkisi kuruyor?",
+    "siklar": {
+      "A": "SÃ¶ylenenle ilgisiz yeni bir konu aÃ§Ä±yor.",
+      "B": "SÃ¶ylenenin tam tersini kanÄ±tlÄ±yor.",
+      "C": "SÃ¶zle aynÄ± bilgiyi bÃ¼tÃ¼nÃ¼yle yineleyerek dikkat daÄŸÄ±tÄ±yor.",
+      "D": "SÃ¶ylenen bilgiyi gÃ¶rÃ¼ntÃ¼yle destekliyor."
+    },
+    "dogru_sik": "D",
+    "ipucu": "FotoÄŸraflarda gÃ¶rdÃ¼klerini sunucunun sÃ¶ylediÄŸiyle karÅŸÄ±laÅŸtÄ±r.",
+    "cozum_adimlari": [
+      "FotoÄŸraflar su seviyesinin dÃ¼ÅŸtÃ¼ÄŸÃ¼nÃ¼ gÃ¶sterir. BÃ¶ylece sunucunun sÃ¶ylediÄŸi bilgi destekleniyor.",
+      "DoÄŸru cevap D seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Konu aynÄ±dÄ±r.",
+      "B": "FotoÄŸraf sÃ¶yleneni doÄŸrular, Ã§Ã¼rÃ¼tmez.",
+      "C": "GÃ¶rÃ¼ntÃ¼ yeni bir kanÄ±t ekler, yalnÄ±z tekrar etmez.",
+      "D": "DoÄŸru."
+    },
+    "zorluk": 3,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-017",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.19",
+    "surec_bileseni": "c",
+    "konu": "Ã–zetleme",
+    "alt_konu": "Ã–nemli bilgileri seÃ§me",
+    "soru_metni": "Bir spor hocasÄ± ÅŸÃ¶yle anlatÄ±yor: â€œSabah koÅŸusuna Ã§Ä±kmadan Ã¶nce bol su iÃ§tim. Hava biraz serindi. IsÄ±nma hareketleri yaptÄ±m ve yarÄ±m saat koÅŸtum. KoÅŸu bitince esneme hareketleriyle vÃ¼cudumu dinlendirdim. Yol boyunca bir kÃ¶pek de bana eÅŸlik etti.â€\n\nBu anlatÄ±mÄ±n en uygun Ã¶zeti hangisidir?",
+    "siklar": {
+      "A": "Hava serin olduÄŸu iÃ§in hoca, yanÄ±na kÃ¶peÄŸini alÄ±p koÅŸuya Ã§Ä±kmÄ±ÅŸ.",
+      "B": "Hoca hazırlık ve ısınmanın ardından koşmuş, sonra esneme yapmış.",
+      "C": "Hoca su iÃ§miÅŸ, bir kÃ¶pekle karÅŸÄ±laÅŸmÄ±ÅŸ ve koÅŸmadan eve dÃ¶nmÃ¼ÅŸ.",
+      "D": "Hoca Ä±sÄ±nmadan koÅŸmaya baÅŸlamÄ±ÅŸ, bitince dinlenmeden ayrÄ±lmÄ±ÅŸ."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Ã–zette Ã¶nemli bilgiler sÄ±rasÄ±yla yer alÄ±r, ayrÄ±ntÄ±lar atÄ±lÄ±r.",
+    "cozum_adimlari": [
+      "Ã–nemli bilgiler hazÄ±rlÄ±k, Ä±sÄ±nma, koÅŸu ve esnemedir. HavanÄ±n serinliÄŸi ve kÃ¶pek ikinci derecede ayrÄ±ntÄ±dÄ±r.",
+      "DoÄŸru cevap B seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "KÃ¶peÄŸi yanÄ±na alma ve serinlik nedeni metinde yoktur.",
+      "B": "DoÄŸru.",
+      "C": "KoÅŸmadan dÃ¶nme bilgisi yanlÄ±ÅŸtÄ±r.",
+      "D": "IsÄ±nma ve esneme bilgisiyle Ã§eliÅŸir."
+    },
+    "zorluk": 3,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-018",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.D.6.23",
+    "surec_bileseni": "b",
+    "konu": "EleÅŸtiri",
+    "alt_konu": "GerekÃ§eli yargÄ±",
+    "soru_metni": "Bir videoda sunucu ÅŸÃ¶yle diyor: â€œBu bitkisel Ã§ay her hastalÄ±ÄŸa iyi geliyor. Doktora gitmenize gerek kalmaz, bu Ã§ayÄ± iÃ§meniz yeterli.â€\n\nBu iddiayÄ± sorgulayan bir izleyici hangi yargÄ±ya ulaÅŸmalÄ±dÄ±r?",
+    "siklar": {
+      "A": "İddia kanıta dayanmadığı için güvenilir değildir.",
+      "B": "Video Ã§ok izlendiÄŸi iÃ§in iddia kanÄ±tlanmÄ±ÅŸtÄ±r.",
+      "C": "Ã‡ay bitkisel olduÄŸu iÃ§in saÄŸlÄ±k kontrolÃ¼ gereksizdir.",
+      "D": "Sunucu rahat konuÅŸtuÄŸu iÃ§in gÃ¶rÃ¼ÅŸÃ¼ doÄŸrudur."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Bir iddianÄ±n doÄŸruluÄŸu neye bakÄ±larak anlaÅŸÄ±lÄ±r?",
+    "cozum_adimlari": [
+      "Ä°ddia herhangi bir araÅŸtÄ±rmayla desteklenmiyor ve doktor kontrolÃ¼nÃ¼ gereksiz gÃ¶steriyor. GerekÃ§eli yargÄ±, bunun gÃ¼venilir olmadÄ±ÄŸÄ±dÄ±r.",
+      "DoÄŸru cevap A seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "DoÄŸru.",
+      "B": "Ä°zlenme sayÄ±sÄ± doÄŸruluÄŸu kanÄ±tlamaz.",
+      "C": "DoÄŸal olmasÄ± saÄŸlÄ±ÄŸa her zaman yararlÄ± olduÄŸu anlamÄ±na gelmez.",
+      "D": "KonuÅŸma tarzÄ± doÄŸruluÄŸun Ã¶lÃ§Ã¼sÃ¼ deÄŸildir."
+    },
+    "zorluk": 3,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-019",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.1",
+    "surec_bileseni": "a",
+    "konu": "KonuÅŸma kalÄ±plarÄ±",
+    "alt_konu": "SÃ¶z sÄ±rasÄ± alma",
+    "soru_metni": "SÄ±nÄ±f tartÄ±ÅŸmasÄ±nda Kerem'in arkadaÅŸÄ± konuÅŸuyor. Kerem de gÃ¶rÃ¼ÅŸ bildirmek istiyor.\n\nKerem'in sÃ¶z sÄ±rasÄ± alÄ±rken kullanabileceÄŸi en uygun ifade hangisidir?",
+    "siklar": {
+      "A": "Çok konuştun, artık söz sırası bende.",
+      "B": "Beklemeden hemen fikrimi söylüyorum.",
+      "C": "Sözünüz bitince görüş bildirebilir miyim?",
+      "D": "Sus da ben anlatayım, çok sürmez."
+    },
+    "dogru_sik": "C",
+    "ipucu": "SÃ¶z isterken karÅŸÄ±ndakine saygÄ± gÃ¶steren, nazik bir ifade seÃ§.",
+    "cozum_adimlari": [
+      "SÃ¶z sÄ±rasÄ± alÄ±rken karÅŸÄ±dakinin konuÅŸmasÄ±nÄ±n bitmesi beklenir ve nazik bir kalÄ±p kullanÄ±lÄ±r.",
+      "DoÄŸru cevap C seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "KarÅŸÄ±dakini kÄ±rar.",
+      "B": "SÃ¶z kesmeyi onaylar.",
+      "C": "DoÄŸru.",
+      "D": "SaygÄ±sÄ±z bir ifadedir."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-020",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.2",
+    "surec_bileseni": "b",
+    "konu": "KonuÅŸma tekniÄŸi",
+    "alt_konu": "Dikkat Ã§ekici giriÅŸ",
+    "soru_metni": "Zeynep, sÄ±nÄ±fta â€œsu tasarrufuâ€ konulu bir konuÅŸma yapacak. Dinleyenlerin dikkatini baÅŸtan toplamak istiyor.\n\nZeynep bu amaÃ§la hangi tekniÄŸi seÃ§melidir?",
+    "siklar": {
+      "A": "KonuÅŸmayÄ± metinden baÅŸÄ±nÄ± kaldÄ±rmadan okumayÄ±",
+      "B": "KonuÅŸmayÄ± olabildiÄŸince hÄ±zlÄ± bitirmeyi",
+      "C": "Dinleyicilere arkasÄ±nÄ± dÃ¶nerek anlatmayÄ±",
+      "D": "KonuÅŸmaya dÃ¼ÅŸÃ¼ndÃ¼rÃ¼cÃ¼ bir soruyla baÅŸlamayÄ±"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Dinleyicileri konuya Ã§ekecek bir giriÅŸ dÃ¼ÅŸÃ¼n.",
+    "cozum_adimlari": [
+      "Dikkat Ã§ekici bir soru dinleyicilerin merakÄ±nÄ± uyandÄ±rÄ±r; seÃ§ilen teknik konuÅŸmanÄ±n amacÄ±na hizmet eder.",
+      "DoÄŸru cevap D seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Okuma, ilgiyi azaltÄ±r.",
+      "B": "HÄ±z anlaÅŸÄ±lmayÄ± gÃ¼Ã§leÅŸtirir.",
+      "C": "ArkayÄ± dÃ¶nmek iletiÅŸimi keser.",
+      "D": "DoÄŸru."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-021",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.3",
+    "surec_bileseni": "b",
+    "konu": "AmaÃ§ ve iÃ§erik",
+    "alt_konu": "Amaca uygun iÃ§erik",
+    "soru_metni": "Kemal, okulda kurulacak kitap kulÃ¼bÃ¼nÃ¼ arkadaÅŸlarÄ±na tanÄ±tacak. AmacÄ±, kulÃ¼be katÄ±lÄ±mÄ± artÄ±rmak.\n\nKemal'in konuÅŸmasÄ±nÄ± sÃ¼rdÃ¼rÃ¼rken amacÄ±na uygun olarak hangisini yapmasÄ± gerekir?",
+    "siklar": {
+      "A": "Kulüpte yapılacak etkinlikleri ve yararları anlatmak",
+      "B": "Yazarların yaşam öykülerini ayrıntılı biçimde vermek",
+      "C": "Kitap fiyatlarındaki artışı uzun uzun eleştirmek",
+      "D": "Okulun kuruluş tarihini ayrıntılı biçimde anlatmak"
+    },
+    "dogru_sik": "A",
+    "ipucu": "KonuÅŸmanÄ±n amacÄ± katÄ±lÄ±mÄ± artÄ±rmaktÄ±r; buna hizmet eden iÃ§eriÄŸi seÃ§.",
+    "cozum_adimlari": [
+      "KatÄ±lÄ±mÄ± artÄ±rmak iÃ§in kulÃ¼bÃ¼n sunacaklarÄ±nÄ± anlatmak gerekir. DiÄŸer ÅŸÄ±klar amaca hizmet etmez.",
+      "DoÄŸru cevap A seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "DoÄŸru.",
+      "B": "Konu dÄ±ÅŸÄ± ayrÄ±ntÄ±.",
+      "C": "AmaÃ§tan uzaklaÅŸtÄ±rÄ±r.",
+      "D": "Konuyla ilgisi yok."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-022",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.4",
+    "surec_bileseni": "b",
+    "konu": "Soru sorma",
+    "alt_konu": "BaÄŸlama uygun soru",
+    "soru_metni": "Mert, hafta sonu yaptÄ±ÄŸÄ± kano gezisini anlatÄ±yor: â€œNehirde akÄ±ntÄ± Ã§ok kuvvetliydi ama rehberimiz bize doÄŸru yolu gÃ¶sterdi.â€ Ece, sohbeti sÃ¼rdÃ¼rmek iÃ§in soru soracak.\n\nEce'nin baÄŸlama en uygun sorusu hangisidir?",
+    "siklar": {
+      "A": "Dün akşam yemekte ne yedin, hatırlıyor musun?",
+      "B": "Akıntıda rehber size yolu nasıl gösterdi?",
+      "C": "Kano satın almak pahalı bir şey mi?",
+      "D": "Sen hangi sınıfta okuyorsun şimdi?"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Soru, karÅŸÄ±ndakinin anlattÄ±ÄŸÄ± olaya baÄŸlÄ± olmalÄ±.",
+    "cozum_adimlari": [
+      "Ece, Mert'in anlattÄ±ÄŸÄ± rehber ve akÄ±ntÄ± durumundan yola Ã§Ä±karak soru sormalÄ±dÄ±r.",
+      "DoÄŸru cevap B seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Konuyla ilgisi yok.",
+      "B": "DoÄŸru.",
+      "C": "AnlatÄ±lan olayÄ± sÃ¼rdÃ¼rmez, konuyu deÄŸiÅŸtirir.",
+      "D": "Zaten bilinen bir bilgiyi sorar."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-023",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.5",
+    "surec_bileseni": "b",
+    "konu": "Ã‡oklu ortam Ã¶geleri",
+    "alt_konu": "GrafiÄŸin iÅŸlevi",
+    "soru_metni": "Hira, sunumunda sÄ±nÄ±fÄ±n bir yÄ±l iÃ§inde okuduÄŸu kitap sayÄ±sÄ±nÄ± anlatÄ±rken, ay ay kitap sayÄ±larÄ±nÄ± gÃ¶steren bir Ã§ubuk grafik gÃ¶steriyor.\n\nBu grafiÄŸin konuÅŸmadaki iÅŸlevi hangisidir?",
+    "siklar": {
+      "A": "KonuÅŸmayla aynÄ± anlamÄ± farklÄ± sÃ¶zcÃ¼klerle yinelemek",
+      "B": "Konuyla ilgisiz yeni bir bilgi vermek",
+      "C": "Dinleyicinin dikkatini konudan uzaklaÅŸtÄ±rmak",
+      "D": "AnlatÄ±lan sayÄ±sal bilgiyi gÃ¶rsel olarak desteklemek"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Grafik hangi bilgiyi gÃ¶rÃ¼nÃ¼r kÄ±lÄ±yor?",
+    "cozum_adimlari": [
+      "Grafik, konuÅŸulan sayÄ±sal bilgiyi gÃ¶rsel hÃ¢le getirerek anlatÄ±mÄ± destekler.",
+      "DoÄŸru cevap D seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Grafikte sÃ¶z yoktur, sÃ¶zcÃ¼kle eÅŸ anlam kurulmaz.",
+      "B": "Grafik konuyla ilgilidir.",
+      "C": "DoÄŸru kullanÄ±lan grafik dikkat daÄŸÄ±tmaz.",
+      "D": "DoÄŸru."
+    },
+    "zorluk": 2,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-024",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.6",
+    "surec_bileseni": "a",
+    "konu": "YaratÄ±cÄ± konuÅŸma",
+    "alt_konu": "Ã–zgÃ¼n anlatÄ±m oluÅŸturma",
+    "soru_metni": "Burak, sÄ±nÄ±f etkinliÄŸinde â€œBir gÃ¼n aya giden bir dolma kalemâ€ konulu yaratÄ±cÄ± bir konuÅŸma yapacak.\n\nBurak, unsurlarÄ± iliÅŸkilendirip konuÅŸmasÄ±nÄ± zenginleÅŸtirmek iÃ§in hangisini yapmalÄ±dÄ±r?",
+    "siklar": {
+      "A": "Kalemin hangi fabrikada üretildiğini sıralamalıdır.",
+      "B": "Aya giden ilk astronotun yaşam öyküsünü aktarmalıdır.",
+      "C": "Kalemin ay yolculuğunu hayal gücüyle anlatmalıdır.",
+      "D": "Dolma kalem çeşitlerini tek tek tanımlamalıdır."
+    },
+    "dogru_sik": "C",
+    "ipucu": "YaratÄ±cÄ±lÄ±k, alÄ±ÅŸÄ±lmadÄ±k bir konuyu hayal gÃ¼cÃ¼yle iliÅŸkilendirmeyi gerektirir.",
+    "cozum_adimlari": [
+      "Kalem ve ay gibi alÄ±ÅŸÄ±lmadÄ±k unsurlarÄ± hayal gÃ¼cÃ¼yle iliÅŸkilendirmek Ã¶zgÃ¼n bir anlatÄ±m saÄŸlar.",
+      "DoÄŸru cevap C seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Bilgi aktarÄ±r, hayal iÃ§ermez.",
+      "B": "Konunun odaÄŸÄ± deÄŸildir.",
+      "C": "DoÄŸru.",
+      "D": "YaratÄ±cÄ± anlatÄ±m deÄŸildir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-025",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.7",
+    "surec_bileseni": "b",
+    "konu": "HazÄ±rlÄ±ksÄ±z konuÅŸma",
+    "alt_konu": "KÄ±sa zihinsel planlama",
+    "soru_metni": "Ã–ÄŸretmen, Selim'den beklenmedik bir anda â€œOkulumuzun bahÃ§esi nasÄ±l olmalÄ±?â€ konusunda kÄ±sa bir konuÅŸma yapmasÄ±nÄ± istedi.\n\nSelim kÄ±sa sÃ¼rede hangi planÄ± yapmalÄ±dÄ±r?",
+    "siklar": {
+      "A": "KonuÅŸmaktan kaÃ§Ä±nmak iÃ§in baÅŸka bir konu istemelidir.",
+      "B": "Aklına gelen fikirleri sıralayıp kısa örneklerle desteklemelidir.",
+      "C": "Daha Ã¶nce ezberlediÄŸi baÅŸka bir konuÅŸmayÄ± olduÄŸu gibi sÃ¶ylemelidir.",
+      "D": "Uzun bir metin yazÄ±p sonra okumaya Ã§alÄ±ÅŸmalÄ±dÄ±r."
+    },
+    "dogru_sik": "B",
+    "ipucu": "KÄ±sa sÃ¼re iÃ§inde yapÄ±labilecek bir hazÄ±rlÄ±k dÃ¼ÅŸÃ¼n.",
+    "cozum_adimlari": [
+      "HazÄ±rlÄ±ksÄ±z konuÅŸmada kÄ±sa bir zihinsel plan yapÄ±lÄ±r: fikirler sÄ±ralanÄ±r, Ã¶rneklendirilir ve doÄŸal biÃ§imde sunulur.",
+      "DoÄŸru cevap B seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "KaÃ§Ä±nmak konuÅŸma yapmak deÄŸildir.",
+      "B": "DoÄŸru.",
+      "C": "Ezber baÄŸlama uygun olmaz.",
+      "D": "SÃ¼re yetmez ve hazÄ±rlÄ±ksÄ±zlÄ±ÄŸa aykÄ±rÄ±dÄ±r."
+    },
+    "zorluk": 2,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-026",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.8",
+    "surec_bileseni": "a",
+    "konu": "Ses kullanÄ±mÄ±",
+    "alt_konu": "Vurgu ve tonlama",
+    "soru_metni": "Aylin, sÄ±nÄ±fta ÅŸiir okuyor. â€œKuÅŸ gibi uÃ§tum gÃ¶kyÃ¼zÃ¼nde!â€ dizesinde sevincini dinleyicilere hissettirmek istiyor.\n\nAylin sesini nasÄ±l kullanmalÄ±dÄ±r?",
+    "siklar": {
+      "A": "Dizeyi canlÄ± bir tonlama ve uygun vurguyla okumalÄ±dÄ±r.",
+      "B": "Dizeyi fÄ±sÄ±ltÄ±yla ve tek dÃ¼ze bir sesle okumalÄ±dÄ±r.",
+      "C": "SÃ¶zcÃ¼kleri yutarak hÄ±zlÄ±ca geÃ§melidir.",
+      "D": "Nefes almadan dizeyi tek soluÄŸa sÄ±ÄŸdÄ±rmalÄ±dÄ±r."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Duygu, ses tonunda ve vurguda kendini gÃ¶sterir.",
+    "cozum_adimlari": [
+      "Sevinci aktarmak iÃ§in canlÄ± tonlama ve doÄŸru vurgu gerekir.",
+      "DoÄŸru cevap A seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "DoÄŸru.",
+      "B": "Tek dÃ¼ze ses duygu aktarmaz.",
+      "C": "Telaffuzu bozar.",
+      "D": "Nefes kontrolÃ¼ne aykÄ±rÄ±dÄ±r."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-027",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.11",
+    "surec_bileseni": "c",
+    "konu": "KarÅŸÄ±laÅŸtÄ±rma",
+    "alt_konu": "FarklÄ±lÄ±k belirtme",
+    "soru_metni": "Deniz, konuÅŸmasÄ±nda kediyle kÃ¶peÄŸi karÅŸÄ±laÅŸtÄ±rÄ±yor ve ÅŸunlarÄ± sÃ¶ylÃ¼yor:\nâ€œKedi ve kÃ¶pek insanlarla yaÅŸamayÄ± sever. Her ikisi de bakÄ±m ister. Ancak kÃ¶pek sahibini kapÄ±da karÅŸÄ±larken kedi genellikle uzaktan izler.â€\n\nDeniz'in konuÅŸmasÄ±nda kedi ile kÃ¶pek arasÄ±ndaki farkÄ± belirten ifade hangisidir?",
+    "siklar": {
+      "A": "İnsanlarla birlikte yaşamaktan hoşlanmaları",
+      "B": "İkisinin de düzenli bakıma ihtiyaç duyması",
+      "C": "İkisinin de ev ortamında beslenebilmesi",
+      "D": "Sahibini karşılama biçimlerinin farklı olması"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Fark, iki canlÄ±nÄ±n ayrÄ±ÅŸtÄ±ÄŸÄ± noktadÄ±r.",
+    "cozum_adimlari": [
+      "KÃ¶pek sahibini karÅŸÄ±lar, kedi uzaktan izler; bu fark belirtir. DiÄŸer ÅŸÄ±klar ortak Ã¶zelliktir.",
+      "DoÄŸru cevap D seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ortak Ã¶zelliktir.",
+      "B": "Ortak Ã¶zelliktir.",
+      "C": "Ortak Ã¶zellik olup metinde geÃ§mez.",
+      "D": "DoÄŸru."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-028",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.12",
+    "surec_bileseni": "b",
+    "konu": "SÄ±nÄ±flandÄ±rma",
+    "alt_konu": "Ã–lÃ§Ã¼te gÃ¶re gruplama",
+    "soru_metni": "Hakan, sunumunda ÅŸu besinleri â€œmeyveâ€ ve â€œsebzeâ€ Ã¶lÃ§Ã¼tÃ¼ne gÃ¶re gruplayacak: elma, kiraz, havuÃ§, Ä±spanak, patates, armut.\n\nBu Ã¶lÃ§Ã¼te gÃ¶re doÄŸru gruplama hangisidir?",
+    "siklar": {
+      "A": "Meyve: elma, havuÃ§, armut â€“ Sebze: kiraz, Ä±spanak, patates",
+      "B": "Meyve: kiraz, Ä±spanak, armut â€“ Sebze: elma, havuÃ§, patates",
+      "C": "Meyve: elma, kiraz, armut â€“ Sebze: havuÃ§, Ä±spanak, patates",
+      "D": "Meyve: elma, kiraz â€“ Sebze: havuÃ§, Ä±spanak, patates, armut"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Her besini tek tek dÃ¼ÅŸÃ¼n.",
+    "cozum_adimlari": [
+      "Elma, kiraz ve armut meyvedir; havuÃ§, Ä±spanak ve patates sebzedir.",
+      "DoÄŸru cevap C seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "HavuÃ§ sebzedir.",
+      "B": "Ispanak sebzedir.",
+      "C": "DoÄŸru.",
+      "D": "Armut meyvedir."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-029",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.13",
+    "surec_bileseni": "a",
+    "konu": "Yorumlama",
+    "alt_konu": "BakÄ±ÅŸ aÃ§Ä±sÄ±yla yorum",
+    "soru_metni": "Ã–ÄŸretmen sÄ±nÄ±fa ÅŸunu anlattÄ±: â€œKÃ¶y okulunun bahÃ§esine Ã¶ÄŸrenciler fidan dikti.â€ Cem, bu durumu â€œÃ§evre bilinciâ€ bakÄ±ÅŸ aÃ§Ä±sÄ±yla yorumlayacak.\n\nHangisi bu bakÄ±ÅŸ aÃ§Ä±sÄ±na uygun bir yorumdur?",
+    "siklar": {
+      "A": "Fidan dikmek, ileride daha temiz hava sağlayan değerli bir adımdır.",
+      "B": "Fidan dikmek, Ã¶ÄŸrencileri spor yapmaya yÃ¶nlendiren bir etkinliktir.",
+      "C": "KÃ¶y okullarÄ±nda fidan fiyatlarÄ± dÃ¼ÅŸÃ¼k olduÄŸu iÃ§in dikim yapÄ±lÄ±r.",
+      "D": "Fidanlar bÃ¼yÃ¼yÃ¼nce okul binasÄ± kÃ¼Ã§Ã¼k kalacaktÄ±r."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Ã‡evre bilincini dÃ¼ÅŸÃ¼n: doÄŸaya yararÄ± ne?",
+    "cozum_adimlari": [
+      "Ã‡evre bilinci bakÄ±ÅŸ aÃ§Ä±sÄ±, doÄŸaya katkÄ±yÄ± Ã¶ne Ã§Ä±karÄ±r.",
+      "DoÄŸru cevap A seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "DoÄŸru.",
+      "B": "Spor vurgusu Ã§evre deÄŸildir.",
+      "C": "Ekonomik bir yorumdur.",
+      "D": "Konuyla ilgisiz bir Ã§Ä±karÄ±mdÄ±r."
+    },
+    "zorluk": 3,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-030",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.14",
+    "surec_bileseni": "b",
+    "konu": "SÃ¶zlÃ¼ Ã¶zet",
+    "alt_konu": "Ã–nemli bilgileri seÃ§me",
+    "soru_metni": "Bir Ã¶ÄŸrenci ÅŸu metni sÃ¶zlÃ¼ Ã¶zetleyecek: â€œKaplumbaÄŸalar Ã§ok uzun yaÅŸayabilen canlÄ±lardÄ±r. BazÄ± tÃ¼rleri yÃ¼z yÄ±lÄ± aÅŸkÄ±n yaÅŸar. Sert kabuklarÄ± onlarÄ± dÃ¼ÅŸmanlardan korur. Tehlike anÄ±nda baÅŸÄ±nÄ± ve bacaklarÄ±nÄ± kabuÄŸunun iÃ§ine Ã§eker.â€\n\nÃ–ÄŸrencinin Ã¶zeti iÃ§in hangisi en uygundur?",
+    "siklar": {
+      "A": "Kaplumbağaların bazı türleri yüz yılı aşkın yaşar.",
+      "B": "Kaplumbağalar uzun yaşar, kabuğu sayesinde tehlikeden korunur.",
+      "C": "Kaplumbağalar tehlikeyi sezince sert kabuğunun içine saklanır.",
+      "D": "Kaplumbağalar yavaş hareket edip az enerji harcayan hayvanlardır."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Ã–zet, metnin ana dÃ¼ÅŸÃ¼ncesini kapsar.",
+    "cozum_adimlari": [
+      "DoÄŸru Ã¶zet hem uzun yaÅŸamÄ± hem kabuÄŸun korumasÄ±nÄ± iÃ§erir.",
+      "DoÄŸru cevap B seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "YalnÄ±z bir ayrÄ±ntÄ±dÄ±r.",
+      "B": "DoÄŸru.",
+      "C": "Eksik Ã¶zettir.",
+      "D": "Metinde olmayan bir bilgi iÃ§erir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-031",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.16",
+    "surec_bileseni": "a",
+    "konu": "Savunma ve Ã§Ã¼rÃ¼tme",
+    "alt_konu": "TutarsÄ±z gÃ¶rÃ¼ÅŸÃ¼ Ã§Ã¼rÃ¼tme",
+    "soru_metni": "SÄ±nÄ±f tartÄ±ÅŸmasÄ±nda Lale ÅŸunu sÃ¶yledi: â€œÃ‡ocuklar gÃ¼nde yedi saat ekran baÅŸÄ±nda olmalÄ±, Ã§Ã¼nkÃ¼ bu onlarÄ± daha zeki yapar.â€ Ali, Lale'nin gÃ¶rÃ¼ÅŸÃ¼nÃ¼ Ã§Ã¼rÃ¼tmek istiyor.\n\nAli'nin vereceÄŸi en mantÄ±klÄ± karÅŸÄ±lÄ±k hangisidir?",
+    "siklar": {
+      "A": "Lale çok konuştuğu için görüşü sağlam sayılmaz; bu yüzden ekran süresi konusunda kimse onu ciddiye almamalıdır.",
+      "B": "Ben ekranlardan hoşlanmadığım için Lale'nin görüşü yanlıştır; herkes de benim gibi düşünmelidir.",
+      "C": "Ekran süresinin zekâyı artırdığına dair kanıt yok; üstelik uzun ekran süresi uykuyu ve göz sağlığını bozabilir.",
+      "D": "Pek çok çocuk zaten ekran başında uzun vakit geçirdiği için bu görüş doğru kabul edilmelidir."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Bir gÃ¶rÃ¼ÅŸÃ¼ Ã§Ã¼rÃ¼tmek iÃ§in kanÄ±t ve gerekÃ§e gerekir.",
+    "cozum_adimlari": [
+      "Ali, gÃ¶rÃ¼ÅŸÃ¼n dayanaksÄ±z olduÄŸunu ve zararlarÄ±nÄ± belirterek mantÄ±klÄ± Ã§Ã¼rÃ¼tme yapar.",
+      "DoÄŸru cevap C seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "KiÅŸiyi hedef alÄ±r, gÃ¶rÃ¼ÅŸÃ¼ deÄŸil.",
+      "B": "KiÅŸisel tercihe dayanÄ±r.",
+      "C": "DoÄŸru.",
+      "D": "Ã‡oÄŸunluÄŸa baÅŸvurur; gerekÃ§e deÄŸildir."
+    },
+    "zorluk": 3,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-032",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.18",
+    "surec_bileseni": "c",
+    "konu": "SÃ¶zlÃ¼ eleÅŸtiri",
+    "alt_konu": "GerekÃ§eli olumsuz yargÄ±",
+    "soru_metni": "Nehir, mahalledeki parkÄ±n oyun alanÄ±nÄ± inceledi. SalÄ±ncaklarÄ±n zincirlerinin paslandÄ±ÄŸÄ±nÄ± ve bazÄ± tahtalarÄ±n kÄ±rÄ±k olduÄŸunu gÃ¶rdÃ¼. Bu durumu sÄ±nÄ±fta eleÅŸtirecek.\n\nNehir'in eleÅŸtirisi hangisi olmalÄ±dÄ±r?",
+    "siklar": {
+      "A": "Bu park çok çirkin, kimse oraya gitmemeli, belediye hemen kapatmalıdır.",
+      "B": "Parktaki oyuncakların kötü olduğuna eminim ama nedenini bilmiyorum, yine de değişsin.",
+      "C": "Bu park çok güzel ve bakımlı, görevliler harika iş çıkarmış, her şey yerli yerinde.",
+      "D": "Zincirler paslanmış, tahtalar kırık; çocuklar için tehlikeli olduğundan bakım yapılmalıdır."
+    },
+    "dogru_sik": "D",
+    "ipucu": "EleÅŸtiride yargÄ±, gÃ¶zleme dayanan gerekÃ§eyle birlikte verilir.",
+    "cozum_adimlari": [
+      "Nehir gÃ¶zlemlerini gerekÃ§e yapÄ±p olumsuz yargÄ±ya ulaÅŸmÄ±ÅŸtÄ±r.",
+      "DoÄŸru cevap D seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "GerekÃ§esiz ve abartÄ±lÄ±dÄ±r.",
+      "B": "GÃ¶zleme dayanmaz.",
+      "C": "GÃ¶zleme aykÄ±rÄ±dÄ±r.",
+      "D": "DoÄŸru."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-033",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.20",
+    "surec_bileseni": "b",
+    "konu": "DÃ¼ÅŸÃ¼nceyi geliÅŸtirme yollarÄ±",
+    "alt_konu": "SayÄ±sal verilerden yararlanma",
+    "soru_metni": "Deniz, okul mÃ¼dÃ¼rÃ¼ne okul kÃ¼tÃ¼phanesinin yararÄ±nÄ± anlatÄ±rken ÅŸÃ¶yle diyor: â€œGeÃ§en yÄ±l kÃ¼tÃ¼phaneden Ã¶dÃ¼nÃ§ alÄ±nan kitap sayÄ±sÄ±, ondan Ã¶nceki yÄ±la gÃ¶re iki katÄ±na Ã§Ä±ktÄ±.â€\n\nDeniz bu cÃ¼mlede hangi dÃ¼ÅŸÃ¼nceyi geliÅŸtirme yolunu kullanmÄ±ÅŸtÄ±r?",
+    "siklar": {
+      "A": "SayÄ±sal verilerden yararlanma",
+      "B": "Ünlü birini tanık gösterme",
+      "C": "Bir şeyi başka şeye benzetme",
+      "D": "Kavramı tanımlayarak açıklama"
+    },
+    "dogru_sik": "A",
+    "ipucu": "CÃ¼mlede kitap sayÄ±sÄ±na iliÅŸkin neyin belirtildiÄŸine bak.",
+    "cozum_adimlari": [
+      "Kitap sayÄ±sÄ±nÄ±n iki katÄ±na Ã§Ä±ktÄ±ÄŸÄ± bilgisi sayÄ±sal bir veridir.",
+      "DoÄŸru cevap A seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "DoÄŸru.",
+      "B": "Bir kiÅŸiden alÄ±ntÄ± yapÄ±lmamÄ±ÅŸtÄ±r.",
+      "C": "Bir ÅŸey baÅŸka ÅŸeye benzetilmemiÅŸtir.",
+      "D": "Bir kavram tanÄ±mlanmamÄ±ÅŸtÄ±r."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cozumleme",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-034",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.21",
+    "surec_bileseni": "a",
+    "konu": "Ã–rtÃ¼k iletiler",
+    "alt_konu": "AtasÃ¶zÃ¼nÃ¼n baÄŸlama uygun kullanÄ±mÄ±",
+    "soru_metni": "Mehmet, arkadaÅŸÄ±na â€œAyaÄŸÄ±nÄ± yorganÄ±na gÃ¶re uzatâ€ atasÃ¶zÃ¼yle bir Ã¶ÄŸÃ¼t vermek istiyor.\n\nMehmet bu atasÃ¶zÃ¼nÃ¼ hangi durumda kullanÄ±rsa baÄŸlama uygun olur?",
+    "siklar": {
+      "A": "Arkadaşı derslerine hazırlanmayı ertelerken",
+      "B": "Arkadaşı yeni bir şehre taşınma hazırlığındayken",
+      "C": "Arkadaşı kazancından fazla harcama yaparken",
+      "D": "Arkadaşı sabah geç uyanıp servisi kaçırırken"
+    },
+    "dogru_sik": "C",
+    "ipucu": "AtasÃ¶zÃ¼nÃ¼n anlamÄ±nÄ± dÃ¼ÅŸÃ¼n: yorgan neyi temsil ediyor?",
+    "cozum_adimlari": [
+      "AtasÃ¶zÃ¼, harcamalarÄ±n gelire gÃ¶re ayarlanmasÄ± gerektiÄŸini anlatÄ±r.",
+      "DoÄŸru cevap C seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ders Ã§alÄ±ÅŸmayla ilgisi yoktur.",
+      "B": "TaÅŸÄ±nmayla ilgisi yoktur.",
+      "C": "DoÄŸru.",
+      "D": "Uyanma ile ilgisi yoktur."
+    },
+    "zorluk": 2,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-035",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.22",
+    "surec_bileseni": "b",
+    "konu": "Ä°kna edici konuÅŸma",
+    "alt_konu": "Duygulara seslenme",
+    "soru_metni": "Selin, sÄ±nÄ±f arkadaÅŸlarÄ±nÄ± okuldaki geri dÃ¶nÃ¼ÅŸÃ¼m kutularÄ±nÄ± kullanmaya ikna edecek. Dinleyicilerin duygularÄ±na seslenmek istiyor.\n\nSelin hangisini sÃ¶ylemelidir?",
+    "siklar": {
+      "A": "Kutular sarı renkte olduğu için çok güzel görünüyor, bu yüzden kullanın.",
+      "B": "Atıkları ayırmazsak gelecek nesillere nasıl bir dünya bırakacağımızı düşünün.",
+      "C": "Kutuları okula yeni aldık, bu nedenle hepimizin kullanması gerekiyor.",
+      "D": "Her kutunun hacmi beş yüz litredir ve kolayca taşınabilir."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Ä°kna iÃ§in duygulara seslenen bir ifade seÃ§.",
+    "cozum_adimlari": [
+      "Gelecek kuÅŸaklara bÄ±rakÄ±lacak dÃ¼nya vurgusu duygulara seslenen bir ikna tekniÄŸidir.",
+      "DoÄŸru cevap B seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Rengin ikna gÃ¼cÃ¼ yok.",
+      "B": "DoÄŸru.",
+      "C": "GerekÃ§esiz bir emirdir.",
+      "D": "SayÄ±sal bilgidir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-036",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.23",
+    "surec_bileseni": "a",
+    "konu": "Beden dili",
+    "alt_konu": "GÃ¶z temasÄ± ve yÃ¼z ifadesi",
+    "soru_metni": "Bir Ã¶ÄŸrenci, sunumunda Ã¼zÃ¼cÃ¼ bir olayÄ± anlatÄ±yor.\n\nÄ°Ã§eriÄŸe uygun beden dili iÃ§in hangisini yapmalÄ±dÄ±r?",
+    "siklar": {
+      "A": "Gülümseyerek ellerini cebine koyup rahat durmalıdır.",
+      "B": "Gözlerini yere dikip kollarını kavuşturmalıdır.",
+      "C": "Dinleyicilere arkasını dönüp ekrana bakarak konuşmalıdır.",
+      "D": "Göz teması kurup yüz ifadesini anlattığı olaya uydurmalıdır."
+    },
+    "dogru_sik": "D",
+    "ipucu": "Beden dili, anlatÄ±lan duyguyla uyumlu olmalÄ±dÄ±r.",
+    "cozum_adimlari": [
+      "GÃ¶z temasÄ± ve olaya uygun yÃ¼z ifadesi, iÃ§erikle uyumlu beden dilidir.",
+      "DoÄŸru cevap D seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "GÃ¼lÃ¼mseme Ã¼zÃ¼cÃ¼ konuya uymaz.",
+      "B": "GÃ¶z temasÄ±nÄ± keser.",
+      "C": "Dinleyiciyi yok sayar.",
+      "D": "DoÄŸru."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR6-DK-037",
+    "sinif": 6,
+    "ders": "TÃ¼rkÃ§e",
+    "mufredat_surum": "Maarif Modeli Ortaokul TÃ¼rkÃ§e DÃ–P",
+    "kazanim_kodu": "T.K.6.24",
+    "surec_bileseni": "a",
+    "konu": "SÃ¼reÃ§ deÄŸerlendirme",
+    "alt_konu": "GeliÅŸim tedbiri",
+    "soru_metni": "Tuna, konuÅŸmasÄ±nÄ± bitirince arkadaÅŸlarÄ±ndan ÅŸu geri bildirimi aldÄ±: â€œSesin Ã§ok netti ama biraz hÄ±zlÄ± konuÅŸtuÄŸun iÃ§in bazÄ± yerleri anlayamadÄ±k.â€\n\nTuna'nÄ±n bir sonraki konuÅŸmada geliÅŸmeye aÃ§Ä±k yÃ¶nÃ¼nÃ¼ desteklemek iÃ§in alacaÄŸÄ± en uygun tedbir hangisidir?",
+    "siklar": {
+      "A": "Konuşmasını prova edip hızını ayarlaması",
+      "B": "Sesini olduğundan daha çok yükseltmesi",
+      "C": "Metni değiştirmeden daha da hızlı okuması",
+      "D": "Konuşmasını önceden hazırlanmadan sunması"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Geri bildirimin gÃ¶sterdiÄŸi zayÄ±f yÃ¶nÃ¼ dÃ¼zeltecek bir hazÄ±rlÄ±k dÃ¼ÅŸÃ¼n.",
+    "cozum_adimlari": [
+      "HÄ±zlÄ± konuÅŸma sorununu gidermek iÃ§in prova yapÄ±p tempo ayarlamak uygundur.",
+      "DoÄŸru cevap A seÃ§eneÄŸidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "DoÄŸru.",
+      "B": "Ses yÃ¼ksekliÄŸi sorun deÄŸil.",
+      "C": "HÄ±zÄ± daha da artÄ±rÄ±r.",
+      "D": "HazÄ±rlÄ±k eksikliÄŸi sorunu bÃ¼yÃ¼tÃ¼r."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  }
+]

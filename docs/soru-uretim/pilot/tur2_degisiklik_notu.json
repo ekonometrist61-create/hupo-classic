@@ -1,0 +1,102 @@
+[
+ {
+  "id": "TR4-001",
+  "eski_sorun": "Çeldiriciler (herkesz, herkeş) yapay; “herkez” TR4-007 ile tekrar.",
+  "yapilan_degisiklik": "Şıklar gerçek yaygın yanlışlarla kuruldu (yanlız, yalnış, şöför); doğru şık B; ipucu cevapsız."
+ },
+ {
+  "id": "TR4-003",
+  "eski_sorun": "Özne belirtme hâlinde (özsuyu), “özsu” zor sözcük, metin kısa.",
+  "yapilan_degisiklik": "“Özsu” yerine “çiçek özü”, dil bilgisi düzeltildi, metin ~46 sözcüğe çıkarıldı, şıklar eşit uzunlukta."
+ },
+ {
+  "id": "TR4-006",
+  "eski_sorun": "İpucu bilgi olarak hatalı (“yalnızca özel adlardan sonra”).",
+  "yapilan_degisiklik": "İpucu TDK’ye uygun yeniden yazıldı; şıklar eşit uzunlukta, doğru şık C."
+ },
+ {
+  "id": "TR4-007",
+  "eski_sorun": "Doğru şık en uzun; “herkez” tekrarı; alt_konu uyumsuz.",
+  "yapilan_degisiklik": "Üç şıkta ayrı/bitişik yazım hatası (bir kaç, yinede, herşey), olumlu kök, doğru şık D ve en uzun değil."
+ },
+ {
+  "id": "TR4-010",
+  "eski_sorun": "Kazanım ç (öncesi/sonrası tahmin) ile soru uyuşmuyordu; soru_tipi hatalı.",
+  "yapilan_degisiklik": "Kazanım kodu korunup soru ‘bundan sonra ne yapması olası’ tahminine çevrildi; soru_tipi çıkarım."
+ },
+ {
+  "id": "TR4-012",
+  "eski_sorun": "Döngüsel tanım; C’de yüzmek fiili; B ve D aynı anlam.",
+  "yapilan_degisiklik": "Kök ‘başın ön bölümü, surat’ yapıldı; dört ayrı anlam (sayı, surat, yüzme fiili, yüzey); doğru şık B."
+ },
+ {
+  "id": "TR4-014",
+  "eski_sorun": "Metinsiz, Fen bilgisi ölçüyor; ‘süt veren’ ifadesi belirsiz.",
+  "yapilan_degisiklik": "Kısa metin eklendi, kök metne ve çoğalma biçimine dayandırıldı; çözüm metne bağlandı."
+ },
+ {
+  "id": "TR4-015",
+  "eski_sorun": "Gün adları kuralı tartışmalı/eksik; ipucu cevabı veriyor; Kızılırmak bilgisi tartışmalı.",
+  "yapilan_degisiklik": "Gün adları konusu çıkarıldı; cümle ortasında yanlış büyük harf (Mavi) ile değiştirildi; Kızılırmak cümlesi tartışmasız; ipucu yeniden yazıldı."
+ },
+ {
+  "id": "TR4-017",
+  "eski_sorun": "Mavi balina ‘en büyük canlı’ bilgi hatası; ipucu yeri gösteriyor.",
+  "yapilan_degisiklik": "Metin ve şık ‘en büyük hayvan’ yapıldı; D şıkkı metinle çelişen ifade oldu; ipucu cevapsız; alt_konu güncellendi."
+ },
+ {
+  "id": "TR4-018",
+  "eski_sorun": "İpucu (‘fazladan bilgi’) cevapla aynı ifade.",
+  "yapilan_degisiklik": "İpucu cevapsız yeniden yazıldı; şıklar eşit uzunlukta, doğru şık C."
+ },
+ {
+  "id": "TR4-020",
+  "eski_sorun": "Kök ‘gerçek anlamıyla … DEĞİLDİR’ bozuk, gereksiz olumsuz.",
+  "yapilan_degisiklik": "Kök ‘mecaz anlamda kullanılmıştır’ olumlu yapıldı; soru_tipi/olumsuzluk güncellendi; ipucu cevapsız."
+ },
+ {
+  "id": "TR4-021",
+  "eski_sorun": "Konuşma çizgisi kısa çizgi (–); ipucu cevabı veriyor.",
+  "yapilan_degisiklik": "Çizgi uzun (—) yapıldı; ipucu cevapsız; çeldiriciler paralel ve eşit uzunlukta; doğru şık D."
+ },
+ {
+  "id": "TR4-022",
+  "eski_sorun": "Önce/sonra/en sonunda sırayı veriyor; soru_tipi hatalı; D zayıf.",
+  "yapilan_degisiklik": "Zorluk 2, soru_tipi sıralama; D yakın çeldirici (II–IV–III–I); ipucu cevapsız."
+ },
+ {
+  "id": "TR4-024",
+  "eski_sorun": "İpucu yeri gösteriyor; metin kısa; ‘havaların soğuması’ zayıf çeldirici.",
+  "yapilan_degisiklik": "Metin 2 cümle eklenerek uzatıldı; çeldiriciler baraj temelli akla yatkın hâle getirildi; ipucu cevapsız."
+ },
+ {
+  "id": "TR4-025",
+  "eski_sorun": "Doğru şık en uzun; ana fikir son cümlede açık; ipucu cevabı gösteriyor.",
+  "yapilan_degisiklik": "Son cümle kaldırıldı (ana fikir örtülü); şıklar eşit uzunlukta; doğru şık kısaltıldı; ipucu cevapsız."
+ },
+ {
+  "id": "TR4-026",
+  "eski_sorun": "İpucu (‘kimi… kimi…’) cevabı gösteriyor; kök ağır; zorluk 3 iddialı.",
+  "yapilan_degisiklik": "Kök ‘Bu parçaya göre … ÇIKARILAMAZ’ yapıldı; ipucu yeniden yazıldı; zorluk 2; şıklar kısaltıldı."
+ },
+ {
+  "id": "TR4-027",
+  "eski_sorun": "Noktalı virgül (4) ikinci doğru cevap riski; ipucu hatayı gösteriyor; soru_tipi hatalı.",
+  "yapilan_degisiklik": "Noktalı virgül çıkarıldı (4: virgül+çünkü); hata ‘ve’ öncesi virgül, cümle 2’ye taşındı; soru_tipi hata bulma; ipucu cevapsız."
+ },
+ {
+  "id": "TR4-028",
+  "eski_sorun": "Doğru şık en uzun ve yapısal farklı; çeldiriciler zayıf.",
+  "yapilan_degisiklik": "Şıklar paralel ‘duygu→duygu’ ve eşit uzunlukta; ‘Özlemden öfkeye’ yarı doğru çeldirici; metne alışmayı destekleyen ayrıntı eklendi."
+ },
+ {
+  "id": "TR4-029",
+  "eski_sorun": "İpucu cevabı veriyor (‘birinde eylem’); zorluk iddialı.",
+  "yapilan_degisiklik": "İpucu yöntem veren cevapsız bir yönlendirmeye çevrildi; doğru şık A."
+ },
+ {
+  "id": "TR4-030",
+  "eski_sorun": "Zorluk 3 iddialı; ‘her gün bir lira’ gerçekçi değil.",
+  "yapilan_degisiklik": "‘Harçlığının bir kısmı’ yapıldı; zorluk 2; belirsizlik yaratan atasözleri (sakla samanı, ak akçe) kullanılmadı; çeldiriciler yeniden kuruldu."
+ }
+]

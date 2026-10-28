@@ -1,0 +1,890 @@
+[
+  {
+    "id": "HB2-001",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.1.1",
+    "surec_bileseni": "",
+    "konu": "Planlı olmak",
+    "alt_konu": "Önceden hazırlık",
+    "soru_metni": "Deniz her akşam ertesi günün ders programına bakıp çantasını hazırlıyor. Deniz’in bu alışkanlığının sonucu hangisidir?",
+    "siklar": {
+      "A": "Derslerin daha kısa sürmesi",
+      "B": "Sabah telaşsız hazırlanması",
+      "C": "Oyun oynamaya vakit kalmaması",
+      "D": "Ödevlerin hiç verilmemesi"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Bir işi önceden yapmanın, o işin zamanı geldiğinde neyi değiştirdiğini düşün.",
+    "cozum_adimlari": [
+      "Deniz çantasını ve ders programını akşamdan hazırlıyor.",
+      "Sabah eşya aramak ya da yetişmeye çalışmak gerekmiyor.",
+      "Bu yüzden sabah telaşsız hazırlanabilir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Plan yapınca derslerin kısalacağı sanılır; plan işleri düzenler, derslerin süresini değiştirmez.",
+      "C": "Planlı olanın sürekli iş yapıp oyuna zaman bulamayacağı sanılır; plan zamanı dengeli kullanmayı sağlar.",
+      "D": "Plan yapmakla öğretmenin ödev vermesi arasında ilişki kurulur; ödev vermek planın sonucu değildir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-002",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.1.2",
+    "surec_bileseni": "",
+    "konu": "Etkili iletişim",
+    "alt_konu": "Arkadaşını dinleme",
+    "soru_metni": "Selin’in arkadaşı yaptığı resmi anlatıyor. Selin, arkadaşını etkili biçimde dinlemek istiyor. Selin hangisini yapmalıdır?",
+    "siklar": {
+      "A": "Kendi resmini yapmaya devam etmek",
+      "B": "Sözünü keserek kendi resmini anlatmak",
+      "C": "Başını sallayıp başka yere bakmak",
+      "D": "Ona bakıp sözünü kesmeden dinlemek"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Anlatan kişinin kendini dinlenmiş hissetmesi için dinleyenin neler yapması gerektiğini düşün.",
+    "cozum_adimlari": [
+      "Etkili dinlemek, konuşan kişiye dikkat etmektir.",
+      "Konuşanın yüzüne bakmak ve sözünü kesmemek bu dikkati gösterir.",
+      "Başka işle uğraşmak, söze karışmak ya da bakmamak dinlemeyi bozar.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Bir yandan başka işle uğraşırken de dinlenebileceği sanılır; dikkat başka yere gittiği için dinleme eksik kalır.",
+      "B": "Heyecanla kendi anlatacağını söyleme isteği çekicidir; ancak söz kesmek karşıdakini dinlememek demektir.",
+      "C": "Baş sallamanın tek başına dinlemek olduğu sanılır; konuşana bakmamak ilgisizlik gösterir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "uygulama",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-003",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.1.3",
+    "surec_bileseni": "",
+    "konu": "Arkadaşlık ilişkileri",
+    "alt_konu": "Anlaşmazlığı çözme",
+    "soru_metni": "Can ile Ece oyunun kuralını farklı biliyor ve tartışıyor. İkisinin de görüşünü dikkate alan çözüm hangisidir?",
+    "siklar": {
+      "A": "Kuralı konuşup birlikte karar vermek",
+      "B": "Daha uzun boylu olanın dediğini yapmak",
+      "C": "Oyunu bırakıp bir daha oynamamak",
+      "D": "Yüksek sesle kendi kuralını söylemek"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Çözümün, iki arkadaşın da kuralla ilgili söyleyeceği şeyi kapsaması gerekir.",
+    "cozum_adimlari": [
+      "Sorun, iki arkadaşın kuralı farklı bilmesinden çıkıyor.",
+      "İkisinin de görüşü dikkate alınırsa kural birlikte konuşularak belirlenir.",
+      "Büyük olanı dinlemek, sesi yüksek olanı seçmek ya da oyunu bırakmak bir arkadaşın görüşünü dışarıda bırakır ya da sorunu çözmez.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Boyca büyük olanın haklı olduğu sanılır; bu yol yalnız bir arkadaşın görüşünü seçer.",
+      "C": "Oyunu bırakmanın sorunu bitireceği sanılır; oysa anlaşmazlık çözülmeden kalır.",
+      "D": "Sesini yükseltenin kazanacağı sanılır; bu yol karşı tarafın görüşünü dinlemez."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-004",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.2.1",
+    "surec_bileseni": "b",
+    "konu": "Sağlıklı büyüme ve gelişme",
+    "alt_konu": "Uyku düzeni",
+    "soru_metni": "Bora okula yürüyerek gidiyor, teneffüste koşuyor, kahvaltıda süt içiyor ve her gece geç saatte yatıyor. Sabahları yorgun uyanıyor. Bora’nın yorgun uyanması hangi alışkanlığıyla ilgilidir?",
+    "siklar": {
+      "A": "Okula yürüyerek gitmesiyle",
+      "B": "Teneffüste koşmasıyla",
+      "C": "Geç saatte yatmasıyla",
+      "D": "Kahvaltıda süt içmesiyle"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Her alışkanlığı tek tek düşünüp hangisinin yorgunlukla ilgili olabileceğini ara.",
+    "cozum_adimlari": [
+      "Yürümek, koşmak ve süt içmek sağlığa yarayan alışkanlıklardır.",
+      "Vücut geceleri uyuyarak dinlenir.",
+      "Bora geç yattığı için yeterince dinlenemez ve sabah yorgun uyanır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yürümenin insanı yorduğu sanılır; yürümek sağlığa yarar ve yorgun uyanmanın nedeni değildir.",
+      "B": "Koşmanın sabaha yorgunluk bıraktığı sanılır; düzenli hareket sağlıklı büyümeyi destekler.",
+      "D": "Sütün uyku getirip yorduğu sanılır; süt büyümeye yarayan besinlerdendir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-005",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.2.2",
+    "surec_bileseni": "",
+    "konu": "Çevrim içi güvenlik",
+    "alt_konu": "Kişisel bilgiyi koruma",
+    "soru_metni": "Kaan çevrim içi bir oyun oynarken tanımadığı biri ona “Adresini yazarsan sana hediye göndereceğim.” diye yazdı. Kaan’ın yapması gereken hangisidir?",
+    "siklar": {
+      "A": "Adresi yazmayıp güvendiği bir yetişkine söylemek",
+      "B": "Sokak adını yazıp kapı numarasını saklamak",
+      "C": "Hediyeyi kabul edip okulunun adını ona yazmak",
+      "D": "Adresini yazıp hediyenin gelmesini sabırla beklemek"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Tanımadığın birine verilen bilgilerin sonradan neye yol açabileceğini düşün.",
+    "cozum_adimlari": [
+      "Adres ve okul adı kişisel bilgidir; tanımadık biriyle paylaşılmaz.",
+      "Bilginin bir kısmı da verilmez, çünkü parça bilgiler de evi ya da kişiyi bulmaya yardım eder.",
+      "Kaan bilgi vermeden durumu güvendiği bir yetişkine söylemelidir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Adresin yalnız bir kısmını vermenin güvenli olduğu sanılır; parça bilgiler de tanımadık birinin evi bulmasına yardım eder.",
+      "C": "Okul adının adres kadar önemli olmadığı sanılır; okul adı da kişisel bilgidir.",
+      "D": "Hediye sözüne kanılır; hediye vaadi tanımadık birine güvenmek için neden olmaz."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "uygulama",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-006",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.2.3",
+    "surec_bileseni": "",
+    "konu": "Trafik işaretleri",
+    "alt_konu": "Yaya geçidi levhası",
+    "soru_metni": "Mavi renkli, kare şeklinde bir levhanın içinde beyaz bir üçgen ve yürüyen bir kişi resmi vardır. Bu levha neyi gösterir?",
+    "siklar": {
+      "A": "Burada yayaların yürümesi yasaktır.",
+      "B": "Yakında bir hastane vardır.",
+      "C": "Yayalar buradan karşıya geçer.",
+      "D": "Araçlar burada park edebilir."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Levhanın rengine ve içindeki resme bak; mavi levhalar bilgi verir.",
+    "cozum_adimlari": [
+      "Mavi renkli kare levha bilgi verir; yasak bildirmez.",
+      "İçindeki yürüyen kişi resmi yayaları gösterir.",
+      "Bu levha yaya geçidini bildirir; yayalar buradan karşıya geçer.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Kişi resmi olan levhanın yasak bildirdiği sanılır; yasak levhaları kırmızı çerçevelidir, bu levha mavidir.",
+      "B": "Mavi levhaların hastane gibi yerleri gösterdiği sanılır; bu levhada yürüyen kişi resmi vardır.",
+      "D": "Mavi kare levhaların park yerini gösterdiği sanılır; park levhasında P harfi bulunur."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-007",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.2.4",
+    "surec_bileseni": "",
+    "konu": "Acil durum",
+    "alt_konu": "Acil çağrı numaraları",
+    "soru_metni": "Parkta oynayan bir çocuk düşüp kolunu kırdı. Ambulans çağırmak için Türkiye’de hangi numara aranmalıdır?",
+    "siklar": {
+      "A": "110",
+      "B": "112",
+      "C": "155",
+      "D": "156"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Her acil numaranın hangi hizmet için kullanıldığını hatırla.",
+    "cozum_adimlari": [
+      "Ambulans, sağlıkla ilgili acil durumlarda çağrılır.",
+      "Türkiye’de ambulans için acil çağrı numarası 112’dir.",
+      "110 itfaiye, 155 polis, 156 jandarma numarasıdır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "110 acil numaralardan biri olduğu için karıştırılır; bu numara itfaiye içindir.",
+      "C": "155 polis numarasıdır; kazada polisin çağrılacağı sanılır.",
+      "D": "156 jandarma numarasıdır; acil durumda jandarmanın çağrılacağı sanılır."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-008",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.2.4",
+    "surec_bileseni": "",
+    "konu": "Acil durum",
+    "alt_konu": "Acil çağrı görevlisiyle konuşma",
+    "soru_metni": "Okul bahçesinde bir çocuk düşüp kalkamadı. Mert 112’yi arayıp olayı ve okulun adresini söyledi. Mert telefonu ne zaman kapatmalıdır?",
+    "siklar": {
+      "A": "Adresi söyler söylemez",
+      "B": "Ambulansın sesini duyunca",
+      "C": "Arkadaşı ayağa kalkınca",
+      "D": "Görevli izin verince"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Çağrıyı alan görevlinin, olayı anlatan kişiden başka neye ihtiyaç duyabileceğini düşün.",
+    "cozum_adimlari": [
+      "112 görevlisi olay ve adres dışında başka sorular da sorabilir.",
+      "Bu yüzden arayan kişi hatta kalır ve soruları yanıtlar.",
+      "Telefon, görevli kapatmaya izin verince kapatılır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Önemli bilgiyi verince görevin bittiği sanılır; görevli ek soru sorabilir.",
+      "B": "Ambulansın yaklaştığını duymanın çağrıyı bitirdiği sanılır; görevli yine de bilgi isteyebilir.",
+      "C": "Arkadaşının durumunun düzelmesinin çağrıyı sonlandıracağı sanılır; çağrı görevliyle birlikte bitirilir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-009",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.3.1",
+    "surec_bileseni": "a",
+    "konu": "Ailenin önemi",
+    "alt_konu": "Ailenin karşıladığı ihtiyaçlar",
+    "soru_metni": "Ela hasta olunca ailesi onu doktora götürdü ve ilaçlarını verdi. Ailesi bu davranışla Ela’nın hangi ihtiyacını karşılamıştır?",
+    "siklar": {
+      "A": "Eğitim ihtiyacını",
+      "B": "Eğlence ihtiyacını",
+      "C": "Sağlık ihtiyacını",
+      "D": "Barınma ihtiyacını"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Ailenin yaptığı davranışın Ela’ya hangi konuda yardımcı olduğunu düşün.",
+    "cozum_adimlari": [
+      "Ela hasta olmuştur.",
+      "Ailesi onu doktora götürmüş ve ilaçlarını vermiştir.",
+      "Bu davranışlar Ela’nın sağlık ihtiyacını karşılar.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ailelerin çocuğun okul ihtiyaçlarını da karşıladığı bilinir; ancak bu örnekte okulla ilgili bir durum yoktur.",
+      "B": "Ailelerin çocuğa oyun ve eğlence sağladığı bilinir; ancak bu örnekte eğlence yoktur.",
+      "D": "Ailelerin çocuğa yaşayacak yer sağladığı bilinir; ancak bu örnek barınmayla ilgili değildir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-010",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.3.1",
+    "surec_bileseni": "a",
+    "konu": "Ailenin önemi",
+    "alt_konu": "Aile içinde destek",
+    "soru_metni": "Ahmet bir gün okuldan üzgün döndü. Ailesinden biri onu dinledi ve ona sarıldı. Bu örnek ailenin önemini hangi cümleyle gösterir?",
+    "siklar": {
+      "A": "Aile üyeleri birbirine destek olur.",
+      "B": "Aile üyeleri birbirinin yerine karar verir.",
+      "C": "Aile üyeleri aynı şeylerden hoşlanır.",
+      "D": "Aile üyeleri birbirinin ödevini yapar."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Örnekte ailesinden birinin ne yaptığına ve bunun Ahmet’e ne sağladığına bak.",
+    "cozum_adimlari": [
+      "Ahmet üzgündür.",
+      "Ailesinden biri onu dinlemiş ve ona sarılmıştır.",
+      "Bu davranış, aile üyelerinin birbirine destek olduğunu gösterir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Yakınlığın, birinin yerine karar vermek olduğu sanılır; örnekte karar verme yoktur.",
+      "C": "Aile üyelerinin hep aynı şeyleri sevdiği sanılır; örnek sevilen şeylerden değil destekten söz eder.",
+      "D": "Aile yardımının ödev yapmak olduğu sanılır; örnekte duygusal destek vardır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-011",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.3.2",
+    "surec_bileseni": "",
+    "konu": "Nezaket ve görgü kuralları",
+    "alt_konu": "Nezaket sözleri",
+    "soru_metni": "Ceren koridorda koşarken yanlışlıkla bir arkadaşına çarptı. Ceren’in söylemesi uygun olan nezaket sözü hangisidir?",
+    "siklar": {
+      "A": "Rica ederim.",
+      "B": "Teşekkür ederim.",
+      "C": "Afiyet olsun.",
+      "D": "Özür dilerim."
+    },
+    "dogru_sik": "D",
+    "ipucu": "Her nezaket sözünün hangi durumda söylendiğini düşün.",
+    "cozum_adimlari": [
+      "“Rica ederim” teşekkür edildiğinde söylenir.",
+      "“Teşekkür ederim” bir iyilik yapıldığında, “afiyet olsun” yemek sırasında söylenir.",
+      "Yanlışlıkla çarpan kişi “özür dilerim” der.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Rica ederim kibar bir söz olduğu için seçilir; ancak teşekkürden sonra söylenir.",
+      "B": "Teşekkür ederim en çok bilinen nezaket sözüdür; ancak çarpma durumuna uymaz.",
+      "C": "Afiyet olsun kibar bir söz olduğu için seçilir; ancak yemek yerken söylenir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "uygulama",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-012",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.3.3",
+    "surec_bileseni": "b",
+    "konu": "Görev ve sorumluluk",
+    "alt_konu": "Sınıf nöbet görevleri",
+    "soru_metni": "Sınıfta dört öğrencinin nöbet görevi var. Arda tahtayı siler, Bade çiçekleri sular, Cem kitapları dağıtır, Duru sınıfı süpürür. Öğretmen sınıfa girdiğinde tahta silinmiş, çiçekler sulanmış ve sınıf süpürülmüş; ancak kitaplar masada yığın hâlinde duruyor. Hangi öğrencinin görevi eksik kalmıştır?",
+    "siklar": {
+      "A": "Bade",
+      "B": "Cem",
+      "C": "Arda",
+      "D": "Duru"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Öğretmenin gördüğü her şeyi, nöbet görevleriyle tek tek eşleştir.",
+    "cozum_adimlari": [
+      "Tahta silinmiş: Arda görevini yapmıştır.",
+      "Çiçekler sulanmış: Bade görevini yapmıştır. Sınıf süpürülmüş: Duru görevini yapmıştır.",
+      "Kitaplar dağıtılmamış, masada yığın hâlinde duruyor; kitapları dağıtma görevi Cem’indir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Çiçekleri sulama görevi Bade’dedir; çiçekler sulanmış olduğu için Bade görevini yapmıştır.",
+      "C": "Tahtayı silme görevi Arda’dadır; tahta silinmiş olduğu için Arda görevini yapmıştır.",
+      "D": "Sınıfı süpürme görevi Duru’dadır; sınıf süpürülmüş olduğu için Duru görevini yapmıştır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-013",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.4.1",
+    "surec_bileseni": "",
+    "konu": "Tarihî mekân ve doğal güzellikler",
+    "alt_konu": "Tarihî mekânı ayırt etme",
+    "soru_metni": "Ayşe, yaşadığı yerdeki tarihî mekânları öğrenmek istiyor. Aşağıdakilerden hangisi tarihî bir mekândır?",
+    "siklar": {
+      "A": "Yüzlerce yıl önce yapılmış taş kale",
+      "B": "Kasabanın yeni açılan alışveriş merkezi",
+      "C": "Dağdan aşağı akan büyük şelale",
+      "D": "Milyonlarca yıldır duran kayalık dağ"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Her yerin kim tarafından ve ne zaman oluştuğunu düşün.",
+    "cozum_adimlari": [
+      "Tarihî mekân, geçmişte insanlar tarafından yapılmış ve bugüne kadar kalmış yerdir.",
+      "Alışveriş merkezi yenidir; şelale ve dağ insan yapımı değildir.",
+      "Yüzlerce yıl önce yapılmış kale hem insan yapımıdır hem de geçmişten kalmıştır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "İnsan yapımı olduğu için tarihî sanılır; ancak yenidir, geçmişten kalmamıştır.",
+      "C": "Güzel bir yer olduğu için tarihî sanılır; şelale doğal güzelliktir.",
+      "D": "Çok eski olduğu için tarihî sanılır; dağ insan yapımı değil doğal oluşumdur."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-014",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.4.2",
+    "surec_bileseni": "a",
+    "konu": "Yaşadığı yerin yönetim birimleri",
+    "alt_konu": "Mahalle yönetimi",
+    "soru_metni": "Eylül, mahallesinin yönetiminden sorumlu kişiyle görüşerek bilgi toplamak istiyor. Eylül kiminle görüşmelidir?",
+    "siklar": {
+      "A": "Okul müdürüyle",
+      "B": "Sınıf öğretmeniyle",
+      "C": "Mahalle muhtarıyla",
+      "D": "Mahalledeki eczacıyla"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Mahalleyi yöneten kişinin görev adını hatırla.",
+    "cozum_adimlari": [
+      "Mahallenin yönetiminden sorumlu kişi muhtardır.",
+      "Okul müdürü okulu, sınıf öğretmeni sınıfı yönetir.",
+      "Eczacı eczanede çalışır; mahalleyi yönetmez.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Okul müdürü bir yönetici olduğu için seçilir; ancak okulu yönetir, mahalleyi yönetmez.",
+      "B": "Öğretmenin her konuyu bildiği sanılır; mahalle yönetimi öğretmenin görevi değildir.",
+      "D": "Mahalledeki esnafın mahalleyi iyi tanıdığı için yönetici sanılır; eczacı mahalle yöneticisi değildir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-015",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.4.3",
+    "surec_bileseni": "",
+    "konu": "Mustafa Kemal Atatürk",
+    "alt_konu": "Öğrencilik yılları",
+    "soru_metni": "Mustafa Kemal Atatürk’e öğrencilik yıllarında “Kemal” adını veren kişi kimdir?",
+    "siklar": {
+      "A": "Annesi Zübeyde Hanım",
+      "B": "Babası Ali Rıza Efendi",
+      "C": "Sınıf arkadaşlarından biri",
+      "D": "Matematik öğretmeni"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Bu adın hangi ortamda ve neden verildiğini düşün.",
+    "cozum_adimlari": [
+      "Mustafa Kemal okuduğu yıllarda çalışkan bir öğrenciydi.",
+      "Matematik öğretmeni onun başarısını görerek ona “Kemal” adını verdi.",
+      "Bu ad anne ya da baba tarafından değil, okulda öğretmeni tarafından verildi.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Çocuğa adı annenin koyduğu düşünülür; ancak “Kemal” adı okulda, öğretmeni tarafından verilmiştir.",
+      "B": "Çocuğa adı babanın koyduğu düşünülür; ancak “Kemal” adı okulda, öğretmeni tarafından verilmiştir.",
+      "C": "Arkadaşların takma ad verdiği düşünülür; “Kemal” adını öğretmeni vermiştir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-016",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.4.4",
+    "surec_bileseni": "a",
+    "konu": "Millî gün ve bayramlar",
+    "alt_konu": "Çocuk bayramı",
+    "soru_metni": "Atatürk’ün dünya çocuklarına armağan ettiği millî bayram hangisidir?",
+    "siklar": {
+      "A": "19 Mayıs",
+      "B": "23 Nisan",
+      "C": "29 Ekim",
+      "D": "30 Ağustos"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Bayramların hangi olayla ilgili olduğunu düşün.",
+    "cozum_adimlari": [
+      "23 Nisan Ulusal Egemenlik ve Çocuk Bayramı’dır.",
+      "Atatürk bu bayramı dünya çocuklarına armağan etmiştir.",
+      "19 Mayıs gençlik, 29 Ekim cumhuriyet, 30 Ağustos zafer bayramıdır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "19 Mayıs da Atatürk’ün armağan ettiği bir bayram olduğu için karıştırılır; bu bayram gençliğe armağan edilmiştir.",
+      "C": "29 Ekim büyük bir millî bayram olduğu için seçilir; cumhuriyetin ilanı ile ilgilidir.",
+      "D": "30 Ağustos büyük bir millî bayram olduğu için seçilir; zaferle ilgilidir."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-017",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.4.4",
+    "surec_bileseni": "a",
+    "konu": "Millî gün ve bayramlar",
+    "alt_konu": "Cumhuriyet Bayramı",
+    "soru_metni": "Okul panosuna, Türkiye’de cumhuriyetin ilan edildiği günü anlatan bir resim asılacak. Bu resim hangi millî bayramla ilgilidir?",
+    "siklar": {
+      "A": "29 Ekim",
+      "B": "23 Nisan",
+      "C": "19 Mayıs",
+      "D": "30 Ağustos"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Her bayramın hangi önemli olayı andığını düşün.",
+    "cozum_adimlari": [
+      "Cumhuriyet 29 Ekim’de ilan edilmiştir.",
+      "23 Nisan, 19 Mayıs ve 30 Ağustos başka olayları anar.",
+      "Resim cumhuriyetin ilanını anlattığı için 29 Ekim ile ilgilidir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "23 Nisan, Millî Mücadele sırasında yaşanan bir olayı (TBMM’nin açılışını) anar; cumhuriyetten öncedir.",
+      "C": "19 Mayıs, Mustafa Kemal’in Samsun’a çıkışıyla ilgilidir; cumhuriyetin ilanından öncedir.",
+      "D": "30 Ağustos, kazanılan büyük zaferi anar; cumhuriyetin ilanından öncedir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-018",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.5.1",
+    "surec_bileseni": "b",
+    "konu": "Hava olayları ve mevsimler",
+    "alt_konu": "Mevsim sırası ve özellikleri",
+    "soru_metni": "Karların erimeye başladığı ve ağaçların çiçek açtığı mevsimden sonra gelen mevsimin özelliği hangisidir?",
+    "siklar": {
+      "A": "Yapraklar sararıp dökülür.",
+      "B": "Kar yağışları sık görülür.",
+      "C": "Havalar çok sıcak olur.",
+      "D": "Karlar erir, çiçekler açar."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Önce karların eridiği mevsimi bul, sonra mevsim sırasında onu izleyeni düşün.",
+    "cozum_adimlari": [
+      "Karların erimeye başladığı, ağaçların çiçek açtığı mevsim ilkbahardır.",
+      "İlkbahardan sonra yaz gelir.",
+      "Yazın havalar çok sıcak olur.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yaprakların dökülmesi sonbaharın özelliğidir; ilkbahardan sonra sonbahar geldiği sanılır.",
+      "B": "Kar yağışları kışın görülür; mevsimlerin sırası karıştırılır.",
+      "D": "Bu, sorudaki mevsimin değil kendisinden önceki mevsimin (ilkbaharın) özelliğidir; sorunun “sonra gelen” ifadesi atlanır."
+    },
+    "zorluk": 3,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-019",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.5.2",
+    "surec_bileseni": "",
+    "konu": "Doğadan yön bulma",
+    "alt_konu": "Güneş’e göre yön",
+    "soru_metni": "Deniz akşamüzeri okul bahçesinde, Güneş’in battığı yöne dönüyor. Deniz’in sağ eli hangi yönü gösterir?",
+    "siklar": {
+      "A": "Güney",
+      "B": "Kuzey",
+      "C": "Doğu",
+      "D": "Batı"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Güneş’in battığı yöne bakarken önünde, arkanda ve yanlarında hangi yönlerin olduğunu sırayla düşün.",
+    "cozum_adimlari": [
+      "Güneş batıda batar; Deniz batıya bakıyor, yani önü batıdır.",
+      "Arkası batının karşısındaki yön olan doğudur.",
+      "Batıya bakan birinin sağ eli kuzeyi, sol eli güneyi gösterir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Sağ elin güneyi gösterdiği sanılır; bu yön sol eldedir.",
+      "C": "Güneşin doğduğu yön olan doğu, sağ el ile karıştırılır; doğu Deniz’in arkasındadır.",
+      "D": "Deniz’in baktığı yön olan batı, sağ el ile karıştırılır; batı Deniz’in önündedir."
+    },
+    "zorluk": 3,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-020",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.5.3",
+    "surec_bileseni": "a",
+    "konu": "Afetlere karşı önlemler",
+    "alt_konu": "Güvenilir bilgi kaynağı",
+    "soru_metni": "Selin, depremde nasıl davranılması gerektiğini öğrenmek istiyor. Selin’in bilgi toplamak için kullanabileceği güvenilir kaynak hangisidir?",
+    "siklar": {
+      "A": "Arkadaşının duyduğu bir söylenti",
+      "B": "Ünlü birinin sosyal medya paylaşımı",
+      "C": "Bir filmde gördüğü deprem sahnesi",
+      "D": "Uzmanların hazırladığı kitap"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Bilgiyi kimin, hangi bilgiyle hazırladığını düşün.",
+    "cozum_adimlari": [
+      "Güvenilir kaynak, konuyu bilenlerin hazırladığı kaynaktır.",
+      "Söylenti, ünlü birinin paylaşımı ve film sahnesi uzman bilgisi değildir.",
+      "Uzmanların hazırladığı kitap güvenilir bilgi verir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Duyulan her bilginin doğru olduğu sanılır; söylentinin dayanağı yoktur.",
+      "B": "Ünlü olmanın doğru bilgi vermek anlamına geldiği sanılır; ünlü kişi konuda uzman olmayabilir.",
+      "C": "Film sahnesinin gerçeği gösterdiği sanılır; filmler gerçekçi olmayabilir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "uygulama",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-021",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.5.3",
+    "surec_bileseni": "c",
+    "konu": "Afetlere karşı önlemler",
+    "alt_konu": "Bilgiyi doğrulama",
+    "soru_metni": "Selin, depremde yapılması gerekenleri bir arkadaşından öğrendi. Bu bilginin doğru olup olmadığından emin olmak istiyor. Selin ne yapmalıdır?",
+    "siklar": {
+      "A": "Çok kişiye anlatıp beğenilmesini beklemek",
+      "B": "Aynı arkadaşına tekrar sorup aynı cevabı almak",
+      "C": "Uzman kaynaklarla karşılaştırmak",
+      "D": "En kısa söylenen bilgiyi seçmek"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Bilginin doğruluğunu, bilgiyi söyleyen kişiden bağımsız bir yolla nasıl sınayabileceğini düşün.",
+    "cozum_adimlari": [
+      "Bir bilginin doğruluğu beğenilmesine, tekrarlanmasına ya da kısa olmasına bakılarak anlaşılmaz.",
+      "Bilgi, konuyu bilen uzmanların hazırladığı kaynaklarla karşılaştırılmalıdır.",
+      "Kaynaklar aynı şeyi söylüyorsa bilgi doğrulanmış olur.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Çok kişinin beğenmesi bilginin doğru olduğunu gösterir sanılır; doğruluk beğeniyle değil kaynakla anlaşılır.",
+      "B": "Aynı kişiye tekrar sormak doğrulama sanılır; aynı kaynak yeni bir kanıt sağlamaz.",
+      "D": "Kısa ve kolay bilginin doğru olduğu sanılır; doğruluk, bilginin uzunluğuyla ilgili değildir."
+    },
+    "zorluk": 3,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-022",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.5.4",
+    "surec_bileseni": "a",
+    "konu": "Doğal kaynakları tasarruflu kullanma",
+    "alt_konu": "Su tasarrufu",
+    "soru_metni": "Aşağıdaki davranışlardan hangisi suyu tasarruflu kullanmaya örnektir?",
+    "siklar": {
+      "A": "Elleri sabunlarken musluğu kapatmak",
+      "B": "Dişleri fırçalarken suyu açık bırakmak",
+      "C": "Bahçeyi hortumla uzun süre sulamak",
+      "D": "Oyuncakları akan suyun altında yıkamak"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Su kullanılırken musluğun ne zaman gerçekten gerekli olduğunu düşün.",
+    "cozum_adimlari": [
+      "Tasarruf, aynı işi daha az su kullanarak yapmaktır.",
+      "Elleri sabunlarken su gerekmez; musluğu kapatmak suyu boşa akıtmamayı sağlar.",
+      "Diğer davranışlarda su gereğinden fazla akar.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Akan suyun dişleri daha iyi temizlediği sanılır; fırçalarken su boşuna akar.",
+      "C": "Uzun süre sulamanın bitkiye daha çok yaradığı sanılır; fazla su israf olur.",
+      "D": "Akan suyun oyuncakları daha iyi yıkadığı sanılır; kapta yıkamak daha az su harcar."
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "uygulama",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-023",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.5.4",
+    "surec_bileseni": "b",
+    "konu": "Doğal kaynakları tasarruflu kullanma",
+    "alt_konu": "Kâğıt ve ağaç",
+    "soru_metni": "Aşağıdaki davranışlardan hangisi ağaçların korunmasına yardımcı olur?",
+    "siklar": {
+      "A": "Diş fırçalarken musluğu kapatmak",
+      "B": "Odadan çıkarken lambayı söndürmek",
+      "C": "Eski kıyafetleri bağışlamak",
+      "D": "Kâğıdın boş yüzünü de kullanmak"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Her davranışın hangi doğal kaynağı koruduğunu ayrı ayrı düşün.",
+    "cozum_adimlari": [
+      "Kâğıt ağaçlardan elde edilir.",
+      "Kâğıdın boş yüzünü de kullanan kişi daha az kâğıt harcar, böylece daha az ağaç kesilir.",
+      "Diğer davranışlar su, elektrik ve kumaş gibi kaynakları korur.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Bu bir su tasarrufu davranışıdır; her tasarruf davranışının ağaçları da koruduğu sanılır.",
+      "B": "Bu bir elektrik tasarrufu davranışıdır; her tasarruf davranışının ağaçları da koruduğu sanılır.",
+      "C": "Eski eşyayı bağışlamak da tasarruf gibi göründüğü için seçilir; ancak ağaç korumayla doğrudan ilgili değildir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "HB2-024",
+    "sinif": 2,
+    "ders": "Hayat Bilgisi",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "HB.2.6.3",
+    "surec_bileseni": "",
+    "konu": "Sanat",
+    "alt_konu": "Günlük yaşamda sanat",
+    "soru_metni": "Aşağıdakilerden hangisi günlük yaşamdaki sanata örnek DEĞİLDİR?",
+    "siklar": {
+      "A": "Doğum günü şarkısı söylemek",
+      "B": "Okul bahçesinde top oynamak",
+      "C": "Sokakta çalan müzisyeni dinlemek",
+      "D": "Evin duvarına resim asmak"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Her seçeneğin müzik, resim ya da dans gibi bir sanat dalıyla ilgili olup olmadığını düşün.",
+    "cozum_adimlari": [
+      "Şarkı söylemek ve müzik dinlemek müzik sanatıyla ilgilidir.",
+      "Duvara resim asmak resim sanatıyla ilgilidir.",
+      "Top oynamak bir spor ya da oyun etkinliğidir; sanat değildir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Şarkı söylemenin sanat sayılmayabileceği düşünülür; müzik sanatın bir dalıdır.",
+      "C": "Sokakta çalınan müziğin sanat olmadığı düşünülür; müzik dinlemek sanatla karşılaşmaktır.",
+      "D": "Evde asılan resmin sanat sayılmayacağı düşünülür; resim sanat eseridir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "bilgi",
+    "olumsuzluk": true,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  }
+]

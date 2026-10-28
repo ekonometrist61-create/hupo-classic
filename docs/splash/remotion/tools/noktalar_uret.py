@@ -3,6 +3,7 @@
 Kaynak: onayli master (mobile-app/assets/hupo/uygulama/hero_splash.webp, 845x900). Noktalar master'dan ORNEKLENIR:
 konum ve renk master'dan gelir, yeni cizim yok. Sabit tohum: ayni girdi -> ayni cikti.
 Cikti: docs/splash/remotion/data/hupo_noktalar.json  {w, h, goz: [[x,y],[x,y]], n: [[x, y, r, g, b, kenar], ...]}
+       mobile-app/assets/hupo/uygulama/giris_noktalar.json  (ayni veri, n duz liste; Flutter filmi bunu okur)
 Kullanim: python -I docs/splash/remotion/tools/noktalar_uret.py
 """
 import json
@@ -51,4 +52,10 @@ veri = {"w": w, "h": h, "goz": [[303, 305], [488, 248]], "n": noktalar}
 CIKTI.parent.mkdir(parents=True, exist_ok=True)
 CIKTI.write_text(json.dumps(veri, separators=(",", ":")), encoding="utf-8")
 print(f"{len(noktalar)} nokta (kenar: {sum(n[5] for n in noktalar)}), {CIKTI.stat().st_size} bayt")
+
+# Mobil uygulama icin duz (tek boyutlu) kopya: giris_noktalar.json, [x, y, r, g, b, kenar] * N
+UYGULAMA = KOK / "mobile-app" / "assets" / "hupo" / "uygulama" / "giris_noktalar.json"
+duz = {"w": w, "h": h, "goz": veri["goz"], "n": [v for n in noktalar for v in n]}
+UYGULAMA.write_text(json.dumps(duz, separators=(",", ":")), encoding="utf-8")
+print(f"uygulama kopyasi: {UYGULAMA.stat().st_size} bayt")
 

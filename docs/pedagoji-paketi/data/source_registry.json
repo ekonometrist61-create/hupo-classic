@@ -1,0 +1,213 @@
+{
+  "as_of": "2026-10-24",
+  "sources": [
+    {
+      "id": "MEB_MAARIF_2026",
+      "title": "MEB 2026–27 geçiş kademeleri",
+      "url": "https://tymm.meb.gov.tr/taslak-cerceve-planlari/temel-egitim",
+      "authority": "resmi",
+      "purpose": "uygulama yılı kontrolü",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_PROGRAM",
+      "title": "MEB TYMM program portalı",
+      "url": "https://mufredat.meb.gov.tr/Programlar.aspx",
+      "authority": "resmi",
+      "purpose": "mevcut ve eski program karşılaştırması",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_1_4_TURKCE",
+      "title": "TYMM ilkokul Türkçe",
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ilkokul-turkce-dersi",
+      "authority": "resmi",
+      "purpose": "1–3 etkin; 4. sınıf geçiş eski program",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_5_8_TURKCE",
+      "title": "TYMM ortaokul Türkçe",
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ortaokul-turkce-dersi",
+      "authority": "resmi",
+      "purpose": "5–7 etkin; 8 geçiş eski program",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_ILK_MAT",
+      "title": "TYMM İlkokul Matematik",
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ilkokul-matematik-dersi",
+      "authority": "resmi",
+      "purpose": "müfredat",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_ORT_MAT",
+      "title": "TYMM Ortaokul Matematik",
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/ortaokul-matematik-dersi",
+      "authority": "resmi",
+      "purpose": "müfredat",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_HAYAT",
+      "title": "TYMM Hayat Bilgisi",
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/hayat-bilgisi-dersi",
+      "authority": "resmi",
+      "purpose": "1–3",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_FEN",
+      "title": "TYMM Fen Bilimleri",
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/fen-bilimleri-dersi",
+      "authority": "resmi",
+      "purpose": "3,5,6,7; 4/8 eski",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_SOSYAL",
+      "title": "TYMM Sosyal Bilgiler",
+      "url": "https://tymm.meb.gov.tr/ogretim-programlari/ders/sosyal-bilgiler-dersi",
+      "authority": "resmi",
+      "purpose": "5–7; 4 eski",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_DERS_KITAPLARI",
+      "title": "TYMM ders kitapları",
+      "url": "https://tymm.meb.gov.tr/ders-kitaplari",
+      "authority": "resmi",
+      "purpose": "kitap inceleme",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_ORNEK_SORU",
+      "title": "2024–25 yazılı örnek soru kitapçıkları",
+      "url": "https://odsgm.meb.gov.tr/www/1-donem-2-yazili-sinavlarina-iliskin-ornek-soru-kitapciklari-yayimlandi/icerik/1368",
+      "authority": "resmi",
+      "purpose": "yazılı madde anatomisi",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_2026_SENARYO",
+      "title": "2026–27 1. dönem konu-soru dağılım tabloları",
+      "url": "https://odsgm.meb.gov.tr/www/1donem-konu-soru-dagilim-tablolari-2026-2027/icerik/1724/tr",
+      "authority": "resmi",
+      "purpose": "senaryo ve ders dağılımı",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_OYSS_2026",
+      "title": "20.10.2026 OYSS açıklaması",
+      "url": "https://odsgm.meb.gov.tr/www/ortak-yazili-sinav-sistemi-uygulama-kilavuzu-yayimlandi/icerik/1748/tr",
+      "authority": "resmi",
+      "purpose": "5–7 okul yazılıları; 7 İngilizce istisna",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_2026_Q_GUIDE",
+      "title": "01.04.2026 TYMM bağlam temelli soru kılavuzu",
+      "url": "https://www.meb.gov.tr/olcme-ve-degerlendirme-sisteminde-koklu-degisiklikler-iceren-soru-yazim-kilavuzu-hazirlandi/haber/40284/tr",
+      "authority": "resmi",
+      "purpose": "özgün işlevsel bağlam",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_IOKBS_2026",
+      "title": "2026 İOKBS 5–8 kitapçıkları",
+      "url": "https://odsgm.meb.gov.tr/www/ilkogretim-ve-ortaogretim-kurumlari-bursluluk-sinavi-iokbs-2026-soru-kitapciklari-ve-cevap-anahtarlari-yayimlandi/icerik/1615",
+      "authority": "resmi",
+      "purpose": "gerçek sınav madde analizleri",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_LGS_2026",
+      "title": "2026 LGS uygulama kılavuzu",
+      "url": "https://odsgm.meb.gov.tr/meb_iys_dosyalar/2026_04/69cfb9daaf8f2557696260_LGS_Basvuru_ve_Uygulama_K%C4%B1lavuzu_2026.pdf",
+      "authority": "resmi",
+      "purpose": "8. sınıf beceri/sınav ayrımı",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_STORY_2026",
+      "title": "2026 II. hikâye yarışması şartnamesi",
+      "url": "https://www.meb.gov.tr/meb_iys_dosyalar/2026_01/11100730_Ek-_OYretmen_Yazar_Cocuk_Cicek_Acar_OYretmenler_ArasY_II._Hikaye_Yazma_YarYYmasY_Yartnamesi.pdf",
+      "authority": "resmi",
+      "purpose": "yarışmaya özgü kelime bandı; AI ile yarışmaya başvuru yasak; Hupo için yalnız uzunluk referansı",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_STORY_LIBRARY",
+      "title": "MEB hikâye örnek eser başlıkları",
+      "url": "https://ogretmenyazar.eba.gov.tr/",
+      "authority": "resmi",
+      "purpose": "pedagojik tür/konu referansı; kopyalama yok",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "MEB_2018_SOCIAL",
+      "title": "2018 Sosyal Bilgiler 4-7",
+      "url": "https://mufredat.meb.gov.tr/Dosyalar/201812103847686-SOSYAL%20B%C4%B0LG%C4%B0LER%20%C3%96%C4%9ERET%C4%B0M%20PROGRAMI%20.pdf",
+      "authority": "resmi",
+      "purpose": "4. sınıf eski program örneği",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "IES_DECODING",
+      "title": "IES 2016 temel okuma öğretimi",
+      "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/21/Published",
+      "authority": "araştırma rehberi",
+      "purpose": "erken fonolojik farkındalık ve ses-harf",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "IES_K3_COMPREHENSION",
+      "title": "IES 2010 K–3 anlama",
+      "url": "https://ies.ed.gov/ncee/WWC/PracticeGuide/14",
+      "authority": "araştırma rehberi",
+      "purpose": "anlama stratejisi, metin yapısı",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "IES_4_9",
+      "title": "IES 2022 4–9 okuma müdahaleleri",
+      "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/29",
+      "authority": "araştırma rehberi",
+      "purpose": "akıcılık, dünya-söz bilgisi, anlama izleme",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "IES_SPACING",
+      "title": "IES 2007 zamanlama/geri çağırma",
+      "url": "https://ies.ed.gov/ncee/wwc/PracticeGuide/1",
+      "authority": "araştırma rehberi",
+      "purpose": "aralıklı tekrar, geri çağırma, çalışılmış örnek",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "IES_MATH",
+      "title": "IES 2012/2018 4–8 matematik problemleri",
+      "url": "https://ies.ed.gov/ncee/WWC/PracticeGuide/16",
+      "authority": "araştırma rehberi",
+      "purpose": "temsil ve öz değerlendirme",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "TDK_2026",
+      "title": "TDK Yazım Kılavuzu 2026",
+      "url": "https://yazim.tdk.gov.tr/",
+      "authority": "resmi sözlük/yazım",
+      "purpose": "yazım/noktalama denetimi",
+      "inspect_on_each_release": true
+    },
+    {
+      "id": "TDK_SOZLUK",
+      "title": "TDK Güncel Türkçe Sözlük",
+      "url": "https://sozluk.gov.tr/",
+      "authority": "resmi sözlük/yazım",
+      "purpose": "anlam ve deyim doğrulaması",
+      "inspect_on_each_release": true
+    }
+  ]
+}

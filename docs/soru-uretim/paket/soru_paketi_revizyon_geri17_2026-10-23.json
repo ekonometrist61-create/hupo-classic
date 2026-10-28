@@ -1,0 +1,797 @@
+{
+  "surum": "1",
+  "parti": {
+    "parti_id": "soru-uretim-2026-10-23-revizyon-geri17",
+    "aciklama": "17 geri çekilen sorunun revizyonu (K-0111). Yazar: revizyon ajanı (Claude). Kör çözüm ve kalite denetimi yapılmadı; kapı ve benzerlik kontrolü yapıldı."
+  },
+  "kaynaklar": [],
+  "sorular": [
+    {
+      "soru_id": "fen5-010",
+      "sinif": 5,
+      "okul": "ortaokul",
+      "ders": "Fen Bilimleri",
+      "konu": "Canlılar ve hayat",
+      "alt_konu": "Hücreden sisteme düzenlenme",
+      "zorluk": 2,
+      "soru_metni": "Derya, akciğerle ilgili şu kavramları not etti: solunum sistemi, alveol hücresi, akciğer dokusu, akciğer. Bu kavramları en küçük yapıdan en büyük yapıya doğru dizmek istiyor. Buna göre doğru dizilim hangisidir?",
+      "siklar": {
+        "A": "Alveol hücresi, akciğer dokusu, akciğer, solunum sistemi",
+        "B": "Akciğer dokusu, alveol hücresi, akciğer, solunum sistemi",
+        "C": "Alveol hücresi, akciğer dokusu, solunum sistemi, akciğer",
+        "D": "Akciğer, akciğer dokusu, alveol hücresi, solunum sistemi"
+      },
+      "dogru_sik": "A",
+      "cozum_adimlari": [
+        "En küçük yapı, benzer işi yapan hücrelerdir: alveol hücresi.",
+        "Benzer hücreler bir araya gelerek dokuyu oluşturur: akciğer dokusu.",
+        "Dokular bir araya gelerek organı oluşturur: akciğer.",
+        "Organlar birlikte çalışarak sistemi oluşturur: solunum sistemi.",
+        "Doğru cevap A seçeneğidir."
+      ],
+      "ipuclari": [
+        "En küçük yapıdan başlayıp her adımda bir üst düzeydeki yapıya geç."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğru.",
+        "B": "Doku ile hücrenin yerini değiştiren öğrenci için çekici.",
+        "C": "Organ ile sistemin sırasını karıştıran öğrenci için çekici.",
+        "D": "Sıralamayı büyükten küçüğe başlatan öğrenci için çekici."
+      },
+      "kazanim_kodu": "FB.5.3.2",
+      "kazanim_metni": "Hücre-doku-organ-sistem-organizma kavramlarını yapılandırabilme | a) Hücre-doku-organ-sistem-organizma kavramlarına ilişkin hiyerarşik ilişkileri or - | b) Hücre-doku-organ-sistem-organizma kavramlarına ilişkin elde ettiği bilgileri",
+      "unite": null,
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "hb2-005",
+      "sinif": 2,
+      "okul": "ilkokul",
+      "ders": "Hayat Bilgisi",
+      "konu": "Çevrim içi güvenlik",
+      "alt_konu": "Kişisel bilgiyi koruma",
+      "zorluk": 2,
+      "soru_metni": "Defne bir sohbet uygulamasında hiç tanımadığı biriyle yazışıyor. Karşısındaki kişi, Defne’nin evinin bulunduğu sokağı ve okulunun adını öğrenmek istiyor. Defne ne yapmalıdır?",
+      "siklar": {
+        "A": "Bu bilgileri vermeyip durumu ailesine haber vermek",
+        "B": "Okulunun adını yazıp yeni bir arkadaş edinmek",
+        "C": "Sokağın adını yazıp karşısındakinin kendisine yardım etmek istediğini düşünmek",
+        "D": "Sohbeti sürdürüp bilgileri birkaç parça hâlinde paylaşmak"
+      },
+      "dogru_sik": "A",
+      "cozum_adimlari": [
+        "Evin bulunduğu sokak ve okulun adı kişisel bilgidir; tanımadık biriyle paylaşılmaz.",
+        "Parça parça verilen bilgiler de birleştirilerek kişinin nerede olduğu bulunabilir.",
+        "Defne bilgi vermeden durumu güvendiği bir yetişkine anlatmalıdır.",
+        "Doğru cevap A seçeneğidir."
+      ],
+      "ipuclari": [
+        "Tanımadığın biri kişisel bilgi isterse ne yapman gerektiğini düşün."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğru.",
+        "B": "Yeni arkadaş edinmek isteyen öğrenci için çekici.",
+        "C": "Karşı tarafın iyi niyetli olduğunu varsayan öğrenci için çekici.",
+        "D": "Bilgiyi parça parça vermenin tehlikeli olmadığını sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "HB.2.2.2",
+      "kazanim_metni": "Çevrim içi ortamlarda kişisel güvenliğini sağlayabilme",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "sos4-g1-010",
+      "sinif": 4,
+      "okul": "ilkokul",
+      "ders": "Sosyal Bilgiler",
+      "konu": "Üretim, Dağıtım ve Tüketim",
+      "alt_konu": "Üretim, Dağıtım ve Tüketim",
+      "zorluk": 3,
+      "soru_metni": "Bir sütün sofralarımıza gelene kadar geçirdiği aşamalar şunlardır:\nI. Market çalışanları sütü raflara dizer; aileler satın alıp evde tüketir.\nII. Çiftlikte inekler sağılır ve elde edilen süt soğutulmuş tanklarda toplanır.\nIII. Süt fabrikasında süt temizlenip ısıl işlemden geçirilerek paketlenir.\nIV. Kamyonlar paketlenmiş sütü marketlere taşır.\nBu aşamaların “üretimden tüketime” doğru mantıksal sıralaması aşağıdakilerden hangisidir?",
+      "siklar": {
+        "A": "I – II – III – IV",
+        "B": "II – IV – III – I",
+        "C": "II – III – IV – I",
+        "D": "III – II – IV – I"
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Süreç hammaddenin elde edilmesiyle başlar: çiftlikte sağım ve toplama (II) ilk aşamadır.",
+        "Toplanan süt fabrikada işlenir ve paketlenir (III).",
+        "Paketlenmiş süt kamyonlarla marketlere taşınır (IV).",
+        "Son aşamada aileler sütü satın alıp tüketir (I).",
+        "Doğru sıralama II – III – IV – I şeklindedir.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Bir ürün önce üretilir, sonra dağıtılır ve en son tüketilir."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Tüketimi üretimden önce koyan öğrenci için çekici.",
+        "B": "Dağıtımı işlemeden önce yapan öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "İşlemeyi üretimden önce koyan öğrenci için çekici."
+      },
+      "kazanim_kodu": "SB.4.5.3",
+      "kazanim_metni": "Bir ürünün üretim, dağıtım ve tüketim süreçlerini çözümleyebilme | a) Bir ürünün geçirdiği yolculuğun süreçlerini belirler. | b) Ürünlerin üretim, dağıtım ve tüketim süreçleri arasındaki ilişkileri belirler.",
+      "unite": null,
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "gemini-3.8-flash",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "soru_id": "tr4-022",
+      "sinif": 4,
+      "okul": "ilkokul",
+      "ders": "Türkçe",
+      "konu": "Mantıksal sıra",
+      "alt_konu": "Olayları sıraya koyma",
+      "zorluk": 2,
+      "soru_metni": "Aşağıdaki cümleler karışık verilmiştir.\nI. Hamuru yağlanmış kalıba dökerek fırına verdi.\nII. Önce bir kâsede yumurta ile şekeri iyice çırptı.\nIII. Pişen keki soğuduktan sonra üzerine çilek dilimlerini dizdi.\nIV. Ardından una kabartma tozu ekleyerek hamuru karıştırdı.\nBu cümleler anlamlı bir paragraf oluşturacak biçimde sıralanırsa doğru sıralama hangisi olur?",
+      "siklar": {
+        "A": "II – I – IV – III",
+        "B": "IV – II – I – III",
+        "C": "II – IV – III – I",
+        "D": "II – IV – I – III"
+      },
+      "dogru_sik": "D",
+      "cozum_adimlari": [
+        "Önce yumurta ve şeker çırpılır (II).",
+        "Ardından una kabartma tozu eklenip hamur karıştırılır (IV).",
+        "Hamur kalıba dökülüp fırına verilir (I).",
+        "Pişip soğuyan keke en son çilek dilimleri dizilir (III).",
+        "Doğru sıralama II – IV – I – III şeklindedir.",
+        "Doğru cevap D seçeneğidir."
+      ],
+      "ipuclari": [
+        "Hamurun hazırlanması, kalıba dökülmesi ve pişmesi kendi arasında bir sıra izler."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Kalıba dökme adımını un eklemeden önce yerleştiren öğrenci için çekici.",
+        "B": "Un eklemeyi en başa koyan öğrenci için çekici.",
+        "C": "Çileklerin pişmiş keke dizilmesini fırına verme adımından önce koyan öğrenci için çekici.",
+        "D": "Doğru."
+      },
+      "kazanim_kodu": "T.Y.4.2",
+      "kazanim_metni": "Yazılarında içerik oluşturabilme",
+      "unite": "8. DEMOKRATİK YAŞAM",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "soru_id": "fen5-024",
+      "sinif": 5,
+      "okul": "ortaokul",
+      "ders": "Fen Bilimleri",
+      "konu": "Elektrik",
+      "alt_konu": "Pil ve ampul sayısının parlaklığa etkisi",
+      "zorluk": 3,
+      "soru_metni": "Selin, özdeş bir pil ile kurduğu devrede ampulleri seri bağlayarak ampul sayısını 1’den 2’ye çıkarıyor. Her seferinde bir ampulün parlaklığını gözlemliyor. Bu deneyde bağımlı değişken hangisidir?",
+      "siklar": {
+        "A": "Devreye bağlanan ampul sayısı",
+        "B": "Ampulün parlaklığı",
+        "C": "Devredeki pilin özdeş olup olmaması",
+        "D": "Devrede kullanılan telin uzunluğu"
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Deneyde bilerek değiştirilen ampul sayısı bağımsız değişkendir.",
+        "Değişen ampul sayısına bağlı olarak gözlenen özellik, ampulün parlaklığıdır: bağımlı değişken budur.",
+        "Pilin özdeş olması ve devre düzeninin değiştirilmemesi sabit tutulan (kontrol edilen) değişkenlerdir.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Deneyde bilerek değiştirilen değişken bağımsızdır; sonucu gözlenen değişken bağımlıdır."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Deneyde bilerek değiştirilen değişkeni bağımlı sanan öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Sabit tutulması gereken pil özelliğini bağımlı değişken sanan öğrenci için çekici.",
+        "D": "Devrenin yapısındaki her ayrıntıyı bağımlı değişken sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "FB.5.6.3",
+      "kazanim_metni": "Bir elektrik devresindeki ampul parlaklığını etkileyen değişkenlerin neler | a) Elektrik devrelerindeki ampul parlaklığını etkileyen değişkenleri tanımlar. | b) Pil ve ampul sayısını değiştirerek ampul parlaklığındaki değişimi neden-sonuç iliş- | c) Ampul parlaklığındaki bağımlı, bağımsız ve kontrol edilen değişkenleri belirler. | ç) Bağımsız değişken olarak pil sayısı ve ampul sayısını kontrol eder. | d) Farklı elektrik devreleri üzerinden ampul parlaklığının pil sayısı ve ampul sayısına",
+      "unite": null,
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "sos5-030",
+      "sinif": 5,
+      "okul": "ortaokul",
+      "ders": "Sosyal Bilgiler",
+      "konu": "Bilim, teknoloji ve toplum",
+      "alt_konu": "Bilinçli teknoloji kullanımı",
+      "zorluk": 2,
+      "soru_metni": "Bir araştırmada, geç saatlere kadar tablet kullanan öğrencilerin sabah derslerde daha yorgun oldukları bulunmuştur. Bu bulguya dayanarak aşağıdakilerden hangisi söylenebilir?",
+      "siklar": {
+        "A": "Araştırma, tabletin tüm öğrencilerin ders başarısını artırdığını göstermektedir.",
+        "B": "Geç saatte uzun süre tablet kullanmak, uyku düzenini olumsuz etkileyebilir.",
+        "C": "Öğrenciler sabah derslerde yorgun olduklarından tabletleri okulda kullanmalıdır.",
+        "D": "Tablet kullanımı ile sabahki yorgunluk arasında hiçbir ilişki bulunmamaktadır."
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Araştırma, geç saatte tablet kullanan öğrencilerin sabah daha yorgun olduğunu gösteriyor.",
+        "Bu sonuçtan, uzun süreli geç saat kullanımının uyku düzenini etkileyebileceği çıkarılır.",
+        "A, bulgunun ötesine geçer; C desteklenmeyen bir öneri sunar; D bulguyla çelişir.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Bulgunun neden-sonuç ilişkisini kanıtın gösterdiği ölçüde yorumla."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Araştırmanın bulgusunu tüm öğrencilere genelleyen öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Yorgunluk nedenini ders kararına dönüştüren öğrenci için çekici.",
+        "D": "Bulgu ile sonuç arasındaki bağı tamamen reddeden öğrenci için çekici."
+      },
+      "kazanim_kodu": "SB.5.6.2",
+      "kazanim_metni": "Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin oluşturduğu ürünü pay- | a) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin kanıtlara dayalı çıkarımda | b)    Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin kendi çıkarımlarına dayalı | c) Teknolojik ürünlerin bilinçli kullanımının önemine ilişkin oluşturulan ürünleri paylaşır. | a) Dâhil olduğu gruplar ve bu gruplardaki rollerinin zaman içerisinde değişebileceği- | b) Farklı grupları ve bu gruplardaki rolleri  listeler. | c) Farklı grupları ve bu gruplardaki rolleri karşılaştırır. | ç)   Gelecekte dâhil olabileceği gruplar ve roller ile ilgili önermede bulunur. | d) Dâhil olduğu grupların ve bu gruplardaki rollerinin zaman içinde değişebileceğini | a)   Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisini inceler. | b)   Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etkisine ilişkin edindiği | c)   Kültürel bağlarımızın ve millî değerlerimizin toplumsal birliğe etki",
+      "unite": null,
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "sos5-025",
+      "sinif": 5,
+      "okul": "ortaokul",
+      "ders": "Sosyal Bilgiler",
+      "konu": "Üretim, dağıtım, tüketim",
+      "alt_konu": "Kaynakları verimli kullanma",
+      "zorluk": 3,
+      "soru_metni": "Bir mahallede parkların sulanması için yağmur suyunu depolayan bir sistem kurulmuştur. Bu sistem sayesinde parklarda şebekeden alınan su miktarı belirgin biçimde azalmıştır. Bu değişikliğin doğaya ve insanlara etkisi hakkında aşağıdakilerden hangisi söylenebilir?",
+      "siklar": {
+        "A": "Yağmur suyunun depolanması, parkların bitki örtüsünü tamamen kurutur ve toprak erozyonunu artırır.",
+        "B": "Su kaynakları daha uzun süre korunur ve su ihtiyacı daha kolay karşılanır.",
+        "C": "Parkların sulanmasında su kullanımı arttığı için kaynaklar daha hızlı tükenir.",
+        "D": "Yağmur suyu sisteminin kurulması, kent halkını su tasarrufu yapmaya mecbur bırakarak yaşam kalitesini düşürür."
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Şebekeden daha az su alınması, mevcut su kaynaklarının daha uzun süre yetmesini sağlar.",
+        "Kaynakların korunması, insanların su ihtiyacının daha kolay karşılanmasına katkı sağlar.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Bir kaynağın daha az harcanması, o kaynağın doğaya ve insanlara etkisini düşün."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğal bir sürecin tamamen durduğunu varsayan öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Sistem kurulunca su kullanımının arttığını sanan öğrenci için çekici.",
+        "D": "Tasarrufun insanların yaşam düzeyini düşürdüğünü düşünen öğrenci için çekici."
+      },
+      "kazanim_kodu": "SB.5.5.1",
+      "kazanim_metni": "Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini yorumlaya- | a) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini farklı kaynaklar | b) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkilerine ilişkin bilgileri | c) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini nesnel, doğru",
+      "unite": null,
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "sos5-e-018",
+      "sinif": 5,
+      "okul": "ortaokul",
+      "ders": "Sosyal Bilgiler",
+      "konu": "Üretim, dağıtım, tüketim",
+      "alt_konu": "Kaynakları verimli kullanma",
+      "zorluk": 2,
+      "soru_metni": "Bir okulda öğrenciler kullanılmış kâğıtları ayrı bir kutuda toplayıp geri dönüşüm firmasına verdi. Okul, bu sayede yeni kâğıt satın alma miktarını yarıya indirdi. Bu uygulamanın sonuçları arasında aşağıdakilerden hangisi yer alır?",
+      "siklar": {
+        "A": "Yeni kâğıt üretiminde enerji kullanımı artar ve okulun kâğıt gideri yükselir.",
+        "B": "Orman alanları küçülür ve okulun kâğıt gideri değişmeden kalır.",
+        "C": "Ağaç kesimi azalır ve okul, kâğıt için yaptığı harcamayı düşürür.",
+        "D": "Atık miktarı artar ve çevreyi temizlemek için okulun gideri yükselir."
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Atık kâğıt geri dönüşüme gidince yeni kâğıt üretimi için ağaç ihtiyacı azalır.",
+        "Okul yeni kâğıt alımını azalttığı için kâğıt giderleri düşer.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Geri dönüşümün doğal kaynaklara ve okulun giderlerine etkisini birlikte düşün."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Geri dönüşümün üretimde enerji tüketimini artırdığını sanan öğrenci için çekici.",
+        "B": "Ağaç kesiminin azalmasının ormanları değiştirmediğini düşünen öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Toplanan atığın miktarını kullanılan kâğıtla karıştıran öğrenci için çekici."
+      },
+      "kazanim_kodu": "SB.5.5.1",
+      "kazanim_metni": "Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini yorumlaya- | a) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini farklı kaynaklar | b) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkilerine ilişkin bilgileri | c) Kaynakları verimli kullanmanın doğa ve insanlar üzerindeki etkisini nesnel, doğru",
+      "unite": null,
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "fen6-026",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Fen Bilimleri",
+      "konu": "Elektrik",
+      "alt_konu": "Ampul parlaklığını etkileyen değişkenler",
+      "zorluk": 3,
+      "soru_metni": "Mert, aynı özellikteki ampul ve pillerle üç farklı bağlantı yapıyor. 1. bağlantıda bir pil ve bir ampul var. 2. bağlantıda iki pil art arda bağlanmış, bir ampul kullanılmış. 3. bağlantıda iki pil art arda bağlanmış, iki ampul de art arda bağlanmış. 2. bağlantıdaki ampul 1. bağlantıdakinden daha parlak yanıyor; 3. bağlantıdaki ampuller ise 1. bağlantıdaki ampulle aynı parlaklıkta yanıyor. Bu gözlemlere göre hangi sonuca ulaşılır?",
+      "siklar": {
+        "A": "Pil sayısı artınca parlaklık azalır, ampul sayısı artınca parlaklık artar.",
+        "B": "Pil sayısı ve ampul sayısı, parlaklığı aynı yönde etkiler.",
+        "C": "Pil sayısı artınca parlaklık artar; seri bağlı ampul sayısı artınca ampuller daha sönük yanar.",
+        "D": "Parlaklık yalnızca ampul sayısına bağlıdır; pil sayısının parlaklık üzerinde etkisi yoktur."
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "1. ve 2. bağlantı karşılaştırılırsa yalnızca pil sayısı değişmiş ve ampul daha parlak yanmıştır.",
+        "2. ve 3. bağlantı karşılaştırılırsa ampul sayısı artmış ve ampuller daha sönük yanmıştır.",
+        "Buna göre pil sayısı arttıkça parlaklık artar; seri ampul sayısı arttıkça her ampul daha sönük yanar.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Her karşılaştırmada yalnızca bir değişkenin değiştiğine dikkat et."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Pil ile ampul sayısının etkisini ters yönde düşünen öğrenci için çekici.",
+        "B": "İki değişkenin de parlaklığı aynı yönde artırdığını sanan öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Pil sayısının yalnızca bağlantı biçimini değiştirdiğini düşünen öğrenci için çekici."
+      },
+      "kazanim_kodu": "FB.6.6.2",
+      "kazanim_metni": "Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri | a) Elektrik devresindeki ampulün parlaklığının bağlı olduğu değişkenleri belirleyebi- | b) Deney ile ilgili ölçme ve veri analizi yapar.",
+      "unite": null,
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "mat6-030",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Matematik",
+      "konu": "Çember",
+      "alt_konu": "Yay uzunluğundan çap bulma",
+      "zorluk": 3,
+      "soru_metni": "Dairesel bir masa örtüsünün kenarında ayrılan bir parça, merkezde 72°’lik bir açı oluşturuyor. Bu parçanın uzunluğu 12 cm’dir. π yerine 3 alındığına göre masa örtüsünün çapı kaç santimetredir?",
+      "siklar": {
+        "A": "10",
+        "B": "20",
+        "C": "30",
+        "D": "60"
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "72° tam çemberin 360 ÷ 72 = 5’te biridir.",
+        "Çemberin uzunluğu 5 × 12 = 60 cm’dir.",
+        "Çemberin uzunluğu = π × çap olduğundan çap = 60 ÷ 3 = 20 cm’dir.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Önce çemberin tamamının uzunluğunu bul, sonra çapa geç."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "π yerine 6 kullanan öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Çevreyi 2’ye bölüp çap olarak alan öğrenci için çekici.",
+        "D": "Bulunan çevreyi çap sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "MAT.6.4.6",
+      "kazanim_metni": "Çemberde merkez açının ölçüsü ile gördüğü yayın uzunluğu arasındaki ilişki - | a) Çemberde farklı ölçülere sahip merkez açıların gördüğü yayların uzunlukları - | b) Merkez açıların ölçüleri ile gördükleri yayların uzunlukları arasındaki ilişkiye | c) Merkez açının ölçüsü ile gördüğü yayın uzunluğu arasındaki ilişkiye dair ge -",
+      "unite": null,
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "mat6-026",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Matematik",
+      "konu": "Çember",
+      "alt_konu": "Merkez açı ve yay uzunluğu",
+      "zorluk": 2,
+      "soru_metni": "Dairesel bir havuzun kenarında 90°’lik merkez açıyla ayrılan bölümün uzunluğu 15 m’dir. Havuzun çevresi kaç metredir?",
+      "siklar": {
+        "A": "30",
+        "B": "45",
+        "C": "90",
+        "D": "60"
+      },
+      "dogru_sik": "D",
+      "cozum_adimlari": [
+        "Tam çemberin merkez açısı 360°’dir.",
+        "90° tam çemberin 360 ÷ 90 = 4’te biridir.",
+        "Bu bölüm 15 m olduğundan çevre 4 × 15 = 60 m’dir.",
+        "Doğru cevap D seçeneğidir."
+      ],
+      "ipuclari": [
+        "Önce 90°’nin tam çemberin kaçta kaçı olduğunu bul."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Bölümün iki katını alan öğrenci için çekici.",
+        "B": "Bölümü üç kez alıp tam turu bulan öğrenci için çekici.",
+        "C": "Merkez açıyı uzunluk sanan öğrenci için çekici.",
+        "D": "Doğru."
+      },
+      "kazanim_kodu": "MAT.6.4.6",
+      "kazanim_metni": "Çemberde merkez açının ölçüsü ile gördüğü yayın uzunluğu arasındaki ilişki - | a) Çemberde farklı ölçülere sahip merkez açıların gördüğü yayların uzunlukları - | b) Merkez açıların ölçüleri ile gördükleri yayların uzunlukları arasındaki ilişkiye | c) Merkez açının ölçüsü ile gördüğü yayın uzunluğu arasındaki ilişkiye dair ge -",
+      "unite": null,
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "tr6-o-012",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "konu": "Anahtar kelimeler",
+      "alt_konu": "Metnin içeriğini yansıtan sözcükler",
+      "zorluk": 1,
+      "soru_metni": "Musluk açıkken diş fırçalayan birinin birkaç dakikada onlarca litre su harcayabildiği bilinmektedir. Oysa su bardağı kullanmak bu israfın büyük bölümünü önler. Tatlı su kaynakları sınırlı olduğu için günlük hayatta suyu tasarruflu kullanmak herkesin sorumluluğundadır.\n\nBu metnin anahtar kelimeleri aşağıdakilerden hangisidir?",
+      "siklar": {
+        "A": "diş, bardak, mutfak",
+        "B": "musluk, dakika, litre",
+        "C": "sağlık, banyo, temizlik",
+        "D": "israf, tatlı su, tasarruf"
+      },
+      "dogru_sik": "D",
+      "cozum_adimlari": [
+        "Metin, suyun israfını ve tatlı su kaynaklarının sınırlı olmasını anlatır.",
+        "Anahtar kelimeler metnin ana fikrini taşıyan sözcüklerdir: israf, tatlı su ve tasarruf.",
+        "Musluk ve dakika gibi sözcükler metinde geçer ama ana fikri taşımaz.",
+        "Doğru cevap D seçeneğidir."
+      ],
+      "ipuclari": [
+        "Metinde sık geçen sözcüklerle, metnin ana fikrini taşıyan sözcükleri ayır."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Metnin ayrıntılarını anlatan sözcükleri seçen öğrenci için çekici.",
+        "B": "Metinde sık geçen somut sözcükleri anahtar sanan öğrenci için çekici.",
+        "C": "Metnin konusuyla ilgisi olmayan çağrışımları seçen öğrenci için çekici.",
+        "D": "Doğru."
+      },
+      "kazanim_kodu": "T.O.6.15",
+      "kazanim_metni": "Metnin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme | a) Metnin içeriğini yansıtan anahtar kelimeleri belirler. | b) Anahtar kelimelerin metinle ilişkisini ortaya koyar.",
+      "unite": "OKUMA",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "tr6-e15-001",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "konu": "Dinleme",
+      "alt_konu": "Başlık ve ilk cümleden içerik tahmini",
+      "zorluk": 1,
+      "soru_metni": "Öğretmen, bir metni okumadan önce metnin başlığını ve ilk cümlesini okur.\nBaşlık: ‘Arıların Dansı’\nİlk cümle: ‘Bir arı, güzel kokulu çiçeklerle dolu bir bahçe bulduğunda kovana döner ve havada kendine özgü hareketler yapar.’\n\nBaşlığa ve ilk cümleye göre metnin ilerleyen bölümlerinde hangi konunun anlatılması en makuldür?",
+      "siklar": {
+        "A": "Arıların kışı kovanda nasıl geçirdiği ve neyle beslendiği",
+        "B": "Bal yapımında kullanılan arıcılık araçlarının tanıtılması",
+        "C": "Arıların çiçeğin yerini hareketlerle diğer arılara bildirmesi",
+        "D": "Çiçeklerin mevsime göre renk değiştirmesinin nedenleri"
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Başlıkta ‘Arıların Dansı’ geçtiği için metin arıların davranışını anlatacaktır.",
+        "İlk cümlede arı çiçek bulunca kovana dönüp havada hareket yapıyor.",
+        "Bu hareketlerin çiçeğin yerini diğer arılara bildirmek için olduğu tahmin edilir.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Başlığı ve ilk cümledeki arının davranışını birlikte düşün."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Başlıkta yalnızca arıların yaşam döngüsünü gören öğrenci için çekici.",
+        "B": "Metnin adını bir ayrıntıya indirgeyen öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "İlk cümledeki çiçek sözcüğünü ana konu sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.6.4",
+      "kazanim_metni": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme",
+      "unite": null,
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "tr6-dk-030",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "konu": "Sözlü özet",
+      "alt_konu": "Önemli bilgileri seçme",
+      "zorluk": 2,
+      "soru_metni": "Leylekler, kış mevsiminde sıcak bölgelere göç eden kuşlardır. Göç yolculuğu için kuvvetli kanatlarını ve uzun süre uçabilen vücutlarını kullanırlar. Soğuk havalarda yiyecek bulmak zorlaşır; bu yüzden leylekler sıcak ülkelere gider.\n\nBu metinde leyleklerin göç etmesinin nedenini açıklayan bilgi hangisidir?",
+      "siklar": {
+        "A": "Leylekler, kış mevsiminde sıcak bölgelere göç eden kuşlardır.",
+        "B": "Soğuk havalarda yiyecek bulmanın zorlaşması, leylekleri sıcak bölgelere göçe yöneltir.",
+        "C": "Leylekler, uzun uçuşlar için kuvvetli kanatlara sahip oldukları için göç eder.",
+        "D": "Sıcak bölgelerde yaşayan kuşlar, leylekler gibi hiçbir zaman göç etmez."
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Metinde göçün nedeni olarak, soğuk havalarda yiyecek bulmanın zorlaşması verilmiştir.",
+        "Kanatların ve uçuş dayanıklılığının göçün aracı olduğu, nedeni olmadığı anlatılır.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Metinde ‘bu yüzden’ gibi neden-sonuç bağlayıcılarının yanındaki bilgiye bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Leyleğin tanımını neden sanan öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Göçün aracını nedenle karıştıran öğrenci için çekici.",
+        "D": "Kuşların göç etmeme durumunu neden gibi sunan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.6.14",
+      "kazanim_metni": "Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme | a) Metin yapısından hareketle önemli bilgileri belirler. | b) Bilgiler arasındaki ilişkiyi ortaya koyar.",
+      "unite": "KONUŞMA",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "tr6-o-018",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "konu": "Özetleme",
+      "alt_konu": "Önemli bilgilerle özet kurma",
+      "zorluk": 2,
+      "soru_metni": "Kaplumbağalar uzun ömürlü hayvanlardandır. Bazı türler yüz yılı aşkın yaşar. Sert kabukları onları düşmanlarından korur. Tehlike anında başlarını ve bacaklarını kabuğun içine çeker. Ne yazık ki kirlenen denizler yüzünden birçok deniz kaplumbağası türü tehlike altındadır.\n\nBu metinde yer alan önemli bilgilerden hangisi, kaplumbağaların düşmanlarından nasıl korunduğunu açıklar?",
+      "siklar": {
+        "A": "Kaplumbağalar uzun ömürlü hayvanlardır.",
+        "B": "Bazı deniz kaplumbağası türleri kirlenen denizlerden etkilenmektedir.",
+        "C": "Sert kabuk ve içeri çekilme, onları düşmanlarından korur.",
+        "D": "Kaplumbağalar sürüngenlerin en büyük türüdür."
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Metinde korunma yolu olarak sert kabuk ve tehlike anında başın ile bacakların içeri çekilmesi anlatılır.",
+        "A uzun ömürle, B deniz kirliliğiyle ilgilidir; korunmayla ilgili değildir.",
+        "D metinde geçmeyen bir bilgidir.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Soru korunma yolunu soruyor; metinde korunmayı anlatan cümleye bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Uzun ömürlülüğü korunma yolu sanan öğrenci için çekici.",
+        "B": "Denizlerin kirlenmesini korunma yolu sanan öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Sürüngen olma bilgisini korunma ile karıştıran öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.6.14",
+      "kazanim_metni": "Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme | a) Metin yapısından hareketle önemli bilgileri belirler. | b) Bilgiler arasındaki ilişkiyi ortaya koyar.",
+      "unite": "OKUMA",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "tr6-y-012",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "konu": "Yazma",
+      "alt_konu": "Gerekçeli eleştiri yazma",
+      "zorluk": 2,
+      "soru_metni": "Selim, okul servisinin sabahları düzenli gelmediğini belirten bir eleştiri yazısı hazırlıyor. Eleştirisini sadece beğenmediğini söyleyerek değil, bir sorunu nedeni ve sonucuyla bağlayarak geliştirmek istiyor.\n\nBu amaca uygun olarak Selim yazısında hangi cümleyi kullanmalıdır?",
+      "siklar": {
+        "A": "Servis kötü bir araç olduğu için hiçbir öğrenci ondan memnun değildir.",
+        "B": "Servis sabahları geciktiği için birçok öğrenci derse yetişemiyor.",
+        "C": "Şoföre hiç saygı duymuyorum, bu yüzden servisi beğenmiyorum.",
+        "D": "Servis bence pek hoş bir araç olmadığı için yazıyorum."
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Gerekçeli eleştiri, bir sorunu nedeni ve sonucuyla birlikte açıklar.",
+        "A ve C, kanıtsız genelleme ya da kişisel tutumu dile getirir.",
+        "D yalnızca beğenmemeyi söyler; somut bir neden göstermez.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Cümlede hem bir sorunun hem de bu sorunun sonucunun yer aldığına bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Eleştirisini genelleyerek kanıtsız yargı bildiren öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Kişisel tepkiyi gerekçe sanan öğrenci için çekici.",
+        "D": "Yalnızca beğenmediğini belirten yazıyı yeterli bulan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.Y.6.14",
+      "kazanim_metni": "Eleştirisini yazılı olarak ifade edebilme | a) Eleştireceği olay, bilgi, problem, durum vb.ni sorgular. | b) Sorgulanan olay, bilgi, problem, durum vb.ne ilişkin akıl yürüterek olumlu ve/veya olumsuz | c) Ulaştığı yargıya yazısında yer verir. | a) Olay, bilgi, durum vb.ndeki problemi tanımlar. | b) Problemi özetler. | c) Ön bilgi, gözlem ve veriye dayanarak probleme çözümler üretir. | ç) Akıl yürüterek en uygun çözümü belirler. | d) Problem çözme sürecini değerlendirir. | a) Kullanacağı düşünceyi geliştirme yollarını belirler. | b) Düşünceyi geliştirme yollarını yazısının içeriğiyle uyumlu şekilde kullanır.",
+      "unite": "YAZMA",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    },
+    {
+      "soru_id": "tr6-y-015",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "konu": "Yazma",
+      "alt_konu": "İkna tekniklerini belirleme",
+      "zorluk": 1,
+      "soru_metni": "Derya, okulun kütüphanesinin hafta sonları da açık olmasını öneren bir yazı yazıyor. Yazısındaki iki cümleyi anlamlı biçimde bağlamak istiyor:\n\n“Kütüphane hafta sonları kapalı. ___ öğrenciler ders çalışacak sakin bir yer bulamıyor.”\n\nBoşluğa en uygun bağlantı ifadesi hangisidir?",
+      "siklar": {
+        "A": "Oysa",
+        "B": "Bu nedenle",
+        "C": "Örneğin",
+        "D": "Ayrıca"
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Birinci cümle bir durumu (kütüphanenin kapalı olduğunu) bildirir; ikinci cümle bunun sonucunu (öğrencilerin yer bulamamasını) anlatır.",
+        "Neden-sonuç ilişkisini kuran bağlantı ifadesi “Bu nedenle”dir.",
+        "A karşıtlık, C örnek, D ekleme ilişkisi kurar; bu cümlelerle neden-sonuç ilişkisi sağlanmaz.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "İki cümle arasındaki ilişkinin neden-sonuç mu, karşıtlık mı olduğuna bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Karşıtlık ilişkisi kuran ifadeyi seçen öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Örnek verme ilişkisini sonuç bağlayıcısıyla karıştıran öğrenci için çekici.",
+        "D": "Ekleme ilişkisini neden-sonuç sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.Y.6.17",
+      "kazanim_metni": "İkna edici yazı yazabilme | a) Kullanacağı ikna tekniklerini belirler. | b) İkna tekniklerini içerikle uyumlu şekilde kullanır.",
+      "unite": "YAZMA",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-sonnet-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-21",
+      "onay_durumu": "onaylandi",
+      "revizyon": "2026-10-23 K-0111: geri çekme sonrası revizyon (benzerlik ve kazanım düzeltmesi)",
+      "insan_onayi_kim": "kullanici",
+      "insan_onayi_karar": "onay",
+      "dogrulama": "KISMİ: kapı GEÇER, benzerlik 0 bayrak (paket + pilot, 1207 metin), kör çözüm/kalite YAPILMADI"
+    }
+  ]
+}

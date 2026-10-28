@@ -1,0 +1,229 @@
+[
+ {
+  "id": "TR2-045",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.2.2",
+  "surec_bileseni": "a",
+  "konu": "Anlam oluşturma",
+  "alt_konu": "Ön bilgiyle sonuç çıkarma",
+  "soru_metni": "Selin sabah acele ederken şemsiyesini evde unuttu. Öğleden sonra gökyüzünü kara bulutlar kapladı. Okul çıkışında çocuklar çantalarını başlarına koyup koştu.\n\nMetne ve ön bilgilere göre Selin okul çıkışında ne yaşamıştır?",
+  "siklar": {
+   "A": "Çantasını okulda unutmuştur.",
+   "B": "Arkadaşlarıyla yarışa girmiştir.",
+   "C": "Yağmurda şemsiyesiz kalmıştır.",
+   "D": "Güneşten kendini korumuştur."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Çocukların çantalarını neden başlarına koyduğunu düşün, sonra Selin’in sabahki durumuyla birleştir.",
+  "cozum_adimlari": [
+   "Gökyüzünü kara bulutların kaplaması ve çocukların çantalarını başlarına koyup koşması, yağmur yağdığını gösterir.",
+   "Selin sabah şemsiyesini evde unutmuştur.",
+   "Bu iki bilgi birleşince Selin’in yağmurda şemsiyesiz kaldığı anlaşılır.",
+   "Çantanın okulda unutulması, yarışa girilmesi ve güneşten korunulması metindeki bilgilerle uyuşmaz.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Unutma bilgisini yanlış eşyaya ve yere taşıyan öğrenci, şemsiye yerine çantayı seçer.",
+   "B": "Çocukların koşmasını yarış sanan öğrenci, koşma nedenini yağmurla ilişkilendirmez.",
+   "D": "Çantayı başa koymayı güneşten korunmak sanan öğrenci, kara bulutlar bilgisini yok sayar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-046",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.2.2",
+  "surec_bileseni": "a",
+  "konu": "Anlam oluşturma",
+  "alt_konu": "Ön bilgiyle bağlantı kurma",
+  "soru_metni": "Arda ile annesi yaya geçidine geldi. Kırmızı ışık yanıyordu ve araçlar hızla geçiyordu. Arda, annesinin elini sıkıca tuttu. Sonra güvenle karşıya geçtiler.\n\nMetne ve ön bilgilere göre Arda ile annesi karşıya geçmeden önce neyi beklemiştir?",
+  "siklar": {
+   "A": "Yaya ışığının yeşile dönmesini",
+   "B": "Araçların tamamen geçip gitmesini",
+   "C": "Arda’nın korkusunun geçmesini",
+   "D": "Bir görevlinin araçları durdurmasını"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yaya geçidinde karşıya ne zaman geçileceğine nasıl karar verildiğini düşün.",
+  "cozum_adimlari": [
+   "Araçlar hızla geçerken kırmızı ışık yandığına göre bu ışık yayalar içindir ve yayalar beklemelidir.",
+   "Ön bilgilerimize göre yayalar, yaya ışığı yeşile dönünce karşıya geçer.",
+   "Bu yüzden Arda ile annesi, ışığın yeşile dönmesini beklemiştir.",
+   "Araçların geçip gitmesi, Arda’nın korkusu ya da bir görevli, karşıya geçme zamanını gösteren işaretin yerine geçmez.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Araçların hızla geçtiğini fark eden öğrenci, beklenen şeyi trafiğin bitmesi sanar ve ışık işaretini unutur.",
+   "C": "Annesinin elini sıkıca tutma ayrıntısını korkuyla ilişkilendiren öğrenci, beklemeyi duygusal bir nedene bağlar.",
+   "D": "Yol geçişlerinde mutlaka bir görevlinin yardım ettiğini sanan öğrenci, ışığın işlevini göz ardı eder."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-047",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.2.3",
+  "surec_bileseni": "a",
+  "konu": "Okuduğunu çözümleme",
+  "alt_konu": "Karakterin duygusunu açıklama",
+  "soru_metni": "Deniz’in muhabbet kuşu, kafesinin kapağı açık kalınca uçup gitti. Deniz bütün gün pencerenin önünden ayrılmadı. Akşam sofrada çorbasını bitirmeden kaşığını bıraktı.\n\nMetne göre Deniz’in kuşu uçup gittikten sonraki duygusu hangisidir?",
+  "siklar": {
+   "A": "Kuşunun kaçmasına duyduğu öfke",
+   "B": "Kuşunun yokluğuna duyduğu üzüntü",
+   "C": "Gökyüzünü izlemekten aldığı keyif",
+   "D": "Kuşun uçmasına duyduğu şaşkınlık"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Deniz’in gün boyunca ve akşam yemekte neler yaptığını birlikte değerlendir.",
+  "cozum_adimlari": [
+   "Kuşu uçup gidince Deniz bütün gün pencerenin önünden ayrılmamıştır; kuşunu beklemektedir.",
+   "Akşam çorbasını bitirmeden kaşığını bırakması, canının yemek istemediğini gösterir.",
+   "Bu davranışlar Deniz’in kuşunun yokluğuna üzüldüğünü gösterir.",
+   "Deniz’in kuşuna kızdığını, gökyüzünden keyif aldığını ya da yalnızca şaşırdığını gösteren bir davranış yoktur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kaşığı bırakmayı öfkeli bir davranış sanan öğrenci, Deniz’in kuşuna kızdığını düşünür.",
+   "C": "Pencereden bakmayı eğlence sanan öğrenci, yemek yememe bilgisini göz ardı eder.",
+   "D": "Olayın ilk anındaki duyguyu bütün güne yayan öğrenci, şaşkınlığı seçer."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "paragraf",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-048",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.2.3",
+  "surec_bileseni": "b",
+  "konu": "Okuduğunu çözümleme",
+  "alt_konu": "Metnin konusunu bulma",
+  "soru_metni": "Kırlangıçlar sonbaharda sıcak ülkelere gider. Yolculukta binlerce kilometre uçarlar. İlkbahar gelince yine eski yuvalarına dönerler.\n\nBu metnin konusu hangisidir?",
+  "siklar": {
+   "A": "Kırlangıçların yuvalarını yapma biçimi",
+   "B": "Kırlangıçların uçtuğu kilometre sayısı",
+   "C": "Sıcak ülkelerdeki yaşam biçimi",
+   "D": "Kırlangıçların gidiş dönüş yolculuğu"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Üç cümlenin hepsinde anlatılan ortak olayı bul.",
+  "cozum_adimlari": [
+   "İlk cümlede kırlangıçların sonbaharda sıcak ülkelere gittiği anlatılıyor.",
+   "İkinci cümlede bu yolculukta çok uzun yol uçtukları, üçüncü cümlede ilkbaharda geri döndükleri söyleniyor.",
+   "Üç cümle birlikte kırlangıçların gidiş dönüş yolculuğunu anlatır; uçulan yol, yuva ve sıcak ülkeler bu konunun ayrıntılarıdır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Son cümledeki yuva sözcüğünü yakalayan öğrenci, ayrıntıyı metnin bütününün yerine koyar.",
+   "B": "Binlerce kilometre uçma bilgisine odaklanan öğrenci, ikinci cümleyi konu sanar.",
+   "C": "Sıcak ülkelere gidildiğini okuyan öğrenci, gidilen yeri metnin konusu yapar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "paragraf",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-049",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.2.2",
+  "surec_bileseni": "c",
+  "konu": "Yazıda içerik oluşturma",
+  "alt_konu": "Sözcüğün anlamını bağlamdan çıkarma",
+  "soru_metni": "Kaan okuldan eve kadar durmadan koştu. Kapının önünde bitkin bir şekilde merdivene çöktü. Bir süre ayağa kalkacak hâli yoktu.\n\nMetinde geçen “bitkin” sözcüğünün anlamı hangisidir?",
+  "siklar": {
+   "A": "Telaşa kapılıp acele etmiş",
+   "B": "Çok sevinip neşelenmiş",
+   "C": "Çok yorulup gücü tükenmiş",
+   "D": "Hastalanıp ateşi yükselmiş"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Kaan’ın eve nasıl geldiğini ve merdivene çöktükten sonra ne hâlde olduğunu birlikte düşün.",
+  "cozum_adimlari": [
+   "Kaan okuldan eve kadar durmadan koşmuştur.",
+   "Kapıda merdivene çökmüş ve bir süre ayağa kalkamamıştır.",
+   "Bu durumda Kaan çok yorulmuş, gücü tükenmiştir; “bitkin” sözcüğü de bu anlama gelir.",
+   "Telaş, sevinç ya da hastalık anlatan seçenekler cümlelerdeki bilgilere uymaz.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Koşmayı acele etmekle ilişkilendiren öğrenci, yorgunluğu telaş sanar.",
+   "B": "Koşan çocuğu neşeli sanan öğrenci, merdivene çökme ve kalkamama bilgilerini göz ardı eder.",
+   "D": "Ayağa kalkamamayı hastalığa bağlayan öğrenci, durmadan koşma bilgisini atlar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-050",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.2.3",
+  "surec_bileseni": "ğ",
+  "konu": "Yazma kurallarını uygulama",
+  "alt_konu": "de/da yazımı ve kesme işareti",
+  "soru_metni": "Hangi cümlede “de/da” ve kesme işareti kurala uygun yazılmıştır?",
+  "siklar": {
+   "A": "Dedem’de Bursa’da bahçede çalışıyor.",
+   "B": "Dedem de Bursa’da bahçede çalışıyor.",
+   "C": "Dedem de Bursa’da bahçe de çalışıyor.",
+   "D": "Dedem de Bursa’da bahçe’de çalışıyor."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bağlaç olan “de”, özel ada gelen ek ve özel ad olmayan sözcüğe gelen ek için kuralları ayrı ayrı düşün.",
+  "cozum_adimlari": [
+   "“Dedem de” ifadesindeki “de”, “dahi” anlamı katan bağlaçtır; ayrı yazılır ve kesmeyle ayrılmaz.",
+   "“Bursa’da” sözcüğü özel ad olduğu için bulunma eki kesmeyle ayrılır ve bitişik yazılır.",
+   "“bahçede” sözcüğü özel ad olmadığı için bulunma eki kesmesiz ve bitişik yazılır.",
+   "Üç kuralı da doğru uygulayan tek cümle “Dedem de Bursa’da bahçede çalışıyor.” cümlesidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Özel ada gelen eki kesmeyle ayırma kuralını bağlaça da uygulayan öğrenci, “de”yi kesmeyle ayırır.",
+   "C": "Bulunma ekini bağlaç sanan öğrenci, “bahçede” sözcüğünü ayrı yazar.",
+   "D": "Her ekin başına kesme konduğunu sanan öğrenci, özel ad olmayan “bahçe” sözcüğüne de kesme koyar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

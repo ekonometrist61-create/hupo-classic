@@ -1,0 +1,1016 @@
+[
+ {
+  "id": "TR2-001",
+  "kazanim_kodu": "T.O.2.1",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Başlıktan ön fikir edinme; okuma öncesi strateji, kazanıma uygun. A ('konuyu anlamış') abartı olduğu için makul çeldirici. Şık uzunlukları dengeli."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-002",
+  "kazanim_kodu": "T.O.2.1",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Ünlem = uyarı/vurgu. Kazanım (noktalamaya dikkat ederek sesli okuma) uyumlu. C ('hiç duraksamadan') biraz bariz ama kabul edilebilir. Not: 'Dikkat et' bağlamı da D'yi ele veriyor, noktalama bilgisi tek ipucu değil (küçük)."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-003",
+  "kazanim_kodu": "T.O.2.1",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Virgülde kısa, nokta sonunda uzun durma. Tek doğru. Şıklar simetrik permütasyon; kabul edilebilir. Zorluk 2 biraz iddialı, 1 daha makul (REHBER §4.6)."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-004",
+  "kazanim_kodu": "T.O.2.1",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "orta",
+   "notlar": "A, B, D başlıktan çıkarılabilir; 'gün olarak süre' başlıktan çıkarılamaz. Tek net olumsuz kök (büyük harf). 2. sınıf için olumsuz kök zor olduğundan zorluk 3 makul. Kazanım kodu (T.O.2.1 mi T.O.2.2 mi) belirsiz: başlıktan tahmin 001/004 ile 008-010'da farklı koda bağlanmış, tutarlılık kontrol edilmeli."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-005",
+  "kazanim_kodu": "T.O.2.1",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "'Sahi mi?' soru işareti. C (ünlem) Ali'nin cümlesinden gelen makul çeldirici. Noktalama TDK'ye uygun. Kazanım (noktalamaya göre okuma) uyumlu. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-006",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Küçük düzeltme: A 'Karlı havada hava soğuk olduğu için' sözcük tekrarı (hava...hava) ve kasıtlı en ayrıntılı şık; 'Kar yağınca hava soğuduğu için.' gibi sadeleştir. B'deki 'herkes' mutlak ve bariz yanlış; daha makul çeldirici yaz (örn. 'Sabah erken uyandığı için')."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-007",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Doğru şık 'çoğu zaman' ile kayıtlı, çeldiriciler ('her gün', 'gerektiği') mutlak/bariz: üslup ipucu. B (bulutlar rüzgârı durdurur) saçma, C (güneşli havada şemsiye) metinle çelişiyor (REHBER §18.7). B ve C'yi gerçek yanılgıya dayalı yaz (örn. 'Koyu bulutlar gece olduğunu gösterdiği için'). Kök uzun/soyut ('ön bilgilerle birlikte düşünüldüğünde'): 'Annesi neden şemsiye istemiştir?' yeterli. 006 ile aynı kalıp (hava durumu→eşya); çeşitlilik düşük."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-008",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "orta",
+   "notlar": "Kök 'hangi tahmin yapılabilir?' kipi gevşek: D (balonla gökyüzü gezisi) ve hatta A da 'anlatılabilir' olabilir. Köke 'en olası' ekle ('...için en olası tahmin hangisidir?'). Doğru şık başlığı neredeyse yineliyor, A ve B bariz yanlış; D'yi güçlendirip A/B'yi ayrıca makul yap. Kazanım kodu belirsiz (başlıktan tahmin = T.O.2.1 olabilir)."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-009",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "B",
+   "emin": "orta",
+   "notlar": "Aynı kök sorunu: 'hangi tahmin yapılabilir?' gevşek; D (pazarda satılan meyveler) da olabilir görünür. Köke 'en olası' ekle. Doğru şık başlığın yeniden ifadesi (kolay); C (pazar günü) iyi çeldirici. Zorluk 2 yerine 1 (008 ile aynı kalıp). Kazanım kodu belirsiz."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-010",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "'En olasıdır' kökte var, tek olay D. Çeldiriciler anahtar sözcük tuzağı (balık/dede), makul. Not: A olay değil bilgi ('nasıl beslendiği'), küçük kusur. Kazanım kodu 008/009 gibi belirsiz."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-011",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Doğru A net, ama B (hemen yeni bisiklet satın alır) ve D (baba kızıp geri alır) saçma, genel kültürle elenir (REHBER §18.7). Makul yanılgı yaz (örn. 'Mert zinciri tek başına takmaya çalışacaktır', 'Mert bisikleti babasına bırakıp eve dönecektir' gibi metne sadık ama gereksiz sonuçlar). Kökte 'Metne göre ... en olasıdır' yerine 'Metne göre bundan sonra ne olması beklenir?' daha doğal."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-012",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Kök bozuk: 'ne yaptığı metinde anlatılmıştır?' soru gibi kurulmuş ama evet/hayır cümlesi. 'Ela, ayakkabı bağcığı çözülünce ne yapmıştır?' yap. Soru doğrudan bilgi çağırma (çözümleme düzeyi düşük); kazanım T.O.2.3 ile gevşek uyum, kabul edilebilir. Şıklar tek doğru, metin cümlesi aynen geçmiyor."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-013",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Davranıştan karakter çıkarımı (çözümleme) kazanıma uygun. Tek doğru. 'Sorumluluk' 2. sınıf için biraz soyut ama kabul edilebilir; çeldiriciler karşıt davranış, bariz ama sınıf düzeyine uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-014",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Bilgi doğru (kirpi tehlikede kıvrılır, dikenler dışarıda). Neden-sonuç çözümlemesi. A ve D yaygın yanılgı, makul. Şık uzunlukları dengeli. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-015",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Konu: çiçeklere gösterilen özen. A kısmen makul, B ve C bariz ama kabul edilebilir. 'Özen' 2. sınıf için sınırda ama bağlamdan çıkıyor."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-016",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "orta",
+   "notlar": "A ('Pamuk'un bahçede top kovalaması') metindeki doğru bir ayrıntı ve metnin ilk yarısını kapsıyor; 'konu' sorusunda savunulabilir ikinci cevap riski. A'yı metinde olmayan bir şeye çevir (örn. 'Pamuk'un yeni bir top bulması') ya da metni Ahmet'le birlikte oynama etrafında kurup A'yı net eksik/yanlış yap. Zorluk 3 yerine 2."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-017",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Konu: arı-çiçek ilişkisi; B ve D makul yanılgı (bal/kovan). Dil notu: 'Arıyla çiçeklerin ilişkisi' soyut ve tekil-çoğul uyumsuz; 'Arıların çiçeklerden yararlanması' daha sade olurdu (isteğe bağlı). Zorluk 3 yerine 2 daha makul."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-018",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "D",
+   "emin": "orta",
+   "notlar": "Kök 'anlamı bozulmaz' gevşek: sonraki cümle ('birkaç gün sonra iyileşti') A, B, C ile çelişmiyor, özellikle C (komşuya emanet) metni bozmayabilir. 'Metnin akışına en uygun cümle hangisidir?' yap ve C'yi iyileşmeyi açıkça dışlayan bir cümleyle değiştir (örn. 'Ayşe kediyi veterinerde bırakıp hiç ziyaret etmedi'). Kazanım (içerik tutarlılığı) uyumlu."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-019",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Boşluk 'Böylece hiç üşümeden okula gittik' ile B tutarlı; A, C, D sonraki cümleyle çelişiyor (metin içi tutarlılıkla elenir, genel kültürle değil). Kök 'anlamı bozulmaz' ideal değil ama bu soruda çeldiriciler net çelişki taşıdığı için sorun çıkarmıyor."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-020",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "C 'zamanında yetişti' ile tutarlı; A, B, D çelişiyor. Küçük not: D'de çocuğun yalan söylemesi çeldirici olarak bile istenmeyebilir (ürün tonu); kritik değil."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-021",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Kazanım uyumsuz: T.Y.2.2 yazma/içerik oluşturma, soru ise bağlamdan sözcük anlamı (okuma/söz varlığı). Kazanım kodunu uygun okuma kazanımına taşı (yoksa soru kurtarılamaz). 'Korkup' bağlamda zaten veriliyor, kolay. B ve C ('sürekli', 'gün boyu') mutlak ve bariz."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-022",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Kazanım uyumsuz (T.Y.2.2 yazma; soru sözcük anlamı). Kazanımı okuma/söz varlığı koduna taşı. 'Bunaltıcı' 2. sınıf için zor ama bağlam (terler, serin rüzgâr) çözümü veriyor; D metinle çelişiyor. TDK anlamı doğru ('sıcak ve boğucu')."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-023",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Yalnız 'Konya'dan' doğru; Kitap'ı (cins isim), Ayşenin (özel ada ek kesmesiz), Anka'ra (yanlış yerde) makul yanılgılar. TDK §10.2 ile uyumlu."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-024",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "dusuk"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "REHBER §10.1: bağlaç 'de' ayrı ve kesmesiz. A bağlaçta kesme hatası, C ve D bulunma ekini ayırma hatası; tek doğru B. Küçük not: C 'Defterim çantam da kaldı' ihtimal okuma ('defterim, çantam da') düşük. Kazanımın 2. sınıf düzeyi (de/da) belirsiz, doğrulanmalı."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-025",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "RED",
+   "kendi_cevabi": "D",
+   "emin": "dusuk",
+   "notlar": "REHBER §10.4'e göre tekrarlı bağlaçtan önce/sonra virgül yok, yani D; ancak okul pratiğinde ve birçok kaynakta A (virgüllü) da doğru kabul edilir: tartışmalı kural, çift doğru riski. Ayrıca 'ya...ya' virgül kuralı 2. sınıf düzeyinin çok üstünde (zorluk 3 etiketi bunu gizliyor). Kurtarılamaz: 2. sınıf kazanımındaki 'sıralı sözcükler arasında virgül' (örn. 'elma, armut, üzüm') kuralıyla yeniden yaz."
+  },
+  "onay": false,
+  "neden": "cozucu A!=anahtar D; kalite RED"
+ },
+ {
+  "id": "TR2-026",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Hece sınırı: ço-cuk doğru; ar-ka-daş, ke-le-bek, bah-çe olmalı. Tek doğru, TDK ile uyumlu. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-027",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "orta",
+   "notlar": "Kazanım uyumsuz: T.Y.2.3 yazma kuralları (yazım/noktalama), soru ise bağlamda uygun sözcük seçimi (kazanımı T.Y.2.2 ya da uygun söz varlığı koduna taşı). A 'neşeli' de anlamlı olabilir (koşmak neşelendirir), 'cümle anlamlı olur' ifadesi A'yı dışlamıyor: A'yı nedenle ilgisiz bir sözcükle değiştir, köke 'en uygun' ekle."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-028",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Kazanım uyumsuz: sözlük/kaynak kullanımı 'yazma kurallarını uygulama' (yazım-noktalama) değil, yazma sürecini yönetme (varsa T.Y.2.1) ya da okuma stratejisidir (kazanım kodu belirsiz). A'da 'okumaya devam eder' yazma durumuyla çelişiyor ('yazmaya devam eder' olmalı). A, C, D bariz kötü çalışma alışkanlığı, genel kültürle elenir (REHBER §18.7); çeldiricileri makul alternatiflerle (örn. 'Arkadaşına yazısını okutur') güçlendir."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-029",
+  "kazanim_kodu": "T.O.2.1",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Sessiz (içten) okuma: kütüphanede ses çıkarılmaz; B/C/D sesli. Kazanım (okuma sürecini yönetme: sesli/sessiz okuma) uyumlu. Küçük not: B ve C genel kültürle elenir, makul yanılgı olan yalnız D (mırıldanma); kural metinde verilmiyor ama gündelik bilgi. Uzunluklar dengeli. Zorluk 1 makul."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-030",
+  "kazanim_kodu": "T.O.2.1",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Cevap C (iki noktada kısa durup sayılanlara geçilir). Sorun D: 'Duraksamadan sonraki sözcüğe hızla geçmelidir' çift okunur ('duraksamadan' = durmadan / 'duraksamadan sonraki sözcük'); 'duraksama sonrası sözcüğe hızla geç' okuması da savunulabilir, bu yüzden tek doğru zayıflıyor. D'yi tek anlamlı yaz (örn. 'Hiç durmadan sayılanları art arda okumalıdır.'). Belirsiz: 'iki nokta' işaretinin 2. sınıf programında adıyla öğretilip öğretilmediği doğrulanmalı (kökte işaret adı veriliyor, cümlede ':' görülüyor; gerekirse kökte 'iki nokta (:)' biçiminde göster). Kazanım uyumlu, A/B iyi çeldirici (nokta/soru işareti karışıklığı)."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-031",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Uzun tatil + dondurma + denize girme = yaz. Kazanım (çıkarım/ön bilgi) uyumlu. Şıklar paralel, tek doğru. Çeldiriciler mevsim adı olduğundan zayıf ama zorluk 1 için kabul edilebilir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-032",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Kask ve dizlik koruyucu donanım: düşünce yaralanmamak için. Kazanım uyumlu, tek doğru. Not: A (daha hızlı gitsin) bariz yanlış; C zayıf makul. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-033",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Başlıktan içerik tahmini. Doğru şık başlığın anlamca tekrarı; yine de aynı kelime grubu aynen geçmiyor (geceleri gökte görünen / gece gökyüzündeki). A (denizyıldızı oyunu) ve B (güneş de yıldız) kısmen makul çeldirici, D bariz. Kazanım uyumlu. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-034",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "'Filizleniyor' = tohumdan bitki çıkması; B/C/D tohumla ilgili ama başlıkla çelişen olaylar (makul çeldirici). Tek doğru. 'Filiz' sözcüğünü bilmeyen öğrenci için kelime sorusuna dönüşebilir; zorluk 2 kabul edilebilir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-035",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Diş fırçalama, pijama, battaniye örtme sonrası hemen uyumak. Tek doğru; C ('sabah okula gitmesi') daha geç bir olay olduğu için 'en olasıdır' ile elenir. İsteğe bağlı sadeleştirme: kökte 'hemen' kullanılabilir. Kazanım (olay sırası çıkarımı) uyumlu."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-036",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Ada'nın davranışı yardımseverliği gösterir. A, küçük çocuğun özelliği olduğundan iyi çeldirici (karakter karışıklığı); C ve D metinle doğrudan çelişir. Kazanım (karakter çözümleme) uyumlu. Kök 'nasıl bir çocuktur?' metne bağlı çıkarım, öznel değil."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-037",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Bilgi doğru (hörgüç yağ depolar). B yaygın yanılgıdan (su depolar) gelen çok iyi çeldirici; kök 'Metne göre' dediği için tek doğru korunuyor. Küçük not: soru doğrudan bilgi alma düzeyinde, zorluk 1 de savunulabilir (zorluk 2 hafif iddialı). Kazanım kodu T.O.2.3 (çözümleme) yerine anlam oluşturma da olabilir; program tablosundan doğrulanmadı (belirsiz)."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-038",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Metnin konusu: bazı kelebeklerin kendini koruma yolu (kamuflaj). A ve D metinde geçen unsurlara bağlı iyi çeldirici; B kanat rengi ipucuyla makul. Bilgi doğru. Küçük not: D'deki 'nektar' 2. sınıf için ağır olabilir (çeldiricide kalabilir ama 'çiçek özsuyu' daha sade olur). Kazanım uyumlu."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-039",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Diş ağrısı, ardından 'Doktor dişini muayene etti': tek tutarlı boşluk D. B/C göz-kulak doktoru ve A (fırçalamayı öğretme) metin akışına uymuyor. Cümle tamamlama ile metin tutarlılığı, T.Y.2.2 için kabul edilebilir yakınlıkta. Zorluk 1 uygun. Çeldiriciler biraz bariz; 2. sınıf düzeyinde kabul."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-040",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "orta"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "İnceleme, seçip tarttırma, sonra ödeme. A parayı vermeyi öne alıp sonraki cümleyle çakışıyor, C ve D alımla çelişiyor; tek doğru B. Doğru şık en kısa, uzunluk ipucu yok. 'Tezgâh' yazımı doğru. Zorluk 2 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-041",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Cevap C (telaş = acele, heyecan; bağlam: servis kalkmak üzere, soluk soluğa). Soru güzel kurulmuş ama kazanım kodu uyumsuz: sözcüğün bağlamdan anlamı 'Yazılarında içerik oluşturabilme' (T.Y.2.2) değil, okuduğunu anlama (T.O.2.2) ölçer. Kodu/kazanımı T.O.2.2'ye taşı. Şıklar paralel, çeldiriciler (zıt anlam, başka duygu) makul."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-042",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "orta"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Gerçek soru cümlesi yalnız D. A ünlem, B ve C nokta (B/C dolaylı anlatım; 'hangi' içeren C iyi çeldirici, makul yanılgı). Tek doğru, TDK uyumlu. Kazanım (yazma kuralı: noktalama) uyumlu. Zorluk 2 makul."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR2-043",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "RED",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Cevap A (kırıldı) ama (1) kazanım uyumsuz: 'Yazma kurallarını uygulayabilme' (T.Y.2.3) yazım/noktalama ister, bu soru sözcük anlamı/eşdizimlilik ölçüyor; (2) yırtıldı/yıkıldı/söküldü yalnız genel kültürle elenen bariz çeldiriciler (REHBER §18.7). Çeldirici güçlendirmeye kalkılırsa (çatladı, parçalandı) bu kez tek doğru bozulur. Kurtarmak için küçük düzeltme yetmez; yazım/noktalama sorusuyla yeniden kurulmalı."
+  },
+  "onay": false,
+  "neden": "kalite RED"
+ },
+ {
+  "id": "TR2-044",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Alfabe sırası c, ç, d, e, f, g: ç < d < f < g, cevap çiçek. Bilgi doğru, çeldiriciler makul (ç'yi alfabe sonuna koyan yanılgı). Sorun: kazanım uyumu. Alfabe sırası/sözlük kullanımı 'Yazma kurallarını uygulayabilme' (T.Y.2.3) değil; doğru kazanım kodu program tablosundan doğrulanıp değiştirilmeli (belirsiz: 2. sınıf programında alfabe sırası/sözlük kazanımının hangi kodda olduğu bu girdiden doğrulanamadı). Not: şıklar kendi içinde alfabetik dizilmiş (yalnız ç yeri oynamış), şık sırası bir ipucu veriyor olabilir; şıkları karıştır."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR2-045",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Çözüm: kara bulutlar + çocukların çantayı başa koyup koşması = yağmur; şemsiye evde kaldı -> şemsiyesiz yağmura yakalanma. Tek doğru C. A metinle çelişir (çantalar başlarında), B koşmadan, D çanta başta-güneş çağrışımından makul çeldirici (kara bulutlar elemeyi sağlar). Kazanım (anlam oluşturma/çıkarım) uyumlu. Şık uzunlukları dengeli, REHBER ihlali yok. Küçük not: Selin'in 'çocuklar' içinde olduğu örtük; istenirse 'Selin de çantasını başına koyup koştu' eklenebilir (zorunlu değil). Zorluk 3 iddialı: üç ipucu birleşse de adım kolay ve günlük deneyim; zorluk 2 öner. kazanim_kodu T.O.2.2 programdan doğrulanamadı (belirsiz), metinle tutarlı.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "TR2-046",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Çözüm: araçlar hızla geçerken kırmızı (yaya) ışık yanıyor, sonra güvenle geçiyorlar -> yaya ışığının yeşile dönmesini beklediler. B: araçlar kesintisiz geçtiği için savunulamaz (ama makul çeldirici); C 'sıkıca tuttu' ipucundan korku çıkarımı (iyi çeldirici); D metinde dayanak yok ama yaya geçidi bağlamında makul. Tek doğru A. Hafif belirsizlik: 'Kırmızı ışık' kime ait açık değil; araçlar geçtiği için yaya ışığı olduğu çıkarılıyor. İstenirse 'Yaya ışığı kırmızı yanıyordu' diye netleştirilebilir (zorunlu değil). Çıkarım tek-iki adım, genel trafik bilgisi; zorluk 2 öner. REHBER ihlali yok; şık uzunlukları dengeli.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "TR2-047",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Çözüm: bütün gün pencereden ayrılmama (bekleyiş/özlem) + çorbayı bitirmeden kaşığı bırakma (iştahsızlık) -> üzüntü. A öfke ('kapak açık kaldı' çağrışımı) ve D şaşkınlık (uçup gitme anı) makul çeldirici; C 'pencerenin önünde' ipucundan türetilmiş ama davranışla (yemeği bırakma) elenir. Tek doğru B. Davranıştan duygu çıkarımı 2. sınıf için tipik tek adımlı; zorluk 2 öner. Kazanım: duygu-sebep çözümlemesi; 'çözümleyebilme' kabul edilebilir (T.O.2.2 de uygun olabilir; kodlar programdan doğrulanamadı, belirsiz). Dil ve şıklar uygun, ihlal yok.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "TR2-048",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Çözüm: metin kırlangıçların sonbaharda gidip ilkbaharda dönmesini anlatır -> konu gidiş-dönüş yolculuğu (göç). B 'binlerce kilometre' ayrıntısını konu sanma, A 'yuva' ayrıntısı; ikisi iyi çeldirici. C metinde olmayan bilgi (yaşam biçimi), diğerlerinden biraz daha zayıf (başında 'Kırlangıçların' yok, genel kültürle elenir) ama kabul edilebilir. Bilgi doğru (kırlangıç göçü, binlerce km, eski yuvaya dönüş). Konu bulma 2. sınıfta tek adım; zorluk 3 aşırı iddialı, zorluk 2 (hatta 1) öner. Metindeki 'yolculuk' kelimesi şıkta var ama cümle aynen geçmiyor, §18.6 ihlali değil. Kazanım uyumlu (konu belirleme = çözümleme); kod doğrulanamadı (belirsiz).",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "TR2-049",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Çözüm: 'durmadan koştu' + 'ayağa kalkacak hâli yoktu' -> çok yorulmuş, gücü tükenmiş = C. Soru kendi içinde sağlam; tek doğru C. SORUN: kazanim_kodu T.Y.2.2 'Yazılarında içerik oluşturabilme' bir YAZMA kazanımı; soru ise okuma/sözcük anlamı (bağlamdan anlam çıkarma) ölçüyor -> kod-kazanım uyumsuzluğu (REHBER §12: kod var olması yetmez). Düzeltme: kazanim_kodu, sözcük anlamı/okuma anlam çıkarma kazanımına (T.O.2.x; kazanım tablosundan doğrulanarak) çevrilmeli; uygun kazanım yoksa RED. Çeldiriciler: A (koşma->acele) ve D ('kalkacak hâli yoktu'->hastalık) makul; B ('çok sevinip neşelenmiş') bariz yanlış, zayıf çeldirici - 'Çok korkup titremiş' gibi bir çeldiriciyle değiştirilebilir. Bağlam ipuçları güçlü, zorluk 2 öner. 'bitkin' 2. sınıf için hafif zor sözcük ama bağlamdan çıkarılabiliyor.",
+   "zorluk_onerisi": 2
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "TR2-050",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Çözüm (REHBER §10.1-10.2): 'Dedem de' bağlaç -> ayrı, kesmesiz; 'Bursa’da' özel ad + bulunma eki -> kesme; 'bahçede' ortak ad + bulunma eki -> bitişik, kesmesiz. Tek doğru B. A: bağlaç de kesmeli+bitişik ('Dedem’de') ve ortak adda kesme; C: 'bahçe de' bulunma ekini ayırma; D: 'bahçe’de' ortak adda kesme. Tüm çeldiriciler kural karıştırmasından, §10.5.3 ile tutarlı. Üç yazım noktasını birlikte denetlediği için çok adımlı; zorluk 3 uygun. UYARI (belirsiz): kesme işareti ve bağlaç de/da - bulunma eki ayrımının 2. sınıf programında (T.Y.2.3) bulunup bulunmadığı bu girdiden doğrulanamadı; kazanım tablosuyla teyit edilmeli. Programda yoksa RED/yeniden yazım gerekir (ör. yalnızca büyük harf/nokta). Kök ve şıklar REHBER'e uygun, şık uzunlukları denk.",
+   "zorluk_onerisi": 3
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "TR2-051",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "B",
+   "emin": "orta",
+   "notlar": "Una bulanmış el + fırın kokusu + doğum günü mumları -> pasta (B). Ancak C (börek/çörek) de un+fırın ile savunulabilir; mumlar pastayı kesinleştirse de 'masada duran mum' pişirmeyi kanıtlamaz. C'yi una/fırınla bağdaşmayan bir yemekle değiştir (örn. 'Akşam yemeği için çorba pişiriyor.'). Üç ipucunu birleştirme iki adım sayılabilir, zorluk 3 kabul.",
+   "zorluk_onerisi": 3
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "TR2-052",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "orta"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "D",
+   "emin": "dusuk",
+   "notlar": "Beklenen cevap D (teneffüsü beklemek) ama cevap metinden değil okul görgü kuralından çıkıyor ve değer yargısı içeriyor (REHBER 17.1). C ('izin alıp kantine gitmesi') ve A (beslenmeyi yemek) savunulabilir; tek doğru zayıf. Metinde teneffüs hiç geçmiyor. Köku metne bağlı hale getir (örn. 'ders bitmesine 5 dakika var') veya çeldiricileri açıkça kural dışı yap (izin almadan çıkması). Tek adımlı, zorluk 2.",
+   "zorluk_onerisi": 2
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "TR2-053",
+  "kazanim_kodu": "T.O.2.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Başlık 'Kış Hazırlığı' + tane taşıma -> biriktirme (A). B kış sonrası, C geçmişe dönük, D saçma (D bariz çeldirici, hafif). A metindeki eylemin neredeyse tekrarı; tek adımlı çıkarım, zorluk 2'ye indir.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "TR2-054",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Davranıştan (rakibin yanına gidip omzuna dokunma) karakter özelliği: tek adım. A, B, D metinle çelişen bariz çeldiriciler (REHBER 18.7 hafif zayıf). Doğru şık biraz uzun ama kabul edilebilir. Zorluk 2.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "TR2-055",
+  "kazanim_kodu": "T.O.2.3",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Konu: kaplumbağanın sınıfta bakımı (su, yem, temizlik üçünü kapsar); C ve D yalnız parça, B konu dışı. Tek doğru net. Konu bulma tek adım, zorluk 2.",
+   "zorluk_onerisi": 2
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "TR2-056",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "D",
+   "emin": "orta",
+   "notlar": "D mantıklı (kirli su -> su değişimi). C ('hasta olduğunu düşündü') da sıraya girebilir: düşünür, öğretmene söyler, öğretmen su değiştirir; çift savunulabilirlik. C'yi nedenle alakasız yap (örn. 'yemi sevmediklerini düşündü'). Kazanım T.Y.2.2 (içerik oluşturma) eşleşmesi gevşek ama kabul. Tek geriye dönük çıkarım, zorluk 2.",
+   "zorluk_onerisi": 2
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "TR2-057",
+  "kazanim_kodu": "T.Y.2.2",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Cevap B net. Sorun: soru bağlamdan sözcük anlamı ölçüyor, kazanım T.Y.2.2 (yazılarda içerik oluşturma) ile uyumsuz; okuma/söz varlığı kazanımına taşınmalı. 'kayıtsızca', 'kaygıyla' 2. sınıf için ağır. Tek adım, zorluk 2.",
+   "zorluk_onerisi": 2
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT",
+  "not": "ek2 zorluk-3"
+ },
+ {
+  "id": "TR2-058",
+  "kazanim_kodu": "T.Y.2.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "C: 'Duydum ki' ayrı (10.1) + 'İzmir’e' kesmeli (10.2); A ve D'de hata, B'de 'duydumki' hatası; tek doğru net, iki kural çaprazı (2x2) iki adımlı kontrol. Uyarı: bağlaç 'ki' ve kesme 2. sınıf düzeyi için ileri olabilir; kazanım kapsamı program metninden teyit edilmeli.",
+   "zorluk_onerisi": 3
+  },
+  "onay": true,
+  "neden": "",
+  "not": "ek2 zorluk-3"
+ }
+]

@@ -38,6 +38,31 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### app 1.3.0+4 · 2026-10-25
+
+Büyük değişiklik (MINOR: yeni seçim yüzeyi). Kahraman seçimi ve vitrin görselleri yenilendi.
+- Kahraman seçimi ("Senin Hikâyen"): renkli başlık kartı; Ben ve Hupo büyük kart; Ailem, Arkadaşım, Hayvan Dostlarımız, Araçlar kompakt kart; "Diğer kahraman seçenekleri" altında Hayalî karakter ve Başka biri. Karakter görselleri açıkça seçilir ("Başka biri" için büyükanne görseli çıkmaz).
+- Hayvan Dostlarımız (at, aslan, fil, kartal, kedi, köpek, kurt, tilki, panda, kaplumbağa) ve Araçlar (otomobil, tren, uçak, vapur, balon, uzay gemisi, denizaltı, arazi aracı, bisiklet, robot araç) alt seçenekleri. Seçilen ad kutuya öneri olarak yazılır; sunucuya yalnız tür kodu gider.
+- Öğren vitrini: kapak görselleri Türkiye'ye uygun yeniden üretildi (Galata, Safranbolu, Kapadokya, Efes, Ay'da astronot); "Tüm hikâyeler" bağlantısı kapak şeridi başlığına, seri rozeti başlığın sağına alındı; Tüm hikâyeler ekranındaki yinelenen "Hikâyemi oluştur" kaldırıldı.
+- Web: `app.hupolingo.com` yeni derlemeyle güncellenir (Vercel `hupo-app-web-yeni` projesi elle yüklenir; git push'u tetiklemez).
+
+**Migration:** yok.
+
+**Uyumluluk:** Sunucu sözleşmesi değişmedi; tür kodları aynı.
+### app 1.2.0+3 · 2026-10-24
+
+Büyük değişiklik (MINOR: yeni kullanıcı yüzeyi). Öğren sekmesinde HupoRead vitrini.
+- Öğren: "HupoRead" başlığı, seri rozeti, duruma göre ana hikâye kartı (yeni kullanıcı, öneri, yarım kalan hikâye, kota dolu), kategori kapak şeridi (katalogdan; hikâyesi olmayan kategori gizlenir).
+- "Tüm hikâyeler" keşif ekranı: yarım kalan hikâye, "Hikâyemi oluştur", tür kategorileri. Kategori kapağı ilgili türün listesini filtreli açar.
+- Yarım kalan hikâye yalnız bu cihazda tutulur (sunucuya gönderilmez); aynı hikâyeye dönünce kaldığı sayfadan açılır; hikâye bitince silinir.
+- Düzeltme: PDF kapağında hikâye sahne görseli artık doğru dosyadan okunur (önceden yol eksikti, kapak boş kalıyordu).
+
+**Migration:** yok. Mevcut RPC'ler kullanılır (okuma_seri_ve_oneri, okuma_katalog_filtre).
+
+**Uyumluluk:** Panel 0.3.0 ile çalışır. Kota kuralı değişmedi: yeni hikâye günde bir kez; kota dolu iken yarım hikâye öne çıkmaz.
+
+**Bilinen açıklar:** Yarım kalan hikâye yalnız bu cihazda tutulduğu için cihaz değişince kaybolur. Derleme bu turda yalnız debug APK olarak yapıldı; yayın imzası için `android/key.properties` yok.
+
 ### panel 0.3.0 · 2026-10-24
 
 Büyük değişiklik (MINOR: RPC, migration, paket biçimi). Soru Atölyesi JSON paket içe aktarma.
