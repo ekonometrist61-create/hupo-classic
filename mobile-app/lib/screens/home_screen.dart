@@ -126,7 +126,7 @@ class HomeScreen extends ConsumerWidget {
           if (p != null && p.role == 'veli') {
             return _VeliAnaSayfa(onSignOut: repo.signOut, adSoyad: p.fullName);
           }
-          if (p == null || !p.isStudent) {
+          if (p == null || !(p.isStudent || p.role == 'admin')) {
             return _Message(
               text: 'Bu uygulama yalnızca öğrenci hesapları içindir.',
               actionLabel: 'Çıkış yap',

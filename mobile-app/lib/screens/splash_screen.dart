@@ -2,7 +2,7 @@
 // hazırlanırken Hupo marka sahnesi üstte oynar, sonra perde gibi açılır.
 //
 // Tasarım kuralları (bkz. docs/splash/ACILIS_SENARYOSU_PLANI.md, BAKIM.md):
-//  * İlk açılış            → tam "Kanat İmzası" sahnesi (1600 ms) + marka sesi.
+//  * İlk açılış            → "Kelime Evreni" giriş filmi (5 sn, atlanabilir) + marka sesi.
 //  * Sonraki açılışlar     → kısa sahne (900 ms), sessiz.
 //  * Hareket azalt         → statik marka karesi.
 //  * Arka plandan dönüş    → SplashGate yeniden kurulmaz; sahne tekrar oynamaz.
@@ -21,6 +21,7 @@ import '../services/app_open_service.dart';
 import '../services/audio/audio_event.dart';
 import '../services/audio/audio_manager.dart';
 import '../settings/app_settings.dart';
+import '../widgets/splash/hupo_giris_filmi.dart';
 import '../widgets/splash/hupo_signature_entrance.dart';
 
 /// Açılış kapısı. [child] asıl uygulamadır (giriş veya ana kabuk).
@@ -63,11 +64,8 @@ class _SplashGateState extends ConsumerState<SplashGate>
     _plan = planAppOpen(kind: kind, reducedMotion: settings.reduceMotion);
 
     _atlamaZamanlayici = Timer(kHupoAtlamaEsigi, () => _atlanabilir = true);
-
-    // Marka sesi YALNIZCA ilk açılışta, hareketli tam sahnede çalınır.
-    if (_plan.playBrandSound) {
-      AudioManager.instance.play(AudioEvent.brand);
-    }
+    // Marka sesi (film ile birlikte tek parça) YALNIZCA ilk açılışta çalınır; film
+    // ses başladıktan sonra başlar, böylece ses ve görüntü aynı anda açılır.
   }
 
   @override
@@ -144,11 +142,18 @@ class _SplashGateState extends ConsumerState<SplashGate>
                         systemNavigationBarContrastEnforced: false,
                         systemNavigationBarDividerColor: Colors.transparent,
                       ),
-                      child: HupoSignatureEntrance(
-                        onFinished: _kapat,
-                        reducedMotion: _plan.scene == AppOpenScene.still,
-                        kisa: _plan.scene == AppOpenScene.short,
-                      ),
+                      child: _plan.scene == AppOpenScene.full
+                          ? HupoGirisFilmi(
+                              onFinished: _kapat,
+                              sesiBaslat: _plan.playBrandSound
+                                  ? () => AudioManager.instance.play(AudioEvent.brand)
+                                  : null,
+                            )
+                          : HupoSignatureEntrance(
+                              onFinished: _kapat,
+                              reducedMotion: _plan.scene == AppOpenScene.still,
+                              kisa: _plan.scene == AppOpenScene.short,
+                            ),
                     ),
                   ),
                 ),

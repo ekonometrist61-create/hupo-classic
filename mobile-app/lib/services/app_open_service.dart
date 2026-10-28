@@ -53,8 +53,9 @@ class AppOpenPlan {
       kind == AppOpenKind.firstLaunch && scene == AppOpenScene.full;
 }
 
-/// Tam "Kanat İmzası" sahnesinin hedef süresi (ilk açılış).
-const Duration kHupoSahneToplam = Duration(milliseconds: 2000);
+/// İlk açılış filminin ("Kelime Evreni", bkz. HupoGirisFilmi) süresi. Atlanabilir (dokununca).
+/// Zaman çizelgesi saniye cinsinden yazıldığı için bu değer değişirse film hızlanır/yavaşlar.
+const Duration kHupoSahneToplam = Duration(milliseconds: 5000);
 
 /// Sonraki açılışlarda kısa sahnenin süresi (hedef ≤ 900 ms).
 const Duration kHupoKisaSahne = Duration(milliseconds: 900);

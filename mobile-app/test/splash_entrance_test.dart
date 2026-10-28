@@ -17,6 +17,7 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:ogrenci_hazirlik/screens/splash_screen.dart';
 import 'package:ogrenci_hazirlik/services/app_open_service.dart';
 import 'package:ogrenci_hazirlik/settings/app_settings.dart';
+import 'package:ogrenci_hazirlik/widgets/splash/hupo_giris_filmi.dart';
 import 'package:ogrenci_hazirlik/widgets/splash/hupo_signature_entrance.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -38,13 +39,14 @@ void main() {
   });
 
   group('planAppOpen', () {
-    test('ilk açılışta tam sahne 1600 ms ve marka sesi', () {
+    test('ilk açılışta giriş filmi (5 sn) ve marka sesi', () {
       final plan = planAppOpen(
         kind: AppOpenKind.firstLaunch,
         reducedMotion: false,
       );
       expect(plan.scene, AppOpenScene.full);
       expect(plan.duration, kHupoSahneToplam);
+      expect(kHupoSahneToplam, const Duration(milliseconds: 5000));
       expect(plan.playBrandSound, isTrue);
     });
 
@@ -145,7 +147,7 @@ void main() {
   });
 
   group('SplashGate', () {
-    testWidgets('ilk açılışta tam sahne oynar', (tester) async {
+    testWidgets('ilk açılışta giriş filmi oynar', (tester) async {
       SharedPreferences.setMockInitialValues({});
       final prefs = await SharedPreferences.getInstance();
 
@@ -159,11 +161,12 @@ void main() {
       ));
       await tester.pump();
 
-      expect(find.byType(HupoSignatureEntrance), findsOneWidget);
+      expect(find.byType(HupoGirisFilmi), findsOneWidget);
+      expect(find.byType(HupoSignatureEntrance), findsNothing);
       expect(find.byType(_IsaretMetni), findsOneWidget);
     });
 
-    testWidgets('sahne bitince içerik açığa çıkar ve bayrak işaretlenir',
+    testWidgets('film bitince içerik açığa çıkar ve bayrak işaretlenir',
         (tester) async {
       SharedPreferences.setMockInitialValues({});
       final prefs = await SharedPreferences.getInstance();
@@ -178,11 +181,13 @@ void main() {
       ));
       await tester.pump();
 
-      await tester.pump(kSignatureEntranceDuration);
+      // Hazırlık zaman aşımı (1,5 sn) + ses bekleme (0,35 sn), sonra film süresi.
+      await tester.pump(const Duration(milliseconds: 2000));
+      await tester.pump(kHupoSahneToplam);
       await tester.pump(const Duration(milliseconds: 400));
       await tester.pumpAndSettle();
 
-      expect(find.byType(HupoSignatureEntrance), findsNothing);
+      expect(find.byType(HupoGirisFilmi), findsNothing);
       expect(firstGreetingDone(prefs), isTrue);
     });
   });

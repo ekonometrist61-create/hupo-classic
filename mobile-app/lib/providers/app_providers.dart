@@ -11,6 +11,7 @@ import '../models/league_models.dart';
 import '../models/membership_models.dart';
 import '../models/mock_exam_models.dart';
 import '../models/models.dart';
+import '../models/mufredat_models.dart';
 import '../models/privacy_models.dart';
 import '../models/review_models.dart';
 import '../models/survey_models.dart';
@@ -38,6 +39,11 @@ final subjectsProvider = FutureProvider.autoDispose<List<SubjectInfo>>(
 final topicProgressProvider = FutureProvider.autoDispose
     .family<List<TopicProgress>, String>(
         (ref, ders) => ref.watch(quizRepositoryProvider).fetchTopicProgress(ders));
+
+/// Müfredat yolu: bir dersin haftaları ve kazanım sayıları (öğrencinin sınıfına göre sunucuda süzülür).
+final mufredatHaritasiProvider = FutureProvider.autoDispose
+    .family<MufredatHaritasi, String>(
+        (ref, ders) => ref.watch(quizRepositoryProvider).fetchMufredatHaritasi(ders));
 
 final dueCountProvider = FutureProvider.autoDispose<int>(
     (ref) => ref.watch(quizRepositoryProvider).fetchDueCount());
@@ -197,6 +203,9 @@ final bookmarksProvider = StateNotifierProvider<BookmarksNotifier, Set<String>>(
 });
 
 final supportedGradesProvider = FutureProvider.autoDispose<List<int>>((ref) async {
+  // Admin tüm sınıfları gezebilir (sunucu tarafı _sinif_yaz 1-12'ye izin verir).
+  final profil = await ref.watch(profileProvider.future);
+  if (profil?.role == 'admin') return [for (var g = 1; g <= 12; g++) g];
   return ref.watch(quizRepositoryProvider).fetchSupportedGrades();
 });
 

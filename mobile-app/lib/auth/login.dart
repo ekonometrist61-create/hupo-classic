@@ -5,6 +5,7 @@ import '../services/web_links.dart';
 import '../theme/app_theme.dart';
 import 'auth_widgets.dart';
 import 'signup.dart';
+import 'turnstile.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -29,11 +30,15 @@ class _LoginScreenState extends State<LoginScreen> {
 
   Future<void> _login() async {
     if (!_formKey.currentState!.validate()) return;
+    final captcha = await turnstileTokenAl(context);
+    if (captcha == null) return; // kullanici vazgecti
+    if (!mounted) return;
     setState(() => _loading = true);
     try {
       await Supabase.instance.client.auth.signInWithPassword(
         email: _emailController.text.trim(),
         password: _passwordController.text,
+        captchaToken: captcha.isEmpty ? null : captcha,
       );
       // Giriş kaydı (W7) yardımcıdır: hata yutulur, girişi bozmaz.
       try {

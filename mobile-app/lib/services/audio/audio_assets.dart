@@ -16,7 +16,8 @@ abstract final class AudioAssets {
   static const _root = 'assets/audio';
 
   static const Map<AudioEvent, _Entry> _map = {
-    AudioEvent.brand: _Entry('$_root/brand/hupo_marka_sesi.mp3', AudioChannel.wow, 0.80),
+    // Giriş filminin sesi (5 sn, AAC): imza notaları filmle zamanlanmıştır (docs/splash/GIRIS_FILMI.md).
+    AudioEvent.brand: _Entry('$_root/brand/hupo_giris_sesi.m4a', AudioChannel.wow, 0.90),
 
     AudioEvent.correct: _Entry('$_root/learning/hupo_dogru_cevap.mp3', AudioChannel.learning, 0.60),
     AudioEvent.retry: _Entry('$_root/learning/hupo_bir_daha_dene.mp3', AudioChannel.learning, 0.55),

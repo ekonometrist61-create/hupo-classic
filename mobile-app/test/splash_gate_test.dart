@@ -3,6 +3,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:ogrenci_hazirlik/screens/splash_screen.dart';
 import 'package:ogrenci_hazirlik/settings/app_settings.dart';
+import 'package:ogrenci_hazirlik/services/app_open_service.dart';
+import 'package:ogrenci_hazirlik/widgets/splash/hupo_giris_filmi.dart';
 import 'package:ogrenci_hazirlik/widgets/splash/hupo_signature_entrance.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -33,17 +35,18 @@ void main() {
     await tester.pump();
 
     expect(find.text('asıl uygulama'), findsOneWidget);
-    expect(find.byType(HupoSignatureEntrance), findsOneWidget);
+    expect(find.byType(HupoGirisFilmi), findsOneWidget);
 
     // Kapanmadan önce: karşılama hâlâ var.
     await tester.pump(const Duration(milliseconds: 1000));
-    expect(find.byType(HupoSignatureEntrance), findsOneWidget);
+    expect(find.byType(HupoGirisFilmi), findsOneWidget);
 
-    // Sahne bitince solar (350 ms), sonra ağaçtan kalkar.
-    await tester.pump(kSignatureEntranceDuration);
+    // Hazırlık + ses bekleme (≤ 1,85 sn), film süresi, solma (350 ms); sonra ağaçtan kalkar.
+    await tester.pump(const Duration(milliseconds: 1000));
+    await tester.pump(kHupoSahneToplam);
     await tester.pump(const Duration(milliseconds: 400));
     await tester.pumpAndSettle();
-    expect(find.byType(HupoSignatureEntrance), findsNothing);
+    expect(find.byType(HupoGirisFilmi), findsNothing);
     expect(find.text('asıl uygulama'), findsOneWidget);
   });
 
@@ -78,16 +81,16 @@ void main() {
       (tester) async {
     await tester.pumpWidget(await _uygulama());
     await tester.pump(const Duration(milliseconds: 200));
-    await tester.tap(find.byType(HupoSignatureEntrance));
+    await tester.tap(find.byType(HupoGirisFilmi));
     await tester.pump(const Duration(milliseconds: 500));
     // Hâlâ oynuyor (eşik dolmadı).
-    expect(find.byType(HupoSignatureEntrance), findsOneWidget);
+    expect(find.byType(HupoGirisFilmi), findsOneWidget);
 
     await tester.pump(const Duration(milliseconds: 100));
-    await tester.tap(find.byType(HupoSignatureEntrance));
+    await tester.tap(find.byType(HupoGirisFilmi));
     await tester.pump(const Duration(milliseconds: 400));
     await tester.pumpAndSettle();
-    expect(find.byType(HupoSignatureEntrance), findsNothing);
+    expect(find.byType(HupoGirisFilmi), findsNothing);
     expect(find.text('asıl uygulama'), findsOneWidget);
   });
 
