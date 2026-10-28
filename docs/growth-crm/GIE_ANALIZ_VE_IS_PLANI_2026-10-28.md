@@ -356,3 +356,8 @@ Bu bölüm §2 (Customer-Lab/HupoMentor satırı), §6 Faz 6, §7 ve §8'in yeri
 6. Mobil entegrasyon: BACKLOG-M1.
 7. Kullanıcı: tarayıcı kontrolü (yönetici girişiyle), hukuk (108/109 saklama, çerez metni, HupoMentor), web paneli dağıtımı.
 **Görüntü yeri:** yönetim paneli (Vercel) üzerinden yetkili yönetici girişi. Python araçları (ajan, kalite, analiz, Customer-Lab) yerelde, Oracle'da değil.
+
+## 35. Büyüme Özeti ve dağıtım adımı (2026-10-28)
+- `/yonetim/buyume-ozeti`: statik merkez sayfa (ekran bağlantıları, ekranı olmayan işler, açık işler). `tsc` ve `eslint` temiz; tarayıcı kontrolü yapılmadı.
+- **Dağıtım sırası:** (1) `git push` (30 commit önde) → (2) Vercel önizleme dağıtımı → (3) yönetici girişiyle her ekranın kontrolü → (4) üretim. Push ve dağıtım kullanıcı onayı bekliyor.
+- **Açık işlerin türü:** Kartsız deneme (ürün + hukuk kararı), A varyantı metni (ajan taslağı + proje sahibi onayı), referans ölçümü (mağaza yayını tetikler), mobil BACKLOG-M1 (ertelendi) kod yazılarak çözülemez; sahip kararı gerekir. Sandbox ödeme testi sağlayıcı sandbox anahtarı gerektirir.
