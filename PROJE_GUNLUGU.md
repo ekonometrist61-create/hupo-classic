@@ -4742,3 +4742,7 @@ Paketler:
 
 ### K-0186 · 2026-10-28 · VT/YÖN · A1 uzakta uygulandı (onaylı, katalog doğrulandı); A3 deney ekranı (tsc/eslint temiz)
 - Karar kaydı (analiz sonucunun DB'ye yazılması) ayrı onay gerektirir.
+
+### K-0187 · 2026-10-28 · VT · A3 karar kaydı uzakta (onaylı, remote=20261122); test 12/12
+- Sınır: sayılar yönetici girişli; olay verisi (dönüşüm) DB'de yok → yeniden hesaplama yok.
+- Karar formu arayüzü henüz yok.
