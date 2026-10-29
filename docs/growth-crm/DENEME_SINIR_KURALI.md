@@ -71,8 +71,8 @@
 ## 8. Güncel durum (2026-10-29, son)
 
 - Uzak DB: `20261125000000` ve `20261126000000` uygulandı ve doğrulandı (20/20, premium_gating açık, görünürlük RPC'si, yönetici okuma).
-- Uzak DB: `20261127000000` (deneme sınavı kapısı: süresi bitmiş ya da ücretsiz hanede P0403) **uygulanmadı**; otomatik mod bu production yazımını reddetti. Proje sahibinin açık izni gerekiyor.
+- Uzak DB: `20261127000000` (deneme sınavı kapısı: süresi bitmiş ya da ücretsiz hanede P0403) proje sahibinin onayıyla uygulandı ve doğrulandı.
 - Web: Vercel production'a deploy edildi (`web-panel` 0.4.0 sürüm numarası, master tabanlı snapshot + bu turun dosyaları). Tip denetimi temiz.
 - Mobil: çocuk "Ücretsiz deneme" kartı (profil), meydan okuma ve kelime sınır metinleri, sürüm 1.4.0+6. Analiz temiz. İmzalı yayın için `key.properties` yok; mağaza yüklemesi yapılmadı.
 - Çarpım şifreleri: mobil uygulamada çağıran ekran yok (`submit_cipher_answer` yalnız model); sınır sunucuda hazır, çocuk arayüzü yok.
-- Açık kalan: 20261127'nin uygulanması; sürüm etiketleri (`app-v1.4.0`, `panel-v0.4.0`) master'a birleştirme sonrası.
+- Açık kalan: sürüm etiketleri (`app-v1.4.0`, `panel-v0.4.0`) master'a birleştirme sonrası.
