@@ -7,13 +7,33 @@ import {
   writeAnalyticsConsent,
 } from "@/lib/analytics/consent";
 import { useTranslations } from "next-intl";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 // Çerez onay bandı. Kabul ve reddet aynı görsel ağırlıktadır; reddetmek kabul etmek kadar
 // kolaydır. Zorunlu oturum çerezleri onaya bağlı değildir.
 export default function CookieConsent() {
   const t = useTranslations("cookie");
   const [gorunur, setGorunur] = useState(false);
+  const bantRef = useRef<HTMLElement | null>(null);
+
+  // Bant sabit (fixed) olduğu için sayfanın alt içeriğini örter. Görünürken sayfanın altına
+  // bandın yüksekliği kadar boşluk bırakılır; içerik bandın üstüne kaydırılabilir.
+  useEffect(() => {
+    if (!gorunur) return;
+    const bant = bantRef.current;
+    if (!bant) return;
+    const onceki = document.body.style.paddingBottom;
+    const uygula = () => {
+      document.body.style.paddingBottom = `${bant.offsetHeight}px`;
+    };
+    uygula();
+    const gozlemci = new ResizeObserver(uygula);
+    gozlemci.observe(bant);
+    return () => {
+      gozlemci.disconnect();
+      document.body.style.paddingBottom = onceki;
+    };
+  }, [gorunur]);
 
   useEffect(() => {
     // Karar yoksa veya metin sürümü değiştiyse banner gösterilir.
@@ -34,6 +54,7 @@ export default function CookieConsent() {
   // Tek satır: kısa metin, "Tercihler" (gizlilik sayfası) ve iki eşit ağırlıklı karar düğmesi.
   return (
     <section
+      ref={bantRef}
       aria-labelledby="cookie-baslik"
       className="fixed inset-x-0 bottom-0 z-50 border-t border-navy/10 bg-white px-4 py-3 shadow-lg"
     >

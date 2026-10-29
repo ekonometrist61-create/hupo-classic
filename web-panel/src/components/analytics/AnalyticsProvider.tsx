@@ -5,7 +5,12 @@ import {
   readAnalyticsConsent,
   type AnalyticsConsent,
 } from "@/lib/analytics/consent";
-import posthog from "posthog-js";
+import {
+  analitikIstemcisi,
+  analitikIstemcisiVarsa,
+  type AnalitikIstemcisi,
+} from "@/lib/analytics/posthog-istemci";
+import { utmOzellikleri, utmYakala } from "@/lib/analytics/utm";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
@@ -13,32 +18,17 @@ import { useEffect } from "react";
 // sayfaları bilerek dışarıda: URL'lerinde kişisel veya oturum parametreleri olabilir.
 const IZINLI_YOLLAR = new Set(["/", "/demo", "/gizlilik", "/kosullar"]);
 
-let baslatildi = false;
 // Aynı yolun iki kez gönderilmemesi için son gönderilen yol.
 let sonGonderilenYol: string | null = null;
 
-function analitigiBaslat(anahtar: string) {
-  if (baslatildi) return;
-  baslatildi = true;
-  posthog.init(anahtar, {
-    api_host: process.env.NEXT_PUBLIC_POSTHOG_HOST || "https://eu.i.posthog.com",
-    // Kişisel profil oluşturulmaz, oturum kaydı ve otomatik olay yakalama kapalıdır.
-    person_profiles: "identified_only",
-    autocapture: false,
-    capture_pageview: false,
-    capture_pageleave: false,
-    disable_session_recording: true,
-    respect_dnt: true,
-    persistence: "localStorage",
-  });
-}
-
-function sayfaGoruntusuGonder(yol: string) {
+function sayfaGoruntusuGonder(posthog: AnalitikIstemcisi, yol: string) {
   if (!IZINLI_YOLLAR.has(yol) || sonGonderilenYol === yol) return;
   sonGonderilenYol = yol;
   // URL'yi sorgu parametresiz, kendimiz kurarak gönderiyoruz.
   posthog.capture("$pageview", {
     $current_url: `${window.location.origin}${yol}`,
+    // İlk temas UTM'si (yalnız onaylıysa dolu; izinli 4 alan).
+    ...utmOzellikleri(),
   });
 }
 
@@ -48,15 +38,23 @@ export default function AnalyticsProvider() {
 
   useEffect(() => {
     const anahtar = process.env.NEXT_PUBLIC_POSTHOG_KEY;
+    // İlk temas UTM'si yalnız bellekte yakalanır (rıza öncesi depoya yazılmaz).
+    utmYakala();
     if (!anahtar) return;
 
     const uygula = (durum: AnalyticsConsent | null) => {
       if (durum === "granted") {
-        analitigiBaslat(anahtar);
-        posthog.opt_in_capturing();
-        sayfaGoruntusuGonder(window.location.pathname);
-      } else if (baslatildi) {
-        posthog.opt_out_capturing();
+        analitikIstemcisi(anahtar)
+          .then((posthog) => {
+            posthog.opt_in_capturing();
+            sayfaGoruntusuGonder(posthog, window.location.pathname);
+          })
+          .catch(() => {
+            // Betik yüklenemezse sayfa etkilenmez; ölçüm sessizce atlanır.
+          });
+      } else {
+        // Betik hiç yüklenmemişse (null) kapatılacak bir şey yok.
+        analitikIstemcisiVarsa()?.then((posthog) => posthog.opt_out_capturing()).catch(() => {});
       }
     };
 
@@ -71,8 +69,8 @@ export default function AnalyticsProvider() {
 
   // İstemci gezinmesinde yol değişince (onay verildiyse) görüntü gönderilir.
   useEffect(() => {
-    if (!baslatildi || readAnalyticsConsent() !== "granted") return;
-    sayfaGoruntusuGonder(pathname);
+    if (readAnalyticsConsent() !== "granted") return;
+    analitikIstemcisiVarsa()?.then((posthog) => sayfaGoruntusuGonder(posthog, pathname)).catch(() => {});
   }, [pathname]);
 
   return null;

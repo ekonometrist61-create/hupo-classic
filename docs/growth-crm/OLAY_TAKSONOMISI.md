@@ -31,6 +31,14 @@ PostHog ayarı: `autocapture: false`, `person_profiles: identified_only`, oturum
 | `fiyat_tiklandi` | Fiyat bağlantısı: `PricingSection.tsx` (`TrackedLink`) | yok | Yok | granted | Var |
 | `$pageview` | Sayfa açılışı; yalnız `/`, `/demo`, `/gizlilik`, `/kosullar` (`AnalyticsProvider`) | `$current_url` (sorgusuz) | Yok | granted | Var |
 
+**İlk temas UTM'si (2026-10-29, K-0199):** Yukarıdaki beş olaya (`hero_cta_tiklandi`, `demo_tamamlandi`,
+`veli_kayit_baslatildi`, `fiyat_tiklandi`, `$pageview`) ek özellikler: `utm_source`, `utm_medium`,
+`utm_campaign`, `utm_content` (varsa; `utm_term` yok). Kaynak: `web-panel/src/lib/analytics/utm.ts`.
+Kurallar: URL'den yalnız bellekte yakalanır; rıza (`granted`) öncesi hiçbir depoya yazılmaz; rıza sonrası
+oturum kapsamlı `sessionStorage` (`hupo_utm_oturum`), oturumda ilk değer korunur; değer deseni
+`[A-Za-z0-9._~-]{1,100}`; PII yok. Not: `erken_erisim_gonderildi` kalıcı (`localStorage`, `hupo_utm`) kendi
+ilk-temas kaydını kullanır ve sayfaya bağlı değildir; ikisi ayrıdır.
+
 ## 3. Web veritabanı olayı (anonim ziyaretçi)
 
 Kaynak: `growth-web-izle` Edge Function → `growth_web_olay_kaydet` (`growth_events`, `source='web'`).

@@ -168,36 +168,47 @@ test.describe("events.ts: trackLandingEvent rıza kapısı", () => {
   test("onay yokken posthog.capture çağrılmaz; onay varken çağrılır", async () => {
     // CJS paketlerde dinamik import'un "default"u ile modülün gerçek örneği farklı nesne olabilir.
     // Olası iki adayın da capture'ını yakalıyoruz; events.ts hangisini kullanırsa kullansın görülür.
-    type PH = { capture: (...a: unknown[]) => unknown };
-    const esle = (x: unknown): x is PH => typeof (x as PH | undefined)?.capture === "function";
+    // Üretimde (webpack/Turbopack) "default" doğrudan posthog örneğidir; Playwright'in native ESM
+    // yüklemesinde ise sarmalayıcıdır. Modülün gördüğü nesneyi stub'lamak için adayların hepsini alıyoruz.
+    type PH = { capture?: unknown; init?: unknown };
     const pm = (await import("posthog-js")) as unknown as { default?: unknown };
-    const adaylar = [...new Set([pm.default, (pm.default as { default?: unknown } | undefined)?.default])].filter(esle);
+    const adaylar = [...new Set([pm.default, (pm.default as { default?: unknown } | undefined)?.default])].filter(
+      (x): x is PH => typeof x === "object" && x !== null,
+    );
     expect(adaylar.length).toBeGreaterThan(0);
 
+    // posthog-js tembel yüklenir ve init edilir; testte init gerçek ağ/tarayıcı kurmadan stub'lanır.
     const orijinaller = adaylar.map((p) => p.capture);
+    const orijinalInit = adaylar.map((p) => p.init);
     const cagrilar: unknown[][] = [];
     adaylar.forEach((p) => {
       p.capture = (...a: unknown[]) => {
         cagrilar.push(a);
       };
+      p.init = () => undefined;
     });
+    const eskiAnahtar = process.env.NEXT_PUBLIC_POSTHOG_KEY;
+    process.env.NEXT_PUBLIC_POSTHOG_KEY = "test-anahtar";
     try {
       const olaylar = await import("../src/lib/analytics/events");
 
       tarayiciKur({});
-      olaylar.trackLandingEvent("hero_cta_tiklandi");
+      await olaylar.trackLandingEvent("hero_cta_tiklandi");
       tarayiciKur({ [ANALYTICS_CONSENT_KEY]: onayKaydi("denied") });
-      olaylar.trackLandingEvent("fiyat_tiklandi");
+      await olaylar.trackLandingEvent("fiyat_tiklandi");
       expect(cagrilar).toHaveLength(0);
 
       tarayiciKur({ [ANALYTICS_CONSENT_KEY]: onayKaydi("granted") });
-      olaylar.trackLandingEvent("hero_cta_tiklandi");
+      await olaylar.trackLandingEvent("hero_cta_tiklandi");
       expect(cagrilar).toHaveLength(1);
       expect(cagrilar[0][0]).toBe("hero_cta_tiklandi");
     } finally {
       adaylar.forEach((p, i) => {
         p.capture = orijinaller[i];
+        p.init = orijinalInit[i];
       });
+      if (eskiAnahtar === undefined) delete process.env.NEXT_PUBLIC_POSTHOG_KEY;
+      else process.env.NEXT_PUBLIC_POSTHOG_KEY = eskiAnahtar;
     }
   });
 });
