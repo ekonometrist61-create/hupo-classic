@@ -1,0 +1,1502 @@
+[
+ {
+  "id": "MAT1-ENC-S1-001",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "kare",
+   "C": "dikdörtgen",
+   "D": "üçgen"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "üçgen: 7 tane",
+   "kare: 2 tane",
+   "daire: 5 tane",
+   "En çok olan şekil üçgendir",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "daire sayısı (5) en çok olandan azdır.",
+   "B": "kare sayısı (2) en çok olandan azdır.",
+   "C": "Şekilde dikdörtgen yoktur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><circle cx=\"215.81\" cy=\"34.04\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"31.47,109.76 15.47,139.76 47.47,139.76\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"219.3,107.78 203.3,137.78 235.3,137.78\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"68.64\" y=\"64.68\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"259.58,110.38 243.58,140.38 275.58,140.38\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"169.18\" cy=\"79.35\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"265.78,17.29 249.78,47.29 281.78,47.29\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"218.91,65.23 202.91,95.23 234.91,95.23\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"82.78,16.46 66.78,46.46 98.78,46.46\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"121.49\" cy=\"32.79\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"30.1\" cy=\"31.24\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"123.51,107.52 107.51,137.52 139.51,137.52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"167.78\" cy=\"123.95\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"112.47\" y=\"61.93\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 7
+     },
+     {
+      "sekil": "kare",
+      "sayi": 2
+     },
+     {
+      "sekil": "daire",
+      "sayi": 5
+     }
+    ],
+    "tohum": 72075
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "ucgen"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-002",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "kare",
+   "C": "üçgen",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "daire: 7 tane",
+   "üçgen: 2 tane",
+   "kare: 6 tane",
+   "En çok olan şekil dairedir",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "kare sayısı (6) en çok olandan azdır.",
+   "C": "üçgen sayısı (2) en çok olandan azdır.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><circle cx=\"216\" cy=\"75.59\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"123.5\" cy=\"124.14\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"109.04\" y=\"61.38\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"201.23\" y=\"20.85\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"251.99\" y=\"62.86\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"125.04,18.97 109.04,48.97 141.04,48.97\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"252.4\" y=\"20.83\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"79.41\" cy=\"75.73\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"68.57\" y=\"19.19\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"29.06,110.44 13.06,140.44 45.06,140.44\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"260.21\" cy=\"128.47\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"154.1\" y=\"107.4\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"79.02\" cy=\"122.2\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"31.33\" cy=\"35.48\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"168.2\" cy=\"33.9\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 7
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 2
+     },
+     {
+      "sekil": "kare",
+      "sayi": 6
+     }
+    ],
+    "tohum": 15328
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "daire"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-003",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "üçgen",
+   "B": "kare",
+   "C": "daire",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "kare: 1 tane",
+   "üçgen: 5 tane",
+   "daire: 7 tane",
+   "En çok olan şekil dairedir",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "üçgen sayısı (5) en çok olandan azdır.",
+   "B": "kare sayısı (1) en çok olandan azdır.",
+   "C": "Doğru.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><circle cx=\"79.78\" cy=\"35.19\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"127.85\" cy=\"35.43\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"261.63\" cy=\"32.51\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"170.34,105.68 154.34,135.68 186.34,135.68\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"264.21,62.13 248.21,92.13 280.21,92.13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"79.09\" cy=\"123.44\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"173,64.52 157,94.52 189,94.52\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"29.37,63.97 13.37,93.97 45.37,93.97\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"35.07\" cy=\"126.86\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"215.73\" cy=\"79.59\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"122.56,65.22 106.56,95.22 138.56,95.22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"17.97\" y=\"18.84\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"169.16\" cy=\"34.84\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 1
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 5
+     },
+     {
+      "sekil": "daire",
+      "sayi": 7
+     }
+    ],
+    "tohum": 23850
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "daire"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-004",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "üçgen",
+   "C": "kare",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "kare: 3 tane",
+   "daire: 5 tane",
+   "üçgen: 7 tane",
+   "En çok olan şekil üçgendir",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "daire sayısı (5) en çok olandan azdır.",
+   "B": "Doğru.",
+   "C": "kare sayısı (3) en çok olandan azdır.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><circle cx=\"171.69\" cy=\"124.77\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"36.79\" cy=\"123.23\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"33.73\" cy=\"82.19\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"81.82,59.14 65.82,89.14 97.82,89.14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"249.39\" y=\"68.46\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"125.23,13.77 109.23,43.77 141.23,43.77\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"77.81,20.37 61.81,50.37 93.81,50.37\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"123.94\" cy=\"80.65\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"33.49,17.92 17.49,47.92 49.49,47.92\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"81.8,107.95 65.8,137.95 97.8,137.95\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"251.85\" y=\"20.11\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"167.26,61.29 151.26,91.29 183.26,91.29\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"219.22,64.79 203.22,94.79 235.22,94.79\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"124.6\" cy=\"127.82\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"155.77\" y=\"22.1\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 3
+     },
+     {
+      "sekil": "daire",
+      "sayi": 5
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 7
+     }
+    ],
+    "tohum": 92334
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "ucgen"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-005",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "üçgen",
+   "C": "kare",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "daire: 7 tane",
+   "kare: 1 tane",
+   "üçgen: 3 tane",
+   "En çok olan şekil dairedir",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "üçgen sayısı (3) en çok olandan azdır.",
+   "C": "kare sayısı (1) en çok olandan azdır.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><circle cx=\"169.27\" cy=\"30.8\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"213.81\" cy=\"82.9\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"31.43\" cy=\"78.86\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"174.92,63.75 158.92,93.75 190.92,93.75\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"259.96,63.27 243.96,93.27 275.96,93.27\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"213.56\" cy=\"34.97\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"110.24\" y=\"16.67\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"81.32\" cy=\"127.85\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"124.2\" cy=\"75.51\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"168.32\" cy=\"128.82\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"215.19,107.53 199.19,137.53 231.19,137.53\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 7
+     },
+     {
+      "sekil": "kare",
+      "sayi": 1
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 3
+     }
+    ],
+    "tohum": 88123
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "daire"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-006",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "üçgen",
+   "C": "daire",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "üçgen: 6 tane",
+   "daire: 2 tane",
+   "kare: 3 tane",
+   "En çok olan şekil üçgendir",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "kare sayısı (3) en çok olandan azdır.",
+   "B": "Doğru.",
+   "C": "daire sayısı (2) en çok olandan azdır.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><polygon points=\"128.7,66.09 112.7,96.09 144.7,96.09\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"171.06\" cy=\"36.26\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"215.83,105.81 199.83,135.81 231.83,135.81\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"263.21,108.35 247.21,138.35 279.21,138.35\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"169.2,111.16 153.2,141.16 185.2,141.16\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"112.81\" y=\"110.84\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"215.59,60.01 199.59,90.01 231.59,90.01\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"29.12\" cy=\"31.85\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"205.19\" y=\"16.32\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"173.01,62.85 157.01,92.85 189.01,92.85\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"108.91\" y=\"15.14\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 6
+     },
+     {
+      "sekil": "daire",
+      "sayi": 2
+     },
+     {
+      "sekil": "kare",
+      "sayi": 3
+     }
+    ],
+    "tohum": 89398
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "ucgen"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-007",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "üçgen",
+   "B": "kare",
+   "C": "dikdörtgen",
+   "D": "daire"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "üçgen: 4 tane",
+   "kare: 2 tane",
+   "daire: 6 tane",
+   "En çok olan şekil dairedir",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "üçgen sayısı (4) en çok olandan azdır.",
+   "B": "kare sayısı (2) en çok olandan azdır.",
+   "C": "Şekilde dikdörtgen yoktur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><polygon points=\"167.44,13.6 151.44,43.6 183.44,43.6\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"128.5\" cy=\"30.68\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"80.21\" cy=\"30.44\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"216.61\" cy=\"30.03\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"262.79,107.63 246.79,137.63 278.79,137.63\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"29.37,13.32 13.37,43.32 45.37,43.32\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"218.51,59.77 202.51,89.77 234.51,89.77\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"32.44\" cy=\"76.35\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"153.1\" y=\"113.23\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"124.31\" cy=\"76.13\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"124.31\" cy=\"128.62\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"15.61\" y=\"113.74\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 4
+     },
+     {
+      "sekil": "kare",
+      "sayi": 2
+     },
+     {
+      "sekil": "daire",
+      "sayi": 6
+     }
+    ],
+    "tohum": 25235
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "daire"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-008",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "daire",
+   "C": "üçgen",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "daire: 1 tane",
+   "kare: 2 tane",
+   "üçgen: 7 tane",
+   "En çok olan şekil üçgendir",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "kare sayısı (2) en çok olandan azdır.",
+   "B": "daire sayısı (1) en çok olandan azdır.",
+   "C": "Doğru.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><polygon points=\"170.13,13.97 154.13,43.97 186.13,43.97\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"216.11,14.85 200.11,44.85 232.11,44.85\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"174.41,59.5 158.41,89.5 190.41,89.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"112.94\" y=\"22.26\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"125.03,63.11 109.03,93.11 141.03,93.11\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"264.36,20.4 248.36,50.4 280.36,50.4\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"34.34,62.05 18.34,92.05 50.34,92.05\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"264.66,110.78 248.66,140.78 280.66,140.78\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"168.18\" cy=\"124.82\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"64.44\" y=\"21.62\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 1
+     },
+     {
+      "sekil": "kare",
+      "sayi": 2
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 7
+     }
+    ],
+    "tohum": 32972
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "ucgen"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-009",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "üçgen",
+   "B": "daire",
+   "C": "kare",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "kare: 2 tane",
+   "daire: 7 tane",
+   "üçgen: 6 tane",
+   "En çok olan şekil dairedir",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "üçgen sayısı (6) en çok olandan azdır.",
+   "B": "Doğru.",
+   "C": "kare sayısı (2) en çok olandan azdır.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><circle cx=\"30.37\" cy=\"121.69\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"217.47,17.75 201.47,47.75 233.47,47.75\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"169.3\" cy=\"77.83\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"200.78\" y=\"67.22\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"31.09,15.42 15.09,45.42 47.09,45.42\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"171.67\" cy=\"125.79\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"171.95\" cy=\"35.07\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"264.46,66.97 248.46,96.97 280.46,96.97\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"77.07,64.62 61.07,94.62 93.07,94.62\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"219.35,111.12 203.35,141.12 235.35,141.12\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"112.52\" y=\"65.75\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"32.2\" cy=\"79.08\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"259.38,17.06 243.38,47.06 275.38,47.06\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"125.15\" cy=\"125.6\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"122.46\" cy=\"33.32\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 2
+     },
+     {
+      "sekil": "daire",
+      "sayi": 7
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 6
+     }
+    ],
+    "tohum": 79183
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "daire"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-010",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "üçgen",
+   "B": "kare",
+   "C": "daire",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "daire: 5 tane",
+   "kare: 2 tane",
+   "üçgen: 3 tane",
+   "En çok olan şekil dairedir",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "üçgen sayısı (3) en çok olandan azdır.",
+   "B": "kare sayısı (2) en çok olandan azdır.",
+   "C": "Doğru.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><rect x=\"62.49\" y=\"111.94\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"63.24\" y=\"17.2\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"265.72\" cy=\"122.47\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"80.9,65.52 64.9,95.52 96.9,95.52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"33.47\" cy=\"35.02\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"29.83\" cy=\"82.7\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"34.18\" cy=\"126.25\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"214.22\" cy=\"126.29\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"168.29,109.76 152.29,139.76 184.29,139.76\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"171.28,59.51 155.28,89.51 187.28,89.51\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 5
+     },
+     {
+      "sekil": "kare",
+      "sayi": 2
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 3
+     }
+    ],
+    "tohum": 30752
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "daire"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-011",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "üçgen",
+   "C": "dikdörtgen",
+   "D": "kare"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "daire: 3 tane",
+   "üçgen: 2 tane",
+   "kare: 4 tane",
+   "En çok olan şekil karedir",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "daire sayısı (3) en çok olandan azdır.",
+   "B": "üçgen sayısı (2) en çok olandan azdır.",
+   "C": "Şekilde dikdörtgen yoktur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><polygon points=\"35.9,14.69 19.9,44.69 51.9,44.69\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"78.76\" cy=\"34.13\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"112.07\" y=\"17.41\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"78.8\" cy=\"80.71\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"153.56\" y=\"20.3\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"159.27\" y=\"65.23\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"219.12,18.35 203.12,48.35 235.12,48.35\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"259.99\" cy=\"80.28\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"107.84\" y=\"61.24\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 3
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 2
+     },
+     {
+      "sekil": "kare",
+      "sayi": 4
+     }
+    ],
+    "tohum": 76240
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "kare"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-012",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "daire",
+   "C": "üçgen",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "kare: 5 tane",
+   "üçgen: 1 tane",
+   "daire: 3 tane",
+   "En çok olan şekil karedir",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "daire sayısı (3) en çok olandan azdır.",
+   "C": "üçgen sayısı (1) en çok olandan azdır.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><circle cx=\"220.57\" cy=\"77.53\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"206.81\" y=\"16.29\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"250.36\" y=\"20.19\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"170.39\" cy=\"33.08\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"109.85\" y=\"16.87\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"155.53\" y=\"68.5\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"19.26\" y=\"68.33\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"29.77,16.28 13.77,46.28 45.77,46.28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"260.46\" cy=\"79.91\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 5
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 1
+     },
+     {
+      "sekil": "daire",
+      "sayi": 3
+     }
+    ],
+    "tohum": 42917
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "kare"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-013",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "üçgen",
+   "C": "kare",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "üçgen: 3 tane",
+   "daire: 5 tane",
+   "kare: 1 tane",
+   "En çok olan şekil dairedir",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "üçgen sayısı (3) en çok olandan azdır.",
+   "C": "kare sayısı (1) en çok olandan azdır.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><circle cx=\"82.45\" cy=\"76.67\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"124.5,66.56 108.5,96.56 140.5,96.56\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"127.83\" cy=\"34.71\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"75.43,16.15 59.43,46.15 91.43,46.15\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"167.08,19.78 151.08,49.78 183.08,49.78\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"260.34\" cy=\"34.28\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"171.44\" cy=\"76.06\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"18.09\" y=\"64.15\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"36.99\" cy=\"33.83\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 3
+     },
+     {
+      "sekil": "daire",
+      "sayi": 5
+     },
+     {
+      "sekil": "kare",
+      "sayi": 1
+     }
+    ],
+    "tohum": 92369
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "daire"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-014",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "üçgen",
+   "C": "dikdörtgen",
+   "D": "kare"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "daire: 2 tane",
+   "üçgen: 1 tane",
+   "kare: 7 tane",
+   "En çok olan şekil karedir",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "daire sayısı (2) en çok olandan azdır.",
+   "B": "üçgen sayısı (1) en çok olandan azdır.",
+   "C": "Şekilde dikdörtgen yoktur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><rect x=\"199.97\" y=\"110.22\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"219.69\" cy=\"36.34\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"168.3,15.84 152.3,45.84 184.3,45.84\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"66.2\" y=\"65.02\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"15.62\" y=\"63.81\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"29.51\" cy=\"124.74\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"154.35\" y=\"62.93\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"107.03\" y=\"16.4\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"109.68\" y=\"66.73\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"202.45\" y=\"67.11\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 2
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 1
+     },
+     {
+      "sekil": "kare",
+      "sayi": 7
+     }
+    ],
+    "tohum": 97771
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "kare"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-015",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "üçgen",
+   "B": "kare",
+   "C": "daire",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "daire: 1 tane",
+   "üçgen: 2 tane",
+   "kare: 7 tane",
+   "En çok olan şekil karedir",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "üçgen sayısı (2) en çok olandan azdır.",
+   "B": "Doğru.",
+   "C": "daire sayısı (1) en çok olandan azdır.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><rect x=\"153.27\" y=\"66.63\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"109.12\" y=\"19.41\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"245.12\" y=\"20.31\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"203.24\" y=\"16.82\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"79.07,16.9 63.07,46.9 95.07,46.9\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"123.51,59.43 107.51,89.43 139.51,89.43\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"68.76\" y=\"107.72\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"113.9\" y=\"111.98\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"202.92\" y=\"114.06\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"169.49\" cy=\"128.18\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 1
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 2
+     },
+     {
+      "sekil": "kare",
+      "sayi": 7
+     }
+    ],
+    "tohum": 61878
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "kare"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-016",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "üçgen",
+   "B": "daire",
+   "C": "kare",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "kare: 5 tane",
+   "üçgen: 2 tane",
+   "daire: 1 tane",
+   "En çok olan şekil karedir",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "üçgen sayısı (2) en çok olandan azdır.",
+   "B": "daire sayısı (1) en çok olandan azdır.",
+   "C": "Doğru.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><rect x=\"62.28\" y=\"62.73\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"126.79,18.2 110.79,48.2 142.79,48.2\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"252.58\" y=\"66.29\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"206.61\" y=\"61.73\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"16.54\" y=\"22.47\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"261.9,14.69 245.9,44.69 277.9,44.69\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"127.67\" cy=\"82.93\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"17.52\" y=\"65.17\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 5
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 2
+     },
+     {
+      "sekil": "daire",
+      "sayi": 1
+     }
+    ],
+    "tohum": 6736
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "kare"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-017",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "üçgen",
+   "B": "daire",
+   "C": "dikdörtgen",
+   "D": "kare"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "daire: 1 tane",
+   "kare: 7 tane",
+   "üçgen: 6 tane",
+   "En çok olan şekil karedir",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "üçgen sayısı (6) en çok olandan azdır.",
+   "B": "daire sayısı (1) en çok olandan azdır.",
+   "C": "Şekilde dikdörtgen yoktur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><rect x=\"158.61\" y=\"107.31\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"33.9\" cy=\"81.29\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"201.8\" y=\"16.05\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"82.23,19.48 66.23,49.48 98.23,49.48\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"78.57,61.29 62.57,91.29 94.57,91.29\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"155.46\" y=\"66.54\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"245.11\" y=\"22.17\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"264.89,109.24 248.89,139.24 280.89,139.24\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"34.15,108.01 18.15,138.01 50.15,138.01\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"215.23,59.28 199.23,89.28 231.23,89.28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"114.2\" y=\"113.47\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"66.17\" y=\"110.43\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"128.62,20.78 112.62,50.78 144.62,50.78\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"249.66\" y=\"61.04\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 1
+     },
+     {
+      "sekil": "kare",
+      "sayi": 7
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 6
+     }
+    ],
+    "tohum": 54116
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "kare"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-018",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "daire",
+   "C": "üçgen",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "daire: 4 tane",
+   "kare: 6 tane",
+   "üçgen: 1 tane",
+   "En çok olan şekil karedir",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "daire sayısı (4) en çok olandan azdır.",
+   "C": "üçgen sayısı (1) en çok olandan azdır.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><rect x=\"205.08\" y=\"64.65\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"172.98\" cy=\"122.51\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"245.73\" y=\"18.15\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"16.41\" y=\"15.6\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"216.4,105.71 200.4,135.71 232.4,135.71\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"113.87\" y=\"64.27\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"76.54\" cy=\"33.46\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"75.87\" cy=\"75.19\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"156.4\" y=\"17.17\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"66.06\" y=\"113.1\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"220.51\" cy=\"34.98\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 4
+     },
+     {
+      "sekil": "kare",
+      "sayi": 6
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 1
+     }
+    ],
+    "tohum": 39910
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "kare"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-019",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "üçgen",
+   "C": "kare",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "üçgen: 6 tane",
+   "kare: 1 tane",
+   "daire: 2 tane",
+   "En çok olan şekil üçgendir",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "daire sayısı (2) en çok olandan azdır.",
+   "B": "Doğru.",
+   "C": "kare sayısı (1) en çok olandan azdır.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><polygon points=\"34.39,64.15 18.39,94.15 50.39,94.15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"79.48,14.78 63.48,44.78 95.48,44.78\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"127.95,61.18 111.95,91.18 143.95,91.18\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"259.84\" cy=\"35.06\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"216.12\" cy=\"78.19\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"160.41\" y=\"15.89\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"75.88,63.61 59.88,93.61 91.88,93.61\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"128.23,20.8 112.23,50.8 144.23,50.8\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"172.91,63.78 156.91,93.78 188.91,93.78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 6
+     },
+     {
+      "sekil": "kare",
+      "sayi": 1
+     },
+     {
+      "sekil": "daire",
+      "sayi": 2
+     }
+    ],
+    "tohum": 70245
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "ucgen"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ENC-S1-020",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.1",
+  "konu": "Sayılar",
+  "alt_konu": "Nesne gruplarını karşılaştırma",
+  "soru_metni": "Yukarıdaki şekil grubunda en çok bulunan şekil hangisidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "kare",
+   "C": "üçgen",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Her şekilden kaç tane olduğunu ayrı ayrı say, sonra karşılaştır.",
+  "cozum_adimlari": [
+   "üçgen: 5 tane",
+   "daire: 4 tane",
+   "kare: 2 tane",
+   "En çok olan şekil üçgendir",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "daire sayısı (4) en çok olandan azdır.",
+   "B": "kare sayısı (2) en çok olandan azdır.",
+   "C": "Doğru.",
+   "D": "Şekilde dikdörtgen yoktur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><circle cx=\"126.16\" cy=\"31.82\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"215.56,108.96 199.56,138.96 231.56,138.96\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"264.63\" cy=\"122.43\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"174.97,106.86 158.97,136.86 190.97,136.86\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"172.26,13.57 156.26,43.57 188.26,43.57\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"249.34\" y=\"22.89\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"170.44\" cy=\"79.42\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"265.14,62.41 249.14,92.41 281.14,92.41\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"216.37\" cy=\"31.52\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"21.34\" y=\"15.79\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"128.11,60.46 112.11,90.46 144.11,90.46\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 5
+     },
+     {
+      "sekil": "daire",
+      "sayi": 4
+     },
+     {
+      "sekil": "kare",
+      "sayi": 2
+     }
+    ],
+    "tohum": 14467
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "ucgen"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-en-cok",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ }
+]

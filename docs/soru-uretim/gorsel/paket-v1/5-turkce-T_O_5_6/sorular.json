@@ -1,0 +1,1582 @@
+[
+ {
+  "id": "TR5-DUY-S1-001",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik hangi gün yapılacaktır?",
+  "siklar": {
+   "A": "Salı",
+   "B": "Pazartesi",
+   "C": "Çarşamba",
+   "D": "Cuma"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Duyurudaki \"Gün\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Gün\" satırı bulunur.",
+   "Bu satırda Çarşamba yazmaktadır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Salı, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "B": "Pazartesi, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "C": "Doğru.",
+   "D": "Cuma, duyuruda \"Gün\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Bilim Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çarşamba</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">14.30</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Resim atölyesi</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-B sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Bilim Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Çarşamba"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "14.30"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Resim atölyesi"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-B sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Gün"
+    ],
+    "beklenen": "Çarşamba"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-002",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik saat kaçta başlayacaktır?",
+  "siklar": {
+   "A": "09.30",
+   "B": "14.00",
+   "C": "14.30",
+   "D": "11.00"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Duyurudaki \"Saat\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Saat\" satırı bulunur.",
+   "Bu satırda 09.30 yazmaktadır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "14.00, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "C": "14.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "D": "11.00, duyuruda \"Saat\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Kitap Fuarı. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Kitap Fuarı</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Salı</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">09.30</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Spor salonu</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-A sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Kitap Fuarı. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Kitap Fuarı",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Salı"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "09.30"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Spor salonu"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-A sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Saat"
+    ],
+    "beklenen": "09.30"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-003",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinliği hangi sınıf düzenlemektedir?",
+  "siklar": {
+   "A": "5-B sınıfı",
+   "B": "5-C sınıfı",
+   "C": "5-A sınıfı",
+   "D": "5-D sınıfı"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Duyurudaki \"Düzenleyen\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Düzenleyen\" satırı bulunur.",
+   "Bu satırda 5-C sınıfı yazmaktadır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "5-B sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir.",
+   "B": "Doğru.",
+   "C": "5-A sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir.",
+   "D": "5-D sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Bilim Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Salı</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">09.30</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kütüphane</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-C sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Bilim Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Salı"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "09.30"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Kütüphane"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-C sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Düzenleyen"
+    ],
+    "beklenen": "5-C sınıfı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-004",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik saat kaçta başlayacaktır?",
+  "siklar": {
+   "A": "11.00",
+   "B": "13.30",
+   "C": "10.30",
+   "D": "14.30"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Duyurudaki \"Saat\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Saat\" satırı bulunur.",
+   "Bu satırda 14.30 yazmaktadır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "11.00, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "B": "13.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "C": "10.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Spor Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Spor Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Perşembe</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">14.30</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Konferans salonu</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-D sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Spor Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Spor Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Perşembe"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "14.30"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Konferans salonu"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-D sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Saat"
+    ],
+    "beklenen": "14.30"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-005",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik hangi gün yapılacaktır?",
+  "siklar": {
+   "A": "Cuma",
+   "B": "Çarşamba",
+   "C": "Salı",
+   "D": "Perşembe"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Duyurudaki \"Gün\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Gün\" satırı bulunur.",
+   "Bu satırda Salı yazmaktadır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Cuma, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "B": "Çarşamba, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "C": "Doğru.",
+   "D": "Perşembe, duyuruda \"Gün\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Bilim Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Salı</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">09.00</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kütüphane</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-D sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Bilim Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Salı"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "09.00"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Kütüphane"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-D sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Gün"
+    ],
+    "beklenen": "Salı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-006",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinliği hangi sınıf düzenlemektedir?",
+  "siklar": {
+   "A": "5-B sınıfı",
+   "B": "5-C sınıfı",
+   "C": "5-A sınıfı",
+   "D": "5-D sınıfı"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Duyurudaki \"Düzenleyen\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Düzenleyen\" satırı bulunur.",
+   "Bu satırda 5-D sınıfı yazmaktadır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "5-B sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir.",
+   "B": "5-C sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir.",
+   "C": "5-A sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Resim Sergisi. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Resim Sergisi</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Perşembe</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">14.30</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Resim atölyesi</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-D sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Resim Sergisi. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Resim Sergisi",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Perşembe"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "14.30"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Resim atölyesi"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-D sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Düzenleyen"
+    ],
+    "beklenen": "5-D sınıfı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-007",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik saat kaçta başlayacaktır?",
+  "siklar": {
+   "A": "11.00",
+   "B": "14.30",
+   "C": "10.30",
+   "D": "10.00"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Duyurudaki \"Saat\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Saat\" satırı bulunur.",
+   "Bu satırda 11.00 yazmaktadır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "14.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "C": "10.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "D": "10.00, duyuruda \"Saat\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Resim Sergisi. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Resim Sergisi</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Cuma</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">11.00</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Resim atölyesi</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-C sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Resim Sergisi. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Resim Sergisi",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Cuma"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "11.00"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Resim atölyesi"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-C sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Saat"
+    ],
+    "beklenen": "11.00"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-008",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik hangi gün yapılacaktır?",
+  "siklar": {
+   "A": "Cuma",
+   "B": "Çarşamba",
+   "C": "Salı",
+   "D": "Pazartesi"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Duyurudaki \"Gün\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Gün\" satırı bulunur.",
+   "Bu satırda Çarşamba yazmaktadır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Cuma, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "B": "Doğru.",
+   "C": "Salı, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "D": "Pazartesi, duyuruda \"Gün\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Okul Tiyatrosu. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Okul Tiyatrosu</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çarşamba</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">10.00</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kütüphane</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-C sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Okul Tiyatrosu. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Okul Tiyatrosu",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Çarşamba"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "10.00"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Kütüphane"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-C sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Gün"
+    ],
+    "beklenen": "Çarşamba"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-009",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik saat kaçta başlayacaktır?",
+  "siklar": {
+   "A": "14.00",
+   "B": "13.30",
+   "C": "10.00",
+   "D": "09.00"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Duyurudaki \"Saat\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Saat\" satırı bulunur.",
+   "Bu satırda 10.00 yazmaktadır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "14.00, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "B": "13.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "C": "Doğru.",
+   "D": "09.00, duyuruda \"Saat\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Resim Sergisi. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Resim Sergisi</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Pazartesi</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">10.00</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Resim atölyesi</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-B sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Resim Sergisi. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Resim Sergisi",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Pazartesi"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "10.00"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Resim atölyesi"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-B sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Saat"
+    ],
+    "beklenen": "10.00"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-010",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik hangi gün yapılacaktır?",
+  "siklar": {
+   "A": "Pazartesi",
+   "B": "Çarşamba",
+   "C": "Cuma",
+   "D": "Perşembe"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Duyurudaki \"Gün\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Gün\" satırı bulunur.",
+   "Bu satırda Çarşamba yazmaktadır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Pazartesi, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "B": "Doğru.",
+   "C": "Cuma, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "D": "Perşembe, duyuruda \"Gün\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Bilim Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çarşamba</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">11.00</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Konferans salonu</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-D sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Bilim Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Çarşamba"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "11.00"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Konferans salonu"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-D sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Gün"
+    ],
+    "beklenen": "Çarşamba"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-011",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik hangi gün yapılacaktır?",
+  "siklar": {
+   "A": "Çarşamba",
+   "B": "Salı",
+   "C": "Cuma",
+   "D": "Pazartesi"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Duyurudaki \"Gün\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Gün\" satırı bulunur.",
+   "Bu satırda Pazartesi yazmaktadır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çarşamba, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "B": "Salı, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "C": "Cuma, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Resim Sergisi. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Resim Sergisi</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Pazartesi</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">09.00</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Resim atölyesi</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-B sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Resim Sergisi. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Resim Sergisi",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Pazartesi"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "09.00"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Resim atölyesi"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-B sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Gün"
+    ],
+    "beklenen": "Pazartesi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-012",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinliği hangi sınıf düzenlemektedir?",
+  "siklar": {
+   "A": "5-A sınıfı",
+   "B": "5-C sınıfı",
+   "C": "5-D sınıfı",
+   "D": "5-B sınıfı"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Duyurudaki \"Düzenleyen\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Düzenleyen\" satırı bulunur.",
+   "Bu satırda 5-A sınıfı yazmaktadır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "5-C sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir.",
+   "C": "5-D sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir.",
+   "D": "5-B sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Fidan Dikme Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Fidan Dikme Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Perşembe</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">14.00</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Konferans salonu</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-A sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Fidan Dikme Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Fidan Dikme Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Perşembe"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "14.00"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Konferans salonu"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-A sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Düzenleyen"
+    ],
+    "beklenen": "5-A sınıfı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-013",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik saat kaçta başlayacaktır?",
+  "siklar": {
+   "A": "10.00",
+   "B": "11.00",
+   "C": "10.30",
+   "D": "09.00"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Duyurudaki \"Saat\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Saat\" satırı bulunur.",
+   "Bu satırda 10.00 yazmaktadır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "11.00, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "C": "10.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "D": "09.00, duyuruda \"Saat\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Bilim Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Cuma</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">10.00</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Resim atölyesi</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-D sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Bilim Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Cuma"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "10.00"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Resim atölyesi"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-D sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Saat"
+    ],
+    "beklenen": "10.00"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-014",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik saat kaçta başlayacaktır?",
+  "siklar": {
+   "A": "14.00",
+   "B": "11.00",
+   "C": "10.30",
+   "D": "09.00"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Duyurudaki \"Saat\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Saat\" satırı bulunur.",
+   "Bu satırda 09.00 yazmaktadır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "14.00, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "B": "11.00, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "C": "10.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Kitap Fuarı. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Kitap Fuarı</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Pazartesi</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">09.00</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Müzik sınıfı</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-B sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Kitap Fuarı. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Kitap Fuarı",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Pazartesi"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "09.00"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Müzik sınıfı"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-B sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Saat"
+    ],
+    "beklenen": "09.00"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-015",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik nerede yapılacaktır?",
+  "siklar": {
+   "A": "Spor salonu",
+   "B": "Konferans salonu",
+   "C": "Kütüphane",
+   "D": "Resim atölyesi"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Duyurudaki \"Yer\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Yer\" satırı bulunur.",
+   "Bu satırda Kütüphane yazmaktadır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Spor salonu, duyuruda \"Yer\" satırında yazan bilgi değildir.",
+   "B": "Konferans salonu, duyuruda \"Yer\" satırında yazan bilgi değildir.",
+   "C": "Doğru.",
+   "D": "Resim atölyesi, duyuruda \"Yer\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Okul Tiyatrosu. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Okul Tiyatrosu</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Salı</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">09.30</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kütüphane</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-D sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Okul Tiyatrosu. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Okul Tiyatrosu",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Salı"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "09.30"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Kütüphane"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-D sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Yer"
+    ],
+    "beklenen": "Kütüphane"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-016",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik hangi gün yapılacaktır?",
+  "siklar": {
+   "A": "Pazartesi",
+   "B": "Salı",
+   "C": "Perşembe",
+   "D": "Cuma"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Duyurudaki \"Gün\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Gün\" satırı bulunur.",
+   "Bu satırda Salı yazmaktadır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Pazartesi, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "B": "Doğru.",
+   "C": "Perşembe, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "D": "Cuma, duyuruda \"Gün\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Bilim Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Salı</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">10.30</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Resim atölyesi</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-C sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Bilim Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Salı"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "10.30"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Resim atölyesi"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-C sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Gün"
+    ],
+    "beklenen": "Salı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-017",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinliği hangi sınıf düzenlemektedir?",
+  "siklar": {
+   "A": "5-D sınıfı",
+   "B": "5-A sınıfı",
+   "C": "5-C sınıfı",
+   "D": "5-B sınıfı"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Duyurudaki \"Düzenleyen\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Düzenleyen\" satırı bulunur.",
+   "Bu satırda 5-A sınıfı yazmaktadır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "5-D sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir.",
+   "B": "Doğru.",
+   "C": "5-C sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir.",
+   "D": "5-B sınıfı, duyuruda \"Düzenleyen\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Kitap Fuarı. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Kitap Fuarı</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çarşamba</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">11.00</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Kütüphane</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-A sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Kitap Fuarı. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Kitap Fuarı",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Çarşamba"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "11.00"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Kütüphane"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-A sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Düzenleyen"
+    ],
+    "beklenen": "5-A sınıfı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-018",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik saat kaçta başlayacaktır?",
+  "siklar": {
+   "A": "13.30",
+   "B": "10.30",
+   "C": "14.00",
+   "D": "14.30"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Duyurudaki \"Saat\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Saat\" satırı bulunur.",
+   "Bu satırda 14.30 yazmaktadır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "13.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "B": "10.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "C": "14.00, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Bilim Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Çarşamba</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">14.30</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Okul bahçesi</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-A sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Bilim Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Çarşamba"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "14.30"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Okul bahçesi"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-A sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Saat"
+    ],
+    "beklenen": "14.30"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-019",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik hangi gün yapılacaktır?",
+  "siklar": {
+   "A": "Perşembe",
+   "B": "Çarşamba",
+   "C": "Cuma",
+   "D": "Salı"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Duyurudaki \"Gün\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Gün\" satırı bulunur.",
+   "Bu satırda Cuma yazmaktadır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Perşembe, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "B": "Çarşamba, duyuruda \"Gün\" satırında yazan bilgi değildir.",
+   "C": "Doğru.",
+   "D": "Salı, duyuruda \"Gün\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Fidan Dikme Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Fidan Dikme Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Cuma</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">14.30</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Okul bahçesi</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-D sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Fidan Dikme Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Fidan Dikme Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Cuma"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "14.30"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Okul bahçesi"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-D sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Gün"
+    ],
+    "beklenen": "Cuma"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "TR5-DUY-S1-020",
+  "sinif": 5,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.5.6",
+  "konu": "Bilgilendirici Metin",
+  "alt_konu": "Duyuru kartından bilgi bulma",
+  "soru_metni": "Duyuruya göre etkinlik saat kaçta başlayacaktır?",
+  "siklar": {
+   "A": "09.30",
+   "B": "10.30",
+   "C": "14.00",
+   "D": "10.00"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Duyurudaki \"Saat\" satırını bul ve yanındaki bilgiyi oku.",
+  "cozum_adimlari": [
+   "Duyuruda \"Saat\" satırı bulunur.",
+   "Bu satırda 09.30 yazmaktadır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "10.30, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "C": "14.00, duyuruda \"Saat\" satırında yazan bilgi değildir.",
+   "D": "10.00, duyuruda \"Saat\" satırında yazan bilgi değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "belge-kart",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 360 216\" role=\"img\" aria-label=\"Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.\"><rect width=\"360\" height=\"216\" fill=\"#FFFFFF\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"200\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"8\" y=\"8\" width=\"344\" height=\"46\" fill=\"#0072B2\" stroke=\"#0072B2\" stroke-width=\"1\"/><text x=\"180\" y=\"38\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"17\" text-anchor=\"middle\" fill=\"#FFFFFF\" font-weight=\"700\">Bilim Şenliği</text><text x=\"22\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Gün:</text><text x=\"122\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Perşembe</text><line x1=\"20\" y1=\"96\" x2=\"340\" y2=\"96\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Saat:</text><text x=\"122\" y=\"116\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">09.30</text><line x1=\"20\" y1=\"128\" x2=\"340\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Yer:</text><text x=\"122\" y=\"148\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">Konferans salonu</text><line x1=\"20\" y1=\"160\" x2=\"340\" y2=\"160\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"22\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">Düzenleyen:</text><text x=\"122\" y=\"180\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"14\" text-anchor=\"start\" fill=\"#1F2937\">5-D sınıfı</text></svg>",
+   "alt_metin": "Duyuru kartı: Bilim Şenliği. Kartta şu başlıklar yazılıdır: Gün, Saat, Yer, Düzenleyen.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "belge-kart",
+   "parametreler": {
+    "tur": "Duyuru",
+    "baslik": "Bilim Şenliği",
+    "satirlar": [
+     {
+      "etiket": "Gün",
+      "deger": "Perşembe"
+     },
+     {
+      "etiket": "Saat",
+      "deger": "09.30"
+     },
+     {
+      "etiket": "Yer",
+      "deger": "Konferans salonu"
+     },
+     {
+      "etiket": "Düzenleyen",
+      "deger": "5-D sınıfı"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "alanlar",
+     "Saat"
+    ],
+    "beklenen": "09.30"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "tr5-duyuru",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ }
+]

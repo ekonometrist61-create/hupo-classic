@@ -1,0 +1,1308 @@
+[
+ {
+  "id": "HB1-KAV-S1-001",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Yan yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Yavaşlar ve durmaya hazırlanır",
+   "B": "Etrafı kontrol ederek geçer",
+   "C": "Durur",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Yan yol ışığı kırmızı renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Durur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış sarı ışık için uygundur; yan yol ışığı kırmızı renktedir.",
+   "B": "Bu davranış yeşil ışık için uygundur; yan yol ışığı kırmızı renktedir.",
+   "C": "Doğru.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"30\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"60\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text><rect x=\"170\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"48\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"110\" r=\"22\" fill=\"#F2C500\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"200\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "sari",
+    "yan": "kirmizi",
+    "bicim": "dikey",
+    "sira": "yan_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "sari"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-TRF-S1-002",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki trafik ışığı araçlar için yanmaktadır. Karşıdan karşıya geçmek isteyen yaya ne yapmalıdır?",
+  "siklar": {
+   "A": "Etrafı kontrol ederek geçer",
+   "B": "Bekler",
+   "C": "Koşarak geçer",
+   "D": "Araçların arasından geçer"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yanan lambanın rengine ve yerine (üstte, ortada, altta) bak.",
+  "cozum_adimlari": [
+   "Yanan lamba yeşil renktedir ve en alttadır.",
+   "Yaya bu ışıkta şunu yapmalıdır: Bekler.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış kırmızı ışık için uygundur; yanan lamba yeşil renktedir.",
+   "B": "Doğru.",
+   "C": "Yayanın güvenliğini tehlikeye atan bir davranıştır.",
+   "D": "Yayanın güvenliğini tehlikeye atan bir davranıştır."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-isigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 260\" role=\"img\" aria-label=\"Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.\"><rect width=\"160\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"76\" y=\"214\" width=\"8\" height=\"34\" fill=\"#6B7280\" stroke=\"#1F2937\" stroke-width=\"1\"/><circle cx=\"80\" cy=\"48\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"172\" r=\"22\" fill=\"#00A37A\" stroke=\"#111827\" stroke-width=\"2\"/></svg>",
+   "alt_metin": "Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-isigi",
+   "parametreler": {
+    "yanan": "yesil"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yanan"
+    ],
+    "beklenen": "yesil"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-isigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-003",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Ana yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Etrafı kontrol ederek geçer",
+   "B": "Durur",
+   "C": "Yavaşlar ve durmaya hazırlanır",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Ana yol ışığı yeşil renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Etrafı kontrol ederek geçer.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Bu davranış kırmızı ışık için uygundur; ana yol ışığı yeşil renktedir.",
+   "C": "Bu davranış sarı ışık için uygundur; ana yol ışığı yeşil renktedir.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"30\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"48\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"172\" r=\"22\" fill=\"#00A37A\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"60\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text><rect x=\"170\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"200\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "yesil",
+    "yan": "kirmizi",
+    "bicim": "dikey",
+    "sira": "ana_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "yesil"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-TRF-S1-004",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki trafik ışığı araçlar için yanmaktadır. Karşıdan karşıya geçmek isteyen yaya ne yapmalıdır?",
+  "siklar": {
+   "A": "Etrafı kontrol ederek geçer",
+   "B": "Koşarak geçer",
+   "C": "Araçların arasından geçer",
+   "D": "Bekler"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Yanan lambanın rengine ve yerine (üstte, ortada, altta) bak.",
+  "cozum_adimlari": [
+   "Yanan lamba sarı renktedir ve ortadadır.",
+   "Yaya bu ışıkta şunu yapmalıdır: Bekler.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış kırmızı ışık için uygundur; yanan lamba sarı renktedir.",
+   "B": "Yayanın güvenliğini tehlikeye atan bir davranıştır.",
+   "C": "Yayanın güvenliğini tehlikeye atan bir davranıştır.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-isigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 260\" role=\"img\" aria-label=\"Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.\"><rect width=\"160\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"76\" y=\"214\" width=\"8\" height=\"34\" fill=\"#6B7280\" stroke=\"#1F2937\" stroke-width=\"1\"/><circle cx=\"80\" cy=\"48\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"110\" r=\"22\" fill=\"#F2C500\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/></svg>",
+   "alt_metin": "Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-isigi",
+   "parametreler": {
+    "yanan": "sari"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yanan"
+    ],
+    "beklenen": "sari"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-isigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-005",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Ana yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Yavaşlar ve durmaya hazırlanır",
+   "B": "Durur",
+   "C": "Etrafı kontrol ederek geçer",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Ana yol ışığı kırmızı renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Durur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış sarı ışık için uygundur; ana yol ışığı kırmızı renktedir.",
+   "B": "Doğru.",
+   "C": "Bu davranış yeşil ışık için uygundur; ana yol ışığı kırmızı renktedir.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"30\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"60\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text><rect x=\"170\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"200\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "kirmizi",
+    "yan": "kirmizi",
+    "bicim": "dikey",
+    "sira": "ana_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "kirmizi"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-TRF-S1-006",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki trafik ışığı araçlar için yanmaktadır. Karşıdan karşıya geçmek isteyen yaya ne yapmalıdır?",
+  "siklar": {
+   "A": "Bekler",
+   "B": "Koşarak geçer",
+   "C": "Etrafı kontrol ederek geçer",
+   "D": "Araçların arasından geçer"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yanan lambanın rengine ve yerine (üstte, ortada, altta) bak.",
+  "cozum_adimlari": [
+   "Yanan lamba kırmızı renktedir ve en üsttedir.",
+   "Yaya bu ışıkta şunu yapmalıdır: Etrafı kontrol ederek geçer.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış sarı / yeşil ışık için uygundur; yanan lamba kırmızı renktedir.",
+   "B": "Yayanın güvenliğini tehlikeye atan bir davranıştır.",
+   "C": "Doğru.",
+   "D": "Yayanın güvenliğini tehlikeye atan bir davranıştır."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-isigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 260\" role=\"img\" aria-label=\"Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.\"><rect width=\"160\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"76\" y=\"214\" width=\"8\" height=\"34\" fill=\"#6B7280\" stroke=\"#1F2937\" stroke-width=\"1\"/><circle cx=\"80\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/></svg>",
+   "alt_metin": "Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-isigi",
+   "parametreler": {
+    "yanan": "kirmizi"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yanan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-isigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-007",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Ana yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Durur",
+   "B": "Yavaşlar ve durmaya hazırlanır",
+   "C": "Etrafı kontrol ederek geçer",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Ana yol ışığı kırmızı renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Durur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Bu davranış sarı ışık için uygundur; ana yol ışığı kırmızı renktedir.",
+   "C": "Bu davranış yeşil ışık için uygundur; ana yol ışığı kırmızı renktedir.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 230\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"280\" height=\"230\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"40\" width=\"200\" height=\"60\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"70\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"70\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"70\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"150\" y=\"30\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text><rect x=\"50\" y=\"150\" width=\"200\" height=\"60\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"180\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"180\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"180\" r=\"22\" fill=\"#00A37A\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"150\" y=\"140\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "kirmizi",
+    "yan": "yesil",
+    "bicim": "yatay",
+    "sira": "ana_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "kirmizi"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "yesil"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-TRF-S1-008",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki trafik ışığı araçlar için yanmaktadır. Araç sürücüleri bu ışıkta ne yapmalıdır?",
+  "siklar": {
+   "A": "Durur",
+   "B": "Etrafı kontrol ederek geçer",
+   "C": "Hızını artırarak geçer",
+   "D": "Yavaşlar ve durmaya hazırlanır"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Yanan lambanın rengine ve yerine (üstte, ortada, altta) bak.",
+  "cozum_adimlari": [
+   "Yanan lamba sarı renktedir ve ortadadır.",
+   "Sürücü bu ışıkta şunu yapmalıdır: Yavaşlar ve durmaya hazırlanır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış kırmızı ışık için uygundur; yanan lamba sarı renktedir.",
+   "B": "Bu davranış yeşil ışık için uygundur; yanan lamba sarı renktedir.",
+   "C": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-isigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 260\" role=\"img\" aria-label=\"Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.\"><rect width=\"160\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"76\" y=\"214\" width=\"8\" height=\"34\" fill=\"#6B7280\" stroke=\"#1F2937\" stroke-width=\"1\"/><circle cx=\"80\" cy=\"48\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"110\" r=\"22\" fill=\"#F2C500\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/></svg>",
+   "alt_metin": "Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-isigi",
+   "parametreler": {
+    "yanan": "sari"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yanan"
+    ],
+    "beklenen": "sari"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-isigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-009",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Ana yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Durur",
+   "B": "Yavaşlar ve durmaya hazırlanır",
+   "C": "Etrafı kontrol ederek geçer",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Ana yol ışığı sarı renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Yavaşlar ve durmaya hazırlanır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış kırmızı ışık için uygundur; ana yol ışığı sarı renktedir.",
+   "B": "Doğru.",
+   "C": "Bu davranış yeşil ışık için uygundur; ana yol ışığı sarı renktedir.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"30\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"60\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text><rect x=\"170\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"48\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"110\" r=\"22\" fill=\"#F2C500\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"200\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "sari",
+    "yan": "kirmizi",
+    "bicim": "dikey",
+    "sira": "yan_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "sari"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-010",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Ana yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Durur",
+   "B": "Yavaşlar ve durmaya hazırlanır",
+   "C": "Etrafı kontrol ederek geçer",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Ana yol ışığı kırmızı renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Durur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Bu davranış sarı ışık için uygundur; ana yol ışığı kırmızı renktedir.",
+   "C": "Bu davranış yeşil ışık için uygundur; ana yol ışığı kırmızı renktedir.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"30\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"60\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text><rect x=\"170\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"48\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"110\" r=\"22\" fill=\"#F2C500\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"200\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "kirmizi",
+    "yan": "sari",
+    "bicim": "dikey",
+    "sira": "ana_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "kirmizi"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "sari"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-TRF-S1-011",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki trafik ışığı araçlar için yanmaktadır. Araç sürücüleri bu ışıkta ne yapmalıdır?",
+  "siklar": {
+   "A": "Durur",
+   "B": "Yavaşlar ve durmaya hazırlanır",
+   "C": "Etrafı kontrol ederek geçer",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yanan lambanın rengine ve yerine (üstte, ortada, altta) bak.",
+  "cozum_adimlari": [
+   "Yanan lamba yeşil renktedir ve en alttadır.",
+   "Sürücü bu ışıkta şunu yapmalıdır: Etrafı kontrol ederek geçer.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış kırmızı ışık için uygundur; yanan lamba yeşil renktedir.",
+   "B": "Bu davranış sarı ışık için uygundur; yanan lamba yeşil renktedir.",
+   "C": "Doğru.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-isigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 260\" role=\"img\" aria-label=\"Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.\"><rect width=\"160\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"76\" y=\"214\" width=\"8\" height=\"34\" fill=\"#6B7280\" stroke=\"#1F2937\" stroke-width=\"1\"/><circle cx=\"80\" cy=\"48\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"172\" r=\"22\" fill=\"#00A37A\" stroke=\"#111827\" stroke-width=\"2\"/></svg>",
+   "alt_metin": "Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-isigi",
+   "parametreler": {
+    "yanan": "yesil"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yanan"
+    ],
+    "beklenen": "yesil"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-isigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-012",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Yan yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Yavaşlar ve durmaya hazırlanır",
+   "B": "Etrafı kontrol ederek geçer",
+   "C": "Hızını artırarak geçer",
+   "D": "Durur"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Yan yol ışığı kırmızı renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Durur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış sarı ışık için uygundur; yan yol ışığı kırmızı renktedir.",
+   "B": "Bu davranış yeşil ışık için uygundur; yan yol ışığı kırmızı renktedir.",
+   "C": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"30\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"60\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text><rect x=\"170\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"200\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "kirmizi",
+    "yan": "kirmizi",
+    "bicim": "dikey",
+    "sira": "ana_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "kirmizi"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-013",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Yan yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Durur",
+   "B": "Yavaşlar ve durmaya hazırlanır",
+   "C": "Etrafı kontrol ederek geçer",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Yan yol ışığı sarı renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Yavaşlar ve durmaya hazırlanır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış kırmızı ışık için uygundur; yan yol ışığı sarı renktedir.",
+   "B": "Doğru.",
+   "C": "Bu davranış yeşil ışık için uygundur; yan yol ışığı sarı renktedir.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 230\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"280\" height=\"230\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"40\" width=\"200\" height=\"60\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"70\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"70\" r=\"22\" fill=\"#F2C500\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"70\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"150\" y=\"30\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text><rect x=\"50\" y=\"150\" width=\"200\" height=\"60\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"180\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"180\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"180\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"150\" y=\"140\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "kirmizi",
+    "yan": "sari",
+    "bicim": "yatay",
+    "sira": "yan_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "kirmizi"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "sari"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-014",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Ana yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Etrafı kontrol ederek geçer",
+   "B": "Durur",
+   "C": "Yavaşlar ve durmaya hazırlanır",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Ana yol ışığı yeşil renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Etrafı kontrol ederek geçer.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Bu davranış kırmızı ışık için uygundur; ana yol ışığı yeşil renktedir.",
+   "C": "Bu davranış sarı ışık için uygundur; ana yol ışığı yeşil renktedir.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 230\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"280\" height=\"230\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"40\" width=\"200\" height=\"60\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"70\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"70\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"70\" r=\"22\" fill=\"#00A37A\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"150\" y=\"30\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text><rect x=\"50\" y=\"150\" width=\"200\" height=\"60\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"180\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"180\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"180\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"150\" y=\"140\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "yesil",
+    "yan": "kirmizi",
+    "bicim": "yatay",
+    "sira": "ana_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "yesil"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-015",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Yan yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Yavaşlar ve durmaya hazırlanır",
+   "B": "Etrafı kontrol ederek geçer",
+   "C": "Durur",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Yan yol ışığı kırmızı renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Durur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış sarı ışık için uygundur; yan yol ışığı kırmızı renktedir.",
+   "B": "Bu davranış yeşil ışık için uygundur; yan yol ışığı kırmızı renktedir.",
+   "C": "Doğru.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 230\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"280\" height=\"230\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"40\" width=\"200\" height=\"60\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"70\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"70\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"70\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"150\" y=\"30\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text><rect x=\"50\" y=\"150\" width=\"200\" height=\"60\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"180\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"180\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"180\" r=\"22\" fill=\"#00A37A\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"150\" y=\"140\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "yesil",
+    "yan": "kirmizi",
+    "bicim": "yatay",
+    "sira": "yan_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "yesil"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-TRF-S1-016",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki trafik ışığı araçlar için yanmaktadır. Araç sürücüleri bu ışıkta ne yapmalıdır?",
+  "siklar": {
+   "A": "Yavaşlar ve durmaya hazırlanır",
+   "B": "Etrafı kontrol ederek geçer",
+   "C": "Hızını artırarak geçer",
+   "D": "Durur"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Yanan lambanın rengine ve yerine (üstte, ortada, altta) bak.",
+  "cozum_adimlari": [
+   "Yanan lamba kırmızı renktedir ve en üsttedir.",
+   "Sürücü bu ışıkta şunu yapmalıdır: Durur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış sarı ışık için uygundur; yanan lamba kırmızı renktedir.",
+   "B": "Bu davranış yeşil ışık için uygundur; yanan lamba kırmızı renktedir.",
+   "C": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-isigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 160 260\" role=\"img\" aria-label=\"Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.\"><rect width=\"160\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><rect x=\"76\" y=\"214\" width=\"8\" height=\"34\" fill=\"#6B7280\" stroke=\"#1F2937\" stroke-width=\"1\"/><circle cx=\"80\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"80\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/></svg>",
+   "alt_metin": "Üç lambalı bir trafik ışığı; lambalardan biri yanıyor.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-isigi",
+   "parametreler": {
+    "yanan": "kirmizi"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yanan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-isigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-017",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Ana yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Durur",
+   "B": "Yavaşlar ve durmaya hazırlanır",
+   "C": "Hızını artırarak geçer",
+   "D": "Etrafı kontrol ederek geçer"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Ana yol ışığı yeşil renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Etrafı kontrol ederek geçer.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış kırmızı ışık için uygundur; ana yol ışığı yeşil renktedir.",
+   "B": "Bu davranış sarı ışık için uygundur; ana yol ışığı yeşil renktedir.",
+   "C": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"30\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"60\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text><rect x=\"170\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"48\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"172\" r=\"22\" fill=\"#00A37A\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"200\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "yesil",
+    "yan": "kirmizi",
+    "bicim": "dikey",
+    "sira": "yan_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "yesil"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-018",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Yan yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Durur",
+   "B": "Yavaşlar ve durmaya hazırlanır",
+   "C": "Etrafı kontrol ederek geçer",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Yan yol ışığı yeşil renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Etrafı kontrol ederek geçer.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış kırmızı ışık için uygundur; yan yol ışığı yeşil renktedir.",
+   "B": "Bu davranış sarı ışık için uygundur; yan yol ışığı yeşil renktedir.",
+   "C": "Doğru.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 280 230\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"280\" height=\"230\" fill=\"#FFFFFF\"/><rect x=\"50\" y=\"40\" width=\"200\" height=\"60\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"70\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"70\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"70\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"150\" y=\"30\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text><rect x=\"50\" y=\"150\" width=\"200\" height=\"60\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"90\" cy=\"180\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"150\" cy=\"180\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"210\" cy=\"180\" r=\"22\" fill=\"#00A37A\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"150\" y=\"140\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "kirmizi",
+    "yan": "yesil",
+    "bicim": "yatay",
+    "sira": "ana_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "kirmizi"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "yesil"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-019",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Ana yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Durur",
+   "B": "Yavaşlar ve durmaya hazırlanır",
+   "C": "Etrafı kontrol ederek geçer",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Ana yol ışığı kırmızı renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Durur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Bu davranış sarı ışık için uygundur; ana yol ışığı kırmızı renktedir.",
+   "C": "Bu davranış yeşil ışık için uygundur; ana yol ışığı kırmızı renktedir.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"30\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"60\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text><rect x=\"170\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"200\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "kirmizi",
+    "yan": "kirmizi",
+    "bicim": "dikey",
+    "sira": "yan_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "kirmizi"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "kirmizi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "HB1-KAV-S1-020",
+  "sinif": 1,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "HB.1.2.3",
+  "konu": "Güvenli Yaşam",
+  "alt_konu": "Trafik ışıkları",
+  "soru_metni": "Yukarıdaki kavşakta iki trafik ışığı vardır; ışıkların yanındaki etiketler hangi yola ait olduğunu gösterir. Ana yoldan gelen araç sürücüleri ne yapmalıdır?",
+  "siklar": {
+   "A": "Yavaşlar ve durmaya hazırlanır",
+   "B": "Durur",
+   "C": "Etrafı kontrol ederek geçer",
+   "D": "Hızını artırarak geçer"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Sürücünün geldiği yolun etiketini bul ve o yoldaki ışığın rengine bak.",
+  "cozum_adimlari": [
+   "Ana yol ışığı kırmızı renktedir.",
+   "Bu ışıkta araç sürücüsü şunu yapmalıdır: Durur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu davranış sarı ışık için uygundur; ana yol ışığı kırmızı renktedir.",
+   "B": "Doğru.",
+   "C": "Bu davranış yeşil ışık için uygundur; ana yol ışığı kırmızı renktedir.",
+   "D": "Hız artırmak tehlikelidir; hiçbir ışıkta doğru değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "trafik-kavsak",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><rect x=\"30\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"48\" r=\"22\" fill=\"#D62828\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"60\" cy=\"172\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"60\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">ANA YOL</text><rect x=\"170\" y=\"14\" width=\"60\" height=\"200\" fill=\"#374151\" stroke=\"#1F2937\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"48\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"110\" r=\"22\" fill=\"#9CA3AF\" stroke=\"#111827\" stroke-width=\"2\"/><circle cx=\"200\" cy=\"172\" r=\"22\" fill=\"#00A37A\" stroke=\"#111827\" stroke-width=\"2\"/><text x=\"200\" y=\"240\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">YAN YOL</text></svg>",
+   "alt_metin": "İki yollu kavşakta iki trafik ışığı; her ışığın yanındaki etiket hangi yola ait olduğunu gösterir.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "trafik-kavsak",
+   "parametreler": {
+    "ana": "kirmizi",
+    "yan": "yesil",
+    "bicim": "dikey",
+    "sira": "ana_ilk"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "ana"
+    ],
+    "beklenen": "kirmizi"
+   },
+   {
+    "yol": [
+     "yan"
+    ],
+    "beklenen": "yesil"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "hb1-trafik-kavsak",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ }
+]

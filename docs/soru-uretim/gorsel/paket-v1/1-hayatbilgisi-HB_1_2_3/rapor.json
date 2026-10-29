@@ -1,0 +1,50 @@
+{
+ "surum": "1.1.0",
+ "ders": "Hayat Bilgisi",
+ "sinif": 1,
+ "kod": "HB.1.2.3",
+ "tohum": 1,
+ "uretim": {
+  "istenen": 20,
+  "uretilen": 6,
+  "eksik": 14,
+  "denenen": 1200,
+  "atilan": {
+   "tekrar_soru": 1194
+  },
+  "sablonlar": [
+   "hb1-trafik-isigi"
+  ]
+ },
+ "denge": {
+  "harf": {
+   "A": 1,
+   "B": 2,
+   "C": 2,
+   "D": 1
+  },
+  "tam_blok": 1,
+  "dengeli_blok": 1,
+  "bozuk_blok": []
+ },
+ "kapi": {
+  "kazanim": {
+   "toplam": 6,
+   "dosya": "kazanim_1_hayat_bilgisi.json",
+   "red": []
+  },
+  "gorsel": {
+   "toplam": 6,
+   "red": []
+  }
+ },
+ "kor_png": {
+  "tamam": true,
+  "pngSayi": 6,
+  "hata": null
+ },
+ "kontak": true,
+ "kor": null,
+ "durum": "beklemede",
+ "karar": "EKSIK_URETIM"
+}

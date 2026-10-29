@@ -62,7 +62,8 @@ function kontrol(q, uyarilar = []) {
   }
   if (![1, 2, 3].includes(q.zorluk)) sorunlar.push('zorluk_1_2_3_degil');
   if (typeof q.gorsel_gerekli !== 'boolean') sorunlar.push('gorsel_gerekli_bool_degil');
-  if (q.gorsel_gerekli === true) sorunlar.push('gorselli_soru_pilotta_yasak');
+  // Görselli soru yalnız motor çıktısıyla kabul edilir (tools/gorsel-motoru/kapi-gorsel.mjs ayrıca denetler).
+  if (q.gorsel_gerekli === true && !(q.gorsel && q.gorsel.svg && q.gorsel.alt_metin && q.gorsel_spec)) sorunlar.push('gorsel_gerekli_ama_gorsel_spec_yok');
 
   // Sayısal doğrulama: ifade varsa hesaplanır, doğru şık sayısına eşit olmalı.
   if (q.sayisal_dogrulama) {

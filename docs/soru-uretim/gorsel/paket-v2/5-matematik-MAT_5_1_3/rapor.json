@@ -1,0 +1,52 @@
+{
+ "surum": "1.1.0",
+ "ders": "Matematik",
+ "sinif": 5,
+ "kod": "MAT.5.1.3",
+ "tohum": 1,
+ "uretim": {
+  "istenen": 20,
+  "uretilen": 20,
+  "eksik": 0,
+  "denenen": 33,
+  "atilan": {
+   "yarim_kesir": 5,
+   "tekrar_soru": 3,
+   "kesir_tekrar": 5
+  },
+  "sablonlar": [
+   "mat5-kesir-tarali"
+  ]
+ },
+ "denge": {
+  "harf": {
+   "A": 5,
+   "B": 5,
+   "C": 5,
+   "D": 5
+  },
+  "tam_blok": 5,
+  "dengeli_blok": 5,
+  "bozuk_blok": []
+ },
+ "kapi": {
+  "kazanim": {
+   "toplam": 20,
+   "dosya": "kazanim_5_matematik.json",
+   "red": []
+  },
+  "gorsel": {
+   "toplam": 20,
+   "red": []
+  }
+ },
+ "kor_png": {
+  "tamam": true,
+  "pngSayi": 20,
+  "hata": null
+ },
+ "kontak": true,
+ "kor": null,
+ "durum": "beklemede",
+ "karar": "KOR_BEKLIYOR"
+}

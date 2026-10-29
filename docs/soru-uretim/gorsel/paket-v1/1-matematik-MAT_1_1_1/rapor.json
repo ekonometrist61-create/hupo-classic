@@ -1,0 +1,50 @@
+{
+ "surum": "1.1.0",
+ "ders": "Matematik",
+ "sinif": 1,
+ "kod": "MAT.1.1.1",
+ "tohum": 1,
+ "uretim": {
+  "istenen": 20,
+  "uretilen": 20,
+  "eksik": 0,
+  "denenen": 40,
+  "atilan": {
+   "uc_sekil_gerekir": 20
+  },
+  "sablonlar": [
+   "mat1-en-cok"
+  ]
+ },
+ "denge": {
+  "harf": {
+   "A": 5,
+   "B": 5,
+   "C": 5,
+   "D": 5
+  },
+  "tam_blok": 5,
+  "dengeli_blok": 5,
+  "bozuk_blok": []
+ },
+ "kapi": {
+  "kazanim": {
+   "toplam": 20,
+   "dosya": "kazanim_1_matematik.json",
+   "red": []
+  },
+  "gorsel": {
+   "toplam": 20,
+   "red": []
+  }
+ },
+ "kor_png": {
+  "tamam": true,
+  "pngSayi": 20,
+  "hata": null
+ },
+ "kontak": true,
+ "kor": null,
+ "durum": "beklemede",
+ "karar": "KOR_BEKLIYOR"
+}
