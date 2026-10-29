@@ -50,7 +50,7 @@ export async function HeroSection() {
         </p>
       </div>
 
-      <div className="relative mx-auto w-full max-w-sm pb-6 lg:max-w-none">
+      <div className="relative mx-auto w-full max-w-sm pb-2 pt-12 sm:pb-6 sm:pt-0 lg:max-w-none">
         <div
           aria-hidden="true"
           className="absolute inset-x-8 bottom-0 top-10 rounded-[3rem] bg-gold-100 dark:bg-gold-900/30"
@@ -75,16 +75,17 @@ export async function HeroSection() {
           alt={t("hero.mascotAlt")}
           width={713}
           height={760}
-          className="absolute -start-2 top-6 h-24 w-auto drop-shadow-md motion-safe:animate-hupo-mascot sm:-start-6 sm:h-28"
+          sizes="(min-width: 640px) 105px, 90px"
+          className="absolute start-2 top-0 h-12 w-auto drop-shadow-md motion-safe:animate-hupo-mascot sm:-start-6 sm:top-6 sm:h-28"
         />
 
         {/* ÖRNEK RAPOR: veli kartı, etiketi açıkça görünür */}
         <aside
           aria-label={t("hero.sampleLabel")}
-          className="absolute end-0 bottom-0 w-60 max-w-[calc(100%-1rem)] rounded-2xl bg-white p-4 shadow-xl ring-1 ring-cream-dark motion-safe:animate-hupo-rise-late sm:-end-8 sm:w-64 dark:bg-gray-800 dark:ring-gray-700"
+          className="relative mx-auto mt-4 w-60 max-w-full rounded-2xl bg-white p-4 shadow-xl ring-1 ring-cream-dark motion-safe:animate-hupo-rise-late sm:absolute sm:-end-8 sm:bottom-0 sm:mx-0 sm:mt-0 sm:w-64 lg:-end-4 dark:bg-gray-800 dark:ring-gray-700"
         >
           <div className="flex items-center justify-between gap-2">
-            <span className="rounded-md bg-warning-100 px-2 py-0.5 text-[11px] font-extrabold tracking-wider text-warning-700">
+            <span className="rounded-md bg-warning-100 px-2 py-0.5 text-xs font-extrabold tracking-wider text-warning-700">
               {t("hero.sampleTag")}
             </span>
             <span className="text-xs font-semibold text-navy-muted dark:text-gray-400">
@@ -118,7 +119,7 @@ export async function HeroSection() {
               </li>
             ))}
           </ul>
-          <p className="mt-3 text-[11px] leading-snug text-navy-muted dark:text-gray-400">
+          <p className="mt-3 text-[13px] leading-snug text-navy-muted dark:text-gray-400">
             {t("hero.sampleNote")}
           </p>
         </aside>

@@ -65,7 +65,7 @@ export async function LandingFooter() {
             <li><a href="#characters" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.characters")}</a></li>
             <li><a href="#deneme-sinavi"className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.denemeExam")}</a></li>
             <li><a href="#pricing" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.pricing")}</a></li>
-            <li><a href="#faq" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.faq")}</a></li>
+            <li><a href="#faq" className="inline-flex min-h-11 min-w-11 items-center hover:text-brand-600">{t("footer.faq")}</a></li>
           </ul>
         </nav>
 
@@ -86,7 +86,7 @@ export async function LandingFooter() {
           <p className="font-extrabold">{t("footer.colCompany")}</p>
           <ul className="mt-3 space-y-1 text-navy-muted dark:text-gray-300">
             <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.about")}</a></li>
-            <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.blog")}</a></li>
+            <li><a href="#" className="inline-flex min-h-11 min-w-11 items-center hover:text-brand-600">{t("footer.blog")}</a></li>
             <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.contact")}</a></li>
             <li><Link href="/gizlilik" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.privacy")}</Link></li>
             <li><Link href="/kosullar" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.terms")}</Link></li>

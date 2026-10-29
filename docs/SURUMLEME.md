@@ -38,6 +38,15 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.6.1 · 2026-10-29
+
+Küçük görünüm düzeltmesi (PATCH). Landing ekran matrisi (320–1920 px) bulguları 1–3.
+- Hero: telefon genişliğinde "ÖRNEK RAPOR" kartı telefon maketinin altına alındı, Hupo karakteri soru metnini örtmüyor; 1024 px'te kart sağ kenardan boşluklu.
+- Okunurluk: 11 px yazılar 12 px (etiket, yüzde rozetleri), "Örnek veri" uyarısı 13 px.
+- Dokunma hedefleri: üst menü bağlantıları ve logo, alt bilgide SSS/Blog en az 44 px.
+
+Migration yok. Uyumluluk: App değişmedi, metin ve akış değişmedi.
+
 ### panel 0.5.0 · 2026-10-25
 
 Büyük değişiklik (MINOR: yeni RPC, migration, yönetici yüzeyi). Hikâye Atölyesi toplu yayın.

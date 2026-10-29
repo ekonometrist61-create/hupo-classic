@@ -178,7 +178,7 @@ export async function ParentPanelSection() {
                           <td style={{ padding: "5px 6px 5px 0", color: P.muted }}>{row.ders}</td>
                           <td style={{ padding: "5px 6px 5px 0", color: P.ink }}>{row.yanlis}</td>
                           <td style={{ padding: "5px 0 5px 0" }}>
-                            <span style={{ background: badge.bg, color: badge.color, borderRadius: "6px", padding: "1px 5px", fontWeight: 700, fontSize: "11px" }}>
+                            <span style={{ background: badge.bg, color: badge.color, borderRadius: "6px", padding: "1px 5px", fontWeight: 700, fontSize: "12px" }}>
                               {badge.text}
                             </span>
                           </td>
