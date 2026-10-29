@@ -32,7 +32,11 @@ export default function CookieConsent() {
   }
 
   // Tek satır: kısa metin, "Tercihler" (gizlilik sayfası) ve iki eşit ağırlıklı karar düğmesi.
+  // Bant fixed olduğu için altındaki son içeriği örter; aynı yükseklikte boşluk, sayfanın
+  // sonuna bant açıkken yer ayırır. Yükseklikler bandın py/h değerleriyle eşleşmeli.
   return (
+    <>
+    <div aria-hidden="true" className="h-[57px] sm:h-[69px]" />
     <section
       aria-labelledby="cookie-baslik"
       className="fixed inset-x-0 bottom-0 z-50 border-t border-navy/10 bg-white px-3 py-1.5 shadow-lg sm:px-4 sm:py-3"
@@ -64,5 +68,6 @@ export default function CookieConsent() {
         </button>
       </div>
     </section>
+    </>
   );
 }

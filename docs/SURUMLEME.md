@@ -38,6 +38,14 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.6.2 · 2026-10-30
+
+Küçük görünüm düzeltmesi (PATCH). Landing ekran matrisi bulguları 4–5.
+- Çerez şeridi telefonda kompaktlaştırıldı (69 px → 57 px, düğmeler 44 px). Bant açıkken sayfanın sonuna aynı yükseklikte boşluk eklenir; son içerik bantın altında kalmaz. Onay ve ret mantığı değişmedi.
+- 1024 px ve üstünde masaüstü menü görünür (eşik xl → lg); mobil menü 1024 px'ten itibaren gizlenir.
+
+Migration yok. Uyumluluk: App değişmedi, metin ve veri değişmedi.
+
 ### panel 0.6.1 · 2026-10-29
 
 Küçük görünüm düzeltmesi (PATCH). Landing ekran matrisi (320–1920 px) bulguları 1–3.
