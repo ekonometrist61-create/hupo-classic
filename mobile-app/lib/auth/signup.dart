@@ -1,9 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
+import '../services/web_links.dart';
 import '../theme/app_theme.dart';
 import 'auth_widgets.dart';
 import 'turnstile.dart';
+
+const String _kabulEtiketi = 'Gizlilik Politikası ve Kullanım Koşulları\'nı okudum, kabul ediyorum.';
+const String _kabulGerekli = 'Devam etmek için gizlilik metnini ve kullanım koşullarını kabul etmelisin.';
+const String _gizlilikEtiketi = 'Gizlilik metni';
+const String _kosullarEtiketi = 'Kullanım koşulları';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -19,6 +25,8 @@ class _SignupScreenState extends State<SignupScreen> {
   final _passwordController = TextEditingController();
   bool _loading = false;
   bool _obscure = true;
+  // Kayıt için zorunlu onay; varsayılan işaretsiz (KVKK m.5 açık kabul kaydı).
+  bool _kabul = false;
 
   @override
   void dispose() {
@@ -30,6 +38,10 @@ class _SignupScreenState extends State<SignupScreen> {
 
   Future<void> _signup() async {
     if (!_formKey.currentState!.validate()) return;
+    if (!_kabul) {
+      showError(context, _kabulGerekli);
+      return;
+    }
     final captcha = await turnstileTokenAl(context);
     if (captcha == null) return; // kullanici vazgecti
     if (!mounted) return;
@@ -104,7 +116,33 @@ class _SignupScreenState extends State<SignupScreen> {
                     : null,
                 onFieldSubmitted: (_) => _signup(),
               ),
-              const SizedBox(height: 24),
+              const SizedBox(height: 16),
+              CheckboxListTile(
+                value: _kabul,
+                onChanged: (v) => setState(() => _kabul = v ?? false),
+                controlAffinity: ListTileControlAffinity.leading,
+                contentPadding: EdgeInsets.zero,
+                title: Text(
+                  _kabulEtiketi,
+                  style: appText(size: 14, weight: FontWeight.w700),
+                ),
+                subtitle: Wrap(
+                  spacing: 8,
+                  children: [
+                    TextButton(
+                      onPressed: () => openWebPage('/gizlilik'),
+                      child: Text(_gizlilikEtiketi,
+                          style: appText(weight: FontWeight.w800, color: AppColors.primary)),
+                    ),
+                    TextButton(
+                      onPressed: () => openWebPage('/kosullar'),
+                      child: Text(_kosullarEtiketi,
+                          style: appText(weight: FontWeight.w800, color: AppColors.primary)),
+                    ),
+                  ],
+                ),
+              ),
+              const SizedBox(height: 16),
               AuthSubmitButton(
                 label: 'Kayıt ol',
                 loading: _loading,

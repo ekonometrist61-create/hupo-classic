@@ -48,8 +48,9 @@ const securityHeaders = [
       `script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com${isDev ? " 'unsafe-eval'" : ""}`,
       // Cloudflare Turnstile widget'ı iframe içinde çalışır (bot doğrulaması)
       "frame-src https://challenges.cloudflare.com",
-      "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      "font-src 'self' https://fonts.gstatic.com",
+      // Yazı tipleri next/font ile derleme sırasında kendi alanımıza alınır; tarayıcı Google'a istek atmaz.
+      "style-src 'self' 'unsafe-inline'",
+      "font-src 'self'",
       // Uygulama logoları ve kullanıcı avatarları (ileriki sürümde kısıtlanacak)
       "img-src 'self' data: blob: https://*.supabase.co",
       "frame-ancestors 'none'",

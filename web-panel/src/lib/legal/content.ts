@@ -22,7 +22,7 @@ export const legalDraftNotice =
 
 export const privacySummary: string[] = [
   "Veri sorumlusu [ŞİRKET UNVANI]'dır. Haklarını kullanmak için [İLETİŞİM E-POSTASI] adresine yazabilirsin; başvurular en geç 30 gün içinde yanıtlanır.",
-  "Çocuk hesapları veli onayıyla açılır. Çocuklara yönelik reklam, davranışsal takip ve pazarlama iletisi yoktur.",
+  "Çocuklar kendi hesaplarını açabilir; ücretli planı yalnızca veli, kendi hesabıyla satın alır. Çocuklara yönelik reklam, davranışsal takip ve pazarlama iletisi yoktur.",
   "Yalnızca hizmeti sunmak için gerekli verileri işleriz; verilerini satmayız.",
   "Pazarlama iletileri (e-posta, SMS, telefon) ve analitik ölçüm yalnızca açık onayınla yapılır. Her kanal için onay ayrıdır ve başlangıçta işaretsizdir.",
   "Verdiğin rızayı istediğin zaman geri alabilirsin; bu, geri almadan önceki işlemleri geçersiz kılmaz.",
@@ -30,8 +30,8 @@ export const privacySummary: string[] = [
 
 export const termsSummary: string[] = [
   "Hupolingo bir eğitim ve hazırlık hizmetidir; sınav veya puan garantisi vermez.",
-  "18 yaşından küçük öğrencilerin hesabını veli açar ve yönetir.",
-  "Ücretli abonelikte fiyat, yenileme ve iptal koşulları satın almadan önce gösterilir.",
+  "Öğrenciler kendi hesaplarını açabilir; ücretli planı yalnızca veli satın alır.",
+  "Ücretli planlarda fiyat, süre ve koşullar satın almadan önce gösterilir; otomatik yenileme yoktur.",
   "Hesabını uygulamanın Ayarlar bölümünden dilediğin zaman silebilirsin.",
   "Tüketici olarak haklarınız (ve kanunun sınırlayamadığı haklar) saklıdır.",
 ];
@@ -79,7 +79,7 @@ export const privacySections: LegalSection[] = [
   {
     title: "Çocukların verileri",
     paragraphs: [
-      "Hupolingo, 3–7. sınıf öğrencileri için tasarlanmıştır. Çocuk hesabı, veli tarafından açılır veya veli onayıyla bağlanır. Veli onayını veli panelinden verebilir ve geri çekebilir.",
+      "Hupolingo, 3–7. sınıf öğrencileri için tasarlanmıştır. Çocuk kendi hesabını açabilir. Ücretli plan yalnızca veli hesabıyla satın alınır. Veli, çocuğun hesabını veli panelinden bağlayabilir ve veri işleme izinlerini yönetebilir.",
       "Çocuklardan yalnızca hizmet için gerekli en az bilgiyi (ad veya takma ad, sınıf, giriş e-postası) isteriz.",
       "Çocuklara yönelik reklam, davranışsal takip, profilleme veya pazarlama iletisi yapmayız. Pazarlama iletileri yalnızca veli veya reşit kullanıcılara ve onaylarına göre gönderilir.",
       "Ligde diğer öğrencilere yalnızca isimsiz sıra bilgisi görünür; kişisel bilgiler görünmez.",
@@ -202,7 +202,7 @@ export const termsSections: LegalSection[] = [
   {
     title: "Tanımlar",
     paragraphs: [
-      "Veli: hesabı açan ve bağlı öğrenci hesaplarını yöneten yetişkin.",
+      "Veli: ücretli planı kendi hesabıyla satın alabilen ve bağlı öğrenci hesaplarını izleyen yetişkin.",
       "Öğrenci: veli hesabına bağlı çocuk veya genç kullanıcı.",
       "Hesap: veli veya öğrenci hesabı. İçerik: sorular, açıklamalar, metinler, görseller, karakterler ve diğer materyaller. Kullanıcı içeriği: kullanıcının hizmete girdiği cevaplar, notlar ve diğer veriler.",
     ],
@@ -220,7 +220,7 @@ export const termsSections: LegalSection[] = [
     paragraphs: [
       "Hesabı doğru bilgilerle oluşturmalı ve bilgilerin değiştiğinde güncellemelisin.",
       "Hesabın güvenliği senin sorumluluğundadır. Parolanı kimseyle paylaşma; şüpheli bir durum fark edersen bize bildir.",
-      "18 yaşından küçük öğrencilerin hesapları veli tarafından açılır ve yönetilir. Veli, bu koşulları çocuğu adına kabul ettiğini ve çocuğun hesap kullanımından sorumlu olduğunu beyan eder.",
+      "Öğrenciler kendi hesaplarını açabilir ve hizmeti kullanabilir. Ücretli planı yalnızca veli, kendi hesabıyla satın alır. 18 yaşından küçük öğrencinin hesap kullanımından velisi de sorumludur. [Yaş ve hesap açma koşulları — hukukçu teyidi.]",
       "Veli, bağlı öğrenci hesaplarına ilişkin veri işleme onaylarını veli panelinden verebilir veya geri çekebilir.",
       "Hesap yalnızca veli ve bağlı öğrenci tarafından kullanılır; başkasına devredilemez veya paylaşılamaz.",
     ],
@@ -241,9 +241,8 @@ export const termsSections: LegalSection[] = [
     title: "Ücretli hizmetler, abonelik ve ödeme",
     paragraphs: [
       "Ücretli planların fiyatı, süresi, yenileme koşulları ve kapsamı satın almadan önce gösterilir. Ödemeler iyzico üzerinden alınır; kart bilgileri Hupolingo tarafından görülmez veya saklanmaz.",
-      "Abonelikler, iptal edilmediği sürece dönem sonunda aynı koşullarla otomatik yenilenir. Yenilemeden önce [X GÜN] içinde bilgilendirme yapılır.",
-      "Yenilemeyi hesap ayarlarından veya [İLETİŞİM E-POSTASI] üzerinden durdurabilirsin. İptal bir sonraki döneme etki eder; mevcut dönem sonuna kadar hizmet devam eder.",
-      "Fiyat değişiklikleri mevcut dönem bitene kadar uygulanmaz ve en az [X GÜN] önce bildirilir.",
+      "Ücretli planlar süreli tek seferlik satıştır. Süre sonunda otomatik yenileme yapılmaz; devam etmek istersen yeniden satın alman gerekir.",
+      "Satın aldığın dönem, ödeme anındaki fiyat ve koşullarla süre sonuna kadar geçerlidir. Plan fiyatları değişebilir; bu değişiklik satın alınmış dönemi etkilemez.",
       "Cayma hakkı, mesafeli sözleşmelere ilişkin mevzuat ve ön bilgilendirme formunda belirtilen koşullar çerçevesinde uygulanır. Dijital hizmetin cayma süresi dolmadan ifasına başlanmasına açıkça onay vermen hâlinde yasal istisnalar geçerli olabilir; bu onay satın alma adımında ayrıca alınır.",
       "İade koşulları: [İADE VE İPTAL KOŞULLARI — hukukçu teyidi]. Tüketici mevzuatından doğan iade hakların saklıdır.",
       "Ön bilgilendirme formu ve mesafeli satış sözleşmesi, ödeme öncesinde gösterilir ve bu koşullarla birlikte geçerlidir.",
@@ -344,6 +343,73 @@ export const termsSections: LegalSection[] = [
     title: "İletişim",
     paragraphs: [
       "[ŞİRKET UNVANI], [ADRES], [İLETİŞİM E-POSTASI].",
+    ],
+  },
+];
+
+// Ödeme öncesi ön bilgilendirme formu ve mesafeli satış sözleşmesi (/on-bilgilendirme).
+// Sürüm: payments-checkout (supabase/functions/payments-checkout/index.ts) ile AYNI olmalıdır;
+// metin değişirse iki yerde birlikte artırılır ve yeniden onay alınır.
+export const odemeOnBilgiSurum = "odeme-on-bilgi-2026-10-taslak-1";
+
+export const onBilgilendirmeSummary: string[] = [
+  "Ödeme sayfası açılmadan önce bu formu okuyup iki onay kutusunu işaretlemen gerekir.",
+  "Plan tek seferlik süreli bir satıştır; otomatik yenileme yoktur.",
+  "Kart bilgilerin iyzico ödeme sayfasında alınır; Hupolingo bu bilgileri görmez.",
+  "Cayma hakkın ve hizmet hemen başlarsa bu hakkın sınırlanabileceği durum ayrıca onaylanır.",
+];
+
+export const onBilgilendirmeSections: LegalSection[] = [
+  {
+    title: "Satıcı ve hizmet sağlayıcı",
+    paragraphs: [
+      "Bu form, Hupolingo veli aboneliği satın almadan önce sunulan ön bilgilendirme ve mesafeli satış sözleşmesidir. Satıcı: [ŞİRKET UNVANI].",
+      "Adres: [ADRES]. MERSİS no: [MERSİS NO]. E-posta: [İLETİŞİM E-POSTASI]. Telefon: [TELEFON — varsa].",
+    ],
+  },
+  {
+    title: "Satın alınan hizmet",
+    paragraphs: [
+      "Satılan hizmet, veli panelinden seçilen plan kapsamında Hupolingo dijital eğitim içeriklerine ve veli takip ekranlarına erişimdir. Hangi özelliklerin ücretli plana bağlı olduğu plan açıklamasında belirtilir.",
+      "Hizmet bir eğitim hizmetidir; sınav veya okul başarısı ya da belirli bir puan garantisi içermez.",
+    ],
+  },
+  {
+    title: "Fiyat, süre ve ödeme",
+    paragraphs: [
+      "Plan adı, fiyatı (vergiler dâhil), süresi ve varsa deneme süresi ödeme adımından önce veli panelinde gösterilir.",
+      "Ödeme iyzico ödeme sayfasında tek çekim olarak alınır; taksit seçeneği yoktur. Kart bilgilerin Hupolingo'ya ulaşmaz ve saklanmaz.",
+      "Plan tek seferlik süreli bir satıştır; süre sonunda otomatik yenileme yapılmaz.",
+      "Plan, ödeme onaylandıktan sonra açılır. Ödeme başarısız olursa plan açılmaz ve ücret alınmaz.",
+    ],
+  },
+  {
+    title: "Teslimat ve hizmetin başlaması",
+    paragraphs: [
+      "Dijital hizmet, ödeme onaylandıktan sonra hesapta hemen kullanıma açılır. Fiziksel teslimat yoktur.",
+    ],
+  },
+  {
+    title: "Cayma hakkı",
+    paragraphs: [
+      "Mesafeli sözleşmelere ilişkin mevzuat uyarınca satın almadan itibaren [14 GÜN — hukukçu teyidi] içinde cayma hakkın vardır.",
+      "Hizmetin cayma süresi dolmadan başlamasını istersen ödeme adımındaki ayrı onay kutusunu işaretlersin. Bu onayı verdiysen ve hizmet ifa edilmeye başlandıysa, mevzuatta öngörülen istisnalar çerçevesinde cayma hakkın kullanılamayabilir. [Bu istisnanın uygulanma biçimi hukukçu teyidi bekliyor.]",
+      "Cayma bildirimini [İLETİŞİM E-POSTASI] adresine yazılı olarak iletebilirsin. Cayma hâlinde ödenen tutar [İADE SÜRESİ] içinde ödemenin yapıldığı yönteme iade edilir. [İADE VE İPTAL KOŞULLARI — hukukçu teyidi.]",
+    ],
+  },
+  {
+    title: "Ön bilgilendirme onayı ve kayıt",
+    paragraphs: [
+      "Ödeme sayfası, bu formun kabulü ve cayma istisnası onayı kutuları işaretlenmeden açılmaz.",
+      "Onay zamanı, form sürümü (odeme-on-bilgi-2026-10-taslak-1), ödeme kaydı ve IP adresi kayıt altına alınır. Bu kayıtlar [SAKLAMA SÜRESİ] boyunca tutulur.",
+      "Onayladığın form metninin bir kopyasını [İLETİŞİM E-POSTASI] üzerinden talep edebilirsin.",
+    ],
+  },
+  {
+    title: "Şikâyet ve uyuşmazlık",
+    paragraphs: [
+      "Şikâyetlerini önce [İLETİŞİM E-POSTASI] üzerinden bize iletebilirsin.",
+      "Tüketici sıfatıyla yapılan uyuşmazlıklarda 6502 sayılı Tüketicinin Korunması Hakkında Kanun hükümleri uygulanır; yerleşim yerindeki Tüketici Hakem Heyeti ve Tüketici Mahkemesi'ne başvurma hakkın saklıdır.",
     ],
   },
 ];

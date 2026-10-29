@@ -4,6 +4,7 @@ import { TurnstileWidget } from "@/components/guvenlik/TurnstileWidget";
 import { authDilCevir, authHataAnahtari, authMetni } from "@/lib/auth/hata";
 import { Link, useRouter } from "@/i18n/navigation";
 import { EyeCloseIcon } from "@/icons";
+import { haneKaynagiYaz, kayitUtmMetadata } from "@/lib/analytics/kaynak";
 import { createClient } from "@/utils/supabase/client";
 import { useLocale, useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
@@ -81,6 +82,8 @@ export default function SignUpForm() {
           // Kapı kapalıysa alan hiç gönderilmez: trigger push satırı yazmaz.
           iletisim_push: pushAcik ? izinPush : undefined,
           iletisim_metin_surumu: ILETISIM_METIN_SURUMU,
+          // İlk temas UTM'si (yalnız analitik rızası varsa); ilk oturumda hane kartına yazılır.
+          ...kayitUtmMetadata(),
         },
         emailRedirectTo: `${window.location.origin}/veli-paneli/giris`,
         captchaToken: captchaToken ?? undefined,
@@ -110,6 +113,7 @@ export default function SignUpForm() {
 
     // E-posta onayı kapalıysa oturum hemen açılır; açıksa doğrulama bağlantısı beklenir.
     if (data.session) {
+      await haneKaynagiYaz(supabase, data.user);
       router.replace("/veli-paneli");
       return;
     }

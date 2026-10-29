@@ -1,4 +1,5 @@
-﻿import 'package:flutter/material.dart';
+﻿import 'package:flutter/foundation.dart' show kIsWeb;
+import 'package:flutter/material.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
 /// Cloudflare Turnstile site anahtari (herkese aciktir, gizli degildir).
@@ -13,7 +14,8 @@ const String _kok = 'https://hupolingo.com';
 /// - null: kullanici iptal etti.
 /// - diger: Turnstile jetonu (tek kullanimlik).
 Future<String?> turnstileTokenAl(BuildContext context) async {
-  if (_siteKey.isEmpty) return '';
+  // Web (app.hupolingo.com) derlemesinde WebView yoktur; captcha istenmez.
+  if (kIsWeb || _siteKey.isEmpty) return '';
   return showDialog<String>(
     context: context,
     barrierDismissible: false,
