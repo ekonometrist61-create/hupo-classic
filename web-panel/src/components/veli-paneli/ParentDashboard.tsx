@@ -6,6 +6,7 @@ import BuHaftaOzeti from "./BuHaftaOzeti";
 import ChildScope from "./ChildScope";
 import CocukDenemeGecmisi from "./CocukDenemeGecmisi";
 import DenemeKaydiKarti from "./DenemeKaydiKarti";
+import GenelDurumOzeti from "./GenelDurumOzeti";
 import KelimeGelisimKarti from "./KelimeGelisimKarti";
 import ReviewTopicsList from "./ReviewTopicsList";
 import SonrakiAdimKarti from "./SonrakiAdimKarti";
@@ -36,6 +37,11 @@ export default function ParentDashboard({ students, ilkVeri }: ParentDashboardPr
         const cocukAd = ogrenci?.full_name ?? ogrenci?.username ?? null;
         return (
           <div className="space-y-4 md:space-y-6">
+            <GenelDurumOzeti
+              haftalik={data.haftalik}
+              tekrarKonulari={data.tekrar_konulari}
+            />
+
             <BuHaftaOzeti
               haftalik={data.haftalik}
               tekrarKonulari={data.tekrar_konulari}

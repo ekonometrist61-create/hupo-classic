@@ -39,6 +39,7 @@ const VELI_NAV: VeliNavGroup[] = [
       { key: "overview", icon: <GridIcon />, path: "/veli-paneli" },
       { key: "learning", icon: <BoltIcon /> },
       { key: "subjects", icon: <TableIcon />, path: "/veli-paneli/dersler" },
+      { key: "ogrenmeHaritasi", icon: <PieChartIcon />, path: "/veli-paneli/ogrenme-haritasi" },
       { key: "children", icon: <UserCircleIcon />, path: "/veli-paneli/cocuklarim" },
     ],
   },

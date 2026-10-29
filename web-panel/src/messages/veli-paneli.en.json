@@ -12,6 +12,7 @@
       "overview": "Overview",
       "learning": "Learning",
       "subjects": "Subjects & Topics",
+      "ogrenmeHaritasi": "Learning Map",
       "questions": "Question Performance",
       "review": "Mistakes & Review",
       "exams": "Practice Exams",
@@ -128,6 +129,44 @@
       "xp": "XP",
       "level": "Level"
     },
+    "genelDurum": {
+      "title": "Overall status",
+      "kaynak": "Last 7 days. This section does not measure learning level on its own; it summarises study records.",
+      "durumBos": "No study activity this week yet. This summary fills in once your child starts solving questions. When you are ready, you can start together with a short session.",
+      "durumGun": "This week your child studied on {gun, plural, one {# day} other {# days}} and solved {soru, plural, one {# question} other {# questions}}.",
+      "durumTekrar": "{tekrar, plural, one {# topic is} other {# topics are}} due for review.",
+      "durumTekrarYok": "No topics are due for review.",
+      "ogrenme": {
+        "baslik": "Learning",
+        "desc": "Correct answer rate",
+        "oranDeger": "{oran}%",
+        "oranNot": "Based on questions solved in the last 7 days.",
+        "yetersiz": "Not enough data yet",
+        "yetersizNot": "A rate needs at least {min} questions.",
+        "uyari": "XP and time are not measures of learning and are not included in this card."
+      },
+      "duzen": {
+        "baslik": "Routine",
+        "desc": "Days studied",
+        "deger": "{aktif} / {pencere} days",
+        "sure": "Total study time: {dk} min",
+        "sureYok": "No study time this week",
+        "uyari": "Routine shows study rhythm; it is not a measure of learning level."
+      },
+      "destek": {
+        "baslik": "Support",
+        "oneri": "A short review of “{konu}” could help this week.",
+        "yokOneri": "No topics are due for review right now. This is a good time to start a new topic.",
+        "sure": "You can review together for {dk} minutes: ask about the topic first, then solve one or two questions together.",
+        "uyari": "Suggestions are based only on study records; they are not a diagnosis."
+      },
+      "dikkat": {
+        "baslik": "Attention",
+        "pasif": "No study records in the last 3 days. Even a short session makes it easier to start again.",
+        "tekrar": "{sayi, plural, one {# topic is} other {# topics are}} due for review. Starting with one topic is enough.",
+        "not": "This is not an evaluation; it only reflects what the study records show."
+      }
+    },
     "buHafta": {
       "title": "This week",
       "kaynak": "Last 7 days. Time and question count show study rhythm; they do not measure learning level on their own.",
@@ -204,7 +243,48 @@
         "checkoutLoading": "Opening payment page...",
         "checkoutError": "The payment page could not be opened. Please try again shortly.",
         "paymentNote": "You complete the payment with your card on the iyzico payment page.",
-        "cancelNote": "To cancel, contact our support team."
+        "cancelNote": "To cancel, contact our support team.",
+        "onBilgiKabul": "I have read the <link>pre-information form and distance sales agreement</link> and accept them.",
+        "onBilgiCayma": "I want the service to start before the withdrawal period ends. I acknowledge that my right of withdrawal may not be available to the extent the service has been performed.",
+        "onBilgiIpucu": "Please tick both checkboxes to continue to payment."
+      }
+    },
+    "ogrenmeHaritasi": {
+      "title": "Learning Map",
+      "desc": "Your child's status against school learning outcomes, by week and unit.",
+      "pick": "Choose a subject",
+      "empty": "No questions solved yet. Once your child starts solving questions, the learning outcome map for each subject will appear here.",
+      "sinifYok": "The student's grade is missing, so the learning outcome map cannot be shown.",
+      "planYok": "A learning outcome plan is not yet defined for this subject.",
+      "kazanimYok": "No learning outcome list was found for this subject and grade.",
+      "sinifBilgi": "Grade {sinif} learning outcomes",
+      "bugunHafta": "School calendar, this week: week {hafta}",
+      "bugunYok": "School calendar information is not available for this week.",
+      "bugunSayi": "{sayi} learning outcomes are taught in school this week.",
+      "buHaftaEtiket": "Taught this week",
+      "sinifNot": "For grades 1–4, percentages are not shown; the outcome status is presented qualitatively.",
+      "kaynak": "The status is based on the correct-answer rate for questions your child solved for each outcome and on how they were repeated over time. If there are not enough answers, no status is shown. This screen is not a diagnosis, score or proficiency assessment.",
+      "filtreBaslik": "Outcome filter",
+      "filtreTum": "All ({sayi})",
+      "filtreDestek": "Needs support ({sayi})",
+      "filtreBos": "No outcomes in this subject need support.",
+      "uniteYok": "Unit not specified",
+      "haftaLabel": "Week {hafta}",
+      "soruSayisi": "{sayi} questions",
+      "cevap": "{cevap} answers · {gun} different days",
+      "oran": "Correct rate {oran}%",
+      "kalici": "Correct on repeat review: {sayi}",
+      "durum": {
+        "veriYok": "Not enough data yet",
+        "gelisiyor": "Developing",
+        "pekisiyor": "Consolidating",
+        "guclu": "Strong"
+      },
+      "durumAciklama": {
+        "veriYok": "At least 6 answers are needed for a status.",
+        "gelisiyor": "Needs support on this outcome.",
+        "pekisiyor": "Practice on this outcome is ongoing.",
+        "guclu": "Answered correctly on different days and in spaced repeats."
       }
     },
     "subjectsPage": {

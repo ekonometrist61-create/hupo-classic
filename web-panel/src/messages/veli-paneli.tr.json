@@ -12,6 +12,7 @@
       "overview": "Genel Bakış",
       "learning": "Öğrenme",
       "subjects": "Dersler & Konular",
+      "ogrenmeHaritasi": "Öğrenme Haritası",
       "questions": "Soru Performansı",
       "review": "Yanlışlar & Tekrar",
       "exams": "Deneme Sınavları",
@@ -128,6 +129,44 @@
       "xp": "XP",
       "level": "Seviye"
     },
+    "genelDurum": {
+      "title": "Genel durum",
+      "kaynak": "Son 7 gün. Bu bölüm öğrenme düzeyini tek başına ölçmez; yalnızca çalışma kayıtlarını özetler.",
+      "durumBos": "Bu hafta henüz çalışma yok. Çocuğunuz soru çözmeye başladığında bu özet dolacak. Hazır olduğunda birlikte kısa bir başlangıç yapabilirsiniz.",
+      "durumGun": "Bu hafta {gun} gün çalışıldı ve {soru} soru çözüldü.",
+      "durumTekrar": "{tekrar} konu tekrar bekliyor.",
+      "durumTekrarYok": "Tekrar bekleyen konu yok.",
+      "ogrenme": {
+        "baslik": "Öğrenme",
+        "desc": "Doğru cevap oranı",
+        "oranDeger": "%{oran}",
+        "oranNot": "Son 7 gün içinde çözülen sorulara göre.",
+        "yetersiz": "Henüz yeterli veri yok",
+        "yetersizNot": "Oran için en az {min} soru gerekir.",
+        "uyari": "XP ve süre öğrenme ölçüsü değildir; bu karta dahil edilmez."
+      },
+      "duzen": {
+        "baslik": "Düzen",
+        "desc": "Çalışılan gün sayısı",
+        "deger": "{aktif} / {pencere} gün",
+        "sure": "Toplam çalışma: {dk} dk",
+        "sureYok": "Bu hafta çalışma süresi yok",
+        "uyari": "Düzen çalışma ritmini gösterir; öğrenme düzeyi değildir."
+      },
+      "destek": {
+        "baslik": "Destek",
+        "oneri": "“{konu}” konusunda kısa bir tekrar iyi olabilir.",
+        "yokOneri": "Şu an tekrar bekleyen konu görünmüyor. Yeni bir konuya başlamak için iyi bir zaman.",
+        "sure": "Birlikte {dk} dakika tekrar yapabilirsiniz: önce konuyu sorun, sonra bir iki soruyu birlikte çözün.",
+        "uyari": "Öneriler yalnızca çalışma kayıtlarına dayanır; tanı değildir."
+      },
+      "dikkat": {
+        "baslik": "Dikkat",
+        "pasif": "Son 3 günde çalışma kaydı yok. Kısa bir oturum bile yeniden başlamayı kolaylaştırır.",
+        "tekrar": "{sayi} konu tekrar bekliyor. Hepsini bir kerede değil, bir konuyla başlamak yeterli olabilir.",
+        "not": "Bu bir değerlendirme değildir; yalnızca çalışma kayıtlarındaki görünümdür."
+      }
+    },
     "buHafta": {
       "title": "Bu hafta",
       "kaynak": "Son 7 gün. Süre ve soru sayısı çalışma düzenini gösterir; öğrenme düzeyini tek başına ölçmez.",
@@ -204,7 +243,48 @@
         "checkoutLoading": "Ödeme sayfası açılıyor...",
         "checkoutError": "Ödeme sayfası açılamadı. Lütfen birazdan tekrar deneyin.",
         "paymentNote": "Ödemeyi kart bilgilerinizle iyzico ödeme sayfasında tamamlarsınız.",
-        "cancelNote": "İptal için destek ekibimize ulaşın."
+        "cancelNote": "İptal için destek ekibimize ulaşın.",
+        "onBilgiKabul": "<link>Ön bilgilendirme formunu ve mesafeli satış sözleşmesini</link> okudum, kabul ediyorum.",
+        "onBilgiCayma": "Hizmetin cayma süresi dolmadan hemen başlamasını istiyorum. Bu durumda cayma hakkımın, hizmet ifa edildiği ölçüde kullanılamayabileceğini kabul ediyorum.",
+        "onBilgiIpucu": "Ödemeye devam etmek için iki onay kutusunu da işaretlemelisiniz."
+      }
+    },
+    "ogrenmeHaritasi": {
+      "title": "Öğrenme Haritası",
+      "desc": "Okuldaki kazanımlara göre çocuğunuzun durumu, hafta ve ünite sırasıyla.",
+      "pick": "Ders seçin",
+      "empty": "Henüz çözülmüş soru yok. Çocuğunuz soru çözmeye başladığında derslerin kazanım haritası burada görünecek.",
+      "sinifYok": "Çocuğunuzun sınıf bilgisi eksik olduğu için kazanım haritası gösterilemiyor.",
+      "planYok": "Bu ders için kazanım planı henüz tanımlı değil.",
+      "kazanimYok": "Bu ders ve sınıf için kazanım listesi bulunamadı.",
+      "sinifBilgi": "{sinif}. sınıf kazanımları",
+      "bugunHafta": "Okul takviminde bu hafta: {hafta}. hafta",
+      "bugunYok": "Bu hafta için okul takvimi bilgisi bulunmuyor.",
+      "bugunSayi": "Okulda bu hafta işlenen {sayi} kazanım var.",
+      "buHaftaEtiket": "Bu hafta işleniyor",
+      "sinifNot": "1–4. sınıflarda yüzde gösterilmez; kazanım durumu nitel olarak sunulur.",
+      "kaynak": "Durum, çocuğun bu kazanıma ait çözdüğü soruların doğru oranı ve tekrar düzenine göre hesaplanır. Yeterli cevap yoksa durum gösterilmez. Bu ekran bir tanı, puan veya yeterlilik değerlendirmesi değildir.",
+      "filtreBaslik": "Kazanım filtresi",
+      "filtreTum": "Tümü ({sayi})",
+      "filtreDestek": "Destek isteyenler ({sayi})",
+      "filtreBos": "Bu derste destek isteyen kazanım yok.",
+      "uniteYok": "Ünite belirtilmemiş",
+      "haftaLabel": "{hafta}. hafta",
+      "soruSayisi": "{sayi} soru",
+      "cevap": "{cevap} cevap · {gun} farklı gün",
+      "oran": "Doğru oranı %{oran}",
+      "kalici": "Aralıklı tekrarda doğru: {sayi}",
+      "durum": {
+        "veriYok": "Henüz yeterli veri yok",
+        "gelisiyor": "Gelişiyor",
+        "pekisiyor": "Pekişiyor",
+        "guclu": "Güçlü"
+      },
+      "durumAciklama": {
+        "veriYok": "Durum için en az 6 cevap gerekir.",
+        "gelisiyor": "Bu kazanımda destek istiyor.",
+        "pekisiyor": "Bu kazanımda çalışma sürüyor.",
+        "guclu": "Farklı günlerde ve aralıklı tekrarlarda da doğru yanıtlanıyor."
       }
     },
     "subjectsPage": {
