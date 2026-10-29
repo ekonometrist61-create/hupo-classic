@@ -174,9 +174,9 @@ function sayiDogrusu(p, profil) {
 }
 
 // ---------- 6) çokgen (düzgün), köşe harfleri, köşegenler ----------
-// parametreler: { n:3..10, harfler:['A','B',...], kosegenler:[[i,j],…] (köşe indeksleri), baslangic_aci? }
+// parametreler: { n:3..12, harfler:['A','B',...], kosegenler:[[i,j],…] (köşe indeksleri), baslangic_aci? }
 function cokgen(p, profil) {
-  const n = p.n; if (n < 3 || n > 10) hata('n_aralik_disi');
+  const n = p.n; if (n < 3 || n > 12) hata('n_aralik_disi');
   if (p.harfler.length !== n) hata('harf_sayisi_n_degil');
   const W = 260, H = 260, cx = 130, cy = 132, R = 88, s = new Sahne(W, H, profil);
   const ba = p.baslangic_aci ?? 90;

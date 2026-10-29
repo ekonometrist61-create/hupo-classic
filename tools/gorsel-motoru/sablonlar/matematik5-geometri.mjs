@@ -130,7 +130,7 @@ export function kur({ R, sec, karistir, ekle, konum }) {
   // ---- T5: çokgen köşegenleri — şıklar ardışık pencere (T(n−k)…), tek bir n'ye işaret etmez ----
   function cokgenSorusu(n, tur) {
     const bir = tur === 'bir_koseden';
-    const harfler = 'ABCDEFGHIJ'.slice(0, n).split('');
+    const harfler = 'ABCDEFGHIJKL'.slice(0, n).split('');
     const kosegenler = bir ? [...Array(n - 3)].map((_, k) => [0, k + 2]) : [];
     const spec = { tip_id: 'cokgen', parametreler: { n, harfler, kosegenler, baslangic_aci: 90 + Math.floor(180 / n) } };
     const f = (m) => (bir ? m - 3 : (m * (m - 3)) / 2); // m köşeli çokgen için istenen değer
@@ -163,5 +163,5 @@ export const KAYIT = [
   { id: 'mat5-kareli-dogru', ders: 'Matematik', sinif: 5, idOnek: 'MAT5-GEO', mufredat_surum: MUFREDAT, kodlar: ['MAT.5.3.4'], fabrika: kur,
     uret: (f, g) => f.kareliSorusu(g.sec(['paralel', 'dik'])) },
   { id: 'mat5-cokgen-kosegen', ders: 'Matematik', sinif: 5, idOnek: 'MAT5-GEO', mufredat_surum: MUFREDAT, kodlar: ['MAT.5.3.6'], fabrika: kur,
-    uret: (f, g) => f.cokgenSorusu(g.sec([6, 7, 8, 9, 10]), g.sec(['tum', 'bir_koseden'])) },
+    uret: (f, g) => f.cokgenSorusu(g.sec([6, 7, 8, 9, 10, 11, 12]), g.sec(['tum', 'bir_koseden'])) },
 ];

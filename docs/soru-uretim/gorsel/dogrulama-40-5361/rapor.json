@@ -1,0 +1,51 @@
+{
+ "surum": "1.1.0",
+ "ders": "Matematik",
+ "sinif": 5,
+ "kod": "MAT.5.3.6",
+ "tohum": 2,
+ "uretim": {
+  "istenen": 40,
+  "uretilen": 40,
+  "eksik": 0,
+  "denenen": 74,
+  "atilan": {
+   "tekrar_soru": 33,
+   "pencere_cok_kucuk": 1
+  },
+  "sablonlar": [
+   "mat5-cokgen-kosegen"
+  ]
+ },
+ "denge": {
+  "harf": {
+   "A": 10,
+   "B": 10,
+   "C": 10,
+   "D": 10
+  },
+  "tam_blok": 10,
+  "dengeli_blok": 10,
+  "bozuk_blok": []
+ },
+ "kapi": {
+  "kazanim": {
+   "toplam": 40,
+   "dosya": "kazanim_5_matematik.json",
+   "red": []
+  },
+  "gorsel": {
+   "toplam": 40,
+   "red": []
+  }
+ },
+ "kor_png": {
+  "tamam": true,
+  "pngSayi": 40,
+  "hata": null
+ },
+ "kontak": true,
+ "kor": null,
+ "durum": "beklemede",
+ "karar": "KOR_BEKLIYOR"
+}
