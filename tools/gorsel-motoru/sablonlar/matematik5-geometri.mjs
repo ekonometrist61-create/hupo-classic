@@ -72,7 +72,8 @@ export function kur({ R, sec, karistir, ekle, konum }) {
     for (let deneme = 0; deneme < 4000; deneme++) {
       const en = 11, boy = 8, dg = [];
       const secilen = karistir(YONLER).slice(0, 4);
-      if (istenen === 'paralel') secilen[1] = secilen[0];
+      // Paralel çift rastgele seçilir; sabit (k, l) olsaydı doğru şık her zaman "k ile l" çıkardı ve metin tek başına ele verirdi.
+      if (istenen === 'paralel') { const pi = Math.floor(R() * 4), pj = (pi + 1 + Math.floor(R() * 3)) % 4; secilen[pj] = secilen[pi]; }
       for (let i = 0; i < 4; i++) {
         const [dx, dy] = secilen[i], kat = 2 + Math.floor(R() * 2);
         const x1 = Math.floor(R() * (en + 1)), y1 = Math.floor(R() * (boy + 1));
