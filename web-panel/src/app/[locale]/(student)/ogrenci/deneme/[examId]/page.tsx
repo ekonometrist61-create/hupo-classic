@@ -1,4 +1,5 @@
 import DenemeEkrani from "@/components/ogrenci/DenemeEkrani";
+import ModulKapisi from "@/components/paket/ModulKapisi";
 import { createClient } from "@/utils/supabase/server";
 import type { Metadata } from "next";
 import { redirect } from "next/navigation";
@@ -32,5 +33,9 @@ export default async function DenemeEkraniPage({
   // Yalnızca öğrenci rolüne izin ver
   if (!profil || profil.role !== "ogrenci") redirect("/ogrenci");
 
-  return <DenemeEkrani examId={examId} />;
+  return (
+    <ModulKapisi modul="deneme" gereken="sinirli">
+      <DenemeEkrani examId={examId} />
+    </ModulKapisi>
+  );
 }
