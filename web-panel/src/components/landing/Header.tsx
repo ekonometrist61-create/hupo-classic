@@ -37,7 +37,7 @@ export async function LandingHeader() {
 
         <nav
           aria-label={t("nav.label")}
-          className="hidden items-center gap-1 whitespace-nowrap text-sm font-bold text-navy-muted xl:flex dark:text-gray-300"
+          className="hidden items-center gap-1 whitespace-nowrap text-sm font-bold text-navy-muted lg:flex dark:text-gray-300"
         >
           {navItems.map(({ href, label }) => (
             <a

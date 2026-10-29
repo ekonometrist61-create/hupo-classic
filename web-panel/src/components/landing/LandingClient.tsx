@@ -38,14 +38,14 @@ export function MobileMenu() {
         aria-expanded={open}
         aria-controls={panelId}
         aria-label={open ? t("close") : t("open")}
-        className="inline-flex h-11 w-11 items-center justify-center rounded-xl text-navy hover:bg-cream-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 xl:hidden dark:text-gray-100 dark:hover:bg-gray-800"
+        className="inline-flex h-11 w-11 items-center justify-center rounded-xl text-navy hover:bg-cream-dark focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 lg:hidden dark:text-gray-100 dark:hover:bg-gray-800"
       >
         {open ? <IconClose className="h-6 w-6" /> : <IconMenu className="h-6 w-6" />}
       </button>
       {open && (
         <div
           id={panelId}
-          className="absolute inset-x-0 top-full z-40 border-b border-cream-dark bg-cream p-4 shadow-lg motion-safe:animate-hupo-menu-in xl:hidden dark:border-gray-700 dark:bg-gray-900"
+          className="absolute inset-x-0 top-full z-40 border-b border-cream-dark bg-cream p-4 shadow-lg motion-safe:animate-hupo-menu-in lg:hidden dark:border-gray-700 dark:bg-gray-900"
         >
           <nav aria-label={t("label")} className="flex flex-col">
             {NAV_ITEMS.map((item) => (
