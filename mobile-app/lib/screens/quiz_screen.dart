@@ -5,6 +5,7 @@ import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 import 'package:lottie/lottie.dart';
 
 import '../models/models.dart';
@@ -548,13 +549,38 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                                   padding: const EdgeInsets.all(20),
                                   child: SizedBox(
                                     width: double.infinity,
-                                    child: SoruMetni(
-                                      question.text,
-                                      textAlign: TextAlign.center,
-                                      style: appText(
-                                          size: masaustu ? 24 : 21,
-                                          weight: FontWeight.w800,
-                                          height: 1.3),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.stretch,
+                                      mainAxisSize: MainAxisSize.min,
+                                      children: [
+                                        // Görselli soru: görsel metnin üstünde; görsel yoksa düzen aynı kalır.
+                                        if (question.gorselSvg case final svg?
+                                            when svg.isNotEmpty) ...[
+                                          Center(
+                                            child: SizedBox.square(
+                                              dimension: masaustu ? 300 : 240,
+                                              child: SvgPicture.string(
+                                                svg,
+                                                width: masaustu ? 300 : 240,
+                                                height: masaustu ? 300 : 240,
+                                                semanticsLabel:
+                                                    question.gorselAltMetin ??
+                                                        '',
+                                              ),
+                                            ),
+                                          ),
+                                          const SizedBox(height: 16),
+                                        ],
+                                        SoruMetni(
+                                          question.text,
+                                          textAlign: TextAlign.center,
+                                          style: appText(
+                                              size: masaustu ? 24 : 21,
+                                              weight: FontWeight.w800,
+                                              height: 1.3),
+                                        ),
+                                      ],
                                     ),
                                   ),
                                 ),
