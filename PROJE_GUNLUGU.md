@@ -4984,7 +4984,7 @@ Paketler:
   - Edge `olay-kutusu-gonder` (veli e-postası) puansız dala uyarlandı ve deploy edildi; ardından migration uzağa `db query --linked -f` ile uygulandı (migration geçmişine YAZILMADI, idempotent). Doğrulama: 7/7 fonksiyon yeni sürümde, `_deneme_puan_gorunur(3)=false`, `(5)=true`.
   - Web: `CocukDenemeGecmisi.tsx`, `MockExamDetailModal.tsx`, `DenemeEkrani.tsx`, `messages/tr|en.json` (`veliPaneli.denemeGecmisi.bos`). Mobil: `mock_exam_models.dart`, `mock_exam_screen.dart`.
   - Test: PGlite `supabase/tests/deneme_1_4_gizle` 25/25; `tsc --noEmit` (web) temiz; `flutter analyze` (2 dosya) temiz.
-- **Durum:** KISMİ — sunucu ve edge TAMAMLANDI; web paneli Vercel'e ve mobil sürüm YAYINLANMADI (istemci kodu yerelde, commit yok).
+- **Durum:** KISMİ — sunucu, edge ve web paneli TAMAMLANDI; mobil sürüm YAYINLANMADI. Commit'ler: `a48cadf`, `a25e495`. Web: Vercel production `web-panel-fykufbvm7` (Ready, `hupolingo.com` ve `www` alias'ı; ana sayfa ve `/veli-paneli/kayit` 200). Master tabanlı anlık görüntü: master + `b37e14b`, `8f1db2a`, `632474b` (web-panel) + `a48cadf` (web dosyaları); landing GSAP (`9d83c31`), GIE/A-B ekranları ve çalışma ağacındaki commit'lenmemiş landing/yasal/paket işleri GİTMEDİ. Anlık görüntü kökü `web-panel/` + `mobile-app/assets/characters` olmalı (prebuild karakterleri oradan senkronlar; Vercel Root Directory = web-panel).
 - **Doğrulama:** KISMİ. Ekran görüntüsü ve gerçek oturumla kontrol yapılmadı; PGlite stub şema üzerinde (RLS ve gerçek kısıtlar kapsam dışı).
 - **Sahip:** Proje sahibi (karar, onay); geliştirme (uygulama).
 - **Önem:** Orta
