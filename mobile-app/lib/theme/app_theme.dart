@@ -39,6 +39,17 @@ class AppColors {
   static const line = Color(0xFFF0E6CF);
   static const lineDark = Color(0xFFE0D2B0);
 
+  // Akıllı soru vurgulama (web: --soru-vurgu-* CSS değişkenleri ile aynı değerler).
+  // Açık tema: altın çizgi, metin ve zemin referansı. Zemin yalnız kontrast referansıdır, dolgu değildir.
+  // Çizgi #C7A63B, #FFF8ED üzerinde 2,22:1'dir (3:1 altında); bilgi kalınlıkla da taşındığı için
+  // çizgi tamamlayıcıdır. Koyu tema çifti #1F2937 üzerinde 8,48:1 (AA).
+  static const vurguCizgi = Color(0xFFC7A63B);
+  static const vurguMetin = Color(0xFF243747);
+  static const vurguZemin = Color(0xFFFFF8ED);
+  static const vurguCizgiKoyu = Color(0xFFE3C25A);
+  static const vurguMetinKoyu = Color(0xFFF5F5F4);
+  static const vurguZeminKoyu = Color(0xFF1F2937);
+
   // Dramatik "oyun" yüzeyleri (Arena, kutlamalar, kilitli silüet): Deep Navy derinliği.
   static const navyDeep = Color(0xFF0B1B2E);
   static const navy = Color(0xFF17324D);

@@ -164,7 +164,9 @@ class _SavedQuestionTile extends StatelessWidget {
             ],
           ),
           const SizedBox(height: 6),
-          SoruMetni(item.question.text, style: appText(size: 15)),
+          SoruMetni(item.question.text,
+                  highlights: item.question.highlights,
+                  style: appText(size: 15)),
           const SizedBox(height: 10),
           for (final opt in item.question.options.entries)
             Container(

@@ -3,6 +3,8 @@
 // Gizlilik: Kahraman ve yol arkadaşı adı bu modellerin HİÇBİRİNDE yoktur; ad yalnız cihaz
 // belleğinde (OkumaKahramanSecimi) tutulur ve sunucuya, günlüğe, hata metnine girmez.
 
+import '../utils/soru_vurgu.dart';
+
 int _tam(Object? v, [int yedek = 0]) => v is num ? v.toInt() : yedek;
 
 int? _tamOrNull(Object? v) => v is num ? v.toInt() : null;
@@ -168,10 +170,14 @@ class OkumaSoru {
     required this.secenekler,
     this.beceri,
     this.dayanakSayfa,
+    this.highlights = const [],
   });
 
   final String id;
   final String metin;
+
+  /// Akıllı vurgu aralıkları (kod noktası ofseti, `metin` soru köküne göre). Şıklara uygulanmaz.
+  final List<VurguAraligi> highlights;
   final List<OkumaSecenek> secenekler;
   final String? beceri;
 
@@ -181,6 +187,7 @@ class OkumaSoru {
   factory OkumaSoru.fromMap(Map<String, dynamic> m) => OkumaSoru(
         id: m['id'] as String,
         metin: m['metin'] as String,
+        highlights: vurguAraliklariCoz(m['highlights']),
         beceri: m['beceri'] as String?,
         dayanakSayfa: _tamOrNull(m['dayanak_sayfa']),
         secenekler: [

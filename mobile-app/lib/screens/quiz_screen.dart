@@ -574,6 +574,7 @@ class _QuizScreenState extends ConsumerState<QuizScreen> {
                                         ],
                                         SoruMetni(
                                           question.text,
+                                          highlights: question.highlights,
                                           textAlign: TextAlign.center,
                                           style: appText(
                                               size: masaustu ? 24 : 21,

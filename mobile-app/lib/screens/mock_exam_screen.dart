@@ -9,6 +9,7 @@ import '../models/mock_exam_models.dart';
 import '../models/models.dart';
 import '../providers/app_providers.dart';
 import '../theme/app_theme.dart';
+import '../widgets/question_text.dart';
 import '../utils/format.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
@@ -434,8 +435,9 @@ class _MockExamSessionScreenState extends ConsumerState<MockExamSessionScreen> {
                   child: ListView(
                     padding: const EdgeInsets.fromLTRB(20, 24, 20, 32),
                     children: [
-                      Text(
+                      SoruMetni(
                         soru.text,
+                        highlights: soru.highlights,
                         style: appText(weight: FontWeight.w700, height: 1.5),
                       ),
                       const SizedBox(height: 20),

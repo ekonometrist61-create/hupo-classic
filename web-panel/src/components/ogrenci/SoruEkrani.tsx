@@ -2,10 +2,13 @@
 
 import { createClient } from "@/utils/supabase/client";
 import { useEffect, useRef, useState } from "react";
+import QuestionRichText from "./QuestionRichText";
 
 interface Soru {
   id: string;
   soru_metni: string;
+  /** Akıllı vurgu: [{start,end}] kod noktası ofseti. Sütun migration'dan sonra select'e eklenecek. */
+  highlights?: unknown;
   siklar: Record<string, string>;
   ders: string;
   konu: string;
@@ -230,7 +233,7 @@ export default function SoruEkrani({ ders }: { ders: string }) {
         </div>
 
         <p className="mb-6 text-base leading-relaxed text-gray-800 dark:text-white sm:text-lg">
-          {soru.soru_metni}
+          <QuestionRichText metin={soru.soru_metni} highlights={soru.highlights} />
         </p>
 
         <div className="space-y-3">

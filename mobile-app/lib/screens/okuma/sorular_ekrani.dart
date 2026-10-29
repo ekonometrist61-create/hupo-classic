@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../../models/okuma_models.dart';
 import '../../widgets/hupo/hupo.dart';
+import '../../widgets/question_text.dart';
 import '../../widgets/okuma/okuma_bilesenler.dart';
 import 'okuma_tema.dart';
 
@@ -202,8 +203,9 @@ class _SorularEkraniState extends State<SorularEkrani> {
         const SizedBox(height: OkumaTema.bosluk16),
         Semantics(
           header: true,
-          child: Text(
+          child: SoruMetni(
             soru.metin,
+            highlights: soru.highlights,
             style: OkumaTema.yazi(OkumaTema.yaziSoru,
                 kalinlik: OkumaTema.kalinlikVurgu, satir: OkumaTema.satirSoru),
           ),

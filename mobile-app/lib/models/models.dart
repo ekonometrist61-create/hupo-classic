@@ -1,5 +1,7 @@
 // Uygulama genelinde kullanılan veri modelleri.
 
+import '../utils/soru_vurgu.dart';
+
 class Profile {
   const Profile({
     required this.id,
@@ -92,6 +94,7 @@ class Question {
     this.gorselSvg,
     this.gorselAltMetin,
     this.gorselTip,
+    this.highlights = const [],
   });
 
   final String id;
@@ -100,6 +103,10 @@ class Question {
   final String? altKonu;
   final int zorluk; // 1 kolay, 2 orta, 3 zor
   final String text;
+
+  /// Akıllı vurgu aralıkları (kod noktası ofseti, soru köküne göre). Boş: vurgu yok.
+  /// Yalnız `text` için geçerlidir; şıklarla ilgisi yoktur. Bkz. utils/soru_vurgu.dart.
+  final List<VurguAraligi> highlights;
 
   /// Görselli soru için SVG metni (yalnız görsel kolonları seçilen sorgularda dolar).
   /// gorsel_spec (cevap ipucu) istemciye hiçbir zaman gelmez.
@@ -149,6 +156,7 @@ class Question {
       gorselSvg: map['gorsel_svg'] as String?,
       gorselAltMetin: map['gorsel_alt_metin'] as String?,
       gorselTip: map['gorsel_tip'] as String?,
+      highlights: vurguAraliklariCoz(map['highlights']),
     );
   }
 }

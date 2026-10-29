@@ -206,6 +206,7 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                   const SizedBox(height: 12),
                   SoruMetni(
                     question.text,
+                    highlights: question.highlights,
                     style: appText(
                         size: 17,
                         weight: FontWeight.w700),

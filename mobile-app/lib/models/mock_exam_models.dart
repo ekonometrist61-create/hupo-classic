@@ -1,5 +1,6 @@
 // Deneme sınavı modelleri (list_my_exams / start_mock_exam / submit_mock_exam).
 import '../models/models.dart';
+import '../utils/soru_vurgu.dart';
 
 class MockExamSummary {
   const MockExamSummary({
@@ -96,6 +97,7 @@ class MockExamSession {
       konu: map['konu'] as String? ?? '',
       zorluk: (map['zorluk'] as num?)?.toInt() ?? 2,
       text: map['soru_metni'] as String,
+      highlights: vurguAraliklariCoz(map['highlights']),
       options: {for (final k in keys) k: raw[k].toString()},
     );
   }

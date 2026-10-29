@@ -272,6 +272,35 @@
   --z-index-999999: 999999;
 }
 
+/* Akıllı soru vurgulama token'ları (tek kaynak; Flutter karşılığı AppColors.vurgu*).
+   Açık tema: altın çizgi #C7A63B, metin #243747, zemin referansı #FFF8ED.
+   Koyu tema: çizgi #E3C25A (#1F2937 üzerinde 8,48:1), metin #F5F5F4 (13,46:1). */
+:root {
+  --soru-vurgu-cizgi: #C7A63B;
+  --soru-vurgu-metin: #243747;
+  --soru-vurgu-zemin: #FFF8ED;
+}
+.dark {
+  --soru-vurgu-cizgi: #E3C25A;
+  --soru-vurgu-metin: #F5F5F4;
+  --soru-vurgu-zemin: #1F2937;
+}
+
+/* Vurgu: kalın 700 + altın alt çizgi. Çizgi 2,5-3 px, harflerden 3 px aşağıda; skip-ink
+   inen harflerin (ç, ş, ğ, y, g) üstünü kapatmaz. Satır kırılımında her parça kendi
+   çizgisini alır (box-decoration-break: clone). Renk dışında kalınlık da farkı taşır. */
+.soru-vurgu {
+  font-weight: 700;
+  color: var(--soru-vurgu-metin);
+  text-decoration-line: underline;
+  text-decoration-color: var(--soru-vurgu-cizgi);
+  text-decoration-thickness: clamp(2.5px, 0.1em, 3px);
+  text-underline-offset: 3px;
+  text-decoration-skip-ink: auto;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
 /*
   The default border color has changed to `currentColor` in Tailwind CSS v4,
   so we've added these compatibility styles to make sure everything still

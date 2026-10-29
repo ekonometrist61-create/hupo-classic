@@ -2,6 +2,7 @@
 //
 // APK sınıf adları: ReviewEntry, ReviewFilter, SavedQuestion.
 
+import '../utils/soru_vurgu.dart';
 import 'models.dart';
 
 /// Hangi soruların filtreleneceği seçeneği.
@@ -75,6 +76,7 @@ class SavedQuestion {
         altKonu: map['alt_konu'] as String?,
         zorluk: (map['zorluk'] as num?)?.toInt() ?? 1,
         text: map['soru_metni'] as String? ?? '',
+        highlights: vurguAraliklariCoz(map['highlights']),
         options: map['siklar'] is Map
             ? {
                 for (final e in (map['siklar'] as Map).entries)

@@ -2,6 +2,7 @@
 
 import { createClient } from "@/utils/supabase/client";
 import Image from "next/image";
+import QuestionRichText from "./QuestionRichText";
 import { useCallback, useEffect, useReducer, useRef, useState } from "react";
 
 // ─── Tipler ────────────────────────────────────────────────────────────────────
@@ -18,6 +19,8 @@ interface SinavSoru {
   konu: string;
   zorluk: number;
   soru_metni: string;
+  /** Akıllı vurgu: [{start,end}] kod noktası ofseti (RPC çıktısına migration sonrası eklenecek). */
+  highlights?: unknown;
   siklar: Sik[];
 }
 
@@ -413,7 +416,7 @@ export default function DenemeEkrani({ examId }: Props) {
           {/* Soru metni */}
           <div className="mb-6 rounded-2xl border border-gray-200 bg-white p-5 shadow-sm dark:border-gray-700 dark:bg-gray-800">
             <p className="text-base leading-relaxed text-gray-900 dark:text-white">
-              {soru.soru_metni}
+              <QuestionRichText metin={soru.soru_metni} highlights={soru.highlights} />
             </p>
           </div>
 

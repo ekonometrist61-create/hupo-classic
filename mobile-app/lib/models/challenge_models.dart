@@ -1,4 +1,5 @@
 // W8: Arkadaşa Meydan Oku modelleri
+import '../utils/soru_vurgu.dart';
 import 'models.dart';
 
 class ChallengeSession {
@@ -47,6 +48,7 @@ class ChallengeSession {
       konu: map['konu'] as String? ?? '',
       zorluk: (map['zorluk'] as num?)?.toInt() ?? 2,
       text: map['soru_metni'] as String,
+      highlights: vurguAraliklariCoz(map['highlights']),
       options: {for (final k in keys) k: raw[k].toString()},
     );
   }
