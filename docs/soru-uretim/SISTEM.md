@@ -36,7 +36,7 @@ Deneme sınavı, **onaylı havuzdan seçilen soru listesidir** (`deneme_sinavlar
 - **Havuz yetersizse** eksik hücreler listelenir ve §2 hattına gider; sınav eksik soruyla aktif edilmez.
 - **Arşiv yapısı** (soru sayısı, ders dağılımı) yalnızca blueprint önerisidir: `docs/deneme-sinavi/ilk-deneme-blueprint-2026-27.json`.
 
-**1–4. sınıf ürün kuralı (biçimlendirici):** puan, sınıf içi sıra, net ve süre baskısı yok; doğru sayısı ve konu geri bildirimi var. `sure_dakika` DB'de zorunlu (5–240); baskı yok ilkesiyle 120 önerilir (ÖNERİ). **Uygulama durumu:** `admin_get_mock_exam_results` sıra üretiyor ve veli paneli `CocukDenemeGecmisi` "puan · sıra" gösteriyor; bu düzeltilene kadar 1–4. sınıf sınavları `aktif=false` kalır.
+**1–4. sınıf ürün kuralı (biçimlendirici):** puan, sınıf içi sıra, net ve süre baskısı yok; doğru sayısı ve konu geri bildirimi var. `sure_dakika` DB'de zorunlu (5–240); baskı yok ilkesiyle 120 önerilir (ÖNERİ). **Uygulama durumu (2026-10-29, K-0198):** proje sahibi kararıyla 1–4. sınıfta puan ve sıra yerine doğru/yanlış/boş gösterilir. Sunucu (migration `20261138000000`: `list_my_exams`, `submit_mock_exam`, `get_mock_exam_result`, `get_child_exam_history`, `admin_get_mock_exam_results`, `deneme_bildirim_alici`, `_deneme_sinavi_bitir`) bu sınıflarda `puan`, `sira` ve katılımcı sayısını NULL döndürür; veli e-postası, web paneli (veli geçmişi, yönetim sonuç modalı, öğrenci deneme ekranı) uzakta ve canlıda. Mobil istemci kodu yazıldı, **sürüm yayınlanmadı**. Net ve süre baskısı bu değişikliğin kapsamı dışındadır. Gerçek ekran kontrolü ve mobil sürüm yayınlanana kadar 1–4. sınıf sınavları `aktif=false` kalır.
 
 **Modlar:** tek tablo `.claude/skills/hupo-deneme-uzmani/references/modlar.md`. LGS, OYSS, ortak yazılı ve okul adına yapı ayrı ürün sınırıdır; kılavuz veya senaryo belgesi yoksa üretilmez.
 
@@ -69,6 +69,6 @@ Deneme sınavı, **onaylı havuzdan seçilen soru listesidir** (`deneme_sinavlar
 1. **Onaylandı:** sene başı sınavının kapsamı önceki sınıf (`onceki_sinif`); 2. sınıf sene başı için kapsam 1. sınıf plan kazanımları. Süre 120 önerisi onaylandı (1–4 için baskısız).
 2. **Onaylandı:** dağılım = TYMM taslak yıllık planın saat payı (1–2. sınıf için yayımlanmış soru dağılım tablosu yok; ODSGM tabloları 5–8).
 3. **Onaylandı:** plan kazanım kodları resmî sayılır (kapsam dışı: dinleme, konuşma, yazılı anlatım ve görsel gerektiren kodlar).
-4. **Açık:** 1–4. sınıf sıra/puan gizleme (GÖR-058); `questions` tablosuna kazanım kodu, dayanak, kanıt düzeyi alanı (migration); uzak DB'ye sınav ve soru yazma onayı.
+4. **Kısmen kapandı (K-0198):** 1–4. sınıf sıra/puan gizleme sunucuda ve web panelinde uygulandı; mobil sürüm ve gerçek ekran kontrolü açık (GÖR-058). **Açık:** `questions` tablosuna kazanım kodu, dayanak, kanıt düzeyi alanı (migration); uzak DB'ye sınav ve soru yazma onayı.
 
 Kanıt düzeyi notu: `soru_kontrol.mjs` matematik ve Hayat Bilgisi sorularını da mekanik olarak A işaretler. Skill'in tablosu A'yı yalnızca okuma-çözümleme kazanımlarında verir; paket matematik ve Hayat Bilgisi'ni B olarak işaretler.

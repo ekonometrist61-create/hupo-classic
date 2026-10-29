@@ -9,7 +9,7 @@
   },
   "kapilar": {
     "talep": "Sınıf ve sınav türü belirlendi; ev ortamı bireysel hazırlık. Okul grubu talebi yok.",
-    "baglam": "1–4. sınıf: okul içi deneme yok. Puan, sıralama, net ve süre baskısı yok. ÇELİŞKİ: veri tabanındaki sınav motoru sıralama üretiyor (admin_get_mock_exam_results). Karar bekliyor.",
+    "baglam": "1–4. sınıf: okul içi deneme yok. Puan, sıralama, net ve süre baskısı yok. KARAR (2026-10-29, K-0198): 1–4. sınıfta puan ve sıralama yerine doğru/yanlış/boş gösterilir; sunucu bu sınıflarda puan ve sırayı NULL döndürür (migration 20261138000000). Mobil sürüm yayınlanana kadar 1–4. sınıf sınavları aktif=false kalır.",
     "program_yili_2026_27": {
       "2": "TYMM",
       "3": "TYMM",
@@ -90,7 +90,7 @@
       "no": 2,
       "konu": "1–4. sınıfta puan ve sıralama",
       "secenekler": [
-        "Sınav motoru puan ve sıralama göstermez; yalnız tamamlandı ve geri bildirim (kural uygulanır; uygulama değişikliği gerekir)",
+        "SEÇİLDİ (K-0198): Sınav motoru puan ve sıralama göstermez; doğru/yanlış/boş ve geri bildirim (sunucu ve web uygulandı; mobil sürüm bekliyor)",
         "Mevcut davranış kalır; kural istisna sayılır",
         "1–4. sınıf için deneme motoru kullanılmaz; yalnız ev pratiği"
       ]
