@@ -3,6 +3,7 @@ import 'dart:math';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../models/challenge_models.dart';
+import '../models/deneme_hak_models.dart';
 import '../models/league_models.dart';
 import '../models/membership_models.dart';
 import '../models/mock_exam_models.dart';
@@ -260,6 +261,17 @@ class QuizRepository {
       return MembershipStatus.fromMap(Map<String, dynamic>.from(row));
     } catch (_) {
       return MembershipStatus.unknown;
+    }
+  }
+
+  /// Çocuğun kendi ücretsiz deneme durumu. Hata = bilinmiyor; kart gösterilmez.
+  Future<DenemeHak> fetchDenemeHak() async {
+    try {
+      final data = await _client.rpc('deneme_hak_durumu');
+      if (data is! Map) return DenemeHak.unknown;
+      return DenemeHak.fromMap(Map<String, dynamic>.from(data));
+    } catch (_) {
+      return DenemeHak.unknown;
     }
   }
 

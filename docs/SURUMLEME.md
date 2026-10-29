@@ -38,6 +38,19 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### app 1.4.0+6 · panel 0.4.0 · 2026-10-29
+
+Büyük değişiklik (MINOR: kartsız ücretsiz deneme ve özellik sınırları; veri sözleşmesine geriye uyumlu eklenti).
+- Kayıtta 14 gün ücretsiz deneme (veli hesabı açılınca). Deneme sırasında soru, Kelime Evreni, çarpım, okuma, meydan okuma ve deneme sınavı sınırları (günlük ya da deneme süresi boyunca).
+- Deneme bitince deneme sınavları ücretsiz planda kapanır; ilerleme ve tekrar listesi açık kalır.
+- Çocuk profilinde "Ücretsiz deneme" kartı (kalan gün, sınırda olan özellikler); meydan okuma ve kelime hatalarında sınır metni.
+- Panel: Ayarlar'da "Deneme sınırları" (yönetici); üyelikte çocuk başına deneme kartı.
+- Premium gating açık: ücretsiz hesap günlük 20 soru ile sınırlanır (mar-oto-ai kararı).
+
+**Migration:** 20261125000000 (uygulandı), 20261126000000 (uygulandı), 20261127000000 (uygulandı).
+
+**Uyumluluk:** Eski app (1.3.x) yeni deneme alanlarını yok sayar; sınır hataları eski sürümde genel hata metni olarak görünür. Panel 0.4.0 yeni RPC'leri kullanır; migration'lar uygulanmadan panel deneme kartını "bilgi yok" olarak gösterir.
+
 ### app 1.3.0+4 · 2026-10-25
 
 Büyük değişiklik (MINOR: yeni seçim yüzeyi). Kahraman seçimi ve vitrin görselleri yenilendi.

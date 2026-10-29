@@ -10,6 +10,7 @@ import '../providers/app_providers.dart';
 import '../services/web_links.dart';
 import '../theme/app_theme.dart';
 import '../widgets/badges_section.dart';
+import '../widgets/deneme_hak_card.dart';
 import '../widgets/character/active_character_chip.dart';
 import 'collection_screen.dart';
 import 'settings_screen.dart';
@@ -58,6 +59,7 @@ class ProfileScreen extends ConsumerWidget {
     final overview = ref.watch(overviewProvider);
     // Hata/yüklenme sırasında sessizce hiçbir şey gösterme (üyelik bilgisi zorunlu değil).
     final membership = ref.watch(membershipProvider).valueOrNull;
+    final denemeHak = ref.watch(denemeHakProvider).valueOrNull;
     final name = (profile?.fullName ?? '').trim();
 
     return Scaffold(
@@ -142,6 +144,10 @@ class ProfileScreen extends ConsumerWidget {
                     stats: stats.valueOrNull ?? const StudentStats(),
                     today: DateTime.now(),
                   ),
+                  if (denemeHak != null && (denemeHak.deneme || denemeHak.bitti)) ...[
+                    const SizedBox(height: 16),
+                    DenemeHakCard(durum: denemeHak),
+                  ],
                   if (membership != null && membership.known) ...[
                     const SizedBox(height: 16),
                     MembershipCard(status: membership),

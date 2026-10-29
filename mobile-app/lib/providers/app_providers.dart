@@ -6,6 +6,7 @@ import '../models/app_config.dart';
 import '../models/character_models.dart';
 import '../models/cipher_models.dart';
 import '../models/daily_challenge_models.dart';
+import '../models/deneme_hak_models.dart';
 import '../models/duyuru_models.dart';
 import '../models/league_models.dart';
 import '../models/membership_models.dart';
@@ -60,6 +61,10 @@ final leagueLadderProvider = FutureProvider.autoDispose<List<LeagueTier>>(
 
 final membershipProvider = FutureProvider.autoDispose<MembershipStatus>(
     (ref) => ref.watch(quizRepositoryProvider).fetchMembership());
+
+/// Çocuğun ücretsiz deneme durumu ve sınır kalanları.
+final denemeHakProvider = FutureProvider.autoDispose<DenemeHak>(
+    (ref) => ref.watch(quizRepositoryProvider).fetchDenemeHak());
 
 /// Bugünkü görevler: ilerleme ve ödül durumu. Quiz bittikten sonra invalidate edilir.
 final myQuestsProvider = FutureProvider.autoDispose<List<Quest>>(

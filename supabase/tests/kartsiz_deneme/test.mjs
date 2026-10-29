@@ -81,6 +81,7 @@ await db.exec(`
 await db.exec(fs.readFileSync(path.join(MIG, '20261018010000_deneme_suresi.sql'), 'utf8'));
 await db.exec(fs.readFileSync(path.join(MIG, '20261125000000_kartsiz_deneme_kayitta.sql'), 'utf8'));
 await db.exec(fs.readFileSync(path.join(MIG, '20261126000000_deneme_yonetim_ve_gorunurluk.sql'), 'utf8'));
+await db.exec(fs.readFileSync(path.join(MIG, '20261127000000_deneme_sinav_kapisi.sql'), 'utf8'));
 ok('migration zinciri yüklendi', true);
 
 await db.exec(`insert into auth.users (id, email) values
@@ -193,6 +194,17 @@ for (let i = 0; i < 25; i++) {
 ok('deneme bitmiş hanede kelime sınırı uygulanmaz', bitisHata === null, JSON.stringify(bitisHata));
 const kotaBitti = await tek(`select public.remaining_free_questions($1) as k`, [COCUK_BIT]);
 ok('deneme bitince soru kotası gating değerine döner (3)', kotaBitti.k === 3, JSON.stringify(kotaBitti));
+await servis();
+
+console.log('\n== Deneme sınavı kapısı: süresi bitmiş hanede kapalı ==');
+await istemci(COCUK_BIT);
+const sinavKapali = await hataBul(() => db.query(
+  `insert into public.deneme_sinavi_katilimlari (student_id, veli_id) values ($1, $2)`, [COCUK_BIT, VELI2]));
+ok('süresi bitmiş hanede deneme sınavı kaydı P0403', sinavKapali && sinavKapali.kod === 'P0403', JSON.stringify(sinavKapali));
+await istemci(COCUK3);
+const sinavAcik = await hataBul(() => db.query(
+  `insert into public.deneme_sinavi_katilimlari (student_id, veli_id) values ($1, $2)`, [COCUK3, VELI]));
+ok('deneme süresindeki hanede kayıt açık', sinavAcik === null, JSON.stringify(sinavAcik));
 await servis();
 
 console.log('\n== Görünürlük: deneme_hak_durumu ==');
