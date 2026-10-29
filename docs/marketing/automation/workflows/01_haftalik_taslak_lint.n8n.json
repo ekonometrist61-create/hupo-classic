@@ -1,0 +1,88 @@
+{
+  "name": "Hupolingo 01 - Haftalik taslak lint (DRY_RUN, yayin yok)",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "11111111-0000-4000-8000-000000000001",
+      "name": "Elle Baslat",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "rule": {"interval": [{"field": "weeks", "weeksInterval": 1, "triggerAtDay": [1], "triggerAtHour": 8}]}
+      },
+      "id": "11111111-0000-4000-8000-000000000002",
+      "name": "Pazartesi 08 (ZAMANLAYICI KAPALI: workflow active=false)",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [240, 480],
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "command": "cd ${MARKETING_DIR}/automation/scripts && DRY_RUN=1 python3 -I pazarlama_akis.py lint ${GONDERI_DOSYASI} ../examples/olgular.json"
+      },
+      "id": "11111111-0000-4000-8000-000000000003",
+      "name": "Lint (yalniz yerel betik, ag yok)",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [520, 300],
+      "notes": "Execute Command dugumu n8n surumune gore varsayilan kapali olabilir (NODES_EXCLUDE). Bu akis opsiyoneldir; ayni islem elle de calistirilabilir. MARKETING_DIR ve GONDERI_DOSYASI n8n ortam degiskeni/placeholder, gercek anahtar yok."
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {"caseSensitive": true, "leftValue": "", "typeValidation": "strict"},
+          "conditions": [
+            {"id": "c1", "leftValue": "={{ $json.exitCode }}", "rightValue": 0, "operator": {"type": "number", "operation": "equals"}}
+          ],
+          "combinator": "and"
+        }
+      },
+      "id": "11111111-0000-4000-8000-000000000004",
+      "name": "Lint gecti mi",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [780, 300]
+    },
+    {
+      "parameters": {
+        "assignments": {"assignments": [
+          {"id": "a1", "name": "sonuc", "value": "LINT_GECTI_INSAN_ONAYI_BEKLENIYOR", "type": "string"},
+          {"id": "a2", "name": "not", "value": "Yayin/planlama bu akista yapilmaz. Onay: insan, pazarlama_akis.py gec ... insan-onayi --onaylayan <AD>", "type": "string"}
+        ]}
+      },
+      "id": "11111111-0000-4000-8000-000000000005",
+      "name": "Onay bekliyor (cikis: bildirim yok)",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1040, 220]
+    },
+    {
+      "parameters": {
+        "assignments": {"assignments": [
+          {"id": "b1", "name": "sonuc", "value": "LINT_BASARISIZ_DUZELT", "type": "string"},
+          {"id": "b2", "name": "bulgular", "value": "={{ $json.stdout }}", "type": "string"}
+        ]}
+      },
+      "id": "11111111-0000-4000-8000-000000000006",
+      "name": "Reddedildi",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [1040, 400]
+    }
+  ],
+  "connections": {
+    "Elle Baslat": {"main": [[{"node": "Lint (yalniz yerel betik, ag yok)", "type": "main", "index": 0}]]},
+    "Lint (yalniz yerel betik, ag yok)": {"main": [[{"node": "Lint gecti mi", "type": "main", "index": 0}]]},
+    "Lint gecti mi": {"main": [
+      [{"node": "Onay bekliyor (cikis: bildirim yok)", "type": "main", "index": 0}],
+      [{"node": "Reddedildi", "type": "main", "index": 0}]
+    ]}
+  },
+  "settings": {"executionOrder": "v1"},
+  "meta": {"aciklama": "Import edilebilir iskelet. Hicbir sosyal platform dugumu YOK. Aktif edilmez. n8n yalniz loopback (127.0.0.1:5678), SSH tuneliyle erisilir (GIE karar 2026-10-28). Kullaniciya onay olmadan Oracle'a yuklenmez."}
+}

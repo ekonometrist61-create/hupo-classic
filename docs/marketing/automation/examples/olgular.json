@@ -1,0 +1,13 @@
+{
+  "_aciklama": "Pazarlama metinlerinde kullanılabilecek DOĞRULANMIŞ olgular. Metindeki her sayı buradan gelmeli. Yeni olgu eklemek için kaynak ve doğrulama tarihi zorunlu.",
+  "olgular": [
+    {"id": "gunluk_hedef", "metin": "Günlük hedef 5 ile 20 soru arasında ayarlanır; varsayılan 10.", "sayilar": [5, 20, 10], "kaynak": "web-panel/src/messages/tr.json landing.benefits", "dogrulama": "2026-10-29 kod/metin okuma", "durum": "Kanıtlı"},
+    {"id": "rapor_esik", "metin": "6 sorudan az veri varsa yüzde gösterilmez.", "sayilar": [6], "kaynak": "tr.json landing.report.insufficient", "dogrulama": "2026-10-29", "durum": "Kanıtlı"},
+    {"id": "demo_5_soru", "metin": "Örnek demo 5 sorudur, kayıt tutulmaz.", "sayilar": [5], "kaynak": "tr.json landing.demo", "dogrulama": "2026-10-29", "durum": "Kanıtlı"},
+    {"id": "karakter", "metin": "8 dünyada toplam 40 karakter vardır.", "sayilar": [8, 40], "kaynak": "tr.json landing.characters", "dogrulama": "2026-10-29", "durum": "Kanıtlı"},
+    {"id": "guven_reklam", "metin": "Öğrenci uygulamasında reklam varsayılan olarak kapalıdır; konum izni istenmez.", "sayilar": [], "kaynak": "tr.json landing.trust; manifest taraması", "dogrulama": "2026-10-29", "durum": "Kanıtlı"},
+    {"id": "tek_seferlik", "metin": "Ödeme tek seferliktir, otomatik yenileme yoktur (ödeme yayında olunca).", "sayilar": [], "kaynak": "K-0196, payments-checkout", "dogrulama": "2026-10-29 kod", "durum": "Kanıtlı (kod); canlı değil"},
+    {"id": "ara_tatil_1", "metin": "1. dönem ara tatili 16-20 Kasım 2026.", "sayilar": [1, 16, 20, 2026], "kaynak": "docs/mufredat/takvim_notlari_2026_2027.csv", "dogrulama": "2026-10-29 (MEB yıllık plan; resmî takvimle teyit gerekir)", "durum": "Kısmen"},
+    {"id": "ara_tatil_2", "metin": "2. dönem ara tatili 8-12 Mart 2027.", "sayilar": [2, 8, 12, 2027], "kaynak": "docs/mufredat/takvim_notlari_2026_2027.csv", "dogrulama": "2026-10-29", "durum": "Kısmen"}
+  ]
+}

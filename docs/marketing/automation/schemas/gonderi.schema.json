@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Pazarlama gönderisi (dosya tabanlı kuyruk)",
+  "description": "REUSE: docs/hupo-design-growth/sosyal-medya/KANAL_OTOMASYON_PLANI §5.3 'growth_sosyal_gonderi' tablosunun dosya karşılığı. DB tablosu ancak onaylı ve ihtiyaç kanıtlanınca (CREATE).",
+  "type": "object",
+  "required": ["kod", "kanal", "metin", "kanit", "durum"],
+  "properties": {
+    "kod": {"type": "string", "pattern": "^[A-Za-z0-9._~-]{1,100}$"},
+    "kanal": {"enum": ["instagram", "youtube", "linkedin", "email", "blog"]},
+    "format": {"type": "string"},
+    "sutun": {"enum": ["S1", "S2", "S3", "S4", "S5"]},
+    "segment": {"type": "string"},
+    "kanca": {"type": "string", "maxLength": 140},
+    "metin": {"type": "string", "minLength": 1},
+    "cta": {"type": "string", "maxLength": 30},
+    "kanit": {"type": "string", "minLength": 1, "description": "olgular.json kaydı (olgu:<id>) veya 'kanıt boşluğu' notu"},
+    "utm_content": {"type": "string", "pattern": "^[A-Za-z0-9._~-]{1,100}$"},
+    "durum": {"enum": ["taslak", "marka-denetimi", "insan-onayi", "planlandi", "yayinlandi"]},
+    "planlanan_tarih": {"type": "string"},
+    "lint": {"type": "object"},
+    "onay": {
+      "type": "object",
+      "required": ["onaylayan", "onay_tarihi", "metin_ozeti"],
+      "properties": {"onaylayan": {"type": "string"}, "onay_tarihi": {"type": "string"}, "metin_ozeti": {"type": "string", "pattern": "^[0-9a-f]{64}$"}}
+    },
+    "yayin": {"type": "object", "required": ["kanit_url"], "properties": {"kanit_url": {"type": "string", "format": "uri"}}},
+    "gecmis": {"type": "array"}
+  },
+  "additionalProperties": true
+}

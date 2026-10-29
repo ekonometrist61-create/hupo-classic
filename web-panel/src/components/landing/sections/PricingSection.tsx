@@ -127,6 +127,7 @@ export async function PricingSection() {
                   ))}
                 </ul>
 
+                {/* Tüm paketler kayıt ekranına gider; ücretsiz deneme veli hesabı açılınca başlar (migration 20261125000000). */}
                 <TrackedLink
                   href="/veli-paneli/kayit"
                   olay="fiyat_tiklandi"

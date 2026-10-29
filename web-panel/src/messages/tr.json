@@ -385,7 +385,7 @@
       "items": [
         {
           "title": "Kısa ve odaklı çalışmalar",
-          "desc": "Bir çalışma en fazla 10 sorudan oluşur. Çocuğunuz yorulmadan başlar, bitirir ve bir sonraki gün kaldığı yerden devam eder."
+          "desc": "Günlük hedefi siz belirlersiniz (5–20 soru; varsayılan 10). Çocuğunuz yorulmadan başlar, bitirir ve bir sonraki gün kaldığı yerden devam eder."
         },
         {
           "title": "Cevabın arkasındaki açıklama",
@@ -455,7 +455,7 @@
     },
     "report": {
       "title": "Veli raporu nasıl görünür?",
-      "desc": "Yeterli soru çözülmeden yüzde göstermeyiz. Az veriyle kesin sonuç çıkarmak yanıltıcı olur.",
+      "desc": "Az veriyle kesin sonuç çıkarmak yanıltıcı olur; bu yüzden yeterli veri birikmeden sonucu kesinmiş gibi göstermeyiz.",
       "badge": "ÖRNEK RAPOR",
       "disclaimer": "Bu rapor gerçek bir öğrenciye ait değildir; ekranın nasıl göründüğünü göstermek için hazırlanmış örnektir.",
       "ctaLabel": "Veli Hesabı Oluştur",
@@ -655,7 +655,7 @@
         },
         {
           "title": "Kısa çalışma, kalıcı alışkanlık",
-          "desc": "Her çalışma en fazla 10 sorudan oluşur. Kısa ve düzenli pratik, uzun vadede fark yaratır."
+          "desc": "Günlük hedef varsayılan olarak 10 sorudur; 5–20 arasında ayarlanabilir. Kısa ve düzenli pratik, uzun vadede fark yaratır."
         }
       ]
     },
@@ -813,7 +813,7 @@
       "sayi": "{count} yayında hikâye",
       "sinif": "{alt}–{ust}. sınıf için",
       "turler": "Türler",
-      "not": "Hikâyeler yayından önce üç aşamada incelenir. Yeni hikâyeler eklendikçe bu sayı kendiliğinden güncellenir."
+      "not": "Hikâyeler yayından önce iki bağımsız yapay zekâ denetiminden geçer; görüş ayrılığında üçüncü bir denetim yapılır. Yeni hikâyeler eklendikçe bu sayı kendiliğinden güncellenir."
     }
   },
   "sidebar": {
@@ -2194,11 +2194,11 @@
       "sira": "{sira}. / {katilimci} sıra",
       "dogru": "{dogru} doğru",
       "yanlis": "{yanlis} yanlış",
+      "bos": "{bos} boş",
       "teslim_elle": "Süre içinde teslim edildi",
       "teslim_sure_doldu": "Süre dolunca teslim edildi",
       "teslim_otomatik": "Teslim edilmedi; süre sonunda cevaplar otomatik kaydedildi"
     },
-      "bos": "{bos} boş",
     "kelime": {
       "baslik": "Kelime gelişimi",
       "yukleniyor": "Kelime gelişimi yükleniyor…",

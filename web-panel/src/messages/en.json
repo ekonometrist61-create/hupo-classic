@@ -385,7 +385,7 @@
       "items": [
         {
           "title": "Short, focused sessions",
-          "desc": "A session has at most 10 questions. Your child can start and finish without getting tired, and pick up where they left off the next day."
+          "desc": "You set the daily goal (5–20 questions; the default is 10). Your child can start and finish without getting tired, and pick up where they left off the next day."
         },
         {
           "title": "The reasoning behind the answer",
@@ -456,7 +456,7 @@
     },
     "report": {
       "title": "What does the parent report look like?",
-      "desc": "We do not show a percentage until enough questions are solved. A firm result from little data would be misleading.",
+      "desc": "A firm result from little data would be misleading, so we do not present a result as certain until enough data has built up.",
       "badge": "SAMPLE REPORT",
       "disclaimer": "This report does not belong to a real student; it is an example prepared to show how the screen looks.",
       "ctaLabel": "Create a Parent Account",
@@ -656,7 +656,7 @@
         },
         {
           "title": "Short sessions, lasting habits",
-          "desc": "Each session is at most 10 questions. Short, regular practice makes a difference over time."
+          "desc": "The daily goal is 10 questions by default and can be set between 5 and 20. Short, regular practice makes a difference over time."
         }
       ]
     },
@@ -814,7 +814,7 @@
       "sayi": "{count} stories available",
       "sinif": "For grades {alt}–{ust}",
       "turler": "Genres",
-      "not": "Stories go through three review steps before publishing. This number updates automatically as new stories are added."
+      "not": "Stories pass two independent AI reviews before publishing; a third review is run when the two disagree. This number updates automatically as new stories are added."
     }
   },
   "sidebar": {
@@ -2195,11 +2195,11 @@
       "sira": "Rank {sira} / {katilimci}",
       "dogru": "{dogru} correct",
       "yanlis": "{yanlis} wrong",
+      "bos": "{bos} blank",
       "teslim_elle": "Submitted within time",
       "teslim_sure_doldu": "Submitted when time ran out",
       "teslim_otomatik": "Not submitted; answers were saved automatically when time ran out"
     },
-      "bos": "{bos} blank",
     "kelime": {
       "baslik": "Word progress",
       "yukleniyor": "Loading word progress…",

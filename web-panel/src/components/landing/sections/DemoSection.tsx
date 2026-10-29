@@ -70,6 +70,7 @@ export async function DemoSection() {
             alt=""
             width={265}
             height={360}
+            sizes="(min-width: 1024px) 118px, 94px"
             className="absolute -bottom-6 -end-2 hidden h-32 w-auto sm:block lg:-end-8 lg:h-40"
           />
         </Reveal>

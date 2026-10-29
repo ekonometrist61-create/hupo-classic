@@ -1,0 +1,19 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Haftalık sosyal metrik girişi (manuel; hesap bağlama yok)",
+  "description": "KANAL_OTOMASYON_PLANI 'growth_sosyal_metrik' dosya karşılığı. Değerler platformun kendi istatistik ekranından insan tarafından girilir veya CSV içe aktarılır. 5'ten küçük sayılar 'yetersiz' kabul edilir.",
+  "type": "object",
+  "required": ["hafta_baslangic", "kanal", "gonderi_kodu"],
+  "properties": {
+    "hafta_baslangic": {"type": "string", "format": "date"},
+    "kanal": {"enum": ["instagram", "youtube", "linkedin"]},
+    "gonderi_kodu": {"type": "string"},
+    "erisim": {"type": ["integer", "null"], "minimum": 0},
+    "kaydetme": {"type": ["integer", "null"], "minimum": 0},
+    "paylasim": {"type": ["integer", "null"], "minimum": 0},
+    "profil_ziyareti": {"type": ["integer", "null"], "minimum": 0},
+    "baglanti_tiki": {"type": ["integer", "null"], "minimum": 0},
+    "olumsuz_yorum": {"type": ["integer", "null"], "minimum": 0},
+    "kaynak": {"enum": ["platform_istatistigi", "csv_ice_aktarim"]}
+  }
+}

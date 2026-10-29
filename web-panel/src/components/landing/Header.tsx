@@ -30,6 +30,7 @@ export async function LandingHeader() {
             alt=""
             width={420}
             height={415}
+            sizes="36px"
             className="h-9 w-9 object-contain"
           />
           <span className="text-xl font-extrabold tracking-tight">{t("brand")}</span>

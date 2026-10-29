@@ -15,7 +15,7 @@ export async function LandingFooter() {
         {/* Marka */}
         <div>
           <p className="flex items-center gap-2 text-xl font-extrabold">
-            <Image src={g("hupo.hosgeldin")} alt="" width={420} height={415} className="h-9 w-9 object-contain" />
+            <Image src={g("hupo.hosgeldin")} alt="" width={420} height={415} sizes="36px" className="h-9 w-9 object-contain" />
             {t("brand")}
           </p>
           <p className="mt-3 leading-relaxed text-navy-muted dark:text-gray-300">{t("footer.tagline")}</p>

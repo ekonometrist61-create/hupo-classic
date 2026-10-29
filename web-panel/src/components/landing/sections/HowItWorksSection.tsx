@@ -39,6 +39,7 @@ export async function HowItWorksSection() {
                     alt=""
                     width={96}
                     height={96}
+                    sizes="80px"
                     className="h-full w-full object-contain"
                   />
                 </div>

@@ -64,7 +64,7 @@ export async function HeroSection() {
             width={720}
             height={1560}
             priority
-            sizes="256px"
+            sizes="(min-width: 640px) 256px, 240px"
             className="h-auto w-full rounded-[1.9rem]"
           />
         </div>
@@ -75,6 +75,7 @@ export async function HeroSection() {
           alt={t("hero.mascotAlt")}
           width={713}
           height={760}
+          sizes="(min-width: 640px) 105px, 90px"
           className="absolute -start-2 top-6 h-24 w-auto drop-shadow-md motion-safe:animate-hupo-mascot sm:-start-6 sm:h-28"
         />
 

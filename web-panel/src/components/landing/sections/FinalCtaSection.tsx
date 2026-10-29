@@ -18,6 +18,7 @@ export async function FinalCtaSection() {
           alt=""
           width={420}
           height={404}
+          sizes="166px"
           className="h-40 w-auto shrink-0"
         />
         <div>

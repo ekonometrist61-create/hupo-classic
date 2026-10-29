@@ -132,6 +132,7 @@ export async function CharacterUniverseSection() {
                       alt=""
                       width={96}
                       height={96}
+                      sizes="80px"
                       className="h-20 w-20 object-contain"
                     />
                   )}
@@ -147,6 +148,7 @@ export async function CharacterUniverseSection() {
                         alt=""
                         width={40}
                         height={40}
+                        sizes="24px"
                         className="h-6 w-6 object-contain brightness-0 opacity-25"
                       />
                     ))}

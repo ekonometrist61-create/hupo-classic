@@ -54,6 +54,7 @@ export async function BenefitsSection() {
                     alt=""
                     width={200}
                     height={200}
+                    sizes="160px"
                     className="h-40 w-auto object-contain transition-transform duration-300 ease-hupo-out group-hover:-translate-y-1 motion-reduce:transition-none"
                   />
                 </div>

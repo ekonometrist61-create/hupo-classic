@@ -1,0 +1,50 @@
+{
+  "name": "Hupolingo 02 - Haftalik metrik ozeti (manuel CSV, DRY_RUN)",
+  "active": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "22222222-0000-4000-8000-000000000001",
+      "name": "Elle Baslat",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [240, 300]
+    },
+    {
+      "parameters": {
+        "fileSelector": "={{ $env.MARKETING_DIR }}/automation/examples/metrik_ornek.csv",
+        "options": {}
+      },
+      "id": "22222222-0000-4000-8000-000000000002",
+      "name": "Metrik CSV oku (insan girisi)",
+      "type": "n8n-nodes-base.readWriteFile",
+      "typeVersion": 1,
+      "position": [500, 300]
+    },
+    {
+      "parameters": {"operation": "extractFromFile", "fileFormat": "csv", "options": {}},
+      "id": "22222222-0000-4000-8000-000000000003",
+      "name": "CSV ayristir",
+      "type": "n8n-nodes-base.extractFromFile",
+      "typeVersion": 1,
+      "position": [740, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// Yalniz toplulastirma. Nedensellik yorumu yok; n<5 icin 'yetersiz'. Sayi uretilmez, yalniz girdi toplanir.\nconst satirlar = $input.all().map(i => i.json);\nconst gruplar = {};\nfor (const s of satirlar) {\n  const k = s.kanal || 'bilinmiyor';\n  gruplar[k] = gruplar[k] || { gonderi: 0, erisim: 0, kaydetme: 0, paylasim: 0, baglanti_tiki: 0 };\n  gruplar[k].gonderi += 1;\n  for (const m of ['erisim','kaydetme','paylasim','baglanti_tiki']) gruplar[k][m] += Number(s[m] || 0);\n}\nconst cikti = Object.entries(gruplar).map(([kanal, g]) => ({ kanal, ...g, uyari: g.gonderi < 5 ? 'yetersiz veri (n<5), karar verilmez' : 'oran yorumu insan yapar' }));\nreturn cikti.map(j => ({ json: j }));"
+      },
+      "id": "22222222-0000-4000-8000-000000000004",
+      "name": "Toplulastir (yorum yok)",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [980, 300]
+    }
+  ],
+  "connections": {
+    "Elle Baslat": {"main": [[{"node": "Metrik CSV oku (insan girisi)", "type": "main", "index": 0}]]},
+    "Metrik CSV oku (insan girisi)": {"main": [[{"node": "CSV ayristir", "type": "main", "index": 0}]]},
+    "CSV ayristir": {"main": [[{"node": "Toplulastir (yorum yok)", "type": "main", "index": 0}]]}
+  },
+  "settings": {"executionOrder": "v1"},
+  "meta": {"aciklama": "Gonderim/yayin dugumu yok. Metrikler platform istatistik ekranindan insan tarafindan CSV'ye girilir (hesap baglama yok). Cikti Pazartesi raporuna kopyalanir."}
+}

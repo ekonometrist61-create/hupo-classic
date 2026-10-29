@@ -1,0 +1,31 @@
+gun,hafta,kanal,is,cikti,sahibi,kapi,durum
+1,1,Genel,Karar paketi onayi (19 Onay Bekleyen),Isaretli kararlar,Proje sahibi,-,Planli
+2,1,Hukuk,4 belge onay sirasi ve takvim,Avukat takvimi,Proje sahibi,-,Planli
+3,1,Web,Y1/Y2/Y5 kod duzeltmesi is kaydi,16 backlog maddeleri,Ana oturum,Karar,Planli
+4,1,Hesap,Hesap adi kontrolu (3 kanal),Bos/dolu raporu,Proje sahibi,-,Planli
+5,1,Icerik,Gercek ekran kaydi planı,5 akis listesi,Proje sahibi,-,Planli
+6,1,Arastirma,8 veli gorusme daveti,Randevu listesi,Proje sahibi,Riza metni,Planli
+7,1,Olcum,UTM canli dogrulama,Ekran goruntusu,Ana oturum,-,Planli
+8,2,Arastirma,Gorusme 1-2,Notlar,Proje sahibi,-,Planli
+9,2,Arastirma,Gorusme 3-4,Notlar,Proje sahibi,-,Planli
+10,2,Arastirma,Kullanilabilirlik testi 1,Gozlem,Proje sahibi,-,Planli
+11,2,Hesap,Instagram profesyonel hesap + 2FA,Profil,Proje sahibi,Adim 1-5,Planli
+12,2,Hesap,YouTube marka hesabi + cocuk politikasi karari,Kanal,Proje sahibi,Adim 8,Planli
+13,2,Hesap,LinkedIn sirket sayfasi,Sayfa,Proje sahibi,-,Planli
+14,2,Icerik,Ekran kaydi cekimi,5 kayit,Proje sahibi,-,Planli
+15,3,Arastirma,Gorusme 5-6,Notlar,Proje sahibi,-,Planli
+16,3,Arastirma,Gorusme 7-8,Notlar,Proje sahibi,-,Planli
+17,3,Arastirma,Kodlama ve itiraz siralamasi,05 v2,MAR-OTO-AI,-,Planli
+18,3,Otomasyon,olgular.json + sosyal_lint kurulum,Betik,MAR-OTO-AI,Onay,Planli
+19,3,Icerik,Ekran kaydi montaji,Videolar,Proje sahibi,-,Planli
+20,3,Marka,Profil gorselleri ve biyografi,Gorseller,MAR-OTO-AI,Onay,Planli
+21,3,Genel,Hero mesaji karari (H1 vs H2),Karar,Proje sahibi,Gorusmeler,Planli
+22,4,Icerik,Ilk 10 gonderi onayi (11_SAMPLE_CONTENT),Onay listesi,Proje sahibi,-,Planli
+23,4,Icerik,Bio linki UTM testi,Test,Ana oturum,-,Planli
+24,4,Web,Y3 robots/sitemap/OG hazirlik (lansman gunu),Hazir PR,Ana oturum,Lansman,Planli
+25,4,Icerik,Blog 1-2 taslak onayi,Taslak,Proje sahibi,-,Planli
+26,4,Hesap,Footer sosyal baglanti dogrulama (Y4),Dogrulama,Ana oturum,Hesaplar,Planli
+27,4,Genel,T0 kontrol listesi 1-8,Kontrol,Proje sahibi,-,Planli
+28,4,Icerik,Ilk hafta gonderi zamanlama (platform araci),Zamanlama,Proje sahibi,T0,Planli
+29,4,Olcum,Metrik tablosu hazirlama,CSV,MAR-OTO-AI,-,Planli
+30,4,Genel,Kapı gozden gecirme: Y1-Y5 kapali mi?,Karar,Proje sahibi,Y1-Y5,Planli
