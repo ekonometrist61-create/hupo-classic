@@ -20,7 +20,7 @@ class MockExamSummary {
   final DateTime baslangicZamani;
   final int sureDakika;
   final bool bitti;
-  final double puan;
+  final double? puan;
   final int dogruSayisi;
   final int yanlisSayisi;
   final int bosSayisi;
@@ -37,7 +37,7 @@ class MockExamSummary {
         baslangicZamani: DateTime.parse(map['baslangic_zamani'] as String).toLocal(),
         sureDakika: (map['sure_dakika'] as num).toInt(),
         bitti: map['bitti'] as bool? ?? false,
-        puan: (map['puan'] as num?)?.toDouble() ?? 0,
+        puan: (map['puan'] as num?)?.toDouble(),
         dogruSayisi: (map['dogru_sayisi'] as num?)?.toInt() ?? 0,
         yanlisSayisi: (map['yanlis_sayisi'] as num?)?.toInt() ?? 0,
         bosSayisi: (map['bos_sayisi'] as num?)?.toInt() ?? 0,
@@ -114,7 +114,7 @@ class MockExamResult {
   final int yanlisSayisi;
   final int bosSayisi;
   final int toplam;
-  final double puan;
+  final double? puan;
 
   double get basariOrani => toplam > 0 ? dogruSayisi / toplam : 0;
 
@@ -123,6 +123,6 @@ class MockExamResult {
         yanlisSayisi: (map['yanlis_sayisi'] as num).toInt(),
         bosSayisi: (map['bos_sayisi'] as num).toInt(),
         toplam: (map['toplam'] as num).toInt(),
-        puan: (map['puan'] as num).toDouble(),
+        puan: (map['puan'] as num?)?.toDouble(),
       );
 }

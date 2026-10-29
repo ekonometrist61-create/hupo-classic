@@ -299,17 +299,23 @@ function ResultsTab({ examId }: { examId: string }) {
     <div className="space-y-6">
       {siniflar.map((s) => {
         const grup = rows.filter((r) => r.sinif === s);
-        const ortalama = grup.reduce((a, r) => a + Number(r.puan), 0) / grup.length;
+        // 1-4. sınıfta sunucu puan/sıra döndürmez (null); ortalama ve sıra sütunu gizlenir.
+        const puanlilar = grup.filter((r) => (r.puan as number | null) != null);
+        const puanVar = puanlilar.length > 0;
+        const siraVar = grup.some((r) => (r.sira as number | null) != null);
+        const ortalama = puanVar ? puanlilar.reduce((a, r) => a + Number(r.puan), 0) / puanlilar.length : 0;
         return (
           <div key={s}>
             <h4 className="mb-2 text-sm font-semibold text-gray-800 dark:text-white/90">
-              {t("resultsGrade", { sinif: s, count: grup.length, ortalama: ortalama.toLocaleString("tr-TR", { maximumFractionDigits: 1 }) })}
+              {puanVar
+                ? t("resultsGrade", { sinif: s, count: grup.length, ortalama: ortalama.toLocaleString("tr-TR", { maximumFractionDigits: 1 }) })
+                : `${s}. sınıf · ${grup.length} katılımcı`}
             </h4>
             <div className="overflow-x-auto">
               <table className="min-w-full">
                 <thead className="border-b border-gray-100 dark:border-gray-800">
                   <tr>
-                    <th className={TH_STICKY}>{t("resultCols.sira")}</th>
+                    {siraVar && <th className={TH_STICKY}>{t("resultCols.sira")}</th>}
                     <th className={thClass}>{t("resultCols.ogrenci")}</th>
                     <th className={thClass}>{t("resultCols.puan")}</th>
                     <th className={thClass}>{t("resultCols.dogru")}</th>
@@ -321,9 +327,11 @@ function ResultsTab({ examId }: { examId: string }) {
                 <tbody className="divide-y divide-gray-100 dark:divide-gray-800">
                   {grup.map((r) => (
                     <tr key={r.student_id}>
-                      <td className={TD_STICKY}>{r.sira}</td>
+                      {siraVar && <td className={TD_STICKY}>{(r.sira as number | null) ?? "—"}</td>}
                       <td className={tdClass}>{r.ad_soyad || "-"}</td>
-                      <td className={`${tdClass} font-semibold`}>{Number(r.puan)}</td>
+                      <td className={`${tdClass} font-semibold`}>
+                        {(r.puan as number | null) == null ? "—" : Number(r.puan)}
+                      </td>
                       <td className={tdClass}>{r.dogru_sayisi}</td>
                       <td className={tdClass}>{r.yanlis_sayisi}</td>
                       <td className={tdClass}>{r.bos_sayisi}</td>

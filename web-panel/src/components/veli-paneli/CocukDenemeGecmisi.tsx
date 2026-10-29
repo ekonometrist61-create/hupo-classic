@@ -10,11 +10,12 @@ interface GecmisSatiri {
   sinav_id: string;
   sinav_ad: string;
   tarih: string;
-  puan: number;
+  puan: number | null; // 1-4. sınıfta null
   dogru: number;
   yanlis: number;
-  sira: number;
-  sinif_katilimci: number;
+  bos?: number | null;
+  sira: number | null;
+  sinif_katilimci: number | null;
   teslim_turu: TeslimTuru;
 }
 
@@ -76,6 +77,12 @@ export default function CocukDenemeGecmisi({ cocukId, cocukAd }: Props) {
                     {t("dogru", { dogru: s.dogru })}
                     {" · "}
                     {t("yanlis", { yanlis: s.yanlis })}
+                    {s.puan == null && s.bos != null && (
+                      <>
+                        {" · "}
+                        {t("bos", { bos: s.bos })}
+                      </>
+                    )}
                   </p>
                   <span
                     className={`mt-1 inline-block rounded-md px-2 py-0.5 text-xs font-medium ${TESLIM_RENK[teslim] ?? TESLIM_RENK.elle}`}
@@ -83,14 +90,18 @@ export default function CocukDenemeGecmisi({ cocukId, cocukAd }: Props) {
                     {t(`teslim_${teslim}`)}
                   </span>
                 </div>
-                <div className="text-right">
-                  <p className="text-xl font-extrabold text-brand-600 dark:text-brand-400">
-                    {Number(s.puan).toFixed(1)}
-                  </p>
-                  <p className="text-xs text-gray-500 dark:text-gray-400">
-                    {t("puan")} · {t("sira", { sira: s.sira, katilimci: s.sinif_katilimci })}
-                  </p>
-                </div>
+                {s.puan != null && (
+                  <div className="text-right">
+                    <p className="text-xl font-extrabold text-brand-600 dark:text-brand-400">
+                      {Number(s.puan).toFixed(1)}
+                    </p>
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
+                      {t("puan")}
+                      {s.sira != null && s.sinif_katilimci != null &&
+                        ` · ${t("sira", { sira: s.sira, katilimci: s.sinif_katilimci })}`}
+                    </p>
+                  </div>
+                )}
               </li>
             );
           })}

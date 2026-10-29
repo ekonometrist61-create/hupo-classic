@@ -200,7 +200,7 @@ class _SonucSatiri extends StatelessWidget {
   final int dogru;
   final int yanlis;
   final int bos;
-  final double puan;
+  final double? puan;
 
   @override
   Widget build(BuildContext context) {
@@ -212,10 +212,19 @@ class _SonucSatiri extends StatelessWidget {
         const SizedBox(width: 8),
         _Sayac(deger: bos.toString(), etiket: 'Boş', renk: AppColors.muted),
         const Spacer(),
-        Text(
-          '${puan.toStringAsFixed(puan % 1 == 0 ? 0 : 1)} pt',
-          style: appText(size: 18, weight: FontWeight.w900, color: AppColors.primary),
-        ),
+        if (puan != null)
+          Text(
+            '${puan!.toStringAsFixed(puan! % 1 == 0 ? 0 : 1)} pt',
+            style: appText(size: 18, weight: FontWeight.w900, color: AppColors.primary),
+          )
+        else
+          Flexible(
+            child: Text(
+              'Denemeyi tamamladın.',
+              textAlign: TextAlign.end,
+              style: appText(size: 13, weight: FontWeight.w700, color: AppColors.mintDark),
+            ),
+          ),
       ],
     );
   }
@@ -592,7 +601,10 @@ class MockExamResultScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final oran = sonuc.basariOrani;
-    final mesaj = oran >= 0.8
+    final puan = sonuc.puan;
+    final mesaj = puan == null
+        ? 'Güzel iş, denemeyi tamamladın.'
+        : oran >= 0.8
         ? 'Muhteşem bir sonuç!'
         : oran >= 0.5
             ? 'İyi gidiyorsun!'
@@ -612,12 +624,14 @@ class MockExamResultScreen extends StatelessWidget {
               padding: const EdgeInsets.all(24),
               child: Column(
                 children: [
-                  Text(
-                    sonuc.puan.toStringAsFixed(sonuc.puan % 1 == 0 ? 0 : 1),
-                    style: appText(size: 56, weight: FontWeight.w900, color: AppColors.primary),
-                  ),
-                  Text('puan', style: appText(color: AppColors.muted)),
-                  const SizedBox(height: 20),
+                  if (puan != null) ...[
+                    Text(
+                      puan.toStringAsFixed(puan % 1 == 0 ? 0 : 1),
+                      style: appText(size: 56, weight: FontWeight.w900, color: AppColors.primary),
+                    ),
+                    Text('puan', style: appText(color: AppColors.muted)),
+                    const SizedBox(height: 20),
+                  ],
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [

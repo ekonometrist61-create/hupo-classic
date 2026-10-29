@@ -4953,3 +4953,45 @@ Paketler:
   5. Mevcut 3 veli hesabı (deneme kaydı yok): gating açıldığı için günlük 20 soru sınırında; deneme sınavlarına erişim kapalı (kabul edildi). Deneme kaydı hiç açılmadığı için deneme almazlar; istenirse ayrı karar.
   6. Kart metinleri ve sınır değerleri başlangıç hipotezi; baseline yok. İlk ölçüm: 14 gün sonra sınıf × özellik sınır-dolma oranı (sınıf başına 30 hane altında gösterilmez).
 - **İlgili:** `docs/growth-crm/DENEME_SINIR_KURALI.md` (kural, metinler, durum); `docs/SURUMLEME.md` (1.4.0+6, panel 0.4.0); K-0194; K-0195; `supabase/migrations/20261125000000_kartsiz_deneme_kayitta.sql`, `20261126000000_deneme_yonetim_ve_gorunurluk.sql`, `20261127000000_deneme_sinav_kapisi.sql`.
+
+### K-0197 · 2026-10-29 · İÇERİK/VT · Görselli soru motoru: kapasite, kör çözüm ölçümü, questions görsel kolonları (uzak DB'ye uygulandı)
+- **Tür:** Geliştirme + ölçüm + karar
+- **Konu:** `tools/gorsel-motoru` (Node), `docs/soru-uretim/GORSELLI_SORU_PLANI.md` §11.7–§11.9, `questions` tablosu
+- **Yapılanlar:**
+  - Trafik kapasitesi 6 → 46 (iki yollu kavşak şekli + şablonu); çubuk örüntüsü 22 → 42 (altıgen 5n+1); trafik yeşili `#00A37A` (renk körlüğü ΔE eşiği). Testler 44/44.
+  - Kör çözüm (n=40, görselli ve görselsiz ayrı bağımsız Haiku ajanları, 14 grup): 12 grup KOR_GECTI, HB 1.2.3 KOR_GECMEDI (görselsiz %43), MAT 5.3.6 EKSIK_URETIM (n=32). MAT 1.1.6: ilk ölçüm %43, aynı sette taze çözücüyle %25 (çelişkili).
+  - İki gerçek sızıntı düzeltildi: kareli paralel soruda doğru çift hep "k ile l" idi; açı sorusunda sabit 90° çeldirici her zaman yanlıştı. MAT 5.3.4 düzeltilmiş sette görselsiz %53 → %35 (KOR_GECTI).
+  - Commit'ler: `911f822`, `b90cd0c`, `7e85ef0`. PNG/SVG/`kor/` git dışı.
+  - **Migration `20261128000000_gorselli_sorular.sql` uzak DB'ye uygulandı** (proje sahibi onaylı; `supabase db query --linked -f`, tek dosya; `db push` kullanılmadı çünkü yabancı 5 migration'ı da gönderirdi; migration geçmişine YAZILMADI, idempotent). Doğrulama: 4 kolon (`gorsel_svg`, `gorsel_alt_metin`, `gorsel_tip`, `gorsel_spec`), 2 kısıt; öğrenci yalnız svg/alt metin/tip okur, `gorsel_spec` kapalı.
+- **Durum:** TAMAMLANDI (motor ve migration); içerik yayını yok.
+- **Doğrulama:** KISMİ. Testler ve kör çözüm geçti; veritabanı kolonları sorguyla doğrulandı. Flutter/web gösterimi, gerçek ekran kontrolü ve insan onayı (`kontak.html`) yapılmadı. Hiçbir soru `onaylandi` değil, yayın yok.
+- **Sahip:** Proje sahibi (onay); geliştirme (uygulama)
+- **Açık kalanlar:**
+  1. HB 1.2.3 kavşak: iki-ışık durum uzayı yapısal olarak "Durur" ağırlıklı (34 sorudan 18); dengelemek için yeni durum tipi (yaya rolü ya da yeni şekil) gerekir. Çözülene dek yayına alınmaz.
+  2. MAT 1.1.6: karar için n=80 ölçüm. MAT 5.3.6: yalnız 32 soru üretiliyor; şablon genişletilecek.
+  3. Görselli paket için içe aktarma RPC'si (v3) yazılmadı: `admin_import_questions_v2` yeni kolonları bilmiyor. Ardından panel önizleme/onay, Flutter `SvgPicture.string`.
+  4. Migration geçmişi: `20261108`, `20261109`, `20261124` ve elle uygulananlar (`20261125–28`) geçmişte görünmüyor; sonraki `db push` önce bu karar ile birlikte ele alınmalı.
+  5. `paket-v1` kör çözülmedi (üreticiyle farklı); kanonik set `docs/soru-uretim/gorsel/paket-v2`.
+- **Önem:** Orta
+- **İlgili:** `docs/soru-uretim/gorsel/DEVIR_2026-10-28.md`, `docs/soru-uretim/GORSELLI_SORU_PLANI.md` §11.7–§11.9, `supabase/migrations/20261128000000_gorselli_sorular.sql`; bellek: gorselli-devir-2026-10-28.
+
+### K-0198 · 2026-10-29 · DEN/VT · 1–4. sınıf deneme sonucunda puan ve sıra sunucudan dönmez; yalnız doğru/yanlış/boş (uzak DB ve edge uygulandı)
+- **Tür:** Uygulama + karar
+- **Konu:** DEN, VT, VEL, MOBİL, WEB (GÖR-058)
+- **Karar (proje sahibi):** 1–4. sınıfta puan ve sınıf içi sıra yerine doğru/yanlış/boş gösterilir. Uygulama sunucu + istemci birlikte. Sözleşme: sınıf < 5 ise `puan`, `sira`, `sinif_katilimci`/`katilimci`/`toplam` NULL; `dogru`/`yanlis`/`bos` her zaman dolu. İstemci `puan is null` ile ayırır.
+- **Yapılanlar:**
+  - Migration `20261138000000_deneme_1_4_puan_sira_gizle.sql`: yardımcı `_deneme_puan_gorunur(smallint)`; `list_my_exams`, `submit_mock_exam`, `_deneme_sinavi_bitir` (olay payload'ı dahil), `get_mock_exam_result`, `get_child_exam_history`, `admin_get_mock_exam_results`, `deneme_bildirim_alici` güncellendi. Dönüş tipleri aynı.
+  - Edge `olay-kutusu-gonder` (veli e-postası) puansız dala uyarlandı ve deploy edildi; ardından migration uzağa `db query --linked -f` ile uygulandı (migration geçmişine YAZILMADI, idempotent). Doğrulama: 7/7 fonksiyon yeni sürümde, `_deneme_puan_gorunur(3)=false`, `(5)=true`.
+  - Web: `CocukDenemeGecmisi.tsx`, `MockExamDetailModal.tsx`, `DenemeEkrani.tsx`, `messages/tr|en.json` (`veliPaneli.denemeGecmisi.bos`). Mobil: `mock_exam_models.dart`, `mock_exam_screen.dart`.
+  - Test: PGlite `supabase/tests/deneme_1_4_gizle` 25/25; `tsc --noEmit` (web) temiz; `flutter analyze` (2 dosya) temiz.
+- **Durum:** KISMİ — sunucu ve edge TAMAMLANDI; web paneli Vercel'e ve mobil sürüm YAYINLANMADI (istemci kodu yerelde, commit yok).
+- **Doğrulama:** KISMİ. Ekran görüntüsü ve gerçek oturumla kontrol yapılmadı; PGlite stub şema üzerinde (RLS ve gerçek kısıtlar kapsam dışı).
+- **Sahip:** Proje sahibi (karar, onay); geliştirme (uygulama).
+- **Önem:** Orta
+- **Açık kalanlar:**
+  1. Web panel dağıtımı ve mobil sürüm; yayınlanana kadar eski istemci null `puan`'da bozulabilir (mobil `as num` hatası, web "0.0"). 1–4. sınıf sınavları `aktif=false` olduğu sürece pratikte etkisiz.
+  2. `SISTEM.md` §7 madde 4 ve `ilk-deneme-blueprint-2026-27.json` "karar bekliyor" notları güncellenecek.
+  3. `tr.json` yönetim "resultsGrade" başlığı kodda sabit Türkçe; anahtara taşınacak (düşük).
+  4. GÖR-058 `questions` kazanım/dayanak alanı kararı ayrı kalır.
+  5. `tool/okuma_onizleme/main.dart` 3 analiz hatası (lib dışı, bu işle ilgisiz).
+- **İlgili:** GÖR-058, K-0120, `docs/soru-uretim/SISTEM.md` §4, `supabase/functions/olay-kutusu-gonder/index.ts`.

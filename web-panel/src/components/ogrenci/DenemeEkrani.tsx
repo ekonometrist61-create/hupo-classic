@@ -32,7 +32,7 @@ interface SinavSonuc {
   dogru_sayisi: number;
   yanlis_sayisi: number;
   bos_sayisi: number;
-  puan: number;
+  puan: number | null; // 1-4. sınıfta null
 }
 
 // ─── State makinesi ────────────────────────────────────────────────────────────
@@ -269,14 +269,20 @@ export default function DenemeEkrani({ examId }: Props) {
   // ─── Bitiş ───────────────────────────────────────────────────────────────────
   if (state.phase === "done" && state.sonuc) {
     const puan = state.sonuc.puan;
-    const pose =
-      puan >= 80 ? "tamamlandi" : puan >= 50 ? "dusunuyor" : "bir-daha-dene";
-    const mesaj =
-      puan >= 80
+    const puanVar = puan != null;
+    const pose = !puanVar
+      ? "tamamlandi"
+      : puan >= 80 ? "tamamlandi" : puan >= 50 ? "dusunuyor" : "bir-daha-dene";
+    const mesaj = !puanVar
+      ? "Güzel iş, denemeyi tamamladın. Sonuçlarını veliye gönderdik."
+      : puan >= 80
         ? "Harika gitti! Sonuçlarını veliye gönderdik."
         : puan >= 50
         ? "İyi bir denemeydi. Zayıf konular sana gösterilecek."
         : "Bu kez zordu. Tekrar et, bir sonrakinde daha iyi olacak.";
+    const baslik = !puanVar
+      ? "Güzel iş!"
+      : puan >= 80 ? "Müthişsin!" : puan >= 50 ? "Güzel çaba!" : "Hadi tekrar dene!";
 
     return (
       <div className="mx-auto mt-8 max-w-md rounded-3xl border border-gray-200 bg-white p-8 text-center shadow-sm dark:border-gray-700 dark:bg-gray-800">
@@ -289,7 +295,7 @@ export default function DenemeEkrani({ examId }: Props) {
           priority
         />
         <h1 className="mt-4 text-2xl font-extrabold text-gray-900 dark:text-white">
-          {puan >= 80 ? "Müthişsin!" : puan >= 50 ? "Güzel çaba!" : "Hadi tekrar dene!"}
+          {baslik}
         </h1>
         <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">{mesaj}</p>
 
@@ -314,10 +320,14 @@ export default function DenemeEkrani({ examId }: Props) {
           </div>
         </div>
 
-        <p className="mt-4 text-3xl font-extrabold text-brand-600 dark:text-brand-400">
-          {puan.toFixed(1)}
-        </p>
-        <p className="text-xs text-gray-400">puan (100 üzerinden)</p>
+        {puanVar && (
+          <>
+            <p className="mt-4 text-3xl font-extrabold text-brand-600 dark:text-brand-400">
+              {puan.toFixed(1)}
+            </p>
+            <p className="text-xs text-gray-400">puan (100 üzerinden)</p>
+          </>
+        )}
 
         {/* eslint-disable-next-line @next/next/no-html-link-for-pages -- /deneme-sonuclari ve /ogrenci ayrı app'lere yönlenir; next/link kullanılmaz */}
         <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center">

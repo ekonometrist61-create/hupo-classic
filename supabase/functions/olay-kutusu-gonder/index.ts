@@ -37,9 +37,12 @@ interface Alici {
   veli_ad: string | null;
   cocuk_ad: string;
   sinav_ad: string;
-  puan: number;
-  sira: number;
-  katilimci: number;
+  puan: number | null;
+  sira: number | null;
+  katilimci: number | null;
+  dogru?: number | null;
+  yanlis?: number | null;
+  bos?: number | null;
   teslim_turu: "elle" | "sure_doldu" | "otomatik" | null;
 }
 
@@ -63,17 +66,27 @@ const TESLIM_ACIKLAMA: Record<string, string> = {
 };
 
 function mesajOlustur(a: Alici, sonucUrl: string) {
-  const puan = Number(a.puan).toFixed(1);
+  // 1–4. sınıfta sunucu puan ve sırayı null döndürür; yalnız doğru/yanlış/boş gösterilir.
+  const puanVar = a.puan !== null && a.puan !== undefined;
+  const puan = puanVar ? Number(a.puan).toFixed(1) : "";
+  const sayilar = `${a.dogru ?? 0} doğru, ${a.yanlis ?? 0} yanlış, ${a.bos ?? 0} boş`;
   const aciklama = TESLIM_ACIKLAMA[a.teslim_turu ?? "elle"] ?? TESLIM_ACIKLAMA.elle;
   const selam = a.veli_ad ? `Merhaba ${a.veli_ad},` : "Merhaba,";
-  const konu = `${a.cocuk_ad} — ${a.sinav_ad} sonucu: ${puan} puan`;
+  const konu = puanVar
+    ? `${a.cocuk_ad} — ${a.sinav_ad} sonucu: ${puan} puan`
+    : `${a.cocuk_ad} — ${a.sinav_ad} sonucu`;
+  const sonucSatirlari = puanVar
+    ? [`Puan: ${puan}`, `Sınıf sıralaması: ${a.sira}. / ${a.katilimci}`]
+    : [`Sonuç: ${sayilar}`];
+  const sonucHtml = puanVar
+    ? `<li>Puan: <strong>${puan}</strong></li><li>Sınıf sıralaması: ${a.sira}. / ${a.katilimci}</li>`
+    : `<li>Sonuç: <strong>${esc(sayilar)}</strong></li>`;
 
   const text = [
     selam,
     "",
     `${a.cocuk_ad} "${a.sinav_ad}" deneme sınavını tamamladı.`,
-    `Puan: ${puan}`,
-    `Sınıf sıralaması: ${a.sira}. / ${a.katilimci}`,
+    ...sonucSatirlari,
     aciklama,
     "",
     `Ayrıntılı sonuç: ${sonucUrl}`,
@@ -82,7 +95,7 @@ function mesajOlustur(a: Alici, sonucUrl: string) {
   const html = `<!doctype html><html lang="tr"><body style="font-family:Arial,sans-serif;color:#1f2937;line-height:1.5">
 <p>${esc(selam)}</p>
 <p><strong>${esc(a.cocuk_ad)}</strong> &quot;${esc(a.sinav_ad)}&quot; deneme sınavını tamamladı.</p>
-<ul><li>Puan: <strong>${puan}</strong></li><li>Sınıf sıralaması: ${a.sira}. / ${a.katilimci}</li></ul>
+<ul>${sonucHtml}</ul>
 <p>${esc(aciklama)}</p>
 <p><a href="${esc(sonucUrl)}" style="color:#147D8A;font-weight:bold">Ayrıntılı sonucu gör</a></p>
 <p style="font-size:12px;color:#6b7280">Bu e-posta, çocuğunuzun sınav sonucu hakkında hizmet bildirimidir.</p>
