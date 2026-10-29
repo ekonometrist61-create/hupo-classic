@@ -89,6 +89,15 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR-074 | YÖN | Hikâye Atölyesi toplu yayın (K-0145): liste araç çubuğundaki "Seçilenleri yayına al / yayından çek" düğmeleri ve kuru çalıştırmalı onay ekranı ekran kontrolünden geçmedi. Yerel panel `NEXT_PUBLIC_DEMO_MODE=1` olduğu için yazmalar kapalı; admin oturumu yok. Gerçek yayın işlemi çalıştırılmadı (GÖR-063). | BEKLİYOR (ekran kontrolü) | Kullanıcı (admin oturumu) + Ajan | Orta | K-0145, K-0143 |
 | GÖR-075 | YÖN | Sorular ve Kelime Evreni toplu seçim / yayına al / yayından kaldır (K-0160) ekran kontrolü: 375 ve 1024 px, karanlık mod, admin oturumuyla gerçek yayın ve geri alma. Kod düzeyinde flex-wrap dışında taşma kontrolü yapılmadı. | BEKLİYOR (ekran kontrolü) | Kullanıcı (admin oturumu) + Ajan | Orta | K-0160 |
 | GÖR-077 | MOB/TSR | Mobil açılış yenileme ("Hupo Uyanır"): plan yazıldı (`docs/splash/ACILIS_SENARYOSU_PLANI.md`), kod değişmedi. Önce Kullanıcı kararları D1–D7 (teknoloji, katmanlı Hupo üreticisi, logo, ses, süre, ilk karşılama kapsamı, iOS için Mac/CI). Faz 1 (yeni asset gerektirmez) onayla başlar. Düşük uç Android cihaz ve iOS doğrulama ortamı temin edilmeli. | PLANLANDI (onay bekliyor) | Kullanıcı (karar, asset) + Ajan | Orta | K-0166 |
+| GÖR-078 | HUK | Ön bilgilendirme formu (`/on-bilgilendirme`) ve cayma istisnası metninin hukuk onayı; köşeli parantez alanları (şirket unvanı, MERSİS, adres, KEP, cayma süresi, iade, saklama). Hukuk onaylamadan ödeme akışı canlıya alınmaz; metin taslak kalır. | BEKLİYOR | Hukuk + Kullanıcı | Kritik | K-0196, ODEME_KURULUM §11 |
+| GÖR-079 | MOB/HUK | Çocuk kendi hesabını açabiliyor (`mobile-app/lib/auth/signup.dart`, rol `ogrenci`). Koşullardaki "18 yaşından küçük öğrencilerin hesapları veli tarafından açılır ve yönetilir" cümlesiyle uyumsuz; gizlilik metni ise "veli onayıyla bağlanır" diyor. Karar (`ONAYLI`, kullanıcı 2026-10-29): çocuk kendi hesabını açar; veli yalnızca ücretli plan satın alırken devreye girer. Metinler buna uyarlandı (`content.ts`: özet, tanımlar, çocuklar ve hesap bölümleri). Kalan: veli panelindeki veri işleme onayı (`ConsentCard`, gizlilik metnindeki "Veli onayı" paragrafı) ve çocuk aydınlatma metni bu karara göre hukukçuya gözden geçirtilmeli. | KARAR VERİLDİ (metin hukuk teyidi bekliyor) | Hukuk | Yüksek | K-0196 |
+| GÖR-080 | MOB/HUK | Çocuk aydınlatma metni (`mobile-app/lib/content/privacy_notice.dart`, 2026-09-taslak-1) web metnine göre eksik: veri sorumlusu, aktarım alıcıları, saklama süreleri ve KVKK başvuru yolu yok. Sürüm artışı tüm öğrencilerden yeniden onay ister. | BEKLİYOR | Hukuk | Yüksek | K-0196, K-0017 |
+| GÖR-081 | MOB | Çocuk ekranındaki veli mesajı ("Premium'u veli panelinden açabilir misin?") satın almaya yönlendirme sayılabilir. Dış bağlantı kaldırıldı; mesaj metni mağaza incelemesi öncesi gözden geçirilmeli. | BEKLİYOR | Kullanıcı + Ajan | Yüksek | K-0196 |
+| GÖR-082 | ALT | Uzak Supabase dağıtımı, sırası: (1) migration 20261108 (anon kapatma) ve 20261124 (ön bilgilendirme kaydı), (2) `payments-checkout` yeniden yayını, (3) web yayını. Dashboard'da e-posta doğrulama (Confirm email) açılacak. Her adım ayrı onay ister. | BEKLİYOR | Kullanıcı (onay) + Ajan | Kritik | K-0196 |
+| GÖR-083 | HUK | Veri Güvenliği formu (`mobile-app/store/VERI_GUVENLIGI_VE_GIZLILIK.md`) güncel değil: Brevo, Resend, Sentry, iyzico ve bildirim belirteci için yanıtlar yeniden yazılmalı. | BEKLİYOR | Kullanıcı + Hukuk | Yüksek | K-0196 |
+| GÖR-084 | WEB | Landing hareket sistemi: gerçek cihaz kare süresi ve canlı dağıtım kontrolü ölçülmedi (LCP ve Lighthouse ölçüldü, K-0200). Canlıda görsel kontrol (GÖR-039 ile birlikte) | DEVAM (K-0200: commit 9d83c31, üretim ölçümü tamam) | Ajan + Kullanıcı | Orta | K-0199, K-0200, GÖR-039 |
+| GÖR-086 | WEB | Landing Speed Index regresyonu: mobil medyan 3208 → 4429 ms, masaüstü 1333 → 1725 ms (LCP ve TBT eşit). Olası neden hero transform girişleri ve SplitText; doğrulanmadı. Giriş animasyonlarını kısaltıp yeniden ölçmek gerekir | BEKLİYOR | Ajan | Orta | K-0200 |
+
 ### K-0158 · 2026-10-27 · VT/WEB/MOB · CRM, giriş, Müşteri 360, aktivasyon, analitik: eksik analizi ve 10 paketlik tamamlama (Haiku)
 - **Tür:** Plan + Gelişme
 - **Plan:** `docs/growth-crm/TAMAMLAMA_PLANI_2026-10-27.md` (bulgular, W1–W10, kullanıcı/hukuk kararları). Olay listesi: `docs/growth-crm/OLAY_TAKSONOMISI.md`.
@@ -154,7 +163,7 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 - **Tür:** Test
 - **Konu:** VT
 - **Kapsam:** `supabase/tests/okuma_dunyasi/testler.sql`: yeni senaryo "export: kelime bölümü yalnız kendi denemelerini, ustalıklarını ve kayıtlarını içerir". Öğrenciye deneme, ustalık ve kayıt eklenir; çıktıda sayılar tablodan hesaplanan sayılarla eşleşir, ikinci öğrencinin deneme kimliği çıktıda yoktur.
-- **Doğrulama:** `node kos.mjs` → 187/188. Yeni senaryo OK. Tek FAIL (senaryo 18, atölye paketlerinde `arsiv_olgu` etiket uzunluğu) değişmedi, K-0152 değil GÖR-009 kapsamında ayrı karar.
+- **Doğrulama:** 23/23 birim testi geçti (`analytics-riza-birim`, `analytics-utm-birim`, `analytics-kaynak-birim`). `tsc --noEmit` ve eslint temiz. Kırık test onarıldı: `trackLandingEvent` artık Promise döndürüyor (çağıranlar değiştirilmedi), test her çağrıyı `await` ediyor ve posthog'u init stub'ıyla izole ediyor.
 - **Sınır:** Kelime tabloları `stubs_export.sql` içindeki taklit tanımlarıdır; gerçek kelime migrasyonlarıyla (20261045/20261046) bu test koşulmadı. GÖR-048 KISMEN.
 - **Durum:** KISMEN
 - **Sahip:** Ajan
@@ -390,6 +399,134 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 ---
 
 ## B. Kayıtlar (en yeni üstte)
+
+### K-0200 · 2026-10-29 01:52 · WEB · Landing commit'i (9d83c31), framer-motion kaldırıldı, üretim LCP ve Lighthouse ölçümü
+- **Tür:** Gelişme
+- **Konu:** WEB
+- **Bağlam:** Kullanıcı üç iş istedi: framer-motion ileride gerekmiyorsa kaldırılması (kullanıcı kararı: gerekmediğine karar verilirse kaldır; GSAP tek motor); landing değişikliklerinin commit edilmesi; üretim derlemesinde LCP ve Lighthouse ölçümü.
+- **Plan:** (1) `npm uninstall framer-motion` (web-panel); src'de import yok, lock'tan yalnızca framer-motion ve bağımlıları `motion-dom`, `motion-utils` çıktı. (2) Commit: yalnız landing işi. Başka oturumların değişiklikleri dahil edilmedi: `messages/*.json` (onBilgilendirme, onBilgiKabul), `next.config.ts`, `legal/content.ts`, `PlanKarti.tsx`, `sosyal-medya/`. `PricingSection.tsx` ve `decisions.md` için indekse yalnız bizim parçalar kondu. (3) Ölçüm: `npm run build` + `next start`, Lighthouse (performance, Chrome headless), mobil ve masaüstü 3'er koşu, medyan. Karşılaştırma: aynı Turbopack derlemesi, commit öncesi `b37e14b`, geçici worktree (silindi).
+- **Karar:** Commit ve framer-motion kaldırma kullanıcı talebi ile `ONAYLI`. CTA süresi 200 ms (K-0199).
+- **Durum:** TAMAMLANDI (commit ve kaldırma); ölçüm sonucu GÖR-086 açtı.
+- **Doğrulama:** DOĞRULANDI (kaldırma sonrası `npm run build` çıkış 0; commit içeriği `git show --stat` ile kontrol edildi; ölçümler aşağıda).
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** Commit `9d83c31` (landing, 25 dosya, +1084/−205). Lighthouse sonuçları (medyan; baseline `b37e14b` aynı koşullarda):
+
+| Ölçüm | Baseline | Bu commit |
+|---|---|---|
+| Mobil skor | 87 | 85 |
+| Mobil LCP | 1376 ms | 1366 ms |
+| Mobil TBT | 474 ms | 467 ms |
+| Mobil Speed Index | 3208 ms | 4429 ms |
+| Masaüstü skor | 97 | 94 |
+| Masaüstü LCP | 1152 ms | 1234 ms |
+| Masaüstü Speed Index | 1333 ms | 1725 ms |
+
+  İlk ölçüm denemesinde iki Lighthouse zinciri çakıştı; o sayılar kullanılmadı. LCP ve TBT eşit; Speed Index mobilde belirgin kötü (yaklaşık +1,2 sn). Neden doğrulanmadı (GÖR-086).
+- **Kanıt:** `npm run build` (çıkış 0, framer-motion kaldırıldıktan sonra); commit `9d83c31`; Lighthouse JSON dosyaları geçici klasörde (`scratchpad/lh3`, `scratchpad/lh-base`).
+- **İlgili:** K-0199, GÖR-084, GÖR-086.
+
+### K-0199 · 2026-10-29 00:56 · WEB · Landing hareket sistemi: GSAP + Lenis + React Bits SplitText
+- **Tür:** Karar + Gelişme
+- **Konu:** WEB
+- **Bağlam:** Kullanıcı, landing için GSAP, Lenis ve React Bits'ten projeye uygun olanları seçmemi ve geçiş/animasyon/bileşenleri uyumlu hale getirmemi istedi. Proje kuralı gereği tasarım işi `hupo-design-growth-director` agent'ına devredildi; ana oturum koordine etti ve üç kararı düzeltti.
+- **Plan:** (1) Lisans kontrolü: GSAP Standard No Charge lisans metni marketing sayfasını izinli kullanım sayıyor (ücretli lisans yalnızca Webflow'a rakip görsel animasyon aracında gerekli); React Bits MIT + Commons Clause (uygulama içi kullanım serbest, tek başına satılamaz); Lenis MIT. (2) Paketler: `gsap@3.15.0`, `@gsap/react@2.1.2`, `lenis@1.3.27`. (3) Uygulama: `components/landing/motion/` (gsap.ts, Reveal, RevealGroup, DrawLine, LandingMotion, SplitText), `components/landing/buttons.ts`, `globals.css` token ve Lenis CSS'i.
+- **Karar:**
+  - Lenis yalnız landing'de; `anchors: true`. `offset: -80` denendi, scroll-mt-20 ile çift boşluk oluşturdu (ölçümle 160 px); kaldırıldı.
+  - Animasyon motoru tek: GSAP (ScrollTrigger, CustomEase `hupo-out` / `hupo-inout`). framer-motion yeni kullanılmadı, kaldırılmadı (GÖR-085).
+  - React Bits'ten yalnız SplitText; 3 bölüm başlığında (Benefits, Veli raporu, Karakterler). Hero H1'de kullanılmadı: bileşen split bitene kadar metni `visibility:hidden` basıyor (LCP ve JS'siz erişim). Her kullanımda `<noscript>` görünürlük kuralı var.
+  - Reddedilenler: WebGL arka planlar (Aurora, Galaxy, Silk, Particles: düşük cihaz bütçesi), imleç bağımlıları (Magnet, Spotlight, Tilt), CountUp (örnek sayı, sahte sosyal kanıt riski), BlurText (ikinci motor, işlevi SplitText ile çakışıyor), ShinyText/GradientText (dekoratif, kontrast), Logo Loop (güven alanında logo yok).
+  - Hero yalnız transform ile girer (opacity yok, LCP gecikmesin).
+  - CTA renk/hover geçişi 200 ms (ana oturumda 300 ms'ten düzeltildi); reveal ve SSS yapısal geçişleri 300 ms; eğri hupo-out.
+  - Framer-motion kaldırma kararı: ONAY BEKLİYOR.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** Kod yazıldı; commit yok. Doğrulanan: `npx tsc --noEmit` çıkış 0; `npx eslint` landing ve sayfa dosyalarında 0 hata (2 uyarı dokunulmayan dosyalarda, önceden var); `npm run build` başarılı; `e2e/home.spec.ts` üretim sunucusunda 6/6 (masaüstü + Pixel 7). Agent'ın raporuna göre Chromium emülasyonunda 1440/390 tam sayfa, reduced-motion (GSAP izi yok, içerik görünür), SSS aç/kapa, çapa boşluğu 80 px, 390 px'te yatay taşma yok. Dev sunucuda görülen "giriş ekranına bağlantı" hatası dev modunun ilk derleme süresinden kaynaklandı; üretimde geçti. Doğrulanmadı: LCP, Lighthouse, gerçek cihaz kare süresi, canlı dağıtım.
+- **Kanıt:** `npm run build` (çıkış 0); `npx playwright test e2e/home.spec.ts` → 6 passed; `npx tsc --noEmit` → 0; `docs/hupo-design-growth/SCREEN_CONTRACT_landing-hareket.md`, `docs/hupo-design-growth/decisions.md`.
+- **Diğer oturum notu:** `PricingSection.tsx` başka bir oturumda değiştirildi (paket CTA'ları `/veli-paneli/kayit`, migration 20261125000000). Bizim değişikliklerle aynı dosyada duruyor; üzerine yazılmadı.
+- **İlgili:** GÖR-084, GÖR-085, GÖR-039, K-0196.
+- **Güncelleme 2026-10-29 01:52:** Commit yapıldı (`9d83c31`, konu satırındaki BOM düzeltildi). framer-motion kaldırıldı (GÖR-085 kapandı). LCP ve Lighthouse üretim derlemesinde ölçüldü; sonuç ve Speed Index sorunu K-0200 ve GÖR-086'da.
+
+### K-0201 · 2026-10-29 · BYM/WEB/VT · Hane kaynağı (ilk temas UTM) canlıya alındı; landing metinleri düzeltildi; pazarlama stratejisi AÇIK
+- **Durum:** TAMAMLANDI (migration + istemci kodu + birim testleri); canlıda uçtan uca kayıt denenmedi. Sosyal strateji ve içerik paketi için proje sahibi beğenmedi: AÇIK, sonra konuşulacak.
+- **Pazarlama stratejisi (AÇIK, proje sahibine sorulacak):** Proje sahibi K-0198/K-0199 stratejisini beğenmedi ve "sonra konuşalım" dedi. `docs/hupo-design-growth/sosyal-medya/` altındaki 3 belge bağlayıcı değil, taslak sayılır. Konu açılınca önce neyin beğenilmediği sorulacak (kanal seti, ton, içerik biçimi, otomasyon kapsamı); sorulmadan strateji dosyaları yeniden yazılmayacak, içerik üretimi ve yayın yapılmayacak.
+- **Migration:** `20261127000000_hane_ilk_temas_utm.sql` canlıya uygulandı (`growth_households.utm_content` + `hane_ilk_temas_yaz(jsonb)`; anon kapalı, authenticated açık). `db push` kullanılmadı: o sırada bekleyen başka migration'lar vardı (20261108, 20261109, 20261124, 20261125, 20261126); yalnız bu dosya `supabase db query --linked -f` ile uygulandı, geçmişe `migration repair --status applied` ile işlendi. Bekleyen 5 migration'ın uygulanması ayrı karardır. PGlite testi: `supabase/tests/hane_ilk_temas/test.mjs` 17/17.
+- **İstemci:** `web-panel/src/lib/analytics/kaynak.ts`. Kayıtta UTM, yalnız analitik rızası varsa, `signUp` metadata'sına (`hupo_utm`) konur; e-posta doğrulaması başka sekmede açılabildiği için UTM oradan taşınır. İlk oturumda (kayıt formunda oturum hemen açılırsa veya veli girişinde) `hane_ilk_temas_yaz` çağrılır. Birim testi: `e2e/analytics-kaynak-birim.spec.ts`.
+- **Doğrulama:** yeni UTM ve kaynak birim testleri geçti (22 test, rıza testi hariç), `tsc --noEmit` ve eslint temiz. **Mevcut `e2e/analytics-riza-birim.spec.ts` içinde 1 test başarısız** ("onay varken capture çağrılır"): `events.ts` posthog-js'i tembel yüklediği için (analitikIstemcisi, asenkron) test senkron beklediğinden kırılıyor. Bu değişiklik K-0199 UTM işiyle gelen `events.ts` düzenlemesinden; bu oturumda düzeltilemedi. Açık iş.
+- **Metin düzeltmeleri:** `tr.json` / `en.json`: "en fazla 10 soru" yerine günlük hedef 5–20 (varsayılan 10); "yeterli soru olmadan yüzde göstermeyiz" yumuşatıldı (ders bazlı veli panelinde eşik doğrulanmadı); "hikâyeler üç aşamada incelenir" yerine "iki bağımsız yapay zekâ denetimi, ayrılıkta üçüncü". Yapay zekâ ifadesinin kalması proje sahibi kararıdır.
+- **Not:** Günlükte K-0199 numarası iki girişte kullanılmış (landing hareket sistemi ve BYM/WEB UTM girişi); K-0200 da ayrıca landing commit girişinde kullanılıyor, bu yüzden bu kayıt K-0201 oldu. Sonraki oturumda biri yeniden numaralanmalı.
+- **Test hesabı:** veli@ornek.com. Şifre proje sahibi tarafından verildi; yalnız komut ortamında kullanıldı, repoya veya dosyaya yazılmadı.
+- **Canlı doğrulama (test hesabı):** REST girişi başarılı. `hane_ilk_temas_yaz` çağrısı `true` döndü; test hanesinde yazılan `utm_source`/`utm_medium` değerleri null'a geri alındı. Tarayıcı girişi `/veli-paneli`'ne yönlendirdi, sayfa hatası yok; bu girişte RPC çağrısı yok (beklenen: test hesabının metadata'sında UTM yok). Kayıt akışının UTM'li yeni kullanıcıyla uçtan uca denemesi yapılmadı: canlıda yeni hesap açmayı gerektirir.
+
+### K-0199 · 2026-10-29 · BYM/WEB · K-0198 sonrası: yayın öncesi kontrol listesi, ilk temas UTM ölçümü, güven rozetleri kararı, hesap açılış listesi, göreli takvim
+- **Tür:** Karar + Geliştirme
+- **Konu:** BYM
+- **Bağlam:** Proje sahibi K-0198 bulguları için talimat verdi: ilk 3 bulgu satıştan hemen önce düzeltilecek (şimdi kod yok); kanal ölçümü yapılacak; rozet çelişkisini ajan çözecek; hesaplar henüz yok; 9 Kasım yerine göreli takvim; "gerçek ekran kaydı" tanımlansın.
+- **Karar (`ONAYLI`, proje sahibi yetkisi):** (1) **Yayın öncesi zorunlu kontrol listesi** aşağıda ve `STRATEJI_DEGERLENDIRME.md` §0'da. (2) İlk temas UTM'i oturum kapsamlı, rıza kapılı ve çerezsiz olarak landing/demo olaylarına yazıldı (`decisions.md` "Kanal ölçümü"). Hane/kaynak kaydı **yazılmadı** (migration), ana oturum önerisi var. (3) Güven rozetleri: dört rozet ve "%40 tasarruf" hiçbir kolda kullanılmaz; doğrulanabilir ödeme şeffaflığı ifadeleri gelir (`decisions.md` "Güven rozetleri çelişkisi"; 2026-10-09 kararı bu kısım için yerine geçildi). (4) T0 = hesapların açıldığı gün, Y = ilk yayın günü; içerik paketi Y+N etiketli; sabit tarih yok.
+- **Yayın öncesi zorunlu kontrol listesi (kapı: bu liste kapanmadan trafik yönlendirilmez, mağaza/ödeme yayına alınmaz):**
+  - **Y1 Mağaza rozetleri:** `Footer.tsx` + `footer.appStore/googlePlay` mesajları; mağaza yayını olana kadar kaldır veya "Yakında"; sahibi ana oturum (kod) + proje sahibi (mağaza bilgisi); doğrulama: üretimde footer'da "indir" rozeti yok veya gerçek mağaza bağlantısı tıklanınca açılıyor.
+  - **Y2 Fiyat güven rozetleri:** `PricingSection.tsx` `trustBadges` + `messages/*.json` `landing.pricing.trustBadges/yearlyNote`; yerine üç doğrulanabilir ifade; iade/cayma metni yalnız hukuk onayıyla; sahibi ana oturum + Hukuk; doğrulama: `rg` ile eski ifadeler `messages` içinde yok, fiyat bölümü ekran görüntüsü, `/on-bilgilendirme` ile çelişki yok.
+  - **Y3 robots.txt:** `web-panel/public/robots.txt` şu an `Disallow: /` (staging); lansman günü üretime izin ver, `/yonetim` `/veli-paneli` `/api` kapalı kalsın, sitemap + OG + canonical + JSON-LD; sahibi ana oturum + proje sahibi; doğrulama: üretimde `robots.txt` içeriği, `/sitemap.xml` 200, sayfa kaynağında `og:image`/canonical, Search Console + paylaşım hata ayıklayıcı.
+  - **Y4 Footer sosyal bağlantıları:** hesaplar açılana kadar çalışmıyor sayılır; hesaplar açılınca üç URL doğrulanır (`KANAL_OTOMASYON_PLANI.md` §10).
+  - **Y5 "Ücretsiz hesap oluştur" metni ve "ücretsiz deneme" dili:** kullanılmayan `cta.subtitle` kaldır/yaz; deneme akışı kartsız çalışana kadar hiçbir yüzeyde "ücretsiz deneme" yok.
+- **Durum:** DEVAM (kod: UTM UYGULANDI; yayın öncesi liste AÇIK)
+- **Doğrulama:** KISMİ. `e2e/analytics-utm-birim.spec.ts` 7/7 ve mevcut `analytics-riza-birim.spec.ts` ile birlikte 18/18 geçti (Node birim testleri, tarayıcı açılmadı); `tsc --noEmit` ve `eslint` (değişen dosyalar) hatasız. **Yapılmadı:** `next build`, tam e2e, canlıda gerçek PostHog olayı kontrolü, Vercel üretimi.
+- **Sahip:** Ana oturum (hane/kaynak migration'ı, yayın öncesi liste kodu), Proje sahibi (hesaplar, mağaza bilgisi, hukuk onayı)
+- **Önem:** Yüksek
+- **Dosyalar:** `web-panel/src/lib/analytics/utm.ts` (yeni), `events.ts`, `components/analytics/AnalyticsProvider.tsx`, `web-panel/e2e/analytics-utm-birim.spec.ts` (yeni), `docs/growth-crm/OLAY_TAKSONOMISI.md`, `docs/hupo-design-growth/decisions.md`, `docs/hupo-design-growth/sosyal-medya/*` (üç dosya).
+- **Açıklama:** "Gerçek ekran kaydı" = uygulama/demo ekranının gerçek kullanım sırasında kaydı (mock-up değil); sahte görsel güveni ve mağaza/Meta politikalarını zedelediği için içerik şartı. Commit ve deploy yapılmadı.
+- **İlgili:** K-0193, K-0194, K-0196, K-0198; `GIE` §19.
+
+### K-0198 · 2026-10-29 00:53 · BYM/WEB · Landing pazarlama değerlendirmesi + sosyal medya kanal/otomasyon planı + 2 haftalık içerik taslağı
+- **Tür:** Plan
+- **Konu:** BYM
+- **Bağlam:** Kullanıcı web sitesi pazarlama stratejisinin değerlendirilmesini, sosyal medya kanal yönetimi otomasyonunu ve içerik üretimini istedi.
+- **Plan:** (1) Landing/tr.json/ölçüm değerlendirmesi. (2) Kanal, onay akışı, growth-ajan/CRM bağlantısı, UTM ve KPI planı. (3) 10 gönderi + 2 LinkedIn + story taslağı. (4) Açık kararlar listesi.
+- **Karar:** Hepsi ajan önerisi (`ONAY BEKLİYOR`). Yayın, hesap bağlama, reklam harcaması, kod/migration yapılmadı.
+- **Durum:** BEKLİYOR
+- **Doğrulama:** KISMİ. Kod ve metin okundu; canlı site, ekran görüntüsü, üretim robots.txt ve DB planları görülmedi.
+- **Sahip:** Kullanıcı (açık kararlar), Hukuk (iade/ön bilgilendirme/güven rozetleri)
+- **Önem:** Yüksek (footer mağaza rozetleri ve fiyat güven rozetleri P0)
+- **Açıklama:** Öne çıkan bulgular: mağaza yayını olmadan "indir" rozetleri; kanıtsız fiyat güven rozetleri (K-0196 tek seferlik ödemeyle çelişen "istediğin zaman iptal" dahil); `robots.txt` Disallow:/ ve landing'de sitemap/OG/canonical yok; UTM atfı yok; landing'de e-posta/izin yakalama yok.
+- **Kanıt:** `docs/hupo-design-growth/sosyal-medya/STRATEJI_DEGERLENDIRME.md`, `KANAL_OTOMASYON_PLANI.md`, `ICERIK_PAKETI_2_HAFTA.md`.
+- **İlgili:** K-0193, K-0194, K-0196, K-0197; `GIE` §19, §33–35.
+
+### K-0197 · 2026-10-29 00:43 · BYM · MAR-OTO-AI proje agent'ı kuruldu (pazarlama, ikna, içerik, ölçüm, otomasyon); otomatik devralma kuralı eklendi
+- **Tür:** Gelişme
+- **Konu:** BYM
+- **Bağlam:** Kullanıcı; pazarlama, ikna, iletişim, veri analizi, sosyal medya, reklam, içerik, nöropazarlama, otomasyon ve AI pazarlama uzmanı bir agent istedi. Mobil app, web app, paneller, site ve pazarlama içeriği üretiminde kendiliğinden devreye girmesini istedi.
+- **Plan:** (1) `.claude/agents/mar-oto-ai.md` yazıldı. (2) `CLAUDE.md` içine otomatik devralma bölümü eklendi. (3) `AGENTS.md` §0 tablosu ve alt ajan notu güncellendi. (4) Bu kayıt.
+- **Karar:** Agent kurulumu kullanıcı isteğiyle yapıldı (`ONAYLI`). İş bölümü ajan önerisidir (`ONAY BEKLİYOR`): MAR-OTO-AI pazarlama/içerik/ölçüm ve app-panel-site üretiminin sahibidir; `hupo-design-growth-director` tasarım sistemi, UX ve ekran yeniden tasarımında kalır. Agent, gönderim/yayın/reklam harcaması/deploy için o işe özel açık onay ister. Sabit kurallar (çocuk yüzeyi reklamsız ve takipsiz, sahte kanıt yok, tek seferlik ödeme, ön bilgilendirme onayı, çocuk uygulamasında dış satın alma bağlantısı yok, ticari ileti izni, PostHog yalnız web) K-0193–K-0196 ve `GIE` kararlarından alındı.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ. Dosya yazıldı; YAML ön yüzü ve 5 skill adı mevcut `.claude/skills` klasörleriyle karşılaştırıldı. Agent yeni oturumda yüklenir; çağrılıp denenmedi. Otomatik devralmanın gerçekte tetiklendiği görülmedi.
+- **Sahip:** Kullanıcı (yeni oturumda deneme ve geri bildirim)
+- **Önem:** Orta
+- **Açıklama:** Otomatik devralma `description` eşleşmesine ve `CLAUDE.md` yönlendirmesine dayanır; kesin bir tetikleyici (hook) değildir. Bağlı olmayan bağlayıcılar (Ahrefs, Amplitude, Canva, Figma, Klaviyo, Similarweb, Supermetrics) yetkilendirilmeden kullanılamaz; `nano-banana-2` ve `playwright` MCP bu oturumda bağlanamadı.
+- **Kanıt:** `.claude/agents/mar-oto-ai.md`; `CLAUDE.md` "MAR-OTO-AI" bölümü; `AGENTS.md` §0.
+- **İlgili:** `hupo-design-growth-director`; K-0193, K-0194, K-0196; `docs/growth-crm/GIE_ANALIZ_VE_IS_PLANI_2026-10-28.md`.
+- **Güncelleme 2026-10-29 00:55:** Kullanıcı sosyal medya için metin, görsel, banner ve video üretimini ekledi. `mar-oto-ai.md` içine görsel/video hattı yazıldı: onaylı Hupo varlıkları, `nano-banana-2` MCP, fal.ai (`FAL_KEY`), Gemini, video-studio (Promo/Slideshow), Oracle'daki `~/hupo-motion` maskot animasyonları (kullanıcıya ait, değiştirilmez), n8n, platform ölçüleri ve kalite kapısı. Doğrulama: yollar ve anahtar ADLARI var olduğu görüldü (değerler okunmadı); fal.ai, Gemini ve nano-banana ile gerçek üretim denenmedi; `oracle.ps1 status` bu oturumda 90 sn içinde dönmedi, doğrudan ssh salt okuma çalıştı. Ücretli fal.ai kullanımı ve toplu üretim ayrı onay ister.
+### K-0196 · 2026-10-29 00:25 · HUK/VEL/MOB/WEB · Ceza ve mağaza riski denetimi: ön bilgilendirme onayı, mobil kayıt onayı, dış satın alma bağlantısı, e-posta doğrulama, fontlar, ihlal prosedürü
+- **Tür:** Gelişme + Sorun · **Karar:** Kullanıcı: aydınlatma, veri güvenliği, veritabanı erişimi, e-posta onayı, abonelik ön bilgilendirme ve Google Fonts sorularını kontrol edip "eksik varsa kapat" dedi (`ONAYLI`). Hukuki metinlerin son hali `ONAY BEKLİYOR` (Hukuk).
+- **Bulgular ve yapılanlar:**
+  1. **Abonelik ön bilgilendirme:** YOKTU (ödeme sayfası onaysız açılıyordu; ODEME_KURULUM §11 de bunu kayıtlı açık madde olarak yazmıştı). **Kapatıldı (kod):** `/on-bilgilendirme` taslak sayfası; `PlanKarti`de iki onay kutusu (form kabulü + cayma istisnası) işaretlenmeden "Planı satın al" çalışmaz; `payments-checkout` bu onayı sunucuda zorunlu kılar ve `odeme_on_bilgi_onaylari` tablosuna ödemeye bağlı kanıt yazar (yazılamazsa ödeme başlamaz). Migration `20261124000000_odeme_on_bilgi_onayi.sql` (uzakta yok).
+  2. **Kayıt formu aydınlatma onayı:** Web'de VAR (zorunlu kutu). Mobil çocuk kayıt formunda YOKTU. **Kapatıldı:** zorunlu kutu, `/gizlilik` ve `/kosullar` bağlantıları (`mobile-app/lib/auth/signup.dart`).
+  3. **Mağaza (çocuk uygulaması):** "Veli panelini aç" düğmesi, çocuğu veli panelinin üyelik/satın alma sayfasına (`/veli-paneli/uyelik`) dış tarayıcıda gönderiyordu. Apple 3.1.1 ve Google Play ödeme politikası açısından risk. **Kaldırıldı** (`mobile-app/lib/widgets/veli_mesaji_sheet.dart`). Mesaj kopyalama kaldı.
+  4. **Koşullarla kod çelişiyordu:** koşullar "abonelik otomatik yenilenir" diyordu; ödeme kodu tek seferlik satış ve otomatik yenileme yok. **Düzeltildi** (`content.ts`, `termsSections`/`termsSummary`).
+  5. **E-posta doğrulama:** `supabase/config.toml` kapalıydı. **Yerelde açıldı.** Web ve mobil kayıt kodu her iki durumu da destekliyor. Uzak projede Dashboard ayarı doğrulanmadı.
+  6. **Google Fonts:** web panelde `next/font/google` ile derleme sırasında kendi alanımıza alınıyor, çalışma zamanında Google'a istek yok. Mobilde fontlar `assets/fonts` içinde. CSP'deki gereksiz `fonts.googleapis.com` ve `fonts.gstatic.com` izinleri **kaldırıldı** (`web-panel/next.config.ts`).
+  7. **Veritabanı erişimi:** statik tarama 163 tablo; hepsinde RLS açık (okuma ve sözlük tabloları `do $$` döngüsüyle kapatılmış, `anon` yetkisi iptal). `anon`'a açık RPC'ler bilinçli genel uç noktalar. `_uret_meydan_kod` ve `exchange_auth_bridge_token` sonradan kapatılmış. **Açık:** `kullanim_olaylari_gonder` için anon kapatma (20261108) uzakta uygulanmadı.
+  8. **İhlal prosedürü:** metinde "72 saat" sözü vardı, uygulanacak prosedür yoktu. **Yazıldı:** `docs/hukuk/VERI_IHLALI_PROSEDURU.md` (taslak).
+- **Açık, kodla kapanmaz (ayrıntı GÖR-078…083):** şirket unvanı, MERSİS, adres, KEP, VERBİS durumu, sunucu bölgesi, yurt dışı aktarım dayanağı, cayma süresi ve istisna metni, iade koşulları, saklama süreleri, çerez tablosu. Çocuk aydınlatma metni (mobil) web metnine göre eksik. Mesaj metni "Premium'u veli panelinden açabilir misin?" gözden geçirilmeli.
+- **Ürün kararı (ONAY BEKLİYOR, GÖR-079):** Çocuk kendi hesabını açabiliyor; koşullar "18 yaşından küçük öğrencilerin hesapları veli tarafından açılır ve yönetilir" diyor. Veli eşleştirme öncesi veri üretimi bu çelişkinin kaynağı.
+- **Güncelleme 2026-10-29:** Çocuk hesabı maddesi için "yasal risk" ifadesi fazla kesindi. Kanıtlanan: şirket metniyle akış arasındaki uyumsuzluk. Kanıtlanmayan: bunun bir kanun hükmü olarak ihlal olduğu. Yapılan aramalar haber ve blog özetlerine dayandı; KVKK'nın birincil metni ve Kurul kararı okunmadı. GÖR-079 önemi Kritik'ten Yüksek'e indirildi. **Karar (kullanıcı, 2026-10-29):** çocuk kendi hesabını açabilir, veli yalnızca ödemede gerekir; koşul ve gizlilik metinleri buna göre düzeltildi (hukuk teyidi bekliyor).
+- **Doğrulama:** KISMİ. `tsc --noEmit` çıkış 0; `eslint` (değişen 4 web dosyası) 0 uyarı; `flutter analyze` (signup.dart, veli_mesaji_sheet.dart) 0 sorun. Migration PGlite'ta çalıştırıldı: 12/12 (RLS açık, anon/authenticated yetkisiz, `check` ve `unique` kısıtları) — betik repo dışında, `scratchpad/on_bilgi_test.mjs`. Edge fonksiyonu TypeScript sözdizimi kontrolünden geçti; Deno yok, çalıştırılmadı. Tarayıcıda ödeme akışı ve cihazda mobil kayıt denenmedi.
+- **Dağıtım sırası (zorunlu):** (1) migration 20261124 (`db:deploy` onayı), (2) `payments-checkout` yayını, (3) web yayını. Edge fonksiyonu migration'dan önce yayınlanırsa onay kaydı yazılamaz ve ödeme 500 döner.
+- **Sahip:** Hukuk (metinler, cayma istisnası, çocuk rızası), Kullanıcı (uzak Supabase ve deploy onayları), Ajan (kod)
+- **Önem:** Kritik
+- **Kanıt:** değişen dosyalar: `supabase/config.toml`, `web-panel/next.config.ts`, `web-panel/src/lib/legal/content.ts`, `web-panel/src/app/[locale]/(full-width-pages)/on-bilgilendirme/page.tsx`, `web-panel/src/components/veli-paneli/PlanKarti.tsx`, `web-panel/src/messages/{tr,en}.json`, `web-panel/src/messages/veli-paneli.{tr,en}.json`, `supabase/functions/payments-checkout/index.ts`, `supabase/migrations/20261124000000_odeme_on_bilgi_onayi.sql`, `mobile-app/lib/auth/signup.dart`, `mobile-app/lib/widgets/veli_mesaji_sheet.dart`, `docs/hukuk/VERI_IHLALI_PROSEDURU.md`.
+- **İlgili:** GÖR-018, GÖR-019, GÖR-031, GÖR-078…083, K-0017, K-0171, `supabase/docs/ODEME_KURULUM.md` §11, `mobile-app/store/KONTROL_LISTESI.md` §B, §C (e-posta doğrulama kutusu)
 
 ### K-0180 · 2026-10-28 · MOB/WEB/TSR · Giriş filmi uygulamaya bağlandı (Flutter, ağırlıksız); ses ve film K-0167/K-0168'i devralır
 - **Not (numara):** Film ve ses kayıtları önce K-0167 ve K-0168 numaralarıyla yazıldı; aynı numaralar başka oturumlarca da kullanıldı. Giriş filmiyle ilgili güncel kayıt budur; commit mesajlarındaki "K-0167/K-0168" film işine aittir.
@@ -4791,3 +4928,28 @@ Paketler:
 - Yapılanlar bu oturumda: GIE Faz 0–6 (yerel ve uzak), 20261113–20261123 uzakta, A/B motoru A1–A3 + I1–I3, Customer-Lab L1–L3, ajan taslağı A/C.
 - Kalanlar: kartsız deneme akışı, sandbox ödeme testi, 30 gün web referansı, A ekranı ve I4 çağrıları, C ikinci dalga, mobil (BACKLOG-M1). Kullanıcıda: tarayıcı kontrolü, hukuk (108/109, çerez, HupoMentor), web panel dağıtımı.
 - Başka sohbette devam edilecek; bellek: project_gie_kararlar.
+
+### K-0196 · 2026-10-29 · VEL/VT/MOBİL · Kartsız 14 gün deneme, uygulama içi sınırlar, yönetici ekranı; uzak DB ve web production'a uygulandı
+- **Tür:** Uygulama + karar
+- **Konu:** VEL, VT, YÖN, MOBİL
+- **Bağlam:** Web örnek soru sayfası ile "Ücretsiz" kartı aynı yere gidiyordu; deneme yalnız admin tarafından açılıyordu. Kullanıcı kayıt sonrası 14 gün kartsız deneme ve deneme sırasında her özellikte sınır istedi.
+- **Karar (proje sahibi):** 14 gün (`deneme.gun`); kart yok; otomatik ücret alınmaz; bitiş bildirimi yapılır. Kelime Evreni ve çarpım 20/gün. Her sınıf için sınır (sınıf override'ı). Sınırlar: soru 20/gün, Kelime Evreni 20/gün, çarpım 20/gün, okuma 2/gün, meydan okuma 3 (deneme boyunca), deneme sınavı 2 (deneme boyunca). Deneme bitince deneme sınavları kapalı. Ücretsiz plan: `premium_gating` açık, günlük 20 soru (mar-oto-ai kararı; proje sahibi onayladı).
+- **Karar (mar-oto-ai, proje sahibi onaylı):** Görünürlük metinleri, premium gating değerleri ve veli/çocuk metinleri. Hukuk onayı: proje sahibi "geliştirme aşamasındayız" dedi; metinler yayın öncesi hukuk tarafından okunmalı (açık, K-0194 ile ilişkili).
+- **Yapılanlar:**
+  - Commit'ler: `b37e14b` (kayıt denemesi, migration 20261125, test, belge, "Ücretsiz" kartı → kayıt), `8f1db2a` (görünürlük RPC'si, yönetici ekranı, veli kartı, 20/20), `fcf68a3` (gating + belge), `911f822` ve sonrası diğer oturumun görsel motor işleri (bu işle ilgisiz), `632474b` (deneme sınavı kapısı, çocuk kartı, sürüm 1.4.0+6, panel 0.4.0), `a3d8210` (belge).
+  - Uzak DB (proje sahibi onaylı, `supabase db query --linked -f`, migration geçmişine YAZILMADI): `20261125000000`, `20261126000000`, `20261127000000` uygulandı; tetikleyiciler, RPC'ler, ayar satırları doğrulandı. `20261108`, `20261109`, `20261124` dokunulmadı; migration geçmişinde `20261125–27` görünmeyecek (idempotent; sonraki `db push` aynı dosyaları yeniden çalıştırır, zararsız).
+  - Web (Vercel production, `web-panel` 0.4.0, master tabanlı snapshot): `Ready`, `hupolingo.com` ve `www`. Snapshot'ta feature branch'in ilgisiz işi yok; fiyat kartı düzeltmesi (`href="/veli-paneli/kayit"`) dahil.
+  - Çocuk uygulaması (Flutter, kod): profilde "Ücretsiz deneme" kartı, kelime/okuma/meydan okuma sınır metinleri. Sürüm 1.4.0+6 (MINOR), `docs/SURUMLEME.md` sürüm notu.
+  - Test: PGlite `supabase/tests/kartsiz_deneme` 41/41; `tsc --noEmit` (web) temiz; `flutter analyze` (değişen 9 dosya) temiz.
+- **Durum:** TAMAMLANDI (uzak DB + web); mobil sürüm yayınlanmadı.
+- **Doğrulama:** KISMİ. PGlite ve tip denetimi geçti; canlıda giriş yapılmış veli/çocuk ekranları ve gerçek kayıt akışı tarayıcıda test edilmedi (üretimde hesap açmak yasak bırakıldı). Canlı landing'de "Ücretsiz" kartı `/veli-paneli/kayit` olarak doğrulandı.
+- **Sahip:** Proje sahibi (karar ve onay); geliştirme ekibi (uygulama).
+- **Önem:** Yüksek
+- **Açık kalanlar:**
+  1. Mobil sürüm 1.4.0+6 yayınlanmadı: `key.properties` (imza anahtarı) repoda yok; mağaza yüklemesi yapılmadı. Çocuk kartı ve mesajlar bu sürüm yayınlanana kadar çocuklara ulaşmaz.
+  2. Sürüm etiketleri (`app-v1.4.0`, `panel-v0.4.0`) ve feature branch'in `master`'a birleştirilmesi yapılmadı; feature branch'te 100+ ilgisiz dosya var.
+  3. Hukuk: "Otomatik ücret alınmaz" ve bitiş bildirimi metinleri hukuk tarafından okunmadan yayınlanmaz (geliştirme için engel değil).
+  4. Çarpım şifreleri: mobil uygulamada çağıran ekran yok (`submit_cipher_answer` yalnız model); sınır sunucuda hazır, çocuk arayüzü yok.
+  5. Mevcut 3 veli hesabı (deneme kaydı yok): gating açıldığı için günlük 20 soru sınırında; deneme sınavlarına erişim kapalı (kabul edildi). Deneme kaydı hiç açılmadığı için deneme almazlar; istenirse ayrı karar.
+  6. Kart metinleri ve sınır değerleri başlangıç hipotezi; baseline yok. İlk ölçüm: 14 gün sonra sınıf × özellik sınır-dolma oranı (sınıf başına 30 hane altında gösterilmez).
+- **İlgili:** `docs/growth-crm/DENEME_SINIR_KURALI.md` (kural, metinler, durum); `docs/SURUMLEME.md` (1.4.0+6, panel 0.4.0); K-0194; K-0195; `supabase/migrations/20261125000000_kartsiz_deneme_kayitta.sql`, `20261126000000_deneme_yonetim_ve_gorunurluk.sql`, `20261127000000_deneme_sinav_kapisi.sql`.
