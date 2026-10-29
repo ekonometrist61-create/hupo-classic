@@ -1,0 +1,71 @@
+# HR-010 · Keloğlan ve Konuşan Taş · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=14e1da73-ab60-4994-8de6-7f91f59ddd53, surum_no=3, sha256=47899105ec826b7059e54dcd81770a2a398432535340fb51344144ac4cad427e
+Not: bu hikâyede 3 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr010-kelogan-ve-konusan-tas | Tür: macera | Konu: yol | Dünya: masalsi
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Yolda konuşan bir taş bilmece soruyor. Cevabı bulmak için ne yapmak gerekir?
+İzinli türler: ben, arkadas, hayali
+Değer anahtarları (sürüm): D20 | maarif.ana_deger: D20
+Etiketler: ana_sinif=2, okuma_zorlugu=2, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: dayanisma, kesif | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: bilmece (lexeme, first_hint: bilmece); cevap (lexeme, application: cevap); kavram_hr010 (concept, application: Akıl yürütme); atasoz_hr010 (proverb, application: İyilik yap denize at, balık bilmezse Halik bilir)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":7,"simge_sayisi":8,"kelime_sayisi":242,"tahmini_sure_dk":5,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":2,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+[KAHRAMAN hal=yalin] köyden şehre giden yolda yuvarlak bir taş gördü. Taşın üzerinde üç çizgi vardı. Tam yanından geçecekken "Dur!" diye bir ses duyuldu. Ses taşın içinden geliyordu.
+--- Sayfa 2 ---
+"Bir [KELİME yuva=s2_bilmece] çözersen sana yolu göstereceğim," dedi taş. "Ne kadar çok paylaşırsan o kadar çoğalır?" [KAHRAMAN hal=yalin] önce ekmek[İKON seed] düşündü. Ama ekmek paylaşıldıkça azalırdı. Sonra suyu düşündü. Su[İKON drop] da azalıyordu.
+--- Sayfa 3 ---
+"Soruma hemen cevap vermek zorunda değilsin," dedi taş. "Önce düşün." [KAHRAMAN hal=yalin] elini çenesine koydu. Bir kişi şarkı[İKON music] söylemeye başlayınca başkaları da katılabilirdi. "Belki neşedir," dedi. Taş sessiz kaldı. [KAHRAMAN hal=yalin] başka bir [KELİME yuva=s2_cevap] aramaya karar verdi.
+--- Sayfa 4 ---
+Tam o sırada yaşlı bir kadının sepetinden bir elma yuvarlandı. [KAHRAMAN hal=yalin] elmayı yerden aldı. Kadın, çarşıya giden yolu unuttuğunu söyledi. Sepet çok ağırdı. [KAHRAMAN hal=yalin] sepetin bir sapından tuttu. [YOLDAŞ hal=yalin yedek=Hupo] da kısa yolu hatırladı ve yardım[İKON hand-help] etti.
+--- Sayfa 5 ---
+Yol boyunca sepette armutlar, ekmekler ve bir demet nane vardı. [YOLDAŞ hal=yalin yedek=Hupo] sepeti taşımaya devam etti. Kadın rahatlayınca yüzü aydınlandı. Çarşıya vardıklarında kadın teşekkür etti ve gideceği yeri tarif etti. Yaşlı kadın gülümseyerek şunu söyledi: "[ATASÖZÜ yuva=ata_iyilik_yap]". [KAHRAMAN hal=yalin] geri dönerken taş yeniden konuştu: "Cevabı buldun mu?"
+--- Sayfa 6 ---
+[KAHRAMAN hal=yalin] birden güldü. "Sevinç[İKON joy]!" dedi. "Birine yardım[İKON hand-help] edince onun sevinci bana da geçiyor. Paylaşınca çoğalıyor." Taştaki çizgiler parladı. Taş, toprağa yan yatmış eski bir yol levhasının üstündeydi. [KAHRAMAN hal=yalin] levhayı yerine dikti. Köylüler artık yolda daha kolay yön[İKON compass] buldu.
+--- Sayfa 7 ---
+Yol işaretini gören bir çocuk [KAHRAMAN hal=yonelme] teşekkür etti. "Artık hangi yoldan gideceğimizi biliyoruz," dedi. [KAHRAMAN hal=yalin] taşa son bir kez baktı. Taş susuyordu; belki de cevabı çoktan vermişti. [İŞARET kod=anahtar]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=A
+  Metin: Taş ne karşılığında yolu göstereceğini söyledi?
+  A) Bir bilmeceyi çözmek
+  B) Taşı kaldırmak
+  C) Su getirmek
+  Açıklama: Taş, bir bilmece çözülürse yolu göstereceğini söyledi.
+s2 [cikarim] dayanak_sayfa=2 doğru=A
+  Metin: Ekmek ve su bilmecenin cevabı olamaz, çünkü:
+  A) Paylaşıldıkça azalıyorlar
+  B) Çok pahalılar
+  C) Taşa yakın değiller
+  Açıklama: Ekmek ve su paylaşıldıkça azalır; bilmecenin cevabı çoğalan bir şey olmalıdır.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Cevap olarak söylenen sevinç neyi anlatır?
+  A) Yardım etmenin hem verene hem alana iyi geldiğini
+  B) Taşın çok neşeli olduğunu
+  C) Sepetin hafif olduğunu
+  Açıklama: Birine yardım edince sevinç paylaşılır ve çoğalır.
+s4 [sozcuk_baglami] dayanak_sayfa=2 doğru=A
+  Metin: Metinde geçen bilmece sözcüğü ne anlama gelir?
+  A) Bir sorunun cevabını bulmaya dayanan kısa soru
+  B) Uzun bir hikâye
+  C) Bir yemek türü
+  Açıklama: Taş, kısa bir soru sorarak cevap istedi.
+
+## Sözlük
+- s2_bilmece | kelime | yazım: bilmece | 2–2 | anlam: Bir sorunun cevabını bulmaya dayanan kısa soru.
+- s2_cevap | kelime | yazım: cevap | 2–2 | anlam: Bir soruya verilen karşılık.
+- ata_iyilik_yap | atasozu | yazım: İyilik yap denize at, balık bilmezse Halik bilir | 2–2 | anlam: İyiliği karşılık beklemeden yapmak gerekir; kimse görmese de değeri kaybolmaz.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

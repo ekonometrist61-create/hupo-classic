@@ -1,0 +1,44 @@
+[
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "cevap",
+   "anlam": "Bir soruya verilen karşılık.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“cevap” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "ödev",
+   "soru",
+   "ders",
+   "yanıt"
+  ],
+  "d": 3,
+  "a": "Cevap ile yanıt aynı anlama gelir. Ödev, soru ve ders başka anlamlar taşır.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 3,
+  "z": 1,
+  "h": {
+   "kelime": "dost",
+   "anlam": "Birbirini seven, güvenen kişi.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“dost” sözcüğünün eş anlamlısı hangisidir?",
+  "o": [
+   "arkadaş",
+   "komşu",
+   "akraba",
+   "yabancı"
+  ],
+  "d": 0,
+  "a": "Dost ile arkadaş aynı anlama gelir. Komşu, akraba ve yabancı başka anlamlar taşır.",
+  "ip": null
+ }
+]

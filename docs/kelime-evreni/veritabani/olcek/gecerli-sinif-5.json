@@ -1,0 +1,254 @@
+[
+ {
+  "t": "zit_anlamli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "soğumak",
+   "anlam": "Sıcaklığı azalıp serinlemek.",
+   "tur": "kelime",
+   "sozcuk_turu": "fiil"
+  },
+  "q": "“Süt ocaktan alınınca soğumak için mutfakta bekletildi.” cümlesindeki “soğumak” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "kurumak",
+   "ısınmak",
+   "donmak",
+   "titremek"
+  ],
+  "d": 1,
+  "a": "Soğumanın zıddı ısınmaktır. Kurumak, donmak ve titremek sıcaklığın artması anlamına gelmez.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "çay",
+   "anlam": "Küçük akarsu, dere.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “çay” sözcüğü küçük akarsu anlamında kullanılmıştır?",
+  "o": [
+   "Kahvaltıda bir bardak sıcak çay içtik.",
+   "Annem demlediği çayı bardaklara doldurdu.",
+   "Köyün kenarından akan çayda ördekler yüzüyordu.",
+   "Çay bahçesinde oturup manzarayı izledik."
+  ],
+  "d": 2,
+  "a": "Üçüncü cümlede çay, akan küçük su anlamındadır. Diğerlerinde çay, içilen sıcak içecek veya onunla ilgili yerdir.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "ben",
+   "anlam": "Deride bulunan küçük koyu lekedir.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “ben” sözcüğü deride bulunan küçük koyu leke anlamında kullanılmıştır?",
+  "o": [
+   "Ben bu akşam erkenden yatacağım.",
+   "Ben o kitabı geçen hafta bitirdim.",
+   "Ben yarın okula erken gideceğim.",
+   "Kardeşimin yanağında küçük bir ben var."
+  ],
+  "d": 3,
+  "a": "Son cümlede ben, deride bulunan lekedir. Diğerlerinde ben, konuşanı gösteren zamirdir.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "elma",
+   "anlam": "Ağaçta yetişen yenilebilir meyve.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“Sepetteki kırmızı elma çok tazeydi.” cümlesindeki “elma” sözcüğünün türü nedir?",
+  "o": [
+   "İsim",
+   "Fiil",
+   "Sıfat",
+   "Zarf"
+  ],
+  "d": 0,
+  "a": "“Elma”, bir varlığı adlandırır; isimdir. “Kırmızı” ise ona nitelik katar.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "koştu",
+   "anlam": "Hızlı adımlarla gitti.",
+   "tur": "kelime",
+   "sozcuk_turu": "fiil"
+  },
+  "q": "“Kedi bahçede neşeyle koştu.” cümlesindeki “koştu” sözcüğünün türü nedir?",
+  "o": [
+   "Zarf",
+   "Fiil",
+   "İsim",
+   "Sıfat"
+  ],
+  "d": 1,
+  "a": "“Koştu”, iş ve hareket bildirir; fiildir.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "güzel",
+   "anlam": "Hoşa giden, görünüşü beğenilen.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Pencerenin önünde güzel bir çiçek açtı.” cümlesindeki “güzel” sözcüğünün türü nedir?",
+  "o": [
+   "İsim",
+   "Zarf",
+   "Sıfat",
+   "Fiil"
+  ],
+  "d": 2,
+  "a": "“Güzel”, “çiçek” adının niteliğini bildirir; sıfattır.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "hızlıca",
+   "anlam": "Çabuk bir biçimde.",
+   "tur": "kelime",
+   "sozcuk_turu": "zarf"
+  },
+  "q": "“Kuş dalına hızlıca kondu.” cümlesindeki “hızlıca” sözcüğünün türü nedir?",
+  "o": [
+   "İsim",
+   "Sıfat",
+   "Fiil",
+   "Zarf"
+  ],
+  "d": 3,
+  "a": "“Hızlıca”, “kondu” eyleminin nasıl yapıldığını bildirir; zarftır.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "ve",
+   "anlam": "Sözcükleri veya cümleleri birbirine bağlayan söz.",
+   "tur": "kelime",
+   "sozcuk_turu": "baglac"
+  },
+  "q": "“Sepette elma ve armut vardı.” cümlesindeki “ve” sözcüğünün türü nedir?",
+  "o": [
+   "Bağlaç",
+   "Edat",
+   "Zarf",
+   "Zamir"
+  ],
+  "d": 0,
+  "a": "“Ve”, “elma” ile “armut” sözcüklerini birbirine bağlar; bağlaçtır.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "biz",
+   "anlam": "Konuşanın kendisiyle birlikte başkalarını da anlatan söz.",
+   "tur": "kelime",
+   "sozcuk_turu": "zamir"
+  },
+  "q": "“Biz yarın gezmeye gideceğiz.” cümlesindeki “biz” sözcüğünün türü nedir?",
+  "o": [
+   "Sıfat",
+   "Zamir",
+   "Zarf",
+   "Edat"
+  ],
+  "d": 1,
+  "a": "“Biz”, isim yerine kullanılmıştır; zamirdir.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "gibi",
+   "anlam": "Benzetme ilgisi kuran söz.",
+   "tur": "kelime",
+   "sozcuk_turu": "edat"
+  },
+  "q": "“Bu çanta kuş tüyü gibi hafif.” cümlesindeki “gibi” sözcüğünün türü nedir?",
+  "o": [
+   "Bağlaç",
+   "Zarf",
+   "Edat",
+   "Fiil"
+  ],
+  "d": 2,
+  "a": "“Gibi”, tek başına anlamı olmayan, kendinden önceki sözcükle birlikte benzetme kuran edattır.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "titiz",
+   "anlam": "Yaptığı işe çok özen gösteren.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Ressam, tablosundaki her çizgiyi günlerce kontrol edip düzeltecek kadar titizdi.” cümlesinde “titizdi” sözcüğü ne anlama gelir?",
+  "o": [
+   "İşini yarım bırakan",
+   "Her şeye kolay kızan",
+   "Başkasına hep yardım eden",
+   "Yaptığı işe çok özen gösteren"
+  ],
+  "d": 3,
+  "a": "Her çizgiyi günlerce kontrol edip düzeltmek, işe çok özen göstermenin belirtisidir.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "bitkin",
+   "anlam": "Gücü tükenmiş, hâlsiz.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Uzun yürüyüşün sonunda bitkin düştü; ayakları tutmuyor, gözleri kapanıyordu.” cümlesinde “bitkin” sözcüğü ne anlama gelir?",
+  "o": [
+   "Gücü tükenmiş",
+   "Çok sevinmiş",
+   "Biraz utanmış",
+   "Hemen kızmış"
+  ],
+  "d": 0,
+  "a": "Ayakların tutmaması ve gözlerin kapanması gücün tükendiğini gösterir.",
+  "ip": null
+ }
+]

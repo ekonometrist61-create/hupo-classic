@@ -1,0 +1,27 @@
+{
+  "_aciklama": "SENTETİK örnek. Gerçek veri değildir; yalnız ajan testleri ve biçim denemesi için.",
+  "gun": 30,
+  "kohort": {
+    "ozet": [
+      {"gun": 1, "uygun_hane": 120, "tutulan": 84, "oran": 70.0},
+      {"gun": 7, "uygun_hane": 118, "tutulan": 41, "oran": 34.7},
+      {"gun": 30, "uygun_hane": 6, "tutulan": null, "oran": null}
+    ]
+  },
+  "cac": {
+    "yeni_hane": 120,
+    "satirlar": [
+      {"para_birimi": "TRY", "harcama": 15000, "cac": 125.0, "durum": "hesaplandi"}
+    ]
+  },
+  "veri_kalitesi": {
+    "veli_toplam": 240,
+    "kalite": [
+      {"kod": "eposta_eksik", "sayi": null},
+      {"kod": "aktif_tarihsiz", "sayi": 7}
+    ],
+    "izin": [
+      {"kanal": "eposta", "acik": 200, "kapali": 12, "kayit_yok": 28}
+    ]
+  }
+}

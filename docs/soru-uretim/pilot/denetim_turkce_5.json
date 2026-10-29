@@ -1,0 +1,584 @@
+[
+ {
+  "id": "TR5-001",
+  "kazanim_kodu": "T.O.5.4",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Giriş bölümü konuyu açıkça hazırlıyor; çeldiriciler makul."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-002",
+  "kazanim_kodu": "T.O.5.5",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Bağlam ipuçları (kızaran yüz, gözleri yere indirme) mahcup=utanmış'ı veriyor; tek doğru."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-003",
+  "kazanim_kodu": "T.O.5.6",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Sıra bilgisi metinde açık; B sonraki aşama, makul çeldirici."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-004",
+  "kazanim_kodu": "T.O.5.8",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Yanık çorba + ocak ipucu D'yi tek doğru yapıyor; diğerleri metinde dayanaksız."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-005",
+  "kazanim_kodu": "T.O.5.9",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Fidan/gölge metaforu; B 'mutlaka' ile makul çeldirici."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-006",
+  "kazanim_kodu": "T.O.5.10",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Deniz yağmurdan, Kaan trafikten etkilenir; A,C,D metinle çelişir. Zorluk 3 yüksek, 2 yeterli."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-007",
+  "kazanim_kodu": "T.O.5.12",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Yardımı büyütmeme; A,D metinle elenir, B dayanaksız. Zorluk 3 iddialı."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-008",
+  "kazanim_kodu": "T.O.5.13",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Deniz/iskele/tekne belirgin; A,B,C zayıf çeldirici ama yer sorusunda kabul edilebilir. Zorluk 1."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-009",
+  "kazanim_kodu": "T.O.5.14",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Sıra metinde açık; tek adımlı bilgi."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-010",
+  "kazanim_kodu": "T.O.5.15",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "orta"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "A örnek listesi, ana fikri taşımaz; B savunulabilir tek cevap."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-011",
+  "kazanim_kodu": "T.O.5.17",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "3 kıta x 4 dize = 12; sayım basit."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-012",
+  "kazanim_kodu": "T.O.5.18",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Anket sayıları = sayısal veriyle destekleme; sayılar tutarlı (150+20+30=200). Zorluk 3 iddialı."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-013",
+  "kazanim_kodu": "T.O.5.19",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "A'daki 'kulaklarına' kime ait belirsiz/tuhaf; 'kayalara sarılıp onlara fısıldadı' gibi sadeleştir. D (ağaçlar yaprak döker) gerçek olgu, kabul."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR5-014",
+  "kazanim_kodu": "T.O.5.20",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "göz yummak = görmezden gelmek; A,C gerçek anlam, D başka deyim."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-015",
+  "kazanim_kodu": "T.Y.5.7",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "'Kedi ise' karşıtlık, sonraki 'Bu nedenle' cümlesiyle uyumlu."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-016",
+  "kazanim_kodu": "T.Y.5.8",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Üçüncü grup içerik ölçütüyle (tür) tutarlı; diğerleri fiziksel ölçüt. Zorluk 1-2."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-017",
+  "kazanim_kodu": "T.Y.5.12",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "A 'Mesela' ile yapı ipucu veriyor ve en uzun şık; 'Mesela' çıkar, şık uzunluklarını dengele."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR5-018",
+  "kazanim_kodu": "T.Y.5.13",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "lezzetli = güzel (tat); diğerleri anlam değiştirir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-019",
+  "kazanim_kodu": "T.Y.5.14",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Örtük anlatım C; A,D açık söylüyor, B soğukla ilgisiz."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-020",
+  "kazanim_kodu": "T.Y.5.15",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Noktalı virgülden sonra şıklar büyük harfle (Bu nedenle/Çünkü) ve REHBER §4 noktalı virgülü yasaklıyor; noktalı virgülü nokta yap (cümle başı büyük harf tutarlı olur)."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR5-021",
+  "kazanim_kodu": "T.Y.5.16",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Bağlaç de ayrı; B,C,D §10.1 gereği hatalı."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-022",
+  "kazanim_kodu": "T.O.5.6",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Son gün: en çok ziyaret edilen köşe ödüllenir; diğerleri metinde başka yerde geçer."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-023",
+  "kazanim_kodu": "T.O.5.8",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "orta"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "orta",
+   "notlar": "B (rakibi kıskanma) rakibin adını anmakla savunulabilir ikinci şık olabilir; B'yi daha net yanlış bir çeldirici yap veya metinde rakibin kazandığını netleştir."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR5-024",
+  "kazanim_kodu": "T.O.5.13",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "orta"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Zaman baskısı asıl sorun; anne izin vermiş (koşullu), C yanlış."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-025",
+  "kazanim_kodu": "T.O.5.19",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Cümle tek başına çözülüyor, uzun parça süslü (REHBER §8); ayrıca parçadaki 'kasaba uykudaydı' kişileştirme dikkat dağıtır. Bağlamı kısalt/ilgili kıl."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR5-026",
+  "kazanim_kodu": "T.Y.5.16",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "dusuk"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Kurum adı kesmesiz kuralı (§10.2) A'yı eler; B tek doğru."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-027",
+  "kazanim_kodu": "T.Y.5.16",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Bugünkü doğru; A,B,D hatalı."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-028",
+  "kazanim_kodu": "T.Y.5.15",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Zıtlık bağlacı gerekli; cümle başında büyük harf tutarlı."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-029",
+  "kazanim_kodu": "T.O.5.5",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "dingin = sakin; bağlam destekliyor."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-030",
+  "kazanim_kodu": "T.O.5.14",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Doğrudan metinde; A,C,D diğer nedenlerden gelen makul karışıklık."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR5-031",
+  "kazanim_kodu": "T.O.5.19",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Kavak fısıldaşıyor, sır anlatıyor: kişileştirme. D (konuşturma) cazip ama kavak kendi ağzından konuşmuyor ve 'ders verilmiştir' yanlış; savunulabilir ikinci şık yok. Metin ilk cümlesi hafif sakar ('bahçesinde yaz sabahı çok güzeldi') ama anlaşılır. Kazanım kodu/metni uyumlu (kod varlığı doğrulanamadı, girdide anahtar/tablo yok)."
+  },
+  "onay": true,
+  "neden": "",
+  "not": "yedek"
+ },
+ {
+  "id": "TR5-032",
+  "kazanim_kodu": "T.O.5.19",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Pamuk gibi yumuşak: benzetme, yön yumuşaklık. A ve C aynı kalıpta, C ('soğukluk') makul ama metne dayanmıyor, tek doğru A. Metindeki 'yumuşak' sözcüğü A'da aynen geçiyor (hafif ipucu), B ve D bariz yanlış; bu yüzden zorluk 1'e indirilmeli. İkinci cümle doğru işaret edilmiş."
+  },
+  "onay": true,
+  "neden": "",
+  "not": "yedek"
+ },
+ {
+  "id": "TR5-033",
+  "kazanim_kodu": "T.Y.5.12",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "2-4. cümleler Elif örneğiyle düşünceyi destekliyor: örnekleme (belirli kişiden somut durum). D (neden-sonuç) kısmen çekici ama nedenler sıralanmıyor. Şık uzunlukları dengeli. Kazanım Y (yazma) koduyla okuma-çözümleme sorusu biraz gevşek eşleşiyor, kabul edilebilir."
+  },
+  "onay": true,
+  "neden": "",
+  "not": "yedek"
+ },
+ {
+  "id": "TR5-034",
+  "kazanim_kodu": "T.Y.5.12",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Kitap/film karşıt yönleri yan yana: karşılaştırma. A'daki 'ayrıştırılmıştır' sözcüğü biraz ağır ama 5. sınıf için kabul edilebilir. D (kişisel anı) zayıf çeldirici, B ve C makul. Tek doğru cevap A."
+  },
+  "onay": true,
+  "neden": "",
+  "not": "yedek"
+ }
+]

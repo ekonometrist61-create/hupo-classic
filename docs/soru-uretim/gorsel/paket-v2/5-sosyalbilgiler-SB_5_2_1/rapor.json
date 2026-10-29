@@ -1,0 +1,52 @@
+{
+ "surum": "1.1.0",
+ "ders": "Sosyal Bilgiler",
+ "sinif": 5,
+ "kod": "SB.5.2.1",
+ "tohum": 1,
+ "uretim": {
+  "istenen": 20,
+  "uretilen": 20,
+  "eksik": 0,
+  "denenen": 156,
+  "atilan": {
+   "gorsel_kapisi": 16,
+   "tek_aday_degil": 120
+  },
+  "sablonlar": [
+   "sb5-ana-yon",
+   "sb5-ara-yon"
+  ]
+ },
+ "denge": {
+  "harf": {
+   "A": 5,
+   "B": 5,
+   "C": 5,
+   "D": 5
+  },
+  "tam_blok": 5,
+  "dengeli_blok": 5,
+  "bozuk_blok": []
+ },
+ "kapi": {
+  "kazanim": {
+   "toplam": 20,
+   "dosya": "kazanim_5_sosyal.json",
+   "red": []
+  },
+  "gorsel": {
+   "toplam": 20,
+   "red": []
+  }
+ },
+ "kor_png": {
+  "tamam": true,
+  "pngSayi": 20,
+  "hata": null
+ },
+ "kontak": true,
+ "kor": null,
+ "durum": "beklemede",
+ "karar": "KOR_BEKLIYOR"
+}

@@ -32,13 +32,13 @@ etiketler:
     - {id: deyim_hr032, tur: idiom, etiket: "Ölçüp biçmek", yuva: hr032_olcup_bicmek, islev: application}
     - {id: kavram_hr032, tur: concept, etiket: "Doğru ölçü ve güven", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Keloğlan pazara ne almak için gitti?", secenekler: [{id: A, metin: "Bulgur"}, {id: B, metin: "Ekmek"}, {id: C, metin: "Peynir"}, {id: D, metin: "Şeker"}], dogru: A, aciklama: "Keloğlan annesi için bulgur almaya gitmişti."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Satıcı neden müşterilere eksik vermiş olabilirdi?", secenekler: [{id: A, metin: "Terazinin ayarı bozuktu"}, {id: B, metin: "Bulgur kalmamıştı"}, {id: C, metin: "Keloğlan yardım etmedi"}, {id: D, metin: "Pazar kapanmıştı"}], dogru: A, aciklama: "Terazinin ayarı bozulunca tartılan miktar yanlış çıkıyordu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Hikâyeye göre güven nasıl yeniden kurulur?", secenekler: [{id: A, metin: "Yapılan doğru işlerle"}, {id: B, metin: "Güzel sözlerle"}, {id: C, metin: "Sessiz kalmakla"}, {id: D, metin: "Pazarı değiştirmekle"}], dogru: A, aciklama: "Güven, doğru işler yapıldığında yeniden kazanılır."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen denetim ağırlığı ne anlama gelir?", secenekler: [{id: A, metin: "Doğruluğu kontrol etmek için kullanılan standart ağırlık"}, {id: B, metin: "Bir yemek türü"}, {id: C, metin: "Bir tür sepet"}, {id: D, metin: "Satıcının adı"}], dogru: A, aciklama: "Denetim ağırlığı, teraziyi kontrol etmek için kullanılan bilinen bir ağırlıktır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Keloğlan pazara ne almak için gitti?", secenekler: [{id: A, metin: "Ekmek"}, {id: B, metin: "Peynir"}, {id: C, metin: "Şeker"}, {id: D, metin: "Bulgur"}], dogru: D, aciklama: "Keloğlan annesi için bulgur almaya gitmişti."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Satıcı neden müşterilere eksik vermiş olabilirdi?", secenekler: [{id: A, metin: "Bulgur kalmamıştı"}, {id: B, metin: "Keloğlan yardım etmedi"}, {id: C, metin: "Pazar kapanmıştı"}, {id: D, metin: "Terazinin ayarı bozuktu"}], dogru: D, aciklama: "Terazinin ayarı bozulunca tartılan miktar yanlış çıkıyordu."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Hikâyeye göre güven nasıl yeniden kurulur?", secenekler: [{id: A, metin: "Güzel sözlerle"}, {id: B, metin: "Sessiz kalmakla"}, {id: C, metin: "Pazarı değiştirmekle"}, {id: D, metin: "Yapılan doğru işlerle"}], dogru: D, aciklama: "Güven, doğru işler yapıldığında yeniden kazanılır."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen denetim ağırlığı ne anlama gelir?", secenekler: [{id: A, metin: "Bir yemek türü"}, {id: B, metin: "Doğruluğu kontrol etmek için kullanılan standart ağırlık"}, {id: C, metin: "Bir tür sepet"}, {id: D, metin: "Satıcının adı"}], dogru: B, aciklama: "Denetim ağırlığı, teraziyi kontrol etmek için kullanılan bilinen bir ağırlıktır."}
 deyim_cumleleri:
   hr032_olcup_bicmek: "Teyze, “İşte buna ölçüp biçmek derler,” diye gülümsedi."
 ---

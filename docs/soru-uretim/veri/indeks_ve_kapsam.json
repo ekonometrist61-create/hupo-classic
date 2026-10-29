@@ -1,0 +1,236 @@
+{
+  "surum": "2.0",
+  "tarih": "2026-10-18",
+  "kaynak_kayitlari": 4598,
+  "mevcut_kayitlari": 3958,
+  "yeni_resmi_sinav_kayitlari": 640,
+  "yontem": "pdf blok ayirma + kurallara dayali etiketleme (AI modeli degil)",
+  "dogrulama_durumu": "ozellikler_tahmini_cevaplar_anahtardan_otomatik",
+  "not": "Bu dosyada soru metni veya sik metinleri YOK; yalniz metadata.",
+  "resmi_sinav_tamlik": [
+    {
+      "yil": 2020,
+      "ders": "Türkçe",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2020,
+      "ders": "Matematik",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2020,
+      "ders": "Fen Bilimleri",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2020,
+      "ders": "Sosyal Bilgiler",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2021,
+      "ders": "Türkçe",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2021,
+      "ders": "Matematik",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2021,
+      "ders": "Fen Bilimleri",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2021,
+      "ders": "Sosyal Bilgiler",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2022,
+      "ders": "Türkçe",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2022,
+      "ders": "Matematik",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2022,
+      "ders": "Fen Bilimleri",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2022,
+      "ders": "Sosyal Bilgiler",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2023,
+      "ders": "Türkçe",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2023,
+      "ders": "Matematik",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2023,
+      "ders": "Fen Bilimleri",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2023,
+      "ders": "Sosyal Bilgiler",
+      "beklenen": 25,
+      "tespit_edilen": 25,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 25
+    },
+    {
+      "yil": 2024,
+      "ders": "Türkçe",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2024,
+      "ders": "Matematik",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2024,
+      "ders": "Fen Bilimleri",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2024,
+      "ders": "Sosyal Bilgiler",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2025,
+      "ders": "Türkçe",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2025,
+      "ders": "Matematik",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2025,
+      "ders": "Fen Bilimleri",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2025,
+      "ders": "Sosyal Bilgiler",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2026,
+      "ders": "Türkçe",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2026,
+      "ders": "Matematik",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2026,
+      "ders": "Fen Bilimleri",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    },
+    {
+      "yil": 2026,
+      "ders": "Sosyal Bilgiler",
+      "beklenen": 20,
+      "tespit_edilen": 20,
+      "eksik_soru_numaralari": [],
+      "cevap_anahtari": 20
+    }
+  ]
+}

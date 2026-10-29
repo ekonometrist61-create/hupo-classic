@@ -1,0 +1,1643 @@
+[
+ {
+  "id": "SB5-EKO-S1-001",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İldeki Hayvan Sayıları (bin)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "Arı",
+   "B": "Koyun",
+   "C": "Tavuk",
+   "D": "İnek"
+  },
+  "dogru_sik": "D",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun İnek sütunudur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Arı sütunu (2) en yüksek sütun değildir.",
+   "B": "Koyun sütunu (4) en yüksek sütun değildir.",
+   "C": "Tavuk sütunu (5) en yüksek sütun değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Keçi, Koyun, İnek, Tavuk, Arı. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İldeki Hayvan Sayıları (bin)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"81\" width=\"26.4\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Keçi</text><rect x=\"118\" y=\"120\" width=\"26.4\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koyun</text><rect x=\"170.8\" y=\"55\" width=\"26.4\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">İnek</text><rect x=\"223.6\" y=\"107\" width=\"26.4\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavuk</text><rect x=\"276.4\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arı</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Keçi, Koyun, İnek, Tavuk, Arı. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İldeki Hayvan Sayıları (bin)",
+    "kategoriler": [
+     {
+      "ad": "Keçi",
+      "deger": 7
+     },
+     {
+      "ad": "Koyun",
+      "deger": 4
+     },
+     {
+      "ad": "İnek",
+      "deger": 9
+     },
+     {
+      "ad": "Tavuk",
+      "deger": 5
+     },
+     {
+      "ad": "Arı",
+      "deger": 2
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "İnek"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-002",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Yetiştirilen Ürünler (bin ton)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "Buğday",
+   "B": "Pamuk",
+   "C": "Fındık",
+   "D": "Arpa"
+  },
+  "dogru_sik": "C",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Fındık sütunudur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Buğday sütunu (6) en yüksek sütun değildir.",
+   "B": "Pamuk sütunu (5) en yüksek sütun değildir.",
+   "C": "Doğru.",
+   "D": "Arpa sütunu (2) en yüksek sütun değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Arpa, Buğday, Pamuk, Fındık. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Yetiştirilen Ürünler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"146\" width=\"33\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arpa</text><rect x=\"134.5\" y=\"94\" width=\"33\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Buğday</text><rect x=\"200.5\" y=\"107\" width=\"33\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Pamuk</text><rect x=\"266.5\" y=\"81\" width=\"33\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fındık</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Arpa, Buğday, Pamuk, Fındık. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Yetiştirilen Ürünler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Arpa",
+      "deger": 2
+     },
+     {
+      "ad": "Buğday",
+      "deger": 6
+     },
+     {
+      "ad": "Pamuk",
+      "deger": 5
+     },
+     {
+      "ad": "Fındık",
+      "deger": 7
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Fındık"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-003",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Yetiştirilen Ürünler (bin ton)\" bilgisini göstermektedir. Buna göre Fındık değeri kaçtır?",
+  "siklar": {
+   "A": "8",
+   "B": "12",
+   "C": "16",
+   "D": "20"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Fındık sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Fındık sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 12 değerindedir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "8, Fındık sütununun 1 çizgi altındaki değerdir.",
+   "B": "Doğru.",
+   "C": "16, Fındık sütununun 1 çizgi üstündeki değerdir.",
+   "D": "20, Fındık sütununun 2 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Buğday, Pamuk, Fındık, Arpa, Mısır. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Yetiştirilen Ürünler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"58.25\" width=\"26.4\" height=\"113.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Buğday</text><rect x=\"118\" y=\"90.75\" width=\"26.4\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Pamuk</text><rect x=\"170.8\" y=\"74.5\" width=\"26.4\" height=\"97.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fındık</text><rect x=\"223.6\" y=\"155.75\" width=\"26.4\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arpa</text><rect x=\"276.4\" y=\"123.25\" width=\"26.4\" height=\"48.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Mısır</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Buğday, Pamuk, Fındık, Arpa, Mısır. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Yetiştirilen Ürünler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Buğday",
+      "deger": 14
+     },
+     {
+      "ad": "Pamuk",
+      "deger": 10
+     },
+     {
+      "ad": "Fındık",
+      "deger": 12
+     },
+     {
+      "ad": "Arpa",
+      "deger": 2
+     },
+     {
+      "ad": "Mısır",
+      "deger": 6
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Fındık"
+    ],
+    "beklenen": 12
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-004",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Üretilen Sebzeler (bin ton)\" bilgisini göstermektedir. Buna göre Domates değeri kaçtır?",
+  "siklar": {
+   "A": "2",
+   "B": "6",
+   "C": "10",
+   "D": "14"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Domates sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Domates sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 2 değerindedir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "6, Domates sütununun 1 çizgi üstündeki değerdir.",
+   "C": "10, Domates sütununun 2 çizgi üstündeki değerdir.",
+   "D": "14, Domates sütununun 3 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Üretilen Sebzeler (bin ton). Kategoriler: Patlıcan, Biber, Domates, Havuç. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Üretilen Sebzeler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"139.5\" width=\"33\" height=\"32.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Patlıcan</text><rect x=\"134.5\" y=\"123.25\" width=\"33\" height=\"48.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Biber</text><rect x=\"200.5\" y=\"155.75\" width=\"33\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Domates</text><rect x=\"266.5\" y=\"90.75\" width=\"33\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Havuç</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Üretilen Sebzeler (bin ton). Kategoriler: Patlıcan, Biber, Domates, Havuç. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Üretilen Sebzeler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Patlıcan",
+      "deger": 4
+     },
+     {
+      "ad": "Biber",
+      "deger": 6
+     },
+     {
+      "ad": "Domates",
+      "deger": 2
+     },
+     {
+      "ad": "Havuç",
+      "deger": 10
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Domates"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-005",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Yetiştirilen Ürünler (bin ton)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "Fındık",
+   "B": "Mısır",
+   "C": "Arpa",
+   "D": "Pamuk"
+  },
+  "dogru_sik": "D",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Pamuk sütunudur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Fındık sütunu (4) en yüksek sütun değildir.",
+   "B": "Mısır sütunu (6) en yüksek sütun değildir.",
+   "C": "Arpa sütunu (2) en yüksek sütun değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Mısır, Fındık, Pamuk, Buğday, Arpa. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Yetiştirilen Ürünler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"123.25\" width=\"26.4\" height=\"48.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Mısır</text><rect x=\"118\" y=\"139.5\" width=\"26.4\" height=\"32.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fındık</text><rect x=\"170.8\" y=\"90.75\" width=\"26.4\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Pamuk</text><rect x=\"223.6\" y=\"107\" width=\"26.4\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Buğday</text><rect x=\"276.4\" y=\"155.75\" width=\"26.4\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arpa</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Mısır, Fındık, Pamuk, Buğday, Arpa. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Yetiştirilen Ürünler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Mısır",
+      "deger": 6
+     },
+     {
+      "ad": "Fındık",
+      "deger": 4
+     },
+     {
+      "ad": "Pamuk",
+      "deger": 10
+     },
+     {
+      "ad": "Buğday",
+      "deger": 8
+     },
+     {
+      "ad": "Arpa",
+      "deger": 2
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Pamuk"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-006",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Yetiştirilen Ürünler (bin ton)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "Pamuk",
+   "B": "Fındık",
+   "C": "Arpa",
+   "D": "Buğday"
+  },
+  "dogru_sik": "A",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Pamuk sütunudur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Fındık sütunu (6) en yüksek sütun değildir.",
+   "C": "Arpa sütunu (7) en yüksek sütun değildir.",
+   "D": "Buğday sütunu (8) en yüksek sütun değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Pamuk, Buğday, Fındık, Arpa. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Yetiştirilen Ürünler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"55\" width=\"33\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Pamuk</text><rect x=\"134.5\" y=\"68\" width=\"33\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Buğday</text><rect x=\"200.5\" y=\"94\" width=\"33\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fındık</text><rect x=\"266.5\" y=\"81\" width=\"33\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arpa</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Pamuk, Buğday, Fındık, Arpa. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Yetiştirilen Ürünler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Pamuk",
+      "deger": 9
+     },
+     {
+      "ad": "Buğday",
+      "deger": 8
+     },
+     {
+      "ad": "Fındık",
+      "deger": 6
+     },
+     {
+      "ad": "Arpa",
+      "deger": 7
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Pamuk"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-007",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Yetiştirilen Ürünler (bin ton)\" bilgisini göstermektedir. Buna göre Mısır değeri kaçtır?",
+  "siklar": {
+   "A": "6",
+   "B": "8",
+   "C": "10",
+   "D": "12"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Mısır sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Mısır sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 8 değerindedir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "6, Mısır sütununun 1 çizgi altındaki değerdir.",
+   "B": "Doğru.",
+   "C": "10, Mısır sütununun 1 çizgi üstündeki değerdir.",
+   "D": "12, Mısır sütununun 2 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Arpa, Mısır, Pamuk, Buğday, Fındık. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Yetiştirilen Ürünler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"159\" width=\"26.4\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arpa</text><rect x=\"118\" y=\"68\" width=\"26.4\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Mısır</text><rect x=\"170.8\" y=\"120\" width=\"26.4\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Pamuk</text><rect x=\"223.6\" y=\"133\" width=\"26.4\" height=\"39\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Buğday</text><rect x=\"276.4\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fındık</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Arpa, Mısır, Pamuk, Buğday, Fındık. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Yetiştirilen Ürünler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Arpa",
+      "deger": 1
+     },
+     {
+      "ad": "Mısır",
+      "deger": 8
+     },
+     {
+      "ad": "Pamuk",
+      "deger": 4
+     },
+     {
+      "ad": "Buğday",
+      "deger": 3
+     },
+     {
+      "ad": "Fındık",
+      "deger": 2
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Mısır"
+    ],
+    "beklenen": 8
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-008",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Yetiştirilen Ürünler (bin ton)\" bilgisini göstermektedir. Buna göre Arpa değeri kaçtır?",
+  "siklar": {
+   "A": "5",
+   "B": "7",
+   "C": "9",
+   "D": "11"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Arpa sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Arpa sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 9 değerindedir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "5, Arpa sütununun 2 çizgi altındaki değerdir.",
+   "B": "7, Arpa sütununun 1 çizgi altındaki değerdir.",
+   "C": "Doğru.",
+   "D": "11, Arpa sütununun 1 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Pamuk, Buğday, Arpa, Mısır. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Yetiştirilen Ürünler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"94\" width=\"33\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Pamuk</text><rect x=\"134.5\" y=\"159\" width=\"33\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Buğday</text><rect x=\"200.5\" y=\"55\" width=\"33\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arpa</text><rect x=\"266.5\" y=\"107\" width=\"33\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Mısır</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Pamuk, Buğday, Arpa, Mısır. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Yetiştirilen Ürünler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Pamuk",
+      "deger": 6
+     },
+     {
+      "ad": "Buğday",
+      "deger": 1
+     },
+     {
+      "ad": "Arpa",
+      "deger": 9
+     },
+     {
+      "ad": "Mısır",
+      "deger": 5
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Arpa"
+    ],
+    "beklenen": 9
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-009",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Yetiştirilen Ürünler (bin ton)\" bilgisini göstermektedir. Buna göre Pamuk değeri kaçtır?",
+  "siklar": {
+   "A": "3",
+   "B": "5",
+   "C": "7",
+   "D": "9"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Pamuk sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Pamuk sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 3 değerindedir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "5, Pamuk sütununun 1 çizgi üstündeki değerdir.",
+   "C": "7, Pamuk sütununun 2 çizgi üstündeki değerdir.",
+   "D": "9, Pamuk sütununun 3 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Pamuk, Arpa, Fındık, Mısır, Buğday. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Yetiştirilen Ürünler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"133\" width=\"26.4\" height=\"39\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Pamuk</text><rect x=\"118\" y=\"107\" width=\"26.4\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arpa</text><rect x=\"170.8\" y=\"55\" width=\"26.4\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fındık</text><rect x=\"223.6\" y=\"159\" width=\"26.4\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Mısır</text><rect x=\"276.4\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Buğday</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Pamuk, Arpa, Fındık, Mısır, Buğday. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Yetiştirilen Ürünler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Pamuk",
+      "deger": 3
+     },
+     {
+      "ad": "Arpa",
+      "deger": 5
+     },
+     {
+      "ad": "Fındık",
+      "deger": 9
+     },
+     {
+      "ad": "Mısır",
+      "deger": 1
+     },
+     {
+      "ad": "Buğday",
+      "deger": 2
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Pamuk"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-010",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Yetiştirilen Ürünler (bin ton)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "Pamuk",
+   "B": "Mısır",
+   "C": "Arpa",
+   "D": "Buğday"
+  },
+  "dogru_sik": "D",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Buğday sütunudur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Pamuk sütunu (6) en yüksek sütun değildir.",
+   "B": "Mısır sütunu (5) en yüksek sütun değildir.",
+   "C": "Arpa sütunu (4) en yüksek sütun değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Arpa, Pamuk, Mısır, Buğday, Fındık. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Yetiştirilen Ürünler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"120\" width=\"26.4\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arpa</text><rect x=\"118\" y=\"94\" width=\"26.4\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Pamuk</text><rect x=\"170.8\" y=\"107\" width=\"26.4\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Mısır</text><rect x=\"223.6\" y=\"81\" width=\"26.4\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Buğday</text><rect x=\"276.4\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fındık</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Arpa, Pamuk, Mısır, Buğday, Fındık. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Yetiştirilen Ürünler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Arpa",
+      "deger": 4
+     },
+     {
+      "ad": "Pamuk",
+      "deger": 6
+     },
+     {
+      "ad": "Mısır",
+      "deger": 5
+     },
+     {
+      "ad": "Buğday",
+      "deger": 7
+     },
+     {
+      "ad": "Fındık",
+      "deger": 2
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Buğday"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-011",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Yetiştirilen Ürünler (bin ton)\" bilgisini göstermektedir. Buna göre Buğday değeri kaçtır?",
+  "siklar": {
+   "A": "4",
+   "B": "6",
+   "C": "8",
+   "D": "10"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Buğday sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Buğday sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 6 değerindedir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "4, Buğday sütununun 1 çizgi altındaki değerdir.",
+   "B": "Doğru.",
+   "C": "8, Buğday sütununun 1 çizgi üstündeki değerdir.",
+   "D": "10, Buğday sütununun 2 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Pamuk, Mısır, Fındık, Buğday, Arpa. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Yetiştirilen Ürünler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"159\" width=\"26.4\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Pamuk</text><rect x=\"118\" y=\"120\" width=\"26.4\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Mısır</text><rect x=\"170.8\" y=\"81\" width=\"26.4\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fındık</text><rect x=\"223.6\" y=\"94\" width=\"26.4\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Buğday</text><rect x=\"276.4\" y=\"68\" width=\"26.4\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arpa</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Pamuk, Mısır, Fındık, Buğday, Arpa. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Yetiştirilen Ürünler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Pamuk",
+      "deger": 1
+     },
+     {
+      "ad": "Mısır",
+      "deger": 4
+     },
+     {
+      "ad": "Fındık",
+      "deger": 7
+     },
+     {
+      "ad": "Buğday",
+      "deger": 6
+     },
+     {
+      "ad": "Arpa",
+      "deger": 8
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Buğday"
+    ],
+    "beklenen": 6
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-012",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Üretilen Sebzeler (bin ton)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "Salatalık",
+   "B": "Biber",
+   "C": "Domates",
+   "D": "Patlıcan"
+  },
+  "dogru_sik": "C",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Domates sütunudur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Salatalık sütunu (16) en yüksek sütun değildir.",
+   "B": "Biber sütunu (14) en yüksek sütun değildir.",
+   "C": "Doğru.",
+   "D": "Patlıcan sütunu (4) en yüksek sütun değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Üretilen Sebzeler (bin ton). Kategoriler: Salatalık, Havuç, Patlıcan, Biber, Domates. Dikey eksen 0 ile 20 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Üretilen Sebzeler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">20</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"68\" width=\"26.4\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Salatalık</text><rect x=\"118\" y=\"159\" width=\"26.4\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Havuç</text><rect x=\"170.8\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Patlıcan</text><rect x=\"223.6\" y=\"81\" width=\"26.4\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Biber</text><rect x=\"276.4\" y=\"55\" width=\"26.4\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Domates</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Üretilen Sebzeler (bin ton). Kategoriler: Salatalık, Havuç, Patlıcan, Biber, Domates. Dikey eksen 0 ile 20 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Üretilen Sebzeler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Salatalık",
+      "deger": 16
+     },
+     {
+      "ad": "Havuç",
+      "deger": 2
+     },
+     {
+      "ad": "Patlıcan",
+      "deger": 4
+     },
+     {
+      "ad": "Biber",
+      "deger": 14
+     },
+     {
+      "ad": "Domates",
+      "deger": 18
+     }
+    ],
+    "max": 20,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Domates"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-013",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İldeki Hayvan Sayıları (bin)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "İnek",
+   "B": "Tavuk",
+   "C": "Keçi",
+   "D": "Arı"
+  },
+  "dogru_sik": "A",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun İnek sütunudur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Tavuk sütunu (2) en yüksek sütun değildir.",
+   "C": "Keçi sütunu (4) en yüksek sütun değildir.",
+   "D": "Arı sütunu (12) en yüksek sütun değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Tavuk, Arı, Keçi, İnek. Dikey eksen 0 ile 20 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İldeki Hayvan Sayıları (bin)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">20</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"159\" width=\"33\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavuk</text><rect x=\"134.5\" y=\"94\" width=\"33\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arı</text><rect x=\"200.5\" y=\"146\" width=\"33\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Keçi</text><rect x=\"266.5\" y=\"55\" width=\"33\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">İnek</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Tavuk, Arı, Keçi, İnek. Dikey eksen 0 ile 20 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İldeki Hayvan Sayıları (bin)",
+    "kategoriler": [
+     {
+      "ad": "Tavuk",
+      "deger": 2
+     },
+     {
+      "ad": "Arı",
+      "deger": 12
+     },
+     {
+      "ad": "Keçi",
+      "deger": 4
+     },
+     {
+      "ad": "İnek",
+      "deger": 18
+     }
+    ],
+    "max": 20,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "İnek"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-014",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İldeki Hayvan Sayıları (bin)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "Tavuk",
+   "B": "Koyun",
+   "C": "Keçi",
+   "D": "Arı"
+  },
+  "dogru_sik": "D",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Arı sütunudur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Tavuk sütunu (7) en yüksek sütun değildir.",
+   "B": "Koyun sütunu (6) en yüksek sütun değildir.",
+   "C": "Keçi sütunu (4) en yüksek sütun değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Koyun, Arı, Keçi, Tavuk, İnek. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İldeki Hayvan Sayıları (bin)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"94\" width=\"26.4\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koyun</text><rect x=\"118\" y=\"68\" width=\"26.4\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arı</text><rect x=\"170.8\" y=\"120\" width=\"26.4\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Keçi</text><rect x=\"223.6\" y=\"81\" width=\"26.4\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavuk</text><rect x=\"276.4\" y=\"133\" width=\"26.4\" height=\"39\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">İnek</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Koyun, Arı, Keçi, Tavuk, İnek. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İldeki Hayvan Sayıları (bin)",
+    "kategoriler": [
+     {
+      "ad": "Koyun",
+      "deger": 6
+     },
+     {
+      "ad": "Arı",
+      "deger": 8
+     },
+     {
+      "ad": "Keçi",
+      "deger": 4
+     },
+     {
+      "ad": "Tavuk",
+      "deger": 7
+     },
+     {
+      "ad": "İnek",
+      "deger": 3
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Arı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-015",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İldeki Hayvan Sayıları (bin)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "Tavuk",
+   "B": "Keçi",
+   "C": "Koyun",
+   "D": "İnek"
+  },
+  "dogru_sik": "C",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Koyun sütunudur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Tavuk sütunu (1) en yüksek sütun değildir.",
+   "B": "Keçi sütunu (2) en yüksek sütun değildir.",
+   "C": "Doğru.",
+   "D": "İnek sütunu (3) en yüksek sütun değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Koyun, Keçi, İnek, Arı, Tavuk. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İldeki Hayvan Sayıları (bin)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"68\" width=\"26.4\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koyun</text><rect x=\"118\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Keçi</text><rect x=\"170.8\" y=\"133\" width=\"26.4\" height=\"39\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">İnek</text><rect x=\"223.6\" y=\"81\" width=\"26.4\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arı</text><rect x=\"276.4\" y=\"159\" width=\"26.4\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavuk</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Koyun, Keçi, İnek, Arı, Tavuk. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İldeki Hayvan Sayıları (bin)",
+    "kategoriler": [
+     {
+      "ad": "Koyun",
+      "deger": 8
+     },
+     {
+      "ad": "Keçi",
+      "deger": 2
+     },
+     {
+      "ad": "İnek",
+      "deger": 3
+     },
+     {
+      "ad": "Arı",
+      "deger": 7
+     },
+     {
+      "ad": "Tavuk",
+      "deger": 1
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Koyun"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-016",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İldeki Hayvan Sayıları (bin)\" bilgisini göstermektedir. Buna göre İnek değeri kaçtır?",
+  "siklar": {
+   "A": "2",
+   "B": "6",
+   "C": "10",
+   "D": "14"
+  },
+  "dogru_sik": "B",
+  "ipucu": "İnek sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "İnek sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 6 değerindedir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "2, İnek sütununun 1 çizgi altındaki değerdir.",
+   "B": "Doğru.",
+   "C": "10, İnek sütununun 1 çizgi üstündeki değerdir.",
+   "D": "14, İnek sütununun 2 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Keçi, Tavuk, Koyun, İnek. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İldeki Hayvan Sayıları (bin)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"155.75\" width=\"33\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Keçi</text><rect x=\"134.5\" y=\"107\" width=\"33\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavuk</text><rect x=\"200.5\" y=\"74.5\" width=\"33\" height=\"97.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koyun</text><rect x=\"266.5\" y=\"123.25\" width=\"33\" height=\"48.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">İnek</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Keçi, Tavuk, Koyun, İnek. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İldeki Hayvan Sayıları (bin)",
+    "kategoriler": [
+     {
+      "ad": "Keçi",
+      "deger": 2
+     },
+     {
+      "ad": "Tavuk",
+      "deger": 8
+     },
+     {
+      "ad": "Koyun",
+      "deger": 12
+     },
+     {
+      "ad": "İnek",
+      "deger": 6
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "İnek"
+    ],
+    "beklenen": 6
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-017",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İldeki Hayvan Sayıları (bin)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "Tavuk",
+   "B": "Koyun",
+   "C": "İnek",
+   "D": "Keçi"
+  },
+  "dogru_sik": "D",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Keçi sütunudur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Tavuk sütunu (1) en yüksek sütun değildir.",
+   "B": "Koyun sütunu (2) en yüksek sütun değildir.",
+   "C": "İnek sütunu (5) en yüksek sütun değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: İnek, Tavuk, Arı, Koyun, Keçi. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İldeki Hayvan Sayıları (bin)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"107\" width=\"26.4\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">İnek</text><rect x=\"118\" y=\"159\" width=\"26.4\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavuk</text><rect x=\"170.8\" y=\"120\" width=\"26.4\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arı</text><rect x=\"223.6\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koyun</text><rect x=\"276.4\" y=\"94\" width=\"26.4\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Keçi</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: İnek, Tavuk, Arı, Koyun, Keçi. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İldeki Hayvan Sayıları (bin)",
+    "kategoriler": [
+     {
+      "ad": "İnek",
+      "deger": 5
+     },
+     {
+      "ad": "Tavuk",
+      "deger": 1
+     },
+     {
+      "ad": "Arı",
+      "deger": 4
+     },
+     {
+      "ad": "Koyun",
+      "deger": 2
+     },
+     {
+      "ad": "Keçi",
+      "deger": 6
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Keçi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-018",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İldeki Hayvan Sayıları (bin)\" bilgisini göstermektedir. Buna göre en fazla bulunan hangisidir?",
+  "siklar": {
+   "A": "İnek",
+   "B": "Tavuk",
+   "C": "Keçi",
+   "D": "Koyun"
+  },
+  "dogru_sik": "A",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun İnek sütunudur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Tavuk sütunu (4) en yüksek sütun değildir.",
+   "C": "Keçi sütunu (5) en yüksek sütun değildir.",
+   "D": "Koyun sütunu (6) en yüksek sütun değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Arı, Tavuk, Koyun, İnek, Keçi. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İldeki Hayvan Sayıları (bin)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arı</text><rect x=\"118\" y=\"120\" width=\"26.4\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavuk</text><rect x=\"170.8\" y=\"94\" width=\"26.4\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koyun</text><rect x=\"223.6\" y=\"55\" width=\"26.4\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">İnek</text><rect x=\"276.4\" y=\"107\" width=\"26.4\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Keçi</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: Arı, Tavuk, Koyun, İnek, Keçi. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İldeki Hayvan Sayıları (bin)",
+    "kategoriler": [
+     {
+      "ad": "Arı",
+      "deger": 2
+     },
+     {
+      "ad": "Tavuk",
+      "deger": 4
+     },
+     {
+      "ad": "Koyun",
+      "deger": 6
+     },
+     {
+      "ad": "İnek",
+      "deger": 9
+     },
+     {
+      "ad": "Keçi",
+      "deger": 5
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "İnek"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-019",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İlde Yetiştirilen Ürünler (bin ton)\" bilgisini göstermektedir. Buna göre Arpa değeri kaçtır?",
+  "siklar": {
+   "A": "6",
+   "B": "8",
+   "C": "10",
+   "D": "12"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Arpa sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Arpa sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 8 değerindedir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "6, Arpa sütununun 1 çizgi altındaki değerdir.",
+   "B": "Doğru.",
+   "C": "10, Arpa sütununun 1 çizgi üstündeki değerdir.",
+   "D": "12, Arpa sütununun 2 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Arpa, Buğday, Mısır, Fındık. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İlde Yetiştirilen Ürünler (bin ton)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"68\" width=\"33\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arpa</text><rect x=\"134.5\" y=\"107\" width=\"33\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Buğday</text><rect x=\"200.5\" y=\"159\" width=\"33\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Mısır</text><rect x=\"266.5\" y=\"133\" width=\"33\" height=\"39\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fındık</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İlde Yetiştirilen Ürünler (bin ton). Kategoriler: Arpa, Buğday, Mısır, Fındık. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İlde Yetiştirilen Ürünler (bin ton)",
+    "kategoriler": [
+     {
+      "ad": "Arpa",
+      "deger": 8
+     },
+     {
+      "ad": "Buğday",
+      "deger": 5
+     },
+     {
+      "ad": "Mısır",
+      "deger": 1
+     },
+     {
+      "ad": "Fındık",
+      "deger": 3
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Arpa"
+    ],
+    "beklenen": 8
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-EKO-S1-020",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "konu": "Ekonomi",
+  "alt_konu": "İlin ekonomik faaliyetlerini grafikten okuma",
+  "soru_metni": "Yukarıdaki grafik \"Bir İldeki Hayvan Sayıları (bin)\" bilgisini göstermektedir. Buna göre Tavuk değeri kaçtır?",
+  "siklar": {
+   "A": "0",
+   "B": "4",
+   "C": "8",
+   "D": "12"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Tavuk sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Tavuk sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 8 değerindedir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "0, Tavuk sütununun 2 çizgi altındaki değerdir.",
+   "B": "4, Tavuk sütununun 1 çizgi altındaki değerdir.",
+   "C": "Doğru.",
+   "D": "12, Tavuk sütununun 1 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: İnek, Arı, Keçi, Tavuk, Koyun. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Bir İldeki Hayvan Sayıları (bin)</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"139.5\" width=\"26.4\" height=\"32.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">İnek</text><rect x=\"118\" y=\"155.75\" width=\"26.4\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Arı</text><rect x=\"170.8\" y=\"90.75\" width=\"26.4\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Keçi</text><rect x=\"223.6\" y=\"107\" width=\"26.4\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavuk</text><rect x=\"276.4\" y=\"123.25\" width=\"26.4\" height=\"48.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koyun</text></svg>",
+   "alt_metin": "Sütun grafiği: Bir İldeki Hayvan Sayıları (bin). Kategoriler: İnek, Arı, Keçi, Tavuk, Koyun. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Bir İldeki Hayvan Sayıları (bin)",
+    "kategoriler": [
+     {
+      "ad": "İnek",
+      "deger": 4
+     },
+     {
+      "ad": "Arı",
+      "deger": 2
+     },
+     {
+      "ad": "Keçi",
+      "deger": 10
+     },
+     {
+      "ad": "Tavuk",
+      "deger": 8
+     },
+     {
+      "ad": "Koyun",
+      "deger": 6
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Tavuk"
+    ],
+    "beklenen": 8
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ekonomi-grafik",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ }
+]

@@ -1,0 +1,500 @@
+{
+  "hikaye": {
+    "tur": "macera",
+    "konu": "yol",
+    "slug": "hr010-kelogan-ve-konusan-tas",
+    "durum": "taslak",
+    "baslik": "Keloğlan ve Konuşan Taş",
+    "tanitim": "Yolda konuşan bir taş bilmece soruyor. Cevabı bulmak için ne yapmak gerekir?",
+    "fis_kodu": "HR-010",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D20",
+        "yardimci_deger": "D3"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 4,
+        "sayfa_sayisi": 7,
+        "simge_sayisi": 8,
+        "kelime_sayisi": 242,
+        "tahmini_sure_dk": 5,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "dayanisma",
+        "kesif"
+      ],
+      "ana_sinif": 2,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 1,
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "bilmece",
+          "tur": "lexeme",
+          "yuva": "s2_bilmece",
+          "islev": "first_hint",
+          "etiket": "bilmece"
+        },
+        {
+          "id": "cevap",
+          "tur": "lexeme",
+          "yuva": "s2_cevap",
+          "islev": "application",
+          "etiket": "cevap"
+        },
+        {
+          "id": "kavram_hr010",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Akıl yürütme"
+        },
+        {
+          "id": "atasoz_hr010",
+          "tur": "proverb",
+          "yuva": "ata_iyilik_yap",
+          "islev": "application",
+          "etiket": "İyilik yap denize at, balık bilmezse Halik bilir"
+        }
+      ]
+    },
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "dunya_tipi": "masalsi",
+    "okuma_bandi": 1,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D20",
+      "D3"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "s2_bilmece",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_bilmece"
+          }
+        ]
+      },
+      {
+        "ad": "s2_cevap",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_cevap"
+          }
+        ]
+      },
+      {
+        "ad": "ata_iyilik_yap",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "ata_iyilik_yap"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "s2_bilmece",
+        "tur": "kelime",
+        "anlam": "Bir sorunun cevabını bulmaya dayanan kısa soru.",
+        "yazim": "bilmece",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_cevap",
+        "tur": "kelime",
+        "anlam": "Bir soruya verilen karşılık.",
+        "yazim": "cevap",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "ata_iyilik_yap",
+        "tur": "atasozu",
+        "anlam": "İyiliği karşılık beklemeden yapmak gerekir; kimse görmese de değeri kaybolmaz.",
+        "yazim": "İyilik yap denize at, balık bilmezse Halik bilir",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "A",
+      "metin": "Taş ne karşılığında yolu göstereceğini söyledi?",
+      "beceri": "hatirlama",
+      "aciklama": "Taş, bir bilmece çözülürse yolu göstereceğini söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir bilmeceyi çözmek"
+        },
+        {
+          "id": "B",
+          "metin": "Taşı kaldırmak"
+        },
+        {
+          "id": "C",
+          "metin": "Su getirmek"
+        }
+      ],
+      "dayanak_sayfa": 2
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Ekmek ve su bilmecenin cevabı olamaz, çünkü:",
+      "beceri": "cikarim",
+      "aciklama": "Ekmek ve su paylaşıldıkça azalır; bilmecenin cevabı çoğalan bir şey olmalıdır.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Paylaşıldıkça azalıyorlar"
+        },
+        {
+          "id": "B",
+          "metin": "Çok pahalılar"
+        },
+        {
+          "id": "C",
+          "metin": "Taşa yakın değiller"
+        }
+      ],
+      "dayanak_sayfa": 2
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Cevap olarak söylenen sevinç neyi anlatır?",
+      "beceri": "yorumlama",
+      "aciklama": "Birine yardım edince sevinç paylaşılır ve çoğalır.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Yardım etmenin hem verene hem alana iyi geldiğini"
+        },
+        {
+          "id": "B",
+          "metin": "Taşın çok neşeli olduğunu"
+        },
+        {
+          "id": "C",
+          "metin": "Sepetin hafif olduğunu"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen bilmece sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Taş, kısa bir soru sorarak cevap istedi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir sorunun cevabını bulmaya dayanan kısa soru"
+        },
+        {
+          "id": "B",
+          "metin": "Uzun bir hikâye"
+        },
+        {
+          "id": "C",
+          "metin": "Bir yemek türü"
+        }
+      ],
+      "dayanak_sayfa": 2
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " köyden şehre giden yolda yuvarlak bir taş gördü. Taşın üzerinde üç çizgi vardı. Tam yanından geçecekken \"Dur!\" diye bir ses duyuldu. Ses taşın içinden geliyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_bilmece"
+        },
+        {
+          "t": "metin",
+          "v": " çözersen sana yolu göstereceğim,\" dedi taş. \"Ne kadar çok paylaşırsan o kadar çoğalır?\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " önce ekmek"
+        },
+        {
+          "t": "ikon",
+          "v": "seed"
+        },
+        {
+          "t": "metin",
+          "v": " düşündü. Ama ekmek paylaşıldıkça azalırdı. Sonra suyu düşündü. Su"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " da azalıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Soruma hemen cevap vermek zorunda değilsin,\" dedi taş. \"Önce düşün.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " elini çenesine koydu. Bir kişi şarkı"
+        },
+        {
+          "t": "ikon",
+          "v": "music"
+        },
+        {
+          "t": "metin",
+          "v": " söylemeye başlayınca başkaları da katılabilirdi. \"Belki neşedir,\" dedi. Taş sessiz kaldı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başka bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_cevap"
+        },
+        {
+          "t": "metin",
+          "v": " aramaya karar verdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tam o sırada yaşlı bir kadının sepetinden bir elma yuvarlandı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " elmayı yerden aldı. Kadın, çarşıya giden yolu unuttuğunu söyledi. Sepet çok ağırdı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sepetin bir sapından tuttu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " da kısa yolu hatırladı ve yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " etti."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yol boyunca sepette armutlar, ekmekler ve bir demet nane vardı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " sepeti taşımaya devam etti. Kadın rahatlayınca yüzü aydınlandı. Çarşıya vardıklarında kadın teşekkür etti ve gideceği yeri tarif etti. Yaşlı kadın gülümseyerek şunu söyledi: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "ata_iyilik_yap"
+        },
+        {
+          "t": "metin",
+          "v": "\". "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " geri dönerken taş yeniden konuştu: \"Cevabı buldun mu?\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " birden güldü. \"Sevinç"
+        },
+        {
+          "t": "ikon",
+          "v": "joy"
+        },
+        {
+          "t": "metin",
+          "v": "!\" dedi. \"Birine yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " edince onun sevinci bana da geçiyor. Paylaşınca çoğalıyor.\" Taştaki çizgiler parladı. Taş, toprağa yan yatmış eski bir yol levhasının üstündeydi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " levhayı yerine dikti. Köylüler artık yolda daha kolay yön"
+        },
+        {
+          "t": "ikon",
+          "v": "compass"
+        },
+        {
+          "t": "metin",
+          "v": " buldu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yol işaretini gören bir çocuk "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yonelme"
+        },
+        {
+          "t": "metin",
+          "v": " teşekkür etti. \"Artık hangi yoldan gideceğimizi biliyoruz,\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " taşa son bir kez baktı. Taş susuyordu; belki de cevabı çoktan vermişti. "
+        },
+        {
+          "t": "isaret",
+          "kod": "anahtar"
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

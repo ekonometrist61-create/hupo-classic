@@ -1,0 +1,298 @@
+[
+ {
+  "id": "HB2-038",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.1.2",
+  "surec_bileseni": "",
+  "konu": "Etkili iletişim",
+  "alt_konu": "Söz sırası ve dinleme",
+  "soru_metni": "Mert öğretmene bir soru sordu. Öğretmen cevap vermeye başladı. Ece’nin de benzer bir sorusu var. Ece’nin hem dinlemek hem de sorusunu doğru iletmek için yapması gereken hangisidir?",
+  "siklar": {
+   "A": "Cevabı dinleyip sorusu kalırsa söz istemesi",
+   "B": "Cevap sürerken sorusunu yüksek sesle sorması",
+   "C": "Öğretmenin yanına gidip cevabı yeniden istemesi",
+   "D": "Sorusunu yan sırasındaki arkadaşına fısıldaması"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Öğretmenin verdiği cevabın, Ece’nin merak ettiği şeyi de anlatıp anlatmayacağını düşün.",
+  "cozum_adimlari": [
+    "Öğretmen konuşurken sınıfta söz sırasına uyulur ve konuşan dinlenir.",
+    "Mert’e verilen cevap Ece’nin sorusunu da yanıtlayabilir; bunu anlamak için önce dinlemek gerekir.",
+    "Dinledikten sonra sorusu hâlâ varsa Ece söz isteyerek sorusunu öğretmene iletir.",
+    "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Sorunun hemen sorulması gerektiği sanılır; söz sırası atlanır ve cevap dinlenmemiş olur.",
+   "C": "Öğretmene yaklaşmanın daha iyi iletişim olduğu sanılır; sınıf düzeni bozulur ve verilen cevap dinlenmez.",
+   "D": "Sorunun arkadaşa söylenmesinin yeterli olduğu sanılır; öğretmen dinlenmez ve soru öğretmene iletilmez."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-039",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.2.1",
+  "surec_bileseni": "b",
+  "konu": "Sağlıklı büyüme ve gelişme",
+  "alt_konu": "Uyku ve ekran alışkanlığı",
+  "soru_metni": "Barış her akşam ekran karşısında oyun oynuyor ve gece geç yatıyor. Sabah derste gözleri kapanıyor, öğretmeni dinlemekte zorlanıyor. Barış’ın derste daha iyi dinleyebilmesi için hangi alışkanlığını değiştirmesi gerekir?",
+  "siklar": {
+   "A": "Ödevini akşam yemeğinden önce yapması",
+   "B": "Oyunu erken bitirip yatağa girmesi",
+   "C": "Teneffüslerde koşma süresini kısaltması",
+   "D": "Kahvaltıda daha fazla süt içmesi"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Derste gözlerin kapanmasının hangi ihtiyacın karşılanmamasından geldiğini düşün.",
+  "cozum_adimlari": [
+    "Barış’ın derste dinlemekte zorlanması, gözlerinin kapanmasından yani yorgunluktan gelir.",
+    "Vücut geceleri uyuyarak dinlenir; Barış geç yattığı için yeterince uyuyamaz.",
+    "Geç yatmasının nedeni akşam oyunu uzatmasıdır; oyunu erken bitirip yatarsa dinlenmiş olur ve derste daha iyi dinler.",
+    "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Düzenli çalışmanın her sorunu çözeceği sanılır; ödev zamanı uykuyu ve yorgunluğu değiştirmez.",
+   "C": "Hareketin insanı yorduğu için dinlemeyi bozduğu sanılır; oysa yorgunluğun nedeni uykusuzluktur ve hareket sağlıklı büyümeye yarar.",
+   "D": "Sütün tek başına yorgunluğu gidereceği sanılır; süt büyümeye yarar ama geç yatmanın yarattığı uykusuzluğu gidermez."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-040",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.2.4",
+  "surec_bileseni": "",
+  "konu": "Acil durum",
+  "alt_konu": "Doğru numara ve doğru bilgi",
+  "soru_metni": "Pazarda yaşlı bir amca bayılıp yere düştü. Elif’in yanında yetişkin yok ama telefonu var. Elif’in amca için yapması gereken hangisidir?",
+  "siklar": {
+   "A": "112’yi arayıp yeri ve durumu anlatması",
+   "B": "155’i arayıp pazarın adını söylemesi",
+   "C": "112’yi arayıp yalnız kendi adını söylemesi",
+   "D": "156’yı arayıp amcanın yakınlarına haber vermesi"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce olayın hangi tür bir acil durum olduğuna, sonra görevlinin ekibi yönlendirmek için neyi bilmesi gerektiğine bak.",
+  "cozum_adimlari": [
+    "Bayılan bir kişi sağlık yardımına ihtiyaç duyar; sağlıkla ilgili acil çağrı numarası 112’dir.",
+    "155 polisin, 156 jandarmanın numarasıdır; bu numaralar ambulans çağırmak için kullanılmaz.",
+    "Ekibin amcaya ulaşabilmesi için Elif görevliye bulunduğu yeri ve amcanın durumunu da anlatmalıdır.",
+    "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Pazarda polisin yardım edeceği sanılır; yanlış numara aranır ve sağlık ekibi yönlendirilemez.",
+   "C": "Doğru numara aranır ama kendi adını söylemenin yeterli olduğu sanılır; ekip yeri ve durumu bilmeden amcaya ulaşamaz.",
+   "D": "Acil durumda jandarmanın aranacağı sanılır; yanlış numara aranır ve amca için ambulans çağrılmış olmaz."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-041",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.3.1",
+  "surec_bileseni": "a",
+  "konu": "Ailenin önemi",
+  "alt_konu": "Ailenin karşıladığı ihtiyaçlar",
+  "soru_metni": "Kış gelmeden Ela’nın ailesi ona kalın bir mont aldı. Odasındaki ısıtıcıyı da kontrol etti. Aile bu davranışlarıyla Ela’nın hangi iki ihtiyacını karşılamıştır?",
+  "siklar": {
+   "A": "Giyinme ve barınma",
+   "B": "Giyinme ve beslenme",
+   "C": "Eğitim ve eğlence",
+   "D": "Beslenme ve barınma"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Ailenin yaptığı her davranışı ayrı ayrı ele alıp her birinin hangi ihtiyaca yaradığını bul.",
+  "cozum_adimlari": [
+    "Mont almak, Ela’nın giyinme ihtiyacını karşılar.",
+    "Odadaki ısıtıcıyı kontrol etmek, Ela’nın yaşadığı yerin ısınmasını sağlar; bu barınma ihtiyacıdır.",
+    "İki davranış birlikte giyinme ve barınma ihtiyaçlarını karşılar.",
+    "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Montun giyinme olduğu doğru bulunur ama ısıtıcının beslenmeyle ilişkilendirilmesi hatalıdır; ısıtıcı yaşanılan yerle ilgilidir.",
+   "C": "Aile davranışlarının eğitim ve eğlenceyle ilgili sanılması hatalıdır; ne mont ne ısıtıcı bu ihtiyaçlara yarar.",
+   "D": "Isıtıcının barınma olduğu doğru bulunur ama montun beslenmeyle ilişkilendirilmesi hatalıdır; mont giyinme ihtiyacıdır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-042",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.3.2",
+  "surec_bileseni": "",
+  "konu": "Nezaket ve görgü kuralları",
+  "alt_konu": "Nezaket sözlerinin sırası",
+  "soru_metni": "Deniz arkadaşından kalemini ödünç almak istiyor. Arkadaşı kalemi verdi. Deniz kalemi geri uzatınca arkadaşı ona teşekkür etti. Deniz’in söylediği nezaket sözleri sırasıyla hangisi olabilir?",
+  "siklar": {
+   "A": "Lütfen, teşekkür ederim, rica ederim.",
+   "B": "Rica ederim, teşekkür ederim, lütfen.",
+   "C": "Lütfen, rica ederim, teşekkür ederim.",
+   "D": "Teşekkür ederim, lütfen, rica ederim."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her sözün hangi anda ve kim bir şey yaptığında söylendiğini sırayla düşün.",
+  "cozum_adimlari": [
+    "Bir şey isterken “lütfen” denir; Deniz kalemi önce böyle ister.",
+    "Kalem verilince iyilik yapıldığı için “teşekkür ederim” denir.",
+    "Geri verince arkadaşı teşekkür ettiği için Deniz son olarak “rica ederim” der.",
+    "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Sözlerin sırası tersine çevrilir; “rica ederim” teşekkürden sonra söylenir, en başta söylenmez.",
+   "C": "Teşekkür etmesi gereken ve teşekkür edilen kişi karıştırılır; Deniz kalemi alınca teşekkür eder, arkadaşı teşekkür edince “rica ederim” der.",
+   "D": "İstekten önce teşekkür edilir; teşekkür bir iyilik yapıldıktan sonra söylenir, “lütfen” ise isterken kullanılır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "uygulama",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-043",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.4.2",
+  "surec_bileseni": "a",
+  "konu": "Yaşadığı yerin yönetim birimleri",
+  "alt_konu": "Belediye ve bilgi kaynağı",
+  "soru_metni": "Sema mahallesindeki parkları kimin yaptığını öğrenmek istiyor. Parkların tabelalarında belediyenin adı yazıyor. Sema bilgi için hangi kaynağa başvurmalıdır?",
+  "siklar": {
+   "A": "Bağlı olduğu belediyenin internet sitesine",
+   "B": "Okul kütüphanesindeki masal kitaplarına",
+   "C": "Mahalledeki bir kafenin yemek menüsüne",
+   "D": "Başka bir şehrin belediyesinin internet sitesine"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Tabeladaki adın hangi kuruma ait olduğunu ve bilginin o kurumun hangi kaynağında bulunabileceğini düşün.",
+  "cozum_adimlari": [
+    "Parkların tabelalarında belediyenin adı yazdığı için parkları yapan kurum belediyedir.",
+    "Parkın bulunduğu mahalle hangi belediyeye bağlıysa o belediyenin kaynağına bakılır.",
+    "Belediyenin kendi internet sitesi parklar hakkında bilgi veren bir kaynaktır.",
+    "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Kitapların her konuda bilgi vereceği sanılır; masal kitapları mahalledeki parklarla ilgili bilgi içermez.",
+   "C": "Mahalledeki bir yerin mahalleyle ilgili her şeyi bildiği sanılır; kafenin menüsü yönetim bilgisi vermez.",
+   "D": "Belediyenin doğru kurum olduğu bulunur ama kendi belediyesi yerine başka şehrin belediyesine bakılır; o site Sema’nın mahallesindeki parkları anlatmaz."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-044",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.5.1",
+  "surec_bileseni": "b",
+  "konu": "Hava olayları ve mevsimler",
+  "alt_konu": "Mevsim sırası ve hava olayı",
+  "soru_metni": "Tuna’nın bahçesinde yapraklar yerlere dökülüyor, sık sık yağmur yağıyor ve akşamlar serinliyor. Mevsimler her yıl belli bir sırayla tekrarlanır. Tuna bir sonraki mevsimde bahçede hangisini görebilir?",
+  "siklar": {
+   "A": "Ağaçların çiçek açıp meyve vermesi",
+   "B": "Havaların çok sıcak olması",
+   "C": "Yaprakların sararmaya başlaması",
+   "D": "Havaların soğuyup kar yağabilmesi"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bahçedeki gözlemlerin hangi mevsimi anlattığını bul, sonra o mevsimden sonra hangisinin geldiğini düşün.",
+  "cozum_adimlari": [
+    "Yaprakların dökülmesi, sık yağmur ve serinleyen akşamlar sonbaharın özellikleridir.",
+    "Mevsim sırasında sonbahardan sonra kış gelir.",
+    "Kış mevsiminde havalar soğur ve kar yağabilir.",
+    "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çiçek açma ve meyve verme, ilkbahar ve yaz mevsimlerinin özelliğidir; sonbahardan sonra gelmez.",
+   "B": "Sıcak havayı yaz mevsimiyle bilip mevsim sırası atlanır; sonbahardan sonra yaz gelmez.",
+   "C": "Mevsim doğru bulunur ama bir sonraki mevsime geçilmez; yaprakların sararması bahçede şu an görülen sonbahar özelliğidir."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "HB2-045",
+  "sinif": 2,
+  "ders": "Hayat Bilgisi",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "HB.2.5.4",
+  "surec_bileseni": "b",
+  "konu": "Doğal kaynakları tasarruflu kullanma",
+  "alt_konu": "Enerji tasarrufu",
+  "soru_metni": "Hava soğuk. Mert’in odasındaki ısıtıcı çalışıyor ama pencere açık ve oda soğuk kalıyor. Mert enerjiyi tasarruflu kullanmak istiyor. Mert’in odayı ısıtmak için yapması gereken hangisidir?",
+  "siklar": {
+   "A": "Pencereyi kapatıp ısıtıcıyı çalışır tutması",
+   "B": "Isıtıcının ayarını yükseltip pencereyi açık tutması",
+   "C": "Isıtıcıyı kapatıp pencereyi açık bırakması",
+   "D": "Isıtıcıyı pencerenin tam yanına yaklaştırması"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Isıtıcının ürettiği sıcaklığın açık pencereden nereye gidebileceğini düşün.",
+  "cozum_adimlari": [
+    "Pencere açıkken ısıtıcının ürettiği sıcaklık dışarı kaçar ve oda soğuk kalır.",
+    "Sıcaklığın kaçmasını önlemek için pencere kapatılmalıdır.",
+    "Pencere kapalıyken ısıtıcı odayı ısıtır ve enerji boşa gitmez.",
+    "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Ayarı yükseltmenin odayı ısıtacağı sanılır; sıcaklık yine pencereden kaçar ve daha çok enerji harcanır.",
+   "C": "Isıtıcıyı kapatmanın enerji tasarrufu sağladığı doğru bulunur ama oda ısınmaz; Mert odayı ısıtmak istiyor.",
+   "D": "Isıtıcıyı pencereye yaklaştırmanın sıcaklığı artıracağı sanılır; açık pencere sıcaklığı yine dışarı çıkarır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

@@ -1,0 +1,92 @@
+# HR-038 · Müzik Kutusunun Şifresi · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=c9f099f5-8f1b-41b8-9af6-8aa98ce0947b, surum_no=2, sha256=b9f167ad1622f688206141f2d93647f0da2261039a932224bcfce098f3e91bce
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr038-muzik-kutusunun-sifresi | Tür: gizem | Konu: muzik_kutusu | Dünya: gercekci
+Sınıf: 4–4 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Kilidi anahtarsız bir müzik kutusu. Şifre dört notada saklı mı, yoksa başka bir yerde mi?
+İzinli türler: ben, arkadas, hayali
+Değer anahtarları (sürüm): D2, D5 | maarif.ana_deger: D2
+Etiketler: ana_sinif=4, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: aile, gizem, sanat_yaraticilik | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: nota_hr038 (lexeme, first_hint: nota); duraklama_hr038 (lexeme, application: duraklama); armagan_hr038 (lexeme, application: armağan); kavram_hr038 (concept, application: Ritim, çıkarım ve aile belleği); atasoz_hr038 (proverb, application: Acele işe şeytan karışır)
+Ölçülen: {"soru_sayisi":6,"sayfa_sayisi":8,"simge_sayisi":19,"kelime_sayisi":522,"tahmini_sure_dk":6,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":3,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Büyükanne Zeliha, eski ceviz sandığını açtığında içinden avuç içi kadar bir müzik[İKON music] kutusu çıktı. Kapağındaki küçük kuşun kanadı kırılmıştı; altındaki kilit[İKON lock] ise anahtarsızdı. "Bu kutu eskiden şarkı söylerdi," dedi Zeliha. "Ama nasıl açıldığını unuttum." Torunları [KAHRAMAN hal=yalin] ve Aras kutuyu incelemeye başladılar. [YOLDAŞ hal=yalin yedek=Hupo] de not almak için küçük bir kâğıt çıkardı. Kutunun üzerinde dört küçük düğme vardı. Her düğmeye basınca başka bir [KELİME yuva=pc_nota] duyuluyordu: do, re, mi, sol.
+--- Sayfa 2 ---
+[KAHRAMAN hal=yalin] daha önce okulun müzik[İKON music] dersinde seslerin yüksekliğiyle süresinin aynı şey olmadığını öğrenmişti. İnce ve kalın sesler bir özelliği, kısa ve uzun süreler başka bir özelliği anlatıyordu. Aras, "Ben en yüksek sesi bulmamız gerektiğini sanmıştım," dedi. [KAHRAMAN hal=yalin], "Belki notalar doğru[İKON check] ama çalma biçimimiz yanlış," diye cevap verdi. Bu yüzden acele etmek yerine duyduklarını küçük işaretlerle yazmaya karar verdiler. Zeliha gülümseyerek, "[ATASÖZÜ yuva=pc_ata_acele]" dedi.
+--- Sayfa 3 ---
+Aras düğmelere rastgele bastı. Kutu küçük bir tık sesi çıkardı ama açılmadı. [KAHRAMAN hal=yalin], kapağın kenarındaki işaretleri gösterdi: iki kısa çizgi, bir uzun çizgi ve küçük bir nokta. "Bunlar seslerin süresini anlatıyor olabilir," dedi. Çocuklar masaya dört renkli kâğıt koydu. Her notaya bir renk verdiler ve duydukları sesleri sırayla yazdılar. İlk deneme başarısızdı. İkinci denemede müzik[İKON music] kutusu dört nota çaldı ama yine kapalı kaldı. "Belki sırayı doğru[İKON check], ritmi yanlış çalıyoruz," diye düşündü [KAHRAMAN hal=yalin].
+--- Sayfa 4 ---
+Büyükanne pencerenin yanından eski bir fotoğraf getirdi. Fotoğrafta küçük Zeliha, bir arkadaşıyla birlikte[İKON friends] piyano başındaydı. Kenarına şu cümle yazılmıştı: *Önce iki kısa, sonra bir uzun. Sonunda hep birlikte sus.* Aras heyecanlandı. "Sonunda bir ses[İKON bell] daha yok. Bir [KELİME yuva=pc_duraklama] var!" [KAHRAMAN hal=yalin] notaları doğru sırayla çaldı; son düğmeden sonra bir an bekledi. Kapağın içinden yumuşak bir çıtırtı duyuldu. Kilit[İKON lock] açılmıştı. [İŞARET kod=anahtar]
+--- Sayfa 5 ---
+Aras, kapağı açmadan hemen önce bir kez daha durdu. "Büyükanne, ya içindeki şey kırılacak kadar hassassa?" diye sordu. Zeliha bir bez getirdi ve masanın üzerine serdi. Çocuklar kutuyu onun üstüne koyup kapağını yavaşça kaldırdılar. Sır çözmek[İKON lightning-idea] onları heyecanlandırıyordu fakat eski eşyalara dikkatle davranmak da önemliydi. Sonradan fark ettiler ki kapakta küçük bir çizik vardı; onu zorlayarak açmaya kalksalardı hatıraya zarar verebilirlerdi.
+--- Sayfa 6 ---
+Kutunun içinde altın ya da mücevher yoktu. Küçük bir kart, sararmış bir fotoğraf ve sarı kurdeleli bir mektup[İKON scroll] vardı. Mektupta, Zeliha'nın çocukluk arkadaşının uzak bir kente taşınmadan önce bu melodiyi armağan[İKON gift] ettiği yazıyordu. "Çocukken birlikte[İKON friends] oyun oynardık," diye anlattı Zeliha. "Bir gün bu küçük melodiyi her buluşmamızda çalmaya söz verdik. Sonra taşındılar. Aradan yıllar geçti ama bir melodiyi duyunca sanki arkadaşım yanımdaymış gibi olur."
+--- Sayfa 7 ---
+[KAHRAMAN hal=yalin], müziğin yalnızca notalardan oluşmadığını düşündü. Bir şarkı, insanın belleğinde uzak bir güne açılan kapı da olabilirdi. Aras ise fotoğraftaki iki çocuğun yüzlerini dikkatle inceledi; şimdi büyükannesi olan küçük kızın gülüşünü hemen tanıdı. Büyükanne mektubu okuyunca gözleri doldu. "Bu melodiyi birlikte[İKON friends] bestelemiştik," dedi. "Yıllardır nerede sakladığımı düşünürdüm." [KAHRAMAN hal=yalin], "Demek kutunun şifresi yalnızca nota değil, bir hatıraymış," dedi.
+--- Sayfa 8 ---
+Aras kutuyu yeniden çaldı. Bu kez duraklamayı unutmadı. Büyükanne de müziğe hafifçe eşlik etti. [YOLDAŞ hal=yalin yedek=Hupo] de sessizce dinledi. O akşam aile[İKON house] albümünden başka fotoğraflar çıkardılar. Aras her fotoğrafın arkasına kimlerin bulunduğunu yazmayı önerdi. [KAHRAMAN hal=yalin] ise büyükanneye anılarını kaydedecek küçük bir defter[İKON notebook] [KELİME yuva=pc_armagan] etti. Çünkü bir gün başkalarının da bu hikâyeleri öğrenmesini istiyorlardı. Müzik[İKON music] kutusunun kanadı hâlâ kırıktı. Ama artık onun için önemli olan kusursuz görünüşü değil, içinde sakladığı seslerdi. [İŞARET kod=kalp]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=C
+  Metin: Müzik kutusunun üzerinde kaç küçük düğme vardı?
+  A) İki
+  B) Üç
+  C) Dört
+  D) Beş
+  Açıklama: Kutunun üzerinde dört küçük düğme vardı; her biri başka bir nota çalıyordu.
+s2 [cikarim] dayanak_sayfa=4 doğru=B
+  Metin: Fotoğrafın kenarındaki "Sonunda hep birlikte sus" cümlesinden ne anlaşılır?
+  A) Kutunun hiç çalınmaması gerektiği
+  B) Son düğmeden sonra bir an sessiz beklemek gerektiği
+  C) Bütün düğmelere aynı anda basılması gerektiği
+  D) Kutunun yalnızca geceleri açılacağı
+  Açıklama: Çocuklar son işaretin bir ses değil, duraklama olduğunu anladı ve kilit açıldı.
+s3 [sozcuk_baglami] dayanak_sayfa=4 doğru=D
+  Metin: Metinde geçen duraklama sözcüğü ne anlama gelir?
+  A) Çok yüksek ses
+  B) Müziği hızlandırma
+  C) Bir çalgıyı kırma
+  D) Seslerin arasında kısa bir süre susup beklemek
+  Açıklama: Çocuk son düğmeden sonra bir an bekledi; kilit bu sessizlikten sonra açıldı.
+s4 [yorumlama] dayanak_sayfa=7 doğru=A
+  Metin: Çocuk "Kutunun şifresi yalnızca nota değil, bir hatıraymış" derken neyi anlatmak istedi?
+  A) Kutuyu açan şeyin yalnız sesler değil, geçmişten gelen bir anı ve bir dostluk olduğunu
+  B) Kutunun içinde altın bulunduğunu
+  C) Notaların hiç önemli olmadığını
+  D) Kutunun artık çalışmayacağını
+  Açıklama: Kutuyu açan melodi, büyükannenin çocukluk arkadaşıyla paylaştığı bir hatıraydı.
+s5 [degerlendirme] dayanak_sayfa=5 doğru=B
+  Metin: Çocukların kapağı açmadan önce bir bez serip kutuyu yavaşça kaldırması neden yerindedir?
+  A) Kutu çok ağır olduğu için
+  B) Eski eşyalara dikkatle davranmak, hatıraya zarar vermemek için önemlidir
+  C) Kapak kendiliğinden açılacağı için
+  D) Bez kutuyu parlak gösterdiği için
+  Açıklama: Metne göre kapakta küçük bir çizik vardı; zorlayarak açmak hatıraya zarar verebilirdi.
+s6 [hatirlama] dayanak_sayfa=6 doğru=C
+  Metin: Kutunun içinden neler çıktı?
+  A) Altın ve mücevher
+  B) Bir harita ve bir anahtar
+  C) Küçük bir kart, sararmış bir fotoğraf ve sarı kurdeleli bir mektup
+  D) Yeni bir müzik kutusu
+  Açıklama: Kutunun içinde altın ya da mücevher yoktu; kart, fotoğraf ve mektup vardı.
+
+## Sözlük
+- pc_nota | kelime | yazım: nota | 4–4 | anlam: Müzikte bir sesi göstermek için kullanılan işaret ya da o ses.
+- pc_duraklama | kelime | yazım: duraklama | 4–4 | anlam: Bir işin ya da sesin kısa bir süre durması.
+- pc_armagan | kelime | yazım: armağan | 4–4 | anlam: Sevgi ya da saygı göstermek için birine verilen hediye.
+- pc_ata_acele | atasozu | yazım: Acele işe şeytan karışır | 4–4 | anlam: Aceleyle yapılan işte hata yapma olasılığı artar.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

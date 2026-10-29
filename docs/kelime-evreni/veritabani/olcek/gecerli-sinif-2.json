@@ -1,0 +1,42 @@
+[
+ {
+  "t": "zit_anlamli",
+  "s": 2,
+  "z": 1,
+  "h": {
+   "kelime": "kazanmak",
+   "anlam": "Bir yarışta ya da oyunda üstün gelmek.",
+   "tur": "kelime",
+   "sozcuk_turu": "fiil"
+  },
+  "q": "“kazanmak” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "oynamak",
+   "çizmek",
+   "kaybetmek"
+  ],
+  "d": 2,
+  "a": "Kazanmanın zıddı kaybetmektir. Oynamak ve çizmek zıt anlamlı değildir.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 2,
+  "z": 2,
+  "h": {
+   "kelime": "kalın",
+   "anlam": "Kalınlığı çok olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“kalın” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "geniş",
+   "ince",
+   "ağır"
+  ],
+  "d": 1,
+  "a": "Kalının zıddı incedir. Geniş ve ağır zıt anlamlı değildir.",
+  "ip": null
+ }
+]

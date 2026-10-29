@@ -485,7 +485,7 @@ void main() {
     final repo = FakeOkumaRepository(katalogSatirlari: []);
     await _ac(tester, repo);
     await _kahramanSec(tester);
-    expect(find.text('Bu kahramana uygun hikâye yok'), findsOneWidget);
+    expect(find.text('Hikâyeler hazırlanıyor'), findsOneWidget);
     expect(find.text('Kahramanı değiştir'), findsOneWidget);
   });
 

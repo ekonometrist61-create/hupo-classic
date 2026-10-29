@@ -79,7 +79,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2066,
+        "kelime_sayisi": 2067,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 17,
         "soru_sayisi": 4,
@@ -177,7 +177,7 @@
         },
         {
           "t": "metin",
-          "v": " ekmek, su ve ip koyup yola çıktı. Köy meydanında çocuklar etrafını sardı. Onlara bütün kapıları tek başına açacağını söylemek istedi. Fakat annesinin sözü aklına geldi; bilmediği bir işi başardığını önceden söylemek gösteriş olurdu. “Ne çıkacağını bilmiyorum,” dedi. “Dönersem anlatırım.” Bu yanıt çocukların hoşuna gitmedi ama yaşlı terzi ona başıyla selam verdi.\n\nDeğirmenin ardındaki taşlık yolda ilk kapıyı buldu. Kapının üzerinde “Dürüstlük” yazıyordu. Ortada iki sepet vardı: birinde parlak elmalar, ötekinde toprağa düşmüş, üstü çizilmiş elmalar. Kapının yanından bir ses geldi: “Köye dönüp elmaların hepsinin sağlam olduğunu söylersen hızlıca geçersin.”\n\n"
+          "v": " ekmek, su ve ip koyup yola çıktı. Köy meydanında çocuklar etrafını sardı. Onlara bütün kapıları tek başına açacağını söylemek istedi. Fakat annesinin sözü aklına geldi; henüz yapmadığı bir işi önceden söylemek gösteriş olurdu. “Ne çıkacağını bilmiyorum,” dedi. “Dönersem anlatırım.” Bu yanıt çocukların hoşuna gitmedi ama yaşlı terzi ona başıyla selam verdi.\n\nDeğirmenin ardındaki taşlık yolda ilk kapıyı buldu. Kapının üzerinde “Dürüstlük” yazıyordu. Ortada iki sepet vardı: birinde parlak elmalar, ötekinde toprağa düşmüş, üstü çizilmiş elmalar. Kapının yanından bir ses geldi: “Köye dönüp elmaların hepsinin sağlam olduğunu söylersen hızlıca geçersin.”\n\n"
         },
         {
           "t": "kahraman",
@@ -400,7 +400,7 @@
         },
         {
           "t": "metin",
-          "v": " hayvanı incitmeden nasıl yardım edebileceğini düşündü. Tek başına elini uzatmak yerine kapıdan aldığı uzun değnekle ipi gevşetti, yarasa kurtulunca da yolu açtı. Cesaretin düşüncesizce tehlikeye atılmak olmadığını anladı. Bazen korktuğunu kabul edip güvenli bir çözüm aramak daha cesurcaydı."
+          "v": " hayvanı incitmeden nasıl yardım edebileceğini düşündü. Tek başına elini uzatmak yerine yerde duran uzun bir değnekle ipi gevşetti, yarasa kurtulunca da yolu açtı. Cesaretin düşüncesizce tehlikeye atılmak olmadığını anladı. Bazen korktuğunu kabul edip güvenli bir çözüm aramak daha cesurcaydı."
         }
       ]
     },
@@ -456,7 +456,7 @@
         },
         {
           "t": "metin",
-          "v": " hatırladı. Sorun yalnız vanayı çevirmek değildi. Su kanalı, köyün ortak emeğiyle onarılmalıydı. Çevredeki taşları kaldırmaya çalıştı ama bazıları çok ağırdı. İşte o zaman annesinin “Sözün ağırlığı” dediği şey anlam kazandı. İlk iş olarak köye dönmek, herkesle konuşmak gerekiyordu.\n\nKöy meydanında toplananlara gördüklerini anlattı. Kimi “Bu masala benziyor,” dedi, kimi “Çocukça bir oyun,” diye küçümsedi. "
+          "v": " hatırladı. Sorun yalnız vanayı çevirmek değildi. Su kanalı, köyün ortak emeğiyle onarılmalıydı. Çevredeki taşları kaldırmaya çalıştı ama bazıları çok ağırdı. İşte o zaman annesinin söz ağırlığı hakkındaki uyarısı anlam kazandı. İlk iş olarak köye dönmek, herkesle konuşmak gerekiyordu.\n\nKöy meydanında toplananlara gördüklerini anlattı. Kimi “Bu masala benziyor,” dedi, kimi “Çocukça bir oyun,” diye küçümsedi. "
         },
         {
           "t": "kahraman",
@@ -819,15 +819,15 @@
         },
         {
           "id": "B",
-          "metin": "Altın anahtar bulur"
+          "metin": "Altın bir anahtar bulup bekler"
         },
         {
           "id": "C",
-          "metin": "Köyü terk eder"
+          "metin": "Köyünü kalıcı olarak terk eder"
         },
         {
           "id": "D",
-          "metin": "Hiç konuşmaz"
+          "metin": "Hiç konuşmadan kapıdan çıkar"
         }
       ],
       "dogru": "A",
@@ -837,27 +837,27 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 3,
-      "metin": "Keloğlan ilk kapıdan sonra neden anahtarı cebine koydu?",
+      "metin": "Ana karakter ilk kapıdan sonra neden anahtarı cebine koydu?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Aynada kendi davranışını görüp dürüst olmayı seçtiği için"
+          "metin": "Anahtarın altından yapılmış olabileceğini düşündüğü için"
         },
         {
           "id": "B",
-          "metin": "Anahtarın altın olduğu için"
+          "metin": "Bir yarasanın ona kapının yolunu gösterdiği için"
         },
         {
           "id": "C",
-          "metin": "Bir yarasa ona verdiği için"
+          "metin": "Aynada annesinin yüzünü görüp dürüst olmayı seçtiği için"
         },
         {
           "id": "D",
-          "metin": "Tüccar ona yüzük verdiği için"
+          "metin": "Tüccar ona altın yüzüğü verip sorgusuz geçirdiği için"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Aynada annesinin yüzünü gören Keloğlan, dürüst olmanın anahtarını hak ettiğini anladı."
+      "dogru": "C",
+      "aciklama": "Aynada annesinin yüzünü gören kahraman, dürüst olmanın anahtarını hak ettiğini anladı."
     },
     {
       "id": "s3",
@@ -867,22 +867,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Herkese eşit bölmek değil, ihtiyacı görmek"
+          "metin": "Kimseye hiçbir şey vermeden saklamak"
         },
         {
           "id": "B",
-          "metin": "Hiç vermemek"
+          "metin": "Herkese eşit bölmek değil, ihtiyacı görmek"
         },
         {
           "id": "C",
-          "metin": "Sadece kendine ayırmak"
+          "metin": "Yalnızca kendine ayırmak ve saklamak"
         },
         {
           "id": "D",
-          "metin": "Yalnızca yemek yemek"
+          "metin": "Sofradakilerin yalnızca bir kısmını doyurmak"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Paylaşmak, herkesin ihtiyacını dikkate almayı da içerir."
     },
     {
@@ -897,15 +897,15 @@
         },
         {
           "id": "B",
-          "metin": "Çok uyumak"
+          "metin": "Gece geç saatlere kadar uyanık kalabilme"
         },
         {
           "id": "C",
-          "metin": "Dikkatlice dinlemek"
+          "metin": "Herkesi dikkatle ve sabırla dinleyebilme"
         },
         {
           "id": "D",
-          "metin": "Hızlı koşmak"
+          "metin": "Yolda hızlı koşup önce varabilme becerisi"
         }
       ],
       "dogru": "A",

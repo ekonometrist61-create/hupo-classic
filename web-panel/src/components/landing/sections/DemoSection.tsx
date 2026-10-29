@@ -1,10 +1,9 @@
-﻿import { IconArrowRight } from "@/components/landing/Icons";
+﻿import { landingPrimaryBtn } from "@/components/landing/buttons";
+import { IconArrowRight } from "@/components/landing/Icons";
+import { Reveal } from "@/components/landing/motion/Reveal";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
-
-const primaryBtn =
-  "inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 py-3 text-base font-bold text-white shadow-sm transition-colors hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 motion-reduce:transition-none";
 
 export async function DemoSection() {
   const t = await getTranslations("landing");
@@ -25,7 +24,7 @@ export async function DemoSection() {
             {t("demo.desc")}
           </p>
           <div className="mt-8">
-            <Link href="/demo" className={primaryBtn}>
+            <Link href="/demo" className={landingPrimaryBtn}>
               {t("demo.cta")}
               <IconArrowRight className="h-5 w-5" />
             </Link>
@@ -33,7 +32,7 @@ export async function DemoSection() {
           <p className="mt-4 text-sm text-navy-muted dark:text-gray-400">{t("demo.note")}</p>
         </div>
 
-        <div className="relative">
+        <Reveal className="relative">
           <div className="rounded-3xl border border-cream-dark bg-white p-6 shadow-sm sm:p-8 dark:border-gray-700 dark:bg-gray-800">
             <div className="flex items-center justify-between gap-3">
               <span className="rounded-full bg-warning-100 px-3 py-1 text-xs font-extrabold uppercase tracking-wide text-warning-700">
@@ -73,7 +72,7 @@ export async function DemoSection() {
             height={360}
             className="absolute -bottom-6 -end-2 hidden h-32 w-auto sm:block lg:-end-8 lg:h-40"
           />
-        </div>
+        </Reveal>
       </div>
     </section>
   );

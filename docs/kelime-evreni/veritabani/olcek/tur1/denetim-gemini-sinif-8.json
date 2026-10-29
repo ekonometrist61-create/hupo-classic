@@ -1,0 +1,300 @@
+{
+ "model": "gemini-3.8-flash",
+ "aile": "gemini",
+ "sonuc": [
+  {
+   "no": 1,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 2,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 3,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 4,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 5,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 6,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 7,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 8,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 9,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 10,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 11,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 12,
+   "cevap": 3,
+   "tek_dogru": false,
+   "sinif_uygun": false,
+   "sorun": "Bir sözcüğün olumsuzu (-siz eki) zıt anlamlısı değildir; doğru seçenek yoktur."
+  },
+  {
+   "no": 13,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 14,
+   "cevap": 1,
+   "tek_dogru": false,
+   "sinif_uygun": false,
+   "sorun": "Bir sözcüğün olumlusu/olumsuzu zıt anlamlısı değildir; doğru seçenek yoktur."
+  },
+  {
+   "no": 15,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 16,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 17,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 18,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 19,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 20,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "8. sınıf seviyesine göre çok basit, ilkokul düzeyindedir."
+  },
+  {
+   "no": 21,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 22,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 23,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 24,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 25,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 26,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 27,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 28,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 29,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 30,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 31,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 32,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 33,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 34,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 35,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 36,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 37,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 38,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 39,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 40,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 41,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 42,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  }
+ ]
+}

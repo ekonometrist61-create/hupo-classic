@@ -1,0 +1,27 @@
+{
+  "tuval": [
+    845,
+    900
+  ],
+  "govde": {
+    "x": 0,
+    "y": 0
+  },
+  "kanat": {
+    "x": 530,
+    "y": 90,
+    "pivot": [
+      560,
+      440
+    ],
+    "aci_araligi_derece": [
+      -4,
+      6
+    ]
+  },
+  "goz_kapali": {
+    "x": 165,
+    "y": 121
+  },
+  "not": "Koordinatlar hero_splash.webp (845x900) tuvalinde piksel. Z sirasi: govde, goz_kapali (yalniz kirpmada), kanat (pivot etrafinda doner)."
+}

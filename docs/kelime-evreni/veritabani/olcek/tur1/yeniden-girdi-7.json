@@ -1,0 +1,134 @@
+[
+ {
+  "orijinal": {
+   "t": "zit_anlamli",
+   "s": 7,
+   "z": 2,
+   "h": {
+    "kelime": "kabul etmek",
+    "anlam": "Bir teklifi ya da isteği uygun bulmak.",
+    "tur": "kelime",
+    "sozcuk_turu": "fiil"
+   },
+   "q": "“Teklifi kabul etti.” cümlesindeki “kabul etti” sözünün zıt anlamlısı hangisidir?",
+   "o": [
+    "bildirmek",
+    "düşünmek",
+    "duymak",
+    "reddetmek"
+   ],
+   "d": 3,
+   "a": "Kabul etmenin zıddı reddetmektir; diğerleri bu anlamın karşıtı değildir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 3,
+   "sorun": "Soru kökünde çekimli fiil ('kabul etti') sorulurken seçenekler mastar (-mek) biçiminde verilmiştir.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 3,
+   "sorun": "biçim uyumsuzluğu: kökte çekimli 'kabul etti', şıklar mastar (-mek)",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "zit_anlamli",
+   "s": 7,
+   "z": 2,
+   "h": {
+    "kelime": "daralmak",
+    "anlam": "Genişliği azalmak, dar hâle gelmek.",
+    "tur": "kelime",
+    "sozcuk_turu": "fiil"
+   },
+   "q": "“Nehir yatağı bu bölgede daraldı.” cümlesindeki “daraldı” sözünün zıt anlamlısı hangisidir?",
+   "o": [
+    "yükselmek",
+    "genişlemek",
+    "kurumak",
+    "akmak"
+   ],
+   "d": 1,
+   "a": "Daralmanın zıddı genişlemektir; yükselmek, kurumak ve akmak genişlikle ilgili karşıt eylemler değildir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 1,
+   "sorun": "Soru kökünde çekimli fiil ('daraldı') sorulurken seçenekler mastar (-mek) biçiminde verilmiştir.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 1,
+   "sorun": "biçim uyumsuzluğu: kökte çekimli 'daraldı', şıklar mastar (-mek)",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "zit_anlamli",
+   "s": 7,
+   "z": 2,
+   "h": {
+    "kelime": "kolaylaştırmak",
+    "anlam": "Bir işi daha az zahmetli hâle getirmek.",
+    "tur": "kelime",
+    "sozcuk_turu": "fiil"
+   },
+   "q": "“Yeni yöntem işi kolaylaştırdı.” cümlesindeki “kolaylaştırdı” sözünün zıt anlamlısı hangisidir?",
+   "o": [
+    "hızlandırmak",
+    "azaltmak",
+    "zorlaştırmak",
+    "düzeltmek"
+   ],
+   "d": 2,
+   "a": "Kolaylaştırmanın zıddı zorlaştırmaktır; diğerleri bu karşıtlığı oluşturmaz.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 2,
+   "sorun": "Soru kökünde çekimli fiil ('kolaylaştırdı') sorulurken seçenekler mastar (-mek) biçiminde verilmiştir.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "biçim uyumsuzluğu: kökte çekimli 'kolaylaştırdı', şıklar mastar; ayrıca 'kolay/zor' türev eşleşmesi ipucunu kolaylaştırıyor",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "zit_anlamli",
+   "s": 7,
+   "z": 3,
+   "h": {
+    "kelime": "yüceltmek",
+    "anlam": "Bir kişiyi ya da şeyi çok değerli göstermek.",
+    "tur": "kelime",
+    "sozcuk_turu": "fiil"
+   },
+   "q": "“Yazar, hikâyesinde kahramanı yüceltti.” cümlesindeki “yüceltti” sözünün zıt anlamlısı hangisidir?",
+   "o": [
+    "övmek",
+    "kıskanmak",
+    "korumak",
+    "küçümsemek"
+   ],
+   "d": 3,
+   "a": "Yüceltmenin zıddı küçümsemektir; övmek ise yakın anlamlıdır.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 3,
+   "sorun": "Soru kökünde çekimli fiil ('yüceltti') sorulurken seçenekler mastar (-mek) biçiminde verilmiştir; ayrıca yüceltmenin doğrudan zıttı alçaltmaktır.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 3,
+   "sorun": "biçim uyumsuzluğu: kökte çekimli 'yüceltti', şıklar mastar (-mek)",
+   "tek": true
+  }
+ }
+]

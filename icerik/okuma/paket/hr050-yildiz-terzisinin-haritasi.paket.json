@@ -79,7 +79,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2051,
+        "kelime_sayisi": 2050,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 17,
         "soru_sayisi": 4,
@@ -140,7 +140,7 @@
         },
         {
           "t": "metin",
-          "v": " olan komşuları Gülseren Hanım'ın gözlemlerine katılırdı. Yine de gökyüzünden düğme düştüğünü hiçbir kitapta okumamıştı.\n\n“Birileri göğe gömlek mi dikiyor?” diye güldü kardeşi "
+          "v": " olan komşuları Gülseren Hanım'ın gözlemlerine katılırdı. Yine de gökyüzünden düğme düştüğünü hiçbir kitapta okumamıştı.\n\n“Birileri göğe gömlek mi dikiyor?” diye güldü "
         },
         {
           "t": "yoldas",
@@ -829,7 +829,7 @@
         },
         {
           "t": "metin",
-          "v": " kardeşinin cümlesini görünce gülümsedi."
+          "v": " bu cümleyi görünce gülümsedi."
         }
       ]
     },
@@ -862,29 +862,29 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Gece on ikide"
-        },
-        {
-          "id": "B",
           "metin": "Sabah altıda"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Öğlen"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Akşam beşte"
+        },
+        {
+          "id": "D",
+          "metin": "Gece on ikide"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Saat kulesindeki akrep gece on ikiyi gösterirken düğme düştü."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Defne neden rahatladı?",
+      "metin": "Kahraman neden rahatladı?",
       "secenekler": [
         {
           "id": "A",
@@ -892,44 +892,44 @@
         },
         {
           "id": "B",
-          "metin": "Terzinin çok yaşlı olduğu için"
+          "metin": "Terzinin yıldızları tamir edebileceğine inandığı için"
         },
         {
           "id": "C",
-          "metin": "Kardeşinin uyuduğu için"
+          "metin": "Kardeşinin uyandığını ve artık yalnız olmadığını gördüğü için"
         },
         {
           "id": "D",
-          "metin": "Düğmenin altın olduğu için"
+          "metin": "Düğmenin altından yapıldığını ve değerli olduğunu anladığı için"
         }
       ],
       "dogru": "A",
-      "aciklama": "Defne, astronomi bilgisiyle gökyüzündeki hayalî çizgileri gerçek yıldız bağlantılarından ayırabiliyordu."
+      "aciklama": "Kahraman, astronomi bilgisiyle gökyüzündeki hayalî çizgileri gerçek yıldız bağlantılarından ayırabiliyordu."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 5,
-      "metin": "Defne'ye göre takımyıldızı çizgileri nasıl görülmeli?",
+      "metin": "Kahramana göre takımyıldızı çizgileri nasıl görülmeli?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tek doğru değil, farklı hikâyelerle birleşebilen desenler olarak"
+          "metin": "Yıldızları fiziksel olarak birbirine bağlayan gerçek yollar olarak"
         },
         {
           "id": "B",
-          "metin": "Gerçek yıldız bağları olarak"
+          "metin": "Gökyüzünü kirleten, hiç görülmemesi gereken çizgiler olarak"
         },
         {
           "id": "C",
-          "metin": "Hiç görülmemesi gereken çizgiler olarak"
+          "metin": "Yalnız gündüz ve ışıklı kentlerde görülebilen çizgiler olarak"
         },
         {
           "id": "D",
-          "metin": "Yalnız gündüz görülen çizgiler olarak"
+          "metin": "Tek doğru değil, farklı hikâyelerle birleşebilen desenler olarak"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Takımyıldızları kültürlere göre farklı hikâyelerle anlatılabilir."
     },
     {
@@ -940,22 +940,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yönleri göstermeye yarar"
+          "metin": "Gökyüzüne yeni yıldızlar çizer ve parlatır"
         },
         {
           "id": "B",
-          "metin": "Yıldız çizer"
+          "metin": "Yönleri bulmak için gözlemcilere yol gösterir"
         },
         {
           "id": "C",
-          "metin": "Düğme diker"
+          "metin": "Terzinin düğmelerini gökyüzüne diker ve bağlar"
         },
         {
           "id": "D",
-          "metin": "Ay'ı büyütür"
+          "metin": "Gece gökyüzündeki bulutları dağıtarak açar"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Pusula, yönleri bulmada kullanılan bir araçtır."
     }
   ],

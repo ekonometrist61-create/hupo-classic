@@ -37,10 +37,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (6. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Boğaç'ın adı anıldığında hep neyi duymaktan yorulmuştu?", secenekler: [{id: A, metin: "Güçlü ve korkmaz olduğunu"}, {id: B, metin: "Yarışı kazandığını"}, {id: C, metin: "Toy için hazırlandığını"}, {id: D, metin: "Her gün ormana gittiğini"}], dogru: A, aciklama: "Adı anıldığında hep \"Boğaç güçlüdür. Boğaç korkmaz.\" sözünü duyuyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Boğaç sandığın bulunmasının neden tek başına İnci Ana'yı suçlu yapmadığını düşündü?", secenekler: [{id: A, metin: "Sandığı kimin getirdiği belli değildi"}, {id: B, metin: "Sandık çok ağırdı"}, {id: C, metin: "İnci Ana sandığı açmıştı"}, {id: D, metin: "Sandığın çok eski olduğunu"}], dogru: A, aciklama: "Sandığın bulunması bir bulgudur; kimin getirdiğini kanıtlamaz."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Boğaç'ın adı anıldığında hep neyi duymaktan yorulmuştu?", secenekler: [{id: A, metin: "Yarışı kazandığını"}, {id: B, metin: "Toy için hazırlandığını"}, {id: C, metin: "Her gün ormana gittiğini"}, {id: D, metin: "Güçlü ve korkmaz olduğunu"}], dogru: D, aciklama: "Adı anıldığında hep \"Boğaç güçlüdür. Boğaç korkmaz.\" sözünü duyuyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Boğaç sandığın bulunmasının neden tek başına İnci Ana'yı suçlu yapmadığını düşündü?", secenekler: [{id: A, metin: "Sandık çok ağırdı"}, {id: B, metin: "Sandığı kimin getirdiği belli değildi"}, {id: C, metin: "İnci Ana sandığı açmıştı"}, {id: D, metin: "Sandığın çok eski olduğunu"}], dogru: B, aciklama: "Sandığın bulunması bir bulgudur; kimin getirdiğini kanıtlamaz."}
   - {id: s3, beceri: yorumlama, dayanak_sayfa: 12, metin: "Defterdeki görülen, düşünülen ve doğrulanan başlıkları neyi öğretmek için kullanıldı?", secenekler: [{id: A, metin: "Bilinen ile tahmini, kanıtlanmış ile söyleneni ayırmayı"}, {id: B, metin: "Defteri en çok kimin doldurduğunu"}, {id: C, metin: "Sandığın hangi yere konacağını"}, {id: D, metin: "Toyda hangi oyunun oynanacağını"}], dogru: A, aciklama: "Üç başlık, gördüğümüz, düşündüğümüz ve doğruladığımız şeyleri birbirinden ayırmayı öğretir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen kervanbaşı sözcüğü neyi anlatır?", secenekler: [{id: A, metin: "Kervanı yöneten, yolculuğu düzenleyen kişiyi"}, {id: B, metin: "Toy şenliğini izleyen çocuğu"}, {id: C, metin: "Kilim dokuyan ustayı"}, {id: D, metin: "Atlarına bakan çocuğu"}], dogru: A, aciklama: "Kervanbaşı, kervanı yöneten kişidir; bu metinde Kara Turgut'tur."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen kervanbaşı sözcüğü neyi anlatır?", secenekler: [{id: A, metin: "Toy şenliğini izleyen çocuğu"}, {id: B, metin: "Kilim dokuyan ustayı"}, {id: C, metin: "Atlarına bakan çocuğu"}, {id: D, metin: "Kervanı yöneten, yolculuğu düzenleyen kişiyi"}], dogru: D, aciklama: "Kervanbaşı, kervanı yöneten kişidir; bu metinde Kara Turgut'tur."}
 deyim_cumleleri:
   hr073_kulak_cinlamak: "Ama annesinin söyledikleri kulağında çınladı."
   hr073_yuz_burusturmak: "Kara Turgut yüzünü buruşturdu."
@@ -145,7 +145,7 @@ Boğaç kalabalığa baktı. İlk kez herkesin onayını alacak bir karar vermen
 @omurga
 Önce kimse konuşmadı. Sonra İnci Ana ağır ağır ayağa kalktı. “Benim bir itirazım var,” dedi. Herkes şaşırdı. Onun sevinmesini bekliyorlardı.
 
-“Benim adımı temize çıkarmak için insanların önünde özür dilemeleri iyi,” dedi. “Ama yarın biri yine yanlış suçlanırsa aynı acıyı yaşayacak. Çocuklara {kelime:hr073_soylenti} gerçek arasındaki farkı öğretmeliyiz.”
+“Benim adımı temize çıkarmak için insanların önünde özür dilemeleri iyi,” dedi. “Ama yarın biri yine yanlış suçlanırsa aynı acıyı yaşayacak. Çocuklara {kelime:hr073_soylenti} ile gerçek arasındaki farkı öğretmeliyiz.”
 
 Boğaç bu öneriyi beğendi. “Toyda hikâye anlatıcıları için zaman ayrılmıştı,” dedi. “Bir hikâyenin içinde bunu anlatabilir miyiz?”
 
@@ -255,7 +255,7 @@ Kara Turgut oradan geçerken konuşmaya katıldı. “Ben bu dersi biraz geç ö
 Sarıhan ona bakıp gülümsedi. Bir önceki gün kimse onunla yan yana görünmek istemezken şimdi depo defterinin yanında birlikte çalışıyorlardı. İnsanların güvenini yeniden kazanmak bir sabah sürmemişti. Yine de her doğru adım biraz işe yarıyordu. Bu, Boğaç'ın kararında görmeyi istediği asıl sonuçtu.
 ---
 @omurga
-Ertesi gün obanın geniş meydanı şenlik sesleriyle doldu. Atlar hazırlandı, çocuklar yarış çizgisinde toplandı, kazanlarda yemekler kaynadı. Boğaç'ın adı anons edildiğinde kimi onun boğa karşısındaki eski yiğitliğini bekliyordu. Oysa Boğaç, tören çadırına girerken elinde ne kılıç ne de yarış mızrağı taşıyordu. İnci Ana'nın kendi elleriyle dokuduğu küçük bir kilim vardı. Kilimin ortasına dengeli bir terazi işlenmişti.
+Öğleye doğru obanın geniş meydanı şenlik sesleriyle doldu. Atlar hazırlandı, çocuklar yarış çizgisinde toplandı, kazanlarda yemekler kaynadı. Boğaç'ın adı anons edildiğinde kimi onun boğa karşısındaki eski yiğitliğini bekliyordu. Oysa Boğaç, tören çadırına girerken elinde ne kılıç ne de yarış mızrağı taşıyordu. İnci Ana'nın kendi elleriyle dokuduğu küçük bir kilim vardı. Kilimin ortasına dengeli bir terazi işlenmişti.
 
 Bey kilimi havaya kaldırdı. “Bu, Boğaç'ın yeni yiğitliğinin işareti olsun,” dedi. “Çünkü bir insanı haksız yere suçlamadan önce durmayı bildi. Gücü varken öfkesine yenilmedi. Herkes kolay hüküm isterken o soru sordu.”
 
@@ -303,3 +303,5 @@ Dede Korkut yanından geçerken kopuzuna hafifçe dokundu. “Bir yiğidin adın
 Boğaç karşılık vermedi. Ufukta yükselen toz bulutunu, yola çıkan atlıları ve direklerde dalgalanan sancakları izledi. Artık gücünü kanıtlamak için yeni bir boğayla karşılaşması gerekmediğini biliyordu. En önemli karşılaşma, kimi zaman insanın kendi öfkesiyle yaptığı sessiz mücadeleydi.
 
 Boğaç, sabah sancağın yanından geçerken yeni kayıt defterine bir sayfa daha ekledi: “Bugün duyduklarım, bugün doğruladıklarım.” Bu iki satırın birbirine karışmaması için defteri kapatmadan önce uzun uzun düşündü.
+
+Not: Bu hikâye, Dede Korkut anlatılarındaki karakterlerden esinlenen özgün bir uyarlamadır; olay örgüsü Dede Korkut Kitabı’ndaki hikâyelerle aynı değildir.

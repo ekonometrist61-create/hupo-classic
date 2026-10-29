@@ -1,0 +1,112 @@
+﻿-- 4/8. sınıf kod dönüşümü (kullanıcı onayı: 2026-10-25). Kaynak: kod_donusum_onerileri_4_8.csv.
+-- 91 öneri uygulanır (yüksek 62, düşük 29). "eşleşme yok" 14 satır kod almadan kalır.
+-- Yalnız mevcut kodu db_kodu ile birebir eşleşen sorulara dokunur. Her değişiklik question_revisions'a yazılır.
+-- Kazanım metni: mufredat_hafta (2026-2027) içindeki kod metni.
+with t(soru_id, db_kodu, yeni_kod, sinif) as (values
+  ('df85326b-0992-4aff-8d8b-48ef61ecc876'::uuid, 'T.Y.4.2', 'T.4.4.11', 4),
+  ('b83633db-72c6-43dc-847e-a034bb07c9c3'::uuid, 'T.O.8.17', 'T.8.3.34', 8),
+  ('1626bb41-549e-46bf-a345-a0cb5f191a42'::uuid, 'T.Y.8.19', 'T.8.4.15', 8),
+  ('3e39a003-9a83-420f-8aee-f9bc327b1311'::uuid, 'T.O.8.3', 'T.8.3.12', 8),
+  ('a0ee411a-eddc-4a81-9c98-30613e1ec17d'::uuid, 'T.O.8.4', 'T.8.3.5', 8),
+  ('92764f5f-6aa0-46fc-8c67-e1ee73b99eaa'::uuid, 'T.O.8.5', 'T.8.3.14', 8),
+  ('6b1f1600-46ce-46d3-bbf1-20c077fc80b6'::uuid, 'T.O.8.7', 'T.8.3.25', 8),
+  ('ef241ca0-927a-48f1-b760-309949a67392'::uuid, 'T.O.8.8', 'T.8.3.25', 8),
+  ('51341d4d-320b-4850-ad76-7fb2dd45b950'::uuid, 'T.O.8.12', 'T.8.3.20', 8),
+  ('686c0aa6-935a-4273-9fb4-c4625fe8abfc'::uuid, 'T.O.8.13', 'T.8.3.14', 8),
+  ('7d4d337d-4326-4c10-ba90-24e2c76b5650'::uuid, 'T.O.8.14', 'T.8.3.17', 8),
+  ('f44485f1-1545-4c91-9efa-df3cef5bc765'::uuid, 'T.O.8.16', 'T.8.3.2', 8),
+  ('f58940c2-5c0c-4d2a-ad97-13787e15036c'::uuid, 'T.O.8.18', 'T.8.3.7', 8),
+  ('8712de43-d11e-4438-961e-24db048bf3e2'::uuid, 'T.Y.8.18', 'T.8.4.9', 8),
+  ('54c77fa5-4f32-4bea-81d4-0ade48333dad'::uuid, 'T.O.8.9', 'T.8.3.23', 8),
+  ('217a4ba2-b11d-4e7a-8a77-d60ea1a1d855'::uuid, 'T.O.8.11', 'T.8.3.21', 8),
+  ('89bca76d-91ad-4b10-895a-211e3893e19c'::uuid, 'T.O.8.15', 'T.8.3.11', 8),
+  ('eee753a6-1b7d-478c-ac2a-9bc118de50dc'::uuid, 'T.O.8.20', 'T.8.3.5', 8),
+  ('717d9bc4-8d71-44a1-b029-88e75b13d292'::uuid, 'T.Y.8.7', 'T.8.4.9', 8),
+  ('36b32b54-7530-4560-baf9-49f00ff7e7a6'::uuid, 'T.Y.8.8', 'T.8.4.9', 8),
+  ('acd37985-f994-446f-926f-9887c4c4f468'::uuid, 'T.Y.8.15', 'T.8.4.9', 8),
+  ('8d02434f-2972-4954-9e71-79952968ca9e'::uuid, 'T.Y.8.16', 'T.8.4.7', 8),
+  ('39ca7675-4f80-49d3-b35d-68d220f0ddc2'::uuid, 'T.O.4.2', 'T.4.3.7', 4),
+  ('d8c60f80-b86f-411f-8a9e-6bdca7b5d669'::uuid, 'T.Y.4.3', 'T.4.4.10', 4),
+  ('4a2e40b1-a622-4c4d-9bf6-88b1e351e80a'::uuid, 'T.O.4.3', 'T.4.3.16', 4),
+  ('32c3af6a-776a-4b44-b159-1a1d8ebba561'::uuid, 'T.O.4.2', 'T.4.3.28', 4),
+  ('975c2225-54ea-4d6f-8973-e86991684e0c'::uuid, 'T.Y.4.3', 'T.4.4.10', 4),
+  ('2c7fdda3-5656-495d-9982-cdcba335de4d'::uuid, 'T.O.4.3', 'T.4.3.17', 4),
+  ('243334a2-9e88-4ce5-8a80-adeb26d259b0'::uuid, 'T.O.4.2', 'T.4.3.8', 4),
+  ('f847196d-080b-465a-b88e-d01f6192aa07'::uuid, 'T.O.4.2', 'T.4.3.28', 4),
+  ('d839a6e7-5512-4323-a5b5-a852dfd84dcc'::uuid, 'MAT.4.2.1', 'M.4.1.2.3', 4),
+  ('2a4bb842-67ab-4b9d-b92a-232bd3b63174'::uuid, 'T.Y.4.3', 'T.4.4.10', 4),
+  ('f0bc1003-030b-486d-9726-95c1be70d924'::uuid, 'T.O.4.2', 'T.4.3.10', 4),
+  ('9a5aa0ab-bb8e-4eb8-bbe2-89d24fbf1110'::uuid, 'T.O.4.3', 'T.4.3.17', 4),
+  ('bdc14763-3069-499a-88bc-c055babb235b'::uuid, 'T.O.4.2', 'T.4.3.28', 4),
+  ('d8779a77-4bbd-4db0-ada0-f629e8ff6c96'::uuid, 'MAT.4.1.4', 'M.4.1.1.2', 4),
+  ('f85ba285-5a57-4cd8-9de0-1868a4d25912'::uuid, 'T.Y.4.3', 'T.4.4.10', 4),
+  ('ae6b11af-b1be-4057-9817-fe58738eab4c'::uuid, 'T.Y.4.2', 'T.4.3.12', 4),
+  ('36a87e65-c9f0-4472-aae9-5d2a8f43c43c'::uuid, 'T.O.4.3', 'T.4.3.18', 4),
+  ('395d4016-22f5-4907-b409-d6fc079eb702'::uuid, 'T.Y.4.3', 'T.4.4.10', 4),
+  ('bcff549b-8a28-49ed-932e-404f9d2900cb'::uuid, 'MAT.4.1.6', 'M.4.1.6.1', 4),
+  ('4a43f50d-6b3a-455c-b41f-f4effbefa6d0'::uuid, 'T.O.4.3', 'T.4.3.16', 4),
+  ('19865090-f5c2-4331-8c35-83085ade1da4'::uuid, 'T.O.4.3', 'T.4.3.10', 4),
+  ('29c4befe-94bf-4c7d-bb8a-e6f731aeab7f'::uuid, 'T.Y.4.3', 'T.4.4.10', 4),
+  ('6a2aa042-8692-48ad-9a0a-9455786e8477'::uuid, 'T.O.4.2', 'T.4.3.10', 4),
+  ('2cf1b585-2fb2-49b7-a166-a2308416f58a'::uuid, 'MAT.4.1.5', 'M.4.1.1.6', 4),
+  ('af8e56e8-036f-4598-9323-f67dcee01361'::uuid, 'T.O.4.3', 'T.4.3.28', 4),
+  ('ac6dfe3f-8158-4a15-8fab-1c22d4f8a244'::uuid, 'T.O.4.3', 'T.4.3.28', 4),
+  ('87fa0831-05d4-406b-96ec-ba574e72ebd1'::uuid, 'T.O.4.3', 'T.4.3.28', 4),
+  ('780f5ea1-9531-4643-8d3f-3d9db9fbc765'::uuid, 'T.K.4.2', 'T.4.3.11', 4),
+  ('fbd732fd-510d-449d-8a17-488d8dd44daf'::uuid, 'MAT.4.1.1', 'M.4.1.1.1', 4),
+  ('ea3a6ee0-b79f-4e4f-b8c7-4f059bf0afdb'::uuid, 'MAT.4.1.2', 'M.4.1.1.3', 4),
+  ('f19b2caf-ae1c-4ded-9bb6-e0c295b40ebd'::uuid, 'MAT.4.1.3', 'M.4.1.1.4', 4),
+  ('96db27d2-4413-4712-89fb-c70a3b8cef5d'::uuid, 'MAT.4.1.8', 'M.4.1.6.2', 4),
+  ('231e8380-e256-4dc8-a931-46c0e5df1f1b'::uuid, 'MAT.4.1.10', 'M.4.1.6.3', 4),
+  ('2aa6b73b-2482-4c7c-bd3b-292b06fdf7fb'::uuid, 'MAT.4.1.11', 'M.4.1.7.1', 4),
+  ('2cf38968-a2d6-4647-9810-c8dc57399a49'::uuid, 'MAT.4.1.12', 'M.4.1.7.2', 4),
+  ('a28ce6bb-8cf2-4f34-8763-4a80e62722dc'::uuid, 'MAT.4.1.13', 'M.4.3.5.4', 4),
+  ('0432fed8-c28a-4c5c-b716-aa2c6f116d66'::uuid, 'MAT.4.2.2', 'M.4.1.2.1', 4),
+  ('42e84f28-e14a-431a-859d-6937bdf9189a'::uuid, 'MAT.4.2.3', 'M.4.1.4.5', 4),
+  ('a5450bfb-4dcf-4a1d-8f07-2a06f1deda1e'::uuid, 'MAT.4.2.4', 'M.4.1.4.1', 4),
+  ('4ab37f71-0552-4926-94ce-ce7281270320'::uuid, 'MAT.4.2.5', 'M.4.1.5.7', 4),
+  ('fb74abfc-f4ec-4e95-bb1d-24c02398eabd'::uuid, 'MAT.4.2.7', 'M.4.1.4.6', 4),
+  ('3d093eb8-59ca-450e-8486-5589ce42b8a6'::uuid, 'MAT.4.2.8', 'M.4.1.4.6', 4),
+  ('30ac14ed-891b-42cf-ac47-753f0f572ae7'::uuid, 'MAT.4.2.9', 'M.4.1.5.7', 4),
+  ('3b27c309-386e-4e6e-b4b7-2d87498c518e'::uuid, 'MAT.4.3.3', 'M.4.3.2.3', 4),
+  ('c79c61f9-5c00-4574-b2d2-ee868c594857'::uuid, 'FB.4.5.2', 'F.4.3.2.2', 4),
+  ('fdf03d77-e7d8-40ab-bcbc-7b0903856257'::uuid, 'MAT.4.3.4', 'M.4.3.3.1', 4),
+  ('7c435c48-93db-4f30-aa69-69d5d74bbefa'::uuid, 'MAT.4.3.5', 'M.4.2.3.4', 4),
+  ('5d448478-b210-493f-b6d7-8dc5ebeb8f75'::uuid, 'MAT.4.3.7', 'M.4.2.3.4', 4),
+  ('7a55219f-06f8-42b9-856e-e6f7f5dc5788'::uuid, 'FB.4.2.1', 'F.4.2.1.1', 4),
+  ('2f6d55ce-fbcf-4fc0-b312-db4e035bfe0e'::uuid, 'FB.4.2.2', 'F.4.2.1.2', 4),
+  ('cca84d41-3a4e-4f07-81f9-282d61c399d7'::uuid, 'FB.4.2.3', 'F.4.2.1.4', 4),
+  ('e917a9ba-85f1-473e-a2a1-a2368739b672'::uuid, 'FB.4.2.3', 'F.4.2.1.4', 4),
+  ('88975af2-8b0b-4463-9ab9-1956e96014ba'::uuid, 'FB.4.3.2', 'F.4.1.1.1', 4),
+  ('c75251c0-b8c0-4b89-8ca7-a7a6e4bdced4'::uuid, 'FB.4.3.3', 'F.4.1.2.2', 4),
+  ('278af40c-efa0-4f7f-9aba-f3327b6805a6'::uuid, 'FB.4.4.1', 'F.4.4.3.1', 4),
+  ('d7ac1878-c9dd-4b50-9546-7665f3ed3fb9'::uuid, 'FB.4.4.1', 'F.4.4.3.2', 4),
+  ('87ec472c-07db-4681-b14a-4713ad004e6e'::uuid, 'FB.4.4.2', 'F.4.4.4.2', 4),
+  ('195a05ee-d70f-4f0c-8294-caa4b0d17103'::uuid, 'FB.4.5.1', 'F.4.3.2.1', 4),
+  ('0aab73e5-8a0c-4b82-88b9-520fec85d380'::uuid, 'FB.4.5.1', 'F.4.3.2.1', 4),
+  ('e035ab19-406a-47e7-bd85-e636daba7881'::uuid, 'FB.4.5.2', 'F.4.3.2.2', 4),
+  ('546af3aa-37ee-4e5c-aaa3-81911c769929'::uuid, 'FB.4.5.3', 'F.4.3.2.4', 4),
+  ('4651a906-7c8c-46a4-9338-49dc6764f52b'::uuid, 'FB.4.6.1', 'F.4.7.1.1', 4),
+  ('9209b01d-15a1-4815-8ce3-fbfe0b90f480'::uuid, 'FB.4.6.2', 'F.4.6.1.1', 4),
+  ('20e8e2d2-bc2b-4a94-9137-38f7b59d33a7'::uuid, 'FB.4.6.2', 'F.4.6.1.1', 4),
+  ('f9dbc69e-e297-4e32-b2fd-47faa330ea94'::uuid, 'FB.4.7.2', 'F.4.5.1.1', 4),
+  ('fb05823d-3594-4533-821e-933f1621a22f'::uuid, 'FB.4.7.2', 'F.4.5.1.1', 4),
+  ('f74a281d-10df-4e3e-87f9-1c4022a53d97'::uuid, 'FB.4.7.3', 'F.4.5.3.3', 4),
+  ('37c34bf5-503d-4448-a7b1-f04f13bdf59f'::uuid, 'T.Y.4.3', 'T.4.4.10', 4),
+  ('d57930af-0caa-4a63-8ee0-94f83be25511'::uuid, 'MAT.4.3.1', 'M.4.2.1.4', 4)
+), gecerli as (
+  select q.id, t.yeni_kod,
+         (select min(h.kazanim_metni) from public.mufredat_hafta h
+           where h.kazanim_kodu = t.yeni_kod and h.sinif = t.sinif and h.kaynak_yili = '2026-2027') as metin
+    from t
+    join public.questions q on q.id = t.soru_id and q.kazanim_kodu = t.db_kodu
+), rev as (
+  insert into public.question_revisions (question_id, revised_by, old_data, degisen_alanlar)
+  select q.id, null, to_jsonb(q), array['kazanim_kodu', 'kazanim_metni']
+    from gecerli g join public.questions q on q.id = g.id
+  returning question_id
+)
+update public.questions q
+   set kazanim_kodu = g.yeni_kod, kazanim_metni = g.metin
+  from gecerli g
+ where q.id = g.id and g.metin is not null;

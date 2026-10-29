@@ -15,12 +15,14 @@ import {
 
 interface AnketIstemiProps {
   yuzey: Yuzey;
+  /** Kart gerçekten çizildiğinde bir kez çağrılır (ana sayfa sıklık sınırı için). Stabil olmalı. */
+  onGosterildi?: () => void;
 }
 
 // Giriş yapmış velinin, bu mecrada yayınlanan ve henüz yanıtlamadığı anketi gösteren kart.
 // Oturum yoksa (ziyaretçi) ya da hesap veli değilse hiçbir şey çizmez ve sunucuya istek atmaz/
 // hata göstermez: anket yardımcı bir özelliktir, sayfanın geri kalanı bundan etkilenmemeli.
-export default function AnketIstemi({ yuzey }: AnketIstemiProps) {
+export default function AnketIstemi({ yuzey, onGosterildi }: AnketIstemiProps) {
   const t = useTranslations("anket");
   const [anketler, setAnketler] = useState<Anket[]>([]);
   const [modalAcik, setModalAcik] = useState(false);
@@ -64,6 +66,12 @@ export default function AnketIstemi({ yuzey }: AnketIstemiProps) {
   }, [mesaj]);
 
   const aktif = anketler[0];
+  const aktifId = aktif?.id;
+
+  // Kart ilk kez çizildiğinde bildir (yalnız kart kimliği değişince).
+  useEffect(() => {
+    if (aktifId && onGosterildi) onGosterildi();
+  }, [aktifId, onGosterildi]);
 
   function vazgec() {
     setModalAcik(false);

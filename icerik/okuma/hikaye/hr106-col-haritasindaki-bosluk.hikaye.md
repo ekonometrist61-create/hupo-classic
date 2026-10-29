@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Haritanın ortasındaki boş alanı Asya ve Yusuf uydurarak değil, kaynakları karşılaştırarak ve belirsizliği açıkça göstererek anlamaya çalışır."
+tanitim: "Haritanın ortasındaki boş alanı Asya ve bir arkadaş uydurarak değil, kaynakları karşılaştırarak ve belirsizliği açıkça göstererek anlamaya çalışır."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -33,14 +33,14 @@ etiketler:
     - {id: deyim_hr106, tur: idiom, etiket: "Rahat bir nefes almak", yuva: hr106_rahat, islev: application}
     - {id: kavram_hr106, tur: concept, etiket: "Tarihsel kanıt ile kurmacayı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Haritanın tam ortasında hangi bölüm bomboştu?", secenekler: [{id: A, metin: "Kum rengi kâğıdın bir bölümü"}, {id: B, metin: "Kervan yolunun başlangıcı"}, {id: C, metin: "Ticaret merkezlerinin adları"}, {id: D, metin: "Dağların çizgileri"}], dogru: A, aciklama: "Haritanın tam ortasında kum rengi kâğıdın bir bölümü boştu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Meryem Hanım'a göre haritadaki boşluk neden oluşmuştur?", secenekler: [{id: A, metin: "Haritanın bilerek gizlenmesinden"}, {id: B, metin: "Kâğıdın yırtılmasından"}, {id: C, metin: "Kullanılan kaynakların o bölge için yetersiz kalmasından"}, {id: D, metin: "Bir kervanın yolunu değiştirmesinden"}], dogru: C, aciklama: "Boşluk, kullanılan kaynakların o bölge için yetersiz olmasından kaynaklanıyordu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 8, metin: "Asya'nın bu sözüne göre bir yolu “olası” diye göstermek ne anlama gelir?", secenekler: [{id: A, metin: "Yolun kesin olduğunu iddia etmemek"}, {id: B, metin: "Yolun hiç kullanılmadığını söylemek"}, {id: C, metin: "Yolun en kısa yol olduğunu belirtmek"}, {id: D, metin: "Haritayı tamamen silmek"}], dogru: A, aciklama: "Bir yolun olası olduğunu göstermek, kesin olduğunu iddia etmek anlamına gelmez."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 34, metin: "Yaşlı kadının sözünde “yolcu değişir” ne anlatır?", secenekler: [{id: A, metin: "Yolculuk yapan insanların ve koşulların zamanla değişmesini"}, {id: B, metin: "Yolcuların hep aynı kişiler olduğunu"}, {id: C, metin: "Bilet fiyatlarının arttığını"}, {id: D, metin: "Yolun tamamen kapandığını"}], dogru: A, aciklama: "Kadın, yolun aynı kalsa bile yolculukların insanlara ve koşullara göre değiştiğini anlatıyor."}
-  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 18, metin: "Bu sözden çıkan en doğru sonuç hangisidir?", secenekler: [{id: A, metin: "İkna edici bir görüntü her zaman doğrudur"}, {id: B, metin: "Bir görüntünün inandırıcılığı, doğruluğu ile aynı şeydir"}, {id: C, metin: "Bir görüntü ne kadar ikna edici olursa o kadar güvenilirdir"}, {id: D, metin: "Bir görüntünün ikna ediciliği ile doğruluğu ayrı şeylerdir"}], dogru: D, aciklama: "İkna edici görünen bir görüntü her zaman doğru olmayabilir; bu iki özellik ayrı değerlendirilmelidir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Haritanın tam ortasında hangi bölüm bomboştu?", secenekler: [{id: A, metin: "Kervan yolunun başlangıcı"}, {id: B, metin: "Ticaret merkezlerinin adları"}, {id: C, metin: "Dağların çizgileri"}, {id: D, metin: "Kum rengi kâğıdın bir bölümü"}], dogru: D, aciklama: "Haritanın tam ortasında kum rengi kâğıdın bir bölümü boştu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Meryem Hanım'a göre haritadaki boşluk neden oluşmuştur?", secenekler: [{id: A, metin: "Kullanılan kaynakların o bölge için yetersiz kalmasından"}, {id: B, metin: "Haritacının bir rotayı bilerek gizlemesinden"}, {id: C, metin: "Kâğıdın eskiliğinden ve yırtılmasından dolayı"}, {id: D, metin: "Bir kervanın güzergâhını sık sık değiştirmesinden"}], dogru: A, aciklama: "Boşluk, kullanılan kaynakların o bölge için yetersiz olmasından kaynaklanıyordu."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 8, metin: "Asya'nın “Bir yolun olası olduğunu göstermek, onun kesin olduğunu söylemekten farklı.” sözüne göre bir yolu “olası” diye göstermek ne anlama gelir?", secenekler: [{id: A, metin: "Yolun hiç kullanılmadığını söylemek"}, {id: B, metin: "Yolun en kısa yol olduğunu belirtmek"}, {id: C, metin: "Haritayı tamamen silmek"}, {id: D, metin: "Yolun kesin olduğunu iddia etmemek"}], dogru: D, aciklama: "Bir yolun olası olduğunu göstermek, kesin olduğunu iddia etmek anlamına gelmez."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 34, metin: "Yaşlı kadının sözünde “yolcu değişir” ne anlatır?", secenekler: [{id: A, metin: "Yolculuk yapan insanların ve koşulların zamanla değişmesini"}, {id: B, metin: "Yolcuların her dönemde hep aynı kişilerden oluştuğunu"}, {id: C, metin: "Bilet fiyatlarının zamanla sürekli arttığını"}, {id: D, metin: "Yolun zamanla tamamen kapanıp kullanılmadığını"}], dogru: A, aciklama: "Kadın, yolun aynı kalsa bile yolculukların insanlara ve koşullara göre değiştiğini anlatıyor."}
+  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 18, metin: "Yoldaşın “Bir görüntünün bana ne kadar ikna edici geldiğiyle ne kadar doğru olduğu ayrı şeylermiş.” sözünden çıkan en doğru sonuç hangisidir?", secenekler: [{id: A, metin: "İkna edici bir görüntü her zaman doğrudur"}, {id: B, metin: "Bir görüntünün inandırıcılığı, doğruluğu ile aynı şeydir"}, {id: C, metin: "Bir görüntünün ikna ediciliği ile doğruluğu ayrı şeylerdir"}, {id: D, metin: "Bir görüntü ne kadar ikna edici olursa o kadar güvenilirdir"}], dogru: C, aciklama: "İkna edici görünen bir görüntü her zaman doğru olmayabilir; bu iki özellik ayrı değerlendirilmelidir."}
 deyim_cumleleri:
   hr106_rahat: "Çocuk gittiğinde {yoldas:yalin|bir arkadaş} rahat bir nefes aldı."
 ---
@@ -74,7 +74,7 @@ Bunu bir hikâye olarak hayal ettiler: Bir kervan sorumlusu, hızlı ulaşmak is
 @omurga
 Müzenin uzmanı, eski yol adlarının günümüzdeki adlarla birebir örtüşmeyebileceğini anlattı. Bir yerleşimin adı değişmiş, başka dile aktarılmış veya başka bir konumla karıştırılmış olabilirdi. Asya bu nedenle haritada bulduğu her eski adı doğrudan güncel haritaya yazmadı. Önce kaynaklarda aynı yer için kullanılan farklı adları karşılaştırdı.
 
-{yoldas:yalin|bir arkadaş}, bir anlatıda geçen “üç günlük yol” ifadesini kilometreye çevirmek istedi. Meryem Hanım, yolculuğun hızının koşullara göre değiştiğini söyledi. Üç gün, her kervan için aynı mesafeyi göstermeyebilirdi. Dağ, kum, hava ve yük durumu sonucu etkiliyordu. Bu nedenle sayısal kesinlik üretmek yanıltıcı olabilirdi.
+{yoldas:yalin|bir arkadaş}, bir anlatıda geçen “üç günlük yol” ifadesini kilometreye çevirmek istedi. Meryem Hanım, yolculuğun hızının koşullara göre değiştiğini söyledi. Üç gün, her kervan için aynı mesafeyi göstermeyebilirdi. Dağ, kum, hava ve yük durumu da sonucu etkiliyordu. Bu nedenle sayısal kesinlik üretmek yanıltıcı olabilirdi.
 
 Asya, bu çalışmanın sandığından daha çok dil bilgisi gerektirdiğini fark etti. Eski bir sözcüğün çevrilmesindeki küçük bir fark, haritada yüzlerce kilometrelik sapmaya neden olabilirdi. Metinleri okurken yalnızca ne söylendiğine değil, nasıl söylendiğine de bakması gerekiyordu.
 ---

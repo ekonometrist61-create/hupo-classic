@@ -1,0 +1,78 @@
+# HR-024 · Bulut Postacısının Son Mektubu · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=6df22e4c-0924-4b5e-b88d-04829c7b31cf, surum_no=2, sha256=1698710dba4cffd123f8a7041fd7221fd094b1abfed43905ca228648abcb4ba7
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr024-bulut-postacisinin-son-mektubu | Tür: fantastik | Konu: bulutlar | Dünya: masalsi
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Postacı Pofuduk kuzeye uçtuğunu sanıyor ama altında çöl var. Çantadaki son mektup yerine ulaşabilecek mi?
+İzinli türler: ben, arkadas, hayali
+Değer anahtarları (sürüm): D16, D15 | maarif.ana_deger: D16
+Etiketler: ana_sinif=3, okuma_zorlugu=2, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: kesif, dostluk | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: adres_hr024 (lexeme, first_hint: adres); pusula_hr024 (lexeme, application: pusula); yon_hr024 (lexeme, application: yön); kavram_hr024 (concept, application: Yönler ve adres bilgisi); atasoz_hr024 (proverb, application: Acele işe şeytan karışır)
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":7,"simge_sayisi":20,"kelime_sayisi":381,"tahmini_sure_dk":6,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":3,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Bulutlar Şehri'nde herkesin bir görevi vardı. Yağmur[İKON rain] Bulutu bahçeleri sular, Rüzgâr[İKON wind] Bulutu yelkenlere yardım eder, Postacı Pofuduk ise mektupları götürürdü. O sabah Pofuduk'un çantasında yalnızca bir zarf kalmıştı. Üzerinde şu [KELİME yuva=pa_adres] yazıyordu: "Kuzey Tepesi, Mavi Pencereli Ev[İKON house]." [İŞARET kod=bulut]
+--- Sayfa 2 ---
+Pofuduk kuzeye uçtuğunu sanıyordu. Fakat birkaç dakika sonra altındaki deniz[İKON wave] yerine kocaman bir çöl[İKON desert] gördü. "Bu işte bir terslik var," diye mırıldandı. Yanında uçan yol arkadaşı [YOLDAŞ hal=yalin yedek=Hupo] da şaşırmıştı. Çantasında bir [KELİME yuva=pa_pusula] vardı; onu çıkarıp baktı. İbre kuzeyi gösterirken kendisi güneye ilerliyordu.
+--- Sayfa 3 ---
+Rüzgâr[İKON wind] Bulutu yanına sokuldu. "Ben seni sürükledim, özür dilerim." "Önemli değil," dedi Pofuduk. "Ama mektup[İKON scroll] sahibini bekletmeyelim." İkisi birlikte yönlerini düzeltti. Derken birbirine benzeyen iki tepe gördüler. Birinde kırmızı çatılı, diğerinde mavi pencereli ev vardı. Pofuduk hemen aşağı inecekti ki bir ayrıntıyı fark etti: Mavi pencere güneş[İKON sun] ışığından mı mavi görünüyordu, yoksa gerçekten maviye mi boyanmıştı?
+--- Sayfa 4 ---
+[YOLDAŞ hal=yalin yedek=Hupo] aşağıdaki kuş[İKON bird] sürüsüne seslendi. Kuşların lideri, mavi pencereli evin kuzeydeki ikinci tepede olduğunu söyledi. Pofuduk teşekkür etti; adresin yalnızca renk değil, [KELİME yuva=pa_yon] bilgisi de verdiğini anladı. Evin çatısına konmadan önce çantasını kontrol etti. Yağmur[İKON rain] Bulutu biraz önce yanından geçmişti; zarfın ıslanmaması için onu dikkatle saklamıştı.
+--- Sayfa 5 ---
+Zarfın köşesindeki pulun üzerinde küçük bir yıldız[İKON star] vardı. Postacı, yıldızın yön[İKON compass] göstermediğini, yalnız süs olduğunu fark etti. Bir resim, her zaman[İKON clock] haritadaki bir işaret değildi. Tam mektubu bırakacağı sırada evin penceresi açıldı. İçeriden gelen ses, "Mavi pencereyi mi arıyorsun?" diye sordu. Pofuduk adresi bir kez daha okudu ve tepeyi teyit etti. Yanlış bir eve gidip başkasının haberini paylaşmak istemiyordu. Zarfın üzerindeki ismi ve kapıdaki ismi karşılaştırdı. İkisi de aynıydı. Ancak ondan sonra yaklaşarak mektubu verdi.
+--- Sayfa 6 ---
+Evde yaşlı bir teyze yaşıyordu. Zarfı açınca gözleri parladı. Uzakta okuyan torunu, kendi yaptığı çizimin fotoğrafını göndermişti. Mektupta "Büyüyünce bulut[İKON cloud] ressamı olacağım" yazıyordu. Pofuduk teyzenin gülümsemesini görünce yorgunluğunu unuttu. "Bir mektup[İKON scroll] bu kadar önemli olabilir mi?" diye sordu. "Elbette," dedi teyze. "Bazen bir haber, uzağı yakın eder." [İŞARET kod=kalp]
+--- Sayfa 7 ---
+Pofuduk dönüş yolunda çantasını boş buldu ama kendisini eksik hissetmedi. O gün bir zarfın yalnız kâğıt değil, sevincin taşıyıcısı olduğunu öğrenmişti. Yeni bir mektup[İKON scroll] geldiğinde adresin yönünü iki kez kontrol edecekti. Bulutlar Şehri'ne döndüğünde pusulasını girişteki panoya astı. Altına küçük bir not[İKON notebook] ekledi: "Bir yere yetişmek kadar, doğru yere varmak da önemlidir." Rüzgâr[İKON wind] Bulutu notu okuyup güldü. "Bir dahaki sefere önce birlikte haritaya bakalım!" dedi. Pofuduk gülümsedi ve "[ATASÖZÜ yuva=pa_ata_acele]" diye mırıldandı.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=C
+  Metin: Postacı kuzeye uçtuğunu sanırken aslında hangi yöne gidiyordu?
+  A) Kuzeye
+  B) Doğuya
+  C) Güneye
+  Açıklama: Pusulanın ibresi kuzeyi gösterirken postacı güneye ilerliyordu.
+s2 [cikarim] dayanak_sayfa=4 doğru=A
+  Metin: Postacı mavi pencereli evin hangi tepede olduğunu nasıl anladı?
+  A) Kuşların liderinin verdiği yön bilgisinden
+  B) Rüzgâr Bulutu'nun söylediklerinden
+  C) Pulun üzerindeki yıldızdan
+  Açıklama: Kuşların lideri, mavi pencereli evin kuzeydeki ikinci tepede olduğunu söyledi.
+s3 [yorumlama] dayanak_sayfa=7 doğru=B
+  Metin: "Bir yere yetişmek kadar, doğru yere varmak da önemlidir" sözü ne anlatır?
+  A) Hızlı gitmenin her şeyden önemli olduğunu
+  B) Acele etmek kadar doğru yere ulaşmanın da değerli olduğunu
+  C) Mektupların hiç gecikmemesi gerektiğini
+  Açıklama: Postacı, hızlı olmanın yanında mektubu doğru adrese götürmenin de önemli olduğunu öğrendi.
+s4 [sozcuk_baglami] dayanak_sayfa=2 doğru=C
+  Metin: Metinde geçen pusula sözcüğü ne anlama gelir?
+  A) Mektup zarfı
+  B) Şehir haritası
+  C) Yönleri bulmaya yarayan araç
+  Açıklama: Pusulanın ibresi kuzeyi gösterir; postacı yönünü bununla kontrol etti.
+s5 [hatirlama] dayanak_sayfa=6 doğru=A
+  Metin: Teyzenin torunu mektupta ne yazmıştı?
+  A) Büyüyünce bulut ressamı olacağım
+  B) Yarın eve geliyorum
+  C) Seni çok özledim
+  Açıklama: Torun kendi çizimini göndermiş ve bulut ressamı olmak istediğini yazmıştı.
+
+## Sözlük
+- pa_adres | kelime | yazım: adres | 3–3 | anlam: Bir yerin ya da kişinin bulunduğu yeri gösteren bilgi.
+- pa_pusula | kelime | yazım: pusula | 3–3 | anlam: Yönleri bulmaya yarayan araç.
+- pa_yon | kelime | yazım: yön | 3–3 | anlam: Bir şeyin gittiği ya da bakılan taraf; kuzey, güney gibi.
+- pa_ata_acele | atasozu | yazım: Acele işe şeytan karışır | 3–3 | anlam: Telaşla yapılan işlerde hata yapmak kolaylaşır.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

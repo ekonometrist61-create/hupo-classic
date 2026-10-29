@@ -1,0 +1,13 @@
+{
+  "name": "mufredat-yuzey-testi",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Müfredat etiket temeli ve RPC'leri (PGlite).",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.10"
+  }
+}

@@ -11,7 +11,7 @@ dunya_tipi: masalsi
 izinli_turler: [ben, arkadas, hayali]
 deger_anahtarlari: [D6, D4]
 yetiskin_uygun: false
-tanitim: "Kasabanın çeşmesi susmuş. Yeraltında bir masal bahçesi, dört kapı ve üç damla. Bilgelik nedir?"
+tanitim: "Kasabanın çeşmesi susmuş. Yeraltında bir masal bahçesi, dört avlu ve üç damla. Bilgelik nedir?"
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -36,22 +36,22 @@ etiketler:
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Çeşmenin altında ne duruyordu?", secenekler: [{id: A, metin: "Tek bir damla su"}, {id: B, metin: "Yosun"}, {id: C, metin: "Küçük bir kitap"}, {id: D, metin: "Bir havuz"}], dogru: A, aciklama: "Kemerin altında yalnızca tek bir damla su duruyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 6, metin: "Mina ikinci damlada mektubu neden yerine koydu?", secenekler: [{id: A, metin: "Bilgiyi bilmenin herkese anlatma hakkı vermediğini düşündüğü için"}, {id: B, metin: "Mektup çok eski olduğu için"}, {id: C, metin: "Mektup kendisine ait olduğu için"}, {id: D, metin: "Kütüphane kapandığı için"}], dogru: A, aciklama: "Mina, özel bir mektubun sahibinin iznini gözetmesi gerektiğini anladı."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 11, metin: "Şahmeran'a göre bilgelik nedir?", secenekler: [{id: A, metin: "Yanıldığında daha iyiye dönebilme cesareti"}, {id: B, metin: "Hiç yanılmamak"}, {id: C, metin: "Her soruyu bilmek"}, {id: D, metin: "Bilgiyi saklamak"}], dogru: A, aciklama: "Bilge kişi hatasını kabul edip düzeltebilen kişidir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 19, metin: "Metinde geçen mühür ne anlama gelir?", secenekler: [{id: A, metin: "Bir belgeyi resmîleştiren damga"}, {id: B, metin: "Bir tür kapı"}, {id: C, metin: "Bir çeşme"}, {id: D, metin: "Bir kitap"}], dogru: A, aciklama: "Mühür, belgenin resmî olduğunu gösteren damgadır."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 6, metin: "Kahraman ikinci damlada mektubu neden yerine koydu?", secenekler: [{id: A, metin: "Mektubun üzerindeki yazıyı okuyamadığı ve anlamadığı için"}, {id: B, metin: "Mektubun kendi arkadaşına ait olduğunu sonradan anladığı için"}, {id: C, metin: "Bilgiyi bilmenin herkese anlatma hakkı vermediğini düşündüğü için"}, {id: D, metin: "Mektubu arkadaşlarına hemen göstermek istediği için"}], dogru: C, aciklama: "Kahraman, özel bir mektubun sahibinin iznini gözetmesi gerektiğini anladı."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 11, metin: "Şahmeran'a göre bilgelik nedir?", secenekler: [{id: A, metin: "Yanıldığında daha iyiye dönebilme cesareti"}, {id: B, metin: "Hiçbir zaman yanlış bir karar vermeden ilerlemek"}, {id: C, metin: "Her soruya hemen cevap verebilecek kadar çok bilmek"}, {id: D, metin: "Bilgiyi kimseyle paylaşmadan yalnızca kendine saklamak"}], dogru: A, aciklama: "Bilge kişi hatasını kabul edip düzeltebilen kişidir."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 19, metin: "Metinde geçen mühür ne anlama gelir?", secenekler: [{id: A, metin: "Arşivde kullanılan bir kayıt kutusu"}, {id: B, metin: "Bir belgeyi resmîleştiren damga"}, {id: C, metin: "Taş kemerin altındaki küçük bir havuz"}, {id: D, metin: "Eski defterlerin üstüne çizilen bir harita"}], dogru: B, aciklama: "Mühür, belgenin resmî olduğunu gösteren damgadır."}
 deyim_cumleleri:
   hr052_araya_girmek: "Sarp fikrini açıklarken bir kez bile araya girmedi."
 ---
 @omurga
 Çeşmenin suyunu kimse içmiyordu. Çünkü çeşme akmıyordu. Kasabanın en eski sokağındaki taş kemerin altında yalnızca tek bir damla duruyor, düşeceği yeri bekler gibi parlıyordu. {isaret:deniz}
 
-On üç yaşındaki Leyla, büyükannesinin evinin önündeki bu tuhaf görüntüyü ilk kez yaz tatilinin başında fark etti. Geçen yıl çeşmenin musluğundan ince bir su akışı duyduğunu hatırlıyordu. Şimdi taşın altında yosun bile yoktu. Büyükannesi “Eskiden buraya Bilgelik Çeşmesi derlerdi,” dedi. “Suyun aktığı zamanlarda insanlar orada birbirini dinlerdi.”
+On iki yaşındaki Leyla, büyükannesinin evinin önündeki bu tuhaf görüntüyü ilk kez yaz tatilinin başında fark etti. Geçen yıl çeşmenin musluğundan ince bir su akışı duyduğunu hatırlıyordu. Şimdi taşın altında yosun bile yoktu. Büyükannesi “Eskiden buraya Bilgelik Çeşmesi derlerdi,” dedi. “Suyun aktığı zamanlarda insanlar orada birbirini dinlerdi.”
 
 “Neden bilgelik?” diye sordu Leyla. “Su içen herkes akıllanıyor muydu?”
 
 “Masal işte,” dedi büyükanne. “Masalın sorduğu soru bazen cevabından değerlidir.”
 
-Leyla bu sözü pek anlamadı. O, her sorunun açık bir cevabı olmasını severdi. Okulda {kelime:hr052_munazara} katılır, karşısındaki kişi sözünü bitirmeden yanıt vermeye başladığı için sık sık uyarılırdı. Bu yaz kendi kararını verecekti: Çeşmenin susmasının gerçek nedenini araştıracaktı.
+Leyla bu sözü pek anlamadı. O, her sorunun açık bir cevabı olmasını severdi. Okulda {kelime:hr052_munazara} etkinliklerine katılır, karşısındaki kişi sözünü bitirmeden yanıt vermeye başladığı için sık sık uyarılırdı. Bu yaz kendi kararını verecekti: Çeşmenin susmasının gerçek nedenini araştıracaktı.
 ---
 @omurga
 İlk önce belediyenin bilgi hattına danıştılar. Çeşmenin eskiden mahalleye su sağlayan başka bir hatla bağlantılı olduğunu, bugünse koruma çalışması kapsamında kullanım dışı bırakıldığını öğrendiler. İlgili birim, tarihî taş yapıya izinsiz müdahalenin zarar verebileceğini de açıkladı. Büyükannesi, “Demek çeşmeden su gelmemesinin gerçek bir açıklaması varmış,” dedi. Leyla, “Peki masaldaki bilgelik?” diye sordu. “İşte onu birlikte araştırabiliriz,” diye karşılık verdi büyükanne.
@@ -61,7 +61,7 @@ Akşam büyükannenin sandığından eski, çizimleri silinmiş bir defter çık
 Leyla bu cümleyle ilgili bir hikâye yazmaya karar verdi. Hikâyenin kahramanı kendisi olmayacaktı; kendinden farklı birini, acele karar veren ama yavaş yavaş dinlemeyi öğrenen {kahraman:belirtme} seçecekti. {kahraman}, kasabanın eski çeşmesinde unutulmuş bir kitap bulacaktı. Kitabın sayfaları açılınca susuz çeşmenin altında ışıklı bir merdiven belirecekti. Masal böyle başladı.
 ---
 @omurga
-{kahraman} merdivenin başına geldiğinde yanında arkadaşı {yoldas:yalin|bir arkadaş} vardı. {yoldas:yalin|bir arkadaş}, yalnızca gördüğüne inanmayı tercih ederdi. Taşın altında beliren merdiven, onun da fikrini değiştirdi. “Bu gerçek olamaz,” diye fısıldadı. {kahraman}, “Masaldaysak olabilir,” dedi. İkisi dar basamaklardan inerken duvarlarda eski çini desenleri gördü. Her desende bir su damlası, bir göz ve bir kitap işareti vardı.
+{kahraman} merdivenin başına geldiğinde yanında {yoldas:yalin|bir arkadaş} vardı. {yoldas:yalin|bir arkadaş}, yalnızca gördüğüne inanmayı tercih ederdi. Taşın altında beliren merdiven, onun da fikrini değiştirdi. “Bu gerçek olamaz,” diye fısıldadı. {kahraman}, “Masaldaysak olabilir,” dedi. İkisi dar basamaklardan inerken duvarlarda eski çini desenleri gördü. Her desende bir su damlası, bir göz ve bir kitap işareti vardı.
 
 Aşağıda geniş bir avlu açılıyordu. Ortada küçük bir havuz vardı; havuzun çevresinde ışık saçan bitkiler büyüyordu. {kahraman} bitkilerden birini koparmaya uzandı. Arkasından sakin bir ses yükseldi: “Önce hangi bahçede olduğunu öğren. Sonra dokunup dokunamayacağını sor.”
 
@@ -110,7 +110,7 @@ Bu yüzden hikâyenin ikinci yarısına yeni bir olay ekledi. {kahraman} ile {yo
 Leyla hikâyenin bir yerinde iki ayrı kardeş daha hayal etti. Yeraltı bahçesinde yaşayan Sera ve Sarp, çeşmenin suyunu paylaşma konusunda anlaşamıyordu. Sera bütün bitkilerin eşit miktarda sulanmasını istiyor, Sarp ise bazı bitkilerin daha fazla suya ihtiyaç duyduğunu söylüyordu. {kahraman} başta ikisini de haksız bulmadı. Şahmeran onlara bitkilerin farklı ihtiyaçları olabileceğini, uygun bakımın gözlem ve güvenilir bilgi gerektirdiğini anlattı. Böylece kâğıt üzerinde eşit görünen iki davranışın her zaman adil sonuçlar doğurmayabileceğini gördüler. {kahraman}, “Öyleyse herkese aynı cevabı vermemek bazen doğru olabilir,” dedi. Şahmeran, “Evet,” diye karşılık verdi. “Ama farklı davranıyorsan nedenini açıklayabilmelisin.”
 ---
 @omurga
-Sarp, kardeşinin fikrini dinlemek istemediği için üzgündü. Çeşmenin kıyısına oturup küçük taşlar saydı. {kahraman} yanına giderek “Niye sustun?” diye sordu. Sarp, herkes çok konuşurken kendisini duyuramadığını söyledi. {kahraman} kendi okul günlerini hatırladı. Bir sorunun cevabını bildiğinde el kaldırmadan konuştuğu olurdu. Bu sırada sessiz arkadaşlarının düşüncelerini duyamazdı. Sarp'a “Önce sen anlat, ben sözünü kesmeyeceğim,” dedi.[[deyim:hr052_araya_girmek]] Sonra Sera'yı da çağırdı. İki kardeş, bitkilerin bakımına ilişkin notları birlikte gözden geçirince birbirini suçlamak yerine ortak çözüm aramaya başladı.
+Sarp, kardeşinin onu dinlemediği için üzgündü. Çeşmenin kıyısına oturup küçük taşlar saydı. {kahraman} yanına giderek “Niye sustun?” diye sordu. Sarp, herkes çok konuşurken kendisini duyuramadığını söyledi. {kahraman} kendi okul günlerini hatırladı. Bir sorunun cevabını bildiğinde el kaldırmadan konuştuğu olurdu. Bu sırada sessiz arkadaşlarının düşüncelerini duyamazdı. Sarp'a “Önce sen anlat, ben sözünü kesmeyeceğim,” dedi.[[deyim:hr052_araya_girmek]] Sonra Sera'yı da çağırdı. İki kardeş, bitkilerin bakımına ilişkin notları birlikte gözden geçirince birbirini suçlamak yerine ortak çözüm aramaya başladı.
 
 {kahraman}, {yoldas:yonelme|bir arkadaşa} dönerek “Bunca zamandır senin yavaş olduğunu sanıyordum,” dedi. “Oysa bazen yalnızca düşünmek için zamana ihtiyacın var.” {yoldas:yalin|bir arkadaş} gülümsedi. “Ben de senin aceleciliğini her zaman dikkatsizlik sanıyordum. Bazen senin cesaretin olmasa hiçbir soru soramayız.” İkisinin arasındaki dostluk, birbirine benzemenin değil birbirini anlamanın üzerine kuruluyordu. Şahmeran bunu görünce eski çeşme taşının üzerindeki iki çizgiyi gösterdi. Çizgiler birbirinden farklı kıvrılıyordu ama aynı noktada buluşuyordu. “Güven bazen böyle görünür,” dedi. “Aynı yoldan gitmezsiniz, yine de birbirinize ulaşabilirsiniz.”
 ---
@@ -124,7 +124,7 @@ Leyla gerçek defterini kapatınca büyükannesi, “Masalını bitirdin mi?” 
 
 “Daha değil,” dedi Leyla. “{kahraman:ilgi} bir karar vermesi gerekiyor.”
 
-Hikâyenin sonunda {kahraman:yonelme} Şahmeran'ın yeraltındaki bahçesinin yolunu anlatıp anlatmaması soruldu. Bazı insanlar o bahçeyi yalnız meraktan ziyaret etmek isteyecek, bazıları bitkileri koparacak, bazıları da Şahmeran'ı rahatsız edecekti. {kahraman}, herkesten gizlenmesi gereken mutlak bir sırla karşılaşmamıştı; güvenliği ve izni gözetmesi gereken bir yer öğrenmişti. “Onun yerini izinsiz paylaşmayacağım,” dedi. “Ama yaşadığım dersi anlatabilirim.”
+Hikâyenin sonunda {kahraman}, Şahmeran'ın yeraltındaki bahçesinin yolunu anlatıp anlatmayacağını düşündü. Bazı insanlar o bahçeyi yalnız meraktan ziyaret etmek isteyecek, bazıları bitkileri koparacak, bazıları da Şahmeran'ı rahatsız edecekti. {kahraman}, herkesten gizlenmesi gereken mutlak bir sırla karşılaşmamıştı; güvenliği ve izni gözetmesi gereken bir yer öğrenmişti. “Onun yerini izinsiz paylaşmayacağım,” dedi. “Ama yaşadığım dersi anlatabilirim.”
 
 Leyla yazısını ertesi gün büyükannesine okudu. Büyükannesi Şahmeran'ın iyi niyetli bir bilgeliğin simgesi olarak kullanılmasını beğendi. Yalnız bir noktayı sordu: “Sence güven, insanların her sırrı sonsuza kadar saklaması mıdır?” Leyla düşündü. Birinin tehlikede olduğu durumlarda güvendiği bir yetişkine başvurmak doğru olurdu. Bunu metne ekledi. Masaldaki güven kavramı, düşünmeden susmak değil, kimlerin korunması gerektiğini anlamaktı.
 ---
@@ -141,7 +141,7 @@ Büyükanne onu dinlerken araya girmedi. Leyla da cümlesini bitirince sustu; bu
 Leyla, hikâyesinde yeraltındaki bahçenin yalnızca üç sınavdan ibaret olmasını istemiyordu. {kahraman} ile {yoldas:ilgi|bir arkadaşın} seçimleri, kendi yaşamlarında karşılığı olan sonuçlara dönüşmeliydi. Bu yüzden ilk damlanın ardından onları küçük bir taş köprüye getirdi. Köprünün iki yanında birbirine benzeyen iki kapı vardı. Bir kapıda “Doğru”, diğerinde “Hızlı” yazıyordu. {kahraman}, hızlı kapının önünde durdu. Okulda bir konuyu hemen bitirip sonraki etkinliğe geçmeyi sevdiğinden bu sözcük ona çekici geliyordu. {yoldas:yalin|bir arkadaş} ise doğru kapıyı seçmek istedi ama nedenini anlatmakta zorlandı. Şahmeran, iki kapının da yalnızca birer sözcük olduğunu söyledi. “Önce arkasında ne olduğunu öğrenin,” dedi. Çocuklar kapıları kontrol ettiğinde hızlı yolun yıkılmış basamaklara çıktığı, doğru yolun ise daha uzun ama aydınlık olduğu anlaşıldı. {kahraman}, tek kelimeye bakarak karar vermenin kolay, sonuca bakarak karar vermenin daha zor olduğunu anladı.
 ---
 @omurga
-Bahçenin ikinci avlusunda taş masanın üzerinde üzerinde farklı kokular bulunan kapalı kutular duruyordu. {kahraman} önce bunların şifalı ot olduğunu düşündü. Şahmeran bitkilerin bazılarının güzel kokabileceğini ama tüm bitkilerin güvenli olmadığını hatırlattı. “Masallar bitkilere sihirli güçler verebilir,” dedi, “ama gerçek dünyada bilinmeyen bir bitkiye dokunmak, onu koklamak veya tatmak doğru değildir.” {yoldas:yalin|bir arkadaş} bu uyarıyı duyunca rahatladı; en başından beri merakına rağmen kutulara yaklaşmıyordu. Şahmeran onlardan hiçbir şeye dokunmadan etiketleri okumalarını istedi. Her kutunun üstünde bir gözlem tarihi, bulunduğu bölge ve onu inceleyen kişi yazılıydı. {kahraman}, bilginin değerli olmasının nedenlerinden birinin de kaynağının bilinebilmesi olduğunu fark etti.
+Bahçenin ikinci avlusunda taş masanın üzerinde farklı kokular bulunan kapalı kutular duruyordu. {kahraman} önce bunların şifalı ot olduğunu düşündü. Şahmeran bitkilerin bazılarının güzel kokabileceğini ama tüm bitkilerin güvenli olmadığını hatırlattı. “Masallar bitkilere sihirli güçler verebilir,” dedi, “ama gerçek dünyada bilinmeyen bir bitkiye dokunmak, onu koklamak veya tatmak doğru değildir.” {yoldas:yalin|bir arkadaş} bu uyarıyı duyunca rahatladı; en başından beri merakına rağmen kutulara yaklaşmıyordu. Şahmeran onlardan hiçbir şeye dokunmadan etiketleri okumalarını istedi. Her kutunun üstünde bir gözlem tarihi, bulunduğu bölge ve onu inceleyen kişi yazılıydı. {kahraman}, bilginin değerli olmasının nedenlerinden birinin de kaynağının bilinebilmesi olduğunu fark etti.
 ---
 @omurga
 Üçüncü avluda bir bilmece vardı. Su dolu üç kâse masaya konmuştu. Birinci kâsede temiz su, ikinci kâsede ışığın altında pırıldayan ama içine küçük tozlar karışmış su, üçüncüdeyse bulanık su bulunuyordu. Kapıdaki ses, “Hangisi içilebilir?” diye sordu. {kahraman} birinci kâseyi göstermek üzereydi. {yoldas:yalin|bir arkadaş}, suyun görünüşünün tek başına güvenli olduğunu kanıtlamayacağını hatırlattı. Şahmeran ikisinin de sözünü dinledi. “Güzel görünen her şey güvenli değildir,” dedi. “Bilinmeyen suyu içmeden önce güvenilir içme suyu kaynağı olduğundan emin olmalıyız.” Bilmecenin cevabı bir kâse seçmek değildi; hiçbirinin güvenilirliği doğrulanmadığını söylemekti. Çocuklar bunu anlayınca başka bir kapı açıldı. {kahraman}, önceki aceleciliği yüzünden bu soruda da neredeyse yanıldığını kabul etti.
@@ -183,3 +183,5 @@ Büyükannesi karşı kapıdan onu izliyordu. “Bugün çeşme sana ne söyledi
 ---
 @omurga
 - Anlatı geleneği: Şahmeran, Anadolu sözlü anlatılarından bir motif; bu metin özgün kurgu olarak yazılmıştır. - Kavramlar: Güven, merhamet, gizlilik, kaynak doğrulama, etik karar. - Güvenlik: Yabani hayvana dokunmama, tarihî yapıya izinsiz müdahale etmeme, gerçek tehlikede güvenilir yetişkine haber verme.
+
+Not: Bu bir masaldır; gerçek dünyaya ilişkin bilimsel veya dinî bir iddia taşımaz.

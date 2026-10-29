@@ -72,14 +72,14 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 501,
+        "kelime_sayisi": 498,
         "tahmini_sure_dk": 6,
         "sayfa_sayisi": 5,
         "soru_sayisi": 4,
@@ -200,11 +200,7 @@
         },
         {
           "t": "vurgu",
-          "v": "Önce iki kısa, sonra bir uzun"
-        },
-        {
-          "t": "metin",
-          "v": ". Sonunda hep birlikte sus."
+          "v": "Önce iki kısa, sonra bir uzun. Sonunda hep birlikte sus."
         }
       ]
     },
@@ -260,7 +256,7 @@
         },
         {
           "t": "metin",
-          "v": " armağan ettiği yazıyordu.\n\n\"Çocukken birlikte oyun oynardık,\" diye anlattı Zeliha. \"Bir gün bu küçük melodiyi her buluşmamızda çalmaya söz verdik. Sonra taşındılar. Aradan yıllar geçti ama bir melodiyi duyunca sanki arkadaşım yanımdaymış gibi olur.\" "
+          "v": "yi armağan ettiği yazıyordu.\n\n\"Çocukken birlikte oyun oynardık,\" diye anlattı Zeliha. \"Bir gün bu küçük melodiyi her buluşmamızda çalmaya söz verdik. Sonra taşındılar. Aradan yıllar geçti ama bir melodiyi duyunca sanki arkadaşım yanımdaymış gibi olur.\" "
         },
         {
           "t": "kahraman",
@@ -277,7 +273,7 @@
         },
         {
           "t": "metin",
-          "v": " ise fotoğraftaki iki çocuğun yüzlerini dikkatle inceledi; şimdi büyükannesi olan küçük kızın gülüşünü hemen tanıdı."
+          "v": " ise fotoğraftaki kişilerin yüzlerini dikkatle inceledi; genç hâlindeki Zeliha'nın gülüşünü hemen tanıdı."
         }
       ]
     },
@@ -374,48 +370,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Melodiyi arkadaşıyla birlikte bestelediğini ve yıllardır hatırladığını"
+          "metin": "Kutunun kırık kanadını onarmakta zorlandığı ve üzüldüğü için"
         },
         {
           "id": "B",
-          "metin": "Kutu kırılmıştı"
+          "metin": "Sınıfındaki çocuklarla her gün yüksek sesle tartıştığı için"
         },
         {
           "id": "C",
-          "metin": "Sınıfı çok seviyordu"
+          "metin": "Melodiyi arkadaşıyla birlikte bestelediğini ve yıllardır hatırladığını"
         },
         {
           "id": "D",
-          "metin": "Yemek pişirmişti"
+          "metin": "Torunları için akşam yemeği hazırladığı ve mutlu olduğu için"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Mektubu okuyunca melodinin ve arkadaşlığın anısı canlandı."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 5,
-      "metin": "İpek'in “şifre yalnızca nota değil, bir hatıra” sözü neyi gösterir?",
+      "metin": "Kahramanın “şifre yalnızca nota değil, bir hatıra” sözü neyi gösterir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kutunun açılmasının notalardan çok anılarla bağlı olduğunu"
+          "metin": "Kutunun hiçbir zaman açılamayacağını ve atılması gerektiğini"
         },
         {
           "id": "B",
-          "metin": "Kutunun hiç açılamayacağını"
+          "metin": "Nota bilgisinin tamamen önemsiz ve gereksiz olduğunu"
         },
         {
           "id": "C",
-          "metin": "Nota bilgisinin önemsiz olduğunu"
+          "metin": "Kutunun saf altından yapılmış ve çok değerli olduğunu"
         },
         {
           "id": "D",
-          "metin": "Kutunun altın olduğunu"
+          "metin": "Kutunun açılmasının notalardan çok anılarla bağlı olduğunu"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Kutunun sırrı, aile belleğindeki bir anıyla bağlantılıydı."
     },
     {
@@ -430,15 +426,15 @@
         },
         {
           "id": "B",
-          "metin": "Hızlanması"
+          "metin": "Sesin giderek hızlanması"
         },
         {
           "id": "C",
-          "metin": "Yükselmesi"
+          "metin": "Sesin tizleşip yükselmesi"
         },
         {
           "id": "D",
-          "metin": "Kırılması"
+          "metin": "Kutunun kapağının kırılması"
         }
       ],
       "dogru": "A",

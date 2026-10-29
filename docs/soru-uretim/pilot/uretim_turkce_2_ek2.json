@@ -1,0 +1,298 @@
+[
+ {
+  "id": "TR2-051",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.2.2",
+  "surec_bileseni": "a",
+  "konu": "Anlam oluşturma",
+  "alt_konu": "Ön bilgiyle bağlantı kurma",
+  "soru_metni": "Ayla’nın elleri una bulanmıştı. Fırından güzel bir koku yayılıyordu. Masada, yarın doğum günü olan kardeşi için hazırlanmış mumlar duruyordu.\n\nMetne ve ön bilgilere göre Ayla şu anda ne yapıyor olabilir?",
+  "siklar": {
+   "A": "Kardeşinin doğum günü hediyesini paketliyor.",
+   "B": "Kardeşinin doğum günü pastasını pişiriyor.",
+   "C": "Akşam yemeği için börek ve çörek pişiriyor.",
+   "D": "Kardeşinin odasını mumlarla süslemeye çalışıyor."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Üç ayrıntıyı tek tek değil, birlikte değerlendir.",
+  "cozum_adimlari": [
+    "Una bulanmış eller ve fırından gelen koku, Ayla’nın hamurlu bir şey pişirdiğini gösterir.",
+    "Masadaki mumlar ve yarın olacak doğum günü, bu işin kardeşinin doğum günüyle ilgili olduğunu gösterir.",
+    "İki bilgi birleşince Ayla’nın doğum günü için pasta pişirdiği anlaşılır.",
+    "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+    "A": "Yalnız doğum günü ayrıntısına bakan öğrenci, una bulanmış elleri ve fırın kokusunu hesaba katmadan hediye hazırlığını seçer.",
+    "C": "Yalnız una ve fırın kokusuna bakan öğrenci, masadaki mumları ve doğum gününü atlayıp sıradan bir hamur işi düşünür.",
+    "D": "Yalnız mumlara bakan öğrenci, una bulanmış elleri ve fırın kokusunu göz ardı edip süsleme işi düşünür."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-052",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.2.2",
+  "surec_bileseni": "a",
+  "konu": "Anlam oluşturma",
+  "alt_konu": "Ön bilgiyle bağlantı kurma",
+  "soru_metni": "Hasan’ın karnı guruldadı. Çantasında bir beslenme kutusu vardı. Öğretmeni ise tahtada yeni bir konu anlatıyordu.\n\nMetne ve ön bilgilere göre Hasan için en uygun davranış hangisidir?",
+  "siklar": {
+   "A": "Çantasındaki yiyeceği dersi dinlerken yemesi.",
+   "B": "Karnı acıktığı için dersi dinlemeyi bırakması.",
+   "C": "Öğretmenden izin alıp kantine gitmesi.",
+   "D": "Teneffüs zili çalana kadar sabırla beklemesi."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Hasan’ın hem durumunu hem de içinde bulunduğu zamanı düşün.",
+  "cozum_adimlari": [
+    "Hasan’ın karnı açtır ve çantasında yiyecek vardır.",
+    "Öğretmen ders anlattığına göre ders sürmektedir; ders sırasında yemek yenmez.",
+    "Okulda yemek için ayrılan zaman teneffüstür; Hasan zil çalıp ders bitene kadar beklemelidir.",
+    "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+    "A": "Yalnız açlığı ve çantadaki yiyeceği birleştiren öğrenci, ders devam ettiği bilgisini atlayıp hemen yemeyi seçer.",
+    "B": "Yalnız açlığa bakan öğrenci, dersin sürdüğünü ve çantada yiyecek olduğunu hesaba katmaz.",
+    "C": "Açlık giderilsin diye başka bir yere gitmeyi düşünen öğrenci, çantadaki yiyeceği ve dersin sürdüğünü gözden kaçırır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-053",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.2.2",
+  "surec_bileseni": "c",
+  "konu": "Anlam oluşturma",
+  "alt_konu": "Başlık ve ilk cümlelerden tahmin",
+  "soru_metni": "“Karıncaların Kış Hazırlığı” başlıklı bir metin şöyle başlıyor:\n\nYaz sonu geldi. Havalar serinlemeye başladı. Karıncalar yuvalarına durmadan tane taşıyor.\n\nBaşlığa ve metnin bu bölümüne göre devamında en çok hangi olayın anlatılması beklenir?",
+  "siklar": {
+   "A": "Karıncaların taneleri yuvada biriktirmesi.",
+   "B": "Karıncaların kışın karda yiyecek araması.",
+   "C": "Karıncaların yaz boyunca neler yaptığı.",
+   "D": "Karıncaların taneleri yuvadan dışarı atması."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Başlıktaki hazırlık sözcüğü ile karıncaların yaptığı iş birlikte neyi gösterir, düşün.",
+  "cozum_adimlari": [
+    "Metne göre yaz bitiyor ve karıncalar yuvalarına sürekli tane taşıyor.",
+    "Başlıkta bu işin kış için bir hazırlık olduğu söyleniyor.",
+    "Kış için hazırlık yapan karıncaların taşıdıkları taneleri yuvada biriktirmesi beklenir.",
+    "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+    "B": "Yalnız başlıktaki kış sözcüğüne bakan öğrenci, hazırlığın kıştan önce yapıldığını ve karıncaların tane taşıdığını atlar.",
+    "C": "Yalnız yaz sonu bilgisine bakan öğrenci, başlıktaki hazırlık fikrini ve taşınan taneleri göz ardı eder.",
+    "D": "Yalnız taşıma eylemine bakan öğrenci, işin kış hazırlığı olduğunu düşünmeden taneleri yuvadan çıkarma sonucuna varır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-054",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.2.3",
+  "surec_bileseni": "a",
+  "konu": "Okuduğunu çözümleme",
+  "alt_konu": "Karakteri açıklama",
+  "soru_metni": "Ela’nın takımı oyunu kazandı. Ela çok sevindi. Karşı takımdan Poyraz’ın gözleri doldu. Ela hemen Poyraz’ın yanına gidip omzuna dokundu.\n\nMetne göre Ela nasıl bir çocuktur?",
+  "siklar": {
+   "A": "Kazandığı için kendini herkesten üstün gören",
+   "B": "Kazanmanın hiç önemli olmadığını düşünen",
+   "C": "Kazanırken rakibinin üzüntüsünü de düşünen",
+   "D": "Yalnızca kendi sevincini önemseyen"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Ela’nın hem sevincine hem de sonra yaptığı harekete bak.",
+  "cozum_adimlari": [
+    "Ela oyunu kazandığı için çok sevinmiştir.",
+    "Karşı takımdan Poyraz üzülünce Ela onun yanına gidip omzuna dokunmuştur.",
+    "Bu iki davranış birlikte, Ela’nın kendi sevincinin yanında rakibinin duygusunu da düşündüğünü gösterir.",
+    "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+    "A": "Yalnız kazanma ve sevinme bilgisini kullanan öğrenci, Poyraz’ı teselli etme davranışını atlar.",
+    "B": "Ela’nın Poyraz’a yönelmesini kazanmaya önem vermemek sanan öğrenci, Ela’nın çok sevindiği bilgisini göz ardı eder.",
+    "D": "Yalnız Ela’nın sevincine bakan öğrenci, Poyraz’ın yanına gitmesinin ne gösterdiğini düşünmeden sonuca varır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "paragraf",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-055",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.O.2.3",
+  "surec_bileseni": "b",
+  "konu": "Okuduğunu çözümleme",
+  "alt_konu": "Metnin konusunu bulma",
+  "soru_metni": "Kaplumbağanın su kabına her sabah taze su konur. Yemini öğrenciler sırayla verir. Öğretmen su kabının temiz olup olmadığına her gün bakar.\n\nBu metnin konusu hangisidir?",
+  "siklar": {
+   "A": "Kaplumbağaya sınıfta nasıl bakıldığı",
+   "B": "Kaplumbağaların kışı nasıl geçirdiği",
+   "C": "Öğretmenin kabın temizliğini denetlemesi",
+   "D": "Öğrencilerin kaplumbağaya sırayla yem vermesi"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Üç cümlede anlatılan işlerin ortak amacını bul.",
+  "cozum_adimlari": [
+    "İlk cümlede su kabına taze su konması, ikinci cümlede yem verilmesi, üçüncü cümlede kabın temizliğinin kontrol edilmesi anlatılıyor.",
+    "Bu işlerin üçü de kaplumbağanın bakımıyla ilgilidir.",
+    "Tek bir işi anlatan şıklar ayrıntıdır; metnin tamamını kapsayan konu kaplumbağaya nasıl bakıldığıdır.",
+    "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+    "B": "Kaplumbağa denince kışı hatırlayan öğrenci, metinde olmayan genel bir bilgiyi konu sanır.",
+    "C": "Yalnız son cümleye bakan öğrenci, öğretmenin yaptığı işi metnin tamamının konusu sanır.",
+    "D": "Yalnız ikinci cümleye bakan öğrenci, yem verme işini metnin tamamının konusu sanır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "paragraf",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-056",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.2.2",
+  "surec_bileseni": "a",
+  "konu": "Yazıda içerik oluşturma",
+  "alt_konu": "Eksik cümleyi tamamlama",
+  "soru_metni": "Sınıf akvaryumundaki balıklar iki gündür yem yemiyordu. .......... Öğretmen suyun hemen değiştirilmesini söyledi. Ertesi gün balıklar yeniden neşeyle yüzmeye başladı.\n\nBu metnin boşluğuna hangisi yazılırsa olaylar mantıklı bir sıraya girer?",
+  "siklar": {
+   "A": "Çocuklar balıklara iki kat fazla yem attı.",
+   "B": "Çocuklar akvaryuma yeni bir balık koydu.",
+   "C": "Çocuklar balıkların hasta olduğunu düşündü.",
+   "D": "Çocuklar suyun kirlendiğini fark etti."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Boşluğun hem öncesindeki sorunu hem de sonrasındaki öğretmen sözünü açıklaması gerekir.",
+  "cozum_adimlari": [
+    "Balıkların iki gündür yem yememesi bir sorundur.",
+    "Öğretmen suyun değiştirilmesini söylediğine göre sorunun suyla ilgili olduğu anlaşılır.",
+    "Bu iki bilgiyi bağlayan cümle, çocukların suyun kirlendiğini fark etmesidir.",
+    "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+    "A": "Yalnız yem yememe bilgisini kullanan öğrenci, daha fazla yem vermeyi çözüm sanır ve öğretmenin su değiştirme sözünü atlar.",
+    "B": "Yem yememe sorununu yeni bir balıkla çözmeyi düşünen öğrenci, sonraki cümlede suyun değiştirilmesinin istendiğini hesaba katmaz.",
+    "C": "Yalnız ilk cümleye bakan öğrenci, balıkların hasta olduğunu varsayar ve öğretmenin suyla ilgili sözünü bağlayamaz."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-057",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.2.2",
+  "surec_bileseni": "c",
+  "konu": "Yazıda içerik oluşturma",
+  "alt_konu": "Sözcüğün anlamını bağlamdan tahmin etme",
+  "soru_metni": "Ece servisin kalkmak üzere olduğunu gördü. Defterlerini çantasına rastgele tıkıştırdı. Telaşla kapıya koştu.\n\nMetne göre “telaşla” sözcüğü hangi anlama gelmektedir?",
+  "siklar": {
+   "A": "Umursamadan ve kayıtsızca",
+   "B": "Kaygıyla ve acele ederek",
+   "C": "Sakin ve özenli biçimde",
+   "D": "Sevinçle koşturarak"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Sözcüğün geçtiği cümleden önceki iki cümleyi de birlikte düşün.",
+  "cozum_adimlari": [
+    "Servis kalkmak üzeredir; Ece’nin yetişmek için acele etmesi gerekir.",
+    "Defterlerini rastgele tıkıştırması, düzenli çalışacak zamanı olmadığını ve kaygılandığını gösterir.",
+    "Bu bilgiler birlikte “telaşla” sözcüğünün kaygılı ve aceleci anlamına geldiğini gösterir.",
+    "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+    "A": "Yalnız rastgele tıkıştırma davranışına bakan öğrenci, servisin kalkmak üzere olduğunu atlayıp umursamazlık sonucuna varır.",
+    "C": "Servisin kalkmak üzere olduğunu ve defterlerin rastgele konduğunu göz ardı eden öğrenci, sözcüğü sakin ve özenli sanır.",
+    "D": "Yalnız koşma eylemine bakan öğrenci, koşmayı sevinçle ilişkilendirir ve servisin kalkmak üzere olduğunu hesaba katmaz."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR2-058",
+  "sinif": 2,
+  "ders": "Türkçe",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "T.Y.2.3",
+  "surec_bileseni": "ğ",
+  "konu": "Yazma kurallarını uygulama",
+  "alt_konu": "ki bağlacı ve kesme işareti",
+  "soru_metni": "Hangi cümle yazım kurallarına uygun yazılmıştır?",
+  "siklar": {
+   "A": "Duydumki Ayşe İzmire taşınmış.",
+   "B": "Duydumki Ayşe İzmir’e taşınmış.",
+   "C": "Duydum ki Ayşe İzmir’e taşınmış.",
+   "D": "Duydum ki Ayşe İzmire taşınmış."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Hem bağlacın yazılışına hem de özel ada gelen ekin yazılışına bak.",
+  "cozum_adimlari": [
+    "Bağlaç olan “ki” ayrı yazılır: “Duydum ki”.",
+    "Özel ada gelen ek kesme işaretiyle ayrılır: “İzmir’e”.",
+    "Her iki kuralı da uygulayan tek cümle “Duydum ki Ayşe İzmir’e taşınmış.” cümlesidir.",
+    "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+    "A": "Bağlaç “ki”yi bitişik yazan ve özel ada gelen ekte kesmeyi unutan öğrenci iki kuralı da uygulayamaz.",
+    "B": "Kesmeyi doğru kullanan ama “ki” bağlacını önceki sözcüğe bitiştiren öğrenci yalnız bir kuralı uygular.",
+    "D": "“Ki” bağlacını doğru ayıran ama özel ada gelen ekte kesmeyi unutan öğrenci yalnız bir kuralı uygular."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "çıkarım",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

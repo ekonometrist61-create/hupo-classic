@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2055,
+        "kelime_sayisi": 2057,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 16,
         "soru_sayisi": 4,
@@ -443,7 +443,7 @@
         },
         {
           "t": "metin",
-          "v": ", bir fikri korumak için sesini yükseltmektense onu sınamanın daha iyi olabileceğini öğrendi.\n\nBir öğrenci okul koridorundaki yeni kutulara yaklaşınca “Bu kap nereye?” diye sordu. Elinde iki farklı malzemeden yapılmış bir ambalaj vardı. "
+          "v": ", bir fikri korumak için sesini yükseltmektense onu sınamanın daha iyi olabileceğini öğrendi.\n\nBir öğrenci okul koridorundaki yeni kutulara yaklaşınca “Bu kap nereye?” diye sordu. Elinde bir ürünü saran, iki farklı malzemeden yapılmış bir ambalaj vardı. "
         },
         {
           "t": "kahraman",
@@ -485,7 +485,7 @@
         },
         {
           "t": "metin",
-          "v": ", bir atık toplama etkinliğinin bile güvenlik ve hijyen kuralları gerektirdiğini öğrendi. İyi niyetli olmak, her nesneye düşünmeden yaklaşmayı haklı çıkarmazdı. Sibel Hanım, özellikle pil ve elektronik atık gibi özel işlem gerektirebilecek malzemelerin ayrı sistemlerle toplanması gerektiğini anlattı.\n\nProjenin ikinci ayı başladığında öğrenciler, okul kütüphanesindeki kullanılabilir ama hasarlı bazı kitap kapaklarının yeniden değerlendirilmesi için küçük bir çalışma yaptı. Kitapları kendi başlarına kesip biçmek yerine kütüphane görevlisine danıştılar. Görevli, korunması gereken kitaplarla bakım gerektiren günlük kullanım kitaplarını ayırdı. Çocuklar kapağı gevşemiş bir sınıf kitabının uygun yöntemle onarılmasına yardım etti. "
+          "v": ", bir atık toplama etkinliğinin bile güvenlik ve hijyen kuralları gerektirdiğini öğrendi. İyi niyetli olmak, her nesneye düşünmeden yaklaşmayı haklı çıkarmazdı. Sibel Hanım, özellikle pil ve elektronik atık gibi özel işlem gerektirebilecek malzemelerin ayrı sistemlerle toplanması gerektiğini anlattı.\n\nProjenin ikinci ayı başladığında öğrenciler, okul kütüphanesindeki kullanılabilir ama hasarlı bazı kitap kapaklarının yeniden değerlendirilmesi için küçük bir çalışma yaptı. Kitapları kendi başlarına onarmak yerine kütüphane görevlisine danıştılar. Görevli, korunması gereken kitaplarla bakım gerektiren günlük kullanım kitaplarını ayırdı. Çocuklar kapağı gevşemiş bir sınıf kitabının uygun yöntemle onarılmasına yardım etti. "
         },
         {
           "t": "yoldas",
@@ -559,7 +559,7 @@
         },
         {
           "t": "metin",
-          "v": " bu seçeneği özellikle sevdi. Gerçek yaşamda da her durumun ilk bakışta net olmayabileceğini gösteriyordu. Bir kartı yanlış seçen öğrenciye yalnız doğru kutu gösterilmiyor, neden o seçeneğin uygun olduğu açıklanıyordu. Böylece oyun ceza vermek yerine anlamayı destekliyordu.\n\nSergiye gelen veliler afişleri incelerken bir anne, “En sevdiğim bölüm hangisi biliyor musunuz?” diye sordu. "
+          "v": " bu seçeneği özellikle sevdi. Gerçek yaşamda da her durumun ilk bakışta net olmayabileceğini gösteriyordu. Bir kartı yanlış seçen öğrenciye yalnız doğru kutu gösterilmiyor, neden o seçeneğin uygun olmadığı açıklanıyordu. Böylece oyun ceza vermek yerine anlamayı destekliyordu.\n\nSergiye gelen veliler afişleri incelerken bir anne, “En sevdiğim bölüm hangisi biliyor musunuz?” diye sordu. "
         },
         {
           "t": "kahraman",
@@ -752,22 +752,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Plastik şişeler"
-        },
-        {
-          "id": "B",
           "metin": "Muz kabukları"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Cam kavanozlar"
+        },
+        {
+          "id": "C",
+          "metin": "Plastik şişeler"
         },
         {
           "id": "D",
           "metin": "Metal kutular"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Kâğıt kutusunda plastik şişeler bulunuyordu."
     },
     {
@@ -778,22 +778,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yetkili kurumların güncel bilgilerini incelemek istedikleri için"
+          "metin": "Afişlerde kullanılacak kâğıtların o hafta tükenmiş olduğu için"
         },
         {
           "id": "B",
-          "metin": "Afişlerin çok pahalı olduğu için"
+          "metin": "Yetkili kurumların güncel bilgilerini incelemek istedikleri için"
         },
         {
           "id": "C",
-          "metin": "Öğretmen izin vermediği için"
+          "metin": "Öğretmen bu konudaki afiş çalışmasına henüz izin vermediği için"
         },
         {
           "id": "D",
-          "metin": "Kutular boş olduğu için"
+          "metin": "Kutuların içindeki atıkların hâlâ yeterince temiz olmadığı için"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Doğru bilgi için yetkili kaynaklar incelenmeliydi."
     },
     {
@@ -804,22 +804,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bulunan sonucun sınırlarını bilmek"
+          "metin": "Sonucu ilk görüşte kabul etmek"
         },
         {
           "id": "B",
-          "metin": "Bütün soruları yok etmek"
+          "metin": "Hiç kayıt tutmadan ilerlemek"
         },
         {
           "id": "C",
-          "metin": "Hiç veri toplamamak"
+          "metin": "Bulunan sonucun sınırlarını bilmek"
         },
         {
           "id": "D",
-          "metin": "Sadece renkli afiş yapmak"
+          "metin": "Görsel tasarıma öncelik vermek"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Bir sonucun hangi koşullarda geçerli olduğunu bilmek, doğru karar için gereklidir."
     },
     {
@@ -830,22 +830,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir ürünü saran ve koruyan kap ya da kılıf"
+          "metin": "Okulda düzenlenen bir sınıf etkinliği"
         },
         {
           "id": "B",
-          "metin": "Bir tür kutu oyunu"
+          "metin": "Atıkları kutulara ayıran görevli kişi"
         },
         {
           "id": "C",
-          "metin": "Bir kâğıt türü"
+          "metin": "Ürünün içinde bulunan saf malzeme"
         },
         {
           "id": "D",
-          "metin": "Bir çöp kovası"
+          "metin": "Bir ürünü saran ve koruyan kap ya da kılıf"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Ambalaj, ürünü koruyan ve taşıyan kaptır."
     }
   ],

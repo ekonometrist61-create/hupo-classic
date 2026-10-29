@@ -32,13 +32,13 @@ etiketler:
     - {id: deyim_hr038, tur: idiom, etiket: "Gözleri dolmak", yuva: hr038_gozleri_doldu, islev: application}
     - {id: kavram_hr038, tur: concept, etiket: "Ritim ve tekrar ile çıkarım", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Müzik kutusunda kaç düğme vardı?", secenekler: [{id: A, metin: "Dört"}, {id: B, metin: "İki"}, {id: C, metin: "Altı"}, {id: D, metin: "Üç"}], dogru: A, aciklama: "Kutunun üzerinde dört küçük düğme vardı."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 5, metin: "Büyükanne gözleri neden doldu?", secenekler: [{id: A, metin: "Melodiyi arkadaşıyla birlikte bestelediğini ve yıllardır hatırladığını"}, {id: B, metin: "Kutu kırılmıştı"}, {id: C, metin: "Sınıfı çok seviyordu"}, {id: D, metin: "Yemek pişirmişti"}], dogru: A, aciklama: "Mektubu okuyunca melodinin ve arkadaşlığın anısı canlandı."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "İpek'in “şifre yalnızca nota değil, bir hatıra” sözü neyi gösterir?", secenekler: [{id: A, metin: "Kutunun açılmasının notalardan çok anılarla bağlı olduğunu"}, {id: B, metin: "Kutunun hiç açılamayacağını"}, {id: C, metin: "Nota bilgisinin önemsiz olduğunu"}, {id: D, metin: "Kutunun altın olduğunu"}], dogru: A, aciklama: "Kutunun sırrı, aile belleğindeki bir anıyla bağlantılıydı."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen duraklama sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Sesin bir süre durması"}, {id: B, metin: "Hızlanması"}, {id: C, metin: "Yükselmesi"}, {id: D, metin: "Kırılması"}], dogru: A, aciklama: "Duraklama, bir sesin ya da hareketin kısa süre durmasıdır."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 5, metin: "Büyükanne gözleri neden doldu?", secenekler: [{id: A, metin: "Kutunun kırık kanadını onarmakta zorlandığı ve üzüldüğü için"}, {id: B, metin: "Sınıfındaki çocuklarla her gün yüksek sesle tartıştığı için"}, {id: C, metin: "Melodiyi arkadaşıyla birlikte bestelediğini ve yıllardır hatırladığını"}, {id: D, metin: "Torunları için akşam yemeği hazırladığı ve mutlu olduğu için"}], dogru: C, aciklama: "Mektubu okuyunca melodinin ve arkadaşlığın anısı canlandı."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "Kahramanın “şifre yalnızca nota değil, bir hatıra” sözü neyi gösterir?", secenekler: [{id: A, metin: "Kutunun hiçbir zaman açılamayacağını ve atılması gerektiğini"}, {id: B, metin: "Nota bilgisinin tamamen önemsiz ve gereksiz olduğunu"}, {id: C, metin: "Kutunun saf altından yapılmış ve çok değerli olduğunu"}, {id: D, metin: "Kutunun açılmasının notalardan çok anılarla bağlı olduğunu"}], dogru: D, aciklama: "Kutunun sırrı, aile belleğindeki bir anıyla bağlantılıydı."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen duraklama sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Sesin bir süre durması"}, {id: B, metin: "Sesin giderek hızlanması"}, {id: C, metin: "Sesin tizleşip yükselmesi"}, {id: D, metin: "Kutunun kapağının kırılması"}], dogru: A, aciklama: "Duraklama, bir sesin ya da hareketin kısa süre durmasıdır."}
 deyim_cumleleri:
   hr038_gozleri_doldu: "Büyükanne mektubu okuyunca gözleri doldu."
 ---
@@ -60,7 +60,7 @@ Torunları {kahraman} ve {yoldas:yalin|bir arkadaş} kutuyu incelemeye başladı
 
 "Belki sırayı doğru, ritmi yanlış çalıyoruz," diye düşündü {kahraman}.
 
-Büyükanne pencerenin yanından eski bir fotoğraf getirdi. Fotoğrafta genç Zeliha, küçük bir çocukla birlikte piyano başındaydı. Kenarına şu cümle yazılmıştı: **Önce iki kısa, sonra bir uzun**. Sonunda hep birlikte sus.
+Büyükanne pencerenin yanından eski bir fotoğraf getirdi. Fotoğrafta genç Zeliha, küçük bir çocukla birlikte piyano başındaydı. Kenarına şu cümle yazılmıştı: **Önce iki kısa, sonra bir uzun. Sonunda hep birlikte sus.**
 ---
 @omurga
 {yoldas:yalin|bir arkadaş} heyecanlandı. "Sonunda bir ses daha yok. Bir {kelime:hr038_duraklama} var!"
@@ -70,9 +70,9 @@ Büyükanne pencerenin yanından eski bir fotoğraf getirdi. Fotoğrafta genç Z
 {yoldas:yalin|bir arkadaş}, kapağı açmadan hemen önce bir kez daha durdu. "Büyükanne, ya içindeki şey kırılacak kadar hassassa?" diye sordu. Zeliha bir bez getirdi ve masanın üzerine serdi. Çocuklar kutuyu onun üstüne koyup kapağını yavaşça kaldırdılar. Sır çözmek onları heyecanlandırıyordu fakat eski eşyalara dikkatle davranmak da önemliydi. Sonradan fark ettiler ki kapakta küçük bir çizik vardı; onu zorlayarak açmaya kalksalardı hatıraya zarar verebilirlerdi.
 ---
 @omurga
-Kutunun içinde altın ya da mücevher yoktu. Küçük bir kart, sararmış bir fotoğraf ve sarı kurdeleli bir mektup vardı. Mektupta, Zeliha'nın çocukluk arkadaşının uzak bir kente taşınmadan önce bu {kelime:hr038_melodi} armağan ettiği yazıyordu.
+Kutunun içinde altın ya da mücevher yoktu. Küçük bir kart, sararmış bir fotoğraf ve sarı kurdeleli bir mektup vardı. Mektupta, Zeliha'nın çocukluk arkadaşının uzak bir kente taşınmadan önce bu {kelime:hr038_melodi}yi armağan ettiği yazıyordu.
 
-"Çocukken birlikte oyun oynardık," diye anlattı Zeliha. "Bir gün bu küçük melodiyi her buluşmamızda çalmaya söz verdik. Sonra taşındılar. Aradan yıllar geçti ama bir melodiyi duyunca sanki arkadaşım yanımdaymış gibi olur." {kahraman}, müziğin yalnızca notalardan oluşmadığını düşündü. Bir şarkı, insanın belleğinde uzak bir güne açılan kapı da olabilirdi. {yoldas:yalin|bir arkadaş} ise fotoğraftaki iki çocuğun yüzlerini dikkatle inceledi; şimdi büyükannesi olan küçük kızın gülüşünü hemen tanıdı.
+"Çocukken birlikte oyun oynardık," diye anlattı Zeliha. "Bir gün bu küçük melodiyi her buluşmamızda çalmaya söz verdik. Sonra taşındılar. Aradan yıllar geçti ama bir melodiyi duyunca sanki arkadaşım yanımdaymış gibi olur." {kahraman}, müziğin yalnızca notalardan oluşmadığını düşündü. Bir şarkı, insanın belleğinde uzak bir güne açılan kapı da olabilirdi. {yoldas:yalin|bir arkadaş} ise fotoğraftaki kişilerin yüzlerini dikkatle inceledi; genç hâlindeki Zeliha'nın gülüşünü hemen tanıdı.
 ---
 @omurga
 [[deyim:hr038_gozleri_doldu]] "Bu melodiyi birlikte bestelemiştik," dedi. "Yıllardır nerede sakladığımı düşünürdüm."

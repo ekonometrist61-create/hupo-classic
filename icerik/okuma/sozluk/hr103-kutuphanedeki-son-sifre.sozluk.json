@@ -90,17 +90,6 @@
       "durum": "taslak"
     },
     {
-      "id": "hr103_kesin_ceviri",
-      "tur": "kelime",
-      "yazim": "kesin çeviri",
-      "anlam": "Tek anlamı kesin olarak verilen, tartışmaya kapalı çeviri.",
-      "sinif_alt": 7,
-      "sinif_ust": 8,
-      "kaynak_turu": "editor_onerisi",
-      "kazanim_kodu": null,
-      "durum": "taslak"
-    },
-    {
       "id": "hr103_kanit",
       "tur": "kelime",
       "yazim": "kanıt",
@@ -207,9 +196,6 @@
         },
         {
           "girdi": "hr103_okuma_onerisi"
-        },
-        {
-          "girdi": "hr103_kesin_ceviri"
         }
       ]
     },

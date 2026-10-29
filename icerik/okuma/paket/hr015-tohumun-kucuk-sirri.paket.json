@@ -4,7 +4,7 @@
     "slug": "hr015-tohumun-kucuk-sirri",
     "baslik": "Tohumun Küçük Sırrı",
     "tur": "bilim",
-    "konu": "bitki_gelisimi",
+    "konu": "bitki",
     "sinif_alt": 3,
     "sinif_ust": 3,
     "okuma_bandi": 2,
@@ -14,59 +14,60 @@
       "arkadas"
     ],
     "deger_anahtarlari": [
-      "D3",
-      "D12"
+      "D12",
+      "D3"
     ],
     "yetiskin_uygun": false,
     "etiketler": {
       "ana_sinif": 3,
       "okuma_zorlugu": 2,
-      "kavram_zorlugu": 2,
+      "kavram_zorlugu": 3,
       "ilgi_egilimi": "ortak",
       "temalar": [
         "bilim_teknoloji",
+        "doga",
         "sabir_emek"
       ],
       "ders_baglantisi": [
         "turkce"
       ],
       "maarif": {
-        "ana_deger": "D3",
-        "yardimci_deger": "D12"
+        "ana_deger": "D12",
+        "yardimci_deger": "D3"
       },
       "ogrenme_hedefleri": [
         {
           "id": "filiz_hr015",
           "tur": "lexeme",
           "etiket": "filiz",
-          "yuva": "hr015_filiz",
+          "yuva": "pa_filiz",
           "islev": "first_hint"
         },
         {
-          "id": "yesermek_hr015",
+          "id": "kosul_hr015",
           "tur": "lexeme",
-          "etiket": "yeşermek",
-          "yuva": "hr015_yesermek",
+          "etiket": "koşul",
+          "yuva": "pa_kosul",
           "islev": "application"
         },
         {
-          "id": "cetvel_hr015",
+          "id": "gozlem_hr015",
           "tur": "lexeme",
-          "etiket": "cetvel",
-          "yuva": "hr015_cetvel",
-          "islev": "application"
-        },
-        {
-          "id": "kas_hr015",
-          "tur": "idiom",
-          "etiket": "Kaşları çatmak",
-          "yuva": "hr015_kas_catmak",
+          "etiket": "gözlem",
+          "yuva": "pa_gozlem",
           "islev": "application"
         },
         {
           "id": "kavram_hr015",
           "tur": "concept",
-          "etiket": "Kontrollü karşılaştırma",
+          "etiket": "Bitki gelişimi ve kontrollü karşılaştırma",
+          "islev": "application"
+        },
+        {
+          "id": "atasoz_hr015",
+          "tur": "proverb",
+          "etiket": "Sabreden derviş muradına ermiş",
+          "yuva": "pa_ata_sabir",
           "islev": "application"
         }
       ],
@@ -78,25 +79,26 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 405,
+        "kelime_sayisi": 393,
         "tahmini_sure_dk": 6,
-        "sayfa_sayisi": 5,
-        "soru_sayisi": 3,
+        "sayfa_sayisi": 8,
+        "soru_sayisi": 5,
         "soru_beceri_dagilimi": {
-          "hatirlama": 1,
+          "hatirlama": 2,
           "cikarim": 1,
+          "yorumlama": 1,
           "sozcuk_baglami": 1
         },
         "hedef_tur_dagilimi": {
           "lexeme": 3,
-          "idiom": 1,
-          "concept": 1
+          "concept": 1,
+          "proverb": 1
         },
         "yoldas_yer_sayisi": 5,
-        "simge_sayisi": 2
+        "simge_sayisi": 12
       }
     },
-    "tanitim": "İki saksı, aynı tohum, farklı büyüme. Ekin neden hemen karar vermek istemedi?",
+    "tanitim": "Aynı paketten çıkan iki fasulyeden biri neden cılız kaldı? Küçük bir deney büyük bir sırrı arıyor.",
     "durum": "taslak",
     "fis_kodu": "HR-015"
   },
@@ -105,37 +107,37 @@
       "omurga": true,
       "parcalar": [
         {
-          "t": "deyim",
-          "yuva": "hr015_kas_catmak"
+          "t": "kahraman",
+          "hal": "yalin"
         },
         {
           "t": "metin",
-          "v": " Aynı gün ektiği fasulyelerden biri "
+          "v": " sınıfta duran iki saksıya bakıp kaşlarını çattı. Aynı gün ektiği fasulyelerden biri yeşermiş, diğeri ise incecik, soluk bir "
         },
         {
           "t": "kelime",
-          "yuva": "hr015_yesermek"
+          "yuva": "pa_filiz"
         },
         {
           "t": "metin",
-          "v": ", diğeri ise incecik, soluk bir "
+          "v": " çıkarmıştı. Üstelik ikisi de aynı tohum"
         },
         {
-          "t": "kelime",
-          "yuva": "hr015_filiz"
+          "t": "ikon",
+          "v": "seed"
         },
         {
           "t": "metin",
-          "v": " çıkarmıştı. Üstelik ikisi de aynı tohum paketindendi.\n\n“Belki karanlığı daha çok seviyordur,” dedi arkadaşı "
+          "v": " paketindendi. \"Belki karanlığı daha çok seviyordur,\" dedi arkadaşı "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": ".\n\n"
+          "v": ". "
         },
         {
           "t": "kahraman",
@@ -143,35 +145,7 @@
         },
         {
           "t": "metin",
-          "v": " başını salladı. “Olabilir. Ama tahminle yetinmeyelim.”\n\nÖğretmenleri deney defterlerini açmalarını istedi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bir sayfayı ikiye böldü. Bir başlığa pencere, diğerine dolap yazdı. İki saksıya da aynı miktarda su verdiklerini kaydetti. İkinci saksı, sınıftaki kapaklı dolabın içinde duruyordu. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ", farklı olan koşulun "
-        },
-        {
-          "t": "vurgu",
-          "v": "ışık"
-        },
-        {
-          "t": "metin",
-          "v": " olduğunu fark etti. "
-        },
-        {
-          "t": "isaret",
-          "kod": "kitap"
+          "v": " başını salladı. \"Olabilir. Ama tahminle yetinmeyelim.\""
         }
       ]
     },
@@ -180,24 +154,15 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Üç gün boyunca her sabah önce ellerini yıkadı, sonra filizlere dokunmadan "
+          "v": "Öğretmenleri deney"
         },
         {
-          "t": "kelime",
-          "yuva": "hr015_cetvel"
-        },
-        {
-          "t": "metin",
-          "v": " boylarını ölçtü. Pencere kenarındaki bitkinin yaprakları genişleyip koyu yeşile döndü. Dolaptakinin gövdesi uzadı ama yaprakları küçük ve sarımsı kaldı.\n\n“Bak, dolaptaki daha uzun!” dedi "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "t": "ikon",
+          "v": "microscope"
         },
         {
           "t": "metin",
-          "v": ". “Demek ki daha iyi büyümüş.”\n\n"
+          "v": " defterlerini açmalarını istedi. "
         },
         {
           "t": "kahraman",
@@ -205,12 +170,99 @@
         },
         {
           "t": "metin",
-          "v": ", defterdeki iki çizimi yan yana getirdi.\n\nO gün "
+          "v": " bir sayfayı ikiye böldü. Bir başlığa "
+        },
+        {
+          "t": "vurgu",
+          "v": "pencere"
+        },
+        {
+          "t": "metin",
+          "v": ", diğerine "
+        },
+        {
+          "t": "vurgu",
+          "v": "dolap"
+        },
+        {
+          "t": "metin",
+          "v": " yazdı. İki saksıya da aynı miktarda su"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " verdiklerini kaydetti. İkinci saksı, sınıftaki kapaklı dolabın içinde duruyordu. Sonra defterine şunu not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " düştü: \"Farklı olan "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_kosul"
+        },
+        {
+          "t": "metin",
+          "v": ": ışık.\" "
+        },
+        {
+          "t": "isaret",
+          "kod": "gunes"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Üç gün boyunca her sabah"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " önce ellerini yıkadı, sonra filizlere dokunmadan cetvelle boylarını ölçtü. Pencere kenarındaki bitkinin yaprakları genişleyip koyu yeşile döndü. Dolaptakinin gövdesi uzadı ama yaprakları küçük ve sarımsı kaldı. \"Bak, dolaptaki daha uzun!\" dedi "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Demek ki daha iyi büyümüş.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterdeki iki çizimi yan yana getirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "O gün "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
@@ -222,16 +274,16 @@
         },
         {
           "t": "metin",
-          "v": " onu nazikçe durdurdu. “Dokunursak gözlemlediğimiz şeyi değiştirebiliriz,” dedi. Öğretmenleri, tohumun karanlıkta da ilk filizini çıkarabildiğini, ancak sağlıklı gelişebilmesi için ışığın önemli olduğunu anlattı. "
+          "v": " onu nazikçe durdurdu. \"Dokunursak gözlemlediğimiz şeyi değiştirebiliriz,\" dedi. Öğretmenleri, tohumun karanlıkta da ilk filizini çıkarabildiğini, ancak sağlıklı gelişebilmesi için ışığın önemli olduğunu anlattı. "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": " düşüncelere daldı. “Öyleyse yalnızca ilk filizin çıkmasına bakıp karar vermek yanlış.” İkisi de deftere bu yeni bilgiyi yazdı."
+          "v": " düşüncelere daldı. \"Öyleyse yalnızca ilk filizin çıkmasına bakıp karar vermek yanlış.\" İkisi de deftere bu yeni bilgiyi yazdı."
         }
       ]
     },
@@ -248,7 +300,15 @@
         },
         {
           "t": "metin",
-          "v": " başka bir sorunla karşılaştı. Dolaptaki saksının toprağı daha ıslak görünüyordu. Acaba gerçekten aynı miktarda su mu vermişlerdi? İki günün kayıtlarını kontrol edip sulama kaplarının üzerindeki çizgileri karşılaştırdılar. Hata yapmadıklarını gördüler; yine de bir deneyde bütün koşulları dikkatle izlemek gerektiğini anladılar. "
+          "v": " başka bir sorunla karşılaştı. Dolaptaki saksının toprağı daha ıslak görünüyordu. Acaba gerçekten aynı miktarda su"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " mu vermişlerdi? İki günün kayıtlarını kontrol edip sulama kaplarının üzerindeki çizgileri karşılaştırdılar. Hata yapmadıklarını gördüler; yine de bir deneyde bütün koşulları dikkatle izlemek gerektiğini anladılar. "
         },
         {
           "t": "kahraman",
@@ -256,19 +316,7 @@
         },
         {
           "t": "metin",
-          "v": " cetvelin yanına küçük bir su kabı resmi çizdi.\n\n“Uzun olması güçlü olduğu anlamına gelir mi? Yapraklarına da bakalım.”\n\nÖğretmenleri açıklama yapmadan önce çocuklardan gözlemlerini anlatmalarını istedi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ", “Bitkiler ışığa ihtiyaç duyuyor olabilir,” dedi. “Ama bir bitkinin gelişimini yalnızca boyuna bakarak anlayamayız.” "
-        },
-        {
-          "t": "isaret",
-          "kod": "gunes"
+          "v": " cetvelin yanına küçük bir su kabı resmi çizdi."
         }
       ]
     },
@@ -277,7 +325,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "O gün dolaptaki saksıyı da pencere kenarına taşıdılar. "
+          "v": "\"Uzun olması güçlü olduğu anlamına gelir mi? Yapraklarına da bakalım,\" dedi "
         },
         {
           "t": "kahraman",
@@ -285,16 +333,41 @@
         },
         {
           "t": "metin",
-          "v": ", “Şimdi ikisine de aynı bakımı yapalım,” diye önerdi. Sarımsı filizi atmak istemiyordu; ona yeni bir fırsat vermek istiyordu.\n\nBir hafta sonra yapraklarda yeşillenme görüldü. "
+          "v": ". Öğretmenleri açıklama yapmadan önce çocuklardan "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pa_gozlem"
+        },
+        {
+          "t": "metin",
+          "v": " sonuçlarını anlatmalarını istedi. \"Bitkiler ışığa ihtiyaç duyuyor olabilir,\" dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Ama bir bitkinin gelişimini yalnızca boyuna bakarak anlayamayız.\" O gün dolaptaki saksıyı da pencere kenarına taşıdılar. \"Şimdi ikisine de aynı bakımı yapalım,\" diye önerdi. Sarımsı filizi atmak istemiyordu; ona yeni bir fırsat vermek istiyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir hafta sonra yapraklarda yeşillenme görüldü. "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": ", “Tohumun sırrını çözdük mü?” diye sordu.\n\n“Bir kısmını,” dedi "
+          "v": ", \"Tohumun sırrını çözdük mü?\" diye sordu. \"Bir kısmını,\" dedi "
         },
         {
           "t": "kahraman",
@@ -302,15 +375,23 @@
         },
         {
           "t": "metin",
-          "v": ". “Su, ışık ve uygun ortam önemli. Ama bütün bitkiler aynı mı, onu da araştırmalıyız.”\n\nDefterinin sonuna bir soru daha yazdı: Kaktüsle fasulye aynı miktarda su ister mi? "
+          "v": ". \"Su"
         },
         {
-          "t": "kahraman",
-          "hal": "yalin"
+          "t": "ikon",
+          "v": "drop"
         },
         {
           "t": "metin",
-          "v": " bu sorunun cevabını henüz bilmiyordu. Bilmediğini söylemek onu üzmedi; aksine ertesi gün için heyecanlandırdı. Çünkü küçük bir tohum, kocaman bir merak başlatmıştı."
+          "v": ", ışık ve uygun ortam önemli. Ama bütün bitkiler aynı mı, onu da araştırmalıyız.\" Bir hafta boyunca sabırla beklemişti. Aklına şu söz geldi: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "pa_ata_sabir"
+        },
+        {
+          "t": "metin",
+          "v": "\"."
         }
       ]
     },
@@ -318,245 +399,233 @@
       "omurga": true,
       "parcalar": [
         {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
           "t": "metin",
-          "v": "Dil hedefi: büyümek–küçülmek, gözlem; Kavram/değer: bitki gelişimi, kontrollü karşılaştırma, sabır. İkon önerileri: tohum, filiz, güneş. Okuma sonrası: Hangi koşul farklıydı? Bitkilerin yalnızca uzunluğuna bakarak karar vermek neden yeterli değil?"
+          "v": " defterinin sonuna bir soru daha yazdı: \"Kaktüsle fasulye aynı miktarda su"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " ister mi?\" Bu sorunun cevabını henüz bilmiyordu. Bilmediğini söylemek onu üzmedi; aksine ertesi gün için heyecanlandırdı. Çünkü küçük bir tohum"
+        },
+        {
+          "t": "ikon",
+          "v": "seed"
+        },
+        {
+          "t": "metin",
+          "v": ", kocaman bir merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " başlatmıştı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
         }
       ]
     }
   ],
   "deger_sahneleri": {},
   "hareket_sahneleri": {},
-  "deyim_cumleleri": {
-    "hr015_kas_catmak": [
-      {
-        "t": "kahraman",
-        "hal": "yalin"
-      },
-      {
-        "t": "metin",
-        "v": ", sınıfın pencere kenarında duran iki saksıya bakıp kaşlarını çattı."
-      }
-    ]
-  },
+  "deyim_cumleleri": {},
   "sorular": [
     {
       "id": "s1",
       "beceri": "hatirlama",
-      "dayanak_sayfa": 1,
-      "metin": "Ekin'in iki saksısından hangisi yeşermişti?",
+      "dayanak_sayfa": 2,
+      "metin": "İki saksı arasında hangi koşul farklıydı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Pencere kenarında duran"
+          "metin": "Verilen su miktarı"
         },
         {
           "id": "B",
-          "metin": "Dolaptaki"
+          "metin": "Aldıkları ışık"
         },
         {
           "id": "C",
-          "metin": "İkisi de soluk olan"
+          "metin": "Tohum paketinin türü"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Pencere kenarındaki fasulye yeşermiş, dolaptakinin filizi soluk kalmıştı."
+      "dogru": "B",
+      "aciklama": "Bir saksı pencere kenarında, diğeri kapaklı dolabın içindeydi; aradaki fark ışıktı."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
-      "dayanak_sayfa": 1,
-      "metin": "İki saksı arasındaki temel fark neydi?",
+      "dayanak_sayfa": 4,
+      "metin": "Öğretmenin anlattıklarından hangisi çıkarılabilir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Işık alıp almaması"
+          "metin": "Tohum karanlıkta filiz verebilir ama sağlıklı büyümesi için ışık önemlidir."
         },
         {
           "id": "B",
-          "metin": "Su miktarı"
+          "metin": "Tohumlar yalnızca karanlıkta büyür."
         },
         {
           "id": "C",
-          "metin": "Tohum paketi"
+          "metin": "Bitkiler için su hiç gerekli değildir."
         }
       ],
       "dogru": "A",
-      "aciklama": "Su aynı miktarda verildi; fark ışıktaydı."
+      "aciklama": "Öğretmen, tohumun karanlıkta da ilk filizini çıkarabildiğini ama sağlıklı gelişmesi için ışığın önemli olduğunu söyledi."
     },
     {
       "id": "s3",
-      "beceri": "sozcuk_baglami",
-      "dayanak_sayfa": 2,
-      "metin": "Metinde geçen cetvelle ne yapıldı?",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 6,
+      "metin": "Çocuğun sarımsı filizi atmayıp pencere kenarına taşıması neyi gösterir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bitkilerin boyu ölçüldü"
+          "metin": "Deneyi bırakmak istediğini"
         },
         {
           "id": "B",
-          "metin": "Su kabı yıkandı"
+          "metin": "Saksıyı sevmediğini"
         },
         {
           "id": "C",
-          "metin": "Tohum ekildi"
+          "metin": "Filizin ışıkla düzelebileceğini denemek istediğini"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Çocuk sarımsı filize yeni bir fırsat vermek istedi."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "Metinde geçen filiz sözcüğü ne anlama gelir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Tohumdan yeni çıkan ince, küçük bitki"
+        },
+        {
+          "id": "B",
+          "metin": "Sulama için kullanılan kap"
+        },
+        {
+          "id": "C",
+          "metin": "Uzunluk ölçmeye yarayan araç"
         }
       ],
       "dogru": "A",
-      "aciklama": "Cetvel, uzunluk ölçmeye yarayan bir araçtır."
+      "aciklama": "Fasulye tohumundan çıkan incecik, soluk bitkiye filiz denir."
+    },
+    {
+      "id": "s5",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 5,
+      "metin": "Çocuklar su miktarının eşit olup olmadığını nasıl kontrol etti?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Saksıların yerlerini değiştirerek"
+        },
+        {
+          "id": "B",
+          "metin": "Kayıtlara ve sulama kaplarındaki çizgilere bakarak"
+        },
+        {
+          "id": "C",
+          "metin": "Toprağı tadarak"
+        }
+      ],
+      "dogru": "B",
+      "aciklama": "İki günün kayıtlarını kontrol edip sulama kaplarındaki çizgileri karşılaştırdılar."
     }
   ],
   "uretim": {
-    "kaynak": "llm_taslak",
+    "kaynak": "elle",
     "tarih": "2026-10-22"
   },
   "sozluk": {
     "sozluk_surumu": 1,
     "girdiler": [
       {
-        "id": "hr015_filiz",
+        "id": "pa_filiz",
         "tur": "kelime",
         "yazim": "filiz",
-        "anlam": "Tohumdan yeni çıkan ilk küçük sürgün.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "anlam": "Tohumdan yeni çıkan ince, küçük bitki.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr015_surgun",
+        "id": "pa_kosul",
         "tur": "kelime",
-        "yazim": "sürgün",
-        "anlam": "Bitkinin köklerinden ya da gövdesinden yeni çıkan dal.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "koşul",
+        "anlam": "Bir işin ya da deneyin olması için gerekli olan durum.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr015_dal",
+        "id": "pa_gozlem",
         "tur": "kelime",
-        "yazim": "dal",
-        "anlam": "Ağacın gövdesinden çıkan kol.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "yazim": "gözlem",
+        "anlam": "Bir şeye dikkatle bakıp onu anlamaya çalışma.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       },
       {
-        "id": "hr015_yesermek",
-        "tur": "kelime",
-        "yazim": "yeşermek",
-        "anlam": "Bitkinin yeşil renk alıp canlanması.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr015_solmak",
-        "tur": "kelime",
-        "yazim": "solmak",
-        "anlam": "Bitkinin rengini kaybedip zayıflaması.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr015_kurumak",
-        "tur": "kelime",
-        "yazim": "kurumak",
-        "anlam": "Suyunu ya da nemini kaybedip kuru hale gelmek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr015_cetvel",
-        "tur": "kelime",
-        "yazim": "cetvel",
-        "anlam": "Uzunluk ölçmeye yarayan düz, çizgili araç.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr015_metre",
-        "tur": "kelime",
-        "yazim": "metre",
-        "anlam": "Uzunluk ölçüsü birimi.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr015_terazi",
-        "tur": "kelime",
-        "yazim": "terazi",
-        "anlam": "Ağırlık ölçmeye yarayan araç.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr015_kas_catmak",
-        "tur": "deyim",
-        "yazim": "kaşlarını çatmak",
-        "anlam": "Hoşnutsuzluğunu yüzünü buruşturarak belli etmek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
-      },
-      {
-        "id": "hr015_gulumsemek",
-        "tur": "kelime",
-        "yazim": "gülümsemek",
-        "anlam": "Yüzünde hoş bir ifadeyle hafifçe gülmek.",
-        "sinif_alt": 2,
-        "sinif_ust": 4
+        "id": "pa_ata_sabir",
+        "tur": "atasozu",
+        "yazim": "Sabreden derviş muradına ermiş",
+        "anlam": "Sabırla bekleyen kişi sonunda istediğine ulaşır.",
+        "sinif_alt": 3,
+        "sinif_ust": 3
       }
     ],
     "yuvalar": [
       {
-        "ad": "hr015_filiz",
+        "ad": "pa_filiz",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr015_filiz"
-          },
-          {
-            "girdi": "hr015_surgun"
-          },
-          {
-            "girdi": "hr015_dal"
+            "girdi": "pa_filiz"
           }
         ]
       },
       {
-        "ad": "hr015_yesermek",
+        "ad": "pa_kosul",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr015_yesermek"
-          },
-          {
-            "girdi": "hr015_solmak"
-          },
-          {
-            "girdi": "hr015_kurumak"
+            "girdi": "pa_kosul"
           }
         ]
       },
       {
-        "ad": "hr015_cetvel",
+        "ad": "pa_gozlem",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr015_cetvel"
-          },
-          {
-            "girdi": "hr015_metre"
-          },
-          {
-            "girdi": "hr015_terazi"
+            "girdi": "pa_gozlem"
           }
         ]
       },
       {
-        "ad": "hr015_kas_catmak",
-        "tur": "deyim",
+        "ad": "pa_ata_sabir",
+        "tur": "atasozu",
         "adaylar": [
           {
-            "girdi": "hr015_kas_catmak"
-          },
-          {
-            "girdi": "hr015_gulumsemek"
+            "girdi": "pa_ata_sabir"
           }
         ]
       }

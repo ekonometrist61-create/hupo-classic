@@ -437,7 +437,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Sunumda dinleyicilere küçük bir oyun oynattılar. Üç kartın üzerinde sırayla şu cümleler yazıyordu: \"Günlükte rüzgâr yönü kaydı var\", \"Kaptan sisli geceyi korkuyla geçirmiş olmalı\", \"Geminin bütün yolculuk rotası biliniyor\". Dinleyiciler hangisinin belgeye dayandığını tartıştı. Mete ilk cümlenin doğrudan desteklendiğini, ikinci cümlenin duygusal yorum olduğunu, üçüncünün ise eldeki bilgilerle savunulamadığını açıkladı. Bu küçük oyun, uzun sunumun en çok ilgi gören bölümü oldu.\n\nMüze görevlileri çocukların hazırladığı panoyu ziyaretçi eğitim alanında bir süre sergilemek istedi. Mete heyecanlandı ama yeni bir koşul koydu: Kendi çizdikleri harita, tarihî gerçek haritaymış gibi gösterilmemeliydi. Deniz Hanım bu öneriyi kabul etti. Panonun altına Öğrenci yorum çalışması ibaresi eklendi. Sarp da kurgu öyküsünü ayrı bir köşede yayımlamak için öğretmeninden izin aldı. Böylece tarih araştırması ve hayal gücü birbirini tamamladı, ama birbirinin yerine geçmedi."
+          "v": "Sunumda dinleyicilere küçük bir oyun oynattılar. Üç kartın üzerinde sırayla şu cümleler yazıyordu: \"Günlükte rüzgâr yönü kaydı var\", \"Kaptan sisli geceyi korkuyla geçirmiş olmalı\", \"Geminin bütün yolculuk rotası biliniyor\". Dinleyiciler hangisinin belgeye dayandığını tartıştı. Mete ilk cümlenin doğrudan desteklendiğini, ikinci cümlenin duygusal yorum olduğunu, üçüncünün ise eldeki bilgilerle savunulamadığını açıkladı. Bu küçük oyun, uzun sunumun en çok ilgi gören bölümü oldu.\n\nMüze görevlileri çocukların hazırladığı panoyu ziyaretçi eğitim alanında bir süre sergilemek istedi. Mete heyecanlandı ama yeni bir koşul koydu: Kendi çizdikleri harita, tarihî gerçek haritaymış gibi gösterilmemeliydi. Deniz Hanım bu öneriyi kabul etti. Panonun altına öğrenci yorum çalışması ibaresi eklendi. Sarp da kurgu öyküsünü ayrı bir köşede yayımlamak için öğretmeninden izin aldı. Böylece tarih araştırması ve hayal gücü birbirini tamamladı, ama birbirinin yerine geçmedi."
         }
       ]
     },
@@ -599,22 +599,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Son sayfası yırtılmıştı"
+          "metin": "Kapağı tamamen kopmuştu"
         },
         {
           "id": "B",
-          "metin": "Kapağı"
+          "metin": "Haritası hiç çizilmemişti"
         },
         {
           "id": "C",
-          "metin": "Haritası"
+          "metin": "Çanı sesini kaybetmişti"
         },
         {
           "id": "D",
-          "metin": "Çanı"
+          "metin": "Son sayfası yırtılmıştı"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Defterin son sayfası yırtılmıştı."
     },
     {
@@ -625,22 +625,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Su örneği alınan duraklar"
+          "metin": "Geminin battığı düşünülen noktalar"
         },
         {
           "id": "B",
-          "metin": "Batma noktaları"
+          "metin": "Su örneği alınan duraklar"
         },
         {
           "id": "C",
-          "metin": "Liman yerleri"
+          "metin": "Gemilerin demirlediği liman yerleri"
         },
         {
           "id": "D",
-          "metin": "Tehlikeli kayalar"
+          "metin": "Dikkat edilmesi gereken kayalık alanlar"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Açıklama kartı çarpıların örnek alınan durakları gösterdiğini belirtiyordu."
     },
     {
@@ -651,22 +651,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir haritanın güzel çizilmiş olması onu doğru yapmaz"
+          "metin": "Haritalar tarihî araştırmalarda hiçbir zaman kullanılmamalı"
         },
         {
           "id": "B",
-          "metin": "Haritalar hiç kullanılmamalı"
+          "metin": "Yalnız yeni çizilmiş haritalar her zaman doğru bilgi verir"
         },
         {
           "id": "C",
-          "metin": "Yalnız yeni haritalar doğrudur"
+          "metin": "Haritalar her koşulda kesin olarak doğru bilgi taşır"
         },
         {
           "id": "D",
-          "metin": "Haritalar kesinlikle doğrudur"
+          "metin": "Bir haritanın güzel çizilmiş olması onu doğru yapmaz"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Kaynağın güvenilirliği ve tarihi kontrol edilmelidir."
     },
     {
@@ -677,22 +677,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Araştırma için alınan örnek"
+          "metin": "Kıyıda kurulmuş bir liman adı"
         },
         {
           "id": "B",
-          "metin": "Bir gemi adı"
+          "metin": "Haritada kıyıyı gösteren bir işaret"
         },
         {
           "id": "C",
-          "metin": "Bir harita işareti"
+          "metin": "Araştırma için alınan örnek"
         },
         {
           "id": "D",
-          "metin": "Bir kitap türü"
+          "metin": "Eski denizcilik kitabı türü"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Numune, incelemek üzere alınan örnektir."
     }
   ],

@@ -1,0 +1,120 @@
+{
+  "belge": "İlk deneme sınavları blueprint'i (2., 3., 4. sınıf), 2026–27",
+  "tarih": "2026-10-24",
+  "durum": "TASLAK. published=false. Kapsam kapısı (K4) açık: işlenmiş konu kaydı yok. Hiçbir sınav yayınlanmadı, veri tabanına yazılmadı.",
+  "kaynaklar": {
+    "yapi_arsivi": "ilkokuldokumanlari.com sınav sayfalarındaki soru dağılımı metinleri (yalnızca yapı). PDF içeriği kopyalanmadı, blueprint olarak da kullanılmadı. Arşiv yerel: Documents\\Hupo-Arsiv\\ilkokul-deneme-sinavlari (repo dışında).",
+    "havuz_sayimi": "public.questions, onay_durumu ve sınıfa göre sayım; salt okunur sorgu, 2026-10-24.",
+    "kazanim_dosyalari": "docs/soru-uretim/pilot/kazanim_2_*.json, kazanim_1-3_hayat_bilgisi.json (resmî teyit yok; K-0103)."
+  },
+  "kapilar": {
+    "talep": "Sınıf ve sınav türü belirlendi; ev ortamı bireysel hazırlık. Okul grubu talebi yok.",
+    "baglam": "1–4. sınıf: okul içi deneme yok. Puan, sıralama, net ve süre baskısı yok. ÇELİŞKİ: veri tabanındaki sınav motoru sıralama üretiyor (admin_get_mock_exam_results). Karar bekliyor.",
+    "program_yili_2026_27": {
+      "2": "TYMM",
+      "3": "TYMM",
+      "4": "GECIS_ONCEKI_PROGRAM: kazanım kodu yürürlükte sayılmaz; source_pending"
+    },
+    "kapsam": "BLOCKED_FOR_COVERAGE. Hiçbir sınıf için öğretmen veya veli onaylı işlenmiş konu listesi yok. Arşiv sitesi ve takvim kanıt sayılmaz.",
+    "okul_profili": "Yok. Okul adına yapı kurulmadı.",
+    "madde_kapisi": "Bekliyor (kapsam kapısı açılmadan madde üretilmez)."
+  },
+  "siniflar": {
+    "2": {
+      "arsiv_yapisi": "Tüm sınavlar: Hayat Bilgisi 10, Türkçe 15, Matematik 15 = 40 soru (sayfa metni, PDF ile teyit edilmedi)",
+      "sinavlar": [
+        {"sira": 1, "ad": "Sene başı seviye tespit", "tur": "sene_basi"},
+        {"sira": 2, "ad": "Ekim–Kasım", "tur": "aylik"},
+        {"sira": 3, "ad": "Kasım–Aralık", "tur": "aylik"},
+        {"sira": 4, "ad": "Aralık–Ocak", "tur": "aylik"},
+        {"sira": 5, "ad": "Mart–Nisan", "tur": "aylik"},
+        {"sira": 6, "ad": "Nisan–Mayıs", "tur": "aylik"},
+        {"sira": 7, "ad": "Mayıs–Haziran", "tur": "aylik"}
+      ],
+      "onerilen_ilk_sinav": "Sene başı seviye tespit",
+      "blueprint_hedef": {"Türkçe": 15, "Matematik": 15, "Hayat Bilgisi": 10},
+      "havuz_onayli": {"Türkçe": 44, "Matematik": 42, "Hayat Bilgisi": 48, "İngilizce": 10},
+      "havuz_zorluk3": {"Türkçe": 5, "Matematik": 7, "Hayat Bilgisi": 4},
+      "havuz_yeterlilik": "Hedef sayısı karşılanır (TR 15/44, MAT 15/42, HB 10/48). Yine de yayın için K4 ve kanıt kapıları gerekir.",
+      "kazanim_kanit_ust_siniri": "B. Kazanım kodları mevcut dosyalarda; resmî metinle teyit edilmedi, A verilmez."
+    },
+    "3": {
+      "arsiv_yapisi": "Aylık sınavlar: Türkçe 13, Matematik 12, Fen Bilimleri 10, Hayat Bilgisi 10, İngilizce 5 = 50 soru. Sene başı: Hayat Bilgisi 15, Türkçe 15, Matematik 15 = 45 soru (sayfa metni, PDF ile teyit edilmedi)",
+      "sinavlar": [
+        {"sira": 1, "ad": "Sene başı deneme", "tur": "sene_basi"},
+        {"sira": 2, "ad": "Ekim–Kasım", "tur": "aylik"},
+        {"sira": 3, "ad": "Kasım–Aralık", "tur": "aylik"},
+        {"sira": 4, "ad": "Aralık–Ocak", "tur": "aylik"},
+        {"sira": 5, "ad": "Mart–Nisan", "tur": "aylik"},
+        {"sira": 6, "ad": "Nisan–Mayıs", "tur": "aylik"},
+        {"sira": 7, "ad": "Mayıs–Haziran", "tur": "aylik"}
+      ],
+      "onerilen_ilk_sinav": "Sene başı deneme (ancak havuz yetersiz; aşağıya bakın)",
+      "blueprint_hedef_sene_basi": {"Türkçe": 15, "Matematik": 15, "Hayat Bilgisi": 15},
+      "blueprint_hedef_aylik": {"Türkçe": 13, "Matematik": 12, "Fen Bilimleri": 10, "Hayat Bilgisi": 10, "İngilizce": 5},
+      "havuz_onayli": {"Türkçe": 10, "Matematik": 10, "Hayat Bilgisi": 10, "Fen Bilimleri": 10, "İngilizce": 10},
+      "havuz_zorluk3": {"Türkçe": 3, "Matematik": 1, "Hayat Bilgisi": 1, "Fen Bilimleri": 1, "İngilizce": 0},
+      "havuz_yeterlilik": "Yetersiz. Sene başı: TR –5, MAT –5, HB –5. Aylık: TR –3, MAT –2. Türkçe ve Matematik'te yeni madde gerekir.",
+      "kazanim_kanit_ust_siniri": "source_pending; resmî 3. sınıf kazanım metni repoda yok. A verilmez."
+    },
+    "4": {
+      "arsiv_yapisi": "Sene başı seviye belirleme: Türkçe 15, Matematik 15, Fen Bilimleri 15, Hayat Bilgisi 15 = 60 soru. Aylık sınavlar: Türkçe 12, Matematik 12, Fen 10, Sosyal Bilgiler 10, Din Kültürü ve Ahlak Bilgisi 8, İngilizce 8 = 60 soru (sayfa metni, PDF ile teyit edilmedi)",
+      "sinavlar": [
+        {"sira": 1, "ad": "Sene başı seviye belirleme", "tur": "sene_basi"},
+        {"sira": 2, "ad": "Ekim", "tur": "aylik"},
+        {"sira": 3, "ad": "Kasım–Aralık", "tur": "aylik"},
+        {"sira": 4, "ad": "Ocak", "tur": "aylik"},
+        {"sira": 5, "ad": "Mart", "tur": "aylik"},
+        {"sira": 6, "ad": "Nisan", "tur": "aylik"},
+        {"sira": 7, "ad": "Mayıs", "tur": "aylik"}
+      ],
+      "onerilen_ilk_sinav": "Yok. Program kararı gerekir (aşağıya bakın).",
+      "uyumsuzluk": "Sene başı sınavında 'Hayat Bilgisi 15' yazıyor, aylık sınavlarda 'Sosyal Bilgiler 10' yazıyor. 4. sınıf programında Hayat Bilgisi yok; Sosyal Bilgiler var. Kaynak metin doğrulanmadan hangisinin doğru olduğu söylenemez.",
+      "havuz_onayli": {"Türkçe": 38, "Matematik": 38, "Sosyal Bilgiler": 38, "Fen Bilimleri": 35, "Din Kültürü ve Ahlak Bilgisi": 10, "İngilizce": 10},
+      "havuz_zorluk3": {"Türkçe": 5, "Matematik": 9, "Sosyal Bilgiler": 5, "Fen Bilimleri": 7, "Din Kültürü ve Ahlak Bilgisi": 1, "İngilizce": 1},
+      "havuz_yeterlilik": "Sene başı için TR, MAT, FEN yeterli. Hayat Bilgisi havuzda yok; Sosyal Bilgiler ile yer değişirse yeterli.",
+      "kazanim_kanit_ust_siniri": "source_pending. 2026–27'de 4. sınıf kazanım kodu yürürlükte sayılmaz. A verilmez."
+    }
+  },
+  "acik_kararlar": [
+    {
+      "no": 1,
+      "konu": "İşlenmiş konu tanımı (K4 kapısı)",
+      "secenekler": [
+        "Sene başı sınavı için önceki sınıfın kazanımları işlenmiş sayılır (kullanıcı onayı gerekir)",
+        "Her sınıf için öğretmenin ders planı veya konu listesi yüklenir",
+        "Sınav üretimi bekler; yalnız blueprint kalır"
+      ]
+    },
+    {
+      "no": 2,
+      "konu": "1–4. sınıfta puan ve sıralama",
+      "secenekler": [
+        "Sınav motoru puan ve sıralama göstermez; yalnız tamamlandı ve geri bildirim (kural uygulanır; uygulama değişikliği gerekir)",
+        "Mevcut davranış kalır; kural istisna sayılır",
+        "1–4. sınıf için deneme motoru kullanılmaz; yalnız ev pratiği"
+      ]
+    },
+    {
+      "no": 3,
+      "konu": "Süre",
+      "secenekler": [
+        "Süre tanımlanmaz (sure_dakika zorunlu, 5–240; ilkeye uygun en yüksek değer seçilir)",
+        "Kullanıcı süre verir"
+      ]
+    },
+    {
+      "no": 4,
+      "konu": "4. sınıf Hayat Bilgisi / Sosyal Bilgiler",
+      "secenekler": [
+        "Sene başı sınavında Sosyal Bilgiler kullanılır (kaynak doğrulanmalı)",
+        "Arşivdeki Hayat Bilgisi korunur"
+      ]
+    }
+  ],
+  "veri_tabani_plani": {
+    "tablolar": ["public.questions (onay_durumu='beklemede' taslak; yayında 'onaylandi')", "public.deneme_sinavlari (aktif=false)", "public.deneme_sinavi_sorulari (sınıf bazlı eşleme)"],
+    "eksik_alanlar": "questions tablosunda kazanım kodu, dayanak ve kanıt durumu yok. Bu bilgi için ayrı tablo veya kolon migration'ı gerekir; karar kullanıcıda.",
+    "uzak_yazma": "Yapılmadı. Uzak DB'ye yazma (ccozfrpnvyrnktpffkwo) kullanıcı onayı gerektirir."
+  }
+}

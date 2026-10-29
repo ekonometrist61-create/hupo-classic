@@ -1,0 +1,952 @@
+[
+  {
+    "id": "FEN4-001",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.1.1",
+    "surec_bileseni": "b",
+    "konu": "Bilimin doğası",
+    "alt_konu": "Bilimsel bilginin değişebilirliği",
+    "soru_metni": "Bir bilim insanı, yıllardır doğru kabul edilen bir bilginin yeni deney sonuçlarıyla desteklenmediğini fark etmiştir. Bu durum bilimin hangi özelliğini gösterir?",
+    "siklar": {
+      "A": "Bilimsel bilgi bir kez bulunduktan sonra kesinlikle hiç değişmez.",
+      "B": "Bilimsel bilgi, yeni kanıtlar bulundukça değişebilir ve gelişebilir.",
+      "C": "Bilimsel bilgi yalnızca ünlü bilim insanlarının görüşlerine dayanır.",
+      "D": "Bilimsel bilgi her insanın kendi isteğine göre değişir."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Bilimsel bilginin kanıtlarla nasıl bir ilişkisi olduğunu düşün.",
+    "cozum_adimlari": [
+      "Bilim insanı, eski bilginin yeni deney sonuçlarıyla desteklenmediğini görmüştür.",
+      "Bilimde bilgi kanıtlara dayanır; yeni kanıtlar eski bilgiyi değiştirebilir.",
+      "Bu nedenle bilimsel bilgi, yeni kanıtlar bulundukça değişebilir ve gelişebilir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Bilimsel bilginin sabit ve kesin olduğu yanılgısı.",
+      "C": "Bilginin kanıta değil, kimin söylediğine dayandığı yanılgısı.",
+      "D": "Bilimi kişisel görüş ya da istek sanma yanılgısı."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-002",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.1.2",
+    "surec_bileseni": "d",
+    "konu": "Bilgi kaynakları",
+    "alt_konu": "Kaynağın güvenilirliği",
+    "soru_metni": "Elif, kuşların neden göç ettiğini araştırıyor. Aşağıdaki kaynaklardan hangisi bu konuda en güvenilir bilgiyi verir?",
+    "siklar": {
+      "A": "Yazarı belli olmayan bir sosyal medya paylaşımı",
+      "B": "Bir arkadaşının kulaktan duyduğu söylenti",
+      "C": "En çok beğeni alan bir eğlence videosu",
+      "D": "Uzmanlarca hazırlanmış bir kuş ansiklopedisi"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Bilginin kimden geldiği ve nasıl doğrulandığı önemlidir.",
+    "cozum_adimlari": [
+      "Güvenilir kaynakta bilgiyi hazırlayan kişi belli olur ve bilgi uzmanlarca denetlenir.",
+      "Söylenti, beğeni sayısı ve yazarı belli olmayan paylaşımlar bilginin doğruluğunu göstermez.",
+      "Uzmanlarca hazırlanmış kuş ansiklopedisi en güvenilir kaynaktır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yazarı bilinmeyen ve denetlenemeyen paylaşımın doğru sanılması.",
+      "B": "Duyuma dayalı bilginin güvenilir sanılması.",
+      "C": "Çok beğenilen içeriğin doğru olduğu yanılgısı."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "suslu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-004",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.2.1",
+    "surec_bileseni": "b",
+    "konu": "Besin içerikleri",
+    "alt_konu": "Yağ testi",
+    "soru_metni": "Kerem; fındık, elma ve ekmek parçalarını sırayla beyaz kâğıda bastırıyor. Yalnızca fındığın kâğıtta saydam bir leke bıraktığını görüyor. Bu deneyden hangi çıkarım yapılır?",
+    "siklar": {
+      "A": "Elma ve ekmek, fındıktan daha fazla yağ içerir.",
+      "B": "Fındık yalnızca protein içeren bir besindir.",
+      "C": "Fındık, diğer iki besinden daha çok yağ içerir.",
+      "D": "Üç besin de birbirine yakın miktarda yağ içerir."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Yağlı besinlerin kâğıtta nasıl bir iz bıraktığını hatırla.",
+    "cozum_adimlari": [
+      "Yağ içeren besinler kâğıtta saydam, yağlı bir leke bırakır.",
+      "Yalnızca fındık leke bırakmıştır; elma ve ekmek leke bırakmamıştır.",
+      "Bu nedenle fındık, diğer iki besinden daha çok yağ içerir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Gözlemi tersine okuma; leke bırakan besin yağlıdır.",
+      "B": "Lekenin proteinden kaynaklandığı yanılgısı.",
+      "D": "Gözlemdeki farkı yok sayıp üç besini eşit sanma."
+    },
+    "zorluk": 2,
+    "soru_tipi": "deney",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-006",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.2.2",
+    "surec_bileseni": "b",
+    "konu": "Vitamin ve mineraller",
+    "alt_konu": "Kalsiyum ve süt ürünleri",
+    "soru_metni": "Süt, yoğurt ve peynir kalsiyum minerali bakımından zengindir. Bu üç besinin ortak özelliği hangisidir?",
+    "siklar": {
+      "A": "Üçü de süt ve süt ürünüdür.",
+      "B": "Üçü de katı hâldedir.",
+      "C": "Üçü de bitkilerden elde edilir.",
+      "D": "Üçü de aynı miktarda yağ içerir."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Her seçeneğin üç besinin tümü için doğru olup olmadığını ayrı ayrı kontrol et.",
+    "cozum_adimlari": [
+      "Süt sıvıdır, yoğurt yarı katıdır, peynir katıdır; bu yüzden hâl ortak özellik değildir.",
+      "Üç besin de hayvansal kaynaklıdır ve yağ miktarları aynı değildir.",
+      "Üç besinin ortak özelliği, süt ve süt ürünü olmalarıdır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Sütün sıvı olduğu gözden kaçıyor.",
+      "C": "Süt ürünlerinin hayvansal kaynaklı olduğu bilinmiyor.",
+      "D": "Kalsiyum benzerliğinden yağ miktarının da aynı olduğu sonucuna varılıyor."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-007",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.2.3",
+    "surec_bileseni": "b",
+    "konu": "Besinlerin işlevleri",
+    "alt_konu": "Proteinin görevi",
+    "soru_metni": "Yara alan bir çocuğun yarasının daha çabuk iyileşmesi için doktor, protein bakımından zengin besinler yemesini öneriyor. Bu öneri hangi neden-sonuç ilişkisine dayanır?",
+    "siklar": {
+      "A": "Yağlar, yaraların üzerini kaplayarak onları kapatır.",
+      "B": "Proteinler, vücut dokularını onarmaya yardımcı olur.",
+      "C": "Vitaminler, vücudun yapı malzemesini doğrudan oluşturur.",
+      "D": "Mineraller, yaraların kapanmasını tek başına sağlar."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Her besin içeriğinin vücutta farklı bir görevi vardır.",
+    "cozum_adimlari": [
+      "Yara iyileşmesi, vücut dokularının onarılması demektir.",
+      "Dokuların büyümesi ve onarılması proteinlerin görevidir.",
+      "Doktorun önerisi, proteinlerin vücudun onarılmasına yardımcı olmasına dayanır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yağın yarayı dıştan kapattığı yanılgısı.",
+      "C": "Yapı malzemesi görevi proteine aitken vitamine verilmiş.",
+      "D": "Tek bir besin içeriğine abartılı görev yüklenmiş."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-008",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.2.3",
+    "surec_bileseni": "ç",
+    "konu": "Besinlerin işlevleri",
+    "alt_konu": "Değişkenleri kontrol etme",
+    "soru_metni": "Mert, \"Kahvaltı yapan öğrenciler gün boyu daha enerjik olur.\" hipotezini sınamak için kahvaltı yapan ve yapmayan iki öğrenci grubu oluşturacak. Deneyin adil olması için ne yapmalıdır?",
+    "siklar": {
+      "A": "İki gruptaki öğrencilerin yaşını farklı seçmeli.",
+      "B": "İki grubun da kahvaltı yapmasını sağlamalı.",
+      "C": "İki grubun yaşını ve uyku süresini benzer tutmalı.",
+      "D": "Kahvaltı yapan gruba gün boyu daha fazla dinlenme vermeli."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Adil bir deneyde sınanan koşul dışındaki koşulların nasıl olması gerektiğini düşün.",
+    "cozum_adimlari": [
+      "Hipotezde değiştirilen koşul kahvaltı yapıp yapmamadır.",
+      "Sonucu etkileyebilecek diğer koşullar, yani yaş ve uyku süresi, iki grupta benzer tutulmalıdır.",
+      "Böylece enerji farkının nedeninin kahvaltı olduğu söylenebilir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yaşı farklı seçmek ikinci bir değişken ekler.",
+      "B": "Sınanan değişken ortadan kalkar, karşılaştırma yapılamaz.",
+      "D": "Dinlenme süresi değiştirilirse sonucun nedeni belirsizleşir."
+    },
+    "zorluk": 3,
+    "soru_tipi": "deney",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-009",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.3.1",
+    "surec_bileseni": "c",
+    "konu": "Dünya’nın şekli",
+    "alt_konu": "Gemi gözlemi",
+    "soru_metni": "Açık denizde kıyıdan uzaklaşan bir geminin önce gövdesi, sonra yelkenleri gözden kayboluyor. Bu gözleme göre Dünya hakkında hangi tahmin yapılır?",
+    "siklar": {
+      "A": "Düz bir yüzeydir; bu yüzden gemi uzaklaştıkça bütün hâlde küçülür.",
+      "B": "Engebelidir; bu yüzden gemi uzaktaki dağların ve tepelerin arkasında kalır.",
+      "C": "Dalgalıdır; bu yüzden dalgalar geminin alt kısmını örter.",
+      "D": "Küre biçimindedir; bu yüzden gemi alttan başlayarak gözden kaybolur."
+    },
+    "dogru_sik": "D",
+    "ipucu": "Geminin hangi bölümünün önce kaybolduğuna dikkat et.",
+    "cozum_adimlari": [
+      "Gemi uzaklaşırken önce gövdesi, sonra yelkenleri kayboluyor.",
+      "Bu, geminin yuvarlak bir yüzeyin arkasına doğru indiğini gösterir.",
+      "Bu nedenle Dünya’nın küre biçiminde olduğu tahmin edilir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Düz yüzeyde geminin parça parça değil, bütün olarak küçüleceği dikkate alınmıyor.",
+      "B": "Açık denizde dağ olmadığı gözden kaçıyor.",
+      "C": "Dalgaların gözlemi açıkladığı yanılgısı."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-010",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.3.2",
+    "surec_bileseni": "a",
+    "konu": "Dünya’nın yapısı",
+    "alt_konu": "Katman modeli",
+    "soru_metni": "Bir öğrenci, haşlanmış yumurtanın kabuğunu, beyazını ve sarısını Dünya’nın katmanlarını göstermek için model olarak kullanıyor. Bu modelde yumurtanın sarısı Dünya’nın hangi bölümünü temsil eder?",
+    "siklar": {
+      "A": "Çekirdeği",
+      "B": "Yer kabuğunu",
+      "C": "Mantoyu",
+      "D": "Atmosferi"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Modeldeki her bölümün Dünya’daki karşılığını sırayla eşleştir.",
+    "cozum_adimlari": [
+      "Yumurtanın kabuğu yer kabuğunu, beyazı mantoyu temsil eder.",
+      "Yumurtanın en içindeki sarı kısım, Dünya’nın merkezindeki bölümü temsil eder.",
+      "Bu bölüm çekirdektir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Kabuk benzetmesi yer kabuğuna aittir, sarıya değil.",
+      "C": "Beyaz kısım mantoyu temsil eder; sarıyla karıştırılıyor.",
+      "D": "Atmosferin Dünya’nın iç katmanı olduğu yanılgısı."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-011",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.3.3",
+    "surec_bileseni": "b",
+    "konu": "Dünya’nın hareketleri",
+    "alt_konu": "Dönme hareketi ve gündüz-gece",
+    "soru_metni": "Bir öğrenci, Güneş’in her gün sabah doğudan doğduğunu ve akşam batıdan battığını gözlemliyor. Bu gözlem aşağıdaki hareketlerden hangisiyle açıklanır?",
+    "siklar": {
+      "A": "Dünya’nın Güneş’in etrafında bir tur atmasıyla",
+      "B": "Güneş’in Dünya’nın etrafında dönmesiyle",
+      "C": "Dünya’nın kendi ekseni etrafında dönmesiyle",
+      "D": "Dünya’nın eksenini sürekli eğik tutmasıyla"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Güneş’in gün içinde gökyüzünde yer değiştirmiş gibi görünmesinin nedenini düşün.",
+    "cozum_adimlari": [
+      "Güneş’in doğudan doğup batıdan batması her gün tekrarlanan bir gözlemdir.",
+      "Bu görünür hareket, Dünya’nın kendi ekseni etrafında dönmesinden kaynaklanır.",
+      "Aynı hareket gündüz ve gecenin oluşmasını sağlar.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Güneş etrafındaki tur yıl sürer; gündüz-gece ile karıştırılıyor.",
+      "B": "Güneş’in hareket ettiği yanılgısı; görünür hareketin nedeni Dünya’nın dönmesidir.",
+      "D": "Eksen eğikliği mevsimlerle ilişkilidir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-012",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.4.1",
+    "surec_bileseni": "a",
+    "konu": "Maddenin hâlleri",
+    "alt_konu": "Sıvıların nitelikleri",
+    "soru_metni": "Su, süt ve zeytinyağı sıvı maddelerdir. Sıvı maddelerle ilgili hangi ifade doğrudur?",
+    "siklar": {
+      "A": "Bulundukları kabın her yerine yayılarak onu doldururlar.",
+      "B": "Akıcıdırlar ve bulundukları kabın şeklini alırlar.",
+      "C": "Kendilerine ait belirli bir şekilleri vardır.",
+      "D": "Sıkıştırılarak hacimleri kolayca küçültülebilir."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Sıvıların katılardan ve gazlardan farkını düşün.",
+    "cozum_adimlari": [
+      "Sıvılar akıcıdır ve bulundukları kabın şeklini alır.",
+      "Belirli bir şekle sahip olmak katıların, kabı tamamen doldurmak ve kolay sıkışmak gazların niteliğidir.",
+      "Bu nedenle doğru ifade sıvıların akıcı olması ve kabın şeklini almasıdır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Gazların niteliği sıvılara verilmiş.",
+      "C": "Katıların niteliği sıvılara verilmiş.",
+      "D": "Gazların sıkıştırılabilirliği sıvılara verilmiş."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "suslu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-013",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.4.1",
+    "surec_bileseni": "c",
+    "konu": "Hâl değişimi",
+    "alt_konu": "Verileri yorumlama",
+    "soru_metni": "Sıcak bir odada açık bir kapta bırakılan buz parçasının durumu kaydediliyor: ilk dakikada tamamen katı, 30. dakikada tamamen sıvı, üç gün sonra kapta çok az su kalmış. Bu verilerde sırasıyla hangi hâl değişimleri gerçekleşmiştir?",
+    "siklar": {
+      "A": "Önce erime, sonra buharlaşma",
+      "B": "Önce donma, sonra erime",
+      "C": "Önce yoğuşma, sonra buharlaşma",
+      "D": "Önce erime, sonra yoğuşma"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Her aşamada maddenin hâlinin nasıl değiştiğine ayrı ayrı bak.",
+    "cozum_adimlari": [
+      "Katı buzun sıvı suya dönmesi erimedir.",
+      "Kapta suyun zamanla azalması, sıvı suyun gaz hâline geçmesi yani buharlaşmadır.",
+      "Sıralama önce erime, sonra buharlaşmadır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Hâl değişimlerinin yönü ters okunuyor.",
+      "C": "Katıdan sıvıya geçiş yoğuşma sanılıyor.",
+      "D": "Su miktarındaki azalma yoğuşma sanılıyor."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-015",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.4.2",
+    "surec_bileseni": "a",
+    "konu": "Isı etkisiyle değişim",
+    "alt_konu": "Deney tasarımı: buharlaşma",
+    "soru_metni": "Bir öğrenci, \"Ortam sıcaklığı arttıkça suyun buharlaşması hızlanır.\" hipotezini sınamak istiyor. İki özdeş kaba aynı miktarda su koyuyor. Hangi düzenek hipotezi sınamak için en uygundur?",
+    "siklar": {
+      "A": "İkisini de aynı yere koyup kaplardan birine daha çok su eklemek ve süreyi ölçmek.",
+      "B": "Birini sıcak, diğerini serin yere koyup aynı süre sonra kalan suyu karşılaştırmak.",
+      "C": "Birini sıcak, diğerini serin yere koyup birini diğerinden daha uzun süre beklemek.",
+      "D": "İkisini de aynı yere koyup yalnızca birinin içine tuz ekleyerek süreyi ölçmek."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Hipotezde sınanan değişken dışındaki her şey iki kapta aynı kalmalıdır.",
+    "cozum_adimlari": [
+      "Hipotezde değiştirilecek değişken ortam sıcaklığıdır.",
+      "Su miktarı, kap ve bekleme süresi iki kapta aynı tutulmalıdır.",
+      "Bu koşulları yalnızca sıcak ve serin yere koyup aynı süre sonra kalan suyu karşılaştıran düzenek sağlar.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Sıcaklık değil su miktarı değiştirilmiş.",
+      "C": "Süre de değiştirildiği için iki değişken aynı anda değişiyor.",
+      "D": "Sıcaklık yerine tuz değişkeni sınanıyor."
+    },
+    "zorluk": 3,
+    "soru_tipi": "deney",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-016",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.5.1",
+    "surec_bileseni": "a",
+    "konu": "Mıknatıs",
+    "alt_konu": "Kutupların etkileşimi",
+    "soru_metni": "Bir öğrenci iki çubuk mıknatısı birbirine yaklaştırıyor. N kutbu ile S kutbunun birbirini çektiğini; N ile N, S ile S kutuplarının ise birbirini ittiğini gözlemliyor. Bu örüntüden hangi genelleme yapılır?",
+    "siklar": {
+      "A": "Aynı kutuplar birbirini çeker, farklı kutuplar iter.",
+      "B": "Mıknatısın kutupları birbiriyle etkileşmez.",
+      "C": "Farklı kutuplar birbirini çeker, aynı kutuplar iter.",
+      "D": "Yalnızca N kutbu diğer mıknatısla etkileşir."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Çekme ve itme olaylarının hangi kutup çiftlerinde görüldüğünü ayrı ayrı yaz.",
+    "cozum_adimlari": [
+      "N ile S kutupları birbirini çekiyor; yani farklı kutuplar çekişiyor.",
+      "N ile N ve S ile S kutupları birbirini itiyor; yani aynı kutuplar itişiyor.",
+      "Genelleme: Farklı kutuplar birbirini çeker, aynı kutuplar iter.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Çekme ve itmenin kutup çiftleri ters verilmiş.",
+      "B": "Gözlemdeki etkileşim yok sayılmış.",
+      "D": "Tek bir kutbun etkin olduğu yanılgısı."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-017",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.5.1",
+    "surec_bileseni": "b",
+    "konu": "Mıknatıs",
+    "alt_konu": "Kutuplarda çekim etkisi",
+    "soru_metni": "Bir çubuk mıknatıs demir tozlarının içine batırılıp çıkarılıyor. Tozların en çok mıknatısın iki ucuna, en az orta kısmına yapıştığı görülüyor. Bu gözlemden hangi sonuç çıkarılır?",
+    "siklar": {
+      "A": "Mıknatısın çekme etkisi orta kısmında en fazladır.",
+      "B": "Mıknatısın çekme etkisi her bölgesinde aynıdır.",
+      "C": "Mıknatısın çekme etkisi yalnızca N kutbundadır.",
+      "D": "Mıknatısın çekme etkisi kutuplarında en fazladır."
+    },
+    "dogru_sik": "D",
+    "ipucu": "Tozların mıknatısın hangi bölgelerinde yoğunlaştığına bak.",
+    "cozum_adimlari": [
+      "Demir tozları en çok mıknatısın iki ucunda toplanmıştır.",
+      "Mıknatısın iki ucu kutuplardır.",
+      "Bu nedenle çekme etkisi kutuplarda en fazladır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Gözlemin tersi; en az toz tutan bölge etkisi en fazla sanılıyor.",
+      "B": "Toz dağılımındaki fark yok sayılıyor.",
+      "C": "Etkinin tek kutupta olduğu yanılgısı; iki uçta da toz toplanmıştır."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-018",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.5.2",
+    "surec_bileseni": "ç",
+    "konu": "Mıknatısın etki ettiği maddeler",
+    "alt_konu": "Gözleme dayalı tahmin",
+    "soru_metni": "Bir mıknatıs demir çiviyi ve demir bilyeyi çekiyor; plastik kalemi, cam bardağı ve bakır teli çekmiyor. Bu gözlemlere dayanarak hangi tahmin yapılabilir?",
+    "siklar": {
+      "A": "Demirden yapılmış bir somun mıknatıs tarafından çekilir.",
+      "B": "Metalden yapılmış tüm cisimler mıknatıs tarafından çekilir.",
+      "C": "Parlak yüzeyli tüm cisimler mıknatıs tarafından çekilir.",
+      "D": "Ağır olan tüm cisimler mıknatıs tarafından çekilir."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Mıknatısın çektiği cisimlerin ortak yönüne bak.",
+    "cozum_adimlari": [
+      "Mıknatıs demirden yapılmış cisimleri çekmiştir; metal olan bakır teli çekmemiştir.",
+      "Çekilen cisimlerin ortak özelliği demirden yapılmış olmalarıdır.",
+      "Bu nedenle demirden yapılmış bir somunun da çekileceği tahmin edilir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Bakır telin çekilmediği gözlemi göz ardı ediliyor.",
+      "C": "Parlaklığın belirleyici olduğu yanılgısı.",
+      "D": "Ağırlığın belirleyici olduğu yanılgısı."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-019",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.5.2",
+    "surec_bileseni": "d",
+    "konu": "Mıknatısın etki ettiği maddeler",
+    "alt_konu": "Tahminin geçerliği",
+    "soru_metni": "Ali, \"Mıknatıs bütün metalleri çeker.\" tahmininde bulunuyor. Mıknatısı alüminyum folyoya ve bakır tele yaklaştırıyor; ikisinin de çekilmediğini görüyor. Ali’nin tahmini için ne söylenebilir?",
+    "siklar": {
+      "A": "Geçerlidir, çünkü alüminyum ve bakır gerçek metal sayılmaz.",
+      "B": "Geçerli değildir, çünkü bazı metaller çekilmemiştir.",
+      "C": "Geçerlidir, çünkü mıknatıs yeterince güçlü olmamıştır.",
+      "D": "Geçerli değildir, çünkü mıknatıslar hiçbir metali çekmez."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Tahmini gözlem sonucuyla karşılaştır.",
+    "cozum_adimlari": [
+      "Tahmine göre tüm metaller çekilmelidir.",
+      "Alüminyum ve bakır birer metaldir, ancak çekilmemiştir.",
+      "Gözlem tahminle çeliştiği için tahmin geçerli değildir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Gözlemi açıklamak için yanlış bilgi uydurma.",
+      "C": "Tahmini kurtarmak için sonucu yok sayma.",
+      "D": "Aşırı genelleme; demir gibi metaller çekilir."
+    },
+    "zorluk": 3,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-020",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.5.3",
+    "surec_bileseni": "b",
+    "konu": "Mıknatısın kullanım alanları",
+    "alt_konu": "Model geliştirme",
+    "soru_metni": "Zeynep, kapağı kendiliğinden kapanıp kapalı kalan bir kutu yapmak istiyor. Kutunun ve kapağın kenarına birer mıknatıs yapıştırıyor; kapağı kapatınca kapağın itilerek açıldığını görüyor. Zeynep modelini nasıl düzeltmelidir?",
+    "siklar": {
+      "A": "Kapaktaki mıknatısın yerine plastik bir parça yapıştırmalıdır.",
+      "B": "Mıknatısların birbirine bakan kutuplarını aynı yapmalıdır.",
+      "C": "Mıknatısların birbirine bakan kutuplarını farklı yapmalıdır.",
+      "D": "Kapaktaki mıknatısı daha güçlü bir mıknatısla değiştirmelidir."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Kapağın neden itildiğini kutupların etkileşimiyle açıkla.",
+    "cozum_adimlari": [
+      "Kapak itiliyorsa mıknatısların birbirine bakan kutupları aynıdır.",
+      "Aynı kutuplar iter, farklı kutuplar çeker.",
+      "Kapağın kapalı kalması için birbirine bakan kutuplar farklı olmalıdır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Plastik mıknatıs tarafından çekilmez, kapak kapalı kalmaz.",
+      "B": "Aynı kutupların çektiği yanılgısı.",
+      "D": "Aynı kutuplar bakıyorsa daha güçlü mıknatıs yalnızca daha çok iter."
+    },
+    "zorluk": 3,
+    "soru_tipi": "problem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-022",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.6.1",
+    "surec_bileseni": "c",
+    "konu": "Basit elektrik devresi",
+    "alt_konu": "Devre elemanının işlevi",
+    "soru_metni": "Pil, ampul, anahtar ve kablolardan oluşan basit bir devrede anahtar kapatılınca ampul yanıyor, anahtar açılınca ampul sönüyor. Bu gözlem anahtar için hangi sonuca ulaştırır?",
+    "siklar": {
+      "A": "Anahtar, devreye elektrik enerjisi sağlayan elemandır.",
+      "B": "Anahtar, ampule ışık verme görevini üstlenen elemandır.",
+      "C": "Anahtar, pilin ömrünü uzatarak devreyi sürekli çalıştırır.",
+      "D": "Anahtar, devreyi açıp kapatarak akımın geçişini denetler."
+    },
+    "dogru_sik": "D",
+    "ipucu": "Anahtar açıkken ve kapalıyken devrede akımın durumunu karşılaştır.",
+    "cozum_adimlari": [
+      "Anahtar kapalıyken devre tamamlanır ve ampul yanar.",
+      "Anahtar açıkken devre kesilir ve ampul söner.",
+      "Bu, anahtarın devreyi açıp kapatarak akımın geçişini kontrol ettiğini gösterir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Anahtarın enerji kaynağı olduğu yanılgısı; enerjiyi pil sağlar.",
+      "B": "Işık veren elemanın ampul olduğu karıştırılıyor.",
+      "C": "Anahtarın pili güçlendirdiği yanılgısı."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-023",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.6.2",
+    "surec_bileseni": "a",
+    "konu": "Enerji kaynakları",
+    "alt_konu": "Yenilenebilir kaynaklar",
+    "soru_metni": "Elektrik üretiminde kullanılan aşağıdaki enerji kaynaklarından hangisi yenilenebilirdir?",
+    "siklar": {
+      "A": "Kömür",
+      "B": "Rüzgâr",
+      "C": "Doğal gaz",
+      "D": "Petrol"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Kullanıldıkça kısa sürede doğada yeniden oluşan kaynağı bul.",
+    "cozum_adimlari": [
+      "Kömür, doğal gaz ve petrol çok uzun sürede oluşur ve kullanıldıkça tükenir.",
+      "Rüzgâr ise doğada sürekli yenilenir.",
+      "Bu nedenle yenilenebilir kaynak rüzgârdır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Fosil yakıtın yenilenebilir sanılması.",
+      "C": "Fosil yakıtın yenilenebilir sanılması.",
+      "D": "Fosil yakıtın yenilenebilir sanılması."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "suslu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-024",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.6.2",
+    "surec_bileseni": "c",
+    "konu": "Enerji kaynakları",
+    "alt_konu": "Sürdürülebilirlik",
+    "soru_metni": "Bir ülke elektriğinin çoğunu kömür yakarak üretiyor ve kömür rezervleri yüz yıl içinde tükenebilir. Ülke uzun süre elektrik üretmeye devam etmek için ne yapmalıdır?",
+    "siklar": {
+      "A": "Kömür yerine petrol ve doğal gazı yaygınlaştırmalıdır.",
+      "B": "Kömür kullanımını artırarak üretimi hızlandırmalıdır.",
+      "C": "Güneş ve rüzgâr gibi kaynakların payını artırmalıdır.",
+      "D": "Elektrik üretim miktarını sürekli olarak azaltmalıdır."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Kaynağın tükenmesi sorununa kalıcı çözüm sunan seçeneği ara.",
+    "cozum_adimlari": [
+      "Kömür tükenen bir kaynaktır; kullanımı arttırmak sorunu büyütür.",
+      "Petrol ve doğal gaz da tükenen kaynaklardır, elektrik ihtiyacını sürekli karşılamaz.",
+      "Güneş ve rüzgâr gibi kaynaklar tükenmediği için sürdürülebilir çözümdür.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Petrol ve doğal gazın da tükenen kaynaklar olduğu gözden kaçıyor.",
+      "B": "Rezervin tükenmesini hızlandıran çözüm sürdürülebilir sanılıyor.",
+      "D": "Sorun üretimden vazgeçmekle çözülür sanılıyor; ihtiyaç karşılanmaz."
+    },
+    "zorluk": 2,
+    "soru_tipi": "problem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-025",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.7.1",
+    "surec_bileseni": "b",
+    "konu": "Işık ve görme",
+    "alt_konu": "Işığın görmedeki rolü",
+    "soru_metni": "Bir öğrenci, pencereleri tamamen kapatılmış karanlık bir odada masadaki kitaba bakıyor ve kitabı göremiyor. Lambayı yaktığında kitabı görüyor. Bu deney, görmenin gerçekleşmesi için neye gerek olduğunu gösterir?",
+    "siklar": {
+      "A": "Kitabın kapağının renkli olmasına",
+      "B": "Gözlerin kitaba çok yakın durmasına",
+      "C": "Odanın tavanının yüksek olmasına",
+      "D": "Ortamda ışığın bulunmasına"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Lamba yanmadan önce ve yandıktan sonra ortamda ne değiştiğine bak.",
+    "cozum_adimlari": [
+      "Karanlık odada, gözler açık olduğu hâlde kitap görülemiyor.",
+      "Lamba yanınca ortamda ışık oluşuyor ve kitap görülüyor.",
+      "Görmenin gerçekleşmesi için ortamda ışığın bulunması gerekir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Nesnenin rengi görmenin ön koşulu sanılıyor.",
+      "B": "Yakınlığın görme için belirleyici olduğu yanılgısı.",
+      "C": "Alakasız bir değişkenin görmeyi etkilediği sanılıyor."
+    },
+    "zorluk": 1,
+    "soru_tipi": "deney",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-026",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.7.1",
+    "surec_bileseni": "b",
+    "konu": "Işık ve görme",
+    "alt_konu": "Görme modeli",
+    "soru_metni": "Bir öğrenci, nesneleri gözünden çıkan ışınların nesneye çarpmasıyla gördüğünü düşünüyor. Karanlık bir odada gözleri açık hâlde kitaba bakınca göremiyor; el fenerini yakınca kitabı görüyor. Bu gözlem öğrencinin düşüncesi için ne gösterir?",
+    "siklar": {
+      "A": "Düşüncesi desteklenir; çünkü gözleri açık olduğunda görmüştür.",
+      "B": "Düşüncesi desteklenmez; çünkü nesneden gelen ışık göze ulaşınca görürüz.",
+      "C": "Düşüncesi desteklenir; çünkü el feneri gözden ışın çıkmasını sağlar.",
+      "D": "Düşüncesi desteklenmez; çünkü karanlıkta gözler görme yeteneğini yitirir."
+    },
+    "dogru_sik": "B",
+    "ipucu": "El fenerinin yandığı ve yanmadığı durumlardaki sonuçları karşılaştır.",
+    "cozum_adimlari": [
+      "Gözler açıkken karanlıkta kitap görülemiyor; fener yanınca görülüyor.",
+      "Gözden çıkan ışınlar görmeyi sağlıyor olsaydı karanlıkta da görülebilirdi.",
+      "Görme, ışığın nesneye çarpıp göze ulaşmasıyla gerçekleşir; öğrencinin düşüncesi desteklenmez.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Gözler açıkken karanlıkta görülemediği gözden kaçıyor.",
+      "C": "Fenerin gözden ışın çıkardığı yanılgısı.",
+      "D": "Karanlıkta görememe gözün bozulmasına bağlanıyor."
+    },
+    "zorluk": 3,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-027",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.7.2",
+    "surec_bileseni": "a",
+    "konu": "Işık kaynakları",
+    "alt_konu": "Doğal ışık kaynağı",
+    "soru_metni": "Gökyüzünde geceleri görülen cisimlerden hangisi kendi ışığını yayan doğal bir ışık kaynağıdır?",
+    "siklar": {
+      "A": "Gökyüzündeki bir yıldız",
+      "B": "Dolunayda parlak görünen Ay",
+      "C": "Parlak görünen Venüs gezegeni",
+      "D": "Yörüngedeki yapay bir uydu"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Kendi ışığını yayan ile ışığı yansıtan cismi ayırt et.",
+    "cozum_adimlari": [
+      "Ay, Venüs ve yapay uydular Güneş’ten gelen ışığı yansıtarak görünür.",
+      "Yıldızlar kendi ışığını yayar ve doğal olarak oluşmuştur.",
+      "Bu nedenle doğru cevap yıldızdır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Ay’ın Güneş ışığını yansıttığı bilinmiyor.",
+      "C": "Gezegenin parlak görünmesi ışık yaydığı sanılıyor.",
+      "D": "Uydunun parlak görünmesi ışık yaydığı sanılıyor."
+    },
+    "zorluk": 2,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-028",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.7.2",
+    "surec_bileseni": "b",
+    "konu": "Işık kaynakları",
+    "alt_konu": "Doğal ve yapay karşılaştırma",
+    "soru_metni": "Güneş ile ampul karşılaştırıldığında hangi ifade doğrudur?",
+    "siklar": {
+      "A": "İkisi de doğal ışık kaynakları arasında yer alır.",
+      "B": "İkisi de yapay ışık kaynakları arasında yer alır.",
+      "C": "Güneş doğal, ampul yapay bir ışık kaynağıdır.",
+      "D": "Güneş ışığı yansıtır, ampul ışık yayan bir kaynaktır."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Her ışık kaynağının doğada kendiliğinden mi var olduğuna, insan yapımı mı olduğuna bak.",
+    "cozum_adimlari": [
+      "Güneş doğada kendiliğinden vardır ve kendi ışığını yayar; doğal ışık kaynağıdır.",
+      "Ampul insan tarafından yapılmıştır ve ışık yayar; yapay ışık kaynağıdır.",
+      "Bu nedenle Güneş doğal, ampul yapay bir ışık kaynağıdır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ampulün insan yapımı olduğu gözden kaçıyor.",
+      "B": "Güneş’in doğal olduğu gözden kaçıyor.",
+      "D": "Güneş’in kendi ışığını yaydığı bilinmiyor."
+    },
+    "zorluk": 2,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "FEN4-029",
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "FB.4.7.3",
+    "surec_bileseni": "c",
+    "konu": "Işık kirliliği",
+    "alt_konu": "Canlılara etkisi",
+    "soru_metni": "Deniz kaplumbağası yavruları gece denize doğru ilerler. Kıyıdaki otellerin parlak ışıkları yavruların yönünü şaşırtıyor ve bazıları karaya yöneliyor. Bu sorunu azaltmak için en uygun çözüm hangisidir?",
+    "siklar": {
+      "A": "Gece kıyıdaki ışıkları kısıp aşağıya yönlendirmek",
+      "B": "Kıyıdaki ışıkları geceleri daha da parlak yapmak",
+      "C": "Kıyıya geceleri çalışan yeni lambalar yerleştirmek",
+      "D": "Yumurtaları gece aydınlık otel bahçelerine taşımak"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Sorunu çıkaran etkenin ne olduğunu belirle.",
+    "cozum_adimlari": [
+      "Yavruların yönünü şaşırtan etken, kıyıdaki parlak yapay ışıklardır.",
+      "Işığı artırmak ya da yeni lamba eklemek sorunu büyütür.",
+      "Işıkları kısıp aşağıya yönlendirmek yavruların yön bulmasını kolaylaştırır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Işığın artırılmasının sorunu çözeceği yanılgısı.",
+      "C": "Yeni ışık kaynağı eklemek sorunu büyütür.",
+      "D": "Yavruların doğal ortamdan uzaklaştırılması ve ışığa maruz bırakılması."
+    },
+    "zorluk": 2,
+    "soru_tipi": "problem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  }
+]

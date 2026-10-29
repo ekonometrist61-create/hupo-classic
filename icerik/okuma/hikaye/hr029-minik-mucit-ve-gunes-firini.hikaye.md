@@ -34,9 +34,9 @@ etiketler:
   program_surumu: "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Ece iki kutunun içine ne koydu?", secenekler: [{id: A, metin: "Termometre"}, {id: B, metin: "Yiyecek"}, {id: C, metin: "Su kabı"}], dogru: A, aciklama: "Ece iki kutunun içine de termometre koydu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Güneşte duran kutu neden daha sıcaktı?", secenekler: [{id: A, metin: "Güneş enerjisi kutuyu ısıtıyordu"}, {id: B, metin: "İçinde ateş vardı"}, {id: C, metin: "Kutu daha büyüktü"}], dogru: A, aciklama: "Kutunun içinde ateş yoktu; güneşten gelen enerji kutuyu ısıtıyordu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Ece'nin “tek bir sonuç” düşüncesi neyi gösterir?", secenekler: [{id: A, metin: "Birden fazla ölçümü ve koşulu birlikte değerlendirmek gerektiğini"}, {id: B, metin: "Deneyin hiç yapılmaması gerektiğini"}, {id: C, metin: "Sonucun her zaman doğru olduğunu"}], dogru: A, aciklama: "Bulutlar gibi değişkenler sonucu etkileyebildiği için tek ölçüm yetmez."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kahraman iki kutunun içine ne koydu?", secenekler: [{id: A, metin: "Yiyecek"}, {id: B, metin: "Su kabı"}, {id: C, metin: "Termometre"}], dogru: C, aciklama: "Kahraman iki kutunun içine de termometre koydu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Güneşte duran kutu neden daha sıcaktı?", secenekler: [{id: A, metin: "İçinde ateş vardı"}, {id: B, metin: "Güneş enerjisi kutuyu ısıtıyordu"}, {id: C, metin: "Kutu daha büyüktü"}], dogru: B, aciklama: "Kutunun içinde ateş yoktu; güneşten gelen enerji kutuyu ısıtıyordu."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Kahramanın “tek bir sonuç” düşüncesi neyi gösterir?", secenekler: [{id: A, metin: "Deneyin hiç yapılmaması gerektiğini"}, {id: B, metin: "Sonucun her zaman doğru olduğunu"}, {id: C, metin: "Birden fazla ölçümü ve koşulu birlikte değerlendirmek gerektiğini"}], dogru: C, aciklama: "Bulutlar gibi değişkenler sonucu etkileyebildiği için tek ölçüm yetmez."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen saydam sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Işığın geçebildiği kadar açık, şeffaf"}, {id: B, metin: "Renkli"}, {id: C, metin: "Ağır"}], dogru: A, aciklama: "Saydam, ışığı geçiren malzeme demektir."}
 ---
 @omurga
@@ -57,8 +57,6 @@ Deneyin başında {yoldas:yalin|bir arkadaş} güneşteki kutuyu daha sık açma
 ---
 @omurga
 İkinci ölçümde {yoldas:yalin|bir arkadaş}, gölgede duran kutunun da biraz ısındığını görünce şaşırdı. “O kutuya doğrudan güneş gelmedi,” dedi. Öğretmen, havanın sıcaklığının da değişebileceğini söyledi. {kahraman}, “Öyleyse iki kutunun farkına birlikte bakmalıyız,” diyerek her ikisinin değerini yeniden okudu. Bir deneyde tek bir sonucun her şeyi anlatmayacağını fark etmişti.
-
-Öğleye doğru bulutlar güneşin önünü kapattı.
 
 Öğleye doğru bulutlar güneşin önünü kapattı. İkinci ölçüm bekledikleri kadar yüksek çıkmadı. {yoldas:yalin|bir arkadaş}, “Deney bozuldu,” diye üzüldü. {kahraman} defterdeki önceki değerleri gösterdi. “Hayır, yeni bir bilgi öğrendik. Hava durumu da sonucu etkileyebiliyor.”
 ---

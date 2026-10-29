@@ -1,0 +1,522 @@
+{
+  "surum": "1",
+  "parti": {
+    "parti_id": "soru-uretim-2026-10-23-8sinif-turkce-p1",
+    "aciklama": "8. sınıf Türkçe parti 1 (12 soru). Yazar: Haiku 5.5 (ana oturum). Kapı ve benzerlik kontrolü yapıldı; kör çözüm ve kör kalite denetimi YAPILMADI. Yayın kapısı bekliyor."
+  },
+  "kaynaklar": [],
+  "sorular": [
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-001",
+      "konu": "Metin tahmini",
+      "alt_konu": "Giriş bölümünden içerik tahmini",
+      "zorluk": 2,
+      "soru_metni": "Başlık: Kent Bahçelerinin Yeniden Doğuşu\n\nYıllar önce kentlerde bahçe denince akla yalnızca köy evleri gelirdi. Bugün ise apartmanların çatılarında, boş arsalarda ve okul bahçelerinde sebze yetiştiren insanlar var. Bu değişim, kentli insanların doğaya olan özlemiyle ve gıdaya ulaşma biçimlerini yeniden düşünmesiyle yakından ilgili.\n\nBaşlığı ve giriş bölümünü okuyan biri, metnin devamında hangi konunun ele alınmasını en çok bekler?",
+      "siklar": {
+        "A": "Köy evlerinde kullanılan geleneksel tarım aletlerinin tarihi",
+        "B": "Kentlerde sebze yetiştirmenin nedenleri ve bu uygulamanın yaygınlaşması",
+        "C": "Apartman yönetimlerinin ortak giderlerinin nasıl paylaştırılacağı",
+        "D": "Tarım ürünlerinin uluslararası ticaretinde yaşanan gelişmeler"
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Başlık ve giriş, kentlerde bahçecilik yapıldığını ve bu değişimin nedenlerinin ele alınacağını gösteriyor.",
+        "A ve D, giriş bölümünde hiç geçmeyen konulardır.",
+        "C, apartman giderleriyle ilgilidir; girişte bu konuya değinilmemiştir.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Girişte anlatılan değişimin nedenlerini ve sonuçlarını düşün."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Köy evlerinin girişte geçmesini metnin konusu sanan öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Apartman çatılarının geçmesini ortak gider konusuna bağlayan öğrenci için çekici.",
+        "D": "Gıda sözcüğünü uluslararası ticaretle ilişkilendiren öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.3",
+      "kazanim_metni": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-002",
+      "konu": "Söz varlığı",
+      "alt_konu": "Bağlamdan anlam tahmini",
+      "zorluk": 1,
+      "soru_metni": "Dağ yolu, sarp bir yamacın kenarından kıvrılarak ilerliyordu. Yolcular, kayaların gökyüzüne uzanan yüksekliğine bakıp adımlarını dikkatle atıyordu.\n\nMetinde geçen “sarp” sözcüğü, bağlama göre hangi anlama en yakındır?",
+      "siklar": {
+        "A": "dik ve yüksek",
+        "B": "yumuşak ve kaygan",
+        "C": "geniş ve düz",
+        "D": "sessiz ve ıssız"
+      },
+      "dogru_sik": "A",
+      "cozum_adimlari": [
+        "Yol, sarp bir yamacın kenarından kıvrılarak ilerliyor.",
+        "Yolcular, kayaların gökyüzüne uzanan yüksekliğine bakıp dikkatle yürüyor; bu, sarp sözcüğünün dik ve yüksek anlamına geldiğini gösterir.",
+        "Doğru cevap A seçeneğidir."
+      ],
+      "ipuclari": [
+        "Cümlede yolcuların neden dikkatli davrandığını düşün."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğru.",
+        "B": "Yolun kaygan olduğunu varsayan öğrenci için çekici.",
+        "C": "Yolun düz olduğunu varsayan öğrenci için çekici.",
+        "D": "Dağın ıssızlığını sözcükle karıştıran öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.4",
+      "kazanim_metni": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-003",
+      "konu": "Metnin yüzey anlamı",
+      "alt_konu": "Doğrudan verilen bilgiyi bulma",
+      "zorluk": 1,
+      "soru_metni": "Bal arıları, çiçeklerden topladıkları nektarı ve çiçek tozunu kovana taşır. Kovanda nektardaki su oranını azaltan arılar, bu besini petek gözlerinde depolar.\n\nMetne göre bal arıları, çiçeklerden topladıkları nektarla kovanda ne yapar?",
+      "siklar": {
+        "A": "Nektarı çiçeklerin yanında bırakıp kovana boş döner.",
+        "B": "Nektardan çiçek tozunu ayırıp kovanın dışına atar.",
+        "C": "Nektardaki suyu azaltıp petek gözlerinde saklar.",
+        "D": "Nektarı kovanın duvarlarına sürerek kurutur."
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Metinde arılar nektarı kovana taşır.",
+        "Kovanda nektarın su oranı azaltılır ve bal petek gözlerinde depolanır.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Metindeki işlem sırasını takip et: taşır, azaltır, depolar."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Nektarın kovana taşınmasını gereksiz sanan öğrenci için çekici.",
+        "B": "Nektar ile çiçek tozunu karıştıran öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Kurutma işlemini metinde olmayan bir yöntemle karıştıran öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.5",
+      "kazanim_metni": "Metnin yüzey anlamını belirleyebilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-004",
+      "konu": "Basit çıkarım",
+      "alt_konu": "Olaylar arasında neden-sonuç ilişkisi",
+      "zorluk": 2,
+      "soru_metni": "Ahmet her sabah altıda kalkıyor ve kahvaltısından önce yarım saat koşuya çıkıyor. Okul servisini kaçırdığı günlerde yürüyerek okula gidiyor. Son haftalarda derslerine daha hazırlıklı girdiğini öğretmeni fark etti.\n\nMetinden hareketle Ahmet’in son haftalarda derslerindeki değişime ilişkin en makul çıkarım hangisidir?",
+      "siklar": {
+        "A": "Ahmet okul servisinden hiç yararlanmamaktadır.",
+        "B": "Ahmet’in derslere hazırlıklı girmesinin nedeni öğretmeninin ona ayrı ders vermesidir.",
+        "C": "Düzenli kalkma ve koşu alışkanlığı, Ahmet’in derslere daha hazırlıklı girmesine katkı sağlamış olabilir.",
+        "D": "Ahmet koşuyu bırakıp yalnızca yürümeye başlamıştır."
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Metinde Ahmet’in düzenli bir sabah rutini olduğu anlatılır.",
+        "Öğretmenin son haftalarda derse daha hazırlıklı girdiğini fark ettiği bildirilir.",
+        "Bu iki bilgi birlikte düşünülürse düzenli alışkanlığın derse hazırlık üzerinde olumlu etkisi olabileceği çıkarılır.",
+        "A, metinde olmayan bir kesinlik içerir; B desteklenmeyen bir nedene dayanır; D metinle çelişir.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Metinde anlatılan düzenli alışkanlıkla derse hazırlık arasında bir bağ olup olmadığını düşün."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Servis kaçırma durumunu genelleyen öğrenci için çekici.",
+        "B": "Öğretmenin rolünü tek neden sanan öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Koşu alışkanlığını bırakıldığını sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.7",
+      "kazanim_metni": "Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-005",
+      "konu": "Üst düzey çıkarım",
+      "alt_konu": "Toplumsal etkiyi yorumlama",
+      "zorluk": 3,
+      "soru_metni": "Kasabada yıllardır süren bir gelenek vardır: bayram sabahı komşular birbirinin kapısını çalar, ikram edilen tatlılar kapı kapı dolaşır. Bu gelenek sayesinde kasabada uzun süredir kimse yalnız kalmamıştır. Yeni taşınanlar da birkaç bayram içinde herkes tarafından tanınır hâle gelir.\n\nMetinden hareketle, kasabadaki bayram geleneğinin toplumsal yaşama etkisine ilişkin hangisi söylenebilir?",
+      "siklar": {
+        "A": "Bayram paylaşımları, komşular arasında dayanışmayı ve aidiyet duygusunu güçlendirmiştir.",
+        "B": "Kasabanın nüfusu her bayramda belirgin biçimde artmaktadır.",
+        "C": "Yeni taşınanlar, kasabanın geleneklerini reddetmek için bayramı beklemektedir.",
+        "D": "Komşular birbirinden kaçındığı için bayram sabahları sessiz geçmektedir."
+      },
+      "dogru_sik": "A",
+      "cozum_adimlari": [
+        "Metinde bayram sabahı komşuların birbirini ziyaret ettiği ve kimsenin yalnız kalmadığı anlatılır.",
+        "Yeni taşınanların birkaç bayramda tanınması da geleneğin toplumsal bağları güçlendirdiğini gösterir.",
+        "Bu bilgilerden dayanışmanın güçlendiği sonucuna ulaşılır; B, C ve D metinde geçmeyen ya da metinle çelişen bilgilerdir.",
+        "Doğru cevap A seçeneğidir."
+      ],
+      "ipuclari": [
+        "Geleneğin bireylerden çok toplum üzerindeki sonucuna odaklan."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğru.",
+        "B": "Metinde verilmeyen nüfus bilgisini uyduran öğrenci için çekici.",
+        "C": "Yeni taşınanların tanınma sürecini geleneğe reddetme ile karıştıran öğrenci için çekici.",
+        "D": "Gelenekle ilgili sessizliği bayrama bağlayan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.8",
+      "kazanim_metni": "Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-006",
+      "konu": "Öyküleyici metin",
+      "alt_konu": "Olay örgüsü ve gizem",
+      "zorluk": 2,
+      "soru_metni": "Lale, kasabanın tek kütüphanesinde çalışan yaşlı Hasan Amca’yla her çarşamba buluşurdu. Bir çarşamba kütüphanenin kapısında yeni bir kitap kutusu belirdi; üzerinde yalnızca “Okuyana” yazıyordu. Hasan Amca, kutuyu kimin bıraktığını hiç açıklamadı. Lale ise o günden sonra her çarşamba kutuyu merakla kontrol etmeye başladı.\n\nBu hikâyede olay örgüsünü ilerleten ve okuru merakta bırakan unsur hangisidir?",
+      "siklar": {
+        "A": "Lale’nin her çarşamba kütüphaneye gitmesi",
+        "B": "Hasan Amca’nın kütüphanede çalışan yaşlı biri olması",
+        "C": "Kasabada tek bir kütüphane bulunması",
+        "D": "Kitap kutusunu kimin bıraktığının belirsiz kalması"
+      },
+      "dogru_sik": "D",
+      "cozum_adimlari": [
+        "Hikâyede kutuyu kimin bıraktığı açıklanmaz; bu belirsizlik olay örgüsünde merak uyandırır.",
+        "A, B ve C, hikâyenin tanıtıcı bilgileridir; olay örgüsünü ilerletmez.",
+        "Doğru cevap D seçeneğidir."
+      ],
+      "ipuclari": [
+        "Hikâyede okuru merakta bırakan olayın ne olduğunu düşün."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Lale’nin düzenli ziyaretini gizem sanan öğrenci için çekici.",
+        "B": "Kişi tanıtımını gizem sanan öğrenci için çekici.",
+        "C": "Mekânın tek olmasını anlatım unsuru sanan öğrenci için çekici.",
+        "D": "Doğru."
+      },
+      "kazanim_kodu": "T.O.8.12",
+      "kazanim_metni": "Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-007",
+      "konu": "Bilgilendirici metin",
+      "alt_konu": "Neden-sonuç bilgisini bulma",
+      "zorluk": 2,
+      "soru_metni": "Yer çekimi, kütlesi olan cisimlerin birbirini çekmesidir. Dünya’nın yer çekimi sayesinde üzerimizdeki her şey yere doğru çekilir. Ay’ın çekim gücü ise Dünya’nınkinden çok daha küçüktür; bu nedenle Ay’da yürüyen astronotlar sıçrayarak hareket eder.\n\nMetinde, Ay’da astronotların neden sıçrayarak hareket ettiğini açıklayan bilgi hangisidir?",
+      "siklar": {
+        "A": "Dünya’daki cisimlerin yere doğru çekilmesi",
+        "B": "Ay’ın çekim gücünün Dünya’dakinden çok daha küçük olması",
+        "C": "Yer çekiminin, cisimlerin birbirini çekme özelliği olması",
+        "D": "Astronotların Ay’da özel ayakkabılar giymesi"
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Ay’daki çekim gücü Dünya’dakinden çok daha küçüktür; bu nedenle cisimler daha az çekilir.",
+        "Astronotların sıçrayarak hareket etmesinin nedeni bu küçük çekim gücüdür.",
+        "A, Dünya’daki yer çekimini anlatır; C, yer çekiminin tanımıdır; D metinde geçmeyen bir ayrıntıdır.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Astronotların hareketi ile Ay’ın çekim gücü arasındaki ilişkiye bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Dünya’daki çekimi Ay’daki hareketin nedeni sanan öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Yer çekimi tanımını nedenle karıştıran öğrenci için çekici.",
+        "D": "Ay’daki hareketi giysiye bağlayan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.13",
+      "kazanim_metni": "Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-008",
+      "konu": "Anahtar kelimeler",
+      "alt_konu": "Ana fikri taşıyan sözcükler",
+      "zorluk": 2,
+      "soru_metni": "Kuraklık, bir bölgede uzun süre yağış olmaması sonucu toprakta ve su kaynaklarında azalmaya yol açan durumdur. Son yıllarda birçok bölgede tarım alanları bu nedenle verim kaybetmiştir. Sulama tekniklerinin iyileştirilmesi ve yağmur suyunun depolanması, kuraklığın etkilerini azaltmaya yardımcı olabilir.\n\nMetnin ana fikrini taşıyan sözcükler hangi seçenekte birlikte verilmiştir?",
+      "siklar": {
+        "A": "kuraklık, su kaynakları, sulama tekniği",
+        "B": "uzun süre, yağış, son yıllar",
+        "C": "kuraklık, bölge, yıl",
+        "D": "tarım, verim, sonuç"
+      },
+      "dogru_sik": "A",
+      "cozum_adimlari": [
+        "Metin, kuraklığın tanımını, etkilerini ve azaltma yollarını anlatır.",
+        "Anahtar kelimeler metnin ana fikrini taşıyan sözcüklerdir: kuraklık, su kaynakları ve sulama tekniği.",
+        "B, C ve D metinde geçen ama ana fikri taşımayan sözcükleri içerir.",
+        "Doğru cevap A seçeneğidir."
+      ],
+      "ipuclari": [
+        "Metinde tekrar eden ve metnin konusunu taşıyan sözcükleri ayırt et."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğru.",
+        "B": "Metnin zaman bilgisini veren sözcükleri anahtar sanan öğrenci için çekici.",
+        "C": "Sık geçen genel sözcükleri anahtar sanan öğrenci için çekici.",
+        "D": "Sonuç bölümündeki sözcükleri ana fikir sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.14",
+      "kazanim_metni": "Metnin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-009",
+      "konu": "Şiir",
+      "alt_konu": "Dize sayısı",
+      "zorluk": 1,
+      "soru_metni": "Bahar gelir, kır çiçek açar,\nDallarda kuşlar yuva kurar,\nÇocuklar bahçede koşar,\nGökyüzü gülerek bakar.\n\nBu şiir kaç dizeden oluşmaktadır?",
+      "siklar": {
+        "A": "3 dize",
+        "B": "5 dize",
+        "C": "6 dize",
+        "D": "4 dize"
+      },
+      "dogru_sik": "D",
+      "cozum_adimlari": [
+        "Şiirde dört satır vardır ve her satır ayrı bir dize olarak sayılır.",
+        "A, B ve C dize sayısını yanlış verir.",
+        "Doğru cevap D seçeneğidir."
+      ],
+      "ipuclari": [
+        "Şiirin kaç satırdan oluştuğunu say."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Son dizeyi saymayan öğrenci için çekici.",
+        "B": "Dizeyi kıtayla karıştıran öğrenci için çekici.",
+        "C": "İki dizeyi ayrı sayan öğrenci için çekici.",
+        "D": "Doğru."
+      },
+      "kazanim_kodu": "T.O.8.16",
+      "kazanim_metni": "Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-010",
+      "konu": "Söz sanatları",
+      "alt_konu": "Kişileştirme",
+      "zorluk": 1,
+      "soru_metni": "Yıldızlar gözlerini kırpıştırarak bizi izliyordu.\n\nBu cümlede hangi söz sanatı kullanılmıştır?",
+      "siklar": {
+        "A": "Abartma",
+        "B": "Kişileştirme",
+        "C": "Tezat",
+        "D": "Kinaye"
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Cümlede yıldızlara insana özgü bir davranış, göz kırpma verilmiştir.",
+        "Cansız varlıklara insana özgü özellik verilmesi kişileştirmedir.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Cümlede hangi varlığa insana özgü bir davranış yüklendiğine bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Yıldızların çok sayıda olduğunu düşünen öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "İki zıt durumun yan yana anlatıldığını sanan öğrenci için çekici.",
+        "D": "Sözün doğrudan anlamı dışında dolaylı bir anlam sezdiğini sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.O.8.18",
+      "kazanim_metni": "Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-011",
+      "konu": "İkna edici yazı",
+      "alt_konu": "İkna için somut gerekçe",
+      "zorluk": 2,
+      "soru_metni": "Ece, okul bahçesine geri dönüşüm kutusu konulması için bir öneri yazısı hazırlıyor. Yazısında okul yönetimini ikna etmek istiyor.\n\nAşağıdaki cümlelerden hangisi Ece’nin bu amacına en uygun olanıdır?",
+      "siklar": {
+        "A": "Bu öneriyi kabul etmezseniz kimse size güvenmez.",
+        "B": "Herkes bu kutuyu istiyor, o yüzden lütfen hemen karar verin.",
+        "C": "Okulumuzda her hafta birkaç koli kâğıt atılıyor; ayrı bir kutu konursa bu kâğıtlar geri kazandırılabilir.",
+        "D": "Bence geri dönüşüm kutusu bahçemizi çok daha güzel gösterir."
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Ece’nin amacı, somut bir durumu kanıtla göstererek okul yönetimini ikna etmektir.",
+        "C seçeneği somut bir veri ve bunun sonucunu verdiği için ikna edicidir.",
+        "A tehdit, B çoğunluğa dayalı baskı, D kişisel beğeni içerir; bunlar yeterli bir gerekçe sunmaz.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "İkna edici bir cümle, öneriyi destekleyen somut bir gerekçe içermelidir."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Tehdit içeren cümleyi ikna sanan öğrenci için çekici.",
+        "B": "Çoğunluğun istediğini gerekçe sanan öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Kişisel beğeniyi kanıt sanan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.Y.8.18",
+      "kazanim_metni": "İkna edici yazı yazabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    },
+    {
+      "sinif": 8,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "kalite_durumu": "sari",
+      "gorsel_gerekli": false,
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-23-8",
+      "onay_durumu": "beklemede",
+      "soru_id": "tr8-012",
+      "konu": "Yazım ve noktalama",
+      "alt_konu": "“de” bağlacı, “ki” ve kesme işareti",
+      "zorluk": 2,
+      "soru_metni": "Aşağıdaki cümlelerin hangisinde yazım ve noktalama kurallarına uygun bir kullanım vardır?",
+      "siklar": {
+        "A": "Ayşe’de bizimle sinemaya geldi.",
+        "B": "Ayşe de bizimle sinemaya geldi.",
+        "C": "Ankarada yaşayan teyzem bize geldi.",
+        "D": "Bilmemki yarın gelecekti, sonra vazgeçti."
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Bağlaç “de” ayrı yazılır ve kesmeyle ayrılmaz: “Ayşe de geldi.”",
+        "“Ankara” özel ad olduğu için yer eki kesmeyle yazılır: “Ankara’da”.",
+        "“Bilmem ki” ifadesinde “ki” bağlaç olduğu için ayrı yazılır.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Her seçenekte “de”, “ki” ve kesme işaretinin kullanımına tek tek bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Bağlaç “de”yi kesmeyle ayıran öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Özel ada gelen yer ekini kesmesiz yazan öğrenci için çekici.",
+        "D": "Bağlaç “ki”yi bitişik yazan öğrenci için çekici."
+      },
+      "kazanim_kodu": "T.Y.8.20",
+      "kazanim_metni": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+      "curriculum_status": "source_pending",
+      "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+    }
+  ]
+}

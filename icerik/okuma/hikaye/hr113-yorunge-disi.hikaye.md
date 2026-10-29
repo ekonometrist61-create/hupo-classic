@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Bir uydunun yakın geçişinde Deniz ve ekibi belirsiz verilerle karar vermeyi öğrenir. Kesinlikten çok, kararın gerekçesi önemlidir."
+tanitim: "Bir uydunun yakın geçişinde {kahraman} ve ekibi belirsiz verilerle karar vermeyi öğrenir. Kesinlikten çok, kararın gerekçesi önemlidir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -33,14 +33,14 @@ etiketler:
     - {id: deyim_hr113, tur: idiom, etiket: "Görmezden gelmek", yuva: hr113_gormezden, islev: application}
     - {id: kavram_hr113, tur: concept, etiket: "Belirsizlik altında karar vermek", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "Kırmızı noktanın adı neydi?", secenekler: [{id: A, metin: "K-17"}, {id: B, metin: "Mirza-4"}, {id: C, metin: "Arel-2"}, {id: D, metin: "K-71"}], dogru: A, aciklama: "Kırmızı noktanın adı K-17 idi."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Öğrencilerin ilk hatası neydi?", secenekler: [{id: A, metin: "Ekrandaki bir işareti bütün gerçeğin kendisi sanmak"}, {id: B, metin: "Hiç hesap yapmamak"}, {id: C, metin: "Uydunun adını yanlış yazmak"}, {id: D, metin: "Yörünge çizgilerini çizmemek"}], dogru: A, aciklama: "Öğrenciler, ekrandaki bir işareti bütün gerçeğin kendisi sanmışlardı."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 6, metin: "Selçuk Bey'e göre beklemek ne zaman bir karar olur?", secenekler: [{id: A, metin: "Her zaman"}, {id: B, metin: "Hiçbir zaman"}, {id: C, metin: "Koşulları ve neden beklediği bilindiğinde"}, {id: D, metin: "Yalnızca uydu zarar gördüğünde"}], dogru: C, aciklama: "Beklemek de, koşulları ve gerekçesi açıkça belirlenmiş bir karar olabilir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde “kurgusal” sözcüğü ne anlatır?", secenekler: [{id: A, metin: "Gerçek olmayan, eğitim amacıyla oluşturulmuş"}, {id: B, metin: "Çok eski ve bilinen"}, {id: C, metin: "Uzayda bulunan"}, {id: D, metin: "Hızlı hareket eden"}], dogru: A, aciklama: "Kurgusal, bu çalışmada eğitim için oluşturulmuş, gerçek olmayan nesneleri anlatır."}
-  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 15, metin: "Hikâyeye göre bir riski azaltmak ile bir kazayı kesin olarak önlemek arasındaki ilişki nedir?", secenekler: [{id: A, metin: "Aynı şeydir"}, {id: B, metin: "Risk azaltılsa da kazanın kesin olarak önlendiği söylenemez"}, {id: C, metin: "Risk azaltılırsa kaza kesin olarak önlenmiş olur"}, {id: D, metin: "Riskin hiçbir önemi yoktur"}], dogru: B, aciklama: "Riski azaltmak, gerçekleşmemiş bir kazanın kesin olarak önlendiği anlamına gelmez."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "Kırmızı noktanın adı neydi?", secenekler: [{id: A, metin: "Mirza-4"}, {id: B, metin: "K-17"}, {id: C, metin: "Arel-2"}, {id: D, metin: "K-71"}], dogru: B, aciklama: "Kırmızı noktanın adı K-17 idi."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Öğrencilerin ilk hatası neydi?", secenekler: [{id: A, metin: "Ekrandaki bir işareti bütün gerçeğin kendisi sanmak"}, {id: B, metin: "Kampın günlüğüne her gün yanlış bir tarih yazmak"}, {id: C, metin: "Uydunun adını kâğıda yanlış yazmak ve notları karıştırmak"}, {id: D, metin: "Yörünge çizgilerini sonradan kâğıda hiç aktarmamak"}], dogru: A, aciklama: "Öğrenciler, ekrandaki bir işareti bütün gerçeğin kendisi sanmışlardı."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 6, metin: "Selçuk Bey'e göre beklemek ne zaman bir karar olur?", secenekler: [{id: A, metin: "Her zaman, hiçbir koşul aranmadan"}, {id: B, metin: "Hiçbir zaman, ne bilgi gelirse gelsin"}, {id: C, metin: "Yalnızca uydu gerçekten zarar gördüğünde"}, {id: D, metin: "Koşulları ve neden beklediği bilindiğinde"}], dogru: D, aciklama: "Beklemek de, koşulları ve gerekçesi açıkça belirlenmiş bir karar olabilir."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde “kurgusal” sözcüğü ne anlatır?", secenekler: [{id: A, metin: "Gerçek olmayan, eğitim amacıyla oluşturulmuş"}, {id: B, metin: "Çok eski ve uzun süredir bilinen bir durum"}, {id: C, metin: "Uzayda bulunan, gözle görülebilen bir nesne"}, {id: D, metin: "Hızlı hareket eden, yörüngede dönen bir uydu"}], dogru: A, aciklama: "Kurgusal, bu çalışmada eğitim için oluşturulmuş, gerçek olmayan nesneleri anlatır."}
+  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 15, metin: "Hikâyeye göre bir riski azaltmak ile bir kazayı kesin olarak önlemek arasındaki ilişki nedir?", secenekler: [{id: A, metin: "Riski azaltmak ile kazayı önlemek birbirinin aynısıdır"}, {id: B, metin: "Risk azaltılsa da kazanın kesin olarak önlendiği söylenemez"}, {id: C, metin: "Risk azaltılırsa kaza kesin olarak önlenmiş olur"}, {id: D, metin: "Riskin azaltılması, değerlendirmede hiçbir önem taşımaz"}], dogru: B, aciklama: "Riski azaltmak, gerçekleşmemiş bir kazanın kesin olarak önlendiği anlamına gelmez."}
 deyim_cumleleri:
   hr113_gormezden: "“Çelişen veriyi görmezden gelip kesinlik gösteremeyiz,” dedi."
 ---
@@ -117,7 +117,7 @@ Senaryonun ikinci aşamasında yeni bir bilgi geldi. Mirza-4'ün manevra seçene
 
 {kahraman}, “Bize sadece Mirza-4'ü korumamız söylenmişti,” diye itiraz etti. Selçuk Bey, “Siz görevinizi böyle anladınız,” dedi. “Ama yörüngeleri paylaşan araçlar birbirinden bağımsız karar veremez.”
 
-Rüzgâr ve boşluk arasında hareket eden iki uyduyu gösteren canlandırmaya baktılar. Simülasyon bütün nesneleri eksiksiz modellemiyordu; ekrandaki sonuçlar çalışmanın tanımladığı varsayımlara bağlıydı. {yoldas:yalin|bir arkadaş}, “Arel-2'nin ekibinden veri isteyebilir miyiz?” diye sordu. Gözlem merkezi bu imkânı açtı. Diğer ekip önce kendi planını değiştirmek istemedi; onların da bilimsel gözlem saatleri vardı.
+Boşlukta hareket eden iki uyduyu gösteren canlandırmaya baktılar. Simülasyon bütün nesneleri eksiksiz modellemiyordu; ekrandaki sonuçlar çalışmanın tanımladığı varsayımlara bağlıydı. {yoldas:yalin|bir arkadaş}, “Arel-2'nin ekibinden veri isteyebilir miyiz?” diye sordu. Gözlem merkezi bu imkânı açtı. Diğer ekip önce kendi planını değiştirmek istemedi; onların da bilimsel gözlem saatleri vardı.
 
 Kısa bir görüntülü toplantı yaptılar. {kahraman} başta diğer ekibin onlara engel olduğunu sandı. Fakat onların raporunu dinleyince farklı bir şey gördü: Onlar da kendi uydularından sorumluydu. Ceyda karşı tarafın önerisini not etti, {yoldas:yalin|bir arkadaş} iki planın zaman çizelgesini yan yana koydu. Sonunda iki ekip, senaryo içinde yeni bir seçenek deneyebildi.
 ---
@@ -286,7 +286,7 @@ Okulda kampı anlatması istendiğinde elinde bir yörünge çizimiyle tahtaya �
 Bir öğrenci, “Madem sonuçta çarpmadı, bütün hesaplar gereksiz miydi?” diye sordu. {kahraman} gülümsedi. Bu soruyu kendisine de sormuştu. “Hayır,” dedi. “Bir riskin gerçekleşmemesi, onun değerlendirilmesinin gereksiz olduğunu kanıtlamaz. Ama sonuçların hepsini geriye dönüp incelememiz gerekir.”
 ---
 @omurga
-Başka bir öğrenci, “O zaman uzay görevlerinde hiç hata yapmamak mümkün mü?” diye sordu. {kahraman} cevap vermeden önce Selçuk Bey'in söylediğini hatırladı: Hatalar saklanırsa tekrarlanır. “Hiç hata olmayacağını garanti edemeyiz,” dedi. “Hataları fark etmek, kayıt altına almak ve onlardan öğrenmek için yöntemler kurabiliriz.”
+Başka bir öğrenci, “O zaman uzay görevlerinde hiç hata yapmamak mümkün mü?” diye sordu. {kahraman} cevap vermeden önce düşündü: Hatalar saklanırsa tekrarlanır. “Hiç hata olmayacağını garanti edemeyiz,” dedi. “Hataları fark etmek, kayıt altına almak ve onlardan öğrenmek için yöntemler kurabiliriz.”
 
 Sunum bittikten sonra Ceyda'dan mesaj geldi. Kampa birlikte katıldıkları öğrenciler için bir gözlem kulübü kurmayı öneriyordu. Kulübün ilk toplantısında yıldızlara bakacak, ikinci toplantısında veri tablolarını okuyacaklardı. {kahraman} cevap yazdı: Olur. Ama bir kuralımız olsun: Bilmiyorsak bilmiyoruz deriz.
 

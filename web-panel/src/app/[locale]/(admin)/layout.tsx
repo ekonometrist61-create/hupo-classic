@@ -1,6 +1,5 @@
 "use client";
 
-import WelcomeSplash from "@/components/common/WelcomeSplash";
 import { useSidebar } from "@/context/SidebarContext";
 import { usePathname } from "@/i18n/navigation";
 import AppHeader from "@/layout/AppHeader";
@@ -31,7 +30,6 @@ export default function AdminLayout({
 
   return (
     <div className="min-h-screen bg-[#f4f6f6] xl:flex dark:bg-gray-950">
-      <WelcomeSplash />
       <RoleGuard />
       {/* Sidebar and Backdrop */}
       <AppSidebar />

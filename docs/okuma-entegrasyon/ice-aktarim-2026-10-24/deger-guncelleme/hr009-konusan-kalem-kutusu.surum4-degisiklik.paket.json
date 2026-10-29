@@ -1,0 +1,403 @@
+{
+  "hikaye": {
+    "tur": "arkadaslik",
+    "konu": "okul",
+    "slug": "hr009-konusan-kalem-kutusu",
+    "durum": "taslak",
+    "baslik": "Konuşan Kalem Kutusu",
+    "tanitim": "Kalem kutusundan sesler geliyor. Herkesin bir yeri olabilir mi?",
+    "fis_kodu": "HR-009",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D16",
+        "yardimci_deger": "D9"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 4,
+        "sayfa_sayisi": 6,
+        "simge_sayisi": 5,
+        "kelime_sayisi": 209,
+        "tahmini_sure_dk": 4,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "okul",
+        "mizah"
+      ],
+      "ana_sinif": 2,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 1,
+      "kavram_zorlugu": 1,
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "dar",
+          "tur": "lexeme",
+          "yuva": "s2_dar",
+          "islev": "first_hint",
+          "etiket": "dar"
+        },
+        {
+          "id": "genis",
+          "tur": "lexeme",
+          "yuva": "s2_genis",
+          "islev": "application",
+          "etiket": "geniş"
+        },
+        {
+          "id": "kavram_hr009",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Düzenleme"
+        }
+      ]
+    },
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "dunya_tipi": "masalsi",
+    "okuma_bandi": 1,
+    "izinli_turler": [
+      "ben",
+      "kardes",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D16",
+      "D9"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "s2_dar",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_dar"
+          }
+        ]
+      },
+      {
+        "ad": "s2_genis",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_genis"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "s2_dar",
+        "tur": "kelime",
+        "anlam": "Genişliği az olan, sıkışık.",
+        "yazim": "dar",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_genis",
+        "tur": "kelime",
+        "anlam": "Genişliği çok olan, rahat.",
+        "yazim": "geniş",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "A",
+      "metin": "Silgi kalem kutusunda neden şikâyet etti?",
+      "beceri": "hatirlama",
+      "aciklama": "Silgi, 'Bana yer kalmadı!' diye bağırıyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kendisine yer kalmadığı için"
+        },
+        {
+          "id": "B",
+          "metin": "Kurşun kalem yüzünden"
+        },
+        {
+          "id": "C",
+          "metin": "Cetvel yüzünden"
+        }
+      ],
+      "dayanak_sayfa": 1
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Cetveli çapraz koyunca ne oldu?",
+      "beceri": "cikarim",
+      "aciklama": "Cetveli çapraz koyunca kapağın kapanmadığını gördü.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kapak kapanmadı"
+        },
+        {
+          "id": "B",
+          "metin": "Silgi kayboldu"
+        },
+        {
+          "id": "C",
+          "metin": "Kalemler kırıldı"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Kutuyu düzenleyen çocuğun davranışı neyi gösterir?",
+      "beceri": "yorumlama",
+      "aciklama": "Her eşyanın bir yeri olduğunu bilmek ve buna uymak bir sorumluluktur.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Eşyalarına bakmanın bir sorumluluk olduğunu"
+        },
+        {
+          "id": "B",
+          "metin": "Eşyaları atmanın daha kolay olduğunu"
+        },
+        {
+          "id": "C",
+          "metin": "Kalemlerin konuşamayacağını"
+        }
+      ],
+      "dayanak_sayfa": 5
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen dar sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Kutu, eşyaların sıkıştığı çok dar bir yerdi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Genişliği az olan, sıkışık"
+        },
+        {
+          "id": "B",
+          "metin": "Çok büyük olan"
+        },
+        {
+          "id": "C",
+          "metin": "Renkli olan"
+        }
+      ],
+      "dayanak_sayfa": 3
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çantasını açınca kalem"
+        },
+        {
+          "t": "ikon",
+          "v": "pencil"
+        },
+        {
+          "t": "metin",
+          "v": " kutusundan sesler geldi. \"Bana yer kalmadı!\" diye bağırıyordu silgi. Cetvel ise \"Hepiniz yamuk duruyorsunuz,\" diye söyleniyordu. Kurşun kalem sivri ucunu koruyamamaktan yakınıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " şaşkınlıkla etrafa baktı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " göz kırptı: \"Belki eşyaların da biraz düzene ihtiyacı vardır.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kutuyu boşalttı. Uzun cetveli yan bölmeye, küçük silgiyi dar bölmeye, kalemleri lastikli sıraya koydu. Ama boya kalemleri yine sığmadı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kutu çok "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_dar"
+        },
+        {
+          "t": "metin",
+          "v": " bir yerdi. Silgi \"Ben küçüğüm, o yüzden hep alta düşüyorum,\" dedi. Cetvel \"Beni eğerseniz düzgün çizgi çizemem,\" diye karşılık verdi. Mavi kalem"
+        },
+        {
+          "t": "ikon",
+          "v": "pencil"
+        },
+        {
+          "t": "metin",
+          "v": " ise kapağı açık kaldığı için kurumuştu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hepsini dinledi ve ne yapacağını düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " masanın üzerine bir kâğıt açtı: \"Önce plan yapalım.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " kutunun resmini çizdi. Büyük eşyaları içeri, küçükleri sonraya yerleştirdi. Cetveli çapraz koyunca kapağın kapanmadığını gördü. Bu yüzden eski bir kartonu ikiye katlayıp ayırıcı olarak yerleştirdi. İlk seferde devrildi. Bir köşesini uzatınca yerinde durdu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Kalemler yan yana dizildi, silgi kendi bölümüne yerleşti. Kutu "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_genis"
+        },
+        {
+          "t": "metin",
+          "v": " değildi ama her eşyanın bir yeri vardı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eşyalarının yerini bilmenin bir sorumluluk olduğunu düşündü. Ertesi gün aradığı eşyayı hemen buldu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Son olarak kalemtıraş seslendi: \"Beni unutmadın, değil mi?\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " güldü ve onu da ön göze yerleştirdi. Kalem"
+        },
+        {
+          "t": "ikon",
+          "v": "pencil"
+        },
+        {
+          "t": "metin",
+          "v": " kutusundan artık ses"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " gelmiyordu. "
+        },
+        {
+          "t": "isaret",
+          "kod": "yildiz"
+        },
+        {
+          "t": "metin",
+          "v": " Arkadaşı Zeynep'e de kutuyu gösterdi. İkisi yan yana oturup kendi kutularını düzenlemek için bir plan yaptı."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

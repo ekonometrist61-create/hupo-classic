@@ -1,15 +1,19 @@
 "use client";
 
 import { STUDENT_APP_URL } from "@/lib/app-url";
+import { authDilCevir, authHataMetni, authMetni } from "@/lib/auth/hata";
+import { girisKaydiYaz } from "@/lib/auth/girisKaydi";
+import { TurnstileWidget } from "@/components/guvenlik/TurnstileWidget";
+import { guvenliYonlendirme } from "@/lib/auth/yonlendirme";
 import { Link, useRouter } from "@/i18n/navigation";
 import { EyeCloseIcon } from "@/icons";
 import { createClient } from "@/utils/supabase/client";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useState } from "react";
 
-// Her giriş kapısının kendi rolleri var; giriş sonrası hedef sabittir (rol bazlı yönlendirme yok).
-// Veli ve öğretmen aynı kapıyı kullanır. Öğrenci hesapları bu sitedeki kapılarda kullanılmaz,
-// app.hupolingo.com üzerinden girer. Asıl yetki veritabanındadır (RLS, admin fonksiyonları).
+// Her giriş kapısının kendi rolleri var. Veli ve öğretmen aynı kapıyı kullanır.
+// Öğrenci hesapları bu sitedeki kapılarda kullanılmaz, app.hupolingo.com üzerinden girer.
+// Asıl yetki veritabanındadır (RLS, admin fonksiyonları); bu kontrol yalnızca yanlış kapıyı engeller.
 type Kapi = "veli" | "yonetim";
 
 const KAPI_ROLLERI: Record<Kapi, readonly string[]> = {
@@ -22,7 +26,11 @@ const HEDEF: Record<Kapi, string> = {
   yonetim: "/yonetim",
 };
 
-type Hata = { mesaj: string; baglanti?: { metin: string; href: string; dis: boolean } };
+// `next` yalnızca kapının kendi alanındaki yollara dönebilir (açık yönlendirme ve yanlış alan engellenir).
+const KAPI_ALANI: Record<Kapi, readonly string[]> = {
+  veli: ["/veli-paneli"],
+  yonetim: ["/yonetim"],
+};
 
 const fieldClass =
   "mt-1.5 block h-12 w-full rounded-xl border border-gray-500 bg-white px-4 text-base text-navy placeholder:text-gray-500 focus:border-brand-500 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500";
@@ -41,9 +49,12 @@ export default function SignInForm({ variant = "veli" }: { variant?: Kapi }) {
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [error, setError] = useState<Hata | null>(null);
+  const [error, setError] = useState<string | null>(null);
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const [captchaKey, setCaptchaKey] = useState(0);
 
   const router = useRouter();
+  const dil = authDilCevir(useLocale());
   const yonetim = variant === "yonetim";
 
   async function handleSubmit(event: React.FormEvent<HTMLFormElement>) {
@@ -55,15 +66,14 @@ export default function SignInForm({ variant = "veli" }: { variant?: Kapi }) {
     const { data, error: authError } = await supabase.auth.signInWithPassword({
       email,
       password,
+      options: { captchaToken: captchaToken ?? undefined },
     });
+    // Turnstile token'ı tek kullanımlıktır; her denemeden sonra widget yenilenir.
+    setCaptchaToken(null);
+    setCaptchaKey((k) => k + 1);
 
     if (authError) {
-      setError({
-        mesaj:
-          authError.message === "Invalid login credentials"
-            ? t("errorInvalid")
-            : authError.message,
-      });
+      setError(authHataMetni(authError, dil));
       setLoading(false);
       return;
     }
@@ -78,32 +88,19 @@ export default function SignInForm({ variant = "veli" }: { variant?: Kapi }) {
 
     // Kapının rolüne uyan hesap içeri alınır; diğerleri oturumu kapatılarak reddedilir.
     if (rol && KAPI_ROLLERI[variant].includes(rol)) {
+      // Giriş öncesi korunan sayfadan gelindiyse oraya dön; güvensiz veya başka alandaki yol yok sayılır.
+      const next = new URLSearchParams(window.location.search).get("next");
       setLoading(false);
-      router.replace(HEDEF[variant]);
+      // Giriş kaydı yardımcıdır: hata yutulur, girişi bozmaz; yalnız rol kapısından geçen giriş yazılır.
+      void girisKaydiYaz("web");
+      router.replace(guvenliYonlendirme(next, KAPI_ALANI[variant], HEDEF[variant]));
       return;
     }
 
     await supabase.auth.signOut();
     setLoading(false);
-
-    if (rol === "ogrenci") {
-      setError({
-        mesaj: t("errorStudent"),
-        baglanti: { metin: t("errorStudentLink"), href: STUDENT_APP_URL, dis: true },
-      });
-    } else if (rol === "admin" && !yonetim) {
-      setError({
-        mesaj: t("errorAdminOnVeli"),
-        baglanti: { metin: t("errorAdminOnVeliLink"), href: "/yonetim-giris", dis: false },
-      });
-    } else if (rol === "veli" && yonetim) {
-      setError({
-        mesaj: t("adminNotAllowed"),
-        baglanti: { metin: t("adminNotAllowedLink"), href: "/veli-paneli/giris", dis: false },
-      });
-    } else {
-      setError({ mesaj: t("errorNoRole") });
-    }
+    // Rol uyuşmazlığında hesabın hangi role ait olduğu söylenmez.
+    setError(authMetni("rolUyusmazlik", dil));
   }
 
   return (
@@ -183,29 +180,15 @@ export default function SignInForm({ variant = "veli" }: { variant?: Kapi }) {
             </Link>
           </div>
 
+          <TurnstileWidget onToken={setCaptchaToken} resetKey={captchaKey} />
+
           {error && (
             <div
               id="signin-error"
               role="alert"
               className="rounded-xl border border-error-200 bg-error-50 px-4 py-3 text-sm font-medium text-error-700"
             >
-              <p>{error.mesaj}</p>
-              {error.baglanti &&
-                (error.baglanti.dis ? (
-                  <a
-                    href={error.baglanti.href}
-                    className={`mt-2 inline-block text-error-800 hover:text-error-900 ${linkClass}`}
-                  >
-                    {error.baglanti.metin}
-                  </a>
-                ) : (
-                  <Link
-                    href={error.baglanti.href}
-                    className={`mt-2 inline-block text-error-800 hover:text-error-900 ${linkClass}`}
-                  >
-                    {error.baglanti.metin}
-                  </Link>
-                ))}
+              <p>{error}</p>
             </div>
           )}
 

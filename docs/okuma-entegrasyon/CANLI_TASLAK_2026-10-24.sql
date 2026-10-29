@@ -1,0 +1,68 @@
+-- =====================================================================
+-- ARŞİV (K-0124): Bu taslağın uygulanmış hali supabase/migrations/20261082000000_okuma_canli_duzeltme.sql
+-- dosyasındadır ve kullanıcı onayıyla uygulandı (12 arşiv, denetim pending, pilot [4,5]). Bu dosya yalnız
+-- kayıt amaçlı; yeniden çalıştırmayın.
+--
+-- TASLAK. UYGULANMADI. Canlı veritabanına dönük; ayrı kullanıcı onayı gerekir.
+-- Uygulama sırası: db:preview -> onay -> (taslak bir migration'a taşınır) -> db:deploy.
+-- DİKKAT: db:deploy, bekleyen TÜM migration'ları uygular (20261078/79 dahil). Bu yüzden
+--         bu dosya tek başına uygulanmaz; onay sonrası ayrı bir migration olarak eklenir.
+--
+-- Bağlam (2026-10-24, K-0122 ve K-0123):
+--   * 20261069 test yayını, 12 hikâyeyi yayinda yaptı ve denetim alanına
+--     ajan_a=pass, ajan_b=pass, insan=approved yazdı. Gerçekte bu hikâyelerde iki pass
+--     ve insan onayı yok; migration notu "insan okuması bekliyor" diyor.
+--   * Genel bayrak açık (20261063), pilot_siniflari boş: yayında hikâyeler tüm sınıflara açık.
+--   * Canlı metin büyük olasılıkla 20261062 sürümü; denetlenen metin 20261077 taslakları.
+--
+-- Karar gereken: S1 (aşağıdaki A veya B). Sonnet önerisi: B.
+-- =====================================================================
+
+-- ---------------------------------------------------------------------
+-- A) Yayında kalsın, yalnız pilot ile sınırlansın (Faz 5 onayı).
+--    Bu tek başına yeterli değildir: 12 hikâye pilot sınıflara (4. ve 5. sınıf) görünmeye devam eder.
+-- ---------------------------------------------------------------------
+-- update public.okuma_ayarlari
+--    set deger = '[4,5]'::jsonb, guncellendi_at = now()
+--  where anahtar = 'pilot_siniflari';
+
+-- ---------------------------------------------------------------------
+-- B) (Önerilen) Yayındaki 12 hikâyenin sürümünü arşive al; insan okuması ve iki ajan
+--    pass'i sonrası yeniden yayınla. Geçiş kuralı: yayinda -> arsiv (okuma_surum_durum_degistir).
+-- ---------------------------------------------------------------------
+-- do $geri_cek$
+-- declare v_sid uuid; v_slug text;
+-- begin
+--   foreach v_slug in array array[
+--     'hr002-renkli-ucurtma','hr009-konusan-kalem-kutusu','hr014-yagmur-damlasinin-yolculugu',
+--     'hr015-tohumun-kucuk-sirri','hr016-golgeyi-kim-buyuttu','hr018-deniz-fenerindeki-sinyal',
+--     'hr021-kayip-sandigin-sifresi','hr022-saat-kulesi-neden-durdu','hr025-bremen-yolcularinin-yeni-sarkisi',
+--     'hr030-ormanin-kaybolan-patikasi','hr031-muzede-sessiz-alarm','hr032-keloglan-ve-akilli-terazi'
+--   ] loop
+--     select s.id into v_sid
+--       from public.okuma_hikaye_surumleri s
+--       join public.okuma_hikayeleri h on h.id = s.hikaye_id
+--      where h.slug = v_slug and s.durum = 'yayinda';
+--     if v_sid is not null then
+--       perform public.okuma_surum_durum_degistir(v_sid, 'arsiv', null);
+--     end if;
+--   end loop;
+--   perform public.log_admin_action('okuma_test_yayini_geri_cekme',
+--     jsonb_build_object('not', 'Denetim alanları gerçek duruma uymuyordu (K-0122). İnsan okuması ve iki ajan pass yok.', 'hikaye_sayisi', 12));
+-- end
+-- $geri_cek$;
+
+-- ---------------------------------------------------------------------
+-- C) (A veya B ile birlikte, S3) Yanlış denetim alanlarını düzelt. Yalnız 'yayinda' satırlar.
+--    Yeni değer gerçek durumu yazar; geçmiş migration (20261069) değiştirilmez.
+-- ---------------------------------------------------------------------
+-- update public.okuma_hikaye_surumleri s
+--    set denetim = '{"ajan_a":"pending","ajan_b":"pending","insan":"pending"}'::jsonb
+--   from public.okuma_hikayeleri h
+--  where h.id = s.hikaye_id
+--    and s.durum = 'yayinda'
+--    and h.slug in (
+--      'hr002-renkli-ucurtma','hr009-konusan-kalem-kutusu','hr014-yagmur-damlasinin-yolculugu',
+--      'hr015-tohumun-kucuk-sirri','hr016-golgeyi-kim-buyuttu','hr018-deniz-fenerindeki-sinyal',
+--      'hr021-kayip-sandigin-sifresi','hr022-saat-kulesi-neden-durdu','hr025-bremen-yolcularinin-yeni-sarkisi',
+--      'hr030-ormanin-kaybolan-patikasi','hr031-muzede-sessiz-alarm','hr032-keloglan-ve-akilli-terazi');

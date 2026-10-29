@@ -34,10 +34,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (7. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 11, metin: "Kıyıya on dakika kala tekneye ne vurdu?", secenekler: [{id: A, metin: "İlk sert rüzgâr"}, {id: B, metin: "Büyük bir dalga"}, {id: C, metin: "Yağmur"}, {id: D, metin: "Bir kuş sürüsü"}], dogru: A, aciklama: "Kıyıya on dakika kala teknenin burnuna ilk sert rüzgâr vurmuştu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 8, metin: "Metne göre tahminler hakkında hangi sonuç çıkarılabilir?", secenekler: [{id: A, metin: "Kesin sözler değil, verilere dayanan olasılıklardır"}, {id: B, metin: "Kesin ve değişmez bilgilerdir"}, {id: C, metin: "Hiç kullanılmamalıdır"}, {id: D, metin: "Yalnız ilk saatler için geçerlidir"}], dogru: A, aciklama: "Tahminler, koşullara göre değişebilen olasılık değerlendirmeleridir."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Deniz Hanım'ın bu sözüne göre fazla görünen bir tedbir nasıl değerlendirilmelidir?", secenekler: [{id: A, metin: "Fazla görünen bir tedbir, otomatik olarak gereksiz sayılmaz"}, {id: B, metin: "Her tedbir mutlaka gereksizdir"}, {id: C, metin: "Tedbir hiç alınmamalıdır"}, {id: D, metin: "Yalnız bilgisayar tedbiri belirler"}], dogru: A, aciklama: "Güvenlik açısından alınan bir önlem, sonradan gereksiz görünse de değerli olabilir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 21, metin: "Metinde geçen tahmin ne anlama gelir?", secenekler: [{id: A, metin: "Gelecekteki koşullara ilişkin olasılık değerlendirmesi"}, {id: B, metin: "Bir tür tekne"}, {id: C, metin: "Bir yüzme yarışı"}, {id: D, metin: "Bir güvenlik yeleği"}], dogru: A, aciklama: "Tahmin, gelecekteki hava ve deniz koşullarına dair olasılık değerlendirmesidir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 11, metin: "Kıyıya on dakika kala tekneye ne vurdu?", secenekler: [{id: A, metin: "Büyük bir dalga"}, {id: B, metin: "İlk sert rüzgâr"}, {id: C, metin: "Dümene çarpan sürüklenmiş bir ağaç dalı"}, {id: D, metin: "Bir kuş sürüsü"}], dogru: B, aciklama: "Kıyıya on dakika kala teknenin burnuna ilk sert rüzgâr vurmuştu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 8, metin: "Metne göre tahminler hakkında hangi sonuç çıkarılabilir?", secenekler: [{id: A, metin: "Kesin ve değişmeyen bilgiler olduğu için güvenilirdir"}, {id: B, metin: "Hava durumunu anlamak için hiçbir zaman kullanılmamalıdır"}, {id: C, metin: "Kesin sözler değil, verilere dayanan olasılıklardır"}, {id: D, metin: "Yalnız sabahın ilk saatleri için geçerli olan bilgilerdir"}], dogru: C, aciklama: "Tahminler, koşullara göre değişebilen olasılık değerlendirmeleridir."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Deniz Hanım'ın “Tedbirin fazlası ile gereksizi aynı şey değildir.” sözüne göre fazla görünen bir tedbir nasıl değerlendirilmelidir?", secenekler: [{id: A, metin: "Her tedbir, sonradan bakıldığında kesinlikle gereksiz çıkar"}, {id: B, metin: "Fazla görünen bir tedbir, otomatik olarak gereksiz sayılmaz"}, {id: C, metin: "Tedbir, görünüşte gereksiz olsa da hiçbir zaman alınmamalıdır"}, {id: D, metin: "Tedbiri yalnız bilgisayar programı belirler, insanların payı olmaz"}], dogru: B, aciklama: "Güvenlik açısından alınan bir önlem, sonradan gereksiz görünse de değerli olabilir."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 21, metin: "Metinde geçen tahmin ne anlama gelir?", secenekler: [{id: A, metin: "Gelecekteki koşullara ilişkin olasılık değerlendirmesi"}, {id: B, metin: "Kıyı çalışmalarında kullanılan küçük bir araştırma teknesi"}, {id: C, metin: "Deniz kenarında düzenlenen kısa bir yüzme yarışması"}, {id: D, metin: "Denizde can güvenliği için giyilen özel bir yelek"}], dogru: A, aciklama: "Tahmin, gelecekteki hava ve deniz koşullarına dair olasılık değerlendirmesidir."}
 deyim_cumleleri:
   hr085_aklina: "Selim Bey'in sözü aklına geldi: “Hava ile pazarlık yapamayız.”"
 ---
@@ -48,7 +48,7 @@ Sabah henüz altı olmamıştı. Limanın üstündeki hava serindi ama deniz, ma
 
 Deniz araştırmaları merkezinin sorumlusu Deniz Hanım başını kaldırdı. “Bunu denizde uzun süre çalışanlara sorarsan farklı cevaplar alırsın,” dedi. “Sakin görünmesi, birkaç saat sonra da sakin kalacağını göstermez.”
 
-Teknenin adı *Kuzey Yıldızı*ydı. Kaptan Selim Bey, ekibe güvenlik yeleklerinin nasıl takılacağını yeniden gösteriyordu. Kimse bunu eğlenceli bulmuyordu; hatta {yoldas:yalin|bir arkadaş} geçen haftaki eğitimi hatırladığını söyleyerek omuzlarını silkti. Selim Bey gülümsedi. “Hatırlıyor olman iyi. O zaman bugün de doğru yaparsın.”
+Teknenin adı “Kuzey Yıldızı”ydı. Kaptan Selim Bey, ekibe güvenlik yeleklerinin nasıl takılacağını yeniden gösteriyordu. Kimse bunu eğlenceli bulmuyordu; hatta {yoldas:yalin|bir arkadaş} geçen haftaki eğitimi hatırladığını söyleyerek omuzlarını silkti. Selim Bey gülümsedi. “Hatırlıyor olman iyi. O zaman bugün de doğru yaparsın.”
 ---
 @omurga
 {kahraman} yeleğinin kopçasını sıkıştırdı. Araştırma merkezinde gönüllü çalışmaya başladığında deniz canlılarını gözlemlemeyi düşünmüştü; hava raporu okumayı değil. Ama artık bu iki işin birbirinden ayrı olmadığını öğreniyordu. Deniz Hanım tabletindeki {kelime:hr085_tahmin} açtı. Sabah rüzgâr zayıftı. Öğleden sonraya doğru ise basınç düşüşü ve kuvvetli rüzgâr olasılığı artıyordu. Saat tahmini kesin değildi; hücrelerin nerede ve ne zaman güçleneceği değişebilirdi.
@@ -72,7 +72,7 @@ Akşam annesiyle yürürken bu olayı anlatmıştı. Annesi, okul gezilerinde zo
 Şimdi gerçek sefer başladığında {kahraman} o konuşmayı hatırlıyordu. Fakat bu kez hayalî bir senaryo değil, değişken bir deniz vardı önlerinde. Güverteden kıyıdaki küçük camiye ve liman ışığına baktı. Birazdan gördüklerini not ederken hem meraklı hem de dikkatli olabileceğini kendine hatırlattı.
 ---
 @omurga
-İlk gözlem noktası kayalık burnun güneyindeydi. Ekip deniz çayırlarının bulunduğu koyu koruma programı kapsamında kayıt altına alıyordu. Kimse canlılara dokunmuyor, yalnız onaylı cihazlarla ve merkez çalışanlarının gözetiminde ölçüm yapıyordu. Suyun üzerinde küçük dalgalar vardı. Deniz Hanım sıcaklık sensörünü hazırladı; {kahraman} değerleri kayıt formuna yazdı.
+İlk gözlem noktası kayalık burnun güneyindeydi. Ekip deniz çayırlarının bulunduğu koruma programı kapsamında kayıt altına alıyordu. Kimse canlılara dokunmuyor, yalnız onaylı cihazlarla ve merkez çalışanlarının gözetiminde ölçüm yapıyordu. Suyun üzerinde küçük dalgalar vardı. Deniz Hanım sıcaklık sensörünü hazırladı; {kahraman} değerleri kayıt formuna yazdı.
 
 “On yedi virgül altı,” dedi Deniz Hanım.
 
@@ -95,7 +95,7 @@ Saat sekizi biraz geçiyordu. Selim Bey'in telsizi kısa bir ses çıkardı. Lim
 
 {kahraman}, formdaki boş hücreye baktı. Henüz limandan uzaklaşmış sayılmazlardı. Fakat o küçük boşluk, yapacakları araştırmanın nasıl anlatılacağını şimdiden değiştiriyordu.
 
-İkinci ölçüm istasyonuna geldiklerinde Deniz Hanım {kahraman:yonelme} önceki üç haftanın sıcaklık verilerini gösterdi. Aynı noktada yapılan ölçümler arasında küçük farklar vardı. {kahraman}, bir haftanın diğerinden biraz daha sıcak olmasını denizin her yerde ısındığının kanıtı saymak üzereydi. Deniz Hanım onu durdurdu: “Aynı saatte mi, aynı derinlikte mi, aynı cihazla mı ölçtüğümüzü bilmeden böyle geniş bir sonuç çıkaramayız.” {kahraman}, sıcaklık değerlerinin yanına ölçüm koşullarını da ekledi.
+Dönüş hazırlığı sürerken Deniz Hanım {kahraman:yonelme} önceki üç haftanın sıcaklık verilerini gösterdi. Aynı noktada yapılan ölçümler arasında küçük farklar vardı. {kahraman}, bir haftanın diğerinden biraz daha sıcak olmasını denizin her yerde ısındığının kanıtı saymak üzereydi. Deniz Hanım onu durdurdu: “Aynı saatte mi, aynı derinlikte mi, aynı cihazla mı ölçtüğümüzü bilmeden böyle geniş bir sonuç çıkaramayız.” {kahraman}, sıcaklık değerlerinin yanına ölçüm koşullarını da ekledi.
 ---
 @omurga
 {yoldas:yalin|bir arkadaş} görünürlük diskinin suya eğik indiğini fark ettiğinde ölçümü baştan almak zorunda kaldı. Her iki denemeyi de defterine yazmak istemiyordu. İlk rakam işini zorlaştırıyordu. Selim Bey'in yardımcısı ona farklı bir noktadan seslendi: “Yanlış deneme bile neyi kontrol etmen gerektiğini gösterir. Onu yok sayma, neden tekrar ettiğini belirt.” {yoldas:yalin|bir arkadaş} bu kez ölçümü düzeltti ve iki değerin yanına kısa açıklama koydu.

@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3574,
+        "kelime_sayisi": 3576,
         "tahmini_sure_dk": 29,
         "sayfa_sayisi": 26,
         "soru_sayisi": 4,
@@ -117,7 +117,7 @@
         },
         {
           "t": "metin",
-          "v": ".\n\n“Bir seyahat günlüğünün kopyası,” dedi kütüphaneci İnci Hanım. “Aslı il "
+          "v": ".\n\n“Bir seyahat günlüğünün kopyası,” dedi kütüphaneci İnci Hanım. “Asıl nüsha il "
         },
         {
           "t": "kelime",
@@ -219,7 +219,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Asya ekrana göz attı. “Adres başka ilçede. Üstelik buranın adı o tarihte de böyle miydi?”\n\n"
+          "v": "İnci Hanım ekrana göz attı. “Adres başka ilçede. Üstelik buranın adı o tarihte de böyle miydi?”\n\n"
         },
         {
           "t": "yoldas",
@@ -1214,22 +1214,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bayram günü"
-        },
-        {
-          "id": "B",
           "metin": "Posta binası"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yeni yıl"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kamera adı"
+        },
+        {
+          "id": "D",
+          "metin": "Bayram günü"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Fotoğrafın arkasında yalnızca “Bayram günü” yazıyordu."
     },
     {
@@ -1240,29 +1240,29 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Doğru bilinen kısmı daha değerli kılar"
+          "metin": "Belgenin bütününü güvenilmez kılar"
         },
         {
           "id": "B",
-          "metin": "Belgeyi tamamen değersiz yapar"
+          "metin": "Kanıt aramayı tamamen durdurmaya yol açar"
         },
         {
           "id": "C",
-          "metin": "Kanıt aramayı durdurur"
+          "metin": "Fotoğrafın saklanmasını gereksiz kılar"
         },
         {
           "id": "D",
-          "metin": "Fotoğrafı yok etmeye yol açar"
+          "metin": "Doğru bilinen kısmı daha değerli kılar"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Bilinmeyeni açıkça söylemek, bilinen kısmın güvenilirliğini artırır."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 6,
-      "metin": "Nehir'in harita hakkında vardığı sonuç nedir?",
+      "metin": "Kahramanın harita hakkında vardığı sonuç nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -1270,15 +1270,15 @@
         },
         {
           "id": "B",
-          "metin": "Haritada görünen her yol kesinlikle vardır"
+          "metin": "Haritada görünen her yol, çizildiği tarihte kesinlikle açıktır"
         },
         {
           "id": "C",
-          "metin": "Haritalar hiç kullanılmamalıdır"
+          "metin": "Haritalar tarihî araştırmada hiçbir zaman güvenilir kaynak olamaz"
         },
         {
           "id": "D",
-          "metin": "Harita yalnız süs amaçlıdır"
+          "metin": "Harita yalnız sergi süsü olarak kullanılmalı, bilgi için kullanılmamalı"
         }
       ],
       "dogru": "A",
@@ -1292,22 +1292,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Belgelerin korunup saklandığı yer"
+          "metin": "Eski bir fotoğraf albümünün adı"
         },
         {
           "id": "B",
-          "metin": "Bir tür fotoğraf"
+          "metin": "Okulda oynanan eğlenceli bir oyun"
         },
         {
           "id": "C",
-          "metin": "Bir oyun"
+          "metin": "Belgelerin korunup saklandığı yer"
         },
         {
           "id": "D",
-          "metin": "Bir harita işareti"
+          "metin": "Haritada yolu gösteren bir işaret"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Arşiv, belgelerin düzenli biçimde saklandığı yerdir."
     }
   ],

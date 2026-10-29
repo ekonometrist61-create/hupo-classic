@@ -1,0 +1,1203 @@
+[
+ {
+  "id": "MAT6-001",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.1",
+  "surec_bileseni": "a",
+  "konu": "Çarpanlar ve katlar",
+  "alt_konu": "Bir doğal sayının katları",
+  "soru_metni": "Bir otobüs durağından otobüsler 12 dakikada bir kalkıyor. İlk otobüs saat 09.00’da kalktı. Aşağıdakilerden hangisi bu durakta kalkan otobüslerden birinin kalkış saatidir?",
+  "siklar": {
+   "A": "09.30",
+   "B": "09.36",
+   "C": "09.45",
+   "D": "09.50"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Otobüslerin kalkış sürelerinin ilk otobüsten sonra hangi sayının katları olduğuna bak.",
+  "cozum_adimlari": [
+   "Otobüsler 09.00’dan sonra 12, 24, 36, 48, ... dakika geçince kalkar.",
+   "Bu süreler 12’nin katlarıdır.",
+   "09.36, 09.00’dan 36 dakika sonradır ve 36 = 12 × 3 olduğundan 12’nin katıdır.",
+   "30, 45 ve 50 sayıları 12’nin katı değildir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "30 dakikayı yarım saat gibi yuvarlak bir süre sanıp 12’nin katı olup olmadığını denetlememek.",
+   "B": "Doğru.",
+   "C": "45’i 15’in katı olduğu için 12’nin katı sanmak.",
+   "D": "50’yi 10’un katı olduğu için uygun saymak; katlar karıştırılır."
+  },
+  "zorluk": 1,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT6-002",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.2",
+  "surec_bileseni": "d",
+  "konu": "Çarpanlar ve katlar",
+  "alt_konu": "9 ile tam bölünebilme",
+  "soru_metni": "Bir apartman yöneticisi, dört basamaklı kapı kodunu 2_73 biçiminde yazdı ve ikinci rakamı unuttu. Kodun 9 ile tam bölünebildiğini biliyor. Unutulan rakam kaçtır?",
+  "siklar": {
+   "A": "0",
+   "B": "3",
+   "C": "9",
+   "D": "6"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir sayının 9 ile bölünebilmesi için rakamlarının toplamının hangi özelliği taşıması gerektiğini düşün.",
+  "cozum_adimlari": [
+   "Bir sayı 9 ile tam bölünüyorsa rakamları toplamı da 9’un katıdır.",
+   "Bilinen rakamların toplamı 2 + 7 + 3 = 12’dir.",
+   "12 + ? toplamının 9’un katı olması için ? = 6 olmalıdır (12 + 6 = 18).",
+   "Kod 2673 olur ve 2673 = 9 × 297’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "0 koyunca toplam 12 olur ve 3 ile bölünür; 3 ile 9 kuralları karıştırılır.",
+   "B": "3 koyunca toplam 15 olur ve 3 ile bölünür; 9 kuralı yerine 3 kuralı uygulanır.",
+   "C": "9 rakamı ‘9 ile bölünür’ ifadesiyle eşleştirilir; toplam 21 olup 9’un katı değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "18-(2+7+3)",
+   "beklenen_sonuc": 6
+  }
+ },
+ {
+  "id": "MAT6-003",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.3",
+  "surec_bileseni": "a",
+  "konu": "Çarpanlar ve katlar",
+  "alt_konu": "Asal sayılar",
+  "soru_metni": "Kodlama kulübünde Mert, bir şifre için asal sayı kullanacak. Aşağıdaki sayılardan hangisini seçebilir?",
+  "siklar": {
+   "A": "37",
+   "B": "39",
+   "C": "49",
+   "D": "51"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bir sayının asal olması için kaç farklı pozitif böleni olması gerektiğini hatırla; her şıkta küçük sayılarla bölmeyi dene.",
+  "cozum_adimlari": [
+   "Asal sayının yalnızca iki pozitif böleni vardır: 1 ve kendisi.",
+   "39 = 3 × 13, 49 = 7 × 7 ve 51 = 3 × 17 olduğundan bu sayılar asal değildir.",
+   "37 sayısı 2, 3, 5 ile bölünmez; 1 ve 37 dışında böleni yoktur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "39 tek sayı olduğu için asal sanılır; 3’e bölündüğü gözden kaçar.",
+   "C": "49 bir tam kare olduğu halde yalnızca tek sayı olması nedeniyle asal sanılır.",
+   "D": "51’in asal olup olmadığı 3 ile bölünebilme denenmeden tek sayı olduğu için asal sayılır."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT6-004",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.4",
+  "surec_bileseni": "a",
+  "konu": "Çarpanlar ve katlar",
+  "alt_konu": "Ortak katlar",
+  "soru_metni": "Ali her 6 günde bir, Zeynep her 8 günde bir kütüphaneye gidiyor. İkisi bugün kütüphanede karşılaştı. Bir sonraki karşılaşmaları bugünden kaç gün sonra olur?",
+  "siklar": {
+   "A": "2",
+   "B": "14",
+   "C": "24",
+   "D": "48"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Ali’nin ve Zeynep’in kütüphaneye gittiği günleri ayrı ayrı sıralayıp ilk ortak günü bul.",
+  "cozum_adimlari": [
+   "Ali’nin gittiği günler: 6, 12, 18, 24, 30, ...",
+   "Zeynep’in gittiği günler: 8, 16, 24, 32, ...",
+   "İlk ortak gün 24’tür; 6 ile 8’in en küçük ortak katı 24’tür.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "6 ile 8’in en büyük ortak bölenini (2) en küçük ortak kat ile karıştırmak.",
+   "B": "6 ile 8’i toplayarak sonuç bulmak.",
+   "C": "Doğru.",
+   "D": "Bir ortak katı (6 × 8 = 48) ilk ortak kat sanmak."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "6*8/2",
+   "beklenen_sonuc": 24
+  }
+ },
+ {
+  "id": "MAT6-005",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.5",
+  "surec_bileseni": "b",
+  "konu": "Ondalık gösterim",
+  "alt_konu": "Basamak değerinin kesirle ifadesi",
+  "soru_metni": "Bir bisiklet yarışında Deniz’in bir tur süresi 14,267 saniye olarak ölçüldü. Bu sayıdaki 6 rakamının basamak değeri aşağıdaki kesirlerden hangisiyle gösterilir?",
+  "siklar": {
+   "A": "6/10",
+   "B": "6/100",
+   "C": "6/1000",
+   "D": "6/10000"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Virgülden sonra 6 rakamının kaçıncı sırada olduğunu say ve basamağın adını düşün.",
+  "cozum_adimlari": [
+   "Virgülden sonraki ilk basamak onda birler, ikinci basamak yüzde birler, üçüncü basamak binde birlerdir.",
+   "14,267 sayısında 2 onda birler, 6 yüzde birler, 7 binde birler basamağındadır.",
+   "6 rakamının basamak değeri 6/100’dür.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "6’yı virgülden sonraki ilk basamakta sanmak.",
+   "B": "Doğru.",
+   "C": "6’yı binde birler basamağında sanmak; 7 ile karıştırmak.",
+   "D": "Basamak sayısına bir fazla payda eklemek; 4 basamaklı sanmak."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "6/100",
+   "beklenen_sonuc": 0.06
+  }
+ },
+ {
+  "id": "MAT6-006",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.6",
+  "surec_bileseni": "a",
+  "konu": "Kesirler",
+  "alt_konu": "Kesir ve bölme ilişkisi, ondalık gösterim",
+  "soru_metni": "Bir çikolata 8 eşit parçaya bölündü ve Selin bunun 5 parçasını yedi. Yenen kısmı gösteren kesrin ondalık gösterimi aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "0,375",
+   "B": "0,58",
+   "C": "1,6",
+   "D": "0,625"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir kesir, payın paydaya bölünmesi olarak da yazılabilir.",
+  "cozum_adimlari": [
+   "Yenen kısım 5/8’dir.",
+   "Kesir çizgisi bölme anlamına gelir: 5 ÷ 8 işlemi yapılır.",
+   "5 ÷ 8 = 0,625 bulunur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yenmeyen kısmı (3/8) bulmak.",
+   "B": "Pay ile paydayı virgül koyarak yan yana yazmak (5 ve 8).",
+   "C": "Bölmeyi tersine yapmak (8 ÷ 5).",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "5/8",
+   "beklenen_sonuc": 0.625
+  }
+ },
+ {
+  "id": "MAT6-007",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.7",
+  "surec_bileseni": "e",
+  "konu": "Kesir, ondalık ve yüzde",
+  "alt_konu": "Yüzde ile indirim problemi",
+  "soru_metni": "Bir mağaza, etiket fiyatı 800 TL olan bir montta %25 indirim yapıyor. Mert montu indirimli fiyattan almak istiyor. Mert kaç TL öder?",
+  "siklar": {
+   "A": "600",
+   "B": "200",
+   "C": "775",
+   "D": "825"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce indirim miktarını bul, sonra bu miktarın etiket fiyatıyla ilişkisini düşün.",
+  "cozum_adimlari": [
+   "İndirim miktarı 800’ün %25’idir: 800 × 25 / 100 = 200 TL.",
+   "İndirimli fiyat 800 − 200 = 600 TL olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "İndirim miktarını ödenecek tutar sanmak.",
+   "C": "%25’i 25 TL gibi alıp 800’den çıkarmak.",
+   "D": "İndirim yerine 25 TL zam eklemek."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "800-800*25/100",
+   "beklenen_sonuc": 600
+  }
+ },
+ {
+  "id": "MAT6-008",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.7",
+  "surec_bileseni": "e",
+  "konu": "Kesir, ondalık ve yüzde",
+  "alt_konu": "Kesir ve yüzde içeren çok adımlı problem",
+  "soru_metni": "Bir su deposunda 600 litre su vardı. Suyun 1/4’ü sabah, geriye kalan suyun %40’ı öğleden sonra kullanıldı. Depoda kaç litre su kalmıştır?",
+  "siklar": {
+   "A": "180",
+   "B": "210",
+   "C": "270",
+   "D": "450"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Öğleden sonra kullanılan miktarın hangi sayının yüzdesi olarak verildiğine dikkat et.",
+  "cozum_adimlari": [
+   "Sabah kullanılan: 600 / 4 = 150 L; geriye 600 − 150 = 450 L kalır.",
+   "Öğleden sonra kullanılan: 450’nin %40’ı = 180 L.",
+   "Kalan su: 450 − 180 = 270 L.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Öğleden sonra kullanılan miktarı kalan su sanmak.",
+   "B": "Her iki oranı 600’e uygulamak (600 × 0,35).",
+   "C": "Doğru.",
+   "D": "Ara sonucu (sabahtan sonra kalan) nihai sonuç sanmak."
+  },
+  "zorluk": 3,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "(600-600/4)*(100-40)/100",
+   "beklenen_sonuc": 270
+  }
+ },
+ {
+  "id": "MAT6-009",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.1.8",
+  "surec_bileseni": "b",
+  "konu": "Uzunluk ölçme",
+  "alt_konu": "Uzunlukları aynı birime çevirip karşılaştırma",
+  "soru_metni": "Elif’in boyu 1,45 m, kardeşi Mert’in boyu 138 cm’dir. Elif, Mert’ten kaç milimetre daha uzundur?",
+  "siklar": {
+   "A": "7",
+   "B": "700",
+   "C": "0,07",
+   "D": "70"
+  },
+  "dogru_sik": "D",
+  "ipucu": "İki boyu karşılaştırmadan önce aynı uzunluk birimine çevir.",
+  "cozum_adimlari": [
+   "1,45 m = 145 cm ve 138 cm olduğundan fark 145 − 138 = 7 cm’dir.",
+   "1 cm = 10 mm olduğundan 7 cm = 70 mm’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Farkı santimetre cinsinden bulup milimetreye çevirmeyi unutmak.",
+   "B": "Santimetreyi milimetreye çevirirken 100 ile çarpmak.",
+   "C": "Farkı metre cinsinden bulup istenen birime çevirmemek.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "1450-1380",
+   "beklenen_sonuc": 70
+  }
+ },
+ {
+  "id": "MAT6-010",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.2.1",
+  "surec_bileseni": "c",
+  "konu": "Cebirsel ifadeler",
+  "alt_konu": "Durumu cebirsel ifadeyle gösterme",
+  "soru_metni": "Bir kırtasiyede defterlerin tanesi 15 TL, kalemin fiyatı 10 TL’dir. Ayşe x tane defter ve 1 kalem aldı. Ayşe’nin ödediği toplam tutarı gösteren cebirsel ifade aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "25x",
+   "B": "15x + 10",
+   "C": "10x + 15",
+   "D": "x + 25"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Hangi ürünün sayısının değişken, hangisinin sabit olduğunu belirle.",
+  "cozum_adimlari": [
+   "x tane defterin tutarı 15 × x = 15x TL’dir.",
+   "1 kalemin tutarı 10 TL’dir.",
+   "Toplam tutar 15x + 10 TL’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Her iki fiyatı toplayıp (15 + 10) x ile çarpmak; kalemi de x tane saymak.",
+   "B": "Doğru.",
+   "C": "Defter ve kalem fiyatlarının yerini karıştırmak.",
+   "D": "Fiyatları toplayıp x’i yalnızca bir terim gibi eklemek."
+  },
+  "zorluk": 1,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT6-011",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.2.1",
+  "surec_bileseni": "ç",
+  "konu": "Cebirsel ifadeler",
+  "alt_konu": "Cebirsel ifadenin anlamı ve değer bulma",
+  "soru_metni": "Bir kırtasiyede kalemin tanesi a TL, silginin tanesi b TL’dir. Emre 3 kalem ile 2 silgi aldı ve ödediği tutarı 3a + 2b TL biçiminde yazdı. Kalem 4 TL, silgi 5 TL ise Emre kaç TL öder?",
+  "siklar": {
+   "A": "22",
+   "B": "59",
+   "C": "14",
+   "D": "45"
+  },
+  "dogru_sik": "A",
+  "ipucu": "3a ifadesinde 3 ile a arasında hangi işlem olduğunu düşün.",
+  "cozum_adimlari": [
+   "3a, 3 × a demektir; a = 4 için 3 × 4 = 12.",
+   "2b, 2 × b demektir; b = 5 için 2 × 5 = 10.",
+   "Toplam 12 + 10 = 22 TL’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "3a ve 2b’yi rakamları yan yana yazarak okumak (34 + 25).",
+   "C": "Katsayıları çarpmadan sayıları toplamak (3 + 4 + 2 + 5).",
+   "D": "Katsayılar ile değerleri ayrı ayrı toplayıp çarpmak ((3 + 2) × (4 + 5))."
+  },
+  "zorluk": 2,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "3*4+2*5",
+   "beklenen_sonuc": 22
+  }
+ },
+ {
+  "id": "MAT6-012",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.2.2",
+  "surec_bileseni": "a",
+  "konu": "Örüntüler",
+  "alt_konu": "Sayı örüntüsünde istenen terimi bulma",
+  "soru_metni": "Bir atölyede boncuk dizilerinden oluşan bir örüntü hazırlanıyor. 1. dizide 5, 2. dizide 8, 3. dizide 11 boncuk bulunuyor ve örüntü aynı kuralla devam ediyor. 20. dizide kaç boncuk bulunur?",
+  "siklar": {
+   "A": "59",
+   "B": "60",
+   "C": "62",
+   "D": "65"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Dizi sırası ile boncuk sayısı arasındaki ilişkiyi tabloya dökerek kuralı bul.",
+  "cozum_adimlari": [
+   "Her dizide boncuk sayısı 3 artıyor.",
+   "n. dizideki boncuk sayısı 3 × n + 2 olur (1. dizi için 3 + 2 = 5).",
+   "20. dizide 3 × 20 + 2 = 62 boncuk bulunur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "20. dizi yerine 19. dizinin değerini bulmak (3 × 19 + 2).",
+   "B": "Kuralı 3 × n sanıp sabit terimi unutmak.",
+   "C": "Doğru.",
+   "D": "İlk terime 3 × 20 eklemek (5 + 60); bir adım fazla saymak."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "3*20+2",
+   "beklenen_sonuc": 62
+  }
+ },
+ {
+  "id": "MAT6-013",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.2.3",
+  "surec_bileseni": "a",
+  "konu": "Cebirsel ifadeler",
+  "alt_konu": "Algoritma yorumlama",
+  "soru_metni": "Bir makineye sayı girilince makine önce sayıyı 3 ile çarpıyor, ardından çıkan sonuçtan 4 çıkarıyor ve en son bulduğu sayıyı 2’ye bölüyor. Makineye 10 girilirse çıkan sayı kaç olur?",
+  "siklar": {
+   "A": "9",
+   "B": "26",
+   "C": "28",
+   "D": "13"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Makinenin adımlarını verilen sırayla uygula ve her adımın sonucunu ayrı yaz.",
+  "cozum_adimlari": [
+   "1. adım: 10 × 3 = 30.",
+   "2. adım: 30 − 4 = 26.",
+   "3. adım: 26 ÷ 2 = 13.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Adımların sırasını değiştirmek ((10 − 4) × 3 ÷ 2).",
+   "B": "Son adımı (2’ye bölme) uygulamamak.",
+   "C": "Bölmeyi yalnızca 4’e uygulamak (30 − 4 ÷ 2); işlem sırasını bozmak.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "(10*3-4)/2",
+   "beklenen_sonuc": 13
+  }
+ },
+ {
+  "id": "MAT6-014",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.3.1",
+  "surec_bileseni": "ç",
+  "konu": "Doğrular ve açılar",
+  "alt_konu": "İç ters açılar",
+  "soru_metni": "Bir inşaat planında iki paralel kiriş birer doğru, bunları birleştiren çapraz çubuk ise bu doğruları kesen bir doğru olarak gösterilmiştir. Oluşan iç ters açılardan birinin ölçüsü 40° ise diğerinin ölçüsü kaç derecedir?",
+  "siklar": {
+   "A": "50",
+   "B": "40",
+   "C": "140",
+   "D": "80"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Paralel doğruların kesen ile oluşturduğu iç ters açıların ölçüleri arasındaki ilişkiyi hatırla.",
+  "cozum_adimlari": [
+   "Paralel iki doğru bir kesenle kesilince iç ters açıların ölçüleri eşit olur.",
+   "Açılardan biri 40° ise diğeri de 40°’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İç ters açıları birbirinin tümleri sanmak (90° − 40°).",
+   "B": "Doğru.",
+   "C": "İç ters açıları bütünler sanmak (180° − 40°).",
+   "D": "İki açının toplamının, verilen açının iki katı olduğunu düşünüp toplamı cevap yapmak."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT6-015",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.3.1",
+  "surec_bileseni": "c",
+  "konu": "Doğrular ve açılar",
+  "alt_konu": "Aynı yanda kalan iç açılar",
+  "soru_metni": "Bir bahçe çitindeki iki paralel tel, eğik bir destek çubuğuyla kesiliyor. Teller arasında ve çubuğun aynı yanında kalan iki açıdan biri diğerinin iki katıdır. Büyük olan açı kaç derecedir?",
+  "siklar": {
+   "A": "60",
+   "B": "90",
+   "C": "120",
+   "D": "240"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Paralel doğrular arasında ve kesenin aynı yanında kalan açıların ölçüleri toplamı hakkında ne biliyorsun?",
+  "cozum_adimlari": [
+   "Bu iki açı birbirini 180°’ye tamamlar (bütünlerdir).",
+   "Küçük açı x ise büyük açı 2x’tir; x + 2x = 180° olduğundan x = 60°.",
+   "Büyük açı 2 × 60 = 120°’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Küçük açıyı büyük açı sanmak.",
+   "B": "İki açıyı eşit sanıp 180° ÷ 2 almak.",
+   "C": "Doğru.",
+   "D": "Toplamı 360° alarak 360° ÷ 3 = 120° bulup büyük açıyı 2 katı yapmak."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "180*2/3",
+   "beklenen_sonuc": 120
+  }
+ },
+ {
+  "id": "MAT6-016",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.3.2",
+  "surec_bileseni": "c",
+  "konu": "Dörtgenler",
+  "alt_konu": "Dörtgenlerin kenar ve açı özellikleri",
+  "soru_metni": "Bir tasarımcı, dört kenarı eşit uzunlukta, karşılıklı kenarları paralel ve köşegenleri birbirine dik olan bir pano çiziyor. Panonun açıları dik açı değildir. Bu pano aşağıdaki dörtgenlerden hangisidir?",
+  "siklar": {
+   "A": "Eşkenar dörtgen",
+   "B": "Dikdörtgen",
+   "C": "İkizkenar yamuk",
+   "D": "Kare"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Kenar eşitliği, paralellik, köşegenlerin dikliği ve açıların ölçüsü özelliklerini dörtgenlerle tek tek eşleştir.",
+  "cozum_adimlari": [
+   "Dört kenarı eşit, karşılıklı kenarları paralel ve köşegenleri dik olan dörtgenler eşkenar dörtgen ve karedir.",
+   "Açılar dik açı olmadığı için kare elenir.",
+   "Dikdörtgenin kenarları eşit olmaz, yamuğun karşılıklı kenarlarının yalnızca bir çifti paraleldir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Paralel kenarlı ve dörtgen olması yüzünden dikdörtgen seçmek; kenarların eşitliğini ve köşegenlerin dikliğini göz ardı etmek.",
+   "C": "Yamuk adını duyup bu şekilde bir pano düşünmek; iki çift paralel kenarı göz ardı etmek.",
+   "D": "Karenin de dört kenarının eşit olduğunu bilip açıların dik olmadığı bilgisini atlamak."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT6-018",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.3.4",
+  "surec_bileseni": "d",
+  "konu": "Dörtgenler",
+  "alt_konu": "Paralelkenarda açı problemi",
+  "soru_metni": "Paralelkenar biçimindeki bir bahçenin bir iç açısı, komşu iç açısının iki katından 30° eksiktir. Bu iki açıdan küçüğü kaç derecedir?",
+  "siklar": {
+   "A": "60",
+   "B": "70",
+   "C": "110",
+   "D": "150"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Paralelkenarda komşu iki açının ölçüleri arasındaki ilişkiyi kullanarak bir strateji kur; denemelerle de ilerleyebilirsin.",
+  "cozum_adimlari": [
+   "Paralelkenarda komşu açıların toplamı 180°’dir.",
+   "Komşu açı b ise diğer açı 2b − 30 olur; (2b − 30) + b = 180 → 3b = 210 → b = 70°.",
+   "Diğer açı 2 × 70 − 30 = 110°’dir; küçük açı 70°’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "180’i 3’e bölüp 30’u hesaba katmamak.",
+   "B": "Doğru.",
+   "C": "Büyük açıyı bulup küçük olanı sormayı unutmak.",
+   "D": "Toplamdan doğrudan 30 çıkarmak (180 − 30)."
+  },
+  "zorluk": 3,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "(180+30)/3",
+   "beklenen_sonuc": 70
+  }
+ },
+ {
+  "id": "MAT6-019",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.4.1",
+  "surec_bileseni": "c",
+  "konu": "Alan ölçme",
+  "alt_konu": "Alan birimleri arası dönüşüm",
+  "soru_metni": "Bir halı mağazasının kataloğunda bir halının alanı 3 m² olarak yazılıyor. Müşteri alanı santimetrekare cinsinden öğrenmek istiyor. Halının alanı kaç santimetrekaredir?",
+  "siklar": {
+   "A": "300",
+   "B": "3000",
+   "C": "30000",
+   "D": "300000"
+  },
+  "dogru_sik": "C",
+  "ipucu": "1 metrekarelik bir karenin kenarı kaç santimetredir? Alanı bu kenarlarla hesapla.",
+  "cozum_adimlari": [
+   "1 m = 100 cm olduğundan 1 m² = 100 × 100 = 10 000 cm²’dir.",
+   "3 m² = 3 × 10 000 = 30 000 cm²’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Uzunluk dönüşümünü (×100) alan dönüşümüne uygulamak.",
+   "B": "Alanı 1000 ile çarpmak.",
+   "C": "Doğru.",
+   "D": "Alanı 100 000 ile çarpmak; sıfır sayısını yanlış saymak."
+  },
+  "zorluk": 1,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "3*100*100",
+   "beklenen_sonuc": 30000
+  }
+ },
+ {
+  "id": "MAT6-020",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.4.2",
+  "surec_bileseni": "b",
+  "konu": "Alan ölçme",
+  "alt_konu": "Paralelkenarın alanı",
+  "soru_metni": "Paralelkenar biçimli bir tarlanın tabanı 14 m, bu tabana ait yüksekliği 6 m, yan kenarı 8 m’dir. Tarlanın alanı kaç metrekaredir?",
+  "siklar": {
+   "A": "84",
+   "B": "42",
+   "C": "112",
+   "D": "48"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Alan hesabında taban ile o tabana ait yüksekliği kullanmalısın; verilen her uzunluk gerekli olmayabilir.",
+  "cozum_adimlari": [
+   "Paralelkenarın alanı = taban × o tabana ait yükseklik.",
+   "Alan = 14 × 6 = 84 m²’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Üçgen alan formülünü uygulayıp yarısını almak.",
+   "C": "Yüksekliği yan kenar ile değiştirmek (14 × 8).",
+   "D": "Yan kenar ile yüksekliği çarpmak (8 × 6)."
+  },
+  "zorluk": 1,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "14*6",
+   "beklenen_sonuc": 84
+  }
+ },
+ {
+  "id": "MAT6-021",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.4.2",
+  "surec_bileseni": "b",
+  "konu": "Alan ölçme",
+  "alt_konu": "Üçgenin alanı ve yükseklik",
+  "soru_metni": "Bir okul, alanı 48 m² olan üçgen biçimli bir çiçek bahçesi yapacak. Bahçenin bir kenarı 12 m’dir. Bu kenara ait yükseklik kaç metredir?",
+  "siklar": {
+   "A": "4",
+   "B": "24",
+   "C": "96",
+   "D": "8"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Üçgenin alan bağıntısını yaz ve bilinmeyen yüksekliği bulmak için işlemi tersine çevir.",
+  "cozum_adimlari": [
+   "Üçgenin alanı = taban × yükseklik ÷ 2’dir.",
+   "48 = 12 × h ÷ 2 → 48 = 6 × h.",
+   "h = 48 ÷ 6 = 8 m’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Alanı doğrudan tabana bölmek (48 ÷ 12); ikiye bölmeyi atlamak.",
+   "B": "Alanın yarısını yükseklik sanmak.",
+   "C": "Alanı 2 ile çarpıp sonucu yükseklik sanmak.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "2*48/12",
+   "beklenen_sonuc": 8
+  }
+ },
+ {
+  "id": "MAT6-022",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.4.3",
+  "surec_bileseni": "e",
+  "konu": "Alan ölçme",
+  "alt_konu": "Alan problemi (döşeme)",
+  "soru_metni": "Dikdörtgen biçimli 8 m × 6 m’lik bir salonun zemini, kenar uzunluğu 50 cm olan kare fayanslarla boşluksuz döşenecektir. Bu iş için kaç fayans gerekir?",
+  "siklar": {
+   "A": "96",
+   "B": "192",
+   "C": "28",
+   "D": "48"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Salonun kenarlarını ve fayansın kenarını aynı uzunluk birimine çevir; her kenara kaç fayans sığdığını düşün.",
+  "cozum_adimlari": [
+   "50 cm = 0,5 m’dir.",
+   "8 m’lik kenara 8 ÷ 0,5 = 16, 6 m’lik kenara 6 ÷ 0,5 = 12 fayans sığar.",
+   "Toplam fayans sayısı 16 × 12 = 192’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Salonun alanını (48 m²) fayansın kenar uzunluğuna (0,5) bölmek.",
+   "B": "Doğru.",
+   "C": "Her kenara sığan fayans sayılarını çarpmak yerine toplamak (16 + 12).",
+   "D": "Alanın sayısal değerini doğrudan fayans sayısı sanmak."
+  },
+  "zorluk": 3,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "(8*100/50)*(6*100/50)",
+   "beklenen_sonuc": 192
+  }
+ },
+ {
+  "id": "MAT6-023",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.4.4",
+  "surec_bileseni": "b",
+  "konu": "Çember",
+  "alt_konu": "Çemberin uzunluğu ile çap ilişkisi",
+  "soru_metni": "Hilal, farklı büyüklükteki üç yuvarlak tepsinin çapını cetvelle, kenar uzunluğunu ise ip ile ölçtü. Çapı 10 cm olan tepsinin kenarı 31 cm, çapı 20 cm olanın 63 cm, çapı 30 cm olanın 94 cm çıktı. Bu ölçümlere göre çemberin uzunluğu ile çapı arasındaki ilişki aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Uzunluk, çapın yaklaşık 2 katıdır.",
+   "B": "Uzunluk, çapa yaklaşık 20 cm eklenerek bulunur.",
+   "C": "Uzunluk, çapın yaklaşık 3 katıdır.",
+   "D": "Uzunluk, çapın yaklaşık 6 katıdır."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Her tepside çemberin uzunluğunu çapına bölerek sonuçları karşılaştır.",
+  "cozum_adimlari": [
+   "31 ÷ 10 ≈ 3,1; 63 ÷ 20 ≈ 3,15; 94 ÷ 30 ≈ 3,13 bulunur.",
+   "Üç oran da yaklaşık 3’tür; çapı 2 katına çıkarınca uzunluk de yaklaşık 2 katına çıkar.",
+   "Uzunluk çapın yaklaşık 3 katıdır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çemberin uzunluğunu çapın iki katı sanmak; yarıçapla çapı karıştırmak.",
+   "B": "Toplamsal akıl yürütmeyle yalnızca ilk ölçümdeki farkı genellemek; 20 cm’lik fark diğer ölçümlerde tutmaz.",
+   "C": "Doğru.",
+   "D": "Çapı yarıçapla karıştırarak 2 × 3 = 6 katı bulmak."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT6-024",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.4.5",
+  "surec_bileseni": "e",
+  "konu": "Çember",
+  "alt_konu": "Çemberin uzunluğu",
+  "soru_metni": "Çapı 20 m olan dairesel bir parkın kenarındaki yolda Ali yürüyüş yapıyor. Ali yolun çevresini bir kez tamamen dolaşıyor. π yerine 3 alınırsa Ali kaç metre yürümüş olur?",
+  "siklar": {
+   "A": "60",
+   "B": "30",
+   "C": "120",
+   "D": "1200"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Çemberin uzunluğunu çapla ilişkilendiren bağıntıyı yaz ve verilen değerleri yerine koy.",
+  "cozum_adimlari": [
+   "Çemberin uzunluğu = π × çap’tır.",
+   "Uzunluk = 3 × 20 = 60 m’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "π ile yarıçapı çarpmak (3 × 10); çevre yerine yarım çevre bulmak.",
+   "C": "Çapı yarıçap sanıp 2 × π × 20 işlemini yapmak.",
+   "D": "Alan benzeri bir işlem yapıp π × 20 × 20 hesaplamak."
+  },
+  "zorluk": 1,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "3*20",
+   "beklenen_sonuc": 60
+  }
+ },
+ {
+  "id": "MAT6-025",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.4.5",
+  "surec_bileseni": "e",
+  "konu": "Çember",
+  "alt_konu": "Çevre ve tur sayısı ile yol",
+  "soru_metni": "Çapı 70 cm olan bir bisiklet tekerleği yerde kaymadan tam 100 tur dönüyor. π yerine 3,14 alınırsa bisiklet kaç metre yol alır?",
+  "siklar": {
+   "A": "21,98",
+   "B": "219,8",
+   "C": "439,6",
+   "D": "21980"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Tekerleğin bir turda aldığı yol, çemberin uzunluğuna eşittir; sonucu istenen birime çevirmeyi unutma.",
+  "cozum_adimlari": [
+   "Bir turda alınan yol = 3,14 × 70 = 219,8 cm’dir.",
+   "100 turda alınan yol 219,8 × 100 = 21 980 cm’dir.",
+   "21 980 cm = 219,8 m’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Santimetreyi metreye çevirirken 1000’e bölmek.",
+   "B": "Doğru.",
+   "C": "Çapı yarıçap sanıp 2 × π × 70 hesaplamak.",
+   "D": "Sonucu santimetre cinsinden bırakıp metreye çevirmeyi unutmak."
+  },
+  "zorluk": 3,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "70*3.14*100/100",
+   "beklenen_sonuc": 219.8
+  }
+ },
+ {
+  "id": "MAT6-026",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.4.6",
+  "surec_bileseni": "b",
+  "konu": "Çember",
+  "alt_konu": "Merkez açı ve yay uzunluğu",
+  "soru_metni": "Dairesel bir koşu pistinde 90°’lik merkez açıya karşılık gelen yayın uzunluğu 15 m’dir. Bu pistin bir tam turu kaç metredir?",
+  "siklar": {
+   "A": "30",
+   "B": "45",
+   "C": "90",
+   "D": "60"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Tam çemberin merkez açısı kaç derecedir? Verilen açı bunun kaçta kaçıdır?",
+  "cozum_adimlari": [
+   "Tam çemberin merkez açısı 360°’dir.",
+   "90° tam çemberin 360 ÷ 90 = 4’te biridir.",
+   "Tam tur 4 × 15 = 60 m’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yayı 2 ile çarpmak; 90°’yi yarım çember sanmak.",
+   "B": "Yayı 3 ile çarpmak; çeyrek çember yerine üçte bir almak.",
+   "C": "Merkez açının ölçüsünü yay/çevre cevabı sanmak.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "15*360/90",
+   "beklenen_sonuc": 60
+  }
+ },
+ {
+  "id": "MAT6-027",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.5.1",
+  "surec_bileseni": "d",
+  "konu": "Veri",
+  "alt_konu": "Aritmetik ortalama",
+  "soru_metni": "Bir okul kütüphanesinden 5 gün boyunca ödünç verilen kitap sayıları sırasıyla 12, 18, 14, 20 ve 11’dir. Günlük ortalama kaç kitap ödünç verilmiştir?",
+  "siklar": {
+   "A": "14",
+   "B": "75",
+   "C": "15",
+   "D": "20"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Ortalama bulmak için tüm değerleri toplayıp değer sayısına bölmen gerekir.",
+  "cozum_adimlari": [
+   "Toplam kitap sayısı 12 + 18 + 14 + 20 + 11 = 75’tir.",
+   "Gün sayısı 5’tir.",
+   "Ortalama 75 ÷ 5 = 15’tir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ortancayı (sıralanmış verinin ortadaki değeri) ortalama sanmak.",
+   "B": "Toplamı bulup değer sayısına bölmeyi unutmak.",
+   "C": "Doğru.",
+   "D": "En büyük değeri ortalama sanmak."
+  },
+  "zorluk": 2,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "(12+18+14+20+11)/5",
+   "beklenen_sonuc": 15
+  }
+ },
+ {
+  "id": "MAT6-028",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.5.2",
+  "surec_bileseni": "c",
+  "konu": "Veri",
+  "alt_konu": "Başkasının araştırmasındaki sonucu değerlendirme",
+  "soru_metni": "Bir araştırmacı 40 öğrenciye en sevdikleri dersi sordu: Matematik 12, Fen Bilimleri 10, Türkçe 8, Sosyal Bilgiler 6 ve Görsel Sanatlar 4 öğrenci seçti. Araştırmacı “Öğrencilerin çoğunluğu Matematik dersini seviyor.” sonucunu yazdı. Bu sonuç verilere göre nasıl değerlendirilir?",
+  "siklar": {
+   "A": "Sonuç hatalıdır; Matematik’i seçenler öğrencilerin yarısından azdır.",
+   "B": "Sonuç doğrudur; Matematik en çok seçilen dersi oluşturmuştur.",
+   "C": "Sonuç doğrudur; Fen ile Türkçe’yi seçenler Matematik’ten azdır.",
+   "D": "Sonuç hatalıdır; Matematik’i seçenler öğrencilerin %12’sidir."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Çoğunluk için bir değerin tüm veriye oranına bak; yalnızca en büyük olmasına bakma.",
+  "cozum_adimlari": [
+   "Matematik’i seçenlerin oranı 12 / 40 = %30’dur.",
+   "Çoğunluk, öğrencilerin yarısından fazlası demektir; %30 yarının altındadır.",
+   "Matematik en çok seçilen ders olsa da sonuç çoğunluk için yanlıştır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "En büyük değeri çoğunlukla karıştırmak.",
+   "C": "İki dersin toplamını yanlış karşılaştırmak (10 + 8 = 18, 12’den büyüktür).",
+   "D": "12 sayısını yüzde değeri sanmak."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "12/40",
+   "beklenen_sonuc": 0.3
+  }
+ },
+ {
+  "id": "MAT6-029",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.6.1",
+  "surec_bileseni": "a",
+  "konu": "Olasılık",
+  "alt_konu": "Göreli sıklıkla olasılık tahmini",
+  "soru_metni": "Bir fabrikada kalite kontrol için rastgele seçilen 200 üründen 8’inin kusurlu olduğu görüldü. Bu gözleme göre üretilen bir ürünün kusurlu çıkma olasılığı yaklaşık yüzde kaçtır?",
+  "siklar": {
+   "A": "%8",
+   "B": "%96",
+   "C": "%25",
+   "D": "%4"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Olayın gözlenme sayısını toplam deneme sayısına oranla ve yüzdeye çevir.",
+  "cozum_adimlari": [
+   "Göreli sıklık = kusurlu ürün sayısı ÷ incelenen ürün sayısı = 8 / 200.",
+   "8 / 200 = 4 / 100 = %4’tür.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "8 sayısını doğrudan yüzde değeri sanmak.",
+   "B": "Kusursuz ürünlerin oranını bulmak (%100 − %4).",
+   "C": "Oranı ters hesaplamak (200 ÷ 8).",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "8/200*100",
+   "beklenen_sonuc": 4
+  }
+ },
+ {
+  "id": "MAT6-030",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.6.4.6",
+  "surec_bileseni": "c",
+  "konu": "Çember",
+  "alt_konu": "Yay uzunluğundan çap bulma",
+  "soru_metni": "Dairesel bir tabağın kenarında 72°’lik merkez açıya karşılık gelen yayın uzunluğu 12 cm’dir. π yerine 3 alınırsa tabağın çapı kaç santimetredir?",
+  "siklar": {
+   "A": "10",
+   "B": "20",
+   "C": "30",
+   "D": "60"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce tam çemberin uzunluğunu bul, sonra çevre ile çap arasındaki bağıntıyı kullan.",
+  "cozum_adimlari": [
+   "72° tam çemberin 360 ÷ 72 = 5’te biridir.",
+   "Çemberin uzunluğu 5 × 12 = 60 cm’dir.",
+   "Uzunluk = π × çap olduğundan çap = 60 ÷ 3 = 20 cm’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çapı yerine yarıçapı bulmak (60 ÷ 3 ÷ 2).",
+   "B": "Doğru.",
+   "C": "Çapı yerine çevrenin yarısını bulmak.",
+   "D": "Çemberin uzunluğunu bulup çapı sormayı atlamak."
+  },
+  "zorluk": 3,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "12*360/72/3",
+   "beklenen_sonuc": 20
+  }
+ },
+ {
+  "id": "BOS6-011",
+  "sinif": 6,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "MAT.6.3.3",
+  "surec_bileseni": "b",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Köşegenleri birbirini ortalayan dörtgenler",
+  "soru_metni": "Bir uçurtma atölyesinde iki çıta, birbirini tam ortalarından kesecek biçimde çaprazlanıyor ve çıtaların uçları birleştirilerek bir dörtgen çerçeve yapılıyor. Birinci çıta 18 cm uzunluğundadır. İkinci çıtanın kesişim noktasından bir ucuna olan uzaklığı 7 cm olduğuna göre iki çıtanın uzunlukları toplamı kaç santimetredir?",
+  "siklar": {
+   "A": "25",
+   "B": "32",
+   "C": "39",
+   "D": "23"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Çıtalar birbirini ortaladığından, kesişim noktasından uca olan uzaklık çıtanın hangi kısmını verir?",
+  "cozum_adimlari": [
+   "Çıtalar birbirini ortaladığı için ikinci çıtanın kesişim noktasından her iki ucuna uzaklığı 7 cm'dir.",
+   "İkinci çıtanın uzunluğu 7 + 7 = 14 cm olur.",
+   "İki çıtanın uzunlukları toplamı 18 + 14 = 32 cm'dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "7 cm'yi çıtanın tamamı sanıp 18 + 7 işlemini yapma.",
+   "B": "Doğru.",
+   "C": "7 cm'yi ayrıca toplayarak 18 + 14 + 7 hesaplama.",
+   "D": "Birinci çıtanın yarısını (9 cm) alıp 9 + 14 hesaplama."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "18+2*7",
+   "beklenen_sonuc": 32
+  }
+ }
+]

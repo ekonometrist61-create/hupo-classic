@@ -1,0 +1,242 @@
+[
+ {
+  "sinif": 3,
+  "kelime": "dost",
+  "tur": "es_anlamli",
+  "gemini": {
+   "cevap": 0,
+   "sorun": "“Dost” ve “arkadaş” sözcükleri tam eş anlamlı değil, yakın anlamlı sözcüklerdir.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "anahtar": 0
+ },
+ {
+  "sinif": 4,
+  "kelime": "çay",
+  "tur": "es_sesli",
+  "gemini": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "Kökteki 'dere anlamında' tanımı TDK'ya tam uymuyor: TDK 'çay' = ırmaktan küçük, dereden büyük akarsu. 'küçük akarsu' denmeli.",
+   "tek": true
+  },
+  "anahtar": 0
+ },
+ {
+  "sinif": 4,
+  "kelime": "yaz",
+  "tur": "es_sesli",
+  "gemini": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "'yılın üçüncü mevsimi' tanımı belirsiz (ilkbahardan sayılırsa ikinci); TDK: ilkbahar ile sonbahar arasındaki en sıcak mevsim. Tanım değiştirilmeli.",
+   "tek": true
+  },
+  "anahtar": 2
+ },
+ {
+  "sinif": 5,
+  "kelime": "elma",
+  "tur": "sozcuk_turu",
+  "gemini": {
+   "cevap": 0,
+   "sorun": "Sözcük türleri (isim) 5. sınıf Türkçe müfredatında yer almaz, 6. sınıf konusudur.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "anahtar": 0
+ },
+ {
+  "sinif": 5,
+  "kelime": "koştu",
+  "tur": "sozcuk_turu",
+  "gemini": {
+   "cevap": 1,
+   "sorun": "Sözcük türleri (fiil) 5. sınıf Türkçe müfredatında yer almaz, 7. sınıf konusudur.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 1,
+   "sorun": "Fiil türü önceki programda 7. sınıf konusuydu; TYMM 5 kaynağında görüldüğü doğrulanmalı.",
+   "tek": true
+  },
+  "anahtar": 1
+ },
+ {
+  "sinif": 5,
+  "kelime": "güzel",
+  "tur": "sozcuk_turu",
+  "gemini": {
+   "cevap": 2,
+   "sorun": "Sözcük türleri (sıfat) 5. sınıf Türkçe müfredatında yer almaz, 6. sınıf konusudur.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  },
+  "anahtar": 2
+ },
+ {
+  "sinif": 5,
+  "kelime": "hızlıca",
+  "tur": "sozcuk_turu",
+  "gemini": {
+   "cevap": 3,
+   "sorun": "Sözcük türleri (zarf) 5. sınıf Türkçe müfredatında yer almaz, 7. sınıf konusudur.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 3,
+   "sorun": "Zarf türü önceki programda 7. sınıf konusu; TYMM 5 kaynağında görülmediyse düzey üstü. Kaynak doğrulanmalı.",
+   "tek": true
+  },
+  "anahtar": 3
+ },
+ {
+  "sinif": 5,
+  "kelime": "ve",
+  "tur": "sozcuk_turu",
+  "gemini": {
+   "cevap": 0,
+   "sorun": "Sözcük türleri (bağlaç) 5. sınıf Türkçe müfredatında yer almaz, 6. sınıf konusudur.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "Bağlaç/edat ayrımı önceki programda 6. sınıf konusu; TYMM 5 kaynağında görülmediyse düzey üstü. Kaynak doğrulanmalı.",
+   "tek": true
+  },
+  "anahtar": 0
+ },
+ {
+  "sinif": 5,
+  "kelime": "biz",
+  "tur": "sozcuk_turu",
+  "gemini": {
+   "cevap": 1,
+   "sorun": "Sözcük türleri (zamir) 5. sınıf Türkçe müfredatında yer almaz, 6. sınıf konusudur.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 1,
+   "sorun": "Zamir önceki programda 6. sınıf konusu; TYMM 5 kaynağı doğrulanmalı.",
+   "tek": true
+  },
+  "anahtar": 1
+ },
+ {
+  "sinif": 5,
+  "kelime": "gibi",
+  "tur": "sozcuk_turu",
+  "gemini": {
+   "cevap": 2,
+   "sorun": "Sözcük türleri (edat) 5. sınıf Türkçe müfredatında yer almaz, 6. sınıf konusudur.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "Edat/bağlaç ayrımı önceki programda 6. sınıf konusu; TYMM 5 kaynağında görülmediyse düzey üstü. Kaynak doğrulanmalı.",
+   "tek": true
+  },
+  "anahtar": 2
+ },
+ {
+  "sinif": 6,
+  "kelime": "kırılgan",
+  "tur": "baglamda_anlam",
+  "gemini": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "Çeldirici 'çok ağırlıklı' doğal Türkçe değil ('çok ağır' olmalı).",
+   "tek": true
+  },
+  "anahtar": 0
+ },
+ {
+  "sinif": 7,
+  "kelime": "daralmak",
+  "tur": "zit_anlamli",
+  "gemini": {
+   "cevap": 1,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 1,
+   "sorun": "Daralmak/genişlemek 7. sınıf için kolay; düzey alt sınırda.",
+   "tek": true
+  },
+  "anahtar": 1
+ },
+ {
+  "sinif": 8,
+  "kelime": "kara",
+  "tur": "es_sesli",
+  "gemini": {
+   "cevap": 2,
+   "sorun": "C seçeneğinde ek düşmesi var, 'kara yaklaştı' yerine 'karaya yaklaştı' olmalıdır.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "Doğru şıkta dil bilgisi hatası: 'kara yaklaştı' değil 'karaya yaklaştı' olmalı. Ayrıca renk/toprak ayrımı 8. sınıf için ilkokul düzeyi.",
+   "tek": true
+  },
+  "anahtar": 2
+ },
+ {
+  "sinif": 8,
+  "kelime": "bin",
+  "tur": "es_sesli",
+  "gemini": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "İlkokul düzeyi: bin (sayı/fiil) ayrımı 4. sınıf ölçeğiyle aynı; 8. sınıf için çok kolay.",
+   "tek": true
+  },
+  "anahtar": 0
+ },
+ {
+  "sinif": 8,
+  "kelime": "gül",
+  "tur": "es_sesli",
+  "gemini": {
+   "cevap": 1,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 1,
+   "sorun": "İlkokul düzeyi: gül (çiçek/fiil) ayrımı 8. sınıf için çok kolay.",
+   "tek": true
+  },
+  "anahtar": 1
+ }
+]

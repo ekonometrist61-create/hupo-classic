@@ -78,7 +78,7 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
@@ -105,7 +105,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Meydanda beliren bir gölge bir bekçinin ruhu mu, yoksa ışığın oyunu mu? Nil ve Kaan, korkuyu ve iddiayı kanıttan ayırmayı öğrenir.",
+    "tanitim": "Meydandaki gölge bir bekçinin ruhu mu, ışığın oyunu mu? {kahraman} ile {yoldas:yalin|bir arkadaşı} korkuyu ve iddiayı kanıttan ayırmayı öğrenir.",
     "durum": "taslak",
     "fis_kodu": "HR-102"
   },
@@ -1471,49 +1471,49 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Perşembe gecesi"
-        },
-        {
-          "id": "B",
           "metin": "Pazar sabahı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Cuma öğleden sonra"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Salı akşamı"
+        },
+        {
+          "id": "D",
+          "metin": "Perşembe gecesi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Metinde ilk gölge perşembe gecesi duvarda belirmişti."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 11,
-      "metin": "Nil'e göre iki olayın aynı saatte gerçekleşmesi ne anlama gelir?",
+      "metin": "Kahramana göre iki olayın aynı saatte gerçekleşmesi ne anlama gelir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Olaylar arasında kesin bir neden-sonuç ilişkisi vardır"
+          "metin": "Olaylar arasında kesin bir neden-sonuç ilişkisi vardır; biri diğerini doğurmuştur"
         },
         {
           "id": "B",
-          "metin": "Olaylar tesadüfen de aynı saatte olabilir ve bu tek başına neden değildir"
+          "metin": "Gölge gerçekten bir insanın varlığından oluşur ve bunu hemen kanıtlamak mümkündür"
         },
         {
           "id": "C",
-          "metin": "Gölge gerçekten bir insandır"
+          "metin": "Olaylar tesadüfen de aynı saatte olabilir ve bu tek başına neden değildir"
         },
         {
           "id": "D",
-          "metin": "Işıklar bozuk olduğunda gölge görünür"
+          "metin": "Işıklar bozuk olduğunda gölge görünür ve bu yüzden her gece belirli saatte oluşur"
         }
       ],
-      "dogru": "B",
-      "aciklama": "Nil, aynı saatte olmanın neden-sonuç ilişkisini tek başına kanıtlamadığını söyler."
+      "dogru": "C",
+      "aciklama": "Kahraman, aynı saatte olmanın neden-sonuç ilişkisini tek başına kanıtlamadığını söyler."
     },
     {
       "id": "s3",
@@ -1523,22 +1523,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hayal kurmak tek başına sorun değildir; sorun hayali kanıt gibi sunmaktır"
+          "metin": "Hayal kurmak her zaman yanlıştır ve hiçbir masalın okurda değeri yoktur"
         },
         {
           "id": "B",
-          "metin": "Hayal kurmak her zaman yanlıştır"
+          "metin": "Hayal kurmak ile kanıt aynı şeydir; ikisi de bir olayı açıklamaya yarar"
         },
         {
           "id": "C",
-          "metin": "Hayal kurmak ile kanıt aynı şeydir"
+          "metin": "Hayal kurmanın hiçbir değeri yoktur; yalnızca gerçek ölçümler önemlidir"
         },
         {
           "id": "D",
-          "metin": "Hayal kurmanın hiçbir değeri yoktur"
+          "metin": "Hayal kurmak tek başına sorun değildir; sorun hayali kanıt gibi sunmaktır"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Masal ve hayal kurmak sorun değildir; hayal ürününü kanıt gibi sunmak sorundur."
     },
     {
@@ -1553,15 +1553,15 @@
         },
         {
           "id": "B",
-          "metin": "Kanıtların korkutucu olması"
+          "metin": "Kanıtların çok korkutucu bulunması"
         },
         {
           "id": "C",
-          "metin": "Korkmadan önce kanıt toplamak"
+          "metin": "Korkmadan önce ayrıntılı bir kanıt toplamak"
         },
         {
           "id": "D",
-          "metin": "Kanıtların hepsini yok etmek"
+          "metin": "Kanıtların hepsini bilerek yok etmek ve gizlemek"
         }
       ],
       "dogru": "A",
@@ -1575,22 +1575,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İlgi çekici bir iddia, doğru olduğu anlamına gelmez"
+          "metin": "İlgi çekip çok paylaşılan her iddia kesinlikle doğrudur"
         },
         {
           "id": "B",
-          "metin": "İlgi çeken her iddia doğrudur"
+          "metin": "Kanıtı olmayan bir iddia da güvenle yayılabilir"
         },
         {
           "id": "C",
-          "metin": "Kanıta gerek yoktur"
+          "metin": "İlgi çekici bir iddia, doğru olduğu anlamına gelmez"
         },
         {
           "id": "D",
-          "metin": "Gölgeler hakkında konuşmak yasaktır"
+          "metin": "Gölgeler hakkında konuşmak yasaktır; yalnızca öğretmenler yorum yapabilir"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Son slayt, ilgi çekici bir iddianın doğrulanması için kanıt gerektiğini söyler."
     }
   ],

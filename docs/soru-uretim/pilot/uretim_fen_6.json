@@ -1,0 +1,1305 @@
+[
+ {
+  "id": "FEN6-001",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.1.1",
+  "surec_bileseni": "b",
+  "konu": "Güneş Sistemi ve Tutulmalar",
+  "alt_konu": "Gezegenlerin niteliklerine göre sınıflandırılması",
+  "soru_metni": "Ece, Güneş sistemindeki gezegenleri iki gruba ayırıyor. Birinci gruba Merkür, Venüs, Dünya ve Mars'ı; ikinci gruba Jüpiter, Satürn, Uranüs ve Neptün'ü yerleştiriyor. Ece'nin birinci gruptaki gezegenler için kullandığı ortak özellik hangisidir?",
+  "siklar": {
+   "A": "Gazlardan oluşan kalın bir yapıya sahip olmaları",
+   "B": "Yüzeylerinin katı kayaçlardan oluşması",
+   "C": "Çevrelerinde halka sistemi bulunması",
+   "D": "Boyutlarının Dünya'dan daha büyük olması"
+  },
+  "dogru_sik": "B",
+  "ipucu": "İç ve dış gezegenlerin yapı bakımından nasıl ayrıldığını düşün.",
+  "cozum_adimlari": [
+   "Birinci gruptaki Merkür, Venüs, Dünya ve Mars, Güneş'e yakın iç gezegenlerdir.",
+   "Bu gezegenlerin yüzeyi katı kayaçlardan oluşur; ikinci gruptakiler ise gaz yapılı dev gezegenlerdir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Gaz yapısı ikinci gruptaki dev gezegenlerin özelliğidir; öğrenci grupları karıştırır.",
+   "B": "Doğru.",
+   "C": "Halka sistemi dış gezegenlerde görülür; öğrenci halkaların tüm gezegenlerde bulunduğunu sanır.",
+   "D": "Merkür ve Mars Dünya'dan küçüktür; öğrenci iç gezegenleri büyük sanır."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-002",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.1.2",
+  "surec_bileseni": "b",
+  "konu": "Güneş Sistemi ve Tutulmalar",
+  "alt_konu": "Güneş sistemi modelinin yeni kanıtlarla yenilenmesi",
+  "soru_metni": "Kerem, Güneş sistemi modelinde bütün gezegenleri aynı büyüklükteki toplarla temsil etmiştir. Bir kaynakta Jüpiter'in çapının Dünya'nın çapından çok daha fazla olduğunu okuyor. Kerem modelini bu yeni bilgiye göre nasıl düzeltmelidir?",
+  "siklar": {
+   "A": "Jüpiter'i gösteren topu Dünya'yı gösteren toptan daha büyük seçmelidir.",
+   "B": "Dünya'yı gösteren topu Jüpiter'i gösteren toptan daha büyük seçmelidir.",
+   "C": "Jüpiter'i gösteren topu Güneş'i gösteren toptan daha büyük seçmelidir.",
+   "D": "Jüpiter'i gösteren topu Dünya'yı gösteren topa daha yakın yerleştirmelidir."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yeni kanıt, hangi özelliğin modelde değişmesi gerektiğini söylüyor.",
+  "cozum_adimlari": [
+   "Yeni kanıt gezegenlerin büyüklüğüyle ilgilidir: Jüpiter, Dünya'dan çok daha büyüktür.",
+   "Model, bu kanıta uygun olarak Jüpiter'i temsil eden topun boyutunu Dünya'ya göre büyütmelidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Büyüklük ilişkisini ters kurar.",
+   "C": "Güneş en büyük gök cismidir; öğrenci en büyük gezegeni Güneş'ten büyük sanır.",
+   "D": "Kanıt konumla değil büyüklükle ilgilidir; öğrenci değişkeni karıştırır."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-004",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.2.1",
+  "surec_bileseni": "b",
+  "konu": "Kuvvet ve Hareket",
+  "alt_konu": "Aynı doğrultudaki kuvvetlerin bileşkesi",
+  "soru_metni": "Yusuf ve Efe, düz zeminde duran bir sandığı aynı doğrultuda ve zıt yönlerde itiyor. Yusuf sandığı sağa doğru 40 N, Efe sola doğru 25 N'luk kuvvetle itiyor. Zeminin sürtünmesi ihmal edilirse sandığa etki eden bileşke kuvvet nedir?",
+  "siklar": {
+   "A": "65 N, sağa doğru",
+   "B": "25 N, sola doğru",
+   "C": "15 N, sola doğru",
+   "D": "15 N, sağa doğru"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Zıt yönlü kuvvetlerde büyük olanın yönü bileşkenin yönünü belirler.",
+  "cozum_adimlari": [
+   "Kuvvetler zıt yönlü olduğu için bileşke, büyük kuvvetten küçük kuvvet çıkarılarak bulunur.",
+   "40 N - 25 N = 15 N ve yön büyük kuvvetin yönü olan sağdır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Zıt yönlü kuvvetleri toplar.",
+   "B": "Küçük kuvveti bileşke sanır.",
+   "C": "Değeri doğru bulur ama yönü küçük kuvvetin yönü sanar.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-005",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.2.2",
+  "surec_bileseni": "a",
+  "konu": "Kuvvet ve Hareket",
+  "alt_konu": "Dengelenmiş ve dengelenmemiş kuvvetlerin hareketi",
+  "soru_metni": "Hasan, yatay bir zeminde oyuncak arabayı 3 N'luk kuvvetle çekiyor ve araba sabit hızla ilerliyor. Arabaya zeminden gelen sürtünme kuvveti hareket yönüne zıt yönde etki ediyor. Hasan çekme kuvvetini 5 N'a çıkarıyor; sürtünme kuvveti değişmiyor. Arabanın hareketi bu durumda nasıl olur?",
+  "siklar": {
+   "A": "Önce yavaşlar, sonra durur, çünkü sürtünme kuvveti hareketi engeller.",
+   "B": "Hızı artar, çünkü kuvvetler dengelenmemiştir ve bileşke ileri yönlüdür.",
+   "C": "Hızı azalır, çünkü sürtünme kuvveti çekme kuvvetinden büyük olur.",
+   "D": "Hızı değişmez, çünkü iki kuvvet birbirini dengelemeye devam eder."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce 3 N'luk durumda bileşkenin ne olduğunu bul, sonra 5 N'da yeniden hesapla.",
+  "cozum_adimlari": [
+   "Sabit hızda kuvvetler dengelidir; bu yüzden sürtünme kuvveti 3 N'dur.",
+   "Çekme kuvveti 5 N olunca bileşke 5 - 3 = 2 N olur ve ileri yönlüdür.",
+   "Dengelenmemiş kuvvet etkisindeki araba hızlanır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sürtünmenin hareketi hep durdurduğunu sanır; kuvvetlerin büyüklüğünü karşılaştırmaz.",
+   "B": "Doğru.",
+   "C": "Sürtünmenin 3 N'da kaldığını dikkate almaz.",
+   "D": "Önceki dengeli durumu yeni duruma da uygular."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-007",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.3.1",
+  "surec_bileseni": "c",
+  "konu": "Canlılarda Üreme, Büyüme ve Gelişme",
+  "alt_konu": "Eşeyli ve eşeysiz üreme farkları",
+  "soru_metni": "Bir bahçıvan, çilek bitkisinin yere yayılan sürgünlerinden yeni bitkiler elde ediyor. Başka bir bahçıvan ise aynı çilek türünün çiçekleri arasında polen aktarımı yaparak oluşan tohumlardan yeni bitkiler yetiştiriyor. İki yöntemle elde edilen bitkiler karşılaştırıldığında hangisi söylenebilir?",
+  "siklar": {
+   "A": "Sürgünle çoğalanlar ana bitkiyle aynı özellikleri taşır, tohumla çoğalanlar farklı özellikler gösterebilir.",
+   "B": "Tohumla çoğalanlar ana bitkiyle aynı özellikleri taşır, sürgünle çoğalanlar farklı özellikler gösterebilir.",
+   "C": "İki yöntemde de yeni bitkiler ana bitkiyle aynı özellikleri taşır ve çeşitlilik görülmez.",
+   "D": "İki yöntemde de yeni bitkiler ana bitkiden farklı özellikler gösterir ve çeşitlilik artar."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Hangi yöntemde iki ebeveynin kalıtsal özellikleri birleşiyor?",
+  "cozum_adimlari": [
+   "Sürgünle çoğalma eşeysiz üremedir; yeni bitki tek ebeveynden, onun aynısı olarak oluşur.",
+   "Polenle tohum oluşumu eşeyli üremedir; kalıtsal özellikler karışır ve çeşitlilik ortaya çıkar.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Eşeyli ve eşeysiz üremenin sonuçlarını ters kurar.",
+   "C": "Eşeyli üremede de yavruların ebeveynle aynı olduğunu sanır.",
+   "D": "Eşeysiz üremede de çeşitlilik olduğunu sanır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-008",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.3.2",
+  "surec_bileseni": "c",
+  "konu": "Canlılarda Üreme, Büyüme ve Gelişme",
+  "alt_konu": "Bitkilerin büyüme ve gelişmesine etki eden faktörler",
+  "soru_metni": "Öğrenciler aynı türden ve aynı boydaki dört fasulye fidesini, aynı toprakla doldurulmuş aynı büyüklükteki saksılara dikiyor. Sulama miktarı da aynı. Fidelerin ikisi pencere önünde, ikisi kapalı bir dolapta tutuluyor. İki hafta sonra pencere önündeki fideler 12 cm uzayıp yeşil kalıyor; dolaptakiler 18 cm uzayıp sararıyor. Bu sonuçlara göre hangisi söylenebilir?",
+  "siklar": {
+   "A": "Fideler karanlıkta daha çok uzadığı için bitkiler en iyi karanlıkta gelişir.",
+   "B": "Dolaptaki fideler daha çok ısındığı için hem uzamış hem de sararmıştır.",
+   "C": "Işık, bitkinin boyuna etki eder ancak renginin değişmesine neden olmaz.",
+   "D": "Işık, bitkinin hem boyuna hem de rengine etki eden bir faktördür."
+  },
+  "dogru_sik": "D",
+  "ipucu": "İki grup arasında değiştirilen tek değişkeni ve iki grupta da ölçülen sonuçları ayrı ayrı değerlendir.",
+  "cozum_adimlari": [
+   "İki grup arasındaki tek fark ışık miktarıdır; toprak, saksı ve sulama aynıdır.",
+   "Işık alan ve almayan fidelerde hem boy hem renk farklı çıkmıştır.",
+   "Bu durumda ışığın boy ve renk üzerinde etkili olduğu sonucuna varılır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Daha çok uzamayı sağlıklı gelişme sanır.",
+   "B": "Verilerde olmayan bir değişkeni (ısınma) neden olarak gösterir.",
+   "C": "Verilerin yalnızca bir bölümünü (boy) dikkate alır, renk değişimini yok sayar.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "deney",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-009",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.3.3",
+  "surec_bileseni": "c",
+  "konu": "Canlılarda Üreme, Büyüme ve Gelişme",
+  "alt_konu": "Tohumun çimlenmesinde değişkenler",
+  "soru_metni": "Mina, 'Tohumların çimlenmesi için su gereklidir.' hipotezini sınamak istiyor. İki kaba aynı türden 10'ar nohut tohumu koyuyor; birinin içindeki pamuğu ıslatıyor, diğerinin pamuğunu kuru bırakıyor. Kapları aynı dolabın aynı rafına yerleştiriyor. Mina'nın deneyinin geçerli olması için sabit tutması gereken değişkenler hangileridir?",
+  "siklar": {
+   "A": "Pamuğun ıslak ya da kuru olması",
+   "B": "Tohumların türü ile ortamın sıcaklığı",
+   "C": "Üçüncü günde çimlenen tohum sayısı",
+   "D": "Çimlenen tohumların kök uzunluğu"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Hipotezde sınanan değişken değiştirilir, sonuç olarak ölçülen değişken ise gözlenir; sabit kalacaklar bunların dışındadır.",
+  "cozum_adimlari": [
+   "Hipotezde sınanan (bağımsız) değişken sudur; bu yüzden pamuğun ıslaklığı bilerek farklı tutulur.",
+   "Çimlenen tohum sayısı ve kök uzunluğu ölçülen sonuçlardır, sabit tutulamaz.",
+   "Deneyin geçerli olması için su dışındaki etkenler, yani tohum türü ve sıcaklık gibi değişkenler sabit tutulmalıdır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Değiştirilmesi gereken değişkeni sabit tutulacak sanır.",
+   "B": "Doğru.",
+   "C": "Ölçülen sonucu sabit tutulacak değişken sanır.",
+   "D": "Bağımlı değişkeni kontrol edilecek değişkenle karıştırır."
+  },
+  "zorluk": 3,
+  "soru_tipi": "deney",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-010",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.3.4",
+  "surec_bileseni": "b",
+  "konu": "Canlılarda Üreme, Büyüme ve Gelişme",
+  "alt_konu": "Hayvanlarda gelişmeye etki eden faktörler",
+  "soru_metni": "Bir çiftlikte kuluçka makinesine dizilen tavuk yumurtalarının çoğundan 21 gün sonra civciv çıkıyor. Makinenin sıcaklığı bir süre düşük kalan raftaki yumurtalardan ise civciv çıkmıyor. Çiftçi iki gözlemi karşılaştırıyor. Bu gözlemlere göre hangi sonuca ulaşılır?",
+  "siklar": {
+   "A": "Embriyonun gelişmesinde ortamın sıcaklığı etkili olmaz.",
+   "B": "Embriyonun gelişmesi yumurtanın kabuk rengine bağlıdır.",
+   "C": "Embriyonun gelişmesi ortamın sıcaklığı gibi çevre koşullarından etkilenir.",
+   "D": "Embriyonun gelişmesi yumurtanın dışarıdan su almasına bağlıdır."
+  },
+  "dogru_sik": "C",
+  "ipucu": "İki grup arasındaki farkın hangi koşuldan kaynaklandığına bak.",
+  "cozum_adimlari": [
+   "Çıkış olan yumurtalarla çıkış olmayan yumurtalar arasındaki tek fark, ortamın sıcaklığındaki düşüklüktür.",
+   "Bu durum, embriyonun gelişiminin sıcaklık gibi çevre koşullarından etkilendiğini gösterir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Veriyi yok sayar; kuluçka sıcaklığının önemini bilmez.",
+   "B": "Gözlemlenmeyen bir değişkeni (kabuk rengi) neden gösterir.",
+   "C": "Doğru.",
+   "D": "Kuş yumurtasının dışarıdan su alarak geliştiğini sanır; gözlemle ilgisizdir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-011",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.3.6",
+  "surec_bileseni": "c",
+  "konu": "Denetleyici ve Düzenleyici Sistemler",
+  "alt_konu": "Sinir sisteminin görevleri",
+  "soru_metni": "Kerem, masadan düşen bardağı fark edip elini hızla uzatarak yakalıyor. Bu sırada gözden gelen görüntü bilgisi sinirler aracılığıyla bir merkeze iletiliyor ve kaslara hareket komutu veriliyor. Bu bilgiyi yorumlayıp kararı veren merkez hangisidir?",
+  "siklar": {
+   "A": "Bardağı gören göz",
+   "B": "Bardağı tutan kaslar",
+   "C": "Elden geçen sinirler",
+   "D": "Kafatası içindeki beyin"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Duyu organı bilgiyi alır, sinir iletir, kas harekete geçer; kararı veren hangisi?",
+  "cozum_adimlari": [
+   "Göz görüntüyü algılar, sinirler bilgiyi iletir, kaslar hareketi yapar.",
+   "Bilgiyi yorumlayıp komutu oluşturan merkez beyindir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Duyu organının bilgiyi hem aldığını hem yorumladığını sanır.",
+   "B": "Hareketi yapan organı karar veren organ sanır.",
+   "C": "İletim görevini yorumlama görevi ile karıştırır.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-013",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.4.1",
+  "surec_bileseni": "c",
+  "konu": "Işık",
+  "alt_konu": "Düzgün ve dağınık yansıma",
+  "soru_metni": "Bir göl kıyısındaki Efe, rüzgârsız havada sakin suyun yüzeyinde ağaçların net bir görüntüsünü görüyor. Rüzgârlı havada su yüzeyi dalgalanınca görüntü bozuluyor ve silikleşiyor. Efe'nin bu iki gözlemi ışığın yansıması açısından nasıl açıklanır?",
+  "siklar": {
+   "A": "Sakin suda ışık dağınık yansır, dalgalı suda düzgün yansır.",
+   "B": "Sakin suda ışık düzgün yansır, dalgalı suda dağınık yansır.",
+   "C": "İki durumda da ışık düzgün yansır, görüntü farkı ışığın şiddetinden kaynaklanır.",
+   "D": "İki durumda da ışık yüzeyden geçerek suyun içine girer ve yansımaz."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yüzey düz olduğunda ve dalgalandığında ışınların yönlerinin nasıl değiştiğini düşün.",
+  "cozum_adimlari": [
+   "Düz ve pürüzsüz yüzeyde paralel gelen ışınlar paralel yansır; buna düzgün yansıma denir ve net görüntü oluşur.",
+   "Dalgalı yüzeyde ışınlar farklı yönlere yansır; buna dağınık yansıma denir ve görüntü bozulur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Düzgün ve dağınık yansıma kavramlarını ters eşleştirir.",
+   "B": "Doğru.",
+   "C": "Görüntü farkını ışık şiddetine bağlar, yüzey yapısını göz ardı eder.",
+   "D": "Yansımanın olmadığını sanır; oysa her iki durumda da görüntü yansımayla oluşur."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-014",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.4.2",
+  "surec_bileseni": "c",
+  "konu": "Işık",
+  "alt_konu": "Gelen ışın, yansıyan ışın ve normal ilişkisi",
+  "soru_metni": "Bir öğrenci, düz bir aynaya el fenerinin ince ışık demetini gönderiyor. Gelen ışın ayna yüzeyiyle 30°'lik açı yapıyor. Öğrenci yüzeyin normalini çizerek yansıyan ışının bu normalle yaptığı açıyı bulmaya çalışıyor. Bu açı kaç derecedir?",
+  "siklar": {
+   "A": "30°",
+   "B": "120°",
+   "C": "60°",
+   "D": "15°"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yansıma kanunundaki açılar yüzeye değil, normale göre ölçülür.",
+  "cozum_adimlari": [
+   "Normal, yüzeyle 90° yapar; gelen ışının normalle yaptığı açı 90° - 30° = 60°'dir.",
+   "Yansıma kanununa göre yansıma açısı gelme açısına eşittir.",
+   "Yansıyan ışının normalle yaptığı açı 60°'dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yüzeyle yapılan açıyı normalle yapılan açı sanır.",
+   "B": "Yüzeyle gelen ve yansıyan ışın arasındaki toplam açıyı ya da gelme ile yansıma açısının toplamını alır.",
+   "C": "Doğru.",
+   "D": "Açıyı ikiye bölerek yansıma açısını bulduğunu sanır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-015",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.4.3",
+  "surec_bileseni": "c",
+  "konu": "Işık",
+  "alt_konu": "Düz, çukur ve tümsek aynalar",
+  "soru_metni": "Bir sitenin otoparkında köşeye, sürücülerin kavşaktaki geniş bir alanı görebilmesi için dışa doğru kabarık yüzeyli bir ayna asılmıştır. Sürücüler bu aynada gördükleri araçların gerçekte olduğundan daha küçük göründüğünü fark ediyor. Bu aynanın türü ve özelliği hangisidir?",
+  "siklar": {
+   "A": "Tümsek ayna; geniş bir alanı küçülterek gösterir.",
+   "B": "Çukur ayna; geniş bir alanı küçülterek gösterir.",
+   "C": "Düz ayna; cisimleri gerçek boyutundan büyük gösterir.",
+   "D": "Çukur ayna; bakılan alanı daha dar ama büyük gösterir."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yüzeyin dışa kabarık olması aynanın türünü belirler.",
+  "cozum_adimlari": [
+   "Dışa doğru kabarık yüzeyli aynalar tümsek aynadır.",
+   "Tümsek ayna cisimleri küçük gösterir ve geniş bir görüş alanı sağlar; bu yüzden kavşak ve dikiz aynası olarak kullanılır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Çukur ve tümsek aynaların adlarını karıştırır.",
+   "C": "Düz aynanın cismi büyüttüğünü sanır; düz ayna cismi aynı boyutta gösterir.",
+   "D": "Çukur aynanın özelliğini doğru verir ancak soruda anlatılan ayna çukur değildir."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-016",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.4.4",
+  "surec_bileseni": "c",
+  "konu": "Işık",
+  "alt_konu": "Işığın soğurulması",
+  "soru_metni": "Ece, güneşli bir pencere önüne iki özdeş termometre yerleştiriyor. Birinin ucunu mat siyah kâğıtla, diğerinin ucunu parlak alüminyum folyoyla sarıyor. Bir süre sonra siyah kâğıtlı termometrenin daha çok yükseldiğini görüyor. Ece bu sonucu ışığın madde ile etkileşimi açısından nasıl açıklar?",
+  "siklar": {
+   "A": "Folyo ışığın büyük bölümünü soğurmuş, siyah kâğıt ise büyük bölümünü yansıtmıştır.",
+   "B": "İki yüzey de ışığı yansıtmış, ısınma farkı yüzeyin kalınlığından kaynaklanmıştır.",
+   "C": "İki yüzey de ışığı aynı oranda soğurmuş, ısınma farkı termometrelerin hatasından kaynaklanmıştır.",
+   "D": "Siyah kâğıt ışığın büyük bölümünü soğurmuş, folyo ise büyük bölümünü yansıtmıştır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Soğurulan ışık enerjisi cismi ısıtır; hangi yüzey daha çok ışık soğuruyor?",
+  "cozum_adimlari": [
+   "Siyah kâğıt üzerine düşen ışığın büyük bölümünü soğurur, bu yüzden daha çok ısınır.",
+   "Parlak folyo ışığın büyük bölümünü yansıttığından daha az ısınır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Soğurma ve yansıma özelliklerini ters eşleştirir.",
+   "B": "Verilmeyen bir değişkeni (kalınlık) neden gösterir.",
+   "C": "Gözlenen farkı ölçüm hatasına bağlar ve iki yüzeyi eşdeğer sayar.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "deney",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-017",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.4.5",
+  "surec_bileseni": "c",
+  "konu": "Işık",
+  "alt_konu": "Beyaz ışığın bileşimi",
+  "soru_metni": "Burak, güneş ışığını cam bir prizmaya tutuyor ve karşıdaki beyaz duvarda kırmızıdan mora uzanan renkli bir şerit görüyor. Burak, bu renklerin neden oluştuğunu merak ediyor. Bu gözlem, beyaz ışık hakkında hangi sonuca ulaşılmasını sağlar?",
+  "siklar": {
+   "A": "Prizma, renksiz olan beyaz ışığa kendi rengini katar.",
+   "B": "Prizma, beyaz ışığın bir kısmını soğurarak renkler oluşturur.",
+   "C": "Beyaz ışık, birçok ışık renginin birleşiminden oluşur.",
+   "D": "Işığın renkleri duvarın yüzeyinde oluşur, ışık prizmadan renksiz çıkar."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Prizma ışığa yeni bir şey eklemez; renklerin kaynağını düşün.",
+  "cozum_adimlari": [
+   "Prizma, beyaz ışığı oluşturan renkleri farklı açılarda kırarak ayırır.",
+   "Ayrılan renklerin görülmesi, beyaz ışığın birçok ışık renginin birleşiminden oluştuğunu gösterir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Renklerin prizmanın camından geldiğini sanır.",
+   "B": "Renk oluşumunu soğurma ile karıştırır.",
+   "C": "Doğru.",
+   "D": "Renkleri yansıtan yüzeye bağlar, ışığın kendi bileşimini göz ardı eder."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-018",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.4.6",
+  "surec_bileseni": "c",
+  "konu": "Işık",
+  "alt_konu": "Cisimlerin renkli ve siyah görünmesi",
+  "soru_metni": "Beyaz ışıkla aydınlatılan bir odada Deniz, kırmızı kalemini kırmızı görüyor. Oda yeşil ışıkla aydınlatılınca aynı kalemin siyaha yakın göründüğünü fark ediyor. Kalem yeşil ışıkta neden siyaha yakın görünmektedir?",
+  "siklar": {
+   "A": "Kalem yeşil ışığı yansıttığı için göz onu siyah olarak algılar.",
+   "B": "Kalem yeşil ışığı büyük ölçüde soğurduğu için göze çok az ışık gelir.",
+   "C": "Yeşil ışık kalemin rengini yeşile çevirir ve göz bunu ayırt edemez.",
+   "D": "Kalem yeşil ışıkta kırmızı ışık yayar ve bu yüzden koyu görünür."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir cismin rengini, yansıttığı ışık belirler; kırmızı kalem hangi rengi yansıtır?",
+  "cozum_adimlari": [
+   "Kırmızı kalem, üzerine düşen ışıktan yalnızca kırmızıyı yansıtır, diğer renkleri soğurur.",
+   "Odada yalnızca yeşil ışık olduğunda kalem bu ışığı soğurur; göze çok az ışık gelir.",
+   "Çok az ışık yansıyan cisim siyaha yakın görünür.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Siyah görünmeyi ışığın yansımasına bağlar.",
+   "B": "Doğru.",
+   "C": "Işığın cismin rengini değiştirdiğini sanır.",
+   "D": "Cisimlerin ışık yaydığını sanır; kalem ışık kaynağı değildir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-019",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.4.7",
+  "surec_bileseni": "a",
+  "konu": "Işık",
+  "alt_konu": "Güneş enerjisinin kullanımı",
+  "soru_metni": "Bir okulun çatısına güneş panelleri yerleştirilmiştir. Paneller, güneş ışığını doğrudan elektrik enerjisine dönüştürerek okulun aydınlatmasında kullanılmaktadır. Bu uygulamanın çevre ve enerji açısından sonucu hangisidir?",
+  "siklar": {
+   "A": "Güneş enerjisi yenilenemeyen bir kaynak olduğundan okulun elektrik giderleri artar.",
+   "B": "Panellerin elektrik üretmesi için yakıt yanması gerekir ve hava kirliliği artar.",
+   "C": "Paneller geceleri de gündüz kadar elektrik ürettiği için depolamaya gerek kalmaz.",
+   "D": "Yenilenebilir bir kaynak kullanıldığı için fosil yakıt tüketimi azalabilir."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Güneş ışığının tükenip tükenmediğini ve elektrik üretimi sırasında yakıt kullanılıp kullanılmadığını düşün.",
+  "cozum_adimlari": [
+   "Güneş enerjisi tükenmeyen, yenilenebilir bir kaynaktır.",
+   "Paneller yakıt yakmadan elektrik üretir; bu nedenle fosil yakıt kullanımı ve kirliliği azaltabilir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Güneş enerjisini yenilenemeyen kaynak sanır.",
+   "B": "Güneş panellerinin yakıt yakarak çalıştığını sanır.",
+   "C": "Güneş panellerinin gece de aynı verimle çalıştığını sanır.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-020",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.5.1",
+  "surec_bileseni": "c",
+  "konu": "Madde ve Isı",
+  "alt_konu": "Genleşme ve büzülme",
+  "soru_metni": "Burak, bir mahallede elektrik tellerinin yaz aylarında kış aylarına göre daha çok sarktığını fark ediyor. Teller hava durumuna göre uzunluklarını değiştirebiliyor. Burak bu gözlemi açıklamak için bir çıkarım yapıyor. Hangi çıkarım doğrudur?",
+  "siklar": {
+   "A": "Teller sıcak havada genleşerek uzar, bu yüzden daha çok sarkar.",
+   "B": "Teller sıcak havada büzülerek kısalır, bu yüzden daha çok sarkar.",
+   "C": "Teller soğuk havada genleşerek uzar, bu yüzden daha az sarkar.",
+   "D": "Teller sıcak havada ağırlaşır, bu yüzden daha çok sarkar."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sıcaklık arttığında maddelerin boyutlarında ne olduğunu düşün.",
+  "cozum_adimlari": [
+   "Sıcaklık arttıkça katı maddeler genleşir; teller yazın uzar.",
+   "Uzayan teller, direkler arasında daha çok sarkar.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Sıcakta büzüleceğini sanır; yönü ters kurar.",
+   "C": "Soğukta genleşeceğini sanır.",
+   "D": "Sarkmayı ağırlık artışına bağlar; maddenin kütlesi sıcaklıkla değişmez."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-021",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.5.2",
+  "surec_bileseni": "b",
+  "konu": "Madde ve Isı",
+  "alt_konu": "Erime noktası ve veri analizi",
+  "soru_metni": "Selin, oda sıcaklığındaki bir ortamda içinde buz parçaları bulunan bir kaba termometre yerleştiriyor ve buzlar erirken sıcaklığı her dakika not ediyor. Buzun erimesi sürdüğü sürece termometre 0 °C'yi gösteriyor. Selin'in bu verilerinden hangi sonuç çıkarılabilir?",
+  "siklar": {
+   "A": "Buz erirken sıcaklığı yükselmeye devam eder.",
+   "B": "Buzun erime noktası, bulunduğu odanın sıcaklığına eşittir.",
+   "C": "Buzun erime noktası 0 °C'dir ve erime süresince sıcaklığı değişmez.",
+   "D": "Buz erirken sıcaklığı düşer ve 0 °C'nin altına iner."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Kaydedilen sıcaklık değerlerinin zamanla değişip değişmediğine bak.",
+  "cozum_adimlari": [
+   "Erime süresince termometre sürekli 0 °C göstermiştir.",
+   "Saf bir maddenin erimesi sırasında sıcaklık sabit kalır; bu sıcaklık erime noktasıdır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Isı alan her maddenin sıcaklığının arttığını sanır.",
+   "B": "Erime noktasını ortam sıcaklığına bağlar.",
+   "C": "Doğru.",
+   "D": "Erimeyi soğumayla ilişkilendirir; kayıtlara aykırıdır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "deney",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-022",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.5.3",
+  "surec_bileseni": "c",
+  "konu": "Madde ve Isı",
+  "alt_konu": "Yoğunluk hesabı ve yüzme-batma tahmini",
+  "soru_metni": "Mert, yoğunluğu 1 g/cm³ olan su dolu geniş bir kaba, suda çözünmeyen iki cismi ayrı ayrı bırakacaktır. X cisminin kütlesi 240 g, hacmi 80 cm³; Y cisminin kütlesi 150 g, hacmi 200 cm³'tür. Mert yoğunlukları hesaplayarak cisimlerin davranışını tahmin ediyor. Mert'in tahmini hangisi olmalıdır?",
+  "siklar": {
+   "A": "X yüzer, Y batar.",
+   "B": "X batar, Y yüzer.",
+   "C": "İkisi de batar.",
+   "D": "İkisi de yüzer."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yoğunluk = kütle / hacim; sonucu suyun yoğunluğuyla karşılaştır.",
+  "cozum_adimlari": [
+   "X'in yoğunluğu 240 / 80 = 3 g/cm³; Y'nin yoğunluğu 150 / 200 = 0,75 g/cm³'tür.",
+   "Yoğunluğu sudan büyük olan X batar; sudan küçük olan Y yüzer.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yoğunluğu hacim / kütle olarak hesaplar ve sonucu ters çevirir.",
+   "B": "Doğru.",
+   "C": "Kütlesi büyük olan cismin batacağını, diğerinin de batacağını düşünür.",
+   "D": "Hacmi büyük olan cismin yüzdüğünü, diğerinin de yüzeceğini düşünür."
+  },
+  "zorluk": 3,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-023",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.5.4",
+  "surec_bileseni": "b",
+  "konu": "Madde ve Isı",
+  "alt_konu": "Yoğunlukla ilgili hipotezin yeni duruma uygulanması",
+  "soru_metni": "Cem, tuzlu suya bıraktığı yumurtanın yüzdüğünü, saf suya bıraktığı aynı yumurtanın battığını gözlemliyor. Bunu 'Cismin yoğunluğu sıvınınkinden küçükse cisim yüzer, büyükse batar.' hipoteziyle açıklıyor. Cem şimdi yoğunluğu 0,9 g/cm³ olan bir cismi, yoğunluğu 0,8 g/cm³ olan bir sıvıya bırakacaktır. Cem hipotezini bu yeni duruma uygularsa ne bekler?",
+  "siklar": {
+   "A": "Cisim batar, çünkü sıvının yoğunluğu cismin yoğunluğundan küçüktür.",
+   "B": "Cisim yüzer, çünkü cismin yoğunluğu 1 g/cm³'ten küçüktür.",
+   "C": "Cisim yüzer, çünkü cismin kütlesi sıvının kütlesinden küçüktür.",
+   "D": "Cisim askıda kalır, çünkü yoğunlukları birbirine yakındır."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Hipotezdeki karşılaştırma suyla değil, bırakılan sıvıyla yapılır.",
+  "cozum_adimlari": [
+   "Hipoteze göre cismin yoğunluğu sıvınınkinden büyükse cisim batar.",
+   "Cismin yoğunluğu 0,9 g/cm³, sıvınınki 0,8 g/cm³ olduğundan cisim batar.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Karşılaştırmayı sıvıyla değil suyun yoğunluğuyla yapar.",
+   "C": "Yoğunluğu kütleyle karıştırır.",
+   "D": "Yoğunluğun yakın olmasının cismi askıda bıraktığını sanır; hipotez böyle bir durum öngörmez."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-024",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.5.5",
+  "surec_bileseni": "c",
+  "konu": "Madde ve Isı",
+  "alt_konu": "Buz ve suyun yoğunluğu",
+  "soru_metni": "Kış aylarında bir gölün yüzeyi donuyor ve buz tabakasının altında balıklar yaşamaya devam ediyor. Buzun yoğunluğu sıvı suyunkinden daha küçüktür. Bu durumun göldeki canlılar açısından sonucu hangisidir?",
+  "siklar": {
+   "A": "Buz sudan daha yoğun olduğundan dibe çöker, balıklar üstteki suda yaşamını sürdürür.",
+   "B": "Buz ile suyun yoğunluğu aynı olduğundan göl dipten yüzeye kadar donar.",
+   "C": "Buz yüzeyde kalır, ancak altındaki suyun da donmasına neden olarak canlıları öldürür.",
+   "D": "Buz yüzeyde kalır, altındaki su sıvı kalarak canlılara yaşam alanı sağlar."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Buzun sudan hafif olması gölde hangi katmanın üstte kalacağını belirler.",
+  "cozum_adimlari": [
+   "Buzun yoğunluğu sudan küçük olduğu için buz suyun yüzeyinde kalır.",
+   "Yüzeydeki buz tabakası, altındaki suyun donmasını yavaşlatır ve canlılar sıvı suda yaşamaya devam eder.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Buzun yoğunluğunu sudan büyük sanır; bilgiye ters düşer.",
+   "B": "Buz ve suyun yoğunluğunu aynı sanır.",
+   "C": "Buzun yüzeyde kalmasını doğru verir ama sonucu yanlış yorumlar.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-025",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.6.1",
+  "surec_bileseni": "b",
+  "konu": "Elektrik",
+  "alt_konu": "Maddelerin elektriği iletme durumları",
+  "soru_metni": "Bir öğrenci, pil, ampul ve kablolardan oluşan basit bir devrenin arasına sırayla farklı maddeler bağlıyor. Bakır tel ve kurşun kalem ucu bağlandığında ampul yanıyor; plastik kaşık ve ahşap çubuk bağlandığında ise ampul yanmıyor. Öğrenci verileri kaydedip yorumluyor. Bu verilerden hangi sonuç çıkarılır?",
+  "siklar": {
+   "A": "Maddenin rengi, elektriği iletmesini belirler.",
+   "B": "Maddenin türü, elektriği iletip iletmeyeceğini belirler.",
+   "C": "Maddenin sertliği, elektriği iletmesini belirler.",
+   "D": "Maddenin kütlesi, elektriği iletmesini belirler."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Ampulün yanıp yanmadığı hangi özelliğin değiştiğini gösterir?",
+  "cozum_adimlari": [
+   "Aynı devrede yalnızca bağlanan madde değiştirilmiştir.",
+   "Bazı maddelerle ampul yanarken diğerleriyle yanmamıştır; fark maddenin türünden kaynaklanır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Görünüşteki bir özelliği (renk) iletkenlikle ilişkilendirir.",
+   "B": "Doğru.",
+   "C": "Sertlik ile iletkenlik arasında ilişki kurar; verilerde böyle bir ilişki yoktur.",
+   "D": "Kütlenin iletkenliği belirlediğini düşünür."
+  },
+  "zorluk": 2,
+  "soru_tipi": "deney",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-026",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.6.2",
+  "surec_bileseni": "b",
+  "konu": "Elektrik",
+  "alt_konu": "Ampul parlaklığını etkileyen değişkenler",
+  "soru_metni": "Ayşe, özdeş pil ve özdeş ampullerle üç devre kuruyor. Birinci devrede 1 pil ve 1 ampul, ikinci devrede seri bağlı 2 pil ve 1 ampul, üçüncü devrede seri bağlı 2 pil ve seri bağlı 2 ampul var. İkinci devredeki ampul birinciden daha parlak, üçüncü devredeki ampuller ise birinci devredeki ampulle aynı parlaklıkta yanıyor. Bu gözlemlere göre hangi sonuca ulaşılır?",
+  "siklar": {
+   "A": "Pil sayısı artınca parlaklık azalır, ampul sayısı artınca parlaklık artar.",
+   "B": "Pil sayısı da ampul sayısı da parlaklığı aynı yönde artırır.",
+   "C": "Pil sayısı artınca parlaklık artar, seri bağlı ampul sayısı artınca ampuller daha sönük yanar.",
+   "D": "Parlaklık ampul sayısına bağlıdır, pil sayısının parlaklık üzerinde etkisi yoktur."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce birinci ve ikinci devreyi, sonra ikinci ve üçüncü devreyi karşılaştır.",
+  "cozum_adimlari": [
+   "Birinci ve ikinci devre karşılaştırılınca yalnızca pil sayısı değişmiş, parlaklık artmıştır.",
+   "İkinci ve üçüncü devre karşılaştırılınca pil sayısı aynı, ampul sayısı artmış ve ampuller daha sönük yanmıştır.",
+   "Pil sayısı arttıkça parlaklık artar; seri ampul sayısı arttıkça her ampul daha sönük yanar.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Her iki değişkenin etkisini ters kurar.",
+   "B": "Ampul sayısının artmasının parlaklığı artırdığını sanır.",
+   "C": "Doğru.",
+   "D": "Pil sayısının etkisini yok sayar; birinci ve ikinci devre farkını dikkate almaz."
+  },
+  "zorluk": 3,
+  "soru_tipi": "deney",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-028",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.7.1",
+  "surec_bileseni": "a",
+  "konu": "Biyoçeşitlilik ve Çevre",
+  "alt_konu": "Biyoçeşitliliğin doğal yaşam için önemi",
+  "soru_metni": "Bir bölgede çok sayıda bitki ve hayvan türünün yaşadığı bir orman, tek tür ağaçtan oluşan bir plantasyona dönüştürülüyor. Bölgede yaşayan tür sayısının azaldığı, hastalık çıktığında ise ağaçların büyük bölümünün zarar gördüğü bildiriliyor. Bu durum biyoçeşitliliğin doğal yaşam için önemini nasıl gösterir?",
+  "siklar": {
+   "A": "Tür sayısı fazla olan ekosistemler, bir türün azalmasından daha az etkilenir ve dengesini korur.",
+   "B": "Tür sayısı az olan ekosistemlerde besin zincirleri karmaşık olduğundan denge daha iyi korunur.",
+   "C": "Tür sayısı fazla olan ekosistemlerde canlılar birbiriyle ilişki kurmadığından denge değişmez.",
+   "D": "Bir türün azalması, kalan türlerin sayısını kendiliğinden artırarak dengeyi korur."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Tür çeşitliliği arttığında bir türün kaybı ekosistemi nasıl etkiler?",
+  "cozum_adimlari": [
+   "Tek tür ağaçtan oluşan alanda bir hastalık o türü etkilediğinde ekosistemin büyük bölümü zarar görür.",
+   "Çok türlü ekosistemde bir tür azalsa da diğer türler görev üstlenir ve denge daha kolay korunur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Az türlü ekosistemde zincirlerin karmaşık olduğunu sanır; durumu ters kurar.",
+   "C": "Canlılar arasındaki ilişkiyi yok sayar.",
+   "D": "Türlerin birbirinin yerini kendiliğinden doldurduğunu sanır."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-029",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.7.2",
+  "surec_bileseni": "c",
+  "konu": "Biyoçeşitlilik ve Çevre",
+  "alt_konu": "Biyoçeşitliliği tehdit eden faktörler",
+  "soru_metni": "Bir sulak alanda son on yılda kuş türü sayısının azaldığı bildiriliyor. Aynı dönemde sulak alanın bir bölümü kurutularak tarım arazisine dönüştürülmüş, izinli avcılık ise yılda yalnızca birkaç gün sürmüştür. Bu verilere dayanarak kuş türlerinin azalmasının nedeni olarak hangi tahmin ileri sürülebilir?",
+  "siklar": {
+   "A": "Kuşların besin için kendi aralarında rekabet etmesi",
+   "B": "Avcılık izninin sınırlı sürelerde verilmesi",
+   "C": "Kuşların yaşam alanının tarıma açılarak daralması",
+   "D": "Kuşların bölgedeki bitkilerle beslenmeyi bırakması"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Verilerde yer alan etkenlerden hangisinin canlıların barınma ve beslenme alanını etkilediğine bak.",
+  "cozum_adimlari": [
+   "Verilerde yaşam alanının kurutulduğu, avcılığın ise çok sınırlı kaldığı belirtiliyor.",
+   "Yaşam alanının yok edilmesi türlerin sayısını doğrudan azaltabilir; bu veriyle uyumlu tahmin budur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Verilerde olmayan bir nedeni öne sürer.",
+   "B": "Avcılığı ana neden sanır, ancak veriye göre avcılık çok sınırlıdır.",
+   "C": "Doğru.",
+   "D": "Verilerde bulunmayan bir davranış değişimini neden gösterir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN6-030",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.6.7.3",
+  "surec_bileseni": "a",
+  "konu": "Biyoçeşitlilik ve Çevre",
+  "alt_konu": "Isınma amaçlı yakıt kullanımının etkileri",
+  "soru_metni": "Bir kentte kış aylarında evlerin çoğunda ısınmak için kalitesiz kömür yakılıyor. Aynı dönemde şehrin hava kirliliği ölçümleri yükseliyor ve çocuklarda öksürük şikâyetleri artıyor. Bu durumda ısınma amaçlı yakıt kullanımının etkisi için hangi sonuç çıkarılır?",
+  "siklar": {
+   "A": "Kömürün yanması havayı temizleyerek solunum rahatsızlıklarını azaltır.",
+   "B": "Kömürün yanması havaya zararlı gazlar karıştırarak insan sağlığını olumsuz etkiler.",
+   "C": "Isınma amaçlı yakıt kullanımının etkisi, evlerin dışındaki havaya ulaşmaz.",
+   "D": "Isınma amaçlı yakıt miktarı ile hava kirliliği arasında bir ilişki yoktur."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yakıtların yanması sonucunda havaya neler karıştığını düşün.",
+  "cozum_adimlari": [
+   "Kömür yanınca havaya zararlı gaz ve parçacıklar karışır.",
+   "Bu durum hava kirliliğini artırır ve solunum yoluyla insan sağlığını olumsuz etkiler.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yanmanın havayı temizlediğini sanır.",
+   "B": "Doğru.",
+   "C": "Kirliliğin yalnızca ev içinde kaldığını sanır.",
+   "D": "Yakıt kullanımı ile hava kirliliğini ilişkilendirmez; verilerle çelişir."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "BOS6-001",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.6.1.3",
+  "surec_bileseni": "a",
+  "konu": "Güneş Sistemi ve Tutulmalar",
+  "alt_konu": "Güneş tutulmasının niteliği",
+  "soru_metni": "Gökbilim kulübü, gündüz saatlerinde Güneş’in bir süre Ay tarafından örtüldüğünü kaydetti. Bu olay hangi adla bilinir ve olay sırasında gök cisimleri nasıl konumlanır?",
+  "siklar": {
+   "A": "Güneş tutulması; Dünya, Güneş ile Ay arasındadır.",
+   "B": "Güneş tutulması; Ay, Güneş ile Dünya arasındadır.",
+   "C": "Ay tutulması; Ay, Güneş ile Dünya arasındadır.",
+   "D": "Ay tutulması; Dünya, Güneş ile Ay arasındadır."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce olayın adını, sonra Güneş’i örtenin hangi gök cismi olduğunu düşün.",
+  "cozum_adimlari": [
+   "Güneş’in Ay tarafından örtülmesi Güneş tutulmasıdır.",
+   "Güneş’i örten Ay olduğundan Ay, Güneş ile Dünya arasında yer alır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Olayın adı doğru, ancak Dünya’yı araya yerleştirerek Ay tutulmasının konumunu Güneş tutulmasına uygulama yanılgısı.",
+   "B": "Doğru.",
+   "C": "Olayın adını yanlış koyma; Ay’ın araya girmesini Ay tutulması sanma.",
+   "D": "Ay tutulmasının adı ve konumu doğru ama sorulan olay Güneş’in örtülmesi olduğundan uygun değil."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "BOS6-002",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.6.1.4",
+  "surec_bileseni": "a",
+  "konu": "Güneş Sistemi ve Tutulmalar",
+  "alt_konu": "Güneş tutulması modeli",
+  "soru_metni": "Ece, Güneş tutulmasını göstermek için bir model hazırlıyor. El fenerini Güneş, büyük topu Dünya, küçük topu Ay olarak kabul ediyor. Modelin Güneş tutulmasını temsil etmesi için küçük top nereye yerleştirilmelidir?",
+  "siklar": {
+   "A": "Büyük topun, el fenerine bakmayan arka tarafına",
+   "B": "El fenerinin arkasına, büyük topa ters yöne",
+   "C": "Büyük topun yanına, ışık hüzmesinin dışına",
+   "D": "El feneri ile büyük topun arasına, ışık hüzmesinin içine"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Güneş tutulmasında Güneş’ten gelen ışığı Dünya’ya ulaşmadan kesen cismi düşün.",
+  "cozum_adimlari": [
+   "Güneş tutulmasında Ay, Güneş’in ışığını Dünya’ya ulaşmadan kısmen ya da tamamen keser.",
+   "Modelde bu durum, küçük topun el feneri ile büyük top arasında ışık hüzmesine girmesiyle temsil edilir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ay tutulması modelini (Ay’ın Dünya’nın gölgesine girmesi) Güneş tutulması modeliyle karıştırma.",
+   "B": "Güneş’in arkasına yerleşen cismin Dünya’dan görülen ışığı kesmeyeceğini fark etmeme.",
+   "C": "Ay’ın ışık yolunun dışında kalırsa da tutulma olacağını sanma.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "BOS6-003",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.6.2.3",
+  "surec_bileseni": "c",
+  "konu": "Kuvvet ve Hareket",
+  "alt_konu": "Sürat ve hız farkı",
+  "soru_metni": "Ali kuzeye, Burak ise güneye doğru birer bisikletle gidiyor. İkisi de saatte 12 km sabit süratle ilerliyor. Ali ile Burak’ın sürat ve hızları için aşağıdakilerden hangisi söylenebilir?",
+  "siklar": {
+   "A": "Süratleri eşit, hızları farklıdır.",
+   "B": "Süratleri farklı, hızları eşittir.",
+   "C": "Süratleri ve hızları eşittir.",
+   "D": "Süratleri ve hızları farklıdır."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sürat ile hızı ayıran özelliği, ikisinin hareket yönleriyle birlikte düşün.",
+  "cozum_adimlari": [
+   "Sürat yalnızca büyüklüğü, hız ise büyüklükle birlikte yönü de içerir.",
+   "İkisinin sürati de saatte 12 km olduğundan süratleri eşittir.",
+   "Biri kuzeye, diğeri güneye gittiğinden yönleri farklıdır; bu nedenle hızları farklıdır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Süratin eşit olduğunu görmeyip yön farkını hızın eşitliği sanma.",
+   "C": "Sürat ile hızı aynı kavram sayma.",
+   "D": "Sürat eşitken yön farkından dolayı süratin de farklı olacağını sanma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "BOS6-004",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.6.3.5",
+  "surec_bileseni": "b",
+  "konu": "Vücudumuzda Sistemler: Üreme",
+  "alt_konu": "Kadın üreme sistemi organları arasındaki ilişki",
+  "soru_metni": "Fen kulübünden Zeynep, insanda üremeyi sağlayan organlarla ilgili bir sunum hazırlıyor. Sunumda, yumurtalıkta olgunlaşan yumurta hücresinin döllenirse rahme ulaşana kadar izleyeceği yolu sırayla yazacak. Bu yol hangisidir?",
+  "siklar": {
+   "A": "Rahim → yumurta kanalı → yumurtalık",
+   "B": "Yumurta kanalı → yumurtalık → rahim",
+   "C": "Yumurtalık → yumurta kanalı → rahim",
+   "D": "Yumurtalık → rahim → yumurta kanalı"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yumurta hücresinin üretildiği organı başlangıç, yerleşeceği organı bitiş olarak al.",
+  "cozum_adimlari": [
+   "Yumurta hücresi yumurtalıkta olgunlaşır ve oradan yumurta kanalına geçer.",
+   "Döllenme yumurta kanalında gerçekleşir; döllenmiş hücre buradan rahme ilerler.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sıranın tersini yazma; yumurta hücresinin rahimde oluştuğunu sanma.",
+   "B": "Yumurta kanalını yumurtalıktan önce koyma; hücrenin üretildiği yeri bilmeme.",
+   "C": "Doğru.",
+   "D": "Yumurta hücresinin rahimden yumurta kanalına gittiğini sanma."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "BOS6-005",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.6.3.7",
+  "surec_bileseni": "a",
+  "konu": "Vücudumuzda Sistemler: Denetleyici ve Düzenleyici",
+  "alt_konu": "İç salgı bezleri ve dış salgı bezleri",
+  "soru_metni": "Bir sağlık broşüründe, tiroit bezinin salgısını doğrudan kana verdiği; ter bezinin ise salgısını bir kanalla deri yüzeyine ilettiği yazıyor. Buna göre bu iki bez için aşağıdakilerden hangisi doğrudur?",
+  "siklar": {
+   "A": "Tiroit bezi dış salgı bezi, ter bezi iç salgı bezidir.",
+   "B": "Tiroit bezi iç salgı bezi, ter bezi dış salgı bezidir.",
+   "C": "İkisi de iç salgı bezidir.",
+   "D": "İkisi de dış salgı bezidir."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bezlerin salgılarını nereye ve hangi yolla ilettiğini karşılaştır.",
+  "cozum_adimlari": [
+   "Salgısını kanalsız olarak doğrudan kana veren bezler iç salgı bezidir; tiroit bezi bu gruptadır.",
+   "Salgısını bir kanalla vücut yüzeyine ileten bezler dış salgı bezidir; ter bezi bu gruptadır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İç ve dış salgı bezlerinin yerlerini ters yazma.",
+   "B": "Doğru.",
+   "C": "Her bezin salgısını kana verdiğini sanma.",
+   "D": "Her bezin salgısını kanalla ilettiğini sanma."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "BOS6-006",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.6.3.8",
+  "surec_bileseni": "b",
+  "konu": "Vücudumuzda Sistemler: Denetleyici ve Düzenleyici",
+  "alt_konu": "Ergenlikte ortak bedensel değişimler",
+  "soru_metni": "Bir okulun rehberlik panosunda, çocukluktan ergenliğe geçişte hem kızların hem erkeklerin yaşadığı ortak bedensel değişimler listeleniyor. Bu listeye aşağıdakilerden hangisi eklenebilir?",
+  "siklar": {
+   "A": "Boy uzamasının hızlanması",
+   "B": "Sesin belirgin biçimde kalınlaşması",
+   "C": "Adet döneminin başlaması",
+   "D": "Yüzde sakal çıkması"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her seçeneğin yalnızca bir cinsiyette mi, yoksa ikisinde de mi görüldüğünü ayır.",
+  "cozum_adimlari": [
+   "Ergenlikte boyun hızlı uzaması hem kızlarda hem erkeklerde görülür.",
+   "Belirgin ses kalınlaşması ve sakal çıkması erkeklerde, adet dönemi ise kızlarda görülen değişimlerdir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Ses değişiminin yalnızca erkeklerde belirgin olduğunu fark etmeme.",
+   "C": "Adet dönemini ortak bir değişim sanma; yalnızca kızlarda görülür.",
+   "D": "Sakal çıkmasını her iki cinsiyette görülen bir değişim sanma."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "BOS6-007",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.6.3.9",
+  "surec_bileseni": "c",
+  "konu": "Vücudumuzda Sistemler: Denetleyici ve Düzenleyici",
+  "alt_konu": "Sağlık bilgisini doğrulama",
+  "soru_metni": "Mert, sinir sisteminin sağlığı için yeterli uykunun önemli olduğunu bir internet sitesinde okudu. Bu bilgiyi doğrulamak istiyor. Mert’in bu amaçla yapabileceği en uygun işlem hangisidir?",
+  "siklar": {
+   "A": "Aynı yazıyı o sitede bir kez daha dikkatle okumak",
+   "B": "Sınıf arkadaşlarının çoğunun aynı görüşte olup olmadığına bakmak",
+   "C": "Bilgiyi sosyal medyada çok beğenilen bir gönderiyle karşılaştırmak",
+   "D": "Bilgiyi Sağlık Bakanlığı gibi resmî bir kurumun yayınlarında aramak"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bilgiyi hazırlayan kaynağın uzmanlığını ve sorumluluğunu düşün.",
+  "cozum_adimlari": [
+   "Bir bilginin doğrulanması için ondan bağımsız ve güvenilir bir kaynağa bakmak gerekir.",
+   "Sağlık Bakanlığı gibi resmî kurumların yayınları uzmanlarca hazırlanır ve sorumlulukla yayımlanır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Aynı kaynağı yeniden okumanın doğrulama sağlamayacağını fark etmeme.",
+   "B": "Çoğunluğun görüşünü doğruluk ölçütü sanma.",
+   "C": "Beğeni sayısının doğruluğu kanıtladığını sanma.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "BOS6-008",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.6.5.6",
+  "surec_bileseni": "a",
+  "konu": "Madde ve Özellikleri",
+  "alt_konu": "Yoğunluk modeli",
+  "soru_metni": "Eylül, yoğunluğu modellemek için hacimleri eşit iki kutu hazırlıyor. Kutulardan birine 10, diğerine 25 tane özdeş bilye koyuyor. Bu modelde yoğunluğu daha büyük olan maddeyi hangi kutu temsil eder ve neden?",
+  "siklar": {
+   "A": "10 bilyeli kutu; bilyeler daha geniş alana yayıldığı için",
+   "B": "10 bilyeli kutu; kutuda daha az bilye bulunduğu için",
+   "C": "25 bilyeli kutu; aynı hacimde bilye sayısı daha fazla olduğu için",
+   "D": "İkisi de aynıdır; kutuların hacmi eşit olduğu için"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Kutuların hacmi eşit olduğuna göre, bilye sayısı ile birim hacimdeki madde miktarını ilişkilendir.",
+  "cozum_adimlari": [
+   "Yoğunluk, birim hacimdeki madde miktarıdır.",
+   "Bilyeler özdeş ve kutuların hacmi eşit olduğundan bilye sayısı fazla olan kutuda birim hacimdeki madde miktarı büyüktür.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Maddenin yayılmasını yoğunluğun büyük olmasıyla ilişkilendirme.",
+   "B": "Az madde içeren kutuyu yoğun sanma; yoğunluk ile hacmi karıştırma.",
+   "C": "Doğru.",
+   "D": "Hacim eşitse yoğunlukların da eşit olacağını sanma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "BOS6-009",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.6.6.3",
+  "surec_bileseni": "a",
+  "konu": "Elektrik",
+  "alt_konu": "Reosta ve elektriksel direnç",
+  "soru_metni": "Fen kulübünde pil, ampul ve reostadan oluşan bir seri devre kuruldu. Reostanın sürgüsü hareket ettirilerek devreye giren telin uzunluğu artırıldı. Bu durumda reostanın direnci ve ampulün parlaklığı için ne söylenebilir?",
+  "siklar": {
+   "A": "Direnç artar, parlaklık azalır.",
+   "B": "Direnç artar, parlaklık artar.",
+   "C": "Direnç azalır, parlaklık azalır.",
+   "D": "Direnç azalır, parlaklık artar."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Telin uzunluğu ile direnç arasındaki ilişkiyi, direnç ile parlaklık arasındaki ilişkiyle birleştir.",
+  "cozum_adimlari": [
+   "Devreye giren tel uzadıkça reostanın direnci artar.",
+   "Direnç arttıkça devreden geçen elektrik akışı zorlaşır ve ampulün parlaklığı azalır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Direncin artışını doğru bulup parlaklığın da artacağını sanma.",
+   "C": "Tel uzunluğu artınca direncin azalacağını sanma; parlaklığın azalmasını doğru tahmin etme.",
+   "D": "Telin uzunluğu ile direnç ilişkisini ters kurma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "BOS6-010",
+  "sinif": 6,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli DÖP (tymm/mufredat 2026)",
+  "kazanim_kodu": "FB.6.7.4",
+  "surec_bileseni": "c",
+  "konu": "Çevre Sorunları",
+  "alt_konu": "Yakın çevredeki atık sorunu",
+  "soru_metni": "Bir okulun bahçesinde teneffüsten sonra plastik şişe ve kâğıt ambalaj atıkları yerlere dağılıyor. Öğrenciler, bahçede atık kutusu bulunmadığını ve atıkların çoğunun yere atıldığını belirliyor. Bu verilere dayanarak sorunun çözümüne yönelik hangi öneri geliştirilebilir?",
+  "siklar": {
+   "A": "Öğrencilerin teneffüste bahçeye çıkışını sınırlamak",
+   "B": "Bahçeye daha fazla çiçek ve ağaç dikmek",
+   "C": "Toplanan atıkları okulun arka tarafında biriktirmek",
+   "D": "Bahçeye plastik ve kâğıt için ayrı atık kutuları koymak"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Toplanan verilerde belirlenen nedenle doğrudan ilgili olan öneriyi seç.",
+  "cozum_adimlari": [
+   "Verilere göre sorunun nedeni, bahçede atık kutusu bulunmaması ve atıkların yere atılmasıdır.",
+   "Bu nedeni gideren öneri, bahçeye atıkların türüne göre ayrılabileceği kutular koymaktır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sorunun nedenini gidermeden öğrencilerin bahçeyi kullanımını kısıtlama.",
+   "B": "Atık sorunuyla ilgisiz, çevreyi güzelleştirme önerisini çözüm sanma.",
+   "C": "Atıkları yalnızca başka bir yere taşımanın sorunu çözmeyeceğini fark etmeme.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

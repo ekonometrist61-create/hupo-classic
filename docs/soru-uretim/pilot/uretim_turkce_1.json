@@ -1,0 +1,844 @@
+{
+ "sorular": [
+  {
+   "id": "tr1-01",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-01",
+   "pasaj_metin": "Ayşe sabah erken kalktı. Ayşe dişlerini fırçaladı. Sonra sütünü içti.",
+   "dayanak": "Ayşe dişlerini fırçaladı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ayşe sabah kalkınca neyi fırçaladı?",
+   "siklar": {
+    "A": "Dişlerini",
+    "B": "Saçlarını",
+    "C": "Ayakkabısını",
+    "D": "Elbisesini"
+   },
+   "dogru_sik": "A",
+   "ipucu": "Metnin ikinci cümlesine dikkatle bak.",
+   "cozum_adimlari": [
+    "Soru, Ayşe'nin sabah kalkınca neyi fırçaladığını soruyor.",
+    "Metnin ikinci cümlesinde Ayşe'nin dişlerini fırçaladığı yazıyor.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Sabahları saç da taranır, bu yüzden çekici gelir; ama metinde saçtan söz edilmez.",
+    "C": "Ayakkabı da fırçalanan bir eşyadır; ama metinde ayakkabı geçmez.",
+    "D": "Elbise de fırçalanabilir; ama metinde elbise geçmez."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-02",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-01",
+   "pasaj_metin": "Ayşe sabah erken kalktı. Ayşe dişlerini fırçaladı. Sonra sütünü içti.",
+   "dayanak": "Ayşe sabah erken kalktı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Metne göre Ayşe ne zaman kalktı?",
+   "siklar": {
+    "A": "Akşam geç vakit",
+    "B": "Sabah erken",
+    "C": "Öğle vakti",
+    "D": "Gece yarısı"
+   },
+   "dogru_sik": "B",
+   "ipucu": "Metnin ilk cümlesinde zamanı anlatan sözcükleri ara.",
+   "cozum_adimlari": [
+    "Soru, Ayşe'nin kalktığı zamanı soruyor.",
+    "Metnin ilk cümlesinde Ayşe'nin sabah erken kalktığı yazıyor.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Akşam da günün bir vaktidir; ama Ayşe akşam değil sabah kalkmıştır.",
+    "C": "Öğle vakti de uyanmak için düşünülebilir; ama metinde öğleden söz edilmez.",
+    "D": "Gece yarısı uyku vaktidir; metinde böyle bir zaman geçmez."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-03",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-02",
+   "pasaj_metin": "Deniz parkta bir kedi gördü. Kedi ağaca tırmanıyordu. Deniz kediye el salladı.",
+   "dayanak": "Deniz parkta bir kedi gördü",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Deniz parkta ne gördü?",
+   "siklar": {
+    "A": "Bir köpek",
+    "B": "Bir kuş",
+    "C": "Bir kedi",
+    "D": "Bir tavşan"
+   },
+   "dogru_sik": "C",
+   "ipucu": "Metnin ilk cümlesine geri dön.",
+   "cozum_adimlari": [
+    "Soru, Deniz'in parkta gördüğü hayvanı soruyor.",
+    "Metnin ilk cümlesinde Deniz'in parkta bir kedi gördüğü yazıyor.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Parkta köpek görmek çok olağandır; ama metinde köpek geçmez.",
+    "B": "Parkta kuşlar da bulunur; ama metinde kuştan söz edilmez.",
+    "D": "Tavşan da sevilen bir hayvandır; ama metinde tavşan geçmez."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-04",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-02",
+   "pasaj_metin": "Deniz parkta bir kedi gördü. Kedi ağaca tırmanıyordu. Deniz kediye el salladı.",
+   "dayanak": "Kedi ağaca tırmanıyordu",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Kedi nereye tırmanıyordu?",
+   "siklar": {
+    "A": "Çatıya",
+    "B": "Duvara",
+    "C": "Banka",
+    "D": "Ağaca"
+   },
+   "dogru_sik": "D",
+   "ipucu": "Kedinin ne yaptığı ikinci cümlede anlatılıyor.",
+   "cozum_adimlari": [
+    "Soru, kedinin tırmandığı yeri soruyor.",
+    "Metnin ikinci cümlesinde kedinin ağaca tırmandığı yazıyor.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Kediler çatıya da çıkar; ama metinde çatı geçmez.",
+    "B": "Kediler duvara da tırmanır; ama metinde duvar geçmez.",
+    "C": "Banka çıkmak parkta olabilecek bir şeydir; ama metinde bank geçmez."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-05",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-03",
+   "pasaj_metin": "Anne pazardan elma aldı. Elmalar kırmızı ve çok tatlıydı. Ali elmaları çok sevdi.",
+   "dayanak": "Anne pazardan elma aldı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Anne pazardan ne aldı?",
+   "siklar": {
+    "A": "Elma",
+    "B": "Armut",
+    "C": "Üzüm",
+    "D": "Çilek"
+   },
+   "dogru_sik": "A",
+   "ipucu": "Annenin pazardan aldığı şey ilk cümlede yazıyor.",
+   "cozum_adimlari": [
+    "Soru, annenin pazardan aldığı şeyi soruyor.",
+    "Metnin ilk cümlesinde annenin pazardan elma aldığı yazıyor.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Armut da pazarda satılan bir meyvedir; ama metinde armut geçmez.",
+    "C": "Üzüm de pazarda satılır; ama metinde üzüm geçmez.",
+    "D": "Çilek de pazarda bulunan bir meyvedir; ama metinde çilek geçmez."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-06",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-03",
+   "pasaj_metin": "Anne pazardan elma aldı. Elmalar kırmızı ve çok tatlıydı. Ali elmaları çok sevdi.",
+   "dayanak": "Elmalar kırmızı ve çok tatlıydı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Elmaların tadı nasıldı?",
+   "siklar": {
+    "A": "Çok ekşi",
+    "B": "Çok tatlı",
+    "C": "Çok acı",
+    "D": "Biraz tuzlu"
+   },
+   "dogru_sik": "B",
+   "ipucu": "İkinci cümlede elmaların nasıl olduğu anlatılıyor.",
+   "cozum_adimlari": [
+    "Soru, elmaların tadını soruyor.",
+    "Metnin ikinci cümlesinde elmaların kırmızı ve çok tatlı olduğu yazıyor.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Bazı elmalar ekşi olur, bu yüzden çekici gelir; ama metinde elmalar tatlıdır.",
+    "C": "Acı bir tat meyveler için akla gelebilir; ama metinde böyle bir şey yazmaz.",
+    "D": "Tuzlu tat meyveye uymaz ama sözcük olarak akla gelebilir; metinde geçmez."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-07",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-04",
+   "pasaj_metin": "Kuş ağaca bir yuva yaptı. Yuvada üç yumurtası vardı. Yumurtalardan yavru kuşlar çıktı.",
+   "dayanak": "Kuş ağaca bir yuva yaptı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Bu metin için en uygun başlık hangisidir?",
+   "siklar": {
+    "A": "Yumurtaların Rengi",
+    "B": "Kuşların Yiyeceği",
+    "C": "Kuş ve Yuvası",
+    "D": "Ağaçtaki Yapraklar"
+   },
+   "dogru_sik": "C",
+   "ipucu": "Metinde en çok kimden ve onun neyinden söz edildiğini düşün.",
+   "cozum_adimlari": [
+    "Başlık, metnin en çok neyi anlattığını gösterir.",
+    "Metnin üç cümlesi de bir kuştan, yuvasından ve yumurtalarından söz ediyor.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Metinde yumurta geçtiği için çekici gelir; ama metin yumurtanın rengini anlatmaz.",
+    "B": "Metinde kuş geçtiği için çekici gelir; ama metin kuşların yiyeceğinden söz etmez.",
+    "D": "Metinde ağaç geçtiği için çekici gelir; ama metin yapraklardan söz etmez."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-08",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-04",
+   "pasaj_metin": "Kuş ağaca bir yuva yaptı. Yuvada üç yumurtası vardı. Yumurtalardan yavru kuşlar çıktı.",
+   "dayanak": "Yuvada üç yumurtası vardı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Yuvada kaç yumurta vardı?",
+   "siklar": {
+    "A": "İki yumurta",
+    "B": "Dört yumurta",
+    "C": "Beş yumurta",
+    "D": "Üç yumurta"
+   },
+   "dogru_sik": "D",
+   "ipucu": "Yumurtaların sayısı ikinci cümlede yazıyor.",
+   "cozum_adimlari": [
+    "Soru, yuvadaki yumurtanın sayısını soruyor.",
+    "Metnin ikinci cümlesinde yuvada üç yumurta olduğu yazıyor.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "İki sayısı, üçe yakın olduğu için karıştırılabilir.",
+    "B": "Dört sayısı, üçten sonra geldiği için karıştırılabilir.",
+    "C": "Beş sayısı da yumurta sayısı olarak düşünülebilir; ama metinde yazan sayı değildir."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-09",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-05",
+   "pasaj_metin": "Ali'nin balonu havaya uçtu. Ali balonuna uzun uzun baktı. Ali çok üzüldü.",
+   "dayanak": "Ali'nin balonu havaya uçtu",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ali neden üzüldü?",
+   "siklar": {
+    "A": "Balonu uçtuğu için",
+    "B": "Okula geç kaldığı için",
+    "C": "Oyuncağı kırıldığı için",
+    "D": "Arkadaşı gittiği için"
+   },
+   "dogru_sik": "A",
+   "ipucu": "Ali'nin balonuna ne olduğunu ilk cümlede ara.",
+   "cozum_adimlari": [
+    "Soru, Ali'nin üzülme nedenini soruyor.",
+    "Metnin ilk cümlesinde Ali'nin balonunun havaya uçtuğu yazıyor.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Okula geç kalmak insanı üzer; ama metinde okul geçmez.",
+    "C": "Oyuncağın kırılması üzücü bir olaydır; ama metinde oyuncak kırılmaz.",
+    "D": "Arkadaşın gitmesi üzücüdür; ama metinde arkadaştan söz edilmez."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-10",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-06",
+   "pasaj_metin": "Hava çok soğuktu. Ayşe kalın montunu giydi. Sonra atkısını ve eldivenlerini aldı.",
+   "dayanak": "Ayşe kalın montunu giydi",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ayşe ne giydi?",
+   "siklar": {
+    "A": "İnce tişört",
+    "B": "Kalın mont",
+    "C": "Yazlık elbise",
+    "D": "Yağmurluk"
+   },
+   "dogru_sik": "B",
+   "ipucu": "Ayşe'nin giydiği şey ikinci cümlede yazıyor.",
+   "cozum_adimlari": [
+    "Soru, Ayşe'nin giydiği şeyi soruyor.",
+    "Metnin ikinci cümlesinde Ayşe'nin kalın montunu giydiği yazıyor.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Tişört de bir giysidir; ama metindeki giysi ince değil kalındır.",
+    "C": "Elbise de giyilir; ama soğuk havada giyilen bir şey olmadığı için metne uymaz.",
+    "D": "Yağmurluk dışarıda giyilen bir şeydir; ama metinde yağmurdan söz edilmez."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-11",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-06",
+   "pasaj_metin": "Hava çok soğuktu. Ayşe kalın montunu giydi. Sonra atkısını ve eldivenlerini aldı.",
+   "dayanak": "Hava çok soğuktu",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ayşe neden atkısını ve eldivenlerini aldı?",
+   "siklar": {
+    "A": "Yağmur yağdığı için",
+    "B": "Okula geç kalacağı için",
+    "C": "Hava soğuk olduğu için",
+    "D": "Annesi söylediği için"
+   },
+   "dogru_sik": "C",
+   "ipucu": "Metnin ilk cümlesinde havanın nasıl olduğuna bak.",
+   "cozum_adimlari": [
+    "Soru, Ayşe'nin atkı ve eldiven almasının nedenini soruyor.",
+    "Metnin ilk cümlesinde havanın çok soğuk olduğu yazıyor; atkı ve eldiven soğukta kullanılır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Yağmurda da kalın giyinilir; ama metinde yağmur yağdığı yazmaz.",
+    "B": "Okula yetişmek insanı aceleye getirir; ama metinde okul geçmez.",
+    "D": "Anneler çocuklara giyinmeyi söyler; ama metinde annenin söylediği yazmaz."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-12",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "pasaj_id": "p-07",
+   "pasaj_metin": "Deniz'in kalemi yere düştü. Ali kalemi yerden aldı. Ali kalemi Deniz'e verdi. Deniz, Ali'ye teşekkür etti.",
+   "dayanak": "Ali kalemi Deniz'e verdi",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Deniz, Ali'ye neden teşekkür etti?",
+   "siklar": {
+    "A": "Ali kalemi düşürdüğü için",
+    "B": "Ali ona oyuncak verdiği için",
+    "C": "Ali ona ödev yaptığı için",
+    "D": "Ali kalemi verdiği için"
+   },
+   "dogru_sik": "D",
+   "ipucu": "Ali'nin Deniz için yaptığı şeyi üçüncü cümlede ara.",
+   "cozum_adimlari": [
+    "Soru, Deniz'in teşekkür etme nedenini soruyor.",
+    "Metinde Deniz'in kalemi düşüyor, Ali kalemi alıp Deniz'e veriyor.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Metinde kalem geçtiği için çekici gelir; ama kalemi düşüren Ali değil Deniz'dir.",
+    "B": "Teşekkür çoğunlukla hediye için edilir; ama metinde oyuncak verilmez.",
+    "C": "Ödev yapmak yardım etmektir; ama metinde ödevden söz edilmez."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-13",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "pasaj_id": "p-08",
+   "pasaj_metin": "Ali ve babası sabah göle gitti. Göl kenarında oturup balık tuttular. Akşam eve döndüler.",
+   "dayanak": "Göl kenarında oturup balık tuttular",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ali ve babası balığı nerede tuttu?",
+   "siklar": {
+    "A": "Göl kenarında",
+    "B": "Orman içinde",
+    "C": "Okul bahçesinde",
+    "D": "Park kenarında"
+   },
+   "dogru_sik": "A",
+   "ipucu": "Olayın geçtiği yeri anlatan ikinci cümleye bak.",
+   "cozum_adimlari": [
+    "Soru, olayın geçtiği yeri soruyor.",
+    "Metnin ikinci cümlesinde balığın göl kenarında tutulduğu yazıyor.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Doğada yapılan işlerde orman akla gelir; ama metinde orman geçmez.",
+    "C": "Çocuklar için tanıdık bir yerdir; ama metinde okul geçmez.",
+    "D": "Kenarında oturulan bir yerdir; ama metinde park değil göl vardır."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-14",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "pasaj_id": "p-08",
+   "pasaj_metin": "Ali ve babası sabah göle gitti. Göl kenarında oturup balık tuttular. Akşam eve döndüler.",
+   "dayanak": "Akşam eve döndüler",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ali ve babası eve ne zaman döndü?",
+   "siklar": {
+    "A": "Sabah erkenden",
+    "B": "Akşam vakti",
+    "C": "Öğle yemeğinde",
+    "D": "Gece yarısı"
+   },
+   "dogru_sik": "B",
+   "ipucu": "Eve dönüşü anlatan cümleyi bul.",
+   "cozum_adimlari": [
+    "Soru, eve dönüş zamanını soruyor; gidiş zamanı sorulmuyor.",
+    "Metnin son cümlesinde akşam eve döndükleri yazıyor.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Sabah, gidiş zamanıdır; gidiş ile dönüş zamanı karıştırılabilir.",
+    "C": "Öğle vakti gün içinde bir zamandır; ama metinde öğle geçmez.",
+    "D": "Gece yarısı geç bir zamandır; ama metinde böyle bir zaman yazmaz."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-15",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "pasaj_id": "p-09",
+   "pasaj_metin": "Ayşe fidanı toprağa dikti. Sonra fidanı suladı. Birkaç gün sonra fidanda yeni yapraklar çıktı.",
+   "dayanak": "Sonra fidanı suladı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ayşe fidanı diktikten sonra ne yaptı?",
+   "siklar": {
+    "A": "Fidanı kesti",
+    "B": "Fidanı söktü",
+    "C": "Fidanı suladı",
+    "D": "Yaprak topladı"
+   },
+   "dogru_sik": "C",
+   "ipucu": "Dikme işinden sonra gelen cümleye bak.",
+   "cozum_adimlari": [
+    "Soru, dikme işinden sonraki işi soruyor.",
+    "Metinde önce fidanın dikildiği, sonra suladığı yazıyor.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Fidanla yapılabilecek bir işlem gibi görünür; ama metinde fidan kesilmez.",
+    "B": "Dikmenin tersi olduğu için akla gelir; ama metinde fidan sökülmez.",
+    "D": "Yapraklar metnin son cümlesinde geçtiği için çekicidir; ama yaprak toplama işi metinde geçmez."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-16",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "pasaj_id": "p-09",
+   "pasaj_metin": "Ayşe fidanı toprağa dikti. Sonra fidanı suladı. Birkaç gün sonra fidanda yeni yapraklar çıktı.",
+   "dayanak": "Birkaç gün sonra fidanda yeni yapraklar çıktı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Fidanda yeni yapraklar ne zaman çıktı?",
+   "siklar": {
+    "A": "Fidan dikilmeden önce",
+    "B": "Fidan dikilirken",
+    "C": "Bir yıl geçtikten sonra",
+    "D": "Birkaç gün geçince"
+   },
+   "dogru_sik": "D",
+   "ipucu": "Yaprakların çıkışını anlatan son cümleye bak.",
+   "cozum_adimlari": [
+    "Soru, yeni yaprakların çıkış zamanını soruyor.",
+    "Metnin son cümlesinde birkaç gün sonra yeni yaprak çıktığı yazıyor.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Zaman anlatan bir ifadedir; ama fidan dikilmeden yaprak çıkmaz.",
+    "B": "Dikme işiyle aynı anda yaprak çıktığı sanılabilir; ama yapraklar günler sonra çıkar.",
+    "C": "Bir yıl uzun bir süredir ve akla gelebilir; ama metinde yazan süre birkaç gündür."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-17",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "pasaj_id": "p-10",
+   "pasaj_metin": "Dün yağmur yağdı. Bahçedeki toprak ıslandı. Ali botlarını giyip bahçeye çıktı.",
+   "dayanak": "Dün yağmur yağdı. Bahçedeki toprak ıslandı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Bahçedeki toprak neden ıslandı?",
+   "siklar": {
+    "A": "Yağmur yağdığı için",
+    "B": "Ali bahçeyi suladığı için",
+    "C": "Kar yağdığı için",
+    "D": "Rüzgâr estiği için"
+   },
+   "dogru_sik": "A",
+   "ipucu": "İlk iki cümle arasındaki ilişkiyi düşün.",
+   "cozum_adimlari": [
+    "Soru, toprağın ıslanma nedenini soruyor.",
+    "Metinde önce yağmurun yağdığı, sonra toprağın ıslandığı yazıyor.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Ali bahçeye çıkar ve toprağı sulayabilir gibi görünür; ama metinde sulama yoktur.",
+    "C": "Kar da toprağı ıslatabilir; ama metinde yağan kar değil yağmurdur.",
+    "D": "Rüzgâr hava olayıdır ve akla gelir; ama toprağı ıslatan şey rüzgâr değildir."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-18",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "pasaj_id": "p-10",
+   "pasaj_metin": "Dün yağmur yağdı. Bahçedeki toprak ıslandı. Ali botlarını giyip bahçeye çıktı.",
+   "dayanak": "Ali botlarını giyip bahçeye çıktı",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ali bahçeye çıkmadan önce ne yaptı?",
+   "siklar": {
+    "A": "Ellerini yıkadı",
+    "B": "Botlarını giydi",
+    "C": "Saçını taradı",
+    "D": "Çantasını taşıdı"
+   },
+   "dogru_sik": "B",
+   "ipucu": "Ali'nin bahçeye çıkışını anlatan son cümleye bak.",
+   "cozum_adimlari": [
+    "Soru, Ali'nin bahçeye çıkmadan önce yaptığı işi soruyor.",
+    "Son cümlede Ali'nin önce botlarını giydiği, sonra bahçeye çıktığı anlaşılıyor.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Ellerini yıkamak günlük bir iştir; ama metinde geçmez.",
+    "C": "Saç taramak dışarı çıkmadan önce yapılabilir; ama metinde geçmez.",
+    "D": "Çanta taşımak dışarı çıkarken yapılabilir; ama metinde çanta geçmez."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-19",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "pasaj_id": "p-11",
+   "pasaj_metin": "Deniz pasta yaptı. Önce yumurtaları kırdı. Sonra unu ekleyip karıştırdı. En son pastayı fırına koydu.",
+   "dayanak": "Sonra unu ekleyip karıştırdı. En son pastayı fırına koydu",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Deniz pastayı fırına koymadan hemen önce ne yaptı?",
+   "siklar": {
+    "A": "Yumurtaları kırdı",
+    "B": "Pastayı tabağa koydu",
+    "C": "Un katıp karıştırdı",
+    "D": "Pastayı fırından çıkardı"
+   },
+   "dogru_sik": "C",
+   "ipucu": "Fırına koyma işinden bir önceki işi bul.",
+   "cozum_adimlari": [
+    "Metindeki işlerin sırası şöyledir: yumurta kırma, un katıp karıştırma, fırına koyma.",
+    "Fırına koymadan hemen önceki iş, un katıp karıştırmaktır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Yumurtaları kırmak da fırından önce yapılır; ama fırından hemen önce değil, daha başta yapılır.",
+    "B": "Pastayı tabağa koymak fırından sonra yapılacak bir iştir ve metinde geçmez.",
+    "D": "Pastayı fırından çıkarmak fırına koymadan sonra gelir; sıra karıştırılmıştır."
+   },
+   "zorluk": 3,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-20",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "pasaj_id": "p-12",
+   "pasaj_metin": "Ayşe'nin kuşu hasta oldu. Ayşe kuşuna her gün su ve yem verdi. Birkaç gün sonra kuş yeniden şarkı söylemeye başladı.",
+   "dayanak": "Ayşe kuşuna her gün su ve yem verdi",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Ayşe hasta kuşuna ne yaptı?",
+   "siklar": {
+    "A": "Kuşu uçmaya zorladı.",
+    "B": "Kuşun kafesini açık bıraktı.",
+    "C": "Kuşa hiç yiyecek vermedi.",
+    "D": "Kuşa su ve yem verdi."
+   },
+   "dogru_sik": "D",
+   "ipucu": "Ayşe'nin kuşu için her gün yaptığı işlere dikkat et.",
+   "cozum_adimlari": [
+    "Soru, Ayşe'nin hasta kuşuna ne yaptığını soruyor.",
+    "Metinde Ayşe kuşuna her gün su ve yem verdiği yazıyor.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Hasta bir kuşu uçmaya zorlamak metinde yer almaz; metin bu davranıştan söz etmez.",
+    "B": "Kafesi açık bırakmak kuşun kaçmasına yol açabilir; metinde böyle bir davranış yoktur.",
+    "C": "Yiyecek vermemek metinle çelişir; Ayşe her gün yiyecek vermiştir."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-21",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazım kuralları",
+   "kazanim_kodu": "T.Y.1.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "pasaj_id": "p-13",
+   "pasaj_metin": "bugün hava çok güzel.",
+   "dayanak": "bugün hava çok güzel",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Yukarıdaki cümlede hangi yazım yanlışı vardır?",
+   "siklar": {
+    "A": "Cümle küçük harfle başlamış.",
+    "B": "Cümlenin sonunda nokta yok.",
+    "C": "Sözcükler arasında boşluk yok.",
+    "D": "Her sözcük büyük harfle başlamış."
+   },
+   "dogru_sik": "A",
+   "ipucu": "Cümleyi baştan sona dikkatle incele.",
+   "cozum_adimlari": [
+    "Cümleler büyük harfle başlar.",
+    "Yukarıdaki cümle küçük harfle başlıyor; sonunda nokta var ve sözcükler ayrı yazılmış.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "B": "Nokta unutulabilir; ama cümlenin sonunda nokta vardır.",
+    "C": "Bitişik yazım hatası olabilir; ama sözcükler ayrı yazılmıştır.",
+    "D": "Her sözcüğün büyük harfle başlaması gerektiği sanılabilir; ama yalnızca cümlenin ilk sözcüğü büyük harfle başlar."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-22",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazım kuralları",
+   "kazanim_kodu": "T.Y.1.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "pasaj_id": "p-14",
+   "pasaj_metin": "Bugün okula gelecek misin",
+   "dayanak": "Bugün okula gelecek misin",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Yukarıdaki cümlenin sonuna hangi işaret konmalıdır?",
+   "siklar": {
+    "A": "Nokta işareti",
+    "B": "Soru işareti",
+    "C": "Ünlem işareti",
+    "D": "Virgül işareti"
+   },
+   "dogru_sik": "B",
+   "ipucu": "Cümlenin ne anlatmak için kurulduğunu düşün.",
+   "cozum_adimlari": [
+    "Cümle, bir kişiye bir şey soruyor.",
+    "Soru anlamı taşıyan cümlenin sonuna soru işareti konur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Çoğu cümlenin sonuna nokta konduğu için çekici gelir; ama bu cümle soru cümlesidir.",
+    "C": "Ünlem sevinç veya şaşkınlıkta kullanılır; bu cümle öyle değildir.",
+    "D": "Virgül cümle içinde kullanılır; cümlenin sonuna konmaz."
+   },
+   "zorluk": 1,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-23",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazım kuralları",
+   "kazanim_kodu": "T.Y.1.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "pasaj_id": "p-15",
+   "pasaj_metin": "Dün akşam ayşe bize geldi.",
+   "dayanak": "Dün akşam ayşe bize geldi",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Yukarıdaki cümlede hangi sözcüğün ilk harfi büyük yazılmalıdır?",
+   "siklar": {
+    "A": "akşam",
+    "B": "bize",
+    "C": "ayşe",
+    "D": "geldi"
+   },
+   "dogru_sik": "C",
+   "ipucu": "Kişilere verilen adlar nasıl yazılır, düşün.",
+   "cozum_adimlari": [
+    "Cümlenin ilk sözcüğü zaten büyük harfle başlıyor.",
+    "Kişi adları büyük harfle başlar; cümledeki kişi adı ayşe sözcüğüdür.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Zaman bildirdiği için önemli görünür; ama akşam sözcüğü her zaman küçük yazılır.",
+    "B": "Cümlenin ortasındaki sözcüktür; ama bize kişi adı değildir.",
+    "D": "Cümlenin sonundaki sözcük olduğu için büyük yazılmak istenebilir; ama kişi adı değildir."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  },
+  {
+   "id": "tr1-24",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazım kuralları",
+   "kazanim_kodu": "T.Y.1.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "pasaj_id": "p-16",
+   "pasaj_metin": "Ne güzel bir resim yaptın",
+   "dayanak": "Ne güzel bir resim yaptın",
+   "soru_tipi": "coktan_secmeli",
+   "soru_metni": "Yukarıdaki cümle sevinç anlatıyor. Sonuna hangi işaret konmalıdır?",
+   "siklar": {
+    "A": "Nokta işareti",
+    "B": "Soru işareti",
+    "C": "Virgül işareti",
+    "D": "Ünlem işareti"
+   },
+   "dogru_sik": "D",
+   "ipucu": "Duygu anlatan cümlelerin sonuna hangi işaretin konduğunu hatırla.",
+   "cozum_adimlari": [
+    "Cümle bir soru sormuyor; sevinç ve şaşkınlık anlatıyor.",
+    "Sevinç, şaşkınlık gibi duyguları anlatan cümlelerin sonuna ünlem işareti konur.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "celdirici_gerekce": {
+    "A": "Çoğu cümlenin sonuna nokta konduğu için çekici gelir; ama bu cümle duygu anlatır.",
+    "B": "Cümle ne sözcüğüyle başladığı için soru gibi görünür; ama bu cümle soru sormaz.",
+    "C": "Virgül cümle içinde kullanılır; cümlenin sonuna konmaz."
+   },
+   "zorluk": 2,
+   "gorsel_gerekli": false,
+   "kaynak_turu": "uretilen"
+  }
+ ]
+}

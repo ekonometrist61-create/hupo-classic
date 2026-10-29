@@ -1,0 +1,511 @@
+soru_id,kod,guven,gerekce
+005b4125-90be-40af-962c-b898a9342685,HB.1.5.1,dusuk,"Doğa olayı (gökkuşağı) tanıma; doğa gözlemi kazanımı en yakın, olay adı açıkça yok."
+05e2838a-4a9b-4661-89ed-30b2c8dd2924,HB.1.2.1,yuksek,Diş fırçalama sıklığı; sağlıklı büyüme alışkanlığı kazanımı.
+13563a85-8aa2-432b-9514-65a436941eb8,HB.1.3.1,orta,Akrabalık terimi aile üyelerini tanıma; aile özelliklerini ifade kapsamında.
+23bbd99e-6c44-43b8-9c50-776328f2aa7b,HB.1.2.2,orta,Tanımadığı kişiye kapı açmama; kişisel sınır ve güvenlik.
+32332b38-489f-4998-ad52-712125f4fd8f,HB.1.5.1,orta,Mevsim tanıma doğa gözlemiyle ilişkili; mevsim kavramına doğrudan kazanım yok.
+3574edca-36d0-4110-a25d-f71cc3436b0a,HB.1.2.3,yuksek,Yaya geçidinde trafik kuralına uyma.
+3cddc2e0-8b53-45d0-8aa6-3f95cad6c061,HB.1.1.3,yuksek,Sınıf kuralları; ders sırasında sessiz dinleme.
+c2ab7d8c-5421-462b-a570-8d3c936c010a,eslesme_yok,orta,Arkadaşa yardım ve empati; pool'da bu davranış kazanımı yok.
+c46d3601-27c5-453c-96f6-668ccecc74ba,HB.1.1.2,orta,Okul ders araçlarını tanıma; sınıf ve okul ortamı kapsamında.
+e9f7f4c8-e926-41bd-81d7-fa4c211d6be8,HB.1.2.1,yuksek,Yemek öncesi el yıkama; sağlık alışkanlığı.
+18eccd4b-6853-43b3-bf29-954a574955ab,MAT.1.1.1,yuksek,Sayıların büyüklüğünü temsil ve karşılaştırma.
+1bce82ff-fa8a-447f-8c20-e1309fde9b02,MAT.1.2.2,yuksek,Toplama/çıkarma sonucunu zihinden işlemle bulma (20'ye kadar).
+1c8c1a4b-15df-41f2-99da-aa370fb93997,MAT.1.2.1,orta,"Üç terimli toplama; toplama işlemi kapsamında, üç terim açıkça yok."
+3cee4a72-3dcd-40a2-8f01-48f37e404bd6,MAT.1.1.1,orta,"Onluk-birlik ayrımı; basamak değeri açıkça yok, sayı temsili en yakın."
+5261e221-58bf-4959-9e67-e3b11375f776,MAT.1.1.6,yuksek,Sayı örüntüsünde sonraki terim.
+7f59da51-d46b-49f5-8e8f-8b308afebf7f,MAT.1.2.2,yuksek,"20'ye kadar toplama, zihinden işlem."
+b56ea872-5f3d-4014-a393-4881cdef0602,MAT.1.3.5,yuksek,Kare tanıma; biçimsel özelliklerine göre şekil sınıflandırma.
+f6bf9c21-7278-4f57-ae74-9baceb9a0da5,MAT.1.2.1,yuksek,Günlük yaşamda toplama.
+f78a05cd-fa57-40f5-adbd-8b505bcbb81b,eslesme_yok,yuksek,Saat okuma; 1. sınıf Matematik pool'unda saat/zaman kazanımı yok.
+ff3ede3c-acc8-4167-b79f-fa5d1e36d7cd,MAT.1.1.9,yuksek,Para birimleriyle toplama.
+133a97d4-7dc3-43f8-9f89-1c147a2a55db,T.Y.1.3,orta,"Cümle sonu noktalama; kazanımda noktalama açıkça yok, yazma kuralları en yakın."
+1910f182-2d19-4bbe-83bd-3e8a02f3ec49,T.O.1.1,orta,"Sesli harf tanıma; harf seslendirme kazanımı yakın, sesli-sessiz kavramı yok."
+204a7dc9-a140-48e5-8b88-08ccb8286d21,T.O.1.3,orta,Cümledeki bilgiyi (kim nereye gitti) çözümleme.
+74bef5ae-2c91-48d4-a42a-3a8865364189,eslesme_yok,yuksek,Zıt anlam; 1. sınıf Türkçe pool'unda sözcük anlamı kazanımı yok.
+983f73ec-2073-45cb-a6f8-c51e0d0e70bc,T.Y.1.3,yuksek,Cümle başı büyük harf kuralı.
+a1d37f0f-5564-41fd-826d-13d67ce6a04d,eslesme_yok,yuksek,Eş anlamlılık; 1. sınıf Türkçe pool'unda sözcük anlamı kazanımı yok.
+d0e0aa51-0d01-4480-92d4-031adda35dc3,T.O.1.1,orta,"Hece sayma; hece seslendirme kazanımı en yakın, hece sayma açıkça yok."
+f59b981c-74d0-461f-af91-e2d1e8f09fdf,eslesme_yok,yuksek,Sözlükte sıralama (alfabetik); 1. sınıf Türkçe pool'unda alfabetik sıralama kazanımı yok.
+f917e577-f080-4bdc-aae3-354481db9d5f,T.Y.1.3,yuksek,Özel ad büyük harfle yazımı; büyük harfleri kuralına uygun yazma kazanımı.
+fe214c1e-d54d-4bdd-9ea0-4aa3d588e517,T.O.1.3,orta,Cümledeki bilgiyi (ne içildi) bulma; metinden bilgi çözümleme.
+0590a4fc-4329-4e8b-b9a9-ba2d003da908,HB.2.3.3,yuksek,Ev sorumluluğu; görev ve sorumlulukları günlük yaşama yansıtma.
+0e8a48f4-6c38-4a61-af5e-72ebb58cd7ba,HB.2.2.1,yuksek,Sağlıklı büyüme ile beslenme alışkanlığı ilişkisi.
+263e17d0-5874-4753-9a93-658af627a6de,eslesme_yok,orta,"Türkiye'nin başkenti; 2. sınıf HB pool'unda ülke başkenti kazanımı yok, 2.4.2 yönetim birimleri uzak."
+338e3f57-a111-4680-8c2a-247fed2d8320,HB.2.3.2,yuksek,Nezaket sözcüğü (lütfen) kullanımı; nezaket ve görgü kuralları.
+5df2eb4b-bd61-45ae-879d-c074eb3d9558,HB.2.2.1,orta,Uyku düzeni sağlıklı büyüme alışkanlığı kapsamında; süre kazanımı açıkça yok.
+82e79962-f2b5-4f6c-ad25-ba5f145b660c,eslesme_yok,orta,"Elektrik güvenliği; 2. sınıf HB pool'unda ev/elektrik güvenliği kazanımı yok (2.2.2 çevrim içi, 2.2.4 acil)."
+89e62198-d248-4d7e-86d7-a287399c8030,HB.2.5.4,orta,Çevre temizliği ve çöp davranışı; doğal kaynak/çevre davranışı kazanımı en yakın.
+c273bc0d-b8c0-4c16-992e-6fd12f3401ba,eslesme_yok,yuksek,Sınıf araçlarını tanıma (tebeşir); kazanımda okul araçları yok.
+cc8303a7-5955-4564-8d39-60b0d7055143,eslesme_yok,orta,"Okul zili/sınıfa geçme kuralı; okul kuralları kazanımı pool'da açıkça yok, 2.3.2 nezaket uzak."
+cf3ebb08-3c9b-432d-9a70-27af1361cd27,HB.2.2.4,yuksek,Acil durumda yetkililerle iletişim; yangında 112 çağırma.
+2ca33082-704f-48db-95c6-1478c3742a1b,MAT.2.2.4,yuksek,Çarpma işleminin toplamaya dayalı problem çözümü.
+6adbdea1-d530-4217-9083-387be8faf2c3,MAT.2.1.4,yuksek,"Ritmik sayma (5'er), yüzlük tablo ile ileri sayma."
+a7a578a4-3ca1-4bd5-b5e5-d8e2a07ce855,MAT.2.1.9,yuksek,Zaman ölçü birimleri (yarım saat = 30 dakika) okuma ve yazma.
+a7f5d9f3-9316-4be9-b2a1-f9727bf2d8f2,MAT.2.2.4,yuksek,Çarpma işleminin sonucu (4×6) toplamaya dayalı çözüm.
+a9fca1ca-ab1c-4e9e-b07b-f3404d1b48bb,MAT.2.1.2,yuksek,İki basamaklı sayılarda basamak değeri/çözümleme.
+c0638032-3eac-454f-ae45-bfd4ab0d5055,MAT.2.3.1,orta,"Üçgenin köşe sayısı; biçimsel özellik kapsamında, köşe sayısı açıkça yok."
+cb311f3b-49b9-4876-8130-861304c19c5e,MAT.2.1.11,yuksek,"Metre-santimetre birim dönüşümü, standart uzunluk birimleri."
+d934a5a3-99d7-47d4-8fca-bd249934a959,MAT.2.2.2,orta,"Onluk bozarak çıkarma; zihinden/tahminle işlem kazanımı en yakın, algoritma açıkça yok."
+dfd2811f-3746-4dee-af05-fe20d2b8667f,MAT.2.2.2,orta,Üç sayının toplamı; toplama işlemi sonuçlarını zihinden hesaplama kazanımı.
+ed10c136-5bfc-4760-a6e5-63ab25e7400c,MAT.2.2.2,orta,Eldeli toplama; toplama sonucu zihinden/tahminle işlem kazanımı en yakın.
+010c7e46-2b63-433b-bc66-dc1819c1ebc7,eslesme_yok,yuksek,Zıt anlam; 2. sınıf Türkçe pool'unda sözcük anlamı (zıt/eş) kazanımı yok.
+20aba302-b190-430c-913d-e6f893c8719d,eslesme_yok,orta,Sesteş sözcük ayrımı; 2. sınıf Türkçe pool'unda sesteş kazanımı yok.
+2d6274b0-5f0a-4fc6-8836-76b5dd6a7f40,T.Y.2.3,orta,Ek yazımı (-ki) yazma kuralı kapsamında; özel madde adı açıkça yok.
+436006f8-c746-48f5-8bc7-9709421d1d3b,T.Y.2.3,orta,de/da bağlaç yazımı yazma kuralları kapsamında; özel madde adı açıkça yok.
+4496262c-51e5-41e3-91a9-8c4e0a650f06,T.O.2.3,orta,Metinde neden-sonuç ilişkisini çözümleme.
+676624e7-bd8b-456b-bee4-255d2b2f5091,eslesme_yok,yuksek,Eş anlamlı sözcük; 2. sınıf Türkçe pool'unda eş anlam kazanımı yok.
+9c0c48a1-9828-4ced-ba27-c877305255ed,eslesme_yok,yuksek,Alfabedeki harf sayısı; alfabe kazanımı pool'da yok.
+e096a441-4e82-43d7-822c-76a93e7a6413,eslesme_yok,orta,Özel ad sözcük türü bilgisi; adlar/özel ad kazanımı pool'da yok.
+e29a6603-e628-4f3e-ae7f-d6b6d0cb91fb,T.Y.2.3,orta,Cümle sonu noktalama işaretini yazma kuralı kapsamında seçme.
+fa37cef6-f157-4788-a1ea-950c9ccd0dab,eslesme_yok,orta,Hece sayma; 2. sınıf Türkçe pool'unda hece sayma kazanımı açıkça yok.
+4a384a61-1d21-400d-9b78-315576f97734,ENG.2.5.V1,orta,Hayvan adı (cat=kedi); pets in the house kapsamında evcil hayvan sözcüğü.
+6129611e-06d1-435f-8c54-c5d9e54b25f0,eslesme_yok,orta,"Sayı sözcükleri (five); sayılar kazanımı pool'da açıkça yok, yaş kazanımı ilgili değil."
+63dcbe0d-eb1d-43f4-9a12-da2b2717e0dc,ENG.2.1.V1,yuksek,Veda sözcüğü (goodbye); greetings and introductions kapsamı.
+670a4992-7e7c-4f3f-a366-89d25f07a3ce,ENG.2.2.V1,yuksek,Renk sözcüğü (red); colours kapsamı.
+6751d7f3-6b1e-4a6e-9d2a-be7198fefdd6,ENG.2.2.V1,yuksek,Sınıf nesnesi sözcüğü (book); classroom objects kapsamı.
+79e78347-c4c1-420f-b92f-ee077cd21f6a,eslesme_yok,orta,Sayı dizisinde eksik sayı; sayı kazanımı pool'da yok.
+814c7aa7-2046-40b4-a9f8-59bce1fb1a98,ENG.2.2.V1,orta,"Renk sözcükleri (blue, yellow, green); colours kapsamı, karışım kazanımı açıkça yok."
+cf2395e6-c7e3-4872-85b5-d5b84d6bca31,ENG.2.4.V1,yuksek,Aile üyesi sözcüğü (mother); family life kapsamı.
+ddb72a17-79e4-4c59-9c87-151fb39cf4b1,ENG.2.1.V1,yuksek,Ad sorma kalıbı (What is your name); introductions kapsamı.
+e1903d53-7c3f-4c51-9b0c-516d3764392f,ENG.2.1.V1,yuksek,Selamlaşma kalıbı (Good morning); greetings kapsamı.
+18df22de-c29a-464c-a8b2-42d694942479,FB.3.7.2,yuksek,Bitkinin yetişmesi için gerekenler (güneş ışığı).
+4b0676b0-f758-4aff-9d72-e5791c2b2001,eslesme_yok,yuksek,Işık kaynakları; 3. sınıf Fen pool'unda ışık kazanımı yok.
+545b5cf5-32c9-4daf-8d8a-66b557da6109,FB.3.4.1,yuksek,"Maddenin hâllerini (katı, sıvı, gaz) sınıflandırma."
+59ae5775-9b62-4eca-9f27-b3c7d07913bf,FB.3.4.3,orta,Atık ayrıştırma (geri dönüşüm) kapsamında.
+60fde487-69f7-4489-849d-2a383fcbe0fa,FB.3.2.1,orta,Canlı-cansız ayrımı; canlıları sınıflandırma kazanımı en yakın.
+7f78f45f-5639-4de9-a5cc-128f74e6095c,FB.3.5.2,orta,Kapıyı çekerek açma; kuvvetin varlıklar üzerindeki etkisi kapsamında.
+9791680b-047a-4bc4-b463-7ea45ebf8a54,eslesme_yok,yuksek,Ses oluşumu (titreşim); 3. sınıf Fen pool'unda ses kazanımı yok.
+97c6ffe5-c31b-4272-aaf5-a6d306864333,eslesme_yok,yuksek,Ses ve kulak sağlığı; 3. sınıf Fen pool'unda duyu organı kazanımı yok.
+9a056533-b24d-4379-b81e-6373b03c8e04,FB.3.4.1,yuksek,Suyun katı hâli (buz); maddenin hâllerine göre sınıflandırma.
+ee54daec-cf55-4cf1-bf67-dcd4e4180bff,eslesme_yok,yuksek,Koku alma duyu organı; 3. sınıf Fen pool'unda duyu organı kazanımı yok.
+0d0f46d9-f00e-404e-b98c-b0b38f9cd5cd,HB.3.2.1,yuksek,Diş fırçalama; sağlığı koruma davranışı kapsamında kişisel bakım.
+2b6a9179-f523-4041-a465-343004c3c5a8,HB.3.2.1,yuksek,Hastalanmamak için spor ve dengeli beslenme; sağlığı koruma davranışı.
+52df0719-b629-438d-a5d0-1db2bd25daaf,HB.3.5.4,orta,"Su tasarrufu; çevresel sürdürülebilirlik kapsamında, davranış kazanımı dolaylı."
+5b333429-8603-4117-ba15-787e43d15ac7,HB.3.2.3,yuksek,Trafik ışığı ve yaya kuralı; trafik kurallarına uyma.
+6029b110-ed05-4f70-945e-33070537759a,HB.3.2.2,orta,Koridorda koşmanın güvenlik tehlikesi; güvenliği tehdit eden durum kazanımı.
+a286ce52-f571-44f7-8b2f-ceb4e5434816,HB.3.3.1,orta,Komşuluk ilişkisinde saygı ve yardım; aile-toplum ilişkisi kapsamında.
+a6fb898a-fd9f-4ff9-8171-03e003946bd3,eslesme_yok,orta,23 Nisan bayramı; 3. sınıf HB pool'unda millî gün/bayram kazanımı açıkça yok.
+b6b87824-a5e0-4ca5-ad43-6e14bce8bbd1,HB.3.1.2,orta,Grup çalışmasında iş bölümü; okul hak ve sorumlulukları kapsamında.
+b7775be2-5d49-4f7d-a356-9e9c315366ac,HB.3.4.2,yuksek,Cumhuriyet yönetim biçimi ve seçme-seçilme; yönetim şekli kazanımı.
+c7b17aff-b82a-4fd8-a8eb-27c3fcbe65c5,eslesme_yok,orta,Etkili dinleme (göz teması); 3. sınıf HB pool'unda iletişim kazanımı yok.
+5adfd569-acb0-45ef-ae3e-08f812f9d4b4,MAT.3.1.15,yuksek,Kilogram-gram birim ilişkisi.
+7bfb8c90-7954-462c-8485-87473f2c62e9,MAT.3.2.6,yuksek,Dört işlem gerektiren günlük yaşam problemi (para).
+87da1779-4757-454f-89e1-cfece3b62870,eslesme_yok,yuksek,Dik açı ölçüsü; 3. sınıf Matematik pool'unda açı kazanımı yok (açılar 4. sınıfta).
+9dd881e4-84ea-4444-9a66-b0664ab913cf,MAT.3.1.2,yuksek,"Sayının yazılışını çözümleme (üç basamaklı, yazıyla)."
+ac57295d-4362-477f-bb31-47a04935485a,MAT.3.2.4,yuksek,İki basamaklı çarpma işlemi.
+bf50059c-448c-4c56-9147-a8ee3da7a4a2,MAT.3.1.3,yuksek,"Sayıları karşılaştırma/sıralama, en küçük sayı."
+c40f6d33-3270-450a-bc7e-fd73bc1e4c81,MAT.3.1.9,orta,Bütünün parçası olarak kesir gösterimi (3/4); 3/4 birim kesir değil.
+d0e61cd5-ef2e-4fcf-8b27-d27c5b57d136,MAT.3.2.2,yuksek,Üç basamaklı çıkarma işlemi (eldeli).
+d61d0096-d47a-465f-9861-cb0c83622eda,MAT.3.2.4,yuksek,Bölme işlemi (48÷6).
+ecde5776-31db-471b-acd2-97ee9764daca,MAT.3.2.2,yuksek,Üç basamaklı toplama işlemi (eldeli).
+1ce93f7f-3200-403a-b5a8-50c1653d8353,eslesme_yok,yuksek,Atasözü anlamı; 3. sınıf Türkçe pool'unda atasözü kazanımı yok.
+24835f2e-ee44-48be-9e57-29c3e3722b85,eslesme_yok,orta,Terim anlam; 3. sınıf Türkçe pool'unda sözcük anlamı türleri kazanımı açıkça yok.
+28921f01-7cf8-48d6-b70e-8d117f2336fc,eslesme_yok,yuksek,Eş anlamlı sözcük; eş anlam kazanımı pool'da yok.
+310131e2-1b1c-4b33-9acc-baf2bf1faa72,eslesme_yok,yuksek,Deyim anlamı; deyim kazanımı pool'da yok.
+7c0853ca-8ed4-4e5c-85c8-b8be4e049f77,T.Y.3.3,orta,"Virgül kullanımı; yazma kuralları kapsamında, noktalama açıkça yok."
+89406d79-7ec6-4d31-96b5-777f5c70cb2e,eslesme_yok,orta,Karşılaştırma cümlesinde anlam çözümleme; pool'da ilgili açık kazanım yok.
+92296930-8d71-4eb6-a268-b4addaf5cfaa,eslesme_yok,yuksek,Mecaz anlam; pool'da mecaz/gerçek anlam kazanımı yok.
+c67aca33-8c29-4a28-b22a-25b1e7a76f57,T.Y.3.3,yuksek,Büyük harf kullanımı; büyük harfleri kuralına uygun yazma.
+d8b450c0-25bc-43e6-9b12-1c078bb59974,eslesme_yok,orta,Amaç-sonuç ilişkisi (için); pool'da ilgili açık kazanım yok.
+e53298bb-f6c0-4571-bc11-644bc682fba9,eslesme_yok,yuksek,Sıfat (ön ad) tanıma; dil bilgisi kazanımı pool'da yok.
+1940b406-34a3-4b86-9c94-dc1b4ff82ae4,eslesme_yok,orta,Kuş (bird); hayvan sözcüğü ENG.3.5.V1 farm animals kapsamına tam girmiyor.
+2d422f8e-bacb-43f0-855e-14d970a612e6,ENG.3.3.V1,yuksek,Vücut bölümleri (eye=göz); parts of the body kapsamı.
+2e2cdfac-6dda-46b7-8acf-33594182d602,eslesme_yok,orta,"Sayı sıralaması (eleven, twelve, thirteen); 3. sınıf İngilizce V kodlarında sayı kapsamı açıkça yok."
+2ee4c5c5-a780-4514-bbc3-a96025c8673e,eslesme_yok,orta,Sayı sözcüğü (ten); 3. sınıf İngilizce V kodlarında sayı kapsamı açıkça yok.
+5898e6bf-b4e5-475b-b78f-ba8c67fd76d6,ENG.3.2.V1,yuksek,Sınıf nesneleri (pencil=kalem); classroom objects kapsamı.
+9ed21fc8-8278-4507-af1f-9a9557cb012a,ENG.3.6.V1,yuksek,Yiyecek adı (bread=ekmek); food items kapsamı.
+9ed472a7-0231-435a-ab3f-fab2fcc3e448,ENG.3.4.V1,yuksek,Aile üyesi (sister); family members kapsamı.
+c2d8d09f-0bd9-48ce-b5bd-894477ceb632,ENG.3.1.V1,yuksek,Selamlaşma kalıbına uygun cevap; greetings kapsamı.
+e1ec0961-8874-4854-b9b6-c2a0b9000948,eslesme_yok,orta,Renk sözcüğü (green); 3. sınıf İngilizce V kodlarında renk kapsamı açıkça yok.
+ed8b9084-9eec-460d-95e4-6ca3210d4a9b,ENG.3.1.V1,yuksek,Kendini tanıtma kalıbı; introductions kapsamı.
+1534f4cb-44b3-4855-805e-ab879de87f9a,ders_yok,yuksek,4. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+247b2bad-5626-4e72-95ac-fd4f994611b9,ders_yok,yuksek,4. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+294efbd9-bf04-455f-a256-810dd820ec95,ders_yok,yuksek,4. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+3dc5e855-b419-4cdb-94f1-e5e63fc8d0a2,ders_yok,yuksek,4. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+da0c16df-c156-482d-be08-e3ee2c6da7e5,ders_yok,yuksek,4. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+e14bfdd4-cd36-472c-a53f-ba57927230b9,ders_yok,yuksek,4. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+e981c842-e799-4e9e-b232-c13949eaaedc,ders_yok,yuksek,4. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+ed7baa49-f9b6-47bf-a7fc-9eb75f50a687,ders_yok,yuksek,4. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+ee7f5c7c-4155-4196-8623-6eabd6bb06bb,ders_yok,yuksek,4. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+f60ccbba-ccb4-427f-a1cb-383205f45e82,ders_yok,yuksek,4. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+145d6eaa-92b9-4de0-b773-a843ea2c8bbf,F.4.2.1.1,yuksek,Besin içerikleri ve canlı yaşamı ilişkisi; enerji kaynağı olan besin içeriği.
+15962b80-a74d-4c19-b5f7-a7e8625a169c,F.4.3.2.2,yuksek,Mıknatısın etki ettiği maddeleri deneyle keşfetme.
+237f797f-d682-459d-8346-6fcb332a2d76,F.4.5.2.2,yuksek,Aydınlatma araçlarının tasarruflu kullanımı; elektrik tasarrufu.
+3882a49c-5b21-44f2-a6b7-f8c9fbdb9852,F.4.1.1.3,yuksek,Fosillerin oluşumunu açıklama.
+78318580-6e0a-4cb9-a00f-e0cab3a89992,eslesme_yok,yuksek,Sesin ortama göre yayılma hızı; 4. sınıf Fen pool'unda ses yayılması kazanımı yok (ses kirliliği/teknoloji var).
+84fd94aa-43f2-422e-aea8-bc4dc3ab621b,eslesme_yok,yuksek,İskelet ve kas sistemi; 4. sınıf Fen pool'unda insan vücudu iskelet kazanımı yok.
+8ee2ab5e-3e24-4e0c-b180-38ab82213b61,F.4.7.1.1,yuksek,Basit devre elemanlarını tanıma ve devrenin bileşenleri.
+a5b43edf-ebcb-4858-9b0b-4e5786b0c228,eslesme_yok,yuksek,Saydam madde; 4. sınıf Fen pool'unda saydamlık kazanımı yok.
+b84a0200-b4fd-434d-ac60-54f55e2232a7,F.4.4.4.2,yuksek,Suyun ısı etkisiyle hâl değiştirmesi (buharlaşma).
+f7ed6f85-a6e9-4963-8d55-48d450cf5a9c,F.4.4.5.1,yuksek,Saf madde ve karışım ayrımı; tuzlu su karışımdır.
+23dbfe29-065a-471f-83b2-3d919b1302a4,eslesme_yok,orta,Farklı paydalı kesirlerin karşılaştırılması; pool'da yalnız birim kesir (M.4.1.6.2) ve eşit paydalı (M.4.1.6.4) karşılaştırma var.
+3ec6fd70-8d6d-4755-9450-75a2c9ec54a9,M.4.1.1.3,yuksek,Doğal sayıda basamak değeri ve çözümleme (rakamların basamak değeri).
+504bcc46-cb8b-4160-9c86-b0cc7b553356,M.4.3.4.2,yuksek,Zaman ölçme birimleriyle problem (saat-dakika toplama).
+6072b65d-314f-4ef8-b87f-0b9cc4651c3d,M.4.3.2.3,yuksek,Dikdörtgenin çevre uzunluğu problemi.
+71f6eb27-0817-4702-a287-7e3c3997d203,M.4.1.4.1,orta,"Çarpma işlemi (345×6); kazanım üç basamaklı ile iki basamaklı çarpma, tek basamaklı çarpan açıkça yok."
+9419b042-9dbe-4613-b692-d2c821b84b64,eslesme_yok,yuksek,Ondalık gösterim; 4. sınıf Matematik pool'unda ondalık sayı kazanımı yok.
+ba8f1109-162e-4a3b-8621-c1ba940addfb,M.4.1.5.2,yuksek,Dört basamaklı sayının bir basamaklı sayıya bölümü.
+d9a9f91d-ac1b-48dd-9686-150e3deab4b3,M.4.2.3.4,yuksek,"Açıların dar, dik, geniş, doğru olarak belirlenmesi."
+e08846dc-34b3-41ec-9ee5-ed788ab5c58e,M.4.1.1.3,yuksek,Basamak ve bölük kavramı (binler bölüğü).
+f60a5dd6-287f-4be6-bdfd-e6361c630f4d,M.4.1.1.4,yuksek,Doğal sayıları en yakın yüzlüğe yuvarlama.
+34319917-1687-4ba6-b97d-64235970879c,SB.4.3.6,yuksek,"Deprem sırasında alınacak önlem; afet öncesi, sırası ve sonrası hazırlık."
+4a444c4d-e281-40c8-98dc-a975fe86c389,SB.4.2.2,orta,"Tarihî kale; millî kültür ögeleri kapsamında, tarihî eser kavramı açıkça yok."
+692e9b81-b152-4666-9fa2-b2c406f52b66,SB.4.3.1,orta,"Pusula ile yön bulma; konum çıkarımı kapsamında, pusula açıkça yok."
+79c02c68-80cb-4613-b115-d5f68c907bef,SB.4.2.2,yuksek,Folklor oyunları; millî kültürü yansıtan ögeler.
+825d5090-3ac2-47f7-8056-486f9068dea9,SB.4.3.2,yuksek,Kroki tanımı; günlük kullanılan mekânların krokisini çizme.
+95f5aa34-548c-4503-8ccf-b9bc79f24472,SB.4.3.6,orta,"Sel önlemi; afete yönelik hazırlık kapsamında, ağaç dikme doğal önlem."
+c00ce5c0-7fec-4282-b0e1-e3bfab4c4a82,SB.4.5.1,yuksek,Temel ihtiyaç (beslenme) ile istek ayrımı.
+e7527a4c-50bb-4ae2-9f85-7ad2ba41d70e,SB.4.1.5,yuksek,Farklılıklara saygı gösterme.
+f4597735-ee60-4c64-af09-e90426c7a7de,SB.4.1.1,yuksek,Resmî kimlik bilgileri (ad soyad); kişisel kimlik.
+ff56ec5d-dde6-42ce-8607-fbda511ee6f7,SB.4.6.2,orta,Okul kurallarının amacı; okul yaşamında sorumluluk kapsamında.
+031f90a5-b031-419b-a2ba-d0afdd96f444,eslesme_yok,yuksek,Söz sanatı (kişileştirme); 4. sınıf Türkçe pool'unda söz sanatı kazanımı yok.
+13bc2b82-8af2-4e54-944d-a4e3b4ee7514,eslesme_yok,yuksek,Fiil (eylem) sözcük türü; 4. sınıf Türkçe pool'unda dil bilgisi kazanımı yok.
+154c6415-b372-44a4-b267-52f0075abe30,T.4.3.17,yuksek,Metnin ana fikrini belirleme.
+29ebe812-3678-4c7e-86e1-71a98340f0fc,eslesme_yok,orta,"Soru eki ""mi"" yazımı; pool'da ek yazım kazanımı açıkça yok."
+63163ebc-c11f-488e-b4a3-72818d009550,T.4.4.10,orta,Kesme işareti kullanımı; noktalama kazanımı kapsamında.
+65cd0086-3565-4d7f-89a1-2028de5ff4e6,T.4.3.8,yuksek,Eş anlamlı sözcük bulma (talebe).
+83582a00-cbef-4b78-8644-ea8c25f1b08e,T.4.3.17,orta,Cümlenin duygusunu (sevinç) belirleme; ana duygu kazanımı kapsamında.
+bd6b9c65-e4e3-4246-aeab-565996043a17,T.4.3.10,yuksek,"Gerçek, mecaz ve terim anlamlı sözcükleri belirleme."
+d8e93807-e1bc-4ead-88ff-72f2bb7cfd61,T.4.3.11,yuksek,Atasözünün metne/anlama katkısını kavrama; atasözü anlamı.
+ef2d27ae-6348-4f78-b4f0-56085afaec17,T.4.3.11,yuksek,Deyim anlamını kavrama.
+31a467c4-842d-4c08-afbf-005aeaf38de8,eslesme_yok,orta,Sınıf nesnesi sözcüğü (chair); E4 kodlarında nesne sözvarlığı açıkça yok (E4.1.L3 sınıf talimatı).
+3f71f5a1-16f8-4aef-bcad-0fbb6882f95e,eslesme_yok,orta,Vücut bölümü sözcüğü (hand); E4 kodlarında vücut sözvarlığı açıkça yok.
+4065eae1-511a-47ac-9011-c6c4fa651280,eslesme_yok,orta,Selamlaşma (Good evening); 4. sınıf İngilizce kodlarında selamlaşma açıkça yok.
+69ce7d6c-4a47-4b47-8bcb-9bf09f4c9b4c,eslesme_yok,orta,Renk sözcüğü (black); 4. sınıf İngilizce kodlarında renk açıkça yok.
+722561cf-730a-4754-99a1-2637ffb75341,E4.10.L1,yuksek,Yiyecek ve içecek sözcükleri (water=su).
+79b4d181-edc8-4f3c-8db2-f665732ca681,eslesme_yok,orta,Hayvan adı (fish=balık); 4. sınıf İngilizce kodlarında hayvan sözvarlığı açıkça yok.
+7af21b7e-4cb9-4af3-9b21-7725b91b8114,eslesme_yok,orta,Sayı sözcüğü (twenty); 4. sınıf İngilizce kodlarında sayı sözvarlığı açıkça yok (E4.1.S4 sayma).
+9b83171a-023c-4a2e-bde0-18e436fe8fd2,eslesme_yok,orta,Aile üyesi sözcüğü (grandfather); 4. sınıf İngilizce kodlarında aile açıkça yok.
+dc4dc59c-1ab1-4010-b5cc-28384cedf4df,eslesme_yok,orta,Yaş sorma kalıbı; 4. sınıf İngilizce kodlarında yaş açıkça yok.
+f0f156c5-835c-40b1-9ef6-c70c1c8f8d6b,E4.5.S2,yuksek,Saat sorma (What time is it); talk about the time kazanımı.
+0d30b5a1-668c-48bf-97d2-a10b8601147c,DKAB.5.2.1,yuksek,Günde beş vakit namaz; namaz ibadetini özetleme.
+1db95546-2265-46fb-942e-7d2ecbbe4903,eslesme_yok,yuksek,Büyüklere saygı davranışı; 5. sınıf Din pool'unda ahlak/saygı kazanımı yok.
+24f7b766-3ed1-43af-8717-a976ab1d1769,eslesme_yok,yuksek,Ramazan Bayramı; 5. sınıf Din pool'unda bayram kazanımı yok.
+2c8e5dc0-a873-4ba5-8dfe-873a5624fc2d,eslesme_yok,orta,Selamlaşma sözü (selamün aleyküm); pool'da selamlaşma kazanımı yok.
+31f31f0e-9033-438c-a064-c0e07a5c0fe9,DKAB.5.4.1,orta,"El-Emin lakabı; peygamberlikle ilgili naklî delil kapsamında, lakap açıkça yok."
+33e4846f-d8c1-489e-8e41-35af2f0e96b1,DKAB.5.5.2,orta,Camiyi ibadet yeri olarak tanıma; cami bölümleri kazanımı kapsamında.
+43b32f00-1890-455a-87ba-7fbba8822934,DKAB.5.2.2,dusuk,"Abdest namaz hazırlığı; namazın kılınışı kazanımı dolaylı, abdest açıkça yok."
+54b67958-d568-49aa-b70d-40e52d7c5a11,eslesme_yok,yuksek,Yardımlaşma hadisi; 5. sınıf Din pool'unda yardımlaşma kazanımı yok.
+5c74b638-a0f9-487a-8a9a-c2d069a1fb00,eslesme_yok,yuksek,Oruç ayı Ramazan; 5. sınıf Din pool'unda oruç kazanımı yok.
+5d405357-81a3-4bd7-920f-1b8f0be8948a,DKAB.5.3.2,yuksek,Kur'an-ı Kerim'in temel özellikleri (kutsal kitap).
+7a94a9f5-2165-45ed-b752-b29b99659e2c,eslesme_yok,yuksek,Cömertlik kavramı; 5. sınıf Din pool'unda ahlak kavramı kazanımı yok.
+84d5c0cd-cbf4-4331-8c22-3814d731837e,DKAB.5.1.2,yuksek,Evrenin düzeninden Allah'ın varlığı ve birliği.
+8994df61-31e0-41e0-ad3f-ad5f6af97f62,DKAB.5.4.1,yuksek,Hz. Muhammed'in peygamberliği; peygamberlikle ilgili naklî delil.
+9fd8ba3f-599d-441c-a083-8b81a8158149,eslesme_yok,orta,Dua kavramı; 5. sınıf Din pool'unda dua tanımı yok (tahiyyat duası belirli dua).
+b66777b5-c1a7-4679-b624-63281eca8edd,eslesme_yok,orta,Besmele anlamı; pool'da besmele kazanımı yok.
+bddabf82-2c3d-43e9-ba4c-04166efe8d1a,eslesme_yok,yuksek,Güzel ahlak davranışı; 5. sınıf Din pool'unda ahlak kazanımı yok.
+c72c5cde-fba0-46f9-98a8-63cb3bdd4fff,eslesme_yok,orta,Şükür ifadesi (Elhamdülillah); pool'da dini ifade kazanımı yok.
+ca89e131-6d1b-46c4-99d2-a58d9ecde6e1,eslesme_yok,yuksek,Dürüstlük kavramı; 5. sınıf Din pool'unda ahlak kazanımı yok.
+ce8e8167-8144-43b1-8cc6-d2a54c9c5632,eslesme_yok,yuksek,Hz. Muhammed'in doğum yeri; 5. sınıf Din pool'unda peygamber hayatı kazanımı yok.
+e048a0e6-f815-4e30-b9f8-5b7e258df310,eslesme_yok,yuksek,İsraf kavramı; 5. sınıf Din pool'unda israf kazanımı yok.
+0c3d2e4b-c0f4-4be8-950c-6580c051bec6,FB.5.2.3,orta,"Kütle ölçme aracı (eşit kollu terazi); kütle kavramı kapsamında, araç adı açıkça yok."
+0da63255-c9d7-491c-8077-02cec0133811,FB.5.2.1,orta,Kuvvetin cisimleri hareket ettirmesi; kuvvet tanımı kapsamında.
+3da235fd-166d-456c-be97-3471add74994,FB.5.1.2,yuksek,Ay'ın Dünya çevresindeki dolanım süresi.
+423833f3-0e18-45d5-a783-82edab2acd58,FB.5.5.2,yuksek,Sıcaklık ölçen araç (termometre); ısı ve sıcaklık kavramları.
+4a6cc598-5064-4059-8c84-5960fa700997,FB.5.1.1,yuksek,Güneş'in ışık ve ısı vermesi; Güneş'in yapısı ve özellikleri kapsamı.
+4b982b94-28d0-4946-8242-515a112bad19,eslesme_yok,orta,Elektrik iletkenliği (bakır tel); 5. sınıf Fen pool'unda elektrik iletkenliği kazanımı açıkça yok.
+4e0a85fc-3f3e-4481-8e21-22669f7c015b,FB.5.5.4,yuksek,Erime: katı halden sıvı hale geçiş.
+68bc0e48-6754-4069-8933-0d98ac3a69fb,FB.5.2.1,orta,"Çekme kuvveti örneği; kuvvet kavramı kapsamında, itme-çekme ayrımı açıkça yok."
+6f00b74d-248c-4f1d-8ed7-69cc79009f36,FB.5.1.4,orta,Dünya'nın küre şekli; Güneş-Dünya-Ay hacimsel ilişkileri kapsamında.
+72474646-c9c7-43e1-8bcc-8ecfbb10572e,eslesme_yok,orta,Aynanın ışığı yansıtması; 5. sınıf Fen pool'unda yansıma kazanımı yok (5.4 ışığın doğrusal yolu).
+7d1e7c1b-3873-4954-abe2-100a11ba89a9,eslesme_yok,yuksek,Dilin tat alma duyusu; 5. sınıf Fen pool'unda duyu organı kazanımı yok.
+80285984-fe8b-41e4-bf31-c331b8b8718f,FB.5.5.4,yuksek,Donma: sıvıdan katıya hal değişimi.
+858d6869-c212-4dcf-9b68-8faccf06f53d,FB.5.5.4,yuksek,Buharlaşma hal değişimi.
+88a13ab0-bb0a-4b26-9240-ddbb84456f0f,eslesme_yok,yuksek,Kalsiyum mineraline besin içeriği; 5. sınıf Fen pool'unda besin içerikleri kazanımı yok.
+9da6a26f-bf38-4197-806d-96bc7884dd42,eslesme_yok,yuksek,C vitamini ve besin içeriği; 5. sınıf Fen pool'unda vitamin kazanımı yok.
+babcdf17-1da8-4a0e-995b-30fb7e22f760,FB.5.6.1,orta,Ampulün çalışması için pil (enerji kaynağı) gerekliliği; devre elemanları kapsamı.
+bee47420-59eb-4055-abfe-7f3d5182b486,FB.5.4.1,orta,"Güneş doğal ışık kaynağı; 5.4.1 ışık kaynağından çıkan ışık, kaynak türleri açıkça yok."
+c5be1db4-0a72-44ae-94a9-4e211f359c39,eslesme_yok,yuksek,Haberleşme araçlarının tarihsel sıralaması; 5. sınıf Fen pool'unda teknoloji tarihi kazanımı yok.
+d047163f-bc5e-4851-bc24-bd3521e266f9,FB.5.1.4,yuksek,"Gece-gündüzün oluşması; Dünya'nın kendi ekseni etrafındaki dönüşü, Güneş-Dünya-Ay hareketleri."
+fa985549-dc71-41f3-ab89-c98fdc8c0039,FB.5.7.1,yuksek,Geri dönüştürülebilir atık (cam şişe) sınıflandırma.
+00b9e1bc-73a0-4ac9-a039-f924cd3346a1,MAT.5.1.2,yuksek,Dört işlem içeren gerçek yaşam problemi (eşit paylaşım).
+11ac2091-aeec-418e-88df-1eee68e68708,MAT.5.1.2,orta,"Bölme işlemi ile en büyük bölünen bulma problemi; kalanlı bölme açıkça yok, problem çözme kazanımı."
+16138e56-025b-418b-a371-7f025802cf72,MAT.5.1.1,yuksek,Altı basamaklı sayının çözümlemesi.
+19574617-e73c-4841-982a-b45ed3204737,MAT.5.1.2,yuksek,Çıkarma içeren günlük yaşam problemi.
+1b8503c9-ccb3-4f84-a40b-3884d4194825,MAT.5.2.1,yuksek,Bilinmeyenli eşitlik çözme; eşitliğin korunumu.
+214bc118-a275-438b-95a7-92f7c5bd7bfc,MAT.5.2.3,yuksek,Sayı örüntüsünde kuralı bulma ve eksik terimi bulma.
+229ac134-fc30-4da2-a4fe-1e85c89e187a,MAT.5.1.2,yuksek,Çarpma içeren günlük yaşam problemi (kutu-kalem).
+2683adcc-2444-412c-82b7-55b1cc228e81,eslesme_yok,yuksek,Tek-çift sayı ayrımı; 5. sınıf Matematik pool'unda tek-çift kazanımı yok.
+2c6ae505-10bd-4a22-ba86-014d0654d5cf,MAT.5.2.3,yuksek,Sayı örüntüsünde sıradaki sayıyı bulma.
+2fc71062-5f29-4ce1-abac-cd21c9612cbb,MAT.5.1.2,orta,"Adım-mesafe problemi; gerçek yaşam problemi kapsamında, işlem sırası çözümü."
+344597d5-596d-423c-90a9-b09fbba26622,eslesme_yok,orta,En yakın yüzlüğe yuvarlama; 5. sınıf Matematik pool'unda yuvarlama kazanımı açıkça yok.
+3b02d84d-afc0-4930-8bfd-9219816813eb,MAT.5.1.1,orta,Basamak değeri; çok basamaklı sayıların bölük ve basamak yapısı kapsamında.
+3cdc6de5-068e-476e-902f-ec1ddc6a2c49,MAT.5.2.4,orta,Bölme algoritması (936÷9); temel aritmetik algoritma kapsamında.
+3e3249c4-a5d8-4244-96ab-486d98fb2cc4,MAT.5.2.4,orta,Çıkarma algoritması (50 000 − 27 846); temel aritmetik kapsamında.
+42acc2ab-6a3e-4ea6-b27f-9108d44a749b,MAT.5.2.4,orta,"Bölme işleminde bölümün basamak sayısı; algoritma kapsamında, ölçüt açıkça yok."
+45385713-ab41-4fa7-8b17-73ac0476bf03,MAT.5.1.2,yuksek,Kalanlı bölme içeren günlük yaşam problemi (sıra sayısı).
+4812620e-2f59-47da-b736-b4ed0ccd85d0,MAT.5.2.4,orta,Çarpma algoritmasının yerleşimi ve eksik rakam; algoritma yorumlama kapsamında.
+4d590eed-1a2c-456b-9b75-8ee15d3536c1,MAT.5.1.2,yuksek,Dört işlem içeren fazlalık-eksiklik problemi.
+517732ed-d16c-4c4e-bbaf-6c8787133baf,MAT.5.1.1,orta,Basamak değerleri farkı; çok basamaklı sayı yapısı kapsamında.
+52618d26-7876-4f9b-aad4-2536e6836aae,MAT.5.1.2,yuksek,Toplama içeren günlük yaşam problemi.
+54b9dee4-a1c5-49ac-bb85-8934b415c0c6,MAT.5.1.1,orta,Bölük sayısı; sayıların bölükleri kazanımı.
+5778787b-f460-4119-9799-edb3b967cfff,MAT.5.1.2,yuksek,Birim fiyat içeren oran-işlem problemi.
+6b6a597b-fc3b-4a66-a00f-fa029781bd86,MAT.5.2.2,yuksek,İşlem önceliği (çarpma-bölme önce) ve sonuç.
+727d6651-6dea-401e-8bb9-c12c4fa7fedd,MAT.5.1.1,yuksek,Sayının okunuşundan yazılışını bulma (bölük-okunuş ilişkisi).
+73e93f80-2c13-4459-aaf1-613a6721a5a8,eslesme_yok,orta,Bölünebilme (paket sayısı); 5. sınıf Matematik pool'unda bölünebilme kazanımı açıkça yok.
+77345bf7-519d-4c8c-8852-e389906529b1,MAT.5.1.2,yuksek,Bölme içeren eşit paylaşım problemi.
+777485fe-7a9a-4246-944e-02b77f3b275b,MAT.5.1.2,orta,Toplam ve oran ilişkili problem (koyun-tavuk); gerçek yaşam problemi kapsamında.
+79fc7ec1-6cc8-4ef7-888a-35304dcbb0fa,eslesme_yok,orta,En yakın yüzlüğe yuvarlanan sayılar; yuvarlama kazanımı pool'da açıkça yok.
+7a5e2a0b-b49c-4865-bea6-fb57235ab698,MAT.5.1.1,orta,Rakamlarla en küçük beş basamaklı tek sayı oluşturma; basamak yapısı kapsamı.
+7c5851ef-ac3b-4049-adec-605383be0f74,MAT.5.1.1,orta,"Çok basamaklı sayıların sıralanması; bölük yapısı kapsamı, sıralama açıkça yok."
+8bc9e863-5f17-4788-aaa5-bba04777b5e9,MAT.5.2.4,orta,Eksik rakamlı çıkarma işlem algoritması; algoritma yorumlama kapsamında.
+93165a9a-725b-465b-9446-7f6327bf1bc4,MAT.5.2.4,orta,Çarpma kısa yolu (50 ile çarpma) zihinden işlem; algoritma kapsamında.
+94ec072e-e22a-4d66-82c9-ec6a6b236433,eslesme_yok,orta,Yuvarlayarak tahmin; 5. sınıf Matematik pool'unda tahmin kazanımı açıkça yok.
+97026a44-dc45-4aee-b232-7a8013ee7072,MAT.5.2.2,yuksek,Parantez ve işlem önceliği (72 − (18÷3+5)).
+9bd54bd4-5e75-45f9-8c07-94d3edf46fe4,MAT.5.1.2,orta,Yaş problemi (sözel denklem) gerçek yaşam problemi kapsamında.
+9c6e0666-d2d3-4328-8a2a-6152130bfc46,MAT.5.2.1,orta,Çıkarma terimleri arasındaki ilişki; eşitliğin korunumu ve işlem özellikleri.
+9ce9c182-4fa3-4504-ab86-6a2f64f7f90d,eslesme_yok,yuksek,Roma rakamları; 5. sınıf Matematik pool'unda Roma rakamı kazanımı yok.
+9d700db1-8320-4eb9-8b8b-1134ef6f47b9,MAT.5.2.4,orta,Eksik rakamlı toplama algoritması.
+ad26f989-3032-47db-8242-34d68ef7d727,eslesme_yok,orta,Yuvarlayarak tahmini işlem ve fark; tahmin/yuvarlama kazanımı pool'da açıkça yok.
+ae86e6a1-d442-49b5-bc8c-e567fc11cd29,MAT.5.2.2,yuksek,İşlem önceliği (18 + 6×4).
+b43bfeda-cd36-4200-8339-12a4490be81f,MAT.5.1.2,orta,Sıra ve konum problemi; gerçek yaşam problemi kapsamında.
+b505ebbe-518c-4bdc-b108-a4fed7f35435,MAT.5.1.2,yuksek,İki işlemli günlük yaşam problemi.
+b6c0eee1-a28a-43bf-a523-d683e40ab802,MAT.5.1.1,orta,Sayının açık çözümlemesi; çok basamaklı sayı yapısı kapsamında.
+beae3b7d-3e9c-4c71-8d98-c094639bf27e,MAT.5.1.1,orta,Bölük ve basamak değerleri; çok basamaklı sayılar kapsamında.
+c2700e93-ae3b-40da-bb63-3cfaae685941,eslesme_yok,orta,En yakın binliğe yuvarlama; yuvarlama kazanımı pool'da açıkça yok.
+c39e0bf8-c2d1-42f2-b209-694492fd4435,MAT.5.1.1,orta,Basamak değeri ile sayı değeri ayrımı; çok basamaklı sayı yapısı.
+d7afe107-c2ea-45c6-855d-e9ee9376a85e,MAT.5.2.4,orta,Doğal sayılarla toplama algoritması.
+f059550e-07bf-4782-8860-afd46de5b3bb,MAT.5.2.2,yuksek,Parantezli işlem önceliği ((36+24)÷6).
+f94463b6-87b8-47eb-9c5b-f92be614bebf,MAT.5.1.1,orta,Rakamlarla en büyük çift dört basamaklı sayı oluşturma; basamak yapısı kapsamında.
+ff0d5fa7-df83-47b0-b003-e1e53faed07d,MAT.5.2.4,orta,Doğal sayılarla çarpma algoritması (306×7).
+03e73d7f-1313-45f0-931d-a18ae8826665,SB.5.4.3,orta,"Temel insan hakları (eğitim hakkı) ve sorumluluk kapsamında, çocuk hakları açıkça yok."
+0f3244a9-380c-4f30-b4bd-8f4a21e42782,SB.5.4.1,orta,"Cumhuriyet Bayramı (29 Ekim); demokrasi ve cumhuriyet kavramı kapsamında, bayram kazanımı açıkça yok."
+1a510aee-b04d-4fc2-b321-26f277324210,eslesme_yok,yuksek,Milli Mücadele'nin başlangıcı (Samsun); 5. sınıf SB pool'unda Milli Mücadele kazanımı yok.
+2e29a02c-6f38-413a-b2c8-1b474086e981,SB.5.2.1,orta,"Ana ve ara yönler; konum kavramı kapsamında, yön kazanımı açıkça yok."
+41dd00a0-b757-4843-b751-e9a7c9c61cb6,eslesme_yok,orta,Bilim insanı ve icat (ampul); pool'da icat/bilim insanı kazanımı yok (5.6.1 teknoloji etkisi dolaylı).
+5fafe476-993b-4401-96dc-4da84a9d90ac,eslesme_yok,yuksek,23 Nisan'ın tarihsel önemi (TBMM); 5. sınıf SB pool'unda ilgili kazanım yok.
+767f5bd2-da3b-4633-8dc5-7c9c70816cd3,eslesme_yok,orta,19 Mayıs bayramının armağan kesimi; pool'da bayram kazanımı yok.
+7862b0a0-0d29-42cc-93c6-3d49e5307c64,SB.5.2.2,orta,"Beşerî unsur (yol) kapsamında, doğal ve beşerî çevre ayrımı."
+7897b921-0776-47f8-bcf9-6a91f442f1b0,SB.5.5.2,yuksek,Gelir-gider planı (bütçe) ve tasarruf.
+a4107550-b50f-4113-99a5-9b1f3b18b2f9,SB.5.5.2,orta,Temel ihtiyaç (beslenme) ile istek ayrımı; ihtiyaç ve isteklerin karşılanması kapsamında.
+ad5e5c88-05b2-4b46-b789-da4f5b2de051,SB.5.2.1,orta,Güneş'in doğduğu yön; yön ve konum kavramı kapsamında.
+b8e33849-3959-48c4-a853-45404ed4bc44,SB.5.4.4,yuksek,Kimlik ve doğum kaydı için başvurulacak kurum (Nüfus Müdürlüğü).
+c94adb61-cd52-4af3-ad90-17bbe75d6564,SB.5.2.3,orta,Deprem sırasında alınacak önlem; ilde afet etkilerini azaltma kapsamında.
+cd3c667f-dade-49ba-b0d3-ff392a9292ac,SB.5.3.1,orta,Geleneksel el sanatları kültürel miras ögesi; ortak miras ürünü kapsamında.
+d1f84586-6dbd-4ac5-b072-e0ba354a5565,SB.5.2.1,orta,"Pusula ile yön bulma; yön ve konum kavramı kapsamında, pusula açıkça yok."
+da7a0942-39d8-4fa7-b57f-891a1684c2e5,SB.5.4.3,orta,Görev ve sorumluluk kavramı; hak ve sorumluluklar kapsamında.
+e0078818-bf77-44fd-85c3-9b4e346d259f,eslesme_yok,orta,Atatürk'ün doğum yeri; 5. sınıf SB pool'unda Atatürk hayatı kazanımı yok.
+e41faed3-6b1e-4657-bc69-e17d3504a998,SB.5.2.2,orta,Doğal varlık (dağ) ile beşerî ögelerin ayrımı; doğal ve beşerî çevre kapsamında.
+fa49ce58-7b23-4480-9041-9bc5d58bda18,eslesme_yok,yuksek,Kroki tanımı; 5. sınıf SB pool'unda kroki kazanımı yok (kroki 4. sınıf SB.4.3.2'de).
+fcaad027-e1b8-4f31-a6e2-900310d7edcf,SB.5.2.1,orta,"Türkiye'nin kıtalara göre konumu; konum kavramı kapsamında, ülke düzeyi açıkça yok."
+17dc3d6f-584c-4484-87a7-e1beeab18f8a,T.O.5.18,orta,Neden-sonuç ilişkisi düşünceyi geliştirme yollarına girer; cümle düzeyinde açıkça yazılı kazanım yok.
+25976a0b-6b5f-44ae-9364-47216e327fb2,T.Y.5.16,yuksek,De/da yazımı; yazım ve noktalama kuralları.
+4900096e-29cb-41df-a9a7-5cf46f9a821e,eslesme_yok,yuksek,Zıt anlamlı sözcük; 5. sınıf Türkçe pool'unda sözcük anlamı (zıt) kazanımı açıkça yok.
+56bf1247-7ccf-42aa-9765-5eb989539e9c,eslesme_yok,yuksek,Eş anlamlı sözcük; 5. sınıf Türkçe pool'unda eş anlam kazanımı açıkça yok.
+6a1ead3a-b70d-40d8-9cbb-4e3aa2c7903f,eslesme_yok,orta,Mecaz anlam; okuma anlam kazanımlarında açık yok (açık-örtük ifade kodları üretim tarafında).
+6d30aee9-96fd-42e3-bd7b-3770c9137f96,T.Y.5.16,orta,Virgül kullanımı; yazım ve noktalama kuralları kapsamında.
+71b26127-118e-4940-82f9-744a21f12a7b,T.Y.5.16,yuksek,Büyük harf kullanımı; yazım kuralları kapsamında.
+80d2b943-48c2-4390-ad88-de972ccfdded,eslesme_yok,yuksek,Sözcük türü (sıfat); 5. sınıf Türkçe pool'unda dil bilgisi kazanımı yok.
+83af6a8f-184d-4da3-8ad2-2363b917244e,eslesme_yok,yuksek,Hece sayma; 5. sınıf Türkçe pool'unda hece kazanımı yok.
+8947b7e8-dd83-4b02-8832-bf160c464d7d,eslesme_yok,yuksek,Sözcük kökü; 5. sınıf Türkçe pool'unda sözcük yapısı kazanımı yok.
+8a527b65-4f77-4149-8e8d-8e02c56443ca,eslesme_yok,yuksek,Eş sesli sözcük anlamı; 5. sınıf Türkçe pool'unda eş sesli kazanımı yok.
+99bfd8ae-14fb-4203-9a8c-6caad204fd05,T.Y.5.16,yuksek,Soru işareti kullanımı; yazım ve noktalama kuralları.
+b0c33c92-5e93-4a2c-9ed3-3a81f253e35c,T.O.5.6,yuksek,Metinde doğrudan verilen bilgiyi bulma; metnin yüzey anlamı.
+ba5143a4-20e9-444d-9084-cadb3c0377c1,T.O.5.5,orta,Deyimin anlamını bağlamdan tahmin etme; deyim kazanımı açıkça pool'da yok.
+d3e778b9-6943-4aa1-808a-3b2b271c0319,eslesme_yok,yuksek,Eş anlamlı sözcük; 5. sınıf Türkçe pool'unda eş anlam kazanımı açıkça yok.
+d7b24330-6661-4e2e-8b89-1cd3836fde45,eslesme_yok,orta,Anlam ilişkisi (karşılaştırma) cümle düzeyinde; pool'da ilgili açık kazanım yok.
+d8685121-70b8-4770-9e3c-22e1edd5a87a,eslesme_yok,yuksek,Alfabetik sıralama; 5. sınıf Türkçe pool'unda sözlük kazanımı yok.
+dcc867d2-ff3f-42e1-9579-60073dc62021,eslesme_yok,yuksek,Fiil sözcük türü; dil bilgisi kazanımı pool'da yok.
+e7d75cc8-f235-460b-bde3-a45274bd3b99,T.O.5.9,orta,"Atasözünün derin anlamı; üst düzey çıkarım kapsamında, atasözü kazanımı açıkça yok."
+ef557c0b-e4b1-4b74-b2fe-ab52552e5ea8,T.Y.5.16,yuksek,"Soru eki ""mi"" yazımı; yazım kuralları."
+0b233d44-8fef-4262-8a80-277b8bba5bb7,eslesme_yok,orta,Hava durumu (umbrella); 5. sınıf İngilizce V kodlarında hava durumu kapsamı yok.
+0fe9dd70-c987-466c-b988-7eec46119ae8,eslesme_yok,orta,Renk kavramı; 5. sınıf İngilizce V kodlarında renk kapsamı yok.
+1e76aeeb-85c1-4905-91e6-9ff03f20d83c,ENG.5.2.V1,yuksek,Haftanın günleri (days of the week); kapsam dahilinde.
+27a6830d-2d46-4322-bd36-47c72bb6d3fd,ENG.5.3.V1,yuksek,Giysi sözcüğü (coat); clothes kapsamı.
+41f9dc10-26c3-418e-8de1-a07be10f92ed,eslesme_yok,orta,"Yetenek (can + ride); yetenek kazanımı V kodlarında yok, dilbilgisi G kodu içeriği açık değil."
+4b15550e-9e47-4959-8000-dfa266bea299,eslesme_yok,orta,"Çoğul ek (books); dilbilgisi kazanımı açıkça yazılı değil, G kodu içeriği bilinmiyor."
+509ccd98-61e8-4ec5-a389-42e8116b8b1c,eslesme_yok,orta,Hayvan adı (cat); 5. sınıf İngilizce V kodlarında hayvan kapsamı yok.
+616dfdea-ec7a-4280-ad64-31d2900534fa,eslesme_yok,orta,Hayvan adı (elephant); 5. sınıf İngilizce V kodlarında hayvan kapsamı yok.
+6af55556-c47f-41c1-a386-5da00a07149a,eslesme_yok,orta,Duygu sıfatları (happy); 5. sınıf İngilizce V kodlarında duygu kapsamı yok.
+81184238-4f1a-4b69-8f67-b2c4f5b352c6,eslesme_yok,orta,Hâl hatır sorma yanıtı (I'm fine); selamlaşma kazanımı 5. sınıf V kodlarında açık değil.
+9df89376-fff7-4c94-bf9c-1b6c42ec612f,ENG.5.4.V1,yuksek,Aile bireyleri (parents); family members kapsamı.
+a151f69c-bc83-4aa7-a30d-ff2c9c6e49bc,eslesme_yok,orta,Meslek adı (doctor); 5. sınıf İngilizce V kodlarında meslek kapsamı yok.
+a27c630e-ea2c-4b7c-9f8a-a032769d8f25,eslesme_yok,orta,Sayı sözcüğü (seven); 5. sınıf İngilizce V kodlarında sayı kapsamı yok.
+a4fbebd8-63b9-4cf1-8055-336d187dbf1a,eslesme_yok,orta,Vedalaşma kalıbı (goodbye); 5. sınıf İngilizce V kodlarında selamlaşma/veda kapsamı açık değil.
+acaad916-bdf7-485d-ade9-81f3d0d5be56,eslesme_yok,orta,Yaş söyleme (ten years old); 5. sınıf İngilizce V kodlarında yaş kapsamı yok.
+b7f6cb44-4485-4812-80db-53848e2beead,ENG.5.2.V1,yuksek,Sınıf içi yönerge (close the door); classroom rules and language kapsamı.
+d58ea921-2277-44a7-be99-95c76835424a,ENG.5.1.V1,orta,"Milliyet (Turkish); countries ve national days kapsamıyla ilişkili, milliyet açıkça yok."
+da3bd148-689a-42a7-a9da-ace96cbf66aa,ENG.5.6.V1,yuksek,Meyve sözcükleri; basic food types kapsamı.
+e1926325-f8cf-442c-bb40-b0f9e899799a,eslesme_yok,orta,Renk kavramı (blue); 5. sınıf İngilizce V kodlarında renk kapsamı yok.
+fe73af6d-8d59-4d68-82f5-0e423321a5fa,ENG.5.6.V1,orta,"Yiyecek hoşlanma ifadesi (chocolate); food types kapsamı, hoşlanma kalıbı açık değil."
+1b1e5363-67c7-4b98-902e-53757c497b03,DKAB.6.3.1,yuksek,Doğru sözlü olma ve sözünde durma; doğruluğu hayata yansıtma.
+20066d33-1555-4bef-9bcd-2b9f3907ae3f,eslesme_yok,yuksek,Adalet kavramı; 6. sınıf Din pool'unda adalet kazanımı yok.
+27c3cfbc-1a55-4ab3-af18-503740cbbf6a,DKAB.6.3.2,orta,Yardımseverlik ve paylaşma; merhamet kavramı kapsamına en yakın.
+4f8df30e-7e6c-4b71-8bb3-50e3b1ade33e,eslesme_yok,yuksek,İsraf kavramı; 6. sınıf Din pool'unda israf kazanımı yok.
+6b122430-3a19-42e1-a66d-fb7f938a8b37,eslesme_yok,yuksek,Doğanın emanet olması; 6. sınıf Din pool'unda çevre-emanet kazanımı yok.
+716de301-38a9-44c3-b2c5-49e63a495e0c,eslesme_yok,yuksek,Sabır kavramı; 6. sınıf Din pool'unda sabır kazanımı yok.
+9eb12ca5-dbef-4234-b3ad-893267cee2fc,DKAB.6.3.3,orta,Farklı düşünenlere saygı ve hoşgörü; adap ve nezaket kuralları kapsamında.
+aaed7cd3-b9da-4526-badc-3cd4d6cbeae7,DKAB.6.3.3,orta,Selamlaşmanın değeri; adap ve nezaket kuralları kapsamında.
+bf807c19-8b39-477a-b4f0-41c2409c2c72,eslesme_yok,orta,Abdest (ibadet öncesi temizlik); 6. sınıf Din pool'unda abdest kazanımı yok.
+e8e8968c-fc21-448a-b788-6d81a0045e61,eslesme_yok,yuksek,İslam'ın beş şartı; 6. sınıf Din pool'unda şartlar kazanımı yok.
+07068972-8e24-4c4e-95a9-a057c8ae30a8,eslesme_yok,yuksek,Solunum sistemi; 6. sınıf Fen pool'unda solunum kazanımı yok.
+09cdbf58-41bd-4c28-b373-040b88944748,FB.6.5.1,yuksek,Isı etkisiyle metallerin genleşmesi (hacim artışı).
+1a8bd0fd-13f2-4c80-a7bf-ea605d15fdf0,eslesme_yok,yuksek,Sesin yüksekliği; 6. sınıf Fen pool'unda ses kazanımı yok.
+1b7cc09f-024e-402f-b6e4-aba540e0082c,FB.6.1.1,yuksek,Güneş sistemindeki gezegenlerin sıralaması (Merkür).
+5fb3782b-3dc0-4d2f-9f99-863502542ff6,eslesme_yok,yuksek,Bitki hücresi organelleri; 6. sınıf Fen pool'unda hücre kazanımı yok.
+8a2fc782-f547-4f50-81f4-5d0f0804bfc4,eslesme_yok,yuksek,Sindirim sistemi; 6. sınıf Fen pool'unda sindirim kazanımı yok.
+9c5232c2-f19a-4027-a3ca-a3bc0bac48ae,FB.6.2.1,yuksek,Zıt yönlü kuvvetlerin bileşkesi.
+aad107da-744c-4f80-9f0e-820ec7d8b9fc,eslesme_yok,yuksek,Isı iletkenliği (iletken); 6. sınıf Fen pool'unda ısı iletimi kazanımı yok.
+d260e58c-98ba-44b1-952f-9359a459d776,FB.6.2.1,yuksek,Aynı yönlü kuvvetlerin bileşkesi.
+e9e3e031-c1ce-4550-95b2-384e98a74494,FB.6.6.1,yuksek,Maddelerin elektriği iletme durumu (plastik yalıtkan).
+0b4af0c8-9977-447f-b9f5-44ffe54cf8ef,MAT.6.4.2,yuksek,Kare alanı (6×6=36); dikdörtgen alan bağıntısı kapsamında (kare özel dikdörtgen).
+116cdc4c-3474-489a-841f-679df7cbce73,MAT.6.1.1,yuksek,En küçük ortak kat; doğal sayının çarpan ve katları kapsamı.
+4fd0ed04-a9d3-4cb6-b84c-24c7bc324fad,MAT.6.1.7,orta,"Kesirlerle toplama; kesir gösterimleri ile dört işlem kapsamında, kesir toplama açıkça yok."
+674263a4-00b7-4fba-98e6-faa4c65c1bbf,eslesme_yok,orta,Oran-orantı (3 kalem:5 kalem); 6. sınıf Matematik pool'unda oran kazanımı açıkça yok.
+b3d05565-c360-4fcc-9f6d-d37e73a394e2,eslesme_yok,orta,İşlem önceliği (3+4×5-2); 6. sınıf Matematik pool'unda işlem önceliği kazanımı açıkça yok.
+bc9f87f4-80bc-4673-9c38-c724c62549ac,eslesme_yok,yuksek,Üslü ifade (2^4); 6. sınıf Matematik pool'unda üslü sayı kazanımı yok.
+c1cc91f1-0eb5-444a-80a3-81e7d271f91c,MAT.6.3.4,yuksek,Üçgenin iç açıları toplamı; üçgen açıları ile ilgili problemler.
+d6a73e2b-ad65-4188-beb9-e3dba2fb4eff,MAT.6.1.1,yuksek,En büyük ortak bölen; doğal sayının çarpan ve bölenleri kapsamı.
+f05b5c32-6089-4947-a1c9-0c661b6a47af,eslesme_yok,orta,Ondalık sayılarla çarpma; 6. sınıf Matematik pool'unda ondalık işlem kazanımı açıkça yok.
+f21ab96d-6078-4d76-88ed-d811dcf9ebe4,MAT.6.2.1,yuksek,Bilinmeyeni bulma (x+7=15); bilinmeyen niceliklerin bulunması.
+077070bc-6402-421e-947c-a13f4805dd35,SB.6.2.1,yuksek,Türkiye'nin kıtalara göre konumu.
+0a00a552-3251-4fbf-bfc9-b95f79b2d8b1,SB.6.2.2,orta,"Yer şekli (plato); doğal çevre özellikleri kapsamında, yer şekli kazanımı açıkça yok."
+1323a8db-4205-4e59-92e8-9abc418c898e,SB.6.5.1,orta,Doğal kaynakların bilinçli kullanımı; kaynaklar ile ekonomik faaliyet ilişkisi kapsamında.
+3bb983eb-9b76-4787-9f04-cf8b5e1af762,SB.6.4.1,orta,Demokraside yöneticilerin seçimle belirlenmesi; yönetimin karar alma süreci kapsamında.
+523dde86-9cdc-4999-a268-e4e709177c32,SB.6.5.1,orta,"Üretim kavramı; ekonomik faaliyetler kapsamında, üretim tanımı açıkça yok."
+57db1f21-75f6-4897-a04e-da0f7dcbaec0,SB.6.1.2,orta,Somut olmayan kültürel miras (türkü); kültürel bağlar ve millî değerler kapsamında.
+93deb5cf-1735-400d-ab81-97ada3d482e0,SB.6.2.2,orta,"İklim kavramı; doğal çevre özellikleri kapsamında, iklim açıkça yok."
+95845413-7ebf-47b8-a0eb-cb5cc00a835f,eslesme_yok,yuksek,Zaman ölçüsü (yüzyıl); 6. sınıf SB pool'unda tarih zaman kavramı kazanımı yok.
+d3f3c796-ae26-450c-bd99-8e6a539092ac,SB.6.4.2,orta,"Eğitim hakkı; temel hak ve sorumluluklar kapsamında, çocuk hakları açıkça yok."
+e73c91fc-498e-4cc4-9d98-c909474078da,SB.6.3.1,orta,Orhun Yazıtları; ilk Türk devletleri ve medeniyet kapsamında.
+0379223d-a1d1-4d04-80e0-7ece32a68873,T.O.6.5,orta,Deyim anlamını bağlamdan tahmin; deyim kazanımı pool'da açıkça yok.
+14319301-a8b8-401a-96c1-e924ff3cb69c,T.O.6.9,orta,"Atasözünün derin anlamı; üst düzey çıkarım kapsamında, atasözü kazanımı açıkça yok."
+205b4338-a34a-4d47-b345-9f8d6fec69b9,eslesme_yok,orta,Mecaz anlam; 6. sınıf Türkçe pool'unda mecaz/sözcük anlamı kazanımı açıkça yok.
+2a8e5339-b85d-4fa5-b8eb-d3087953c5e0,T.Y.6.21,yuksek,İki nokta kullanımı; yazım kuralları ve noktalama işaretleri.
+70a03f85-a8cb-45c2-8b76-5d7d84501677,T.Y.6.21,yuksek,Sayıların yazımı; yazım kuralları.
+7bb76759-a81b-4cdb-a7da-8ec25a1ab08d,eslesme_yok,yuksek,Öznel-nesnel yargı ayrımı; 6. sınıf Türkçe pool'unda yargı kazanımı yok.
+83c62b7a-7e9e-4d7a-a3d2-045f9336456d,eslesme_yok,yuksek,Fiil zamanı (gelecek zaman); 6. sınıf Türkçe pool'unda dil bilgisi kazanımı yok.
+90564862-4cf3-42b9-ae0c-11523bbb0c79,eslesme_yok,yuksek,"Benzetme söz sanatı; 6. sınıf Türkçe pool'unda söz sanatı kazanımı açıkça yok (5.6'da söz sanatı çözümleme var, 6'da yok)."
+ad96b14b-b1c2-4a4d-9251-5d63c8a11b82,T.O.6.8,orta,Neden-sonuç ilişkisini cümlede bulma; basit çıkarım kapsamında.
+e47d57aa-acba-421b-b3a0-45327667ef17,eslesme_yok,orta,Terim anlam; 6. sınıf Türkçe pool'unda sözcük anlamı türleri kazanımı açıkça yok.
+04f64329-a877-457a-b117-ecc0e55a9747,eslesme_yok,orta,Yön ifadesi (turn left); 6. sınıf İngilizce V kodlarında yön kapsamı yok.
+2038218e-7df3-47b2-b929-65a89c9b7fde,eslesme_yok,orta,Hava durumu (sunny); 6. sınıf İngilizce V kodlarında hava durumu kapsamı yok.
+28fc9871-8606-4fa1-be53-87c653113547,ENG.6.4.V1,orta,"Meslek adı (teacher); family members' jobs kapsamına yakın, öğretmen meslek adı açıkça yok."
+58f46e55-a9aa-4686-8cfe-be4e99519210,eslesme_yok,orta,Saat okuma (half past three); 6. sınıf İngilizce V kodlarında saat kapsamı açık değil.
+6ac27db4-d282-4162-90c8-c5be9b838ff9,ENG.6.2.V1,yuksek,Günlük rutin (wake up at seven); daily routines kapsamı.
+6fffd04c-b021-4caf-a67d-53860737357d,ENG.6.4.V1,orta,"Aile bireyi (brother); family life kapsamıyla ilişkili, aile üyesi kazanımı açıkça yok."
+9e6e20ea-5aae-4740-8b8f-14e5c2ad7cc2,eslesme_yok,orta,Üçüncü tekil geniş zaman (goes); dilbilgisi kazanımı G kodlarında açık değil.
+a3206bed-5353-4a55-8ce2-2e329b1d5739,eslesme_yok,orta,Hobi ifadesi (like reading); 6. sınıf İngilizce V kodlarında hobi kapsamı yok.
+ede460dc-06ab-4efa-9140-3c916de035db,eslesme_yok,orta,Sevme-sevmeme kalıbı; 6. sınıf İngilizce V kodlarında hoşlanma kapsamı açık değil.
+f5b1c502-3324-405c-9093-7baf4646dc9d,ENG.6.6.V1,orta,Nereli sorusu; countries ve nationalities kapsamıyla ilişkili.
+01f2a80f-082a-4eea-852b-0b60a8d5a38d,eslesme_yok,yuksek,Aile içi sevgi ve saygı değeri; 7. sınıf Din pool'unda aile değerleri kazanımı yok.
+1ad1a57f-211f-4916-b21c-a20c6865a9ef,DKAB.7.1.3,yuksek,Ahiret inancının sorumluluk bilincine etkisi; ahiret ve melek inancının insana kazandırdıkları.
+322365e9-767f-4fbb-aa13-6f08bb876cac,eslesme_yok,yuksek,Doğayı koruma sorumluluğu; 7. sınıf Din pool'unda çevre kazanımı yok.
+44853558-fd07-450d-8de1-ccf83abf3624,eslesme_yok,yuksek,Yardımlaşmanın toplumsal katkısı; 7. sınıf Din pool'unda yardımlaşma kazanımı yok.
+458dcfe7-c529-4d86-b8b4-af9e42296ee6,eslesme_yok,yuksek,Emanete sahip çıkma; 7. sınıf Din pool'unda emanet kazanımı yok.
+498dd494-2719-4982-92ef-93db91e7ca43,eslesme_yok,yuksek,Şükür kavramı; 7. sınıf Din pool'unda şükür kazanımı yok.
+946525a8-e61f-4165-afdd-6e571cc0957c,DKAB.7.1.1,yuksek,Meleklerin tanımı ve sınıflandırılması (nurdan yaratılmış varlıklar).
+c68ebc57-f8b1-4151-af3f-d01fd28c75f9,eslesme_yok,yuksek,Adalet kavramı; 7. sınıf Din pool'unda adalet kazanımı yok.
+c9ce9551-ef06-4317-ba5d-a504bfeb1cfa,eslesme_yok,yuksek,Hoşgörü davranışı; 7. sınıf Din pool'unda hoşgörü kazanımı yok.
+f97d7edb-ac0a-49b1-937b-a24592cc2162,eslesme_yok,yuksek,Doğruluk ve güven; 7. sınıf Din pool'unda doğruluk kazanımı yok.
+108074d3-3f9e-4e95-be0d-97fcfb543089,FB.7.2.3,yuksek,Elektrik enerjisinin hareket enerjisine dönüşümü; enerji dönüşümü ve korunumu.
+42e3aa59-1294-4681-b3d1-5de555ff4454,FB.7.3.3,yuksek,Kanı pompalayan organ (kalp); dolaşım sistemi organlarının görevleri.
+6f0ea5c7-4987-4cdd-bf0f-b878ca6441f5,eslesme_yok,yuksek,Devrede pil sayısı ve ampul parlaklığı; 7. sınıf Fen pool'unda elektrik devresi kazanımı yok.
+78d63d57-a6ac-4cbe-9c00-9b3d23ccfa75,FB.7.5.10,yuksek,Karışımları ayırma deneyi (tuzlu sudan tuz elde etme).
+90d257f0-1570-48e2-9272-cce952520504,FB.7.1.5,yuksek,"Kendi ışığını üreten gök cisimleri; yıldız, galaksi ve evren kavramları."
+c65f7670-5414-4663-a34b-4481aee65990,FB.7.2.1,yuksek,Yapılan iş kavramı; kuvvet yönünde yol alma ve işin bağlı olduğu faktörler.
+d6699dc9-9c78-4a06-b294-f15a572239ce,eslesme_yok,yuksek,Sinir sistemi (denetleyici sistem); 7. sınıf Fen pool'unda sinir sistemi kazanımı yok.
+de630f60-5655-4a16-b52b-35449f6f1a25,eslesme_yok,yuksek,"Işığın soğurulması (siyah cisim); 7. sınıf Fen pool'unda soğurma kazanımı yok (6.4.4'te var, 7. sınıf geçersiz)."
+ea1942ff-9d9e-4ae5-a6bc-6c125547024c,FB.7.5.1,yuksek,Maddenin en küçük yapı taşı (atom).
+f45e8366-1693-4d6c-993c-f3ce1d19cff2,eslesme_yok,yuksek,Bitkilerde tozlaşma; 7. sınıf Fen pool'unda üreme kazanımı yok.
+0a657e26-150f-406c-86fa-cacc4fd35b50,eslesme_yok,orta,Dikdörtgen tanımı (dörtgen özellikleri); 7. sınıf Matematik pool'unda dörtgen tanıma kazanımı açıkça yok.
+0c7c8329-6708-444b-9ed7-c0a22b0b41e3,MAT.7.1.7,yuksek,Doğru orantı ile miktar hesabı.
+0d7e18cf-609a-49a4-9769-a9389376ca0e,MAT.7.2.1,yuksek,Cebirsel ifadede değer bulma (x=4 için 3x+5).
+2fdd49bc-645a-4582-8fea-f2494bbd0d02,MAT.7.2.2,yuksek,Birinci dereceden bir bilinmeyenli denklem çözme.
+4124b01c-0f10-44f8-b63e-627534d96522,MAT.7.1.3,yuksek,Rasyonel sayıların karşılaştırılması ve sıralanması.
+68564729-acde-4117-aab3-8a9383e7c30a,MAT.7.1.1,yuksek,Tam sayılarla toplama işlemi.
+8484bbf0-86e0-4c3b-ac83-6503f1b47281,eslesme_yok,orta,Dörtgenin iç açılar toplamı; 7. sınıf Matematik pool'unda çokgen açı kazanımı açıkça yok.
+a6bb0be6-b9a0-4a93-8b96-4787a3169cda,MAT.7.1.2,yuksek,"Rasyonel sayının ondalık gösterimi (3/4 = 0,75)."
+bac6603e-916d-43e7-90be-9118ec5bc15e,MAT.7.1.5,orta,"Yüzde hesabı; oran ilişkileri kapsamında, yüzde kazanımı açıkça yok."
+f64cdd66-be3c-4e30-ac22-ecc4d0a9432f,eslesme_yok,orta,Aritmetik ortalama; 7. sınıf Matematik pool'unda ortalama kazanımı açıkça yok.
+03341c6a-270d-439b-a7d8-09e221746538,SB.7.3.1,orta,Osmanlı'nın cihan devleti olma sürecini sağlayan politikalar; İstanbul'un fethi açıkça yok.
+3ffb45ba-6e06-4e9c-8d76-4046446c8111,eslesme_yok,yuksek,Nüfus yoğunluğu; 7. sınıf SB pool'unda nüfus kazanımı yok.
+5930811a-50b9-46db-9f60-29e02eb307e7,SB.7.5.2,orta,Vergi ödemenin kamu hizmetlerine gelir sağlaması; ekonomik üretim-dağıtım-tüketim döngüsü kapsamında.
+59abc795-c7ad-46d5-8966-db3191fd2563,eslesme_yok,yuksek,Göç nedenleri; 7. sınıf SB pool'unda göç kazanımı yok.
+5ef8352d-3aca-47ee-a276-7265eb993b9c,eslesme_yok,orta,Kitle iletişim araçları; 7. sınıf SB pool'unda kitle iletişim kazanımı açıkça yok.
+5f1c61e6-5a6f-41c1-94a8-8976d4b0fc2b,SB.7.3.1,orta,Osmanlı Devleti'nin kuruluş ve yükselme sürecinin politikaları; kurucu adı açıkça yok.
+81d3b7b5-f3da-4359-83c0-5bed14f9e16e,eslesme_yok,orta,Bilginin doğruluğunu araştırma (medya okuryazarlığı); 7. sınıf SB/Türkçe pool'unda açık kazanım yok.
+96a04bff-d3e2-4d85-902b-a6d61a70c8dd,SB.7.2.2,orta,Uluslararası barış ve işbirliği örgütü; bölgesel ve küresel sorunların çözümü kapsamında.
+c5ec1c50-b1db-4b70-961e-630e50efaf01,SB.7.4.3,orta,İfade özgürlüğü; demokrasinin temel ilkeleri kapsamında.
+ea22b5b2-2938-4221-bded-4e3f32faef6a,SB.7.5.2,orta,Üretim faktörü (emek); üretim-dağıtım-tüketim döngüsü kapsamında.
+1a9a540f-7990-4dec-9557-24542cf5097c,T.O.7.4,orta,Deyim anlamını bağlamdan tahmin etme; deyim kazanımı açıkça yok.
+33bf48d1-d03e-4d1c-9684-946b5e01b7f4,T.Y.7.21,yuksek,Yazım kuralları (birleşik-ayrı yazım); yazım kuralları kazanımı.
+5cb72c5b-9268-4ba9-aedf-923ace358479,eslesme_yok,yuksek,Belirtili nesne (dil bilgisi); 7. sınıf Türkçe pool'unda cümle ögesi kazanımı yok.
+779c03cb-e0a7-4390-9ea3-fe38d04d3171,T.O.7.7,orta,Ana düşünceyi bulma; metnin derin anlamı için basit çıkarım kapsamında.
+a1f728d1-5119-463a-9872-4795a114ff2e,T.O.7.7,orta,Neden-sonuç ilişkisini çıkarım yoluyla bulma; basit çıkarım kapsamında.
+ceeb9880-b512-477d-8695-1863ba2313e2,eslesme_yok,yuksek,Fiil kipleri (dilek-koşul); 7. sınıf Türkçe pool'unda dil bilgisi kazanımı yok.
+d0b5e800-ae23-4080-8da8-8a6d80c4d502,eslesme_yok,yuksek,Cümlede özne bulma; 7. sınıf Türkçe pool'unda cümle ögesi kazanımı yok.
+d7760377-264d-4f2a-b1e5-e18fa00afabc,eslesme_yok,orta,Mecaz anlam; 7. sınıf Türkçe pool'unda sözcük anlamı türleri kazanımı açıkça yok.
+ddfe5f8e-54cd-4dc7-a53d-5a6117c9a36d,T.O.7.19,yuksek,Kişileştirme söz sanatını belirleme.
+f7bc51bb-6801-4b84-9bdb-a24f5d626f4c,T.Y.7.21,yuksek,Noktalı virgül kullanımı; noktalama kuralları.
+0be971e9-a621-4088-81e4-db50a14cb767,eslesme_yok,orta,Yol tarifi (go straight); 7. sınıf İngilizce pool'unda yön tarifi kazanımı açıkça yok.
+56105dc7-5266-42cc-b93f-b8e25d01f6e9,E7.10.SI1,orta,"En üstünlük derecesi; karşılaştırma yapma (simple comparisons) kazanımına yakın, üstünlük açıkça yok."
+5ddbcce1-0e5f-4977-966e-87833094dcc2,E7.5.SP1,yuksek,Tercihini belirtme (prefer tea to coffee).
+8d91c5b5-ab5c-4f5c-9274-6abc185cfc06,eslesme_yok,orta,Hava durumu (raining); 7. sınıf İngilizce pool'unda hava durumu kazanımı açıkça yok.
+9083b1b9-0699-4716-a9e8-b25c0bee56d4,E7.9.L1,orta,"Çevre kavramları (recycle); environment ile ilgili ifadeler kapsamında, geri dönüşüm önerisi açık değil."
+c119e54b-af99-4f1d-b307-37355c2af311,eslesme_yok,orta,Doktora görünme tavsiyesi (should); 7. sınıf İngilizce pool'unda sağlık tavsiyesi kazanımı yok.
+c2e9a1c2-cd2f-4286-a2b6-b2c10c5415b6,E7.3.SI1,orta,"Geçmiş zamanın olumsuz hali; geçmiş olaylardan bahsetme kapsamı, olumsuz yapı açıkça yok."
+e417c7fe-e1ea-4e2b-a2b5-dc3fcb9cef4a,E7.10.SI1,yuksek,Karşılaştırma derecesi (bigger); simple comparisons kazanımı.
+ebcebc4f-4137-4e59-991d-2f60e744b8e4,E7.7.L1,orta,"Gelecek plan (going to) ve tahmin; gelecek olaylar kapsamına yakın, going to açıkça yok."
+ff3df68a-2e75-4c67-9afc-f955c4a163a7,E7.3.SI1,yuksek,Geçmiş zaman (went yesterday); belirli zamanda geçmiş olayları anlatma.
+005c8f85-2751-410b-b3ba-feb529882700,ders_yok,yuksek,"8. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok (önceki program, Din dersi kodu yok)."
+06ee8579-d0a2-46de-9896-4804a816cdd9,ders_yok,yuksek,8. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+31a345ed-d1b6-4b97-91e7-27809204c6aa,ders_yok,yuksek,8. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+4d117a2a-3167-4e5b-9dec-5f623d6ae29e,ders_yok,yuksek,8. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+576c637c-4eaa-4105-80e6-dbc50905efd6,ders_yok,yuksek,8. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+91ce93bd-ed02-4426-b696-85f72f631d5a,ders_yok,yuksek,8. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+a4099262-5cc9-484c-b487-66999d71419e,ders_yok,yuksek,8. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+afbb737c-188d-4701-89ae-c5e541ff370f,ders_yok,yuksek,8. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+e3cfee18-53d2-44c5-90fb-59f3adf29edc,ders_yok,yuksek,8. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+ffb25acc-d86c-4ad2-b111-34fec262d928,ders_yok,yuksek,8. sınıf Din Kültürü dersi 2026-2027 müfredat CSV'sinde yok.
+06b41338-7c8c-4e2d-9919-e8a8e27e6fdf,F.8.1.2.2,orta,"Hava olaylarını inceleyen bilim dalı (meteoroloji); iklim bilimi bilim dalı kazanımına en yakın, meteoroloji adı açıkça yok."
+0a08661e-ad37-4453-9e2e-7d3a42c4575d,F.8.7.1.1,yuksek,Sürtünme sonucu elektriklenme.
+37fddc51-e28f-4259-8c21-aef0c0f6a43d,eslesme_yok,yuksek,Sürtünmede mekanik enerjinin ısıya dönüşümü; 8. sınıf Fen pool'unda enerji dönüşümü kazanımı yok.
+3fe8081e-2ec4-496d-9a25-f28c42e57c55,F.8.2.1.1,yuksek,DNA ve kalıtımsal bilgi taşıma; gen ve DNA kavramları.
+41b8acda-44c8-429d-8cc5-b7f994afdf9b,F.8.3.1.1,yuksek,Katı basıncını etkileyen değişkenler (yüzey alanı).
+6ea12c25-d7c6-4338-9447-f0deb3216265,F.8.4.4.3,yuksek,Turnusol gibi asit-baz ayracı ile asit tespiti.
+9e028128-998f-468d-846d-7c8797abfbc7,F.8.1.1.1,yuksek,Mevsimlerin oluşumu.
+af3ebcd2-01c4-40e0-a96a-fe53793cecc7,F.8.5.1.1,orta,Kaldıraçta kuvvetten kazanç; basit makinelerin avantajları kapsamında.
+b953d09a-cab4-41e9-aa50-9822366fb2f1,F.8.5.1.1,orta,Sabit makaranın yön değiştirme avantajı; basit makine avantajları kapsamında.
+d52bc425-ded6-4524-82ca-d9f7592535bd,eslesme_yok,orta,Kimyasal tepkimede atom sayısının korunumu; 8. sınıf Fen pool'unda korunum kazanımı açıkça yok.
+0c994ec7-2625-462a-ab72-5e34202b1be2,eslesme_yok,orta,Üçgenin iç açıları toplamı; 8. sınıf Matematik pool'unda üçgen açı toplamı kazanımı açıkça yok.
+4146dd27-9259-4b38-9136-b0204c5fa755,M.8.3.1.5,yuksek,Pisagor bağıntısı ile hipotenüs hesabı.
+4afaf6cf-06ce-4ca6-a271-530cceb3c959,M.8.1.2.2,yuksek,Tabanları aynı üslü ifadelerin çarpımı kuralı.
+674256b1-3da6-48ff-80ab-8fa051e8ae45,M.8.1.1.1,yuksek,Sayının asal çarpanlarına ayrılması.
+6f362d4c-01ee-4be0-9464-e11e36ecea13,M.8.1.3.1,yuksek,Tam karenin karekökü (√144).
+770df75b-aaf3-4e65-9122-8bcfca4c841c,M.8.2.1.4,yuksek,Çarpanlara ayırma (fark kareleri).
+7d81049f-ed0d-4ef9-bc40-ea584e93ccdc,M.8.2.1.3,yuksek,Özdeşlik açılımı ((x+3)²) modelle açıklama.
+8f3cf39b-802a-4b7a-8637-f68e6153f4d1,M.8.2.2.1,yuksek,Birinci dereceden bilinmeyenli denklem çözme.
+abf14e3c-6724-43e2-9df0-eff7877858f6,M.8.5.1.5,yuksek,Basit olayın olasılığını hesaplama (çift sayı gelme).
+d17c1982-cd73-4926-9e82-c077b90ed3f4,M.8.2.3.3,yuksek,Birinci dereceden bilinmeyenli eşitsizliği çözme.
+03b2df09-b922-459b-9b66-aac000867184,ders_yok,yuksek,8. sınıf Sosyal Bilgiler dersi için 2026-2027 müfredat karşılığı yok (İnkılap dersi ayrı ders adıdır).
+1f69b318-7618-4e32-904c-89408d65fbd8,ders_yok,yuksek,8. sınıf Sosyal Bilgiler dersi için müfredat karşılığı yok (T.C. İnkılap Tarihi dersi ayrı ders adı).
+23f313c5-5efc-4113-80b8-d066faaef63e,ders_yok,yuksek,8. sınıf Sosyal Bilgiler dersi için müfredat karşılığı yok.
+26075725-cca2-47c2-9597-6c03dc144e95,ders_yok,yuksek,8. sınıf Sosyal Bilgiler dersi için müfredat karşılığı yok.
+3bdc5973-ee6c-4c54-834b-405e7a1f0a99,ders_yok,yuksek,8. sınıf Sosyal Bilgiler dersi için müfredat karşılığı yok.
+3d1526ff-8587-4906-8b98-c47a3aa1e403,ders_yok,yuksek,8. sınıf Sosyal Bilgiler dersi için müfredat karşılığı yok.
+42f487a5-70d7-453a-badf-308548095c5a,ders_yok,yuksek,8. sınıf Sosyal Bilgiler dersi için müfredat karşılığı yok.
+7e1e8c78-0169-4ebb-a8ff-ee786e4e2b69,ders_yok,yuksek,8. sınıf Sosyal Bilgiler dersi için müfredat karşılığı yok.
+856a06e1-7041-4eb2-aa03-ad2768a4b165,ders_yok,yuksek,8. sınıf Sosyal Bilgiler dersi için müfredat karşılığı yok.
+f052bb91-3a52-4d11-9608-f97064f36fdb,ders_yok,yuksek,8. sınıf Sosyal Bilgiler dersi için müfredat karşılığı yok.
+0d4804c1-7f62-4bc5-8b15-d435899759a1,eslesme_yok,orta,Birleşik sözcük yazımı; 8. sınıf Türkçe pool'unda yazım kuralı kazanımı açıkça yok (T.8.4.16 düzeltme yakın).
+15f19faa-623e-4ab1-bb4f-3bc9f5acfbe7,T.8.4.18,yuksek,Cümle ögelerini ayırt etme (dolaylı tümleç).
+1c8d3159-0e90-40d2-b41a-8f0482cd9bba,T.8.3.7,yuksek,Abartma söz sanatı; metindeki söz sanatlarını tespit.
+2a8e951d-c4f4-4cd8-85b6-ad0999a1ccd4,T.8.3.6,yuksek,Deyimin metne ve anlama katkısı (deyim anlamı).
+382613e2-ed92-4bee-aa8b-757fe6b20429,T.8.3.16,yuksek,Paragrafın konusunu belirleme.
+38a523b3-2754-46e0-badb-eb85eaaf136c,T.8.3.25,orta,"Ana düşünce; okudukları ile ilgili çıkarım kapsamında, ana düşünce açıkça yok."
+58b0cb89-3d5e-462e-bf65-6eef6f3c5dcd,T.8.3.9,yuksek,Fiilimsi türü (isim-fiil) ve cümledeki işlevi.
+61847cdf-8625-4a07-a9d6-14152390c8b2,T.8.3.1,orta,"Üç noktanın kullanım amacı; noktalama işaretlerine dikkat kapsamında, kullanım açıkça yok."
+8368715c-5dd1-4230-b189-e0eb7032c37a,T.8.4.19,yuksek,Yapısına göre cümle türleri (birleşik cümle).
+f71d44ab-16a4-4eb9-9864-96b2b8fe1b9d,T.8.3.9,yuksek,Sıfat-fiil (koşan) ve cümledeki işlevi.
+35e01bc4-e351-4610-8dd3-ed0fc29832c2,E8.6.L1,yuksek,Macera etkinliği (rafting) anlatımı; adventures kapsamı.
+4cae2246-029d-4032-adb4-c2da650cd7b2,E8.2.SP1,orta,İlgi ve tercih ifadesi (interested in playing guitar); tercihleri ifade etme kapsamına yakın.
+4da8b408-7e4a-4d2f-9576-9cd21722a67b,eslesme_yok,orta,Öneri kalıbı (should); 8. sınıf İngilizce pool'unda tavsiye kazanımı açıkça yok.
+551ecdb9-dbe9-423b-b933-dd4097f557cc,E8.4.L2,yuksek,Telefon konuşmasını takip etme (Hold on a minute).
+7feee692-c89e-4708-810a-8cc01c55239b,eslesme_yok,orta,Mutfak talimatı (chop onions); 8. sınıf İngilizce pool'unda mutfak/yemek yapma kapsamı yok.
+8229cd83-dae6-4802-b9f6-0e990f612efa,E8.5.SI1,yuksek,İnternet alışkanlığını anlatma (search for information on the internet).
+89616fde-7419-4f6a-84a4-afbf63f38c2e,E8.7.R1,yuksek,Turizm metninden özgül bilgi bulma (historical places).
+94621aad-7d56-4106-baf2-1e2c96047980,E8.1.R1,yuksek,Arkadaşlık konulu kısa metinleri anlama.
+9e92167e-7832-4062-a971-b7b1b3b7ac08,eslesme_yok,orta,Rica kalıbı (could you pass me the salt); 8. sınıf İngilizce pool'unda rica kazanımı açıkça yok.
+d3e787be-0700-4593-9b9d-4ff14f228a7e,eslesme_yok,orta,Kişilik sıfatı (generous); 8. sınıf İngilizce pool'unda kişilik sözvarlığı açıkça yok.

@@ -1,0 +1,37 @@
+{
+ "kaynak_url": "https://tymm.meb.gov.tr/assets/pdf/ortaokul-turkce-dersi_20260902_111157_977.pdf",
+ "program_surumu": "Maarif Modeli Ortaokul Türkçe DÖP (5. sınıf bölümü, tymm 2026-09-02)",
+ "dogrulama": "2026-10-23 (K-0111): tymm 2026-09-02 PDF metin katmanından (PyMuPDF) okundu; 21 kodun tamamında kod ve kazanım metni eşleşti (T.O.5.4–20, T.Y.5.7–16). Kodlar DÖP'te var; kapsam dışı kodlar tanımlı. Süreç bileşenleri bu sürümde doğrulanmadı.",
+ "not": "2026-10-23 kapsam kararı: yalnız metinle sınanabilen okuma (T.O) ve yazma (T.Y) kazanımları. Dinleme/izleme (T.D) ve konuşma (T.K) sesli performans gerektirir; kapsam_disi. Süreç bileşenleri bu dosyada boş bırakıldı (PDF ayrıştırması güvenilir değil); üretimde yalnız kazanım metni kullanılır. Üretimden önce DÖP ile teyit edilmeli.",
+ "kazanimlar": [
+  {"kod": "T.O.5.4", "sinif": 5, "ders": "Türkçe", "metin": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.5", "sinif": 5, "ders": "Türkçe", "metin": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.6", "sinif": 5, "ders": "Türkçe", "metin": "Metnin yüzey anlamını belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.8", "sinif": 5, "ders": "Türkçe", "metin": "Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.9", "sinif": 5, "ders": "Türkçe", "metin": "Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.10", "sinif": 5, "ders": "Türkçe", "metin": "Okuduklarını karşılaştırabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.12", "sinif": 5, "ders": "Türkçe", "metin": "Metni yorumlayabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.13", "sinif": 5, "ders": "Türkçe", "metin": "Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.14", "sinif": 5, "ders": "Türkçe", "metin": "Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.15", "sinif": 5, "ders": "Türkçe", "metin": "Metnin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.17", "sinif": 5, "ders": "Türkçe", "metin": "Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.18", "sinif": 5, "ders": "Türkçe", "metin": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.19", "sinif": 5, "ders": "Türkçe", "metin": "Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.5.20", "sinif": 5, "ders": "Türkçe", "metin": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.5.7", "sinif": 5, "ders": "Türkçe", "metin": "Yazısında karşılaştırma yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.5.8", "sinif": 5, "ders": "Türkçe", "metin": "Yazısında sınıflandırma yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.5.12", "sinif": 5, "ders": "Türkçe", "metin": "Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.5.13", "sinif": 5, "ders": "Türkçe", "metin": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.5.14", "sinif": 5, "ders": "Türkçe", "metin": "Yazısında açık ve örtük ifadeleri kullanabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.5.15", "sinif": 5, "ders": "Türkçe", "metin": "Uygun bağlantı ifadelerini kullanabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.5.16", "sinif": 5, "ders": "Türkçe", "metin": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme", "surec_bilesenleri": []}
+ ],
+ "kapsam_disi": [
+  {"kod": "T.D.5.1–T.D.5.20", "neden": "Dinleme/izleme kazanımları ses veya video gerektirir."},
+  {"kod": "T.K.5.1–T.K.5.21", "neden": "Konuşma kazanımları sözlü performans gerektirir."},
+  {"kod": "T.O.5.1, T.O.5.2, T.O.5.3", "neden": "Materyal seçimi, akıcı okuma ve strateji yönetimi; metin sorusuyla ölçülemez."},
+  {"kod": "T.O.5.7", "neden": "Görselle iletilen anlam: görsel gerektirir (görselsiz kapsam)."},
+  {"kod": "T.O.5.11, T.O.5.16, T.O.5.21, T.O.5.22", "neden": "Sınıflandırma, bölüm belirleme, özetleme ve süreç değerlendirme; bu hücrede kapsam dışı bırakıldı (karar gerekçesi: tek soruyla güvenilir ölçülemiyor)."},
+  {"kod": "T.Y.5.1–T.Y.5.6, T.Y.5.9–T.Y.5.11, T.Y.5.17", "neden": "Yazma süreci, yaratıcı üretim, yorum ve tartışma; ürünü değil süreci ya da üretimi ölçer."}
+ ]
+}

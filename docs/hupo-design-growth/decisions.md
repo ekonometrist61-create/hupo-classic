@@ -28,6 +28,7 @@ Bu dosya yeni, doğrulanmış proje kararları içindir. Paket önerileri kullan
 | 2026-10-09 | Landing'de korunan ama **kanıtsız** iddialar: "14 Gün İade Garantisi", "%100 Güvenli Ödeme", "Gizli Ücret Yok", "Yıllık planda %40 tasarruf", ücretsiz/premium/aile kapsam listeleri | Koordinatör "iddialar kalsın" kararı | AÇIK RİSK: yayın öncesi kullanıcı/hukuk doğrulaması gerekir; kanıt yoksa kaldırılmalı | `messages/tr.json`, `en.json` (landing.pricing) |
 | 2026-10-16 | Veli paneli mobil/tablet uyumu (PROJE_GUNLUGU §20, K1/K4/K6/K7): öğretmen `/yonetim/siniflar`'a yönlenir; ana ekran "Bu hafta" özetiyle (süre, çözülen soru, doğru oranı, tekrar bekleyen konu) açılır, XP ve seviye Başarılar'a taşındı; iletişim izni kartı Üyelik'e taşındı. Deneme kaydında **katılım onayı zorunlu**, **pazarlama onayı isteğe bağlı ve işaretsiz** iki ayrı kutu | Kullanıcı kararları K1/K4/K6/K7 — uygulandı. Kusur kanıtlandı: `consents.tur` kısıtı `sinav_pazarlama_izni` kaydını reddediyordu; kayıt pazarlama rızasına bağlıydı. Migration `20261040000000_sinav_katilim_onayi.sql` yazıldı, PGlite 20/20; **uzak DB'ye uygulanmadı** | `supabase/migrations/20261040000000_sinav_katilim_onayi.sql`, `web-panel/src/components/veli-paneli/**` |
 | 2026-10-16 | AÇIK: yenileme koşulu veride yok (gösterim "bilinmiyor"); iptal için destek kanalı doğrulanmadı (`[iletisim@hupolingo.com]` yalnız yer tutucu); deneme kaydı katılım ve pazarlama metinleri ÖNERİLEN metin, KVKK ve İleti Yönetim Sistemi (İYS) avukat onayı bekliyor; pazarlama onayını geri alma akışı yok | Hukuk ve ürün kararı bekliyor | AÇIK | `DenemeKaydiKarti.tsx`, `PlanKarti.tsx`, `AbonelikKarti.tsx` |
+| 2026-10-17 | Okuma Dünyası (Senin Hikâyen) öğrenci ekranları: vurgu üst sınırı Zengin ≤3 / Sade ≤1, yanlış cevap yumuşak (X yok), Lottie yalnız bitişte; öneri token `vurguAmber` #9A6A12 (onay bekliyor) | Kullanıcı brief'i ve kontrast ölçümü; ayrıntı `C:\Dev\Senin Hikayen - HupoRead\docs\tasarim\OKUMA_DUNYASI_EKRANLARI.md`. Anında geri bildirim (kit'in bitişte açıklama kuralıyla çelişir) kullanıcı kararı bekliyor (H1) | AÇIK (karar bekliyor) | `docs/tasarim/OKUMA_DUNYASI_EKRANLARI.md` (HupoRead) |
 
 ## Paket ile repo çelişkileri
 - **Renk:** Kit "Leaf Green #6DA940" önceki kimlik referansı olarak anıyor; repo mobil tokenları `mint #22C58B`, `sun #FFC533`, `primary #6C4DF6`. Repo tokenları esas; kit'in Gold `#F5C842` ile mobil `sun #FFC533` birbirine yakın, birleştirme mobil dalgasında karara bağlanacak.
@@ -38,3 +39,36 @@ Bu dosya yeni, doğrulanmış proje kararları içindir. Paket önerileri kullan
 - **Gizli anahtarlar:** `.claude/settings.json` ve `.claude/mcp.json` düz metin API anahtarı içeriyordu; anahtarlar `settings.local.json`'a taşındı / `${DEGISKEN}` referansına çevrildi. Anahtarlar git geçmişinde kaldığı için **döndürülmeli** (kullanıcı eylemi).
 
 Repo ile paket arasındaki çelişkileri burada kısa kaydet; fiyat, karakter adı ve onaylı asset bilgilerini kaynaksız kalıcılaştırma.
+
+## Okuma Faz 4 (2026-10-23)
+
+| Tarih | Karar | Gerekçe | Durum | Dosya |
+|---|---|---|---|---|
+| 2026-10-23 | Okuma demo rotası `/okuma-demo`; `/demo` ürün demosu olarak kalır | Mevcut `/demo` menüde ve landing'de kullanılıyor | UYGULANDI | `web-panel/src/app/[locale]/(full-width-pages)/okuma-demo/page.tsx` |
+| 2026-10-23 | Okuma sayfaları navigasyonda, sitemap ve canonical'da yok; `robots: noindex` | Pilot bitişi ve hukuk onayı öncesi yayın kapısı | UYGULANDI; noindex kaldırma YAYIN KARARINA BAĞLI | `okuma-demo/page.tsx`, `okuma/sinif-okuma-anlama/page.tsx` |
+| 2026-10-23 | Demo kayıtsız: cevap yalnız şık seçildikten sonra gösterilir, sunucuya gitmez | Plan Faz 4 kuralı; çocuk verisi toplanmaz | UYGULANDI | `components/okuma-site/OkumaDemo.tsx` |
+| 2026-10-23 | Veli bölümü ölçülebilir iddia içermez; ana sayfaya eklenmez | Plan: iddia yok, landing pilot sonrası | UYGULANDI | `components/okuma-site/VeliOkumaBolumu.tsx` |
+| 2026-10-23 | Okuma sayfaları için landing üst bilgisi yerine sade üst bilgi | Landing çapa menüsü bu sayfalarda karşılıksız kalırdı | UYGULANDI | `components/okuma-site/OkumaSiteUst.tsx` |
+| 2026-10-23 | Fiyat sayfasına dokunulmadı; okuma hakkı kalemi öneri olarak bırakıldı | Plan: ayrı SKU yok, fiyat kararı kullanıcıda | ERTELENDİ | — |
+
+## Veli ödeme ekranı A/C taslağı (2026-10-28)
+
+| Tarih | Karar | Gerekçe | Durum | Dosya |
+|---|---|---|---|---|
+| 2026-10-28 | A ve C metinleri koşullu taslak olarak yazıldı; yayın yok | Ücretsiz deneme self-serve değil (yalnız `admin_deneme_baslat`); ödeme akışında deneme yok; `plans.deneme_gun` yalnız gösteriliyor; deneme sonu davranışı tanımsız | BEKLİYOR (proje sahibi onayı; açık sorular 1, 2, 3, 9) | `docs/growth-crm/experiments/A-C_metin_tasarim_taslagi.md` |
+| 2026-10-28 | Hupo maskotu veli ödeme ekranında yok; C banner'ında nötr ikon | Veli UI maskotu azaltır; ödeme çağrısı maskotla yapılmaz | ÖNERİ (onay bekliyor) | `web-panel/src/components/veli-paneli/PlanKarti.tsx` (ilgili) |
+| 2026-10-28 | "14 Gün İade Garantisi", "%100 Güvenli Ödeme", "Gizli Ücret Yok" A ve C'de kullanılmaz | Landing'de doğrulanmamış iddialar (2026-10-09 AÇIK RİSK) | ÖNERİ (kontrol kolu kararı bekliyor) | `web-panel/src/messages/tr.json` (landing.pricing) |
+
+## Landing hareket sistemi (2026-10-29)
+
+| Tarih | Karar | Gerekçe | Durum | Dosya |
+|---|---|---|---|---|
+| 2026-10-29 | Landing'de tek scroll-reveal motoru GSAP (ScrollTrigger, CustomEase); framer-motion yeni kullanılmıyor | Ortak eğri dili: hupo-out (çıkış) ve hupo-inout (aç-kapa); reveal 0.8 s, mesafe 24 px, kart stagger 0.08 s; reduced-motion'da animasyon kurulmaz | Görev talebi; UYGULANDI; ekran kontrolü yapıldı (LCP ve gerçek cihaz kare süresi ÖLÇÜLMEDİ) | `web-panel/src/components/landing/motion/*`, `sections/*`, `globals.css` |
+| 2026-10-29 | Lenis yalnız landing'de (`LandingMotion`, root modu, autoRaf kapalı, GSAP ticker köprüsü); unmount'ta ticker kaldırılır ve lagSmoothing varsayılana döner | Yumuşak kaydırma yalnız bu sayfada; `/demo` geçişinde `lenis` sınıfı temizlenir, konsol hatası yok | UYGULANDI; wheel testiyle yumuşatma doğrulandı | `motion/LandingMotion.tsx`, `page.tsx` |
+| 2026-10-29 | Lenis `anchors: true` (offset -80 yok) | Lenis CSS `scroll-mt-20` (80 px) değerini zaten okuyor; offset eklenince bölümler 160 px aşağıda duruyordu. Ölçüm: pricing, how-it-works, faq, report, characters üst kenarı 80 px | UYGULANDI, ölçüldü | `motion/LandingMotion.tsx` |
+| 2026-10-29 | React Bits SplitText yalnız 3 h2'de: Benefits (ortalı), Veli raporu (sol kolon, start), Karakterler (ortalı); her kullanımda `<noscript>` görünürlük kuralı | Başlık dışı kullanım gereksiz gecikme ve kırpma riski. JS'siz erişim için noscript; LCP H1 statik | UYGULANDI; görsel kontrol (Türkçe harf işaretleri kırpılmıyor) | `motion/SplitText.tsx` (lisans: MIT + Commons Clause, kaynak ve değişiklik notları dosya başında) |
+| 2026-10-29 | Hero giriş (telefon, maskot, örnek rapor) yalnız CSS transform ile, `motion-safe` altında; maskot pop eğrisi | İlk boyamada opacity 0 yok, LCP gecikmez; GSAP'ın hidrasyon sonrası başlatması ilk boyamada sıçrama yaratırdı | UYGULANDI; LCP ÖLÇÜLMEDİ | `sections/HeroSection.tsx`, `globals.css` |
+| 2026-10-29 | SSS: yükseklik `grid-rows 0fr↔1fr`, kapalı panel `inert`; `aria-expanded`/`aria-controls`/`role=region` korunur | Kapalı içerik odak ve ekran okuyucu ağacının dışında; `hidden` yerine animasyonlu kapanış | UYGULANDI; aç/kapa ölçüldü | `components/landing/LandingClient.tsx` |
+| 2026-10-29 | Ana CTA sınıfı tek kaynakta (`landing/buttons.ts`); renk/hover geçişi 200 ms, hupo-out | Renk/hover 200 ms kuralına uyuldu; reveal ve SSS gibi yapısal geçişler 300 ms kaldı | UYGULANDI (CTA 300→200 ms, ana oturumda düzeltildi) | `landing/buttons.ts`, `Header.tsx`, `ParentPanelSection.tsx`, `PricingSection.tsx` |
+| 2026-10-29 | CharacterUniverse CSS `hupo-reveal` ve satır içi `animationDelay` kaldırıldı; keyframe yalnız o kullanımdaydı (grep ile doğrulandı) | Tek motor (GSAP) ve tek stagger dili | UYGULANDI | `sections/CharacterUniverseSection.tsx`, `globals.css` |
+| 2026-10-29 | `framer-motion` 14.0.0 paketi `src/` içinde import edilmiyor | Kullanılmayan bağımlılık; GSAP tek motor | UYGULANDI: kullanıcı kararıyla `npm uninstall framer-motion` (2026-10-29) | `web-panel/package.json` |

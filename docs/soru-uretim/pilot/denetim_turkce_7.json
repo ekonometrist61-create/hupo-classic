@@ -1,0 +1,563 @@
+[
+ {
+  "id": "TR7-001",
+  "kazanim_kodu": "T.O.7.3",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Metin arıların hareketle haberleşmesine açıkça işaret ediyor; çeldiriciler konu dışı."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-002",
+  "kazanim_kodu": "T.O.7.4",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "kadim=çok eski; bağlamda 'bin yıl', 'yüzyıllar' ipucu veriyor, anlam çıkarımı için uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-003",
+  "kazanim_kodu": "T.O.7.5",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Dikmeden önce toprağı kazıp taş ayıklama; A sonraki aşama, iyi çeldirici."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-004",
+  "kazanim_kodu": "T.O.7.7",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Davranış ipuçlarından çekingenlik çıkarılır; diğer şıklar metinle çelişiyor."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-005",
+  "kazanim_kodu": "T.O.7.8",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Kaldırım/yol karşılaştırması ile işin değeri çıkarımı; A makul çeldirici. Zorluk 3 savunulabilir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-006",
+  "kazanim_kodu": "T.O.7.9",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Ortak nokta günlük okuma düzeni; A ve B tek metne ait, iyi çeldirici."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-007",
+  "kazanim_kodu": "T.O.7.11",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "78+30+12=120 tutarlı; bahçe 78/120 çoğunluk ve yarısı kapanıyor. A (kantin 30) yanlış. Zorluk 3 yüksek."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-008",
+  "kazanim_kodu": "T.O.7.12",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Vapurun üst güvertesi; paraphrase."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-009",
+  "kazanim_kodu": "T.O.7.12",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "İç çatışma gurur-ihtiyaç; doğru şık en kısa, iyi. Zorluk 3 iddialı."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-010",
+  "kazanim_kodu": "T.O.7.13",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "A ve C kutup buzulu sonuçları, makul çeldirici."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-011",
+  "kazanim_kodu": "T.O.7.14",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "orta",
+   "notlar": "atık/geri dönüşüm/kaynak en iyi; 'kaynak' biraz zayıf ama diğerleri ayrıntı niteliğinde."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-012",
+  "kazanim_kodu": "T.O.7.16",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Üç dörtlük de abab (bahar/var, gül/bülbül; dağ/bağ, yol/kol; serin/derin, yamaçta/ağaçta). Tek doğru."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-013",
+  "kazanim_kodu": "T.O.7.17",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "140/200=%70 sayısal veri. Kütüphane görevlileri cümlesi tanık gösterme sayılmaz, zayıf ikinci şık yok."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-014",
+  "kazanim_kodu": "T.O.7.18",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Bir kabak köyü doyurur; abartma."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-015",
+  "kazanim_kodu": "T.O.7.19",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Diyetisyen/uzman görüşü; D 'çocuklara' metinde doğrudan seslenme yok, ayırt edici."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-016",
+  "kazanim_kodu": "T.O.7.20",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Deyim: kulak ardı etmek = dikkate almamak."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-017",
+  "kazanim_kodu": "T.Y.7.7",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Doğru şık A en uzun ve iki parçalı yapıyla ayrışıyor (REHBER §4.2). A kısaltılmalı ya da diğer şıklar benzer uzunluğa getirilmeli. Kök 'eklerse' özne belirsiz; 'ekleyebilir' denebilir. Kod eşleşmesi doğrulanamadı."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR7-018",
+  "kazanim_kodu": "T.Y.7.8",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Kök 'kitapları gruplandıran bir yazı' ifadesi cevabı (gruplanır) ele veriyor; kök 'kütüphaneyle ilgili bir yazı' yapılmalı. Doğru şık da en uzun."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR7-019",
+  "kazanim_kodu": "T.Y.7.15",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Kökte 'örnekle' geliyor, C 'Örneğin' içeriyor; tek örnek cümlesi, zorluk 3 aşırı."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-020",
+  "kazanim_kodu": "T.Y.7.16",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "orta",
+   "notlar": "Benzetmeli D belirgin; D hafif uzun. B/C anlatım bozukluğu içeren makul çeldirici."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-021",
+  "kazanim_kodu": "T.Y.7.17",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Örtük ifade D; yapısal farklılık sorunun doğası gereği, A-C doğrudan. Zorluk 3 yüksek."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-022",
+  "kazanim_kodu": "T.Y.7.18",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "C",
+   "emin": "orta",
+   "notlar": "'Belediye ekipleri sabaha kadar çalıştı' cümlesinden sonra 'Bu nedenle okul açıktı' da savunulabilir (ikinci doğru). Belediye cümlesi çıkarılmalı ya da kar-okul karşıtlığı netleştirilmeli."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "TR7-023",
+  "kazanim_kodu": "T.Y.7.18",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Karşıtlık: Ancak. Tek doğru."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-024",
+  "kazanim_kodu": "T.Y.7.19",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Bağlaç de/da ayrı, kesmesiz (REHBER §10.1); D yarı doğru ama ilk 'de' bitişik, yanlış."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-026",
+  "kazanim_kodu": "T.O.7.5",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Işıklandırma yenilenmesi; paraphrase, çeldiriciler metindeki ayrıntılardan."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-027",
+  "kazanim_kodu": "T.O.7.7",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Sabah altı sıra, çanta/ceket; A, B, D metinle çelişiyor."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-028",
+  "kazanim_kodu": "T.O.7.18",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Rüzgârın fısıldaması kişileştirme."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-029",
+  "kazanim_kodu": "T.O.7.19",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Duygulara seslenme belirgin; metinde uzman/sayı yok. Zorluk 3 yüksek."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-030",
+  "kazanim_kodu": "T.O.7.4",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "mahcup=utanmış; yanaklar kızardı, gözler yere indi bağlamda yeterli."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-031",
+  "kazanim_kodu": "T.O.7.13",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Metinde ormanlar ve çöller karasal; doğrudan bilgi bulma."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-032",
+  "kazanim_kodu": "T.O.7.17",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Köpek-kedi karşılaştırması."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "TR7-033",
+  "kazanim_kodu": "T.Y.7.7",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "notlar": "Kazanıma uygun, tek doğru cevap, 7. sınıf için kolay. Çeldiriciler makul (tek taraflı, ilgisiz çıkarım, genel). Metin eşleştirme yok (A paraphrase). Zorluk 2 iddialı, 1 öneriliyor."
+  },
+  "onay": true,
+  "neden": "",
+  "not": "yedek; tek Sonnet oturumunda iki adim"
+ },
+ {
+  "id": "TR7-034",
+  "kazanim_kodu": "T.Y.7.8",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "notlar": "Sınıflandırma kazanımına uygun, tek doğru cevap. Kök 'ortak özelliklerine göre' cevabı belli ediyor; zorluk 1. Küçük not: 'roman ve hikâye okuma' eliptik, 'okuma kitabı' daha akıcı olur. Doğru şık en uzun ama ±%30 içinde."
+  },
+  "onay": true,
+  "neden": "",
+  "not": "yedek; tek Sonnet oturumunda iki adim"
+ }
+]

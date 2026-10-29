@@ -1,0 +1,23 @@
+{
+  "ajan": "growth_strategist",
+  "saglayici": "gemini",
+  "durum": "taslak",
+  "uydurma_sayilar": [],
+  "cikti": {
+    "baslik": "Büyüme Stratejisi ve Öncelikli Eylem Önerileri",
+    "maddeler": [
+      {
+        "metin": "1. günden 7. güne tutundurma oranı yüzde 70.0'dan yüzde 34.7'ye (tutulan: 84'ten 41'e) gerilemektedir; kullanıcı kaybını azaltmak için ilk hafta onboarding süreçleri iyileştirilmelidir.",
+        "kaynak": "kohort.ozet (1. gün oran: 70.0, tutulan: 84; 7. gün oran: 34.7, tutulan: 41)"
+      },
+      {
+        "metin": "120 yeni hane edinimi 15000 TRY harcama ile hane başı 125.0 TRY CAC seviyesinde gerçekleşmiştir; edinme bütçesinin geri dönüşü ve kanal verimliliği optimize edilmelidir.",
+        "kaynak": "cac (yeni_hane: 120, harcama: 15000 TRY, cac: 125.0 TRY)"
+      },
+      {
+        "metin": "E-posta kanalında izni açık 200 kayıt bulunurken, kaydı olmayan 28 ve kapalı 12 kayıt mevcuttur; ayrıca 7 aktif tarihsiz kayıt bulunmaktadır, veri kalitesi ve izin toplama adımları ele alınmalıdır.",
+        "kaynak": "veri_kalitesi (eposta acik: 200, kapali: 12, kayit_yok: 28, aktif_tarihsiz: 7)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,1095 @@
+[
+ {
+  "id": "SOS6-001",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.1.1",
+  "surec_bileseni": "a",
+  "konu": "Birey ve Toplum",
+  "alt_konu": "Gruplar ve roller",
+  "soru_metni": "Mert, 5. sınıfta okul futbol takımında yedek oyuncuydu. 6. sınıfta antrenörün kararıyla takım kaptanı oldu; aynı zamanda sınıfında öğrencilik rolünü sürdürüyor. Mert’in durumu grupların ve rollerin özelliği hakkında hangi sonucu gösterir?",
+  "siklar": {
+   "A": "Bir gruptaki rol, zaman içinde farklılaşabilir.",
+   "B": "Bir kişi aynı anda birden fazla grupta yer alamaz.",
+   "C": "Takım içindeki roller, üyelerin sınıf düzeyine göre dağıtılır.",
+   "D": "Takıma sonradan katılan üyeler kaptan olamaz."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Mert’in iki farklı yıldaki takım içi görevini karşılaştır.",
+  "cozum_adimlari": [
+   "Mert, 5. sınıfta yedek oyuncu iken 6. sınıfta kaptan olmuştur.",
+   "Aynı grupta rolün değiştiği görülmektedir; bu da rollerin zaman içinde değişebileceğini gösterir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Öğrencilik ve takım üyeliği aynı anda sürdüğü için metinle çelişir; ancak grup üyeliğiyle rol değişimi karıştırılabilir.",
+   "C": "Rollerin neye göre dağıldığı ile rollerin değişebilirliği karıştırılmıştır.",
+   "D": "Kaptanlığın katılım sırasına bağlı olduğu yanılgısı; metinde böyle bir bilgi yoktur."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-002",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.1.2",
+  "surec_bileseni": "a",
+  "konu": "Birey ve Toplum",
+  "alt_konu": "Kültürel bağlar ve millî değerler",
+  "soru_metni": "Bir köyde yoğun kar yağışı nedeniyle yolu kapanan komşu evin sahibine, köylüler birlikte kürek çalışarak yol açtı. Bu uygulama köyde imece olarak adlandırılıyor. Bu örnek, millî değerlerin toplumsal birliğe katkısını nasıl gösterir?",
+  "siklar": {
+   "A": "Bireyler arası rekabeti artırarak verimi yükseltir.",
+   "B": "Kişilerin kendi ihtiyaçlarına odaklanmasını kolaylaştırır.",
+   "C": "Dayanışmayı güçlendirerek toplumsal bütünlüğü destekler.",
+   "D": "Yönetim yetkilerinin köylülere devredilmesini sağlar."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Köylülerin bu işi hangi amaçla ve nasıl yaptığına dikkat et.",
+  "cozum_adimlari": [
+   "İmece, insanların bir işi birlikte yapmasına dayanan bir gelenektir.",
+   "Köylülerin ortak çalışması aralarındaki dayanışmayı artırır ve toplumsal birlik duygusunu güçlendirir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ortak çalışmayı rekabet ve verimle karıştırma.",
+   "B": "Birlikte çalışma ile bireysel çıkarı öne alma birbirine karıştırılmıştır.",
+   "C": "Doğru.",
+   "D": "Toplumsal birlik ile yönetimsel yetki paylaşımı karıştırılmıştır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-003",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.1.3",
+  "surec_bileseni": "c",
+  "konu": "Birey ve Toplum",
+  "alt_konu": "Toplumsal sorunlar ve çözüm önerileri",
+  "soru_metni": "Mahalle sakinleri, çocuk parkındaki salıncakların ve kaydırağın bozuk olduğunu fark etti. Sorunun nedeni, parkın bakımının düzenli yapılmaması ve oyuncakların eskimesidir. Aşağıdakilerden hangisi bu sorun için geliştirilen bir çözüm önerisidir?",
+  "siklar": {
+   "A": "Oyuncakların yıllardır kullanıldığı için yıpranması",
+   "B": "Belediyeye başvurup oyuncakların onarılmasını istemek",
+   "C": "Park çevresindeki bakım çalışmalarının aksatılması",
+   "D": "Çocukların parkta oyun oynayamaması"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Seçeneklerden hangilerinin sorunun nedeni, hangilerinin sonucu olduğunu ayır.",
+  "cozum_adimlari": [
+   "A ve C sorunun nedenlerini anlatır; D sorunun sonucudur.",
+   "B ise sorunu gidermeye yönelik bir davranış önerir, yani çözüm önerisidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Neden ile çözümü karıştırma.",
+   "B": "Doğru.",
+   "C": "Neden ile çözümü karıştırma.",
+   "D": "Sonuç ile çözümü karıştırma."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-004",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.2.1",
+  "surec_bileseni": "a",
+  "konu": "Yeryüzünde Yaşam",
+  "alt_konu": "Türkiye’nin mutlak konumu",
+  "soru_metni": "Ülkemizin mutlak konumu 36°–42° kuzey enlemleri ile 26°–45° doğu boylamları arasındadır. Bu bilgiyi kullanan Duru, ülkemizin yarım kürelerdeki yerini belirlemek istiyor. Türkiye hangi yarım kürelerde yer alır?",
+  "siklar": {
+   "A": "Güney Yarım Küre ve Batı Yarım Küre",
+   "B": "Güney Yarım Küre ve Doğu Yarım Küre",
+   "C": "Kuzey Yarım Küre ve Batı Yarım Küre",
+   "D": "Kuzey Yarım Küre ve Doğu Yarım Küre"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Enlem derecesinin hangi yöne ait olduğu ile boylam derecesinin hangi yöne ait olduğunu ayrı ayrı değerlendir.",
+  "cozum_adimlari": [
+   "Kuzey enlemleri Kuzey Yarım Küre’yi gösterir.",
+   "Doğu boylamları Doğu Yarım Küre’yi gösterir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Hem enlem hem boylam yönü yanlış okunmuş.",
+   "B": "Enlem yönü yanlış okunmuş.",
+   "C": "Boylam yönü yanlış okunmuş.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-005",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.2.1",
+  "surec_bileseni": "b",
+  "konu": "Yeryüzünde Yaşam",
+  "alt_konu": "Türkiye’nin göreceli konumu",
+  "soru_metni": "Ceren, ülkemizin konumunu anlatan bir sunum hazırlıyor. Sunumda mutlak ve göreceli konum bilgilerine ayrı ayrı yer verecek. Aşağıdakilerden hangisini göreceli konum bilgisi olarak sunuma ekleyebilir?",
+  "siklar": {
+   "A": "Asya ile Avrupa kıtalarının birleştiği bölgede yer alması",
+   "B": "Güney sınırının 36° kuzey enleminde bulunması",
+   "C": "Doğu ucunun 45° doğu boylamında bulunması",
+   "D": "Batı ucunun 26° doğu boylamında bulunması"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Enlem ve boylam derecesi kullanılan bilgiler ile çevredeki yer şekillerine ve kıtalara göre verilen bilgileri ayır.",
+  "cozum_adimlari": [
+   "Mutlak konum enlem ve boylam dereceleriyle belirtilir; B, C ve D bu türdendir.",
+   "Göreceli konum ise bir yerin çevresindeki diğer coğrafi oluşumlara göre yerini anlatır.",
+   "Asya ile Avrupa’nın birleştiği bölgede yer almak göreceli konum bilgisidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Derece ile verilen mutlak konum bilgisi göreceli sanılmış.",
+   "C": "Derece ile verilen mutlak konum bilgisi göreceli sanılmış.",
+   "D": "Derece ile verilen mutlak konum bilgisi göreceli sanılmış."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-006",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.2.2",
+  "surec_bileseni": "b",
+  "konu": "Yeryüzünde Yaşam",
+  "alt_konu": "Doğal ve beşerî çevre ilişkisi",
+  "soru_metni": "Karadeniz Bölgesi’nin dağlık kesimlerinde köy evleri birbirinden uzak ve geniş bir alana dağılmış biçimde bulunur. Bölgede dağlar, denize doğru dik yamaçlarla iner. Bu dağınık yerleşmenin ortaya çıkmasında etkili olan doğal özellik hangisidir?",
+  "siklar": {
+   "A": "Yaz aylarında yağışın az olması",
+   "B": "Yer altında maden yataklarının bulunması",
+   "C": "Yerleşmeye elverişli düz alanların sınırlı olması",
+   "D": "Kıyı şeridinin geniş ovalardan oluşması"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Dik yamaçların yerleşim için uygun alan bakımından ne anlama geldiğini düşün.",
+  "cozum_adimlari": [
+   "Dik yamaçlı arazide evler kurulabilecek düz alanlar azdır.",
+   "Bu nedenle evler uygun bulunan küçük alanlara dağılır ve yerleşme dağınık olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İklim özelliği ile yerleşme biçimi arasında doğrudan ilişki kurma.",
+   "B": "Madenlerin yerleşme düzenini belirlediği yanılgısı.",
+   "C": "Doğru.",
+   "D": "Bölgenin kıyı yapısı yanlış bilinmektedir; geniş ovalar yoktur."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-007",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.2.2",
+  "surec_bileseni": "b",
+  "konu": "Yeryüzünde Yaşam",
+  "alt_konu": "İklim, yer şekli ve tarım ilişkisi",
+  "soru_metni": "Bir bölgede yıllık yağış miktarı yaklaşık 400 mm’dir. Bölgede yazlar sıcak ve kurak, kışlar soğuktur; geniş düzlükler bulunur ve ormanlık alanlar sınırlıdır. Bu verilere göre bölgede aşağıdaki beşerî özelliklerden hangisinin gelişmesi beklenir?",
+  "siklar": {
+   "A": "Orman ürünlerinin işlendiği sanayi tesislerinin kurulması",
+   "B": "Tahıl üretimine dayalı kuru tarımın yaygınlaşması",
+   "C": "Çay ve fındık tarımına dayalı köylerin oluşması",
+   "D": "Muz ve narenciye için sera yatırımlarının artması"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yağış miktarını, düzlük alanları ve ormanlık alanların durumunu birlikte değerlendir.",
+  "cozum_adimlari": [
+   "Yağış azdır ve ormanlık alan sınırlıdır; bu yüzden orman ürünlerine dayalı sanayi gelişmez (A).",
+   "Çay, fındık ve muz gibi ürünler bol yağış veya ılık iklim ister (C, D).",
+   "Az yağışlı geniş düzlüklerde kuru tarım ve tahıl üretimi gelişir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Orman verisini göz ardı ederek sanayiyi kaynağa bağlama.",
+   "B": "Doğru.",
+   "C": "Karadeniz ürünlerini iklim koşullarına bakmadan seçme.",
+   "D": "Akdeniz ürünlerini iklim koşullarına bakmadan seçme."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-008",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.2.3",
+  "surec_bileseni": "a",
+  "konu": "Yeryüzünde Yaşam",
+  "alt_konu": "Türk dünyasıyla kültürel iş birliği",
+  "soru_metni": "TÜRKSOY, Türk dünyasında kültürel iş birliğini geliştirmek için kurulmuş uluslararası bir kuruluştur. Merkezi Ankara’dadır ve her yıl bir şehri “Türk Dünyası Kültür Başkenti” ilan ederek o şehirde etkinlikler düzenler. Bu uygulamanın Türk dünyasına sağladığı katkı aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Üyeler arasındaki ticareti artırarak ekonomik birlik sağlar.",
+   "B": "Ortak ders kitabı hazırlanmasını zorunlu hâle getirir.",
+   "C": "Ulaşım ağlarını birleştirerek şehirler arası geçişi kolaylaştırır.",
+   "D": "Ortak kültürel değerlerin tanıtılmasına olanak sağlar."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Uygulamanın adındaki “kültür” sözcüğünün hangi faaliyet alanını işaret ettiğini düşün.",
+  "cozum_adimlari": [
+   "Kuruluşun amacı kültürel iş birliğidir; kültür başkenti ilanı da kültürel etkinlikleri kapsar.",
+   "Etkinlikler Türk dünyasının ortak değerlerinin tanıtılmasını ve paylaşılmasını sağlar.",
+   "Ekonomik, eğitimsel ve ulaşıma yönelik sonuçlar bu uygulamanın doğrudan amacı değildir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kültürel iş birliği ile ekonomik iş birliği karıştırılmış.",
+   "B": "Kültür iş birliğinin eğitim içeriğini zorunlu kıldığı yanılgısı.",
+   "C": "Kültürel iş birliği ile altyapı/ulaşım iş birliği karıştırılmış.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-009",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.3.1",
+  "surec_bileseni": "b",
+  "konu": "Tarihte Türkler",
+  "alt_konu": "Büyük Hun Devleti’nin katkıları",
+  "soru_metni": "Büyük Hun Devleti’nde Mete Han döneminde ordu, on, yüz, bin ve on bin kişilik birliklerden oluşan bir düzene kavuşturuldu. Her birliğin başına bir komutan getirildi. Bu uygulama, ilk Türk devletlerinin medeniyetimize hangi alandaki katkısına örnektir?",
+  "siklar": {
+   "A": "Yazılı edebiyatın gelişmesine",
+   "B": "Tarım tekniklerinin yaygınlaşmasına",
+   "C": "Askerî örgütlenme anlayışının oluşmasına",
+   "D": "Şehir mimarisinin gelişmesine"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Birlik ve komutan kavramlarının hangi kurumla ilgili olduğunu düşün.",
+  "cozum_adimlari": [
+   "Ordunun onlu sisteme göre birliklere ayrılması ve komutanların atanması bir örgütlenme biçimidir.",
+   "Bu düzen ordu ve savaş alanındaki bir katkıdır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Edebiyat alanı ile askerî alan karıştırılmış.",
+   "B": "Üretim alanı ile askerî alan karıştırılmış.",
+   "C": "Doğru.",
+   "D": "Yerleşik hayat alanı ile askerî alan karıştırılmış."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-010",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.3.1",
+  "surec_bileseni": "b",
+  "konu": "Tarihte Türkler",
+  "alt_konu": "Göktürkler ve Orhun Yazıtları",
+  "soru_metni": "Bilge Kağan, Kül Tigin ve Tonyukuk adına dikilen Orhun Yazıtları VIII. yüzyılda Göktürk alfabesiyle yazılmıştır. Yazıtlarda devletin geçmişi, halkın yaşadığı sıkıntılar ve kağanların öğütleri yer alır. Orhun Yazıtları’nın medeniyetimize katkısı aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Türkçenin bilinen en eski yazılı belgeleri arasında yer alması",
+   "B": "Türkçenin Arap alfabesiyle ilk kez yazıya geçirilmesi",
+   "C": "Anadolu’nun Türkleşmesini anlatan ilk kaynak olması",
+   "D": "Türklerde matbaacılığın başlangıcını oluşturması"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yazıtların hangi yüzyılda ve hangi alfabeyle yazıldığına dikkat et.",
+  "cozum_adimlari": [
+   "Yazıtlar VIII. yüzyılda Göktürk alfabesiyle Türkçe yazılmıştır.",
+   "Bu özellik onları Türkçenin bilinen en eski yazılı belgeleri arasına sokar.",
+   "Arap alfabesi ve Anadolu’nun Türkleşmesi daha sonraki dönemlere aittir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Göktürk alfabesi ile Arap alfabesi karıştırılmış.",
+   "C": "VIII. yüzyıl Orta Asya ile XI. yüzyıl Anadolu dönemleri karıştırılmış.",
+   "D": "Yazıt (taş üzerine yazı) ile matbaa karıştırılmış."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-011",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.3.2",
+  "surec_bileseni": "b",
+  "konu": "Tarihte Türkler",
+  "alt_konu": "İslam medeniyetinde bilim",
+  "soru_metni": "Harezmî, IX. yüzyılda Bağdat’ta çalışan bir bilim insanıdır. Yazdığı bir eserle cebir biliminin temellerini attı ve eserdeki yöntemler sonraki dönemlerde Avrupa’da da kullanıldı. Harezmî’nin katkısı hangi alanda gerçekleşmiştir?",
+  "siklar": {
+   "A": "Tıp",
+   "B": "Matematik",
+   "C": "Hukuk",
+   "D": "Mimari"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Cebir biliminin hangi bilim dalı içinde yer aldığını belirle.",
+  "cozum_adimlari": [
+   "Cebir, sayılarla ve denklemlerle ilgili bir bilim dalıdır.",
+   "Bu alan matematiğin içinde yer alır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bilim insanlarının çoğunu tıpla ilişkilendirme.",
+   "B": "Doğru.",
+   "C": "Bilim alanı ile hukuk alanı karıştırılmış.",
+   "D": "Bilim alanı ile mimari alanı karıştırılmış."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-012",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.3.2",
+  "surec_bileseni": "b",
+  "konu": "Tarihte Türkler",
+  "alt_konu": "İslam medeniyetinde bilim ve teknoloji",
+  "soru_metni": "Artuklu hükümdarlarının hizmetinde çalışan El-Cezeri, su gücüyle işleyen saatler ve çeşitli mekanik araçlar tasarlamıştır. Bu araçların yapımını çizimlerle anlattığı bir eser yazmıştır. El-Cezeri’nin çalışmaları, İslam medeniyetinin insanlığın ortak mirasına hangi alanda yaptığı katkıya örnektir?",
+  "siklar": {
+   "A": "Hukuk alanında kuralların düzenlenmesine",
+   "B": "Sanat alanında yazı türlerinin gelişmesine",
+   "C": "Mimari alanında kubbeli yapıların inşasına",
+   "D": "Bilim alanında mekanik araçların geliştirilmesine"
+  },
+  "dogru_sik": "D",
+  "ipucu": "El-Cezeri’nin tasarladığı şeylerin hangi çalışma alanına ait olduğuna odaklan.",
+  "cozum_adimlari": [
+   "El-Cezeri su saati ve mekanik araçlar tasarlamıştır.",
+   "Bu çalışmalar bilim ve teknik alanında yapılan katkılardır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Eser yazmayı hukuk alanıyla karıştırma.",
+   "B": "Çizim ve eser hazırlamayı sanatla karıştırma.",
+   "C": "Mühendislik ürünlerini yapı sanatıyla karıştırma.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-013",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.3.3",
+  "surec_bileseni": "a",
+  "konu": "Tarihte Türkler",
+  "alt_konu": "Karahanlılar döneminde Türkçe eserler",
+  "soru_metni": "Karahanlı döneminde, XI. yüzyılda Türkçe yazılan bir eser; adalet, akıl, mutluluk ve devlet yönetimi gibi konuları bir hükümdar ile vezirin konuşmaları üzerinden işler. Eser, İslam kültürünün Türk toplumundaki etkisini de yansıtır. Bu eser aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Kutadgu Bilig",
+   "B": "Divanü Lügati’t-Türk",
+   "C": "Divan-ı Hikmet",
+   "D": "Atabetü’l-Hakayık"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Eserin konusunu ve anlatım biçimini diğer eserlerin konularıyla karşılaştır.",
+  "cozum_adimlari": [
+   "Devlet yönetimi, adalet ve mutluluğu işleyen, XI. yüzyılda Yusuf Has Hacib’in Türkçe yazdığı eser Kutadgu Bilig’dir.",
+   "Divanü Lügati’t-Türk bir sözlüktür; Divan-ı Hikmet tasavvufi şiirler içerir; Atabetü’l-Hakayık ahlaki öğütler verir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Aynı dönemin başka önemli eseri; sözlük olduğu bilinmezse karıştırılır.",
+   "C": "Türkçe yazılmış bir İslami içerikli eser olduğu için karıştırılır.",
+   "D": "Aynı dönemin öğüt eseri; konusu devlet yönetimi değildir."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-014",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.3.3",
+  "surec_bileseni": "b",
+  "konu": "Tarihte Türkler",
+  "alt_konu": "İslamiyet’in kabulü ve Türk kültürü",
+  "soru_metni": "Kaşgarlı Mahmud, XI. yüzyılda Türkçe sözcükleri Arapça açıklayan bir eser hazırladı. Eserde Türk boylarının yaşayışı, gelenekleri ve atasözleri de yer alır. Bu eser, İslamiyet’in kabulünden sonra Türk kültüründeki hangi durumu göstermektedir?",
+  "siklar": {
+   "A": "Türk boylarının kendi dillerini bırakıp Arapçaya geçtiğini",
+   "B": "Türkçe yazılı eser verilmesine son verildiğini",
+   "C": "Türk dili ve kültürünün İslam dünyasında tanıtıldığını",
+   "D": "Türk boylarının birbirinden kültürel olarak koptuğunu"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Eserin Türkçeyi kimlere ve ne amaçla tanıttığını düşün.",
+  "cozum_adimlari": [
+   "Eser Divanü Lügati’t-Türk’tür; Türkçe sözcükleri Arapça açıklayarak Türk dilini ve kültürünü tanıtır.",
+   "Bu, Türk kültürünün İslam dünyasında bilinir hâle geldiğini gösterir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Eserde Arapçanın kullanılması dil değişimi sanılmış.",
+   "B": "Eserlerin Arapça açıklaması yazım dönemi bitti sanılmış.",
+   "C": "Doğru.",
+   "D": "Boylar hakkında bilgi verilmesi ayrılma sanılmış."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-015",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.3.4",
+  "surec_bileseni": "a",
+  "konu": "Tarihte Türkler",
+  "alt_konu": "Anadolu’nun Türkleşmesi kronolojisi",
+  "soru_metni": "Aşağıdaki olaylar XI–XIII. yüzyıllarda Anadolu’nun siyasi tarihini etkilemiştir. I. Kösedağ Savaşı, II. Miryokefalon Savaşı, III. Malazgirt Savaşı, IV. Birinci Haçlı Seferi’nin başlaması. Bu olayların eskiden yeniye sıralanışı hangisidir?",
+  "siklar": {
+   "A": "III – II – IV – I",
+   "B": "III – IV – II – I",
+   "C": "IV – III – II – I",
+   "D": "III – IV – I – II"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Her olayın yüzyıldaki yaklaşık yerini belirleyip önce en erken olanı bul.",
+  "cozum_adimlari": [
+   "Malazgirt Savaşı 1071’de yapılmıştır.",
+   "Birinci Haçlı Seferi 1096’da başlamıştır.",
+   "Miryokefalon Savaşı 1176’da, Kösedağ Savaşı 1243’te yapılmıştır.",
+   "Doğru sıralama III – IV – II – I’dir. Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Miryokefalon ile Haçlı Seferi’nin yeri değiştirilmiş.",
+   "B": "Doğru.",
+   "C": "Haçlı Seferi Malazgirt’ten önce sanılmış.",
+   "D": "Kösedağ ile Miryokefalon’un yeri değiştirilmiş."
+  },
+  "zorluk": 3,
+  "soru_tipi": "kronoloji",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-016",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.3.4",
+  "surec_bileseni": "c",
+  "konu": "Tarihte Türkler",
+  "alt_konu": "Malazgirt Savaşı’nın sonuçları",
+  "soru_metni": "Büyük Selçuklu Sultanı Alparslan, 1071’de Bizans İmparatoru Romanos Diogenes komutasındaki orduyu yendi. Bu zaferin Anadolu üzerindeki sonucu hangisidir?",
+  "siklar": {
+   "A": "Bizans’ın Anadolu’daki hâkimiyeti pekişti.",
+   "B": "Haçlı Seferleri sona erdi.",
+   "C": "Anadolu’nun Moğol yönetimine girmesi hızlandı.",
+   "D": "Türkmen boylarının Anadolu’ya yerleşmesinin yolu açıldı."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Savaşı kazanan tarafın Anadolu’daki konumunun nasıl değiştiğini düşün.",
+  "cozum_adimlari": [
+   "Malazgirt Zaferi ile Bizans’ın Anadolu’daki savunma gücü zayıfladı.",
+   "Böylece Türkmen boyları Anadolu’ya yerleşmeye başladı.",
+   "Haçlı Seferleri ve Moğol hâkimiyeti sonraki dönemlere aittir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Savaşın galibi ve mağlubu karıştırılmış.",
+   "B": "Haçlı Seferleri’nin sebep/sonuç sırası karıştırılmış.",
+   "C": "Moğol hâkimiyeti XIII. yüzyıla aittir; kronoloji hatası.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-017",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.4.1",
+  "surec_bileseni": "a",
+  "konu": "Yönetim ve Vatandaşlık",
+  "alt_konu": "Karar alma sürecini etkileyen unsurlar",
+  "soru_metni": "Bir belediye meclisi, mahalleye yeni bir park yapılıp yapılmayacağını görüşüyor. Yapılan ankette mahalle sakinlerinin büyük bölümü park istediğini belirtti; ancak belediyenin bütçesi bu yıl yetersiz olduğu için yapım gelecek yıla bırakıldı. Bu karar sürecini etkileyen unsurlar hangileridir?",
+  "siklar": {
+   "A": "Halkın talebi ve mali kaynaklar",
+   "B": "Kanunlar ve kurul üyelerinin sayısı",
+   "C": "Siyasi parti programları ve nüfus yoğunluğu",
+   "D": "Yasal düzenlemeler ve seçim takvimi"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Metinde kararın hangi iki gerekçeyle verildiğini bul.",
+  "cozum_adimlari": [
+   "Anket sonucu halkın talebini gösterir.",
+   "Bütçenin yetersizliği mali kaynakların kararı etkilediğini gösterir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Metinde olmayan unsurlar eklenmiş.",
+   "C": "Karar sürecinde olası ama metinde geçmeyen unsurlar.",
+   "D": "Genel karar unsurları metindeki özel duruma uygulanmış."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-018",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.4.1",
+  "surec_bileseni": "b",
+  "konu": "Yönetim ve Vatandaşlık",
+  "alt_konu": "Karar unsurları arasındaki ilişki",
+  "soru_metni": "Bir ilçedeki eski okul binası, deprem yönetmeliğine uygun olmadığı için güçlendirilememektedir. Yeni bina için bütçeden ödenek ayrılmış, ancak arsa seçimi konusunda yerel halk ile belediye arasında görüş ayrılığı çıkmıştır. Bu karar sürecindeki unsurlar arasındaki ilişkiyi hangisi en doğru biçimde açıklar?",
+  "siklar": {
+   "A": "Ödenek yeterli olduğu için yönetmelik ve halkın görüşü kararda rol oynamamıştır.",
+   "B": "Halkın görüşü yönetmeliğin kapsamını belirlemiş, ödenek ise arsa seçimini yönlendirmiştir.",
+   "C": "Yönetmelik yapımı gerekli kılmış, ödenek uygulamayı sağlamış, halkın görüşü arsayı etkilemiştir.",
+   "D": "Ödenek yeni binayı zorunlu kılmış, halkın görüşü yönetmelik içeriğini değiştirmiştir."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Her unsurun (yönetmelik, ödenek, halkın görüşü) metinde hangi aşamayla bağlantılı olduğunu ayrı ayrı belirle.",
+  "cozum_adimlari": [
+   "Yönetmeliğe uymama yeni bina yapılmasını gerekli kılar.",
+   "Ödenek, yapımın gerçekleştirilebilmesini sağlar.",
+   "Halk ile belediye arasındaki görüş ayrılığı arsa seçimiyle ilgilidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bütçenin tek başına yeterli olduğunu sanıp diğer unsurları dışlama.",
+   "B": "Unsurların rolleri ters eşleştirilmiş.",
+   "C": "Doğru.",
+   "D": "Neden–sonuç ilişkisi ters kurulmuş."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-019",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.4.2",
+  "surec_bileseni": "a",
+  "konu": "Yönetim ve Vatandaşlık",
+  "alt_konu": "Hak ve sorumluluk",
+  "soru_metni": "Selin, devlet okulunda ücretsiz eğitim görmektedir. Annesi ise çalışan bir vatandaş olarak gelirinden vergi ödemektedir. Selin’in eğitim görmesi ve annesinin vergi ödemesi sırasıyla hangi kavramlara örnektir?",
+  "siklar": {
+   "A": "Sorumluluk – hak",
+   "B": "Hak – sorumluluk",
+   "C": "Hak – hak",
+   "D": "Sorumluluk – sorumluluk"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir kişiye devletin sağladığı imkânlar ile kişinin yerine getirmesi gereken görevleri ayır.",
+  "cozum_adimlari": [
+   "Eğitim görmek, bireyin sahip olduğu bir haktır.",
+   "Vergi ödemek, vatandaşın toplum karşısındaki sorumluluğudur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Hak ve sorumluluk yer değiştirilmiş.",
+   "B": "Doğru.",
+   "C": "Vergiyi hak sanma.",
+   "D": "Eğitimi sorumluluk sanma."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-020",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.4.2",
+  "surec_bileseni": "a",
+  "konu": "Yönetim ve Vatandaşlık",
+  "alt_konu": "Hakların kullanımında sorumluluk",
+  "soru_metni": "Bir apartmanda oturan Ayşe, akşam saatlerinde dinlenme hakkına sahiptir. Üst kattaki komşusu ise o saatlerde yüksek sesle müzik dinlemektedir. Bu durum hakların kullanımıyla ilgili hangi ilkeyi gösterir?",
+  "siklar": {
+   "A": "Hak sahibi olan kişinin sorumluluk üstlenmesine gerek kalmadığını",
+   "B": "Hakların kullanım sırasının komşuluk ilişkisine göre belirlendiğini",
+   "C": "Çoğunluğun haklarının azınlığın haklarından önce geldiğini",
+   "D": "Kişinin hakkını kullanırken başkalarının hakkına saygı göstermesi gerektiğini"
+  },
+  "dogru_sik": "D",
+  "ipucu": "İki komşunun haklarının birbirini nasıl etkilediğini düşün.",
+  "cozum_adimlari": [
+   "Ayşe’nin dinlenme hakkı vardır; komşunun müzik dinleme özgürlüğü bu hakkı etkilemektedir.",
+   "Bir kişinin hakkını kullanması, başkasının hakkını ihlal etmemelidir; bu da sorumluluk gerektirir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Hak ile sorumluluğu birbirinden bağımsız sanma.",
+   "B": "Haklar için komşuluk sırası olduğunu sanma.",
+   "C": "Hakların bir grup lehine sıralandığını sanma.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-021",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.4.3",
+  "surec_bileseni": "a",
+  "konu": "Yönetim ve Vatandaşlık",
+  "alt_konu": "Dijitalleşme ve kamu hizmetleri",
+  "soru_metni": "Hacer, nüfus kayıt örneğini kuyrukta beklemeden e-Devlet Kapısı üzerinden evden aldı. Bu işlem birkaç dakika sürdü. Bu örnek, dijitalleşmenin vatandaşlık haklarının kullanımına etkisini nasıl gösterir?",
+  "siklar": {
+   "A": "Kamu hizmetlerinin ücretli hâle geldiğini",
+   "B": "Resmî işlemlerde kimlik doğrulamasına gerek kalmadığını",
+   "C": "Kamu hizmetlerine uzaktan ve kısa sürede ulaşılabildiğini",
+   "D": "Kamu çalışanlarına duyulan ihtiyacın sona erdiğini"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Hacer’in işlemi nerede ve ne kadar sürede tamamladığına dikkat et.",
+  "cozum_adimlari": [
+   "Hacer işlemini evden ve birkaç dakikada tamamlamıştır.",
+   "Bu, dijitalleşmenin kamu hizmetlerine uzaktan ve hızlı erişim sağladığını gösterir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Dijital hizmet ile ücret konusunu karıştırma.",
+   "B": "Dijital ortamda kimlik doğrulamasının gerekmediğini sanma.",
+   "C": "Doğru.",
+   "D": "Hızlı işlem ile personel ihtiyacının bitmesini karıştırma."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-022",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.4.3",
+  "surec_bileseni": "b",
+  "konu": "Yönetim ve Vatandaşlık",
+  "alt_konu": "Kişisel verilerin korunması",
+  "soru_metni": "Kerem, bir oyun sitesine üye olurken adını, adresini ve kimlik numarasını girmesinin istendiğini fark etti. Annesi, kişisel verilerin korunmasının kanunla güvence altına alındığını söyledi. Kerem’in ailesi, dijital ortamda bu hakkı kullanmak için aşağıdakilerden hangisini yapmalıdır?",
+  "siklar": {
+   "A": "Sitenin kişisel verileri hangi amaçla kullanacağını öğrenmeli",
+   "B": "Üyelik bilgilerini arkadaşlarıyla paylaşmalı",
+   "C": "Kullanım koşullarını okumadan üyeliği onaylamalı",
+   "D": "Kimlik numarasını sitenin sohbet bölümüne yazmalı"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Kişisel verilerini korumak isteyen birinin ilk önce hangi bilgiye ihtiyaç duyacağını düşün.",
+  "cozum_adimlari": [
+   "Kişisel verilerin korunması hakkı, verilerin hangi amaçla ve nasıl kullanılacağını bilmeyi de içerir.",
+   "Bu yüzden siteden bu bilgiyi öğrenmek hakkı kullanmaktır.",
+   "Diğer seçenekler kişisel verileri riske atar.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Veri güvenliği ile arkadaşlık paylaşımını karıştırma.",
+   "C": "Kolaylık ile hak kullanımını karıştırma.",
+   "D": "Kimlik numarasını kimlik doğrulama amacıyla her yere yazmak sanma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-023",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.5.1",
+  "surec_bileseni": "b",
+  "konu": "Ekonomi ve Teknoloji",
+  "alt_konu": "Kaynaklar ve ekonomik faaliyetler",
+  "soru_metni": "Ege ve Marmara kıyılarının bazı bölgelerinde rüzgâr hızı yüksektir. Bu bölgelerde çok sayıda rüzgâr türbini kurulmuştur. Bu örnek, kaynaklar ile ekonomik faaliyetler arasında nasıl bir ilişkiyi gösterir?",
+  "siklar": {
+   "A": "Ekonomik faaliyetler doğal kaynakların oluşmasına neden olur.",
+   "B": "Doğal kaynaklar, enerji üretimi gibi faaliyetlerin yer seçimini etkiler.",
+   "C": "Kaynak çeşitliliği, nüfusun azalmasına yol açar.",
+   "D": "Ekonomik faaliyetler, kaynaklardan bağımsız yer seçer."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Türbinlerin neden o bölgelere kurulduğunu düşün.",
+  "cozum_adimlari": [
+   "Rüzgâr türbinleri, rüzgârın güçlü olduğu yerlere kurulur.",
+   "Yani doğal kaynak (rüzgâr), enerji üretimi faaliyetinin yer seçimini belirler.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Neden–sonuç ilişkisi ters kurulmuş.",
+   "B": "Doğru.",
+   "C": "Kaynak çeşitliliği ile nüfus arasında ilişkisiz bağ kurma.",
+   "D": "Ekonomik faaliyetlerin kaynaktan bağımsız olduğu yanılgısı."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-024",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.5.1",
+  "surec_bileseni": "b",
+  "konu": "Ekonomi ve Teknoloji",
+  "alt_konu": "Doğal kaynaklara dayalı ekonomik faaliyetler",
+  "soru_metni": "Bir ilin arazisi dağlık ve engebelidir; yüksek kesimlerde geniş ormanlar, vadilerde ise bol su taşıyan akarsular bulunur. İlde tarıma elverişli geniş ova yoktur. Bu verilere göre ilde aşağıdaki ekonomik faaliyetlerden hangisinin gelişme olasılığı yüksektir?",
+  "siklar": {
+   "A": "Pamuk tarımı ve dokuma sanayisi",
+   "B": "Geniş ölçekli buğday üretimi",
+   "C": "Taşımacılığa dayalı liman ticareti",
+   "D": "Ormancılık ve hidroelektrik enerji üretimi"
+  },
+  "dogru_sik": "D",
+  "ipucu": "İlin ormanlık alanı, akarsuları ve düzlük durumunu ayrı ayrı değerlendirip her birinin hangi faaliyete imkân verdiğini eşleştir.",
+  "cozum_adimlari": [
+   "Geniş ova olmadığı için büyük ölçekli tarım (A, B) gelişmez.",
+   "Liman ticareti için kıyı bilgisi verilmemiştir (C).",
+   "Orman varlığı ormancılığı, bol su taşıyan akarsular hidroelektrik enerjiyi destekler.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ova gerektiren tarım ve sanayi, ova yok verisi göz ardı edilmiş.",
+   "B": "Ova gerektiren tahıl tarımı, ova yok verisi göz ardı edilmiş.",
+   "C": "Metinde olmayan bir kaynak (kıyı) varsayılmış.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-025",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.5.2",
+  "surec_bileseni": "b",
+  "konu": "Ekonomi ve Teknoloji",
+  "alt_konu": "Ekonomik faaliyetler ve meslekler",
+  "soru_metni": "Bir ilçede son yıllarda güneş enerjisi santrallerinin sayısı artmış ve yeni santral yatırımları planlanmıştır. Bu gelişme ilçedeki ekonomik faaliyetleri değiştirmektedir. Bu verilere dayanarak gelecekte ilçede hangi mesleğe olan ihtiyacın artması beklenir?",
+  "siklar": {
+   "A": "Maden mühendisi",
+   "B": "Gemi makinisti",
+   "C": "Güneş paneli teknisyeni",
+   "D": "Traktör operatörü"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Artan faaliyetin hangi işleri gerektirdiğini düşün.",
+  "cozum_adimlari": [
+   "Santral sayısı arttıkça kurulum ve bakım işleri artar.",
+   "Bu işleri güneş paneli teknisyenleri yapar.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Enerji alanında madenciliği karıştırma.",
+   "B": "Enerji ile denizcilik mesleklerini karıştırma.",
+   "C": "Doğru.",
+   "D": "Enerji ile tarım mesleklerini karıştırma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-026",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.5.3",
+  "surec_bileseni": "b",
+  "konu": "Ekonomi ve Teknoloji",
+  "alt_konu": "Yatırım ve pazarlama planı",
+  "soru_metni": "Defne, kendi tasarladığı el yapımı seramik kupaları satmayı planlıyor. Bir kupanın üretim maliyeti 60 TL, ambalaj ve pazarlama gideri ise 15 TL’dir; yapılan ankette ailelerin çoğu 100 TL’nin üzerindeki fiyatı pahalı bulacağını belirtmiştir. Defne’nin bir kupa için belirleyeceği satış fiyatı hangisi olursa giderlerini karşılar ve müşteri beklentisine uygun kalır?",
+  "siklar": {
+   "A": "90 TL",
+   "B": "70 TL",
+   "C": "110 TL",
+   "D": "130 TL"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce kupa başına toplam gideri hesapla, sonra anket sonucunu üst sınır olarak değerlendir.",
+  "cozum_adimlari": [
+   "Kupa başına gider 60 + 15 = 75 TL’dir.",
+   "Fiyat 75 TL’den yüksek olmalıdır ki gider karşılansın.",
+   "Anket sonucuna göre fiyat 100 TL’yi aşmamalıdır.",
+   "75 TL ile 100 TL arasında olan tek seçenek 90 TL’dir. Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Yalnız üretim maliyetine bakıp ambalaj/pazarlama giderini eklememe; 70 TL gideri karşılamaz.",
+   "C": "Anket sonucunu göz ardı etme.",
+   "D": "Anket sonucunu göz ardı etme."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-027",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.6.1",
+  "surec_bileseni": "a",
+  "konu": "Küresel Bağlantılar",
+  "alt_konu": "İletişim teknolojileri ve kültürel etkileşim",
+  "soru_metni": "Okan’ın Almanya’da yaşayan kuzeni, bayram sabahı görüntülü arama uygulamasıyla ailesinin bayram sofrasına katıldı. Aile üyeleri birlikte kahvaltı edip bayramlaştı. Bu durum, iletişim teknolojilerinin kültürel etkileşimdeki rolünü nasıl gösterir?",
+  "siklar": {
+   "A": "Bayram gibi geleneklerin unutulmasına yol açar.",
+   "B": "Uzakta yaşayan insanların kültürel paylaşımını kolaylaştırır.",
+   "C": "Farklı toplumların gelenekleri arasındaki benzerlikleri ortadan kaldırır.",
+   "D": "İnsanların yüz yüze görüşme ihtiyacını sona erdirir."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Kuzenin ailesiyle bayramı nasıl paylaştığına dikkat et.",
+  "cozum_adimlari": [
+   "Kuzen uzakta olduğu hâlde görüntülü arama ile bayram sofrasına katıldı.",
+   "Bu, iletişim teknolojilerinin uzaktaki insanların kültürel paylaşımını kolaylaştırdığını gösterir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Teknolojinin geleneği zayıflattığı yanılgısı.",
+   "B": "Doğru.",
+   "C": "Etkileşim ile benzerliklerin yok olmasını karıştırma.",
+   "D": "Teknolojinin yüz yüze görüşmeyi tamamen bıraktırdığı yanılgısı."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-028",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.6.1",
+  "surec_bileseni": "b",
+  "konu": "Küresel Bağlantılar",
+  "alt_konu": "Ulaşım teknolojileri ve kültürel etkileşim",
+  "soru_metni": "Hızlı trenlerin ve uçak seferlerinin artmasıyla farklı ülkelerden birçok turist Türkiye’ye geliyor. Turistlerden bir kısmı döndüklerinde tattıkları yemekleri kendi ülkelerinde de yapmaya başlıyor. Bu durum, ulaşım teknolojilerinin kültürel etkileşimdeki rolünü nasıl göstermektedir?",
+  "siklar": {
+   "A": "Toplumların yemek kültürünü birbirinden ayrıştırır.",
+   "B": "Kültürel unsurların yayılma hızını yavaşlatır.",
+   "C": "Her ülkenin mutfağını kendi sınırları içinde tutmasını sağlar.",
+   "D": "İnsanların hareketliliğini artırarak kültür alışverişini hızlandırır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Turistlerin ülkeler arasında seyahat etmesinin sonuçlarını düşün.",
+  "cozum_adimlari": [
+   "Ulaşım teknolojileri insanların daha kolay ve hızlı seyahat etmesini sağlar.",
+   "Seyahat eden insanlar yemek gibi kültürel unsurları da yanlarında taşır.",
+   "Bu da kültür alışverişini hızlandırır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Etkileşim ile ayrışmayı karıştırma.",
+   "B": "Ulaşımın kültür yayılmasını yavaşlattığı yanılgısı.",
+   "C": "Kültürün sınırlar içinde kaldığı yanılgısı.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-029",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.6.2",
+  "surec_bileseni": "a",
+  "konu": "Küresel Bağlantılar",
+  "alt_konu": "Patent bilgisi için güvenilir kaynak",
+  "soru_metni": "Zeynep, kendi geliştirdiği bir ürünü patentle korumak istiyor. Önce patentin ne olduğu ve nasıl alındığı konusunda bilgi toplamaya karar veriyor. Zeynep’in doğru ve güvenilir bilgiye ulaşmak için başvurması gereken kaynak aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Patent konusunda yazılmış bir blog sayfası",
+   "B": "Bir ürün tanıtım sitesinin reklam bölümü",
+   "C": "Patent başvurularını kabul eden resmî kurumun internet sitesi",
+   "D": "Başvuru yapmış bir tanıdığının anlattıkları"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Bilginin kimden geldiğini ve kaynağın bu konuda yetkili olup olmadığını değerlendir.",
+  "cozum_adimlari": [
+   "Patent başvurularını yürüten kurum, konuda yetkili ve güncel bilgi veren kaynaktır.",
+   "Blog, reklam ve kişisel anlatımlar doğruluğu garanti etmez.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Konuyla ilgili yazı olmasını güvenilirlik sanma.",
+   "B": "Reklam amaçlı içeriği bilgi kaynağı sanma.",
+   "C": "Doğru.",
+   "D": "Kişisel deneyimi resmî bilgi sanma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS6-030",
+  "sinif": 6,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.6.6.2",
+  "surec_bileseni": "a",
+  "konu": "Küresel Bağlantılar",
+  "alt_konu": "Patent ve telif hakkı",
+  "soru_metni": "Mina, su tasarrufu sağlayan yeni bir musluk başlığı geliştirdi. Arkadaşı Can ise özgün bir kısa hikâye yazdı. Mina ve Can’ın çalışmalarının korunması için başvurulacak haklar sırasıyla hangisidir?",
+  "siklar": {
+   "A": "Patent – telif hakkı",
+   "B": "Telif hakkı – patent",
+   "C": "Patent – patent",
+   "D": "Telif hakkı – telif hakkı"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bir buluş ile bir fikir ve sanat eserinin korunma biçimlerini ayırt et.",
+  "cozum_adimlari": [
+   "Yeni bir ürün ya da buluş patentle korunur.",
+   "Hikâye gibi fikir ve sanat eserleri telif hakkıyla korunur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "İki kavramın yeri değiştirilmiş.",
+   "C": "Hikâyeyi de patentle korunur sanma.",
+   "D": "Buluşu da telif hakkıyla korunur sanma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

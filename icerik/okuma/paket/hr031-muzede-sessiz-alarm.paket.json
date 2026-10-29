@@ -4,62 +4,64 @@
     "slug": "hr031-muzede-sessiz-alarm",
     "baslik": "Müzede Sessiz Alarm",
     "tur": "gizem",
-    "konu": "kanit_varsayim",
+    "konu": "muze_alarmi",
     "sinif_alt": 4,
     "sinif_ust": 4,
-    "okuma_bandi": 2,
+    "okuma_bandi": 3,
     "dunya_tipi": "gercekci",
     "izinli_turler": [
       "ben",
-      "arkadas"
+      "arkadas",
+      "baska_biri"
     ],
     "deger_anahtarlari": [
       "D6",
-      "D16"
+      "D14"
     ],
     "yetiskin_uygun": false,
     "etiketler": {
       "ana_sinif": 4,
       "okuma_zorlugu": 3,
-      "kavram_zorlugu": 3,
+      "kavram_zorlugu": 4,
       "ilgi_egilimi": "ortak",
       "temalar": [
         "gizem",
-        "kesif"
+        "bilim_teknoloji",
+        "kultur_miras"
       ],
       "ders_baglantisi": [
         "turkce"
       ],
       "maarif": {
         "ana_deger": "D6",
-        "yardimci_deger": "D16"
+        "yardimci_deger": "D14"
       },
       "ogrenme_hedefleri": [
         {
-          "id": "sensor_hr031",
+          "id": "sozcuk_sensor_hr031",
           "tur": "lexeme",
           "etiket": "sensör",
-          "yuva": "hr031_sensor",
+          "yuva": "pb_sensor",
           "islev": "first_hint"
         },
         {
-          "id": "algilamak_hr031",
+          "id": "sozcuk_kanit_hr031",
           "tur": "lexeme",
-          "etiket": "algılamak",
-          "yuva": "hr031_algilamak",
+          "etiket": "kanıt",
+          "yuva": "pb_kanit",
           "islev": "application"
         },
         {
-          "id": "vitrin_hr031",
+          "id": "sozcuk_varsayim_hr031",
           "tur": "lexeme",
-          "etiket": "vitrin",
-          "yuva": "hr031_vitrin",
+          "etiket": "varsayım",
+          "yuva": "pb_varsayim",
           "islev": "application"
         },
         {
           "id": "kavram_hr031",
           "tur": "concept",
-          "etiket": "Kanıt ile varsayım",
+          "etiket": "Kanıt ile varsayımı ayırmak; acele hüküm vermemek",
           "islev": "application"
         }
       ],
@@ -71,25 +73,26 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 504,
+        "kelime_sayisi": 476,
         "tahmini_sure_dk": 6,
-        "sayfa_sayisi": 5,
-        "soru_sayisi": 4,
+        "sayfa_sayisi": 9,
+        "soru_sayisi": 6,
         "soru_beceri_dagilimi": {
           "hatirlama": 1,
           "cikarim": 1,
           "yorumlama": 1,
-          "sozcuk_baglami": 1
+          "sozcuk_baglami": 2,
+          "degerlendirme": 1
         },
         "hedef_tur_dagilimi": {
           "lexeme": 3,
           "concept": 1
         },
         "yoldas_yer_sayisi": 7,
-        "simge_sayisi": 1
+        "simge_sayisi": 15
       }
     },
-    "tanitim": "Müzede alarm çalıyor. Pusulayı mı çalmaya çalışıyorlar, yoksa başka bir neden mi var?",
+    "tanitim": "Sessiz müzede alarm öttü. Hırsız mı var, yoksa bir hata mı? Önce kanıt gerek!",
     "durum": "taslak",
     "fis_kodu": "HR-031"
   },
@@ -99,53 +102,86 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Kent müzesinin en sessiz salonundan aniden ince bir ses yükseldi: bip, bip, bip! Ziyaretçiler durdu. Cam "
+          "v": "Kent müzesinin en sessiz salonundan aniden ince bir ses"
         },
         {
-          "t": "kelime",
-          "yuva": "hr031_vitrin"
-        },
-        {
-          "t": "metin",
-          "v": " tarihî pusula yerli yerindeydi; kimse ona yaklaşmıyordu. Rehber, çocukları güvenli bekleme alanına götürdü. Görevli alarmı kontrol etmeye geldiğinde ses kesildi.\n\n“Pusulayı biri mi çalmaya çalıştı?” diye sordu "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "t": "ikon",
+          "v": "bell"
         },
         {
           "t": "metin",
-          "v": ".\n\n“Bilmiyoruz,” dedi arkadaşları "
+          "v": " yükseldi: bip, bip, bip! Ziyaretçiler durdu. Cam vitrindeki tarihî pusula"
         },
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ". “Önce ne olduğunu anlamalıyız.”\n\nBir süre sonra ses yeniden duyuldu. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
+          "t": "ikon",
+          "v": "compass"
         },
         {
           "t": "metin",
-          "v": ", not defterine saati yazdı. "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " salondaki kalabalığı gözledi. İlk alarm sırasında bir grup kapının yanında bekliyordu; ikinci alarmda ise salon neredeyse boştu. Bu bilgi, kalabalığın tek başına neden olamayacağını düşündürdü. "
+          "v": " yerli yerindeydi; kimse ona yaklaşmıyordu. Rehber, çocukları güvenli bekleme alanına götürdü. Görevli alarmı kontrol etmeye geldiğinde ses kesildi. "
         },
         {
           "t": "isaret",
-          "kod": "kitap"
+          "kod": "ipucu"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "“Pusulayı biri mi çalmaya çalıştı?” diye sordu "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". “Bilmiyoruz,” dedi arkadaşı "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". “Önce ne olduğunu anlamalıyız.” Bir süre sonra ses"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " yeniden duyuldu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " defterine saati yazdı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " salondaki kalabalığı gözledi. İlk alarm sırasında bir grup kapının yanında bekliyordu; ikinci alarmda ise salon neredeyse boştu. Bu bilgi, kalabalığın tek başına neden olamayacağını düşündürdü."
         }
       ]
     },
@@ -158,19 +194,11 @@
         },
         {
           "t": "kelime",
-          "yuva": "hr031_sensor"
+          "yuva": "pb_sensor"
         },
         {
           "t": "metin",
-          "v": " kullanıldığını anlattı. “Sensörler hareket, sıcaklık ya da başka değişimleri "
-        },
-        {
-          "t": "kelime",
-          "yuva": "hr031_algilamak"
-        },
-        {
-          "t": "metin",
-          "v": ". Bazen de ayarlarının kontrol edilmesi gerekir,” dedi. Çocuklardan cihazlara ve vitrinlere dokunmamalarını özellikle istedi.\n\n"
+          "v": " adı verilen cihazların kullanıldığını anlattı. “Bu cihazlar hareket, sıcaklık ya da başka değişimleri algılayabilir. Bazen de ayarlarının kontrol edilmesi gerekir,” dedi. Çocuklardan cihazlara ve vitrinlere dokunmamalarını özellikle istedi. "
         },
         {
           "t": "kahraman",
@@ -178,12 +206,37 @@
         },
         {
           "t": "metin",
-          "v": ", alarmlar arasında ortak bir ayrıntı fark etti. Her ikisi de havalandırma sisteminin çalışmaya başladığı sırada duyulmuştu. Bunun arızanın nedeni olduğunu kesin söyleyemezdi. “Bu yalnızca bir tahmin,” diyerek defterine soru işareti koydu. Rehbere gözlemini aktardı.\n\nRehber, alarmın duyulduğu iki saati kontrol odasındaki kayıtlara aktardı. "
+          "v": ", alarmlar arasında ortak bir ayrıntı fark etti. Her ikisi de havalandırma sisteminin çalışmaya başladığı sırada duyulmuştu. Bunun arızanın nedeni olduğunu kesin söyleyemezdi. “Bu yalnızca bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_varsayim"
+        },
+        {
+          "t": "metin",
+          "v": ",” diyerek defterine soru"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " işareti koydu. Rehbere gözlemini aktardı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Rehber, alarmın duyulduğu iki saati kontrol odasındaki kayıtlara aktardı. "
         },
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
@@ -195,7 +248,15 @@
         },
         {
           "t": "metin",
-          "v": ", “Zamanları yeniden kontrol edelim,” dedi. Kayıtlar onun notuyla uyuşuyordu. İki farklı kaynağın aynı bilgiyi göstermesi gözlemlerini güçlendirdi ama nedenin ne olduğunu henüz kanıtlamıyordu."
+          "v": ", “Zamanları yeniden kontrol edelim,” dedi. Kayıtlar onun notuyla uyuşuyordu. İki farklı kaynağın aynı bilgiyi göstermesi gözlemlerini güçlendirdi ama nedenin ne olduğuna dair henüz kesin bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "pb_kanit"
+        },
+        {
+          "t": "metin",
+          "v": " sunmuyordu."
         }
       ]
     },
@@ -205,11 +266,27 @@
         {
           "t": "yoldas",
           "hal": "yalin",
-          "yedek": "bir arkadaş"
+          "yedek": "Hupo"
         },
         {
           "t": "metin",
-          "v": " başka bir olasılık sundu: “Belki alarmı bir telefon sesi tetiklemiştir.” Rehber böyle bir tahmini de not etti; hemen doğru ya da yanlış diye işaretlemedi. "
+          "v": " başka bir olasılık sundu: “Belki alarmı bir telefon sesi tetiklemiştir.” Rehber böyle bir tahmini de not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " etti; hemen doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " ya da yanlış diye işaretlemedi. "
         },
         {
           "t": "kahraman",
@@ -217,55 +294,7 @@
         },
         {
           "t": "metin",
-          "v": ", hangi düşüncenin kanıtlandığını anlamanın tahmin sayısını çoğaltmaktan daha önemli olduğunu söyledi. O sırada salonda kimseye suçlayıcı gözle bakmamaya özen gösterdiler.\n\nTeknik görevli salonun boşaltıldığı güvenli bir anda sistemi denetledi.\n\nTeknik görevli salonun boşaltıldığı güvenli bir anda sistemi denetledi. Vitrinin yakınındaki bir algılayıcının, havalandırmanın oluşturduğu değişime gereğinden fazla duyarlı ayarlandığını belirledi. Yetkili ekip ayarı düzenledi ve alarmı birkaç kez denedi. Artık gereksiz ses duyulmuyordu."
-        }
-      ]
-    },
-    {
-      "omurga": true,
-      "parcalar": [
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " rahatladı. “Demek kimse pusulayı çalmaya çalışmamış.”\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " dikkatle konuştu: “En azından bu iki alarmın nedeni hırsızlık değilmiş. Başta bunu bilmiyorduk.”\n\nSalon yeniden açılmadan önce rehber, ziyaretçilerin neler olduğunu merak ettiğini gördü. Kısa ve sakin bir açıklama yaptı: “Bir koruma sisteminin gereğinden duyarlı ayarı düzeltildi; eserlerimiz güvende.” "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bu açıklamayı beğendi. Hem doğru bilgi veriyor hem de kesinleşmemiş bir suçlama içermiyordu. "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": ", bir sorunun çözülmesinin yalnız aleti onarmak değil, insanlara doğru bilgiyi aktarmak olduğunu düşündü.\n\nGezi devam ettiğinde rehber çocuklara tarihî pusulanın eski yolculuklarda yön bulmaya yardım ettiğini anlattı. "
-        },
-        {
-          "t": "yoldas",
-          "hal": "yalin",
-          "yedek": "bir arkadaş"
-        },
-        {
-          "t": "metin",
-          "v": " pusulayı izlerken küçük bir çelişki fark etti: “Eskiden insanlar yolda kaybolmamak için pusula kullanıyordu; şimdi de eserleri kaybetmemek için sensör kullanıyoruz.”"
+          "v": ", hangi düşüncenin kanıtlandığını anlamanın tahmin sayısını çoğaltmaktan daha önemli olduğunu söyledi. O sırada salonda kimseye suçlayıcı gözle bakmamaya özen gösterdiler."
         }
       ]
     },
@@ -274,7 +303,108 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Sınıfın dönüş otobüsünde herkes en sevdiği eseri söyledi. "
+          "v": "Teknik görevli salonun boşaltıldığı güvenli bir anda sistemi denetledi. Vitrinin yakınındaki bir algılayıcının, havalandırmanın oluşturduğu değişime gereğinden fazla duyarlı ayarlandığını belirledi. Yetkili ekip ayarı düzenledi ve alarmı birkaç kez denedi. Artık gereksiz ses"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " duyulmuyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " rahatladı. “Demek kimse pusulayı çalmaya çalışmamış.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " dikkatle konuştu: “En azından bu iki alarmın nedeni hırsızlık değilmiş. Başta bunu bilmiyorduk.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Salon yeniden açılmadan önce rehber, ziyaretçilerin neler olduğunu merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " ettiğini gördü. Kısa ve sakin bir açıklama yaptı: “Bir koruma sisteminin gereğinden duyarlı ayarı düzeltildi; eserlerimiz güvende.” "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bu açıklamayı beğendi. Hem doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " bilgi veriyor hem de kesinleşmemiş bir suçlama içermiyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ", bir sorunun çözülmesinin yalnız aleti onarmak değil, insanlara doğru bilgiyi aktarmak olduğunu düşündü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Gezi devam ettiğinde rehber çocuklara tarihî pusulanın eski yolculuklarda yön bulmaya yardım"
+        },
+        {
+          "t": "ikon",
+          "v": "hand-help"
+        },
+        {
+          "t": "metin",
+          "v": " ettiğini anlattı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " pusulayı izlerken ilginç bir benzerlik fark etti: “Eskiden insanlar yolda kaybolmamak için pusula"
+        },
+        {
+          "t": "ikon",
+          "v": "compass"
+        },
+        {
+          "t": "metin",
+          "v": " kullanıyordu; şimdi de eserleri kaybetmemek için sensör kullanıyoruz.” Sınıfın dönüş otobüsünde herkes en sevdiği eseri söyledi. "
         },
         {
           "t": "kahraman",
@@ -286,11 +416,44 @@
         },
         {
           "t": "vurgu",
-          "v": "gözlem, varsayım, kanıt"
+          "v": "gözlem"
         },
         {
           "t": "metin",
-          "v": ". “Bir ses bizi korkutmuştu,” dedi, “ama ne olduğunu anlamak için acele hüküm vermemek gerekiyormuş.”\n\nBir sonraki hafta müzeden sınıfa teşekkür mesajı geldi. Görevliler, çocukların dikkatli gözlem paylaşımının incelemeyi kolaylaştırdığını yazmıştı. "
+          "v": ", "
+        },
+        {
+          "t": "vurgu",
+          "v": "varsayım"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
+          "t": "vurgu",
+          "v": "kanıt"
+        },
+        {
+          "t": "metin",
+          "v": ". “Bir ses"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " bizi korkutmuştu,” dedi, “ama ne olduğunu anlamak için acele hüküm vermemek gerekiyormuş.”"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bir sonraki hafta müzeden sınıfa teşekkür mesajı geldi. Görevliler, çocukların dikkatli gözlem paylaşımının incelemeyi kolaylaştırdığını yazmıştı. "
         },
         {
           "t": "kahraman",
@@ -298,15 +461,11 @@
         },
         {
           "t": "metin",
-          "v": " mesajı okurken gülümsedi; müzedeki en ilginç şeyin yalnız geçmişe ait eşyalar değil, bugün kullanılan bilimsel düşünme biçimi olduğunu fark etti.\n\nDil hedefi: kanıt–varsayım, neden–sonuç; Kavram/değer: sensörler, müze kültürü, acele hüküm vermeme. İkon önerileri: müze, alarm, mercek. Okuma sonrası: "
+          "v": " mesajı okurken gülümsedi; müzedeki en ilginç şeyin yalnız geçmişe ait eşyalar değil, bugün kullanılan bilimsel düşünme biçimi olduğunu fark etti. "
         },
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " hangi ortak ayrıntıyı gözlemledi? Neden bunu önce yalnız tahmin saydı?"
+          "t": "isaret",
+          "kod": "kitap"
         }
       ]
     }
@@ -318,231 +477,217 @@
     {
       "id": "s1",
       "beceri": "hatirlama",
-      "dayanak_sayfa": 2,
-      "metin": "İki alarm hangi ortak durumda duyulmuştu?",
+      "dayanak_sayfa": 6,
+      "metin": "Alarmın gereksiz yere çalmasının asıl nedeni neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Havalandırma çalışmaya başladığında"
+          "metin": "Bir ziyaretçi pusulaya dokunmuştu"
         },
         {
           "id": "B",
-          "metin": "Müze kapandığında"
+          "metin": "Müzenin elektriği kesilmişti"
         },
         {
           "id": "C",
-          "metin": "Rehber konuştuğunda"
+          "metin": "Vitrinin yakınındaki algılayıcı, havalandırmanın yarattığı değişime gereğinden fazla duyarlı ayarlanmıştı"
         },
         {
           "id": "D",
-          "metin": "Pusula düştüğünde"
+          "metin": "Bir telefon sesi alarmı tetiklemişti"
         }
       ],
-      "dogru": "A",
-      "aciklama": "İki alarm da havalandırma açıldığında duyulmuştu."
+      "dogru": "C",
+      "aciklama": "Teknik görevli, algılayıcının havalandırmanın oluşturduğu değişime fazla duyarlı ayarlandığını belirledi."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
-      "dayanak_sayfa": 3,
-      "metin": "Alarmların nedeni neydi?",
+      "dayanak_sayfa": 2,
+      "metin": "Çocuklar kalabalığın alarmın tek nedeni olamayacağını neden düşündü?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir algılayıcı havalandırma değişikliğine gereğinden fazla duyarlıydı"
+          "metin": "İlk alarmda kapının yanında bir grup vardı, ikinci alarmda ise salon neredeyse boştu"
         },
         {
           "id": "B",
-          "metin": "Hırsızlar gelmişti"
+          "metin": "Müzede hiç ziyaretçi yoktu"
         },
         {
           "id": "C",
-          "metin": "Pusula bozulmuştu"
+          "metin": "Alarm yalnızca geceleri çalardı"
         },
         {
           "id": "D",
-          "metin": "Telefon çalmıştı"
+          "metin": "Rehber öyle söylemişti"
         }
       ],
       "dogru": "A",
-      "aciklama": "Teknik görevli, algılayıcının ayarının fazla hassas olduğunu buldu."
+      "aciklama": "Kalabalık ikinci alarmda yoktu; bu yüzden kalabalık tek başına neden olamazdı."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
-      "dayanak_sayfa": 5,
-      "metin": "İpek'in “acele hüküm vermemek” sözü neyi anlatır?",
+      "dayanak_sayfa": 4,
+      "metin": "Kayıtlardaki saatlerin çocuğun notuyla uyuşması neyi gösterdi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kanıt olmadan karar vermemeyi"
+          "metin": "Alarmın nedenini kesin olarak kanıtladı"
         },
         {
           "id": "B",
-          "metin": "Müzeyi hemen kapatmayı"
+          "metin": "Gözlemlerin güvenilir olduğunu güçlendirdi ama nedeni henüz kanıtlamadı"
         },
         {
           "id": "C",
-          "metin": "Tahmin etmeyi yasaklamayı"
+          "metin": "Rehberin yanıldığını"
         },
         {
           "id": "D",
-          "metin": "Pusulayı çalmayı"
+          "metin": "Alarmın aslında hiç çalmadığını"
         }
       ],
-      "dogru": "A",
-      "aciklama": "İpek, kanıt toplamadan karar vermenin yanlış olabileceğini söyledi."
+      "dogru": "B",
+      "aciklama": "İki kaynak aynı bilgiyi gösterince gözlemler güçlendi; ancak nedenin ne olduğu hâlâ belli değildi."
     },
     {
       "id": "s4",
       "beceri": "sozcuk_baglami",
-      "dayanak_sayfa": 2,
-      "metin": "Metinde geçen sensör ne işe yarar?",
+      "dayanak_sayfa": 3,
+      "metin": "‘Bu yalnızca bir varsayım’ cümlesinde varsayım ne demektir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hareket, sıcaklık gibi değişimleri algılar"
+          "metin": "Kesin olarak kanıtlanmış bilgi"
         },
         {
           "id": "B",
-          "metin": "Bir tür vitrin"
+          "metin": "Henüz kanıtlanmamış, doğru olabileceği düşünülen düşünce"
         },
         {
           "id": "C",
-          "metin": "Ses çıkarır ama bir şey algılamaz"
+          "metin": "Kimsenin duymadığı bir ses"
         },
         {
           "id": "D",
-          "metin": "Pusulanın parçası"
+          "metin": "Müzedeki bir eser"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Sensör, ortamdaki değişimi algılayan cihazdır."
+      "dogru": "B",
+      "aciklama": "Çocuk, havalandırmanın neden olduğunu kesin söyleyemediği için bunu varsayım diye işaretledi."
+    },
+    {
+      "id": "s5",
+      "beceri": "degerlendirme",
+      "dayanak_sayfa": 7,
+      "metin": "Rehberin ziyaretçilere yaptığı açıklama neden iyi bir açıklamadır?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Çünkü çok uzundu"
+        },
+        {
+          "id": "B",
+          "metin": "Çünkü sorunu gizledi"
+        },
+        {
+          "id": "C",
+          "metin": "Çünkü hırsızın kim olduğunu söyledi"
+        },
+        {
+          "id": "D",
+          "metin": "Çünkü kimseyi suçlamadan doğru ve sakin bilgi verdi"
+        }
+      ],
+      "dogru": "D",
+      "aciklama": "Açıklama doğru bilgi veriyordu ve kesinleşmemiş bir suçlama içermiyordu."
+    },
+    {
+      "id": "s6",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 3,
+      "metin": "Metne göre sensör ne işe yarar?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Müzenin kapısını açan bir anahtardır"
+        },
+        {
+          "id": "B",
+          "metin": "Eski eserleri temizleyen bir fırçadır"
+        },
+        {
+          "id": "C",
+          "metin": "Hareket, sıcaklık gibi değişimleri algılayan bir cihazdır"
+        },
+        {
+          "id": "D",
+          "metin": "Ziyaretçileri sayan bir defterdir"
+        }
+      ],
+      "dogru": "C",
+      "aciklama": "Rehber, sensörlerin hareket, sıcaklık ya da başka değişimleri algılayabildiğini anlattı."
     }
   ],
   "uretim": {
-    "kaynak": "llm_taslak",
+    "kaynak": "elle",
     "tarih": "2026-10-22"
   },
   "sozluk": {
     "sozluk_surumu": 1,
     "girdiler": [
       {
-        "id": "hr031_sensor",
+        "id": "pb_sensor",
         "tur": "kelime",
-        "yazim": "sensörler",
-        "anlam": "Hareket, ısı gibi değişiklikleri algılayan cihaz.",
-        "sinif_alt": 3,
-        "sinif_ust": 5
+        "yazim": "sensör",
+        "anlam": "Hareket, sıcaklık ya da ışık gibi değişimleri algılayan küçük cihaz.",
+        "sinif_alt": 4,
+        "sinif_ust": 4
       },
       {
-        "id": "hr031_alici",
+        "id": "pb_kanit",
         "tur": "kelime",
-        "yazim": "alıcı",
-        "anlam": "Gelen bir sinyali alan araç.",
-        "sinif_alt": 3,
-        "sinif_ust": 5
+        "yazim": "kanıt",
+        "anlam": "Bir düşüncenin doğru olduğunu gösteren bilgi ya da belge.",
+        "sinif_alt": 4,
+        "sinif_ust": 4
       },
       {
-        "id": "hr031_pusula_m",
+        "id": "pb_varsayim",
         "tur": "kelime",
-        "yazim": "pusula",
-        "anlam": "Yönü gösteren, mıknatıslı araç.",
-        "sinif_alt": 3,
-        "sinif_ust": 5
-      },
-      {
-        "id": "hr031_algilamak",
-        "tur": "kelime",
-        "yazim": "algılayabilir",
-        "anlam": "Bir değişikliği duyu ya da cihazla fark etmek.",
-        "sinif_alt": 3,
-        "sinif_ust": 5
-      },
-      {
-        "id": "hr031_fark_etmek",
-        "tur": "kelime",
-        "yazim": "fark etmek",
-        "anlam": "Bir şeyin farkına varmak.",
-        "sinif_alt": 3,
-        "sinif_ust": 5
-      },
-      {
-        "id": "hr031_gozden_kacirmak_m",
-        "tur": "kelime",
-        "yazim": "gözden kaçırmak",
-        "anlam": "Bir ayrıntıyı fark etmemek.",
-        "sinif_alt": 3,
-        "sinif_ust": 5
-      },
-      {
-        "id": "hr031_vitrin",
-        "tur": "kelime",
-        "yazim": "vitrindeki",
-        "anlam": "Eşyaların sergilendiği camlı dolap ya da bölme.",
-        "sinif_alt": 3,
-        "sinif_ust": 5
-      },
-      {
-        "id": "hr031_sergi_dolabi",
-        "tur": "kelime",
-        "yazim": "sergi dolabı",
-        "anlam": "Müzede eserlerin korunup gösterildiği dolap.",
-        "sinif_alt": 3,
-        "sinif_ust": 5
-      },
-      {
-        "id": "hr031_raf",
-        "tur": "kelime",
-        "yazim": "raf",
-        "anlam": "Eşya koymak için duvara ya da dolaba yerleştirilen tahta ya da metal levha.",
-        "sinif_alt": 3,
-        "sinif_ust": 5
+        "yazim": "varsayım",
+        "anlam": "Henüz kanıtlanmamış, doğru olabileceği düşünülen düşünce.",
+        "sinif_alt": 4,
+        "sinif_ust": 4
       }
     ],
     "yuvalar": [
       {
-        "ad": "hr031_sensor",
+        "ad": "pb_sensor",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr031_sensor"
-          },
-          {
-            "girdi": "hr031_alici"
-          },
-          {
-            "girdi": "hr031_pusula_m"
+            "girdi": "pb_sensor"
           }
         ]
       },
       {
-        "ad": "hr031_algilamak",
+        "ad": "pb_kanit",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr031_algilamak"
-          },
-          {
-            "girdi": "hr031_fark_etmek"
-          },
-          {
-            "girdi": "hr031_gozden_kacirmak_m"
+            "girdi": "pb_kanit"
           }
         ]
       },
       {
-        "ad": "hr031_vitrin",
+        "ad": "pb_varsayim",
         "tur": "kelime",
         "adaylar": [
           {
-            "girdi": "hr031_vitrin"
-          },
-          {
-            "girdi": "hr031_sergi_dolabi"
-          },
-          {
-            "girdi": "hr031_raf"
+            "girdi": "pb_varsayim"
           }
         ]
       }

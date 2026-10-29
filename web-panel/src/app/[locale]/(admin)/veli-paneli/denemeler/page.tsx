@@ -1,7 +1,6 @@
 import PageBreadcrumb from "@/components/common/PageBreadCrumb";
-import DenemelerView from "@/components/veli-paneli/DenemelerView";
+import ExamsScope from "@/components/veli-paneli/ExamsScope";
 import VeliMessage from "@/components/veli-paneli/VeliMessage";
-import ChildScope from "@/components/veli-paneli/ChildScope";
 import { redirect } from "@/i18n/navigation";
 import { loadVeliAccess } from "@/lib/veli-paneli/access";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -31,20 +30,7 @@ export default async function DenemelerPage({
 
   let body: React.ReactNode;
   if (access.kind === "ok") {
-    body = (
-      <ChildScope
-        students={access.students}
-        render={(studentId) => {
-          const ogrenci = access.students.find((s) => s.id === studentId) ?? null;
-          return (
-            <DenemelerView
-              cocukId={studentId}
-              cocukAd={ogrenci?.full_name ?? ogrenci?.username ?? null}
-            />
-          );
-        }}
-      />
-    );
+    body = <ExamsScope students={access.students} />;
   } else if (access.kind === "error") {
     body = <VeliMessage text={t("error")} />;
   } else {

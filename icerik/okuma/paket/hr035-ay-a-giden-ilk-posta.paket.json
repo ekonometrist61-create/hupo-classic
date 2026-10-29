@@ -64,14 +64,14 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 477,
+        "kelime_sayisi": 481,
         "tahmini_sure_dk": 6,
         "sayfa_sayisi": 6,
         "soru_sayisi": 4,
@@ -133,7 +133,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Posta merkezinde tavandan Dünya ve Ay'ın "
+          "v": "Posta merkezinde tavandan Dünya ve Ay'ın birer "
         },
         {
           "t": "kelime",
@@ -141,7 +141,7 @@
         },
         {
           "t": "metin",
-          "v": " sarkıyordu. "
+          "v": "i sarkıyordu. "
         },
         {
           "t": "yoldas",
@@ -166,7 +166,7 @@
         },
         {
           "t": "metin",
-          "v": " görevini çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı.\n\nBaşlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırmızıya döndü: Bağlantı kesildi."
+          "v": " rolünü gösteren okları çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı.\n\nBaşlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırmızıya döndü: Bağlantı kesildi."
         }
       ]
     },
@@ -200,7 +200,7 @@
         },
         {
           "t": "metin",
-          "v": " üzülmüştü. Selin teyzesinin doğum gününe yalnızca bir gün kalmıştı. "
+          "v": " üzülmüştü. Selin teyzenin doğum gününe yalnızca bir gün kalmıştı. "
         },
         {
           "t": "yoldas",
@@ -226,7 +226,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Görevli, \"Bu da veri aktarımında kullanılan yöntemlerden biridir,\" dedi. Ardından çocuklara mesajın birden fazla parçasının nasıl kontrol edildiğini gösterdi. Kısa bir bekleyişten sonra uydu bağlantısı tekrar açıldı.\n\nEkrana İleti ulaştı yazısı düşünce "
+          "v": "Görevli, \"Bu da veri aktarımında kullanılan yöntemlerden biridir,\" dedi. Ardından çocuklara mesajın birden fazla parçasının nasıl kontrol edildiğini gösterdi. Kısa bir bekleyişten sonra uydu bağlantısı tekrar açıldı.\n\nEkranda “İleti ulaştı” yazısı çıkınca "
         },
         {
           "t": "yoldas",
@@ -317,23 +317,23 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İki kardeş"
-        },
-        {
-          "id": "B",
           "metin": "Öğretmen ve öğrenci"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Görevli ve teyze"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Üç arkadaş"
+        },
+        {
+          "id": "D",
+          "metin": "İki kardeş"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Eylül ve Can, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."
+      "dogru": "D",
+      "aciklama": "İki kardeş, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."
     },
     {
       "id": "s2",
@@ -343,22 +343,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Mesajın kopyası güvende olduğu için bağlantının yeniden kurulmasını bekledi"
+          "metin": "Mektubu hemen çöpe atıp Ay'a yeni bir mektup yazmaya başladı"
         },
         {
           "id": "B",
-          "metin": "Mektubu çöpe attı"
+          "metin": "Mesajı eksik hâliyle hemen Ay'a gönderdi ve sonucu beklemedi"
         },
         {
           "id": "C",
-          "metin": "Hemen Ay'a gönderdi"
+          "metin": "Kâğıdı yakıp çocuklardan mesajı baştan yazmalarını istedi"
         },
         {
           "id": "D",
-          "metin": "Kâğıdı yaktı"
+          "metin": "Mesajın kopyası güvende olduğu için bağlantının yeniden kurulmasını bekledi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Görevli, mesajın kopyasının güvende olduğunu bildiği için önce bağlantıyı bekledi."
     },
     {
@@ -369,22 +369,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İletişimin birçok aşaması ve dikkat gerektiren adımları olduğunu"
+          "metin": "İletişimin hiçbir hazırlık gerektirmeden kendiliğinden olduğunu"
         },
         {
           "id": "B",
-          "metin": "İletişimin çok kolay olduğunu"
+          "metin": "Mektubun hiç gönderilmeden kaybolduğunu ve geri dönmediğini"
         },
         {
           "id": "C",
-          "metin": "Mektubun hiç gitmediğini"
+          "metin": "İletişimin birçok aşaması ve dikkat gerektiren adımları olduğunu"
         },
         {
           "id": "D",
-          "metin": "Ayın yakın olduğunu"
+          "metin": "Ayın Dünya'ya çok yakın olduğunu ve gecikme olmadığını"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Mesaj, kopyalanma, parçalama ve doğrulama gibi adımlardan geçiyordu."
     },
     {
@@ -395,22 +395,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir şeyin küçültülmüş modeli"
+          "metin": "Uzaya gönderilen özel bir mektup"
         },
         {
           "id": "B",
-          "metin": "Bir tür mektup"
+          "metin": "Bir şeyin küçültülmüş modeli"
         },
         {
           "id": "C",
-          "metin": "Bir uydu"
+          "metin": "Yörüngede dönen büyük bir uydu"
         },
         {
           "id": "D",
-          "metin": "Bir ekran"
+          "metin": "Bilgisayarda görüntü veren bir ekran"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Maket, gerçek bir şeyin küçültülmüş modelidir."
     }
   ],

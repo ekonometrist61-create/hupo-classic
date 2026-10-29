@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2028,
+        "kelime_sayisi": 2027,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 14,
         "soru_sayisi": 4,
@@ -132,7 +132,7 @@
         },
         {
           "t": "metin",
-          "v": ". Aylin Hanım gülümsedi. \"Bazen bir bütünü anlayabilmek için parçalarına bakmak gerekir. Ama canlı bir esere zarar vermeden.\"\n\n"
+          "v": ". Aylin Hanım gülümsedi. \"Bazen bir bütünü anlayabilmek için parçalarına bakmak gerekir. Ama bir esere zarar vermeden.\"\n\n"
         },
         {
           "t": "kahraman",
@@ -730,7 +730,7 @@
         },
         {
           "t": "metin",
-          "v": ", mutfaktaki tabakta küçük bir çiçek örüntüsü buldu. Tabak yeniydi; hiçbir tarihî değeri yoktu. Ama üzerindeki tekrarlar, avluda gördükleri eski süslemeleri hatırlatıyordu. Defterine iki sütun çizdi: \"Benzerlikler\" ve \"Farklar\". Renkleri, biçimleri, üretim malzemelerini ayırdı. Sonunda kısa bir not yazdı: \"Bir desen başka bir desene benzeyebilir; aynı hikâyeye sahip olmak zorunda değildir.\" Bunu okuyan Aylin Hanım, gözlem ile yorum arasındaki ayrımı güzel anlattığı için onu kutladı."
+          "v": ", mutfaktaki tabakta küçük bir çiçek örüntüsü buldu. Tabak yeniydi; hiçbir tarihî değeri yoktu. Ama üzerindeki tekrarlar, avluda gördükleri eski süslemeleri hatırlatıyordu. Defterine iki sütun çizdi: \"Benzerlikler\" ve \"Farklar\". Renkleri, biçimleri, üretim malzemelerini ayırdı. Sonunda kısa bir not yazdı: \"Bir desen başka bir desene benzeyebilir; aynı hikâyeye sahip olmak zorunda değildir.\" Bunu okuyan Aylin Hanım, gözlem ile yorum arasındaki ayrımı güzel kavradığı için onu kutladı."
         }
       ]
     },
@@ -780,22 +780,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Üç kırık parça, bir fırça ve bir kart"
+          "metin": "Küçük bir seramik vazo ve iki fincan"
         },
         {
           "id": "B",
-          "metin": "Altın ve mücevher"
+          "metin": "Üç kırık parça, bir fırça ve bir kart"
         },
         {
           "id": "C",
-          "metin": "Bir harita"
+          "metin": "Bir harita ve küçük bir pusula seti"
         },
         {
           "id": "D",
-          "metin": "Bir defter"
+          "metin": "Ustanın imzalı bir defter sayfası"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kutuda üç kırık parça, bir fırça ve tek satırlık bir kart vardı."
     },
     {
@@ -806,22 +806,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Parçaların kenar biçimlerinin karşılaştırılması"
+          "metin": "Parçaların üzerindeki toz miktarının farkı"
         },
         {
           "id": "B",
-          "metin": "Parçaların ağırlığı"
+          "metin": "Parçaların kenar biçimlerinin karşılaştırılması"
         },
         {
           "id": "C",
-          "metin": "Kartın rengi"
+          "metin": "Kartın üzerinde yazan tarihin okunması"
         },
         {
           "id": "D",
-          "metin": "Kutunun boyu"
+          "metin": "Parçaların hangi müzede saklandığının bilinmesi"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kenar biçimleri, parçaların bütün içindeki yerini belirlemeye yardım etti."
     },
     {
@@ -832,22 +832,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Simetri güçlü bir araçtır ama her güzel desen simetrik olmak zorunda değildir"
+          "metin": "Her desen mutlaka simetrik olmalı ve bütün alanı eşit biçimde doldurmalıdır"
         },
         {
           "id": "B",
-          "metin": "Her desen simetrik olmalıdır"
+          "metin": "Simetri hiçbir zaman kullanılmamalı, bütün kenarlar serbest bırakılmalıdır"
         },
         {
           "id": "C",
-          "metin": "Simetri hiç kullanılmamalıdır"
+          "metin": "Desenler yalnızca renk seçimiyle yapılır, biçim ve boşluk önemsizdir"
         },
         {
           "id": "D",
-          "metin": "Desenler yalnızca renkle yapılır"
+          "metin": "Simetri güçlü bir araçtır ama her güzel desen simetrik olmak zorunda değildir"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Simetri bir araçtır; tasarımın amacına göre serbest bırakılan alanlar da olabilir."
     },
     {
@@ -858,22 +858,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Etrafı yapılarla çevrili açık alan"
+          "metin": "Yüzeyi çinilerle kaplı küçük bir oda"
         },
         {
           "id": "B",
-          "metin": "Bir çini türü"
+          "metin": "Desenin ortasına çizilen bir yıldız"
         },
         {
           "id": "C",
-          "metin": "Bir yıldız"
+          "metin": "Etrafı yapılarla çevrili açık alan"
         },
         {
           "id": "D",
-          "metin": "Bir kâğıt"
+          "metin": "Ustaların kullandığı ince bir fırça türü"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Avlu, bir yapının çevresinde kalan açık alandır."
     }
   ],

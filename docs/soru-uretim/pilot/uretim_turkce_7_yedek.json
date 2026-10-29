@@ -1,0 +1,76 @@
+[
+  {
+    "id": "TR7-033",
+    "sinif": 7,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.7.7",
+    "surec_bileseni": "",
+    "konu": "Yazısında karşılaştırma yapabilme",
+    "alt_konu": "Karşılaştırmayı yazıya taşıma",
+    "soru_metni": "Bir öğrenci “Okuma Araçları” konulu yazısı için şu bilgileri not etmiştir: Kâğıt kitaplar ağırlığı yüzünden çantada yer kaplar. E-kitap okuyucu ise çok hafiftir ve içine yüzlerce kitap yüklenebilir.\n\nÖğrenci bu bilgilerden yararlanarak iki aracı yazısında karşılaştırmak istiyor.\n\nBu amaca en uygun cümle aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Kâğıt kitaplar çantayı doldururken e-kitap okuyucu, hafif yapısıyla çok sayıda kitabı tek başına taşır.",
+      "B": "Kâğıt kitaplar çantada yer kaplar, sayfaları çevirmek de bir süre sonra insanı yorar.",
+      "C": "E-kitap okuyucu içine yüzlerce kitap yüklendiği için okuma alışkanlığını her geçen gün artırır.",
+      "D": "Kâğıt kitap ve e-kitap okuyucu, günümüzde insanların okumak için başvurduğu araçlar arasındadır."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Karşılaştırma yapan cümlede iki aracın aynı yönü yan yana ele alınır.",
+    "cozum_adimlari": [
+      "Öğrencinin amacı iki okuma aracını aynı yönden yan yana koymaktır.",
+      "A seçeneğinde kâğıt kitap ile e-kitap okuyucu, taşınma yönünden bir karşıtlık kurularak anlatılır.",
+      "B seçeneği yalnızca kâğıt kitabı, C seçeneği yalnızca e-kitap okuyucuyu, D seçeneği ise iki aracı yalnızca adlandırarak anlatır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Kâğıt kitabın olumsuz yönlerini sıralar; iki varlığı birlikte ele alıyor gibi görünse de yalnızca tek tarafı anlatır.",
+      "C": "E-kitap okuyucuya ait bilgiyi sonuca bağlar; neden-sonuç kurmak ile karşılaştırma yapmak karıştırılır.",
+      "D": "İki aracın adı aynı cümlede geçer; birlikte anılmak ile karşılaştırılmak aynı sanılır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR7-034",
+    "sinif": 7,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.7.8",
+    "surec_bileseni": "",
+    "konu": "Yazısında sınıflandırma yapabilme",
+    "alt_konu": "Sınıflandırmayı yazıya taşıma",
+    "soru_metni": "Bir öğrenci okul kütüphanesini tanıtan bir yazı hazırlıyor. Kütüphanede roman, hikâye, sözlük ve ansiklopedi bulunmaktadır. Romanlar ve hikâyeler okuyucuyu bir olayın içine çeker. Sözlük ve ansiklopedilerden ise bir konuda bilgi almak için yararlanılır.\n\nÖğrenci bu kitapları ortak özelliklerine göre düzenleyerek yazıya geçirmek istiyor.\n\nBu amaca en uygun cümle aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Kitaplar kullanım amacına göre ayrılır: roman ve hikâye okuma, sözlük ve ansiklopedi başvuru kitabıdır.",
+      "B": "Kütüphanede roman, hikâye, sözlük ve ansiklopedi bulunur, kitapların her biri ayrı bir rafta durur.",
+      "C": "Roman ile ansiklopedi birbirinden farklıdır, çünkü roman bir olay anlatır, ansiklopedi ise bilgi verir.",
+      "D": "Sözlük, sözcüklerin anlamını veren ve alfabetik sıraya göre hazırlanmış bir başvuru kitabıdır."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Sınıflandıran cümle, varlıkları ortak bir özelliğe göre kümelere ayırıp her kümeye ad verir.",
+    "cozum_adimlari": [
+      "Öğrenci kitapları ortak özelliklerine göre kümelere ayırmak istemektedir.",
+      "A seçeneğinde kitaplar kullanım amacına göre iki kümeye ayrılır ve her kümeye ait kitap türleri belirtilir.",
+      "B seçeneği kitapları yalnızca sayar, C seçeneği iki kitabı karşılaştırır, D seçeneği tek bir kitabı tanımlar.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Tüm kitap türlerini bir cümlede sıralar; sayma ile ortak özelliğe göre ayırma karıştırılır.",
+      "C": "Kitap türlerini birbirine yaklaştırıp ayırır; karşılaştırma ile sınıflandırma aynı sanılır.",
+      "D": "Kitap türlerinden birini ayrıntılı tanıtır; tanım yapmak ile sınıflandırmak karıştırılır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "çıkarım",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  }
+]

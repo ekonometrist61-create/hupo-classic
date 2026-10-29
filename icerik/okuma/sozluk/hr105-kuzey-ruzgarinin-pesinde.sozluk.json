@@ -24,17 +24,6 @@
       "durum": "taslak"
     },
     {
-      "id": "hr105_varsayim",
-      "tur": "kelime",
-      "yazim": "varsayım",
-      "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
-      "sinif_alt": 7,
-      "sinif_ust": 8,
-      "kaynak_turu": "editor_onerisi",
-      "kazanim_kodu": null,
-      "durum": "taslak"
-    },
-    {
       "id": "hr105_belirsizlik",
       "tur": "kelime",
       "yazim": "belirsizlik",
@@ -83,17 +72,6 @@
       "tur": "kelime",
       "yazim": "hava durumu",
       "anlam": "Kısa süreli ve belirli bir yerdeki hava koşulları.",
-      "sinif_alt": 7,
-      "sinif_ust": 8,
-      "kaynak_turu": "editor_onerisi",
-      "kazanim_kodu": null,
-      "durum": "taslak"
-    },
-    {
-      "id": "hr105_mevsim",
-      "tur": "kelime",
-      "yazim": "mevsim",
-      "anlam": "Yılın belirli bir dönemindeki genel hava ve doğa durumu.",
       "sinif_alt": 7,
       "sinif_ust": 8,
       "kaynak_turu": "editor_onerisi",
@@ -177,9 +155,6 @@
         },
         {
           "girdi": "hr105_kayit"
-        },
-        {
-          "girdi": "hr105_varsayim"
         }
       ]
     },
@@ -207,9 +182,6 @@
         },
         {
           "girdi": "hr105_hava_durumu"
-        },
-        {
-          "girdi": "hr105_mevsim"
         }
       ]
     },

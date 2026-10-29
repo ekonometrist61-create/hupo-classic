@@ -1,0 +1,159 @@
+[
+ {
+  "id": "MAT5-010",
+  "kazanim_kodu": "MAT.5.1.2",
+  "surec_bileseni": "a",
+  "konu": "Doğal sayılar",
+  "alt_konu": "Çok adımlı gerçek yaşam problemi",
+  "soru_metni": "Defne’nin cüzdanında 100 TL vardı. Her biri 12 TL olan 3 kitap aldı, sonra babası ona 8 TL verdi. Defne’nin cüzdanında son durumda kaç TL vardır?",
+  "siklar": {
+   "A": "72",
+   "B": "56",
+   "C": "40",
+   "D": "1 172"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Paranın azalmasına ve artmasına yol açan olayları sırasıyla ayır; harcamanın toplamını bulmak için önce kitap sayısını dikkate al.",
+  "cozum_adimlari": [
+   "3 kitabın fiyatı 3 × 12 = 36 TL’dir.",
+   "Kitaplar alındıktan sonra 100 − 36 = 64 TL kalır.",
+   "Babası 8 TL verince 64 + 8 = 72 TL olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Babasından gelen parayı da harcama gibi çıkarma: 100 − 36 − 8 işlemi yapılmış.",
+   "C": "Toplamayı çarpmadan önce yapma: 12 + 8 = 20 bulup 3 ile çarpma ve 100’den çıkarma, 100 − (12 + 8) × 3.",
+   "D": "İşlem seçimi hatası: başlangıçtaki 100 TL’yi 12 ile çarpma, 100 × 12 − 36 + 8."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "sayisal_dogrulama": {
+   "ifade": "100-3*12+8",
+   "beklenen_sonuc": 72
+  }
+ },
+ {
+  "id": "MAT5-019",
+  "kazanim_kodu": "MAT.5.3.6",
+  "surec_bileseni": "a",
+  "konu": "Geometri",
+  "alt_konu": "Kare ve dikdörtgenin ortak özellikleri",
+  "soru_metni": "Bir fotoğraf stüdyosunda kare biçimli ve dikdörtgen biçimli iki çerçeve vardır. Çerçevelerin kenar ve açıları incelendiğinde ikisi için de doğru olan ifade hangisidir?",
+  "siklar": {
+   "A": "Karşılıklı kenarlarının uzunlukları birbirine eşittir.",
+   "B": "Dört kenarının uzunluğu birbirine eşittir.",
+   "C": "Yan yana duran kenarları birbirine eşit uzunluktadır.",
+   "D": "Köşelerinden ikisinin açısı dar açı biçimindedir."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her ifadeyi önce kare için, sonra dikdörtgen için ayrı ayrı sına; yalnızca ikisinde birden geçerli olan ifade doğrudur.",
+  "cozum_adimlari": [
+   "Karede dört kenar eşittir; dikdörtgende yalnızca karşılıklı kenarlar eşittir.",
+   "Karşılıklı kenarların eşit olması hem kare hem dikdörtgen için geçerlidir.",
+   "Dört kenarın eşit olması ve yan yana kenarların eşit olması dikdörtgende her zaman doğru değildir.",
+   "İki şeklin de dört açısı dik açıdır; dar açı yoktur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Karenin özelliğini dikdörtgene de uygulama; dikdörtgenin kenarları genellikle farklı uzunluktadır.",
+   "C": "Yan yana kenarların eşitliği yalnızca kare için geçerlidir; dikdörtgende kısa ve uzun kenar yan yana durur.",
+   "D": "Açı özelliği yanlış bilinmiş: kare ve dikdörtgenin dört açısı da dik açıdır, dar açı yoktur."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "suslu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)"
+ },
+ {
+  "id": "MAT5-021",
+  "kazanim_kodu": "MAT.5.4.1",
+  "surec_bileseni": "a",
+  "konu": "Ölçme",
+  "alt_konu": "Çevresi verilen dikdörtgenin kenar uzunluğu",
+  "soru_metni": "Ela, 24 cm uzunluğundaki telin bütününü kullanarak dikdörtgen biçiminde bir fotoğraf çerçevesi yapacaktır. Çerçevenin kısa kenarı 5 cm olduğuna göre uzun kenarı kaç santimetredir?",
+  "siklar": {
+   "A": "19",
+   "B": "12",
+   "C": "7",
+   "D": "14"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Tel çerçevenin bütün kenarlarını oluşturur; dikdörtgende her uzunlukta kaç kenar bulunduğunu düşün.",
+  "cozum_adimlari": [
+   "Telin uzunluğu dikdörtgenin çevresine eşittir: 24 cm.",
+   "Bir kısa ve bir uzun kenarın toplamı çevrenin yarısıdır: 24 ÷ 2 = 12 cm.",
+   "Uzun kenar 12 − 5 = 7 cm’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Telin tamamından yalnızca bir kısa kenarı çıkarma: 24 − 5.",
+   "B": "Ara sonucu nihai sanma: çevrenin yarısı olan 12 cm’yi uzun kenar olarak alma.",
+   "C": "Doğru.",
+   "D": "Çevreden iki kısa kenarı çıkarıp kalanı uzun kenar sanma: 24 − 2 × 5, iki uzun kenarın toplamı olan 14 cm’yi bulma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "sayisal_dogrulama": {
+   "ifade": "24/2-5",
+   "beklenen_sonuc": 7
+  }
+ },
+ {
+  "id": "MAT5-029",
+  "kazanim_kodu": "MAT.5.6.1",
+  "surec_bileseni": "a",
+  "konu": "Olasılık",
+  "alt_konu": "Kesin olay",
+  "soru_metni": "Bir torbada 8 kırmızı bilye vardır ve torbada başka renkte bilye yoktur. Torbadan gözü kapalı bir bilye çekilecektir. Çekilen bilyenin kırmızı olma olasılığı hangisidir?",
+  "siklar": {
+   "A": "0",
+   "B": "1",
+   "C": "1/8",
+   "D": "1/2"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Torbadaki bilyelerin renklerine bak ve çekilebilecek bütün sonuçların hangi renkte olacağını düşün.",
+  "cozum_adimlari": [
+   "Torbadaki bütün bilyeler kırmızıdır.",
+   "Çekilen bilye mutlaka kırmızı olur; bu olay kesindir.",
+   "Kesin bir olayın olasılığı 1’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Olasılığı 0 sanma: 0 imkânsız olayın olasılığıdır, burada olay kesindir.",
+   "B": "Doğru.",
+   "C": "Tek bir bilyenin payını alma: 8 bilyeden birini seçilen sanıp 1/8 bulma.",
+   "D": "Yalnızca iki durum (kırmızı olur ya da olmaz) varmış gibi düşünüp eşit olasılık sanma."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)"
+ }
+]

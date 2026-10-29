@@ -1,0 +1,71 @@
+# HR-017 · Mahallenin En Hızlı Bisikleti · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=8b3c3760-d5d0-421e-9273-e0958aa393a2, surum_no=3, sha256=28ff45bb1730fee71ecff5540daebac67e6f69da5030f6c7768c73968eb6f0f6
+Not: bu hikâyede 3 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr017-mahallenin-en-hizli-bisikleti | Tür: spor | Konu: mahalle | Dünya: gercekci
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Eski bir bisikletle mahalle yarışına katılmak kolay mı? Bir arkadaşın yardımı ne kazandırır?
+İzinli türler: ben, arkadas, kardes
+Değer anahtarları (sürüm): D3, D20 | maarif.ana_deger: D3
+Etiketler: ana_sinif=2, okuma_zorlugu=1, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: dayanisma, sabir_emek | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: eski (lexeme, first_hint: eski); yeni (lexeme, application: yeni); kavram_hr017 (concept, application: Denge); atasoz_hr017 (proverb, application: Bir elin nesi var, iki elin sesi var)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":7,"simge_sayisi":6,"kelime_sayisi":214,"tahmini_sure_dk":4,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":2,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Bisikletin boyası yer yer dökülmüştü. Arkadaşlarınınkiler parlaktı ama [KAHRAMAN hal=yalin] kendi [KELİME yuva=s2_eski] bisikletini çok seviyordu. Mahalle yarışına katılmaya karar verdiğinde babası önce kaskını ve frenleri kontrol etti.
+--- Sayfa 2 ---
+Yarış afişini görünce [KAHRAMAN hal=yalin] gidonu sıkıca tuttu. Mert'in bisikleti [KELİME yuva=s2_yeni] ve parlaktı. "Önce bisikletin nasıl[İKON question] göründüğüne değil, güvenli olup olmadığına bakalım," dedi babası. [YOLDAŞ hal=yalin yedek=Hupo] de frenleri denemeye yardım[İKON hand-help] etti. Kaskın tam oturduğundan emin oldular.
+--- Sayfa 3 ---
+Antrenman için okulun yanındaki boş alana gittiler. İlk gün küçük dönüşlerde yavaşladı, ikinci gün daha dengeli sürdü. Bir hafta sonra bir çizginin üzerinden dikkatle geçebiliyordu. Mert ara sıra ona eşlik etti: "Hızlı olmak zorunda değilsin. Önemli olan kontrolü kaybetmemek."
+--- Sayfa 4 ---
+Yarış sabahı start çizgisinde bisikletler yan yana duruyordu. Tam o sırada Mert'in bisikletinin zinciri çıktı. Yüzü asıldı: "Her şey bitti." [KAHRAMAN hal=yalin] başlama işaretini kaçırmaktan korktu. Ama arkadaşının üzgün hâlini görünce elini kaldırıp görevliye seslendi.
+--- Sayfa 5 ---
+Görevli zincirin düzeltilmesine yardım[İKON hand-help] etti. [KAHRAMAN hal=yalin] babasıyla birlikte[İKON friends] kenarda beklerken Mert son anda yarışa yetişti. İkisi yan yana başladı. Mahallede "[ATASÖZÜ yuva=ata_elin_nesi]" derlerdi.
+--- Sayfa 6 ---
+[KAHRAMAN hal=yalin] birinci olmadı. Finişte Mert ona sarıldı: "Sen olmasaydın hiç başlayamazdım." [YOLDAŞ hal=yalin yedek=Hupo] de bu sözü duyunca gülümsedi. [KAHRAMAN hal=yalin] eski bisikletinin gidonuna küçük bir yıldız[İKON star] çıkartması yapıştırdı. O yıldız ona hızdan çok arkadaşlığı hatırlatıyordu. [İŞARET kod=yildiz]
+--- Sayfa 7 ---
+Akşam [KAHRAMAN hal=yalin] kaskını rafına koydu. Bisikletin boyası yine aynıydı. Ama artık her bakışında yarış gününü değil, emeği ve dostluğu hatırlıyordu.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=A
+  Metin: Metinde bisikletin boyası nasıldı?
+  A) Yer yer dökülmüştü
+  B) Tamamen yeniydi
+  C) Hiç boyası yoktu
+  Açıklama: Bisikletin boyası yer yer dökülmüştü.
+s2 [cikarim] dayanak_sayfa=4 doğru=A
+  Metin: Yarışta birinci olamamasının nedeni neydi?
+  A) Arkadaşının zincirine yardım etmek için geç başlamak
+  B) Bisikletinin çok eski olması
+  C) Frenlerinin çalışmaması
+  Açıklama: Arkadaşının bisikleti için yardım çağırdı ve yarışa geç yetişti.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Yıldız çıkartması kahramana neyi hatırlatıyordu?
+  A) Hızdan çok arkadaşlığı
+  B) Kazanılan bir madalyayı
+  C) Yeni bir bisiklet alacağını
+  Açıklama: Yıldız, ona hızdan çok arkadaşlığı hatırlatıyordu.
+s4 [sozcuk_baglami] dayanak_sayfa=1 doğru=A
+  Metin: Metinde geçen eski sözcüğü hangi anlama gelir?
+  A) Çok önce yapılmış ya da kullanılmış olan
+  B) Çok hızlı olan
+  C) Renkli olan
+  Açıklama: Eski bisiklet, uzun süredir kullanılan bisikletti.
+
+## Sözlük
+- s2_eski | kelime | yazım: eski | 2–2 | anlam: Çok önce yapılmış ya da kullanılmış olan.
+- s2_yeni | kelime | yazım: yeni | 2–2 | anlam: Yakın zamanda yapılmış, az kullanılmış olan.
+- ata_elin_nesi | atasozu | yazım: Bir elin nesi var, iki elin sesi var | 2–2 | anlam: Tek kişinin gücü sınırlıdır; birlikte daha çok şey yapılır.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

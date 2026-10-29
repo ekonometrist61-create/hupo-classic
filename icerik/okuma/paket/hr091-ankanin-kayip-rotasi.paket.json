@@ -72,7 +72,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3552,
+        "kelime_sayisi": 3563,
         "tahmini_sure_dk": 29,
         "sayfa_sayisi": 27,
         "soru_sayisi": 4,
@@ -636,7 +636,7 @@
         },
         {
           "t": "metin",
-          "v": " bu cümleyi okuyunca önce güldü, sonra düşündü. Hayal gücüyle gerçeği ayırmak, birinden vazgeçmek demek değildi. Belki HupoRead için en güzel hikâyeler de tam bu iki dünyanın birbirine dokunduğu yerde doğardı.\n\nO gün okul bahçesinde beklenmedik bir konuk vardı. Gözlem alanından gelen Ceren Hanım, öğrencilerin yeni çalışmasını görmek için uğramıştı. Panoları gezdi, bütün kaynak etiketlerini okudu. Sonra sakin bir sesle, “Sergi güzel. Ancak gerçek kuşların nerede yuvalandığını gösteren hassas konumları herkesle paylaşmadığınızdan emin olun,” dedi. Bazı türlerin üreme alanları meraklı kalabalıkların yoğun ziyaretinden olumsuz etkilenebilirdi. "
+          "v": " bu cümleyi okuyunca önce güldü, sonra düşündü. Hayal gücüyle gerçeği ayırmak, birinden vazgeçmek demek değildi. Belki en güzel hikâyeler de tam bu iki dünyanın birbirine dokunduğu yerde doğardı.\n\nO gün okul bahçesinde beklenmedik bir konuk vardı. Gözlem alanından gelen Ceren Hanım, öğrencilerin yeni çalışmasını görmek için uğramıştı. Panoları gezdi, bütün kaynak etiketlerini okudu. Sonra sakin bir sesle, “Sergi güzel. Ancak gerçek kuşların nerede yuvalandığını gösteren hassas konumları herkesle paylaşmadığınızdan emin olun,” dedi. Bazı türlerin üreme alanları meraklı kalabalıkların yoğun ziyaretinden olumsuz etkilenebilirdi. "
         },
         {
           "t": "kahraman",
@@ -1119,7 +1119,7 @@
         },
         {
           "t": "metin",
-          "v": " bunu öğrendiği için mutluydu."
+          "v": " bunu öğrendiği için mutluydu.\n\nNot: Bu bir masaldır; gerçek dünyaya ilişkin bilimsel veya dinî bir iddia taşımaz."
         }
       ]
     }
@@ -1147,22 +1147,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Açık mavi, kesik bir çizgi"
+          "metin": "Kalın, düz bir kırmızı çizgi"
         },
         {
           "id": "B",
-          "metin": "Kalın kırmızı çizgi"
+          "metin": "Yeşil bir halka, göle yakın"
         },
         {
           "id": "C",
-          "metin": "Yeşil bir halka"
+          "metin": "Hiçbir çizgi yoktu, bölge boştu"
         },
         {
           "id": "D",
-          "metin": "Hiçbir çizgi yoktu"
+          "metin": "Açık mavi, kesik bir çizgi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Bu yılki haritada aynı bölgede yalnız açık mavi, kesik bir çizgi vardı."
     },
     {
@@ -1173,22 +1173,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Göç rotasının değiştiğini kesin kanıtlamıyordu, ama araştırılacak bir ipucuydu"
+          "metin": "Göç rotası kesin olarak değişti; yeni yol bütün kuşları başka bölgeye yönlendirdi"
         },
         {
           "id": "B",
-          "metin": "Göç rotası kesin olarak değişti"
+          "metin": "Göç rotasının değiştiğini kesin kanıtlamıyordu, ama araştırılacak bir ipucuydu"
         },
         {
           "id": "C",
-          "metin": "Yol çalışması kuşları öldürdü"
+          "metin": "Yol çalışması kuşları öldürdü ve göl kıyısındaki bütün gözlem noktaları kapandı"
         },
         {
           "id": "D",
-          "metin": "Hiçbir etkisi yoktu"
+          "metin": "Göçle ilgili hiçbir etkisi yoktu ve kayıtlar bunu açıkça gösteriyordu"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Yol çalışması, rotanın değiştiğini gösteren bir ipucuydu ama kanıt değildi."
     },
     {
@@ -1199,22 +1199,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Masal simgede, bilim ise soruyu ölçülebilir biçimde sormakta güçlüdür"
+          "metin": "İkisi de aynı ölçüde güçlüdür, çünkü ikisi de kanıtla yapılır"
         },
         {
           "id": "B",
-          "metin": "İkisi aynı güce sahiptir"
+          "metin": "Masal ölçüm yapar, bilim ise yalnız hikâye anlatır ve hayal kurar"
         },
         {
           "id": "C",
-          "metin": "Masal ölçüm yapar"
+          "metin": "Bilim yalnız hayal kurar, masal ise hiçbir soruyu sormaz ve yanıtlamaz"
         },
         {
           "id": "D",
-          "metin": "Bilim yalnız hayal kurar"
+          "metin": "Masal simgede, bilim ise soruyu ölçülebilir biçimde sormakta güçlüdür"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Masalın gücü simgesinde, bilimin gücü ise ölçülebilir soruda yatar."
     },
     {
@@ -1225,22 +1225,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Başka bir anlamı temsil eden işaret ya da nesne"
+          "metin": "Göç sırasında sürü hâlinde uçan küçük bir kuş türü"
         },
         {
           "id": "B",
-          "metin": "Bir tür kuş"
+          "metin": "Haritadaki mesafeleri gerçek ölçüye çeviren bir oran"
         },
         {
           "id": "C",
-          "metin": "Bir harita ölçeği"
+          "metin": "Başka bir anlamı temsil eden işaret ya da nesne"
         },
         {
           "id": "D",
-          "metin": "Bir kültür merkezi"
+          "metin": "Yerel bir kültür merkezinde düzenlenen küçük bir sergi"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Simge, bir anlamı temsil eden işarettir."
     }
   ],

@@ -35,7 +35,7 @@ export async function karsilamaAtla(page: Page) {
 export async function girisBaglantisi(page: Page) {
   const secici = 'a[href="/veli-paneli/giris"]:visible';
   if ((await page.locator(secici).count()) === 0) {
-    await page.locator("header button[aria-expanded]").click();
+    await page.locator("header button[aria-expanded][aria-label]:visible").click();
   }
   return page.locator(secici).first();
 }

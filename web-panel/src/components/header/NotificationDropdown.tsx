@@ -1,5 +1,6 @@
 "use client";
 
+import { oturumuBekle } from "@/hooks/useCurrentRole";
 import { Link } from "@/i18n/navigation";
 import { cn } from "@/utils";
 import { createClient } from "@/utils/supabase/client";
@@ -43,10 +44,10 @@ export default function NotificationDropdown() {
   const [hata, setHata] = useState<string | null>(null);
 
   const yukle = useCallback(async () => {
-    const supabase = createClient();
-    const { data: { user } } = await supabase.auth.getUser();
-    if (!user) return;
-    const { data, error } = await supabase.rpc("get_bildirimler", {
+    // Kullanıcı kimliği paylaşılan oturum bilgisinden gelir; ayrı bir getUser çağrısı yapılmaz.
+    const oturum = await oturumuBekle();
+    if (!oturum.kullaniciId) return;
+    const { data, error } = await createClient().rpc("get_bildirimler", {
       p_limit: LISTE_BOYUTU,
       p_offset: 0,
     });

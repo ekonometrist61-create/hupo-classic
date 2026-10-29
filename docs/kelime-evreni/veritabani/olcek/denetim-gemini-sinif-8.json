@@ -1,0 +1,146 @@
+{
+ "model": "gemini-3.8-flash",
+ "aile": "gemini",
+ "sonuc": [
+  {
+   "no": 1,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 2,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 3,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 4,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 5,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 6,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 7,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 8,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 9,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 10,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 11,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 12,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 13,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 14,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 15,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 16,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 17,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": "C seçeneğinde ek düşmesi var, 'kara yaklaştı' yerine 'karaya yaklaştı' olmalıdır."
+  },
+  {
+   "no": 18,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 19,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 20,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  }
+ ]
+}

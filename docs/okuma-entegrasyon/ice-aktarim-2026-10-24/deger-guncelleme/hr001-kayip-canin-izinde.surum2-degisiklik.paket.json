@@ -1,0 +1,450 @@
+{
+  "hikaye": {
+    "tur": "macera",
+    "konu": "bahce",
+    "slug": "hr001-kayip-canin-izinde",
+    "durum": "taslak",
+    "baslik": "Kayıp Çanın İzinde",
+    "tanitim": "Okul bahçesindeki küçük çan kayboldu. Sesini dinleyerek onu bulabilir miyiz?",
+    "fis_kodu": "HR-001",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D20",
+        "yardimci_deger": "D12"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 4,
+        "sayfa_sayisi": 7,
+        "simge_sayisi": 8,
+        "kelime_sayisi": 206,
+        "tahmini_sure_dk": 4,
+        "yoldas_yer_sayisi": 4,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "okul",
+        "kesif"
+      ],
+      "ana_sinif": 2,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 1,
+      "kavram_zorlugu": 1,
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "dikkatle",
+          "tur": "lexeme",
+          "yuva": "s2_dikkatle",
+          "islev": "first_hint",
+          "etiket": "dikkatle"
+        },
+        {
+          "id": "uzak",
+          "tur": "lexeme",
+          "yuva": "s2_uzak",
+          "islev": "application",
+          "etiket": "uzak"
+        },
+        {
+          "id": "kavram_hr001",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Sesin kaynağı"
+        }
+      ]
+    },
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 1,
+    "izinli_turler": [
+      "ben",
+      "kardes",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D20",
+      "D12"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "s2_dikkatle",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_dikkatle"
+          }
+        ]
+      },
+      {
+        "ad": "s2_uzak",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_uzak"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "s2_dikkatle",
+        "tur": "kelime",
+        "anlam": "Özen göstererek, işini iyi yaparak.",
+        "yazim": "dikkatle",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_uzak",
+        "tur": "kelime",
+        "anlam": "Yakın olmayan, bir yere çok ileride olan.",
+        "yazim": "uzak",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "A",
+      "metin": "Çanın yerinde ne vardı?",
+      "beceri": "hatirlama",
+      "aciklama": "Çanın yerinde yalnızca bir ip sallanıyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Sallanan bir ip"
+        },
+        {
+          "id": "B",
+          "metin": "Uyuyan bir kedi"
+        },
+        {
+          "id": "C",
+          "metin": "Açık bir kapı"
+        }
+      ],
+      "dayanak_sayfa": 1
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Çocuk çanın sesini neden bir süre duyamadı?",
+      "beceri": "cikarim",
+      "aciklama": "Bir kuş öttü ve çanın sesi kuşun sesine karıştı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kuşun sesi çanın sesine karıştığı için"
+        },
+        {
+          "id": "B",
+          "metin": "Çan bahçeden çok uzaklaştığı için"
+        },
+        {
+          "id": "C",
+          "metin": "Kulaklarını kapattıkları için"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s3",
+      "dogru": "B",
+      "metin": "Hikâyenin sonunda çocuk neyi öğrenmiştir?",
+      "beceri": "yorumlama",
+      "aciklama": "Çocuk, dinleyince her sesin yerini bulabildiğini söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bütün seslerin birbirinin aynısı olduğunu"
+        },
+        {
+          "id": "B",
+          "metin": "Dinleyerek seslerin yerini bulabileceğini"
+        },
+        {
+          "id": "C",
+          "metin": "Çanın artık hiç çalmayacağını"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen dikkatle sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Hupo, önce özenle bakmalarını söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Özen göstererek"
+        },
+        {
+          "id": "B",
+          "metin": "Çok hızlı"
+        },
+        {
+          "id": "C",
+          "metin": "Yüksek sesle"
+        }
+      ],
+      "dayanak_sayfa": 2
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Bahçedeki küçük çanın yerinde yalnızca bir ip sallanıyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sabah"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " zilini beklerken şaşırdı. \"Çan"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " nereye gitti?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " kulağını kaldırdı. Yaprakların arasından "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_uzak"
+        },
+        {
+          "t": "metin",
+          "v": " bir çın sesi geldi. "
+        },
+        {
+          "t": "isaret",
+          "kod": "ipucu"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Önce oyun kulübesine baktılar. Kulübe sessizdi. Sonra çeşmenin yanına yürüdüler. Ses biraz daha yakın duyuluyordu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ağaca koşmak istedi. Ama "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " durdurdu: \"Önce "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_dikkatle"
+        },
+        {
+          "t": "metin",
+          "v": " bakalım.\""
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Tam o sırada okulun bahçesinde bir kuş"
+        },
+        {
+          "t": "ikon",
+          "v": "bird"
+        },
+        {
+          "t": "metin",
+          "v": " öttü. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " başını çevirdi. Kuşun sesi çanın sesine karışmıştı. Bir süre konuşmadan beklediler. Teneffüs bitip kalabalık sınıfa girince çın sesi yeniden duyuldu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gözlerini kapadı. Ses sol taraftan geliyordu. Önlerinde üç ağaç"
+        },
+        {
+          "t": "ikon",
+          "v": "tree"
+        },
+        {
+          "t": "metin",
+          "v": " vardı. İlk ağacın dallarında yalnızca yapraklar sallanıyordu. İkinci ağacın altında bir kedi"
+        },
+        {
+          "t": "ikon",
+          "v": "cat"
+        },
+        {
+          "t": "metin",
+          "v": " uyuyordu. Üçüncü ağacın en alt dalında ise bir ip parçası sarkıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " hemen yukarı uzanmak istedi. Ancak yerde kaygan taşlar vardı. \"Dur,\" dedi "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Önce bahçe görevlisine haber verelim.\" Çocuklar gördüklerini anlattı. Cemil amca uzun saplı güvenli bir araçla çanı aşağı indirdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " çanı eline alınca gülümsedi. \"Sesin yakın mı uzak mı olduğunu dinleyerek anlayabiliyoruz,\" dedi. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " başını salladı. Çan"
+        },
+        {
+          "t": "ikon",
+          "v": "bell"
+        },
+        {
+          "t": "metin",
+          "v": " yeniden yerine asıldı. O gün ders zili her zamankinden güzel çaldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi sabah"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " sessizce bahçeyi dinledi. Kuşların ötüşünü, hafif rüzgârı ve çanın sesini birbirinden ayırabildi. Arkadaşı \"Bütün sesler aynı mı?\" diye sorduğunda gülümsedi. \"Hayır,\" dedi, \"dinleyince her birinin yerini bulabiliyoruz.\""
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

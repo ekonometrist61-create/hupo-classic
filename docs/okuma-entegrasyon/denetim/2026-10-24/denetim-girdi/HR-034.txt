@@ -1,0 +1,94 @@
+# HR-034 · 2040'ın Konuşan Okul Çantası · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=20b1e315-95c6-421c-96e2-c3b3ceb97786, surum_no=2, sha256=f4e03570c7759b903cc81f67ae7ac96fc4671f2c35886d4bc7921472ff14d98f
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr034-2040-konusan-okul-cantasi | Tür: mizah | Konu: akilli_canta | Dünya: masalsi
+Sınıf: 4–4 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Çanta ödevi yapmış, kahvaltıyı hazırlamış, hatta dişleri fırçalamayı önermiş. Peki çocuk ne yapacak?
+İzinli türler: ben, arkadas, hayali
+Değer anahtarları (sürüm): D16, D3 | maarif.ana_deger: D16
+Etiketler: ana_sinif=4, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: bilim_teknoloji, okul, sabir_emek | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: ipucu_hr034 (lexeme, first_hint: ipucu); yontem_hr034 (lexeme, application: yöntem); danismanlik_hr034 (lexeme, application: danışmanlık); kavram_hr034 (concept, application: Dijital denge ve öz yönetim); atasoz_hr034 (proverb, application: Emek olmadan yemek olmaz)
+Ölçülen: {"soru_sayisi":6,"sayfa_sayisi":9,"simge_sayisi":18,"kelime_sayisi":471,"tahmini_sure_dk":6,"yoldas_yer_sayisi":4,"hedef_tur_dagilimi":{"lexeme":3,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+2040 yılının pazartesi sabahı [KAHRAMAN hal=ilgi] okul çantası aniden konuştu: "Günaydın! Çorapların eşleşti. Kahvaltın hazır. Matematik[İKON math] ödevini de yaptım!" [KAHRAMAN hal=yalin] yorganın altından başını çıkardı. "Ödevi mi yaptın? Ben daha soruları görmedim!" "Ben akıllı çantayım," diye cevap verdi çanta. "İstersen dişlerini de senin yerine fırçalamayı deneyebilirim."
+--- Sayfa 2 ---
+[KAHRAMAN hal=yalin] güldü. Fakat okula gidince işler karıştı. Öğretmeni problem çözmesini istediğinde çanta hemen masasından seslendi: "Cevap kırk sekiz! Açıklaması için bir tuşa basınız!" Sınıf[İKON school] gülüşmeye başladı. Öğretmen, "[KAHRAMAN hal=yalin], cevabı sen nasıl[İKON question] buldun?" diye sordu. [KAHRAMAN hal=yalin] cevap veremedi. Çünkü işlemi hiç denememişti.
+--- Sayfa 3 ---
+Teneffüste arkadaşı [YOLDAŞ hal=yalin yedek=Hupo] ona bir kâğıt uzattı. Üzerinde iki farklı yol gösteren bir matematik[İKON math] problemi vardı. "Çantan çok hızlı," dedi [YOLDAŞ hal=yalin yedek=Hupo], "ama onun ne yaptığını anlamıyorsan hızının sana ne yararı var?" [KAHRAMAN hal=yalin] düşündü. Akşam çantanın ayarlarını açtı. Ekranda üç seçenek vardı: *Benim yerime yap*, *Birlikte[İKON friends] yap*, *Yalnızca hatırlat*.
+--- Sayfa 4 ---
+"Birlikte yap," dedi [KAHRAMAN hal=yalin]. Çanta şaşırmış gibi küçük bir ışık yaktı. "Emin misin? Tek başıma daha kısa sürüyor." "Kısa sürmesi her zaman[İKON clock] daha iyi olduğu anlamına gelmez." Sabah[İKON sun] okula gelirken akıllı çanta, yağmur[İKON rain] ihtimali olduğunu hatırlattı. [KAHRAMAN hal=yalin] şemsiyesini almayı unutmadı. Böylece çantanın gerçekten yararlı olduğu bir iş de ortaya çıktı. [İŞARET kod=bulut]
+--- Sayfa 5 ---
+Sınıfa girince [KAHRAMAN hal=yalin] [YOLDAŞ hal=yonelme yedek=Hupo], "Benim yerime düşünmesini istemiyorum ama dikkat etmem gereken şeyleri hatırlatabilir," dedi. [YOLDAŞ hal=yalin yedek=Hupo] de kendi küçük ajandasını gösterdi: "Ben de bunları deftere yazıyorum. Hangi araçla yaparsan yap, önemli olan kararın sende kalması." [KAHRAMAN hal=yalin] bu sözleri aklında tuttu. Ertesi gün çanta matematik[İKON math] problemini okumaya başladı: "Bir bahçede dört sıra ağaç[İKON tree] var..." [KAHRAMAN hal=yalin] onu durdurdu. "Önce ben çözeceğim. Takılırsam [KELİME yuva=pc_ipucu] ver."
+--- Sayfa 6 ---
+Çanta sessiz kaldı. [KAHRAMAN hal=yalin] dört sırayı çizdi, her sıraya altı ağaç[İKON tree] koydu. Saydı, sonra çarpma işlemini yazdı. "Yirmi dört!" diye bağırdı. "Doğru," dedi çanta. "Aferin... Pardon, tebrik ederim." [İŞARET kod=yildiz] O gün sınıfta teknoloji sergisi vardı. [KAHRAMAN hal=yalin], çantasına yeni bir görev[İKON quest] verdi: kaybolan defterlerin hangi rafta olduğunu hatırlatmak. Çanta herkese yardım[İKON hand-help] etti, fakat kimsenin yerine ödev yapmadı.
+--- Sayfa 7 ---
+Sergide başka bir çocuk, çantanın her soruya doğru[İKON check] yanıt verdiğini görünce hemen aynısından istemişti. [KAHRAMAN hal=yalin] ona iki farklı kâğıt gösterdi. Birinde çantanın hazırladığı kusursuz cevaplar, diğerinde kendi silgileriyle düzelttiği işlemler vardı. "İlkine bakınca hiçbir şey hatırlamıyorum," dedi. "İkincisini yaparken iki kez yanıldım. Ama nerede yanıldığımı gördüğüm için artık bir [KELİME yuva=pc_yontem] biliyorum." Arkadaşı, "Demek hata yapmak bazen işe yarıyor," deyince öğretmen başını sallayıp "[ATASÖZÜ yuva=pc_ata_emek]" dedi.
+--- Sayfa 8 ---
+Gösteri bitince öğretmeni [KAHRAMAN hal=yonelme], "Bugün çantana sen mi yardım[İKON hand-help] ettin, çantan mı sana?" diye sordu. [KAHRAMAN hal=yalin] gülerek cevap verdi: "İkimiz de birbirimize. O hatırlattı, ben düşündüm." Tam çıkacaklardı ki çanta yeniden konuştu: "Akşam yemeğinde üç brokoli öneriyorum." "Ona ben karar vereceğim!" dedi [KAHRAMAN hal=yalin]. Çanta bir süre sustu. Sonra ciddi bir sesle ekledi: "Anlaşıldı. Brokoli [KELİME yuva=pc_danismanlik] hizmetim şimdilik kapatıldı."
+--- Sayfa 9 ---
+[KAHRAMAN hal=yalin] gülerken çantanın üstüne küçük bir etiket yapıştırdı: *Önce kendim denerim*. Ertesi sabah[İKON sun] çanta yalnızca "Ödev çantanda mı?" diye sordu. [KAHRAMAN hal=yalin] defterini gösterdi. "Bu soruyu sorman çok iyi," dedi. "Cevabı kendim verebildiğim sürece yardımını seviyorum."
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=C
+  Metin: Öğretmen problem çözmelerini isteyince akıllı çanta ne yaptı?
+  A) Sessiz kaldı
+  B) Çocuğa ipucu verdi
+  C) Masasından "Cevap kırk sekiz!" diye seslendi
+  D) Öğretmenin sorusunu tahtaya yazdı
+  Açıklama: Çanta hemen masasından seslenip cevabı söyledi ve sınıf gülüşmeye başladı.
+s2 [cikarim] dayanak_sayfa=2 doğru=B
+  Metin: Çocuk öğretmenin sorusuna neden cevap veremedi?
+  A) Sınıfta çok gürültü olduğu için
+  B) Ödevi çantaya bıraktığı için işlemi kendisi hiç denememişti
+  C) Soruyu duymadığı için
+  D) Matematiği sevmediği için
+  Açıklama: Metinde çocuğun işlemi hiç denemediği yazıyor; çünkü ödevi çanta yapmıştı.
+s3 [sozcuk_baglami] dayanak_sayfa=5 doğru=D
+  Metin: Metinde geçen ipucu sözcüğü ne anlama gelir?
+  A) Sorunun tam çözümü
+  B) Ödevin teslim günü
+  C) Bir sınıf eşyası
+  D) Bir sorunu çözmeye yardım eden küçük bilgi
+  Açıklama: Çocuk çözümü değil, takılırsa yardım edecek küçük bir bilgi istedi.
+s4 [yorumlama] dayanak_sayfa=7 doğru=A
+  Metin: Çocuk iki kâğıdı göstererek arkadaşına neyi anlatmak istedi?
+  A) Hatalarını görerek kendi çözdüğü işin daha kalıcı öğrenme sağladığını
+  B) Çantanın cevaplarının hep yanlış olduğunu
+  C) Silgi kullanmanın yasak olduğunu
+  D) Kusursuz cevapların ödev için yeterli olduğunu
+  Açıklama: Çocuk kusursuz cevaplardan hiçbir şey hatırlamadığını, kendi hatalarından ise yöntemi öğrendiğini söyledi.
+s5 [degerlendirme] dayanak_sayfa=3 doğru=B
+  Metin: Çocuğun ayarlarda "Birlikte yap" seçeneğini seçmesi neden yerinde bir karardır?
+  A) Çünkü iş daha kısa sürer
+  B) Çünkü düşünme ve karar verme işi kendisinde kalır, çanta da yardımcı olur
+  C) Çünkü çanta artık hiç konuşmaz
+  D) Çünkü ödevi çanta yapar
+  Açıklama: "Birlikte yap" seçeneğinde çocuk öğrenmeye devam eder, çanta da yalnızca destek verir.
+s6 [hatirlama] dayanak_sayfa=6 doğru=C
+  Metin: Teknoloji sergisinde çocuk çantaya hangi görevi verdi?
+  A) Herkesin ödevini yapmayı
+  B) Öğretmene cevap vermeyi
+  C) Kaybolan defterlerin hangi rafta olduğunu hatırlatmayı
+  D) Sergiyi fotoğraflamayı
+  Açıklama: Çocuk çantaya kaybolan defterlerin rafını hatırlatma görevini verdi; çanta kimsenin yerine ödev yapmadı.
+
+## Sözlük
+- pc_ipucu | kelime | yazım: ipucu | 4–4 | anlam: Bir sorunu çözmeye yardım eden küçük bilgi.
+- pc_yontem | kelime | yazım: yöntem | 4–4 | anlam: Bir işi yapmak için izlenen yol.
+- pc_danismanlik | kelime | yazım: danışmanlık | 4–4 | anlam: Bir konuda bilgili birinin öneri vererek yol göstermesi.
+- pc_ata_emek | atasozu | yazım: Emek olmadan yemek olmaz | 4–4 | anlam: Bir şeyin sonucunu görmek için önce çalışmak gerekir.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

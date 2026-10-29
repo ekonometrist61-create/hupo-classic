@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3555,
+        "kelime_sayisi": 3553,
         "tahmini_sure_dk": 29,
         "sayfa_sayisi": 25,
         "soru_sayisi": 4,
@@ -125,7 +125,7 @@
         },
         {
           "t": "metin",
-          "v": ", çantasını bir kenara bırakırken.\n\nDeniz araştırmaları merkezinin sorumlusu Deniz Hanım başını kaldırdı. “Bunu denizde uzun süre çalışanlara sorarsan farklı cevaplar alırsın,” dedi. “Sakin görünmesi, birkaç saat sonra da sakin kalacağını göstermez.”\n\nTeknenin adı *Kuzey Yıldızı*ydı. Kaptan Selim Bey, ekibe güvenlik yeleklerinin nasıl takılacağını yeniden gösteriyordu. Kimse bunu eğlenceli bulmuyordu; hatta "
+          "v": ", çantasını bir kenara bırakırken.\n\nDeniz araştırmaları merkezinin sorumlusu Deniz Hanım başını kaldırdı. “Bunu denizde uzun süre çalışanlara sorarsan farklı cevaplar alırsın,” dedi. “Sakin görünmesi, birkaç saat sonra da sakin kalacağını göstermez.”\n\nTeknenin adı “Kuzey Yıldızı”ydı. Kaptan Selim Bey, ekibe güvenlik yeleklerinin nasıl takılacağını yeniden gösteriyordu. Kimse bunu eğlenceli bulmuyordu; hatta "
         },
         {
           "t": "yoldas",
@@ -274,7 +274,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "İlk gözlem noktası kayalık burnun güneyindeydi. Ekip deniz çayırlarının bulunduğu koyu koruma programı kapsamında kayıt altına alıyordu. Kimse canlılara dokunmuyor, yalnız onaylı cihazlarla ve merkez çalışanlarının gözetiminde ölçüm yapıyordu. Suyun üzerinde küçük dalgalar vardı. Deniz Hanım sıcaklık sensörünü hazırladı; "
+          "v": "İlk gözlem noktası kayalık burnun güneyindeydi. Ekip deniz çayırlarının bulunduğu koruma programı kapsamında kayıt altına alıyordu. Kimse canlılara dokunmuyor, yalnız onaylı cihazlarla ve merkez çalışanlarının gözetiminde ölçüm yapıyordu. Suyun üzerinde küçük dalgalar vardı. Deniz Hanım sıcaklık sensörünü hazırladı; "
         },
         {
           "t": "kahraman",
@@ -357,7 +357,7 @@
         },
         {
           "t": "metin",
-          "v": ", formdaki boş hücreye baktı. Henüz limandan uzaklaşmış sayılmazlardı. Fakat o küçük boşluk, yapacakları araştırmanın nasıl anlatılacağını şimdiden değiştiriyordu.\n\nİkinci ölçüm istasyonuna geldiklerinde Deniz Hanım "
+          "v": ", formdaki boş hücreye baktı. Henüz limandan uzaklaşmış sayılmazlardı. Fakat o küçük boşluk, yapacakları araştırmanın nasıl anlatılacağını şimdiden değiştiriyordu.\n\nDönüş hazırlığı sürerken Deniz Hanım "
         },
         {
           "t": "kahraman",
@@ -1257,22 +1257,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İlk sert rüzgâr"
-        },
-        {
-          "id": "B",
           "metin": "Büyük bir dalga"
         },
         {
+          "id": "B",
+          "metin": "İlk sert rüzgâr"
+        },
+        {
           "id": "C",
-          "metin": "Yağmur"
+          "metin": "Dümene çarpan sürüklenmiş bir ağaç dalı"
         },
         {
           "id": "D",
           "metin": "Bir kuş sürüsü"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kıyıya on dakika kala teknenin burnuna ilk sert rüzgâr vurmuştu."
     },
     {
@@ -1283,48 +1283,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kesin sözler değil, verilere dayanan olasılıklardır"
+          "metin": "Kesin ve değişmeyen bilgiler olduğu için güvenilirdir"
         },
         {
           "id": "B",
-          "metin": "Kesin ve değişmez bilgilerdir"
+          "metin": "Hava durumunu anlamak için hiçbir zaman kullanılmamalıdır"
         },
         {
           "id": "C",
-          "metin": "Hiç kullanılmamalıdır"
+          "metin": "Kesin sözler değil, verilere dayanan olasılıklardır"
         },
         {
           "id": "D",
-          "metin": "Yalnız ilk saatler için geçerlidir"
+          "metin": "Yalnız sabahın ilk saatleri için geçerli olan bilgilerdir"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Tahminler, koşullara göre değişebilen olasılık değerlendirmeleridir."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 2,
-      "metin": "Deniz Hanım'ın bu sözüne göre fazla görünen bir tedbir nasıl değerlendirilmelidir?",
+      "metin": "Deniz Hanım'ın “Tedbirin fazlası ile gereksizi aynı şey değildir.” sözüne göre fazla görünen bir tedbir nasıl değerlendirilmelidir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Fazla görünen bir tedbir, otomatik olarak gereksiz sayılmaz"
+          "metin": "Her tedbir, sonradan bakıldığında kesinlikle gereksiz çıkar"
         },
         {
           "id": "B",
-          "metin": "Her tedbir mutlaka gereksizdir"
+          "metin": "Fazla görünen bir tedbir, otomatik olarak gereksiz sayılmaz"
         },
         {
           "id": "C",
-          "metin": "Tedbir hiç alınmamalıdır"
+          "metin": "Tedbir, görünüşte gereksiz olsa da hiçbir zaman alınmamalıdır"
         },
         {
           "id": "D",
-          "metin": "Yalnız bilgisayar tedbiri belirler"
+          "metin": "Tedbiri yalnız bilgisayar programı belirler, insanların payı olmaz"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Güvenlik açısından alınan bir önlem, sonradan gereksiz görünse de değerli olabilir."
     },
     {
@@ -1339,15 +1339,15 @@
         },
         {
           "id": "B",
-          "metin": "Bir tür tekne"
+          "metin": "Kıyı çalışmalarında kullanılan küçük bir araştırma teknesi"
         },
         {
           "id": "C",
-          "metin": "Bir yüzme yarışı"
+          "metin": "Deniz kenarında düzenlenen kısa bir yüzme yarışması"
         },
         {
           "id": "D",
-          "metin": "Bir güvenlik yeleği"
+          "metin": "Denizde can güvenliği için giyilen özel bir yelek"
         }
       ],
       "dogru": "A",

@@ -1,0 +1,80 @@
+# HR-015 · Tohumun Küçük Sırrı · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=6d8b3f4b-965e-4d2d-abd0-3e02d330259e, surum_no=3, sha256=79019e1aa60e8236e5223ad1115278c7142e9485b704f36c2e7f4a741a08b151
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr015-tohumun-kucuk-sirri | Tür: bilim | Konu: bitki | Dünya: gercekci
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Aynı paketten çıkan iki fasulyeden biri neden cılız kaldı? Küçük bir deney büyük bir sırrı arıyor.
+İzinli türler: ben, arkadas
+Değer anahtarları (sürüm): D12, D3 | maarif.ana_deger: D12
+Etiketler: ana_sinif=3, okuma_zorlugu=2, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: bilim_teknoloji, doga, sabir_emek | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: filiz_hr015 (lexeme, first_hint: filiz); kosul_hr015 (lexeme, application: koşul); gozlem_hr015 (lexeme, application: gözlem); kavram_hr015 (concept, application: Bitki gelişimi ve kontrollü karşılaştırma); atasoz_hr015 (proverb, application: Sabreden derviş muradına ermiş)
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":8,"simge_sayisi":12,"kelime_sayisi":393,"tahmini_sure_dk":6,"yoldas_yer_sayisi":5,"hedef_tur_dagilimi":{"lexeme":3,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+[KAHRAMAN hal=yalin] sınıfta duran iki saksıya bakıp kaşlarını çattı. Aynı gün ektiği fasulyelerden biri yeşermiş, diğeri ise incecik, soluk bir [KELİME yuva=pa_filiz] çıkarmıştı. Üstelik ikisi de aynı tohum[İKON seed] paketindendi. "Belki karanlığı daha çok seviyordur," dedi arkadaşı [YOLDAŞ hal=yalin yedek=Hupo]. [KAHRAMAN hal=yalin] başını salladı. "Olabilir. Ama tahminle yetinmeyelim."
+--- Sayfa 2 ---
+Öğretmenleri deney[İKON microscope] defterlerini açmalarını istedi. [KAHRAMAN hal=yalin] bir sayfayı ikiye böldü. Bir başlığa [VURGU "pencere"], diğerine [VURGU "dolap"] yazdı. İki saksıya da aynı miktarda su[İKON drop] verdiklerini kaydetti. İkinci saksı, sınıftaki kapaklı dolabın içinde duruyordu. Sonra defterine şunu not[İKON notebook] düştü: "Farklı olan [KELİME yuva=pa_kosul]: ışık." [İŞARET kod=gunes]
+--- Sayfa 3 ---
+Üç gün boyunca her sabah[İKON sun] önce ellerini yıkadı, sonra filizlere dokunmadan cetvelle boylarını ölçtü. Pencere kenarındaki bitkinin yaprakları genişleyip koyu yeşile döndü. Dolaptakinin gövdesi uzadı ama yaprakları küçük ve sarımsı kaldı. "Bak, dolaptaki daha uzun!" dedi [YOLDAŞ hal=yalin yedek=Hupo]. "Demek ki daha iyi büyümüş." [KAHRAMAN hal=yalin] defterdeki iki çizimi yan yana getirdi.
+--- Sayfa 4 ---
+O gün [YOLDAŞ hal=yalin yedek=Hupo], filizin bir yaprağını parmağıyla düzeltmek istedi. [KAHRAMAN hal=yalin] onu nazikçe durdurdu. "Dokunursak gözlemlediğimiz şeyi değiştirebiliriz," dedi. Öğretmenleri, tohumun karanlıkta da ilk filizini çıkarabildiğini, ancak sağlıklı gelişebilmesi için ışığın önemli olduğunu anlattı. [YOLDAŞ hal=yalin yedek=Hupo] düşüncelere daldı. "Öyleyse yalnızca ilk filizin çıkmasına bakıp karar vermek yanlış." İkisi de deftere bu yeni bilgiyi yazdı.
+--- Sayfa 5 ---
+Sonraki gün ölçüm yaparken [KAHRAMAN hal=yalin] başka bir sorunla karşılaştı. Dolaptaki saksının toprağı daha ıslak görünüyordu. Acaba gerçekten aynı miktarda su[İKON drop] mu vermişlerdi? İki günün kayıtlarını kontrol edip sulama kaplarının üzerindeki çizgileri karşılaştırdılar. Hata yapmadıklarını gördüler; yine de bir deneyde bütün koşulları dikkatle izlemek gerektiğini anladılar. [KAHRAMAN hal=yalin] cetvelin yanına küçük bir su kabı resmi çizdi.
+--- Sayfa 6 ---
+"Uzun olması güçlü olduğu anlamına gelir mi? Yapraklarına da bakalım," dedi [KAHRAMAN hal=yalin]. Öğretmenleri açıklama yapmadan önce çocuklardan [KELİME yuva=pa_gozlem] sonuçlarını anlatmalarını istedi. "Bitkiler ışığa ihtiyaç duyuyor olabilir," dedi [KAHRAMAN hal=yalin]. "Ama bir bitkinin gelişimini yalnızca boyuna bakarak anlayamayız." O gün dolaptaki saksıyı da pencere kenarına taşıdılar. "Şimdi ikisine de aynı bakımı yapalım," diye önerdi. Sarımsı filizi atmak istemiyordu; ona yeni bir fırsat vermek istiyordu.
+--- Sayfa 7 ---
+Bir hafta sonra yapraklarda yeşillenme görüldü. [YOLDAŞ hal=yalin yedek=Hupo], "Tohumun sırrını çözdük mü?" diye sordu. "Bir kısmını," dedi [KAHRAMAN hal=yalin]. "Su[İKON drop], ışık ve uygun ortam önemli. Ama bütün bitkiler aynı mı, onu da araştırmalıyız." Bir hafta boyunca sabırla beklemişti. Aklına şu söz geldi: "[ATASÖZÜ yuva=pa_ata_sabir]".
+--- Sayfa 8 ---
+[KAHRAMAN hal=yalin] defterinin sonuna bir soru daha yazdı: "Kaktüsle fasulye aynı miktarda su[İKON drop] ister mi?" Bu sorunun cevabını henüz bilmiyordu. Bilmediğini söylemek onu üzmedi; aksine ertesi gün için heyecanlandırdı. Çünkü küçük bir tohum[İKON seed], kocaman bir merak[İKON curiosity] başlatmıştı. [İŞARET kod=ipucu]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=B
+  Metin: İki saksı arasında hangi koşul farklıydı?
+  A) Verilen su miktarı
+  B) Aldıkları ışık
+  C) Tohum paketinin türü
+  Açıklama: Bir saksı pencere kenarında, diğeri kapaklı dolabın içindeydi; aradaki fark ışıktı.
+s2 [cikarim] dayanak_sayfa=4 doğru=A
+  Metin: Öğretmenin anlattıklarından hangisi çıkarılabilir?
+  A) Tohum karanlıkta filiz verebilir ama sağlıklı büyümesi için ışık önemlidir.
+  B) Tohumlar yalnızca karanlıkta büyür.
+  C) Bitkiler için su hiç gerekli değildir.
+  Açıklama: Öğretmen, tohumun karanlıkta da ilk filizini çıkarabildiğini ama sağlıklı gelişmesi için ışığın önemli olduğunu söyledi.
+s3 [yorumlama] dayanak_sayfa=6 doğru=C
+  Metin: Çocuğun sarımsı filizi atmayıp pencere kenarına taşıması neyi gösterir?
+  A) Deneyi bırakmak istediğini
+  B) Saksıyı sevmediğini
+  C) Filizin ışıkla düzelebileceğini denemek istediğini
+  Açıklama: Çocuk sarımsı filize yeni bir fırsat vermek istedi.
+s4 [sozcuk_baglami] dayanak_sayfa=1 doğru=A
+  Metin: Metinde geçen filiz sözcüğü ne anlama gelir?
+  A) Tohumdan yeni çıkan ince, küçük bitki
+  B) Sulama için kullanılan kap
+  C) Uzunluk ölçmeye yarayan araç
+  Açıklama: Fasulye tohumundan çıkan incecik, soluk bitkiye filiz denir.
+s5 [hatirlama] dayanak_sayfa=5 doğru=B
+  Metin: Çocuklar su miktarının eşit olup olmadığını nasıl kontrol etti?
+  A) Saksıların yerlerini değiştirerek
+  B) Kayıtlara ve sulama kaplarındaki çizgilere bakarak
+  C) Toprağı tadarak
+  Açıklama: İki günün kayıtlarını kontrol edip sulama kaplarındaki çizgileri karşılaştırdılar.
+
+## Sözlük
+- pa_filiz | kelime | yazım: filiz | 3–3 | anlam: Tohumdan yeni çıkan ince, küçük bitki.
+- pa_kosul | kelime | yazım: koşul | 3–3 | anlam: Bir işin ya da deneyin olması için gerekli olan durum.
+- pa_gozlem | kelime | yazım: gözlem | 3–3 | anlam: Bir şeye dikkatle bakıp onu anlamaya çalışma.
+- pa_ata_sabir | atasozu | yazım: Sabreden derviş muradına ermiş | 3–3 | anlam: Sabırla bekleyen kişi sonunda istediğine ulaşır.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

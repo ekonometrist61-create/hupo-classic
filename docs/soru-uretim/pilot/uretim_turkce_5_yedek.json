@@ -1,0 +1,150 @@
+[
+  {
+    "id": "TR5-031",
+    "sinif": 5,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.5.19",
+    "surec_bileseni": "",
+    "konu": "Söz sanatları",
+    "alt_konu": "Kişileştirme",
+    "soru_metni": "Dedemin köydeki bahçesinde yaz sabahı çok güzeldi ve hava serindi, her yer huzur doluydu. Sabah olunca bahçedeki eski kavak rüzgârla fısıldaşmaya başladı. Yaprakları birbirine gizli sırlar anlatıyordu. Kuşlar dallarda neşeyle şarkı söylerken kavak onlara geniş gölgesini serdi. Ben de çimenlerin üstüne uzanıp uzun süre bu konuşmayı dinledim. Bu metinde kavak ağacının anlatımında hangi söz sanatından yararlanılmıştır ve bu söz sanatı anlatıma ne katmıştır?",
+    "siklar": {
+      "A": "kişileştirme, ağaca insan davranışı kazandırılarak anlatım canlı hâle getirilmiştir",
+      "B": "benzetme, ağaç başka bir varlıkla kıyaslanarak özelliği öne çıkarılmıştır",
+      "C": "abartma, ağacın büyüklüğü olduğundan fazla gösterilerek etkisi artırılmıştır",
+      "D": "konuşturma, ağacın ağzından duygular aktarılarak okura ders verilmiştir"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Ağacın yaptığı işlerin gerçekte kimlere özgü olduğunu düşün.",
+    "cozum_adimlari": [
+      "Metinde kavak için fısıldaşmak, sır anlatmak ve gölge sermek gibi davranışlar kullanılmış.",
+      "Bu davranışlar gerçekte insanlara özgüdür, ağaca ise insan özelliği verilmiştir.",
+      "İnsana özgü özelliklerin insan dışı varlığa verilmesi kişileştirmedir ve anlatımı canlı kılar.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Doğa anlatımlarında benzetme sık görüldüğü için öğrenci 'gibi' sözcüğü aramadan benzetme der.",
+      "C": "Eski ve gölgesi geniş bir ağaç anlatıldığı için öğrenci büyüklüğün abartıldığını sanır.",
+      "D": "Ağacın konuşuyormuş gibi anlatılması konuşturma ile karıştırılır, oysa ağacın sözü verilmemiştir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR5-032",
+    "sinif": 5,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.O.5.19",
+    "surec_bileseni": "",
+    "konu": "Söz sanatları",
+    "alt_konu": "Benzetme",
+    "soru_metni": "Kış sabahı erkenden uyanınca pencereden bahçeye ve sokağa baktım. Kar taneleri pamuk gibi yumuşak yağıyordu. Sokaktaki arabaların üstü yavaş yavaş beyaza büründü. Komşunun çocukları elleriyle büyük kartopları yapmaya başladı. Evde annem mutfakta hepimiz için sıcak çorba hazırlıyordu. Ben de camın önünde bu sessiz manzarayı izledim. Metnin ikinci cümlesinde hangi söz sanatı kullanılmıştır ve kar taneleriyle ilgili hangi özellik öne çıkarılmıştır?",
+    "siklar": {
+      "A": "benzetme, kar taneleri yumuşak yağışıyla pamuğa yaklaştırılmıştır",
+      "B": "kişileştirme, kar taneleri insan gibi davranan canlılara dönüştürülmüştür",
+      "C": "benzetme, kar taneleri soğukluğu yönüyle pamuğa yaklaştırılmıştır",
+      "D": "abartma, kar yağışı olduğundan yoğun gösterilerek etkisi büyütülmüştür"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Cümledeki iki varlığı birbirine bağlayan sözcüğe ve yağışın nasıl olduğuna bak.",
+    "cozum_adimlari": [
+      "Cümlede kar taneleri ile pamuk arasında bir benzerlik kurulmuş.",
+      "Benzerliği ortak özellik olarak yumuşaklık sağlıyor, çünkü yağış yumuşak diye nitelenmiş.",
+      "Bir varlığın başka bir varlığa ortak özellik yoluyla benzetilmesi benzetme sanatıdır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Kar taneleri 'yağıyordu' diye hareket eden varlık gibi görünür ve kişileştirme sanılır.",
+      "C": "Kar ile soğukluk güçlü biçimde ilişkilendirilir, öğrenci benzerlik yönünü metne bakmadan seçer.",
+      "D": "Sokakların beyaza bürünmesi yoğun yağışı düşündürür ve abartma olduğu sanılır."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR5-033",
+    "sinif": 5,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.5.12",
+    "surec_bileseni": "",
+    "konu": "Düşünceyi geliştirme yolları",
+    "alt_konu": "Örnek verme",
+    "soru_metni": "Düzenli kitap okumak insanın söz varlığını zenginleştirir. Bizim sınıfımızda okuyan arkadaşım Elif bunun çok güzel bir kanıtıdır. Her gün yirmi sayfa okuyan Elif, bir yıl içinde daha önce hiç duymadığı yüzlerce sözcüğü öğrendi. Elif artık bu sözcükleri hem arkadaşlarla konuşmasında hem de ödev yazılarında rahatça kullanıyor. Bu paragrafta verilen ikinci, üçüncü ve dördüncü cümleler birinci cümledeki düşünceyi hangi yolla geliştirmiştir?",
+    "siklar": {
+      "A": "belirli bir kişiden somut bir durum verilerek düşünce desteklenmiştir",
+      "B": "iki farklı okuma alışkanlığı kıyaslanarak üstünlükleri belirtilmiştir",
+      "C": "söz varlığı kavramının ne anlama geldiği açıklanarak tanımı yapılmıştır",
+      "D": "bir davranışın nedenleri sıralanarak ortaya çıkan sonuç gösterilmiştir"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Birinci cümledeki genel yargının ardından kimin anlatıldığına dikkat et.",
+    "cozum_adimlari": [
+      "Birinci cümle genel bir düşünce bildiriyor: okumak söz varlığını zenginleştirir.",
+      "Sonraki cümleler Elif adlı bir öğrencinin yaşadığı somut durumu anlatıyor.",
+      "Genel düşüncenin belirli bir kişi üzerinden somutlaştırılması örnek verme yoludur.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Yirmi sayfa okuma ile hiç duymama arasındaki fark, iki durumun kıyaslandığı izlenimini verir.",
+      "C": "Söz varlığı terimi metinde geçtiği için öğrenci açıklama ya da tanım yapıldığını düşünür.",
+      "D": "Okuma sonucunda sözcük öğrenmenin anlatılması neden-sonuç ilişkisi gibi görünür, oysa anlatılan kişidir."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "TR5-034",
+    "sinif": 5,
+    "ders": "Türkçe",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "T.Y.5.12",
+    "surec_bileseni": "",
+    "konu": "Düşünceyi geliştirme yolları",
+    "alt_konu": "Karşılaştırma",
+    "soru_metni": "Kitap okumak ile film izlemek, zihni farklı biçimde çalıştırır. Kitap okurken olayları ve kişileri kendi hayal gücümüzle zihnimizde canlandırırız. Film izlerken ise görüntüler ve sesler bize hazır olarak sunulur. Kitapta satırlar arasında düşünmeye zaman kalır, filmde ise sahneler hızla birbirini izler. Okuyucu kahramanın yüzünü kendisi çizer, izleyici ise yüzü ekranda görür. Bu paragrafta verilen ana düşünce, aşağıdakilerden hangi yolla geliştirilmiştir?",
+    "siklar": {
+      "A": "iki etkinliğin farklı yönleri yan yana getirilerek ayrıştırılmıştır",
+      "B": "bir etkinliğin ne olduğu açıklanarak kavramın tanımı verilmiştir",
+      "C": "bir davranışın zihne etkileri sıralanarak sonuçları gösterilmiştir",
+      "D": "kişisel bir anı anlatılarak ana düşünce somutlaştırılmıştır"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Paragrafta kaç etkinliğin ele alındığına ve nasıl ilişkilendirildiğine bak.",
+    "cozum_adimlari": [
+      "Paragrafta kitap okumak ve film izlemek olmak üzere iki etkinlik ele alınıyor.",
+      "Her cümlede bu iki etkinliğin zihinde bıraktığı etki, aralarındaki ayrımı gösterecek biçimde sıralanıyor.",
+      "İki şeyin benzer ve farklı yönlerini ortaya koymak karşılaştırma yoludur.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Paragrafın ilk cümlesi genel bir yargı bildirdiği için öğrenci tanım yapıldığını sanır.",
+      "C": "Zihnin nasıl çalıştığından söz edilmesi, etki ve sonuç anlatıldığı izlenimini verir.",
+      "D": "Okuyucu ve izleyici deneyimleri anlatıldığı için kişisel anı kurgusu varmış gibi okunur."
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "paragraf",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  }
+]

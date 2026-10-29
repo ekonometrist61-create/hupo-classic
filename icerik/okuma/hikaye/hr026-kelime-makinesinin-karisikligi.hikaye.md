@@ -35,10 +35,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Mert'in cümlesindeki yüz sözcüğü neyi anlatıyor?", secenekler: [{id: A, metin: "Sayıyı, yüz tane sayfayı"}, {id: B, metin: "İnsanın suratını"}, {id: C, metin: "Bir yüzeyi"}], dogru: A, aciklama: "Mert'in cümlesinde yüz sayı anlamında kullanılıyor."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Ada cümlelerdeki anlamı nasıl buldu?", secenekler: [{id: A, metin: "Kelimenin yanındaki sözcüklerden yararlanarak"}, {id: B, metin: "Makineyi kapatarak"}, {id: C, metin: "Kartları karıştırarak"}], dogru: A, aciklama: "Yanındaki sözcükler anlamı seçmeye yardımcı oluyordu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Ada'nın “Sorular bazen cevaptan daha işe yarar” düşüncesi neyi gösterir?", secenekler: [{id: A, metin: "Soru sormanın öğrenmeyi desteklediğini"}, {id: B, metin: "Soru işareti çizilmemesi gerektiğini"}, {id: C, metin: "Dedenin hiç cevap vermediğini"}], dogru: A, aciklama: "Makinenin hatasını bulmak için sorular sormak, çocukları düşündürdü."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "“Bize kâr kaldı” cümlesinde kâr sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Kazanç, para artışı"}, {id: B, metin: "Kar yağışı"}, {id: C, metin: "Kırmızı renk"}], dogru: A, aciklama: "Kâr, bir işten elde edilen kazançtır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Yoldaşın cümlesindeki yüz sözcüğü neyi anlatıyor?", secenekler: [{id: A, metin: "Sayıyı, yüz tane sayfayı"}, {id: B, metin: "İnsanın suratını"}, {id: C, metin: "Bir yüzeyi"}], dogru: A, aciklama: "Mert'in cümlesinde yüz sayı anlamında kullanılıyor."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Kahraman cümlelerdeki anlamı nasıl buldu?", secenekler: [{id: A, metin: "Makineyi kapatarak"}, {id: B, metin: "Kartları karıştırarak"}, {id: C, metin: "Kelimenin yanındaki sözcüklerden yararlanarak"}], dogru: C, aciklama: "Yanındaki sözcükler anlamı seçmeye yardımcı oluyordu."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Kahramanın “Sorular bazen cevaptan daha işe yarar” düşüncesi neyi gösterir?", secenekler: [{id: A, metin: "Soru sormanın öğrenmeyi desteklediğini"}, {id: B, metin: "Soru işareti çizilmemesi gerektiğini"}, {id: C, metin: "Dedenin hiç cevap vermediğini"}], dogru: A, aciklama: "Makinenin hatasını bulmak için sorular sormak, çocukları düşündürdü."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "“Bize kâr kaldı” cümlesinde kâr sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Kar yağışı"}, {id: B, metin: "Kırmızı renk"}, {id: C, metin: "Kazanç, para artışı"}], dogru: C, aciklama: "Kâr, bir işten elde edilen kazançtır."}
 deyim_cumleleri:
   hr026_iki_buklum: "{yoldas:yalin|bir arkadaş} gülmekten iki büklüm oldu."
 ---
@@ -60,8 +60,6 @@ Dede, masaya iki kart daha koydu. Birinde “Kışın {kelime:hr026_kar} yağdı
 ---
 @omurga
 Makine bu uyarıyı duyunca ekrana büyük bir soru işareti çıkardı. {kahraman}, “**Sorular bazen cevaptan daha işe yarar**,” diye düşündü. Makinenin hatasını bulmak, düğmelerine rastgele basmaktan daha çok zaman almış ama daha eğlenceli olmuştu.
-
-{kahraman} bütün cümlelerin küçük bir ipucu taşıdığını fark etti.
 
 {kahraman} bütün cümlelerin küçük bir ipucu taşıdığını fark etti. “Yaz geldi” derken mevsimden söz ediyorlardı. “Sen de yaz” derken ise kalemle bir şeyler yazmayı istiyorlardı. Kelimenin yanındaki başka sözcükler anlamı bulmalarını sağlıyordu.
 

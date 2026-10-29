@@ -9,15 +9,31 @@ import DesktopOnly from "@/components/ui/DesktopOnly";
 import Pager from "../Pager";
 import type { AdminQuestion, Paged, QuestionStatus } from "../types";
 import { dokunmaHedefi } from "../ui/responsive";
+import KazanimAtaModal from "../kazanim/KazanimAtaModal";
+import KazanimsizTable, { type KazanimsizSoru } from "../kazanim/KazanimsizTable";
+import { fetchDersler } from "../kazanim/kazanimVeri";
 import DeleteConfirmModal from "./DeleteConfirmModal";
 import QuestionFormModal from "./QuestionFormModal";
 import QuestionsTable from "./QuestionsTable";
 
 const PAGE_SIZE = 25;
+const SINIFLAR = [1, 2, 3, 4, 5, 6, 7, 8] as const;
 
 interface LoadedList {
   key: string;
   data: Paged<AdminQuestion> | null;
+  error: string | null;
+}
+
+interface LoadedKazanimsiz {
+  key: string;
+  rows: KazanimsizSoru[];
+  error: string | null;
+}
+
+interface LoadedDersler {
+  key: string;
+  data: string[];
   error: string | null;
 }
 
@@ -29,6 +45,7 @@ const fieldClass =
 
 export default function QuestionsManager() {
   const t = useTranslations("yonetim.sorular");
+  const tk = useTranslations("yonetim.sorular.kazanim");
 
   const [searchInput, setSearchInput] = useState("");
   const [dersInput, setDersInput] = useState("");
@@ -45,6 +62,13 @@ export default function QuestionsManager() {
   const [busy, setBusy] = useState(false);
   const [notice, setNotice] = useState<string | null>(null);
   const [actionError, setActionError] = useState<string | null>(null);
+  // Kazanımsız filtre: sınıf ve ders zorunludur (admin_kazanimsiz_sorular).
+  const [kazanimsiz, setKazanimsiz] = useState(false);
+  const [kSinif, setKSinif] = useState<number | null>(null);
+  const [kDers, setKDers] = useState("");
+  const [kDersler, setKDersler] = useState<LoadedDersler | null>(null);
+  const [kLoaded, setKLoaded] = useState<LoadedKazanimsiz | null>(null);
+  const [assignOpen, setAssignOpen] = useState(false);
 
   // Arama kutuları için ~400ms gecikme
   useEffect(() => {
@@ -64,9 +88,13 @@ export default function QuestionsManager() {
     zorluk,
     page,
     reloadCounter,
+    kazanimsiz,
+    kSinif,
+    kDers,
   ]);
 
   useEffect(() => {
+    if (kazanimsiz) return;
     let cancelled = false;
     createClient()
       .rpc("admin_list_questions", {
@@ -95,13 +123,74 @@ export default function QuestionsManager() {
     return () => {
       cancelled = true;
     };
-  }, [requestKey, debounced, durum, zorluk, page]);
+  }, [requestKey, debounced, durum, zorluk, page, kazanimsiz]);
 
-  const isLoading = !loaded || loaded.key !== requestKey;
+  // Kazanımsız liste: sınıf ve ders seçilmeden istek atılmaz.
+  const kAktif = kazanimsiz && kSinif !== null && kDers !== "";
+  useEffect(() => {
+    if (!kAktif || kSinif === null) return;
+    let cancelled = false;
+    createClient()
+      .rpc("admin_kazanimsiz_sorular", {
+        p_ders: kDers,
+        p_sinif: kSinif,
+        p_limit: PAGE_SIZE,
+        p_offset: page * PAGE_SIZE,
+      })
+      .then(({ data, error }) => {
+        if (cancelled) return;
+        if (error) {
+          setKLoaded({ key: requestKey, rows: [], error: error.message });
+          return;
+        }
+        setKLoaded({
+          key: requestKey,
+          rows: (data ?? []) as KazanimsizSoru[],
+          error: null,
+        });
+        setSelected(new Set());
+      });
+    return () => {
+      cancelled = true;
+    };
+  }, [requestKey, kAktif, kSinif, kDers, page]);
+
+  // Kazanımsız modda müfredat derslerini sınıfa göre doldur.
+  useEffect(() => {
+    if (!kazanimsiz || kSinif === null) return;
+    let cancelled = false;
+    const key = String(kSinif);
+    fetchDersler(kSinif).then(
+      (data) => {
+        if (!cancelled) setKDersler({ key, data, error: null });
+      },
+      (e: Error) => {
+        if (!cancelled) setKDersler({ key, data: [], error: e.message });
+      }
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, [kazanimsiz, kSinif]);
+
+  const isLoading = !kazanimsiz && (!loaded || loaded.key !== requestKey);
   const list = loaded?.data ?? null;
   const rows = useMemo(() => list?.satirlar ?? [], [list]);
   const total = list?.toplam ?? 0;
   const loadError = !isLoading ? loaded?.error : null;
+
+  const kLoading = kAktif && kLoaded?.key !== requestKey;
+  const kRows = useMemo(
+    () => (kAktif && kLoaded?.key === requestKey ? kLoaded.rows : []),
+    [kAktif, kLoaded, requestKey]
+  );
+  const kError = kAktif && !kLoading ? kLoaded?.error ?? null : null;
+  const kDerslerListe =
+    kDersler?.key === String(kSinif) ? kDersler.data : [];
+  const kDerslerYukleniyor =
+    kSinif !== null && kDersler?.key !== String(kSinif);
+
+  const activeRows: { id: string }[] = kazanimsiz ? kRows : rows;
 
   const reload = () => setReloadCounter((c) => c + 1);
 
@@ -115,12 +204,25 @@ export default function QuestionsManager() {
 
   const toggleAll = () =>
     setSelected((prev) =>
-      rows.every((r) => prev.has(r.id))
+      activeRows.every((r) => prev.has(r.id))
         ? new Set()
-        : new Set(rows.map((r) => r.id))
+        : new Set(activeRows.map((r) => r.id))
     );
 
-  const setStatus = async (status: QuestionStatus) => {
+  const toggleKazanimsiz = (checked: boolean) => {
+    setKazanimsiz(checked);
+    setPage(0);
+    setSelected(new Set());
+    setNotice(null);
+    setActionError(null);
+  };
+
+  const setStatus = async (status: QuestionStatus, label: string) => {
+    if (
+      selected.size > 1 &&
+      !window.confirm(t("bulk.statusConfirm", { action: label, count: selected.size }))
+    )
+      return;
     setBusy(true);
     setActionError(null);
     setNotice(null);
@@ -154,10 +256,81 @@ export default function QuestionsManager() {
     reload();
   };
 
+  // Filtredeki tüm bekleyen sorular: sayfa sayfa id toplanır, sonra 500'lük parçalarla onaylanır.
+  const approveAllFiltered = async () => {
+    if (!window.confirm(t("bulk.approveAllConfirm", { count: total }))) return;
+    setBusy(true);
+    setActionError(null);
+    setNotice(null);
+    try {
+      const supabase = createClient();
+      const ids: string[] = [];
+      for (let offset = 0; ; offset += 100) {
+        const { data, error } = await supabase.rpc("admin_list_questions", {
+          p_ders: debounced.ders || null,
+          p_durum: "beklemede",
+          p_zorluk: zorluk ? Number(zorluk) : null,
+          p_arama: debounced.arama || null,
+          p_limit: 100,
+          p_offset: offset,
+        });
+        if (error) throw new Error(error.message);
+        const pageData = data as Paged<AdminQuestion>;
+        ids.push(...pageData.satirlar.map((q) => q.id));
+        if (pageData.satirlar.length < 100) break;
+      }
+      let onaylanan = 0;
+      for (let i = 0; i < ids.length; i += 500) {
+        const { data, error } = await supabase.rpc("admin_set_question_status", {
+          p_ids: ids.slice(i, i + 500),
+          p_durum: "onaylandi",
+        });
+        if (error) throw new Error(error.message);
+        onaylanan += Number(data ?? 0);
+      }
+      setNotice(t("success.status", { count: onaylanan }));
+    } catch (e) {
+      setActionError(e instanceof Error ? e.message : String(e));
+    }
+    setBusy(false);
+    reload();
+  };
+
+  // Filtredeki tüm sorular (sayfalar ötesi dahil) seçilir; yalnızca id toplanır.
+  const selectAllFiltered = async () => {
+    setBusy(true);
+    setActionError(null);
+    setNotice(null);
+    try {
+      const supabase = createClient();
+      const ids: string[] = [];
+      for (let offset = 0; ; offset += 100) {
+        const { data, error } = await supabase.rpc("admin_list_questions", {
+          p_ders: debounced.ders || null,
+          p_durum: durum || null,
+          p_zorluk: zorluk ? Number(zorluk) : null,
+          p_arama: debounced.arama || null,
+          p_limit: 100,
+          p_offset: offset,
+        });
+        if (error) throw new Error(error.message);
+        const pageData = data as Paged<AdminQuestion>;
+        ids.push(...pageData.satirlar.map((q) => q.id));
+        if (pageData.satirlar.length < 100) break;
+      }
+      setSelected(new Set(ids));
+    } catch (e) {
+      setActionError(e instanceof Error ? e.message : String(e));
+    }
+    setBusy(false);
+  };
+
   const from = total === 0 ? 0 : page * PAGE_SIZE + 1;
   const to = Math.min(total, (page + 1) * PAGE_SIZE);
   const bulkButton =
     `${dokunmaHedefi} justify-center rounded-lg border px-3.5 text-sm font-medium disabled:cursor-not-allowed disabled:opacity-50`;
+  const pagerButton =
+    `${dokunmaHedefi} justify-center rounded-lg border border-gray-300 px-3 text-sm font-medium text-gray-700 hover:bg-gray-50 disabled:cursor-not-allowed disabled:opacity-40 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5`;
 
   return (
     <div className="rounded-2xl border border-gray-200 bg-white p-4 sm:p-6 dark:border-gray-800 dark:bg-white/3">
@@ -171,6 +344,36 @@ export default function QuestionsManager() {
           </p>
         </div>
         <div className="flex flex-wrap gap-2">
+          {!kazanimsiz && (
+            <button
+              type="button"
+              disabled={busy || total === 0}
+              onClick={() => void selectAllFiltered()}
+              className={`${dokunmaHedefi} justify-center rounded-lg border border-brand-300 px-4 text-sm font-medium text-brand-600 hover:bg-brand-25 disabled:cursor-not-allowed disabled:opacity-50 dark:border-brand-500/40 dark:text-brand-400 dark:hover:bg-brand-500/10`}
+            >
+              {busy ? t("bulk.selectAllProgress") : t("bulk.selectAllFiltered", { count: total })}
+            </button>
+          )}
+          {!kazanimsiz && (
+            <button
+              type="button"
+              disabled={busy || durum !== "beklemede" || total === 0}
+              onClick={() => void approveAllFiltered()}
+              title={durum !== "beklemede" ? t("bulk.approveAllHint") : undefined}
+              className={`${dokunmaHedefi} justify-center rounded-lg border border-success-300 px-4 text-sm font-medium text-success-700 hover:bg-success-50 disabled:cursor-not-allowed disabled:opacity-50 dark:border-success-500/40 dark:text-success-500 dark:hover:bg-success-500/10`}
+            >
+              {busy ? t("bulk.approveAllProgress") : t("bulk.approveAll", { count: total })}
+            </button>
+          )}
+          <button
+            type="button"
+            disabled={selected.size === 0 || busy}
+            onClick={() => setAssignOpen(true)}
+            title={selected.size === 0 ? tk("bulk.none") : undefined}
+            className={`${dokunmaHedefi} justify-center rounded-lg border border-brand-300 px-4 text-sm font-medium text-brand-600 hover:bg-brand-25 disabled:cursor-not-allowed disabled:opacity-50 dark:border-brand-500/40 dark:text-brand-400 dark:hover:bg-brand-500/10`}
+          >
+            {tk("bulk.assign")}
+          </button>
           {/* K3: toplu içe aktarma yalnızca masaüstünde; telefonda bilgi notu görünür. */}
           <DesktopOnly>
             <Link
@@ -190,59 +393,115 @@ export default function QuestionsManager() {
         </div>
       </div>
 
-      <div className="mb-4 grid gap-3 md:grid-cols-2 lg:grid-cols-4">
+      <label className="mb-3 flex min-h-11 items-center gap-2 text-sm font-medium text-gray-700 dark:text-gray-300">
         <input
-          type="search"
-          value={searchInput}
-          onChange={(e) => setSearchInput(e.target.value)}
-          placeholder={t("filters.searchPlaceholder")}
-          aria-label={t("filters.search")}
-          className={fieldClass}
+          type="checkbox"
+          checked={kazanimsiz}
+          onChange={(e) => toggleKazanimsiz(e.target.checked)}
+          className="h-4 w-4 rounded border-gray-300 text-brand-500 focus:ring-brand-500/20 dark:border-gray-700 dark:bg-gray-900"
         />
-        <div>
-          <input
-            type="text"
-            list="yonetim-ders-list"
-            value={dersInput}
-            onChange={(e) => setDersInput(e.target.value)}
-            placeholder={t("filters.dersPlaceholder")}
-            aria-label={t("filters.ders")}
-            className={fieldClass}
-          />
-          <datalist id="yonetim-ders-list">
-            {knownDers.map((d) => (
-              <option key={d} value={d} />
-            ))}
-          </datalist>
-        </div>
-        <select
-          value={durum}
-          onChange={(e) => {
-            setDurum(e.target.value);
-            setPage(0);
-          }}
-          aria-label={t("filters.durum")}
-          className={fieldClass}
-        >
-          <option value="">{t("filters.allStatuses")}</option>
-          <option value="beklemede">{t("status.beklemede")}</option>
-          <option value="onaylandi">{t("status.onaylandi")}</option>
-          <option value="reddedildi">{t("status.reddedildi")}</option>
-        </select>
-        <select
-          value={zorluk}
-          onChange={(e) => {
-            setZorluk(e.target.value);
-            setPage(0);
-          }}
-          aria-label={t("filters.zorluk")}
-          className={fieldClass}
-        >
-          <option value="">{t("filters.allDifficulties")}</option>
-          <option value="1">{t("difficulty.1")}</option>
-          <option value="2">{t("difficulty.2")}</option>
-          <option value="3">{t("difficulty.3")}</option>
-        </select>
+        {tk("filter.kazanimsiz")}
+      </label>
+
+      <div className="mb-4 grid gap-3 md:grid-cols-2 lg:grid-cols-4">
+        {kazanimsiz ? (
+          <>
+            <select
+              value={kSinif ?? ""}
+              onChange={(e) => {
+                setKSinif(e.target.value ? Number(e.target.value) : null);
+                setKDers("");
+                setPage(0);
+              }}
+              aria-label={tk("filter.sinif")}
+              className={fieldClass}
+            >
+              <option value="">{tk("filter.selectSinif")}</option>
+              {SINIFLAR.map((s) => (
+                <option key={s} value={s}>
+                  {s}
+                </option>
+              ))}
+            </select>
+            <select
+              value={kDers}
+              disabled={kSinif === null || kDerslerYukleniyor}
+              onChange={(e) => {
+                setKDers(e.target.value);
+                setPage(0);
+              }}
+              aria-label={tk("filter.ders")}
+              className={fieldClass}
+            >
+              <option value="">
+                {kDerslerYukleniyor ? tk("filter.loadingDers") : tk("filter.selectDers")}
+              </option>
+              {kDerslerListe.map((d) => (
+                <option key={d} value={d}>
+                  {d}
+                </option>
+              ))}
+            </select>
+            <p className="text-theme-xs text-gray-500 dark:text-gray-400 md:col-span-2 lg:col-span-2">
+              {tk("filter.note")}
+            </p>
+          </>
+        ) : (
+          <>
+            <input
+              type="search"
+              value={searchInput}
+              onChange={(e) => setSearchInput(e.target.value)}
+              placeholder={t("filters.searchPlaceholder")}
+              aria-label={t("filters.search")}
+              className={fieldClass}
+            />
+            <div>
+              <input
+                type="text"
+                list="yonetim-ders-list"
+                value={dersInput}
+                onChange={(e) => setDersInput(e.target.value)}
+                placeholder={t("filters.dersPlaceholder")}
+                aria-label={t("filters.ders")}
+                className={fieldClass}
+              />
+              <datalist id="yonetim-ders-list">
+                {knownDers.map((d) => (
+                  <option key={d} value={d} />
+                ))}
+              </datalist>
+            </div>
+            <select
+              value={durum}
+              onChange={(e) => {
+                setDurum(e.target.value);
+                setPage(0);
+              }}
+              aria-label={t("filters.durum")}
+              className={fieldClass}
+            >
+              <option value="">{t("filters.allStatuses")}</option>
+              <option value="beklemede">{t("status.beklemede")}</option>
+              <option value="onaylandi">{t("status.onaylandi")}</option>
+              <option value="reddedildi">{t("status.reddedildi")}</option>
+            </select>
+            <select
+              value={zorluk}
+              onChange={(e) => {
+                setZorluk(e.target.value);
+                setPage(0);
+              }}
+              aria-label={t("filters.zorluk")}
+              className={fieldClass}
+            >
+              <option value="">{t("filters.allDifficulties")}</option>
+              <option value="1">{t("difficulty.1")}</option>
+              <option value="2">{t("difficulty.2")}</option>
+              <option value="3">{t("difficulty.3")}</option>
+            </select>
+          </>
+        )}
       </div>
 
       {notice && (
@@ -270,7 +529,7 @@ export default function QuestionsManager() {
           <button
             type="button"
             disabled={busy}
-            onClick={() => setStatus("onaylandi")}
+            onClick={() => setStatus("onaylandi", t("bulk.approve"))}
             className={`${bulkButton} border-success-300 text-success-700 hover:bg-success-50 dark:border-success-500/40 dark:text-success-500 dark:hover:bg-success-500/10`}
           >
             {t("bulk.approve")}
@@ -278,7 +537,7 @@ export default function QuestionsManager() {
           <button
             type="button"
             disabled={busy}
-            onClick={() => setStatus("reddedildi")}
+            onClick={() => setStatus("reddedildi", t("bulk.reject"))}
             className={`${bulkButton} border-warning-300 text-warning-700 hover:bg-warning-50 dark:border-warning-500/40 dark:text-orange-400 dark:hover:bg-warning-500/10`}
           >
             {t("bulk.reject")}
@@ -286,7 +545,7 @@ export default function QuestionsManager() {
           <button
             type="button"
             disabled={busy}
-            onClick={() => setStatus("beklemede")}
+            onClick={() => setStatus("beklemede", t("bulk.pending"))}
             className={`${bulkButton} border-gray-300 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5`}
           >
             {t("bulk.pending")}
@@ -299,10 +558,78 @@ export default function QuestionsManager() {
           >
             {t("bulk.delete")}
           </button>
+          <button
+            type="button"
+            disabled={busy}
+            onClick={() => setSelected(new Set())}
+            className={`${bulkButton} border-gray-300 text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5`}
+          >
+            {t("bulk.clearSelection")}
+          </button>
         </div>
       )}
 
-      {isLoading ? (
+      {kazanimsiz ? (
+        kSinif === null || kDers === "" ? (
+          <p className="py-12 text-center text-sm text-gray-500 dark:text-gray-400">
+            {tk("filter.pickFirst")}
+          </p>
+        ) : kLoading ? (
+          <p className="py-12 text-center text-sm text-gray-500 dark:text-gray-400">
+            {t("loading")}
+          </p>
+        ) : kError ? (
+          <div className="py-8 text-center">
+            <p role="alert" className="mb-3 text-sm text-error-600 dark:text-error-400">
+              {t("loadError")}: {kError}
+            </p>
+            <button
+              type="button"
+              onClick={reload}
+              className={`${dokunmaHedefi} rounded-lg border border-gray-300 px-4 text-sm font-medium text-gray-700 hover:bg-gray-50 dark:border-gray-700 dark:text-gray-300 dark:hover:bg-white/5`}
+            >
+              {t("retry")}
+            </button>
+          </div>
+        ) : kRows.length === 0 && page === 0 ? (
+          <p className="py-12 text-center text-sm text-gray-500 dark:text-gray-400">
+            {tk("filter.empty")}
+          </p>
+        ) : (
+          <>
+            <KazanimsizTable
+              rows={kRows}
+              selected={selected}
+              disabled={busy}
+              onToggle={toggle}
+              onToggleAll={toggleAll}
+            />
+            <div className="flex flex-wrap items-center justify-between gap-3 pt-4">
+              <span className="text-theme-sm text-gray-500 dark:text-gray-400">
+                {tk("filter.page", { sayfa: page + 1 })}
+              </span>
+              <div className="flex gap-2">
+                <button
+                  type="button"
+                  disabled={page <= 0}
+                  onClick={() => setPage(page - 1)}
+                  className={pagerButton}
+                >
+                  {t("pager.prev")}
+                </button>
+                <button
+                  type="button"
+                  disabled={kRows.length < PAGE_SIZE}
+                  onClick={() => setPage(page + 1)}
+                  className={pagerButton}
+                >
+                  {t("pager.next")}
+                </button>
+              </div>
+            </div>
+          </>
+        )
+      ) : isLoading ? (
         <p className="py-12 text-center text-sm text-gray-500 dark:text-gray-400">
           {t("loading")}
         </p>
@@ -358,6 +685,18 @@ export default function QuestionsManager() {
             setForm(null);
             setActionError(null);
             setNotice(t("success.saved"));
+            reload();
+          }}
+        />
+      )}
+      {assignOpen && (
+        <KazanimAtaModal
+          ids={[...selected]}
+          onClose={() => setAssignOpen(false)}
+          onDone={(mesaj) => {
+            setAssignOpen(false);
+            setActionError(null);
+            setNotice(mesaj);
             reload();
           }}
         />

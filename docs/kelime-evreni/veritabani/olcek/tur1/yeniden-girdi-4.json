@@ -1,0 +1,167 @@
+[
+ {
+  "orijinal": {
+   "t": "es_anlamli",
+   "s": 4,
+   "z": 2,
+   "h": {
+    "kelime": "sevinç",
+    "anlam": "Hoşa giden bir durumdan duyulan mutluluk",
+    "tur": "kelime",
+    "sozcuk_turu": "isim"
+   },
+   "q": "“Gelen haberi duyunca içimizi sevinç doldu.” cümlesindeki “sevinç” sözcüğüyle eş anlamlı olan hangisidir?",
+   "o": [
+    "öfke",
+    "neşe",
+    "utanç",
+    "merak"
+   ],
+   "d": 1,
+   "a": "Sevinç ve neşe mutluluk duygusunu anlatır; öfke, utanç ve merak başka duygulardır.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 1,
+   "sorun": "Cümlede 'içimizi sevinç doldu' şeklinde ek/yüklem uyumsuzluğu vardır ('içimize sevinç doldu' olmalı).",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 1,
+   "sorun": "Kök cümlede dil bilgisi hatası: 'içimizi sevinç doldu' yanlış; 'içimiz sevinçle doldu' veya 'içimizi sevinç kapladı' olmalı.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "es_sesli",
+   "s": 4,
+   "z": 2,
+   "h": {
+    "kelime": "ocak",
+    "anlam": "yılın ilk ayı",
+    "tur": "kelime",
+    "sozcuk_turu": "isim"
+   },
+   "q": "Aşağıdakilerden hangisinde “ocak” sözcüğü yılın ilk ayı anlamında kullanılmıştır?",
+   "o": [
+    "Annem ocak üzerinde çorba pişiriyor.",
+    "Ocak yanınca mutfak çabuk ısındı.",
+    "Ocak ayında kar yağışı çok arttı.",
+    "Büyükannem ocağın başında çay demledi."
+   ],
+   "d": 2,
+   "a": "Ocak ayı yılın ilk ayıdır; diğerlerinde ocak, yemek pişirilen yerdir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "TDK'de 'ocak' (ateş yeri / yılın ilk ayı) tek madde altında çok anlamlı olabilir; eş sesli diye sunulmamalı. Ayrıca kökteki 'ayı' doğru şıkta 'Ocak ayında' olarak tekrar ediyor (ipucu sızması).",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "es_sesli",
+   "s": 4,
+   "z": 3,
+   "h": {
+    "kelime": "dolu",
+    "anlam": "yağmurla birlikte buz taneleri hâlinde yağan yağış",
+    "tur": "kelime",
+    "sozcuk_turu": "isim"
+   },
+   "q": "Aşağıdakilerden hangisinde “dolu” sözcüğü yağmurla birlikte buz taneleri hâlinde yağan yağış anlamında kullanılmıştır?",
+   "o": [
+    "Sepet taze elmalarla dolu duruyordu.",
+    "Çantam kitap ve defterle dolu geldi.",
+    "Salon bütün gün konuklarla dolu kaldı.",
+    "Dün öğleden sonra şiddetli dolu yağdı."
+   ],
+   "d": 3,
+   "a": "Dolu yağması bir yağış türüdür; diğer cümlelerde dolu, içi boş olmayan demektir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 3,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 3,
+   "sorun": "İpucu sızması: kökteki 'yağan yağış' doğru şıkta 'yağdı' olarak tekrar ediyor; diğer şıklarda yağış çağrışımı yok.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "es_sesli",
+   "s": 4,
+   "z": 3,
+   "h": {
+    "kelime": "sol",
+    "anlam": "müzikte bir nota",
+    "tur": "kelime",
+    "sozcuk_turu": "isim"
+   },
+   "q": "Aşağıdakilerden hangisinde “sol” sözcüğü müzikte bir nota anlamında kullanılmıştır?",
+   "o": [
+    "Flütte sol notasına basınca ses yükseldi.",
+    "Yolun sol tarafında bir fırın vardı.",
+    "Sol elimle kalemi tutmakta zorlanıyorum.",
+    "Köşeden sol yana dönünce okulu gördük."
+   ],
+   "d": 0,
+   "a": "İlk cümlede sol bir nota adıdır; diğerlerinde sol yön ya da taraftır.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 0,
+   "sorun": "A şıkkında 'sol notasına' denilerek soru kökündeki anlam doğrudan açık edilmiş ve ipucu verilmiştir.",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "İpucu sızması: kökteki 'nota' doğru şıkta 'sol notasına' olarak geçiyor; soru ayırt edici değil.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "atasozu",
+   "s": 4,
+   "z": 1,
+   "h": {
+    "kelime": "Ağaç yaşken eğilir.",
+    "anlam": "Küçük yaşta öğrenilen şey kalıcı olur.",
+    "tur": "atasozu",
+    "sozcuk_turu": null
+   },
+   "q": "“Ağaç yaşken eğilir.” atasözü hangi durumu anlatır?",
+   "o": [
+    "Ağaçlar yağmurdan sonra eğilir.",
+    "Büyükler yeni bir şey öğrenemez.",
+    "Küçük yaşta öğrenilen şey kalıcı olur.",
+    "Fidanlar her toprakta kolay büyür."
+   ],
+   "d": 2,
+   "a": "Atasözü, küçük yaşta verilen eğitimin kalıcı olduğunu anlatır.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 2,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 2,
+   "sorun": "Doğru şık TDK anlamından kayıyor: atasözü 'insan küçük yaşta eğitilmeli/kolay eğitilir' der; 'öğrenilen şey kalıcı olur' farklı bir atasözünün anlamına yakın. 'Eğitim küçük yaşta daha kolay verilir' biçimi önerilir.",
+   "tek": true
+  }
+ }
+]

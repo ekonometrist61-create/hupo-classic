@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3038,
+        "kelime_sayisi": 3037,
         "tahmini_sure_dk": 27,
         "sayfa_sayisi": 27,
         "soru_sayisi": 4,
@@ -155,7 +155,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Okulun satranç kulübü, boş bir sınıfta eski bir kırmızı defter buldu. Defterin kapağında yalnızca Nöbet Devir Teslimi yazıyordu. İçinde küçük tablolar, okunması zor notlar ve uzun sayı dizileri vardı. Altıncı sınıftan Baran'ın satranç oyunlarından öğrendiği bir alışkanlık vardı: Bir hamle yapmadan önce karşı tarafın ne yapabileceğini düşünmek. "
+          "v": "Okulun satranç kulübü, kulüp odasındaki bir dolapta eski bir kırmızı defter buldu. Defterin kapağında yalnızca Nöbet Devir Teslimi yazıyordu. İçinde küçük tablolar, okunması zor notlar ve uzun sayı dizileri vardı. Altıncı sınıftan Baran'ın satranç oyunlarından öğrendiği bir alışkanlık vardı: Bir hamle yapmadan önce karşı tarafın ne yapabileceğini düşünmek. "
         },
         {
           "t": "kahraman",
@@ -269,7 +269,7 @@
         },
         {
           "t": "metin",
-          "v": " itiraz etmedi. Ama hemen yanındaki listede 502, 504, 506 gibi başka bir dizi vardı. Puanların neden bir sayfada üçer, başka sayfada ikişer arttığını anlamıyordu. Defteri bulan kulüp başkanı "
+          "v": " itiraz etmedi. Ama hemen yanındaki listede 502, 504, 506 gibi başka bir dizi vardı. Puanların neden bir sayfada üçer, başka sayfada ikişer arttığını anlamıyordu. Kulüp başkanı "
         },
         {
           "t": "yoldas",
@@ -383,7 +383,7 @@
         },
         {
           "t": "metin",
-          "v": " aynı kuralı hemen uyguladı ve şaşırdı. Yeni dizinin farkı farklıydı. \"Kuralı öğrenmek yetmiyor,\" dedi. \"Hangi diziye uyguladığını da bilmen gerek.\" "
+          "v": " aynı kuralı hemen uyguladı; ama dizinin hangi sayfadan geldiğini hatırlamadığını fark edip şaşırdı. \"Kuralı öğrenmek yetmiyor,\" dedi. \"Hangi diziye uyguladığını da bilmen gerek.\" "
         },
         {
           "t": "yoldas",
@@ -743,7 +743,7 @@
         },
         {
           "t": "metin",
-          "v": " yayım bilgilerini karşılaştırdı. Bir kitapta yazar adı farklıydı. Baran da aradıkları kitabın sayfa sayısının eski kayıttakine benzemediğini fark etti. İkili birbirlerini uyarınca "
+          "v": " yayım bilgilerini karşılaştırdı. Bir kitapta yazar adı farklıydı. Baran da aradıkları kitabın sayfa sayısının eski kayıttakine benzemediğini fark etti. İkili birbirini uyararak "
         },
         {
           "t": "kahraman",
@@ -928,7 +928,7 @@
         },
         {
           "t": "metin",
-          "v": " öğretmeni gibi davranmaktan hoşlanmıştı; daha çok, bir ipucunu paylaşmanın sevincini yaşıyordu."
+          "v": " öğretmen gibi davranmaktan çok, bir ipucunu paylaşmanın sevincini yaşıyordu."
         }
       ]
     },
@@ -1013,7 +1013,7 @@
         },
         {
           "t": "metin",
-          "v": ", eski hâli gibi hemen en iyi hamleyi göstermedi. Yeni üye sonunda bir hamle yaptı ve kendi düşünme yolunu açıkladı. "
+          "v": ", eskisi gibi hemen en iyi hamleyi göstermedi. Yeni üye sonunda bir hamle yaptı ve kendi düşünme yolunu açıkladı. "
         },
         {
           "t": "kahraman",
@@ -1237,15 +1237,15 @@
         },
         {
           "id": "B",
-          "metin": "Kapak rengi kırmızıydı"
+          "metin": "Kırmızı kapağın defterin gizli bir kulübe ait olduğunu"
         },
         {
           "id": "C",
-          "metin": "Defter çok eskiydi"
+          "metin": "Defterin çok eski olduğunu ve yıllardır okunmadığını"
         },
         {
           "id": "D",
-          "metin": "Sayılar çok büyüktü"
+          "metin": "Sayıların çok büyük olduğunu ve hesaplanamayacağını"
         }
       ],
       "dogru": "A",
@@ -1255,26 +1255,26 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 8,
-      "metin": "İrem'in bu sözü neyi vurgular?",
+      "metin": "Yoldaşın bu sözü neyi vurgular?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir örüntü bulmak, onun neyi anlattığını bilmek anlamına gelmez"
+          "metin": "Bulunan her örüntünün kesin olarak doğru bir anlam taşıdığını"
         },
         {
           "id": "B",
-          "metin": "Örüntünün her zaman doğru olduğunu"
+          "metin": "Bir örüntü bulmak, onun neyi anlattığını bilmek anlamına gelmez"
         },
         {
           "id": "C",
-          "metin": "Defterin tamamen değersiz olduğunu"
+          "metin": "Defterin bilgi açısından tamamen değersiz ve anlamsız olduğunu"
         },
         {
           "id": "D",
-          "metin": "Kuralın hiç bulunamayacağını"
+          "metin": "Defterdeki sayılarda hiçbir kuralın bulunamayacağını ve çözülemeyeceğini"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kuralı bulmak ile belgenin anlamını anlamak farklı işlerdir."
     },
     {
@@ -1285,22 +1285,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tablonun dikey bölümlerinden biri"
+          "metin": "Kitapların konularına göre ayrılmış bir bölüm"
         },
         {
           "id": "B",
-          "metin": "Bir kitap türü"
+          "metin": "Tablonun yatay uzanan bir satırı"
         },
         {
           "id": "C",
-          "metin": "Bir yatay satır"
+          "metin": "Tablonun dikey bölümlerinden biri"
         },
         {
           "id": "D",
-          "metin": "Bir sayı kodu"
+          "metin": "Kitap kodlarında kullanılan bir sayı kodu"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Sütun, bir tablonun yukarıdan aşağıya uzanan bölümüdür."
     }
   ],

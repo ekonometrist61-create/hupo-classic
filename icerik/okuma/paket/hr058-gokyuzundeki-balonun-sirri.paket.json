@@ -78,7 +78,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2041,
+        "kelime_sayisi": 2044,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 16,
         "soru_sayisi": 4,
@@ -97,7 +97,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Balon neden yükselir? Ayşe rengin mi, ısının mı etkisini araştırdı.",
+    "tanitim": "Balon neden yükselir? {kahraman} rengin mi, ısının mı etkisini araştırdı.",
     "durum": "taslak",
     "fis_kodu": "HR-058"
   },
@@ -131,7 +131,7 @@
         },
         {
           "t": "metin",
-          "v": "\n\n“Balonu yukarı ne çekiyor?” diye sordu kardeşi "
+          "v": "\n\n“Balonu yukarı ne çekiyor?” diye sordu "
         },
         {
           "t": "yoldas",
@@ -140,7 +140,7 @@
         },
         {
           "t": "metin",
-          "v": ". “Bir ip mi?”\n\nBabaları gülümsedi. “İpler balonun güvenli biçimde sabitlenmesinde kullanılıyor. Nasıl yükseldiğini görevli pilottan dinleyelim.”\n\nBalonun pilotu Selin Hanım, ziyaretçilere güvenlik çizgisinin gerisinde beklemelerini söylüyordu. Ekip, balonun içindeki havayı bir "
+          "v": ". “Bir ip mi?”\n\nBabası gülümsedi. “İpler balonun güvenli biçimde sabitlenmesinde kullanılıyor. Nasıl yükseldiğini görevli pilottan dinleyelim.”\n\nBalonun pilotu Selin Hanım, ziyaretçilere güvenlik çizgisinin gerisinde beklemelerini söylüyordu. Ekip, balonun içindeki havayı bir "
         },
         {
           "t": "kelime",
@@ -182,7 +182,7 @@
         },
         {
           "t": "metin",
-          "v": " “Hava hafiflediği için mi?” diye sordu.\n\n“Basitçe böyle söyleyebilirsin,” dedi pilot. “Ama içerdeki hava yok olmuyor. Isındığında genişliyor ve aynı hacimdeki hava miktarı, dışarıdaki daha soğuk havaya göre azalıyor. Bu yüzden "
+          "v": " “Hava hafiflediği için mi?” diye sordu.\n\n“Basitçe böyle söyleyebilirsin,” dedi pilot. “Ama içerdeki hava yok olmuyor. Isındığında genişliyor ve aynı hacimdeki havanın kütlesi, dışarıdaki daha soğuk havaya göre azalıyor. Bu yüzden "
         },
         {
           "t": "kelime",
@@ -241,7 +241,7 @@
         },
         {
           "t": "metin",
-          "v": ", bekleme sırasında bilim standına uğradı. Burada balonlar ve hava akımı üzerine güvenli bir sınıf gösterisi vardı. Görevli, masanın üzerindeki basit çizimlerle sıcak ve soğuk havanın yoğunluk ilişkisini anlattı. Ateş ve yanıcı malzemeler içeren denemeleri yalnız eğitimli uzmanların yapması gerektiğini hatırlattı. Çocuklar brülörü kendilerinin kullanmaya kalkmayacaktı.\n\nStanttaki panoda iki ok vardı: Biri yukarı, biri aşağı. "
+          "v": ", bekleme sırasında bilim standına uğradı. Burada balonlar ve hava akımı üzerine güvenli bir sınıf gösterisi vardı. Görevli, masanın üzerindeki basit çizimlerle sıcak ve soğuk havanın yoğunluk ilişkisini anlattı. Ateş ve yanıcı malzemeler içeren denemeleri yalnız eğitimli uzmanların yapması gerektiğini hatırlattı. Çocuklar brülörü kendilerinin kullanmaya kalkmayacaklardı.\n\nStanttaki panoda iki ok vardı: Biri yukarı, biri aşağı. "
         },
         {
           "t": "kahraman",
@@ -558,7 +558,7 @@
         },
         {
           "t": "metin",
-          "v": " ise balonun yalnız bir köşesinin göründüğü kareyi seçti. Çünkü o karede görevli ekibin güvenlik çizgisini kontrol ederken ne kadar dikkatli çalıştığı görülüyordu. Babaları iki fotoğrafı yan yana koydu. “Bilim yalnız uçan şeylere bakmak değildir,” dedi. “Onları güvenli biçimde nasıl tasarladığımızı ve kullandığımızı da anlamaktır.” "
+          "v": " ise balonun yalnız bir köşesinin göründüğü kareyi seçti. Çünkü o karede görevli ekibin güvenlik çizgisini kontrol ederken ne kadar dikkatli çalıştığı görülüyordu. Babası iki fotoğrafı yan yana koydu. “Bilim yalnız uçan şeylere bakmak değildir,” dedi. “Onları güvenli biçimde nasıl tasarladığımızı ve kullandığımızı da anlamaktır.” "
         },
         {
           "t": "kahraman",
@@ -599,7 +599,7 @@
         },
         {
           "t": "metin",
-          "v": ", gördükleri sıcak hava balonunda yükselmeyi sağlayan şeyin özel bir hafif gazla doldurulma değil, içerdeki havanın ısıtılması olduğunu açıkladı. Helyum balonlarının farklı bir ilkeyle havada kalabildiğini öğrendiler. Aynı “balon” sözcüğü, görünüşte benzeyen ama farklı çalışan araçları anlatabiliyordu. Sunum sonunda öğretmenleri çocuklardan iki balon türünü bir tabloda karşılaştırmalarını istedi. "
+          "v": ", gördükleri sıcak hava balonunda yükselmeyi sağlayan şeyin özel bir hafif gazla doldurulma değil, içerdeki havanın ısıtılması olduğunu açıkladı. Helyum balonlarının ise içindeki gazın havadan daha hafif olmasıyla havada kalabildiğini öğrendiler. Aynı “balon” sözcüğü, görünüşte benzeyen ama farklı çalışan araçları anlatabiliyordu. Sunum sonunda öğretmenleri çocuklardan iki balon türünü bir tabloda karşılaştırmalarını istedi. "
         },
         {
           "t": "kahraman",
@@ -832,11 +832,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Brülörle"
+          "metin": "Güneş ışığıyla"
         },
         {
           "id": "B",
-          "metin": "Güneş ışığıyla"
+          "metin": "Brülörle"
         },
         {
           "id": "C",
@@ -847,7 +847,7 @@
           "metin": "Elektrikle"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Ekip, balonun içindeki havayı brülörle ısıtıyordu."
     },
     {
@@ -862,15 +862,15 @@
         },
         {
           "id": "B",
-          "metin": "Balonun rengi"
+          "metin": "Balonun parlak renkli olmasının havada süzülmesini sağlaması"
         },
         {
           "id": "C",
-          "metin": "Kuvvetli bir rüzgâr"
+          "metin": "Kuvvetli bir rüzgârın balonu gökyüzüne doğru itmesi ve sürüklemesi"
         },
         {
           "id": "D",
-          "metin": "Balonun çok küçük olması"
+          "metin": "Balonun çok küçük ve hafif bir kumaştan yapılmış olması"
         }
       ],
       "dogru": "A",
@@ -880,26 +880,26 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 4,
-      "metin": "Ayşe'nin bu düşüncesi neyi gösterir?",
+      "metin": "Kahramanın bu düşüncesi neyi gösterir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir olayın birden fazla etkene bağlı olabileceğini"
+          "metin": "Bilimsel açıklamaların günlük hayatta işe yaramadığını"
         },
         {
           "id": "B",
-          "metin": "Bilimin önemsiz olduğunu"
+          "metin": "Balonun gökyüzüne hiçbir koşulda çıkamayacağını"
         },
         {
           "id": "C",
-          "metin": "Balonun hiç uçmayacağını"
+          "metin": "Rüzgârın her zaman en yararlı etken olduğunu"
         },
         {
           "id": "D",
-          "metin": "Rüzgârın her zaman yararlı olduğunu"
+          "metin": "Bir olayın birden fazla etkene bağlı olabileceğini"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Balonun yükselmesi ısı, ağırlık, rüzgâr ve güvenlik gibi birçok koşula bağlıdır."
     },
     {
@@ -910,22 +910,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Balonun içindeki havayı ısıtan araç"
+          "metin": "Balonun altına bağlanan yolcu bölümü"
         },
         {
           "id": "B",
-          "metin": "Bir tür sepet"
+          "metin": "Balonun içindeki havayı ısıtan araç"
         },
         {
           "id": "C",
-          "metin": "Bir rüzgâr türü"
+          "metin": "Havanın hızını ölçmeye yarayan küçük bir alet"
         },
         {
           "id": "D",
-          "metin": "Bir gösteri alanı"
+          "metin": "Şenlikte balon gösterisinin yapıldığı açık alan"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Brülör, sıcak hava balonunun içindeki havayı ısıtan alev veren araçtır."
     }
   ],

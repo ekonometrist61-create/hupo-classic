@@ -3,6 +3,7 @@ import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../theme/app_theme.dart';
 import 'auth_widgets.dart';
+import 'turnstile.dart';
 
 class SignupScreen extends StatefulWidget {
   const SignupScreen({super.key});
@@ -29,11 +30,15 @@ class _SignupScreenState extends State<SignupScreen> {
 
   Future<void> _signup() async {
     if (!_formKey.currentState!.validate()) return;
+    final captcha = await turnstileTokenAl(context);
+    if (captcha == null) return; // kullanici vazgecti
+    if (!mounted) return;
     setState(() => _loading = true);
     try {
       final response = await Supabase.instance.client.auth.signUp(
         email: _emailController.text.trim(),
         password: _passwordController.text,
+        captchaToken: captcha.isEmpty ? null : captcha,
         // handle_new_user tetikleyicisi bu bilgilerle profili oluşturur.
         data: {'full_name': _nameController.text.trim(), 'role': 'ogrenci'},
       );

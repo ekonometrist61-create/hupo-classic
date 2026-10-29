@@ -1,0 +1,1874 @@
+[
+ {
+  "id": "MAT5-GEO-G01",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Çember elemanları",
+  "soru_metni": "Yukarıda O merkezli çemberin üzerine bazı doğru parçaları çizilmiştir. Bu doğru parçalarından hangisi çemberin çapıdır?",
+  "siklar": {
+   "A": "[TE]",
+   "B": "[RS]",
+   "C": "[OB]",
+   "D": "[TR]"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Çap, çemberin iki noktasını birleştirirken merkezden de geçer.",
+  "cozum_adimlari": [
+   "[TE] çemberin üzerindeki iki noktayı birleştirir.",
+   "Bu doğru parçası çemberin merkezi O'dan geçer.",
+   "Merkezden geçen kiriş çaptır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "[RS] çemberin iki noktasını birleştirir ama merkezden geçmez; kiriştir.",
+   "C": "[OB] merkezi çember üzerindeki bir noktaya bağlar; yarıçaptır, çap değildir.",
+   "D": "[TR] merkezden geçmeyen bir kiriştir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cember-elemanlari",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"O merkezli çember; çemberin üzerine 4 doğru parçası çizilmiş, uç noktaları harflerle adlandırılmış.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><circle cx=\"130\" cy=\"130\" r=\"95\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2.2\"/><circle cx=\"130\" cy=\"130\" r=\"3.5\" fill=\"#1F2937\"/><line x1=\"202.77\" y1=\"68.94\" x2=\"57.23\" y2=\"191.06\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"113.5\" y1=\"36.44\" x2=\"40.73\" y2=\"162.49\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"130\" x2=\"138.28\" y2=\"224.64\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"202.77\" y1=\"68.94\" x2=\"113.5\" y2=\"36.44\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"142\" y=\"147\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">O</text><circle cx=\"202.77\" cy=\"68.94\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"215.03\" y=\"63.65\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">T</text><circle cx=\"57.23\" cy=\"191.06\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"44.97\" y=\"206.35\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">E</text><circle cx=\"113.5\" cy=\"36.44\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"110.73\" y=\"25.69\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">R</text><circle cx=\"40.73\" cy=\"162.49\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"25.69\" y=\"172.96\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">S</text><circle cx=\"138.28\" cy=\"224.64\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"139.67\" y=\"245.58\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "O merkezli çember; çemberin üzerine 4 doğru parçası çizilmiş, uç noktaları harflerle adlandırılmış.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cember-elemanlari",
+   "parametreler": {
+    "merkez": "O",
+    "noktalar": [
+     {
+      "ad": "T",
+      "aci": 40
+     },
+     {
+      "ad": "E",
+      "aci": 220
+     },
+     {
+      "ad": "R",
+      "aci": 100
+     },
+     {
+      "ad": "S",
+      "aci": 200
+     },
+     {
+      "ad": "B",
+      "aci": 275
+     },
+     {
+      "ad": "L",
+      "aci": 345
+     }
+    ],
+    "cizimler": [
+     {
+      "tur": "cap",
+      "a": "T",
+      "b": "E"
+     },
+     {
+      "tur": "kiris",
+      "a": "R",
+      "b": "S"
+     },
+     {
+      "tur": "yaricap",
+      "a": "B"
+     },
+     {
+      "tur": "kiris",
+      "a": "T",
+      "b": "R"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siniflar",
+     "[TE]"
+    ],
+    "beklenen": "cap"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[RS]"
+    ],
+    "beklenen": "kiris"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[OB]"
+    ],
+    "beklenen": "yaricap"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[TR]"
+    ],
+    "beklenen": "kiris"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G02",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Çember elemanları",
+  "soru_metni": "Yukarıda O merkezli çemberin üzerine bazı doğru parçaları çizilmiştir. Bu doğru parçalarından hangisi çemberin çapıdır?",
+  "siklar": {
+   "A": "[MF]",
+   "B": "[RN]",
+   "C": "[OB]",
+   "D": "[RM]"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Çap, çemberin iki noktasını birleştirirken merkezden de geçer.",
+  "cozum_adimlari": [
+   "[RN] çemberin üzerindeki iki noktayı birleştirir.",
+   "Bu doğru parçası çemberin merkezi O'dan geçer.",
+   "Merkezden geçen kiriş çaptır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "[MF] çemberin iki noktasını birleştirir ama merkezden geçmez; kiriştir.",
+   "B": "Doğru.",
+   "C": "[OB] merkezi çember üzerindeki bir noktaya bağlar; yarıçaptır, çap değildir.",
+   "D": "[RM] merkezden geçmeyen bir kiriştir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cember-elemanlari",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"O merkezli çember; çemberin üzerine 4 doğru parçası çizilmiş, uç noktaları harflerle adlandırılmış.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><circle cx=\"130\" cy=\"130\" r=\"95\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2.2\"/><circle cx=\"130\" cy=\"130\" r=\"3.5\" fill=\"#1F2937\"/><line x1=\"115.14\" y1=\"36.17\" x2=\"144.86\" y2=\"223.83\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"41.31\" y1=\"95.96\" x2=\"111.87\" y2=\"223.25\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"130\" x2=\"215.39\" y2=\"171.65\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"115.14\" y1=\"36.17\" x2=\"41.31\" y2=\"95.96\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"118\" y=\"147\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">O</text><circle cx=\"115.14\" cy=\"36.17\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"112.64\" y=\"25.37\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">R</text><circle cx=\"144.86\" cy=\"223.83\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"147.36\" y=\"244.63\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">N</text><circle cx=\"41.31\" cy=\"95.96\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"26.37\" y=\"95.22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">M</text><circle cx=\"111.87\" cy=\"223.25\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"108.82\" y=\"243.96\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">F</text><circle cx=\"215.39\" cy=\"171.65\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"229.77\" y=\"183.66\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "O merkezli çember; çemberin üzerine 4 doğru parçası çizilmiş, uç noktaları harflerle adlandırılmış.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cember-elemanlari",
+   "parametreler": {
+    "merkez": "O",
+    "noktalar": [
+     {
+      "ad": "R",
+      "aci": 99
+     },
+     {
+      "ad": "N",
+      "aci": 279
+     },
+     {
+      "ad": "M",
+      "aci": 159
+     },
+     {
+      "ad": "F",
+      "aci": 259
+     },
+     {
+      "ad": "B",
+      "aci": 334
+     },
+     {
+      "ad": "E",
+      "aci": 404
+     }
+    ],
+    "cizimler": [
+     {
+      "tur": "cap",
+      "a": "R",
+      "b": "N"
+     },
+     {
+      "tur": "kiris",
+      "a": "M",
+      "b": "F"
+     },
+     {
+      "tur": "yaricap",
+      "a": "B"
+     },
+     {
+      "tur": "kiris",
+      "a": "R",
+      "b": "M"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siniflar",
+     "[RN]"
+    ],
+    "beklenen": "cap"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[MF]"
+    ],
+    "beklenen": "kiris"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[OB]"
+    ],
+    "beklenen": "yaricap"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[RM]"
+    ],
+    "beklenen": "kiris"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G03",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Çember elemanları",
+  "soru_metni": "Yukarıda O merkezli çemberin üzerine bazı doğru parçaları çizilmiştir. Bu doğru parçalarından hangisi çemberin yarıçapıdır?",
+  "siklar": {
+   "A": "[AF]",
+   "B": "[RK]",
+   "C": "[ON]",
+   "D": "[AR]"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yarıçapın bir ucu merkezdedir, diğer ucu çemberin üzerindedir.",
+  "cozum_adimlari": [
+   "[ON] merkez O ile çember üzerindeki N noktasını birleştirir.",
+   "Bir ucu merkez, diğer ucu çember üzerinde olan doğru parçası yarıçaptır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "[AF] merkezden geçen bir kiriş, yani çaptır; yarıçapın iki katıdır.",
+   "B": "[RK] merkezden geçmeyen bir kiriştir.",
+   "C": "Doğru.",
+   "D": "[AR] merkezden geçmeyen bir kiriştir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cember-elemanlari",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"O merkezli çember; çemberin üzerine 4 doğru parçası çizilmiş, uç noktaları harflerle adlandırılmış.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><circle cx=\"130\" cy=\"130\" r=\"95\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2.2\"/><circle cx=\"130\" cy=\"130\" r=\"3.5\" fill=\"#1F2937\"/><line x1=\"133.32\" y1=\"35.06\" x2=\"126.68\" y2=\"224.94\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"49.44\" y1=\"79.66\" x2=\"94.41\" y2=\"218.08\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"130\" x2=\"205.87\" y2=\"187.17\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"133.32\" y1=\"35.06\" x2=\"49.44\" y2=\"79.66\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"118\" y=\"147\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">O</text><circle cx=\"133.32\" cy=\"35.06\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"133.87\" y=\"24.07\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">A</text><circle cx=\"126.68\" cy=\"224.94\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"126.13\" y=\"245.93\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">F</text><circle cx=\"49.44\" cy=\"79.66\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"35.87\" y=\"76.18\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">R</text><circle cx=\"94.41\" cy=\"218.08\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"88.42\" y=\"237.92\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><circle cx=\"205.87\" cy=\"187.17\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"218.65\" y=\"201.8\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">N</text></svg>",
+   "alt_metin": "O merkezli çember; çemberin üzerine 4 doğru parçası çizilmiş, uç noktaları harflerle adlandırılmış.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cember-elemanlari",
+   "parametreler": {
+    "merkez": "O",
+    "noktalar": [
+     {
+      "ad": "A",
+      "aci": 88
+     },
+     {
+      "ad": "F",
+      "aci": 268
+     },
+     {
+      "ad": "R",
+      "aci": 148
+     },
+     {
+      "ad": "K",
+      "aci": 248
+     },
+     {
+      "ad": "N",
+      "aci": 323
+     },
+     {
+      "ad": "S",
+      "aci": 393
+     }
+    ],
+    "cizimler": [
+     {
+      "tur": "cap",
+      "a": "A",
+      "b": "F"
+     },
+     {
+      "tur": "kiris",
+      "a": "R",
+      "b": "K"
+     },
+     {
+      "tur": "yaricap",
+      "a": "N"
+     },
+     {
+      "tur": "kiris",
+      "a": "A",
+      "b": "R"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siniflar",
+     "[ON]"
+    ],
+    "beklenen": "yaricap"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[AF]"
+    ],
+    "beklenen": "cap"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G04",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Çember elemanları",
+  "soru_metni": "Yukarıdaki şekilde O merkezli çemberin üzerine bazı doğru parçaları çizilmiştir. Aşağıdakilerden hangisi çap olmayan bir kiriştir?",
+  "siklar": {
+   "A": "[TP]",
+   "B": "[OS]",
+   "C": "[OF]",
+   "D": "[CM]"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Kiriş, çemberin üzerindeki iki noktayı birleştirir. Çap, merkezden geçen kiriştir.",
+  "cozum_adimlari": [
+   "[CM] çemberin iki noktasını birleştirir, merkezden geçmez.",
+   "Çemberin iki noktasını birleştirip merkezden geçmeyen doğru parçası çap olmayan kiriştir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "[TP] merkezden geçtiği için çaptır; her çap bir kiriştir ama çap olmayan kiriş aranıyor.",
+   "B": "[OS] bir ucu merkezde olduğu için kiriş değil, yarıçaptır.",
+   "C": "[OF] bir ucu merkezde olduğu için kiriş değil, yarıçaptır.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cember-elemanlari",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"O merkezli çember; çemberin üzerine 4 doğru parçası çizilmiş, uç noktaları harflerle adlandırılmış.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><circle cx=\"130\" cy=\"130\" r=\"95\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2.2\"/><circle cx=\"130\" cy=\"130\" r=\"3.5\" fill=\"#1F2937\"/><line x1=\"191.06\" y1=\"57.23\" x2=\"68.94\" y2=\"202.77\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"97.51\" y1=\"40.73\" x2=\"47.73\" y2=\"177.5\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"130\" x2=\"154.59\" y2=\"221.76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"130\" x2=\"224.64\" y2=\"138.28\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"142\" y=\"147\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">O</text><circle cx=\"191.06\" cy=\"57.23\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"201.35\" y=\"49.97\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">T</text><circle cx=\"68.94\" cy=\"202.77\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"58.65\" y=\"220.03\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">P</text><circle cx=\"97.51\" cy=\"40.73\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"92.04\" y=\"30.69\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">C</text><circle cx=\"47.73\" cy=\"177.5\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"33.87\" y=\"190.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">M</text><circle cx=\"154.59\" cy=\"221.76\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"158.73\" y=\"242.22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">S</text><circle cx=\"224.64\" cy=\"138.28\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"240.58\" y=\"144.67\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">F</text></svg>",
+   "alt_metin": "O merkezli çember; çemberin üzerine 4 doğru parçası çizilmiş, uç noktaları harflerle adlandırılmış.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cember-elemanlari",
+   "parametreler": {
+    "merkez": "O",
+    "noktalar": [
+     {
+      "ad": "T",
+      "aci": 50
+     },
+     {
+      "ad": "P",
+      "aci": 230
+     },
+     {
+      "ad": "C",
+      "aci": 110
+     },
+     {
+      "ad": "M",
+      "aci": 210
+     },
+     {
+      "ad": "S",
+      "aci": 285
+     },
+     {
+      "ad": "F",
+      "aci": 355
+     }
+    ],
+    "cizimler": [
+     {
+      "tur": "cap",
+      "a": "T",
+      "b": "P"
+     },
+     {
+      "tur": "kiris",
+      "a": "C",
+      "b": "M"
+     },
+     {
+      "tur": "yaricap",
+      "a": "S"
+     },
+     {
+      "tur": "yaricap",
+      "a": "F"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siniflar",
+     "[CM]"
+    ],
+    "beklenen": "kiris"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[TP]"
+    ],
+    "beklenen": "cap"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[OS]"
+    ],
+    "beklenen": "yaricap"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[OF]"
+    ],
+    "beklenen": "yaricap"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G05",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Çember elemanları",
+  "soru_metni": "Yukarıdaki şekilde O merkezli çemberin üzerine bazı doğru parçaları çizilmiştir. Aşağıdakilerden hangisi çap olmayan bir kiriştir?",
+  "siklar": {
+   "A": "[BL]",
+   "B": "[NM]",
+   "C": "[OF]",
+   "D": "[OP]"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Kiriş, çemberin üzerindeki iki noktayı birleştirir. Çap, merkezden geçen kiriştir.",
+  "cozum_adimlari": [
+   "[BL] çemberin iki noktasını birleştirir, merkezden geçmez.",
+   "Çemberin iki noktasını birleştirip merkezden geçmeyen doğru parçası çap olmayan kiriştir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "[NM] merkezden geçtiği için çaptır; her çap bir kiriştir ama çap olmayan kiriş aranıyor.",
+   "C": "[OF] bir ucu merkezde olduğu için kiriş değil, yarıçaptır.",
+   "D": "[OP] bir ucu merkezde olduğu için kiriş değil, yarıçaptır."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cember-elemanlari",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"O merkezli çember; çemberin üzerine 4 doğru parçası çizilmiş, uç noktaları harflerle adlandırılmış.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><circle cx=\"130\" cy=\"130\" r=\"95\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"2.2\"/><circle cx=\"130\" cy=\"130\" r=\"3.5\" fill=\"#1F2937\"/><line x1=\"121.72\" y1=\"35.36\" x2=\"138.28\" y2=\"224.64\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"43.9\" y1=\"89.85\" x2=\"105.41\" y2=\"221.76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"130\" x2=\"212.27\" y2=\"177.5\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"130\" y1=\"130\" x2=\"202.77\" y2=\"68.94\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"118\" y=\"147\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">O</text><circle cx=\"121.72\" cy=\"35.36\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"120.33\" y=\"24.42\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">N</text><circle cx=\"138.28\" cy=\"224.64\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"139.67\" y=\"245.58\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">M</text><circle cx=\"43.9\" cy=\"89.85\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"29.4\" y=\"88.09\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text><circle cx=\"105.41\" cy=\"221.76\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"101.27\" y=\"242.22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">L</text><circle cx=\"212.27\" cy=\"177.5\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"226.13\" y=\"190.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">F</text><circle cx=\"202.77\" cy=\"68.94\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"215.03\" y=\"63.65\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">P</text></svg>",
+   "alt_metin": "O merkezli çember; çemberin üzerine 4 doğru parçası çizilmiş, uç noktaları harflerle adlandırılmış.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cember-elemanlari",
+   "parametreler": {
+    "merkez": "O",
+    "noktalar": [
+     {
+      "ad": "N",
+      "aci": 95
+     },
+     {
+      "ad": "M",
+      "aci": 275
+     },
+     {
+      "ad": "B",
+      "aci": 155
+     },
+     {
+      "ad": "L",
+      "aci": 255
+     },
+     {
+      "ad": "F",
+      "aci": 330
+     },
+     {
+      "ad": "P",
+      "aci": 400
+     }
+    ],
+    "cizimler": [
+     {
+      "tur": "cap",
+      "a": "N",
+      "b": "M"
+     },
+     {
+      "tur": "kiris",
+      "a": "B",
+      "b": "L"
+     },
+     {
+      "tur": "yaricap",
+      "a": "F"
+     },
+     {
+      "tur": "yaricap",
+      "a": "P"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siniflar",
+     "[BL]"
+    ],
+    "beklenen": "kiris"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[NM]"
+    ],
+    "beklenen": "cap"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[OF]"
+    ],
+    "beklenen": "yaricap"
+   },
+   {
+    "yol": [
+     "siniflar",
+     "[OP]"
+    ],
+    "beklenen": "yaricap"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G06",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Doğru, ışın ve doğru parçası gösterimi",
+  "soru_metni": "Yukarıdaki şekilde A ve B noktalarından geçen model çizilmiştir. Bu modelin sembol ile gösterimi aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "[AB]",
+   "B": "[AB",
+   "C": "(AB)",
+   "D": "[BA"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Şekildeki modelin uçlarına bak: uç var mı, ok var mı?",
+  "cozum_adimlari": [
+   "Şekildeki model bir ucu sınırlı, diğer ucu sonsuzdur; bu bir ışın.",
+   "Işının sembolle gösterimi [AB biçimindedir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "[AB] başka bir geometrik modelin (doğru parçası) gösterimidir.",
+   "B": "Doğru.",
+   "C": "(AB) başka bir geometrik modelin (doğru) gösterimidir.",
+   "D": "[BA, B noktasından başlayıp A yönünde giden ışının gösterimidir; şekildeki model bu değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "dogru-modelleri",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" role=\"img\" aria-label=\"Şekil: A, B noktaları ve bu noktalarla çizilmiş bir model.\"><rect width=\"320\" height=\"200\" fill=\"#FFFFFF\"/><line x1=\"91\" y1=\"114\" x2=\"306\" y2=\"68.29\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"306,68.29 298.89,73.81 297.26,66.15\" fill=\"#1F2937\"/><circle cx=\"91\" cy=\"114\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"91\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">A</text><circle cx=\"218\" cy=\"87\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"218\" y=\"77\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Şekil: A, B noktaları ve bu noktalarla çizilmiş bir model.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "dogru-modelleri",
+   "parametreler": {
+    "noktalar": [
+     {
+      "ad": "A",
+      "x": 91,
+      "y": 114
+     },
+     {
+      "ad": "B",
+      "x": 218,
+      "y": 87
+     }
+    ],
+    "nesneler": [
+     {
+      "tur": "isin",
+      "a": "A",
+      "b": "B"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "semboller",
+     "AB"
+    ],
+    "beklenen": "[AB"
+   },
+   {
+    "yol": [
+     "turler",
+     "AB"
+    ],
+    "beklenen": "isin"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G07",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Doğru, ışın ve doğru parçası gösterimi",
+  "soru_metni": "Yukarıdaki şekilde K ve L noktalarından geçen model çizilmiştir. Bu modelin sembol ile gösterimi aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "[KL]",
+   "B": "[KL",
+   "C": "(KL)",
+   "D": "[LK"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Şekildeki modelin uçlarına bak: uç var mı, ok var mı?",
+  "cozum_adimlari": [
+   "Şekildeki model iki yönde de sonsuza gider; bu bir doğru.",
+   "Doğrunun sembolle gösterimi (KL) biçimindedir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "[KL] başka bir geometrik modelin (doğru parçası) gösterimidir.",
+   "B": "[KL başka bir geometrik modelin (ışın) gösterimidir.",
+   "C": "Doğru.",
+   "D": "[LK, L noktasından başlayıp K yönünde giden ışının gösterimidir; şekildeki model bu değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "dogru-modelleri",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" role=\"img\" aria-label=\"Şekil: K, L noktaları ve bu noktalarla çizilmiş bir model.\"><rect width=\"320\" height=\"200\" fill=\"#FFFFFF\"/><line x1=\"14\" y1=\"135.06\" x2=\"306\" y2=\"89.94\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"306,89.94 298.59,95.04 297.39,87.31\" fill=\"#1F2937\"/><polygon points=\"14,135.06 21.41,129.96 22.61,137.69\" fill=\"#1F2937\"/><circle cx=\"105\" cy=\"121\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"105\" y=\"111\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><circle cx=\"215\" cy=\"104\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"215\" y=\"94\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">L</text></svg>",
+   "alt_metin": "Şekil: K, L noktaları ve bu noktalarla çizilmiş bir model.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "dogru-modelleri",
+   "parametreler": {
+    "noktalar": [
+     {
+      "ad": "K",
+      "x": 105,
+      "y": 121
+     },
+     {
+      "ad": "L",
+      "x": 215,
+      "y": 104
+     }
+    ],
+    "nesneler": [
+     {
+      "tur": "dogru",
+      "a": "K",
+      "b": "L"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "semboller",
+     "KL"
+    ],
+    "beklenen": "(KL)"
+   },
+   {
+    "yol": [
+     "turler",
+     "KL"
+    ],
+    "beklenen": "dogru"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G08",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Doğru, ışın ve doğru parçası gösterimi",
+  "soru_metni": "Yukarıdaki şekilde M ve N noktalarından geçen model çizilmiştir. Bu modelin sembol ile gösterimi aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "[MN",
+   "B": "(MN)",
+   "C": "[NM",
+   "D": "[MN]"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Şekildeki modelin uçlarına bak: uç var mı, ok var mı?",
+  "cozum_adimlari": [
+   "Şekildeki model iki ucu da sınırlıdır; bu bir doğru parçası.",
+   "Doğru parçasının sembolle gösterimi [MN] biçimindedir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "[MN başka bir geometrik modelin (ışın) gösterimidir.",
+   "B": "(MN) başka bir geometrik modelin (doğru) gösterimidir.",
+   "C": "[NM, N noktasından başlayıp M yönünde giden ışının gösterimidir; şekildeki model bu değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "dogru-modelleri",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" role=\"img\" aria-label=\"Şekil: M, N noktaları ve bu noktalarla çizilmiş bir model.\"><rect width=\"320\" height=\"200\" fill=\"#FFFFFF\"/><line x1=\"118\" y1=\"112\" x2=\"206\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"118\" cy=\"112\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"118\" y=\"102\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">M</text><circle cx=\"206\" cy=\"76\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"206\" y=\"66\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">N</text></svg>",
+   "alt_metin": "Şekil: M, N noktaları ve bu noktalarla çizilmiş bir model.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "dogru-modelleri",
+   "parametreler": {
+    "noktalar": [
+     {
+      "ad": "M",
+      "x": 118,
+      "y": 112
+     },
+     {
+      "ad": "N",
+      "x": 206,
+      "y": 76
+     }
+    ],
+    "nesneler": [
+     {
+      "tur": "dogru_parcasi",
+      "a": "M",
+      "b": "N"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "semboller",
+     "MN"
+    ],
+    "beklenen": "[MN]"
+   },
+   {
+    "yol": [
+     "turler",
+     "MN"
+    ],
+    "beklenen": "dogru_parcasi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G09",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.1",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Doğru, ışın ve doğru parçası gösterimi",
+  "soru_metni": "Yukarıdaki şekilde P ve R noktalarından geçen model çizilmiştir. Bu modelin sembol ile gösterimi aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "[PR",
+   "B": "[PR]",
+   "C": "(PR)",
+   "D": "[RP"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Şekildeki modelin uçlarına bak: uç var mı, ok var mı?",
+  "cozum_adimlari": [
+   "Şekildeki model bir ucu sınırlı, diğer ucu sonsuzdur; bu bir ışın.",
+   "Işının sembolle gösterimi [PR biçimindedir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "[PR] başka bir geometrik modelin (doğru parçası) gösterimidir.",
+   "C": "(PR) başka bir geometrik modelin (doğru) gösterimidir.",
+   "D": "[RP, R noktasından başlayıp P yönünde giden ışının gösterimidir; şekildeki model bu değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "dogru-modelleri",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 200\" role=\"img\" aria-label=\"Şekil: P, R noktaları ve bu noktalarla çizilmiş bir model.\"><rect width=\"320\" height=\"200\" fill=\"#FFFFFF\"/><line x1=\"98\" y1=\"101\" x2=\"306\" y2=\"66.33\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"306,66.33 298.65,71.53 297.36,63.8\" fill=\"#1F2937\"/><circle cx=\"98\" cy=\"101\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"98\" y=\"91\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">P</text><circle cx=\"194\" cy=\"85\" r=\"3.5\" fill=\"#1F2937\"/><text x=\"194\" y=\"75\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">R</text></svg>",
+   "alt_metin": "Şekil: P, R noktaları ve bu noktalarla çizilmiş bir model.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "dogru-modelleri",
+   "parametreler": {
+    "noktalar": [
+     {
+      "ad": "P",
+      "x": 98,
+      "y": 101
+     },
+     {
+      "ad": "R",
+      "x": 194,
+      "y": 85
+     }
+    ],
+    "nesneler": [
+     {
+      "tur": "isin",
+      "a": "P",
+      "b": "R"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "semboller",
+     "PR"
+    ],
+    "beklenen": "[PR"
+   },
+   {
+    "yol": [
+     "turler",
+     "PR"
+    ],
+    "beklenen": "isin"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G10",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Paralel doğrular",
+  "soru_metni": "Yukarıdaki kareli zeminde k, l, m ve n doğruları verilmiştir. Bu doğrulardan hangi ikisi paraleldir?",
+  "siklar": {
+   "A": "l ile m",
+   "B": "k ile l",
+   "C": "k ile m",
+   "D": "m ile n"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Paralel doğrular kareli zeminde aynı yönde, aynı eğimle ilerler.",
+  "cozum_adimlari": [
+   "Doğruların kareli zeminde yatay ve dikey ilerleme miktarları karşılaştırılır.",
+   "k ile l doğruları paraleldir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir).",
+   "B": "Doğru.",
+   "C": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir).",
+   "D": "Bu doğrular birbirine diktir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kareli-dogrular",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 278 212\" role=\"img\" aria-label=\"Kareli zeminde k, l, m, n doğruları çizilmiş.\"><rect width=\"278\" height=\"212\" fill=\"#FFFFFF\"/><line x1=\"18\" y1=\"194\" x2=\"18\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"194\" x2=\"40\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"194\" x2=\"62\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"84\" y1=\"194\" x2=\"84\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"106\" y1=\"194\" x2=\"106\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"194\" x2=\"128\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"194\" x2=\"150\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"194\" x2=\"172\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"194\" y1=\"194\" x2=\"194\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"216\" y1=\"194\" x2=\"216\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"238\" y1=\"194\" x2=\"238\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"194\" x2=\"260\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"194\" x2=\"260\" y2=\"194\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"172\" x2=\"260\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"128\" x2=\"260\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"106\" x2=\"260\" y2=\"106\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"84\" x2=\"260\" y2=\"84\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"62\" x2=\"260\" y2=\"62\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"40\" x2=\"260\" y2=\"40\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"18\" x2=\"260\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"194\" x2=\"194\" y2=\"128\" stroke=\"#0072B2\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"194,128 188.5,135.13 185,128.12\" fill=\"#0072B2\"/><polygon points=\"62,194 67.5,186.87 71,193.88\" fill=\"#0072B2\"/><line x1=\"150\" y1=\"84\" x2=\"238\" y2=\"40\" stroke=\"#D55E00\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"238,40 232.5,47.13 229,40.12\" fill=\"#D55E00\"/><polygon points=\"150,84 155.5,76.87 159,83.88\" fill=\"#D55E00\"/><line x1=\"18\" y1=\"128\" x2=\"18\" y2=\"62\" stroke=\"#009E73\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"18,62 21.91,70.1 14.09,70.1\" fill=\"#009E73\"/><polygon points=\"18,128 14.09,119.9 21.91,119.9\" fill=\"#009E73\"/><line x1=\"62\" y1=\"62\" x2=\"106\" y2=\"62\" stroke=\"#E69F00\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"106,62 97.9,65.91 97.9,58.09\" fill=\"#E69F00\"/><polygon points=\"62,62 70.1,58.09 70.1,65.91\" fill=\"#E69F00\"/><text x=\"203.8\" y=\"123.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0072B2\" font-weight=\"700\">k</text><text x=\"247.8\" y=\"35.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#D55E00\" font-weight=\"700\">l</text><text x=\"4\" y=\"67\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#009E73\" font-weight=\"700\">m</text><text x=\"115.8\" y=\"57.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#E69F00\" font-weight=\"700\">n</text></svg>",
+   "alt_metin": "Kareli zeminde k, l, m, n doğruları çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kareli-dogrular",
+   "parametreler": {
+    "en": 11,
+    "boy": 8,
+    "dogrular": [
+     {
+      "ad": "k",
+      "p1": [
+       2,
+       0
+      ],
+      "p2": [
+       8,
+       3
+      ]
+     },
+     {
+      "ad": "l",
+      "p1": [
+       6,
+       5
+      ],
+      "p2": [
+       10,
+       7
+      ]
+     },
+     {
+      "ad": "m",
+      "p1": [
+       0,
+       3
+      ],
+      "p2": [
+       0,
+       6
+      ]
+     },
+     {
+      "ad": "n",
+      "p1": [
+       2,
+       6
+      ],
+      "p2": [
+       4,
+       6
+      ]
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "iliskiler",
+     "k|l"
+    ],
+    "beklenen": "paralel"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G11",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Paralel doğrular",
+  "soru_metni": "Yukarıdaki kareli zeminde k, l, m ve n doğruları verilmiştir. Bu doğrulardan hangi ikisi paraleldir?",
+  "siklar": {
+   "A": "l ile n",
+   "B": "k ile m",
+   "C": "k ile l",
+   "D": "k ile n"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Paralel doğrular kareli zeminde aynı yönde, aynı eğimle ilerler.",
+  "cozum_adimlari": [
+   "Doğruların kareli zeminde yatay ve dikey ilerleme miktarları karşılaştırılır.",
+   "k ile l doğruları paraleldir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir).",
+   "B": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir).",
+   "C": "Doğru.",
+   "D": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir)."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kareli-dogrular",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 278 212\" role=\"img\" aria-label=\"Kareli zeminde k, l, m, n doğruları çizilmiş.\"><rect width=\"278\" height=\"212\" fill=\"#FFFFFF\"/><line x1=\"18\" y1=\"194\" x2=\"18\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"194\" x2=\"40\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"194\" x2=\"62\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"84\" y1=\"194\" x2=\"84\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"106\" y1=\"194\" x2=\"106\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"194\" x2=\"128\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"194\" x2=\"150\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"194\" x2=\"172\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"194\" y1=\"194\" x2=\"194\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"216\" y1=\"194\" x2=\"216\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"238\" y1=\"194\" x2=\"238\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"194\" x2=\"260\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"194\" x2=\"260\" y2=\"194\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"172\" x2=\"260\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"128\" x2=\"260\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"106\" x2=\"260\" y2=\"106\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"84\" x2=\"260\" y2=\"84\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"62\" x2=\"260\" y2=\"62\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"40\" x2=\"260\" y2=\"40\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"18\" x2=\"260\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"106\" x2=\"84\" y2=\"62\" stroke=\"#0072B2\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"84,62 81.04,70.5 75.5,64.96\" fill=\"#0072B2\"/><polygon points=\"40,106 42.96,97.5 48.5,103.04\" fill=\"#0072B2\"/><line x1=\"40\" y1=\"194\" x2=\"84\" y2=\"150\" stroke=\"#D55E00\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"84,150 81.04,158.5 75.5,152.96\" fill=\"#D55E00\"/><polygon points=\"40,194 42.96,185.5 48.5,191.04\" fill=\"#D55E00\"/><line x1=\"40\" y1=\"150\" x2=\"128\" y2=\"106\" stroke=\"#009E73\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"128,106 122.5,113.13 119,106.12\" fill=\"#009E73\"/><polygon points=\"40,150 45.5,142.87 49,149.88\" fill=\"#009E73\"/><line x1=\"172\" y1=\"172\" x2=\"216\" y2=\"172\" stroke=\"#E69F00\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"216,172 207.9,175.91 207.9,168.09\" fill=\"#E69F00\"/><polygon points=\"172,172 180.1,168.09 180.1,175.91\" fill=\"#E69F00\"/><text x=\"93.8\" y=\"57.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0072B2\" font-weight=\"700\">k</text><text x=\"93.8\" y=\"145.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#D55E00\" font-weight=\"700\">l</text><text x=\"137.8\" y=\"101.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#009E73\" font-weight=\"700\">m</text><text x=\"225.8\" y=\"167.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#E69F00\" font-weight=\"700\">n</text></svg>",
+   "alt_metin": "Kareli zeminde k, l, m, n doğruları çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kareli-dogrular",
+   "parametreler": {
+    "en": 11,
+    "boy": 8,
+    "dogrular": [
+     {
+      "ad": "k",
+      "p1": [
+       1,
+       4
+      ],
+      "p2": [
+       3,
+       6
+      ]
+     },
+     {
+      "ad": "l",
+      "p1": [
+       1,
+       0
+      ],
+      "p2": [
+       3,
+       2
+      ]
+     },
+     {
+      "ad": "m",
+      "p1": [
+       1,
+       2
+      ],
+      "p2": [
+       5,
+       4
+      ]
+     },
+     {
+      "ad": "n",
+      "p1": [
+       7,
+       1
+      ],
+      "p2": [
+       9,
+       1
+      ]
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "iliskiler",
+     "k|l"
+    ],
+    "beklenen": "paralel"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G12",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Dik doğrular",
+  "soru_metni": "Yukarıdaki kareli zeminde k, l, m ve n doğruları verilmiştir. Bu doğrulardan hangi ikisi birbirine diktir?",
+  "siklar": {
+   "A": "k ile n",
+   "B": "m ile n",
+   "C": "k ile l",
+   "D": "l ile n"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Dik doğrular arasındaki açı 90°’dir; kareli zeminde bir doğrunun yönü yer değiştirip bir işaret değişir.",
+  "cozum_adimlari": [
+   "Doğruların kareli zeminde yatay ve dikey ilerleme miktarları karşılaştırılır.",
+   "l ile n doğruları birbirine diktir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir).",
+   "B": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir).",
+   "C": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir).",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kareli-dogrular",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 278 212\" role=\"img\" aria-label=\"Kareli zeminde k, l, m, n doğruları çizilmiş.\"><rect width=\"278\" height=\"212\" fill=\"#FFFFFF\"/><line x1=\"18\" y1=\"194\" x2=\"18\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"194\" x2=\"40\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"194\" x2=\"62\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"84\" y1=\"194\" x2=\"84\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"106\" y1=\"194\" x2=\"106\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"194\" x2=\"128\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"194\" x2=\"150\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"194\" x2=\"172\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"194\" y1=\"194\" x2=\"194\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"216\" y1=\"194\" x2=\"216\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"238\" y1=\"194\" x2=\"238\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"194\" x2=\"260\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"194\" x2=\"260\" y2=\"194\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"172\" x2=\"260\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"128\" x2=\"260\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"106\" x2=\"260\" y2=\"106\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"84\" x2=\"260\" y2=\"84\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"62\" x2=\"260\" y2=\"62\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"40\" x2=\"260\" y2=\"40\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"18\" x2=\"260\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"194\" x2=\"194\" y2=\"62\" stroke=\"#0072B2\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"194,62 193.88,71 186.87,67.5\" fill=\"#0072B2\"/><polygon points=\"128,194 128.12,185 135.13,188.5\" fill=\"#0072B2\"/><line x1=\"128\" y1=\"84\" x2=\"260\" y2=\"18\" stroke=\"#D55E00\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"260,18 254.5,25.13 251,18.12\" fill=\"#D55E00\"/><polygon points=\"128,84 133.5,76.87 137,83.88\" fill=\"#D55E00\"/><line x1=\"128\" y1=\"62\" x2=\"172\" y2=\"18\" stroke=\"#009E73\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"172,18 169.04,26.5 163.5,20.96\" fill=\"#009E73\"/><polygon points=\"128,62 130.96,53.5 136.5,59.04\" fill=\"#009E73\"/><line x1=\"172\" y1=\"62\" x2=\"238\" y2=\"194\" stroke=\"#E69F00\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"238,194 230.87,188.5 237.88,185\" fill=\"#E69F00\"/><polygon points=\"172,62 179.13,67.5 172.12,71\" fill=\"#E69F00\"/><text x=\"203.8\" y=\"76.8\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0072B2\" font-weight=\"700\">k</text><text x=\"274\" y=\"23\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#D55E00\" font-weight=\"700\">l</text><text x=\"181.8\" y=\"13.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#009E73\" font-weight=\"700\">m</text><text x=\"247.8\" y=\"189.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#E69F00\" font-weight=\"700\">n</text></svg>",
+   "alt_metin": "Kareli zeminde k, l, m, n doğruları çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kareli-dogrular",
+   "parametreler": {
+    "en": 11,
+    "boy": 8,
+    "dogrular": [
+     {
+      "ad": "k",
+      "p1": [
+       5,
+       0
+      ],
+      "p2": [
+       8,
+       6
+      ]
+     },
+     {
+      "ad": "l",
+      "p1": [
+       5,
+       5
+      ],
+      "p2": [
+       11,
+       8
+      ]
+     },
+     {
+      "ad": "m",
+      "p1": [
+       5,
+       6
+      ],
+      "p2": [
+       7,
+       8
+      ]
+     },
+     {
+      "ad": "n",
+      "p1": [
+       7,
+       6
+      ],
+      "p2": [
+       10,
+       0
+      ]
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "iliskiler",
+     "l|n"
+    ],
+    "beklenen": "dik"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G13",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Dik doğrular",
+  "soru_metni": "Yukarıdaki kareli zeminde k, l, m ve n doğruları verilmiştir. Bu doğrulardan hangi ikisi birbirine diktir?",
+  "siklar": {
+   "A": "l ile m",
+   "B": "k ile n",
+   "C": "l ile n",
+   "D": "k ile m"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Dik doğrular arasındaki açı 90°’dir; kareli zeminde bir doğrunun yönü yer değiştirip bir işaret değişir.",
+  "cozum_adimlari": [
+   "Doğruların kareli zeminde yatay ve dikey ilerleme miktarları karşılaştırılır.",
+   "l ile m doğruları birbirine diktir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir).",
+   "C": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir).",
+   "D": "Bu doğrular birbirini dik olmayan bir açıyla keser (veya paralel değildir)."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kareli-dogrular",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 278 212\" role=\"img\" aria-label=\"Kareli zeminde k, l, m, n doğruları çizilmiş.\"><rect width=\"278\" height=\"212\" fill=\"#FFFFFF\"/><line x1=\"18\" y1=\"194\" x2=\"18\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"194\" x2=\"40\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"62\" y1=\"194\" x2=\"62\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"84\" y1=\"194\" x2=\"84\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"106\" y1=\"194\" x2=\"106\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"128\" y1=\"194\" x2=\"128\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"150\" y1=\"194\" x2=\"150\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"194\" x2=\"172\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"194\" y1=\"194\" x2=\"194\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"216\" y1=\"194\" x2=\"216\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"238\" y1=\"194\" x2=\"238\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"260\" y1=\"194\" x2=\"260\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"194\" x2=\"260\" y2=\"194\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"172\" x2=\"260\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"150\" x2=\"260\" y2=\"150\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"128\" x2=\"260\" y2=\"128\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"106\" x2=\"260\" y2=\"106\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"84\" x2=\"260\" y2=\"84\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"62\" x2=\"260\" y2=\"62\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"40\" x2=\"260\" y2=\"40\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"18\" y1=\"18\" x2=\"260\" y2=\"18\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><line x1=\"84\" y1=\"106\" x2=\"150\" y2=\"40\" stroke=\"#0072B2\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"150,40 147.04,48.5 141.5,42.96\" fill=\"#0072B2\"/><polygon points=\"84,106 86.96,97.5 92.5,103.04\" fill=\"#0072B2\"/><line x1=\"194\" y1=\"128\" x2=\"194\" y2=\"62\" stroke=\"#D55E00\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"194,62 197.91,70.1 190.09,70.1\" fill=\"#D55E00\"/><polygon points=\"194,128 190.09,119.9 197.91,119.9\" fill=\"#D55E00\"/><line x1=\"216\" y1=\"128\" x2=\"260\" y2=\"128\" stroke=\"#009E73\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"260,128 251.9,131.91 251.9,124.09\" fill=\"#009E73\"/><polygon points=\"216,128 224.1,124.09 224.1,131.91\" fill=\"#009E73\"/><line x1=\"62\" y1=\"194\" x2=\"128\" y2=\"62\" stroke=\"#E69F00\" stroke-width=\"2.4\" stroke-linecap=\"round\"/><polygon points=\"128,62 127.88,71 120.87,67.5\" fill=\"#E69F00\"/><polygon points=\"62,194 62.12,185 69.13,188.5\" fill=\"#E69F00\"/><text x=\"159.8\" y=\"35.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#0072B2\" font-weight=\"700\">k</text><text x=\"203.8\" y=\"57.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#D55E00\" font-weight=\"700\">l</text><text x=\"274\" y=\"133\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#009E73\" font-weight=\"700\">m</text><text x=\"118.2\" y=\"57.2\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#E69F00\" font-weight=\"700\">n</text></svg>",
+   "alt_metin": "Kareli zeminde k, l, m, n doğruları çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kareli-dogrular",
+   "parametreler": {
+    "en": 11,
+    "boy": 8,
+    "dogrular": [
+     {
+      "ad": "k",
+      "p1": [
+       3,
+       4
+      ],
+      "p2": [
+       6,
+       7
+      ]
+     },
+     {
+      "ad": "l",
+      "p1": [
+       8,
+       3
+      ],
+      "p2": [
+       8,
+       6
+      ]
+     },
+     {
+      "ad": "m",
+      "p1": [
+       9,
+       3
+      ],
+      "p2": [
+       11,
+       3
+      ]
+     },
+     {
+      "ad": "n",
+      "p1": [
+       2,
+       0
+      ],
+      "p2": [
+       5,
+       6
+      ]
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "iliskiler",
+     "l|m"
+    ],
+    "beklenen": "dik"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G14",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Kesişen iki doğrunun oluşturduğu açılar",
+  "soru_metni": "d ve e doğruları bir noktada kesişmiştir. Şekil ölçekli çizilmemiştir. Bu doğrular arasında kalan açılardan biri 40°'dir. Buna göre ■ ile gösterilen açı kaç derecedir?",
+  "siklar": {
+   "A": "140°",
+   "B": "40°",
+   "C": "90°",
+   "D": "45°"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Ters açılar birbirine eşittir.",
+  "cozum_adimlari": [
+   "■ açısı 40° olan açının ters açısıdır.",
+   "Ters açıların ölçüleri eşittir.",
+   "■ = 40°",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Komşu açıyı bulup ters açıyla karıştırma.",
+   "B": "Doğru.",
+   "C": "Kesişen doğruları dik sanma; açı değeri verilenlerden hesaplanır.",
+   "D": "45° değeri verilen açıdan doğru bir ilişkiyle elde edilmez."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesisen-dogrular",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" role=\"img\" aria-label=\"d ve e doğruları bir noktada kesişiyor; şekil ölçekli değildir; işaretli açılar: 40°, ■.\"><rect width=\"300\" height=\"240\" fill=\"#FFFFFF\"/><line x1=\"48.58\" y1=\"147.18\" x2=\"251.42\" y2=\"92.82\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"114.09\" y1=\"218.67\" x2=\"185.91\" y2=\"21.33\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"255.42\" y=\"88.82\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">d</text><text x=\"189.91\" y=\"17.33\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">e</text><path d=\"M175.11 113.27 A26 26 0 0 0 158.89 95.57\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"180.97\" y=\"96.63\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">40°</text><path d=\"M124.89 126.73 A26 26 0 0 0 141.11 144.43\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"119.03\" y=\"153.37\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">■</text></svg>",
+   "alt_metin": "d ve e doğruları bir noktada kesişiyor; şekil ölçekli değildir; işaretli açılar: 40°, ■.",
+   "olcekli": false
+  },
+  "gorsel_spec": {
+   "tip_id": "kesisen-dogrular",
+   "parametreler": {
+    "dogrular": [
+     "d",
+     "e"
+    ],
+    "theta": 40,
+    "olcekli": false,
+    "isaretler": [
+     {
+      "bolge": 0,
+      "goster": "deger"
+     },
+     {
+      "bolge": 2,
+      "goster": "sembol",
+      "sembol": "■"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "bolge_degerleri",
+     2
+    ],
+    "beklenen": 40
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G15",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Kesişen iki doğrunun oluşturduğu açılar",
+  "soru_metni": "d ve e doğruları bir noktada kesişmiştir. Şekil ölçekli çizilmemiştir. Bu doğrular arasında kalan açılardan biri 125°'dir. Buna göre ■ ile gösterilen açı kaç derecedir?",
+  "siklar": {
+   "A": "55°",
+   "B": "90°",
+   "C": "125°",
+   "D": "150°"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Ters açılar birbirine eşittir.",
+  "cozum_adimlari": [
+   "■ açısı 125° olan açının ters açısıdır.",
+   "Ters açıların ölçüleri eşittir.",
+   "■ = 125°",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Komşu açıyı bulup ters açıyla karıştırma.",
+   "B": "Kesişen doğruları dik sanma; açı değeri verilenlerden hesaplanır.",
+   "C": "Doğru.",
+   "D": "150° değeri verilen açıdan doğru bir ilişkiyle elde edilmez."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesisen-dogrular",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" role=\"img\" aria-label=\"d ve e doğruları bir noktada kesişiyor; şekil ölçekli değildir; işaretli açılar: 125°, ■.\"><rect width=\"300\" height=\"240\" fill=\"#FFFFFF\"/><line x1=\"48.58\" y1=\"147.18\" x2=\"251.42\" y2=\"92.82\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230.43\" y1=\"187.49\" x2=\"69.57\" y2=\"52.51\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"255.42\" y=\"88.82\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">d</text><text x=\"73.57\" y=\"48.51\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">e</text><path d=\"M175.11 113.27 A26 26 0 0 0 130.08 103.29\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"159.09\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">125°</text><path d=\"M124.89 126.73 A26 26 0 0 0 169.92 136.71\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"140.91\" y=\"166\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">■</text></svg>",
+   "alt_metin": "d ve e doğruları bir noktada kesişiyor; şekil ölçekli değildir; işaretli açılar: 125°, ■.",
+   "olcekli": false
+  },
+  "gorsel_spec": {
+   "tip_id": "kesisen-dogrular",
+   "parametreler": {
+    "dogrular": [
+     "d",
+     "e"
+    ],
+    "theta": 125,
+    "olcekli": false,
+    "isaretler": [
+     {
+      "bolge": 0,
+      "goster": "deger"
+     },
+     {
+      "bolge": 2,
+      "goster": "sembol",
+      "sembol": "■"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "bolge_degerleri",
+     2
+    ],
+    "beklenen": 125
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G16",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Kesişen iki doğrunun oluşturduğu açılar",
+  "soru_metni": "d ve e doğruları bir noktada kesişmiştir. Şekil ölçekli çizilmemiştir. Bu doğrular arasında kalan açılardan biri 130°'dir. Buna göre ■ ile gösterilen açı kaç derecedir?",
+  "siklar": {
+   "A": "130°",
+   "B": "90°",
+   "C": "45°",
+   "D": "50°"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Komşu açıların ölçüleri toplamı 180°’dir.",
+  "cozum_adimlari": [
+   "■ açısı 130° olan açının komşusudur.",
+   "Komşu açıların ölçüleri toplamı 180° olduğundan ■ = 180° − 130° = 50°.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Komşu açıyı verilen açıya eşit sanma; komşu açılar bütünlerdir, ters açılar eşittir.",
+   "B": "Kesişen doğruları dik sanma; açı değeri verilenlerden hesaplanır.",
+   "C": "45° değeri verilen açıdan doğru bir ilişkiyle elde edilmez.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesisen-dogrular",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" role=\"img\" aria-label=\"d ve e doğruları bir noktada kesişiyor; şekil ölçekli değildir; işaretli açılar: 130°, ■.\"><rect width=\"300\" height=\"240\" fill=\"#FFFFFF\"/><line x1=\"48.58\" y1=\"147.18\" x2=\"251.42\" y2=\"92.82\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"230.43\" y1=\"187.49\" x2=\"69.57\" y2=\"52.51\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"255.42\" y=\"88.82\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">d</text><text x=\"73.57\" y=\"48.51\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">e</text><path d=\"M175.11 113.27 A26 26 0 0 0 130.08 103.29\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"159.09\" y=\"84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">130°</text><path d=\"M130.08 103.29 A26 26 0 0 0 124.89 126.73\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"109\" y=\"115.91\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">■</text></svg>",
+   "alt_metin": "d ve e doğruları bir noktada kesişiyor; şekil ölçekli değildir; işaretli açılar: 130°, ■.",
+   "olcekli": false
+  },
+  "gorsel_spec": {
+   "tip_id": "kesisen-dogrular",
+   "parametreler": {
+    "dogrular": [
+     "d",
+     "e"
+    ],
+    "theta": 130,
+    "olcekli": false,
+    "isaretler": [
+     {
+      "bolge": 0,
+      "goster": "deger"
+     },
+     {
+      "bolge": 1,
+      "goster": "sembol",
+      "sembol": "■"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "bolge_degerleri",
+     1
+    ],
+    "beklenen": 50
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G17",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Kesişen iki doğrunun oluşturduğu açılar",
+  "soru_metni": "d ve e doğruları bir noktada kesişmiştir. Şekil ölçekli çizilmemiştir. Bu doğrular arasında kalan açılardan biri 65°'dir. Buna göre ■ ile gösterilen açı kaç derecedir?",
+  "siklar": {
+   "A": "115°",
+   "B": "65°",
+   "C": "90°",
+   "D": "105°"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Komşu açıların ölçüleri toplamı 180°’dir.",
+  "cozum_adimlari": [
+   "■ açısı 65° olan açının komşusudur.",
+   "Komşu açıların ölçüleri toplamı 180° olduğundan ■ = 180° − 65° = 115°.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Komşu açıyı verilen açıya eşit sanma; komşu açılar bütünlerdir, ters açılar eşittir.",
+   "C": "Kesişen doğruları dik sanma; açı değeri verilenlerden hesaplanır.",
+   "D": "105° değeri verilen açıdan doğru bir ilişkiyle elde edilmez."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesisen-dogrular",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 300 240\" role=\"img\" aria-label=\"d ve e doğruları bir noktada kesişiyor; şekil ölçekli değildir; işaretli açılar: 65°, ■.\"><rect width=\"300\" height=\"240\" fill=\"#FFFFFF\"/><line x1=\"48.58\" y1=\"147.18\" x2=\"251.42\" y2=\"92.82\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"114.09\" y1=\"218.67\" x2=\"185.91\" y2=\"21.33\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><text x=\"255.42\" y=\"88.82\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">d</text><text x=\"189.91\" y=\"17.33\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"start\" fill=\"#1F2937\" font-weight=\"700\">e</text><path d=\"M175.11 113.27 A26 26 0 0 0 158.89 95.57\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"180.97\" y=\"96.63\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">65°</text><path d=\"M158.89 95.57 A26 26 0 0 0 124.89 126.73\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"121.63\" y=\"94.03\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">■</text></svg>",
+   "alt_metin": "d ve e doğruları bir noktada kesişiyor; şekil ölçekli değildir; işaretli açılar: 65°, ■.",
+   "olcekli": false
+  },
+  "gorsel_spec": {
+   "tip_id": "kesisen-dogrular",
+   "parametreler": {
+    "dogrular": [
+     "d",
+     "e"
+    ],
+    "theta": 65,
+    "olcekli": false,
+    "isaretler": [
+     {
+      "bolge": 0,
+      "goster": "deger"
+     },
+     {
+      "bolge": 1,
+      "goster": "sembol",
+      "sembol": "■"
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "bolge_degerleri",
+     1
+    ],
+    "beklenen": 115
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G18",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.6",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Çokgenlerin köşegenleri",
+  "soru_metni": "Yukarıda köşeleri harflerle adlandırılmış bir düzgün çokgen verilmiştir. Bu çokgenin tüm köşegenleri çizilirse kaç köşegen elde edilir?",
+  "siklar": {
+   "A": "5",
+   "B": "9",
+   "C": "14",
+   "D": "20"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bir köşeden çizilen köşegen sayısını bul; her köşegenin iki ucu olduğunu unutma.",
+  "cozum_adimlari": [
+   "Çokgenin 6 köşesi vardır; bir köşeden 3 köşegen çizilir.",
+   "6 × 3 = 18; her köşegen iki kez sayıldığı için 18 ÷ 2 = 9.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "5, 5 köşeli bir çokgen için bulunur; çokgenin köşe sayısı yanlış sayılmıştır.",
+   "B": "Doğru.",
+   "C": "14, 7 köşeli bir çokgen için bulunur; çokgenin köşe sayısı yanlış sayılmıştır.",
+   "D": "20, 8 köşeli bir çokgen için bulunur; çokgenin köşe sayısı yanlış sayılmıştır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cokgen",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"Düzgün çokgen; köşeleri A, B, C, D, E, F.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><line x1=\"86\" y1=\"55.79\" x2=\"42\" y2=\"132\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"42\" y1=\"132\" x2=\"86\" y2=\"208.21\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"86\" y1=\"208.21\" x2=\"174\" y2=\"208.21\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"208.21\" x2=\"218\" y2=\"132\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"218\" y1=\"132\" x2=\"174\" y2=\"55.79\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"174\" y1=\"55.79\" x2=\"86\" y2=\"55.79\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"86\" cy=\"55.79\" r=\"3\" fill=\"#1F2937\"/><text x=\"77.5\" y=\"46.07\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">A</text><circle cx=\"42\" cy=\"132\" r=\"3\" fill=\"#1F2937\"/><text x=\"25\" y=\"137\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text><circle cx=\"86\" cy=\"208.21\" r=\"3\" fill=\"#1F2937\"/><text x=\"77.5\" y=\"227.93\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">C</text><circle cx=\"174\" cy=\"208.21\" r=\"3\" fill=\"#1F2937\"/><text x=\"182.5\" y=\"227.93\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><circle cx=\"218\" cy=\"132\" r=\"3\" fill=\"#1F2937\"/><text x=\"235\" y=\"137\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">E</text><circle cx=\"174\" cy=\"55.79\" r=\"3\" fill=\"#1F2937\"/><text x=\"182.5\" y=\"46.07\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">F</text></svg>",
+   "alt_metin": "Düzgün çokgen; köşeleri A, B, C, D, E, F.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cokgen",
+   "parametreler": {
+    "n": 6,
+    "harfler": [
+     "A",
+     "B",
+     "C",
+     "D",
+     "E",
+     "F"
+    ],
+    "kosegenler": [],
+    "baslangic_aci": 120
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "kosegen_sayisi"
+    ],
+    "beklenen": 9
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G19",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.6",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Çokgenlerin köşegenleri",
+  "soru_metni": "Yukarıda köşeleri harflerle adlandırılmış bir düzgün çokgen verilmiştir. Bu çokgenin tüm köşegenleri çizilirse kaç köşegen elde edilir?",
+  "siklar": {
+   "A": "5",
+   "B": "9",
+   "C": "14",
+   "D": "20"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bir köşeden çizilen köşegen sayısını bul; her köşegenin iki ucu olduğunu unutma.",
+  "cozum_adimlari": [
+   "Çokgenin 7 köşesi vardır; bir köşeden 4 köşegen çizilir.",
+   "7 × 4 = 28; her köşegen iki kez sayıldığı için 28 ÷ 2 = 14.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "5, 5 köşeli bir çokgen için bulunur; çokgenin köşe sayısı yanlış sayılmıştır.",
+   "B": "9, 6 köşeli bir çokgen için bulunur; çokgenin köşe sayısı yanlış sayılmıştır.",
+   "C": "Doğru.",
+   "D": "20, 8 köşeli bir çokgen için bulunur; çokgenin köşe sayısı yanlış sayılmıştır."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cokgen",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"Düzgün çokgen; köşeleri A, B, C, D, E, F, G.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><line x1=\"92.81\" y1=\"52.24\" x2=\"44.46\" y2=\"111.35\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"44.46\" y1=\"111.35\" x2=\"60.52\" y2=\"186.01\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"60.52\" y1=\"186.01\" x2=\"128.9\" y2=\"219.99\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"128.9\" y1=\"219.99\" x2=\"198.11\" y2=\"187.72\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"198.11\" y1=\"187.72\" x2=\"216.03\" y2=\"113.49\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"216.03\" y1=\"113.49\" x2=\"169.17\" y2=\"53.2\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"169.17\" y1=\"53.2\" x2=\"92.81\" y2=\"52.24\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><circle cx=\"92.81\" cy=\"52.24\" r=\"3\" fill=\"#1F2937\"/><text x=\"85.63\" y=\"41.84\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">A</text><circle cx=\"44.46\" cy=\"111.35\" r=\"3\" fill=\"#1F2937\"/><text x=\"27.93\" y=\"112.36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text><circle cx=\"60.52\" cy=\"186.01\" r=\"3\" fill=\"#1F2937\"/><text x=\"47.1\" y=\"201.44\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">C</text><circle cx=\"128.9\" cy=\"219.99\" r=\"3\" fill=\"#1F2937\"/><text x=\"128.69\" y=\"241.99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><circle cx=\"198.11\" cy=\"187.72\" r=\"3\" fill=\"#1F2937\"/><text x=\"211.27\" y=\"203.48\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">E</text><circle cx=\"216.03\" cy=\"113.49\" r=\"3\" fill=\"#1F2937\"/><text x=\"232.65\" y=\"114.91\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">F</text><circle cx=\"169.17\" cy=\"53.2\" r=\"3\" fill=\"#1F2937\"/><text x=\"176.73\" y=\"42.97\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text></svg>",
+   "alt_metin": "Düzgün çokgen; köşeleri A, B, C, D, E, F, G.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cokgen",
+   "parametreler": {
+    "n": 7,
+    "harfler": [
+     "A",
+     "B",
+     "C",
+     "D",
+     "E",
+     "F",
+     "G"
+    ],
+    "kosegenler": [],
+    "baslangic_aci": 115
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "kosegen_sayisi"
+    ],
+    "beklenen": 14
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ },
+ {
+  "id": "MAT5-GEO-G20",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.6",
+  "konu": "Geometrik Şekiller",
+  "alt_konu": "Çokgenlerin köşegenleri",
+  "soru_metni": "Yukarıdaki düzgün çokgenin A köşesinden çizilebilen köşegenler çizilmiştir. Buna göre bu çokgenin bir köşesinden çizilebilecek köşegen sayısı kaçtır?",
+  "siklar": {
+   "A": "2",
+   "B": "3",
+   "C": "4",
+   "D": "5"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir köşeden kendisine ve iki komşusuna köşegen çizilemez.",
+  "cozum_adimlari": [
+   "Çokgenin 8 köşesi vardır.",
+   "Bir köşeden kendisine ve iki komşu köşeye köşegen çizilemez.",
+   "8 − 3 = 5",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "2, 5 köşeli bir çokgen için bulunur; çokgenin köşe sayısı yanlış sayılmıştır.",
+   "B": "3, 6 köşeli bir çokgen için bulunur; çokgenin köşe sayısı yanlış sayılmıştır.",
+   "C": "4, 7 köşeli bir çokgen için bulunur; çokgenin köşe sayısı yanlış sayılmıştır.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cokgen",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 260 260\" role=\"img\" aria-label=\"Düzgün çokgen; köşeleri A, B, C, D, E, F, G, H. Bir köşeden çizilmiş köşegenler de gösterilmiş.\"><rect width=\"260\" height=\"260\" fill=\"#FFFFFF\"/><line x1=\"97.03\" y1=\"50.41\" x2=\"49\" y2=\"97.62\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"49\" y1=\"97.62\" x2=\"48.41\" y2=\"164.97\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"48.41\" y1=\"164.97\" x2=\"95.62\" y2=\"213\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"95.62\" y1=\"213\" x2=\"162.97\" y2=\"213.59\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"162.97\" y1=\"213.59\" x2=\"211\" y2=\"166.38\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"211\" y1=\"166.38\" x2=\"211.59\" y2=\"99.03\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"211.59\" y1=\"99.03\" x2=\"164.38\" y2=\"51\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"164.38\" y1=\"51\" x2=\"97.03\" y2=\"50.41\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"97.03\" y1=\"50.41\" x2=\"48.41\" y2=\"164.97\" stroke=\"#0072B2\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"97.03\" y1=\"50.41\" x2=\"95.62\" y2=\"213\" stroke=\"#0072B2\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"97.03\" y1=\"50.41\" x2=\"162.97\" y2=\"213.59\" stroke=\"#0072B2\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"97.03\" y1=\"50.41\" x2=\"211\" y2=\"166.38\" stroke=\"#0072B2\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><line x1=\"97.03\" y1=\"50.41\" x2=\"211.59\" y2=\"99.03\" stroke=\"#0072B2\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-dasharray=\"6 4\"/><circle cx=\"97.03\" cy=\"50.41\" r=\"3\" fill=\"#1F2937\"/><text x=\"90.67\" y=\"39.65\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">A</text><circle cx=\"49\" cy=\"97.62\" r=\"3\" fill=\"#1F2937\"/><text x=\"33.35\" y=\"95.97\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text><circle cx=\"48.41\" cy=\"164.97\" r=\"3\" fill=\"#1F2937\"/><text x=\"32.65\" y=\"176.33\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">C</text><circle cx=\"95.62\" cy=\"213\" r=\"3\" fill=\"#1F2937\"/><text x=\"88.97\" y=\"233.65\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><circle cx=\"162.97\" cy=\"213.59\" r=\"3\" fill=\"#1F2937\"/><text x=\"169.33\" y=\"234.35\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">E</text><circle cx=\"211\" cy=\"166.38\" r=\"3\" fill=\"#1F2937\"/><text x=\"226.65\" y=\"178.03\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">F</text><circle cx=\"211.59\" cy=\"99.03\" r=\"3\" fill=\"#1F2937\"/><text x=\"227.35\" y=\"97.67\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><circle cx=\"164.38\" cy=\"51\" r=\"3\" fill=\"#1F2937\"/><text x=\"171.03\" y=\"40.35\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">H</text></svg>",
+   "alt_metin": "Düzgün çokgen; köşeleri A, B, C, D, E, F, G, H. Bir köşeden çizilmiş köşegenler de gösterilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cokgen",
+   "parametreler": {
+    "n": 8,
+    "harfler": [
+     "A",
+     "B",
+     "C",
+     "D",
+     "E",
+     "F",
+     "G",
+     "H"
+    ],
+    "kosegenler": [
+     [
+      0,
+      2
+     ],
+     [
+      0,
+      3
+     ],
+     [
+      0,
+      4
+     ],
+     [
+      0,
+      5
+     ],
+     [
+      0,
+      6
+     ]
+    ],
+    "baslangic_aci": 112
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "bir_koseden_kosegen"
+    ],
+    "beklenen": 5
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "kaynak_turu": "ozgun_sablon"
+ }
+]

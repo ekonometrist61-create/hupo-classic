@@ -1,0 +1,644 @@
+[
+  {
+    "id": "MAT2-001", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.1", "surec_bileseni": "c",
+    "konu": "Doğal sayılar", "alt_konu": "Sayıları okuma ve yazma",
+    "soru_metni": "Yetmiş sekiz sayısı hangi rakamlarla yazılır?",
+    "siklar": {"A": "87", "B": "70", "C": "78", "D": "68"},
+    "dogru_sik": "C",
+    "ipucu": "Sayıyı onluk ve birliklerine ayırarak düşün.",
+    "cozum_adimlari": [
+      "Yetmiş, 7 onluktur ve 70 diye yazılır.",
+      "Sekiz, 8 birliktir.",
+      "70 ile 8 birleştirilince sayı 78 olur.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Rakamların sırasını ters yazma: 7 ve 8'i yan yana koyup basamak sırasını karıştırma.",
+      "B": "Yalnız yetmişi yazıp sekiz birliğini unutma, yani birler basamağını atlama.",
+      "D": "Yetmiş ile altmışı karıştırma."
+    },
+    "sayisal_dogrulama": {"ifade": "70+8", "beklenen_sonuc": "78"},
+    "zorluk": 1, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "bilgi",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-002", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.2", "surec_bileseni": "a",
+    "konu": "Doğal sayılar", "alt_konu": "Basamak ve basamak değeri",
+    "soru_metni": "Onlar basamağında 7, birler basamağında 4 olan sayı kaçtır?",
+    "siklar": {"A": "74", "B": "47", "C": "11", "D": "70"},
+    "dogru_sik": "A",
+    "ipucu": "Onlar basamağındaki rakam, kaç onluk olduğunu gösterir.",
+    "cozum_adimlari": [
+      "Onlar basamağında 7 varsa sayıda 7 onluk, yani 70 vardır.",
+      "Birler basamağında 4 varsa sayıda 4 birlik vardır.",
+      "70 + 4 = 74",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Basamakları ters yerleştirme: birler basamağındaki rakamı onlar basamağına yazma.",
+      "C": "İki rakamı toplama: 7 + 4 = 11.",
+      "D": "Birler basamağını yazmayı unutup yalnız 7 onluğu gösterme."
+    },
+    "sayisal_dogrulama": {"ifade": "7*10+4", "beklenen_sonuc": "74"},
+    "zorluk": 1, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-003", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.2", "surec_bileseni": "b",
+    "konu": "Doğal sayılar", "alt_konu": "Basamaklar arasındaki ilişki",
+    "soru_metni": "Birler basamağındaki rakamı 9 olan bir sayının onlar basamağındaki rakamı, birler basamağındaki rakamdan 4 eksiktir. Bu sayı kaçtır?",
+    "siklar": {"A": "95", "B": "49", "C": "13", "D": "59"},
+    "dogru_sik": "D",
+    "ipucu": "Önce onlar basamağındaki rakamı bul, sonra sayıyı yaz.",
+    "cozum_adimlari": [
+      "Birler basamağındaki rakam 9'dur.",
+      "Onlar basamağındaki rakam 9'dan 4 eksiktir: 9 - 4 = 5.",
+      "Onlar basamağında 5, birler basamağında 9 olan sayı 59'dur.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Basamak sırasını ters yazma: 5 ve 9 rakamlarını doğru bulup yanlış sıraya koyma.",
+      "B": "\"4 eksik\" ifadesindeki 4'ü doğrudan onlar basamağındaki rakam sanma.",
+      "C": "İşlem seçimi hatası: 9 ile 4'ü toplama."
+    },
+    "sayisal_dogrulama": {"ifade": "(9-4)*10+9", "beklenen_sonuc": "59"},
+    "zorluk": 3, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-004", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.3", "surec_bileseni": "",
+    "konu": "Doğal sayılar", "alt_konu": "Sayıların sırası",
+    "soru_metni": "Aşağıdaki sayılardan hangisi 57 ile 59 arasındadır?",
+    "siklar": {"A": "56", "B": "58", "C": "60", "D": "57"},
+    "dogru_sik": "B",
+    "ipucu": "Sayılar küçükten büyüğe doğru sırayla ilerler.",
+    "cozum_adimlari": [
+      "Sayılar sırayla ilerler: 56, 57, 58, 59, 60.",
+      "57 ile 59 arasında yalnız 57'den hemen sonra gelen sayı vardır.",
+      "57'den hemen sonra gelen sayı 57 + 1 = 58'dir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "57'den önce gelen sayıyı seçme; sıranın yönünü karıştırma.",
+      "C": "59'dan sonra gelen sayıyı seçme; arasında olma koşulunu atlama.",
+      "D": "Sınırdaki sayıyı \"arasında\" sanma."
+    },
+    "sayisal_dogrulama": {"ifade": "57+1", "beklenen_sonuc": "58"},
+    "zorluk": 1, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-005", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.4", "surec_bileseni": "b",
+    "konu": "Ritmik sayma", "alt_konu": "Geriye doğru beşer sayma",
+    "soru_metni": "Mert 100'den başlayarak geriye doğru beşer beşer sayıyor: 100, 95, 90. Mert'in söyleyeceği sonraki sayı kaçtır?",
+    "siklar": {"A": "89", "B": "80", "C": "85", "D": "86"},
+    "dogru_sik": "C",
+    "ipucu": "Verilen sayılar arasındaki farka bak.",
+    "cozum_adimlari": [
+      "100, 95, 90 sayılarında her adımda 5 azalır.",
+      "Sıradaki sayıyı bulmak için 90'dan 5 geri gidilir.",
+      "90 - 5 = 85",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Birer geriye sayma: 90'dan yalnız 1 geri gitme.",
+      "B": "Onar geriye sayma: 90'dan 10 geri gitme.",
+      "D": "Dörder geriye sayma: 90'dan 4 geri gitme."
+    },
+    "sayisal_dogrulama": {"ifade": "90-5", "beklenen_sonuc": "85"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-006", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.6", "surec_bileseni": "b",
+    "konu": "Tahmin", "alt_konu": "Parça-bütün ilişkisiyle sayı tahmini",
+    "soru_metni": "Bir kavanozun yarısı 12 şekerle doluyor. Kavanoz aynı şekerlerle tamamen doldurulursa içinde yaklaşık kaç şeker olur?",
+    "siklar": {"A": "36", "B": "24", "C": "12", "D": "18"},
+    "dogru_sik": "B",
+    "ipucu": "Kavanozun yarısıyla tamamı arasındaki ilişkiyi düşün.",
+    "cozum_adimlari": [
+      "Kavanozun yarısında 12 şeker vardır.",
+      "Tamamı, iki yarım parçadan oluşur; ikinci yarıda da 12 şeker olur.",
+      "12 * 2 = 24",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yarının 3 katını alma; yarım ile bütün arasındaki katı yanlış kurma.",
+      "C": "Yarıdaki sayıyı bütünün sayısı sanma.",
+      "D": "Yarıya yarısını ekleme: 12 + 6."
+    },
+    "sayisal_dogrulama": {"ifade": "12*2", "beklenen_sonuc": "24"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-007", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.7", "surec_bileseni": "a",
+    "konu": "Kesirler", "alt_konu": "Bütün, yarım ve çeyrek",
+    "soru_metni": "Bir elma 4 eşit parçaya bölündü. Ece bu parçalardan 3 tanesini yedi. Elmanın kalan kısmı bütünün ne kadarıdır?",
+    "siklar": {"A": "Bütünün çeyreği", "B": "Bütünün yarısı", "C": "Bütünün üç çeyreği", "D": "Bütünün tamamı"},
+    "dogru_sik": "A",
+    "ipucu": "Elmanın kaç parçasının kaldığını say.",
+    "cozum_adimlari": [
+      "Elma 4 eşit parçaya bölündüğünde her parça bütünün çeyreğidir.",
+      "Ece 3 parça yedi; 4 - 3 = 1 parça kaldı.",
+      "Kalan 1 parça bütünün çeyreğidir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Kalan parça sayısını yanlış belirleme; kalan kısmı 2 parça, yani yarım sanma.",
+      "C": "Yenen kısmı kalan kısım sanma; ara sonucu nihai cevap alma.",
+      "D": "Kalan kısmı bütünle karıştırma."
+    },
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "bilgi",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-008", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.8", "surec_bileseni": "b",
+    "konu": "Para", "alt_konu": "Kuruş ve lira ilişkisi",
+    "soru_metni": "Elif'in cüzdanında 50 kuruşluk iki madenî para var. Elif'in parası kaç liradır?",
+    "siklar": {"A": "2 TL", "B": "50 TL", "C": "100 TL", "D": "1 TL"},
+    "dogru_sik": "D",
+    "ipucu": "Önce iki paranın toplamını kuruş olarak bul.",
+    "cozum_adimlari": [
+      "İki paranın toplamı 50 + 50 = 100 kuruştur.",
+      "100 kuruş 1 liraya eşittir.",
+      "Elif'in parası 1 liradır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Para adedini lira sayısı sanma: iki para, 2 TL.",
+      "B": "Bir paradaki kuruş sayısını lira sanma.",
+      "C": "Toplam kuruş sayısını liraya çevirmeden lira sanma."
+    },
+    "sayisal_dogrulama": {"ifade": "(50+50)/100", "beklenen_sonuc": "1"},
+    "zorluk": 1, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "problem",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-009", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.8", "surec_bileseni": "b",
+    "konu": "Para", "alt_konu": "Bir liraya tamamlama",
+    "soru_metni": "Ece'nin 75 kuruşu var. Ece'nin 1 lirası olması için kaç kuruş daha gerekir?",
+    "siklar": {"A": "35 kuruş", "B": "25 kuruş", "C": "75 kuruş", "D": "25 lira"},
+    "dogru_sik": "B",
+    "ipucu": "Elindeki parayı 1 liranın kuruş karşılığıyla karşılaştır.",
+    "cozum_adimlari": [
+      "1 lira 100 kuruştur.",
+      "Ece'nin 75 kuruşu var; eksik kısım 100 - 75 kadardır.",
+      "100 - 75 = 25 kuruş",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "100'den 75 çıkarırken onluk bozmada hata yapma.",
+      "C": "Elindeki parayı cevap sanma; ara bilgiyi nihai sonuç alma.",
+      "D": "Birim karıştırma: doğru sayıyı kuruş yerine lira diye yazma."
+    },
+    "sayisal_dogrulama": {"ifade": "100-75", "beklenen_sonuc": "25"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "problem",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-010", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.9", "surec_bileseni": "",
+    "konu": "Zaman", "alt_konu": "Saati okuma ve yazma",
+    "soru_metni": "Saat 5'i çeyrek geçiyor. Bu saat hangi şekilde yazılır?",
+    "siklar": {"A": "5:15", "B": "5:30", "C": "4:45", "D": "5:45"},
+    "dogru_sik": "A",
+    "ipucu": "Çeyrek, saatin dört eşit parçasından biridir.",
+    "cozum_adimlari": [
+      "\"5'i geçiyor\" demek, saatin 5'i biraz geçtiği anlamına gelir.",
+      "Çeyrek geçiyorsa saatin 5 ile 6 arasındaki bölümünün ilk çeyreği geçmiştir.",
+      "Bu zaman 5:15 olarak yazılır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Çeyreği yarım saatle karıştırma.",
+      "C": "\"Çeyrek geçiyor\" ile \"çeyrek var\" ifadelerini karıştırma.",
+      "D": "Çeyrek geçeyi saatin dörtte üçü kadar geçmiş sanma."
+    },
+    "zorluk": 1, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "bilgi",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-011", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.9", "surec_bileseni": "",
+    "konu": "Zaman", "alt_konu": "Hafta ve gün",
+    "soru_metni": "Bir haftada Cumartesi ve Pazar dışında kaç gün vardır?",
+    "siklar": {"A": "2 gün", "B": "7 gün", "C": "5 gün", "D": "9 gün"},
+    "dogru_sik": "C",
+    "ipucu": "Bir haftanın tüm günlerini say, sonra ayrılanları çıkar.",
+    "cozum_adimlari": [
+      "Bir hafta 7 gündür.",
+      "Cumartesi ve Pazar 2 gündür.",
+      "7 - 2 = 5 gün",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Hafta sonu günlerinin sayısını cevap sanma.",
+      "B": "Haftanın tüm günlerini sayıp çıkarmayı unutma.",
+      "D": "Çıkarma yerine toplama yapma: 7 + 2."
+    },
+    "sayisal_dogrulama": {"ifade": "7-2", "beklenen_sonuc": "5"},
+    "zorluk": 1, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "bilgi",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-012", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.10", "surec_bileseni": "b",
+    "konu": "Ölçme", "alt_konu": "Standart ölçme araçlarının gerekliliği",
+    "soru_metni": "Ali ile Elif aynı masanın uzunluğunu kendi karışlarıyla ölçtü. Ali 9 karış, Elif 7 karış buldu. Herkesin masa için aynı sonucu bulması isteniyorsa ne yapılmalıdır?",
+    "siklar": {
+      "A": "Herkes ölçümü daha dikkatli yapmalıdır",
+      "B": "Herkes ölçümü birkaç kez tekrarlamalıdır",
+      "C": "Herkes en büyük sayıyı sonuç saymalıdır",
+      "D": "Herkes cetvel ya da metre kullanmalıdır"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Karış uzunluğunun herkeste aynı olup olmadığını düşün.",
+    "cozum_adimlari": [
+      "Karışın uzunluğu kişiden kişiye değişir; bu yüzden Ali ve Elif farklı sayı buldu.",
+      "Herkesin aynı sonucu bulması için uzunluğu herkes için aynı olan bir araç gerekir.",
+      "Cetvel ve metre, uzunluğu herkes için aynı olan standart ölçme araçlarıdır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Farkı dikkatsizlikten kaynaklanan ölçme hatası sanma; aracın değişken olduğunu görmeme.",
+      "B": "Ölçümü tekrarlamanın farkı gidereceğini sanma; aynı karışla yine farklı sonuç çıkar.",
+      "C": "Daha büyük sayıyı daha doğru ölçüm sanma."
+    },
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "bilgi",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-013", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.1.11", "surec_bileseni": "b",
+    "konu": "Ölçme", "alt_konu": "Uzunluk tahmini",
+    "soru_metni": "Bir cetvelin uzunluğu 30 santimetredir. Okul sırasının uzunluğu yaklaşık 2 cetvel boyu kadardır. Okul sırasının uzunluğu yaklaşık kaç santimetredir?",
+    "siklar": {"A": "60 santimetre", "B": "30 santimetre", "C": "32 santimetre", "D": "6 santimetre"},
+    "dogru_sik": "A",
+    "ipucu": "Sıranın uzunluğunun cetvel boyunun kaç katı olduğuna bak.",
+    "cozum_adimlari": [
+      "Sıra, 2 cetvel boyu kadardır.",
+      "Bir cetvel 30 santimetre olduğundan 2 cetvel için 30 sayısı 2 kez alınır.",
+      "30 * 2 = 60 santimetre",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Yalnız bir cetvel boyunu alma; kaç kez tekrarlandığını atlama.",
+      "C": "Çarpma yerine toplama yapma: 30 + 2.",
+      "D": "Basamak değerini karıştırma: 30 yerine 3 alıp 3 * 2 = 6 bulma."
+    },
+    "sayisal_dogrulama": {"ifade": "30*2", "beklenen_sonuc": "60"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-014", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.1", "surec_bileseni": "b",
+    "konu": "Problemler", "alt_konu": "Toplama ve çıkarma problemi",
+    "soru_metni": "Bir otobüste 38 yolcu vardı. Durakta 14 yolcu indi, 9 yolcu bindi. Otobüste şimdi kaç yolcu vardır?",
+    "siklar": {"A": "24", "B": "33", "C": "61", "D": "43"},
+    "dogru_sik": "B",
+    "ipucu": "İnen yolcular sayıyı azaltır, binen yolcular artırır.",
+    "cozum_adimlari": [
+      "Önce inenler çıkarılır: 38 - 14 = 24.",
+      "Sonra binenler eklenir: 24 + 9 = 33.",
+      "Otobüste 33 yolcu vardır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ara sonucu nihai sanma: binen yolcuları eklemeyi unutma.",
+      "C": "İşlem seçimi hatası: üç sayıyı da toplama.",
+      "D": "İnen ve binen yolcuların işlemlerini ters yapma: 38 + 14 - 9."
+    },
+    "sayisal_dogrulama": {"ifade": "38-14+9", "beklenen_sonuc": "33"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "problem",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-015", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.1", "surec_bileseni": "e",
+    "konu": "Problemler", "alt_konu": "Karşılaştırmalı çok adımlı problem",
+    "soru_metni": "Bir sınıfta 12 kız öğrenci vardır. Erkek öğrenciler kız öğrencilerden 5 fazladır. Sınıftan 4 öğrenci erken ayrılırsa sınıfta kaç öğrenci kalır?",
+    "siklar": {"A": "13", "B": "29", "C": "33", "D": "25"},
+    "dogru_sik": "D",
+    "ipucu": "Önce erkek öğrenci sayısını bul.",
+    "cozum_adimlari": [
+      "Erkek öğrenci sayısı 12 + 5 = 17'dir.",
+      "Sınıftaki tüm öğrenciler 12 + 17 = 29'dur.",
+      "4 öğrenci ayrılınca 29 - 4 = 25 öğrenci kalır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Kız öğrencileri hesaba katmama: yalnız erkek sayısından ayrılanı çıkarma, 17 - 4.",
+      "B": "Ara sonucu nihai sanma: ayrılan öğrencileri çıkarmayı unutma.",
+      "C": "Ayrılan öğrencileri çıkarmak yerine ekleme."
+    },
+    "sayisal_dogrulama": {"ifade": "12+(12+5)-4", "beklenen_sonuc": "25"},
+    "zorluk": 3, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "problem",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-016", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.2", "surec_bileseni": "c",
+    "konu": "Toplama ve çıkarma", "alt_konu": "Yuvarlayarak tahmin",
+    "soru_metni": "Elif 24 + 38 işleminin sonucunu tahmin etmek için sayıları en yakın onluğa yuvarlıyor. Elif'in bulduğu tahmin kaçtır?",
+    "siklar": {"A": "70", "B": "50", "C": "60", "D": "62"},
+    "dogru_sik": "C",
+    "ipucu": "Her sayının hangi onluğa daha yakın olduğuna bak.",
+    "cozum_adimlari": [
+      "24, 20'ye daha yakındır; 24 sayısı 20 olur.",
+      "38, 40'a daha yakındır; 38 sayısı 40 olur.",
+      "20 + 40 = 60",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "İki sayıyı da yukarı yuvarlama: 30 + 40.",
+      "B": "İki sayıyı da aşağı yuvarlama: 20 + 30.",
+      "D": "Yuvarlamadan kesin toplamı bulup tahmin sanma."
+    },
+    "sayisal_dogrulama": {"ifade": "20+40", "beklenen_sonuc": "60"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-017", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.2", "surec_bileseni": "c",
+    "konu": "Toplama ve çıkarma", "alt_konu": "Zihinden çıkarma stratejisi",
+    "soru_metni": "Mert 64 - 19 işlemini zihinden yapıyor. Önce 64'ten 20 çıkarıyor. Mert'in doğru sonuca ulaşması için bulduğu sayıya ne yapması gerekir?",
+    "siklar": {"A": "1 eklemelidir", "B": "1 çıkarmalıdır", "C": "19 eklemelidir", "D": "20 eklemelidir"},
+    "dogru_sik": "A",
+    "ipucu": "64'ten 20 çıkarmak, 19 çıkarmaktan farklı bir sonuç verir.",
+    "cozum_adimlari": [
+      "64'ten 20 çıkarılırsa 44 bulunur.",
+      "Oysa 19 çıkarılacaktı; 20 çıkarılınca 1 fazla çıkarılmış olur.",
+      "Fazla çıkarılan 1 geri eklenir: 44 + 1 = 45.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Yönü ters yapma: fazla çıkarılanı düzeltmek yerine bir daha çıkarma.",
+      "C": "Çıkarılması gereken 19'u sonuca ekleme.",
+      "D": "Çıkardığı 20'yi sonuca geri ekleme."
+    },
+    "zorluk": 3, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-018", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.3", "surec_bileseni": "b",
+    "konu": "Toplama ve çıkarma", "alt_konu": "Toplama ile çıkarma arasındaki ilişki",
+    "soru_metni": "27 + 15 = 42 olduğuna göre 42 - 15 işleminin sonucu kaçtır?",
+    "siklar": {"A": "57", "B": "33", "C": "27", "D": "15"},
+    "dogru_sik": "C",
+    "ipucu": "Toplama ve çıkarma işlemleri birbirinin tersidir.",
+    "cozum_adimlari": [
+      "27 + 15 = 42 ise toplamdan 15 çıkarılınca diğer toplanan kalır.",
+      "42 - 15 = 27",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "İşlem seçimi hatası: çıkarma yerine toplama yapma, 42 + 15.",
+      "B": "Çıkarmada küçük rakamı büyük rakamdan çıkarma: 4 - 1 ve 5 - 2 ile 33 bulma.",
+      "D": "Çıkarılan sayıyı sonuç sanma."
+    },
+    "sayisal_dogrulama": {"ifade": "42-15", "beklenen_sonuc": "27"},
+    "zorluk": 1, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-019", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.4", "surec_bileseni": "b",
+    "konu": "Çarpma", "alt_konu": "Tekrarlı toplama ile çarpma",
+    "soru_metni": "6 + 6 + 6 + 6 toplamı hangi çarpma işlemine eşittir?",
+    "siklar": {"A": "6 × 6", "B": "4 × 6", "C": "4 × 4", "D": "4 + 6"},
+    "dogru_sik": "B",
+    "ipucu": "Toplananların kaç tane olduğunu say.",
+    "cozum_adimlari": [
+      "Toplamda 6 sayısı 4 kez yazılmıştır.",
+      "Aynı sayıyı tekrar tekrar toplamak çarpmaya dönüştürülür.",
+      "4 kez 6, 4 × 6 olarak yazılır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Toplanan sayıyı tekrar sayısı olarak da kullanma.",
+      "C": "Tekrar sayısını toplanan sayı yerine de kullanma.",
+      "D": "Toplama işlemini çarpmaya dönüştürmeden toplama olarak bırakma."
+    },
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "bilgi",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-020", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.4", "surec_bileseni": "b",
+    "konu": "Bölme", "alt_konu": "Tekrarlı çıkarma ile bölme",
+    "soru_metni": "Ali 15 cevizi bir kaba taşıyor. Her seferinde 3 ceviz taşıyabiliyor. Ali bütün cevizleri taşımak için kaç kez gidip gelmelidir?",
+    "siklar": {"A": "12 kez", "B": "3 kez", "C": "18 kez", "D": "5 kez"},
+    "dogru_sik": "D",
+    "ipucu": "15'ten 3 çıkara çıkara sıfıra kadar gitmeyi dene.",
+    "cozum_adimlari": [
+      "Her seferde 3 ceviz taşınır: 15, 12, 9, 6, 3, 0.",
+      "15'ten 0'a gelmek için 3 tam 5 kez çıkarılır.",
+      "15 / 3 = 5 kez",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ara sonucu nihai sanma: yalnız bir kez çıkarıp 15 - 3 = 12 bulma.",
+      "B": "Her seferde taşınan sayıyı sefer sayısı sanma.",
+      "C": "İşlem seçimi hatası: bölme yerine toplama yapma, 15 + 3."
+    },
+    "sayisal_dogrulama": {"ifade": "15/3", "beklenen_sonuc": "5"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "problem",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-021", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.5", "surec_bileseni": "c",
+    "konu": "Çarpma", "alt_konu": "Zihinden çarpma stratejisi",
+    "soru_metni": "Ece 8 × 5 işlemini zihinden yapmak için önce 8 × 10 işlemini yapıyor, sonra bulduğu sonucu 2'ye bölüyor. Ece hangi sonuca ulaşır?",
+    "siklar": {"A": "40", "B": "80", "C": "16", "D": "13"},
+    "dogru_sik": "A",
+    "ipucu": "Önce 8 × 10 işleminin sonucunu bul.",
+    "cozum_adimlari": [
+      "8 × 10 = 80",
+      "Bulunan sonuç 2'ye bölünür: 80 / 2 = 40.",
+      "Bu sonuç, 8 × 5 işleminin sonucuyla aynıdır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Ara sonucu nihai sanma: 2'ye bölmeyi unutma.",
+      "C": "Yanlış bölen kullanma: 80'i 2 yerine 5'e bölme.",
+      "D": "İşlem seçimi hatası: çarpma yerine toplama yapma, 8 + 5."
+    },
+    "sayisal_dogrulama": {"ifade": "8*10/2", "beklenen_sonuc": "40"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-022", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.5", "surec_bileseni": "c",
+    "konu": "Bölme", "alt_konu": "Zihinden bölme",
+    "soru_metni": "30 ÷ 3 işleminin sonucu kaçtır?",
+    "siklar": {"A": "27", "B": "33", "C": "10", "D": "90"},
+    "dogru_sik": "C",
+    "ipucu": "Bölme, bir sayıyı eşit parçalara ayırmaktır.",
+    "cozum_adimlari": [
+      "3 ile çarpınca 30 eden sayı aranır.",
+      "3 × 10 = 30 olduğundan 30 / 3 = 10'dur.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "İşlem seçimi hatası: bölme yerine çıkarma yapma, 30 - 3.",
+      "B": "İşlem seçimi hatası: bölme yerine toplama yapma, 30 + 3.",
+      "D": "İşlem seçimi hatası: bölme yerine çarpma yapma, 30 × 3."
+    },
+    "sayisal_dogrulama": {"ifade": "30/3", "beklenen_sonuc": "10"},
+    "zorluk": 1, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-023", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.6", "surec_bileseni": "b",
+    "konu": "Eşitlik", "alt_konu": "Toplamada eşitlik",
+    "soru_metni": "Bir sayı ile 8'in toplamı, 20 ile 5'in toplamına eşittir. Bu sayı kaçtır?",
+    "siklar": {"A": "12", "B": "17", "C": "25", "D": "33"},
+    "dogru_sik": "B",
+    "ipucu": "Eşitliğin iki tarafı aynı değeri gösterir.",
+    "cozum_adimlari": [
+      "20 ile 5'in toplamı 20 + 5 = 25'tir.",
+      "Bir sayı ile 8'in toplamı da 25 olmalıdır.",
+      "Sayı 25 - 8 = 17'dir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Eşitliğin bir tarafını atlama: 5'i hesaba katmadan 20 - 8 yapma.",
+      "C": "Ara sonucu nihai sanma: sağ taraftaki toplamı cevap alma.",
+      "D": "İşlem seçimi hatası: 25'ten 8 çıkarmak yerine 8 ekleme."
+    },
+    "sayisal_dogrulama": {"ifade": "20+5-8", "beklenen_sonuc": "17"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-024", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.2.6", "surec_bileseni": "b",
+    "konu": "Eşitlik", "alt_konu": "Farklı işlemlerde eşitlik",
+    "soru_metni": "Bir sayıya 9 eklenince sonuç, 4 ile 5'in çarpımına eşit oluyor. Bu sayı kaçtır?",
+    "siklar": {"A": "20", "B": "29", "C": "14", "D": "11"},
+    "dogru_sik": "D",
+    "ipucu": "Önce çarpmayı yap, sonra eksik sayıyı bul.",
+    "cozum_adimlari": [
+      "4 ile 5'in çarpımı 4 × 5 = 20'dir.",
+      "Sayıya 9 eklenince 20 olmalıdır.",
+      "Sayı 20 - 9 = 11'dir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ara sonucu nihai sanma: çarpım sonucunu cevap alma.",
+      "B": "İşlem seçimi hatası: 20'den 9 çıkarmak yerine 9 ekleme.",
+      "C": "Çarpmayı yok sayıp 5 ile 9'u toplama."
+    },
+    "sayisal_dogrulama": {"ifade": "4*5-9", "beklenen_sonuc": "11"},
+    "zorluk": 3, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "uygulama",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-025", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.3.1", "surec_bileseni": "c",
+    "konu": "Geometrik cisimler", "alt_konu": "Nesneleri cisimlere benzetme",
+    "soru_metni": "Aşağıdaki nesnelerden hangisi küre biçimindedir?",
+    "siklar": {"A": "Futbol topu", "B": "Konserve kutusu", "C": "Dondurma külahı", "D": "Oyun zarı"},
+    "dogru_sik": "A",
+    "ipucu": "Küre her yönden yuvarlak görünür.",
+    "cozum_adimlari": [
+      "Küre, her yönden yuvarlak olan ve hiç düz yüzü bulunmayan cisimdir.",
+      "Futbol topu bu biçimdedir.",
+      "Konserve kutusu silindire, dondurma külahı koniye, oyun zarı küpe benzer.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "B": "Yuvarlak yüzü olan silindiri küre ile karıştırma.",
+      "C": "Yuvarlak tabanı olan koniyi küre ile karıştırma.",
+      "D": "Oyun zarını yuvarlanabilen cisim sanma; küp ile küreyi karıştırma."
+    },
+    "zorluk": 1, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "bilgi",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-026", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.3.5", "surec_bileseni": "b",
+    "konu": "Sıvı ölçme", "alt_konu": "Standart olmayan araçlarla tahmin",
+    "soru_metni": "Ece bir kovayı 5 bardak suyla dolduruyor. Aynı büyüklükteki 3 kovayı doldurmak için yaklaşık kaç bardak su gerekir?",
+    "siklar": {"A": "8 bardak", "B": "15 bardak", "C": "35 bardak", "D": "5 bardak"},
+    "dogru_sik": "B",
+    "ipucu": "Her kova aynı sayıda bardak alır.",
+    "cozum_adimlari": [
+      "Bir kova 5 bardak su alır.",
+      "3 kova için 5 bardak 3 kez gerekir.",
+      "5 * 3 = 15 bardak",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "İşlem seçimi hatası: çarpma yerine toplama yapma, 5 + 3.",
+      "C": "Sayıları yan yana yazıp 5 ile 3'ten 35 oluşturma.",
+      "D": "Tek kovanın bardak sayısını üç kova için de aynı sanma."
+    },
+    "sayisal_dogrulama": {"ifade": "5*3", "beklenen_sonuc": "15"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "problem",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-027", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.3.6", "surec_bileseni": "d",
+    "konu": "Mesafe ve yön", "alt_konu": "En kısa yolu seçme",
+    "soru_metni": "Elif evinden okula üç yoldan gidebilir. 1. yol: 20 metre ileri, sağa dönüp 35 metre. 2. yol: 30 metre ileri, sola dönüp 15 metre, sağa dönüp 20 metre. 3. yol: 45 metre ileri, sola dönüp 5 metre. Elif en kısa yolu seçerse kaç metre yürür?",
+    "siklar": {"A": "55 metre", "B": "65 metre", "C": "50 metre", "D": "45 metre"},
+    "dogru_sik": "C",
+    "ipucu": "Her yolun toplam uzunluğunu ayrı ayrı bul.",
+    "cozum_adimlari": [
+      "1. yol: 20 + 35 = 55 metre.",
+      "2. yol: 30 + 15 + 20 = 65 metre.",
+      "3. yol: 45 + 5 = 50 metre.",
+      "En kısa yol 50 metre olan 3. yoldur.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "1. yolun toplamını cevap alma; diğer yolları hesaplamadan karar verme.",
+      "B": "2. yolun toplamını alma; çok dönüşlü yolu seçme.",
+      "D": "3. yolun yalnız ilk parçasını toplam sanma; ara sonucu nihai cevap alma."
+    },
+    "sayisal_dogrulama": {"ifade": "45+5", "beklenen_sonuc": "50"},
+    "zorluk": 3, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "problem",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-028", "sinif": 2, "ders": "Matematik", "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.4.1", "surec_bileseni": "f",
+    "konu": "Veri", "alt_konu": "İki gruplu kategorik veriyi yorumlama",
+    "soru_metni": "Bir sınıfta 22 öğrenci vardır. Her öğrenci iki oyundan birini seçti: saklambaç ya da kovalamaca. Saklambacı 13 öğrenci seçti. Saklambacı seçenler, kovalamacayı seçenlerden kaç öğrenci fazladır?",
+    "siklar": {"A": "9 öğrenci", "B": "13 öğrenci", "C": "35 öğrenci", "D": "4 öğrenci"},
+    "dogru_sik": "D",
+    "ipucu": "Önce kovalamacayı seçen öğrenci sayısını bul.",
+    "cozum_adimlari": [
+      "Kovalamacayı seçenler 22 - 13 = 9 öğrencidir.",
+      "Saklambacı seçenlerle kovalamacayı seçenler arasındaki fark 13 - 9 = 4'tür.",
+      "Saklambacı seçenler 4 öğrenci fazladır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ara sonucu nihai sanma: kovalamacayı seçenlerin sayısını cevap alma.",
+      "B": "Saklambacı seçenlerin sayısını fark sanma.",
+      "C": "İşlem seçimi hatası: farkı bulmak yerine 22 ile 13'ü toplama."
+    },
+    "sayisal_dogrulama": {"ifade": "13-(22-13)", "beklenen_sonuc": "4"},
+    "zorluk": 2, "zorluk_kaynagi": "model_tahmini", "soru_tipi": "problem",
+    "olumsuzluk": false, "baglam_islevi": "gerekli", "gorsel_gerekli": false, "kaynak_turu": "ozgun_ai"
+  }
+]

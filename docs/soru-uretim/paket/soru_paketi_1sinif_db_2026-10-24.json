@@ -1,0 +1,1779 @@
+{
+ "surum": "1",
+ "parti": {
+  "parti_id": "soru-uretim-2026-10-24-1sinif",
+  "aciklama": "1. sınıf havuz: 46 soru (Türkçe 24, Matematik 13, Hayat Bilgisi 9). Kazanım kodları TYMM taslak yıllık planından (kullanıcı kararı: resmî). Üretim Sonnet; yapısal kapı kapi.cjs (0 RED); kanıt soru_kontrol.mjs; kör çözüm Haiku (48/48 uyuştu); kör kalite Sonnet (7 DÜZELT düzeltildi). mat1-08 ve hb1-03 üç turda DÜZELT aldı ve dışarıda bırakıldı. Veri tabanına yazılmadı; onay_durumu beklemede."
+ },
+ "kaynaklar": [],
+ "sorular": [
+  {
+   "soru_id": "tr1-01",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Ayşe sabah erken kalktı. Ayşe dişlerini fırçaladı. Sonra sütünü içti.\n\nAyşe sabah kalkınca neyi fırçaladı?",
+   "siklar": {
+    "A": "Dişlerini",
+    "B": "Saçlarını",
+    "C": "Ayakkabısını",
+    "D": "Elbisesini"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Soru, Ayşe'nin sabah kalkınca neyi fırçaladığını soruyor.",
+    "Metnin ikinci cümlesinde Ayşe'nin dişlerini fırçaladığı yazıyor.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Metnin ikinci cümlesine dikkatle bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Sabahları saç da taranır, bu yüzden çekici gelir; ama metinde saçtan söz edilmez.",
+    "C": "Ayakkabı da fırçalanan bir eşyadır; ama metinde ayakkabı geçmez.",
+    "D": "Elbise de fırçalanabilir; ama metinde elbise geçmez."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-02",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Ayşe sabah erken kalktı. Ayşe dişlerini fırçaladı. Sonra sütünü içti.\n\nMetne göre Ayşe ne zaman kalktı?",
+   "siklar": {
+    "A": "Akşam geç vakit",
+    "B": "Sabah erken",
+    "C": "Öğle vakti",
+    "D": "Gece yarısı"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Soru, Ayşe'nin kalktığı zamanı soruyor.",
+    "Metnin ilk cümlesinde Ayşe'nin sabah erken kalktığı yazıyor.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Metnin ilk cümlesinde zamanı anlatan sözcükleri ara."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Akşam da günün bir vaktidir; ama Ayşe akşam değil sabah kalkmıştır.",
+    "C": "Öğle vakti de uyanmak için düşünülebilir; ama metinde öğleden söz edilmez.",
+    "D": "Gece yarısı uyku vaktidir; metinde böyle bir zaman geçmez."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-03",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Deniz parkta bir kedi gördü. Kedi ağaca tırmanıyordu. Deniz kediye el salladı.\n\nDeniz parkta ne gördü?",
+   "siklar": {
+    "A": "Bir köpek",
+    "B": "Bir kuş",
+    "C": "Bir kedi",
+    "D": "Bir tavşan"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Soru, Deniz'in parkta gördüğü hayvanı soruyor.",
+    "Metnin ilk cümlesinde Deniz'in parkta bir kedi gördüğü yazıyor.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Metnin ilk cümlesine geri dön."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Parkta köpek görmek çok olağandır; ama metinde köpek geçmez.",
+    "B": "Parkta kuşlar da bulunur; ama metinde kuştan söz edilmez.",
+    "D": "Tavşan da sevilen bir hayvandır; ama metinde tavşan geçmez."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-04",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Deniz parkta bir kedi gördü. Kedi ağaca tırmanıyordu. Deniz kediye el salladı.\n\nKedi nereye tırmanıyordu?",
+   "siklar": {
+    "A": "Çatıya",
+    "B": "Duvara",
+    "C": "Banka",
+    "D": "Ağaca"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Soru, kedinin tırmandığı yeri soruyor.",
+    "Metnin ikinci cümlesinde kedinin ağaca tırmandığı yazıyor.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kedinin ne yaptığı ikinci cümlede anlatılıyor."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Kediler çatıya da çıkar; ama metinde çatı geçmez.",
+    "B": "Kediler duvara da tırmanır; ama metinde duvar geçmez.",
+    "C": "Banka çıkmak parkta olabilecek bir şeydir; ama metinde bank geçmez."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-05",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Anne pazardan elma aldı. Elmalar kırmızı ve çok tatlıydı. Ali elmaları çok sevdi.\n\nAnne pazardan ne aldı?",
+   "siklar": {
+    "A": "Elma",
+    "B": "Armut",
+    "C": "Üzüm",
+    "D": "Çilek"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Soru, annenin pazardan aldığı şeyi soruyor.",
+    "Metnin ilk cümlesinde annenin pazardan elma aldığı yazıyor.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Annenin pazardan aldığı şey ilk cümlede yazıyor."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Armut da pazarda satılan bir meyvedir; ama metinde armut geçmez.",
+    "C": "Üzüm de pazarda satılır; ama metinde üzüm geçmez.",
+    "D": "Çilek de pazarda bulunan bir meyvedir; ama metinde çilek geçmez."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-06",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Anne pazardan elma aldı. Elmalar kırmızı ve çok tatlıydı. Ali elmaları çok sevdi.\n\nElmaların tadı nasıldı?",
+   "siklar": {
+    "A": "Çok ekşi",
+    "B": "Çok tatlı",
+    "C": "Çok acı",
+    "D": "Biraz tuzlu"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Soru, elmaların tadını soruyor.",
+    "Metnin ikinci cümlesinde elmaların kırmızı ve çok tatlı olduğu yazıyor.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "İkinci cümlede elmaların nasıl olduğu anlatılıyor."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Bazı elmalar ekşi olur, bu yüzden çekici gelir; ama metinde elmalar tatlıdır.",
+    "C": "Acı bir tat meyveler için akla gelebilir; ama metinde böyle bir şey yazmaz.",
+    "D": "Tuzlu tat meyveye uymaz ama sözcük olarak akla gelebilir; metinde geçmez."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-07",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Kuş ağaca bir yuva yaptı. Yuvada üç yumurtası vardı. Yumurtalardan yavru kuşlar çıktı.\n\nBu metin için en uygun başlık hangisidir?",
+   "siklar": {
+    "A": "Yumurtaların Rengi",
+    "B": "Kuşların Yiyeceği",
+    "C": "Kuş ve Yuvası",
+    "D": "Ağaçtaki Yapraklar"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Başlık, metnin en çok neyi anlattığını gösterir.",
+    "Metnin üç cümlesi de bir kuştan, yuvasından ve yumurtalarından söz ediyor.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Metinde en çok kimden ve onun neyinden söz edildiğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Metinde yumurta geçtiği için çekici gelir; ama metin yumurtanın rengini anlatmaz.",
+    "B": "Metinde kuş geçtiği için çekici gelir; ama metin kuşların yiyeceğinden söz etmez.",
+    "D": "Metinde ağaç geçtiği için çekici gelir; ama metin yapraklardan söz etmez."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-08",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Kuş ağaca bir yuva yaptı. Yuvada üç yumurtası vardı. Yumurtalardan yavru kuşlar çıktı.\n\nYuvada kaç yumurta vardı?",
+   "siklar": {
+    "A": "İki yumurta",
+    "B": "Dört yumurta",
+    "C": "Beş yumurta",
+    "D": "Üç yumurta"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Soru, yuvadaki yumurtanın sayısını soruyor.",
+    "Metnin ikinci cümlesinde yuvada üç yumurta olduğu yazıyor.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Yumurtaların sayısı ikinci cümlede yazıyor."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "İki sayısı, üçe yakın olduğu için karıştırılabilir.",
+    "B": "Dört sayısı, üçten sonra geldiği için karıştırılabilir.",
+    "C": "Beş sayısı da yumurta sayısı olarak düşünülebilir; ama metinde yazan sayı değildir."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-09",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Ali'nin balonu havaya uçtu. Ali balonuna uzun uzun baktı. Ali çok üzüldü.\n\nAli neden üzüldü?",
+   "siklar": {
+    "A": "Balonu uçtuğu için",
+    "B": "Okula geç kaldığı için",
+    "C": "Oyuncağı kırıldığı için",
+    "D": "Arkadaşı gittiği için"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Soru, Ali'nin üzülme nedenini soruyor.",
+    "Metnin ilk cümlesinde Ali'nin balonunun havaya uçtuğu yazıyor.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ali'nin balonuna ne olduğunu ilk cümlede ara."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Okula geç kalmak insanı üzer; ama metinde okul geçmez.",
+    "C": "Oyuncağın kırılması üzücü bir olaydır; ama metinde oyuncak kırılmaz.",
+    "D": "Arkadaşın gitmesi üzücüdür; ama metinde arkadaştan söz edilmez."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-10",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Hava çok soğuktu. Ayşe kalın montunu giydi. Sonra atkısını ve eldivenlerini aldı.\n\nAyşe ne giydi?",
+   "siklar": {
+    "A": "İnce tişört",
+    "B": "Kalın mont",
+    "C": "Yazlık elbise",
+    "D": "Yağmurluk"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Soru, Ayşe'nin giydiği şeyi soruyor.",
+    "Metnin ikinci cümlesinde Ayşe'nin kalın montunu giydiği yazıyor.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ayşe'nin giydiği şey ikinci cümlede yazıyor."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Tişört de bir giysidir; ama metindeki giysi ince değil kalındır.",
+    "C": "Elbise de giyilir; ama soğuk havada giyilen bir şey olmadığı için metne uymaz.",
+    "D": "Yağmurluk dışarıda giyilen bir şeydir; ama metinde yağmurdan söz edilmez."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-11",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Hava çok soğuktu. Ayşe kalın montunu giydi. Sonra atkısını ve eldivenlerini aldı.\n\nAyşe neden atkısını ve eldivenlerini aldı?",
+   "siklar": {
+    "A": "Yağmur yağdığı için",
+    "B": "Okula geç kalacağı için",
+    "C": "Hava soğuk olduğu için",
+    "D": "Annesi söylediği için"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Soru, Ayşe'nin atkı ve eldiven almasının nedenini soruyor.",
+    "Metnin ilk cümlesinde havanın çok soğuk olduğu yazıyor; atkı ve eldiven soğukta kullanılır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Metnin ilk cümlesinde havanın nasıl olduğuna bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yağmurda da kalın giyinilir; ama metinde yağmur yağdığı yazmaz.",
+    "B": "Okula yetişmek insanı aceleye getirir; ama metinde okul geçmez.",
+    "D": "Anneler çocuklara giyinmeyi söyler; ama metinde annenin söylediği yazmaz."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-12",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Deniz'in kalemi yere düştü. Ali kalemi yerden aldı. Ali kalemi Deniz'e verdi. Deniz, Ali'ye teşekkür etti.\n\nDeniz, Ali'ye neden teşekkür etti?",
+   "siklar": {
+    "A": "Ali kalemi düşürdüğü için",
+    "B": "Ali ona oyuncak verdiği için",
+    "C": "Ali ona ödev yaptığı için",
+    "D": "Ali kalemi verdiği için"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Soru, Deniz'in teşekkür etme nedenini soruyor.",
+    "Metinde Deniz'in kalemi düşüyor, Ali kalemi alıp Deniz'e veriyor.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ali'nin Deniz için yaptığı şeyi üçüncü cümlede ara."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Metinde kalem geçtiği için çekici gelir; ama kalemi düşüren Ali değil Deniz'dir.",
+    "B": "Teşekkür çoğunlukla hediye için edilir; ama metinde oyuncak verilmez.",
+    "C": "Ödev yapmak yardım etmektir; ama metinde ödevden söz edilmez."
+   },
+   "kazanim_kodu": "T.O.1.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-13",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Ali ve babası sabah göle gitti. Göl kenarında oturup balık tuttular. Akşam eve döndüler.\n\nAli ve babası balığı nerede tuttu?",
+   "siklar": {
+    "A": "Göl kenarında",
+    "B": "Orman içinde",
+    "C": "Okul bahçesinde",
+    "D": "Park kenarında"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Soru, olayın geçtiği yeri soruyor.",
+    "Metnin ikinci cümlesinde balığın göl kenarında tutulduğu yazıyor.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Olayın geçtiği yeri anlatan ikinci cümleye bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Doğada yapılan işlerde orman akla gelir; ama metinde orman geçmez.",
+    "C": "Çocuklar için tanıdık bir yerdir; ama metinde okul geçmez.",
+    "D": "Kenarında oturulan bir yerdir; ama metinde park değil göl vardır."
+   },
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-14",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Ali ve babası sabah göle gitti. Göl kenarında oturup balık tuttular. Akşam eve döndüler.\n\nAli ve babası eve ne zaman döndü?",
+   "siklar": {
+    "A": "Sabah erkenden",
+    "B": "Akşam vakti",
+    "C": "Öğle yemeğinde",
+    "D": "Gece yarısı"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Soru, eve dönüş zamanını soruyor; gidiş zamanı sorulmuyor.",
+    "Metnin son cümlesinde akşam eve döndükleri yazıyor.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Eve dönüşü anlatan cümleyi bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Sabah, gidiş zamanıdır; gidiş ile dönüş zamanı karıştırılabilir.",
+    "C": "Öğle vakti gün içinde bir zamandır; ama metinde öğle geçmez.",
+    "D": "Gece yarısı geç bir zamandır; ama metinde böyle bir zaman yazmaz."
+   },
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-15",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Ayşe fidanı toprağa dikti. Sonra fidanı suladı. Birkaç gün sonra fidanda yeni yapraklar çıktı.\n\nAyşe fidanı diktikten sonra ne yaptı?",
+   "siklar": {
+    "A": "Fidanı kesti",
+    "B": "Fidanı söktü",
+    "C": "Fidanı suladı",
+    "D": "Yaprak topladı"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Soru, dikme işinden sonraki işi soruyor.",
+    "Metinde önce fidanın dikildiği, sonra suladığı yazıyor.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dikme işinden sonra gelen cümleye bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Fidanla yapılabilecek bir işlem gibi görünür; ama metinde fidan kesilmez.",
+    "B": "Dikmenin tersi olduğu için akla gelir; ama metinde fidan sökülmez.",
+    "D": "Yapraklar metnin son cümlesinde geçtiği için çekicidir; ama yaprak toplama işi metinde geçmez."
+   },
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-16",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Ayşe fidanı toprağa dikti. Sonra fidanı suladı. Birkaç gün sonra fidanda yeni yapraklar çıktı.\n\nFidanda yeni yapraklar ne zaman çıktı?",
+   "siklar": {
+    "A": "Fidan dikilmeden önce",
+    "B": "Fidan dikilirken",
+    "C": "Bir yıl geçtikten sonra",
+    "D": "Birkaç gün geçince"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Soru, yeni yaprakların çıkış zamanını soruyor.",
+    "Metnin son cümlesinde birkaç gün sonra yeni yaprak çıktığı yazıyor.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Yaprakların çıkışını anlatan son cümleye bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Zaman anlatan bir ifadedir; ama fidan dikilmeden yaprak çıkmaz.",
+    "B": "Dikme işiyle aynı anda yaprak çıktığı sanılabilir; ama yapraklar günler sonra çıkar.",
+    "C": "Bir yıl uzun bir süredir ve akla gelebilir; ama metinde yazan süre birkaç gündür."
+   },
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-17",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Dün yağmur yağdı. Bahçedeki toprak ıslandı. Ali botlarını giyip bahçeye çıktı.\n\nBahçedeki toprak neden ıslandı?",
+   "siklar": {
+    "A": "Yağmur yağdığı için",
+    "B": "Ali bahçeyi suladığı için",
+    "C": "Kar yağdığı için",
+    "D": "Rüzgâr estiği için"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Soru, toprağın ıslanma nedenini soruyor.",
+    "Metinde önce yağmurun yağdığı, sonra toprağın ıslandığı yazıyor.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "İlk iki cümle arasındaki ilişkiyi düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Ali bahçeye çıkar ve toprağı sulayabilir gibi görünür; ama metinde sulama yoktur.",
+    "C": "Kar da toprağı ıslatabilir; ama metinde yağan kar değil yağmurdur.",
+    "D": "Rüzgâr hava olayıdır ve akla gelir; ama toprağı ıslatan şey rüzgâr değildir."
+   },
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-18",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Dün yağmur yağdı. Bahçedeki toprak ıslandı. Ali botlarını giyip bahçeye çıktı.\n\nAli bahçeye çıkmadan önce ne yaptı?",
+   "siklar": {
+    "A": "Ellerini yıkadı",
+    "B": "Botlarını giydi",
+    "C": "Saçını taradı",
+    "D": "Çantasını taşıdı"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Soru, Ali'nin bahçeye çıkmadan önce yaptığı işi soruyor.",
+    "Son cümlede Ali'nin önce botlarını giydiği, sonra bahçeye çıktığı anlaşılıyor.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ali'nin bahçeye çıkışını anlatan son cümleye bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ellerini yıkamak günlük bir iştir; ama metinde geçmez.",
+    "C": "Saç taramak dışarı çıkmadan önce yapılabilir; ama metinde geçmez.",
+    "D": "Çanta taşımak dışarı çıkarken yapılabilir; ama metinde çanta geçmez."
+   },
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-19",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 3,
+   "soru_metni": "Deniz pasta yaptı. Önce yumurtaları kırdı. Sonra unu ekleyip karıştırdı. En son pastayı fırına koydu.\n\nDeniz pastayı fırına koymadan hemen önce ne yaptı?",
+   "siklar": {
+    "A": "Yumurtaları kırdı",
+    "B": "Pastayı tabağa koydu",
+    "C": "Un katıp karıştırdı",
+    "D": "Pastayı fırından çıkardı"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Metindeki işlerin sırası şöyledir: yumurta kırma, un katıp karıştırma, fırına koyma.",
+    "Fırına koymadan hemen önceki iş, un katıp karıştırmaktır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Fırına koyma işinden bir önceki işi bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yumurtaları kırmak da fırından önce yapılır; ama fırından hemen önce değil, daha başta yapılır.",
+    "B": "Pastayı tabağa koymak fırından sonra yapılacak bir iştir ve metinde geçmez.",
+    "D": "Pastayı fırından çıkarmak fırına koymadan sonra gelir; sıra karıştırılmıştır."
+   },
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-20",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu anlama",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Ayşe'nin kuşu hasta oldu. Ayşe kuşuna her gün su ve yem verdi. Birkaç gün sonra kuş yeniden şarkı söylemeye başladı.\n\nAyşe hasta kuşuna ne yaptı?",
+   "siklar": {
+    "A": "Kuşu uçmaya zorladı.",
+    "B": "Kuşun kafesini açık bıraktı.",
+    "C": "Kuşa hiç yiyecek vermedi.",
+    "D": "Kuşa su ve yem verdi."
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Soru, Ayşe'nin hasta kuşuna ne yaptığını soruyor.",
+    "Metinde Ayşe kuşuna her gün su ve yem verdiği yazıyor.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ayşe'nin kuşu için her gün yaptığı işlere dikkat et."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Hasta bir kuşu uçmaya zorlamak metinde yer almaz; metin bu davranıştan söz etmez.",
+    "B": "Kafesi açık bırakmak kuşun kaçmasına yol açabilir; metinde böyle bir davranış yoktur.",
+    "C": "Yiyecek vermemek metinle çelişir; Ayşe her gün yiyecek vermiştir."
+   },
+   "kazanim_kodu": "T.O.1.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-21",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazım kuralları",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Şu cümleye bak: “bugün hava çok güzel.” Bu cümlede hangi yazım yanlışı vardır?",
+   "siklar": {
+    "A": "Cümle küçük harfle başlamış.",
+    "B": "Cümlenin sonunda nokta yok.",
+    "C": "Sözcükler arasında boşluk yok.",
+    "D": "Her sözcük büyük harfle başlamış."
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Cümleler büyük harfle başlar.",
+    "Yukarıdaki cümle küçük harfle başlıyor; sonunda nokta var ve sözcükler ayrı yazılmış.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Cümleyi baştan sona dikkatle incele."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Nokta unutulabilir; ama cümlenin sonunda nokta vardır.",
+    "C": "Bitişik yazım hatası olabilir; ama sözcükler ayrı yazılmıştır.",
+    "D": "Her sözcüğün büyük harfle başlaması gerektiği sanılabilir; ama yalnızca cümlenin ilk sözcüğü büyük harfle başlar."
+   },
+   "kazanim_kodu": "T.Y.1.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-22",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazım kuralları",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Şu cümlenin sonuna işaret konmamış: “Bugün okula gelecek misin” Cümlenin sonuna hangi işaret konmalıdır?",
+   "siklar": {
+    "A": "Nokta işareti",
+    "B": "Soru işareti",
+    "C": "Ünlem işareti",
+    "D": "Virgül işareti"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Cümle, bir kişiye bir şey soruyor.",
+    "Soru anlamı taşıyan cümlenin sonuna soru işareti konur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Cümlenin ne anlatmak için kurulduğunu düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Çoğu cümlenin sonuna nokta konduğu için çekici gelir; ama bu cümle soru cümlesidir.",
+    "C": "Ünlem sevinç veya şaşkınlıkta kullanılır; bu cümle öyle değildir.",
+    "D": "Virgül cümle içinde kullanılır; cümlenin sonuna konmaz."
+   },
+   "kazanim_kodu": "T.Y.1.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-23",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazım kuralları",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Şu cümleye bak: “Dün akşam ayşe bize geldi.” Bu cümlede hangi sözcüğün ilk harfi büyük yazılmalıdır?",
+   "siklar": {
+    "A": "akşam",
+    "B": "bize",
+    "C": "ayşe",
+    "D": "geldi"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Cümlenin ilk sözcüğü zaten büyük harfle başlıyor.",
+    "Kişi adları büyük harfle başlar; cümledeki kişi adı ayşe sözcüğüdür.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kişilere verilen adlar nasıl yazılır, düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Zaman bildirdiği için önemli görünür; ama akşam sözcüğü her zaman küçük yazılır.",
+    "B": "Cümlenin ortasındaki sözcüktür; ama bize kişi adı değildir.",
+    "D": "Cümlenin sonundaki sözcük olduğu için büyük yazılmak istenebilir; ama kişi adı değildir."
+   },
+   "kazanim_kodu": "T.Y.1.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "tr1-24",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazım kuralları",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Şu cümlenin sonuna işaret konmamış: “Ne güzel bir resim yaptın” Bu cümle sevinç anlatıyor. Sonuna hangi işaret konmalıdır?",
+   "siklar": {
+    "A": "Nokta işareti",
+    "B": "Soru işareti",
+    "C": "Virgül işareti",
+    "D": "Ünlem işareti"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Cümle bir soru sormuyor; sevinç ve şaşkınlık anlatıyor.",
+    "Sevinç, şaşkınlık gibi duyguları anlatan cümlelerin sonuna ünlem işareti konur.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Duygu anlatan cümlelerin sonuna hangi işaretin konduğunu hatırla."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Çoğu cümlenin sonuna nokta konduğu için çekici gelir; ama bu cümle duygu anlatır.",
+    "B": "Cümle ne sözcüğüyle başladığı için soru gibi görünür; ama bu cümle soru sormaz.",
+    "C": "Virgül cümle içinde kullanılır; cümlenin sonuna konmaz."
+   },
+   "kazanim_kodu": "T.Y.1.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-01",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "sayılar",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Ali’nin çantasında on dört kalem var. Kalem sayısı rakamlarla nasıl yazılır?",
+   "siklar": {
+    "A": "14",
+    "B": "41",
+    "C": "10",
+    "D": "13"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Sayının adı \"on dört\" olarak verilmiş.",
+    "On dört, rakamlarla 14 diye yazılır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Sayının adını yavaşça söyle ve duyduğun parçaları düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Rakamların yerini ters yazma hatası (14 yerine 41).",
+    "C": "Sayının adındaki yalnız \"on\" kısmını yazıp \"dört\" kısmını unutma.",
+    "D": "Sayıyı bir eksik sayma hatası (14 yerine 13)."
+   },
+   "kazanim_kodu": "MAT.1.1.1",
+   "kazanim_metni": "Rakamları ve 20’ye kadar olan sayıları (20 dâhil), niceliklerin büyüklüklerini temsil etmek için kullanabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-02",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "nesne sayma",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Masanın üstünde 3 kırmızı ve 4 mavi balon var. Masanın üstünde toplam kaç balon var?",
+   "siklar": {
+    "A": "3",
+    "B": "7",
+    "C": "6",
+    "D": "8"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Kırmızı balonlar 3 tanedir.",
+    "Mavi balonlar 4 tanedir.",
+    "3 ve 4 balon birleşince 3 + 4 = 7 balon olur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Balonları renklerine göre gruplara ayır ve her grubu ayrı düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yalnız kırmızı balonları sayıp mavi grubu hesaba katmama.",
+    "C": "Balonlardan birini saymayı unutma (sayarken bir tane atlama).",
+    "D": "Balonlardan birini iki kez sayma."
+   },
+   "kazanim_kodu": "MAT.1.1.2",
+   "kazanim_metni": "Ögeleri dağınık veya düzenli bir şekilde bulunan bir nesne grubunu sayarken parçalar arasında ilişkileri çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-03",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "sıra sayıları",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Kuyrukta bekleyen çocuklardan Ali baştan ikinci sırada, Ayşe ise Ali'nin hemen arkasında. Ayşe baştan kaçıncı sıradadır?",
+   "siklar": {
+    "A": "1. sırada",
+    "B": "2. sırada",
+    "C": "3. sırada",
+    "D": "4. sırada"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Ali baştan ikinci sıradadır.",
+    "Ayşe, Ali'nin hemen arkasındadır; yani ikinciden sonra gelir.",
+    "İkinciden sonraki sıra üçüncüdür.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kuyruğu baştan başlayarak çocukları sırayla say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Kuyruğun başındaki çocuk sanıp birinci sırayı seçme.",
+    "B": "Ayşe'yi Ali ile karıştırıp Ali'nin sırasını yazma.",
+    "D": "Kuyruğun sonundaki sırayı seçme."
+   },
+   "kazanim_kodu": "MAT.1.1.3",
+   "kazanim_metni": "Nesnelerin sıra sayısını gösterebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-04",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "karşılaştırma",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Ali'nin 9 kalemi, Ayşe'nin 7 kalemi var. Aşağıdakilerden hangisi doğrudur?",
+   "siklar": {
+    "A": "Ayşe'nin kalemi daha çok.",
+    "B": "Ali'nin kalemi daha az.",
+    "C": "İkisinin kalemi eşit.",
+    "D": "Ali'nin kalemi daha çok."
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Ali'nin 9 kalemi, Ayşe'nin 7 kalemi var.",
+    "Sayarken 9, 7'den sonra gelir; yani 9 daha büyüktür.",
+    "Bu yüzden Ali'nin kalemi daha çoktur.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Sayarken hangi sayıyı daha sonra söylediğine bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Küçük sayıyı büyük sanıp iki kişiyi ters karşılaştırma.",
+    "B": "\"Daha az\" ve \"daha çok\" terimlerini karıştırma.",
+    "C": "İki sayı birbirine yakın olduğu için eşit sanma."
+   },
+   "kazanim_kodu": "MAT.1.1.4",
+   "kazanim_metni": "İki niceliğin büyüklüğünü “çok”, “daha çok”, “az”, “daha az” veya “eşit” terimleriyle karşılaştırabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-05",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "ritmik sayma",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Ayşe onar onar sayıyor: 10, 20, 30, 40. Ayşe'nin söyleyeceği sıradaki sayı kaçtır?",
+   "siklar": {
+    "A": "50",
+    "B": "41",
+    "C": "45",
+    "D": "60"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Ayşe onar onar sayıyor: 10, 20, 30, 40.",
+    "Her adımda sayı 10 artıyor.",
+    "40'tan sonra gelen sayı 40 + 10 = 50 olur.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Sayıların her adımda ne kadar arttığına bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Onar sayma yerine birer birer sayıp 40'a 1 ekleme.",
+    "C": "Ritmi karıştırıp 40'a 5 ekleme.",
+    "D": "Bir adımı atlayıp 50 yerine bir sonraki onluğu söyleme."
+   },
+   "kazanim_kodu": "MAT.1.1.5",
+   "kazanim_metni": "100’e kadar ileriye ve 20’den geriye doğru ritmik sayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-06",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "örüntüler",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Ali kartlara sırayla 10, 8, 6, 4 sayılarını yazdı. Aynı kuralla devam edersek sıradaki kartta hangi sayı olur?",
+   "siklar": {
+    "A": "3",
+    "B": "2",
+    "C": "6",
+    "D": "4"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Sayılar 10, 8, 6, 4 diye gidiyor.",
+    "Her adımda sayı 2 azalıyor.",
+    "4'ten sonra 4 - 2 = 2 gelir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Sayıların her adımda nasıl değiştiğine dikkat et."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Kuralı birer birer azalma sanıp 4'ten 1 çıkarma.",
+    "C": "Geriye doğru değil ileriye bakıp bir önceki sayıyı yazma.",
+    "D": "Kuralı sürdürmeyip son sayıyı tekrar etme."
+   },
+   "kazanim_kodu": "MAT.1.1.6",
+   "kazanim_metni": "Artan veya azalan sayı ve şekil örüntülerini çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-07",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "tahmin",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Bir kavanozun tam yarısı bilyelerle dolu ve içinde 4 bilye var. Kavanoz tamamen dolarsa içinde kaç bilye olur?",
+   "siklar": {
+    "A": "4",
+    "B": "6",
+    "C": "8",
+    "D": "2"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Kavanozun yarısında 4 bilye var.",
+    "Diğer yarısı da aynı kadar bilye alır.",
+    "Tamamı 4 + 4 = 8 bilye olur.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Dolu kısım ile kavanozun tamamı arasındaki ilişkiyi düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yarıdaki sayıyı kavanozun tamamı sanma.",
+    "B": "Yarıdaki sayıya ilişkiyi kullanmadan rastgele 2 ekleme.",
+    "D": "Yarıyı büyütmek yerine ikiye bölme."
+   },
+   "kazanim_kodu": "MAT.1.1.7",
+   "kazanim_metni": "Verilen bir çokluktaki ilişkilerden yararlanarak 20’ye kadar (20 dâhil) olan nesnelerin sayısını tahmin edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-09",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "toplama ve çıkarma",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Ali'nin 15 bilyesi vardı. Ali 4 bilyesini arkadaşına verdi. Ali'nin geriye kaç bilyesi kaldı?",
+   "siklar": {
+    "A": "11",
+    "B": "19",
+    "C": "12",
+    "D": "10"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Ali'nin önce 15 bilyesi vardı.",
+    "Arkadaşına 4 bilye verdi; bilye sayısı azaldı.",
+    "15 - 4 = 11 olur.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ali bilyesini verince elindeki bilye sayısı artar mı, azalır mı?"
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Verme durumunda çıkarma yerine toplama yapma (15 + 4).",
+    "C": "Geriye doğru sayarken bir fazla sayma.",
+    "D": "Geriye doğru sayarken bir eksik sayma."
+   },
+   "kazanim_kodu": "MAT.1.2.1",
+   "kazanim_metni": "Günlük yaşamın içerdiği toplama ve çıkarma işlemlerini çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-10",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "zihinden işlem",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Ali 6 + 6 = 12 olduğunu biliyor. 6 + 7 işleminin sonucu kaçtır?",
+   "siklar": {
+    "A": "12",
+    "B": "13",
+    "C": "14",
+    "D": "11"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Ali 6 + 6 = 12 olduğunu biliyor.",
+    "6 + 7 işleminde ikinci sayı 6'dan 1 fazladır.",
+    "Bu yüzden sonuç 12'den 1 fazladır: 12 + 1 = 13.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Bildiğin işlemden başla; ikinci sayının nasıl değiştiğine bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "İkinci sayıdaki farkı hesaba katmayıp bilinen sonucu aynen yazma.",
+    "C": "7 + 7 işlemiyle karıştırma.",
+    "D": "6 + 5 işlemiyle karıştırıp farkı ters yöne uygulama."
+   },
+   "kazanim_kodu": "MAT.1.2.2",
+   "kazanim_metni": "Toplama ve çıkarma işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-11",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "eşitlik",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Ali tahtaya 9 + 3 = 8 + ? yazıyor. Eşitliğin doğru olması için ? yerine hangi sayı gelmelidir?",
+   "siklar": {
+    "A": "3",
+    "B": "5",
+    "C": "4",
+    "D": "1"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Eşit işaretinin sol tarafı 9 + 3 = 12 eder.",
+    "Sağ taraf da 12 olmalıdır: 8 + ? = 12.",
+    "8'e 4 eklenince 12 olur; ? yerine 4 gelir.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Eşit işaretinin iki yanı aynı değerde olmalıdır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Soldaki 3 sayısını görüp aynen yazma.",
+    "B": "Eksik sayıyı bulurken sayarken bir fazla ekleme.",
+    "D": "Soldaki 9 ile sağdaki 8 arasındaki farkı yazma."
+   },
+   "kazanim_kodu": "MAT.1.2.3",
+   "kazanim_metni": "Eşit işaretinin anlamını toplama ve çıkarma işlemi bağlamında yorumlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-12",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "toplama-çıkarma ilişkisi",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Ali tahtaya 8 + 6 = 14 yazıyor. Buna göre sonucu 8 olan çıkarma işlemi hangisidir?",
+   "siklar": {
+    "A": "14 - 8",
+    "B": "8 - 6",
+    "C": "14 + 6",
+    "D": "14 - 6"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "8 + 6 = 14 olduğuna göre toplamdan bir parça çıkarılırsa diğer parça kalır.",
+    "14'ten 6 çıkarılırsa 8 kalır: 14 - 6 = 8.",
+    "Diğer seçeneklerin sonuçları 6, 2 ve 20 olur.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Toplama işlemindeki sayıların çıkarmada nasıl kullanıldığını düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Toplamdan 8'i çıkarınca 6 kaldığını fark etmeme; sonucu 8 sanma.",
+    "B": "Toplamı hiç kullanmayıp kartta geçen sayıları sırayla çıkarma.",
+    "C": "Çıkarma yerine toplama işlemini seçme."
+   },
+   "kazanim_kodu": "MAT.1.2.4",
+   "kazanim_metni": "Toplama ve çıkarma işlemlerinin ilişkisini yorumlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-13",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "para",
+   "alt_konu": null,
+   "zorluk": 3,
+   "soru_metni": "Ali'nin cüzdanında bir 20 TL, bir 10 TL ve bir 5 TL var. Ali'nin toplam kaç TL'si vardır?",
+   "siklar": {
+    "A": "35",
+    "B": "30",
+    "C": "40",
+    "D": "25"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Paraların değerleri 20 TL, 10 TL ve 5 TL'dir.",
+    "Önce 20 + 10 = 30 TL olur.",
+    "Sonra 30 + 5 = 35 TL olur.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her paranın değerini ayrı ayrı düşün, sonra birleştir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "5 TL'lik parayı hesaba katmama.",
+    "C": "5 TL'lik parayı 10 TL sanma.",
+    "D": "10 TL'lik parayı hesaba katmama (20 + 5)."
+   },
+   "kazanim_kodu": "MAT.1.1.9",
+   "kazanim_metni": "Paraların (1 TL, 5 TL, 10 TL, 20 TL, 50 TL, 100 TL ve 200 TL) temsil ettiği büyüklükleri tanıyabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "mat1-14",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "veri",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Sınıf oylamasında elma 6 oy, portakal 3 oy, muz 4 oy aldı. Elma, portakaldan kaç oy fazla almıştır?",
+   "siklar": {
+    "A": "2",
+    "B": "3",
+    "C": "6",
+    "D": "9"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Elma 6 oy aldı.",
+    "Portakal 3 oy aldı.",
+    "Aradaki fark 6 - 3 = 3 oydur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce elmanın ve portakalın oy sayılarını bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Portakal yerine muzu alıp farkı 6 - 4 = 2 sanma.",
+    "C": "Elmanın oy sayısını cevap sanıp farkı hesaplamama.",
+    "D": "Farkı bulmak yerine iki oy sayısını toplama (6 + 3)."
+   },
+   "kazanim_kodu": "MAT.1.4.1",
+   "kazanim_metni": "Kategorik veriye dayalı temel veri grubu ile çalışabilme ve veriye dayalı karar verebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "hb1-01",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Tanışma",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Yeni bir arkadaşla tanışırken önce adımızı söyleriz. Sonra hangi sınıfta olduğunu sorarız. Parçaya göre, yeni bir arkadaşla tanışırken önce ne yaparız?",
+   "siklar": {
+    "A": "Kendi adımızı söyleriz.",
+    "B": "Hangi sınıfta olduğunu sorarız.",
+    "C": "Ona oyun oynamayı öneririz.",
+    "D": "Elimizdeki oyuncağı gösteririz."
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Parçaya göre tanışırken ilk iş adımızı söylemektir.",
+    "Soru da tanışırken önce ne yapıldığını soruyor.",
+    "Kendi adımızı söylemek bu işe uyar.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Parçada \"önce\" sözcüğünün yanında yazan işe bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Karşıdakini tanımak için soru sormak akla gelir ama parçada bu iş ilk değil, sonra yapılan iştir.",
+    "C": "Oyun önermek arkadaşça görünür ama tanışmanın ilk adımı değildir.",
+    "D": "Bir şey göstermek paylaşmak gibi görünür ama parçadaki ilk iş bu değildir."
+   },
+   "kazanim_kodu": "HB.1.1.1",
+   "kazanim_metni": "Öğretmeni ve arkadaşlarıyla tanışabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "hb1-02",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Sınıf kuralları",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Sınıfta konuşmak için parmak kaldırırız. Arkadaşımız konuşurken onu dinleriz. Parçaya göre, sınıfta konuşmak isteyen bir öğrenci ne yapmalıdır?",
+   "siklar": {
+    "A": "Arkadaşının sözünü keser.",
+    "B": "Parmak kaldırıp bekler.",
+    "C": "Yerinden kalkıp dolaşır.",
+    "D": "Yüksek sesle bağırır."
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Parça, sınıfta konuşmak için ne yaptığımızı söylüyor.",
+    "Bu iş parmak kaldırmaktır.",
+    "Parmak kaldırıp beklemek kurala uyar.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Parçanın ilk cümlesinde konuşmak için yapılan şey yazıyor."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Hemen konuşmak istenince akla gelir ama parçaya göre arkadaşı dinlemek gerekir.",
+    "C": "Yerinden kalkmak dikkat çekmek için yapılır ama konuşmak için gereken iş değildir.",
+    "D": "Bağırmak sesini duyurmak için yapılır ama parçadaki kurala uymaz."
+   },
+   "kazanim_kodu": "HB.1.1.3",
+   "kazanim_metni": "Sınıf ve okul ortamında kurallara uygun davranabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "hb1-04",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Yaya trafik kuralları",
+   "alt_konu": null,
+   "zorluk": 1,
+   "soru_metni": "Yaya ışığı kırmızıyken kaldırımda bekleriz. Yeşil yanınca sağımıza ve soluma bakıp karşıya geçeriz. Parçaya göre, yaya ışığı kırmızıyken ne yaparız?",
+   "siklar": {
+    "A": "Koşarak karşıya geçeriz.",
+    "B": "Yola çıkıp arabaları izleriz.",
+    "C": "Araba yoksa hemen geçeriz.",
+    "D": "Kaldırımda durup bekleriz."
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Soru, yaya ışığı kırmızıyken ne yapıldığını soruyor.",
+    "Parçaya göre kırmızıyken kaldırımda bekleriz.",
+    "Kaldırımda durup beklemek bu cümleye uyar.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Parçada kırmızı ışık yanarken yapılan iş yazıyor."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Koşarak geçmek vakit kazandırır gibi görünür ama kırmızıyken beklemek gerekir.",
+    "B": "Yola çıkıp izlemek dikkatli olmak gibi görünür ama kırmızıyken yola çıkılmaz.",
+    "C": "Araba görünmeyince geçmek kolay gelir ama kırmızıyken beklemek gerekir."
+   },
+   "kazanim_kodu": "HB.1.2.3",
+   "kazanim_metni": "Temel trafik kurallarına uygun davranabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "hb1-05",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Ailem",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Bir çocuk ailesini anlatıyor: “Evde annem, babam, ablam, kardeşim ve ben varız.” Bu ailede toplam kaç kişi vardır?",
+   "siklar": {
+    "A": "Beş kişi",
+    "B": "Dört kişi",
+    "C": "Altı kişi",
+    "D": "Üç kişi"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Parçadaki kişileri sayalım: annem, babam, ablam, kardeşim ve ben.",
+    "Bir, iki, üç, dört, beş eder.",
+    "Aile beş kişidir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Konuşan çocuk da ailenin bir üyesidir. Parçadaki herkesi say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Konuşan çocuk kendini saymazsa dört bulur.",
+    "C": "Bir kişiyi iki kez sayınca altı çıkar.",
+    "D": "Yalnızca anne, baba ve bir kardeşi sayınca üç çıkar."
+   },
+   "kazanim_kodu": "HB.1.3.1",
+   "kazanim_metni": "Ailenin özelliklerini ifade edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "hb1-06",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Evde görev paylaşımı",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Bizim evde herkesin bir işi var. Annem sofrayı kurar, babam yemek yapar, ablam çöpü çıkarır. Bu evde ablanın işi nedir?",
+   "siklar": {
+    "A": "Sofrayı kurar.",
+    "B": "Çöpü çıkarır.",
+    "C": "Yemek yapar.",
+    "D": "Bulaşık yıkar."
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Parça, evdeki herkesin işini sayıyor.",
+    "Annem sofrayı kurar, babam yemek yapar.",
+    "Ablanın işi çöpü çıkarmaktır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Parçanın ikinci cümlesinde her kişinin yanında bir iş yazıyor. Ablanın adını ara."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Sofrayı kurmak parçada geçer ama bu işi anne yapar.",
+    "C": "Yemek yapmak parçada geçer ama bu işi baba yapar.",
+    "D": "Bulaşık yıkamak evde yapılan bir iştir ama parçada ablanın işi olarak yazmaz."
+   },
+   "kazanim_kodu": "HB.1.3.3",
+   "kazanim_metni": "Aile bireylerinin görev ve sorumluluklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "hb1-07",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Ülkemiz",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "İstanbul, ülkemizin en kalabalık şehridir ama ülkemizin başkenti Ankara'dır. Parçaya göre, ülkemizin başkenti hangi şehirdir?",
+   "siklar": {
+    "A": "İstanbul şehri",
+    "B": "İzmir şehri",
+    "C": "Ankara şehri",
+    "D": "Bursa şehri"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Parçada İstanbul'un kalabalık bir şehir olduğu yazıyor.",
+    "Başkent olan şehir ise \"ama\" sözcüğünden sonra söyleniyor.",
+    "Ülkemizin başkenti Ankara'dır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Parçada iki şehir geçiyor. Başkentin hangisi olduğu \"ama\" sözcüğünden sonra yazıyor."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "İstanbul parçada ilk geçen ve en kalabalık şehirdir, bu yüzden başkent sanılabilir.",
+    "B": "İzmir büyük ve bilinen bir şehirdir, bu yüzden akla gelebilir.",
+    "D": "Bursa büyük ve bilinen bir şehirdir, bu yüzden akla gelebilir."
+   },
+   "kazanim_kodu": "HB.1.4.1",
+   "kazanim_metni": "Yaşadığı yerin ve ülkemizin genel özelliklerini açıklayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "hb1-08",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Güneş, Dünya ve Ay modeli",
+   "alt_konu": null,
+   "zorluk": 2,
+   "soru_metni": "Güneş, Dünya ve Ay'ı göstermek için bir model yapılıyor: Güneş bir basketbol topu, Dünya bir bilye, Ay ise bir bezelyedir. Bu modele göre hangi cümle doğrudur?",
+   "siklar": {
+    "A": "Ay, Dünya'dan daha büyüktür.",
+    "B": "Dünya, Güneş'ten daha büyüktür.",
+    "C": "Ay, Güneş'ten daha büyüktür.",
+    "D": "Dünya, Ay'dan daha büyüktür."
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Modelde Güneş basketbol topu, Dünya bilye, Ay bezelyedir.",
+    "En büyük basketbol topu, sonra bilye, en küçük bezelyedir.",
+    "Bilye bezelyeden büyüktür, yani Dünya Ay'dan büyüktür.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Modeldeki üç şeyin büyüklüğünü sırayla karşılaştır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ay ile Dünya'nın sırası ters söylenmiştir; bezelye bilyeden küçüktür.",
+    "B": "Dünya ile Güneş'in sırası ters söylenmiştir; bilye basketbol topundan küçüktür.",
+    "C": "Ay ile Güneş'in sırası ters söylenmiştir; bezelye basketbol topundan küçüktür."
+   },
+   "kazanim_kodu": "HB.1.5.2",
+   "kazanim_metni": "Modeller üzerinden gök cisimlerini karşılaştırabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "hb1-09",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Bilimde merak ve soru",
+   "alt_konu": null,
+   "zorluk": 3,
+   "soru_metni": "Bir çocuk saksıya toprak koyup tohum ekti ve her gün suladı. Tohumun neden büyüdüğünü merak ediyor. Çocuk merak ettiğini öğrenmek için hangi soruyu sormalıdır?",
+   "siklar": {
+    "A": "Tohum neden büyür?",
+    "B": "Toprağı kim hazırlamış?",
+    "C": "Tohum hangi renktir?",
+    "D": "Saksıyı nereden aldın?"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Parça, çocuğun tohumun neden büyüdüğünü merak ettiğini söylüyor.",
+    "Merak edileni öğrenmek için tam bunu soran soru gerekir.",
+    "\"Tohum neden büyür?\" sorusu bu merakı sorar.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Çocuğun neyi merak ettiği parçanın sonunda yazıyor. Soru o merakı sormalı."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Toprak konusu parçada geçer ama çocuk toprağın kim tarafından hazırlandığını merak etmiyor.",
+    "C": "Tohum hakkında bir sorudur ama çocuk tohumun rengini merak etmiyor.",
+    "D": "Ekme işiyle ilgili bir sorudur ama çocuk saksının nereden alındığını merak etmiyor."
+   },
+   "kazanim_kodu": "HB.1.6.1",
+   "kazanim_metni": "Bilimle ilgili merak ettiklerini sorabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  },
+  {
+   "soru_id": "hb1-10",
+   "sinif": 1,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Teknolojide merak ve soru",
+   "alt_konu": null,
+   "zorluk": 3,
+   "soru_metni": "Evde bir robot süpürge çalışıyor. Bir çocuk onun yolunu nasıl bulduğunu merak ediyor. Çocuk merak ettiğini öğrenmek için hangi soruyu sormalıdır?",
+   "siklar": {
+    "A": "Robot süpürge kaç liradır?",
+    "B": "Süpürge yolunu nasıl bulur?",
+    "C": "Robot süpürge hangi renktir?",
+    "D": "Robot süpürgeyi kim yapmış?"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Parça, çocuğun robot süpürgenin yolunu nasıl bulduğunu merak ettiğini söylüyor.",
+    "Merak edileni öğrenmek için tam bunu soran soru gerekir.",
+    "\"Süpürge yolunu nasıl bulur?\" sorusu bu merakı sorar.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Çocuğun neyi merak ettiği parçanın sonunda yazıyor. Soru o merakı sormalı."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Robot süpürge hakkında bir sorudur ama çocuk fiyatını merak etmiyor.",
+    "C": "Robot süpürge hakkında bir sorudur ama çocuk rengini merak etmiyor.",
+    "D": "Robot süpürge hakkında bir sorudur ama çocuk onu kimin yaptığını merak etmiyor."
+   },
+   "kazanim_kodu": "HB.1.6.2",
+   "kazanim_metni": "Teknoloji ile ilgili merak ettiklerini sorabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5 (üretim ve kör kalite); claude-haiku-5-5 (kör çözüm)",
+   "prompt_surumu": "soru-uretim-2026-10-24"
+  }
+ ]
+}

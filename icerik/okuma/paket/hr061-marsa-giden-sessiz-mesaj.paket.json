@@ -140,7 +140,7 @@
         },
         {
           "t": "metin",
-          "v": " odasında görev yapıyorlardı. Ancak ekrandaki görevler gerçek uzay iletişiminin bazı zorluklarını modelleyecek şekilde hazırlanmıştı. Öğrenciler bir Mars robotunu yönetiyor gibi karar verecek, mesajların "
+          "v": " odasında görev yapıyorlardı. Ancak ekrandaki görevler gerçek uzay iletişiminin bazı zorluklarını modelleyecek şekilde hazırlanmıştı. Öğrenciler bir Mars robotunu yönetir gibi karar verecek, mesajların "
         },
         {
           "t": "kelime",
@@ -804,7 +804,7 @@
         },
         {
           "t": "metin",
-          "v": ", “Ben hızdan, sen de beklemekten çok şey umuyoruz,” dedi. "
+          "v": ", “Ben hızdan, sen de beklemekten çok şey öğrendik,” dedi. "
         },
         {
           "t": "yoldas",
@@ -1066,7 +1066,7 @@
         },
         {
           "t": "metin",
-          "v": ", gözünü gökyüzüne çevirdi. Bulutların arasında küçücük bir açıklık vardı. Mars'ı seçemese de onun orada olduğunu biliyordu. Uzak bir gezegene gönderilen tek cümle, ona yakınındaki arkadaşlarını daha iyi dinlemeyi ve karar vermeden önce en doğru soruyu zamanında sormayı öğretmişti."
+          "v": ", gözünü gökyüzüne çevirdi. Bulutların arasında küçücük bir açıklık vardı. Mars'ı seçemese de onun orada olduğunu biliyordu. Uzak bir gezegenden gelen tek cümle, ona yakınındaki arkadaşlarını daha iyi dinlemeyi ve karar vermeden önce en doğru soruyu zamanında sormayı öğretmişti."
         }
       ]
     },
@@ -1125,7 +1125,7 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 1,
-      "metin": "Deniz'in komutu hemen uygulamaması neden doğruydu?",
+      "metin": "Kahramanın komutu hemen uygulamaması neden doğruydu?",
       "secenekler": [
         {
           "id": "A",
@@ -1133,15 +1133,15 @@
         },
         {
           "id": "B",
-          "metin": "Düğme çalışmıyordu"
+          "metin": "Kontrol düğmesi o an bakım modunda olduğu için komutları kabul etmiyordu"
         },
         {
           "id": "C",
-          "metin": "Robot uyuyordu"
+          "metin": "Robot o sırada uyku modunda olduğu ve komut bekleyemediği için"
         },
         {
           "id": "D",
-          "metin": "Kontrol odası kapalıydı"
+          "metin": "Kontrol odasının o saatte kapalı olduğu ve ekibin dışarıda bulunduğu için"
         }
       ],
       "dogru": "A",
@@ -1151,26 +1151,26 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 7,
-      "metin": "Deniz'in ulaştığı sonuç neydi?",
+      "metin": "Kahramanın ulaştığı sonuç neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir komutun şimdi gelmesi, şimdi uygulanması gerektiği anlamına gelmez"
+          "metin": "Komutlar güvenlik kararlarından bağımsız olarak hemen uygulanmalı"
         },
         {
           "id": "B",
-          "metin": "Komutlar hiç uygulanmamalı"
+          "metin": "Robotlar her durumda kontrol merkezinden onay beklemeli"
         },
         {
           "id": "C",
-          "metin": "Robot hep hızlı çalışmalı"
+          "metin": "Uzaktan gelen mesajlara hiçbir koşulda güvenilmemesi gerekir"
         },
         {
           "id": "D",
-          "metin": "Mesajlar hiç gelmez"
+          "metin": "Bir komutun şimdi gelmesi, şimdi uygulanması gerektiği anlamına gelmez"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Komutun zamanını ve bağlamını doğrulamak gerekir."
     },
     {
@@ -1181,22 +1181,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir şeyin beklenenden sonra ulaşması ya da olması"
+          "metin": "Kontrol odasında kullanılan küçük bir düğme türü"
         },
         {
           "id": "B",
-          "metin": "Bir tür düğme"
+          "metin": "Bir şeyin beklenenden sonra ulaşması ya da olması"
         },
         {
           "id": "C",
-          "metin": "Bir mesaj numarası"
+          "metin": "Her mesaja verilen ve kayda geçen benzersiz numara"
         },
         {
           "id": "D",
-          "metin": "Bir kamp adı"
+          "metin": "Eğitim merkezindeki bir simülasyon odasının adı"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Gecikme, bir olayın beklenen zamandan sonra gerçekleşmesidir."
     }
   ],

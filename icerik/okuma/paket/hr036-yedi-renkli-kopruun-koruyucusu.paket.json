@@ -65,14 +65,14 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 460,
+        "kelime_sayisi": 463,
         "tahmini_sure_dk": 6,
         "sayfa_sayisi": 5,
         "soru_sayisi": 4,
@@ -90,7 +90,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Köprünün ışığı solunca kasaba karanlıkta kaldı. Defne korkusuyla nasıl yüzleşti?",
+    "tanitim": "Köprünün ışığı solunca kasaba karanlıkta kaldı. {kahraman} korkusuyla nasıl yüzleşti?",
     "durum": "taslak",
     "fis_kodu": "HR-036"
   },
@@ -153,16 +153,15 @@
         },
         {
           "t": "metin",
-          "v": " hemen, \"Ben hiçbir şeyden korkmam!\" dedi.\n\nO sırada köprünün öbür ucundan küçük kardeşi "
+          "v": " hemen, \"Ben hiçbir şeyden korkmam!\" dedi.\n\nO sırada köprünün öbür ucundan "
         },
         {
-          "t": "yoldas",
-          "hal": "ilgi",
-          "yedek": "bir arkadaşın"
+          "t": "kahraman",
+          "hal": "ilgi"
         },
         {
           "t": "metin",
-          "v": " sesi geldi. \"Sis başladı!\" diye bağırıyordu."
+          "v": " küçük kardeşinin sesi geldi. \"Sis başladı!\" diye bağırıyordu."
         }
       ]
     },
@@ -199,7 +198,7 @@
         },
         {
           "t": "metin",
-          "v": " kontrol ettiler. Sis hafifleyene kadar beklediler. Sonra "
+          "v": "ları kontrol ettiler. Sis hafifleyene kadar beklediler. Sonra "
         },
         {
           "t": "kahraman",
@@ -232,7 +231,7 @@
         },
         {
           "t": "metin",
-          "v": " duydu ama geri dönmedi. Bekçi yanındaydı. Birlikte "
+          "v": "sunu duydu ama geri dönmedi. Bekçi yanındaydı. Birlikte "
         },
         {
           "t": "yoldas",
@@ -292,7 +291,24 @@
         },
         {
           "t": "metin",
-          "v": " başını salladı. \"Korktum ama rastgele koşarsam kayabilirdim. O yüzden seni bekledim.\" İki kardeş birbirlerine sarıldı. "
+          "v": " başını salladı. \"Korktum ama rastgele koşarsam kayabilirdim. O yüzden seni bekledim.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " ile "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " birbirlerine sarıldı. "
         },
         {
           "t": "kahraman",
@@ -362,15 +378,15 @@
         },
         {
           "id": "B",
-          "metin": "Mavi, mor, yeşil"
+          "metin": "Mavi, mor, yeşil, sarı ve kırmızı renkleri"
         },
         {
           "id": "C",
-          "metin": "Kuş, kedi, köpek"
+          "metin": "Kuş, kedi, köpek, tavşan ve at gibi hayvanları"
         },
         {
           "id": "D",
-          "metin": "Sis ve yağmur"
+          "metin": "Sis, yağmur, kar, dolu ve fırtınayı gösterdi"
         }
       ],
       "dogru": "A",
@@ -392,11 +408,11 @@
         },
         {
           "id": "C",
-          "metin": "Rüzgâr"
+          "metin": "Sisi dağıtan güçlü rüzgâr"
         },
         {
           "id": "D",
-          "metin": "Yedi çocuk"
+          "metin": "Köprüde oynayan yedi çocuk"
         }
       ],
       "dogru": "A",
@@ -406,27 +422,27 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 4,
-      "metin": "Defne'nin “cesaret korkmamak değilmiş” sözü ne anlatır?",
+      "metin": "Kahramanın “cesaret korkmamak değilmiş” sözü ne anlatır?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Cesaretin korkuyu fark edip doğru davranmak olduğunu"
+          "metin": "Hiç korkmadan her zaman öne atılmak gerektiğini"
         },
         {
           "id": "B",
-          "metin": "Hiç korkmamak gerektiğini"
+          "metin": "Cesaretin korkuyu fark edip doğru davranmak olduğunu"
         },
         {
           "id": "C",
-          "metin": "Köprünün kapandığını"
+          "metin": "Köprünün tamamen kapandığını ve artık geçilmediğini"
         },
         {
           "id": "D",
-          "metin": "Mert'in yanına gitmeyi"
+          "metin": "Bir arkadaşının yanına hemen ve dikkatsizce koşmayı"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Defne, korkuyu fark edip güvenli bir biçimde davranmanın cesaret olduğunu anladı."
+      "dogru": "B",
+      "aciklama": "Kahraman, korkuyu fark edip güvenli bir biçimde davranmanın cesaret olduğunu anladı."
     },
     {
       "id": "s4",
@@ -436,22 +452,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Düşmeyi önlemek için köprü kenarına konan parmaklık"
+          "metin": "Gece izlenen ve çok korkutucu olan bir film türü"
         },
         {
           "id": "B",
-          "metin": "Bir çeşit korku filmi"
+          "metin": "Her şeyden çekinen ve cesaret edemeyen kişi"
         },
         {
           "id": "C",
-          "metin": "Korkak bir kişi"
+          "metin": "Düşmeyi önlemek için köprü kenarına konan parmaklık"
         },
         {
           "id": "D",
-          "metin": "Bir köprü türü"
+          "metin": "Köprünün altında yaşayan bir hayvan türü"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Korkuluk, köprünün kenarında düşmeyi engelleyen parmaklıktır."
     }
   ],

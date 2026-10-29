@@ -1,0 +1,40 @@
+{
+ "kaynak_url": "https://tymm.meb.gov.tr/assets/pdf/ortaokul-turkce-dersi_20260902_111157_977.pdf",
+ "program_surumu": "Maarif Modeli Ortaokul Türkçe DÖP (8. sınıf bölümü, tymm 2026-09-02)",
+ "dogrulama": "2026-10-23 (K-0111): kodlar ve metinler tymm 2026-09-02 PDF metin katmanından çıkarıldı (PyMuPDF). Tire ile bölünmüş iki sözcük (tah-min, ya-pabilme) elle birleştirildi. 8. sınıfta 47 okuma/yazma/dinleme/konuşma kodu görüldü; aşağıda yalnız metinle ölçülebilen 24 kod kapsamda. Resmî teyit: program metniyle karşılaştırıldı; ayrı bir resmî kaynak ayrıca doğrulanmadı.",
+ "not": "2026-10-23 kapsam kararı (5. ve 7. sınıfla aynı ölçüt): yalnız metinle sınanabilen okuma (T.O) ve yazma (T.Y) kazanımları. Dinleme (T.D) ve konuşma (T.K) sesli performans gerektirir; kapsam_disi. Materyal seçimi, strateji ve süreç değerlendirme, görsel, özetleme, eleştiri, sınıflandırma (T.O), yaratıcı yazı, yorum, tartışma ve problem çözüm yazma (T.Y) tek soruyla ölçülemediği için kapsam dışıdır.",
+ "kazanimlar": [
+  {"kod": "T.O.8.3", "sinif": 8, "ders": "Türkçe", "metin": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.4", "sinif": 8, "ders": "Türkçe", "metin": "Metinde geçen anlamını bilmediği söz varlığı unsurlarının anlamını tahmin edebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.5", "sinif": 8, "ders": "Türkçe", "metin": "Metnin yüzey anlamını belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.7", "sinif": 8, "ders": "Türkçe", "metin": "Basit çıkarımlar yoluyla metnin derin anlamını belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.8", "sinif": 8, "ders": "Türkçe", "metin": "Üst düzey çıkarımlar yoluyla metnin derin anlamını belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.9", "sinif": 8, "ders": "Türkçe", "metin": "Okuduklarını karşılaştırabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.11", "sinif": 8, "ders": "Türkçe", "metin": "Metni yorumlayabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.12", "sinif": 8, "ders": "Türkçe", "metin": "Öyküleyici metinde hikâye unsurlarını belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.13", "sinif": 8, "ders": "Türkçe", "metin": "Bilgilendirici metinde metin yapılarından hareketle önemli bilgileri belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.14", "sinif": 8, "ders": "Türkçe", "metin": "Metnin anahtar kelimelerini belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.15", "sinif": 8, "ders": "Türkçe", "metin": "Metnin bölümlerini belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.16", "sinif": 8, "ders": "Türkçe", "metin": "Şiirin biçim özelliklerini belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.17", "sinif": 8, "ders": "Türkçe", "metin": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.18", "sinif": 8, "ders": "Türkçe", "metin": "Metindeki söz sanatlarını belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.19", "sinif": 8, "ders": "Türkçe", "metin": "Metinde kullanılan ikna tekniklerini belirlemeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.O.8.20", "sinif": 8, "ders": "Türkçe", "metin": "Metinden hareketle söz varlığını geliştirmeye yönelik çözümleme yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.8.7", "sinif": 8, "ders": "Türkçe", "metin": "Yazısında karşılaştırma yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.8.8", "sinif": 8, "ders": "Türkçe", "metin": "Yazısında sınıflandırma yapabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.8.15", "sinif": 8, "ders": "Türkçe", "metin": "Düşünceyi geliştirme yollarını kullanarak metni yapılandırabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.8.16", "sinif": 8, "ders": "Türkçe", "metin": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.8.17", "sinif": 8, "ders": "Türkçe", "metin": "Yazısında açık ve örtük ifadeleri kullanabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.8.18", "sinif": 8, "ders": "Türkçe", "metin": "İkna edici yazı yazabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.8.19", "sinif": 8, "ders": "Türkçe", "metin": "Uygun bağlantı ifadelerini kullanabilme", "surec_bilesenleri": []},
+  {"kod": "T.Y.8.20", "sinif": 8, "ders": "Türkçe", "metin": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme", "surec_bilesenleri": []}
+ ],
+ "kapsam_disi": [
+  {"kod": "T.D.8.1–T.D.8.20", "neden": "Dinleme/izleme kazanımları ses veya video gerektirir."},
+  {"kod": "T.K.8.1–T.K.8.21", "neden": "Konuşma kazanımları sözlü performans gerektirir."},
+  {"kod": "T.O.8.1, T.O.8.2, T.O.8.26", "neden": "Materyal seçimi, strateji ve süreç değerlendirme."},
+  {"kod": "T.O.8.6", "neden": "Görselle iletilen anlam: görsel gerektirir."},
+  {"kod": "T.O.8.10, T.O.8.21, T.O.8.22, T.O.8.23, T.O.8.24, T.O.8.25", "neden": "Sınıflandırma, özetleme, değerlendirme, sorgulama, eleştiri ve problem çözüm üretme; tek soruyla güvenilir ölçülemiyor (5. ve 7. sınıf kararıyla tutarlı)."},
+  {"kod": "T.Y.8.1–T.Y.8.6, T.Y.8.9–T.Y.8.14, T.Y.8.21", "neden": "Yazma süreci, çoklu ortam, yaratıcı üretim, yorum, değerlendirme, tartışma ve problem çözüm yazma; ürünü değil süreci ya da serbest üretimi ölçer."}
+ ]
+}

@@ -1,10 +1,8 @@
 import { IconArrowRight, IconInfo } from "@/components/landing/Icons";
+import { landingPrimaryBtn } from "@/components/landing/buttons";
 import { TrackedLink } from "@/components/analytics/TrackedLink";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
-
-const primaryBtn =
-  "inline-flex min-h-12 items-center justify-center gap-2 rounded-xl bg-brand-500 px-6 py-3 text-base font-bold text-white shadow-sm transition-colors hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 motion-reduce:transition-none";
 
 // Örnek veli raporu: gerçek bir öğrenciye ait değildir, etiketiyle birlikte gösterilir.
 const SAMPLE_SUBJECTS = [
@@ -31,7 +29,7 @@ export async function HeroSection() {
             href="/demo"
             olay="hero_cta_tiklandi"
             ozellik={{ konum: "ust" }}
-            className={primaryBtn}
+            className={landingPrimaryBtn}
           >
             {t("hero.ctaPrimary")}
             <IconArrowRight className="h-5 w-5" />
@@ -58,8 +56,8 @@ export async function HeroSection() {
           className="absolute inset-x-8 bottom-0 top-10 rounded-[3rem] bg-gold-100 dark:bg-gold-900/30"
         />
 
-        {/* Gerçek uygulama ekranı (soru ekranı) telefon çerçevesinde */}
-        <div className="relative mx-auto w-60 rounded-[2.4rem] bg-navy p-2.5 shadow-2xl sm:w-64">
+        {/* Gerçek uygulama ekranı (soru ekranı) telefon çerçevesinde. Giriş yalnız transform: LCP gecikmez. */}
+        <div className="relative mx-auto w-60 rounded-[2.4rem] bg-navy p-2.5 shadow-2xl motion-safe:animate-hupo-rise sm:w-64">
           <Image
             src="/landing/hero-soru.jpg"
             alt={t("hero.phoneAlt")}
@@ -77,13 +75,13 @@ export async function HeroSection() {
           alt={t("hero.mascotAlt")}
           width={713}
           height={760}
-          className="absolute -start-2 top-6 h-24 w-auto drop-shadow-md sm:-start-6 sm:h-28"
+          className="absolute -start-2 top-6 h-24 w-auto drop-shadow-md motion-safe:animate-hupo-mascot sm:-start-6 sm:h-28"
         />
 
         {/* ÖRNEK RAPOR: veli kartı, etiketi açıkça görünür */}
         <aside
           aria-label={t("hero.sampleLabel")}
-          className="absolute end-0 bottom-0 w-60 max-w-[calc(100%-1rem)] rounded-2xl bg-white p-4 shadow-xl ring-1 ring-cream-dark sm:-end-8 sm:w-64 dark:bg-gray-800 dark:ring-gray-700"
+          className="absolute end-0 bottom-0 w-60 max-w-[calc(100%-1rem)] rounded-2xl bg-white p-4 shadow-xl ring-1 ring-cream-dark motion-safe:animate-hupo-rise-late sm:-end-8 sm:w-64 dark:bg-gray-800 dark:ring-gray-700"
         >
           <div className="flex items-center justify-between gap-2">
             <span className="rounded-md bg-warning-100 px-2 py-0.5 text-[11px] font-extrabold tracking-wider text-warning-700">

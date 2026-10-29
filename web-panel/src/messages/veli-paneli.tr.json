@@ -36,6 +36,42 @@
       "title": "Henüz öğrenci bağlı değil",
       "text": "Öğrenci hesabını veli hesabınıza bağladığınızda çalışma istatistikleri burada görünecek."
     },
+    "sonrakiAdim": {
+      "title": "Sonraki adım",
+      "desc": "Hupo'yu çocuğunuzla birlikte kullanmaya başlamak için birkaç küçük adım kaldı. Her adımı istediğiniz zaman tamamlayabilirsiniz.",
+      "loading": "Sonraki adım hazırlanıyor...",
+      "error": "Sonraki adım bilgisi şu an yüklenemedi.",
+      "retry": "Yeniden dene",
+      "empty": "Şimdilik yapılacak bir adım görünmüyor.",
+      "ilerleme": "{toplam} adımdan {tamam} tanesi tamamlandı",
+      "durum": {
+        "tamam": "Tamamlandı",
+        "siradaki": "Sırada",
+        "bekliyor": "Bekliyor"
+      },
+      "adim": {
+        "cocuk_ekle": {
+          "baslik": "Çocuğunuzu ekleyin",
+          "aciklama": "Bir eşleştirme kodu oluşturun. Kod 24 saat geçerlidir.",
+          "cta": "Kod oluştur"
+        },
+        "eslestir": {
+          "baslik": "Çocuğunuzu bağlayın",
+          "aciklama": "Oluşturduğunuz kodu çocuğunuzun uygulamasında Ayarlar → Veline bağlan bölümüne girmesi yeterli.",
+          "cta": "Kod alanına git"
+        },
+        "ilk_ders": {
+          "baslik": "İlk dersi birlikte başlatın",
+          "aciklama": "Çocuğunuz ilk soruyu çözdüğünde ilerlemesi bu sayfada görünmeye başlar.",
+          "cta": "Öğrenci uygulamasını aç"
+        },
+        "deneme_veya_plan": {
+          "baslik": "Planı seçin",
+          "aciklama": "Planları inceleyip çocuğunuza uygun olanı seçebilirsiniz.",
+          "cta": "Planları incele"
+        }
+      }
+    },
     "cocukEkle": {
       "title": "Çocuğunuzu ekleyin",
       "desc": "Kodu oluşturun, çocuğunuz Hupolingo uygulamasında Ayarlar → Veline bağlan bölümüne yazsın. Kod 24 saat geçerli ve tek kullanımlık.",

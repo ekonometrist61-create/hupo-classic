@@ -25,7 +25,8 @@ test.describe("Mobil görünüm", () => {
 
   test("mobil menü açılıp kapanıyor", async ({ page }) => {
     await page.goto("/");
-    const menuDugmesi = page.locator("header button[aria-expanded]");
+    // "Giriş" açılır düğmesinin aria-label'ı yok; mobil menü düğmesinin var.
+    const menuDugmesi = page.locator("header button[aria-expanded][aria-label]:visible");
     await expect(menuDugmesi).toBeVisible();
     await expect(menuDugmesi).toHaveAttribute("aria-expanded", "false");
 

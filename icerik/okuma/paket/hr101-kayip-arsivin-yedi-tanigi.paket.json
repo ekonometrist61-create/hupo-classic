@@ -78,14 +78,14 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 4082,
+        "kelime_sayisi": 4085,
         "tahmini_sure_dk": 31,
         "sayfa_sayisi": 32,
         "soru_sayisi": 5,
@@ -105,7 +105,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Bir fotoğrafın arkasındaki tarih doğru mu? Yedi tanık yedi ayrı şey anlatınca Elif ve Bora kesin cevabı değil, kanıtın sınırını öğrenir.",
+    "tanitim": "Bir fotoğrafın arkasındaki tarih doğru mu? Yedi tanık yedi ayrı şey anlatınca {kahraman} ile {yoldas:yalin|bir arkadaşı} kanıtın sınırını öğrenir.",
     "durum": "taslak",
     "fis_kodu": "HR-101"
   },
@@ -1310,7 +1310,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Açılış günü yaşlı bir ziyaretçi panonun önünde uzun süre durdu. Fotoğrafta görünmüyordu; köprünün o günkü kalabalığını da hatırlamıyordu. Fakat alt yazıya eklenen “tarih kesinleşmedi” ifadesinin yanına konmuş kaynak notlarını tek tek okudu. “Demek eskiden fotoğrafları yalnızca albüme koymuyorlarmış,” dedi. "
+          "v": "Sergi açık olduğu günlerden birinde yaşlı bir ziyaretçi panonun önünde uzun süre durdu. Fotoğrafta görünmüyordu; köprünün o günkü kalabalığını da hatırlamıyordu. Fakat alt yazıya eklenen “tarih kesinleşmedi” ifadesinin yanına konmuş kaynak notlarını tek tek okudu. “Demek eskiden fotoğrafları yalnızca albüme koymuyorlarmış,” dedi. "
         },
         {
           "t": "kahraman",
@@ -1380,11 +1380,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "12 Mayıs 1984"
+          "metin": "12 Mayıs 1974"
         },
         {
           "id": "B",
-          "metin": "12 Mayıs 1974"
+          "metin": "12 Mayıs 1984"
         },
         {
           "id": "C",
@@ -1395,7 +1395,7 @@
           "metin": "Tarih yazmıyordu"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Fotoğraflardan biri 12 Mayıs 1984 tarihiyle etiketlenmişti."
     },
     {
@@ -1410,29 +1410,29 @@
         },
         {
           "id": "B",
-          "metin": "Kopyalama ya da basım tarihini"
+          "metin": "Fotoğrafçının doğum tarihini"
         },
         {
           "id": "C",
-          "metin": "Fotoğrafçının doğum tarihini"
+          "metin": "Kopyalama ya da basım tarihini"
         },
         {
           "id": "D",
           "metin": "Köprünün yapım tarihini"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Arka yazı, daha sonra basılan kopyanın üzerinde olabilir; bu yüzden çekim tarihini kesin olarak göstermeyebilir."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 12,
-      "metin": "Tanıkların anlatıları farklı çıkınca Bora ne önerdi?",
+      "metin": "Tanıkların anlatıları farklı çıkınca yoldaş ne önerdi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Tanıkların hepsini sergiden çıkarmayı"
+          "metin": "Tanıkların hepsini sergiden çıkarıp yalnızca kesin tarihli belgeleri göstermeyi"
         },
         {
           "id": "B",
@@ -1440,15 +1440,15 @@
         },
         {
           "id": "C",
-          "metin": "Yalnızca ilk tanığı dinlemeyi"
+          "metin": "Yalnızca ilk tanığın anlatısını dinleyip diğerlerini hiç dikkate almamayı"
         },
         {
           "id": "D",
-          "metin": "Fotoğrafın arkasını tamamen silmeyi"
+          "metin": "Fotoğrafın arkasındaki bütün yazıları tamamen silip ayrıntıları gizlemeyi"
         }
       ],
       "dogru": "B",
-      "aciklama": "Bora, gözlem, duyum, çıkarım ve tarih belirsiz etiketleriyle her anlatının hangi bilgiye dayandığını göstermeyi önerdi."
+      "aciklama": "Yoldaş, gözlem, duyum, çıkarım ve tarih belirsiz etiketleriyle her anlatının hangi bilgiye dayandığını göstermeyi önerdi."
     },
     {
       "id": "s4",
@@ -1462,15 +1462,15 @@
         },
         {
           "id": "B",
-          "metin": "Bir fotoğrafın kopyası"
+          "metin": "Aynı fotoğrafın yeniden basılmış bir kopyası"
         },
         {
           "id": "C",
-          "metin": "Sergi için yapılan bir afiş"
+          "metin": "Sergi için hazırlanmış büyük bir tanıtım afişi"
         },
         {
           "id": "D",
-          "metin": "Bir köprünün adı"
+          "metin": "Şehirdeki eski bir köprünün resmî adı"
         }
       ],
       "dogru": "A",
@@ -1488,15 +1488,15 @@
         },
         {
           "id": "B",
-          "metin": "Her kanıt kesin tarihi gösterir"
+          "metin": "Her kanıt kesin tarihi gösterir ve araştırma bu yüzden hemen biter"
         },
         {
           "id": "C",
-          "metin": "Kanıt yalnızca yazılı belgelerden oluşur"
+          "metin": "Kanıt yalnızca yazılı belgelerden oluşur, sözlü anlatılar hiçbir değer taşımaz"
         },
         {
           "id": "D",
-          "metin": "Kanıtlar araştırmada önemsizdir"
+          "metin": "Kanıtlar araştırmada önemsizdir; tanıkların sözleri tek başına yeterlidir"
         }
       ],
       "dogru": "A",

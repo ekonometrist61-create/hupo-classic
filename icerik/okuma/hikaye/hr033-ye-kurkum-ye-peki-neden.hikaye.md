@@ -32,13 +32,13 @@ etiketler:
     - {id: deyim_hr033, tur: idiom, etiket: "Dış görünüşe aldanmak", yuva: hr033_dis_gorunus, islev: application}
     - {id: kavram_hr033, tur: concept, etiket: "Görünüş ile değer; önyargı ve saygı", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 3, metin: "Hoca çorbayı kime ikram etmek istedi?", secenekler: [{id: A, metin: "Kürküne"}, {id: B, metin: "Kendisine"}, {id: C, metin: "Görevliye"}, {id: D, metin: "Zeynep'e"}], dogru: A, aciklama: "Hoca kürkünün kolunu kâseye uzatıp “Ye kürküm ye!” dedi."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Efe'ye göre çorba neden önce kürke ikram edildi?", secenekler: [{id: A, metin: "Kürkü görünce Hoca'yı önemli sandıkları için"}, {id: B, metin: "Hoca çok acıkmıştı"}, {id: C, metin: "Kürk sofrada en önce gelmişti"}, {id: D, metin: "Görevli Hoca'yı tanıyordu"}], dogru: A, aciklama: "Efe, insanların Hoca'yı giysisine göre önemli sandığını söyledi."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Hoca'nın bu sorusu neyi sorgular?", secenekler: [{id: A, metin: "İnsanın değerinin giysisine göre ölçülüp ölçülmemesini"}, {id: B, metin: "Kürkün çorbayı içip içmediğini"}, {id: C, metin: "Eve dönmenin gerekliliğini"}, {id: D, metin: "Pazarın kurulduğunu"}], dogru: A, aciklama: "Hoca, saygının giysiyle ölçülüp ölçülmediğini düşündürür."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen gösterişli sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Dikkat çekmek için süslü, gösterişe düşkün"}, {id: B, metin: "Çok eski"}, {id: C, metin: "Yavaş"}, {id: D, metin: "Küçük"}], dogru: A, aciklama: "Gösterişli, dikkat çekecek kadar süslü olan demektir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 3, metin: "Hoca çorbayı kime ikram etmek istedi?", secenekler: [{id: A, metin: "Kendisine"}, {id: B, metin: "Görevliye"}, {id: C, metin: "Çocuğa"}, {id: D, metin: "Kürküne"}], dogru: D, aciklama: "Hoca kürkünün kolunu kâseye uzatıp “Ye kürküm ye!” dedi."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Efe'ye göre çorba neden önce kürke ikram edildi?", secenekler: [{id: A, metin: "Hoca o an çok acıkmış ve sabırsızlanmıştı"}, {id: B, metin: "Kürkü görünce Hoca'yı önemli sandıkları için"}, {id: C, metin: "Kürk, sofrada en önce gelen misafirdi"}, {id: D, metin: "Görevli, Hoca'yı daha önceden tanıyordu"}], dogru: B, aciklama: "Efe, insanların Hoca'yı giysisine göre önemli sandığını söyledi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Hoca'nın bu sorusu neyi sorgular?", secenekler: [{id: A, metin: "İnsanın değerinin giysisine göre ölçülüp ölçülmemesini"}, {id: B, metin: "Çorbanın yeterince sıcak olup olmadığının önemini"}, {id: C, metin: "Eve dönüp kürkünü temizlemenin gerekliliğini"}, {id: D, metin: "Pazarın hangi saatte kurulduğunu ve kimlerin geldiğini"}], dogru: A, aciklama: "Hoca, saygının giysiyle ölçülüp ölçülmediğini düşündürür."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen gösterişli sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Uzun zamandır giyilmemiş ve eskimiş"}, {id: B, metin: "Hareketleri yavaş, ağır başlı olan"}, {id: C, metin: "Boyu ve yapısı küçük, az yer kaplayan"}, {id: D, metin: "Dikkat çekmek için süslü, gösterişe düşkün"}], dogru: D, aciklama: "Gösterişli, dikkat çekecek kadar süslü olan demektir."}
 deyim_cumleleri:
   hr033_dis_gorunus: "\"Dış görünüşe aldanmak, insanı tanımadan karar vermekmiş.\""
 ---

@@ -34,10 +34,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (7. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kütüphaneci Fikret Bey kitapların yer değiştirmesinin neden olabileceğini düşünüyordu?", secenekler: [{id: A, metin: "Temizlik sırasında"}, {id: B, metin: "Deprem"}, {id: C, metin: "Hırsızlık"}, {id: D, metin: "Yeni raf yapımı"}], dogru: A, aciklama: "Fikret Bey, değişikliğin temizlik sırasında olabileceğini söylemişti."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Bu soru hangi düşünceyi taşır?", secenekler: [{id: A, metin: "Anlatıcı her şeyi bilmeyebilir; bir karakterin içinden geçenleri herkes bilemez"}, {id: B, metin: "Anlatıcı her şeyi kesin bilir"}, {id: C, metin: "Kitaplar hiç okunmamalıdır"}, {id: D, metin: "Işıklar kapatılmalıdır"}], dogru: A, aciklama: "Anlatıcının bildiği ile karakterlerin düşündüklerini ayırmak gerekir."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Nisan'ın bu sözüne göre aynı olayın farklı anlatılması neyi gösterir?", secenekler: [{id: A, metin: "Farklı bakış açılarının olması, birinin kötü olduğu anlamına gelmez"}, {id: B, metin: "Karakterlerden biri kesinlikle kötüdür"}, {id: C, metin: "Olay hiç yaşanmamıştır"}, {id: D, metin: "Anlatıcılar birbirine kızgındır"}], dogru: A, aciklama: "Farklı anlatımlar, olayın farklı yönlerden görülmesinden kaynaklanabilir."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen ögeler ne anlama gelir?", secenekler: [{id: A, metin: "Bir yapıtı oluşturan parçalar, unsurlar"}, {id: B, metin: "Bir tür raf"}, {id: C, metin: "Bir çeşit lamba"}, {id: D, metin: "Bir oyun kartı"}], dogru: A, aciklama: "Öge, bir yapıtın bileşenlerinden biridir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kütüphaneci Fikret Bey kitapların yer değiştirmesinin neden olabileceğini düşünüyordu?", secenekler: [{id: A, metin: "Deprem"}, {id: B, metin: "Hırsızlık"}, {id: C, metin: "Yeni raf yapımı"}, {id: D, metin: "Temizlik sırasında"}], dogru: D, aciklama: "Fikret Bey, değişikliğin temizlik sırasında olabileceğini söylemişti."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Yoldaşın “Herkesin içinden ne geçtiğini nereden biliyor?” sorusu hangi düşünceyi taşır?", secenekler: [{id: A, metin: "Anlatıcı her şeyi bilmeyebilir; bir karakterin içinden geçenleri herkes bilemez"}, {id: B, metin: "Anlatıcı her şeyi kesin bilir; karakterlerin içinden geçenler de ona açıktır"}, {id: C, metin: "Kitaplar, yalnız öğretmenin onayladığı bir listeden seçilerek okunmalıdır"}, {id: D, metin: "Gece kütüphanede okumak her zaman daha doğru bir yöntemdir"}], dogru: A, aciklama: "Anlatıcının bildiği ile karakterlerin düşündüklerini ayırmak gerekir."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Yoldaşın bu sözüne göre aynı olayın farklı anlatılması neyi gösterir?", secenekler: [{id: A, metin: "Karakterlerden biri kesinlikle kötüdür ve metin bunu açıkça söyler"}, {id: B, metin: "Farklı bakış açılarının olması, birinin kötü olduğu anlamına gelmez"}, {id: C, metin: "Bütün anlatıcılar olayı kesin olarak görmüş ve aynı şekilde hatırlamıştır"}, {id: D, metin: "Anlatıcılar birbirine kızgındır ve aralarındaki çatışma hikâyeyi bozar"}], dogru: B, aciklama: "Farklı anlatımlar, olayın farklı yönlerden görülmesinden kaynaklanabilir."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen ögeler ne anlama gelir?", secenekler: [{id: A, metin: "Kitapların konduğu, kolayca taşınabilen küçük bir masa"}, {id: B, metin: "Gece okuma sırasında ışık veren eski bir lamba türü"}, {id: C, metin: "Bir yapıtı oluşturan parçalar, unsurlar"}, {id: D, metin: "Okuma oyununda kullanılan bir tür oyun kartı"}], dogru: C, aciklama: "Öge, bir yapıtın bileşenlerinden biridir."}
 deyim_cumleleri:
   hr090_gozu: "İlkinde “Gözüm karardı, sanki bütün ışıklar sönmüştü” diyordu; böylece kendi duygusunu anlatmış oluyordu."
 ---
@@ -108,7 +108,7 @@ Işıkların konumu değişince gölgenin bir kitap ayraçlığından geldiği o
 {kahraman} ayraçlığın altındaki etiketi okudu. Eski bir edebiyat kulübü armağanıymış. Üzerinde “Karanlığa hükmetmek için önce ışığın yönünü öğren” yazıyordu. **Bu bir bilim cümlesi değildi; edebî bir benzetmeydi**. {kahraman} anlamını düşündü. Belki de hikâyeler bize yalnız olayları değil, olaylara hangi açıdan bakabileceğimizi hatırlatıyordu.
 ---
 @omurga
-İlk kitapta ormana giren kızın hikâyesi anlatılıyordu. Kız, uzaktan duyduğu sesleri dev sanıyor, dalların hareketini kendisine karşı kurulan bir plan gibi yorumluyordu. Birkaç sayfa sonra aynı olay, ormanda kaybolmuş küçük bir köpeğin bakış açısından anlatılıyordu. Köpek insanlardan korkuyordu; dev sandığı sesler ise yağmurdan korunmak için devrilen dallardı.
+İlk kitapta ormana giren kızın hikâyesi anlatılıyordu. Kız, uzaktan duyduğu sesleri dev sanıyor, dalların hareketini kendisine karşı kurulan bir plan gibi yorumluyordu. Birkaç sayfa sonra aynı olay, ormanda kaybolmuş küçük bir köpeğin bakış açısından anlatılıyordu. Köpek insanlardan korkuyordu; kızın dev sandığı sesler ise rüzgârda devrilen dalların gürültüsüydü.
 
 {yoldas:yalin|bir arkadaş} iki bölümün altını çizdi. “İki anlatıcı aynı olaya başka anlam veriyor,” dedi. “Hiçbiri bütün resmi görmüyor.”
 
@@ -182,7 +182,7 @@ Fikret Bey oyunun sonunda bir kutu açtı. İçinde ödül olarak altın para ya
 @omurga
 Ertesi hafta okulun koridoruna yeni bir duyuru asıldı: Kütüphanede “İki Kapı, İki Son” adlı bir okuma oyunu düzenlenecekti. {kahraman}, {yoldas:yalin|bir arkadaş} ve Bora bu kez oyunu hazırlayan ekipteydi. Her biri aynı başlangıçtan iki farklı son yazacaktı. Ancak kurgu sonlar, ilk bölümde verilmiş ipuçlarını görmezden gelemeyecekti.
 
-Hikâyenin açılışında okuldan eve dönen bir çocuk, kapısının önünde ıslanmış bir zarf buluyordu. Zarfın üzerinde yalnız “Doğru yere ulaştır” yazıyordu. Bora ilk sonu yazdı: Zarfta gizli hazine haritası vardır; çocuğu uzak bir adaya götürür. {yoldas:yalin|bir arkadaş} ise başka bir son kurdu: Zarf, yıllar önce yazılmış bir teşekkür mektubudur ve adresi değişen bir komşuya aittir.
+Hikâyenin açılışında okuldan eve dönen bir çocuk, kapısının önünde ıslanmış bir zarf buluyordu. Zarfın üzerinde “Doğru yere ulaştır” yazıyordu. Bora ilk sonu yazdı: Zarfta gizli hazine haritası vardır; çocuğu uzak bir adaya götürür. {yoldas:yalin|bir arkadaş} ise başka bir son kurdu: Zarf, yıllar önce yazılmış bir teşekkür mektubudur ve adresi değişen bir komşuya aittir.
 
 {kahraman} iki sonu da beğendi, ama bir noktaya takıldı. Başlangıçta zarfın üzerinde okul arması bulunuyordu. Uzak ada hikâyesinde bu arma hiç açıklanmıyordu. Bora, “Yazarın açıklamak zorunda olduğu her ayrıntı var mı?” diye sordu.
 ---
@@ -217,7 +217,7 @@ Defne onları bir de kütüphane arşivine götürmek istedi, fakat arşiv odas�
 @omurga
 “Ama iyi ki var,” dedi {yoldas:yalin|bir arkadaş}. “Hikâyeler hayal gücüyle ilerleyebilir. Emanet kitaplar ise dikkatli bir düzenle korunur.”
 
-Üçü o gün odadan çıkarken karton pusulayı eski yerine koydu. {kahraman} bir zamanlar onun kimin bıraktığını çözmeye çalışıyordu. Şimdi pusula, okudukları her sayfada yeniden yön bulmanın simgesine dönüşmüştü. Kimse gizli rafın kendilerine büyük bir sır verdiğini söylemedi. Ama orada seçtikleri bir kitabı başka bir okura tanıtmak için gönüllü oldular. Kendi maceralarının en iyi devamı belki de bir başkasını okumaya davet etmekti.
+Üçü o gün odadan çıkarken tahta pusulayı eski yerine koydu. {kahraman} bir zamanlar onun kimin bıraktığını çözmeye çalışıyordu. Şimdi pusula, okudukları her sayfada yeniden yön bulmanın simgesine dönüşmüştü. Kimse gizli rafın kendilerine büyük bir sır verdiğini söylemedi. Ama orada seçtikleri bir kitabı başka bir okura tanıtmak için gönüllü oldular. Kendi maceralarının en iyi devamı belki de bir başkasını okumaya davet etmekti.
 ---
 @omurga
 Kulüp üyeleri şenlik sonrasındaki hafta, okudukları kitaplardan kısa bölümleri seslendirmek için bir çalışma düzenledi. Fakat herkes aynı parçayı farklı vurgularla okuyunca metinlerin duygu tonu değişiyordu. Bora bir cümleyi alaycı, {yoldas:yalin|bir arkadaş} kaygılı, {kahraman} ise sakin bir sesle okudu. Küçük dinleyicilerden bazıları Bora'nın okuduğu karakterin kötü niyetli olduğunu düşündü. Oysa metinde böyle kesin bir bilgi bulunmuyordu.

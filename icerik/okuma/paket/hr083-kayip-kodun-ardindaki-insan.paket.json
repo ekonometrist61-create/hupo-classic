@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3591,
+        "kelime_sayisi": 3593,
         "tahmini_sure_dk": 29,
         "sayfa_sayisi": 26,
         "soru_sayisi": 4,
@@ -338,7 +338,7 @@
         },
         {
           "t": "metin",
-          "v": ", “Demek kod bazen iki farklı şeyi aynı şey sanabilir,” diye karşılık verdi. Aras onu düzeltti: “Kod kendi kendine sanmaz; nasıl tasarlandığına göre işlem yapar.”"
+          "v": ", “Demek kod bazen iki farklı şeyi aynı şey sanabilir,” diye karşılık verdi. Aras onu düzeltti: “Kod kendi kendine bir şey sanmaz; nasıl tasarlandığına göre işlem yapar.”"
         }
       ]
     },
@@ -1037,7 +1037,7 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Defne'nin fark ettiği ilk garip değişiklik neydi?",
+      "metin": "Kahramanın fark ettiği ilk garip değişiklik neydi?",
       "secenekler": [
         {
           "id": "A",
@@ -1045,19 +1045,19 @@
         },
         {
           "id": "B",
-          "metin": "Kitapların hepsinin kaybolması"
+          "metin": "Kütüphanedeki bütün kitapların bir gecede kaybolması"
         },
         {
           "id": "C",
-          "metin": "Kütüphanenin kapanması"
+          "metin": "Kütüphanenin hafta sonu erken kapanmaya başlaması"
         },
         {
           "id": "D",
-          "metin": "Raf numaralarının silinmesi"
+          "metin": "Ödünç alınan kitapların iade tarihlerinin silinmesi"
         }
       ],
       "dogru": "A",
-      "aciklama": "Defne, ayırttığı bilim kurgu kitabının masal kategorisinde göründüğünü fark etti."
+      "aciklama": "Kahraman, ayırttığı bilim kurgu kitabının masal kategorisinde göründüğünü fark etti."
     },
     {
       "id": "s2",
@@ -1071,15 +1071,15 @@
         },
         {
           "id": "B",
-          "metin": "İkisi tamamen aynıdır"
+          "metin": "İkisi aynı görevi yapar; öneri ile katalog birbirinin yerine geçer"
         },
         {
           "id": "C",
-          "metin": "Öneri motoru raf numarasını belirler"
+          "metin": "Öneri motoru kitabın raf numarasını ve konumunu her gün yeniden belirler"
         },
         {
           "id": "D",
-          "metin": "Katalog yalnız öneri yapar"
+          "metin": "Katalog yalnız öneri yapar, kitabın konumunu hiçbir zaman göstermez"
         }
       ],
       "dogru": "A",
@@ -1089,26 +1089,26 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 7,
-      "metin": "Defne'nin bu sözü neyi vurgular?",
+      "metin": "Kahramanın “Aynı etkinlikte tanıtılmaları, değişikliğin nedeni olduğunu göstermiyor.” sözü neyi vurgular?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Ortak bir özellik, tek başına neden-sonuç kanıtı değildir"
+          "metin": "Etkinliğe katılan öğrenciler değişikliklerin asıl sorumlusudur"
         },
         {
           "id": "B",
-          "metin": "Etkinlik kesinlikle suçludur"
+          "metin": "Kitapların etkinlikte tanıtılması hiçbir zaman yapılmamalıdır"
         },
         {
           "id": "C",
-          "metin": "Kitaplar hiç tanıtılmamalıdır"
+          "metin": "Ortak bir özellik, tek başına neden-sonuç kanıtı değildir"
         },
         {
           "id": "D",
-          "metin": "Değişiklik bir kullanıcının kararıdır"
+          "metin": "Değişikliği bir kullanıcının kasıtlı kararı olarak görmek gerekir"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "İki olayın aynı ortak özelliği paylaşması, birinin diğerinin nedeni olduğunu kanıtlamaz."
     },
     {
@@ -1119,22 +1119,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kitapların konu, tür ve raf düzenine göre gruplandırılması"
+          "metin": "Kitap kapaklarının renklerine göre dizilmesi ve süslenmesi"
         },
         {
           "id": "B",
-          "metin": "Bir tür kitap kapağı"
+          "metin": "Kitapların konu, tür ve raf düzenine göre gruplandırılması"
         },
         {
           "id": "C",
-          "metin": "Bir bilgisayar programı"
+          "metin": "Kitapların ödünç alma süresini belirleyen bir yazılım"
         },
         {
           "id": "D",
-          "metin": "Bir okuma yarışması"
+          "metin": "Öğrencilerin en çok okuduğu kitapları seçen bir yarışma"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Sınıflandırma, kitapların düzenli gruplara ayrılmasıdır."
     }
   ],

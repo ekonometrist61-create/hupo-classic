@@ -71,7 +71,7 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
@@ -244,7 +244,7 @@
         },
         {
           "t": "metin",
-          "v": ", \"Biz de bazen telefonu bir kenara koyup konuşuyoruz,\" diye cevap verdi. \"Demek bazı gelenekler bugün de devam ediyor.\"\n\nTrenin üçüncü durağı Gaziantep'ti. Burada teyzesi Ayla, onlara renkli bir pazar gezdirdi. "
+          "v": ", \"Biz de bazen telefonu bir kenara koyup konuşuyoruz,\" diye cevap verdi. \"Demek bazı gelenekler bugün de devam ediyor.\"\n\nTrenin üçüncü durağı Gaziantep'ti. Burada Ayla teyze, onlara renkli bir pazar gezdirdi. "
         },
         {
           "t": "kelime",
@@ -354,7 +354,7 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 2,
-      "metin": "İlk durakta Defne hangi yemeği gördü?",
+      "metin": "İlk durakta kahraman hangi yemeği gördü?",
       "secenekler": [
         {
           "id": "A",
@@ -374,47 +374,47 @@
         }
       ],
       "dogru": "A",
-      "aciklama": "İlk durakta Banu teyze sofraya çibörek koydu."
+      "aciklama": "İlk durakta ev sahibi sofraya çibörek koydu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Banu teyze'ye göre yemekler neden değişir?",
+      "metin": "Ev sahibine göre yemekler neden değişir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "İnsanlarla birlikte bir yerden başka yere taşınırken"
-        },
-        {
-          "id": "B",
           "metin": "Ateşte kaldıkları için"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Tarlada büyüdükleri için"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Hiç değişmezler"
+        },
+        {
+          "id": "D",
+          "metin": "İnsanlarla birlikte bir yerden başka yere taşınırken"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Yemekler, insanlarla birlikte yolculuk ederken yeni biçimler alır."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 6,
-      "metin": "Defne'ye göre sofralarda ortak olan şey nedir?",
+      "metin": "Kahramana göre sofralarda ortak olan şey nedir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Misafire yer açmak"
+          "metin": "Aynı yemeği yemek"
         },
         {
           "id": "B",
-          "metin": "Aynı yemeği yemek"
+          "metin": "Misafire yer açmak"
         },
         {
           "id": "C",
@@ -425,8 +425,8 @@
           "metin": "Aynı kalemi kullanmak"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Defne, her yerde misafire yer açıldığını fark etti."
+      "dogru": "B",
+      "aciklama": "Kahraman, her yerde misafire yer açıldığını fark etti."
     },
     {
       "id": "s4",
@@ -436,22 +436,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yemeklere tat ve koku veren bitkisel tozlar ya da çeşniler"
-        },
-        {
-          "id": "B",
           "metin": "Bir çeşit çiçek"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Renkli bir kumaş"
+        },
+        {
+          "id": "C",
+          "metin": "Yemeklere tat ve koku veren bitkisel tozlar ya da çeşniler"
         },
         {
           "id": "D",
           "metin": "Bir pazarın adı"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Baharat, yemeklere tat ve koku veren maddelerdir."
     }
   ],

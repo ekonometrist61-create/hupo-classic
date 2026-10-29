@@ -1,7 +1,6 @@
 import PageBreadcrumb from "@/components/common/PageBreadCrumb";
-import GoalsView from "@/components/veli-paneli/GoalsView";
+import GoalsScope from "@/components/veli-paneli/GoalsScope";
 import VeliMessage from "@/components/veli-paneli/VeliMessage";
-import ChildScope from "@/components/veli-paneli/ChildScope";
 import { redirect } from "@/i18n/navigation";
 import { loadVeliAccess } from "@/lib/veli-paneli/access";
 import { getTranslations, setRequestLocale } from "next-intl/server";
@@ -31,14 +30,7 @@ export default async function HedeflerPage({
 
   let body: React.ReactNode;
   if (access.kind === "ok") {
-    body = (
-      <ChildScope
-        students={access.students}
-        render={(studentId, data) => (
-          <GoalsView studentId={studentId} haftalik={data.haftalik} />
-        )}
-      />
-    );
+    body = <GoalsScope students={access.students} />;
   } else if (access.kind === "error") {
     body = <VeliMessage text={t("error")} />;
   } else {

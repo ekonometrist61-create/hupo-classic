@@ -11,7 +11,7 @@ dunya_tipi: masalsi
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Bir gök olayının iki farklı tarihi var. Leyla, kaynakların güvenilirliğini ve neden korunması gerektiğini araştırırken kütüphanenin sırlarını öğrenir."
+tanitim: "Bir gök olayının iki farklı tarihi var. {kahraman}, kaynakların güvenilirliğini ve neden korunması gerektiğini araştırırken kütüphanenin sırlarını öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -33,14 +33,14 @@ etiketler:
     - {id: deyim_hr114, tur: idiom, etiket: "Paniğe kapılmak", yuva: hr114_panik, islev: application}
     - {id: kavram_hr114, tur: concept, etiket: "Kaynağın güvenilirliğini sınamak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Birinci kayda göre gök olayı hangi yılda gerçekleşmişti?", secenekler: [{id: A, metin: "2069"}, {id: B, metin: "2071"}, {id: C, metin: "2091"}, {id: D, metin: "2075"}], dogru: A, aciklama: "Birinci kayıtta olay 2069 yılında gerçekleşmiş olarak yazıyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Leyla'nın bu sözüne göre bir kaydın en yeni olması ne anlama gelir?", secenekler: [{id: A, metin: "Mutlaka doğru olduğu anlamına gelir"}, {id: B, metin: "Mutlaka doğru olduğu anlamına gelmez"}, {id: C, metin: "Kaynağın basılı olduğu anlamına gelir"}, {id: D, metin: "Hiçbir değişiklik yapılmadığı anlamına gelir"}], dogru: B, aciklama: "Yeni güncellenmiş bir kayıt da yanlış olabilir; yenilik doğruluğun garantisi değildir."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Suna'ya göre bir kaydın basılı olması neyi garanti etmez?", secenekler: [{id: A, metin: "Kaydın kolay okunmasını"}, {id: B, metin: "Kaydın kusursuz olduğunu"}, {id: C, metin: "Kaydın uzun süre saklanmasını"}, {id: D, metin: "Kaydın bir kütüphanede bulunmasını"}], dogru: B, aciklama: "Basılı bir kayıt da hatalı olabilir; basılı olması onu kusursuz yapmaz."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 17, metin: "Metinde “boşluk” sözcüğü bu bağlamda ne anlatır?", secenekler: [{id: A, metin: "Kütüphanedeki boş bir raf"}, {id: B, metin: "Kaynağı doğrulanamadığı için eksik kalan bilgi"}, {id: C, metin: "Bir sayfanın kenarındaki boşluk"}, {id: D, metin: "Arşivin kapalı olduğu gün"}], dogru: B, aciklama: "Bu bağlamda boşluk, kaynağı doğrulanamadığı için kesin bilgi olarak sunulmayan bir eksikliği anlatır."}
-  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 17, metin: "Leyla'ya göre açıklanmış bir boşluk neden değerlidir?", secenekler: [{id: A, metin: "Herkesin dikkatini çektiği için"}, {id: B, metin: "Yanlış bir cevap yerine hangi sorunun açık olduğunu gösterdiği için"}, {id: C, metin: "Arşivde yer kapladığı için"}, {id: D, metin: "Kimsenin okumadığı bir bilgi olduğu için"}], dogru: B, aciklama: "Açıklanmış bir boşluk, yanlış bir cevap vermek yerine hangi sorunun hâlâ açık olduğunu gösterir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Birinci kayda göre gök olayı hangi yılda gerçekleşmişti?", secenekler: [{id: A, metin: "2071"}, {id: B, metin: "2091"}, {id: C, metin: "2069"}, {id: D, metin: "2075"}], dogru: C, aciklama: "Birinci kayıtta olay 2069 yılında gerçekleşmiş olarak yazıyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 1, metin: "Kahramanın bu sözüne göre bir kaydın en yeni olması ne anlama gelir?", secenekler: [{id: A, metin: "Mutlaka doğru olduğu anlamına gelir"}, {id: B, metin: "Kaynağın basılı olduğu anlamına gelir"}, {id: C, metin: "Hiçbir değişiklik yapılmadığı anlamına gelir"}, {id: D, metin: "Mutlaka doğru olduğu anlamına gelmez"}], dogru: D, aciklama: "Yeni güncellenmiş bir kayıt da yanlış olabilir; yenilik doğruluğun garantisi değildir."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Suna'ya göre bir kaydın basılı olması neyi garanti etmez?", secenekler: [{id: A, metin: "Kaydın kolay okunmasını"}, {id: B, metin: "Kaydın uzun süre saklanmasını"}, {id: C, metin: "Kaydın kusursuz olduğunu"}, {id: D, metin: "Kaydın bir kütüphanede bulunmasını"}], dogru: C, aciklama: "Basılı bir kayıt da hatalı olabilir; basılı olması onu kusursuz yapmaz."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 17, metin: "Metinde “boşluk” sözcüğü bu bağlamda ne anlatır?", secenekler: [{id: A, metin: "Kütüphanedeki boş bir rafın yerini gösteren işaret"}, {id: B, metin: "Bir sayfanın kenarında bırakılmış geniş boş alan"}, {id: C, metin: "Arşiv görevlisinin tatilde olmasından doğan bir gecikme"}, {id: D, metin: "Kaynağı doğrulanamadığı için eksik kalan bilgi"}], dogru: D, aciklama: "Bu bağlamda boşluk, kaynağı doğrulanamadığı için kesin bilgi olarak sunulmayan bir eksikliği anlatır."}
+  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 17, metin: "Kahramana göre açıklanmış bir boşluk neden değerlidir?", secenekler: [{id: A, metin: "Yanlış bir cevap yerine hangi sorunun açık olduğunu gösterdiği için"}, {id: B, metin: "Herkesin dikkatini çektiği ve uzun süre tartışıldığı için"}, {id: C, metin: "Arşivde çok yer kapladığı ve sürekli düzenlenmesi gerektiği için"}, {id: D, metin: "Kimsenin okumadığı bir bilgi olarak uzun süre saklandığı için"}], dogru: A, aciklama: "Açıklanmış bir boşluk, yanlış bir cevap vermek yerine hangi sorunun hâlâ açık olduğunu gösterir."}
 deyim_cumleleri:
   hr114_panik: "{kahraman} paniğe kapıldı."
 ---

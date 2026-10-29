@@ -1,0 +1,555 @@
+[
+ {
+  "id": "FEN5-001",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.1.1",
+  "surec_bileseni": "c",
+  "konu": "Güneş, Dünya ve Ay",
+  "alt_konu": "Güneş’in dönme hareketi",
+  "soru_metni": "Elif, bir uzay gözlem kurumunun yayımladığı Güneş fotoğraflarını inceliyor. Fotoğraflarda aynı koyu lekelerin günler içinde Güneş’in yüzeyinde hep aynı yönde kaydığını belirliyor. Bu bulgu, Güneş ile ilgili hangi bilgiyi doğrular?",
+  "siklar": {
+   "A": "Güneş, kendi ekseni etrafında döner.",
+   "B": "Güneş yerinde sabittir, dönme hareketi yapmaz.",
+   "C": "Güneş, Dünya’nın çevresinde dolanır.",
+   "D": "Lekeler, Güneş’in önünden geçen bulutlardır."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bir topun üzerine çizilmiş bir noktanın, top kendi çevresinde dönerken nasıl yer değiştirdiğini düşün.",
+  "cozum_adimlari": [
+   "Lekeler Güneş’in yüzeyinde bulunur.",
+   "Lekelerin günler içinde aynı yönde kayması, Güneş’in yüzeyinin hareket ettiğini gösterir.",
+   "Bu hareket, Güneş’in kendi ekseni etrafında dönmesidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Güneş’i sabit bir ateş topu sanan öğrenci için çekici; ancak lekelerin yer değiştirmesi bu düşünceyle çelişir.",
+   "C": "Dünya’nın Güneş çevresinde döndüğü bilgisini ters çeviren öğrenci için çekici.",
+   "D": "Gökyüzündeki bulut deneyimini Güneş yüzeyine taşıyan öğrenci için çekici."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-002",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.1.2",
+  "surec_bileseni": "c",
+  "konu": "Güneş, Dünya ve Ay",
+  "alt_konu": "Ay’ın dönme ve dolanma hareketleri",
+  "soru_metni": "Bir gökbilimci, yıllarca Dünya’dan yaptığı gözlemlerde Ay’ın yüzeyindeki aynı kraterlerin hep aynı konumda göründüğünü, Ay’ın diğer yüzünü ise göremediğini kaydetti. Bu veriler, Ay’ın hareketleri hakkında hangi çıkarımın yapılmasını sağlar?",
+  "siklar": {
+   "A": "Ay, Dünya’nın çevresinde dolanır, ancak kendi ekseni etrafında dönmez.",
+   "B": "Ay’ın bir tur dönme süresi, bir tur dolanma süresine yaklaşık eşittir.",
+   "C": "Ay, kendi etrafında döner, ancak Dünya’nın çevresinde dolanmaz.",
+   "D": "Ay’ın bir tur dönme süresi, bir tur dolanma süresinden çok kısadır."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Ay kendi etrafında hiç dönmeseydi, Dünya’nın çevresinde bir tur attığında Dünya’dan hangi yüzlerinin görüleceğini düşün.",
+  "cozum_adimlari": [
+   "Dünya’dan Ay’ın yalnızca bir yüzü görülüyor.",
+   "Ay dönmeseydi dolanırken farklı yüzleri Dünya’dan görülürdü.",
+   "Hep aynı yüzün görülmesi için Ay, Dünya çevresinde bir tur atarken kendi etrafında da bir tur dönmelidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ay’ın dönmediği için hep aynı yüzünü gösterdiğini sanan öğrenci için çekici; oysa dönmeseydi her yüzü görülürdü.",
+   "B": "Doğru.",
+   "C": "Ay’ın dolanma hareketini unutan ya da dönme ile dolanmayı karıştıran öğrenci için çekici.",
+   "D": "Süreleri farklı sanan öğrenci için çekici; süreler farklı olsaydı farklı yüzler görünürdü."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-003",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.1.3",
+  "surec_bileseni": "a",
+  "konu": "Güneş, Dünya ve Ay",
+  "alt_konu": "Ay’ın evreleri modeli",
+  "soru_metni": "Sınıfta Ay’ın evrelerini göstermek için bir model kuruldu. Güneş’i bir el feneri, Dünya’yı bir öğrenci, Ay’ı ise öğrencinin elindeki top temsil ediyor. Top, fener ile öğrencinin arasına getirildiğinde topun fenere bakan yarısı aydınlık, öğrenciye bakan yarısı karanlık oluyor. Öğrenci bu modelde Ay’ın hangi evresini gözlemlemiş olur?",
+  "siklar": {
+   "A": "Dolunay",
+   "B": "İlk dördün",
+   "C": "Yeni ay",
+   "D": "Son dördün"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Öğrencinin bakış yönünde topun hangi yarısının göründüğünü belirle.",
+  "cozum_adimlari": [
+   "Öğrenciye bakan yarı karanlık olduğundan öğrenci topun aydınlık kısmını göremez.",
+   "Ay’ın Dünya’dan aydınlık yüzünün görülmediği evre yeni aydır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Dolunayda Dünya’nın Ay ile Güneş arasında olduğunu bilmeyen ya da Dünya’nın gölgesinin Ay’ı karanlık yaptığını sanan öğrenci için çekici.",
+   "B": "Ay’ın yarısının karanlık olmasını ilk dördün ile karıştıran öğrenci için çekici.",
+   "C": "Doğru.",
+   "D": "Yarım karanlık görünümü son dördün ile karıştıran öğrenci için çekici."
+  },
+  "zorluk": 2,
+  "soru_tipi": "deney",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-005",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.2.1",
+  "surec_bileseni": "c",
+  "konu": "Kuvvet",
+  "alt_konu": "Kuvvetin birimi",
+  "soru_metni": "Mina, kızağını ip ile çekerken uyguladığı kuvvetin büyüklüğünü ölçmek için dinamometre kullandı. Ölçüm sonucunu defterine yazarken sayının yanına ölçülen büyüklüğün birimini de eklemek istiyor. Mina hangi birimi yazmalıdır?",
+  "siklar": {
+   "A": "Kilogram (kg)",
+   "B": "Metre (m)",
+   "C": "Saniye (s)",
+   "D": "Newton (N)"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Dinamometrenin hangi büyüklüğü ölçtüğünü hatırla ve bu büyüklüğün birimini seç.",
+  "cozum_adimlari": [
+   "Dinamometre kuvveti ölçer.",
+   "Kuvvetin birimi Newton’dur ve N ile gösterilir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kütle ve kuvveti karıştıran öğrenci için çekici; kg kütle birimidir.",
+   "B": "Kızağın aldığı yolu düşünen öğrenci için çekici; m uzunluk birimidir.",
+   "C": "Çekme süresini düşünen öğrenci için çekici; s zaman birimidir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "suslu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-006",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.2.2",
+  "surec_bileseni": "b",
+  "konu": "Kuvvet",
+  "alt_konu": "Dinamometre modelini geliştirme",
+  "soru_metni": "Ece, bir lastik bant ve cetvelle dinamometre modeli yaptı. Modelde 1 N’luk bir cisim asıldığında lastik yalnızca 1 mm uzuyor ve 1 N ile 2 N’luk cisimlerin ölçekte ayırt edilmesi zorlaşıyor. Ece, bu kanıta göre modelini daha duyarlı hâle getirmek istiyor. Ne yapmalıdır?",
+  "siklar": {
+   "A": "Daha ince ve esnek bir lastik kullanıp ölçeği yeniden oluşturmalıdır.",
+   "B": "Daha kalın ve sert bir lastik kullanıp ölçeği yeniden oluşturmalıdır.",
+   "C": "Ölçekteki çizgilerin tamamını silip tek çizgi bırakmalıdır.",
+   "D": "Lastiği iki kat kısaltıp aynı ölçeği kullanmaya devam etmelidir."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Aynı kuvvetin daha büyük bir uzama oluşturması için lastiğin nasıl olması gerektiğini düşün.",
+  "cozum_adimlari": [
+   "Sorun, küçük kuvvetlerin çok küçük uzamalar oluşturmasıdır.",
+   "Daha esnek bir lastik aynı kuvvette daha fazla uzar ve kuvvetler ölçekte daha net ayrılır.",
+   "Lastik değiştiğinden ölçek yeniden oluşturulmalıdır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Sağlam bir lastiğin daha iyi ölçüm yapacağını sanan öğrenci için çekici; oysa uzama daha da azalır.",
+   "C": "Ölçeği sadeleştirmenin hassasiyeti artıracağını sanan öğrenci için çekici.",
+   "D": "Kısaltmanın uzamayı artıracağını sanan öğrenci için çekici; kısa lastik daha az uzar."
+  },
+  "zorluk": 3,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-007",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.2.3",
+  "surec_bileseni": "c",
+  "konu": "Kuvvet",
+  "alt_konu": "Kütle ve ağırlık farkı",
+  "soru_metni": "Bir bavul, uzay aracıyla Ay’a götürülüyor. Ay’ın çekim kuvveti Dünya’nınkinden daha küçüktür. Bavulun Ay’daki kütlesi ve ağırlığı, Dünya’dakine göre nasıl değişir?",
+  "siklar": {
+   "A": "Kütlesi ve ağırlığı değişmez.",
+   "B": "Kütlesi azalır, ağırlığı değişmez.",
+   "C": "Kütlesi değişmez, ağırlığı azalır.",
+   "D": "Kütlesi ve ağırlığı azalır."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Hangisinin madde miktarına, hangisinin çekim kuvvetine bağlı olduğunu ayır.",
+  "cozum_adimlari": [
+   "Kütle, cismin madde miktarıdır ve bulunduğu yere göre değişmez.",
+   "Ağırlık, çekim kuvvetinin cisme uyguladığı kuvvettir.",
+   "Ay’ın çekimi daha küçük olduğundan bavulun ağırlığı azalır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kütle ve ağırlığı aynı kavram sanan öğrenci için çekici.",
+   "B": "Kütle ile ağırlığın rollerini ters çeviren öğrenci için çekici.",
+   "C": "Doğru.",
+   "D": "Her ikisinin de çekimle azaldığını sanan öğrenci için çekici."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-010",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.3.2",
+  "surec_bileseni": "a",
+  "konu": "Canlılar ve hayat",
+  "alt_konu": "Hücreden sisteme düzenlenme",
+  "soru_metni": "Ela, kalbin yapısıyla ilgili şu kavramları not etti: kalp, kas hücresi, dolaşım sistemi, kas dokusu. Bu kavramları basitten karmaşığa doğru sıralamak istiyor. Doğru sıralama hangisidir?",
+  "siklar": {
+   "A": "Kas hücresi, kas dokusu, kalp, dolaşım sistemi",
+   "B": "Kas dokusu, kas hücresi, kalp, dolaşım sistemi",
+   "C": "Kas hücresi, kas dokusu, dolaşım sistemi, kalp",
+   "D": "Kalp, kas dokusu, kas hücresi, dolaşım sistemi"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Benzer hücrelerin bir araya gelerek oluşturduğu yapıdan başlayıp organ ve sisteme doğru ilerle.",
+  "cozum_adimlari": [
+   "En küçük yapı hücredir: kas hücresi.",
+   "Benzer hücreler dokuyu oluşturur: kas dokusu.",
+   "Dokular organı oluşturur: kalp.",
+   "Organlar sistemi oluşturur: dolaşım sistemi.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Hücre ile dokunun yerini değiştiren öğrenci için çekici.",
+   "C": "Organ ile sistemin sırasını karıştıran öğrenci için çekici.",
+   "D": "Sıralamayı büyükten küçüğe başlatan öğrenci için çekici."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-013",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.4.1",
+  "surec_bileseni": "c",
+  "konu": "Işığın yayılması",
+  "alt_konu": "Işığın doğrusal yolu",
+  "soru_metni": "Emre, karanlık bir odada ortasında küçük delik bulunan üç kartonu arka arkaya diziyor ve en öndeki kartonun önüne bir el feneri yerleştiriyor. Delikler aynı hizadayken karşı duvarda aydınlık bir nokta oluşuyor; kartonlardan biri yana kaydırılınca nokta kayboluyor. Bu gözlem ışığın izlediği yol hakkında neyi gösterir?",
+  "siklar": {
+   "A": "Işık engelin çevresinden dolanarak her yere ulaşır.",
+   "B": "Işık kaynaktan doğrusal bir yol izleyerek ilerler.",
+   "C": "Işık deliklerden geçerken yön değiştirip eğri çizer.",
+   "D": "Işık yatay doğrultuda yayılır, yukarı ve aşağı gitmez."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Deliklerin aynı hizada olması ile noktanın görünmesi arasındaki ilişkiye bak.",
+  "cozum_adimlari": [
+   "Işık, ancak delikler aynı doğru üzerindeyken karşı duvara ulaşıyor.",
+   "Bir karton kaydırılınca ışık engellendiği için nokta kayboluyor.",
+   "Bu durum ışığın doğrusal bir yol izlediğini gösterir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Işığın engelleri dolaşabildiğini sanan öğrenci için çekici; oysa nokta kayboluyor.",
+   "B": "Doğru.",
+   "C": "Işığı su gibi akıp eğrilen bir şey sanan öğrenci için çekici.",
+   "D": "Düzeneğin yatay kurulmasını ışığın yönüne ait bir kural sanan öğrenci için çekici."
+  },
+  "zorluk": 2,
+  "soru_tipi": "deney",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-016",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.5.1",
+  "surec_bileseni": "c",
+  "konu": "Madde ve ısı",
+  "alt_konu": "Maddenin tanecikli yapısı",
+  "soru_metni": "Pınar, madde modelini anlatan bir sunumda şunu söylüyor: “Taneciklerim birbirinden çok uzaktır ve her yöne hızla hareket eder. Bulunduğum kabın tamamını doldururum.” Pınar hangi maddeden söz ediyor?",
+  "siklar": {
+   "A": "Bardaktaki su",
+   "B": "Balonun içindeki hava",
+   "C": "Masadaki tahta kalem",
+   "D": "Dondurucudaki buz kalıbı"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Tanecikleri arasındaki uzaklığa ve hareketine göre katı, sıvı ve gaz ayrımını düşün.",
+  "cozum_adimlari": [
+   "Taneciklerin birbirinden uzak ve çok hareketli olması gaz hâlinin özelliğidir.",
+   "Gazlar bulundukları kabın tamamını doldurur.",
+   "Balonun içindeki hava gaz hâlindedir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sıvıların da akışkan olduğunu düşünüp gaz ile karıştıran öğrenci için çekici.",
+   "B": "Doğru.",
+   "C": "Katıların tanecikleri arasında da büyük boşluk olduğunu sanan öğrenci için çekici.",
+   "D": "Buzun dondurucuyu tamamen doldurduğunu sanan öğrenci için çekici."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-017",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.5.2",
+  "surec_bileseni": "c",
+  "konu": "Madde ve ısı",
+  "alt_konu": "Isı ve sıcaklık farkı",
+  "soru_metni": "Barış, bahçedeki termometreyi okuyarak hava durumunu defterine yazıyor. Barış’ın yaptığı bu ölçümle ilgili hangisi doğrudur?",
+  "siklar": {
+   "A": "Termometre ısıyı ölçer ve ısının birimi °C’dir.",
+   "B": "Termometre sıcaklığı ölçer ve sıcaklık bir enerji türüdür.",
+   "C": "Termometre sıcaklığı ölçer ve sıcaklığın birimi °C’dir.",
+   "D": "Termometre ısıyı ölçer ve ısı bir enerji türü değildir."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Termometrenin hangi büyüklüğü gösterdiğini ve ısının bir enerji olup olmadığını ayrı ayrı düşün.",
+  "cozum_adimlari": [
+   "Termometre sıcaklığı ölçer.",
+   "Sıcaklığın birimi °C’dir.",
+   "Isı bir enerji türüdür, sıcaklık ise enerji türü değildir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Isı ile sıcaklığı aynı kavram sanan öğrenci için çekici.",
+   "B": "Sıcaklığı enerji türü sanan öğrenci için çekici.",
+   "C": "Doğru.",
+   "D": "Isıyı ölçülen büyüklük sanıp ısının enerji olduğunu inkâr eden öğrenci için çekici."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-018",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.5.3",
+  "surec_bileseni": "c",
+  "konu": "Madde ve ısı",
+  "alt_konu": "Sıvılar arasında ısı alışverişi",
+  "soru_metni": "Defne, 10 °C’deki 100 mL su ile 30 °C’deki 300 mL suyu ısı kaybı olmayan bir kapta karıştırdı ve karışımın sıcaklığını 25 °C ölçtü. Bu veriler, karıştırma sırasında gerçekleşen ısı alışverişi hakkında hangi sonucu destekler?",
+  "siklar": {
+   "A": "Isı, 10 °C’deki sudan 30 °C’deki suya geçmiştir.",
+   "B": "Isı, 30 °C’deki sudan 10 °C’deki suya geçmiştir.",
+   "C": "İki su arasında ısı alışverişi olmadan sıcaklıklar değişmiştir.",
+   "D": "Karıştırma sırasında ısı enerjisi yok olmuştur."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Karışımın sıcaklığının iki ilk sıcaklığa göre nerede olduğuna bak.",
+  "cozum_adimlari": [
+   "Soğuk suyun sıcaklığı 10 °C’den 25 °C’ye çıkmıştır, yani ısı almıştır.",
+   "Sıcak suyun sıcaklığı 30 °C’den 25 °C’ye inmiştir, yani ısı vermiştir.",
+   "Isı, sıcaklığı yüksek olandan düşük olana geçer.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Isının soğuktan sıcağa geçtiğini sanan öğrenci için çekici.",
+   "B": "Doğru.",
+   "C": "Isı alışverişini sıcaklık değişiminden bağımsız sanan öğrenci için çekici.",
+   "D": "Enerjinin yok olduğunu düşünen öğrenci için çekici; ısı enerjisi sudan suya aktarılır."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-019",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.5.4",
+  "surec_bileseni": "ç",
+  "konu": "Madde ve ısı",
+  "alt_konu": "Isı etkisiyle hâl değişimi",
+  "soru_metni": "Kerem, dondurucudan çıkardığı buz kalıbını mutfak tezgâhında unuttu. Birkaç saat sonra tezgâhta bir su birikintisi buldu. Kerem, bu su dondurucuya konursa ne olacağını tahmin etmek istiyor. Gözlemine dayanan en uygun tahmin hangisidir?",
+  "siklar": {
+   "A": "Su, çevresine ısı vererek yeniden buz hâline gelir.",
+   "B": "Su, çevresinden ısı alarak yeniden buz hâline gelir.",
+   "C": "Su, dondurucuda da sıvı hâlde kalır ve değişmez.",
+   "D": "Su, dondurucuda buharlaşarak gaz hâline geçer."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Buz kalıbı erirken ısıyla ilişkisini düşün ve olayı ters yönde düşün.",
+  "cozum_adimlari": [
+   "Buz, oda ortamından ısı alarak erimiştir.",
+   "Dondurucuda ise su çevresine ısı verir.",
+   "Isı veren su donarak yeniden buz hâline gelir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Isı alma ve verme yönünü karıştıran öğrenci için çekici.",
+   "C": "Hâl değişiminin tek yönlü olduğunu sanan öğrenci için çekici.",
+   "D": "Soğuk ortamda buharlaşma olacağını sanan öğrenci için çekici."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-024",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.6.3",
+  "surec_bileseni": "d",
+  "konu": "Elektrik",
+  "alt_konu": "Pil ve ampul sayısının parlaklığa etkisi",
+  "soru_metni": "Ali, özdeş pil ve özdeş ampullerle üç devre kurdu. Devre 1’de bir pil ve bir ampul, Devre 2’de seri bağlı iki pil ve bir ampul, Devre 3’te bir pil ve seri bağlı iki ampul var. Ali, her devredeki bir ampulün parlaklığını karşılaştırıyor. Ampullerin parlaklığı en fazladan en aza doğru nasıl sıralanır?",
+  "siklar": {
+   "A": "Devre 1, Devre 2, Devre 3",
+   "B": "Devre 3, Devre 1, Devre 2",
+   "C": "Devre 2, Devre 1, Devre 3",
+   "D": "Devre 2, Devre 3, Devre 1"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Pil sayısı arttıkça ve ampul sayısı arttıkça tek bir ampulün parlaklığının nasıl değiştiğini ayrı ayrı düşün.",
+  "cozum_adimlari": [
+   "Pil sayısı artınca ampulün parlaklığı artar: Devre 2, Devre 1’den parlaktır.",
+   "Seri bağlı ampul sayısı artınca her ampulün parlaklığı azalır: Devre 3, Devre 1’den sönüktür.",
+   "Sıralama Devre 2, Devre 1, Devre 3 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Pil sayısının etkisini ters yorumlayan öğrenci için çekici.",
+   "B": "Hem pil hem ampul etkisini ters yorumlayan öğrenci için çekici.",
+   "C": "Doğru.",
+   "D": "Ampul sayısının parlaklığı artırdığını sanan öğrenci için çekici."
+  },
+  "zorluk": 3,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-027",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.7.3",
+  "surec_bileseni": "b",
+  "konu": "Geri dönüşüm",
+  "alt_konu": "Yakın çevrede atık yönetimi",
+  "soru_metni": "5/A sınıfı, bir hafta boyunca sınıf çöp kutusunun içindekileri not etti. Atıkların yarısından fazlasının kullanılmış defter ve kâğıt parçaları olduğunu belirlediler. Bu gözlemlerine dayanarak sınıfın atık yönetimi için yapabileceği en uygun uygulama hangisidir?",
+  "siklar": {
+   "A": "Kâğıtları ayrı kutuda biriktirip geri dönüşüme göndermek",
+   "B": "Atıkları ayırmadan tek torbada toplayıp çöpe atmak",
+   "C": "Kâğıtları okul bahçesindeki toprağa gömmek",
+   "D": "Çöp kutusunu sınıftan kaldırıp atıkları koridora bırakmak"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Çoğunluğu oluşturan atığın yeniden değerlendirilmesi yolunu düşün.",
+  "cozum_adimlari": [
+   "Atıkların çoğu kâğıttır.",
+   "Kâğıt geri dönüştürülebilir.",
+   "Ayrı biriktirip geri dönüşüme göndermek hem atığı azaltır hem kaynağı korur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Ayrıştırmanın zahmetli olduğunu düşünen öğrenci için çekici.",
+   "C": "Gömmenin atığı yok ettiğini sanan öğrenci için çekici.",
+   "D": "Sorunu görünmez kılmayı çözüm sanan öğrenci için çekici."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "FEN5-028",
+  "sinif": 5,
+  "ders": "Fen Bilimleri",
+  "mufredat_surum": "Maarif Modeli Fen DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "FB.5.2.1",
+  "surec_bileseni": "b",
+  "konu": "Kuvvet",
+  "alt_konu": "Dinamometre ile kuvvet ölçümü",
+  "soru_metni": "Okul bahçesinde iki öğrenci, aynı oyuncak arabayı ayrı ayrı çekerken uyguladıkları kuvveti dinamometreyle ölçtü. Birinci öğrencinin ölçümü 3 N, ikinci öğrencinin ölçümü 5 N oldu. Bu ölçümlere göre hangisi doğrudur?",
+  "siklar": {
+   "A": "Birinci öğrenci, ikinciden 2 N daha büyük kuvvet uygulamıştır.",
+   "B": "İki öğrenci, arabaya eşit büyüklükte kuvvet uygulamıştır.",
+   "C": "İkinci öğrenci, birinciden 2 N daha büyük kuvvet uygulamıştır.",
+   "D": "İkinci öğrencinin kuvveti, birincinin kuvvetinin beş katıdır."
+  },
+  "dogru_sik": "C",
+  "ipucu": "İki ölçüm değerini karşılaştırıp aralarındaki farkı bul.",
+  "cozum_adimlari": [
+   "Birinci ölçüm 3 N, ikinci ölçüm 5 N’dur.",
+   "5 N – 3 N = 2 N olduğundan ikinci öğrencinin kuvveti 2 N daha büyüktür.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Büyük sayıyı yanlış öğrenciye atayan öğrenci için çekici.",
+   "B": "Araba aynı olduğu için kuvvetlerin eşit olduğunu sanan öğrenci için çekici.",
+   "C": "Doğru.",
+   "D": "Sayıları farkla değil katla yorumlayan öğrenci için çekici."
+  },
+  "zorluk": 1,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

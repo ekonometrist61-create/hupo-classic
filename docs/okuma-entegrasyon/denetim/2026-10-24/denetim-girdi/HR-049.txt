@@ -1,0 +1,103 @@
+# HR-049 · Keloğlan ve Yedi Söz Kapısı · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=c8c206d3-cb7a-4186-9b20-3e665d184aa5, surum_no=1, sha256=5c3c5503f45f77f611f83ee66a106e99f020a11da424fde60cc6c330f0ce6103
+Not: bu hikâyede 1 taslak sürüm var; yalnız en yeni (surum_no=1) denetlenmiştir.
+
+## Künye
+Slug: hr049-keloglan-ve-yedi-soz-kapisi | Tür: tarih_kultur | Konu: dogruluk_paylasma | Dünya: masalsi
+Sınıf: 5–5 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Eşikte yedi anahtar var. Her kapının ardında bir değer, bir seçim.
+İzinli türler: ben, arkadas, hayali
+Değer anahtarları (sürüm): D6, D15 | maarif.ana_deger: D6
+Etiketler: ana_sinif=5, okuma_zorlugu=4, kavram_zorlugu=4, ilgi=ortak, kanit_duzeyi=C
+Temalar: kultur_miras, dayanisma | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: esik_hr049 (lexeme, first_hint: eşik); heybe_hr049 (lexeme, application: heybe); kurnazlik_hr049 (lexeme, application: kurnazlık); deyim_hr049 (idiom, application: Kulak vermek); kavram_hr049 (concept, application: Dürüstlük ve paylaşma)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":17,"simge_sayisi":1,"kelime_sayisi":2066,"tahmini_sure_dk":20,"yoldas_yer_sayisi":11,"hedef_tur_dagilimi":{"idiom":1,"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+[KAHRAMAN hal=yalin], sabah kapıyı açtığında [KELİME yuva=hr049_esik] önünde yedi ayrı anahtar buldu. Anahtarların hiçbiri demirden değildi: biri ağaç kabuğundan, biri cam gibi saydam, biri de kurumuş bir yapraktan yapılmıştı. Altına iliştirilmiş kâğıtta tek bir cümle vardı: Yedi Söz Kapısı'nı geçebilen, dileğini kendi eliyle kurar. [KAHRAMAN hal=yalin] önce bir şaka sanıp gülümsedi. Sonra en küçük anahtarın ucundaki işareti gördü. İşaret, köyün yukarısındaki eski değirmenin kapısına oyulmuş şeklin aynısıydı. O değirmen uzun zamandır çalışmıyordu. Köylüler, su yolunu onarmak için para toplamış ama hangi yolun güvenli olduğuna karar verememişti. [KAHRAMAN hal=ilgi] dileği, annesinin tarlasına su ulaştırmaktı. Fakat bu yedi kapı meselesini anlamadan değirmene gitmek de akıllıca değildi. [İŞARET kod=anahtar] Annesi anahtarları eline aldı. “Bir gün boyunca yanında taşıyıp duracağın şeyin ağırlığını iyi düşün,” dedi. “Altın anahtara benzemiyorlar ama sözlerini tutması ağır olabilir.”
+--- Sayfa 2 ---
+“Ben sözümü tutarım ana,” diye karşılık verdi [KAHRAMAN hal=yalin]. “Kolay söylenir. Zor zamanda da tutabiliyorsan ne mutlu sana.” [KAHRAMAN hal=yalin] küçük [KELİME yuva=hr049_heybe] ekmek, su ve ip koyup yola çıktı. Köy meydanında çocuklar etrafını sardı. Onlara bütün kapıları tek başına açacağını söylemek istedi. Fakat annesinin sözü aklına geldi; bilmediği bir işi başardığını önceden söylemek gösteriş olurdu. “Ne çıkacağını bilmiyorum,” dedi. “Dönersem anlatırım.” Bu yanıt çocukların hoşuna gitmedi ama yaşlı terzi ona başıyla selam verdi. Değirmenin ardındaki taşlık yolda ilk kapıyı buldu. Kapının üzerinde “Dürüstlük” yazıyordu. Ortada iki sepet vardı: birinde parlak elmalar, ötekinde toprağa düşmüş, üstü çizilmiş elmalar. Kapının yanından bir ses geldi: “Köye dönüp elmaların hepsinin sağlam olduğunu söylersen hızlıca geçersin.” [KAHRAMAN hal=yalin] parlayan elmalara baktı. Sırtında taşıdığı açlık duygusu o anda daha da büyüdü. Sonra yaralı elmaları gördü; bazıları hâlâ yenilebilirdi ama kusurlarını gizlemek doğru değildi.
+--- Sayfa 3 ---
+“İnsanları kandırırsam kapıyı geçsem bile içim rahat etmez,” dedi. “Elmaların durumunu olduğu gibi söylerim.” Ses sustu, kapı ağır ağır açıldı. Arkasında bir ayna vardı. [KAHRAMAN hal=yalin] aynada elmaların değil, annesinin yüzünü gördü. Annesi pazarda satacağı bezlerin eksik dokunan yerlerini müşteriden gizlemezdi. [KAHRAMAN hal=yalin] ilk anahtarı cebine koydu. Demek ki bazı anahtarlar cebine değil, davranışına uyuyordu. İkinci kapının önüne geldiğinde küçük bir dere yolu kesiyordu. Taş köprü akıntı yüzünden daralmıştı. Yan tarafta bir çocuk, yünlerini suya düşürmüş ağlıyordu. Kapının üzerinde “Sabır” yazıyordu. “Benim acelem var,” diye geçirdi içinden [KAHRAMAN hal=yalin]. “Çocuğa yardım edersem geç kalırım.” Yine de durup ne olduğunu sordu. Çocuğun adı [YOLDAŞ hal=yalin yedek=bir arkadaş]; yünleri annesinin dokuyacağı kilim için topladığını anlattı. [KAHRAMAN hal=yalin] uzun bir dal buldu, ipini düğümledi, yün demetlerini suya girmeden tek tek kıyıya çekti. İlk denemesi başarısız oldu. İkinci denemede düğüm çözüldü. [YOLDAŞ hal=yalin yedek=bir arkadaş], “Bırakalım, annem kızsa da olur,” dedi. [KAHRAMAN hal=yalin], “Sabreden derviş muradına ermiş derler,” diye mırıldandı. Son denemede dalın ucuna çatal biçimli başka bir dal bağladı; kalan yünleri aldı. [YOLDAŞ hal=yalin yedek=bir arkadaş] teşekkür ederken ikinci kapı kendiliğinden açıldı.
+--- Sayfa 4 ---
+Üçüncü kapının üstüne “Paylaşma” yazılmıştı. İçeride uzun bir sofrada tam üç tabak çorba duruyordu. Sofranın başında dört yolcu oturmuş, kimsenin önüne çorba koyamamıştı. [KAHRAMAN hal=yalin] içeri girince yolcular beş kişi oldu. Kapının sesi, “Üç tabak vardır; biri paylaşılmazsa kimse açlığını gideremez,” dedi. [KAHRAMAN hal=yalin] çorbanın miktarını tahmin etti. Herkesin doyması mümkün değildi. Ama herkesin az da olsa içmesi mümkündü. Tencerede kalan suyu sormak için mutfağa gitti. Biraz sıcak su, kuru ekmek parçaları ve sofradakilerin yanında getirdiği otlarla çorbayı çoğalttılar. Yemek basit ama lezzetli oldu. En yaşlı yolcu, “Bir elin nesi var, iki elin sesi var,” dedi. [KAHRAMAN hal=yalin] kapının ardındaki çanı duydu. Üçüncü anahtar kendiliğinden ışıldadı.
+--- Sayfa 5 ---
+Dördüncü kapı, dar bir bahçenin ucundaydı. Üzerinde “Dinlemek” yazıyordu. Bahçede iki kuş aynı anda ötüyordu. Biri ince, biri kalın ses çıkarıyordu. Tahta bir levhada, “Doğru yolu söyleyen kuşu dinle,” yazılmıştı. [KAHRAMAN hal=yalin] ince sesli kuşun yüksekten ötmesini önemli sandı. Fakat sesini yükseltenin her zaman doğruyu söylemeyeceğini düşündü. İki kuşun da konuşmasını bitirmesini bekledi. İnce kuş “Sağa git!” diye bağırıyordu. Kalın sesli kuş ise “Sol yolda taş düştü; aşağıdaki patikaya dikkat et,” diyordu. [KAHRAMAN hal=yalin], nedenini açıklayan kuşu dinledi. Patikada gerçekten de yuvarlanmış taşlar vardı. [DEYİM yuva=hr049_kulak_vermek] [KAHRAMAN hal=yalin], bu deyimin anlamını yeni yeni öğreniyordu. İnsan bazen kendisine söyleneni dikkatle düşünmediği için duyduğu hâlde anlamayabilirdi.
+--- Sayfa 6 ---
+Beşinci kapının önünde tüccar kıyafetli biri oturuyordu. [KAHRAMAN hal=yalin] ona yaklaşınca adam torbasından altın rengi bir yüzük çıkardı. “Bu yüzüğü alırsan kalan kapıları sorgusuz geçersin,” dedi. Kapının üzerinde “Ölçülülük” yazıyordu. [KAHRAMAN hal=yalin] yüzüğü eline almadı. Tüccar devam etti: “Kapıların ardında kimse ne yaptığını bilmeyecek. Biraz [KELİME yuva=hr049_kurnazlik] kimseye zarar vermeden kazanırsın.” “Kurnazlıkla akıl aynı şey midir?” diye sordu [KAHRAMAN hal=yalin]. “Bazen aynıdır.” “Ya birisinin hakkını çiğnersem?” “Kimse görmez.” “Kendim görürüm.” Tüccar birden kâğıttan yapılmış bir şekle dönüştü. Beşinci kapı açıldığında [KAHRAMAN hal=yalin], aşırı kolay görünen çözümlerin neden bazen en tehlikeli yollar olabildiğini düşündü. Altıncı kapının üzerinde “Cesaret” yazılıydı. İçeriden uğultulu bir ses geliyordu. [KAHRAMAN hal=yalin] ürküp geri çekildi. Gözleri karanlığa alışınca yerde bir yarasa gördü. Hayvanın kanadı, bir ipin halkasına takılmıştı. Uğultunun kaynağı yarasanın çırpınmasıydı. [KAHRAMAN hal=yalin] hayvanı incitmeden nasıl yardım edebileceğini düşündü. Tek başına elini uzatmak yerine kapıdan aldığı uzun değnekle ipi gevşetti, yarasa kurtulunca da yolu açtı. Cesaretin düşüncesizce tehlikeye atılmak olmadığını anladı. Bazen korktuğunu kabul edip güvenli bir çözüm aramak daha cesurcaydı.
+--- Sayfa 7 ---
+Yedinci kapı diğerlerinden farklıydı. Önünde ne sepet, ne dere, ne de konuşan kuş vardı. Taşın üzerine “Söz” yazılmıştı. Kapı, “Başından geçenleri anlat. Ama kendini olduğundan büyük gösterme,” dedi. [KAHRAMAN hal=yalin] ilk altı kapıyı düşündü. Elmalar, [YOLDAŞ hal=ilgi yedek=bir arkadaşın] yünleri, sofradaki çorba, kuşlar, tüccarın yüzüğü ve yarasa… Kapıların hepsi farklıydı ama aralarında bir bağ vardı. Her seferinde birinin, bazen de kendisinin iyiliğini düşünerek karar vermişti. “Ben en güçlü kişi değilim,” dedi. “Bazen korktum, bazen acele ettim, bazen de açgözlülüğe kapılacak gibi oldum. Ama yeniden düşündüm. Bana sorarsan söz, davranışla tamamlanınca değer kazanır.” Kapının taşları bir süre sessiz kaldı. Ardından yavaşça ayrıldı. [KAHRAMAN hal=yalin] karşısında yüksek bir dağ yerine köyünün eski su kanalını buldu. Kanalın girişindeki vana paslanmıştı; birkaç taşı yerinden oynamıştı. Kanalın üstündeki levhada şu cümle yazıyordu: Dileğini tek başına taşıyamazsın; birlikte kurarsın.
+--- Sayfa 8 ---
+[KAHRAMAN hal=yalin] bir an öfkelendi. “Bunca yolu geldim, kapı kapı dolaştım. Sonunda yine köye mi döneceğim?” Sonra üçüncü kapıdaki sofrayı ve ikinci kapıdaki [YOLDAŞ hal=belirtme yedek=bir arkadaşı] hatırladı. Sorun yalnız vanayı çevirmek değildi. Su kanalı, köyün ortak emeğiyle onarılmalıydı. Çevredeki taşları kaldırmaya çalıştı ama bazıları çok ağırdı. İşte o zaman annesinin “Sözün ağırlığı” dediği şey anlam kazandı. İlk iş olarak köye dönmek, herkesle konuşmak gerekiyordu. Köy meydanında toplananlara gördüklerini anlattı. Kimi “Bu masala benziyor,” dedi, kimi “Çocukça bir oyun,” diye küçümsedi. [KAHRAMAN hal=yalin] buna kızmadı. Kanaldaki bozuk yeri gösteren bir çizim yaptı, kimlerin hangi işte yardımcı olabileceğini sordu. Terzi sağlam ip getirdi. Değirmenci vanayı incelemek için aletlerini hazırladı. [YOLDAŞ hal=ilgi yedek=bir arkadaşın] ailesi yoldaki küçük taşları toplayabileceklerini söyledi. Yaşlılar eski su yolunu bilen kişileri çağırdı. Bir iş bölümü yaptılar.
+--- Sayfa 9 ---
+İlk gün herkes çok çalıştı ama su akmadı. [KAHRAMAN hal=yalin] yüzünün kızardığını hissetti. Kapıları geçmiş olması ona hemen başarı getirmemişti. Değirmenci, “Daha işin başındayız,” dedi. “Suyun yolunu açmak, acele etmeyi değil, taşları doğru yerleştirmeyi gerektirir.” İkinci gün yanlış açıyla konmuş bir taşı düzelttiler. Üçüncü gün kanalın çevresini güvenli hâle getirdiler. Çocuklar yetişkinlerin yanında, tehlikeli yerlere yaklaşmadan küçük işlerde yardımcı oldu. Dördüncü sabah su, ince bir çizgi gibi kanala girdi. Önce birkaç damla geldi, sonra akış hızlandı. [KAHRAMAN hal=ilgi] annesi avuçlarını suyun altına tuttu. Yüzünde uzun zamandır görülmeyen bir rahatlama vardı. “Yedi kapıyı açtın demek,” dedi. “Yedi kapıyı köye getirdim, ana,” diye cevap verdi [KAHRAMAN hal=yalin]. “En zor kapıyı hep birlikte açtık.” O akşam köy meydanında bir sofra kuruldu. [YOLDAŞ hal=yalin yedek=bir arkadaş] yünlerinden dokunan küçük bir bez getirdi. Terzi, bezin üzerine yedi ayrı işaret işlemişti: elma, yün, çorba kâsesi, kuş, yüzük, yarasa ve su damlası. [KAHRAMAN hal=yalin] işaretlere bakınca kapıların sırasını hatırladı. Her işaret ona bir sözcüğü değil, yaptığı bir seçimi hatırlatıyordu.
+--- Sayfa 10 ---
+Köyün çocukları ertesi gün aynı kapıları görmek istedi. [KAHRAMAN hal=yalin] onlara değirmenin ardındaki yola kadar eşlik etti. Fakat taşlık yerde yalnızca eski bir yol vardı. Ne konuşan kuş ne de altın yüzük bulunuyordu. Çocuklardan biri, “O hâlde bizi kandırdın mı?” diye sordu. [KAHRAMAN hal=yalin] durdu. “Gördüklerimi anlattım,” dedi. “Sizin de aynı şeyleri göreceğinizi söylemedim.” Sonra yerdeki küçük taşı kaldırıp kenara koydu. “Ama isterseniz ilk kapıyı şimdi açabiliriz. Şu yoldan herkes güvenle geçsin diye yardım eder misiniz?” Çocuklar taşları toplamaya başladılar. Birinin eli yetmediğinde öteki yardım etti. [KAHRAMAN hal=yalin] uzaktan onları izledi. Yedi anahtarın hiçbiri cebinde değildi artık. Ama kapıların nasıl açıldığını öğrendiğinden, artık onlara ihtiyaç duymuyordu.
+--- Sayfa 11 ---
+[KAHRAMAN hal=ilgi] yolculuğunda bir de pek anlatmadığı şaşkınlık vardı. İlk kapının aynasında annesinin yüzünü gördüğünde, kendisinin ne kadar sık kolay bir cevaba kaçtığını düşünmüştü. Geçen hafta köy çeşmesinin yanında iki komşu tartışırken hangisinin haklı olduğunu dinlemeden karar vermişti. Sonra da olayı eksik öğrendiği anlaşılmıştı. Şimdi o eski hatasını hatırlıyordu. Dürüst olmak, yalnız başkalarına yalan söylememek değildi. İnsan bazen kendini daha iyi göstermek için hatalarını saklardı. Bir kapının önünde ayakta durup “Bilmiyorum,” diyebilmek de dürüstlüğün bir parçasıydı. [YOLDAŞ hal=ilgi yedek=bir arkadaşın] yünlerini toplarken başka bir sorun çıkmıştı. Deredeki su, sabahkinden daha hızlı akıyordu. [KAHRAMAN hal=yalin] dalı biraz daha uzattığında ayağı kaymış, dizinin üstüne düşmüştü. [YOLDAŞ hal=yalin yedek=bir arkadaş] önce gülmek istemiş, sonra [KAHRAMAN hal=ilgi] canının acıdığını görünce elini uzatmıştı. “İstersen köyden yardım isteyelim,” demişti. [KAHRAMAN hal=yalin], işi kendi başına başarmaya çalışmanın kahramanlık sayılacağını düşünüyordu. Fakat o anda yolun aşağısında duran çobanı çağırmak daha güvenliydi. Çoban uzun bir sırık getirdi; birlikte kalan demetleri sudan çıkardılar. [KAHRAMAN hal=yalin] sabrın inatla aynı şey olmadığını da böylece öğrendi. Bazen sabır, yeni bir yöntem bulacak kadar sakin kalmaktı.
+--- Sayfa 12 ---
+Sofradaki üçüncü kapıda yolcuların her birinin farklı ihtiyacı olduğu da ortaya çıkmıştı. Biri saatlerdir yürüdüğü için çok açtı; öteki küçük çocuğuna çorba götürmek istiyordu. [KAHRAMAN hal=yalin] herkesin tabağına aynı miktarı koymanın her zaman adalet anlamına gelmeyebileceğini düşündü. Çocuğa ayrılan payı biraz artırdılar, en aç olana da ekmek verdiler. Sofrayı kuran yaşlı kadın, “[VURGU "Paylaşmak yalnız eşit bölmek değildir"]; bazen ihtiyacı görmek gerekir,” dedi. [KAHRAMAN hal=yalin] ilk kez bir sözcüğün içinde birden çok anlam saklı olabileceğini hissetti. Köydeki su yolu açılınca suyu hangi tarlaya ne zaman verecekleri konusunda da benzer sorularla karşılaşacaklardı.
+--- Sayfa 13 ---
+Kuşların bulunduğu bahçeden geçerken, sesini en çok yükseltenin haklı olduğunu sanmasının başka bir nedeni vardı. Köy meydanında büyükler konuşurken çocukların soruları sık sık duyulmazdı. [KAHRAMAN hal=yalin] da bir süre sonra derdini anlatmak için bağırmaya başlamıştı. Oysa [YOLDAŞ hal=ilgi yedek=bir arkadaşın] deredeki sakin sesi ona daha çok şey öğretmişti. Bahçe kapısının eşiğinde durup ince kuşa teşekkür etti: “Beni yanlış yola gönderdin ama önemli bir şeyi fark ettirdin.” Kuş başını eğdi, sanki bu sözden memnunmuş gibi kısa bir ötüş çıkardı. [KAHRAMAN hal=yalin], her yanlış kararın bir ders taşıyabileceğini, yeter ki neden yanlış olduğunu anlamaya çalışmak gerektiğini düşündü. Tüccarın yüzüğünü reddettikten sonra cebindeki gerçek anahtarları saymıştı. Yedi anahtardan yalnızca beşi duruyordu. İki anahtarın ne zaman kaybolduğunu hatırlamıyordu. Önce telaşlandı; öteki kapıları açamazsa ne olacaktı? Sonra onların zaten kapıları açtıktan sonra kaybolduğunu fark etti. Belki de anahtarların amacı kapının ardında saklanmak değildi. Tüccarın onu kandırmak için “hiç kimse görmeyecek” demesi de aynı nedenle işe yaramamıştı: Yaptığı seçimi hatırlayan biri, kendi tanığıydı. [KAHRAMAN hal=yalin] bu düşünceyi aklında tutarak karanlık altıncı kapıya daha dikkatli girdi.
+--- Sayfa 14 ---
+Yarasanın bulunduğu odada ışık yakmak istemişti; elindeki çakmak taşıyla kıvılcım çıkarmanın iyi bir fikir olmadığını hemen anladı. Duvarlardaki kuru otlar tutuşabilirdi. Dışarıdaki gündüz ışığını içeri almak için kapıyı daha geniş açtı. Yarasanın etrafında koşmak yerine sakin kaldı ve alanı boş bıraktı. İpin halkası gevşediğinde hayvan kendiliğinden kanadını kurtardı. [KAHRAMAN hal=yalin] yarasaya dokunmadı; doğal yaşamda yabani hayvanlara yaklaşmanın risklerini bildiğinden yalnızca uzaktan yardımcı oldu. Cesaret kapısının onu korkusunu yenmeye değil, korkuyla birlikte sağlıklı düşünmeye çağırdığını böyle anladı.
+--- Sayfa 15 ---
+Su yolu çalışmaya başlayınca köyün önüne yeni bir soru çıktı. Suyu herkes aynı anda kullanmak istiyordu. Değirmenci ilk önce kendi değirmeninin dolmasını önerdi; tarlasındaki sebzeler kuruyan komşu ise suyun önce oraya gitmesini istedi. [KAHRAMAN hal=yalin] sesini yükseltmedi. Üçüncü kapıdaki sofrayı hatırlatarak bir sıra planı yapmalarını önerdi. Her tarla için gereken su miktarını bilen kişiler konuştu. Biri cetvel, biri eski su defteri getirdi. İlk hazırlanan çizelge herkesi memnun etmedi ama herkesin gerekçesi duyulduğunda yeni bir plan üzerinde anlaştılar. [KAHRAMAN hal=yalin] burada yalnız yedi kapının değil, köy yaşamının da sürekli açık tutulması gereken kapıları olduğunu gördü: Dinlemek, paylaşmak ve gerektiğinde fikrini değiştirmek. Bir akşam annesi, “Masalın en güzel yeri hangisiydi?” diye sordu. [KAHRAMAN hal=yalin], kapıların taş duvarlarını, uçan kuşları veya parlayan yüzüğü anlatmadı. “[YOLDAŞ hal=ilgi yedek=bir arkadaşın] yünleri sudan çıkınca güldüğü an,” dedi. “Çünkü o an bir kapıyı geçtiğimi bile bilmiyordum.” Annesi, “Demek ki iyi davranışın ödülünü bekleyerek yapmadın,” diye cevap verdi. [KAHRAMAN hal=yalin] düşündü. Belki de yedi kapının asıl amacı, insanın güzel sözleri ezberlemesi değil, gündelik hayatın küçük anlarında onlara karşılık bulmasıydı.
+--- Sayfa 16 ---
+[KAHRAMAN hal=yalin], o günden sonra köyün çocuklarıyla her ay bir “söz günü” düzenledi. Herkes bir deyim seçiyor, sonra o deyimin günlük hayatta hangi davranışla anlam kazandığını anlatıyordu. Bir çocuk “etekleri zil çalmak” deyimini gerçekten eteklere zil takmak sanmıştı. Hep birlikte gülüştüler; ardından çok sevinmek anlamını öğrendiler. Masal bitmişti ama sözcüklerin açtığı kapılar kapanmıyordu.
+--- Sayfa 17 ---
+- Dil: Mecaz anlam, deyimler: “kulak vermek”, atasözleri: “Bir elin nesi var...” ve “Sabreden derviş...”. - Değerler: Dürüstlük, sabır, paylaşma, dinleme, ölçülülük, düşünülmüş cesaret, verilen sözü tutma. - Kaynak: [KAHRAMAN hal=yalin] karakteri ve anonim masal geleneğinden esinlenen yeni anlatı; yayımlanmış bir modern uyarlamanın kopyası değildir.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=A
+  Metin: Kâğıtta yazan cümleye göre yedi kapıyı geçen kişi ne yapar?
+  A) Dileğini kendi eliyle kurar
+  B) Altın anahtar bulur
+  C) Köyü terk eder
+  D) Hiç konuşmaz
+  Açıklama: Kâğıtta, yedi kapıyı geçen kişinin dileğini kendi eliyle kuracağı yazıyordu.
+s2 [cikarim] dayanak_sayfa=3 doğru=A
+  Metin: Keloğlan ilk kapıdan sonra neden anahtarı cebine koydu?
+  A) Aynada kendi davranışını görüp dürüst olmayı seçtiği için
+  B) Anahtarın altın olduğu için
+  C) Bir yarasa ona verdiği için
+  D) Tüccar ona yüzük verdiği için
+  Açıklama: Aynada annesinin yüzünü gören Keloğlan, dürüst olmanın anahtarını hak ettiğini anladı.
+s3 [yorumlama] dayanak_sayfa=12 doğru=A
+  Metin: Yaşlı kadına göre paylaşmak nedir?
+  A) Herkese eşit bölmek değil, ihtiyacı görmek
+  B) Hiç vermemek
+  C) Sadece kendine ayırmak
+  D) Yalnızca yemek yemek
+  Açıklama: Paylaşmak, herkesin ihtiyacını dikkate almayı da içerir.
+s4 [sozcuk_baglami] dayanak_sayfa=6 doğru=A
+  Metin: Metinde kurnazlık sözcüğü ne anlama gelir?
+  A) Dürüst olmayan yollarla çıkar sağlama becerisi
+  B) Çok uyumak
+  C) Dikkatlice dinlemek
+  D) Hızlı koşmak
+  Açıklama: Kurnazlık, çoğu zaman dürüstlükten uzak akıllılıktır.
+
+## Sözlük
+- hr049_esik | kelime | yazım: eşiğin | 4–6 | anlam: Kapının alt kısmındaki, geçiş yapılan eşik çıkıntısı.
+- hr049_kapi | kelime | yazım: kapı | 4–6 | anlam: Bir yerin girişini kapatıp açan bölüm.
+- hr049_heybe | kelime | yazım: heybesine | 4–6 | anlam: Yolculukta eşya taşımak için omuza asılan torba.
+- hr049_canta | kelime | yazım: çanta | 4–6 | anlam: Eşya koymak için kullanılan taşıma kabı.
+- hr049_sepet | kelime | yazım: sepet | 4–6 | anlam: Ürün taşımak için örülmüş kap.
+- hr049_kurnazlik | kelime | yazım: kurnazlıkla | 4–6 | anlam: Dürüst olmayan yollarla çıkar sağlama becerisi.
+- hr049_hile | kelime | yazım: hile | 4–6 | anlam: Kuralları gizlice çiğneyerek sağlanan çıkar.
+- hr049_durustluk | kelime | yazım: dürüstlük | 4–6 | anlam: Doğru ve açık davranma.
+- hr049_kulak_vermek | deyim | yazım: kulak vermek | 4–6 | anlam: Dikkatle dinlemek.
+- hr049_kulak_asmak | deyim | yazım: kulak asmamak | 4–6 | anlam: Söylenene önem vermeyip dinlememek.
+- hr049_kulagina_kupe | deyim | yazım: kulağına küpe olmak | 4–6 | anlam: Söylenen bir sözü ders alıp unutmamak.
+
+## Deyim cümleleri
+- hr049_kulak_vermek: [{"t":"metin","v":"Yolun sonunda küçük bir not buldu: Kulak vermek, yalnız sesi duymak değildir."}]
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

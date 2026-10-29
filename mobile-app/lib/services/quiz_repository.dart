@@ -3,10 +3,12 @@ import 'dart:math';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 import '../models/challenge_models.dart';
+import '../models/deneme_hak_models.dart';
 import '../models/league_models.dart';
 import '../models/membership_models.dart';
 import '../models/mock_exam_models.dart';
 import '../models/models.dart';
+import '../models/mufredat_models.dart';
 import '../models/parent_link_models.dart';
 import '../models/privacy_models.dart';
 
@@ -23,7 +25,7 @@ class QuizRepository {
   SupabaseClient get supabaseClient => _client;
 
   static const _questionColumns =
-      'id, ders, konu, alt_konu, zorluk, soru_metni, siklar';
+      'id, ders, konu, alt_konu, zorluk, soru_metni, siklar, gorsel_svg, gorsel_alt_metin, gorsel_tip';
 
   String get _uid {
     final user = _client.auth.currentUser;
@@ -192,6 +194,39 @@ class QuizRepository {
     ];
   }
 
+  /// public.get_mufredat_haritasi(p_ders, p_tarih) — müfredat haftaları ve kazanım sayıları.
+  /// Sınıf sunucuda `my_sinif()` ile belirlenir; istemciden gönderilmez.
+  Future<MufredatHaritasi> fetchMufredatHaritasi(String ders) async {
+    final res = await _client.rpc('get_mufredat_haritasi', params: {
+      'p_ders': ders,
+      'p_tarih': null,
+    });
+    return MufredatHaritasi.fromMap(Map<String, dynamic>.from(res as Map));
+  }
+
+  /// public.get_mufredat_sorulari(...) — müfredat moduna göre soru seti.
+  /// [mod]: 'bu_hafta' | 'bugune_kadar' | 'hafta' (+[hafta]) | 'kazanim' (+[kazanimKodlari]).
+  /// Soru alanları [fetchQuizQuestions] ile aynıdır; ek olarak kazanim_kodu ve hafta gelir.
+  Future<List<Question>> fetchMufredatSorulari({
+    required String ders,
+    required String mod,
+    int? hafta,
+    List<String>? kazanimKodlari,
+    int limit = 10,
+  }) async {
+    final res = await _client.rpc('get_mufredat_sorulari', params: {
+      'p_ders': ders,
+      'p_mod': mod,
+      'p_hafta': hafta,
+      'p_kazanim_kodlari': kazanimKodlari,
+      'p_limit': limit.clamp(1, 30),
+    });
+    return [
+      for (final m in (res as List? ?? const []))
+        Question.fromMap(Map<String, dynamic>.from(m as Map)),
+    ];
+  }
+
   Future<List<BadgeInfo>> fetchBadges() async {
     final data = await _client.rpc('get_student_badges', params: {
       'p_student_id': _uid,
@@ -226,6 +261,17 @@ class QuizRepository {
       return MembershipStatus.fromMap(Map<String, dynamic>.from(row));
     } catch (_) {
       return MembershipStatus.unknown;
+    }
+  }
+
+  /// Çocuğun kendi ücretsiz deneme durumu. Hata = bilinmiyor; kart gösterilmez.
+  Future<DenemeHak> fetchDenemeHak() async {
+    try {
+      final data = await _client.rpc('deneme_hak_durumu');
+      if (data is! Map) return DenemeHak.unknown;
+      return DenemeHak.fromMap(Map<String, dynamic>.from(data));
+    } catch (_) {
+      return DenemeHak.unknown;
     }
   }
 

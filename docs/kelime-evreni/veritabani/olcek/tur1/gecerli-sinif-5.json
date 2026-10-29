@@ -1,0 +1,884 @@
+[
+ {
+  "t": "es_anlamli",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "dost",
+   "anlam": "Güvenilen, sevilen yakın kişi.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“Zor günlerinde yanında olan sadık bir dost bulmuştu.” cümlesindeki “dost” sözcüğüyle eş anlamlı olan hangisidir?",
+  "o": [
+   "arkadaş",
+   "komşu",
+   "akraba",
+   "yabancı"
+  ],
+  "d": 0,
+  "a": "Dost ile arkadaş yakın anlamlıdır. Komşu ve akraba yakınlık bildirir ama aynı şey değildir; yabancı ise karşıt anlamlıdır.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "fakir",
+   "anlam": "Geçimini zor sağlayan, parası az olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Köydeki fakir aileye kışlık odun götürdük.” cümlesindeki “fakir” sözcüğüyle eş anlamlı olan hangisidir?",
+  "o": [
+   "zengin",
+   "yoksul",
+   "yorgun",
+   "kalabalık"
+  ],
+  "d": 1,
+  "a": "Fakir ile yoksul aynı anlamdadır. Zengin zıt anlamlıdır; yorgun ve kalabalık anlamca ilgisizdir.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "azim",
+   "anlam": "Bir işi bırakmadan sürdürme isteği.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“Dağın tepesine çıkmak büyük bir azim gerektirdi.” cümlesindeki “azim” sözcüğüyle eş anlamlı olan hangisidir?",
+  "o": [
+   "tembellik",
+   "korku",
+   "kararlılık",
+   "merak"
+  ],
+  "d": 2,
+  "a": "Azim, kararlılık demektir. Tembellik karşıt, korku ve merak ilgisiz duygulardır.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "yardım",
+   "anlam": "Zor durumdaki birine destek olma.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“Zor anımda komşularımın yardımı çok işe yaradı.” cümlesindeki “yardımı” sözcüğüyle eş anlamlı olan hangisidir?",
+  "o": [
+   "engel",
+   "ceza",
+   "ödül",
+   "destek"
+  ],
+  "d": 3,
+  "a": "Yardım ile destek yakın anlamlıdır. Engel karşıt; ceza ve ödül ilgisizdir.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "sakin",
+   "anlam": "Dalgasız, durgun, huzurlu.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Fırtınadan sonra deniz çok sakindi.” cümlesindeki “sakindi” sözcüğüyle eş anlamlı olan hangisidir?",
+  "o": [
+   "dingin",
+   "dalgalı",
+   "derin",
+   "soğuk"
+  ],
+  "d": 0,
+  "a": "Sakin ile dingin durgunluk bildirir. Dalgalı karşıt anlamlıdır; derin ve soğuk başka özelliklerdir.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "imkân",
+   "anlam": "Bir şeyi yapmaya elverişli durum.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“Okulumuzda bilgisayar kullanma imkânı vardı.” cümlesindeki “imkânı” sözcüğüyle eş anlamlı olan hangisidir?",
+  "o": [
+   "zorunluluk",
+   "olanak",
+   "yasak",
+   "merak"
+  ],
+  "d": 1,
+  "a": "İmkân, olanak demektir. Zorunluluk ve yasak karşıt yönde, merak ilgisizdir.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "zahmet",
+   "anlam": "Bir iş için çekilen güçlük ve emek.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“Eski kitapları rafa dizmek büyük zahmet istedi.” cümlesindeki “zahmet” sözcüğüyle eş anlamlı olan hangisidir?",
+  "o": [
+   "kazanç",
+   "eğlence",
+   "güçlük",
+   "fırsat"
+  ],
+  "d": 2,
+  "a": "Zahmet, güçlük ve emek demektir. Kazanç, eğlence ve fırsat bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "es_anlamli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "mesele",
+   "anlam": "Üzerinde durulup çözülmesi gereken konu.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“Bu mesele yarınki toplantıda konuşulacak.” cümlesindeki “mesele” sözcüğüyle eş anlamlı olan hangisidir?",
+  "o": [
+   "yarış",
+   "gezi",
+   "ödev",
+   "sorun"
+  ],
+  "d": 3,
+  "a": "Mesele, sorun demektir. Yarış, gezi ve ödev bu anlamı taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "cömert",
+   "anlam": "Elindekini paylaşmaktan çekinmeyen.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Komşumuz paylaşmayı seven cömert biridir.” cümlesindeki “cömert” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "cimri",
+   "sessiz",
+   "titiz",
+   "neşeli"
+  ],
+  "d": 0,
+  "a": "Cömert paylaşan, cimri ise elindekini paylaşmayan kişidir; zıt anlamlıdır. Diğerleri ilgisiz özelliklerdir.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "yumuşak",
+   "anlam": "Dokunulunca bastırılabilen, sert olmayan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Yumuşak minderin üzerine oturdum.” cümlesindeki “yumuşak” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "ince",
+   "sert",
+   "kısa",
+   "eski"
+  ],
+  "d": 1,
+  "a": "Yumuşağın zıddı serttir. İnce, kısa ve eski başka özelliklerdir.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "ağır",
+   "anlam": "Tartıda çok gelen.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Bu çanta çok ağır.” cümlesindeki “ağır” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "küçük",
+   "dolu",
+   "hafif",
+   "eski"
+  ],
+  "d": 2,
+  "a": "Ağırın zıddı hafiftir. Küçük, dolu ve eski ağırlıkla doğrudan karşıt değildir.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "aydınlık",
+   "anlam": "Işığı bol olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Oda gün boyu çok aydınlıktı.” cümlesindeki “aydınlıktı” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "geniş",
+   "sıcak",
+   "sessiz",
+   "karanlık"
+  ],
+  "d": 3,
+  "a": "Aydınlığın zıddı karanlıktır. Geniş, sıcak ve sessiz ışıkla ilgili değildir.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "azalmak",
+   "anlam": "Miktarı küçülmek, eksilmek.",
+   "tur": "kelime",
+   "sozcuk_turu": "fiil"
+  },
+  "q": "“Kış geldikçe gündüzlerin uzunluğu azalmaya başladı.” cümlesindeki “azalmak” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "artmak",
+   "değişmek",
+   "durmak",
+   "bitmek"
+  ],
+  "d": 0,
+  "a": "Azalmanın zıddı artmaktır. Değişmek, durmak ve bitmek miktarın tersine dönmesi değildir.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "dar",
+   "anlam": "Eni az olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Bu sokak o kadar dar ki araba giremiyor.” cümlesindeki “dar” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "uzun",
+   "geniş",
+   "düz",
+   "eski"
+  ],
+  "d": 1,
+  "a": "Darın zıddı geniştir. Uzun, düz ve eski eniyle ilgili karşıt değildir.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "kolay",
+   "anlam": "Yapılması güç olmayan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Bu bulmacayı çözmek çok kolaydı.” cümlesindeki “kolaydı” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "kısa",
+   "eğlenceli",
+   "zor",
+   "sessiz"
+  ],
+  "d": 2,
+  "a": "Kolayın zıddı zordur. Kısa, eğlenceli ve sessiz karşıt anlam taşımaz.",
+  "ip": null
+ },
+ {
+  "t": "zit_anlamli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "yararlı",
+   "anlam": "Fayda sağlayan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Yeşil sebze sağlığa çok yararlıdır.” cümlesindeki “yararlıdır” sözcüğünün zıt anlamlısı hangisidir?",
+  "o": [
+   "lezzetli",
+   "pahalı",
+   "doğal",
+   "zararlı"
+  ],
+  "d": 3,
+  "a": "Yararlının zıddı zararlıdır. Lezzetli, pahalı ve doğal karşıt değildir.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "yüz",
+   "anlam": "Sayı olarak doksan dokuzdan sonra gelen sayı.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “yüz” sözcüğü sayı anlamında kullanılmıştır?",
+  "o": [
+   "Bu kutunun içinde yüz tane boncuk var.",
+   "Sabah yüzünü sabunla yıkayıp çıktı.",
+   "Havuzda kollarını açıp rahatça yüz.",
+   "Kumaşın yüzü pürüzsüz, tersi tüylüydü."
+  ],
+  "d": 0,
+  "a": "Yalnız ilk cümlede “yüz”, sayı anlamındadır. Diğerleri surat, yüzmek ve kumaşın ön tarafı anlamındadır.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "kır",
+   "anlam": "Şehir dışındaki açık, yeşil alan.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “kır” sözcüğü şehir dışındaki açık alan anlamında kullanılmıştır?",
+  "o": [
+   "Bardağı düşürüp kırma, dikkatli taşı.",
+   "Hafta sonu ailece kırda yürüyüşe çıktık.",
+   "Kır saçlı amcam bize el salladı.",
+   "Küçük bir hata yüzünden kalbini kırma."
+  ],
+  "d": 1,
+  "a": "Yalnız ilk cümlede kır, açık alan anlamındadır. Diğerleri kırmak fiili ve saç rengi anlamındadır.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "yaz",
+   "anlam": "Yılın dört mevsiminden biri.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “yaz” sözcüğü mevsim anlamında kullanılmıştır?",
+  "o": [
+   "Cümleyi deftere temiz bir el yazısıyla yaz.",
+   "Tahtaya bugünün tarihini büyükçe yaz.",
+   "Yaz tatilinde dedemlerin köyüne gideceğiz.",
+   "Soruların cevabını kâğıda kurşun kalemle yaz."
+  ],
+  "d": 2,
+  "a": "Yalnız ilk cümlede yaz, mevsim anlamındadır. Diğerleri yazmak fiilidir.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "at",
+   "anlam": "Binek ve yük hayvanı.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “at” sözcüğü hayvan anlamında kullanılmıştır?",
+  "o": [
+   "Topu arkadaşına doğru yavaşça at.",
+   "Çöpleri akşam mutlaka kutuya at.",
+   "Taşı gölün ortasına doğru at.",
+   "Çiftlikte beyaz bir at sabah otluyordu."
+  ],
+  "d": 3,
+  "a": "Yalnız ilk cümlede at, hayvandır. Diğerleri atmak fiilidir.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "gözden çıkarmak",
+   "anlam": "Bir şeyden vazgeçmeyi göze almak.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Yolculuk için biriktirdiği harçlığı gözden çıkardı.” cümlesindeki “gözden çıkarmak” deyimi ne anlama gelir?",
+  "o": [
+   "Bir şeyden vazgeçmeyi göze almak",
+   "Bir şeye çok dikkat etmek",
+   "Bir şeyi çok uzaktan görmek",
+   "Bir şeyi başkasına armağan etmek"
+  ],
+  "d": 0,
+  "a": "Gözden çıkarmak, bir şeyden vazgeçmeyi göze almaktır. Diğerleri deyimin anlamı değildir.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "ağzı kulaklarına varmak",
+   "anlam": "Çok sevinmek.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Karnesini görünce babasının ağzı kulaklarına vardı.” cümlesindeki “ağzı kulaklarına varmak” deyimi ne anlama gelir?",
+  "o": [
+   "Çok şaşırmak",
+   "Çok sevinmek",
+   "Çok utanmak",
+   "Çok kızmak"
+  ],
+  "d": 1,
+  "a": "Ağzı kulaklarına varmak, çok sevinmektir. Diğer duygular deyimin anlamı değildir.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "kulak vermek",
+   "anlam": "Dikkatle dinlemek.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Konuşmacının söylediklerine kulak verdik.” cümlesindeki “kulak vermek” deyimi ne anlama gelir?",
+  "o": [
+   "Yüksek sesle konuşmak",
+   "Duymazlıktan gelmek",
+   "Dikkatle dinlemek",
+   "Hemen cevap vermek"
+  ],
+  "d": 2,
+  "a": "Kulak vermek, dikkatle dinlemektir. Duymazlıktan gelmek ters anlamlıdır.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "göz yummak",
+   "anlam": "Bir kusuru bilerek görmezden gelmek.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Öğretmen küçük bir kusura göz yumdu.” cümlesindeki “göz yummak” deyimi ne anlama gelir?",
+  "o": [
+   "Bir hatayı hemen düzeltmek",
+   "Bir olayı çok merak etmek",
+   "Bir sorunu herkese anlatmak",
+   "Bir kusuru görmezden gelmek"
+  ],
+  "d": 3,
+  "a": "Göz yummak, bir kusuru görmezden gelmektir. Diğer şıklar deyimin anlamı değildir.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "yüreği ağzına gelmek",
+   "anlam": "Çok korkmak.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Karanlık odada bir ses duyunca yüreği ağzına geldi.” cümlesindeki “yüreği ağzına gelmek” deyimi ne anlama gelir?",
+  "o": [
+   "Çok korkmak",
+   "Çok üzülmek",
+   "Çok yorulmak",
+   "Çok utanmak"
+  ],
+  "d": 0,
+  "a": "Yüreği ağzına gelmek, çok korkmaktır. Diğer şıklar deyimin anlamı değildir.",
+  "ip": null
+ },
+ {
+  "t": "deyim",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "pireyi deve yapmak",
+   "anlam": "Önemsiz bir şeyi büyütmek.",
+   "tur": "deyim",
+   "sozcuk_turu": null
+  },
+  "q": "“Ufak bir çizik için pireyi deve yaptı.” cümlesindeki “pireyi deve yapmak” deyimi ne anlama gelir?",
+  "o": [
+   "Basit bir olayı hemen unutmak",
+   "Basit bir olayı fazlaca büyütmek",
+   "Basit bir olayı gizli tutmak",
+   "Basit bir olaya çok sevinmek"
+  ],
+  "d": 1,
+  "a": "Pireyi deve yapmak, basit bir şeyi gereğinden fazla büyütmektir.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "Damlaya damlaya göl olur.",
+   "anlam": "Az az biriken şeyler zamanla çok olur.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Damlaya damlaya göl olur.” atasözü hangi durumu anlatır?",
+  "o": [
+   "Yağmurlu havada göller taşar.",
+   "Su içmek sağlığa yararlıdır.",
+   "Az az biriken şeyler zamanla çoğalır.",
+   "Kuraklık her yeri etkiler."
+  ],
+  "d": 2,
+  "a": "Atasözü birikimin zamanla büyüdüğünü anlatır.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "Ağaç yaşken eğilir.",
+   "anlam": "Eğitim küçük yaşta daha kolay verilir.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Ağaç yaşken eğilir.” atasözü hangi durumu anlatır?",
+  "o": [
+   "Büyükler yeni şeyleri daha çabuk öğrenir.",
+   "Ağaçlar sulanınca hızlı büyür.",
+   "Rüzgâr fidanları devirir.",
+   "Eğitim erken dönemde daha kolay verilir."
+  ],
+  "d": 3,
+  "a": "Atasözü, eğitimin erken dönemde daha etkili olduğunu anlatır.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "Sakla samanı, gelir zamanı.",
+   "anlam": "Bugün işe yaramayan şey ileride gerekebilir.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Sakla samanı, gelir zamanı.” atasözü hangi durumu anlatır?",
+  "o": [
+   "Bugün işe yaramayan şey ileride gerekebilir.",
+   "Eski eşyalar ev içinde yer kaplar.",
+   "Çalışmadan kazanılan şey çabuk biter.",
+   "Her işin yapılacağı özel bir vakit vardır."
+  ],
+  "d": 0,
+  "a": "Atasözü, değersiz görünen şeylerin ileride gerekebileceğini anlatır.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "Bir elin nesi var, iki elin sesi var.",
+   "anlam": "İş birliği işi kolaylaştırır.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Bir elin nesi var, iki elin sesi var.” atasözü hangi durumu anlatır?",
+  "o": [
+   "Alkış tutmak moral verir.",
+   "Birlikte çalışmak işi kolaylaştırır.",
+   "Tek başına çalışan daha hızlı yapar.",
+   "Eller temiz tutulursa hastalık olmaz."
+  ],
+  "d": 1,
+  "a": "Atasözü, iş birliğinin gücünü anlatır.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "yorgun",
+   "anlam": "Gücü azalmış, dinlenmeye ihtiyacı olan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Kapıdan yorgun bir yolcu girdi.” cümlesindeki “yorgun” sözcüğünün türü nedir?",
+  "o": [
+   "İsim",
+   "Fiil",
+   "Sıfat",
+   "Zarf"
+  ],
+  "d": 2,
+  "a": "“Yorgun”, “yolcu” adının niteliğini bildirir; sıfattır.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "yavaşça",
+   "anlam": "Yavaş bir biçimde.",
+   "tur": "kelime",
+   "sozcuk_turu": "zarf"
+  },
+  "q": "“Araba yokuşu yavaşça çıktı.” cümlesindeki “yavaşça” sözcüğünün türü nedir?",
+  "o": [
+   "İsim",
+   "Sıfat",
+   "Fiil",
+   "Zarf"
+  ],
+  "d": 3,
+  "a": "“Yavaşça”, “çıktı” eyleminin nasıl yapıldığını bildirir; zarftır.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 1,
+  "h": {
+   "kelime": "kaydı",
+   "anlam": "Kayma eylemini yaptı.",
+   "tur": "kelime",
+   "sozcuk_turu": "fiil"
+  },
+  "q": "“Gökyüzünde parlak bir yıldız kaydı.” cümlesindeki “kaydı” sözcüğünün türü nedir?",
+  "o": [
+   "Fiil",
+   "İsim",
+   "Sıfat",
+   "Zarf"
+  ],
+  "d": 0,
+  "a": "“Kaydı”, iş ve oluş bildirir; fiildir.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "o",
+   "anlam": "Üçüncü kişiyi gösteren söz.",
+   "tur": "kelime",
+   "sozcuk_turu": "zamir"
+  },
+  "q": "“Kitabı masaya o bıraktı.” cümlesindeki “o” sözcüğünün türü nedir?",
+  "o": [
+   "Sıfat",
+   "Zamir",
+   "Zarf",
+   "Bağlaç"
+  ],
+  "d": 1,
+  "a": "“O”, isim yerine kullanılmıştır; zamirdir.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "ama",
+   "anlam": "Karşıtlık bildiren söz.",
+   "tur": "kelime",
+   "sozcuk_turu": "baglac"
+  },
+  "q": "“Yağmur yağıyordu ama dışarı çıkmak istedik.” cümlesindeki “ama” sözcüğünün türü nedir?",
+  "o": [
+   "Edat",
+   "Zarf",
+   "Bağlaç",
+   "Zamir"
+  ],
+  "d": 2,
+  "a": "“Ama”, iki cümleyi karşıtlık ilgisiyle bağlar; bağlaçtır.",
+  "ip": null
+ },
+ {
+  "t": "sozcuk_turu",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "için",
+   "anlam": "Amaç ya da yarar bildiren söz.",
+   "tur": "kelime",
+   "sozcuk_turu": "edat"
+  },
+  "q": "“Bu hediyeyi senin için aldım.” cümlesindeki “için” sözcüğünün türü nedir?",
+  "o": [
+   "Bağlaç",
+   "Zarf",
+   "Fiil",
+   "Edat"
+  ],
+  "d": 3,
+  "a": "“İçin”, tek başına anlamı olmayan, kendinden önceki sözcüğe bağlanan edattır.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "temkinli",
+   "anlam": "Dikkatli ve ölçülü davranan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Buzlu yolda temkinli yürüdü; her adımını dikkatle atıp kaymamaya çalıştı.” cümlesinde “temkinli” sözcüğü ne anlama gelir?",
+  "o": [
+   "Dikkatli ve ölçülü",
+   "Hızlı ve telaşlı",
+   "Neşeli ve rahat",
+   "Öfkeli ve sert"
+  ],
+  "d": 0,
+  "a": "Cümledeki “dikkatle atıp kaymamaya çalıştı” ifadesi temkinli sözcüğünü açıklar.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "mahcup",
+   "anlam": "Utanmış, sıkılmış.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Verdiği sözü tutamadığı için mahcup oldu; yüzü kızardı, gözlerini yere indirdi.” cümlesinde “mahcup” sözcüğü ne anlama gelir?",
+  "o": [
+   "Kızgın",
+   "Utanmış",
+   "Yorgun",
+   "Şaşkın"
+  ],
+  "d": 1,
+  "a": "Yüzün kızarması ve gözlerin yere inmesi utanmayı gösterir.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 5,
+  "z": 2,
+  "h": {
+   "kelime": "ıssız",
+   "anlam": "Kimsenin bulunmadığı.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Kasabanın ıssız sokaklarında tek bir ışık yanmıyor, ses duyulmuyordu.” cümlesinde “ıssız” sözcüğü ne anlama gelir?",
+  "o": [
+   "Gürültülü ve canlı",
+   "Dar ve dolambaçlı",
+   "Kimsenin bulunmadığı",
+   "Temiz ve düzenli"
+  ],
+  "d": 2,
+  "a": "Işık ve ses olmaması sokağın boş ve kimsesiz olduğunu gösterir.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "tedirgin",
+   "anlam": "Huzursuz, rahatı kaçmış.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Karanlık koridorda tedirgin bir şekilde bekledi; her sesle yerinden sıçradı.” cümlesinde “tedirgin” sözcüğü ne anlama gelir?",
+  "o": [
+   "Sakin",
+   "Öfkeli",
+   "Mutlu",
+   "Huzursuz"
+  ],
+  "d": 3,
+  "a": "Her sesle sıçramak huzursuzluğu gösterir.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "ibret",
+   "anlam": "Bir olaydan çıkarılan ders.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“Bu olaydan ibret aldı; bir daha aynı hatayı yapmamaya karar verdi.” cümlesinde “ibret” sözcüğü ne anlama gelir?",
+  "o": [
+   "Ders çıkarılacak durum",
+   "Eğlenceli bir oyun",
+   "Değerli bir hediye",
+   "Büyük bir kazanç"
+  ],
+  "d": 0,
+  "a": "Aynı hatayı yapmamaya karar vermek, olaydan ders alındığını gösterir.",
+  "ip": null
+ },
+ {
+  "t": "baglamda_anlam",
+  "s": 5,
+  "z": 3,
+  "h": {
+   "kelime": "kıt",
+   "anlam": "Az bulunan.",
+   "tur": "kelime",
+   "sozcuk_turu": "sifat"
+  },
+  "q": "“Çölde su kıt olduğundan yolcular her damlayı dikkatle kullandı.” cümlesinde “kıt” sözcüğü ne anlama gelir?",
+  "o": [
+   "Çok tatlı",
+   "Az bulunan",
+   "Çok soğuk",
+   "Bol bulunan"
+  ],
+  "d": 1,
+  "a": "Her damlayı dikkatle kullanmak suyun az olduğunu gösterir.",
+  "ip": null
+ }
+]

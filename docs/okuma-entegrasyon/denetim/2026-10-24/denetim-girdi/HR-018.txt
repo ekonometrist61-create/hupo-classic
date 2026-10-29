@@ -1,0 +1,78 @@
+# HR-018 · Deniz Fenerindeki Sinyal · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=ccff0f6e-351e-4d70-a3d2-b2a77adb7478, surum_no=3, sha256=f68b17b1786bbfec6d1b7b37b9b3b9037edc2f4f0dfd6d8a6ea44c14616ef512
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr018-deniz-fenerindeki-sinyal | Tür: macera | Konu: deniz | Dünya: gercekci
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Her akşam yanan deniz feneri bu gece karanlık. Açıktaki tekne için kimi, nasıl uyarmak gerekir?
+İzinli türler: ben, arkadas
+Değer anahtarları (sürüm): D16, D20 | maarif.ana_deger: D16
+Etiketler: ana_sinif=3, okuma_zorlugu=2, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: guvenlik, dayanisma, dostluk | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: fener_hr018 (lexeme, first_hint: fener); sinyal_hr018 (lexeme, application: sinyal); ariza_hr018 (lexeme, application: arıza); kavram_hr018 (concept, application: Deniz güvenliği ve sorumlu bildirim); atasoz_hr018 (proverb, application: Acele işe şeytan karışır)
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":7,"simge_sayisi":17,"kelime_sayisi":394,"tahmini_sure_dk":6,"yoldas_yer_sayisi":8,"hedef_tur_dagilimi":{"lexeme":3,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Kıyıdaki deniz[İKON wave] feneri her akşam yanardı. O gece ise güneş[İKON sun] ufukta kaybolurken [KELİME yuva=pa_fener] karanlık kaldı. [KAHRAMAN hal=yalin], babasıyla yürüdüğü güvenli seyir terasında durup denize baktı. Açıkta bir teknenin ışıkları görünüyordu. "Fener[İKON lighthouse] neden yanmıyor?" diye sordu. Yanındaki arkadaşı [YOLDAŞ hal=yalin yedek=Hupo], fener binasına koşmayı önerdi. [KAHRAMAN hal=ilgi] babası hemen durdurdu: "İçeri girmek bizim işimiz değil. Görevli ekibe haber vermeliyiz."
+--- Sayfa 2 ---
+Terasta, liman işletmesinin acil iletişim numarasını gösteren bir pano vardı. Telefon çekiyordu. [KAHRAMAN hal=yalin] panodaki numarayı okudu, babası liman görevlisini aradı. Görevli, fenerin hangi tarafta ve ne zamandır karanlık olduğunu sordu. [KAHRAMAN hal=yalin] önce "Az önce," diyecekti, sonra düşündü. "Güneş[İKON sun] battığından beri," dedi. "Teknenin ışığını da görüyoruz ama fenerin ışığı yok." Görevli, durumu bakım defterine not[İKON notebook] alacağını söyledi.
+--- Sayfa 3 ---
+"İstersen kuleye kadar gidip kapısına bakalım," diye yineledi [YOLDAŞ hal=yalin yedek=Hupo], ama bu kez kendisi de duraksadı. Terasın aşağısında deniz[İKON wave] kabarıyor, dalgalar taşlara çarpıyordu. [KAHRAMAN hal=yalin], "Bizim gördüğümüzü anlatmamız yeterli," dedi. Babası görevliye telefonla konumlarını tarif ederken [KAHRAMAN hal=yalin] fenerin üst kısmındaki ışık yuvasını işaret[İKON flag] etti. Böylece hangi fenerden söz ettiklerini kesinleştirdiler.
+--- Sayfa 4 ---
+Telefon görüşmesi bittikten sonra [YOLDAŞ hal=yalin yedek=Hupo], denizdeki teknenin hâlâ ilerlediğini fark etti. "Görmüyorlar mı karanlığı?" diye kaygılandı. Babası, denizcilere yardım[İKON hand-help] etmenin yetkili ekiplerin görevi olduğunu ve teknelerin başka seyir araçları da kullandığını açıkladı. [YOLDAŞ hal=yalin yedek=Hupo], acele edip yanlış [KELİME yuva=pa_sinyal] vermenin işi karıştırabileceğini anladı. [KAHRAMAN hal=ilgi] babası sakin bir sesle, "[ATASÖZÜ yuva=pa_ata_acele]" dedi.
+--- Sayfa 5 ---
+[YOLDAŞ hal=yalin yedek=Hupo] duvara asılı eski bir bakım fotoğrafını fark etti. Fotoğrafın altında [VURGU "her ay kontrol"] yazıyordu. İkisi, liman görevlisinin telefonda sözünü ettiği bakım defterini merak[İKON curiosity] etti. Görevli, daha sonra çocuklara defterin nasıl[İKON question] tutulduğunu göstermeyi kabul etti. Bir süre sonra limanın servis aracı geldi. Görevliler fenerin elektrik sistemini güvenli biçimde kontrol etmeye başladılar. [KAHRAMAN hal=yalin] ve [YOLDAŞ hal=yalin yedek=Hupo] terastan ayrılmadılar.
+--- Sayfa 6 ---
+Rüzgâr[İKON wind] güçlenirken denizdeki tekne[İKON boat] liman yetkililerinden yönlendirme aldı. Nihayet yüksek kulede beyaz bir ışık döndü. [YOLDAŞ hal=yalin yedek=Hupo] sevinçle, "Yanıyor!" dedi. [KAHRAMAN hal=yalin] ise rahat bir nefes aldı. O sırada görevli yanlarına geldi: "Bu [KELİME yuva=pa_ariza] konusunda bize erken haber verdiniz. Yapılması gerekeni doğru yaptınız." [İŞARET kod=deniz] Ertesi gün görevli, bakım defterinin bir kopyasını gösterdi. Tarih, saat[İKON clock], gözlenen sorun ve yapılan işlem ayrı sütunlarda yazılıydı.
+--- Sayfa 7 ---
+[KAHRAMAN hal=yalin] defterdeki kaydı okudu: "Akşam kontrolünde ışık devresi arızası giderildi." "Demek bir sinyal bazen yalnız ışık değildir," dedi. "Doğru bilgiyi doğru kişiye ulaştırmak da bir işaret olabilir." [YOLDAŞ hal=yalin yedek=Hupo] bu sözü çok sevdi. Deniz[İKON wave] fenerinin resmini çizdi; altına üç kelime yazdı: [VURGU "gözle, bildir, güvende kal"]. Bir sonraki akşam fener[İKON lighthouse] yanarken iki arkadaş[İKON friends] ışığa değil, birlikte yaptıkları doğru işe bakıp gülümsediler.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=C
+  Metin: Çocuk, görevliye fenerin ne zamandır karanlık olduğunu nasıl anlattı?
+  A) Dün geceden beri
+  B) Az önce başladığını
+  C) Güneş battığından beri
+  Açıklama: Çocuk önce "Az önce" demek istedi, sonra düşünüp "Güneş battığından beri" dedi.
+s2 [cikarim] dayanak_sayfa=1 doğru=A
+  Metin: Çocuğun babası neden fener binasına girmelerine izin vermedi?
+  A) Bunun yetkili ekibin işi olduğunu düşündüğü için
+  B) Telefonu çalışmadığı için
+  C) Karanlıktan korktuğu için
+  Açıklama: Baba, içeri girmenin onların işi olmadığını, görevli ekibe haber vermeleri gerektiğini söyledi.
+s3 [yorumlama] dayanak_sayfa=7 doğru=B
+  Metin: "Bir sinyal bazen yalnız ışık değildir" sözüyle çocuk neyi anlatmak istedi?
+  A) Işığın hiç önemli olmadığını
+  B) Doğru bilgiyi doğru kişiye ulaştırmanın da bir işaret olabileceğini
+  C) Teknelerin feneri kullanmaması gerektiğini
+  Açıklama: Çocuk, arızayı doğru kişiye bildirmenin de bir işaret olduğunu söyledi.
+s4 [sozcuk_baglami] dayanak_sayfa=6 doğru=C
+  Metin: Metinde geçen arıza sözcüğü ne anlama gelir?
+  A) Bir yerin boyanması
+  B) Bir şeyin yenilenmesi
+  C) Bir şeyin çalışmasını bozan sorun
+  Açıklama: Fenerin ışığının yanmaması bir arızaydı; ekip bu sorunu giderdi.
+s5 [hatirlama] dayanak_sayfa=5 doğru=B
+  Metin: Servis aracı gelince görevliler ne yaptı?
+  A) Tekneyi limana çekti
+  B) Fenerin elektrik sistemini güvenli biçimde kontrol etti
+  C) Fener kulesini boyadı
+  Açıklama: Görevliler fenerin elektrik sistemini güvenli biçimde kontrol etmeye başladı.
+
+## Sözlük
+- pa_fener | kelime | yazım: fener | 3–3 | anlam: Karanlıkta yol göstermek için ışık yayan yüksek yapı veya araç.
+- pa_sinyal | kelime | yazım: sinyal | 3–3 | anlam: Bir şeyi haber vermek için gönderilen ışık, ses ya da işaret.
+- pa_ariza | kelime | yazım: arıza | 3–3 | anlam: Bir şeyin çalışmasını bozan sorun.
+- pa_ata_acele | atasozu | yazım: Acele işe şeytan karışır | 3–3 | anlam: Telaşla yapılan işlerde hata yapmak kolaylaşır.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

@@ -12,6 +12,7 @@ import {
   inputClass,
   primaryBtn,
 } from "@/components/yonetim/panel/styles";
+import DenemeSinirlariKarti from "@/components/yonetim/ayarlar/DenemeSinirlariKarti";
 import { dokunmaHedefi } from "@/components/yonetim/ui/responsive";
 import {
   isoToTurkiyeInput,
@@ -469,6 +470,8 @@ export default function AyarlarPage() {
           <div className={`${cardClass} md:hidden`}>
             {satirlar.map((s) => satirGoster(s, false))}
           </div>
+
+          <DenemeSinirlariKarti />
         </>
       )}
     </div>

@@ -1,0 +1,285 @@
+[
+ {
+  "id": "MAT5-E-001",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.2",
+  "surec_bileseni": "a",
+  "konu": "Cebir",
+  "alt_konu": "Problemde işlem önceliği",
+  "soru_metni": "Bir kafede girişte bir kez 30 TL sabit ücret alınıyor. Ayrıca 6 kişilik her masa için 5 TL servis ücreti isteniyor. 48 kişilik bir grup 6’şar kişilik masalara oturacaktır. Grup toplam kaç TL öder?",
+  "siklar": {
+   "A": "65",
+   "B": "70",
+   "C": "38",
+   "D": "190"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce kaç masa gerektiğini bul; sabit ücretin masa sayısından bağımsız olduğunu unutma.",
+  "cozum_adimlari": [
+   "Masa sayısı 48 ÷ 6 = 8’dir.",
+   "Servis ücreti 8 × 5 = 40 TL’dir; sabit ücret yalnızca bir kez eklenir.",
+   "Toplam ödeme 30 + 40 = 70 TL’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İşlemleri soldan sağa sırayla yapma: sabit ücreti kişi sayısına ekleyip masa sayısına bölme, (30 + 48) ÷ 6 × 5.",
+   "B": "Doğru.",
+   "C": "Masa sayısını bulup 5 TL ile çarpmayı unutma; 30 + 8 bulma, ara sonucu nihai sanma.",
+   "D": "Toplamayı çarpmadan önce yapma: sabit ücreti de masa ücretiyle çarpma, (30 + 8) × 5."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "30+48/6*5",
+   "beklenen_sonuc": 70
+  }
+ },
+ {
+  "id": "MAT5-E-002",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.2",
+  "surec_bileseni": "b",
+  "konu": "Cebir",
+  "alt_konu": "Parantezli çok adımlı işlem",
+  "soru_metni": "Bir fırında pişirilen 20 tepsi ekmeğin 8 tepsisi satıldı; her tepside 6 ekmek vardı. Kalan ekmekler 4 kutuya eşit dağıtıldı ve her kutuya ayrıca 5 simit kondu. Bir kutudaki ürün sayısı kaçtır?",
+  "siklar": {
+   "A": "33",
+   "B": "53",
+   "C": "123",
+   "D": "23"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce satılmayan tepsi sayısını bul, sonra ekmek sayısına geç; simitler en son eklenir.",
+  "cozum_adimlari": [
+   "Satılmayan tepsi sayısı 20 − 8 = 12’dir.",
+   "Kalan ekmek sayısı 12 × 6 = 72’dir.",
+   "Her kutuya 72 ÷ 4 = 18 ekmek düşer.",
+   "Kutudaki ürün sayısı 18 + 5 = 23’tür. İşlem 5 + 6 × (20 − 8) ÷ 4 biçiminde yazılır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Simit sayısını tepsideki ekmek sayısıyla toplayıp sonra tepsi sayısıyla çarpma, (5 + 6) × (20 − 8) ÷ 4.",
+   "B": "İşlemleri öncelik gözetmeden soldan sağa yapma, ((5 + 6) × 20 − 8) ÷ 4.",
+   "C": "Parantezi yok sayıp bölmeyi yalnızca 8’e uygulama, 5 + 6 × 20 − 8 ÷ 4.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "5+6*(20-8)/4",
+   "beklenen_sonuc": 23
+  }
+ },
+ {
+  "id": "MAT5-E-005",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.3",
+  "surec_bileseni": "c",
+  "konu": "Geometri",
+  "alt_konu": "Açı ölçüleriyle bilinmeyen açıyı bulma",
+  "soru_metni": "Bir mimar, düz bir duvar çizgisi üzerindeki K noktasından duvarın bir yanına iki çizgi çizerek 180°’lik düz açıyı üç açıya ayırdı. İlk iki açının ölçüleri 48° ve 77° olarak belirlendi. Üçüncü açı kaç derecedir?",
+  "siklar": {
+   "A": "55°",
+   "B": "125°",
+   "C": "103°",
+   "D": "132°"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Üç açının toplamının düz açıya eşit olduğunu kullan.",
+  "cozum_adimlari": [
+   "Üç açının ölçüleri toplamı 180°’dir.",
+   "İlk iki açının toplamı 48° + 77° = 125°’dir.",
+   "Üçüncü açı 180° − 125° = 55°’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Verilen iki açıyı toplayıp işlemi orada bırakma; ara sonucu nihai sanma.",
+   "C": "180°’den yalnızca 77°’yi çıkarma; diğer verilen açıyı hesaba katmama.",
+   "D": "180°’den yalnızca 48°’yi çıkarma; diğer verilen açıyı hesaba katmama."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "180-48-77",
+   "beklenen_sonuc": 55
+  }
+ },
+ {
+  "id": "MAT5-E-006",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "surec_bileseni": "b",
+  "konu": "Geometri",
+  "alt_konu": "Kesişen iki doğruda komşu açı",
+  "soru_metni": "İki cadde bir kavşakta kesişiyor ve kavşakta dört açı oluşuyor. Açılardan biri 65°’dir. Bu açıya komşu olan açı kaç derecedir?",
+  "siklar": {
+   "A": "25°",
+   "B": "65°",
+   "C": "295°",
+   "D": "115°"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Kesişen iki doğruda komşu iki açı birlikte düz bir çizgi oluşturur.",
+  "cozum_adimlari": [
+   "Komşu iki açının ölçüleri toplamı 180°’dir.",
+   "Komşu açı 180° − 65° = 115°’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Komşu açıların toplamını 180° yerine 90° sanma, 90° − 65°.",
+   "B": "Komşu açı ile karşıt (ters) açıyı karıştırma; karşıt açı 65°’dir.",
+   "C": "Dört açının toplamı olan 360°’den çıkarma, 360° − 65°.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "islem",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "180-65",
+   "beklenen_sonuc": 115
+  }
+ },
+ {
+  "id": "MAT5-E-007",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.4",
+  "surec_bileseni": "b",
+  "konu": "Geometri",
+  "alt_konu": "Kesişen iki doğruda karşıt ve komşu açılar",
+  "soru_metni": "İki sokak bir kavşakta kesişiyor ve dört açı oluşuyor. Birbirinin karşısında olan iki açının ölçüleri toplamı 110°’dir. Bu açılardan birine komşu olan açı kaç derecedir?",
+  "siklar": {
+   "A": "70°",
+   "B": "125°",
+   "C": "55°",
+   "D": "110°"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Karşıt açıların ölçülerinin birbirine nasıl bağlı olduğunu düşün; sonra komşu açıya geç.",
+  "cozum_adimlari": [
+   "Karşıt açılar eşittir; her biri 110° ÷ 2 = 55°’dir.",
+   "Komşu açılar toplamı 180°’dir.",
+   "Komşu açı 180° − 55° = 125°’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Verilen toplamı tek bir açı sanıp 180°’den çıkarma, 180° − 110°.",
+   "B": "Doğru.",
+   "C": "Karşıt açıyı bulup işlemi orada bırakma; ara sonucu nihai sanma.",
+   "D": "İki açının toplamını tek bir açının ölçüsü sanma."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "180-110/2",
+   "beklenen_sonuc": 125
+  }
+ },
+ {
+  "id": "MAT5-E-009",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.3.6",
+  "surec_bileseni": "c",
+  "konu": "Geometri",
+  "alt_konu": "Çıkarımı karşı örnekle değerlendirme",
+  "soru_metni": "Deniz, dörtgenleri incelerken “Dört kenarı da eşit uzunlukta olan her dörtgenin dört açısı da dik açıdır” çıkarımını yaptı. Bu çıkarımın yanlış olduğunu göstermek için aşağıdaki örneklerden hangisi kullanılabilir?",
+  "siklar": {
+   "A": "Dört kenarı 4 cm olan ve bütün açıları dik olan dörtgen",
+   "B": "Kenarları 3, 5, 3 ve 5 cm olan ve bütün açıları dik olan dörtgen",
+   "C": "Üç kenarı da 6 cm olan ve üç açısı da eşit olan üçgen",
+   "D": "Dört kenarı 5 cm olan ve iki açısı dar açı olan dörtgen"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir çıkarımı çürütmek için koşulunu sağlayıp sonucunu sağlamayan bir örnek gerekir.",
+  "cozum_adimlari": [
+   "Çıkarımın koşulu: dörtgenin dört kenarı eşittir. Sonucu: dört açısı da diktir.",
+   "Çürütmek için dört kenarı eşit olup bütün açıları dik olmayan bir örnek gerekir.",
+   "Dört kenarı 5 cm olan ve iki açısı dar olan dörtgen bu koşulu sağlar.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çıkarımı destekleyen bir örneği çürüten örnek sanma; bu dörtgen koşulu da sonucu da sağlar.",
+   "B": "Kenarları eşit olmayan bir dörtgeni örnek alma; çıkarımın koşulunu sağlamaz.",
+   "C": "Dörtgen olmayan bir şekli örnek alma; çıkarım yalnızca dörtgenler içindir.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "ipucu",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT5-E-010",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.4.1",
+  "surec_bileseni": "a",
+  "konu": "Ölçme",
+  "alt_konu": "Çevresi verilen dikdörtgenin kenarları",
+  "soru_metni": "Ayşe, dikdörtgen biçimli bir fotoğraf çerçevesinin kenarlarını tam bir tur saracak 20 cm uzunluğunda bir süs şeridi kullanacaktır. Şerit ne artacak ne eksik kalacaktır. Çerçevenin kenar uzunlukları santimetre cinsinden doğal sayı olduğuna göre kenarları hangisi olabilir?",
+  "siklar": {
+   "A": "8 cm ve 12 cm",
+   "B": "2 cm ve 10 cm",
+   "C": "3 cm ve 7 cm",
+   "D": "4 cm ve 5 cm"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Şeridin uzunluğu çerçevenin çevresine eşittir; iki komşu kenarın toplamını bulmaya çalış.",
+  "cozum_adimlari": [
+   "Çevre 2 × (kısa kenar + uzun kenar) = 20 cm olduğundan iki kenarın toplamı 10 cm’dir.",
+   "Toplamı 10 olan çift 3 cm ve 7 cm’dir.",
+   "Diğer seçeneklerde toplamlar 20, 12 ve 9 cm’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kenarların toplamını çevre sanma; 8 + 12 = 20 bulup 2 ile çarpmayı unutma.",
+   "B": "Kenarların çarpımını (alanı) çevre sanma; 2 × 10 = 20.",
+   "C": "Doğru.",
+   "D": "Kenarların çarpımını (alanı) çevre sanma; 4 × 5 = 20."
+  },
+  "zorluk": 2,
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "2*(3+7)",
+   "beklenen_sonuc": 20
+  }
+ }
+]

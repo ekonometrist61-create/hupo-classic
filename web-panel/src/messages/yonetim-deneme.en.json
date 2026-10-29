@@ -1,0 +1,33 @@
+{
+  "yonetim": {
+    "denemeSinirlari": {
+      "title": "Trial limits",
+      "desc": "Each child's allowance per feature during the free trial. A class field left empty uses the default. Changes apply to later uses only.",
+      "varsayilanBaslik": "Default limits",
+      "sinifBaslik": "Class-specific limits",
+      "sinifDesc": "Fill in only when a class needs a different value. An empty field uses the default.",
+      "sinifSec": "Class",
+      "sinifAd": "Grade {n}",
+      "ozellik": "Feature",
+      "sinir": "Limit",
+      "pencere": "Window",
+      "pencereGunluk": "Daily",
+      "pencereDeneme": "Whole trial",
+      "bos": "default",
+      "kaydet": "Save",
+      "kaydediliyor": "Saving…",
+      "kaydedildi": "Trial limits saved.",
+      "hataAralik": "Each limit must be a whole number between 0 and 1000.",
+      "hataKaydet": "Could not save. Please try again.",
+      "eksik": "This setting is not active in the database yet (migration not applied).",
+      "ozellikler": {
+        "soru": "Question solving",
+        "kelime_evreni": "Word Universe",
+        "carpim_sifresi": "Multiplication ciphers",
+        "okuma_hikayesi": "Reading story",
+        "meydan_okuma": "Challenge",
+        "deneme_sinavi": "Mock exam"
+      }
+    }
+  }
+}

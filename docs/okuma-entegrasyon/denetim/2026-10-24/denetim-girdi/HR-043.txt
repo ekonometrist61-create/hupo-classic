@@ -1,0 +1,131 @@
+# HR-043 · Kuledeki Son Işık · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=c89dff19-1a87-4ce2-b28a-6a199b6eab56, surum_no=2, sha256=351f9dc10c52e2a74ffcbade5aea4325e1629f4c05c7bc416b3c7709952c1e12
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr043-kuledeki-son-isik | Tür: gizem | Konu: kule_isigi_hava_gozlemi | Dünya: gercekci
+Sınıf: 5–5 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Yıllardır boş denen kulede gece bir ışık yandı. Gizli bir mesaj mı, yoksa hava gözleminin parçası mı?
+İzinli türler: ben, arkadas, baska_biri
+Değer anahtarları (sürüm): D6, D16 | maarif.ana_deger: D6
+Etiketler: ana_sinif=5, okuma_zorlugu=3, kavram_zorlugu=4, ilgi=ortak, kanit_duzeyi=C
+Temalar: gizem, bilim_teknoloji, guvenlik | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sozcuk_tahmin_hr043 (lexeme, first_hint: tahmin); sozcuk_olasilik_hr043 (lexeme, application: olasılık); sozcuk_uyari_hr043 (lexeme, application: uyarı); kavram_hr043 (concept, application: Gözlem ile varsayımı ayırmak; resmî hava uyarılarını doğru kaynaktan takip etmek); atasoz_hr043 (proverb, application: Sormakla yol bulunur)
+Ölçülen: {"soru_sayisi":7,"sayfa_sayisi":24,"simge_sayisi":57,"kelime_sayisi":2071,"tahmini_sure_dk":20,"yoldas_yer_sayisi":20,"hedef_tur_dagilimi":{"lexeme":3,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":3}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Yağmurdan sonraki serin akşamda, kasabanın üzerindeki eski gözlem kulesinin penceresinde üç kez ışık göründü. Beşinci sınıf öğrencisi [KAHRAMAN hal=yalin], balkonlarında otururken ışığın önce kısa, sonra uzun aralıklarla yandığını fark etti. Herkes kulenin yıllardır kullanılmadığını söylüyordu. [KAHRAMAN hal=yalin] ise geçen ay[İKON moon] aynı tepede yenilenen bir anten görmüştü. [İŞARET kod=ay] “Anne, kulede biri olabilir mi?” diye sordu. Annesi perdeyi açıp baktı. “Olabilir. Ama gece tek başımıza oraya gitmek doğru[İKON check] olmaz. Yarın belediyenin bilgi hattına sorabiliriz.” [KAHRAMAN hal=yalin] ertesi sabah okulda gördüklerini en yakın arkadaşı [YOLDAŞ hal=yonelme yedek=Hupo] anlattı. [YOLDAŞ hal=yalin yedek=Hupo] doğa olaylarıyla ilgili videolar izlemeyi severdi.
+--- Sayfa 2 ---
+“Belki gizli bir haberleşme sistemi,” dedi heyecanla. Üçüncü arkadaşları Defne ise hemen karşı çıktı. “Ya bakım lambasıysa? Önce gözlemimizi yazalım.” Öğretmenleri Meryem Hanım bir bilim[İKON microscope] gözlem etkinliği planlıyordu. Çocukların notlarını görünce kulenin bulunduğu tepeyi gösteren eski bir fotoğraf çıkardı. Fotoğrafta kulenin yanında rüzgâr[İKON wind] yönünü gösteren bir ok vardı. “Bu yer eskiden hava gözlemleri için kullanılmış,” dedi. “Bugünkü işlevini bilmiyoruz. Birlikte[İKON friends] araştırabiliriz.” [YOLDAŞ hal=yalin yedek=Hupo] çantasından çizgili defterini çıkarıp kuleye ait bir resim çizdi. Üzerine üç ışık işareti koydu. [KAHRAMAN hal=yalin] dikkatle baktı. “Ben üç ışık gördüm ama aralarında eşit süre var mıydı, bilmiyorum,” dedi.
+--- Sayfa 3 ---
+Defne “O zaman aralıklara eşit çizgi koymayalım,” diye önerdi. Çizimin altına “yaklaşık gözlem” yazdılar. [YOLDAŞ hal=yalin yedek=Hupo], bu küçük kelimenin neden önemli olduğunu o an kavradı. Kesin olmayan bir şeyi kesinmiş gibi göstermek, resme bakacak herkesi yanlış yönlendirebilirdi. Bir sonraki gözlem için saat[İKON clock] tutmayı, rüzgâr[İKON wind] ve hava durumunu da not[İKON notebook] etmeyi planladılar. Her birinin ayrı görevi olacaktı. [KAHRAMAN hal=yalin] görsel kaydı, [YOLDAŞ hal=yalin yedek=Hupo] zamanlamayı, Defne notları kontrol edecekti. Böylece aynı olayı üç kişinin farklı bakışla inceleyebileceğini düşündüler. İlk görevleri, kuleye yaklaşmadan güvenilir bilgi bulmaktı. Belediye sayfasındaki duyuruları incelediler. Kulede bazı meteoroloji sensörlerinin yenilendiğini öğrenince [YOLDAŞ hal=ilgi yedek=Hupo] gizli haberleşme fikri zayıfladı.
+--- Sayfa 4 ---
+Yine de geceki ışığın ne anlama geldiği açıklanmamıştı. Bir gün önce [KAHRAMAN hal=ilgi] küçük kardeşi rüzgâr[İKON wind] gülünü döndürmekte zorlanmıştı. [KAHRAMAN hal=yalin] ona, “Rüzgâr yoksa dönmez,” demişti. Kardeşi üfleyerek çarkı döndürünce ikisi gülmüştü. Okuldaki gözlem köşesinde [KAHRAMAN hal=yalin] bu anıyı anlattı. Öğretmenleri hava hareketinin farklı hızlarda olabileceğini, ölçüm araçlarının doğru[İKON check] kullanılmasının önemini açıklarken çocuklardan gözlemlerini basit cümlelerle yazmalarını istedi. [YOLDAŞ hal=yalin yedek=Hupo] başlangıçta “çok rüzgârlı” diye not[İKON notebook] aldı. Defne ona “Ne kadar?” diye sordu. Sınıftaki rüzgâr ölçerin değerini ve saati eklediler. Bu küçük değişiklik, bir gözlemden daha karşılaştırılabilir bir kayda geçmelerini sağladı.
+--- Sayfa 5 ---
+Meryem Hanım, öğrencileri okulun küçük hava köşesine götürdü. Termometre, yağmur[İKON rain] ölçer ve rüzgâr[İKON wind] yönünü gösteren basit bir düzenek vardı. [KAHRAMAN hal=yalin] sabah sıcaklığını deftere yazdı. [YOLDAŞ hal=yalin yedek=Hupo] gökyüzündeki bulutların şeklini çizdi. Defne ise rüzgârın aniden yön değiştirdiğini fark etti. “Hava tahmini yalnızca bulutlara bakmak mıdır?” diye sordu [YOLDAŞ hal=yalin yedek=Hupo]. “Hayır,” dedi öğretmenleri. “Sıcaklık, basınç, nem, rüzgâr ve daha birçok veri birlikte değerlendirilir. Üstelik tahminin kesinlik derecesi vardır.” Okuldaki hava köşesinin termometresi güneş[İKON sun] altında kaldığında daha yüksek değer gösterebiliyordu. Defne, farklı yere taşındığında ölçümün niçin değiştiğini merak etti. Öğretmenleri, ölçümlerin karşılaştırılabilir olması için araçların doğru yere konması ve aynı yöntemle kullanılması gerektiğini anlattı.
+--- Sayfa 6 ---
+[KAHRAMAN hal=yalin], evlerinin balkonunda tuttuğu sıcaklık notlarıyla okul kayıtlarının neden farklı olduğunu anladı. [YOLDAŞ hal=yalin yedek=Hupo] yağmur[İKON rain] ölçerin boşaltılması gerektiğini unuttuğu bir günü hatırladı. “Demek sayı kadar sayının nasıl elde edildiği de önemli,” dedi. Meryem Hanım, “Bunu raporunuzun en üstüne yazın,” diye önerdi. Çocuklar artık meteorolojiyle ilgili bir sözcük öğrendiklerinde onu doğrudan örneklerle ilişkilendirebiliyordu: nem, yağış, basınç ve rüzgâr[İKON wind] yalnızca kitapta gördükleri kelimeler değildi. O gün okulun küçük bahçe şenliğinin duyurusu yapılacaktı. Sınıf süslemeleri hazırlıyordu. [KAHRAMAN hal=yalin] hava tahmini sitesinde akşam için gök gürültülü sağanak olasılığı gördü. Arkadaşı Tuna, “Burada güneş[İKON sun] var, yağmur gelmez,” dedi.
+--- Sayfa 7 ---
+Defne buna itiraz etti: “Bir yerde güneş[İKON sun] olması, birkaç saat[İKON clock] sonra başka bir hava olayı yaşanmayacağını göstermez.” Çocuklar öğretmenlerinden resmi tahmin ve uyarıların nereden takip edildiğini öğrendi. Başka kaynaklarda farklı ifadeler görünce de tek bir videoya bakarak karar vermemeleri gerektiğini anladılar. O akşam [KAHRAMAN hal=yalin] notlarını gözden geçirirken “hava durumu” ile “hava tahmini” sözcüklerini aynıymış gibi kullanmış olduğunu gördü. Öğretmeninin anlattıklarını hatırladı: Biri belirli bir zamanda gözlenen durumu, diğeri geleceğe ilişkin değerlendirmeyi anlatıyordu. Defterindeki iki cümleyi düzeltti. Bu küçük ayrım, sonraki günün sorularını daha açık sormasına yardım[İKON hand-help] edecekti.
+--- Sayfa 8 ---
+[KAHRAMAN hal=yalin] akşamki kule ışıklarının havayla ilişkili olabileceğini düşünmeye başladı. Öğle arasında duyuru panosuna küçük bir çizelge astılar: “Gözlem, tahmin, gerçekleşen hava”. Sınıftaki diğer öğrenciler de kendi gözlemlerini ekledi. Kimileri bulutları resmetti, kimileri rüzgârı hissettiğini yazdı. Çizelge giderek bir dedektif panosuna benziyordu. Fakat bu kez dedektiflerin peşinde bir insan değil, değişen hava vardı. Meryem Hanım, meteoroloji bölge müdürlüğündeki eski öğrencisi Burcu Hanım'ı çevrim içi görüşmeye davet etti. Burcu Hanım bir hava uzmanıydı. Öğrenciler sırayla sorularını yöneltti. [YOLDAŞ hal=yalin yedek=Hupo] kuledeki yanıp sönen ışığın gizli bir mesaj[İKON scroll] olup olmadığını sordu.
+--- Sayfa 9 ---
+“Kulede ekipman kontrolü için kullanılan ışıklar olabilir,” dedi uzman. “Ama görüntüye bakarak görevini kesin söyleyemem. Hangi sistem olduğunu kurumdan doğrulamamız gerekir.” [KAHRAMAN hal=yalin], “Bir hava istasyonu tehlikeyi nasıl bildirir?” diye sordu. Burcu Hanım, otomatik istasyonların ölçümleri elektronik yollarla iletebildiğini anlattı. Gözlem verileri uzmanlarca incelenir, uygun görülürse resmî uyarılar yayımlanırdı. Kuledeki ışık tek başına halka yönelik bir alarm anlamına gelmiyordu. Burcu Hanım çevrim içi görüşmede bir örnek de gösterdi. İki haritada aynı bölgenin farklı zamanlardaki hava durumunu simgelerle işaretlemişti. Bir haritada yağmur[İKON rain] olasılığı görünürken ötekinde yağışın gerçekleştiği alan gösteriliyordu.
+--- Sayfa 10 ---
+[YOLDAŞ hal=yalin yedek=Hupo] iki haritayı ilk anda aynı sandı. Burcu Hanım, “Biri [KELİME yuva=pd_tahmin], biri gözlem,” dedi. “Birbirine benzeyebilirler ama görevleri farklıdır.” Çocuklar bir tahmini değerlendirirken ne zaman yayımlandığına ve hangi süreyi kapsadığına dikkat etmeleri gerektiğini öğrendi. [KAHRAMAN hal=yalin] bunu çok yararlı buldu; çünkü internette dolaşan eski bir uyarıyı güncel sanmanın da yanlış kararlar doğurabileceğini fark etti. Defne, sınıf panosuna tarihi olmayan hiçbir uyarı[İKON bell] resmi asmayacaklarına karar verdi. Görüşme bittikten sonra Meryem Hanım önemli bir soru[İKON question] sordu: “Bir ipucu gördüğünüzde hikâyeyi kim tamamlıyor?”
+--- Sayfa 11 ---
+[YOLDAŞ hal=yalin yedek=Hupo] elini kaldırdı. “Bazen biz tamamlıyoruz. Ama kafamızdan.” Sınıf güldü. “O hâlde bilmediğimiz kısmı araştırmadan kesin konuşmayacağız,” dedi öğretmenleri. Sonra tahtaya eski bir atasözü yazdı: “[ATASÖZÜ yuva=pd_ata_sormakla].” [KAHRAMAN hal=yalin] yine de kulenin ışığını unutamıyordu. Ertesi akşam balkondan baktığında ışık bir kez daha yandı. Bu kez saatini not[İKON notebook] etti ve annesiyle birlikte[İKON friends] görüntünün kısa bir videosunu çekti. Videoda uzaktaki kule görünüyordu ama ışığın niçin yandığı belli değildi. [KAHRAMAN hal=yalin] kameranın sınırlarını da fark etti: Bir görüntü, her sorunun cevabı değildi. Şenlikten bir gün önce sınıf içinde küçük bir tartışma yaşanmıştı.
+--- Sayfa 12 ---
+Tuna, hava tahmininin bazen tutmadığını söyleyerek uyarılara hiç güvenmemeyi savunuyordu. Defne ise bir tahminin [KELİME yuva=pd_olasilik] bildirdiğini, bu yüzden gerçekleşmeyen bir olayın bütün tahmin yöntemlerini geçersiz kılmayacağını anlattı. Meryem Hanım çocuklardan iki cümleyi karşılaştırmalarını istedi: “Mutlaka yağmur[İKON rain] yağacak” ve “Sağanak olasılığı bulunuyor.” [KAHRAMAN hal=yalin] ikinci cümlenin daha doğru[İKON check] olduğunu söyledi; kesinlik bildiren sözcükler farklı kararlar doğurabilirdi. Öğretmenleri bunun üzerine kısa bir etkinlik yaptırdı. Çocuklar meteoroloji bültenlerindeki “olası”, “bekleniyor”, “yerel” gibi sözcükleri işaretledi. Tuna sonunda “Demek hava tahmini kehanet değil,” dedi. Sınıf güldü.
+--- Sayfa 13 ---
+Meryem Hanım, “Evet, bilimsel verilere dayalı bir değerlendirme,” diye tamamladı. Cuma sabahı hava açık başladı. Okul bahçesindeki masalara kitaplar dizildi, öğrencilerin yaptığı afişler asıldı. [KAHRAMAN hal=yalin] görevlilerden biriydi. Ancak öğleye doğru rüzgâr[İKON wind] kuvvetlendi. Hafif afişler sallanıyor, bazı bulutlar kısa sürede çoğalıyordu. Meryem Hanım, okul idaresiyle birlikte[İKON friends] güncel hava uyarılarını kontrol etti. Şenliğin açık hava bölümü ertelendi. Bazı öğrenciler üzüldü. Tuna, “Belki yağmur[İKON rain] yağmayacak. Boşuna hazırlanmış olduk,” dedi. [KAHRAMAN hal=yalin], “Belki yağmaz,” diye cevap verdi, “ama [KELİME yuva=pd_uyari] varsa önlem almak doğru. Bütün masaları içeri taşıyabiliriz.”
+--- Sayfa 14 ---
+Masalardan birinin üzerinde, geçen yılki öğrencilerin hazırladığı çizim kitabı duruyordu. [KAHRAMAN hal=yalin] onu almak için geri dönecekti ama öğretmeni bahçedeki görevin sona erdiğini söyledi. Bir görevli kitabı güvenle içeri getirdi. [KAHRAMAN hal=yalin] önce kendi başına çıkabileceğini düşünmüştü. Sonra kararın neden yetişkinler tarafından verildiğini hatırladı; sert hava koşullarında kontrolsüz hareket etmek yeni riskler oluşturabilirdi. İçeri girdiklerinde başka bir sınıfın üzgün öğrencileriyle karşılaştılar. [YOLDAŞ hal=yalin yedek=Hupo], “Şenlik iptal olmadı, sadece yer değiştirdi,” dedi. Tuna ve arkadaşları masaları yeniden kurdu; kitapların yanına bulut[İKON cloud] çizimleri asıp salonu küçük bir bilim[İKON microscope] müzesine çevirdiler. Böylece herkesin emeği değerlendi.
+--- Sayfa 15 ---
+Çocuklar öğretmenlerin yönlendirmesiyle kitapları kapalı[İKON lock] salona taşıdı. İçeri taşınan masaların biri diğerlerine göre ağırdı. [KAHRAMAN hal=yalin] önce onu tek başına kaldırmayı denedi, sonra öğretmeninden yardım istedi. Birlikte taşırken “Bugün yalnızca hava değil, ekip çalışması da öğrendik,” diye şaka yaptı. Tuna kütüphane kitaplarının ıslanmadığını görünce rahatladı. Çünkü bir ay[İKON moon] boyunca resimledikleri öyküleri ilk kez ziyaretçilere gösterecekti. Kısa süre sonra yağmur[İKON rain] başladı. Pencereden dışarı bakarken sert damlaların bahçedeki boş masalara vurduğunu gördüler. Eşyalar zarar görmemiş, öğrenciler içeride güvendeydi. Tuna [KAHRAMAN hal=yonelme] dönüp “Ben yalnızca şimdiki güneşe baktım,” dedi.
+--- Sayfa 16 ---
+“Sen sonraki saatleri de düşündün.” Tuna o gün [KAHRAMAN hal=yalin] ile birlikte[İKON friends] salonun penceresinden bahçeyi izledi. Yağmurdan sonra rüzgâr[İKON wind] hafifledi, bulutların bir kısmı dağıldı. Tuna “Şimdi dışarı çıkabiliriz,” dedi. [KAHRAMAN hal=yalin], etkinliğin yeniden dışarı taşınıp taşınmayacağına öğretmenlerinin karar vereceğini hatırlattı. Çünkü hava yalnızca o anda pencereden görünen manzaradan ibaret değildi. Okul[İKON school] yönetimi etkinliği içeride sürdürmeyi uygun buldu. Bu karar ilk başta bazılarına gereksiz göründü ama içerideki program da çok güzel geçti. Çocuklar çizimlerini korumuş, misafirler rahatça kitapları incelemişti. Tuna, bir günün başarılı olması için bütün planların ilk biçimiyle gerçekleşmesinin gerekmediğini anladı.
+--- Sayfa 17 ---
+“Aslında bunu öğretmenimiz ve uzmanların uyarısı sayesinde yaptık,” diye karşılık verdi [KAHRAMAN hal=yalin]. Meryem Hanım çocuklardan günün sonunda bir karşılaştırma yapmalarını istedi. Sabah planlanan şenlikle gerçekleşen şenlik arasında hangi farklar vardı? [KAHRAMAN hal=yalin] masaların yerinin değiştiğini, Tuna bazı oyunların içeride oynanabildiğini, Defne ise kimi süslemelerin kaldırıldığını yazdı. Fakat ortak amaç değişmemişti: Öğrencilerin hazırladığı kitapları ve çizimleri paylaşmak. [KAHRAMAN hal=yalin], bir planı uyarlamanın vazgeçmek anlamına gelmediğini fark etti. Sınıfın küçük gazetesi için yeni bir başlık buldu: “Yağmurlu Günün Kitap[İKON book] Şenliği.”
+--- Sayfa 18 ---
+Şenlik içeride devam etti. Çocuklar kitaplarını anlattı, hazırladıkları hava gözlem tablosunu misafirlere gösterdi. [YOLDAŞ hal=yalin yedek=Hupo] masaya, “Hava bir sır saklamaz; sadece onu anlamak[İKON lightning-idea] için veri gerekir,” yazılı küçük bir kart koydu. [KAHRAMAN hal=yalin] belediyeye soruyu yöneltirken annesinin yardımını almıştı. Başvuruda kişisel bir şikâyet değil, gözlemlenen ışığın hangi amaçla kullanıldığını öğrenmek istediklerini açıklamıştı. Yanıt kısa ama anlaşılırdı; ilgili birim, tesisin bakım kontrolleri hakkında genel bilgi vermişti. [KAHRAMAN hal=yalin] metni sınıf panosuna olduğu gibi asmak yerine öğretmeniyle birlikte[İKON friends] özetledi. Kurum adını, yanıtın tarihini ve sorulan soruyu da eklediler.
+--- Sayfa 19 ---
+Böylece arkadaşları bilgiyi nereden öğrendiklerini görebilecekti. [YOLDAŞ hal=yalin yedek=Hupo], “Keşke ışığın mors alfabesiyle mesaj[İKON scroll] verdiği doğru[İKON check] çıksaydı,” diye şaka yaptı. Defne, “O zaman da bunu kanıtlamak gerekirdi,” dedi. Hafta sonunda belediyeden yanıt geldi. Yenilenen kuledeki ışık, bakım sırasında belirli aralıklarla yapılan bir ekipman kontrolünün parçasıydı. Kule, hava verilerini ölçen sistemlerden birini barındırıyordu. Işık, [KAHRAMAN hal=ilgi] düşündüğü gibi insanları doğrudan uyaran bir mesaj değildi. Yine de kule, hava gözlemi için önemliydi. “Aslında çocukken ben de bulutların her şeklini bir işaret[İKON flag] sanırdım,” dedi öğretmenleri. “Hayal kurmak güzeldir.
+--- Sayfa 20 ---
+Bilim[İKON microscope] yaparken ise hayalimizin hangi bölümünün kanıtlandığını bilmemiz gerekir.” [YOLDAŞ hal=yalin yedek=Hupo] bu sözlere sevindi. Gizemli öyküler yazmaktan vazgeçmeyecekti. Sadece bilim gözlemleriyle kurmaca hikâyeleri birbirine karıştırmamayı öğrenecekti. [YOLDAŞ hal=yalin yedek=Hupo] biraz utanarak, “Ben onu gizli bir istasyon sandım,” dedi. Defne gülümsedi. “Aslında istasyon kısmını doğru[İKON check] tahmin etmişsin. Gizli kısmını kanıtlamamıştık.” Öğretmenleri raporlarını üç bölüme ayırmalarını istedi: “Ne gördük? Ne düşündük? Ne öğrendik?” Defne yazıyı yüksek sesle okuyunca bir cümlede tarih eksik olduğunu fark ettiler. Hemen eklediler; çünkü bir gözlemin ne zaman yapıldığı, ne görüldüğü kadar önemliydi.
+--- Sayfa 21 ---
+[KAHRAMAN hal=yalin] ilk bölümde gece görülen ışığı, ikinci bölümde olası açıklamaları, üçüncü bölümde ise doğrulanmış bilgiyi yazdı. [YOLDAŞ hal=yalin yedek=Hupo], kanıtlanmayan fikrini silmek yerine yanına “ilk varsayım” notu düştü. [KAHRAMAN hal=yalin] okul[İKON school] gazetesine bir yazı hazırladı. İlk başlığı “Kulede Gizli Alarm!” olmuştu. Defne bunun gerçekte bulunmayan bir tehlike duygusu yaratacağını söyledi. [KAHRAMAN hal=yalin] başlığı “Eski Kulenin Yeni Görevi” olarak değiştirdi. Yazısına ışık hakkında öğrendiklerini, resmî hava uyarılarına nasıl ulaşabileceklerini ve alınan önlemlerin önemini ekledi. Yazı yayımlandığında en çok sorulan soru[İKON question] “Kuleye nasıl gireriz?” değil, “Hava tahmini ne kadar önce hazırlanır?” olmuştu.
+--- Sayfa 22 ---
+Sonraki hafta kule yine ışık verdiğinde [KAHRAMAN hal=yalin], ışığı gördüğü ilk gün gözlemini kaydetmeseydi hangi ayrıntıları hatırlayıp hangilerini unutacağını düşündü. Küçük notların büyük yanlış anlamaları önleyebildiğini fark etti. Bundan sonra şaşırdığı her şeyi önce dikkatle gözlemlemeye karar verdi. [KAHRAMAN hal=yalin] artık korkmadı. Ama bu kez yalnızca kuleye bakmadı; telefonundaki resmî hava tahminlerini ve gökyüzündeki bulutları da karşılaştırdı. İnsanların hava hakkında sorular sormasının, geçmişteki basit gözlemlerden bugünkü gelişmiş ölçümlere kadar uzanan büyük bir öğrenme yolculuğu olduğunu düşündü. [KAHRAMAN hal=yalin] eve döndüğünde balkonundan kuleyi yeniden gördü.
+--- Sayfa 23 ---
+Artık ışığa bakınca aklına yalnızca gizem gelmiyordu; orada çalışan görevlilerin emeğini de düşünüyordu. Bir veri işlenmeden, kontrol edilmeden ve doğru zamanda paylaşılmadan insanların karar vermesine yardım[İKON hand-help] etmeyebilirdi. Bu farkındalıkla sınıf panosunda kendi adının çok büyük yazıldığını fark etti ve yanına [YOLDAŞ hal=yalin yedek=Hupo] ile Defne'nin adlarının da aynı boyda yazılmasını istedi. Çünkü bütün araştırmayı birlikte[İKON friends] yürütmüşlerdi. Hatta kulenin işlevini öğrenmelerini sağlayan uzmanların adını da kaynak bölümüne eklediler. [KAHRAMAN hal=yalin] bilimi tek başına parlak bir fikir[İKON idea] bulmak değil, farklı insanların ortak dikkati olarak görmeye başladı.
+--- Sayfa 24 ---
+Son kez kuleye bakan [KAHRAMAN hal=yalin], ilk günkü korkusunu hatırladı. Bir ışığın neden yandığını bilmemek, onu hemen tehlike saymayı gerektirmiyordu. Doğru kaynakları araştırmak, hem merakı koruyor hem de gereksiz korkuyu azaltıyordu. Sınıf arkadaşlarının da bunu anlamasını istiyordu. Defterinin son sayfasına şunu yazdı: “Her ışık bir mesaj[İKON scroll] olabilir; ama hangi mesaj olduğunu ancak doğru kaynaklarla anlayabiliriz.” Altına bir kule, bir bulut[İKON cloud] ve küçük bir soru[İKON question] işareti çizdi. Çünkü ona göre iyi bir araştırmacının çantasında üç şey bulunmalıydı: dikkatli gözler, sabırlı bir akıl ve yeni sorular. [İŞARET kod=bulut]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=19 doğru=B
+  Metin: Belediyeden gelen yanıta göre kuledeki ışık neydi?
+  A) Kasabaya gönderilen gizli bir mesajdı
+  B) Bakım sırasında belirli aralıklarla yapılan bir ekipman kontrolünün parçasıydı
+  C) Halka yönelik bir fırtına alarmıydı
+  D) Kuleye giren birinin fenerinin ışığıydı
+  Açıklama: Belediyenin yanıtı, ışığın bakım sırasında yapılan ekipman kontrolünün parçası olduğunu bildiriyordu.
+s2 [cikarim] dayanak_sayfa=9 doğru=D
+  Metin: Hava uzmanı Burcu Hanım, kuledeki ışığın görevini neden kesin söyleyemedi?
+  A) Çünkü ışığı hiç görmek istemiyordu
+  B) Çünkü kule artık yıkılmıştı
+  C) Çünkü çocukların sorusu çok kolaydı
+  D) Çünkü yalnızca görüntüye bakarak karar verilemezdi; hangi sistem olduğunun kurumdan doğrulanması gerekiyordu
+  Açıklama: Uzman, görüntüye bakarak görevi kesin söyleyemeyeceğini; sistemin kurumdan doğrulanması gerektiğini belirtti.
+s3 [yorumlama] dayanak_sayfa=12 doğru=A
+  Metin: Tuna’nın “Demek hava tahmini kehanet değil” demesi neyi anlatır?
+  A) Hava tahmini bilimsel verilere dayanan bir değerlendirmedir; kesinlik değil olasılık bildirir
+  B) Hava tahminleri her zaman tamamen doğru çıkar
+  C) Hava tahminlerine hiç güvenmemek gerekir
+  D) Hava tahmini yalnızca bulutlara bakarak yapılır
+  Açıklama: Meryem Hanım da tahminin bilimsel verilere dayalı bir değerlendirme olduğunu söyleyerek bu sonucu onayladı.
+s4 [sozcuk_baglami] dayanak_sayfa=9 doğru=C
+  Metin: Hava uzmanı “Biri tahmin, biri gözlem” derken tahmin sözcüğüyle ne anlatmak istedi?
+  A) Geçmişte yaşanmış bir olayın kaydını
+  B) O anda yapılan bir ölçümün sonucunu
+  C) Eldeki verilere dayanarak gelecekte olabilecekler hakkında yapılan değerlendirmeyi
+  D) Bir haritanın başlığını
+  Açıklama: Haritalardan biri yağmur olasılığını gösteren tahmin, diğeri gerçekleşen yağışı gösteren gözlemdi.
+s5 [sozcuk_baglami] dayanak_sayfa=12 doğru=A
+  Metin: Defne, bir tahminin olasılık bildirdiğini söyledi. Burada olasılık ne demektir?
+  A) Bir olayın olması mümkün olsa da kesin olmadığını gösteren durum
+  B) Bir olayın kesinlikle olacağını gösteren durum
+  C) Bir olayın hiç olmayacağını gösteren durum
+  D) Bir olayın çoktan bittiğini gösteren durum
+  Açıklama: “Sağanak olasılığı bulunuyor” cümlesi sağanağın olabileceğini söyler ama kesin olduğunu söylemez.
+s6 [sozcuk_baglami] dayanak_sayfa=13 doğru=B
+  Metin: “Uyarı varsa önlem almak doğru” cümlesinde uyarı ne demektir?
+  A) Eğlenceli bir etkinlik duyurusu
+  B) Dikkat edilmesi gereken olası bir durumu önceden bildiren haber
+  C) Okul bahçesindeki bir masa
+  D) Bir kitabın adı
+  Açıklama: Güncel hava uyarısı görülünce açık hava etkinliği ertelendi ve masalar içeri taşındı.
+s7 [degerlendirme] dayanak_sayfa=21 doğru=B
+  Metin: Okul gazetesinde “Kulede Gizli Alarm!” başlığının “Eski Kulenin Yeni Görevi” olarak değiştirilmesi neden daha doğrudur?
+  A) Çünkü yeni başlık daha uzundur
+  B) Çünkü ilk başlık gerçekte olmayan bir tehlike duygusu yaratırdı
+  C) Çünkü gazetede başlık kullanılmaz
+  D) Çünkü kule artık hiç ışık vermiyordu
+  Açıklama: Işığın bir alarm olmadığı öğrenilmişti; abartılı başlık kanıtlanmamış bir korku yaratacaktı.
+
+## Sözlük
+- pd_tahmin | kelime | yazım: tahmin | 5–5 | anlam: Eldeki verilere dayanarak henüz olmamış bir durum hakkında yapılan değerlendirme.
+- pd_olasilik | kelime | yazım: olasılık | 5–5 | anlam: Bir olayın olabilme ihtimali; olabilir ama kesin değildir.
+- pd_uyari | kelime | yazım: uyarı | 5–5 | anlam: Dikkat edilmesi gereken bir durumu önceden bildiren haber.
+- pd_ata_sormakla | atasozu | yazım: Sormakla yol bulunur | 5–5 | anlam: Bilmediğimiz bir şeyi doğru kişilere sorarak öğrenebiliriz.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

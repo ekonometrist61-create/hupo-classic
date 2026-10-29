@@ -11,7 +11,7 @@ dunya_tipi: masalsi
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Düşüncelerin duvarda göründüğü bir şehirde Ada, gizliliği ve güvenliği birlikte düşünmeyi öğrenir. Rıza ve sorumluluk üzerine bir yasa tartışması."
+tanitim: "Düşüncelerin duvarda göründüğü bir şehirde {kahraman}, gizliliği ve güvenliği birlikte düşünmeyi öğrenir. Rıza ve sorumluluk üzerine bir yasa tartışması."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -33,14 +33,14 @@ etiketler:
     - {id: deyim_hr111, tur: idiom, etiket: "Söz istemek", yuva: hr111_soz, islev: application}
     - {id: kavram_hr111, tur: concept, etiket: "Gizlilik ile güvenliği dengelemek", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Ada'nın pazardan aldığı müzik kutusunun hangi kısmı çatlamıştı?", secenekler: [{id: A, metin: "Kapağı"}, {id: B, metin: "Anahtarı"}, {id: C, metin: "Kemeri"}, {id: D, metin: "Mekanizması"}], dogru: A, aciklama: "Kutunun kapağı çatlamıştı; içindeki mekanizma ise sıkışmıştı."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 8, metin: "Ada'ya göre bir kişinin yalnızca korkmuş olması ne anlama gelir?", secenekler: [{id: A, metin: "Kötülük yaptığının kanıtıdır"}, {id: B, metin: "Kötülük yaptığının kanıtı değildir"}, {id: C, metin: "Her zaman yalan söylediğini gösterir"}, {id: D, metin: "Okuldan ayrılması gerektiğini gösterir"}], dogru: B, aciklama: "Korkmuş olmak tek başına kötülük yapıldığının kanıtı değildir."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 21, metin: "Ada'ya göre düşüncelerin herkese görünmesi neyin yerini tutamaz?", secenekler: [{id: A, metin: "Gönüllü yardım kanallarının"}, {id: B, metin: "Güvenli bir soruşturmanın"}, {id: C, metin: "Okul kütüphanesinin"}, {id: D, metin: "Babanın sözünün"}], dogru: B, aciklama: "Ada, düşüncelerin görünür olmasının güvenli bir soruşturmanın yerini tutamayacağını söyler."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 12, metin: "Bu cümlede “hesaba katmak” ne anlama gelir?", secenekler: [{id: A, metin: "Parayı saymak"}, {id: B, metin: "Farklı ihtiyaçları göz önünde bulundurmak"}, {id: C, metin: "Bir sayıyı hesaplamak"}, {id: D, metin: "Birini suçlamak"}], dogru: B, aciklama: "Hesaba katmak, farklı ihtiyaçları karar verirken dikkate almak demektir."}
-  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 20, metin: "Metne göre rıza nasıl olmalıdır?", secenekler: [{id: A, metin: "Bir kez verilip ömür boyu geçerli olmalı"}, {id: B, metin: "Anlaşılır, geri alınabilir ve baskı olmadan verilmiş olmalı"}, {id: C, metin: "Yetişkinlerin kararıyla verilmeli"}, {id: D, metin: "Hiç yazılı olmamalı"}], dogru: B, aciklama: "Rıza, anlaşılır, geri alınabilir ve baskısız verilmiş olmalıdır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kahramanın pazardan aldığı müzik kutusunun hangi kısmı çatlamıştı?", secenekler: [{id: A, metin: "Anahtarı"}, {id: B, metin: "Kemeri"}, {id: C, metin: "Mekanizması"}, {id: D, metin: "Kapağı"}], dogru: D, aciklama: "Kutunun kapağı çatlamıştı; içindeki mekanizma ise sıkışmıştı."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 8, metin: "Kahramana göre bir kişinin yalnızca korkmuş olması ne anlama gelir?", secenekler: [{id: A, metin: "Kötülük yaptığının kanıtı değildir"}, {id: B, metin: "Kötülük yaptığının kanıtıdır"}, {id: C, metin: "Her zaman yalan söylediğini gösterir"}, {id: D, metin: "Okuldan ayrılması gerektiğini gösterir"}], dogru: A, aciklama: "Korkmuş olmak tek başına kötülük yapıldığının kanıtı değildir."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 21, metin: "Kahramana göre düşüncelerin herkese görünmesi neyin yerini tutamaz?", secenekler: [{id: A, metin: "Gönüllü yardım kanallarının"}, {id: B, metin: "Güvenli bir soruşturmanın"}, {id: C, metin: "Okul kütüphanesinin"}, {id: D, metin: "Babanın sözünün"}], dogru: B, aciklama: "Kahraman, düşüncelerin görünür olmasının güvenli bir soruşturmanın yerini tutamayacağını söyler."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 12, metin: "Bu cümlede “hesaba katmak” ne anlama gelir?", secenekler: [{id: A, metin: "Eldeki parayı tek tek saymak ve kaydetmek"}, {id: B, metin: "Bir sayının değerini hesap makinesiyle hesaplamak"}, {id: C, metin: "Farklı ihtiyaçları göz önünde bulundurmak"}, {id: D, metin: "Birini bir olaydan suçlu tutmak ve sorumlu saymak"}], dogru: C, aciklama: "Hesaba katmak, farklı ihtiyaçları karar verirken dikkate almak demektir."}
+  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 20, metin: "Metne göre rıza nasıl olmalıdır?", secenekler: [{id: A, metin: "Bir kez verilip ömür boyu geçerli olmalı"}, {id: B, metin: "Yetişkinlerin kendi aralarındaki kararıyla verilmeli"}, {id: C, metin: "Hiçbir zaman yazılı olmamalı ve kayda geçirilmemeli"}, {id: D, metin: "Anlaşılır, geri alınabilir ve baskı olmadan verilmiş olmalı"}], dogru: D, aciklama: "Rıza, anlaşılır, geri alınabilir ve baskısız verilmiş olmalıdır."}
 deyim_cumleleri:
   hr111_soz: "İpek söz istedi."
 ---

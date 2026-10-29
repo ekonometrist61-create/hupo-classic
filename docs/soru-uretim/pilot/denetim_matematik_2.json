@@ -1,0 +1,626 @@
+[
+ {
+  "id": "MAT2-001",
+  "kazanim_kodu": "MAT.2.1.1",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "78. Çeldiriciler makul (87 ters çevirme, 70 eksik yazma, 68 hata). Küçük not: '87' da aynı rakamlardan oluşuyor; 'hangi rakamlarla yazılır' yerine 'rakamla nasıl yazılır' daha net olur (zorunlu değil)."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-002",
+  "kazanim_kodu": "MAT.2.1.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "74 (7 onluk + 4 birlik). 47 yer değiştirme, 11 toplama, 70 birleri unutma: makul çeldiriciler. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-003",
+  "kazanim_kodu": "MAT.2.1.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Birler 9, onlar 9-4=5, sayı 59; tek doğru. Sorun dil ve zorluk: kök tek uzun cümlede 'birler basamağındaki rakam' iki kez geçiyor, 2. sınıf için ağır. Öneri: 'Bir sayının birler basamağında 9 vardır. Onlar basamağındaki rakam, birler basamağındaki rakamdan 4 azdır. Bu sayı kaçtır?' ve zorluk 3 yerine 2 (iddialı etiket, REHBER §4.6)."
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT"
+ },
+ {
+  "id": "MAT2-004",
+  "kazanim_kodu": "MAT.2.1.3",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "58 tek sayı: 56 ve 60 dışarıda, 57 uç değer (aralığa dahil değil). Uç değer çeldiricisi makul. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-005",
+  "kazanim_kodu": "MAT.2.1.4",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "100,95,90 -> 85. 80 (onar sayma) iyi çeldirici; 89 ve 86 mekanizması zayıf ama yanıltıcı olabilir. Örüntü üç terimle verildiği için zorluk 1 de olabilir; 2 kabul edilebilir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-006",
+  "kazanim_kodu": "MAT.2.1.6",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Yarısı 12 -> tamamı 24. Tek doğru. Çeldiriciler (12 yarım, 36, 18) makul. Kök 'yarısı 12 şekerle doluyor' biraz kıvrık ama anlaşılır; isteğe bağlı: 'Kavanozun yarısına kadar 12 şeker konuyor'."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-007",
+  "kazanim_kodu": "MAT.2.1.7",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "4 parçadan 3'ü yendi, kalan 1 parça = çeyrek. 'Üç çeyreği' yenen kısmı seçme yanılgısı için iyi çeldirici. Şık uzunlukları dengeli."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-008",
+  "kazanim_kodu": "MAT.2.1.8",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "2 x 50 kuruş = 100 kuruş = 1 TL. 2 TL (adet), 100 TL (kuruş-TL karışıklığı) güçlü çeldirici. Para bilgisi doğru. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-009",
+  "kazanim_kodu": "MAT.2.1.8",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "100-75=25 kuruş. 75 (eldeki para), '25 lira' (birim karışıklığı) iyi; 35 mekanizması zayıf. Tek doğru."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-010",
+  "kazanim_kodu": "MAT.2.1.9",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "5'i çeyrek geçiyor = 5:15. 5:30 (yarım), 4:45 ('çeyrek var'), 5:45 makul çeldiriciler. Tek doğru."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-011",
+  "kazanim_kodu": "MAT.2.1.9",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "orta",
+   "notlar": "7-2=5. 'dışında' hafif olumsuz ama tek ve net, çift olumsuzluk yok. 9 gün (7+2) ve 2 gün makul. Kazanım (zaman birimlerini okuma/yazma) ile uyum kabul edilebilir ama gün-hafta bilgisi ağırlıklı; belirsiz: kazanım örtüşmesi sınırda, ret gerekçesi değil."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-012",
+  "kazanim_kodu": "MAT.2.1.10",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Standart ölçü aracı (cetvel/metre) gerekir. Dikkat ve tekrar karış farkını gidermez; 'en büyük sayı' keyfi. Şık uzunlukları eşit, doğru şık öne çıkmıyor. Kazanım ile tam uyumlu."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-013",
+  "kazanim_kodu": "MAT.2.1.11",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "orta",
+   "notlar": "2 x 30 = 60 cm. Tek doğru; çeldiriciler 30 (tek cetvel), 32 (30+2), 6 (basamak) makul. Not: tahmin ilişkisi veriliyor, soru daha çok çarpma; kazanımı kabul edilebilir düzeyde ölçüyor. Zorluk 2 uygun (1 de olabilir)."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-014",
+  "kazanim_kodu": "MAT.2.2.1",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "38-14+9=33. 24 (ara sonuç), 61 (hepsini toplama), 43 (işaret karışıklığı) makul. Tek doğru. Zorluk 2 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-015",
+  "kazanim_kodu": "MAT.2.2.1",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Erkek 17, toplam 29, 29-4=25. 29 (ara sonucu nihai sanma), 13, 33 makul. Üç adım, zorluk 3 kabul (2-3 arası)."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-016",
+  "kazanim_kodu": "MAT.2.2.2",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "orta",
+   "notlar": "24->20, 38->40, 60. 70 (ikisini yukarı), 50 (ikisini aşağı), 62 (kesin sonuç) çok iyi çeldirici. Belirsiz: 'en yakın onluğa yuvarlama' terimi/yöntemi 2. sınıf programında açık mı; yoksa 'onluğa yakın sayılarla tahmin' diye sadeleştirilebilir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-017",
+  "kazanim_kodu": "MAT.2.2.2",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "20 yerine 19 çıkarılmalıydı, 1 fazla çıkarıldı, 1 eklenir (44+1=45). Çeldiriciler yön ve sayı karışıklığı. Telafi stratejisi 2. sınıf için zor, zorluk 3 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-018",
+  "kazanim_kodu": "MAT.2.2.3",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "42-15=27. 57 (işlem karışıklığı) iyi; 33 ve 15 zayıf. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-019",
+  "kazanim_kodu": "MAT.2.2.4",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "4 x 6 = 24. 6x4 şıkta yok, eşdeğer ikinci doğru şık yok. 6x6, 4x4, 4+6 makul. Basit tekrarlı toplama, zorluk 1 de olabilir."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-020",
+  "kazanim_kodu": "MAT.2.2.4",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "15 / 3 = 5 sefer. 12 (15-3), 18 (15+3) işlem karışıklığı, 3 sayının kendisi. 'gidip gelmek' son dönüşü saysa da sefer sayısı 5 olarak anlaşılır. Kazanımla (tekrarlı toplama/çıkarma ile bölme) uyumlu."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-021",
+  "kazanim_kodu": "MAT.2.2.5",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "8x10=80, 80/2=40. 80 (ara sonuç), 16 (5'e bölme), 13 (toplama) makul. Zihinden işlem stratejisi kazanıma uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-022",
+  "kazanim_kodu": "MAT.2.2.5",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "30/3=10. 27, 33, 90 işlem karışıklığı çeldiricileri. Çıplak işlem; kazanımdaki 'muhakeme/zihinden işlem' için hafif ama kabul. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-023",
+  "kazanim_kodu": "MAT.2.2.6",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "x+8=25, x=17. 12 (20-8), 25 (ara sonuç), 33 (25+8) iyi çeldiriciler. Eşitlik kazanımına uygun, zorluk 2."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-024",
+  "kazanim_kodu": "MAT.2.2.6",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "x+9=4x5=20, x=11. 20 (ara sonuç), 29, 14 makul. Tek doğru. Zorluk 3 biraz iddialı (023 ile benzer yapı, 2 de olabilir), ret sebebi değil."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-025",
+  "kazanim_kodu": "MAT.2.3.1",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "Futbol topu = küre; kutu silindir, külah koni, zar küp. Tek doğru, görselsiz, 2. sınıf cisimleriyle uyumlu. Zorluk 1 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-026",
+  "kazanim_kodu": "MAT.2.3.5",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "orta",
+   "notlar": "3 x 5 = 15 bardak. 8 (toplama), 35 (rakam yan yana), 5 makul. Küçük gerçekçilik notu: gerçek bir kova 5 bardaktan çok alır; 'kova' yerine 'sürahi' ya da 'kap' daha tutarlı olur (zorunlu değil). 'yaklaşık' ifadesi tam sonuçla uyumlu."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-027",
+  "kazanim_kodu": "MAT.2.3.6",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "RED",
+   "kendi_cevabi": "C",
+   "emin": "orta",
+   "notlar": "Toplam: 1. yol 55, 2. yol 65, 3. yol 50 -> en kısa 50 (C). Ancak senaryo geometrik olarak tutarsız: dik dönüşlerle tarif edilen üç yol aynı noktaya varmıyor (1. yol: 20 ileri+35 sağ; 2. yol: toplam 50 ileri+15 sol; 3. yol: 45 ileri+5 sol). Dik dönüşlü yollarda farklı toplam uzunluklu üç yol aynı okula çıkamaz; yön bilgisi süs, görselsiz kurulamaz. Düzeltme küçük değil: ya yönleri kaldırıp 'yolların uzunlukları' diye sadece mesafe toplamı sorulmalı (kazanım kayar) ya da harita görselli yeniden yazılmalı. Ayrıca okuma yükü 2. sınıf için ağır."
+  },
+  "onay": false,
+  "neden": "kalite RED"
+ },
+ {
+  "id": "MAT2-028",
+  "kazanim_kodu": "MAT.2.4.1",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "Kovalamaca 22-13=9, fark 13-9=4. 9, 13, 35 (22+13) makul çeldiriciler; 'her öğrenci birini seçti' ile bölünme net. Kategorik iki grup ve karşılaştırma kazanımına uygun, zorluk 2 uygun."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-029",
+  "kazanim_kodu": "MAT.2.3.6",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "Sağ yol 20+25=45 m, sol yol 30+10=40 m; en kısa 40 m (C). Tek doğru cevap, sayılar 100 içinde, birim tutarlı (hepsi m). Çeldiriciler makul: 10 ve 30 ara parça/tek parçayı yol sanma, 45 ise en kısa yerine uzun yolu seçme. Zayıf nokta: kazanımdaki 'yön' bileşeni yalnızca yol adlarında (sağ/sol) var, asıl ölçülen mesafe toplama-karşılaştırma stratejisi; 'strateji karar verme' yönünden kazanıma yeterince uyuyor. Zorluk 1 makul (iki toplama + karşılaştırma). REHBER ihlali yok (şık uzunlukları eşit, kapsayıcı şık yok, kökte konu anlatımı yok, Deniz'in/10 m'dir yazımı doğru)."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-030",
+  "kazanim_kodu": "MAT.2.3.6",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "Kütüphane başlangıca göre 20 m ileri + 10 m sağ. Ece 20 m ileri gidip 10 m sola gitti: kütüphanenin 10 m soluna düştü, yani kütüphane ona 20 m sağda. Hem doğrudan 20 m sağa yürüyerek hem de 10 m geri dönüp 10 m sağa giderek sonuç 20 (B); her yorumda aynı sonuç, belirsizlik yok. Çeldiriciler makul: 10 = yalnızca yanlış dönüşü geri alma, 30 = 20+10 toplayıp yönü dikkate almama, 60 = başlangıca dönüp yolu baştan yürüme (10+20+20+10). Kazanıma (mesafe ve yön, hedefe ulaşma stratejisi) tam uygun. Zorluk 2 makul; görselsiz zihinsel sağ/sol çevirme 2. sınıf için biraz zor olabilir ama sayılar küçük, 3'e çıkarmak gerekmez. Küçük not: doğru cevap 20 metindeki '20 m' ile aynı sayı (tahminle seçilebilir), ancak 10/30/60 çeldiricileri bu avantajı dengeliyor; düzeltme gerektirmez."
+  },
+  "onay": true,
+  "neden": ""
+ },
+ {
+  "id": "MAT2-031",
+  "kazanim_kodu": "MAT.2.2.1",
+  "anahtar": "C",
+  "ajan_a": {
+   "cevap": "C",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "C",
+   "emin": "yuksek",
+   "notlar": "56-23=33; 33+15=48 (C). Iki islem gerekli, sonuc<=100, kazanima uygun. Celdiriciler gercek hata: 64=56+23-15 (islem yonu karisti), 33=ara sonucu nihai sanma, 18=33-15 (gelen elmayi cikarma). Esdeger sik yok.",
+   "zorluk_onerisi": 3
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "MAT2-032",
+  "kazanim_kodu": "MAT.2.2.1",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "28+35=63; 63-20=43 (A). Iki adim, kazanima uygun, sonuc<=100. Celdiriciler: 63=ara sonuc, 83=63+20 (islem yonu), 15=35-20 (yalniz mavi boncuktan dusme). Tek dogru cevap, REHBER ihlali yok.",
+   "zorluk_onerisi": 3
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "MAT2-033",
+  "kazanim_kodu": "MAT.2.2.2",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "38->40, 47->50, tahmin 90; kesin 38+47=85; 90-85=5 (D). Yuvarlama, toplama, karsilastirma = 3 adim. Celdiriciler: 90=tahmin (ara sonuc), 85=kesin sonuc (ara sonuc), 3=yalniz 47->50 yuvarlama farki (kismi hata, en zayif celdirici ama makul). 'En yakin onluga yuvarlama' 2. sinif icin hafif ileri olabilir ama metinde islem tarif ediliyor; kazanim (tahmin) kapsaminda.",
+   "zorluk_onerisi": 3
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "MAT2-034",
+  "kazanim_kodu": "MAT.2.2.4",
+  "anahtar": "B",
+  "ajan_a": {
+   "cevap": "B",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "B",
+   "emin": "yuksek",
+   "notlar": "28/4=7 dolu tabak; 7-3=4 (B). Bolme (tekrarli cikarma) + cikarma, iki adim. Celdiriciler: 7=ara sonuc, 25=28-3 (kurabiye ile tabagi karistirma), 10=7+3 (islem yonu). Kazanima (carpma/bolmeyi toplama-cikarmaya dayali cozme) uygun; 4'lu bolme 2. sinif duzeyinde. 'kac dolu tabagi kalir' dil olarak kabul edilebilir.",
+   "zorluk_onerisi": 3
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "MAT2-035",
+  "kazanim_kodu": "MAT.2.1.8",
+  "anahtar": "D",
+  "ajan_a": {
+   "cevap": "D",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "GEÇER",
+   "kendi_cevabi": "D",
+   "emin": "yuksek",
+   "notlar": "5x1 TL=5 TL; 6x50 kurus=300 kurus=3 TL; toplam 8 TL (D). Birim donusumu + toplama, cok adimli. Celdiriciler: 11=madeni para sayisini toplama (5+6), 5=yalniz TL'leri sayma, 3=yalniz kurusları sayma/ara sonuc. 50 kurusluk madeni para gercek. Tek dogru, sonuc<=100, REHBER ihlali yok.",
+   "zorluk_onerisi": 3
+  },
+  "onay": true,
+  "neden": "",
+  "not": "zor3 ek parti"
+ },
+ {
+  "id": "MAT2-036",
+  "kazanim_kodu": "MAT.2.1.11",
+  "anahtar": "A",
+  "ajan_a": {
+   "cevap": "A",
+   "emin": "yuksek"
+  },
+  "ajan_b": {
+   "karar": "DÜZELT",
+   "kendi_cevabi": "A",
+   "emin": "yuksek",
+   "notlar": "6x12=72; 80-72=8 (A); hesap dogru, tek dogru cevap. Sorunlar: (1) Kazanim zayif: tum olcu bilgisi verilmis (karis=12 cm), ogrenci uzunluk TAHMINI yapmiyor, saf aritmetik (carpma+cikarma) cozuyor. (2) 6x12 iki basamakli carpma; 2. sinif carpim tablosu (2,3,4,5,10) disinda, yalniz tekrarli toplamayla cozulur, cok agir. (3) Sik duzeni: 72/68/74 kumelenmis, dogru cevap 8 tek 'aykiri' sayi (test-wiseness ipucu). (4) 'metreyle olcunce' belirsiz soyleyis. Oneri: karis=10 cm, 5-6 karis (tablo 10/5), olcum degeri uygun; soruyu 'hangi tahmin daha makul' gibi gercek tahmin gerektiren bicime cevir; celdiriciler birbirinden dagilsin. Celdirici turleri (72=tahmin, 68=80-12, 74=80-6) mantikli.",
+   "zorluk_onerisi": 3
+  },
+  "onay": false,
+  "neden": "kalite DÜZELT",
+  "not": "zor3 ek parti"
+ }
+]

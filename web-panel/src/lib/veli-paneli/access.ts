@@ -39,24 +39,22 @@ export async function loadVeliAccess(): Promise<VeliAccess> {
   const {
     data: { user },
   } = await supabase.auth.getUser();
+  if (!user) return { kind: "forbidden" };
 
-  const { data: profile } = user
-    ? await supabase
-        .from("profiles")
-        .select("role")
-        .eq("id", user.id)
-        .maybeSingle()
-    : { data: null };
+  // Rol ve çocuk listesi aynı kimlikle okunur; sıralı beklemek sayfayı gereksiz geciktirir.
+  // Çocuk listesi yalnızca veli için anlamlıdır; diğer rollerde sonuç yok sayılır.
+  const [{ data: profile }, { data: students, error }] = await Promise.all([
+    supabase.from("profiles").select("role").eq("id", user.id).maybeSingle(),
+    supabase
+      .from("profiles")
+      .select("id, full_name, username")
+      .eq("parent_id", user.id)
+      .order("full_name"),
+  ]);
 
   if (profile?.role === "admin") return { kind: "admin" };
   if (profile?.role === "ogretmen") return { kind: "ogretmen" };
-  if (!user || profile?.role !== "veli") return { kind: "forbidden" };
-
-  const { data: students, error } = await supabase
-    .from("profiles")
-    .select("id, full_name, username")
-    .eq("parent_id", user.id)
-    .order("full_name");
+  if (profile?.role !== "veli") return { kind: "forbidden" };
 
   if (error) return { kind: "error" };
   return { kind: "ok", students: (students ?? []) as Student[] };

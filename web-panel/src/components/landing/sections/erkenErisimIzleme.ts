@@ -1,5 +1,9 @@
 // Ziyaretçi izleme: yalnızca anonim kimlik ve UTM. Kişisel veri yok.
+// Rıza kapısı: analitik çerezine "Kabul et" denmeden localStorage'a yazılmaz, kimlik bağlanmaz,
+// ağ isteği atılmaz. Karar okuyucusu consent.ts'tir (sürüm uyuşmazlığında karar yok sayılır).
 // Tüm okuma/yazmalar try/catch içinde; depolama yoksa sayfa yine çalışır.
+
+import { readAnalyticsConsent } from "../../../lib/analytics/consent";
 
 const SUPABASE_URL = process.env.NEXT_PUBLIC_SUPABASE_URL;
 // Vercel'de tanımlı olan publishable anahtar (ErkenErisimSection ile aynı).
@@ -10,6 +14,10 @@ const UTM_KEY = "hupo_utm";
 const UTM_KEYS = ["utm_source", "utm_medium", "utm_campaign", "utm_term", "utm_content"] as const;
 const VID_RE = /^[A-Za-z0-9_-]{8,64}$/;
 
+function izinVar(): boolean {
+  return readAnalyticsConsent() === "granted";
+}
+
 function depoOku(key: string): string | null {
   try {
     return window.localStorage.getItem(key);
@@ -19,6 +27,8 @@ function depoOku(key: string): string | null {
 }
 
 function depoYaz(key: string, value: string): void {
+  // Rıza yoksa hiçbir şey yazılmaz (tek çıkış noktası; tüm yazmalar buradan geçer).
+  if (!izinVar()) return;
   try {
     window.localStorage.setItem(key, value);
   } catch {
@@ -35,7 +45,9 @@ export function ziyaretciKimligi(): string {
 }
 
 // İlk temas UTM'si: ilk ziyarette URL'den okunur ve saklanır; sonraki ziyarette değişmez.
+// Rıza yoksa okunmaz ve saklanmaz; boş nesne döner.
 export function ilkTemasUtm(): Record<string, string> {
+  if (!izinVar()) return {};
   const mevcut = depoOku(UTM_KEY);
   if (mevcut) {
     try {
@@ -68,6 +80,8 @@ async function izlemeIstegi(govde: Record<string, unknown>): Promise<boolean> {
 // Form başarılı olduktan sonra: önce olay, sonra kimlik bağlama (bağlama olayları karta taşır).
 // Hata sessizce yutulur; kullanıcı akışı bunu beklemez.
 export async function erkenErisimSonrasiIzleme(email: string): Promise<void> {
+  // Analitik onayı yoksa: kimlik bağlama da dahil hiçbir ağ isteği atılmaz.
+  if (!izinVar()) return;
   try {
     const vid = ziyaretciKimligi();
     const utm = ilkTemasUtm();

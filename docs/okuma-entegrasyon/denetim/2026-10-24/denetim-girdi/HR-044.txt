@@ -1,0 +1,131 @@
+# HR-044 · Buz Gölünün Haritası · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=59ec1055-e753-42ec-8911-66095d538254, surum_no=2, sha256=7ef3908b2f725d388253f78fc1ffb3cfc6a4c751a7501802c136903df5d2e917
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr044-buz-golunun-haritasi | Tür: macera | Konu: kis_yuruyusu_rota | Dünya: gercekci
+Sınıf: 5–5 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Donmuş gölü görmek için çıkılan yürüyüşte hava değişti. Doğru karar ilerlemek mi, geri dönmek mi?
+İzinli türler: ben, arkadas, baska_biri
+Değer anahtarları (sürüm): D16, D20 | maarif.ana_deger: D16
+Etiketler: ana_sinif=5, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: kesif, guvenlik, doga, dayanisma | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (5. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sozcuk_pusula_hr044 (lexeme, first_hint: pusula); sozcuk_rota_hr044 (lexeme, application: rota); sozcuk_kuzey_hr044 (lexeme, application: kuzey); kavram_hr044 (concept, application: Güvenlik için planı uygulamak ve gerektiğinde geri dönmeyi başarı saymak); atasoz_hr044 (proverb, application: Birlikten kuvvet doğar)
+Ölçülen: {"soru_sayisi":7,"sayfa_sayisi":24,"simge_sayisi":52,"kelime_sayisi":2072,"tahmini_sure_dk":20,"yoldas_yer_sayisi":37,"hedef_tur_dagilimi":{"lexeme":3,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":2}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Kış yürüyüşü başlamadan önce herkes çantasını iki kez kontrol etti. Beşinci sınıftan [KAHRAMAN hal=yalin], yedek eldivenlerini, suyunu ve küçük not[İKON notebook] defterini yerleştirdi. Arkadaşı [YOLDAŞ hal=yalin yedek=Hupo] ise kamp lideri Ceren Hanım'ın verdiği [KELİME yuva=pd_rota] kartını cebine koydu. Yürüyüş, dağdaki bir millî parkın izinli ve işaretli parkurunda yapılacaktı. [İŞARET kod=orman] [KAHRAMAN hal=ilgi] babası yola çıkmadan önce ona küçük bir [KELİME yuva=pd_pusula] vermişti. [KAHRAMAN hal=yalin] pusulaya bakınca iğnenin sürekli aynı yönü gösterdiğini fark etti; ama babası pusulanın tek başına rota planlamak için yeterli olmadığını anlatmıştı. Üzerinde bulundukları haritada [KELİME yuva=pd_kuzey] oku da vardı. [KAHRAMAN hal=yalin] iki bilgiyi birlikte[İKON friends] kullanmayı denemek istiyordu.
+--- Sayfa 2 ---
+[YOLDAŞ hal=yalin yedek=Hupo] ise eldivenleri kalın olduğu için haritayı açmakta zorlandı. “Dağda küçük işler neden[İKON question] bu kadar güçleşiyor?” diye söylendi. [KAHRAMAN hal=yalin], hava koşullarının yalnızca yürüyüş hızını değil, basit hareketleri de etkileyebileceğini düşündü. “Gerçekten gölü görecek miyiz?” diye sordu [YOLDAŞ hal=yalin yedek=Hupo]. Ceren Hanım, “Hava ve yol şartları uygun kalırsa belirlenen seyir noktasından göreceğiz,” dedi. “Ama gölün üzerine çıkmak yok. Buzun güvenli olduğunu yalnızca görünüşünden anlayamayız.” Yola çıkmadan önce Ceren Hanım küçük bir oyun hazırladı. Masaya eldiven, çikolata, oyuncak dürbün, termos, pusula[İKON compass] ve parlak bir madalya koydu. “Hepsini taşımaya gerek yok,” dedi. “Bu yürüyüşte hangileri yararlı, hangileri yalnızca güzel görünüyor?”
+--- Sayfa 3 ---
+[YOLDAŞ hal=yalin yedek=Hupo] madalyayı seçince herkes güldü. “Beni hızlı yürütür,” dedi şaka yaparak. [KAHRAMAN hal=yalin], termosun ve uygun giysilerin daha önemli olduğunu düşündü. Liderleri, yiyecek ve suyun da yürüyüş süresi ile hava koşullarına göre planlanması gerektiğini açıkladı. Sonra acil durumda buluşacakları yeri gösterdi. [KAHRAMAN hal=yalin] bunun gereksiz olduğunu sanmıştı; haritada başlangıç noktasına geri dönmenin kolay göründüğünü düşünüyordu. Ceren Hanım, “Bazen planı yalnızca işler yolunda giderken değil, değiştiğinde de kullanırız,” dedi. Çocuklar soğuk havada nefeslerinin beyaz buhar gibi göründüğünü fark ettiler. [KAHRAMAN hal=yalin] bunun su[İKON drop] buharının soğuk havada küçük damlacıklar oluşturmasıyla ilgili olduğunu öğrenmişti. [YOLDAŞ hal=yalin yedek=Hupo] ise termometredeki değeri okudu ve “Hava eksi dört!” dedi.
+--- Sayfa 4 ---
+Ceren Hanım sıcaklıkla rüzgârın birlikte nasıl hissedildiğine dikkat çekti. Grup ilk kilometrede bir gözlem yapacaktı. Karın üzerine düşen gölgeleri saymak ve güneş[İKON sun] açısının görünüşü nasıl etkilediğini not[İKON notebook] etmek. [YOLDAŞ hal=yalin yedek=Hupo] başlangıçta bunun çocuk oyunu olduğunu düşündü. Sonra karın bir kısmının güneşte parladığını, ağaç gölgesindeki kısmın ise daha mat göründüğünü fark etti. [KAHRAMAN hal=yalin] gözlemleri defterine çizdi. Ceren Hanım, “Karın yüzeyi her yerde aynı görünmeyebilir,” dedi. “Ama görünüş bize onun üzerinde güvenle yürüyebileceğimizi söylemez.” Grup, yalnızca işaretli ve güvenli yoldaki sıkıştırılmış kar[İKON snow] bölümünü kullandı. Bu basit etkinlik, farkında olmadan çocuklara gözlemin sınırlarını da anlatmıştı.
+--- Sayfa 5 ---
+Parkurun başlangıcında iki harita[İKON map] vardı. Biri kısa, kolay güzergâhı; diğeri daha uzun bir gözlem yolunu gösteriyordu. Grup kısa rotayı seçecekti. [KAHRAMAN hal=yalin], “Haritadaki mavi işaretler ne demek?” diye sordu. Ceren Hanım bunların su[İKON drop] kenarlarını, kırmızı çizginin ise yürüyüş yolunu gösterdiğini anlattı. İzinli patikanın kenarında görevli, çocuklara küçük hayvan ayak izleri gösterdi. Hangi canlıya ait olduklarını hemen söylemedi; izlerin boyutunu ve biçimini karşılaştırmalarını istedi. [YOLDAŞ hal=yalin yedek=Hupo] birini köpek[İKON dog] izi sandı, [KAHRAMAN hal=yalin] ise emin olmadığını belirtti.
+--- Sayfa 6 ---
+Ceren Hanım, izlerin yalnızca fotoğraf üzerinden kesin tanınamayabileceğini, koruma görevlilerinin bölgedeki canlıları daha iyi bildiğini söyledi. Çocuklar gördüklerini not[İKON notebook] aldı ama izleri takip etmek için patikadan ayrılmadı. [YOLDAŞ hal=yalin yedek=Hupo] küçük bir izin peşinden gitmenin ne kadar çekici olduğunu hissetti; sonra herkesin neden[İKON question] belli kurallar içinde gözlem yaptığını yeniden anladı. Yürürken uzakta göl göründü. Buzun bazı yerleri bembeyaz, bazı yerleri ise koyu maviydi. Işığın yansıması suyun ve buzun görünüşünü değiştiriyordu.
+--- Sayfa 7 ---
+Gölü gördüğü anda bütün yorgunluğu unutmuş gibi oldu. Ama iki dakika sonra yüzüne vuran soğuk rüzgârı hissetti. “Bir fotoğraf daha çekip hemen dönelim,” dedi. Ceren Hanım bunun yürüyüş grubunun planına göre yapılacağını söyledi. [KAHRAMAN hal=yalin] gölün bazı yerlerinin koyu, bazılarının açık görünmesine bakıp “Renk farkının nedenini yalnızca fotoğraftan söyleyemeyiz,” dedi. [YOLDAŞ hal=yalin yedek=Hupo], önce koyu yerin daha kalın buz olduğunu düşünmüştü. Şimdi gözün her şeyi anlatmadığını kabul ediyordu. [YOLDAŞ hal=yalin yedek=Hupo] heyecanla dürbününü çıkardı. “Sanki haritanın içine girmişiz,” dedi.
+--- Sayfa 8 ---
+[KAHRAMAN hal=yalin] yürüyüş boyunca küçük bir yürüyüş günlüğü tuttu. İlk satırda “Başlangıç, hafif rüzgâr[İKON wind]”, ikinci satırda “Çamlık, açık gökyüzü[İKON cloud]”, üçüncü satırda ise “Seyir noktası, bulutlu” yazıyordu. [YOLDAŞ hal=yalin yedek=Hupo], “Bunları neden yazıyorsun?” diye sordu. [KAHRAMAN hal=yalin], “Dönüşte havanın ne zaman[İKON clock] değiştiğini hatırlamak için,” dedi. Kayıt tutmayı sıradan bir ödev gibi görmüyordu; gördüklerini sonradan doğru hatırlamaya yardım eden bir araç olarak düşünüyordu. Ceren Hanım onların notlarını görünce zamanı da eklemelerini önerdi. “İki olayın sırasını bilmek, neden–sonuç kurarken işinizi kolaylaştırır,” dedi. Öğleye doğru bulutlar çoğaldı. Ceren Hanım grubun mola vereceği noktayı belirledi. [YOLDAŞ hal=yalin yedek=Hupo], uzaktaki küçük ahşap tabelanın yanında fotoğraf çekmek istedi.
+--- Sayfa 9 ---
+Grup hâlâ izinli yolun üzerindeydi fakat [YOLDAŞ hal=yalin yedek=Hupo] öne doğru birkaç adım[İKON footprint] atınca tabelanın arkasındaki dar yolun kapatıldığını gördü. Hemen geri döndü. [YOLDAŞ hal=ilgi yedek=Hupo] elindeki eski harita[İKON map] çıktısı, bir yıl önceki okul etkinliğinden kalmıştı. Evde hazırlanırken tarihini kontrol etmemişti. Ceren Hanım bir yılın bazı yerler için küçük bir zaman[İKON clock] olabileceğini, açık hava rotalarında ise güncel bilgi gerektiğini anlattı. [YOLDAŞ hal=yalin yedek=Hupo] eski kâğıdın üstüne büyük harflerle “GÜNCEL DEĞİL” yazdı. “Bunu hatıra olarak saklarım,” dedi. “Ama yol bulmak için kullanmam.” [KAHRAMAN hal=yalin] bu ayrımı beğendi. Bir bilgi geçmişi anlatmakta yararlı olabilir, bugün karar verirken ise yetersiz kalabilirdi.
+--- Sayfa 10 ---
+“Bu yol geçen yıl açıkmış,” dedi. “Neden şimdi kapalı?” Rehber, bazen bakım, hava koşulları veya doğal alanların korunması nedeniyle rotaların değişebileceğini anlattı. Eski bir harita[İKON map] her zaman güncel olmayabilirdi. [YOLDAŞ hal=yalin yedek=Hupo] cebindeki rota kartına baktı. Kartın tarihi bu yıla aitti ve kapalı yol zaten işaretlenmişti. [KAHRAMAN hal=yalin], “Demek yalnızca yönümüzü değil, haritanın tarihini de kontrol etmeliyiz,” dedi. Bir süre sonra hafif kar[İKON snow] başladı. Ceren Hanım grubun geri dönmesine karar verdi. Dönüşte rüzgâr[İKON wind] arttı ve uzaktaki ağaçlar beyaz bir perde arkasında silikleşti. Çocuklar liderlerine yakın yürüdüler. Parkurun işaretleri görünüyordu ama yürüyüşün başlangıcındaki manzara artık farklıydı.
+--- Sayfa 11 ---
+[KAHRAMAN hal=yalin] kalbinin daha hızlı attığını duyuyordu. Bir an önce varmak için acele etmek istedi. Sonra Ceren Hanım'ın az önce söylediği “Dur, düşün, planı kontrol et” sözünü hatırladı. Grubun gerisindeki bir arkadaşının yürüyüş temposunu düşürdüğünü fark etti. Öğretmenleri onun yanına geçti, gerekirse dinlenme planının uygulanacağını söyledi. [YOLDAŞ hal=yalin yedek=Hupo], “Hepimiz beraber gidersek yavaş[İKON turtle] kalırız,” diye söylendi. [KAHRAMAN hal=yalin] ona bakıp “Birlikte[İKON friends] başlayan bir ekip birlikte güvende dönmeli,” dedi. Ceren Hanım gülümseyerek ekledi: “[ATASÖZÜ yuva=pd_ata_birlikten].” [YOLDAŞ hal=yalin yedek=Hupo] cevap vermedi ama öne atılmak yerine grubun yanında kaldı. Bir süre sonra arkadaşları dinlenmişti; herkes aynı tempoda yürümeye devam etti.
+--- Sayfa 12 ---
+“Sanki geldiğimiz yol kayboldu,” diye fısıldadı [YOLDAŞ hal=yalin yedek=Hupo]. [KAHRAMAN hal=yalin] de tedirgin olmuştu. Yine de Ceren Hanım'ın sesini duyunca rahatladı: “Duruyoruz, grubu sayıyoruz ve planımıza bakıyoruz. Kimse tek başına ilerlemiyor.” Haberleşme bitince rehberleri çocuklara bilgi verdi: “Bulunduğumuz noktayı merkeze bildirdim, hava değiştiği için planlı dönüşe devam edeceğiz.” [KAHRAMAN hal=yalin], yetişkinlerin sakin konuşmasının kendisini ne kadar rahatlattığını fark etti. [YOLDAŞ hal=yalin yedek=Hupo] da cebindeki haritayı açtı ama hemen bir yol önermedi. Bunun yerine gördüğü dönüş kavşağını işaretledi.
+--- Sayfa 13 ---
+Birkaç dakika sonra kırmızı rota levhası ortaya çıktığında ikisi de doğru yolda olduklarını anladı. Rüzgâr[İKON wind] bazen yüzlerine vuruyordu fakat artık ne yapacakları belliydi. Ceren Hanım rota kartıyla konumlarını kontrol etti, merkezle haberleşti. Yardım[İKON hand-help] istemeye gerek olmadığını, yalnızca hava değişimi nedeniyle planlı geri dönüş yaptıklarını bildirdi. Böylece herkes nerede olduklarını biliyordu. [KAHRAMAN hal=yalin] gruba dağıtılan haritada dört önemli işaret[İKON flag] bulunduğunu fark etti: başlangıç noktası, seyir terası, mola alanı ve güvenli dönüş kavşağı. “Bende en çok başlangıç işareti kaldı,” dedi [KAHRAMAN hal=yalin].
+--- Sayfa 14 ---
+“Çünkü oraya geri dönmeyi bilmek de önemli.” [YOLDAŞ hal=yalin yedek=Hupo] haritayı ters tuttuğunda ilk bakışta dönüş kavşağını seçemedi. [KAHRAMAN hal=yalin] kağıdı pusuladaki yöne uygun çevirmesini hatırlattı. İkisi yön işaretleriyle bulunduğu yeri ilişkilendirirken Ceren Hanım onları izledi. Bir haritayı yalnızca ezberlemek yerine kullanmayı denemek, öğrenmeyi daha kalıcı kılıyordu. [YOLDAŞ hal=yalin yedek=Hupo], yolu kendi başına seçmek istemedi; bulduğu işareti rehberlerine göstererek doğruladı. [YOLDAŞ hal=yalin yedek=Hupo], “Ben yalnızca göl işaretine bakmıştım,” dedi. [KAHRAMAN hal=yalin], “Ben de başta öyle. Ama bir harita[İKON map] hedefi gösterdiği kadar yolu da anlatıyor,” diye karşılık verdi.
+--- Sayfa 15 ---
+Dönüş sırasında küçük bir ahşap köprüden geçtiler. Köprünün üzerinde birikmiş kar[İKON snow] görevli tarafından temizlenmişti. Yavaş[İKON turtle], sırayla yürüdüler. [KAHRAMAN hal=yalin], başka bir grubun patika dışında kısa yoldan yürüdüğünü gördü ve bunu rehbere söyledi. Ceren Hanım ilgili görevliye haber verdi; böylece alandaki diğer ziyaretçiler de bilgilendirildi. [YOLDAŞ hal=yalin yedek=Hupo], “Onlar daha önce varabilir,” dedi. [KAHRAMAN hal=yalin] kısa yoldan gitmenin doğru olmadığını söyleyince [YOLDAŞ hal=yalin yedek=Hupo] başlangıçta karşı çıktı. “Yine de daha hızlı olabilirdik,” dedi. Ceren Hanım adımları saymalarını istedi: Hızlandıkları zaman[İKON clock] kontrolsüz nefes alıyor, yavaşladıklarında rahatça konuşabiliyorlardı.
+--- Sayfa 16 ---
+Grup için uygun hızın, en hızlı yürüyebilen kişinin temposu olmadığını fark ettiler. Hızlı olmak sporda değerliydi ama doğa[İKON leaf] yürüyüşünde dayanıklılık, birlikte[İKON friends] hareket etme ve karar verme de önemliydi. [YOLDAŞ hal=yalin yedek=Hupo] bunu duyunca geçen yaz bir bisiklet[İKON bicycle] yarışında arkadaşını geride bırakıp yol ayrımını kaçırdığı günü hatırladı. Daha erken varacağını sanarken yanlış yola sapmıştı. Şimdi haritayı ve grubu takip etmenin neden önemli olduğunu anlıyordu. “Ama bizim amacımız bir yarış kazanmak değil,” diye yanıtladı [KAHRAMAN hal=yalin]. “Güvenle dönmek.”
+--- Sayfa 17 ---
+Grubun en arkasında yürüyen öğretmen, her öğrencinin yakınında arkadaşını görebilmesini sağlıyordu. Küçük ekip farklı hızlarda yürüdüğü için yol boyunca kısa molalar planlanmıştı. [KAHRAMAN hal=yalin] en başta bunları gereksiz bulmuş, enerjisi varken hızlanmak istemişti. Fakat kar[İKON snow] yağışı ve rüzgâr[İKON wind] arttıkça her molanın herkesi yeniden toparlamaya yardım ettiğini gördü. Gruptaki çocuklar birbirlerine nefeslerini ve adımlarını ayarlamak için zaman[İKON clock] tanıyordu. Böylece kimse yarışın gerisinde kalmış gibi hissetmiyordu. [KAHRAMAN hal=yalin] dönüş yolunda arkadaşlarından Ayşe'nin sessizleştiğini fark etti. “İyi misin?” diye sordu.
+--- Sayfa 18 ---
+Ayşe üşüdüğünü söyleyince durumu hemen rehberlerine iletti. Rehber uygun mola düzenini uyguladı ve herkesin giysilerini kontrol etti. [KAHRAMAN hal=yalin], yardım[İKON hand-help] istemenin grubu yavaşlatmak değil, daha güvenli kılmak olduğunu gördü. [YOLDAŞ hal=yalin yedek=Hupo] da çantasındaki yedek boyunluğu Ayşe'ye önerdi; rehber uygun bulunca Ayşe rahatladı. Çocuklar dönüş kavşağındaki sarı işarete ulaştıklarında rüzgâr[İKON wind] hafifledi. Hava yine bulutluydu. İleride başlangıç binasının çatısı göründü. [YOLDAŞ hal=yalin yedek=Hupo] rahat bir nefes aldı. Yol boyunca soğuk hissettiğinde katmanlı giysilerini ayarlamanın, susamayı beklemeden su[İKON drop] içmenin ve grubun temposuna uymanın yararını görmüştü.
+--- Sayfa 19 ---
+Ceren Hanım dönüşte küçük bir toplantı yaptı. “Bugün hedeflediğimiz uzun parkuru bitiremedik. Sizce iyi bir gün mü geçirdik?” diye sordu. Bazı çocuklar kararsız kaldı. [KAHRAMAN hal=yalin], gölü güvenli seyir noktasından gördüklerini ve dönüşte planı uyguladıklarını söyledi. [YOLDAŞ hal=yalin yedek=Hupo] ise “Önce başarısız olduğumuzu sandım,” dedi. “Ama hava değişince karar değiştirebildik.” Liderleri, açık hava etkinliklerinde güvenliğin rotanın sonuna ulaşmaktan önce geldiğini açıkladı. Ceren Hanım çantalarından çıkan küçük taş, kozalak veya yaprakların hiçbirini götürmediklerini görünce teşekkür etti. Her öğrenci gördüğü bir şeyi çizmiş ya da fotoğraflamıştı. Böylece anılarının doğadaki nesneleri yerinden almadan da saklanabileceğini fark ettiler.
+--- Sayfa 20 ---
+[YOLDAŞ hal=yalin yedek=Hupo] defterine gölün mavi bölümünü çizdi. [KAHRAMAN hal=yalin] ise onu çevreleyen dağları. İki farklı resim aynı yürüyüşün başka yanlarını anlatıyordu. Çocuklar, alınan bir kararın sonucunu değerlendirirken yalnızca “vardık mı?” sorusuna bakmanın yeterli olmadığını düşündü. Merkez binasına dönünce sıcak çorbalarını içtiler. [YOLDAŞ hal=yalin yedek=Hupo] telefonundaki göl fotoğraflarını gösterdi. İlk fotoğrafta güneş[İKON sun] parlıyordu, ikinci fotoğrafta aynı gölün üstünde bulutlar vardı. “İkisi de bugün çekildi,” dedi. “Ama biri yaz gibi, öbürü kış fırtınası gibi görünüyor.” Ceren Hanım, hava ve ışık değiştikçe aynı manzaranın farklı algılanabileceğini anlattı. Sonra herkese küçük bir görev[İKON quest] verdi: Yolculuğun fotoğraf albümünün yanına “gerçek rota defteri” hazırlamak.
+--- Sayfa 21 ---
+[KAHRAMAN hal=yalin] dönüş kavşağını çizdi; [YOLDAŞ hal=yalin yedek=Hupo] yürüyüş saatlerini ekledi. Birlikte[İKON friends], hava değiştiği için planın hangi noktada değiştirildiğini işaretlediler. [YOLDAŞ hal=yalin yedek=Hupo] defterin kapağına “Buz Gölü Macerası” yazdı. [KAHRAMAN hal=yalin] altına başka bir cümle ekledi: “Güvenli bir macera, iyi bir planla başlar.” Annesi gezi fotoğraflarına bakarken “En çok hangi anı hatırlayacaksın?” diye sordu. [YOLDAŞ hal=yalin yedek=Hupo] yalnızca gölü göstermedi. Rüzgâr[İKON wind] kuvvetlendiğinde birlikte durdukları kavşağın fotoğrafını da açtı. “Burada doğru[İKON check] karar verdik,” dedi. “Manzara kadar bunu da hatırlayacağım.” O akşam [YOLDAŞ hal=yalin yedek=Hupo] ailesine, gölün üzerinde yürüyemedikleri için üzülmediğini söyledi. “Yukarıdan gördüğüm manzara yeterince güzeldi,” dedi. “Hem buzun kalınlığını gözümüzle anlayamayacağımızı öğrendim.”
+--- Sayfa 22 ---
+Eve döndüğünde [KAHRAMAN hal=ilgi] küçük kardeşi, “Dağın tepesine çıktınız mı?” diye sordu. [KAHRAMAN hal=yalin] çıkmadıklarını söyleyince kardeşi şaşırdı. [KAHRAMAN hal=yalin] haritasını açtı, rotanın nerede değiştiğini gösterdi. “Bak, şu noktaya geldik. Sonra hava değişti. Geri dönerken öğrendiklerimiz, devam etseydik göreceğimiz bir manzaradan daha önemli olabilir,” dedi. Kardeşi haritadaki okları takip etti. “Ben de büyüyünce güvenli rota çizmeyi öğrenmek istiyorum,” diye cevap verdi. [YOLDAŞ hal=yalin yedek=Hupo] da haritayı bir kez daha masaya serip dönüş kavşağını gösterdi. “Başlangıçta bu işareti gereksiz sandım,” dedi. “Şimdi neden[İKON question] haritada olduğunu çok iyi biliyorum.” [KAHRAMAN hal=yalin] onun yeni öğrendiği bu dikkatli tavrı görünce sevindi.
+--- Sayfa 23 ---
+[KAHRAMAN hal=yalin] ise en çok dönüş kararını hatırlıyordu. Rehberleri hava değişince hedeflerinden vazgeçmişti. Önce bunu başarısızlık sanmış, sonra anlamıştı: Bazen hedefe varamamak değil, doğru[İKON check] zamanda geri dönmek en iyi karardı. Afişi hazırlarken başka sınıflardan gelen sorular onları şaşırttı. Bir öğrenci, “Buz kalın görünüyorsa üzerine çıkabilir miyiz?” diye sordu. [YOLDAŞ hal=yalin yedek=Hupo], “Hayır,” dedi. “Kalınlığını gözümüzle güvenilir biçimde anlayamayız. Yetişkinlerin ve yetkililerin uyarılarına uymalıyız.” Başka bir öğrenci de benzer bir şey sordu. [KAHRAMAN hal=yalin] gülümseyip başını salladı; haritanın önemli olduğunu ama güvenlik için tek başına yeterli sayılamayacağını tekrar söyledi. Çocuklar afişte “Yanında yetişkin rehber ve güncel rota bilgisi olsun” cümlesine de yer verdi.
+--- Sayfa 24 ---
+“Harita[İKON map] yanımızdaysa tek başımıza yürüyebilir miyiz?” diye sordu. [KAHRAMAN hal=yalin], haritanın tek başına güvenlik sağlamadığını, uygun rota, rehberlik, hava değerlendirmesi ve haberleşmenin de önemli olduğunu anlattı. Öğretmenleri çocukların bu sorulara hazırlıklı olmasına sevindi. Ertesi hafta sınıfta bir güvenli yürüyüş afişi hazırladılar. Sınıf arkadaşları onların afişine bakarken güvenli kararların bir ödev kuralından ibaret olmadığını fark etti. Hep birlikte[İKON friends] basit bir doğa[İKON leaf] yürüyüşü kontrol listesi hazırladılar. Afişin üstünde dört işaretli rota ve büyük harflerle tek bir cümle vardı: “Doğayı seviyorsan onu tanı, kurallarına uy ve birlikte hareket et.” [İŞARET kod=kalp]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=D
+  Metin: Kamp lideri Ceren Hanım, gölün üzerine neden çıkılmayacağını söyledi?
+  A) Göl çok uzak olduğu için
+  B) Göl herkese kapalı bir özel alan olduğu için
+  C) Çocukların ayakkabıları uygun olmadığı için
+  D) Buzun güvenli olup olmadığı yalnızca görünüşünden anlaşılamayacağı için
+  Açıklama: Ceren Hanım, buzun güvenli olduğunu yalnızca görünüşünden anlayamayacaklarını söyledi.
+s2 [hatirlama] dayanak_sayfa=9 doğru=B
+  Metin: Bir çocuğun elindeki eski harita çıktısı neden yol bulmak için kullanılmadı?
+  A) Çünkü harita yırtılmıştı
+  B) Çünkü bir yıl öncesinden kalmıştı; açık hava rotalarında güncel bilgi gerekiyordu
+  C) Çünkü hiç kuzey oku yoktu
+  D) Çünkü başka bir ülkenin haritasıydı
+  Açıklama: Çıktı bir yıl önceki etkinlikten kalmıştı; Ceren Hanım açık hava rotalarında güncel bilgi gerektiğini anlattı.
+s3 [cikarim] dayanak_sayfa=10 doğru=A
+  Metin: Ceren Hanım yürüyüşü bitirmeden geri dönme kararını neden aldı?
+  A) Hava değişip kar ve rüzgâr arttığı için güvenliği her şeyin önünde tuttu
+  B) Çocuklar yürümek istemediği için
+  C) Harita tamamen kaybolduğu için
+  D) Göl fotoğrafları yeterince güzel çıkmadığı için
+  Açıklama: Hafif kar başlayıp rüzgâr artınca geri dönüş kararı verildi; güvenlik rotanın sonuna ulaşmaktan önce geliyordu.
+s4 [yorumlama] dayanak_sayfa=23 doğru=C
+  Metin: “Bazen hedefe varamamak değil, doğru zamanda geri dönmek en iyi karardır” sözü ne anlatır?
+  A) Hedefe ulaşmak hiçbir zaman önemli değildir
+  B) Yürüyüşlerde hiç hedef koymamak gerekir
+  C) Koşullar tehlikeli hâle geldiğinde hedeften vazgeçip güvenle dönmek de bir başarıdır
+  D) Geri dönenler her zaman yarışı kaybetmiş olur
+  Açıklama: Gruptaki çocuklar, hava değişince planın değiştirilmesini başarısızlık değil, doğru bir karar olarak değerlendirdi.
+s5 [sozcuk_baglami] dayanak_sayfa=1 doğru=B
+  Metin: Metne göre pusula ne işe yarar?
+  A) Hava sıcaklığını ölçer
+  B) İğnesi sürekli aynı yönü göstererek yön bulmaya yardım eder
+  C) Karın kalınlığını ölçer
+  D) Hayvan izlerini tanıtır
+  Açıklama: Pusulaya bakınca iğnenin sürekli aynı yönü gösterdiği görülür; ancak pusula tek başına rota planlamaya yetmez.
+s6 [sozcuk_baglami] dayanak_sayfa=1 doğru=D
+  Metin: Metindeki “rota kartı” ifadesinde rota ne demektir?
+  A) Bir kampın yemek listesi
+  B) Grubun çantasındaki eşyaların listesi
+  C) Bir hayvanın yaşadığı yer
+  D) Yürüyüşte izlenecek yol
+  Açıklama: Rota kartı, yürüyüşte izlenecek yolu ve işaretleri gösteriyordu; kapalı yol da bu kartta işaretlenmişti.
+s7 [degerlendirme] dayanak_sayfa=23 doğru=A
+  Metin: Çocukların afişe “Yanında yetişkin rehber ve güncel rota bilgisi olsun” cümlesini eklemesi neden yerindedir?
+  A) Çünkü harita güvenlik için tek başına yeterli değildir; rehberlik ve güncel bilgi de gerekir
+  B) Çünkü haritalar hiçbir işe yaramaz
+  C) Çünkü yetişkinler yürüyüşe katılmak ister
+  D) Çünkü afişin boş yerini doldurmak gerekir
+  Açıklama: Çocuklar haritanın önemli olduğunu ama tek başına güvenlik sağlamadığını, rehberlik ve güncel bilginin de gerektiğini anlattı.
+
+## Sözlük
+- pd_pusula | kelime | yazım: pusula | 5–5 | anlam: İğnesi hep aynı yönü göstererek yön bulmaya yardım eden araç.
+- pd_kuzey | kelime | yazım: kuzey | 5–5 | anlam: Pusulanın gösterdiği, dört ana yönden biri.
+- pd_rota | kelime | yazım: rota | 5–5 | anlam: Bir yolculukta ya da yürüyüşte izlenecek yol.
+- pd_ata_birlikten | atasozu | yazım: Birlikten kuvvet doğar | 5–5 | anlam: İnsanlar bir araya gelip birlikte çalışınca daha güçlü olur.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

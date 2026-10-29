@@ -1,0 +1,107 @@
+[
+ {
+  "t": "es_anlamli",
+  "s": 4,
+  "z": 2,
+  "h": {
+   "kelime": "özlem",
+   "anlam": "Uzakta olan birini ya da bir şeyi görmek isteme duygusu.",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "“Yazın uzaktaki kardeşime duyduğum özlem her gün arttı.” cümlesindeki “özlem” sözcüğüyle eş anlamlı olan hangisidir?",
+  "o": [
+   "utanç",
+   "merak",
+   "öfke",
+   "hasret"
+  ],
+  "d": 3,
+  "a": "Özlem ve hasret aynı duyguyu anlatır; utanç, merak ve öfke başka duygulardır.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 4,
+  "z": 2,
+  "h": {
+   "kelime": "çay",
+   "anlam": "küçük akarsu, dere",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “çay” sözcüğü dere anlamında kullanılmıştır?",
+  "o": [
+   "Köyün kenarından geçen çayın kıyısında yürüdük.",
+   "Kahvaltıda sıcak çay içmeyi çok seviyorum.",
+   "Annem demliğe iki kaşık taze çay koydu.",
+   "Misafirlere şekersiz ve demli çay ikram ettik."
+  ],
+  "d": 0,
+  "a": "İlk cümlede çay, küçük bir akarsudur; diğerlerinde çay, içecek ya da bitkisidir.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 4,
+  "z": 3,
+  "h": {
+   "kelime": "yaz",
+   "anlam": "yılın üçüncü mevsimi",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “yaz” sözcüğü yılın üçüncü mevsimi anlamında kullanılmıştır?",
+  "o": [
+   "Tahtadaki cümleyi dikkatle defterine yaz.",
+   "Bu kelimeyi önce kâğıdın üstüne yaz.",
+   "Yaz tatilinde dedemlerin köyüne gideceğiz.",
+   "Mektubu temize yaz ve zarfa koy."
+  ],
+  "d": 2,
+  "a": "Üçüncü cümlede yaz, bir mevsimdir; diğerlerinde yaz, yazmak eyleminin emir biçimidir.",
+  "ip": null
+ },
+ {
+  "t": "es_sesli",
+  "s": 4,
+  "z": 2,
+  "h": {
+   "kelime": "bin",
+   "anlam": "yüz sayısının on katı",
+   "tur": "kelime",
+   "sozcuk_turu": "isim"
+  },
+  "q": "Aşağıdakilerden hangisinde “bin” sözcüğü yüz sayısının on katı anlamında kullanılmıştır?",
+  "o": [
+   "Otobüse bin ve arka koltuğa otur.",
+   "Kütüphanede bin kitaptan fazlası var.",
+   "Bu güçlü ata bin ve yavaşça yürü.",
+   "Sabah servise bin ve okula git."
+  ],
+  "d": 1,
+  "a": "İkinci cümlede bin bir sayıdır; diğerlerinde bin, binmek eyleminin emir biçimidir.",
+  "ip": null
+ },
+ {
+  "t": "atasozu",
+  "s": 4,
+  "z": 2,
+  "h": {
+   "kelime": "Gülü seven dikenine katlanır.",
+   "anlam": "İstenen bir şey için çıkan zorluklara razı olmak gerekir.",
+   "tur": "atasozu",
+   "sozcuk_turu": null
+  },
+  "q": "“Gülü seven dikenine katlanır.” atasözü hangi durumu anlatır?",
+  "o": [
+   "Çiçekler yalnızca bahar mevsiminde açar.",
+   "Dikenli bitkilere asla dokunmamak gerekir.",
+   "Güzel şeyler hiç emek vermeden elde edilir.",
+   "İstenen bir şey için zorluğa razı olunur."
+  ],
+  "d": 3,
+  "a": "Bu söz, istenen bir şeye ulaşmak için zorluklara razı olmak gerektiğini anlatır.",
+  "ip": null
+ }
+]

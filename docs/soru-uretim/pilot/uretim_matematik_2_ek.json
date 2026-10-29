@@ -1,0 +1,86 @@
+[
+  {
+    "id": "MAT2-029",
+    "sinif": 2,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.3.6",
+    "surec_bileseni": "d",
+    "konu": "Mesafe ve yön",
+    "alt_konu": "En kısa yolu seçme",
+    "soru_metni": "Deniz'in evinden okula iki yol gider. Sağdaki yolun parçaları 20 m ve 25 m, soldaki yolun parçaları 30 m ve 10 m'dir. Deniz en kısa yolu seçerse okula kaç metre yürür?",
+    "siklar": {
+      "A": "10",
+      "B": "30",
+      "C": "40",
+      "D": "45"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Önce iki yolun toplam uzunluğunu ayrı ayrı bul.",
+    "cozum_adimlari": [
+      "Sağdaki yolun uzunluğu 20 + 25 = 45 metredir.",
+      "Soldaki yolun uzunluğu 30 + 10 = 40 metredir.",
+      "40 metre, 45 metreden kısadır; en kısa yol soldaki yoldur.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Yolun tek bir parçasına bakıp en kısa parçayı (10 m) yolun tamamı sanma.",
+      "B": "Soldaki yolun yalnız ilk parçasını (30 m) toplam uzunluk sanma; ara sonucu nihai sanma.",
+      "D": "İlk parçası daha kısa olduğu için (20 m < 30 m) sağdaki yolu en kısa sanıp toplamlara bakmama."
+    },
+    "sayisal_dogrulama": {
+      "ifade": "30+10",
+      "beklenen_sonuc": "40"
+    },
+    "zorluk": 1,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "problem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  },
+  {
+    "id": "MAT2-030",
+    "sinif": 2,
+    "ders": "Matematik",
+    "mufredat_surum": "2026 Maarif Modeli",
+    "kazanim_kodu": "MAT.2.3.6",
+    "surec_bileseni": "c",
+    "konu": "Mesafe ve yön",
+    "alt_konu": "Yanlış yönden sonra hedefe ulaşma",
+    "soru_metni": "Okul kapısından çıkan biri için kütüphane 20 m ileride ve oradan 10 m sağdadır. Ece kapıdan çıkıp 20 m ileri gitti, sonra yanlışlıkla sola dönüp 10 m yürüdü. Ece kütüphaneye ulaşmak için en az kaç metre daha yürümelidir?",
+    "siklar": {
+      "A": "10",
+      "B": "20",
+      "C": "30",
+      "D": "60"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Ece'nin şu anda kütüphaneye göre hangi tarafta olduğunu düşün.",
+    "cozum_adimlari": [
+      "Ece 20 m ileri gittiği köşeden sola doğru 10 m uzaklaştı.",
+      "Kütüphane ise aynı köşeden sağa doğru 10 m uzaktadır.",
+      "Ece önce köşeye geri dönmelidir: 10 metre.",
+      "Sonra sağa dönüp kütüphaneye 10 metre yürümelidir.",
+      "Toplam 10 + 10 = 20 metre daha yürümelidir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Kütüphanenin köşeden uzaklığını (10 m) kalan mesafe sanıp yanlış tarafa gidilen 10 m'yi hesaba katmama.",
+      "C": "Soruda verilen 20 m ile 10 m'yi toplayıp (ya da kapıya dönmeyi) kalan mesafe sanma.",
+      "D": "Kapıya kadar geri dönüp (30 m) yolu baştan yürümeyi (30 m) en kısa yol sanma."
+    },
+    "sayisal_dogrulama": {
+      "ifade": "10+10",
+      "beklenen_sonuc": "20"
+    },
+    "zorluk": 2,
+    "zorluk_kaynagi": "model_tahmini",
+    "soru_tipi": "problem",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai"
+  }
+]

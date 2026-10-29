@@ -1,0 +1,654 @@
+[
+ {
+  "id": "SOS5-001",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.1.1",
+  "surec_bileseni": "a",
+  "konu": "Birey ve toplum",
+  "alt_konu": "Gruplar ve roller",
+  "soru_metni": "Mert, mahalle takımında kaleci, sınıfında sınıf başkanıdır. Evde ise küçük kız kardeşiyle ilgilenen bir ağabeydir. Mert’in dâhil olduğu gruplar ve bu gruplardaki rolleri aşağıdakilerden hangisinde doğru eşleştirilmiştir?",
+  "siklar": {
+   "A": "Mahalle takımı: sınıf başkanı, sınıf: ağabey, aile: kaleci",
+   "B": "Mahalle takımı: kaleci, sınıf: sınıf başkanı, aile: ağabey",
+   "C": "Mahalle takımı: ağabey, sınıf: kaleci, aile: sınıf başkanı",
+   "D": "Mahalle takımı: sınıf başkanı, sınıf: kaleci, aile: ağabey"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Her grubun kendine özgü bir görev tanımı vardır; rolün hangi grupta üstlenildiğine bak.",
+  "cozum_adimlari": [
+   "Mert futbol takımında kaleciliği yapar; bu rol mahalle takımı grubuna aittir.",
+   "Sınıf başkanlığı sınıf grubundaki, ağabeylik ise ailedeki roldür.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Rolleri gruplara ters yerleştirir; grup ile rol kavramını karıştırır.",
+   "B": "Doğru.",
+   "C": "Rolleri gruplara döngüsel kaydırarak eşleştirir.",
+   "D": "Takım ve sınıf rollerini yer değiştirir; ağabeyliği doğru bulur."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-006",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "surec_bileseni": "a",
+  "konu": "Yaşadığım il",
+  "alt_konu": "Göreceli konum",
+  "soru_metni": "Bir öğrenci, yaşadığı Trabzon’un konumunu arkadaşına tarif edecektir. Aşağıdakilerden hangisi Trabzon’un göreceli konumuna ilişkin bir bilgidir?",
+  "siklar": {
+   "A": "Kuzeyinde Karadeniz, doğusunda Rize bulunmaktadır.",
+   "B": "Konumu, enlem ve boylam derecesiyle gösterilmektedir.",
+   "C": "İlin yüz ölçümü ve nüfus sayısı bilinmektedir.",
+   "D": "Yıllık ortalama sıcaklığı ve yağış miktarı bilinmektedir."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Göreceli konum, bir yerin çevresindeki yer ve yönlere göre tarif edilmesidir.",
+  "cozum_adimlari": [
+   "Göreceli konum, bir yerin çevresindeki denizlere, komşu illere ve yönlere göre belirtilmesidir.",
+   "Karadeniz ve Rize ile yön belirtmek göreceli konumdur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Enlem ve boylam mutlak konumu verir.",
+   "C": "Yüz ölçümü ve nüfus konum bilgisi değildir.",
+   "D": "Sıcaklık ve yağış iklim bilgisidir; konumu anlatmaz."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-007",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.2",
+  "surec_bileseni": "b",
+  "konu": "Yaşadığım il",
+  "alt_konu": "Çevredeki değişimin sonuçları",
+  "soru_metni": "Bir ilde yapılan baraj nedeniyle verimli bir ovanın büyük bölümü su altında kalmıştır. Bu değişimin beşerî çevrede ortaya çıkarabileceği sonuç aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Ovanın çevresindeki nehrin akış düzeninin değişmesi",
+   "B": "Ovadaki bitki örtüsünün azalması",
+   "C": "Köylerde yaşayanların yerleşim yeri değiştirmesi",
+   "D": "Bölgedeki yer şekillerinin farklılaşması"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Beşerî çevre, insanın oluşturduğu ve insanı ilgilendiren unsurlardır.",
+  "cozum_adimlari": [
+   "Nehir akışı, bitki örtüsü ve yer şekilleri doğal çevre unsurlarıdır.",
+   "Yerleşim yerinin değişmesi insana ait olduğu için beşerî çevrede görülen sonuçtur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Nehir akışı doğal çevre unsurudur.",
+   "B": "Bitki örtüsü doğal çevre unsurudur.",
+   "C": "Doğru.",
+   "D": "Yer şekilleri doğal çevre unsurudur."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-008",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.2",
+  "surec_bileseni": "ç",
+  "konu": "Yaşadığım il",
+  "alt_konu": "Neden-sonuç zinciri",
+  "soru_metni": "Bir ilde yeni mahallelerin tarım arazilerinde kurulması, organize sanayi bölgesinin açılması, başka illerden gelen nüfusun artması ve yeni iş imkânlarının ortaya çıkması gözlenmiştir. Bu değişimler neden-sonuç ilişkisine göre sıralandığında aşağıdakilerden hangisi elde edilir?",
+  "siklar": {
+   "A": "İş imkânları → nüfus artışı → yeni mahalleler → sanayi bölgesi",
+   "B": "Nüfus artışı → sanayi bölgesi → iş imkânları → yeni mahalleler",
+   "C": "Yeni mahalleler → nüfus artışı → sanayi bölgesi → iş imkânları",
+   "D": "Sanayi bölgesi → iş imkânları → nüfus artışı → yeni mahalleler"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Başlangıçta değişimi başlatan bir neden bulunur; sonraki her olay bir öncekinin sonucudur.",
+  "cozum_adimlari": [
+   "Sanayi bölgesinin açılması iş imkânlarını artırır.",
+   "İş imkânları göçü artırır, artan nüfus yeni konut ihtiyacı doğurur; yeni mahalleler tarım arazilerinde kurulur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Sonucu neden sanır; iş imkânlarının sanayi bölgesinden önce var olduğunu varsayar.",
+   "B": "Nüfus artışını sanayi bölgesinin nedeni sanır.",
+   "C": "Mahallelerin kurulmasını başlangıç nedeni sanır.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "kronoloji",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-009",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.3",
+  "surec_bileseni": "a",
+  "konu": "Yaşadığım il",
+  "alt_konu": "Afet öncesi hazırlık",
+  "soru_metni": "Deprem riski yüksek bir ilde yaşayan Elif’in ailesi, olası bir depremin etkilerini azaltmak için önceden hazırlık yapmak istiyor. Aşağıdakilerden hangisi bu amaca uygun bir hazırlıktır?",
+  "siklar": {
+   "A": "Depremden sonra enkazı kaldırmak için iş makinesi çağırmak",
+   "B": "Ağır ve devrilebilecek eşyaları duvara sabitlemek",
+   "C": "Hasar gören evi depremden sonra onarmak",
+   "D": "Depremden sonra geçici barınmak için çadır kurmak"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Etkiyi azaltmak için hazırlığın deprem olmadan önce yapılması gerekir.",
+  "cozum_adimlari": [
+   "Önlemler afet gerçekleşmeden alınır.",
+   "Ağır eşyaları sabitlemek deprem sırasında yaralanma riskini azaltır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Afet sonrası müdahaleyi önlemle karıştırır.",
+   "B": "Doğru.",
+   "C": "Afet sonrası onarımı önlemle karıştırır.",
+   "D": "Afet sonrası barınmayı önlemle karıştırır."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-010",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.3",
+  "surec_bileseni": "a",
+  "konu": "Yaşadığım il",
+  "alt_konu": "Sel riskini azaltma",
+  "soru_metni": "Karadeniz kıyısındaki bir ilde yağışlı mevsimlerde dere yatakları taşmakta, evler ve yollar zarar görmektedir. Belediye, selin can ve mal kaybına etkisini azaltmak istemektedir. Aşağıdakilerden hangisi bu amaca uygun bir önlemdir?",
+  "siklar": {
+   "A": "Dere yataklarında yapılaşmayı önleyip yatakları temizletmek",
+   "B": "Sel sonrasında zarar gören yolları ve köprüleri onarmak",
+   "C": "Selden etkilenen ailelere geçici barınma yeri sağlamak",
+   "D": "Sel sırasında zarar gören evlerin sahiplerine tazminat ödemek"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sel gelmeden önce suyun akışını ve zarar görebilecek yerleri etkileyen çalışmaları düşün.",
+  "cozum_adimlari": [
+   "Dere yatağında yapı bulunmaması ve yatağın temiz olması suyun taşma riskini ve zararı azaltır.",
+   "Diğer seçenekler sel olduktan sonra yapılan çalışmalardır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Sonrasındaki onarımı önlem sanır.",
+   "C": "Sonrasındaki barınma yardımını önlem sanır.",
+   "D": "Zararın sonradan karşılanmasını etkiyi azaltmak sanır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-012",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.4",
+  "surec_bileseni": "a",
+  "konu": "Yaşadığım il",
+  "alt_konu": "Bilgi kaynakları",
+  "soru_metni": "Elif, Bulgaristan’ın başkenti, nüfusu ve yönetim biçimi hakkında güncel ve güvenilir bilgi edinmek istiyor. Aşağıdaki kaynaklardan hangisi bu amaca daha uygundur?",
+  "siklar": {
+   "A": "Bulgaristan’a giden bir turistin çektiği gezi videosunun altındaki yorumlar",
+   "B": "Yazarı belli olmayan ve yıllar önce hazırlanmış bir internet sayfası",
+   "C": "Dışişleri Bakanlığının internet sitesi ve yeni basılmış bir atlas",
+   "D": "Arkadaşının sosyal medyada paylaştığı kısa bir gezi notu"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Güvenilir kaynak, bilgiyi veren kurumun ya da yayının sorumluluğunun belli olmasıdır.",
+  "cozum_adimlari": [
+   "Resmî kurum siteleri ve güncel atlaslar denetlenebilir, güncel bilgi verir.",
+   "Diğer kaynaklar bireysel, belirsiz ya da eskidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kişisel izlenimi güvenilir bilgi sanar.",
+   "B": "Yazarı ve tarihi belli olmayan kaynağı güvenilir sanar.",
+   "C": "Doğru.",
+   "D": "Arkadaş paylaşımını kaynak sanar."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-014",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.3.2",
+  "surec_bileseni": "a",
+  "konu": "Ortak miras",
+  "alt_konu": "Anadolu’da ilk yerleşimler",
+  "soru_metni": "Konya’daki Çatalhöyük kazılarında buğday ve arpa tohumları, koyun ve keçi kemikleri ile birbirine bitişik evlerin kalıntıları bulunmuştur. Bu buluntulara bakarak Çatalhöyük’te yaşayan topluluk hakkında hangi çıkarım yapılabilir?",
+  "siklar": {
+   "A": "Avcılık ve toplayıcılıkla geçinip sürekli yer değiştirmiştir.",
+   "B": "Tarım ve hayvancılık yaparak yerleşik hayatı benimsemiştir.",
+   "C": "Denizcilik ve ticaretle geçinip kıyıda yaşamıştır.",
+   "D": "Madeni para kullanarak pazarlarda alışveriş yapmıştır."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Tohumlar, hayvan kemikleri ve evler bir topluluğun nasıl geçindiğini gösterir.",
+  "cozum_adimlari": [
+   "Tahıl tohumları tarımı, koyun-keçi kemikleri hayvancılığı gösterir.",
+   "Birbirine bitişik evler kalıcı yerleşimi gösterir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Buluntuları göçebe avcı-toplayıcı yaşamla karıştırır.",
+   "B": "Doğru.",
+   "C": "Buluntularda deniz ve ticaret kanıtı yoktur; Konya iç bölgededir.",
+   "D": "Madeni para çok daha sonraki bir döneme aittir; anakronizm."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-016",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.3.3",
+  "surec_bileseni": "a",
+  "konu": "Ortak miras",
+  "alt_konu": "Mezopotamya ve Anadolu medeniyetleri",
+  "soru_metni": "Bir öğrenci, Mezopotamya medeniyetlerinin ortak mirasa katkılarını gösteren bir pano hazırlıyor. Panoda aşağıdakilerden hangisine yer verebilir?",
+  "siklar": {
+   "A": "Lidyalıların madeni parayı kullanması",
+   "B": "Hititlerin Kadeş Antlaşması’nı imzalaması",
+   "C": "Urartuların kayalık alanlara kale yapması",
+   "D": "Sümerlerin çivi yazısını geliştirmesi"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Seçeneklerdeki medeniyetlerin hangisinin Mezopotamya’da yaşadığını düşün.",
+  "cozum_adimlari": [
+   "Sümerler Mezopotamya’da yaşamış ve çivi yazısını geliştirmiştir.",
+   "Lidyalılar, Hititler ve Urartular Anadolu’da yaşamıştır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Lidya Anadolu medeniyetidir.",
+   "B": "Hititler Anadolu medeniyetidir.",
+   "C": "Urartular Anadolu medeniyetidir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-017",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.3.3",
+  "surec_bileseni": "b",
+  "konu": "Ortak miras",
+  "alt_konu": "Katkıların benzerliği",
+  "soru_metni": "Bir müze rehberi, Mezopotamya’daki Sümerler ile Anadolu’daki Hititlerin ortak yönlerini anlatıyor. Rehberin anlattığı ortak yön aşağıdakilerden hangisi olabilir?",
+  "siklar": {
+   "A": "İkisi de kil tabletlere çivi yazısıyla kayıt tutmuştur.",
+   "B": "İkisi de ilk madeni parayı basarak ticaret yapmıştır.",
+   "C": "İkisi de Kral Yolu’nu yaptırarak ulaşımı kolaylaştırmıştır.",
+   "D": "İkisi de Kadeş Antlaşması’nı imzalayan devletlerdir."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her iki topluluğun da yazılı kayıt tutmak için kullandığı malzemeyi düşün.",
+  "cozum_adimlari": [
+   "Sümerler çivi yazısını geliştirmiş, Hititler de kil tabletlere çivi yazısıyla kayıt tutmuştur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Madeni para Lidyalılara bağlanır; Sümerlerin ve Hititlerin ortak özelliği değildir.",
+   "C": "Kral Yolu Sümerlere ve Hititlere ait değildir.",
+   "D": "Kadeş Antlaşması’nı Sümerler imzalamamıştır; Hititler imzalamıştır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-018",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.4.1",
+  "surec_bileseni": "a",
+  "konu": "Demokrasi ve cumhuriyet",
+  "alt_konu": "Ortak nitelikler",
+  "soru_metni": "Bir okulda sınıf başkanı, sınıftaki öğrencilerin oylarıyla seçilir ve görev süresi bir dönemle sınırlıdır. Öğretmen bu uygulamanın cumhuriyet ve demokrasiyle benzerliğini anlatmak istiyor. Bu uygulama, iki kavramın hangi ortak niteliğine örnektir?",
+  "siklar": {
+   "A": "Yöneticilerin görevlerini ömür boyu sürdürmesi",
+   "B": "Yöneticilerin görevlerini kalıtımla devretmesi",
+   "C": "Yöneticilerin seçimle ve süreli göreve gelmesi",
+   "D": "Kararların tek kişi tarafından verilmesi"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Başkanın nasıl göreve geldiğine ve görevde ne kadar kalabildiğine bak.",
+  "cozum_adimlari": [
+   "Sınıf başkanı oyla seçilir ve görev süresi sınırlıdır.",
+   "Cumhuriyette ve demokraside yöneticiler seçimle ve belirli süreyle göreve gelir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Süresiz görevi cumhuriyet ve demokrasiyle karıştırır.",
+   "B": "Kalıtımla devri cumhuriyetle karıştırır; bu krallık-hanedan özelliğidir.",
+   "C": "Doğru.",
+   "D": "Tek kişi yönetimini demokrasiyle karıştırır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-023",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.4.4",
+  "surec_bileseni": "a",
+  "konu": "Hak ve sorumluluklar",
+  "alt_konu": "Başvuru yapılacak kurumlar",
+  "soru_metni": "Evinin yakınındaki yolda trafik kazası olan ve yaralıların bulunduğunu gören Kerem, hemen yardım çağırmak istiyor. Aşağıdakilerden hangisi onun için en uygun başvuru yoludur?",
+  "siklar": {
+   "A": "Mahalle muhtarına mektup yazmak",
+   "B": "112 Acil Çağrı Merkezini aramak",
+   "C": "Okul müdürlüğüne dilekçe vermek",
+   "D": "Belediyenin Park ve Bahçeler Müdürlüğüne gitmek"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yaralı varsa yardımın en kısa sürede ulaşması gerekir.",
+  "cozum_adimlari": [
+   "Acil sağlık ve güvenlik yardımı için 112 Acil Çağrı Merkezi aranır.",
+   "Diğer başvuru yolları yavaştır ve konuyla ilgili değildir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Mektup acil durum için yavaştır.",
+   "B": "Doğru.",
+   "C": "Okul müdürlüğü trafik kazasıyla ilgili kurum değildir.",
+   "D": "Park ve bahçeler müdürlüğü acil sağlık hizmeti vermez."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-024",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.4.4",
+  "surec_bileseni": "a",
+  "konu": "Hak ve sorumluluklar",
+  "alt_konu": "Kurumların görevleri",
+  "soru_metni": "Ayşe Hanım ile eşi, yeni doğan bebeklerinin nüfus kaydını yaptırmak istiyor. Aşağıdaki kurumlardan hangisine başvurmaları gerekir?",
+  "siklar": {
+   "A": "Vergi Dairesi",
+   "B": "Zabıta Müdürlüğü",
+   "C": "İl Millî Eğitim Müdürlüğü",
+   "D": "Nüfus Müdürlüğü"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Kimlik ve kayıt işlemlerinden sorumlu kurumu düşün.",
+  "cozum_adimlari": [
+   "Doğum, evlilik gibi nüfus kayıtları Nüfus Müdürlüğünde tutulur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Vergi Dairesi vergi işlemlerine bakar.",
+   "B": "Zabıta Müdürlüğü belediyede düzen ve denetim işlerine bakar.",
+   "C": "İl Millî Eğitim Müdürlüğü eğitim işlerine bakar.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-025",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.1",
+  "surec_bileseni": "b",
+  "konu": "Üretim, dağıtım, tüketim",
+  "alt_konu": "Kaynakları verimli kullanma",
+  "soru_metni": "Bir belediye, eskiyen su borularını yenileyerek şebekedeki su kaybını azaltmıştır. Böylece kuraklığın yaşandığı yaz aylarında barajdaki su seviyesi daha yavaş düşmüştür. Bu uygulamanın doğa ve insanlar üzerindeki etkisi aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Su kaynakları daha uzun süre korunur, insanlar su ihtiyacını kolayca karşılar.",
+   "B": "Yer altı sularının çekilmesi hızlanır, çiftçilerin ürün miktarı azalır.",
+   "C": "Barajdaki su daha çabuk tükenir, kent halkı su tasarrufu yapmak zorunda kalır.",
+   "D": "Şebekedeki su basıncı artacağı için su tüketimi artar, kaynaklar azalır."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Su kaybının azalmasının barajdaki suya ve suyu kullananlara etkisini zincir hâlinde düşün.",
+  "cozum_adimlari": [
+   "Su kaybı azalınca barajdaki su daha yavaş azalır ve kaynaklar daha uzun süre korunur.",
+   "Bu durum insanların su ihtiyacının karşılanmasını kolaylaştırır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Su kaybının azalmasını yer altı suyu üzerinde olumsuz etki sanır.",
+   "C": "Su kaybının azalmasını barajı daha çabuk tüketen bir durum sanır.",
+   "D": "Verimli kullanımı tüketimi artıran bir durum sanır."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-027",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.2",
+  "surec_bileseni": "b",
+  "konu": "Üretim, dağıtım, tüketim",
+  "alt_konu": "Bütçe yönetimi",
+  "soru_metni": "Bir ailenin aylık geliri 12.000 TL’dir. Aile ay içinde kira için 5.000 TL, faturalar ve ulaşım için 2.000 TL, gıda için 2.500 TL ödemektedir. Aile her ay 1.500 TL biriktirmeyi hedeflediğine göre isteklerine ayırabileceği tutar kaç TL’dir?",
+  "siklar": {
+   "A": "2.500 TL",
+   "B": "1.000 TL",
+   "C": "3.000 TL",
+   "D": "3.500 TL"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Gelirden önce giderleri, sonra birikim hedefini çıkar.",
+  "cozum_adimlari": [
+   "Giderler: 5.000 + 2.000 + 2.500 = 9.500 TL.",
+   "Birikim hedefiyle birlikte ayrılan tutar 9.500 + 1.500 = 11.000 TL.",
+   "İsteklere kalan tutar 12.000 − 11.000 = 1.000 TL.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Birikim hedefini çıkarmayı unutur (12.000 − 9.500).",
+   "B": "Doğru.",
+   "C": "Faturalar ve ulaşım kalemini unutur.",
+   "D": "Gıda kalemini unutur."
+  },
+  "zorluk": 3,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai",
+  "sayisal_dogrulama": {
+   "ifade": "12000-5000-2000-2500-1500",
+   "beklenen_sonuc": 1000
+  }
+ },
+ {
+  "id": "SOS5-028",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "surec_bileseni": "b",
+  "konu": "Üretim, dağıtım, tüketim",
+  "alt_konu": "Ekonomik faaliyetlerin sınıflandırılması",
+  "soru_metni": "Ordu’da bir aile fındık bahçesinden ürünü toplar. Fabrikada bu fındıklar işlenerek çikolata hâline getirilir, çikolatalar marketlerde satılır. Bu üç faaliyetin ekonomik faaliyet alanlarına göre doğru eşleştirmesi aşağıdakilerden hangisidir? (Sıra: fındık toplama – çikolata üretimi – çikolata satışı)",
+  "siklar": {
+   "A": "Tarım – sanayi – ticaret",
+   "B": "Sanayi – tarım – ticaret",
+   "C": "Tarım – ticaret – sanayi",
+   "D": "Ticaret – sanayi – tarım"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Ürünü yetiştirmek, işleyerek dönüştürmek ve alıcıya satmak farklı alanlardır.",
+  "cozum_adimlari": [
+   "Bahçeden ürün toplamak tarımdır.",
+   "Fındığı işleyip çikolata yapmak sanayidir.",
+   "Çikolatayı marketlerde satmak ticarettir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Tarım ile sanayiyi yer değiştirir.",
+   "C": "Sanayi ile ticareti yer değiştirir.",
+   "D": "Üç alanı da ters yerleştirir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-029",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.5.3",
+  "surec_bileseni": "c",
+  "konu": "Üretim, dağıtım, tüketim",
+  "alt_konu": "Ekonomik faaliyetleri yorumlama",
+  "soru_metni": "Konya Ovası’nda geniş alanlarda buğday tarımı yapılmaktadır. İlde ayrıca un ve makarna üreten çok sayıda fabrika bulunmaktadır. İldeki bu ekonomik faaliyetler arasındaki ilişki aşağıdakilerden hangisiyle yorumlanabilir?",
+  "siklar": {
+   "A": "Fabrikaların kurulması, ovanın buğday için verimli hâle gelmesini sağlamıştır.",
+   "B": "Tarım ile sanayi birbirinden bağımsız gelişmiş ekonomik faaliyetlerdir.",
+   "C": "Fabrikalar buğdayı başka illerden aldığı için ilde tarım azalmıştır.",
+   "D": "İlde yetiştirilen buğday, sanayi faaliyetleri için ham madde oluşturmaktadır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Fabrikaların ürettiği un ve makarnanın hangi tarım ürününden elde edildiğini düşün.",
+  "cozum_adimlari": [
+   "Un ve makarna buğdaydan yapılır.",
+   "İlde yetiştirilen buğday fabrikalar için ham madde olur; tarım sanayiyi besler.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Neden-sonucu ters çevirir.",
+   "B": "İki faaliyetin ham madde ilişkisini görmez.",
+   "C": "Ham maddenin başka ilden geldiğini varsayar; bağlamla çelişir.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "SOS5-030",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.6.2",
+  "surec_bileseni": "a",
+  "konu": "Bilim, teknoloji ve toplum",
+  "alt_konu": "Bilinçli teknoloji kullanımı",
+  "soru_metni": "Kaan, çevrim içi bir oyun oynarken tanımadığı bir oyuncunun kendisine yaşadığı şehri ve okulunu sorduğunu fark etti. Kaan bu bilgileri paylaşmamayı seçti. Kaan’ın bu kararının dayandığı çıkarım aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Oyun sırasında yazı yazmak oyunun hızını yavaşlatır.",
+   "B": "Çevrim içi ortamda arkadaş edinmek yasalarca yasaklanmıştır.",
+   "C": "Kişisel bilgiler, kötü niyetli kişilerce zarar vermek için kullanılabilir.",
+   "D": "Oyun şirketleri kullanıcıların konuşmalarını sonradan arkadaşlarına iletir."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Tanımadığın biriyle paylaşılan bilgilerin başka ellerde nasıl kullanılabileceğini düşün.",
+  "cozum_adimlari": [
+   "Yaşadığı yer ve okul bilgisi kişiyi tanımlar.",
+   "Bu bilgiler kötü niyetli kişilerin eline geçerse kişiye zarar verilebilir; bu yüzden paylaşılmaz.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Konuyla ilgisiz teknik bir gerekçe öne sürer.",
+   "B": "Yasal olmayan bir yasak uydurur.",
+   "C": "Doğru.",
+   "D": "Gerçek dışı bir iddiada bulunur."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

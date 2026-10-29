@@ -1,0 +1,578 @@
+[
+  {
+    "sinif": 3,
+    "ders": "Fen Bilimleri",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 23,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.186,
+      "cikarim": 0.162,
+      "paragraf": 0.164,
+      "islem": 0.193,
+      "oncullu": 0.103,
+      "tablo_grafik": 0.092,
+      "olumsuz_kok": 0.101
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 3,
+    "ders": "Görsel Akıl Yürütme",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 15,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.191,
+      "cikarim": 0.161,
+      "paragraf": 0.164,
+      "islem": 0.2,
+      "oncullu": 0.099,
+      "tablo_grafik": 0.089,
+      "olumsuz_kok": 0.096
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 3,
+    "ders": "Hayat Bilgisi",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 23,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.201,
+      "cikarim": 0.161,
+      "paragraf": 0.164,
+      "islem": 0.193,
+      "oncullu": 0.098,
+      "tablo_grafik": 0.087,
+      "olumsuz_kok": 0.098
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 3,
+    "ders": "Matematik",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 26,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.186,
+      "cikarim": 0.168,
+      "paragraf": 0.164,
+      "islem": 0.195,
+      "oncullu": 0.096,
+      "tablo_grafik": 0.09,
+      "olumsuz_kok": 0.101
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 3,
+    "ders": "Türkçe",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 18,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.198,
+      "cikarim": 0.158,
+      "paragraf": 0.164,
+      "islem": 0.193,
+      "oncullu": 0.1,
+      "tablo_grafik": 0.087,
+      "olumsuz_kok": 0.1
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 3,
+    "ders": "İngilizce",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 22,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.201,
+      "cikarim": 0.156,
+      "paragraf": 0.164,
+      "islem": 0.192,
+      "oncullu": 0.105,
+      "tablo_grafik": 0.087,
+      "olumsuz_kok": 0.096
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 4,
+    "ders": "Fen Bilimleri",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 1,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.173,
+      "cikarim": 0.154,
+      "paragraf": 0.164,
+      "islem": 0.193,
+      "oncullu": 0.134,
+      "tablo_grafik": 0.087,
+      "olumsuz_kok": 0.096
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 3,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.198,
+      "cikarim": 0.154,
+      "paragraf": 0.164,
+      "islem": 0.193,
+      "oncullu": 0.096,
+      "tablo_grafik": 0.087,
+      "olumsuz_kok": 0.109
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 4,
+    "ders": "Türkçe",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 4,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.183,
+      "cikarim": 0.154,
+      "paragraf": 0.192,
+      "islem": 0.193,
+      "oncullu": 0.096,
+      "tablo_grafik": 0.087,
+      "olumsuz_kok": 0.096
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 5,
+    "ders": "Din Kültürü ve Ahlak Bilgisi",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 230,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.232,
+      "cikarim": 0.144,
+      "paragraf": 0.154,
+      "islem": 0.171,
+      "oncullu": 0.114,
+      "tablo_grafik": 0.083,
+      "olumsuz_kok": 0.101
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 5,
+    "ders": "Fen Bilimleri",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 681,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.244,
+      "cikarim": 0.209,
+      "paragraf": 0.093,
+      "islem": 0.101,
+      "oncullu": 0.115,
+      "tablo_grafik": 0.103,
+      "olumsuz_kok": 0.134
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 5,
+    "ders": "Matematik",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 1023,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.29,
+      "cikarim": 0.191,
+      "paragraf": 0.081,
+      "islem": 0.236,
+      "oncullu": 0.056,
+      "tablo_grafik": 0.05,
+      "olumsuz_kok": 0.096
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 5,
+    "ders": "Sosyal Bilgiler",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 636,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.231,
+      "cikarim": 0.184,
+      "paragraf": 0.126,
+      "islem": 0.093,
+      "oncullu": 0.17,
+      "tablo_grafik": 0.056,
+      "olumsuz_kok": 0.139
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 5,
+    "ders": "Türkçe",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 978,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.33,
+      "cikarim": 0.105,
+      "paragraf": 0.172,
+      "islem": 0.092,
+      "oncullu": 0.085,
+      "tablo_grafik": 0.051,
+      "olumsuz_kok": 0.165
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 6,
+    "ders": "Din Kültürü ve Ahlak Bilgisi",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 82,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.257,
+      "cikarim": 0.138,
+      "paragraf": 0.166,
+      "islem": 0.17,
+      "oncullu": 0.089,
+      "tablo_grafik": 0.076,
+      "olumsuz_kok": 0.103
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 6,
+    "ders": "Fen Bilimleri",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 92,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.21,
+      "cikarim": 0.183,
+      "paragraf": 0.146,
+      "islem": 0.17,
+      "oncullu": 0.1,
+      "tablo_grafik": 0.093,
+      "olumsuz_kok": 0.098
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 6,
+    "ders": "Matematik",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 91,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.193,
+      "cikarim": 0.179,
+      "paragraf": 0.153,
+      "islem": 0.216,
+      "oncullu": 0.085,
+      "tablo_grafik": 0.086,
+      "olumsuz_kok": 0.088
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 6,
+    "ders": "Sosyal Bilgiler",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 98,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.23,
+      "cikarim": 0.18,
+      "paragraf": 0.149,
+      "islem": 0.17,
+      "oncullu": 0.087,
+      "tablo_grafik": 0.08,
+      "olumsuz_kok": 0.105
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 6,
+    "ders": "Türkçe",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 98,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.194,
+      "cikarim": 0.147,
+      "paragraf": 0.226,
+      "islem": 0.17,
+      "oncullu": 0.085,
+      "tablo_grafik": 0.08,
+      "olumsuz_kok": 0.099
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 7,
+    "ders": "Din Kültürü ve Ahlak Bilgisi",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 83,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.233,
+      "cikarim": 0.156,
+      "paragraf": 0.168,
+      "islem": 0.17,
+      "oncullu": 0.092,
+      "tablo_grafik": 0.077,
+      "olumsuz_kok": 0.105
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 7,
+    "ders": "Fen Bilimleri",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 85,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.194,
+      "cikarim": 0.171,
+      "paragraf": 0.15,
+      "islem": 0.17,
+      "oncullu": 0.119,
+      "tablo_grafik": 0.092,
+      "olumsuz_kok": 0.104
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 7,
+    "ders": "Matematik",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 86,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.195,
+      "cikarim": 0.194,
+      "paragraf": 0.145,
+      "islem": 0.208,
+      "oncullu": 0.085,
+      "tablo_grafik": 0.082,
+      "olumsuz_kok": 0.092
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 7,
+    "ders": "Sosyal Bilgiler",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 96,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.222,
+      "cikarim": 0.164,
+      "paragraf": 0.155,
+      "islem": 0.17,
+      "oncullu": 0.091,
+      "tablo_grafik": 0.08,
+      "olumsuz_kok": 0.118
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  },
+  {
+    "sinif": 7,
+    "ders": "Türkçe",
+    "kullanim": "taslak_hedef_yontem",
+    "veri_destek_sayisi": 96,
+    "hedef_tip_oranlari": {
+      "bilgi_anlama": 0.206,
+      "cikarim": 0.145,
+      "paragraf": 0.212,
+      "islem": 0.17,
+      "oncullu": 0.087,
+      "tablo_grafik": 0.076,
+      "olumsuz_kok": 0.104
+    },
+    "hedef_zorluk_oranlari": {
+      "1": 0.35,
+      "2": 0.45,
+      "3": 0.2
+    },
+    "zorluk_uyari": "Hedef bir tasarim onerisi, resmi MEB zorluk kotasi degildir.",
+    "kazanim_agirliklari": "ONAYLANMIS_MUFRADAT_TAKVIMINDEN_BELIRLENMELI",
+    "soru_turleri": "Hupolingo coktan secmeli ogretim ve sinav modulune gore",
+    "yeni_soru_yaziminda_telif": "Yalniz blueprint + ozgun ornek; hicbir kaynak sorusu prompta girmez"
+  }
+]

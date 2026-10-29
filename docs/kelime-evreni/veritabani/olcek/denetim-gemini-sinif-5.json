@@ -1,0 +1,90 @@
+{
+ "model": "gemini-3.8-flash",
+ "aile": "gemini",
+ "sonuc": [
+  {
+   "no": 1,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 2,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 3,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 4,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Sözcük türleri (isim) 5. sınıf Türkçe müfredatında yer almaz, 6. sınıf konusudur."
+  },
+  {
+   "no": 5,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Sözcük türleri (fiil) 5. sınıf Türkçe müfredatında yer almaz, 7. sınıf konusudur."
+  },
+  {
+   "no": 6,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Sözcük türleri (sıfat) 5. sınıf Türkçe müfredatında yer almaz, 6. sınıf konusudur."
+  },
+  {
+   "no": 7,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Sözcük türleri (zarf) 5. sınıf Türkçe müfredatında yer almaz, 7. sınıf konusudur."
+  },
+  {
+   "no": 8,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Sözcük türleri (bağlaç) 5. sınıf Türkçe müfredatında yer almaz, 6. sınıf konusudur."
+  },
+  {
+   "no": 9,
+   "cevap": 1,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Sözcük türleri (zamir) 5. sınıf Türkçe müfredatında yer almaz, 6. sınıf konusudur."
+  },
+  {
+   "no": 10,
+   "cevap": 2,
+   "tek_dogru": true,
+   "sinif_uygun": false,
+   "sorun": "Sözcük türleri (edat) 5. sınıf Türkçe müfredatında yer almaz, 6. sınıf konusudur."
+  },
+  {
+   "no": 11,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 12,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  }
+ ]
+}

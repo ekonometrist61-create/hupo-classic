@@ -1,0 +1,478 @@
+{
+  "paket_surumu": 1,
+  "hikaye": {
+    "slug": "hr016-golgeyi-kim-buyuttu",
+    "baslik": "Gölgeyi Kim Büyüttü?",
+    "tur": "bilim",
+    "konu": "bahce",
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "okuma_bandi": 1,
+    "dunya_tipi": "gercekci",
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "kardes"
+    ],
+    "deger_anahtarlari": [
+      "D12"
+    ],
+    "yetiskin_uygun": false,
+    "etiketler": {
+      "ana_sinif": 2,
+      "okuma_zorlugu": 1,
+      "kavram_zorlugu": 2,
+      "ilgi_egilimi": "ortak",
+      "temalar": [
+        "bilim_teknoloji",
+        "sabir_emek"
+      ],
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "maarif": {
+        "ana_deger": "D12"
+      },
+      "ogrenme_hedefleri": [
+        {
+          "id": "uzun",
+          "tur": "lexeme",
+          "etiket": "uzun",
+          "yuva": "s2_uzun",
+          "islev": "first_hint"
+        },
+        {
+          "id": "kisa",
+          "tur": "lexeme",
+          "etiket": "kısa",
+          "yuva": "s2_kisa",
+          "islev": "application"
+        },
+        {
+          "id": "kavram_hr016",
+          "tur": "concept",
+          "etiket": "Işık ve gölge",
+          "islev": "application"
+        },
+        {
+          "id": "atasoz_hr016",
+          "tur": "proverb",
+          "etiket": "Acele işe şeytan karışır",
+          "yuva": "ata_acele",
+          "islev": "application"
+        }
+      ],
+      "kanit_duzeyi": "C",
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "denetim": {
+        "ajan_a": "pending",
+        "ajan_b": "pending",
+        "insan": "pending"
+      },
+      "olculen": {
+        "kelime_sayisi": 190,
+        "tahmini_sure_dk": 4,
+        "sayfa_sayisi": 6,
+        "soru_sayisi": 4,
+        "soru_beceri_dagilimi": {
+          "hatirlama": 1,
+          "cikarim": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        },
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1,
+          "proverb": 1
+        },
+        "yoldas_yer_sayisi": 3,
+        "simge_sayisi": 11
+      }
+    },
+    "tanitim": "Gölge sabah uzun, öğle kısa. Bunun nedenini nasıl bulabiliriz?",
+    "durum": "taslak",
+    "fis_kodu": "HR-016"
+  },
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sabah"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " okula giderken "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gölgesinin çok "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_uzun"
+        },
+        {
+          "t": "metin",
+          "v": " olduğunu fark etti. Gölge neredeyse yanındaki duvara kadar uzanıyordu. Öğle vakti aynı yere geldiğinde gölgesi "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_kisa"
+        },
+        {
+          "t": "metin",
+          "v": " olmuştu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Gölgeyi kim küçülttü?\" diye sordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " kanadıyla yerdeki gölgeyi gösterdi. \"Belki de güneşin gökyüzündeki yeri değişmiştir.\" "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " yerde tebeşirle iki farklı gölge uzunluğunu işaretledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün kapının önünde gölgesini inceledi. Bir adım"
+        },
+        {
+          "t": "ikon",
+          "v": "footprint"
+        },
+        {
+          "t": "metin",
+          "v": " sağa geçince gölge de onunla birlikte"
+        },
+        {
+          "t": "ikon",
+          "v": "friends"
+        },
+        {
+          "t": "metin",
+          "v": " yer değiştirdi. \"Sanki bana yapışmış,\" dedi gülerek. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " bir tebeşir daha getirdi; ikinci işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " gölgenin bittiği yere konuldu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğle vakti iki işaret"
+        },
+        {
+          "t": "ikon",
+          "v": "flag"
+        },
+        {
+          "t": "metin",
+          "v": " farklıydı. Önce gölgenin kendiliğinden küçüldüğünü sandı. Sonra gölgesinin düştüğü yere baktı: gölge sabahki yerde değildi, demek ki güneşin yeri değişmişti. "
+        },
+        {
+          "t": "isaret",
+          "kod": "gunes"
+        },
+        {
+          "t": "metin",
+          "v": " Bir arkadaşı el feneri getirdi. Işığı oyuncak ağacın yanına indirince gölge uzadı; yükseltince kısaldı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "\"Gölge bir canlı değil,\" dedi "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ". \"Işığın geldiği yön"
+        },
+        {
+          "t": "ikon",
+          "v": "compass"
+        },
+        {
+          "t": "metin",
+          "v": " değişince biçimi de değişiyor.\" Acele etmemek gerekiyordu: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "ata_acele"
+        },
+        {
+          "t": "metin",
+          "v": "\". "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " güvenli deney"
+        },
+        {
+          "t": "ikon",
+          "v": "microscope"
+        },
+        {
+          "t": "metin",
+          "v": " kuralını hatırlattı: Işık kaynağına doğrudan bakılmaz ve deneyler büyüklerin yanında yapılır."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Öğretmen"
+        },
+        {
+          "t": "ikon",
+          "v": "school"
+        },
+        {
+          "t": "metin",
+          "v": ", \"Gölge, ışığın ulaşamadığı yerde oluşur,\" dedi. Sabah"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": ", öğle ve akşam gölgenin boyunu yan yana gösteren resimler yaptılar. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " artık gölgesinden korkmuyordu. \"Bir sorunun cevabını bulmak"
+        },
+        {
+          "t": "ikon",
+          "v": "idea"
+        },
+        {
+          "t": "metin",
+          "v": " için birkaç kez bakmak gerekiyormuş,\" dedi."
+        }
+      ]
+    }
+  ],
+  "deger_sahneleri": {},
+  "hareket_sahneleri": {},
+  "deyim_cumleleri": {},
+  "sorular": [
+    {
+      "id": "s1",
+      "beceri": "hatirlama",
+      "dayanak_sayfa": 1,
+      "metin": "Öğle vakti gölge nasıl olmuştu?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Kısa"
+        },
+        {
+          "id": "B",
+          "metin": "Çok uzun"
+        },
+        {
+          "id": "C",
+          "metin": "Hiç yoktu"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Öğle vakti gölge, sabah olduğundan çok daha kısaydı."
+    },
+    {
+      "id": "s2",
+      "beceri": "cikarim",
+      "dayanak_sayfa": 4,
+      "metin": "Işığı yükseltince gölge neden kısaldı?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Işığın geliş yönü değişti"
+        },
+        {
+          "id": "B",
+          "metin": "Gölge kendiliğinden küçüldü"
+        },
+        {
+          "id": "C",
+          "metin": "Işık sönmüştü"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Işığın geldiği yön değişince gölgenin biçimi de değişiyordu."
+    },
+    {
+      "id": "s3",
+      "beceri": "yorumlama",
+      "dayanak_sayfa": 6,
+      "metin": "Çocuğun gölgeyi birkaç kez incelemesinin anlamı nedir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir sorunun cevabını bulmak için gözlemi tekrarlamanın gerekli olduğu"
+        },
+        {
+          "id": "B",
+          "metin": "Gölgenin sürekli değiştiği"
+        },
+        {
+          "id": "C",
+          "metin": "Güneşin hiç doğmayacağı"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Çocuk, aynı soruyu farklı saatlerde gözlemleyerek cevabı buldu."
+    },
+    {
+      "id": "s4",
+      "beceri": "sozcuk_baglami",
+      "dayanak_sayfa": 1,
+      "metin": "Metinde geçen uzun sözcüğünün zıt anlamlısı hangisidir?",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "kısa"
+        },
+        {
+          "id": "B",
+          "metin": "yeni"
+        },
+        {
+          "id": "C",
+          "metin": "eski"
+        }
+      ],
+      "dogru": "A",
+      "aciklama": "Uzun, boyu çok olan; kısa ise boyu az olandır."
+    }
+  ],
+  "uretim": {
+    "kaynak": "elle",
+    "tarih": "2026-10-22"
+  },
+  "sozluk": {
+    "sozluk_surumu": 1,
+    "girdiler": [
+      {
+        "id": "s2_uzun",
+        "tur": "kelime",
+        "yazim": "uzun",
+        "anlam": "Boyu ya da süresi çok olan.",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_kisa",
+        "tur": "kelime",
+        "yazim": "kısa",
+        "anlam": "Boyu ya da süresi az olan.",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "ata_acele",
+        "tur": "atasozu",
+        "yazim": "Acele işe şeytan karışır",
+        "anlam": "Aceleyle yapılan iş genellikle hataya açıktır.",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "yuvalar": [
+      {
+        "ad": "s2_uzun",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_uzun"
+          }
+        ]
+      },
+      {
+        "ad": "s2_kisa",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_kisa"
+          }
+        ]
+      },
+      {
+        "ad": "ata_acele",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "ata_acele"
+          }
+        ]
+      }
+    ]
+  }
+}

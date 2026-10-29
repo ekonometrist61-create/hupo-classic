@@ -1,0 +1,86 @@
+{
+ "surum": "1.1.0",
+ "ders": "Sosyal Bilgiler",
+ "sinif": 5,
+ "kod": "SB.5.2.1",
+ "tohum": 11,
+ "uretim": {
+  "istenen": 40,
+  "uretilen": 40,
+  "eksik": 0,
+  "denenen": 265,
+  "atilan": {
+   "tek_aday_degil": 193,
+   "gorsel_kapisi": 32
+  },
+  "sablonlar": [
+   "sb5-ana-yon",
+   "sb5-ara-yon"
+  ]
+ },
+ "denge": {
+  "harf": {
+   "A": 10,
+   "B": 10,
+   "C": 10,
+   "D": 10
+  },
+  "tam_blok": 10,
+  "dengeli_blok": 10,
+  "bozuk_blok": []
+ },
+ "kapi": {
+  "kazanim": {
+   "toplam": 40,
+   "dosya": "kazanim_5_sosyal.json",
+   "red": []
+  },
+  "gorsel": {
+   "toplam": 40,
+   "red": []
+  }
+ },
+ "kor_png": {
+  "tamam": true,
+  "pngSayi": 40,
+  "hata": null
+ },
+ "kontak": true,
+ "kor": {
+  "n": 40,
+  "n_yeterli": true,
+  "gecti": true,
+  "karar": "KOR_GECTI",
+  "gorselli": {
+   "uyum": 40,
+   "oran": 1,
+   "eksik": 0,
+   "sorunlu": []
+  },
+  "gorselsiz": {
+   "uyum": 7,
+   "oran": 0.175,
+   "eksik": 0,
+   "cozulen": [
+    "SB5-YON-S11-003",
+    "SB5-YON-S11-021",
+    "SB5-YON-S11-025",
+    "SB5-YON-S11-029",
+    "SB5-YON-S11-032",
+    "SB5-YON-S11-036",
+    "SB5-YON-S11-040"
+   ]
+  },
+  "esik": {
+   "gorselli": 0.95,
+   "gorselsiz": 0.4,
+   "n_min": 40
+  },
+  "cevap_dosyalari": [
+   "gorselli_cevap.json",
+   "gorselsiz_cevap.json"
+  ]
+ },
+ "durum": "beklemede",
+ "karar": "KOR_GECTI"
+}

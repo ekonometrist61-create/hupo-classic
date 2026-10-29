@@ -1,0 +1,42 @@
+[
+ {
+  "id": "TR4-008",
+  "eski_sorun": "Doğru şık (Sevinç) şıklar içinde en uzundu.",
+  "yapilan_degisiklik": "Çeldiriciler Korku->Endişe ve Öfke->Kızgınlık yapıldı; doğru şık (D, Sevinç) artık en uzun değil. Cevap D aynı; çeldirici gerekçeleri güncellendi."
+ },
+ {
+  "id": "TR4-013",
+  "eski_sorun": "Doğru şık (B) şıklar içinde en uzundu (52 karakter).",
+  "yapilan_degisiklik": "B kısaltıldı: 'Küçük ama sürekli çalışmalar büyük sonuç verir.' (47); en uzun şık artık D (49). Anlam ve cevap (B) aynı."
+ },
+ {
+  "id": "TR4-017",
+  "eski_sorun": "Metinde ve B şıkkında 'Dünya’da/Dünya’daki' büyük harfli ve kesmeli yazılmıştı; gezegen anlamı yok (REHBER §10.3).",
+  "yapilan_degisiklik": "Metin 'dünyada' (küçük harf, bitişik) yapıldı; B şıkkından dünya sözcüğü çıkarılıp 'Yaşayan hayvanların en büyüğüdür.' yazıldı. Doğru şık (D, 28 karakter) en kısa; cevap D aynı."
+ },
+ {
+  "id": "TR4-018",
+  "eski_sorun": "Doğru şık (C, 39 karakter) şıklar içinde en uzundu.",
+  "yapilan_degisiklik": "C 'Cümleye ek açıklama vermek için' (31) olarak kısaltıldı, A 'aktarmak' oldu; doğru şık en uzun değil. Ayrıca kökteki 'Türkiye Cumhuriyeti’nin' (kurum/devlet adı + kesme tartışmalı) yerine kesin kurallı 'Türkiye’nin ilk cumhurbaşkanıdır' yazıldı. Cevap C aynı."
+ },
+ {
+  "id": "TR4-020",
+  "eski_sorun": "Doğru şık (A, 36 karakter) şıklar içinde en uzundu.",
+  "yapilan_degisiklik": "A'dan 'çok' çıkarıldı: 'Söylediğim söz arkadaşımı kırdı.' (32); en uzun şıklar C ve D (35). Mecaz anlam ve cevap (A) aynı."
+ },
+ {
+  "id": "TR4-021",
+  "eski_sorun": "Doğru şık 'Konuşmanın başladığını gösterir' kılavuzla örtüşmüyordu (çizgi satır başındaki konuşmayı gösterir); B çeldiricisi kısa çizgiyi yanlış tanımlıyordu.",
+  "yapilan_degisiklik": "D şıkkı kılavuz tanımıyla 'Satır başındaki konuşmayı gösterir.' yapıldı (35 karakter, en uzun değil); B kısa çizginin satır sonu bölme işlevine çevrildi; kökteki 'satır başlarındaki' ifadesi cevabı verdiği için çıkarıldı. Cevap D aynı."
+ },
+ {
+  "id": "TR4-023",
+  "eski_sorun": "Doğru şık (D, 36 karakter) şıklar içinde en uzundu; C çok kısaydı (16).",
+  "yapilan_degisiklik": "D 'Annem neden geciktiğimi sordu' (29) kısaltıldı; B ve C uzatıldı (30 ve 25). Şık uzunlukları 25-30; en uzun şık B. Cevap D aynı."
+ },
+ {
+  "id": "TR4-025",
+  "eski_sorun": "Aktarmada hem iki nokta hem 'dedi' vardı (omuz silkti: “...” dedi); doğru şık (A, 39) en uzun şıkla eşitti.",
+  "yapilan_degisiklik": "Cümle 'Selim omuz silkerek “Her sabah yeniden denedim, o kadar,” dedi.' biçiminde tek yönteme (alıntıdan sonra virgül + dedi) çevrildi; A 'Vazgeçmeden denemek başarı getirir.' (35) kısaltıldı, en uzun şık C (39). Cevap A aynı."
+ }
+]

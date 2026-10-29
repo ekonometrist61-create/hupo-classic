@@ -71,7 +71,7 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
@@ -261,22 +261,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kürküne"
-        },
-        {
-          "id": "B",
           "metin": "Kendisine"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Görevliye"
         },
         {
+          "id": "C",
+          "metin": "Çocuğa"
+        },
+        {
           "id": "D",
-          "metin": "Zeynep'e"
+          "metin": "Kürküne"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Hoca kürkünün kolunu kâseye uzatıp “Ye kürküm ye!” dedi."
     },
     {
@@ -287,22 +287,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kürkü görünce Hoca'yı önemli sandıkları için"
+          "metin": "Hoca o an çok acıkmış ve sabırsızlanmıştı"
         },
         {
           "id": "B",
-          "metin": "Hoca çok acıkmıştı"
+          "metin": "Kürkü görünce Hoca'yı önemli sandıkları için"
         },
         {
           "id": "C",
-          "metin": "Kürk sofrada en önce gelmişti"
+          "metin": "Kürk, sofrada en önce gelen misafirdi"
         },
         {
           "id": "D",
-          "metin": "Görevli Hoca'yı tanıyordu"
+          "metin": "Görevli, Hoca'yı daha önceden tanıyordu"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Efe, insanların Hoca'yı giysisine göre önemli sandığını söyledi."
     },
     {
@@ -317,15 +317,15 @@
         },
         {
           "id": "B",
-          "metin": "Kürkün çorbayı içip içmediğini"
+          "metin": "Çorbanın yeterince sıcak olup olmadığının önemini"
         },
         {
           "id": "C",
-          "metin": "Eve dönmenin gerekliliğini"
+          "metin": "Eve dönüp kürkünü temizlemenin gerekliliğini"
         },
         {
           "id": "D",
-          "metin": "Pazarın kurulduğunu"
+          "metin": "Pazarın hangi saatte kurulduğunu ve kimlerin geldiğini"
         }
       ],
       "dogru": "A",
@@ -339,22 +339,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Dikkat çekmek için süslü, gösterişe düşkün"
+          "metin": "Uzun zamandır giyilmemiş ve eskimiş"
         },
         {
           "id": "B",
-          "metin": "Çok eski"
+          "metin": "Hareketleri yavaş, ağır başlı olan"
         },
         {
           "id": "C",
-          "metin": "Yavaş"
+          "metin": "Boyu ve yapısı küçük, az yer kaplayan"
         },
         {
           "id": "D",
-          "metin": "Küçük"
+          "metin": "Dikkat çekmek için süslü, gösterişe düşkün"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Gösterişli, dikkat çekecek kadar süslü olan demektir."
     }
   ],

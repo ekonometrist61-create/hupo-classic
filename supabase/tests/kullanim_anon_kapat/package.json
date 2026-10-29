@@ -1,0 +1,13 @@
+{
+  "name": "kullanim-anon-kapat-sql-testi",
+  "version": "1.0.0",
+  "private": true,
+  "description": "W8a: kullanim_olaylari_gonder anon/authenticated kapatma (20261108000000) icin PGlite testi (Docker gerektirmez).",
+  "type": "module",
+  "scripts": {
+    "test": "node kos.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.10"
+  }
+}

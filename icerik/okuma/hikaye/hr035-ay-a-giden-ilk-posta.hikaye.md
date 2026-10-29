@@ -31,13 +31,13 @@ etiketler:
     - {id: gecikme_hr035, tur: lexeme, etiket: "gecikme", yuva: hr035_gecikme, islev: application}
     - {id: kavram_hr035, tur: concept, etiket: "Veri aktarımı ve iletişim gecikmesi", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "İlk mektubu yazma hakkını kimler kazanmıştı?", secenekler: [{id: A, metin: "İki kardeş"}, {id: B, metin: "Öğretmen ve öğrenci"}, {id: C, metin: "Görevli ve teyze"}, {id: D, metin: "Üç arkadaş"}], dogru: A, aciklama: "Eylül ve Can, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Mesaj kaybolmadığı için görevli ne yaptı?", secenekler: [{id: A, metin: "Mesajın kopyası güvende olduğu için bağlantının yeniden kurulmasını bekledi"}, {id: B, metin: "Mektubu çöpe attı"}, {id: C, metin: "Hemen Ay'a gönderdi"}, {id: D, metin: "Kâğıdı yaktı"}], dogru: A, aciklama: "Görevli, mesajın kopyasının güvende olduğunu bildiği için önce bağlantıyı bekledi."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Çocuklar iletişim hakkında ne fark etti?", secenekler: [{id: A, metin: "İletişimin birçok aşaması ve dikkat gerektiren adımları olduğunu"}, {id: B, metin: "İletişimin çok kolay olduğunu"}, {id: C, metin: "Mektubun hiç gitmediğini"}, {id: D, metin: "Ayın yakın olduğunu"}], dogru: A, aciklama: "Mesaj, kopyalanma, parçalama ve doğrulama gibi adımlardan geçiyordu."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen maket ne demektir?", secenekler: [{id: A, metin: "Bir şeyin küçültülmüş modeli"}, {id: B, metin: "Bir tür mektup"}, {id: C, metin: "Bir uydu"}, {id: D, metin: "Bir ekran"}], dogru: A, aciklama: "Maket, gerçek bir şeyin küçültülmüş modelidir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "İlk mektubu yazma hakkını kimler kazanmıştı?", secenekler: [{id: A, metin: "Öğretmen ve öğrenci"}, {id: B, metin: "Görevli ve teyze"}, {id: C, metin: "Üç arkadaş"}, {id: D, metin: "İki kardeş"}], dogru: D, aciklama: "İki kardeş, Ay Üssü'ne giden ilk özel mektubu yazma hakkını kazanmıştı."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Mesaj kaybolmadığı için görevli ne yaptı?", secenekler: [{id: A, metin: "Mektubu hemen çöpe atıp Ay'a yeni bir mektup yazmaya başladı"}, {id: B, metin: "Mesajı eksik hâliyle hemen Ay'a gönderdi ve sonucu beklemedi"}, {id: C, metin: "Kâğıdı yakıp çocuklardan mesajı baştan yazmalarını istedi"}, {id: D, metin: "Mesajın kopyası güvende olduğu için bağlantının yeniden kurulmasını bekledi"}], dogru: D, aciklama: "Görevli, mesajın kopyasının güvende olduğunu bildiği için önce bağlantıyı bekledi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 2, metin: "Çocuklar iletişim hakkında ne fark etti?", secenekler: [{id: A, metin: "İletişimin hiçbir hazırlık gerektirmeden kendiliğinden olduğunu"}, {id: B, metin: "Mektubun hiç gönderilmeden kaybolduğunu ve geri dönmediğini"}, {id: C, metin: "İletişimin birçok aşaması ve dikkat gerektiren adımları olduğunu"}, {id: D, metin: "Ayın Dünya'ya çok yakın olduğunu ve gecikme olmadığını"}], dogru: C, aciklama: "Mesaj, kopyalanma, parçalama ve doğrulama gibi adımlardan geçiyordu."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen maket ne demektir?", secenekler: [{id: A, metin: "Uzaya gönderilen özel bir mektup"}, {id: B, metin: "Bir şeyin küçültülmüş modeli"}, {id: C, metin: "Yörüngede dönen büyük bir uydu"}, {id: D, metin: "Bilgisayarda görüntü veren bir ekran"}], dogru: B, aciklama: "Maket, gerçek bir şeyin küçültülmüş modelidir."}
 ---
 @omurga
 Ay Üssü'ne gidecek ilk özel mektubu yazma hakkını iki kardeş kazanmıştı. {kahraman}, Dünya'daki sınıfının resmini çizmiş; {yoldas:yalin|bir arkadaş} ise altına yalnızca bir cümle yazmıştı: "Burada sizi merak eden arkadaşlarınız var." {isaret:ay}
@@ -45,7 +45,7 @@ Ay Üssü'ne gidecek ilk özel mektubu yazma hakkını iki kardeş kazanmıştı
 Mektup Ay'da çalışan teyzeleri Selin'e gönderilecekti. Yeni posta sistemi önce kâğıdı görüntüye dönüştürüyor, ardından uzaya veri olarak iletiyordu. Teyzeleri Ay Üssü'ndeki yazıcıdan aynı mektubu alacaktı.
 ---
 @omurga
-Posta merkezinde tavandan Dünya ve Ay'ın {kelime:hr035_maket} sarkıyordu. {yoldas:yalin|bir arkadaş} aralarındaki boşluğa baktı. "Ay şu kadar yakınsa mektup çabucak gider," dedi. Görevli iki maketi daha uzağa taşıdı. "Bunlar gerçeğe göre küçültülmüş. Uzaydaki uzaklıkları maketle göstermek çok zor," diye açıkladı. {kahraman}, mesajın nasıl ilerlediğini daha iyi anlamak için kabloları, anteni ve {kelime:hr035_uydu} görevini çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı.
+Posta merkezinde tavandan Dünya ve Ay'ın birer {kelime:hr035_maket}i sarkıyordu. {yoldas:yalin|bir arkadaş} aralarındaki boşluğa baktı. "Ay şu kadar yakınsa mektup çabucak gider," dedi. Görevli iki maketi daha uzağa taşıdı. "Bunlar gerçeğe göre küçültülmüş. Uzaydaki uzaklıkları maketle göstermek çok zor," diye açıkladı. {kahraman}, mesajın nasıl ilerlediğini daha iyi anlamak için kabloları, anteni ve {kelime:hr035_uydu} rolünü gösteren okları çizdi. Her ok bir aşamayı gösteriyordu. Çocuklar, iletişimin yalnızca bir tuşa dokunmaktan ibaret olmadığını fark etmeye başlamıştı.
 
 Başlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırmızıya döndü: Bağlantı kesildi.
 ---
@@ -54,7 +54,7 @@ Başlangıçta her şey yolundaydı. Fakat posta merkezinin ekranı birden kırm
 
 Görevli, "Hayır," dedi. "**Mesajın kopyası burada güvende**. Ancak şimdi göndermiyoruz. Önce bağlantının yeniden kurulması gerek."
 
-{kahraman} üzülmüştü. Selin teyzesinin doğum gününe yalnızca bir gün kalmıştı. {yoldas:yalin|bir arkadaş} bir çözüm önerdi: "Mektubu aynı anda başka bir kanaldan göndersek?"
+{kahraman} üzülmüştü. Selin teyzenin doğum gününe yalnızca bir gün kalmıştı. {yoldas:yalin|bir arkadaş} bir çözüm önerdi: "Mektubu aynı anda başka bir kanaldan göndersek?"
 
 Görevli gülümsedi. "İyi düşünce. Fakat bütün kanallar aynı anda çalışmayabilir. Önce hangisinin güvenilir olduğuna bakmalıyız."
 
@@ -65,7 +65,7 @@ Görevli gülümsedi. "İyi düşünce. Fakat bütün kanallar aynı anda çalı
 @omurga
 Görevli, "Bu da veri aktarımında kullanılan yöntemlerden biridir," dedi. Ardından çocuklara mesajın birden fazla parçasının nasıl kontrol edildiğini gösterdi. Kısa bir bekleyişten sonra uydu bağlantısı tekrar açıldı.
 
-Ekrana İleti ulaştı yazısı düşünce {yoldas:yalin|bir arkadaş} zıpladı. Fakat hemen bir soru sordu: "Ay'daki teyze cevap verirse onu anında duyar mıyız?"
+Ekranda “İleti ulaştı” yazısı çıkınca {yoldas:yalin|bir arkadaş} zıpladı. Fakat hemen bir soru sordu: "Ay'daki teyze cevap verirse onu anında duyar mıyız?"
 
 Görevli başını salladı. "Hayır, sinyaller ışık hızında ilerlese de Dünya ile Ay arasındaki uzaklık yüzünden küçük bir {kelime:hr035_gecikme} olur."
 ---

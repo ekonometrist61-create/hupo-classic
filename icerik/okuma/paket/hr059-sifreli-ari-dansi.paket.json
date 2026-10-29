@@ -72,7 +72,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2049,
+        "kelime_sayisi": 2050,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 17,
         "soru_sayisi": 4,
@@ -165,7 +165,7 @@
         },
         {
           "t": "metin",
-          "v": " da katkı sağladığını anlattı. "
+          "v": "ya da katkı sağladığını anlattı. "
         },
         {
           "t": "kahraman",
@@ -422,7 +422,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "İkili, sallanma dansının nasıl yorumlandığını anlamak için bir animasyon izledi. Bir arı petek üzerinde hareket ederken çizdiği doğrultu, kaynak yönüyle ilgili bilgi taşıyordu. "
+          "v": "İkili, sallanma dansının nasıl yorumlandığını anlamak için bir animasyon izledi. Bir arının petek üzerinde hareket ederken yaptığı doğrultu, kaynak yönüyle ilgili bilgi taşıyordu. "
         },
         {
           "t": "yoldas",
@@ -835,55 +835,55 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Ayçiçeklerinin"
-        },
-        {
-          "id": "B",
           "metin": "Domateslerin"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Biberlerin"
+        },
+        {
+          "id": "C",
+          "metin": "Ayçiçeklerinin"
         },
         {
           "id": "D",
           "metin": "Çimlerin"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Bu yıl ayçiçeklerinin yarısı eskisi kadar büyümemişti."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 1,
-      "metin": "Dedesi neden hemen tek bir neden aramadı?",
+      "metin": "Kahraman neden hemen tek bir sebep aramadı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir bitkinin gelişmesi birçok etkene bağlı olduğu için"
+          "metin": "Bahçenin çok küçük olması ve yalnız toprağın etkilediği için"
         },
         {
           "id": "B",
-          "metin": "Bahçe çok küçük olduğu için"
+          "metin": "Bir bitkinin gelişmesi birçok etkene bağlı olduğu için"
         },
         {
           "id": "C",
-          "metin": "Ayçiçeklerini çok sevdiği için"
+          "metin": "Ayçiçeklerini çok sevdiği ve hemen onları kurtarmak istediği için"
         },
         {
           "id": "D",
-          "metin": "Selin'in sorusu olmadığı için"
+          "metin": "Kendisine bu konuda hiçbir soru sorulmadığı ve bilgi verilmediği için"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Toprak, su, ışık ve başka etkenler birlikte etkili olabilir."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 8,
-      "metin": "Selin'in öğrendiği ders neydi?",
+      "metin": "Kahramanın öğrendiği ders neydi?",
       "secenekler": [
         {
           "id": "A",
@@ -891,15 +891,15 @@
         },
         {
           "id": "B",
-          "metin": "Hemen en belirgin nedeni seçmek gerektiğini"
+          "metin": "Hemen en göze çarpan nedeni seçip araştırmayı bırakmak gerektiğini"
         },
         {
           "id": "C",
-          "metin": "Bitkilerin hiç sulanmaması gerektiğini"
+          "metin": "Bir bitkinin büyümesinin yalnızca sulamaya bağlı olduğunu"
         },
         {
           "id": "D",
-          "metin": "Arı dansının gerekli olmadığını"
+          "metin": "Arıların bahçedeki bitkilerle hiçbir ilişkisi olmadığını"
         }
       ],
       "dogru": "A",
@@ -913,22 +913,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Çiçeklerdeki tatlı sıvı"
+          "metin": "Kovanı koruyan büyük bir arı türü"
         },
         {
           "id": "B",
-          "metin": "Bir tür arı"
+          "metin": "Arıların yaşadığı küçük bir yuva"
         },
         {
           "id": "C",
-          "metin": "Bir kovan"
+          "metin": "Oyunda kullanılan renkli bir kart"
         },
         {
           "id": "D",
-          "metin": "Bir oyun kartı"
+          "metin": "Çiçeklerdeki tatlı sıvı"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Nektar, arıların çiçeklerden topladığı tatlı sıvıdır."
     }
   ],

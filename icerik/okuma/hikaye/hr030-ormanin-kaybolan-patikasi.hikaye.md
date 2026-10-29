@@ -31,13 +31,13 @@ etiketler:
     - {id: olcek_hr030, tur: lexeme, etiket: "ölçek", yuva: hr030_olcek, islev: application}
     - {id: kavram_hr030, tur: concept, etiket: "Kısa yol her zaman güvenli değildir", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Patika neden kapatılmıştı?", secenekler: [{id: A, metin: "Yağmur yüzünden toprak kaymıştı"}, {id: B, metin: "Park ücretsiz değildi"}, {id: C, metin: "Gölet kurumuştu"}, {id: D, metin: "Kuş yuvası vardı"}], dogru: A, aciklama: "Şiddetli yağmur bazı yerlerde toprağı kaydırmıştı."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Öğretmen eski kısa patikayı neden kullanmadı?", secenekler: [{id: A, metin: "Kısa yol her zaman güvenli değildi; güncel levha ve görevliler daha doğru bilgi veriyordu"}, {id: B, metin: "Gölet yoktu"}, {id: C, metin: "Yağmur yağıyordu"}, {id: D, metin: "Harita yanlıştı"}], dogru: A, aciklama: "Güncel levhalar ve görevliler, hangi yolun güvenli olduğunu gösterir."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 6, metin: "Selin'in defterine yazdığı cümleye göre iyi bir yol nasıl olmalı?", secenekler: [{id: A, metin: "Güvenle ulaştırmalı"}, {id: B, metin: "Hızlı olmalı"}, {id: C, metin: "Kısa olmalı"}, {id: D, metin: "Renkli olmalı"}], dogru: A, aciklama: "İyi yol, hedefe güvenle ulaştıran yoldur."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen ölçek sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Haritada gerçek uzaklığı küçülterek gösteren oran"}, {id: B, metin: "Yürüyüş ayakkabısı"}, {id: C, metin: "Park görevlisi"}, {id: D, metin: "Bir tür levha"}], dogru: A, aciklama: "Harita ölçeği, gerçek uzaklığın küçültülmüş oranını gösterir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Patika neden kapatılmıştı?", secenekler: [{id: A, metin: "Park ücretsiz değildi"}, {id: B, metin: "Gölet kurumuştu"}, {id: C, metin: "Kuş yuvası vardı"}, {id: D, metin: "Yağmur yüzünden toprak kaymıştı"}], dogru: D, aciklama: "Şiddetli yağmur bazı yerlerde toprağı kaydırmıştı."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Öğretmen eski kısa patikayı neden kullanmadı?", secenekler: [{id: A, metin: "Gölet yoktu"}, {id: B, metin: "Yağmur yağıyordu"}, {id: C, metin: "Harita yanlıştı"}, {id: D, metin: "Kısa yol her zaman güvenli değildi; güncel levha ve görevliler daha doğru bilgi veriyordu"}], dogru: D, aciklama: "Güncel levhalar ve görevliler, hangi yolun güvenli olduğunu gösterir."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 6, metin: "Kahramanın defterine yazdığı cümleye göre iyi bir yol nasıl olmalı?", secenekler: [{id: A, metin: "Hızlı olmalı"}, {id: B, metin: "Kısa olmalı"}, {id: C, metin: "Renkli olmalı"}, {id: D, metin: "Güvenle ulaştırmalı"}], dogru: D, aciklama: "İyi yol, hedefe güvenle ulaştıran yoldur."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "Metinde geçen ölçek sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Yürüyüş ayakkabısı"}, {id: B, metin: "Park görevlisi"}, {id: C, metin: "Bir tür levha"}, {id: D, metin: "Haritada gerçek uzaklığı küçülterek gösteren oran"}], dogru: D, aciklama: "Harita ölçeği, gerçek uzaklığın küçültülmüş oranını gösterir."}
 ---
 @omurga
 Orman parkındaki yürüyüşe hazırlanırken öğretmenleri, haritadaki ince yeşil çizgiyi gösterdi. “Bu, gölete ulaşan eski patikamız,” dedi. Ancak park girişindeki görevli onları durdurdu. Geceki şiddetli yağmur yüzünden bazı yerlerde toprak kaymış, patika geçici olarak kapatılmıştı. {isaret:orman}
@@ -60,8 +60,6 @@ Gözlem terasında beklerken Nisa, krokideki küçük karelerin ne işe yaradı�
 ---
 @omurga
 {kahraman} yeni levhaların yalnız doğru yeri göstermesini değil, herkesçe anlaşılmasını istiyordu. Okuma güçlüğü yaşayan küçük çocukların da işaretleri anlayabilmesi için renk ve şeklin yazıyla birlikte kullanılmasını önerdi. Öğretmen öneriyi not etti.
-
-Dönüşte park ofisinde görevli, çocukların işaretlediği noktaları inceledi.
 
 Dönüşte park ofisinde görevli, çocukların işaretlediği noktaları inceledi. {yoldas:yalin|bir arkadaş} bazı levhalara hayvan resimleri konmasını önerdi. Nisa ise hem simge hem yazı bulunmasının daha anlaşılır olacağını söyledi. {kahraman}, “Bir de kavşaktan önce levha koyarsanız insanlar son anda yön değiştirmek zorunda kalmaz,” diye ekledi.
 ---

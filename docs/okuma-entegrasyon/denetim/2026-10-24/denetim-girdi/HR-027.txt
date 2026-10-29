@@ -1,0 +1,79 @@
+# HR-027 · Karagöz'ün Kayıp Gölgesi · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=c519af4c-0ba6-4580-92cb-e93216f3613e, surum_no=2, sha256=e1cc7dc430846b7491f9bec2b58e0fc605cb97b2df47d10d20d8da68edcf6a69
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr027-karagozun-kayip-golgesi | Tür: mizah | Konu: golge_oyunu | Dünya: masalsi
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Karagöz'ün gölgesi kayboldu! Işık, fener ve bir kaşıkla gölgenin sırrı çözülüyor.
+İzinli türler: ben, arkadas, baska_biri, hayali
+Değer anahtarları (sürüm): D14, D7 | maarif.ana_deger: D14
+Etiketler: ana_sinif=3, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: mizah, kultur_miras, bilim_teknoloji | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sozcuk_golge_hr027 (lexeme, first_hint: gölge); sozcuk_perde_hr027 (lexeme, application: perde); sozcuk_mecaz_hr027 (lexeme, application: mecaz); kavram_hr027 (concept, application: Işık ve gölge; gerçek ve mecaz anlam)
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":8,"simge_sayisi":7,"kelime_sayisi":350,"tahmini_sure_dk":5,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Karagöz sabah perdeyi kurmak için sahneye geldiğinde telaşla bağırdı: “Hacivat! Gölge yok! Gölge kayboldu!” Hacivat içeri girdi. “Canım Karagöz'üm, gölgen nereye gidebilir?” “Belki benden sıkıldı da tatile çıktı!” dedi Karagöz. Oysa sahnenin arkasındaki lamba henüz yanmıyordu. Perde bembeyazdı.
+--- Sayfa 2 ---
+Hacivat lambayı açtı. Bir anda Karagöz'ün gölgesi perdenin üzerine düştü. Karagöz sevinçle zıpladı. Fakat zıplayınca gölgesi de zıpladı. “Demek geri geldi. Bir de benimle alay ediyor!”
+--- Sayfa 3 ---
+Hacivat gülerek lambayı biraz sağa kaydırdı. Karagöz'ün gölgesi sola uzadı. Lambayı yaklaştırınca gölge büyüdü, uzaklaştırınca küçüldü. “Görüyor musun?” dedi. “Işığın yeri değişince gölgenin görünüşü de değişiyor.” Karagöz kaşlarını çattı. “O zaman[İKON clock] ben büyüdüm mü küçüldüm mü?” “Sen aynı Karagöz'sün. Yalnız gölgen değişiyor.”
+--- Sayfa 4 ---
+Hacivat küçük bir deney[İKON microscope] daha yaptı. Masanın üzerine oyuncak bir ev[İKON house] koyup feneri farklı yönlerden tuttu. Evin bacası bazen uzun, bazen kısa bir gölge bırakıyordu. Karagöz bunu görünce, “Bacanın boyunu kim değiştiriyor?” diye sordu. [KAHRAMAN hal=yalin] henüz gelmemişti ama perdeyi hazırlayan [YOLDAŞ hal=yalin yedek=Hupo], “Işığın yeri,” diye cevap verdi. Karagöz bir süre düşündü, ardından kendi gölgesine selam verdi. “Öyleyse kendimi büyümüş sanmayayım!” [İŞARET kod=gunes]
+--- Sayfa 5 ---
+Hacivat fenerin önüne ikinci bir oyuncak koydu. İki gölge üst üste gelince Karagöz hangisinin kendisine ait olduğunu ayırt edemedi. Hacivat nesneleri ayrı ayrı hareket ettirdiğinde sorun çözüldü. “Bir şeyi anlamak[İKON lightning-idea] için bazen parçaları tek tek incelemek gerekir,” dedi. Az sonra seyirci çocuklar geldi. Hacivat iki ayrı fener[İKON lighthouse] hazırladı. Biri güçlü, diğeri daha zayıf ışık veriyordu.
+--- Sayfa 6 ---
+Hacivat çocuklardan güvenli mesafeden perdeyi izlemelerini istedi. Karagöz elindeki tahta kaşığı fenerin önünde tuttu. Kaşığın gölgesi perdeye uzadı. Sonra kaşığı biraz çevirdi; gölgenin şekli değişti. [YOLDAŞ hal=yalin yedek=Hupo], “Demek [KELİME yuva=pb_golge] gerçek nesneyle aynı olmak zorunda değil,” dedi. Hacivat bunu duyunca sevindi. Karagöz ise kaşığı perdenin arkasına sakladı. “Gölgeyi bırakıp kendisini kaybetmeyelim!” diye şaka yaptı.
+--- Sayfa 7 ---
+Oyun bitince küçük [KAHRAMAN hal=yalin], Hacivat'a bir deyim sordu: “Gölgede kalmak ne demek?” Hacivat cevap verdi: “Bazen biri, başka birinin yanında fark edilmez. Buna gölgede kalmak deriz. Ama gerçek [KELİME yuva=pb_golge] ile aynı şey değildir.” Karagöz hemen öne atıldı. “Ben hiç gölgede kalmam! Perdeye çıkınca zaten [KELİME yuva=pb_golge] oluyorum!”
+--- Sayfa 8 ---
+Herkes güldü. [KAHRAMAN hal=yalin] defterine iki cümle yazdı: Ağacın gölgesinde dinlendim. Kardeşimin başarısının gölgesinde kalmak istemiyorum. Birinde ışık, ötekinde [KELİME yuva=pb_mecaz] vardı. O gün [KELİME yuva=pb_perde], hem kahkaha hem kelime öğretmişti. [İŞARET kod=kitap]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=B
+  Metin: Karagöz sabah sahneye geldiğinde neden telaşlandı?
+  A) Perdeyi kaybetmişti
+  B) Gölgesini göremiyordu
+  C) Hacivat gelmemişti
+  Açıklama: Karagöz ‘Gölge yok! Gölge kayboldu!’ diye bağırmıştı.
+s2 [cikarim] dayanak_sayfa=1 doğru=A
+  Metin: Karagöz'ün gölgesi başlangıçta perdede neden görünmüyordu?
+  A) Sahnenin arkasındaki lamba henüz yanmıyordu
+  B) Gölge Karagöz'den sıkılıp gitmişti
+  C) Perde çok küçüktü
+  Açıklama: Lamba yanmayınca perdede gölge oluşmuyordu; perde bembeyazdı.
+s3 [yorumlama] dayanak_sayfa=8 doğru=C
+  Metin: Çocuğun defterine yazdığı iki cümlenin farkı nedir?
+  A) İkisi de gerçek bir ağaçtan söz eder
+  B) İkisi de gölgenin ışıkla ilgisini anlatır
+  C) Birinde gerçek gölge, ötekinde mecaz anlam vardır
+  Açıklama: Ağacın gölgesi gerçek gölgedir; başarının gölgesinde kalmak ise mecazdır.
+s4 [sozcuk_baglami] dayanak_sayfa=8 doğru=B
+  Metin: Metinde geçen mecaz sözcüğü ne anlama gelir?
+  A) Bir gölge oyunu
+  B) Bir sözün gerçek anlamından farklı, benzetmeli anlamı
+  C) Işığı yakan bir lamba
+  Açıklama: ‘Gölgede kalmak’ gerçek gölgeyi değil, fark edilmemeyi anlatır; bu bir mecazdır.
+s5 [hatirlama] dayanak_sayfa=3 doğru=A
+  Metin: Hacivat lambayı yaklaştırınca Karagöz'ün gölgesine ne oldu?
+  A) Büyüdü
+  B) Kayboldu
+  C) Küçüldü
+  Açıklama: Lamba yaklaşınca gölge büyüdü, uzaklaşınca küçüldü.
+
+## Sözlük
+- pb_golge | kelime | yazım: gölge | 3–3 | anlam: Işığın önüne bir şey girince arkasında oluşan karanlık görüntü.
+- pb_perde | kelime | yazım: perde | 3–3 | anlam: Gölge oyununda görüntülerin üzerine düştüğü beyaz örtü; pencereyi örten kumaş da perdedir.
+- pb_mecaz | kelime | yazım: mecaz | 3–3 | anlam: Bir sözün gerçek anlamından ayrılıp benzetmeyle kullanılan anlamı.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

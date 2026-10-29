@@ -12,8 +12,11 @@ import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
 import '../widgets/ui/subject_style.dart';
 import 'home_screen.dart';
+import 'mufredat_yolu_screen.dart';
 
 const String _karisikCalis = 'Karışık çalış (tüm konular)';
+const String _mufredatYoluBaslik = 'Müfredat yolu';
+const String _mufredatYoluAltMetin = 'Hangi hafta neler işlendi, bak ve çöz';
 const String _konularBasligi = 'Konular';
 const String _yetersizVeri = 'Yetersiz veri';
 const String _konuYuklenemedi = 'Konular yüklenemedi, tekrar deneyelim.';
@@ -52,6 +55,36 @@ class SubjectTopicsScreen extends ConsumerWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
+                GameCard(
+                  onTap: () => Navigator.of(context).push(
+                    MaterialPageRoute(builder: (_) => MufredatYoluScreen(ders: ders)),
+                  ),
+                  child: Row(
+                    children: [
+                      Container(
+                        width: 46,
+                        height: 46,
+                        decoration: BoxDecoration(color: style.color, shape: BoxShape.circle),
+                        child: const Icon(Icons.route_rounded, color: Colors.white, size: 24),
+                      ),
+                      const SizedBox(width: 14),
+                      Expanded(
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text(_mufredatYoluBaslik, style: appText(weight: FontWeight.w800)),
+                            Text(
+                              _mufredatYoluAltMetin,
+                              style: appText(size: 13, color: AppColors.muted),
+                            ),
+                          ],
+                        ),
+                      ),
+                      const Icon(Icons.chevron_right_rounded, color: AppColors.muted),
+                    ],
+                  ),
+                ),
+                const SizedBox(height: 12),
                 GameCard(
                   color: style.color.withValues(alpha: 0.12),
                   borderColor: style.color,

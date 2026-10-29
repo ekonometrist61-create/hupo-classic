@@ -1,6 +1,7 @@
 "use client";
 
 import Badge from "@/components/ui/badge/Badge";
+import { oturumuBekle } from "@/hooks/useCurrentRole";
 import { createClient } from "@/utils/supabase/client";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
@@ -38,15 +39,14 @@ export default function OdemeGecmisi() {
     let cancelled = false;
     const run = async () => {
       const supabase = createClient();
-      const {
-        data: { user },
-      } = await supabase.auth.getUser();
-      if (!user) { setOdemeler([]); return; }
+      // Kullanıcı kimliği paylaşılan oturum bilgisinden gelir (ayrı getUser çağrısı yapılmaz).
+      const { kullaniciId } = await oturumuBekle();
+      if (!kullaniciId) { setOdemeler([]); return; }
 
       const { data, error } = await supabase
         .from("payments")
         .select("id, tutar_kurus, para_birimi, durum, created_at")
-        .eq("veli_id", user.id)
+        .eq("veli_id", kullaniciId)
         .order("created_at", { ascending: false })
         .limit(20);
 

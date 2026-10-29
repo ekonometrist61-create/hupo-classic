@@ -1,0 +1,67 @@
+{
+ "kaynak_url": "https://mufredat.meb.gov.tr/Dosyalar/202681493354625-Türkçe (1-4) DÖP TTKB.pdf",
+ "program_surumu": "2026 Maarif Modeli İlkokul Türkçe Dersi Öğretim Programı (2. sınıf bölümü)",
+ "not": "2026-10-22 kapsam kararı: yalnız metinle sınanabilen kazanımlar üretilir. Dinleme/izleme, konuşma ve süreç değerlendirme kazanımları kapsam_disi. Metinler PDF ayrıştırmasından alındı; bazı süreç harfleri (ör. T.O.2.1 'b') ayrıştırmada eksik kaldı. Üretimden önce DÖP ile teyit edilmeli.",
+ "kazanimlar": [
+  {
+   "kod": "T.O.2.1",
+   "sinif": 2,
+   "ders": "Türkçe",
+   "metin": "Okuma sürecini yönetebilme",
+   "surec_bilesenleri": [
+    {"harf": "a", "metin": "Okuyacağı metnin başlığı ve görsellerini inceler."},
+    {"harf": "c", "metin": "Kuralına uygun sesli ve sessiz okur."},
+    {"harf": "ç", "metin": "Noktalama işaretlerine dikkat ederek okur."}
+   ]
+  },
+  {
+   "kod": "T.O.2.2",
+   "sinif": 2,
+   "ders": "Türkçe",
+   "metin": "Okudukları ile ilgili anlam oluşturabilme",
+   "surec_bilesenleri": [
+    {"harf": "a", "metin": "Okuduğu metindeki bilgiler ile ön bilgileri arasında bağlantı kurar."},
+    {"harf": "b", "metin": "Okuyacağı metnin başlığından ve görsellerinden hareketle metnin konusu hakkında tahminde bulunur."},
+    {"harf": "c", "metin": "Metnin başlığı ve görsellerinden hareketle metinde geçen bilgiler/olaylar hakkında tahminde bulunur."}
+   ]
+  },
+  {
+   "kod": "T.O.2.3",
+   "sinif": 2,
+   "ders": "Türkçe",
+   "metin": "Okuduklarını çözümleyebilme",
+   "surec_bilesenleri": [
+    {"harf": "a", "metin": "Okuduğu metindeki karakter, olay ve bilgileri açıklar."},
+    {"harf": "b", "metin": "Okuduğu metnin konusunu bulur."}
+   ]
+  },
+  {
+   "kod": "T.Y.2.2",
+   "sinif": 2,
+   "ders": "Türkçe",
+   "metin": "Yazılarında içerik oluşturabilme",
+   "surec_bilesenleri": [
+    {"harf": "a", "metin": "Bir metinde eksik bırakılan cümleleri ön bilgilerini kullanarak yazar."},
+    {"harf": "c", "metin": "Bir sözcüğün anlamına ilişkin tahminlerini bağlamdan yararlanarak yazar."}
+   ]
+  },
+  {
+   "kod": "T.Y.2.3",
+   "sinif": 2,
+   "ders": "Türkçe",
+   "metin": "Yazma kurallarını uygulayabilme",
+   "surec_bilesenleri": [
+    {"harf": "b", "metin": "Anlamını bilmediği sözcüğün anlamını çevrim içi veya basılı kaynaklardan araştırarak yazar."},
+    {"harf": "c", "metin": "Yazılarında sözcükleri yerinde kullanır."},
+    {"harf": "g", "metin": "Yazılarında yazım alanını uygun şekilde (yazıyı sayfaya hizalama, paragraf başı, satır sonuna sığmayan sözcükler vb.) kullanır."},
+    {"harf": "ğ", "metin": "Yazılarında noktalama işaretlerini (nokta, kesme işareti, virgül, iki nokta, ünlem, tırnak işareti, soru işareti ve kısa çizgi) kuralına uygun kullanır."}
+   ]
+  }
+ ],
+ "kapsam_disi": [
+  {"kod": "T.D.2.1–T.D.2.5", "neden": "Dinleme/izleme kazanımları ses veya video gerektirir; metin soruyla sınanamaz."},
+  {"kod": "T.K.2.1–T.K.2.5", "neden": "Konuşma kazanımları sözlü performans gerektirir."},
+  {"kod": "T.O.2.4, T.O.2.5", "neden": "Okuma sürecine etki eden durumları gözden geçirme ve süreç değerlendirme; tek metin sorusuyla ölçülemez."},
+  {"kod": "T.Y.2.1, T.Y.2.4, T.Y.2.5", "neden": "Yazma sürecini yönetme ve değerlendirme; ürünü değil süreci ölçer."}
+ ]
+}

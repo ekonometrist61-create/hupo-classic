@@ -1,0 +1,479 @@
+{
+  "hikaye": {
+    "tur": "bilim",
+    "konu": "gokyuzu",
+    "slug": "hr014-yagmur-damlasinin-yolculugu",
+    "durum": "taslak",
+    "baslik": "Yağmur Damlasının Yolculuğu",
+    "tanitim": "Bir damla bulutan göle, buharlaşıp yeniden bulutlara uzanan bir yolculuk yapıyor.",
+    "fis_kodu": "HR-014",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D17",
+        "yardimci_deger": "D18"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 4,
+        "sayfa_sayisi": 6,
+        "simge_sayisi": 12,
+        "kelime_sayisi": 205,
+        "tahmini_sure_dk": 4,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "doga",
+        "bilim_teknoloji"
+      ],
+      "ana_sinif": 2,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 2,
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "buhar",
+          "tur": "lexeme",
+          "yuva": "s2_buhar",
+          "islev": "first_hint",
+          "etiket": "buhar"
+        },
+        {
+          "id": "damla",
+          "tur": "lexeme",
+          "yuva": "s2_damla",
+          "islev": "application",
+          "etiket": "damla"
+        },
+        {
+          "id": "kavram_hr014",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Su döngüsü"
+        },
+        {
+          "id": "atasoz_hr014",
+          "tur": "proverb",
+          "yuva": "ata_damla",
+          "islev": "application",
+          "etiket": "Damlaya damlaya göl olur"
+        }
+      ]
+    },
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 1,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D17",
+      "D18"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "s2_buhar",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_buhar"
+          }
+        ]
+      },
+      {
+        "ad": "s2_damla",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_damla"
+          }
+        ]
+      },
+      {
+        "ad": "ata_damla",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "ata_damla"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "s2_buhar",
+        "tur": "kelime",
+        "anlam": "Isınınca havaya karışan, görünmeyen su hâli.",
+        "yazim": "buhar",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_damla",
+        "tur": "kelime",
+        "anlam": "Çok küçük, yuvarlak bir su tanesi.",
+        "yazim": "damla",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "ata_damla",
+        "tur": "atasozu",
+        "anlam": "Küçük birikimler zamanla büyük bir şey olur.",
+        "yazim": "Damlaya damlaya göl olur",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "A",
+      "metin": "Dar bir yerde su nasıl akıyordu?",
+      "beceri": "hatirlama",
+      "aciklama": "Dar bir yerde su daha hızlı akıyordu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Daha hızlı"
+        },
+        {
+          "id": "B",
+          "metin": "Daha yavaş"
+        },
+        {
+          "id": "C",
+          "metin": "Hiç akmıyordu"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Güneş çıkınca damla ne oldu?",
+      "beceri": "cikarim",
+      "aciklama": "Damla buharlaşıp görünmez bir buhar olarak havaya yükseldi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Buharlaşıp havaya yükseldi"
+        },
+        {
+          "id": "B",
+          "metin": "Donup taş oldu"
+        },
+        {
+          "id": "C",
+          "metin": "Toprakta kaldı"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Musluğu açık bırakmama kararı neyi gösterir?",
+      "beceri": "yorumlama",
+      "aciklama": "Su döngüsünü öğrenen çocuk, suyu boşa harcamamaya karar verdi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Suya ve onun döngüsüne değer verildiğini"
+        },
+        {
+          "id": "B",
+          "metin": "Suyun kendiliğinden bittiğini"
+        },
+        {
+          "id": "C",
+          "metin": "Yağmurun hiç yağmayacağını"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen buhar sözcüğü ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Damla, güneşle ısınınca buhar olarak havaya karıştı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Isınınca havaya karışan, görünmez su hâli"
+        },
+        {
+          "id": "B",
+          "metin": "Bir tür bulut"
+        },
+        {
+          "id": "C",
+          "metin": "Çok soğuk bir rüzgâr"
+        }
+      ],
+      "dayanak_sayfa": 4
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bir sabah pencereye vuran yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " damlasını gördü. \"Acaba bu damla nereden geldi?\" diye sordu. Damla sanki onu duymuş gibi camdan aşağı kaydı. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de yanında merakla bakıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " damlanın bir bulutun içinde olduğunu hayal etti. Çevrede pek çok damlacık vardı. Rüzgâr"
+        },
+        {
+          "t": "ikon",
+          "v": "wind"
+        },
+        {
+          "t": "metin",
+          "v": " bulutu sürükleyince hepsi sallandı. Bazı damlacıklar birleşip ağırlaştı ve aşağı düşmeye başladı."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Damla önce bir yaprağa çarptı, sonra toprağa kaydı. Toprak suyu emdi; bir kısmı küçük bir su"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " yoluna karıştı. Su yolu başka sularla birleşip dereye dönüştü. Dar bir yerde su daha hızlı, geniş bir yerde daha yavaş"
+        },
+        {
+          "t": "ikon",
+          "v": "turtle"
+        },
+        {
+          "t": "metin",
+          "v": " akıyordu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " çıkınca göl parladı. Damla buharlaşıp görünmez bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_buhar"
+        },
+        {
+          "t": "metin",
+          "v": " olarak havaya yükseldi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " bunu öğrenince çok şaşırdı. \"Demek yolculuk bitmedi,\" dedi. Serin havada yeniden oluşan damlacıklar buluta karışacaktı. "
+        },
+        {
+          "t": "isaret",
+          "kod": "bulut"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " defterine üç sözcük yazdı: yağış, buharlaşma, yoğunlaşma. Her birinin yanına küçük resimler çizdiler. Bulut"
+        },
+        {
+          "t": "ikon",
+          "v": "cloud"
+        },
+        {
+          "t": "metin",
+          "v": ", dere, göl ve güneş"
+        },
+        {
+          "t": "ikon",
+          "v": "sun"
+        },
+        {
+          "t": "metin",
+          "v": " arasına oklar koydular. Öğretmen bunun su"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " döngüsü olduğunu söyledi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Ertesi gün öğretmen soğuk bir kabın yüzeyinde su"
+        },
+        {
+          "t": "ikon",
+          "v": "drop"
+        },
+        {
+          "t": "metin",
+          "v": " damlaları gösterdi. Havadaki su buharı soğuk yüzeyde yoğunlaşmıştı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " küçük bir not"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " kâğıdına bir "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_damla"
+        },
+        {
+          "t": "metin",
+          "v": " çizdi ve ona \"Yolcu\" adını verdi. \"Yağmur"
+        },
+        {
+          "t": "ikon",
+          "v": "rain"
+        },
+        {
+          "t": "metin",
+          "v": " hiç bitiyor mu?\" diye sordu. Öğretmen, suyun döngüde sürekli dolaştığını anlattı. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " gülerek \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "ata_damla"
+        },
+        {
+          "t": "metin",
+          "v": "\" dedi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " musluğu açık bırakmamaya karar verdi."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

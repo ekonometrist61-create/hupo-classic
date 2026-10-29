@@ -1,0 +1,2482 @@
+[
+ {
+  "id": "MAT5-KSR-S11-001",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "3/8",
+   "B": "6/8",
+   "C": "4/8",
+   "D": "5/8"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 8 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 5’dir.",
+   "Kesir 5/8 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "6/8, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "C": "4/8, taralı olmayan parça sayısı bir fazla sayılarak bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L173.64 46.36 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 173.64 46.36 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L173.64 173.64 A90 90 0 0 0 200 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 173.64 173.64 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L46.36 173.64 A90 90 0 0 0 110 200 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 46.36 173.64 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L46.36 46.36 A90 90 0 0 0 20 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 46.36 46.36 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 8,
+    "pay": 5
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "5/8"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-002",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "1/6",
+   "B": "4/6",
+   "C": "5/6",
+   "D": "2/6"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 6 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 5’dir.",
+   "Kesir 5/6 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "4/6, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "C": "Doğru.",
+   "D": "2/6, taralı olmayan parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"66.67\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"113.33\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"206.67\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"253.33\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 6,
+    "pay": 5
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "5/6"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-003",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "2/5",
+   "B": "3/5",
+   "C": "4/5",
+   "D": "1/5"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 5 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 3’dir.",
+   "Kesir 3/5 olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "Doğru.",
+   "C": "4/5, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "D": "1/5, taralı parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"76\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"132\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"188\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"244\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 5,
+    "pay": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "3/5"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-004",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "3/8",
+   "B": "5/8",
+   "C": "4/8",
+   "D": "6/8"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 8 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 3’dir.",
+   "Kesir 3/8 olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "C": "4/8, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "D": "6/8, taralı parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"55\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"90\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"125\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"195\" y=\"20\" width=\"35\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"230\" y=\"20\" width=\"35\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"265\" y=\"20\" width=\"35\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 8,
+    "pay": 5
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "3/8"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-005",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "2/5",
+   "B": "3/5",
+   "C": "4/5",
+   "D": "1/5"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 5 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 3’dir.",
+   "Kesir 3/5 olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "Doğru.",
+   "C": "4/5, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "D": "1/5, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"76\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"132\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"188\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"244\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 5,
+    "pay": 3
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "3/5"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-006",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "6/8",
+   "B": "3/8",
+   "C": "2/8",
+   "D": "5/8"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 8 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 2’dir.",
+   "Kesir 2/8 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "3/8, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "C": "Doğru.",
+   "D": "5/8, taralı parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"55\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"90\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"125\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"195\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"230\" y=\"20\" width=\"35\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"265\" y=\"20\" width=\"35\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 8,
+    "pay": 6
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "2/8"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-007",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "7/8",
+   "B": "1/8",
+   "C": "6/8",
+   "D": "2/8"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 8 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 7’dir.",
+   "Kesir 7/8 olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "C": "6/8, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "D": "2/8, taralı olmayan parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"55\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"90\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"125\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"195\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"230\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"265\" y=\"20\" width=\"35\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 8,
+    "pay": 7
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "7/8"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-008",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "2/12",
+   "B": "11/12",
+   "C": "3/12",
+   "D": "10/12"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 12 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 10’dir.",
+   "Kesir 10/12 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "11/12, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "C": "3/12, taralı parça sayısı bir fazla sayılarak bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"43.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"66.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"90\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"113.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"136.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"183.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"206.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"230\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"253.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"276.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 12,
+    "pay": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "10/12"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-009",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "4/6",
+   "B": "2/6",
+   "C": "5/6",
+   "D": "3/6"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 6 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 4’dir.",
+   "Kesir 4/6 olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "C": "5/6, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "D": "3/6, taralı parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L187.94 65 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 155 A90 90 0 0 0 187.94 65 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 187.94 155 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 155 A90 90 0 0 0 110 200 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 65 A90 90 0 0 0 32.06 155 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 32.06 65 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 6,
+    "pay": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "4/6"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-010",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "5/8",
+   "B": "4/8",
+   "C": "6/8",
+   "D": "3/8"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 8 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 3’dir.",
+   "Kesir 3/8 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "4/8, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "C": "6/8, taralı parça sayısı bir fazla sayılarak bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L173.64 46.36 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 173.64 46.36 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L173.64 173.64 A90 90 0 0 0 200 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 173.64 173.64 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L46.36 173.64 A90 90 0 0 0 110 200 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 46.36 173.64 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L46.36 46.36 A90 90 0 0 0 20 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 46.36 46.36 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 8,
+    "pay": 5
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "3/8"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-011",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "1/8",
+   "B": "6/8",
+   "C": "7/8",
+   "D": "2/8"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 8 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 7’dir.",
+   "Kesir 7/8 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "6/8, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "C": "Doğru.",
+   "D": "2/8, taralı olmayan parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L173.64 46.36 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 173.64 46.36 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L173.64 173.64 A90 90 0 0 0 200 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 173.64 173.64 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L46.36 173.64 A90 90 0 0 0 110 200 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 46.36 173.64 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L46.36 46.36 A90 90 0 0 0 20 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 46.36 46.36 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 8,
+    "pay": 7
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "7/8"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-012",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "8/12",
+   "B": "4/12",
+   "C": "3/12",
+   "D": "9/12"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 12 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 4’dir.",
+   "Kesir 4/12 olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "Doğru.",
+   "C": "3/12, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "D": "9/12, taralı olmayan parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L155 32.06 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 65 A90 90 0 0 0 155 32.06 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 187.94 65 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 155 A90 90 0 0 0 200 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L155 187.94 A90 90 0 0 0 187.94 155 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 155 187.94 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 187.94 A90 90 0 0 0 110 200 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 155 A90 90 0 0 0 65 187.94 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 32.06 155 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 65 A90 90 0 0 0 20 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 32.06 A90 90 0 0 0 32.06 65 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 65 32.06 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 12,
+    "pay": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "4/12"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-013",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "3/10",
+   "B": "8/10",
+   "C": "2/10",
+   "D": "7/10"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 10 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 7’dir.",
+   "Kesir 7/10 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "8/10, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "C": "2/10, taralı parça sayısı bir eksik sayılarak bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"48\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"76\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"104\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"132\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"188\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"216\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"244\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"272\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 10,
+    "pay": 3
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "7/10"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-014",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "4/10",
+   "B": "6/10",
+   "C": "5/10",
+   "D": "3/10"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 10 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 6’dir.",
+   "Kesir 6/10 olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "Doğru.",
+   "C": "5/10, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "D": "3/10, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"48\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"76\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"104\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"132\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"188\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"216\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"244\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"272\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 10,
+    "pay": 6
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "6/10"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-015",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "1/10",
+   "B": "8/10",
+   "C": "9/10",
+   "D": "2/10"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 10 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 9’dir.",
+   "Kesir 9/10 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "8/10, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "C": "Doğru.",
+   "D": "2/10, taralı parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"48\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"76\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"104\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"132\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"188\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"216\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"244\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"272\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 10,
+    "pay": 1
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "9/10"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-016",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "11/12",
+   "B": "1/12",
+   "C": "10/12",
+   "D": "2/12"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 12 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 11’dir.",
+   "Kesir 11/12 olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "C": "10/12, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "D": "2/12, taralı olmayan parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L155 32.06 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 65 A90 90 0 0 0 155 32.06 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 187.94 65 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 155 A90 90 0 0 0 200 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L155 187.94 A90 90 0 0 0 187.94 155 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 155 187.94 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 187.94 A90 90 0 0 0 110 200 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 155 A90 90 0 0 0 65 187.94 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 32.06 155 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 65 A90 90 0 0 0 20 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 32.06 A90 90 0 0 0 32.06 65 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 65 32.06 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 12,
+    "pay": 11
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "11/12"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-017",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "3/5",
+   "B": "1/5",
+   "C": "4/5",
+   "D": "2/5"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 5 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 2’dir.",
+   "Kesir 2/5 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "1/5, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "C": "4/5, taralı olmayan parça sayısı bir fazla sayılarak bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"76\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"132\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"188\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"244\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 5,
+    "pay": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "2/5"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-018",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "7/10",
+   "B": "3/10",
+   "C": "6/10",
+   "D": "2/10"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 10 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 7’dir.",
+   "Kesir 7/10 olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "C": "6/10, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "D": "2/10, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L162.9 37.19 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L195.6 82.19 A90 90 0 0 0 162.9 37.19 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L195.6 137.81 A90 90 0 0 0 195.6 82.19 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L162.9 182.81 A90 90 0 0 0 195.6 137.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 162.9 182.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L57.1 182.81 A90 90 0 0 0 110 200 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L24.4 137.81 A90 90 0 0 0 57.1 182.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L24.4 82.19 A90 90 0 0 0 24.4 137.81 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L57.1 37.19 A90 90 0 0 0 24.4 82.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 57.1 37.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 10,
+    "pay": 7
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "7/10"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-019",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "4/5",
+   "B": "1/5",
+   "C": "2/5",
+   "D": "3/5"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 5 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 1’dir.",
+   "Kesir 1/5 olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "Doğru.",
+   "C": "2/5, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "D": "3/5, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"76\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"132\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"188\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"244\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 5,
+    "pay": 1
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "1/5"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-020",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "4/10",
+   "B": "7/10",
+   "C": "6/10",
+   "D": "3/10"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 10 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 6’dir.",
+   "Kesir 6/10 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "7/10, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "C": "Doğru.",
+   "D": "3/10, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L162.9 37.19 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L195.6 82.19 A90 90 0 0 0 162.9 37.19 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L195.6 137.81 A90 90 0 0 0 195.6 82.19 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L162.9 182.81 A90 90 0 0 0 195.6 137.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 162.9 182.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L57.1 182.81 A90 90 0 0 0 110 200 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L24.4 137.81 A90 90 0 0 0 57.1 182.81 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L24.4 82.19 A90 90 0 0 0 24.4 137.81 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L57.1 37.19 A90 90 0 0 0 24.4 82.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 57.1 37.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 10,
+    "pay": 6
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "6/10"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-021",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "1/12",
+   "B": "11/12",
+   "C": "2/12",
+   "D": "10/12"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 12 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 1’dir.",
+   "Kesir 1/12 olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "C": "2/12, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "D": "10/12, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L155 32.06 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 65 A90 90 0 0 0 155 32.06 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 187.94 65 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 155 A90 90 0 0 0 200 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L155 187.94 A90 90 0 0 0 187.94 155 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 155 187.94 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 187.94 A90 90 0 0 0 110 200 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 155 A90 90 0 0 0 65 187.94 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 32.06 155 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 65 A90 90 0 0 0 20 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 32.06 A90 90 0 0 0 32.06 65 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 65 32.06 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 12,
+    "pay": 1
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "1/12"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-022",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "1/12",
+   "B": "11/12",
+   "C": "10/12",
+   "D": "2/12"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 12 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 11’dir.",
+   "Kesir 11/12 olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "Doğru.",
+   "C": "10/12, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "D": "2/12, taralı parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L155 32.06 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 65 A90 90 0 0 0 155 32.06 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 187.94 65 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 155 A90 90 0 0 0 200 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L155 187.94 A90 90 0 0 0 187.94 155 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 155 187.94 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 187.94 A90 90 0 0 0 110 200 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 155 A90 90 0 0 0 65 187.94 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 32.06 155 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 65 A90 90 0 0 0 20 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 32.06 A90 90 0 0 0 32.06 65 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 65 32.06 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 12,
+    "pay": 1
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "11/12"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-023",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "5/6",
+   "B": "2/6",
+   "C": "4/6",
+   "D": "1/6"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 6 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 1’dir.",
+   "Kesir 1/6 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "2/6, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "C": "4/6, taralı olmayan parça sayısı bir eksik sayılarak bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"66.67\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"113.33\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"206.67\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"253.33\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 6,
+    "pay": 1
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "1/6"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-024",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "7/8",
+   "B": "2/8",
+   "C": "1/8",
+   "D": "6/8"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 8 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 1’dir.",
+   "Kesir 1/8 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "2/8, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "C": "Doğru.",
+   "D": "6/8, taralı parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"55\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"90\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"125\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"195\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"230\" y=\"20\" width=\"35\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"265\" y=\"20\" width=\"35\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 8,
+    "pay": 7
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "1/8"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-025",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "3/5",
+   "B": "2/5",
+   "C": "1/5",
+   "D": "4/5"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 5 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 2’dir.",
+   "Kesir 2/5 olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "Doğru.",
+   "C": "1/5, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "D": "4/5, taralı parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"76\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"132\" y=\"20\" width=\"56\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"188\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"244\" y=\"20\" width=\"56\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 5,
+    "pay": 3
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "2/5"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-026",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "3/5",
+   "B": "1/5",
+   "C": "2/5",
+   "D": "4/5"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 5 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 2’dir.",
+   "Kesir 2/5 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "1/5, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "C": "Doğru.",
+   "D": "4/5, taralı parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L195.6 82.19 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L162.9 182.81 A90 90 0 0 0 195.6 82.19 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L57.1 182.81 A90 90 0 0 0 162.9 182.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L24.4 82.19 A90 90 0 0 0 57.1 182.81 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 24.4 82.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 5,
+    "pay": 3
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "2/5"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-027",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "4/6",
+   "B": "3/6",
+   "C": "5/6",
+   "D": "2/6"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 6 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 2’dir.",
+   "Kesir 2/6 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "3/6, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "C": "5/6, taralı parça sayısı bir fazla sayılarak bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"66.67\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"113.33\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"206.67\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"253.33\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 6,
+    "pay": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "2/6"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-028",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "2/5",
+   "B": "3/5",
+   "C": "1/5",
+   "D": "4/5"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 5 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 2’dir.",
+   "Kesir 2/5 olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "C": "1/5, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "D": "4/5, taralı olmayan parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L195.6 82.19 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L162.9 182.81 A90 90 0 0 0 195.6 82.19 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L57.1 182.81 A90 90 0 0 0 162.9 182.81 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L24.4 82.19 A90 90 0 0 0 57.1 182.81 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 24.4 82.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 5,
+    "pay": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "2/5"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-029",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "2/8",
+   "B": "5/8",
+   "C": "6/8",
+   "D": "1/8"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 8 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 6’dir.",
+   "Kesir 6/8 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "5/8, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "C": "Doğru.",
+   "D": "1/8, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L173.64 46.36 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 173.64 46.36 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L173.64 173.64 A90 90 0 0 0 200 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 173.64 173.64 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L46.36 173.64 A90 90 0 0 0 110 200 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 46.36 173.64 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L46.36 46.36 A90 90 0 0 0 20 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 46.36 46.36 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 8,
+    "pay": 6
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "6/8"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-030",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "8/12",
+   "B": "4/12",
+   "C": "5/12",
+   "D": "7/12"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 12 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 4’dir.",
+   "Kesir 4/12 olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "Doğru.",
+   "C": "5/12, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "D": "7/12, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"43.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"66.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"90\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"113.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"136.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"183.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"206.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"230\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"253.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"276.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 12,
+    "pay": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "4/12"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-031",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "2/8",
+   "B": "6/8",
+   "C": "3/8",
+   "D": "7/8"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 8 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 2’dir.",
+   "Kesir 2/8 olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "C": "3/8, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "D": "7/8, taralı parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L173.64 46.36 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 173.64 46.36 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L173.64 173.64 A90 90 0 0 0 200 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 173.64 173.64 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L46.36 173.64 A90 90 0 0 0 110 200 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 46.36 173.64 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L46.36 46.36 A90 90 0 0 0 20 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 46.36 46.36 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 8,
+    "pay": 6
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "2/8"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-032",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "11/12",
+   "B": "2/12",
+   "C": "10/12",
+   "D": "1/12"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 12 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 1’dir.",
+   "Kesir 1/12 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "2/12, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "C": "10/12, taralı parça sayısı bir eksik sayılarak bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"43.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"66.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"90\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"113.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"136.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"183.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"206.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"230\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"253.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"276.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 12,
+    "pay": 11
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "1/12"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-033",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "1/5",
+   "B": "3/5",
+   "C": "2/5",
+   "D": "4/5"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 5 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 4’dir.",
+   "Kesir 4/5 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "3/5, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "C": "2/5, taralı olmayan parça sayısı bir fazla sayılarak bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L195.6 82.19 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L162.9 182.81 A90 90 0 0 0 195.6 82.19 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L57.1 182.81 A90 90 0 0 0 162.9 182.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L24.4 82.19 A90 90 0 0 0 57.1 182.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 24.4 82.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 5,
+    "pay": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "4/5"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-034",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "10/12",
+   "B": "2/12",
+   "C": "11/12",
+   "D": "1/12"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 12 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 10’dir.",
+   "Kesir 10/12 olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "C": "11/12, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "D": "1/12, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"43.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"66.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"90\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"113.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"136.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"183.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"206.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"230\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"253.33\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"276.67\" y=\"20\" width=\"23.33\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 12,
+    "pay": 10
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "10/12"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-035",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "4/6",
+   "B": "2/6",
+   "C": "1/6",
+   "D": "3/6"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 6 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 2’dir.",
+   "Kesir 2/6 olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "Doğru.",
+   "C": "1/6, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "D": "3/6, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"66.67\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"113.33\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"206.67\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"253.33\" y=\"20\" width=\"46.67\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 6,
+    "pay": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "2/6"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-036",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "1/10",
+   "B": "8/10",
+   "C": "9/10",
+   "D": "2/10"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 10 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 9’dir.",
+   "Kesir 9/10 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "8/10, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "C": "Doğru.",
+   "D": "2/10, taralı olmayan parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 84\" role=\"img\" aria-label=\"Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.\"><rect width=\"320\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"20\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"48\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"76\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"104\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"132\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"160\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"188\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"216\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"244\" y=\"20\" width=\"28\" height=\"44\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><rect x=\"272\" y=\"20\" width=\"28\" height=\"44\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\"/></svg>",
+   "alt_metin": "Eş parçalara bölünmüş bir şerit modeli; parçaların bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "serit",
+    "payda": 10,
+    "pay": 9
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "9/10"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-037",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "4/5",
+   "B": "1/5",
+   "C": "2/5",
+   "D": "3/5"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 5 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 1’dir.",
+   "Kesir 1/5 olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "Doğru.",
+   "C": "2/5, istenen parça sayısı bir fazla sayılarak bulunur.",
+   "D": "3/5, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L195.6 82.19 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L162.9 182.81 A90 90 0 0 0 195.6 82.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L57.1 182.81 A90 90 0 0 0 162.9 182.81 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L24.4 82.19 A90 90 0 0 0 57.1 182.81 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 24.4 82.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 5,
+    "pay": 1
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "1/5"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-038",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı olmayan bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "8/12",
+   "B": "3/12",
+   "C": "9/12",
+   "D": "4/12"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 12 eş parçaya bölünmüştür.",
+   "Taralı olmayan parça sayısı 4’dir.",
+   "Kesir 4/12 olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı kısmı yazma; istenen taralı olmayan kısımdır.",
+   "B": "3/12, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "C": "9/12, taralı parça sayısı bir fazla sayılarak bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L155 32.06 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 65 A90 90 0 0 0 155 32.06 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 187.94 65 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 155 A90 90 0 0 0 200 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L155 187.94 A90 90 0 0 0 187.94 155 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 155 187.94 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 187.94 A90 90 0 0 0 110 200 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 155 A90 90 0 0 0 65 187.94 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 32.06 155 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 65 A90 90 0 0 0 20 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 32.06 A90 90 0 0 0 32.06 65 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 65 32.06 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 12,
+    "pay": 8
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali_olmayan"
+    ],
+    "beklenen": "4/12"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-039",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "5/12",
+   "B": "7/12",
+   "C": "4/12",
+   "D": "6/12"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 12 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 5’dir.",
+   "Kesir 5/12 olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "C": "4/12, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "D": "6/12, taralı olmayan parça sayısı bir eksik sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L155 32.06 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 65 A90 90 0 0 0 155 32.06 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L200 110 A90 90 0 0 0 187.94 65 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L187.94 155 A90 90 0 0 0 200 110 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L155 187.94 A90 90 0 0 0 187.94 155 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 155 187.94 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 187.94 A90 90 0 0 0 110 200 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 155 A90 90 0 0 0 65 187.94 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L20 110 A90 90 0 0 0 32.06 155 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L32.06 65 A90 90 0 0 0 20 110 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L65 32.06 A90 90 0 0 0 32.06 65 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 65 32.06 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 12,
+    "pay": 5
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "5/12"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-KSR-S11-040",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.1.3",
+  "konu": "Kesirler",
+  "alt_konu": "Kesri modelle gösterme",
+  "soru_metni": "Yukarıdaki modelde taralı bölge hangi kesirle gösterilir?",
+  "siklar": {
+   "A": "3/10",
+   "B": "6/10",
+   "C": "7/10",
+   "D": "4/10"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Önce bütünün kaç eş parçaya bölündüğünü, sonra istenen kısmın kaç parça olduğunu say.",
+  "cozum_adimlari": [
+   "Bütün 10 eş parçaya bölünmüştür.",
+   "Taralı parça sayısı 7’dir.",
+   "Kesir 7/10 olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taralı olmayan kısmı yazma; istenen taralı kısımdır.",
+   "B": "6/10, istenen parça sayısı bir eksik sayılarak bulunur.",
+   "C": "Doğru.",
+   "D": "4/10, taralı olmayan parça sayısı bir fazla sayılarak bulunur."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "kesir-modeli",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 220 220\" role=\"img\" aria-label=\"Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.\"><rect width=\"220\" height=\"220\" fill=\"#FFFFFF\"/><path d=\"M110 110 L162.9 37.19 A90 90 0 0 0 110 20 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L195.6 82.19 A90 90 0 0 0 162.9 37.19 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L195.6 137.81 A90 90 0 0 0 195.6 82.19 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L162.9 182.81 A90 90 0 0 0 195.6 137.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 200 A90 90 0 0 0 162.9 182.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L57.1 182.81 A90 90 0 0 0 110 200 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L24.4 137.81 A90 90 0 0 0 57.1 182.81 Z\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L24.4 82.19 A90 90 0 0 0 24.4 137.81 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L57.1 37.19 A90 90 0 0 0 24.4 82.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/><path d=\"M110 110 L110 20 A90 90 0 0 0 57.1 37.19 Z\" fill=\"#FFFFFF\" stroke=\"#1F2937\" stroke-width=\"1.6\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Eş dilimlere bölünmüş bir daire modeli; dilimlerin bir kısmı taralıdır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "kesir-modeli",
+   "parametreler": {
+    "tur": "pasta",
+    "payda": 10,
+    "pay": 7
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "tarali"
+    ],
+    "beklenen": "7/10"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-kesir-tarali",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ }
+]

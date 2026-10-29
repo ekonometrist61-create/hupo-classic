@@ -1,0 +1,19 @@
+{
+  "veliPaneli": {
+    "membership": {
+      "trial": {
+        "title": "Free trial",
+        "cocuk": "Child",
+        "yukleniyor": "Loading…",
+        "hata": "Trial details are unavailable right now.",
+        "premium": "A premium plan is active on this account.",
+        "aktif": "Free trial active. Ends {bitis} ({kalan} days left).",
+        "limitler": "During the trial your child can solve up to {soru} questions, {okuma} reading stories, {kelime} Word Universe answers and {carpim} multiplication steps per day. Up to {sinav} mock exams in total.",
+        "otomatik": "No card is requested. No automatic charge is made.",
+        "t3": "Your free trial ends on {bitis}. No automatic charge is made. If you want to continue, you choose a plan yourself and confirm the amount on the payment page.",
+        "bitti": "Your free trial ended on {bitis}. No charge was made.",
+        "ilerleme": "Your child's progress data and review list stay open."
+      }
+    }
+  }
+}

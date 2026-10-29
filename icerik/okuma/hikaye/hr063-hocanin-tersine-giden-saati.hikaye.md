@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D3]
 yetiskin_uygun: false
-tanitim: "Meydandaki saat yanlış mı, yoksa herkes yanlış yere mi bakıyor? Hoca ve Yusuf gölgeyle ölçüm yapıyor."
+tanitim: "Meydandaki saat yanlış mı, yoksa herkes yanlış yere mi bakıyor? Hoca ve bir arkadaşı gölgeyle ölçüm yapıyor."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -36,18 +36,18 @@ etiketler:
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
   - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Meydandaki büyük saat ne gösteriyordu?", secenekler: [{id: A, metin: "Öğlen on ikiyi"}, {id: B, metin: "Sabah altıyı"}, {id: C, metin: "Akşam dokuzu"}, {id: D, metin: "Gece yarısını"}], dogru: A, aciklama: "Saatin akrebi öğlen on ikinin üzerinde duruyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Hoca'ya göre hata nerede olabilirdi?", secenekler: [{id: A, metin: "Saatte ya da baktıkları yerde"}, {id: B, metin: "Yalnızca güneşte"}, {id: C, metin: "Pazarda"}, {id: D, metin: "Kuşta"}], dogru: A, aciklama: "Hoca, hem saatin hem de gözlemin yanlış olabileceğini söyledi."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Hoca'nın “Hata, doğruyu arayanın düşmanı değildir” sözü neyi anlatır?", secenekler: [{id: A, metin: "Hatanın öğrenmeyi sağlayabileceğini ve saklanmaması gerektiğini"}, {id: B, metin: "Hiç hata yapılmaması gerektiğini"}, {id: C, metin: "Hatanın kimseyi ilgilendirmediğini"}, {id: D, metin: "Hatanın saatle ilgili olmadığını"}], dogru: A, aciklama: "Hata fark edilip açıkça ele alındığında doğruya yaklaşmayı sağlar."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 8, metin: "Metinde geçen kefe ne anlama gelir?", secenekler: [{id: A, metin: "Terazinin iki yanındaki tabla"}, {id: B, metin: "Bir tür ekmek"}, {id: C, metin: "Bir gölge"}, {id: D, metin: "Bir saat parçası"}], dogru: A, aciklama: "Kefe, terazinin ağırlığı koyulan yandaki tablasıdır."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Hoca'ya göre hata nerede olabilirdi?", secenekler: [{id: A, metin: "Güneşin o sabah erken doğmasında"}, {id: B, metin: "Pazarda satılan un çuvallarında"}, {id: C, metin: "Saatte ya da baktıkları yerde"}, {id: D, metin: "Meydanın kaldırım taşlarının dizilişinde"}], dogru: C, aciklama: "Hoca, hem saatin hem de gözlemin yanlış olabileceğini söyledi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 3, metin: "Hoca'nın “Hata, doğruyu arayanın düşmanı değildir” sözü neyi anlatır?", secenekler: [{id: A, metin: "Hata yapan kişinin herkes önünde cezalandırılması gerektiğini"}, {id: B, metin: "Hataların yalnızca usta tarafından bilinmesi gerektiğini"}, {id: C, metin: "Hatanın saatle değil, yalnızca güneşle ilgili olduğunu"}, {id: D, metin: "Hatanın öğrenmeyi sağlayabileceğini ve saklanmaması gerektiğini"}], dogru: D, aciklama: "Hata fark edilip açıkça ele alındığında doğruya yaklaşmayı sağlar."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 8, metin: "Metinde geçen kefe ne anlama gelir?", secenekler: [{id: A, metin: "Terazinin iki yanındaki tabla"}, {id: B, metin: "Fırında pişirilen yassı bir ekmek türü"}, {id: C, metin: "Güneşin yere düşürdüğü karanlık bir iz"}, {id: D, metin: "Kulenin içindeki dişlilerden biri"}], dogru: A, aciklama: "Kefe, terazinin ağırlığı koyulan yandaki tablasıdır."}
 deyim_cumleleri:
   hr063_boynunu_bukmek: "{yoldas:yalin|bir arkadaş} ise bu defa hemen boynunu bükmedi."
 ---
 @omurga
 Akşehir'in meydanında herkes aynı anda telaşlanmaya başlayınca, Nasreddin Hoca gökyüzüne baktı. Güneş henüz öğle yerine gelmemişti. Buna rağmen dükkânların önündeki insanlar öğlen olduğunu söylüyor, fırıncı ekmekleri aceleyle çıkarıyor, çıraklar kepenkleri kapatıyordu. İşin tuhafı, meydandaki büyük saatin akrebi de on ikinin üzerinde duruyordu. {isaret:gunes}
 
-"Güneş mi şaşırdı, saat mi?" diye sordu Hoca yanındaki küçük {yoldas:yonelme|bir arkadaşa}.
+"Güneş mi şaşırdı, saat mi?" diye sordu Hoca yanındaki {yoldas:yonelme|bir arkadaşa}.
 
-{yoldas:yalin|bir arkadaş}, köyün marangozunun çırağıydı. Çivi kutusunu taşırken kalabalığın arasına sıkışmış, saatin kulesine bakıyordu. "Saat şaşırmış olamaz," dedi. "Geçen ay kasabadan usta getirdiler. Herkes ona bakıyor."
+{yoldas:yalin|bir arkadaş}, kasabanın marangozunun yanına sık uğrardı. Çivi kutusunu taşırken kalabalığın arasına sıkışmış, saatin kulesine bakıyordu. "Saat şaşırmış olamaz," dedi. "Geçen ay kasabadan usta getirdiler. Herkes ona bakıyor."
 
 Hoca sakalını sıvazladı. "Herkesin bakması bir şeyin doğru olduğunu gösterir mi?"
 
@@ -73,14 +73,14 @@ Ertesi sabah Hoca, {yoldas:ayrilma|bir arkadaştan} iki eşit uzunlukta çubuk g
 
 {yoldas:yalin|bir arkadaş} çubuğun eğildiğini fark edince utandı. Hoca, taşların arasından eğilmiş olanı kaldırıp düz durması için yeniden toprağa bastırdı. "Hata, doğruyu arayanın düşmanı değildir," dedi. "Yeter ki onu saklamayalım."
 
-Öğlene doğru gölgeler kısaldı, sonra ters yöne uzamaya başladı. {yoldas:yalin|bir arkadaş} bunun değiştiği anı dikkatle not etti. İki avludaki sonuçlar birbirine yakındı. Meydan saatinin gösterdiği öğlen ise bu andan epey önce gelmişti. Çocuk defterindeki iki saati yan yana yazdı.
+Öğlene doğru gölgeler kısaldı, sonra ters yöne uzamaya başladı. {yoldas:yalin|bir arkadaş} bunun değiştiği anı dikkatle not etti. İki avludaki sonuçlar birbirine yakındı. Meydan saatinin gösterdiği öğlen ise bu andan epey önce gelmişti. {yoldas:yalin|bir arkadaş} defterindeki iki saati yan yana yazdı.
 ---
 @omurga
 "Saati geri almak gerek," dedi sevinerek.
 
-Hoca başını salladı. "Belki. Ama önce saatle ilgili ne biliyoruz?" {yoldas:yalin|bir arkadaş} kuleyi işaret etti: "Her gün aynı miktarda ileri gidiyor mu, yoksa yalnızca yanlış bir zamana mı ayarlanmış?" Hoca, çocuğun sorusunu duyunca mutlulukla güldü. "Şimdi gerçekten ölçmeye başladın."
+Hoca başını salladı. "Belki. Ama önce saatle ilgili ne biliyoruz?" {yoldas:yalin|bir arkadaş} kuleyi işaret etti: "Her gün aynı miktarda ileri gidiyor mu, yoksa yalnızca yanlış bir zamana mı ayarlanmış?" Hoca, {yoldas:ilgi|bir arkadaşın} sorusunu duyunca mutlulukla güldü. "Şimdi gerçekten ölçmeye başladın."
 
-Üç gün boyunca {yoldas:yalin|bir arkadaş}, sabah güneşini, çubuk gölgelerini ve saatin gösterdiği vakti karşılaştırdı. Bir gün hava bulutlandı; gölgeyi seçemediler. {yoldas:yalin|bir arkadaş} o günün karşısına büyük bir soru işareti koydu. Komşuları, "Çocuk gibi işaret koyacağınıza kuleye çıkıp saati düzeltin," diye söylendi.[[deyim:hr063_boynunu_bukmek]] "Henüz nedenini bilmiyoruz," dedi.
+Üç gün boyunca {yoldas:yalin|bir arkadaş}, sabah güneşini, çubuk gölgelerini ve saatin gösterdiği vakti karşılaştırdı. Bir gün hava bulutlandı; gölgeyi seçemediler. {yoldas:yalin|bir arkadaş} o günün karşısına büyük bir soru işareti koydu. Komşuları, "Gölge işaretleriyle uğraşacağınıza kuleye çıkıp saati düzeltin," diye söylendi.[[deyim:hr063_boynunu_bukmek]] "Henüz nedenini bilmiyoruz," dedi.
 
 Dördüncü gün, fırıncı Rıza Usta yanlarına yaklaştı. Saati yaptıranlardan biri olduğunu söyleyince {yoldas:yalin|bir arkadaş} telaşlandı. "Biz sizin saatinizi bozuk bulduk," deyiverdi. Ustanın yüzü asıldı. Hoca araya girdi: "Saati değil, gösterdiği vakti araştırıyoruz. Yapılan işi küçümsemiyoruz; herkesin işine yarasın istiyoruz."
 ---
@@ -98,9 +98,9 @@ Rıza Usta'nın kulaklarına kadar kızardığı görüldü. "Bütün kasaba ban
 
 "Üstelik," diye ekledi Hoca, "bir insanın hatasını anlaması, hiç hata yapmadığını iddia etmesinden daha değerli olabilir." Rıza Usta buna cevap vermedi ama saat ustasını çağırmaya razı oldu. Kulenin kapısını çocuklara açtırmadı; yüksekte çalışmak işin uzmanına aitti.
 
-Usta kasabaya geldiğinde {yoldas:ilgi|bir arkadaşın} notlarını inceledi. Dişlilerin sağlam olduğunu, saatin düzenli işlediğini fakat yanlış vakte ayarlandığını açıkladı. Bir de saat sesinin uzun süredir herkesin davranışını belirlediğini söyledi: "Bu yüzden küçük bir ayar hatası, büyük bir karışıklık oluşturmuş."
+Usta kasabaya geldiğinde {yoldas:ilgi|bir arkadaşın} notlarını inceledi. Dişlilerin sağlam olduğunu, saatin düzenli işlediğini fakat yanlış vakte ayarlandığını açıkladı. Bir de saatin uzun süredir herkesin davranışını belirlediğini söyledi: "Bu yüzden küçük bir ayar hatası, büyük bir karışıklık oluşturmuş."
 
-Hoca, çırakların, satıcıların ve köylülerin önünde şöyle dedi: "Bir kişi bir şeyi yanlış yapabilir; hepimiz yanlışın peşinden gidince onu doğruya çevirmiş olmayız." Kalabalık sessizleşti. Sonra fırıncı kahkaha attı. "Demek benim ekmekler pişmeden öğlen oluyormuş!"
+Hoca, çırakların, satıcıların ve kasabalıların önünde şöyle dedi: "Bir kişi bir şeyi yanlış yapabilir; hepimiz yanlışın peşinden gidince onu doğruya çevirmiş olmayız." Kalabalık sessizleşti. Sonra fırıncı kahkaha attı. "Demek benim ekmekler pişmeden öğlen oluyormuş!"
 ---
 @omurga
 Saat yeniden ayarlanırken herkes meydanda toplandı. {yoldas:yalin|bir arkadaş} bu defa kuleye değil, yere diktiği çubuğun gölgesine bakıyordu. Usta işi bitirince saatin sesi duyuldu. Meydandaki insanlar birbirine bakıp gülümsedi. Fırıncı, ekmeklerin çıkmasına hâlâ vakit olduğunu söyledi. Elif'in babası ise buluşma saatlerini bundan sonra açıkça konuşacaklarına söz verdi.
@@ -124,14 +124,14 @@ Birkaç gün sonra meydanda küçük bir tartışma çıktı. İki tüccar, bir 
 O akşam meydandaki ahşap bankta küçük bir buluşma yapıldı. {yoldas:yalin|bir arkadaş}, defterini açıp işaretleri anlattı. Önce iki ayrı çubuğu neden kullandıklarını gösterdi. Sonra başta kendi hatası yüzünden çıkan yanlış işareti de saklamadan açıkladı. Kalabalıktan biri, "Madem yanlış ölçtün, bütün defterine nasıl güvenelim?" diye sordu. {yoldas:yalin|bir arkadaş} bir an sustu. Ardından çizilmiş sayfayı kaldırdı: "Yanlış kaydı silseydim nerede dikkatli olmamız gerektiğini göremezdik. Yeni ölçümü yanına yazdım. Başkası da deneyebilir."
 ---
 @omurga
-Bu söz, kasabanın yazı işleriyle ilgilenen İsmail Efendi'nin hoşuna gitti. Çocuktan defteri bir günlüğüne ödünç almak istedi. {yoldas:yalin|bir arkadaş} ne kadar sevindiğini belli etmemeye çalıştı; ama defterini verirken kapağına kendi adını yazmayı unutmadı. Ertesi gün defter geri geldiğinde son sayfasına güzel bir cümle eklenmişti: Sorular kapıyı açar; ölçüler içeriye ışık tutar. {yoldas:yalin|bir arkadaş} cümleyi sevdi, fakat İsmail Efendi'ye ikinci kısmı için bir soru da sordu: "Ölçüler yanlışsa ne olacak?" İsmail Efendi gülerek "O zaman yeni bir pencere açarsın," dedi.
+Bu söz, kasabanın yazı işleriyle ilgilenen İsmail Efendi'nin hoşuna gitti. Defteri bir günlüğüne ödünç almak istedi. {yoldas:yalin|bir arkadaş} ne kadar sevindiğini belli etmemeye çalıştı; ama defterini verirken kapağına kendi adını yazmayı unutmadı. Ertesi gün defter geri geldiğinde son sayfasına güzel bir cümle eklenmişti: Sorular kapıyı açar; ölçüler içeriye ışık tutar. {yoldas:yalin|bir arkadaş} cümleyi sevdi, fakat İsmail Efendi'ye ikinci kısmı için bir soru da sordu: "Ölçüler yanlışsa ne olacak?" İsmail Efendi gülerek "O zaman yeni bir pencere açarsın," dedi.
 
-Hafta sonu Hoca, {yoldas:belirtme|bir arkadaşı} tepeye çıkarıp kasabanın iki yakasını gösterdi. Güneş iki aynı yükseklikteki çubuğa farklı zamanlarda aynı uzunlukta gölge düşürebilirdi; bu yüzden bir tek uzunluğa bakmak her zaman yeterli değildi. Sabah kısa bir süre önce görülen gölge, öğleden sonra yine aynı uzunlukta olabilirdi. {yoldas:yalin|bir arkadaş}, "O hâlde gölgenin hangi yöne düştüğünü de yazmalıyız," dedi. Bu öneriyi duyan Hoca elini dizine vurdu. "İşte gözlem dediğin! Yalnız rakam değil, koşul da kaydedilir."
+Hafta sonu Hoca, {yoldas:belirtme|bir arkadaşı} tepeye çıkarıp kasabanın iki yakasını gösterdi. Güneş iki aynı yükseklikteki çubuğa farklı zamanlarda aynı uzunlukta gölge düşürebilirdi; bu yüzden bir tek uzunluğa bakmak her zaman yeterli değildi. Sabahın erken saatlerinde görülen bir gölge, öğleden sonra yine aynı uzunlukta olabilirdi. {yoldas:yalin|bir arkadaş}, "O hâlde gölgenin hangi yöne düştüğünü de yazmalıyız," dedi. Bu öneriyi duyan Hoca elini dizine vurdu. "İşte gözlem dediğin! Yalnız rakam değil, koşul da kaydedilir."
 ---
 @omurga
 İkisi tepenin üstünde taşlarla küçük bir yön çizelgesi hazırladı. Kuzeyi işaretlediler, sonra çubuğun gölgesini farklı saatlerde çizdiler. {yoldas:yalin|bir arkadaş}, sabahları bir tarafa, öğleden sonra öbür tarafa uzanan çizgileri karşılaştırdı. Bir kez daha iki benzer işaretin aynı anlama gelmeyebileceğini gördü. Hoca, "Aynı görünen şeylerin gerçekten aynı olup olmadığını nasıl anlarsın?" diye sorduğunda {yoldas:yalin|bir arkadaş} artık hazırdı: "Yalnız görüntüye bakmam. Nerede, ne zaman, hangi şartlarda olduğunu da sorarım."
 
-Bu gözlemler bir başka kişiyi de değiştirdi. Saat ustası onarımını bitirdikten sonra bir süre kasabada kalmış, {yoldas:ilgi|bir arkadaşın} çizelgesini görmüştü. Çocuğa küçük bir cetvel hediye etti. "İyi bir usta olacaksan önce soru soran biri olmalısın," dedi. {yoldas:yalin|bir arkadaş} cetveli kabul etti ama ona dikkatle baktı. "Önce düzgün mü diye kontrol edeceğim," diye karşılık verdi. Usta yüksek sesle güldü. "Et elbette. Benden aldın diye doğru olduğunu varsayma!"
+Bu gözlemler bir başka kişiyi de değiştirdi. Saat ustası onarımını bitirdikten sonra bir süre kasabada kalmış, {yoldas:ilgi|bir arkadaşın} çizelgesini görmüştü. Çocuğa küçük bir cetvel hediye etti. "İyi bir usta olacaksan önce soru soran biri olmalısın," dedi. {yoldas:yalin|bir arkadaş} cetveli kabul etti ama ona dikkatle baktı. "Önce düzgün mü diye kontrol edeceğim," diye karşılık verdi. Usta yüksek sesle güldü. "Evet elbette. Benden aldın diye doğru olduğunu varsayma!"
 ---
 @omurga
 {yoldas:ilgi|bir arkadaşın} arkadaşı Elif, bütün bu olup bitenleri dinledikten sonra başka bir soru getirdi. "Herkes meydan saatine göre iş yaparsa ve saat yine bozulursa ne olur?" {yoldas:yalin|bir arkadaş}, cevabı hemen söylemedi. İkisi Hoca'ya gidip meydanda bir duyuru tahtası yapmayı önerdiler. Saat yanlış gösterdiğinde görevli tahtaya not bırakacaktı. Usta, haftada bir saat kontrolü yapacaktı. Fırıncı, su nöbetçisi ve pazar esnafı da birbirini haberdar edecekti. Böylece bir saatin hatası kasabanın bütün işlerini altüst etmeyecekti.
@@ -142,9 +142,9 @@ Tahta dikilirken {yoldas:yalin|bir arkadaş} kendisini hiç bu kadar işe yarar 
 Ertesi gün küçük bir çocuk, {yoldas:ilgi|bir arkadaşın} önüne kırık saplı bir kum saati koydu. "Bu da zamanı söyler mi?" diye sordu. {yoldas:yalin|bir arkadaş} camın içinden dökülen kum tanelerini izledi. "Belli bir sürenin geçişini gösterir," dedi. "Ama günün hangi saati olduğunu tek başına söylemez." Kum saatini düz bir yere koyup iki kez çevirdiler. Kumun akış süresi yaklaşık aynıydı. Çocuk, "O zaman fırındaki ekmeğin ne zaman çıkacağını bununla anlayabiliriz!" dedi. {yoldas:yalin|bir arkadaş} gülümsedi. Her ölçü aletinin bir iş için uygun olduğunu görmek, saatin sırrını çözmek kadar hoşuna gitmişti. Fırıncı da denemeyi duyunca, ekmekleri yalnız kule saatinin sesine göre değil, pişme süresine ve görünüşüne göre kontrol etmeye başladı. Böylece herkes kendi işinde daha dikkatli oldu. {yoldas:yalin|bir arkadaş} kum saatine son kez bakıp "Bazen en önemli şey hangi aracı kullandığın değil, neyi ölçmek istediğini bilmendir," diye düşündü.
 ---
 @omurga
-Bu küçük değişiklik, {yoldas:yalin|bir arkadaş} için başka bir kapı açtı. Kasabalılar tahtanın önünde durup günün notlarını okudukça ölçme işinin yalnızca saat ustasına ait olmadığını gördüler. Bazen bir çocuk sorar, bir esnaf kendi bildiğini yeniden düşünür, bir usta hatasını açıklar ve hep birlikte daha güvenilir bir yol bulurlardı. {yoldas:yalin|bir arkadaş} bunun tek başına en doğru cevabı bulmaktan farklı olduğunu düşündü. Hoca, çocuğun yüzündeki ifadeyi görünce, "Bir soruyu birlikte düşününce akıl çoğalır," dedi. {yoldas:yalin|bir arkadaş}, gözlemlerini sonraki mevsimlerde sürdürmeye karar verdi. Defterinin boş sayfaları ilk kez ona yapılacak işler listesi gibi değil, keşfedilecek bir harita gibi görünüyordu.
+Bu küçük değişiklik, {yoldas:yalin|bir arkadaş} için başka bir kapı açtı. Kasabalılar tahtanın önünde durup günün notlarını okudukça ölçme işinin yalnızca saat ustasına ait olmadığını gördüler. Bazen bir çocuk sorar, bir esnaf kendi bildiğini yeniden düşünür, bir usta hatasını açıklar ve hep birlikte daha güvenilir bir yol bulurlardı. {yoldas:yalin|bir arkadaş} bunun tek başına en doğru cevabı bulmaktan farklı olduğunu düşündü. Hoca, {yoldas:ilgi|bir arkadaşın} yüzündeki ifadeyi görünce, "Bir soruyu birlikte düşününce akıl çoğalır," dedi. {yoldas:yalin|bir arkadaş}, gözlemlerini sonraki mevsimlerde sürdürmeye karar verdi. Defterinin boş sayfaları ilk kez ona yapılacak işler listesi gibi değil, keşfedilecek bir harita gibi görünüyordu.
 
-O akşam {yoldas:yalin|bir arkadaş}, marangoz dükkânına dönerken güneş batıya doğru ilerlemişti. Çarşının pencerelerinden altın renkli ışık süzülüyor, yeni ayarlanmış saat ağır ağır akşamı bildiriyordu. Çocuğun cebinde eğri bir çivi vardı. Onu atmak yerine saklamıştı; çünkü bazen küçücük bir eğrilik koca bir hesabı değiştirebilirdi.
+O akşam {yoldas:yalin|bir arkadaş}, evine dönerken güneş batıya doğru ilerlemişti. Çarşının pencerelerinden altın renkli ışık süzülüyor, yeni ayarlanmış saat ağır ağır akşamı bildiriyordu. {yoldas:ilgi|bir arkadaşın} cebinde eğri bir çivi vardı. Onu atmak yerine saklamıştı; çünkü bazen küçücük bir eğrilik koca bir hesabı değiştirebilirdi.
 ---
 @omurga
 Evde babası, "Meydandaki saati kim düzeltti?" diye sordu. {yoldas:yalin|bir arkadaş} düşündü. Saat ustası dişlilere bakmıştı. Rıza Usta yanlışını kabul etmişti. Hoca doğru soruları sormuştu. Kendisi de not tutmuştu. "Birlikte düzelttik," dedi. Sonra ekledi: "Ama asıl önemli olan, herkes ona baktığı için bir şeyin doğru sayılmadığını öğrenmem."

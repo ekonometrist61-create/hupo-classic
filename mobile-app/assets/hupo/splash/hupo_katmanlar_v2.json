@@ -1,0 +1,51 @@
+{
+  "surum": 2,
+  "tuval": [
+    845,
+    900
+  ],
+  "govde_kanatsiz": {
+    "x": 0,
+    "y": 0,
+    "dosya": "hupo_govde_kanatsiz.webp"
+  },
+  "kanat_sag": {
+    "x": 530,
+    "y": 90,
+    "pivot": [
+      560,
+      440
+    ],
+    "dosya": "hupo_kanat_sag.webp",
+    "aci_derece": {
+      "asagi": 25,
+      "yukari": -30
+    },
+    "not": "Pozitif = saat yonu (kanat asagi). Yukari -30'u gecerse yuzun onune girer."
+  },
+  "kanat_sol": {
+    "x": 0,
+    "y": 420,
+    "pivot": [
+      292,
+      450
+    ],
+    "dosya": "hupo_kanat_sol.webp",
+    "aci_derece": {
+      "asagi": -12,
+      "yukari": 45
+    },
+    "not": "Pozitif = saat yonu (kanat yukari). Cizim tuvalinin soluna tasar; ucuste tuvali genislet."
+  },
+  "goz_kapali": {
+    "x": 165,
+    "y": 121,
+    "dosya": "hupo_goz_kapali.webp"
+  },
+  "goz_mutlu": {
+    "x": 165,
+    "y": 121,
+    "dosya": "hupo_goz_mutlu.webp"
+  },
+  "z_sirasi": "govde_kanatsiz, goz (kapali|mutlu, istege bagli), kanat_sol, kanat_sag"
+}

@@ -1,0 +1,93 @@
+# HR-031 · Müzede Sessiz Alarm · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=ebe5db30-c071-49e8-bc0b-480352944f3e, surum_no=3, sha256=b60d339e4a201b4f6c4edbe9c286ad0edfbfe1147c25660d0a3d88f4f5e23abd
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr031-muzede-sessiz-alarm | Tür: gizem | Konu: muze_alarmi | Dünya: gercekci
+Sınıf: 4–4 | Okuma bandı: 3 | Yetişkin uygun: false
+Tanıtım: Sessiz müzede alarm öttü. Hırsız mı var, yoksa bir hata mı? Önce kanıt gerek!
+İzinli türler: ben, arkadas, baska_biri
+Değer anahtarları (sürüm): D6, D14 | maarif.ana_deger: D6
+Etiketler: ana_sinif=4, okuma_zorlugu=3, kavram_zorlugu=4, ilgi=ortak, kanit_duzeyi=C
+Temalar: gizem, bilim_teknoloji, kultur_miras | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sozcuk_sensor_hr031 (lexeme, first_hint: sensör); sozcuk_kanit_hr031 (lexeme, application: kanıt); sozcuk_varsayim_hr031 (lexeme, application: varsayım); kavram_hr031 (concept, application: Kanıt ile varsayımı ayırmak; acele hüküm vermemek)
+Ölçülen: {"soru_sayisi":6,"sayfa_sayisi":9,"simge_sayisi":15,"kelime_sayisi":476,"tahmini_sure_dk":6,"yoldas_yer_sayisi":7,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"degerlendirme":1,"sozcuk_baglami":2}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Kent müzesinin en sessiz salonundan aniden ince bir ses[İKON bell] yükseldi: bip, bip, bip! Ziyaretçiler durdu. Cam vitrindeki tarihî pusula[İKON compass] yerli yerindeydi; kimse ona yaklaşmıyordu. Rehber, çocukları güvenli bekleme alanına götürdü. Görevli alarmı kontrol etmeye geldiğinde ses kesildi. [İŞARET kod=ipucu]
+--- Sayfa 2 ---
+“Pusulayı biri mi çalmaya çalıştı?” diye sordu [YOLDAŞ hal=yalin yedek=Hupo]. “Bilmiyoruz,” dedi arkadaşı [KAHRAMAN hal=yalin]. “Önce ne olduğunu anlamalıyız.” Bir süre sonra ses[İKON bell] yeniden duyuldu. [KAHRAMAN hal=yalin], not[İKON notebook] defterine saati yazdı. [YOLDAŞ hal=yalin yedek=Hupo] salondaki kalabalığı gözledi. İlk alarm sırasında bir grup kapının yanında bekliyordu; ikinci alarmda ise salon neredeyse boştu. Bu bilgi, kalabalığın tek başına neden olamayacağını düşündürdü.
+--- Sayfa 3 ---
+Rehber, müzede eşyaların korunması için [KELİME yuva=pb_sensor] adı verilen cihazların kullanıldığını anlattı. “Bu cihazlar hareket, sıcaklık ya da başka değişimleri algılayabilir. Bazen de ayarlarının kontrol edilmesi gerekir,” dedi. Çocuklardan cihazlara ve vitrinlere dokunmamalarını özellikle istedi. [KAHRAMAN hal=yalin], alarmlar arasında ortak bir ayrıntı fark etti. Her ikisi de havalandırma sisteminin çalışmaya başladığı sırada duyulmuştu. Bunun arızanın nedeni olduğunu kesin söyleyemezdi. “Bu yalnızca bir [KELİME yuva=pb_varsayim],” diyerek defterine soru[İKON question] işareti koydu. Rehbere gözlemini aktardı.
+--- Sayfa 4 ---
+Rehber, alarmın duyulduğu iki saati kontrol odasındaki kayıtlara aktardı. [YOLDAŞ hal=yalin yedek=Hupo] önce kendi defterindeki saatlerden birini yanlış yazmış olabileceğini düşündü. [KAHRAMAN hal=yalin], “Zamanları yeniden kontrol edelim,” dedi. Kayıtlar onun notuyla uyuşuyordu. İki farklı kaynağın aynı bilgiyi göstermesi gözlemlerini güçlendirdi ama nedenin ne olduğuna dair henüz kesin bir [KELİME yuva=pb_kanit] sunmuyordu.
+--- Sayfa 5 ---
+[YOLDAŞ hal=yalin yedek=Hupo] başka bir olasılık sundu: “Belki alarmı bir telefon sesi tetiklemiştir.” Rehber böyle bir tahmini de not[İKON notebook] etti; hemen doğru[İKON check] ya da yanlış diye işaretlemedi. [KAHRAMAN hal=yalin], hangi düşüncenin kanıtlandığını anlamanın tahmin sayısını çoğaltmaktan daha önemli olduğunu söyledi. O sırada salonda kimseye suçlayıcı gözle bakmamaya özen gösterdiler.
+--- Sayfa 6 ---
+Teknik görevli salonun boşaltıldığı güvenli bir anda sistemi denetledi. Vitrinin yakınındaki bir algılayıcının, havalandırmanın oluşturduğu değişime gereğinden fazla duyarlı ayarlandığını belirledi. Yetkili ekip ayarı düzenledi ve alarmı birkaç kez denedi. Artık gereksiz ses[İKON bell] duyulmuyordu. [YOLDAŞ hal=yalin yedek=Hupo] rahatladı. “Demek kimse pusulayı çalmaya çalışmamış.” [KAHRAMAN hal=yalin] dikkatle konuştu: “En azından bu iki alarmın nedeni hırsızlık değilmiş. Başta bunu bilmiyorduk.”
+--- Sayfa 7 ---
+Salon yeniden açılmadan önce rehber, ziyaretçilerin neler olduğunu merak[İKON curiosity] ettiğini gördü. Kısa ve sakin bir açıklama yaptı: “Bir koruma sisteminin gereğinden duyarlı ayarı düzeltildi; eserlerimiz güvende.” [KAHRAMAN hal=yalin] bu açıklamayı beğendi. Hem doğru[İKON check] bilgi veriyor hem de kesinleşmemiş bir suçlama içermiyordu. [YOLDAŞ hal=yalin yedek=Hupo], bir sorunun çözülmesinin yalnız aleti onarmak değil, insanlara doğru bilgiyi aktarmak olduğunu düşündü.
+--- Sayfa 8 ---
+Gezi devam ettiğinde rehber çocuklara tarihî pusulanın eski yolculuklarda yön bulmaya yardım[İKON hand-help] ettiğini anlattı. [YOLDAŞ hal=yalin yedek=Hupo] pusulayı izlerken ilginç bir benzerlik fark etti: “Eskiden insanlar yolda kaybolmamak için pusula[İKON compass] kullanıyordu; şimdi de eserleri kaybetmemek için sensör kullanıyoruz.” Sınıfın dönüş otobüsünde herkes en sevdiği eseri söyledi. [KAHRAMAN hal=yalin] ise defterindeki üç sözcüğü gösterdi: [VURGU "gözlem"], [VURGU "varsayım"], [VURGU "kanıt"]. “Bir ses[İKON bell] bizi korkutmuştu,” dedi, “ama ne olduğunu anlamak için acele hüküm vermemek gerekiyormuş.”
+--- Sayfa 9 ---
+Bir sonraki hafta müzeden sınıfa teşekkür mesajı geldi. Görevliler, çocukların dikkatli gözlem paylaşımının incelemeyi kolaylaştırdığını yazmıştı. [KAHRAMAN hal=yalin] mesajı okurken gülümsedi; müzedeki en ilginç şeyin yalnız geçmişe ait eşyalar değil, bugün kullanılan bilimsel düşünme biçimi olduğunu fark etti. [İŞARET kod=kitap]
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=6 doğru=C
+  Metin: Alarmın gereksiz yere çalmasının asıl nedeni neydi?
+  A) Bir ziyaretçi pusulaya dokunmuştu
+  B) Müzenin elektriği kesilmişti
+  C) Vitrinin yakınındaki algılayıcı, havalandırmanın yarattığı değişime gereğinden fazla duyarlı ayarlanmıştı
+  D) Bir telefon sesi alarmı tetiklemişti
+  Açıklama: Teknik görevli, algılayıcının havalandırmanın oluşturduğu değişime fazla duyarlı ayarlandığını belirledi.
+s2 [cikarim] dayanak_sayfa=2 doğru=A
+  Metin: Çocuklar kalabalığın alarmın tek nedeni olamayacağını neden düşündü?
+  A) İlk alarmda kapının yanında bir grup vardı, ikinci alarmda ise salon neredeyse boştu
+  B) Müzede hiç ziyaretçi yoktu
+  C) Alarm yalnızca geceleri çalardı
+  D) Rehber öyle söylemişti
+  Açıklama: Kalabalık ikinci alarmda yoktu; bu yüzden kalabalık tek başına neden olamazdı.
+s3 [yorumlama] dayanak_sayfa=4 doğru=B
+  Metin: Kayıtlardaki saatlerin çocuğun notuyla uyuşması neyi gösterdi?
+  A) Alarmın nedenini kesin olarak kanıtladı
+  B) Gözlemlerin güvenilir olduğunu güçlendirdi ama nedeni henüz kanıtlamadı
+  C) Rehberin yanıldığını
+  D) Alarmın aslında hiç çalmadığını
+  Açıklama: İki kaynak aynı bilgiyi gösterince gözlemler güçlendi; ancak nedenin ne olduğu hâlâ belli değildi.
+s4 [sozcuk_baglami] dayanak_sayfa=3 doğru=B
+  Metin: ‘Bu yalnızca bir varsayım’ cümlesinde varsayım ne demektir?
+  A) Kesin olarak kanıtlanmış bilgi
+  B) Henüz kanıtlanmamış, doğru olabileceği düşünülen düşünce
+  C) Kimsenin duymadığı bir ses
+  D) Müzedeki bir eser
+  Açıklama: Çocuk, havalandırmanın neden olduğunu kesin söyleyemediği için bunu varsayım diye işaretledi.
+s5 [degerlendirme] dayanak_sayfa=7 doğru=D
+  Metin: Rehberin ziyaretçilere yaptığı açıklama neden iyi bir açıklamadır?
+  A) Çünkü çok uzundu
+  B) Çünkü sorunu gizledi
+  C) Çünkü hırsızın kim olduğunu söyledi
+  D) Çünkü kimseyi suçlamadan doğru ve sakin bilgi verdi
+  Açıklama: Açıklama doğru bilgi veriyordu ve kesinleşmemiş bir suçlama içermiyordu.
+s6 [sozcuk_baglami] dayanak_sayfa=3 doğru=C
+  Metin: Metne göre sensör ne işe yarar?
+  A) Müzenin kapısını açan bir anahtardır
+  B) Eski eserleri temizleyen bir fırçadır
+  C) Hareket, sıcaklık gibi değişimleri algılayan bir cihazdır
+  D) Ziyaretçileri sayan bir defterdir
+  Açıklama: Rehber, sensörlerin hareket, sıcaklık ya da başka değişimleri algılayabildiğini anlattı.
+
+## Sözlük
+- pb_sensor | kelime | yazım: sensör | 4–4 | anlam: Hareket, sıcaklık ya da ışık gibi değişimleri algılayan küçük cihaz.
+- pb_kanit | kelime | yazım: kanıt | 4–4 | anlam: Bir düşüncenin doğru olduğunu gösteren bilgi ya da belge.
+- pb_varsayim | kelime | yazım: varsayım | 4–4 | anlam: Henüz kanıtlanmamış, doğru olabileceği düşünülen düşünce.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

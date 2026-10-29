@@ -34,10 +34,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (7. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 3, metin: "Fotoğrafın arkasında ne yazıyordu?", secenekler: [{id: A, metin: "Bayram günü"}, {id: B, metin: "Posta binası"}, {id: C, metin: "Yeni yıl"}, {id: D, metin: "Kamera adı"}], dogru: A, aciklama: "Fotoğrafın arkasında yalnızca “Bayram günü” yazıyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Babasının sözüne göre belirsizliği açıkça belirtmek ne sağlar?", secenekler: [{id: A, metin: "Doğru bilinen kısmı daha değerli kılar"}, {id: B, metin: "Belgeyi tamamen değersiz yapar"}, {id: C, metin: "Kanıt aramayı durdurur"}, {id: D, metin: "Fotoğrafı yok etmeye yol açar"}], dogru: A, aciklama: "Bilinmeyeni açıkça söylemek, bilinen kısmın güvenilirliğini artırır."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 6, metin: "Nehir'in harita hakkında vardığı sonuç nedir?", secenekler: [{id: A, metin: "Haritada görünmemek, var olmadığı anlamına gelmez"}, {id: B, metin: "Haritada görünen her yol kesinlikle vardır"}, {id: C, metin: "Haritalar hiç kullanılmamalıdır"}, {id: D, metin: "Harita yalnız süs amaçlıdır"}], dogru: A, aciklama: "Bir yolun haritada görünmemesi, o yolun hiç olmadığını kanıtlamaz."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen arşiv ne anlama gelir?", secenekler: [{id: A, metin: "Belgelerin korunup saklandığı yer"}, {id: B, metin: "Bir tür fotoğraf"}, {id: C, metin: "Bir oyun"}, {id: D, metin: "Bir harita işareti"}], dogru: A, aciklama: "Arşiv, belgelerin düzenli biçimde saklandığı yerdir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 3, metin: "Fotoğrafın arkasında ne yazıyordu?", secenekler: [{id: A, metin: "Posta binası"}, {id: B, metin: "Yeni yıl"}, {id: C, metin: "Kamera adı"}, {id: D, metin: "Bayram günü"}], dogru: D, aciklama: "Fotoğrafın arkasında yalnızca “Bayram günü” yazıyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Babasının sözüne göre belirsizliği açıkça belirtmek ne sağlar?", secenekler: [{id: A, metin: "Belgenin bütününü güvenilmez kılar"}, {id: B, metin: "Kanıt aramayı tamamen durdurmaya yol açar"}, {id: C, metin: "Fotoğrafın saklanmasını gereksiz kılar"}, {id: D, metin: "Doğru bilinen kısmı daha değerli kılar"}], dogru: D, aciklama: "Bilinmeyeni açıkça söylemek, bilinen kısmın güvenilirliğini artırır."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 6, metin: "Kahramanın harita hakkında vardığı sonuç nedir?", secenekler: [{id: A, metin: "Haritada görünmemek, var olmadığı anlamına gelmez"}, {id: B, metin: "Haritada görünen her yol, çizildiği tarihte kesinlikle açıktır"}, {id: C, metin: "Haritalar tarihî araştırmada hiçbir zaman güvenilir kaynak olamaz"}, {id: D, metin: "Harita yalnız sergi süsü olarak kullanılmalı, bilgi için kullanılmamalı"}], dogru: A, aciklama: "Bir yolun haritada görünmemesi, o yolun hiç olmadığını kanıtlamaz."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 1, metin: "Metinde geçen arşiv ne anlama gelir?", secenekler: [{id: A, metin: "Eski bir fotoğraf albümünün adı"}, {id: B, metin: "Okulda oynanan eğlenceli bir oyun"}, {id: C, metin: "Belgelerin korunup saklandığı yer"}, {id: D, metin: "Haritada yolu gösteren bir işaret"}], dogru: C, aciklama: "Arşiv, belgelerin düzenli biçimde saklandığı yerdir."}
 deyim_cumleleri:
   hr084_gormezden: "Hata yapmanın kötü yanı, onu saklamak değil, görmezden gelmekti."
 ---
@@ -46,7 +46,7 @@ Kütüphane görevlisi kutudan çıkardığı kitabı masaya koyduğunda, {kahra
 
 “İçinde ne var?” diye fısıldadı {yoldas:yalin|bir arkadaş}.
 
-“Bir seyahat günlüğünün kopyası,” dedi kütüphaneci İnci Hanım. “Aslı il {kelime:hr084_arsiv} korunuyor. Okulun geçmişiyle ilgili sergi için bize sayısal görüntülerini gönderdiler. Siz de açıklama metinlerine yardım edebilirsiniz.”
+“Bir seyahat günlüğünün kopyası,” dedi kütüphaneci İnci Hanım. “Asıl nüsha il {kelime:hr084_arsiv} korunuyor. Okulun geçmişiyle ilgili sergi için bize sayısal görüntülerini gönderdiler. Siz de açıklama metinlerine yardım edebilirsiniz.”
 
 {kahraman} sayfaları dikkatle çevirdi. Günlük, yaklaşık yüz yıl önce kasabalar arasında gezen bir genç öğretmenin yolculuğunu anlatıyordu. Kimi sayfada yalnızca hava durumu, kiminde köy meydanlarında gördüğü oyunlar, kiminde de yol boyunca kendisine yardım eden insanların adları vardı. Yazı eskiydi ama bir kısmı okunabiliyordu. Defterin sonlarına doğru öğretmen, dağ geçidindeki bir hana varmış, geceyi orada geçirmişti. Son satır şöyleydi: “Ertesi gün, bana gösterilen haritada olmayan yola sapınca...”
 ---
@@ -64,7 +64,7 @@ Kütüphane görevlisi kutudan çıkardığı kitabı masaya koyduğunda, {kahra
 Kütüphaneden çıkarken {yoldas:yalin|bir arkadaş}, günlükte yazan hanın adını telefonuna kaydetti. İnternette ilk karşısına çıkan sonuç, aynı adla açılmış bir konukeviydi. Fotoğrafları yeniydi; taş kapının önünde parlak renkli saksılar duruyordu. “Bulduk galiba,” dedi. {isaret:kitap}
 ---
 @omurga
-Asya ekrana göz attı. “Adres başka ilçede. Üstelik buranın adı o tarihte de böyle miydi?”
+İnci Hanım ekrana göz attı. “Adres başka ilçede. Üstelik buranın adı o tarihte de böyle miydi?”
 
 {yoldas:yalin|bir arkadaş} ekranı kapatırken yüzü kızardı. Bir arama sonucunun üstte görünmesi onun doğru olduğu anlamına gelmiyordu. {kahraman} bu küçük yanılgıyı araştırma defterlerine eklemeyi önerdi. Aynı isimli farklı yerleri karıştırmak.[[deyim:hr084_gormezden]]
 

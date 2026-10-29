@@ -1,0 +1,81 @@
+# HR-028 · Üç Renkli Takım · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=44d9f533-2038-4268-b65b-7c373ae9c00c, surum_no=2, sha256=24fecf00432ea9b917ddeefa4a1583b9c38f1606f300c5eb4082e8df69d3cc8e
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr028-uc-renkli-takim | Tür: arkadaslik | Konu: takim_oyunu | Dünya: gercekci
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Biri ip atlar, biri top sürer, biri bulmaca çözer. Aynı oyunu sevmeyen üç arkadaş aynı takımda!
+İzinli türler: ben, arkadas, baska_biri
+Değer anahtarları (sürüm): D4, D14 | maarif.ana_deger: D4
+Etiketler: ana_sinif=3, okuma_zorlugu=3, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: dostluk, okul, dayanisma | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: sozcuk_takim_hr028 (lexeme, first_hint: takım); sozcuk_sira_hr028 (lexeme, application: sıra); sozcuk_farkli_hr028 (lexeme, application: farklı); kavram_hr028 (concept, application: Takım çalışması ve bireysel güçlü yönler)
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":9,"simge_sayisi":13,"kelime_sayisi":372,"tahmini_sure_dk":5,"yoldas_yer_sayisi":8,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":2,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Okul bahçesinde “Üç Renkli Oyun” yapılacaktı. Ada ip atlamayı, [KAHRAMAN hal=yalin] top[İKON ball] sürmeyi, [YOLDAŞ hal=yalin yedek=Hupo] ise bulmaca çözmeyi seviyordu. Takımlar üç kişiydi. Üçü aynı takıma seçilince [KAHRAMAN hal=yalin] homurdandı: “Biz hiç aynı oyunu sevmiyoruz.”
+--- Sayfa 2 ---
+Öğretmenleri kuralları açıkladı. İlk durakta ip engellerinden geçilecek, ikinci durakta top[İKON ball] hedefe atılacak, son durakta renkli kartların şifresi çözülecekti. Takımın başarısı için üç görev[İKON quest] de gerekliydi. Başlama işareti verilince [KAHRAMAN hal=yalin] öne fırladı. Fakat ilk ip engelinde takıldı. Ada ona yavaşça gösterdi: “Önce sağ ayak, sonra sol. Acele etme.” [KAHRAMAN hal=yalin] denedi ve geçti.
+--- Sayfa 3 ---
+Top[İKON ball] durağında Ada topu iki kez kaçırdı. [KAHRAMAN hal=yalin] kızmak üzereydi, sonra ilk durakta aldığı yardımı hatırladı. “Topu sert değil, kontrollü gönder,” dedi. Ada bu kez hedefi buldu. [YOLDAŞ hal=yalin yedek=Hupo] alkışladı. [İŞARET kod=yildiz]
+--- Sayfa 4 ---
+Son durakta masaya üç kart koyulmuştu: kırmızı, mavi ve sarı. Yanlarındaki notta şöyle yazıyordu: Kırmızı, maviden önce; sarı, kırmızıdan sonra; mavi ise en sonda. [YOLDAŞ hal=yalin yedek=Hupo] kartları dizdi. Fakat öğretmen[İKON school] ilk dizilişi onaylamadı. [YOLDAŞ hal=yalin yedek=Hupo] dikkatle düşündü. “Sarı, kırmızıdan sonra olabilir; ama maviden önce olmak zorunda mı?” diye sordu. Ada, “Mavi en son,” dedi. “Öyleyse [KELİME yuva=pb_sira] kırmızı, sarı, mavi!”
+--- Sayfa 5 ---
+Tam son kartı yerleştirirken bir rüzgâr[İKON wind] çıktı ve mavi kart uçtu. [KAHRAMAN hal=yalin] arkasından koşmaya kalktı, fakat öğretmen[İKON school] bahçe sınırını gösterdi. Ada, görevliden yedek kart istedi. Yarış biraz gecikti ama kurallara uydular.
+--- Sayfa 6 ---
+Yarışın sonlarına doğru[İKON check] başka bir takımın kartlarından biri de yere düştü. [KAHRAMAN hal=yalin] onu görünce bir an tereddüt etti. Kartı geri vermek için durursa kendi [KELİME yuva=pb_takim] daha da yavaşlayacaktı. Ada gözleriyle ne yapacağını sordu. [KAHRAMAN hal=yalin] kartı alıp görevliye teslim etti. “Onlar da oyunu bitirebilsin,” dedi. [YOLDAŞ hal=yalin yedek=Hupo] hafifçe gülümsedi; [KAHRAMAN hal=ilgi] en hızlı olduğu şeyin yalnız koşmak olmadığını düşündü.
+--- Sayfa 7 ---
+Son kartları dizdikten sonra üç arkadaş[İKON friends] ellerini üst üste koydu. Ada ip atlamayı bilmeyenlere yeniden göstermeyi, [KAHRAMAN hal=yalin] topu korkmadan deneyenlere cesaret[İKON courage] vermeyi, [YOLDAŞ hal=yalin yedek=Hupo] ise zor bilmecelerin ipuçlarını paylaşmayı teklif etti. Kimse ötekinin bütün işlerini yapmak zorunda değildi. Herkes kendi güçlü yanını sunabilirdi.
+--- Sayfa 8 ---
+Sonuçlar açıklandığında birinci olamadılar. Üçüncülük kurdelesini alırken [KAHRAMAN hal=yalin] üzülmüştü. [YOLDAŞ hal=yalin yedek=Hupo] ise her arkadaşının bir görevde takımı ilerlettiğini söyledi. Ada üç kurdeleyi yan yana tuttu: “[KELİME yuva=pb_farkli] renkler[İKON rainbow] birlikte daha güzel görünmüyor mu?”
+--- Sayfa 9 ---
+Ertesi gün [KAHRAMAN hal=yalin] bir öneriyle geldi: “Bu kez herkesin sevdiği bir oyunu birlikte deneyelim.” Önce ip atladılar, sonra top[İKON ball] oynadılar, en sonda [YOLDAŞ hal=ilgi yedek=Hupo] bilmecelerini çözdüler. Üçü de bütün oyunları aynı derecede sevmedi. Yine de artık farklı olmanın birlikte eğlenmelerine engel olmadığını biliyorlardı.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=B
+  Metin: Oyunda üç durak hangi sırayla geçilecekti?
+  A) Bulmaca, top, ip
+  B) İp engelleri, top atışı, kart şifresi
+  C) Top atışı, kart şifresi, ip engelleri
+  Açıklama: İlk durakta ip engelleri, ikinci durakta top atışı, son durakta kart şifresi vardı.
+s2 [cikarim] dayanak_sayfa=3 doğru=A
+  Metin: Ada topu kaçırınca çocuk neden kızmak yerine ona yardım etti?
+  A) Çünkü ip engelinde kendisi de yardım almıştı
+  B) Çünkü öğretmen bunu emretmişti
+  C) Çünkü top çok ağırdı
+  Açıklama: Çocuk, ilk durakta Ada'dan aldığı yardımı hatırladı ve ona kontrollü atmayı önerdi.
+s3 [yorumlama] dayanak_sayfa=6 doğru=C
+  Metin: Çocuğun, düşen başka takımın kartını teslim etmesi neyi gösterir?
+  A) Yarışı kaybetmeyi istediğini
+  B) Kuralları bilmediğini
+  C) Kazanmaktan çok dürüst ve adil olmayı önemsediğini
+  Açıklama: Çocuk kendi takımı yavaşlayacak olsa da kartı geri vererek diğer takımın da oyunu bitirmesine yardım etti.
+s4 [sozcuk_baglami] dayanak_sayfa=4 doğru=B
+  Metin: ‘Öyleyse sıra kırmızı, sarı, mavi!’ cümlesinde sıra sözcüğü ne demektir?
+  A) Okulda oturulan uzun mobilya
+  B) Öne ve arkaya göre dizilişi
+  C) Bir yarışın kazananı
+  Açıklama: Kartların önce–sonra düzenini, yani dizilişini anlatır.
+s5 [cikarim] dayanak_sayfa=9 doğru=A
+  Metin: Birinci olamadıkları hâlde ertesi gün çocuklar neden yeni bir oyun denedi?
+  A) Çünkü herkesin sevdiği oyunu birlikte denemek istediler
+  B) Çünkü öğretmen yeniden yarış yaptırdı
+  C) Çünkü kurdeleleri kaybettiler
+  Açıklama: Bora bu kez herkesin sevdiği oyunu birlikte denemeyi önerdi; farklı olmak eğlenmelerine engel değildi.
+
+## Sözlük
+- pb_takim | kelime | yazım: takım | 3–3 | anlam: Bir işi ya da oyunu birlikte yapan insan topluluğu.
+- pb_sira | kelime | yazım: sıra | 3–3 | anlam: Birbiri ardından gelen şeylerin dizilişi; önce ve sonra düzeni.
+- pb_farkli | kelime | yazım: farklı | 3–3 | anlam: Başkasına benzemeyen, ayrı özellikte olan.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

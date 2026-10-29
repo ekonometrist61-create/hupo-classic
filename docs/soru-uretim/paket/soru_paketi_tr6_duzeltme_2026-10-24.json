@@ -1,0 +1,249 @@
+{
+  "surum": "1",
+  "parti": {
+    "parti_id": "soru-uretim-2026-10-24-tr6-duzeltme",
+    "aciklama": "6. sınıf Türkçe DÖP kod uyumsuzluğu düzeltmesi (K-0115). 6 soru; DB’de yerinde güncellenir."
+  },
+  "kaynaklar": [],
+  "sorular": [
+    {
+      "soru_id": "tr6-o-002",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kazanim_kodu": "T.O.6.4",
+      "kazanim_metni": "Okuyacağı metnin içeriğine yönelik tahminde bulunabilme",
+      "zorluk": 1,
+      "soru_metni": "Başlık: Kuraklık Tarlaları Vurdu\n\nBu yıl yağmurlar mevsimin ortasına kadar hiç görünmedi. Dereler kurudu, kuyuların suyu çekildi. Köylüler sulama yapabilmek için kilometrelerce uzaktan su taşıyor.\n\nBaşlık ve verilen bölümden hareketle metnin devamında en çok hangisinin anlatılması beklenir?",
+      "siklar": {
+        "A": "Taşkınlar yüzünden köylerin zarar görmesi",
+        "B": "Ürünlerin bu yıl bol ve ucuz olması",
+        "C": "Su azlığının çiftçilerin verimini düşürmesi",
+        "D": "Tarımda kullanılan makinelerin yenilenmesi"
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Başlık ve ilk bölüm, yağmurun gecikmesinden ve su sıkıntısından söz eder.",
+        "Kuruyan dereler ve taşınan su, metnin devamında su azlığının tarımı etkilediğinin anlatılacağını gösterir.",
+        "Taşkın, bol ürün ve makine konuları metinde yer almayan konulardır.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Başlığın ve metnin ilk bölümünün ortak konusuna bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Yağmur azlığını taşkınla karıştıran öğrenci için çekici.",
+        "B": "Kuraklığın tersini düşünen öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Tarımdan söz eden her metinde makine konusunun geçeceğini düşünen öğrenci için çekici."
+      },
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "gorsel_gerekli": false,
+      "kalite_durumu": "sari",
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-duzeltme",
+      "onay_durumu": "beklemede",
+      "revizyon": "2026-10-24 K-0115: DÖP kod uyumsuzluğu düzeltmesi"
+    },
+    {
+      "soru_id": "tr6-o-017",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kazanim_kodu": "T.O.6.18",
+      "kazanim_metni": "Bilgilendirici metinde düşünceyi geliştirme yollarını belirlemeye yönelik çözümleme yapabilme",
+      "zorluk": 2,
+      "soru_metni": "Bir çocuk gelişimi uzmanı, kahvaltıyı atlayan çocukların derste dikkatinin çabuk dağıldığını söylüyor. Bir okulda yapılan araştırmada düzenli kahvaltı eden öğrencilerin ders başarısının belirgin biçimde yükseldiği görülmüş. Bu nedenle çocuğunuzun güne aç başlamasına izin vermeyin.\n\nYazar, düşüncesini geliştirmek için hangi yolu kullanmıştır?",
+      "siklar": {
+        "A": "Karşılaştırma",
+        "B": "Tanımlama",
+        "C": "Tanık gösterme",
+        "D": "Benzetme"
+      },
+      "dogru_sik": "C",
+      "cozum_adimlari": [
+        "Metinde bir uzmanın görüşü ve bir araştırmanın sonucu aktarılır.",
+        "Bu bilgiler söylenen düşüncenin güvenilir bir kaynağa dayandırılmasını sağlar: tanık gösterme.",
+        "Karşılaştırma, tanımlama ve benzetme metinde belirgin bir biçimde kullanılmamıştır.",
+        "Doğru cevap C seçeneğidir."
+      ],
+      "ipuclari": [
+        "Metinde kimin görüşüne ya da hangi sonuca dayanıldığına bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Kahvaltıyı başka bir durumla karşılaştırdığını sanan öğrenci için çekici.",
+        "B": "Kahvaltının ne olduğunu anlatan cümleyi tanımlama sanan öğrenci için çekici.",
+        "C": "Doğru.",
+        "D": "Çocuğun dikkatini bir şeye benzetme sanan öğrenci için çekici."
+      },
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "gorsel_gerekli": false,
+      "kalite_durumu": "sari",
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-duzeltme",
+      "onay_durumu": "beklemede",
+      "revizyon": "2026-10-24 K-0115: DÖP kod uyumsuzluğu düzeltmesi"
+    },
+    {
+      "soru_id": "tr6-o-019",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kazanim_kodu": "T.O.6.24",
+      "kazanim_metni": "Metindeki probleme çözüm üretebilme | a) Metinde yer alan olay ya da durumu problem biçiminde tanımlar. | b) Olay ya da durumun problemli yönünü özetler. | c) Ön bilgi, gözlem ve veriye dayanarak probleme alternatif çözümler üretir. | ç) Akıl yürüterek en uygun çözümü belirler. | d) Problem çözme sürecini değerlendirir.",
+      "zorluk": 2,
+      "soru_metni": "Okulun bahçesindeki tek çeşme sık sık bozuluyor ve öğrenciler teneffüste uzun kuyruklar oluşturuyor. Bazı çocuklar bu yüzden su içmeden sınıfa dönüyor. Müdür, çeşmeyi her bozulduğunda onarttığını ancak sorunun sürdüğünü söylüyor.\n\nMetinden hareketle bu sorun için en uygun çözüm hangisidir?",
+      "siklar": {
+        "A": "Yeni çeşmeler ekleyip bozulan çeşmeyi baştan yenilemek",
+        "B": "Teneffüs süresini uzatıp öğrencileri sıraya sokmak",
+        "C": "Öğrencilerin teneffüste su içmesini sınırlandırmak",
+        "D": "Çeşmeyi her bozulduğunda yeniden onartmaya devam etmek"
+      },
+      "dogru_sik": "A",
+      "cozum_adimlari": [
+        "Metinde çeşmenin sık bozulduğu, kuyrukların oluştuğu ve bazı öğrencilerin su içemediği anlatılır.",
+        "Onarımın sorunu kalıcı biçimde çözmediği metinde belirtilir; bu nedenle kalıcı çözüm, yetersiz kalan çeşme sayısının artırılması ve bozuk çeşmenin yenilenmesidir.",
+        "B ve C sorunu çözmek yerine kuyruğu ya da öğrencileri kısıtlar; D ise sorunun sürmesine izin verir.",
+        "Doğru cevap A seçeneğidir."
+      ],
+      "ipuclari": [
+        "Müdürün yaptığı işin sorunu neden çözmediğini düşün."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğru.",
+        "B": "Kuyruğu düzenlemenin sorunu çözeceğini sanan öğrenci için çekici.",
+        "C": "Sorunu öğrencilerin davranışına bağlayan öğrenci için çekici.",
+        "D": "Yalnızca onarımın yeterli olacağını düşünen öğrenci için çekici."
+      },
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "gorsel_gerekli": false,
+      "kalite_durumu": "sari",
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-duzeltme",
+      "onay_durumu": "beklemede",
+      "revizyon": "2026-10-24 K-0115: DÖP kod uyumsuzluğu düzeltmesi"
+    },
+    {
+      "soru_id": "tr6-y-011",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kazanim_kodu": "T.Y.6.15",
+      "kazanim_metni": "Yazısını zenginleştirecek biçimde söz varlığını kullanabilme",
+      "zorluk": 2,
+      "soru_metni": "Ayşe, okul bahçesinin güzelliğini anlatan bir yazı yazıyor. Yazısını daha zengin ve akılda kalıcı kılmak için “güzel” sözcüğü yerine daha ayrıntılı bir anlatım kullanmak istiyor.\n\nAşağıdaki cümlelerden hangisi, yazıyı zenginleştirecek biçimde söz varlığı kullanımına örnektir?",
+      "siklar": {
+        "A": "Bahçe güzel ve bahçede çiçekler var.",
+        "B": "Bahçe, çiçeklerin kokusuyla dolup taştığı sakin bir yuva gibi.",
+        "C": "Bahçe iyi bir yer, ben de orada olmayı severim.",
+        "D": "Bahçede şeyler var ve onlar da güzel."
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Ayşe’nin amacı, sıradan sözcükler yerine zengin söz varlığı kullanmaktır.",
+        "B seçeneği çiçeklerin kokusu ve sakinlik gibi ayrıntılarla ve bir benzetmeyle anlatımı zenginleştirir.",
+        "A, C ve D “güzel”, “iyi”, “şeyler” gibi genel sözcüklerle yetinir.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Zengin bir anlatımda genel sözcükler yerine ayrıntılı ve canlandırıcı sözcükler kullanılır."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Genel sözcüklerle yetinen cümleyi zengin anlatım sanan öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Kişisel görüşü zenginlik sanan öğrenci için çekici.",
+        "D": "Belirsiz sözcüklerle yazılmış cümleyi ayrıntılı sanan öğrenci için çekici."
+      },
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "gorsel_gerekli": false,
+      "kalite_durumu": "sari",
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-duzeltme",
+      "onay_durumu": "beklemede",
+      "revizyon": "2026-10-24 K-0115: DÖP kod uyumsuzluğu düzeltmesi"
+    },
+    {
+      "soru_id": "tr6-y-e02",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kazanim_kodu": "T.Y.6.18",
+      "kazanim_metni": "Yazım ve noktalama işaretleriyle ilgili kuralları uygulayabilme",
+      "zorluk": 2,
+      "soru_metni": "Mert, sınıf gazetesi için okul gezisini anlatan kısa bir yazı hazırlıyor. Yazısında bağlaç olan “de”nin yazımına dikkat etmek istiyor.\n\nAşağıdaki cümlelerden hangisinde bağlaç olan “de” doğru yazılmıştır?",
+      "siklar": {
+        "A": "Ben müzeye gittim, Ayşe’de bizimle geldi.",
+        "B": "Ben müzeye gittim, Ayşe de bizimle geldi.",
+        "C": "Ben müzeye gittim, Ayşede bizimle geldi.",
+        "D": "Ben müzeye gittim, Ayşe da bizimle geldi."
+      },
+      "dogru_sik": "B",
+      "cozum_adimlari": [
+        "Bağlaç “de” ayrı yazılır ve kesmeyle ayrılmaz: “Ayşe de bizimle geldi.”",
+        "A kesmeyle, C bitişik, D “da” biçimiyle yanlış yazılmıştır.",
+        "Doğru cevap B seçeneğidir."
+      ],
+      "ipuclari": [
+        "Bağlaç “de”nin yazımına ve kesme işaretine dikkat et."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Bağlaç “de”yi kesmeyle ayıran öğrenci için çekici.",
+        "B": "Doğru.",
+        "C": "Bağlacı bitişik yazan öğrenci için çekici.",
+        "D": "Bağlaç “de”yi “da” sanan öğrenci için çekici."
+      },
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "gorsel_gerekli": false,
+      "kalite_durumu": "sari",
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-duzeltme",
+      "onay_durumu": "beklemede",
+      "revizyon": "2026-10-24 K-0115: DÖP kod uyumsuzluğu düzeltmesi"
+    },
+    {
+      "soru_id": "tr6-y-017",
+      "sinif": 6,
+      "okul": "ortaokul",
+      "ders": "Türkçe",
+      "kazanim_kodu": "T.Y.6.19",
+      "kazanim_metni": "Yazma sürecini değerlendirebilme | a) Yazma sürecindeki güçlü ve gelişmeye açık yönlerini belirler. | b) Gelişmeye açık yönlerini destekleyecek tedbirler alıp, güçlü yönlerini sonraki yazma çalışmalarına aktararak yazar kimliğinin gelişimine yön verir.",
+      "zorluk": 3,
+      "soru_metni": "Öğretmen, Defne’nin yazısı için şu geri bildirimi verdi:\n\n“Fikirlerin özgün ve sözcük seçimin zengin. Ancak her paragrafta birden fazla ana fikir var; bu yüzden okuyucu konuyu takip etmekte zorlanıyor.”\n\nDefne, gelişmeye açık yönünü desteklerken güçlü yönlerini de korumak istiyor.\n\nBu amaca göre Defne hangi tedbiri almalıdır?",
+      "siklar": {
+        "A": "Özgün fikirlerini koruyup her paragrafa tek ana fikir koymak",
+        "B": "Sözcük seçimini sadeleştirip yazıdaki fikir sayısını azaltmak",
+        "C": "Paragrafları birleştirip yazıyı tek paragraf hâline getirmek",
+        "D": "Özgün fikirlerini bırakıp çok bilinen fikirleri kullanmak"
+      },
+      "dogru_sik": "A",
+      "cozum_adimlari": [
+        "Öğretmen, paragrafların birden fazla ana fikir taşıdığını ve bunun okuyucuyu zorladığını söylüyor.",
+        "Her paragrafta tek ana fikir bulunursa yazı düzenli bir yapı kazanır; bu, düşünceyi yapılandırmanın gereğidir.",
+        "B sözcük seçimini değiştirir ama paragraf yapısını düzeltmez; C ve D yapıyı ya da özgünlüğü bozar.",
+        "Doğru cevap A seçeneğidir."
+      ],
+      "ipuclari": [
+        "Geri bildirimdeki sorunun paragraf yapısıyla mı, yoksa sözcüklerle mi ilgili olduğuna bak."
+      ],
+      "yanlis_sik_geri_bildirimi": {
+        "A": "Doğru.",
+        "B": "Sorunun sözcük seçiminden kaynaklandığını sanan öğrenci için çekici.",
+        "C": "Paragrafları birleştirmenin sorunu çözeceğini sanan öğrenci için çekici.",
+        "D": "Özgünlüğü azaltmanın takibi kolaylaştıracağını sanan öğrenci için çekici."
+      },
+      "kaynak_turu": "uretilen",
+      "uretim_yontemi": "llm",
+      "gorsel_gerekli": false,
+      "kalite_durumu": "sari",
+      "model": "claude-haiku-5-5",
+      "prompt_surumu": "rehber-v1.1-2026-10-24-duzeltme",
+      "onay_durumu": "beklemede",
+      "revizyon": "2026-10-24 K-0115: DÖP kod uyumsuzluğu düzeltmesi"
+    }
+  ]
+}

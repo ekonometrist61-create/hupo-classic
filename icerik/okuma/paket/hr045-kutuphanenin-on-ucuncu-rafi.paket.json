@@ -78,7 +78,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2039,
+        "kelime_sayisi": 2041,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 19,
         "soru_sayisi": 4,
@@ -406,7 +406,7 @@
         },
         {
           "t": "metin",
-          "v": ", eski plandaki koltuğun bulunduğu yere yürüdü. Çocukların bugün sessizce kitap okuduğu köşe bir zamanlar farklı bir amaçla kullanılmıştı. Bir mekânın geçmişini bilmek, ona daha dikkatli bakmasını sağladı. Ferit de köşedeki küçük lambaya baktı. \"Kayıp raf yerine okuma koltuğu gelmiş,\" dedi. \"Aslında burası hâlâ kitaplara hizmet ediyor.\" İkisi aynı odayı şimdi daha farklı görüyordu.\n\nEski ahşap dolap ise yıllar önce başka bir odaya taşınmıştı. "
+          "v": ", eski planda on üçüncü rafın bulunduğu yere yürüdü. Çocukların bugün sessizce kitap okuduğu köşe bir zamanlar farklı bir amaçla kullanılmıştı. Bir mekânın geçmişini bilmek, ona daha dikkatli bakmasını sağladı. Ferit de köşedeki küçük lambaya baktı. \"Kayıp raf yerine okuma koltuğu gelmiş,\" dedi. \"Aslında burası hâlâ kitaplara hizmet ediyor.\" İkisi aynı odayı şimdi daha farklı görüyordu.\n\nEski ahşap dolap ise yıllar önce başka bir odaya taşınmıştı. "
         },
         {
           "t": "yoldas",
@@ -772,11 +772,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "On üçüncü raf"
+          "metin": "On dördüncü raf"
         },
         {
           "id": "B",
-          "metin": "On dördüncü raf"
+          "metin": "On üçüncü raf"
         },
         {
           "id": "C",
@@ -787,33 +787,33 @@
           "metin": "On ikinci raf"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Raf 12'den sonra Raf 14 geliyordu; arada on üçüncü raf yoktu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 4,
-      "metin": "Nil ile Ferit neden kitabın künyesine de baktı?",
+      "metin": "Yoldaş ile Ferit neden kitabın künyesine de baktı?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Aynı kitabın farklı yazılmış iki kaydı olabileceği için"
+          "metin": "Kitapların kapaklarının çok yıpranmış ve kopmuş olduğu için"
         },
         {
           "id": "B",
-          "metin": "Kitaplar çok ağır olduğu için"
+          "metin": "Künyenin farklı renklerde basıldığını göstermek istedikleri için"
         },
         {
           "id": "C",
-          "metin": "Künye renkli olduğu için"
+          "metin": "Aynı kitabın farklı yazılmış iki kaydı olabileceği için"
         },
         {
           "id": "D",
-          "metin": "Sevim Hanım istediği için"
+          "metin": "Sevim Hanım künyenin de kontrol edilmesini özellikle istediği için"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Farklı yazımlar, farklı kitapları ya da aynı kitabı iki kez gösterebilirdi."
     },
     {
@@ -828,15 +828,15 @@
         },
         {
           "id": "B",
-          "metin": "Kitapları satmak"
+          "metin": "Eski kitapları okurlara satarak gelir sağlamak"
         },
         {
           "id": "C",
-          "metin": "Yıldız işaretlerini silmek"
+          "metin": "Kütüphanedeki yıldız işaretlerini tamamen silmek"
         },
         {
           "id": "D",
-          "metin": "Defterleri yakmak"
+          "metin": "Eski defterleri okulun dışına çıkarıp yakmak"
         }
       ],
       "dogru": "A",
@@ -850,22 +850,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Birine geçici olarak bırakılan şey"
-        },
-        {
-          "id": "B",
           "metin": "Kalıcı olarak satılan şey"
         },
         {
+          "id": "B",
+          "metin": "Birine geçici olarak bırakılan şey"
+        },
+        {
           "id": "C",
-          "metin": "Yeni alınan kitap"
+          "metin": "Yeni alınıp henüz kataloglanmamış bir kitap"
         },
         {
           "id": "D",
-          "metin": "Okulun bahçesi"
+          "metin": "Okulun bahçesindeki büyük ağaçlı bir alan"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Emanet, sahibinden geçici olarak başkasına bırakılan şeydir."
     }
   ],

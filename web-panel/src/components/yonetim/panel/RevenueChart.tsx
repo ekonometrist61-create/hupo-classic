@@ -11,6 +11,7 @@ import {
   YAxis,
 } from "recharts";
 
+import IstemciyeOzel from "@/components/common/IstemciyeOzel";
 import ChartCard from "@/components/veli-paneli/ChartCard";
 import { CHART_COLORS } from "@/components/veli-paneli/chartTheme";
 import { formatKurus } from "@/utils/format";
@@ -36,6 +37,7 @@ export default function RevenueChart({
         </p>
       ) : (
         <div className="h-64 sm:h-72">
+          <IstemciyeOzel>
           <ResponsiveContainer
             width="100%"
             height="100%"
@@ -93,6 +95,7 @@ export default function RevenueChart({
               />
             </BarChart>
           </ResponsiveContainer>
+        </IstemciyeOzel>
         </div>
       )}
     </ChartCard>

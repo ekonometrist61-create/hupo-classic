@@ -1,0 +1,69 @@
+# HR-016 · Gölgeyi Kim Büyüttü? · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=b48a761a-9a70-420e-9fd1-49d4acaf3c4f, surum_no=3, sha256=604257a2a1a0fa99baebc1e9791278b866c509714d74051d08dae0850430d6b0
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr016-golgeyi-kim-buyuttu | Tür: bilim | Konu: bahce | Dünya: gercekci
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Gölge sabah uzun, öğle kısa. Bunun nedenini nasıl bulabiliriz?
+İzinli türler: ben, arkadas, kardes
+Değer anahtarları (sürüm): D12 | maarif.ana_deger: D12
+Etiketler: ana_sinif=2, okuma_zorlugu=1, kavram_zorlugu=2, ilgi=ortak, kanit_duzeyi=C
+Temalar: bilim_teknoloji, sabir_emek | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: uzun (lexeme, first_hint: uzun); kisa (lexeme, application: kısa); kavram_hr016 (concept, application: Işık ve gölge); atasoz_hr016 (proverb, application: Acele işe şeytan karışır)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":6,"simge_sayisi":11,"kelime_sayisi":190,"tahmini_sure_dk":4,"yoldas_yer_sayisi":3,"hedef_tur_dagilimi":{"lexeme":2,"concept":1,"proverb":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Sabah[İKON sun] okula giderken [KAHRAMAN hal=yalin] gölgesinin çok [KELİME yuva=s2_uzun] olduğunu fark etti. Gölge neredeyse yanındaki duvara kadar uzanıyordu. Öğle vakti aynı yere geldiğinde gölgesi [KELİME yuva=s2_kisa] olmuştu.
+--- Sayfa 2 ---
+"Gölgeyi kim küçülttü?" diye sordu. [YOLDAŞ hal=yalin yedek=Hupo] kanadıyla yerdeki gölgeyi gösterdi. "Belki de güneşin gökyüzündeki yeri değişmiştir." [KAHRAMAN hal=yalin] yerde tebeşirle iki farklı gölge uzunluğunu işaretledi.
+--- Sayfa 3 ---
+Ertesi gün kapının önünde gölgesini inceledi. Bir adım[İKON footprint] sağa geçince gölge de onunla birlikte[İKON friends] yer değiştirdi. "Sanki bana yapışmış," dedi gülerek. [YOLDAŞ hal=yalin yedek=Hupo] bir tebeşir daha getirdi; ikinci işaret[İKON flag] gölgenin bittiği yere konuldu.
+--- Sayfa 4 ---
+Öğle vakti iki işaret[İKON flag] farklıydı. Önce gölgenin kendiliğinden küçüldüğünü sandı. Sonra gölgesinin düştüğü yere baktı: gölge sabahki yerde değildi, demek ki güneşin yeri değişmişti. [İŞARET kod=gunes] Bir arkadaşı el feneri getirdi. Işığı oyuncak ağacın yanına indirince gölge uzadı; yükseltince kısaldı.
+--- Sayfa 5 ---
+"Gölge bir canlı değil," dedi [KAHRAMAN hal=yalin]. "Işığın geldiği yön[İKON compass] değişince biçimi de değişiyor." Acele etmemek gerekiyordu: "[ATASÖZÜ yuva=ata_acele]". [YOLDAŞ hal=yalin yedek=Hupo] güvenli deney[İKON microscope] kuralını hatırlattı: Işık kaynağına doğrudan bakılmaz ve deneyler büyüklerin yanında yapılır.
+--- Sayfa 6 ---
+Öğretmen[İKON school], "Gölge, ışığın ulaşamadığı yerde oluşur," dedi. Sabah[İKON sun], öğle ve akşam gölgenin boyunu yan yana gösteren resimler yaptılar. [KAHRAMAN hal=yalin] artık gölgesinden korkmuyordu. "Bir sorunun cevabını bulmak[İKON idea] için birkaç kez bakmak gerekiyormuş," dedi.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=A
+  Metin: Öğle vakti gölge nasıl olmuştu?
+  A) Kısa
+  B) Çok uzun
+  C) Hiç yoktu
+  Açıklama: Öğle vakti gölge, sabah olduğundan çok daha kısaydı.
+s2 [cikarim] dayanak_sayfa=4 doğru=A
+  Metin: Işığı yükseltince gölge neden kısaldı?
+  A) Işığın geliş yönü değişti
+  B) Gölge kendiliğinden küçüldü
+  C) Işık sönmüştü
+  Açıklama: Işığın geldiği yön değişince gölgenin biçimi de değişiyordu.
+s3 [yorumlama] dayanak_sayfa=6 doğru=A
+  Metin: Çocuğun gölgeyi birkaç kez incelemesinin anlamı nedir?
+  A) Bir sorunun cevabını bulmak için gözlemi tekrarlamanın gerekli olduğu
+  B) Gölgenin sürekli değiştiği
+  C) Güneşin hiç doğmayacağı
+  Açıklama: Çocuk, aynı soruyu farklı saatlerde gözlemleyerek cevabı buldu.
+s4 [sozcuk_baglami] dayanak_sayfa=1 doğru=A
+  Metin: Metinde geçen uzun sözcüğünün zıt anlamlısı hangisidir?
+  A) kısa
+  B) yeni
+  C) eski
+  Açıklama: Uzun, boyu çok olan; kısa ise boyu az olandır.
+
+## Sözlük
+- s2_uzun | kelime | yazım: uzun | 2–2 | anlam: Boyu ya da süresi çok olan.
+- s2_kisa | kelime | yazım: kısa | 2–2 | anlam: Boyu ya da süresi az olan.
+- ata_acele | atasozu | yazım: Acele işe şeytan karışır | 2–2 | anlam: Aceleyle yapılan iş genellikle hataya açıktır.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

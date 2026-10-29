@@ -1,0 +1,415 @@
+{
+  "hikaye": {
+    "tur": "mizah",
+    "konu": "goller",
+    "slug": "hr005-hocanin-golundeki-umut",
+    "durum": "taslak",
+    "baslik": "Hoca'nın Gölündeki Umut",
+    "tanitim": "Nasreddin Hoca gölde yoğurt olur mu diye soruyor. Çocuklar nasıl sınayacak?",
+    "fis_kodu": "HR-005",
+    "etiketler": {
+      "maarif": {
+        "ana_deger": "D5",
+        "yardimci_deger": "D6"
+      },
+      "denetim": {
+        "insan": "pending",
+        "ajan_a": "pending",
+        "ajan_b": "pending"
+      },
+      "olculen": {
+        "soru_sayisi": 4,
+        "sayfa_sayisi": 6,
+        "simge_sayisi": 6,
+        "kelime_sayisi": 212,
+        "tahmini_sure_dk": 4,
+        "yoldas_yer_sayisi": 2,
+        "hedef_tur_dagilimi": {
+          "lexeme": 2,
+          "concept": 1,
+          "proverb": 1
+        },
+        "soru_beceri_dagilimi": {
+          "cikarim": 1,
+          "hatirlama": 1,
+          "yorumlama": 1,
+          "sozcuk_baglami": 1
+        }
+      },
+      "temalar": [
+        "doga",
+        "okul"
+      ],
+      "ana_sinif": 2,
+      "ilgi_egilimi": "ortak",
+      "kanit_duzeyi": "C",
+      "okuma_zorlugu": 2,
+      "kavram_zorlugu": 1,
+      "program_surumu": "TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "ders_baglantisi": [
+        "turkce"
+      ],
+      "ogrenme_hedefleri": [
+        {
+          "id": "tahmin",
+          "tur": "lexeme",
+          "yuva": "s2_tahmin",
+          "islev": "first_hint",
+          "etiket": "tahmin"
+        },
+        {
+          "id": "gozlem",
+          "tur": "lexeme",
+          "yuva": "s2_gozlem",
+          "islev": "application",
+          "etiket": "gözlem"
+        },
+        {
+          "id": "kavram_hr005",
+          "tur": "concept",
+          "islev": "application",
+          "etiket": "Deneme ve gözlem"
+        },
+        {
+          "id": "atasoz_hr005",
+          "tur": "proverb",
+          "yuva": "ata_sormakla",
+          "islev": "application",
+          "etiket": "Sormakla yol bulunur"
+        }
+      ]
+    },
+    "sinif_alt": 2,
+    "sinif_ust": 2,
+    "dunya_tipi": "gercekci",
+    "okuma_bandi": 1,
+    "izinli_turler": [
+      "ben",
+      "arkadas",
+      "hayali"
+    ],
+    "yetiskin_uygun": false,
+    "deger_anahtarlari": [
+      "D5",
+      "D6"
+    ]
+  },
+  "sozluk": {
+    "yuvalar": [
+      {
+        "ad": "s2_tahmin",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_tahmin"
+          }
+        ]
+      },
+      {
+        "ad": "s2_gozlem",
+        "tur": "kelime",
+        "adaylar": [
+          {
+            "girdi": "s2_gozlem"
+          }
+        ]
+      },
+      {
+        "ad": "ata_sormakla",
+        "tur": "atasozu",
+        "adaylar": [
+          {
+            "girdi": "ata_sormakla"
+          }
+        ]
+      }
+    ],
+    "girdiler": [
+      {
+        "id": "s2_tahmin",
+        "tur": "kelime",
+        "anlam": "Bir şeyin ne olabileceğini düşünerek söyleme.",
+        "yazim": "tahmin",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "s2_gozlem",
+        "tur": "kelime",
+        "anlam": "Bir şeyi dikkatle izleyip inceleme.",
+        "yazim": "gözlem",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      },
+      {
+        "id": "ata_sormakla",
+        "tur": "atasozu",
+        "anlam": "Bilmediğimiz şeyi sorarak öğrenir, çözüm buluruz.",
+        "yazim": "Sormakla yol bulunur",
+        "sinif_alt": 2,
+        "sinif_ust": 2
+      }
+    ],
+    "sozluk_surumu": 1
+  },
+  "uretim": {
+    "tarih": "2026-10-22",
+    "kaynak": "elle"
+  },
+  "sorular": [
+    {
+      "id": "s1",
+      "dogru": "A",
+      "metin": "Kurbağa suya atlayınca ne oldu?",
+      "beceri": "hatirlama",
+      "aciklama": "Kurbağa suya atlayınca etrafında halkalar oluştu.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Suda halkalar oluştu"
+        },
+        {
+          "id": "B",
+          "metin": "Göl kurudu"
+        },
+        {
+          "id": "C",
+          "metin": "Kap devrildi"
+        }
+      ],
+      "dayanak_sayfa": 3
+    },
+    {
+      "id": "s2",
+      "dogru": "A",
+      "metin": "Çocuklar defterlerine neden her adımı not etti?",
+      "beceri": "cikarim",
+      "aciklama": "Çocuklar yapılanları izleyip not ederek sonucu anlamaya çalıştı.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Ne olduğunu gözlemleyip kaydetmek için"
+        },
+        {
+          "id": "B",
+          "metin": "Sınav için"
+        },
+        {
+          "id": "C",
+          "metin": "Kimseye göstermemek için"
+        }
+      ],
+      "dayanak_sayfa": 4
+    },
+    {
+      "id": "s3",
+      "dogru": "A",
+      "metin": "Eve dönen çocuğun 'Her tahmin doğru olmayabilir' sözü neyi anlatır?",
+      "beceri": "yorumlama",
+      "aciklama": "Çocuk, yanlış tahminler olsa da merak edip sormaktan vazgeçmemek gerektiğini söyledi.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Tahminler yanlış çıksa da sormak önemlidir"
+        },
+        {
+          "id": "B",
+          "metin": "Tahmin yapmak zamanın boşa harcanmasıdır"
+        },
+        {
+          "id": "C",
+          "metin": "Hiç soru sorulmamalıdır"
+        }
+      ],
+      "dayanak_sayfa": 6
+    },
+    {
+      "id": "s4",
+      "dogru": "A",
+      "metin": "Metinde geçen tahmin yürütmek ne anlama gelir?",
+      "beceri": "sozcuk_baglami",
+      "aciklama": "Çocuklar olabileceklerini düşünerek fikir yürüttü.",
+      "secenekler": [
+        {
+          "id": "A",
+          "metin": "Bir şeyin ne olabileceğini düşünmek"
+        },
+        {
+          "id": "B",
+          "metin": "Bir şeyi tam olarak bilmek"
+        },
+        {
+          "id": "C",
+          "metin": "Hiçbir şey düşünmemek"
+        }
+      ],
+      "dayanak_sayfa": 2
+    }
+  ],
+  "sayfalar": [
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Nasreddin Hoca gölün kıyısında bir kap yoğurdu karıştırıyordu. Yanında "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " de vardı. Köylü çocukları merakla yaklaştı. \"Hocam, göle ne yapıyorsun?\" diye sordular. \"Biraz maya katıyorum,\" dedi Hoca."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklardan biri gözlerini açtı: \"Koca göl yoğurt olur mu?\" Hoca gülümsedi: \"Olmayabilir. Peki bir şeyin olup olmayacağını nasıl"
+        },
+        {
+          "t": "ikon",
+          "v": "question"
+        },
+        {
+          "t": "metin",
+          "v": " anlarız?\" Kimi \"Kesin olmaz,\" dedi, kimi \"Belki,\" diye fısıldadı. Çocuklar birer "
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_tahmin"
+        },
+        {
+          "t": "metin",
+          "v": " yürüttü."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Sazlıkta bir kurbağa suya atlayınca halkalar oluştu. \"Hocam, maya suya yayılırsa kurbağaya bir şey olur mu?\" diye sordu en küçük çocuk. Hoca kabı kenara koydu. \"Bir şeyi merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " ederken doğayı da düşünmeliyiz.\" Çocuklar göle hiçbir şey dökmemeye karar verdi."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " küçük bir kapta süt ve yoğurt ile deneme yapmayı önerdi. Köydeki yoğurt ustası sabırla anlattı: önce süt ısıtılır, sonra uygun koşullarda yoğurt oluşur. Çocuklar güvenli örneği izledi ve her adımı defterine yazdı. Defterine \"Tahmin\", \""
+        },
+        {
+          "t": "kelime",
+          "yuva": "s2_gozlem"
+        },
+        {
+          "t": "metin",
+          "v": "\" ve \"Sonuç\" başlıklarını koydu."
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Yol boyunca "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "Hupo"
+        },
+        {
+          "t": "metin",
+          "v": " \"Göle maya çalmak kocaman bir hayalmiş,\" dedi. Hoca gülümsedi: \"Hayal kurmak güzel. Ama onu bilgiyle sınamak da gerek.\" Gölün kıyısına döndüklerinde suyun üstünde bir kurbağa gördüler. Göl kirlenmemişti. "
+        },
+        {
+          "t": "isaret",
+          "kod": "balik"
+        }
+      ]
+    },
+    {
+      "omurga": true,
+      "parcalar": [
+        {
+          "t": "metin",
+          "v": "Çocuklar, göle yoğurt dökmenin suyu kirletebileceğini de konuştu. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " eve gidince ailesine gördüklerini anlattı. \"Her tahmin doğru"
+        },
+        {
+          "t": "ikon",
+          "v": "check"
+        },
+        {
+          "t": "metin",
+          "v": " olmayabilir,\" dedi, \"ama sormaktan vazgeçmemeliyiz.\" Annesi gülümsedi: \""
+        },
+        {
+          "t": "atasozu",
+          "yuva": "ata_sormakla"
+        },
+        {
+          "t": "metin",
+          "v": "\". Babası ona bir defter"
+        },
+        {
+          "t": "ikon",
+          "v": "notebook"
+        },
+        {
+          "t": "metin",
+          "v": " verdi. "
+        },
+        {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": " defterin kapağına \"Merak"
+        },
+        {
+          "t": "ikon",
+          "v": "curiosity"
+        },
+        {
+          "t": "metin",
+          "v": " Kutum\" yazdı."
+        }
+      ]
+    }
+  ],
+  "paket_surumu": 1,
+  "deger_sahneleri": {},
+  "deyim_cumleleri": {},
+  "hareket_sahneleri": {}
+}

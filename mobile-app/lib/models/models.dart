@@ -87,6 +87,11 @@ class Question {
     required this.text,
     required this.options,
     this.altKonu,
+    this.kazanimKodu,
+    this.hafta,
+    this.gorselSvg,
+    this.gorselAltMetin,
+    this.gorselTip,
   });
 
   final String id;
@@ -95,6 +100,22 @@ class Question {
   final String? altKonu;
   final int zorluk; // 1 kolay, 2 orta, 3 zor
   final String text;
+
+  /// Görselli soru için SVG metni (yalnız görsel kolonları seçilen sorgularda dolar).
+  /// gorsel_spec (cevap ipucu) istemciye hiçbir zaman gelmez.
+  final String? gorselSvg;
+
+  /// Görselin erişilebilirlik metni (semanticsLabel olarak kullanılır).
+  final String? gorselAltMetin;
+
+  /// Görsel tipi kimliği (ör. açı, sayı doğrusu); yalnız bilgi amaçlı.
+  final String? gorselTip;
+
+  /// Müfredat kazanım kodu (ör. MAT.5.3.1); yalnız müfredat yolu RPC'sinden gelir.
+  final String? kazanimKodu;
+
+  /// Sorunun müfredat haftası; yalnız müfredat yolu RPC'sinden gelir.
+  final int? hafta;
 
   /// Şık anahtarı (A, B, C...) → şık metni; anahtara göre sıralı.
   final Map<String, String> options;
@@ -123,6 +144,11 @@ class Question {
       zorluk: map['zorluk'] as int,
       text: map['soru_metni'] as String,
       options: {for (final k in keys) k: raw[k].toString()},
+      kazanimKodu: map['kazanim_kodu'] as String?,
+      hafta: (map['hafta'] as num?)?.toInt(),
+      gorselSvg: map['gorsel_svg'] as String?,
+      gorselAltMetin: map['gorsel_alt_metin'] as String?,
+      gorselTip: map['gorsel_tip'] as String?,
     );
   }
 }

@@ -35,10 +35,10 @@ etiketler:
   program_surumu: "TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Bremen'e giden dört arkadaş kimlerdi?", secenekler: [{id: A, metin: "Eşek, köpek, kedi ve horoz"}, {id: B, metin: "Tilki, kurt, ayı ve kuş"}, {id: C, metin: "Kedi, köpek ve kuş"}], dogru: A, aciklama: "Hikâyenin dört kahramanı eşek, köpek, kedi ve horozdur."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Bremen'e giden dört arkadaş kimlerdi?", secenekler: [{id: A, metin: "Tilki, kurt, ayı ve kuş"}, {id: B, metin: "Kedi, köpek ve kuş"}, {id: C, metin: "Eşek, köpek, kedi ve horoz"}], dogru: C, aciklama: "Hikâyenin dört kahramanı eşek, köpek, kedi ve horozdur."}
   - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Hayvanlar neden durup yeniden başladı?", secenekler: [{id: A, metin: "Bir ses ötekini bastırıyordu"}, {id: B, metin: "Yağmur başlamıştı"}, {id: C, metin: "Çocuklar gelmişti"}], dogru: A, aciklama: "Sesler birbirini bastırınca uyum bozuluyordu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Hikâyeye göre uyum nedir?", secenekler: [{id: A, metin: "Herkesin aynı olması değil, birbirini dinlemesi"}, {id: B, metin: "Herkesin aynı sesle konuşması"}, {id: C, metin: "Yalnız eşeğin şarkı söylemesi"}], dogru: A, aciklama: "Hayvanlar farklı seslerini koruyarak birbirlerini dinlediler."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen ritim ne demektir?", secenekler: [{id: A, metin: "Düzenli tekrar eden ses ve zaman örüntüsü"}, {id: B, metin: "Yağmurun düştüğü yer"}, {id: C, metin: "Bir çeşit değirmen"}], dogru: A, aciklama: "Ritim, müzikte düzenli tekrar eden vuruşlardır."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Hikâyeye göre uyum nedir?", secenekler: [{id: A, metin: "Herkesin aynı sesle konuşması"}, {id: B, metin: "Herkesin aynı olması değil, birbirini dinlemesi"}, {id: C, metin: "Yalnız eşeğin şarkı söylemesi"}], dogru: B, aciklama: "Hayvanlar farklı seslerini koruyarak birbirlerini dinlediler."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen ritim ne demektir?", secenekler: [{id: A, metin: "Yağmurun düştüğü yer"}, {id: B, metin: "Düzenli tekrar eden ses ve zaman örüntüsü"}, {id: C, metin: "Bir çeşit değirmen"}], dogru: B, aciklama: "Ritim, müzikte düzenli tekrar eden vuruşlardır."}
 deyim_cumleleri:
   hr025_kulak_vermek: "Kedi, değirmenin duvarına kulak verdi."
 ---
@@ -61,8 +61,6 @@ Bir süre sonra eşek ritmi kaçırdı. Çünkü çatıdan damlayan suyun sesi h
 @omurga
 Eşek bir daha anırmadan önce arkadaşlarına baktı. Onlardan işaret alınca sesini yükseltti. Kendi sesinin kıymetini kaybetmemiş, yalnız diğerlerine yer açmıştı. Değirmenin damlaları da sanki onlara eşlik ediyordu. Yağmurun sesi azaldıkça yeni bir ezgi kurdular.
 
-Dışarıda yağmur hafifledi.
-
 Dışarıda yağmur hafifledi. Yol kenarında bir grup çocuk vardı. Çocuklar değirmenin içinden gelen müziği merak etmişti. Hayvanlar kapıya çıktı ve kısa şarkılarını söylediler. Çocukların biri ellerini çırparak eşlik etti. Bir başkası yağmur damlalarının sesini taklit etti. Böylece şarkıya yeni bir ritim eklendi.
 
 {yoldas:yalin|bir arkadaş} gururla kabardı. “Artık hepimiz aynı sesle mi şarkı söyleyeceğiz?” diye sordu.
@@ -78,3 +76,5 @@ Akşama doğru uzaktan Bremen'in çanları duyuldu. Dört arkadaş birbirine bak
 ---
 @omurga
 Dil hedefi: ses–ritim–uyum, karşılaştırma; Kavram/değer: müzikal örüntü, farklılıklara saygı, dayanışma. İkon önerileri: eşek, kedi, nota. Okuma sonrası: İlk şarkı neden gürültüydü? Hayvanlar hangi değişiklikle uyum sağladı?
+
+Not: Bu hikâye, Grimm Kardeşler’in derlediği Bremen Mızıkacıları masalından esinlenen özgün bir uyarlamadır.

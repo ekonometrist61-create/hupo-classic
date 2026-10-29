@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D1, D4]
 yetiskin_uygun: false
-tanitim: "Son dakikada gol atma fırsatı var. Kerem topu kendine mi tutacak, arkadaşına mı verecek?"
+tanitim: "Son dakikada gol atma fırsatı var. {kahraman} topu kendine mi tutacak, arkadaşına mı verecek?"
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -32,13 +32,13 @@ etiketler:
     - {id: deyim_hr037, tur: idiom, etiket: "Gözden kaçırmak", yuva: hr037_gozden_kacirmak, islev: application}
     - {id: kavram_hr037, tur: concept, etiket: "Takım ruhu ve adalet", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kerem maçtan önce ne yaptı?", secenekler: [{id: A, metin: "Bağcıklarını üçüncü kez bağladı"}, {id: B, metin: "Top çalıştı"}, {id: C, metin: "Kaptanla konuştu"}, {id: D, metin: "Kupayı aldı"}], dogru: A, aciklama: "Kerem, bağcıklarını üçüncü kez bağlayarak maça hazırlandı."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Kerem ilk yarıda neden gol atamadı?", secenekler: [{id: A, metin: "Boşta bekleyen arkadaşını fark etmedi ve şutları engellendi"}, {id: B, metin: "Kalecinin çok iyi olduğu için"}, {id: C, metin: "Sahada yağmur yağdığı için"}, {id: D, metin: "Topu kaybettiği için"}], dogru: A, aciklama: "Kerem, boşta bekleyen arkadaşını görmediği için pas vermedi, şutları da engellendi."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "Öğretmenin takım tanımına göre takım olmak nedir?", secenekler: [{id: A, metin: "Bir kişinin parlaması değil, herkesin birbirinin ışığını artırması"}, {id: B, metin: "Yalnız en çok gol atan oyuncu"}, {id: C, metin: "Tek başına oynamak"}, {id: D, metin: "Rakibi yenmek"}], dogru: A, aciklama: "Takım, herkesin birbirini desteklediği bir yapıdır."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen savunma sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Rakip takımın topu kaleye ulaştırmamaya çalışan oyuncuları"}, {id: B, metin: "Bir çeşit şut"}, {id: C, metin: "Kalenin rengi"}, {id: D, metin: "Hakemin düdüğü"}], dogru: A, aciklama: "Savunma, rakibin hücumunu durdurmaya çalışan oyuncular ve bu görevdir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kahraman maçtan önce ne yaptı?", secenekler: [{id: A, metin: "Kupanın yanında fotoğraf çektirdi"}, {id: B, metin: "Rakip takımın kalecisiyle tokalaştı"}, {id: C, metin: "Hakemle maç kuralları üzerine tartıştı"}, {id: D, metin: "Bağcıklarını üçüncü kez bağladı"}], dogru: D, aciklama: "Kahraman, bağcıklarını üçüncü kez bağlayarak maça hazırlandı."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Kahraman ilk yarıda neden gol atamadı?", secenekler: [{id: A, metin: "Rakip kalecinin çok uzun boylu ve güçlü olduğu için"}, {id: B, metin: "Boşta bekleyen arkadaşını fark etmedi ve şutları engellendi"}, {id: C, metin: "Sahada yağmur yağdığı ve top çok kaydığı için"}, {id: D, metin: "Öğretmen onu ilk yarıda oyundan çıkardığı için"}], dogru: B, aciklama: "Kahraman, boşta bekleyen arkadaşını görmediği için pas vermedi, şutları da engellendi."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "Öğretmenin takım tanımına göre takım olmak nedir?", secenekler: [{id: A, metin: "Yalnız en çok gol atan ve en çok alkış alan oyuncu"}, {id: B, metin: "Her oyuncunun kendi başına, diğerlerinden bağımsız oynaması"}, {id: C, metin: "Rakip takımın tüm oyuncularını sahadan uzaklaştırmak"}, {id: D, metin: "Bir kişinin parlaması değil, herkesin birbirinin ışığını artırması"}], dogru: D, aciklama: "Takım, herkesin birbirini desteklediği bir yapıdır."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen savunma sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Kaleciye yakın mesafeden atılan sert ve hızlı bir şut"}, {id: B, metin: "Kalenin direklerini ve ağlarını boyayan özel bir renk"}, {id: C, metin: "Rakip takımın topu kaleye ulaştırmamaya çalışan oyuncuları"}, {id: D, metin: "Maçı yöneten hakemin oyunu durdurmak için çaldığı düdük"}], dogru: C, aciklama: "Savunma, rakibin hücumunu durdurmaya çalışan oyuncular ve bu görevdir."}
 deyim_cumleleri:
   hr037_gozden_kacirmak: "Yan tarafta boş bekleyen {yoldas:belirtme|bir arkadaşı} gözden kaçırmıştı."
 ---
@@ -49,10 +49,10 @@ Kaptan Duru, "Hep birlikte oynarsak kazanabiliriz," dedi.
 
 {kahraman} başını salladı ama içinden, Kazandıran gol benim olmalı, diye geçirdi.
 
-Maçtan bir gün önce {kahraman}, bahçede tek başına şut çalışmıştı. Her golün ardından ellerini havaya kaldırıyor, hayalinde arkadaşlarının kendisini alkışladığını görüyordu. Babası kenardan seslenmişti: "Futbol tek kişinin oynadığı bir oyun değil." {kahraman}, "Biliyorum," demiş ama nedenini tam düşünmemişti. Şimdi tribüne bakarken bu konuşma aklına geldi. Kazanmak istiyordu; bir yandan da arkadaşlarının kendisine güvenmesini. Fakat yalnızca kendi golünü düşünürse onların güvenini nasıl kazanacaktı?
+Maçtan bir gün önce {kahraman}, bahçede tek başına şut çalışmıştı. Her golün ardından ellerini havaya kaldırıyor, hayalinde arkadaşlarının kendisini alkışladığını görüyordu. Babası kenardan seslenmişti: "Futbol tek kişinin oynadığı bir oyun değil." {kahraman}, "Biliyorum," demiş ama nedenini tam düşünmemişti. Şimdi tribüne bakarken bu konuşma aklına geldi. Kazanmak istiyordu; bir yandan da arkadaşlarının kendisine güvenmesini istiyordu. Fakat yalnızca kendi golünü düşünürse onların güvenini nasıl kazanacaktı?
 ---
 @omurga
-İlk yarıda {kahraman} topu iki kez {kelime:hr037_kale} taşıdı. Birinde şutunu {kelime:hr037_savunma} engelledi, ötekinde kalecinin üzerine vurdu.[[deyim:hr037_gozden_kacirmak]] Devre arasında takım gerideydi.
+İlk yarıda {kahraman} topu iki kez {kelime:hr037_kale}ye taşıdı. Birinde şutunu {kelime:hr037_savunma} engelledi, ötekinde kalecinin üzerine vurdu.[[deyim:hr037_gozden_kacirmak]] Devre arasında takım gerideydi.
 
 Öğretmenleri taktik tahtasını açtı. "Şut çekmek cesaret ister," dedi, "ama iyi bir oyuncu sahadaki arkadaşlarını da görür."
 

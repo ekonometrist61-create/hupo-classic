@@ -77,6 +77,9 @@ class OkumaKatalogSatiri {
     this.soruSayisi = 0,
     this.onizleme = false,
     this.gorulmedi = false,
+    this.anaDeger,
+    this.yardimciDeger,
+    this.degerEslesmesi = false,
   });
 
   final String hikayeId;
@@ -100,6 +103,13 @@ class OkumaKatalogSatiri {
   final bool onizleme;
   final bool gorulmedi;
 
+  /// Maarif değerleri (D-kodu). Sunucu `ana_deger` / `yardimci_deger` alanlarını döndürür.
+  final String? anaDeger;
+  final String? yardimciDeger;
+
+  /// Veli bu çocuk için bu hikâyenin değerlerinden birini seçtiyse true (sunucu hesaplar).
+  final bool degerEslesmesi;
+
   factory OkumaKatalogSatiri.fromMap(Map<String, dynamic> m) => OkumaKatalogSatiri(
         hikayeId: m['hikaye_id'] as String,
         surumId: (m['surum_id'] ?? '') as String,
@@ -119,6 +129,9 @@ class OkumaKatalogSatiri {
         sha256: (m['sha256'] ?? '') as String,
         onizleme: m['onizleme'] == true,
         gorulmedi: m['gorulmedi'] == true,
+        anaDeger: m['ana_deger'] as String?,
+        yardimciDeger: m['yardimci_deger'] as String?,
+        degerEslesmesi: m['deger_eslesmesi'] == true,
       );
 
   /// Cihazda saklanan "Okuduklarım" kaydı için.
@@ -141,6 +154,9 @@ class OkumaKatalogSatiri {
         'sha256': sha256,
         'onizleme': onizleme,
         'gorulmedi': gorulmedi,
+        'ana_deger': anaDeger,
+        'yardimci_deger': yardimciDeger,
+        'deger_eslesmesi': degerEslesmesi,
       };
 }
 

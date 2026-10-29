@@ -1,0 +1,1378 @@
+{
+  "tarih": "2026-10-28",
+  "hikaye_sayisi": 104,
+  "sayac": {
+    "metadata_eksik": 12
+  },
+  "benzer_ciftler": [],
+  "hikayeler": [
+    {
+      "dosya": "hr015-tohumun-kucuk-sirri.hikaye.md",
+      "fis_kodu": "HR-015",
+      "baslik": "Tohumun Küçük Sırrı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 420,
+        "cumle": 54,
+        "ort_cumle_uzunlugu": 7.8
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr018-deniz-fenerindeki-sinyal.hikaye.md",
+      "fis_kodu": "HR-018",
+      "baslik": "Deniz Fenerindeki Sinyal",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 432,
+        "cumle": 52,
+        "ort_cumle_uzunlugu": 8.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr019-magaranin-uc-isareti.hikaye.md",
+      "fis_kodu": "HR-019",
+      "baslik": "Mağaranın Üç İşareti",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 422,
+        "cumle": 51,
+        "ort_cumle_uzunlugu": 8.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr021-kayip-sandigin-sifresi.hikaye.md",
+      "fis_kodu": "HR-021",
+      "baslik": "Kayıp Sandığın Şifresi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 500,
+        "cumle": 58,
+        "ort_cumle_uzunlugu": 8.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr022-saat-kulesi-neden-durdu.hikaye.md",
+      "fis_kodu": "HR-022",
+      "baslik": "Saat Kulesi Neden Durdu?",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 443,
+        "cumle": 55,
+        "ort_cumle_uzunlugu": 8.1
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr023-hoca-ve-gorunmeyen-misafir.hikaye.md",
+      "fis_kodu": "HR-023",
+      "baslik": "Hoca ve Görünmeyen Misafir",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 437,
+        "cumle": 57,
+        "ort_cumle_uzunlugu": 7.7
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr024-bulut-postacisinin-son-mektubu.hikaye.md",
+      "fis_kodu": "HR-024",
+      "baslik": "Bulut Postacısının Son Mektubu",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 412,
+        "cumle": 54,
+        "ort_cumle_uzunlugu": 7.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr025-bremen-yolcularinin-yeni-sarkisi.hikaye.md",
+      "fis_kodu": "HR-025",
+      "baslik": "Bremen Yolcularının Yeni Şarkısı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 438,
+        "cumle": 64,
+        "ort_cumle_uzunlugu": 6.8
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr026-kelime-makinesinin-karisikligi.hikaye.md",
+      "fis_kodu": "HR-026",
+      "baslik": "Kelime Makinesinin Karışıklığı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 409,
+        "cumle": 49,
+        "ort_cumle_uzunlugu": 8.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr027-karagozun-kayip-golgesi.hikaye.md",
+      "fis_kodu": "HR-027",
+      "baslik": "Karagöz'ün Kayıp Gölgesi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 406,
+        "cumle": 65,
+        "ort_cumle_uzunlugu": 6.2
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr028-uc-renkli-takim.hikaye.md",
+      "fis_kodu": "HR-028",
+      "baslik": "Üç Renkli Takım",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 460,
+        "cumle": 54,
+        "ort_cumle_uzunlugu": 8.5
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr029-minik-mucit-ve-gunes-firini.hikaye.md",
+      "fis_kodu": "HR-029",
+      "baslik": "Minik Mucit ve Güneş Fırını",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 430,
+        "cumle": 52,
+        "ort_cumle_uzunlugu": 8.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr030-ormanin-kaybolan-patikasi.hikaye.md",
+      "fis_kodu": "HR-030",
+      "baslik": "Ormanın Kaybolan Patikası",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 525,
+        "cumle": 53,
+        "ort_cumle_uzunlugu": 9.9
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr031-muzede-sessiz-alarm.hikaye.md",
+      "fis_kodu": "HR-031",
+      "baslik": "Müzede Sessiz Alarm",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 523,
+        "cumle": 57,
+        "ort_cumle_uzunlugu": 9.2
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr032-keloglan-ve-akilli-terazi.hikaye.md",
+      "fis_kodu": "HR-032",
+      "baslik": "Keloğlan ve Akıllı Terazi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 684,
+        "cumle": 87,
+        "ort_cumle_uzunlugu": 7.9
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr033-ye-kurkum-ye-peki-neden.hikaye.md",
+      "fis_kodu": "HR-033",
+      "baslik": "Ye Kürküm Ye, Peki Neden?",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 489,
+        "cumle": 64,
+        "ort_cumle_uzunlugu": 7.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr034-2040-in-konusan-okul-cantasi.hikaye.md",
+      "fis_kodu": "HR-034",
+      "baslik": "2040'ın Konuşan Okul Çantası",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 491,
+        "cumle": 75,
+        "ort_cumle_uzunlugu": 6.5
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr035-ay-a-giden-ilk-posta.hikaye.md",
+      "fis_kodu": "HR-035",
+      "baslik": "Ay'a Giden İlk Posta",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 521,
+        "cumle": 64,
+        "ort_cumle_uzunlugu": 8.1
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr036-yedi-renkli-kopruun-koruyucusu.hikaye.md",
+      "fis_kodu": "HR-036",
+      "baslik": "Yedi Renkli Köprünün Koruyucusu",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 489,
+        "cumle": 64,
+        "ort_cumle_uzunlugu": 7.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr037-son-pasin-hikayesi.hikaye.md",
+      "fis_kodu": "HR-037",
+      "baslik": "Son Pasın Hikâyesi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 525,
+        "cumle": 62,
+        "ort_cumle_uzunlugu": 8.5
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr038-muzik-kutusunun-sifresi.hikaye.md",
+      "fis_kodu": "HR-038",
+      "baslik": "Müzik Kutusunun Şifresi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 533,
+        "cumle": 60,
+        "ort_cumle_uzunlugu": 8.9
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr039-anka-nin-kaybolan-tuyu.hikaye.md",
+      "fis_kodu": "HR-039",
+      "baslik": "Anka'nın Kaybolan Tüyü",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 520,
+        "cumle": 63,
+        "ort_cumle_uzunlugu": 8.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr040-trenin-penceresindeki-turkiye.hikaye.md",
+      "fis_kodu": "HR-040",
+      "baslik": "Trenin Penceresindeki Türkiye",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 482,
+        "cumle": 57,
+        "ort_cumle_uzunlugu": 8.5
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr041-yedi-adimda-kayip-ada.hikaye.md",
+      "fis_kodu": "HR-041",
+      "baslik": "Yedi Adımda Kayıp Ada",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3169,
+        "cumle": 348,
+        "ort_cumle_uzunlugu": 9.1
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr042-kapadokya-nin-gizli-gecidi.hikaye.md",
+      "fis_kodu": "HR-042",
+      "baslik": "Kapadokya'nın Gizli Geçidi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2149,
+        "cumle": 235,
+        "ort_cumle_uzunlugu": 9.1
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr043-kuledeki-son-isik.hikaye.md",
+      "fis_kodu": "HR-043",
+      "baslik": "Kuledeki Son Işık",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2148,
+        "cumle": 234,
+        "ort_cumle_uzunlugu": 9.2
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr044-buz-golunun-haritasi.hikaye.md",
+      "fis_kodu": "HR-044",
+      "baslik": "Buz Gölünün Haritası",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2171,
+        "cumle": 235,
+        "ort_cumle_uzunlugu": 9.2
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr045-kutuphanenin-on-ucuncu-rafi.hikaye.md",
+      "fis_kodu": "HR-045",
+      "baslik": "Kütüphanenin On Üçüncü Rafı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2215,
+        "cumle": 235,
+        "ort_cumle_uzunlugu": 9.4
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr046-bilinmeyen-posta-pulu.hikaye.md",
+      "fis_kodu": "HR-046",
+      "baslik": "Bilinmeyen Posta Pulu",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3189,
+        "cumle": 332,
+        "ort_cumle_uzunlugu": 9.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr047-kirmizi-defterin-sifresi.hikaye.md",
+      "fis_kodu": "HR-047",
+      "baslik": "Kırmızı Defterin Şifresi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3174,
+        "cumle": 335,
+        "ort_cumle_uzunlugu": 9.5
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr048-muzedeki-eksik-parca.hikaye.md",
+      "fis_kodu": "HR-048",
+      "baslik": "Müzedeki Eksik Parça",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2153,
+        "cumle": 243,
+        "ort_cumle_uzunlugu": 8.9
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr049-keloglan-ve-yedi-soz-kapisi.hikaye.md",
+      "fis_kodu": "HR-049",
+      "baslik": "Keloğlan ve Yedi Söz Kapısı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2108,
+        "cumle": 253,
+        "ort_cumle_uzunlugu": 8.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr050-yildiz-terzisinin-haritasi.hikaye.md",
+      "fis_kodu": "HR-050",
+      "baslik": "Yıldız Terzisinin Haritası",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2122,
+        "cumle": 227,
+        "ort_cumle_uzunlugu": 9.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr051-orman-saatini-kim-durdurdu.hikaye.md",
+      "fis_kodu": "HR-051",
+      "baslik": "Orman Saatini Kim Durdurdu?",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2164,
+        "cumle": 226,
+        "ort_cumle_uzunlugu": 9.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr052-sahmeran-in-bilgelik-cesmesi.hikaye.md",
+      "fis_kodu": "HR-052",
+      "baslik": "Şahmeran'ın Bilgelik Çeşmesi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3220,
+        "cumle": 367,
+        "ort_cumle_uzunlugu": 8.8
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr053-robot-sinif-baskani-secildi.hikaye.md",
+      "fis_kodu": "HR-053",
+      "baslik": "Robot Sınıf Başkanı Seçildi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2119,
+        "cumle": 239,
+        "ort_cumle_uzunlugu": 8.9
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr054-karagoz-dijital-sozlukte.hikaye.md",
+      "fis_kodu": "HR-054",
+      "baslik": "Karagöz Dijital Sözlükte",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2123,
+        "cumle": 245,
+        "ort_cumle_uzunlugu": 8.7
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr055-deyim-dedektifleri-kulubu.hikaye.md",
+      "fis_kodu": "HR-055",
+      "baslik": "Deyim Dedektifleri Kulübü",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3136,
+        "cumle": 320,
+        "ort_cumle_uzunlugu": 9.8
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr056-takimin-gorunmeyen-oyuncusu.hikaye.md",
+      "fis_kodu": "HR-056",
+      "baslik": "Takımın Görünmeyen Oyuncusu",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2143,
+        "cumle": 237,
+        "ort_cumle_uzunlugu": 9.0
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr057-sessiz-mesajlar-kulubu.hikaye.md",
+      "fis_kodu": "HR-057",
+      "baslik": "Sessiz Mesajlar Kulübü",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2149,
+        "cumle": 224,
+        "ort_cumle_uzunlugu": 9.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr058-gokyuzundeki-balonun-sirri.hikaye.md",
+      "fis_kodu": "HR-058",
+      "baslik": "Gökyüzündeki Balonun Sırrı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2111,
+        "cumle": 226,
+        "ort_cumle_uzunlugu": 9.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr059-sifreli-ari-dansi.hikaye.md",
+      "fis_kodu": "HR-059",
+      "baslik": "Şifreli Arı Dansı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2121,
+        "cumle": 228,
+        "ort_cumle_uzunlugu": 9.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr060-geri-donusum-laboratuvari.hikaye.md",
+      "fis_kodu": "HR-060",
+      "baslik": "Geri Dönüşüm Laboratuvarı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2152,
+        "cumle": 218,
+        "ort_cumle_uzunlugu": 9.9
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr061-marsa-giden-sessiz-mesaj.hikaye.md",
+      "fis_kodu": "HR-061",
+      "baslik": "Mars'a Giden Sessiz Mesaj",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3196,
+        "cumle": 337,
+        "ort_cumle_uzunlugu": 9.5
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr062-hafizasi-karisan-android.hikaye.md",
+      "fis_kodu": "HR-062",
+      "baslik": "Hafızası Karışan Android",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2152,
+        "cumle": 250,
+        "ort_cumle_uzunlugu": 8.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr063-hocanin-tersine-giden-saati.hikaye.md",
+      "fis_kodu": "HR-063",
+      "baslik": "Hoca'nın Tersine Giden Saati",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2198,
+        "cumle": 253,
+        "ort_cumle_uzunlugu": 8.7
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr064-cinili-kutunun-yolculugu.hikaye.md",
+      "fis_kodu": "HR-064",
+      "baslik": "Çinili Kutunun Yolculuğu",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2113,
+        "cumle": 244,
+        "ort_cumle_uzunlugu": 8.7
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr065-ruzgara-karsi-son-tur.hikaye.md",
+      "fis_kodu": "HR-065",
+      "baslik": "Rüzgâra Karşı Son Tur",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2125,
+        "cumle": 246,
+        "ort_cumle_uzunlugu": 8.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr066-uc-ulkenin-tek-sofrasi.hikaye.md",
+      "fis_kodu": "HR-066",
+      "baslik": "Üç Ülkenin Tek Sofrası",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 2117,
+        "cumle": 229,
+        "ort_cumle_uzunlugu": 9.2
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr067-golgeler-vadisinin-rotasi.hikaye.md",
+      "fis_kodu": "HR-067",
+      "baslik": "Gölgeler Vadisinin Rotası",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3167,
+        "cumle": 327,
+        "ort_cumle_uzunlugu": 9.7
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr068-kayip-geminin-gunlugu.hikaye.md",
+      "fis_kodu": "HR-068",
+      "baslik": "Kayıp Geminin Günlüğü",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3138,
+        "cumle": 328,
+        "ort_cumle_uzunlugu": 9.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr069-sular-altindaki-sehir.hikaye.md",
+      "fis_kodu": "HR-069",
+      "baslik": "Sular Altındaki Şehir",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3208,
+        "cumle": 322,
+        "ort_cumle_uzunlugu": 10.0
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr070-uc-dakikalik-kesinti.hikaye.md",
+      "fis_kodu": "HR-070",
+      "baslik": "Üç Dakikalık Kesinti",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3166,
+        "cumle": 340,
+        "ort_cumle_uzunlugu": 9.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr071-tarihi-yanlis-yazan-heykel.hikaye.md",
+      "fis_kodu": "HR-071",
+      "baslik": "Tarihi Yanlış Yazan Heykel",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3198,
+        "cumle": 337,
+        "ort_cumle_uzunlugu": 9.5
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr072-sinifin-gorunmez-yazari.hikaye.md",
+      "fis_kodu": "HR-072",
+      "baslik": "Sınıfın Görünmez Yazarı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3164,
+        "cumle": 374,
+        "ort_cumle_uzunlugu": 8.5
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr073-bogacin-adil-karari.hikaye.md",
+      "fis_kodu": "HR-073",
+      "baslik": "Boğaç'ın Adil Kararı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3089,
+        "cumle": 416,
+        "ort_cumle_uzunlugu": 7.4
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr074-ay-isigindaki-dort-kapi.hikaye.md",
+      "fis_kodu": "HR-074",
+      "baslik": "Ay Işığındaki Dört Kapı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3193,
+        "cumle": 373,
+        "ort_cumle_uzunlugu": 8.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr075-okulun-yanlis-anlayan-yapay-zekasi.hikaye.md",
+      "fis_kodu": "HR-075",
+      "baslik": "Okulun Yanlış Anlayan Yapay Zekâsı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3166,
+        "cumle": 335,
+        "ort_cumle_uzunlugu": 9.5
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr076-mizah-gazetesinin-ilk-sayisi.hikaye.md",
+      "fis_kodu": "HR-076",
+      "baslik": "Mizah Gazetesinin İlk Sayısı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3206,
+        "cumle": 340,
+        "ort_cumle_uzunlugu": 9.4
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr077-yarim-kalan-takim-oyunu.hikaye.md",
+      "fis_kodu": "HR-077",
+      "baslik": "Yarım Kalan Takım Oyunu",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3267,
+        "cumle": 348,
+        "ort_cumle_uzunlugu": 9.4
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr078-golun-sessiz-alarmi.hikaye.md",
+      "fis_kodu": "HR-078",
+      "baslik": "Gölün Sessiz Alarmı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3156,
+        "cumle": 355,
+        "ort_cumle_uzunlugu": 8.9
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr079-zaman-kapsulunun-sifresi.hikaye.md",
+      "fis_kodu": "HR-079",
+      "baslik": "Zaman Kapsülünün Şifresi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3191,
+        "cumle": 330,
+        "ort_cumle_uzunlugu": 9.7
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr080-robot-kentin-son-agaci.hikaye.md",
+      "fis_kodu": "HR-080",
+      "baslik": "Robot Kentin Son Ağacı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3192,
+        "cumle": 322,
+        "ort_cumle_uzunlugu": 9.9
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr081-kacis-odasinin-sahte-kapisi.hikaye.md",
+      "fis_kodu": "HR-081",
+      "baslik": "Kaçış Odasının Sahte Kapısı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3730,
+        "cumle": 428,
+        "ort_cumle_uzunlugu": 8.7
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr082-aynali-koridordaki-yedinci-iz.hikaye.md",
+      "fis_kodu": "HR-082",
+      "baslik": "Aynalı Koridordaki Yedinci İz",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3733,
+        "cumle": 389,
+        "ort_cumle_uzunlugu": 9.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr083-kayip-kodun-ardindaki-insan.hikaye.md",
+      "fis_kodu": "HR-083",
+      "baslik": "Kayıp Kodun Ardındaki İnsan",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3694,
+        "cumle": 379,
+        "ort_cumle_uzunlugu": 9.7
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr084-cevrilmeyen-son-sayfa.hikaye.md",
+      "fis_kodu": "HR-084",
+      "baslik": "Çevrilmeyen Son Sayfa",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3770,
+        "cumle": 408,
+        "ort_cumle_uzunlugu": 9.2
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr085-firtina-oncesi-son-sefer.hikaye.md",
+      "fis_kodu": "HR-085",
+      "baslik": "Fırtına Öncesi Son Sefer",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3739,
+        "cumle": 417,
+        "ort_cumle_uzunlugu": 9.0
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr086-gunes-dagi-haritasi.hikaye.md",
+      "fis_kodu": "HR-086",
+      "baslik": "Güneş Dağının Haritası",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3670,
+        "cumle": 399,
+        "ort_cumle_uzunlugu": 9.2
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr087-buzulun-kalbindeki-kayit.hikaye.md",
+      "fis_kodu": "HR-087",
+      "baslik": "Buzulun Kalbindeki Kayıt",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3708,
+        "cumle": 394,
+        "ort_cumle_uzunlugu": 9.4
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr088-sahmeranin-sakladigi-ikinci-soru.hikaye.md",
+      "fis_kodu": "HR-088",
+      "baslik": "Şahmeran'ın Sakladığı İkinci Soru",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3653,
+        "cumle": 420,
+        "ort_cumle_uzunlugu": 8.7
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr089-beyrekin-sozunun-agirligi.hikaye.md",
+      "fis_kodu": "HR-089",
+      "baslik": "Beyrek'in Sözünün Ağırlığı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3770,
+        "cumle": 414,
+        "ort_cumle_uzunlugu": 9.1
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr090-gece-kutuphanesinin-nobetcileri.hikaye.md",
+      "fis_kodu": "HR-090",
+      "baslik": "Gece Kütüphanesinin Nöbetçileri",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3704,
+        "cumle": 415,
+        "ort_cumle_uzunlugu": 8.9
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr091-ankanin-kayip-rotasi.hikaye.md",
+      "fis_kodu": "HR-091",
+      "baslik": "Anka'nın Kayıp Rotası",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3729,
+        "cumle": 411,
+        "ort_cumle_uzunlugu": 9.1
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr092-denizalti-09dan-mesaj.hikaye.md",
+      "fis_kodu": "HR-092",
+      "baslik": "Denizaltı 09'dan Mesaj",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3721,
+        "cumle": 420,
+        "ort_cumle_uzunlugu": 8.9
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr093-sahte-ay-fotografi.hikaye.md",
+      "fis_kodu": "HR-093",
+      "baslik": "Sahte Ay Fotoğrafı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3659,
+        "cumle": 405,
+        "ort_cumle_uzunlugu": 9.0
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr099-iki-takim-tek-proje.hikaye.md",
+      "fis_kodu": "HR-099",
+      "baslik": "İki Takım, Tek Proje",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3664,
+        "cumle": 481,
+        "ort_cumle_uzunlugu": 7.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr100-son-turda-yon-degistirmek.hikaye.md",
+      "fis_kodu": "HR-100",
+      "baslik": "Son Turda Yön Değiştirmek",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3716,
+        "cumle": 464,
+        "ort_cumle_uzunlugu": 8.0
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr101-kayip-arsivin-yedi-tanigi.hikaye.md",
+      "fis_kodu": "HR-101",
+      "baslik": "Kayıp Arşivin Yedi Tanığı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4250,
+        "cumle": 482,
+        "ort_cumle_uzunlugu": 8.8
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr102-golgenin-sahibi-kim.hikaye.md",
+      "fis_kodu": "HR-102",
+      "baslik": "Gölgenin Sahibi Kim?",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4216,
+        "cumle": 468,
+        "ort_cumle_uzunlugu": 9.0
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr103-kutuphanedeki-son-sifre.hikaye.md",
+      "fis_kodu": "HR-103",
+      "baslik": "Kütüphanedeki Son Şifre",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4185,
+        "cumle": 449,
+        "ort_cumle_uzunlugu": 9.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr104-sifirinci-katin-sirri.hikaye.md",
+      "fis_kodu": "HR-104",
+      "baslik": "Sıfırıncı Katın Sırrı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4172,
+        "cumle": 442,
+        "ort_cumle_uzunlugu": 9.4
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr105-kuzey-ruzgarinin-pesinde.hikaye.md",
+      "fis_kodu": "HR-105",
+      "baslik": "Kuzey Rüzgârının Peşinde",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4163,
+        "cumle": 456,
+        "ort_cumle_uzunlugu": 9.1
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr106-col-haritasindaki-bosluk.hikaye.md",
+      "fis_kodu": "HR-106",
+      "baslik": "Çöl Haritasındaki Boşluk",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4233,
+        "cumle": 454,
+        "ort_cumle_uzunlugu": 9.3
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr107-seksen-gunde-bir-durak.hikaye.md",
+      "fis_kodu": "HR-107",
+      "baslik": "Seksen Günde Bir Durak",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4161,
+        "cumle": 444,
+        "ort_cumle_uzunlugu": 9.4
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr108-dumrulun-zor-sorusu.hikaye.md",
+      "fis_kodu": "HR-108",
+      "baslik": "Dumrul'un Zor Sorusu",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4068,
+        "cumle": 565,
+        "ort_cumle_uzunlugu": 7.2
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr109-karanliktaki-filin-bes-yorumu.hikaye.md",
+      "fis_kodu": "HR-109",
+      "baslik": "Karanlıktaki Filin Beş Yorumu",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4162,
+        "cumle": 485,
+        "ort_cumle_uzunlugu": 8.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr110-yitik-zamanin-haritacilari.hikaye.md",
+      "fis_kodu": "HR-110",
+      "baslik": "Yitik Zamanın Haritacıları",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 3586,
+        "cumle": 460,
+        "ort_cumle_uzunlugu": 7.8
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr111-cam-sehrin-kirik-yasasi.hikaye.md",
+      "fis_kodu": "HR-111",
+      "baslik": "Cam Şehrin Kırık Yasası",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4060,
+        "cumle": 473,
+        "ort_cumle_uzunlugu": 8.6
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr112-2055-hatirlayan-sehir.hikaye.md",
+      "fis_kodu": "HR-112",
+      "baslik": "2055: Hatırlayan Şehir",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4103,
+        "cumle": 452,
+        "ort_cumle_uzunlugu": 9.1
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr113-yorunge-disi.hikaye.md",
+      "fis_kodu": "HR-113",
+      "baslik": "Yörünge Dışı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4115,
+        "cumle": 471,
+        "ort_cumle_uzunlugu": 8.7
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr114-dunyanin-son-kutuphanesi.hikaye.md",
+      "fis_kodu": "HR-114",
+      "baslik": "Dünyanın Son Kütüphanesi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 4059,
+        "cumle": 443,
+        "ort_cumle_uzunlugu": 9.2
+      },
+      "sorunlar": []
+    },
+    {
+      "dosya": "hr121-hupo-yankinin-karisan-sozcukleri.hikaye.md",
+      "fis_kodu": "HR-121",
+      "baslik": "Hupo ve Karışan Yankı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 211,
+        "cumle": 33,
+        "ort_cumle_uzunlugu": 6.4
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr122-anne-tas-koprunun-sirri.hikaye.md",
+      "fis_kodu": "HR-122",
+      "baslik": "Taş Köprünün Sırrı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 240,
+        "cumle": 30,
+        "ort_cumle_uzunlugu": 8.0
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr123-baba-meydandaki-kayip-heykel.hikaye.md",
+      "fis_kodu": "HR-123",
+      "baslik": "Meydandaki Kayıp Heykel",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 271,
+        "cumle": 33,
+        "ort_cumle_uzunlugu": 8.2
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr124-arac-karli-gecenin-son-seferi.hikaye.md",
+      "fis_kodu": "HR-124",
+      "baslik": "Karlı Gecenin Son Seferi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 332,
+        "cumle": 42,
+        "ort_cumle_uzunlugu": 7.9
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr125-hupo-kaybolan-ritim.hikaye.md",
+      "fis_kodu": "HR-125",
+      "baslik": "Hupo ve Kaybolan Ritim",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 199,
+        "cumle": 25,
+        "ort_cumle_uzunlugu": 8.0
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr126-anne-yagmur-bahcesinin-plani.hikaye.md",
+      "fis_kodu": "HR-126",
+      "baslik": "Annem ve Yağmur Bahçesinin Planı",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 226,
+        "cumle": 26,
+        "ort_cumle_uzunlugu": 8.7
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr127-baba-ters-cevrilen-fotograf.hikaye.md",
+      "fis_kodu": "HR-127",
+      "baslik": "Babam ve Ters Çevrilen Fotoğraf",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 238,
+        "cumle": 27,
+        "ort_cumle_uzunlugu": 8.8
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr128-arac-sisli-istasyonun-isiklari.hikaye.md",
+      "fis_kodu": "HR-128",
+      "baslik": "Araç ve Sisli İstasyonun Işıkları",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 294,
+        "cumle": 30,
+        "ort_cumle_uzunlugu": 9.8
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr129-hupo-renkli-isaretler.hikaye.md",
+      "fis_kodu": "HR-129",
+      "baslik": "Hupo ve Renkli İşaretler",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 186,
+        "cumle": 22,
+        "ort_cumle_uzunlugu": 8.5
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr130-anne-saskinlik-cetvel.hikaye.md",
+      "fis_kodu": "HR-130",
+      "baslik": "Annem ve Şaşırtan Cetvel",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 211,
+        "cumle": 27,
+        "ort_cumle_uzunlugu": 7.8
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr131-baba-kayip-basligin-izinde.hikaye.md",
+      "fis_kodu": "HR-131",
+      "baslik": "Babam ve Kayıp Başlığın İzinde",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 260,
+        "cumle": 28,
+        "ort_cumle_uzunlugu": 9.3
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    },
+    {
+      "dosya": "hr132-arac-iki-zaman-cizelgesi.hikaye.md",
+      "fis_kodu": "HR-132",
+      "baslik": "Araç ve İki Zaman Çizelgesi",
+      "durum": "taslak",
+      "istatistik": {
+        "kelime": 284,
+        "cumle": 30,
+        "ort_cumle_uzunlugu": 9.5
+      },
+      "sorunlar": [
+        {
+          "kod": "metadata_eksik",
+          "alanlar": [
+            "okuma_bandi",
+            "dunya_tipi",
+            "yetiskin_uygun",
+            "tarih"
+          ]
+        }
+      ]
+    }
+  ]
+}

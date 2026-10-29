@@ -1,0 +1,20 @@
+{
+ "model": "gemini-3.8-flash",
+ "aile": "gemini",
+ "sonuc": [
+  {
+   "no": 1,
+   "cevap": 3,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": ""
+  },
+  {
+   "no": 2,
+   "cevap": 0,
+   "tek_dogru": true,
+   "sinif_uygun": true,
+   "sorun": "“Dost” ve “arkadaş” sözcükleri tam eş anlamlı değil, yakın anlamlı sözcüklerdir."
+  }
+ ]
+}

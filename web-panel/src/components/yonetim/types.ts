@@ -416,6 +416,29 @@ export interface Musteri360Ozet {
   kaynaklar: Array<{ kaynak: string; adet: number }>;
 }
 
+/**
+ * admin_musteri_360_detay().abonelik: growth_customer_360.subscription (camelCase jsonb).
+ * Çekirdek abonelikte (source 'core') plan = plan_kod ve planName dolu; projeksiyonda (source 'projection') planName yoktur.
+ */
+export interface Musteri360Abonelik {
+  source: "core" | "projection";
+  coreSubscriptionId: string | null;
+  status: string | null;
+  plan: string | null;
+  planName?: string | null;
+  billingCycle?: string | null;
+  startedAt: string | null;
+  endsAt: string | null;
+  nextRenewalAt?: string | null;
+  trialStartedAt?: string | null;
+  trialEndsAt?: string | null;
+  autoRenew?: boolean | null;
+  cancelledAt?: string | null;
+  cancelReason?: string | null;
+  provider?: string | null;
+  priceKurus?: number | null;
+}
+
 /** admin_musteri_360_detay() dönüşü — RPC Türkçe anahtarlar döner. */
 export interface Musteri360Detay {
   musteri: {
@@ -474,7 +497,7 @@ export interface Musteri360Detay {
     is_default: boolean;
     created_at: string;
   }>;
-  abonelik: Record<string, unknown> | null;
+  abonelik: Musteri360Abonelik | null;
   abonelik_projeksiyonu: Array<Record<string, unknown>>;
   islemler: Array<{
     id: string;
@@ -483,7 +506,7 @@ export interface Musteri360Detay {
     currency: string;
     status: string;
     occurred_at: string;
-    description: string | null;
+    payment_type: string | null;
   }>;
   olaylar: Array<{
     id: string;
@@ -660,6 +683,31 @@ export interface GrowthTemplate {
 
 export interface GrowthTemplateList {
   rows: GrowthTemplate[];
+  total: number;
+}
+
+/** admin_mesaj_gunlugu_listele() satır şekli (growth_message_log). Kişisel veri maskeli veya yok. */
+export interface GrowthMessageLog {
+  id: string;
+  zaman: string;
+  created_at: string;
+  sent_at: string | null;
+  channel: string; // email, sms, push, in_app, whatsapp
+  status: string; // queued, sent, failed, skipped (şemada kısıt yok)
+  error: string | null;
+  campaign_id: string | null;
+  kampanya_adi: string | null;
+  journey_id: string | null;
+  journey_adi: string | null;
+  hane_id: string | null;
+  hane_eposta_maskeli: string | null;
+  hane_telefon_maskeli: string | null;
+  /** İzin anlık görüntüsünün özeti; null: bilinmiyor. */
+  izin_verildi: boolean | null;
+}
+
+export interface GrowthMessageLogList {
+  rows: GrowthMessageLog[];
   total: number;
 }
 

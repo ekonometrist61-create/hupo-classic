@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Bulanık bir mektubun sözcüğü “kilit” mi, “kilim” mi? Duru ve Kerem gizli oda yerine bağlamı, kanıtı ve emanetin anlamını araştırır."
+tanitim: "Bulanık bir mektubun sözcüğü “kilit” mi, “kilim” mi? {kahraman} ile {yoldas:yalin|bir arkadaş} gizli oda yerine bağlamı, kanıtı ve emanetin anlamını araştırır."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -33,21 +33,21 @@ etiketler:
     - {id: deyim_hr103, tur: idiom, etiket: "İç çekmek", yuva: hr103_ic_cekti, islev: application}
     - {id: kavram_hr103, tur: concept, etiket: "Okuma önerisi ile günümüz Türkçesiyle açıklamayı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Öğrenciler mektubun son satırındaki bulanık sözcüğü hangi üç biçimde okudu?", secenekler: [{id: A, metin: "kilit, kilim ve kılıç"}, {id: B, metin: "kapı, kutu ve kilim"}, {id: C, metin: "kilit, kitap ve kılıç"}, {id: D, metin: "kilim, kilit ve anahtar"}], dogru: A, aciklama: "Öğrenciler sözcüğü kilit, kilim ve kılıç olarak okudu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 12, metin: "Bu metne göre emanet kavramı neyi de kapsar?", secenekler: [{id: A, metin: "Yalnızca bir nesneyi başkasına bırakmayı"}, {id: B, metin: "Nesnenin yanı sıra sorumluluğu da aktarmayı"}, {id: C, metin: "Bir nesneyi kalıcı olarak satın almayı"}, {id: D, metin: "Bir sırrı herkese açıklamayı"}], dogru: B, aciklama: "Metne göre emanet, nesneyi bırakmanın yanında onun sorumluluğunu da aktarmaktır."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 13, metin: "Duru'nun bu sözüne göre netlik neyi garanti etmez?", secenekler: [{id: A, metin: "Görüntünün kolay okunmasını"}, {id: B, metin: "Görüntünün doğru olduğunu ve doğru yorumlandığını"}, {id: C, metin: "Görüntünün renkli olmasını"}, {id: D, metin: "Görüntünün tarihini"}], dogru: B, aciklama: "Net bir görüntü, doğru olduğu ya da doğru yorumlandığı anlamına gelmez."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "“Bağlamı bilmiyoruz” sözü ne anlatır?", secenekler: [{id: A, metin: "Sözcüğün kullanıldığı çevreyi ve anlam ilişkisini bilmediklerini"}, {id: B, metin: "Mektubun yazarını bilmediklerini"}, {id: C, metin: "Mektubun kâğıdını bilmediklerini"}, {id: D, metin: "Mektubun ne zaman yazıldığını kesin olarak bildiklerini"}], dogru: A, aciklama: "Bağlam, sözcüğün hangi çevrede ve hangi anlamda kullanıldığını ifade eder."}
-  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 29, metin: "Bu cümleye göre bir okuma önerisini değerlendirmenin en doğru yolu nedir?", secenekler: [{id: A, metin: "Önerinin önemli olduğunu kabul etmek"}, {id: B, metin: "Önerinin gerekçesini incelemek ve neyi bilmediğimizi görmek"}, {id: C, metin: "En çok beğenilen öneriyi seçmek"}, {id: D, metin: "Önerinin yazarına bakarak karar vermek"}], dogru: B, aciklama: "Önerinin gerekçesi incelenirse hangi bilgilerin eksik olduğu da görülür."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Öğrenciler mektubun son satırındaki bulanık sözcüğü hangi üç biçimde okudu?", secenekler: [{id: A, metin: "kapı, kutu ve kilim"}, {id: B, metin: "kilit, kilim ve kılıç"}, {id: C, metin: "kilit, kitap ve kılıç"}, {id: D, metin: "kilim, kilit ve anahtar"}], dogru: B, aciklama: "Öğrenciler sözcüğü kilit, kilim ve kılıç olarak okudu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 12, metin: "Bu metne göre emanet kavramı neyi de kapsar?", secenekler: [{id: A, metin: "Yalnızca bir nesneyi başkasına bırakmayı"}, {id: B, metin: "Nesnenin yanı sıra sorumluluğu da aktarmayı"}, {id: C, metin: "Bir nesneyi kalıcı olarak satın almayı"}, {id: D, metin: "Ortak bir eşyayı kendi malı gibi kullanmayı"}], dogru: B, aciklama: "Metne göre emanet, nesneyi bırakmanın yanında onun sorumluluğunu da aktarmaktır."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 13, metin: "Kahramanın bu sözüne göre netlik neyi garanti etmez?", secenekler: [{id: A, metin: "Görüntünün ilk bakışta kolay okunmasını"}, {id: B, metin: "Görüntünün renkli ve canlı görünmesini"}, {id: C, metin: "Görüntünün çekildiği tarihi göstermesini"}, {id: D, metin: "Görüntünün doğru olduğunu ve doğru yorumlandığını"}], dogru: D, aciklama: "Net bir görüntü, doğru olduğu ya da doğru yorumlandığı anlamına gelmez."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 3, metin: "“Bağlamı bilmiyoruz” sözü ne anlatır?", secenekler: [{id: A, metin: "Mektubu kimin yazdığını ve yazarın niyetini bilmediklerini"}, {id: B, metin: "Mektubun hangi kâğıda ve mürekkeple yazıldığını bilmediklerini"}, {id: C, metin: "Sözcüğün kullanıldığı çevreyi ve anlam ilişkisini bilmediklerini"}, {id: D, metin: "Mektubun ne zaman yazıldığını kesin olarak bildiklerini"}], dogru: C, aciklama: "Bağlam, sözcüğün hangi çevrede ve hangi anlamda kullanıldığını ifade eder."}
+  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 29, metin: "Kahramanın söylediği “Bir öneri doğru olmayabilir, ama onu gerekçesiyle incelediğimizde neyi bilmediğimizi görürüz.” cümlesine göre bir okuma önerisini değerlendirmenin en doğru yolu nedir?", secenekler: [{id: A, metin: "Önerinin gerekçesini incelemek ve neyi bilmediğimizi görmek"}, {id: B, metin: "Önerinin önemli bir bilgi içerdiğini baştan kabul etmek"}, {id: C, metin: "Önerileri arasından en çok beğenilen olanı seçmek"}, {id: D, metin: "Önerinin yazarının ünlü biri olmasına bakarak karar vermek"}], dogru: A, aciklama: "Önerinin gerekçesi incelenirse hangi bilgilerin eksik olduğu da görülür."}
 deyim_cumleleri:
   hr103_ic_cekti: "{yoldas:yalin|bir arkadaş} iç çekti."
 ---
 @omurga
 Kütüphanenin dijitalleştirme odasında toz kokusu yoktu. Eski belgelerin durduğu kutular, sıcaklık ve nemin izlendiği ayrı bir bölümde korunuyordu. Sekizinci sınıf öğrencisi {kahraman}, eski kâğıtları hayal ettiğinden daha az romantik bulmuştu. Beyaz eldivenler, tarama ışıkları, kayıt numaraları ve sürekli tekrar edilen “Orijinale dokunma” uyarıları vardı. Yine de ekranın üzerinde yüz yıl öncesinden kalma bir mektubun görüntüsü belirdiğinde nefesi kesildi.
 
-Mektubun son satırındaki iki sözcük bulanıktı. Öğrencilerden biri “kilit” okudu. Diğeri “kilim” dedi. Üçüncü öğrenci satırın başındaki işaretlerin “kılıç” kelimesine benzediğini iddia etti. Cümlenin devamında eski evin deposundan söz ediliyordu. {kahraman:ilgi} arkadaşı {yoldas:yalin|bir arkadaş} hemen heyecanlandı. “Kilitse gizli bir oda olabilir,” dedi. “Kılıçsa aile hazinesi!”
+Mektubun son satırındaki iki sözcük bulanıktı. Öğrencilerden biri “kilit” okudu. Diğeri “kilim” dedi. Üçüncü öğrenci satırın başındaki işaretlerin “kılıç” kelimesine benzediğini iddia etti. Cümlenin devamında eski evin deposundan söz ediliyordu. {yoldas:yalin|bir arkadaş} hemen heyecanlandı. “Kilitse gizli bir oda olabilir,” dedi. “Kılıçsa aile hazinesi!”
 
 Kütüphane görevlisi Nevin Hanım, bilgisayarın başından kalktı. “Önce bir şey hatırlayalım,” dedi. “Bu belgeyi bize bağışlayan aile, yerel tarih çalışması için izin verdi. Kişisel bilgileri paylaşmayacağız. Ayrıca elimizdeki tarama, mektubun tamamını göstermiyor.” {kahraman} dosyanın sağ kenarının hafifçe kesildiğini fark etti. Belki de en önemli sözcükler kadrajın dışında kalmıştı.
 ---
@@ -189,7 +189,7 @@ Bu konuşmadan sonra sergide küçük bir yazı köşesi açıldı. Ziyaretçile
 @omurga
 Kütüphanedeki sergi günü yaklaştığında ekip bir pano hazırladı. En üstte büyük harflerle “Son Şifre” yazıyordu. Altında ise küçük bir açıklama vardı: Bu gerçek bir şifre olmayabilir; doğru okumak için kaynakları karşılaştırdığımız bir metindir. Bir yanda ilk tarama, öte yanda daha net ikinci belge bulunuyordu. Yanlarında uzman görüşünün özeti ve kullanılan yöntemin adımları yer alıyordu.
 
-Ziyaretçilerden biri “Peki o kilim nerede?” diye sordu. Nevin Hanım, aile belgelerinde örneklerden söz edildiğini ama bugün nerede bulunduklarını bilmediklerini açıkladı. İzin verilmemiş özel depolarda arama yapılmayacağını, bulundukları varsayılan evlerin konumlarının sergide duyurulmayacağını söyledi. {kahraman} bu sınırlardan memnundu. Merak etmek, insanların mahremiyetini yok saymak anlamına gelmiyordu.
+Ziyaretçilerden biri “Peki o kilim nerede?” diye sordu. Nevin Hanım, aile belgelerinde örneklerden söz edildiğini ama bugün nerede bulunduklarını bilmediklerini açıkladı. İzin verilmemiş özel depolarda arama yapılmayacağını, bulunduğu sanılan evlerin konumlarının sergide duyurulmayacağını söyledi. {kahraman} bu sınırlardan memnundu. Merak etmek, insanların mahremiyetini yok saymak anlamına gelmiyordu.
 
 {yoldas:yalin|bir arkadaş} ziyaretçilerin sorularını yanıtlarken farklı bir heyecan hissetti. Buldukları şey yalnızca “kilim” sözcüğü değildi. Yanlış bir okumayla nasıl kolayca başka bir hikâye kurulabileceğini de göstermişlerdi. İlk gün “kilit” diye duyduğu sözcüğe şimdi gülüyordu. “İyi ki hemen gizli oda ilan etmemişiz,” dedi {kahraman:yonelme}. {kahraman}, “Yoksa kendi yazdığımız hikâyeye inanıp gerçek mektupları kaçırırdık,” diye cevap verdi.
 ---
@@ -217,7 +217,7 @@ Kütüphane kapanırken Nevin Hanım son dosyayı yerine koydu. {kahraman} kapı
 
 Eve giderken {yoldas:yalin|bir arkadaş}, mektubun kopyasından hazırladıkları çalışma kartını çantasından çıkardı. Kartta üç farklı okunuş önerisi, her önerinin dayandığı harf şekilleri ve bağlam notları bulunuyordu. Önceki haftalarda yalnızca son kelimeyi bulmak istiyordu; şimdi yanlış tahminlerin nasıl oluştuğunu görmek de ilgisini çekiyordu. {kahraman} kartın arkasına “Bir sözcüğü anlamadan bütün hikâyeyi kurma” yazdı. {yoldas:yalin|bir arkadaş} güldü. “Bunu ödev kuralı yapalım.”
 
-Ertesi ders Türkçe öğretmenleri tahtaya “emanet” kelimesini yazdı. Çocuklardan sözcüğü farklı cümlelerde kullanmalarını istedi. Biri ödünç bırakılan bir kitaptan, diğeri bakımı üstlenilen bir hayvandan, üçüncüsü de gelecek kuşaklara aktarılan kültürel mirastan söz etti. {kahraman} son örneğin arşivdeki mektupla bağlantısını kurdu. Bir sözcük, yalnızca taşınan nesneyi değil, taşınan sorumluluğu da anlatabilirdi.
+Ertesi ders Türkçe öğretmeni tahtaya “emanet” kelimesini yazdı. Çocuklardan sözcüğü farklı cümlelerde kullanmalarını istedi. Biri ödünç bırakılan bir kitaptan, diğeri bakımı üstlenilen bir hayvandan, üçüncüsü de gelecek kuşaklara aktarılan kültürel mirastan söz etti. {kahraman} son örneğin arşivdeki mektupla bağlantısını kurdu. Bir sözcük, yalnızca taşınan nesneyi değil, taşınan sorumluluğu da anlatabilirdi.
 ---
 @omurga
 Öğretmen ardından “Bağlamı değiştirince anlam nasıl değişti?” diye sordu. {kahraman} kısa bir cevap vermek yerine cümleleri yan yana koydu. Her örnekte güven, koruma veya sorumluluk gibi ortak bir düşünce vardı; fakat gerçekleşen eylemler farklıydı. Bu farkı görünür kılmak, eski belgedeki yorumlarını da daha dikkatli değerlendirmelerine yardımcı olmuştu.

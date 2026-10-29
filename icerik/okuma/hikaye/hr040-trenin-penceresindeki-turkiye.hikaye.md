@@ -32,13 +32,13 @@ etiketler:
     - {id: deyim_hr040, tur: idiom, etiket: "Misafire yer açmak", yuva: hr040_misafire_yer, islev: application}
     - {id: kavram_hr040, tur: concept, etiket: "Benzer ve farklı yanlar; yaşayan gelenek", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "İlk durakta Defne hangi yemeği gördü?", secenekler: [{id: A, metin: "Çibörek"}, {id: B, metin: "Pilav"}, {id: C, metin: "Etli ekmek"}, {id: D, metin: "Baklava"}], dogru: A, aciklama: "İlk durakta Banu teyze sofraya çibörek koydu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Banu teyze'ye göre yemekler neden değişir?", secenekler: [{id: A, metin: "İnsanlarla birlikte bir yerden başka yere taşınırken"}, {id: B, metin: "Ateşte kaldıkları için"}, {id: C, metin: "Tarlada büyüdükleri için"}, {id: D, metin: "Hiç değişmezler"}], dogru: A, aciklama: "Yemekler, insanlarla birlikte yolculuk ederken yeni biçimler alır."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 6, metin: "Defne'ye göre sofralarda ortak olan şey nedir?", secenekler: [{id: A, metin: "Misafire yer açmak"}, {id: B, metin: "Aynı yemeği yemek"}, {id: C, metin: "Aynı şehirde olmak"}, {id: D, metin: "Aynı kalemi kullanmak"}], dogru: A, aciklama: "Defne, her yerde misafire yer açıldığını fark etti."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 4, metin: "Metinde geçen baharat ne demektir?", secenekler: [{id: A, metin: "Yemeklere tat ve koku veren bitkisel tozlar ya da çeşniler"}, {id: B, metin: "Bir çeşit çiçek"}, {id: C, metin: "Renkli bir kumaş"}, {id: D, metin: "Bir pazarın adı"}], dogru: A, aciklama: "Baharat, yemeklere tat ve koku veren maddelerdir."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "İlk durakta kahraman hangi yemeği gördü?", secenekler: [{id: A, metin: "Çibörek"}, {id: B, metin: "Pilav"}, {id: C, metin: "Etli ekmek"}, {id: D, metin: "Baklava"}], dogru: A, aciklama: "İlk durakta ev sahibi sofraya çibörek koydu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 2, metin: "Ev sahibine göre yemekler neden değişir?", secenekler: [{id: A, metin: "Ateşte kaldıkları için"}, {id: B, metin: "Tarlada büyüdükleri için"}, {id: C, metin: "Hiç değişmezler"}, {id: D, metin: "İnsanlarla birlikte bir yerden başka yere taşınırken"}], dogru: D, aciklama: "Yemekler, insanlarla birlikte yolculuk ederken yeni biçimler alır."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 6, metin: "Kahramana göre sofralarda ortak olan şey nedir?", secenekler: [{id: A, metin: "Aynı yemeği yemek"}, {id: B, metin: "Misafire yer açmak"}, {id: C, metin: "Aynı şehirde olmak"}, {id: D, metin: "Aynı kalemi kullanmak"}], dogru: B, aciklama: "Kahraman, her yerde misafire yer açıldığını fark etti."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 4, metin: "Metinde geçen baharat ne demektir?", secenekler: [{id: A, metin: "Bir çeşit çiçek"}, {id: B, metin: "Renkli bir kumaş"}, {id: C, metin: "Yemeklere tat ve koku veren bitkisel tozlar ya da çeşniler"}, {id: D, metin: "Bir pazarın adı"}], dogru: C, aciklama: "Baharat, yemeklere tat ve koku veren maddelerdir."}
 deyim_cumleleri:
   hr040_misafire_yer: "Ama sofralarda ortak olan bir şey de var: Misafire yer açmak.\""
 ---
@@ -66,7 +66,7 @@ Mehmet amca, "Eskiden akşam yemekleri ailece uzun sürerdi," dedi. "Herkes gün
 
 {kahraman}, "Biz de bazen telefonu bir kenara koyup konuşuyoruz," diye cevap verdi. "Demek bazı gelenekler bugün de devam ediyor."
 
-Trenin üçüncü durağı Gaziantep'ti. Burada teyzesi Ayla, onlara renkli bir pazar gezdirdi. {kelime:hr040_baharat} kokusu birbirine karışıyordu. {kahraman} tezgâhlardaki ürünlerin adlarını not etti. Bir dükkânda {kelime:hr040_bakir} işleyen ustayı izledi.
+Trenin üçüncü durağı Gaziantep'ti. Burada Ayla teyze, onlara renkli bir pazar gezdirdi. {kelime:hr040_baharat} kokusu birbirine karışıyordu. {kahraman} tezgâhlardaki ürünlerin adlarını not etti. Bir dükkânda {kelime:hr040_bakir} işleyen ustayı izledi.
 
 "Bu desenleri yapmayı kim öğretti?" diye sordu.
 

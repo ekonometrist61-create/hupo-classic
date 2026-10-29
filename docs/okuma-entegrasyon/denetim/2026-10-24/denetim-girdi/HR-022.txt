@@ -1,0 +1,77 @@
+# HR-022 · Saat Kulesi Neden Durdu? · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=12deb88b-2219-4b0b-9652-05b81e1e368a, surum_no=3, sha256=1434b5b1c859ab36096c37a2f6f8b7a44e6819ac0280788cdb2c76d7f88849b1
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=3) denetlenmiştir.
+
+## Künye
+Slug: hr022-saat-kulesi-neden-durdu | Tür: gizem | Konu: saat | Dünya: gercekci
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Meydanın saat kulesi öğlen çalmadı ve ibreler yanlış yerde. Zamanı kim şaşırttı?
+İzinli türler: ben, arkadas
+Değer anahtarları (sürüm): D16, D5 | maarif.ana_deger: D16
+Etiketler: ana_sinif=3, okuma_zorlugu=2, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: gizem, guvenlik, kesif | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: yelkovan_hr022 (lexeme, first_hint: yelkovan); bakim_hr022 (lexeme, application: bakım); olcum_hr022 (lexeme, application: ölçüm); kavram_hr022 (concept, application: Zaman sıralaması ve ölçme)
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":7,"simge_sayisi":9,"kelime_sayisi":369,"tahmini_sure_dk":5,"yoldas_yer_sayisi":6,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Meydandaki saat[İKON clock] kulesi her öğlen on ikide çalardı. O gün çalmadı. Üstelik akrep on bir ile on iki arasındaydı, [KELİME yuva=pa_yelkovan] da altıyı gösteriyordu. [KAHRAMAN hal=yalin], "Saat on bir buçukta kalmış!" dedi. Arkadaşı [YOLDAŞ hal=yalin yedek=Hupo] saatine baktı: "Ama şimdi on iki on. Kule kırk dakikadır geride." İkisi saat kulesine yaklaşmak istedi, fakat çevresinde bakım için ayrılmış bir alan vardı. Bunun yerine belediyenin bilgi noktasına gittiler.
+--- Sayfa 2 ---
+Görevli, kulenin durduğu haberinin öğleden önce, on bir buçuk sularında geldiğini söyledi. [KAHRAMAN hal=yalin] hemen "Demek ki arıza öğlende başlamamış," diye düşündü. [YOLDAŞ hal=yalin yedek=Hupo] defterine üç zamanı yazdı: "On bir otuz, on iki, on iki on." "Birinci zaman kulenin durduğu saat[İKON clock]. İkinci zaman çalması gereken saat. Üçüncü zaman bizim baktığımız saat," dedi. [KAHRAMAN hal=yalin] sıralamayı dikkatle kontrol etti. "Eğer bir saat durmuşsa gerçek zamanı ondan öğrenemeyiz," diye ekledi. [İŞARET kod=ipucu]
+--- Sayfa 3 ---
+O sırada meydanın karşısındaki çiçekçi, kuleden gelen sesleri özlediğini söyledi. "Her gün tam öğlen dükkânın önünde kısa bir mola verirdim. Bugün saati şaşırdım," dedi. [KAHRAMAN hal=yalin], duvardaki başka bir saati gösterdi; çiçekçinin telefonu da doğru[İKON check] saati gösteriyordu. İkisi birlikte[İKON friends] saatleri karşılaştırınca farklı araçların aynı işi yapabildiğini konuştular.
+--- Sayfa 4 ---
+[YOLDAŞ hal=yalin yedek=Hupo], "Kule öğlenden başka zamanlarda da çalar mı?" diye sordu. Çiçekçi omuz silkti. "Ben hep öğlen duydum, gerisini bilmem." [KAHRAMAN hal=yalin], bilmediği kısmı defterinde boş bıraktı; uydurmak yerine sonra soracaktı.
+--- Sayfa 5 ---
+Bir süre sonra bakım ustası Fatma Hanım geldi. Çocuklar, kuleye girmeden ona gördüklerini anlattılar. Usta bir güvenlik kapısından geçip içerideki mekanizmayı inceledi. Çarkların arasında küçük bir parça gevşemişti. Parçayı uygun aletlerle sağlamlaştırdı, sonra saati doğru[İKON check] zamana ayarladı. [YOLDAŞ hal=yalin yedek=Hupo], "Kule neden[İKON question] durmuş?" diye sordu. Fatma Hanım, "Bazen büyük makineleri küçük parçalar durdurur," dedi. "Bu yüzden düzenli [KELİME yuva=pa_bakim] gerekir."
+--- Sayfa 6 ---
+[KAHRAMAN hal=yalin] meydandaki iki farklı saatin bir an için aynı zamanı göstermediğini fark etti. "Hangisine güveneceğiz?" diye sordu. "Doğru[İKON check] çalışan ve güncellenen kaynakları karşılaştıracağız," dedi usta. "Bir [KELİME yuva=pa_olcum] yanlış olabilir; onu başka bilgilerle kontrol ederiz." O akşam kule yeniden çaldı. [YOLDAŞ hal=yalin yedek=Hupo] ilk sesi duyduğunda sevinçten zıplayacaktı ama etraftaki güvercinler ürkmesin diye durdu.
+--- Sayfa 7 ---
+[KAHRAMAN hal=yalin] defterine son bir satır ekledi: "Önce gözlemledik, sonra bildirdik, en sonunda nedeni öğrendik." Eve dönerken [YOLDAŞ hal=yalin yedek=Hupo] şakalaştı: "Saat[İKON clock] kulede durmuş, bizim merakımız hiç durmamış!" [KAHRAMAN hal=yalin] gülerek, "Zaten soruları sormasaydık çarkın ne işe yaradığını öğrenemezdik," dedi. Meydan her zamanki gibi kalabalıktı. Bu kez kulağa sıradan gelen saat sesi, ikisine küçük bir keşfi hatırlatıyordu.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=C
+  Metin: Saat kulesi hangi saatte durmuştu?
+  A) On iki
+  B) On iki on
+  C) On bir buçuk
+  Açıklama: Kulenin akrebi on bir ile on iki arasında, yelkovanı altıyı gösteriyordu; saat on bir buçukta kalmıştı.
+s2 [cikarim] dayanak_sayfa=2 doğru=A
+  Metin: Görevli haberin öğleden önce geldiğini söyleyince çocuk hangi sonuca vardı?
+  A) Arızanın öğlende başlamadığı sonucuna
+  B) Kulenin hiç bozulmadığı sonucuna
+  C) Saatin ileri gittiği sonucuna
+  Açıklama: Haber öğleden önce geldiği için arıza öğlende başlamış olamazdı.
+s3 [yorumlama] dayanak_sayfa=6 doğru=B
+  Metin: Ustanın "Bir ölçüm yanlış olabilir; onu başka bilgilerle kontrol ederiz" sözü neyi anlatır?
+  A) Hiçbir saate güvenilmemesi gerektiğini
+  B) Tek bir kaynağa bakmak yerine başka kaynaklarla karşılaştırmanın iyi olduğunu
+  C) Ölçüm yapmanın gereksiz olduğunu
+  Açıklama: Usta, doğru bilgiye ulaşmak için kaynakların karşılaştırılacağını söyledi.
+s4 [sozcuk_baglami] dayanak_sayfa=5 doğru=C
+  Metin: Metinde geçen bakım sözcüğü ne anlama gelir?
+  A) Bir şeyi yıkıp yenisini yapmak
+  B) Bir şeyin yerini değiştirmek
+  C) Bir şeyin iyi çalışması için düzenli olarak kontrol edip onarmak
+  Açıklama: Usta, büyük makineleri küçük parçalar durdurabildiği için düzenli bakım gerektiğini söyledi.
+s5 [hatirlama] dayanak_sayfa=5 doğru=A
+  Metin: Kule neden durmuştu?
+  A) Çarkların arasındaki küçük bir parça gevşediği için
+  B) Güvercinler çarklara girdiği için
+  C) Kulenin kapısı kilitli olduğu için
+  Açıklama: Bakım ustası çarkların arasında gevşemiş küçük bir parça buldu.
+
+## Sözlük
+- pa_yelkovan | kelime | yazım: yelkovan | 3–3 | anlam: Saatte dakikayı gösteren uzun ibre.
+- pa_bakim | kelime | yazım: bakım | 3–3 | anlam: Bir şeyin iyi çalışması için düzenli olarak kontrol edilip onarılması.
+- pa_olcum | kelime | yazım: ölçüm | 3–3 | anlam: Bir şeyin boyunu, ağırlığını ya da zamanını bulmak için yapılan işlem.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

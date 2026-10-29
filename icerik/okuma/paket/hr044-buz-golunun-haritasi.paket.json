@@ -78,7 +78,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2047,
+        "kelime_sayisi": 2049,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 18,
         "soru_sayisi": 4,
@@ -513,7 +513,7 @@
         },
         {
           "t": "metin",
-          "v": " de tedirgin olmuştu. Yine de Ceren Hanım'ın sesini duyunca rahatladı: \"Duruyoruz, grubu sayıyoruz ve planımıza bakıyoruz. Kimse tek başına ilerlemiyor.\"\n\nHaberleşme bitince rehberleri çocuklara bilgi verdi: \"Bulunduğumuz noktayı merkeze bildirdim, hava değiştiği için planlı dönüşe devam edeceğiz.\" "
+          "v": " de tedirgin olmuştu. Yine de Ceren Hanım'ın sesini duyunca rahatladı: \"Duruyoruz, grubu sayıyoruz ve planımıza bakıyoruz. Kimse tek başına ilerlemiyor.\"\n\nHaberleşme sürerken rehberleri çocuklara bilgi verdi: \"Bulunduğumuz noktayı merkeze bildirdim, hava değiştiği için planlı dönüşe devam edeceğiz.\" "
         },
         {
           "t": "kahraman",
@@ -543,7 +543,7 @@
         },
         {
           "t": "metin",
-          "v": " gruba dağıtılan haritada dört önemli işaret bulunduğunu fark etti: başlangıç noktası, seyir terası, mola alanı ve güvenli dönüş kavşağı. \"Bende en çok başlangıç işareti kaldı,\" dedi "
+          "v": " gruba dağıtılan haritada dört önemli işaret bulunduğunu fark etti: başlangıç noktası, seyir terası, mola alanı ve güvenli dönüş kavşağı. \"Aklımda en çok başlangıç işareti kaldı,\" dedi "
         },
         {
           "t": "kahraman",
@@ -568,7 +568,7 @@
         },
         {
           "t": "metin",
-          "v": " kağıdı pusuladaki yöne uygun çevirmesini hatırlattı. İkisi yön işaretleriyle bulunduğu yeri ilişkilendirirken Ceren Hanım onları izledi. Bir haritayı yalnızca ezberlemek yerine kullanmayı denemek, öğrenmeyi daha kalıcı kılıyordu. "
+          "v": " kağıdı pusulanın gösterdiği yöne göre çevirmesini hatırlattı. İkisi yön işaretleriyle bulunduğu yeri ilişkilendirirken Ceren Hanım onları izledi. Bir haritayı yalnızca ezberlemek yerine kullanmayı denemek, öğrenmeyi daha kalıcı kılıyordu. "
         },
         {
           "t": "yoldas",
@@ -762,7 +762,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Çocuklar, alınan bir kararın sonucunu değerlendirirken yalnızca \"vardık mı?\" sorusuna bakmanın yeterli olmadığını düşündü.\n\nMerkez binasına dönünce sıcak çorbalarını içtiler. "
+          "v": "Çocuklar, alınan bir kararın sonucunu değerlendirirken yalnızca \"vardık mı?\" sorusuna bakmanın yeterli olmadığını düşündüler.\n\nMerkez binasına dönünce sıcak çorbalarını içtiler. "
         },
         {
           "t": "yoldas",
@@ -771,7 +771,7 @@
         },
         {
           "t": "metin",
-          "v": " telefonundaki göl fotoğraflarını gösterdi. İlk fotoğrafta güneş parlıyordu, ikinci fotoğrafta aynı gölün üstünde bulutlar vardı. \"İkisi de bugün çekildi,\" dedi. \"Ama biri yaz gibi, öbürü kış fırtınası gibi görünüyor.\"\n\nCeren Hanım, hava ve ışık değiştikçe aynı manzaranın farklı algılanabileceğini anlattı. Sonra herkese küçük bir görev verdi: Yolculuğun fotoğraf albümünün yanına gerçek rota defteri hazırlamak. "
+          "v": " telefonundaki göl fotoğraflarını gösterdi. İlk fotoğrafta güneş parlıyordu, ikinci fotoğrafta aynı gölün üstünde bulutlar vardı. \"İkisi de bugün çekildi,\" dedi. \"Ama biri yaz gibi, öbürü kış fırtınası gibi görünüyor.\"\n\nCeren Hanım, hava ve ışık değiştikçe aynı manzaranın farklı algılanabileceğini anlattı. Sonra herkese küçük bir görev verdi: Yolculuğun fotoğraf albümünün yanına gerçek bir rota defteri hazırlamak. "
         },
         {
           "t": "kahraman",
@@ -907,7 +907,7 @@
         },
         {
           "t": "kahraman",
-          "hal": "yalin"
+          "hal": "yonelme"
         },
         {
           "t": "metin",
@@ -953,59 +953,59 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Alin pusulada ne fark etti?",
+      "metin": "Kahraman pusulada ne fark etti?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "İğnenin sürekli aynı yönü gösterdiğini"
-        },
-        {
-          "id": "B",
           "metin": "Pusulanın kırık olduğunu"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Haritanın eski olduğunu"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Eldivenin yırtık olduğunu"
+        },
+        {
+          "id": "D",
+          "metin": "İğnenin sürekli aynı yönü gösterdiğini"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Pusula iğnesi sürekli aynı yönü gösteriyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 7,
-      "metin": "Yağız'ın eski haritası neden güvenilir değildi?",
+      "metin": "Yoldaşın eski haritası neden güvenilir değildi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Harita bir yıl öncesine aitti ve yollar değişmiş olabilirdi"
+          "metin": "Harita renkli ve parlak bir kâğıda basılmıştı"
         },
         {
           "id": "B",
-          "metin": "Harita renkliydi"
+          "metin": "Harita okunamayacak kadar küçük bir ölçekte çizilmişti"
         },
         {
           "id": "C",
-          "metin": "Harita çok küçüktü"
+          "metin": "Harita kâğıt yerine ince ve dayanıksız bir plastikten yapılmıştı"
         },
         {
           "id": "D",
-          "metin": "Harita kâğıttan yapılmamıştı"
+          "metin": "Harita bir yıl öncesine aitti ve yollar değişmiş olabilirdi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Eski harita, o günkü kapalı ya da değişmiş yolları göstermeyebilirdi."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 17,
-      "metin": "Alin'in dönüş kararına bakışı neyi gösterir?",
+      "metin": "Kahramanın dönüş kararına bakışı neyi gösterir?",
       "secenekler": [
         {
           "id": "A",
@@ -1013,15 +1013,15 @@
         },
         {
           "id": "B",
-          "metin": "Başarısız olduklarını"
+          "metin": "Grubun planını hiç uygulayamadığını ve başarısız olduğunu"
         },
         {
           "id": "C",
-          "metin": "Kimsenin dönmediğini"
+          "metin": "Grubun tek bir kişinin kararıyla yönetildiğini ve sorumluluğu üstlendiğini"
         },
         {
           "id": "D",
-          "metin": "Yolun açık olduğunu"
+          "metin": "Hava değişmesine rağmen yolun tamamen açık ve güvenli olduğunu"
         }
       ],
       "dogru": "A",
@@ -1035,22 +1035,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Uzun süre yorulmadan zorlukla başa çıkarak devam edebilme"
+          "metin": "Yarışta diğerlerinden önce varmak için hızla koşma"
         },
         {
           "id": "B",
-          "metin": "Çok hızlı koşma"
+          "metin": "Hiç yorulmadan ve hiç mola vermeden yürüyebilme"
         },
         {
           "id": "C",
-          "metin": "Hiç yorulmama"
+          "metin": "Uzun süre yorulmadan zorlukla başa çıkarak devam edebilme"
         },
         {
           "id": "D",
-          "metin": "Kolay pes etme"
+          "metin": "Zorluk karşısında hemen vazgeçip yolu bırakma"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Dayanıklılık, zorluklara rağmen sürdürebilme yeteneğidir."
     }
   ],

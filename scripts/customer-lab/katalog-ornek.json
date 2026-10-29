@@ -1,0 +1,34 @@
+{
+  "tur": "hipotez_katalogu",
+  "esik": 10,
+  "uyari": "Hipotez kataloğu. Gerçek kullanıcı ölçümü değildir; A/B testi olmadan karar kanıtı sayılmaz.",
+  "personalar": [
+    {
+      "id": "eposta_izinli",
+      "etiket": "E-posta izni açık veli (hipotez)",
+      "n": 240,
+      "parametreler": {
+        "eposta_acik_yuzde": 83.3
+      },
+      "kaynak": "veri_kalitesi.izin[eposta]"
+    },
+    {
+      "id": "hafta_ici_duzenli",
+      "etiket": "Bir hafta içinde geri dönen veli (hipotez)",
+      "n": 118,
+      "parametreler": {
+        "d7_oran_yuzde": 34.7
+      },
+      "kaynak": "kohort.ozet[gun=7]"
+    },
+    {
+      "id": "ilk_gun_geri_donen",
+      "etiket": "İlk gün geri dönen veli (hipotez)",
+      "n": 120,
+      "parametreler": {
+        "d1_oran_yuzde": 70.0
+      },
+      "kaynak": "kohort.ozet[gun=1]"
+    }
+  ]
+}

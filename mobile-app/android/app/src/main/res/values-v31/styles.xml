@@ -2,7 +2,8 @@
 <resources>
     <style name="LaunchTheme" parent="@android:style/Theme.Light.NoTitleBar">
         <item name="android:windowSplashScreenBackground">@color/ic_launcher_background</item>
-        <item name="android:windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+        <!-- Flutter sahnesinin ilk karesindeki Hupo ile birebir aynı (tool/splash_varliklari_uret.py). -->
+        <item name="android:windowSplashScreenAnimatedIcon">@drawable/splash_hupo</item>
     </style>
     <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
         <!-- Flutter ilk kareyi çizene kadar marka turkuazı; flaş oluşmaz. -->

@@ -1,0 +1,68 @@
+# HR-009 · Konuşan Kalem Kutusu · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=6770d89a-ca58-4e3f-a810-2bb7bc8f7f2b, surum_no=4, sha256=e7919e9da7612486326b7d325a6dced3c9ba3b86be3a19786a68a70c70b414e7
+Not: bu hikâyede 3 taslak sürüm var; yalnız en yeni (surum_no=4) denetlenmiştir.
+
+## Künye
+Slug: hr009-konusan-kalem-kutusu | Tür: arkadaslik | Konu: okul | Dünya: masalsi
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Kalem kutusundan sesler geliyor. Herkesin bir yeri olabilir mi?
+İzinli türler: ben, kardes, arkadas, hayali
+Değer anahtarları (sürüm): D16 | maarif.ana_deger: D16
+Etiketler: ana_sinif=2, okuma_zorlugu=1, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: okul, mizah | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: dar (lexeme, first_hint: dar); genis (lexeme, application: geniş); kavram_hr009 (concept, application: Düzenleme)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":6,"simge_sayisi":5,"kelime_sayisi":209,"tahmini_sure_dk":4,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":2,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+[KAHRAMAN hal=yalin] çantasını açınca kalem[İKON pencil] kutusundan sesler geldi. "Bana yer kalmadı!" diye bağırıyordu silgi. Cetvel ise "Hepiniz yamuk duruyorsunuz," diye söyleniyordu. Kurşun kalem sivri ucunu koruyamamaktan yakınıyordu.
+--- Sayfa 2 ---
+[KAHRAMAN hal=yalin] şaşkınlıkla etrafa baktı. [YOLDAŞ hal=yalin yedek=Hupo] göz kırptı: "Belki eşyaların da biraz düzene ihtiyacı vardır." [KAHRAMAN hal=yalin] kutuyu boşalttı. Uzun cetveli yan bölmeye, küçük silgiyi dar bölmeye, kalemleri lastikli sıraya koydu. Ama boya kalemleri yine sığmadı.
+--- Sayfa 3 ---
+Kutu çok [KELİME yuva=s2_dar] bir yerdi. Silgi "Ben küçüğüm, o yüzden hep alta düşüyorum," dedi. Cetvel "Beni eğerseniz düzgün çizgi çizemem," diye karşılık verdi. Mavi kalem[İKON pencil] ise kapağı açık kaldığı için kurumuştu. [KAHRAMAN hal=yalin] hepsini dinledi ve ne yapacağını düşündü.
+--- Sayfa 4 ---
+[YOLDAŞ hal=yalin yedek=Hupo] masanın üzerine bir kâğıt açtı: "Önce plan yapalım." [KAHRAMAN hal=yalin] kutunun resmini çizdi. Büyük eşyaları içeri, küçükleri sonraya yerleştirdi. Cetveli çapraz koyunca kapağın kapanmadığını gördü. Bu yüzden eski bir kartonu ikiye katlayıp ayırıcı olarak yerleştirdi. İlk seferde devrildi. Bir köşesini uzatınca yerinde durdu.
+--- Sayfa 5 ---
+Kalemler yan yana dizildi, silgi kendi bölümüne yerleşti. Kutu [KELİME yuva=s2_genis] değildi ama her eşyanın bir yeri vardı. [KAHRAMAN hal=yalin] eşyalarının yerini bilmenin bir sorumluluk olduğunu düşündü. Ertesi gün aradığı eşyayı hemen buldu.
+--- Sayfa 6 ---
+Son olarak kalemtıraş seslendi: "Beni unutmadın, değil mi?" [KAHRAMAN hal=yalin] güldü ve onu da ön göze yerleştirdi. Kalem[İKON pencil] kutusundan artık ses[İKON bell] gelmiyordu. [İŞARET kod=yildiz] Arkadaşı Zeynep'e de kutuyu gösterdi. İkisi yan yana oturup kendi kutularını düzenlemek için bir plan yaptı.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=A
+  Metin: Silgi kalem kutusunda neden şikâyet etti?
+  A) Kendisine yer kalmadığı için
+  B) Kurşun kalem yüzünden
+  C) Cetvel yüzünden
+  Açıklama: Silgi, 'Bana yer kalmadı!' diye bağırıyordu.
+s2 [cikarim] dayanak_sayfa=4 doğru=A
+  Metin: Cetveli çapraz koyunca ne oldu?
+  A) Kapak kapanmadı
+  B) Silgi kayboldu
+  C) Kalemler kırıldı
+  Açıklama: Cetveli çapraz koyunca kapağın kapanmadığını gördü.
+s3 [yorumlama] dayanak_sayfa=5 doğru=A
+  Metin: Kutuyu düzenleyen çocuğun davranışı neyi gösterir?
+  A) Eşyalarına bakmanın bir sorumluluk olduğunu
+  B) Eşyaları atmanın daha kolay olduğunu
+  C) Kalemlerin konuşamayacağını
+  Açıklama: Her eşyanın bir yeri olduğunu bilmek ve buna uymak bir sorumluluktur.
+s4 [sozcuk_baglami] dayanak_sayfa=3 doğru=A
+  Metin: Metinde geçen dar sözcüğü ne anlama gelir?
+  A) Genişliği az olan, sıkışık
+  B) Çok büyük olan
+  C) Renkli olan
+  Açıklama: Kutu, eşyaların sıkıştığı çok dar bir yerdi.
+
+## Sözlük
+- s2_dar | kelime | yazım: dar | 2–2 | anlam: Genişliği az olan, sıkışık.
+- s2_genis | kelime | yazım: geniş | 2–2 | anlam: Genişliği çok olan, rahat.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

@@ -1,10 +1,11 @@
 "use client";
 
-import { useCallback, useEffect, useState } from "react";
+import { useState } from "react";
 import { useTranslations } from "next-intl";
 
 import Badge from "@/components/ui/badge/Badge";
 import DesktopOnly from "@/components/ui/DesktopOnly";
+import { useAdminRpc } from "@/components/yonetim/useAdminRpc";
 import { formatKurus } from "@/utils/format";
 import { createClient } from "@/utils/supabase/client";
 import type { Plan } from "../types";
@@ -54,16 +55,10 @@ export default function PlanManager({
   const [editing, setEditing] = useState(false);
   const [saving, setSaving] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const [tipler, setTipler] = useState<PlanTipi[]>([]);
-
-  const loadTipler = useCallback(async () => {
-    const { data, error: err } = await createClient().rpc("admin_list_plan_tipleri");
-    if (!err && Array.isArray(data)) setTipler(data as PlanTipi[]);
-  }, []);
-
-  useEffect(() => {
-    void loadTipler();
-  }, [loadTipler]);
+  // Plan türleri ortak okuma kancasından gelir; tür eklenip düzenlenince liste boşalmaz.
+  const tiplerState = useAdminRpc<PlanTipi[]>("admin_list_plan_tipleri");
+  const tipler = Array.isArray(tiplerState.data) ? tiplerState.data : [];
+  const loadTipler = tiplerState.reload;
 
   const openNew = () => {
     setForm({ ...EMPTY, tip_kod: tipler[0]?.kod ?? "premium" });

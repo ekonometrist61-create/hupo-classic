@@ -1,4 +1,5 @@
 import { IconCompass, IconLock, IconShield, IconUserCheck } from "@/components/landing/Icons";
+import { RevealGroup } from "@/components/landing/motion/RevealGroup";
 import { getTranslations } from "next-intl/server";
 import type { ComponentType, SVGProps } from "react";
 
@@ -18,7 +19,7 @@ export async function TrustSection() {
         <p className="mx-auto mt-3 max-w-xl text-center text-lg text-white/80">
           {t("trust.desc")}
         </p>
-        <ul className="mt-10 grid gap-6 sm:grid-cols-2">
+        <RevealGroup as="ul" className="mt-10 grid gap-6 sm:grid-cols-2">
           {trustItems.map((item, i) => {
             const Icon = TRUST_ICONS[i] ?? IconShield;
             return (
@@ -36,7 +37,7 @@ export async function TrustSection() {
               </li>
             );
           })}
-        </ul>
+        </RevealGroup>
       </div>
     </section>
   );

@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3032,
+        "kelime_sayisi": 3035,
         "tahmini_sure_dk": 27,
         "sayfa_sayisi": 26,
         "soru_sayisi": 4,
@@ -282,7 +282,7 @@
         },
         {
           "t": "metin",
-          "v": " böyle gelmiş,\" dedi. \"Yanlış olduğunu düşünüyorsanız kanıt bulabiliriz.\"\n\n"
+          "v": "den böyle gelmiş,\" dedi. \"Yanlış olduğunu düşünüyorsanız kanıt bulabiliriz.\"\n\n"
         },
         {
           "t": "kahraman",
@@ -801,7 +801,7 @@
         },
         {
           "t": "metin",
-          "v": " ise sınıftaki masaların biçimine dikkat etmişti. Bu masalar hangi yıllarda kullanılmıştı? Okulun eski fotoğraflarında benzerlerini aradılar. Aynı tür masaların uzun süre kullanıldığını görünce bunlarla kesin yıl belirleyemeyeceklerini anladılar. Yine de araştırma boşa gitmedi; okulun eşya düzeninin zaman içinde nasıl değiştiğine ilişkin küçük bir karşılaştırma tablosu oluştu. "
+          "v": " ise fotoğraftaki masaların biçimine dikkat etmişti. Bu masalar hangi yıllarda kullanılmıştı? Okulun eski fotoğraflarında benzerlerini aradılar. Aynı tür masaların uzun süre kullanıldığını görünce bunlarla kesin yıl belirleyemeyeceklerini anladılar. Yine de araştırma boşa gitmedi; okulun eşya düzeninin zaman içinde nasıl değiştiğine ilişkin küçük bir karşılaştırma tablosu oluştu. "
         },
         {
           "t": "kahraman",
@@ -952,7 +952,7 @@
         },
         {
           "t": "kahraman",
-          "hal": "yonelme"
+          "hal": "yalin"
         },
         {
           "t": "metin",
@@ -1281,6 +1281,14 @@
           "v": " önce resimdeki saate baktı. Ardından "
         },
         {
+          "t": "kahraman",
+          "hal": "yalin"
+        },
+        {
+          "t": "metin",
+          "v": ", "
+        },
+        {
           "t": "yoldas",
           "hal": "yonelme",
           "yedek": "bir arkadaşa"
@@ -1321,74 +1329,74 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "1984'te İlk Mezunlarımız"
-        },
-        {
-          "id": "B",
           "metin": "2001 Kutlama"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Eski Postane"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Okul Yıllığı"
+        },
+        {
+          "id": "D",
+          "metin": "1984'te İlk Mezunlarımız"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Fotoğrafın altında “1984'te İlk Mezunlarımız” yazıyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 3,
-      "metin": "Ada neden Ekin'in birkaç adım geri gelmesini istedi?",
+      "metin": "Yoldaş neden kahramanın birkaç adım geri gelmesini istedi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kadrajın tamamını görüp arka plandaki binaları fark etmek için"
+          "metin": "Fotoğrafı sergiden kaldırıp arşive geri götürmek için"
         },
         {
           "id": "B",
-          "metin": "Fotoğrafı silmek için"
+          "metin": "Kadrajın tamamını görüp arka plandaki binaları fark etmek için"
         },
         {
           "id": "C",
-          "metin": "Sergi bitsin diye"
+          "metin": "Sergi açılışının bir an önce bitmesini sağlamak için"
         },
         {
           "id": "D",
-          "metin": "Dedesini aramak için"
+          "metin": "Dedesinin anlattıklarını hemen telefonla doğrulamak için"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Yakından bakınca arka plandaki ayrıntılar kaçıyordu."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 2,
-      "metin": "Ekin'in fark ettiği şey nedir?",
+      "metin": "Kahramanın fark ettiği şey nedir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir fotoğrafın var olması, altındaki her bilginin doğru olduğunu göstermez"
+          "metin": "Eski fotoğrafların sergilerde hiç gösterilmemesi ve saklanması gerektiği"
         },
         {
           "id": "B",
-          "metin": "Eski fotoğrafların hiç kullanılmaması gerektiği"
+          "metin": "Eski fotoğrafların neredeyse hepsinin yanlış tarihlendiği ve bilgilerin değiştiği"
         },
         {
           "id": "C",
-          "metin": "Fotoğrafların hep yanlış tarihlendiği"
+          "metin": "Sergideki hiçbir bilginin güvenilir olmadığı ve hepsinin yanlış olduğu"
         },
         {
           "id": "D",
-          "metin": "Sergide hiçbir bilginin doğru olmadığı"
+          "metin": "Bir fotoğrafın var olması, altındaki her bilginin doğru olduğunu göstermez"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Belge var olsa da üzerindeki açıklama ayrıca sınanmalıdır."
     },
     {
@@ -1399,23 +1407,23 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Posta ya da belge üzerine basılan iz ya da işaret"
+          "metin": "Sıcak iklimlerde yaşayan ve uzun tüyleri olan bir tür kuş"
         },
         {
           "id": "B",
-          "metin": "Bir tür kuş"
+          "metin": "Müzenin girişinde yer alan ve bilgi veren büyük bir duvar"
         },
         {
           "id": "C",
-          "metin": "Bir sergi duvarı"
+          "metin": "Posta ya da belge üzerine basılan iz ya da işaret"
         },
         {
           "id": "D",
-          "metin": "Bir fotoğraf çerçevesi"
+          "metin": "Eski fotoğrafların korunduğu ince metal bir çerçeve"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Damga, posta üzerine basılan ve çoğu zaman tarih taşıyan iz dir."
+      "dogru": "C",
+      "aciklama": "Damga, posta üzerine basılan ve çoğu zaman tarih taşıyan izdir."
     }
   ],
   "uretim": {

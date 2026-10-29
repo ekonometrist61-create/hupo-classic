@@ -79,14 +79,14 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3956,
+        "kelime_sayisi": 3950,
         "tahmini_sure_dk": 30,
         "sayfa_sayisi": 34,
         "soru_sayisi": 5,
@@ -106,7 +106,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Bir uydunun yakın geçişinde Deniz ve ekibi belirsiz verilerle karar vermeyi öğrenir. Kesinlikten çok, kararın gerekçesi önemlidir.",
+    "tanitim": "Bir uydunun yakın geçişinde {kahraman} ve ekibi belirsiz verilerle karar vermeyi öğrenir. Kesinlikten çok, kararın gerekçesi önemlidir.",
     "durum": "taslak",
     "fis_kodu": "HR-113"
   },
@@ -402,7 +402,7 @@
         },
         {
           "t": "metin",
-          "v": ", “Bize sadece Mirza-4'ü korumamız söylenmişti,” diye itiraz etti. Selçuk Bey, “Siz görevinizi böyle anladınız,” dedi. “Ama yörüngeleri paylaşan araçlar birbirinden bağımsız karar veremez.”\n\nRüzgâr ve boşluk arasında hareket eden iki uyduyu gösteren canlandırmaya baktılar. Simülasyon bütün nesneleri eksiksiz modellemiyordu; ekrandaki sonuçlar çalışmanın tanımladığı varsayımlara bağlıydı. "
+          "v": ", “Bize sadece Mirza-4'ü korumamız söylenmişti,” diye itiraz etti. Selçuk Bey, “Siz görevinizi böyle anladınız,” dedi. “Ama yörüngeleri paylaşan araçlar birbirinden bağımsız karar veremez.”\n\nBoşlukta hareket eden iki uyduyu gösteren canlandırmaya baktılar. Simülasyon bütün nesneleri eksiksiz modellemiyordu; ekrandaki sonuçlar çalışmanın tanımladığı varsayımlara bağlıydı. "
         },
         {
           "t": "yoldas",
@@ -1244,7 +1244,7 @@
         },
         {
           "t": "metin",
-          "v": " cevap vermeden önce Selçuk Bey'in söylediğini hatırladı: Hatalar saklanırsa tekrarlanır. “Hiç hata olmayacağını garanti edemeyiz,” dedi. “Hataları fark etmek, kayıt altına almak ve onlardan öğrenmek için yöntemler kurabiliriz.”\n\nSunum bittikten sonra Ceyda'dan mesaj geldi. Kampa birlikte katıldıkları öğrenciler için bir gözlem kulübü kurmayı öneriyordu. Kulübün ilk toplantısında yıldızlara bakacak, ikinci toplantısında veri tablolarını okuyacaklardı. "
+          "v": " cevap vermeden önce düşündü: Hatalar saklanırsa tekrarlanır. “Hiç hata olmayacağını garanti edemeyiz,” dedi. “Hataları fark etmek, kayıt altına almak ve onlardan öğrenmek için yöntemler kurabiliriz.”\n\nSunum bittikten sonra Ceyda'dan mesaj geldi. Kampa birlikte katıldıkları öğrenciler için bir gözlem kulübü kurmayı öneriyordu. Kulübün ilk toplantısında yıldızlara bakacak, ikinci toplantısında veri tablolarını okuyacaklardı. "
         },
         {
           "t": "kahraman",
@@ -1284,11 +1284,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "K-17"
+          "metin": "Mirza-4"
         },
         {
           "id": "B",
-          "metin": "Mirza-4"
+          "metin": "K-17"
         },
         {
           "id": "C",
@@ -1299,7 +1299,7 @@
           "metin": "K-71"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Kırmızı noktanın adı K-17 idi."
     },
     {
@@ -1314,15 +1314,15 @@
         },
         {
           "id": "B",
-          "metin": "Hiç hesap yapmamak"
+          "metin": "Kampın günlüğüne her gün yanlış bir tarih yazmak"
         },
         {
           "id": "C",
-          "metin": "Uydunun adını yanlış yazmak"
+          "metin": "Uydunun adını kâğıda yanlış yazmak ve notları karıştırmak"
         },
         {
           "id": "D",
-          "metin": "Yörünge çizgilerini çizmemek"
+          "metin": "Yörünge çizgilerini sonradan kâğıda hiç aktarmamak"
         }
       ],
       "dogru": "A",
@@ -1336,22 +1336,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Her zaman"
+          "metin": "Her zaman, hiçbir koşul aranmadan"
         },
         {
           "id": "B",
-          "metin": "Hiçbir zaman"
+          "metin": "Hiçbir zaman, ne bilgi gelirse gelsin"
         },
         {
           "id": "C",
-          "metin": "Koşulları ve neden beklediği bilindiğinde"
+          "metin": "Yalnızca uydu gerçekten zarar gördüğünde"
         },
         {
           "id": "D",
-          "metin": "Yalnızca uydu zarar gördüğünde"
+          "metin": "Koşulları ve neden beklediği bilindiğinde"
         }
       ],
-      "dogru": "C",
+      "dogru": "D",
       "aciklama": "Beklemek de, koşulları ve gerekçesi açıkça belirlenmiş bir karar olabilir."
     },
     {
@@ -1366,15 +1366,15 @@
         },
         {
           "id": "B",
-          "metin": "Çok eski ve bilinen"
+          "metin": "Çok eski ve uzun süredir bilinen bir durum"
         },
         {
           "id": "C",
-          "metin": "Uzayda bulunan"
+          "metin": "Uzayda bulunan, gözle görülebilen bir nesne"
         },
         {
           "id": "D",
-          "metin": "Hızlı hareket eden"
+          "metin": "Hızlı hareket eden, yörüngede dönen bir uydu"
         }
       ],
       "dogru": "A",
@@ -1388,7 +1388,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Aynı şeydir"
+          "metin": "Riski azaltmak ile kazayı önlemek birbirinin aynısıdır"
         },
         {
           "id": "B",
@@ -1400,7 +1400,7 @@
         },
         {
           "id": "D",
-          "metin": "Riskin hiçbir önemi yoktur"
+          "metin": "Riskin azaltılması, değerlendirmede hiçbir önem taşımaz"
         }
       ],
       "dogru": "B",

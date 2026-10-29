@@ -1,3 +1,4 @@
+import { Reveal } from "@/components/landing/motion/Reveal";
 import { turEtiketi } from "@/lib/okuma/turler";
 import { createClient } from "@/utils/supabase/server";
 import { getTranslations } from "next-intl/server";
@@ -27,7 +28,7 @@ export async function HikayelerSection() {
 
   return (
     <section id="hikayeler" className="scroll-mt-20 bg-cream py-12 dark:bg-gray-950 sm:py-16 lg:py-20">
-      <div className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
+      <Reveal className="mx-auto max-w-4xl px-4 text-center sm:px-6 lg:px-8">
         <h2 className="text-3xl font-extrabold tracking-tight text-navy dark:text-white sm:text-4xl">{t("title")}</h2>
         <p className="mx-auto mt-3 max-w-2xl text-lg text-navy/80 dark:text-gray-300">{t("desc")}</p>
         <p className="mt-6 text-xl font-extrabold text-navy dark:text-white">
@@ -51,7 +52,7 @@ export async function HikayelerSection() {
           ))}
         </ul>
         <p className="mx-auto mt-6 max-w-xl text-sm text-navy/70 dark:text-gray-400">{t("not")}</p>
-      </div>
+      </Reveal>
     </section>
   );
 }

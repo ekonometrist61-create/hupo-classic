@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Ada'nın dünya gezisinde saat farkı, bir pazarlık ve yanlış bir çeviri var. Her yanlış anlaşılma ona acele etmeden dinlemeyi öğretir."
+tanitim: "{kahraman:ilgi} dünya gezisinde saat farkı, bir pazarlık ve yanlış bir çeviri var. Her yanlış anlaşılma ona acele etmeden dinlemeyi öğretir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -33,14 +33,14 @@ etiketler:
     - {id: deyim_hr107, tur: idiom, etiket: "Etekleri zil çalmak", yuva: hr107_etek, islev: application}
     - {id: kavram_hr107, tur: concept, etiket: "Zaman farkı ile kültürel farkı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Ada'nın telefon ekranı neyi farklı gösteriyordu?", secenekler: [{id: A, metin: "Evinden farklı bir saat dilimini"}, {id: B, metin: "Bir trenin fiyatını"}, {id: C, metin: "Bir kitabın adını"}, {id: D, metin: "Hava durumunu"}], dogru: A, aciklama: "Telefon, evinden farklı bir saat dilimini gösteriyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Leyla'nın bu sözüne göre bir topluluk hakkında ne yapılmalıdır?", secenekler: [{id: A, metin: "Tek bir deneyimden genel bir sonuç çıkarılmalıdır"}, {id: B, metin: "Tek bir akşama bakılarak hüküm verilmelidir"}, {id: C, metin: "Topluluğun alışkanlıkları gözlemlenmeden yorum yapılmamalıdır"}, {id: D, metin: "Topluluk hakkında hiç konuşulmamalıdır"}], dogru: C, aciklama: "Bir topluluğun alışkanlığı tek bir olaydan anlaşılamaz; gözlem ve kaynak gerekir."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Ada'nın vardığı sonuç nedir?", secenekler: [{id: A, metin: "Tek bir deneyimi bütün bir topluma genellememek gerektiği"}, {id: B, metin: "Her deneyimin toplumu temsil ettiği"}, {id: C, metin: "Yolculukların hiçbir öğretici yanı olmadığı"}, {id: D, metin: "Her kentin aynı olduğu"}], dogru: A, aciklama: "Ada, bir deneyimin bütün topluma ait bir özellik gibi anlatılamayacağını fark eder."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 9, metin: "Metinde “bağlam” sözcüğü ne anlatır?", secenekler: [{id: A, metin: "Bir sözcüğün kullanıldığı durum ve çevre"}, {id: B, metin: "Bir yolculuğun uzunluğu"}, {id: C, metin: "Bir ürünün fiyatı"}, {id: D, metin: "Bir kitabın sayfa sayısı"}], dogru: A, aciklama: "Bağlam, bir sözcüğün ya da ifadenin hangi durumda kullanıldığını anlatır."}
-  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 18, metin: "Leyla'nın sözüne göre Ada'nın doğru tutumu nedir?", secenekler: [{id: A, metin: "Her şeyi tek başına üstlenmek"}, {id: B, metin: "Hiçbir sorumluluk almamak"}, {id: C, metin: "Sorumluluğunu kabul etmek, ama her şeyi tek başına yüklenmemek"}, {id: D, metin: "Yanlışı başkasına yüklemek"}], dogru: C, aciklama: "Sorumluluğu kabul etmek önemlidir; ancak bütün suçu tek başına taşımak gerekmez."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Kahramanın telefon ekranı neyi farklı gösteriyordu?", secenekler: [{id: A, metin: "Bir trenin bilet fiyatını ve koltuk numarasını"}, {id: B, metin: "Evinden farklı bir saat dilimini"}, {id: C, metin: "Gezi rehberindeki bir kitabın adını ve yazarını"}, {id: D, metin: "Bulunulan kentin hava durumunu ve sıcaklığını"}], dogru: B, aciklama: "Telefon, evinden farklı bir saat dilimini gösteriyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Yoldaşın “Bir topluluğun alışkanlığını tek bir akşamdan çıkaramazsın.” sözüne göre bir topluluk hakkında ne yapılmalıdır?", secenekler: [{id: A, metin: "Tek bir deneyimden genel bir sonuç çıkarılmalıdır"}, {id: B, metin: "Topluluğun alışkanlıkları gözlemlenmeden yorum yapılmamalıdır"}, {id: C, metin: "Tek bir akşama bakılarak kesin bir hüküm verilmelidir"}, {id: D, metin: "Topluluk hakkında kimseyle hiç konuşulmamalıdır"}], dogru: B, aciklama: "Bir topluluğun alışkanlığı tek bir olaydan anlaşılamaz; gözlem ve kaynak gerekir."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 4, metin: "Kahramanın vardığı sonuç nedir?", secenekler: [{id: A, metin: "Her deneyimin bütün bir toplumu temsil ettiği"}, {id: B, metin: "Yolculukların hiçbir öğretici ve açıklayıcı yanı olmadığı"}, {id: C, metin: "Tek bir deneyimi bütün bir topluma genellememek gerektiği"}, {id: D, metin: "Bütün kentlerin hemen hemen aynı özellikleri taşıdığı"}], dogru: C, aciklama: "Kahraman, bir deneyimin bütün topluma ait bir özellik gibi anlatılamayacağını fark eder."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 9, metin: "Metinde “bağlam” sözcüğü ne anlatır?", secenekler: [{id: A, metin: "Bir yolculuğun ne kadar sürdüğü ve uzunluğu"}, {id: B, metin: "Bir ürünün pazardaki fiyatı ve satış koşulu"}, {id: C, metin: "Bir kitabın sayfa sayısı ve baskı yılı"}, {id: D, metin: "Bir sözcüğün kullanıldığı durum ve çevre"}], dogru: D, aciklama: "Bağlam, bir sözcüğün ya da ifadenin hangi durumda kullanıldığını anlatır."}
+  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 18, metin: "Yoldaşın “Bir sorumluluğu kabul etmekle bütün suçu tek başına taşımak farklı.” sözüne göre kahramanın doğru tutumu nedir?", secenekler: [{id: A, metin: "Sorumluluğunu kabul etmek, ama her şeyi tek başına yüklenmemek"}, {id: B, metin: "Yaşanan her şeyin bütün sorumluluğunu tek başına üstlenmek"}, {id: C, metin: "Yaşanan olaylarla ilgili hiçbir sorumluluk almayıp geçiştirmek"}, {id: D, metin: "Yaşanan yanlışı tamamen başka birinin üzerine yüklemek"}], dogru: A, aciklama: "Sorumluluğu kabul etmek önemlidir; ancak bütün suçu tek başına taşımak gerekmez."}
 deyim_cumleleri:
   hr107_etek: "“Etekleri zil çalmak” ifadesini başka dile kelimesi kelimesine aktarsaydı, dinleyen kişi gerçekten zil takılmış bir etek hayal edebilirdi."
 ---
@@ -205,7 +205,7 @@ Son sabah gençlik kulübü istasyonda bir uğurlama buluşması hazırladı. {k
 @omurga
 {kahraman} trenin kapısına yaklaşırken istasyon saatine baktı. Bu kez telaşla değil, bir işi kontrol etmek için. {yoldas:yalin|bir arkadaş} ona kâğıttan katlanmış küçük bir pusula verdi. Üzerinde yön adları yoktu; dört kelime yazıyordu: sor, dinle, karşılaştır, düzelt. {kahraman} gülümsedi. “Bu pusula beni eve götürmez,” dedi. {yoldas:yalin|bir arkadaş} “Ama başka bir yere gittiğinde işe yarayabilir,” diye karşılık verdi.
 
-Bir sonraki karşılaştırmada {kahraman}, kendi yolculuğunun romanın yarışına benzemediğini özellikle yazdı. Seyahat günlüğünün en önemli sayfası, hedefe vardığı gün değil, acele etmeden bir soruyu yeniden sorduğu gündü. Bu farkı silmek istemedi.
+Bir sonraki karşılaştırmada {kahraman}, kendi yolculuğunun romandaki yarışa benzemediğini özellikle yazdı. Seyahat günlüğünün en önemli sayfası, hedefe vardığı gün değil, acele etmeden bir soruyu yeniden sorduğu gündü. Bu farkı silmek istemedi.
 ---
 @omurga
 Yolculuk projesinin kapanışında öğretmen, {kahraman:yonelme} Jules Verne'in eski romanıyla kendi deneyimi arasındaki en önemli farkı sordu. {kahraman} birkaç gün düşündükten sonra yanıt verdi. Romandaki dünya yolculuğu fikrinde belirli bir sürede birçok yere ulaşma heyecanı vardı. Kendi anlatısında ise tek bir durakta gereğinden uzun kalmış gibi görünen anların değeri ortaya çıkmıştı. Bu, klasik romanı kötülemek değil, ondan aldığı fikri başka bir soruyla yeniden kurmaktı.
@@ -227,7 +227,7 @@ Dönüş programı hazırlanırken {kahraman:ilgi} okuluna gönderilecek teşekk
 {kahraman} öğretmenine gönderdiği günlükte günleri yeniden sıraladı. Önce yaşadıklarını hatırladığı gibi yazdı, sonra biletleri ve notlarıyla karşılaştırdı. Bazı ayrıntılar düzeltilmişti. Günlüğü daha az heyecanlı bulmadı. Aksine, yolculuğun gerçekten yaşanmış küçük anları artık birbirine daha sağlam bağlarla tutunuyordu.
 ---
 @omurga
-{kahraman:ilgi} annesi onu evde karşıladığında çantanın içinden ilk olarak bir bilet çıkartması düştü. Üzerinde tarih ve saat yazıyordu. {kahraman} ilk gün bunları doğru okuyamadığı için kendisine kızdığını hatırladı. Annesi “Yolculuk nasıl geçti?” diye sordu. {kahraman} her şeyi bir kerede anlatmaya girişmedi. Önce çay koymalarını istedi, sonra defterini açtı.
+{kahraman:ilgi} annesi onu evde karşıladığında çantanın içinden ilk olarak bir bilet düştü. Üzerinde tarih ve saat yazıyordu. {kahraman} ilk gün bunları doğru okuyamadığı için kendisine kızdığını hatırladı. Annesi “Yolculuk nasıl geçti?” diye sordu. {kahraman} her şeyi bir kerede anlatmaya girişmedi. Önce çay koymalarını istedi, sonra defterini açtı.
 
 “Bir sürü şey gördüm,” dedi, “ama asıl öğrendiğim, gördüğüm şeyin bütün hikâye olmadığı.”
 

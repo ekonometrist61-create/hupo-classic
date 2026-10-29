@@ -26,6 +26,7 @@
         "potansiyelAdaylar": "Prospects",
         "classes": "Classes",
         "questions": "Question bank",
+        "kazanimKapsami": "Outcome Coverage",
         "mockExams": "Mock exams",
         "kelimeEvreni": "Word Universe",
         "notifications": "Notifications",
@@ -40,7 +41,14 @@
         "plans": "Plans",
         "trials": "Trials",
         "analytics": "Analytics",
+        "buyumeOzeti": "Growth Overview",
         "growthAnalitik": "Growth Analytics",
+        "harcama": "Ad spend",
+        "eldeTutma": "Retention",
+        "veriKalitesi": "Data Quality and Consent",
+        "raporTaslak": "Weekly Report Drafts",
+        "ogrenmeToplam": "Learning analytics (aggregate)",
+        "abDeney": "A/B experiments",
         "aiOneriler": "AI Recommendations",
         "access": "Team & permissions",
         "channels": "Channel settings",
@@ -54,6 +62,7 @@
         "ekipAkisi": "Team Feed",
         "destekMasasi": "Support Desk",
         "mesajSablonlari": "Message templates",
+        "mesajGunlugu": "Message log",
         "siteIcerik": "Site content",
         "settings": "App settings"
       },
@@ -62,6 +71,7 @@
         "leads": "Interest and follow-up status of parents who have not joined yet.",
         "classes": "Manage classes and teacher assignments.",
         "questions": "Controlled content, approval and bulk upload for the question bank.",
+        "kazanimKapsami": "See approved question counts per curriculum outcome, in weekly order.",
         "mockExams": "Define mock exams, assign questions and track results.",
         "kelimeEvreni": "Prepare word game questions, review and publish them, and approve word relations.",
         "notifications": "Send push campaigns to segments or quick notices to parents. Student accounts receive no marketing.",
@@ -75,10 +85,18 @@
         "ekipAkisi": "Team feed — notes and activity history",
         "satisHatti": "Sales pipeline — Lead and opportunity management",
         "destekMasasi": "Support desk — customer support tickets",
+        "buyumeOzeti": "One entry to the growth screens, items without a screen, and open work.",
         "growthAnalitik": "Growth analytics — conversion funnel and segment metrics",
+        "harcama": "Manual ad spend. Entered for CAC; ad accounts are not connected.",
+        "eldeTutma": "Retention at D1, D7 and D30 after sign-up. Counts below 5 are hidden.",
+        "veriKalitesi": "Data quality checks and channel-level consent summary. Small counts are hidden.",
+        "raporTaslak": "Weekly growth report drafts. Nothing is sent; review and approval only.",
+        "ogrenmeToplam": "Aggregate use by class and story. At least 10 students per cell; no correctness or personal data.",
+        "abDeney": "Real experiments: draft, approve and start, stop on guardrail breach. Assignment and result analysis are separate steps.",
         "aiOneriler": "AI recommendations — next best action",
         "journey-otomasyonlari": "Journey automations — customer journeys",
         "mesajSablonlari": "Message templates — channel-based content",
+        "mesajGunlugu": "Log of sent and skipped messages. Email and phone are masked.",
         "siteIcerik": "Site content — landing, sign-in, sign-up and parent panel texts"
       },
       "command": {
@@ -179,7 +197,11 @@
       "turler": {
         "es_anlamli": "Bridges of Meaning · synonyms",
         "zit_anlamli": "Valley of Opposites · antonyms",
-        "es_sesli": "Mirror Forest · homonyms"
+        "es_sesli": "Mirror Forest · homonyms",
+        "deyim": "Idiom Land · idioms",
+        "atasozu": "Proverb Spring · proverbs",
+        "sozcuk_turu": "Type Garden · word class",
+        "baglamda_anlam": "Context Trail · meaning from context"
       },
       "cols": {
         "kelime": "Word",
@@ -226,6 +248,46 @@
         "kaydet": "Save draft",
         "kaydediliyor": "Saving…",
         "vazgec": "Cancel"
+      },
+      "toplu": {
+        "listeTumu": "Select all in list ({sayi})",
+        "temizle": "Clear selection",
+        "sayfaTumu": "Select all on this page",
+        "satirSec": "Select {kelime}",
+        "seciliSayi": "{sayi} questions selected",
+        "yayinaAl": "Publish",
+        "yayindanKaldir": "Unpublish",
+        "limit": "At most 200 questions can be published at once. Narrow the selection.",
+        "yayinKuruOzet": "{yayinlanabilir} questions can be published, {atlanir} will be skipped. Publish them? They become visible to students right away.",
+        "yayinlanabilirYok": "None of the selected questions can be published. {atlanir} will be skipped.",
+        "yayinSonuc": "{yayinlandi} questions published, {atlandi} skipped.",
+        "kaldirYok": "None of the selected questions are published.",
+        "kaldirOnay": "{sayi} published questions will be archived and hidden from students. Continue?",
+        "kaldirSonuc": "{kaldirildi} questions unpublished, {atlandi} skipped."
+      },
+      "kuyruk": {
+        "baslik": "Review queue",
+        "aciklama": "Publishing needs a pass from two different model families. The publish button is your human check: read and approve the questions.",
+        "bos": "No questions under review.",
+        "sinif": "Grade",
+        "tur": "Game",
+        "tumu": "All",
+        "toplam": "{sayi} questions under review",
+        "kapiAcik": "Review passed",
+        "kapiKapali": "Review missing",
+        "dogru": "correct",
+        "cevapAnahtari": "Correct option",
+        "ipucu": "Hint",
+        "seciliSayi": "{sayi} selected",
+        "gecenleriSec": "Select those that passed review",
+        "temizle": "Clear selection",
+        "kontrolEt": "Check selected",
+        "yayinla": "Publish selected",
+        "kontrolSonuc": "Check: {yayinlanir} questions can be published, {atlanir} will be skipped.",
+        "yayinOnay": "{sayi} questions will become visible to students. Have you read them? Publish?",
+        "yayinSonuc": "{yayinlanan} questions published, {atlanan} skipped.",
+        "taslagaAl": "Back to draft",
+        "denetimYok": "No review recorded"
       },
       "sozluk": {
         "baslik": "Word inventory and relations",
@@ -278,6 +340,9 @@
         "ANLAM_BULUNAMADI": "Meaning not found. Refresh the page.",
         "ILISKI_BULUNAMADI": "Relation not found. Refresh the page.",
         "ADMIN_ONLY": "This action requires administrator access.",
+        "DENETIM_EKSIK": "Publishing needs a \"pass\" from two different model families (re-run the review if the question was edited).",
+        "DENETIM_HEDEFI_INCELEMEDE_DEGIL": "A review can only be recorded for a question under review.",
+        "BAD_LISTE": "Select between 1 and 200 questions.",
         "genel": "The action could not be completed. Check the details and try again."
       }
     },
@@ -594,7 +659,30 @@
       "activate": "Activate",
       "pause": "Pause",
       "form": { "title": "New Journey", "name": "Name", "trigger": "Trigger", "status": "Status", "errName": "Name is required (max 120 characters).", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
-      "pager": { "prev": "Previous", "next": "Next" }
+      "pager": { "prev": "Previous", "next": "Next" },
+      "stepsButton": "Steps",
+      "steps": {
+        "titleFor": "Steps: {name}",
+        "activeNote": "Journey is active. Steps are read-only; pause it first to edit.",
+        "editHint": "Steps cannot be saved while the journey has pending or running enrollments; the server rejects the change in that case.",
+        "loading": "Loading steps...",
+        "empty": "No steps yet. Add a step and save.",
+        "addStep": "Add step",
+        "maxReached": "At most 20 steps can be added.",
+        "stepNo": "Step {no}",
+        "type": "Type",
+        "label": "Label",
+        "hours": "Wait time (hours, 0-8760)",
+        "moveUp": "Move up",
+        "moveDown": "Move down",
+        "remove": "Remove",
+        "channelClosed": "This channel is not active yet; the step is skipped.",
+        "errLabel": "Each step needs a label (max 120 characters).",
+        "errSaat": "For a wait step, hours must be a whole number from 0 to 8760.",
+        "saved": "Steps saved.",
+        "close": "Close",
+        "stepTypes": { "trigger": "Trigger", "delay": "Wait", "email": "Email", "push": "Push", "in_app": "In-app", "sms": "SMS", "whatsapp": "WhatsApp" }
+      }
     },
     "mesajSablonlari": {
       "title": "Message Templates",
@@ -610,6 +698,24 @@
       "statuses": { "draft": "Draft", "active": "Active", "archived": "Archived" },
       "cols": { "name": "Name", "channel": "Channel", "subject": "Subject", "status": "Status", "created": "Created" },
       "form": { "titleNew": "New Template", "titleEdit": "Edit template", "name": "Name", "channel": "Channel", "subject": "Subject", "body": "Content", "bodyHint": "Use {{name}} to insert a variable.", "status": "Status", "errName": "Template name is required (max 120 characters).", "errBody": "Content is required.", "save": "Save", "saving": "Saving...", "cancel": "Cancel" },
+      "pager": { "prev": "Previous", "next": "Next" }
+    },
+    "mesajGunlugu": {
+      "title": "Message Log",
+      "readOnlyNote": "This screen is read-only. Email and phone are masked; child information is not shown.",
+      "loading": "Loading...",
+      "loadError": "Could not load message records.",
+      "retry": "Try again",
+      "empty": "No message records yet.",
+      "emptyFiltered": "No records match the selected filters.",
+      "allChannels": "All channels",
+      "allStatus": "All statuses",
+      "filters": { "channel": "Channel", "status": "Status" },
+      "channels": { "email": "Email", "sms": "SMS", "push": "Push", "in_app": "In-app", "whatsapp": "WhatsApp" },
+      "statuses": { "kuyrukta": "Queued", "gonderildi": "Sent", "teslim_edildi": "Delivered", "acildi": "Opened", "tiklandi": "Clicked", "donustu": "Converted", "basarisiz": "Failed", "izin_yok": "No consent", "kanal_kapali": "Channel off" },
+      "source": { "campaign": "Campaign", "journey": "Journey" },
+      "consent": { "yes": "Consent given", "no": "No consent", "unknown": "Unknown" },
+      "cols": { "time": "Time", "channel": "Channel", "status": "Status", "source": "Campaign / Journey", "recipient": "Household (masked)", "consent": "Consent", "error": "Error" },
       "pager": { "prev": "Previous", "next": "Next" }
     },
     "destekMasasi": {
@@ -696,7 +802,7 @@
         "phone": "Phone",
         "lifecycle": "Lifecycle",
         "plan": "Plan",
-        "mrr": "MRR",
+        "mrr": "Total payments",
         "health": "Health Score",
         "source": "Source",
         "consent": "Consent",
@@ -722,7 +828,8 @@
         "next": "Next"
       },
       "health": {
-        "label": "Health score (0-100)"
+        "label": "Health score (0-100)",
+        "noData": "No data"
       },
       "tabs": {
         "genel": "Overview",
@@ -793,6 +900,90 @@
         "tickets": "No support tickets.",
         "feed": "No team feed entries.",
         "events": "No event records."
+      },
+      "aksiyon": {
+        "yukleniyor": "Loading...",
+        "kaydediliyor": "Saving...",
+        "vazgec": "Cancel",
+        "hata": {
+          "genel": "The action could not be completed.",
+          "eksik": "This action is currently unavailable. Please notify the system administrator.",
+          "abonelik": "This action cannot be performed on subscribed households. End the subscription first.",
+          "demo": "Records cannot be saved in demo mode."
+        },
+        "not": {
+          "baslik": "Add note",
+          "tur": "Type",
+          "icerik": "Content",
+          "ekle": "Save note",
+          "hataIcerik": "Content must be 1-4000 characters.",
+          "basarili": "Note added.",
+          "tipler": { "note": "Note", "call": "Call", "meeting": "Meeting", "support": "Support" }
+        },
+        "gorev": {
+          "baslik": "Create task",
+          "gorevBaslik": "Task title",
+          "tur": "Type",
+          "oncelik": "Priority",
+          "bitis": "Due date",
+          "ekle": "Create task",
+          "hataBaslik": "Title is required (max 200 characters).",
+          "hataBitis": "Due date is required.",
+          "basarili": "Task created.",
+          "listeBaslik": "Tasks for this customer",
+          "bos": "No tasks for this customer."
+        },
+        "destek": {
+          "baslik": "Open support ticket",
+          "konu": "Subject",
+          "kategori": "Category",
+          "oncelik": "Priority",
+          "ekle": "Open ticket",
+          "hataKonu": "Subject must be 1-200 characters.",
+          "basarili": "Support ticket opened."
+        },
+        "sahip": {
+          "baslik": "Owner",
+          "mevcut": "Current owner",
+          "yok": "Unassigned",
+          "sec": "New owner",
+          "secim": "Select an admin",
+          "kaydet": "Assign owner",
+          "hataSec": "Select an admin.",
+          "basarili": "Owner updated.",
+          "bos": "No admins found."
+        },
+        "birlestir": {
+          "baslik": "Merge household",
+          "aciklama": "Merge this household with another customer record.",
+          "ara": "Find target household",
+          "araYer": "Name, email, phone or customer no",
+          "sonuc": "No matching household.",
+          "enAz": "Type at least 2 characters to search.",
+          "sec": "Select",
+          "secili": "Selected target",
+          "birlestirBtn": "Merge",
+          "onayBaslik": "Merge households",
+          "uyari": "This action cannot be undone. This household will be merged into the selected target household.",
+          "onayBtn": "Yes, merge",
+          "basarili": "Households merged.",
+          "hedefGit": "Go to target customer record"
+        },
+        "kvkk": {
+          "baslik": "Privacy (KVKK) actions",
+          "aciklama": "Visible to administrators only. These actions affect personal data.",
+          "aktar": "Export data",
+          "aktarAciklama": "Downloads the household's personal data as a JSON file.",
+          "aktarBasarili": "Data downloaded as a file.",
+          "anonim": "Anonymize",
+          "anonimAciklama": "Anonymizes the household's personal data. This cannot be undone.",
+          "onayBaslik": "Anonymize this household?",
+          "uyari": "This cannot be undone. Personal data will be anonymized and the record cannot be restored.",
+          "neden": "Reason (required)",
+          "hataNeden": "Reason must be 3-500 characters.",
+          "onayBtn": "Yes, anonymize",
+          "basarili": "Record anonymized."
+        }
       }
     },
     "crmGorevler": {
@@ -924,8 +1115,326 @@
       },
       "pager": { "prev": "Previous", "next": "Next" }
     },
+    "harcama": {
+      "description": "Enter ad spend manually. Ad accounts are not connected; CAC is calculated only for periods with entries.",
+      "form": {
+        "title": "Add spend",
+        "date": "Date",
+        "channel": "Channel",
+        "amount": "Amount",
+        "currency": "Currency",
+        "note": "Note (optional)",
+        "notePlaceholder": "e.g. March campaign",
+        "submit": "Save",
+        "saving": "Saving…",
+        "saved": "Spend saved.",
+        "errAmount": "Amount must be a number greater than zero."
+      },
+      "window": { "label": "Period", "days": "Last {count} days" },
+      "totals": {
+        "title": "Channel totals",
+        "note": "Currencies are totaled separately; TRY and USD are not mixed.",
+        "empty": "No spend entered for this period. CAC cannot be calculated yet.",
+        "cacNote": "CAC is not calculated yet; spend records are being prepared for it."
+      },
+      "cac": {
+        "title": "CAC (cost per registered household)",
+        "note": "Total spend ÷ registered households. No channel-level CAC; currencies are calculated separately.",
+        "newHouseholds": "Registered households",
+        "hidden": "Hidden (fewer than 5)",
+        "spend": "Spend",
+        "none": "Not calculable",
+        "lowData": "Fewer than 5 registrations; CAC hidden",
+        "noSpend": "No spend entered for this period; CAC not calculated."
+      },
+      "table": {
+        "title": "Entries",
+        "empty": "No entries in this period.",
+        "delete": "Delete",
+        "confirmDelete": "Delete this spend entry? The action is written to the audit log.",
+        "cols": { "date": "Date", "channel": "Channel", "amount": "Amount", "note": "Note", "action": "Action" }
+      },
+      "channels": {
+        "meta": "Meta",
+        "google_ads": "Google Ads",
+        "tiktok": "TikTok",
+        "youtube": "YouTube",
+        "instagram": "Instagram",
+        "diger": "Other"
+      },
+      "loading": "Loading…",
+      "loadError": "Could not load spend data.",
+      "retry": "Try again"
+    },
+    "eldeTutma": {
+      "title": "Retention (cohorts)",
+      "description": "Registered households that came back with at least one active day exactly 1, 7 and 30 days after sign-up.",
+      "window": { "label": "Period", "days": "Last {count} days" },
+      "cards": { "d1": "D1 (day 1)", "d7": "D7 (day 7)", "d30": "D30 (day 30)" },
+      "hidden": "Hidden (fewer than 5)",
+      "eligible": "Eligible",
+      "retained": "Retained",
+      "note": "Maturity: only households whose N-th day has passed count in the denominator. Rates are hidden when numerator or denominator is below 5. Registered household: any lifecycle except visitor and lead.",
+      "loading": "Loading…",
+      "loadError": "Could not load retention data.",
+      "retry": "Try again",
+      "weekly": {
+        "title": "Weekly cohorts",
+        "empty": "No registered households in this period.",
+        "cols": { "week": "Week (Mon)", "size": "Size" }
+      }
+    },
+    "veriKalitesi": {
+      "loading": "Loading…",
+      "loadError": "Could not load data quality data.",
+      "retry": "Try again",
+      "hidden": "Hidden (fewer than 5)",
+      "quality": {
+        "title": "Data quality",
+        "veliToplam": "Parent profiles",
+        "eposta_eksik": "Households missing email",
+        "eposta_eksikDesc": "Email field is empty or only whitespace. Measurement and messaging are not possible.",
+        "aktif_tarihsiz": "Activated household, no date",
+        "aktif_tarihsizDesc": "Activated or later but no activation date. Possible lifecycle error."
+      },
+      "consent": {
+        "title": "Communication consent (per channel)",
+        "note": "Parent profiles only. A parent with no preference record is treated as not consenting for that channel.",
+        "cols": {
+          "channel": "Channel",
+          "on": "Consent on",
+          "off": "Consent off",
+          "none": "No record"
+        }
+      },
+      "channels": {
+        "eposta": "Email",
+        "push": "Push",
+        "sms": "SMS",
+        "uygulama_ici": "In-app"
+      }
+    },
+    "raporTaslak": {
+      "title": "Weekly growth report",
+      "description": "One draft per ISO week. Drafts are decided only here; nothing is sent to any recipient.",
+      "produce": "Generate this week's draft",
+      "produced": "Draft ready (no new record is created for the same week).",
+      "loading": "Loading…",
+      "empty": "No drafts yet. You can generate this week's draft.",
+      "approve": "Approve",
+      "reject": "Reject",
+      "approved": "Report approved. This is a record only; sending is a separate step.",
+      "rejected": "Report rejected.",
+      "confirmApprove": "Approve this report? Approval is recorded only; nothing is sent to any recipient.",
+      "noteLabel": "Note (optional)",
+      "createdAt": "Generated",
+      "decidedAt": "Decided",
+      "hidden": "Hidden (fewer than 5)",
+      "noSpend": "No spend; CAC not calculated.",
+      "status": {
+        "taslak": "Draft",
+        "onaylandi": "Approved",
+        "reddedildi": "Rejected"
+      },
+      "sections": {
+        "retention": "Retention",
+        "cac": "CAC",
+        "quality": "Data quality"
+      },
+      "quality": {
+        "eposta_eksik": "Households missing email",
+        "aktif_tarihsiz": "Activated household, no date"
+      }
+    },
+    "ogrenmeToplam": {
+      "title": "Aggregate learning view",
+      "description": "Sessions, student count and completion rate. Correctness, skills and personal data are not shown here.",
+      "window": {
+        "label": "Period",
+        "days": "Last {count} days"
+      },
+      "loading": "Loading…",
+      "loadError": "Could not load aggregate learning data.",
+      "retry": "Try again",
+      "threshold": "Display threshold: at least {count} students per cell. Rows below it are hidden.",
+      "classes": {
+        "title": "Classes",
+        "empty": "No classes above the threshold in this period.",
+        "cols": {
+          "grade": "Grade"
+        }
+      },
+      "stories": {
+        "title": "Stories",
+        "empty": "No stories above the threshold in this period.",
+        "cols": {
+          "story": "Story"
+        }
+      },
+      "cols": {
+        "students": "Students",
+        "sessions": "Sessions",
+        "completion": "Completion"
+      }
+    },
+    "abDeney": {
+      "decision": {
+        "title": "Decision record",
+        "note": "Enter the analysis result. Numbers are entered by the admin from the analysis output; the system does not recalculate. A decision cannot be recorded before the end date.",
+        "none": "No running or stopped experiment is ready for a decision.",
+        "errors": {
+          "deney": "Choose an experiment first.",
+          "sayi": "Enter all result numbers."
+        },
+        "fields": {
+          "experiment": "Experiment",
+          "choose": "Choose…",
+          "outcome": "Outcome",
+          "control": "Control rate (%)",
+          "treatment": "Treatment rate (%)",
+          "p": "p-value",
+          "ciLow": "Confidence interval low (%)",
+          "ciHigh": "Confidence interval high (%)",
+          "decision": "Decision",
+          "srm": "SRM p-value (if any)",
+          "reason": "Reason"
+        },
+        "outcome": {
+          "karar_hazir": "Decision ready",
+          "guardrail_ihlali": "Guardrail breach",
+          "srm_gecersiz": "SRM invalid",
+          "yetersiz_ornek": "Insufficient sample"
+        },
+        "decisionOptions": {
+          "kazan_deney": "Treatment won",
+          "kazan_kontrol": "Control won",
+          "uygulama_yok": "No rollout",
+          "tekrarla": "Repeat"
+        },
+        "submit": "Save decision",
+        "fill": "Fill from database",
+        "filled": "Counts loaded from the database (control n={kn}, treatment n={dn}). Rates, p and 95% CI were computed from these counts.",
+        "lowN": "Fewer than 30 per arm (threshold {esik}); counts are hidden.",
+        "saved": "Decision saved."
+      },
+      "title": "A/B experiments",
+      "description": "Experiment definition and lifecycle. Starting needs an approval note; stopping needs a reason. Result analysis is not on this screen.",
+      "loading": "Loading…",
+      "saved": "Experiment draft saved.",
+      "started": "Experiment started.",
+      "stopped": "Experiment stopped.",
+      "confirmStart": "Start the experiment? Its definition cannot be changed after start.",
+      "confirmStop": "Stop the experiment? This cannot be undone.",
+      "create": {
+        "title": "New experiment draft",
+        "note": "A draft assigns no users until started. At least two guardrail metrics; at least 30 per arm.",
+        "fields": {
+          "name": "Experiment name",
+          "primary": "Primary metric",
+          "owner": "Owner",
+          "hypothesis": "Hypothesis",
+          "guardrail": "Guardrail metrics (comma-separated, at least 2)",
+          "guardrailPlaceholder": "refund_rate, complaint_rate",
+          "baseline": "Baseline rate (%)",
+          "minEffect": "Minimum detectable effect (% points)",
+          "sample": "Sample per arm",
+          "start": "Start",
+          "end": "End"
+        },
+        "submit": "Save draft"
+      },
+      "errors": {
+        "guardrail": "At least two guardrail metrics are required.",
+        "percent": "Rates must be between 0 and 100.",
+        "onayNotu": "Write an approval note to start.",
+        "neden": "Write a reason to stop."
+      },
+      "list": {
+        "title": "Experiments",
+        "empty": "No experiments yet.",
+        "cols": {
+          "name": "Experiment",
+          "status": "Status",
+          "dates": "Dates",
+          "guardrail": "Guardrails",
+          "action": "Action"
+        }
+      },
+      "status": {
+        "taslak": "Draft",
+        "yayinda": "Running",
+        "bitti": "Ended",
+        "durduruldu": "Stopped"
+      },
+      "start": {
+        "label": "Approve and start",
+        "note": "Approval note",
+        "notePlaceholder": "Approver and basis"
+      },
+      "stop": {
+        "label": "Stop",
+        "reason": "Stop reason",
+        "reasonPlaceholder": "Guardrail breach, error, etc."
+      }
+    },
     "growthAnalitik": {
       "title": "Growth Analytics",
+      "error": "Data could not be loaded.",
+      "lowData": "There is not enough data to show for this period.",
+      "suppressed": "Low data (under 5, hidden)",
+      "hiddenNote": "Counts under 5 are hidden and shown as “—”.",
+      "csvButton": "Export CSV",
+      "funnel": {
+        "title": "Signup funnel",
+        "desc": "Households that signed up in the last {count} days. Each step is counted by its own criterion.",
+        "colStep": "Step",
+        "colCount": "Count",
+        "colPrevious": "Vs previous step",
+        "colSignup": "Vs signups",
+        "churn": "Churned",
+        "steps": {
+          "kayit": "Signed up",
+          "cocuk_bagli": "Linked a child",
+          "ilk_soru": "Solved first question",
+          "deneme_basladi": "Started trial",
+          "ucretli": "Paid"
+        }
+      },
+      "utm": {
+        "title": "Channel and campaign attribution",
+        "desc": "Visitors, sign-ups and paid counts by first-touch UTM over the last {count} days.",
+        "other": "Other (small groups)",
+        "cols": {
+          "channel": "Channel",
+          "medium": "Medium",
+          "campaign": "Campaign",
+          "visitors": "Visitors",
+          "signups": "Sign-ups",
+          "signupRate": "Sign-up %",
+          "paid": "Paid",
+          "paidRate": "Paid %"
+        }
+      },
+      "activity": {
+        "title": "Activity",
+        "desc": "Unique students who answered. Days are counted in Turkey time.",
+        "dau": "Daily active (DAU)",
+        "wau": "Weekly active (WAU)",
+        "mau": "Monthly active (MAU)",
+        "stickiness": "DAU / MAU: {pct}",
+        "stickinessLabel": "DAU/MAU stickiness (%)",
+        "series": "Daily active students",
+        "seriesDesc": "Each day of the selected period",
+        "seriesAria": "Daily active students chart for the last {count} days"
+      },
+      "csv": {
+        "funnel": "Signup funnel",
+        "utm": "Channel and campaign attribution",
+        "activity": "Activity",
+        "metric": "Metric",
+        "value": "Value",
+        "note": "Empty cell: count or rate under 5 (hidden). The file contains no personal data."
+      },
       "loading": "Loading...",
       "empty": "No data found.",
       "retry": "Try again",

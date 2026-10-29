@@ -1,0 +1,1822 @@
+[
+ {
+  "id": "SB5-YON-S1-001",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Hastane yerinin kuzeydoğusunda bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Market",
+   "B": "Fırın",
+   "C": "Park",
+   "D": "Terminal"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Hastane yerinden kuzeydoğu yönüne gidildiğinde Terminal yerine ulaşılır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Market, Hastane yerinin doğusunda bulunur; istenen yön kuzeydoğu yönüdür.",
+   "B": "Fırın, Hastane yerinin kuzeyinde bulunur; istenen yön kuzeydoğu yönüdür.",
+   "C": "Park, Hastane yerinin kuzeyinde bulunur; istenen yön kuzeydoğu yönüdür.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Park, Fırın, Terminal, Hastane, Market. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Park</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Hastane</text><rect x=\"173\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Park, Fırın, Terminal, Hastane, Market. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Park",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Fırın",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Terminal",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Hastane",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Market",
+      "x": 2,
+      "y": 2
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Hastane|Terminal"
+    ],
+    "beklenen": "kuzeydoğu"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-002",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Stadyum yerinin kuzeybatısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Postane",
+   "B": "Fırın",
+   "C": "Belediye",
+   "D": "Park"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Stadyum yerinden kuzeybatı yönüne gidildiğinde Belediye yerine ulaşılır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Postane, Stadyum yeri ile aynı doğrultuda değildir.",
+   "B": "Fırın, Stadyum yeri ile aynı doğrultuda değildir.",
+   "C": "Doğru.",
+   "D": "Park, Stadyum yerinin kuzeyinde bulunur; istenen yön kuzeybatı yönüdür."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Postane, Stadyum, Fırın, Park, Belediye. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Stadyum</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Park</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Belediye</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Postane, Stadyum, Fırın, Park, Belediye. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Postane",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Stadyum",
+      "x": 1,
+      "y": 2
+     },
+     {
+      "ad": "Fırın",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Park",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Belediye",
+      "x": 0,
+      "y": 1
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Stadyum|Belediye"
+    ],
+    "beklenen": "kuzeybatı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-003",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ana yönler",
+  "soru_metni": "Yukarıdaki haritada Müze yerinin batısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Okul",
+   "B": "Stadyum",
+   "C": "Park",
+   "D": "Postane"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Müze yerinden batı yönüne gidildiğinde Stadyum yerine ulaşılır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Okul, Müze yeri ile aynı doğrultuda değildir.",
+   "B": "Doğru.",
+   "C": "Park, Müze yerinin kuzeybatısında bulunur; istenen yön batı yönüdür.",
+   "D": "Postane, Müze yerinin kuzeydoğusunda bulunur; istenen yön batı yönüdür."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Müze, Postane, Stadyum, Park, Okul. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Müze</text><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Stadyum</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Park</text><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okul</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Müze, Postane, Stadyum, Park, Okul. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Müze",
+      "x": 1,
+      "y": 2
+     },
+     {
+      "ad": "Postane",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Stadyum",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Park",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Okul",
+      "x": 0,
+      "y": 0
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Müze|Stadyum"
+    ],
+    "beklenen": "batı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ana-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-004",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Terminal yerinin kuzeybatısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Market",
+   "B": "Müze",
+   "C": "Hastane",
+   "D": "Okul"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Terminal yerinden kuzeybatı yönüne gidildiğinde Market yerine ulaşılır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Müze, Terminal yerinin güneybatısında bulunur; istenen yön kuzeybatı yönüdür.",
+   "C": "Hastane, Terminal yerinin kuzeyinde bulunur; istenen yön kuzeybatı yönüdür.",
+   "D": "Okul, Terminal yerinin kuzeydoğusunda bulunur; istenen yön kuzeybatı yönüdür."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Hastane, Okul, Market, Terminal, Müze. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Hastane</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okul</text><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"95\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Müze</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Hastane, Okul, Market, Terminal, Müze. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Hastane",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Okul",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Market",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Terminal",
+      "x": 1,
+      "y": 1
+     },
+     {
+      "ad": "Müze",
+      "x": 0,
+      "y": 2
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Terminal|Market"
+    ],
+    "beklenen": "kuzeybatı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-005",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ana yönler",
+  "soru_metni": "Yukarıdaki haritada Okul yerinin batısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Belediye",
+   "B": "Terminal",
+   "C": "Hastane",
+   "D": "Stadyum"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Okul yerinden batı yönüne gidildiğinde Hastane yerine ulaşılır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Belediye, Okul yerinin güneyinde bulunur; istenen yön batı yönüdür.",
+   "B": "Terminal, Okul yerinin güneyinde bulunur; istenen yön batı yönüdür.",
+   "C": "Doğru.",
+   "D": "Stadyum, Okul yeri ile aynı doğrultuda değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Belediye, Park, Hastane, Stadyum, Terminal, Okul. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Belediye</text><rect x=\"95\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Park</text><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Hastane</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Stadyum</text><rect x=\"173\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okul</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Belediye, Park, Hastane, Stadyum, Terminal, Okul. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Belediye",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Park",
+      "x": 1,
+      "y": 1
+     },
+     {
+      "ad": "Hastane",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Stadyum",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Terminal",
+      "x": 2,
+      "y": 2
+     },
+     {
+      "ad": "Okul",
+      "x": 2,
+      "y": 0
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Okul|Hastane"
+    ],
+    "beklenen": "batı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ana-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-006",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Postane yerinin güneybatısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Market",
+   "B": "Banka",
+   "C": "Müze",
+   "D": "Fırın"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Postane yerinden güneybatı yönüne gidildiğinde Banka yerine ulaşılır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Market, Postane yeri ile aynı doğrultuda değildir.",
+   "B": "Doğru.",
+   "C": "Müze, Postane yerinin kuzeybatısında bulunur; istenen yön güneybatı yönüdür.",
+   "D": "Fırın, Postane yeri ile aynı doğrultuda değildir."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Postane, Müze, Market, Fırın, Banka. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Müze</text><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Banka</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Postane, Müze, Market, Fırın, Banka. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Postane",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Müze",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Market",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Fırın",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Banka",
+      "x": 1,
+      "y": 2
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Postane|Banka"
+    ],
+    "beklenen": "güneybatı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-007",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ana yönler",
+  "soru_metni": "Yukarıdaki haritada Market yerinin doğusunda bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Fırın",
+   "B": "Terminal",
+   "C": "Belediye",
+   "D": "Okul"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Market yerinden doğu yönüne gidildiğinde Okul yerine ulaşılır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Fırın, Market yeri ile aynı doğrultuda değildir.",
+   "B": "Terminal, Market yerinin batısında bulunur; istenen yön doğu yönüdür.",
+   "C": "Belediye, Market yerinin güneydoğusunda bulunur; istenen yön doğu yönüdür.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Terminal, Fırın, Okul, Postane, Belediye, Market. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okul</text><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Belediye</text><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Terminal, Fırın, Okul, Postane, Belediye, Market. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Terminal",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Fırın",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Okul",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Postane",
+      "x": 1,
+      "y": 2
+     },
+     {
+      "ad": "Belediye",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Market",
+      "x": 1,
+      "y": 0
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Market|Okul"
+    ],
+    "beklenen": "doğu"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ana-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-008",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Market yerinin kuzeybatısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Postane",
+   "B": "Terminal",
+   "C": "Park",
+   "D": "Stadyum"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Market yerinden kuzeybatı yönüne gidildiğinde Postane yerine ulaşılır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Terminal, Market yerinin güneyinde bulunur; istenen yön kuzeybatı yönüdür.",
+   "C": "Park, Market yerinin doğusunda bulunur; istenen yön kuzeybatı yönüdür.",
+   "D": "Stadyum, Market yerinin batısında bulunur; istenen yön kuzeybatı yönüdür."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Postane, Stadyum, Banka, Market, Park, Terminal. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Stadyum</text><rect x=\"173\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Banka</text><rect x=\"95\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Park</text><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Postane, Stadyum, Banka, Market, Park, Terminal. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Postane",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Stadyum",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Banka",
+      "x": 2,
+      "y": 2
+     },
+     {
+      "ad": "Market",
+      "x": 1,
+      "y": 1
+     },
+     {
+      "ad": "Park",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Terminal",
+      "x": 1,
+      "y": 2
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Market|Postane"
+    ],
+    "beklenen": "kuzeybatı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-009",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ana yönler",
+  "soru_metni": "Yukarıdaki haritada Müze yerinin kuzeyinde bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Market",
+   "B": "Postane",
+   "C": "Okul",
+   "D": "Park"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Müze yerinden kuzey yönüne gidildiğinde Postane yerine ulaşılır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Market, Müze yerinin güneyinde bulunur; istenen yön kuzey yönüdür.",
+   "B": "Doğru.",
+   "C": "Okul, Müze yeri ile aynı doğrultuda değildir.",
+   "D": "Park, Müze yeri ile aynı doğrultuda değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Postane, Market, Müze, Okul, Park. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Müze</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okul</text><rect x=\"173\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Park</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Postane, Market, Müze, Okul, Park. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Postane",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Market",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Müze",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Okul",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Park",
+      "x": 2,
+      "y": 2
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Müze|Postane"
+    ],
+    "beklenen": "kuzey"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ana-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-010",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Okul yerinin kuzeybatısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Market",
+   "B": "Postane",
+   "C": "Müze",
+   "D": "Terminal"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Okul yerinden kuzeybatı yönüne gidildiğinde Terminal yerine ulaşılır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Market, Okul yeri ile aynı doğrultuda değildir.",
+   "B": "Postane, Okul yeri ile aynı doğrultuda değildir.",
+   "C": "Müze, Okul yerinin batısında bulunur; istenen yön kuzeybatı yönüdür.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Postane, Market, Okul, Müze, Terminal, Fırın. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okul</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Müze</text><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><rect x=\"173\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Postane, Market, Okul, Müze, Terminal, Fırın. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Postane",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Market",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Okul",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Müze",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Terminal",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Fırın",
+      "x": 2,
+      "y": 2
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Okul|Terminal"
+    ],
+    "beklenen": "kuzeybatı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-011",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ana yönler",
+  "soru_metni": "Yukarıdaki haritada Park yerinin doğusunda bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Müze",
+   "B": "Terminal",
+   "C": "Okul",
+   "D": "Hastane"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Park yerinden doğu yönüne gidildiğinde Okul yerine ulaşılır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Müze, Park yerinin güneybatısında bulunur; istenen yön doğu yönüdür.",
+   "B": "Terminal, Park yeri ile aynı doğrultuda değildir.",
+   "C": "Doğru.",
+   "D": "Hastane, Park yerinin güneyinde bulunur; istenen yön doğu yönüdür."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Müze, Terminal, Okul, Park, Hastane, Banka. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Müze</text><rect x=\"173\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okul</text><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Park</text><rect x=\"95\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Hastane</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Banka</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Müze, Terminal, Okul, Park, Hastane, Banka. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Müze",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Terminal",
+      "x": 2,
+      "y": 2
+     },
+     {
+      "ad": "Okul",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Park",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Hastane",
+      "x": 1,
+      "y": 1
+     },
+     {
+      "ad": "Banka",
+      "x": 0,
+      "y": 2
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Park|Okul"
+    ],
+    "beklenen": "doğu"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ana-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-012",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Okul yerinin güneydoğusunda bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Belediye",
+   "B": "Hastane",
+   "C": "Market",
+   "D": "Postane"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Okul yerinden güneydoğu yönüne gidildiğinde Belediye yerine ulaşılır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Hastane, Okul yerinin kuzeydoğusunda bulunur; istenen yön güneydoğu yönüdür.",
+   "C": "Market, Okul yerinin doğusunda bulunur; istenen yön güneydoğu yönüdür.",
+   "D": "Postane, Okul yerinin güneyinde bulunur; istenen yön güneydoğu yönüdür."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Market, Okul, Fırın, Postane, Hastane, Belediye. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okul</text><rect x=\"95\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Hastane</text><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Belediye</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Market, Okul, Fırın, Postane, Hastane, Belediye. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Market",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Okul",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Fırın",
+      "x": 1,
+      "y": 1
+     },
+     {
+      "ad": "Postane",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Hastane",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Belediye",
+      "x": 1,
+      "y": 2
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Okul|Belediye"
+    ],
+    "beklenen": "güneydoğu"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-013",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Market yerinin kuzeybatısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Park",
+   "B": "Banka",
+   "C": "Postane",
+   "D": "Müze"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Market yerinden kuzeybatı yönüne gidildiğinde Postane yerine ulaşılır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Park, Market yerinin kuzeyinde bulunur; istenen yön kuzeybatı yönüdür.",
+   "B": "Banka, Market yeri ile aynı doğrultuda değildir.",
+   "C": "Doğru.",
+   "D": "Müze, Market yerinin kuzeydoğusunda bulunur; istenen yön kuzeybatı yönüdür."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Park, Market, Müze, Postane, Banka, Fırın. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Park</text><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Müze</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Banka</text><rect x=\"95\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Park, Market, Müze, Postane, Banka, Fırın. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Park",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Market",
+      "x": 1,
+      "y": 2
+     },
+     {
+      "ad": "Müze",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Postane",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Banka",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Fırın",
+      "x": 1,
+      "y": 1
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Market|Postane"
+    ],
+    "beklenen": "kuzeybatı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-014",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ana yönler",
+  "soru_metni": "Yukarıdaki haritada Postane yerinin doğusunda bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Fırın",
+   "B": "Okul",
+   "C": "Park",
+   "D": "Stadyum"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Postane yerinden doğu yönüne gidildiğinde Okul yerine ulaşılır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Fırın, Postane yerinin kuzeydoğusunda bulunur; istenen yön doğu yönüdür.",
+   "B": "Doğru.",
+   "C": "Park, Postane yerinin güneyinde bulunur; istenen yön doğu yönüdür.",
+   "D": "Stadyum, Postane yeri ile aynı doğrultuda değildir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Okul, Park, Stadyum, Fırın, Postane, Market. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okul</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Park</text><rect x=\"173\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Stadyum</text><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Okul, Park, Stadyum, Fırın, Postane, Market. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Okul",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Park",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Stadyum",
+      "x": 2,
+      "y": 2
+     },
+     {
+      "ad": "Fırın",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Postane",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Market",
+      "x": 0,
+      "y": 0
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Postane|Okul"
+    ],
+    "beklenen": "doğu"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ana-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-015",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Belediye yerinin güneybatısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Hastane",
+   "B": "Fırın",
+   "C": "Postane",
+   "D": "Stadyum"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Belediye yerinden güneybatı yönüne gidildiğinde Stadyum yerine ulaşılır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Hastane, Belediye yeri ile aynı doğrultuda değildir.",
+   "B": "Fırın, Belediye yerinin batısında bulunur; istenen yön güneybatı yönüdür.",
+   "C": "Postane, Belediye yerinin kuzeyinde bulunur; istenen yön güneybatı yönüdür.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Banka, Belediye, Hastane, Stadyum, Fırın, Postane. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Banka</text><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Belediye</text><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Hastane</text><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Stadyum</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Banka, Belediye, Hastane, Stadyum, Fırın, Postane. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Banka",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Belediye",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Hastane",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Stadyum",
+      "x": 1,
+      "y": 2
+     },
+     {
+      "ad": "Fırın",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Postane",
+      "x": 2,
+      "y": 0
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Belediye|Stadyum"
+    ],
+    "beklenen": "güneybatı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-016",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Market yerinin güneybatısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Park",
+   "B": "Banka",
+   "C": "Terminal",
+   "D": "Stadyum"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Market yerinden güneybatı yönüne gidildiğinde Park yerine ulaşılır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Banka, Market yeri ile aynı doğrultuda değildir.",
+   "C": "Terminal, Market yerinin batısında bulunur; istenen yön güneybatı yönüdür.",
+   "D": "Stadyum, Market yeri ile aynı doğrultuda değildir."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Terminal, Banka, Park, Market, Stadyum. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Banka</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Park</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Stadyum</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Terminal, Banka, Park, Market, Stadyum. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Terminal",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Banka",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Park",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Market",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Stadyum",
+      "x": 1,
+      "y": 2
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Market|Park"
+    ],
+    "beklenen": "güneybatı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-017",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Belediye yerinin kuzeybatısında bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Terminal",
+   "B": "Banka",
+   "C": "Müze",
+   "D": "Market"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Belediye yerinden kuzeybatı yönüne gidildiğinde Terminal yerine ulaşılır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Banka, Belediye yerinin doğusunda bulunur; istenen yön kuzeybatı yönüdür.",
+   "C": "Müze, Belediye yeri ile aynı doğrultuda değildir.",
+   "D": "Market, Belediye yerinin kuzeyinde bulunur; istenen yön kuzeybatı yönüdür."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Market, Belediye, Müze, Terminal, Banka, Fırın. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"95\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Belediye</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Müze</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><rect x=\"173\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Banka</text><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Market, Belediye, Müze, Terminal, Banka, Fırın. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Market",
+      "x": 1,
+      "y": 1
+     },
+     {
+      "ad": "Belediye",
+      "x": 1,
+      "y": 2
+     },
+     {
+      "ad": "Müze",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Terminal",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Banka",
+      "x": 2,
+      "y": 2
+     },
+     {
+      "ad": "Fırın",
+      "x": 1,
+      "y": 0
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Belediye|Terminal"
+    ],
+    "beklenen": "kuzeybatı"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-018",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Market yerinin güneydoğusunda bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Belediye",
+   "B": "Banka",
+   "C": "Stadyum",
+   "D": "Terminal"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Market yerinden güneydoğu yönüne gidildiğinde Terminal yerine ulaşılır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Belediye, Market yerinin güneyinde bulunur; istenen yön güneydoğu yönüdür.",
+   "B": "Banka, Market yerinin güneyinde bulunur; istenen yön güneydoğu yönüdür.",
+   "C": "Stadyum, Market yerinin doğusunda bulunur; istenen yön güneydoğu yönüdür.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Fırın, Market, Banka, Belediye, Stadyum, Terminal. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Fırın</text><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Banka</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Belediye</text><rect x=\"95\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Stadyum</text><rect x=\"173\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Fırın, Market, Banka, Belediye, Stadyum, Terminal. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Fırın",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Market",
+      "x": 0,
+      "y": 0
+     },
+     {
+      "ad": "Banka",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Belediye",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Stadyum",
+      "x": 1,
+      "y": 0
+     },
+     {
+      "ad": "Terminal",
+      "x": 2,
+      "y": 2
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Market|Terminal"
+    ],
+    "beklenen": "güneydoğu"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-019",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ana yönler",
+  "soru_metni": "Yukarıdaki haritada Terminal yerinin güneyinde bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Belediye",
+   "B": "Market",
+   "C": "Banka",
+   "D": "Stadyum"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Terminal yerinden güney yönüne gidildiğinde Market yerine ulaşılır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Belediye, Terminal yerinin doğusunda bulunur; istenen yön güney yönüdür.",
+   "B": "Doğru.",
+   "C": "Banka, Terminal yeri ile aynı doğrultuda değildir.",
+   "D": "Stadyum, Terminal yerinin güneydoğusunda bulunur; istenen yön güney yönüdür."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Stadyum, Banka, Belediye, Market, Terminal. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"95\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Stadyum</text><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Banka</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Belediye</text><rect x=\"17\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"17\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Terminal</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Stadyum, Banka, Belediye, Market, Terminal. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Stadyum",
+      "x": 1,
+      "y": 1
+     },
+     {
+      "ad": "Banka",
+      "x": 2,
+      "y": 1
+     },
+     {
+      "ad": "Belediye",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Market",
+      "x": 0,
+      "y": 1
+     },
+     {
+      "ad": "Terminal",
+      "x": 0,
+      "y": 0
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Terminal|Market"
+    ],
+    "beklenen": "güney"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ana-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "SB5-YON-S1-020",
+  "sinif": 5,
+  "ders": "Sosyal Bilgiler",
+  "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+  "kazanim_kodu": "SB.5.2.1",
+  "konu": "Yaşadığım Yer",
+  "alt_konu": "Ara yönler",
+  "soru_metni": "Yukarıdaki haritada Hastane yerinin kuzeydoğusunda bulunan yer aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Müze",
+   "B": "Market",
+   "C": "Banka",
+   "D": "Belediye"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Haritanın yukarısı kuzeydir. Pusulaya bakarak yönü bul ve o yönde ilerle.",
+  "cozum_adimlari": [
+   "Pusulaya göre haritanın üstü kuzey, altı güney, sağı doğu, solu batıdır.",
+   "Hastane yerinden kuzeydoğu yönüne gidildiğinde Banka yerine ulaşılır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Müze, Hastane yerinin güneybatısında bulunur; istenen yön kuzeydoğu yönüdür.",
+   "B": "Market, Hastane yerinin güneyinde bulunur; istenen yön kuzeydoğu yönüdür.",
+   "C": "Doğru.",
+   "D": "Belediye, Hastane yerinin doğusunda bulunur; istenen yön kuzeydoğu yönüdür."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "yer-haritasi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 358 196\" role=\"img\" aria-label=\"Izgara biçiminde bir harita; yerler: Postane, Market, Müze, Hastane, Banka, Belediye. Sağda pusula (K, G, D, B) vardır.\"><rect width=\"358\" height=\"196\" fill=\"#FFFFFF\"/><rect x=\"14\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"14\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"92\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"14\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"70\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"170\" y=\"126\" width=\"78\" height=\"56\" fill=\"none\" stroke=\"#9CA3AF\" stroke-width=\"0.8\"/><rect x=\"173\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Postane</text><rect x=\"95\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Market</text><rect x=\"17\" y=\"129\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"53\" y=\"159\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Müze</text><rect x=\"95\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"131\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Hastane</text><rect x=\"173\" y=\"17\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Banka</text><rect x=\"173\" y=\"73\" width=\"72\" height=\"50\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.6\"/><text x=\"209\" y=\"103\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Belediye</text><line x1=\"300\" y1=\"106\" x2=\"300\" y2=\"46\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"300,46 303.91,54.1 296.09,54.1\" fill=\"#1F2937\"/><line x1=\"270\" y1=\"76\" x2=\"330\" y2=\"76\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><polygon points=\"330,76 321.9,79.91 321.9,72.09\" fill=\"#1F2937\"/><text x=\"300\" y=\"36\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">K</text><text x=\"300\" y=\"128\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">G</text><text x=\"344\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">D</text><text x=\"256\" y=\"81\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">B</text></svg>",
+   "alt_metin": "Izgara biçiminde bir harita; yerler: Postane, Market, Müze, Hastane, Banka, Belediye. Sağda pusula (K, G, D, B) vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "yer-haritasi",
+   "parametreler": {
+    "en": 3,
+    "boy": 3,
+    "yerler": [
+     {
+      "ad": "Postane",
+      "x": 2,
+      "y": 2
+     },
+     {
+      "ad": "Market",
+      "x": 1,
+      "y": 2
+     },
+     {
+      "ad": "Müze",
+      "x": 0,
+      "y": 2
+     },
+     {
+      "ad": "Hastane",
+      "x": 1,
+      "y": 1
+     },
+     {
+      "ad": "Banka",
+      "x": 2,
+      "y": 0
+     },
+     {
+      "ad": "Belediye",
+      "x": 2,
+      "y": 1
+     }
+    ]
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "yonler",
+     "Hastane|Banka"
+    ],
+    "beklenen": "kuzeydoğu"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "sb5-ara-yon",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ }
+]

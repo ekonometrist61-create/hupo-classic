@@ -1,0 +1,450 @@
+{
+ "surum": "1",
+ "parti": {
+  "parti_id": "soru-uretim-2026-10-22-2sinif-ek2",
+  "aciklama": "2. sınıf ek parti: zorluk 3 ek-2 (Türkçe 4, Hayat Bilgisi 7); Sonnet taslak, Haiku kör çözüm, Sonnet kör kalite; kalite 'sari'; yayın insan onayına bağlı"
+ },
+ "kaynaklar": [],
+ "sorular": [
+  {
+   "soru_id": "tr2-053",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Anlam oluşturma",
+   "alt_konu": "Başlık ve ilk cümlelerden tahmin",
+   "zorluk": 2,
+   "soru_metni": "“Karıncaların Kış Hazırlığı” başlıklı bir metin şöyle başlıyor:\n\nYaz sonu geldi. Havalar serinlemeye başladı. Karıncalar yuvalarına durmadan tane taşıyor.\n\nBaşlığa ve metnin bu bölümüne göre devamında en çok hangi olayın anlatılması beklenir?",
+   "siklar": {
+    "A": "Karıncaların taneleri yuvada biriktirmesi.",
+    "B": "Karıncaların kışın karda yiyecek araması.",
+    "C": "Karıncaların yaz boyunca neler yaptığı.",
+    "D": "Karıncaların taneleri yuvadan dışarı atması."
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Metne göre yaz bitiyor ve karıncalar yuvalarına sürekli tane taşıyor.",
+    "Başlıkta bu işin kış için bir hazırlık olduğu söyleniyor.",
+    "Kış için hazırlık yapan karıncaların taşıdıkları taneleri yuvada biriktirmesi beklenir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Başlıktaki hazırlık sözcüğü ile karıncaların yaptığı iş birlikte neyi gösterir, düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Yalnız başlıktaki kış sözcüğüne bakan öğrenci, hazırlığın kıştan önce yapıldığını ve karıncaların tane taşıdığını atlar.",
+    "C": "Yalnız yaz sonu bilgisine bakan öğrenci, başlıktaki hazırlık fikrini ve taşınan taneleri göz ardı eder.",
+    "D": "Yalnız taşıma eylemine bakan öğrenci, işin kış hazırlığı olduğunu düşünmeden taneleri yuvadan çıkarma sonucuna varır."
+   },
+   "kazanim_kodu": "T.O.2.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-054",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Karakteri açıklama",
+   "zorluk": 2,
+   "soru_metni": "Ela’nın takımı oyunu kazandı. Ela çok sevindi. Karşı takımdan Poyraz’ın gözleri doldu. Ela hemen Poyraz’ın yanına gidip omzuna dokundu.\n\nMetne göre Ela nasıl bir çocuktur?",
+   "siklar": {
+    "A": "Kazandığı için kendini herkesten üstün gören",
+    "B": "Kazanmanın hiç önemli olmadığını düşünen",
+    "C": "Kazanırken rakibinin üzüntüsünü de düşünen",
+    "D": "Yalnızca kendi sevincini önemseyen"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Ela oyunu kazandığı için çok sevinmiştir.",
+    "Karşı takımdan Poyraz üzülünce Ela onun yanına gidip omzuna dokunmuştur.",
+    "Bu iki davranış birlikte, Ela’nın kendi sevincinin yanında rakibinin duygusunu da düşündüğünü gösterir.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ela’nın hem sevincine hem de sonra yaptığı harekete bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yalnız kazanma ve sevinme bilgisini kullanan öğrenci, Poyraz’ı teselli etme davranışını atlar.",
+    "B": "Ela’nın Poyraz’a yönelmesini kazanmaya önem vermemek sanan öğrenci, Ela’nın çok sevindiği bilgisini göz ardı eder.",
+    "D": "Yalnız Ela’nın sevincine bakan öğrenci, Poyraz’ın yanına gitmesinin ne gösterdiğini düşünmeden sonuca varır."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-055",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Metnin konusunu bulma",
+   "zorluk": 2,
+   "soru_metni": "Kaplumbağanın su kabına her sabah taze su konur. Yemini öğrenciler sırayla verir. Öğretmen su kabının temiz olup olmadığına her gün bakar.\n\nBu metnin konusu hangisidir?",
+   "siklar": {
+    "A": "Kaplumbağaya sınıfta nasıl bakıldığı",
+    "B": "Kaplumbağaların kışı nasıl geçirdiği",
+    "C": "Öğretmenin kabın temizliğini denetlemesi",
+    "D": "Öğrencilerin kaplumbağaya sırayla yem vermesi"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "İlk cümlede su kabına taze su konması, ikinci cümlede yem verilmesi, üçüncü cümlede kabın temizliğinin kontrol edilmesi anlatılıyor.",
+    "Bu işlerin üçü de kaplumbağanın bakımıyla ilgilidir.",
+    "Tek bir işi anlatan şıklar ayrıntıdır; metnin tamamını kapsayan konu kaplumbağaya nasıl bakıldığıdır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Üç cümlede anlatılan işlerin ortak amacını bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Kaplumbağa denince kışı hatırlayan öğrenci, metinde olmayan genel bir bilgiyi konu sanır.",
+    "C": "Yalnız son cümleye bakan öğrenci, öğretmenin yaptığı işi metnin tamamının konusu sanır.",
+    "D": "Yalnız ikinci cümleye bakan öğrenci, yem verme işini metnin tamamının konusu sanır."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-058",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazma kurallarını uygulama",
+   "alt_konu": "ki bağlacı ve kesme işareti",
+   "zorluk": 3,
+   "soru_metni": "Hangi cümle yazım kurallarına uygun yazılmıştır?",
+   "siklar": {
+    "A": "Duydumki Ayşe İzmire taşınmış.",
+    "B": "Duydumki Ayşe İzmir’e taşınmış.",
+    "C": "Duydum ki Ayşe İzmir’e taşınmış.",
+    "D": "Duydum ki Ayşe İzmire taşınmış."
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Bağlaç olan “ki” ayrı yazılır: “Duydum ki”.",
+    "Özel ada gelen ek kesme işaretiyle ayrılır: “İzmir’e”.",
+    "Her iki kuralı da uygulayan tek cümle “Duydum ki Ayşe İzmir’e taşınmış.” cümlesidir.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Hem bağlacın yazılışına hem de özel ada gelen ekin yazılışına bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Bağlaç “ki”yi bitişik yazan ve özel ada gelen ekte kesmeyi unutan öğrenci iki kuralı da uygulayamaz.",
+    "B": "Kesmeyi doğru kullanan ama “ki” bağlacını önceki sözcüğe bitiştiren öğrenci yalnız bir kuralı uygular.",
+    "D": "“Ki” bağlacını doğru ayıran ama özel ada gelen ekte kesmeyi unutan öğrenci yalnız bir kuralı uygular."
+   },
+   "kazanim_kodu": "T.Y.2.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-038",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Etkili iletişim",
+   "alt_konu": "Söz sırası ve dinleme",
+   "zorluk": 2,
+   "soru_metni": "Mert öğretmene bir soru sordu. Öğretmen cevap vermeye başladı. Ece’nin de benzer bir sorusu var. Ece’nin hem dinlemek hem de sorusunu doğru iletmek için yapması gereken hangisidir?",
+   "siklar": {
+    "A": "Cevabı dinleyip sorusu kalırsa söz istemesi",
+    "B": "Cevap sürerken sorusunu yüksek sesle sorması",
+    "C": "Öğretmenin yanına gidip cevabı yeniden istemesi",
+    "D": "Sorusunu yan sırasındaki arkadaşına fısıldaması"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Öğretmen konuşurken sınıfta söz sırasına uyulur ve konuşan dinlenir.",
+    "Mert’e verilen cevap Ece’nin sorusunu da yanıtlayabilir; bunu anlamak için önce dinlemek gerekir.",
+    "Dinledikten sonra sorusu hâlâ varsa Ece söz isteyerek sorusunu öğretmene iletir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Öğretmenin verdiği cevabın, Ece’nin merak ettiği şeyi de anlatıp anlatmayacağını düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Sorunun hemen sorulması gerektiği sanılır; söz sırası atlanır ve cevap dinlenmemiş olur.",
+    "C": "Öğretmene yaklaşmanın daha iyi iletişim olduğu sanılır; sınıf düzeni bozulur ve verilen cevap dinlenmez.",
+    "D": "Sorunun arkadaşa söylenmesinin yeterli olduğu sanılır; öğretmen dinlenmez ve soru öğretmene iletilmez."
+   },
+   "kazanim_kodu": "HB.2.1.2",
+   "kazanim_metni": "Öğretmen ve arkadaşlarıyla etkili iletişim kurabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-039",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Sağlıklı büyüme ve gelişme",
+   "alt_konu": "Uyku ve ekran alışkanlığı",
+   "zorluk": 2,
+   "soru_metni": "Barış her akşam ekran karşısında oyun oynuyor ve gece geç yatıyor. Sabah derste gözleri kapanıyor, öğretmeni dinlemekte zorlanıyor. Barış’ın derste daha iyi dinleyebilmesi için hangi alışkanlığını değiştirmesi gerekir?",
+   "siklar": {
+    "A": "Ödevini akşam yemeğinden önce yapması",
+    "B": "Oyunu erken bitirip yatağa girmesi",
+    "C": "Teneffüslerde koşma süresini kısaltması",
+    "D": "Kahvaltıda daha fazla süt içmesi"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Barış’ın derste dinlemekte zorlanması, gözlerinin kapanmasından yani yorgunluktan gelir.",
+    "Vücut geceleri uyuyarak dinlenir; Barış geç yattığı için yeterince uyuyamaz.",
+    "Geç yatmasının nedeni akşam oyunu uzatmasıdır; oyunu erken bitirip yatarsa dinlenmiş olur ve derste daha iyi dinler.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Derste gözlerin kapanmasının hangi ihtiyacın karşılanmamasından geldiğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Düzenli çalışmanın her sorunu çözeceği sanılır; ödev zamanı uykuyu ve yorgunluğu değiştirmez.",
+    "C": "Hareketin insanı yorduğu için dinlemeyi bozduğu sanılır; oysa yorgunluğun nedeni uykusuzluktur ve hareket sağlıklı büyümeye yarar.",
+    "D": "Sütün tek başına yorgunluğu gidereceği sanılır; süt büyümeye yarar ama geç yatmanın yarattığı uykusuzluğu gidermez."
+   },
+   "kazanim_kodu": "HB.2.2.1",
+   "kazanim_metni": "Sağlıklı büyüme ve gelişme ile alışkanlıkları arasındaki ilişkiyi çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-040",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Acil durum",
+   "alt_konu": "Doğru numara ve doğru bilgi",
+   "zorluk": 2,
+   "soru_metni": "Pazarda yaşlı bir amca bayılıp yere düştü. Elif’in yanında yetişkin yok ama telefonu var. Elif’in amca için yapması gereken hangisidir?",
+   "siklar": {
+    "A": "112’yi arayıp yeri ve durumu anlatması",
+    "B": "155’i arayıp pazarın adını söylemesi",
+    "C": "112’yi arayıp yalnız kendi adını söylemesi",
+    "D": "156’yı arayıp amcanın yakınlarına haber vermesi"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Bayılan bir kişi sağlık yardımına ihtiyaç duyar; sağlıkla ilgili acil çağrı numarası 112’dir.",
+    "155 polisin, 156 jandarmanın numarasıdır; bu numaralar ambulans çağırmak için kullanılmaz.",
+    "Ekibin amcaya ulaşabilmesi için Elif görevliye bulunduğu yeri ve amcanın durumunu da anlatmalıdır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce olayın hangi tür bir acil durum olduğuna, sonra görevlinin ekibi yönlendirmek için neyi bilmesi gerektiğine bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Pazarda polisin yardım edeceği sanılır; yanlış numara aranır ve sağlık ekibi yönlendirilemez.",
+    "C": "Doğru numara aranır ama kendi adını söylemenin yeterli olduğu sanılır; ekip yeri ve durumu bilmeden amcaya ulaşamaz.",
+    "D": "Acil durumda jandarmanın aranacağı sanılır; yanlış numara aranır ve amca için ambulans çağrılmış olmaz."
+   },
+   "kazanim_kodu": "HB.2.2.4",
+   "kazanim_metni": "Acil bir durumda yetkililerle etkili iletişim kurabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-041",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Ailenin önemi",
+   "alt_konu": "Ailenin karşıladığı ihtiyaçlar",
+   "zorluk": 2,
+   "soru_metni": "Kış gelmeden Ela’nın ailesi ona kalın bir mont aldı. Odasındaki ısıtıcıyı da kontrol etti. Aile bu davranışlarıyla Ela’nın hangi iki ihtiyacını karşılamıştır?",
+   "siklar": {
+    "A": "Giyinme ve barınma",
+    "B": "Giyinme ve beslenme",
+    "C": "Eğitim ve eğlence",
+    "D": "Beslenme ve barınma"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Mont almak, Ela’nın giyinme ihtiyacını karşılar.",
+    "Odadaki ısıtıcıyı kontrol etmek, Ela’nın yaşadığı yerin ısınmasını sağlar; bu barınma ihtiyacıdır.",
+    "İki davranış birlikte giyinme ve barınma ihtiyaçlarını karşılar.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ailenin yaptığı her davranışı ayrı ayrı ele alıp her birinin hangi ihtiyaca yaradığını bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Montun giyinme olduğu doğru bulunur ama ısıtıcının beslenmeyle ilişkilendirilmesi hatalıdır; ısıtıcı yaşanılan yerle ilgilidir.",
+    "C": "Aile davranışlarının eğitim ve eğlenceyle ilgili sanılması hatalıdır; ne mont ne ısıtıcı bu ihtiyaçlara yarar.",
+    "D": "Isıtıcının barınma olduğu doğru bulunur ama montun beslenmeyle ilişkilendirilmesi hatalıdır; mont giyinme ihtiyacıdır."
+   },
+   "kazanim_kodu": "HB.2.3.1",
+   "kazanim_metni": "Ailenin önemini yorumlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-042",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Nezaket ve görgü kuralları",
+   "alt_konu": "Nezaket sözlerinin sırası",
+   "zorluk": 2,
+   "soru_metni": "Deniz arkadaşından kalemini ödünç almak istiyor. Arkadaşı kalemi verdi. Deniz kalemi geri uzatınca arkadaşı ona teşekkür etti. Deniz’in söylediği nezaket sözleri sırasıyla hangisi olabilir?",
+   "siklar": {
+    "A": "Lütfen, teşekkür ederim, rica ederim.",
+    "B": "Rica ederim, teşekkür ederim, lütfen.",
+    "C": "Lütfen, rica ederim, teşekkür ederim.",
+    "D": "Teşekkür ederim, lütfen, rica ederim."
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Bir şey isterken “lütfen” denir; Deniz kalemi önce böyle ister.",
+    "Kalem verilince iyilik yapıldığı için “teşekkür ederim” denir.",
+    "Geri verince arkadaşı teşekkür ettiği için Deniz son olarak “rica ederim” der.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her sözün hangi anda ve kim bir şey yaptığında söylendiğini sırayla düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Sözlerin sırası tersine çevrilir; “rica ederim” teşekkürden sonra söylenir, en başta söylenmez.",
+    "C": "Teşekkür etmesi gereken ve teşekkür edilen kişi karıştırılır; Deniz kalemi alınca teşekkür eder, arkadaşı teşekkür edince “rica ederim” der.",
+    "D": "İstekten önce teşekkür edilir; teşekkür bir iyilik yapıldıktan sonra söylenir, “lütfen” ise isterken kullanılır."
+   },
+   "kazanim_kodu": "HB.2.3.2",
+   "kazanim_metni": "Toplumsal yaşamda nezaket ve görgü kurallarına uygun davranabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-044",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Hava olayları ve mevsimler",
+   "alt_konu": "Mevsim sırası ve hava olayı",
+   "zorluk": 3,
+   "soru_metni": "Tuna’nın bahçesinde yapraklar yerlere dökülüyor, sık sık yağmur yağıyor ve akşamlar serinliyor. Mevsimler her yıl belli bir sırayla tekrarlanır. Tuna bir sonraki mevsimde bahçede hangisini görebilir?",
+   "siklar": {
+    "A": "Ağaçların çiçek açıp meyve vermesi",
+    "B": "Havaların çok sıcak olması",
+    "C": "Yaprakların sararmaya başlaması",
+    "D": "Havaların soğuyup kar yağabilmesi"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Yaprakların dökülmesi, sık yağmur ve serinleyen akşamlar sonbaharın özellikleridir.",
+    "Mevsim sırasında sonbahardan sonra kış gelir.",
+    "Kış mevsiminde havalar soğur ve kar yağabilir.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce bahçedeki gözlemlerin hangi mevsimi anlattığını bul, sonra o mevsimden sonra hangisinin geldiğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Çiçek açma ve meyve verme, ilkbahar ve yaz mevsimlerinin özelliğidir; sonbahardan sonra gelmez.",
+    "B": "Sıcak havayı yaz mevsimiyle bilip mevsim sırası atlanır; sonbahardan sonra yaz gelmez.",
+    "C": "Mevsim doğru bulunur ama bir sonraki mevsime geçilmez; yaprakların sararması bahçede şu an görülen sonbahar özelliğidir."
+   },
+   "kazanim_kodu": "HB.2.5.1",
+   "kazanim_metni": "Hava olayları ve mevsimler arasındaki ilişkiyi çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-045",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Doğal kaynakları tasarruflu kullanma",
+   "alt_konu": "Enerji tasarrufu",
+   "zorluk": 2,
+   "soru_metni": "Hava soğuk. Mert’in odasındaki ısıtıcı çalışıyor ama pencere açık ve oda soğuk kalıyor. Mert enerjiyi tasarruflu kullanmak istiyor. Mert’in odayı ısıtmak için yapması gereken hangisidir?",
+   "siklar": {
+    "A": "Pencereyi kapatıp ısıtıcıyı çalışır tutması",
+    "B": "Isıtıcının ayarını yükseltip pencereyi açık tutması",
+    "C": "Isıtıcıyı kapatıp pencereyi açık bırakması",
+    "D": "Isıtıcıyı pencerenin tam yanına yaklaştırması"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Pencere açıkken ısıtıcının ürettiği sıcaklık dışarı kaçar ve oda soğuk kalır.",
+    "Sıcaklığın kaçmasını önlemek için pencere kapatılmalıdır.",
+    "Pencere kapalıyken ısıtıcı odayı ısıtır ve enerji boşa gitmez.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Isıtıcının ürettiği sıcaklığın açık pencereden nereye gidebileceğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Ayarı yükseltmenin odayı ısıtacağı sanılır; sıcaklık yine pencereden kaçar ve daha çok enerji harcanır.",
+    "C": "Isıtıcıyı kapatmanın enerji tasarrufu sağladığı doğru bulunur ama oda ısınmaz; Mert odayı ısıtmak istiyor.",
+    "D": "Isıtıcıyı pencereye yaklaştırmanın sıcaklığı artıracağı sanılır; açık pencere sıcaklığı yine dışarı çıkarır."
+   },
+   "kazanim_kodu": "HB.2.5.4",
+   "kazanim_metni": "Doğal kaynakları tasarruflu kullanma davranışlarını günlük yaşamına yansıtabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  }
+ ]
+}

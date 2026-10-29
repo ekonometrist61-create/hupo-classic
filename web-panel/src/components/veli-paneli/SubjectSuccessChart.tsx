@@ -13,6 +13,7 @@ import {
   YAxis,
 } from "recharts";
 
+import IstemciyeOzel from "@/components/common/IstemciyeOzel";
 import ChartCard from "./ChartCard";
 import { CHART_COLORS, successColor } from "./chartTheme";
 import type { SubjectSuccess } from "./types";
@@ -54,6 +55,7 @@ export default function SubjectSuccessChart({
                 height: Math.max(220, sufficient.length * ROW_HEIGHT + 40),
               }}
             >
+              <IstemciyeOzel>
               <ResponsiveContainer
                 width="100%"
                 height="100%"
@@ -124,6 +126,7 @@ export default function SubjectSuccessChart({
                   </Bar>
                 </BarChart>
               </ResponsiveContainer>
+              </IstemciyeOzel>
             </div>
           )}
 

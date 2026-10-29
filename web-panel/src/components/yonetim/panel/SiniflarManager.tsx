@@ -130,7 +130,7 @@ export default function SiniflarManager() {
     if (!yonetici && !ogretmen) return;
     let cancelled = false;
     const run = async () => {
-      setLoading(true);
+      // Yenileme (kayıt sonrası, sayfa değişimi) mevcut listeyi korur; yükleniyor yalnızca ilk yüklemede ve yeniden denemede görünür.
       const supabase = createClient();
       if (ogretmen) {
         const { data, error: err } = await supabase.rpc("ogretmen_siniflarim");

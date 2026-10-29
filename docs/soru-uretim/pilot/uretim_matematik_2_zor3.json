@@ -1,0 +1,250 @@
+[
+ {
+  "id": "MAT2-031",
+  "sinif": 2,
+  "ders": "Matematik",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "MAT.2.2.1",
+  "surec_bileseni": "b",
+  "konu": "Problemler",
+  "alt_konu": "İki adımlı problem (çıkarma, sonra toplama)",
+  "soru_metni": "Manavda 56 elma vardı. Sabah 23 elma satıldı, öğleden sonra 15 elma daha geldi. Manavda şimdi kaç elma vardır?",
+  "siklar": {
+   "A": "64",
+   "B": "33",
+   "C": "48",
+   "D": "18"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Elma sayısını değiştiren olayları sırayla ele al.",
+  "cozum_adimlari": [
+   "Satılan elmalar çıkarılır: 56 - 23 = 33.",
+   "Gelen elmalar eklenir: 33 + 15 = 48.",
+   "Manavda şimdi 48 elma vardır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İşlem yönlerini ters yapma: satılanı ekleyip gelenleri çıkarma, 56 + 23 - 15.",
+   "B": "Ara sonucu nihai sanma: gelen elmaları eklemeyi unutma.",
+   "D": "Gelen elmaları da çıkarma: işlem seçimi hatası, 56 - 23 - 15."
+  },
+  "sayisal_dogrulama": {
+   "ifade": "56-23+15",
+   "beklenen_sonuc": "48"
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT2-032",
+  "sinif": 2,
+  "ders": "Matematik",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "MAT.2.2.1",
+  "surec_bileseni": "e",
+  "konu": "Problemler",
+  "alt_konu": "İki adımlı problem (toplama, sonra çıkarma)",
+  "soru_metni": "Bir kutuda 28 kırmızı ve 35 mavi boncuk vardır. Zeynep bu kutudan 20 boncuk kullandı. Kutuda kaç boncuk kalmıştır?",
+  "siklar": {
+   "A": "43",
+   "B": "63",
+   "C": "83",
+   "D": "15"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Kutudaki boncukların tümünü bulduktan sonra kullanılanı düşün.",
+  "cozum_adimlari": [
+   "Kutudaki boncukların tümü bulunur: 28 + 35 = 63.",
+   "Kullanılan boncuklar çıkarılır: 63 - 20 = 43.",
+   "Kutuda 43 boncuk kalır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Ara sonucu nihai sanma: kullanılan boncukları çıkarmayı unutma.",
+   "C": "İşlem seçimi hatası: kullanılan boncukları çıkarmak yerine ekleme, 63 + 20.",
+   "D": "Adım atlama: kırmızı boncukları hesaba katmadan yalnız mavi boncuklardan çıkarma, 35 - 20."
+  },
+  "sayisal_dogrulama": {
+   "ifade": "(28+35)-20",
+   "beklenen_sonuc": "43"
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT2-033",
+  "sinif": 2,
+  "ders": "Matematik",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "MAT.2.2.2",
+  "surec_bileseni": "c",
+  "konu": "Toplama ve çıkarma",
+  "alt_konu": "Yuvarlayarak tahmin ile kesin sonucu karşılaştırma",
+  "soru_metni": "Ali 38 + 47 işleminin sonucunu tahmin etmek için sayıları en yakın onluğa yuvarlıyor. Ali'nin tahmini, işlemin kesin sonucundan kaç fazladır?",
+  "siklar": {
+   "A": "90",
+   "B": "85",
+   "C": "3",
+   "D": "5"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Hem yuvarlanmış sayılarla hem de gerçek sayılarla toplayıp sonuçları karşılaştır.",
+  "cozum_adimlari": [
+   "38 sayısı 40'a, 47 sayısı 50'ye yuvarlanır.",
+   "Tahmin: 40 + 50 = 90.",
+   "Kesin sonuç: 38 + 47 = 85.",
+   "Tahmin ile kesin sonuç arasındaki fark: 90 - 85 = 5.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ara sonucu nihai sanma: tahmini toplamı fark olarak seçme.",
+   "B": "Ara sonucu nihai sanma: kesin toplamı fark olarak seçme.",
+   "C": "Adım atlama: yalnız 47'nin yuvarlanma farkını alma, 50 - 47."
+  },
+  "sayisal_dogrulama": {
+   "ifade": "(40+50)-(38+47)",
+   "beklenen_sonuc": "5"
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT2-034",
+  "sinif": 2,
+  "ders": "Matematik",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "MAT.2.2.4",
+  "surec_bileseni": "b",
+  "konu": "Bölme",
+  "alt_konu": "Tekrarlı çıkarma ile bölme, ardından çıkarma",
+  "soru_metni": "Ayşe 28 kurabiyeyi tabaklara dağıtıyor. Her tabağa 4 kurabiye koyuyor. Ayşe dolu tabaklardan 3 tanesini komşulara verirse kaç dolu tabağı kalır?",
+  "siklar": {
+   "A": "7",
+   "B": "4",
+   "C": "25",
+   "D": "10"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Önce kaç tabağın dolduğunu bul.",
+  "cozum_adimlari": [
+   "28'den 4 tekrar tekrar çıkarılırsa 28, 24, 20, 16, 12, 8, 4, 0 bulunur; 4 tam 7 kez çıkarıldığı için 28 / 4 = 7 tabak dolar.",
+   "Komşulara 3 tabak verilir: 7 - 3 = 4.",
+   "Ayşe'nin 4 dolu tabağı kalır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ara sonucu nihai sanma: komşulara verilen tabakları çıkarmayı unutma.",
+   "C": "Adım atlama: kurabiyeleri tabaklara bölmeden doğrudan 28'den 3 çıkarma.",
+   "D": "İşlem seçimi hatası: verilen tabakları çıkarmak yerine ekleme, 7 + 3."
+  },
+  "sayisal_dogrulama": {
+   "ifade": "28/4-3",
+   "beklenen_sonuc": "4"
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT2-035",
+  "sinif": 2,
+  "ders": "Matematik",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "MAT.2.1.8",
+  "surec_bileseni": "b",
+  "konu": "Para",
+  "alt_konu": "Lira ve kuruş paralarını birlikte değerlendirme",
+  "soru_metni": "Kerem'in cüzdanında 1 TL'lik 5 madenî para ve 50 kuruşluk 6 madenî para var. Kerem'in parası kaç liradır?",
+  "siklar": {
+   "A": "11 TL",
+   "B": "5 TL",
+   "C": "3 TL",
+   "D": "8 TL"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Kuruşluk paraların toplam değerini önce liraya çevir.",
+  "cozum_adimlari": [
+   "50 kuruşluk 6 paranın değeri 6 * 50 = 300 kuruştur.",
+   "100 kuruş 1 lira olduğundan 300 kuruş 300 / 100 = 3 liradır.",
+   "1 liralık 5 paranın değeri 5 * 1 = 5 liradır.",
+   "Toplam para 5 + 3 = 8 liradır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Para adedini lira sanma: 5 + 6 madenî parayı toplama.",
+   "B": "Adım atlama: 50 kuruşluk paraları hesaba katmama.",
+   "C": "Ara sonucu nihai sanma: kuruşluk paraların liraya çevrilmiş değerini cevap alma."
+  },
+  "sayisal_dogrulama": {
+   "ifade": "5*1+(6*50)/100",
+   "beklenen_sonuc": "8"
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "MAT2-036",
+  "sinif": 2,
+  "ders": "Matematik",
+  "mufredat_surum": "2026 Maarif Modeli",
+  "kazanim_kodu": "MAT.2.1.11",
+  "surec_bileseni": "c",
+  "konu": "Ölçme",
+  "alt_konu": "Uzunluk tahminini ölçümle karşılaştırma",
+  "soru_metni": "Mert'in bir karışı yaklaşık 12 santimetredir. Mert sırasının uzunluğunu 6 karış tahmin etti, metreyle ölçünce 80 santimetre buldu. Mert'in tahmini ölçümden kaç santimetre azdır?",
+  "siklar": {
+   "A": "8 santimetre",
+   "B": "72 santimetre",
+   "C": "68 santimetre",
+   "D": "74 santimetre"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Önce Mert'in tahminini santimetre olarak bul.",
+  "cozum_adimlari": [
+   "Mert'in tahmini 6 * 12 = 72 santimetredir.",
+   "Metreyle ölçülen uzunluk 80 santimetredir.",
+   "Aradaki fark 80 - 72 = 8 santimetredir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "B": "Ara sonucu nihai sanma: tahmin edilen uzunluğu fark olarak seçme.",
+   "C": "Adım atlama: karışı sayıyla çarpmadan ölçümden yalnız bir karışın uzunluğunu çıkarma, 80 - 12.",
+   "D": "İşlem hatası: karışın uzunluğu yerine karış sayısını ölçümden çıkarma, 80 - 6."
+  },
+  "sayisal_dogrulama": {
+   "ifade": "80-(6*12)",
+   "beklenen_sonuc": "8"
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "problem",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

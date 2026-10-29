@@ -1,0 +1,1222 @@
+[
+ {
+  "id": "MAT5-ORU-S1-001",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 4. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "9",
+   "B": "13",
+   "C": "17",
+   "D": "8"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Üçgen sayısı her adımda 1 artar; çubuk sayısı her adımda 2 artar.",
+   "n. adımda çubuk sayısı 2×n + 1’dir.",
+   "4. adım: 2 × 4 + 1 = 9",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "13 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "C": "17 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "D": "8 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 2 çubuk artar ve 1. adım 3 çubukla başlar."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"32\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"50.29\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"82\" y1=\"78\" x2=\"98\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"114\" y1=\"78\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"78\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"106\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"164\" y1=\"78\" x2=\"180\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"212\" y1=\"50.29\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"164\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"196\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "4"
+    ],
+    "beklenen": 9
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-002",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 12. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "25",
+   "B": "37",
+   "C": "49",
+   "D": "36"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Kare sayısı her adımda 1 artar; çubuk sayısı her adımda 3 artar.",
+   "n. adımda çubuk sayısı 3×n + 1’dir.",
+   "12. adım: 3 × 12 + 1 = 37",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "25 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "B": "Doğru.",
+   "C": "49 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "D": "36 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 3 çubuk artar ve 1. adım 4 çubukla başlar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"40\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"54\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"16\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"78\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"70\" y1=\"78\" x2=\"94\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"54\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"118\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"54\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"78\" x2=\"70\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"78\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"94\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"148\" y1=\"78\" x2=\"172\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"54\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"54\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"220\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"54\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"78\" x2=\"148\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"78\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "12"
+    ],
+    "beklenen": 37
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-003",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 9. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "19",
+   "B": "28",
+   "C": "45",
+   "D": "46"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Altıgen sayısı her adımda 1 artar; çubuk sayısı her adımda 5 artar.",
+   "n. adımda çubuk sayısı 5×n + 1’dir.",
+   "9. adım: 5 × 9 + 1 = 46",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "19 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "B": "28 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "C": "45 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 5 çubuk artar ve 1. adım 6 çubukla başlar.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><polygon points=\"33.32,38 16,48 16,68 33.32,78 50.64,68 50.64,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"33.32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><polygon points=\"97.96,38 80.64,48 80.64,68 97.96,78 115.28,68 115.28,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"132.6,38 115.28,48 115.28,68 132.6,78 149.92,68 149.92,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"115.28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><polygon points=\"197.24,38 179.92,48 179.92,68 197.24,78 214.56,68 214.56,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"231.88,38 214.56,48 214.56,68 231.88,78 249.21,68 249.21,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"266.53,38 249.21,48 249.21,68 266.53,78 283.85,68 283.85,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"231.88\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "altigen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "9"
+    ],
+    "beklenen": 46
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-004",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 10. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "21",
+   "B": "31",
+   "C": "51",
+   "D": "50"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Altıgen sayısı her adımda 1 artar; çubuk sayısı her adımda 5 artar.",
+   "n. adımda çubuk sayısı 5×n + 1’dir.",
+   "10. adım: 5 × 10 + 1 = 51",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "21 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "B": "31 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "C": "Doğru.",
+   "D": "50 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 5 çubuk artar ve 1. adım 6 çubukla başlar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><polygon points=\"33.32,38 16,48 16,68 33.32,78 50.64,68 50.64,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"33.32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><polygon points=\"97.96,38 80.64,48 80.64,68 97.96,78 115.28,68 115.28,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"132.6,38 115.28,48 115.28,68 132.6,78 149.92,68 149.92,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"115.28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><polygon points=\"197.24,38 179.92,48 179.92,68 197.24,78 214.56,68 214.56,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"231.88,38 214.56,48 214.56,68 231.88,78 249.21,68 249.21,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"266.53,38 249.21,48 249.21,68 266.53,78 283.85,68 283.85,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"231.88\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "altigen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "10"
+    ],
+    "beklenen": 51
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-005",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 5. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "16",
+   "B": "21",
+   "C": "10",
+   "D": "11"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Üçgen sayısı her adımda 1 artar; çubuk sayısı her adımda 2 artar.",
+   "n. adımda çubuk sayısı 2×n + 1’dir.",
+   "5. adım: 2 × 5 + 1 = 11",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "16 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "B": "21 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "C": "10 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 2 çubuk artar ve 1. adım 3 çubukla başlar.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"32\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"50.29\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"82\" y1=\"78\" x2=\"98\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"114\" y1=\"78\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"78\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"106\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"164\" y1=\"78\" x2=\"180\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"212\" y1=\"50.29\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"164\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"196\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "5"
+    ],
+    "beklenen": 11
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-006",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 14. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "43",
+   "B": "57",
+   "C": "29",
+   "D": "28"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Üçgen sayısı her adımda 1 artar; çubuk sayısı her adımda 2 artar.",
+   "n. adımda çubuk sayısı 2×n + 1’dir.",
+   "14. adım: 2 × 14 + 1 = 29",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "43 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "B": "57 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "C": "Doğru.",
+   "D": "28 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 2 çubuk artar ve 1. adım 3 çubukla başlar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"32\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"50.29\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"82\" y1=\"78\" x2=\"98\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"114\" y1=\"78\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"78\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"106\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"164\" y1=\"78\" x2=\"180\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"212\" y1=\"50.29\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"164\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"196\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "14"
+    ],
+    "beklenen": 29
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-007",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 6. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "19",
+   "B": "13",
+   "C": "25",
+   "D": "18"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Kare sayısı her adımda 1 artar; çubuk sayısı her adımda 3 artar.",
+   "n. adımda çubuk sayısı 3×n + 1’dir.",
+   "6. adım: 3 × 6 + 1 = 19",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "13 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "C": "25 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "D": "18 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 3 çubuk artar ve 1. adım 4 çubukla başlar."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"40\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"54\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"16\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"78\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"70\" y1=\"78\" x2=\"94\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"54\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"118\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"54\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"78\" x2=\"70\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"78\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"94\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"148\" y1=\"78\" x2=\"172\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"54\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"54\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"220\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"54\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"78\" x2=\"148\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"78\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "6"
+    ],
+    "beklenen": 19
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-008",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 9. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "19",
+   "B": "28",
+   "C": "37",
+   "D": "27"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Kare sayısı her adımda 1 artar; çubuk sayısı her adımda 3 artar.",
+   "n. adımda çubuk sayısı 3×n + 1’dir.",
+   "9. adım: 3 × 9 + 1 = 28",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "19 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "B": "Doğru.",
+   "C": "37 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "D": "27 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 3 çubuk artar ve 1. adım 4 çubukla başlar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"40\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"54\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"16\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"78\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"70\" y1=\"78\" x2=\"94\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"54\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"118\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"54\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"78\" x2=\"70\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"78\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"94\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"148\" y1=\"78\" x2=\"172\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"54\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"54\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"220\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"54\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"78\" x2=\"148\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"78\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "9"
+    ],
+    "beklenen": 28
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-009",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 15. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "46",
+   "B": "61",
+   "C": "31",
+   "D": "30"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Üçgen sayısı her adımda 1 artar; çubuk sayısı her adımda 2 artar.",
+   "n. adımda çubuk sayısı 2×n + 1’dir.",
+   "15. adım: 2 × 15 + 1 = 31",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "46 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "B": "61 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "C": "Doğru.",
+   "D": "30 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 2 çubuk artar ve 1. adım 3 çubukla başlar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"32\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"50.29\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"82\" y1=\"78\" x2=\"98\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"114\" y1=\"78\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"78\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"106\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"164\" y1=\"78\" x2=\"180\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"212\" y1=\"50.29\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"164\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"196\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "15"
+    ],
+    "beklenen": 31
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-010",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 14. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "29",
+   "B": "57",
+   "C": "42",
+   "D": "43"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Kare sayısı her adımda 1 artar; çubuk sayısı her adımda 3 artar.",
+   "n. adımda çubuk sayısı 3×n + 1’dir.",
+   "14. adım: 3 × 14 + 1 = 43",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "29 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "B": "57 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "C": "42 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 3 çubuk artar ve 1. adım 4 çubukla başlar.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"40\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"54\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"16\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"78\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"70\" y1=\"78\" x2=\"94\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"54\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"118\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"54\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"78\" x2=\"70\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"78\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"94\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"148\" y1=\"78\" x2=\"172\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"54\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"54\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"220\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"54\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"78\" x2=\"148\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"78\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "14"
+    ],
+    "beklenen": 43
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-011",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 7. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "36",
+   "B": "15",
+   "C": "22",
+   "D": "35"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Altıgen sayısı her adımda 1 artar; çubuk sayısı her adımda 5 artar.",
+   "n. adımda çubuk sayısı 5×n + 1’dir.",
+   "7. adım: 5 × 7 + 1 = 36",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "15 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "C": "22 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "D": "35 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 5 çubuk artar ve 1. adım 6 çubukla başlar."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><polygon points=\"33.32,38 16,48 16,68 33.32,78 50.64,68 50.64,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"33.32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><polygon points=\"97.96,38 80.64,48 80.64,68 97.96,78 115.28,68 115.28,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"132.6,38 115.28,48 115.28,68 132.6,78 149.92,68 149.92,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"115.28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><polygon points=\"197.24,38 179.92,48 179.92,68 197.24,78 214.56,68 214.56,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"231.88,38 214.56,48 214.56,68 231.88,78 249.21,68 249.21,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"266.53,38 249.21,48 249.21,68 266.53,78 283.85,68 283.85,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"231.88\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "altigen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "7"
+    ],
+    "beklenen": 36
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-012",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 6. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "13",
+   "B": "31",
+   "C": "19",
+   "D": "30"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Altıgen sayısı her adımda 1 artar; çubuk sayısı her adımda 5 artar.",
+   "n. adımda çubuk sayısı 5×n + 1’dir.",
+   "6. adım: 5 × 6 + 1 = 31",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "13 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "B": "Doğru.",
+   "C": "19 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "D": "30 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 5 çubuk artar ve 1. adım 6 çubukla başlar."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><polygon points=\"33.32,38 16,48 16,68 33.32,78 50.64,68 50.64,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"33.32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><polygon points=\"97.96,38 80.64,48 80.64,68 97.96,78 115.28,68 115.28,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"132.6,38 115.28,48 115.28,68 132.6,78 149.92,68 149.92,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"115.28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><polygon points=\"197.24,38 179.92,48 179.92,68 197.24,78 214.56,68 214.56,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"231.88,38 214.56,48 214.56,68 231.88,78 249.21,68 249.21,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"266.53,38 249.21,48 249.21,68 266.53,78 283.85,68 283.85,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"231.88\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "altigen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "6"
+    ],
+    "beklenen": 31
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-013",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 4. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "9",
+   "B": "17",
+   "C": "13",
+   "D": "12"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Kare sayısı her adımda 1 artar; çubuk sayısı her adımda 3 artar.",
+   "n. adımda çubuk sayısı 3×n + 1’dir.",
+   "4. adım: 3 × 4 + 1 = 13",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "9 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "B": "17 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "C": "Doğru.",
+   "D": "12 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 3 çubuk artar ve 1. adım 4 çubukla başlar."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"40\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"54\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"16\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"78\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"70\" y1=\"78\" x2=\"94\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"54\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"118\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"54\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"78\" x2=\"70\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"78\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"94\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"148\" y1=\"78\" x2=\"172\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"54\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"54\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"220\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"54\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"78\" x2=\"148\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"78\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "4"
+    ],
+    "beklenen": 13
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-014",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 16. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "49",
+   "B": "33",
+   "C": "65",
+   "D": "32"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Üçgen sayısı her adımda 1 artar; çubuk sayısı her adımda 2 artar.",
+   "n. adımda çubuk sayısı 2×n + 1’dir.",
+   "16. adım: 2 × 16 + 1 = 33",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "49 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "B": "Doğru.",
+   "C": "65 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "D": "32 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 2 çubuk artar ve 1. adım 3 çubukla başlar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"32\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"50.29\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"82\" y1=\"78\" x2=\"98\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"114\" y1=\"78\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"78\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"106\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"164\" y1=\"78\" x2=\"180\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"212\" y1=\"50.29\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"164\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"196\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "16"
+    ],
+    "beklenen": 33
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-015",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 17. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "35",
+   "B": "69",
+   "C": "51",
+   "D": "52"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Kare sayısı her adımda 1 artar; çubuk sayısı her adımda 3 artar.",
+   "n. adımda çubuk sayısı 3×n + 1’dir.",
+   "17. adım: 3 × 17 + 1 = 52",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "35 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "B": "69 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "C": "51 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 3 çubuk artar ve 1. adım 4 çubukla başlar.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"40\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"54\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"16\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"78\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"70\" y1=\"78\" x2=\"94\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"54\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"118\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"54\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"78\" x2=\"70\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"78\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"94\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"148\" y1=\"78\" x2=\"172\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"54\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"54\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"220\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"54\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"78\" x2=\"148\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"78\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "17"
+    ],
+    "beklenen": 52
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-016",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 13. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "40",
+   "B": "27",
+   "C": "53",
+   "D": "39"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Kare sayısı her adımda 1 artar; çubuk sayısı her adımda 3 artar.",
+   "n. adımda çubuk sayısı 3×n + 1’dir.",
+   "13. adım: 3 × 13 + 1 = 40",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "27 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "C": "53 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "D": "39 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 3 çubuk artar ve 1. adım 4 çubukla başlar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"40\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"54\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"16\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"78\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"70\" y1=\"78\" x2=\"94\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"54\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"118\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"54\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"78\" x2=\"70\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"78\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"94\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"148\" y1=\"78\" x2=\"172\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"54\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"54\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"220\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"54\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"78\" x2=\"148\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"78\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "13"
+    ],
+    "beklenen": 40
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-017",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 16. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "81",
+   "B": "33",
+   "C": "49",
+   "D": "80"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Altıgen sayısı her adımda 1 artar; çubuk sayısı her adımda 5 artar.",
+   "n. adımda çubuk sayısı 5×n + 1’dir.",
+   "16. adım: 5 × 16 + 1 = 81",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "33 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "C": "49 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "D": "80 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 5 çubuk artar ve 1. adım 6 çubukla başlar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><polygon points=\"33.32,38 16,48 16,68 33.32,78 50.64,68 50.64,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"33.32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><polygon points=\"97.96,38 80.64,48 80.64,68 97.96,78 115.28,68 115.28,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"132.6,38 115.28,48 115.28,68 132.6,78 149.92,68 149.92,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"115.28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><polygon points=\"197.24,38 179.92,48 179.92,68 197.24,78 214.56,68 214.56,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"231.88,38 214.56,48 214.56,68 231.88,78 249.21,68 249.21,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"266.53,38 249.21,48 249.21,68 266.53,78 283.85,68 283.85,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"231.88\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "altigen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "16"
+    ],
+    "beklenen": 81
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-018",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 5. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "11",
+   "B": "26",
+   "C": "16",
+   "D": "25"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Altıgen sayısı her adımda 1 artar; çubuk sayısı her adımda 5 artar.",
+   "n. adımda çubuk sayısı 5×n + 1’dir.",
+   "5. adım: 5 × 5 + 1 = 26",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "11 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "B": "Doğru.",
+   "C": "16 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 6 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "D": "25 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 5 çubuk artar ve 1. adım 6 çubukla başlar."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><polygon points=\"33.32,38 16,48 16,68 33.32,78 50.64,68 50.64,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"33.32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><polygon points=\"97.96,38 80.64,48 80.64,68 97.96,78 115.28,68 115.28,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"132.6,38 115.28,48 115.28,68 132.6,78 149.92,68 149.92,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"115.28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><polygon points=\"197.24,38 179.92,48 179.92,68 197.24,78 214.56,68 214.56,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"231.88,38 214.56,48 214.56,68 231.88,78 249.21,68 249.21,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><polygon points=\"266.53,38 249.21,48 249.21,68 266.53,78 283.85,68 283.85,48\" fill=\"none\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linejoin=\"round\"/><text x=\"231.88\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Altıgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "altigen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "5"
+    ],
+    "beklenen": 26
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-019",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 16. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "33",
+   "B": "65",
+   "C": "48",
+   "D": "49"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Kare sayısı her adımda 1 artar; çubuk sayısı her adımda 3 artar.",
+   "n. adımda çubuk sayısı 3×n + 1’dir.",
+   "16. adım: 3 × 16 + 1 = 49",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "33 çubuk, 2n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 2n+1 kuralı 1. adımda 3 çubuk verirdi.",
+   "B": "65 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 4 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "C": "48 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 3 çubuk artar ve 1. adım 4 çubukla başlar.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"40\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"54\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"16\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"40\" y1=\"78\" x2=\"40\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"28\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"70\" y1=\"78\" x2=\"94\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"54\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"118\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"54\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"70\" y1=\"78\" x2=\"70\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"94\" y1=\"78\" x2=\"94\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"118\" y1=\"78\" x2=\"118\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"94\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"148\" y1=\"78\" x2=\"172\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"54\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"54\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"220\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"54\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"148\" y1=\"78\" x2=\"148\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"172\" y1=\"78\" x2=\"172\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"196\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"220\" y1=\"78\" x2=\"220\" y2=\"54\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"184\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Kare dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "16"
+    ],
+    "beklenen": 49
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-ORU-S1-020",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.2.3",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün kuralı",
+  "soru_metni": "Yukarıda çubuklarla oluşturulan bir örüntünün ilk üç adımı verilmiştir. Bu örüntünün 17. adımı kaç çubukla oluşturulur?",
+  "siklar": {
+   "A": "52",
+   "B": "69",
+   "C": "35",
+   "D": "34"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Bir adımdan diğerine çubuk sayısının kaç arttığına bak.",
+  "cozum_adimlari": [
+   "Üçgen sayısı her adımda 1 artar; çubuk sayısı her adımda 2 artar.",
+   "n. adımda çubuk sayısı 2×n + 1’dir.",
+   "17. adım: 2 × 17 + 1 = 35",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "52 çubuk, 3n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 3n+1 kuralı 1. adımda 4 çubuk verirdi.",
+   "B": "69 çubuk, 4n+1 kuralıyla bulunur; ancak şekilde 1. adımda 3 çubuk vardır, 4n+1 kuralı 1. adımda 5 çubuk verirdi.",
+   "C": "Doğru.",
+   "D": "34 çubuk, başlangıçtaki ek çubuk (+1) unutularak bulunur; her adımda 2 çubuk artar ve 1. adım 3 çubukla başlar."
+  },
+  "zorluk": 3,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "cubuk-oruntusu",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 340 130\" role=\"img\" aria-label=\"Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.\"><rect width=\"340\" height=\"130\" fill=\"#FFFFFF\"/><line x1=\"16\" y1=\"78\" x2=\"32\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"32\" y1=\"50.29\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"16\" y1=\"78\" x2=\"48\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"32\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">1. adım</text><line x1=\"82\" y1=\"78\" x2=\"98\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"114\" y1=\"78\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"82\" y1=\"78\" x2=\"114\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"98\" y1=\"50.29\" x2=\"130\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"106\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">2. adım</text><line x1=\"164\" y1=\"78\" x2=\"180\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"212\" y1=\"50.29\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"164\" y1=\"78\" x2=\"196\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"180\" y1=\"50.29\" x2=\"212\" y2=\"50.29\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><line x1=\"196\" y1=\"78\" x2=\"228\" y2=\"78\" stroke=\"#0072B2\" stroke-width=\"3.5\" stroke-linecap=\"round\"/><text x=\"196\" y=\"104\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\">3. adım</text></svg>",
+   "alt_metin": "Üçgen dizisinden oluşan çubuk örüntüsünün ilk üç adımı çizilmiş.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "cubuk-oruntusu",
+   "parametreler": {
+    "tur": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "cubuk",
+     "17"
+    ],
+    "beklenen": 35
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-cubuk-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ }
+]

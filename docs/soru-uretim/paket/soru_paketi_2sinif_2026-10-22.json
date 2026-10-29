@@ -1,0 +1,3735 @@
+{
+ "surum": "1",
+ "parti": {
+  "parti_id": "soru-uretim-2026-10-22-2sinif",
+  "aciklama": "2. sınıf: Türkçe, Matematik, Hayat Bilgisi; yapay zekâ üretimi (Sonnet taslak, Haiku kör çözüm, Sonnet kör kalite); kalite 'sari'; benzerlik kontrolü (kaynak parmak izi + iç 6-gram) geçti, 3 soru BEKLET; yayın insan onayına bağlı"
+ },
+ "kaynaklar": [],
+ "sorular": [
+  {
+   "soru_id": "tr2-001",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuma sürecini yönetme",
+   "alt_konu": "Başlığı inceleme",
+   "zorluk": 1,
+   "soru_metni": "Ece, “Gökkuşağının Renkleri” başlıklı bir metni okuyacak.\n\nOkumaya başlamadan önce başlığı inceleyen Ece için hangisi söylenebilir?",
+   "siklar": {
+    "A": "Metnin tamamını okumadan konuyu anlamış olur.",
+    "B": "Metnin konusu hakkında ön fikir edinmiş olur.",
+    "C": "Metnin sonunda ne anlatıldığını öğrenmiş olur.",
+    "D": "Metindeki yeni sözcüklerin anlamını bulmuş olur."
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Başlık, metnin ne hakkında olabileceğine dair küçük bir fikir verir.",
+    "Ece başlığı inceleyerek metnin konusu hakkında ön bilgi edinir.",
+    "Başlık, metnin tamamını, sonunu ya da yeni sözcüklerin anlamını vermez.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Başlığı okumak, metnin tamamını okumadan önce nasıl bir hazırlık sağlar, bunu düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Başlığın metnin yerini tuttuğunu sanan öğrenci, okumadan konuyu tam anladığını düşünür.",
+    "C": "Başlığın olayın sonunu söylediğini sanan öğrenci, başlık ile metnin sonucunu karıştırır.",
+    "D": "Başlıkta yeni sözcük görünce anlamını da bulduğunu sanan öğrenci, anlam bulmayı başlık incelemeyle karıştırır."
+   },
+   "kazanim_kodu": "T.O.2.1",
+   "kazanim_metni": "Okuma sürecini yönetebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-002",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuma sürecini yönetme",
+   "alt_konu": "Ünlem işaretine dikkat ederek okuma",
+   "zorluk": 1,
+   "soru_metni": "Bir öğrenci sesli okurken şu cümleye geldi:\n\n“Dikkat et, yolda araba var!”\n\nCümlenin sonundaki işarete dikkat eden öğrenci bu cümleyi nasıl okumalıdır?",
+   "siklar": {
+    "A": "Sesini kısıp ağır ağır okumalıdır.",
+    "B": "Cümleyi soru soruyormuş gibi okumalıdır.",
+    "C": "Hiç duraksamadan sonraki cümleye geçmelidir.",
+    "D": "Uyarır gibi güçlü bir sesle okumalıdır."
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Cümlenin sonunda ünlem işareti var.",
+    "Ünlem işareti; uyarı, şaşkınlık, sevinç gibi güçlü duyguları gösterir.",
+    "Bu cümle bir uyarı olduğu için sesin vurgulu ve güçlü olması gerekir.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Cümlenin sonundaki işaretin duyguyu ya da vurguyu nasıl gösterdiğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ünlem işaretini görmezden gelip her cümleyi sakin okumak gerektiğini sanan öğrenci bu seçeneği seçer.",
+    "B": "Cümle sonu işaretlerini birbirine karıştıran öğrenci ünlemi soru işareti gibi okur.",
+    "C": "Noktalama işaretlerinin okumayı etkilemediğini sanan öğrenci cümle sonunda durmadan geçer."
+   },
+   "kazanim_kodu": "T.O.2.1",
+   "kazanim_metni": "Okuma sürecini yönetebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-003",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuma sürecini yönetme",
+   "alt_konu": "Virgül ve nokta ile duraksama",
+   "zorluk": 2,
+   "soru_metni": "Annem pazardan elma, armut, üzüm ve incir aldı.\n\nBu cümleyi sesli okuyan bir öğrenci virgüllerde ve cümle sonunda nasıl durmalıdır?",
+   "siklar": {
+    "A": "Virgülde kısa, cümle sonunda uzun durmalıdır.",
+    "B": "Virgülde uzun, cümle sonunda kısa durmalıdır.",
+    "C": "Virgülde ve cümle sonunda hiç durmamalıdır.",
+    "D": "Virgülde ve cümle sonunda aynı sürede durmalıdır."
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Virgül, cümle bitmeden sözcükleri ayırır; orada kısa bir duraklama yapılır.",
+    "Nokta cümlenin bittiğini gösterir; orada daha uzun durulur.",
+    "Bu yüzden virgülde kısa, cümle sonunda uzun durulmalıdır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Cümle bitince söz bitmiş olur, virgülde ise söz sürer."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Virgül ile nokta arasındaki duraklama farkını ters hatırlayan öğrenci bu seçeneği seçer.",
+    "C": "Noktalama işaretlerinin sesli okumayı etkilemediğini sanan öğrenci hiç durmadan okur.",
+    "D": "Her işarette aynı kadar durulduğunu sanan öğrenci virgül ile noktayı ayırt etmez."
+   },
+   "kazanim_kodu": "T.O.2.1",
+   "kazanim_metni": "Okuma sürecini yönetebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-004",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuma sürecini yönetme",
+   "alt_konu": "Başlıktan çıkarılabilecek bilgiler",
+   "zorluk": 3,
+   "soru_metni": "“Kış Uykusuna Yatan Hayvanlar” başlıklı bir metni okuyacak olan Arda, başlığa bakarak bazı tahminlerde bulundu.\n\nArda’nın tahminlerinden hangisi başlıktan ÇIKARILAMAZ?",
+   "siklar": {
+    "A": "Metin, hayvanlarla ilgili bazı bilgiler içerir.",
+    "B": "Metinde kış mevsiminden söz edilir.",
+    "C": "Metinde uyku süreleri gün olarak verilir.",
+    "D": "Metinde uykuyla ilgili bilgi de verilir."
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Başlıkta hayvanlar, kış ve uyku sözcükleri geçiyor.",
+    "Metnin hayvanlar, kış mevsimi ve uyku hakkında olması başlıktan anlaşılır.",
+    "Uyku sürelerinin kaç gün olduğu ise başlıkta yazmaz; bunu ancak metni okuyunca öğreniriz.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Başlıktaki sözcüklerin bildirdiği konu ile ayrıntılı sayısal bilgi aynı şey değildir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Soruyu 'başlıktan çıkarılabilir' diye yanlış okuyan öğrenci, başlıktan anlaşılan ilk konuyu seçer.",
+    "B": "Olumsuz kökü gözden kaçıran öğrenci, başlıktaki 'kış' sözcüğüne bakıp bu seçeneği doğru sanır.",
+    "D": "Başlıktaki 'uykusuna' sözcüğünü fark edip kökteki olumsuzluğu atlayan öğrenci bu seçeneği işaretler."
+   },
+   "kazanim_kodu": "T.O.2.1",
+   "kazanim_metni": "Okuma sürecini yönetebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-005",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuma sürecini yönetme",
+   "alt_konu": "Soru işaretine dikkat ederek okuma",
+   "zorluk": 1,
+   "soru_metni": "“Dün gece rüyamda uçtum,” dedi Ali. “Sahi mi?” diye sordu Efe. “Evet, çok eğlendim!” dedi Ali.\n\nEfe’nin sözünü doğru okumak için hangi işarete dikkat etmek gerekir?",
+   "siklar": {
+    "A": "Cümle sonundaki nokta",
+    "B": "Cümle sonundaki soru işareti",
+    "C": "Cümle sonundaki ünlem işareti",
+    "D": "Cümle içindeki virgül"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Efe’nin sözü “Sahi mi?” biçiminde yazılmıştır.",
+    "Bu sözün sonunda soru işareti vardır.",
+    "Soru işareti, sözün soru sorar gibi okunacağını gösterir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Efe’nin söylediği sözün sonuna bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Cümle sonu işaretlerinin hepsini nokta sanan öğrenci, okuma tonunu işarete göre değiştirmez.",
+    "C": "Metindeki son cümlenin işaretini Efe’nin sözüne ait sanan öğrenci ünlemi seçer.",
+    "D": "Virgülü her işaretin yerine koyan öğrenci, cümle içindeki duraklama işaretini cümle sonu işaretiyle karıştırır."
+   },
+   "kazanim_kodu": "T.O.2.1",
+   "kazanim_metni": "Okuma sürecini yönetebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-010",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Anlam oluşturma",
+   "alt_konu": "Başlıktan metindeki olayı tahmin etme",
+   "zorluk": 2,
+   "soru_metni": "“Dedemle Balık Tutmaya Gittik” başlıklı metinde hangi olayın yer alması en olasıdır?",
+   "siklar": {
+    "A": "Balıkların akvaryumda nasıl beslendiği",
+    "B": "Dedenin eski fotoğraflarına birlikte bakılması",
+    "C": "Sınıfta balık türleriyle ilgili yapılan sunum",
+    "D": "Oltayla balık yakalamaya çalışılması"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Başlıkta “balık tutmaya gittik” deniyor.",
+    "Balık tutmaya gidildiğinde genellikle olta ile balık yakalanmaya çalışılır.",
+    "Akvaryum, fotoğraf bakma ve sınıf sunumu başlıkla uyuşmaz.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Başlıktaki eylemin ne yapmak anlamına geldiğini ve kiminle yapıldığını düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "'Balık' sözcüğüne takılıp balık beslemeyi düşünen öğrenci, başlıktaki eylemi gözden kaçırır.",
+    "B": "'Dede' sözcüğünden eski anılar çıkaran öğrenci, başlığın asıl eylemini yok sayar.",
+    "C": "'Balık' sözcüğünden okul dersi çıkaran öğrenci, başlıktaki 'gittik' ifadesini atlar."
+   },
+   "kazanim_kodu": "T.O.2.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-013",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Karakteri açıklama",
+   "zorluk": 2,
+   "soru_metni": "Kerem, arkadaşı Mina’nın kalemini yanlışlıkla kırdı. Hemen özür diledi. Sonra harçlığıyla ona yeni bir kalem aldı.\n\nMetne göre Kerem nasıl bir çocuktur?",
+   "siklar": {
+    "A": "Hatasının sorumluluğunu alan",
+    "B": "Eşyalarını paylaşmak istemeyen",
+    "C": "Her şeye kolayca kızan",
+    "D": "Hatasını gizlemeye çalışan"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Kerem arkadaşının kalemini kırmıştır.",
+    "Özür dilemiş ve kendi harçlığıyla yeni kalem almıştır.",
+    "Bu davranışlar, yaptığı hatanın sorumluluğunu aldığını gösterir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kerem’in hata yaptıktan sonra neler yaptığına bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Kalem konusundan yola çıkıp paylaşma ile sorumluluğu karıştıran öğrenci bu seçeneği seçer.",
+    "C": "Kalemin kırılmasını öfkeyle ilişkilendiren öğrenci, Kerem’in davranışını yanlış yorumlar.",
+    "D": "Hata yapan herkesin saklanmaya çalıştığını düşünen öğrenci, metindeki özür bilgisini yok sayar."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-014",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Bilgiyi açıklama",
+   "zorluk": 1,
+   "soru_metni": "Kirpilerin sırtı sivri dikenlerle kaplıdır. Tehlike hissedince kirpi yuvarlak bir top gibi kıvrılır. Böylece dikenleri dışarıda kalır.\n\nMetne göre kirpi tehlike hissedince neden top gibi kıvrılır?",
+   "siklar": {
+    "A": "Daha hızlı yuvarlanarak kaçmak için.",
+    "B": "Dikenleriyle kendini korumak için.",
+    "C": "Soğuktan korunup ısınmak için.",
+    "D": "Avının yaklaşmasını beklemek için."
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Kirpi tehlike hissedince top gibi kıvrılır.",
+    "Kıvrılınca sivri dikenleri dışarıda kalır.",
+    "Dikenler düşmanın yaklaşmasını zorlaştırır; yani kirpi kendini korur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kirpinin tehlike karşısında vücudunu nasıl kullandığını düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Top gibi kıvrılmayı yuvarlanmakla ilişkilendiren öğrenci, bu davranışı kaçma hareketi sanır.",
+    "C": "Kıvrılma davranışını soğuktan korunmayla karıştıran öğrenci, 'tehlike' bilgisini gözden kaçırır.",
+    "D": "Kirpiyi avcı bir hayvan sanan öğrenci, kıvrılmayı pusu kurmak olarak yorumlar."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-015",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Metnin konusunu bulma",
+   "zorluk": 2,
+   "soru_metni": "Defne her sabah balkondaki çiçeklerini sular. Solan yapraklarını ayıklar. Akşam olunca onlara güzel sözler söyler.\n\nBu metnin konusu hangisidir?",
+   "siklar": {
+    "A": "Balkonda çiçek yetiştirmenin zorlukları",
+    "B": "Defne’nin çiçek satın alma isteği",
+    "C": "Çiçeklerin hangi mevsimde açtığı",
+    "D": "Defne’nin çiçeklerine gösterdiği özen"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Metinde Defne’nin çiçekleri suladığı, solan yaprakları ayıkladığı ve onlarla konuştuğu anlatılıyor.",
+    "Bu davranışların hepsi çiçeklere gösterilen özeni anlatır.",
+    "Zorluklar, çiçek satın alma ve açma mevsimi metinde anlatılmaz.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Metindeki bütün cümlelerin Defne’nin çiçeklerle ilgili neyi anlattığını birlikte düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Metindeki çiçek bakımı ayrıntılarını 'zorluk' olarak yorumlayan öğrenci, konuyu metinde olmayan bir sonuçla ilişkilendirir.",
+    "B": "Çiçek ve Defne sözcüklerini görünce satın alma fikrine kayan öğrenci, metinde olmayan bir konu seçer.",
+    "C": "Çiçek konusunu mevsimle ilişkilendiren öğrenci, genel bir çiçek bilgisine yönelir."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-017",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Metnin konusunu bulma",
+   "zorluk": 3,
+   "soru_metni": "Arılar çiçeklerden nektar toplar. Nektardan bal yaparlar. Çiçekten çiçeğe konarken de bitkilerin tohum oluşturmasına yardım ederler.\n\nBu metnin konusu hangisidir?",
+   "siklar": {
+    "A": "Arıyla çiçeklerin ilişkisi",
+    "B": "Balın sağlığa yararları",
+    "C": "Çiçeklerin renk ve kokuları",
+    "D": "Arıların kovandaki yaşamı"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "İlk cümlede arıların çiçeklerden nektar topladığı anlatılıyor.",
+    "Sonraki cümlelerde bu nektardan bal yapıldığı ve arıların çiçekten çiçeğe konarak bitkilere yardım ettiği söyleniyor.",
+    "Üç cümlenin ortak noktası, arılar ile çiçekler arasındaki ilişkidir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Metindeki üç cümlenin ortak noktasını bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Metindeki 'bal' sözcüğünü konu sanan öğrenci, ayrıntıyı ana konu yapar.",
+    "C": "Çiçeklerden söz edildiğini görüp çiçeğin kendi özelliklerini bekleyen öğrenci, metinde olmayan bilgiyi seçer.",
+    "D": "Arı denince kovanı düşünen öğrenci, genel arı bilgisini metnin konusu sanır."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-019",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazıda içerik oluşturma",
+   "alt_konu": "Eksik cümleyi tamamlama",
+   "zorluk": 2,
+   "soru_metni": "Kış geldi ve hava çok soğudu. .......... Böylece hiç üşümeden okula gittik.\n\nMetindeki boşluğa hangi cümle yazılırsa metnin anlamı bozulmaz?",
+   "siklar": {
+    "A": "Biz de ince tişörtlerimizi giyip evden çıktık.",
+    "B": "Annem bize kalın giysilerimizi giydirdi.",
+    "C": "Sıcak çorba içip evde dinlendik.",
+    "D": "Okul tatil olduğu için eve kapandık."
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Hava soğuktur ve sonunda hiç üşümeden okula gidilmiştir.",
+    "Üşümemek için soğuğa uygun giyinmek gerekir.",
+    "Bu yüzden boşluğa kalın giysilerin giydirilmesi yazılmalıdır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Son cümledeki “böylece” sözcüğü, boşluktaki cümlenin bir sonuç doğurduğunu gösterir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Hava durumunu dikkate almayan öğrenci, soğuk günde ince giyinmenin üşümemeyi sağlayacağını düşünür.",
+    "C": "Hava soğuğunda evde kalmayı çözüm sanan öğrenci, son cümledeki okula gitme bilgisini unutur.",
+    "D": "Soğuk havayı tatilin nedeni sanan öğrenci, okula gidildiğini söyleyen son cümleyle çelişen bir cümle seçer."
+   },
+   "kazanim_kodu": "T.Y.2.2",
+   "kazanim_metni": "Yazılarında içerik oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-023",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazma kurallarını uygulama",
+   "alt_konu": "Kesme işareti",
+   "zorluk": 2,
+   "soru_metni": "Hangi cümlede kesme işareti kurala uygun kullanılmıştır?",
+   "siklar": {
+    "A": "Kitap’ı masanın üzerine koydum.",
+    "B": "Ayşenin bahçesinde çiçekler açtı.",
+    "C": "Dedem dün Konya’dan geldi.",
+    "D": "Anka’ra bizim başkentimizdir."
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Özel adlara gelen ekler kesme işaretiyle ayrılır: Konya’dan.",
+    "Cins isimlere (kitap) gelen ekler kesmeyle ayrılmaz.",
+    "Özel adın içine kesme konmaz; kesme, özel ad ile ek arasına konur.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kesme işareti, hangi tür sözcüklere gelen eki ayırır, hatırla."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Kesme işaretini her ekin başına koyması gerektiğini sanan öğrenci cins isme de kesme koyar.",
+    "B": "Özel ada gelen eki bitişik yazmayı yeterli sanan öğrenci kesme işaretini unutur.",
+    "D": "Kesmenin özel adın içine konabileceğini sanan öğrenci, işareti ek ile ad arasına koymaz."
+   },
+   "kazanim_kodu": "T.Y.2.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-024",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazma kurallarını uygulama",
+   "alt_konu": "de/da yazımı",
+   "zorluk": 2,
+   "soru_metni": "Hangi cümlede “de/da” kurala uygun yazılmıştır?",
+   "siklar": {
+    "A": "Ayşe’de bizimle gelecek.",
+    "B": "Ayşe de bizimle gelecek.",
+    "C": "Defterim çantam da kaldı.",
+    "D": "Annem bahçe de çiçek ekti."
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "“Ayşe de gelecek” cümlesindeki “de”, “dahi” anlamı katan bağlaçtır; ayrı yazılır ve kesmeyle ayrılmaz.",
+    "“Çantamda” ve “bahçede” sözcüklerindeki “-da/-de” ise bulunma ekidir; bitişik yazılır.",
+    "Bu nedenle yalnızca ikinci cümlede “de” doğru yazılmıştır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "“Dahi” anlamı katan “de”nin yazılışı ile bulunma ekinin yazılışı farklıdır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Özel ada gelen her eki kesmeyle ayırması gerektiğini sanan öğrenci, bağlaç olan “de”yi de kesmeyle ayırır.",
+    "C": "Bulunma ekini bağlaç sanan öğrenci “çantamda” yerine ayrı yazar.",
+    "D": "Bulunma ekini bağlaç sanan öğrenci “bahçede” yerine ayrı yazar."
+   },
+   "kazanim_kodu": "T.Y.2.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-026",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazma kurallarını uygulama",
+   "alt_konu": "Satır sonunda sözcük bölme",
+   "zorluk": 1,
+   "soru_metni": "Bir öğrenci, satır sonuna sığmayan sözcükleri kısa çizgiyle bölerek yazıyor.\n\nAşağıdaki sözcüklerden hangisi satır sonunda doğru bölünmüştür?",
+   "siklar": {
+    "A": "ço-cuk",
+    "B": "arkad-aş",
+    "C": "kel-ebek",
+    "D": "bahç-e"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Satır sonunda sözcük, hece sınırından kısa çizgiyle bölünür.",
+    "“Çocuk” sözcüğü ço-cuk diye heceye ayrılır; bu bölme doğrudur.",
+    "Diğer seçeneklerde bir hecenin ortasından bölme yapılmıştır: arkad-aş, kel-ebek ve bahç-e.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Sözcükler heceleri bozulmadan, hece sınırından bölünür."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Heceyi ünsüzle bitirmeyi alışkanlık sanan öğrenci “arka-daş” yerine “arkad-aş” der.",
+    "C": "Ünsüzü önceki heceye ekleyen öğrenci “ke-le-bek” yerine “kel-ebek” der.",
+    "D": "Ünlüden önceki ünsüzü önceki heceye bırakan öğrenci “bah-çe” yerine “bahç-e” der."
+   },
+   "kazanim_kodu": "T.Y.2.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-029",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuma sürecini yönetme",
+   "alt_konu": "Sesli ve sessiz okuma",
+   "zorluk": 1,
+   "soru_metni": "Kütüphanede herkes ders çalışırken Nil bir hikâye kitabı okumak istiyor.\n\nKütüphane kuralına göre Nil nasıl okumalıdır?",
+   "siklar": {
+    "A": "Dudaklarını kıpırdatmadan içinden okumalıdır.",
+    "B": "Arkadaşları duysun diye yüksek sesle okumalıdır.",
+    "C": "Yanındaki arkadaşıyla sırayla sesli okumalıdır.",
+    "D": "Sözcükleri tek tek mırıldanarak okumalıdır."
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Kütüphanede başkaları da çalıştığı için ses çıkarılmamalıdır.",
+    "Dudakları kıpırdatmadan, içinden yapılan okumaya sessiz okuma denir.",
+    "Yüksek sesle okumak, sırayla sesli okumak ve mırıldanmak çevredekileri rahatsız eder.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kütüphanede başkalarının da çalıştığını göz önünde bulundur."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Yüksek sesle okumanın daha iyi okumak olduğunu düşünen öğrenci, ortamdaki diğer kişileri hesaba katmaz.",
+    "C": "Okumayı arkadaşla paylaşmanın uygun olduğunu sanan öğrenci, ortamın sessizlik gerektirdiğini gözden kaçırır.",
+    "D": "Mırıldanmayı sessiz okuma sanan öğrenci, ses çıkarmanın sürdüğünü fark etmez."
+   },
+   "kazanim_kodu": "T.O.2.1",
+   "kazanim_metni": "Okuma sürecini yönetebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-031",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Anlam oluşturma",
+   "alt_konu": "Ön bilgiyle bağlantı kurma",
+   "zorluk": 1,
+   "soru_metni": "Okullar kapandı ve uzun bir tatil başladı. Emre her gün dondurma yedi. Akşamları da denize girdi.\n\nMetindeki bilgilere ve ön bilgilere göre olaylar hangi mevsimde geçmektedir?",
+   "siklar": {
+    "A": "İlkbahar mevsimi",
+    "B": "Yaz mevsimi",
+    "C": "Sonbahar mevsimi",
+    "D": "Kış mevsimi"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Metinde okulların kapandığı, uzun bir tatilin başladığı ve denize girildiği anlatılıyor.",
+    "Bu özellikler ön bilgilerimize göre yaz mevsimini gösterir.",
+    "İlkbahar ve sonbaharda okullar açıktır; kışın ise denize girmek için hava uygun değildir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Metindeki etkinliklerin yapıldığı dönemi, bildiğin mevsim özellikleriyle karşılaştır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Havaların ısınmaya başladığı ilkbaharı yaza benzeten öğrenci, okulların açık olduğunu unutur.",
+    "C": "Sıcak günlerin sürdüğü sonbaharı yaz sanan öğrenci, okulların kapanmasıyla ilgili bilgiyi atlar.",
+    "D": "Tatil sözcüğünü yarıyıl tatiliyle ilişkilendiren öğrenci, denize girme bilgisini göz ardı eder."
+   },
+   "kazanim_kodu": "T.O.2.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-032",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Anlam oluşturma",
+   "alt_konu": "Ön bilgiyle bağlantı kurma",
+   "zorluk": 1,
+   "soru_metni": "Dilek yeni aldığı bisikletle sokakta gezmeden önce kaskını taktı. Dizliklerini de bağladı.\n\nÖn bilgilere göre Dilek bunları neden yapmıştır?",
+   "siklar": {
+    "A": "Bisikletin daha hızlı gitmesi için.",
+    "B": "Güneşin sıcağından korunmak için.",
+    "C": "Arkadaşları kendisini beğensin diye.",
+    "D": "Düşerse yaralanmamak için."
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Kask başı, dizlik dizleri korumak için kullanılan koruyucu eşyalardır.",
+    "Bisikletten düşme durumunda başın ve dizlerin yaralanması önlenmek istenir.",
+    "Bu eşyalar bisikleti hızlandırmaz, güneşten korumaz ve gösteriş için kullanılmaz.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kask ve dizlik gibi eşyaların ne işe yaradığını bildiklerinle birleştir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Koruyucu eşyaları performans artıran eşya sanan öğrenci, bisikletin hızıyla ilişkilendirir.",
+    "B": "Kaskı şapka gibi düşünen öğrenci, güneşten korunmayı neden sanır.",
+    "C": "Eşyaların güvenlik işlevini bilmeyen öğrenci, davranışı gösterişe bağlar."
+   },
+   "kazanim_kodu": "T.O.2.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-033",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Anlam oluşturma",
+   "alt_konu": "Başlıktan konu tahmini",
+   "zorluk": 1,
+   "soru_metni": "Duru, “Gece Gökyüzündeki Parlak Yıldızlar” başlıklı bir metni okumaya hazırlanıyor.\n\nBu başlığa göre metnin en çok hangisini anlatması beklenir?",
+   "siklar": {
+    "A": "Denizin dibinde yaşayan yıldızları",
+    "B": "Gündüz gökyüzünde parlayan güneşi",
+    "C": "Geceleri gökte görünen yıldızları",
+    "D": "Şehirde geceleri yanan lambaları"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Başlıkta gece, gökyüzü, parlak ve yıldız sözcükleri birlikte geçiyor.",
+    "Bu sözcüklere göre metinde geceleri gökyüzünde görünen yıldızların anlatılması beklenir.",
+    "Denizdeki yıldızlar, gündüzki güneş ve şehir lambaları başlıktaki sözcüklerden en az birine uymaz.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Başlıktaki sözcüklerin hepsini birlikte düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yıldız sözcüğünü deniz yıldızıyla karıştıran öğrenci, başlıktaki gökyüzü bilgisini atlar.",
+    "B": "Parlak sözcüğünü güneşle ilişkilendiren öğrenci, başlıktaki gece bilgisini göz ardı eder.",
+    "D": "Parlak sözcüğünü lambalarla ilişkilendiren öğrenci, yıldız ve gökyüzü sözcüklerini yok sayar."
+   },
+   "kazanim_kodu": "T.O.2.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-035",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Anlam oluşturma",
+   "alt_konu": "Metinden sonraki olayı tahmin etme",
+   "zorluk": 1,
+   "soru_metni": "Sude akşam dişlerini fırçaladı. Pijamalarını giydi. Annesi ona battaniyesini örttü.\n\nMetne göre Sude’nin bundan sonra ne yapması en olasıdır?",
+   "siklar": {
+    "A": "Dişlerini yeniden fırçalaması",
+    "B": "Mutfakta akşam yemeği yemesi",
+    "C": "Sabah erkenden okula gitmesi",
+    "D": "Yatağında uykuya dalması"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Sude dişlerini fırçalamış, pijamalarını giymiş ve annesi onu örtmüştür.",
+    "Bu olaylar yatma hazırlığıdır; bundan sonra uykuya dalması beklenir.",
+    "Diş fırçalama ve akşam yemeği daha önce yapılan işlerdir; sabah okula gitmek ise çok sonradır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Metinde anlatılan olayların sırasını düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Metinde geçen ilk olayı tekrar bekleyen öğrenci, olayların sırasını karıştırır.",
+    "B": "Akşam yapılan işlerden birini sona koyan öğrenci, yemeği yatma hazırlığından sonraya taşır.",
+    "C": "Metindeki zamandan çok uzak bir olayı seçen öğrenci, hemen ardından olacak durumu atlar."
+   },
+   "kazanim_kodu": "T.O.2.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-036",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Karakteri açıklama",
+   "zorluk": 1,
+   "soru_metni": "Ada okul çıkışında yolda ağlayan küçük bir çocuk gördü. Yanına gidip adını sordu. Sonra çocuğu elinden tutup okulun güvenlik görevlisine götürdü.\n\nMetne göre Ada nasıl bir çocuktur?",
+   "siklar": {
+    "A": "Yolda yardıma ihtiyaç duyan",
+    "B": "Başkasına yardım etmek isteyen",
+    "C": "Gördüğü sorunu fark etmeyen",
+    "D": "Yabancılarla konuşmaktan kaçınan"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Ada, ağlayan çocuğu görünce yanına gidip adını sormuştur.",
+    "Sonra çocuğu güvenlik görevlisine götürerek ona yardım etmiştir.",
+    "Bu davranışlar Ada’nın başkasına yardım etmek isteyen biri olduğunu gösterir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Karakterin yaptığı davranışlar, onun nasıl biri olduğunu gösterir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ağlayan çocuğun durumunu Ada’ya yükleyen öğrenci, olaydaki kişileri karıştırır.",
+    "C": "Ada’nın yaptıklarını dikkatle okumayan öğrenci, onun olayı fark etmediğini sanır.",
+    "D": "Yabancılarla ilgili bir kuralı metne taşıyan öğrenci, Ada’nın çocukla konuştuğunu gözden kaçırır."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-037",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Bilgiyi açıklama",
+   "zorluk": 2,
+   "soru_metni": "Develer çölde uzun yolculuklar yapabilir. Hörgüçlerinde yağ biriktirirler. Yiyecek bulamadıkları günlerde bu yağdan enerji alırlar.\n\nMetne göre develerin hörgüçlerindeki yağ ne işe yarar?",
+   "siklar": {
+    "A": "Yiyeceksiz kalınca vücuda güç verir.",
+    "B": "Susuz kalınca içilecek suyu saklar.",
+    "C": "Sıcak kumlarda yürümeyi kolaylaştırır.",
+    "D": "Üzerine binenlerin tutunmasını sağlar."
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Metne göre develer hörgüçlerinde yağ biriktirir.",
+    "Yiyecek bulamadıkları günlerde bu yağdan enerji alırlar.",
+    "Yani yağ, yiyeceksiz kalınca vücuda güç verir; hörgüçte su saklandığı metinde yazmaz.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Bildiklerini değil, metinde anlatılanları esas al."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Hörgüçlerde su saklandığını sanan öğrenci, yaygın yanlış bilgiyi metindeki bilginin yerine koyar.",
+    "C": "Develeri çölle ilişkilendiren öğrenci, hörgüçleri yürüme kolaylığına bağlar.",
+    "D": "Develere binildiğini bilen öğrenci, hörgücün işlevini insanın yararıyla karıştırır."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-038",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Metnin konusunu bulma",
+   "zorluk": 2,
+   "soru_metni": "Bazı kelebeklerin kanatları kuru yaprağa benzer. Bu kelebekler yaprakların arasına konunca zor fark edilir. Böylece düşmanlarından kolayca saklanırlar.\n\nBu metnin konusu hangisidir?",
+   "siklar": {
+    "A": "Yaprakların sonbaharda renk değiştirmesi",
+    "B": "Kelebek kanatlarındaki renklerin güzelliği",
+    "C": "Bazı kelebeklerin kendini koruma yolu",
+    "D": "Kelebeklerin çiçeklerden nektar toplaması"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "İlk cümlede bazı kelebeklerin kanatlarının yaprağa benzediği anlatılıyor.",
+    "Sonraki cümlelerde bu benzerlik sayesinde kelebeklerin fark edilmeyip düşmanlarından saklandığı söyleniyor.",
+    "Üç cümlenin ortak noktası, bazı kelebeklerin kendilerini koruma yoludur.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Konu, metindeki bütün cümleleri kapsayan ortak noktadır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Metindeki yaprak sözcüğünü konu sanan öğrenci, ayrıntıyı ana konu yapar.",
+    "B": "Kanat ve benzerlik bilgisine odaklanan öğrenci, kanadın güzelliğini konu sanır.",
+    "D": "Kelebek denince nektarı hatırlayan öğrenci, metinde olmayan bir bilgiyi seçer."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-039",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazıda içerik oluşturma",
+   "alt_konu": "Eksik cümleyi tamamlama",
+   "zorluk": 1,
+   "soru_metni": "Gül’ün dişi çok ağrıyordu. .......... Doktor dişini muayene edip tedavi etti.\n\nMetindeki boşluğa hangi cümle yazılmalıdır?",
+   "siklar": {
+    "A": "Annesi ona dişini fırçalamayı öğretti.",
+    "B": "Annesi onu göz doktoruna götürdü.",
+    "C": "Annesi onu kulak doktoruna götürdü.",
+    "D": "Annesi onu diş hekimine götürdü."
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Gül’ün dişi ağrıdığı için bir doktora gidilmiş olmalıdır.",
+    "Dişlere diş hekimi bakar ve onları tedavi eder.",
+    "Göz ve kulak doktorları dişe bakmaz; dişini fırçalamayı öğretmek ise doktor muayenesine bağlanmaz.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Boşluğun hem öncesindeki hem sonrasındaki cümleyle uyumlu olması gerekir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Diş ağrısını diş bakımına bağlayan öğrenci, sonraki cümledeki doktor muayenesini göz ardı eder.",
+    "B": "Doktorların uzmanlık alanlarını karıştıran öğrenci, her doktorun diş tedavisi yaptığını sanır.",
+    "C": "Baş bölgesindeki sorunları aynı doktora götürülür sanan öğrenci, kulak doktorunu seçer."
+   },
+   "kazanim_kodu": "T.Y.2.2",
+   "kazanim_metni": "Yazılarında içerik oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-040",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazıda içerik oluşturma",
+   "alt_konu": "Eksik cümleyi tamamlama",
+   "zorluk": 2,
+   "soru_metni": "Annem pazarda manavın tezgâhındaki elmaları inceledi. .......... Sonra parasını ödeyip elmaları poşete koydurdu.\n\nMetindeki boşluğa hangi cümle yazılmalıdır?",
+   "siklar": {
+    "A": "Satıcıya parayı verip elmalarla eve döndü.",
+    "B": "Beğendiği elmaları seçip tarttırdı.",
+    "C": "Elmaları satıcıya geri verip uzaklaştı.",
+    "D": "Elma yerine armut almaya karar verdi."
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Önce elmalar incelenir; sonra beğenilenler seçilip tartılır.",
+    "Tartıdan sonra para ödenir ve elmalar poşete konur.",
+    "Diğer seçenekler ya olayların sırasını bozar ya da sonraki cümleyle çelişir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Cümlelerin olay sırasına göre birbirini izleyip izlemediğini kontrol et."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ödeme sonrasındaki adımı öne alan öğrenci, sonraki cümlede ödemenin henüz yapılmadığını fark etmez.",
+    "C": "Elmaları incelemekle geri vermeyi birbirine bağlayan öğrenci, poşete konulan elmaları unutur.",
+    "D": "Metindeki elma bilgisini yok sayan öğrenci, sonraki cümleyle çelişen bir karar seçer."
+   },
+   "kazanim_kodu": "T.Y.2.2",
+   "kazanim_metni": "Yazılarında içerik oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-042",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazma kurallarını uygulama",
+   "alt_konu": "Soru işareti",
+   "zorluk": 2,
+   "soru_metni": "Aşağıdaki cümlelerden hangisinin sonuna soru işareti konmalıdır?",
+   "siklar": {
+    "A": "Ne kadar güzel bir resim yapmışsın",
+    "B": "Öğretmenim bana adımı sordu",
+    "C": "Annem hangi gün geleceğini söyledi",
+    "D": "Yarın saat kaçta buluşacağız"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Soru işareti, cevap beklenen soru cümlelerinin sonuna konur.",
+    "“Yarın saat kaçta buluşacağız” cümlesi karşısındakinden cevap ister.",
+    "“Ne kadar güzel bir resim yapmışsın” hayranlık bildirir; “sordu” ve “hangi gün” sözcüklerini içeren diğer cümleler ise soru sormaz, haber verir.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Cümlenin karşısındakinden cevap isteyip istemediğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ne sözcüğünü gören öğrenci, cümlenin ünlem cümlesi olduğunu fark etmeden soru sanar.",
+    "B": "Sordu sözcüğünü gören öğrenci, cümlenin haber verdiğini gözden kaçırır.",
+    "C": "Hangi sözcüğünü gören öğrenci, dolaylı anlatımı soru cümlesi sanar."
+   },
+   "kazanim_kodu": "T.Y.2.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-045",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Anlam oluşturma",
+   "alt_konu": "Ön bilgiyle sonuç çıkarma",
+   "zorluk": 2,
+   "soru_metni": "Selin sabah acele ederken şemsiyesini evde unuttu. Öğleden sonra gökyüzünü kara bulutlar kapladı. Okul çıkışında çocuklar çantalarını başlarına koyup koştu.\n\nMetne ve ön bilgilere göre Selin okul çıkışında ne yaşamıştır?",
+   "siklar": {
+    "A": "Çantasını okulda unutmuştur.",
+    "B": "Arkadaşlarıyla yarışa girmiştir.",
+    "C": "Yağmurda şemsiyesiz kalmıştır.",
+    "D": "Güneşten kendini korumuştur."
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Gökyüzünü kara bulutların kaplaması ve çocukların çantalarını başlarına koyup koşması, yağmur yağdığını gösterir.",
+    "Selin sabah şemsiyesini evde unutmuştur.",
+    "Bu iki bilgi birleşince Selin’in yağmurda şemsiyesiz kaldığı anlaşılır.",
+    "Çantanın okulda unutulması, yarışa girilmesi ve güneşten korunulması metindeki bilgilerle uyuşmaz.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Çocukların çantalarını neden başlarına koyduğunu düşün, sonra Selin’in sabahki durumuyla birleştir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Unutma bilgisini yanlış eşyaya ve yere taşıyan öğrenci, şemsiye yerine çantayı seçer.",
+    "B": "Çocukların koşmasını yarış sanan öğrenci, koşma nedenini yağmurla ilişkilendirmez.",
+    "D": "Çantayı başa koymayı güneşten korunmak sanan öğrenci, kara bulutlar bilgisini yok sayar."
+   },
+   "kazanim_kodu": "T.O.2.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-046",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Anlam oluşturma",
+   "alt_konu": "Ön bilgiyle bağlantı kurma",
+   "zorluk": 2,
+   "soru_metni": "Arda ile annesi yaya geçidine geldi. Kırmızı ışık yanıyordu ve araçlar hızla geçiyordu. Arda, annesinin elini sıkıca tuttu. Sonra güvenle karşıya geçtiler.\n\nMetne ve ön bilgilere göre Arda ile annesi karşıya geçmeden önce neyi beklemiştir?",
+   "siklar": {
+    "A": "Yaya ışığının yeşile dönmesini",
+    "B": "Araçların tamamen geçip gitmesini",
+    "C": "Arda’nın korkusunun geçmesini",
+    "D": "Bir görevlinin araçları durdurmasını"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Araçlar hızla geçerken kırmızı ışık yandığına göre bu ışık yayalar içindir ve yayalar beklemelidir.",
+    "Ön bilgilerimize göre yayalar, yaya ışığı yeşile dönünce karşıya geçer.",
+    "Bu yüzden Arda ile annesi, ışığın yeşile dönmesini beklemiştir.",
+    "Araçların geçip gitmesi, Arda’nın korkusu ya da bir görevli, karşıya geçme zamanını gösteren işaretin yerine geçmez.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Yaya geçidinde karşıya ne zaman geçileceğine nasıl karar verildiğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Araçların hızla geçtiğini fark eden öğrenci, beklenen şeyi trafiğin bitmesi sanar ve ışık işaretini unutur.",
+    "C": "Annesinin elini sıkıca tutma ayrıntısını korkuyla ilişkilendiren öğrenci, beklemeyi duygusal bir nedene bağlar.",
+    "D": "Yol geçişlerinde mutlaka bir görevlinin yardım ettiğini sanan öğrenci, ışığın işlevini göz ardı eder."
+   },
+   "kazanim_kodu": "T.O.2.2",
+   "kazanim_metni": "Okudukları ile ilgili anlam oluşturabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-047",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Karakterin duygusunu açıklama",
+   "zorluk": 2,
+   "soru_metni": "Deniz’in muhabbet kuşu, kafesinin kapağı açık kalınca uçup gitti. Deniz bütün gün pencerenin önünden ayrılmadı. Akşam sofrada çorbasını bitirmeden kaşığını bıraktı.\n\nMetne göre Deniz’in kuşu uçup gittikten sonraki duygusu hangisidir?",
+   "siklar": {
+    "A": "Kuşunun kaçmasına duyduğu öfke",
+    "B": "Kuşunun yokluğuna duyduğu üzüntü",
+    "C": "Gökyüzünü izlemekten aldığı keyif",
+    "D": "Kuşun uçmasına duyduğu şaşkınlık"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Kuşu uçup gidince Deniz bütün gün pencerenin önünden ayrılmamıştır; kuşunu beklemektedir.",
+    "Akşam çorbasını bitirmeden kaşığını bırakması, canının yemek istemediğini gösterir.",
+    "Bu davranışlar Deniz’in kuşunun yokluğuna üzüldüğünü gösterir.",
+    "Deniz’in kuşuna kızdığını, gökyüzünden keyif aldığını ya da yalnızca şaşırdığını gösteren bir davranış yoktur.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Deniz’in gün boyunca ve akşam yemekte neler yaptığını birlikte değerlendir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Kaşığı bırakmayı öfkeli bir davranış sanan öğrenci, Deniz’in kuşuna kızdığını düşünür.",
+    "C": "Pencereden bakmayı eğlence sanan öğrenci, yemek yememe bilgisini göz ardı eder.",
+    "D": "Olayın ilk anındaki duyguyu bütün güne yayan öğrenci, şaşkınlığı seçer."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-048",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Okuduğunu çözümleme",
+   "alt_konu": "Metnin konusunu bulma",
+   "zorluk": 2,
+   "soru_metni": "Kırlangıçlar sonbaharda sıcak ülkelere gider. Yolculukta binlerce kilometre uçarlar. İlkbahar gelince yine eski yuvalarına dönerler.\n\nBu metnin konusu hangisidir?",
+   "siklar": {
+    "A": "Kırlangıçların yuvalarını yapma biçimi",
+    "B": "Kırlangıçların uçtuğu kilometre sayısı",
+    "C": "Sıcak ülkelerdeki yaşam biçimi",
+    "D": "Kırlangıçların gidiş dönüş yolculuğu"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "İlk cümlede kırlangıçların sonbaharda sıcak ülkelere gittiği anlatılıyor.",
+    "İkinci cümlede bu yolculukta çok uzun yol uçtukları, üçüncü cümlede ilkbaharda geri döndükleri söyleniyor.",
+    "Üç cümle birlikte kırlangıçların gidiş dönüş yolculuğunu anlatır; uçulan yol, yuva ve sıcak ülkeler bu konunun ayrıntılarıdır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Üç cümlenin hepsinde anlatılan ortak olayı bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Son cümledeki yuva sözcüğünü yakalayan öğrenci, ayrıntıyı metnin bütününün yerine koyar.",
+    "B": "Binlerce kilometre uçma bilgisine odaklanan öğrenci, ikinci cümleyi konu sanar.",
+    "C": "Sıcak ülkelere gidildiğini okuyan öğrenci, gidilen yeri metnin konusu yapar."
+   },
+   "kazanim_kodu": "T.O.2.3",
+   "kazanim_metni": "Okuduklarını çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "tr2-050",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Türkçe",
+   "konu": "Yazma kurallarını uygulama",
+   "alt_konu": "de/da yazımı ve kesme işareti",
+   "zorluk": 3,
+   "soru_metni": "Hangi cümlede “de/da” ve kesme işareti kurala uygun yazılmıştır?",
+   "siklar": {
+    "A": "Dedem’de Bursa’da bahçede çalışıyor.",
+    "B": "Dedem de Bursa’da bahçede çalışıyor.",
+    "C": "Dedem de Bursa’da bahçe de çalışıyor.",
+    "D": "Dedem de Bursa’da bahçe’de çalışıyor."
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "“Dedem de” ifadesindeki “de”, “dahi” anlamı katan bağlaçtır; ayrı yazılır ve kesmeyle ayrılmaz.",
+    "“Bursa’da” sözcüğü özel ad olduğu için bulunma eki kesmeyle ayrılır ve bitişik yazılır.",
+    "“bahçede” sözcüğü özel ad olmadığı için bulunma eki kesmesiz ve bitişik yazılır.",
+    "Üç kuralı da doğru uygulayan tek cümle “Dedem de Bursa’da bahçede çalışıyor.” cümlesidir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Bağlaç olan “de”, özel ada gelen ek ve özel ad olmayan sözcüğe gelen ek için kuralları ayrı ayrı düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Özel ada gelen eki kesmeyle ayırma kuralını bağlaça da uygulayan öğrenci, “de”yi kesmeyle ayırır.",
+    "C": "Bulunma ekini bağlaç sanan öğrenci, “bahçede” sözcüğünü ayrı yazar.",
+    "D": "Her ekin başına kesme konduğunu sanan öğrenci, özel ad olmayan “bahçe” sözcüğüne de kesme koyar."
+   },
+   "kazanim_kodu": "T.Y.2.3",
+   "kazanim_metni": "Yazma kurallarını uygulayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-001",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Doğal sayılar",
+   "alt_konu": "Sayıları okuma ve yazma",
+   "zorluk": 1,
+   "soru_metni": "Yetmiş sekiz sayısı hangi rakamlarla yazılır?",
+   "siklar": {
+    "A": "87",
+    "B": "70",
+    "C": "78",
+    "D": "68"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Yetmiş, 7 onluktur ve 70 diye yazılır.",
+    "Sekiz, 8 birliktir.",
+    "70 ile 8 birleştirilince sayı 78 olur.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Sayıyı onluk ve birliklerine ayırarak düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Rakamların sırasını ters yazma: 7 ve 8'i yan yana koyup basamak sırasını karıştırma.",
+    "B": "Yalnız yetmişi yazıp sekiz birliğini unutma, yani birler basamağını atlama.",
+    "D": "Yetmiş ile altmışı karıştırma."
+   },
+   "kazanim_kodu": "MAT.2.1.1",
+   "kazanim_metni": "100'e kadar olan niceliklerin büyüklüklerini temsil etmede sayıların sembolik temsillerinden yararlanabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-002",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Doğal sayılar",
+   "alt_konu": "Basamak ve basamak değeri",
+   "zorluk": 1,
+   "soru_metni": "Onlar basamağında 7, birler basamağında 4 olan sayı kaçtır?",
+   "siklar": {
+    "A": "74",
+    "B": "47",
+    "C": "11",
+    "D": "70"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Onlar basamağında 7 varsa sayıda 7 onluk, yani 70 vardır.",
+    "Birler basamağında 4 varsa sayıda 4 birlik vardır.",
+    "70 + 4 = 74",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Onlar basamağındaki rakam, kaç onluk olduğunu gösterir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Basamakları ters yerleştirme: birler basamağındaki rakamı onlar basamağına yazma.",
+    "C": "İki rakamı toplama: 7 + 4 = 11.",
+    "D": "Birler basamağını yazmayı unutup yalnız 7 onluğu gösterme."
+   },
+   "kazanim_kodu": "MAT.2.1.2",
+   "kazanim_metni": "İki basamaklı sayıları çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-004",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Doğal sayılar",
+   "alt_konu": "Sayıların sırası",
+   "zorluk": 1,
+   "soru_metni": "Aşağıdaki sayılardan hangisi 57 ile 59 arasındadır?",
+   "siklar": {
+    "A": "56",
+    "B": "58",
+    "C": "60",
+    "D": "57"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Sayılar sırayla ilerler: 56, 57, 58, 59, 60.",
+    "57 ile 59 arasında yalnız 57'den hemen sonra gelen sayı vardır.",
+    "57'den hemen sonra gelen sayı 57 + 1 = 58'dir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Sayılar küçükten büyüğe doğru sırayla ilerler."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "57'den önce gelen sayıyı seçme; sıranın yönünü karıştırma.",
+    "C": "59'dan sonra gelen sayıyı seçme; arasında olma koşulunu atlama.",
+    "D": "Sınırdaki sayıyı \"arasında\" sanma."
+   },
+   "kazanim_kodu": "MAT.2.1.3",
+   "kazanim_metni": "Sayıların sırasını belirleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-005",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Ritmik sayma",
+   "alt_konu": "Geriye doğru beşer sayma",
+   "zorluk": 2,
+   "soru_metni": "Mert 100'den başlayarak geriye doğru beşer beşer sayıyor: 100, 95, 90. Mert'in söyleyeceği sonraki sayı kaçtır?",
+   "siklar": {
+    "A": "89",
+    "B": "80",
+    "C": "85",
+    "D": "86"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "100, 95, 90 sayılarında her adımda 5 azalır.",
+    "Sıradaki sayıyı bulmak için 90'dan 5 geri gidilir.",
+    "90 - 5 = 85",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Verilen sayılar arasındaki farka bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Birer geriye sayma: 90'dan yalnız 1 geri gitme.",
+    "B": "Onar geriye sayma: 90'dan 10 geri gitme.",
+    "D": "Dörder geriye sayma: 90'dan 4 geri gitme."
+   },
+   "kazanim_kodu": "MAT.2.1.4",
+   "kazanim_metni": "İleriye ve geriye doğru ritmik sayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-006",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Tahmin",
+   "alt_konu": "Parça-bütün ilişkisiyle sayı tahmini",
+   "zorluk": 2,
+   "soru_metni": "Bir kavanozun yarısı 12 şekerle doluyor. Kavanoz aynı şekerlerle tamamen doldurulursa içinde yaklaşık kaç şeker olur?",
+   "siklar": {
+    "A": "36",
+    "B": "24",
+    "C": "12",
+    "D": "18"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Kavanozun yarısında 12 şeker vardır.",
+    "Tamamı, iki yarım parçadan oluşur; ikinci yarıda da 12 şeker olur.",
+    "12 * 2 = 24",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kavanozun yarısıyla tamamı arasındaki ilişkiyi düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yarının 3 katını alma; yarım ile bütün arasındaki katı yanlış kurma.",
+    "C": "Yarıdaki sayıyı bütünün sayısı sanma.",
+    "D": "Yarıya yarısını ekleme: 12 + 6."
+   },
+   "kazanim_kodu": "MAT.2.1.6",
+   "kazanim_metni": "Bir çokluktaki ilişkilerden yararlanarak 50'ye kadar olan nesnelerin sayısını tahmin edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-007",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Kesirler",
+   "alt_konu": "Bütün, yarım ve çeyrek",
+   "zorluk": 2,
+   "soru_metni": "Bir elma 4 eşit parçaya bölündü. Ece bu parçalardan 3 tanesini yedi. Elmanın kalan kısmı bütünün ne kadarıdır?",
+   "siklar": {
+    "A": "Bütünün çeyreği",
+    "B": "Bütünün yarısı",
+    "C": "Bütünün üç çeyreği",
+    "D": "Bütünün tamamı"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Elma 4 eşit parçaya bölündüğünde her parça bütünün çeyreğidir.",
+    "Ece 3 parça yedi; 4 - 3 = 1 parça kaldı.",
+    "Kalan 1 parça bütünün çeyreğidir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Elmanın kaç parçasının kaldığını say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Kalan parça sayısını yanlış belirleme; kalan kısmı 2 parça, yani yarım sanma.",
+    "C": "Yenen kısmı kalan kısım sanma; ara sonucu nihai cevap alma.",
+    "D": "Kalan kısmı bütünle karıştırma."
+   },
+   "kazanim_kodu": "MAT.2.1.7",
+   "kazanim_metni": "Bütün, yarım ve çeyrek arasındaki ilişkiyi çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-008",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Para",
+   "alt_konu": "Kuruş ve lira ilişkisi",
+   "zorluk": 1,
+   "soru_metni": "Elif'in cüzdanında 50 kuruşluk iki madenî para var. Elif'in parası kaç liradır?",
+   "siklar": {
+    "A": "2 TL",
+    "B": "50 TL",
+    "C": "100 TL",
+    "D": "1 TL"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "İki paranın toplamı 50 + 50 = 100 kuruştur.",
+    "100 kuruş 1 liraya eşittir.",
+    "Elif'in parası 1 liradır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce iki paranın toplamını kuruş olarak bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Para adedini lira sayısı sanma: iki para, 2 TL.",
+    "B": "Bir paradaki kuruş sayısını lira sanma.",
+    "C": "Toplam kuruş sayısını liraya çevirmeden lira sanma."
+   },
+   "kazanim_kodu": "MAT.2.1.8",
+   "kazanim_metni": "Paraları değerlerine göre ilişkilendirerek çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-009",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Para",
+   "alt_konu": "Bir liraya tamamlama",
+   "zorluk": 2,
+   "soru_metni": "Ece'nin 75 kuruşu var. Ece'nin 1 lirası olması için kaç kuruş daha gerekir?",
+   "siklar": {
+    "A": "35 kuruş",
+    "B": "25 kuruş",
+    "C": "75 kuruş",
+    "D": "25 lira"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "1 lira 100 kuruştur.",
+    "Ece'nin 75 kuruşu var; eksik kısım 100 - 75 kadardır.",
+    "100 - 75 = 25 kuruş",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Elindeki parayı 1 liranın kuruş karşılığıyla karşılaştır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "100'den 75 çıkarırken onluk bozmada hata yapma.",
+    "C": "Elindeki parayı cevap sanma; ara bilgiyi nihai sonuç alma.",
+    "D": "Birim karıştırma: doğru sayıyı kuruş yerine lira diye yazma."
+   },
+   "kazanim_kodu": "MAT.2.1.8",
+   "kazanim_metni": "Paraları değerlerine göre ilişkilendirerek çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-010",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Zaman",
+   "alt_konu": "Saati okuma ve yazma",
+   "zorluk": 1,
+   "soru_metni": "Saat 5'i çeyrek geçiyor. Bu saat hangi şekilde yazılır?",
+   "siklar": {
+    "A": "5:15",
+    "B": "5:30",
+    "C": "4:45",
+    "D": "5:45"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "\"5'i geçiyor\" demek, saatin 5'i biraz geçtiği anlamına gelir.",
+    "Çeyrek geçiyorsa saatin 5 ile 6 arasındaki bölümünün ilk çeyreği geçmiştir.",
+    "Bu zaman 5:15 olarak yazılır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Çeyrek, saatin dört eşit parçasından biridir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Çeyreği yarım saatle karıştırma.",
+    "C": "\"Çeyrek geçiyor\" ile \"çeyrek var\" ifadelerini karıştırma.",
+    "D": "Çeyrek geçeyi saatin dörtte üçü kadar geçmiş sanma."
+   },
+   "kazanim_kodu": "MAT.2.1.9",
+   "kazanim_metni": "Zaman ölçü birimlerini okuyabilme ve yazabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-011",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Zaman",
+   "alt_konu": "Hafta ve gün",
+   "zorluk": 1,
+   "soru_metni": "Bir haftada Cumartesi ve Pazar dışında kaç gün vardır?",
+   "siklar": {
+    "A": "2 gün",
+    "B": "7 gün",
+    "C": "5 gün",
+    "D": "9 gün"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Bir hafta 7 gündür.",
+    "Cumartesi ve Pazar 2 gündür.",
+    "7 - 2 = 5 gün",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Bir haftanın tüm günlerini say, sonra ayrılanları çıkar."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Hafta sonu günlerinin sayısını cevap sanma.",
+    "B": "Haftanın tüm günlerini sayıp çıkarmayı unutma.",
+    "D": "Çıkarma yerine toplama yapma: 7 + 2."
+   },
+   "kazanim_kodu": "MAT.2.1.9",
+   "kazanim_metni": "Zaman ölçü birimlerini okuyabilme ve yazabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-012",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Ölçme",
+   "alt_konu": "Standart ölçme araçlarının gerekliliği",
+   "zorluk": 2,
+   "soru_metni": "Ali ile Elif aynı masanın uzunluğunu kendi karışlarıyla ölçtü. Ali 9 karış, Elif 7 karış buldu. Herkesin masa için aynı sonucu bulması isteniyorsa ne yapılmalıdır?",
+   "siklar": {
+    "A": "Herkes ölçümü daha dikkatli yapmalıdır",
+    "B": "Herkes ölçümü birkaç kez tekrarlamalıdır",
+    "C": "Herkes en büyük sayıyı sonuç saymalıdır",
+    "D": "Herkes cetvel ya da metre kullanmalıdır"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Karışın uzunluğu kişiden kişiye değişir; bu yüzden Ali ve Elif farklı sayı buldu.",
+    "Herkesin aynı sonucu bulması için uzunluğu herkes için aynı olan bir araç gerekir.",
+    "Cetvel ve metre, uzunluğu herkes için aynı olan standart ölçme araçlarıdır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Karış uzunluğunun herkeste aynı olup olmadığını düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Farkı dikkatsizlikten kaynaklanan ölçme hatası sanma; aracın değişken olduğunu görmeme.",
+    "B": "Ölçümü tekrarlamanın farkı gidereceğini sanma; aynı karışla yine farklı sonuç çıkar.",
+    "C": "Daha büyük sayıyı daha doğru ölçüm sanma."
+   },
+   "kazanim_kodu": "MAT.2.1.10",
+   "kazanim_metni": "Standart uzunluk ve kütle ölçme araçlarının ve birimlerinin gerekliliğini yansıtabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-013",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Ölçme",
+   "alt_konu": "Uzunluk tahmini",
+   "zorluk": 2,
+   "soru_metni": "Bir cetvelin uzunluğu 30 santimetredir. Okul sırasının uzunluğu yaklaşık 2 cetvel boyu kadardır. Okul sırasının uzunluğu yaklaşık kaç santimetredir?",
+   "siklar": {
+    "A": "60 santimetre",
+    "B": "30 santimetre",
+    "C": "32 santimetre",
+    "D": "6 santimetre"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Sıra, 2 cetvel boyu kadardır.",
+    "Bir cetvel 30 santimetre olduğundan 2 cetvel için 30 sayısı 2 kez alınır.",
+    "30 * 2 = 60 santimetre",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Sıranın uzunluğunun cetvel boyunun kaç katı olduğuna bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Yalnız bir cetvel boyunu alma; kaç kez tekrarlandığını atlama.",
+    "C": "Çarpma yerine toplama yapma: 30 + 2.",
+    "D": "Basamak değerini karıştırma: 30 yerine 3 alıp 3 * 2 = 6 bulma."
+   },
+   "kazanim_kodu": "MAT.2.1.11",
+   "kazanim_metni": "Standart uzunluk ve kütle ölçü birimleri cinsinden uzunlukları ve kütleleri tahmin edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-014",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Problemler",
+   "alt_konu": "Toplama ve çıkarma problemi",
+   "zorluk": 2,
+   "soru_metni": "Bir otobüste 38 yolcu vardı. Durakta 14 yolcu indi, 9 yolcu bindi. Otobüste şimdi kaç yolcu vardır?",
+   "siklar": {
+    "A": "24",
+    "B": "33",
+    "C": "61",
+    "D": "43"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Önce inenler çıkarılır: 38 - 14 = 24.",
+    "Sonra binenler eklenir: 24 + 9 = 33.",
+    "Otobüste 33 yolcu vardır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "İnen yolcular sayıyı azaltır, binen yolcular artırır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ara sonucu nihai sanma: binen yolcuları eklemeyi unutma.",
+    "C": "İşlem seçimi hatası: üç sayıyı da toplama.",
+    "D": "İnen ve binen yolcuların işlemlerini ters yapma: 38 + 14 - 9."
+   },
+   "kazanim_kodu": "MAT.2.2.1",
+   "kazanim_metni": "Toplama ve çıkarma işlemleri gerektiren günlük yaşam problemlerini çözebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-015",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Problemler",
+   "alt_konu": "Karşılaştırmalı çok adımlı problem",
+   "zorluk": 3,
+   "soru_metni": "Bir sınıfta 12 kız öğrenci vardır. Erkek öğrenciler kız öğrencilerden 5 fazladır. Sınıftan 4 öğrenci erken ayrılırsa sınıfta kaç öğrenci kalır?",
+   "siklar": {
+    "A": "13",
+    "B": "29",
+    "C": "33",
+    "D": "25"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Erkek öğrenci sayısı 12 + 5 = 17'dir.",
+    "Sınıftaki tüm öğrenciler 12 + 17 = 29'dur.",
+    "4 öğrenci ayrılınca 29 - 4 = 25 öğrenci kalır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce erkek öğrenci sayısını bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Kız öğrencileri hesaba katmama: yalnız erkek sayısından ayrılanı çıkarma, 17 - 4.",
+    "B": "Ara sonucu nihai sanma: ayrılan öğrencileri çıkarmayı unutma.",
+    "C": "Ayrılan öğrencileri çıkarmak yerine ekleme."
+   },
+   "kazanim_kodu": "MAT.2.2.1",
+   "kazanim_metni": "Toplama ve çıkarma işlemleri gerektiren günlük yaşam problemlerini çözebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-016",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Toplama ve çıkarma",
+   "alt_konu": "Yuvarlayarak tahmin",
+   "zorluk": 2,
+   "soru_metni": "Elif 24 + 38 işleminin sonucunu tahmin etmek için sayıları en yakın onluğa yuvarlıyor. Elif'in bulduğu tahmin kaçtır?",
+   "siklar": {
+    "A": "70",
+    "B": "50",
+    "C": "60",
+    "D": "62"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "24, 20'ye daha yakındır; 24 sayısı 20 olur.",
+    "38, 40'a daha yakındır; 38 sayısı 40 olur.",
+    "20 + 40 = 60",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her sayının hangi onluğa daha yakın olduğuna bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "İki sayıyı da yukarı yuvarlama: 30 + 40.",
+    "B": "İki sayıyı da aşağı yuvarlama: 20 + 30.",
+    "D": "Yuvarlamadan kesin toplamı bulup tahmin sanma."
+   },
+   "kazanim_kodu": "MAT.2.2.2",
+   "kazanim_metni": "Toplama ve çıkarma işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-017",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Toplama ve çıkarma",
+   "alt_konu": "Zihinden çıkarma stratejisi",
+   "zorluk": 3,
+   "soru_metni": "Mert 64 - 19 işlemini zihinden yapıyor. Önce 64'ten 20 çıkarıyor. Mert'in doğru sonuca ulaşması için bulduğu sayıya ne yapması gerekir?",
+   "siklar": {
+    "A": "1 eklemelidir",
+    "B": "1 çıkarmalıdır",
+    "C": "19 eklemelidir",
+    "D": "20 eklemelidir"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "64'ten 20 çıkarılırsa 44 bulunur.",
+    "Oysa 19 çıkarılacaktı; 20 çıkarılınca 1 fazla çıkarılmış olur.",
+    "Fazla çıkarılan 1 geri eklenir: 44 + 1 = 45.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "64'ten 20 çıkarmak, 19 çıkarmaktan farklı bir sonuç verir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Yönü ters yapma: fazla çıkarılanı düzeltmek yerine bir daha çıkarma.",
+    "C": "Çıkarılması gereken 19'u sonuca ekleme.",
+    "D": "Çıkardığı 20'yi sonuca geri ekleme."
+   },
+   "kazanim_kodu": "MAT.2.2.2",
+   "kazanim_metni": "Toplama ve çıkarma işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-018",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Toplama ve çıkarma",
+   "alt_konu": "Toplama ile çıkarma arasındaki ilişki",
+   "zorluk": 1,
+   "soru_metni": "27 + 15 = 42 olduğuna göre 42 - 15 işleminin sonucu kaçtır?",
+   "siklar": {
+    "A": "57",
+    "B": "33",
+    "C": "27",
+    "D": "15"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "27 + 15 = 42 ise toplamdan 15 çıkarılınca diğer toplanan kalır.",
+    "42 - 15 = 27",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Toplama ve çıkarma işlemleri birbirinin tersidir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "İşlem seçimi hatası: çıkarma yerine toplama yapma, 42 + 15.",
+    "B": "Çıkarmada küçük rakamı büyük rakamdan çıkarma: 4 - 1 ve 5 - 2 ile 33 bulma.",
+    "D": "Çıkarılan sayıyı sonuç sanma."
+   },
+   "kazanim_kodu": "MAT.2.2.3",
+   "kazanim_metni": "Toplama ve çıkarma işlemlerinin ilişkisini yorumlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-019",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Çarpma",
+   "alt_konu": "Tekrarlı toplama ile çarpma",
+   "zorluk": 2,
+   "soru_metni": "6 + 6 + 6 + 6 toplamı hangi çarpma işlemine eşittir?",
+   "siklar": {
+    "A": "6 × 6",
+    "B": "4 × 6",
+    "C": "4 × 4",
+    "D": "4 + 6"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Toplamda 6 sayısı 4 kez yazılmıştır.",
+    "Aynı sayıyı tekrar tekrar toplamak çarpmaya dönüştürülür.",
+    "4 kez 6, 4 × 6 olarak yazılır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Toplananların kaç tane olduğunu say."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Toplanan sayıyı tekrar sayısı olarak da kullanma.",
+    "C": "Tekrar sayısını toplanan sayı yerine de kullanma.",
+    "D": "Toplama işlemini çarpmaya dönüştürmeden toplama olarak bırakma."
+   },
+   "kazanim_kodu": "MAT.2.2.4",
+   "kazanim_metni": "Çarpma ve bölme işlemlerini toplama ve çıkarma işlemlerine dayalı olarak çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-020",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Bölme",
+   "alt_konu": "Tekrarlı çıkarma ile bölme",
+   "zorluk": 2,
+   "soru_metni": "Ali 15 cevizi bir kaba taşıyor. Her seferinde 3 ceviz taşıyabiliyor. Ali bütün cevizleri taşımak için kaç kez gidip gelmelidir?",
+   "siklar": {
+    "A": "12 kez",
+    "B": "3 kez",
+    "C": "18 kez",
+    "D": "5 kez"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Her seferde 3 ceviz taşınır: 15, 12, 9, 6, 3, 0.",
+    "15'ten 0'a gelmek için 3 tam 5 kez çıkarılır.",
+    "15 / 3 = 5 kez",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "15'ten 3 çıkara çıkara sıfıra kadar gitmeyi dene."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ara sonucu nihai sanma: yalnız bir kez çıkarıp 15 - 3 = 12 bulma.",
+    "B": "Her seferde taşınan sayıyı sefer sayısı sanma.",
+    "C": "İşlem seçimi hatası: bölme yerine toplama yapma, 15 + 3."
+   },
+   "kazanim_kodu": "MAT.2.2.4",
+   "kazanim_metni": "Çarpma ve bölme işlemlerini toplama ve çıkarma işlemlerine dayalı olarak çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-021",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Çarpma",
+   "alt_konu": "Zihinden çarpma stratejisi",
+   "zorluk": 2,
+   "soru_metni": "Ece 8 × 5 işlemini zihinden yapmak için önce 8 × 10 işlemini yapıyor, sonra bulduğu sonucu 2'ye bölüyor. Ece hangi sonuca ulaşır?",
+   "siklar": {
+    "A": "40",
+    "B": "80",
+    "C": "16",
+    "D": "13"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "8 × 10 = 80",
+    "Bulunan sonuç 2'ye bölünür: 80 / 2 = 40.",
+    "Bu sonuç, 8 × 5 işleminin sonucuyla aynıdır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce 8 × 10 işleminin sonucunu bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Ara sonucu nihai sanma: 2'ye bölmeyi unutma.",
+    "C": "Yanlış bölen kullanma: 80'i 2 yerine 5'e bölme.",
+    "D": "İşlem seçimi hatası: çarpma yerine toplama yapma, 8 + 5."
+   },
+   "kazanim_kodu": "MAT.2.2.5",
+   "kazanim_metni": "Çarpma ve bölme işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-022",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Bölme",
+   "alt_konu": "Zihinden bölme",
+   "zorluk": 1,
+   "soru_metni": "30 ÷ 3 işleminin sonucu kaçtır?",
+   "siklar": {
+    "A": "27",
+    "B": "33",
+    "C": "10",
+    "D": "90"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "3 ile çarpınca 30 eden sayı aranır.",
+    "3 × 10 = 30 olduğundan 30 / 3 = 10'dur.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Bölme, bir sayıyı eşit parçalara ayırmaktır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "İşlem seçimi hatası: bölme yerine çıkarma yapma, 30 - 3.",
+    "B": "İşlem seçimi hatası: bölme yerine toplama yapma, 30 + 3.",
+    "D": "İşlem seçimi hatası: bölme yerine çarpma yapma, 30 × 3."
+   },
+   "kazanim_kodu": "MAT.2.2.5",
+   "kazanim_metni": "Çarpma ve bölme işlemlerinin sonuçlarını tahminde bulunarak ve zihinden işlem yaparak muhakeme edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-023",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Eşitlik",
+   "alt_konu": "Toplamada eşitlik",
+   "zorluk": 2,
+   "soru_metni": "Bir sayı ile 8'in toplamı, 20 ile 5'in toplamına eşittir. Bu sayı kaçtır?",
+   "siklar": {
+    "A": "12",
+    "B": "17",
+    "C": "25",
+    "D": "33"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "20 ile 5'in toplamı 20 + 5 = 25'tir.",
+    "Bir sayı ile 8'in toplamı da 25 olmalıdır.",
+    "Sayı 25 - 8 = 17'dir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Eşitliğin iki tarafı aynı değeri gösterir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Eşitliğin bir tarafını atlama: 5'i hesaba katmadan 20 - 8 yapma.",
+    "C": "Ara sonucu nihai sanma: sağ taraftaki toplamı cevap alma.",
+    "D": "İşlem seçimi hatası: 25'ten 8 çıkarmak yerine 8 ekleme."
+   },
+   "kazanim_kodu": "MAT.2.2.6",
+   "kazanim_metni": "Dört işlem bağlamında eşitliğin farklı anlamlarını yorumlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-024",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Eşitlik",
+   "alt_konu": "Farklı işlemlerde eşitlik",
+   "zorluk": 3,
+   "soru_metni": "Bir sayıya 9 eklenince sonuç, 4 ile 5'in çarpımına eşit oluyor. Bu sayı kaçtır?",
+   "siklar": {
+    "A": "20",
+    "B": "29",
+    "C": "14",
+    "D": "11"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "4 ile 5'in çarpımı 4 × 5 = 20'dir.",
+    "Sayıya 9 eklenince 20 olmalıdır.",
+    "Sayı 20 - 9 = 11'dir.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce çarpmayı yap, sonra eksik sayıyı bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ara sonucu nihai sanma: çarpım sonucunu cevap alma.",
+    "B": "İşlem seçimi hatası: 20'den 9 çıkarmak yerine 9 ekleme.",
+    "C": "Çarpmayı yok sayıp 5 ile 9'u toplama."
+   },
+   "kazanim_kodu": "MAT.2.2.6",
+   "kazanim_metni": "Dört işlem bağlamında eşitliğin farklı anlamlarını yorumlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-025",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Geometrik cisimler",
+   "alt_konu": "Nesneleri cisimlere benzetme",
+   "zorluk": 1,
+   "soru_metni": "Aşağıdaki nesnelerden hangisi küre biçimindedir?",
+   "siklar": {
+    "A": "Futbol topu",
+    "B": "Konserve kutusu",
+    "C": "Dondurma külahı",
+    "D": "Oyun zarı"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Küre, her yönden yuvarlak olan ve hiç düz yüzü bulunmayan cisimdir.",
+    "Futbol topu bu biçimdedir.",
+    "Konserve kutusu silindire, dondurma külahı koniye, oyun zarı küpe benzer.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Küre her yönden yuvarlak görünür."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Yuvarlak yüzü olan silindiri küre ile karıştırma.",
+    "C": "Yuvarlak tabanı olan koniyi küre ile karıştırma.",
+    "D": "Oyun zarını yuvarlanabilen cisim sanma; küp ile küreyi karıştırma."
+   },
+   "kazanim_kodu": "MAT.2.3.1",
+   "kazanim_metni": "Günlük yaşamda kullanılan nesneleri biçimsel özelliklerine göre geometrik cisim olarak sınıflandırabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-026",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Sıvı ölçme",
+   "alt_konu": "Standart olmayan araçlarla tahmin",
+   "zorluk": 2,
+   "soru_metni": "Ece bir kovayı 5 bardak suyla dolduruyor. Aynı büyüklükteki 3 kovayı doldurmak için yaklaşık kaç bardak su gerekir?",
+   "siklar": {
+    "A": "8 bardak",
+    "B": "15 bardak",
+    "C": "35 bardak",
+    "D": "5 bardak"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Bir kova 5 bardak su alır.",
+    "3 kova için 5 bardak 3 kez gerekir.",
+    "5 * 3 = 15 bardak",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her kova aynı sayıda bardak alır."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "İşlem seçimi hatası: çarpma yerine toplama yapma, 5 + 3.",
+    "C": "Sayıları yan yana yazıp 5 ile 3'ten 35 oluşturma.",
+    "D": "Tek kovanın bardak sayısını üç kova için de aynı sanma."
+   },
+   "kazanim_kodu": "MAT.2.3.5",
+   "kazanim_metni": "Standart olmayan sıvı ölçme araçları ile sıvı miktarını tahmin edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-028",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Veri",
+   "alt_konu": "İki gruplu kategorik veriyi yorumlama",
+   "zorluk": 2,
+   "soru_metni": "Bir sınıfta 22 öğrenci vardır. Her öğrenci iki oyundan birini seçti: saklambaç ya da kovalamaca. Saklambacı 13 öğrenci seçti. Saklambacı seçenler, kovalamacayı seçenlerden kaç öğrenci fazladır?",
+   "siklar": {
+    "A": "9 öğrenci",
+    "B": "13 öğrenci",
+    "C": "35 öğrenci",
+    "D": "4 öğrenci"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Kovalamacayı seçenler 22 - 13 = 9 öğrencidir.",
+    "Saklambacı seçenlerle kovalamacayı seçenler arasındaki fark 13 - 9 = 4'tür.",
+    "Saklambacı seçenler 4 öğrenci fazladır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kovalamacayı seçen öğrenci sayısını bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ara sonucu nihai sanma: kovalamacayı seçenlerin sayısını cevap alma.",
+    "B": "Saklambacı seçenlerin sayısını fark sanma.",
+    "C": "İşlem seçimi hatası: farkı bulmak yerine 22 ile 13'ü toplama."
+   },
+   "kazanim_kodu": "MAT.2.4.1",
+   "kazanim_metni": "Kategorik veriye dayalı en çok iki veri grubu ile çalışabilme ve veriye dayalı karar verebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-029",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Mesafe ve yön",
+   "alt_konu": "En kısa yolu seçme",
+   "zorluk": 1,
+   "soru_metni": "Deniz'in evinden okula iki yol gider. Sağdaki yolun parçaları 20 m ve 25 m, soldaki yolun parçaları 30 m ve 10 m'dir. Deniz en kısa yolu seçerse okula kaç metre yürür?",
+   "siklar": {
+    "A": "10",
+    "B": "30",
+    "C": "40",
+    "D": "45"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Sağdaki yolun uzunluğu 20 + 25 = 45 metredir.",
+    "Soldaki yolun uzunluğu 30 + 10 = 40 metredir.",
+    "40 metre, 45 metreden kısadır; en kısa yol soldaki yoldur.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce iki yolun toplam uzunluğunu ayrı ayrı bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yolun tek bir parçasına bakıp en kısa parçayı (10 m) yolun tamamı sanma.",
+    "B": "Soldaki yolun yalnız ilk parçasını (30 m) toplam uzunluk sanma; ara sonucu nihai sanma.",
+    "D": "İlk parçası daha kısa olduğu için (20 m < 30 m) sağdaki yolu en kısa sanıp toplamlara bakmama."
+   },
+   "kazanim_kodu": "MAT.2.3.6",
+   "kazanim_metni": "Mesafe ve yönleri içerecek şekilde hedefe ulaşmak için uygun stratejilere karar verebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-030",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Mesafe ve yön",
+   "alt_konu": "Yanlış yönden sonra hedefe ulaşma",
+   "zorluk": 2,
+   "soru_metni": "Okul kapısından çıkan biri için kütüphane 20 m ileride ve oradan 10 m sağdadır. Ece kapıdan çıkıp 20 m ileri gitti, sonra yanlışlıkla sola dönüp 10 m yürüdü. Ece kütüphaneye ulaşmak için en az kaç metre daha yürümelidir?",
+   "siklar": {
+    "A": "10",
+    "B": "20",
+    "C": "30",
+    "D": "60"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Ece 20 m ileri gittiği köşeden sola doğru 10 m uzaklaştı.",
+    "Kütüphane ise aynı köşeden sağa doğru 10 m uzaktadır.",
+    "Ece önce köşeye geri dönmelidir: 10 metre.",
+    "Sonra sağa dönüp kütüphaneye 10 metre yürümelidir.",
+    "Toplam 10 + 10 = 20 metre daha yürümelidir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ece'nin şu anda kütüphaneye göre hangi tarafta olduğunu düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Kütüphanenin köşeden uzaklığını (10 m) kalan mesafe sanıp yanlış tarafa gidilen 10 m'yi hesaba katmama.",
+    "C": "Soruda verilen 20 m ile 10 m'yi toplayıp (ya da kapıya dönmeyi) kalan mesafe sanma.",
+    "D": "Kapıya kadar geri dönüp (30 m) yolu baştan yürümeyi (30 m) en kısa yol sanma."
+   },
+   "kazanim_kodu": "MAT.2.3.6",
+   "kazanim_metni": "Mesafe ve yönleri içerecek şekilde hedefe ulaşmak için uygun stratejilere karar verebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-031",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Problemler",
+   "alt_konu": "İki adımlı problem (çıkarma, sonra toplama)",
+   "zorluk": 3,
+   "soru_metni": "Manavda 56 elma vardı. Sabah 23 elma satıldı, öğleden sonra 15 elma daha geldi. Manavda şimdi kaç elma vardır?",
+   "siklar": {
+    "A": "64",
+    "B": "33",
+    "C": "48",
+    "D": "18"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Satılan elmalar çıkarılır: 56 - 23 = 33.",
+    "Gelen elmalar eklenir: 33 + 15 = 48.",
+    "Manavda şimdi 48 elma vardır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Elma sayısını değiştiren olayları sırayla ele al."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "İşlem yönlerini ters yapma: satılanı ekleyip gelenleri çıkarma, 56 + 23 - 15.",
+    "B": "Ara sonucu nihai sanma: gelen elmaları eklemeyi unutma.",
+    "D": "Gelen elmaları da çıkarma: işlem seçimi hatası, 56 - 23 - 15."
+   },
+   "kazanim_kodu": "MAT.2.2.1",
+   "kazanim_metni": "Toplama ve çıkarma işlemleri gerektiren günlük yaşam problemlerini çözebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-032",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Problemler",
+   "alt_konu": "İki adımlı problem (toplama, sonra çıkarma)",
+   "zorluk": 3,
+   "soru_metni": "Bir kutuda 28 kırmızı ve 35 mavi boncuk vardır. Zeynep bu kutudan 20 boncuk kullandı. Kutuda kaç boncuk kalmıştır?",
+   "siklar": {
+    "A": "43",
+    "B": "63",
+    "C": "83",
+    "D": "15"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Kutudaki boncukların tümü bulunur: 28 + 35 = 63.",
+    "Kullanılan boncuklar çıkarılır: 63 - 20 = 43.",
+    "Kutuda 43 boncuk kalır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kutudaki boncukların tümünü bulduktan sonra kullanılanı düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Ara sonucu nihai sanma: kullanılan boncukları çıkarmayı unutma.",
+    "C": "İşlem seçimi hatası: kullanılan boncukları çıkarmak yerine ekleme, 63 + 20.",
+    "D": "Adım atlama: kırmızı boncukları hesaba katmadan yalnız mavi boncuklardan çıkarma, 35 - 20."
+   },
+   "kazanim_kodu": "MAT.2.2.1",
+   "kazanim_metni": "Toplama ve çıkarma işlemleri gerektiren günlük yaşam problemlerini çözebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-034",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Bölme",
+   "alt_konu": "Tekrarlı çıkarma ile bölme, ardından çıkarma",
+   "zorluk": 3,
+   "soru_metni": "Ayşe 28 kurabiyeyi tabaklara dağıtıyor. Her tabağa 4 kurabiye koyuyor. Ayşe dolu tabaklardan 3 tanesini komşulara verirse kaç dolu tabağı kalır?",
+   "siklar": {
+    "A": "7",
+    "B": "4",
+    "C": "25",
+    "D": "10"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "28'den 4 tekrar tekrar çıkarılırsa 28, 24, 20, 16, 12, 8, 4, 0 bulunur; 4 tam 7 kez çıkarıldığı için 28 / 4 = 7 tabak dolar.",
+    "Komşulara 3 tabak verilir: 7 - 3 = 4.",
+    "Ayşe'nin 4 dolu tabağı kalır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce kaç tabağın dolduğunu bul."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ara sonucu nihai sanma: komşulara verilen tabakları çıkarmayı unutma.",
+    "C": "Adım atlama: kurabiyeleri tabaklara bölmeden doğrudan 28'den 3 çıkarma.",
+    "D": "İşlem seçimi hatası: verilen tabakları çıkarmak yerine ekleme, 7 + 3."
+   },
+   "kazanim_kodu": "MAT.2.2.4",
+   "kazanim_metni": "Çarpma ve bölme işlemlerini toplama ve çıkarma işlemlerine dayalı olarak çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "mat2-035",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Matematik",
+   "konu": "Para",
+   "alt_konu": "Lira ve kuruş paralarını birlikte değerlendirme",
+   "zorluk": 3,
+   "soru_metni": "Kerem'in cüzdanında 1 TL'lik 5 madenî para ve 50 kuruşluk 6 madenî para var. Kerem'in parası kaç liradır?",
+   "siklar": {
+    "A": "11 TL",
+    "B": "5 TL",
+    "C": "3 TL",
+    "D": "8 TL"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "50 kuruşluk 6 paranın değeri 6 * 50 = 300 kuruştur.",
+    "100 kuruş 1 lira olduğundan 300 kuruş 300 / 100 = 3 liradır.",
+    "1 liralık 5 paranın değeri 5 * 1 = 5 liradır.",
+    "Toplam para 5 + 3 = 8 liradır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Kuruşluk paraların toplam değerini önce liraya çevir."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Para adedini lira sanma: 5 + 6 madenî parayı toplama.",
+    "B": "Adım atlama: 50 kuruşluk paraları hesaba katmama.",
+    "C": "Ara sonucu nihai sanma: kuruşluk paraların liraya çevrilmiş değerini cevap alma."
+   },
+   "kazanim_kodu": "MAT.2.1.8",
+   "kazanim_metni": "Paraları değerlerine göre ilişkilendirerek çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-001",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Planlı olmak",
+   "alt_konu": "Önceden hazırlık",
+   "zorluk": 1,
+   "soru_metni": "Deniz her akşam ertesi günün ders programına bakıp çantasını hazırlıyor. Deniz’in bu alışkanlığının sonucu hangisidir?",
+   "siklar": {
+    "A": "Derslerin daha kısa sürmesi",
+    "B": "Sabah telaşsız hazırlanması",
+    "C": "Oyun oynamaya vakit kalmaması",
+    "D": "Ödevlerin hiç verilmemesi"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Deniz çantasını ve ders programını akşamdan hazırlıyor.",
+    "Sabah eşya aramak ya da yetişmeye çalışmak gerekmiyor.",
+    "Bu yüzden sabah telaşsız hazırlanabilir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Bir işi önceden yapmanın, o işin zamanı geldiğinde neyi değiştirdiğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Plan yapınca derslerin kısalacağı sanılır; plan işleri düzenler, derslerin süresini değiştirmez.",
+    "C": "Planlı olanın sürekli iş yapıp oyuna zaman bulamayacağı sanılır; plan zamanı dengeli kullanmayı sağlar.",
+    "D": "Plan yapmakla öğretmenin ödev vermesi arasında ilişki kurulur; ödev vermek planın sonucu değildir."
+   },
+   "kazanim_kodu": "HB.2.1.1",
+   "kazanim_metni": "Planlı olmanın kişisel yaşama etkilerini fark edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-002",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Etkili iletişim",
+   "alt_konu": "Arkadaşını dinleme",
+   "zorluk": 1,
+   "soru_metni": "Selin’in arkadaşı yaptığı resmi anlatıyor. Selin, arkadaşını etkili biçimde dinlemek istiyor. Selin hangisini yapmalıdır?",
+   "siklar": {
+    "A": "Kendi resmini yapmaya devam etmek",
+    "B": "Sözünü keserek kendi resmini anlatmak",
+    "C": "Başını sallayıp başka yere bakmak",
+    "D": "Ona bakıp sözünü kesmeden dinlemek"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Etkili dinlemek, konuşan kişiye dikkat etmektir.",
+    "Konuşanın yüzüne bakmak ve sözünü kesmemek bu dikkati gösterir.",
+    "Başka işle uğraşmak, söze karışmak ya da bakmamak dinlemeyi bozar.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Anlatan kişinin kendini dinlenmiş hissetmesi için dinleyenin neler yapması gerektiğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Bir yandan başka işle uğraşırken de dinlenebileceği sanılır; dikkat başka yere gittiği için dinleme eksik kalır.",
+    "B": "Heyecanla kendi anlatacağını söyleme isteği çekicidir; ancak söz kesmek karşıdakini dinlememek demektir.",
+    "C": "Baş sallamanın tek başına dinlemek olduğu sanılır; konuşana bakmamak ilgisizlik gösterir."
+   },
+   "kazanim_kodu": "HB.2.1.2",
+   "kazanim_metni": "Öğretmen ve arkadaşlarıyla etkili iletişim kurabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-004",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Sağlıklı büyüme ve gelişme",
+   "alt_konu": "Uyku düzeni",
+   "zorluk": 2,
+   "soru_metni": "Bora okula yürüyerek gidiyor, teneffüste koşuyor, kahvaltıda süt içiyor ve her gece geç saatte yatıyor. Sabahları yorgun uyanıyor. Bora’nın yorgun uyanması hangi alışkanlığıyla ilgilidir?",
+   "siklar": {
+    "A": "Okula yürüyerek gitmesiyle",
+    "B": "Teneffüste koşmasıyla",
+    "C": "Geç saatte yatmasıyla",
+    "D": "Kahvaltıda süt içmesiyle"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Yürümek, koşmak ve süt içmek sağlığa yarayan alışkanlıklardır.",
+    "Vücut geceleri uyuyarak dinlenir.",
+    "Bora geç yattığı için yeterince dinlenemez ve sabah yorgun uyanır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her alışkanlığı tek tek düşünüp hangisinin yorgunlukla ilgili olabileceğini ara."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yürümenin insanı yorduğu sanılır; yürümek sağlığa yarar ve yorgun uyanmanın nedeni değildir.",
+    "B": "Koşmanın sabaha yorgunluk bıraktığı sanılır; düzenli hareket sağlıklı büyümeyi destekler.",
+    "D": "Sütün uyku getirip yorduğu sanılır; süt büyümeye yarayan besinlerdendir."
+   },
+   "kazanim_kodu": "HB.2.2.1",
+   "kazanim_metni": "Sağlıklı büyüme ve gelişme ile alışkanlıkları arasındaki ilişkiyi çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-005",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Çevrim içi güvenlik",
+   "alt_konu": "Kişisel bilgiyi koruma",
+   "zorluk": 2,
+   "soru_metni": "Kaan çevrim içi bir oyun oynarken tanımadığı biri ona “Adresini yazarsan sana hediye göndereceğim.” diye yazdı. Kaan’ın yapması gereken hangisidir?",
+   "siklar": {
+    "A": "Adresi yazmayıp güvendiği bir yetişkine söylemek",
+    "B": "Sokak adını yazıp kapı numarasını saklamak",
+    "C": "Hediyeyi kabul edip okulunun adını ona yazmak",
+    "D": "Adresini yazıp hediyenin gelmesini sabırla beklemek"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Adres ve okul adı kişisel bilgidir; tanımadık biriyle paylaşılmaz.",
+    "Bilginin bir kısmı da verilmez, çünkü parça bilgiler de evi ya da kişiyi bulmaya yardım eder.",
+    "Kaan bilgi vermeden durumu güvendiği bir yetişkine söylemelidir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Tanımadığın birine verilen bilgilerin sonradan neye yol açabileceğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Adresin yalnız bir kısmını vermenin güvenli olduğu sanılır; parça bilgiler de tanımadık birinin evi bulmasına yardım eder.",
+    "C": "Okul adının adres kadar önemli olmadığı sanılır; okul adı da kişisel bilgidir.",
+    "D": "Hediye sözüne kanılır; hediye vaadi tanımadık birine güvenmek için neden olmaz."
+   },
+   "kazanim_kodu": "HB.2.2.2",
+   "kazanim_metni": "Çevrim içi ortamlarda kişisel güvenliğini sağlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-007",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Acil durum",
+   "alt_konu": "Acil çağrı numaraları",
+   "zorluk": 1,
+   "soru_metni": "Parkta oynayan bir çocuk düşüp kolunu kırdı. Ambulans çağırmak için Türkiye’de hangi numara aranmalıdır?",
+   "siklar": {
+    "A": "110",
+    "B": "112",
+    "C": "155",
+    "D": "156"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Ambulans, sağlıkla ilgili acil durumlarda çağrılır.",
+    "Türkiye’de ambulans için acil çağrı numarası 112’dir.",
+    "110 itfaiye, 155 polis, 156 jandarma numarasıdır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her acil numaranın hangi hizmet için kullanıldığını hatırla."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "110 acil numaralardan biri olduğu için karıştırılır; bu numara itfaiye içindir.",
+    "C": "155 polis numarasıdır; kazada polisin çağrılacağı sanılır.",
+    "D": "156 jandarma numarasıdır; acil durumda jandarmanın çağrılacağı sanılır."
+   },
+   "kazanim_kodu": "HB.2.2.4",
+   "kazanim_metni": "Acil bir durumda yetkililerle etkili iletişim kurabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-008",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Acil durum",
+   "alt_konu": "Acil çağrı görevlisiyle konuşma",
+   "zorluk": 2,
+   "soru_metni": "Okul bahçesinde bir çocuk düşüp kalkamadı. Mert 112’yi arayıp olayı ve okulun adresini söyledi. Mert telefonu ne zaman kapatmalıdır?",
+   "siklar": {
+    "A": "Adresi söyler söylemez",
+    "B": "Ambulansın sesini duyunca",
+    "C": "Arkadaşı ayağa kalkınca",
+    "D": "Görevli izin verince"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "112 görevlisi olay ve adres dışında başka sorular da sorabilir.",
+    "Bu yüzden arayan kişi hatta kalır ve soruları yanıtlar.",
+    "Telefon, görevli kapatmaya izin verince kapatılır.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Çağrıyı alan görevlinin, olayı anlatan kişiden başka neye ihtiyaç duyabileceğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Önemli bilgiyi verince görevin bittiği sanılır; görevli ek soru sorabilir.",
+    "B": "Ambulansın yaklaştığını duymanın çağrıyı bitirdiği sanılır; görevli yine de bilgi isteyebilir.",
+    "C": "Arkadaşının durumunun düzelmesinin çağrıyı sonlandıracağı sanılır; çağrı görevliyle birlikte bitirilir."
+   },
+   "kazanim_kodu": "HB.2.2.4",
+   "kazanim_metni": "Acil bir durumda yetkililerle etkili iletişim kurabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-009",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Ailenin önemi",
+   "alt_konu": "Ailenin karşıladığı ihtiyaçlar",
+   "zorluk": 1,
+   "soru_metni": "Ela hasta olunca ailesi onu doktora götürdü ve ilaçlarını verdi. Ailesi bu davranışla Ela’nın hangi ihtiyacını karşılamıştır?",
+   "siklar": {
+    "A": "Eğitim ihtiyacını",
+    "B": "Eğlence ihtiyacını",
+    "C": "Sağlık ihtiyacını",
+    "D": "Barınma ihtiyacını"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Ela hasta olmuştur.",
+    "Ailesi onu doktora götürmüş ve ilaçlarını vermiştir.",
+    "Bu davranışlar Ela’nın sağlık ihtiyacını karşılar.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ailenin yaptığı davranışın Ela’ya hangi konuda yardımcı olduğunu düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ailelerin çocuğun okul ihtiyaçlarını da karşıladığı bilinir; ancak bu örnekte okulla ilgili bir durum yoktur.",
+    "B": "Ailelerin çocuğa oyun ve eğlence sağladığı bilinir; ancak bu örnekte eğlence yoktur.",
+    "D": "Ailelerin çocuğa yaşayacak yer sağladığı bilinir; ancak bu örnek barınmayla ilgili değildir."
+   },
+   "kazanim_kodu": "HB.2.3.1",
+   "kazanim_metni": "Ailenin önemini yorumlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-010",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Ailenin önemi",
+   "alt_konu": "Aile içinde destek",
+   "zorluk": 2,
+   "soru_metni": "Ahmet bir gün okuldan üzgün döndü. Ailesinden biri onu dinledi ve ona sarıldı. Bu örnek ailenin önemini hangi cümleyle gösterir?",
+   "siklar": {
+    "A": "Aile üyeleri birbirine destek olur.",
+    "B": "Aile üyeleri birbirinin yerine karar verir.",
+    "C": "Aile üyeleri aynı şeylerden hoşlanır.",
+    "D": "Aile üyeleri birbirinin ödevini yapar."
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Ahmet üzgündür.",
+    "Ailesinden biri onu dinlemiş ve ona sarılmıştır.",
+    "Bu davranış, aile üyelerinin birbirine destek olduğunu gösterir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Örnekte ailesinden birinin ne yaptığına ve bunun Ahmet’e ne sağladığına bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Yakınlığın, birinin yerine karar vermek olduğu sanılır; örnekte karar verme yoktur.",
+    "C": "Aile üyelerinin hep aynı şeyleri sevdiği sanılır; örnek sevilen şeylerden değil destekten söz eder.",
+    "D": "Aile yardımının ödev yapmak olduğu sanılır; örnekte duygusal destek vardır."
+   },
+   "kazanim_kodu": "HB.2.3.1",
+   "kazanim_metni": "Ailenin önemini yorumlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-011",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Nezaket ve görgü kuralları",
+   "alt_konu": "Nezaket sözleri",
+   "zorluk": 1,
+   "soru_metni": "Ceren koridorda koşarken yanlışlıkla bir arkadaşına çarptı. Ceren’in söylemesi uygun olan nezaket sözü hangisidir?",
+   "siklar": {
+    "A": "Rica ederim.",
+    "B": "Teşekkür ederim.",
+    "C": "Afiyet olsun.",
+    "D": "Özür dilerim."
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "“Rica ederim” teşekkür edildiğinde söylenir.",
+    "“Teşekkür ederim” bir iyilik yapıldığında, “afiyet olsun” yemek sırasında söylenir.",
+    "Yanlışlıkla çarpan kişi “özür dilerim” der.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her nezaket sözünün hangi durumda söylendiğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Rica ederim kibar bir söz olduğu için seçilir; ancak teşekkürden sonra söylenir.",
+    "B": "Teşekkür ederim en çok bilinen nezaket sözüdür; ancak çarpma durumuna uymaz.",
+    "C": "Afiyet olsun kibar bir söz olduğu için seçilir; ancak yemek yerken söylenir."
+   },
+   "kazanim_kodu": "HB.2.3.2",
+   "kazanim_metni": "Toplumsal yaşamda nezaket ve görgü kurallarına uygun davranabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-013",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Tarihî mekân ve doğal güzellikler",
+   "alt_konu": "Tarihî mekânı ayırt etme",
+   "zorluk": 2,
+   "soru_metni": "Ayşe, yaşadığı yerdeki tarihî mekânları öğrenmek istiyor. Aşağıdakilerden hangisi tarihî bir mekândır?",
+   "siklar": {
+    "A": "Yüzlerce yıl önce yapılmış taş kale",
+    "B": "Kasabanın yeni açılan alışveriş merkezi",
+    "C": "Dağdan aşağı akan büyük şelale",
+    "D": "Milyonlarca yıldır duran kayalık dağ"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Tarihî mekân, geçmişte insanlar tarafından yapılmış ve bugüne kadar kalmış yerdir.",
+    "Alışveriş merkezi yenidir; şelale ve dağ insan yapımı değildir.",
+    "Yüzlerce yıl önce yapılmış kale hem insan yapımıdır hem de geçmişten kalmıştır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her yerin kim tarafından ve ne zaman oluştuğunu düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "İnsan yapımı olduğu için tarihî sanılır; ancak yenidir, geçmişten kalmamıştır.",
+    "C": "Güzel bir yer olduğu için tarihî sanılır; şelale doğal güzelliktir.",
+    "D": "Çok eski olduğu için tarihî sanılır; dağ insan yapımı değil doğal oluşumdur."
+   },
+   "kazanim_kodu": "HB.2.4.1",
+   "kazanim_metni": "Yakın çevresinde bulunan tarihî mekân ve doğal güzellikleri belirleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-014",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Yaşadığı yerin yönetim birimleri",
+   "alt_konu": "Mahalle yönetimi",
+   "zorluk": 1,
+   "soru_metni": "Eylül, mahallesinin yönetiminden sorumlu kişiyle görüşerek bilgi toplamak istiyor. Eylül kiminle görüşmelidir?",
+   "siklar": {
+    "A": "Okul müdürüyle",
+    "B": "Sınıf öğretmeniyle",
+    "C": "Mahalle muhtarıyla",
+    "D": "Mahalledeki eczacıyla"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Mahallenin yönetiminden sorumlu kişi muhtardır.",
+    "Okul müdürü okulu, sınıf öğretmeni sınıfı yönetir.",
+    "Eczacı eczanede çalışır; mahalleyi yönetmez.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Mahalleyi yöneten kişinin görev adını hatırla."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Okul müdürü bir yönetici olduğu için seçilir; ancak okulu yönetir, mahalleyi yönetmez.",
+    "B": "Öğretmenin her konuyu bildiği sanılır; mahalle yönetimi öğretmenin görevi değildir.",
+    "D": "Mahalledeki esnafın mahalleyi iyi tanıdığı için yönetici sanılır; eczacı mahalle yöneticisi değildir."
+   },
+   "kazanim_kodu": "HB.2.4.2",
+   "kazanim_metni": "Yaşadığı yerin yönetim birimleri ile ilgili kaynaklardan bilgi toplayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-015",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Mustafa Kemal Atatürk",
+   "alt_konu": "Öğrencilik yılları",
+   "zorluk": 2,
+   "soru_metni": "Mustafa Kemal Atatürk’e öğrencilik yıllarında “Kemal” adını veren kişi kimdir?",
+   "siklar": {
+    "A": "Annesi Zübeyde Hanım",
+    "B": "Babası Ali Rıza Efendi",
+    "C": "Sınıf arkadaşlarından biri",
+    "D": "Matematik öğretmeni"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Mustafa Kemal okuduğu yıllarda çalışkan bir öğrenciydi.",
+    "Matematik öğretmeni onun başarısını görerek ona “Kemal” adını verdi.",
+    "Bu ad anne ya da baba tarafından değil, okulda öğretmeni tarafından verildi.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Bu adın hangi ortamda ve neden verildiğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Çocuğa adı annenin koyduğu düşünülür; ancak “Kemal” adı okulda, öğretmeni tarafından verilmiştir.",
+    "B": "Çocuğa adı babanın koyduğu düşünülür; ancak “Kemal” adı okulda, öğretmeni tarafından verilmiştir.",
+    "C": "Arkadaşların takma ad verdiği düşünülür; “Kemal” adını öğretmeni vermiştir."
+   },
+   "kazanim_kodu": "HB.2.4.3",
+   "kazanim_metni": "Mustafa Kemal Atatürk'ün öğrencilik hayatını ifade edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-016",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Millî gün ve bayramlar",
+   "alt_konu": "Çocuk bayramı",
+   "zorluk": 1,
+   "soru_metni": "Atatürk’ün dünya çocuklarına armağan ettiği millî bayram hangisidir?",
+   "siklar": {
+    "A": "19 Mayıs",
+    "B": "23 Nisan",
+    "C": "29 Ekim",
+    "D": "30 Ağustos"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "23 Nisan Ulusal Egemenlik ve Çocuk Bayramı’dır.",
+    "Atatürk bu bayramı dünya çocuklarına armağan etmiştir.",
+    "19 Mayıs gençlik, 29 Ekim cumhuriyet, 30 Ağustos zafer bayramıdır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Bayramların hangi olayla ilgili olduğunu düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "19 Mayıs da Atatürk’ün armağan ettiği bir bayram olduğu için karıştırılır; bu bayram gençliğe armağan edilmiştir.",
+    "C": "29 Ekim büyük bir millî bayram olduğu için seçilir; cumhuriyetin ilanı ile ilgilidir.",
+    "D": "30 Ağustos büyük bir millî bayram olduğu için seçilir; zaferle ilgilidir."
+   },
+   "kazanim_kodu": "HB.2.4.4",
+   "kazanim_metni": "Millî gün ve bayramların önemini yorumlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-017",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Millî gün ve bayramlar",
+   "alt_konu": "Cumhuriyet Bayramı",
+   "zorluk": 2,
+   "soru_metni": "Okul panosuna, Türkiye’de cumhuriyetin ilan edildiği günü anlatan bir resim asılacak. Bu resim hangi millî bayramla ilgilidir?",
+   "siklar": {
+    "A": "29 Ekim",
+    "B": "23 Nisan",
+    "C": "19 Mayıs",
+    "D": "30 Ağustos"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Cumhuriyet 29 Ekim’de ilan edilmiştir.",
+    "23 Nisan, 19 Mayıs ve 30 Ağustos başka olayları anar.",
+    "Resim cumhuriyetin ilanını anlattığı için 29 Ekim ile ilgilidir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her bayramın hangi önemli olayı andığını düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "23 Nisan, Millî Mücadele sırasında yaşanan bir olayı (TBMM’nin açılışını) anar; cumhuriyetten öncedir.",
+    "C": "19 Mayıs, Mustafa Kemal’in Samsun’a çıkışıyla ilgilidir; cumhuriyetin ilanından öncedir.",
+    "D": "30 Ağustos, kazanılan büyük zaferi anar; cumhuriyetin ilanından öncedir."
+   },
+   "kazanim_kodu": "HB.2.4.4",
+   "kazanim_metni": "Millî gün ve bayramların önemini yorumlayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-019",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Doğadan yön bulma",
+   "alt_konu": "Güneş’e göre yön",
+   "zorluk": 3,
+   "soru_metni": "Deniz akşamüzeri okul bahçesinde, Güneş’in battığı yöne dönüyor. Deniz’in sağ eli hangi yönü gösterir?",
+   "siklar": {
+    "A": "Güney",
+    "B": "Kuzey",
+    "C": "Doğu",
+    "D": "Batı"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Güneş batıda batar; Deniz batıya bakıyor, yani önü batıdır.",
+    "Arkası batının karşısındaki yön olan doğudur.",
+    "Batıya bakan birinin sağ eli kuzeyi, sol eli güneyi gösterir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Güneş’in battığı yöne bakarken önünde, arkanda ve yanlarında hangi yönlerin olduğunu sırayla düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Sağ elin güneyi gösterdiği sanılır; bu yön sol eldedir.",
+    "C": "Güneşin doğduğu yön olan doğu, sağ el ile karıştırılır; doğu Deniz’in arkasındadır.",
+    "D": "Deniz’in baktığı yön olan batı, sağ el ile karıştırılır; batı Deniz’in önündedir."
+   },
+   "kazanim_kodu": "HB.2.5.2",
+   "kazanim_metni": "Doğadan yararlanarak yönünü belirleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-020",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Afetlere karşı önlemler",
+   "alt_konu": "Güvenilir bilgi kaynağı",
+   "zorluk": 2,
+   "soru_metni": "Selin, depremde nasıl davranılması gerektiğini öğrenmek istiyor. Selin’in bilgi toplamak için kullanabileceği güvenilir kaynak hangisidir?",
+   "siklar": {
+    "A": "Arkadaşının duyduğu bir söylenti",
+    "B": "Ünlü birinin sosyal medya paylaşımı",
+    "C": "Bir filmde gördüğü deprem sahnesi",
+    "D": "Uzmanların hazırladığı kitap"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Güvenilir kaynak, konuyu bilenlerin hazırladığı kaynaktır.",
+    "Söylenti, ünlü birinin paylaşımı ve film sahnesi uzman bilgisi değildir.",
+    "Uzmanların hazırladığı kitap güvenilir bilgi verir.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Bilgiyi kimin, hangi bilgiyle hazırladığını düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Duyulan her bilginin doğru olduğu sanılır; söylentinin dayanağı yoktur.",
+    "B": "Ünlü olmanın doğru bilgi vermek anlamına geldiği sanılır; ünlü kişi konuda uzman olmayabilir.",
+    "C": "Film sahnesinin gerçeği gösterdiği sanılır; filmler gerçekçi olmayabilir."
+   },
+   "kazanim_kodu": "HB.2.5.3",
+   "kazanim_metni": "Afetlere karşı alınması gereken önlemlere ilişkin bilgi toplayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-022",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Doğal kaynakları tasarruflu kullanma",
+   "alt_konu": "Su tasarrufu",
+   "zorluk": 1,
+   "soru_metni": "Aşağıdaki davranışlardan hangisi suyu tasarruflu kullanmaya örnektir?",
+   "siklar": {
+    "A": "Elleri sabunlarken musluğu kapatmak",
+    "B": "Dişleri fırçalarken suyu açık bırakmak",
+    "C": "Bahçeyi hortumla uzun süre sulamak",
+    "D": "Oyuncakları akan suyun altında yıkamak"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Tasarruf, aynı işi daha az su kullanarak yapmaktır.",
+    "Elleri sabunlarken su gerekmez; musluğu kapatmak suyu boşa akıtmamayı sağlar.",
+    "Diğer davranışlarda su gereğinden fazla akar.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Su kullanılırken musluğun ne zaman gerçekten gerekli olduğunu düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Akan suyun dişleri daha iyi temizlediği sanılır; fırçalarken su boşuna akar.",
+    "C": "Uzun süre sulamanın bitkiye daha çok yaradığı sanılır; fazla su israf olur.",
+    "D": "Akan suyun oyuncakları daha iyi yıkadığı sanılır; kapta yıkamak daha az su harcar."
+   },
+   "kazanim_kodu": "HB.2.5.4",
+   "kazanim_metni": "Doğal kaynakları tasarruflu kullanma davranışlarını günlük yaşamına yansıtabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-023",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Doğal kaynakları tasarruflu kullanma",
+   "alt_konu": "Kâğıt ve ağaç",
+   "zorluk": 2,
+   "soru_metni": "Aşağıdaki davranışlardan hangisi ağaçların korunmasına yardımcı olur?",
+   "siklar": {
+    "A": "Diş fırçalarken musluğu kapatmak",
+    "B": "Odadan çıkarken lambayı söndürmek",
+    "C": "Eski kıyafetleri bağışlamak",
+    "D": "Kâğıdın boş yüzünü de kullanmak"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Kâğıt ağaçlardan elde edilir.",
+    "Kâğıdın boş yüzünü de kullanan kişi daha az kâğıt harcar, böylece daha az ağaç kesilir.",
+    "Diğer davranışlar su, elektrik ve kumaş gibi kaynakları korur.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her davranışın hangi doğal kaynağı koruduğunu ayrı ayrı düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Bu bir su tasarrufu davranışıdır; her tasarruf davranışının ağaçları da koruduğu sanılır.",
+    "B": "Bu bir elektrik tasarrufu davranışıdır; her tasarruf davranışının ağaçları da koruduğu sanılır.",
+    "C": "Eski eşyayı bağışlamak da tasarruf gibi göründüğü için seçilir; ancak ağaç korumayla doğrudan ilgili değildir."
+   },
+   "kazanim_kodu": "HB.2.5.4",
+   "kazanim_metni": "Doğal kaynakları tasarruflu kullanma davranışlarını günlük yaşamına yansıtabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-024",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Sanat",
+   "alt_konu": "Günlük yaşamda sanat",
+   "zorluk": 2,
+   "soru_metni": "Aşağıdakilerden hangisi günlük yaşamdaki sanata örnek DEĞİLDİR?",
+   "siklar": {
+    "A": "Doğum günü şarkısı söylemek",
+    "B": "Okul bahçesinde top oynamak",
+    "C": "Sokakta çalan müzisyeni dinlemek",
+    "D": "Evin duvarına resim asmak"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Şarkı söylemek ve müzik dinlemek müzik sanatıyla ilgilidir.",
+    "Duvara resim asmak resim sanatıyla ilgilidir.",
+    "Top oynamak bir spor ya da oyun etkinliğidir; sanat değildir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her seçeneğin müzik, resim ya da dans gibi bir sanat dalıyla ilgili olup olmadığını düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Şarkı söylemenin sanat sayılmayabileceği düşünülür; müzik sanatın bir dalıdır.",
+    "C": "Sokakta çalınan müziğin sanat olmadığı düşünülür; müzik dinlemek sanatla karşılaşmaktır.",
+    "D": "Evde asılan resmin sanat sayılmayacağı düşünülür; resim sanat eseridir."
+   },
+   "kazanim_kodu": "HB.2.6.3",
+   "kazanim_metni": "Sanatın günlük yaşamdaki yerini belirleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-025",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Arkadaşlık ilişkileri",
+   "alt_konu": "Ortak kullanımda sıra düzeni",
+   "zorluk": 1,
+   "soru_metni": "Parkta tek bir kaydırak var ve üç arkadaş da kaymak istiyor. Üçünün de kaymasını sağlayan düzen hangisidir?",
+   "siklar": {
+    "A": "Sırayla birer kez kaymaları",
+    "B": "Önce kayanın yeniden kayması",
+    "C": "Yalnız en hızlının kayması",
+    "D": "Küçüğün tek başına kayması"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Kaydırak tektir ve kaymak isteyen üç arkadaş vardır.",
+    "Herkesin kayabilmesi için kaydırağın ortak kullanılması gerekir.",
+    "Arkadaşlar sırayla birer kez kayarsa üçü de kaymış olur; diğer düzenlerde bir ya da iki arkadaş dışarıda kalır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Üç arkadaşın da kaymak için eşit hakkı olduğunu düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Önce gelenin hakkı olduğu düşünülür; oysa bu düzende sırada bekleyen arkadaşlar kayamaz.",
+    "C": "Hızlı olanın öne geçmeyi hak ettiği sanılır; oysa diğer iki arkadaş kayamaz.",
+    "D": "Küçüğe öncelik vermek nazik görünür; ancak bu düzende diğer iki arkadaş kaymamış olur."
+   },
+   "kazanim_kodu": "HB.2.1.3",
+   "kazanim_metni": "Arkadaşlık ilişkilerini düzenleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-026",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Arkadaşlık ilişkileri",
+   "alt_konu": "Kırgınlığı giderme",
+   "zorluk": 1,
+   "soru_metni": "Mina ile Defne aralarındaki kırgınlığı konuşarak bitirdi ve yeniden arkadaş oldu. Bu duruma ne ad verilir?",
+   "siklar": {
+    "A": "Küsme",
+    "B": "Tartışma",
+    "C": "Barışma",
+    "D": "Uzaklaşma"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Mina ile Defne aralarındaki kırgınlığı konuşarak bitirmiştir.",
+    "Kırgınlığın bitip arkadaşların yeniden arkadaş olmasına barışma denir.",
+    "Küsme, tartışma ve uzaklaşma ise arkadaşlığın zedelendiği durumlardır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her seçeneğin arkadaşlar arasında hangi durumu anlattığını düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Kırgınlıkla birlikte akla geldiği için seçilir; oysa küsme arkadaşların birbiriyle konuşmamasıdır.",
+    "B": "Konuşma olduğu için tartışma sanılır; oysa tartışma görüş ayrılığıdır, burada kırgınlık bitmiştir.",
+    "D": "Arkadaşlık sorunlarıyla birlikte duyulduğu için seçilir; oysa uzaklaşmada arkadaşlar yeniden yakınlaşmaz."
+   },
+   "kazanim_kodu": "HB.2.1.3",
+   "kazanim_metni": "Arkadaşlık ilişkilerini düzenleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-028",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Görev ve sorumluluk",
+   "alt_konu": "Sınıftaki görevler",
+   "zorluk": 1,
+   "soru_metni": "Yaren’in sınıftaki görevi, ders bitince kitaplığı düzene sokmaktır. Ders bitti. Yaren görevi için ne yapmalıdır?",
+   "siklar": {
+    "A": "Teneffüse çıkıp oyun oynamak",
+    "B": "Kitapları arkadaşına bırakmak",
+    "C": "Öğretmenin toplamasını beklemek",
+    "D": "Kitapları yerlerine dizmek"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Yaren’in görevi, ders bitince kitaplığı düzene sokmaktır.",
+    "Kitaplığı düzene sokmak için kitapları yerlerine dizmek gerekir.",
+    "Teneffüse çıkmak, işi arkadaşına bırakmak ya da öğretmeni beklemek görevi yerine getirmek değildir.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Yaren’e verilen işin ne olduğuna dikkat et."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ders bitince teneffüse çıkmak doğal görünür; oysa Yaren’in görevi yapılmadan kalır.",
+    "B": "İşi arkadaşa vermek kolay görünür; oysa görev Yaren’e verilmiştir.",
+    "C": "Yetişkinin toplayacağı düşünülür; oysa bu iş öğretmenin değil Yaren’in görevidir."
+   },
+   "kazanim_kodu": "HB.2.3.3",
+   "kazanim_metni": "Yakın çevresinde üzerine düşen görev ve sorumlulukları günlük yaşamına yansıtabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-029",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Görev ve sorumluluk",
+   "alt_konu": "Evdeki sorumluluklar",
+   "zorluk": 2,
+   "soru_metni": "Arda evde oyun bitince oyuncaklarını kutusuna koyuyor. Bu davranış hangi sorumluluğa örnektir?",
+   "siklar": {
+    "A": "Ödevini zamanında yapma",
+    "B": "Eşyalarını düzenli tutma",
+    "C": "Evdeki çiçekleri sulama",
+    "D": "Sofrayı kurmaya yardım etme"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Arda oyun bitince oyuncaklarını kutusuna koymaktadır.",
+    "Oyuncaklar Arda’nın kendi eşyalarıdır ve yerlerine konulmuştur.",
+    "Bu davranış, eşyalarını düzenli tutma sorumluluğuna örnektir.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Arda’nın elindeki şeylerin ne olduğuna ve onlarla ne yaptığına dikkat et."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Ödev de evde yapılan bir sorumluluktur; ancak örnekte ders çalışma yoktur.",
+    "C": "Çiçek sulamak da bir ev görevidir; ancak örnekte çiçek ya da su yoktur.",
+    "D": "Sofra kurmak da bir ev görevidir; ancak örnekte yemek hazırlığı yoktur."
+   },
+   "kazanim_kodu": "HB.2.3.3",
+   "kazanim_metni": "Yakın çevresinde üzerine düşen görev ve sorumlulukları günlük yaşamına yansıtabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-030",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Hava olayları ve mevsimler",
+   "alt_konu": "Sonbahar mevsiminin özellikleri",
+   "zorluk": 1,
+   "soru_metni": "Aşağıdakilerden hangisi sonbahar mevsiminin özelliğidir?",
+   "siklar": {
+    "A": "Yaprakların sararıp dökülmesi",
+    "B": "Ağaçların yeniden çiçek açması",
+    "C": "Karların yağıp yerde kalması",
+    "D": "Havaların çok sıcak geçmesi"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Sonbaharda hava serinlemeye başlar.",
+    "Bu mevsimde ağaçların yaprakları sararır ve dökülür.",
+    "Çiçek açma ilkbaharın, kar yağışı kışın, sıcak hava yazın özelliğidir.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Mevsimleri sırayla düşünüp her birinde ağaçların nasıl göründüğünü hatırla."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Ağaçlardaki değişiklik olduğu için seçilir; oysa çiçek açma ilkbaharın özelliğidir.",
+    "C": "Hava serinlediği için kar akla gelir; oysa kar yağışı kışın görülür.",
+    "D": "Yaz mevsimi çok bilindiği için seçilir; oysa çok sıcak hava yazın özelliğidir."
+   },
+   "kazanim_kodu": "HB.2.5.1",
+   "kazanim_metni": "Hava olayları ve mevsimler arasındaki ilişkiyi çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-031",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Hava olayları ve mevsimler",
+   "alt_konu": "Gözlemden mevsimi belirleme",
+   "zorluk": 2,
+   "soru_metni": "Ağaçlar yapraksız, yerler karla kaplı, su birikintileri buz tutmuş ve hava çok soğuk. Bu gözlemler hangi mevsimi gösterir?",
+   "siklar": {
+    "A": "Yaz mevsimi",
+    "B": "İlkbahar mevsimi",
+    "C": "Kış mevsimi",
+    "D": "Sonbahar mevsimi"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Karla kaplı yerler, buz tutmuş su birikintileri ve çok soğuk hava birlikte görülüyor.",
+    "Bu hava olayları yaz, ilkbahar ya da sonbaharın değil, kışın özelliğidir.",
+    "Bu gözlemler kış mevsimini gösterir.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her gözlemin hangi mevsimde görüldüğünü ayrı ayrı düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yaz çok bilinen bir mevsim olduğu için seçilir; oysa yaz sıcak hava ile ilgilidir.",
+    "B": "Ağaçların yeni yeni değiştiği mevsim olduğu için karıştırılır; oysa ilkbaharda karlar erir.",
+    "D": "Yapraksız ağaçlar sonbaharı akla getirir; oysa yerlerin karla kaplanması ve suların donması kışın görülür."
+   },
+   "kazanim_kodu": "HB.2.5.1",
+   "kazanim_metni": "Hava olayları ve mevsimler arasındaki ilişkiyi çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-032",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Acil durum",
+   "alt_konu": "Evin yerini tarif etme",
+   "zorluk": 2,
+   "soru_metni": "Bilge, dedesi düşüp ayağa kalkamayınca 112’yi aradı. Sokağın adını bilmiyor ama apartmanın bir adı var. Apartmanın karşısında da bir okul bulunuyor. Görevli evin yerini sorarsa Bilge ekibin eve ulaşması için ne söylemelidir?",
+   "siklar": {
+    "A": "Dedesinin adını ve kaç yaşında olduğunu",
+    "B": "Apartmanın adını ve yakındaki okulu",
+    "C": "Kendi okulunun adını ve sınıf öğretmenini",
+    "D": "Evde kaç kişi yaşadığını ve yaşlarını"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Ekibin eve ulaşabilmesi için görevlinin evin yerini bilmesi gerekir.",
+    "Bilge sokağın adını bilmiyor ama apartmanın adını ve yakındaki okulu biliyor.",
+    "Bu iki bilgi evin yerini tarif etmeye yeter; kişilere ait bilgiler ise yer göstermez.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Ekibin evi bulabilmesi için hangi bilgilerin bir yeri tarif ettiğini düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Hastanın bilgilerinin de önemli olduğu düşünülür; ancak adı ve yaşı ekibe evin yerini göstermez.",
+    "C": "Okul adı yer bildiren bir bilgi gibi göründüğü için seçilir; oysa Bilge’nin kendi okulu evin bulunduğu yeri göstermez.",
+    "D": "Evdeki kişilerle ilgili bilgi de olayla ilgili gibi görünür; ancak ekip bu bilgiyle evi bulamaz."
+   },
+   "kazanim_kodu": "HB.2.2.4",
+   "kazanim_metni": "Acil bir durumda yetkililerle etkili iletişim kurabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-033",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Hava olayları ve mevsimler",
+   "alt_konu": "Mevsim sırası ve mevsim özellikleri",
+   "zorluk": 3,
+   "soru_metni": "Okul bahçesini kar kapladı ve su birikintileri buz tuttu. Mevsimler her yıl aynı sırayla birbirini izler. Bu mevsimden iki mevsim sonra gelen mevsimin özelliği hangisidir?",
+   "siklar": {
+    "A": "Ağaçların çiçek açması",
+    "B": "Yaprakların sararıp dökülmesi",
+    "C": "Havanın çok sıcak geçmesi",
+    "D": "Karın yağıp yerde kalması"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Karla kaplı yerler ve buz tutan su birikintileri kış mevsimini gösterir.",
+    "Mevsimler kıştan sonra ilkbahar, ilkbahardan sonra yaz olarak sürer.",
+    "Kıştan iki mevsim sonra yaz gelir ve hava çok sıcak geçer.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Önce şu anki mevsimi bul, sonra mevsimleri sırayla iki adım ilerlet."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Bir mevsim sonrası sayılıp ilkbahar seçilir; oysa soru iki mevsim sonrasını ister.",
+    "B": "Sıra yanlış yönde ilerletilip sonbahar seçilir; sonbahar kıştan önce gelen mevsimdir.",
+    "D": "Bugünkü mevsimin özelliği seçilir; oysa soru iki mevsim sonrasını sorar."
+   },
+   "kazanim_kodu": "HB.2.5.1",
+   "kazanim_metni": "Hava olayları ve mevsimler arasındaki ilişkiyi çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-034",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Afetlere karşı önlemler",
+   "alt_konu": "Bilgi kaynağı seçme",
+   "zorluk": 2,
+   "soru_metni": "Mina, depremden önce evde alınacak önlemleri öğrenmek istiyor. Öğretmeni, kaynağın hem konuyu bilenlerce hazırlanmış hem de güncel olması gerektiğini söyledi. Mina’nın önünde dört kaynak var. Mina hangisini seçmelidir?",
+   "siklar": {
+    "A": "Afet uzmanlarının bu yıl hazırladığı rehber",
+    "B": "Afet uzmanlarının otuz yıl önce hazırladığı rehber",
+    "C": "Arkadaşının bu yıl anlattığı bilgiler",
+    "D": "Tanımadığı birinin bu hafta yazdığı yorum"
+   },
+   "dogru_sik": "A",
+   "cozum_adimlari": [
+    "Seçilecek kaynak hem konuyu bilenlerce hazırlanmış hem de güncel olmalıdır.",
+    "Otuz yıl önce hazırlanan rehber uzman işidir ama güncel değildir.",
+    "Arkadaşın anlattıkları ve tanımadık birinin yorumu yenidir ama konuyu bilenlerce hazırlanmamıştır.",
+    "Doğru cevap A seçeneğidir."
+   ],
+   "ipuclari": [
+    "Öğretmenin söylediği iki özelliğe her kaynağın uyup uymadığına tek tek bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "B": "Uzmanlarca hazırlandığı için güvenilir görünür; ancak otuz yıl önce hazırlandığından güncel değildir.",
+    "C": "Yeni bir bilgi olduğu için seçilir; ancak arkadaşı konuyu bilenlerden biri değildir.",
+    "D": "En yeni paylaşım olduğu için seçilir; ancak tanımadığı kişinin konuyu bildiği belli değildir."
+   },
+   "kazanim_kodu": "HB.2.5.3",
+   "kazanim_metni": "Afetlere karşı alınması gereken önlemlere ilişkin bilgi toplayabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-035",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Sağlıklı büyüme ve gelişme",
+   "alt_konu": "Alışkanlık ve sağlık ilişkisi",
+   "zorluk": 2,
+   "soru_metni": "Kerem okuldan gelince ellerini yıkamadan atıştırıyor. Boş zamanlarında dışarı çıkmayıp ekran karşısında oturuyor. Sık sık hasta oluyor ve çabuk yoruluyor. Kerem bu iki sorununu birlikte azaltmak için ne yapmalıdır?",
+   "siklar": {
+    "A": "Yemekten önce ellerini yıkayıp evde daha çok dinlenmeli",
+    "B": "Ellerini yıkamadan yemek yiyip açık havada oynamalı",
+    "C": "Daha az atıştırıp evde daha çok dinlenmeli",
+    "D": "Yemekten önce ellerini yıkayıp açık havada oynamalı"
+   },
+   "dogru_sik": "D",
+   "cozum_adimlari": [
+    "Ellerini yıkamadan atıştırmak mikrop alıp hasta olmaya yol açabilir.",
+    "Hareketsiz kalıp ekran karşısında oturmak çabuk yorulmaya yol açabilir.",
+    "Bu yüzden Kerem yemekten önce ellerini yıkamalı ve açık havada hareket etmelidir.",
+    "Doğru cevap D seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her sorunun hangi alışkanlıktan geldiğini ayrı ayrı bul, sonra ikisini birden düzelten seçeneği ara."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Yorgun olan birinin dinlenmesi gerektiği düşünülür; oysa hareketsizlik sürdüğü için yorulma azalmaz.",
+    "B": "Hareket eklenince her şeyin düzeleceği düşünülür; oysa ellerini yıkamamak hasta olmaya yol açmaya devam eder.",
+    "C": "Az atıştırmanın iki sorunu da çözeceği düşünülür; oysa el temizliği de hareket de eksik kalır."
+   },
+   "kazanim_kodu": "HB.2.2.1",
+   "kazanim_metni": "Sağlıklı büyüme ve gelişme ile alışkanlıkları arasındaki ilişkiyi çözümleyebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-036",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Doğal kaynakları tasarruflu kullanma",
+   "alt_konu": "Elektrik tasarrufu",
+   "zorluk": 3,
+   "soru_metni": "Defne öğleden sonra güneş ışığıyla aydınlanan odasında bilgisayarda resim çiziyor. Lambası yanıyor, radyosu da açık ama Defne radyoyu dinlemiyor. Defne’nin elektriği boşa harcamaması için hangilerini kapatması gerekir?",
+   "siklar": {
+    "A": "Lambayı ve bilgisayarı",
+    "B": "Lambayı ve radyoyu",
+    "C": "Radyoyu ve bilgisayarı",
+    "D": "Yalnızca lambayı"
+   },
+   "dogru_sik": "B",
+   "cozum_adimlari": [
+    "Oda güneş ışığıyla aydınlık olduğu için lambaya gerek yoktur.",
+    "Defne radyoyu dinlemediği için radyo da boşuna elektrik harcar.",
+    "Bilgisayarı resim çizmek için kullandığından o açık kalmalıdır.",
+    "Doğru cevap B seçeneğidir."
+   ],
+   "ipuclari": [
+    "Her cihazın şu anda kullanılıp kullanılmadığına ve odanın aydınlık olup olmadığına bak."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "Lambanın gereksiz olduğu bulunur; ancak bilgisayar resim çizmek için kullanıldığından kapatılmamalıdır.",
+    "C": "Radyonun gereksiz olduğu bulunur; ancak bilgisayar kullanılmaktadır ve oda aydınlıkken yanan lamba da boşa harcamadır.",
+    "D": "Lambanın gereksiz olduğu bulunur ve işin bittiği sanılır; oysa dinlenmeyen radyo da boşuna elektrik harcar."
+   },
+   "kazanim_kodu": "HB.2.5.4",
+   "kazanim_metni": "Doğal kaynakları tasarruflu kullanma davranışlarını günlük yaşamına yansıtabilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  },
+  {
+   "soru_id": "hb2-037",
+   "sinif": 2,
+   "okul": "ilkokul",
+   "ders": "Hayat Bilgisi",
+   "konu": "Planlı olmak",
+   "alt_konu": "Planın sonuçları",
+   "zorluk": 2,
+   "soru_metni": "Cuma günü sınıfta resimli sunum yapılacak. Nil çalışmasını planlayıp çarşamba günü bitirdi, Cem ise çalışmayı perşembe akşamına bıraktı. O akşam elektrikler kesildi ve kimse çalışamadı. Bu durumda cuma günü hangisi olur?",
+   "siklar": {
+    "A": "Nil’in çalışması yarım kalır, Cem ise sunuma hazır olur",
+    "B": "Nil’in de Cem’in de çalışması yarım kalır",
+    "C": "Nil sunuma hazır olur, Cem’in çalışması yarım kalır",
+    "D": "Nil de Cem de sunuma hazır olur"
+   },
+   "dogru_sik": "C",
+   "cozum_adimlari": [
+    "Nil çalışmasını planlayıp çarşamba günü bitirmiştir; perşembe akşamı yapacağı iş kalmamıştır.",
+    "Cem çalışmaya perşembe akşamı başlayacaktı ve o akşam çalışamamıştır.",
+    "Bu yüzden Nil sunuma hazırdır, Cem’in çalışması ise yarım kalmıştır.",
+    "Doğru cevap C seçeneğidir."
+   ],
+   "ipuclari": [
+    "Elektrik kesilmeden önce her iki çocuğun çalışmasının ne durumda olduğunu düşün."
+   ],
+   "yanlis_sik_geri_bildirimi": {
+    "A": "İki çocuğun durumu ters çevrilir; oysa elektrik kesildiğinde çalışmasını bitirmiş olan Nil değil, henüz başlamamış olan Cem etkilenir.",
+    "B": "“Kimse çalışamadı” cümlesine bakılıp iki çocuğun da etkilendiği sanılır; oysa Nil’in işi o akşamdan önce bitmiştir.",
+    "D": "Cem’in de sunuma yetişeceği düşünülür; oysa Cem çalışmaya o akşam başlayacaktı ve çalışamamıştır."
+   },
+   "kazanim_kodu": "HB.2.1.1",
+   "kazanim_metni": "Planlı olmanın kişisel yaşama etkilerini fark edebilme",
+   "kaynak_turu": "uretilen",
+   "uretim_yontemi": "llm",
+   "kalite_durumu": "sari",
+   "gorsel_gerekli": false,
+   "model": "claude-sonnet-5-5",
+   "prompt_surumu": "rehber-v1.1-2026-10-21",
+   "onay_durumu": "beklemede"
+  }
+ ]
+}

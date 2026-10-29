@@ -1,0 +1,1450 @@
+[
+ {
+  "id": "MAT1-SAY-S1-001",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane kare vardır?",
+  "siklar": {
+   "A": "2",
+   "B": "3",
+   "C": "4",
+   "D": "5"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yalnız kare olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız kare olanlar tek tek sayılır.",
+   "Kare sayısı 2’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "3, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "4, 2 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "5, 3 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><polygon points=\"82.55,13.93 66.55,43.93 98.55,43.93\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"34.89,20.05 18.89,50.05 50.89,50.05\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"68.76\" y=\"111.35\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"265.35,17.22 249.35,47.22 281.35,47.22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"218.5\" cy=\"82.87\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"170.83\" cy=\"121.91\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"122.97,16.07 106.97,46.07 138.97,46.07\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"215.8,17.34 199.8,47.34 231.8,47.34\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"264.93,61.63 248.93,91.63 280.93,91.63\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"113.41\" y=\"114.76\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"35.72\" cy=\"75.95\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"81.4\" cy=\"81.87\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"123.15,67 107.15,97 139.15,97\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"30.52\" cy=\"127.06\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 7
+     },
+     {
+      "sekil": "kare",
+      "sayi": 2
+     },
+     {
+      "sekil": "daire",
+      "sayi": 5
+     }
+    ],
+    "tohum": 48879
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "kare"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-002",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane üçgen vardır?",
+  "siklar": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Yalnız üçgen olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız üçgen olanlar tek tek sayılır.",
+   "Üçgen sayısı 4’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "1, 3 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "2, 2 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "3, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><rect x=\"245.73\" y=\"64.41\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"247.14\" y=\"114.75\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"122.03,19.99 106.03,49.99 138.03,49.99\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"32.77,59.82 16.77,89.82 48.77,89.82\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"168.11,62.16 152.11,92.16 184.11,92.16\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"172.2\" cy=\"34.34\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"29.38\" cy=\"31.6\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"128.88\" cy=\"124.86\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"123.69\" cy=\"78.15\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"78.52,105.01 62.52,135.01 94.52,135.01\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"76.05\" cy=\"31.32\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 2
+     },
+     {
+      "sekil": "daire",
+      "sayi": 5
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 4
+     }
+    ],
+    "tohum": 19282
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "ucgen"
+    ],
+    "beklenen": 4
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-003",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane daire vardır?",
+  "siklar": {
+   "A": "6",
+   "B": "7",
+   "C": "8",
+   "D": "9"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yalnız daire olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız daire olanlar tek tek sayılır.",
+   "Daire sayısı 7’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "6, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "Doğru.",
+   "C": "8, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "9, 2 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><circle cx=\"29.09\" cy=\"33.7\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"30.58\" cy=\"78.15\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"126.62\" cy=\"128.93\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"158.48\" y=\"65.06\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"265.35,19.29 249.35,49.29 281.35,49.29\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"109.41\" y=\"20.72\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"169.27\" cy=\"128.3\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"205.44\" y=\"18.11\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"217.99\" cy=\"123.53\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"259.39\" cy=\"80.34\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"78.47,61.61 62.47,91.61 94.47,91.61\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"156.16\" y=\"18.71\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"66.9\" y=\"20.07\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"35.25\" cy=\"128.05\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"108.64\" y=\"66.6\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 7
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 2
+     },
+     {
+      "sekil": "kare",
+      "sayi": 6
+     }
+    ],
+    "tohum": 32334
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "daire"
+    ],
+    "beklenen": 7
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-004",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane kare vardır?",
+  "siklar": {
+   "A": "4",
+   "B": "5",
+   "C": "6",
+   "D": "7"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yalnız kare olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız kare olanlar tek tek sayılır.",
+   "Kare sayısı 6’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "4, 2 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "5, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "Doğru.",
+   "D": "7, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><polygon points=\"261.58,15.05 245.58,45.05 277.58,45.05\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"199.64\" y=\"64.16\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"251.53\" y=\"62.64\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"266.77,105.53 250.77,135.53 282.77,135.53\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"111.36\" y=\"112.91\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"109.47\" y=\"15.14\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"168.64,14.01 152.64,44.01 184.64,44.01\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"219.58,16.56 203.58,46.56 235.58,46.56\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"68.12\" y=\"61.78\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"19.19\" y=\"113.44\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"75.2,19.29 59.2,49.29 91.2,49.29\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 6
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 5
+     }
+    ],
+    "tohum": 26466
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "kare"
+    ],
+    "beklenen": 6
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-005",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane üçgen vardır?",
+  "siklar": {
+   "A": "4",
+   "B": "5",
+   "C": "6",
+   "D": "7"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Yalnız üçgen olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız üçgen olanlar tek tek sayılır.",
+   "Üçgen sayısı 7’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "4, 3 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "5, 2 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "6, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><polygon points=\"123.15,15.04 107.15,45.04 139.15,45.04\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"77.67\" cy=\"34.07\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"77.74,65.75 61.74,95.75 93.74,95.75\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"262.89\" cy=\"32.07\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"30.06,59.63 14.06,89.63 46.06,89.63\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"32.48,20.04 16.48,50.04 48.48,50.04\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"172.12,15.74 156.12,45.74 188.12,45.74\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"126.83,61.85 110.83,91.85 142.83,91.85\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"216.33,59.03 200.33,89.03 232.33,89.03\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 2
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 7
+     }
+    ],
+    "tohum": 95264
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "ucgen"
+    ],
+    "beklenen": 7
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-006",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane daire vardır?",
+  "siklar": {
+   "A": "6",
+   "B": "7",
+   "C": "8",
+   "D": "9"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yalnız daire olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız daire olanlar tek tek sayılır.",
+   "Daire sayısı 6’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "7, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "8, 2 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "9, 3 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><rect x=\"66.45\" y=\"114.12\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"17.98\" y=\"61.43\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"33.86\" cy=\"35.43\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"214.2\" cy=\"124.79\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"75.71\" cy=\"36.4\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"172.33\" cy=\"123.87\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"246.52\" y=\"21.96\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"122.68\" cy=\"30.36\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"263.01,59.53 247.01,89.53 279.01,89.53\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"159.8\" y=\"22.31\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"155.9\" y=\"66.15\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"66.92\" y=\"61.79\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"128.78\" cy=\"123.55\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"113.53\" y=\"61.69\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 6
+     },
+     {
+      "sekil": "kare",
+      "sayi": 7
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 1
+     }
+    ],
+    "tohum": 86869
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "daire"
+    ],
+    "beklenen": 6
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-007",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane daire vardır?",
+  "siklar": {
+   "A": "6",
+   "B": "7",
+   "C": "8",
+   "D": "9"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yalnız daire olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız daire olanlar tek tek sayılır.",
+   "Daire sayısı 7’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "6, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "Doğru.",
+   "C": "8, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "9, 2 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><circle cx=\"264.22\" cy=\"82.67\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"127.81\" cy=\"124.57\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"112.04\" y=\"15.96\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"206.98\" y=\"20.66\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"264.36\" cy=\"121.83\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"123.1\" cy=\"79.4\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"174.73\" cy=\"121.63\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"61.98\" y=\"17.14\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"29.32\" cy=\"79.8\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"80.04\" cy=\"126.38\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"18.23\" y=\"111.27\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"204.32\" y=\"68.99\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 7
+     },
+     {
+      "sekil": "kare",
+      "sayi": 5
+     }
+    ],
+    "tohum": 67681
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "daire"
+    ],
+    "beklenen": 7
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-008",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane kare vardır?",
+  "siklar": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yalnız kare olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız kare olanlar tek tek sayılır.",
+   "Kare sayısı 3’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "1, 2 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "2, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "Doğru.",
+   "D": "4, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><rect x=\"62.15\" y=\"63.41\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"32.54\" cy=\"78.2\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"199.08\" y=\"18.28\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"20.21\" y=\"22.99\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"172.05,18.29 156.05,48.29 188.05,48.29\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"219.44,61.33 203.44,91.33 235.44,91.33\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 2
+     },
+     {
+      "sekil": "kare",
+      "sayi": 3
+     },
+     {
+      "sekil": "daire",
+      "sayi": 1
+     }
+    ],
+    "tohum": 32433
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "kare"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-009",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane daire vardır?",
+  "siklar": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yalnız daire olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız daire olanlar tek tek sayılır.",
+   "Daire sayısı 3’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "1, 2 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "2, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "Doğru.",
+   "D": "4, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><circle cx=\"31.25\" cy=\"32.87\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"216.9,20.42 200.9,50.42 232.9,50.42\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"125.25\" cy=\"78.86\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"265.99\" cy=\"35.07\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 3
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 1
+     }
+    ],
+    "tohum": 6743
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "daire"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-010",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane kare vardır?",
+  "siklar": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yalnız kare olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız kare olanlar tek tek sayılır.",
+   "Kare sayısı 4’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "3, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "Doğru.",
+   "C": "5, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "6, 2 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><rect x=\"200.56\" y=\"22.69\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"109.18\" y=\"64.6\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"64.1\" y=\"65.28\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"67.68\" y=\"16.35\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"169.26\" cy=\"82.35\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 1
+     },
+     {
+      "sekil": "kare",
+      "sayi": 4
+     }
+    ],
+    "tohum": 21184
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "kare"
+    ],
+    "beklenen": 4
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-011",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane üçgen vardır?",
+  "siklar": {
+   "A": "4",
+   "B": "5",
+   "C": "6",
+   "D": "7"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Yalnız üçgen olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız üçgen olanlar tek tek sayılır.",
+   "Üçgen sayısı 7’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "4, 3 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "5, 2 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "6, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><circle cx=\"78.63\" cy=\"75.73\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"33.79\" cy=\"82.96\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"264.28,107.51 248.28,137.51 280.28,137.51\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"218.19,110.13 202.19,140.13 234.19,140.13\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"121.16,65.18 105.16,95.18 137.16,95.18\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"75.13,20.18 59.13,50.18 91.13,50.18\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"248.95\" y=\"64.22\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"168.39,14.42 152.39,44.42 184.39,44.42\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"170.14,108.13 154.14,138.13 186.14,138.13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"34.88,16.28 18.88,46.28 50.88,46.28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 7
+     },
+     {
+      "sekil": "kare",
+      "sayi": 1
+     },
+     {
+      "sekil": "daire",
+      "sayi": 2
+     }
+    ],
+    "tohum": 98426
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "ucgen"
+    ],
+    "beklenen": 7
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-012",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane kare vardır?",
+  "siklar": {
+   "A": "2",
+   "B": "3",
+   "C": "4",
+   "D": "5"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yalnız kare olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız kare olanlar tek tek sayılır.",
+   "Kare sayısı 2’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "3, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "4, 2 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "5, 3 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 66\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"66\" fill=\"#FFFFFF\"/><rect x=\"252.65\" y=\"19.42\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"206.74\" y=\"17.97\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"169.61\" cy=\"29.01\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 1
+     },
+     {
+      "sekil": "kare",
+      "sayi": 2
+     }
+    ],
+    "tohum": 79522
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "kare"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-013",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane daire vardır?",
+  "siklar": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Yalnız daire olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız daire olanlar tek tek sayılır.",
+   "Daire sayısı 4’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "1, 3 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "2, 2 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "3, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><rect x=\"201.84\" y=\"15.41\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"16.95\" y=\"17.77\" width=\"28\" height=\"28\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"125.27\" cy=\"79.59\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"78.21,16.92 62.21,46.92 94.21,46.92\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"82.09\" cy=\"78.13\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"30.06,65.85 14.06,95.85 46.06,95.85\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"260.12\" cy=\"32.19\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"259.96,66.48 243.96,96.48 275.96,96.48\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"121.91\" cy=\"36.14\" r=\"14\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 2
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 3
+     },
+     {
+      "sekil": "daire",
+      "sayi": 4
+     }
+    ],
+    "tohum": 86176
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "daire"
+    ],
+    "beklenen": 4
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-014",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane üçgen vardır?",
+  "siklar": {
+   "A": "7",
+   "B": "8",
+   "C": "9",
+   "D": "10"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yalnız üçgen olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız üçgen olanlar tek tek sayılır.",
+   "Üçgen sayısı 7’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "8, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "9, 2 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "10, 3 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><polygon points=\"126.55,13.47 110.55,43.47 142.55,43.47\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"155.5\" y=\"19.8\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"265.01,20.07 249.01,50.07 281.01,50.07\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"68.97\" y=\"21.43\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"265.84,112.78 249.84,142.78 281.84,142.78\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"219.76\" cy=\"128.01\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"32.16\" cy=\"79.82\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"19.23\" y=\"111.43\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"123.39,63.78 107.39,93.78 139.39,93.78\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"34.8,16.6 18.8,46.6 50.8,46.6\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"76.81,65.54 60.81,95.54 92.81,95.54\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"260.37,60.63 244.37,90.63 276.37,90.63\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 3
+     },
+     {
+      "sekil": "daire",
+      "sayi": 2
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 7
+     }
+    ],
+    "tohum": 15986
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "ucgen"
+    ],
+    "beklenen": 7
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-015",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane kare vardır?",
+  "siklar": {
+   "A": "4",
+   "B": "5",
+   "C": "6",
+   "D": "7"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yalnız kare olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız kare olanlar tek tek sayılır.",
+   "Kare sayısı 6’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "4, 2 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "5, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "Doğru.",
+   "D": "7, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><rect x=\"154.69\" y=\"18.27\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"22.05\" y=\"19.44\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"263.19,17.08 247.19,47.08 279.19,47.08\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"81.69,62.92 65.69,92.92 97.69,92.92\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"261.97,65.51 245.97,95.51 277.97,95.51\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"114.87\" y=\"66.19\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"200.74\" y=\"68.97\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"18.3\" y=\"62.35\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"206.03\" y=\"19.25\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 6
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 3
+     }
+    ],
+    "tohum": 14842
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "kare"
+    ],
+    "beklenen": 6
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-016",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane kare vardır?",
+  "siklar": {
+   "A": "2",
+   "B": "3",
+   "C": "4",
+   "D": "5"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yalnız kare olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız kare olanlar tek tek sayılır.",
+   "Kare sayısı 3’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "2, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "Doğru.",
+   "C": "4, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "5, 2 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 158\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"158\" fill=\"#FFFFFF\"/><polygon points=\"35.47,20.44 19.47,50.44 51.47,50.44\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"30.75\" cy=\"77.48\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"219.9\" cy=\"76.22\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"80.92\" cy=\"35.7\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"113.98\" y=\"15.53\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"206.12\" y=\"113.04\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"266.67\" cy=\"126.43\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"128.75,65.51 112.75,95.51 144.75,95.51\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"263.88\" cy=\"75.24\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"77.47,59.21 61.47,89.21 93.47,89.21\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"160.04\" y=\"68.1\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"168.21,107.81 152.21,137.81 184.21,137.81\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 4
+     },
+     {
+      "sekil": "kare",
+      "sayi": 3
+     },
+     {
+      "sekil": "daire",
+      "sayi": 5
+     }
+    ],
+    "tohum": 24526
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "kare"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-017",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane kare vardır?",
+  "siklar": {
+   "A": "1",
+   "B": "2",
+   "C": "3",
+   "D": "4"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Yalnız kare olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız kare olanlar tek tek sayılır.",
+   "Kare sayısı 2’dir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "1, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "Doğru.",
+   "C": "3, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "4, 2 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><polygon points=\"218.34,13.14 202.34,43.14 234.34,43.14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"170.8,20.04 154.8,50.04 186.8,50.04\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"168.91,65.64 152.91,95.64 184.91,95.64\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"246.46\" y=\"17.86\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"205.7\" y=\"63.32\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"29.66\" cy=\"82.41\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"126.78,61.3 110.78,91.3 142.78,91.3\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"124.69,19.25 108.69,49.25 140.69,49.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "daire",
+      "sayi": 1
+     },
+     {
+      "sekil": "kare",
+      "sayi": 2
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 5
+     }
+    ],
+    "tohum": 87163
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "kare"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-018",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane üçgen vardır?",
+  "siklar": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Yalnız üçgen olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız üçgen olanlar tek tek sayılır.",
+   "Üçgen sayısı 6’dir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "3, 3 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "4, 2 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "5, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><polygon points=\"214.35,59.7 198.35,89.7 230.35,89.7\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"36.79,19.26 20.79,49.26 52.79,49.26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"82.49,14.86 66.49,44.86 98.49,44.86\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"79.53\" cy=\"75.66\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"173.23,17.68 157.23,47.68 189.23,47.68\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"125.63,20.03 109.63,50.03 141.63,50.03\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"259.96\" cy=\"80.48\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"122.98,62.74 106.98,92.74 138.98,92.74\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 6
+     },
+     {
+      "sekil": "daire",
+      "sayi": 2
+     }
+    ],
+    "tohum": 99849
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "ucgen"
+    ],
+    "beklenen": 6
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-019",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane kare vardır?",
+  "siklar": {
+   "A": "3",
+   "B": "4",
+   "C": "5",
+   "D": "6"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yalnız kare olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız kare olanlar tek tek sayılır.",
+   "Kare sayısı 3’dir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "4, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "5, 2 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "D": "6, 3 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 112\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"112\" fill=\"#FFFFFF\"/><circle cx=\"262.37\" cy=\"34.34\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"220.11\" cy=\"31.57\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"173.03\" cy=\"82.56\" r=\"14\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"205.18\" y=\"65.41\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"160.56\" y=\"16.72\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"250.53\" y=\"63.42\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"125.73\" cy=\"32.39\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"29.81,59.41 13.81,89.41 45.81,89.41\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"124.32\" cy=\"78.32\" r=\"14\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "ucgen",
+      "sayi": 1
+     },
+     {
+      "sekil": "kare",
+      "sayi": 3
+     },
+     {
+      "sekil": "daire",
+      "sayi": 5
+     }
+    ],
+    "tohum": 38455
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "kare"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-SAY-S1-020",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.2",
+  "konu": "Sayılar",
+  "alt_konu": "Dağınık nesneleri sayma",
+  "soru_metni": "Yukarıdaki şekil grubunda kaç tane kare vardır?",
+  "siklar": {
+   "A": "5",
+   "B": "6",
+   "C": "7",
+   "D": "8"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yalnız kare olanları say; saydığın her şekle bir işaret koyabilirsin.",
+  "cozum_adimlari": [
+   "Şekiller arasından yalnız kare olanlar tek tek sayılır.",
+   "Kare sayısı 7’dir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "5, 2 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "B": "6, 1 eksik sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir.",
+   "C": "Doğru.",
+   "D": "8, 1 fazla sayılmış bir sonuçtur; sayarken aynı şekli iki kez saymak ya da bir şekli atlamak bu sonucu verir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "nesne-sayma",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 296 204\" role=\"img\" aria-label=\"Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.\"><rect width=\"296\" height=\"204\" fill=\"#FFFFFF\"/><rect x=\"156.07\" y=\"21.27\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"127.02,106.73 111.02,136.73 143.02,136.73\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"82.48\" cy=\"80.62\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"266.83\" cy=\"76.34\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"18.57\" y=\"22.23\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"220.11,62.76 204.11,92.76 236.11,92.76\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"63.24\" y=\"111.4\" width=\"28\" height=\"28\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"22.77\" y=\"156.24\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"79\" cy=\"167.38\" r=\"14\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"217.58,155.34 201.58,185.34 233.58,185.34\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"260.55,152.19 244.55,182.19 276.55,182.19\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"200.69\" y=\"22.11\" width=\"28\" height=\"28\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"78.27,15.84 62.27,45.84 94.27,45.84\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"261.86\" cy=\"126.66\" r=\"14\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"160.54\" y=\"158.26\" width=\"28\" height=\"28\" fill=\"#D55E00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"114.97\" y=\"64.15\" width=\"28\" height=\"28\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/></svg>",
+   "alt_metin": "Dağınık duran daire, kare ve üçgenlerden oluşan bir şekil grubu.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "nesne-sayma",
+   "parametreler": {
+    "sekiller": [
+     {
+      "sekil": "kare",
+      "sayi": 7
+     },
+     {
+      "sekil": "ucgen",
+      "sayi": 5
+     },
+     {
+      "sekil": "daire",
+      "sayi": 4
+     }
+    ],
+    "tohum": 16364
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "sayilar",
+     "kare"
+    ],
+    "beklenen": 7
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-nesne-sayma",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ }
+]

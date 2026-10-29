@@ -1,0 +1,2074 @@
+{
+  "model": "gemini-3.8-flash",
+  "tarih": "2026-10-21",
+  "iliskiler": [
+    {
+      "id": "s1-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s1-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s1-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s1-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s1-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s1-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s1-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s1-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-01",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "Örnek cümlede 'Ellerimi yıkayınca temiz oldu' ifadesinde nesne eki gereksiz kullanılmış, özne-yüklem uyumsuzluğu oluşmuştur."
+      ],
+      "duzeltme": {
+        "alan": "ornek",
+        "yeni": "Ellerim yıkanınca temiz oldu; çamurla oynayınca kirli kaldı."
+      }
+    },
+    {
+      "id": "s2-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s2-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-01",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "'Mutlu' ve 'sevinçli' sözcükleri eş anlamlı değil, yakın anlamlıdır. Mutlu'nun eş anlamlısı 'mesut' veya 'bahtiyar', sevinçli'nin eş anlamlısı ise 'neşeli' veya 'mesrur'dur."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-02",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "'Hızlı' ve 'çabuk' sözcükleri eş anlamlı değil, yakın anlamlıdır. Hızlı hareketin süratini belirtirken çabuk eylemin kısa sürede yapılmasını belirtir. Hızlı'nın eş anlamlısı 'süratli', çabuk'un eş anlamlısı 'tez'dir."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-03",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "'Arkadaş' ve 'dost' sözcükleri eş anlamlı değil, MEB müfredatında da vurgulanan klasik yakın anlamlı sözcüklerdir. Dostluk, arkadaşlıktan daha derin bir bağlılığı ifade eder."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-07",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "'Küçük' ve 'minik' sözcükleri tam eş anlamlı değildir. 'Minik' sözcüğü 'çok küçük, ufacık' anlamına geldiğinden aralarında anlam derecesi farkı (yakın anlamlılık) vardır. Küçük'ün eş anlamlısı 'ufak'tır."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-08",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "'Sevinç' ve 'neşe' eş anlamlı değil, yakın anlamlı sözcüklerdir. Sevinç içsel bir coşku ve duyguyken neşe bu duygunun dışa vurulan şen hâlidir."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-13",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s3-14",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-04",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "Örnek cümlede 'Bardağımdaki çayı içtik' ifadesinde tekil iyelik ile çoğul yüklem arasında uyumsuzluk vardır."
+      ],
+      "duzeltme": {
+        "alan": "ornek",
+        "yeni": "Bardağımdaki çayı içtim, sonra çayın kenarında yürüdük."
+      }
+    },
+    {
+      "id": "s4-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-06",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "Hatırlatıcıda 'Bağda üzümler asmalara bağlıdır' denerek eş sesli iki sözcük arasında asılsız bir etimolojik/anlamsal bağ kurulmuş, bu da eş seslilik mantığı açısından yanıltıcı olmuştur."
+      ],
+      "duzeltme": {
+        "alan": "hatirlatici",
+        "yeni": "Biri üzüm yetiştirilen bahçedir, diğeri ise ayakkabımızı bağladığımız iptir; yazılışları aynı, anlamları tamamen ayrıdır."
+      }
+    },
+    {
+      "id": "s4-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-13",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-14",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-15",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-16",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s4-17",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-01",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "Örnek cümlede hedef sözcük olan 'endişe' (isim) yerine türemiş hali olan 'endişeliydi' (sıfat) kullanılmıştır."
+      ],
+      "duzeltme": {
+        "alan": "ornek",
+        "yeni": "Sınav kaygısı yaşayan öğrenci, sınav yaklaştıkça büyük bir endişe duyuyordu."
+      }
+    },
+    {
+      "id": "s5-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-06",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "'Mühim' sözcüğünün tanımında sözcüğün kendisi ('önemli') kullanılarak döngüsel tanım yapılmıştır."
+      ],
+      "duzeltme": {
+        "alan": "b.anlam",
+        "yeni": "Kendisine özen gösterilmesi gereken, dikkate değer, ehemmiyetli"
+      }
+    },
+    {
+      "id": "s5-07",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "'Anlatmak' (sözle nakletmek, hikâye etmek) ve 'açıklamak' (izah etmek, anlaşılır kılmak) sözcükleri eş anlamlı değildir; yakın anlamlı farklı kavramlardır."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-08",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "MEB Türkçe öğretim programı kuralına göre bir sözcüğün olumsuzu (-sız/-siz ekiyle türetilmiş hali) onun zıt anlamlısı kabul edilemez. 'Başarısızlık', 'başarı'nın zıttı değil olumsuzudur."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-13",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-14",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "MEB Türkçe öğretim programı ve dil bilgisi kurallarına göre bir sözcüğün '-sız/-siz' olumsuzluk eki almış biçimi onun zıt anlamlısı değildir; bu nedenle saygı-saygısızlık çifti zıt anlamlı kabul edilemez."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-15",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "b.anlam alanında 'nottan' şeklinde imla/yazım hatası yapılmıştır; doğrusu 'notadan' olmalıdır."
+      ],
+      "duzeltme": {
+        "alan": "b.anlam",
+        "yeni": "Müzikte yedi ana notadan biri"
+      }
+    },
+    {
+      "id": "s5-16",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-17",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s5-18",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-06",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "TDK Yazım Kılavuzu'na göre 'ön yargı' ayrı yazılır; örnek cümlede bitişik yazım hatası bulunmaktadır."
+      ],
+      "duzeltme": {
+        "alan": "ornek",
+        "yeni": "Yeni arkadaşıma ön yargıyla bakmamalıyım; peşin hüküm vermemeliyim."
+      }
+    },
+    {
+      "id": "s6-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-13",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-14",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-15",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "'Uçurumun yarına' ifadesinde yar zaten uçurum anlamına geldiğinden anlatım bozukluğu bulunmaktadır."
+      ],
+      "duzeltme": {
+        "alan": "ornek",
+        "yeni": "Derin bir yara yaklaşıp aşağı baktık; sel kayayı yardı."
+      }
+    },
+    {
+      "id": "s6-16",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s6-17",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-01",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "Düş sözcüğünün 'hayal' ile eş anlamlı olabilmesi için rüya anlamı değil, zihinde tasarlanan imge anlamı verilmelidir."
+      ],
+      "duzeltme": {
+        "alan": "b.anlam",
+        "yeni": "Gerçekleşmesi istenen, zihinde canlandırılan şey; hayal"
+      }
+    },
+    {
+      "id": "s7-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-11",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "MEB Türkçe programına göre bir sözcüğün olumsuzu (-sız/-siz eki almış hali) o sözcüğün zıt anlamlısı değildir; tutarlı ile tutarsız zıt anlamlı çift oluşturmaz."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-13",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-14",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-15",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-16",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s7-17",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-04",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "'Değiştirmek' ve 'dönüştürmek' sözcükleri eş anlamlı değil, yakın anlamlı sözcüklerdir. Nitekim hatırlatıcı metninde de bu iki sözcük arasındaki kavramsal fark belirtilmiştir."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-05",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "Örnek cümlede 'âdet' sözcüğü alışkanlık değil 'gelenek' anlamında kullanılarak iki sözcük arasındaki fark öne çıkarılmıştır; eş anlamlılığı yansıtmamaktadır."
+      ],
+      "duzeltme": {
+        "alan": "ornek",
+        "yeni": "Her sabah kitap okumak güzel bir alışkanlıktır; bu yararlı âdeti hayatımız boyunca sürdürmeliyiz."
+      }
+    },
+    {
+      "id": "s8-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-07",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "'Tedbirli' (ihtiyatlı, önlem alan) ve 'dikkatli' (özenli, uyanık) sözcükleri eş anlamlı değildir; farklı kavramları karşılarlar."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-09",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "MEB Türkçe öğretim programı kuralına göre bir sözcüğün -sız/-siz yapım ekiyle türetilmiş olumsuzu onun zıt anlamlısı kabul edilmez (bağımlı/bağımsız zıt anlamlı çift değildir)."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-11",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "MEB Türkçe öğretim programı kuralına göre bir sözcüğün -suz ekiyle yapılmış olumsuzu onun zıt anlamlısı kabul edilmez; 'olumlu' ve 'olumsuz' olumluluk-olumsuzluk ilişkisidir, zıt anlamlı çift değildir."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-13",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "MEB Türkçe öğretim programı kuralına göre -lı/-siz ekleriyle kurulan sözcük çiftleri (bilinçli/bilinçsiz) olumlu-olumsuz ilişkisidir; bir sözcüğün olumsuzu zıt anlamlısı sayılmaz."
+      ],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-14",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    },
+    {
+      "id": "s8-15",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "duzeltme": {
+        "alan": "yok",
+        "yeni": ""
+      }
+    }
+  ],
+  "sorular": [
+    {
+      "iliski_id": "s1-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s1-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s1-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s1-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s1-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s1-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s1-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s1-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s2-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-13",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s3-14",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-13",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-14",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-15",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-16",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s4-17",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-08",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "Türkçe öğretiminde bir sözcüğün olumsuzu (-sız/-siz eki almış hâli), o sözcüğün zıt anlamlısı kabul edilmez. 'Başarı' ile 'başarısızlık' zıt anlamlı değil, olumlu-olumsuz ilişkisidir."
+      ],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-13",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-14",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "Türkçe dersi kazanımlarına göre bir sözcüğün olumsuzu (-sız/-siz eki almış hâli) o sözcüğün zıt anlamlısı sayılamaz. 'Saygı' sözcüğünün zıt anlamlısı 'saygısızlık' değildir, olumsuzudur."
+      ],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-15",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-16",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-17",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s5-18",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-13",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-14",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-15",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-16",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s6-17",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-04",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-07",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-11",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "Türkçe öğretimi kurallarına göre bir sözcüğün olumsuzu (-sız/-siz eki almış hâli), o sözcüğün zıt anlamlısı değildir. 'Tutarlı' sözcüğünün zıttı 'tutarsız' değil, 'çelişkili' olmalıdır."
+      ],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-13",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-14",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-15",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-16",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s7-17",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-01",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-02",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-03",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-04",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "“Değiştirmek” ve “dönüştürmek” birebir eş anlamlı değil, yakın anlamlı sözcüklerdir. Eş anlamlı olarak 'başkalaştırmak' tercih edilebilir."
+      ],
+      "dogru_indeks_onerisi": 1
+    },
+    {
+      "iliski_id": "s8-05",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-06",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-07",
+      "durum": "duzelt",
+      "guvenli": true,
+      "sorunlar": [
+        "“Tedbirli” sözcüğünün tam eş anlamlısı “ihtiyatlı” veya “önlemli”dir. “Dikkatli” sözcüğü yakın anlamlı kabul edilir."
+      ],
+      "dogru_indeks_onerisi": 1
+    },
+    {
+      "iliski_id": "s8-08",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-09",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-10",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-11",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-12",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-13",
+      "durum": "sorunlu",
+      "guvenli": true,
+      "sorunlar": [
+        "Türkçe müfredatında bir sözcüğün '-sız/-siz' eki almış hâli olumsuzdur, zıt anlamlısı değildir (Örn. akıllı-akılsız, bilinçli-bilinçsiz zıt anlamlı sayılmaz)."
+      ],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-14",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    },
+    {
+      "iliski_id": "s8-15",
+      "durum": "tamam",
+      "guvenli": true,
+      "sorunlar": [],
+      "dogru_indeks_onerisi": null
+    }
+  ]
+}

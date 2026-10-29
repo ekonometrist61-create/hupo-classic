@@ -1,0 +1,79 @@
+# HR-025 · Bremen Yolcularının Yeni Şarkısı · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=64b3fc68-7025-4772-aa30-57499ebcad46, surum_no=2, sha256=a0ebe24156bc23bdb8dae6ffc31b1318b468fa6f6806634d741fe03f65cd8414
+Not: bu hikâyede 1 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr025-bremen-yolcularinin-yeni-sarkisi | Tür: hayvanlar | Konu: muzik | Dünya: masalsi
+Sınıf: 3–3 | Okuma bandı: 2 | Yetişkin uygun: false
+Tanıtım: Eşek, köpek, kedi ve horoz eski değirmende şarkı söylemek istiyor ama herkes aynı anda bağırıyor.
+İzinli türler: ben, arkadas, hayvan
+Değer anahtarları (sürüm): D14, D4 | maarif.ana_deger: D14
+Etiketler: ana_sinif=3, okuma_zorlugu=2, kavram_zorlugu=3, ilgi=ortak, kanit_duzeyi=C
+Temalar: hayvanlar, dostluk, sanat_yaraticilik | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (3. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: ritim_hr025 (lexeme, first_hint: ritim); ezgi_hr025 (lexeme, application: ezgi); uyum_hr025 (lexeme, application: uyum); kavram_hr025 (concept, application: Ses, ritim ve uyum)
+Ölçülen: {"soru_sayisi":5,"sayfa_sayisi":8,"simge_sayisi":23,"kelime_sayisi":382,"tahmini_sure_dk":6,"yoldas_yer_sayisi":2,"hedef_tur_dagilimi":{"lexeme":3,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":2,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Eşek, köpek[İKON dog], kedi[İKON cat] ve horoz küçük bir orman yolunda yürüyordu. Yol arkadaşı [YOLDAŞ hal=yalin yedek=Hupo] de yanlarındaydı. Bremen'e giden uzun yolun ortasında yağmur[İKON rain] başladı. Hepsi eski bir değirmene sığındı. Çatının altından düşen damlalar, taşlara farklı seslerle vuruyordu: tak, tik, tuk.
+--- Sayfa 2 ---
+Horoz kanatlarını çırptı. "Harika bir konser salonu bulduk!" dedi. Eşek yüksek sesle anırdı. Köpek[İKON dog] havladı, kedi[İKON cat] miyavladı. Fakat hepsi aynı anda bağırınca ortaya anlaşılmaz bir gürültü çıktı. Kedi kulaklarını kapattı. "Hepimiz duyulmak istiyoruz ama kimse kimseyi dinlemiyor." Eşek biraz alındı. "Benim sesim zaten böyle güçlü. Sessiz mi olayım?" "Hayır," dedi köpek. "Gücünü doğru[İKON check] zamanda kullansan yeter."
+--- Sayfa 3 ---
+Önce horoz [KELİME yuva=pa_ritim] tuttu. "Bir, iki, üç, dört." Kedi[İKON cat] ince sesini ikinci vuruşa, köpek[İKON dog] kalın sesini üçüncüye koydu. Eşek dördüncü vuruşta öyle güzel anırdı ki değirmenin içi neşeyle doldu. Sonra yer değiştirdiler. Birinin sesi ötekini bastırdığında durup yeniden başladılar.
+--- Sayfa 4 ---
+Bir süre sonra eşek ritmi kaçırdı. Çünkü çatıdan damlayan suyun sesi hızlanmıştı. "Ben yanlış mı söylüyorum?" diye sordu. Horoz, "Belki de herkes aynı ritmi duymuyor," dedi. Köpek[İKON dog] önce dört eşit adım[İKON footprint] attı, sonra ayak izlerini yerde gösterdi. [YOLDAŞ hal=yalin yedek=Hupo] de vuruşları saymalarına yardım etti. Dört sesin arasına küçük bir sessizlik koyduklarında şarkı daha anlaşılır oldu. Kedi[İKON cat], "Bazen susmak da müziğin parçası," diyerek gülümsedi.
+--- Sayfa 5 ---
+Eşek bir daha anırmadan önce arkadaşlarına baktı. Onlardan işaret[İKON flag] alınca sesini yükseltti. Kendi sesinin kıymetini kaybetmemiş, yalnız diğerlerine yer açmıştı. Değirmenin damlaları da sanki onlara eşlik ediyordu. Yağmurun sesi azaldıkça yeni bir [KELİME yuva=pa_ezgi] kurdular. [İŞARET kod=kus]
+--- Sayfa 6 ---
+Dışarıda yağmur[İKON rain] hafifledi. Yol kenarında bir grup çocuk vardı. Çocuklar değirmenin içinden gelen müziği merak[İKON curiosity] etmişti. Hayvanlar kapıya çıktı ve kısa şarkılarını söylediler. Çocukların biri ellerini çırparak eşlik etti. Bir başkası yağmur damlalarının sesini taklit etti. Böylece şarkıya yeni bir ritim eklendi. Horoz gururla kabardı. "Artık hepimiz aynı sesle mi şarkı söyleyeceğiz?" diye sordu. "Hayır," dedi kedi[İKON cat]. "Güzel olan zaten farklı seslerimiz." [İŞARET kod=kedi]
+--- Sayfa 7 ---
+Kedi[İKON cat], değirmenin duvarına kulak verdi. Sesler artık birbirine karışmıyordu. "Bence yolculuğumuzun bir şarkısı oldu," dedi. Horoz da bunu her molada yeniden söylemeyi önerdi. Yağmur[İKON rain] tamamen dinince yola devam ettiler. Köpek[İKON dog], değirmende öğrendikleri ritmi unutmamak için adımlarını saydı.
+--- Sayfa 8 ---
+Eşek, su[İKON drop] birikintilerinden geçerken adımlarını yavaşlattı. Horoz zaman[İKON clock] zaman hızlanmak istediğinde arkadaşları ona yetişmeleri için biraz durmasını söyledi. Akşama doğru uzaktan Bremen'in çanları duyuldu. Dört arkadaş[İKON friends] birbirine baktı. Çanların sesini kendi şarkılarına eklemeyi düşündüler. Şehre daha varmadan öğrendikleri şey açıktı: [KELİME yuva=pa_uyum], herkesin aynı olması değil, birbirine kulak vermesiydi.
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=2 doğru=A
+  Metin: Hayvanlar aynı anda bağırınca ne oldu?
+  A) Anlaşılmaz bir gürültü çıktı
+  B) Güzel bir şarkı çıktı
+  C) Değirmen yıkıldı
+  Açıklama: Hepsi aynı anda bağırınca ortaya anlaşılmaz bir gürültü çıktı.
+s2 [cikarim] dayanak_sayfa=4 doğru=C
+  Metin: Eşek ritmi neden kaçırdı?
+  A) Şarkıyı bilmediği için
+  B) Çok yorulduğu için
+  C) Çatıdan damlayan suyun sesi hızlandığı için
+  Açıklama: Damlaların sesi hızlanınca eşek ritmi kaçırdı.
+s3 [yorumlama] dayanak_sayfa=6 doğru=B
+  Metin: Kedinin "Güzel olan zaten farklı seslerimiz" sözü neyi anlatır?
+  A) Herkesin aynı sesle söylemesi gerektiğini
+  B) Farklı seslerin birlikte güzel bir uyum oluşturabileceğini
+  C) Kimsenin şarkı söylememesi gerektiğini
+  Açıklama: Hayvanlar farklı seslerini birbirine kulak vererek birleştirince şarkı güzelleşti.
+s4 [sozcuk_baglami] dayanak_sayfa=3 doğru=A
+  Metin: Metinde geçen ritim sözcüğü ne anlama gelir?
+  A) Seslerin ya da vuruşların düzenli tekrar eden akışı
+  B) Bir hayvanın yürüyüşü
+  C) Bir şehrin adı
+  Açıklama: Horoz "bir, iki, üç, dört" diyerek düzenli vuruşlarla ritim tuttu.
+s5 [hatirlama] dayanak_sayfa=8 doğru=C
+  Metin: Hikâyenin sonunda hayvanlar uyum hakkında neyi öğrendi?
+  A) Herkesin aynı sesle söylemesi gerektiğini
+  B) Sesi en güçlü olanın önde olması gerektiğini
+  C) Uyumun, herkesin aynı olması değil birbirine kulak vermesi olduğunu
+  Açıklama: Metnin sonunda uyumun herkesin aynı olması değil, birbirine kulak vermesi olduğu söyleniyor.
+
+## Sözlük
+- pa_ritim | kelime | yazım: ritim | 3–3 | anlam: Seslerin ya da vuruşların düzenli tekrar eden akışı.
+- pa_ezgi | kelime | yazım: ezgi | 3–3 | anlam: Birbirini izleyen seslerle oluşan müzik; melodi.
+- pa_uyum | kelime | yazım: uyum | 3–3 | anlam: Farklı şeylerin birbirine karışmadan güzel bir bütün oluşturması.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

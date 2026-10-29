@@ -31,6 +31,7 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
   bool _answered = false;
   bool _isCorrect = false;
   bool _isCompleting = false;
+  AnswerResult? _result;
 
   void _onOptionSelected(Question question, String option) async {
     if (_answered) return;
@@ -48,6 +49,7 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
       );
       if (mounted) {
         setState(() {
+          _result = res;
           _isCorrect = res.correct;
         });
         if (res.correct) {
@@ -211,6 +213,10 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                   const SizedBox(height: 24),
                   ...question.options.entries.map((opt) {
                     final isSelected = _selectedOption == opt.key;
+                    // Yanlışta doğru şık yeşil işaretlenir.
+                    final dogruSik = _answered &&
+                        !_isCorrect &&
+                        _result?.correctOption == opt.key;
                     Color btnColor = AppColors.surface;
                     Color borderCol = AppColors.line;
                     if (_answered) {
@@ -220,6 +226,10 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                             : AppColors.coralSoft;
                         borderCol =
                             _isCorrect ? AppColors.mint : AppColors.coral;
+                      }
+                      if (dogruSik) {
+                        btnColor = AppColors.mintSoft;
+                        borderCol = AppColors.mint;
                       }
                     }
 
@@ -270,7 +280,17 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                       ),
                     );
                   }),
-                  const Spacer(),
+                  if (_result != null && !_result!.correct)
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: _YanlisGeriBildirim(
+                          result: _result!,
+                          question: question,
+                        ),
+                      ),
+                    )
+                  else
+                    const Spacer(),
                   if (_answered)
                     ChunkyButton(
                       label: isLast ? 'Bitir ve XP Kazan' : 'Sonraki Soru',
@@ -288,6 +308,7 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
                             _currentIndex++;
                             _selectedOption = null;
                             _answered = false;
+                            _result = null;
                           });
                         }
                       },
@@ -304,6 +325,46 @@ class _DailyChallengeScreenState extends ConsumerState<DailyChallengeScreen> {
             ),
           ),
         ),
+      ),
+    );
+  }
+}
+
+/// Yanlış cevapta doğru şıkkı ve çözüm adımlarını gösterir.
+class _YanlisGeriBildirim extends StatelessWidget {
+  const _YanlisGeriBildirim({required this.result, required this.question});
+
+  final AnswerResult result;
+  final Question question;
+
+  @override
+  Widget build(BuildContext context) {
+    final dogruMetin = question.options[result.correctOption];
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: AppColors.mintSoft,
+        borderRadius: BorderRadius.circular(16),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Text(
+            dogruMetin == null
+                ? 'Doğru cevap: ${result.correctOption}'
+                : 'Doğru cevap: ${result.correctOption}) $dogruMetin',
+            style: appText(
+                size: 15, weight: FontWeight.w800, color: AppColors.mintDark),
+          ),
+          for (var i = 0; i < result.steps.length; i++) ...[
+            const SizedBox(height: 10),
+            Text(
+              '${i + 1}. ${result.steps[i]}',
+              style: appText(size: 14, height: 1.35),
+            ),
+          ],
+        ],
       ),
     );
   }

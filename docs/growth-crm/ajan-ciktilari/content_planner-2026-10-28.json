@@ -1,0 +1,23 @@
+{
+  "ajan": "content_planner",
+  "saglayici": "gemini",
+  "durum": "taslak",
+  "uydurma_sayilar": [],
+  "cikti": {
+    "baslik": "Veli Odaklı Bilgilendirici İçerik Önerileri",
+    "maddeler": [
+      {
+        "metin": "Velilerin platforma katılım sağladığı başlangıç evresinde adaptasyon sürecini hızlandırmak ve ilgilerini canlı tutmak amacıyla karşılama ve rehberlik içerikleri hazırlanabilir.",
+        "kaynak": "kohort.ozet"
+      },
+      {
+        "metin": "E-posta duyurularını açık tutmanın sağladığı avantajları ve güncel bilgilendirmelere erişim kolaylığını anlatan yönlendirici paylaşımlar yapılabilir.",
+        "kaynak": "veri_kalitesi.izin"
+      },
+      {
+        "metin": "Platformun uzun vadeli katkılarını vurgulayan ve düzenli katılım alışkanlığı kazandırmayı hedefleyen pratik veli tavsiyeleri sunulabilir.",
+        "kaynak": "kohort.ozet"
+      }
+    ]
+  }
+}

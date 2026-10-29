@@ -1,0 +1,55 @@
+{
+ "kaynak_url": "https://tymm.meb.gov.tr/assets/pdf/hayat-bilgisi-dersi_20260902_111246_099.pdf",
+ "program_surumu": "Maarif Modeli Hayat Bilgisi DÖP (1–3. sınıf, tymm 2026-09-02), 2. sınıf bölümü",
+ "not": "2026-10-22 kapsam kararı: tutum/değer kazanımları yalnız bilgi, kavram ve çözümleme düzeyinde sınanır (REHBER §17.1); dinî yorum içeren kazanım üretime alınmaz (kapsam_disi). Metinler PDF ayrıştırmasından; önceki kazanim_1-3_hayat_bilgisi.json dosyasındaki 2. sınıf metinleri satır kırılmaları nedeniyle karışık olduğu için bu dosya kullanılır. Üretimden önce DÖP ile teyit edilmeli.",
+ "kazanimlar": [
+  {"kod": "HB.2.1.1", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Planlı olmanın kişisel yaşama etkilerini fark edebilme", "surec_bilesenleri": []},
+  {"kod": "HB.2.1.2", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Öğretmen ve arkadaşlarıyla etkili iletişim kurabilme", "surec_bilesenleri": []},
+  {"kod": "HB.2.1.3", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Arkadaşlık ilişkilerini düzenleyebilme", "surec_bilesenleri": []},
+  {"kod": "HB.2.2.1", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Sağlıklı büyüme ve gelişme ile alışkanlıkları arasındaki ilişkiyi çözümleyebilme", "surec_bilesenleri": [
+    {"harf": "a", "metin": "Sağlıklı büyüme ve gelişmeye yönelik alışkanlıkları belirler."},
+    {"harf": "b", "metin": "Sağlıklı büyüme ve gelişme ile alışkanlıkları arasındaki ilişkiyi belirler."}]},
+  {"kod": "HB.2.2.2", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Çevrim içi ortamlarda kişisel güvenliğini sağlayabilme", "surec_bilesenleri": []},
+  {"kod": "HB.2.2.4", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Acil bir durumda yetkililerle etkili iletişim kurabilme", "surec_bilesenleri": []},
+  {"kod": "HB.2.3.1", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Ailenin önemini yorumlayabilme", "surec_bilesenleri": [
+    {"harf": "a", "metin": "Ailenin önemine ilişkin verilen örnekleri inceler."},
+    {"harf": "b", "metin": "Ailenin önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür."},
+    {"harf": "c", "metin": "Ailenin önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."}]},
+  {"kod": "HB.2.3.2", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Toplumsal yaşamda nezaket ve görgü kurallarına uygun davranabilme", "surec_bilesenleri": []},
+  {"kod": "HB.2.3.3", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Yakın çevresinde üzerine düşen görev ve sorumlulukları günlük yaşamına yansıtabilme", "surec_bilesenleri": [
+    {"harf": "a", "metin": "Yakın çevresinde üzerine düşen görev ve sorumluluklarını gözden geçirir."},
+    {"harf": "b", "metin": "Yakın çevresinde üzerine düşen görev ve sorumluluklarına ilişkin çıkarımda bulunur."},
+    {"harf": "c", "metin": "Yakın çevresinde üzerine düşen görev ve sorumluluklarına ilişkin değerlendirme yapar."}]},
+  {"kod": "HB.2.4.1", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Yakın çevresinde bulunan tarihî mekân ve doğal güzellikleri belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "HB.2.4.2", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Yaşadığı yerin yönetim birimleri ile ilgili kaynaklardan bilgi toplayabilme", "surec_bilesenleri": [
+    {"harf": "a", "metin": "Yaşadığı yerin yönetim birimleri ile ilgili bilgi toplayacağı kaynakları belirler."},
+    {"harf": "b", "metin": "Yaşadığı yerin yönetim birimleri ile ilgili belirlediği kaynaklardan bilgileri bulur."},
+    {"harf": "ç", "metin": "Yaşadığı yerin yönetim birimleri ile ilgili kaynaklardan ulaştığı bilgileri kaydeder."}]},
+  {"kod": "HB.2.4.3", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Mustafa Kemal Atatürk'ün öğrencilik hayatını ifade edebilme", "surec_bilesenleri": []},
+  {"kod": "HB.2.4.4", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Millî gün ve bayramların önemini yorumlayabilme", "surec_bilesenleri": [
+    {"harf": "a", "metin": "Millî gün ve bayramların önemine ilişkin verilen örnekleri inceler."},
+    {"harf": "b", "metin": "Millî gün ve bayramların önemine ilişkin verilen örnekleri bağlamdan kopmadan özgün örneklere dönüştürür."},
+    {"harf": "c", "metin": "Millî gün ve bayramların önemine ilişkin oluşturduğu özgün örnekleri kendi cümleleri ile ifade eder."}]},
+  {"kod": "HB.2.5.1", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Hava olayları ve mevsimler arasındaki ilişkiyi çözümleyebilme", "surec_bilesenleri": [
+    {"harf": "a", "metin": "Hava olayları ve mevsimlerin özelliklerini belirler."},
+    {"harf": "b", "metin": "Hava olayları ve mevsimler arasındaki ilişkiyi belirler."}]},
+  {"kod": "HB.2.5.2", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Doğadan yararlanarak yönünü belirleyebilme", "surec_bilesenleri": []},
+  {"kod": "HB.2.5.3", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Afetlere karşı alınması gereken önlemlere ilişkin bilgi toplayabilme", "surec_bilesenleri": [
+    {"harf": "a", "metin": "Afetlere karşı alınması gereken önlemlere ilişkin bilgi toplamak için kullanacağı araçları belirler."},
+    {"harf": "b", "metin": "Belirlediği araçları kullanarak afetlere karşı alınması gereken önlemlere ilişkin bilgileri bulur."},
+    {"harf": "c", "metin": "Afetlere karşı alınması gereken önlemlere ilişkin bulduğu bilgileri doğrular."},
+    {"harf": "ç", "metin": "Afetlere karşı alınması gereken önlemlere ilişkin bulduğu bilgileri kaydeder."}]},
+  {"kod": "HB.2.5.4", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Doğal kaynakları tasarruflu kullanma davranışlarını günlük yaşamına yansıtabilme", "surec_bilesenleri": [
+    {"harf": "a", "metin": "Doğal kaynakları kullanırken davranışlarını gözden geçirir."},
+    {"harf": "b", "metin": "Doğal kaynakları tasarruflu kullanmaya yönelik çıkarımlarda bulunur."},
+    {"harf": "c", "metin": "Doğal kaynakları tasarruflu kullanmaya yönelik ulaştığı çıkarımları değerlendirir."}]},
+  {"kod": "HB.2.6.3", "sinif": 2, "ders": "Hayat Bilgisi", "metin": "Sanatın günlük yaşamdaki yerini belirleyebilme", "surec_bilesenleri": []}
+ ],
+ "kapsam_disi": [
+  {"kod": "HB.2.1.4", "neden": "Sınıf içi karar alma süreçlerinde grup etkileşimi: etkinlik/gözlem gerektirir, metinle sınanamaz."},
+  {"kod": "HB.2.4.5", "neden": "Dinî gün ve bayramların önemini yorumlama: dinî yorum içerir; Din Kültürü ihtiyat kuralı gereği bu hücrede üretilmez."},
+  {"kod": "HB.2.6.1", "neden": "Bilim insanlarının katkılarına ilişkin kaynak tarama süreci: süreç kazanımı, tek soruyla ölçülemez."},
+  {"kod": "HB.2.6.2", "neden": "Kanıta dayalı öngörü: 2. sınıf düzeyinde üst düzey çıkarım; bu hücrede ölçülmez."},
+  {"kod": "HB.2.2.3", "neden": "Levha tanıma görsel gerektirir. Görselsiz denemeler (HB2-006 RED, HB2-027 DÜZELT) denetimi geçemedi; görselli kurgu gelene kadar bu hücrede kapsam dışı (2026-10-22)."}
+ ]
+}

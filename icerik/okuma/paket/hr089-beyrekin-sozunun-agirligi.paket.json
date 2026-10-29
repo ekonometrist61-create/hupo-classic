@@ -3,20 +3,18 @@
   "hikaye": {
     "slug": "hr089-beyrekin-sozunun-agirligi",
     "baslik": "Beyrek'in Sözünün Ağırlığı",
-    "tur": "fantastik",
+    "tur": "tarih_kultur",
     "konu": "soz_vefa_yanlis_anlama",
     "sinif_alt": 7,
     "sinif_ust": 7,
     "okuma_bandi": 3,
-    "dunya_tipi": "masalsi",
+    "dunya_tipi": "gercekci",
     "izinli_turler": [
-      "ben",
-      "arkadas",
-      "hayali"
+      "arkadas"
     ],
     "deger_anahtarlari": [
-      "D15",
-      "D6"
+      "D6",
+      "D15"
     ],
     "yetiskin_uygun": false,
     "etiketler": {
@@ -32,8 +30,8 @@
         "turkce"
       ],
       "maarif": {
-        "ana_deger": "D15",
-        "yardimci_deger": "D6"
+        "ana_deger": "D6",
+        "yardimci_deger": "D15"
       },
       "ogrenme_hedefleri": [
         {
@@ -72,7 +70,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3574,
+        "kelime_sayisi": 3582,
         "tahmini_sure_dk": 29,
         "sayfa_sayisi": 26,
         "soru_sayisi": 4,
@@ -109,47 +107,7 @@
         },
         {
           "t": "metin",
-          "v": "\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " o gün uzak bir oba ile barış görüşmesine hazırlanmaktaydı. Genç yaşına rağmen sözünü tutmasıyla tanınırdı. Fakat son haftalarda iki oba arasında bir kırgınlık büyümüştü. Komşu obanın yiğitlerinden Yalın, kendisine “Sana güvenmeyiz” denildiğini iddia ediyordu. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " ise böyle bir söz söylemediğini savunuyordu.\n\n“Ben onların kervanına yardım edeceğimi söyledim,” dedi "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ". “Bunun dışında kimseye hakaret etmedim.”\n\nObadaki bazıları hemen silahlanmayı önerdi; fakat "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bu fikri reddetti. “Bir söz yüzünden büyüyen kavga, yine sözle durdurulabilir,” dedi. Yaşlı ozan ona sakin bir bakış attı. “Öyleyse önce hangi sözün nerede söylendiğini öğren.”\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ", yanına çocukluğundan beri güvendiği dostu "
+          "v": "\n\nBeyrek o gün uzak bir oba ile barış görüşmesine hazırlanmaktaydı. Genç yaşına rağmen sözünü tutmasıyla tanınırdı. Fakat son haftalarda iki oba arasında bir kırgınlık büyümüştü. Komşu obanın yiğitlerinden Yalın, kendisine “Sana güvenmeyiz” denildiğini iddia ediyordu. Beyrek ise böyle bir söz söylemediğini savunuyordu.\n\n“Ben onların kervanına yardım edeceğimi söyledim,” dedi Beyrek. “Bunun dışında kimseye hakaret etmedim.”\n\nObadaki bazıları hemen silahlanmayı önerdi; fakat Beyrek bu fikri reddetti. “Bir söz yüzünden büyüyen kavga, yine sözle durdurulabilir,” dedi. Yaşlı ozan ona sakin bir bakış attı. “Öyleyse önce hangi sözün nerede söylendiğini öğren.”\n\nBeyrek, yanına çocukluğundan beri güvendiği dostu "
         },
         {
           "t": "yoldas",
@@ -175,12 +133,8 @@
       "omurga": true,
       "parcalar": [
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
           "t": "metin",
-          "v": " çocukluğunda ozanların birbirinden uzun hikâyeler anlattığı geceleri hatırlardı. Aynı olay bazen üç kişi tarafından bambaşka ayrıntılarla anlatılırdı. Bir anlatıcı düşen yağmuru, öteki geçen atı, bir başkası duyduğu korkuyu hatırlardı. O zaman bunların hepsine gülerdi. Şimdi ise birkaç farklı cümlenin iki oba arasında kırgınlığa dönüştüğünü görünce sözlerin ne kadar dikkatli taşınması gerektiğini düşündü.\n\n"
+          "v": "Beyrek çocukluğunda ozanların birbirinden uzun hikâyeler anlattığı geceleri hatırlardı. Aynı olay bazen üç kişi tarafından bambaşka ayrıntılarla anlatılırdı. Bir anlatıcı düşen yağmuru, öteki geçen atı, bir başkası duyduğu korkuyu hatırlardı. O zaman bunların hepsine gülerdi. Şimdi ise birkaç farklı cümlenin iki oba arasında kırgınlığa dönüştüğünü görünce sözlerin ne kadar dikkatli taşınması gerektiğini düşündü.\n\n"
         },
         {
           "t": "yoldas",
@@ -189,15 +143,7 @@
         },
         {
           "t": "metin",
-          "v": ", olayın başladığı günün ayrıntılarını küçük bir tahtaya yazdı. Hangi kervan nereden gelmişti? Kim kimin yanında durmuştu? Hangi söz doğrudan duyulmuş, hangisi başkasından aktarılmıştı? "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bunu görünce “Sözler haritaya dönüşmüş,” dedi. "
+          "v": ", olayın başladığı günün ayrıntılarını küçük bir tahtaya yazdı. Hangi kervan nereden gelmişti? Kim kimin yanında durmuştu? Hangi söz doğrudan duyulmuş, hangisi başkasından aktarılmıştı? Beyrek bunu görünce “Sözler haritaya dönüşmüş,” dedi. "
         },
         {
           "t": "yoldas",
@@ -206,23 +152,7 @@
         },
         {
           "t": "metin",
-          "v": " gülümsedi. “Haritada yolun nereden geçtiğini görürsün. Burada da cümlenin kimden kime gittiğini.”\n\nO gün bir kervanbaşı, "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " yardım sözünü başka bir yolculuğa ilişkin sandığını anlattı. Geçitten iki farklı grup geçmek istiyordu. Biri eski dostlar, öteki ilk kez o yolu kullanacak tüccarlardı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " dar geçitte herkesin sırayla geçmesi gerektiğini söylemişti. “Önce bizimkiler mi?” diye soran biri olunca “Herkes kendi sırasını bulsun” demişti. Kervanbaşı cümleyi eksik hatırlıyor, kime söylendiğini bilmiyordu."
+          "v": " gülümsedi. “Haritada yolun nereden geçtiğini görürsün. Burada da cümlenin kimden kime gittiğini.”\n\nO gün bir kervanbaşı, Beyrek’in yardım sözünü başka bir yolculuğa ilişkin sandığını anlattı. Geçitten iki farklı grup geçmek istiyordu. Biri eski dostlar, öteki ilk kez o yolu kullanacak tüccarlardı. Beyrek dar geçitte herkesin sırayla geçmesi gerektiğini söylemişti. “Önce bizimkiler mi?” diye soran biri olunca “Herkes kendi sırasını bulsun” demişti. Kervanbaşı cümleyi eksik hatırlıyor, kime söylendiğini bilmiyordu."
         }
       ]
     },
@@ -236,15 +166,7 @@
         },
         {
           "t": "metin",
-          "v": " bu yeni tanıklığı hemen kesin sonuç saymadı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " de ona kızmadı. Böylece göç yolundaki tanıkların sözlerini adil biçimde dinleme kararı aldılar. Bir kişi utandığında, korktuğunda ya da kendini savunduğunda aynı olayı farklı anlatabilirlerdi. Bu, herkesin yalan söylediği anlamına gelmiyordu.\n\n"
+          "v": " bu yeni tanıklığı hemen kesin sonuç saymadı. Beyrek de ona kızmadı. Böylece göç yolundaki tanıkların sözlerini adil biçimde dinleme kararı aldılar. Bir kişi utandığında, korktuğunda ya da kendini savunduğunda aynı olayı farklı anlatabilirlerdi. Bu, herkesin yalan söylediği anlamına gelmiyordu.\n\n"
         },
         {
           "t": "yoldas",
@@ -253,23 +175,7 @@
         },
         {
           "t": "metin",
-          "v": ", "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " çocukken verdiği sözleri nasıl hatırladığını sordu. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " önce bu soruyu gereksiz buldu. O an mesele yaşlı bir kervancının kırgınlığıydı; çocukluğuyla ne ilgisi vardı? "
+          "v": ", Beyrek’in çocukken verdiği sözleri nasıl hatırladığını sordu. Beyrek önce bu soruyu gereksiz buldu. O an mesele yaşlı bir kervancının kırgınlığıydı; çocukluğuyla ne ilgisi vardı? "
         },
         {
           "t": "yoldas",
@@ -278,15 +184,7 @@
         },
         {
           "t": "metin",
-          "v": " onun sabırsızlığını görünce “Bir cümleyi hatırlarken duygularımızı da taşırız,” dedi. “Sen sözünü tuttuğunu düşünüyorsun; Yalın ise yarım bırakıldığını hissediyor. Belki ikiniz de o günü kendi beklentinize göre hatırlıyorsunuz.”\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " akşam çadırında düşünürken büyükannesinin söylediği eski bir cümleyi hatırladı: “Sözünü bir başkasına verirken onun ne anladığını da sor.” Küçükken bu sözü gereksiz bulmuştu. İnsan söylediğini biliyorsa karşısındaki de anlamalıydı. Şimdi aynı konuşmayı iki kişinin bambaşka biçimde hatırladığını görünce o kadar emin değildi."
+          "v": " onun sabırsızlığını görünce “Bir cümleyi hatırlarken duygularımızı da taşırız,” dedi. “Sen sözünü tuttuğunu düşünüyorsun; Yalın ise yarım bırakıldığını hissediyor. Belki ikiniz de o günü kendi beklentinize göre hatırlıyorsunuz.”\n\nBeyrek akşam çadırında düşünürken büyükannesinin söylediği eski bir cümleyi hatırladı: “Sözünü bir başkasına verirken onun ne anladığını da sor.” Küçükken bu sözü gereksiz bulmuştu. İnsan söylediğini biliyorsa karşısındaki de anlamalıydı. Şimdi aynı konuşmayı iki kişinin bambaşka biçimde hatırladığını görünce o kadar emin değildi."
         }
       ]
     },
@@ -304,15 +202,7 @@
         },
         {
           "t": "metin",
-          "v": " ona yalnız ne duyduğunu değil, neler gördüğünü sordu. Haberci, tartışma sırasında yük taşıyan hayvanların korktuğunu, insanların aceleyle yolu açmaya çalıştığını anlattı. Gerginlik sesleri yükseltmişti. “Ben hızlıca bir haber götürmek istedim,” dedi. “Kimse bana cümleyi yeniden söylemedi.” "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ", acele taşıyan bir haberin eksik kalabileceğini artık anlıyordu.\n\nHaberci, “Herkes şimdi beni mi suçlayacak?” diye sordu. "
+          "v": " ona yalnız ne duyduğunu değil, neler gördüğünü sordu. Haberci, tartışma sırasında yük taşıyan hayvanların korktuğunu, insanların aceleyle yolu açmaya çalıştığını anlattı. Gerginlik sesleri yükseltmişti. “Ben hızlıca bir haber götürmek istedim,” dedi. “Kimse bana cümleyi yeniden söylemedi.” Beyrek, acele taşıyan bir haberin eksik kalabileceğini artık anlıyordu.\n\nHaberci, “Herkes şimdi beni mi suçlayacak?” diye sordu. "
         },
         {
           "t": "yoldas",
@@ -321,15 +211,7 @@
         },
         {
           "t": "metin",
-          "v": " sakince başını salladı. “Yanlış duymuş olabilirsin; bunu anlamamız gerekiyor. Ama hangi bölümü duyduğunu dürüstçe anlattığın için sana teşekkür ediyoruz.” "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " de onu destekledi. Bir kişinin hatasını anlamak için utandırılması şart değildi. Önemli olan sonraki sefer nasıl daha dikkatli davranılacağını öğrenmekti."
+          "v": " sakince başını salladı. “Yanlış duymuş olabilirsin; bunu anlamamız gerekiyor. Ama hangi bölümü duyduğunu dürüstçe anlattığın için sana teşekkür ediyoruz.” Beyrek de onu destekledi. Bir kişinin hatasını anlamak için utandırılması şart değildi. Önemli olan sonraki sefer nasıl daha dikkatli davranılacağını öğrenmekti."
         }
       ]
     },
@@ -347,23 +229,7 @@
         },
         {
           "t": "metin",
-          "v": ", “Bunu kimin söylediğini hatırlıyor musun?” diye sordu.\n\nÇoban başını salladı. “Hayır. Üstelik bağırışlar arasında bazı cümleleri kaçırmış olabilirim.”\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " çobanın dürüstlüğünü takdir etti. Bilmediğini söylemek kolay değildi. İkisi kervanın yanında yol alan genç haberciye de ulaştı. Haberci, birinin "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ayrilma"
-        },
-        {
-          "t": "metin",
-          "v": " söz ederken “Kendi yolunu bulsun” dediğini duyduğunu anlattı. Bu söz, dinleyene göre yardım teklifinin geri çekilmesi ya da yalnız bir yol tarifi anlamına gelebilirdi.\n\n"
+          "v": ", “Bunu kimin söylediğini hatırlıyor musun?” diye sordu.\n\nÇoban başını salladı. “Hayır. Üstelik bağırışlar arasında bazı cümleleri kaçırmış olabilirim.”\n\nBeyrek çobanın dürüstlüğünü takdir etti. Bilmediğini söylemek kolay değildi. İkisi kervanın yanında yol alan genç haberciye de ulaştı. Haberci, birinin Beyrek’ten söz ederken “Kendi yolunu bulsun” dediğini duyduğunu anlattı. Bu söz, dinleyene göre yardım teklifinin geri çekilmesi ya da yalnız bir yol tarifi anlamına gelebilirdi.\n\n"
         },
         {
           "t": "yoldas",
@@ -372,15 +238,7 @@
         },
         {
           "t": "metin",
-          "v": ", “Bir cümleyi öncesinden ve sonrasından koparırsak anlamı değişebilir,” dedi. “Kim hangi konuda konuşuyordu?”\n\nHaberci düşündü. Sonra o gün iki farklı kervanın aynı yoldan geçmek istediğini, aralarında geçiş sırası konusunda tartışma çıktığını hatırladı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " kervanın güvenli geçişine yardım edeceğine ilişkin sözü, belki de başka bir anlaşmazlıkla karışmıştı."
+          "v": ", “Bir cümleyi öncesinden ve sonrasından koparırsak anlamı değişebilir,” dedi. “Kim hangi konuda konuşuyordu?”\n\nHaberci düşündü. Sonra o gün iki farklı kervanın aynı yoldan geçmek istediğini, aralarında geçiş sırası konusunda tartışma çıktığını hatırladı. Beyrek’in kervanın güvenli geçişine yardım edeceğine ilişkin sözü, belki de başka bir anlaşmazlıkla karışmıştı."
         }
       ]
     },
@@ -388,20 +246,8 @@
       "omurga": true,
       "parcalar": [
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
           "t": "metin",
-          "v": " haberciyi suçlamadı. “Hatırladığını söylediğin için sağ ol,” dedi. “Ama doğrulamadığın bir cümleyi kimseye kesin diye anlatma.”\n\nÇoban, konuşmalarının ardından onları su başındaki eski taşa götürdü. Taşın üzerinde iki işaret vardı: Biri kervanların su aldığı yeri, diğeri tehlikeli taşlık geçide giden yolu gösteriyordu. İşaretler yıprandığı için birbirine benzemeye başlamıştı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ", farklı obalardan gelen yolcuların aynı simgeyi başka yönler için kullanmasının karışıklığa yol açabileceğini düşündü. Ozanın sözleri aklına geldi: Aynı işaret, farklı kulaklarda farklı anlam taşıyabilirdi.\n\n"
+          "v": "Beyrek haberciyi suçlamadı. “Hatırladığını söylediğin için sağ ol,” dedi. “Ama doğrulamadığın bir cümleyi kimseye kesin diye anlatma.”\n\nÇoban, konuşmalarının ardından onları su başındaki eski taşa götürdü. Taşın üzerinde iki işaret vardı: Biri kervanların su aldığı yeri, diğeri tehlikeli taşlık geçide giden yolu gösteriyordu. İşaretler yıprandığı için birbirine benzemeye başlamıştı. Beyrek, farklı obalardan gelen yolcuların aynı simgeyi başka yönler için kullanmasının karışıklığa yol açabileceğini düşündü. Ozanın sözleri aklına geldi: Aynı işaret, farklı kulaklarda farklı anlam taşıyabilirdi.\n\n"
         },
         {
           "t": "yoldas",
@@ -427,12 +273,8 @@
       "omurga": true,
       "parcalar": [
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
           "t": "metin",
-          "v": " bu olaydan sonra obadaki toplantıda yalnız yiğitlerin konuşmasını doğru bulmadığını söyledi. “Bir sözü kim duyduysa, onun anlatımını da dinlemeliyiz,” dedi. Bazı yaşlılar şaşırdı, bazıları başlarını salladı. "
+          "v": "Beyrek bu olaydan sonra obadaki toplantıda yalnız yiğitlerin konuşmasını doğru bulmadığını söyledi. “Bir sözü kim duyduysa, onun anlatımını da dinlemeliyiz,” dedi. Bazı yaşlılar şaşırdı, bazıları başlarını salladı. "
         },
         {
           "t": "yoldas",
@@ -441,15 +283,7 @@
         },
         {
           "t": "metin",
-          "v": ", sözlü kültürde haberin aktarıldığı her durakta değişebildiğini, bu yüzden tek bir anlatının bütün gerçek sayılmaması gerektiğini açıkladı.\n\nAkşam yaklaşırken su başının üzerinde kızıl bir ışık oluştu. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " uzun süre baktı. Görünüşte sakin olan yerde bütün gün ne kadar çok yanlış anlaşılma yaşandığını düşündü. Bir yolun çatallanması gibi, cümle de bazen farklı yönlere ayrılıyordu. Birini doğru bulmadan önce her yönün nereye çıktığını görmek gerekiyordu.\n\n"
+          "v": ", sözlü kültürde haberin aktarıldığı her durakta değişebildiğini, bu yüzden tek bir anlatının bütün gerçek sayılmaması gerektiğini açıkladı.\n\nAkşam yaklaşırken su başının üzerinde kızıl bir ışık oluştu. Beyrek uzun süre baktı. Görünüşte sakin olan yerde bütün gün ne kadar çok yanlış anlaşılma yaşandığını düşündü. Bir yolun çatallanması gibi, cümle de bazen farklı yönlere ayrılıyordu. Birini doğru bulmadan önce her yönün nereye çıktığını görmek gerekiyordu.\n\n"
         },
         {
           "t": "yoldas",
@@ -529,23 +363,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Obaya döndüklerinde yeni bir haber geldi. Yalın, "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " kendisine gönderdiği söz yüzüğünü geri çevirmişti. Yüzük küçük bir gümüş halkaydı; iki oba arasında verilen karşılıklı yardım sözünün hatırası olarak hazırlanmıştı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " yüzüğü eline alınca üzülmekten çok şaşırdı. Çünkü hiç göndermemişti.\n\n"
+          "v": "Obaya döndüklerinde yeni bir haber geldi. Yalın, Beyrek’in kendisine gönderdiği söz yüzüğünü geri çevirmişti. Yüzük küçük bir gümüş halkaydı; iki oba arasında verilen karşılıklı yardım sözünün hatırası olarak hazırlanmıştı. Beyrek yüzüğü eline alınca üzülmekten çok şaşırdı. Çünkü hiç göndermemişti.\n\n"
         },
         {
           "t": "yoldas",
@@ -554,23 +372,7 @@
         },
         {
           "t": "metin",
-          "v": " yüzüğü dikkatle inceledi. Yüzüğün içindeki işaret, obadaki ustanın kullandığı eski bir motifti; fakat benzer halkalar başka kişilerde de bulunuyordu. “Bu yüzüğün senin verdiğin yüzük olduğunu nereden biliyorlar?” diye sordu.\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " cevap veremedi. Bir simgenin herkese aynı şeyi hatırlatması, onun hep aynı yerden geldiği anlamına gelmiyordu. Ozan, yüzüğü görünce eski bir geleneği anlattı: “Bir sözün nişanı taşta, halkada ya da kumaşta olabilir. Ama nişanın kendisi sözün tamamını taşıyamaz. Onu verenin amacı ve alanın anladığı da önemlidir.”\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ", Yalın'la doğrudan görüşmeye karar verdi. Görüşme iki tarafın güvendiği yaşlıların huzurunda yapılacaktı. Kimse önceden suçlu ilan edilmeyecek, yalnız bilinenler anlatılacaktı. "
+          "v": " yüzüğü dikkatle inceledi. Yüzüğün içindeki işaret, obadaki ustanın kullandığı eski bir motifti; fakat benzer halkalar başka kişilerde de bulunuyordu. “Bu yüzüğün senin verdiğin yüzük olduğunu nereden biliyorlar?” diye sordu.\n\nBeyrek cevap veremedi. Bir simgenin herkese aynı şeyi hatırlatması, onun hep aynı yerden geldiği anlamına gelmiyordu. Ozan, yüzüğü görünce eski bir geleneği anlattı: “Bir sözün nişanı taşta, halkada ya da kumaşta olabilir. Ama nişanın kendisi sözün tamamını taşıyamaz. Onu verenin amacı ve alanın anladığı da önemlidir.”\n\nBeyrek, Yalın'la doğrudan görüşmeye karar verdi. Görüşme iki tarafın güvendiği yaşlıların huzurunda yapılacaktı. Kimse önceden suçlu ilan edilmeyecek, yalnız bilinenler anlatılacaktı. "
         },
         {
           "t": "yoldas",
@@ -579,15 +381,7 @@
         },
         {
           "t": "metin",
-          "v": " görüşmeden önce, duydukları farklı cümleleri bir kâğıda sıraladı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bunun iyi bir hazırlık olduğunu düşünüyordu; çünkü insanlar hatırladıkları sözleri kolayca değişmez sanabiliyordu."
+          "v": " görüşmeden önce, duydukları farklı cümleleri bir kâğıda sıraladı. Beyrek bunun iyi bir hazırlık olduğunu düşünüyordu; çünkü insanlar hatırladıkları sözleri kolayca değişmez sanabiliyordu."
         }
       ]
     },
@@ -596,15 +390,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Yüzüğün nasıl el değiştirdiği ayrı bir bilmeceydi. Kervanların yanında çalışan küçük bir usta, benzer halkaları birkaç ay önce pazarda sattığını söyledi. Üzerlerindeki motifler aynıydı; fakat içine işlenen küçük noktalardan bazıları farklıydı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " yüzüğü hemen bir kişiye bağlamak istemedi. Usta her halkayı kime sattığını hatırlamıyordu. "
+          "v": "Yüzüğün nasıl el değiştirdiği ayrı bir bilmeceydi. Kervanların yanında çalışan küçük bir usta, benzer halkaları birkaç ay önce pazarda sattığını söyledi. Üzerlerindeki motifler aynıydı; fakat içine işlenen küçük noktalardan bazıları farklıydı. Beyrek yüzüğü hemen bir kişiye bağlamak istemedi. Usta her halkayı kime sattığını hatırlamıyordu. "
         },
         {
           "t": "yoldas",
@@ -613,47 +399,7 @@
         },
         {
           "t": "metin",
-          "v": ", “Bu yüzük bir işaret olabilir,” dedi, “ama tek başına kesin bir teslim belgesi değil.”\n\nObaya döndüklerinde "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " halası ona eski bir sözünü hatırlattı. “Bir gün bana yanlış anlaşılmaktan korktuğunu söylemiştin,” dedi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " şaşırdı; böyle bir cümleyi hatırlamıyordu. Halası, "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " henüz küçükken verdiği bir sözü yerine getiremeyince çok üzüldüğünü anlattı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " o gün bir arkadaşına atını ödünç vereceğini söylemiş, sonra atın hastalandığını öğrenince sözünü ertelemek zorunda kalmıştı. Arkadaşı, “Sözünü tutmadın,” diye kızmıştı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " şimdi bunun ne kadar benzer olduğunu fark etti: İnsanların neden bir sözü yerine getiremediğini anlamadan onu doğrudan ihanete çevirmek kolaydı."
+          "v": ", “Bu yüzük bir işaret olabilir,” dedi, “ama tek başına kesin bir teslim belgesi değil.”\n\nObaya döndüklerinde Beyrek’in halası ona eski bir sözünü hatırlattı. “Bir gün bana yanlış anlaşılmaktan korktuğunu söylemiştin,” dedi. Beyrek şaşırdı; böyle bir cümleyi hatırlamıyordu. Halası, Beyrek’in henüz küçükken verdiği bir sözü yerine getiremeyince çok üzüldüğünü anlattı. Beyrek o gün bir arkadaşına atını ödünç vereceğini söylemiş, sonra atın hastalandığını öğrenince sözünü ertelemek zorunda kalmıştı. Arkadaşı, “Sözünü tutmadın,” diye kızmıştı. Beyrek şimdi bunun ne kadar benzer olduğunu fark etti: İnsanların neden bir sözü yerine getiremediğini anlamadan onu doğrudan ihanete çevirmek kolaydı."
         }
       ]
     },
@@ -667,55 +413,7 @@
         },
         {
           "t": "metin",
-          "v": " bu anlatıyı dinleyince "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yonelme"
-        },
-        {
-          "t": "metin",
-          "v": " “Yalın'ı yalnız kızgın biri olarak görme,” dedi. “Belki kendi korkusu ve beklentileri var.” "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " ilk kez arkadaşının haklı olma ihtimalini değil, üzülmüş olma ihtimalini düşündü. İkisi aynı şey değildi. Korku cümleyi değiştirmezdi ama bir insanın neden öyle duyduğunu anlamaya yardım edebilirdi.\n\nO gece "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " kervana yardım sözü verdiği anı yeniden hatırlamaya çalıştı. Kendisinden emin olduğu bir ayrıntı vardı: O gün, dar geçide yaklaşanların yalnız olmadığını söylemişti. Fakat herkesin bunu aynı biçimde duyduğunu sanması aceleci olabilirdi.\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " söz yüzüğünü ustaya gösterdiğinde beklemediği bir bilgi öğrendi. Yüzük, obanın yardım anlaşmaları için kullandığı sembole benziyordu ama "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " kendi yüzüğü değildi. Usta birkaç yıl önce aynı desenin farklı büyüklüklerini yapmıştı. Bazıları düğünlerde, bazıları yolculuk hatırası olarak kullanılıyordu. Yüzüğün kimden kime geçtiği bilinmiyordu. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ", yüzüğü Yalın'a göndermediğini söylese de bunu tek başına kanıtlayamıyordu."
+          "v": " bu anlatıyı dinleyince Beyrek’e “Yalın'ı yalnız kızgın biri olarak görme,” dedi. “Belki kendi korkusu ve beklentileri var.” Beyrek ilk kez arkadaşının haklı olma ihtimalini değil, üzülmüş olma ihtimalini düşündü. İkisi aynı şey değildi. Korku cümleyi değiştirmezdi ama bir insanın neden öyle duyduğunu anlamaya yardım edebilirdi.\n\nO gece Beyrek kervana yardım sözü verdiği anı yeniden hatırlamaya çalıştı. Kendisinden emin olduğu bir ayrıntı vardı: O gün, dar geçide yaklaşanların yalnız olmadığını söylemişti. Fakat herkesin bunu aynı biçimde duyduğunu sanması aceleci olabilirdi.\n\nBeyrek söz yüzüğünü ustaya gösterdiğinde beklemediği bir bilgi öğrendi. Yüzük, obanın yardım anlaşmaları için kullandığı sembole benziyordu ama Beyrek’in kendi yüzüğü değildi. Usta birkaç yıl önce aynı desenin farklı büyüklüklerini yapmıştı. Bazıları düğünlerde, bazıları yolculuk hatırası olarak kullanılıyordu. Yüzüğün kimden kime geçtiği bilinmiyordu. Beyrek, yüzüğü Yalın'a göndermediğini söylese de bunu tek başına kanıtlayamıyordu."
         }
       ]
     },
@@ -729,15 +427,7 @@
         },
         {
           "t": "metin",
-          "v": ", iki tarafın bu ayrıntıyı ortak görüşmeye taşımasını önerdi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " önce istemedi; daha fazla karışıklık çıkacağından korktu. Sonra belirsizliği saklamanın daha büyük bir sorun yaratabileceğini düşündü. “Bilmiyoruz diyeceğiz,” dedi. "
+          "v": ", iki tarafın bu ayrıntıyı ortak görüşmeye taşımasını önerdi. Beyrek önce istemedi; daha fazla karışıklık çıkacağından korktu. Sonra belirsizliği saklamanın daha büyük bir sorun yaratabileceğini düşündü. “Bilmiyoruz diyeceğiz,” dedi. "
         },
         {
           "t": "yoldas",
@@ -746,23 +436,7 @@
         },
         {
           "t": "metin",
-          "v": " başıyla onayladı. “Bir şeyin açıklamasını bulamamak, her konuda haksız olduğumuz anlamına gelmez.”\n\nGörüşmeden bir gece önce Yalın'ın kardeşi Suay'ın geçitte geçirdiği kazayı duydular. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " Suay'ın iyileştiğini öğrenince sevindi. Ancak Yalın'ın neden dar geçit sözüne bu kadar önem verdiğini ilk kez anlıyordu. Onun korkusu yeni bir tehlikenin yaşanmasıydı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bu bilgiyle Yalın'ın sözünü doğru kabul etmedi; fakat konuşmaya başlarken onun neye ihtiyaç duyduğunu daha iyi anlayacaktı.\n\nGecenin sonunda "
+          "v": " başıyla onayladı. “Bir şeyin açıklamasını bulamamak, her konuda haksız olduğumuz anlamına gelmez.”\n\nGörüşmeden bir gece önce Yalın'ın kardeşi Suay'ın geçitte geçirdiği kazayı duydular. Beyrek Suay'ın iyileştiğini öğrenince sevindi. Ancak Yalın'ın neden dar geçit sözüne bu kadar önem verdiğini ilk kez anlıyordu. Onun korkusu yeni bir tehlikenin yaşanmasıydı. Beyrek bu bilgiyle Yalın'ın sözünü doğru kabul etmedi; fakat konuşmaya başlarken onun neye ihtiyaç duyduğunu daha iyi anlayacaktı.\n\nGecenin sonunda "
         },
         {
           "t": "yoldas",
@@ -771,15 +445,7 @@
         },
         {
           "t": "metin",
-          "v": ", görüşmede kullanılacak cümleleri yazdı: “Benim söylediğim”, “Benim duyduğum”, “Bir başkasından aktarılan” ve “Henüz doğrulanmayan”. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bu dört başlığı okuyunca gülümsedi. “Sanki savaş değil, dil dersi hazırlıyoruz,” dedi. "
+          "v": ", görüşmede kullanılacak cümleleri yazdı: “Benim söylediğim”, “Benim duyduğum”, “Bir başkasından aktarılan” ve “Henüz doğrulanmayan”. Beyrek bu dört başlığı okuyunca gülümsedi. “Sanki savaş değil, dil dersi hazırlıyoruz,” dedi. "
         },
         {
           "t": "yoldas",
@@ -797,23 +463,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Görüşme günü iki oba arasında küçük bir çadır kuruldu. İçeride yalnız gerekli kişiler vardı. Yalın ilk başta "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " yüzüne bakmadı. “Söz verip sonra kendi yolunu bulmamı söyledin,” dedi.\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " sesini yükseltmedi. “Ben kervanın dar geçitten güvenle geçmesine yardım edeceğimi söyledim. Seni yalnız bırakacağıma ilişkin söz söylemedim.”\n\nYalın, “Ama haberci bana böyle aktardı,” dedi.\n\n"
+          "v": "Görüşme günü iki oba arasında küçük bir çadır kuruldu. İçeride yalnız gerekli kişiler vardı. Yalın ilk başta Beyrek’in yüzüne bakmadı. “Söz verip sonra kendi yolunu bulmamı söyledin,” dedi.\n\nBeyrek sesini yükseltmedi. “Ben kervanın dar geçitten güvenle geçmesine yardım edeceğimi söyledim. Seni yalnız bırakacağıma ilişkin söz söylemedim.”\n\nYalın, “Ama haberci bana böyle aktardı,” dedi.\n\n"
         },
         {
           "t": "yoldas",
@@ -822,15 +472,7 @@
         },
         {
           "t": "metin",
-          "v": " söze karıştı. “Haberci duyduğu cümleyi hatırlıyor, ama öncesiyle sonrasından emin değil. Bu cümle başka bir kervana ilişkin söylenmiş olabilir.”\n\nYalın bir süre sustu. Sonra kendi korkusunu anlattı. Geçen kış kardeşi dar geçitte yaralanmıştı. Bu yıl geçidin yeniden kullanılacağını duyunca kimsenin verdiği güvenceyi yarım bırakmasını istemiyordu. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " ilk kez onun öfkesinin ardındaki kaygıyı gördü.\n\n“Geçidin güvenli olması ikimiz için de önemli,” dedi. “Sözüm buydu. İstersen hangi bölümde kimin sorumluluk alacağını birlikte yazalım.”\n\nBöylece mesele yalnız eski sözün tam cümlesini bulmak olmaktan çıktı. İnsanların gerçekten neye ihtiyaç duyduğunu anlamak da gerekiyordu."
+          "v": " söze karıştı. “Haberci duyduğu cümleyi hatırlıyor, ama öncesiyle sonrasından emin değil. Bu cümle başka bir kervana ilişkin söylenmiş olabilir.”\n\nYalın bir süre sustu. Sonra kendi korkusunu anlattı. Geçen kış kardeşi dar geçitte yaralanmıştı. Bu yıl geçidin yeniden kullanılacağını duyunca kimsenin verdiği güvenceyi yarım bırakmasını istemiyordu. Beyrek ilk kez onun öfkesinin ardındaki kaygıyı gördü.\n\n“Geçidin güvenli olması ikimiz için de önemli,” dedi. “Sözüm buydu. İstersen hangi bölümde kimin sorumluluk alacağını birlikte yazalım.”\n\nBöylece mesele yalnız eski sözün tam cümlesini bulmak olmaktan çıktı. İnsanların gerçekten neye ihtiyaç duyduğunu anlamak da gerekiyordu."
         }
       ]
     },
@@ -839,23 +481,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Görüşme başlamadan önce yaşlı ozan bir kural önerdi. Konuşan kişi sözünü bitirmeden diğerleri araya girmeyecekti. Bir cümle başkasına aktarılacaksa önce söyleyenin ne demek istediği sorulacaktı. İki oba için bu kolay değildi. İnsanlar kırgın olduklarında bazen karşısındakinin son cümlesini bile beklemiyordu.\n\nYalın ilk konuşmasında öfkelenip "
-        },
-        {
-          "t": "kahraman",
-          "hal": "belirtme"
-        },
-        {
-          "t": "metin",
-          "v": " sözünü unutmakla suçladı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " cevap vermek üzere ayağa kalktı; "
+          "v": "Görüşme başlamadan önce yaşlı ozan bir kural önerdi. Konuşan kişi sözünü bitirmeden diğerleri araya girmeyecekti. Bir cümle başkasına aktarılacaksa önce söyleyenin ne demek istediği sorulacaktı. İki oba için bu kolay değildi. İnsanlar kırgın olduklarında bazen karşısındakinin son cümlesini bile beklemiyordu.\n\nYalın ilk konuşmasında öfkelenip Beyrek’i sözünü unutmakla suçladı. Beyrek cevap vermek üzere ayağa kalktı; "
         },
         {
           "t": "yoldas",
@@ -864,23 +490,7 @@
         },
         {
           "t": "metin",
-          "v": " elini kaldırıp beklemesini istedi. Yalın konuşmasını bitirdiğinde sesindeki kızgınlık azalmıştı. En çok korktuğu şeyin kardeşinin yine tehlikeli bir geçitten yardımsız geçmesi olduğunu söyledi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " ilk kez onun sıkıntısını bu kadar açık duyuyordu.\n\n“Ben senin kardeşinin yaşadığını bilmiyordum,” dedi "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ". “Bunu bilseydim yol planını daha ayrıntılı konuşurdum.”\n\nYalın, “Ben de yardım sözünü yalnız kendi kervanımıza verilmiş sandım,” dedi. “Belki hiç sormadan karar verdim.”\n\n"
+          "v": " elini kaldırıp beklemesini istedi. Yalın konuşmasını bitirdiğinde sesindeki kızgınlık azalmıştı. En çok korktuğu şeyin kardeşinin yine tehlikeli bir geçitten yardımsız geçmesi olduğunu söyledi. Beyrek ilk kez onun sıkıntısını bu kadar açık duyuyordu.\n\n“Ben senin kardeşinin yaşadığını bilmiyordum,” dedi Beyrek. “Bunu bilseydim yol planını daha ayrıntılı konuşurdum.”\n\nYalın, “Ben de yardım sözünü yalnız kendi kervanımıza verilmiş sandım,” dedi. “Belki hiç sormadan karar verdim.”\n\n"
         },
         {
           "t": "yoldas",
@@ -889,15 +499,7 @@
         },
         {
           "t": "metin",
-          "v": " bu iki cümleyi dikkatle not etti. Artık yalnız geçmişte kimin ne söylediği değil, gelecekte nasıl birlikte çalışacakları da önemliydi. Geçidin durumunu bilen görevlilerin görüşü alınacak, tehlikeli hava ve zemin koşullarında kervanlar bekleyecek, kimse sırf söz vermiş olduğu için başkalarının güvenliğini tehlikeye atmayacaktı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bu yeni anlaşmanın eski yüzükten daha açık olduğunu düşündü."
+          "v": " bu iki cümleyi dikkatle not etti. Artık yalnız geçmişte kimin ne söylediği değil, gelecekte nasıl birlikte çalışacakları da önemliydi. Geçidin durumunu bilen görevlilerin görüşü alınacak, tehlikeli hava ve zemin koşullarında kervanlar bekleyecek, kimse sırf söz vermiş olduğu için başkalarının güvenliğini tehlikeye atmayacaktı. Beyrek bu yeni anlaşmanın eski yüzükten daha açık olduğunu düşündü."
         }
       ]
     },
@@ -906,23 +508,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Görüşme sırasında Yalın'ın yanında gelen yaşlı danışman, iki obanın yıllardır birbirine yardım ettiğini hatırlattı. Eski anlaşmazlıklar da olmuştu, fakat çoğu zaman bir araya gelinerek çözülmüştü. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ", “Öyleyse bu kez de birlikte karar verelim,” dedi. Yalın hâlâ kırgındı. Ancak karşısındakinin yalnız kendini savunmadığını, güvenli geçiş için de öneri sunduğunu görünce sesi yumuşadı.\n\nİki taraf dar geçit için farklı çözümler düşündü. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " geçiş saatlerini düzenlemek istiyordu, Yalın ise hava durumuna göre bekleme noktalarının belirlenmesini önerdi. "
+          "v": "Görüşme sırasında Yalın'ın yanında gelen yaşlı danışman, iki obanın yıllardır birbirine yardım ettiğini hatırlattı. Eski anlaşmazlıklar da olmuştu, fakat çoğu zaman bir araya gelinerek çözülmüştü. Beyrek, “Öyleyse bu kez de birlikte karar verelim,” dedi. Yalın hâlâ kırgındı. Ancak karşısındakinin yalnız kendini savunmadığını, güvenli geçiş için de öneri sunduğunu görünce sesi yumuşadı.\n\nİki taraf dar geçit için farklı çözümler düşündü. Beyrek geçiş saatlerini düzenlemek istiyordu, Yalın ise hava durumuna göre bekleme noktalarının belirlenmesini önerdi. "
         },
         {
           "t": "yoldas",
@@ -939,12 +525,8 @@
       "omurga": true,
       "parcalar": [
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
           "t": "metin",
-          "v": " toplantı bitince Yalın'a yüzük vermek yerine yeni anlaşmanın açıkça söylenmesini önerdi. Ozan, herkesin anlayacağı kısa bir anlatı hazırladı. İnsanlar yalnız simgeye bakmakla yetinmeyecek, sorumlulukları gerektiğinde yeniden konuşabilecekti. "
+          "v": "Beyrek toplantı bitince Yalın'a yüzük vermek yerine yeni anlaşmanın açıkça söylenmesini önerdi. Ozan, herkesin anlayacağı kısa bir anlatı hazırladı. İnsanlar yalnız simgeye bakmakla yetinmeyecek, sorumlulukları gerektiğinde yeniden konuşabilecekti. "
         },
         {
           "t": "yoldas",
@@ -962,23 +544,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "İki oba görüşmenin sonunda ortak bir karar aldı. Dar geçidi kullanacak kervanlar önceden haber verecek, tehlikeli bölümün durumu kontrol edilecek, uygun olmayan koşullarda geçiş ertelenecekti. Yalın ve "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " birbirlerine yeni bir yüzük vermedi. Bunun yerine kararın koşullarını herkesin anlayacağı biçimde açıkladılar.\n\nO akşam ozan yeniden kopuzunu çaldı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " yiğitliği üzerine bir türkü söylemek yerine iki cümlenin arasına giren yanlış anlamayı anlattı. “Kılıç yükselmeden söz düzelirse,” dedi, “en büyük zafer belki de o gün kazanılır.”\n\n"
+          "v": "İki oba görüşmenin sonunda ortak bir karar aldı. Dar geçidi kullanacak kervanlar önceden haber verecek, tehlikeli bölümün durumu kontrol edilecek, uygun olmayan koşullarda geçiş ertelenecekti. Yalın ve Beyrek birbirlerine yeni bir yüzük vermedi. Bunun yerine kararın koşullarını herkesin anlayacağı biçimde açıkladılar.\n\nO akşam ozan yeniden kopuzunu çaldı. Beyrek’in yiğitliği üzerine bir türkü söylemek yerine iki cümlenin arasına giren yanlış anlamayı anlattı. “Kılıç yükselmeden söz düzelirse,” dedi, “en büyük zafer belki de o gün kazanılır.”\n\n"
         },
         {
           "t": "yoldas",
@@ -987,23 +553,7 @@
         },
         {
           "t": "metin",
-          "v": " uzaktan dinliyordu. Hikâyenin yeni sonunu seviyordu; çünkü kimse bütünüyle hatasız değildi. Haberci cümleyi eksik taşımış, Yalın korkusuyla acele sonuç çıkarmış, "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " ise kendi sözünün herkes için aynı anlama geldiğini sanmıştı. Hepsi biraz değişmişti.\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": ", yüzüğü ozanın yanına bıraktı. “Bunu sakla,” dedi. “Bir gün birileri sözün yalnız işarette olmadığını hatırlasın.”\n\nOzan yüzüğü avucunda çevirdi. “Sözün ağırlığı madenin ağırlığı değildir,” dedi. “Onu taşıyan, verdiği sözü anlamak için gösterdiği emektir.”"
+          "v": " uzaktan dinliyordu. Hikâyenin yeni sonunu seviyordu; çünkü kimse bütünüyle hatasız değildi. Haberci cümleyi eksik taşımış, Yalın korkusuyla acele sonuç çıkarmış, Beyrek ise kendi sözünün herkes için aynı anlama geldiğini sanmıştı. Hepsi biraz değişmişti.\n\nBeyrek, yüzüğü ozanın yanına bıraktı. “Bunu sakla,” dedi. “Bir gün birileri sözün yalnız işarette olmadığını hatırlasın.”\n\nOzan yüzüğü avucunda çevirdi. “Sözün ağırlığı madenin ağırlığı değildir,” dedi. “Onu taşıyan, verdiği sözü anlamak için gösterdiği emektir.”"
         }
       ]
     },
@@ -1012,15 +562,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Ozan ertesi sabah çocukları çevresine topladı. Onlara aynı olayı üç farklı biçimde anlattı. Birinci anlatıda "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " kahramandı ve herkes onu övüyordu. İkinci anlatıda Yalın haksız yere suçlanan kişiydi. Üçüncü anlatıda ise haberci sözleri taşıyan ve hata yapmaktan korkan bir çocuktu. Sonra “Hangisi doğru?” diye sordu. Çocuklar önce birbirine baktı. "
+          "v": "Ozan ertesi sabah çocukları çevresine topladı. Onlara aynı olayı üç farklı biçimde anlattı. Birinci anlatıda Beyrek kahramandı ve herkes onu övüyordu. İkinci anlatıda Yalın haksız yere suçlanan kişiydi. Üçüncü anlatıda ise haberci sözleri taşıyan ve hata yapmaktan korkan bir çocuktu. Sonra “Hangisi doğru?” diye sordu. Çocuklar önce birbirine baktı. "
         },
         {
           "t": "yoldas",
@@ -1029,15 +571,7 @@
         },
         {
           "t": "metin",
-          "v": ", hikâyelerin bakış açılarını gösterdiğini, fakat gerçeğin yalnız bir kişinin duygusuna indirgenemeyeceğini anlattı.\n\nBir çocuk, “Haberci yalan mı söyledi?” diye sordu. Ozan başını iki yana salladı. “Bir şeyi eksik duymak başka, bilerek değiştirmek başka,” dedi. “Hangisinin olduğunu anlamadan kimseye yalan söylemiş diyemeyiz.” "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bu cümleyi duyunca rahatladı. Olayın başında herkesi bir taraf seçmeye zorlayan bir hava vardı. Şimdi aynı olay, insanların birbirini daha iyi anlamasına yol açmıştı.\n\n"
+          "v": ", hikâyelerin bakış açılarını gösterdiğini, fakat gerçeğin yalnız bir kişinin duygusuna indirgenemeyeceğini anlattı.\n\nBir çocuk, “Haberci yalan mı söyledi?” diye sordu. Ozan başını iki yana salladı. “Bir şeyi eksik duymak başka, bilerek değiştirmek başka,” dedi. “Hangisinin olduğunu anlamadan kimseye yalan söylemiş diyemeyiz.” Beyrek bu cümleyi duyunca rahatladı. Olayın başında herkesi bir taraf seçmeye zorlayan bir hava vardı. Şimdi aynı olay, insanların birbirini daha iyi anlamasına yol açmıştı.\n\n"
         },
         {
           "t": "yoldas",
@@ -1054,15 +588,7 @@
         },
         {
           "t": "metin",
-          "v": " oyunu önerdi. “Ağır ağır”, “uzun uzun”, “sessiz sessiz” gibi ifadeleri cümle içinde kullandılar. Ozan, destansı anlatılarda tekrarların ve ses oyunlarının duyguyu güçlendirdiğini söyledi. Çocuklar ardından "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " hikâyesini kendi sözcükleriyle yeniden anlattı. Kimi su başındaki konuşmayı, kimi yüzüğü, kimi çadırdaki anlaşmayı en önemli sahne olarak seçti."
+          "v": " oyunu önerdi. “Ağır ağır”, “uzun uzun”, “sessiz sessiz” gibi ifadeleri cümle içinde kullandılar. Ozan, destansı anlatılarda tekrarların ve ses oyunlarının duyguyu güçlendirdiğini söyledi. Çocuklar ardından Beyrek’in hikâyesini kendi sözcükleriyle yeniden anlattı. Kimi su başındaki konuşmayı, kimi yüzüğü, kimi çadırdaki anlaşmayı en önemli sahne olarak seçti."
         }
       ]
     },
@@ -1070,28 +596,8 @@
       "omurga": true,
       "parcalar": [
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
           "t": "metin",
-          "v": ", yüzüğü yalnız kendisiyle Yalın arasındaki sözün simgesi olarak tutmamaya karar verdi. İki oba barış toplantılarında hatırlamak üzere onu ortak sandığa koydu. Sandık kilitlenmedi; ama herkes onun bir hatıra olduğunu, gerçek anlaşmanın insanların davranışında yaşayacağını biliyordu. Ozan kopuzunun tellerine son kez dokundu. “Yiğit olmak yalnız güç göstermek değildir,” dedi. “Birini incitmiş olabileceğini anlayınca onu dinlemek de yiğitliktir.”\n\nAradan haftalar geçince oba meydanına iki kervan birlikte geldi. Dar geçitten uygun koşullarda geçmiş, planlanan dinlenme noktalarında durarak güvenle ulaşmışlardı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " ilk kez yalnız kendi yardımının değil, iki grubun iş birliğinin işe yaradığını gördü. Yalın'la karşılaştığında geçmişteki tartışmayı yeniden açmadılar. Yalın yalnız “Bu kez birbirimizi doğru duyduk,” dedi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " gülümsedi.\n\nOzan hikâyeyi sonraki kuşağa anlatırken kendi sözünü de ekledi: “Birinin sözünü duyunca, onu yalnız istediğin gibi değil, söylendiği gibi anlamaya çalış.” Çocuklar bunu kolay sanıyordu. Sonra ozan iki kişiden aynı cümleyi farklı tonlarda söylemesini istedi. Biri cümleyi sevinçle, diğeri kaygıyla dile getirdi. Aynı sözcükler başka duygular taşıyordu. Çocukların bazıları gülmeye başladı, bazıları düşüncelere daldı."
+          "v": "Beyrek, yüzüğü yalnız kendisiyle Yalın arasındaki sözün simgesi olarak tutmamaya karar verdi. İki oba barış toplantılarında hatırlamak üzere onu ortak sandığa koydu. Sandık kilitlenmedi; ama herkes onun bir hatıra olduğunu, gerçek anlaşmanın insanların davranışında yaşayacağını biliyordu. Ozan kopuzunun tellerine son kez dokundu. “Yiğit olmak yalnız güç göstermek değildir,” dedi. “Birini incitmiş olabileceğini anlayınca onu dinlemek de yiğitliktir.”\n\nAradan haftalar geçince oba meydanına iki kervan birlikte geldi. Dar geçitten uygun koşullarda geçmiş, planlanan dinlenme noktalarında durarak güvenle ulaşmışlardı. Beyrek ilk kez yalnız kendi yardımının değil, iki grubun iş birliğinin işe yaradığını gördü. Yalın'la karşılaştığında geçmişteki tartışmayı yeniden açmadılar. Yalın yalnız “Bu kez birbirimizi doğru duyduk,” dedi. Beyrek gülümsedi.\n\nOzan hikâyeyi sonraki kuşağa anlatırken kendi sözünü de ekledi: “Birinin sözünü duyunca, onu yalnız istediğin gibi değil, söylendiği gibi anlamaya çalış.” Çocuklar bunu kolay sanıyordu. Sonra ozan iki kişiden aynı cümleyi farklı tonlarda söylemesini istedi. Biri cümleyi sevinçle, diğeri kaygıyla dile getirdi. Aynı sözcükler başka duygular taşıyordu. Çocukların bazıları gülmeye başladı, bazıları düşüncelere daldı."
         }
       ]
     },
@@ -1114,23 +620,7 @@
         },
         {
           "t": "metin",
-          "v": ", hızlı olmanın her zaman güvenilir olmak anlamına gelmediğini hatırlattı.\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " ise bir gün yeni bir söz vermeden önce kısa bir soru sordu: “Beni nasıl anladın?” Yanındaki genç yolcu soruyu duyunca şaşırdı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bunun ne kadar önemli olduğunu biliyordu. Bir zamanlar kendi sözünün herkes için aynı anlama geldiğini sanmıştı. Şimdi karşılıklı anlamanın da vefa olduğunu düşünüyordu."
+          "v": ", hızlı olmanın her zaman güvenilir olmak anlamına gelmediğini hatırlattı.\n\nBeyrek ise bir gün yeni bir söz vermeden önce kısa bir soru sordu: “Beni nasıl anladın?” Yanındaki genç yolcu soruyu duyunca şaşırdı. Beyrek bunun ne kadar önemli olduğunu biliyordu. Bir zamanlar kendi sözünün herkes için aynı anlama geldiğini sanmıştı. Şimdi karşılıklı anlamanın da vefa olduğunu düşünüyordu."
         }
       ]
     },
@@ -1139,15 +629,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Barış görüşmesinden iki gün sonra oba meydanına genç bir kız geldi. Adı Ilgın'dı. Geçidi kullanan küçük hayvan sürüsünün sahipleri adına konuşmak istiyordu. İki büyük obanın anlaşma metninde kervanlar ve atlı yolcular anılmış, fakat ağır yük taşımayan küçük sürülerin geçidi hangi gün kullanacağı belirtilmemişti. Ilgın, geçidin yalnız güçlü tüccarlara ait olmadığını söyledi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " ilk başta bunun küçük bir ayrıntı olduğunu düşündü; sonra kızın sesindeki kırgınlığı fark etti.\n\n“Biz yalnız büyük kervanları düşünerek söz vermişiz,” dedi. “Demek anlaşmamız herkesi kapsamıyor.”\n\nYalın, daha önceki anlaşmazlıkta yanlış anlaşıldığı için bu konuya duyarlıydı. “Bir kez daha aynı hatayı yapmayalım,” dedi. “Kimin neye ihtiyacı olduğunu dinleyelim.”\n\nToplantıya geçidi kullanan farklı gruplar davet edildi. Bazıları yolu hızlı geçmek istiyordu, bazıları ise sürüleriyle daha yavaş hareket ediyordu. Hepsi aynı saatlerde yola çıkarsa dar bölümde sıkışıklık olabilirdi. İlk öneri, en hızlı gidenlere öncelik tanınmasıydı. Ilgın buna itiraz etti. “Biz yavaşız diye yol hakkımız azalmıyor,” dedi."
+          "v": "Barış görüşmesinden iki gün sonra oba meydanına genç bir kız geldi. Adı Ilgın'dı. Geçidi kullanan küçük hayvan sürüsünün sahipleri adına konuşmak istiyordu. İki büyük obanın anlaşma metninde kervanlar ve atlı yolcular anılmış, fakat ağır yük taşımayan küçük sürülerin geçidi hangi gün kullanacağı belirtilmemişti. Ilgın, geçidin yalnız güçlü tüccarlara ait olmadığını söyledi. Beyrek ilk başta bunun küçük bir ayrıntı olduğunu düşündü; sonra kızın sesindeki kırgınlığı fark etti.\n\n“Biz yalnız büyük kervanları düşünerek söz vermişiz,” dedi. “Demek anlaşmamız herkesi kapsamıyor.”\n\nYalın, daha önceki anlaşmazlıkta yanlış anlaşıldığı için bu konuya duyarlıydı. “Bir kez daha aynı hatayı yapmayalım,” dedi. “Kimin neye ihtiyacı olduğunu dinleyelim.”\n\nToplantıya geçidi kullanan farklı gruplar davet edildi. Bazıları yolu hızlı geçmek istiyordu, bazıları ise sürüleriyle daha yavaş hareket ediyordu. Hepsi aynı saatlerde yola çıkarsa dar bölümde sıkışıklık olabilirdi. İlk öneri, en hızlı gidenlere öncelik tanınmasıydı. Ilgın buna itiraz etti. “Biz yavaşız diye yol hakkımız azalmıyor,” dedi."
         }
       ]
     },
@@ -1161,15 +643,7 @@
         },
         {
           "t": "metin",
-          "v": ", görüşleri büyük bir tahta üzerine yazdı. Sonra geçiş zamanlarını planlamak için grupların ihtiyaçlarını ayrı ayrı dinledi. Her gün aynı hava ve yol koşulları olmayacağı için kesin saat yerine esnek kontrol noktaları önerildi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " herkesin önerisini tek tek dinlerken söz vermenin yalnız iki kişi arasında bir cümle söylemek olmadığını kavradı. Verilen söz, sonuçlarından etkilenen insanları da hesaba katmayı gerektiriyordu.\n\nOzan akşam bu toplantıyı dinleyince kopuzuyla yeni bir ezgi denedi. “Herkesin duyulduğu yerde söz daha sağlam durur,” diye mırıldandı. "
+          "v": ", görüşleri büyük bir tahta üzerine yazdı. Sonra geçiş zamanlarını planlamak için grupların ihtiyaçlarını ayrı ayrı dinledi. Her gün aynı hava ve yol koşulları olmayacağı için kesin saat yerine esnek kontrol noktaları önerildi. Beyrek herkesin önerisini tek tek dinlerken söz vermenin yalnız iki kişi arasında bir cümle söylemek olmadığını kavradı. Verilen söz, sonuçlarından etkilenen insanları da hesaba katmayı gerektiriyordu.\n\nOzan akşam bu toplantıyı dinleyince kopuzuyla yeni bir ezgi denedi. “Herkesin duyulduğu yerde söz daha sağlam durur,” diye mırıldandı. "
         },
         {
           "t": "yoldas",
@@ -1178,23 +652,7 @@
         },
         {
           "t": "metin",
-          "v": " bunun güzel bir şiir cümlesi olduğunu, ama gerçek anlaşmayı yalnız güzel cümlelerin koruyamayacağını söyledi. Ozan güldü. “Haklısın,” dedi. “O yüzden sizin hazırladığınız listeyi de unutmam.”\n\nIlgın birkaç gün sonra geri geldiğinde yolun kullanılabilir bölümünde yeni işaretler asılmıştı. Bu işaretler yola çıkmadan önce koşulları kontrol etmeyi hatırlatıyordu. Herkesin yükünü ve hızını dikkate alan güvenli plan da oba meydanına duyurulmuştu. Ilgın "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yonelme"
-        },
-        {
-          "t": "metin",
-          "v": " teşekkür etti. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " başını eğdi. “Ben seni dinlemekte geciktim,” dedi. “Teşekkürü hep birlikte çalışanlara et.”"
+          "v": " bunun güzel bir şiir cümlesi olduğunu, ama gerçek anlaşmayı yalnız güzel cümlelerin koruyamayacağını söyledi. Ozan güldü. “Haklısın,” dedi. “O yüzden sizin hazırladığınız listeyi de unutmam.”\n\nIlgın birkaç gün sonra geri geldiğinde yolun kullanılabilir bölümünde yeni işaretler asılmıştı. Bu işaretler yola çıkmadan önce koşulları kontrol etmeyi hatırlatıyordu. Herkesin yükünü ve hızını dikkate alan güvenli plan da oba meydanına duyurulmuştu. Ilgın Beyrek’e teşekkür etti. Beyrek başını eğdi. “Ben seni dinlemekte geciktim,” dedi. “Teşekkürü hep birlikte çalışanlara et.”"
         }
       ]
     },
@@ -1212,15 +670,7 @@
         },
         {
           "t": "metin",
-          "v": ", "
-        },
-        {
-          "t": "kahraman",
-          "hal": "ilgi"
-        },
-        {
-          "t": "metin",
-          "v": " yüzüğünü yeniden ele aldı. İlk gün yüzük sanki yalnız kahramanın verdiği sözü temsil ediyordu. Şimdi onun için başka bir anlamı vardı: Sözü yerine getirmek, değişen koşullarda bile adil olmayı gerektiriyordu. Bir işaret ne kadar parlak olursa olsun, onu taşıyan insan duymazdan gelirse değersizleşebilirdi."
+          "v": ", Beyrek’in yüzüğünü yeniden ele aldı. İlk gün yüzük sanki yalnız kahramanın verdiği sözü temsil ediyordu. Şimdi onun için başka bir anlamı vardı: Sözü yerine getirmek, değişen koşullarda bile adil olmayı gerektiriyordu. Bir işaret ne kadar parlak olursa olsun, onu taşıyan insan duymazdan gelirse değersizleşebilirdi."
         }
       ]
     },
@@ -1237,15 +687,7 @@
         },
         {
           "t": "metin",
-          "v": "\n\nGençlerden biri buna gülüp “Böyle hikâye yiğitlik sayılır mı?” diye sorunca "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " ayağa kalktı. “Birini anlamaya çalışmak bazen gururunu yenmeyi gerektirir,” dedi. “Benim için en ağır sınav buydu.”\n\n"
+          "v": "\n\nGençlerden biri buna gülüp “Böyle hikâye yiğitlik sayılır mı?” diye sorunca Beyrek ayağa kalktı. “Birini anlamaya çalışmak bazen gururunu yenmeyi gerektirir,” dedi. “Benim için en ağır sınav buydu.”\n\n"
         },
         {
           "t": "yoldas",
@@ -1254,15 +696,7 @@
         },
         {
           "t": "metin",
-          "v": " kalabalığın arasından ona baktı. İlk toplantıda "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " yalnız kendi niyetinin doğru olmasına güvenmişti. Artık niyetin iyi olmasının, söylenen sözün doğru duyulduğunu garanti etmediğini de biliyordu. "
+          "v": " kalabalığın arasından ona baktı. İlk toplantıda Beyrek yalnız kendi niyetinin doğru olmasına güvenmişti. Artık niyetin iyi olmasının, söylenen sözün doğru duyulduğunu garanti etmediğini de biliyordu. "
         },
         {
           "t": "yoldas",
@@ -1297,31 +731,7 @@
         },
         {
           "t": "metin",
-          "v": " değişince farklı anlaşılabildiğini gördü. Ozan da dinliyordu. “Destan anlatırken bazen sözleri güzelleştiririz,” dedi. “Ama bir anlaşmayı taşırken kendi hayalimizi başkasının cümlesine katamayız.”\n\n"
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bu ayrımı aklında tuttu. Bir süre sonra küçük bir çocuk ondan uzak bir obaya selam götürmesini istedi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " “Selamını iletirim,” dedi, sonra durdu. “Bir isteğin veya haberin de var mı?” Çocuk başını salladı. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bu kez çocuğun sözünü olduğu gibi dinledi. Acele etmedi. Bir kahramanın verdiği söz bazen bir köprünün onarımı kadar büyük, bazen bir çocuğun doğru anlaşılması kadar küçük olabilirdi. İkisinde de aynı dikkat gerekiyordu."
+          "v": " değişince farklı anlaşılabildiğini gördü. Ozan da dinliyordu. “Destan anlatırken bazen sözleri güzelleştiririz,” dedi. “Ama bir anlaşmayı taşırken kendi hayalimizi başkasının cümlesine katamayız.”\n\nBeyrek bu ayrımı aklında tuttu. Bir süre sonra küçük bir çocuk ondan uzak bir obaya selam götürmesini istedi. Beyrek “Selamını iletirim,” dedi, sonra durdu. “Bir isteğin veya haberin de var mı?” Çocuk başını salladı. Beyrek bu kez çocuğun sözünü olduğu gibi dinledi. Acele etmedi. Bir kahramanın verdiği söz bazen bir köprünün onarımı kadar büyük, bazen bir çocuğun doğru anlaşılması kadar küçük olabilirdi. İkisinde de aynı dikkat gerekiyordu."
         }
       ]
     },
@@ -1329,20 +739,8 @@
       "omurga": true,
       "parcalar": [
         {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
           "t": "metin",
-          "v": ", yolun üstündeki son kontrol levhasını incelerken Ilgın'ı yeniden gördü. Kız sürüsünü dinlenme alanına götürüyordu. “Bu kez kimse acele etmemizi istemedi,” dedi. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " kısa bir süre susup çevreye baktı. Yol aynı yoldu; kayalar, toprak ve dere değişmemişti. Değişen insanların birbirini dikkate alma biçimiydi. Yalın yanlarına geldiğinde Ilgın ona da teşekkür etti. Yalın “Bu yalnız benim sözüm değil,” dedi. “Herkesin katkısı var.”\n\nYalın, geçitten dönen kervanın kayıtlarını incelerken "
+          "v": "Beyrek, yolun üstündeki son kontrol levhasını incelerken Ilgın'ı yeniden gördü. Kız sürüsünü dinlenme alanına götürüyordu. “Bu kez kimse acele etmemizi istemedi,” dedi. Beyrek kısa bir süre susup çevreye baktı. Yol aynı yoldu; kayalar, toprak ve dere değişmemişti. Değişen insanların birbirini dikkate alma biçimiydi. Yalın yanlarına geldiğinde Ilgın ona da teşekkür etti. Yalın “Bu yalnız benim sözüm değil,” dedi. “Herkesin katkısı var.”\n\nYalın, geçitten dönen kervanın kayıtlarını incelerken "
         },
         {
           "t": "yoldas",
@@ -1351,15 +749,7 @@
         },
         {
           "t": "metin",
-          "v": " hazırladığı işaretleri gördü. Her geçişte hava ve yol durumu yazılmıştı. Böylece verilen söz yalnız bir defalık törenin hatırası olmaktan çıkmış, düzenli bir sorumluluğa dönüşmüştü. "
-        },
-        {
-          "t": "kahraman",
-          "hal": "yalin"
-        },
-        {
-          "t": "metin",
-          "v": " bu kayıtları görünce rahatladı. Yiğitlik bazen bir anlık gösteriden çok, her gün tekrar edilen dikkatli bir işe benziyordu.\n\nOzan bu sahneyi anlatıya eklerken kendince yeni bir ikileme buldu: “Dinleye dinleye, anlaya anlaya.” "
+          "v": " hazırladığı işaretleri gördü. Her geçişte hava ve yol durumu yazılmıştı. Böylece verilen söz yalnız bir defalık törenin hatırası olmaktan çıkmış, düzenli bir sorumluluğa dönüşmüştü. Beyrek bu kayıtları görünce rahatladı. Yiğitlik bazen bir anlık gösteriden çok, her gün tekrar edilen dikkatli bir işe benziyordu.\n\nOzan bu sahneyi anlatıya eklerken kendince yeni bir ikileme buldu: “Dinleye dinleye, anlaya anlaya.” "
         },
         {
           "t": "yoldas",
@@ -1368,7 +758,7 @@
         },
         {
           "t": "metin",
-          "v": " bu ifadeye güldü; kulağa biraz tuhaf geldiğini söyledi. Ozan da gülerek “Öyleyse güzelini bulalım,” dedi. Birlikte kısa, akılda kalıcı bir dize kurdular. Böylece anlatının da taş gibi sabit olmadığını, onu aktaran insanların dikkatle yeniden şekillendirdiğini gördüler."
+          "v": " bu ifadeye güldü; kulağa biraz tuhaf geldiğini söyledi. Ozan da gülerek “Öyleyse güzelini bulalım,” dedi. Birlikte kısa, akılda kalıcı bir dize kurdular. Böylece anlatının da taş gibi sabit olmadığını, onu aktaran insanların dikkatle yeniden şekillendirdiğini gördüler.\n\nNot: Bu hikâye, Dede Korkut anlatılarındaki karakterlerden esinlenen özgün bir uyarlamadır; olay örgüsü Dede Korkut Kitabı’ndaki hikâyelerle aynı değildir."
         }
       ]
     }
@@ -1414,26 +804,26 @@
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 5,
-      "metin": "Suna'nın bu sözünden ne çıkar?",
+      "metin": "Yoldaşın “Bir cümleyi öncesinden ve sonrasından koparırsak anlamı değişebilir” sözünden ne çıkar?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir cümle bağlamından koparılırsa anlamı değişebilir"
-        },
-        {
-          "id": "B",
           "metin": "Cümleler hiç değişmez"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Söz önemsizdir"
+        },
+        {
+          "id": "C",
+          "metin": "Bir cümle bağlamından koparılırsa anlamı değişebilir"
         },
         {
           "id": "D",
           "metin": "Haberci yalan söylemiştir"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Bir cümlenin öncesi ve sonrası, anlamını belirler."
     },
     {
@@ -1444,11 +834,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Eksik duymak ile bilerek değiştirmek farklı şeylerdir; yalan söylediği kanıtlanmadan bu söylenemez"
+          "metin": "Kesinlikle yalan söylemiştir"
         },
         {
           "id": "B",
-          "metin": "Kesinlikle yalan söylemiştir"
+          "metin": "Eksik duymak ile bilerek değiştirmek farklı şeylerdir; yalan söylediği kanıtlanmadan bu söylenemez"
         },
         {
           "id": "C",
@@ -1459,7 +849,7 @@
           "metin": "Yalnız sözü değiştirmiştir"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Eksik duyulan bir söz, bilerek yapılmış bir değişiklik değildir."
     },
     {

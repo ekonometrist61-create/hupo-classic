@@ -78,7 +78,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2015,
+        "kelime_sayisi": 2011,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 16,
         "soru_sayisi": 4,
@@ -93,11 +93,11 @@
           "idiom": 1,
           "concept": 1
         },
-        "yoldas_yer_sayisi": 51,
+        "yoldas_yer_sayisi": 55,
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Meydandaki saat yanlış mı, yoksa herkes yanlış yere mi bakıyor? Hoca ve Yusuf gölgeyle ölçüm yapıyor.",
+    "tanitim": "Meydandaki saat yanlış mı, yoksa herkes yanlış yere mi bakıyor? Hoca ve bir arkadaşı gölgeyle ölçüm yapıyor.",
     "durum": "taslak",
     "fis_kodu": "HR-063"
   },
@@ -115,7 +115,7 @@
         },
         {
           "t": "metin",
-          "v": "\n\n\"Güneş mi şaşırdı, saat mi?\" diye sordu Hoca yanındaki küçük "
+          "v": "\n\n\"Güneş mi şaşırdı, saat mi?\" diye sordu Hoca yanındaki "
         },
         {
           "t": "yoldas",
@@ -133,7 +133,7 @@
         },
         {
           "t": "metin",
-          "v": ", köyün marangozunun çırağıydı. Çivi kutusunu taşırken kalabalığın arasına sıkışmış, saatin kulesine bakıyordu. \"Saat şaşırmış olamaz,\" dedi. \"Geçen ay kasabadan usta getirdiler. Herkes ona bakıyor.\"\n\nHoca sakalını sıvazladı. \"Herkesin bakması bir şeyin doğru olduğunu gösterir mi?\"\n\n"
+          "v": ", kasabanın marangozunun yanına sık uğrardı. Çivi kutusunu taşırken kalabalığın arasına sıkışmış, saatin kulesine bakıyordu. \"Saat şaşırmış olamaz,\" dedi. \"Geçen ay kasabadan usta getirdiler. Herkes ona bakıyor.\"\n\nHoca sakalını sıvazladı. \"Herkesin bakması bir şeyin doğru olduğunu gösterir mi?\"\n\n"
         },
         {
           "t": "yoldas",
@@ -230,7 +230,16 @@
         },
         {
           "t": "metin",
-          "v": " bunun değiştiği anı dikkatle not etti. İki avludaki sonuçlar birbirine yakındı. Meydan saatinin gösterdiği öğlen ise bu andan epey önce gelmişti. Çocuk defterindeki iki saati yan yana yazdı."
+          "v": " bunun değiştiği anı dikkatle not etti. İki avludaki sonuçlar birbirine yakındı. Meydan saatinin gösterdiği öğlen ise bu andan epey önce gelmişti. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "yalin",
+          "yedek": "bir arkadaş"
+        },
+        {
+          "t": "metin",
+          "v": " defterindeki iki saati yan yana yazdı."
         }
       ]
     },
@@ -248,7 +257,16 @@
         },
         {
           "t": "metin",
-          "v": " kuleyi işaret etti: \"Her gün aynı miktarda ileri gidiyor mu, yoksa yalnızca yanlış bir zamana mı ayarlanmış?\" Hoca, çocuğun sorusunu duyunca mutlulukla güldü. \"Şimdi gerçekten ölçmeye başladın.\"\n\nÜç gün boyunca "
+          "v": " kuleyi işaret etti: \"Her gün aynı miktarda ileri gidiyor mu, yoksa yalnızca yanlış bir zamana mı ayarlanmış?\" Hoca, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " sorusunu duyunca mutlulukla güldü. \"Şimdi gerçekten ölçmeye başladın.\"\n\nÜç gün boyunca "
         },
         {
           "t": "yoldas",
@@ -266,7 +284,7 @@
         },
         {
           "t": "metin",
-          "v": " o günün karşısına büyük bir soru işareti koydu. Komşuları, \"Çocuk gibi işaret koyacağınıza kuleye çıkıp saati düzeltin,\" diye söylendi."
+          "v": " o günün karşısına büyük bir soru işareti koydu. Komşuları, \"Gölge işaretleriyle uğraşacağınıza kuleye çıkıp saati düzeltin,\" diye söylendi."
         },
         {
           "t": "deyim",
@@ -337,7 +355,7 @@
         },
         {
           "t": "metin",
-          "v": " notlarını inceledi. Dişlilerin sağlam olduğunu, saatin düzenli işlediğini fakat yanlış vakte ayarlandığını açıkladı. Bir de saat sesinin uzun süredir herkesin davranışını belirlediğini söyledi: \"Bu yüzden küçük bir ayar hatası, büyük bir karışıklık oluşturmuş.\"\n\nHoca, çırakların, satıcıların ve köylülerin önünde şöyle dedi: \"Bir kişi bir şeyi yanlış yapabilir; hepimiz yanlışın peşinden gidince onu doğruya çevirmiş olmayız.\" Kalabalık sessizleşti. Sonra fırıncı kahkaha attı. \"Demek benim ekmekler pişmeden öğlen oluyormuş!\""
+          "v": " notlarını inceledi. Dişlilerin sağlam olduğunu, saatin düzenli işlediğini fakat yanlış vakte ayarlandığını açıkladı. Bir de saatin uzun süredir herkesin davranışını belirlediğini söyledi: \"Bu yüzden küçük bir ayar hatası, büyük bir karışıklık oluşturmuş.\"\n\nHoca, çırakların, satıcıların ve kasabalıların önünde şöyle dedi: \"Bir kişi bir şeyi yanlış yapabilir; hepimiz yanlışın peşinden gidince onu doğruya çevirmiş olmayız.\" Kalabalık sessizleşti. Sonra fırıncı kahkaha attı. \"Demek benim ekmekler pişmeden öğlen oluyormuş!\""
         }
       ]
     },
@@ -480,7 +498,7 @@
       "parcalar": [
         {
           "t": "metin",
-          "v": "Bu söz, kasabanın yazı işleriyle ilgilenen İsmail Efendi'nin hoşuna gitti. Çocuktan defteri bir günlüğüne ödünç almak istedi. "
+          "v": "Bu söz, kasabanın yazı işleriyle ilgilenen İsmail Efendi'nin hoşuna gitti. Defteri bir günlüğüne ödünç almak istedi. "
         },
         {
           "t": "yoldas",
@@ -507,7 +525,7 @@
         },
         {
           "t": "metin",
-          "v": " tepeye çıkarıp kasabanın iki yakasını gösterdi. Güneş iki aynı yükseklikteki çubuğa farklı zamanlarda aynı uzunlukta gölge düşürebilirdi; bu yüzden bir tek uzunluğa bakmak her zaman yeterli değildi. Sabah kısa bir süre önce görülen gölge, öğleden sonra yine aynı uzunlukta olabilirdi. "
+          "v": " tepeye çıkarıp kasabanın iki yakasını gösterdi. Güneş iki aynı yükseklikteki çubuğa farklı zamanlarda aynı uzunlukta gölge düşürebilirdi; bu yüzden bir tek uzunluğa bakmak her zaman yeterli değildi. Sabahın erken saatlerinde görülen bir gölge, öğleden sonra yine aynı uzunlukta olabilirdi. "
         },
         {
           "t": "yoldas",
@@ -561,7 +579,7 @@
         },
         {
           "t": "metin",
-          "v": " cetveli kabul etti ama ona dikkatle baktı. \"Önce düzgün mü diye kontrol edeceğim,\" diye karşılık verdi. Usta yüksek sesle güldü. \"Et elbette. Benden aldın diye doğru olduğunu varsayma!\""
+          "v": " cetveli kabul etti ama ona dikkatle baktı. \"Önce düzgün mü diye kontrol edeceğim,\" diye karşılık verdi. Usta yüksek sesle güldü. \"Evet elbette. Benden aldın diye doğru olduğunu varsayma!\""
         }
       ]
     },
@@ -673,7 +691,16 @@
         },
         {
           "t": "metin",
-          "v": " bunun tek başına en doğru cevabı bulmaktan farklı olduğunu düşündü. Hoca, çocuğun yüzündeki ifadeyi görünce, \"Bir soruyu birlikte düşününce akıl çoğalır,\" dedi. "
+          "v": " bunun tek başına en doğru cevabı bulmaktan farklı olduğunu düşündü. Hoca, "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " yüzündeki ifadeyi görünce, \"Bir soruyu birlikte düşününce akıl çoğalır,\" dedi. "
         },
         {
           "t": "yoldas",
@@ -691,7 +718,16 @@
         },
         {
           "t": "metin",
-          "v": ", marangoz dükkânına dönerken güneş batıya doğru ilerlemişti. Çarşının pencerelerinden altın renkli ışık süzülüyor, yeni ayarlanmış saat ağır ağır akşamı bildiriyordu. Çocuğun cebinde eğri bir çivi vardı. Onu atmak yerine saklamıştı; çünkü bazen küçücük bir eğrilik koca bir hesabı değiştirebilirdi."
+          "v": ", evine dönerken güneş batıya doğru ilerlemişti. Çarşının pencerelerinden altın renkli ışık süzülüyor, yeni ayarlanmış saat ağır ağır akşamı bildiriyordu. "
+        },
+        {
+          "t": "yoldas",
+          "hal": "ilgi",
+          "yedek": "bir arkadaşın"
+        },
+        {
+          "t": "metin",
+          "v": " cebinde eğri bir çivi vardı. Onu atmak yerine saklamıştı; çünkü bazen küçücük bir eğrilik koca bir hesabı değiştirebilirdi."
         }
       ]
     },
@@ -800,22 +836,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Saatte ya da baktıkları yerde"
+          "metin": "Güneşin o sabah erken doğmasında"
         },
         {
           "id": "B",
-          "metin": "Yalnızca güneşte"
+          "metin": "Pazarda satılan un çuvallarında"
         },
         {
           "id": "C",
-          "metin": "Pazarda"
+          "metin": "Saatte ya da baktıkları yerde"
         },
         {
           "id": "D",
-          "metin": "Kuşta"
+          "metin": "Meydanın kaldırım taşlarının dizilişinde"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Hoca, hem saatin hem de gözlemin yanlış olabileceğini söyledi."
     },
     {
@@ -826,22 +862,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hatanın öğrenmeyi sağlayabileceğini ve saklanmaması gerektiğini"
+          "metin": "Hata yapan kişinin herkes önünde cezalandırılması gerektiğini"
         },
         {
           "id": "B",
-          "metin": "Hiç hata yapılmaması gerektiğini"
+          "metin": "Hataların yalnızca usta tarafından bilinmesi gerektiğini"
         },
         {
           "id": "C",
-          "metin": "Hatanın kimseyi ilgilendirmediğini"
+          "metin": "Hatanın saatle değil, yalnızca güneşle ilgili olduğunu"
         },
         {
           "id": "D",
-          "metin": "Hatanın saatle ilgili olmadığını"
+          "metin": "Hatanın öğrenmeyi sağlayabileceğini ve saklanmaması gerektiğini"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Hata fark edilip açıkça ele alındığında doğruya yaklaşmayı sağlar."
     },
     {
@@ -856,15 +892,15 @@
         },
         {
           "id": "B",
-          "metin": "Bir tür ekmek"
+          "metin": "Fırında pişirilen yassı bir ekmek türü"
         },
         {
           "id": "C",
-          "metin": "Bir gölge"
+          "metin": "Güneşin yere düşürdüğü karanlık bir iz"
         },
         {
           "id": "D",
-          "metin": "Bir saat parçası"
+          "metin": "Kulenin içindeki dişlilerden biri"
         }
       ],
       "dogru": "A",

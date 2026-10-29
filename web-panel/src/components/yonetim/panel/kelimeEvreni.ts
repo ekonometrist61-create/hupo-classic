@@ -1,7 +1,14 @@
 // Kelime Evreni yönetim ekranlarının ortak tipleri ve sunucu hata eşlemesi.
 
 export type KelimeDurum = "taslak" | "incelemede" | "yayinda" | "arsiv";
-export type KelimeIliskiTuru = "es_anlamli" | "zit_anlamli" | "es_sesli";
+export type KelimeIliskiTuru =
+  | "es_anlamli"
+  | "zit_anlamli"
+  | "es_sesli"
+  | "deyim"
+  | "atasozu"
+  | "sozcuk_turu"
+  | "baglamda_anlam";
 
 export interface AnlamSecenegi {
   id: string;
@@ -12,6 +19,9 @@ export interface AnlamSecenegi {
 // Sunucu hata kodu → çeviri anahtarı. Eşleşmeyen kod "genel" metnine düşer.
 const BILINEN_HATALAR = [
   "DORT_GOZ",
+  "DENETIM_EKSIK",
+  "DENETIM_HEDEFI_INCELEMEDE_DEGIL",
+  "BAD_LISTE",
   "ILISKI_ONAYSIZ",
   "GECERSIZ_GECIS",
   "DUZENLENEMEZ",

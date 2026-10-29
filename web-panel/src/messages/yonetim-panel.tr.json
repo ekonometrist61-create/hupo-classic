@@ -26,6 +26,7 @@
         "potansiyelAdaylar": "Potansiyel Adaylar",
         "classes": "Sınıflar",
         "questions": "Soru bankası",
+        "kazanimKapsami": "Kazanım Kapsamı",
         "mockExams": "Deneme sınavları",
         "kelimeEvreni": "Kelime Evreni",
         "notifications": "Bildirimler",
@@ -40,7 +41,14 @@
         "plans": "Planlar",
         "trials": "Denemeler",
         "analytics": "Analitik",
+        "buyumeOzeti": "Büyüme Özeti",
         "growthAnalitik": "Growth Analitik",
+        "harcama": "Reklam Harcaması",
+        "eldeTutma": "Elde Tutma",
+        "veriKalitesi": "Veri Kalitesi ve İzin",
+        "raporTaslak": "Haftalık Rapor Taslakları",
+        "ogrenmeToplam": "Öğrenme Analitiği (Toplu)",
+        "abDeney": "A/B Deneyleri",
         "aiOneriler": "AI Öneriler",
         "access": "Ekip & yetkiler",
         "channels": "Kanal ayarları",
@@ -54,6 +62,7 @@
         "ekipAkisi": "Ekip Akışı",
         "destekMasasi": "Destek Masası",
         "mesajSablonlari": "Mesaj Şablonları",
+        "mesajGunlugu": "Gönderim Günlüğü",
         "siteIcerik": "Site içeriği",
         "settings": "Uygulama ayarları"
       },
@@ -62,6 +71,7 @@
         "leads": "Henüz üye olmamış velilerin ilgi ve takip durumu.",
         "classes": "Sınıfları ve öğretmen atamalarını yönetin.",
         "questions": "Soru bankası için kontrollü içerik, onay ve toplu yükleme.",
+        "kazanimKapsami": "Her kazanımda kaç onaylı soru olduğunu hafta sırasıyla görün; boş kazanımları öncelikli üretin.",
         "mockExams": "Deneme sınavlarını tanımla, sorularını ata ve sonuçları izle.",
         "kelimeEvreni": "Kelime oyunlarının sorularını hazırla, incele ve yayınla; sözcük ilişkilerini onayla.",
         "notifications": "Segmentlere push kampanyası gönderin veya velilere hızlı bildirim yazın. Öğrenci hesaplarına pazarlama gitmez.",
@@ -75,10 +85,18 @@
         "ekipAkisi": "Ekip akışı — notlar ve aktivite geçmişi",
         "satisHatti": "Satış hattı — Lead ve fırsat yönetimi",
         "destekMasasi": "Destek masası — müşteri destek talepleri",
+        "buyumeOzeti": "Büyüme ekranlarına tek giriş, ekranı olmayan işler ve açık işler.",
         "growthAnalitik": "Growth analitik — dönüşüm hunisi ve segment metrikleri",
+        "harcama": "Manuel reklam harcaması. CAC için girilir; reklam hesabı bağlı değildir.",
+        "eldeTutma": "Kayıt sonrası D1, D7 ve D30 elde tutma oranları. 5'in altındaki sayılar gizlenir.",
+        "veriKalitesi": "Veri kalitesi kontrolleri ve kanal bazlı iletişim izni özeti. Küçük sayılar gizlenir.",
+        "raporTaslak": "Haftalık büyüme raporu taslakları. Gönderim yapılmaz; yalnız inceleme ve onay.",
+        "ogrenmeToplam": "Sınıf ve hikâye bazında toplu kullanım. Her hücrede en az 10 öğrenci; doğruluk ve kişi bilgisi yok.",
+        "abDeney": "Gerçek deneyler: taslak, onayla başlat, guardrail ihlalinde durdur. Atama ve sonuç analizi ayrı adımlardır.",
         "aiOneriler": "AI öneriler — bir sonraki en iyi aksiyon",
         "journey-otomasyonlari": "Journey otomasyonları — müşteri yolculukları",
         "mesajSablonlari": "Mesaj şablonları — kanal bazlı içerik",
+        "mesajGunlugu": "Gönderilen ve atlanan mesajların kaydı. E-posta ve telefon maskelenir.",
         "siteIcerik": "Site içeriği — landing, giriş, kayıt ve veli paneli metinleri"
       },
       "command": {
@@ -179,7 +197,11 @@
       "turler": {
         "es_anlamli": "Anlam Köprüleri · eş anlamlı",
         "zit_anlamli": "Zıtlık Vadisi · zıt anlamlı",
-        "es_sesli": "Aynalar Ormanı · eş sesli"
+        "es_sesli": "Aynalar Ormanı · eş sesli",
+        "deyim": "Deyimler Diyarı · deyim",
+        "atasozu": "Atasözü Pınarı · atasözü",
+        "sozcuk_turu": "Tür Bahçesi · sözcük türü",
+        "baglamda_anlam": "Bağlam Yolu · bağlamdan anlam"
       },
       "cols": {
         "kelime": "Kelime",
@@ -226,6 +248,46 @@
         "kaydet": "Taslağı kaydet",
         "kaydediliyor": "Kaydediliyor…",
         "vazgec": "Vazgeç"
+      },
+      "toplu": {
+        "listeTumu": "Listedeki tümünü seç ({sayi})",
+        "temizle": "Seçimi temizle",
+        "sayfaTumu": "Sayfadakilerin tümünü seç",
+        "satirSec": "{kelime} kelimesini seç",
+        "seciliSayi": "{sayi} soru seçildi",
+        "yayinaAl": "Yayına al",
+        "yayindanKaldir": "Yayından kaldır",
+        "limit": "Tek seferde en fazla 200 soru yayınlanabilir. Seçimi daraltın.",
+        "yayinKuruOzet": "{yayinlanabilir} soru yayınlanabilir, {atlanir} soru atlanır. Yayınlansın mı? Öğrencilere hemen görünür olur.",
+        "yayinlanabilirYok": "Seçilenlerde yayınlanabilir soru yok. {atlanir} soru atlanır.",
+        "yayinSonuc": "{yayinlandi} soru yayınlandı, {atlandi} soru atlandı.",
+        "kaldirYok": "Seçilenlerde yayında soru yok.",
+        "kaldirOnay": "{sayi} yayındaki soru arşivlenir ve öğrencilere görünmez. Devam edilsin mi?",
+        "kaldirSonuc": "{kaldirildi} soru yayından kaldırıldı, {atlandi} soru atlandı."
+      },
+      "kuyruk": {
+        "baslik": "İnceleme kuyruğu",
+        "aciklama": "Yayın için iki farklı model ailesi geçti vermiş olmalı. Yayınla düğmesi insan kontrolünüzdür: soruyu okuyup onaylayın.",
+        "bos": "İncelemede soru yok.",
+        "sinif": "Sınıf",
+        "tur": "Oyun",
+        "tumu": "Tümü",
+        "toplam": "{sayi} soru incelemede",
+        "kapiAcik": "Denetimden geçti",
+        "kapiKapali": "Denetim eksik",
+        "dogru": "doğru",
+        "cevapAnahtari": "Doğru şık",
+        "ipucu": "İpucu",
+        "seciliSayi": "{sayi} seçili",
+        "gecenleriSec": "Denetimden geçenleri seç",
+        "temizle": "Seçimi temizle",
+        "kontrolEt": "Seçilenleri kontrol et",
+        "yayinla": "Seçilenleri yayınla",
+        "kontrolSonuc": "Kontrol: {yayinlanir} soru yayınlanabilir, {atlanir} soru atlanır.",
+        "yayinOnay": "{sayi} soru öğrencilere görünür olacak. Soruları okudunuz mu? Yayınlansın mı?",
+        "yayinSonuc": "{yayinlanan} soru yayınlandı, {atlanan} soru atlandı.",
+        "taslagaAl": "Taslağa al",
+        "denetimYok": "Denetim kaydı yok"
       },
       "sozluk": {
         "baslik": "Sözcük envanteri ve ilişkiler",
@@ -278,6 +340,9 @@
         "ANLAM_BULUNAMADI": "Anlam bulunamadı. Sayfayı yenileyin.",
         "ILISKI_BULUNAMADI": "İlişki bulunamadı. Sayfayı yenileyin.",
         "ADMIN_ONLY": "Bu işlem için yönetici yetkisi gerekir.",
+        "DENETIM_EKSIK": "Yayın için iki farklı model ailesinden \"geçti\" kaydı gerekir (soru düzenlendiyse denetim yenilenmelidir).",
+        "DENETIM_HEDEFI_INCELEMEDE_DEGIL": "Denetim yalnız incelemedeki soruya yazılır.",
+        "BAD_LISTE": "Bir ile 200 arasında soru seçin.",
         "genel": "İşlem tamamlanamadı. Bilgileri kontrol edip tekrar deneyin."
       }
     },
@@ -594,7 +659,30 @@
       "activate": "Etkinleştir",
       "pause": "Duraklat",
       "form": { "title": "Yeni Journey", "name": "Ad", "trigger": "Tetikleyici", "status": "Durum", "errName": "Ad zorunlu (en fazla 120 karakter).", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
-      "pager": { "prev": "Önceki", "next": "Sonraki" }
+      "pager": { "prev": "Önceki", "next": "Sonraki" },
+      "stepsButton": "Adımlar",
+      "steps": {
+        "titleFor": "Adımlar: {name}",
+        "activeNote": "Journey aktif. Adımlar yalnızca okunur; değiştirmek için önce duraklatın.",
+        "editHint": "Bekleyen ya da işlenen kaydı olan journey adımları kaydedilemez; sunucu bu durumda değişikliği reddeder.",
+        "loading": "Adımlar yükleniyor...",
+        "empty": "Henüz adım yok. Adım ekleyip kaydedin.",
+        "addStep": "Adım ekle",
+        "maxReached": "En fazla 20 adım eklenebilir.",
+        "stepNo": "Adım {no}",
+        "type": "Tür",
+        "label": "Etiket",
+        "hours": "Bekleme süresi (saat, 0-8760)",
+        "moveUp": "Yukarı taşı",
+        "moveDown": "Aşağı taşı",
+        "remove": "Sil",
+        "channelClosed": "Bu kanal henüz kapalı; adım atlanır.",
+        "errLabel": "Her adımın etiketi zorunlu (en fazla 120 karakter).",
+        "errSaat": "Bekleme adımında saat 0-8760 arası tam sayı olmalı.",
+        "saved": "Adımlar kaydedildi.",
+        "close": "Kapat",
+        "stepTypes": { "trigger": "Tetikleyici", "delay": "Bekleme", "email": "E-posta", "push": "Push", "in_app": "Uygulama içi", "sms": "SMS", "whatsapp": "WhatsApp" }
+      }
     },
     "mesajSablonlari": {
       "title": "Mesaj Şablonları",
@@ -610,6 +698,24 @@
       "statuses": { "draft": "Taslak", "active": "Aktif", "archived": "Arşiv" },
       "cols": { "name": "Ad", "channel": "Kanal", "subject": "Konu", "status": "Durum", "created": "Oluşturma" },
       "form": { "titleNew": "Yeni Şablon", "titleEdit": "Şablonu düzenle", "name": "Ad", "channel": "Kanal", "subject": "Konu", "body": "İçerik", "bodyHint": "Değişken eklemek için {{ad}} biçimini kullanın.", "status": "Durum", "errName": "Şablon adı zorunlu (en fazla 120 karakter).", "errBody": "İçerik zorunlu.", "save": "Kaydet", "saving": "Kaydediliyor...", "cancel": "Vazgeç" },
+      "pager": { "prev": "Önceki", "next": "Sonraki" }
+    },
+    "mesajGunlugu": {
+      "title": "Gönderim Günlüğü",
+      "readOnlyNote": "Bu ekran yalnızca okunur. E-posta ve telefon maskelenir; çocuk bilgisi gösterilmez.",
+      "loading": "Yükleniyor...",
+      "loadError": "Gönderim kayıtları alınamadı.",
+      "retry": "Tekrar dene",
+      "empty": "Henüz gönderim kaydı yok.",
+      "emptyFiltered": "Seçili filtrelere uygun kayıt yok.",
+      "allChannels": "Tüm kanallar",
+      "allStatus": "Tüm durumlar",
+      "filters": { "channel": "Kanal", "status": "Durum" },
+      "channels": { "email": "E-posta", "sms": "SMS", "push": "Push", "in_app": "Uygulama içi", "whatsapp": "WhatsApp" },
+      "statuses": { "kuyrukta": "Kuyrukta", "gonderildi": "Gönderildi", "teslim_edildi": "Teslim edildi", "acildi": "Açıldı", "tiklandi": "Tıklandı", "donustu": "Dönüştü", "basarisiz": "Başarısız", "izin_yok": "İzin yok", "kanal_kapali": "Kanal kapalı" },
+      "source": { "campaign": "Kampanya", "journey": "Journey" },
+      "consent": { "yes": "İzin var", "no": "İzin yok", "unknown": "Bilinmiyor" },
+      "cols": { "time": "Zaman", "channel": "Kanal", "status": "Durum", "source": "Kampanya / Journey", "recipient": "Hane (maskeli)", "consent": "İzin", "error": "Hata" },
       "pager": { "prev": "Önceki", "next": "Sonraki" }
     },
     "destekMasasi": {
@@ -696,7 +802,7 @@
         "phone": "Telefon",
         "lifecycle": "Yaşam Döngüsü",
         "plan": "Plan",
-        "mrr": "MRR",
+        "mrr": "Toplam ödeme",
         "health": "Sağlık Skoru",
         "source": "Kaynak",
         "consent": "İzin",
@@ -722,7 +828,8 @@
         "next": "Sonraki"
       },
       "health": {
-        "label": "Sağlık skoru (0-100)"
+        "label": "Sağlık skoru (0-100)",
+        "noData": "Veri yok"
       },
       "tabs": {
         "genel": "Genel Bakış",
@@ -793,6 +900,90 @@
         "tickets": "Destek talebi yok.",
         "feed": "Ekip akışında kayıt yok.",
         "events": "Olay kaydı yok."
+      },
+      "aksiyon": {
+        "yukleniyor": "Yükleniyor...",
+        "kaydediliyor": "Kaydediliyor...",
+        "vazgec": "Vazgeç",
+        "hata": {
+          "genel": "İşlem tamamlanamadı.",
+          "eksik": "Bu işlem şu an kullanılamıyor. Sistem yöneticinize bildirin.",
+          "abonelik": "Aboneli haneler üzerinde bu işlem yapılamaz. Önce aboneliği sonlandırın.",
+          "demo": "Demo modunda kayıt yapılamaz."
+        },
+        "not": {
+          "baslik": "Not ekle",
+          "tur": "Tür",
+          "icerik": "İçerik",
+          "ekle": "Notu kaydet",
+          "hataIcerik": "İçerik 1-4000 karakter olmalı.",
+          "basarili": "Not eklendi.",
+          "tipler": { "note": "Not", "call": "Arama", "meeting": "Toplantı", "support": "Destek" }
+        },
+        "gorev": {
+          "baslik": "Görev oluştur",
+          "gorevBaslik": "Görev başlığı",
+          "tur": "Tür",
+          "oncelik": "Öncelik",
+          "bitis": "Bitiş tarihi",
+          "ekle": "Görevi oluştur",
+          "hataBaslik": "Başlık zorunlu (en fazla 200 karakter).",
+          "hataBitis": "Bitiş tarihi zorunlu.",
+          "basarili": "Görev oluşturuldu.",
+          "listeBaslik": "Bu müşterinin görevleri",
+          "bos": "Bu müşteri için görev yok."
+        },
+        "destek": {
+          "baslik": "Destek kaydı aç",
+          "konu": "Konu",
+          "kategori": "Kategori",
+          "oncelik": "Öncelik",
+          "ekle": "Destek kaydını aç",
+          "hataKonu": "Konu 1-200 karakter olmalı.",
+          "basarili": "Destek kaydı açıldı."
+        },
+        "sahip": {
+          "baslik": "Sahip",
+          "mevcut": "Mevcut sahip",
+          "yok": "Atanmamış",
+          "sec": "Yeni sahip",
+          "secim": "Yönetici seçin",
+          "kaydet": "Sahibi ata",
+          "hataSec": "Bir yönetici seçin.",
+          "basarili": "Sahip güncellendi.",
+          "bos": "Yönetici bulunamadı."
+        },
+        "birlestir": {
+          "baslik": "Hane birleştir",
+          "aciklama": "Bu haneyi başka bir müşteri kaydıyla birleştirin.",
+          "ara": "Hedef hane ara",
+          "araYer": "Ad, e-posta, telefon veya müşteri no",
+          "sonuc": "Eşleşen hane yok.",
+          "enAz": "Aramak için en az 2 karakter yazın.",
+          "sec": "Seç",
+          "secili": "Seçili hedef",
+          "birlestirBtn": "Birleştir",
+          "onayBaslik": "Haneleri birleştirin",
+          "uyari": "Bu işlem geri alınamaz. Bu hane seçilen hedef hane ile birleştirilecek.",
+          "onayBtn": "Evet, birleştir",
+          "basarili": "Haneler birleştirildi.",
+          "hedefGit": "Hedef müşteri kaydına git"
+        },
+        "kvkk": {
+          "baslik": "KVKK işlemleri",
+          "aciklama": "Yalnızca yöneticiler görür. Bu işlemler kişisel verileri etkiler.",
+          "aktar": "Verileri dışa aktar",
+          "aktarAciklama": "Hanenin kişisel verileri JSON dosyası olarak indirilir.",
+          "aktarBasarili": "Veriler dosya olarak indirildi.",
+          "anonim": "Anonimleştir",
+          "anonimAciklama": "Hanenin kişisel verileri anonimleştirilir. Bu işlem geri alınamaz.",
+          "onayBaslik": "Hane anonimleştirilsin mi?",
+          "uyari": "Bu işlem geri alınamaz. Kişisel veriler anonimleştirilir ve kayıt eski haline döndürülemez.",
+          "neden": "Neden (zorunlu)",
+          "hataNeden": "Neden 3-500 karakter olmalı.",
+          "onayBtn": "Evet, anonimleştir",
+          "basarili": "Kayıt anonimleştirildi."
+        }
       }
     },
     "crmGorevler": {
@@ -924,8 +1115,326 @@
       },
       "pager": { "prev": "Önceki", "next": "Sonraki" }
     },
+    "harcama": {
+      "description": "Reklam harcamasını elle girin. Reklam hesapları bağlı değildir; CAC yalnız harcama girilmiş dönemler için hesaplanır.",
+      "form": {
+        "title": "Harcama ekle",
+        "date": "Tarih",
+        "channel": "Kanal",
+        "amount": "Tutar",
+        "currency": "Para birimi",
+        "note": "Not (isteğe bağlı)",
+        "notePlaceholder": "Örn. Mart kampanyası",
+        "submit": "Kaydet",
+        "saving": "Kaydediliyor…",
+        "saved": "Harcama kaydedildi.",
+        "errAmount": "Tutar sıfırdan büyük bir sayı olmalı."
+      },
+      "window": { "label": "Dönem", "days": "Son {count} gün" },
+      "totals": {
+        "title": "Kanal toplamları",
+        "note": "Para birimleri ayrı toplanır; TL ile dolar karıştırılmaz.",
+        "empty": "Bu dönemde harcama girilmemiş. CAC henüz hesaplanamaz.",
+        "cacNote": "CAC henüz hesaplanmıyor; harcama kayıtları bu hesap için hazırlanıyor."
+      },
+      "cac": {
+        "title": "CAC (kayıt başına edinim maliyeti)",
+        "note": "Toplam harcama ÷ kayıtlı hane. Kanal bazlı CAC yok; para birimleri ayrı hesaplanır.",
+        "newHouseholds": "Kayıtlı hane",
+        "hidden": "Gizli (5'ten az)",
+        "spend": "Harcama",
+        "none": "Hesaplanamaz",
+        "lowData": "5'ten az kayıt; CAC gizli",
+        "noSpend": "Bu dönemde harcama girilmemiş; CAC hesaplanmıyor."
+      },
+      "table": {
+        "title": "Kayıtlar",
+        "empty": "Bu dönemde kayıt yok.",
+        "delete": "Sil",
+        "confirmDelete": "Bu harcama kaydı silinsin mi? İşlem denetim kaydına yazılır.",
+        "cols": { "date": "Tarih", "channel": "Kanal", "amount": "Tutar", "note": "Not", "action": "İşlem" }
+      },
+      "channels": {
+        "meta": "Meta",
+        "google_ads": "Google Ads",
+        "tiktok": "TikTok",
+        "youtube": "YouTube",
+        "instagram": "Instagram",
+        "diger": "Diğer"
+      },
+      "loading": "Yükleniyor…",
+      "loadError": "Harcama verisi yüklenemedi.",
+      "retry": "Tekrar dene"
+    },
+    "eldeTutma": {
+      "title": "Elde tutma (kohort)",
+      "description": "Kayıt olan haneler, kayıt gününden tam 1, 7 ve 30 gün sonra en az bir aktif günle geri döndü mü.",
+      "window": { "label": "Dönem", "days": "Son {count} gün" },
+      "cards": { "d1": "D1 (1. gün)", "d7": "D7 (7. gün)", "d30": "D30 (30. gün)" },
+      "hidden": "Gizli (5'ten az)",
+      "eligible": "Uygun",
+      "retained": "Tutulan",
+      "note": "Olgunluk: yalnız N. günü dolmuş haneler paydaya girer. Pay veya payda 5'in altındaysa oran gizlenir. Kayıtlı hane: visitor ve lead dışındaki haneler.",
+      "loading": "Yükleniyor…",
+      "loadError": "Elde tutma verisi yüklenemedi.",
+      "retry": "Tekrar dene",
+      "weekly": {
+        "title": "Haftalık kohortlar",
+        "empty": "Bu dönemde kayıtlı hane yok.",
+        "cols": { "week": "Hafta (Pzt)", "size": "Boyut" }
+      }
+    },
+    "veriKalitesi": {
+      "loading": "Yükleniyor…",
+      "loadError": "Veri kalitesi verisi yüklenemedi.",
+      "retry": "Tekrar dene",
+      "hidden": "Gizli (5'ten az)",
+      "quality": {
+        "title": "Veri kalitesi",
+        "veliToplam": "Veli profili",
+        "eposta_eksik": "E-postası eksik hane",
+        "eposta_eksikDesc": "E-posta alanı boş veya yalnız boşluk. Ölçüm ve bildirim yapılamaz.",
+        "aktif_tarihsiz": "Aktive hane, tarih yok",
+        "aktif_tarihsizDesc": "Aktive ve sonrası aşamada olup aktivasyon tarihi boş. Yaşam döngüsü hatası olabilir."
+      },
+      "consent": {
+        "title": "İletişim izni (kanal bazlı)",
+        "note": "Yalnız veli profilleri. Tercih kaydı olmayan veli, o kanal için izin vermemiş sayılır.",
+        "cols": {
+          "channel": "Kanal",
+          "on": "İzin açık",
+          "off": "İzin kapalı",
+          "none": "Kayıt yok"
+        }
+      },
+      "channels": {
+        "eposta": "E-posta",
+        "push": "Anlık bildirim",
+        "sms": "SMS",
+        "uygulama_ici": "Uygulama içi"
+      }
+    },
+    "raporTaslak": {
+      "title": "Haftalık büyüme raporu",
+      "description": "Her ISO hafta için bir taslak üretilir. Taslak yalnız burada karara bağlanır; hiçbir alıcıya gönderilmez.",
+      "produce": "Bu haftanın taslağını üret",
+      "produced": "Taslak hazır (aynı hafta için yeni kayıt açılmaz).",
+      "loading": "Yükleniyor…",
+      "empty": "Henüz taslak yok. Bu haftanın taslağını üretebilirsiniz.",
+      "approve": "Onayla",
+      "reject": "Reddet",
+      "approved": "Rapor onaylandı. Bu yalnız kayıt işaretidir; gönderim ayrı bir adımdır.",
+      "rejected": "Rapor reddedildi.",
+      "confirmApprove": "Rapor onaylansın mı? Onay yalnız kayıt olarak işaretlenir; hiçbir alıcıya gönderilmez.",
+      "noteLabel": "Not (isteğe bağlı)",
+      "createdAt": "Üretildi",
+      "decidedAt": "Karar",
+      "hidden": "Gizli (5'ten az)",
+      "noSpend": "Harcama yok; CAC hesaplanmadı.",
+      "status": {
+        "taslak": "Taslak",
+        "onaylandi": "Onaylandı",
+        "reddedildi": "Reddedildi"
+      },
+      "sections": {
+        "retention": "Elde tutma",
+        "cac": "CAC",
+        "quality": "Veri kalitesi"
+      },
+      "quality": {
+        "eposta_eksik": "E-postası eksik hane",
+        "aktif_tarihsiz": "Aktive hane, tarih yok"
+      }
+    },
+    "ogrenmeToplam": {
+      "title": "Toplu öğrenme görünümü",
+      "description": "Oturum, öğrenci sayısı ve tamamlama oranı. Doğruluk, beceri ve kişi bilgisi bu ekranda yoktur.",
+      "window": {
+        "label": "Dönem",
+        "days": "Son {count} gün"
+      },
+      "loading": "Yükleniyor…",
+      "loadError": "Toplu öğrenme verisi yüklenemedi.",
+      "retry": "Tekrar dene",
+      "threshold": "Gösterim eşiği: hücre başına en az {count} öğrenci. Altındaki satırlar gizlenir.",
+      "classes": {
+        "title": "Sınıflar",
+        "empty": "Bu dönemde eşik üstü sınıf yok.",
+        "cols": {
+          "grade": "Sınıf"
+        }
+      },
+      "stories": {
+        "title": "Hikâyeler",
+        "empty": "Bu dönemde eşik üstü hikâye yok.",
+        "cols": {
+          "story": "Hikâye"
+        }
+      },
+      "cols": {
+        "students": "Öğrenci",
+        "sessions": "Oturum",
+        "completion": "Tamamlama"
+      }
+    },
+    "abDeney": {
+      "decision": {
+        "title": "Karar kaydı",
+        "note": "Analiz sonucunu girin. Sayılar analiz çıktısından yönetici tarafından girilir; sistem yeniden hesaplamaz. Bitiş tarihi geçmeden karar verilemez.",
+        "none": "Karar verilebilecek yayında veya durdurulmuş deney yok.",
+        "errors": {
+          "deney": "Önce bir deney seçin.",
+          "sayi": "Sonuç sayılarının tümünü girin."
+        },
+        "fields": {
+          "experiment": "Deney",
+          "choose": "Seçin…",
+          "outcome": "Sonuç durumu",
+          "control": "Kontrol oranı (%)",
+          "treatment": "Deney oranı (%)",
+          "p": "p-değeri",
+          "ciLow": "Güven aralığı alt (%)",
+          "ciHigh": "Güven aralığı üst (%)",
+          "decision": "Karar",
+          "srm": "SRM p-değeri (varsa)",
+          "reason": "Gerekçe"
+        },
+        "outcome": {
+          "karar_hazir": "Karar hazır",
+          "guardrail_ihlali": "Guardrail ihlali",
+          "srm_gecersiz": "SRM geçersiz",
+          "yetersiz_ornek": "Yetersiz örneklem"
+        },
+        "decisionOptions": {
+          "kazan_deney": "Deney kazandı",
+          "kazan_kontrol": "Kontrol kazandı",
+          "uygulama_yok": "Uygulama yok",
+          "tekrarla": "Tekrarla"
+        },
+        "submit": "Kararı kaydet",
+        "fill": "Veritabanından doldur",
+        "filled": "Sayılar veritabanından alındı (kontrol n={kn}, deney n={dn}). Oran, p ve %95 güven aralığı bu sayılardan hesaplandı.",
+        "lowN": "Kol başına örneklem 30'un altında (eşik {esik}); sayılar gizli.",
+        "saved": "Karar kaydedildi."
+      },
+      "title": "A/B deneyleri",
+      "description": "Deney tanımı ve yaşam döngüsü. Başlatma onay notu ister; durdurma gerekçe ister. Sonuç analizi bu ekranda değildir.",
+      "loading": "Yükleniyor…",
+      "saved": "Deney taslağı kaydedildi.",
+      "started": "Deney başlatıldı.",
+      "stopped": "Deney durduruldu.",
+      "confirmStart": "Deney başlatılsın mı? Başlatılan deney tanımı değiştirilemez.",
+      "confirmStop": "Deney durdurulsun mu? Bu işlem geri alınamaz.",
+      "create": {
+        "title": "Yeni deney taslağı",
+        "note": "Taslak, başlatılana kadar kullanıcıya atama yapmaz. Guardrail en az iki metrik; örneklem en az 30.",
+        "fields": {
+          "name": "Deney adı",
+          "primary": "Birincil metrik",
+          "owner": "Sorumlu kişi",
+          "hypothesis": "Hipotez",
+          "guardrail": "Guardrail metrikleri (virgülle, en az 2)",
+          "guardrailPlaceholder": "iade_orani, sikayet_orani",
+          "baseline": "Referans oranı (%)",
+          "minEffect": "Minimum ilgi farkı (% puan)",
+          "sample": "Kol başına örneklem",
+          "start": "Başlangıç",
+          "end": "Bitiş"
+        },
+        "submit": "Taslağı kaydet"
+      },
+      "errors": {
+        "guardrail": "En az iki guardrail metrik gerekir.",
+        "percent": "Oranlar 0 ile 100 arasında olmalı.",
+        "onayNotu": "Başlatmak için onay notu yazın.",
+        "neden": "Durdurmak için gerekçe yazın."
+      },
+      "list": {
+        "title": "Deneyler",
+        "empty": "Henüz deney yok.",
+        "cols": {
+          "name": "Deney",
+          "status": "Durum",
+          "dates": "Tarihler",
+          "guardrail": "Guardrail",
+          "action": "İşlem"
+        }
+      },
+      "status": {
+        "taslak": "Taslak",
+        "yayinda": "Yayında",
+        "bitti": "Bitti",
+        "durduruldu": "Durduruldu"
+      },
+      "start": {
+        "label": "Onayla ve başlat",
+        "note": "Onay notu",
+        "notePlaceholder": "Onay veren ve dayanak"
+      },
+      "stop": {
+        "label": "Durdur",
+        "reason": "Durdurma gerekçesi",
+        "reasonPlaceholder": "Guardrail ihlali, hata vb."
+      }
+    },
     "growthAnalitik": {
       "title": "Growth Analitik",
+      "error": "Veriler alınamadı.",
+      "lowData": "Bu dönemde gösterilecek yeterli veri yok.",
+      "suppressed": "Az veri (5'ten az, gizli)",
+      "hiddenNote": "5'ten az olan sayılar gizlenir; bu hücreler “—” olarak görünür.",
+      "csvButton": "CSV indir",
+      "funnel": {
+        "title": "Kayıt huni",
+        "desc": "Son {count} günde kayıt olan haneler. Her adım kendi ölçütüyle sayılır.",
+        "colStep": "Adım",
+        "colCount": "Sayı",
+        "colPrevious": "Önceki adıma",
+        "colSignup": "Kayda göre",
+        "churn": "Ayrıldı (churn)",
+        "steps": {
+          "kayit": "Kayıt",
+          "cocuk_bagli": "Çocuk bağladı",
+          "ilk_soru": "İlk soruyu çözdü",
+          "deneme_basladi": "Deneme başladı",
+          "ucretli": "Ücretli"
+        }
+      },
+      "utm": {
+        "title": "Kanal ve kampanya atfı",
+        "desc": "Son {count} günde ilk temas UTM'ine göre ziyaretçi, kayıt ve ücretli sayıları.",
+        "other": "Diğer (küçük gruplar)",
+        "cols": {
+          "channel": "Kanal",
+          "medium": "Ortam",
+          "campaign": "Kampanya",
+          "visitors": "Ziyaretçi",
+          "signups": "Kayıt",
+          "signupRate": "Kayıt %",
+          "paid": "Ücretli",
+          "paidRate": "Ücretli %"
+        }
+      },
+      "activity": {
+        "title": "Aktiflik",
+        "desc": "Cevap veren benzersiz öğrenci sayısı. Günler Türkiye saatiyle sayılır.",
+        "dau": "Günlük aktif (DAU)",
+        "wau": "Haftalık aktif (WAU)",
+        "mau": "Aylık aktif (MAU)",
+        "stickiness": "DAU / MAU: {pct}",
+        "stickinessLabel": "DAU/MAU yapışkanlık (%)",
+        "series": "Günlük aktif öğrenci",
+        "seriesDesc": "Seçilen dönemin her günü",
+        "seriesAria": "Son {count} günün günlük aktif öğrenci grafiği"
+      },
+      "csv": {
+        "funnel": "Kayıt huni",
+        "utm": "Kanal ve kampanya atfı",
+        "activity": "Aktiflik",
+        "metric": "Ölçü",
+        "value": "Değer",
+        "note": "Boş hücre: 5'ten az olan (gizli) sayı veya oran. Dosyada kişisel veri yoktur."
+      },
       "loading": "Yükleniyor...",
       "empty": "Veri bulunamadı.",
       "retry": "Tekrar dene",

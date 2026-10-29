@@ -11,6 +11,7 @@ import '../models/challenge_models.dart';
 import '../models/kelime_models.dart';
 import '../models/models.dart';
 import '../providers/app_providers.dart';
+import '../services/deneme_sinir.dart';
 import '../theme/app_theme.dart';
 import '../widgets/ui/game_card.dart';
 import '../widgets/ui/responsive_page.dart';
@@ -59,7 +60,7 @@ class _ChallengeHubScreenState extends ConsumerState<ChallengeHubScreen> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Meydan okuma oluşturulamadı: $e')),
+          SnackBar(content: Text(denemeSinirMetni(e) ?? 'Meydan okuma oluşturulamadı: $e')),
         );
       }
     } finally {
@@ -86,7 +87,7 @@ class _ChallengeHubScreenState extends ConsumerState<ChallengeHubScreen> {
     } catch (e) {
       if (mounted) {
         ScaffoldMessenger.of(context).showSnackBar(
-          SnackBar(content: Text('Katılınamadı: $e')),
+          SnackBar(content: Text(denemeSinirMetni(e) ?? 'Katılınamadı: $e')),
         );
       }
     } finally {

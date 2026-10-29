@@ -1,0 +1,1463 @@
+[
+ {
+  "id": "MAT1-ORU-S1-001",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "dikdörtgen",
+   "C": "üçgen",
+   "D": "daire"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil kare olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "C": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "D": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"424\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"17\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"72\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"137\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"167\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"222\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"287\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"317\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"367\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"387\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "dikdortgen",
+     "kare",
+     "daire",
+     "dikdortgen",
+     "kare",
+     "daire",
+     "dikdortgen"
+    ],
+    "siradaki": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "kare"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-002",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "dikdörtgen",
+   "C": "daire",
+   "D": "üçgen"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil üçgen olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "B": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "C": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"374\" height=\"84\" fill=\"#FFFFFF\"/><polygon points=\"37,25 20,57 54,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"87,25 70,57 104,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"137\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"187,25 170,57 204,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"237,25 220,57 254,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"287\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"317\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"337\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "ucgen",
+     "ucgen",
+     "daire",
+     "ucgen",
+     "ucgen",
+     "daire"
+    ],
+    "siradaki": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "ucgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-003",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "dikdörtgen",
+   "C": "üçgen",
+   "D": "daire"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil dikdörtgen olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "B": "Doğru.",
+   "C": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "D": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"374\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"17\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"67\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"137,25 120,57 154,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"167\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"217\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"287,25 270,57 304,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"317\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"337\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "dikdortgen",
+     "dikdortgen",
+     "ucgen",
+     "dikdortgen",
+     "dikdortgen",
+     "ucgen"
+    ],
+    "siradaki": "dikdortgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "dikdortgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-004",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "dikdörtgen",
+   "C": "daire",
+   "D": "üçgen"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 2 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil daire olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "kare örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dairedir.",
+   "B": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dairedir.",
+   "C": "Doğru.",
+   "D": "üçgen örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dairedir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 324 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"324\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"22\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"87\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"122\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"187\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"222\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"267\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"287\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "kare",
+     "daire",
+     "kare",
+     "daire",
+     "kare"
+    ],
+    "siradaki": "daire"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "daire"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-005",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "üçgen",
+   "B": "dikdörtgen",
+   "C": "kare",
+   "D": "daire"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil dikdörtgen olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "B": "Doğru.",
+   "C": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "D": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"424\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"22\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"67\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"137,25 120,57 154,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"172\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"217\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"287,25 270,57 304,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"322\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"367\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"387\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "kare",
+     "dikdortgen",
+     "ucgen",
+     "kare",
+     "dikdortgen",
+     "ucgen",
+     "kare"
+    ],
+    "siradaki": "dikdortgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "dikdortgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-006",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "dikdörtgen",
+   "C": "üçgen",
+   "D": "daire"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil üçgen olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "B": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "C": "Doğru.",
+   "D": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"374\" height=\"84\" fill=\"#FFFFFF\"/><polygon points=\"37,25 20,57 54,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"72\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"122\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"187,25 170,57 204,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"222\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"272\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"317\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"337\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "ucgen",
+     "kare",
+     "kare",
+     "ucgen",
+     "kare",
+     "kare"
+    ],
+    "siradaki": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "ucgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-007",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "dikdörtgen",
+   "B": "kare",
+   "C": "üçgen",
+   "D": "daire"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil daire olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dairedir.",
+   "B": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dairedir.",
+   "C": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dairedir.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"424\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"22\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"87\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"117\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"172\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"237\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"267\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"322\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"367\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"387\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "kare",
+     "daire",
+     "dikdortgen",
+     "kare",
+     "daire",
+     "dikdortgen",
+     "kare"
+    ],
+    "siradaki": "daire"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "daire"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-008",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "daire",
+   "C": "üçgen",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil kare olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "C": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "D": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"424\" height=\"84\" fill=\"#FFFFFF\"/><circle cx=\"37\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"72\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"122\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"187\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"222\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"272\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"337\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"367\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"387\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "daire",
+     "kare",
+     "kare",
+     "daire",
+     "kare",
+     "kare",
+     "daire"
+    ],
+    "siradaki": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "kare"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-009",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "dikdörtgen",
+   "C": "kare",
+   "D": "üçgen"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil üçgen olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "B": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "C": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"424\" height=\"84\" fill=\"#FFFFFF\"/><polygon points=\"37,25 20,57 54,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"87,25 70,57 104,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"122\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"187,25 170,57 204,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"237,25 220,57 254,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"272\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"337,25 320,57 354,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"367\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"387\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "ucgen",
+     "ucgen",
+     "kare",
+     "ucgen",
+     "ucgen",
+     "kare",
+     "ucgen"
+    ],
+    "siradaki": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "ucgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-010",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "üçgen",
+   "C": "dikdörtgen",
+   "D": "daire"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 2 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil üçgen olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "kare örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "B": "Doğru.",
+   "C": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "D": "daire örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 274 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"274\" height=\"84\" fill=\"#FFFFFF\"/><polygon points=\"37,25 20,57 54,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"72\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"137,25 120,57 154,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"172\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"217\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"237\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "ucgen",
+     "kare",
+     "ucgen",
+     "kare"
+    ],
+    "siradaki": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "ucgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-011",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "kare",
+   "C": "üçgen",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil daire olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dairedir.",
+   "C": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dairedir.",
+   "D": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dairedir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"374\" height=\"84\" fill=\"#FFFFFF\"/><circle cx=\"37\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"87,25 70,57 104,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"137,25 120,57 154,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"187\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"237,25 220,57 254,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><polygon points=\"287,25 270,57 304,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"317\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"337\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "daire",
+     "ucgen",
+     "ucgen",
+     "daire",
+     "ucgen",
+     "ucgen"
+    ],
+    "siradaki": "daire"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "daire"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-012",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "üçgen",
+   "B": "kare",
+   "C": "dikdörtgen",
+   "D": "daire"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil dikdörtgen olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "B": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "C": "Doğru.",
+   "D": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"374\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"17\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"87,25 70,57 104,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"137\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"167\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"237,25 220,57 254,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><circle cx=\"287\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"317\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"337\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "dikdortgen",
+     "ucgen",
+     "daire",
+     "dikdortgen",
+     "ucgen",
+     "daire"
+    ],
+    "siradaki": "dikdortgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "dikdortgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-013",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "dikdörtgen",
+   "B": "üçgen",
+   "C": "daire",
+   "D": "kare"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 2 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil kare olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "B": "üçgen örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "C": "daire örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 274 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"274\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"22\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"67\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"122\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"167\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"217\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"237\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "kare",
+     "dikdortgen",
+     "kare",
+     "dikdortgen"
+    ],
+    "siradaki": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "kare"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-014",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "dikdörtgen",
+   "C": "kare",
+   "D": "üçgen"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil dikdörtgen olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "B": "Doğru.",
+   "C": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "D": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"424\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"17\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"67\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"122\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"167\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"217\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"272\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"317\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"367\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"387\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "dikdortgen",
+     "dikdortgen",
+     "kare",
+     "dikdortgen",
+     "dikdortgen",
+     "kare",
+     "dikdortgen"
+    ],
+    "siradaki": "dikdortgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "dikdortgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-015",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "daire",
+   "C": "üçgen",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil kare olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "C": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "D": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 374 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"374\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"22\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"87,25 70,57 104,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"117\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"172\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"237,25 220,57 254,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"267\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"317\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"337\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "kare",
+     "ucgen",
+     "dikdortgen",
+     "kare",
+     "ucgen",
+     "dikdortgen"
+    ],
+    "siradaki": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "kare"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-016",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "üçgen",
+   "B": "dikdörtgen",
+   "C": "kare",
+   "D": "daire"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil kare olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "B": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir.",
+   "C": "Doğru.",
+   "D": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil karedir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"424\" height=\"84\" fill=\"#FFFFFF\"/><polygon points=\"37,25 20,57 54,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"72\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"117\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"187,25 170,57 204,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"222\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"267\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"337,25 320,57 354,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"367\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"387\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "ucgen",
+     "kare",
+     "dikdortgen",
+     "ucgen",
+     "kare",
+     "dikdortgen",
+     "ucgen"
+    ],
+    "siradaki": "kare"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "kare"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-017",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "dikdörtgen",
+   "B": "üçgen",
+   "C": "kare",
+   "D": "daire"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil dikdörtgen olur.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "C": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "D": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"424\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"17\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"67\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"137,25 120,57 154,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"167\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"217\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"287,25 270,57 304,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"317\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"367\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"387\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "dikdortgen",
+     "dikdortgen",
+     "ucgen",
+     "dikdortgen",
+     "dikdortgen",
+     "ucgen",
+     "dikdortgen"
+    ],
+    "siradaki": "dikdortgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "dikdortgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-018",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "daire",
+   "B": "kare",
+   "C": "üçgen",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 2 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil üçgen olur.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "daire örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "B": "kare örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "C": "Doğru.",
+   "D": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 274 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"274\" height=\"84\" fill=\"#FFFFFF\"/><polygon points=\"37,25 20,57 54,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"67\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"137,25 120,57 154,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"167\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"217\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"237\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "ucgen",
+     "dikdortgen",
+     "ucgen",
+     "dikdortgen"
+    ],
+    "siradaki": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "ucgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-019",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "dikdörtgen",
+   "B": "üçgen",
+   "C": "daire",
+   "D": "kare"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 2 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil üçgen olur.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "dikdörtgen örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "B": "Doğru.",
+   "C": "daire örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir.",
+   "D": "kare örüntüdeki sıraya uymaz; örüntü 2 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil üçgendir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 324 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"324\" height=\"84\" fill=\"#FFFFFF\"/><rect x=\"22\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"87,25 70,57 104,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"122\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"187,25 170,57 204,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"222\" y=\"27\" width=\"30\" height=\"30\" fill=\"#E69F00\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><rect x=\"267\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"287\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "kare",
+     "ucgen",
+     "kare",
+     "ucgen",
+     "kare"
+    ],
+    "siradaki": "ucgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "ucgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT1-ORU-S1-020",
+  "sinif": 1,
+  "ders": "Matematik",
+  "mufredat_surum": "TYMM 1-2 taslak 2026-27",
+  "kazanim_kodu": "MAT.1.1.6",
+  "konu": "Örüntüler",
+  "alt_konu": "Şekil örüntüsünün devamı",
+  "soru_metni": "Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?",
+  "siklar": {
+   "A": "kare",
+   "B": "üçgen",
+   "C": "daire",
+   "D": "dikdörtgen"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Şekillerin kaç tanesinin sürekli tekrar ettiğine bak.",
+  "cozum_adimlari": [
+   "Örüntü her 3 şekilde bir kendini tekrar eder.",
+   "Soru işaretinden önceki şekillere bakıldığında sıradaki şekil dikdörtgen olur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "kare örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "B": "üçgen örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "C": "daire örüntüdeki sıraya uymaz; örüntü 3 şekilden oluşan bir grubun tekrarıdır ve sıradaki şekil dikdörtgendir.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "oruntu-dizisi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 424 84\" role=\"img\" aria-label=\"Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.\"><rect width=\"424\" height=\"84\" fill=\"#FFFFFF\"/><polygon points=\"37,25 20,57 54,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"67\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"137\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"187,25 170,57 204,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"217\" y=\"31\" width=\"40\" height=\"22\" fill=\"#CC79A7\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><circle cx=\"287\" cy=\"42\" r=\"15\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1.2\"/><polygon points=\"337,25 320,57 354,57\" fill=\"#009E73\" stroke=\"#1F2937\" stroke-width=\"1.2\" stroke-linejoin=\"round\"/><rect x=\"367\" y=\"22\" width=\"40\" height=\"40\" fill=\"none\" stroke=\"#1F2937\" stroke-width=\"1.4\"/><text x=\"387\" y=\"49\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"20\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">?</text></svg>",
+   "alt_metin": "Şekillerden oluşan bir örüntü; son kutu boştur ve soru işareti vardır.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "oruntu-dizisi",
+   "parametreler": {
+    "dizi": [
+     "ucgen",
+     "dikdortgen",
+     "daire",
+     "ucgen",
+     "dikdortgen",
+     "daire",
+     "ucgen"
+    ],
+    "siradaki": "dikdortgen"
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "siradaki"
+    ],
+    "beklenen": "dikdortgen"
+   },
+   {
+    "yol": [
+     "birim_uzunlugu"
+    ],
+    "beklenen": 3
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat1-sekil-oruntusu",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ }
+]

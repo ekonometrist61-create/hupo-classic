@@ -1,0 +1,552 @@
+{
+  "version": "1.0",
+  "built_at": "2026-10-24",
+  "grades": {
+    "1": {
+      "age": "6–7",
+      "curr": "TYMM",
+      "lessons": [
+        "Türkçe",
+        "Matematik",
+        "Hayat Bilgisi"
+      ],
+      "literacy": "Ses ayrımı, ses-harf eşleştirme, hece→sözcük→cümle; okur-yazarlık evresi öğrencinin bildiği seslerle sınırlı olabilir.",
+      "story": "Somut bir ihtiyaç, 1 ana olay, az karakter ve kısa diyalog. Harf-ses evresine göre kontrollü okunabilirlik; 250–300 kelime gerekiyorsa yetişkin seslendirmesi veya bölümlere yayılmış bağımsız okuma. Kısaltılmış son hikâye diye etiketleme.",
+      "question": "İşitsel/görsel yönerge, somut eşleme, bir işlem; bir soruda tek hedef. Serbest yazı becerisi henüz oluşmamışsa yazılı yanıtı zorunlu kılma.",
+      "word": "Yüksek frekanslı somut ad-eylem; nesne-resim-ses; konuşma dili ile yazı dilinin farkı. Bilinmeyen harf içeren hedef sözcüğün bağımsız okumaya zorunlu verilmemesi.",
+      "trap": "Erken okuryazarı 250–300 kelime metni tek oturuşta tek başına okumaya zorlamak; yazma hızını fen/matematik bilgisi yerine puanlamak.",
+      "infer": "Görselde açık olan bilgi ile metinden çıkarsanması istenen bilgi ayrıştırılsın.",
+      "themes": "Okul, arkadaş, aile, duygu, yakın çevre ve güvenli alışkanlıklar.",
+      "rubric": "Ses-harf erişilebilirliği, yönergenin tek işlemli olması, somut bağlam.",
+      "special": "read_aloud_eligible=true, known_letter_groups gereksinimi; işitsel test ile bağımsız okuma testi farklı raporlanır.",
+      "grade": 1,
+      "story_length_band_contest_2026": [
+        250,
+        300
+      ],
+      "pilot_learning_load": {
+        "grade": 1,
+        "status": "PILOT_HEDEF_MEB_ZORUNLULUGU_DEGIL",
+        "new_target_lemmas_per_story": [
+          1,
+          2
+        ],
+        "new_course_concepts_per_story": [
+          0,
+          1
+        ],
+        "new_idiom_proverb_per_story": [
+          0,
+          0
+        ],
+        "comprehension_questions_per_story": [
+          1,
+          2
+        ],
+        "new_target_total_soft_max": 2,
+        "single_story_semantic_repeats_pilot": [
+          1,
+          3
+        ],
+        "typical_new_concept_story_arc": {
+          "somut": [
+            2,
+            3
+          ],
+          "ilişkisel": [
+            3,
+            5
+          ],
+          "soyut_ve_yanilgi_yuklu": [
+            4,
+            8
+          ]
+        },
+        "reading_mode": "harf_ses_evresi_zorunlu",
+        "notes": "Tekrarlanan sözcük yeni hedef sayılmaz; sayısal hedef bireysel okumaya ve içerik uzunluğuna göre düşürülür. Zorluğu ölçülmeden yayımlanmaz."
+      },
+      "curriculum_year": "2026-2027",
+      "source_status": "grade editorial profile, not full official outcome map"
+    },
+    "2": {
+      "age": "7–8",
+      "curr": "TYMM",
+      "lessons": [
+        "Türkçe",
+        "Matematik",
+        "Hayat Bilgisi",
+        "İngilizce"
+      ],
+      "literacy": "Akıcılık, noktalama ipucu, basit neden-sonuç ve olay sıralaması; okuma hataları anlaşılmayı gölgelememeli.",
+      "story": "Belirgin istek-engel-deneme-sonuç; 2–3 karakter; diyalog ve keşif. Değer çözümü kahramanın eyleminden doğsun.",
+      "question": "Kim-ne-nerede, olay sıralama, ilk neden-sonuç, kısa açıklama. Matematikte birim ve koşul görünür.",
+      "word": "Bağlamda eş ve zıt anlam; somut çokanlamlılık; deyim/atasözü yalnız doğal ise, yoksa zorlanmaz.",
+      "trap": "Her okuma metnine bir atasözü ve pek çok kelime yükleyip hikâyeyi ders anlatımına çevirmek.",
+      "infer": "Öğrenci cevabını bir cümleye/görsel ayrıntıya dayandırabilir.",
+      "themes": "Doğa, günlük rutin, basit tasarım, sorumluluk, iş birliği, küçük sırlar.",
+      "rubric": "300–350 kelimede tam olay örgüsü, çıkarım kanıtı, yeni sözcük yükü.",
+      "special": "Renkli arayüz ve özgün semboller olabilir; ikonlar anlamı açıklasın, cevap ipucu olmasın.",
+      "grade": 2,
+      "story_length_band_contest_2026": [
+        300,
+        350
+      ],
+      "pilot_learning_load": {
+        "grade": 2,
+        "status": "PILOT_HEDEF_MEB_ZORUNLULUGU_DEGIL",
+        "new_target_lemmas_per_story": [
+          2,
+          3
+        ],
+        "new_course_concepts_per_story": [
+          0,
+          1
+        ],
+        "new_idiom_proverb_per_story": [
+          0,
+          1
+        ],
+        "comprehension_questions_per_story": [
+          2,
+          3
+        ],
+        "new_target_total_soft_max": 4,
+        "single_story_semantic_repeats_pilot": [
+          1,
+          3
+        ],
+        "typical_new_concept_story_arc": {
+          "somut": [
+            2,
+            3
+          ],
+          "ilişkisel": [
+            3,
+            5
+          ],
+          "soyut_ve_yanilgi_yuklu": [
+            4,
+            8
+          ]
+        },
+        "reading_mode": "düzey_gelişimi",
+        "notes": "Tekrarlanan sözcük yeni hedef sayılmaz; sayısal hedef bireysel okumaya ve içerik uzunluğuna göre düşürülür. Zorluğu ölçülmeden yayımlanmaz."
+      },
+      "curriculum_year": "2026-2027",
+      "source_status": "grade editorial profile, not full official outcome map"
+    },
+    "3": {
+      "age": "8–9",
+      "curr": "TYMM",
+      "lessons": [
+        "Türkçe",
+        "Matematik",
+        "Hayat Bilgisi",
+        "Fen Bilimleri",
+        "İngilizce"
+      ],
+      "literacy": "Paragraf arası bağ kurma, çıkarım, zaman sırası, karşılaştırma; bilgi metni ile anlatı ayrımı.",
+      "story": "Girişte güçlü merak, iki aşamalı problem, gözlem-hipotez-çözüm; kahramanın yanılgısı öğrenme fırsatı.",
+      "question": "Kanıt işaretleme, sonuç tahmini, iki adımlı hesap, süreç ve karşılaştırma; yanlış çıkarımı gerekçelendir.",
+      "word": "Deyim ve somut-mecaz ayrımı; sözlükle kontrol edilen sesteş; Fen/Hayat Bilgisi kavramını gözlemle.",
+      "trap": "Gerçek yaşam örneğini fen yasası kanıtı gibi sunmak veya aynı kavramı doğru sanılan yanlış örnekle öğretmek.",
+      "infer": "Metinde yazmayan ancak gerekçeyle ulaşılabilen çıkarım, tahminden ayrılmalı.",
+      "themes": "Deney, zaman, doğa, yerel kültür, küçük araştırma ve yardım.",
+      "rubric": "350–400 kelime, neden-sonuç bağlantısı, bilimsel gözlem doğruluğu.",
+      "special": "Deyim varsa sözlük anlamı ve bağlam birbirini doğrulamalı.",
+      "grade": 3,
+      "story_length_band_contest_2026": [
+        350,
+        400
+      ],
+      "pilot_learning_load": {
+        "grade": 3,
+        "status": "PILOT_HEDEF_MEB_ZORUNLULUGU_DEGIL",
+        "new_target_lemmas_per_story": [
+          2,
+          4
+        ],
+        "new_course_concepts_per_story": [
+          1,
+          1
+        ],
+        "new_idiom_proverb_per_story": [
+          0,
+          1
+        ],
+        "comprehension_questions_per_story": [
+          2,
+          4
+        ],
+        "new_target_total_soft_max": 5,
+        "single_story_semantic_repeats_pilot": [
+          2,
+          4
+        ],
+        "typical_new_concept_story_arc": {
+          "somut": [
+            2,
+            3
+          ],
+          "ilişkisel": [
+            3,
+            5
+          ],
+          "soyut_ve_yanilgi_yuklu": [
+            4,
+            8
+          ]
+        },
+        "reading_mode": "temel_kavram",
+        "notes": "Tekrarlanan sözcük yeni hedef sayılmaz; sayısal hedef bireysel okumaya ve içerik uzunluğuna göre düşürülür. Zorluğu ölçülmeden yayımlanmaz."
+      },
+      "curriculum_year": "2026-2027",
+      "source_status": "grade editorial profile, not full official outcome map"
+    },
+    "4": {
+      "age": "9–10",
+      "curr": "GECIS_ONCEKI_PROGRAM",
+      "lessons": [
+        "Türkçe",
+        "Matematik",
+        "Fen Bilimleri",
+        "Sosyal Bilgiler",
+        "İngilizce",
+        "Din Kültürü ve Ahlak Bilgisi (ders seçimi/mevzuata göre)"
+      ],
+      "literacy": "Metnin ana fikri ve yardımcı fikri, farklı bakış açıları, özet ve karşılaştırma.",
+      "story": "Açılış–çatışma–sonuç bütünlüğü; nedenlerin izlenmesi, farklı karakter motivasyonları; disiplinler arası bağ.",
+      "question": "Tablo/görsel/metin karşılaştırma; ölçme birimi ve gerekçeli işlem; birden çok kanıtı birlikte yorumlama.",
+      "word": "Bağlama dayalı çokanlamlılık, deyim, eş/zıt anlam; bilimsel sözcükle günlük anlam farkı.",
+      "trap": "2026–27 TYMM 4. sınıf programından kazanım kodu alıp geçmiş programda geçerliymiş gibi göstermek.",
+      "infer": "Bir iddiayı en az iki metin bulgusuyla desteklemek.",
+      "themes": "Doğa gözlemi, şehir tarihi, bilimsel keşif, hak ve sorumluluk, günlük kararlar.",
+      "rubric": "450–500 kelime, kanıta dayalı açıklama, önceki programla eşleştirme.",
+      "special": "Önceki program/sınıf kitabı ve öğretmen planı ile doğrulanmış öğrenme çıktısı aranır.",
+      "grade": 4,
+      "story_length_band_contest_2026": [
+        450,
+        500
+      ],
+      "pilot_learning_load": {
+        "grade": 4,
+        "status": "PILOT_HEDEF_MEB_ZORUNLULUGU_DEGIL",
+        "new_target_lemmas_per_story": [
+          3,
+          4
+        ],
+        "new_course_concepts_per_story": [
+          1,
+          2
+        ],
+        "new_idiom_proverb_per_story": [
+          0,
+          1
+        ],
+        "comprehension_questions_per_story": [
+          3,
+          5
+        ],
+        "new_target_total_soft_max": 6,
+        "single_story_semantic_repeats_pilot": [
+          2,
+          4
+        ],
+        "typical_new_concept_story_arc": {
+          "somut": [
+            2,
+            3
+          ],
+          "ilişkisel": [
+            3,
+            5
+          ],
+          "soyut_ve_yanilgi_yuklu": [
+            4,
+            8
+          ]
+        },
+        "reading_mode": "temel_kavram",
+        "notes": "Tekrarlanan sözcük yeni hedef sayılmaz; sayısal hedef bireysel okumaya ve içerik uzunluğuna göre düşürülür. Zorluğu ölçülmeden yayımlanmaz."
+      },
+      "curriculum_year": "2026-2027",
+      "source_status": "grade editorial profile, not full official outcome map"
+    },
+    "5": {
+      "age": "10–11",
+      "curr": "TYMM",
+      "lessons": [
+        "Türkçe",
+        "Matematik",
+        "Fen Bilimleri",
+        "Sosyal Bilgiler",
+        "İngilizce",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "literacy": "İlkokuldan ortaokula geçiş: metin örgüsü, çıkarım, disiplin terimi, çizelge/veri okuma, öz açıklama.",
+      "story": "Tam uzun anlatı: 2.000–3.000 kelime, sahnelere bölünen tek bütün; kahramanın seçimleri gerçek sonuç yaratsın.",
+      "question": "TYMM öğrenme çıktısı → beceri → özgün bağlam; açık uçlu + kısa cevap + alıştırma; yalnız senaryoya uygunsa ortak yazılı biçimi.",
+      "word": "Günlük sözcükten akademik bağlama geçiş; alan kavramının yanlış anlaşılması ve farklı bağlamda kullanımı.",
+      "trap": "Yeni nesil=gereksiz uzun paragraf varsayımı; OYSS senaryosunu görmeden belirli konularla sınav üretmek.",
+      "infer": "Metin, veri ya da görsel kullanılmadan cevaplanamayan işlevsel bağlam.",
+      "themes": "Macera, bilim-kurguya başlangıç, tarihî buluş, spor, sosyal proje, okul topluluğu.",
+      "rubric": "2.000–3.000 kelime kesintisiz *hikâye*, bölüm/öğretmen notlarını sayma; 5. sınıf kapsamı ve OYSS.",
+      "special": "Okul yazılısı için senaryo_id zorunlu veya taslak statüsü; gerçek güçlük pilot verisi gerekir.",
+      "grade": 5,
+      "story_length_band_contest_2026": [
+        2000,
+        3000
+      ],
+      "pilot_learning_load": {
+        "grade": 5,
+        "status": "PILOT_HEDEF_MEB_ZORUNLULUGU_DEGIL",
+        "new_target_lemmas_per_story": [
+          3,
+          5
+        ],
+        "new_course_concepts_per_story": [
+          1,
+          2
+        ],
+        "new_idiom_proverb_per_story": [
+          0,
+          1
+        ],
+        "comprehension_questions_per_story": [
+          4,
+          6
+        ],
+        "new_target_total_soft_max": 7,
+        "single_story_semantic_repeats_pilot": [
+          2,
+          4
+        ],
+        "typical_new_concept_story_arc": {
+          "somut": [
+            2,
+            3
+          ],
+          "ilişkisel": [
+            3,
+            5
+          ],
+          "soyut_ve_yanilgi_yuklu": [
+            4,
+            8
+          ]
+        },
+        "reading_mode": "çoklu_bağlam",
+        "notes": "Tekrarlanan sözcük yeni hedef sayılmaz; sayısal hedef bireysel okumaya ve içerik uzunluğuna göre düşürülür. Zorluğu ölçülmeden yayımlanmaz."
+      },
+      "curriculum_year": "2026-2027",
+      "source_status": "grade editorial profile, not full official outcome map"
+    },
+    "6": {
+      "age": "11–12",
+      "curr": "TYMM",
+      "lessons": [
+        "Türkçe",
+        "Matematik",
+        "Fen Bilimleri",
+        "Sosyal Bilgiler",
+        "İngilizce",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "literacy": "Birden çok temsilin bağlanması, karşıt gerekçeler, terim-ilişki, öz denetim ve metinler arası transfer.",
+      "story": "Uzun anlatıda paralel hedefler, 3 perdelik karar zinciri; kavram çözümün mekanizmasını gerçekten değiştirsin.",
+      "question": "Veri yorumlama, değişken kontrolü, birden çok aşamalı çözüm; açık uçlu yanıt için ölçüt/puanlama anahtarı.",
+      "word": "Çok anlamlı terim ve ilişkisel ağ; deyimle kavramı karıştırma; bağlamlar arasında uygulama.",
+      "trap": "Salt işlem zorluğunu yüksek bilişsel beceri sanmak; deney verisini ve kontrol değişkenlerini belirsiz bırakmak.",
+      "infer": "Kanıt ile çıkarımın hangi basamakta ayrıldığını açıklat.",
+      "themes": "Bilimsel gizem, dayanışma, çevre, belgesel araştırma, teknoloji etiği.",
+      "rubric": "3.000–3.500 kelime, terminolojik doğruluk, tutarlı çok aşamalı muhakeme.",
+      "special": "Açık uçlu puan anahtarı analitik ve örnek yanıtla birlikte verilir.",
+      "grade": 6,
+      "story_length_band_contest_2026": [
+        3000,
+        3500
+      ],
+      "pilot_learning_load": {
+        "grade": 6,
+        "status": "PILOT_HEDEF_MEB_ZORUNLULUGU_DEGIL",
+        "new_target_lemmas_per_story": [
+          4,
+          5
+        ],
+        "new_course_concepts_per_story": [
+          1,
+          2
+        ],
+        "new_idiom_proverb_per_story": [
+          0,
+          1
+        ],
+        "comprehension_questions_per_story": [
+          4,
+          7
+        ],
+        "new_target_total_soft_max": 8,
+        "single_story_semantic_repeats_pilot": [
+          2,
+          4
+        ],
+        "typical_new_concept_story_arc": {
+          "somut": [
+            2,
+            3
+          ],
+          "ilişkisel": [
+            3,
+            5
+          ],
+          "soyut_ve_yanilgi_yuklu": [
+            4,
+            8
+          ]
+        },
+        "reading_mode": "çoklu_bağlam",
+        "notes": "Tekrarlanan sözcük yeni hedef sayılmaz; sayısal hedef bireysel okumaya ve içerik uzunluğuna göre düşürülür. Zorluğu ölçülmeden yayımlanmaz."
+      },
+      "curriculum_year": "2026-2027",
+      "source_status": "grade editorial profile, not full official outcome map"
+    },
+    "7": {
+      "age": "12–13",
+      "curr": "TYMM",
+      "lessons": [
+        "Türkçe",
+        "Matematik",
+        "Fen Bilimleri",
+        "Sosyal Bilgiler",
+        "İngilizce",
+        "Din Kültürü ve Ahlak Bilgisi"
+      ],
+      "literacy": "Kaynak güvenilirliği, iddia-kanıt-gerekçe, örtük niyet, tarihsel bakış açısı, araştırma okuryazarlığı.",
+      "story": "Genç okur ciddiyeti; çok sesli anlatım, karakter çatışması, bilgi güvenilirliği, ince mesaj ve etkin karakter.",
+      "question": "Grafik/tablo/görsel+metin ilişkisi, karşı örnek, sınıflandırma, gerekçelendirme; yüzey zorluğu gerçek zorluk değildir.",
+      "word": "Argümantasyon, sosyal-bilim terimleri, mecaz ve üslup; anlam ayrımını metinsel kanıtla doğrula.",
+      "trap": "Soyut ve ideolojik konuya tek doğru değer yargısı dayatmak; kronoloji ve neden-sonuç karıştırmak.",
+      "infer": "Birden fazla makul yorum varsa doğruyu ayıran ifade açıkça bulunmalı.",
+      "themes": "Araştırma, spor, bilim, toplumsal değişim, karar verme, güven ve sorumluluk.",
+      "rubric": "3.500–4.000 kelime, çok sesliliğin tutarlılığı, kanıta dayalı soru.",
+      "special": "Kaynak metinlerin doğruluk statüsüyle hikâye kişisinin düşüncesi ayrı tutulur.",
+      "grade": 7,
+      "story_length_band_contest_2026": [
+        3500,
+        4000
+      ],
+      "pilot_learning_load": {
+        "grade": 7,
+        "status": "PILOT_HEDEF_MEB_ZORUNLULUGU_DEGIL",
+        "new_target_lemmas_per_story": [
+          4,
+          6
+        ],
+        "new_course_concepts_per_story": [
+          1,
+          3
+        ],
+        "new_idiom_proverb_per_story": [
+          0,
+          1
+        ],
+        "comprehension_questions_per_story": [
+          5,
+          7
+        ],
+        "new_target_total_soft_max": 9,
+        "single_story_semantic_repeats_pilot": [
+          2,
+          4
+        ],
+        "typical_new_concept_story_arc": {
+          "somut": [
+            2,
+            3
+          ],
+          "ilişkisel": [
+            3,
+            5
+          ],
+          "soyut_ve_yanilgi_yuklu": [
+            4,
+            8
+          ]
+        },
+        "reading_mode": "kanıt_tartışma",
+        "notes": "Tekrarlanan sözcük yeni hedef sayılmaz; sayısal hedef bireysel okumaya ve içerik uzunluğuna göre düşürülür. Zorluğu ölçülmeden yayımlanmaz."
+      },
+      "curriculum_year": "2026-2027",
+      "source_status": "grade editorial profile, not full official outcome map"
+    },
+    "8": {
+      "age": "13–14",
+      "curr": "GECIS_ONCEKI_PROGRAM",
+      "lessons": [
+        "Türkçe",
+        "Matematik",
+        "Fen Bilimleri",
+        "T.C. İnkılap Tarihi ve Atatürkçülük",
+        "Din Kültürü ve Ahlak Bilgisi",
+        "İngilizce"
+      ],
+      "literacy": "LGS/okul sınavı ayrımı; eleştirel okuma, kanıt sentezi, ima, perspektif, problem çözme ve transfer.",
+      "story": "Uzun anlatı: 4.000–5.000 kelime; karakter motivasyonları çatışsın, ergen okuru küçümsemeyen dil ve açık uçlu tartışma.",
+      "question": "LGS tarzında çok aşamalı muhakeme, yanıltıcı ama savunulabilir çeldiriciler; okul yazılısı için ayrı açık uçlu/rubrik. Resmî sınav sorusunun metnini yeniden yazma.",
+      "word": "Akademik/soyut kavram, bağlam içinde ince anlam farkları, söz sanatı, metinler arası kavram transferi.",
+      "trap": "2026–27 TYMM 8. sınıf çıktılarını yürürlükte saymak; LGS soru tasarımını aşırı uzun metin üretmeye indirgemek.",
+      "infer": "Kısa kanıt parçalarından güçlü çıkarım; farklı varsayımı çürütme.",
+      "themes": "Distopya, tarihsel araştırma, etik ikilem, bilim kurgu, toplumsal hafıza, kültürel miras.",
+      "rubric": "4.000–5.000 kelime, ergenlik duyarlılığı, eski programla 8. sınıf LGS doğrulaması.",
+      "special": "LGS yayın yılını ve o yılın 8. sınıf programını kullan; okul yazılısı ayrı mod.",
+      "grade": 8,
+      "story_length_band_contest_2026": [
+        4000,
+        5000
+      ],
+      "pilot_learning_load": {
+        "grade": 8,
+        "status": "PILOT_HEDEF_MEB_ZORUNLULUGU_DEGIL",
+        "new_target_lemmas_per_story": [
+          4,
+          6
+        ],
+        "new_course_concepts_per_story": [
+          1,
+          3
+        ],
+        "new_idiom_proverb_per_story": [
+          0,
+          2
+        ],
+        "comprehension_questions_per_story": [
+          5,
+          8
+        ],
+        "new_target_total_soft_max": 10,
+        "single_story_semantic_repeats_pilot": [
+          2,
+          4
+        ],
+        "typical_new_concept_story_arc": {
+          "somut": [
+            2,
+            3
+          ],
+          "ilişkisel": [
+            3,
+            5
+          ],
+          "soyut_ve_yanilgi_yuklu": [
+            4,
+            8
+          ]
+        },
+        "reading_mode": "eleştirel_transfer",
+        "notes": "Tekrarlanan sözcük yeni hedef sayılmaz; sayısal hedef bireysel okumaya ve içerik uzunluğuna göre düşürülür. Zorluğu ölçülmeden yayımlanmaz."
+      },
+      "curriculum_year": "2026-2027",
+      "source_status": "grade editorial profile, not full official outcome map"
+    }
+  }
+}

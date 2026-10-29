@@ -1,3 +1,5 @@
+import { DrawLine } from "@/components/landing/motion/DrawLine";
+import { RevealGroup } from "@/components/landing/motion/RevealGroup";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
@@ -21,11 +23,11 @@ export async function HowItWorksSection() {
           {t("title")}
         </h2>
 
-        <div className="mt-12 grid gap-8 md:grid-cols-3">
+        <RevealGroup className="mt-12 grid gap-8 md:grid-cols-3">
           {steps.map((step, i) => (
             <div key={step.title} className="relative flex flex-col items-center text-center">
               {i < steps.length - 1 && (
-                <div className="absolute start-[calc(50%+3rem)] top-10 hidden w-[calc(100%-6rem)] border-t-2 border-dashed border-navy/20 md:block dark:border-gray-700" />
+                <DrawLine className="absolute start-[calc(50%+3rem)] top-10 hidden w-[calc(100%-6rem)] border-t-2 border-dashed border-navy/20 md:block dark:border-gray-700" />
               )}
 
               <div className="relative">
@@ -51,7 +53,7 @@ export async function HowItWorksSection() {
               </p>
             </div>
           ))}
-        </div>
+        </RevealGroup>
       </div>
     </section>
   );

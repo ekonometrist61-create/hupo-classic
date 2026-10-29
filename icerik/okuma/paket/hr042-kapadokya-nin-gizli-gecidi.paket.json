@@ -78,7 +78,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2055,
+        "kelime_sayisi": 2053,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 18,
         "soru_sayisi": 4,
@@ -115,7 +115,7 @@
         },
         {
           "t": "metin",
-          "v": ", otelin terasından yükselen balonları sayıyordu. Yedinci balon kızıl bir kayanın arkasında gözden kaybolunca kardeşi "
+          "v": ", otelin terasından yükselen balonları sayıyordu. Yedinci balon kızıl bir kayanın arkasında gözden kaybolunca "
         },
         {
           "t": "yoldas",
@@ -520,7 +520,7 @@
         },
         {
           "t": "metin",
-          "v": ", Kapadokya'nın yalnızca peri bacalarından ibaret olmadığını anladı. Toprağı, suyu, insanları ve hikâyeleri bir aradaydı.\n\nÖğretmenleriyle yapılan kısa değerlendirme toplantısında "
+          "v": ", Kapadokya'nın yalnızca peribacalarından ibaret olmadığını anladı. Toprağı, suyu, insanları ve hikâyeleri bir aradaydı.\n\nÖğretmenleriyle yapılan kısa değerlendirme toplantısında "
         },
         {
           "t": "kahraman",
@@ -771,53 +771,53 @@
       "id": "s1",
       "beceri": "hatirlama",
       "dayanak_sayfa": 1,
-      "metin": "Ece sabah otelin terasında neyi sayıyordu?",
+      "metin": "Kahraman sabah otelin terasında neyi sayıyordu?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Balonları"
-        },
-        {
-          "id": "B",
           "metin": "Kuşları"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Arabaları"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Kayaları"
+        },
+        {
+          "id": "D",
+          "metin": "Balonları"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Ece, gökyüzündeki balonları sayıyordu."
+      "dogru": "D",
+      "aciklama": "Kahraman, gökyüzündeki balonları sayıyordu."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 3,
-      "metin": "Ece, paralel oyukların gizli geçit olduğunu neden hemen kabul etmedi?",
+      "metin": "Kahraman, paralel oyukların gizli geçit olduğunu neden hemen kabul etmedi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Her oyuğun bir kapı olmadığını, doğal bir iz de olabileceğini düşündüğü için"
+          "metin": "Oyukların çok derin ve karanlık olduğunu düşündüğü için"
         },
         {
           "id": "B",
-          "metin": "Oyukların çok derin olduğunu"
+          "metin": "Her oyuğun bir kapı olmadığını, doğal bir iz de olabileceğini düşündüğü için"
         },
         {
           "id": "C",
-          "metin": "Bora'nın yanlış gördüğünü"
+          "metin": "Arkadaşının oyukları yanlış gördüğünü düşündüğü için"
         },
         {
           "id": "D",
-          "metin": "Kayanın çok sıcak olduğunu"
+          "metin": "Kayanın yüzeyinin çok pürüzlü olup tırmanılamayacağını düşündüğü için"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Ece, bir izin kapı olup olmadığını kanıtlamadan karar vermek istemedi."
+      "dogru": "B",
+      "aciklama": "Kahraman, bir izin kapı olup olmadığını kanıtlamadan karar vermek istemedi."
     },
     {
       "id": "s3",
@@ -831,15 +831,15 @@
         },
         {
           "id": "B",
-          "metin": "Yağmurun hep kötü olduğunu"
+          "metin": "Yağmurun her zaman bölgeye zarar verdiğini ve kesilmesi gerektiğini"
         },
         {
           "id": "C",
-          "metin": "Kayaların suda eridiğini"
+          "metin": "Kayaların suyun içinde kısa sürede tamamen eridiğini ve kaybolduğunu"
         },
         {
           "id": "D",
-          "metin": "Peribacalarının bir gecede oluştuğunu"
+          "metin": "Peribacalarının bir gecede, tek bir yağmurla tamamen oluştuğunu"
         }
       ],
       "dogru": "A",
@@ -853,22 +853,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Rüzgâr ve suyun yüzeyi yavaş yavaş aşındırıp inceltmesi"
+          "metin": "Bir yüzeye boya veya cila sürerek onu parlatmak"
         },
         {
           "id": "B",
-          "metin": "Bir yere boya sürmek"
+          "metin": "Bir yere çok hızlı koşarak kısa sürede ulaşmak"
         },
         {
           "id": "C",
-          "metin": "Hızla koşmak"
+          "metin": "Büyük bir kayayı parçalara ayırarak taşımak"
         },
         {
           "id": "D",
-          "metin": "Kaya kırmak"
+          "metin": "Rüzgâr ve suyun yüzeyi yavaş yavaş aşındırıp inceltmesi"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Aşındırmak, etkenlerin bir yüzeyi zamanla eritip incelttiği anlamına gelir."
     }
   ],

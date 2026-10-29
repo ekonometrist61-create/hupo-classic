@@ -113,3 +113,21 @@ create table public.questions (
   sinif smallint,
   onay_durumu text not null default 'beklemede'
 );
+-- Sözcük çekirdeği (20261095) için okuma sözlüğü taklidi: yalnız kullanılan sütunlar ve dört göz kısıtı
+create table if not exists public.okuma_sozluk_girdileri (
+  id             text primary key,
+  tur            text not null,
+  yazim          text not null,
+  anlam          text not null,
+  sinif_alt      smallint not null default 1,
+  sinif_ust      smallint not null default 8,
+  kaynak_turu    text not null default 'editor_onerisi',
+  kazanim_kodu   text,
+  durum          text not null default 'taslak' check (durum in ('taslak', 'incelemede', 'onayli', 'arsiv')),
+  olusturan_id   uuid references public.profiles (id) on delete set null,
+  onaylayan_id   uuid references public.profiles (id) on delete set null,
+  onaylandi_at   timestamptz,
+  guncellendi_at timestamptz not null default now(),
+  constraint okuma_sozluk_girdi_dort_goz check (
+    durum <> 'onayli' or (onaylayan_id is not null and onaylayan_id is distinct from olusturan_id))
+);

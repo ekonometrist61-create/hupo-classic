@@ -1,0 +1,1654 @@
+[
+  {
+    "iliski_id": "s1-01",
+    "sinif": 1,
+    "tur": "zit_anlamli",
+    "kazanim": null,
+    "soru": "“büyük” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "küçük",
+      "yavaş",
+      "yüksek"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“büyük” ile “küçük” zıt anlamlıdır: “Boyu ya da miktarı fazla olan” / “Boyu ya da miktarı az olan”."
+  },
+  {
+    "iliski_id": "s1-02",
+    "sinif": 1,
+    "tur": "zit_anlamli",
+    "kazanim": null,
+    "soru": "“sıcak” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "hızlı",
+      "yüksek",
+      "soğuk"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“sıcak” ile “soğuk” zıt anlamlıdır: “Isısı yüksek olan” / “Isısı düşük olan”."
+  },
+  {
+    "iliski_id": "s1-03",
+    "sinif": 1,
+    "tur": "zit_anlamli",
+    "kazanim": null,
+    "soru": "“uzun” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "büyük",
+      "kısa",
+      "sıcak"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“uzun” ile “kısa” zıt anlamlıdır: “Boyu ya da uzunluğu fazla olan” / “Boyu ya da uzunluğu az olan”."
+  },
+  {
+    "iliski_id": "s1-04",
+    "sinif": 1,
+    "tur": "zit_anlamli",
+    "kazanim": null,
+    "soru": "“açık” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "dolu",
+      "hızlı",
+      "kapalı"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“açık” ile “kapalı” zıt anlamlıdır: “Kapalı olmayan, önünde engel bulunmayan” / “Açık olmayan, kapanmış olan”."
+  },
+  {
+    "iliski_id": "s1-05",
+    "sinif": 1,
+    "tur": "zit_anlamli",
+    "kazanim": null,
+    "soru": "“dolu” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "kısa",
+      "boş",
+      "açık"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“dolu” ile “boş” zıt anlamlıdır: “İçi boş olmayan, doldurulmuş” / “İçinde hiçbir şey bulunmayan”."
+  },
+  {
+    "iliski_id": "s1-06",
+    "sinif": 1,
+    "tur": "zit_anlamli",
+    "kazanim": null,
+    "soru": "“hızlı” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "yavaş",
+      "kuru",
+      "büyük"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“hızlı” ile “yavaş” zıt anlamlıdır: “Çabuk hareket eden” / “Az hızla hareket eden”."
+  },
+  {
+    "iliski_id": "s1-07",
+    "sinif": 1,
+    "tur": "zit_anlamli",
+    "kazanim": null,
+    "soru": "“yüksek” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "sıcak",
+      "uzun",
+      "alçak"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“yüksek” ile “alçak” zıt anlamlıdır: “Yerden uzaklığı çok olan” / “Yerden uzaklığı az olan”."
+  },
+  {
+    "iliski_id": "s1-08",
+    "sinif": 1,
+    "tur": "zit_anlamli",
+    "kazanim": null,
+    "soru": "“ıslak” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "sıcak",
+      "uzun",
+      "kuru"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“ıslak” ile “kuru” zıt anlamlıdır: “Su ya da başka bir sıvıyla bulaşmış, nemli” / “Su almamış, nemi olmayan”."
+  },
+  {
+    "iliski_id": "s2-01",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“temiz” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "ucuz",
+      "kirli",
+      "geniş"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“temiz” ile “kirli” zıt anlamlıdır: “Kirli olmayan, pak” / “Kir ya da leke taşıyan”."
+  },
+  {
+    "iliski_id": "s2-02",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“güzel” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "zor",
+      "çirkin",
+      "ucuz"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“güzel” ile “çirkin” zıt anlamlıdır: “Görünüşü ya da sesi hoşa giden” / “Güzel olmayan, hoş görünmeyen”."
+  },
+  {
+    "iliski_id": "s2-03",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“kolay” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "doğru",
+      "gündüz",
+      "zor"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“kolay” ile “zor” zıt anlamlıdır: “Zahmeti az olan, zor olmayan” / “Güçlük çıkaran, kolay olmayan”."
+  },
+  {
+    "iliski_id": "s2-04",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“ucuz” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "arka",
+      "pahalı",
+      "içeri"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“ucuz” ile “pahalı” zıt anlamlıdır: “Fiyatı düşük olan” / “Fiyatı yüksek olan”."
+  },
+  {
+    "iliski_id": "s2-05",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“geniş” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "ucuz",
+      "ince",
+      "dar"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“geniş” ile “dar” zıt anlamlıdır: “Alanı ya da içi ferah olan” / “Alanı ya da içi az, sıkışık olan”."
+  },
+  {
+    "iliski_id": "s2-06",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“ince” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "kirli",
+      "güzel",
+      "kalın"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“ince” ile “kalın” zıt anlamlıdır: “Kalınlığı az olan” / “Kalınlığı fazla olan”."
+  },
+  {
+    "iliski_id": "s2-07",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“iyi” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "kötü",
+      "ucuz",
+      "geniş"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“iyi” ile “kötü” zıt anlamlıdır: “Kötü olmayan, olumlu” / “İyi olmayan, olumsuz”."
+  },
+  {
+    "iliski_id": "s2-08",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“doğru” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "gece",
+      "yanlış",
+      "ön"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“doğru” ile “yanlış” zıt anlamlıdır: “Gerçeğe uygun, yanlış olmayan” / “Doğru olmayan, hatalı”."
+  },
+  {
+    "iliski_id": "s2-09",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“gündüz” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "doğru",
+      "ön",
+      "gece"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“gündüz” ile “gece” zıt anlamlıdır: “Güneş ışığının aydınlattığı zaman” / “Güneşin battığı andan doğuşuna kadar süren karanlık zaman”."
+  },
+  {
+    "iliski_id": "s2-10",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“ön” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "geniş",
+      "arka",
+      "ince"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“ön” ile “arka” zıt anlamlıdır: “Bir şeyin ilerideki, yüze bakan kısmı” / “Bir şeyin geride kalan kısmı”."
+  },
+  {
+    "iliski_id": "s2-11",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“içeri” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "dışarı",
+      "dar",
+      "ince"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“içeri” ile “dışarı” zıt anlamlıdır: “Bir yerin iç kısmına doğru” / “Bir yerin dış kısmına doğru”."
+  },
+  {
+    "iliski_id": "s2-12",
+    "sinif": 2,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.2.2.f",
+    "soru": "“yeni” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "eski",
+      "ince",
+      "iyi"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“yeni” ile “eski” zıt anlamlıdır: “Yakın zamanda yapılmış, eskimemiş olan” / “Yıllar önce yapılmış, yıpranmış olan”."
+  },
+  {
+    "iliski_id": "s3-01",
+    "sinif": 3,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“mutlu” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "zayıf",
+      "sevinçli",
+      "ağır"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“mutlu” ile “sevinçli” eş anlamlıdır: “Sevinç duyan, neşeli” / “Sevinç duyan, mutlu”."
+  },
+  {
+    "iliski_id": "s3-02",
+    "sinif": 3,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“hızlı” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "cesur",
+      "çabuk",
+      "zengin"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“hızlı” ile “çabuk” eş anlamlıdır: “Çabuk hareket eden, süratli” / “Kısa sürede gerçekleşen, hızlı”."
+  },
+  {
+    "iliski_id": "s3-03",
+    "sinif": 3,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“arkadaş” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "dost",
+      "fakir",
+      "güçlü"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“arkadaş” ile “dost” eş anlamlıdır: “Birlikte vakit geçirilen, yakın olunan kişi” / “Sevgi ve güvenle bağlı olunan yakın kişi”."
+  },
+  {
+    "iliski_id": "s3-04",
+    "sinif": 3,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“ev” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "konut",
+      "sert",
+      "dağınık"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“ev” ile “konut” eş anlamlıdır: “İnsanların yaşadığı yer” / “İnsanların oturduğu yapı, mesken”."
+  },
+  {
+    "iliski_id": "s3-05",
+    "sinif": 3,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“yanıt” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "fakir",
+      "güçlü",
+      "cevap"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“yanıt” ile “cevap” eş anlamlıdır: “Bir soruya verilen karşılık” / “Bir soruya ya da söze karşılık olarak verilen yanıt”."
+  },
+  {
+    "iliski_id": "s3-06",
+    "sinif": 3,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“kent” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "cesur",
+      "zengin",
+      "şehir"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“kent” ile “şehir” eş anlamlıdır: “Kalabalık, büyük yerleşim yeri” / “Kalabalık ve gelişmiş yerleşim birimi”."
+  },
+  {
+    "iliski_id": "s3-07",
+    "sinif": 3,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“küçük” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "hafif",
+      "minik",
+      "sert"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“küçük” ile “minik” eş anlamlıdır: “Boyu ya da miktarı az olan” / “Çok küçük, ufacık”."
+  },
+  {
+    "iliski_id": "s3-08",
+    "sinif": 3,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“sevinç” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "sert",
+      "neşe",
+      "dağınık"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“sevinç” ile “neşe” eş anlamlıdır: “Bir şeyden dolayı duyulan mutluluk” / “Canlı ve sevinçli olma hâli”."
+  },
+  {
+    "iliski_id": "s3-09",
+    "sinif": 3,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“cesur” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "korkak",
+      "hızlı",
+      "mutlu"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“cesur” ile “korkak” zıt anlamlıdır: “Korkmayan, yiğit” / “Kolay korkan, cesareti az olan”."
+  },
+  {
+    "iliski_id": "s3-10",
+    "sinif": 3,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“zengin” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "fakir",
+      "arkadaş",
+      "ev"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“zengin” ile “fakir” zıt anlamlıdır: “Parası ve malı çok olan” / “Parası ve malı az olan, yoksul”."
+  },
+  {
+    "iliski_id": "s3-11",
+    "sinif": 3,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“güçlü” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "zengin",
+      "zayıf",
+      "ağır"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“güçlü” ile “zayıf” zıt anlamlıdır: “Kuvvetli, dayanıklı” / “Gücü az olan, kuvvetsiz”."
+  },
+  {
+    "iliski_id": "s3-12",
+    "sinif": 3,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“ağır” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "korkak",
+      "hafif",
+      "zengin"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“ağır” ile “hafif” zıt anlamlıdır: “Ağırlığı çok olan” / “Ağırlığı az olan”."
+  },
+  {
+    "iliski_id": "s3-13",
+    "sinif": 3,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“sert” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "küçük",
+      "hızlı",
+      "yumuşak"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“sert” ile “yumuşak” zıt anlamlıdır: “Dokunulunca içine girilmeyen, katı” / “Dokunulunca kolayca basılan, sert olmayan”."
+  },
+  {
+    "iliski_id": "s3-14",
+    "sinif": 3,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.3.2.h",
+    "soru": "“dağınık” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "hızlı",
+      "mutlu",
+      "düzenli"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“dağınık” ile “düzenli” zıt anlamlıdır: “Düzensiz, karışık” / “Düzeni olan, yerli yerinde olan”."
+  },
+  {
+    "iliski_id": "s4-01",
+    "sinif": 4,
+    "tur": "es_sesli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“yüz” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "Başın ön tarafında, alın ile çene arasındaki bölüm, surat",
+      "Üzüm yetiştirilen bahçe",
+      "İki şeyi birbirine bağlayan ip ya da şerit"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“yüz” sözcüğünün iki anlamı vardır: “Başın ön tarafında, alın ile çene arasındaki bölüm, surat” ve “Doksan dokuzdan sonra gelen sayının adı”."
+  },
+  {
+    "iliski_id": "s4-02",
+    "sinif": 4,
+    "tur": "es_sesli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“gül” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "Henüz gelmemiş olan zaman",
+      "Dikenli dalında kokulu çiçek açan bitki",
+      "Miktarı ya da sayısı küçük olan"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“gül” sözcüğünün iki anlamı vardır: “Dikenli dalında kokulu çiçek açan bitki” ve “Sevinç ya da eğlenceyle yüzü açılıp ses çıkarmak (gülmek)”."
+  },
+  {
+    "iliski_id": "s4-03",
+    "sinif": 4,
+    "tur": "es_sesli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“yaz” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "Doğuştan beri geçen ve yıl birimi ile ölçülen zaman",
+      "Nemli, ıslak",
+      "Yılın en sıcak mevsimi"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“yaz” sözcüğünün iki anlamı vardır: “Yılın en sıcak mevsimi” ve “Kâğıt üzerine harf, kelime ya da rakam geçirmek”."
+  },
+  {
+    "iliski_id": "s4-04",
+    "sinif": 4,
+    "tur": "es_sesli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“çay” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "Yaprağı demlenerek içilen sıcak içecek",
+      "Bir kişiye karşı kötü duygu besleyen, zarar vermek isteyen kimse",
+      "Sevgi ve güvenle bağlı olunan yakın kişi"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“çay” sözcüğünün iki anlamı vardır: “Yaprağı demlenerek içilen sıcak içecek” ve “Dereden büyük, ırmaktan küçük akarsu”."
+  },
+  {
+    "iliski_id": "s4-05",
+    "sinif": 4,
+    "tur": "es_sesli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“yaş” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "İki şeyi birbirine bağlayan ip ya da şerit",
+      "Doğuştan beri geçen ve yıl birimi ile ölçülen zaman",
+      "Bir durum hakkında kesin karar verememe hâli"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“yaş” sözcüğünün iki anlamı vardır: “Doğuştan beri geçen ve yıl birimi ile ölçülen zaman” ve “Nemli, ıslak”."
+  },
+  {
+    "iliski_id": "s4-06",
+    "sinif": 4,
+    "tur": "es_sesli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“bağ” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "İş yapmaktan kaçınan, ağır işleyen",
+      "Çok çalışan, işini severek yapan",
+      "Üzüm yetiştirilen bahçe"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“bağ” sözcüğünün iki anlamı vardır: “Üzüm yetiştirilen bahçe” ve “İki şeyi birbirine bağlayan ip ya da şerit”."
+  },
+  {
+    "iliski_id": "s4-07",
+    "sinif": 4,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“kuşku” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "şüphe",
+      "tenha",
+      "düşman"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“kuşku” ile “şüphe” eş anlamlıdır: “Bir durum hakkında kesin karar verememe hâli” / “Doğruluğundan emin olamama durumu”."
+  },
+  {
+    "iliski_id": "s4-08",
+    "sinif": 4,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“hatıra” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "anı",
+      "yaş",
+      "bağ"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“hatıra” ile “anı” eş anlamlıdır: “Geçmişte yaşanan bir olayın akılda kalan izi” / “Geçmişte yaşanmış olayların akılda kalan parçası”."
+  },
+  {
+    "iliski_id": "s4-09",
+    "sinif": 4,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“yarışma” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "anı",
+      "müsabaka",
+      "gayret"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“yarışma” ile “müsabaka” eş anlamlıdır: “Birkaç kişinin üstünlük için karşılaşması” / “Spor ya da bilgi alanında yapılan karşılaşma, yarış”."
+  },
+  {
+    "iliski_id": "s4-10",
+    "sinif": 4,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“gayret” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "çaba",
+      "çalışkan",
+      "geçmiş"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“gayret” ile “çaba” eş anlamlıdır: “İstekle, emek vererek bir işe çalışma” / “Bir iş için gösterilen uğraş”."
+  },
+  {
+    "iliski_id": "s4-11",
+    "sinif": 4,
+    "tur": "es_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“sakin” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "uzak",
+      "kalabalık",
+      "dingin"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“sakin” ile “dingin” eş anlamlıdır: “Gürültüsüz, huzurlu, telaşsız” / “Sessiz, durgun, huzurlu”."
+  },
+  {
+    "iliski_id": "s4-12",
+    "sinif": 4,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“tembel” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "anı",
+      "çalışkan",
+      "yarışma"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“tembel” ile “çalışkan” zıt anlamlıdır: “İş yapmaktan kaçınan, ağır işleyen” / “Çok çalışan, işini severek yapan”."
+  },
+  {
+    "iliski_id": "s4-13",
+    "sinif": 4,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“geçmiş” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "gelecek",
+      "çay",
+      "bağ"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“geçmiş” ile “gelecek” zıt anlamlıdır: “Geride kalan, eski zaman” / “Henüz gelmemiş olan zaman”."
+  },
+  {
+    "iliski_id": "s4-14",
+    "sinif": 4,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“az” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "tenha",
+      "çok",
+      "düşman"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“az” ile “çok” zıt anlamlıdır: “Miktarı ya da sayısı küçük olan” / “Miktarı ya da sayısı fazla olan”."
+  },
+  {
+    "iliski_id": "s4-15",
+    "sinif": 4,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“yakın” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "uzak",
+      "anı",
+      "yarışma"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“yakın” ile “uzak” zıt anlamlıdır: “Uzaklığı az olan” / “Uzaklığı fazla olan”."
+  },
+  {
+    "iliski_id": "s4-16",
+    "sinif": 4,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“kalabalık” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "yaş",
+      "bağ",
+      "tenha"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“kalabalık” ile “tenha” zıt anlamlıdır: “İnsanların çok olduğu, dolu” / “İnsan bulunmayan, ıssız”."
+  },
+  {
+    "iliski_id": "s4-17",
+    "sinif": 4,
+    "tur": "zit_anlamli",
+    "kazanim": "T.O.4.2.h",
+    "soru": "“dost” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "şüphe",
+      "düşman",
+      "hatıra"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“dost” ile “düşman” zıt anlamlıdır: “Sevgi ve güvenle bağlı olunan kişi” / “Bir kişiye karşı kötü duygu besleyen, zarar vermek isteyen kimse”."
+  },
+  {
+    "iliski_id": "s5-01",
+    "sinif": 5,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“kaygı” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "mühim",
+      "endişe",
+      "anlatmak"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“kaygı” ile “endişe” eş anlamlıdır: “Olumsuz bir şey olacağı düşüncesiyle duyulan huzursuzluk” / “Gelecek hakkında duyulan tasa ve huzursuzluk”."
+  },
+  {
+    "iliski_id": "s5-02",
+    "sinif": 5,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“cesaret” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "yiğitlik",
+      "gerçek",
+      "başarı"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“cesaret” ile “yiğitlik” eş anlamlıdır: “Korkmadan bir işe girişebilme gücü” / “Korkmadan, gözü pek davranma hâli”."
+  },
+  {
+    "iliski_id": "s5-03",
+    "sinif": 5,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“tutum” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "başarı",
+      "kabul",
+      "tavır"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“tutum” ile “tavır” eş anlamlıdır: “Bir durum karşısında takınılan duruş, tavır” / “Bir durum karşısında takınılan tutum, davranış biçimi”."
+  },
+  {
+    "iliski_id": "s5-04",
+    "sinif": 5,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“kanıt” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "kabul",
+      "delil",
+      "sevgi"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“kanıt” ile “delil” eş anlamlıdır: “Bir iddiayı doğrulayan belge ya da işaret” / “Bir iddiayı destekleyen ve doğrulayan şey”."
+  },
+  {
+    "iliski_id": "s5-05",
+    "sinif": 5,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“gerçek” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "hakikat",
+      "ret",
+      "sevgi"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“gerçek” ile “hakikat” eş anlamlıdır: “Var olan, olmuş ve doğru olan şey” / “Doğru olan, gerçek olan şey”."
+  },
+  {
+    "iliski_id": "s5-06",
+    "sinif": 5,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“önemli” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "yaşlı",
+      "ilk",
+      "mühim"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“önemli” ile “mühim” eş anlamlıdır: “Değeri ve etkisi büyük olan” / “Kendisine özen gösterilmesi gereken, dikkate değer, ehemmiyetli”."
+  },
+  {
+    "iliski_id": "s5-07",
+    "sinif": 5,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“anlatmak” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "kaygı",
+      "açıklamak",
+      "cesaret"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“anlatmak” ile “açıklamak” eş anlamlıdır: “Bir olayı ya da durumu sözle ya da yazıyla bildirmek” / “Bir şeyi ayrıntılarıyla anlaşılır hâle getirmek”."
+  },
+  {
+    "iliski_id": "s5-08",
+    "sinif": 5,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“başarı” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "tavır",
+      "başarısızlık",
+      "kanıt"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“başarı” ile “başarısızlık” zıt anlamlıdır: “Amaca ulaşma, iyi sonuç alma” / “Amaca ulaşamama durumu”."
+  },
+  {
+    "iliski_id": "s5-09",
+    "sinif": 5,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“kazanmak” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "kaybetmek",
+      "geçici",
+      "hatalı"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“kazanmak” ile “kaybetmek” zıt anlamlıdır: “Yarışta ya da bir işte üstün gelmek” / “Yarışta yenilmek ya da bir şeyi yitirmek”."
+  },
+  {
+    "iliski_id": "s5-10",
+    "sinif": 5,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“kabul” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "ilk",
+      "ret",
+      "saygı"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“kabul” ile “ret” zıt anlamlıdır: “Bir isteği ya da öneriyi uygun bulup onaylama” / “Bir isteği ya da öneriyi uygun bulmayıp geri çevirme”."
+  },
+  {
+    "iliski_id": "s5-11",
+    "sinif": 5,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“sevgi” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "cesaret",
+      "tutum",
+      "nefret"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“sevgi” ile “nefret” zıt anlamlıdır: “Birine ya da bir şeye karşı duyulan sıcak bağlılık” / “Bir kişiye ya da şeye karşı duyulan güçlü tiksinti”."
+  },
+  {
+    "iliski_id": "s5-12",
+    "sinif": 5,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“genç” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "yaşlı",
+      "başarı",
+      "kazanmak"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“genç” ile “yaşlı” zıt anlamlıdır: “Yaşı az olan” / “Yaşı ilerlemiş olan”."
+  },
+  {
+    "iliski_id": "s5-13",
+    "sinif": 5,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“ilk” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "yaşlı",
+      "son",
+      "kalıcı"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“ilk” ile “son” zıt anlamlıdır: “Sıranın başında ya da önce gelen” / “Sıranın sonunda ya da en sonda gelen”."
+  },
+  {
+    "iliski_id": "s5-14",
+    "sinif": 5,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“saygı” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "saygısızlık",
+      "kanıt",
+      "gerçek"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“saygı” ile “saygısızlık” zıt anlamlıdır: “Birine ya da bir değere gösterilen değer ve hürmet” / “Birine ya da bir değere karşı saygı göstermeme davranışı”."
+  },
+  {
+    "iliski_id": "s5-15",
+    "sinif": 5,
+    "tur": "es_sesli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“sol” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "Bir iddiayı destekleyen ve doğrulayan şey",
+      "Sağın karşısındaki yön",
+      "Var olan, olmuş ve doğru olan şey"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“sol” sözcüğünün iki anlamı vardır: “Sağın karşısındaki yön” ve “Müzikte yedi ana notadan biri”."
+  },
+  {
+    "iliski_id": "s5-16",
+    "sinif": 5,
+    "tur": "es_sesli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“kaz” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "Bir olayı ya da durumu sözle ya da yazıyla bildirmek",
+      "Bir şeyi ayrıntılarıyla anlaşılır hâle getirmek",
+      "Bir tür kümes hayvanı"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“kaz” sözcüğünün iki anlamı vardır: “Bir tür kümes hayvanı” ve “Toprağı kürekle ya da elle derin açmak (kazmak)”."
+  },
+  {
+    "iliski_id": "s5-17",
+    "sinif": 5,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“kalıcı” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "geçici",
+      "başarısızlık",
+      "kazanmak"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“kalıcı” ile “geçici” zıt anlamlıdır: “Uzun süre devam eden, sürekli” / “Belli bir süre için olan, kalıcı olmayan”."
+  },
+  {
+    "iliski_id": "s5-18",
+    "sinif": 5,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.5.22.b",
+    "soru": "“hatalı” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "yanlış",
+      "tavır",
+      "kanıt"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“hatalı” ile “yanlış” eş anlamlıdır: “Yanlışı olan, hata içeren” / “Doğru olmayan, hatalı”."
+  },
+  {
+    "iliski_id": "s6-01",
+    "sinif": 6,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“amaç” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "önyargı",
+      "övgü",
+      "hedef"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“amaç” ile “hedef” eş anlamlıdır: “Bir işle ulaşılmak istenen son nokta” / “Ulaşılmak istenen yer ya da amaç”."
+  },
+  {
+    "iliski_id": "s6-02",
+    "sinif": 6,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“yaşam” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "risk",
+      "sorun",
+      "hayat"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“yaşam” ile “hayat” eş anlamlıdır: “Canlının var olduğu süre ya da yaşama durumu” / “Canlıların yaşadığı süreç, yaşam”."
+  },
+  {
+    "iliski_id": "s6-03",
+    "sinif": 6,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“emek” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "çaba",
+      "sorun",
+      "önyargı"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“emek” ile “çaba” eş anlamlıdır: “Bir iş için harcanan güç, zaman ve gayret” / “Bir iş için gösterilen uğraş”."
+  },
+  {
+    "iliski_id": "s6-04",
+    "sinif": 6,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“tehlike” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "risk",
+      "düşüş",
+      "çoğalmak"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“tehlike” ile “risk” eş anlamlıdır: “Zarar görme olasılığı, tehdit” / “Zarar görme ihtimali olan durum”."
+  },
+  {
+    "iliski_id": "s6-05",
+    "sinif": 6,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“sorun” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "hayat",
+      "problem",
+      "emek"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“sorun” ile “problem” eş anlamlıdır: “Çözülmesi gereken durum ya da mesele” / “Çözüm bekleyen durum, sorun”."
+  },
+  {
+    "iliski_id": "s6-06",
+    "sinif": 6,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“önyargı” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "düşüş",
+      "peşin hüküm",
+      "mutluluk"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“önyargı” ile “peşin hüküm” eş anlamlıdır: “Bilgi edinmeden önceden oluşan olumlu ya da olumsuz kanı” / “Araştırılmadan önceden verilmiş yargı”."
+  },
+  {
+    "iliski_id": "s6-07",
+    "sinif": 6,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“övgü” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "yükseliş",
+      "çoğalmak",
+      "takdir"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“övgü” ile “takdir” eş anlamlıdır: “Bir kişinin ya da şeyin iyi yanlarını dile getirme” / “Beğenerek değer verme, övme”."
+  },
+  {
+    "iliski_id": "s6-08",
+    "sinif": 6,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“dürüst” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "yalancı",
+      "düşüş",
+      "çoğalmak"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“dürüst” ile “yalancı” zıt anlamlıdır: “Doğru söyleyen, güvenilir olan” / “Yalan söyleyen, gerçeği söylemeyen”."
+  },
+  {
+    "iliski_id": "s6-09",
+    "sinif": 6,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“cömert” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "yar",
+      "cimri",
+      "kur"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“cömert” ile “cimri” zıt anlamlıdır: “Elindekini başkalarıyla paylaşmaktan çekinmeyen” / “Malını harcamaktan kaçınan, eli sıkı”."
+  },
+  {
+    "iliski_id": "s6-10",
+    "sinif": 6,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“verimli” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "çaba",
+      "amaç",
+      "kısır"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“verimli” ile “kısır” zıt anlamlıdır: “Ürün veren, bol ürünlü” / “Ürün vermeyen, verimsiz”."
+  },
+  {
+    "iliski_id": "s6-11",
+    "sinif": 6,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“gizli” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "kısır",
+      "belli",
+      "eksik"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“gizli” ile “belli” zıt anlamlıdır: “Saklı, açığa vurulmamış” / “Görünen, anlaşılan, bilinen”."
+  },
+  {
+    "iliski_id": "s6-12",
+    "sinif": 6,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“yükseliş” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "önyargı",
+      "düşüş",
+      "övgü"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“yükseliş” ile “düşüş” zıt anlamlıdır: “Yukarı doğru çıkma, artış” / “Aşağı doğru inme, azalma”."
+  },
+  {
+    "iliski_id": "s6-13",
+    "sinif": 6,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“çoğalmak” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "azalmak",
+      "problem",
+      "önyargı"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“çoğalmak” ile “azalmak” zıt anlamlıdır: “Sayısı ya da miktarı artmak” / “Sayısı ya da miktarı eksilmek”."
+  },
+  {
+    "iliski_id": "s6-14",
+    "sinif": 6,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“mutluluk” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "üzüntü",
+      "çoğalmak",
+      "yar"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“mutluluk” ile “üzüntü” zıt anlamlıdır: “Sevinçli ve huzurlu olma hâli” / “Keder, acı duyma hâli”."
+  },
+  {
+    "iliski_id": "s6-15",
+    "sinif": 6,
+    "tur": "es_sesli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“yar” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "Bir şeyi yerleştirip düzenlemek, kurmak (emir)",
+      "Tamamlanmamış, noksan olan",
+      "Dik, derin uçurum"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“yar” sözcüğünün iki anlamı vardır: “Dik, derin uçurum” ve “Yarmak eylemi, bir şeyi ikiye ayırmak”."
+  },
+  {
+    "iliski_id": "s6-16",
+    "sinif": 6,
+    "tur": "es_sesli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“kur” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "Bir kişinin ya da şeyin iyi yanlarını dile getirme",
+      "Beğenerek değer verme, övme",
+      "Para birimlerinin birbirine göre değeri, döviz kuru"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“kur” sözcüğünün iki anlamı vardır: “Para birimlerinin birbirine göre değeri, döviz kuru” ve “Bir şeyi yerleştirip düzenlemek, kurmak (emir)”."
+  },
+  {
+    "iliski_id": "s6-17",
+    "sinif": 6,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.6.22.b",
+    "soru": "“eksik” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "peşin hüküm",
+      "tam",
+      "övgü"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“eksik” ile “tam” zıt anlamlıdır: “Tamamlanmamış, noksan olan” / “Eksiksiz, bütün”."
+  },
+  {
+    "iliski_id": "s7-01",
+    "sinif": 7,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“hayal” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "açığa vurmak",
+      "düş",
+      "sadakat"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“hayal” ile “düş” eş anlamlıdır: “Zihinde canlandırılan, gerçek olmayan görüntü” / “Zihinde canlanan, gerçek olmayan imge”."
+  },
+  {
+    "iliski_id": "s7-02",
+    "sinif": 7,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“tedirgin” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "eşsiz",
+      "huzursuz",
+      "tanık"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“tedirgin” ile “huzursuz” eş anlamlıdır: “Bir olay karşısında endişeli, huzursuz olan” / “Rahat olmayan, tedirgin olan”."
+  },
+  {
+    "iliski_id": "s7-03",
+    "sinif": 7,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“aşırı” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "fazla",
+      "uzlaşmak",
+      "çoğunluk"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“aşırı” ile “fazla” eş anlamlıdır: “Olması gerekenden çok fazla olan” / “Gereğinden çok olan, aşırı”."
+  },
+  {
+    "iliski_id": "s7-04",
+    "sinif": 7,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“karakter” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "sadık",
+      "kişilik",
+      "dolu"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“karakter” ile “kişilik” eş anlamlıdır: “İnsanın davranış ve düşünce biçimini belirleyen ayırt edici özellikler” / “Bir kişiyi diğerlerinden ayıran özellikler bütünü”."
+  },
+  {
+    "iliski_id": "s7-05",
+    "sinif": 7,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“eşsiz” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "benzersiz",
+      "azınlık",
+      "sadık"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“eşsiz” ile “benzersiz” eş anlamlıdır: “Bir benzeri olmayan” / “Benzeri bulunmayan, eşsiz”."
+  },
+  {
+    "iliski_id": "s7-06",
+    "sinif": 7,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“tanık” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "şahit",
+      "azınlık",
+      "dolu"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“tanık” ile “şahit” eş anlamlıdır: “Bir olaya bizzat görerek ya da yaşayarak katılan kişi” / “Bir olayı görmüş ve bildirebilen kişi”."
+  },
+  {
+    "iliski_id": "s7-07",
+    "sinif": 7,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“ortaya çıkarmak” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "aşırı",
+      "karakter",
+      "açığa vurmak"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“ortaya çıkarmak” ile “açığa vurmak” eş anlamlıdır: “Gizli olan bir şeyi görünür hâle getirmek” / “Gizli bir şeyi belli etmek, açığa çıkarmak”."
+  },
+  {
+    "iliski_id": "s7-08",
+    "sinif": 7,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“sadakat” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "ihanet",
+      "uzlaşmak",
+      "çoğunluk"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“sadakat” ile “ihanet” zıt anlamlıdır: “Bir kişiye ya da değere bağlılık, vefa” / “Güvenilen birine karşı yapılan kötülük, vefasızlık”."
+  },
+  {
+    "iliski_id": "s7-09",
+    "sinif": 7,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“içten” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "tutarlı",
+      "gelişmek",
+      "yapmacık"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“içten” ile “yapmacık” zıt anlamlıdır: “Samimi, gönülden, yapmacıksız” / “Doğal olmayan, zorlama, sahte”."
+  },
+  {
+    "iliski_id": "s7-10",
+    "sinif": 7,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“ikna etmek” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "benzersiz",
+      "caydırmak",
+      "tanık"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“ikna etmek” ile “caydırmak” zıt anlamlıdır: “Bir kişiyi bir düşünceye ya da işe inandırmak” / “Bir kişiyi bir işten vazgeçirmek”."
+  },
+  {
+    "iliski_id": "s7-11",
+    "sinif": 7,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“tutarlı” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "eşsiz",
+      "tanık",
+      "tutarsız"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“tutarlı” ile “tutarsız” zıt anlamlıdır: “Sözü ve davranışları birbiriyle uyumlu olan” / “Sözü ve davranışları birbiriyle uyuşmayan”."
+  },
+  {
+    "iliski_id": "s7-12",
+    "sinif": 7,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“gelişmek” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "tutarsız",
+      "birleşmek",
+      "gerilemek"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“gelişmek” ile “gerilemek” zıt anlamlıdır: “İlerleyerek daha iyi bir duruma gelmek” / “Geriye gitmek, önceki duruma dönmek ya da kötüleşmek”."
+  },
+  {
+    "iliski_id": "s7-13",
+    "sinif": 7,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“birleşmek” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "ayrılmak",
+      "huzursuz",
+      "aşırı"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“birleşmek” ile “ayrılmak” zıt anlamlıdır: “Bir araya gelerek tek bir bütün olmak” / “Birbirinden uzaklaşmak, bölünmek”."
+  },
+  {
+    "iliski_id": "s7-14",
+    "sinif": 7,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“uzlaşmak” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "gerilemek",
+      "birleşmek",
+      "çatışmak"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“uzlaşmak” ile “çatışmak” zıt anlamlıdır: “Görüş ayrılığını bir anlaşmayla gidermek” / “Birbirine karşı çıkmak, anlaşamamak”."
+  },
+  {
+    "iliski_id": "s7-15",
+    "sinif": 7,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“çoğunluk” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "azınlık",
+      "kişilik",
+      "tanık"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“çoğunluk” ile “azınlık” zıt anlamlıdır: “Sayıca fazla olan kesim” / “Sayıca az olan kesim”."
+  },
+  {
+    "iliski_id": "s7-16",
+    "sinif": 7,
+    "tur": "es_sesli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“dolu” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "İçi boş olmayan, doldurulmuş",
+      "Sayıca az olan kesim",
+      "Bağlılığını sürdüren, değişmeyen"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“dolu” sözcüğünün iki anlamı vardır: “İçi boş olmayan, doldurulmuş” ve “Bir yağış türü, havadan düşen buz parçaları”."
+  },
+  {
+    "iliski_id": "s7-17",
+    "sinif": 7,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.7.22.b",
+    "soru": "“sadık” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "tutarlı",
+      "vefalı",
+      "dolu"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“sadık” ile “vefalı” eş anlamlıdır: “Bağlılığını sürdüren, değişmeyen” / “Dostluğuna ve sözüne bağlı, vefa sahibi”."
+  },
+  {
+    "iliski_id": "s8-01",
+    "sinif": 8,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“gereksinim” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "ihtiyaç",
+      "çekingen",
+      "tedbirli"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“gereksinim” ile “ihtiyaç” eş anlamlıdır: “Yaşam için eksik olan ve karşılanması gereken şey” / “Yaşamak ya da bir amaca ulaşmak için gerekli olan şey”."
+  },
+  {
+    "iliski_id": "s8-02",
+    "sinif": 8,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“olağan” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "âdet",
+      "normal",
+      "çekingen"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“olağan” ile “normal” eş anlamlıdır: “Her zaman görülen, alışılmış” / “Olağan, alışılmış, herkesçe beklenen”."
+  },
+  {
+    "iliski_id": "s8-03",
+    "sinif": 8,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“tasarı” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "dikkatli",
+      "gerçekçi",
+      "proje"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“tasarı” ile “proje” eş anlamlıdır: “Yapılması düşünülen, planlanan iş” / “Bir işi gerçekleştirmek için hazırlanan plan”."
+  },
+  {
+    "iliski_id": "s8-04",
+    "sinif": 8,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“değiştirmek” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "yapıcı",
+      "dönüştürmek",
+      "bilinçli"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“değiştirmek” ile “dönüştürmek” eş anlamlıdır: “Bir şeyi başka bir şeyle ya da başka hâle getirmek” / “Bir şeyi biçim ya da nitelik bakımından başka bir hâle sokmak”."
+  },
+  {
+    "iliski_id": "s8-05",
+    "sinif": 8,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“alışkanlık” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "aydınlık",
+      "at",
+      "âdet"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“alışkanlık” ile “âdet” eş anlamlıdır: “Bir davranışı sürekli yapmaya dayanan eğilim” / “Sürekli yapılan davranış, huy”."
+  },
+  {
+    "iliski_id": "s8-06",
+    "sinif": 8,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“çekingen” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "utangaç",
+      "olumlu",
+      "yapıcı"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“çekingen” ile “utangaç” eş anlamlıdır: “Sıkılgan, kendini geri tutan” / “Çevresinde kendini rahat hissetmeyen, sıkılgan”."
+  },
+  {
+    "iliski_id": "s8-07",
+    "sinif": 8,
+    "tur": "es_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“tedbirli” sözcüğünün eş anlamlısı hangisidir?",
+    "secenekler": [
+      "yapıcı",
+      "dikkatli",
+      "bilinçli"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“tedbirli” ile “dikkatli” eş anlamlıdır: “Önlem alan, dikkatli” / “Özenli, dikkat eden”."
+  },
+  {
+    "iliski_id": "s8-08",
+    "sinif": 8,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“gerçekçi” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "tedbirli",
+      "hayalci",
+      "bağımsız"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“gerçekçi” ile “hayalci” zıt anlamlıdır: “Gerçeğe uygun düşünen, ayakları yere basan” / “Gerçeklikten uzak, hayallerle yaşayan”."
+  },
+  {
+    "iliski_id": "s8-09",
+    "sinif": 8,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“bağımsız” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "karanlık",
+      "at",
+      "bağımlı"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“bağımsız” ile “bağımlı” zıt anlamlıdır: “Başkasına bağlı olmayan, özgür” / “Bir şeye ya da birine bağlı olan”."
+  },
+  {
+    "iliski_id": "s8-10",
+    "sinif": 8,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“sadelik” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "karmaşıklık",
+      "utangaç",
+      "tedbirli"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“sadelik” ile “karmaşıklık” zıt anlamlıdır: “Süs ve karmaşadan uzak olma hâli” / “Birçok parçadan oluşan, karışık olma hâli”."
+  },
+  {
+    "iliski_id": "s8-11",
+    "sinif": 8,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“olumlu” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "sadelik",
+      "yapıcı",
+      "olumsuz"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“olumlu” ile “olumsuz” zıt anlamlıdır: “İyi sonuç veren, yararlı, kabul edilen” / “Kötü sonuç veren, istenmeyen, olumlu olmayan”."
+  },
+  {
+    "iliski_id": "s8-12",
+    "sinif": 8,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“yapıcı” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "olağan",
+      "yıkıcı",
+      "çekingen"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“yapıcı” ile “yıkıcı” zıt anlamlıdır: “Yeni ve iyi şeyler kuran, geliştiren” / “Var olanı bozan, zarar veren”."
+  },
+  {
+    "iliski_id": "s8-13",
+    "sinif": 8,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“bilinçli” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "bilinçsiz",
+      "dikkatli",
+      "gerçekçi"
+    ],
+    "dogru_indeks": 0,
+    "aciklama": "“bilinçli” ile “bilinçsiz” zıt anlamlıdır: “Ne yaptığının farkında olan, kasıtlı” / “Ne yaptığının farkında olmayan, dikkatsiz”."
+  },
+  {
+    "iliski_id": "s8-14",
+    "sinif": 8,
+    "tur": "zit_anlamli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“karanlık” sözcüğünün zıt anlamlısı hangisidir?",
+    "secenekler": [
+      "tasarı",
+      "değiştirmek",
+      "aydınlık"
+    ],
+    "dogru_indeks": 2,
+    "aciklama": "“karanlık” ile “aydınlık” zıt anlamlıdır: “Işığın az olduğu ya da hiç olmadığı durum” / “Işığın bol olduğu, ışıklı durum”."
+  },
+  {
+    "iliski_id": "s8-15",
+    "sinif": 8,
+    "tur": "es_sesli",
+    "kazanim": "T.K.8.22.b",
+    "soru": "“at” sözcüğünün anlamlarından biri hangisidir?",
+    "secenekler": [
+      "Işığın bol olduğu, ışıklı durum",
+      "Üzerine binilen, dört ayaklı hayvan",
+      "Yaşam için eksik olan ve karşılanması gereken şey"
+    ],
+    "dogru_indeks": 1,
+    "aciklama": "“at” sözcüğünün iki anlamı vardır: “Üzerine binilen, dört ayaklı hayvan” ve “Bir şeyi fırlatmak, uzağa savurmak (emir)”."
+  }
+]

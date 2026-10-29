@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Güneşkent'te bir durak, yolcuya ne zaman neyi önereceğini bilen bir sistem. Elif ve arkadaşları, bir sistemin ne kadar hatırlaması gerektiğini sorar."
+tanitim: "Güneşkent'te bir durak, yolcuya ne zaman neyi önereceğini bilen bir sistem. {kahraman} ve arkadaşları, bir sistemin ne kadar hatırlaması gerektiğini sorar."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -33,16 +33,16 @@ etiketler:
     - {id: deyim_hr112, tur: idiom, etiket: "İçine ağırlık oturmak", yuva: hr112_agirlik, islev: application}
     - {id: kavram_hr112, tur: concept, etiket: "Tahmin ile kaydı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Belediye sisteme hangi adı vermişti?", secenekler: [{id: A, metin: "HAFIZA"}, {id: B, metin: "GÜNEŞ"}, {id: C, metin: "ŞEHİR"}, {id: D, metin: "KONSEY"}], dogru: A, aciklama: "Belediye sisteme HAFIZA adını vermişti."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 12, metin: "Elif'e göre bir veriyi yalnızca toplayabiliyor olmak ne anlama gelir?", secenekler: [{id: A, metin: "Toplamak için yeterli bir gerekçe olur"}, {id: B, metin: "Toplamak için tek başına yeterli bir gerekçe olmaz"}, {id: C, metin: "Verinin daha güvenli olduğunu gösterir"}, {id: D, metin: "Sistemin daha yavaş çalışacağını gösterir"}], dogru: B, aciklama: "Bir verinin toplanabilir olması, toplanması için tek başına yeterli gerekçe değildir."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 22, metin: "Elif'in afişteki sözü değiştirmesinin nedeni nedir?", secenekler: [{id: A, metin: "Bilmek ile tahmin etmek arasındaki farkı fark etmesi"}, {id: B, metin: "Afişin çok renkli olması"}, {id: C, metin: "Jürinin bunu istemesi"}, {id: D, metin: "Sistemin tüm yanıtları bilmesi"}], dogru: A, aciklama: "Elif, bilmek ile tahmin etmek arasındaki farkı öğrenince ilk sözün kibirli olduğunu fark eder."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 18, metin: "Metinde “kimliksiz” sözcüğü ne anlatır?", secenekler: [{id: A, metin: "Adı ya da kimliği açıkça belirtilmeyen"}, {id: B, metin: "Hiç kullanılmayan"}, {id: C, metin: "Sahibi olmayan bir cihaz"}, {id: D, metin: "Yanlış bir yazıyla yazılmış"}], dogru: A, aciklama: "Kimliksiz, verinin üzerinde kişinin adı ya da kimliği açıkça yer almayan durumu anlatır."}
-  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 20, metin: "Öğrencilerin yasal ve teknik ayrıntılar konusundaki tutumu nasıldır?", secenekler: [{id: A, metin: "Kendi kararlarıyla hemen belirlemek"}, {id: B, metin: "Uzmanların değerlendirmesine güvenmek ve dikkatli davranmak"}, {id: C, metin: "Bu ayrıntıları tamamen görmezden gelmek"}, {id: D, metin: "Sadece jürinin görüşüne uymak"}], dogru: B, aciklama: "Öğrenciler yasal ve teknik ayrıntıların uzmanlarca belirlenmesi gerektiğini kabul eder."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Belediye sisteme hangi adı vermişti?", secenekler: [{id: A, metin: "GÜNEŞ"}, {id: B, metin: "ŞEHİR"}, {id: C, metin: "HAFIZA"}, {id: D, metin: "KONSEY"}], dogru: C, aciklama: "Belediye sisteme HAFIZA adını vermişti."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 12, metin: "Kahramana göre bir veriyi yalnızca toplayabiliyor olmak ne anlama gelir?", secenekler: [{id: A, metin: "Toplamak için yeterli bir gerekçe olduğunu gösterir"}, {id: B, metin: "Toplamak için tek başına yeterli bir gerekçe olmaz"}, {id: C, metin: "Verinin daha güvenli bir şekilde saklanacağını gösterir"}, {id: D, metin: "Sistemin önerileri daha yavaş üreteceğini gösterir"}], dogru: B, aciklama: "Bir verinin toplanabilir olması, toplanması için tek başına yeterli gerekçe değildir."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 22, metin: "Kahramanın afişteki sözü değiştirmesinin nedeni nedir?", secenekler: [{id: A, metin: "Bilmek ile tahmin etmek arasındaki farkı fark etmesi"}, {id: B, metin: "Afişin çok renkli ve dikkat çekici olması"}, {id: C, metin: "Jürinin bunu açıkça istemesi ve talep etmesi"}, {id: D, metin: "Sistemin bütün soruların yanıtını bilmesi"}], dogru: A, aciklama: "Kahraman, bilmek ile tahmin etmek arasındaki farkı öğrenince ilk sözün kibirli olduğunu fark eder."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 18, metin: "Metinde “kimliksiz” sözcüğü ne anlatır?", secenekler: [{id: A, metin: "Uzun süredir hiç kimse tarafından kullanılmayan"}, {id: B, metin: "Sahibi olmayan ve kendi başına çalışan bir cihaz"}, {id: C, metin: "Yanlış bir yazım kuralıyla ve hatalı biçimde yazılmış"}, {id: D, metin: "Adı ya da kimliği açıkça belirtilmeyen"}], dogru: D, aciklama: "Kimliksiz, verinin üzerinde kişinin adı ya da kimliği açıkça yer almayan durumu anlatır."}
+  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 20, metin: "Öğrencilerin yasal ve teknik ayrıntılar konusundaki tutumu nasıldır?", secenekler: [{id: A, metin: "Kendi kararlarıyla hemen ve tek başına belirlemek"}, {id: B, metin: "Bu ayrıntıları önemsiz sayıp tamamen görmezden gelmek"}, {id: C, metin: "Uzmanların değerlendirmesine güvenmek ve dikkatli davranmak"}, {id: D, metin: "Sadece jürinin görüşüne sorgusuz sualsiz uymak"}], dogru: C, aciklama: "Öğrenciler yasal ve teknik ayrıntıların uzmanlarca belirlenmesi gerektiğini kabul eder."}
 deyim_cumleleri:
-  hr112_agirlik: "{kahraman} bunu duyunca içine bir ağırlık oturdu."
+  hr112_agirlik: "{kahraman} bunu görünce içine bir ağırlık oturdu."
 ---
 @omurga
 2055 yılında Güneşkent'in otobüs durakları yalnızca otobüslerin ne zaman geleceğini değil, yolcuların nereye gitmek isteyeceğini de tahmin ederdi. Durakların çatısındaki ince ekranlar, insanlar yaklaşırken kişisel rotalar önerirdi. Yağmurlu günlerde yürümek istemeyenleri otobüse, acelesi olanları metroya yönlendirirdi. Belediye bu sisteme HAFIZA adını vermişti: Hareket Analizi ve Fırsatları İzleme Akıllısı.

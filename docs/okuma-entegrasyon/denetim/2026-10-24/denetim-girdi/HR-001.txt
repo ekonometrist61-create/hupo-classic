@@ -1,0 +1,70 @@
+# HR-001 · Kayıp Çanın İzinde · denetim girdisi
+Kaynak: canlı DB, okuma_hikaye_surumleri.id=1ef00a9e-4e2a-4319-8123-c54aa469311c, surum_no=2, sha256=847f5d1a49d7cb5deafa8f4f3148b5fd3b4c155fb18d983ce3484ed05ebe8fd8
+Not: bu hikâyede 2 taslak sürüm var; yalnız en yeni (surum_no=2) denetlenmiştir.
+
+## Künye
+Slug: hr001-kayip-canin-izinde | Tür: macera | Konu: bahce | Dünya: gercekci
+Sınıf: 2–2 | Okuma bandı: 1 | Yetişkin uygun: false
+Tanıtım: Okul bahçesindeki küçük çan kayboldu. Sesini dinleyerek onu bulabilir miyiz?
+İzinli türler: ben, kardes, arkadas, hayali
+Değer anahtarları (sürüm): D20 | maarif.ana_deger: D20
+Etiketler: ana_sinif=2, okuma_zorlugu=1, kavram_zorlugu=1, ilgi=ortak, kanit_duzeyi=C
+Temalar: okul, kesif | Ders bağlantısı: turkce
+Program sürümü: TYMM 2026-27 (2. sınıf; okuma evresi insan editörce kontrol edilecek)
+Öğrenme hedefleri: dikkatle (lexeme, first_hint: dikkatle); uzak (lexeme, application: uzak); kavram_hr001 (concept, application: Sesin kaynağı)
+Ölçülen: {"soru_sayisi":4,"sayfa_sayisi":7,"simge_sayisi":8,"kelime_sayisi":206,"tahmini_sure_dk":4,"yoldas_yer_sayisi":4,"hedef_tur_dagilimi":{"lexeme":2,"concept":1},"soru_beceri_dagilimi":{"cikarim":1,"hatirlama":1,"yorumlama":1,"sozcuk_baglami":1}}
+
+## Sayfalar
+--- Sayfa 1 ---
+Bahçedeki küçük çanın yerinde yalnızca bir ip sallanıyordu. [KAHRAMAN hal=yalin] sabah[İKON sun] zilini beklerken şaşırdı. "Çan[İKON bell] nereye gitti?" diye sordu. [YOLDAŞ hal=yalin yedek=Hupo] kulağını kaldırdı. Yaprakların arasından [KELİME yuva=s2_uzak] bir çın sesi geldi. [İŞARET kod=ipucu]
+--- Sayfa 2 ---
+Önce oyun kulübesine baktılar. Kulübe sessizdi. Sonra çeşmenin yanına yürüdüler. Ses biraz daha yakın duyuluyordu. [KAHRAMAN hal=yalin] ağaca koşmak istedi. Ama [YOLDAŞ hal=yalin yedek=Hupo] durdurdu: "Önce [KELİME yuva=s2_dikkatle] bakalım."
+--- Sayfa 3 ---
+Tam o sırada okulun bahçesinde bir kuş[İKON bird] öttü. [KAHRAMAN hal=yalin] başını çevirdi. Kuşun sesi çanın sesine karışmıştı. Bir süre konuşmadan beklediler. Teneffüs bitip kalabalık sınıfa girince çın sesi yeniden duyuldu.
+--- Sayfa 4 ---
+[KAHRAMAN hal=yalin] gözlerini kapadı. Ses sol taraftan geliyordu. Önlerinde üç ağaç[İKON tree] vardı. İlk ağacın dallarında yalnızca yapraklar sallanıyordu. İkinci ağacın altında bir kedi[İKON cat] uyuyordu. Üçüncü ağacın en alt dalında ise bir ip parçası sarkıyordu.
+--- Sayfa 5 ---
+[KAHRAMAN hal=yalin] hemen yukarı uzanmak istedi. Ancak yerde kaygan taşlar vardı. "Dur," dedi [YOLDAŞ hal=yalin yedek=Hupo]. "Önce bahçe görevlisine haber verelim." Çocuklar gördüklerini anlattı. Cemil amca uzun saplı güvenli bir araçla çanı aşağı indirdi.
+--- Sayfa 6 ---
+[KAHRAMAN hal=yalin] çanı eline alınca gülümsedi. "Sesin yakın mı uzak mı olduğunu dinleyerek anlayabiliyoruz," dedi. [YOLDAŞ hal=yalin yedek=Hupo] başını salladı. Çan[İKON bell] yeniden yerine asıldı. O gün ders zili her zamankinden güzel çaldı.
+--- Sayfa 7 ---
+Ertesi sabah[İKON sun] [KAHRAMAN hal=yalin] sessizce bahçeyi dinledi. Kuşların ötüşünü, hafif rüzgârı ve çanın sesini birbirinden ayırabildi. Arkadaşı "Bütün sesler aynı mı?" diye sorduğunda gülümsedi. "Hayır," dedi, "dinleyince her birinin yerini bulabiliyoruz."
+
+## Sorular
+s1 [hatirlama] dayanak_sayfa=1 doğru=A
+  Metin: Çanın yerinde ne vardı?
+  A) Sallanan bir ip
+  B) Uyuyan bir kedi
+  C) Açık bir kapı
+  Açıklama: Çanın yerinde yalnızca bir ip sallanıyordu.
+s2 [cikarim] dayanak_sayfa=3 doğru=A
+  Metin: Çocuk çanın sesini neden bir süre duyamadı?
+  A) Kuşun sesi çanın sesine karıştığı için
+  B) Çan bahçeden çok uzaklaştığı için
+  C) Kulaklarını kapattıkları için
+  Açıklama: Bir kuş öttü ve çanın sesi kuşun sesine karıştı.
+s3 [yorumlama] dayanak_sayfa=6 doğru=B
+  Metin: Hikâyenin sonunda çocuk neyi öğrenmiştir?
+  A) Bütün seslerin birbirinin aynısı olduğunu
+  B) Dinleyerek seslerin yerini bulabileceğini
+  C) Çanın artık hiç çalmayacağını
+  Açıklama: Çocuk, dinleyince her sesin yerini bulabildiğini söyledi.
+s4 [sozcuk_baglami] dayanak_sayfa=2 doğru=A
+  Metin: Metinde geçen dikkatle sözcüğü ne anlama gelir?
+  A) Özen göstererek
+  B) Çok hızlı
+  C) Yüksek sesle
+  Açıklama: Hupo, önce özenle bakmalarını söyledi.
+
+## Sözlük
+- s2_dikkatle | kelime | yazım: dikkatle | 2–2 | anlam: Özen göstererek, işini iyi yaparak.
+- s2_uzak | kelime | yazım: uzak | 2–2 | anlam: Yakın olmayan, bir yere çok ileride olan.
+
+## Deyim cümleleri
+(yok)
+
+## Değer sahneleri
+(yok)
+
+## Hareket sahneleri
+(yok)

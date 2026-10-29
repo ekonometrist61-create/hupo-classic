@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Meydanda beliren bir gölge bir bekçinin ruhu mu, yoksa ışığın oyunu mu? Nil ve Kaan, korkuyu ve iddiayı kanıttan ayırmayı öğrenir."
+tanitim: "Meydandaki gölge bir bekçinin ruhu mu, ışığın oyunu mu? {kahraman} ile {yoldas:yalin|bir arkadaşı} korkuyu ve iddiayı kanıttan ayırmayı öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -33,14 +33,14 @@ etiketler:
     - {id: deyim_hr102, tur: idiom, etiket: "Hayal kırıklığına uğramak", yuva: hr102_hayal, islev: application}
     - {id: kavram_hr102, tur: concept, etiket: "Gözlem ile yorumu ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "İlk gölge hangi gece görülmüştü?", secenekler: [{id: A, metin: "Perşembe gecesi"}, {id: B, metin: "Pazar sabahı"}, {id: C, metin: "Cuma öğleden sonra"}, {id: D, metin: "Salı akşamı"}], dogru: A, aciklama: "Metinde ilk gölge perşembe gecesi duvarda belirmişti."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 11, metin: "Nil'e göre iki olayın aynı saatte gerçekleşmesi ne anlama gelir?", secenekler: [{id: A, metin: "Olaylar arasında kesin bir neden-sonuç ilişkisi vardır"}, {id: B, metin: "Olaylar tesadüfen de aynı saatte olabilir ve bu tek başına neden değildir"}, {id: C, metin: "Gölge gerçekten bir insandır"}, {id: D, metin: "Işıklar bozuk olduğunda gölge görünür"}], dogru: B, aciklama: "Nil, aynı saatte olmanın neden-sonuç ilişkisini tek başına kanıtlamadığını söyler."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 36, metin: "Bu metne göre hayal kurmak ile sorun arasındaki fark nedir?", secenekler: [{id: A, metin: "Hayal kurmak tek başına sorun değildir; sorun hayali kanıt gibi sunmaktır"}, {id: B, metin: "Hayal kurmak her zaman yanlıştır"}, {id: C, metin: "Hayal kurmak ile kanıt aynı şeydir"}, {id: D, metin: "Hayal kurmanın hiçbir değeri yoktur"}], dogru: A, aciklama: "Masal ve hayal kurmak sorun değildir; hayal ürününü kanıt gibi sunmak sorundur."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 10, metin: "Metinde “korkuyu kanıt yerine koymak” ne anlatır?", secenekler: [{id: A, metin: "Korkunun, kanıtın yerine geçirilmesi"}, {id: B, metin: "Kanıtların korkutucu olması"}, {id: C, metin: "Korkmadan önce kanıt toplamak"}, {id: D, metin: "Kanıtların hepsini yok etmek"}], dogru: A, aciklama: "Duygu, yani korku, kanıtın yerine konduğunda araştırma yanıltıcı sonuçlara götürebilir."}
-  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 25, metin: "Sunumun son slaydındaki cümle neyi vurgular?", secenekler: [{id: A, metin: "İlgi çekici bir iddia, doğru olduğu anlamına gelmez"}, {id: B, metin: "İlgi çeken her iddia doğrudur"}, {id: C, metin: "Kanıta gerek yoktur"}, {id: D, metin: "Gölgeler hakkında konuşmak yasaktır"}], dogru: A, aciklama: "Son slayt, ilgi çekici bir iddianın doğrulanması için kanıt gerektiğini söyler."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "İlk gölge hangi gece görülmüştü?", secenekler: [{id: A, metin: "Pazar sabahı"}, {id: B, metin: "Cuma öğleden sonra"}, {id: C, metin: "Salı akşamı"}, {id: D, metin: "Perşembe gecesi"}], dogru: D, aciklama: "Metinde ilk gölge perşembe gecesi duvarda belirmişti."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 11, metin: "Kahramana göre iki olayın aynı saatte gerçekleşmesi ne anlama gelir?", secenekler: [{id: A, metin: "Olaylar arasında kesin bir neden-sonuç ilişkisi vardır; biri diğerini doğurmuştur"}, {id: B, metin: "Gölge gerçekten bir insanın varlığından oluşur ve bunu hemen kanıtlamak mümkündür"}, {id: C, metin: "Olaylar tesadüfen de aynı saatte olabilir ve bu tek başına neden değildir"}, {id: D, metin: "Işıklar bozuk olduğunda gölge görünür ve bu yüzden her gece belirli saatte oluşur"}], dogru: C, aciklama: "Kahraman, aynı saatte olmanın neden-sonuç ilişkisini tek başına kanıtlamadığını söyler."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 36, metin: "Bu metne göre hayal kurmak ile sorun arasındaki fark nedir?", secenekler: [{id: A, metin: "Hayal kurmak her zaman yanlıştır ve hiçbir masalın okurda değeri yoktur"}, {id: B, metin: "Hayal kurmak ile kanıt aynı şeydir; ikisi de bir olayı açıklamaya yarar"}, {id: C, metin: "Hayal kurmanın hiçbir değeri yoktur; yalnızca gerçek ölçümler önemlidir"}, {id: D, metin: "Hayal kurmak tek başına sorun değildir; sorun hayali kanıt gibi sunmaktır"}], dogru: D, aciklama: "Masal ve hayal kurmak sorun değildir; hayal ürününü kanıt gibi sunmak sorundur."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 10, metin: "Metinde “korkuyu kanıt yerine koymak” ne anlatır?", secenekler: [{id: A, metin: "Korkunun, kanıtın yerine geçirilmesi"}, {id: B, metin: "Kanıtların çok korkutucu bulunması"}, {id: C, metin: "Korkmadan önce ayrıntılı bir kanıt toplamak"}, {id: D, metin: "Kanıtların hepsini bilerek yok etmek ve gizlemek"}], dogru: A, aciklama: "Duygu, yani korku, kanıtın yerine konduğunda araştırma yanıltıcı sonuçlara götürebilir."}
+  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 25, metin: "Sunumun son slaydındaki cümle neyi vurgular?", secenekler: [{id: A, metin: "İlgi çekip çok paylaşılan her iddia kesinlikle doğrudur"}, {id: B, metin: "Kanıtı olmayan bir iddia da güvenle yayılabilir"}, {id: C, metin: "İlgi çekici bir iddia, doğru olduğu anlamına gelmez"}, {id: D, metin: "Gölgeler hakkında konuşmak yasaktır; yalnızca öğretmenler yorum yapabilir"}], dogru: C, aciklama: "Son slayt, ilgi çekici bir iddianın doğrulanması için kanıt gerektiğini söyler."}
 deyim_cumleleri:
   hr102_hayal: "{yoldas:yalin|bir arkadaş} biraz hayal kırıklığına uğradı."
 ---

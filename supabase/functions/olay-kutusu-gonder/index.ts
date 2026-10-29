@@ -6,15 +6,17 @@
 //
 // Gizli anahtarlar (koda yazılmaz; `supabase secrets set` ile girilir):
 //   OLAY_WORKER_SECRET  pg_cron'un x-webhook-secret başlığında yolladığı metin (Vault'takiyle aynı)
-//   RESEND_API_KEY      e-posta sağlayıcı anahtarı
-//   OLAY_MAIL_FROM      doğrulanmış gönderici, ör. "Hupolingo <bildirim@alan.adi>"
-//   PUBLIC_SITE_URL     sonuç bağlantısı için site kökü
+//   BREVO_API_KEY veya RESEND_API_KEY, EPOSTA_GONDEREN_ADRES (+ opsiyonel EPOSTA_GONDEREN_AD):
+//                       ortak katman _shared/eposta.ts (eposta-gonder ile aynı)
+//   PUBLIC_SITE_URL     opsiyonel; yoksa WEB_PANEL_URL, o da yoksa https://hupolingo.com
 // SUPABASE_URL ve SUPABASE_SERVICE_ROLE_KEY platform tarafından eklenir.
 //
 // İçerik yalnızca hizmet bildirimidir (sınav sonucu); pazarlama içeriği eklenmez.
 // Günlüğe e-posta, ad veya puan yazılmaz; yanıt yalnızca sayıları döner.
 
 import { createClient } from "npm:@supabase/supabase-js@2";
+import { epostaGonder, saglayiciSec } from "../_shared/eposta.ts";
+import type { EpostaOrtam } from "../_shared/eposta.ts";
 
 declare const Deno: {
   env: { get(k: string): string | undefined };
@@ -89,25 +91,17 @@ function mesajOlustur(a: Alici, sonucUrl: string) {
   return { konu, html, text };
 }
 
-async function epostaGonder(
-  apiKey: string,
-  from: string,
+// Gönderim ortak katmandan yapılır (Brevo veya Resend; _shared/eposta.ts).
+async function epostaYolla(
+  ortam: EpostaOrtam,
   to: string,
   konu: string,
   html: string,
   text: string,
-  idempotencyKey: string,
 ) {
-  const res = await fetch("https://api.resend.com/emails", {
-    method: "POST",
-    headers: {
-      authorization: `Bearer ${apiKey}`,
-      "content-type": "application/json",
-      "idempotency-key": idempotencyKey,
-    },
-    body: JSON.stringify({ from, to: [to], subject: konu, html, text }),
-  });
-  if (!res.ok) throw new Error(`e-posta sağlayıcı yanıtı ${res.status}`);
+  const sonuc = await epostaGonder({ alici: to, konu, html, metin: text }, ortam);
+  if (!sonuc) throw new Error("e-posta sağlayıcı yapılandırılmamış");
+  if (!sonuc.ok) throw new Error(`e-posta sağlayıcı yanıtı ${sonuc.durum ?? "ağ hatası"}`);
 }
 
 Deno.serve(async (req) => {
@@ -117,10 +111,14 @@ Deno.serve(async (req) => {
   const verilen = req.headers.get("x-webhook-secret") ?? "";
   if (!secret || !sabitZamanliEsit(secret, verilen)) return json(401, { error: "yetkisiz" });
 
-  const apiKey = Deno.env.get("RESEND_API_KEY");
-  const from = Deno.env.get("OLAY_MAIL_FROM");
-  const siteUrl = Deno.env.get("PUBLIC_SITE_URL");
-  if (!apiKey || !from || !siteUrl) return json(500, { error: "e-posta yapılandırması eksik" });
+  const ortam: EpostaOrtam = {
+    BREVO_API_KEY: Deno.env.get("BREVO_API_KEY"),
+    RESEND_API_KEY: Deno.env.get("RESEND_API_KEY"),
+    EPOSTA_GONDEREN_ADRES: Deno.env.get("EPOSTA_GONDEREN_ADRES"),
+    EPOSTA_GONDEREN_AD: Deno.env.get("EPOSTA_GONDEREN_AD"),
+  };
+  const siteUrl = Deno.env.get("PUBLIC_SITE_URL") ?? Deno.env.get("WEB_PANEL_URL") ?? "https://hupolingo.com";
+  if (!saglayiciSec(ortam)) return json(500, { error: "e-posta yapılandırması eksik" });
 
   const supabase = createClient(
     Deno.env.get("SUPABASE_URL")!,
@@ -154,7 +152,7 @@ Deno.serve(async (req) => {
 
       const a = alici as Alici;
       const { konu, html, text } = mesajOlustur(a, `${kokUrl}/deneme-sonuclari/${olay.payload.exam_id}`);
-      await epostaGonder(apiKey, from, a.veli_eposta, konu, html, text, `olay-${olay.id}`);
+      await epostaYolla(ortam, a.veli_eposta, konu, html, text);
       await supabase.rpc("olay_kutusu_sonuc_yaz", { p_id: olay.id, p_basarili: true, p_hata: null });
       gonderilen++;
     } catch (e) {

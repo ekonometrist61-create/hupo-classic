@@ -31,13 +31,13 @@ etiketler:
     - {id: vitrin_hr031, tur: lexeme, etiket: "vitrin", yuva: hr031_vitrin, islev: application}
     - {id: kavram_hr031, tur: concept, etiket: "Kanıt ile varsayım", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "İki alarm hangi ortak durumda duyulmuştu?", secenekler: [{id: A, metin: "Havalandırma çalışmaya başladığında"}, {id: B, metin: "Müze kapandığında"}, {id: C, metin: "Rehber konuştuğunda"}, {id: D, metin: "Pusula düştüğünde"}], dogru: A, aciklama: "İki alarm da havalandırma açıldığında duyulmuştu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Alarmların nedeni neydi?", secenekler: [{id: A, metin: "Bir algılayıcı havalandırma değişikliğine gereğinden fazla duyarlıydı"}, {id: B, metin: "Hırsızlar gelmişti"}, {id: C, metin: "Pusula bozulmuştu"}, {id: D, metin: "Telefon çalmıştı"}], dogru: A, aciklama: "Teknik görevli, algılayıcının ayarının fazla hassas olduğunu buldu."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "İpek'in “acele hüküm vermemek” sözü neyi anlatır?", secenekler: [{id: A, metin: "Kanıt olmadan karar vermemeyi"}, {id: B, metin: "Müzeyi hemen kapatmayı"}, {id: C, metin: "Tahmin etmeyi yasaklamayı"}, {id: D, metin: "Pusulayı çalmayı"}], dogru: A, aciklama: "İpek, kanıt toplamadan karar vermenin yanlış olabileceğini söyledi."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen sensör ne işe yarar?", secenekler: [{id: A, metin: "Hareket, sıcaklık gibi değişimleri algılar"}, {id: B, metin: "Bir tür vitrin"}, {id: C, metin: "Ses çıkarır ama bir şey algılamaz"}, {id: D, metin: "Pusulanın parçası"}], dogru: A, aciklama: "Sensör, ortamdaki değişimi algılayan cihazdır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 2, metin: "İki alarm hangi ortak durumda duyulmuştu?", secenekler: [{id: A, metin: "Müze kapandığında"}, {id: B, metin: "Rehber konuştuğunda"}, {id: C, metin: "Pusula düştüğünde"}, {id: D, metin: "Havalandırma çalışmaya başladığında"}], dogru: D, aciklama: "İki alarm da havalandırma açıldığında duyulmuştu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 3, metin: "Alarmların nedeni neydi?", secenekler: [{id: A, metin: "Hırsızlar gelmişti"}, {id: B, metin: "Pusula bozulmuştu"}, {id: C, metin: "Telefon çalmıştı"}, {id: D, metin: "Bir algılayıcı havalandırma değişikliğine gereğinden fazla duyarlıydı"}], dogru: D, aciklama: "Teknik görevli, algılayıcının ayarının fazla hassas olduğunu buldu."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "Kahramanın “acele hüküm vermemek” sözü neyi anlatır?", secenekler: [{id: A, metin: "Müzeyi hemen kapatmayı"}, {id: B, metin: "Tahmin etmeyi yasaklamayı"}, {id: C, metin: "Pusulayı çalmayı"}, {id: D, metin: "Kanıt olmadan karar vermemeyi"}], dogru: D, aciklama: "Kahraman, kanıt toplamadan karar vermenin yanlış olabileceğini söyledi."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen sensör ne işe yarar?", secenekler: [{id: A, metin: "Bir tür vitrin"}, {id: B, metin: "Ses çıkarır ama bir şey algılamaz"}, {id: C, metin: "Pusulanın parçası"}, {id: D, metin: "Hareket, sıcaklık gibi değişimleri algılar"}], dogru: D, aciklama: "Sensör, ortamdaki değişimi algılayan cihazdır."}
 ---
 @omurga
 Kent müzesinin en sessiz salonundan aniden ince bir ses yükseldi: bip, bip, bip! Ziyaretçiler durdu. Cam {kelime:hr031_vitrin} tarihî pusula yerli yerindeydi; kimse ona yaklaşmıyordu. Rehber, çocukları güvenli bekleme alanına götürdü. Görevli alarmı kontrol etmeye geldiğinde ses kesildi.
@@ -57,8 +57,6 @@ Rehber, alarmın duyulduğu iki saati kontrol odasındaki kayıtlara aktardı. {
 ---
 @omurga
 {yoldas:yalin|bir arkadaş} başka bir olasılık sundu: “Belki alarmı bir telefon sesi tetiklemiştir.” Rehber böyle bir tahmini de not etti; hemen doğru ya da yanlış diye işaretlemedi. {kahraman}, hangi düşüncenin kanıtlandığını anlamanın tahmin sayısını çoğaltmaktan daha önemli olduğunu söyledi. O sırada salonda kimseye suçlayıcı gözle bakmamaya özen gösterdiler.
-
-Teknik görevli salonun boşaltıldığı güvenli bir anda sistemi denetledi.
 
 Teknik görevli salonun boşaltıldığı güvenli bir anda sistemi denetledi. Vitrinin yakınındaki bir algılayıcının, havalandırmanın oluşturduğu değişime gereğinden fazla duyarlı ayarlandığını belirledi. Yetkili ekip ayarı düzenledi ve alarmı birkaç kez denedi. Artık gereksiz ses duyulmuyordu.
 ---

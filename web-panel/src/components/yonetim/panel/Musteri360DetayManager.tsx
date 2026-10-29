@@ -10,6 +10,10 @@ import type { Musteri360Detay } from "../types";
 import ErrorNote from "./ErrorNote";
 import { HealthBar, LifecycleBadge, asPlan } from "./Musteri360Manager";
 import { cardClass, outlineBtn, primaryBtn, tdClass, thClass } from "./styles";
+import CrmAksiyonlar from "./musteri360/CrmAksiyonlar";
+import HaneBirlestir from "./musteri360/HaneBirlestir";
+import KvkkPaneli from "./musteri360/KvkkPaneli";
+import SahipAta from "./musteri360/SahipAta";
 
 const TABS = ["genel", "kimlik", "hane", "abonelik", "islem", "pazarlama", "kullanim", "crm", "zaman"] as const;
 type TabId = (typeof TABS)[number];
@@ -25,6 +29,16 @@ const STATUS_CLASS = {
 
 function orDash(v: string | number | null | undefined): string | number {
   return v === null || v === undefined || v === "" ? "-" : v;
+}
+
+/** Skor henüz yazılmıyorsa (null veya 0) "Veri yok" metni; sayısal skor olduğu gibi döner. */
+function skorOrNoData(v: number | null | undefined, noData: string): string | number {
+  return v === null || v === undefined || v === 0 ? noData : v;
+}
+
+/** Veri yoksa (null/undefined) "-"; sayı ise olduğu gibi. */
+function sayiOrDash(v: unknown): string {
+  return typeof v === "number" ? String(v) : "-";
 }
 
 function dateTime(v: string | null | undefined): string {
@@ -226,7 +240,7 @@ export default function Musteri360DetayManager({ householdId }: { householdId: s
       {tab === "islem" && <IslemTab d={detay} />}
       {tab === "pazarlama" && <PazarlamaTab d={detay} />}
       {tab === "kullanim" && <KullanimTab d={detay} />}
-      {tab === "crm" && <CrmTab d={detay} />}
+      {tab === "crm" && <CrmTab d={detay} onChanged={() => setReloadKey((k) => k + 1)} />}
       {tab === "zaman" && <ZamanTab d={detay} />}
     </div>
   );
@@ -262,7 +276,7 @@ function GenelTab({ d }: TabProps) {
         </div>
         <Fields
           items={[
-            [t("fields.churnRisk"), orDash(h.churn_score)],
+            [t("fields.churnRisk"), skorOrNoData(h.churn_score, t("health.noData"))],
           ]}
         />
       </Section>
@@ -374,7 +388,7 @@ function HaneTab({ d }: TabProps) {
               <td className={tdClass}>{String(c.xp ?? 0)}</td>
               <td className={tdClass}>{String(c.level ?? 0)}</td>
               <td className={tdClass}>{String(c.streak ?? 0)}</td>
-              <td className={tdClass}>{String(c.activeDays30 ?? 0)}</td>
+              <td className={tdClass}>{sayiOrDash(c.activeDays30)}</td>
               <td className={`${tdClass} whitespace-nowrap`}>{dateOnly(c.lastActiveDate as string | null)}</td>
             </tr>
           ))}
@@ -386,7 +400,7 @@ function HaneTab({ d }: TabProps) {
 
 function AbonelikTab({ d }: TabProps) {
   const t = useTranslations("yonetim.musteri360");
-  const s = d.abonelik as Record<string, unknown> | null;
+  const s = d.abonelik;
   return (
     <Section title={t("sections.subscription")}>
       {!s ? (
@@ -394,10 +408,10 @@ function AbonelikTab({ d }: TabProps) {
       ) : (
         <Fields
           items={[
-            [t("fields.planName"), orDash(s.plan as string | null)],
-            [t("fields.status"), orDash(s.status as string | null)],
-            [t("fields.startedAt"), dateTime(s.started_at as string | null)],
-            [t("fields.expiresAt"), dateTime(s.expires_at as string | null)],
+            [t("fields.planName"), orDash(s.planName ?? s.plan)],
+            [t("fields.status"), orDash(s.status)],
+            [t("fields.startedAt"), dateTime(s.startedAt)],
+            [t("fields.expiresAt"), dateTime(s.endsAt)],
           ]}
         />
       )}
@@ -418,7 +432,6 @@ function IslemTab({ d }: TabProps) {
             t("cols.amount"),
             t("cols.status"),
             t("cols.date"),
-            t("cols.description"),
           ]}
         >
           {d.islemler.map((x) => (
@@ -429,7 +442,6 @@ function IslemTab({ d }: TabProps) {
               </td>
               <td className={tdClass}>{x.status}</td>
               <td className={`${tdClass} whitespace-nowrap`}>{dateTime(x.occurred_at)}</td>
-              <td className={tdClass}>{orDash(x.description)}</td>
             </tr>
           ))}
         </Table>
@@ -493,7 +505,7 @@ function KullanimTab({ d }: TabProps) {
               <dl className="grid grid-cols-2 gap-x-6 gap-y-4 sm:grid-cols-3">
                 <div>
                   <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.activeDays")}</dt>
-                  <dd className="text-lg font-semibold text-gray-800 dark:text-white/90">{String(c.activeDays30 ?? 0)}</dd>
+                  <dd className="text-lg font-semibold text-gray-800 dark:text-white/90">{sayiOrDash(c.activeDays30)}</dd>
                 </div>
                 <div>
                   <dt className="text-theme-xs text-gray-500 dark:text-gray-400">{t("cols.xp")}</dt>
@@ -522,10 +534,12 @@ function KullanimTab({ d }: TabProps) {
   );
 }
 
-function CrmTab({ d }: TabProps) {
+function CrmTab({ d, onChanged }: TabProps & { onChanged: () => void }) {
   const t = useTranslations("yonetim.musteri360");
   return (
     <div className="space-y-6">
+      <SahipAta householdId={d.musteri.id} mevcutSahip={d.musteri.owner_name} onChanged={onChanged} />
+      <CrmAksiyonlar householdId={d.musteri.id} onChanged={onChanged} />
       <Section title={t("sections.tickets")}>
         {d.destek_talepleri.length === 0 ? (
           <Empty text={t("empty.tickets")} />
@@ -563,6 +577,8 @@ function CrmTab({ d }: TabProps) {
           </ul>
         )}
       </Section>
+      <HaneBirlestir householdId={d.musteri.id} />
+      <KvkkPaneli householdId={d.musteri.id} onChanged={onChanged} />
     </div>
   );
 }

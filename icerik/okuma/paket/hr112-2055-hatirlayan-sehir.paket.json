@@ -79,7 +79,7 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
@@ -106,7 +106,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Güneşkent'te bir durak, yolcuya ne zaman neyi önereceğini bilen bir sistem. Elif ve arkadaşları, bir sistemin ne kadar hatırlaması gerektiğini sorar.",
+    "tanitim": "Güneşkent'te bir durak, yolcuya ne zaman neyi önereceğini bilen bir sistem. {kahraman} ve arkadaşları, bir sistemin ne kadar hatırlaması gerektiğini sorar.",
     "durum": "taslak",
     "fis_kodu": "HR-112"
   },
@@ -1378,7 +1378,7 @@
       },
       {
         "t": "metin",
-        "v": " bunu duyunca içine bir ağırlık oturdu."
+        "v": " bunu görünce içine bir ağırlık oturdu."
       }
     ]
   },
@@ -1391,33 +1391,33 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "HAFIZA"
-        },
-        {
-          "id": "B",
           "metin": "GÜNEŞ"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "ŞEHİR"
+        },
+        {
+          "id": "C",
+          "metin": "HAFIZA"
         },
         {
           "id": "D",
           "metin": "KONSEY"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Belediye sisteme HAFIZA adını vermişti."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 12,
-      "metin": "Elif'e göre bir veriyi yalnızca toplayabiliyor olmak ne anlama gelir?",
+      "metin": "Kahramana göre bir veriyi yalnızca toplayabiliyor olmak ne anlama gelir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Toplamak için yeterli bir gerekçe olur"
+          "metin": "Toplamak için yeterli bir gerekçe olduğunu gösterir"
         },
         {
           "id": "B",
@@ -1425,11 +1425,11 @@
         },
         {
           "id": "C",
-          "metin": "Verinin daha güvenli olduğunu gösterir"
+          "metin": "Verinin daha güvenli bir şekilde saklanacağını gösterir"
         },
         {
           "id": "D",
-          "metin": "Sistemin daha yavaş çalışacağını gösterir"
+          "metin": "Sistemin önerileri daha yavaş üreteceğini gösterir"
         }
       ],
       "dogru": "B",
@@ -1439,7 +1439,7 @@
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 22,
-      "metin": "Elif'in afişteki sözü değiştirmesinin nedeni nedir?",
+      "metin": "Kahramanın afişteki sözü değiştirmesinin nedeni nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -1447,19 +1447,19 @@
         },
         {
           "id": "B",
-          "metin": "Afişin çok renkli olması"
+          "metin": "Afişin çok renkli ve dikkat çekici olması"
         },
         {
           "id": "C",
-          "metin": "Jürinin bunu istemesi"
+          "metin": "Jürinin bunu açıkça istemesi ve talep etmesi"
         },
         {
           "id": "D",
-          "metin": "Sistemin tüm yanıtları bilmesi"
+          "metin": "Sistemin bütün soruların yanıtını bilmesi"
         }
       ],
       "dogru": "A",
-      "aciklama": "Elif, bilmek ile tahmin etmek arasındaki farkı öğrenince ilk sözün kibirli olduğunu fark eder."
+      "aciklama": "Kahraman, bilmek ile tahmin etmek arasındaki farkı öğrenince ilk sözün kibirli olduğunu fark eder."
     },
     {
       "id": "s4",
@@ -1469,22 +1469,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Adı ya da kimliği açıkça belirtilmeyen"
+          "metin": "Uzun süredir hiç kimse tarafından kullanılmayan"
         },
         {
           "id": "B",
-          "metin": "Hiç kullanılmayan"
+          "metin": "Sahibi olmayan ve kendi başına çalışan bir cihaz"
         },
         {
           "id": "C",
-          "metin": "Sahibi olmayan bir cihaz"
+          "metin": "Yanlış bir yazım kuralıyla ve hatalı biçimde yazılmış"
         },
         {
           "id": "D",
-          "metin": "Yanlış bir yazıyla yazılmış"
+          "metin": "Adı ya da kimliği açıkça belirtilmeyen"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Kimliksiz, verinin üzerinde kişinin adı ya da kimliği açıkça yer almayan durumu anlatır."
     },
     {
@@ -1495,22 +1495,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kendi kararlarıyla hemen belirlemek"
+          "metin": "Kendi kararlarıyla hemen ve tek başına belirlemek"
         },
         {
           "id": "B",
-          "metin": "Uzmanların değerlendirmesine güvenmek ve dikkatli davranmak"
+          "metin": "Bu ayrıntıları önemsiz sayıp tamamen görmezden gelmek"
         },
         {
           "id": "C",
-          "metin": "Bu ayrıntıları tamamen görmezden gelmek"
+          "metin": "Uzmanların değerlendirmesine güvenmek ve dikkatli davranmak"
         },
         {
           "id": "D",
-          "metin": "Sadece jürinin görüşüne uymak"
+          "metin": "Sadece jürinin görüşüne sorgusuz sualsiz uymak"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Öğrenciler yasal ve teknik ayrıntıların uzmanlarca belirlenmesi gerektiğini kabul eder."
     }
   ],
@@ -1610,14 +1610,6 @@
         "sinif_ust": 8
       },
       {
-        "id": "hr112_unutma",
-        "tur": "kelime",
-        "yazim": "unutma",
-        "anlam": "Bir bilgiyi zihninde ya da kayıtta tutmamak.",
-        "sinif_alt": 7,
-        "sinif_ust": 8
-      },
-      {
         "id": "hr112_agirlik",
         "tur": "deyim",
         "yazim": "içine bir ağırlık oturdu",
@@ -1697,9 +1689,6 @@
           },
           {
             "girdi": "hr112_belge"
-          },
-          {
-            "girdi": "hr112_unutma"
           }
         ]
       },

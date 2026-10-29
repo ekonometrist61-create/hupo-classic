@@ -71,7 +71,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3028,
+        "kelime_sayisi": 3027,
         "tahmini_sure_dk": 27,
         "sayfa_sayisi": 24,
         "soru_sayisi": 4,
@@ -709,7 +709,7 @@
         },
         {
           "t": "metin",
-          "v": ", \"Kısa görünen yoldan gitmemek,\" dedi. Hepsi aynı geziye çıkmış ama farklı bir şey öğrenmişti.\n\nOkula döndüklerinde öğretmenleri herkesten bir cümleyle ilk tahmininin nasıl değiştiğini anlatmasını istedi. "
+          "v": ", \"Kısa görünen yoldan gitmemek,\" dedi. Hepsi aynı geziye çıkmış ama farklı bir şey öğrenmişti.\n\nOkulda öğretmenleri herkesten bir cümleyle ilk tahmininin nasıl değiştiğini anlatmasını istedi. "
         },
         {
           "t": "yoldas",
@@ -1009,11 +1009,11 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "İki"
+          "metin": "Üç"
         },
         {
           "id": "B",
-          "metin": "Üç"
+          "metin": "İki"
         },
         {
           "id": "C",
@@ -1024,7 +1024,7 @@
           "metin": "Dört"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Levhada biri kuzeyi, diğeri tam tersini gösteren iki ok vardı."
     },
     {
@@ -1035,22 +1035,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Pusula yalnız yönü gösterir; hedefin yerini haritadan okumak gerekir"
+          "metin": "Pusula bozuk olduğu için yönü doğru göstermeyecek durumdaydı"
         },
         {
           "id": "B",
-          "metin": "Pusula bozuktu"
+          "metin": "Lina pusulaya güvenmediği ve haritayı tek başına yeterli bulduğu için"
         },
         {
           "id": "C",
-          "metin": "Lina pusulayı sevmiyordu"
+          "metin": "Pusula yalnız yönü gösterir; hedefin yerini haritadan okumak gerekir"
         },
         {
           "id": "D",
-          "metin": "Pusulanın ibresi kırıktı"
+          "metin": "Pusulanın ibresi kırıldığı için yalnızca tahminle ilerlemek gerekiyordu"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Pusula yön bulmaya yarar; hedef bilgisi başka kaynaktan gelir."
     },
     {
@@ -1061,22 +1061,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Belli bir zamanda derlenmiş bilgi; dünya değiştikçe güncellenmesi gerekir"
+          "metin": "Her zaman doğru olan, hiçbir değişikliğe ihtiyaç duymayan kesin bir bilgi"
         },
         {
           "id": "B",
-          "metin": "Her zaman doğru olan kesin bilgi"
+          "metin": "Belli bir zamanda derlenmiş bilgi; dünya değiştikçe güncellenmesi gerekir"
         },
         {
           "id": "C",
-          "metin": "Yalnız eski insanlara ait bir belge"
+          "metin": "Yalnız eski dönemlerde yapılmış ve bugün hiçbir işe yaramayan bir belge"
         },
         {
           "id": "D",
-          "metin": "Sadece süs olarak yapılan çizim"
+          "metin": "Yalnız gezi defterlerini süslemek için yapılan, bilgi taşımayan bir çizim"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Haritalar belirli bir zamanın bilgisini taşır; değişen arazide güncellenmelidir."
     },
     {
@@ -1091,15 +1091,15 @@
         },
         {
           "id": "B",
-          "metin": "Bir tür patika"
+          "metin": "Vadinin yamacında rehberlerin kullandığı dar bir yürüyüş patikası"
         },
         {
           "id": "C",
-          "metin": "Bir pusula iğnesi"
+          "metin": "Pusulanın kuzeyi gösteren ibresini koruyan küçük metal bir parça"
         },
         {
           "id": "D",
-          "metin": "Bir köprü türü"
+          "metin": "Dere üzerinde yolcuların geçmesine yarayan ahşap ya da taş bir köprü"
         }
       ],
       "dogru": "A",

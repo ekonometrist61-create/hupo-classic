@@ -79,14 +79,14 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 4040,
+        "kelime_sayisi": 4039,
         "tahmini_sure_dk": 30,
         "sayfa_sayisi": 36,
         "soru_sayisi": 5,
@@ -106,7 +106,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Kutuptaki gezi ertelenince Ece hayal kırıklığı yaşar. Bir sensörün yanlış okunabileceğini ve boş bir verinin de bilgi taşıdığını öğrenir.",
+    "tanitim": "Kutuptaki gezi ertelenince {kahraman} hayal kırıklığı yaşar. Bir sensörün yanlış okunabileceğini ve boş bir verinin de bilgi taşıdığını öğrenir.",
     "durum": "taslak",
     "fis_kodu": "HR-105"
   },
@@ -132,7 +132,7 @@
         },
         {
           "t": "metin",
-          "v": " beklediği buz kenarı gezisi ertelendi. Yanındaki arkadaşı "
+          "v": " beklediği buz kenarı gezisi ertelendi. Yanındaki "
         },
         {
           "t": "yoldas",
@@ -1506,7 +1506,7 @@
         },
         {
           "id": "D",
-          "metin": "Yalnızca gece görünen"
+          "metin": "Gece boyunca hiç ölçülmeyen"
         }
       ],
       "dogru": "A",
@@ -1524,18 +1524,18 @@
         },
         {
           "id": "B",
-          "metin": "Orada yeterli ölçümün olmayabileceğini"
+          "metin": "Haritanın tamamen yanlış olduğunu"
         },
         {
           "id": "C",
-          "metin": "Haritanın tamamen yanlış olduğunu"
+          "metin": "Orada yeterli ölçümün olmayabileceğini"
         },
         {
           "id": "D",
           "metin": "Orada buzun kesin olarak eridiğini"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Boşluk, yeterli ölçüm olmadığını gösterebilir; doğada bir şeyin yokluğunu kanıtlamaz."
     },
     {
@@ -1546,7 +1546,7 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hiçbir şeyin bilinmediği"
+          "metin": "Hiçbir şeyin bilinmediği ve sonuçların tamamen rastgele olduğu"
         },
         {
           "id": "B",
@@ -1554,11 +1554,11 @@
         },
         {
           "id": "C",
-          "metin": "Araştırmanın hiç yapılmamış olduğu"
+          "metin": "Araştırmanın hiç yapılmadığı ve sonuçların kullanılamayacağı"
         },
         {
           "id": "D",
-          "metin": "Verilerin tamamen yanlış olduğu"
+          "metin": "Verilerin tamamen yanlış olduğu ve hiçbir analizin yapılamayacağı"
         }
       ],
       "dogru": "B",
@@ -1568,11 +1568,11 @@
       "id": "s4",
       "beceri": "sozcuk_baglami",
       "dayanak_sayfa": 13,
-      "metin": "Bu cümlede “ölçüm” sözcüğü neyi anlatır?",
+      "metin": "Lina'nın sorduğu “Ölçüm nerede ve hangi koşulda yapıldı?” cümlesinde “ölçüm” sözcüğü neyi anlatır?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Bir yerin güzelliğini"
+          "metin": "Bir yerin doğal güzelliğini ve manzarasını"
         },
         {
           "id": "B",
@@ -1580,11 +1580,11 @@
         },
         {
           "id": "C",
-          "metin": "Bir yolculuğun uzunluğunu"
+          "metin": "Bir yolculuğun süresini ve uzunluğunu"
         },
         {
           "id": "D",
-          "metin": "Bir kişinin hislerini"
+          "metin": "Bir kişinin o andaki hislerini ve duygularını"
         }
       ],
       "dogru": "B",
@@ -1598,22 +1598,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yalnızca ilk sonucu beklemek"
+          "metin": "Sonucun ortaya çıkana kadar yalnızca ilk ölçümü beklemek"
         },
         {
           "id": "B",
-          "metin": "Güncel bilgiye dayanmak, kuralları izlemek ve gerekçeyi açıklamak"
+          "metin": "Herkesin fikrini aynı anda ve sorgulamadan kabul etmek"
         },
         {
           "id": "C",
-          "metin": "Herkesin fikrini aynı anda kabul etmek"
+          "metin": "Güncel bilgiye dayanmak, kuralları izlemek ve gerekçeyi açıklamak"
         },
         {
           "id": "D",
-          "metin": "Sonuçtan hiç söz etmemek"
+          "metin": "Sonuçtan hiç söz etmeyip yalnızca olumlu yanları anlatmak"
         }
       ],
-      "dogru": "B",
+      "dogru": "C",
       "aciklama": "Lina, güncel bilgiye dayanan, kuralları izleyen ve gerekçesi açıklanan kararların değerlendirilebileceğini söyler."
     }
   ],
@@ -1637,14 +1637,6 @@
         "tur": "kelime",
         "yazim": "kayıt",
         "anlam": "Bir olay ya da ölçümün yazıya ya da veriye geçirilmiş hâli.",
-        "sinif_alt": 7,
-        "sinif_ust": 8
-      },
-      {
-        "id": "hr105_varsayim",
-        "tur": "kelime",
-        "yazim": "varsayım",
-        "anlam": "Kanıtlanmadan doğru kabul edilen düşünce.",
         "sinif_alt": 7,
         "sinif_ust": 8
       },
@@ -1685,14 +1677,6 @@
         "tur": "kelime",
         "yazim": "hava durumu",
         "anlam": "Kısa süreli ve belirli bir yerdeki hava koşulları.",
-        "sinif_alt": 7,
-        "sinif_ust": 8
-      },
-      {
-        "id": "hr105_mevsim",
-        "tur": "kelime",
-        "yazim": "mevsim",
-        "anlam": "Yılın belirli bir dönemindeki genel hava ve doğa durumu.",
         "sinif_alt": 7,
         "sinif_ust": 8
       },
@@ -1755,9 +1739,6 @@
           },
           {
             "girdi": "hr105_kayit"
-          },
-          {
-            "girdi": "hr105_varsayim"
           }
         ]
       },
@@ -1785,9 +1766,6 @@
           },
           {
             "girdi": "hr105_hava_durumu"
-          },
-          {
-            "girdi": "hr105_mevsim"
           }
         ]
       },

@@ -1,0 +1,733 @@
+[
+  {
+    "sinif": 5,
+    "ders": "Fen Bilimleri",
+    "toplam_kayit": 160,
+    "kaynak_karmasi": {
+      "MEB_IOKBS": 160
+    },
+    "konusu_belirlenebilen": 129,
+    "konu_guven_kosulu": "yalniz_anahtar_sozcuk_eslesmesi",
+    "tip_dagilimi": [
+      {
+        "deger": "cikarim",
+        "sayi": 52,
+        "oran": 0.325
+      },
+      {
+        "deger": "bilgi_anlama",
+        "sayi": 38,
+        "oran": 0.2375
+      },
+      {
+        "deger": "oncullu",
+        "sayi": 32,
+        "oran": 0.2
+      },
+      {
+        "deger": "olumsuz_kok",
+        "sayi": 21,
+        "oran": 0.1313
+      },
+      {
+        "deger": "tablo_grafik",
+        "sayi": 16,
+        "oran": 0.1
+      },
+      {
+        "deger": "paragraf",
+        "sayi": 1,
+        "oran": 0.0063
+      }
+    ],
+    "zorluk_dagilimi": [
+      {
+        "deger": "2",
+        "sayi": 82,
+        "oran": 0.5125
+      },
+      {
+        "deger": "1",
+        "sayi": 52,
+        "oran": 0.325
+      },
+      {
+        "deger": "3",
+        "sayi": 26,
+        "oran": 0.1625
+      }
+    ],
+    "baglam_dagilimi": [
+      {
+        "deger": "sekil_gorsel",
+        "sayi": 88,
+        "oran": 0.55
+      },
+      {
+        "deger": "soyut_bilgi",
+        "sayi": 55,
+        "oran": 0.3438
+      },
+      {
+        "deger": "gundelik_hayat",
+        "sayi": 12,
+        "oran": 0.075
+      },
+      {
+        "deger": "metin_paragraf",
+        "sayi": 4,
+        "oran": 0.025
+      },
+      {
+        "deger": "veri_grafik",
+        "sayi": 1,
+        "oran": 0.0063
+      }
+    ],
+    "bilissel_dagilim": [
+      {
+        "deger": "analiz",
+        "sayi": 106,
+        "oran": 0.6625
+      },
+      {
+        "deger": "hatirlama_anlama",
+        "sayi": 51,
+        "oran": 0.3187
+      },
+      {
+        "deger": "uygulama",
+        "sayi": 2,
+        "oran": 0.0125
+      },
+      {
+        "deger": "anlama_analiz",
+        "sayi": 1,
+        "oran": 0.0063
+      }
+    ],
+    "konu_dagilimi": [
+      {
+        "deger": "Madde ve değişim",
+        "sayi": 32,
+        "oran": 0.2
+      },
+      {
+        "deger": "belirsiz",
+        "sayi": 31,
+        "oran": 0.1938
+      },
+      {
+        "deger": "Güneş, Dünya ve Ay",
+        "sayi": 30,
+        "oran": 0.1875
+      },
+      {
+        "deger": "Kuvvet ve sürtünme",
+        "sayi": 20,
+        "oran": 0.125
+      },
+      {
+        "deger": "Canlılar dünyası",
+        "sayi": 18,
+        "oran": 0.1125
+      },
+      {
+        "deger": "Işık",
+        "sayi": 14,
+        "oran": 0.0875
+      },
+      {
+        "deger": "Elektrik devreleri",
+        "sayi": 14,
+        "oran": 0.0875
+      },
+      {
+        "deger": "İnsan ve çevre",
+        "sayi": 1,
+        "oran": 0.0063
+      }
+    ],
+    "dogru_sik_dagilimi": [
+      {
+        "deger": "D",
+        "sayi": 43,
+        "oran": 0.2687
+      },
+      {
+        "deger": "C",
+        "sayi": 42,
+        "oran": 0.2625
+      },
+      {
+        "deger": "A",
+        "sayi": 38,
+        "oran": 0.2375
+      },
+      {
+        "deger": "B",
+        "sayi": 37,
+        "oran": 0.2313
+      }
+    ],
+    "secenek_sayisi_dagilimi": [
+      {
+        "deger": "4",
+        "sayi": 158,
+        "oran": 0.9875
+      },
+      {
+        "deger": "2",
+        "sayi": 1,
+        "oran": 0.0063
+      },
+      {
+        "deger": "3",
+        "sayi": 1,
+        "oran": 0.0063
+      }
+    ],
+    "kok_kelime_sayisi_ort": 42.19,
+    "kok_kelime_sayisi_medyan": 38.5,
+    "gorsel_isareti_orani": 0.55,
+    "olumsuz_kok_orani": 0.1812,
+    "uyari": "Bu dağılım, otomatik özellik çıkarımıdır; zorluk öğrenci verisiyle kalibre edilmemiştir."
+  },
+  {
+    "sinif": 5,
+    "ders": "Matematik",
+    "toplam_kayit": 160,
+    "kaynak_karmasi": {
+      "MEB_IOKBS": 160
+    },
+    "konusu_belirlenebilen": 126,
+    "konu_guven_kosulu": "yalniz_anahtar_sozcuk_eslesmesi",
+    "tip_dagilimi": [
+      {
+        "deger": "cikarim",
+        "sayi": 67,
+        "oran": 0.4188
+      },
+      {
+        "deger": "islem",
+        "sayi": 39,
+        "oran": 0.2437
+      },
+      {
+        "deger": "bilgi_anlama",
+        "sayi": 21,
+        "oran": 0.1313
+      },
+      {
+        "deger": "tablo_grafik",
+        "sayi": 11,
+        "oran": 0.0688
+      },
+      {
+        "deger": "paragraf",
+        "sayi": 8,
+        "oran": 0.05
+      },
+      {
+        "deger": "oncullu",
+        "sayi": 7,
+        "oran": 0.0437
+      },
+      {
+        "deger": "olumsuz_kok",
+        "sayi": 7,
+        "oran": 0.0437
+      }
+    ],
+    "zorluk_dagilimi": [
+      {
+        "deger": "1",
+        "sayi": 74,
+        "oran": 0.4625
+      },
+      {
+        "deger": "2",
+        "sayi": 73,
+        "oran": 0.4562
+      },
+      {
+        "deger": "3",
+        "sayi": 13,
+        "oran": 0.0813
+      }
+    ],
+    "baglam_dagilimi": [
+      {
+        "deger": "soyut_bilgi",
+        "sayi": 74,
+        "oran": 0.4625
+      },
+      {
+        "deger": "sekil_gorsel",
+        "sayi": 74,
+        "oran": 0.4625
+      },
+      {
+        "deger": "gundelik_hayat",
+        "sayi": 6,
+        "oran": 0.0375
+      },
+      {
+        "deger": "metin_paragraf",
+        "sayi": 6,
+        "oran": 0.0375
+      }
+    ],
+    "bilissel_dagilim": [
+      {
+        "deger": "analiz",
+        "sayi": 92,
+        "oran": 0.575
+      },
+      {
+        "deger": "uygulama",
+        "sayi": 46,
+        "oran": 0.2875
+      },
+      {
+        "deger": "hatirlama_anlama",
+        "sayi": 22,
+        "oran": 0.1375
+      }
+    ],
+    "konu_dagilimi": [
+      {
+        "deger": "Sayılar ve işlemler",
+        "sayi": 41,
+        "oran": 0.2562
+      },
+      {
+        "deger": "Geometri",
+        "sayi": 38,
+        "oran": 0.2375
+      },
+      {
+        "deger": "belirsiz",
+        "sayi": 34,
+        "oran": 0.2125
+      },
+      {
+        "deger": "Kesirler",
+        "sayi": 17,
+        "oran": 0.1062
+      },
+      {
+        "deger": "Veri işleme",
+        "sayi": 11,
+        "oran": 0.0688
+      },
+      {
+        "deger": "Doğal sayılar",
+        "sayi": 9,
+        "oran": 0.0563
+      },
+      {
+        "deger": "Ölçme",
+        "sayi": 4,
+        "oran": 0.025
+      },
+      {
+        "deger": "Ondalık gösterim",
+        "sayi": 4,
+        "oran": 0.025
+      },
+      {
+        "deger": "Yüzdeler",
+        "sayi": 2,
+        "oran": 0.0125
+      }
+    ],
+    "dogru_sik_dagilimi": [
+      {
+        "deger": "B",
+        "sayi": 44,
+        "oran": 0.275
+      },
+      {
+        "deger": "C",
+        "sayi": 43,
+        "oran": 0.2687
+      },
+      {
+        "deger": "D",
+        "sayi": 40,
+        "oran": 0.25
+      },
+      {
+        "deger": "A",
+        "sayi": 33,
+        "oran": 0.2062
+      }
+    ],
+    "secenek_sayisi_dagilimi": [
+      {
+        "deger": "4",
+        "sayi": 159,
+        "oran": 0.9938
+      },
+      {
+        "deger": "3",
+        "sayi": 1,
+        "oran": 0.0063
+      }
+    ],
+    "kok_kelime_sayisi_ort": 41.26,
+    "kok_kelime_sayisi_medyan": 39.5,
+    "gorsel_isareti_orani": 0.4625,
+    "olumsuz_kok_orani": 0.075,
+    "uyari": "Bu dağılım, otomatik özellik çıkarımıdır; zorluk öğrenci verisiyle kalibre edilmemiştir."
+  },
+  {
+    "sinif": 5,
+    "ders": "Sosyal Bilgiler",
+    "toplam_kayit": 160,
+    "kaynak_karmasi": {
+      "MEB_IOKBS": 160
+    },
+    "konusu_belirlenebilen": 73,
+    "konu_guven_kosulu": "yalniz_anahtar_sozcuk_eslesmesi",
+    "tip_dagilimi": [
+      {
+        "deger": "cikarim",
+        "sayi": 51,
+        "oran": 0.3187
+      },
+      {
+        "deger": "bilgi_anlama",
+        "sayi": 48,
+        "oran": 0.3
+      },
+      {
+        "deger": "paragraf",
+        "sayi": 29,
+        "oran": 0.1812
+      },
+      {
+        "deger": "olumsuz_kok",
+        "sayi": 20,
+        "oran": 0.125
+      },
+      {
+        "deger": "oncullu",
+        "sayi": 11,
+        "oran": 0.0688
+      },
+      {
+        "deger": "tablo_grafik",
+        "sayi": 1,
+        "oran": 0.0063
+      }
+    ],
+    "zorluk_dagilimi": [
+      {
+        "deger": "1",
+        "sayi": 87,
+        "oran": 0.5437
+      },
+      {
+        "deger": "2",
+        "sayi": 66,
+        "oran": 0.4125
+      },
+      {
+        "deger": "3",
+        "sayi": 7,
+        "oran": 0.0437
+      }
+    ],
+    "baglam_dagilimi": [
+      {
+        "deger": "soyut_bilgi",
+        "sayi": 87,
+        "oran": 0.5437
+      },
+      {
+        "deger": "metin_paragraf",
+        "sayi": 31,
+        "oran": 0.1938
+      },
+      {
+        "deger": "gundelik_hayat",
+        "sayi": 28,
+        "oran": 0.175
+      },
+      {
+        "deger": "sekil_gorsel",
+        "sayi": 14,
+        "oran": 0.0875
+      }
+    ],
+    "bilissel_dagilim": [
+      {
+        "deger": "analiz",
+        "sayi": 87,
+        "oran": 0.5437
+      },
+      {
+        "deger": "hatirlama_anlama",
+        "sayi": 58,
+        "oran": 0.3625
+      },
+      {
+        "deger": "anlama_analiz",
+        "sayi": 15,
+        "oran": 0.0938
+      }
+    ],
+    "konu_dagilimi": [
+      {
+        "deger": "belirsiz",
+        "sayi": 87,
+        "oran": 0.5437
+      },
+      {
+        "deger": "Haklar ve sorumluluklar",
+        "sayi": 22,
+        "oran": 0.1375
+      },
+      {
+        "deger": "İnsanlar, yerler ve çevreler",
+        "sayi": 22,
+        "oran": 0.1375
+      },
+      {
+        "deger": "Kültür ve miras",
+        "sayi": 16,
+        "oran": 0.1
+      },
+      {
+        "deger": "Üretim, dağıtım ve tüketim",
+        "sayi": 6,
+        "oran": 0.0375
+      },
+      {
+        "deger": "Bilim, teknoloji ve toplum",
+        "sayi": 5,
+        "oran": 0.0312
+      },
+      {
+        "deger": "Küresel bağlantılar",
+        "sayi": 2,
+        "oran": 0.0125
+      }
+    ],
+    "dogru_sik_dagilimi": [
+      {
+        "deger": "A",
+        "sayi": 41,
+        "oran": 0.2562
+      },
+      {
+        "deger": "D",
+        "sayi": 41,
+        "oran": 0.2562
+      },
+      {
+        "deger": "C",
+        "sayi": 40,
+        "oran": 0.25
+      },
+      {
+        "deger": "B",
+        "sayi": 38,
+        "oran": 0.2375
+      }
+    ],
+    "secenek_sayisi_dagilimi": [
+      {
+        "deger": "4",
+        "sayi": 160,
+        "oran": 1.0
+      }
+    ],
+    "kok_kelime_sayisi_ort": 44.01,
+    "kok_kelime_sayisi_medyan": 38.5,
+    "gorsel_isareti_orani": 0.0875,
+    "olumsuz_kok_orani": 0.175,
+    "uyari": "Bu dağılım, otomatik özellik çıkarımıdır; zorluk öğrenci verisiyle kalibre edilmemiştir."
+  },
+  {
+    "sinif": 5,
+    "ders": "Türkçe",
+    "toplam_kayit": 160,
+    "kaynak_karmasi": {
+      "MEB_IOKBS": 160
+    },
+    "konusu_belirlenebilen": 90,
+    "konu_guven_kosulu": "yalniz_anahtar_sozcuk_eslesmesi",
+    "tip_dagilimi": [
+      {
+        "deger": "paragraf",
+        "sayi": 83,
+        "oran": 0.5188
+      },
+      {
+        "deger": "bilgi_anlama",
+        "sayi": 41,
+        "oran": 0.2562
+      },
+      {
+        "deger": "olumsuz_kok",
+        "sayi": 17,
+        "oran": 0.1062
+      },
+      {
+        "deger": "cikarim",
+        "sayi": 9,
+        "oran": 0.0563
+      },
+      {
+        "deger": "tablo_grafik",
+        "sayi": 5,
+        "oran": 0.0312
+      },
+      {
+        "deger": "oncullu",
+        "sayi": 4,
+        "oran": 0.025
+      },
+      {
+        "deger": "islem",
+        "sayi": 1,
+        "oran": 0.0063
+      }
+    ],
+    "zorluk_dagilimi": [
+      {
+        "deger": "2",
+        "sayi": 80,
+        "oran": 0.5
+      },
+      {
+        "deger": "1",
+        "sayi": 75,
+        "oran": 0.4688
+      },
+      {
+        "deger": "3",
+        "sayi": 5,
+        "oran": 0.0312
+      }
+    ],
+    "baglam_dagilimi": [
+      {
+        "deger": "metin_paragraf",
+        "sayi": 80,
+        "oran": 0.5
+      },
+      {
+        "deger": "soyut_bilgi",
+        "sayi": 59,
+        "oran": 0.3688
+      },
+      {
+        "deger": "sekil_gorsel",
+        "sayi": 14,
+        "oran": 0.0875
+      },
+      {
+        "deger": "gundelik_hayat",
+        "sayi": 7,
+        "oran": 0.0437
+      }
+    ],
+    "bilissel_dagilim": [
+      {
+        "deger": "anlama_analiz",
+        "sayi": 59,
+        "oran": 0.3688
+      },
+      {
+        "deger": "hatirlama_anlama",
+        "sayi": 56,
+        "oran": 0.35
+      },
+      {
+        "deger": "analiz",
+        "sayi": 43,
+        "oran": 0.2687
+      },
+      {
+        "deger": "uygulama",
+        "sayi": 2,
+        "oran": 0.0125
+      }
+    ],
+    "konu_dagilimi": [
+      {
+        "deger": "belirsiz",
+        "sayi": 70,
+        "oran": 0.4375
+      },
+      {
+        "deger": "Cümlede anlam",
+        "sayi": 45,
+        "oran": 0.2812
+      },
+      {
+        "deger": "Sözcükte anlam",
+        "sayi": 17,
+        "oran": 0.1062
+      },
+      {
+        "deger": "Okuduğunu anlama",
+        "sayi": 11,
+        "oran": 0.0688
+      },
+      {
+        "deger": "Deyimler ve atasözleri",
+        "sayi": 10,
+        "oran": 0.0625
+      },
+      {
+        "deger": "Noktalama",
+        "sayi": 4,
+        "oran": 0.025
+      },
+      {
+        "deger": "Yazım kuralları",
+        "sayi": 3,
+        "oran": 0.0187
+      }
+    ],
+    "dogru_sik_dagilimi": [
+      {
+        "deger": "C",
+        "sayi": 44,
+        "oran": 0.275
+      },
+      {
+        "deger": "D",
+        "sayi": 41,
+        "oran": 0.2562
+      },
+      {
+        "deger": "B",
+        "sayi": 39,
+        "oran": 0.2437
+      },
+      {
+        "deger": "A",
+        "sayi": 36,
+        "oran": 0.225
+      }
+    ],
+    "secenek_sayisi_dagilimi": [
+      {
+        "deger": "4",
+        "sayi": 160,
+        "oran": 1.0
+      }
+    ],
+    "kok_kelime_sayisi_ort": 42.63,
+    "kok_kelime_sayisi_medyan": 43.0,
+    "gorsel_isareti_orani": 0.0875,
+    "olumsuz_kok_orani": 0.3,
+    "uyari": "Bu dağılım, otomatik özellik çıkarımıdır; zorluk öğrenci verisiyle kalibre edilmemiştir."
+  }
+]

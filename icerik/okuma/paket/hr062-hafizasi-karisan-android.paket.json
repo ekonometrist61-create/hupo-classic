@@ -72,7 +72,7 @@
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 2059,
+        "kelime_sayisi": 2062,
         "tahmini_sure_dk": 20,
         "sayfa_sayisi": 16,
         "soru_sayisi": 4,
@@ -116,7 +116,7 @@
         },
         {
           "t": "metin",
-          "v": " ablası "
+          "v": " ablası robotun ekranına baktı; yanlarında "
         },
         {
           "t": "yoldas",
@@ -125,7 +125,7 @@
         },
         {
           "t": "metin",
-          "v": ", robotun ekranına baktı. Bir gün önce evdeki yardımcı yapay zekâ sisteminin güncellemesi yapılmıştı. ARO konuşulan sözcükleri bazen yanlış sınıflandırıyor, istekleri karıştırıyordu. Ailesi robotu ev işlerinde güvenli ve sınırlı görevler için kullanıyordu; mutfaktaki ısıtıcı araçları kendi başına çalıştırmasına izin verilmiyordu. Neyse ki çorapları masaya koymaktan başka bir iş yapmamıştı.\n\n“Belki de belleği silindi,” dedi "
+          "v": " da duruyordu. Bir gün önce evdeki yardımcı yapay zekâ sisteminin güncellemesi yapılmıştı. ARO konuşulan sözcükleri bazen yanlış sınıflandırıyor, istekleri karıştırıyordu. Ailesi robotu ev işlerinde güvenli ve sınırlı görevler için kullanıyordu; mutfaktaki ısıtıcı araçları kendi başına çalıştırmasına izin verilmiyordu. Neyse ki çorapları masaya koymaktan başka bir iş yapmamıştı.\n\n“Belki de belleği silindi,” dedi "
         },
         {
           "t": "kahraman",
@@ -773,7 +773,7 @@
         },
         {
           "t": "metin",
-          "v": " bir tabelaya yalnız üç sözcük yazdı: “Sor. Kontrol et. Koru.” Yanına küçük çorap resmi çizdi. Ziyaretçiler bunun neden orada olduğunu sorunca yaşadıkları komik kahvaltıyı anlattı. Sonra açıklamasını ekledi: “Bir robotun hata yapması bizi güldürebilir. Ama yanlış bilgiyle yapılan ciddi işlerde daha dikkatli olmalıyız.” "
+          "v": " bir tabelaya yalnız üç kısa buyruk yazdı: “Sor. Kontrol et. Koru.” Yanına küçük çorap resmi çizdi. Ziyaretçiler bunun neden orada olduğunu sorunca yaşadıkları komik kahvaltıyı anlattı. Sonra açıklamasını ekledi: “Bir robotun hata yapması bizi güldürebilir. Ama yanlış bilgiyle yapılan ciddi işlerde daha dikkatli olmalıyız.” "
         },
         {
           "t": "yoldas",
@@ -782,7 +782,7 @@
         },
         {
           "t": "metin",
-          "v": " kardeşinin konuşmasını gururla dinledi. ARO da masanın yanında sessizce duruyordu. Kimse ondan çorap getirmesini istememişti. Bu bile iyi bir başlangıç sayılabilirdi.\n\n"
+          "v": " bu açıklamayı gururla dinledi. ARO da masanın yanında sessizce duruyordu. Kimse ondan çorap getirmesini istememişti. Bu bile iyi bir başlangıç sayılabilirdi.\n\n"
         },
         {
           "t": "kahraman",
@@ -823,7 +823,7 @@
         },
         {
           "t": "metin",
-          "v": ", arkadaşlarının önerileriyle küçük bir düzeltme yaptı. Robotun son sahnede “Her şeyi öğrendim,” demesini çıkardı. Yerine “Yeni görevlerde yine doğrulama gerekebilir” cümlesini yazdı. Böylece kahramanı kusursuz görünmüyordu. "
+          "v": ", arkadaşlarının önerileriyle küçük bir düzeltme yaptı. Robotun son sahnede “Her şeyi öğrendim,” demesini çıkardı. Yerine “Yeni görevlerde yine doğrulama gerekebilir” cümlesini yazdı. Böylece robot kusursuz görünmüyordu. "
         },
         {
           "t": "kahraman",
@@ -857,22 +857,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Üç çift çorap"
-        },
-        {
-          "id": "B",
           "metin": "Peynirli tost"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Kitaplar"
+        },
+        {
+          "id": "C",
+          "metin": "Üç çift çorap"
         },
         {
           "id": "D",
           "metin": "Defterler"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Robot, tost yerine üç çift çorap getirdi."
     },
     {
@@ -883,22 +883,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Komutları yanlış birleştirmesi ve sözcükleri karıştırması"
+          "metin": "Mutfakta çorapların o gün daha çok stokta bulunduğu için"
         },
         {
           "id": "B",
-          "metin": "Çorapların çok sevilmesi"
+          "metin": "Ailenin o sabah kahvaltıya özellikle çorap istemiş olması"
         },
         {
           "id": "C",
-          "metin": "Ailenin çorap istemesi"
+          "metin": "Mutfakta tost için gereken malzemenin o sabah tamamen bitmesi"
         },
         {
           "id": "D",
-          "metin": "Tostun bitmesi"
+          "metin": "Komutları yanlış birleştirmesi ve sözcükleri karıştırması"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "“Tost” ve “toz”, “çorap” ve “çorabı” gibi benzer kayıtlar karışmıştı."
     },
     {
@@ -909,22 +909,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kurallara, verilere ve doğrulamaya"
+          "metin": "Yalnızca robotun ekranındaki renklere"
         },
         {
           "id": "B",
-          "metin": "Yalnızca renklere"
+          "metin": "Robotun ne kadar hızlı hareket ettiğine"
         },
         {
           "id": "C",
-          "metin": "Robotun boyuna"
+          "metin": "Kurallara, verilere ve doğrulamaya"
         },
         {
           "id": "D",
-          "metin": "Hava durumuna"
+          "metin": "Her gün değişen hava durumu tahminlerine"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Sonuç, kuralların, verilerin ve kontrol süreçlerinin birlikte doğru çalışmasına bağlıdır."
     },
     {
@@ -935,22 +935,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Aynı yazılış ve sesle farklı anlamlar taşıyan sözcükler"
+          "metin": "Aynı anlamı taşıyan farklı yazılışlı sözcükler"
         },
         {
           "id": "B",
-          "metin": "Ses kaydı yapmak"
+          "metin": "Aynı yazılış ve sesle farklı anlamlar taşıyan sözcükler"
         },
         {
           "id": "C",
-          "metin": "Robotun çalması"
+          "metin": "Zıt anlamlı iki sözcüğün yan yana kullanılması"
         },
         {
           "id": "D",
-          "metin": "İki ayrı dil"
+          "metin": "Bir cümlede iki farklı dilin birlikte kullanılması"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Sesteş sözcükler, yazılışları ve sesleri aynı olup anlamları farklı olan kelimelerdir."
     }
   ],

@@ -1,0 +1,5 @@
+﻿# Kör çözüm girdi/çıktı dosyaları (SVG, PNG, cevap anahtarı içermeyen JSON) git dışıdır.
+**/kor/
+# Şekil çıktıları spec'ten yeniden üretilebilir; commit'e girmez (plan §10.2).
+*.png
+*.svg

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCurrentRole } from "@/hooks/useCurrentRole";
+import { useCurrentRole, type AppRole } from "@/hooks/useCurrentRole";
 import { usePathname, useRouter } from "@/i18n/navigation";
 import { DEMO_MODE } from "@/lib/demo-mode";
 import { useTranslations } from "next-intl";
@@ -31,10 +31,17 @@ export default function RoleGuard() {
 
 /** /yonetim içeriğini rol çözülene kadar gizler; böylece öğretmen yönetim ekranlarını bir an bile görmez.
  *  Admin içeriği yalnızca rol admin olduğunda çizilir. Öğretmen yalnızca Sınıflarım ekranını görür,
- *  diğer yollar oraya yönlenirken yükleme durumu gösterilir. Demo modunda rol admin kabul edilir. */
-export function RolKapisi({ children }: { children: ReactNode }) {
+ *  diğer yollar oraya yönlenirken yükleme durumu gösterilir. Demo modunda rol admin kabul edilir.
+ *  `sunucuRolu`: yönetim layout'u rolü sunucuda zaten doğruladı; verilirse içerik istemci okumasını beklemez. */
+export function RolKapisi({
+  children,
+  sunucuRolu,
+}: {
+  children: ReactNode;
+  sunucuRolu?: AppRole | null;
+}) {
   const t = useTranslations("yonetim.siniflar");
-  const fetchedRole = useCurrentRole();
+  const fetchedRole = useCurrentRole(sunucuRolu);
   const role = DEMO_MODE ? "admin" : fetchedRole;
   const pathname = usePathname();
   const router = useRouter();

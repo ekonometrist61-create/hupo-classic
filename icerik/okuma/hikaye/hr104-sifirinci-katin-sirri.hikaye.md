@@ -11,7 +11,7 @@ dunya_tipi: gercekci
 izinli_turler: [ben, arkadas]
 deger_anahtarlari: [D6, D16]
 yetiskin_uygun: false
-tanitim: "Asansörde 0 katı var mı? Aras ve Ekin, söylentiyi kanıttan ve yanlış etiketi gerçek bir kattan ayırmayı öğrenir."
+tanitim: "Asansörde 0 katı var mı? {kahraman} ile {yoldas:yalin|bir arkadaş}, söylentiyi kanıttan ve yanlış etiketi gerçek bir kattan ayırmayı öğrenir."
 durum: taslak
 uretim_kaynak: llm_taslak
 tarih: "2026-10-22"
@@ -33,14 +33,14 @@ etiketler:
     - {id: deyim_hr104, tur: idiom, etiket: "Omuz silkmek", yuva: hr104_omuz, islev: application}
     - {id: kavram_hr104, tur: concept, etiket: "Söylenti ile kanıtı ayırmak", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Asansörün ekranında hangi tuhaf sayı görünüyordu?", secenekler: [{id: A, metin: "0"}, {id: B, metin: "-1"}, {id: C, metin: "G"}, {id: D, metin: "1"}], dogru: A, aciklama: "Asansörün ekranında tuhaf bir sayı olarak 0 görünüyordu."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 15, metin: "Ekin'in bu benzetmesine göre sıfır ne anlama gelebilir?", secenekler: [{id: A, metin: "Her yerde aynı anlamı taşıyan kesin bir gizli kat"}, {id: B, metin: "Kullanıldığı bağlama göre farklı anlamlar taşıyabilen bir işaret"}, {id: C, metin: "Binanın kesinlikle var olmayan bir katı"}, {id: D, metin: "Yalnızca ziyaretçi için anlamı olan bir sayı"}], dogru: B, aciklama: "Sıfır, hangi plan ya da sistemde kullanıldığına göre farklı bir görev taşır."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 27, metin: "Mert Bey'in “Her kapalı kapı sır değildir” sözü ne anlatır?", secenekler: [{id: A, metin: "Kapalı her kapının bir sırrı vardır"}, {id: B, metin: "Kapalı bir kapı her zaman tehlikelidir"}, {id: C, metin: "Kapalı bir kapının her zaman bir gerekçesi olabilir; gizli bir sır olmak zorunda değildir"}, {id: D, metin: "Kapıların hiçbir zaman kapalı olmamalıdır"}], dogru: C, aciklama: "Kapalı bir alan güvenlik ya da işletme gerekçesiyle kapalı olabilir; bu, sır olduğu anlamına gelmez."}
-  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 15, metin: "Bu bağlamda “tutarlı” sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Birbiriyle çelişmeyen, uyumlu"}, {id: B, metin: "Çok uzun ve ayrıntılı"}, {id: C, metin: "Yalnızca bir kişiye ait"}, {id: D, metin: "Hızlı değişen"}], dogru: A, aciklama: "Tutarlı isimler, plan boyunca aynı yer için çelişmeyen adlar kullanılması anlamına gelir."}
-  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 34, metin: "Aras'ın notuna göre bir yanlışı düzeltmek ne anlama gelmez?", secenekler: [{id: A, metin: "Bilgiyi güncellemek"}, {id: B, metin: "Kullanıcıyı doğru yönlendirmek"}, {id: C, metin: "Geçmişte hiç yanılmadığını iddia etmek"}, {id: D, metin: "Kaynağı yeniden kontrol etmek"}], dogru: C, aciklama: "Hatayı düzeltmek, önceki yanlışın kabul edilmesini gerektirir; yanılmadığını iddia etmek anlamına gelmez."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 1, metin: "Asansörün ekranında hangi tuhaf sayı görünüyordu?", secenekler: [{id: A, metin: "-1"}, {id: B, metin: "2"}, {id: C, metin: "1"}, {id: D, metin: "0"}], dogru: D, aciklama: "Asansörün ekranında tuhaf bir sayı olarak 0 görünüyordu."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 15, metin: "Yoldaşın “Bir sözcüğün farklı metinlerde farklı anlam taşıması gibi” benzetmesine göre sıfır ne anlama gelebilir?", secenekler: [{id: A, metin: "Kullanıldığı bağlama göre farklı anlamlar taşıyabilen bir işaret"}, {id: B, metin: "Her yerde aynı anlamı taşıyan, kesin ve gizli bir kat göstergesi"}, {id: C, metin: "Binanın kesinlikle var olmayan, yalnızca söylentide geçen bir katı"}, {id: D, metin: "Yalnızca ziyaretçi uygulaması için anlamı olan bir kayıt kodu"}], dogru: A, aciklama: "Sıfır, hangi plan ya da sistemde kullanıldığına göre farklı bir görev taşır."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 27, metin: "Mert Bey'in “Her kapalı kapı sır değildir” sözü ne anlatır?", secenekler: [{id: A, metin: "Kapalı her kapının içinde mutlaka saklanmaya değer bir sır vardır"}, {id: B, metin: "Kapalı bir kapı, içinde ne olduğu bilinmediği için çoğunlukla tehlikelidir ve açılmamalıdır"}, {id: C, metin: "Kapalı bir kapının her zaman bir gerekçesi olabilir; gizli bir sır olmak zorunda değildir"}, {id: D, metin: "Kapıların, güvenlik gerekçesi olsa bile hiçbir zaman kapalı tutulmaması gerekir"}], dogru: C, aciklama: "Kapalı bir alan güvenlik ya da işletme gerekçesiyle kapalı olabilir; bu, sır olduğu anlamına gelmez."}
+  - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 15, metin: "Bu bağlamda “tutarlı” sözcüğü ne anlama gelir?", secenekler: [{id: A, metin: "Çok uzun ve ayrıntılı"}, {id: B, metin: "Birbiriyle çelişmeyen, uyumlu"}, {id: C, metin: "Yalnızca bir kişiye ait"}, {id: D, metin: "Hızlı değişen"}], dogru: B, aciklama: "Tutarlı isimler, plan boyunca aynı yer için çelişmeyen adlar kullanılması anlamına gelir."}
+  - {id: s5, beceri: degerlendirme, dayanak_sayfa: 34, metin: "Kahramanın notuna göre bir yanlışı düzeltmek ne anlama gelmez?", secenekler: [{id: A, metin: "Bilgiyi gerçeğe uygun biçimde güncellemek"}, {id: B, metin: "Kullanıcıyı doğru bir yola yönlendirmek"}, {id: C, metin: "Kaynağı baştan yeniden kontrol etmek"}, {id: D, metin: "Geçmişte hiç yanılmadığını iddia etmek"}], dogru: D, aciklama: "Hatayı düzeltmek, önceki yanlışın kabul edilmesini gerektirir; yanılmadığını iddia etmek anlamına gelmez."}
 deyim_cumleleri:
   hr104_omuz: "Bir öğrenci “Yine de orada bir şey saklıyor olabilirler,” dediğinde {kahraman} omuz silkti."
 ---
@@ -52,7 +52,7 @@ Okul gezisinde öğrencilerin çoğu bunu önemsemedi. Ta ki biri kapalı bir me
 {kahraman} söylentiyi ilgiyle okudu, sonra planın tarihine baktı. Köşesinde eski bir sürüm numarası vardı. Bilim merkezinin yöneticisi Aslı Hanım, çocukların sorularını duyunca planın eski bir taslak olabileceğini söyledi. “Ama izinsiz kapıları açmaya çalışmayın,” diye uyardı. “Bina içinde teknik alanlar bulunabilir. Güvenliğin nedenini anlamak için yetkili kişilere sorabilirsiniz.”
 ---
 @omurga
-{kahraman} ve arkadaşı {yoldas:yalin|bir arkadaş}, bu açıklamayla yetinmedi ama kuralları da bozmadı. Yönetimden görüşme izni aldılar. Asansörün sıfırıncı katı neden göstermediğini, uygulamanın neden orayı listelediğini ve eski planda hangi bölümün işaretlendiğini öğrenmek istiyorlardı. {yoldas:yalin|bir arkadaş} ayrıca “Gizem çözmek güzel, ama insanları korkutmak istemiyorum,” dedi. {kahraman} gülümsedi. “O zaman ilk iş korkutucu başlığı değiştirelim.”
+{kahraman} ve {yoldas:yalin|bir arkadaş}, bu açıklamayla yetinmedi ama kuralları da bozmadı. Yönetimden görüşme izni aldılar. Asansörün sıfırıncı katı neden göstermediğini, uygulamanın neden orayı listelediğini ve eski planda hangi bölümün işaretlendiğini öğrenmek istiyorlardı. {yoldas:yalin|bir arkadaş} ayrıca “Gizem çözmek güzel, ama insanları korkutmak istemiyorum,” dedi. {kahraman} gülümsedi. “O zaman ilk iş korkutucu başlığı değiştirelim.”
 ---
 @omurga
 Bina görevlisi Mert Bey, görüşmeye üç farklı plan getirdi. İlki inşaat öncesi taslak, ikincisi kullanım izni alınmış son plan, üçüncüsü de ziyaretçi rehberiydi. {kahraman} bunların birbiriyle tamamen aynı olmadığını fark etti. Eski planda kat numaraları -1, 0, 1 diye sıralanmıştı. Yeni planda ziyaretçilerin kullandığı giriş katı G, üst katlar 1, 2, 3 olarak yazılıydı. Teknik alanlar ayrı bir kodla işaretlenmişti.
@@ -101,7 +101,7 @@ Arkadaşı {yoldas:yalin|bir arkadaş}, “Bundan gizli laboratuvar sonucu çık
 
 “Belki,” dedi {kahraman}, “ama şimdi biz de tahmin yürütüyoruz.”
 
-Görüntüyü gönderen öğrenciye kaynağını sordular. Öğrenci onu başka bir gruptan almıştı. Grubun yöneticisi fotoğrafı bir ziyaretçinin hesabında görmüştü. Sonunda görüntünün iki yıl önce aynı binada yapılan tadilat sırasında çekildiği anlaşıldı. Levhanın tam hâlinde Yetkisiz giriş tehlikelidir — teknik servis yazıyordu. Yeni binada birçok teknik servis odası bulunması doğaldı; fotoğraf, bu odanın hangi katta olduğuna bile kanıt oluşturmuyordu.
+Görüntüyü gönderen öğrenciye kaynağını sordular. Öğrenci onu başka bir gruptan almıştı. Grubun yöneticisi fotoğrafı bir ziyaretçinin hesabında görmüştü. Sonunda görüntünün iki yıl önce aynı binada yapılan tadilat sırasında çekildiği anlaşıldı. Levhanın tam hâlinde “Yetkisiz giriş tehlikelidir — teknik servis” yazıyordu. Yeni binada birçok teknik servis odası bulunması doğaldı; fotoğraf, bu odanın hangi katta olduğuna bile kanıt oluşturmuyordu.
 
 {kahraman} önce bütün gruba “Sahte fotoğraf” yazmayı düşündü. Sonra vazgeçti. Fotoğrafın kendisi gerçekti. Yanlış olan, bağlamı koparılmış fotoğrafa yüklenen anlamdı. {yoldas:yalin|bir arkadaş} ile birlikte görüntünün kaynak zincirini ve eksik kalan kadrajı gösteren kısa bir açıklama hazırladılar. Yorumlarda kimseyi küçük düşürmediler; herkesin aynı hatayı yapabileceğini biliyorlardı.
 ---

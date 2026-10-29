@@ -100,9 +100,11 @@ export function ConsentBadge({ durum }: { durum: string | null | undefined }) {
   );
 }
 
+/** Skor henüz yazılmıyorsa (null veya 0) "Veri yok" gösterilir; 0 bir skor gibi sunulmaz. */
 export function HealthBar({ score }: { score: number | null }) {
-  if (score === null || score === undefined) {
-    return <span className="text-theme-sm text-gray-400">-</span>;
+  const t = useTranslations("yonetim.musteri360");
+  if (score === null || score === undefined || score === 0) {
+    return <span className="text-theme-sm text-gray-400">{t("health.noData")}</span>;
   }
   const v = Math.max(0, Math.min(100, Math.round(score)));
   const color = v <= 30 ? "bg-error-500" : v <= 60 ? "bg-warning-500" : "bg-success-500";

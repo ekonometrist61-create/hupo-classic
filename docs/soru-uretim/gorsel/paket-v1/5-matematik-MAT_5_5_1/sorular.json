@@ -1,0 +1,1670 @@
+[
+ {
+  "id": "MAT5-VERI-S1-001",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sınıftaki Evcil Hayvanlar\" gösterilmiştir. Buna göre Kuş kaç öğrenci tarafından tercih edilmiştir?",
+  "siklar": {
+   "A": "5",
+   "B": "7",
+   "C": "9",
+   "D": "11"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Kuş sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Kuş sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 7 değerindedir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "5, Kuş sütununun 1 çizgi altındaki değerdir.",
+   "B": "Doğru.",
+   "C": "9, Kuş sütununun 1 çizgi üstündeki değerdir.",
+   "D": "11, Kuş sütununun 2 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sınıftaki Evcil Hayvanlar. Kategoriler: Kuş, Köpek, Kedi, Balık, Tavşan. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sınıftaki Evcil Hayvanlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"81\" width=\"26.4\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kuş</text><rect x=\"118\" y=\"120\" width=\"26.4\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Köpek</text><rect x=\"170.8\" y=\"55\" width=\"26.4\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kedi</text><rect x=\"223.6\" y=\"107\" width=\"26.4\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Balık</text><rect x=\"276.4\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavşan</text></svg>",
+   "alt_metin": "Sütun grafiği: Sınıftaki Evcil Hayvanlar. Kategoriler: Kuş, Köpek, Kedi, Balık, Tavşan. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sınıftaki Evcil Hayvanlar",
+    "kategoriler": [
+     {
+      "ad": "Kuş",
+      "deger": 7
+     },
+     {
+      "ad": "Köpek",
+      "deger": 4
+     },
+     {
+      "ad": "Kedi",
+      "deger": 9
+     },
+     {
+      "ad": "Balık",
+      "deger": 5
+     },
+     {
+      "ad": "Tavşan",
+      "deger": 2
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Kuş"
+    ],
+    "beklenen": 7
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-002",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sevilen Sporlar\" gösterilmiştir. Buna göre Yüzme ile Basket sütunları arasındaki fark kaçtır?",
+  "siklar": {
+   "A": "10",
+   "B": "6",
+   "C": "2",
+   "D": "4"
+  },
+  "dogru_sik": "C",
+  "ipucu": "İki sütunun değerini okuyup büyükten küçüğü çıkar.",
+  "cozum_adimlari": [
+   "Yüzme = 4, Basket = 6 okunur.",
+   "Fark = 6 − 4 = 2.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İki değer toplanmış; fark için çıkarma yapılmalı.",
+   "B": "6, tek bir sütunun değeridir; fark iki sütun arasında bulunur.",
+   "C": "Doğru.",
+   "D": "4, tek bir sütunun değeridir; fark iki sütun arasında bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Sporlar. Kategoriler: Tenis, Basket, Yüzme, Koşu. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Sporlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"74.5\" width=\"33\" height=\"97.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tenis</text><rect x=\"134.5\" y=\"123.25\" width=\"33\" height=\"48.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Basket</text><rect x=\"200.5\" y=\"139.5\" width=\"33\" height=\"32.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Yüzme</text><rect x=\"266.5\" y=\"90.75\" width=\"33\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koşu</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Sporlar. Kategoriler: Tenis, Basket, Yüzme, Koşu. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Sporlar",
+    "kategoriler": [
+     {
+      "ad": "Tenis",
+      "deger": 12
+     },
+     {
+      "ad": "Basket",
+      "deger": 6
+     },
+     {
+      "ad": "Yüzme",
+      "deger": 4
+     },
+     {
+      "ad": "Koşu",
+      "deger": 10
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Yüzme"
+    ],
+    "beklenen": 4
+   },
+   {
+    "yol": [
+     "degerler",
+     "Basket"
+    ],
+    "beklenen": 6
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-003",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiği \"Sınıftaki Evcil Hayvanlar\" verilerini göstermektedir. Buna göre en çok tercih edilen hangisidir?",
+  "siklar": {
+   "A": "Köpek",
+   "B": "Balık",
+   "C": "Kuş",
+   "D": "Kedi"
+  },
+  "dogru_sik": "D",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Kedi sütunudur (14).",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Köpek sütunu (12) en yüksek sütun değildir.",
+   "B": "Balık sütunu (10) en yüksek sütun değildir.",
+   "C": "Kuş sütunu (2) en yüksek sütun değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sınıftaki Evcil Hayvanlar. Kategoriler: Balık, Kedi, Köpek, Kuş. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sınıftaki Evcil Hayvanlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"90.75\" width=\"33\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Balık</text><rect x=\"134.5\" y=\"58.25\" width=\"33\" height=\"113.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kedi</text><rect x=\"200.5\" y=\"74.5\" width=\"33\" height=\"97.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Köpek</text><rect x=\"266.5\" y=\"155.75\" width=\"33\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kuş</text></svg>",
+   "alt_metin": "Sütun grafiği: Sınıftaki Evcil Hayvanlar. Kategoriler: Balık, Kedi, Köpek, Kuş. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sınıftaki Evcil Hayvanlar",
+    "kategoriler": [
+     {
+      "ad": "Balık",
+      "deger": 10
+     },
+     {
+      "ad": "Kedi",
+      "deger": 14
+     },
+     {
+      "ad": "Köpek",
+      "deger": 12
+     },
+     {
+      "ad": "Kuş",
+      "deger": 2
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Kedi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-004",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sevilen Sporlar\" gösterilmiştir. Buna göre Futbol kaç öğrenci tarafından tercih edilmiştir?",
+  "siklar": {
+   "A": "2",
+   "B": "4",
+   "C": "6",
+   "D": "8"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Futbol sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Futbol sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 2 değerindedir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "4, Futbol sütununun 1 çizgi üstündeki değerdir.",
+   "C": "6, Futbol sütununun 2 çizgi üstündeki değerdir.",
+   "D": "8, Futbol sütununun 3 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Sporlar. Kategoriler: Basket, Tenis, Futbol, Yüzme. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Sporlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"107\" width=\"33\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Basket</text><rect x=\"134.5\" y=\"133\" width=\"33\" height=\"39\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tenis</text><rect x=\"200.5\" y=\"146\" width=\"33\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Futbol</text><rect x=\"266.5\" y=\"159\" width=\"33\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Yüzme</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Sporlar. Kategoriler: Basket, Tenis, Futbol, Yüzme. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Sporlar",
+    "kategoriler": [
+     {
+      "ad": "Basket",
+      "deger": 5
+     },
+     {
+      "ad": "Tenis",
+      "deger": 3
+     },
+     {
+      "ad": "Futbol",
+      "deger": 2
+     },
+     {
+      "ad": "Yüzme",
+      "deger": 1
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Futbol"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-005",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sınıftaki Evcil Hayvanlar\" gösterilmiştir. Buna göre Balık ile Köpek sütunları arasındaki fark kaçtır?",
+  "siklar": {
+   "A": "17",
+   "B": "1",
+   "C": "9",
+   "D": "8"
+  },
+  "dogru_sik": "B",
+  "ipucu": "İki sütunun değerini okuyup büyükten küçüğü çıkar.",
+  "cozum_adimlari": [
+   "Balık = 8, Köpek = 9 okunur.",
+   "Fark = 9 − 8 = 1.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İki değer toplanmış; fark için çıkarma yapılmalı.",
+   "B": "Doğru.",
+   "C": "9, tek bir sütunun değeridir; fark iki sütun arasında bulunur.",
+   "D": "8, tek bir sütunun değeridir; fark iki sütun arasında bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sınıftaki Evcil Hayvanlar. Kategoriler: Köpek, Balık, Tavşan, Kedi, Kuş. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sınıftaki Evcil Hayvanlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"55\" width=\"26.4\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Köpek</text><rect x=\"118\" y=\"68\" width=\"26.4\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Balık</text><rect x=\"170.8\" y=\"159\" width=\"26.4\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavşan</text><rect x=\"223.6\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kedi</text><rect x=\"276.4\" y=\"133\" width=\"26.4\" height=\"39\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kuş</text></svg>",
+   "alt_metin": "Sütun grafiği: Sınıftaki Evcil Hayvanlar. Kategoriler: Köpek, Balık, Tavşan, Kedi, Kuş. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sınıftaki Evcil Hayvanlar",
+    "kategoriler": [
+     {
+      "ad": "Köpek",
+      "deger": 9
+     },
+     {
+      "ad": "Balık",
+      "deger": 8
+     },
+     {
+      "ad": "Tavşan",
+      "deger": 1
+     },
+     {
+      "ad": "Kedi",
+      "deger": 2
+     },
+     {
+      "ad": "Kuş",
+      "deger": 3
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Balık"
+    ],
+    "beklenen": 8
+   },
+   {
+    "yol": [
+     "degerler",
+     "Köpek"
+    ],
+    "beklenen": 9
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-006",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiği \"Sevilen Meyveler\" verilerini göstermektedir. Buna göre en çok tercih edilen hangisidir?",
+  "siklar": {
+   "A": "Kiraz",
+   "B": "Armut",
+   "C": "Çilek",
+   "D": "Elma"
+  },
+  "dogru_sik": "C",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Çilek sütunudur (9).",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kiraz sütunu (6) en yüksek sütun değildir.",
+   "B": "Armut sütunu (7) en yüksek sütun değildir.",
+   "C": "Doğru.",
+   "D": "Elma sütunu (8) en yüksek sütun değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Meyveler. Kategoriler: Çilek, Elma, Kiraz, Armut. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Meyveler</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"55\" width=\"33\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Çilek</text><rect x=\"134.5\" y=\"68\" width=\"33\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Elma</text><rect x=\"200.5\" y=\"94\" width=\"33\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kiraz</text><rect x=\"266.5\" y=\"81\" width=\"33\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Armut</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Meyveler. Kategoriler: Çilek, Elma, Kiraz, Armut. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Meyveler",
+    "kategoriler": [
+     {
+      "ad": "Çilek",
+      "deger": 9
+     },
+     {
+      "ad": "Elma",
+      "deger": 8
+     },
+     {
+      "ad": "Kiraz",
+      "deger": 6
+     },
+     {
+      "ad": "Armut",
+      "deger": 7
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Çilek"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-007",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sevilen Meyveler\" gösterilmiştir. Buna göre grafikteki tüm sütunların gösterdiği değerlerin toplamı kaçtır?",
+  "siklar": {
+   "A": "18",
+   "B": "20",
+   "C": "22",
+   "D": "24"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Her sütunun değerini ayrı ayrı oku, sonra topla.",
+  "cozum_adimlari": [
+   "Okunan değerler: 1, 8, 4, 3, 2.",
+   "Toplam = 1 + 8 + 4 + 3 + 2 = 18.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "20 değeri, sütun değerlerinin toplamından 2 fazlatir; bir sütun yanlış okunmuş olabilir.",
+   "C": "22 değeri, sütun değerlerinin toplamından 4 fazlatir; bir sütun yanlış okunmuş olabilir.",
+   "D": "24 değeri, sütun değerlerinin toplamından 6 fazlatir; bir sütun yanlış okunmuş olabilir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Meyveler. Kategoriler: Armut, Muz, Çilek, Elma, Kiraz. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Meyveler</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"159\" width=\"26.4\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Armut</text><rect x=\"118\" y=\"68\" width=\"26.4\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Muz</text><rect x=\"170.8\" y=\"120\" width=\"26.4\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Çilek</text><rect x=\"223.6\" y=\"133\" width=\"26.4\" height=\"39\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Elma</text><rect x=\"276.4\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kiraz</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Meyveler. Kategoriler: Armut, Muz, Çilek, Elma, Kiraz. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Meyveler",
+    "kategoriler": [
+     {
+      "ad": "Armut",
+      "deger": 1
+     },
+     {
+      "ad": "Muz",
+      "deger": 8
+     },
+     {
+      "ad": "Çilek",
+      "deger": 4
+     },
+     {
+      "ad": "Elma",
+      "deger": 3
+     },
+     {
+      "ad": "Kiraz",
+      "deger": 2
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "toplam"
+    ],
+    "beklenen": 18
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-008",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sevilen Sporlar\" gösterilmiştir. Buna göre Basket ile Yüzme sütunları arasındaki fark kaçtır?",
+  "siklar": {
+   "A": "12",
+   "B": "10",
+   "C": "2",
+   "D": "8"
+  },
+  "dogru_sik": "D",
+  "ipucu": "İki sütunun değerini okuyup büyükten küçüğü çıkar.",
+  "cozum_adimlari": [
+   "Basket = 10, Yüzme = 2 okunur.",
+   "Fark = 10 − 2 = 8.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İki değer toplanmış; fark için çıkarma yapılmalı.",
+   "B": "10, tek bir sütunun değeridir; fark iki sütun arasında bulunur.",
+   "C": "2, tek bir sütunun değeridir; fark iki sütun arasında bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Sporlar. Kategoriler: Tenis, Futbol, Yüzme, Koşu, Basket. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Sporlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"107\" width=\"26.4\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tenis</text><rect x=\"118\" y=\"74.5\" width=\"26.4\" height=\"97.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Futbol</text><rect x=\"170.8\" y=\"155.75\" width=\"26.4\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Yüzme</text><rect x=\"223.6\" y=\"139.5\" width=\"26.4\" height=\"32.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koşu</text><rect x=\"276.4\" y=\"90.75\" width=\"26.4\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Basket</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Sporlar. Kategoriler: Tenis, Futbol, Yüzme, Koşu, Basket. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Sporlar",
+    "kategoriler": [
+     {
+      "ad": "Tenis",
+      "deger": 8
+     },
+     {
+      "ad": "Futbol",
+      "deger": 12
+     },
+     {
+      "ad": "Yüzme",
+      "deger": 2
+     },
+     {
+      "ad": "Koşu",
+      "deger": 4
+     },
+     {
+      "ad": "Basket",
+      "deger": 10
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Basket"
+    ],
+    "beklenen": 10
+   },
+   {
+    "yol": [
+     "degerler",
+     "Yüzme"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-009",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiği \"Sınıftaki Evcil Hayvanlar\" verilerini göstermektedir. Buna göre en çok tercih edilen hangisidir?",
+  "siklar": {
+   "A": "Köpek",
+   "B": "Tavşan",
+   "C": "Kuş",
+   "D": "Kedi"
+  },
+  "dogru_sik": "D",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Kedi sütunudur (16).",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Köpek sütunu (4) en yüksek sütun değildir.",
+   "B": "Tavşan sütunu (12) en yüksek sütun değildir.",
+   "C": "Kuş sütunu (2) en yüksek sütun değildir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sınıftaki Evcil Hayvanlar. Kategoriler: Tavşan, Köpek, Kuş, Kedi. Dikey eksen 0 ile 20 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sınıftaki Evcil Hayvanlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">20</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"94\" width=\"33\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavşan</text><rect x=\"134.5\" y=\"146\" width=\"33\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Köpek</text><rect x=\"200.5\" y=\"159\" width=\"33\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kuş</text><rect x=\"266.5\" y=\"68\" width=\"33\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kedi</text></svg>",
+   "alt_metin": "Sütun grafiği: Sınıftaki Evcil Hayvanlar. Kategoriler: Tavşan, Köpek, Kuş, Kedi. Dikey eksen 0 ile 20 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sınıftaki Evcil Hayvanlar",
+    "kategoriler": [
+     {
+      "ad": "Tavşan",
+      "deger": 12
+     },
+     {
+      "ad": "Köpek",
+      "deger": 4
+     },
+     {
+      "ad": "Kuş",
+      "deger": 2
+     },
+     {
+      "ad": "Kedi",
+      "deger": 16
+     }
+    ],
+    "max": 20,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Kedi"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-010",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sevilen Meyveler\" gösterilmiştir. Buna göre grafikteki tüm sütunların gösterdiği değerlerin toplamı kaçtır?",
+  "siklar": {
+   "A": "19",
+   "B": "21",
+   "C": "23",
+   "D": "25"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Her sütunun değerini ayrı ayrı oku, sonra topla.",
+  "cozum_adimlari": [
+   "Okunan değerler: 8, 3, 1, 9.",
+   "Toplam = 8 + 3 + 1 + 9 = 21.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "19 değeri, sütun değerlerinin toplamından 2 eksiktir; bir sütun yanlış okunmuş olabilir.",
+   "B": "Doğru.",
+   "C": "23 değeri, sütun değerlerinin toplamından 2 fazlatir; bir sütun yanlış okunmuş olabilir.",
+   "D": "25 değeri, sütun değerlerinin toplamından 4 fazlatir; bir sütun yanlış okunmuş olabilir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Meyveler. Kategoriler: Muz, Kiraz, Armut, Elma. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Meyveler</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"68\" width=\"33\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Muz</text><rect x=\"134.5\" y=\"133\" width=\"33\" height=\"39\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kiraz</text><rect x=\"200.5\" y=\"159\" width=\"33\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Armut</text><rect x=\"266.5\" y=\"55\" width=\"33\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Elma</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Meyveler. Kategoriler: Muz, Kiraz, Armut, Elma. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Meyveler",
+    "kategoriler": [
+     {
+      "ad": "Muz",
+      "deger": 8
+     },
+     {
+      "ad": "Kiraz",
+      "deger": 3
+     },
+     {
+      "ad": "Armut",
+      "deger": 1
+     },
+     {
+      "ad": "Elma",
+      "deger": 9
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "toplam"
+    ],
+    "beklenen": 21
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-011",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sevilen Meyveler\" gösterilmiştir. Buna göre Elma ile Muz sütunları arasındaki fark kaçtır?",
+  "siklar": {
+   "A": "12",
+   "B": "16",
+   "C": "14",
+   "D": "2"
+  },
+  "dogru_sik": "A",
+  "ipucu": "İki sütunun değerini okuyup büyükten küçüğü çıkar.",
+  "cozum_adimlari": [
+   "Elma = 2, Muz = 14 okunur.",
+   "Fark = 14 − 2 = 12.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "İki değer toplanmış; fark için çıkarma yapılmalı.",
+   "C": "14, tek bir sütunun değeridir; fark iki sütun arasında bulunur.",
+   "D": "2, tek bir sütunun değeridir; fark iki sütun arasında bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Meyveler. Kategoriler: Çilek, Elma, Kiraz, Muz. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Meyveler</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"90.75\" width=\"33\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Çilek</text><rect x=\"134.5\" y=\"155.75\" width=\"33\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Elma</text><rect x=\"200.5\" y=\"139.5\" width=\"33\" height=\"32.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kiraz</text><rect x=\"266.5\" y=\"58.25\" width=\"33\" height=\"113.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Muz</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Meyveler. Kategoriler: Çilek, Elma, Kiraz, Muz. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Meyveler",
+    "kategoriler": [
+     {
+      "ad": "Çilek",
+      "deger": 10
+     },
+     {
+      "ad": "Elma",
+      "deger": 2
+     },
+     {
+      "ad": "Kiraz",
+      "deger": 4
+     },
+     {
+      "ad": "Muz",
+      "deger": 14
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Elma"
+    ],
+    "beklenen": 2
+   },
+   {
+    "yol": [
+     "degerler",
+     "Muz"
+    ],
+    "beklenen": 14
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-012",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sınıftaki Evcil Hayvanlar\" gösterilmiştir. Buna göre grafikteki tüm sütunların gösterdiği değerlerin toplamı kaçtır?",
+  "siklar": {
+   "A": "14",
+   "B": "16",
+   "C": "18",
+   "D": "20"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Her sütunun değerini ayrı ayrı oku, sonra topla.",
+  "cozum_adimlari": [
+   "Okunan değerler: 1, 4, 7, 6.",
+   "Toplam = 1 + 4 + 7 + 6 = 18.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "14 değeri, sütun değerlerinin toplamından 4 eksiktir; bir sütun yanlış okunmuş olabilir.",
+   "B": "16 değeri, sütun değerlerinin toplamından 2 eksiktir; bir sütun yanlış okunmuş olabilir.",
+   "C": "Doğru.",
+   "D": "20 değeri, sütun değerlerinin toplamından 2 fazlatir; bir sütun yanlış okunmuş olabilir."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sınıftaki Evcil Hayvanlar. Kategoriler: Köpek, Tavşan, Kedi, Kuş. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sınıftaki Evcil Hayvanlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"159\" width=\"33\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Köpek</text><rect x=\"134.5\" y=\"120\" width=\"33\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tavşan</text><rect x=\"200.5\" y=\"81\" width=\"33\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kedi</text><rect x=\"266.5\" y=\"94\" width=\"33\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kuş</text></svg>",
+   "alt_metin": "Sütun grafiği: Sınıftaki Evcil Hayvanlar. Kategoriler: Köpek, Tavşan, Kedi, Kuş. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sınıftaki Evcil Hayvanlar",
+    "kategoriler": [
+     {
+      "ad": "Köpek",
+      "deger": 1
+     },
+     {
+      "ad": "Tavşan",
+      "deger": 4
+     },
+     {
+      "ad": "Kedi",
+      "deger": 7
+     },
+     {
+      "ad": "Kuş",
+      "deger": 6
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "toplam"
+    ],
+    "beklenen": 18
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-013",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Okunan Kitap Türleri\" gösterilmiştir. Buna göre Masal kaç kitap tarafından tercih edilmiştir?",
+  "siklar": {
+   "A": "6",
+   "B": "10",
+   "C": "14",
+   "D": "18"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Masal sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Masal sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 18 değerindedir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "6, Masal sütununun 3 çizgi altındaki değerdir.",
+   "B": "10, Masal sütununun 2 çizgi altındaki değerdir.",
+   "C": "14, Masal sütununun 1 çizgi altındaki değerdir.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Okunan Kitap Türleri. Kategoriler: Hikâye, Fen, Roman, Şiir, Masal. Dikey eksen 0 ile 20 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okunan Kitap Türleri</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">20</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"68\" width=\"26.4\" height=\"104\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Hikâye</text><rect x=\"118\" y=\"159\" width=\"26.4\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fen</text><rect x=\"170.8\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Roman</text><rect x=\"223.6\" y=\"81\" width=\"26.4\" height=\"91\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Şiir</text><rect x=\"276.4\" y=\"55\" width=\"26.4\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Masal</text></svg>",
+   "alt_metin": "Sütun grafiği: Okunan Kitap Türleri. Kategoriler: Hikâye, Fen, Roman, Şiir, Masal. Dikey eksen 0 ile 20 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Okunan Kitap Türleri",
+    "kategoriler": [
+     {
+      "ad": "Hikâye",
+      "deger": 16
+     },
+     {
+      "ad": "Fen",
+      "deger": 2
+     },
+     {
+      "ad": "Roman",
+      "deger": 4
+     },
+     {
+      "ad": "Şiir",
+      "deger": 14
+     },
+     {
+      "ad": "Masal",
+      "deger": 18
+     }
+    ],
+    "max": 20,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Masal"
+    ],
+    "beklenen": 18
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-014",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiği \"Okunan Kitap Türleri\" verilerini göstermektedir. Buna göre en çok tercih edilen hangisidir?",
+  "siklar": {
+   "A": "Masal",
+   "B": "Fen",
+   "C": "Hikâye",
+   "D": "Şiir"
+  },
+  "dogru_sik": "C",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Hikâye sütunudur (18).",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Masal sütunu (2) en yüksek sütun değildir.",
+   "B": "Fen sütunu (12) en yüksek sütun değildir.",
+   "C": "Doğru.",
+   "D": "Şiir sütunu (4) en yüksek sütun değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Okunan Kitap Türleri. Kategoriler: Hikâye, Fen, Masal, Şiir. Dikey eksen 0 ile 20 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okunan Kitap Türleri</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">20</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"55\" width=\"33\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Hikâye</text><rect x=\"134.5\" y=\"94\" width=\"33\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fen</text><rect x=\"200.5\" y=\"159\" width=\"33\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Masal</text><rect x=\"266.5\" y=\"146\" width=\"33\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Şiir</text></svg>",
+   "alt_metin": "Sütun grafiği: Okunan Kitap Türleri. Kategoriler: Hikâye, Fen, Masal, Şiir. Dikey eksen 0 ile 20 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Okunan Kitap Türleri",
+    "kategoriler": [
+     {
+      "ad": "Hikâye",
+      "deger": 18
+     },
+     {
+      "ad": "Fen",
+      "deger": 12
+     },
+     {
+      "ad": "Masal",
+      "deger": 2
+     },
+     {
+      "ad": "Şiir",
+      "deger": 4
+     }
+    ],
+    "max": 20,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Hikâye"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-015",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sevilen Sporlar\" gösterilmiştir. Buna göre Tenis ile Koşu sütunları arasındaki fark kaçtır?",
+  "siklar": {
+   "A": "26",
+   "B": "2",
+   "C": "14",
+   "D": "12"
+  },
+  "dogru_sik": "B",
+  "ipucu": "İki sütunun değerini okuyup büyükten küçüğü çıkar.",
+  "cozum_adimlari": [
+   "Tenis = 14, Koşu = 12 okunur.",
+   "Fark = 14 − 12 = 2.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İki değer toplanmış; fark için çıkarma yapılmalı.",
+   "B": "Doğru.",
+   "C": "14, tek bir sütunun değeridir; fark iki sütun arasında bulunur.",
+   "D": "12, tek bir sütunun değeridir; fark iki sütun arasında bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Sporlar. Kategoriler: Koşu, Tenis, Yüzme, Futbol, Basket. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Sporlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"74.5\" width=\"26.4\" height=\"97.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koşu</text><rect x=\"118\" y=\"58.25\" width=\"26.4\" height=\"113.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tenis</text><rect x=\"170.8\" y=\"139.5\" width=\"26.4\" height=\"32.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Yüzme</text><rect x=\"223.6\" y=\"90.75\" width=\"26.4\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Futbol</text><rect x=\"276.4\" y=\"123.25\" width=\"26.4\" height=\"48.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Basket</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Sporlar. Kategoriler: Koşu, Tenis, Yüzme, Futbol, Basket. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Sporlar",
+    "kategoriler": [
+     {
+      "ad": "Koşu",
+      "deger": 12
+     },
+     {
+      "ad": "Tenis",
+      "deger": 14
+     },
+     {
+      "ad": "Yüzme",
+      "deger": 4
+     },
+     {
+      "ad": "Futbol",
+      "deger": 10
+     },
+     {
+      "ad": "Basket",
+      "deger": 6
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Tenis"
+    ],
+    "beklenen": 14
+   },
+   {
+    "yol": [
+     "degerler",
+     "Koşu"
+    ],
+    "beklenen": 12
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-016",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Okunan Kitap Türleri\" gösterilmiştir. Buna göre Roman ile Şiir sütunları arasındaki fark kaçtır?",
+  "siklar": {
+   "A": "8",
+   "B": "12",
+   "C": "10",
+   "D": "2"
+  },
+  "dogru_sik": "A",
+  "ipucu": "İki sütunun değerini okuyup büyükten küçüğü çıkar.",
+  "cozum_adimlari": [
+   "Roman = 10, Şiir = 2 okunur.",
+   "Fark = 10 − 2 = 8.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "İki değer toplanmış; fark için çıkarma yapılmalı.",
+   "C": "10, tek bir sütunun değeridir; fark iki sütun arasında bulunur.",
+   "D": "2, tek bir sütunun değeridir; fark iki sütun arasında bulunur."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Okunan Kitap Türleri. Kategoriler: Fen, Roman, Şiir, Hikâye. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okunan Kitap Türleri</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"107\" width=\"33\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fen</text><rect x=\"134.5\" y=\"90.75\" width=\"33\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Roman</text><rect x=\"200.5\" y=\"155.75\" width=\"33\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Şiir</text><rect x=\"266.5\" y=\"74.5\" width=\"33\" height=\"97.5\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Hikâye</text></svg>",
+   "alt_metin": "Sütun grafiği: Okunan Kitap Türleri. Kategoriler: Fen, Roman, Şiir, Hikâye. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Okunan Kitap Türleri",
+    "kategoriler": [
+     {
+      "ad": "Fen",
+      "deger": 8
+     },
+     {
+      "ad": "Roman",
+      "deger": 10
+     },
+     {
+      "ad": "Şiir",
+      "deger": 2
+     },
+     {
+      "ad": "Hikâye",
+      "deger": 12
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Roman"
+    ],
+    "beklenen": 10
+   },
+   {
+    "yol": [
+     "degerler",
+     "Şiir"
+    ],
+    "beklenen": 2
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-017",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiği \"Okunan Kitap Türleri\" verilerini göstermektedir. Buna göre en çok tercih edilen hangisidir?",
+  "siklar": {
+   "A": "Masal",
+   "B": "Fen",
+   "C": "Hikâye",
+   "D": "Roman"
+  },
+  "dogru_sik": "A",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Masal sütunudur (14).",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Fen sütunu (2) en yüksek sütun değildir.",
+   "C": "Hikâye sütunu (6) en yüksek sütun değildir.",
+   "D": "Roman sütunu (10) en yüksek sütun değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Okunan Kitap Türleri. Kategoriler: Fen, Hikâye, Masal, Roman. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Okunan Kitap Türleri</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"155.75\" width=\"33\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Fen</text><rect x=\"134.5\" y=\"123.25\" width=\"33\" height=\"48.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Hikâye</text><rect x=\"200.5\" y=\"58.25\" width=\"33\" height=\"113.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Masal</text><rect x=\"266.5\" y=\"90.75\" width=\"33\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Roman</text></svg>",
+   "alt_metin": "Sütun grafiği: Okunan Kitap Türleri. Kategoriler: Fen, Hikâye, Masal, Roman. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Okunan Kitap Türleri",
+    "kategoriler": [
+     {
+      "ad": "Fen",
+      "deger": 2
+     },
+     {
+      "ad": "Hikâye",
+      "deger": 6
+     },
+     {
+      "ad": "Masal",
+      "deger": 14
+     },
+     {
+      "ad": "Roman",
+      "deger": 10
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Masal"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-018",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sevilen Sporlar\" gösterilmiştir. Buna göre Basket kaç öğrenci tarafından tercih edilmiştir?",
+  "siklar": {
+   "A": "6",
+   "B": "10",
+   "C": "14",
+   "D": "18"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Basket sütununun üst ucunun hangi çizgiyle aynı hizada olduğuna bak.",
+  "cozum_adimlari": [
+   "Basket sütununun yüksekliği dikey eksenden okunur.",
+   "Sütunun üst ucu 10 değerindedir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "6, Basket sütununun 1 çizgi altındaki değerdir.",
+   "B": "Doğru.",
+   "C": "14, Basket sütununun 1 çizgi üstündeki değerdir.",
+   "D": "18, Basket sütununun 2 çizgi üstündeki değerdir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Sporlar. Kategoriler: Basket, Futbol, Yüzme, Tenis. Dikey eksen 0 ile 16 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Sporlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"139.5\" x2=\"316\" y2=\"139.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"144.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"107\" x2=\"316\" y2=\"107\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"112\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"74.5\" x2=\"316\" y2=\"74.5\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"79.5\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"90.75\" width=\"33\" height=\"81.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Basket</text><rect x=\"134.5\" y=\"58.25\" width=\"33\" height=\"113.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Futbol</text><rect x=\"200.5\" y=\"123.25\" width=\"33\" height=\"48.75\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Yüzme</text><rect x=\"266.5\" y=\"155.75\" width=\"33\" height=\"16.25\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tenis</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Sporlar. Kategoriler: Basket, Futbol, Yüzme, Tenis. Dikey eksen 0 ile 16 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Sporlar",
+    "kategoriler": [
+     {
+      "ad": "Basket",
+      "deger": 10
+     },
+     {
+      "ad": "Futbol",
+      "deger": 14
+     },
+     {
+      "ad": "Yüzme",
+      "deger": 6
+     },
+     {
+      "ad": "Tenis",
+      "deger": 2
+     }
+    ],
+    "max": 16,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Basket"
+    ],
+    "beklenen": 10
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-019",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiğinde \"Sevilen Meyveler\" gösterilmiştir. Buna göre Armut ile Elma sütunları arasındaki fark kaçtır?",
+  "siklar": {
+   "A": "26",
+   "B": "18",
+   "C": "8",
+   "D": "10"
+  },
+  "dogru_sik": "D",
+  "ipucu": "İki sütunun değerini okuyup büyükten küçüğü çıkar.",
+  "cozum_adimlari": [
+   "Armut = 18, Elma = 8 okunur.",
+   "Fark = 18 − 8 = 10.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İki değer toplanmış; fark için çıkarma yapılmalı.",
+   "B": "18, tek bir sütunun değeridir; fark iki sütun arasında bulunur.",
+   "C": "8, tek bir sütunun değeridir; fark iki sütun arasında bulunur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Meyveler. Kategoriler: Elma, Kiraz, Muz, Armut. Dikey eksen 0 ile 20 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Meyveler</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">12</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">16</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">20</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"68.5\" y=\"120\" width=\"33\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"85\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Elma</text><rect x=\"134.5\" y=\"146\" width=\"33\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"151\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Kiraz</text><rect x=\"200.5\" y=\"107\" width=\"33\" height=\"65\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"217\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Muz</text><rect x=\"266.5\" y=\"55\" width=\"33\" height=\"117\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"283\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Armut</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Meyveler. Kategoriler: Elma, Kiraz, Muz, Armut. Dikey eksen 0 ile 20 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Meyveler",
+    "kategoriler": [
+     {
+      "ad": "Elma",
+      "deger": 8
+     },
+     {
+      "ad": "Kiraz",
+      "deger": 4
+     },
+     {
+      "ad": "Muz",
+      "deger": 10
+     },
+     {
+      "ad": "Armut",
+      "deger": 18
+     }
+    ],
+    "max": 20,
+    "adim": 4
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "degerler",
+     "Armut"
+    ],
+    "beklenen": 18
+   },
+   {
+    "yol": [
+     "degerler",
+     "Elma"
+    ],
+    "beklenen": 8
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ },
+ {
+  "id": "MAT5-VERI-S1-020",
+  "sinif": 5,
+  "ders": "Matematik",
+  "mufredat_surum": "Maarif Modeli Ortaokul Matematik DÖP (5-8)",
+  "kazanim_kodu": "MAT.5.5.1",
+  "konu": "Veri",
+  "alt_konu": "Sütun grafiğini okuma ve yorumlama",
+  "soru_metni": "Yukarıdaki sütun grafiği \"Sevilen Sporlar\" verilerini göstermektedir. Buna göre en çok tercih edilen hangisidir?",
+  "siklar": {
+   "A": "Basket",
+   "B": "Futbol",
+   "C": "Yüzme",
+   "D": "Koşu"
+  },
+  "dogru_sik": "C",
+  "ipucu": "En yüksek sütunu bul.",
+  "cozum_adimlari": [
+   "Sütunların yüksekliği karşılaştırılır.",
+   "En yüksek sütun Yüzme sütunudur (6).",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Basket sütunu (1) en yüksek sütun değildir.",
+   "B": "Futbol sütunu (4) en yüksek sütun değildir.",
+   "C": "Doğru.",
+   "D": "Koşu sütunu (3) en yüksek sütun değildir."
+  },
+  "zorluk": 1,
+  "zorluk_kaynagi": "model_tahmini",
+  "soru_tipi": "gorsel_okuma",
+  "gorsel_gerekli": true,
+  "gorsel": {
+   "tur": "svg_spec",
+   "tip_id": "sutun-grafigi",
+   "svg": "<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 330 240\" role=\"img\" aria-label=\"Sütun grafiği: Sevilen Sporlar. Kategoriler: Koşu, Tenis, Yüzme, Basket, Futbol. Dikey eksen 0 ile 10 arasında.\"><rect width=\"330\" height=\"240\" fill=\"#FFFFFF\"/><text x=\"165\" y=\"22\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"13\" text-anchor=\"middle\" fill=\"#1F2937\" font-weight=\"700\">Sevilen Sporlar</text><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"177\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">0</text><line x1=\"52\" y1=\"146\" x2=\"316\" y2=\"146\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"151\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">2</text><line x1=\"52\" y1=\"120\" x2=\"316\" y2=\"120\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"125\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">4</text><line x1=\"52\" y1=\"94\" x2=\"316\" y2=\"94\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"99\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">6</text><line x1=\"52\" y1=\"68\" x2=\"316\" y2=\"68\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"73\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">8</text><line x1=\"52\" y1=\"42\" x2=\"316\" y2=\"42\" stroke=\"#9CA3AF\" stroke-width=\"0.6\" stroke-linecap=\"round\"/><text x=\"44\" y=\"47\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"end\" fill=\"#1F2937\">10</text><line x1=\"52\" y1=\"36\" x2=\"52\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><line x1=\"52\" y1=\"172\" x2=\"316\" y2=\"172\" stroke=\"#1F2937\" stroke-width=\"2.2\" stroke-linecap=\"round\"/><rect x=\"65.2\" y=\"133\" width=\"26.4\" height=\"39\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"78.4\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Koşu</text><rect x=\"118\" y=\"146\" width=\"26.4\" height=\"26\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"131.2\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Tenis</text><rect x=\"170.8\" y=\"94\" width=\"26.4\" height=\"78\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"184\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Yüzme</text><rect x=\"223.6\" y=\"159\" width=\"26.4\" height=\"13\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"236.8\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Basket</text><rect x=\"276.4\" y=\"120\" width=\"26.4\" height=\"52\" fill=\"#0072B2\" stroke=\"#1F2937\" stroke-width=\"1\"/><text x=\"289.6\" y=\"192\" font-family=\"Arial, Helvetica, sans-serif\" font-size=\"12\" text-anchor=\"middle\" fill=\"#1F2937\">Futbol</text></svg>",
+   "alt_metin": "Sütun grafiği: Sevilen Sporlar. Kategoriler: Koşu, Tenis, Yüzme, Basket, Futbol. Dikey eksen 0 ile 10 arasında.",
+   "olcekli": true
+  },
+  "gorsel_spec": {
+   "tip_id": "sutun-grafigi",
+   "parametreler": {
+    "baslik": "Sevilen Sporlar",
+    "kategoriler": [
+     {
+      "ad": "Koşu",
+      "deger": 3
+     },
+     {
+      "ad": "Tenis",
+      "deger": 2
+     },
+     {
+      "ad": "Yüzme",
+      "deger": 6
+     },
+     {
+      "ad": "Basket",
+      "deger": 1
+     },
+     {
+      "ad": "Futbol",
+      "deger": 4
+     }
+    ],
+    "max": 10,
+    "adim": 2
+   }
+  },
+  "gorsel_dogrulama": [
+   {
+    "yol": [
+     "en_cok"
+    ],
+    "beklenen": "Yüzme"
+   }
+  ],
+  "uretim_yontemi": "sablon",
+  "sablon_id": "mat5-sutun-grafigi",
+  "kaynak_turu": "ozgun_sablon",
+  "durum": "beklemede",
+  "insan_onayi": null
+ }
+]

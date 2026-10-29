@@ -1,3 +1,5 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
@@ -16,6 +18,7 @@ import 'services/secure_storage.dart';
 import 'settings/app_settings.dart';
 import 'theme/app_theme.dart';
 import 'widgets/maintenance_gate.dart';
+import 'widgets/splash/hupo_signature_entrance.dart' show kHupoEntranceAsset;
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -31,6 +34,9 @@ Future<void> _uygulamayiBaslat() async {
   );
   final prefs = await SharedPreferences.getInstance();
 
+  // Açılış sahnesinin Hupo görselini ilk kareden önce çöz: ilk karede Hupo hazır olsun.
+  await _acilisGorseliniOnYukle();
+
   // Sık kullanılan sesleri önceden yükle (hata olursa sessizce devam eder).
   AudioManager.instance.preload();
 
@@ -41,6 +47,24 @@ Future<void> _uygulamayiBaslat() async {
     overrides: [sharedPreferencesProvider.overrideWithValue(prefs)],
     child: const App(),
   ));
+}
+
+/// Açılış sahnesinin Hupo görselini görüntü önbelleğine yükler (en çok 2 sn bekler).
+///
+/// Sahnenin ilk karesi sistem splash'iyle birebir aynı olmalı; görsel ilk karede
+/// çözülmemişse Hupo bir an eksik kalır. Hata olursa sahne yine de açılır.
+Future<void> _acilisGorseliniOnYukle() async {
+  final bitti = Completer<void>();
+  final akim = const AssetImage(kHupoEntranceAsset).resolve(ImageConfiguration.empty);
+  late final ImageStreamListener dinleyici;
+  void tamam() {
+    akim.removeListener(dinleyici);
+    if (!bitti.isCompleted) bitti.complete();
+  }
+
+  dinleyici = ImageStreamListener((_, __) => tamam(), onError: (_, __) => tamam());
+  akim.addListener(dinleyici);
+  await bitti.future.timeout(const Duration(seconds: 2), onTimeout: () {});
 }
 
 /// Kaba rol: yalnız ogrenci|veli|ogretmen|admin|ziyaretci (kimlik değil).

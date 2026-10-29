@@ -1015,22 +1015,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "On bir kırk iki"
-        },
-        {
-          "id": "B",
           "metin": "On iki"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Dokuz kırk"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "On bir otuz"
+        },
+        {
+          "id": "D",
+          "metin": "On bir kırk iki"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Ekranlar tam on bir kırk ikide birer birer karardı."
     },
     {
@@ -1041,48 +1041,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Laboratuvarın ışıkları yanmaya devam ediyordu ve diğer sınıfların bilgisayarları kapanmıyordu"
+          "metin": "Laboratuvardaki bütün ışıklar kesinti sırasında tamamen sönmüştü ve oda karanlıktı"
         },
         {
           "id": "B",
-          "metin": "Işıklar hiç çalışmıyordu"
+          "metin": "Laboratuvardaki bilgisayarlar çok yeni olduğu için hiçbir zaman arıza yapmıyordu"
         },
         {
           "id": "C",
-          "metin": "Bilgisayarlar çok yeniydi"
+          "metin": "Laboratuvarın ışıkları yanmaya devam ediyordu ve diğer sınıfların bilgisayarları kapanmıyordu"
         },
         {
           "id": "D",
-          "metin": "Sınıfta kimse yoktu"
+          "metin": "Sınıfta kimse yoktu, bu yüzden kesintiyi kimse fark etmemiş ve haber verilmemişti"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Elektrik kesintisi olsaydı ışıklar da sönerdi; diğer sınıflar da etkilenirdi."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 7,
-      "metin": "Kerem'in bu cümlesi neyi anlatır?",
+      "metin": "Kahramanın art arda gerçekleşen iki olay hakkında söylediği neydi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "İki olayın aynı zamanda olması, birinin diğerinin nedeni olduğunu kanıtlamaz"
+          "metin": "Aynı anda gerçekleşen olaylar her zaman birbirinin nedenidir"
         },
         {
           "id": "B",
-          "metin": "Olaylar hiç birlikte olmaz"
+          "metin": "İki olayın aynı zamanda olması, birinin diğerinin nedeni olduğunu kanıtlamaz"
         },
         {
           "id": "C",
-          "metin": "Saat hiç kullanılmamalı"
+          "metin": "Olayların zamanını ölçmek bilimsel çalışmada tamamen gereksizdir"
         },
         {
           "id": "D",
-          "metin": "Her olay aynı nedenden doğar"
+          "metin": "Bir kesinti olduğunda her zaman yalnız tek bir nedeni olur"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Zamansal birliktelik nedensellik için yeterli kanıt değildir."
     },
     {
@@ -1097,15 +1097,15 @@
         },
         {
           "id": "B",
-          "metin": "Bir tür ekran"
+          "metin": "Bilgisayar ekranında kısa süre beliren bir uyarı penceresi"
         },
         {
           "id": "C",
-          "metin": "Bir çeşit kablo"
+          "metin": "Elektrik akımını bir noktadan diğerine taşıyan ince kablo"
         },
         {
           "id": "D",
-          "metin": "Bir oyun kartı"
+          "metin": "Bir oyunda puan hesaplamak için kullanılan küçük kart"
         }
       ],
       "dogru": "A",

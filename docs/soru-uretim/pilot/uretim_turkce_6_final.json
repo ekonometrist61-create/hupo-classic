@@ -1,0 +1,3299 @@
+[
+ {
+  "id": "TR6-DK-001",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.1",
+  "surec_bileseni": "b",
+  "konu": "Materyal seçimi",
+  "alt_konu": "Amaca uygun ses kaydı seçme",
+  "soru_metni": "Elif, arıların birbirine yiyecek yerini nasıl bildirdiğini öğrenmek için dinleyeceği bir ses kaydı seçecek. Elif'in amacı düşünüldüğünde hangi kayıt en uygun materyaldir?",
+  "siklar": {
+   "A": "Bir çiftçinin bal hasadında yaşadığı komik olayları anlattığı sohbet",
+   "B": "Arı bilimcisinin arıların dansla haberleşmesini anlattığı röportaj",
+   "C": "Arıcılık malzemelerinin fiyatlarını tanıtan bir reklam kaydı",
+   "D": "Bir çocuğun arı kovanı hakkındaki şiiri okuduğu kayıt"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Elif'in öğrenmek istediği konuyu uzman biri açıklıyor mu, buna bak.",
+  "cozum_adimlari": [
+   "Elif'in amacı arıların haberleşme yolunu öğrenmektir. Bu bilgiyi en güvenilir ve doğrudan veren kaynak, konunun uzmanıyla yapılan röportajdır.",
+   "Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Konuyla ilgili görünür ama haberleşme bilgisi vermez, eğlendirici bir anı anlatır.",
+   "B": "Doğru.",
+   "C": "Arıyla ilgili bir ses kaydıdır ama amaç dışı, satış amaçlıdır.",
+   "D": "Konuya benzer bir tür, ancak bilgi vermez."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-002",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.2",
+  "surec_bileseni": "b",
+  "konu": "Dinleme stratejisi",
+  "alt_konu": "Not alarak dinleme",
+  "soru_metni": "Deniz, tarih öğretmeninin anlatacağı savaşı dinlerken tarih, yer ve kişi adlarını unutmak istemiyor. Deniz için en uygun dinleme stratejisi hangisidir?",
+  "siklar": {
+   "A": "Gözlerini kapatıp anlatılanları zihninde canlandırması",
+   "B": "Konuşmacının sözünü sık sık kesip aynı yeri tekrar ettirmesi",
+   "C": "Dinlemeyi bırakıp ders sonunda arkadaşlarına sorması",
+   "D": "Duyduğu önemli bilgileri kısa notlarla kaydetmesi"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Ayrıntıları unutmamak için dinleme sırasında yapılabilecek bir eylem düşün.",
+  "cozum_adimlari": [
+   "Tarih, yer ve kişi adı gibi ayrıntılar kolay unutulur. Dinlerken kısa not almak bu ayrıntıları kalıcı kılan stratejidir.",
+   "Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Canlandırma anlamaya yardım eder ama ayrıntıları kayıt altına almaz.",
+   "B": "Sözü kesmek dinleme akışını bozar; öğrenci bunu strateji sanabilir.",
+   "C": "Dinlemeyi bırakmak stratejiyi terk etmektir.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-003",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.4",
+  "surec_bileseni": "b",
+  "konu": "Bağlamdan anlam tahmini",
+  "alt_konu": "Söz varlığı unsurunun anlamını tahmin",
+  "soru_metni": "Müzede rehber şöyle diyor: “Bu kadim çanak yüzyıllarca toprağın altında kalmış. Üzerindeki desenler, o dönemde yaşayan insanların günlük hayatını bugün bile anlatıyor. Uzmanlar çanağı uzun uğraşlar sonunda onarıp sergiye hazırladı.â€\n\nBu konuşmada geçen “kadimâ€ sözcüğünün anlamı için en uygun tahmin hangisidir?",
+  "siklar": {
+   "A": "Çok eski olan",
+   "B": "Çok değerli olan",
+   "C": "Yakın zamanda yapılmış",
+   "D": "Kolayca kırılabilen"
+  },
+  "dogru_sik": "A",
+  "ipucu": "“Yüzyıllarcaâ€ ve “o dönemde yaşayan insanlarâ€ ifadelerine dikkat et.",
+  "cozum_adimlari": [
+   "Çanağın yüzyıllarca toprak altında kalması ve eski dönem insanlarının hayatını anlatması, sözcüğün “çok eskiâ€ anlamına geldiğini düşündürür.",
+   "Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Değerli olabilir ama metinde fiyat ipucu yoktur.",
+   "C": "Yüzyıllarca ifadesiyle çelişir.",
+   "D": "Onarılmış olması kırılganlık sanısı yaratır ama sözcüğü açıklamaz."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-004",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.6",
+  "surec_bileseni": "b",
+  "konu": "Yüzey anlam",
+  "alt_konu": "Doğrudan verilen bilgiyi belirleme",
+  "soru_metni": "Radyoda şu duyuru yapılıyor: “Yarın sabah şehrimizde yoğun sis bekleniyor. Görüş mesafesi azalacağından sürücülerin hızını düşürmesi ve önündeki araçla arasını açması öneriliyor. Sisin öğleden sonra dağılması bekleniyor.â€\n\nDuyuruya göre sürücülerden ne yapmaları isteniyor?",
+  "siklar": {
+   "A": "Sabah saatlerinde yola çıkmaktan vazgeçmeleri",
+   "B": "Öğleden sonraya kadar yolda beklemeleri",
+   "C": "Yavaşlayıp öndeki araçtan uzak durmaları",
+   "D": "Araçlarının farlarını söndürmeleri"
+  },
+  "dogru_sik": "C",
+  "ipucu": "İstenen davranış duyurunun ikinci cümlesinde doğrudan söyleniyor.",
+  "cozum_adimlari": [
+   "Duyuruda sürücülere hızı düşürmeleri ve öndeki araçla aralarını açmaları öneriliyor. Bu, şıktaki ifadeyle aynı anlamdadır.",
+   "Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Duyuruda yola çıkmamak değil, dikkatli sürmek önerilir.",
+   "B": "Sisin öğleden sonra dağılacağı bilgisi, beklemek öneriliyormuş gibi yanlış okunur.",
+   "C": "Doğru.",
+   "D": "Duyuruda farlarla ilgili bir istek yoktur."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-005",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.7",
+  "surec_bileseni": "b",
+  "konu": "Derin anlam",
+  "alt_konu": "Dinlenen anlatıdan çıkarım",
+  "soru_metni": "Bir hikâye şöyle anlatılıyor: “Hasan, bu sabah ambarın anahtarını sessizce Ali Bey'in masasına bıraktı. Eski ceketini omzuna attı, kapıda durup yıllarca emek verdiği tarlaya uzun uzun baktı. ‘Toprak insana çok şey öğretiyor,’ diye mırıldandı, ‘ama vedalaşmayı bir türlü öğretmiyor.’ Gözleri dolmuştu.â€\n\nBu anlatımdan Hasan'la ilgili hangi çıkarım yapılabilir?",
+  "siklar": {
+   "A": "Ali Bey'e kırıldığı için anahtarı geri veriyor.",
+   "B": "İşinden ayrılıyor ve bu duruma üzülüyor.",
+   "C": "Başka bir tarlada daha iyi iş buldu, sevinçli.",
+   "D": "Ambarı kilitlemeyi unuttuğu için pişmanlık duyuyor."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Anahtarı bırakma, tarlaya bakma ve gözlerinin dolması birlikte neyi gösterir?",
+  "cozum_adimlari": [
+   "Anahtarın teslim edilmesi, uzun bakış, “vedalaşmaâ€ sözü ve dolan gözler Hasan'ın işinden ayrıldığını ve buna üzüldüğünü gösterir. Bunlar metinde doğrudan söylenmez, çıkarımla bulunur.",
+   "Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kırgınlık ifadesi metinde yoktur; yalnızca anahtarın bırakılmasından yanlış çıkarım yapılmıştır.",
+   "B": "Doğru.",
+   "C": "Dolan gözler sevinçle bağdaşmaz.",
+   "D": "Anahtarın bırakılması unutkanlık sanılmıştır."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-006",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.8",
+  "surec_bileseni": "a",
+  "konu": "Dinlediklerini karşılaştırma",
+  "alt_konu": "Benzerliği belirleme",
+  "soru_metni": "İki arkadaş tatil planlarını anlatıyor.\nDefne: “Ben deniz kenarını severim. Sabahları yüzer, akşamları kumsalda yürürüm.â€\nBarış: “Ben dağ evinde kalmayı seçerim. Sabahları patikada yürürüm, akşamları şömine başında kitap okurum.â€\n\nİki konuşmacının tatil anlayışlarındaki benzerlik hangisidir?",
+  "siklar": {
+   "A": "Gününü sabah ve akşam farklı işlere bölmeleri",
+   "B": "Akşam saatlerini kitap okuyarak geçirmeleri",
+   "C": "Tatil yeri olarak deniz kıyısını seçmeleri",
+   "D": "Sabahları yüzme etkinliği yapmaları"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Ortak olan, etkinliklerin kendisi değil, günün nasıl bölündüğüdür.",
+  "cozum_adimlari": [
+   "İkisi de sabah bir etkinlik, akşam başka bir etkinlik yapıyor. Etkinlikler ve yerler farklı olduğundan ortak yön gün planıdır.",
+   "Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Kitap okuma yalnız Barış'a aittir.",
+   "C": "Deniz yalnız Defne'nin seçimidir.",
+   "D": "Yüzme yalnız Defne'nin etkinliğidir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-007",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.9",
+  "surec_bileseni": "b",
+  "konu": "Sınıflandırma",
+  "alt_konu": "Ölçüte göre gruplandırma",
+  "soru_metni": "Bir belgeselde şu canlılar tanıtılıyor: serçe, yunus, kartal, balina. Sunucu, canlıları “havada uçanlarâ€ ve “suda yaşayanlarâ€ ölçütüne göre gruplayacağını söylüyor.\n\nBu ölçüte göre gruplama hangisinde doğru verilmiştir?",
+  "siklar": {
+   "A": "Havada: serçe, yunus – Suda: kartal, balina",
+   "B": "Havada: kartal, balina – Suda: serçe, yunus",
+   "C": "Havada: serçe – Suda: kartal, yunus, balina",
+   "D": "Havada: serçe, kartal – Suda: yunus, balina"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Her canlının yaşam ortamını tek tek düşün.",
+  "cozum_adimlari": [
+   "Serçe ve kartal kuştur, havada uçar. Yunus ve balina suda yaşar. Doğru gruplama budur.",
+   "Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yunus suda yaşar, havada uçmaz.",
+   "B": "Balina havada, serçe suda değildir; gruplar ters kurulmuştur.",
+   "C": "Kartal uçan bir kuştur, havada olanlara yazılmalıydı.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-008",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.10",
+  "surec_bileseni": "a",
+  "konu": "Yorumlama",
+  "alt_konu": "Farklı bakış açısıyla yorum",
+  "soru_metni": "Okul radyosunda şu haber veriliyor: “Okulumuzda yapılan ankette öğrencilerin çoğu teneffüs süresinin uzatılmasını istedi. Müdür yardımcısı ise teneffüs uzarsa ders sürelerinin kısalacağını, bunun da konuları işlemeyi zorlaştırabileceğini söyledi.â€\n\nMüdür yardımcısının bakış açısıyla bu duruma yorum yapıldığında hangisi söylenir?",
+  "siklar": {
+   "A": "Anket sonucu, öğrencilerin istediği düzenlemeyi haklı çıkarır.",
+   "B": "Daha uzun teneffüs, öğrencilerin derse katılımını artırır.",
+   "C": "Teneffüs uzarsa ders kısalacağı için öğrenme güçleşir.",
+   "D": "Okul yönetimi bundan sonra anket yapmamalıdır."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Müdür yardımcısının kaygısı ders süresiyle ilgilidir.",
+  "cozum_adimlari": [
+   "Müdür yardımcısı, teneffüs uzarsa ders sürelerinin kısalacağı ve işlemenin zorlaşacağı görüşündedir. Bu görüşe uyan yorum budur.",
+   "Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bu, öğrencilerin bakış açısıdır.",
+   "B": "Haberde böyle bir görüş yer almaz.",
+   "C": "Doğru.",
+   "D": "Anketin gerekliliği tartışılmamıştır."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-009",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.11",
+  "surec_bileseni": "a",
+  "konu": "Hikâye unsurları",
+  "alt_konu": "Mekân ve zamanı belirleme",
+  "soru_metni": "Bir hikâye şöyle başlıyor: “Kış akşamıydı. Küçük Mina, dedesinin köydeki evinde şömine başında oturuyordu. Dışarıda kar yağıyordu. Kapı vurulunca açtı; karşısında ıslak tüyleriyle titreyen bir kedi duruyordu. Kediyi içeri aldı, ona süt verdi.â€\n\nBu hikâyede olayların geçtiği mekân ve zaman hangisidir?",
+  "siklar": {
+   "A": "Şehirdeki bir apartman, yaz sabahı",
+   "B": "Köydeki bir ev, kış akşamı",
+   "C": "Köy okulunun bahçesi, kış sabahı",
+   "D": "Dedenin tarlası, bahar akşamı"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Hikâyenin ilk iki cümlesini inceleyin.",
+  "cozum_adimlari": [
+   "“Kış akşamıydı” ifadesi zamanı, dedesinin köydeki evi mekânı gösterir.",
+   "Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Şehir ve yaz metne aykırıdır.",
+   "B": "Doğru.",
+   "C": "Okul bahçesi metinde yoktur, sabah da yanlıştır.",
+   "D": "Tarla ve bahar metinde geçmez."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-010",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.12",
+  "surec_bileseni": "a",
+  "konu": "Bilgilendirici metin yapısı",
+  "alt_konu": "Bilgiler arası ilişki",
+  "soru_metni": "Bir fen programında su döngüsü şöyle anlatılıyor: “Önce güneşin ısıttığı sular buharlaşır. Buhar yükselirken soğur ve bulutları oluşturur. Bulutlardaki damlalar yağış olarak yeryüzüne iner. Yağışlar akarsulara karışarak yeniden denizlere ulaşır.â€\n\nBu anlatıma göre bulutların oluşmasına yol açan olay hangisidir?",
+  "siklar": {
+   "A": "Su buharının yükselirken soğuması",
+   "B": "Yağmur damlalarının yeryüzüne düşmesi",
+   "C": "Akarsuların denizlere ulaşması",
+   "D": "Güneşin bulutları ısıtması"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Olayların sırasına bak; bulutlardan önce ne olur?",
+  "cozum_adimlari": [
+   "Anlatımda bulut oluşumundan hemen önce gelen olay, buharın yükselirken soğumasıdır. Bu ilişki sıralamadan anlaşılır.",
+   "Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Yağış, bulut oluşumunun sonucudur; neden gibi görülmüştür.",
+   "C": "Bu olay döngünün son basamağıdır.",
+   "D": "Güneş suyu ısıtır, bulutları değil."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-011",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.13",
+  "surec_bileseni": "a",
+  "konu": "Anahtar kelimeler",
+  "alt_konu": "İçeriği yansıtan sözcükler",
+  "soru_metni": "Bir sunucu şunları söylüyor: “Plastik atıklar denizlerde yıllarca çözünmeden kalıyor. Balıklar ve kuşlar bu atıkları yiyecek sanıp yutuyor. Bu yüzden deniz canlılarının sayısı azalıyor. Atıkları ayırıp geri dönüşüme vermek, denizleri korumaya katkı sağlar.â€\n\nBu konuşmanın içeriğini en iyi yansıtan anahtar sözcükler hangisidir?",
+  "siklar": {
+   "A": "balıkçılık, tuzluluk, deniz taşımacılığı",
+   "B": "yıllar, yutmak, azalmak",
+   "C": "çevre, hava kirliliği, gürültü",
+   "D": "plastik atık, deniz canlıları, geri dönüşüm"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Konuşmanın konusunu, sorununu ve çözümünü anlatan sözcükleri seç.",
+  "cozum_adimlari": [
+   "Konuşma plastik atıkların deniz canlılarına zararını ve geri dönüşümü anlatır. Anahtar sözcükler bu üç temayı kapsar.",
+   "Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Konuşmada geçmeyen konulardır.",
+   "B": "Metinde geçen sözcüklerdir ama konuyu temsil etmez.",
+   "C": "Çevre genel bir başlıktır; hava kirliliği ve gürültü konu dışıdır.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-012",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.14",
+  "surec_bileseni": "a",
+  "konu": "Metnin bölümleri",
+  "alt_konu": "Giriş, gelişme, sonuç",
+  "soru_metni": "Bir programda sunucu şunları söylüyor:\n1) “Bugün çocukların neden yeterince uyuyamadığını konuşacağız.â€\n2) “Araştırmalara göre ekran başında geçen süre arttıkça uyku süresi kısalıyor. Geç saatte içilen bazı içecekler de uykuyu bozuyor.â€\n3) “Bu nedenle yatmadan bir saat önce ekranlardan uzaklaşmak sağlıklı uyku için iyi bir adımdır.â€\n\nBu konuşmanın gelişme bölümü hangisidir?",
+  "siklar": {
+   "A": "Konunun tanıtıldığı birinci bölüm",
+   "B": "Bir öneri sunulan üçüncü bölüm",
+   "C": "Uykuyu bozan etkenlerin açıklandığı ikinci bölüm",
+   "D": "Konunun tanıtıldığı ve önerinin verildiği bölümler"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Konunun nedenlerinin açıklandığı kısmı bul.",
+  "cozum_adimlari": [
+   "Gelişme bölümünde konunun ayrıntıları ve nedenleri verilir. Bu konuşmada ekran süresi ve içeceklerin etkisi ikinci bölümde anlatılmıştır.",
+   "Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Birinci bölüm girişi oluşturur.",
+   "B": "Üçüncü bölüm sonuç ve öneri bölümüdür.",
+   "C": "Doğru.",
+   "D": "Giriş ve sonuç bölümleri birlikte gelişme sayılmaz."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-013",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.15",
+  "surec_bileseni": "a",
+  "konu": "Düşünceyi geliştirme yolları",
+  "alt_konu": "Örnekleme",
+  "soru_metni": "Bir doğa programında sunucu şöyle diyor: “Göçmen kuşlar uzun yolculuklarda ‘V’ biçiminde uçar. Öndeki kuş havayı yarar, arkadakiler daha az güç harcar. Bir kaz sürüsü bu düzen sayesinde binlerce kilometreyi daha az yorularak aşar.â€\n\nSunucu, düşüncesini geliştirirken hangi yoldan yararlanmıştır?",
+  "siklar": {
+   "A": "Örneklendirme",
+   "B": "Karşılaştırma",
+   "C": "Tanık gösterme",
+   "D": "Tanımlama"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sunucu, genel bir bilgiyi belirli bir olayla destekliyor.",
+  "cozum_adimlari": [
+   "Sunucu genel bilgiyi (V biçimiyle uçuş) belirli bir sürü üzerinden açıklamıştır. Bu örneklendirmedir.",
+   "Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "İki durum yan yana konmamıştır.",
+   "C": "Bir uzmandan alıntı yapılmamıştır.",
+   "D": "Bir kavramın ne olduğu açıklanmamıştır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-014",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.16",
+  "surec_bileseni": "a",
+  "konu": "Söz sanatları",
+  "alt_konu": "Kişileştirme",
+  "soru_metni": "Bir şiir dinletisinde şu dizeler okunuyor: “Rüzgâr fısıldadı kulağıma, / deniz kükredi dalgalarla, / sabahın gülen yüzü doğdu dağların ardından.â€\n\nBu dizelerde belirgin olarak hangi söz sanatı kullanılmıştır?",
+  "siklar": {
+   "A": "Karşılaştırma",
+   "B": "Kişileştirme",
+   "C": "Benzetme",
+   "D": "Abartma"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Rüzgâr, deniz ve sabaha hangi özellikler verilmiş?",
+  "cozum_adimlari": [
+   "Rüzgâr, deniz ve sabah gibi insan olmayan varlıklara fısıldama, kükreme ve gülme gibi insana ait özellikler verilmiştir. Bu kişileştirmedir.",
+   "Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "İki şeyin yan yana konulup kıyaslanması yoktur.",
+   "B": "Doğru.",
+   "C": "“Gibi” gibi benzetme ilgisi kurulmamıştır.",
+   "D": "Gerçeği büyütme yoktur."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-015",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.17",
+  "surec_bileseni": "a",
+  "konu": "İkna teknikleri",
+  "alt_konu": "Ünlü örneği gösterme",
+  "soru_metni": "Bir televizyon reklamında şu söz işitiliyor: “Ünlü bisikletçi Selin Kaya bütün yarışlarına bu marka bisikletle çıkıyor ve kazanıyor. Siz de Selin gibi hızlı pedal çevirin!â€\n\nBu reklamda başvurulan ikna tekniği hangisidir?",
+  "siklar": {
+   "A": "Sayısal verileri kanıt olarak sunma",
+   "B": "Fiyat indirimiyle ilgi çekme",
+   "C": "Ünlü birini örnek gösterme",
+   "D": "Acıma duygusuna seslenme"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Reklamda kimden söz edildiğine ve onun neden anıldığına dikkat et.",
+  "cozum_adimlari": [
+   "Reklam, ünlü bir sporcunun bisikleti kullandığını söyleyerek dinleyiciyi ikna etmeye çalışıyor.",
+   "Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Reklamda sayı veya veri yoktur.",
+   "B": "İndirim bilgisi yoktur.",
+   "C": "Doğru.",
+   "D": "Duygusal bir acıma anlatılmamıştır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-016",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.18",
+  "surec_bileseni": "b",
+  "konu": "Çoklu ortam ögeleri",
+  "alt_konu": "Görsel ile sözün ilişkisi",
+  "soru_metni": "Bir haber videosunda sunucu “Barajdaki su seviyesi bu yıl belirgin biçimde düştü” diyor. Aynı anda ekranda, barajın iki yıl önceki ve bugünkü fotoğrafı yan yana gösteriliyor. Bugünkü fotoğrafta su çizgisinin kıyıdan çok uzaklaştığı görülüyor.\n\nFotoğraflar, sunucunun sözüyle nasıl bir anlam ilişkisi kuruyor?",
+  "siklar": {
+   "A": "Söylenenle ilgisiz yeni bir konu açıyor.",
+   "B": "Söylenenin tam tersini kanıtlıyor.",
+   "C": "Sözle aynı bilgiyi bütünüyle yineleyerek dikkat dağıtıyor.",
+   "D": "Söylenen bilgiyi görüntüyle destekliyor."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Fotoğraflarda gördüklerini sunucunun söylediğiyle karşılaştır.",
+  "cozum_adimlari": [
+   "Fotoğraflar su seviyesinin düştüğünü gösterir. Böylece sunucunun söylediği bilgi destekleniyor.",
+   "Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Konu aynıdır.",
+   "B": "Fotoğraf söyleneni doğrular, çürütmez.",
+   "C": "Görüntü yeni bir kanıt ekler, yalnız tekrar etmez.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-017",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.19",
+  "surec_bileseni": "c",
+  "konu": "Özetleme",
+  "alt_konu": "Önemli bilgileri seçme",
+  "soru_metni": "Bir spor hocası şöyle anlatıyor: “Sabah koşusuna çıkmadan önce bol su içtim. Hava biraz serindi. Isınma hareketleri yaptım ve yarım saat koştum. Koşu bitince esneme hareketleriyle vücudumu dinlendirdim. Yol boyunca bir köpek de bana eşlik etti.â€\n\nBu anlatımın en uygun özeti hangisidir?",
+  "siklar": {
+   "A": "Hava serin olduğu için hoca, yanına köpeğini alıp koşuya çıkmış.",
+   "B": "Hoca hazırlık ve ısınmanın ardından koşmuş, sonra esneme yapmış.",
+   "C": "Hoca su içmiş, bir köpekle karşılaşmış ve koşmadan eve dönmüş.",
+   "D": "Hoca ısınmadan koşmaya başlamış, bitince dinlenmeden ayrılmış."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Özette önemli bilgiler sırasıyla yer alır, ayrıntılar atılır.",
+  "cozum_adimlari": [
+   "Önemli bilgiler hazırlık, ısınma, koşu ve esnemedir. Havanın serinliği ve köpek ikinci derecede ayrıntıdır.",
+   "Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Köpeği yanına alma ve serinlik nedeni metinde yoktur.",
+   "B": "Doğru.",
+   "C": "Koşmadan dönme bilgisi yanlıştır.",
+   "D": "Isınma ve esneme bilgisiyle çelişir."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-018",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.23",
+  "surec_bileseni": "b",
+  "konu": "Eleştiri",
+  "alt_konu": "Gerekçeli yargı",
+  "soru_metni": "Bir videoda sunucu şöyle diyor: “Bu bitkisel çay her hastalığa iyi geliyor. Doktora gitmenize gerek kalmaz, bu çayı içmeniz yeterli.â€\n\nBu iddiayı sorgulayan bir izleyici hangi yargıya ulaşmalıdır?",
+  "siklar": {
+   "A": "İddia kanıta dayanmadığı için güvenilir değildir.",
+   "B": "Video çok izlendiği için iddia kanıtlanmıştır.",
+   "C": "Çay bitkisel olduğu için sağlık kontrolü gereksizdir.",
+   "D": "Sunucu rahat konuştuğu için görüşü doğrudur."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Bir iddianın doğruluğu neye bakılarak anlaşılır?",
+  "cozum_adimlari": [
+   "İddia herhangi bir araştırmayla desteklenmiyor ve doktor kontrolünü gereksiz gösteriyor. Gerekçeli yargı, bunun güvenilir olmadığıdır.",
+   "Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "İzlenme sayısı doğruluğu kanıtlamaz.",
+   "C": "Doğal olması sağlığa her zaman yararlı olduğu anlamına gelmez.",
+   "D": "Konuşma tarzı doğruluğun ölçüsü değildir."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-019",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.1",
+  "surec_bileseni": "a",
+  "konu": "Konuşma kalıpları",
+  "alt_konu": "Söz sırası alma",
+  "soru_metni": "Sınıf tartışmasında Kerem'in arkadaşı konuşuyor. Kerem de görüş bildirmek istiyor.\n\nKerem'in söz sırası alırken kullanabileceği en uygun ifade hangisidir?",
+  "siklar": {
+   "A": "Çok konuştun, artık söz sırası bende.",
+   "B": "Beklemeden hemen fikrimi söylüyorum.",
+   "C": "Sözünüz bitince görüş bildirebilir miyim?",
+   "D": "Sus da ben anlatayım, çok sürmez."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Söz isterken karşındakine saygı gösteren, nazik bir ifade seç.",
+  "cozum_adimlari": [
+   "Söz sırası alırken karşıdakinin konuşmasının bitmesi beklenir ve nazik bir kalıp kullanılır.",
+   "Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Karşıdakini kırar.",
+   "B": "Söz kesmeyi onaylar.",
+   "C": "Doğru.",
+   "D": "Saygısız bir ifadedir."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-020",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.2",
+  "surec_bileseni": "b",
+  "konu": "Konuşma tekniği",
+  "alt_konu": "Dikkat çekici giriş",
+  "soru_metni": "Zeynep, sınıfta “su tasarrufuâ€ konulu bir konuşma yapacak. Dinleyenlerin dikkatini baştan toplamak istiyor.\n\nZeynep bu amaçla hangi tekniği seçmelidir?",
+  "siklar": {
+   "A": "Konuşmayı metinden başını kaldırmadan okumayı",
+   "B": "Konuşmayı olabildiğince hızlı bitirmeyi",
+   "C": "Dinleyicilere arkasını dönerek anlatmayı",
+   "D": "Konuşmaya düşündürücü bir soruyla başlamayı"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Dinleyicileri konuya çekecek bir giriş düşün.",
+  "cozum_adimlari": [
+   "Dikkat çekici bir soru dinleyicilerin merakını uyandırır; seçilen teknik konuşmanın amacına hizmet eder.",
+   "Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Okuma, ilgiyi azaltır.",
+   "B": "Hız anlaşılmayı güçleştirir.",
+   "C": "Arkayı dönmek iletişimi keser.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-021",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.3",
+  "surec_bileseni": "b",
+  "konu": "Amaç ve içerik",
+  "alt_konu": "Amaca uygun içerik",
+  "soru_metni": "Kemal, okulda kurulacak kitap kulübünü arkadaşlarına tanıtacak. Amacı, kulübe katılımı artırmak.\n\nKemal'in konuşmasını sürdürürken amacına uygun olarak hangisini yapması gerekir?",
+  "siklar": {
+   "A": "Kulüpte yapılacak etkinlikleri ve yararları anlatmak",
+   "B": "Yazarların yaşam öykülerini ayrıntılı biçimde vermek",
+   "C": "Kitap fiyatlarındaki artışı uzun uzun eleştirmek",
+   "D": "Okulun kuruluş tarihini ayrıntılı biçimde anlatmak"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Konuşmanın amacı katılımı artırmaktır; buna hizmet eden içeriği seç.",
+  "cozum_adimlari": [
+   "Katılımı artırmak için kulübün sunacaklarını anlatmak gerekir. Diğer şıklar amaca hizmet etmez.",
+   "Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Konu dışı ayrıntı.",
+   "C": "Amaçtan uzaklaştırır.",
+   "D": "Konuyla ilgisi yok."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-022",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.4",
+  "surec_bileseni": "b",
+  "konu": "Soru sorma",
+  "alt_konu": "Bağlama uygun soru",
+  "soru_metni": "Mert, hafta sonu yaptığı kano gezisini anlatıyor: “Nehirde akıntı çok kuvvetliydi ama rehberimiz bize doğru yolu gösterdi.â€ Ece, sohbeti sürdürmek için soru soracak.\n\nEce'nin bağlama en uygun sorusu hangisidir?",
+  "siklar": {
+   "A": "Dün akşam yemekte ne yedin, hatırlıyor musun?",
+   "B": "Akıntıda rehber size yolu nasıl gösterdi?",
+   "C": "Kano satın almak pahalı bir şey mi?",
+   "D": "Sen hangi sınıfta okuyorsun şimdi?"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Soru, karşındakinin anlattığı olaya bağlı olmalı.",
+  "cozum_adimlari": [
+   "Ece, Mert'in anlattığı rehber ve akıntı durumundan yola çıkarak soru sormalıdır.",
+   "Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Konuyla ilgisi yok.",
+   "B": "Doğru.",
+   "C": "Anlatılan olayı sürdürmez, konuyu değiştirir.",
+   "D": "Zaten bilinen bir bilgiyi sorar."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-023",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.5",
+  "surec_bileseni": "b",
+  "konu": "Çoklu ortam ögeleri",
+  "alt_konu": "Grafiğin işlevi",
+  "soru_metni": "Hira, sunumunda sınıfın bir yıl içinde okuduğu kitap sayısını anlatırken, ay ay kitap sayılarını gösteren bir çubuk grafik gösteriyor.\n\nBu grafiğin konuşmadaki işlevi hangisidir?",
+  "siklar": {
+   "A": "Konuşmayla aynı anlamı farklı sözcüklerle yinelemek",
+   "B": "Konuyla ilgisiz yeni bir bilgi vermek",
+   "C": "Dinleyicinin dikkatini konudan uzaklaştırmak",
+   "D": "Anlatılan sayısal bilgiyi görsel olarak desteklemek"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Grafik hangi bilgiyi görünür kılıyor?",
+  "cozum_adimlari": [
+   "Grafik, konuşulan sayısal bilgiyi görsel hâle getirerek anlatımı destekler.",
+   "Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Grafikte söz yoktur, sözcükle eş anlam kurulmaz.",
+   "B": "Grafik konuyla ilgilidir.",
+   "C": "Doğru kullanılan grafik dikkat dağıtmaz.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-024",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.6",
+  "surec_bileseni": "a",
+  "konu": "Yaratıcı konuşma",
+  "alt_konu": "Özgün anlatım oluşturma",
+  "soru_metni": "Burak, sınıf etkinliğinde “Bir gün aya giden bir dolma kalemâ€ konulu yaratıcı bir konuşma yapacak.\n\nBurak, unsurları ilişkilendirip konuşmasını zenginleştirmek için hangisini yapmalıdır?",
+  "siklar": {
+   "A": "Kalemin hangi fabrikada üretildiğini sıralamalıdır.",
+   "B": "Aya giden ilk astronotun yaşam öyküsünü aktarmalıdır.",
+   "C": "Kalemin ay yolculuğunu hayal gücüyle anlatmalıdır.",
+   "D": "Dolma kalem çeşitlerini tek tek tanımlamalıdır."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yaratıcılık, alışılmadık bir konuyu hayal gücüyle ilişkilendirmeyi gerektirir.",
+  "cozum_adimlari": [
+   "Kalem ve ay gibi alışılmadık unsurları hayal gücüyle ilişkilendirmek özgün bir anlatım sağlar.",
+   "Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bilgi aktarır, hayal içermez.",
+   "B": "Konunun odağı değildir.",
+   "C": "Doğru.",
+   "D": "Yaratıcı anlatım değildir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-025",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.7",
+  "surec_bileseni": "b",
+  "konu": "Hazırlıksız konuşma",
+  "alt_konu": "Kısa zihinsel planlama",
+  "soru_metni": "Öğretmen, Selim'den beklenmedik bir anda “Okulumuzun bahçesi nasıl olmalı?â€ konusunda kısa bir konuşma yapmasını istedi.\n\nSelim kısa sürede hangi planı yapmalıdır?",
+  "siklar": {
+   "A": "Konuşmaktan kaçınmak için başka bir konu istemelidir.",
+   "B": "Aklına gelen fikirleri sıralayıp kısa örneklerle desteklemelidir.",
+   "C": "Daha önce ezberlediği başka bir konuşmayı olduğu gibi söylemelidir.",
+   "D": "Uzun bir metin yazıp sonra okumaya çalışmalıdır."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Kısa süre içinde yapılabilecek bir hazırlık düşün.",
+  "cozum_adimlari": [
+   "Hazırlıksız konuşmada kısa bir zihinsel plan yapılır: fikirler sıralanır, örneklendirilir ve doğal biçimde sunulur.",
+   "Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kaçınmak konuşma yapmak değildir.",
+   "B": "Doğru.",
+   "C": "Ezber bağlama uygun olmaz.",
+   "D": "Süre yetmez ve hazırlıksızlığa aykırıdır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-026",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.8",
+  "surec_bileseni": "a",
+  "konu": "Ses kullanımı",
+  "alt_konu": "Vurgu ve tonlama",
+  "soru_metni": "Aylin, sınıfta şiir okuyor. “Kuş gibi uçtum gökyüzünde!â€ dizesinde sevincini dinleyicilere hissettirmek istiyor.\n\nAylin sesini nasıl kullanmalıdır?",
+  "siklar": {
+   "A": "Dizeyi canlı bir tonlama ve uygun vurguyla okumalıdır.",
+   "B": "Dizeyi fısıltıyla ve tek düze bir sesle okumalıdır.",
+   "C": "Sözcükleri yutarak hızlıca geçmelidir.",
+   "D": "Nefes almadan dizeyi tek soluğa sığdırmalıdır."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Duygu, ses tonunda ve vurguda kendini gösterir.",
+  "cozum_adimlari": [
+   "Sevinci aktarmak için canlı tonlama ve doğru vurgu gerekir.",
+   "Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Tek düze ses duygu aktarmaz.",
+   "C": "Telaffuzu bozar.",
+   "D": "Nefes kontrolüne aykırıdır."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-027",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.11",
+  "surec_bileseni": "c",
+  "konu": "Karşılaştırma",
+  "alt_konu": "Farklılık belirtme",
+  "soru_metni": "Deniz, konuşmasında kediyle köpeği karşılaştırıyor ve şunları söylüyor:\n“Kedi ve köpek insanlarla yaşamayı sever. Her ikisi de bakım ister. Ancak köpek sahibini kapıda karşılarken kedi genellikle uzaktan izler.â€\n\nDeniz'in konuşmasında kedi ile köpek arasındaki farkı belirten ifade hangisidir?",
+  "siklar": {
+   "A": "İnsanlarla birlikte yaşamaktan hoşlanmaları",
+   "B": "İkisinin de düzenli bakıma ihtiyaç duyması",
+   "C": "İkisinin de ev ortamında beslenebilmesi",
+   "D": "Sahibini karşılama biçimlerinin farklı olması"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Fark, iki canlının ayrıştığı noktadır.",
+  "cozum_adimlari": [
+   "Köpek sahibini karşılar, kedi uzaktan izler; bu fark belirtir. Diğer şıklar ortak özelliktir.",
+   "Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ortak özelliktir.",
+   "B": "Ortak özelliktir.",
+   "C": "Ortak özellik olup metinde geçmez.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-028",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.12",
+  "surec_bileseni": "b",
+  "konu": "Sınıflandırma",
+  "alt_konu": "Ölçüte göre gruplama",
+  "soru_metni": "Hakan, sunumunda şu besinleri “meyveâ€ ve “sebzeâ€ ölçütüne göre gruplayacak: elma, kiraz, havuç, ıspanak, patates, armut.\n\nBu ölçüte göre doğru gruplama hangisidir?",
+  "siklar": {
+   "A": "Meyve: elma, havuç, armut – Sebze: kiraz, ıspanak, patates",
+   "B": "Meyve: kiraz, ıspanak, armut – Sebze: elma, havuç, patates",
+   "C": "Meyve: elma, kiraz, armut – Sebze: havuç, ıspanak, patates",
+   "D": "Meyve: elma, kiraz – Sebze: havuç, ıspanak, patates, armut"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Her besini tek tek düşün.",
+  "cozum_adimlari": [
+   "Elma, kiraz ve armut meyvedir; havuç, ıspanak ve patates sebzedir.",
+   "Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Havuç sebzedir.",
+   "B": "Ispanak sebzedir.",
+   "C": "Doğru.",
+   "D": "Armut meyvedir."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-029",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.13",
+  "surec_bileseni": "a",
+  "konu": "Yorumlama",
+  "alt_konu": "Bakış açısıyla yorum",
+  "soru_metni": "Öğretmen sınıfa şunu anlattı: “Köy okulunun bahçesine öğrenciler fidan dikti.â€ Cem, bu durumu “çevre bilinciâ€ bakış açısıyla yorumlayacak.\n\nHangisi bu bakış açısına uygun bir yorumdur?",
+  "siklar": {
+   "A": "Fidan dikmek, ileride daha temiz hava sağlayan değerli bir adımdır.",
+   "B": "Fidan dikmek, öğrencileri spor yapmaya yönlendiren bir etkinliktir.",
+   "C": "Köy okullarında fidan fiyatları düşük olduğu için dikim yapılır.",
+   "D": "Fidanlar büyüyünce okul binası küçük kalacaktır."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Çevre bilincini düşün: doğaya yararı ne?",
+  "cozum_adimlari": [
+   "Çevre bilinci bakış açısı, doğaya katkıyı öne çıkarır.",
+   "Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Spor vurgusu çevre değildir.",
+   "C": "Ekonomik bir yorumdur.",
+   "D": "Konuyla ilgisiz bir çıkarımdır."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-030",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.14",
+  "surec_bileseni": "b",
+  "konu": "Sözlü özet",
+  "alt_konu": "Önemli bilgileri seçme",
+  "soru_metni": "Bir öğrenci şu metni sözlü özetleyecek: “Kaplumbağalar çok uzun yaşayabilen canlılardır. Bazı türleri yüz yılı aşkın yaşar. Sert kabukları onları düşmanlardan korur. Tehlike anında başını ve bacaklarını kabuğunun içine çeker.â€\n\nÖğrencinin özeti için hangisi en uygundur?",
+  "siklar": {
+   "A": "Kaplumbağaların bazı türleri yüz yılı aşkın yaşar.",
+   "B": "Kaplumbağalar uzun yaşar, kabuğu sayesinde tehlikeden korunur.",
+   "C": "Kaplumbağalar tehlikeyi sezince sert kabuğunun içine saklanır.",
+   "D": "Kaplumbağalar yavaş hareket edip az enerji harcayan hayvanlardır."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Özet, metnin ana düşüncesini kapsar.",
+  "cozum_adimlari": [
+   "Doğru özet hem uzun yaşamı hem kabuğun korumasını içerir.",
+   "Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yalnız bir ayrıntıdır.",
+   "B": "Doğru.",
+   "C": "Eksik özettir.",
+   "D": "Metinde olmayan bir bilgi içerir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-031",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.16",
+  "surec_bileseni": "a",
+  "konu": "Savunma ve çürütme",
+  "alt_konu": "Tutarsız görüşü çürütme",
+  "soru_metni": "Sınıf tartışmasında Lale şunu söyledi: “Çocuklar günde yedi saat ekran başında olmalı, çünkü bu onları daha zeki yapar.â€ Ali, Lale'nin görüşünü çürütmek istiyor.\n\nAli'nin vereceği en mantıklı karşılık hangisidir?",
+  "siklar": {
+   "A": "Lale çok konuştuğu için görüşü sağlam sayılmaz; bu yüzden ekran süresi konusunda kimse onu ciddiye almamalıdır.",
+   "B": "Ben ekranlardan hoşlanmadığım için Lale'nin görüşü yanlıştır; herkes de benim gibi düşünmelidir.",
+   "C": "Ekran süresinin zekâyı artırdığına dair kanıt yok; üstelik uzun ekran süresi uykuyu ve göz sağlığını bozabilir.",
+   "D": "Pek çok çocuk zaten ekran başında uzun vakit geçirdiği için bu görüş doğru kabul edilmelidir."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Bir görüşü çürütmek için kanıt ve gerekçe gerekir.",
+  "cozum_adimlari": [
+   "Ali, görüşün dayanaksız olduğunu ve zararlarını belirterek mantıklı çürütme yapar.",
+   "Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kişiyi hedef alır, görüşü değil.",
+   "B": "Kişisel tercihe dayanır.",
+   "C": "Doğru.",
+   "D": "Çoğunluğa başvurur; gerekçe değildir."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-032",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.18",
+  "surec_bileseni": "c",
+  "konu": "Sözlü eleştiri",
+  "alt_konu": "Gerekçeli olumsuz yargı",
+  "soru_metni": "Nehir, mahalledeki parkın oyun alanını inceledi. Salıncakların zincirlerinin paslandığını ve bazı tahtaların kırık olduğunu gördü. Bu durumu sınıfta eleştirecek.\n\nNehir'in eleştirisi hangisi olmalıdır?",
+  "siklar": {
+   "A": "Bu park çok çirkin, kimse oraya gitmemeli, belediye hemen kapatmalıdır.",
+   "B": "Parktaki oyuncakların kötü olduğuna eminim ama nedenini bilmiyorum, yine de değişsin.",
+   "C": "Bu park çok güzel ve bakımlı, görevliler harika iş çıkarmış, her şey yerli yerinde.",
+   "D": "Zincirler paslanmış, tahtalar kırık; çocuklar için tehlikeli olduğundan bakım yapılmalıdır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Eleştiride yargı, gözleme dayanan gerekçeyle birlikte verilir.",
+  "cozum_adimlari": [
+   "Nehir gözlemlerini gerekçe yapıp olumsuz yargıya ulaşmıştır.",
+   "Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Gerekçesiz ve abartılıdır.",
+   "B": "Gözleme dayanmaz.",
+   "C": "Gözleme aykırıdır.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-033",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.20",
+  "surec_bileseni": "b",
+  "konu": "Düşünceyi geliştirme yolları",
+  "alt_konu": "Sayısal verilerden yararlanma",
+  "soru_metni": "Deniz, okul müdürüne okul kütüphanesinin yararını anlatırken şöyle diyor: “Geçen yıl kütüphaneden ödünç alınan kitap sayısı, ondan önceki yıla göre iki katına çıktı.â€\n\nDeniz bu cümlede hangi düşünceyi geliştirme yolunu kullanmıştır?",
+  "siklar": {
+   "A": "Sayısal verilerden yararlanma",
+   "B": "Ünlü birini tanık gösterme",
+   "C": "Bir şeyi başka şeye benzetme",
+   "D": "Kavramı tanımlayarak açıklama"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Cümlede kitap sayısına ilişkin neyin belirtildiğine bak.",
+  "cozum_adimlari": [
+   "Kitap sayısının iki katına çıktığı bilgisi sayısal bir veridir.",
+   "Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Bir kişiden alıntı yapılmamıştır.",
+   "C": "Bir şey başka şeye benzetilmemiştir.",
+   "D": "Bir kavram tanımlanmamıştır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-034",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.21",
+  "surec_bileseni": "a",
+  "konu": "Örtük iletiler",
+  "alt_konu": "Atasözünün bağlama uygun kullanımı",
+  "soru_metni": "Mehmet, arkadaşına “Ayağını yorganına göre uzatâ€ atasözüyle bir öğüt vermek istiyor.\n\nMehmet bu atasözünü hangi durumda kullanırsa bağlama uygun olur?",
+  "siklar": {
+   "A": "Arkadaşı derslerine hazırlanmayı ertelerken",
+   "B": "Arkadaşı yeni bir şehre taşınma hazırlığındayken",
+   "C": "Arkadaşı kazancından fazla harcama yaparken",
+   "D": "Arkadaşı sabah geç uyanıp servisi kaçırırken"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Atasözünün anlamını düşün: yorgan neyi temsil ediyor?",
+  "cozum_adimlari": [
+   "Atasözü, harcamaların gelire göre ayarlanması gerektiğini anlatır.",
+   "Doğru cevap C seçeneğidir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ders çalışmayla ilgisi yoktur.",
+   "B": "Taşınmayla ilgisi yoktur.",
+   "C": "Doğru.",
+   "D": "Uyanma ile ilgisi yoktur."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-035",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.22",
+  "surec_bileseni": "b",
+  "konu": "İkna edici konuşma",
+  "alt_konu": "Duygulara seslenme",
+  "soru_metni": "Selin, sınıf arkadaşlarını okuldaki geri dönüşüm kutularını kullanmaya ikna edecek. Dinleyicilerin duygularına seslenmek istiyor.\n\nSelin hangisini söylemelidir?",
+  "siklar": {
+   "A": "Kutular sarı renkte olduğu için çok güzel görünüyor, bu yüzden kullanın.",
+   "B": "Atıkları ayırmazsak gelecek nesillere nasıl bir dünya bırakacağımızı düşünün.",
+   "C": "Kutuları okula yeni aldık, bu nedenle hepimizin kullanması gerekiyor.",
+   "D": "Her kutunun hacmi beş yüz litredir ve kolayca taşınabilir."
+  },
+  "dogru_sik": "B",
+  "ipucu": "İkna için duygulara seslenen bir ifade seç.",
+  "cozum_adimlari": [
+   "Gelecek kuşaklara bırakılacak dünya vurgusu duygulara seslenen bir ikna tekniğidir.",
+   "Doğru cevap B seçeneğidir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Rengin ikna gücü yok.",
+   "B": "Doğru.",
+   "C": "Gerekçesiz bir emirdir.",
+   "D": "Sayısal bilgidir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-036",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.23",
+  "surec_bileseni": "a",
+  "konu": "Beden dili",
+  "alt_konu": "Göz teması ve yüz ifadesi",
+  "soru_metni": "Bir öğrenci, sunumunda üzücü bir olayı anlatıyor.\n\nİçeriğe uygun beden dili için hangisini yapmalıdır?",
+  "siklar": {
+   "A": "Gülümseyerek ellerini cebine koyup rahat durmalıdır.",
+   "B": "Gözlerini yere dikip kollarını kavuşturmalıdır.",
+   "C": "Dinleyicilere arkasını dönüp ekrana bakarak konuşmalıdır.",
+   "D": "Göz teması kurup yüz ifadesini anlattığı olaya uydurmalıdır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Beden dili, anlatılan duyguyla uyumlu olmalıdır.",
+  "cozum_adimlari": [
+   "Göz teması ve olaya uygun yüz ifadesi, içerikle uyumlu beden dilidir.",
+   "Doğru cevap D seçeneğidir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Gülümseme üzücü konuya uymaz.",
+   "B": "Göz temasını keser.",
+   "C": "Dinleyiciyi yok sayar.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-DK-037",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.24",
+  "surec_bileseni": "a",
+  "konu": "Süreç değerlendirme",
+  "alt_konu": "Gelişim tedbiri",
+  "soru_metni": "Tuna, konuşmasını bitirince arkadaşlarından şu geri bildirimi aldı: “Sesin çok netti ama biraz hızlı konuştuğun için bazı yerleri anlayamadık.â€\n\nTuna'nın bir sonraki konuşmada gelişmeye açık yönünü desteklemek için alacağı en uygun tedbir hangisidir?",
+  "siklar": {
+   "A": "Konuşmasını prova edip hızını ayarlaması",
+   "B": "Sesini olduğundan daha çok yükseltmesi",
+   "C": "Metni değiştirmeden daha da hızlı okuması",
+   "D": "Konuşmasını önceden hazırlanmadan sunması"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Geri bildirimin gösterdiği zayıf yönü düzeltecek bir hazırlık düşün.",
+  "cozum_adimlari": [
+   "Hızlı konuşma sorununu gidermek için prova yapıp tempo ayarlamak uygundur.",
+   "Doğru cevap A seçeneğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Ses yüksekliği sorun değil.",
+   "C": "Hızı daha da artırır.",
+   "D": "Hazırlık eksikliği sorunu büyütür."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-001",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.3",
+  "surec_bileseni": "b",
+  "konu": "Okuma stratejisi seçimi",
+  "alt_konu": "Amaca ve zamana uygun okuma tekniği",
+  "soru_metni": "Elif, fen ödevi için bir ansiklopedi maddesinde yalnızca Van Gölü’nün yüzölçümünü arıyor. Madde üç sayfa uzunluğunda ve Elif’in zamanı kısıtlı.\n\nElif’in amacına ve zamanına en uygun okuma yöntemi hangisidir?",
+  "siklar": {
+   "A": "Maddeyi ezberlemek için baştan sona tekrar tekrar okumak",
+   "B": "Başlıklara göz gezdirip aranan sayıyı hızlıca taramak",
+   "C": "Yalnızca son paragrafı ayrıntılı biçimde incelemek",
+   "D": "Her sözcüğün anlamını sözlükte tek tek aramak"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Elif tek bir bilgiyi arıyor ve zamanı az; bütün metni ayrıntılı okumasına gerek var mı?",
+  "cozum_adimlari": [
+   "Elif’in amacı yalnızca tek bir sayısal bilgiyi bulmaktır.",
+   "Zamanı kısıtlı olduğundan metnin tamamını ayrıntılı okumak yerine hızlı tarama yapmalıdır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ezber, amaca uymaz; öğrenci okuma amacını yöntem seçimiyle ilişkilendirememiştir.",
+   "B": "Doğru.",
+   "C": "Aranan bilginin son paragrafta olduğu varsayımı metinde yoktur; rastgele bölüm seçimi.",
+   "D": "Sözcük anlamı aramak amaçla ilgisizdir ve zaman kaybettirir."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-002",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.5",
+  "surec_bileseni": "b",
+  "konu": "İçerik tahmini",
+  "alt_konu": "Başlık ve ilk bölümden tahmin",
+  "soru_metni": "Başlık: Kuraklık Tarlaları Vurdu\n\nBu yıl yağmurlar mevsimin ortasına kadar hiç görünmedi. Dereler kurudu, kuyuların suyu çekildi. Köylüler sulama yapabilmek için kilometrelerce uzaktan su taşıyor.\n\nBaşlık ve verilen bölümden hareketle metnin devamında en çok hangisinin anlatılması beklenir?",
+  "siklar": {
+   "A": "Taşkınlar yüzünden köylerin zarar görmesi",
+   "B": "Ürünlerin bu yıl bol ve ucuz olması",
+   "C": "Su azlığının çiftçilerin verimini düşürmesi",
+   "D": "Tarımda kullanılan makinelerin yenilenmesi"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Başlıktaki sözcüğe ve yağmurun durumuna dikkat et.",
+  "cozum_adimlari": [
+   "Başlık kuraklıktan söz ediyor ve metin su sıkıntısını anlatıyor.",
+   "Su sıkıntısının tarlalara ve ürüne etkisi bu bölümün doğal devamıdır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Taşkın, yağış fazlalığını gerektirir; kuraklığın tersidir.",
+   "B": "Kuraklık ürünü azaltır; bolluk tahmini başlıkla çelişir.",
+   "C": "Doğru.",
+   "D": "İpuçlarıyla ilişkisiz; makine konusu metinde işaret edilmemiştir."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-003",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.6",
+  "surec_bileseni": "b",
+  "konu": "Yüzey anlamı",
+  "alt_konu": "Doğrudan verilen bilgiyi bulma",
+  "soru_metni": "Arılar, çiçeklerden topladıkları nektarı kovanlarına taşır. Orada nektar, işçi arıların çalışmasıyla bala dönüşür. Bal, petek denilen altıgen gözlerde saklanır. Kış gelince arılar bu bal stokuyla beslenir.\n\nMetne göre bal nerede saklanır?",
+  "siklar": {
+   "A": "Altı kenarlı küçük odacıklarda",
+   "B": "Çiçeklerin taç yaprakları arasında",
+   "C": "Kovanın dış duvarındaki çatlaklarda",
+   "D": "Kovan girişindeki küçük havuzlarda"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Üçüncü cümlede peteğin tanımı verilmiş.",
+  "cozum_adimlari": [
+   "Üçüncü cümle balın petek denilen altıgen gözlerde saklandığını söyler.",
+   "Altıgen, altı kenarlı demektir; gözler küçük odacıklardır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Nektar çiçekten toplanır; balın saklandığı yerle karıştırılmıştır.",
+   "C": "Metinde dış duvar çatlaklarından söz edilmez.",
+   "D": "Metinde havuz kavramı yoktur."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-004",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.7",
+  "surec_bileseni": "b",
+  "konu": "Görselle iletilen anlam",
+  "alt_konu": "Afişteki unsurlardan mesaj çıkarma",
+  "soru_metni": "Okul koridorundaki bir afişte şu görüntü yer alıyor: Yerde bir muz kabuğu duruyor ve üzeri kırmızı çarpıyla işaretlenmiş. Hemen yanında kapağı açık bir çöp kutusu var ve kutunun üstünde yeşil bir onay işareti görünüyor. Afişin alt kısmında yalnızca bir ok bulunuyor; ok, muz kabuğundan çöp kutusuna uzanıyor.\n\nBu afişle verilmek istenen mesaj hangisidir?",
+  "siklar": {
+   "A": "Meyve yemek yerine başka besinler tercih edilmelidir.",
+   "B": "Koridorlarda yürürken kaymamak için dikkat edilmelidir.",
+   "C": "Okullardaki çöp kutuları daha büyük olmalıdır.",
+   "D": "Atıklar yere değil, çöp kutusuna atılmalıdır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Çarpı ve onay işaretlerinin neyin yanında durduğuna ve okun yönüne bak.",
+  "cozum_adimlari": [
+   "Yerdeki kabuk çarpıyla yanlış, çöp kutusu onayla doğru olarak gösterilmiş.",
+   "Ok, kabuğun çöp kutusuna gitmesi gerektiğini belirtiyor.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çarpı meyveye değil, kabuğun yere atılmasına verilmiş.",
+   "B": "Muz kabuğunun kaydırıcılığı ön bilgiyle akla gelir ama afişin vurgusu atığın yeridir.",
+   "C": "Çöp kutusunun boyutuna dair bir ipucu yoktur.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-005",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.8",
+  "surec_bileseni": "b",
+  "konu": "Basit çıkarım",
+  "alt_konu": "İpuçlarından durum çıkarma",
+  "soru_metni": "Deniz sabah erkenden kalktı ve çantasına ince bir mont, eldiven ve bir termos koydu. Annesi kapıdan “Dönüşte ıslanma, şemsiyeni de al.” diye seslendi. Deniz, ayakkabılarını bağlarken pencereden gri bulutlara baktı. Sonra kapıyı çekip hızlı adımlarla servis durağına yürüdü.\n\nBu parçadan hava durumuyla ilgili hangi sonuca ulaşılabilir?",
+  "siklar": {
+   "A": "Gün boyunca bunaltıcı sıcaklar yaşanacaktır.",
+   "B": "Gün içinde soğuk ve yağışlı bir hava beklenmektedir.",
+   "C": "Hava açacak ve gökyüzü bulutsuz olacaktır.",
+   "D": "Kar yağışı yüzünden okul tatil edilecektir."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Mont, eldiven, şemsiye ve gri bulutlar neyi düşündürüyor?",
+  "cozum_adimlari": [
+   "Mont ve eldiven soğuğu, şemsiye ve ıslanma uyarısı yağışı düşündürür.",
+   "Gri bulutlar da bu çıkarımı destekler.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Metindeki kalın giysi ipuçlarıyla çelişir.",
+   "B": "Doğru.",
+   "C": "Gri bulutlar gözden kaçırılmıştır.",
+   "D": "Kar ve tatil metinde hiç ima edilmemiştir; aşırı çıkarım."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-006",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.9",
+  "surec_bileseni": "b",
+  "konu": "Üst düzey çıkarım",
+  "alt_konu": "Metnin bütününden örtük anlam",
+  "soru_metni": "Hasan Usta, mahallenin en eski saatçisiydi. Dükkânında tik tak sesleri hiç susmazdı. Bir gün torunu “Dede, herkes saati telefondan bakıyor, kimse artık saat almıyor.” dedi. Usta gülümsedi ve tezgâhın altından çalışmayan eski bir cep saati çıkardı. “Bunu bana babam bıraktı,” dedi. Saati okşarken sesi titredi. “Geçen ay bir müşteri çok para teklif etti, kapıdan çevirdim.”\n\nHasan Usta bu saati neden satmamıştır?",
+  "siklar": {
+   "A": "Teklif edilen parayı yetersiz bulduğu için",
+   "B": "Torununa miras bırakmayı planladığı için",
+   "C": "Saati, babasının hatırasını yaşatan bir değer saydığı için",
+   "D": "Eski saatlerin telefonlardan doğru çalıştığına inandığı için"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Ustanın sesinin titremesi ve saatin kimden kaldığı ne anlatıyor?",
+  "cozum_adimlari": [
+   "Saat ustaya babasından kalmıştır ve usta saati okşarken duygulanmaktadır.",
+   "Bu iki ipucu saatin parasal değil, duygusal değer taşıdığını gösterir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Parayı yetersiz bulduğuna dair bir ifade yoktur; para teklifi yalnızca ilgisizlik göstergesidir.",
+   "B": "Torunla ilgili bir plan metinde geçmez; yalnızca konuşma torunla başlar.",
+   "C": "Doğru.",
+   "D": "Torunun telefon sözü ile ustanın tutumu karıştırılmıştır; metinde böyle bir karşılaştırma yoktur."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-007",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.10",
+  "surec_bileseni": "c",
+  "konu": "Karşılaştırma",
+  "alt_konu": "İki metin arasındaki farklılıklar",
+  "soru_metni": "Metin 1: Kediler avlarını tek başlarına yakalar. Genellikle geceleri etkin olup karanlıkta çok iyi görür.\n\nMetin 2: Köpekler avlarını sürü hâlinde kovalar. Gündüz daha etkin olur ve çok iyi koklar.\n\nBu iki metne göre kedi ile köpek arasındaki fark hangisidir?",
+  "siklar": {
+   "A": "Kedi gündüz, köpek gece etkin olur.",
+   "B": "Kedi avını koklayarak, köpek görerek bulur.",
+   "C": "Kedi topluca, köpek yalnız çalışarak avlanır.",
+   "D": "Kedi yalnız çalışır, köpek topluca avlanır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Avlanma biçimlerini anlatan cümleleri yan yana koy.",
+  "cozum_adimlari": [
+   "Metin 1’de kedi avlanırken yalnızdır, Metin 2’de köpek grup hâlindedir.",
+   "Bu özellik iki metinde karşılaştırılabilir bir ayrım oluşturur.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Etkin olunan zamanlar ters yazılmıştır.",
+   "B": "Duyuların yerleri değiştirilmiştir.",
+   "C": "Avlanma biçimi tersine çevrilmiştir.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-008",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.11",
+  "surec_bileseni": "c",
+  "konu": "Sınıflandırma",
+  "alt_konu": "Ölçüte göre gruplama",
+  "soru_metni": "Yaz kampında çocuklar dört etkinlik yaptı. Defne yüzmeyi, Kaan basketbolu seçti. Ela resim yapmayı, Selin ise kil çalışmasını tercih etti. Akşam hepsi kamp ateşi etrafında toplandı.\n\nMetindeki etkinlikler “spor” ve “sanat” ölçütüne göre gruplanırsa hangisi doğru olur?",
+  "siklar": {
+   "A": "Spor: yüzme, basketbol; Sanat: resim, kil çalışması",
+   "B": "Spor: yüzme, resim; Sanat: basketbol, kil çalışması",
+   "C": "Spor: basketbol, kil çalışması; Sanat: yüzme, resim",
+   "D": "Spor: kil çalışması, resim; Sanat: yüzme, basketbol"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Hangi etkinlikler beden hareketi, hangileri el ve hayal gücü gerektiriyor?",
+  "cozum_adimlari": [
+   "Yüzme ve basketbol beden hareketine dayalı etkinliklerdir.",
+   "Resim ve kil çalışması sanat etkinliğidir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Yüzme ile resim, basketbol ile kil çalışması karıştırılmıştır.",
+   "C": "Kil çalışması spora, yüzme sanata yazılmıştır.",
+   "D": "Gruplar tamamen ters yazılmıştır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-009",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.12",
+  "surec_bileseni": "b",
+  "konu": "Metni yorumlama",
+  "alt_konu": "Olayı farklı bakış açısıyla yorumlama",
+  "soru_metni": "Köyün tek ağacı olan yaşlı çınar, yol genişletme çalışması için kesilecekti. Belediye, kamyonların rahat geçeceğini ve ticaretin canlanacağını söylüyordu. Muhtar ise ağacın yüz yıldır köylülere gölge verdiğini, bayramlarda herkesin altında toplandığını anlattı. Sonunda yol, ağaç kesilmeden bir yandan dolandırılarak yapıldı.\n\nBu olayı çınar ağacının bakış açısıyla yorumlayan cümle hangisidir?",
+  "siklar": {
+   "A": "Yol bitince köye kamyonlar girecek, ticaret canlanacak.",
+   "B": "Beni kesmediler; yıllardır serinlik verdiğim insanlarla yaşayacağım.",
+   "C": "Yolun yandan geçmesi yüzünden köyde bayramlar yapılamayacak.",
+   "D": "Beni kesmeleri gerekirdi; ticareti ancak bu çözüm canlandırırdı."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Ağaç olayı kendi başına gelen bir durum olarak anlatsa neyi vurgulardı?",
+  "cozum_adimlari": [
+   "Ağacın bakış açısı, olayın ona ve köylülere etkisini yansıtmalıdır.",
+   "Ağaç kesilmemiş ve köylülerle birlikte kalmıştır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Belediyenin bakış açısıdır.",
+   "B": "Doğru.",
+   "C": "Metindeki sonla çelişir; bayramların yapılamayacağı söylenmemiştir.",
+   "D": "Yol dolandırıldığı için kesim olmamıştır; ağaç bunu savunmaz."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-010",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.13",
+  "surec_bileseni": "a",
+  "konu": "Hikâye unsurları",
+  "alt_konu": "Zaman ve mekân",
+  "soru_metni": "Kış tatilinin ilk sabahı Zeynep, dedesinin Kapadokya’daki taş evine vardı. Evin avlusunda kar birikmişti. Dedesi ona ocak başında eski bir define haritasını gösterdi. Zeynep haritadaki işareti bulmak için hemen mağara yoluna koyuldu.\n\nBu hikâyenin zamanı ve mekânı hangisinde doğru verilmiştir?",
+  "siklar": {
+   "A": "Yaz akşamı; deniz kıyısındaki bir otel",
+   "B": "Sonbahar öğleni; okul bahçesi",
+   "C": "Kış sabahı; Kapadokya’daki taş ev",
+   "D": "İlkbahar sabahı; dedesinin tarlası"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Kar, tatil ve evin yeri neyi gösteriyor?",
+  "cozum_adimlari": [
+   "Kar ve kış tatili mevsimi, ilk sabah ise günün saatini belirtir.",
+   "Olay Kapadokya’daki dedesinin taş evinde geçer.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Mevsim ve mekân metinle çelişir.",
+   "B": "Tatil olduğu için okul bahçesi yanlış.",
+   "C": "Doğru.",
+   "D": "Mevsim ve mekân metinde yoktur."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-011",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.14",
+  "surec_bileseni": "b",
+  "konu": "Bilgilendirici metin",
+  "alt_konu": "Bilgiler arasındaki neden-sonuç ilişkisi",
+  "soru_metni": "Deprem, yer kabuğundaki kırıkların aniden hareket etmesiyle oluşur. Bu sarsıntının üç temel etkisi vardır. Birincisi yapıların zarar görmesi, ikincisi heyelan ve çığ gibi doğal olayların tetiklenmesi, üçüncüsü ise denizde dev dalgaların oluşmasıdır. Bu nedenle sağlam yapılaşma büyük önem taşır.\n\nMetne göre deprem ile denizde dev dalga oluşması arasındaki ilişki nedir?",
+  "siklar": {
+   "A": "Dalga oluşumu, depremin yol açtığı sonuçlardan biridir.",
+   "B": "Dalga oluşumu, depremin ortaya çıkmasının asıl nedenidir.",
+   "C": "Dalga oluşumu ile deprem arasında bir bağ bulunmaz.",
+   "D": "Dalga oluşumu, yalnızca heyelan olaylarına bağlı gelişir."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sarsıntının etkileri sayılırken dalga hangi sırada yer alıyor?",
+  "cozum_adimlari": [
+   "Metin, depremin üç etkisini sıralar; dalga bunlardan biridir.",
+   "Etki, yani sonuç olan şey depremin nedeni olamaz.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Neden-sonuç yönü ters çevrilmiştir.",
+   "C": "Metin açıkça ilişki kurmaktadır.",
+   "D": "Heyelan ayrı bir etki olarak sayılmıştır; dalga ile karıştırılmıştır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-012",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.15",
+  "surec_bileseni": "a",
+  "konu": "Anahtar kelimeler",
+  "alt_konu": "Metnin içeriğini yansıtan sözcükler",
+  "soru_metni": "Geri dönüşüm, kullanılmış kâğıt, cam ve plastik gibi maddelerin yeniden işlenerek yeni ürünlere dönüştürülmesidir. Bu sayede doğal kaynaklar korunur, çöp miktarı azalır. Bir ton kâğıdın geri dönüştürülmesi birçok ağacın kesilmesini önler. Bu yüzden atıkları ayrı kutularda biriktirmek önemlidir.\n\nBu metnin anahtar kelimeleri aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "kâğıt, ağaç, kesim",
+   "B": "cam, kutu, mahalle",
+   "C": "çöp, ton, ürün",
+   "D": "geri dönüşüm, atık, doğal kaynak"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Metnin tamamını özetleyen en genel sözcükleri seç.",
+  "cozum_adimlari": [
+   "Metin geri dönüşüm kavramını, atıkları ve doğal kaynakların korunmasını anlatır.",
+   "Anahtar kelimeler metnin ana fikrini temsil eden sözcüklerdir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Metinde geçen ama yalnızca bir ayrıntıyı karşılayan sözcükler.",
+   "B": "Metinde geçen ama ana içeriği yansıtmayan sözcükler.",
+   "C": "Ayrıntı sözcükleri; konuyu bütünüyle kapsamaz.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-013",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.16",
+  "surec_bileseni": "a",
+  "konu": "Metnin bölümleri",
+  "alt_konu": "Serim, düğüm, çözüm",
+  "soru_metni": "Mina her sabah okul yolunda sokaktaki yavru kediyi görürdü. Bir gün kedi ortadan kayboldu. Mina her yeri aradı ama bulamadı. Sonunda kediyi komşunun bahçesinde bir kutuda uyurken buldu. Ona sıcak bir yuva hazırladı.\n\nMetindeki “Bir gün kedi ortadan kayboldu.” cümlesi hangi bölümün başlangıcıdır ve neden?",
+  "siklar": {
+   "A": "Serim, çünkü kişi ve mekân tanıtılıyor.",
+   "B": "Düğüm, çünkü olayın akışı bir sorunla değişiyor.",
+   "C": "Çözüm, çünkü sorun yaşanmadan olay tamamlanıyor.",
+   "D": "Düğüm, çünkü olay mutlu bir sonla bitiyor."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Kediyi görme alışkanlığı ilk cümlelerde bozuluyor mu?",
+  "cozum_adimlari": [
+   "İlk cümle kişiyi ve durumu tanıtır (serim).",
+   "Kedinin kaybolması olayı sorunlu hâle getirir; düğüm bu cümleyle başlar.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Serim ilk cümledir; kaybolma serimde yok.",
+   "B": "Doğru.",
+   "C": "Sorunun çözümü sonraki cümlelerdedir.",
+   "D": "Bölüm doğru, gerekçe yanlış; mutlu son çözüm bölümünün özelliğidir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-014",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.17",
+  "surec_bileseni": "a",
+  "konu": "Şiirin biçim özellikleri",
+  "alt_konu": "Kıta, dize ve uyak",
+  "soru_metni": "Kuşlar konar dallara,\nBahar gelir yollara.\n\nSular çağlar derede,\nGün ışıdı her yerde.\n\nBu şiirin biçim özellikleriyle ilgili hangisi doğrudur?",
+  "siklar": {
+   "A": "Tek kıtadan oluşur ve dizelerde uyak bulunmaz.",
+   "B": "İki kıtadan oluşur ve kıtalardaki dizeler uyaksızdır.",
+   "C": "İki kıtadan oluşur ve her kıtada ardışık dizeler uyaklıdır.",
+   "D": "Dört kıtadan oluşur ve her kıta tek dizelidir."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Boşlukla ayrılan bölümleri say; dize sonlarına bak.",
+  "cozum_adimlari": [
+   "Boşlukla ayrılmış iki bölüm iki kıtayı gösterir.",
+   "Her kıtada dallara-yollara ve derede-yerde olmak üzere dize sonları uyaklıdır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kıta sayısı ve uyak durumu yanlış.",
+   "B": "Kıta sayısı doğru, uyak durumu yanlış.",
+   "C": "Doğru.",
+   "D": "Kıta ve dize sayısı yanlış."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-015",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.18",
+  "surec_bileseni": "a",
+  "konu": "Düşünceyi geliştirme yolları",
+  "alt_konu": "Örneklendirme",
+  "soru_metni": "Su, canlılar için vazgeçilmezdir. İnsan vücudunun yaklaşık üçte ikisi sudan oluşur. Bitkiler de su olmadan beslenemez. Çöllerdeki kaktüsler bile yağmuru günlerce bekler ve içlerinde depolar.\n\nYazar, ilk cümledeki düşüncesini en çok hangi yolla geliştirmiştir?",
+  "siklar": {
+   "A": "Somut örnekler vererek",
+   "B": "Kavramın tanımını yaparak",
+   "C": "İki durumu karşılaştırarak",
+   "D": "Uzman görüşünden alıntı yaparak"
+  },
+  "dogru_sik": "A",
+  "ipucu": "İlk cümleden sonraki cümleler ne yapıyor: tanımlıyor mu, örnek mi veriyor?",
+  "cozum_adimlari": [
+   "İlk cümle genel bir düşüncedir.",
+   "İnsan, bitki ve kaktüs örnekleriyle düşünce desteklenmiştir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Metinde suyun tanımı yapılmaz.",
+   "C": "Metinde iki durum kıyaslanmaz.",
+   "D": "Metinde uzman alıntısı yoktur."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-016",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.19",
+  "surec_bileseni": "a",
+  "konu": "Söz sanatları",
+  "alt_konu": "Kişileştirme",
+  "soru_metni": "Akşam olurken köyün üstüne sessizlik çöktü. Rüzgâr, ağaçların kulağına gizli sırlar fısıldadı. Kuşlar dallarda uyumaya hazırlandı. Uzaktan bir köpek havladı.\n\n“Rüzgâr, ağaçların kulağına gizli sırlar fısıldadı.” cümlesinde hangi söz sanatı kullanılmıştır?",
+  "siklar": {
+   "A": "Abartma, çünkü bir durum olduğundan büyük gösterilmiş",
+   "B": "Benzetme, çünkü iki varlık birbirine benzetilmiş",
+   "C": "Zıtlık, çünkü karşıt kavramlar yan yana kullanılmış",
+   "D": "Kişileştirme, çünkü rüzgâr insan gibi davranmış"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Rüzgâra insana özgü hangi davranış verilmiş?",
+  "cozum_adimlari": [
+   "Fısıldamak insana özgü bir davranıştır.",
+   "Rüzgâra bu davranışın verilmesi kişileştirmedir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Cümlede büyütme yoktur.",
+   "B": "Benzetme edatı veya ilgi yoktur.",
+   "C": "Zıt kavram yoktur.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-017",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.20",
+  "surec_bileseni": "a",
+  "konu": "İkna teknikleri",
+  "alt_konu": "Uzman görüşü ve veriye dayanma",
+  "soru_metni": "Çocuk gelişimi uzmanı Dr. Ayşe Kaya, kahvaltıyı atlayan çocukların derste dikkatinin çabuk dağıldığını söylüyor. Bir okulda yapılan araştırmada düzenli kahvaltı eden öğrencilerin ders başarısı belirgin biçimde yükselmiş. Bu nedenle çocuğunuzun güne aç başlamasına izin vermeyin.\n\nYazar, okuru ikna etmek için hangi tekniğe başvurmuştur?",
+  "siklar": {
+   "A": "Okurun korkularını kullanarak baskı oluşturma",
+   "B": "Ünlü bir sporcunun yaşadıklarını örnek gösterme",
+   "C": "Uzman görüşüne ve araştırma sonucuna dayanma",
+   "D": "Okura kişisel bir anı anlatarak yakınlık kurma"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Yazar görüşünü hangi kaynaklarla güçlendirmiş?",
+  "cozum_adimlari": [
+   "Metinde bir uzmanın sözü ve bir araştırmanın sonucu verilmiştir.",
+   "Bu kaynaklar okura güven vermek için kullanılmıştır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Korkutma yok; son cümle uyarıdır ama korku uyandırmaz.",
+   "B": "Metinde sporcu geçmez.",
+   "C": "Doğru.",
+   "D": "Yazarın kişisel anısı yoktur."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-018",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.21",
+  "surec_bileseni": "c",
+  "konu": "Özetleme",
+  "alt_konu": "Önemli bilgilerle özet kurma",
+  "soru_metni": "Kaplumbağalar dünyanın en uzun yaşayan hayvanlarındandır. Bazı türler yüz yılı aşkın yaşar. Sert kabukları onları düşmanlarından korur. Tehlike anında başlarını ve bacaklarını kabuğun içine çeker. Ne yazık ki kirlenen denizler yüzünden birçok deniz kaplumbağası türü tehlike altındadır.\n\nBu metnin en uygun özeti hangisidir?",
+  "siklar": {
+   "A": "Kaplumbağalar, düşman karşısında kabuğunun içine saklanarak kendini koruyan sürüngenlerdir.",
+   "B": "Kaplumbağalar uzun ömürlü, kabuklu hayvanlardır; denizlerin kirlenmesi bazı türleri tehdit etmektedir.",
+   "C": "Kaplumbağaların kabuğu çok sert olduğu için bazı türler yüz yıldan uzun yaşayabilir.",
+   "D": "Denizlerin kirlenmesi yüzünden kaplumbağalar artık yalnızca karada yaşamak zorunda kalmıştır."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Özet, önemli bilgilerin hepsini kısa biçimde taşır ve metinde olmayan bilgi içermez.",
+  "cozum_adimlari": [
+   "Önemli bilgiler: uzun ömür, kabukla korunma, kirli denizlerin tehdidi.",
+   "B bu bilgileri kısa ve doğru toplar; diğerleri eksik veya yanlış bilgi içerir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yalnızca korunma bilgisi; özetin yarısını eksik bırakır.",
+   "B": "Doğru.",
+   "C": "Sebep-sonuç ilişkisi metinde yoktur; tehdit bilgisi de eksik.",
+   "D": "Metinde olmayan bilgi eklenmiştir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-019",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.25",
+  "surec_bileseni": "ç",
+  "konu": "Probleme çözüm üretme",
+  "alt_konu": "En uygun çözümü belirleme",
+  "soru_metni": "Okulun bahçesindeki tek çeşme sık sık bozuluyor ve öğrenciler teneffüste uzun kuyruklar oluşturuyor. Bazı çocuklar bu yüzden su içmeden sınıfa dönüyor. Müdür, çeşmeyi her bozulduğunda onarttığını ancak sorunun sürdüğünü söylüyor.\n\nBu problem için en uygun çözüm hangisidir?",
+  "siklar": {
+   "A": "Yeni çeşmeler ekleyip bozulan çeşmeyi baştan yenilemek",
+   "B": "Teneffüs süresini uzatıp öğrencileri sıraya sokmak",
+   "C": "Öğrencilerin teneffüste su içmesini sınırlandırmak",
+   "D": "Çeşmeyi her bozulduğunda yeniden onartmaya devam etmek"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sorunun iki yönü var: çeşme az ve çeşme arızalı.",
+  "cozum_adimlari": [
+   "Problem: tek çeşme ve sık arıza; sonuç olarak kuyruk ve susuzluk.",
+   "Hem sayıyı artıran hem arızayı gideren çözüm en uygun olandır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Arızayı ve çeşme azlığını çözmez.",
+   "C": "Sorunu çözmek yerine ihtiyacı kısıtlar.",
+   "D": "Denenmiş ve sonuç vermemiş yöntemdir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-E01",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.1",
+  "surec_bileseni": "a",
+  "konu": "Okuma",
+  "alt_konu": "Okuma materyali seçimi",
+  "soru_metni": "Elif, sınıfta “Arıların Yaşamı” konulu bir sunum hazırlayacak. Önce öğrenmek istediklerini yazdı: arıların kaç türü olduğu, kovanda nasıl görev paylaştıkları ve balın nasıl yapıldığı. Sunum için bir haftası var. Evinde bilgisayar bulunuyor, okul kütüphanesinde ise çok sayıda kaynak var. Elif, konusuna doğrudan hizmet eden ve güvenilir bir kaynak arıyor.\n\nElif’in amacına en uygun okuma materyali aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Çiçek yetiştirmeyi anlatan bir bahçecilik dergisi sayısı",
+   "B": "Arı türlerini ve bal yapımını anlatan bir ansiklopedi maddesi",
+   "C": "Bir arıcının köy yolculuğunu anlattığı gezi günlüğü",
+   "D": "Bir bal markasının satış amaçlı tanıtım broşürü"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Elif’in yazdığı üç ihtiyaca bak: tür, görev paylaşımı, bal yapımı. Hangi kaynak bunları güvenilir biçimde verir?",
+  "cozum_adimlari": [
+   "Elif’in ihtiyacı arı türleri, görev paylaşımı ve bal yapımı hakkında güvenilir bilgidir.",
+   "Ansiklopedi maddesi bu konuları doğrudan ve doğrulanmış biçimde verir.",
+   "Bahçecilik dergisi arılarla ilgili değildir, gezi günlüğü kişisel bir anlatıdır, broşür ise satış amaçlıdır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Çiçek ile arı arasındaki ilişkiden dolayı konuya yakın sanılır; ama kaynak arıları ele almaz.",
+   "B": "Doğru.",
+   "C": "Arıcı kelimesi konuyla bağ kurdurur; ancak içerik bilgi vermeyen kişisel bir anlatıdır.",
+   "D": "Bal kelimesi dikkat çeker; ancak amaç satıştır, bilgi güvenilirliği ve kapsamı yetersizdir."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-E02",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.2",
+  "surec_bileseni": "a",
+  "konu": "Okuma",
+  "alt_konu": "Akıcı okuma",
+  "soru_metni": "Deniz, Türkçe dersinde bir şiiri sesli okurken her sözcüğün sonunda duruyor, virgül ve noktaya dikkat etmeden aynı tonla okuyor. Bu yüzden dinleyen arkadaşları şiirin anlamını kavrayamıyor. Öğretmeni Deniz’e akıcı okumanın yolunu hatırlatmak istiyor.\n\nDeniz’in okumasını akıcı hâle getirmek için aşağıdakilerden hangisini yapması gerekir?",
+  "siklar": {
+   "A": "Metni mümkün olduğunca hızlı okuyup süreyi kısaltmalı.",
+   "B": "Her sözcüğü ayrı ayrı vurgulayarak yavaş yavaş okumalı.",
+   "C": "Noktalama işaretlerine göre duraklayıp anlama uygun vurgu yapmalı.",
+   "D": "Anlamını bilmediği sözcükleri atlayarak okumayı sürdürmeli."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Akıcı okuma yalnızca hız değildir; duraklama, vurgu ve anlam birlikte düşünülür.",
+  "cozum_adimlari": [
+   "Deniz’in sorunu noktalama işaretlerini gözetmemesi ve tek tonda okumasıdır.",
+   "Akıcı okuma; doğru duraklama, uygun vurgu ve anlamı yansıtan tonlamayı gerektirir.",
+   "Hızlı okumak, her sözcüğü vurgulamak ya da sözcük atlamak bu sorunu çözmez.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Akıcılığı hızla karıştıran yanılgı; hız anlamı bozar.",
+   "B": "Her sözcüğü vurgulamak okumayı kesik hâle getirir ve Deniz’in mevcut sorununu sürdürür.",
+   "C": "Doğru.",
+   "D": "Sözcük atlamak anlamı eksik bırakır; akıcılığı sağlamaz."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-O-E03",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.4",
+  "surec_bileseni": "a",
+  "konu": "Okuma",
+  "alt_konu": "Metnin içeriğini tahmin etme",
+  "soru_metni": "Kerem, kütüphaneden “Fırtınanın Ortasında Bir Fener” adlı kitabı aldı. Kitabın kapağında dalgalı bir deniz ve uzakta ışık saçan bir deniz feneri resmi var. Arka kapaktaki tanıtım yazısında şu bilgi yer alıyor: “Yaşlı bekçi Nuri, karanlık gecelerde yolunu şaşıran gemiler için lambasını yakar.” Kerem kitabı okumaya başlamadan önce içeriğini tahmin etmek istiyor.\n\nKerem’in başlıktan, kapaktan ve tanıtım yazısından hareketle yapacağı en uygun tahmin aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Dağ köyünde yaşayan bir ailenin hasat zamanı anlatılacaktır.",
+   "B": "Uzaya giden bilim insanlarının gezegen keşfi anlatılacaktır.",
+   "C": "Büyük bir şehirdeki okulun spor yarışması anlatılacaktır.",
+   "D": "Bir fener bekçisinin denizdeki gemilere yol göstermesi anlatılacaktır."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Başlıktaki fener, kapaktaki deniz resmi ve tanıtımdaki gemiler aynı konuya işaret eder.",
+  "cozum_adimlari": [
+   "Başlıkta fener ve fırtına, kapakta deniz ve deniz feneri vardır.",
+   "Tanıtım yazısında bir bekçinin gemiler için lamba yaktığı belirtilir.",
+   "Bu üç ipucu birlikte fener bekçisi ve gemiler çevresinde bir olay olduğunu gösterir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ipuçlarıyla ilgisi olmayan, rastgele bir konu; ipuçlarını birlikte değerlendirmemekten doğar.",
+   "B": "Işık ve gece kavramından yanlış çağrışımla uzay konusuna gitmek.",
+   "C": "Kitap kapağındaki ve tanıtımdaki hiçbir ipucuyla bağdaşmayan bir konu.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-002",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.2",
+  "surec_bileseni": "b",
+  "konu": "Yazma",
+  "alt_konu": "Yazma yöntem ve tekniği seçimi",
+  "soru_metni": "Hasan, “Okul Bahçemizdeki Ağaçlar” konulu bir yazı yazacak. Aklına çok sayıda fikir geldi, ancak fikirleri zihninde birbirine karışıyor.\n\nHasan’ın yazmaya başlamadan önce seçeceği en uygun yöntem aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Aklına gelen ilk fikirden başlayıp sırayla yazmak",
+   "B": "Yazıyı bitirdikten sonra konusunu belirlemek",
+   "C": "Fikirleri sıralamadan tek paragrafa yığmak",
+   "D": "Fikirleri gruplayıp bir yazı planı çıkarmak"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Karışan fikirleri düzene sokan bir hazırlık adımı düşün.",
+  "cozum_adimlari": [
+   "Hasan’ın sorunu çok fikrinin olması ve bunları düzenleyememesidir.",
+   "Fikirleri gruplayıp plan yapmak, yazıya başlamadan önce düzen sağlar.",
+   "Diğer seçenekler karışıklığı gidermez, artırır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Plansız yazmak fikirlerin karışmasını çözmez.",
+   "B": "Konu yazmadan önce belirlenir; sonradan belirlemek düzensizlik yaratır.",
+   "C": "Sıralamadan yazmak karışıklığı artırır.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-003",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.3",
+  "surec_bileseni": "a",
+  "konu": "Yazma",
+  "alt_konu": "Amaca uygun paragraf türü",
+  "soru_metni": "Zeynep, tatilde gittiği köyde sabah erkenden uyandı. Çiğ kokusunu, horoz seslerini ve tepelerin üzerinde yayılan pembe ışığı okurun gözünde canlandıracak bir paragraf yazmak istiyor.\n\nZeynep’in amacına en uygun paragraf türü aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Öyküleyici paragraf",
+   "B": "Betimleyici paragraf",
+   "C": "Açıklayıcı paragraf",
+   "D": "Tartışmacı paragraf"
+  },
+  "dogru_sik": "B",
+  "ipucu": "Zeynep olay anlatmıyor; görüntü, koku ve sesleri okura yaşatmak istiyor.",
+  "cozum_adimlari": [
+   "Zeynep koku, ses ve görüntüyü okurun gözünde canlandırmak istiyor.",
+   "Varlıkları ve ortamı duyulara seslenerek anlatan paragraf türü betimlemedir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Köydeki sabah bir olay akışı olarak anlatılmıyor.",
+   "B": "Doğru.",
+   "C": "Bilgi vermek değil, canlandırmak amaçlanıyor.",
+   "D": "Bir görüşü savunmak ya da çürütmek amaçlanmıyor."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-004",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.4",
+  "surec_bileseni": "b",
+  "konu": "Yazma",
+  "alt_konu": "Çoklu ortam ögelerinin işlevi",
+  "soru_metni": "Ali, “Fasulyem Nasıl Büyüdü?” başlıklı yazısında beş haftalık boy ölçümlerini okura göstermek istiyor. Ölçümlerin zaman içindeki değişimini ayrıntılı bir anlatım yazmadan göstermeyi düşünüyor.\n\nAli için en uygun çoklu ortam ögesi aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Haftalık boy ölçümlerini gösteren çizgi grafik",
+   "B": "Saksının köşesinden çekilmiş bir fotoğraf",
+   "C": "Bitki türlerinin yayıldığı yerleri gösteren harita",
+   "D": "Fidan sulanırken kaydedilmiş bir ses"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sayısal verilerin zaman içindeki değişimini hangi öge gösterir?",
+  "cozum_adimlari": [
+   "Ali beş haftalık ölçüm değerlerini ve değişimi göstermek istiyor.",
+   "Sayısal değişimi zaman çizgisinde gösteren öge çizgi grafiktir.",
+   "Fotoğraf tek bir anı gösterir; harita yer, ses ise duyum bilgisi verir.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Tek bir anı gösterir, beş haftalık değişimi göstermez.",
+   "C": "Yer bilgisi verir, ölçüm değişimiyle ilgisi yoktur.",
+   "D": "Ses ögesi boy ölçümlerini aktarmaz."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-005",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.5",
+  "surec_bileseni": "a",
+  "konu": "Yazma",
+  "alt_konu": "Yaratıcı yazıda alışılmışın dışında unsur belirleme",
+  "soru_metni": "Türkçe öğretmeni, sınıftan alışılmışın dışında bir konu ve varlık seçerek yaratıcı bir hikâye yazmalarını istedi.\n\nAşağıdakilerden hangisi bu isteğe en uygun hikâye fikridir?",
+  "siklar": {
+   "A": "Her sabah okula yürüyen bir öğrenci",
+   "B": "Hafta sonu pikniğe çıkan bir aile",
+   "C": "Yeni ayakkabı alışverişine giden çocuk",
+   "D": "Zamanı durdurup konuşan eski bir saat"
+  },
+  "dogru_sik": "D",
+  "ipucu": "Günlük hayatta sık karşılaşılan durumlar alışılmış sayılır.",
+  "cozum_adimlari": [
+   "Öğretmen alışılmışın dışında konu ve varlık istiyor.",
+   "A, B ve C günlük hayatta sık yaşanan durumlardır.",
+   "D seçeneğindeki konuşan ve zamanı durduran saat alışılmışın dışındadır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Gündelik, sıradan bir durumdur.",
+   "B": "Sık rastlanan bir etkinliktir.",
+   "C": "Günlük bir alışveriş durumudur.",
+   "D": "Doğru."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-006",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.6",
+  "surec_bileseni": "b",
+  "konu": "Yazma",
+  "alt_konu": "İpuçlarından mantıklı tahmin",
+  "soru_metni": "Bir öğrenci hikâyesine şu bölümü yazdı:\n\n“Gökyüzünü kapkara bulutlar kaplamış, rüzgâr ağaçları savurmaya başlamış, kuşlar telaşla yuvalarına dönmüştü. Mert bahçedeki çamaşırlara baktı ve hızlı adımlarla kapıya yürüdü.”\n\nÖğrenci, bu ipuçlarından hareketle hikâyenin devamına bir tahmin yazacaktır.\n\nBu bölüme göre yazılabilecek en mantıklı tahmin aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Hava kısa sürede çok ısınacak.",
+   "B": "Kuşlar yuvalarından çıkıp şarkı söyleyecek.",
+   "C": "Çok geçmeden yağmur başlayacak.",
+   "D": "Mert çamaşırları güneşte kurutmaya devam edecek."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Bulutlar, rüzgâr ve kuşların davranışı birlikte neye işaret eder?",
+  "cozum_adimlari": [
+   "Kara bulutlar, sert rüzgâr ve yuvalarına dönen kuşlar yağışın habercisidir.",
+   "Mert’in çamaşırlara bakıp kapıya yürümesi de aynı yöndedir.",
+   "Bu ipuçlarıyla en uyumlu tahmin yağmurun başlamasıdır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Verilen ipuçlarıyla çelişir.",
+   "B": "Kuşlar telaşla yuvaya dönmüşken şarkı söylemesi ipuçlarına uymaz.",
+   "C": "Doğru.",
+   "D": "Hava kararırken çamaşırların güneşte kuruması mantıklı bir tahmin değildir."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-007",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.7",
+  "surec_bileseni": "b",
+  "konu": "Yazma",
+  "alt_konu": "Karşılaştırmada benzerliği yazıda kullanma",
+  "soru_metni": "Mina, kütüphane ile interneti karşılaştıran bir yazı hazırlıyor. Notları şöyle:\n\n• Kütüphane: sessiz ortam, basılı kaynak, ücretsiz kullanım, bilgi edinme yolu\n• İnternet: her yerden erişim, ekrandan okuma, bazı içerikler ücretli, bilgi edinme yolu\n\nMina yazısında bu iki kaynağın benzer yönünü belirten bir cümle kuracaktır.\n\nBu amaca göre aşağıdakilerden hangisini yazmalıdır?",
+  "siklar": {
+   "A": "Kütüphane sessiz bir ortam sunar, internet her yerden ulaşılır.",
+   "B": "İkisi de araştırma yapmak için kullanılabilir.",
+   "C": "Kütüphanede basılı kaynak okunur, internette ekrandan okunur.",
+   "D": "Kütüphane ücretsizdir, internet içeriklerinin bir kısmı ücretlidir."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Her iki kaynakta da bulunan ortak özelliği ara.",
+  "cozum_adimlari": [
+   "Benzerlik, iki unsurun ortak özelliğidir; notlarda ortak olan “bilgi edinme yolu” özelliğidir.",
+   "A, C ve D seçenekleri iki kaynağın ayrıldığı yönleri anlatır.",
+   "B seçeneği ortak özelliği belirtir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Ortam ve erişim bakımından farkı anlatır.",
+   "B": "Doğru.",
+   "C": "Kaynakların biçim farkını anlatır.",
+   "D": "Ücret bakımından farkı anlatır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-008",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.8",
+  "surec_bileseni": "c",
+  "konu": "Yazma",
+  "alt_konu": "Ölçüte göre gruplama ve adlandırma",
+  "soru_metni": "Defne, yazısında şu hayvanları hareket biçimlerine göre gruplayıp her gruba ad verecek: kedi, karga, balık, serçe, köpek, somon.\n\nBu ölçüte uygun gruplama aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Uçanlar: karga, serçe\nYüzenler: balık, somon\nYürüyenler: kedi, köpek",
+   "B": "Evcil: kedi, köpek\nYabani: karga, serçe, balık, somon",
+   "C": "Karga, kedi, balık\nSerçe, köpek, somon",
+   "D": "Uçanlar: karga, serçe, balık\nYürüyenler: kedi, köpek, somon"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Gruplar hareket biçimine göre kurulmalı ve her grubun adı o ölçütü yansıtmalı.",
+  "cozum_adimlari": [
+   "Ölçüt hareket biçimidir: uçmak, yüzmek, yürümek.",
+   "Karga ve serçe uçar, balık ve somon yüzer, kedi ve köpek yürür.",
+   "A seçeneği ölçüte uygun gruplar kurmuş ve bunları adlandırmıştır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Gruplar başka bir ölçüte (evcil/yabani) göre kurulmuş.",
+   "C": "Gruplar rastgele ve adsız; ölçüt yok.",
+   "D": "Balık ve somon yanlış gruplara konmuş."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-009",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.9",
+  "surec_bileseni": "b",
+  "konu": "Yazma",
+  "alt_konu": "Bağlamdan kopmadan yazılı yorum",
+  "soru_metni": "Bir öğrenci okul gazetesi için şu durumu yorumlayacak:\n\n“Okul bahçesine dikilen sebze fidelerini her sınıf bir hafta boyunca sulayacaktı. 6-A sınıfı sulama listesini panoya asmayı unuttu ve fideler üç gün susuz kaldı. Sonunda fidelerin yaprakları sarardı.”\n\nÖğrenci olayı “görev paylaşımı ve takibi” bakış açısıyla ele alacaktır.\n\nBu bakış açısına uygun, bağlamdan kopmayan yorum aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Fideler susuz kalsa da gelişimini sürdürür.",
+   "B": "6-A sınıfı bahçe işlerini sevmediği için fideleri sulamadı.",
+   "C": "Sebze yetiştirme etkinliği öğrenciler için gereksiz bir uğraştır.",
+   "D": "Görev paylaşımı takip edilmezse yapılan emek boşa gidebilir."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Yorum, verilen olaya ve belirlenen bakış açısına dayanmalı; metinde olmayan bir neden uydurulmamalı.",
+  "cozum_adimlari": [
+   "Bakış açısı görev paylaşımı ve takibidir.",
+   "Olayda liste asılmadığı için görev takip edilememiş ve fideler zarar görmüştür.",
+   "D seçeneği bu durumdan çıkan sonucu bakış açısına uygun yorumlar.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Metindeki yaprakların sararması bilgisiyle çelişir.",
+   "B": "Metinde böyle bir neden yoktur; varsayımdır.",
+   "C": "Bakış açısından uzaklaşan, olayı geçersiz sayan bir genellemedir.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-010",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.10",
+  "surec_bileseni": "c",
+  "konu": "Yazma",
+  "alt_konu": "Önemli bilgilerle yazılı özet",
+  "soru_metni": "“Mart ayında okulumuzda kitap şenliği düzenlendi. Öğrenciler evlerinden getirdikleri kitapları birbirleriyle değiştirdi. Şenlik alanının girişine mavi bir afiş asılmıştı. Etkinlik bitince 120 kitap yeni okuyucularına ulaşmış, kütüphane de yeni raflar kazanmıştı.”\n\nBu metni özetleyecek bir öğrenci önemli bilgileri koruyup önemsiz ayrıntıları dışarıda bırakacaktır.\n\nBu amaca göre aşağıdaki özetlerden hangisi en uygundur?",
+  "siklar": {
+   "A": "Mart ayında okulda mavi bir afişle duyurulan şenlik düzenlendi.",
+   "B": "Şenliğin girişine asılan afişi öğrenciler çok beğendi.",
+   "C": "Mart şenliğinde öğrenciler 120 kitap takas etti, kütüphaneye yeni raflar geldi.",
+   "D": "Öğrenciler evden getirdikleri kitapları şenlik alanında arkadaşlarına gösterdi."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Özette olayın ana akışı ve sonucu yer alır; afiş gibi ayrıntılar yer almaz.",
+  "cozum_adimlari": [
+   "Önemli bilgiler şunlardır: kitap şenliği, kitap değişimi, 120 kitap ve kütüphanenin yeni raflara kavuşması.",
+   "Afiş bilgisi önemsiz bir ayrıntıdır.",
+   "C seçeneği önemli bilgileri kısaca ve doğru aktarır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Önemsiz ayrıntıyı (afiş) öne çıkarıyor, sonucu vermiyor.",
+   "B": "Metinde olmayan bir bilgi (beğenme) ekliyor.",
+   "C": "Doğru.",
+   "D": "Kitapların değiş tokuş edildiğini “gösterme”ye çevirerek anlamı bozuyor."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-011",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.12",
+  "surec_bileseni": "b",
+  "konu": "Yazma",
+  "alt_konu": "Savunmada tutarsız görüşü belirleme",
+  "soru_metni": "Ahmet, okula bisikletle gidilmesini savunan yazısında şunları yazdı:\n\n“Bisiklet sağlığa yararlıdır ve havayı kirletmez. Yağmurlu günlerde yol kayganlaşsa da bisiklet sürmenin tehlikesi yoktur.”\n\nÖğretmeni, savunmadaki tutarsız ya da geçersiz görüşü bulmasını istedi.\n\nBuna göre Ahmet’in hangi görüşü geçersizdir?",
+  "siklar": {
+   "A": "Bisikletin havayı kirletmediği",
+   "B": "Bisikletin sağlığa yararlı olduğu",
+   "C": "Kaygan yolda bisiklet sürmenin tehlike taşımadığı",
+   "D": "Okula bisikletle gidilebileceği"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Hangi görüş yolun kaygan olması bilgisiyle çelişiyor?",
+  "cozum_adimlari": [
+   "Yazıda yolun kaygan olduğu kabul ediliyor.",
+   "Kaygan yolda bisiklet sürmenin tehlikesiz olduğunu söylemek bu bilgiyle çelişir ve kabul edilemez.",
+   "Diğer görüşler gerekçeleriyle tutarlıdır.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bisikletin havayı kirletmemesi geçerli bir gerekçedir.",
+   "B": "Sağlığa yararlı olması geçerli bir gerekçedir.",
+   "C": "Doğru.",
+   "D": "Okula bisikletle gitmek makul bir öneridir."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-012",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.14",
+  "surec_bileseni": "c",
+  "konu": "Yazma",
+  "alt_konu": "Gerekçeli eleştiri yazma",
+  "soru_metni": "Bora, okul kantiniyle ilgili bir eleştiri yazısı hazırlıyor. Eleştirisini yalnızca beğenmediğini söyleyerek değil, akıl yürüterek gerekçelendirmek istiyor.\n\nBu amaca göre aşağıdaki cümlelerden hangisini yazısında kullanmalıdır?",
+  "siklar": {
+   "A": "Kantin kötü bir yer olduğu için öğrenciler oradan alışveriş yapmamalı.",
+   "B": "Kantinde meyve ve süt yok; öğrenciler bu yüzden hamur işi alıyor.",
+   "C": "Kantinciyi sevmediğim için oradan alışveriş yapmak istemiyorum.",
+   "D": "Kantin benim gözümde pek güzel ve hoş bir yer değil."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Gerekçeli eleştiride bir durum ve onun sonucu somut olarak belirtilir.",
+  "cozum_adimlari": [
+   "Gerekçeli eleştiri, bir sorunu neden ve sonucuyla açıklar.",
+   "A, C ve D yalnızca kişisel beğenmemeyi dile getirir, somut sebep göstermez.",
+   "B seçeneği somut bir eksikliği ve sonucunu belirtir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Gerekçe yok; “kötü” demek yargının kendisidir.",
+   "B": "Doğru.",
+   "C": "Kişiye yönelik kişisel duygu; eleştiri konusu dışına çıkıyor.",
+   "D": "Yalnızca kişisel beğenme; gerekçe yok."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-013",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.15",
+  "surec_bileseni": "b",
+  "konu": "Yazma",
+  "alt_konu": "Deyimi bağlama uygun kullanma",
+  "soru_metni": "Aylin, sınav sonuçlarının açıklanmasını heyecan ve kaygıyla bekliyor. Bu anı anlatırken cümlesini bir deyimle zenginleştirmek istiyor:\n\n“Sonuçlar okunurken Aylin’in ______; çünkü sınavdan pek emin değildi.”\n\nBu cümlede boş bırakılan yere, bağlama uygun olarak aşağıdakilerden hangisi getirilmelidir?",
+  "siklar": {
+   "A": "yüreği ağzına geldi",
+   "B": "ağzı kulaklarına vardı",
+   "C": "burnu havaya kalktı",
+   "D": "başı göğe erdi"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Cümledeki duygu heyecan ve endişedir; sevinç ya da kibir değil.",
+  "cozum_adimlari": [
+   "Cümledeki durum: sonuç beklerken emin olmama, heyecan ve endişe.",
+   "“Yüreği ağzına gelmek” büyük heyecan ve korku duymak demektir.",
+   "Diğer deyimler sevinç ya da kibir anlatır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Çok sevinmek anlamındadır; bağlamla uyuşmaz.",
+   "C": "Kibirlenmek anlamındadır; bağlamla uyuşmaz.",
+   "D": "Çok sevinmek ve mutlu olmak anlamındadır; bağlamla uyuşmaz."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-014",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.16",
+  "surec_bileseni": "a",
+  "konu": "Yazma",
+  "alt_konu": "Örtük iletiyi atasözüyle verme",
+  "soru_metni": "Selin, arkadaşına yazdığı mektupta her gün az az kitap okuyarak zamanla çok kitap okunabileceğini doğrudan söylemeden, bir atasözüyle örtük biçimde anlatmak istiyor.\n\nSelin’in bu iletiyi vermek için aşağıdaki atasözlerinden hangisini seçmesi uygundur?",
+  "siklar": {
+   "A": "Ağaç yaşken eğilir.",
+   "B": "Komşu komşunun külüne muhtaçtır.",
+   "C": "Aç tavuk kendini arpa ambarında sanır.",
+   "D": "Damlaya damlaya göl olur."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Küçük birikimlerin zamanla büyük sonuç verdiğini anlatan atasözünü ara.",
+  "cozum_adimlari": [
+   "İleti: az az yapılan şeyler zamanla büyük bir sonuç oluşturur.",
+   "“Damlaya damlaya göl olur” küçük birikimlerin büyüğü oluşturduğunu anlatır.",
+   "Diğer atasözleri farklı iletiler verir.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Eğitimin küçük yaşta başladığını anlatır.",
+   "B": "Yardımlaşmanın gerekliliğini anlatır.",
+   "C": "Yoksulken bolluğa kavuşanın şımarmasını anlatır.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-015",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.17",
+  "surec_bileseni": "a",
+  "konu": "Yazma",
+  "alt_konu": "İkna tekniklerini belirleme",
+  "soru_metni": "Emre, okul bahçesine fidan dikilmesini isteyen bir yazı hazırlıyor. Okuyucuyu bir uzmanın görüşüne dayanarak ikna etmek istiyor.\n\nBu amaca göre aşağıdaki cümlelerden hangisini yazısında kullanmalıdır?",
+  "siklar": {
+   "A": "Yuvasız kalacak minik kuşları düşünmeyecek miyiz?",
+   "B": "Orman mühendisleri, ağaçlı bahçelerin sınıfları serinlettiğini söylüyor.",
+   "C": "Komşu okulların çoğu fidan dikti, biz de dikelim.",
+   "D": "Fidan dikmezsek okulumuz gelecekte çölleşebilir."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Hangi cümle bir alan uzmanını kaynak gösteriyor?",
+  "cozum_adimlari": [
+   "Emre uzman görüşüne dayanan bir ikna tekniği kullanacak.",
+   "B seçeneği bir meslek grubunun (orman mühendisleri) görüşünü kaynak gösterir.",
+   "A duyguya, C çoğunluğa, D korkutmaya dayanır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Duygulara seslenme tekniğidir.",
+   "B": "Doğru.",
+   "C": "Çoğunluğa dayanma tekniğidir.",
+   "D": "Korkutma tekniğidir."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-017",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.19",
+  "surec_bileseni": "b",
+  "konu": "Yazma",
+  "alt_konu": "Yazma sürecini değerlendirme ve gelişim tedbiri",
+  "soru_metni": "Öğretmen, Defne’nin yazısı için şu geri bildirimi verdi:\n\n“Fikirlerin özgün ve sözcük seçimin zengin. Ancak her paragrafta birden fazla ana fikir var; bu yüzden okuyucu konuyu takip etmekte zorlanıyor.”\n\nDefne, gelişmeye açık yönünü desteklerken güçlü yönlerini de korumak istiyor.\n\nBu amaca göre Defne hangi tedbiri almalıdır?",
+  "siklar": {
+   "A": "Özgün fikirlerini koruyup her paragrafa tek ana fikir koymak",
+   "B": "Sözcük seçimini sadeleştirip yazıdaki fikir sayısını azaltmak",
+   "C": "Paragrafları birleştirip yazıyı tek paragraf hâline getirmek",
+   "D": "Özgün fikirlerini bırakıp çok bilinen fikirleri kullanmak"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Hem güçlü yönü korumalı hem de paragraf sorununu çözmeli.",
+  "cozum_adimlari": [
+   "Güçlü yönler: özgün fikirler ve zengin sözcükler. Gelişmeye açık yön: paragrafta birden çok ana fikir.",
+   "Tedbir, güçlü yönleri bozmadan paragraf düzenini iyileştirmelidir.",
+   "A seçeneği özgün fikirleri korur ve her paragrafı tek ana fikre göre düzenler.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Güçlü yönleri (sözcük zenginliği, fikir) zayıflatır.",
+   "C": "Paragraf sorununu büyütür.",
+   "D": "Özgün fikirler güçlü yöndür; bırakmak tedbir değildir."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-001",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.3",
+  "surec_bileseni": "a",
+  "konu": "Dinleme",
+  "alt_konu": "Başlık ve ilk cümleden içerik tahmini",
+  "soru_metni": "Öğretmen, dinleme metnini okumadan önce başlığı ve ilk cümleyi söyler.\nBaşlık: ‘Arıların Dansı’\nİlk cümle: ‘Bir arı, güzel kokulu çiçeklerle dolu bir bahçe bulduğunda kovana döner ve havada kendine özgü hareketler yapar.’\n\nBaşlığa ve ilk cümleye göre metnin devamında en çok hangi konunun işlenmesi beklenir?",
+  "siklar": {
+   "A": "Arıların kışı kovanda nasıl geçirdiği ve beslendiği",
+   "B": "Bal yapımında kullanılan arıcılık araçlarının tanıtımı",
+   "C": "Arıların çiçeğin yerini hareketlerle haber vermesi",
+   "D": "Çiçeklerin mevsime göre renk değiştirmesinin nedenleri"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Başlıktaki ‘dans’ sözcüğü ile cümledeki ‘hareketler’ ve ‘bahçe bulma’ ifadelerini birlikte düşün.",
+  "cozum_adimlari": [
+   "Başlıkta ‘Arıların Dansı’ var; ilk cümlede arı çiçek bulunca havada hareketler yapıyor.",
+   "Hareketlerin çiçeğin yerini kovandaki arılara bildirmeyle ilgili olması beklenir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Metinde kış ve beslenmeden söz edilmiyor; ilk cümleyle ilgisiz.",
+   "B": "Araç gereç ipucu verilmemiş; başlık ve cümle arıların davranışını işaret ediyor.",
+   "C": "Doğru.",
+   "D": "Çiçeklerin rengi değil arının hareketi vurgulanmış."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-002",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.5",
+  "surec_bileseni": "a",
+  "konu": "Dinleme",
+  "alt_konu": "Yüzey anlam: açıkça verilen bilgi",
+  "soru_metni": "Öğretmenin okuduğu dinleme metni:\n‘Ela, kardeşi Can’a bir masal okudu. Can uyuyunca Ela lambayı söndürdü ve kapıyı yavaşça çekti. Sonra mutfağa gidip annesine yemek hazırlamada yardım etti.’\n\nBu metne göre Ela, Can uyuduktan sonra ilk olarak ne yapmıştır?",
+  "siklar": {
+   "A": "Odayı karanlık bırakıp dışarı çıkmıştır.",
+   "B": "Annesine mutfakta yardım etmiştir.",
+   "C": "Kardeşine yeni bir masal anlatmıştır.",
+   "D": "Masal kitabını rafa yerleştirmiştir."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Olayların sırasına dikkat et; ‘ilk olarak’ ifadesi kronolojiyi sorar.",
+  "cozum_adimlari": [
+   "Can uyuyunca Ela lambayı söndürdü ve kapıyı çekti.",
+   "Mutfağa gitmesi bundan sonra gerçekleşti.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Bu olay sonra gerçekleşti; sıra karıştırılmış.",
+   "C": "Masalı Can uyumadan önce okudu.",
+   "D": "Metinde kitabın rafa konduğu söylenmiyor."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-003",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.20",
+  "surec_bileseni": "a",
+  "konu": "Dinleme",
+  "alt_konu": "Gerekçe ile öneri uyumunu değerlendirme",
+  "soru_metni": "Bir öğrenci sınıfta şu konuşmayı yapar:\n‘Plastik atıklar denizlerde yüzlerce yıl bozulmadan kalır. Bu atıkların önemli bir bölümü tek kullanımlık poşetlerden oluşur. Pazara giderken bez torba kullanırsak poşet tüketimini azaltırız.’\n\nBu konuşmayı dinleyen bir öğrencinin ‘Öneri, öne sürülen gerekçeyle uyumludur.’ demesinin nedeni aşağıdakilerden hangisidir?",
+  "siklar": {
+   "A": "Konuşmacı pazara giden insan sayısını örnek olarak vermiştir.",
+   "B": "Konuşmacı denizlerin temizlenmesini devletin işi olarak görmüştür.",
+   "C": "Konuşmacı plastik üretiminin tümüyle durdurulmasını istemiştir.",
+   "D": "Poşet kullanımını azaltmak, atıkların doğada uzun kalması sorununa yöneliktir."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Önerinin, anlatılan sorunu azaltıp azaltmadığına bak.",
+  "cozum_adimlari": [
+   "Sorun: poşet gibi plastik atıkların doğada çok uzun süre kalması.",
+   "Öneri: bez torba ile poşet kullanımını azaltmak; bu, sorunun kaynağına yöneliyor.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Metinde pazara giden insan sayısı verilmemiş.",
+   "B": "Konuşmada devletin sorumluluğundan söz edilmiyor.",
+   "C": "Üretimin durdurulması istenmiyor; öneri tüketimi azaltmaya yönelik.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-004",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.21",
+  "surec_bileseni": "a",
+  "konu": "Dinleme",
+  "alt_konu": "Genellemenin dayanağını eleştirme",
+  "soru_metni": "Bir radyo programında şu konuşma dinlenir:\n‘Şehrimizdeki parkların çoğu bakımlıdır. Dün iki parkı gezdik; ikisinde de çöp göremedik. Demek ki şehrimizde park temizliği sorunu yoktur.’\n\nBu konuşmaya yöneltilebilecek en uygun eleştiri hangisidir?",
+  "siklar": {
+   "A": "Konuşmacı park temizliğinin önemsiz olduğunu savunmuştur.",
+   "B": "Sonuç, iki parkın gözlemine dayandığı için yeterince güçlü değildir.",
+   "C": "Konuşmacı görüşünü çok sayıda anket sonucuyla desteklemiştir.",
+   "D": "Konuşmanın dili, radyo programı için fazla resmî kalmıştır."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Sonuca hangi veriyle ulaşıldığına ve bu verinin sayısına bak.",
+  "cozum_adimlari": [
+   "Konuşmacı yalnızca iki parkı gezmiş ve tüm şehir için hüküm vermiş.",
+   "Az sayıda gözlemden genel sonuç çıkarmak dayanak açısından zayıftır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Konuşmacı temizliği önemsiz saymıyor, sorun olmadığını söylüyor.",
+   "B": "Doğru.",
+   "C": "Konuşmada anket yok; yalnızca iki park gezilmiş.",
+   "D": "Dil üslubu, sorulan gerekçe-sonuç ilişkisini eleştirmez."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-005",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.D.6.22",
+  "surec_bileseni": "a",
+  "konu": "Dinleme",
+  "alt_konu": "Dinlenen metindeki soruna çözüm önerme",
+  "soru_metni": "Okul müdürü sabah toplantısında şunları söyler:\n‘Bahçemizdeki çöp kutuları teneffüste hemen doluyor. Çöpler yere taşıyor ve bahçe kirleniyor. Oysa bahçede yalnızca iki çöp kutusu var.’\n\nMüdürün anlattığı soruna en uygun çözüm hangisidir?",
+  "siklar": {
+   "A": "Bahçedeki çöp kutusu sayısını artırmak",
+   "B": "Teneffüs sürelerini kısaltarak öğrencileri sınıfa almak",
+   "C": "Bahçenin kullanımını yalnızca nöbetçi öğrencilere vermek",
+   "D": "Çöp kutularını daha küçük boyutlu olanlarla değiştirmek"
+  },
+  "dogru_sik": "A",
+  "ipucu": "Sorunun nedeni olarak metinde verilen bilgiyi bul; çözüm bu nedene dönük olmalı.",
+  "cozum_adimlari": [
+   "Sorun: kutular az olduğu için dolup taşıyor.",
+   "Kutu sayısını artırmak nedeni doğrudan ortadan kaldırır.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Süreyi kısaltmak çöp birikmesinin nedenini çözmez.",
+   "C": "Bahçeyi kısıtlamak sorunun nedenine yönelik değil.",
+   "D": "Küçük kutular daha çabuk dolar, sorunu büyütür."
+  },
+  "zorluk": 1,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-006",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.9",
+  "surec_bileseni": "a",
+  "konu": "Konuşma",
+  "alt_konu": "Sözlü sunumun giriş bölümü",
+  "soru_metni": "Elif, sınıfta ‘Geri Dönüşüm’ konulu bir sözlü sunum yapacaktır. Sunumun, dinleyicilerin konuyu kolayca anlamasını sağlamasını istemektedir.\n\nElif’in sunuma başlarken aşağıdakilerden hangisini yapması en uygundur?",
+  "siklar": {
+   "A": "Dinleyicilere sırtını dönüp slayttaki yazıları okumak",
+   "B": "Konunun adını söyleyip hangi başlıklara değineceğini belirtmek",
+   "C": "Konuyla ilgisi bulunmayan uzun bir anıyı anlatmak",
+   "D": "Doğrudan soru-cevap bölümüne geçip sunumu bitirmek"
+  },
+  "dogru_sik": "B",
+  "ipucu": "İyi bir sunum girişi, dinleyiciye neyin anlatılacağını önceden haber verir.",
+  "cozum_adimlari": [
+   "Sunumun girişinde konu ve izlenecek başlıklar duyurulur.",
+   "Bu, dinleyicinin anlatılacakları takip etmesini kolaylaştırır.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Dinleyiciye dönük konuşmak gerekir; sırt dönmek sunum kuralına aykırı.",
+   "B": "Doğru.",
+   "C": "Konudan uzaklaşmak dikkati dağıtır.",
+   "D": "Sunum yapılmadan soru-cevap bölümüne geçilemez."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-007",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.10",
+  "surec_bileseni": "a",
+  "konu": "Konuşma",
+  "alt_konu": "Tahmine dayalı konuşma",
+  "soru_metni": "Deniz, yarınki sınıf gezisinden önce hava durumu raporuna bakmıştır. Rapora göre sabah saatlerinde yağmur beklenmektedir. Deniz, sınıf arkadaşlarına şöyle seslenecektir:\n‘Rapordaki yağış tahminine göre ……’\n\nDeniz’in tahminden yararlanarak konuşmasını sürdürmesi için boşluğa hangisi getirilmelidir?",
+  "siklar": {
+   "A": "yanımıza yalnızca güneş gözlüğü almamız yeterli olur.",
+   "B": "gezi planı hakkında kimsenin bir bilgisi bulunmuyor.",
+   "C": "yağmur yağsa da yağmasa da hazırlık gerekmeyecek.",
+   "D": "yanımıza şemsiye ve yedek ayakkabı almamız iyi olur."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Tahmin edilen durumla uyumlu bir hazırlık düşün.",
+  "cozum_adimlari": [
+   "Tahmin: sabah yağmur yağacak.",
+   "Bu duruma uygun hazırlık şemsiye ve yedek ayakkabı almaktır.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Güneş gözlüğü yağmur tahminiyle çelişir.",
+   "B": "Konuşma tahmine dayanmıyor, bilgisizliği dile getiriyor.",
+   "C": "Tahmini yok sayıyor.",
+   "D": "Doğru."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-008",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.15",
+  "surec_bileseni": "a",
+  "konu": "Konuşma",
+  "alt_konu": "Değerlendirmeyi gerekçeyle sözlü ifade etme",
+  "soru_metni": "Mert, sınıfta okuduğu kitabı arkadaşlarına anlatacaktır. Kitabın kahramanı, karşısına çıkan zorluklarda yılmamakta ve çevresinden yardım istemektedir. Mert, kitabı kahramanı üzerinden değerlendirecektir.\n\nMert’in aşağıdaki cümlelerinden hangisi değerlendirmesini gerekçesiyle birlikte sunmaktadır?",
+  "siklar": {
+   "A": "Kitabı sevdim, bence siz de okumalısınız, çok güzel bir kitap.",
+   "B": "Kitap, otuz sayfa olduğu için bir günde okunabilecek kadar kısa.",
+   "C": "Kahramanı örnek buldum; zorlukta pes etmeyip yardım istemeyi öğretiyor.",
+   "D": "Kitabı bir arkadaşım önerdi ve kütüphanemizden alarak okudum."
+  },
+  "dogru_sik": "C",
+  "ipucu": "Değerlendirme, bir yargı ile onun nedenini birlikte içerir.",
+  "cozum_adimlari": [
+   "Gerekçeli değerlendirmede hem bir yargı hem de nedeni bulunur.",
+   "C seçeneğinde ‘örnek buldum’ yargısı, kahramanın davranışıyla açıklanmış.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Beğeniyi söylüyor ama nedenini vermiyor.",
+   "B": "Kitabın uzunluğunu bildiriyor, değerlendirme değil.",
+   "C": "Doğru.",
+   "D": "Kitabın nasıl bulunduğunu anlatıyor, değerlendirme değil."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-009",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.17",
+  "surec_bileseni": "a",
+  "konu": "Konuşma",
+  "alt_konu": "Yapıcı sözlü eleştiri",
+  "soru_metni": "Ali’nin sınıftaki sunumunda bilgiler doğruydu. Ancak Ali çok hızlı konuştu ve gösterdiği görseller küçük kaldığı için arka sıralardan seçilemedi. Sunumdan sonra bir arkadaşı Ali’yi sözlü olarak eleştirecektir.\n\nArkadaşının aşağıdaki cümlelerinden hangisi yapıcı bir eleştiridir?",
+  "siklar": {
+   "A": "Bilgilerin doğruydu; daha yavaş konuşup görselleri büyütürsen daha iyi olur.",
+   "B": "Sunumunu beğenmedim, bir daha böyle bir sunum hazırlama.",
+   "C": "Sunumun güzeldi, bu hâliyle bırakman en doğrusu olur.",
+   "D": "Görseller küçük kaldı çünkü okul bilgisayarlarının ekranları eskiydi."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Yapıcı eleştiri, eksiği belirtir ve nasıl düzeltileceğini söyler.",
+  "cozum_adimlari": [
+   "Eleştiri, hem iyi yönü hem de eksiği gerekçesiyle belirtmelidir.",
+   "A seçeneğinde eksikler (hız, küçük görsel) ve çözüm önerisi var.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Yıkıcı; neden ve öneri içermiyor.",
+   "C": "Eksiklere değinmiyor, eleştiri sayılmaz.",
+   "D": "Eksikliğe bahane buluyor, öneri sunmuyor."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-010",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.K.6.19",
+  "surec_bileseni": "b",
+  "konu": "Konuşma",
+  "alt_konu": "Düşünceyi geliştirme yolları",
+  "soru_metni": "Zeynep, ‘Kitap Okumanın Yararları’ konulu konuşmasında şunları söylemiştir:\n‘Kitap okuyan kişinin söz varlığı gelişir. Örneğin her gün yirmi sayfa okuyan bir öğrenci yıl sonunda onlarca yeni sözcük öğrenmiş olur.’\n\nZeynep, düşüncesini geliştirirken aşağıdakilerden hangisinden yararlanmıştır?",
+  "siklar": {
+   "A": "Tanımlama",
+   "B": "Karşılaştırma",
+   "C": "Örnekleme",
+   "D": "Tanık gösterme"
+  },
+  "dogru_sik": "C",
+  "ipucu": "‘Örneğin’ sözcüğünden sonra gelen cümlenin işlevine bak.",
+  "cozum_adimlari": [
+   "Zeynep, genel yargısını belirli bir öğrenci örneğiyle somutlaştırıyor.",
+   "Bu yol örneklemedir.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bir kavram tanımlanmıyor.",
+   "B": "İki şey arasında benzerlik ya da fark kurulmuyor.",
+   "C": "Doğru.",
+   "D": "Bir ünlü kişinin sözüne başvurulmuyor."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-011",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.22",
+  "surec_bileseni": "a",
+  "konu": "Okuma",
+  "alt_konu": "Metnin iletisini değerlendirme",
+  "soru_metni": "Bir köy okulunda öğrenciler, bahçeye her biri bir fidan dikti. Fidanları her gün sırayla suladılar ve çevrelerini temizlediler. Yıllar geçti; fidanlar geniş gölgeli ağaçlara dönüştü. Köyün çocukları teneffüslerini artık o ağaçların altında geçiriyor.\n\nBu metinden çıkarılabilecek en uygun değerlendirme hangisidir?",
+  "siklar": {
+   "A": "Fidan dikme işi öğretmenlere bırakılmalıdır.",
+   "B": "Düzenli emek, ileride herkese yarayan sonuçlar verir.",
+   "C": "Köy okullarında teneffüs süreleri uzatılmalıdır.",
+   "D": "Ağaçların asıl yararı gölge sağlamasıdır."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Öğrencilerin her gün yaptıkları işin yıllar sonraki sonucuna bak.",
+  "cozum_adimlari": [
+   "Öğrenciler fidanlara düzenli bakım verdi.",
+   "Sonunda ağaçlar tüm çocuklara gölge sağladı.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Metinde öğrencilerin kendi emeği vurgulanıyor, öğretmen değil.",
+   "B": "Doğru.",
+   "C": "Teneffüs süresi metnin konusu değil.",
+   "D": "Metin, ağaçların yararını değil emeğin sonucunu anlatıyor."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-012",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.23",
+  "surec_bileseni": "a",
+  "konu": "Okuma",
+  "alt_konu": "Tek örnekten genelleme yapmanın eleştirisi",
+  "soru_metni": "Bir gazete köşesinde şu yazı yer almıştır:\n‘Okul kantinlerinde satılan bütün yiyecekler sağlıksızdır. Yazarın oğlu geçen hafta kantinden aldığı tostu yedikten sonra midesinin ağrıdığını söyledi. Bu nedenle kantinler kapatılmalıdır.’\n\nBu yazıya yönelik en uygun eleştiri hangisidir?",
+  "siklar": {
+   "A": "Yazının dili çok süslü olduğu için konu anlaşılmamaktadır.",
+   "B": "Yazar, kantin çalışanlarının görüşlerine geniş yer vermiştir.",
+   "C": "Yazının başlığı ile içeriği arasında hiçbir bağ bulunmamaktadır.",
+   "D": "Yazar, tek bir olaya dayanarak bütün yiyecekler için kesin hüküm vermiştir."
+  },
+  "dogru_sik": "D",
+  "ipucu": "Yazarın hangi kanıta dayanarak ne kadar geniş bir sonuca vardığına bak.",
+  "cozum_adimlari": [
+   "Yazar yalnızca oğlunun yaşadığı tek olayı kanıt göstermiş.",
+   "Bu tek olaydan bütün kantin yiyecekleri hakkında genelleme yapmış.",
+   "Doğru cevap D seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Yazının dili süslü değil, sade.",
+   "B": "Kantin çalışanlarının görüşü yazıda yok.",
+   "C": "Yazıda başlık verilmemiş; bağ yok iddiası dayanaksız.",
+   "D": "Doğru."
+  },
+  "zorluk": 3,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-013",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.O.6.24",
+  "surec_bileseni": "a",
+  "konu": "Okuma",
+  "alt_konu": "Metindeki soruna çözüm önerme",
+  "soru_metni": "Mahallemizdeki kütüphane akşam beşte kapanıyor. Okuldan çıkan öğrenciler ise çoğunlukla beş buçukta eve ulaşıyor. Bu yüzden birçok öğrenci, kütüphaneden yararlanamadan evine dönüyor.\n\nBu metinde anlatılan soruna en uygun çözüm hangisidir?",
+  "siklar": {
+   "A": "Kütüphanedeki kitapların yenileriyle değiştirilmesi",
+   "B": "Okul çıkışında ücretli bir kurs açılması",
+   "C": "Kütüphane çalışma saatlerinin akşama doğru uzatılması",
+   "D": "Öğrencilere evde okumaları için ödev verilmesi"
+  },
+  "dogru_sik": "C",
+  "ipucu": "Sorunun nedeni saatlerin uyuşmamasıdır.",
+  "cozum_adimlari": [
+   "Sorun: kütüphane, öğrenciler gelmeden kapanıyor.",
+   "Çalışma saatlerini uzatmak öğrencilerin gelebilmesini sağlar.",
+   "Doğru cevap C seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Kitapların yenilenmesi kapanış saati sorununu çözmez.",
+   "B": "Kurs, kütüphaneden yararlanmayı sağlamaz.",
+   "C": "Doğru.",
+   "D": "Evde okuma, kütüphaneye erişim sorununu çözmez."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cikarim",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-014",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.11",
+  "surec_bileseni": "a",
+  "konu": "Yazma",
+  "alt_konu": "Gerekçeli yazılı değerlendirme",
+  "soru_metni": "Selim, izlediği belgeseli değerlendiren kısa bir yazı yazacaktır. Belgeselde bir kuş türünün göç yolları anlatılmakta, görüntüler net, anlatım ise sade bir dille yapılmaktadır.\n\nSelim’in yazısına yerleştirebileceği, değerlendirmesini gerekçesiyle sunan cümle hangisidir?",
+  "siklar": {
+   "A": "Belgesel, göç yollarını net görüntülerle sade biçimde anlattığı için öğreticidir.",
+   "B": "Belgesel bence güzeldir çünkü ben kuşları çok severim.",
+   "C": "Belgeselde bir kuş türünün göç yolları anlatılmaktadır.",
+   "D": "Belgeseli akşam yemeğinden sonra ailemle birlikte izledim."
+  },
+  "dogru_sik": "A",
+  "ipucu": "Değerlendirme bir yargı ve o yargının nedenini içerir.",
+  "cozum_adimlari": [
+   "Yazılı değerlendirmede görüş, belgeselin özelliklerine dayandırılmalıdır.",
+   "A seçeneğinde ‘öğreticidir’ yargısı, net görüntü ve sade anlatımla temellendirilmiş.",
+   "Doğru cevap A seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Doğru.",
+   "B": "Gerekçe kişisel sevgi; belgeselin özelliğine dayanmıyor.",
+   "C": "Konuyu özetliyor, değerlendirme yok.",
+   "D": "İzleme koşulunu anlatıyor, değerlendirme yok."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-E15-015",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.13",
+  "surec_bileseni": "a",
+  "konu": "Yazma",
+  "alt_konu": "Yapıcı yazılı eleştiri",
+  "soru_metni": "Bir arkadaşınızın sınıf gazetesi için yazdığı yazıda okul spor etkinlikleri anlatılmıştır. Yazının başlığı ‘Kütüphane Haftası’ biçimindedir ve iki paragrafta aynı bilgi tekrar edilmiştir. Yazıyı yazılı olarak eleştireceksiniz.\n\nAşağıdakilerden hangisi bu yazı için uygun, yapıcı bir eleştiridir?",
+  "siklar": {
+   "A": "Yazı kötü olduğundan yazarın bir daha yazmaması gerekir.",
+   "B": "Yazı bilgilendirici; ancak başlık konuya uygun seçilmeli, tekrarlar çıkarılmalı.",
+   "C": "Yazı gazetenin ikinci sayfasında yer almış olduğu için dikkat çekmemiştir.",
+   "D": "Spor etkinlikleri her öğrenci için eğlenceli ve yararlı etkinliklerdir."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Eleştiri; iyi yönü, eksikleri ve düzeltme önerisini birlikte içermelidir.",
+  "cozum_adimlari": [
+   "Yazıda başlık-içerik uyumsuzluğu ve tekrar var.",
+   "B seçeneği olumlu yönü belirtir, eksikleri gösterir ve düzeltme önerir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Gerekçesiz ve kırıcı.",
+   "B": "Doğru.",
+   "C": "Sayfa yeri yazının içeriğiyle ilgili değil.",
+   "D": "Yazıyı eleştirmiyor, spor hakkında genel yargı veriyor."
+  },
+  "zorluk": 2,
+  "soru_tipi": "cozumleme",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-E01",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.1",
+  "surec_bileseni": "a",
+  "konu": "Yazma süreci",
+  "alt_konu": "Yazılı etkileşimde selamlama ve hitap",
+  "soru_metni": "Elif, okul gezisinin saatini öğrenmek için sınıf öğretmeni Sevim Hanım'a e-posta yazacaktır. Elif'in e-postaya başlarken yazacağı selamlama ve hitap ifadeleri öğretmene uygun olmalıdır.\n\nAşağıdakilerden hangisi bu e-postanın başlangıcı için en uygun olanıdır?",
+  "siklar": {
+   "A": "Merhaba Sevim, nasılsın? Gezinin saatini söyler misin?",
+   "B": "Sevgili öğretmenim, gezinin saatini öğrenebilir miyim?",
+   "C": "Selam hocam, naber? Gezinin saatini hemen yaz bana.",
+   "D": "Hey Sevim Hanım, gezinin saatini yazmazsan gelmem."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Öğretmene yazılan bir metinde hitap ve selamlama nazik ve saygılı olmalıdır.",
+  "cozum_adimlari": [
+   "Alıcı öğretmendir; bu yüzden hitap saygılı ve nazik olmalıdır.",
+   "A seçeneği öğretmeni sadece adıyla anıp arkadaş gibi hitap ediyor.",
+   "C ve D seçeneklerinde gündelik konuşma dili ve emir ya da tehdit tonu var.",
+   "B seçeneğinde saygılı hitap, nazik kapanış ve kibar bir istek bulunuyor.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Öğretmene sadece adıyla seslenmek ve arkadaş gibi yazmak hitap uygunluğunu bozar.",
+   "B": "Doğru.",
+   "C": "'Selam hocam, naber?' gündelik konuşma dilidir; 'yaz bana' emir tonundadır.",
+   "D": "'Hey' ile başlamak ve tehdit içermek yazışma nezaketine aykırıdır."
+  },
+  "zorluk": 1,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ },
+ {
+  "id": "TR6-Y-E02",
+  "sinif": 6,
+  "ders": "Türkçe",
+  "mufredat_surum": "Maarif Modeli Ortaokul Türkçe DÖP",
+  "kazanim_kodu": "T.Y.6.18",
+  "surec_bileseni": "a",
+  "konu": "Yazma süreci",
+  "alt_konu": "Bağlaç olan de/da'nın yazımı",
+  "soru_metni": "Mert, sınıf gazetesi için okul gezisini anlatan kısa bir yazı hazırlıyor. Yazısında bağlaç olan \"de\"nin yazımına dikkat etmek istiyor.\n\nAşağıdaki cümlelerden hangisinde bağlaç olan \"de\" doğru yazılmıştır?",
+  "siklar": {
+   "A": "Ben müzeye gittim, Ayşe'de bizimle geldi.",
+   "B": "Ben müzeye gittim, Ayşe de bizimle geldi.",
+   "C": "Ben müzeye gittim, Ayşede bizimle geldi.",
+   "D": "Ben müzeye gittim, Ayşe da bizimle geldi."
+  },
+  "dogru_sik": "B",
+  "ipucu": "Bağlaç olan de/da, önündeki sözcükten ayrı yazılır ve kesme işaretiyle ayrılmaz; ünlü uyumuna da uyar.",
+  "cozum_adimlari": [
+   "Cümledeki \"de\", 'Ayşe de' anlamında 'ayrıca, aynı şekilde' demektir; bu yüzden bağlaçtır.",
+   "Bağlaç olan de/da ayrı yazılır ve kesme işaretiyle ayrılmaz.",
+   "A seçeneğinde kesme işareti kullanılmış, C seçeneğinde bitişik yazılmıştır.",
+   "D seçeneğinde ünlü uyumuna aykırı olarak \"da\" yazılmıştır; 'Ayşe' sözcüğünden sonra \"de\" gelir.",
+   "Doğru cevap B seçeneğidir."
+  ],
+  "celdirici_gerekce": {
+   "A": "Bağlaç olan de kesme işaretiyle ayrılmaz; kesme bulunma ekinde özel ada gelen ekler içindir.",
+   "B": "Doğru.",
+   "C": "Bağlaç olan de önündeki sözcüğe bitişik yazılmaz.",
+   "D": "Ayrı yazılmış ama ünlü uyumuna uymayan \"da\" kullanılmış; bu sözcükte \"de\" yazılmalıdır."
+  },
+  "zorluk": 2,
+  "soru_tipi": "bilgi",
+  "olumsuzluk": false,
+  "baglam_islevi": "gerekli",
+  "gorsel_gerekli": false,
+  "kaynak_turu": "ozgun_ai"
+ }
+]

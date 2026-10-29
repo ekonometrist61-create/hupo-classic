@@ -1,0 +1,66 @@
+[
+ {
+  "orijinal": {
+   "t": "zit_anlamli",
+   "s": 2,
+   "z": 1,
+   "h": {
+    "kelime": "başlamak",
+    "anlam": "Bir işe ilk adımı atmak.",
+    "tur": "kelime",
+    "sozcuk_turu": "fiil"
+   },
+   "q": "“başlamak” sözcüğünün zıt anlamlısı hangisidir?",
+   "o": [
+    "bitirmek",
+    "denemek",
+    "izlemek"
+   ],
+   "d": 0,
+   "a": "Başlamanın zıddı bitirmektir. Denemek ve izlemek zıt anlamlı değildir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 0,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 0,
+   "sorun": "Geçişlilik uyumsuz: 'başlamak' geçişsiz kullanımda zıttı 'bitmek'; 'bitirmek' geçişli 'başlatmak'ın karşılığı. Kabul edilebilir ama 'bitmek' daha doğru.",
+   "tek": true
+  }
+ },
+ {
+  "orijinal": {
+   "t": "zit_anlamli",
+   "s": 2,
+   "z": 2,
+   "h": {
+    "kelime": "sağlam",
+    "anlam": "Kolay kolay kırılmayan, bozulmayan.",
+    "tur": "kelime",
+    "sozcuk_turu": "sifat"
+   },
+   "q": "“sağlam” sözcüğünün zıt anlamlısı hangisidir?",
+   "o": [
+    "yeni",
+    "kırık",
+    "sert"
+   ],
+   "d": 1,
+   "a": "Sağlamın zıddı kırıktır. Yeni ve sert zıt anlamlı değildir.",
+   "ip": null
+  },
+  "gemini": {
+   "cevap": 1,
+   "sorun": "",
+   "tek": true
+  },
+  "claude": {
+   "cevap": 1,
+   "sorun": "TDK'de 'sağlam' sözcüğünün zıt anlamlısı 'çürük'; 'kırık' yalnız bağlamsal karşıt. Doğru şık 'çürük' yapılmalı ya da soruya bağlam eklenmeli.",
+   "tek": true
+  }
+ }
+]

@@ -65,14 +65,14 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 471,
+        "kelime_sayisi": 470,
         "tahmini_sure_dk": 6,
         "sayfa_sayisi": 6,
         "soru_sayisi": 4,
@@ -90,7 +90,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Akıllı çanta her soruyu çözüyor. Deniz neden kendi cevabını bulmak istedi?",
+    "tanitim": "Akıllı çanta her soruyu çözüyor. {kahraman} neden kendi cevabını bulmak istedi?",
     "durum": "taslak",
     "fis_kodu": "HR-034"
   },
@@ -124,7 +124,7 @@
         },
         {
           "t": "metin",
-          "v": " güldü. Fakat okula gidince işler karıştı. Öğretmeni problem çözmesini istediğinde çanta hemen masasından seslendi:\n\n\"Cevap kırk sekiz! Açıklaması için bir tuşa basınız!\"\n\nSınıf gülüşmeye başladı. Öğretmen, \""
+          "v": " güldü. Fakat okula gidince işler karıştı. Öğretmen problem çözmesini istediğinde çanta hemen masasından seslendi:\n\n\"Cevap kırk sekiz! Açıklaması için bir tuşa basınız!\"\n\nSınıf gülüşmeye başladı. Öğretmen, \""
         },
         {
           "t": "kahraman",
@@ -140,7 +140,7 @@
         },
         {
           "t": "metin",
-          "v": " cevap veremedi. Çünkü işlemi hiç denememişti. Teneffüste arkadaşı "
+          "v": " cevap veremedi. Çünkü işlemi hiç denememişti. Teneffüste "
         },
         {
           "t": "yoldas",
@@ -316,7 +316,7 @@
         },
         {
           "t": "metin",
-          "v": " ona iki farklı kâğıt gösterdi. Birinde çantanın hazırladığı kusursuz cevaplar, diğerinde kendi silgileriyle düzelttiği işlemler vardı. \"İlkine bakınca hiçbir şey hatırlamıyorum,\" dedi. \"İkincisini yaparken iki kez yanıldım. Ama nerede yanıldığımı gördüğüm için artık yöntemi biliyorum.\" Arkadaşı, \"Demek hata yapmak bazen işe yarıyor,\" deyince öğretmen başını salladı. Bu konuşma serginin en çok ilgi gören kısmı oldu.\n\nGösteri bitince öğretmeni "
+          "v": " ona iki farklı kâğıt gösterdi. Birinde çantanın hazırladığı kusursuz cevaplar, diğerinde kendi silgileriyle düzelttiği işlemler vardı. \"İlkine bakınca hiçbir şey hatırlamıyorum,\" dedi. \"İkincisini yaparken iki kez yanıldım. Ama nerede yanıldığımı gördüğüm için artık yöntemi biliyorum.\" Çocuk, \"Demek hata yapmak bazen işe yarıyor,\" deyince öğretmen başını salladı. Bu konuşma serginin en çok ilgi gören kısmı oldu.\n\nGösteri bitince öğretmen "
         },
         {
           "t": "kahraman",
@@ -378,55 +378,55 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kırk sekiz"
-        },
-        {
-          "id": "B",
           "metin": "Yirmi dört"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Altmış"
+        },
+        {
+          "id": "C",
+          "metin": "Kırk sekiz"
         },
         {
           "id": "D",
           "metin": "On iki"
         }
       ],
-      "dogru": "A",
+      "dogru": "C",
       "aciklama": "Çanta, işlemi açıklamadan “Cevap kırk sekiz!” dedi."
     },
     {
       "id": "s2",
       "beceri": "cikarim",
       "dayanak_sayfa": 2,
-      "metin": "Deniz neden çantanın hızlı çözmesini her zaman istemedi?",
+      "metin": "Kahraman neden çantanın hızlı çözmesini her zaman istemedi?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Hızlı çözüm, kendi düşünmesini ve öğrenmesini engelliyordu"
+          "metin": "Çanta her zaman yanlış cevap veriyordu"
         },
         {
           "id": "B",
-          "metin": "Çanta yavaş çalışıyordu"
+          "metin": "Ödevleri çok sevdiği için hep geç bitiriyordu"
         },
         {
           "id": "C",
-          "metin": "Ödevi çok sevdiği için"
+          "metin": "Hızlı çözüm, kendi düşünmesini ve öğrenmesini engelliyordu"
         },
         {
           "id": "D",
-          "metin": "Öğretmen kızmıştı"
+          "metin": "Öğretmen, ödevini hiç kontrol etmediği için"
         }
       ],
-      "dogru": "A",
-      "aciklama": "Deniz, kendi cevabını bulmanın öğrenmek için önemli olduğunu anladı."
+      "dogru": "C",
+      "aciklama": "Kahraman, kendi cevabını bulmanın öğrenmek için önemli olduğunu anladı."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 3,
-      "metin": "Elif'in sözüne göre önemli olan nedir?",
+      "metin": "Yoldaşın sözüne göre önemli olan nedir?",
       "secenekler": [
         {
           "id": "A",
@@ -434,15 +434,15 @@
         },
         {
           "id": "B",
-          "metin": "Çantanın hızlı olması"
+          "metin": "Çantanın her zaman hızlı çalışması"
         },
         {
           "id": "C",
-          "metin": "Ödevin hiç yapılmaması"
+          "metin": "Ödevin hiçbir şekilde yapılmaması"
         },
         {
           "id": "D",
-          "metin": "Okulun kapanması"
+          "metin": "Okulun erken kapanıp tatil olması"
         }
       ],
       "dogru": "A",
@@ -456,22 +456,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Birden fazla arasından seçilebilecek durum"
+          "metin": "Bilgisayarda bir tuşa basılarak yapılan işlem"
         },
         {
           "id": "B",
-          "metin": "Bir tuş"
+          "metin": "Birden fazla arasından seçilebilecek durum"
         },
         {
           "id": "C",
-          "metin": "Bir sınıf"
+          "metin": "Derslerin yapıldığı, sıraların bulunduğu yer"
         },
         {
           "id": "D",
-          "metin": "Bir ödev"
+          "metin": "Öğrencinin evde yapması gereken yazılı görev"
         }
       ],
-      "dogru": "A",
+      "dogru": "B",
       "aciklama": "Seçenek, birkaç olanağın her biridir."
     }
   ],

@@ -32,12 +32,12 @@ etiketler:
     - {id: deyim_hr021, tur: idiom, etiket: "Sözünü kesmek", yuva: hr021_sozunu_kesmek, islev: application}
     - {id: kavram_hr021, tur: concept, etiket: "Ortak hafıza", islev: application}
   kanit_duzeyi: C
-  program_surumu: "TYMM 2026-27 (4. sınıf; okuma evresi insan editörce kontrol edilecek)"
+  program_surumu: "Önceki program (4. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)"
   denetim: {ajan_a: pending, ajan_b: pending, insan: pending}
 sorular:
-  - {id: s1, beceri: hatirlama, dayanak_sayfa: 4, metin: "Sandıktan ne çıktı?", secenekler: [{id: A, metin: "Dört küçük defter, fotoğraflar ve kuru tohum"}, {id: B, metin: "Altın ve gümüş"}, {id: C, metin: "Eski haritalar"}, {id: D, metin: "Bir kitap ve bir anahtar"}], dogru: A, aciklama: "Sandıkta altın değil, defterler, fotoğraflar ve tohum çıktı."}
-  - {id: s2, beceri: cikarim, dayanak_sayfa: 5, metin: "Ömer neden hayal kırıklığına uğradı?", secenekler: [{id: A, metin: "Sandıkta altın çıkmadığı için"}, {id: B, metin: "Şifreyi çözemedikleri için"}, {id: C, metin: "Görevlinin kızdığı için"}, {id: D, metin: "Tohumların çok büyük olduğu için"}], dogru: A, aciklama: "Ömer altın bekliyordu ama içinden değerli bir hatıra çıktı."}
-  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "Ece'nin sandık için yazdığı cümleye göre en değerli şey nedir?", secenekler: [{id: A, metin: "İnsanların birlikte biriktirdiği anılar"}, {id: B, metin: "Altın ve gümüş"}, {id: C, metin: "Eski haritalar"}, {id: D, metin: "Kilitli bir kutu"}], dogru: A, aciklama: "Ece'ye göre sandığın en değerli şifresi birlikte biriktirilen anılardır."}
+  - {id: s1, beceri: hatirlama, dayanak_sayfa: 4, metin: "Sandıktan ne çıktı?", secenekler: [{id: A, metin: "Altın ve gümüş"}, {id: B, metin: "Eski haritalar"}, {id: C, metin: "Bir kitap ve bir anahtar"}, {id: D, metin: "Dört küçük defter, fotoğraflar ve kuru tohum"}], dogru: D, aciklama: "Sandıkta altın değil, defterler, fotoğraflar ve tohum çıktı."}
+  - {id: s2, beceri: cikarim, dayanak_sayfa: 5, metin: "Yoldaş neden hayal kırıklığına uğradı?", secenekler: [{id: A, metin: "Şifreyi çözemedikleri için"}, {id: B, metin: "Görevlinin kızdığı için"}, {id: C, metin: "Tohumların çok büyük olduğu için"}, {id: D, metin: "Sandıkta altın çıkmadığı için"}], dogru: D, aciklama: "Yoldaş altın bekliyordu ama içinden değerli bir hatıra çıktı."}
+  - {id: s3, beceri: yorumlama, dayanak_sayfa: 5, metin: "Kahramanın sandık için yazdığı cümleye göre en değerli şey nedir?", secenekler: [{id: A, metin: "Altın ve gümüş"}, {id: B, metin: "Eski haritalar"}, {id: C, metin: "Kilitli bir kutu"}, {id: D, metin: "İnsanların birlikte biriktirdiği anılar"}], dogru: D, aciklama: "Kahramana göre sandığın en değerli şifresi birlikte biriktirilen anılardır."}
   - {id: s4, beceri: sozcuk_baglami, dayanak_sayfa: 2, metin: "Metinde geçen albüm ne demektir?", secenekler: [{id: A, metin: "Fotoğrafların saklandığı kitap"}, {id: B, metin: "Bir tür sandık"}, {id: C, metin: "Okulun bahçesi"}, {id: D, metin: "Eski bir harita"}], dogru: A, aciklama: "Albüm, fotoğrafların yerleştirilip saklandığı defter benzeri bir kitaptır."}
 deyim_cumleleri:
   hr021_sozunu_kesmek: "{yoldas:yalin|bir arkadaş} sözünü kesti: “Peki ‘uzakları yakın eden’ neden dalga olsun?”"
@@ -58,8 +58,6 @@ Albümün kenarında ayrıca dört farklı el yazısı vardı. Güneş fotoğraf
 ---
 @omurga
 {yoldas:yalin|bir arkadaş} sandığı açmak için sabırsızlanıyordu. “Bir denesek ne olur? Belki doğru şekil kendiliğinden oturur.” Görevli, parçaları zorlamanın eski kartonları kırabileceğini hatırlattı. Dört arkadaş masanın üzerinde kâğıttan bir sandık resmi çizdi, şekilleri önce oraya yerleştirdi. Bir şeyin cevabını bulmak için her zaman asıl nesneyi kurcalamak gerekmediğini keşfettiler.
-
-Kerem, dört cümleyi fotoğraflarla eşleştirmek istedi.
 
 Kerem, dört cümleyi fotoğraflarla eşleştirmek istedi. “Bizi ısıtan güneş. Büyümemizi sağlayan yaprak,” dedi.[[deyim:hr021_sozunu_kesmek]]
 

@@ -8,6 +8,7 @@ import { useTranslations } from "next-intl";
 
 import { createClient } from "@/utils/supabase/client";
 import ErrorNote from "./ErrorNote";
+import KelimeIncelemeKuyrugu from "./KelimeIncelemeKuyrugu";
 import KelimeSozlukPanel from "./KelimeSozlukPanel";
 import ModalShell from "./ModalShell";
 import { cardClass, inputClass, labelClass, linkBtn, outlineBtn, primaryBtn, tdClass, thClass } from "./styles";
@@ -61,8 +62,22 @@ interface SoruForm {
   aciklama: string;
 }
 
+interface TopluSonuc {
+  kuru: boolean;
+  yayinlanan: number;
+  atlanan: { id: string; neden: string }[];
+}
+
 const DURUMLAR: KelimeDurum[] = ["taslak", "incelemede", "yayinda", "arsiv"];
-const ILISKILER: KelimeIliskiTuru[] = ["es_anlamli", "zit_anlamli", "es_sesli"];
+const ILISKILER: KelimeIliskiTuru[] = [
+  "es_anlamli",
+  "zit_anlamli",
+  "es_sesli",
+  "deyim",
+  "atasozu",
+  "sozcuk_turu",
+  "baglamda_anlam",
+];
 const SINIFLAR = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 const BOS_FORM: SoruForm = {
@@ -102,6 +117,9 @@ export default function KelimeEvreniManager() {
   const [saving, setSaving] = useState(false);
   const [formError, setFormError] = useState<string | null>(null);
   const [islemde, setIslemde] = useState<string | null>(null);
+  const [secili, setSecili] = useState<Set<string>>(new Set());
+  const [topluIslemde, setTopluIslemde] = useState(false);
+  const [mesaj, setMesaj] = useState<string | null>(null);
 
   const reload = useCallback(() => setReloadKey((k) => k + 1), []);
 
@@ -123,6 +141,7 @@ export default function KelimeEvreniManager() {
         const veri = liste.data as { toplam: number; satirlar: KelimeSoruSatiri[] };
         setToplam(veri.toplam);
         setSatirlar(veri.satirlar ?? []);
+        setSecili(new Set());
         setMetrik(metrikSonuc.data as Metrik);
         setAnlamlar((anlamSonuc.data ?? []) as AnlamSecenegi[]);
       }
@@ -251,8 +270,78 @@ export default function KelimeEvreniManager() {
     }
   };
 
+  const secimDegistir = (id: string, secildi: boolean) =>
+    setSecili((onceki) => {
+      const yeni = new Set(onceki);
+      if (secildi) yeni.add(id);
+      else yeni.delete(id);
+      return yeni;
+    });
+
+  const tumunuSecili = satirlar.length > 0 && satirlar.every((s) => secili.has(s.id));
+
+  const tumunuSecDegistir = (secildi: boolean) =>
+    setSecili(secildi ? new Set(satirlar.map((s) => s.id)) : new Set());
+
+  const topluYayinla = async () => {
+    const ids = [...secili];
+    if (ids.length === 0) return;
+    if (ids.length > 200) return setError(t("toplu.limit"));
+    setError(null);
+    setMesaj(null);
+    setTopluIslemde(true);
+    const supabase = createClient();
+    const kuru = await supabase.rpc("kelime_toplu_yayinla", { p_ids: ids, p_kuru: true });
+    if (kuru.error) {
+      setTopluIslemde(false);
+      return setError(t(`hatalar.${hataAnahtari(kuru.error.message)}`));
+    }
+    const ozet = kuru.data as TopluSonuc;
+    if (ozet.yayinlanan === 0) {
+      setTopluIslemde(false);
+      return setMesaj(t("toplu.yayinlanabilirYok", { atlanir: ozet.atlanan.length }));
+    }
+    if (!window.confirm(t("toplu.yayinKuruOzet", { yayinlanabilir: ozet.yayinlanan, atlanir: ozet.atlanan.length }))) {
+      setTopluIslemde(false);
+      return;
+    }
+    const sonuc = await supabase.rpc("kelime_toplu_yayinla", { p_ids: ids, p_kuru: false });
+    setTopluIslemde(false);
+    if (sonuc.error) return setError(t(`hatalar.${hataAnahtari(sonuc.error.message)}`));
+    const s = sonuc.data as TopluSonuc;
+    setMesaj(t("toplu.yayinSonuc", { yayinlandi: s.yayinlanan, atlandi: s.atlanan.length }));
+    reload();
+  };
+
+  const yayindanKaldir = async () => {
+    const hedefler = satirlar.filter((s) => secili.has(s.id) && s.durum === "yayinda").map((s) => s.id);
+    setError(null);
+    setMesaj(null);
+    if (hedefler.length === 0) return setMesaj(t("toplu.kaldirYok"));
+    if (!window.confirm(t("toplu.kaldirOnay", { sayi: hedefler.length }))) return;
+    setTopluIslemde(true);
+    const supabase = createClient();
+    let kaldirildi = 0;
+    let atlandi = secili.size - hedefler.length;
+    // 10'arlı gruplar; hata alan kayıt atlanır, işlem durmaz
+    for (let i = 0; i < hedefler.length; i += 10) {
+      const grup = hedefler.slice(i, i + 10);
+      const sonuclar = await Promise.allSettled(
+        grup.map((id) => supabase.rpc("kelime_soru_durum_degistir", { p_id: id, p_hedef: "arsiv" })),
+      );
+      for (const r of sonuclar) {
+        if (r.status === "fulfilled" && !r.value.error) kaldirildi++;
+        else atlandi++;
+      }
+    }
+    setTopluIslemde(false);
+    setMesaj(t("toplu.kaldirSonuc", { kaldirildi, atlandi }));
+    reload();
+  };
+
   return (
     <div className="space-y-6">
+      <KelimeIncelemeKuyrugu onChanged={reload} />
       <section className={`${cardClass} p-5 sm:p-6`}>
         <div className="mb-4 flex flex-wrap items-center justify-between gap-3">
           <h3 className="text-lg font-semibold text-gray-800 dark:text-white/90">{t("title")}</h3>
@@ -281,6 +370,11 @@ export default function KelimeEvreniManager() {
         )}
 
         <ErrorNote message={error} />
+        {mesaj && (
+          <p role="status" className="mb-3 rounded-lg bg-blue-50 px-3 py-2 text-sm text-blue-800 dark:bg-blue-500/10 dark:text-blue-300">
+            {mesaj}
+          </p>
+        )}
 
         <div className="mb-3 flex flex-wrap items-center gap-3">
           <label className="text-sm text-gray-600 dark:text-gray-300" htmlFor="kelime-durum-filtre">{t("filtre")}</label>
@@ -308,14 +402,46 @@ export default function KelimeEvreniManager() {
           <p className="text-sm text-gray-500">{t("empty")}</p>
         ) : (
           <>
+            <div className="mb-3 flex flex-wrap items-center gap-2">
+              <button type="button" className={outlineBtn} onClick={() => tumunuSecDegistir(true)} disabled={topluIslemde || satirlar.length === 0}>
+                {t("toplu.listeTumu", { sayi: satirlar.length })}
+              </button>
+              <button type="button" className={outlineBtn} onClick={() => setSecili(new Set())} disabled={topluIslemde || secili.size === 0}>
+                {t("toplu.temizle")}
+              </button>
+            </div>
+            {secili.size > 0 && (
+              <div className="mb-3 flex flex-wrap items-center gap-2 rounded-lg bg-gray-50 p-3 dark:bg-white/3">
+                <span className="text-sm font-medium text-gray-800 dark:text-white/90">{t("toplu.seciliSayi", { sayi: secili.size })}</span>
+                <button type="button" className={primaryBtn} onClick={() => void topluYayinla()} disabled={topluIslemde}>
+                  {t("toplu.yayinaAl")}
+                </button>
+                <button type="button" className={outlineBtn} onClick={() => void yayindanKaldir()} disabled={topluIslemde}>
+                  {t("toplu.yayindanKaldir")}
+                </button>
+              </div>
+            )}
+
             {/* Telefon ve küçük tablet (md altı): kart görünümü */}
             <ul className="space-y-3 md:hidden">
               {satirlar.map((s) => (
                 <li key={s.id} className="rounded-xl border border-gray-200 p-4 dark:border-gray-800">
                   <div className="flex flex-wrap items-start justify-between gap-2">
-                    <div className="min-w-0">
-                      <p className="font-medium wrap-break-word text-gray-800 dark:text-white/90">{s.kelime}</p>
-                      <p className="text-xs wrap-break-word text-gray-500 dark:text-gray-400">{s.anlam}</p>
+                    <div className="flex min-w-0 items-start gap-2">
+                      <span className="inline-flex min-h-11 min-w-11 shrink-0 items-center justify-center">
+                        <input
+                          type="checkbox"
+                          className="size-5"
+                          checked={secili.has(s.id)}
+                          onChange={(e) => secimDegistir(s.id, e.target.checked)}
+                          disabled={topluIslemde}
+                          aria-label={t("toplu.satirSec", { kelime: s.kelime })}
+                        />
+                      </span>
+                      <div className="min-w-0">
+                        <p className="font-medium wrap-break-word text-gray-800 dark:text-white/90">{s.kelime}</p>
+                        <p className="text-xs wrap-break-word text-gray-500 dark:text-gray-400">{s.anlam}</p>
+                      </div>
                     </div>
                     <span className="text-theme-xs font-medium text-gray-600 dark:text-gray-300">{t(`durumlar.${s.durum}`)}</span>
                   </div>
@@ -344,6 +470,18 @@ export default function KelimeEvreniManager() {
               <table className="min-w-full text-left text-sm">
                 <thead>
                   <tr>
+                    <th className={thClass}>
+                      <span className="inline-flex min-h-11 min-w-11 items-center justify-center">
+                        <input
+                          type="checkbox"
+                          className="size-5"
+                          checked={tumunuSecili}
+                          onChange={(e) => tumunuSecDegistir(e.target.checked)}
+                          disabled={topluIslemde}
+                          aria-label={t("toplu.sayfaTumu")}
+                        />
+                      </span>
+                    </th>
                     <th className={thClass}>{t("cols.kelime")}</th>
                     <th className={thClass}>{t("cols.tur")}</th>
                     <th className={thClass}>{t("cols.sinif")}</th>
@@ -355,6 +493,18 @@ export default function KelimeEvreniManager() {
                 <tbody>
                   {satirlar.map((s) => (
                     <tr key={s.id}>
+                      <td className={tdClass}>
+                        <span className="inline-flex min-h-11 min-w-11 items-center justify-center">
+                          <input
+                            type="checkbox"
+                            className="size-5"
+                            checked={secili.has(s.id)}
+                            onChange={(e) => secimDegistir(s.id, e.target.checked)}
+                            disabled={topluIslemde}
+                            aria-label={t("toplu.satirSec", { kelime: s.kelime })}
+                          />
+                        </span>
+                      </td>
                       <td className={tdClass}>
                         <span className="font-medium text-gray-800 dark:text-white/90">{s.kelime}</span>
                         <span className="block text-xs text-gray-500">{s.anlam}</span>

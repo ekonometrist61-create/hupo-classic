@@ -1,0 +1,1095 @@
+[
+  {
+    "id": "SOS4-G1-001",
+    "kazanim_kodu": "SB.4.1.1",
+    "konu": "Birey ve Toplum",
+    "soru_metni": "Sosyal bilgiler dersinde etkin bir vatandaşın haklarını bildiği gibi sorumluluklarını da yerine getirmesi gerektiği vurgulanmaktadır. Buna göre aşağıdakilerden hangisi bir ilkokul öğrencisinin okul ortamındaki sorumluluklarına örnek oluşturur?",
+    "siklar": {
+      "A": "Ders araç ve gereçlerini özenle korumak",
+      "B": "Okul kütüphanesinden ödünç kitap alabilmek",
+      "C": "Okul bahçesinde güvenle oyun oynamak",
+      "D": "Temiz ve düzenli bir sınıfta ders dinlemek"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Bireye tanınan yetkiler hak, bireyin yerine getirmekle yükümlü olduğu görevler ise sorumluluktur.",
+    "cozum_adimlari": [
+      "Hak, bireylerin yasal ve sosyal olarak kullanabildikleri yetki ve imkânlardır.",
+      "Sorumluluk ise bireyin üzerine düşen görevleri yapması ve davranışlarının sonuçlarını üstlenmesidir.",
+      "Kütüphaneden kitap almak, bahçede oyun oynamak ve temiz bir sınıfta eğitim almak öğrencilerin hakları arasındadır.",
+      "Ders araç ve gereçlerini özenle korumak ise öğrencinin yerine getirmesi gereken bir sorumluluktur.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Doğru seçenektir.",
+      "B": "Öğrenci kütüphaneden yararlanmayı bir görev sanarak hak ve sorumluluk kavramlarını karıştırabilir.",
+      "C": "Öğrenci oyun alanlarını kullanmayı okul düzeni görevi olarak yorumlayabilir.",
+      "D": "Temiz ortamda bulunmayı bir sorumluluk zannedebilir; oysa bu durum sağlıklı bir çevrede eğitim alma hakkıdır."
+    },
+    "zorluk": 1,
+    "soru_tipi": "kavram_analizi",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Birey ve Toplum",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G1-002",
+    "kazanim_kodu": "SB.4.2.2",
+    "konu": "İnsanlar, Yerler ve Çevreler",
+    "soru_metni": "İnsanlar yaşamlarını sürdürürken doğal çevreden yararlanır ve bazen doğal çevreyi ihtiyaçları doğrultusunda değiştirirler. Aşağıdaki durumlardan hangisi, insanların doğal çevreyi değiştirerek ondan yararlandığına doğrudan bir örnektir?",
+    "siklar": {
+      "A": "Şiddetli rüzgâr alan bir bölgede yelken sporunun yapılması",
+      "B": "Akarsu üzerine baraj yapılarak elektrik enerjisi üretilmesi",
+      "C": "Balıkçıların denizdeki mevsimsel göç yollarını takip etmesi",
+      "D": "Çiftçilerin tohum ekimi için ilkbahar yağmurlarını beklemesi"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Doğal unsura doğrudan insan eliyle yapılan müdahaleyi ve inşa edilen yapıyı düşününüz.",
+    "cozum_adimlari": [
+      "İnsanlar doğaya uyum sağlayabildikleri gibi doğayı fiziksel olarak da değiştirebilirler.",
+      "Yelken sporu yapmak, balık göçlerini izlemek ya da yağmuru beklemek doğanın mevcut koşullarına uyum sağlamaktır.",
+      "Akarsu üzerine baraj inşa etmek ise akarsuyun doğal akışını ve çevresini değiştirerek enerji elde etmeye örnektir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Rüzgârı kullanmak doğal koşula uyumdur, rüzgârı değiştirmek değildir.",
+      "B": "Doğru seçenektir.",
+      "C": "Balıkların göçünü izlemek doğayı gözlemleyip ona göre davranmaktır, çevre üzerinde kalıcı bir değişiklik oluşturmaz.",
+      "D": "Yağmuru beklemek doğaya bağımlı bir tarım faaliyetidir, doğayı değiştirme içermez."
+    },
+    "zorluk": 2,
+    "soru_tipi": "iliski_kurma",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "İnsanlar, Yerler ve Çevreler",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G1-004",
+    "kazanim_kodu": "SB.4.3.2",
+    "konu": "Kültür ve Miras",
+    "soru_metni": "4. sınıf öğrencisi Elif, ailesinin geçmişini araştırarak bir aile tarihi çalışması hazırlamak istemektedir. Elif'in bu çalışma sırasında geçmiş olayları yaşayan aile büyükleriyle görüşme yaparak bilgi toplaması, aşağıdaki yöntem veya kaynaklardan hangisiyle adlandırılır?",
+    "siklar": {
+      "A": "Arkeolojik kazı çalışması",
+      "B": "Resmî nüfus kütüğü kaydı",
+      "C": "Sözlü tarih araştırması",
+      "D": "Coğrafi harita incelemesi"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Olaylara tanıklık etmiş kişilerle karşılıklı konuşarak ve mülakat yaparak bilgi edinme yöntemini hatırlayınız.",
+    "cozum_adimlari": [
+      "Aile tarihi oluşturulurken çeşitli kaynaklardan ve yöntemlerden yararlanılır.",
+      "Geçmiş dönemleri bizzat yaşamış aile büyükleriyle yapılan planlı görüşmeler ve anlatılan anıların kaydedilmesi sözlü tarih yöntemidir.",
+      "Arkeolojik kazı toprak altındaki kalıntıları bulmak içindir; nüfus kaydı yazılı resmî bir belgedir; harita incelemesi ise mekânsal konum bilgisi sağlar.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Geçmişi araştırma kavramını duyan öğrenci doğrudan toprak altı kazılarını düşünebilir.",
+      "B": "Resmî kayıtlar aile tarihine kanıt oluşturur fakat canlı kişilerle konuşma yöntemini ifade etmez.",
+      "C": "Doğru seçenektir.",
+      "D": "Göç edilen yerleri öğrenmeyi harita okuma yöntemiyle karıştırabilir."
+    },
+    "zorluk": 1,
+    "soru_tipi": "kavram_bilgisi",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Kültür ve Miras",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G1-005",
+    "kazanim_kodu": "SB.4.3.3",
+    "konu": "Kültür ve Miras",
+    "soru_metni": "Ortak miras ögeleri, geçmiş uygarlıkların ve atalarımızın bizlere bıraktığı, korunarak gelecek nesillere aktarılması gereken maddi ve manevi değerlerdir. Buna göre aşağıdakilerden hangisi ülkemizdeki ortak kültürel miras ögeleri arasında yer alan mimari bir yapıdır?",
+    "siklar": {
+      "A": "Pamukkale Travertenleri",
+      "B": "Cennet-Cehennem Obrukları",
+      "C": "Nevşehir Peri Bacaları",
+      "D": "Safranbolu Tarihî Evleri"
+    },
+    "dogru_sik": "D",
+    "ipucu": "İnsan emeğiyle inşa edilen yapılar kültürel miras, doğa olayları sonucu kendiliğinden oluşanlar ise doğal mirastır.",
+    "cozum_adimlari": [
+      "Ortak miras; doğal miras ve kültürel miras olarak iki temel gruba ayrılır.",
+      "İnsan aklı ve emeğiyle meydana getirilmiş hanlar, köprüler, camiler ve tarihî konutlar kültürel-mimari mirastır.",
+      "Pamukkale Travertenleri, Cennet-Cehennem Obrukları ve Peri Bacaları doğa olayları sonucunda oluşmuş doğal miras ögeleridir.",
+      "Safranbolu Tarihî Evleri ise geçmişten günümüze ulaşmış insan yapımı kültürel ve mimari bir mirastır.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Öğrenci turistik ve tarihî değeri olan her yeri kültürel miras sanabilir; travertenler kimyasal tortulanmayla oluşan doğal mirastır.",
+      "B": "Obruklar yer altı sularının erimesiyle oluşan doğal jeolojik yapılardır.",
+      "C": "Peri bacaları rüzgâr ve su aşındırması sonucu oluşan doğal varlıklardır.",
+      "D": "Doğru seçenektir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "siniflandirma",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Kültür ve Miras",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G1-006",
+    "kazanim_kodu": "SB.4.4.1",
+    "konu": "Millî Mücadele",
+    "soru_metni": "Millî Mücadele Dönemi'nde Sakarya Meydan Muharebesi öncesinde ordunun giyecek, yiyecek, taşıt ve cephane gibi ihtiyaçlarını karşılamak amacıyla Mustafa Kemal Paşa tarafından Tekalif-i Milliye Emirleri yayımlanmıştır. Türk halkı elinde bulunan malzemelerin bir kısmını ordusuna vererek büyük bir dayanışma sergilemiştir. Bu durum Türk milletinin hangi özelliğini açıkça göstermektedir?",
+    "siklar": {
+      "A": "Vatan savunmasında fedakârlık bilincini",
+      "B": "Ticari gelirlerini artırma isteğini",
+      "C": "Yeni sanayi kuruluşları kurma düşüncesini",
+      "D": "Tarımsal üretim fazlasını satma hedefini"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Halkın kendi varlıklarını karşılık beklemeden bağımsızlık uğruna ordusuyla paylaşmasını değerlendiriniz.",
+    "cozum_adimlari": [
+      "Tekalif-i Milliye Emirleri, ordunun acil ihtiyaçlarını karşılamak için çıkarılmış millî yükümlülük buyruklarıdır.",
+      "Halk, elindeki kısıtlı imkânları vatanın kurtuluşu için tereddüt etmeden ordunun hizmetine sunmuştur.",
+      "Bu davranış doğrudan vatanseverlik, dayanışma ve fedakârlık duygularının bir yansımasıdır.",
+      "Ekonomik kazanç, fabrika kurma veya ticaret yapma gibi amaçlar bu süreçle ilgili değildir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Doğru seçenektir.",
+      "B": "Malzemelerin orduya verilmesi ticari bir satış sanılabilir, oysa bu bağımsızlık mücadelesi için yapılan bir fedakârlıktır.",
+      "C": "Üretim ve malzeme kelimeleri öğrenciye sanayileşme fikrini çağrıştırabilir.",
+      "D": "Tarımsal ürünlerin orduya teslimi ekonomik bir ticaret gibi algılanabilir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim_yapma",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Millî Mücadele",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G1-007",
+    "kazanim_kodu": "SB.4.4.2",
+    "konu": "Cumhuriyetin Kazanımları",
+    "soru_metni": "Cumhuriyetin ilanından sonra eğitim alanında Tevhid-i Tedrisat Kanunu kabul edilmiş, ardından yeni Türk harfleri yürürlüğe girmiş ve Millet Mektepleri açılarak her yaştan vatandaşa okuma yazma öğretilmiştir. Yapılan bu yeniliklerin toplum hayatına sağladığı temel katkı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Tarımsal üretimde makine kullanımının yaygınlaşması",
+      "B": "Eğitimin yaygınlaşması ve okuryazar oranının artması",
+      "C": "Fabrikalarda üretilen malların çeşitliliğinin artması",
+      "D": "Şehirler arası ulaşım ağlarının modernleşmesi"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Okul, harf, kanun ve okuma yazma seferberliği gibi kavramların doğrudan hangi alanla ilişkili olduğunu düşününüz.",
+    "cozum_adimlari": [
+      "Metinde geçen Tevhid-i Tedrisat Kanunu (Öğretim Birliği), yeni Türk harflerinin kabulü ve Millet Mektepleri doğrudan eğitim alanındaki inkılaplardır.",
+      "Bu adımların amacı toplumun eğitim düzeyini yükseltmek, okuma yazmayı kolaylaştırmak ve okullaşmayı yaygınlaştırmaktır.",
+      "Tarım, sanayi veya ulaşım alanındaki gelişmeler ekonomik ve teknolojik sahayla ilgilidir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Cumhuriyet döneminde tarımda da yenilikler yapıldığı için öğrenci alanları karıştırabilir.",
+      "B": "Doğru seçenektir.",
+      "C": "Öğrenci genel kalkınma hamlelerini eğitim alanı ile birleştirebilir.",
+      "D": "Demiryolu ve kara yolu atılımları dönemin diğer hizmetleridir ancak verilen metinle ilgili değildir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "alan_iliskisi",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Cumhuriyetin Kazanımları",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G1-008",
+    "kazanim_kodu": "SB.4.4.3",
+    "konu": "Katılım ve Demokrasi",
+    "soru_metni": "Bir ilkokulda 4. sınıf temsilcisini belirlemek için aday olan öğrenciler sınıfta yapacakları çalışmaları tanıtan konuşmalar yapmıştır. Ardından tüm sınıf arkadaşları kapalı oy vererek kendi temsilcilerini seçmiştir. Bu süreçte uygulanan yöntem, okuldaki karar alma ve yönetim sürecinde aşağıdakilerden hangisinin işletildiğini gösterir?",
+    "siklar": {
+      "A": "Kura çekilerek görev dağılımı yapıldığını",
+      "B": "Öğretmenin doğrudan bir öğrenciyi seçtiğini",
+      "C": "Demokratik seçim ve oy verme sürecini",
+      "D": "Adaylar arasında sınav başarısının arandığını"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Aday olma, propaganda yapma ve gizli oy kullanarak temsilci seçme kavramlarını inceleyiniz.",
+    "cozum_adimlari": [
+      "Adayların fikirlerini açıklaması ve bireylerin oy kullanarak seçim yapması demokrasinin temel unsurlarındandır.",
+      "Sınıf temsilcisinin kapalı oy verme yöntemiyle belirlenmesi demokratik katılım ve karar alma sürecidir.",
+      "Süreçte kura çekilmemiş, sınav yapılmamış veya öğretmen tarafından doğrudan atama gerçekleştirilmemiştir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Öğrenci eşit şans tanıma durumunu kura yöntemiyle karıştırabilir.",
+      "B": "Okul ortamında kararların bazen öğretmen otoritesiyle alındığı yanılgısına düşülebilir.",
+      "C": "Doğru seçenektir.",
+      "D": "Temsilciliğin akademik başarı puanına göre verildiği zannedilebilir."
+    },
+    "zorluk": 1,
+    "soru_tipi": "kavram_uygulamasi",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Katılım ve Demokrasi",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G1-009",
+    "kazanim_kodu": "SB.4.5.2",
+    "konu": "Üretim, Dağıtım ve Tüketim",
+    "soru_metni": "Aylık harçlığını planlayan Mert'in kış mevsimi yaklaşırken almayı düşündüğü eşyalar şunlardır:\nI. Eskiyen ve su geçiren botunun yerine yeni bir kışlık bot\nII. Odasındaki rafta sergilemek istediği koleksiyon oyuncağı\nIII. Okulda derslerde kullanacağı resim defteri ve boya kalemi\nIV. Evde dinlemek üzere beğendiği yeni bir müzik albümü\nBuna göre Mert, bütçesini hazırlarken hangilerini \"temel ihtiyaç\" kapsamında değerlendirerek öncelik vermelidir?",
+    "siklar": {
+      "A": "I ve II",
+      "B": "II ve IV",
+      "C": "III ve IV",
+      "D": "I ve III"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Yaşamı sağlıklı sürdürmek ve eğitim faaliyetlerine devam edebilmek için vazgeçilmez olan zorunlu gereksinimlere odaklanınız.",
+    "cozum_adimlari": [
+      "İhtiyaç; karşılanmadığında yaşamımızı, sağlığımızı veya temel faaliyetlerimizi olumsuz etkileyen zorunlu durumlardır.",
+      "İstek ise karşılanmadığında hayati bir sorun yaratmayan, keyfi ve ikincil arzulardır.",
+      "Kış mevsiminde su geçirmeyen bot giyinme/sağlık ihtiyacıdır (I); ders araç gereci eğitim ihtiyacıdır (III).",
+      "Koleksiyon oyuncağı (II) ve müzik albümü (IV) ise kişisel beğeniye dayalı isteklerdir.",
+      "Bu nedenle Mert bütçesinde I ve III numaralı maddelere öncelik vermelidir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Öğrenci oyuncağın çocuğun gelişimindeki önemini düşünerek onu temel ihtiyaçla karıştırabilir.",
+      "B": "İstek olan iki ögeyi seçip soru kökündeki 'ihtiyaç' talebini ters yorumlayabilir.",
+      "C": "Müzik dinlemeyi günlük bir zorunluluk sanarak istek-ihtiyaç ayrımını gözden kaçırabilir.",
+      "D": "Doğru seçenektir."
+    },
+    "zorluk": 3,
+    "soru_tipi": "siniflandirma_ve_analiz",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Üretim, Dağıtım ve Tüketim",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G1-010",
+    "kazanim_kodu": "SB.4.5.3",
+    "konu": "Üretim, Dağıtım ve Tüketim",
+    "soru_metni": "Bir ürünün sofralarımıza gelene kadar geçirdiği aşamalar şunlardır:\nI. Fırınlarda un, su ve maya karıştırılarak ekmek pişirilir.\nII. Çiftçiler tarlayı sürüp buğday tohumlarını eker ve başakları hasat eder.\nIII. Tüketiciler mahallelerindeki market veya fırınlardan ekmek satın alır.\nIV. Hasat edilen buğdaylar un değirmenlerine ve fabrikalarına taşınarak una dönüştürülür.\nBu aşamaların \"üretimden tüketime\" doğru mantıksal sıralaması aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "II - IV - I - III",
+      "B": "II - I - IV - III",
+      "C": "IV - II - I - III",
+      "D": "IV - I - II - III"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Hammadde yetiştirilmesi, hammaddenin işlenerek ara ürüne dönüşmesi, nihai ürünün hazırlanması ve satın alınması sırasını takip ediniz.",
+    "cozum_adimlari": [
+      "Süreç hammaddenin elde edilmesiyle başlar: Çiftçilerin buğdayı ekmesi ve hasat etmesi ilk adımdır (II).",
+      "Hasat edilen buğday fabrikalarda işlenerek una dönüştürülür (IV).",
+      "Elde edilen un fırınlara ulaşır ve ekmek olarak pişirilir (I).",
+      "Son aşamada tüketiciler üretilen ekmeği satın alıp tüketir (III).",
+      "Doğru sıralama II - IV - I - III şeklindedir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Doğru seçenektir.",
+      "B": "Öğrenci buğdayın una dönüşme aşamasını (IV) unun ekmek yapılması aşamasından (I) sonraya koyarak üretim ara basamağını atlayabilir.",
+      "C": "Buğdayın una dönüştürülmesini tarımsal hasattan önceye koyarak neden-sonuç sırasını ters kurabilir.",
+      "D": "Fabrika aşamasını en başa alıp tarladaki ekim sürecini daha sonraki bir basamak sanabilir."
+    },
+    "zorluk": 3,
+    "soru_tipi": "surec_siralama",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Üretim, Dağıtım ve Tüketim",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G2-004",
+    "kazanim_kodu": "SB.4.2.3",
+    "konu": "Afetlerin Etkilerini Azaltma",
+    "soru_metni": "Deprem kuşağında yer alan bir yerleşim yerinde afet riskini ve zararlarını azaltmak için bazı önlemler planlanmaktadır.\n\nBuna göre aşağıdakilerden hangisi deprem meydana gelmeden önce alınması gereken doğrudan tedbirlerden biridir?",
+    "siklar": {
+      "A": "Sarsıntı sona erdikten sonra acil toplanma alanına gitmek",
+      "B": "Enkaz kaldırma çalışmalarını organize etmek",
+      "C": "Deprem sonrasında hasar tespit çalışmalarını başlatmak",
+      "D": "Evlerdeki ağır dolap ve eşyaları duvara sabitlemek"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Afet öncesi (zarar azaltma) ile afet anı ve afet sonrasındaki adımları birbirinden ayırınız.",
+    "cozum_adimlari": [
+      "1. Afet yönetimi; afet öncesi, afet sırası ve afet sonrası aşamalarından oluşur.",
+      "2. B seçeneğindeki toplanma alanına gitmek sarsıntı bittikten sonraki adımdır.",
+      "3. C ve D seçenekleri afet gerçekleştikten sonraki müdahale ve iyileştirme adımlarıdır.",
+      "4. Ağır eşyaların duvara sabitlenmesi ise deprem gerçekleşmeden önce can ve mal kaybını önlemek için yapılan bir tedbirdir.",
+      "5. Doğru cevap A seçeneğidir.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Toplanma alanına gitmek önemli bir tedbirdir ancak deprem anından/sonrasından bahseder.",
+      "B": "Enkaz kaldırma deprem sonrasına ait bir arama-kurtarma ve iyileştirme evresidir.",
+      "C": "Hasar tespiti sarsıntı bittikten sonra yetkililerce yürütülen afet sonrası bir faaliyettir.",
+      "D": "Doğru seçenektir; zarar azaltmaya yönelik afet öncesi bir tedbirdir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "kavram_siniflandirma",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Afetlerin Etkilerini Azaltma",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G2-005",
+    "kazanim_kodu": "SB.4.3.2",
+    "konu": "Aile Tarihi",
+    "soru_metni": "Selin, ailesinin geçmişini araştırmak amacıyla aile büyükleriyle sözlü tarih çalışması yapmış; dedesine gençlik yıllarını, göç hikâyelerini ve eski meslekleri sormuştur. Selin ayrıca bu bilgileri dedesinin eski askerlik fotoğrafı, dedesinden kalan el yazması bir mektup ve eski bir diplomayla desteklemiştir.\n\nBuna göre Selin'in araştırmasında kullandığı belgeler aşağıdakilerden hangisi için doğrudan bir kanıt oluşturur?",
+    "siklar": {
+      "A": "Ailenin geçmiş dönemdeki yaşamına dair somut bilgilere ulaşmak",
+      "B": "Gelecek yıllarda ailesinin nerede yaşayacağını tahmin etmek",
+      "C": "Eski eşyaların antika değerini ve parasal karşılığını belirlemek",
+      "D": "Ülkedeki tüm ailelerin aynı tarihte göç ettiğini kanıtlamak"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Eski mektup, diploma ve fotoğraflar geçmişe ait hangi bilgileri doğrulamak için kullanılır?",
+    "cozum_adimlari": [
+      "1. Selin aile tarihini araştırmak için sözlü tarih ve birincil kaynaklar (mektup, fotoğraf, diploma) kullanmıştır.",
+      "2. Tarihsel kanıtlar geçmişteki olayların, mesleklerin ve yaşam biçimlerinin doğrulanmasını sağlar.",
+      "3. Bu belgeler ailenin geçmişteki yaşamı hakkında güvenilir ve somut bilgi sunar.",
+      "4. Geleceği tahmin etmek ya da eşyaların piyasa değerini hesaplamak aile tarihi çalışmasının amacı değildir.",
+      "5. Doğru cevap A seçeneğidir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Doğru cevaptır; kanıtlar geçmiş yaşama ilişkin somut veriler sunar.",
+      "B": "Tarih geçmişi inceler, gelecekte nereye taşınacaklarını bilemez.",
+      "C": "Tarih araştırmalarında eşyalar maddi değeri için değil, geçmişe ışık tuttuğu için incelenir.",
+      "D": "Belgeler sadece Selin'in ailesine aittir, tüm aileler için genel bir sonuç çıkarılamaz."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim_yapma",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Aile Tarihi",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G2-006",
+    "kazanim_kodu": "SB.4.3.3",
+    "konu": "Ortak Miras Ögeleri",
+    "soru_metni": "Bir şehirde yüzyıllar önce inşa edilmiş olan tarihî taş köprü, günümüzde hem yayalar tarafından kullanılmakta hem de yerli ve yabancı ziyaretçilerin ilgisini çekmektedir. Belediye, köprünün yıpranan taşlarını aslına uygun malzemelerle onarmış ve köprünün kenarına tarihini anlatan bilgilendirici bir tabela yerleştirmiştir.\n\nBelediyenin bu çalışması ortak miras ögeleriyle ilgili olarak aşağıdakilerden hangisini amaçlamaktadır?",
+    "siklar": {
+      "A": "Tarihî yapıları modern beton binalara dönüştürmeyi",
+      "B": "Kültürel mirası koruyarak gelecek kuşaklara aktarmayı",
+      "C": "Köprünün kullanımını sonlandırıp insanlara kapatmayı",
+      "D": "Şehirdeki ulaşım ücretlerini artırmak için gerekçe bulmayı"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Tarihî eserlerin aslına uygun onarılması ve tanıtılması kültürel devamlılığı sağlar.",
+    "cozum_adimlari": [
+      "1. Tarihî taş köprü, geçmişten günümüze ulaşan bir ortak miras ögesidir.",
+      "2. Yapının aslına uygun onarılması ve bilgi tabelası konulması eserin korunmasını ve tanıtılmasını hedefler.",
+      "3. Bu tür koruma faaliyetlerinin temel amacı geçmişin izlerini geleceğe taşımaktır.",
+      "4. Yapıyı yıkmak, betona çevirmek veya kapatmak değil, koruyarak yaşatmak hedeflenmiştir.",
+      "5. Doğru cevap A seçeneğidir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Onarım aslına uygun yapılmıştır, modern yapıya dönüştürmek tarihi yok eder.",
+      "B": "Doğru seçenektir; ortak mirasın korunup aktarılması esastır.",
+      "C": "Köprü halen yayalarca kullanılmaktadır, kapatılmamıştır.",
+      "D": "Amaç ulaşım ücreti değil, kültürel ve tarihsel değerleri korumaktır."
+    },
+    "zorluk": 1,
+    "soru_tipi": "kavrama",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Ortak Miras Ögeleri",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G3-004",
+    "kazanim_kodu": "SB.4.2.3",
+    "konu": "Afetlerin Etkilerini Azaltma",
+    "soru_metni": "Deprem tehlikesinin bulunduğu bir bölgede yaşayan ailenin, ev içinde alabileceği aşağıdaki önlemlerden hangisi doğrudan sarsıntı anında yaralanmaları önlemeyi amaçlar?",
+    "siklar": {
+      "A": "Deprem sonrasında aile üyeleriyle buluşulacak güvenli açık alanı belirlemek",
+      "B": "Kitaplık, dolap ve televizyon gibi ağır eşyaları duvara sabitlemek",
+      "C": "Acil durum çantasının içine temel ilk yardım malzemeleri koymak",
+      "D": "Konutun zorunlu deprem sigortasını süresi bitmeden yenilemek"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Sarsıntı sırasında oda içinde devrilebilecek eşyalar doğrudan fiziksel yaralanmalara yol açar.",
+    "cozum_adimlari": [
+      "Deprem sırasında ev içindeki en büyük tehlikelerden biri devrilen ağır eşyalardır.",
+      "Ağır eşyaların (dolap, kitaplık vb.) duvara sabitlenmesi sarsıntı anında devrilmelerini önleyerek yaralanmaları doğrudan engeller.",
+      "A ve C seçenekleri deprem sonrasına hazırlıktır; D seçeneği ise maddi zararları karşılamaya yöneliktir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Afet hazırlığı kavramını genel düşünüp 'sarsıntı anı' vurgusunu kaçıran öğrenci bu şıkka gidebilir.",
+      "B": "Doğru seçenektir.",
+      "C": "Deprem çantası hazırlığını sarsıntı anındaki doğrudan fiziksel koruma ile karıştıran öğrenci bu şıkkı seçebilir.",
+      "D": "Sigortayı afet önlemi olarak bilen ancak fiziksel koruma ayrımını yapamayan öğrenci bu seçeneğe yönelebilir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "kavram_uygulama",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Afetlerin Etkilerini Azaltma",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G3-006",
+    "kazanim_kodu": "SB.4.3.3",
+    "konu": "Ortak Miras Ögeleri",
+    "soru_metni": "Bir şehirde yüzyıllar önce inşa edilmiş taş kemerli bir köprünün restore edilerek korunması ve yayaların kullanımına sunulması, aşağıdakilerden hangisinin doğrudan bir göstergesidir?",
+    "siklar": {
+      "A": "Bölgedeki ticari faaliyetlerin diğer şehirlere göre daha hızlı geliştiğinin",
+      "B": "Doğal çevre unsurlarının modern ulaşım ağlarıyla yer değiştirdiğinin",
+      "C": "Geçmişten kalan kültürel ve ortak miras ögelerine sahip çıkıldığının",
+      "D": "Eski dönemlerde yapılan yapıların tamamının günümüze kadar ulaştığının"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Tarihî yapılar geçmiş nesillerden günümüze aktarılan ortak miras eserleridir.",
+    "cozum_adimlari": [
+      "Taş kemerli tarihî köprüler, geçmiş uygarlıklardan ve atalarımızdan kalan kültürel miras ögeleridir.",
+      "Bu yapıların korunması, restore edilmesi ve yaşatılması ortak mirasa sahip çıkıldığını gösterir.",
+      "B, C ve D seçenekleri bağlamdan çıkarılamayan veya miras kavramının korunmasıyla doğrudan ilgisi olmayan ifadelerdir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Köprüleri sadece ticaret yolları ve ekonomik kazançla ilişkilendiren öğrenci bu şıkkı seçebilir.",
+      "B": "Köprüyü doğal unsur sanarak doğa-yapay çevre değişimine bağlayan öğrenci yanılgıya düşebilir.",
+      "C": "Doğru seçenektir.",
+      "D": "Tarihî yapıların korunmasını genelleyip hepsinin günümüze ulaştığı sonucuna varan öğrenci bu şıkkı işaretleyebilir."
+    },
+    "zorluk": 1,
+    "soru_tipi": "kavram_yorumu",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Ortak Miras Ögeleri",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-G3-010",
+    "kazanim_kodu": "SB.4.5.3",
+    "konu": "Üretim, Dağıtım ve Tüketim Süreçleri",
+    "soru_metni": "Bir zeytinin soframıza geliş süreciyle ilgili şu aşamalar verilmiştir:\nI. Zeytinlerin bahçelerden toplanıp fabrikada zeytinyağına dönüştürülmesi\nII. Zeytinyağı şişelerinin kamyonlarla farklı şehirlerdeki marketlere taşınması\nIII. Ailelerin marketten satın aldıkları zeytinyağını yemeklerde kullanması\n\nBu aşamaların ekonomik faaliyet türleriyle doğru eşleştirmesi aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "I: Dağıtım — II: Üretim — III: Tüketim",
+      "B": "I: Üretim — II: Dağıtım — III: Tüketim",
+      "C": "I: Tüketim — II: Dağıtım — III: Üretim",
+      "D": "I: Üretim — II: Tüketim — III: Dağıtım"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Ham maddenin işlenmesi üretim, taşınması dağıtım, kullanılması ise tüketimdir.",
+    "cozum_adimlari": [
+      "I. aşamada zeytinin toplanıp fabrikada yağa dönüştürülmesi 'üretim'dir.",
+      "II. aşamada üretilen yağın marketlere taşınması 'dağıtım'dır.",
+      "III. aşamada ürünün satın alınıp yemeklerde kullanılması 'tüketim'dir.",
+      "Bu sıralama A seçeneğinde doğru verilmiştir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Bahçeden toplamayı taşıma (dağıtım) olarak algılayan öğrenci bu seçeneğe kayabilir.",
+      "B": "Doğru seçenektir.",
+      "C": "Süreç basamaklarının mantıksal akışını tersine kuran öğrenci bu şıkkı seçebilir.",
+      "D": "Satın alma ve kullanımı dağıtımdan önce düşünen öğrenci bu yanılgıya düşebilir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "kavram_eslestirme",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Üretim, Dağıtım ve Tüketim Süreçleri",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-E1-01",
+    "kazanim_kodu": "SB.4.1.3",
+    "konu": "Harita Unsurları ve Kenar Bilgileri",
+    "soru_metni": "Bir fiziki haritada mavi rengin tonlarının su derinliklerini, yeşil ve kahverengi tonlarının ise kara yükseltilerini gösterdiğini anlamak isteyen bir öğrenci, harita üzerindeki işaret ve sembollerin anlamlarını açıklayan bölüme başvurur. Haritanın bir köşesinde yer alan bu açıklayıcı işaret tablosuna ne ad verilir?",
+    "siklar": {
+      "A": "Harita ölçeği",
+      "B": "Harita başlığı",
+      "C": "Harita lejantı",
+      "D": "Harita yön oku"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Haritada kullanılan simgelerin, renklerin ve işaretlerin ne anlama geldiğini gösteren özel tabloyu düşününüz.",
+    "cozum_adimlari": [
+      "1. Adım: Soru metninde haritadaki renk ve sembollerin ne anlama geldiğini açıklayan harita unsuru sorulmaktadır.",
+      "2. Adım: Harita ölçeği, haritadaki küçültme oranını gösterir.",
+      "3. Adım: Harita başlığı, haritanın konusunu ve amacını belirtir.",
+      "4. Adım: Yön oku, haritada ana ve ara yönleri bulmaya yarar.",
+      "5. Adım: Harita işaret tablosu olarak da bilinen ve haritada kullanılan sembollerin anlamlarını açıklayan bölüm lejanttır.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ölçek, sembollerin anlamını değil küçültme oranını gösterdiği için çeldiricidir.",
+      "B": "Başlık, haritanın konusunu belirtir fakat renk ve işaretlerin anlamını açıklamaz.",
+      "C": "Doğru seçenektir.",
+      "D": "Yön oku, haritanın yönünü belirlemeye yarar; sembollerin içeriğini açıklamaz."
+    },
+    "zorluk": 1,
+    "soru_tipi": "kavram_tanimi",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Harita Unsurları ve Kenar Bilgileri",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-E1-04",
+    "kazanim_kodu": "SB.4.1.3",
+    "konu": "Toplumsal Birlik ve Görev Paylaşımı",
+    "soru_metni": "Bir ilkokulun 4/A sınıfında 'Sınıf Kitaplığı Oluşturma' çalışması başlatılmıştır. Öğrenciler kitapların türlerine göre ayrılması, listelenmesi ve raflara dizilmesi sürecinde aralarında görev dağılımı yapmış ve ortak bir amaç için uyum içinde çalışmıştır. Bu durum sınıf ortamında öncelikle aşağıdakilerden hangisinin güçlenmesini sağlar?",
+    "siklar": {
+      "A": "Bireysel yarışma ortamının",
+      "B": "İş birliği ve birlik duygusunun",
+      "C": "Sınıf içi liderlik mücadelesinin",
+      "D": "Bağımsız çalışma alışkanlığının"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Ortak bir hedef için birlikte iş yapmak bireyler arasındaki hangi bağı güçlendirir?",
+    "cozum_adimlari": [
+      "1. Adım: Soru metninde öğrencilerin kitaplık oluştururken görev dağılımı yaptığı ve birlikte çalıştığı belirtilmiştir.",
+      "2. Adım: Birlikte bir amaç doğrultusunda çalışmak, toplumsal birliğin ve dayanışmanın sınıf düzeyindeki yansımasıdır.",
+      "3. Adım: Bu etkinlik rekabet veya ayrışma yerine dayanışmayı artırır.",
+      "4. Adım: Dolayısıyla sınıf ortamında iş birliği ve birlik duygusu güçlenir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Görev dağılımı ve ortak çalışma bireysel rekabeti değil ortaklaşa üretimi destekler.",
+      "B": "Doğru seçenektir.",
+      "C": "Ortak hedefe yönelik planlı çalışma liderlik çatışması değil uyum üretir.",
+      "D": "Grup hâlinde yürütülen faaliyetler tek başına bağımsız çalışmaktan çok iş birliğini geliştirir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "neden_sonuc",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Toplumsal Birlik ve Görev Paylaşımı",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-E1-05",
+    "kazanim_kodu": "SB.4.6.1",
+    "konu": "Çevrim İçi Bilgi Paylaşımı ve Kimlik Güvenliği",
+    "soru_metni": "İnternette ders çalışırken karşısına 'Tebrikler, hediye kazandınız! Hediyenizi almak için ev adresinizi ve T.C. kimlik numaranızı giriniz.' şeklinde bir ileti çıkan dördüncü sınıf öğrencisi Kerem'in yapması gereken en güvenli davranış aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "İstenen bilgileri eksiksiz yazıp formu hemen onaylamak",
+      "B": "Ödülü doğrulamak için bildirideki bağlantıyı arkadaşlarına göndermek",
+      "C": "Sayfayı kapatıp durumu ailesine veya öğretmenine bildirmek",
+      "D": "Kimlik numarası yerine sadece ev adresini yazarak devam etmek"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Dijital ortamda kişisel bilgileri isteyen yabancı kaynaklı iletilerle karşılaşıldığında güvenilir yetişkinlere danışılmalıdır.",
+    "cozum_adimlari": [
+      "1. Adım: İnternet ortamında beklenmedik ödül veya çekiliş bildirimleri genellikle kişisel verileri ele geçirmeye yönelik tuzaklardır.",
+      "2. Adım: T.C. kimlik numarası ve ev adresi gibi kişisel veriler çevrim içi ortamlarda bilinmeyen sitelerle paylaşılmamalıdır.",
+      "3. Adım: Şüpheli bir bağlantıyı başkalarına iletmek veya formu kısmen doldurmak güvenlik açığı yaratır.",
+      "4. Adım: Yapılması gereken en doğru eylem sayfayı kapatmak ve durumu aileye veya öğretmene bildirmektir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Kişisel bilgileri girmek kimlik hırsızlığı riskine yol açar.",
+      "B": "Güvenilir olmayan bağlantıları başkalarıyla paylaşmak zararlı içeriklerin yayılmasına neden olur.",
+      "C": "Doğru seçenektir.",
+      "D": "Ev adresi de kritik bir kişisel bilgidir; paylaşılması güvenlik riski taşır."
+    },
+    "zorluk": 2,
+    "soru_tipi": "olay_yorumu",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Çevrim İçi Bilgi Paylaşımı ve Kimlik Güvenliği",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-E1-06",
+    "kazanim_kodu": "SB.4.6.2",
+    "konu": "Gruplar ve Roller Arasındaki İlişkiler",
+    "soru_metni": "Bireyler gün içinde dâhil oldukları farklı sosyal gruplarda değişik roller üstlenir ve her rol beraberinde belirli sorumluluklar getirir. Buna göre dördüncü sınıf öğrencisi Mert'in okulundaki tiyatro kulübündeki rolüne uygun sorumluluğu aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Evde kendi odasını düzenli tutmak ve temizlemek",
+      "B": "Ailesinin aylık gelir ve gider dengesini planlamak",
+      "C": "Sınıf başkanlığı seçimlerinde oy kullanıp beklemek",
+      "D": "Sahnelenecek oyunun provalarına zamanında katılmak"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Sorumluluk, bireyin içinde bulunduğu grubun amaçlarına ve üstlendiği role doğrudan uygun olmalıdır.",
+    "cozum_adimlari": [
+      "1. Adım: Soru, tiyatro kulübündeki rol ile bu rolün getirdiği sorumluluk arasındaki ilişkiyi sorgulamaktadır.",
+      "2. Adım: Odayı toplamak aile ortamındaki çocuk rolünün bir sorumluluğudur.",
+      "3. Adım: Aile bütçesini planlamak ebeveynlerin yetişkin rolüne ait bir sorumluluktur.",
+      "4. Adım: Oy kullanmak sınıf ortamındaki öğrenci rolüne aittir.",
+      "5. Adım: Sahnelenecek oyunun provalarına zamanında katılmak tiyatro kulübündeki oyuncu rolünün gerektirdiği doğrudan sorumluluktur.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Oda düzeni tiyatro kulübüyle değil aile ortamındaki sorumlulukla ilgilidir.",
+      "B": "Bütçe planlaması dördüncü sınıf öğrencisinin kulüp rolüne değil aile büyüklerinin rolüne aittir.",
+      "C": "Oy kullanmak kulüp etkinliğine değil sınıf içi demokratik katılım rolüne aittir.",
+      "D": "Doğru seçenektir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "kavram_iliskilendirme",
+    "olumsuzluk": false,
+    "gorsel_gerekli": false,
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kaynak_turu": "ozgun_ai",
+    "surec_bileseni": "a",
+    "alt_konu": "Gruplar ve Roller Arasındaki İlişkiler",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-001",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.1.2",
+    "surec_bileseni": "b",
+    "konu": "Birey ve Toplum",
+    "alt_konu": "Bireysel özelliklere saygı",
+    "soru_metni": "Sınıfta Deniz gözlük takıyor, Ece sol eliyle yazıyor, Kaan ise sınıfın en uzun boylu öğrencisidir. Arkadaşları bu özellikleri doğal karşılayıp onlara saygı göstermektedir. Bireysel özelliklere saygı duyulmasının sınıf ortamına en doğrudan katkısı nedir?",
+    "siklar": {
+      "A": "Öğrencilerin birbirine benzer özellikler kazanması",
+      "B": "Öğrencilerin kendini rahat ve kabul görmüş hissetmesi",
+      "C": "Öğrencilerin ders başarılarının birbirine eşitlenmesi",
+      "D": "Öğrencilerin özelliklerine göre ayrı gruplarda çalışması"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Saygı görmenin bir kişinin sınıftaki duygularını nasıl etkilediğini düşün.",
+    "cozum_adimlari": [
+      "Metinde farklı bireysel özellikler var ve arkadaşlar bunlara saygı gösteriyor.",
+      "Saygı gören öğrenci kendini rahat hisseder ve sınıfta kabul gördüğünü düşünür.",
+      "Saygı, öğrencileri birbirine benzetmez, başarıyı eşitlemez ve gruplara ayırmayı gerektirmez.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Saygıyı herkesin aynı olması gerektiği düşüncesiyle karıştırır.",
+      "B": "Doğru.",
+      "C": "Saygıyı başarıyla ilişkilendirir; ilişki doğrudan değildir.",
+      "D": "Farklılığa saygıyı farklılığa göre ayırmakla karıştırır."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-002",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.1.2",
+    "surec_bileseni": "a",
+    "konu": "Birey ve Toplum",
+    "alt_konu": "Bireysel özellikler",
+    "soru_metni": "Bireysel özellikler, bir kişiyi başkalarından ayıran ve o kişiye ait olan niteliklerdir. Buna göre aşağıdakilerden hangisi bir öğrencinin bireysel özelliklerinden biridir?",
+    "siklar": {
+      "A": "Sınıfının adının 4/A olması",
+      "B": "Okulunun şehir merkezinde bulunması",
+      "C": "En sevdiği oyunun satranç olması",
+      "D": "Ders programında fen dersinin olması"
+    },
+    "dogru_sik": "C",
+    "ipucu": "Kişiye ait olan ve kişiden kişiye değişebilen bir nitelik ara.",
+    "cozum_adimlari": [
+      "Bireysel özellik, kişinin kendisine ait niteliktir (sevdiği oyun, boyu, hobisi gibi).",
+      "Sınıf adı, okulun yeri ve ders programı öğrencilerin ortak olarak bağlı olduğu durumlardır.",
+      "En sevdiği oyun kişiye özgüdür.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Ortak bir bilgiyi kişisel özellik sanmak.",
+      "B": "Çevre bilgisini kişisel özellikle karıştırmak.",
+      "C": "Doğru.",
+      "D": "Okul düzenini kişisel özellik sanmak."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "ipucu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-003",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.1.3",
+    "surec_bileseni": "a",
+    "konu": "Birey ve Toplum",
+    "alt_konu": "Toplumsal birlik",
+    "soru_metni": "Bir okulda bahçe temizliği için her sınıf bir bölümün sorumluluğunu almış ve gün sonunda bahçe birlikte toplanmıştır. Bu çalışma okul ortamında toplumsal birliğin sürdürülmesine nasıl katkı sağlar?",
+    "siklar": {
+      "A": "Öğrencilerin ortak amaç için iş birliği yapmasını sağlar.",
+      "B": "Sınıflar arasındaki yarışmanın artmasını sağlar.",
+      "C": "Öğrencilerin başka sınıflarla konuşmasını azaltır.",
+      "D": "Okul kurallarının öğrenciler tarafından değiştirilmesini sağlar."
+    },
+    "dogru_sik": "A",
+    "ipucu": "Bütün sınıfların aynı iş için ne yaptığına dikkat et.",
+    "cozum_adimlari": [
+      "Her sınıf bir bölümü üstlenmiş, sonra bahçe birlikte toplanmıştır.",
+      "Bu, ortak bir amaç için iş birliği demektir ve birlik duygusunu güçlendirir.",
+      "Yarışma, uzaklaşma ve kural değiştirme çalışmada yer almamaktadır.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Doğru.",
+      "B": "İş bölümünü rekabetle karıştırır.",
+      "C": "İş bölümünün ayrılık yarattığı yanılgısı.",
+      "D": "Katılımı kural koymakla karıştırır."
+    },
+    "zorluk": 1,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-004",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.2.2",
+    "surec_bileseni": "b",
+    "konu": "İnsanlar, Yerler ve Çevreler",
+    "alt_konu": "Doğa ve insan ilişkisi",
+    "soru_metni": "Kıyı kasabasında yaşayan ailelerin çoğu balıkçılık yapmaktadır. Bu durum doğa ve insan ilişkisi bakımından neyi gösterir?",
+    "siklar": {
+      "A": "Doğal çevrenin insan faaliyetlerinden bağımsız olduğunu",
+      "B": "İnsanların iklimi ihtiyaçlarına göre değiştirdiğini",
+      "C": "Mesleklerin doğal çevre özelliklerinden etkilendiğini",
+      "D": "Kıyıdaki insanların doğal çevreye ihtiyaç duymadığını"
+    },
+    "dogru_sik": "C",
+    "ipucu": "İnsanların yaşadığı yer ile yaptığı iş arasındaki bağı düşün.",
+    "cozum_adimlari": [
+      "Kasaba kıyıdadır ve insanlar deniz sayesinde balıkçılık yapmaktadır.",
+      "Yani yaşanılan yerin doğal özellikleri (deniz) meslek seçimini etkilemiştir.",
+      "Diğer seçenekler metindeki durumla uyuşmaz.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "İnsan ile doğa arasındaki karşılıklı ilişkiyi yok sayar.",
+      "B": "İklimin değiştirilebildiği yanılgısı.",
+      "C": "Doğru.",
+      "D": "Balıkçılığın doğaya bağımlılığını göz ardı eder."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-006",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.3.2",
+    "surec_bileseni": "a",
+    "konu": "Zaman ve Mekân",
+    "alt_konu": "Aile tarihi kanıtları",
+    "soru_metni": "Ayşe, aile tarihi çalışması için eski bir fotoğrafı inceliyor. Fotoğrafın arkasında \"1965 – İzmir\" yazmaktadır. Ayşe bu kanıttan hangi çıkarımı yapabilir?",
+    "siklar": {
+      "A": "Fotoğrafın 1965'te İzmir'de çekildiği",
+      "B": "Fotoğraftaki kişilerin İzmir'de doğduğu",
+      "C": "Ailenin 1965'te İzmir'e taşındığı",
+      "D": "Fotoğrafın ailenin ilk fotoğrafı olduğu"
+    },
+    "dogru_sik": "A",
+    "ipucu": "Kanıtta yazan bilgilerin doğrudan neyi anlattığına bak.",
+    "cozum_adimlari": [
+      "Notta yalnızca bir yıl ve bir yer adı vardır.",
+      "Bu bilgi fotoğrafın ne zaman ve nerede çekildiğini gösterir.",
+      "Doğum yeri, taşınma ve ilk fotoğraf olması notta belirtilmemiştir.",
+      "Doğru cevap A seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Doğru.",
+      "B": "Çekim yerini doğum yeriyle karıştırır.",
+      "C": "Kanıttan fazlasını çıkarır.",
+      "D": "Eski olmasını ilk olmakla karıştırır."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "gerekli",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-007",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.1",
+    "surec_bileseni": "a",
+    "konu": "Etkin Vatandaşlık",
+    "alt_konu": "Türkiye Büyük Millet Meclisi",
+    "soru_metni": "23 Nisan 1920'de Ankara'da Türkiye Büyük Millet Meclisi açılmıştır. Bu meclis Millî Mücadele Dönemi'nde hangi görevi üstlenmiştir?",
+    "siklar": {
+      "A": "Padişahın İstanbul'dan gelen emirlerini uygulamıştır.",
+      "B": "Millî Mücadele'nin yönetimi için kararlar almıştır.",
+      "C": "Komutanların atamasını İstanbul'a bırakmıştır.",
+      "D": "İtilaf devletlerinin istediği kararları uygulamıştır."
+    },
+    "dogru_sik": "B",
+    "ipucu": "Meclisin Ankara'da toplanmasının kimin adına karar alındığıyla ilgisini düşün.",
+    "cozum_adimlari": [
+      "Meclis, milletin temsilcilerinden oluşan ve Ankara'da toplanan bir meclistir.",
+      "Millî Mücadele'yi yönetmek için gerekli kararları almıştır.",
+      "Emirleri uygulamak veya İtilaf devletlerinin isteklerini yerine getirmek meclisin görevi olmamıştır.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Meclisi İstanbul yönetimine bağlı sanır.",
+      "B": "Doğru.",
+      "C": "Karar yetkisinin kimde olduğunu karıştırır.",
+      "D": "Mücadelenin amacını tersine çevirir."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "ipucu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-008",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.2",
+    "surec_bileseni": "b",
+    "konu": "Etkin Vatandaşlık",
+    "alt_konu": "Cumhuriyetin getirdiği değişimler",
+    "soru_metni": "1934 yılında kadınlara milletvekili seçme ve seçilme hakkı verilmiştir. Bu değişikliğin toplum hayatına katkısı aşağıdakilerden hangisidir?",
+    "siklar": {
+      "A": "Erkeklerin seçimlere katılmasını kaldırmıştır.",
+      "B": "Seçimlerin yerel yönetimlerce yapılmasını sağlamıştır.",
+      "C": "Kadınların yönetime katılmasının önünü açmıştır.",
+      "D": "Meclisteki milletvekili sayısını azaltmıştır."
+    },
+    "dogru_sik": "C",
+    "ipucu": "Hakkın verildiği kişi grubunun kimler olduğuna bak.",
+    "cozum_adimlari": [
+      "Seçme ve seçilme hakkı verilen grup kadınlardır.",
+      "Bu hak kadınların hem oy kullanmasını hem de meclise girebilmesini sağlar.",
+      "Böylece kadınlar yönetime katılabilir.",
+      "Doğru cevap C seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Hak verilmesini başka grubun hakkının kalkması sanır.",
+      "B": "Hakkın kapsamını karıştırır.",
+      "C": "Doğru.",
+      "D": "Sonucu sayıyla ilişkilendirir."
+    },
+    "zorluk": 2,
+    "soru_tipi": "cikarim",
+    "olumsuzluk": false,
+    "baglam_islevi": "ipucu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-010",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.5.2",
+    "surec_bileseni": "b",
+    "konu": "Üretim, Dağıtım ve Tüketim",
+    "alt_konu": "İstek ve ihtiyaç",
+    "soru_metni": "İhtiyaçlar yaşamak ve eğitim görmek için gerekli olan şeylerdir. İstekler ise olmasa da yaşamı sürdürebildiğimiz şeylerdir. Buna göre aşağıdakilerden hangisi bir isteğe örnektir?",
+    "siklar": {
+      "A": "Sağlıklı beslenmek için meyve almak",
+      "B": "En yeni model oyun konsolunu almak",
+      "C": "Okulda kullanmak için defter almak",
+      "D": "Soğuk havada giymek için mont almak"
+    },
+    "dogru_sik": "B",
+    "ipucu": "Olmasa da hayatımızı ve eğitimimizi sürdürebileceğimiz bir şey ara.",
+    "cozum_adimlari": [
+      "Meyve, defter ve mont yaşam ve eğitim için gerekli olan ihtiyaçlardır.",
+      "Oyun konsolu olmadan da yaşam ve eğitim sürer.",
+      "Bu nedenle konsol bir istektir.",
+      "Doğru cevap B seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Beslenmeyi isteğe bağlı sanır.",
+      "B": "Doğru.",
+      "C": "Okul gereçlerini isteğe bağlı sanır.",
+      "D": "Giyinmeyi isteğe bağlı sanır."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "ipucu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  },
+  {
+    "id": "SOS4-S-012",
+    "sinif": 4,
+    "ders": "Sosyal Bilgiler",
+    "mufredat_surum": "Maarif Modeli SB DÖP (tymm 2026-09-02)",
+    "kazanim_kodu": "SB.4.4.3",
+    "surec_bileseni": "a",
+    "konu": "Etkin Vatandaşlık",
+    "alt_konu": "Demokratik katılım",
+    "soru_metni": "Bir sınıf, gezi yerini demokratik yolla belirlemek istemektedir. Aşağıdakilerden hangisi bu süreçte öğrencilerin katılımını doğrudan sağlayan bir adımdır?",
+    "siklar": {
+      "A": "Gezi yerinin öğretmen tarafından seçilmesi",
+      "B": "Kararın okul yönetimi tarafından verilmesi",
+      "C": "Gezi yerinin sınıf başkanı tarafından seçilmesi",
+      "D": "Önerilerin sınıfta tartışılıp oylanması"
+    },
+    "dogru_sik": "D",
+    "ipucu": "Karara bütün öğrencilerin nasıl dahil olabileceğini düşün.",
+    "cozum_adimlari": [
+      "Demokratik karar sürecinde öğrenciler görüş bildirir ve karara katılır.",
+      "Önerilerin tartışılıp oylanması öğrencilerin doğrudan katılımını sağlar.",
+      "Kararı tek bir kişinin veya kurumun vermesi katılımı sağlamaz.",
+      "Doğru cevap D seçeneğidir."
+    ],
+    "celdirici_gerekce": {
+      "A": "Karar yetkisini yetişkine bırakmayı demokrasi sanır.",
+      "B": "Yönetimi karar mercii sanır.",
+      "C": "Temsilciyi sürecin yerine koyar.",
+      "D": "Doğru."
+    },
+    "zorluk": 1,
+    "soru_tipi": "bilgi",
+    "olumsuzluk": false,
+    "baglam_islevi": "ipucu",
+    "gorsel_gerekli": false,
+    "kaynak_turu": "ozgun_ai",
+    "curriculum_status": "source_pending",
+    "program_note": "GECIS_ONCEKI_PROGRAM (2026-27): TYMM kodu yürürlükte sayılmaz; kazanım kodu doğrulanmadı. Kaynak: registry 2026-10-24 kararı."
+  }
+]

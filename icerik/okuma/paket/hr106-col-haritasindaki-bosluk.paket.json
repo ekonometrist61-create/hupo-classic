@@ -79,14 +79,14 @@
         }
       ],
       "kanit_duzeyi": "C",
-      "program_surumu": "TYMM 2026-27 (8. sınıf; okuma evresi insan editörce kontrol edilecek)",
+      "program_surumu": "Önceki program (8. sınıf; geçiş dönemi, resmî program eşleştirmesi insan editörce yapılacak)",
       "denetim": {
         "ajan_a": "pending",
         "ajan_b": "pending",
         "insan": "pending"
       },
       "olculen": {
-        "kelime_sayisi": 3976,
+        "kelime_sayisi": 3977,
         "tahmini_sure_dk": 30,
         "sayfa_sayisi": 34,
         "soru_sayisi": 5,
@@ -106,7 +106,7 @@
         "simge_sayisi": 1
       }
     },
-    "tanitim": "Haritanın ortasındaki boş alanı Asya ve Yusuf uydurarak değil, kaynakları karşılaştırarak ve belirsizliği açıkça göstererek anlamaya çalışır.",
+    "tanitim": "Haritanın ortasındaki boş alanı Asya ve bir arkadaş uydurarak değil, kaynakları karşılaştırarak ve belirsizliği açıkça göstererek anlamaya çalışır.",
     "durum": "taslak",
     "fis_kodu": "HR-106"
   },
@@ -249,7 +249,7 @@
         },
         {
           "t": "metin",
-          "v": ", bir anlatıda geçen “üç günlük yol” ifadesini kilometreye çevirmek istedi. Meryem Hanım, yolculuğun hızının koşullara göre değiştiğini söyledi. Üç gün, her kervan için aynı mesafeyi göstermeyebilirdi. Dağ, kum, hava ve yük durumu sonucu etkiliyordu. Bu nedenle sayısal kesinlik üretmek yanıltıcı olabilirdi.\n\nAsya, bu çalışmanın sandığından daha çok dil bilgisi gerektirdiğini fark etti. Eski bir sözcüğün çevrilmesindeki küçük bir fark, haritada yüzlerce kilometrelik sapmaya neden olabilirdi. Metinleri okurken yalnızca ne söylendiğine değil, nasıl söylendiğine de bakması gerekiyordu."
+          "v": ", bir anlatıda geçen “üç günlük yol” ifadesini kilometreye çevirmek istedi. Meryem Hanım, yolculuğun hızının koşullara göre değiştiğini söyledi. Üç gün, her kervan için aynı mesafeyi göstermeyebilirdi. Dağ, kum, hava ve yük durumu da sonucu etkiliyordu. Bu nedenle sayısal kesinlik üretmek yanıltıcı olabilirdi.\n\nAsya, bu çalışmanın sandığından daha çok dil bilgisi gerektirdiğini fark etti. Eski bir sözcüğün çevrilmesindeki küçük bir fark, haritada yüzlerce kilometrelik sapmaya neden olabilirdi. Metinleri okurken yalnızca ne söylendiğine değil, nasıl söylendiğine de bakması gerekiyordu."
         }
       ]
     },
@@ -1062,22 +1062,22 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Kum rengi kâğıdın bir bölümü"
-        },
-        {
-          "id": "B",
           "metin": "Kervan yolunun başlangıcı"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Ticaret merkezlerinin adları"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Dağların çizgileri"
+        },
+        {
+          "id": "D",
+          "metin": "Kum rengi kâğıdın bir bölümü"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Haritanın tam ortasında kum rengi kâğıdın bir bölümü boştu."
     },
     {
@@ -1088,48 +1088,48 @@
       "secenekler": [
         {
           "id": "A",
-          "metin": "Haritanın bilerek gizlenmesinden"
-        },
-        {
-          "id": "B",
-          "metin": "Kâğıdın yırtılmasından"
-        },
-        {
-          "id": "C",
           "metin": "Kullanılan kaynakların o bölge için yetersiz kalmasından"
         },
         {
+          "id": "B",
+          "metin": "Haritacının bir rotayı bilerek gizlemesinden"
+        },
+        {
+          "id": "C",
+          "metin": "Kâğıdın eskiliğinden ve yırtılmasından dolayı"
+        },
+        {
           "id": "D",
-          "metin": "Bir kervanın yolunu değiştirmesinden"
+          "metin": "Bir kervanın güzergâhını sık sık değiştirmesinden"
         }
       ],
-      "dogru": "C",
+      "dogru": "A",
       "aciklama": "Boşluk, kullanılan kaynakların o bölge için yetersiz olmasından kaynaklanıyordu."
     },
     {
       "id": "s3",
       "beceri": "yorumlama",
       "dayanak_sayfa": 8,
-      "metin": "Asya'nın bu sözüne göre bir yolu “olası” diye göstermek ne anlama gelir?",
+      "metin": "Asya'nın “Bir yolun olası olduğunu göstermek, onun kesin olduğunu söylemekten farklı.” sözüne göre bir yolu “olası” diye göstermek ne anlama gelir?",
       "secenekler": [
         {
           "id": "A",
-          "metin": "Yolun kesin olduğunu iddia etmemek"
-        },
-        {
-          "id": "B",
           "metin": "Yolun hiç kullanılmadığını söylemek"
         },
         {
-          "id": "C",
+          "id": "B",
           "metin": "Yolun en kısa yol olduğunu belirtmek"
         },
         {
-          "id": "D",
+          "id": "C",
           "metin": "Haritayı tamamen silmek"
+        },
+        {
+          "id": "D",
+          "metin": "Yolun kesin olduğunu iddia etmemek"
         }
       ],
-      "dogru": "A",
+      "dogru": "D",
       "aciklama": "Bir yolun olası olduğunu göstermek, kesin olduğunu iddia etmek anlamına gelmez."
     },
     {
@@ -1144,15 +1144,15 @@
         },
         {
           "id": "B",
-          "metin": "Yolcuların hep aynı kişiler olduğunu"
+          "metin": "Yolcuların her dönemde hep aynı kişilerden oluştuğunu"
         },
         {
           "id": "C",
-          "metin": "Bilet fiyatlarının arttığını"
+          "metin": "Bilet fiyatlarının zamanla sürekli arttığını"
         },
         {
           "id": "D",
-          "metin": "Yolun tamamen kapandığını"
+          "metin": "Yolun zamanla tamamen kapanıp kullanılmadığını"
         }
       ],
       "dogru": "A",
@@ -1162,7 +1162,7 @@
       "id": "s5",
       "beceri": "degerlendirme",
       "dayanak_sayfa": 18,
-      "metin": "Bu sözden çıkan en doğru sonuç hangisidir?",
+      "metin": "Yoldaşın “Bir görüntünün bana ne kadar ikna edici geldiğiyle ne kadar doğru olduğu ayrı şeylermiş.” sözünden çıkan en doğru sonuç hangisidir?",
       "secenekler": [
         {
           "id": "A",
@@ -1174,14 +1174,14 @@
         },
         {
           "id": "C",
-          "metin": "Bir görüntü ne kadar ikna edici olursa o kadar güvenilirdir"
+          "metin": "Bir görüntünün ikna ediciliği ile doğruluğu ayrı şeylerdir"
         },
         {
           "id": "D",
-          "metin": "Bir görüntünün ikna ediciliği ile doğruluğu ayrı şeylerdir"
+          "metin": "Bir görüntü ne kadar ikna edici olursa o kadar güvenilirdir"
         }
       ],
-      "dogru": "D",
+      "dogru": "C",
       "aciklama": "İkna edici görünen bir görüntü her zaman doğru olmayabilir; bu iki özellik ayrı değerlendirilmelidir."
     }
   ],

@@ -84,8 +84,9 @@ export default async function proxy(request: NextRequest) {
   if (needsAuth && !isAuthenticated) {
     const url = request.nextUrl.clone();
     url.pathname = yonetimAlani ? YONETIM_GIRIS : VELI_GIRIS;
-    // Giris sonrasi donus icin hedef yolu sakla.
-    url.searchParams.set("next", normalizedPathname);
+    // Giris sonrasi donus icin hedef yolu sakla (sorgu dizgisiyle birlikte).
+    // Istemci (SignInForm) bu degeri yalnizca kapinin kendi alanindaysa kullanir.
+    url.searchParams.set("next", `${normalizedPathname}${request.nextUrl.search}`);
     return NextResponse.redirect(url);
   }
 
