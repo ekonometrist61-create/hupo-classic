@@ -116,7 +116,8 @@ export function kur({ R, sec, karistir, ekle, konum }) {
     const spec = { tip_id: 'kesisen-dogrular', parametreler: { dogrular: ['d', 'e'], theta, olcekli: false,
       isaretler: [{ bolge: 0, goster: 'deger' }, { bolge, goster: 'sembol', sembol: '■' }] } };
     const havuz = [30, 45, 60, 75, 105, 120, 135, 150].filter((v) => v !== dogru && v !== diger && v !== 90);
-    const cel = [diger, 90, sec(havuz)];
+    // 90° sabit çeldirici olmasın: her zaman yanlış olduğu için metin tek başına eler. İki çeldirici rastgele seçilir.
+    const cel = [diger, ...karistir(havuz).slice(0, 2)];
     ekle({ kod: 'MAT.5.3.4', konu: 'Geometrik Şekiller', alt_konu: 'Kesişen iki doğrunun oluşturduğu açılar', zorluk: tur === 'ters' ? 1 : 2, spec, olcekli: false,
       kok: `d ve e doğruları bir noktada kesişmiştir. Şekil ölçekli çizilmemiştir. Bu doğrular arasında kalan açılardan biri ${theta}°'dir. Buna göre ■ ile gösterilen açı kaç derecedir?`,
       dogru: `${dogru}°`, celdirici: cel.map((v) => `${v}°`),
