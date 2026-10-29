@@ -4,7 +4,7 @@ Seçilen ders ve sınıf için şekilli/görselli çoktan seçmeli soruları ür
 
 ## Hızlı kullanım
 ```
-node tools/gorsel-motoru/testler.mjs                                  # tüm testler (42)
+node tools/gorsel-motoru/testler.mjs                                  # tüm testler (44)
 node tools/gorsel-motoru/uret.mjs --dogrula                           # kayıt sözleşmesi
 node tools/gorsel-motoru/uret.mjs --liste                             # şablon listesi
 node tools/gorsel-motoru/uret.mjs --ders matematik --sinif 5 --kod MAT.5.5.1 --adet 40 --tohum 7 --klasor <dizin>

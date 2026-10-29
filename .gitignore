@@ -59,3 +59,5 @@ web-panel/public/characters/**/*.prompt.txt
 mobile-app/firebase_defines.json
 mobile-app/android/app/google-services.json
 mobile-app/ios/Runner/GoogleService-Info.plist
+.playwright-mcp/
+scripts/growth-ajan/__pycache__/
