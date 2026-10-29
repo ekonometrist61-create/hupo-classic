@@ -1,0 +1,48 @@
+{
+  "yonetim": {
+    "paketler": {
+      "yukleniyor": "Loading package matrix…",
+      "matrisBaslik": "Package matrix",
+      "modul": "Module",
+      "surumEtiketi": "Version {surum}",
+      "aboneEtiketi": "{sayi} active subscribers",
+      "taslak": "draft",
+      "arsivEtiketi": "archived",
+      "erisimTam": "Full",
+      "erisimSinirli": "{kota} per day",
+      "modulBaslik": "Module decisions and publishing",
+      "modulSec": "Select module",
+      "yayinla": "Publish module",
+      "eksikKararlar": "Decisions are missing for these packages: {liste}",
+      "aktifAbone": "{sayi} active subscribers",
+      "etkilenecek": "{sayi} subscribers move to the new version",
+      "karar": "Decision",
+      "kararSec": "Select",
+      "kararSecenek": {
+        "dahil": "Included (full)",
+        "sinirli": "Limited (daily quota)",
+        "haric": "Excluded",
+        "yeni_paket": "Will be a new package"
+      },
+      "gunlukKota": "Daily quota",
+      "mevcutAboneleri": "Move existing subscribers to the new version",
+      "gerekce": "Reason (optional)",
+      "kaydet": "Save decision",
+      "kararKaydedildi": "Decision saved. Publish the module to apply it.",
+      "yayinlandi": "Module published. Affected packages: {sayi}.",
+      "hataKota": "Quota must be a whole number of 0 or more.",
+      "hataSinirliKota": "Enter a daily quota for a limited decision.",
+      "hataKararSec": "Select a decision before saving.",
+      "yeniModulBaslik": "New module",
+      "yeniModulKod": "Code (lowercase letters, digits, underscore)",
+      "yeniModulAd": "Name",
+      "yeniModulAciklama": "Description (optional)",
+      "yeniModulOlustur": "Create draft module",
+      "modulOlusturuldu": "Draft module created. Decide for every package, then publish.",
+      "hataModulAlan": "Code and name are required. Code must start with a lowercase letter, 2-30 characters (letters, digits, underscore).",
+      "arsivle": "Archive module",
+      "arsivOnay": "This module will be archived and access will close. Continue?",
+      "arsivlendi": "Module archived."
+    }
+  }
+}

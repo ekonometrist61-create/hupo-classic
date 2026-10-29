@@ -9,6 +9,8 @@ import '../models/membership_models.dart';
 import '../models/mock_exam_models.dart';
 import '../models/models.dart';
 import '../models/mufredat_models.dart';
+import '../models/kota_models.dart';
+import '../models/paket_erisim_models.dart';
 import '../models/parent_link_models.dart';
 import '../models/privacy_models.dart';
 
@@ -261,6 +263,37 @@ class QuizRepository {
       return MembershipStatus.fromMap(Map<String, dynamic>.from(row));
     } catch (_) {
       return MembershipStatus.unknown;
+    }
+  }
+
+  /// Modül erişim haritası (`my_access`). Hata ya da eksik modül = kapalı (fail-closed):
+  /// bu durumda bölüm kilitli görünür; istemci erişimi kendi başına açmaz.
+  Future<Map<String, ModulErisim>> fetchMyAccess() async {
+    try {
+      final data = await _client.rpc('my_access');
+      if (data is! Map) return const {};
+      return {
+        for (final e in data.entries)
+          if (e.value is Map)
+            e.key as String: ModulErisim.fromMap(Map<String, dynamic>.from(e.value as Map)),
+      };
+    } catch (_) {
+      return const {};
+    }
+  }
+
+  /// Bugünkü ücretsiz kota durumu (modül → kota). Hata = boş: rozet gösterilmez.
+  Future<Map<String, ModulKota>> fetchKotaDurumu() async {
+    try {
+      final data = await _client.rpc('my_kota_durumu');
+      if (data is! Map) return const {};
+      return {
+        for (final e in data.entries)
+          if (e.value is Map)
+            e.key as String: ModulKota.fromMap(Map<String, dynamic>.from(e.value as Map)),
+      };
+    } catch (_) {
+      return const {};
     }
   }
 

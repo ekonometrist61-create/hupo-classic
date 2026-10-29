@@ -1,0 +1,48 @@
+{
+  "yonetim": {
+    "paketler": {
+      "yukleniyor": "Paket matrisi yükleniyor…",
+      "matrisBaslik": "Paket matrisi",
+      "modul": "Modül",
+      "surumEtiketi": "Sürüm {surum}",
+      "aboneEtiketi": "{sayi} aktif abone",
+      "taslak": "taslak",
+      "arsivEtiketi": "arşiv",
+      "erisimTam": "Tam",
+      "erisimSinirli": "Günlük {kota}",
+      "modulBaslik": "Modül kararları ve yayın",
+      "modulSec": "Modül seç",
+      "yayinla": "Modülü yayınla",
+      "eksikKararlar": "Yayın için şu paketlerde karar eksik: {liste}",
+      "aktifAbone": "{sayi} aktif abone",
+      "etkilenecek": "{sayi} abone yeni sürüme geçer",
+      "karar": "Karar",
+      "kararSec": "Seçin",
+      "kararSecenek": {
+        "dahil": "Dahil (tam)",
+        "sinirli": "Sınırlı (günlük kota)",
+        "haric": "Hariç",
+        "yeni_paket": "Yeni paket olacak"
+      },
+      "gunlukKota": "Günlük kota",
+      "mevcutAboneleri": "Mevcut aboneleri yeni sürüme taşı",
+      "gerekce": "Gerekçe (isteğe bağlı)",
+      "kaydet": "Kararı kaydet",
+      "kararKaydedildi": "Karar kaydedildi. Yayın için modülü yayınlayın.",
+      "yayinlandi": "Modül yayınlandı. Etkilenen paket sayısı: {sayi}.",
+      "hataKota": "Kota 0 veya daha büyük bir tam sayı olmalı.",
+      "hataSinirliKota": "Sınırlı karar için günlük kota girin.",
+      "hataKararSec": "Kaydetmeden önce bir karar seçin.",
+      "yeniModulBaslik": "Yeni modül",
+      "yeniModulKod": "Kod (küçük harf, rakam, alt çizgi)",
+      "yeniModulAd": "Ad",
+      "yeniModulAciklama": "Açıklama (isteğe bağlı)",
+      "yeniModulOlustur": "Taslak modül oluştur",
+      "modulOlusturuldu": "Taslak modül oluşturuldu. Her pakette karar verip yayınlayın.",
+      "hataModulAlan": "Kod ve ad zorunlu. Kod küçük harfle başlamalı, 2-30 karakter (harf, rakam, alt çizgi).",
+      "arsivle": "Modülü arşivle",
+      "arsivOnay": "Bu modül arşivlenecek ve erişim kapanacak. Devam edilsin mi?",
+      "arsivlendi": "Modül arşivlendi."
+    }
+  }
+}

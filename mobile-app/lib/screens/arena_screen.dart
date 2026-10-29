@@ -5,7 +5,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../models/paket_erisim_models.dart';
 import '../providers/app_providers.dart';
+import '../widgets/paket/kota_rozeti.dart';
+import '../widgets/paket/modul_kapisi.dart';
 import '../theme/app_theme.dart';
 import '../widgets/daily_challenge_card.dart';
 import '../widgets/hupo/hupo.dart';
@@ -72,9 +75,16 @@ class ArenaScreen extends ConsumerWidget {
                   const SizedBox(height: 12),
                   _DenemeSinaviKarti(
                     onTap: () => Navigator.of(context).push(
-                      MaterialPageRoute(builder: (_) => const MockExamsListScreen()),
+                      MaterialPageRoute(
+                        builder: (_) => const ModulKapisi(
+                          modul: 'deneme',
+                          gereken: ModulErisimSeviyesi.sinirli,
+                          child: MockExamsListScreen(),
+                        ),
+                      ),
                     ),
                   ),
+                  const KotaRozeti(modul: 'deneme'),
                   const SizedBox(height: 12),
                   _ArkadasKarti(
                     onTap: () => Navigator.of(context).push(

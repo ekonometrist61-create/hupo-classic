@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:url_launcher/url_launcher.dart';
 
-import '../config/env.dart';
 import '../theme/app_theme.dart';
 import 'ui/chunky_button.dart';
 
@@ -12,20 +10,15 @@ const String kVeliMesaji =
     "Merhaba, Hupolingo'da bugünkü ücretsiz sorularımı tamamladım. "
     "Yarın yeni sorularla devam edebilirim. Premium'u veli panelinden açabilir misin?";
 
-/// Veli panelindeki üyelik/satın alma sayfası. Ödeme veli tarafından, veli hesabıyla tamamlanır.
-final Uri kVeliPanelUyelikUri = Uri.parse('${Env.webBaseUrl}/veli-paneli/uyelik');
-
+// Çocuk uygulamasında satın alma bağlantısı YOKTUR (Apple 3.1.1 / Google Play ödeme politikası).
+// Bu sayfa yalnızca mesajı kopyalatır; velinin ödeme/üyelik adımını kendi cihazında yapması beklenir.
 const String _baslik = 'Velin için mesaj';
 const String _aciklama =
     'Bu mesajı kopyalayıp velinle paylaşabilirsin. Ücretli sürüm kararı velinin.';
 const String _kopyalaEtiketi = 'Mesajı kopyala';
-const String _panelEtiketi = 'Veli panelini aç';
-const String _panelNotu =
-    'Ödemeyi velin kendi hesabıyla tamamlar. Bu uygulamada kart bilgisi istenmez.';
 const String _kapatEtiketi = 'Kapat';
 const String _kopyalandi = 'Mesaj kopyalandı. Velinle paylaşabilirsin.';
 const String _kopyalanamadi = 'Mesaj kopyalanamadı. Metni elle seçip kopyalayabilirsin.';
-const String _panelAcilamadi = 'Sayfa açılamadı. Bilgisayardan veya tarayıcıdan tekrar dene.';
 
 /// Veliye gösterilecek mesaj ve veli panelinin bağlantısını içeren alt sayfa.
 Future<void> showVeliMesajiSheet(BuildContext context) {
@@ -53,15 +46,6 @@ class _VeliMesajiSheetState extends State<_VeliMesajiSheet> {
       if (mounted) setState(() => _geriBildirim = _kopyalandi);
     } catch (_) {
       if (mounted) setState(() => _geriBildirim = _kopyalanamadi);
-    }
-  }
-
-  Future<void> _panelAc() async {
-    try {
-      final acildi = await launchUrl(kVeliPanelUyelikUri, mode: LaunchMode.externalApplication);
-      if (!acildi && mounted) setState(() => _geriBildirim = _panelAcilamadi);
-    } catch (_) {
-      if (mounted) setState(() => _geriBildirim = _panelAcilamadi);
     }
   }
 
@@ -100,18 +84,6 @@ class _VeliMesajiSheetState extends State<_VeliMesajiSheet> {
               icon: Icons.copy_rounded,
               onPressed: _kopyala,
               height: 52,
-            ),
-            const SizedBox(height: 10),
-            ChunkyButton.light(
-              label: _panelEtiketi,
-              icon: Icons.open_in_new_rounded,
-              onPressed: _panelAc,
-            ),
-            const SizedBox(height: 10),
-            Text(
-              _panelNotu,
-              textAlign: TextAlign.center,
-              style: appText(size: 13, weight: FontWeight.w700, color: AppColors.muted),
             ),
             if (_geriBildirim != null) ...[
               const SizedBox(height: 10),

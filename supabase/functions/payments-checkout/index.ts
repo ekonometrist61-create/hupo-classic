@@ -1,5 +1,5 @@
 // Supabase Edge Function: payments-checkout  (JWT DOĞRULAMASI AÇIK kalır)
-// Veli web panelinden çağrılır: POST { plan_kod } + Authorization: Bearer <kullanıcı JWT'si>
+// Veli web panelinden çağrılır: POST { plan_kod, on_bilgi: {surum, kabul, cayma_istisna} } + Authorization: Bearer <kullanıcı JWT'si>
 // -> bekleyen ödeme oluşturur, iyzico Checkout Form başlatır, { payment_id, odeme_url } döner.
 // Gizli anahtarlar: IYZICO_API_KEY, IYZICO_SECRET_KEY, IYZICO_BASE_URL (varsayılan sandbox),
 // WEB_PANEL_URL. SUPABASE_URL / SUPABASE_ANON_KEY / SUPABASE_SERVICE_ROLE_KEY otomatik gelir.
@@ -12,6 +12,9 @@ declare const Deno: {
   env: { get(k: string): string | undefined };
   serve(handler: (req: Request) => Promise<Response> | Response): void;
 };
+
+// Ön bilgilendirme formu sürümü. web-panel/src/lib/legal/content.ts (odemeOnBilgiSurum) ile AYNI olmalıdır.
+const ON_BILGI_SURUM = "odeme-on-bilgi-2026-10-taslak-1";
 
 function cors(req: Request): Record<string, string> {
   const allowed = (Deno.env.get("WEB_PANEL_URL") ?? "").replace(/\/+$/, "");
@@ -54,18 +57,38 @@ Deno.serve(async (req) => {
   const { data: prof } = await admin.from("profiles").select("role, full_name").eq("id", user.id).maybeSingle();
   if (!prof || prof.role !== "veli") return reply(req, 403, { hata: "Yalnızca veli hesabı satın alabilir" });
 
-  // 3) Gövde: yalnızca plan_kod. Tutar İSTEMCİDEN ALINMAZ.
+  // 3) Gövde: plan_kod ve ön bilgilendirme onayı. Tutar İSTEMCİDEN ALINMAZ.
   let planKod = "";
+  let onBilgiOnayli = false;
   try {
     const b = await req.json();
     planKod = typeof b?.plan_kod === "string" ? b.plan_kod : "";
+    // Ön bilgilendirme: iki onay kutusu ve form sürümü zorunlu (sürüm sunucudaki sürümle eşleşmeli)
+    const ob = b?.on_bilgi;
+    onBilgiOnayli = ob?.surum === ON_BILGI_SURUM && ob?.kabul === true && ob?.cayma_istisna === true;
   } catch { /* boş */ }
   if (!/^[a-z0-9_]{2,30}$/.test(planKod)) return reply(req, 400, { hata: "Geçersiz plan" });
+  if (!onBilgiOnayli) return reply(req, 400, { hata: "Ön bilgilendirme onayı gerekli" });
 
   // 4) Bekleyen ödeme (tutar plans tablosundan)
   const { data: pend, error: pErr } = await admin.rpc("payment_create_pending", { p_veli_id: user.id, p_plan_kod: planKod });
   if (pErr || !pend) return reply(req, 400, { hata: "Plan satın alınamıyor" });
   const paymentId: string = pend.payment_id;
+
+  // 4b) Onay kanıtı ödeme kaydına bağlanır. Yazılamazsa ödeme sayfası açılmaz.
+  const { error: oErr } = await admin.from("odeme_on_bilgi_onaylari").insert({
+    payment_id: paymentId,
+    veli_id: user.id,
+    surum: ON_BILGI_SURUM,
+    kabul: true,
+    cayma_istisna: true,
+    ip: cleanIp(req.headers.get("x-forwarded-for")),
+  });
+  if (oErr) {
+    await admin.rpc("payment_fail", { p_payment_id: paymentId, p_neden: "on_bilgi_kaydi" });
+    console.error("ön bilgilendirme onayı yazılamadı", oErr.code);
+    return reply(req, 500, { hata: "Ödeme başlatılamadı, lütfen tekrar deneyin" });
+  }
 
   // 5) iyzico Checkout Form başlat
   const email = user.email ?? "";

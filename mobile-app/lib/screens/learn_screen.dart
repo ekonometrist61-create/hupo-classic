@@ -3,7 +3,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
+import '../models/paket_erisim_models.dart';
 import '../providers/app_providers.dart';
+import '../widgets/paket/kota_rozeti.dart';
+import '../widgets/paket/modul_kapisi.dart';
 import '../theme/app_theme.dart';
 import '../widgets/okuma/okuma_vitrin.dart';
 import '../widgets/ui/game_card.dart';
@@ -83,6 +86,7 @@ class LearnScreen extends ConsumerWidget {
                     MaterialPageRoute(builder: (_) => const CipherListScreen()),
                   ),
                 ),
+                const KotaRozeti(modul: 'carpma'),
                 const SizedBox(height: 10),
                 _AracKarti(
                   simge: Icons.public_rounded,
@@ -90,9 +94,16 @@ class LearnScreen extends ConsumerWidget {
                   baslik: 'Kelime Evreni',
                   aciklama: 'Eş anlamlı, zıt anlamlı ve eş sesli kelimeler.',
                   onTap: () => Navigator.of(context).push(
-                    MaterialPageRoute(builder: (_) => const KelimeEvreniScreen()),
+                    MaterialPageRoute(
+                      builder: (_) => const ModulKapisi(
+                        modul: 'kelime_evreni',
+                        gereken: ModulErisimSeviyesi.sinirli,
+                        child: KelimeEvreniScreen(),
+                      ),
+                    ),
                   ),
                 ),
+                const KotaRozeti(modul: 'kelime_evreni'),
               ],
             ),
           ),

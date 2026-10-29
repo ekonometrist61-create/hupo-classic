@@ -2,7 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 import '../models/models.dart';
+import '../models/paket_erisim_models.dart';
 import '../providers/app_providers.dart';
+import '../widgets/paket/modul_kapisi.dart';
 import '../theme/app_theme.dart';
 import '../utils/motion.dart';
 import '../widgets/daily_goal_card.dart';
@@ -86,7 +88,11 @@ class HomeScreen extends ConsumerWidget {
     }
 
     await navigator.push(MaterialPageRoute(
-      builder: (_) => QuizScreen(title: title, questions: questions),
+      builder: (_) => ModulKapisi(
+        modul: 'soru_cevap',
+        gereken: ModulErisimSeviyesi.sinirli,
+        child: QuizScreen(title: title, questions: questions),
+      ),
     ));
 
     // Quiz'den dönünce özet verileri yenile.

@@ -83,6 +83,7 @@ export const NAV_GROUPS: NavGroup[] = [
     items: [
       { key: "payments", icon: <DollarLineIcon />, path: "/yonetim/odemeler", roles: ADMIN },
       { key: "plans", icon: <BoxIcon />, path: "/yonetim/planlar", roles: ADMIN },
+      { key: "paketler", icon: <BoxIcon />, path: "/yonetim/paketler", roles: ADMIN },
       { key: "trials", icon: <TaskIcon />, path: "/yonetim/denemeler", roles: ADMIN },
       { key: "destekMasasi", icon: <TaskIcon />, path: "/yonetim/destek-masasi", roles: ADMIN },
       { key: "satisHatti", icon: <DollarLineIcon />, path: "/yonetim/satis-hatti", roles: ADMIN },

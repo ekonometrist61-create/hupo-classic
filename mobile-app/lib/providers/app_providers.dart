@@ -13,6 +13,8 @@ import '../models/membership_models.dart';
 import '../models/mock_exam_models.dart';
 import '../models/models.dart';
 import '../models/mufredat_models.dart';
+import '../models/kota_models.dart';
+import '../models/paket_erisim_models.dart';
 import '../models/privacy_models.dart';
 import '../models/review_models.dart';
 import '../models/survey_models.dart';
@@ -61,6 +63,14 @@ final leagueLadderProvider = FutureProvider.autoDispose<List<LeagueTier>>(
 
 final membershipProvider = FutureProvider.autoDispose<MembershipStatus>(
     (ref) => ref.watch(quizRepositoryProvider).fetchMembership());
+
+/// Bugünkü ücretsiz kota durumu (modül → kota). Rozetler bu sağlayıcıyı izler.
+final kotaDurumuProvider = FutureProvider.autoDispose<Map<String, ModulKota>>(
+    (ref) => ref.watch(quizRepositoryProvider).fetchKotaDurumu());
+
+/// Modül erişim haritası (`my_access`). Bölüm kapıları bu sağlayıcıyı izler.
+final modulErisimProvider = FutureProvider.autoDispose<Map<String, ModulErisim>>(
+    (ref) => ref.watch(quizRepositoryProvider).fetchMyAccess());
 
 /// Çocuğun ücretsiz deneme durumu ve sınır kalanları.
 final denemeHakProvider = FutureProvider.autoDispose<DenemeHak>(

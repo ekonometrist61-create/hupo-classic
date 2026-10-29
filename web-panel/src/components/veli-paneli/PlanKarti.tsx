@@ -1,6 +1,8 @@
 "use client";
 
+import { odemeOnBilgiSurum } from "@/lib/legal/content";
 import { createClient } from "@/utils/supabase/client";
+import Link from "next/link";
 import { useTranslations } from "next-intl";
 import { useEffect, useState } from "react";
 
@@ -20,11 +22,15 @@ type Durum = "yukleniyor" | "hata" | "hazirlik" | PlanSatir[];
 // Satın alma veli oturumuyla payments-checkout fonksiyonunu çağırır; tutar istemciden alınmaz.
 // Ödeme iyzico sayfasında 3D Secure ile tamamlanır; kart bilgisi bu uygulamada istenmez.
 // K7: koşullar (ücret, süre, deneme, yenileme) CTA'nın hemen üstünde yazılır; veri yoksa "bilinmiyor".
+// Ön bilgilendirme: iki onay kutusu işaretlenmeden ödeme sayfası açılmaz (sunucu da zorunlu kılar).
 export default function PlanKarti() {
   const t = useTranslations("veliPaneli.membership.plans");
   const [durum, setDurum] = useState<Durum>("yukleniyor");
   const [odemeKod, setOdemeKod] = useState<string | null>(null);
   const [odemeHata, setOdemeHata] = useState<string | null>(null);
+  const [onBilgiKabul, setOnBilgiKabul] = useState(false);
+  const [onBilgiCayma, setOnBilgiCayma] = useState(false);
+  const onBilgiTamam = onBilgiKabul && onBilgiCayma;
 
   useEffect(() => {
     let cancelled = false;
@@ -49,13 +55,16 @@ export default function PlanKarti() {
   };
 
   const satinAl = async (kod: string) => {
-    if (odemeKod) return; // çift tıklama koruması
+    if (odemeKod || !onBilgiTamam) return; // çift tıklama ve onaysız satın alma koruması
     setOdemeKod(kod);
     setOdemeHata(null);
     try {
       const supabase = createClient();
       const { data, error } = await supabase.functions.invoke("payments-checkout", {
-        body: { plan_kod: kod },
+        body: {
+          plan_kod: kod,
+          on_bilgi: { surum: odemeOnBilgiSurum, kabul: onBilgiKabul, cayma_istisna: onBilgiCayma },
+        },
       });
       const url = (data as { odeme_url?: string } | null)?.odeme_url;
       if (error || !url) {
@@ -86,6 +95,40 @@ export default function PlanKarti() {
 
       {durum === "hazirlik" && (
         <p className="text-sm text-gray-600 dark:text-gray-300">{t("preparing")}</p>
+      )}
+
+      {Array.isArray(durum) && (
+        <div className="mb-4 space-y-2 rounded-xl border border-gray-200 bg-gray-50 p-4 text-sm dark:border-gray-700 dark:bg-white/3">
+          <label className="flex min-h-11 cursor-pointer items-start gap-3 text-gray-700 dark:text-gray-300">
+            <input
+              type="checkbox"
+              checked={onBilgiKabul}
+              onChange={(e) => setOnBilgiKabul(e.target.checked)}
+              className="mt-0.5 size-5 shrink-0 accent-brand-500"
+            />
+            <span>
+              {t.rich("onBilgiKabul", {
+                link: (chunks) => (
+                  <Link href="/on-bilgilendirme" target="_blank" className="font-semibold text-brand-700 underline underline-offset-4 hover:text-brand-800">
+                    {chunks}
+                  </Link>
+                ),
+              })}
+            </span>
+          </label>
+          <label className="flex min-h-11 cursor-pointer items-start gap-3 text-gray-700 dark:text-gray-300">
+            <input
+              type="checkbox"
+              checked={onBilgiCayma}
+              onChange={(e) => setOnBilgiCayma(e.target.checked)}
+              className="mt-0.5 size-5 shrink-0 accent-brand-500"
+            />
+            <span>{t("onBilgiCayma")}</span>
+          </label>
+          {!onBilgiTamam && (
+            <p className="text-xs text-gray-500 dark:text-gray-400">{t("onBilgiIpucu")}</p>
+          )}
+        </div>
       )}
 
       {Array.isArray(durum) && (
@@ -128,7 +171,7 @@ export default function PlanKarti() {
               <button
                 type="button"
                 onClick={() => void satinAl(p.kod)}
-                disabled={odemeKod !== null}
+                disabled={odemeKod !== null || !onBilgiTamam}
                 aria-busy={odemeKod === p.kod}
                 className="mt-4 inline-flex min-h-11 w-full items-center justify-center rounded-xl bg-brand-500 px-5 text-sm font-bold text-white transition-colors hover:bg-brand-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 disabled:cursor-not-allowed disabled:opacity-60 sm:w-auto"
               >

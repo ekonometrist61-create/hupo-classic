@@ -1,4 +1,5 @@
 import SoruEkrani from "@/components/ogrenci/SoruEkrani";
+import ModulKapisi from "@/components/paket/ModulKapisi";
 import { createClient } from "@/utils/supabase/server";
 import { Link } from "@/i18n/navigation";
 import { redirect } from "next/navigation";
@@ -46,7 +47,9 @@ export default async function SoruSayfasi({
         <span className="text-sm font-medium text-gray-800 dark:text-white">{ders}</span>
       </div>
 
-      <SoruEkrani ders={ders} />
+      <ModulKapisi modul="soru_cevap" gereken="sinirli">
+        <SoruEkrani ders={ders} />
+      </ModulKapisi>
     </div>
   );
 }
