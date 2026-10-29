@@ -38,6 +38,14 @@ Panel 0.x iken: büyük değişiklik 0.Y.0, düzeltme 0.y.Z. Panel 1.0.0'a ancak
 ---
 
 ## Sürüm notları
+### panel 0.6.3 · 2026-10-30
+
+Küçük görünüm ve kod kalitesi düzeltmesi (PATCH).
+- Çerez bandı 320 px'te metni kesmiyor; metin gerekirse iki satıra iniyor. Sayfa sonundaki boşluk bandın ölçülen yüksekliğini izliyor.
+- Çerez bandının görünürlüğü `useSyncExternalStore` ile okunuyor; eslint `set-state-in-effect` uyarısı kalktı. Onay ve ret davranışı aynı.
+
+Migration yok. Uyumluluk: App değişmedi.
+
 ### panel 0.6.2 · 2026-10-30
 
 Küçük görünüm düzeltmesi (PATCH). Landing ekran matrisi bulguları 4–5.
