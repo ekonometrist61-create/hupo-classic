@@ -4995,3 +4995,26 @@ Paketler:
   4. GÖR-058 `questions` kazanım/dayanak alanı kararı ayrı kalır.
   5. `tool/okuma_onizleme/main.dart` 3 analiz hatası (lib dışı, bu işle ilgisiz).
 - **İlgili:** GÖR-058, K-0120, `docs/soru-uretim/SISTEM.md` §4, `supabase/functions/olay-kutusu-gonder/index.ts`.
+### K-0199 · 2026-10-29 · YÖN/VT/WEB/MOBİL · Oturum sonu devri: 1–4. sınıf düzeltmesi yayında (web, sunucu, edge); commit grupları atıldı; landing ve mobil sürüm açık
+- **Tür:** Devir + dağıtım + commit
+- **Konu:** K-0198, GÖR-058, GÖR-017, GÖR-010, çalışma ağacı
+- **Yapılanlar:**
+  - Migration `20261138000000` uzak DB'ye uygulandı (`db query --linked -f`, migration geçmişine yazılmadı); 7 RPC doğrulandı, `_deneme_puan_gorunur(3)=false`, `(5)=true`.
+  - Edge `olay-kutusu-gonder` deploy edildi (veli e-postası 1–4'te puan/sıra yerine doğru/yanlış/boş).
+  - Web paneli Vercel production'a dağıtıldı (`web-panel-fykufbvm7`, Ready; `hupolingo.com` ve `www`). Ana sayfa ve `/veli-paneli/kayit` 200.
+  - Çalışma ağacındaki işler pathspec ile commit'lendi: `a48cadf` (K-0198), `a25e495` (gitignore, README 44 test), `d791a0d` (günlük), `1342fc3` (paket/ödeme P1), `a6a85cd` (kartsız deneme ve kapı yeniden adlandırma), `f7319b3` (kayıt, gizlilik, CSP, yasal), `58dfc57` (analitik UTM), `45bfc06` (landing ve pazarlama), `6a0475f` (veli öğrenme haritası), `e90f6d3` (SISTEM.md ve blueprint).
+  - Her commit öncesi gizli anahtar taraması yapıldı; bulgu çıkmadı. `__pycache__/` ve `*.pyc` ignore'a eklendi.
+- **Durum:** KISMİ. Sunucu, edge ve web TAMAMLANDI; mobil sürüm YAYINLANMADI; push YAPILMADI.
+- **Doğrulama:** KISMİ. PGlite `deneme_1_4_gizle` 25/25 (stub şema); `tsc` (web) temiz; `flutter analyze` (değişen dosyalar) temiz. Ekran görsel kontrolü yapılmadı.
+- **Sahip:** Proje sahibi (karar, onay); geliştirme.
+- **Önem:** Yüksek
+- **Açık kalanlar:**
+  1. **Landing iddiaları (GÖR-017):** "14 Gün İade Garantisi", "%100 Güvenli Ödeme", "3–7. sınıf" ve sahte olmayan ama kanıtsız iddialar hâlâ commit'te (`45bfc06`). Yumuşatılana ya da hukuk teyidine kadar landing Vercel'e gönderilmemeli. `mar-oto-ai` ile yapılacak.
+  2. **Mobil sürüm:** 1–4. sınıf istemci kodu (`mock_exam_models`, `mock_exam_screen`) yayınlanmadı. Yayın öncesi eski istemci `puan: null` alırsa `as num` hatası verebilir; 1–4. sınıf sınavları `aktif=false` olduğu sürece pratikte tetiklenmez.
+  3. **Sahipliği belirsiz, commit'siz:** `AGENTS.md`, `CLAUDE.md`, `PROJE_GUNLUGU.md` (diğer oturumlar), `okuma_vitrin.dart`, `hupo_signature_entrance.dart`, migration `20261136000000_tohum_karar_kayitlari` ve `tests/tohum_karar`. Sahip oturum bitirince ayrı commit'lenmeli.
+  4. **Landing dosyaları:** `Footer`, `Header`, `HeroSection`, `ParentPanelSection` commit sonrası yeniden düzenlenmiş; commit'siz.
+  5. **Uzak DB:** `20261139000000_veli_kazanim_haritasi` ve `20261130`+ paket migration'ları (1130–1137) uzakta uygulanmış mı kesin değil. Migration sahipliği kuralı gereği (`feedback_migrasyon_sahiplik`) önce preview ve içerik okuma yapılmalı.
+  6. **Push:** `feature/crm-growth-2026-10` henüz uzağa gönderilmedi. Yerelde 13+ yeni commit var.
+  7. **Vercel dağıtım notu:** Root Directory `web-panel` kökü ve derleme öncesi `mobile-app/assets/characters` gerekiyor; anlık görüntü bu yapıyla alınmalı.
+  8. Kelime Evreni (GÖR-026), HupoRead F2 (GÖR-051) ve Senin Hikayen (GÖR-044) değişmedi.
+- **İlgili:** K-0198, GÖR-010, GÖR-017, GÖR-058, `docs/soru-uretim/SISTEM.md` §4, `supabase/migrations/20261138000000_deneme_1_4_puan_sira_gizle.sql`, `supabase/functions/olay-kutusu-gonder/index.ts`.
