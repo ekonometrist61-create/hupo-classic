@@ -1,0 +1,13 @@
+{
+  "name": "veli-destek-isaretleri-sql-testleri",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Veli destek isaretleri (veli_destek_isaretleri) migration testleri icin PGlite (Docker gerektirmez).",
+  "type": "module",
+  "scripts": {
+    "test": "node kos.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.8"
+  }
+}
