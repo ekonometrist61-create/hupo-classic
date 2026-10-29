@@ -237,3 +237,12 @@ end;
 $$;
 
 revoke execute on function public.deneme_sinir_tetik() from public, anon, authenticated;
+
+-- ---------------------------------------------------------------------
+-- 6. Premium gating açık (mar-oto-ai kararı, proje sahibi onayı):
+--    Deneme bitince ücretsiz hesap günlük 20 soru ile sınırlanır. Deneme dalı
+--    bu ayardan bağımsızdır (remaining_free_questions deneme önceliklidir).
+-- ---------------------------------------------------------------------
+insert into public.app_settings (key, value)
+values ('premium_gating', '{"aktif": true, "ucretsiz_gunluk_soru": 20}'::jsonb)
+on conflict (key) do update set value = excluded.value, updated_at = now();
