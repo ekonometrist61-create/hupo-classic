@@ -324,7 +324,23 @@
         },
         "onayli": "Onaylı",
         "onayBekliyor": "Onay bekliyor",
-        "onayla": "Onayla"
+        "onayla": "Onayla",
+        "toplu": {
+          "sayfaTumu": "Listedeki tüm ilişkileri seç",
+          "satirSec": "{kaynak} ↔ {hedef} ilişkisini seç",
+          "seciliSayi": "{sayi} ilişki seçili",
+          "temizle": "Seçimi temizle",
+          "onayla": "Seçilenleri onayla",
+          "kaldir": "Onayı kaldır",
+          "onaylaYok": "Seçilenler arasında onay bekleyen ilişki yok.",
+          "onaylaOnay": "{sayi} ilişki onaylanacak. Her biri için iki model ailesinden \"geçti\" kaydı gerekir; olmayanlar atlanır. Devam edilsin mi?",
+          "onaylaSonuc": "{onaylandi} ilişki onaylandı, {atlandi} atlandı (denetim eksik ya da kendi önerdiğiniz).",
+          "kaldirYok": "Seçilenler arasında onaylı ilişki yok.",
+          "kaldirOnay": "{sayi} ilişkinin onayı kalkacak. Bu ilişkiler yeni sorularda ve oyunda kullanılmaz. Devam edilsin mi?",
+          "kaldirSonuc": "{kaldirilan} ilişkinin onayı kaldırıldı, {atlandi} atlandı.",
+          "kurulmadi": "Onayı kaldırma henüz sunucuda kurulu değil (migration bekliyor). Onaylama çalışır.",
+          "limit": "Tek seferde en fazla 200 ilişki işlenir."
+        }
       },
       "hatalar": {
         "DORT_GOZ": "Kendi kaydınızı onaylayamazsınız; başka bir yönetici onaylamalı.",

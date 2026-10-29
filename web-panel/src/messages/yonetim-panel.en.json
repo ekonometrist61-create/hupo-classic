@@ -324,7 +324,23 @@
         },
         "onayli": "Approved",
         "onayBekliyor": "Awaiting approval",
-        "onayla": "Approve"
+        "onayla": "Approve",
+        "toplu": {
+          "sayfaTumu": "Select all relations in the list",
+          "satirSec": "Select relation {kaynak} ↔ {hedef}",
+          "seciliSayi": "{sayi} relations selected",
+          "temizle": "Clear selection",
+          "onayla": "Approve selected",
+          "kaldir": "Remove approval",
+          "onaylaYok": "None of the selected relations is awaiting approval.",
+          "onaylaOnay": "{sayi} relations will be approved. Each needs a \"pass\" from two model families; the rest are skipped. Continue?",
+          "onaylaSonuc": "{onaylandi} relations approved, {atlandi} skipped (audit missing or proposed by you).",
+          "kaldirYok": "None of the selected relations is approved.",
+          "kaldirOnay": "Approval will be removed from {sayi} relations. They will not be used in new questions or in the game. Continue?",
+          "kaldirSonuc": "Approval removed from {kaldirilan} relations, {atlandi} skipped.",
+          "kurulmadi": "Removing approval is not installed on the server yet (migration pending). Approving works.",
+          "limit": "At most 200 relations are processed at once."
+        }
       },
       "hatalar": {
         "DORT_GOZ": "You cannot approve your own entry; another administrator must approve it.",

@@ -8,7 +8,7 @@ import { useTranslations } from "next-intl";
 
 import { createClient } from "@/utils/supabase/client";
 import ErrorNote from "./ErrorNote";
-import { cardClass, inputClass, labelClass, linkBtn, primaryBtn, tdClass, thClass } from "./styles";
+import { cardClass, inputClass, labelClass, linkBtn, outlineBtn, primaryBtn, tdClass, thClass } from "./styles";
 import { hataAnahtari, type AnlamSecenegi, type KelimeIliskiTuru } from "./kelimeEvreni";
 
 interface IliskiSatiri {
@@ -46,6 +46,8 @@ export default function KelimeSozlukPanel({ anlamlar, onDegisti }: Props) {
   const [iliskiTuru, setIliskiTuru] = useState<KelimeIliskiTuru>("es_anlamli");
   const [iliskiKaydediliyor, setIliskiKaydediliyor] = useState(false);
   const [onaylanan, setOnaylanan] = useState<string | null>(null);
+  const [secili, setSecili] = useState<Set<string>>(new Set());
+  const [topluIslemde, setTopluIslemde] = useState(false);
 
   const reload = useCallback(() => setYenile((k) => k + 1), []);
 
@@ -59,6 +61,7 @@ export default function KelimeSozlukPanel({ anlamlar, onDegisti }: Props) {
       } else {
         setError(null);
         setIliskiler((data ?? []) as IliskiSatiri[]);
+        setSecili(new Set());
       }
     };
     void run();
@@ -114,6 +117,66 @@ export default function KelimeSozlukPanel({ anlamlar, onDegisti }: Props) {
     setOnaylanan(null);
     if (err) return setError(t(`hatalar.${hataAnahtari(err.message)}`));
     setMesaj(t("sozluk.iliskiOnaylandi"));
+    reload();
+    onDegisti();
+  };
+
+  const secimDegistir = (id: string, secildi: boolean) =>
+    setSecili((onceki) => {
+      const yeni = new Set(onceki);
+      if (secildi) yeni.add(id);
+      else yeni.delete(id);
+      return yeni;
+    });
+
+  const tumunuSecili = iliskiler.length > 0 && iliskiler.every((r) => secili.has(r.id));
+
+  const tumunuSecDegistir = (secildi: boolean) =>
+    setSecili(secildi ? new Set(iliskiler.map((r) => r.id)) : new Set());
+
+  // Onay kuralı sunucudadır (iki model ailesi "geçti" + dört göz); reddedilen kayıt atlanır, işlem durmaz.
+  const topluOnayla = async () => {
+    const hedefler = iliskiler.filter((r) => secili.has(r.id) && !r.onay_tarihi).map((r) => r.id);
+    setError(null);
+    setMesaj(null);
+    if (hedefler.length === 0) return setMesaj(t("sozluk.toplu.onaylaYok"));
+    if (!window.confirm(t("sozluk.toplu.onaylaOnay", { sayi: hedefler.length }))) return;
+    setTopluIslemde(true);
+    const supabase = createClient();
+    let onaylandi = 0;
+    let atlandi = 0;
+    for (let i = 0; i < hedefler.length; i += 10) {
+      const sonuclar = await Promise.allSettled(
+        hedefler.slice(i, i + 10).map((id) => supabase.rpc("kelime_iliski_onayla", { p_iliski_id: id })),
+      );
+      for (const r of sonuclar) {
+        if (r.status === "fulfilled" && !r.value.error) onaylandi++;
+        else atlandi++;
+      }
+    }
+    setTopluIslemde(false);
+    setMesaj(t("sozluk.toplu.onaylaSonuc", { onaylandi, atlandi: atlandi + secili.size - hedefler.length }));
+    reload();
+    onDegisti();
+  };
+
+  const topluKaldir = async () => {
+    const hedefler = iliskiler.filter((r) => secili.has(r.id) && r.onay_tarihi).map((r) => r.id);
+    setError(null);
+    setMesaj(null);
+    if (hedefler.length === 0) return setMesaj(t("sozluk.toplu.kaldirYok"));
+    if (hedefler.length > 200) return setError(t("sozluk.toplu.limit"));
+    if (!window.confirm(t("sozluk.toplu.kaldirOnay", { sayi: hedefler.length }))) return;
+    setTopluIslemde(true);
+    const { data, error: err } = await createClient().rpc("kelime_iliski_onay_kaldir", { p_ids: hedefler });
+    setTopluIslemde(false);
+    if (err) {
+      // Sunucu fonksiyonu henüz uygulanmadıysa (migration bekliyor) genel hata yerine açık uyarı
+      const kurulu = !/kelime_iliski_onay_kaldir|PGRST202/.test(`${err.code ?? ""} ${err.message}`);
+      return setError(kurulu ? t(`hatalar.${hataAnahtari(err.message)}`) : t("sozluk.toplu.kurulmadi"));
+    }
+    const s = data as { kaldirilan: number; atlanan: unknown[] };
+    setMesaj(t("sozluk.toplu.kaldirSonuc", { kaldirilan: s.kaldirilan, atlandi: s.atlanan.length + secili.size - hedefler.length }));
     reload();
     onDegisti();
   };
@@ -178,10 +241,37 @@ export default function KelimeSozlukPanel({ anlamlar, onDegisti }: Props) {
         </form>
       </div>
 
+      {secili.size > 0 && (
+        <div className="mt-6 flex flex-wrap items-center gap-2 rounded-lg bg-gray-50 p-3 dark:bg-white/3">
+          <span className="text-sm font-medium text-gray-800 dark:text-white/90">{t("sozluk.toplu.seciliSayi", { sayi: secili.size })}</span>
+          <button type="button" className={primaryBtn} onClick={() => void topluOnayla()} disabled={topluIslemde}>
+            {t("sozluk.toplu.onayla")}
+          </button>
+          <button type="button" className={outlineBtn} onClick={() => void topluKaldir()} disabled={topluIslemde}>
+            {t("sozluk.toplu.kaldir")}
+          </button>
+          <button type="button" className={outlineBtn} onClick={() => setSecili(new Set())} disabled={topluIslemde}>
+            {t("sozluk.toplu.temizle")}
+          </button>
+        </div>
+      )}
+
       <div className="mt-6 overflow-x-auto [&_tr>*:first-child]:sticky [&_tr>*:first-child]:inset-s-0 [&_tr>*:first-child]:z-1 [&_tr>*:first-child]:bg-white dark:[&_tr>*:first-child]:bg-gray-900">
         <table className="min-w-full text-left text-sm">
           <thead>
             <tr>
+              <th className={thClass}>
+                <span className="inline-flex min-h-11 min-w-11 items-center justify-center">
+                  <input
+                    type="checkbox"
+                    className="size-5"
+                    checked={tumunuSecili}
+                    onChange={(e) => tumunuSecDegistir(e.target.checked)}
+                    disabled={topluIslemde || iliskiler.length === 0}
+                    aria-label={t("sozluk.toplu.sayfaTumu")}
+                  />
+                </span>
+              </th>
               <th className={thClass}>{t("sozluk.tablo.iliski")}</th>
               <th className={thClass}>{t("sozluk.tablo.tur")}</th>
               <th className={thClass}>{t("sozluk.tablo.durum")}</th>
@@ -191,11 +281,23 @@ export default function KelimeSozlukPanel({ anlamlar, onDegisti }: Props) {
           <tbody>
             {iliskiler.length === 0 ? (
               <tr>
-                <td className={tdClass} colSpan={4}>{t("sozluk.iliskiYok")}</td>
+                <td className={tdClass} colSpan={5}>{t("sozluk.iliskiYok")}</td>
               </tr>
             ) : (
               iliskiler.map((r) => (
                 <tr key={r.id}>
+                  <td className={tdClass}>
+                    <span className="inline-flex min-h-11 min-w-11 items-center justify-center">
+                      <input
+                        type="checkbox"
+                        className="size-5"
+                        checked={secili.has(r.id)}
+                        onChange={(e) => secimDegistir(r.id, e.target.checked)}
+                        disabled={topluIslemde}
+                        aria-label={t("sozluk.toplu.satirSec", { kaynak: r.kaynak_kelime, hedef: r.hedef_kelime })}
+                      />
+                    </span>
+                  </td>
                   <td className={tdClass}>
                     {r.kaynak_kelime} ↔ {r.hedef_kelime}
                     <span className="block text-xs text-gray-500">{r.kaynak_anlam} · {r.hedef_anlam}</span>
