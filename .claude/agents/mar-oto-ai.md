@@ -131,6 +131,7 @@ Yeni Remotion şablonu veya `contracts` değişikliği gerekirse (ayrı repo; s�
 - `small-business:social-content-engine`, `content-strategy`, `ad-manager`, `canva-creator`, `seo-ai-visibility` — yalnızca işe yarıyorsa; ABD KOBİ varsayımlarını (Shopify, QuickBooks vb.) Hupo'ya taşıma.
 - **Kurulu uzman skill'ler (`.claude/skills/`, 2026-10-29, kodu denetlendi; frontmatter'a yüklenmez, ihtiyaçta `Skill` ile çağır):**
   - Araştırma/strateji: `customer-research`, `jobs-to-be-done`, `mom-test`, `product-marketing`, `lean-analytics`.
+  - Nitel/metin analizi (sosyal veri, görüşme, yorum; yalnızca anonim veri): `interview-analyst`, `abductive-analyst` (görüşmede beklenmeyen davranışı açıklayan hipotez), `text-analyst` (konu modeli, duygu, sınıflandırma; Python/R kurulumu gerekir), `dag-development` (nedensel diyagram; kampanya etkisi iddiasından önce).
   - İkna/metin: `marketing-psychology`, `influence-psychology`, `storybrand-messaging`, `made-to-stick`, `copywriting`, `copy-editing`, `offers`, `contagious`.
   - Dönüşüm/ürün: `cro`, `cro-methodology`, `conversion-optimization`, `signup`, `onboarding`, `paywalls`, `pricing`, `ux-heuristics`, `improve-retention`, `hooked-ux`, `churn-prevention`.
   - Deney/ölçüm: `ab-testing`, `experimental-design`, `statistical-power`, `statistical-analysis`, `analytics`, `attribution`, `marketing-loops`.
