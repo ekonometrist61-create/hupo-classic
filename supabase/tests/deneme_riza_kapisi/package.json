@@ -1,0 +1,13 @@
+{
+  "name": "deneme-riza-kapisi-sql-testleri",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Deneme veli rıza kapısı (20261150000000) SQL testleri için PGlite (Docker gerektirmez).",
+  "type": "module",
+  "scripts": {
+    "test": "node kos.mjs"
+  },
+  "devDependencies": {
+    "@electric-sql/pglite": "0.5.10"
+  }
+}
