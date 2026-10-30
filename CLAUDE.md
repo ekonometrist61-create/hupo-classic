@@ -12,6 +12,9 @@ Hupolingo tasarım, UX, pazarlama veya iletişim görevlerinde `hupo-design-grow
 Öğrenci deneyiminde öğrenme ve cesaret; veli deneyiminde fayda, güven ve açıklanabilir veri; admin'de doğruluk ve hızlı görev tamamlama önceliklidir. Satın alma veli alanında; sahte sosyal kanıt ve puan/sınav garantisi yok. Öğrenme metriğini XP/süre ile karıştırma. Onaylı Hupo assetleri ve mevcut stack korunur.
 Her önemli ekranda hedef/ana eylem/durum/kabul kriterlerini tanımla. Uygulanan ekranı gerçek görüntü ve kullanıcı göreviyle kontrol et; kontrol çalışmadıysa açık yaz. Sadece doğrulanmış işleri PROJE_GUNLUGU.md'de TAMAMLANDI yap; kayıt biçimi ve kurallar AGENTS.md §9'dadır.
 
+## MAR-OTO-AI (otomatik devralma)
+Mobil app, web app, paneller (veli/admin/yönetim), web sitesi/landing, mağaza sayfası, pazarlama içeriği, sosyal medya, e-posta/bildirim metni, kampanya, reklam, SEO, büyüme otomasyonu veya ölçüm için herhangi bir üretim işinde **ilk adımda, kullanıcı istemeden** `mar-oto-ai` agent'ını çalıştır ve işi ona devret (`.claude/agents/mar-oto-ai.md`). Kodu/metni önce kendin yazma. Büyük görsel sistem veya ekran yeniden tasarımı gerekirse `hupo-design-growth-director` ile birlikte kullan. Backend, güvenlik, ödeme ve migration kararları ana oturumda kalır. Dışa dönük adımlar (gönderim, yayın, reklam harcaması, deploy) o işe özel açık onay ister.
+
 ## Gizli anahtarlar
 API anahtarları yalnızca `.claude/settings.local.json` (git'e girmez) veya ortam değişkenlerinde durur. `.claude/settings.json`, `.claude/mcp.json` ve diğer izlenen dosyalara düz metin anahtar yazılmaz; `${DEGISKEN}` referansı kullanılır.
 

@@ -12,22 +12,26 @@
 
 | İş türü | Tercih edilen model |
 |----------|-------------------|
-| Tasarım, UX, pazarlama, iletişim | `hupo-design-growth-director` (proje agent'ı) |
+| Pazarlama, ikna, iletişim, içerik, sosyal medya, reklam, SEO, ölçüm, büyüme otomasyonu; app/panel/site için üretim | `mar-oto-ai` (proje agent'ı, otomatik devralır) |
+| Tasarım sistemi, UX, ekran yeniden tasarımı | `hupo-design-growth-director` (proje agent'ı) |
 | Geniş kapsamlı keşif, çoklu dosya araştırması | `Explore` subagent (salt okunur, hızlı) |
 | Bağımsız paralel sorgular | `Agent` aracıyla paralel çalıştır |
 | Rutin kod yazma (çeviriler, şablon bileşenler) | Haiku-sınıfı model (alt model) |
 | Mimari karar, güvenlik, karmaşık SQL | Mevcut oturum / Sonnet veya üzeri |
 
 **Devretme kuralları:**
-- Tasarım/UX/metin görevi → `/claude:hupo-design-growth-director` çağır, kodu sen yazma
+- Pazarlama/içerik/iletişim/ölçüm veya app-panel-site üretimi → `mar-oto-ai` çağır (ilk adım, kullanıcı istemeden)
+- Tasarım sistemi/UX/ekran yeniden tasarımı → `/claude:hupo-design-growth-director` çağır, kodu sen yazma
 - 3'ten fazla dosya gerektiren arama → `Explore` subagent
 - Bağımsız iki iş aynı anda yapılabiliyorsa → tek mesajda iki paralel araç çağrısı
 - Sürüm numarası veya basit çeviri eklemek → minimum token, doğrudan yaz
 - Büyük dosyayı tamamen okumak yerine `Grep` / `offset+limit` kullan
 
 ### Alt ajan desteği
-`.claude/agents/hupo-design-growth-director.md` tasarım, UX, pazarlama ve iletişim
-görevleri için kurulu proje agent'ıdır; kod/güvenlik/backend kurallarını değiştirmez.
+`.claude/agents/mar-oto-ai.md` (MAR-OTO-AI) pazarlama, ikna, içerik, sosyal medya, reklam,
+SEO, ölçüm ve büyüme otomasyonu için kurulu proje agent'ıdır; app, panel ve site üretiminde
+otomatik devralır. `.claude/agents/hupo-design-growth-director.md` tasarım sistemi, UX ve
+ekran tasarımı için kurulu proje agent'ıdır. İkisi de kod/güvenlik/backend kurallarını değiştirmez.
 Ayrıntı: `docs/hupo-design-growth/`.
 
 ---

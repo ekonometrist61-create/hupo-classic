@@ -96,7 +96,7 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR-082 | ALT | Uzak Supabase dağıtımı, sırası: (1) migration 20261108 (anon kapatma) ve 20261124 (ön bilgilendirme kaydı), (2) `payments-checkout` yeniden yayını, (3) web yayını. Dashboard'da e-posta doğrulama (Confirm email) açılacak. Her adım ayrı onay ister. | BEKLİYOR | Kullanıcı (onay) + Ajan | Kritik | K-0196 |
 | GÖR-083 | HUK | Veri Güvenliği formu (`mobile-app/store/VERI_GUVENLIGI_VE_GIZLILIK.md`) güncel değil: Brevo, Resend, Sentry, iyzico ve bildirim belirteci için yanıtlar yeniden yazılmalı. | BEKLİYOR | Kullanıcı + Hukuk | Yüksek | K-0196 |
 | GÖR-084 | WEB | Landing hareket sistemi: gerçek cihaz kare süresi ve canlı dağıtım kontrolü ölçülmedi (LCP ve Lighthouse ölçüldü, K-0200). Canlıda görsel kontrol (GÖR-039 ile birlikte) | DEVAM (K-0200: commit 9d83c31, üretim ölçümü tamam) | Ajan + Kullanıcı | Orta | K-0199, K-0200, GÖR-039 |
-| GÖR-086 | WEB | Landing Speed Index regresyonu: mobil medyan 3208 → 4429 ms, masaüstü 1333 → 1725 ms (LCP ve TBT eşit). Olası neden hero transform girişleri ve SplitText; doğrulanmadı. Giriş animasyonlarını kısaltıp yeniden ölçmek gerekir | BEKLİYOR | Ajan | Orta | K-0200 |
+| GÖR-086 | WEB | Landing Speed Index regresyonu: mobil medyan 3208 → 4429 ms, masaüstü 1333 → 1725 ms (LCP ve TBT eşit). K-0201 A/B: hero girişlerini kapatmak SI'yı düzeltmedi (yük altında), yani ana neden hero değil; SplitText veya JS çalışması incelenmeli. Sakin makinede yeniden ölçüm gerekli | BEKLİYOR | Ajan | Orta | K-0200, K-0201 |
 
 ### K-0158 · 2026-10-27 · VT/WEB/MOB · CRM, giriş, Müşteri 360, aktivasyon, analitik: eksik analizi ve 10 paketlik tamamlama (Haiku)
 - **Tür:** Plan + Gelişme
@@ -399,6 +399,40 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 ---
 
 ## B. Kayıtlar (en yeni üstte)
+
+### K-0202 · 2026-10-29 · VEL/ÖĞR · Veli ve öğretmen paneli Ar-Ge, kararlar, F1 ve F2 (Öğrenme Haritası) ilk dilim
+- **Tür:** Karar + Gelişme
+- **Konu:** VEL (veli paneli), ÖĞR (öğretmen paneli)
+- **Bağlam:** Kullanıcı veli/öğretmen panelini farklılaşma alanı olarak istedi; rakip ve küresel Ar-Ge ve plan istendi. Belge: `docs/veli-ogretmen-paneli/AR-GE_VE_PLAN_2026-10-29.md` (gösterge sözlüğü, hedef sayfalar, dilimler F0–F7).
+- **Karar (kullanıcı, ONAYLI):** D1 öğretmen = kurum öğretmeni. D2 öğretmen yalnız toplu veri + velinin açık paylaşımı. D3/D4 Claude kararı: kazanım durumları Gelişiyor/Pekişiyor/Güçlü (eşikler pilotla kalibre), bölüm→paket matrisi panelden veri olarak tutulur. D5 uygulama kuruluysa push, değilse e-posta; hukuk teyidine kadar gönderim yok. D6 hedef→ödül ilk sürümde yok. D7 karne dili "gözlenen değişim". D8 F1 ∥ F2, Haiku.
+- **Yapılan:** F1 `GenelDurumOzeti` (Genel Bakış v2). F2 `veli_kazanim_haritasi` RPC (`20261139000000`), `/veli-paneli/ogrenme-haritasi` sayfası, menü öğesi. Migration `20261138` (1–4. sınıf deneme puan/sıra gizleme, GÖR-058) ile birlikte uzak DB'ye uygulandı (kullanıcı onayıyla); `db:status` eşleşiyor.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ. PGlite 10/10 (`supabase/tests/veli_kazanim_haritasi`). `tsc` ve eslint temiz. F1 demo modda sahte veriyle görsel kontrol edildi. RPC canlıda test veli kimliğiyle çağrıldı (geri alınan işlemde): Fen Bilimleri 5, 27 kazanım, durum dağılımı güçlü 3 / pekişiyor 10 / veri_yok 14; "gelişiyor" durumu seed'de oluşmadı, yalnız PGlite'ta denendi. Öğrenme Haritası SAYFASI gerçek oturumla görülmedi: yerel girişte Turnstile site anahtarı yok (ajan koddan çıkardı, doğrulanmadı).
+- **Açık:** (1) Sayfanın gerçek oturumla görsel kontrolü: yerel Turnstile anahtarı veya bilinçli captcha ayarı kararı kullanıcıda. (2) Ders listesi yalnız çözülmüş dersleri gösteriyor. (3) GÖR-032 hukuk teyidi (öğretmen erişimi, haftalık özet hizmet/ticari ileti ayrımı) F3 ve F6'yı bekletir. (4) `olay-kutusu-gonder` uzak sürümünün yerelle aynı olduğu doğrulanmadı (138 dağıtım sırası önkoşulu).
+- **Ek (F3 ve F4, kodlandı, görsel/canlı doğrulama YOK):** F4-a "Okuma ve Dil" (`OkumaDilOzeti`, `okuma_veli_ozeti` ile; basamak etiketleri mevcut hedefDurum metinleriyle tek tip). F4-b "Deneme ve Gelişim" (`DenemeGelisimi`; 1–4. sınıfta puan/sıra yok). F3 "Destek Planı" (`/veli-paneli/destek-plani`, `destek-onerileri.ts` editoryal kütüphane, pedagojik denetimden GEÇMEDİ) + "yaptık" işareti migration'ı `20261145000000_veli_destek_isaretleri.sql` (PGlite 11/11). F3 e-posta/push GÖNDERİMİ yazılmadı (hukuk teyidi bekliyor). **Migration `20261145` UZAKTA UYGULANMADI:** (a) uzakta yerelde dosyası olmayan `20261141000000` var (başka oturum/kopya); `db push` `DbPushMissingLocalError` veriyor, `migration repair` yapılmadı. (b) Yerelde başka oturumun `20261140000000_soru_vurgu_metadata.sql` dosyası var; çakışmayı önlemek için benim migration `20261140` -> `20261145` yeniden numaralandı. Bilinen: sevilen temalar RPC'de ham kod dönüyor (önceden var olan sorun).
+- **Güncelleme (2026-10-30, migrasyon uygulandı):** Kullanıcı onayıyla `20261145000000_veli_destek_isaretleri.sql` uzak DB'ye uygulandı (önizleme → içerik okuma → deploy). `db:status`: 214 kayıt, yerel ve uzak eşleşiyor. Yaptık işareti migration'ında düzeltmeler: listeleme RPC'sine rıza kontrolü eklendi (PGlite 11/11 geçti); yorumlardaki bozuk Türkçe karakterler (kodlama hatası, kendi değişikliğimizden) düzeltildi.
+  - **Yabancı migration `20261141000000_kelime_iliski_onay_kaldir.sql`:** Uzakta zaten uygulanmıştı, yerelde yoktu. Dosya `C:\Dev\hupo-landing-fix` çalışma kopyasındaki commit `0bb3d48` (dal `fix/landing-mobil-uyum-2`, yazar `ekonometrist61`, 2026-10-29 23:42). Günlükte bu işe ait ayrı kayıt yoktu; K-0160'ta "kelime inceleme kuyruğu işi kaydı ve commit'i açık" diye geçiyor. İçerik: kelime ilişkisi onayını kaldıran yönetici fonksiyonu (≤200 kayıt, yıkıcı değil). Yerele kopyalandı, **commit edilmedi** (izlenmeyen dosya). Geçmiş onarımı yapılmadı. **Kullanıcı onayıyla commit edildi:** `003d753` (dal `feature/crm-growth-2026-10`, yalnız bu dosya; diğer değişiklikler dokunulmadan kaldı).
+  - Bağlantı hatası (`password authentication failed`) bu turda geçici görüldü; sonraki önizleme/uygulama normal çalıştı.
+  - Sonuç: Destek Planı'nın "yaptık" RPC'leri canlıda. Öğrenme Haritası, Destek Planı, Okuma ve Dil ve Deneme ve Gelişim sayfaları henüz gerçek veli oturumuyla görsel kontrol edilmedi (Turnstile).
+- **Test hesapları (canlı Supabase):** `e2e-veli@hupolingo-test.invalid` ve `e2e-ogrenci@hupolingo-test.invalid` (sınıf 5, rıza verilmiş, Fen Bilimleri seed: 40 user_answers, 160 answer_events). Kullanıcı açık onayıyla oluşturuldu. Şifre yalnız `.claude/settings.local.json` env (E2E_VELI_*). Silme: `delete from auth.users where email like 'e2e-%@hupolingo-test.invalid'` (profil ve bağlı kayıtlar düşer). Oluşturma sırasında ilk denemenin hata çıktısı bir şifreyi gösterdi; o şifre hiçbir hesapta kullanılmadı.
+- **Sahip:** Ajan + Kullanıcı (Turnstile/captcha kararı, hukuk)
+- **Önem:** Yüksek
+- **İlgili:** GÖR-032, GÖR-056, GÖR-058, K-0009.
+
+### K-0201 · 2026-10-29 13:12 · WEB · Hız: tembel PostHog yükleme, görsel boyutları, Speed Index A/B denemesi
+- **Tür:** Gelişme
+- **Konu:** WEB
+- **Bağlam:** Kullanıcı kalite ödünsüz hız artışı istedi. K-0200'deki Speed Index regresyonu (GÖR-086) açıktı.
+- **Plan:** (1) posthog-js ilk yüklemede rıza olmasa da iniyordu; `lib/analytics/posthog-istemci.ts` ile yalnızca `granted` durumunda dinamik yükleme. (2) Landing `next/image` çağrılarında `sizes` eksikti; tarayıcı gereğinden büyük varyant seçiyordu; `sizes` eklendi. (3) SI için hero girişlerinin A/B denemesi.
+- **Karar:** Kalite etkisi yok: init seçenekleri, rıza akışı ve olay isimleri aynı. Hero animasyonları A/B sonucuna göre korundu. Kullanıcı talebi (hız, kalite korunarak) `ONAYLI`.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ (bayt ve istek kanıtı var; zamanlama güvenilir değil)
+- **Sahip:** Ajan
+- **Önem:** Orta
+- **Açıklama:** Bayt kazanımları (deterministik): rıza yokken posthog ilk yüklemede hiç iniyor; ilk ana sayfa script'leri 427 → 333 KB; toplam aktarım 1145 → 1051 KB (sizes ile 954 KB); hero görseli 77 → 18 KB; logo 41 → 4 KB. Üretim tarayıcı testi (geçici anahtarlı build, spec silindi): rıza yok → 0 posthog isteği; rıza var → 3 istek. Zamanlama: makine %76–100 CPU (kullanıcının Flutter/Chrome süreçleri); A (mevcut) mobil SI 8,9–10,3 sn, B (hero girişleri kapalı) 9,7–14,3 sn; yani hero girişleri ana neden değil. Sayılar yük altında; kesin karar için sakin makinede yeniden ölçüm (GÖR-086).
+- **Kanıt:** `npx tsc --noEmit` 0; `npx eslint` 0 hata (`CookieConsent.tsx` uyarısı önceden var); `npm run build` 0; `e2e/home.spec.ts` 5/6 (masaüstü "giriş ekranına bağlantı" yükte düştü), tekil yeniden koşuda 1/1 geçti; `analytics-riza/utm/kaynak-birim` 23/23 (`analytics-riza-birim` içinde posthog stub'ı tembel yüklemeye uyarlandı).
+- **Commit:** Yok. Çalışma ağacında; `events.ts` ve analitik testinde başka bir oturumun da değişiklikleri var, commit öncesi ayrılmalı.
+- **İlgili:** K-0199, K-0200, GÖR-084, GÖR-086.
 
 ### K-0200 · 2026-10-29 01:52 · WEB · Landing commit'i (9d83c31), framer-motion kaldırıldı, üretim LCP ve Lighthouse ölçümü
 - **Tür:** Gelişme
