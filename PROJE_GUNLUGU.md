@@ -96,7 +96,10 @@ Son sayım: 2026-10-17. Kapanan satır panodan çıkar; kapanış bir `K` kaydı
 | GÖR-082 | ALT | Uzak Supabase dağıtımı, sırası: (1) migration 20261108 (anon kapatma) ve 20261124 (ön bilgilendirme kaydı), (2) `payments-checkout` yeniden yayını, (3) web yayını. Dashboard'da e-posta doğrulama (Confirm email) açılacak. Her adım ayrı onay ister. | BEKLİYOR | Kullanıcı (onay) + Ajan | Kritik | K-0196 |
 | GÖR-083 | HUK | Veri Güvenliği formu (`mobile-app/store/VERI_GUVENLIGI_VE_GIZLILIK.md`) güncel değil: Brevo, Resend, Sentry, iyzico ve bildirim belirteci için yanıtlar yeniden yazılmalı. | BEKLİYOR | Kullanıcı + Hukuk | Yüksek | K-0196 |
 | GÖR-084 | WEB | Landing hareket sistemi: gerçek cihaz kare süresi ve canlı dağıtım kontrolü ölçülmedi (LCP ve Lighthouse ölçüldü, K-0200). Canlıda görsel kontrol (GÖR-039 ile birlikte) | DEVAM (K-0200: commit 9d83c31, üretim ölçümü tamam) | Ajan + Kullanıcı | Orta | K-0199, K-0200, GÖR-039 |
-| GÖR-086 | WEB | Landing Speed Index regresyonu: mobil medyan 3208 → 4429 ms, masaüstü 1333 → 1725 ms (LCP ve TBT eşit). K-0201 A/B: hero girişlerini kapatmak SI'yı düzeltmedi (yük altında), yani ana neden hero değil; SplitText veya JS çalışması incelenmeli. Sakin makinede yeniden ölçüm gerekli | BEKLİYOR | Ajan | Orta | K-0200, K-0201 |
+| GÖR-086 | WEB | Landing Speed Index regresyonu: mobil medyan 3208 → 4429 ms, masaüstü 1333 → 1725 ms (LCP ve TBT eşit). K-0201 A/B: hero girişlerini kapatmak SI'yı düzeltmedi (yük altında), yani ana neden hero değil; SplitText veya JS çalışması incelenmeli. Sakin makinede yeniden ölçüm gerekli | DEVAM (K-0203: düzeltme commit 9e626af, SplitText kaldırıldı; hız etkisi ölçülmedi, dönüşümlü n≥7 ölçüm bekliyor) | Ajan | Orta | K-0200, K-0201, K-0203 |
+| GÖR-088 | VEL | Veli paneli destek planı ve yardımcı UI (`DestekPlaniView`, `DenemeGelisimi`, `OkumaDilOzeti`, destek-plani sayfası, `destek-onerileri.ts`, sidebar ve mesajlar): commit'lenmedi (K-0210). Öneri kütüphanesi pedagojik denetimden geçmedi ve veliye gösterilecek; tarayıcıda görsel kontrol yok. Migrasyon (20261150) bu grupta değil, commit'lendi | BEKLİYOR (onay) | Kullanıcı (pedagojik onay, kabul) + Ajan (görsel kontrol) | Yüksek | K-0203, K-0204, K-0210 |
+| GÖR-089 | MOB | Açılış kısa sahnesi (`hupo_signature_entrance.dart`, `_KisaGirisSahnesi`) ve okuma vitrininde `KotaRozeti(modul: 'okuma')`: commit'lenmedi (K-0210). Sahibi belirsiz; `flutter analyze` 0 hata (vitrin dosyasında 5 bilgi notu, değiştirilen satırlarda değil); cihazda kontrol yok | BEKLİYOR (sahip, cihaz) | Kullanıcı (sahip) + Ajan | Orta | GÖR-077, K-0166, K-0210 |
+| GÖR-087 | DEN | Görselli soru programı açıkları: (a) kavşak HB 1.2.3 için yaya rolü kararı (kullanıcı, uygulanmadı); (b) MAT 1.1.6 görselsiz ölçümü metin aynılığı nedeniyle yapılamıyor, tasarım kararı gerekli (kullanıcı); (c) MAT 5.3.6 n=40 kör çözümü yapılmadı (ajan); (d) panel önizlemesi tarayıcıda ve Flutter SVG cihazda görülmedi (ajan); (e) v3 ile paket içe aktarma henüz yapılmadı, onay bekliyor (kullanıcı) | DEVAM | Ajan / Kullanıcı | Yüksek | K-0197, K-0209 |
 
 ### K-0158 · 2026-10-27 · VT/WEB/MOB · CRM, giriş, Müşteri 360, aktivasyon, analitik: eksik analizi ve 10 paketlik tamamlama (Haiku)
 - **Tür:** Plan + Gelişme
@@ -5052,3 +5055,96 @@ Paketler:
   7. **Vercel dağıtım notu:** Root Directory `web-panel` kökü ve derleme öncesi `mobile-app/assets/characters` gerekiyor; anlık görüntü bu yapıyla alınmalı.
   8. Kelime Evreni (GÖR-026), HupoRead F2 (GÖR-051) ve Senin Hikayen (GÖR-044) değişmedi.
 - **İlgili:** K-0198, GÖR-010, GÖR-017, GÖR-058, `docs/soru-uretim/SISTEM.md` §4, `supabase/migrations/20261138000000_deneme_1_4_puan_sira_gizle.sql`, `supabase/functions/olay-kutusu-gonder/index.ts`.
+
+### K-0203 · 2026-10-30 · WEB/VEL · Ajan dağıtımı: sınıf kapsamı metinleri, Benefits başlığı, landing hareket düzeltmeleri, veli destek planı denetimi
+- **Karar (ONAYLI, kullanıcı: "sen karar ver"):** Hero rozeti yalnızca "Proje Ortaokulu Hazırlığı" (tr/en); sınıf aralığı yazılmaz, çünkü yayında hangi sınıfların içeriği olduğu belgelerde tutarsız. SSS'deki "Şu anda 3–7. sınıf içerikleri yer alıyor" cümlesi çıkarıldı. `lib/legal/content.ts:82` ve `:213` hâlâ "3–7. sınıf" diyor; hukuk teyidi bekliyor (GÖR-017, GÖR-019).
+- **GÖR-086 (ONAYLI, kullanıcı: "evet"):** Regresyon n=3 ile kanıtlı değil (p≈0,2), baz ve yeni ölçüm farklı sunucuda (3001/3000). Uygulandı: `BenefitsSection.tsx` düz h2 (SplitText hidrasyona kadar başlığı gizliyordu); `Reveal`, `RevealGroup`, `DrawLine` ekranda zaten görünen öğede animasyonu atlıyor (eşik %85; RevealGroup yalnız ilk öğeyi kontrol eder); `LandingMotion.tsx` `lagSmoothing(0)` kaldırıldı. HeroSection animasyonları başka oturumda düzenlendiği için dokunulmadı. Hız etkisi ÖLÇÜLMEDİ: aynı sunucu ve build, dönüşümlü, n≥7 ölçüm gerekli.
+- **Veli destek planı denetimi:** tsc, eslint, tr/en anahtar eşitliği (498) ve RPC imzaları temiz; kopyada kanıtsız vaat yok. `DestekPlaniView.tsx` liste yenileme hatası artık `isaretYenilenemedi` mesajıyla gösteriliyor; `DenemeGelisimi.tsx` iki RPC zincirine hata yönetimi eklendi. Tarayıcıda görsel kontrol yapılmadı.
+- **AÇIK (SQL, kullanıcı kararı):** `get_child_exam_history` ve `get_upcoming_mock_exams_for_child` veli-çocuk bağını kontrol ediyor ama `consents` rızasını kontrol etmiyor. `get_upcoming_mock_exams_for_child` veli telefonunu (`coalesce(k.telefon, p.telefon, '')`) yanıtta döndürüyor; bileşen kullanmıyor. Rıza kararı ve alanın çıkarılması migrasyon gerektirir, yapılmadı.
+- **Not (K-0201 testi):** `analytics-riza-birim.spec.ts` yeniden üretilemedi, 11/11 ve 55/55 geçti; K-0201'deki "açık iş" muhtemelen kapandı, kullanıcı ortamında teyit edilecek.
+- **Commit yok.** Çalışma ağacında başka oturumların değişiklikleri var; commit pathspec ile atılır.
+- **İlgili:** GÖR-017, GÖR-086, GÖR-019, K-0199, K-0201.
+
+### K-0204 · 2026-10-30 · VEL/VT · Deneme RPC'lerine veli rıza kapısı: migrasyon yazıldı, preview tamam, DEPLOY BEKLİYOR
+- **Dosya:** `supabase/migrations/20261150000000_veli_deneme_riza_kapisi.sql`. `get_child_exam_history` ve `get_upcoming_mock_exams_for_child` için `_veli_riza_durumu(p_cocuk_id) <> 'verildi'` ise boş liste döner. Veli-çocuk bağı kontrolü korunur. Grant'ler `create or replace` ile korunur.
+- **Preview (`npm run db:preview`):** yalnızca bu migrasyon bekliyor. `db:status`: uzak DB'de diğer tüm yerel migrasyonlar uygulanmış görünüyor. Deploy (`npm run db:deploy`) kullanıcı onayı bekliyor.
+- **Telefon alanı KALDIRILMADI:** Ajan raporu "bileşen kullanmıyor" dedi; yanlıştı. `DenemeKaydiKarti.tsx:47` formu bu alanla ön doldurur. Alan çağıran velinin kendi telefonu.
+- **Doğrulanmadı:** SQL PGlite/canlıda çalıştırılmadı; yalnızca preview ve statik okuma yapıldı. Deploy sonrası bir veli hesabıyla RPC'ler çağrılmalı.
+- **İlgili:** K-0203, GÖR-024 (deneme), `_veli_riza_durumu` (20261013000000).
+- **DEPLOY TAMAM (2026-10-30, kullanıcı onayıyla):** `npm run db:deploy` migrasyonu uyguladı; `db:status` uzakta `20261150000000` kaydını doğruluyor. Fonksiyon gövdesi canlıda sorgulanmadı; RPC davranış testi (rızalı/rızasız veli) hâlâ yapılmadı.
+
+### K-0205 · 2026-10-30 · MOB/VT · Okuma Dünyası PGlite: 5 paketin uzun olgu etiketi kısaltıldı (187/188 → 188/188); rıza kapısı testi eklendi
+- **GÖR-009 güncel:** `supabase/tests/okuma_dunyasi` 188/188 geçti (öncesi 187/188, senaryo #18 "atölyedeki tüm gerçek paketler doğrulayıcıdan geçer" 26/31). Neden: 5 paketin `ogrenme_hedefleri[5]` (doğrulayıcı mesajında 1'den sayılarak [6]) `tur=fact` etiketi 120 karakter sınırını aşıyordu.
+- **Değişen (kullanıcı onaylı, repo dışı atölye çıktısı `C:\Dev\Senin Hikayen - HupoRead\atolye\cikti\`):** `bilgi-sandigi` (arsiv_olgu), `eski-harita-yeni-sir` (sozlu_kaynak_olgu), `mercek-ve-yildiz` (galileo_olgu), `tutulmanin-gecesi` (kizil_ay_olgu), `yildizlarin-kaptani` (kutup_yildizi_olgu). Etiketler anlamı koruyarak 93–108 karaktere sıkıştırıldı; yalnızca o alan değişti. Yedekler ajan scratchpad'inde (`scratchpad\paket-yedek`); atölye repo'su git'te izlenmiyor.
+- **AÇIK:** Olgu cümleleri kısaldığı için içerik denetçisi bu 5 olguyu yeniden okumalı (özellikle `bilgi-sandigi`'nda "belgelerle karşılaştırılır" inceliği düştü). Yayın kapısına dokunulmadı; hepsi taslak.
+- **Rıza kapısı testi:** `supabase/tests/deneme_riza_kapisi/` 10/10 (20261150 için; asgari şema taklidiyle, gerçek veli oturumuyla değil).
+- **İlgili:** GÖR-009, GÖR-048, K-0204.
+
+### K-0206 · 2026-10-30 · WEB · Çerez bandı mobil düzeni; karanlık mod kararı açık
+- **Yapıldı:** `web-panel/src/components/analytics/CookieConsent.tsx`. Mobilde (390 px) metin iki satıra açılıyor, düğmeler alt satırda iki eşit sütun. `sm` ve üstü tek satır, eski düzen. Düğme yükseklikleri 44 px kaldı. `tsc` temiz; ESLint'in tek uyarısı (`setGorunur` senkron çağrı, 40. satır) bu değişiklikten önce de vardı.
+- **Doğrulanmadı:** Gerçek telefon genişliğinde görsel kontrol yapılmadı. Canlıya deploy edilmedi; deploy sonrası 390 px'te hero'nun örtülme oranına bakılmalı.
+- **AÇIK (tasarım kararı, kullanıcıda):** Bant `bg-white` sabit. Landing `prefers-color-scheme: dark` altında açık temada kalıyor. Seçenek (a): landing açık kalır, bant değişmez. Seçenek (b): landing karanlık moda uyarlanır, bant `dark:` karşılığı alır. (b) ayrı bir tasarım işi.
+- **Canlı landing kontrolü (GÖR-039 / GÖR-020 kısmi):** 390/768/1280 px'te yatay taşma yok, kırık görsel yok, 390 px konsolda hata yok. Rozet ve `/yonetim-giris` canlıda henüz yok/beklenen durumda. CTA etiketi ile hedef (`/veli-paneli/kayit`) "Koleksiyona Başla" ve fiyat kartında tam uyuşmuyor. Hover/focus ve mobil menü açık hali kontrol edilmedi. Kabul kriterleri verilmediği için GÖR-039 ve GÖR-020 hâlâ açık.
+- **İlgili:** K-0203, K-0205, GÖR-020, GÖR-039.
+- **K-0205 DÜZELTME (olgu denetimi sonrası):** Bağımsız denetim ilk kısaltmalarda iki hata buldu. `bilgi-sandigi`: "sonradan yazılanlar ikincil" hikâyenin s5 öğretisiyle çelişiyordu; yeni etiket "Dönem belgeleri ve tanık anlatısı birincildir (belgeyle karşılaştırılır); bu kaynaklara bakılarak yazılanlar ikincildir" (119). `yildizlarin-kaptani`: "dış kenar" düşmüştü; geri eklendi (117). `eski-harita-yeni-sir`: "bu hikâyedeki" kapsam sınırı geri eklendi. `mercek-ve-yildiz` ve `tutulmanin-gecesi` PASS (denetçi: mavi ışığın saçılması ve galileo gözlem türü düştü ama yanlış değil). `eski-harita-yeni-sir` "tapu ve kadastro kayıtları belirler" ifadesi mevzuata bağlanmadı (DOĞRULANAMADI); kaynak teyidi bekliyor. PGlite 188/188.
+- **Landing CTA denetimi (kullanıcıya sunuldu, uygulanmadı):** "Koleksiyona Başla" etiket/hedef uyuşmazlığı; footer `#why-parents`, `#deneme-sinavi` kırık hash, `#` yer tutucular ve mağaza rozetleri; "En Çok Tercih Edilen" rozeti ve iade garantisi iddiası kaynaksız; fiyat kartı "Premium'a Geç"/"Aile Planı Seç" etiketleri DB'den. GÖR-017 ile birlikte kullanıcı kararı bekliyor.
+### K-0207 · 2026-10-30 · WEB/VEL/MOB · Landing CTA ve footer düzeltmeleri (1, 2, 5)
+- **Yapıldı:** "Koleksiyona Başla" → "Veli hesabı oluştur" (tr/en, `characters.cta`). Footer "Deneme Sınavı" `#deneme-sinavi` (kırık) → `/deneme-sinavi-kayit`. Footer "Veli Rehberi" (`#why-parents`, bölüm sayfada yok) kaldırıldı. Footer "Veli Paneli" → "Veli raporu" (tr/en).
+- **Doğrulama:** `tsc` 0, eslint 0 (Footer.tsx), JSON geçerli. Görsel kontrol ve deploy yok. Footer.tsx başka oturumun değişikliği altındaydı; yalnız ilgili satırlar değişti.
+- **AÇIK (kullanıcı kararı):** 3 (`#` yer tutucular "Hakkımızda/Blog/İletişim"; tıklanamaz mağaza rozetleri) kullanıcı tarafından ertelendi. 4 (fiyat kartı "Premium'a Geç"/"Aile Planı Seç" etiketleri, DB seed) ve "En Çok Tercih Edilen" rozeti + "14 Gün İade Garantisi" / "%100 Güvenli Ödeme" iddiaları kanıt kararı bekliyor (GÖR-017).
+- **Kalan kırık bağlantı:** `deneme-sinavi-kayit/page.tsx:40` "Ana sayfaya dön" hâlâ `/#deneme-sinavi` hedefine gidiyor.
+- **İlgili:** K-0205 (olgu düzeltmeleri), K-0206, GÖR-017, GÖR-038.
+### K-0208 · 2026-10-30 · ÜRN/VT · Karakter ve rozet tamamlanabilirliği: canlı soru havuzu sorgusu
+- **Sorgu (salt okunur, `supabase db query --linked`):** `questions` tablosunda sınıf × `onay_durumu` × ders sayısı.
+- **Onaylı soru / ders sayısı:** 1. sınıf 30/3, 2. sınıf 144/4, 3. sınıf 50/5, 4. sınıf 60/6, 5. sınıf 288/6, 6. sınıf 202/6, 7. sınıf 89/6, 8. sınıf 60/6. Beklemede olanlar ayrı (1: 46, 4: 109, 6: 45, 8: 24, 6 ve 8'de Türkçe dışı yok).
+- **Bulgu 1 (tüm karakterler imkânsız):** `efsaneler` grubunda `ders_basari` eşikleri 1, 3, 5, 8. Eşik 8 için 8 ders gerekir; hiçbir sınıfta onaylı ders sayısı 6'yı geçmiyor. Zincir sıralı olduğu için 4. ve 5. karakter hiçbir sınıfta açılamaz. Ulaşılabilir maksimum: 38 (3–8. sınıf), 37 (1–2. sınıf). `karakter_40` rozeti ("Efsanevi Koleksiyoncu") hiçbir sınıfta ulaşılamaz.
+- **Bulgu 2 (`bes_ders_efsane`):** 5 ders gerektirir; yalnız 3–8. sınıflarda mümkün.
+- **Bulgu 3 (1. sınıf):** 30 onaylı soru. 2000 doğru cevap (`bozkir_reisi`) ve 10000 XP (`buyuk_usta`) bu havuzla büyük olasılıkla ulaşılamaz. Hesaplanmadı; tahmin.
+- **Yorum:** Demir Disiplin (100 gün) süre sınırı olarak değişmez. Ücretsiz planda günlük 20 soru sınırı yalnız 2000 doğru cevap kriterini etkiler.
+- **Karar (ÜRÜN, kullanıcıda):** `efsaneler` 8. eşiğini düşürmek (örn. 6) ya da grup kurallarını değiştirmek; ayrıca `karakter_40` ve "tüm rozetler" vaadinin metinlerini düzeltmek gerekir.
+- **Varsayım:** Uygulama yalnız `onaylandi` soruları sunar; doğrulanmadı.
+- **İlgili:** K-0207, `20261020001400_karakter_lig_zorlugu.sql`, `20261018000000_rozet_genisleme_ders_ustalik.sql`.
+
+### K-0209 · 2026-10-30 · DEN/VT · Görselli soru: v3 içe aktarma RPC'si uygulandı; panel önizleme ve Flutter SVG commit'lendi; MAT 5.3.6 genişletildi; MAT 1.1.6 ölçümü kısmi
+- **Tür:** Gelişme
+- **Konu:** DEN
+- **Bağlam:** K-0197 ve devir notu (`docs/soru-uretim/gorsel/DEVIR_2026-10-28.md`) sonrası kalan işler: içe aktarma RPC'si (v3), panel önizleme ve Flutter gösterimi, kavşak, MAT 1.1.6 ve MAT 5.3.6, yabancı migration'lar.
+- **Plan:**
+  1. v3 RPC'yi ayrı fonksiyon olarak yaz; v2'ye dokunma.
+  2. Dönüştürücüyle test paketi üret, salt okunur sorguyla doğrulayıcılardan geçir.
+  3. Panel ve Flutter işini `mar-oto-ai` agent'ına devret (CLAUDE.md).
+  4. MAT 5.3.6 şablonunu genişlet, n=40 üret.
+  5. MAT 1.1.6 n=80 üret ve kör çözüm yap.
+  6. Kavşak ve yabancı migration'lar: karar kullanıcıda.
+- **Karar:**
+  1. `admin_import_questions_v3` ayrı fonksiyon. Sürüm 2 paketi görsel alanlarını taşır; SVG `<svg>` ile başlamalı, script/iframe/olay öznitelikleri reddedilir. Kullanıcı migration uygulamasına izin verdi: `ONAYLI`. İlk deneme izin sınıflandırıcısı tarafından reddedildi; kullanıcı açık izin verince uygulandı.
+  2. Kavşak (HB 1.2.3) için yaya rolü önerildi; "Durur" cevabı kör çözücünün varsayılanı olduğu için (görselsiz %43) cevap setini genişletmek gerekiyor. Uygulanmadı: `ONAY BEKLİYOR`.
+  3. MAT 1.1.6 görselsiz ölçüm: 80 sorunun metni aynı ("Yukarıdaki şekil örüntüsünde soru işareti olan yere hangi şekil gelmelidir?"), dolayısıyla metin-only çözüm yetenek ölçümü değil. Tasarım kararı gerekli: `ONAY BEKLİYOR`.
+  4. Yabancı migration'lar (`20261108000000`, `20261109000000`, `20261124000000`–`20261126000000`, `20261127000000` ikinci dosya) `db push` ile gönderilmedi; sahipleri belirsiz: `ONAY BEKLİYOR`.
+- **Durum:** DEVAM
+- **Doğrulama:** KISMİ
+- **Sahip:** Kullanıcı (kavşak, MAT 1.1.6 tasarımı, yabancı migration sahipliği); Ajan (MAT 5.3.6 kör çözüm, panel ve cihaz kontrolü)
+- **Önem:** Yüksek
+- **Açıklama:**
+  - Migration `20261129000000_admin_import_questions_v3.sql` uzak DB'ye `supabase db query --linked -f` ile uygulandı (`db push` değil). Migration geçmişine yazılmadı (20261128 ile aynı yöntem). Fonksiyonlar ve yetkiler salt okunur sorguyla doğrulandı. Hiçbir soru içe aktarılmadı.
+  - Dönüştürücü `tools/gorsel-motoru/paket-disa-aktar.mjs` üretim klasöründen sürüm 2 `paket.json` üretir. MAT 5.1.3 test paketinin 20 sorusu, salt okunur sorguyla hem `_soru_paket_hatasi` hem `_gorsel_paket_hatasi` tarafından geçildi.
+  - Panel `PaketImport.tsx`: sürüm 1/2, v3 çağrısı, önizleme ve görselli sayımı. Flutter `quiz_screen.dart`: soru kartında SVG, `gorsel_spec` istemciye istenmiyor.
+  - MAT 5.3.6 şablonu 6–12 köşeye genişletildi; n=40 üretimi 40/40 (`dogrulama-40-5361`). Kör çözüm yapılmadı.
+  - MAT 1.1.6 n=80: üretim 80/80, kapı red 0. Görselli kör çözüm 80/80 doğru. Görselsiz çözüm geçersiz; `kor/gorselsiz_cevap.json` yerelde duruyor (git dışı), silinmedi. `kor-sonuc` çalıştırılmadı; karar `KOR_BEKLIYOR`.
+  - Paket içe aktarma ve görsel gösterimi henüz gerçek veriyle denenmedi.
+- **Kanıt:** commit'ler `8d28164` (migration v3), `364f6cc` (dönüştürücü, MAT 5.3.6, dogrulama-40-5361), `352276f` (panel), `68de1ec` (Flutter), `7b318ae` (MAT 1.1.6 çıktısı). Push yapılmadı. Testler: `node tools/gorsel-motoru/testler.mjs` 44/44; `npx tsc --noEmit` ve eslint temiz (web-panel); `flutter analyze` (3 dosya) temiz; `flutter test test/quiz_screen_test.dart test/quiz_quota_test.dart` 6/6. Görselli kör çözüm: `dogrulama-80/.../kor/gorselli_cevap.json` 80/80 (anahtarla karşılaştırıldı).
+- **İlgili:** K-0197, GÖR-055, GÖR-087, `docs/soru-uretim/GORSELLI_SORU_PLANI.md` §11.9, `supabase/migrations/20261128000000_gorselli_sorular.sql`, `supabase/migrations/20261129000000_admin_import_questions_v3.sql`, `tools/gorsel-motoru/paket-disa-aktar.mjs`, `web-panel/src/components/yonetim/sorular/PaketImport.tsx`, `mobile-app/lib/screens/quiz_screen.dart`.
+
+### K-0210 · 2026-10-30 · WEB/MOB/VEL/VT · Devir: deneme rıza kapısı ve landing commit'lendi; bekleyen grupların ayrımı
+- **Tür:** Gelişme
+- **Commit'ler (push yapılmadı):** `a588363` 20261150000000 migrasyon dosyası ve `supabase/tests/deneme_riza_kapisi` testleri. Migrasyon K-0204'te uzak DB'ye uygulanmıştı; `db:status` uzakta 20261150000000 kaydını doğruluyor, ama dosya repoda yoktu. `9e626af` landing ve çerez bandı (K-0203, K-0206, K-0207 kapsamı: 9 dosya, hero rozeti, SSS, CTA, footer, Benefits başlığı, hareket düzeltmeleri, `messages/tr.json` ve `en.json` yalnız landing anahtarları).
+- **Doğrulama:** web-panel `tsc --noEmit` 0 hata. eslint (landing, CookieConsent, veli-paneli, VeliSidebar) 0 hata, 3 uyarı: CookieConsent.tsx:43 (K-0206'da da kayıtlı, önceden var), FontSizeToggle.tsx ve WhyParentsSection.tsx (commit dışı). `flutter analyze` (splash ve vitrin dosyaları) 0 hata, 5 bilgi notu, hepsi okuma_vitrin.dart'ta değiştirilmeyen satırlarda.
+- **Rıza kapısı (K-0203 AÇIK maddesi):** `get_child_exam_history` ve `get_upcoming_mock_exams_for_child` için K-0204 ile kapatıldı (deploy tamam). RPC davranışı rızalı ve rızasız veli ile test edilmedi; E2E veli hesabı yok (GÖR-056).
+- **Hâlâ açık (kullanıcı kararı):** Telefon alanı (`get_upcoming_mock_exams_for_child`) kaldırılmadı; DenemeKaydiKarti formu ön doldurur (K-0204).
+- **Commit'lenmedi, ayrıldı:**
+  1. **Veli paneli grubu (GÖR-088):** DestekPlaniView, DenemeGelisimi, OkumaDilOzeti, destek-plani sayfası, destek-onerileri.ts, VeliSidebar, DenemelerView, OkumaScope, veli-paneli ve veli-okuma mesajları. Öneri kütüphanesi pedagojik denetimden geçmedi ve veliye gösterilecek; görsel kontrol yok. Onay olmadan commit edilmedi.
+  2. **Mobil (GÖR-089):** `hupo_signature_entrance.dart` ve `okuma_vitrin.dart`. Sahibi kayıtta yok. HEAD'de `kisa` parametresi ve çağrı zaten var (c9b070f, d8d50ca); commit dışı kısım `_KisaGirisSahnesi` sahnesini ve vitrine `KotaRozeti(modul: 'okuma')` ekliyor. `okuma` modülü paket tablosunda tanımlı (20261130000000).
+  3. **Landing kalan:** `Header.tsx` (mobil dokunma alanı, nav aralığı), `HeroSection.tsx` (mobil hero düzeni), `ParentPanelSection.tsx` (rozet yazı boyutu). K-0203/K-0206/K-0207 kapsamında değil, sahibi kayıtta yok; commit edilmedi.
+  4. Diğer oturumların çalışması (`tools/gorsel-motoru/*`, `docs/soru-uretim/pilot/*`) bu ağaçta sürüyor; dokunulmadı.
+- **Landing yayını:** Deploy yapılmadı. Günlük (K-0201, K-0203) yayından önce iddiaların netleşmesini istiyor. İddia kararları açık: "14 Gün İade Garantisi", "%100 Güvenli Ödeme", "En Çok Tercih Edilen" rozeti, fiyat kartı etiketleri (GÖR-017). Hız etkisi (GÖR-086) ölçülmedi.
+- **İlgili:** K-0203, K-0204, K-0206, K-0207, GÖR-017, GÖR-056, GÖR-077, GÖR-086, GÖR-088, GÖR-089.
