@@ -780,7 +780,159 @@
       "errKvkk": "KVKK aydınlatma metnini onaylamanız gerekiyor.",
       "errGeneric": "Kayıt sırasında bir hata oluştu. Lütfen tekrar deneyin."
     },
+    "rehberBand": {
+      "etiket": "Veliler için ücretsiz rehber",
+      "baslik": "Çarpım tablosu için pif noktaları",
+      "link": "Rehbere bak"
+    },
+    "rehber": {
+      "metaTitle": "Çarpım tablosu için pif noktaları — veli rehberi | Hupolingo",
+      "metaDescription": "3. sınıf çarpım tablosunu kurallar ve örüntülerle çalışmak için kısa veli rehberi: yazdırılabilir tablo, 5 günlük tekrar planı ve çocukla 3 dakikalık çalışma notu.",
+      "geri": "Ana sayfaya dön",
+      "ticariIleti": "Ticari ileti izni",
+      "etiket": "Veliler için ücretsiz rehber",
+      "baslik": "Çarpım tablosu için pif noktaları",
+      "giris": "Çarpım tablosu 100 ayrı bilgi gibi görünür. Birkaç kural ve örüntüyle çalışınca çocuğun ezberleyeceği şey çok azalır. Bu rehber 3. sınıf için hazırlandı; 4. sınıfta tekrar için de kullanılabilir.",
+      "alirsin": {
+        "baslik": "Rehberde neler var",
+        "ogeler": [
+          "×1, ×2, ×5, ×9, ×10, ×11 için kısa kurallar",
+          "×3, ×4, ×6 için ikiye katlama ve toplama yolları",
+          "En çok takılan çarpımlar için ipuçları",
+          "Yazdırılabilir 1–10 çarpım tablosu",
+          "6 soruluk kendini sınama (cevaplı)",
+          "5 günlük, günde 3 dakikalık tekrar planı",
+          "Veli için “çocukla 3 dakika” notu"
+        ]
+      },
+      "onizleme": {
+        "baslik": "İki ipucuyla başlayın",
+        "aciklama": "Rehberin tamamı aşağıdaki formdan sonra açılır. İki ipucunu şimdi görebilirsiniz.",
+        "ornek": "Örnek",
+        "ipuclari": [
+          {
+            "baslik": "×5: 10 katının yarısı",
+            "metin": "Bir sayıyı 5 ile çarpmak için önce 10 ile çarpın, sonra yarısını alın. Sonuç hep 0 ya da 5 ile biter.",
+            "ornek": "5 × 8: 10 × 8 = 80, yarısı 40. Yani 5 × 8 = 40."
+          },
+          {
+            "baslik": "×9: 10 katından sayıyı çıkarın",
+            "metin": "9 ile çarpmak için sayının 10 katından sayının kendisini çıkarın. Sonucun basamaklarını topladığınızda 9 eder.",
+            "ornek": "9 × 7: 70 − 7 = 63. 6 + 3 = 9 olduğu için sonuç doğru görünüyor."
+          }
+        ]
+      },
+      "form": {
+        "baslik": "Rehberin tamamını açın",
+        "aciklama": "Yalnız e-posta adresiniz ve çocuğunuzun sınıfı yeterli. Çocuğunuzun adı ve telefon numarası istenmez.",
+        "eposta": "E-posta adresiniz",
+        "sinif": "Çocuğunuzun sınıfı",
+        "sinifSec": "Sınıf seçin",
+        "sinifEtiket": "{sinif}. sınıf",
+        "kvkk": "Kişisel verilerimin rehber isteğim kapsamında işlenmesine ilişkin <gizlilik>Aydınlatma Metni</gizlilik>'ni okudum.",
+        "izinEposta": "Hupolingo'dan eğitim içerikleri ve duyurular e-posta ile gelsin. İsteğe bağlıdır; işaretlemezseniz de rehbere erişirsiniz.",
+        "izinKabul": "Bu seçimle ilgili <link>Ticari Elektronik İleti Bilgilendirme ve Onay Metni</link>'ni okuyabilirsiniz. İzninizi dilediğiniz zaman geri alabilirsiniz.",
+        "gonder": "Rehberi aç",
+        "gonderiliyor": "Açılıyor...",
+        "zorunlu": "Zorunlu",
+        "hataZorunlu": "E-posta adresinizi ve çocuğunuzun sınıfını girin.",
+        "hataEposta": "E-posta adresi geçerli görünmüyor. Kontrol edip yeniden deneyin.",
+        "hataKvkk": "Devam etmek için aydınlatma metnini okuduğunuzu onaylayın.",
+        "hataDogrulama": "Güvenlik doğrulaması tamamlanamadı. Sayfayı yenileyip yeniden deneyin.",
+        "hataGenel": "Rehber şu an açılamadı. Bilgileriniz kaydedilmedi. Biraz sonra yeniden deneyin."
+      },
+      "icerik": {
+        "baslik": "Çarpım tablosu için pif noktaları",
+        "durumNotu": "Rehber bu sayfada açıldı. E-posta ile teslim ve doğrulama henüz hazır değil; hazır olduğunda, e-posta izni verdiyseniz haber vereceğiz. Bu tarayıcıda sayfayı yenilediğinizde rehber açık kalır.",
+        "neden": {
+          "baslik": "Önce şunu bilmek rahatlatır",
+          "metin": "1–10 tablosunda 100 çarpım var. Çarpmada sıra değişince sonuç değişmez (3 × 8 = 8 × 3 = 24), bu yüzden gerçekte 55 farklı çarpım vardır. Aşağıdaki ×1, ×2, ×5, ×9 ve ×10 ipuçlarıyla bunların 40'ı kolaylaşır. Geriye yalnız 3, 4, 6, 7 ve 8'in kendi aralarındaki 15 çarpım kalır."
+        },
+        "kurallar": {
+          "baslik": "Kural ve örüntüler",
+          "ornek": "Örnek",
+          "ogeler": [
+            { "baslik": "×1", "metin": "Bir sayının 1 katı kendisidir.", "ornek": "1 × 7 = 7" },
+            { "baslik": "×10", "metin": "Sayının sonuna 0 koyun.", "ornek": "10 × 6 = 60" },
+            { "baslik": "×2", "metin": "Sayıyı kendisiyle toplayın, yani iki katını alın.", "ornek": "2 × 8 = 8 + 8 = 16" },
+            { "baslik": "×5", "metin": "10 katının yarısını alın. Sonuç 0 ya da 5 ile biter.", "ornek": "5 × 7: 10 × 7 = 70, yarısı 35" },
+            { "baslik": "×9", "metin": "10 katından sayıyı çıkarın. Sonucun basamakları toplamı 9 eder; onlar basamağı, çarpılan sayıdan 1 eksiktir.", "ornek": "9 × 6: 60 − 6 = 54. 5 + 4 = 9" },
+            { "baslik": "×11 (tek basamaklı sayılarla)", "metin": "Sayıyı iki kez yan yana yazın. Bu kural 11 × 10 için geçerli değildir.", "ornek": "11 × 4 = 44, 11 × 7 = 77" },
+            { "baslik": "×4", "metin": "Sayıyı iki kere ikiye katlayın.", "ornek": "4 × 7: 7 → 14 → 28" },
+            { "baslik": "×3", "metin": "Sayının iki katını alıp sayıyı bir kez daha ekleyin.", "ornek": "3 × 7 = 14 + 7 = 21" },
+            { "baslik": "×6", "metin": "×5 sonucuna sayıyı bir kez daha ekleyin.", "ornek": "6 × 7 = 35 + 7 = 42" }
+          ]
+        },
+        "zor": {
+          "baslik": "En çok takılanlar",
+          "aciklama": "Geriye kalan bu çarpımlar için kendi yolunu bulmak ezberden daha kalıcı olur. Her biri için bir ipucu:",
+          "kolonlar": ["Çarpım", "İpucu"],
+          "satirlar": [
+            { "carpim": "6 × 7 = 42", "ipucu": "5 × 7 = 35, bir 7 daha: 42" },
+            { "carpim": "6 × 8 = 48", "ipucu": "5 × 8 = 40, bir 8 daha: 48" },
+            { "carpim": "7 × 7 = 49", "ipucu": "5 × 7 = 35 ile 2 × 7 = 14'ü toplayın: 49" },
+            { "carpim": "7 × 8 = 56", "ipucu": "Sayıları sırayla söyleyin: 5, 6, 7, 8. 56 = 7 × 8" },
+            { "carpim": "8 × 8 = 64", "ipucu": "8'i üç kez ikiye katlayın: 16, 32, 64" }
+          ]
+        },
+        "tablo": {
+          "baslik": "Yazdırılabilir çarpım tablosu",
+          "aciklama": "Çocuk önce tabloya bakmadan düşünsün, sonra kontrol etsin.",
+          "yazdir": "Tabloyu yazdır",
+          "baslikKaynak": "Hupolingo çarpım tablosu (1–10)",
+          "etiket": "1'den 10'a çarpım tablosu"
+        },
+        "sinama": {
+          "baslik": "Kendini sına",
+          "aciklama": "Önce cevabı düşünün, sonra cevabı açın.",
+          "cevap": "Cevabı göster",
+          "sorular": [
+            { "soru": "Bir tepside 7 sıra börek var. Her sırada 8 börek varsa tepside kaç börek vardır?", "cevap": "56 (7 × 8)" },
+            { "soru": "9 × 8 işlemini, 10 katından sayıyı çıkararak bulun.", "cevap": "80 − 8 = 72" },
+            { "soru": "Bir kutuda 4 boya kalemi var. 6 kutuda kaç boya kalemi vardır? (Önce 6'yı iki kere ikiye katlayın.)", "cevap": "6 → 12 → 24, yani 24" },
+            { "soru": "5 × 6 işlemini, 10 × 6'nın yarısı olarak bulun.", "cevap": "60'ın yarısı 30" },
+            { "soru": "11 × 7 kaçtır?", "cevap": "77" },
+            { "soru": "6 × 7 = 42 ise 7 × 6 kaçtır? Neden?", "cevap": "42. Çarpmada sıra değişince sonuç değişmez." }
+          ]
+        },
+        "plan": {
+          "baslik": "5 günlük tekrar planı",
+          "aciklama": "Günde 3 dakika. Her gün önce, önceki günlerden 2 çarpımı bakmadan hatırlamaya çalışın; sonra yeni görevi yapın. Aralıklarla geri dönmek öğrenmeyi destekleyebilir.",
+          "gun": "Gün {n}",
+          "gunler": [
+            "×1, ×2, ×10, ×5: 5 kısa soru sorun. Örnek: 5 × 6, 2 × 7, 10 × 4, 5 × 9, 2 × 9.",
+            "Dünden 2 çarpım, sonra ×9 ve ×11: 9 × 6'yı “10 katından çıkarma” yoluyla bulun, 11 × 3 ve 11 × 8'i söyleyin.",
+            "Önceki günlerden 3 çarpım, sonra ×3, ×4, ×6: her birinde ipucunu yüksek sesle söylemesini isteyin.",
+            "Önceki günlerden 3 çarpım, sonra “en çok takılanlar” tablosundan 2 çarpım seçin; ipucuyla bulun.",
+            "Karışık sınama: kendini sına bölümünden 3 soru seçin. Takılan çarpımları işaretleyin; gelecek haftanın başlangıcı onlar olsun."
+          ]
+        },
+        "veliNotu": {
+          "baslik": "Çocukla 3 dakika",
+          "adimlar": [
+            "Süreyi kısa tutun; 3 dakika dolunca bırakın.",
+            "Soruyu sorun, cevabı hemen söylemeyin; çocuğa birkaç saniye düşünme süresi verin.",
+            "Yanlış olursa cevabı söylemek yerine “Hangi kuralı kullanabilirsin?” diye sorun.",
+            "Doğru sonucu ve kullandığı yolu birlikte söyleyin; “×5'i yarıya bölerek buldun” gibi.",
+            "Takılan çarpımı bir kâğıda yazın; planın sonraki gününde yeniden deneyin."
+          ]
+        },
+        "bilim": {
+          "baslik": "Bu yöntem neye dayanıyor?",
+          "metin": "Araştırmalar, aktif hatırlamanın ve aralıklı tekrarın öğrenmeyi destekleyebildiğini gösteriyor. Rehberdeki plan, bu iki fikri küçük günlük görevlere çeviriyor.",
+          "kaynak": "Ruitenburg vd. (2026), okul sınıflarındaki çalışmaların meta-analizi",
+          "dipnot": "Bu bulgu Hupolingo'nun kendi sonucu değildir. Rehber, öğrenme veya sınav sonucu için garanti vermez."
+        },
+        "sonraki": {
+          "baslik": "Sıradaki adım",
+          "metin": "Çocuğunuz bu çalışmanın ardından soru çözmeyi denemek isterse, hesap açmadan 5 soruluk örnek çalışmayı deneyebilirsiniz.",
+          "demo": "5 soruluk örneği dene",
+          "kayit": "Veli hesabı oluştur"
+        }
+      }
+    },
     "footer": {
+      "rehber": "Veli rehberi: çarpım tablosu",
       "tagline": "Öğren. Güçlen. Zirveye çık.",
       "colProduct": "Hupo",
       "colParents": "Veliler",

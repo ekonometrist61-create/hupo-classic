@@ -8,7 +8,11 @@ export type LandingEvent =
   | "hero_cta_tiklandi"
   | "demo_tamamlandi"
   | "veli_kayit_baslatildi"
-  | "fiyat_tiklandi";
+  | "fiyat_tiklandi"
+  // Lead magnet (rehber) olayları: özellikler yalnız icerik (slug) ve sinif (sayı); e-posta/ad yok.
+  | "lead_magnet_goruntulendi"
+  | "lead_magnet_istendi"
+  | "lead_magnet_icerik_acildi";
 
 // Promise, olayın gönderildiği (ya da gönderilmediği) anda çözülür. Çağıranlar beklemek zorunda değildir;
 // testler için ise capture'ın tamamlandığı garanti edilir. Hata asla dışarı sızmaz.
