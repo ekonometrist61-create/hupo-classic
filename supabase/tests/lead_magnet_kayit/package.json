@@ -1,0 +1,13 @@
+{
+  "name": "lead-magnet-kayit-testi",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Lead magnet kayıt migration testi (PGlite).",
+  "type": "module",
+  "scripts": {
+    "test": "node test.mjs"
+  },
+  "dependencies": {
+    "@electric-sql/pglite": "0.5.10"
+  }
+}

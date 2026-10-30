@@ -1,6 +1,7 @@
 import { IconInstagram, IconLinkedIn, IconYoutube } from "@/components/landing/Icons";
 import { marketingFont } from "@/components/landing/marketingFont";
 import { STUDENT_APP_URL } from "@/lib/app-url";
+import { LEAD_MAGNET_ACIK } from "@/lib/lead-magnet";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 import Link from "next/link";
@@ -75,6 +76,9 @@ export async function LandingFooter() {
           <ul className="mt-3 space-y-1 text-navy-muted dark:text-gray-300">
             <li><a href="#why-parents" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.parentGuide")}</a></li>
             <li><a href="#report" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.parentPanel")}</a></li>
+            {LEAD_MAGNET_ACIK && (
+              <li><Link href="/rehber/carpim-tablosu-pif-noktalari" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.rehber")}</Link></li>
+            )}
             <li><Link href="/veli-paneli/kayit" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.signup")}</Link></li>
             <li><Link href="/veli-paneli/giris" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.signin")}</Link></li>
             <li><a href={STUDENT_APP_URL} className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.studentLogin")}</a></li>

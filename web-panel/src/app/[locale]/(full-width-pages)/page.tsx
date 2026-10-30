@@ -12,6 +12,7 @@ import { HikayelerSection } from "@/components/landing/sections/HikayelerSection
 import { HowItWorksSection } from "@/components/landing/sections/HowItWorksSection";
 import { ParentPanelSection } from "@/components/landing/sections/ParentPanelSection";
 import { PricingSection } from "@/components/landing/sections/PricingSection";
+import { RehberBandi } from "@/components/landing/sections/RehberBandi";
 import { TrustSection } from "@/components/landing/sections/TrustSection";
 import { marketingFont } from "@/components/landing/marketingFont";
 import type { Metadata } from "next";
@@ -57,6 +58,8 @@ export default async function LandingPage({ params }: { params: Promise<{ locale
           <CharacterUniverseSection />
           <TrustSection />
           <PricingSection />
+          {/* İkincil, düşük vurgulu rehber bandı (NEXT_PUBLIC_LEAD_MAGNET_ACIK kapalıyken çizilmez). */}
+          <RehberBandi />
           <FaqSection />
           <FinalCtaSection />
         </main>

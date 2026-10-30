@@ -29,6 +29,9 @@ PostHog ayarı: `autocapture: false`, `person_profiles: identified_only`, oturum
 | `demo_tamamlandi` | Demo quiz bitişi (`DemoQuiz.tsx`) | `puan`, `toplam` | Yok | granted | Var |
 | `veli_kayit_baslatildi` | Veli kayıt bağlantısı: `HeroSection.tsx`, `CharacterUniverseSection.tsx`, `ParentPanelSection.tsx` (`TrackedLink`) | yok | Yok | granted | Var |
 | `fiyat_tiklandi` | Fiyat bağlantısı: `PricingSection.tsx` (`TrackedLink`) | yok | Yok | granted | Var |
+| `lead_magnet_goruntulendi` | Rehber sayfası açılışı: `CarpimRehberi.tsx` (bayrak `NEXT_PUBLIC_LEAD_MAGNET_ACIK` kapalıyken sayfa yok) | `icerik` (slug) | Yok | granted | Kodlandı, bayrak kapalı |
+| `lead_magnet_istendi` | Form başarıyla gönderildi (`lead-magnet-kayit` 200) | `icerik`, `sinif` | Yok (e-posta analytics'e gitmez) | granted | Kodlandı, bayrak kapalı |
+| `lead_magnet_icerik_acildi` | İçerik açıldı (gönderim sonrası ya da aynı oturumda yenileme) | `icerik`, `sinif` | Yok | granted | Kodlandı, bayrak kapalı |
 | `$pageview` | Sayfa açılışı; yalnız `/`, `/demo`, `/gizlilik`, `/kosullar` (`AnalyticsProvider`) | `$current_url` (sorgusuz) | Yok | granted | Var |
 
 ## 3. Web veritabanı olayı (anonim ziyaretçi)

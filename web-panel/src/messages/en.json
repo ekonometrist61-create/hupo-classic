@@ -777,7 +777,159 @@
       "errKvkk": "You must accept the privacy notice.",
       "errGeneric": "An error occurred during registration. Please try again."
     },
+    "rehberBand": {
+      "etiket": "Free guide for parents",
+      "baslik": "Multiplication table shortcuts",
+      "link": "See the guide"
+    },
+    "rehber": {
+      "metaTitle": "Multiplication table shortcuts — parent guide | Hupolingo",
+      "metaDescription": "A short parent guide to practising the grade 3 multiplication table with rules and patterns: a printable table, a 5-day review plan and a 3-minute practice note.",
+      "geri": "Back to home page",
+      "ticariIleti": "Commercial message consent",
+      "etiket": "Free guide for parents",
+      "baslik": "Multiplication table shortcuts",
+      "giris": "The multiplication table looks like 100 separate facts. With a few rules and patterns, a child has far less to memorise. This guide is written for grade 3 and can also be used for review in grade 4.",
+      "alirsin": {
+        "baslik": "What is in the guide",
+        "ogeler": [
+          "Short rules for ×1, ×2, ×5, ×9, ×10 and ×11",
+          "Doubling and adding methods for ×3, ×4 and ×6",
+          "Hints for the facts children get stuck on most",
+          "A printable 1–10 multiplication table",
+          "A 6-question self-check with answers",
+          "A 5-day plan of 3 minutes a day",
+          "A \"3 minutes with your child\" note for parents"
+        ]
+      },
+      "onizleme": {
+        "baslik": "Start with two shortcuts",
+        "aciklama": "The full guide opens after the form below. You can see two shortcuts now.",
+        "ornek": "Example",
+        "ipuclari": [
+          {
+            "baslik": "×5: half of ×10",
+            "metin": "To multiply by 5, multiply by 10 first, then take half. The answer always ends in 0 or 5.",
+            "ornek": "5 × 8: 10 × 8 = 80, half is 40. So 5 × 8 = 40."
+          },
+          {
+            "baslik": "×9: subtract from ×10",
+            "metin": "To multiply by 9, take 10 times the number and subtract the number. The digits of the answer add up to 9.",
+            "ornek": "9 × 7: 70 − 7 = 63. 6 + 3 = 9, so the answer looks right."
+          }
+        ]
+      },
+      "form": {
+        "baslik": "Open the full guide",
+        "aciklama": "Only your email address and your child's grade are needed. Your child's name and a phone number are not asked for.",
+        "eposta": "Your email address",
+        "sinif": "Your child's grade",
+        "sinifSec": "Select grade",
+        "sinifEtiket": "Grade {sinif}",
+        "kvkk": "I have read the <gizlilik>Privacy Notice</gizlilik> about how my data is processed for this guide request.",
+        "izinEposta": "Send me educational content and announcements from Hupolingo by email. Optional; you can open the guide without ticking this.",
+        "izinKabul": "You can read the <link>Commercial Electronic Message Notice and Consent Text</link> for this choice. You can withdraw your consent at any time.",
+        "gonder": "Open the guide",
+        "gonderiliyor": "Opening...",
+        "zorunlu": "Required",
+        "hataZorunlu": "Enter your email address and your child's grade.",
+        "hataEposta": "The email address does not look valid. Check it and try again.",
+        "hataKvkk": "Confirm that you have read the privacy notice to continue.",
+        "hataDogrulama": "The security check could not be completed. Refresh the page and try again.",
+        "hataGenel": "The guide could not be opened right now. Your details were not saved. Try again in a moment."
+      },
+      "icerik": {
+        "baslik": "Multiplication table shortcuts",
+        "durumNotu": "The guide is open on this page. Email delivery and verification are not ready yet; when they are, we will let you know if you gave email consent. The guide stays open in this browser if you refresh.",
+        "neden": {
+          "baslik": "Good to know first",
+          "metin": "The 1–10 table has 100 facts. Order does not matter in multiplication (3 × 8 = 8 × 3 = 24), so there are really 55 different facts. The ×1, ×2, ×5, ×9 and ×10 shortcuts below make 40 of them easier. Only the 15 facts among 3, 4, 6, 7 and 8 are left."
+        },
+        "kurallar": {
+          "baslik": "Rules and patterns",
+          "ornek": "Example",
+          "ogeler": [
+            { "baslik": "×1", "metin": "A number times 1 is the number itself.", "ornek": "1 × 7 = 7" },
+            { "baslik": "×10", "metin": "Put a 0 at the end of the number.", "ornek": "10 × 6 = 60" },
+            { "baslik": "×2", "metin": "Add the number to itself, which means doubling it.", "ornek": "2 × 8 = 8 + 8 = 16" },
+            { "baslik": "×5", "metin": "Take half of ×10. The answer ends in 0 or 5.", "ornek": "5 × 7: 10 × 7 = 70, half is 35" },
+            { "baslik": "×9", "metin": "Subtract the number from ×10. The digits add up to 9, and the tens digit is one less than the number.", "ornek": "9 × 6: 60 − 6 = 54. 5 + 4 = 9" },
+            { "baslik": "×11 (single-digit numbers)", "metin": "Write the digit twice. This does not work for 11 × 10.", "ornek": "11 × 4 = 44, 11 × 7 = 77" },
+            { "baslik": "×4", "metin": "Double the number twice.", "ornek": "4 × 7: 7 → 14 → 28" },
+            { "baslik": "×3", "metin": "Double the number, then add it once more.", "ornek": "3 × 7 = 14 + 7 = 21" },
+            { "baslik": "×6", "metin": "Take the ×5 answer and add the number once more.", "ornek": "6 × 7 = 35 + 7 = 42" }
+          ]
+        },
+        "zor": {
+          "baslik": "The tricky ones",
+          "aciklama": "For these remaining facts, finding your own route lasts longer than rote memory. One hint for each:",
+          "kolonlar": ["Fact", "Hint"],
+          "satirlar": [
+            { "carpim": "6 × 7 = 42", "ipucu": "5 × 7 = 35, plus one more 7: 42" },
+            { "carpim": "6 × 8 = 48", "ipucu": "5 × 8 = 40, plus one more 8: 48" },
+            { "carpim": "7 × 7 = 49", "ipucu": "Add 5 × 7 = 35 and 2 × 7 = 14: 49" },
+            { "carpim": "7 × 8 = 56", "ipucu": "Say the numbers in order: 5, 6, 7, 8. 56 = 7 × 8" },
+            { "carpim": "8 × 8 = 64", "ipucu": "Double 8 three times: 16, 32, 64" }
+          ]
+        },
+        "tablo": {
+          "baslik": "Printable multiplication table",
+          "aciklama": "Let your child think without looking first, then check.",
+          "yazdir": "Print the table",
+          "baslikKaynak": "Hupolingo multiplication table (1–10)",
+          "etiket": "Multiplication table from 1 to 10"
+        },
+        "sinama": {
+          "baslik": "Check yourself",
+          "aciklama": "Think of the answer first, then reveal it.",
+          "cevap": "Show the answer",
+          "sorular": [
+            { "soru": "A tray has 7 rows of pastries with 8 pastries in each row. How many pastries are on the tray?", "cevap": "56 (7 × 8)" },
+            { "soru": "Find 9 × 8 by subtracting from ×10.", "cevap": "80 − 8 = 72" },
+            { "soru": "One box holds 4 coloured pencils. How many pencils are in 6 boxes? (Double 6 twice first.)", "cevap": "6 → 12 → 24, so 24" },
+            { "soru": "Find 5 × 6 as half of 10 × 6.", "cevap": "Half of 60 is 30" },
+            { "soru": "What is 11 × 7?", "cevap": "77" },
+            { "soru": "If 6 × 7 = 42, what is 7 × 6? Why?", "cevap": "42. Changing the order does not change a product." }
+          ]
+        },
+        "plan": {
+          "baslik": "5-day review plan",
+          "aciklama": "3 minutes a day. Each day, first try to recall 2 earlier facts without looking, then do the new task. Coming back at intervals can support learning.",
+          "gun": "Day {n}",
+          "gunler": [
+            "×1, ×2, ×10, ×5: ask 5 short questions. For example: 5 × 6, 2 × 7, 10 × 4, 5 × 9, 2 × 9.",
+            "2 facts from yesterday, then ×9 and ×11: find 9 × 6 by subtracting from ×10, then say 11 × 3 and 11 × 8.",
+            "3 facts from earlier days, then ×3, ×4, ×6: ask your child to say the hint aloud for each.",
+            "3 facts from earlier days, then pick 2 facts from the tricky ones table and find them with the hint.",
+            "Mixed check: pick 3 questions from Check yourself. Mark the facts that were hard; start next week with those."
+          ]
+        },
+        "veliNotu": {
+          "baslik": "3 minutes with your child",
+          "adimlar": [
+            "Keep it short; stop when 3 minutes are up.",
+            "Ask the question and do not say the answer right away; give a few seconds to think.",
+            "If the answer is wrong, ask \"Which rule could you use?\" instead of giving the answer.",
+            "Say the right answer and the way your child found it, such as \"You found it by halving ×10\".",
+            "Write hard facts on a piece of paper and try them again on a later day of the plan."
+          ]
+        },
+        "bilim": {
+          "baslik": "What is this method based on?",
+          "metin": "Research suggests that active recall and spaced review can support learning. The plan in this guide turns these two ideas into small daily tasks.",
+          "kaynak": "Ruitenburg et al. (2026), a meta-analysis of studies in school classrooms",
+          "dipnot": "This finding is not Hupolingo's own result. The guide does not guarantee any learning or exam result."
+        },
+        "sonraki": {
+          "baslik": "Next step",
+          "metin": "If your child would like to try solving questions after this practice, you can try a 5-question sample without creating an account.",
+          "demo": "Try the 5-question sample",
+          "kayit": "Create a parent account"
+        }
+      }
+    },
     "footer": {
+      "rehber": "Parent guide: multiplication table",
       "tagline": "Learn. Grow. Reach the top.",
       "colProduct": "Hupo",
       "colParents": "Parents",
