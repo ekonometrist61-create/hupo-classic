@@ -1,5 +1,4 @@
 import { RevealGroup } from "@/components/landing/motion/RevealGroup";
-import { SplitText } from "@/components/landing/motion/SplitText";
 import { getTranslations } from "next-intl/server";
 import Image from "next/image";
 
@@ -20,24 +19,10 @@ export async function BenefitsSection() {
     <section className="bg-white py-10 sm:py-14 dark:bg-gray-900">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="text-center">
-          {/* Başlık kelime kelime belirir. py-2/-my-2: Türkçe harf işaretleri kırpılmasın, düzen değişmesin. */}
-          <SplitText
-            text={t("benefits.title")}
-            tag="h2"
-            textAlign="center"
-            splitType="words"
-            effect="rise"
-            trigger="view"
-            from={{ opacity: 0, y: 24 }}
-            to={{ opacity: 1, y: 0 }}
-            delay={70}
-            duration={0.8}
-            ease="hupo-out"
-            className="max-w-2xl text-balance py-2 -my-2 text-3xl font-extrabold tracking-tight sm:text-4xl"
-          />
-          <noscript>
-            <style>{".split-parent{visibility:visible!important}"}</style>
-          </noscript>
+          {/* Düz başlık: SplitText hidrasyona kadar başlığı gizliyordu (hız ölçümü GÖR-086, K-0201). */}
+          <h2 className="mx-auto max-w-2xl text-balance text-3xl font-extrabold tracking-tight sm:text-4xl">
+            {t("benefits.title")}
+          </h2>
         </div>
 
         <RevealGroup as="ul" className="mt-12 grid gap-6 md:grid-cols-3">

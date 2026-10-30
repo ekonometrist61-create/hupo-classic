@@ -29,7 +29,6 @@ function ScrollBridge() {
     const tick = (time: number) => lenis.raf(time * 1000);
     lenis.on("scroll", onScroll);
     gsap.ticker.add(tick);
-    gsap.ticker.lagSmoothing(0);
     return () => {
       lenis.off("scroll", onScroll);
       gsap.ticker.remove(tick);

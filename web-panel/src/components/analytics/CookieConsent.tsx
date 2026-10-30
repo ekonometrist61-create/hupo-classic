@@ -51,7 +51,8 @@ export default function CookieConsent() {
     setGorunur(false);
   }
 
-  // Tek satır: kısa metin, "Tercihler" (gizlilik sayfası) ve iki eşit ağırlıklı karar düğmesi.
+  // Mobilde (390 px) metin iki satıra açılır ve düğmeler alt satırda iki eşit sütun olur;
+  // sm ve üstünde tek satır: kısa metin, "Tercihler" (gizlilik sayfası) ve iki eşit karar düğmesi.
   return (
     <section
       ref={bantRef}
@@ -61,28 +62,30 @@ export default function CookieConsent() {
       <h2 id="cookie-baslik" className="sr-only">
         {t("title")}
       </h2>
-      <div className="mx-auto flex max-w-5xl items-center gap-2 sm:gap-3">
-        <p className="min-w-0 flex-1 truncate text-sm text-navy-muted">{t("shortText")}</p>
+      <div className="mx-auto flex max-w-5xl flex-col gap-2 sm:flex-row sm:items-center sm:gap-3">
+        <p className="min-w-0 flex-1 text-sm text-navy-muted sm:truncate">{t("shortText")}</p>
         <Link
           href="/gizlilik"
-          className="inline-flex h-11 shrink-0 items-center px-2 text-sm font-semibold text-brand-700 underline underline-offset-4 hover:text-brand-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
+          className="inline-flex h-11 shrink-0 items-center self-start px-2 text-sm font-semibold text-brand-700 underline underline-offset-4 hover:text-brand-800 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 sm:self-auto"
         >
           {t("preferences")}
         </Link>
-        <button
-          type="button"
-          onClick={() => karar("denied")}
-          className="inline-flex h-11 shrink-0 items-center justify-center rounded-xl border border-navy/20 px-4 text-sm font-semibold text-navy hover:bg-navy/5 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
-        >
-          {t("reject")}
-        </button>
-        <button
-          type="button"
-          onClick={() => karar("granted")}
-          className="inline-flex h-11 shrink-0 items-center justify-center rounded-xl bg-brand-500 px-4 text-sm font-semibold text-white hover:bg-brand-600 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500"
-        >
-          {t("accept")}
-        </button>
+        <div className="grid grid-cols-2 gap-2 sm:flex sm:gap-3">
+          <button
+            type="button"
+            onClick={() => karar("denied")}
+            className="inline-flex h-11 items-center justify-center rounded-xl border border-navy/20 px-4 text-sm font-semibold text-navy hover:bg-navy/5 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 sm:shrink-0"
+          >
+            {t("reject")}
+          </button>
+          <button
+            type="button"
+            onClick={() => karar("granted")}
+            className="inline-flex h-11 items-center justify-center rounded-xl bg-brand-500 px-4 text-sm font-semibold text-white hover:bg-brand-600 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-brand-500 sm:shrink-0"
+          >
+            {t("accept")}
+          </button>
+        </div>
       </div>
     </section>
   );

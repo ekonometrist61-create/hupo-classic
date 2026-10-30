@@ -27,6 +27,8 @@ export function RevealGroup({ as = "div", target, kind = "rise", children, ...re
       registerHupoMotion();
       const items = target ? Array.from(root.querySelectorAll(target)) : Array.from(root.children);
       if (items.length === 0) return;
+      // Hidrasyon sonrası ilk öğe zaten ekran içindeyse animasyon atlanır (yanıp sönmeyi önler).
+      if (items[0].getBoundingClientRect().top < window.innerHeight * 0.85) return;
       const from = kind === "rise" ? { opacity: 0, y: MOTION.rise, duration: MOTION.reveal } : { scaleX: 0, duration: MOTION.bar };
       gsap.from(items, {
         ...from,

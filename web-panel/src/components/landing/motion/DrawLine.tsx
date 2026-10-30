@@ -14,6 +14,8 @@ export function DrawLine({ className }: { className?: string }) {
     () => {
       const el = ref.current;
       if (!el || prefersReducedMotion()) return;
+      // Hidrasyon sonrası zaten ekran içindeyse animasyon atlanır (yanıp sönmeyi önler).
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.85) return;
       registerHupoMotion();
       gsap.from(el, {
         scaleX: 0,

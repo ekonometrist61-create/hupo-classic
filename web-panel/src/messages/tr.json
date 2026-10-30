@@ -364,7 +364,7 @@
       "freeTrial": "Örnek soruları dene"
     },
     "hero": {
-      "badge": "3–7. Sınıf · Proje Ortaokulu Hazırlığı",
+      "badge": "Proje Ortaokulu Hazırlığı",
       "title": "Soru çözme alışkanlığını küçük görevlerle destekleyin",
       "subtitle": "Çocuğunuz Hupo ile kısa soru çalışmaları yapsın; siz ilerlediği ve tekrar etmesi gereken konuları görün.",
       "ctaPrimary": "Örnek soruları dene",
@@ -510,7 +510,7 @@
       "items": [
         {
           "q": "Hangi sınıflar için?",
-          "a": "Şu anda 3–7. sınıf içerikleri yer alıyor; Proje Ortaokullarına hazırlık öncelikli odağımız. Uygulamadaki sınıf ve ders kapsamı pilot sürüm boyunca genişliyor."
+          "a": "Proje Ortaokullarına hazırlık öncelikli odağımız. Uygulamadaki sınıf ve ders kapsamı pilot sürüm boyunca genişliyor."
         },
         {
           "q": "Örnek sorular için hesap gerekir mi?",
@@ -584,7 +584,7 @@
       "eyebrow": "Karakter Evreni",
       "title": "8 Dünya, 40 Karakter",
       "desc": "Her doğru cevap seni yeni kahramanlara yaklaştırır. 8 farklı sınıfta toplam 40 karakter seni bekliyor. Öğren, koleksiyonunu tamamla, Hupo evreninde ilerle!",
-      "cta": "Koleksiyona Başla",
+      "cta": "Veli hesabı oluştur",
       "lockedLabel": "Kilitli",
       "classes": [
         {
@@ -795,7 +795,7 @@
       "signin": "Giriş yap",
       "studentLogin": "Öğrenci girişi",
       "signup": "Veli hesabı oluştur",
-      "parentPanel": "Veli Paneli",
+      "parentPanel": "Veli raporu",
       "parentGuide": "Veli Rehberi",
       "about": "Hakkımızda",
       "blog": "Blog",

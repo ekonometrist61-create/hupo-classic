@@ -63,9 +63,9 @@ export async function LandingFooter() {
             <li><Link href="/demo" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.demo")}</Link></li>
             <li><a href="#how-it-works" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.how")}</a></li>
             <li><a href="#characters" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.characters")}</a></li>
-            <li><a href="#deneme-sinavi"className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.denemeExam")}</a></li>
+            <li><Link href="/deneme-sinavi-kayit" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.denemeExam")}</Link></li>
             <li><a href="#pricing" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.pricing")}</a></li>
-            <li><a href="#faq" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.faq")}</a></li>
+            <li><a href="#faq" className="inline-flex min-h-11 min-w-11 items-center hover:text-brand-600">{t("footer.faq")}</a></li>
           </ul>
         </nav>
 
@@ -73,7 +73,6 @@ export async function LandingFooter() {
         <nav aria-label={t("footer.colParents")}>
           <p className="font-extrabold">{t("footer.colParents")}</p>
           <ul className="mt-3 space-y-1 text-navy-muted dark:text-gray-300">
-            <li><a href="#why-parents" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.parentGuide")}</a></li>
             <li><a href="#report" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.parentPanel")}</a></li>
             <li><Link href="/veli-paneli/kayit" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.signup")}</Link></li>
             <li><Link href="/veli-paneli/giris" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.signin")}</Link></li>
@@ -86,7 +85,7 @@ export async function LandingFooter() {
           <p className="font-extrabold">{t("footer.colCompany")}</p>
           <ul className="mt-3 space-y-1 text-navy-muted dark:text-gray-300">
             <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.about")}</a></li>
-            <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.blog")}</a></li>
+            <li><a href="#" className="inline-flex min-h-11 min-w-11 items-center hover:text-brand-600">{t("footer.blog")}</a></li>
             <li><a href="#" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.contact")}</a></li>
             <li><Link href="/gizlilik" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.privacy")}</Link></li>
             <li><Link href="/kosullar" className="inline-flex min-h-11 items-center hover:text-brand-600">{t("footer.terms")}</Link></li>

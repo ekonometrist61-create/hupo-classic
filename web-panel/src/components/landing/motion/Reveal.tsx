@@ -15,6 +15,8 @@ export function Reveal({ children, className }: { children: ReactNode; className
     () => {
       const el = ref.current;
       if (!el || prefersReducedMotion()) return;
+      // Hidrasyon sonrası zaten ekran içindeyse animasyon atlanır (opacity 0'a çekilip yanıp sönmesin).
+      if (el.getBoundingClientRect().top < window.innerHeight * 0.85) return;
       registerHupoMotion();
       gsap.from(el, {
         opacity: 0,
