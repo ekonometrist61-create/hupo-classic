@@ -15,6 +15,7 @@ import '../../services/okuma_cihaz_deposu.dart';
 import '../../services/okuma_geri_donus.dart';
 import '../../theme/app_theme.dart';
 import '../hupo/hupo.dart';
+import '../paket/kota_rozeti.dart';
 import '../ui/chunky_button.dart';
 import 'okuma_v3.dart';
 
@@ -56,6 +57,10 @@ class OkumaVitrin extends ConsumerWidget {
           oneri: kotaDolu ? null : durum?.oneri,
           geriDonus: geriDonus,
         ),
+        ),
+        const Padding(
+          padding: EdgeInsets.symmetric(horizontal: OkumaTema.bosluk8),
+          child: KotaRozeti(modul: 'okuma'),
         ),
         const SizedBox(height: OkumaTema.bosluk16),
         _KesifSeridi(ilk: ilk),

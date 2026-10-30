@@ -108,6 +108,17 @@ class _HupoSignatureEntranceState extends State<HupoSignatureEntrance>
       return _StatikMarkaKaresi(assetPath: widget.assetPath);
     }
 
+    if (widget.kisa) {
+      final genislikK = MediaQuery.sizeOf(context).width;
+      final tabanK = math.min(genislikK * 0.62, 360.0);
+      return _KisaGirisSahnesi(
+        animation: _controller,
+        assetPath: widget.assetPath,
+        tabanBoy: tabanK,
+        baslangicOlcek: kNativeSplashHupoBoyu / tabanK,
+      );
+    }
+
     final izGorunur = !widget.lowPerformance;
     final genislik = MediaQuery.sizeOf(context).width;
     final tabanBoy = math.min(genislik * 0.62, 360.0);
@@ -232,6 +243,176 @@ class _HupoSignatureEntranceState extends State<HupoSignatureEntrance>
       },
     );
   }
+}
+
+// ── Kısa Giriş Sahnesi (her açılış, 900 ms) ──────────────────────────────────
+//
+// İlk kare sistem splash'indeki Hupo ile aynıdır (aynı boy, ortada); sonra Hupo
+// yerinde büyür, bir kez göz kırpar ve gözlerinin etrafında altın bir yay tamamlanır.
+// Yazı ve ses yoktur; film ile aynı renk ve göz yaması (hupo_goz_kapali) kullanılır.
+
+const String _kGozKapaliAsset = 'assets/hupo/uygulama/hupo_goz_kapali.webp';
+
+class _KisaGirisSahnesi extends StatelessWidget {
+  const _KisaGirisSahnesi({
+    required this.animation,
+    required this.assetPath,
+    required this.tabanBoy,
+    required this.baslangicOlcek,
+  });
+
+  final Animation<double> animation;
+  final String assetPath;
+  final double tabanBoy;
+  final double baslangicOlcek;
+
+  @override
+  Widget build(BuildContext context) {
+    // Hupo tuvali 845x900; göz yaması (165,121) konumunda, 416x320 boyutunda.
+    final genislik = tabanBoy * 845 / 900;
+
+    return AnimatedBuilder(
+      animation: animation,
+      builder: (context, _) {
+        final ms = animation.value * kHupoKisaSahne.inMilliseconds;
+        final olcek = baslangicOlcek +
+            (1 - baslangicOlcek) *
+                Curves.easeOutCubic.transform((ms / 520).clamp(0.0, 1.0));
+        final kirpiyor = ms >= 170 && ms < 250;
+        final parlama = Curves.easeOut.transform(((ms - 250) / 450).clamp(0.0, 1.0));
+        final yay = ((ms - 300) / 520).clamp(0.0, 1.0);
+
+        return Stack(
+          fit: StackFit.expand,
+          children: [
+            const ColoredBox(color: AppColors.primary),
+            // Hupo'nun arkasında yumuşak sıcak hale (film ile aynı mantık)
+            Opacity(
+              opacity: 0.30 * parlama,
+              child: const DecoratedBox(
+                decoration: BoxDecoration(
+                  gradient: RadialGradient(
+                    colors: [AppColors.sunSoft, Color(0x00FEF3CC)],
+                  ),
+                ),
+              ),
+            ),
+            Center(
+              child: Transform.scale(
+                scale: olcek,
+                child: SizedBox(
+                  width: genislik,
+                  height: tabanBoy,
+                  child: Stack(
+                    clipBehavior: Clip.none,
+                    children: [
+                      Positioned.fill(
+                        child: Image.asset(
+                          assetPath,
+                          fit: BoxFit.fill,
+                          gaplessPlayback: true,
+                          errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+                        ),
+                      ),
+                      // Göz kırpma: yama yalnız kırpma anında görünür (önceden çözülür)
+                      Positioned(
+                        left: genislik * 165 / 845,
+                        top: tabanBoy * 121 / 900,
+                        width: genislik * 416 / 845,
+                        height: tabanBoy * 320 / 900,
+                        child: Opacity(
+                          opacity: kirpiyor ? 1 : 0,
+                          child: Image.asset(
+                            _kGozKapaliAsset,
+                            fit: BoxFit.fill,
+                            gaplessPlayback: true,
+                            errorBuilder: (_, __, ___) => const SizedBox.shrink(),
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ),
+              ),
+            ),
+            // Altın yay: Hupo'nun etrafında sol üstten sağa tamamlanır
+            Positioned.fill(
+              child: IgnorePointer(
+                child: CustomPaint(
+                  painter: _KisaAltinYayPainter(
+                    ilerleme: yay.toDouble(),
+                    yaricap: tabanBoy * 0.62,
+                  ),
+                ),
+              ),
+            ),
+          ],
+        );
+      },
+    );
+  }
+}
+
+class _KisaAltinYayPainter extends CustomPainter {
+  const _KisaAltinYayPainter({required this.ilerleme, required this.yaricap});
+
+  final double ilerleme;
+  final double yaricap;
+
+  @override
+  void paint(Canvas canvas, Size size) {
+    if (ilerleme <= 0) return;
+    final merkez = size.center(Offset.zero);
+    final rect = Rect.fromCircle(center: merkez, radius: yaricap);
+    const baslangic = -math.pi * 0.80;
+    final aci = math.pi * 1.05 * Curves.easeInOutCubic.transform(ilerleme);
+
+    canvas.drawArc(
+      rect,
+      baslangic,
+      aci,
+      false,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 16
+        ..strokeCap = StrokeCap.round
+        ..color = AppColors.sun.withValues(alpha: 0.28)
+        ..maskFilter = const MaskFilter.blur(BlurStyle.normal, 10),
+    );
+    canvas.drawArc(
+      rect,
+      baslangic,
+      aci,
+      false,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 5
+        ..strokeCap = StrokeCap.round
+        ..color = AppColors.sun,
+    );
+    canvas.drawArc(
+      rect,
+      baslangic,
+      aci,
+      false,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeWidth = 1.6
+        ..strokeCap = StrokeCap.round
+        ..color = Colors.white.withValues(alpha: 0.9),
+    );
+
+    final ucAci = baslangic + aci;
+    canvas.drawCircle(
+      Offset(merkez.dx + yaricap * math.cos(ucAci), merkez.dy + yaricap * math.sin(ucAci)),
+      6,
+      Paint()..color = Colors.white,
+    );
+  }
+
+  @override
+  bool shouldRepaint(covariant _KisaAltinYayPainter old) =>
+      old.ilerleme != ilerleme || old.yaricap != yaricap;
 }
 
 // ── Hupo Gövdesi ──────────────────────────────────────────────────────────────
