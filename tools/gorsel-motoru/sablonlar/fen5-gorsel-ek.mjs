@@ -6,9 +6,15 @@ const HARF = ['K', 'L', 'M', 'N'];
 export function kur({ R, sec, karistir, ekle, konum }) {
   function golgeSorusu() {
     const k = konum(), buyuk = R() < 0.5;
-    const D = sec([100, 110, 120]), h = sec([20, 24, 28, 30]);
+    const D = sec([110, 120]), h = sec([20, 24, 28, 30]);
     const havuz = []; for (let d = 40; d <= D - 20; d += 10) havuz.push(d);
-    const dler = karistir(havuz).slice(0, 4).sort((a, b) => a - b);          // 4 farklı uzaklık
+    // 4 uzaklık; ardışık iki uzaklık en az %25 farklı (gölge boyları net ayrışsın)
+    let dler = null;
+    for (let t = 0; t < 500 && !dler; t++) {
+      const s = karistir(havuz).slice(0, 4).sort((a, b) => a - b);
+      if (s.every((d, i) => i === 0 || d / s[i - 1] >= 1.25)) dler = s;
+    }
+    if (!dler) throw new Error('fen5-golge: uygun uzaklık seti bulunamadı');
     const hedef = buyuk ? dler[0] : dler[3];                                  // en büyük gölge: kaynağa en yakın
     const dig = karistir(dler.filter((d) => d !== hedef));
     const sira = [...dig]; sira.splice(k, 0, hedef);

@@ -273,7 +273,9 @@ function kroki(p, profil) {
   let burasi = null;
   if (p.burasi) {
     const cx = x0 + p.burasi.indeks * lw + lw / 2;
-    s.cember(cx, yR + 22, 9, { dolgu: PALET.kirmizi, renk: PALET.siyah, kalinlik: 2 }); s.metin(cx, yR + 54, 'Buradasın', { boyut: b, kalin: true, renk: '#8A2E00' });
+    // İşaret, bulunduğu sıranın tarafında çizilir (üst: yolun üst yarısı; alt: alt yarısı). Etiket işaretin karşı kenarında kalır.
+    const ustTaraf = p.burasi.taraf === 'ust', cy = ustTaraf ? yR + 22 : yR + rw - 22, ty = ustTaraf ? yR + 54 : yR + 16;
+    s.cember(cx, cy, 9, { dolgu: PALET.kirmizi, renk: PALET.siyah, kalinlik: 2 }); s.metin(cx, ty, 'Buradasın', { boyut: b, kalin: true, renk: '#8A2E00' });
     burasi = (p.burasi.taraf === 'ust' ? p.ust : p.alt)[p.burasi.indeks];
   }
   const sat = { ust: p.ust, alt: p.alt };
